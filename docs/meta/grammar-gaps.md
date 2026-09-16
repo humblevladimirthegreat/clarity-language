@@ -23,31 +23,31 @@ No new clause types. Unblocks locative talk and later relatives / paths.
 
 - [x] **1. Ditransitive / recipient.** Unhosted `/b/` (not immediately after `/ɡ/` or `/h/`) is the verb’s recipient / addressee; theme stays `/d/` (including **`darl`**). Taught in [core extra nouns](../grammar/core.md#extra-nouns). Place goals stay item 2.
 
-- [x] **2. Locative relation set (thin).** Hosted `/h/` or `/ɡ/` + `/b/`. Inventory on [core locative relations](../grammar/core.md#locative-relations) (`ogore` *inside*, `ubuhu` *at*, `alade` *on*, `ebaru` *from*, `obowa` *toward*, `ezewu` *through*, `ejege` *out of*, `azadu` *between*). **Unblocks:** spatial *from–to* (item 9); *the house in which* (item 11).
+- [x] **2. Locative relation set (thin).** Hosted `/h/` or `/ɡ/` + `/b/`. Inventory on [core locative relations](../grammar/relations.md#locative-relations) (`ogore` *inside*, `ubuhu` *at*, `alade` *on*, `ebaru` *from*, `obowa` *toward*, `ezewu` *through*, `ejege` *out of*, `azadu` *between*). **Unblocks:** spatial *from–to* (item 9); *the house in which* (item 11).
 
-- [x] **3. Clause instrument *with* (thin).** Hosted **`hahanam` / `gahanam`** + `/b/` tool ([core means](../grammar/core.md#means)). Role **`exROOT`** still names *the hammer used*. Join-relation **`han`** stays company / including.
+- [x] **3. Clause instrument *with* (thin).** Hosted **`hahanam` / `gahanam`** + `/b/` tool ([core means](../grammar/relations.md#means)). Role **`exROOT`** still names *the hammer used*. Join-relation **`han`** stays company / including.
 
-- [x] **4. Other English *of* (thin).** Hosted `/h/` or `/ɡ/` + `/b/`. Inventory on [core of relations](../grammar/core.md#of-relations) (`obone` *part of*, `ajara` *contents*, `owodo` *material*, `ajaba` *origin*). Ownership stays `oboru`; portion stays [percent](../grammar/numbers-applied.md#percent-denominators).
+- [x] **4. Other English *of* (thin).** Hosted `/h/` or `/ɡ/` + `/b/`. Inventory on [core of relations](../grammar/relations.md#of-relations) (`obone` *part of*, `ajara` *contents*, `owodo` *material*, `ajaba` *origin*). Ownership stays `oboru`; portion stays [percent](../grammar/numbers-applied.md#percent-denominators).
 
-- [x] **5. Simile *like* (thin).** Hosted `/h/` or `/ɡ/` **`urorom`** + model `/b/`. Taught in [core simile](../grammar/core.md#similative). Not **`SAME`**, not **`ae`**, not NOTIONAL, not **`gaen`**.
+- [x] **5. Simile *like* (thin).** Hosted `/h/` or `/ɡ/` **`urorom`** + model `/b/`. Taught in [core simile](../grammar/relations.md#similative). Not **`SAME`**, not **`ae`**, not NOTIONAL, not **`gaen`**.
 
-- [x] **6. NP *despite* (thin).** Same **`ezeba`** pole as *although*: **`hezebam` / `gezebam`** + `/b/` noun ([core dependent clauses](../grammar/core.md#dependent-clauses)). Overlay gloss stays *although*.
+- [x] **6. NP *despite* (thin).** Same **`ezeba`** pole as *although*: **`hezebam` / `gezebam`** + `/b/` noun ([core dependent clauses](../grammar/dependents.md#dependent-clauses)). Overlay gloss stays *although*.
 
-- [x] **7. English *by / for / about / as* cheat-sheet (thin).** Pedagogy only: one short table on [core.md](../grammar/core.md) or [terminology.md](../grammar/terminology.md) mapping each English word to the **live** Agalan jobs (agent stays `/z/`; means = item 3; deadline = time `/h/`; locative = item 2; recipient = item 1; duration = [measure](../grammar/numbers-applied.md#measure-phrases); need-purpose = [values `xo`](../grammar/values.md); topic = `hozal`; approximation = number **-m**; classification vs *while* vs *because*). No new morph.
+- [x] **7. English *by / for / about / as* cheat-sheet (thin).** Pedagogy only: [english.md](../grammar/english.md) mapping each English word to the **live** Agalan jobs.
 
-- [x] **8. Exchange *for* and proxy *on behalf of* (thin).** Hosted `/h/` or `/ɡ/` + `/b/`: **`huhanem`** *in exchange for* / **`hudagam`** *on behalf of* ([core exchange](../grammar/core.md#exchange), [core proxy](../grammar/core.md#proxy)).
+- [x] **8. Exchange *for* and proxy *on behalf of* (thin).** Hosted `/h/` or `/ɡ/` + `/b/`: **`huhanem`** *in exchange for* / **`hudagam`** *on behalf of* ([core exchange](../grammar/relations.md#exchange), [core proxy](../grammar/relations.md#proxy)).
 
 ## Wave 2 — small constructions on Wave 1
 
-- [x] **9. Spatial path *from A to B* (thin).** Two hosted locative `/h/` + `/b/` units (source, then goal). Heading = **`hobowam`**; reached point = **`hubuhum`**; ended inside = **`hogorem`**; *out of…into…* = **`hejegem`** then **`hogorem`**. Taught in [core spatial path](../grammar/core.md#spatial-path). Numeric *from 3 to 5* stays [ranges](../grammar/numbers-applied.md#ranges).
+- [x] **9. Spatial path *from A to B* (thin).** Two hosted locative `/h/` + `/b/` units (source, then goal). Heading = **`hobowam`**; reached point = **`hubuhum`**; ended inside = **`hogorem`**; *out of…into…* = **`hejegem`** then **`hogorem`**. Taught in [core spatial path](../grammar/relations.md#spatial-path). Numeric *from 3 to 5* stays [ranges](../grammar/numbers-applied.md#ranges).
 
-- [x] **10. Embedded *whether* (thin).** **`dorl` / `dorm`** (outer act stays a statement). Taught in [core dependent clauses](../grammar/core.md#dependent-clauses) / [questions](../grammar/questions.md#embedded-whether). Not **`hadorom`** (*if*).
+- [x] **10. Embedded *whether* (thin).** **`dorl` / `dorm`** (outer act stays a statement). Taught in [core dependent clauses](../grammar/dependents.md#dependent-clauses) / [questions](../grammar/questions.md#embedded-whether). Not **`hadorom`** (*if*).
 
 ## Wave 3 — new clause types
 
 Do not start remaining rows until Wave 1 extra nouns are the learner’s default for English PPs (items 2–6 at least sketched). Item 1 is decided: unhosted `/b/` = recipient. Item 11 is refused (two sentences / hosted `/ɡ/` / role on `/ɡ/`).
 
-- [x] **11. Noun-modifying relatives (refused).** No *that / who / which / whose* inside an NP. Identify with [two sentences](../grammar/core.md#which-noun) (resume **-r**), hosted `/ɡ/` + `/b/`, or a [role compound](../grammar/roles.md#role-compounds) on `/ɡ/` (`gaxajul` *sitter*, not `gajul` *chair*). Restrictors still limit **when a claim counts**.
+- [x] **11. Noun-modifying relatives (refused).** No *that / who / which / whose* inside an NP. Identify with [two sentences](../grammar/dependents.md#which-noun) (resume **-r**), hosted `/ɡ/` + `/b/`, or a [role compound](../grammar/roles.md#role-compounds) on `/ɡ/` (`gaxajul` *sitter*, not `gajul` *chair*). Restrictors still limit **when a claim counts**.
 
 - [ ] **12. Infinitive / control (large).** **`derl`** types an aimed complement (*tell to sit*) as a **full next sentence**, not a subject-less verb. *Want to walk* still repeats inner `/z/` after **`darl`**. Event purpose *so that* stays **`holalam`** + `/b/`. Values **`xo`** stays need-motive. Subject-sharing control vs full clause still open.
 
@@ -66,9 +66,9 @@ Decide **whether** to add. English helpers; not required by the `/b/` model. Lat
 | Extra case letters (dative, ablative, locative) | Duplicates `/b/` + relation root |
 | Closed *in / on / at* as grammar | Several meanings each; item 2 is the fix |
 | *and / or / with / without / against / except* as prepositions | [Joins](../grammar/joins.md), [join-relations](../grammar/join-extras.md#join-relations), [revisers](../grammar/revisers.md) |
-| *because / if / although / while / until / before / after / so that* | Already [core](../grammar/core.md#dependent-clauses) / [causation](../grammar/causation.md) |
+| *because / if / although / while / until / before / after / so that* | Already [core](../grammar/dependents.md#dependent-clauses) / [causation](../grammar/causation.md) |
 | *can / will / should / may / have to* as dummy auxiliaries | [Ability](../grammar/ability.md), [plan-decision](../grammar/plan-decision.md), [values](../grammar/values.md), [MAY](../grammar/commentary.md#may) |
-| *that / who / which* inside an NP | Two sentences ([which noun](../grammar/core.md#which-noun)); hosted `/ɡ/` + `/b/`; role compound on `/ɡ/` |
+| *that / who / which* inside an NP | Two sentences ([which noun](../grammar/dependents.md#which-noun)); hosted `/ɡ/` + `/b/`; role compound on `/ɡ/` |
 | *that* (finite complement) | **`darl`** |
 | *as for / according to [Name]* | `hozal` + `/b/`; `/h/` + **-n** |
 

@@ -227,7 +227,7 @@ z-Uhubun | h-MAY | v-cry
 
 English often says *how you know* a claim (*I saw it*, *I heard*, *I figured*). Agalan keeps the ordinary content verb and adds a closed `/h/` mood word. That word is the **channel** the claim came through, so the same walk or sleep can sit under a live look, memory, a recording, a pattern of cases, clues, hearsay, a gut sense, or a tale.
 
-Verbs have **no past or future letter**. Some channels already locate the event because of how you know: **LIVE** is watching while the scene is still in view; **WITNESSED** is memory of watching; **RECORDED** is playback of a capture. [PREDICT](plan-decision.md#predict) / [PLAN](plan-decision.md#plan-predict) look ahead (the event is later). Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](core.md#dependent-clauses), a clock or date, recency) when inference or hearsay needs a different time than this stretch.
+Verbs have **no past or future letter**. Some channels already locate the event because of how you know: **LIVE** is watching while the scene is still in view; **WITNESSED** is memory of watching; **RECORDED** is playback of a capture. [PREDICT](plan-decision.md#predict) / [PLAN](plan-decision.md#plan-predict) look ahead (the event is later). Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, recency) when inference or hearsay needs a different time than this stretch.
 
 > `zazawan hadezem vawalal.`
 >
@@ -297,7 +297,7 @@ English sometimes frames the whole clause as play: *as if*, *for the sake of arg
 >
 > "As if Azawan walks." — notional framing held lightly (default)
 
-**For *could be*, use:** [MAY](#may). *As if* play is this section; imagining an amount is the related form below. *Walks like a duck* keeps the walk on the real tally ([simile](core.md#similative) `hurorom`); only the manner matches the model. *Tells on behalf of Ululon* stays on the real tally ([proxy](core.md#proxy) `hudagam`); Azawan is still the teller.
+**For *could be*, use:** [MAY](#may). *As if* play is this section; imagining an amount is the related form below. *Walks like a duck* keeps the walk on the real tally ([simile](relations.md#similative) `hurorom`); only the manner matches the model. *Tells on behalf of Ululon* stays on the real tally ([proxy](relations.md#proxy) `hudagam`); Azawan is still the teller.
 
 **Related form:** imaginary *amount* uses free number as verb / adverb / interjection / discourse in [numbers.md](numbers.md#imaginary).
 

@@ -160,7 +160,7 @@ A *…, yes?* confirm tag is its own next turn: finish the statement with a peri
 ### Embedded *whether*
 <a id="embedded-whether"></a>
 
-When the **outer** sentence is a claim (*Azawan sees…*, *Azawan tells Ululon…*) and English would say *whether*, write [**`dorl`**](core.md#dependent-clauses) (soft **`dorm`**) in the object slot. The outer act stays a statement; do not put `?` on the whole stretch.
+When the **outer** sentence is a claim (*Azawan sees…*, *Azawan tells Ululon…*) and English would say *whether*, write [**`dorl`**](dependents.md#dependent-clauses) (soft **`dorm`**) in the object slot. The outer act stays a statement; do not put `?` on the whole stretch.
 
 > `zazawan vejel dorl zululon vawalal.`
 >
@@ -791,7 +791,8 @@ j-question | z-clap | z-trophy | z-rank/more
 
 ## See also
 
-- [core.md](core.md#turn-j): turn vs continue; speech act
-- [core.md](core.md#dependent-clauses): *that* / *whether* after **`darl` / `dorl`**
+- [core.md](core.md#turn-j): turn; speech act
+- [dependents.md](dependents.md#continue-x): continue
+- [dependents.md](dependents.md#dependent-clauses): *that* / *whether* after **`darl` / `dorl`**
 - [joins.md](joins.md): join fences; statement readings of **-r** / single-item / standalone
 - [pronouns.md](pronouns.md): content resume **-r** (fill-ask is join **-r**)

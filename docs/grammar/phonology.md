@@ -80,11 +80,11 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`ohohulabede` *bedroom*) |
 | `-l` / `-m` / `-n` / `-r` | [reference suffix](reference-suffix.md) | audible end of the content word |
 | Optional `-x` | [plural](plurality.md) after the suffix | word-final `-lx` / `-mx` / `-nx` / `-rx` (letter `x`) |
-| Stand-in **`-rl` / `-rm`** | [dependent clauses](core.md#dependent-clauses) | word-final coda `rl` / `rm` (`darl`) |
+| Stand-in **`-rl` / `-rm`** | [dependent clauses](dependents.md#dependent-clauses) | word-final coda `rl` / `rm` (`darl`) |
 
 A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` are always followed by a vowel, so they start a syllable rather than sounding like a suffix (`zelulul`: prefix `z`, root `elulu`, ending `-l`). Spelling has one pronunciation path. Writing does not mark stress; musical rhythm may place emphasis.
 
-**Related form:** word-initial `x` is the [continue](core.md#continue-x) prefix (discourse), not a compound seam.
+**Related form:** word-initial `x` is the [continue](dependents.md#continue-x) prefix (discourse), not a compound seam.
 
 ### Number-word exception
 <a id="number-word-exception"></a>

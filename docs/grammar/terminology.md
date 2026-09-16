@@ -16,7 +16,7 @@ Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#a
 |-------|-------|--------|
 | **ABIL** | Hostless *can* / *can’t* fallback **`egera`** | [Ability](ability.md#ability-fallback) |
 | **ACT** | Emotion-compose arousal (HIGH / MED / LOW) | [Special vocabulary](special-vocabulary.md#emotion-compose) |
-| **ALTHOUGH** | Clause-pole **`ezeba`** (*although* / NP *despite*) | [Core](core.md#dependent-clauses) |
+| **ALTHOUGH** | Clause-pole **`ezeba`** (*although* / NP *despite*) | [Dependents](dependents.md#dependent-clauses) |
 | **BECAUSE** | Clause-pole **`urugu`** (*because*) | [Causation](causation.md#because) |
 | **CAUSE** | Mechanism-framing mood **`egega`** | [Causation](causation.md#cause) |
 | **CIRCUM** | Emotion locus: charge on the situation | [Special vocabulary](special-vocabulary.md#emotion-compose) |
@@ -42,7 +42,7 @@ Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#a
 | **RECORDED** | Evidential: documented / playback | [Commentary](commentary.md#evidentiality) |
 | **RULE** | Universality: holds inside a named frame | [Special vocabulary](special-vocabulary.md#universality) |
 | **SAME** | Identity copula **`onunu`** | [Predication](predication.md#identity) |
-| **SO-THAT** | Clause-pole **`olala`** (*so that* / NP intended *for*) | [Core](core.md#so-that) |
+| **SO-THAT** | Clause-pole **`olala`** (*so that* / NP intended *for*) | [Dependents](dependents.md#so-that) |
 | **STORY** | Evidential: narrative / lore | [Commentary](commentary.md#evidentiality) |
 | **TOLD** | Evidential: hearsay | [Commentary](commentary.md#evidentiality) |
 | **UNCOUNTERED** | Universality: no counterexample comes to mind | [Special vocabulary](special-vocabulary.md#universality) |
@@ -253,7 +253,7 @@ Met-value **`xa`** endings (physical / mental / spiritual).
 
 Same-speech-act forward motion.
 
-[Core](core.md#continue-x)
+[Dependents](dependents.md#continue-x)
 
 **Compare with:** a [sentence linker](#sentence-linker) is the *therefore / however* subclass of continue.
 
@@ -275,9 +275,9 @@ Resume with a different PoS letter than the antecedent.
 
 A full sentence that fills a [stand-in](#stand-in) slot (`darl` / `barl` / `dorl` …). Last in the host slot; the dependent follows immediately.
 
-[Core](core.md#dependent-clauses)
+[Dependents](dependents.md#dependent-clauses)
 
-**Compare with:** English *the dog that runs* (which dog) is [which person or thing](core.md#which-noun), not a stand-in. Intended outcome *so that* is [**`holalam`**](core.md#so-that) plus **`barl`** or a noun `/b/`.
+**Compare with:** English *the dog that runs* (which dog) is [which person or thing](dependents.md#which-noun), not a stand-in. Intended outcome *so that* is [**`holalam`**](dependents.md#so-that) plus **`barl`** or a noun `/b/`.
 
 ### Digitless
 
@@ -347,37 +347,37 @@ Hosted: noun bolted onto a complex `/ɡ/` or `/h/`. Unhosted: recipient or addre
 
 Place how (*inside*, *at*, *on*, *from*, *toward*, *through*, *out of*, *between*) as hosted `/h/` or `/ɡ/` plus landmark `/b/`. A *from A to B* path is two of those units (source, then goal).
 
-[Core](core.md#locative-relations)
+[Relations](relations.md#locative-relations)
 
 ### Means
 
 Hosted `/h/` or `/ɡ/` **`ahanam`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*, not role **`exROOT`**.
 
-[Core](core.md#means)
+[Relations](relations.md#means)
 
 ### Simile (*like*)
 
 Hosted `/h/` or `/ɡ/` **`urorom`** plus model `/b/` (*like* a duck / *like* Azawan’s). Not **`SAME`**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
 
-[Core](core.md#similative)
+[Relations](relations.md#similative)
 
 ### Exchange (*for*)
 
 Hosted `/h/` or `/ɡ/` **`uhanem`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not values motive **`xo`**, not intended-outcome **`olala`**.
 
-[Core](core.md#exchange)
+[Relations](relations.md#exchange)
 
 ### Proxy (*on behalf of*)
 
 Hosted `/h/` or `/ɡ/` **`udagam`** plus principal `/b/` (*on behalf of* Ululon). Not reviser *instead*, not recipient `/b/`.
 
-[Core](core.md#proxy)
+[Relations](relations.md#proxy)
 
 ### Of relation
 
 Hosted `/h/` or `/ɡ/` plus `/b/` for English *of* that is not ownership or a place: *part of*, *contents of*, *made of*, origin *from*.
 
-[Core](core.md#of-relations)
+[Relations](relations.md#of-relations)
 
 ### Factivity
 
@@ -533,7 +533,7 @@ Number problem / solution / goal candidates with free ordinals.
 
 [Special vocabulary](special-vocabulary.md#numbered-alternatives)
 
-**Compare with:** clause *so that* is [**`holalam`**](core.md#so-that), not the goal noun **`olalal`**.
+**Compare with:** clause *so that* is [**`holalam`**](dependents.md#so-that), not the goal noun **`olalal`**.
 
 ### Numeric derivation / quasi
 
@@ -607,7 +607,7 @@ Material after the join closer; **SHARED scale** vs **SHARED continuum**.
 
 Identify a noun with two sentences (then [resume](#resume)), a hosted `/ɡ/` + `/b/` relation, or a [role compound](#role-compound--agent--instrument--patient--reltum) on `/ɡ/`.
 
-[Core](core.md#which-noun)
+[Dependents](dependents.md#which-noun)
 
 ### Restrictor
 
@@ -615,7 +615,7 @@ Join-shaped `/h/` `/w/` *when the host applies*.
 
 [Restrictors](restrictors.md)
 
-**Compare with:** English *who / that / which* on a noun is [which person or thing](core.md#which-noun), not a restrictor.
+**Compare with:** English *who / that / which* on a noun is [which person or thing](dependents.md#which-noun), not a restrictor.
 
 ### Resume
 
@@ -623,7 +623,7 @@ Content / span / number **-r** pointing back.
 
 [Pronouns](pronouns.md), [spans](spans.md), [numbers](numbers.md#number-endings)
 
-**Compare with:** join / restrictor **-r** is an [unspecified member](#unspecified-member). English *the dog that…* is two sentences, then this resume ([which person or thing](core.md#which-noun)).
+**Compare with:** join / restrictor **-r** is an [unspecified member](#unspecified-member). English *the dog that…* is two sentences, then this resume ([which person or thing](dependents.md#which-noun)).
 
 ### Reviser
 
@@ -637,7 +637,7 @@ Prefix-less *including / rather / instead / except* (in-clause vs discourse by p
 
 [Roles](roles.md#role-compounds)
 
-**Compare with:** *sitting guard* is this stem on `/ɡ/` ([which noun, with resume and kinds](core.md#which-noun-intermediate)).
+**Compare with:** *sitting guard* is this stem on `/ɡ/` ([which noun, with resume and kinds](dependents.md#which-noun-intermediate)).
 
 ### Role letter
 
@@ -655,13 +655,13 @@ Word-initial job letter.
 
 `/x/` *therefore / however / meanwhile*.
 
-[Core](core.md#sentence-linkers)
+[Dependents](dependents.md#sentence-linkers)
 
 ### So that / event purpose
 
 Clause-pole **`olala`**: intended outcome of the host (*so that Ululon sits*; NP *for a money-bag*). Not locative *toward*, not values **`xo`**, not discourse *therefore*.
 
-[Core](core.md#so-that)
+[Dependents](dependents.md#so-that)
 
 ### Sequence
 
@@ -687,7 +687,7 @@ Typed cite / aside / mention / opaque fences; spoken opening word.
 
 Short word in a role slot (`darl` / `barl` / `dorl` / `derl` / `durl`, open **`-rm`**) that stands for the **following sentence**. Same vowel series as joins; not a join (joins close a list already said).
 
-[Core](core.md#stand-in)
+[Dependents](dependents.md#stand-in)
 
 **Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause poles](#clause-pole--np-pole) (`hurugum`, `hadorom`) name the relation; the stand-in fills `/b/`.
 

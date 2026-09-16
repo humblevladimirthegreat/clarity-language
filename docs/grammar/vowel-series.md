@@ -44,4 +44,4 @@ The next page is the first large family that uses this map.
 ## See also
 
 - [Speech act](core.md#speech-act-beginner)
-- [Stand-in](core.md#stand-in) (`darl` / `dorl` / `derl` / `durl`)
+- [Stand-in](dependents.md#stand-in) (`darl` / `dorl` / `derl` / `durl`)

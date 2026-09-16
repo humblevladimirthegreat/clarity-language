@@ -43,21 +43,23 @@ Read **`docs/grammar/`** only, in stage order. [why-agelan.md](../grammar/why-ag
 3. [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / word edges)
 4. [reference-suffix.md Beginner](../grammar/reference-suffix.md#beginner) (citation **-l** / **-m** / **-n**)
 5. [core.md Beginner](../grammar/core.md#beginner)
-6. [pronouns.md](../grammar/pronouns.md#beginner) · [plurality.md](../grammar/plurality.md#beginner)
-7. [predication.md](../grammar/predication.md#beginner)
-8. [vowel-series.md](../grammar/vowel-series.md#beginner) (one-screen map; not a new morph)
-9. [joins.md](../grammar/joins.md#beginner)
-10. [questions.md](../grammar/questions.md#beginner)
-11. [revisers.md](../grammar/revisers.md#beginner) · [restrictors.md](../grammar/restrictors.md#beginner)
-12. [spans.md](../grammar/spans.md#beginner)
-13. [numbers.md](../grammar/numbers.md#beginner) · [comparatives.md](../grammar/comparatives.md#beginner) · [causation.md](../grammar/causation.md#beginner)
-14. [values.md](../grammar/values.md#beginner) · [ability.md](../grammar/ability.md#beginner) · [commentary.md](../grammar/commentary.md#beginner) · [roles.md](../grammar/roles.md#beginner) · [x-compounds.md](../grammar/x-compounds.md#beginner) · [plan-decision.md](../grammar/plan-decision.md#beginner)
+6. [relations.md Beginner](../grammar/relations.md#beginner)
+7. [dependents.md Beginner](../grammar/dependents.md#beginner)
+8. [pronouns.md](../grammar/pronouns.md#beginner) · [plurality.md](../grammar/plurality.md#beginner)
+9. [predication.md](../grammar/predication.md#beginner)
+10. [vowel-series.md](../grammar/vowel-series.md#beginner) (one-screen map; not a new morph)
+11. [joins.md](../grammar/joins.md#beginner)
+12. [questions.md](../grammar/questions.md#beginner)
+13. [revisers.md](../grammar/revisers.md#beginner) · [restrictors.md](../grammar/restrictors.md#beginner)
+14. [spans.md](../grammar/spans.md#beginner)
+15. [numbers.md](../grammar/numbers.md#beginner) · [comparatives.md](../grammar/comparatives.md#beginner) · [causation.md](../grammar/causation.md#beginner)
+16. [values.md](../grammar/values.md#beginner) · [ability.md](../grammar/ability.md#beginner) · [commentary.md](../grammar/commentary.md#beginner) · [roles.md](../grammar/roles.md#beginner) · [x-compounds.md](../grammar/x-compounds.md#beginner) · [plan-decision.md](../grammar/plan-decision.md#beginner)
 
 [join-extras.md](../grammar/join-extras.md) and leftover [special-vocabulary.md](../grammar/special-vocabulary.md) start at Intermediate (no Beginner slot). [plan-decision.md](../grammar/plan-decision.md) **DECISION** is Intermediate; plan / predict is Beginner. [numbers-applied.md](../grammar/numbers-applied.md) starts at Intermediate (depends on numbers). [numeric-derivation.md](../grammar/numeric-derivation.md) is Advanced-only.
 
 ### Intermediate then Advanced
 
-15. Every peer’s **[Intermediate](../grammar/core.md#intermediate)** section (same dependency order as above is fine). Skip pages with no Intermediate (vowel-series). Include numbers Intermediate, [numbers-applied.md](../grammar/numbers-applied.md#intermediate), leftover join / overlay pages, and [plan-decision.md](../grammar/plan-decision.md#intermediate) **DECISION** / forecast source.
-16. Every peer’s **Advanced** section, including numbers Advanced and [numeric-derivation.md](../grammar/numeric-derivation.md). Skip pages with no Advanced.
+17. Every peer’s **[Intermediate](../grammar/core.md#intermediate)** section (same dependency order as above is fine). Skip pages with no Intermediate (vowel-series). Include numbers Intermediate, [numbers-applied.md](../grammar/numbers-applied.md#intermediate), leftover join / overlay pages, and [plan-decision.md](../grammar/plan-decision.md#intermediate) **DECISION** / forecast source.
+18. Every peer’s **Advanced** section, including numbers Advanced and [numeric-derivation.md](../grammar/numeric-derivation.md). Skip pages with no Advanced.
 
 Learner-facing reading order: site sidebar (**Suggested reading order**); stage notes: [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).

@@ -63,7 +63,7 @@ English names **how much of a unit** (*two meters*, *three hours*). The unit is 
 >
 > "Azawan walks two meters."
 
-Price *for five grams* keeps this same measure NP in `/b/` after [exchange](core.md#exchange) **`huhanem`**.
+Price *for five grams* keeps this same measure NP in `/b/` after [exchange](relations.md#exchange) **`huhanem`**.
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -145,7 +145,7 @@ Join vowels (Beginner already used ranked **`e`** for people):
 | **`ue`** | directed reverse path (spoken order = path) | *from 5 to 3* (`z+5 z+3 zuel gumel`) | **u** undo + **e** order |
 | **`ua`** | complement on the line | *outside 3–5* (`z+3 z+5 zual gumel`) | **u** undo + **a** add |
 
-**Compare with:** `zazawan zululon zel gomonam` (*Azawan is more challenging than Ululon*) ranks **people** on a scale. `z+3 z+5 zel gumel` is a **band** on a continuum. Place *from a station to a train* is two [locative](core.md#spatial-path) `/h/` + `/b/` units, not this fence.
+**Compare with:** `zazawan zululon zel gomonam` (*Azawan is more challenging than Ululon*) ranks **people** on a scale. `z+3 z+5 zel gumel` is a **band** on a continuum. Place *from a station to a train* is two [locative](relations.md#spatial-path) `/h/` + `/b/` units, not this fence.
 
 **Not the same job as:** bare **`z+3 z+5 zel`** (*prefer 3 over 5*). Without the SHARED continuum, two number conjuncts are an ordinary join.
 
@@ -445,7 +445,7 @@ Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which val
 
 **For *+50% relative to baseline*, use:** a multiplicative `/h/` factor (**`h+1.5`**, …) or ordinary *relative-to* wording.
 
-When the whole is not the modified head, use a complex `/ɡ/` or `/h/` [of relation](core.md#of-relations) (`gobonem` *part of*) + `/b/` whole, with the percent elsewhere in the clause as needed. Numbers take no `/w/` and no open arguments.
+When the whole is not the modified head, use a complex `/ɡ/` or `/h/` [of relation](relations.md#of-relations) (`gobonem` *part of*) + `/b/` whole, with the percent elsewhere in the clause as needed. Numbers take no `/w/` and no open arguments.
 
 **`…ju`** point amounts, factor change (`/h/` **`h+…`**), *top / bottom N%* rank bands, and *N% done* take their “whole” from context or a separately named class.
 

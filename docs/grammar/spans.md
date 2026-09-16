@@ -128,7 +128,7 @@ The interior is ordinary Agalan: a fragment, or a clause body that keeps the **s
 
 A one-word manner with nothing to package is a plain adverb: `zazawan vawalal huzumum.`
 
-**For *because* / *if*, use:** [**`barl`**](core.md#dependent-clauses) dependents, not an aside.
+**For *because* / *if*, use:** [**`barl`**](dependents.md#dependent-clauses) dependents, not an aside.
 
 **Compare with:** a second name for the same person uses [identity](predication.md#identity) (`gonunu` + `/b/`), not an aside.
 

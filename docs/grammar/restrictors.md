@@ -24,7 +24,7 @@ With **no** occasion listed, the inventory is empty, so the claim never counts: 
 >
 > "Ululon never walks."
 
-**Compare with:** two manner adverbs in a row with no restrictor still both apply (*quickly and quietly*). English *and* there just stacks descriptions on the same walk; it does not pick *when* the walk counts. A restrictor answers **when the verb claim counts**. Packaging members as one list still uses a [join](joins.md). English *the guard who sits* names which person ([which person or thing](core.md#which-noun)); it is not a restrictor.
+**Compare with:** two manner adverbs in a row with no restrictor still both apply (*quickly and quietly*). English *and* there just stacks descriptions on the same walk; it does not pick *when* the walk counts. A restrictor answers **when the verb claim counts**. Packaging members as one list still uses a [join](joins.md). English *the guard who sits* names which person ([which person or thing](dependents.md#which-noun)); it is not a restrictor.
 
 > `zazawan vawalal hadazam howom.`
 >
@@ -316,7 +316,7 @@ z-Ululon | v-swim | h-fire | h-always-except
 
 ### Occasions vs a dependent *when*
 
-English *when* / *if* can name a **following sentence** (*if Azawan walks*). Write that as an adverb plus extra noun: `/h/` plus `/b/` [**`barl`**](core.md#dependent-clauses). The main sentence stops after **`barl`**; the next sentence is the content. Restrictors still list **phrase** times or cases immediately before the restrictor. Use a restrictor when the occasions are words in the adverb slot; use **`barl`** when the occasion is another full clause.
+English *when* / *if* can name a **following sentence** (*if Azawan walks*). Write that as an adverb plus extra noun: `/h/` plus `/b/` [**`barl`**](dependents.md#dependent-clauses). The main sentence stops after **`barl`**; the next sentence is the content. Restrictors still list **phrase** times or cases immediately before the restrictor. Use a restrictor when the occasions are words in the adverb slot; use **`barl`** when the occasion is another full clause.
 
 > `zuhubun vuzunul hadorom barl zazawan vawalal.`
 >

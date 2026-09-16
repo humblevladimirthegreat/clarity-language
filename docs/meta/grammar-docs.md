@@ -1,6 +1,6 @@
 # Grammar doc style (for learners)
 
-How to write Agalan **grammar docs** under **`docs/grammar/`** so a learner can use them. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). Design authority for morphology stays in those pages (core sentence grammar: [core.md](../grammar/core.md)); this page standardizes **pedagogy and prose** only.
+How to write Agalan **grammar docs** under **`docs/grammar/`** so a learner can use them. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). Design authority for morphology stays in those pages (one-clause grammar: [core.md](../grammar/core.md); hosted relations: [relations.md](../grammar/relations.md); dependents / continue: [dependents.md](../grammar/dependents.md)); this page standardizes **pedagogy and prose** only.
 
 Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/` — only peer links inside `grammar/`. Editors follow this page, [learning-levels.md](learning-levels.md), and [translation-exercises.md](translation-exercises.md) privately.
 
@@ -528,7 +528,9 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 | Level rubric / reading order | [learning-levels.md](learning-levels.md) ([cross-doc path](learning-levels.md#cross-doc-path)) |
 | Doc prose / example style | This page ([Beginner stage shape](#beginner-stage-shape), [later-stage shape](#later-stage-shape), [cues](#cues-columns), [Compare with](#compare-with)) |
 | Goals / feature criteria | [why-agelan.md](../grammar/why-agelan.md) (psych); [introduction.md](../grammar/introduction.md) (grammar design, [cue tables](../grammar/introduction.md#cues)) |
-| Core sentence grammar | [core.md](../grammar/core.md) |
+| Core sentence grammar (one clause, `/j/`) | [core.md](../grammar/core.md) |
+| Hosted relation catalog | [relations.md](../grammar/relations.md) |
+| Dependents / continue (`/x/`, stand-ins) | [dependents.md](../grammar/dependents.md) |
 | IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) (letter table); [inspect.md](../grammar/inspect.md) (**Show IPA** on spoken forms). Not in other grammar-page examples |
 | Unassigned / unused-slot inventory | [unassigned-reserved.md](unassigned-reserved.md) — **never** a grammar-page row, drill, or “reserved” gloss |
 | Parser / CLI / site implementation notes | Code and `docs/meta/` — not titles, leads, or “house rules” on grammar pages |

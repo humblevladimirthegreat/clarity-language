@@ -130,10 +130,10 @@ Path items joined with `·` are **co-located**, not ordered. Do **not** recycle 
 
 | Slot | Files |
 |------|--------|
-| 7 | `pronouns.md` · `plurality.md` |
-| 11 | `revisers.md` · `restrictors.md` |
-| 13 | `numbers.md` · `numbers-applied.md` · `comparatives.md` · `causation.md` |
-| 14 | `values.md` · `ability.md` · `commentary.md` · `roles.md` · `x-compounds.md` · `plan-decision.md` |
+| 9 | `pronouns.md` · `plurality.md` |
+| 13 | `revisers.md` · `restrictors.md` |
+| 15 | `numbers.md` · `numbers-applied.md` · `comparatives.md` · `causation.md` |
+| 16 | `values.md` · `ability.md` · `commentary.md` · `roles.md` · `x-compounds.md` · `plan-decision.md` |
 
 Later path numbers **may** recycle both siblings (e.g. joins Beginner may use pronouns **and** plurality Beginner).
 
@@ -157,8 +157,12 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `reference-suffix.md` | Beginner | a classroom |
 | `reference-suffix.md` | Intermediate | a hospital ward |
 | `core.md` | Beginner | a bank |
-| `core.md` | Intermediate | a train platform |
+| `core.md` | Intermediate | a waiting room |
 | `core.md` | Advanced | a circus |
+| `relations.md` | Beginner | a tool crib |
+| `relations.md` | Intermediate | a train platform |
+| `dependents.md` | Beginner | a guard post |
+| `dependents.md` | Intermediate | a departure board |
 | `pronouns.md` | Beginner | a kitchen |
 | `pronouns.md` | Intermediate | a rooftop garden |
 | `pronouns.md` | Advanced | a radio booth |
@@ -261,25 +265,27 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | — | `introduction.md` | skip | — | orientation |
 | 3 | `phonology.md` | skip | — | not translation |
 | 4 | `reference-suffix.md` | **exists** | Choose **-l** vs **-m** vs **-n** on a **citation** (prefix-less); named person vs kind vs metaphor; **greeting** named citation with period (`azawan.`) | No sentences with role letters. No **-r**. Pointers to **-x** / **`gl-`**: do **not** make those the item. No vocative `/j/` |
-| 5 | `core.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; hosted `/ɡ|h/`+`/b/`; unhosted `/b/` recipient/addressee; omit **`jal`**; **`jol` / `jel` / `jul`**; `/x/` continue vs `/j/` turn; **vocative** `/j/` + house name (`jululon`); **`darl` last**; adverbial subordinators (`hurugum` / `hodom` / `hezazem` / `hezebam` / `hegemum` / `humerem` / `hagagam` / `horanem` / `holalam` **`barl`**; *despite* = **`hezebam`** + `/b/` noun; intended *for* = **`holalam`** + `/b/` noun); exchange **`huhanem`** + `/b/`; proxy **`hudagam`** + `/b/`; house names; **-l** / **-m** / **-n** as used in examples; `/x/` linker may start the next written sentence after `.` | Do not use **`gl-`**, **`jam`/`jom`/`jem`/`jum`**, nested **`barl`**, letter **-r** mechanism, **-x**, joins. Polar **`jael` / `juel`** is questions, not this stage. Greeting citations are reference-suffix, not this stage. No greeting-bid **`x`** vowel |
-| 6 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`ugobo` / `edone` / `aha` / `enenu`** (when the *role* is the point); inclusive *we* **`aha`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
-| 6 | `plurality.md` | **exists** | Associative **-x** (`-lx` / `-nx` / `-rx`); not agreement; person-role **-x** (address set vs name…**-x**) | **`aha`** as the *not this* for inclusive *we*. **`ugobo`/`edone`** only on person-role items |
-| 7 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zodogol`; identity **`gonunul` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already taught in this stage |
-| 8 | `vowel-series.md` | skip | — | mnemonic only |
-| 9 | `joins.md` | **exists** | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / single-item / standalone starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask) | No revisers, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
-| 10 | `questions.md` | **exists** | **`jol`/`jom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`jael` / `juel` / `jaol`** vs **`jul`** vs join **`zul`** | **`jom`** is taught here as soft *ask* — allowed on this page even though full speech-act twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
-| 11 | `revisers.md` | **exists** | Prefix-less **`al`/`am`/`ol`/`ul`** (and **e** / **n** as taught in this stage); in-clause `A REV B`; discourse **`al`** *additionally* before a body | Not a join (`zam` vs `am`). Not **`x#e-` / `x#e`** (numbers discourse) |
-| 11 | `restrictors.md` | **exists** | **`hal`/`ham`/`hual`/`huam`/`har`/`hor`/`hur`** (and `/w/` twins); *only when* vs co-manner *and*; bare *never* / *always* | Not sibling revisers. Not join **`zam`** as a restrictor |
-| 12 | `spans.md` | **exists** | Writing fences `[ ]` `{ }` `( )` `< >`; **`~`/`@`**; resume `d[=]`; PoS = outer slot; **aside** = `h(…)`; interior fragment or same-speech-act clause; when a span is required vs nativized word | `<>` loans **allowed** (this stage teaches them). Prefer atomic one-token cites |
-| 13 | `numbers.md` | **exists** | `g+N` count; `g#N` ordinal; digitless **`g+`** (*more than one*) with **-x** on the noun | No `/v/` `/h/` `/j/` `/x/` number uses, exponents, ranges, percent, measures (later). **-x** from plurality is recycle |
-| 13 | `comparatives.md` | **exists** | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; single-item superlative; equative **`ae`** | **Needs:** joins Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
-| 13 | `causation.md` | **exists** | Two-place poles: outcome host + `/b/` condition; `/h/` event vs `/ɡ/` noun; *if* **`adoro`** vs *only if* **`ebero`**; no cause-arrow word | **Needs:** core extra nouns + **`darl`**. *Because* / **`IFF`** / **CAUSE** are Intermediate — do not use |
-| 14 | `values.md` | **exists** | Six needs; `/ɡ/` on the noun vs `/h/` on the clause; **`xa`** met + contact **-l / -m / -r**; **`xu`** unmet changeability | **Not** prescription **`xe`** or motive **`xo`** (Intermediate). Not ability (non-need + `x` vowel). Not MAY. Not bare need-as-topic |
-| 14 | `ability.md` | **exists** | Host (non-need) + **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (need roots). Not role compounds (vowel *left* of `x`). Not greeting bid (named citation or `/j/`) |
-| 14 | `commentary.md` | **exists** | **MAY** **`odoho`** + 2a holds (**`hodohom`** default; **-l** find out; **-r** who knows) | Not evidentiality / NOTIONAL (Intermediate). Not **`jom`** (core Intermediate) unless you only recycle **`jol`** from core/questions Beginner |
-| 14 | `roles.md` | **exists** | Role compounds **`a`/`e`/`u`/`o` x ROOT`** (agent / instrument / patient / reltum); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
-| 14 | `x-compounds.md` | **exists** | Productive **`x`** vs two words vs dictionary compound; look up listed stems (`ohohulabede` / `eberelonogo`); do not coin them. Live **`x`** from parts (not a pre-joined bank row) | Not parser-family inventory as drills; not coining new dictionary compounds. Greeting bid is Intermediate |
-| 14 | `plan-decision.md` | **exists** | **PLAN** **`owora`** map-resolution endings vs **PREDICT** **`elezo`** (bare) | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling MAY / values / ability unused unless the page contrast needs them |
+| 5 | `core.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; hosted `/ɡ|h/`+`/b/` (*inside*); unhosted `/b/` recipient/addressee; omit **`jal`**; **`jol` / `jel` / `jul`**; **vocative** `/j/` + house name (`jululon`); house names; **-l** / **-m** / **-n** as used in examples | Do not use **`gl-`**, **`jam`/`jom`/`jem`/`jum`**, **`darl`**, `/x/`, nested **`barl`**, letter **-r** mechanism, **-x**, joins. Polar **`jael` / `juel`** is questions, not this stage. Greeting citations are reference-suffix, not this stage. No greeting-bid **`x`** vowel |
+| 6 | `relations.md` | **exists** | Hosted pair for means **`hahanam`**, simile **`hurorom`**, exchange **`huhanem`**, proxy **`hudagam`** | Recycle core hosted `/b/`. No locatives inventory, no of-relations, no **`barl`** |
+| 7 | `dependents.md` | **exists** | Two-sentence *who / that / which*; **`darl` last**; adverbial subordinators (`hurugum` / `hadorom` / `hezazem` / `hezebam` / `hegemum` / `hudumem` / `hababam` / `horanem` / `holalam` **`barl`**; *despite* = **`hezebam`** + `/b/` noun; intended *for* = **`holalam`** + `/b/` noun); `/x/` continue vs `/j/` turn; `/x/` linker may start the next written sentence after `.` | Do not use nested **`barl`**, letter **-r** mechanism. Recycle core speech-act **`jol`/`jel`/`jul`** |
+| 8 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`ugobo` / `edone` / `aha` / `enenu`** (when the *role* is the point); inclusive *we* **`aha`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
+| 8 | `plurality.md` | **exists** | Associative **-x** (`-lx` / `-nx` / `-rx`); not agreement; person-role **-x** (address set vs name…**-x**) | **`aha`** as the *not this* for inclusive *we*. **`ugobo`/`edone`** only on person-role items |
+| 9 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zodogol`; identity **`gonunul` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already taught in this stage |
+| 10 | `vowel-series.md` | skip | — | mnemonic only |
+| 11 | `joins.md` | **exists** | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / single-item / standalone starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask) | No revisers, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
+| 12 | `questions.md` | **exists** | **`jol`/`jom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`jael` / `juel` / `jaol`** vs **`jul`** vs join **`zul`** | **`jom`** is taught here as soft *ask* — allowed on this page even though full speech-act twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
+| 13 | `revisers.md` | **exists** | Prefix-less **`al`/`am`/`ol`/`ul`** (and **e** / **n** as taught in this stage); in-clause `A REV B`; discourse **`al`** *additionally* before a body | Not a join (`zam` vs `am`). Not **`x#e-` / `x#e`** (numbers discourse) |
+| 13 | `restrictors.md` | **exists** | **`hal`/`ham`/`hual`/`huam`/`har`/`hor`/`hur`** (and `/w/` twins); *only when* vs co-manner *and*; bare *never* / *always* | Not sibling revisers. Not join **`zam`** as a restrictor |
+| 14 | `spans.md` | **exists** | Writing fences `[ ]` `{ }` `( )` `< >`; **`~`/`@`**; resume `d[=]`; PoS = outer slot; **aside** = `h(…)`; interior fragment or same-speech-act clause; when a span is required vs nativized word | `<>` loans **allowed** (this stage teaches them). Prefer atomic one-token cites |
+| 15 | `numbers.md` | **exists** | `g+N` count; `g#N` ordinal; digitless **`g+`** (*more than one*) with **-x** on the noun | No `/v/` `/h/` `/j/` `/x/` number uses, exponents, ranges, percent, measures (later). **-x** from plurality is recycle |
+| 15 | `comparatives.md` | **exists** | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; single-item superlative; equative **`ae`** | **Needs:** joins Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
+| 15 | `causation.md` | **exists** | Two-place poles: outcome host + `/b/` condition; `/h/` event vs `/ɡ/` noun; *if* **`adoro`** vs *only if* **`ebero`**; no cause-arrow word | **Needs:** core extra nouns + dependents **`darl`**. *Because* / **`IFF`** / **CAUSE** are Intermediate — do not use |
+| 16 | `values.md` | **exists** | Six needs; `/ɡ/` on the noun vs `/h/` on the clause; **`xa`** met + contact **-l / -m / -r**; **`xu`** unmet changeability | **Not** prescription **`xe`** or motive **`xo`** (Intermediate). Not ability (non-need + `x` vowel). Not MAY. Not bare need-as-topic |
+| 16 | `ability.md` | **exists** | Host (non-need) + **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (need roots). Not role compounds (vowel *left* of `x`). Not greeting bid (named citation or `/j/`) |
+| 16 | `commentary.md` | **exists** | **MAY** **`odoho`** + 2a holds (**`hodohom`** default; **-l** find out; **-r** who knows) | Not evidentiality / NOTIONAL (Intermediate). Not **`jom`** (core Intermediate) unless you only recycle **`jol`** from core/questions Beginner |
+| 16 | `roles.md` | **exists** | Role compounds **`a`/`e`/`u`/`o` x ROOT`** (agent / instrument / patient / reltum); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
+| 16 | `x-compounds.md` | **exists** | Productive **`x`** vs two words vs dictionary compound; look up listed stems (`ohohulabede` / `eberelonogo`); do not coin them. Live **`x`** from parts (not a pre-joined bank row) | Not parser-family inventory as drills; not coining new dictionary compounds. Greeting bid is Intermediate |
+| 16 | `plan-decision.md` | **exists** | **PLAN** **`owora`** map-resolution endings vs **PREDICT** **`elezo`** (bare) | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling MAY / values / ability unused unless the page contrast needs them |
 
 ### Intermediate then Advanced
 <a id="allowlist-later"></a>
@@ -288,48 +294,50 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 
 | Path | File | Band | Status | Introduces (test these) | Notes |
 |------|------|------|--------|-------------------------|-------|
-| 5 | `core.md` | Intermediate | **exists** | **`jam`/`jom`/`jem`/`jum`**; **`gl-`**; adverb topic `/h/`+`/b/`; locative relations (`hogorem`, `hubuhum`, `haladem`, `hebarum`, `hobowam`, `hezewum`, `hejegem`, `hazadum`); of-relations (`gobonem`, `gajaram`, `gowodom`, `gajabam`); complex chaining; `/x/` linkers (`xezazal`, `xezebal`, …); nested **`barl`**; number-as-interjection pointer only if the stage’s examples already show it | Do not require numbers Intermediate readings. *Between* recycles joins Beginner `/b/` join. Of-relation drills wait for **replace** |
+| 5 | `core.md` | Intermediate | **exists** | **`jam`/`jom`/`jem`/`jum`**; **`gl-`**; adverb topic `/h/`+`/b/`; complex chaining; number-as-interjection pointer only if the stage’s examples already show it | Do not require numbers Intermediate readings |
 | 5 | `core.md` | Advanced | **exists** | Leftmost content-word prominence; English cleft / *what*-cleft / fronted adverb | 4–6 items. Weak-pause cues are recognition, not the drill |
+| 6 | `relations.md` | Intermediate | **exists** | locative relations (`hogorem`, `hubuhum`, `haladem`, `hebarum`, `hobowam`, `hezewum`, `hejegem`, `hazadum`); of-relations (`gobonem`, `gajaram`, `gowodom`, `gajabam`) | *Between* recycles joins Beginner `/b/` join. Of-relation drills wait for **replace** |
+| 7 | `dependents.md` | Intermediate | **exists** | `/x/` linkers (`xezazal`, `xezebal`, …); nested **`barl`**; stand-in vowels; which-noun with resume | Recycle Beginner **`darl`/`barl`** |
 | 4 | `reference-suffix.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
 | 4 | `reference-suffix.md` | Advanced | skip | — | no Advanced stage |
-| 7 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`aha`** vs name join vs name…**-x** | |
-| 7 | `pronouns.md` | Advanced | **exists** | Cross-role recast (one or two PoS flips, not the whole grid) | 4–6 items |
-| 7 | `plurality.md` | Intermediate | **exists** | Associate resolution; verb collective; collective `/ɡ/`…**-x**; vocative **-x** | |
-| 7 | `plurality.md` | Advanced | — | no Advanced stage | |
-| 8 | `predication.md` | Intermediate | **exists** | Classification packaging; **SAME** endings / open **-m** | |
-| 8 | `predication.md` | Advanced | skip | boundaries | |
-| 9 | `joins.md` | Intermediate | **exists** | Full single-item/standalone; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains; SHARED after join; `^` islands; fence nesting; clause **sequence** (`xan`); VP/clause forms | Sample **decisions**, not every H3. 6–8 items |
-| 9 | `joins.md` | Advanced | **exists** | Named phrase **-n**; one rare-arity or reserved contrast from this stage | 4–6 items |
-| 10 | `questions.md` | Intermediate | **exists** | Fuller polar inventory; confirming a negative; fill-ask arity; occasion **`har`**; yes/no with single-item/standalone; fill-ask answers | |
-| 10 | `questions.md` | Advanced | **exists** | Polar contrasts; single-item/standalone inventory under question | 4–6 items |
-| 11 | `revisers.md` | Intermediate | **exists** | Ending grids; parallel chains; discourse placements (before the act word, `/x/` continue/linker) | |
-| 11 | `revisers.md` | Advanced | skip | more examples / reserved | |
-| 11 | `restrictors.md` | Intermediate | **exists** | Defined core (full); conjuncts; dependent *when* | |
-| 11 | `restrictors.md` | Advanced | — | no Advanced stage | |
-| 12 | `spans.md` | Intermediate | **exists** | Spoken open shape; TYPE; EDGE; endings; nesting; **`^ … ^`** scope islands; mention of a handle **form** vs office **-n** | |
-| 12 | `spans.md` | Advanced | **exists** | Close forms (`xuxul` / editorial / close-all) | 4–6 items |
-| 13 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; digitless; number as verb / adverb / interjection / discourse as taught in this stage; **one of** measure / range / percent / time if you can keep the item to that decision (those topics live in **`numbers-applied.md`**) | Do not dump the whole Intermediate. 6–8 items |
-| 13 | `numbers-applied.md` | Intermediate | **exists** | Digit-string labels; clock / calendar time; percent vs points; measure phrases; ranges — as taught in this stage | One topic per item. 4–8 items |
-| 13 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the stage’s teach examples** — not unassigned cells | 4–6 items |
-| 13 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; manner `/h/` immediately after the join; distributive **`a`** + SHARED `/ɡ/`; measured differentials | Measured items **Sibling OK:** numbers Intermediate **measure phrases** only |
-| 13 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zojun`, `zahaman`, **`zuroron`** Mine vs performance **`zugobon`**, **`zoloben`** Everyone, …) | **`ugobo`** allowed on performance items |
-| 13 | `causation.md` | Intermediate | **exists** | Following-sentence **`barl`**; **`urugu`** *because* / **`ezaze`** *iff*; asserted necessary **`heberom hurugum`**; **CAUSE** **`egega`** **-m** | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
-| 13 | `causation.md` | Advanced | **exists** | Factivity; evidential / CAUSE / habit stacks as taught in this stage | MAY/evidentiality are Beginner/Intermediate recycle by the time Advanced is read |
-| 14 | `values.md` | Intermediate | **exists** | Prescription **`xe`** + force; motive **`xo`** + preference standing; which ending table; attachment sites | |
-| 14 | `values.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
-| 14 | `ability.md` | Intermediate | **exists** | Hostless fallback **`egera`** (**ABIL**) | |
-| 14 | `ability.md` | Advanced | — | no Advanced stage | |
-| 14 | `commentary.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`adade`** + play holds; MAY vs nearby jobs | |
-| 14 | `commentary.md` | Advanced | — | no Advanced stage | |
-| 14 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; bare arrow roots = compass; gravity **`uba`/`odowo`**; name/listener anchor | Prefer `…xazawan` over silent speaker default. **`edone`/`ugobo`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
-| 14 | `x-compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *one moment please* / passing) | Recycle [greeting](../grammar/reference-suffix.md#greeting) and [vocative](../grammar/core.md#vocative). Not ability (`vuzunuxel`). Not values |
-| 14 | `roles.md` | Advanced | — | no Advanced stage | |
-| 15 | `join-extras.md` | Intermediate | **exists** | Join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 15) |
-| 15 | `plan-decision.md` | Intermediate | **exists** | **DECISION** **`egege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
-| 15 | `plan-decision.md` | Advanced | — | no Advanced stage | |
-| 15 | `special-vocabulary.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value); numbered alternatives `uzebum`/`agegom`/`olalal` + `g#N` | Overlay *inventory* is not a drill. **Needs** values Beginner (recycle). Not universality (Advanced) |
-| 15 | `special-vocabulary.md` | Advanced | **exists** | Universality (`arogu` / `abulu` / …) as taught in this stage | 4–6 items |
-| 16 | `numeric-derivation.md` | Advanced | **exists** | `ROOT x NUM` as the stage teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
+| 9 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`aha`** vs name join vs name…**-x** | |
+| 9 | `pronouns.md` | Advanced | **exists** | Cross-role recast (one or two PoS flips, not the whole grid) | 4–6 items |
+| 9 | `plurality.md` | Intermediate | **exists** | Associate resolution; verb collective; collective `/ɡ/`…**-x**; vocative **-x** | |
+| 9 | `plurality.md` | Advanced | — | no Advanced stage | |
+| 10 | `predication.md` | Intermediate | **exists** | Classification packaging; **SAME** endings / open **-m** | |
+| 10 | `predication.md` | Advanced | skip | boundaries | |
+| 11 | `joins.md` | Intermediate | **exists** | Full single-item/standalone; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains; SHARED after join; `^` islands; fence nesting; clause **sequence** (`xan`); VP/clause forms | Sample **decisions**, not every H3. 6–8 items |
+| 11 | `joins.md` | Advanced | **exists** | Named phrase **-n**; one rare-arity or reserved contrast from this stage | 4–6 items |
+| 12 | `questions.md` | Intermediate | **exists** | Fuller polar inventory; confirming a negative; fill-ask arity; occasion **`har`**; yes/no with single-item/standalone; fill-ask answers | |
+| 12 | `questions.md` | Advanced | **exists** | Polar contrasts; single-item/standalone inventory under question | 4–6 items |
+| 13 | `revisers.md` | Intermediate | **exists** | Ending grids; parallel chains; discourse placements (before the act word, `/x/` continue/linker) | |
+| 13 | `revisers.md` | Advanced | skip | more examples / reserved | |
+| 13 | `restrictors.md` | Intermediate | **exists** | Defined core (full); conjuncts; dependent *when* | |
+| 13 | `restrictors.md` | Advanced | — | no Advanced stage | |
+| 14 | `spans.md` | Intermediate | **exists** | Spoken open shape; TYPE; EDGE; endings; nesting; **`^ … ^`** scope islands; mention of a handle **form** vs office **-n** | |
+| 14 | `spans.md` | Advanced | **exists** | Close forms (`xuxul` / editorial / close-all) | 4–6 items |
+| 15 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; digitless; number as verb / adverb / interjection / discourse as taught in this stage; **one of** measure / range / percent / time if you can keep the item to that decision (those topics live in **`numbers-applied.md`**) | Do not dump the whole Intermediate. 6–8 items |
+| 15 | `numbers-applied.md` | Intermediate | **exists** | Digit-string labels; clock / calendar time; percent vs points; measure phrases; ranges — as taught in this stage | One topic per item. 4–8 items |
+| 15 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the stage’s teach examples** — not unassigned cells | 4–6 items |
+| 15 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; manner `/h/` immediately after the join; distributive **`a`** + SHARED `/ɡ/`; measured differentials | Measured items **Sibling OK:** numbers Intermediate **measure phrases** only |
+| 15 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zojun`, `zahaman`, **`zuroron`** Mine vs performance **`zugobon`**, **`zoloben`** Everyone, …) | **`ugobo`** allowed on performance items |
+| 15 | `causation.md` | Intermediate | **exists** | Following-sentence **`barl`**; **`urugu`** *because* / **`ezaze`** *iff*; asserted necessary **`heberom hurugum`**; **CAUSE** **`egega`** **-m** | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
+| 15 | `causation.md` | Advanced | **exists** | Factivity; evidential / CAUSE / habit stacks as taught in this stage | MAY/evidentiality are Beginner/Intermediate recycle by the time Advanced is read |
+| 16 | `values.md` | Intermediate | **exists** | Prescription **`xe`** + force; motive **`xo`** + preference standing; which ending table; attachment sites | |
+| 16 | `values.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
+| 16 | `ability.md` | Intermediate | **exists** | Hostless fallback **`egera`** (**ABIL**) | |
+| 16 | `ability.md` | Advanced | — | no Advanced stage | |
+| 16 | `commentary.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`adade`** + play holds; MAY vs nearby jobs | |
+| 16 | `commentary.md` | Advanced | — | no Advanced stage | |
+| 16 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; bare arrow roots = compass; gravity **`uba`/`odowo`**; name/listener anchor | Prefer `…xazawan` over silent speaker default. **`edone`/`ugobo`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
+| 16 | `x-compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *one moment please* / passing) | Recycle [greeting](../grammar/reference-suffix.md#greeting) and [vocative](../grammar/core.md#vocative). Not ability (`vuzunuxel`). Not values |
+| 16 | `roles.md` | Advanced | — | no Advanced stage | |
+| 17 | `join-extras.md` | Intermediate | **exists** | Join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 17) |
+| 17 | `plan-decision.md` | Intermediate | **exists** | **DECISION** **`egege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
+| 17 | `plan-decision.md` | Advanced | — | no Advanced stage | |
+| 17 | `special-vocabulary.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value); numbered alternatives `uzebum`/`agegom`/`olalal` + `g#N` | Overlay *inventory* is not a drill. **Needs** values Beginner (recycle). Not universality (Advanced) |
+| 17 | `special-vocabulary.md` | Advanced | **exists** | Universality (`arogu` / `abulu` / …) as taught in this stage | 4–6 items |
+| 18 | `numeric-derivation.md` | Advanced | **exists** | `ROOT x NUM` as the stage teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
 
 ## Leak index
 <a id="leak-index"></a>
@@ -338,10 +346,14 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 
 | Form | First taught |
 |------|----------------|
-| House names, SVO, omit **`jal`**, **`jol`/`jel`/`jul`**, vocative (`jululon`), **`darl`**, *because* **`hurugum barl`**, `/x/` linker after `.` | `core.md` Beginner |
+| House names, SVO, omit **`jal`**, **`jol`/`jel`/`jul`**, vocative (`jululon`) | `core.md` Beginner |
+| Means / simile / exchange / proxy hosted pairs | `relations.md` Beginner |
+| **`darl`**, *because* **`hurugum barl`**, `/x/` linker after `.` | `dependents.md` Beginner |
 | Named citation greeting (`azawan.`) | `reference-suffix.md` Beginner |
 | Greeting bid **`…xan` / `…xon` / `…xen` / `…xun`** on a citation or vocative | `x-compounds.md` Intermediate |
-| **`gl-`**, **`jam`/`jom`/`jem`/`jum`** as a *speech-act* system, remaining `/x/` linkers, nested **`barl`**, of-relations (`gobonem` / `gajaram` / `gowodom` / `gajabam`) | `core.md` Intermediate |
+| **`gl-`**, **`jam`/`jom`/`jem`/`jum`** as a *speech-act* system | `core.md` Intermediate |
+| Locative relations; of-relations (`gobonem` / `gajaram` / `gowodom` / `gajabam`) | `relations.md` Intermediate |
+| Remaining `/x/` linkers, nested **`barl`**, stand-in vowels | `dependents.md` Intermediate |
 | **-l** / **-m** / **-n** as a *choice* on a citation | `reference-suffix.md` Beginner |
 | Letter/full-root **-r** algorithm; **`ugobo`/`edone`/`aha`/`enenu`** | `pronouns.md` Beginner |
 | Associative **-x** | `plurality.md` Beginner |

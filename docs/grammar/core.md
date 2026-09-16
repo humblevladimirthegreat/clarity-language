@@ -1,6 +1,6 @@
 # Agalan core grammar
 
-How to read and write an Agalan **sentence**: who does what, word shape, default order, how a speech move starts (`/j/` vs `/x/`), and a next sentence after **`darl`** (*that* / *whether* / *because* / *so that*).
+How to read and write one Agalan **clause**: who does what, word shape, default order, and how a speech move starts (`/j/`).
 
 ## Beginner
 <a id="beginner"></a>
@@ -102,108 +102,6 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 
 Do not park that recipient immediately after a relation `/h/` or `/ɡ/`: `hogorem bululon` is *inside Ululon*, not *to Ululon*. Put the pair first, then the recipient (`hogorem bohohul bululon`).
 
-### Which person or thing (*who / that / which*)
-<a id="which-noun"></a>
-
-When English hangs *who* / *that* / *which* plus a clause on a noun (*the guard who sits*), write **two sentences**. First say that inner clause as an ordinary sentence. Then use that same person or thing in the next sentence.
-
-> `zugugal vajul. zazawan bugugal vezehel.`
->
-> z-guard | v-sit | z-Azawan | b-guard | v-tell
->
-> "A guard sits. Azawan tells the guard."
-
-That pair is English *Azawan tells the guard who sits.* Repeat the full word when you need the same person again in the next sentence.
-
-**Compare with:** *a blue dog* is still one [adjective](#adjectives-ɡ) (`gelulul`). *A dog inside a house* is still the extra-noun pair on the verb (`hogorem bohohul`). *Azawan tells Ululon **that** a dog runs* is a [dependent clause](#dependent-clauses) (**`darl`**): *that* packages the next sentence as content, not as a tag on *dog*.
-
-### Means (*with* a tool)
-<a id="means"></a>
-
-When English says the action **uses a tool** (*writes with a hammer*), keep the same hosted pair as *inside*. The relation word is **`hahanam`**. Put the tool in `/b/` right after it. (cue: ✋ *hand*: you act through the hand; `/b/` is the implement)
-
-> `zazawan dabogol hahanam bahamel vuwurul.`
->
-> z-Azawan | d-book | h-using | b-hammer | v-write
->
-> "Azawan writes a book with a hammer."
-
-On a noun, the same root is **`gahanam`** (`dabogol gahanam bahamel` *a book written with a hammer*). Ordinary `zahanal` is still *a hand*.
-
-**Compare with:** *hastily* is ordinary manner `/h/` with no `/b/`. Unhosted `/b/` is still the recipient. *Inside* (`hogorem`) is a place, not a tool. *Like a duck* is [simile](#similative) (`hurorom`), not a tool. *A book for a hammer* as a swap is [exchange](#exchange) (`huhanem`), not a tool.
-
-| Agalan | Use | English | Same root as | Cue |
-|--------|-----|---------|--------------|-----|
-| **`hahanam` / `gahanam`** | implement the event (or noun) uses | *using / with* (a tool) | `ahanal` *hand* | ✋: you act through the hand |
-
-### Simile (*like*)
-<a id="similative"></a>
-<a id="like"></a>
-
-When English says something **resembles** a model (*walks like a duck*, *a house like Azawan’s*), keep the same hosted pair as *inside*. The relation word is **`hurorom`**. Put the model in `/b/` right after it. The event or thing stays real; only the match is to that model. (cue: 🪞 *mirror*: you see a reflection, not the same object twice)
-
-> `zazawan hurorom budugul vawalal.`
->
-> z-Azawan | h-like | b-duck | v-walk
->
-> "Azawan walks like a duck."
-
-On a noun, the same root is **`gurorom`**:
-
-> `zohohul gurorom bazawan.`
->
-> z-house | g-like | b-Azawan
->
-> "A house like Azawan’s."
-
-Ordinary `zurorol` is still *a mirror*.
-
-**Compare with:** unhosted `/b/` is still the recipient. *Inside* is a place. *Using* a tool is [means](#means). Two labels for **one** person is not this pair. *As happy as* names a shared height, not resemblance. *As if they walk* takes the walk off the real tally; here the walk stays real.
-
-| Agalan | Use | English | Same root as | Cue |
-|--------|-----|---------|--------------|-----|
-| **`hurorom` / `gurorom`** | resemblance to a model | *like* | `urorol` *mirror* | 🪞: the image is of the model |
-
-### Exchange (*for*)
-<a id="exchange"></a>
-<a id="in-exchange-for"></a>
-
-When English names the **other side of a swap** (*a book for a hammer*), keep the same hosted pair as *inside*. The relation word is **`huhanem`**. Put what is swapped against the theme in `/b/` right after it. That extra noun is the consideration, not who receives the theme. (cue: 💱 *currency-exchange*: the arrows swap one thing for another; `/b/` is the other side)
-
-> `zazawan dabogol huhanem bahamel vuhanem.`
->
-> z-Azawan | d-book | h-in-exchange-for | b-hammer | v-exchange
->
-> "Azawan exchanges a book for a hammer."
-
-On a noun, the same root is **`guhanem`** (`dabogol guhanem bahamel` *a book for a hammer*). Ordinary `zuhanel` is still *a currency exchange*. Ordinary `vuhanem` is still *to exchange*.
-
-**Compare with:** unhosted `/b/` is still the recipient (*a book for Ululon* as who gets it). *Using* a tool is [means](#means). *Like a duck* is [simile](#similative). *Inside* is a place. *Writes for a money-bag* as the intended get is [so that](#so-that) (`holalam`), not a swap.
-
-| Agalan | Use | English | Same root as | Cue |
-|--------|-----|---------|--------------|-----|
-| **`huhanem` / `guhanem`** | consideration / countervalue | *in exchange for* | `uhanel` *currency-exchange* | 💱: the arrows swap one side for the other |
-
-### Proxy (*on behalf of*)
-<a id="proxy"></a>
-<a id="on-behalf-of"></a>
-
-When English says someone **acts as another person’s agent** (*tells on behalf of Ululon*), keep the same hosted pair as *inside*. The relation word is **`hudagam`**. Put that person in `/b/` right after it. The subject still does the act; `/b/` is whose agency they use, not who hears the telling. (cue: 🪪 *id-card*: the card stands as an authorized face; `/b/` is that person)
-
-> `zazawan hudagam bululon vezehel.`
->
-> z-Azawan | h-on-behalf-of | b-Ululon | v-tell
->
-> "Azawan tells on behalf of Ululon."
-
-A recipient may follow a finished pair: `zazawan hudagam bululon buhubun vezehel` (*tells Uhubun on behalf of Ululon*). On a noun, the same root is **`gudagam`** (`dabogol gudagam bululon` *a book on behalf of Ululon*). Ordinary `zudagal` is still *an id-card*.
-
-**Compare with:** unhosted `/b/` is still who hears the telling. *Using* a tool is [means](#means). *A book for a hammer* as a swap is [exchange](#exchange). *Inside* is a place.
-
-| Agalan | Use | English | Same root as | Cue |
-|--------|-----|---------|--------------|-----|
-| **`hudagam` / `gudagam`** | authorized agency | *on behalf of* | `udagal` *id-card* | 🪪: the card stands as their face |
-
 ### Turn (`/j/`): start a new speech move
 <a id="turn-j"></a>
 
@@ -250,115 +148,7 @@ When the setting is not that default statement, write a `/j/` act word immediate
 | **jel** | command / instruction | **j** ≈ jump, **e** ≈ order (do this) |
 | **jul** | prohibition: *don’t…* | **j** ≈ jump, **u** ≈ undo (take the action back) |
 
-### Dependent clauses
-<a id="dependent-clauses"></a>
 
-Sometimes a full sentence fills a slot in the sentence before it (*Azawan tells Ululon **that the dog runs***). That inner sentence is a **dependent clause**. The person told is unhosted `/b/`; *that…* is often a direct object.
-
-In the main sentence, a **stand-in** **`darl`** (role letter + **`a`** + **`-rl`**) occupies that slot and stands for whatever sentence follows right away. Unspecified join **`dar`** is still *something* with no following sentence. A stand-in is not a [join](joins.md): joins close a list already said; a stand-in points forward at a sentence not yet said.
-
-Put **`darl` last** in its slot in the main sentence, and put the dependent **immediately after** it. Rearrange free word order so **`darl`** stays last in that slot.
-
-The dependent may open with its own `/j/` words, or keep the main sentence’s setting (statement, question, command) and omit `/j/` when that matches. The main sentence stops after **`darl`**; the next full sentence is the content that **`darl`** stands for. If the dependent is a command or prohibition instead of a statement, write its own act word.
-
-*That…* content is often a direct object, with **`darl` last** in the main sentence:
-
-> `zazawan bululon vezehel darl zodogol vurunul.`
->
-> z-Azawan | b-Ululon | v-tell | d-that-clause | z-dog | v-run
->
-> "Azawan tells Ululon that the dog runs."
-
-English *whether* is that same object slot, with vowel **`o`**: **`dorl`**. The outer sentence stays a statement. End the whole stretch with a period (the outer act is still a claim).
-
-> `zazawan vejel dorl zululon vawalal.`
->
-> z-Azawan | v-see | d-whether-clause | z-Ululon | v-walk
->
-> "Azawan sees whether Ululon walks."
-
-A fill-ask inside is *who* / *what*, still after **`darl`**, with inner **`jol`**:
-
-> `zazawan vejel darl jol zar vawalal.`
->
-> z-Azawan | v-see | d-that-clause | j-question | z-who | v-walk
->
-> "Azawan sees who walks."
-
-*Because* / *if* and similar use `/h/` + `/b/` **`barl`**. Keep that pair together, **last in the main sentence** (**`barl`** last). The metaphorical ending on the `/h/` word is always **-m**.
-
-> `zazawan vuzunul hurugum barl zululon vawalal.`
->
-> z-Azawan | v-sing | h-because | b-that-clause | z-Ululon | v-walk
->
-> "Azawan sings because Ululon walks."
-
-**-m** here is the same choice as *grace* from *swan*. **Same root as** is that root as an everyday kind (citation **-l**). **Cue** only says why the picture maps to the English column.
-
-You can also say:
-
-| Agalan | English | Same root as | Cue |
-|--------|---------|--------------|-----|
-| **`hurugum barl`** | *because* | `urugul` *brick* | 🧱: the cause is what the result sits on |
-| **`hadorom barl`** | *if* | `adorol` *door* | 🚪: walk through only if it opens |
-| **`heberom barl`** | *only if* | `eberol` *paper-roll* | 🧻: without it the situation does not run |
-| **`hezazem barl`** | *if and only if* | `ezazel` *east-west* | ↔️: each side only with the other |
-| **`hezebam barl`** | *although* / *even though* | `ezebal` *zebra* | 🦓: two stripes, still one animal |
-| **`hegemum barl`** | *while* (at the same time) | `egemul` *gemini* | ♊: two things at once |
-| **`hudumem barl`** | *until* | `udumel` *timer* | ⏲️: stop when it rings |
-| **`hababam barl`** | *before* | `ababal` *backpack* | 🎒: packed first |
-| **`horanem barl`** | *after* | `oranel` *hourglass* | ⌛: sand already through |
-| **`holalam barl`** | *so that* / *in order to* | `olalal` *goal* | 🥅: you act so the shot counts |
-
-When English puts a **noun** after *despite* (*despite Ululon*), keep the same **`hezebam`** pole and put that noun in `/b/` instead of **`barl`**. The obstacle is given, as with *although*. Do not write a second concession word. On a noun host the same pole is **`gezebam`**. (cue: 🦓 *zebra*: two stripes, still one animal)
-
-> `zazawan vawalal hezebam bululon.`
->
-> z-Azawan | v-walk | h-although | b-Ululon
->
-> "Azawan walks despite Ululon."
-
-Ordinary `zezebal` is still *a zebra*.
-
-<a id="so-that"></a>
-<a id="event-purpose"></a>
-
-When English names the **intended outcome** of this event (*walks so that Ululon sits*, *writes for a money-bag*), keep the same hosted pair as *because*. The pole is **`holalam`**. Put the outcome in `/b/`: a following sentence after **`barl`**, or a noun. The inner event is **not** asserted as a fact (unlike *because*). On a noun host the same pole is **`golalam`**. (cue: 🥅 *goal*: you act so the shot counts)
-
-> `zazawan vawalal holalam barl zululon vajul.`
->
-> z-Azawan | v-walk | h-so-that | b-that-clause | z-Ululon | v-sit
->
-> "Azawan walks so that Ululon sits."
-
-> `zazawan vuwurul holalam bonebal.`
->
-> z-Azawan | v-write | h-so-that | b-money-bag
->
-> "Azawan writes for a money-bag."
-
-Ordinary `zolalal` is still *a goal* (the net).
-
-**Compare with:** *although Ululon walks* is **`hezebam barl`** plus the next sentence. Discourse *however* is **`xezebal`** ([continue](#continue-x)). Discourse *therefore* is **`xezazal`**, a linker after a finished claim, not *so that*. *Whether Ululon walks* is **`dorl`**, not **`hadorom`** (*if* is a condition, not polar ignorance). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. *Toward* a place is locative **`hobowam`**, not this pole. Acting *for relatedness* is [values](values.md) **`xo`**, a need-motive, not an event outcome. *A book for a hammer* as a swap is [exchange](#exchange) (`huhanem`). *Want to walk* still takes a full **`darl`** sentence (repeat the inner `/z/`).
-
-The verb has no past or future letter. *Before* / *after* / *while* / *until* place this event relative to the next sentence.
-
-### Continue (`/x/`): keep the same speech move
-<a id="continue-x"></a>
-
-After a statement, question, or command, you may keep going **without** starting a new speech move: the next stretch is still a statement if you were stating (still a question if you were asking, and so on). That is to **continue**. `/x/` marks it.
-
-Only the first turn (or a default statement body) chooses the setting. Do not write **`jal`** on the continued stretch: the setting is already chosen.
-
-A word that glues two sentences (*therefore*, *however*, …) is an `/x/` **linker**. A period may close the first body; the linker then **starts the next written sentence** under the same speech act:
-
-> `zodogol vawalal. xezazal zagadal vurunul.`
->
-> z-dog | v-walk | x-therefore | z-cat | v-run
->
-> "A dog walks. Therefore a cat runs."
-
-**Compare with:** `/j/` starts a **new** speech move (a new statement, question, or command). `/x/` keeps the move you already started.
 
 ### Role letters
 <a id="role-letters"></a>
@@ -374,8 +164,9 @@ Role letters on this page:
 | `/ɡ/` | adjective (a property of the noun) | **ɡ** ≈ grade (a rating of the noun) |
 | `/w/` | extra detail on the previous adjective | **w** ≈ with (stuck to that adjective) |
 | `/h/` | adverb (how / when / where) | **h** starts *how* / *when* / *where* |
-| `/x/` | continue (keep the same setting) | **x** ≈ e**x**tend (same talk, not a new act) |
 | `/j/` | turn (start a new speech move) | **j** ≈ jump (a new act) |
+
+
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -393,7 +184,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Uhubun* | `uhubun` | | |
 | *bank* | `anabal` | | |
 | *money-bag* | `onebal` | | |
-| *guard* | `ugugal` | | |
 | *angry* | `anagal` | | |
 | *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 | *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
@@ -402,21 +192,11 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
 | *write* | `vuwurul` | `uwurul` *write* | ✍️: putting words on the page |
 | *sneak* | `vazanal` | | |
-| *scream* | `vazagal` | | |
-| *punch* | `vubunul` | | |
-| *fight* | `vuvugul` | | |
 | *run* | `vurunul` | `urunul` *run* | 🏃: leaving at speed |
 | *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
 | *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
 | *inside* | `hogorem` | `ogorel` *correct* | ⭕: being inside the boundary |
-| *that-clause* | `darl` | | |
 | *question* | `jol` | | |
-| *because* | `hurugum` | `urugul` *brick* | 🧱: the cause is what the result sits on |
-| *although* | `hezebam` | `ezebal` *zebra* | 🦓: two stripes, still one animal |
-| *so-that* | `holalam` | `olalal` *goal* | 🥅: you act so the shot counts |
-| *therefore* | `xezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
-| *in-exchange-for* | `huhanem` | `uhanel` *currency-exchange* | 💱: the arrows swap one side for the other |
-| *on-behalf-of* | `hudagam` | `udagal` *id-card* | 🪪: the card stands as their face |
 
 #### English → Agalan
 
@@ -468,68 +248,12 @@ z-Azawan | v-write | h-haste
 j-prohibition | v-sneak
 :::
 
-**7.** *Azawan tells Ululon that Uhubun sits.*
+**7.** *Azawan tells Ululon.*
 
 ::: details Show answer
-`zazawan bululon vezehel darl zuhubun vajul.`
+`zazawan bululon vezehel.`
 
-z-Azawan | b-Ululon | v-tell | d-that-clause | z-Uhubun | v-sit
-:::
-
-**8.** *Azawan runs because Ululon punches a guard.*
-
-::: details Show answer
-`zazawan vurunul hurugum barl zululon dugugal vubunul.`
-
-z-Azawan | v-run | h-because | b-that-clause | z-Ululon | d-guard | v-punch
-:::
-
-**9.** *Azawan writes despite a guard.*
-
-::: details Show answer
-`zazawan vuwurul hezebam bugugal.`
-
-z-Azawan | v-write | h-although | b-guard
-:::
-
-**10.** *Azawan writes in exchange for a money-bag.*
-
-::: details Show answer
-`zazawan vuwurul huhanem bonebal.`
-
-z-Azawan | v-write | h-in-exchange-for | b-money-bag
-:::
-
-**11.** *Azawan tells on behalf of Ululon.*
-
-::: details Show answer
-`zazawan hudagam bululon vezehel.`
-
-z-Azawan | h-on-behalf-of | b-Ululon | v-tell
-:::
-
-**12.** *Azawan sees whether Ululon sits.*
-
-::: details Show answer
-`zazawan vejel dorl zululon vajul.`
-
-z-Azawan | v-see | d-whether-clause | z-Ululon | v-sit
-:::
-
-**13.** *Azawan runs so that Ululon sits.*
-
-::: details Show answer
-`zazawan vurunul holalam barl zululon vajul.`
-
-z-Azawan | v-run | h-so-that | b-that-clause | z-Ululon | v-sit
-:::
-
-**14.** *Azawan writes for a money-bag.* (intended outcome, not a swap)
-
-::: details Show answer
-`zazawan vuwurul holalam bonebal.`
-
-z-Azawan | v-write | h-so-that | b-money-bag
+z-Azawan | b-Ululon | v-tell
 :::
 
 #### Agalan → English
@@ -596,68 +320,6 @@ z-Ululon | v-sneak | h-inside | b-bank
 *Ululon sneaks inside a bank.*
 :::
 
-**8.** `zuhubun vazagal. xezazal zululon vuvugul.`
-
-::: details Show answer
-
-z-Uhubun | v-scream | x-therefore | z-Ululon | v-fight
-
-*Uhubun screams. Therefore Ululon fights.*
-:::
-
-**9.** `zululon vuvugul hezebam bugugal.`
-
-::: details Show answer
-
-z-Ululon | v-fight | h-although | b-guard
-
-*Ululon fights despite a guard.*
-:::
-
-**10.** `zazawan vuwurul huhanem bonebal.`
-
-::: details Show answer
-
-z-Azawan | v-write | h-in-exchange-for | b-money-bag
-
-*Azawan writes in exchange for a money-bag.*
-:::
-
-**11.** `zazawan hudagam bululon vezehel.`
-
-::: details Show answer
-
-z-Azawan | h-on-behalf-of | b-Ululon | v-tell
-
-*Azawan tells on behalf of Ululon.*
-:::
-
-**12.** `zuhubun vejel dorl zazawan vazanul.`
-
-::: details Show answer
-
-z-Uhubun | v-see | d-whether-clause | z-Azawan | v-stand
-
-*Uhubun sees whether Azawan stands.*
-:::
-
-**13.** `zululon vurunul holalam barl zazawan vajul.`
-
-::: details Show answer
-
-z-Ululon | v-run | h-so-that | b-that-clause | z-Azawan | v-sit
-
-*Ululon runs so that Azawan sits.*
-:::
-
-**14.** `zululon vuwurul holalam bonebal.`
-
-::: details Show answer
-
-z-Ululon | v-write | h-so-that | b-money-bag
-
-*Ululon writes for a money-bag.*
-:::
 
 ## Intermediate
 <a id="intermediate"></a>
@@ -733,223 +395,23 @@ A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). A further plain adj
 >
 > "a dog the same as blue Azawan"
 
-You can chain more complex units onto those extra nouns. Two complex adjectives on the same first noun need [another sentence](#which-noun). Several `/h/` units on one verb are fine (each plain `/h/`, or `/h/`+`/b/` together, counts as one). An unhosted recipient `/b/` may follow a finished pair (`hogorem bohohul bululon`); it still must not sit immediately after the relation word.
+You can chain more complex units onto those extra nouns. Two complex adjectives on the same first noun need [another sentence](dependents.md#which-noun). Several `/h/` units on one verb are fine (each plain `/h/`, or `/h/`+`/b/` together, counts as one). An unhosted recipient `/b/` may follow a finished pair (`hogorem bohohul bululon`); it still must not sit immediately after the relation word.
 
-### Locative relations
-<a id="locative-relations"></a>
 
-Beginner already used *inside*: a place relation on `/h/` or `/ɡ/`, then the landmark in `/b/` right after it. The same pair names the rest of everyday place talk. Pick the relation root; keep the pair together. Several pairs on one verb are several `/h/` units (*from* one landmark *toward* another). *Between* takes **two** landmarks as a [join](joins.md) in `/b/`. (cue: each root’s picture is in **Cue**; `/b/` is the place, not a recipient)
-
-> `zazawan vawalal hebarum bazadol hobowam budunul.`
->
-> z-Azawan | v-walk | h-from | b-station | h-toward | b-train
->
-> "Azawan walks from a station toward a train."
-
-> `zululon vajul hazadum budunul bazadol bal.`
->
-> z-Ululon | v-sit | h-between | b-train | b-station | b-and
->
-> "Ululon sits between a train and a station."
-
-The same roots stay ordinary pictures under other letters (`zubuhul` *a pushpin*; `vebarul` *to depart*).
-
-| Agalan | Use | English | Same root as | Cue |
-|--------|-----|---------|--------------|-----|
-| **`hogorem` / `gogorem`** | containment | *inside* | `ogorel` *correct* | ⭕: being inside the boundary |
-| **`hubuhum` / `gubuhum`** | coincidence with a point | *at* | `ubuhul` *pushpin* | 📌: the pin marks the spot |
-| **`haladem` / `galadem`** | surface / contact | *on* | `aladel` *plate* | 🍽️: rest on a supporting face |
-| **`hebarum` / `gebarum`** | source of a path | *from* | `ebarul` *departure* | 🛫: leaving the ground |
-| **`hobowam` / `gobowam`** | goal of a path | *toward* | `obowal` *bow-arrow* | 🏹: the arrow heads for the target |
-| **`hezewum` / `gezewum`** | traversal | *through* | `ezewul` *sewing-needle* | 🪡: the needle goes through cloth |
-| **`hejegem` / `gejegem`** | interior to exterior | *out of* | `ejegel` *eject* | ⏏️: pushed out of the enclosure |
-| **`hazadum` / `gazadum`** | figure in the layer of two landmarks | *between* | `azadul` *sandwich* | 🥪: the filling sits between two sides |
-
-<a id="spatial-path"></a>
-
-A **place path** (*from A to B*, *out of the house into the train*) is still those pairs: **two `/h/` + `/b/` units** on one verb. Write the **source** first, then the **goal**. Heading vs arrival is which **goal** root you pick, not a new relation.
-
-> `zazawan vawalal hebarum bohohul hubuhum bazadol.`
->
-> z-Azawan | v-walk | h-from | b-house | h-at | b-station
->
-> "Azawan walks from a house to a station."
-
-> `zululon vurunul hejegem bohohul hogorem budunul.`
->
-> z-Ululon | v-run | h-out-of | b-house | h-inside | b-train
->
-> "Ululon runs out of a house into a train."
-
-| English | How |
-|---------|-----|
-| *from A toward B* (heading; arrival open) | **`hebarum`** A **`hobowam`** B |
-| *from A to B* (reached a point) | **`hebarum`** A **`hubuhum`** B |
-| *from A into B* (ended inside) | **`hebarum`** A **`hogorem`** B |
-| *out of A into B* | **`hejegem`** A **`hogorem`** B |
-| *through C* on that path | add **`hezewum`** C as another `/h/` unit |
-
-On a noun, the same roots stay `/ɡ/` (`gebarum bazadol gubuhum budunul` *from a station to a train*). *The guard in a bank* is that noun-hosted pair, not a *who*-clause:
-
-> `zugugal gogorem banabal vajul.`
->
-> z-guard | g-inside | b-bank | v-sit
->
-> "A guard inside a bank sits."
-
-**Compare with:** unhosted `/b/` is still the recipient ([extra nouns](#extra-nouns)), not a place. *Toward* is heading, not completed *into* (*inside*). Ordinary `vebarul` is *to depart*; `hebarum` is the source relation. *Between* is one relation plus a `/b/` [join](joins.md) of two landmarks, not two relation words. Numeric *from 3 to 5* is a [range](numbers-applied.md#ranges) (number endpoints plus a SHARED continuum), not this place stacking. *Using* a tool is [means](#means) (`hahanam`), not a place. *Like* is [simile](#similative) (`hurorom`), not a place. *For a hammer* as a swap is [exchange](#exchange) (`huhanem`). *On behalf of Ululon* is [proxy](#proxy) (`hudagam`). *So that Ululon sits* is [so that](#so-that) (`holalam`), not a path landmark. English *of* that is not a place is [of relations](#of-relations).
-
-### Of relations (*part of*, *cup of*, *made of*, *from*)
-<a id="of-relations"></a>
-<a id="noun-relations"></a>
-
-English *of* also names how one noun sits toward another (*a hand of Ululon*, *a teapot of tea*, *a house of wood*, *Ululon from the city*). Keep the same hosted pair as *inside*: relation on `/ɡ/` (or `/h/` on the event), extra noun in `/b/` right after it. `/b/` is the *of*-complement (the whole, the filling, the stuff, or the origin), not a recipient. (cue: each root’s picture is in **Cue**)
-
-> `zazawan dahanal gobonem bululon vejel.`
->
-> z-Azawan | d-hand | g-part-of | b-Ululon | v-see
->
-> "Azawan sees a hand of Ululon."
-
-> `zazawan dedebol gajaram badedal vejel.`
->
-> z-Azawan | d-teapot | g-contents | b-tea | v-see
->
-> "Azawan sees a teapot of tea."
-
-> `zazawan dohohul gowodom bowodol vejel.`
->
-> z-Azawan | d-house | g-material | b-wood | v-see
->
-> "Azawan sees a house of wood."
-
-> `zululon gajabam bugudol vawalal.`
->
-> z-Ululon | g-origin | b-cityscape | v-walk
->
-> "Ululon of the city walks."
-
-On an event, the same roots are `/h/` (`zazawan vagara howodom bowodol` *Azawan crafts of wood*; `zululon vawalal hajabam bugudol` *Ululon walks, originating from the city*). The same roots stay ordinary pictures under other letters (`zobonel` *a bone*; `zajaral` *a jar*; `zowodol` *wood*; `zajabal` *a japan-map*).
-
-Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is locative *inside*, not `gajaram`.
-
-| Agalan | Use | English | Same root as | Cue |
-|--------|-----|---------|--------------|-----|
-| **`hobonem` / `gobonem`** | constitutive piece | *part of* | `obonel` *bone* | 🦴: the piece that holds the body’s shape |
-| **`hajaram` / `gajaram`** | filling of a vessel | *contents of* | `ajaral` *jar* | 🫙: the vessel named by what it stores |
-| **`howodom` / `gowodom`** | constitution | *made of* | `owodol` *wood* | 🪵: the stuff the thing is made of |
-| **`hajabam` / `gajabam`** | identity source / provenance | *from* (origin) | `ajabal` *japan-map* | 🗾: one land’s map as where it comes from |
-
-**Compare with:** ownership is `goborul` + `/b/` ([joins](joins.md#scope-fence-p-join)). Place *inside* is `ogore`; path *from* is `ebaru` ([locative relations](#locative-relations)). *A house like Azawan’s* is [simile](#similative) (`gurorom`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`guhanem`). Portion *of* a class is [percent](numbers-applied.md#percent-denominators). Associates are plural **-x**, not meronymy. Kind *origin* (`ROOTx#e-`) is [numeric derivation](numeric-derivation.md), not this token *from*.
-
-### Which noun, with resume and kinds
-<a id="which-noun-intermediate"></a>
-
-Beginner already used two sentences for English *who / that / which*. Prefer [resume **-r**](pronouns.md#resume-r) in the second sentence.
-
-> `zugugal vajul. zazawan bugur vezehel.`
->
-> z-guard | v-sit | z-Azawan | b-←guard | v-tell
->
-> "A guard sits. Azawan tells that guard."
-
-> `zazawan dodogol vejel hogorem banabal. zodor vurunul.`
->
-> z-Azawan | d-dog | v-see | h-inside | b-bank | z-←dog | v-run
->
-> "Azawan sees a dog inside a bank. The dog runs."
-
-A place, tool, or *of*-relation on the noun is still hosted `/ɡ/` + `/b/` (*the guard inside a bank*, *a book written with a hammer*). A one-place role as a kind (*sitting guard*, *the one seen*) is a [role compound](roles.md#role-compounds) on `/ɡ/`, the same pattern as *is a fighter*:
-
-> `zazawan dugugal gaxajul vejel.`
->
-> z-Azawan | d-guard | g-agent-x-chair | v-see
->
-> "Azawan sees a sitting guard."
-
-**Compare with:** ordinary `gajul` is *chair* / *position* as a property, not *sitting*. [Restrictors](restrictors.md) say when a **claim** counts (*never*, *only when raining*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the **same** first noun still need another sentence ([complex chaining](#complex-chaining)).
-
-### Writing and speech rhythm (periods)
-<a id="orthography-and-prosody-periods"></a>
-
-A **period** (and matching **`?`** / **`!`**) closes the sentence body in writing. Speech matches that edge with pitch and a short pause.
-
-| Writing | Speech | Use | Cue |
-|---------|--------|-----|-----|
-| `.` | Fall on last stress + short pause | Closes the prior **body**. Next stretch still defaults to **`jal`** unless a new `/j/` turn, a written act word, or *yes* / *no* particle sets otherwise | Fall = the claim is done |
-| Next `/j/` turn (*yes* / *no*, vocative, written act word) | Pitch **reset** into the turn | New turn; firm **-l** / soft **-m** imply **`jal`** / **`jam`** | Reset = jump to a new act |
-| Bare body or reviser + body after `.` | No full reset required | Implied **`jal`** (or **`jam`** only if a soft particle / written **`jam`** said so) | No jump, so same statement |
-| `?` | Rise or high level on last stress | Question (**`jol`** / **`jom`**); act word usually written | Rise = still waiting for an answer |
-| `!` | Sharp or clipped fall | Command / prohibition; act word usually written | Sharp fall = do this / don’t |
-| Soft statement / soft *yes* / *no* **-m** | Lighter fall; boundary still clear | **`jam`** (implied or written) | **-m** leaves the hold open |
-| `/x/` continue (clause join) | Dip or short pause; **no** full pitch reset | Keep opener speech act; period after the **whole** joined stretch | Dip extends; no jump |
-| `/x/` linker after `.` (`xezazal …`) | Dip into the linker; no turn reset | Keep prior speech act; may start a new written sentence under that speech act | Linker glues; still the same act |
-| **Stand-in** hang | Dip; **no** full pitch reset until the last dependent | Next sentence fills the slot; period after the **whole** stretch | Same hang as `/x/` continue |
-
-**-l** vs **-m** on the act word / *yes* / *no* is how firmly you stand behind it (closed vs soft / open).
-
-### Sentence linkers
-<a id="sentence-linkers"></a>
-
-These words glue one finished sentence to the next (one-way; default ending **-l** is closed). Beginner already used *therefore*.
-
-| English | Agalan | Same root as | Cue | Example |
-|---------|--------|--------------|-----|---------|
-| *therefore* | **`xezazal`** | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on | `xezazal` |
-| *however* | **`xezebal`** | `ezebal` *zebra* | 🦓: two stripes, still one animal | `xezebal` |
-| *meanwhile* | **`xanelol`** | `anelol` *mantel-clock* | 🕰️: time passing beside the last claim | `xanelol` |
-| *next* | **`xuvumul`** | `uvumul` *film* | 🎞️: the following frame | `xuvumul` |
-| *but* | **`xonugol`** | `onugol` *construction* | 🚧: the expected path is blocked | `xonugol` |
-
-*therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Those same roots keep their ordinary content readings under other role letters.
-
-**Compare with:** *although* / *while* attach a dependent after **`barl`** (`hezebam barl`, `hegemum barl` — [dependent clauses](#dependent-clauses)). *Despite Ululon* is the same pole with a noun in `/b/` (`hezebam bululon`). *So that Ululon sits* is **`holalam barl`**; *writes for a money-bag* as the intended get is **`holalam bonebal`**. Discourse **`xezebal`** / **`xanelol`** / **`xezazal`** glue a finished sentence to the next one.
-
-### Stand-in vowels (`-rl` / `-rm`)
-<a id="clause-member"></a>
-<a id="stand-in"></a>
-
-Beginner used locked **`a`** (`darl` / `barl`) and *whether* **`dorl`**. Stand-ins reuse the [vowel series](vowel-series.md) (`a` / `o` / `e` / `u`) to type the following sentence. They are not joins. **`-rl`** locks that sentence as the whole filler; **`-rm`** is open (gist / not only that). Unspecified join **`-r`** with no following clause is still *something* / *anything*.
-
-|  | **`-r`** (no clause) | **`-rl`** locked | **`-rm`** open |
-|--|----------------------|------------------|----------------|
-| **`a`** hold | `dar` *something* | `darl` *that …* | `darm` *that …* (gist) |
-| **`o`** pick | `dor` *anything* | `dorl` *whether …* | `dorm` *whether …* (open) |
-| **`e`** order | `der` | `derl` *to …* | `derm` *to …* (open) |
-| **`u`** undo | `dur` | `durl` *that not / lest …* | `durm` *lest …* (open) |
-
-The same grid uses **`b`** after a pole (`barl` / `berl` …). Everyday *because* / *if* / *although* stay **`barl` / `barm`**. **`holalam berl`** types the `/b/` clause as an aimed body. Do not put this family on `/x/` (clause *and* stays `xal` / `xan`).
-
-> `zazawan vezehel derl zululon vajul.`
->
-> z-Azawan | v-tell | d-to-clause | z-Ululon | v-sit
->
-> "Azawan tells Ululon to sit."
-
-**Compare with:** inner **`jel`** is still a command turn. **`derl`** fills the object with an aimed sentence without changing the outer speech act. Quotes of wording stay [spans](spans.md).
-
-### Nested dependents
-<a id="nested-dependents"></a>
-
-Each clause has at most one **stand-in** at the end of the main sentence. The sentence after it may itself end in **`barl`**, so a further sentence hangs to the **right**.
-
-> `zazawan guzumum hurugum barl zululon vawalal hurugum barl zuhubun velebel.`
->
-> z-Azawan | g-happy | h-because | b-that-clause | z-Ululon | v-walk | h-because | b-that-clause | z-Uhubun | v-sleep
->
-> "Azawan is happy because Ululon walks because Uhubun sleeps."
 
 ### Number as interjection
 <a id="number-as-interjection"></a>
 
 A number word in `/j/` is a call-out (*Three more!*, a score). It can sit with the other opening `/j/` words, before the act word, or stand alone as its own turn. Readings by marker: [numbers.md](numbers.md#number-as-interjection-by-marker).
 
+
+
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
-**Setting:** a train platform
+**Setting:** a waiting room
 
 **Roots used here:**
 
@@ -958,11 +420,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` |
 | *Ululon* | `ululon` |
 | *Uhubun* | `uhubun` |
-| *train* | `udunul` |
-| *station* | `azadol` |
 | *ticket* | `ugedel` |
-| *luggage* | `ulugal` |
-| *departure* | `vebarul` |
 | *blue* | `elulul` |
 | *red* | `aredel` |
 | *same* | `gonunul` |
@@ -970,29 +428,11 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *stand* | `vazanul` |
 | *see* | `vejel` |
 | *tell* | `vezehel` |
-| *run* | `vurunul` |
-| *walk* | `vawalal` |
 | *sneak* | `vazanal` |
-| *scream* | `vazagal` |
 | *punch* | `vubunul` |
-| *fight* | `vuvugul` |
 | *volume* | `wegelom` |
 | *topic* | `hozal` |
-| *that-clause* | `darl` |
-| *because* | `hurugum` |
-| *next* | `xuvumul` |
-| *however* | `xezebal` |
-| *meanwhile* | `xanelol` |
-| *chair* | `ajul` |
-| *house* | `ohohul` |
-| *inside* | `hogorem` |
-| *at* | `hubuhum` |
-| *on* | `haladem` |
-| *from* | `hebarum` |
-| *toward* | `hobowam` |
-| *through* | `hezewum` |
-| *out of* | `hejegem` |
-| *between* | `hazadum` |
+| *train* | `udunul` |
 
 #### English → Agalan
 
@@ -1044,54 +484,6 @@ gl-red | w-volume | z-train | v-stand
 z-Azawan | g-SAME | b-Uhubun | g-blue | v-stand
 :::
 
-**7.** *Azawan sits. Next Ululon runs.*
-
-::: details Show answer
-`zazawan vajul. xuvumul zululon vurunul.`
-
-z-Azawan | v-sit | x-next | z-Ululon | v-run
-:::
-
-**8.** *Azawan runs because Ululon punches Azawan because Uhubun screams.*
-
-::: details Show answer
-`zazawan vurunul hurugum barl zululon dazawan vubunul hurugum barl zuhubun vazagal.`
-
-z-Azawan | v-run | h-because | b-that-clause | z-Ululon | d-Azawan | v-punch | h-because | b-that-clause | z-Uhubun | v-scream
-:::
-
-**9.** *Azawan sits on a chair.*
-
-::: details Show answer
-`zazawan vajul haladem bajul.`
-
-z-Azawan | v-sit | h-on | b-chair
-:::
-
-**10.** *Ululon walks from a station toward a train.*
-
-::: details Show answer
-`zululon vawalal hebarum bazadol hobowam budunul.`
-
-z-Ululon | v-walk | h-from | b-station | h-toward | b-train
-:::
-
-**11.** *Uhubun sits between a train and a station.*
-
-::: details Show answer
-`zuhubun vajul hazadum budunul bazadol bal.`
-
-z-Uhubun | v-sit | h-between | b-train | b-station | b-and
-:::
-
-**12.** *Azawan runs out of a house into a train.*
-
-::: details Show answer
-`zazawan vurunul hejegem bohohul hogorem budunul.`
-
-z-Azawan | v-run | h-out-of | b-house | h-inside | b-train
-:::
-
 #### Agalan → English
 
 **1.** `jam hozal bazawan zululon dugedel vejel.`
@@ -1139,68 +531,6 @@ z-Uhubun | g-SAME | b-Ululon | g-red | v-stand
 *Uhubun the same as red Ululon stands.*
 :::
 
-**6.** `zuhubun vajul. xanelol zululon dulugal vejel.`
-
-::: details Show answer
-
-z-Uhubun | v-sit | x-meanwhile | z-Ululon | d-luggage | v-see
-
-*Uhubun sits. Meanwhile Ululon sees luggage.*
-:::
-
-**7.** `zululon vazanal. xezebal zazawan vurunul.`
-
-::: details Show answer
-
-z-Ululon | v-sneak | x-however | z-Azawan | v-run
-
-*Ululon sneaks. However Azawan runs.*
-:::
-
-**8.** `zuhubun vazagal hurugum barl zazawan vebarul hurugum barl zululon dazawan vubunul.`
-
-::: details Show answer
-
-z-Uhubun | v-scream | h-because | b-that-clause | z-Azawan | v-departure | h-because | b-that-clause | z-Ululon | d-Azawan | v-punch
-
-*Uhubun screams because Azawan departs because Ululon punches Azawan.*
-:::
-
-**9.** `zuhubun vazanul hubuhum bazadol.`
-
-::: details Show answer
-
-z-Uhubun | v-stand | h-at | b-station
-
-*Uhubun stands at a station.*
-:::
-
-**10.** `zazawan vurunul hejegem budunul.`
-
-::: details Show answer
-
-z-Azawan | v-run | h-out-of | b-train
-
-*Azawan runs out of a train.*
-:::
-
-**11.** `zululon vawalal hezewum bazadol.`
-
-::: details Show answer
-
-z-Ululon | v-walk | h-through | b-station
-
-*Ululon walks through a station.*
-:::
-
-**12.** `zululon vawalal hebarum bazadol hubuhum budunul.`
-
-::: details Show answer
-
-z-Ululon | v-walk | h-from | b-station | h-at | b-train
-
-*Ululon walks from a station to a train.*
-:::
 
 ## Advanced
 <a id="advanced"></a>
@@ -1210,7 +540,7 @@ z-Ululon | v-walk | h-from | b-station | h-at | b-train
 
 The first letter already says who acts, who is acted on, and what the action is. Moving those words does not change who did what. The **leftmost content word** of the clause body is what you highlight: what the sentence is “about,” or the new information.
 
-English usually keeps subject–verb–object and uses extra wording, a different voice, or spoken stress for that job. When you translate, keep the same highlight in English. Copy Agalan order into English only when that English is also a natural way to put that piece first (*Hastily, Azawan walks*). Opening `/j/` words sit before the body and are not this highlight. Keep **`darl` / `barl`** last in its slot; move the other words around it.
+English usually keeps subject–verb–object and uses extra wording, a different voice, or spoken stress for that job. When you translate, keep the same highlight in English. Copy Agalan order into English only when that English is also a natural way to put that piece first (*Hastily, Azawan walks*). Opening `/j/` words sit before the body and are not this highlight. Keep a [stand-in](dependents.md#stand-in) **`darl` / `barl`** last in its slot; move the other words around it.
 
 > `zazawan dagadal vejel.`
 >
@@ -1241,6 +571,7 @@ Object-first English *It's a cat that Azawan sees* (or *A cat is what Azawan see
 <a id="weak-pause-left-cues"></a>
 
 When you cannot hear a clear pause (singing, fast free order), prefer something audible at the start after silence: *yes* / *no*, a name you address, or a written act word. A bare body that only implies **`jal`** is easy to miss. Writing still uses `.` to mark body edges.
+
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
@@ -1373,3 +704,4 @@ d-Uhubun | z-Ululon | h-haste | v-punch
 
 *It's Uhubun that Ululon punches hastily.*
 :::
+

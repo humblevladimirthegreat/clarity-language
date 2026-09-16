@@ -16,6 +16,8 @@ const readingOrder = [
   { text: 'Phonology', link: '/phonology' },
   { text: 'Reference suffix', link: '/reference-suffix' },
   { text: 'Core', link: '/core' },
+  { text: 'Relations', link: '/relations' },
+  { text: 'Dependents', link: '/dependents' },
   { text: 'Pronouns', link: '/pronouns' },
   { text: 'Plurality', link: '/plurality' },
   { text: 'Predication', link: '/predication' },

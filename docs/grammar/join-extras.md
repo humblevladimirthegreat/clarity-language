@@ -51,7 +51,7 @@ When a noun or event is *framed* toward something (*cake with peanuts*, *walk wi
 
 Content *including* needs that `/b/` (`gan b…`). A stock label uses a [mention](spans.md) span.
 
-**Compare with:** *writes with a hammer* is [means](core.md#means) (`hahanam` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Ululon* is [proxy](core.md#proxy) (`hudagam`), not **`hon`** *exclusively for*.
+**Compare with:** *writes with a hammer* is [means](relations.md#means) (`hahanam` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Ululon* is [proxy](relations.md#proxy) (`hudagam`), not **`hon`** *exclusively for*.
 
 **Not the same job as:** adjective [joins](joins.md) (`gal` / `gam` / `gar`). Join-relations take **-n** toward one `/b/`.
 
@@ -74,7 +74,7 @@ For several members or an empty domain, put a [phrase join](joins.md) **inside**
 
 *Anti-* vs *without*: `gun bememal` vs `guan bememal`. *Without X* vs *anything but X*: `guan babanul` vs `guon babanul`. Sole pick vs among options: `gon bazawan` vs `gaon bazawan`. Workaround-first vs try-the-workaround: `gen bewenem` vs `goen bewenem`.
 
-**Compare with:** *a house like Azawan’s* / *walks like a duck* is resemblance ([simile](core.md#similative) `gurorom` / `hurorom`), not **`gaen` / `haen`** *on a par with* / *equating*.
+**Compare with:** *a house like Azawan’s* / *walks like a duck* is resemblance ([simile](relations.md#similative) `gurorom` / `hurorom`), not **`gaen` / `haen`** *on a par with* / *equating*.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -246,4 +246,4 @@ z-Ululon | h-anything-but | b-Uhubun | v-scream
 - List joins (right-close fence): [joins.md](joins.md)
 - Causal readings of open / without: [causation.md](causation.md)
 - Prefix-less *including* / *instead*: [revisers.md](revisers.md)
-- Clause *with* a tool: [core.md](core.md#means)
+- Clause *with* a tool: [core.md](relations.md#means)

@@ -37,7 +37,7 @@ The left root is the kind of thing; the right root narrows it (what field, what 
 
 **Compare with:** two people stay two words (`zazawan zululon`). One double name is one word (`zazawaxululon`).
 
-**Not the same job as:** a word that **starts** with **`x`** [keeps the same speech move going](core.md#continue-x). That **`x`** is not this glue in the middle.
+**Not the same job as:** a word that **starts** with **`x`** [keeps the same speech move going](dependents.md#continue-x). That **`x`** is not this glue in the middle.
 
 ### Words you look up, not build
 <a id="lexical-compounds"></a>
@@ -498,7 +498,7 @@ j-Azawan-queue | z-Uhubun | d-doorbell | v-see
 
 ## See also
 
-- **`x`** at the start of a word (keep going): [core.md](core.md#continue-x)
+- **`x`** at the start of a word (keep going): [core.md](dependents.md#continue-x)
 - How **`x`** sits in the word shape: [phonology.md](phonology.md#phonotactics)
 - [ability.md](ability.md) / [values.md](values.md) / [roles.md](roles.md) / [numeric-derivation.md](numeric-derivation.md)
 - Greeting bid: [how you show up](#greeting-bid); bare hello: [reference-suffix.md](reference-suffix.md#greeting)

@@ -2,7 +2,7 @@
 
 **Status:** PHASE 3 DONE (framing cues); Phase 4 (loan islands) next  
 **Related:** long-term TODO *text to speech*; depends on [parser-pipeline.md](../../meta/parser-pipeline.md) (**assumed shipped** — `parse(text)` → typed AST); inverse dictation (no Agalan speech training) is `learner-stt.md`  
-**Design authority:** spoken forms stay in the grammar docs ([phonology.md](../../grammar/phonology.md), [spans.md](../../grammar/spans.md#writing-vs-speech), [numbers.md](../../grammar/numbers.md#writing-preferred-shorthand), [core.md](../../grammar/core.md#orthography-and-prosody-periods)). This proposal covers **tooling only**: writing → speech surface → audio.
+**Design authority:** spoken forms stay in the grammar docs ([phonology.md](../../grammar/phonology.md), [spans.md](../../grammar/spans.md#writing-vs-speech), [numbers.md](../../grammar/numbers.md#writing-preferred-shorthand), [core.md](../../grammar/dependents.md#orthography-and-prosody-periods)). This proposal covers **tooling only**: writing → speech surface → audio.
 
 ## Motivation
 
@@ -78,7 +78,7 @@ Preferred writing is not always what is spoken. The AST already distinguishes wr
 | Span brackets (`d[…]`, `d@[Hamlet]`, `h(…)`, …) | Open word (`daxal` / `daxon` / …) + interior tokens + close when required | [spans.md](../../grammar/spans.md#writing-vs-speech) |
 | Span anaphor / empty (`d[=]`, `d[]`) | Spoken open only (`daxur`, `daxul`) | same |
 | Orthographic-only commas in digit groups | **Omit** (not spoken) | [numbers.md](../../grammar/numbers.md#writing-preferred-shorthand) |
-| Period / `?` / `!` | Boundary tags for pause + pitch hint | [core.md](../../grammar/core.md#orthography-and-prosody-periods) |
+| Period / `?` / `!` | Boundary tags for pause + pitch hint | [core.md](../../grammar/dependents.md#orthography-and-prosody-periods) |
 | `/x/` continue vs new `/j/` turn | Boundary tags (dip vs reset) | same |
 | Adjunct-scope `^ … ^` | **No** open/close words; island boundary tags only | [spans.md](../../grammar/spans.md#scope-islands) |
 
@@ -259,6 +259,6 @@ Expect the WASM voice pack to dwarf the TS glue; keep it out of the critical ren
 | Phonology / IPA | [phonology.md](../../grammar/phonology.md) |
 | Writing vs speech (spans) | [spans.md](../../grammar/spans.md#writing-vs-speech) |
 | Number shorthand vs speech | [numbers.md](../../grammar/numbers.md#writing-preferred-shorthand) |
-| Periods / force prosody | [core.md](../../grammar/core.md#orthography-and-prosody-periods) |
+| Periods / force prosody | [core.md](../../grammar/dependents.md#orthography-and-prosody-periods) |
 | Orthography | [phonology.md](../../grammar/phonology.md#beginner), [core.md](../../grammar/core.md#role-letters) |
 | Inverse (phoneme ASR) | `learner-stt.md` |

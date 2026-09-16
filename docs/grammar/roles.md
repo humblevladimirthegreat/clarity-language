@@ -61,7 +61,7 @@ English *the hammer used* names what the doer uses so the event can go through. 
 
 `zexuwurul` is a writing-implement (the **-l** sense of *write*). A book as a mere object, with no event, stays `dabogol`.
 
-**Compare with:** `zaxuwurul` is who writes; `zuxuwurul` is what is written. *Walks hastily* is ordinary [manner](core.md#adverbs-h) (`/h/`), not this vowel. *Writes with a hammer* is [means](core.md#means) (`hahanam` + `/b/`), not this vowel: **`exROOT`** *names* the implement.
+**Compare with:** `zaxuwurul` is who writes; `zuxuwurul` is what is written. *Walks hastily* is ordinary [manner](core.md#adverbs-h) (`/h/`), not this vowel. *Writes with a hammer* is [means](relations.md#means) (`hahanam` + `/b/`), not this vowel: **`exROOT`** *names* the implement.
 
 ### The other party (`o`)
 
@@ -122,7 +122,7 @@ The same adjective after another noun is English *sitting guard* / *fighter frie
 >
 > "Azawan sees a sitting guard."
 
-**Compare with:** ordinary `gajul` is *chair* / *position* as a property. English *the guard who sat (that time)* with extra participants or a place is [two sentences](core.md#which-noun), not this kind word.
+**Compare with:** ordinary `gajul` is *chair* / *position* as a property. English *the guard who sat (that time)* with extra participants or a place is [two sentences](dependents.md#which-noun), not this kind word.
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -384,7 +384,7 @@ English *on Azawan’s left of the tree* needs both a facing person and a landma
 
 Bare compass + `/b/` is a region on that heading of the landmark (`gewezel berel` *west of the tree*).
 
-**Compare with:** locative *at* / *on* / *inside* name how the figure sits relative to the landmark ([locative relations](core.md#locative-relations)), not a compass heading.
+**Compare with:** locative *at* / *on* / *inside* name how the figure sits relative to the landmark ([locative relations](relations.md#locative-relations)), not a compass heading.
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -600,7 +600,7 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 | **`ozohel`** (bare) | talk pulls back | *retreat* |
 | **`ogomol`** | heading in general | *compass* / *direction* |
 
-**For *therefore*, use:** the [linker](core.md#sentence-linkers) **`xezazal`**. Body *left* / *right* still needs **`DIR x ANCHOR`**.
+**For *therefore*, use:** the [linker](dependents.md#sentence-linkers) **`xezazal`**. Body *left* / *right* still needs **`DIR x ANCHOR`**.
 
 ## See also
 

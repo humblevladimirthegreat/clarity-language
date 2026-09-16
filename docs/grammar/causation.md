@@ -232,7 +232,7 @@ z-Uhubun | v-tell | h-only-if | b-fire
 ### A following sentence
 <a id="dependent"></a>
 
-When the condition is a **full sentence**, keep the same pole and hang that sentence after **`barl`**. Write the pole, then **`barl`**, then the dependent. Keep that pair together, last in the main sentence (**`barl`** last). Give the dependent its own act word only if the speech act differs. See [dependent clauses](core.md#dependent-clauses).
+When the condition is a **full sentence**, keep the same pole and hang that sentence after **`barl`**. Write the pole, then **`barl`**, then the dependent. Keep that pair together, last in the main sentence (**`barl`** last). Give the dependent its own act word only if the speech act differs. See [dependent clauses](dependents.md#dependent-clauses).
 
 ```
 main sentence …  hadorom / heberom / …  barl   [dependent sentence]
@@ -522,10 +522,10 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 
 | English | Agalan |
 |---------|---------|
-| *although* / *while* / *until* / *before* / *after* | same `/h/`+**`barl`** shape, **-m** ([dependent clauses](core.md#dependent-clauses)): **`hezebam`** / **`hegemum`** / … |
-| *so that* / *in order to* | same shape: **`holalam`** ([so that](core.md#so-that)); NP intended get = **`holalam`** + `/b/` **noun** |
+| *although* / *while* / *until* / *before* / *after* | same `/h/`+**`barl`** shape, **-m** ([dependent clauses](dependents.md#dependent-clauses)): **`hezebam`** / **`hegemum`** / … |
+| *so that* / *in order to* | same shape: **`holalam`** ([so that](dependents.md#so-that)); NP intended get = **`holalam`** + `/b/` **noun** |
 | *despite* (NP) | same **`hezebam`** (or **`gezebam`**) + `/b/` **noun**, not a second pole |
-| *therefore* (discourse) | **`xezazal`** ([continue](core.md#continue-x)) |
+| *therefore* (discourse) | **`xezazal`** ([continue](dependents.md#continue-x)) |
 | *however* / *meanwhile* (discourse) | **`xezebal`** / **`xanelol`** |
 
 ### Translation practice
@@ -666,4 +666,4 @@ z-Uhubun | v-pour | h-CAUSE | h-because | b-that-clause | z-fire
 - Inclusive single-item **`…aom` / `…aol`** (*at least X* / *X is enough*): [joins.md](joins.md#single-item-phrase)
 - Join-relations **`han` / `huan` / `hon`**: [join-extras.md](join-extras.md#join-relations)
 - Restrictors **`hal` / `hual`**: [restrictors.md](restrictors.md)
-- Dependent clauses / **`barl`**: [core.md](core.md#dependent-clauses)
+- Dependent clauses / **`barl`**: [dependents.md](dependents.md#dependent-clauses)

@@ -45,7 +45,7 @@ You want English *instead*: B takes A's slot. Same `A REV B` shape; vowel **o**.
 >
 > "Coffee instead of tea."
 
-**Compare with:** *Azawan tells on behalf of Ululon* keeps Azawan as the teller ([proxy](core.md#proxy) `hudagam`); **`ol`** puts someone else in that slot.
+**Compare with:** *Azawan tells on behalf of Ululon* keeps Azawan as the teller ([proxy](relations.md#proxy) `hudagam`); **`ol`** puts someone else in that slot.
 
 ### Except (`ul`)
 <a id="except"></a>
@@ -110,7 +110,7 @@ Sometimes the thing you want to tweak is not a phrase inside this sentence, but 
 >
 > "In other words, Uhubun is a dog."
 
-**Compare with:** *however* / *therefore* use [continue](core.md#continue-x) linkers (`x…`). A fronted reviser only changes how this sentence attaches to what you already said.
+**Compare with:** *however* / *therefore* use [continue](dependents.md#continue-x) linkers (`x…`). A fronted reviser only changes how this sentence attaches to what you already said.
 
 ### Translation practice
 <a id="translation-practice"></a>

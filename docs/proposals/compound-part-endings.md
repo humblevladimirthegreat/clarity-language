@@ -1,7 +1,7 @@
 # Proposal: reference endings on inner `x`-compound parts
 
 **Status:** PROPOSED (not current language). Grammar today: the [reference suffix](../grammar/reference-suffix.md) (**-l** / **-m** / **-n** / **-r**) belongs to the **whole** content word. Inner pieces of a productive **`x`** compound are bare roots (`golovexagal`, `zazawaxululon`). Closed [lexical compounds](../grammar/x-compounds.md) store a left-member letter in the **dictionary stem** (`ohohulabede`), not as a live inner ending.  
-**Related:** [x-compounds.md](../grammar/x-compounds.md), [phonology.md](../grammar/phonology.md#phonotactics), [core.md](../grammar/core.md#sentence-linkers) (sentence linkers), [numeric-derivation.md](../grammar/numeric-derivation.md) (right half has no ending of its own)  
+**Related:** [x-compounds.md](../grammar/x-compounds.md), [phonology.md](../grammar/phonology.md#phonotactics), [core.md](../grammar/dependents.md#sentence-linkers) (sentence linkers), [numeric-derivation.md](../grammar/numeric-derivation.md) (right half has no ending of its own)  
 **Design authority:** none until absorbed.
 
 ## Motivation
@@ -27,7 +27,7 @@ Lexical dictionary stems stay frozen (`ohohulabede`). Speakers do not insert **`
 
 ## Ban: next piece is a sentence linker root
 
-Do **not** write an inner ending when the **next** content root is the body of a [sentence linker](../grammar/core.md#sentence-linkers). Those words are `/x/` plus one of a handful of roots; an inner ending would put a word-edge consonant immediately before that **`x`**, which is the same sound as “this word ended, then a linker started.”
+Do **not** write an inner ending when the **next** content root is the body of a [sentence linker](../grammar/dependents.md#sentence-linkers). Those words are `/x/` plus one of a handful of roots; an inner ending would put a word-edge consonant immediately before that **`x`**, which is the same sound as “this word ended, then a linker started.”
 
 | Linker | Spoken word | Next-piece root (illegal after an inner ending) |
 |--------|-------------|--------------------------------------------------|
