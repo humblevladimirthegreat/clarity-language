@@ -564,6 +564,8 @@ When an adjective or extra noun is meant for the **whole list** (*both challengi
 >
 > "Azawan's dog and cat (and possibly more)."
 
+**Compare with:** *part of* / *contents of* / *made of* / origin *from* use [of relations](core.md#of-relations), not `oboru`.
+
 | Join family | Use of SHARED `/ɡ/` |
 |-------------|----------------------|
 | **a** | distributive property (*both ADJ*) or bundle description |

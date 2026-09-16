@@ -527,7 +527,50 @@ The same roots stay ordinary pictures under other letters (`zubuhul` *a pushpin*
 | **`hejegem` / `gejegem`** | interior to exterior | *out of* | `ejegel` *eject* | ⏏️: pushed out of the enclosure |
 | **`hazadum` / `gazadum`** | figure in the layer of two landmarks | *between* | `azadul` *sandwich* | 🥪: the filling sits between two sides |
 
-**Compare with:** unhosted `/b/` is still the recipient ([extra nouns](#extra-nouns)), not a place. *Toward* is heading, not completed *into* (*inside*). Ordinary `vebarul` is *to depart*; `hebarum` is the source relation. *Between* is one relation plus a `/b/` [join](joins.md) of two landmarks, not two relation words. *Using* a tool is [means](#means) (`hahanam`), not a place.
+**Compare with:** unhosted `/b/` is still the recipient ([extra nouns](#extra-nouns)), not a place. *Toward* is heading, not completed *into* (*inside*). Ordinary `vebarul` is *to depart*; `hebarum` is the source relation. *Between* is one relation plus a `/b/` [join](joins.md) of two landmarks, not two relation words. *Using* a tool is [means](#means) (`hahanam`), not a place. English *of* that is not a place is [of relations](#of-relations).
+
+### Of relations (*part of*, *cup of*, *made of*, *from*)
+<a id="of-relations"></a>
+<a id="noun-relations"></a>
+
+English *of* also names how one noun sits toward another (*a hand of Ululon*, *a teapot of tea*, *a house of wood*, *Ululon from the city*). Keep the same hosted pair as *inside*: relation on `/ɡ/` (or `/h/` on the event), extra noun in `/b/` right after it. `/b/` is the *of*-complement (the whole, the filling, the stuff, or the origin), not a recipient. (cue: each root’s picture is in **Cue**)
+
+> `zazawan dahanal gobonem bululon vejel.`
+>
+> z-Azawan | d-hand | g-part-of | b-Ululon | v-see
+>
+> "Azawan sees a hand of Ululon."
+
+> `zazawan dedebol gajaram badedal vejel.`
+>
+> z-Azawan | d-teapot | g-contents | b-tea | v-see
+>
+> "Azawan sees a teapot of tea."
+
+> `zazawan dohohul gowodom bowodol vejel.`
+>
+> z-Azawan | d-house | g-material | b-wood | v-see
+>
+> "Azawan sees a house of wood."
+
+> `zululon gajabam bugudol vawalal.`
+>
+> z-Ululon | g-origin | b-cityscape | v-walk
+>
+> "Ululon of the city walks."
+
+On an event, the same roots are `/h/` (`zazawan vagara howodom bowodol` *Azawan crafts of wood*; `zululon vawalal hajabam bugudol` *Ululon walks, originating from the city*). The same roots stay ordinary pictures under other letters (`zobonel` *a bone*; `zajaral` *a jar*; `zowodol` *wood*; `zajabal` *a japan-map*).
+
+Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is locative *inside*, not `gajaram`.
+
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`hobonem` / `gobonem`** | constitutive piece | *part of* | `obonel` *bone* | 🦴: the piece that holds the body’s shape |
+| **`hajaram` / `gajaram`** | filling of a vessel | *contents of* | `ajaral` *jar* | 🫙: the vessel named by what it stores |
+| **`howodom` / `gowodom`** | constitution | *made of* | `owodol` *wood* | 🪵: the stuff the thing is made of |
+| **`hajabam` / `gajabam`** | identity source / provenance | *from* (origin) | `ajabal` *japan-map* | 🗾: one land’s map as where it comes from |
+
+**Compare with:** ownership is `goborul` + `/b/` ([joins](joins.md#scope-fence-p-join)). Place *inside* is `ogore`; path *from* is `ebaru` ([locative relations](#locative-relations)). Portion *of* a class is [percent](numbers-applied.md#percent-denominators). Associates are plural **-x**, not meronymy. Kind *origin* (`ROOTx#e-`) is [numeric derivation](numeric-derivation.md), not this token *from*.
 
 ### Writing and speech rhythm (periods)
 <a id="orthography-and-prosody-periods"></a>

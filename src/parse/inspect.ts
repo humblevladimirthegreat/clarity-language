@@ -337,6 +337,9 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   if (word.reading === "locative") {
     return { line: "locative relation", href: "core.html#locative-relations" };
   }
+  if (word.reading === "ofRelation") {
+    return { line: "of relation", href: "core.html#of-relations" };
+  }
   if (word.reading === "joinAct" || word.reading === "joinRelation") {
     return { line: "join extra", href: "join-extras.html" };
   }

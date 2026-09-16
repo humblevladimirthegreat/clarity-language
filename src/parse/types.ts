@@ -114,6 +114,7 @@ export type LexReading =
   | "mood"
   | "locative"
   | "means"
+  | "ofRelation"
   | "join"
   | "joinAct"
   | "joinRelation"

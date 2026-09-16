@@ -351,6 +351,12 @@ Hosted `/h/` or `/ɡ/` **`ahanam`** plus implement `/b/` (*using / with* a tool)
 
 [Core](core.md#means)
 
+### Of relation
+
+Hosted `/h/` or `/ɡ/` plus `/b/` for English *of* that is not ownership or a place: *part of*, *contents of*, *made of*, origin *from*.
+
+[Core](core.md#of-relations)
+
 ### Factivity
 
 Whether **IF** vs **BECAUSE** treats the dependent as asserted.

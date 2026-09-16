@@ -27,7 +27,7 @@ No new clause types. Unblocks locative talk and later relatives / paths.
 
 - [x] **3. Clause instrument *with* (thin).** Hosted **`hahanam` / `gahanam`** + `/b/` tool ([core means](../grammar/core.md#means)). Role **`exROOT`** still names *the hammer used*. Join-relation **`han`** stays company / including.
 
-- [ ] **4. Other English *of* (thin).** Ownership is `oboru` + `/b/` ([joins.md](../grammar/joins.md) SHARED example). Still missing taught relations for part–whole, contents (*cup of tea*), material (*made of*), origin (*from Rome*). Portion *of* is partly [percent](../grammar/numbers-applied.md#percent-denominators).
+- [x] **4. Other English *of* (thin).** Hosted `/h/` or `/ɡ/` + `/b/`. Inventory on [core of relations](../grammar/core.md#of-relations) (`obone` *part of*, `ajara` *contents*, `owodo` *material*, `ajaba` *origin*). Ownership stays `oboru`; portion stays [percent](../grammar/numbers-applied.md#percent-denominators).
 
 - [ ] **5. Simile *like* (thin).** Equative *as Adj as* ([comparatives.md](../grammar/comparatives.md#equatives)), identity **`SAME`** ([predication.md](../grammar/predication.md#identity)), join *on a par with*, and NOTIONAL *as if* ([commentary.md](../grammar/commentary.md#notional)) exist. Everyday *walks like a duck* / *a house like Azawan’s* needs a similative `/h/` or `/ɡ/` + `/b/` (or a taught reuse of **`ae`** / **`SAME`**).
 

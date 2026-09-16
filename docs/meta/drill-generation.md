@@ -288,7 +288,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 
 | Path | File | Band | Status | Introduces (test these) | Notes |
 |------|------|------|--------|-------------------------|-------|
-| 5 | `core.md` | Intermediate | **exists** | **`jam`/`jom`/`jem`/`jum`**; **`gl-`**; adverb topic `/h/`+`/b/`; locative relations (`hogorem`, `hubuhum`, `haladem`, `hebarum`, `hobowam`, `hezewum`, `hejegem`, `hazadum`); complex chaining; `/x/` linkers (`xezazal`, `xezebal`, …); nested **`adoro`**; number-as-interjection pointer only if the stage’s examples already show it | Do not require numbers Intermediate readings. *Between* recycles joins Beginner `/b/` join |
+| 5 | `core.md` | Intermediate | **exists** | **`jam`/`jom`/`jem`/`jum`**; **`gl-`**; adverb topic `/h/`+`/b/`; locative relations (`hogorem`, `hubuhum`, `haladem`, `hebarum`, `hobowam`, `hezewum`, `hejegem`, `hazadum`); of-relations (`gobonem`, `gajaram`, `gowodom`, `gajabam`); complex chaining; `/x/` linkers (`xezazal`, `xezebal`, …); nested **`adoro`**; number-as-interjection pointer only if the stage’s examples already show it | Do not require numbers Intermediate readings. *Between* recycles joins Beginner `/b/` join. Of-relation drills wait for **replace** |
 | 5 | `core.md` | Advanced | **exists** | Leftmost content-word prominence; English cleft / *what*-cleft / fronted adverb | 4–6 items. Weak-pause cues are recognition, not the drill |
 | 4 | `reference-suffix.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
 | 4 | `reference-suffix.md` | Advanced | skip | — | no Advanced stage |
@@ -341,7 +341,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | House names, SVO, omit **`jal`**, **`jol`/`jel`/`jul`**, vocative (`jululon`), **`adoro`**, *because* **`hurugum badorol`**, `/x/` linker after `.` | `core.md` Beginner |
 | Named citation greeting (`azawan.`) | `reference-suffix.md` Beginner |
 | Greeting bid **`…xan` / `…xon` / `…xen` / `…xun`** on a citation or vocative | `x-compounds.md` Intermediate |
-| **`gl-`**, **`jam`/`jom`/`jem`/`jum`** as a *speech-act* system, remaining `/x/` linkers, nested **`adoro`** | `core.md` Intermediate |
+| **`gl-`**, **`jam`/`jom`/`jem`/`jum`** as a *speech-act* system, remaining `/x/` linkers, nested **`adoro`**, of-relations (`gobonem` / `gajaram` / `gowodom` / `gajabam`) | `core.md` Intermediate |
 | **-l** / **-m** / **-n** as a *choice* on a citation | `reference-suffix.md` Beginner |
 | Letter/full-root **-r** algorithm; **`ugobo`/`edone`/`aha`/`enenu`** | `pronouns.md` Beginner |
 | Associative **-x** | `plurality.md` Beginner |

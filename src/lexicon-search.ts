@@ -47,6 +47,7 @@ export const OVERLAY_KINDS = [
   "benchmark",
   "locative",
   "means",
+  "of_relation",
 ] as const;
 
 export type OverlayKind = (typeof OVERLAY_KINDS)[number];

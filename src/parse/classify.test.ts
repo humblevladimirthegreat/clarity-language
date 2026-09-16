@@ -128,6 +128,21 @@ describe("classify", () => {
     assert.equal(pin.overlay, undefined);
   });
 
+  it("of-relation overlays on /h/ /ɡ/ and ordinary pictures on other letters", () => {
+    const part = expectReading("gobonem", "ofRelation");
+    assert.ok(part.overlay);
+    assert.equal(part.overlay!.kind, "of_relation");
+    assert.equal(part.overlay!.gloss, "part-of");
+    const contents = expectReading("hajaram", "ofRelation");
+    assert.equal(contents.overlay!.gloss, "contents");
+    const material = expectReading("gowodom", "ofRelation");
+    assert.equal(material.overlay!.gloss, "material");
+    const origin = expectReading("gajabam", "ofRelation");
+    assert.equal(origin.overlay!.gloss, "origin");
+    const bone = expectReading("zobonel", "ordinary");
+    assert.equal(bone.overlay, undefined);
+  });
+
   it("means overlay on /h/ /ɡ/ and ordinary hand on other letters", () => {
     const using = expectReading("hahanam", "means");
     assert.ok(using.overlay);

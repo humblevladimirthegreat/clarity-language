@@ -443,7 +443,7 @@ Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which val
 
 **For *+50% relative to baseline*, use:** a multiplicative `/h/` factor (**`h+1.5`**, …) or ordinary *relative-to* wording.
 
-When the whole is not the modified head, use a complex `/ɡ/` or `/h/` *of* / *out of* (lexicon relation) + `/b/` whole, with the percent elsewhere in the clause as needed. Numbers take no `/w/` and no open arguments.
+When the whole is not the modified head, use a complex `/ɡ/` or `/h/` [of relation](core.md#of-relations) (`gobonem` *part of*) + `/b/` whole, with the percent elsewhere in the clause as needed. Numbers take no `/w/` and no open arguments.
 
 **`…ju`** point amounts, factor change (`/h/` **`h+…`**), *top / bottom N%* rank bands, and *N% done* take their “whole” from context or a separately named class.
 
