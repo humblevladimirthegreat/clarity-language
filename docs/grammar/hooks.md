@@ -352,9 +352,9 @@ Hook **-n** is only when the hook is **inside a proper-name phrase** ([**-n**](r
 
 > `dadedan on dogoven.`
 >
-> d-Tea | instead.named | d-Coffee
+> d-Adedan | instead.named | d-Ogoven
 >
-> "Tea-to-Coffee" (a store name)
+> "Tea-to-Coffee" (a cafe name)
 
 
 **Compare with:** *no dog* / *not X* uses a prefixed [join](joins.md#join-series-ending-shared) (`zodogol zul`). Prefix-less **`ul`** excepts a right-hand side in the same slot.

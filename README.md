@@ -14,7 +14,7 @@ Or open the repo in a [Dev Container](.devcontainer/devcontainer.json) (Node 22 
 
 | Script | Purpose |
 |--------|---------|
-| `npm run generate:word` | Generate the Stage-1 Peggy word parser from `grammar/word.peggy` |
+| `npm run generate:word` | Generate the Stage-1 Peggy word parser from `src/parse/word.peggy` |
 | `npm run build` | Regenerate the word parser, then compile TypeScript to `dist/` |
 | `npm run typecheck` | Typecheck without emit |
 | `npm run lint:agalan` | Check Agalan words in `docs/grammar/` code spans and morph-gloss pairs (also run by `docs:build`) |

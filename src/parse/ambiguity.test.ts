@@ -47,7 +47,17 @@ describe("checkAmbiguity", () => {
   it("flags overlay vs restrictor when both apply with no grammar winner", () => {
     const planted = createClassifyTablesFromRows(
       [],
-      [{ senseForm: "al", pos: "h", emoji: "", definition: "planted overlay", mnemonic: "" }],
+      [
+        {
+          senseForm: "al",
+          pos: "h",
+          emoji: "",
+          kind: "evidential",
+          gloss: "planted",
+          definition: "planted overlay",
+          mnemonic: "",
+        },
+      ],
     );
     const hits = classifyHits(parseWord("hal"), planted);
     assert.ok(hits.some((h) => h.source === "overlay"));

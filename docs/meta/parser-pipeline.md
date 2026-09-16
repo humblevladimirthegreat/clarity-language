@@ -38,7 +38,7 @@ Agalan text
     │
     ▼
 ┌──────────────────────────────────────┐
-│  Peggy — grammar/word.peggy          │
+│  Peggy — src/parse/word.peggy        │
 │  PoS / gl- / endings / -x            │
 │  <> foreign, writing atoms, numbers  │
 │  xFamily via alternation order       │
@@ -75,7 +75,7 @@ Public entry: `parse(text)` in [`src/parse/index.ts`](../../src/parse/index.ts).
 
 ### Stage 1 — Peggy (characters → `MorphWord`)
 
-[`grammar/word.peggy`](../../grammar/word.peggy) → [`src/generated/word-parser.js`](../../src/generated/word-parser.js) via `npm run generate:word`. Wrapper: [`src/parse/word.ts`](../../src/parse/word.ts).
+[`src/parse/word.peggy`](../../src/parse/word.peggy) → [`src/generated/word-parser.js`](../../src/generated/word-parser.js) via `npm run generate:word`. Wrapper: [`src/parse/word.ts`](../../src/parse/word.ts).
 
 Owns every **string-shaped** subsystem:
 
@@ -187,11 +187,10 @@ Principle: **mature libraries parse; repo code classifies, assembles, and annota
 ## Repo layout
 
 ```text
-grammar/
-  word.peggy                     # Peggy — morph + numbers + writing atoms
 src/
   generated/word-parser.js       # Peggy output (+ .d.ts) — import this, do not generate at runtime
   parse/
+    word.peggy                   # Peggy — morph + numbers + writing atoms
     word.ts                      # Stage 1 wrapper
     classify.ts                  # Stage 2
     tokenize.ts / tokens.ts      # peel .?!^ ; LexWord → IToken
