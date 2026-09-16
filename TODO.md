@@ -11,6 +11,7 @@ add Agalan cheat sheet
 consider making negatives clearer with stacked u
 final exam
 respell and retie vocab
+test
 
 ## Evidentiality / tense
 
