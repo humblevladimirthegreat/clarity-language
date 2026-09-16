@@ -47,4 +47,4 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agalan 
 | equal degree (*as happy as*) | equative **`ae`** | [Equatives](comparatives.md#equatives) |
 | topic (*as for Azawan*) | **`hozal`** + `/b/` | [As-for](clause.md#as-for) |
 | resemblance (*walks as / like a duck*) | **`hurorom`** + `/b/` | [Simile](relations.md#similative) |
-| pretense (*as if they walk*) | **NOTIONAL** | [Notional](commentary.md#notional) |
+| pretense (*as if they walk*) | **NOTIONAL** | [Notional](knowing.md#notional) |

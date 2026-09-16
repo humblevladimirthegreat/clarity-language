@@ -239,11 +239,11 @@ When English puts *should* / *ought to* on the **doing** for a named need (*Uhub
 
 That ending is **prescription force**: how strongly you stake that ought. If you do not know the force, use **-m**. Bound **-l** means the ought is non-negotiable in this conversation or rule-set. In loose English, **-l** / **-m** / **-r** usually read as *must* / *has to*, *should*, and *could* / *might* (terminology: [bound / endorse / invite](terminology.md#bound-endorse-invite)).
 
-**Unlike** [MAY](commentary.md#may) (`hodohom`): the host verb stays ordinary content there and the event is still *could be*. With **`xe`**, the same host verb is the **ought-to** act, not a simultaneous performance claim.
+**Unlike** [MAY](knowing.md#may) (`hodohom`): the host verb stays ordinary content there and the event is still *could be*. With **`xe`**, the same host verb is the **ought-to** act, not a simultaneous performance claim.
 
 **Compare with:** [command](clause.md#speech-act-beginner) **`jel`** instructs an act outright without naming the need or prescription force. **`xe`** is need-linked deontic: *ought to advance this need*, with force on the ending.
 
-**Compare with:** [predict](plan-decision.md#predict) (`helezo` …) when English *should* is really a **forecast** about what will pay off the need, or when you want both *is doing* and a norm on that doing — not prescription deontic. For a plain performance report, drop **`xe`** and assert the verb alone.
+**Compare with:** [predict](intention.md#predict) (`helezo` …) when English *should* is really a **forecast** about what will pay off the need, or when you want both *is doing* and a norm on that doing — not prescription deontic. For a plain performance report, drop **`xe`** and assert the verb alone.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -535,4 +535,4 @@ z-Ululon | v-scream | h-survival-motive-internal | h-always-except
 
 - Applicability *when*: [restrictors.md](restrictors.md)
 - Ability **`xa` / `xe` / `xo` / `xu`** on an activity host: [ability.md](ability.md)
-- DECISION reuses unmet changeability endings: [plan-decision.md](plan-decision.md)
+- DECISION reuses unmet changeability endings: [intention.md](intention.md)

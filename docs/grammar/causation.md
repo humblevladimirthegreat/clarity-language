@@ -490,7 +490,7 @@ English *because* and *if* can hide whether you **assert the dependent as a worl
 #### Epistemic *because* (no twin root)
 <a id="epistemic-because"></a>
 
-English often uses *because* for **speaker grounds** (*they may be leaving because Q*) without treating Q as a world-fact that grounds P. Put [MAY](commentary.md#may) (`hodohom`, …) on the main sentence for the *could be*. Add **`hurugum barl`** only when Q is also asserted as a world-foundation.
+English often uses *because* for **speaker grounds** (*they may be leaving because Q*) without treating Q as a world-fact that grounds P. Put [MAY](knowing.md#may) (`hodohom`, …) on the main sentence for the *could be*. Add **`hurugum barl`** only when Q is also asserted as a world-foundation.
 
 > `zululon hodohom vebarum duhubun.`
 >
@@ -498,14 +498,14 @@ English often uses *because* for **speaker grounds** (*they may be leaving becau
 >
 > "Ululon may be leaving Uhubun."
 
-**For *could be*, use:** [MAY](commentary.md#may) (`odoho`). **`hurugum`** is world-reason under the claim.
+**For *could be*, use:** [MAY](knowing.md#may) (`odoho`). **`hurugum`** is world-reason under the claim.
 
 **Related form:** *P, since / given that Q* (Q already shared) still uses **`hurugum barl`**; soften with evidential `/h/` if the warrant is tentative.
 
 ### Stacks (evidentiality, CAUSE, habit)
 <a id="stacks"></a>
 
-A one-off episode and a standing pattern use the same poles. Add extra `/h/` words for the extra jobs: evidential `/h/` for *how you know* ([evidentiality](commentary.md#evidentiality)), **`hual` / `huam`** for habit ([restrictors](restrictors.md)), **`hegegam`** for mechanism ([CAUSE](#cause)).
+A one-off episode and a standing pattern use the same poles. Add extra `/h/` words for the extra jobs: evidential `/h/` for *how you know* ([evidentiality](knowing.md#evidentiality)), **`hual` / `huam`** for habit ([restrictors](restrictors.md)), **`hegegam`** for mechanism ([CAUSE](#cause)).
 
 > `zanunul gadorom buludul hual.`
 >

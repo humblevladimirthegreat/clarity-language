@@ -1,5 +1,5 @@
-# Commentary and evidentiality
-<a id="commentary"></a>
+# Knowing
+<a id="knowing"></a>
 
 English *I think* often smuggles a **guess** (*I think Ululon is leaving Uhubun* = maybe that is so) without saying whether you are checking. **MAY** marks the clause as **potential**: it *could be* so. Keep the ordinary verb and add a small `/h/` word.
 
@@ -227,7 +227,7 @@ z-Uhubun | h-MAY | v-cry
 
 English often says *how you know* a claim (*I saw it*, *I heard*, *I figured*). Agalan keeps the ordinary content verb and adds a closed `/h/` mood word. That word is the **channel** the claim came through, so the same walk or sleep can sit under a live look, memory, a recording, a pattern of cases, clues, hearsay, a gut sense, or a tale.
 
-Verbs have **no past or future letter**. Some channels already locate the event because of how you know: **LIVE** is watching while the scene is still in view; **WITNESSED** is memory of watching; **RECORDED** is playback of a capture. [PREDICT](plan-decision.md#predict) / [PLAN](plan-decision.md#plan-predict) look ahead (the event is later). Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, recency) when inference or hearsay needs a different time than this stretch.
+Verbs have **no past or future letter**. Some channels already locate the event because of how you know: **LIVE** is watching while the scene is still in view; **WITNESSED** is memory of watching; **RECORDED** is playback of a capture. [PREDICT](intention.md#predict) / [PLAN](intention.md#plan-predict) look ahead (the event is later). Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, recency) when inference or hearsay needs a different time than this stretch.
 
 > `zazawan hadezem vawalal.`
 >
@@ -290,7 +290,7 @@ Pick one evidential **root** for how you know.
 <a id="former-climate"></a>
 <a id="episode-standing"></a>
 
-English *has walked* and *used to walk* often smuggle **when** the event sits. Agalan already places events with [*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, [LIVE](#live-vs-memory) / [WITNESSED](#live-vs-memory), or [PREDICT](plan-decision.md#predict). These two `/h/` moods do **not** locate time. They say how the episode **stands**: whether an outcome **still counts on the current tally**, or whether a usual pattern is **not the climate you are claiming now**. Stack them with a channel or a when-frame; do not use them as a past or present letter.
+English *has walked* and *used to walk* often smuggle **when** the event sits. Agalan already places events with [*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, [LIVE](#live-vs-memory) / [WITNESSED](#live-vs-memory), or [PREDICT](intention.md#predict). These two `/h/` moods do **not** locate time. They say how the episode **stands**: whether an outcome **still counts on the current tally**, or whether a usual pattern is **not the climate you are claiming now**. Stack them with a channel or a when-frame; do not use them as a past or present letter.
 
 **RESIDUE** (`oneba`) marks leftover balance: the result is still on the books (an unpaid tab, a door that is still shut). Skipping it means you are not claiming current residue (archived, or a fresh event with nothing left to count). Ordinary `zonebam` is still *debt*.
 
@@ -653,7 +653,7 @@ The same published roots stay ordinary content under other role letters. The clo
 
 - Need ascription: [values.md](values.md)
 - Emotion compose: [special-vocabulary.md](special-vocabulary.md#emotion-compose)
-- Forecast stacked with a channel: [plan-decision.md](plan-decision.md#plan-predict)
+- Forecast stacked with a channel: [intention.md](intention.md#plan-predict)
 - Clock / date / when-frames: [numbers-applied.md](numbers-applied.md#time)
 - Habitual *always*: [restrictors.md](restrictors.md)
 - Usual-climate universality: [special-vocabulary.md](special-vocabulary.md#universality)

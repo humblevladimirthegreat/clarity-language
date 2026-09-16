@@ -47,7 +47,7 @@ Under `/z/` or `/v/` the ordinary noun or verb uses the published literal ending
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
 
-**Compare with:** *could be* uses [MAY](commentary.md#may) (`odoho`). This stack is value + activation + locus.
+**Compare with:** *could be* uses [MAY](knowing.md#may) (`odoho`). This stack is value + activation + locus.
 
 ### Numbered alternatives (problem / solution / goal)
 <a id="numbered-alternatives"></a>
@@ -255,9 +255,9 @@ The default *always* is *usually* (exceptions expected), not *must happen that w
 | **`habelel`** | NATURAL | *by natural necessity* (unsupported objects fall) | `abelel` *apple* | 🍎: it falls because the world works that way |
 | **`hebebel`** | RULE | *under a named frame* (`hebebel begezel`) | `ebebel` *pepper* | 🌶️: heat that applies in that dish |
 
-**Compare with:** *who / when* uses [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory. Usual weather you are **not** claiming now is [FORMER](commentary.md#former-climate) (`hemebem`), not COMMON.
+**Compare with:** *who / when* uses [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory. Usual weather you are **not** claiming now is [FORMER](knowing.md#former-climate) (`hemebem`), not COMMON.
 
-**For *I saw a pattern*, use:** [evidential](commentary.md#evidentiality) **`abawa`**. **`arogu`** is usual-weather universality; NATURAL **`abele`** stacks a separate evidential `/h/` for how you know.
+**For *I saw a pattern*, use:** [evidential](knowing.md#evidentiality) **`abawa`**. **`arogu`** is usual-weather universality; NATURAL **`abele`** stacks a separate evidential `/h/` for how you know.
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -408,6 +408,6 @@ z-everything-but.open | g-proof | h-COMMON
 <a id="see-also"></a>
 
 - Values on the judged host: [values.md](values.md)
-- MAY / evidential stack: [commentary.md](commentary.md)
+- MAY / evidential stack: [knowing.md](knowing.md)
 - Domain / habitual fences: [joins.md](joins.md#universals-domains-generics)
 - Preference vs law / CAUSE: [causation.md](causation.md)

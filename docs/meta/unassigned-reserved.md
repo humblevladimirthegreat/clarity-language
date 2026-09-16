@@ -125,11 +125,11 @@ Source: [values.md](../grammar/values.md)
 | Job | Where taught |
 |-----|----------------|
 | Emotion compose | [special-vocabulary.md § Emotion compose](../grammar/special-vocabulary.md#emotion-compose) |
-| MAY | [commentary.md § MAY](../grammar/commentary.md#may) — **`odoho`** + find out / default / who knows |
-| NOTIONAL | [commentary.md § Notional](../grammar/commentary.md#notional) — **`adade`** |
-| RESIDUE / FORMER | [commentary.md § Residue](../grammar/commentary.md#residue) — **`oneba`** / **`emebe`** |
-| DECISION | [plan-decision.md § Decision](../grammar/plan-decision.md#decision) — **`egege`** |
-| PLAN | [plan-decision.md § Plan](../grammar/plan-decision.md#plan-predict) — **`owora`** |
+| MAY | [knowing.md § MAY](../grammar/knowing.md#may) — **`odoho`** + find out / default / who knows |
+| NOTIONAL | [knowing.md § Notional](../grammar/knowing.md#notional) — **`adade`** |
+| RESIDUE / FORMER | [knowing.md § Residue](../grammar/knowing.md#residue) — **`oneba`** / **`emebe`** |
+| DECISION | [intention.md § Decision](../grammar/intention.md#decision) — **`egege`** |
+| PLAN | [intention.md § Plan](../grammar/intention.md#plan-predict) — **`owora`** |
 
 ## Phonology
 

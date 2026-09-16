@@ -57,7 +57,7 @@ Decide **whether** to add. English helpers; not required by the `/b/` model. Lat
 
 - [ ] **13. Passive / *by*-agent (large, optional).** [Free order](../grammar/clause.md) highlights the object; that is **not** *a cat is seen by Azawan*. No agent demotion, no *by*-phrase, no *get*-passive. **Needs:** item 1 if the demoted agent is a recipient. Item 11 is refused (two sentences, not an in-NP clause). If skipped, keep the core “use the longer English” line as the whole story.
 
-- [x] **14. Progressive / perfect / *used to* (large, optional).** No tense letter. **RESIDUE** **`honebam`** / **FORMER** **`hemebem`** — [commentary episode standing](../grammar/commentary.md#residue). Progressive stays paraphrase ([*while*](../grammar/dependents.md#dependent-clauses) / LIVE). Observation vs imagination tense stays [TODO.md](../../TODO.md).
+- [x] **14. Progressive / perfect / *used to* (large, optional).** No tense letter. **RESIDUE** **`honebam`** / **FORMER** **`hemebem`** — [knowing episode standing](../grammar/knowing.md#residue). Progressive stays paraphrase ([*while*](../grammar/dependents.md#dependent-clauses) / LIVE). Observation vs imagination tense stays [TODO.md](../../TODO.md).
 
 ## Not gaps
 
@@ -67,7 +67,7 @@ Decide **whether** to add. English helpers; not required by the `/b/` model. Lat
 | Closed *in / on / at* as grammar | Several meanings each; item 2 is the fix |
 | *and / or / with / without / against / except* as prepositions | [Joins](../grammar/joins.md), [join-relations](../grammar/join-extras.md#join-relations), [revisers](../grammar/revisers.md) |
 | *because / if / although / while / until / before / after / so that* | Already [dependents](../grammar/dependents.md#dependent-clauses) / [causation](../grammar/causation.md) |
-| *can / will / should / may / have to* as dummy auxiliaries | [Ability](../grammar/ability.md), [plan-decision](../grammar/plan-decision.md), [values](../grammar/values.md), [MAY](../grammar/commentary.md#may) |
+| *can / will / should / may / have to* as dummy auxiliaries | [Ability](../grammar/ability.md), [intention](../grammar/intention.md), [values](../grammar/values.md), [MAY](../grammar/knowing.md#may) |
 | *that / who / which* inside an NP | Two sentences ([which noun](../grammar/dependents.md#which-noun)); hosted `/ɡ/` + `/b/`; role compound on `/ɡ/` |
 | *that* (finite complement) | **`darl`** |
 | *as for / according to [Name]* | `hozal` + `/b/`; `/h/` + **-n** |

@@ -50,7 +50,7 @@ Same word on a yes/no ask when the question *is* the seeking:
 
 How you **know** a world-claim (live look, memory, hearsay, …) is a different inventory. MAY is only potential, plus whether you are going after it.
 
-Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/commentary.html#may
+Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/knowing.html#may
 
 ### Greetings Say What Kind of Talk This Is
 

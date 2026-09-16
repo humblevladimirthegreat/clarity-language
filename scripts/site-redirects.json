@@ -9,6 +9,16 @@
       "from": "/grammar/core.html",
       "to": "/grammar/clause.html",
       "note": "Public URL after renaming core.md to clause.md. Keep hash fragments; browsers preserve them on 301 and on the build stub."
+    },
+    {
+      "from": "/grammar/commentary.html",
+      "to": "/grammar/knowing.html",
+      "note": "Public URL after renaming commentary.md to knowing.md."
+    },
+    {
+      "from": "/grammar/plan-decision.html",
+      "to": "/grammar/intention.html",
+      "note": "Public URL after renaming plan-decision.md to intention.md."
     }
   ]
 }

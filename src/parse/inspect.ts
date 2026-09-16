@@ -348,7 +348,11 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     return { line: "number stem", href: "numbers.html" };
   }
   if (word.reading === "mood") {
-    return { line: "closed mood", href: "commentary.html" };
+    const kind = word.overlay?.kind;
+    if (kind === "plan" || kind === "predict" || kind === "decision") {
+      return { line: "closed mood", href: "intention.html" };
+    }
+    return { line: "closed mood", href: "knowing.html" };
   }
   if (word.reading === "locative") {
     return { line: "locative relation", href: "relations.html#locative-relations" };

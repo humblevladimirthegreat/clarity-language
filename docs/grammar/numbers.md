@@ -1089,7 +1089,7 @@ Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as o
 
 **Imaginary (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅), no mantissa. Completes the scalar special grid. Reading is **metaphorical**: a magnitude named *as if* it counted, without entering the real tally.
 
-**Compare with:** clause-level pretensive *as if* uses spelled mood **`adade`** ([commentary.md § Notional](commentary.md#notional), e.g. `hadadem`). Free **`grubul`** / **`xrubul`** / **`hrubul`** / **`vrubul`** / **`jrubul`** are amount, discourse *imagine that:*, manner *as if*, verb *treat as imaginary*, and cheer on the number grid.
+**Compare with:** clause-level pretensive *as if* uses spelled mood **`adade`** ([knowing.md § Notional](knowing.md#notional), e.g. `hadadem`). Free **`grubul`** / **`xrubul`** / **`hrubul`** / **`vrubul`** / **`jrubul`** are amount, discourse *imagine that:*, manner *as if*, verb *treat as imaginary*, and cheer on the number grid.
 
 **Endings** (no-mantissa specials):
 

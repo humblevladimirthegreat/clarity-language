@@ -112,29 +112,29 @@ Tagging *can’t right now* vs *may yet* vs *impossible* helps you stop treating
 
 It is easy to treat a looping *could be* as settled fact: mixing memory, hearsay, gut feel, and *maybe they left* into one warrant.
 
-[Evidentiality](commentary.md#evidentiality) lets a claim about the world name **how you know**: live look, memory, record, pattern, inference, hearsay, gut-felt, or story. Memory (**WITNESSED**) is pulling a scene back from earlier (you may mis-reel it). A live look (**LIVE**) is seeing it while it is still in view.
+[Evidentiality](knowing.md#evidentiality) lets a claim about the world name **how you know**: live look, memory, record, pattern, inference, hearsay, gut-felt, or story. Memory (**WITNESSED**) is pulling a scene back from earlier (you may mis-reel it). A live look (**LIVE**) is seeing it while it is still in view.
 
 Marking the channel helps you catch overconfidence and hearsay before you treat a take as settled fact.
 
-**For *could be*, use:** [MAY](commentary.md#may) (`odoho`). That marks potential, and whether this sentence finds out, stays at *may*, or leaves it at *who knows*. Evidentiality is how you know a world-claim. Ability *can* is not MAY.
+**For *could be*, use:** [MAY](knowing.md#may) (`odoho`). That marks potential, and whether this sentence finds out, stays at *may*, or leaves it at *who knows*. Evidentiality is how you know a world-claim. Ability *can* is not MAY.
 
 ### What still counts, and whose weather
 <a id="residue-and-former-climate"></a>
 
 English *has…* and *used to* mix **when** something happened with whether it **still matters**, or whether a pattern is **still the climate you claim**.
 
-[RESIDUE](commentary.md#residue) marks leftover balance: the outcome is still on the books. [FORMER](commentary.md#former-climate) marks usual weather you are **not** reporting as current. Neither word is a past tense; they stack with a live look, memory, or a forecast.
+[RESIDUE](knowing.md#residue) marks leftover balance: the outcome is still on the books. [FORMER](knowing.md#former-climate) marks usual weather you are **not** reporting as current. Neither word is a past tense; they stack with a live look, memory, or a forecast.
 
 Marking residue vs an archived episode helps rumination stay optional. Marking former climate helps “I always was this way” stay a weather report you can stop giving.
 
-**Compare with:** [LIVE](commentary.md#live-vs-memory) / [WITNESSED](commentary.md#live-vs-memory) for how you know; [always](restrictors.md) **`hual`** for current climate; [*after*](dependents.md#dependent-clauses) for event order.
+**Compare with:** [LIVE](knowing.md#live-vs-memory) / [WITNESSED](knowing.md#live-vs-memory) for how you know; [always](restrictors.md) **`hual`** for current climate; [*after*](dependents.md#dependent-clauses) for event order.
 
 ### Intention, forecast, and firmness
 <a id="intention-forecast-and-firmness"></a>
 
 English *will* smuggles plan and prediction together. It is easy to talk as if the future were already known (a certain prediction that fuels anxiety or overconfidence), while a pick often sounds more locked than it is.
 
-Agalan splits them: [PLAN](plan-decision.md#plan-predict) for what you mean to do; [PREDICT](plan-decision.md#plan-predict) for a forecast; [DECISION](plan-decision.md#decision) for how revisable a pick is.
+Agalan splits them: [PLAN](intention.md#plan-predict) for what you mean to do; [PREDICT](intention.md#plan-predict) for a forecast; [DECISION](intention.md#decision) for how revisable a pick is.
 
 Splitting plan, prediction, and decision firmness helps you avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and a revisable pick as locked forever.
 
@@ -183,12 +183,12 @@ Abstract ideas are hard to hold; without a concrete picture, the psychologically
 
 Published roots keep a **metaphorical** sense beside the literal one, so the abstract job rides on a familiar scene that already carries the caution. Examples:
 
-* [Memory as fishing](commentary.md#evidentiality): cast into opaque water; you may pull a fish or a **boot** (the memory can be wrong).
-* [Live look as attesting](commentary.md#live-vs-memory): eye-in-speech while the scene is still in view.
-* [Residue as unpaid debt](commentary.md#residue): leftover balance still on the books; not a past tense.
-* [Former climate as an empty nest](commentary.md#former-climate): the nesting season is over; not *used to* as past.
+* [Memory as fishing](knowing.md#evidentiality): cast into opaque water; you may pull a fish or a **boot** (the memory can be wrong).
+* [Live look as attesting](knowing.md#live-vs-memory): eye-in-speech while the scene is still in view.
+* [Residue as unpaid debt](knowing.md#residue): leftover balance still on the books; not a past tense.
+* [Former climate as an empty nest](knowing.md#former-climate): the nesting season is over; not *used to* as past.
 * [Usual as weather](special-vocabulary.md#universality): a habitual *always* is a climate report; [uncountered](special-vocabulary.md#universality) is clear sky (*no counterexample comes to mind*), a search, not a proof.
-* [*As if* as theater](commentary.md#notional): a stage mask frames play; the real tally stays **offstage**.
+* [*As if* as theater](knowing.md#notional): a stage mask frames play; the real tally stays **offstage**.
 * [Mechanism as gears](causation.md#cause): naming the gear train marks *how it meshes*.
 * [Affect as water](special-vocabulary.md#emotion-compose): tide (arousal) plus vessel / pour / ambient field (locus) instead of an opaque emotion label that hides the need.
 

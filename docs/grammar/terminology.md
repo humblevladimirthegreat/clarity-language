@@ -20,35 +20,35 @@ Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#a
 | **BECAUSE** | Clause-pole **`urugu`** (*because*) | [Causation](causation.md#because) |
 | **CAUSE** | Mechanism-framing mood **`egega`** | [Causation](causation.md#cause) |
 | **CIRCUM** | Emotion locus: charge on the situation | [Special vocabulary](special-vocabulary.md#emotion-compose) |
-| **MAY** | Potential mood **`odoho`** (*could be*; I'll find out / default / who knows) | [Commentary](commentary.md#may) |
+| **MAY** | Potential mood **`odoho`** (*could be*; I'll find out / default / who knows) | [Knowing](knowing.md#may) |
 | **COMMON** | Universality: usual, exceptions expected | [Special vocabulary](special-vocabulary.md#universality) |
-| **DECISION** | Pick-firmness mood **`egege`** | [Plan / decision](plan-decision.md#decision) |
+| **DECISION** | Pick-firmness mood **`egege`** | [Intention](intention.md#decision) |
 | **EXTERNAL** | Emotion locus: charge at other people | [Special vocabulary](special-vocabulary.md#emotion-compose) |
-| **FELT** | Evidential: gut / body knowing | [Commentary](commentary.md#evidentiality) |
+| **FELT** | Evidential: gut / body knowing | [Knowing](knowing.md#evidentiality) |
 | **FORMAL** | Universality: definition / math / proof | [Special vocabulary](special-vocabulary.md#universality) |
-| **FORMER** | Episode standing: not the climate claimed now **`emebe`** | [Commentary](commentary.md#former-climate) |
+| **FORMER** | Episode standing: not the climate claimed now **`emebe`** | [Knowing](knowing.md#former-climate) |
 | **HIGH** / **MED** / **LOW** | Emotion ACT roots | [Special vocabulary](special-vocabulary.md#emotion-compose) |
 | **IF** | Clause-pole **`adoro`** (one-way *if*) | [Causation](causation.md#if) |
 | **IFF** | Clause-pole **`ezaze`** | [Causation](causation.md#iff) |
-| **INFERRED** | Evidential: reasoned from clues | [Commentary](commentary.md#evidentiality) |
+| **INFERRED** | Evidential: reasoned from clues | [Knowing](knowing.md#evidentiality) |
 | **INTERNAL** | Emotion locus: charge held inside | [Special vocabulary](special-vocabulary.md#emotion-compose) |
-| **LIVE** | Evidential: concurrent / in-view observation | [Commentary](commentary.md#live-vs-memory) |
+| **LIVE** | Evidential: concurrent / in-view observation | [Knowing](knowing.md#live-vs-memory) |
 | **LOCUS** | Emotion-compose where the charge sits | [Special vocabulary](special-vocabulary.md#emotion-compose) |
 | **NATURAL** | Universality: natural necessity | [Special vocabulary](special-vocabulary.md#universality) |
-| **NOTIONAL** | As-if / pretense mood **`adade`** | [Commentary](commentary.md#notional) |
+| **NOTIONAL** | As-if / pretense mood **`adade`** | [Knowing](knowing.md#notional) |
 | **ONLY-IF** | Clause-pole **`ebero`** (*only if* / *needs*) | [Causation](causation.md#only-if) |
-| **PATTERN** | Evidential: from regularity | [Commentary](commentary.md#evidentiality) |
-| **PLAN** | Intention-framing mood **`owora`** | [Plan / decision](plan-decision.md#plan-predict) |
-| **PREDICT** | Later-event forecast mood **`elezo`** | [Plan / decision](plan-decision.md#predict) |
-| **RECORDED** | Evidential: documented / playback | [Commentary](commentary.md#evidentiality) |
-| **RESIDUE** | Episode standing: outcome still on the current tally **`oneba`** | [Commentary](commentary.md#residue) |
+| **PATTERN** | Evidential: from regularity | [Knowing](knowing.md#evidentiality) |
+| **PLAN** | Intention-framing mood **`owora`** | [Intention](intention.md#plan-predict) |
+| **PREDICT** | Later-event forecast mood **`elezo`** | [Intention](intention.md#predict) |
+| **RECORDED** | Evidential: documented / playback | [Knowing](knowing.md#evidentiality) |
+| **RESIDUE** | Episode standing: outcome still on the current tally **`oneba`** | [Knowing](knowing.md#residue) |
 | **RULE** | Universality: holds inside a named frame | [Special vocabulary](special-vocabulary.md#universality) |
 | **SAME** | Identity copula **`onunu`** | [Predication](predication.md#identity) |
 | **SO-THAT** | Clause-pole **`olala`** (*so that* / NP intended *for*) | [Dependents](dependents.md#so-that) |
-| **STORY** | Evidential: narrative / lore | [Commentary](commentary.md#evidentiality) |
-| **TOLD** | Evidential: hearsay | [Commentary](commentary.md#evidentiality) |
+| **STORY** | Evidential: narrative / lore | [Knowing](knowing.md#evidentiality) |
+| **TOLD** | Evidential: hearsay | [Knowing](knowing.md#evidentiality) |
 | **UNCOUNTERED** | Universality: no counterexample comes to mind | [Special vocabulary](special-vocabulary.md#universality) |
-| **WITNESSED** | Evidential: firsthand memory (reconstructive) | [Commentary](commentary.md#live-vs-memory) |
+| **WITNESSED** | Evidential: firsthand memory (reconstructive) | [Knowing](knowing.md#live-vs-memory) |
 
 **Compare with:** [imaginary](#digitless-exponent) (free-number `-e-`) and [quasi](#quasi) (`ROOTx-e-`) are not **NOTIONAL**.
 
@@ -187,7 +187,7 @@ Prescription-force endings on value **`xe`**: **-l** bound (*must* / *has to*), 
 
 Endings on unmet **`xu`**, **DECISION**, and ability *can’t*.
 
-[Values](values.md#value-changeability), [plan / decision](plan-decision.md#decision)
+[Values](values.md#value-changeability), [Intention](intention.md#decision)
 
 ### Citation / prefix-less citation
 
@@ -337,13 +337,13 @@ Reason for the *could be* (**MAY**), not world **BECAUSE**.
 
 Closed `/h/` how-you-know roots.
 
-[Commentary](commentary.md#evidentiality)
+[Knowing](knowing.md#evidentiality)
 
 ### Residue / former climate
 
 Closed `/h/` episode standing: leftover on the tally, or usual weather you are not claiming now. Not past tense.
 
-[Commentary](commentary.md#residue)
+[Knowing](knowing.md#residue)
 
 ### Extra noun (`/b/`)
 
@@ -409,7 +409,7 @@ Speech-act ending **-l** vs **-m**.
 
 Evidentiality stacked on **PREDICT**.
 
-[Plan / decision](plan-decision.md#predict-evidentiality)
+[Intention](intention.md#predict-evidentiality)
 
 ### Full-root resume / short resume
 
@@ -427,7 +427,7 @@ A named citation as a hello (`azawan.`). Mid-word **`x`** plus **`a`** / **`o`**
 
 **MAY** find-out / who-knows endings / **NOTIONAL** play endings.
 
-[Commentary](commentary.md#may-hold)
+[Knowing](knowing.md#may-hold)
 
 ### Host
 
@@ -495,7 +495,7 @@ Content endings **-l / -m / -n / -r**.
 
 **PLAN** endings: sketch / itinerary / atlas.
 
-[Plan / decision](plan-decision.md#plan-map-resolution)
+[Intention](intention.md#plan-map-resolution)
 
 ### Measure phrase / unit
 

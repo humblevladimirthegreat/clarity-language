@@ -1,5 +1,5 @@
-# Plan, predict, and decision
-<a id="plan-decision"></a>
+# Intention
+<a id="intention"></a>
 
 English *will* and *going to* can mean **intention** (the course someone means to take) or a **forecast** (what you think will happen later in the world). Agalan splits those into two closed mood words: special `/h/` words that frame the whole clause rather than naming a need. Put the mood word first (floating `/h/`), then write an ordinary content verb. You can't actually know the future, so this distinction helps you be more rational about claiming what is going to happen.
 
@@ -261,7 +261,7 @@ You can stack this mood after [PLAN](#plan-predict) when the clause needs both m
 ### Forecast source
 <a id="predict-evidentiality"></a>
 
-When you mark **how** you forecast (a usual pattern, an inference, and so on), keep [PREDICT](#predict) and add an ordinary [evidentiality](commentary.md#evidentiality) `/h/` after it. The forecast mood still says what **will** happen later; the evidential says how you know.
+When you mark **how** you forecast (a usual pattern, an inference, and so on), keep [PREDICT](#predict) and add an ordinary [evidentiality](knowing.md#evidentiality) `/h/` after it. The forecast mood still says what **will** happen later; the evidential says how you know.
 
 > `helezom habawam vanunul.`
 >
@@ -269,7 +269,7 @@ When you mark **how** you forecast (a usual pattern, an inference, and so on), k
 >
 > "From the usual pattern, I predict it will rain."
 
-**Compare with:** a pattern or [LIVE](commentary.md#live-vs-memory) claim about *this stretch* uses [evidentiality](commentary.md#evidentiality) on the content verb alone (**`hadezem`** if you are observing it now; **`huvuvum`** if you remember observing it). Add **PREDICT** when the claim is a **later** world forecast, not a guess about what is already so.
+**Compare with:** a pattern or [LIVE](knowing.md#live-vs-memory) claim about *this stretch* uses [evidentiality](knowing.md#evidentiality) on the content verb alone (**`hadezem`** if you are observing it now; **`huvuvum`** if you remember observing it). Add **PREDICT** when the claim is a **later** world forecast, not a guess about what is already so.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -441,6 +441,6 @@ z-Uhubun | h-DECISION-irreversible | v-scream
 
 ## See also
 
-- How you know a forecast: [commentary.md](commentary.md#evidentiality)
+- How you know a forecast: [knowing.md](knowing.md#evidentiality)
 - Choosing as an act: [join-extras.md](join-extras.md#join-act-verbs)
 - Autonomy as a need: [values.md](values.md#need-inventory)

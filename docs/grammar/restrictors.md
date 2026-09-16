@@ -563,4 +563,4 @@ z-Ululon | g-happy | w-rain | w-night | w-when-one
 
 - Phrase lists (right-close fence): [joins.md](joins.md)
 - *When?* under question: [questions.md](questions.md#when)
-- Former climate (not *used to* as past): [commentary.md](commentary.md#former-climate)
+- Former climate (not *used to* as past): [knowing.md](knowing.md#former-climate)
