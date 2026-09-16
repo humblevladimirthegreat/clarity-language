@@ -70,8 +70,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| **PLAN** (sketch) | `howoram` | `oworal` *world-map* |
-| **PREDICT** | `helezom` | `elezol` *telescope* |
 | *sit* | `vajul` | `ajul` *chair* |
 | *pawn* | `egezal` | |
 | *see* | `vejel` | `ejel` *eye* |

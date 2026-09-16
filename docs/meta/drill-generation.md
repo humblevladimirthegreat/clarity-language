@@ -201,7 +201,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `roles.md` | Intermediate | a harbor |
 | `x-compounds.md` | Beginner | a hardware store |
 | `x-compounds.md` | Intermediate | a front porch |
-| `x-compounds.md` | Advanced | a firehouse |
+| `x-compounds.md` | Advanced | unset |
 | `plan-decision.md` | Beginner | a chess club |
 | `plan-decision.md` | Intermediate | a board meeting |
 | `join-extras.md` | Intermediate | a relay race |
@@ -278,7 +278,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 14 | `ability.md` | **exists** | Host (non-need) + **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (need roots). Not role compounds (vowel *left* of `x`). Not greeting bid (named citation or `/j/`) |
 | 14 | `commentary.md` | **exists** | **MAY** **`odoho`** + 2a holds (**`hodohom`** default; **-l** find out; **-r** who knows) | Not evidentiality / NOTIONAL (Intermediate). Not **`jom`** (core Intermediate) unless you only recycle **`jol`** from core/questions Beginner |
 | 14 | `roles.md` | **exists** | Role compounds **`a`/`e`/`u`/`o` x ROOT`** (agent / instrument / patient / reltum); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
-| 14 | `x-compounds.md` | **exists** | Productive **`x`** vs two words vs lexical compound; recognize `ohohulabede` / `eberelonogo` lemmas | Not parser-family inventory as drills; not coining new lexical compounds. Greeting bid is Intermediate |
+| 14 | `x-compounds.md` | **exists** | Productive **`x`** vs two words vs dictionary compound; look up listed stems (`ohohulabede` / `eberelonogo`); do not coin them. Live **`x`** from parts (not a pre-joined bank row) | Not parser-family inventory as drills; not coining new dictionary compounds. Greeting bid is Intermediate |
 | 14 | `plan-decision.md` | **exists** | **PLAN** **`owora`** map-resolution endings vs **PREDICT** **`elezo`** (bare) | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling MAY / values / ability unused unless the page contrast needs them |
 
 ### Intermediate then Advanced

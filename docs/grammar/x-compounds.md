@@ -2,36 +2,83 @@
 <a id="x-compounds"></a>
 <a id="compound-parser"></a>
 
-How to read **`x`** inside one content word: the two pieces around that letter, and the word’s ending, tell you what the whole word is doing.
+Sometimes one Agalan word is two smaller meanings with **`x`** in the middle. The last letter (**-l** / **-m** / **-n** / **-r**) still marks the **whole** word. What sits left and right of that **`x`** tells you which kind of word it is.
 
 ## Beginner
 <a id="beginner"></a>
 
-### Families at the seam
+### Two roots, one word
 
-When two published roots sit in **one** content word, write **`x`** between them (the **seam**).
+English often glues two ideas into one word (*peanut butter*) or one hyphenated name. In Agalan you write both dictionary roots in **one** word and put **`x`** between them. The first letter of the word is still the [role letter](core.md#beginner) (subject, verb, and so on). The [ending](reference-suffix.md) belongs to the whole word, not to the piece before **`x`** alone. (cue: **x** ≈ plus: two pieces make one word)
 
-After the [role letter](core.md#beginner) (the first letter of the word: subject, verb, and so on), look at what sits left and right of the first **`x`**. The [ending](reference-suffix.md) (**-l** / **-m** / **-n** / **-r**) belongs to the whole word, not to the left piece alone. (cue: **x** ≈ plus: two pieces make one word)
-
-> `zuzuzuxogoven.`
+> `zabanuxudel.`
 >
-> z-Uzuzu-x-Ogoven
+> z-peanut-x-butter
 >
-> "Sushi-Coffee" (one named label)
+> "peanut butter"
 
-<AgelanInspect text="zuzuzuxogoven." />
+<AgelanInspect text="zabanuxudel." />
 
-That shape is an **ordinary compound**: a full root, **`x`**, another full root. The left root is the kind; the right root narrows it (field or further label). One name, one ending.
+The left root is the kind of thing; the right root narrows it (what field, what extra label). You get one thing in the sentence, not two.
+
+> `golovexagal.`
+>
+> g-love-x-crush
+>
+> "love in the crush sense"
+
+<AgelanInspect text="golovexagal." />
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| full root **`x`** full root | ordinary compound: one label, kind then field | `zuzuzuxogoven` | **x** ≈ plus |
+| full root **`x`** full root | two roots, one word | `zabanuxudel` *peanut butter* | **x** ≈ plus |
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* | **a** agent / **e** instrument / **u** patient / **o** reltum |
-| root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) or [ability](ability.md#ability) | `vuzunuxel` | stance vowel on the host |
+| root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) or [ability](ability.md#ability) | `vuzunuxel` | extra vowel after the host |
 
-**Compare with:** two people in one slot are two words (`zazawan zululon`), not one seam.
+**Compare with:** two people stay two words (`zazawan zululon`). One double name is one word (`zazawaxululon`).
 
-**Not the same job as:** a word that **starts** with **`x`** is [continue](core.md#continue-x), not this seam.
+**Not the same job as:** a word that **starts** with **`x`** [keeps the same speech move going](core.md#continue-x). That **`x`** is not this glue in the middle.
+
+### Words you look up, not build
+<a id="lexical-compounds"></a>
+
+English *bedroom*, *doorbell*, and *friend* feel like one word. Agalan lists those as **one dictionary word** too. You look the word up. You do not make it on the spot by putting **`x`** between *house* and *bed*.
+
+Inside the dictionary spelling you can still see the two old roots, with a join letter (**l** / **m** / **n** / **r**) instead of **`x`**. That letter is part of the entry (usually **-l**). In a sentence you add a role letter and an ending on the **whole** word, the same way you do for *dog* or *hammer*.
+
+> `zohohulabedel.`
+>
+> z-bedroom
+>
+> "a bedroom."
+
+<AgelanInspect text="zohohulabedel." />
+
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| `zohohulabedel` | house **-l** bed | bedroom | look it up |
+| `zobeleladorol` | bell **-l** door | doorbell | look it up |
+| `zeberelonogol` | person **-l** bond | friend | look it up |
+| `zojalanunul` | coat **-l** rain | raincoat | look it up |
+
+If the pairing is not in the dictionary, either glue with **`x`** (`zabanuxudel` *peanut butter*) or use two words.
+
+### One thing or two?
+<a id="compound-vs-separate"></a>
+
+Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agalan words (and a [join](joins.md) if you need *and*). *Peanut butter* is one food, so one word. *Bedroom* is also one thing, but that spelling is already in the dictionary, so there is no **`x`**.
+
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| two words | two things, or a property already marked another way | `zahamel zewenel zam` *a hammer and a wrench*; `zodogol gelulul` *a blue dog* (`/ɡ/`) | |
+| **`x`** in the middle | one thing; you can still hear both roots | `golovexagal` *love in the crush sense*; `zabanuxudel` *peanut butter*; `zazawaxululon` (one person) | **x** ≈ plus |
+| dictionary word | one familiar kind, listed as a single entry | `zohohulabedel` *bedroom*; `zunowel` *sunflower* | join letter in the entry, not **`x`** |
+
+`zazawan zululon` is two people. `zazawaxululon` is one person.
+
+**Compare with:** a property on a noun uses `/ɡ/` (or `/w/`). A list uses a [join](joins.md).
+
+**Related form:** *a fighter* (who does / what is used / who undergoes / who relates) uses a [role compound](roles.md#role-compounds).
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -47,24 +94,26 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| *Ahame-x-Ewenen* | `zahamexewenen` | |
+| *doorbell* | `zobeleladorol` | |
+| *raincoat* | `zojalanunul` | |
+| *greenhouse* | `zohohulovowel` | |
+| *friend* | `zeberelonogol` | |
 | *hammer* | `ahamel` | |
 | *wrench* | `ewenel` | |
 | *axe* | `azel` | |
-| *doorbell* | `zobeleladorol` | |
-| *bedroom* | `zohohulabedel` | |
-| *friend* | `zeberelonogol` | |
+| *saw* | `ezawal` | |
+| *wood* | `owodol` | |
 | *see* | `vejel` | `ejel` *eye* |
 | *punch* | `ubunul` | |
 
 #### English → Agalan
 
-**1.** *Hammer-Wrench* (one shop label)
+**1.** *a doorbell*
 
 ::: details Show answer
-`zahamexewenen.`
+`zobeleladorol.`
 
-z-Ahame-x-Ewenen
+z-doorbell
 :::
 
 **2.** *a hammer and a wrench*
@@ -75,20 +124,20 @@ z-Ahame-x-Ewenen
 z-hammer | z-wrench | z-and.open
 :::
 
-**3.** *a doorbell* (lexical kind)
+**3.** *a wood saw*
 
 ::: details Show answer
-`zobeleladorol.`
+`zezawaxowodol.`
 
-z-doorbell
+z-saw-x-wood
 :::
 
-**4.** *a friend* (lexical kind)
+**4.** *a raincoat*
 
 ::: details Show answer
-`zeberelonogol.`
+`zojalanunul.`
 
-z-friend
+z-raincoat
 :::
 
 **5.** *Azawan and Ululon* (two people)
@@ -99,20 +148,20 @@ z-friend
 z-Azawan | z-Ululon
 :::
 
-**6.** *Ululon sees Hammer-Wrench.*
+**6.** *Ululon sees a greenhouse.*
 
 ::: details Show answer
-`zululon dahamexewenen vejel.`
+`zululon dohohulovowel vejel.`
 
-z-Ululon | d-Ahame-x-Ewenen | v-see
+z-Ululon | d-greenhouse | v-see
 :::
 
-**7.** *Azawan sees a bedroom.*
+**7.** *Azawan-Ululon* (one person)
 
 ::: details Show answer
-`zazawan dohohulabedel vejel.`
+`zazawaxululon.`
 
-z-Azawan | d-bedroom | v-see
+z-Azawan-x-Ululon
 :::
 
 **8.** *Ululon punches a friend.*
@@ -130,7 +179,8 @@ z-Ululon | z-friend | v-punch
 ::: details Show answer
 
 z-friend
-*a friend* (lexical kind)
+
+*a friend*
 :::
 
 **2.** `zuhubun dobeleladorol vejel.`
@@ -151,21 +201,22 @@ z-hammer | z-axe | z-and.open
 *a hammer and an axe*
 :::
 
-**4.** `zazawaxululon.`
+**4.** `zezawaxowodol.`
 
 ::: details Show answer
 
-z-Azawan-x-Ululon
-*Azawan-Ululon* (one person)
+z-saw-x-wood
+
+*a wood saw*
 :::
 
-**5.** `zuhubun dohohulabedel vejel.`
+**5.** `zuhubun dojalanunul vejel.`
 
 ::: details Show answer
 
-z-Uhubun | d-bedroom | v-see
+z-Uhubun | d-raincoat | v-see
 
-*Uhubun sees a bedroom.*
+*Uhubun sees a raincoat.*
 :::
 
 **6.** `zeberelonogol dahamel vejel.`
@@ -186,13 +237,13 @@ z-Ululon | d-axe | v-see
 *Ululon sees an axe.*
 :::
 
-**8.** `zazawan zahamexewenen vubunul.`
+**8.** `zazawan zeberelonogol vubunul.`
 
 ::: details Show answer
 
-z-Azawan | z-Ahame-x-Ewenen | v-punch
+z-Azawan | z-friend | v-punch
 
-*Azawan punches Hammer-Wrench.*
+*Azawan punches a friend.*
 :::
 
 ## Intermediate
@@ -201,23 +252,23 @@ z-Azawan | z-Ahame-x-Ewenen | v-punch
 ### Left and right of `x`
 <a id="families-by-shape"></a>
 
-Beginner already used ordinary compounds, role compounds, and values / ability on a host. After the role letter, the pieces **left** and **right** of the **first** **`x`** pick the rest of the map.
+Beginner already used two roots glued with **`x`**, dictionary words with no **`x`**, *a fighter*, and *can / can’t* on a host. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | one vowel **`x`** one vowel, then a span ending | [span fence](spans.md) open or close | `daxal` … `xuxul` | vowel **x** vowel |
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* | **a** agent / **e** instrument / **u** patient / **o** reltum |
-| name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (citation or `/j/`) | [greeting bid](#greeting-bid) | `azawaxan`; `jululoxen` | vowel on the named greeting or vocative |
-| longer root **`x`** stance vowel **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) (need host) or [ability](ability.md#ability) (other host) | `vuzunuxel` | stance vowel on the host |
-| longer root **`x`** a [number](numbers.md) stem (no ending of its own) | [numeric derivation](numeric-derivation.md#numeric-derivation) | `…x+1…` / speech `…xraba…` | number stem on the right |
-| full roots on **both** sides, optional further **`x`** + root | ordinary compound | `zuzuzuxogoven`; `gewezexazawan` *Azawan’s left* ([viewpoint laterals](roles.md#viewpoint-laterals)); `zodunaxalanen` ([phrasal proper names](reference-suffix.md#phrasal-proper-names)) | **x** ≈ plus |
+| name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (hello or calling) | [greeting bid](#greeting-bid) | `azawaxan`; `jululoxen` | vowel on the name |
+| longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) (on a need) or [ability](ability.md#ability) (on another host) | `vuzunuxel` | extra vowel after the host |
+| longer root **`x`** a [number](numbers.md) (no ending of its own) | [numeric derivation](numeric-derivation.md#numeric-derivation) | `…x+1…` / speech `…xraba…` | number on the right |
+| full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zabanuxudel`; `gewezexazawan` *Azawan’s left* ([whose left](roles.md#viewpoint-laterals)); `zodunaxalanen` ([multipart names](reference-suffix.md#phrasal-proper-names)) | **x** ≈ plus |
 
-A published content root is longer than one vowel, so a lone vowel **left** of **`x`** is a span open or a role vowel. Role compounds still put a full root after that vowel. Numeric right halves follow number-stem grammar; running text prefers spelled CV (`…xraba…`). See [writing style](numbers.md#writing-style-numeric-vs-spelled).
+A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`**, or **`u`** left of **`x`**, you are opening a span or naming a role (*fighter*), not gluing two full roots. Role compounds still put a full root **after** that vowel. Number pieces on the right follow number grammar; in a sentence you usually spell them with letters (`…xraba…`), not `+` and digits. See [writing style](numbers.md#writing-style-numeric-vs-spelled).
 
-### Ordinary compound order
+### Adding another piece
 <a id="ordinary-compound-order"></a>
 
-When one label still shows a kind and then a field (or a further title), English often stacks those pieces in order (*love* in the *crush* sense; a shop name with a third piece). Agalan writes that as a **flat** list: the first content root is the kind; each later root after **`x`** narrows it. One ending sits on the whole word, so you can add another **`x`** + root without changing the first pieces.
+When English stacks labels left to right (*love* in the *crush* sense; a shop name with a third drink), Agalan keeps that order in **one** word. The first root is the kind. Each later root after **`x`** narrows it. The ending stays at the end of the whole word, so you can add another **`x`** + root without rewriting the earlier pieces.
 
 > `golovexagal.`
 >
@@ -227,56 +278,39 @@ When one label still shows a kind and then a field (or a further title), English
 
 <AgelanInspect text="golovexagal." />
 
-> `zuzuzuxogovexadedan.`
+> `zogovexadedaxunuden.`
 >
-> z-Uzuzu-x-Ogove-x-Adedan
+> z-Ogove-x-Adeda-x-Unuden
 >
-> "Sushi-Coffee-Tea" (one named label)
+> "Coffee-Tea-Water" (one named shop)
 
-<AgelanInspect text="zuzuzuxogovexadedan." />
+<AgelanInspect text="zogovexadedaxunuden." />
 
-[Phrasal names](reference-suffix.md#phrasal-proper-names) use the same left-to-right order (given, then family, then further title). [Viewpoint laterals](roles.md#viewpoint-laterals) are two roots (`DIR x ANCHOR`).
+[Multipart names](reference-suffix.md#phrasal-proper-names) use the same order (given name, then family, then a further title). [Body left / right](roles.md#viewpoint-laterals) is two roots: the direction, then whose facing counts as north.
 
-**Compare with:** an office **handle** is one root ([named handles](reference-suffix.md#named-handles)), not this stack.
+**Compare with:** a short office **handle** is one root ([named handles](reference-suffix.md#named-handles)), not this stack. A dictionary compound is one listed word, not a live list you extend.
 
-### Telling the families apart
+### Which family is this?
 <a id="decision-order"></a>
 
-The table above is the full map. Read both sides of the first **`x`** in this order:
+Use the table above. Read both sides of the first **`x`** in this order:
 
 - The whole word is **`xuxul`** / **`xuxur`** / **`xuxum`** → a **span** is closing.
-- After the role letter: one vowel, **`x`**, one vowel, then a span ending → a **span** is opening (atomic / resume / empty — [spans](spans.md)).
+- After the role letter: one vowel, **`x`**, one vowel, then a span ending → a **span** is opening ([spans](spans.md)).
 - After the role letter: one vowel **`a`** / **`e`** / **`u`** / **`o`**, **`x`**, then a longer root → a **role compound** (who does / what is used / who undergoes / who relates).
-- A name (one root or a [phrasal proper](reference-suffix.md#phrasal-proper-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a citation or under **`/j/`** → a [greeting bid](#greeting-bid).
-- A longer root, then **`x`**, then a single stance vowel **`a`** / **`e`** / **`o`** / **`u`** → **values** (on a need) or **ability** (on another host).
-- A longer root, then **`x`**, then a **number** stem (writing **`+`** / **`-`** / **`#`** / **`_`**; speech starts with **`r`**) → [numeric derivation](numeric-derivation.md#numeric-derivation).
+- A name (one root or a [multipart proper name](reference-suffix.md#phrasal-proper-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a hello or under **`/j/`** → a [greeting bid](#greeting-bid).
+- A longer root, then **`x`**, then a single vowel **`a`** / **`e`** / **`o`** / **`u`** → **values** (on a need) or **ability** (on another host).
+- A longer root, then **`x`**, then a **number** (writing **`+`** / **`-`** / **`#`** / **`_`**; speech starts with **`r`**) → [numeric derivation](numeric-derivation.md#numeric-derivation).
 - Full roots on **both** sides of the first **`x`** (and maybe more **`x`** + root) → an ordinary compound (sense or name).
 
 Role vowels are **`a`** / **`e`** / **`u`** / **`o`**. Span type and edge letters stay single vowels.
 
-### One slot, one package
-<a id="compound-vs-separate"></a>
-
-English sometimes puts two nouns in one slot (*a dog and a cat*) and sometimes one compound (*Sushi-Coffee*). Count how many things fill the slot: that many Agalan words. Two fillers stay two words; one referent that still shows kind then field is one **`x`** compound. A conventional kind already closed as a single lexicon entry is one word with no mid-word **`x`**.
-
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| two words | two slot-fillers, or a relation that already has its own marking: join / adjective | `zodogol zagadal zam` *a dog and a cat*; `zodogol gelulul` *a blue dog* (property = `/ɡ/`) | |
-| **`x` compound** | one referent; you still hear KIND then FIELD (live label, sense-narrowing, multipart name) | `golovexagal` *love in the crush sense*; `zuzuzuxogoven` *Sushi-Coffee* | **x** ≈ plus |
-| lexical kind | one conventional kind already closed as a single lexicon entry | `zohohulabedel` *bedroom*; `zunowel` *sunflower* | join letter instead of **x** |
-
-`zazawan zululon` is two people; `zazawaxululon` is one person. A frequent shop mashup is still productive **`x`**; a fossil kind is one lexicon stem (hear one entry, not a dropped **`x`**).
-
-**Compare with:** a property on a host uses `/ɡ/` (or `/w/`); a list uses a [join](joins.md).
-
-**Related form:** who does / what is used / who undergoes / who relates uses a [role compound](roles.md#role-compounds).
-
-### Greeting bid (name **`x`** vowel)
+### How you show up (name **`x`** vowel)
 <a id="greeting-bid"></a>
 
-A [greeting](reference-suffix.md#greeting) is the speaker’s name as a citation (`azawan.`). A [vocative](core.md#vocative) calls someone (`jululon.`). To say **what kind of opening** this is, insert mid-word **`x`** plus one vowel before **-n**. The vowel frames the **encounter**, not the person’s worth.
+A [greeting](reference-suffix.md#greeting) is your own name with a period (`azawan.`). [Calling someone](core.md#vocative) is their name under **`/j/`** (`jululon.`). To say **how** this opening is meant, put **`x`** and one vowel before **-n**. That vowel is about the meeting (stay and talk, one ask, wait, pass by). It is not a grade of the person.
 
-On a **citation**, the bid is how you show up. On a **vocative**, it is how you call them.
+On your own name, it is how you arrive. When you call them, it is how you address them.
 
 > `azawaxan.`
 >
@@ -301,11 +335,11 @@ On a **citation**, the bid is how you show up. On a **vocative**, it is how you 
 | **`…xen`** | queue | *one moment please* | **e** ≈ order (wait in line) |
 | **`…xun`** | pass | *just passing* (acknowledge; don’t open talk) | **u** ≈ undo (lift the talk) |
 
-One overlay per word. A citation bid and a vocative bid may sit together (`azawaxan jululoxon`). **-n** is still the [named](reference-suffix.md#named-n-beginner) ending.
+Only one of these vowels per name. You can still pair your arrival with calling them (`azawaxan jululoxon`). **-n** is still the [named](reference-suffix.md#named-n-beginner) ending.
 
-**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](ability.md#ability) (`vuzunuxel` *can’t sing right now*). On a [need](values.md) it is a value stance. Greeting bids are a **named** citation or **`/j/`** vocative with **-n**.
+**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](ability.md#ability) (`vuzunuxel` *can’t sing right now*). On a [need](values.md) it is a value stance. Greeting bids sit on a **named** hello or a **`/j/`** call, with **-n**.
 
-**Not the same job as:** **`jawavel`** (the *greeting* / wave root as an interjection). The bid sits on the **person** named.
+**Not the same job as:** **`jawavel`** (wave / *hello* as an interjection). The bid sits on the **person**.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -462,169 +496,10 @@ j-Azawan-queue | z-Uhubun | d-doorbell | v-see
 *Azawan — one moment please.* (calling); *Uhubun sees a doorbell.*
 :::
 
-## Advanced
-<a id="advanced"></a>
-
-### Lexical compounds
-<a id="lexical-compounds"></a>
-
-Some kinds English treats as one word (*bedroom*, *friend*) are one lexicon stem in Agalan, not a live **`x`**. The seam between the two published roots is the first member’s reference letter (**l** / **m** / **n** / **r**). You learn each closed kind; you do not build a new one by swapping that letter in for **`x`**.
-
-Write `LEFT` + that letter + `RIGHT` as the **stem**, then the role letter and ending on the whole word, as with any content word.
-
-> `zohohulabedel.`
->
-> z-bedroom
->
-> "a bedroom."
-
-<AgelanInspect text="zohohulabedel." />
-
-The join letter records how the **left** root entered the closed kind (usually **-l** literal). The word’s final **-l** / **-m** / **-n** / **-r** is ordinary reference on the **whole** lemma.
-
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| `zohohulabedel` | house **-l** bed | bedroom | |
-| `zeberelonogol` | person **-l** bond | friend | |
-| `zabogolahalal` | book **-l** school | textbook | |
-
-**Compare with:** still assembling a kind-then-field label uses productive **`x`** (`golovexagal`, shop mashups, multipart names). Lexical closure is for kinds hearers treat as one entry, like English *bedroom*.
-
-### Translation practice
-<a id="translation-practice-advanced"></a>
-
-Short drills for Advanced. Try each item before opening **Show answer**.
-
-**Setting:** a firehouse
-
-**Roots used here:**
-
-| English | Agalan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Ululon* | `ululon` | |
-| *Uhubun* | `uhubun` | |
-| *firehouse* | `zohohulurel` | |
-| *friend* | `zeberelonogol` | |
-| *raincoat* | `zojalanunul` | |
-| *notebook* | `zabogoluwurul` | |
-| *doorbell* | `zobeleladorol` | |
-| *fire* | `urel` | |
-| *see* | `vejel` | `ejel` *eye* |
-| *sit* | `vajul` | `ajul` *chair* |
-| *scream* | `azagal` | |
-| *punch* | `ubunul` | |
-
-#### English → Agalan
-
-**1.** *a firehouse* (lexical kind)
-
-::: details Show answer
-`zohohulurel.`
-
-z-firehouse
-:::
-
-**2.** *a friend* (lexical kind)
-
-::: details Show answer
-`zeberelonogol.`
-
-z-friend
-:::
-
-**3.** *Ululon sits in a firehouse.*
-
-::: details Show answer
-`zululon zohohulurel vajul.`
-
-z-Ululon | z-firehouse | v-sit
-:::
-
-**4.** *Azawan sees a raincoat.*
-
-::: details Show answer
-`zazawan dojalanunul vejel.`
-
-z-Azawan | d-raincoat | v-see
-:::
-
-**5.** *Azawan and Ululon* (two people, not one stem)
-
-::: details Show answer
-`zazawan zululon.`
-
-z-Azawan | z-Ululon
-:::
-
-**6.** *Ululon punches a friend.*
-
-::: details Show answer
-`zululon zeberelonogol vubunul.`
-
-z-Ululon | z-friend | v-punch
-:::
-
-#### Agalan → English
-
-**1.** `zohohulurel.`
-
-::: details Show answer
-
-z-firehouse
-*a firehouse* (lexical kind)
-:::
-
-**2.** `zuhubun zabogoluwurul vejel.`
-
-::: details Show answer
-
-z-Uhubun | z-notebook | v-see
-
-*Uhubun sees a notebook.*
-:::
-
-**3.** `zazawan zobeleladorol vejel.`
-
-::: details Show answer
-
-z-Azawan | z-doorbell | v-see
-
-*Azawan sees a doorbell.*
-:::
-
-**4.** `zeberelonogol zohohulurel vajul.`
-
-::: details Show answer
-
-z-friend | z-firehouse | v-sit
-
-*A friend sits in a firehouse.*
-:::
-
-**5.** `zululon durel vejel.`
-
-::: details Show answer
-
-z-Ululon | d-fire | v-see
-
-*Ululon sees a fire.*
-:::
-
-**6.** `zuhubun vazagal. zeberelonogol vubunul.`
-
-::: details Show answer
-
-z-Uhubun | v-scream | z-friend | v-punch
-
-*Uhubun screams. A friend punches.*
-:::
-
-
 ## See also
 
-- Word-initial **`x`** continue: [core.md](core.md#continue-x)
-- Phonotactics of mid-word **`x`**: [phonology.md](phonology.md#phonotactics)
+- **`x`** at the start of a word (keep going): [core.md](core.md#continue-x)
+- How **`x`** sits in the word shape: [phonology.md](phonology.md#phonotactics)
 - [ability.md](ability.md) / [values.md](values.md) / [roles.md](roles.md) / [numeric-derivation.md](numeric-derivation.md)
-- Greeting bid: [greeting bid](#greeting-bid); bare greeting: [reference-suffix.md](reference-suffix.md#greeting)
-- Named handles vs long titles: [reference-suffix.md](reference-suffix.md#named-handles)
+- Greeting bid: [how you show up](#greeting-bid); bare hello: [reference-suffix.md](reference-suffix.md#greeting)
+- Short office names vs long titles: [reference-suffix.md](reference-suffix.md#named-handles)

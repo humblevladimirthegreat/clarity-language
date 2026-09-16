@@ -283,7 +283,7 @@ English often writes a given name plus family as two words. In Agalan a short mu
 |--------|-----|---------|
 | `zodunaxalanen` | nativized multipart (roots + mid-word **`x`**) | *Odunaxalanen* (*wish*×*guidance*: one person) |
 | `dodunaxalanen`, `bodunaxalanen` | same name in other slots | one named place / person as object or argument |
-| `zuzuzuxogoven`, `zuzuzuxogovexadedan` | sense / shop label (two or more lexicon roots) | *Sushi-Coffee*; *Sushi-Coffee-Tea* |
+| `zogovexadedan`, `zogovexadedaxunuden` | sense / shop label (two or more lexicon roots) | *Coffee-Tea*; *Coffee-Tea-Water* |
 
 A nativized loan (adapted Agalan root + ordinary ending) uses the same four last letters as any content word. A **lexical compound** is also one slot-filler: one stem, not mid-word **`x`** (`zohohulabedel` *bedroom*).
 

@@ -260,14 +260,14 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 | Family | Example Agalan | Morph gloss |
 |--------|-----------------|-------------|
 | Ordinary / name compound | `jubunexunowen` | `j-Ubune-x-Unowen` |
-| Ordinary (three roots) | `zuzuzuxogovexadedan` | `z-Uzuzu-x-Ogove-x-Adedan` |
+| Ordinary (three roots) | `zogovexadedaxunuden` | `z-Ogove-x-Adeda-x-Unuden` |
 | Ability / values stance | `vawalaxel` | `v-walk-unable-temporary` |
 | Values stance on need | `holozoxom` | `h-competence-motive-internal` |
 | Role compound | `zaxuvugul` | `z-agent-x-fight` |
 | Span open / close | `hexal` … `xuxul` | `h-aside-x-multi` · … · `x-span-close` |
 | Number / enumeration | `x#e-` | `x-starting-with` |
 
-For **phrasal proper names**, gloss each piece (`j-Ubune-x-Unowen`, `z-Uzuzu-x-Ogove-x-Adedan`). Mid-word **`x`** stays visible as `-x-`. Do not put Agalan letters in the english slot, except [mention interiors](#span-interiors).
+For **phrasal proper names**, gloss each piece (`j-Ubune-x-Unowen`, `z-Ogove-x-Adeda-x-Unuden`). Mid-word **`x`** stays visible as `-x-`. Do not put Agalan letters in the english slot, except [mention interiors](#span-interiors).
 
 ### Mention and opaque interiors
 <a id="span-interiors"></a>
