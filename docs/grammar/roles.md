@@ -374,6 +374,8 @@ English *on Azawan’s left of the tree* needs both a facing person and a landma
 
 Bare compass + `/b/` is a region on that heading of the landmark (`gewezel berel` *west of the tree*).
 
+**Compare with:** locative *at* / *on* / *inside* name how the figure sits relative to the landmark ([locative relations](core.md#locative-relations)), not a compass heading.
+
 | Agalan | Use | English |
 |--------|-----|---------|
 | Bare DIR | compass / gravity | `gewezel` *west*; `gubal` *up* |

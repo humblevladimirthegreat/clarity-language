@@ -116,6 +116,7 @@ function overlayReading(overlay: OverlayRow): LexReading {
   if (overlay.kind === "join_relation") return "joinRelation";
   if (overlay.kind === "ability") return "ability";
   if (overlay.kind === "need") return "value";
+  if (overlay.kind === "locative") return "locative";
   return "mood";
 }
 

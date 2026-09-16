@@ -334,6 +334,9 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   if (word.reading === "mood") {
     return { line: "closed mood", href: "commentary.html" };
   }
+  if (word.reading === "locative") {
+    return { line: "locative relation", href: "core.html#locative-relations" };
+  }
   if (word.reading === "joinAct" || word.reading === "joinRelation") {
     return { line: "join extra", href: "join-extras.html" };
   }

@@ -129,6 +129,13 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("welem", "w-very");
     expectLine("gelem", "g-big");
     expectLine("hogorem", "h-inside");
+    expectLine("hubuhum", "h-at");
+    expectLine("haladem", "h-on");
+    expectLine("hebarum", "h-from");
+    expectLine("hobowam", "h-toward");
+    expectLine("hezewum", "h-through");
+    expectLine("hejegem", "h-out-of");
+    expectLine("hazadum", "h-between");
     expectLine("zejel", "z-eye");
     expectLine("hozal", "h-hash");
     expectLine("jam", "j-soft-statement");

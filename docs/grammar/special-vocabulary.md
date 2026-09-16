@@ -78,7 +78,7 @@ Unnumbered `zuzebum` is just *a problem*, not a candidate in a set — write **`
 ### Sense-form overlays
 <a id="sense-form"></a>
 
-Emotion compose already used **`hogegam`** (HIGH arousal) next to **`zogegal`** (*an ocean wave*). Some published roots keep a **fixed special reading** under one part of speech: spell that published root plus [reference ending](reference-suffix.md); the PoS chooses the overlay. Emotion ACT / LOCUS in the examples above take overlay **-m**. Overlay `sense_form` is **root + ending** (or a vowel-series join stem), not a productive mid-word **`x`** word. Each overlay row has **`kind`** and **`gloss`**.
+Emotion compose already used **`hogegam`** (HIGH arousal) next to **`zogegal`** (*an ocean wave*). Some published roots keep a **fixed special reading** under one part of speech: spell that published root plus [reference ending](reference-suffix.md); the PoS chooses the overlay. Emotion ACT / LOCUS in the examples above take overlay **-m**. Overlay `sense_form` is **root + ending** (or a vowel-series join stem), not a productive mid-word **`x`** word. Each overlay row has **`kind`** and **`gloss`**. Place relations (*inside*, *at*, *on*, …) are the same class on `/h/` and `/ɡ/` ([locative relations](core.md#locative-relations)).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

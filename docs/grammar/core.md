@@ -478,6 +478,38 @@ A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). A further plain adj
 
 You can chain more complex units onto those extra nouns. Two complex adjectives on the same first noun need another sentence. Several `/h/` units on one verb are fine (each plain `/h/`, or `/h/`+`/b/` together, counts as one). An unhosted recipient `/b/` may follow a finished pair (`hogorem bohohul bululon`); it still must not sit immediately after the relation word.
 
+### Locative relations
+<a id="locative-relations"></a>
+
+Beginner already used *inside*: a place relation on `/h/` or `/ɡ/`, then the landmark in `/b/` right after it. The same pair names the rest of everyday place talk. Pick the relation root; keep the pair together. Several pairs on one verb are several `/h/` units (*from* one landmark *toward* another). *Between* takes **two** landmarks as a [join](joins.md) in `/b/`. (cue: each root’s picture is in **Cue**; `/b/` is the place, not a recipient)
+
+> `zazawan vawalal hebarum bazadol hobowam budunul.`
+>
+> z-Azawan | v-walk | h-from | b-station | h-toward | b-train
+>
+> "Azawan walks from a station toward a train."
+
+> `zululon vajul hazadum budunul bazadol bal.`
+>
+> z-Ululon | v-sit | h-between | b-train | b-station | b-and
+>
+> "Ululon sits between a train and a station."
+
+The same roots stay ordinary pictures under other letters (`zubuhul` *a pushpin*; `vebarul` *to depart*).
+
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`hogorem` / `gogorem`** | containment | *inside* | `ogorel` *correct* | ⭕: being inside the boundary |
+| **`hubuhum` / `gubuhum`** | coincidence with a point | *at* | `ubuhul` *pushpin* | 📌: the pin marks the spot |
+| **`haladem` / `galadem`** | surface / contact | *on* | `aladel` *plate* | 🍽️: rest on a supporting face |
+| **`hebarum` / `gebarum`** | source of a path | *from* | `ebarul` *departure* | 🛫: leaving the ground |
+| **`hobowam` / `gobowam`** | goal of a path | *toward* | `obowal` *bow-arrow* | 🏹: the arrow heads for the target |
+| **`hezewum` / `gezewum`** | traversal | *through* | `ezewul` *sewing-needle* | 🪡: the needle goes through cloth |
+| **`hejegem` / `gejegem`** | interior to exterior | *out of* | `ejegel` *eject* | ⏏️: pushed out of the enclosure |
+| **`hazadum` / `gazadum`** | figure in the layer of two landmarks | *between* | `azadul` *sandwich* | 🥪: the filling sits between two sides |
+
+**Compare with:** unhosted `/b/` is still the recipient ([extra nouns](#extra-nouns)), not a place. *Toward* is heading, not completed *into* (*inside*). Ordinary `vebarul` is *to depart*; `hebarum` is the source relation. *Between* is one relation plus a `/b/` [join](joins.md) of two landmarks, not two relation words.
+
 ### Writing and speech rhythm (periods)
 <a id="orthography-and-prosody-periods"></a>
 
@@ -556,6 +588,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vejel` |
 | *tell* | `vezehel` |
 | *run* | `vurunul` |
+| *walk* | `vawalal` |
 | *sneak* | `vazanal` |
 | *scream* | `vazagal` |
 | *punch* | `vubunul` |
@@ -567,6 +600,15 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *next* | `xuvumul` |
 | *however* | `xezebal` |
 | *meanwhile* | `xanelol` |
+| *chair* | `ajul` |
+| *inside* | `hogorem` |
+| *at* | `hubuhum` |
+| *on* | `haladem` |
+| *from* | `hebarum` |
+| *toward* | `hobowam` |
+| *through* | `hezewum` |
+| *out of* | `hejegem` |
+| *between* | `hazadum` |
 
 #### English → Agalan
 
@@ -632,6 +674,30 @@ z-Azawan | v-sit | x-next | z-Ululon | v-run
 `zazawan vurunul hurugum badorol zululon dazawan vubunul hurugum badorol zuhubun vazagal.`
 
 z-Azawan | v-run | h-because | b-next-clause | z-Ululon | d-Azawan | v-punch | h-because | b-next-clause | z-Uhubun | v-scream
+:::
+
+**9.** *Azawan sits on a chair.*
+
+::: details Show answer
+`zazawan vajul haladem bajul.`
+
+z-Azawan | v-sit | h-on | b-chair
+:::
+
+**10.** *Ululon walks from a station toward a train.*
+
+::: details Show answer
+`zululon vawalal hebarum bazadol hobowam budunul.`
+
+z-Ululon | v-walk | h-from | b-station | h-toward | b-train
+:::
+
+**11.** *Uhubun sits between a train and a station.*
+
+::: details Show answer
+`zuhubun vajul hazadum budunul bazadol bal.`
+
+z-Uhubun | v-sit | h-between | b-train | b-station | b-and
 :::
 
 #### Agalan → English
@@ -706,6 +772,33 @@ z-Ululon | v-sneak | x-however | z-Azawan | v-run
 z-Uhubun | v-scream | h-because | b-next-clause | z-Azawan | v-departure | h-because | b-next-clause | z-Ululon | d-Azawan | v-punch
 
 *Uhubun screams because Azawan departs because Ululon punches Azawan.*
+:::
+
+**9.** `zuhubun vazanul hubuhum bazadol.`
+
+::: details Show answer
+
+z-Uhubun | v-stand | h-at | b-station
+
+*Uhubun stands at a station.*
+:::
+
+**10.** `zazawan vurunul hejegem budunul.`
+
+::: details Show answer
+
+z-Azawan | v-run | h-out-of | b-train
+
+*Azawan runs out of a train.*
+:::
+
+**11.** `zululon vawalal hezewum bazadol.`
+
+::: details Show answer
+
+z-Ululon | v-walk | h-through | b-station
+
+*Ululon walks through a station.*
 :::
 
 ## Advanced

@@ -339,6 +339,12 @@ Hosted: noun bolted onto a complex `/ɡ/` or `/h/`. Unhosted: recipient or addre
 
 [Core](core.md#extra-nouns)
 
+### Locative relation
+
+Place how (*inside*, *at*, *on*, *from*, *toward*, *through*, *out of*, *between*) as hosted `/h/` or `/ɡ/` plus landmark `/b/`.
+
+[Core](core.md#locative-relations)
+
 ### Factivity
 
 Whether **IF** vs **BECAUSE** treats the dependent as asserted.

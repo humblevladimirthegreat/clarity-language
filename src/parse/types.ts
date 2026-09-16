@@ -112,6 +112,7 @@ export type LexReading =
   | "greeting"
   | "restrictor"
   | "mood"
+  | "locative"
   | "join"
   | "joinAct"
   | "joinRelation"

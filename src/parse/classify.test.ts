@@ -113,6 +113,21 @@ describe("classify", () => {
     assert.equal(word.overlay!.senseForm, "egeram");
   });
 
+  it("locative overlays on /h/ and ordinary picture on other letters", () => {
+    const inside = expectReading("hogorem", "locative");
+    assert.ok(inside.overlay);
+    assert.equal(inside.overlay!.kind, "locative");
+    assert.equal(inside.overlay!.gloss, "inside");
+    const at = expectReading("hubuhum", "locative");
+    assert.equal(at.overlay!.gloss, "at");
+    const toward = expectReading("hobowam", "locative");
+    assert.equal(toward.overlay!.gloss, "toward");
+    const between = expectReading("gazadum", "locative");
+    assert.equal(between.overlay!.gloss, "between");
+    const pin = expectReading("zubuhul", "ordinary");
+    assert.equal(pin.overlay, undefined);
+  });
+
   it("hosted judgment bars Mine and Everyone", () => {
     const mine = expectReading("zuroron", "mood");
     assert.ok(mine.overlay);

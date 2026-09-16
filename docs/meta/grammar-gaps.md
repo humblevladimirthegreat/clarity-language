@@ -23,7 +23,7 @@ No new clause types. Unblocks locative talk and later relatives / paths.
 
 - [x] **1. Ditransitive / recipient.** Unhosted `/b/` (not immediately after `/ɡ/` or `/h/`) is the verb’s recipient / addressee; theme stays `/d/` (including **`adoro`**). Taught in [core extra nouns](../grammar/core.md#extra-nouns). Place goals stay item 2.
 
-- [ ] **2. Locative relation set (thin).** Architecture is `/h/` or `/ɡ/` + `/b/` ([core extra nouns](../grammar/core.md#extra-nouns); landmark on DIR in [roles.md](../grammar/roles.md#viewpoint-laterals)). Taught locative is mainly *inside* (`ogore` overlay). Publish and teach a small set: *at* (point), *on* (surface / contact), *from* (source), *toward* (goal), *through* (path), *out of*, *between* ( `/b/` join of two landmarks). Prefer overlays on existing roots ([closed forms follow the lexicon](parser-pipeline.md#closed-forms-follow-lexicon)). **Blocks:** spatial *from–to* (item 9); *the house in which* (item 11).
+- [x] **2. Locative relation set (thin).** Hosted `/h/` or `/ɡ/` + `/b/`. Inventory on [core locative relations](../grammar/core.md#locative-relations) (`ogore` *inside*, `ubuhu` *at*, `alade` *on*, `ebaru` *from*, `obowa` *toward*, `ezewu` *through*, `ejege` *out of*, `azadu` *between*). **Unblocks:** spatial *from–to* (item 9); *the house in which* (item 11).
 
 - [ ] **3. Clause instrument *with* (thin).** Role **`exROOT`** [names](../grammar/roles.md) *the hammer used*. *Writes with a hammer* as an adjunct is untaught. Add a means relation (`/h/` + `/b/`) or teach the tool as manner `/h/` of that root. Compare with join-relation *including* / *with* ([join-extras.md](../grammar/join-extras.md#join-relations)), which is set membership, not means.
 

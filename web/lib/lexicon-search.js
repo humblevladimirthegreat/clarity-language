@@ -1898,7 +1898,7 @@ var OVERLAY_KINDS = [
   "join_act",
   "join_relation",
   "evidential",
-  "comment",
+  "may",
   "notional",
   "plan",
   "predict",
@@ -1909,7 +1909,8 @@ var OVERLAY_KINDS = [
   "emotion_act",
   "emotion_locus",
   "identity",
-  "benchmark"
+  "benchmark",
+  "locative"
 ];
 var OVERLAY_KIND_SET = new Set(OVERLAY_KINDS);
 function isJoinOverlayKind(kind) {
