@@ -272,7 +272,7 @@ Resume with a different PoS letter than the antecedent.
 
 ### Dependent clause / **`adoro`**
 
-Full sentence after **`adoro`** (last in the host slot).
+Full sentence after **`adoro`** (last in the host slot). Inner **`jol`** / **`jom`** is English *whether* / *who*.
 
 [Core](core.md#dependent-clauses)
 
@@ -342,7 +342,7 @@ Hosted: noun bolted onto a complex `/ɡ/` or `/h/`. Unhosted: recipient or addre
 
 ### Locative relation
 
-Place how (*inside*, *at*, *on*, *from*, *toward*, *through*, *out of*, *between*) as hosted `/h/` or `/ɡ/` plus landmark `/b/`.
+Place how (*inside*, *at*, *on*, *from*, *toward*, *through*, *out of*, *between*) as hosted `/h/` or `/ɡ/` plus landmark `/b/`. A *from A to B* path is two of those units (source, then goal).
 
 [Core](core.md#locative-relations)
 

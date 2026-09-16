@@ -1,6 +1,6 @@
 # Agalan core grammar
 
-How to read and write an Agalan **sentence**: who does what, word shape, default order, how a speech move starts (`/j/` vs `/x/`), and a next sentence after **`adoro`**.
+How to read and write an Agalan **sentence**: who does what, word shape, default order, how a speech move starts (`/j/` vs `/x/`), and a next sentence after **`adoro`** (*that* / *whether* / *because*).
 
 ## Beginner
 <a id="beginner"></a>
@@ -254,6 +254,22 @@ The dependent may open with its own `/j/` words, or keep the main sentence’s s
 >
 > "Azawan tells Ululon that the dog runs."
 
+English *whether* is that same object slot, with a **question** after **`adoro`**. The outer sentence stays a statement. The inner sentence opens with **`jol`**. End the whole stretch with a period (the outer act is still a claim).
+
+> `zazawan vejel dadorol jol zululon vawalal.`
+>
+> z-Azawan | v-see | d-next-clause | j-question | z-Ululon | v-walk
+>
+> "Azawan sees whether Ululon walks."
+
+A fill-ask inside is *who* / *what*, still after **`adoro`**:
+
+> `zazawan vejel dadorol jol zar vawalal.`
+>
+> z-Azawan | v-see | d-next-clause | j-question | z-who | v-walk
+>
+> "Azawan sees who walks."
+
 *Because* / *if* and similar use `/h/` + `/b/` **`adoro`**. Keep that pair together, **last in the main sentence** (**`adoro`** last). The metaphorical ending on the `/h/` word is always **-m**.
 
 > `zazawan vuzunul hurugum badorol zululon vawalal.`
@@ -288,7 +304,7 @@ When English puts a **noun** after *despite* (*despite Ululon*), keep the same *
 
 Ordinary `zezebal` is still *a zebra*.
 
-**Compare with:** *although Ululon walks* is **`hezebam badorol`** plus the next sentence. Discourse *however* is **`xezebal`** ([continue](#continue-x)).
+**Compare with:** *although Ululon walks* is **`hezebam badorol`** plus the next sentence. Discourse *however* is **`xezebal`** ([continue](#continue-x)). *Whether Ululon walks* is **`adoro`** plus inner **`jol`**, not **`hadorom`** (*if* is a condition, not polar ignorance).
 
 The verb has no past or future letter. *Before* / *after* / *while* / *until* place this event relative to the next sentence.
 
@@ -359,6 +375,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
 | *inside* | `hogorem` | `ogorel` *correct* | ⭕: being inside the boundary |
 | *next clause* | `adorol` | `adorol` *door* | 🚪: the next sentence walks through |
+| *question* | `jol` | | |
 | *because* | `hurugum` | `urugul` *brick* | 🧱: the cause is what the result sits on |
 | *although* | `hezebam` | `ezebal` *zebra* | 🦓: two stripes, still one animal |
 | *therefore* | `xezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
@@ -453,6 +470,14 @@ z-Azawan | v-write | h-in-exchange-for | b-money-bag
 `zazawan hudagam bululon vezehel.`
 
 z-Azawan | h-on-behalf-of | b-Ululon | v-tell
+:::
+
+**12.** *Azawan sees whether Ululon sits.*
+
+::: details Show answer
+`zazawan vejel dadorol jol zululon vajul.`
+
+z-Azawan | v-see | d-next-clause | j-question | z-Ululon | v-sit
 :::
 
 #### Agalan → English
@@ -553,6 +578,15 @@ z-Azawan | v-write | h-in-exchange-for | b-money-bag
 z-Azawan | h-on-behalf-of | b-Ululon | v-tell
 
 *Azawan tells on behalf of Ululon.*
+:::
+
+**12.** `zuhubun vejel dadorol jol zazawan vazanul.`
+
+::: details Show answer
+
+z-Uhubun | v-see | d-next-clause | j-question | z-Azawan | v-stand
+
+*Uhubun sees whether Azawan stands.*
 :::
 
 ## Intermediate
@@ -661,7 +695,33 @@ The same roots stay ordinary pictures under other letters (`zubuhul` *a pushpin*
 | **`hejegem` / `gejegem`** | interior to exterior | *out of* | `ejegel` *eject* | ⏏️: pushed out of the enclosure |
 | **`hazadum` / `gazadum`** | figure in the layer of two landmarks | *between* | `azadul` *sandwich* | 🥪: the filling sits between two sides |
 
-**Compare with:** unhosted `/b/` is still the recipient ([extra nouns](#extra-nouns)), not a place. *Toward* is heading, not completed *into* (*inside*). Ordinary `vebarul` is *to depart*; `hebarum` is the source relation. *Between* is one relation plus a `/b/` [join](joins.md) of two landmarks, not two relation words. *Using* a tool is [means](#means) (`hahanam`), not a place. *Like* is [simile](#similative) (`hurorom`), not a place. *For a hammer* as a swap is [exchange](#exchange) (`huhanem`). *On behalf of Ululon* is [proxy](#proxy) (`hudagam`). English *of* that is not a place is [of relations](#of-relations).
+<a id="spatial-path"></a>
+
+A **place path** (*from A to B*, *out of the house into the train*) is still those pairs: **two `/h/` + `/b/` units** on one verb. Write the **source** first, then the **goal**. Heading vs arrival is which **goal** root you pick, not a new relation.
+
+> `zazawan vawalal hebarum bohohul hubuhum bazadol.`
+>
+> z-Azawan | v-walk | h-from | b-house | h-at | b-station
+>
+> "Azawan walks from a house to a station."
+
+> `zululon vurunul hejegem bohohul hogorem budunul.`
+>
+> z-Ululon | v-run | h-out-of | b-house | h-inside | b-train
+>
+> "Ululon runs out of a house into a train."
+
+| English | How |
+|---------|-----|
+| *from A toward B* (heading; arrival open) | **`hebarum`** A **`hobowam`** B |
+| *from A to B* (reached a point) | **`hebarum`** A **`hubuhum`** B |
+| *from A into B* (ended inside) | **`hebarum`** A **`hogorem`** B |
+| *out of A into B* | **`hejegem`** A **`hogorem`** B |
+| *through C* on that path | add **`hezewum`** C as another `/h/` unit |
+
+On a noun, the same roots stay `/ɡ/` (`gebarum bazadol gubuhum budunul` *from a station to a train*).
+
+**Compare with:** unhosted `/b/` is still the recipient ([extra nouns](#extra-nouns)), not a place. *Toward* is heading, not completed *into* (*inside*). Ordinary `vebarul` is *to depart*; `hebarum` is the source relation. *Between* is one relation plus a `/b/` [join](joins.md) of two landmarks, not two relation words. Numeric *from 3 to 5* is a [range](numbers-applied.md#ranges) (number endpoints plus a SHARED continuum), not this place stacking. *Using* a tool is [means](#means) (`hahanam`), not a place. *Like* is [simile](#similative) (`hurorom`), not a place. *For a hammer* as a swap is [exchange](#exchange) (`huhanem`). *On behalf of Ululon* is [proxy](#proxy) (`hudagam`). English *of* that is not a place is [of relations](#of-relations).
 
 ### Of relations (*part of*, *cup of*, *made of*, *from*)
 <a id="of-relations"></a>
@@ -797,6 +857,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *however* | `xezebal` |
 | *meanwhile* | `xanelol` |
 | *chair* | `ajul` |
+| *house* | `ohohul` |
 | *inside* | `hogorem` |
 | *at* | `hubuhum` |
 | *on* | `haladem` |
@@ -894,6 +955,14 @@ z-Ululon | v-walk | h-from | b-station | h-toward | b-train
 `zuhubun vajul hazadum budunul bazadol bal.`
 
 z-Uhubun | v-sit | h-between | b-train | b-station | b-and
+:::
+
+**12.** *Azawan runs out of a house into a train.*
+
+::: details Show answer
+`zazawan vurunul hejegem bohohul hogorem budunul.`
+
+z-Azawan | v-run | h-out-of | b-house | h-inside | b-train
 :::
 
 #### Agalan → English
@@ -995,6 +1064,15 @@ z-Azawan | v-run | h-out-of | b-train
 z-Ululon | v-walk | h-through | b-station
 
 *Ululon walks through a station.*
+:::
+
+**12.** `zululon vawalal hebarum bazadol hubuhum budunul.`
+
+::: details Show answer
+
+z-Ululon | v-walk | h-from | b-station | h-at | b-train
+
+*Ululon walks from a station to a train.*
 :::
 
 ## Advanced

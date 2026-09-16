@@ -145,7 +145,7 @@ Join vowels (Beginner already used ranked **`e`** for people):
 | **`ue`** | directed reverse path (spoken order = path) | *from 5 to 3* (`z+5 z+3 zuel gumel`) | **u** undo + **e** order |
 | **`ua`** | complement on the line | *outside 3–5* (`z+3 z+5 zual gumel`) | **u** undo + **a** add |
 
-**Compare with:** `zazawan zululon zel gomonam` (*Azawan is more challenging than Ululon*) ranks **people** on a scale. `z+3 z+5 zel gumel` is a **band** on a continuum.
+**Compare with:** `zazawan zululon zel gomonam` (*Azawan is more challenging than Ululon*) ranks **people** on a scale. `z+3 z+5 zel gumel` is a **band** on a continuum. Place *from a station to a train* is two [locative](core.md#spatial-path) `/h/` + `/b/` units, not this fence.
 
 **Not the same job as:** bare **`z+3 z+5 zel`** (*prefer 3 over 5*). Without the SHARED continuum, two number conjuncts are an ordinary join.
 

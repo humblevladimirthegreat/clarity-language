@@ -39,9 +39,9 @@ No new clause types. Unblocks locative talk and later relatives / paths.
 
 ## Wave 2 — small constructions on Wave 1
 
-- [ ] **9. Spatial path *from A to B* (thin → small grammar).** Numeric *from 3 to 5* is a [range](../grammar/numbers-applied.md#ranges). Place *from Paris to London* / *out of the house into the street* is untaught. **Needs:** item 2 (*from* / *toward*). Prefer two `/h/` + `/b/` units, or a documented reuse of rank/range **only if** places are legal endpoints (they are not, today).
+- [x] **9. Spatial path *from A to B* (thin).** Two hosted locative `/h/` + `/b/` units (source, then goal). Heading = **`hobowam`**; reached point = **`hubuhum`**; ended inside = **`hogorem`**; *out of…into…* = **`hejegem`** then **`hogorem`**. Taught in [core spatial path](../grammar/core.md#spatial-path). Numeric *from 3 to 5* stays [ranges](../grammar/numbers-applied.md#ranges).
 
-- [ ] **10. Embedded *whether* (thin).** Matrix *yes/no* is **`jol`**. *Know whether Ululon walks* is only “**`adoro`** + question act word.” Teach that (or a dedicated complementizer) on [core.md](../grammar/core.md#dependent-clauses) / [questions.md](../grammar/questions.md). **Needs:** existing **`adoro`** + speech act; not item 2.
+- [x] **10. Embedded *whether* (thin).** **`adoro`** + inner **`jol`** / **`jom`** (outer act stays a statement). Taught in [core dependent clauses](../grammar/core.md#dependent-clauses) / [questions](../grammar/questions.md#embedded-whether). Not **`hadorom`** (*if*).
 
 ## Wave 3 — new clause types
 
