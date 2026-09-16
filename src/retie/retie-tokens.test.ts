@@ -105,6 +105,12 @@ describe("rewriteMarkdown mixed English", () => {
     assert.equal(text, "call (hadorom).");
   });
 
+  it("does not peel writing-span brackets", () => {
+    assert.deepEqual(peelChunk("d[azawan]"), { prefix: "", core: "d[azawan]", suffix: "" });
+    assert.deepEqual(peelChunk("d[azawan]."), { prefix: "", core: "d[azawan]", suffix: "." });
+    assert.deepEqual(peelChunk("d<sushi>"), { prefix: "", core: "d<sushi>", suffix: "" });
+  });
+
   it("reties fenced code without eating the closer", () => {
     const map = mapOf(["azawa", "ululo"]);
     const input = "before\n```\nzazawan\n```\nafter\n";
@@ -121,6 +127,44 @@ describe("rebuild round-trip", () => {
     assert.equal(rewriteParsedWord(parseWord("zuzuzuxogoven"), map), "zazazaxogoven");
     assert.equal(rewriteParsedWord(parseWord("zolovexrabal"), map), "zelevexrabal");
     assert.equal(rewriteParsedWord(parseWord("zazawanx"), map), "zululonx");
+  });
+});
+
+describe("writing spans", () => {
+  const map = mapOf(["azawa", "ululo"], ["uzunu", "ababa"], ["uwuru", "oworo"]);
+
+  it("reties a one-word cite in backticks", () => {
+    const { text, changes } = rewriteMarkdown("see `d[azawan]` please", map);
+    assert.equal(text, "see `d[ululon]` please");
+    assert.deepEqual(
+      changes.map((c) => `${c.from}→${c.to}`),
+      ["d[azawan]→d[ululon]"],
+    );
+  });
+
+  it("reties multi-word interiors and keeps the fence", () => {
+    const { text } = rewriteMarkdown("quote `d~[zazawan vuzunul]` here", map);
+    assert.equal(text, "quote `d~[zululon vababal]` here");
+  });
+
+  it("leaves resume and opaque payloads", () => {
+    const { text } = rewriteMarkdown("`d[=]` and `d<sushi>` and `d@[Hamlet]`", map);
+    assert.equal(text, "`d[=]` and `d<sushi>` and `d@[Hamlet]`");
+  });
+
+  it("reties nested cite interiors and leaves the opaque island", () => {
+    const { text } = rewriteMarkdown("`d[ vuwurul d<]> ]`", map);
+    assert.equal(text, "`d[ voworol d<]> ]`");
+  });
+
+  it("reties spoken span interiors but not the open word", () => {
+    const { text } = rewriteMarkdown("`daxal zazawan xuxul`", map);
+    assert.equal(text, "`daxal zululon xuxul`");
+  });
+
+  it("does not rewrite HTML comments", () => {
+    const { text } = rewriteMarkdown("before <!-- `zazawan` --> after `zazawan`", map);
+    assert.equal(text, "before <!-- `zazawan` --> after `zululon`");
   });
 });
 

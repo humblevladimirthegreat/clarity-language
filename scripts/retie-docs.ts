@@ -1,5 +1,6 @@
 /**
- * Retie Agalan tokens in docs/grammar/ from the map dumped by convert-word --lexicon.
+ * Retie Agalan tokens in docs/grammar/, docs/examples/, and lexicon-compounds.csv
+ * from the map dumped by convert-word --lexicon.
  *
  * Run: npm run retie-docs
  *      npm run retie-docs -- --write
@@ -9,11 +10,17 @@ import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "
 import { dirname, join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 
+import {
+  parseCompoundCsv,
+  retieCompoundRows,
+  serializeCompoundCsv,
+} from "../src/lexicon-compounds.js";
 import { parseRetieMapJson, RETIE_MAP_RELATIVE_PATH } from "../src/retie/map.js";
 import { lineNumberAt, rewriteMarkdown } from "../src/retie/tokens.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
-const grammarDir = join(rootDir, "docs", "grammar");
+const markdownDirs = [join(rootDir, "docs", "grammar"), join(rootDir, "docs", "examples")];
+const compoundsPath = join(rootDir, "data", "lexicon-compounds.csv");
 
 type CliOptions = {
   mapPath: string;
@@ -52,10 +59,14 @@ function printUsage(): void {
   console.error(`Usage: npm run retie-docs -- [--map PATH] [--write]
 
 Reads ${RETIE_MAP_RELATIVE_PATH} (from convert-word --lexicon) and reties
-Agalan tokens in docs/grammar/. Default is a dry-run.`);
+Agalan tokens in docs/grammar/, docs/examples/, and data/lexicon-compounds.csv.
+Default is a dry-run.`);
 }
 
-function listGrammarMarkdown(dir: string): string[] {
+function listMarkdown(dir: string): string[] {
+  if (!existsSync(dir)) {
+    return [];
+  }
   const out: string[] = [];
   for (const name of readdirSync(dir)) {
     if (name === ".vitepress" || name === "public") {
@@ -63,7 +74,7 @@ function listGrammarMarkdown(dir: string): string[] {
     }
     const full = join(dir, name);
     if (statSync(full).isDirectory()) {
-      out.push(...listGrammarMarkdown(full));
+      out.push(...listMarkdown(full));
     } else if (name.endsWith(".md")) {
       out.push(full);
     }
@@ -80,7 +91,7 @@ function main(): void {
   }
 
   const map = parseRetieMapJson(readFileSync(options.mapPath, "utf8"));
-  const files = listGrammarMarkdown(grammarDir);
+  const files = markdownDirs.flatMap((dir) => listMarkdown(dir));
   let total = 0;
   let filesChanged = 0;
 
@@ -99,6 +110,20 @@ function main(): void {
     }
     if (options.write) {
       writeFileSync(file, text);
+    }
+  }
+
+  const compoundOriginal = readFileSync(compoundsPath, "utf8");
+  const { rows, changes: compoundChanges } = retieCompoundRows(parseCompoundCsv(compoundOriginal), map);
+  if (compoundChanges.length > 0) {
+    filesChanged += 1;
+    total += compoundChanges.length;
+    const rel = relative(rootDir, compoundsPath);
+    for (const change of compoundChanges) {
+      console.log(`${rel}:${change.row}  ${change.field} ${change.from} → ${change.to}`);
+    }
+    if (options.write) {
+      writeFileSync(compoundsPath, serializeCompoundCsv(rows));
     }
   }
 

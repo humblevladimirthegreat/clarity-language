@@ -1,4 +1,30 @@
-import type { MorphWord, MorphWordFamily } from "../parse/types.js";
+import { parseWord } from "../parse/word.js";
+import { writingSpanEnd } from "../parse/span-scan.js";
+import type { MorphWord, MorphWordFamily, WritingBracket } from "../parse/types.js";
+import { isClarityRootShape } from "../word-converter.js";
+
+const SPAN_CLOSE: Record<WritingBracket, string> = {
+  "[": "]",
+  "{": "}",
+  "(": ")",
+  "<": ">",
+};
+
+/** Rewrite one orthographic word. Never substitutes inside a larger token. */
+export function retieCore(core: string, map: ReadonlyMap<string, string>): string | null {
+  if (!core || map.size === 0) {
+    return null;
+  }
+  const bare = map.get(core);
+  if (bare && isClarityRootShape(core)) {
+    return bare === core ? null : bare;
+  }
+  try {
+    return rewriteParsedWord(parseWord(core), map);
+  } catch {
+    return null;
+  }
+}
 
 function posPrefix(word: MorphWord): string {
   if (!word.pos) {
@@ -21,6 +47,9 @@ function rootsChanged(before: string[], after: string[]): boolean {
 
 export function rewriteParsedWord(word: MorphWord, map: ReadonlyMap<string, string>): string | null {
   const family = word.family;
+  if (family.kind === "writingSpan") {
+    return rewriteWritingSpan(word, family, map);
+  }
   if (family.kind === "content") {
     const next = mapRoots(family.roots, map);
     if (!rootsChanged(family.roots, next)) {
@@ -39,6 +68,54 @@ export function rewriteParsedWord(word: MorphWord, map: ReadonlyMap<string, stri
     return null;
   }
   return rebuildX(word, family, left, family.rightRoots ? right : undefined);
+}
+
+function rewriteWritingSpan(
+  word: MorphWord,
+  family: Extract<MorphWordFamily, { kind: "writingSpan" }>,
+  map: ReadonlyMap<string, string>,
+): string | null {
+  if (family.anaphor || family.bracket === "<") {
+    return null;
+  }
+  const nextPayload = rewriteSpanPayload(family.payload, map);
+  if (nextPayload === family.payload) {
+    return null;
+  }
+  return replaceSpanPayload(word.raw, family.bracket, nextPayload);
+}
+
+function rewriteSpanPayload(payload: string, map: ReadonlyMap<string, string>): string {
+  let out = "";
+  let i = 0;
+  while (i < payload.length) {
+    if (/\s/.test(payload[i]!)) {
+      out += payload[i];
+      i += 1;
+      continue;
+    }
+    const spanEnd = writingSpanEnd(payload, i);
+    let end = spanEnd ?? i;
+    if (spanEnd === undefined) {
+      while (end < payload.length && !/\s/.test(payload[end]!)) {
+        end += 1;
+      }
+    }
+    const chunk = payload.slice(i, end);
+    out += retieCore(chunk, map) ?? chunk;
+    i = end;
+  }
+  return out;
+}
+
+function replaceSpanPayload(raw: string, bracket: WritingBracket, payload: string): string {
+  const close = SPAN_CLOSE[bracket];
+  const openAt = raw.indexOf(bracket);
+  const closeAt = raw.lastIndexOf(close);
+  if (openAt < 0 || closeAt <= openAt) {
+    return raw;
+  }
+  return `${raw.slice(0, openAt + 1)}${payload}${raw.slice(closeAt)}`;
 }
 
 function rebuildX(

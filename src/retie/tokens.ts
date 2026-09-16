@@ -1,7 +1,8 @@
-import { parseWord } from "../parse/word.js";
-import { isClarityRootShape } from "../word-converter.js";
+import { writingSpanEnd } from "../parse/span-scan.js";
 
-import { rewriteParsedWord } from "./rebuild.js";
+import { retieCore } from "./rebuild.js";
+
+export { retieCore } from "./rebuild.js";
 
 export type RetieChange = {
   from: string;
@@ -16,37 +17,32 @@ export type RewriteMarkdownResult = {
 
 export type CoreRewrite = (core: string) => string | null;
 
-/** Rewrite one orthographic word. Never substitutes inside a larger token. */
-export function retieCore(core: string, map: ReadonlyMap<string, string>): string | null {
-  if (!core || map.size === 0) {
-    return null;
-  }
-  const bare = map.get(core);
-  if (bare && isClarityRootShape(core)) {
-    return bare === core ? null : bare;
-  }
-  try {
-    return rewriteParsedWord(parseWord(core), map);
-  } catch {
-    return null;
-  }
-}
-
-const TRAILING_PUNCT = new Set([".", "?", "!", ",", ":", ";", ")", "]", "}", ">", '"', "'", "`"]);
-const LEADING_PUNCT = new Set(["(", "[", "{", "<", '"', "'", "`"]);
+const TRAILING_SENTENCE = new Set([".", "?", "!", ",", ":", ";", '"', "'", "`"]);
+const LEADING_QUOTE = new Set(['"', "'", "`"]);
 
 export function peelChunk(chunk: string): { prefix: string; core: string; suffix: string } {
+  const spanEnd = writingSpanEnd(chunk, 0);
+  if (spanEnd !== undefined && spanEnd > 0) {
+    return { prefix: "", core: chunk.slice(0, spanEnd), suffix: chunk.slice(spanEnd) };
+  }
+
   let prefix = "";
   let suffix = "";
   let core = chunk;
 
-  while (core.length > 0 && TRAILING_PUNCT.has(core.at(-1)!)) {
+  while (core.length > 0 && TRAILING_SENTENCE.has(core.at(-1)!)) {
     suffix = core.at(-1)! + suffix;
     core = core.slice(0, -1);
   }
-  while (core.length > 0 && LEADING_PUNCT.has(core[0]!)) {
+  while (core.length > 0 && LEADING_QUOTE.has(core[0]!)) {
     prefix += core[0]!;
     core = core.slice(1);
+  }
+
+  if (core.startsWith("(") && core.endsWith(")") && core.length > 2) {
+    prefix += "(";
+    suffix = `)${suffix}`;
+    core = core.slice(1, -1);
   }
 
   while (core.startsWith("**") && core.endsWith("**") && core.length > 4) {
@@ -63,13 +59,44 @@ export function peelChunk(chunk: string): { prefix: string; core: string; suffix
   return { prefix, core, suffix };
 }
 
-function rewriteWhitespaceTokens(
+function forEachPlainChunk(
+  text: string,
+  baseIndex: number,
+  visit: (chunk: string, index: number) => string,
+): string {
+  let out = "";
+  let i = 0;
+  while (i < text.length) {
+    if (/\s/.test(text[i]!)) {
+      out += text[i];
+      i += 1;
+      continue;
+    }
+    const spanEnd = writingSpanEnd(text, i);
+    let end = spanEnd ?? i;
+    if (spanEnd === undefined) {
+      while (end < text.length && !/\s/.test(text[end]!)) {
+        end += 1;
+      }
+    } else {
+      while (end < text.length && TRAILING_SENTENCE.has(text[end]!)) {
+        end += 1;
+      }
+    }
+    const chunk = text.slice(i, end);
+    out += visit(chunk, baseIndex + i);
+    i = end;
+  }
+  return out;
+}
+
+function rewritePlainTokens(
   text: string,
   rewriteCore: CoreRewrite,
   baseIndex: number,
   changes: RetieChange[],
 ): string {
-  return text.replace(/[^\s]+/g, (chunk, offset: number) => {
+  return forEachPlainChunk(text, baseIndex, (chunk, index) => {
     const { prefix, core, suffix } = peelChunk(chunk);
     if (!core) {
       return chunk;
@@ -78,15 +105,16 @@ function rewriteWhitespaceTokens(
     if (next == null || next === core) {
       return chunk;
     }
-    changes.push({ from: core, to: next, index: baseIndex + offset + prefix.length });
+    changes.push({ from: core, to: next, index: index + prefix.length });
     return `${prefix}${next}${suffix}`;
   });
 }
 
 /**
  * Walk Markdown, rewriting fenced / inline code via `transformCode` and
- * everything else (including comments and link targets) via `transformProse`.
+ * other text via `transformProse`. HTML comments are copied unchanged.
  * Link labels are walked with the same pair so nested backticks still count.
+ * Link targets are copied unchanged.
  */
 function transformMarkdown(
   input: string,
@@ -180,7 +208,7 @@ function scanMarkdown(
   changes: RetieChange[],
 ): string {
   const rewrite = (text: string, index: number) =>
-    rewriteWhitespaceTokens(text, rewriteCore, index, changes);
+    rewritePlainTokens(text, rewriteCore, index, changes);
   return transformMarkdown(input, baseIndex, rewrite, rewrite);
 }
 
@@ -198,8 +226,8 @@ export function forEachMarkdownCodeToken(
     input,
     0,
     (text, index) => {
-      text.replace(/[^\s]+/g, (chunk, offset: number) => {
-        visit({ chunk, index: index + offset });
+      forEachPlainChunk(text, index, (chunk, chunkIndex) => {
+        visit({ chunk, index: chunkIndex });
         return chunk;
       });
       return text;

@@ -1,4 +1,4 @@
-import { parseCsv } from "./csv.js";
+import { escapeCsvField, parseCsv } from "./csv.js";
 import { isClarityRootShape } from "./word-converter.js";
 
 export const COMPOUND_HEADERS = [
@@ -30,6 +30,50 @@ export type CompoundValidationError = {
   stem?: string;
   reason: string;
 };
+
+export type CompoundRetieChange = {
+  row: number;
+  field: "left" | "right" | "stem";
+  from: string;
+  to: string;
+};
+
+/** Remap published member roots and recompute `stem = left + join + right`. */
+export function retieCompoundRows(
+  rows: CompoundRow[],
+  map: ReadonlyMap<string, string>,
+): { rows: CompoundRow[]; changes: CompoundRetieChange[] } {
+  const changes: CompoundRetieChange[] = [];
+  const next = rows.map((row, index) => {
+    const left = map.get(row.left) ?? row.left;
+    const right = map.get(row.right) ?? row.right;
+    const stem = `${left}${row.join}${right}`;
+    const rowNum = index + 2;
+    if (left !== row.left) {
+      changes.push({ row: rowNum, field: "left", from: row.left, to: left });
+    }
+    if (right !== row.right) {
+      changes.push({ row: rowNum, field: "right", from: row.right, to: right });
+    }
+    if (stem !== row.stem) {
+      changes.push({ row: rowNum, field: "stem", from: row.stem, to: stem });
+    }
+    if (left === row.left && right === row.right && stem === row.stem) {
+      return row;
+    }
+    return { ...row, left, right, stem };
+  });
+  return { rows: next, changes };
+}
+
+export function serializeCompoundCsv(rows: CompoundRow[]): string {
+  const headers = [...COMPOUND_HEADERS];
+  const lines = [
+    headers.join(","),
+    ...rows.map((row) => headers.map((h) => escapeCsvField(row[h] ?? "")).join(",")),
+  ];
+  return `${lines.join("\n")}\n`;
+}
 
 const JOIN_LETTERS = new Set<string>(["l", "m", "n", "r"]);
 

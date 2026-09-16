@@ -7,6 +7,7 @@ import { describe, it } from "node:test";
 import {
   factorizationsForStem,
   parseCompoundCsv,
+  retieCompoundRows,
   validateCompoundRows,
 } from "./lexicon-compounds.js";
 import { parsePublishedCsv } from "./lexicon-search.js";
@@ -85,5 +86,27 @@ describe("lexicon-compounds", () => {
       publishedRoots,
     );
     assert.ok(errors.some((e) => /join must be/.test(e.reason)));
+  });
+
+  it("reties left/right and recomputes stem", () => {
+    const { rows, changes } = retieCompoundRows(
+      [
+        {
+          emoji: "🛏️",
+          stem: "ohohulabede",
+          left: "ohohu",
+          join: "l",
+          right: "abede",
+          literal: "bedroom",
+          metaphorical: "",
+          mnemonic: "",
+        },
+      ],
+      new Map([["ohohu", "ahaha"]]),
+    );
+    assert.equal(rows[0]?.stem, "ahahalabede");
+    assert.equal(rows[0]?.left, "ahaha");
+    assert.equal(rows[0]?.right, "abede");
+    assert.equal(changes.some((c) => c.field === "stem" && c.to === "ahahalabede"), true);
   });
 });

@@ -22,7 +22,7 @@
     "docs:preview": "vitepress preview docs/grammar",
     "fetch:tts": "node scripts/fetch-kitten-tts.mjs",
     "convert-word": "tsx scripts/convert-word.ts",
-    "retie-docs": "tsx scripts/retie-grammar-docs.ts",
+    "retie-docs": "tsx scripts/retie-docs.ts",
     "metaphor-assign": "tsx scripts/phase5-metaphor-assign.ts",
     "metaphor-assign-test": "tsx scripts/lib/metaphor-assign-data.test.ts && tsx scripts/lib/llm-client.test.ts",
     "lexicon-search": "tsx scripts/lexicon-search.ts",

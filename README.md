@@ -22,8 +22,8 @@ Or open the repo in a [Dev Container](.devcontainer/devcontainer.json) (Node 22 
 | `npm run docs:build` | Lint Markdown / Agalan / Vue a11y, then the same publish steps as `docs:publish` |
 | `npm run docs:publish` | Fetch TTS if missing, VitePress build, Amplify extras (`dist/`) — what Amplify runs |
 | `npm run docs:preview` | Preview the production docs build |
-| `npm run convert-word` | Convert English to an Agalan root; `--lexicon` rewrites the CSVs and dumps `tmp/lexicon-retie-map.json` |
-| `npm run retie-docs` | Dry-run retie of Agalan tokens in `docs/grammar/` from that map (`--write` to apply) |
+| `npm run convert-word` | Convert English to an Agalan root; `--lexicon` rewrites the CSVs and dumps `tmp/lexicon-retie-map.json` (`--only` limits rows) |
+| `npm run retie-docs` | Dry-run retie of Agalan tokens in `docs/grammar/`, `docs/examples/`, and `lexicon-compounds.csv` from that map (`--write` to apply) |
 | `npm run lexicon-search` | Lexicon search CLI |
 | `npm run web` | Serve the standalone lexicon page (`web/`; also on the docs site at `/grammar/lexicon`) |
 
