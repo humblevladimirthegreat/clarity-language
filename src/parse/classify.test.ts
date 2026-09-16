@@ -128,6 +128,17 @@ describe("classify", () => {
     assert.equal(pin.overlay, undefined);
   });
 
+  it("means overlay on /h/ /ɡ/ and ordinary hand on other letters", () => {
+    const using = expectReading("hahanam", "means");
+    assert.ok(using.overlay);
+    assert.equal(using.overlay!.kind, "means");
+    assert.equal(using.overlay!.gloss, "using");
+    const adj = expectReading("gahanam", "means");
+    assert.equal(adj.overlay!.gloss, "using");
+    const hand = expectReading("zahanal", "ordinary");
+    assert.equal(hand.overlay, undefined);
+  });
+
   it("hosted judgment bars Mine and Everyone", () => {
     const mine = expectReading("zuroron", "mood");
     assert.ok(mine.overlay);

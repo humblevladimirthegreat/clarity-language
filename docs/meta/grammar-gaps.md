@@ -25,7 +25,7 @@ No new clause types. Unblocks locative talk and later relatives / paths.
 
 - [x] **2. Locative relation set (thin).** Hosted `/h/` or `/ɡ/` + `/b/`. Inventory on [core locative relations](../grammar/core.md#locative-relations) (`ogore` *inside*, `ubuhu` *at*, `alade` *on*, `ebaru` *from*, `obowa` *toward*, `ezewu` *through*, `ejege` *out of*, `azadu` *between*). **Unblocks:** spatial *from–to* (item 9); *the house in which* (item 11).
 
-- [ ] **3. Clause instrument *with* (thin).** Role **`exROOT`** [names](../grammar/roles.md) *the hammer used*. *Writes with a hammer* as an adjunct is untaught. Add a means relation (`/h/` + `/b/`) or teach the tool as manner `/h/` of that root. Compare with join-relation *including* / *with* ([join-extras.md](../grammar/join-extras.md#join-relations)), which is set membership, not means.
+- [x] **3. Clause instrument *with* (thin).** Hosted **`hahanam` / `gahanam`** + `/b/` tool ([core means](../grammar/core.md#means)). Role **`exROOT`** still names *the hammer used*. Join-relation **`han`** stays company / including.
 
 - [ ] **4. Other English *of* (thin).** Ownership is `oboru` + `/b/` ([joins.md](../grammar/joins.md) SHARED example). Still missing taught relations for part–whole, contents (*cup of tea*), material (*made of*), origin (*from Rome*). Portion *of* is partly [percent](../grammar/numbers-applied.md#percent-denominators).
 

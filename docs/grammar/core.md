@@ -102,6 +102,25 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 
 Do not park that recipient immediately after a relation `/h/` or `/ɡ/`: `hogorem bululon` is *inside Ululon*, not *to Ululon*. Put the pair first, then the recipient (`hogorem bohohul bululon`).
 
+### Means (*with* a tool)
+<a id="means"></a>
+
+When English says the action **uses a tool** (*writes with a hammer*), keep the same hosted pair as *inside*. The relation word is **`hahanam`**. Put the tool in `/b/` right after it. (cue: ✋ *hand*: you act through the hand; `/b/` is the implement)
+
+> `zazawan dabogol hahanam bahamel vuwurul.`
+>
+> z-Azawan | d-book | h-using | b-hammer | v-write
+>
+> "Azawan writes a book with a hammer."
+
+On a noun, the same root is **`gahanam`** (`dabogol gahanam bahamel` *a book written with a hammer*). Ordinary `zahanal` is still *a hand*.
+
+**Compare with:** *hastily* is ordinary manner `/h/` with no `/b/`. Unhosted `/b/` is still the recipient. *Inside* (`hogorem`) is a place, not a tool.
+
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`hahanam` / `gahanam`** | implement the event (or noun) uses | *using / with* (a tool) | `ahanal` *hand* | ✋: you act through the hand |
+
 ### Turn (`/j/`): start a new speech move
 <a id="turn-j"></a>
 
@@ -508,7 +527,7 @@ The same roots stay ordinary pictures under other letters (`zubuhul` *a pushpin*
 | **`hejegem` / `gejegem`** | interior to exterior | *out of* | `ejegel` *eject* | ⏏️: pushed out of the enclosure |
 | **`hazadum` / `gazadum`** | figure in the layer of two landmarks | *between* | `azadul` *sandwich* | 🥪: the filling sits between two sides |
 
-**Compare with:** unhosted `/b/` is still the recipient ([extra nouns](#extra-nouns)), not a place. *Toward* is heading, not completed *into* (*inside*). Ordinary `vebarul` is *to depart*; `hebarum` is the source relation. *Between* is one relation plus a `/b/` [join](joins.md) of two landmarks, not two relation words.
+**Compare with:** unhosted `/b/` is still the recipient ([extra nouns](#extra-nouns)), not a place. *Toward* is heading, not completed *into* (*inside*). Ordinary `vebarul` is *to depart*; `hebarum` is the source relation. *Between* is one relation plus a `/b/` [join](joins.md) of two landmarks, not two relation words. *Using* a tool is [means](#means) (`hahanam`), not a place.
 
 ### Writing and speech rhythm (periods)
 <a id="orthography-and-prosody-periods"></a>

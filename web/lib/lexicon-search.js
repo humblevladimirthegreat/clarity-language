@@ -1910,7 +1910,8 @@ var OVERLAY_KINDS = [
   "emotion_locus",
   "identity",
   "benchmark",
-  "locative"
+  "locative",
+  "means"
 ];
 var OVERLAY_KIND_SET = new Set(OVERLAY_KINDS);
 function isJoinOverlayKind(kind) {

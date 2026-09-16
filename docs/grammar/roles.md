@@ -61,7 +61,7 @@ English *the hammer used* names what the doer uses so the event can go through. 
 
 `zexuwurul` is a writing-implement (the **-l** sense of *write*). A book as a mere object, with no event, stays `dabogol`.
 
-**Compare with:** `zaxuwurul` is who writes; `zuxuwurul` is what is written. *Walks hastily* is ordinary [manner](core.md#adverbs-h) (`/h/`), not this vowel.
+**Compare with:** `zaxuwurul` is who writes; `zuxuwurul` is what is written. *Walks hastily* is ordinary [manner](core.md#adverbs-h) (`/h/`), not this vowel. *Writes with a hammer* is [means](core.md#means) (`hahanam` + `/b/`), not this vowel: **`exROOT`** *names* the implement.
 
 ### The other party (`o`)
 

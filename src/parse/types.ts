@@ -113,6 +113,7 @@ export type LexReading =
   | "restrictor"
   | "mood"
   | "locative"
+  | "means"
   | "join"
   | "joinAct"
   | "joinRelation"

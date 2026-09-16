@@ -129,6 +129,8 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("welem", "w-very");
     expectLine("gelem", "g-big");
     expectLine("hogorem", "h-inside");
+    expectLine("hahanam", "h-using");
+    expectLine("gahanam", "g-using");
     expectLine("hubuhum", "h-at");
     expectLine("haladem", "h-on");
     expectLine("hebarum", "h-from");

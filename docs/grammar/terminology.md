@@ -345,6 +345,12 @@ Place how (*inside*, *at*, *on*, *from*, *toward*, *through*, *out of*, *between
 
 [Core](core.md#locative-relations)
 
+### Means
+
+Hosted `/h/` or `/ɡ/` **`ahanam`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*, not role **`exROOT`**.
+
+[Core](core.md#means)
+
 ### Factivity
 
 Whether **IF** vs **BECAUSE** treats the dependent as asserted.

@@ -51,6 +51,8 @@ When a noun or event is *framed* toward something (*cake with peanuts*, *walk wi
 
 Content *including* needs that `/b/` (`gan b…`). A stock label uses a [mention](spans.md) span.
 
+**Compare with:** *writes with a hammer* is [means](core.md#means) (`hahanam` + `/b/`), not **`han`**. **`han`** is company / including, not the tool.
+
 **Not the same job as:** adjective [joins](joins.md) (`gal` / `gam` / `gar`). Join-relations take **-n** toward one `/b/`.
 
 **For *including* as an afterthought, use:** a [reviser](revisers.md) (`al`, …). `zahadam gan bazawan` is *a team including Azawan*; `zahadam al zazawan` is *the team, including Azawan*.
@@ -242,3 +244,4 @@ z-Ululon | h-anything-but | b-Uhubun | v-scream
 - List joins (right-close fence): [joins.md](joins.md)
 - Causal readings of open / without: [causation.md](causation.md)
 - Prefix-less *including* / *instead*: [revisers.md](revisers.md)
+- Clause *with* a tool: [core.md](core.md#means)
