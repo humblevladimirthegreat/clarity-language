@@ -6,6 +6,7 @@ redirects settings: https://us-east-2.console.aws.amazon.com/amplify/apps/d2xds9
 review TTS
 consider removing emojis from docs (but keep in lexicon)
 local llm systematically review entire lexicon
+finish English cheat sheets, add Agalan cheat sheet
 
 ## Evidentiality / tense
 

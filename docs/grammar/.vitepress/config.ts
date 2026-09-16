@@ -84,6 +84,7 @@ export default defineConfig({
       { text: 'Lexicon', link: '/lexicon' },
       { text: 'Inspect', link: '/inspect' },
       { text: 'Terminology', link: '/terminology' },
+      { text: 'English cheat sheet', link: '/english' },
     ],
     sidebar: [
       {
@@ -96,6 +97,7 @@ export default defineConfig({
           { text: 'Lexicon', link: '/lexicon' },
           { text: 'Inspect', link: '/inspect' },
           { text: 'Terminology', link: '/terminology' },
+          { text: 'English cheat sheet', link: '/english' },
         ],
       },
     ],
