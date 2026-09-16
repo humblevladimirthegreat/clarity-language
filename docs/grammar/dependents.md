@@ -33,7 +33,7 @@ In the main sentence, a **stand-in** **`darl`** (role letter + **`a`** + **`-rl`
 
 Put **`darl` last** in its slot in the main sentence, and put the dependent **immediately after** it. Rearrange free word order so **`darl`** stays last in that slot.
 
-The dependent may open with its own `/j/` words, or keep the main sentence’s setting (statement, question, command) and omit `/j/` when that matches. The main sentence stops after **`darl`**; the next full sentence is the content that **`darl`** stands for. If the dependent is a command or prohibition instead of a statement, write its own act word.
+The main sentence stops after **`darl`**; the next full sentence is the content that **`darl`** stands for. Do not open that inner sentence with `/j/`. The stand-in vowel already types it (*that* **`a`**, *whether* **`o`**). The inner sentence always names who does the verb (`/z/`). English often drops that person (*wants to walk*; *tells Ululon to sit*); write the name again. Resume **-r** is [pronouns](pronouns.md).
 
 *That…* content is often a direct object, with **`darl` last** in the main sentence:
 
@@ -50,14 +50,6 @@ English *whether* is that same object slot, with vowel **`o`**: **`dorl`**. The 
 > z-Azawan | v-see | d-whether-clause | z-Ululon | v-walk
 >
 > "Azawan sees whether Ululon walks."
-
-A fill-ask inside is *who* / *what*, still after **`darl`**, with inner **`jol`**:
-
-> `zazawan vejel darl jol zar vawalal.`
->
-> z-Azawan | v-see | d-that-clause | j-question | z-who | v-walk
->
-> "Azawan sees who walks."
 
 *Because* / *if* and similar use `/h/` + `/b/` **`barl`**. Keep that pair together, **last in the main sentence** (**`barl`** last). The metaphorical ending on the `/h/` word is always **-m**.
 
@@ -110,6 +102,14 @@ When English names the **intended outcome** of this event (*walks so that Ululon
 > z-Azawan | v-write | h-so-that | b-money-bag
 >
 > "Azawan writes for a money-bag."
+
+When English *to* drops the sitter, keep inner `/z/`:
+
+> `zazawan vawalal holalam barl zazawan vajul.`
+>
+> z-Azawan | v-walk | h-so-that | b-that-clause | z-Azawan | v-sit
+>
+> "Azawan walks in order to sit."
 
 Ordinary `zolalal` is still *a goal* (the net).
 
@@ -352,13 +352,13 @@ Beginner used locked **`a`** (`darl` / `barl`) and *whether* **`dorl`**. Stand-i
 
 The same grid uses **`b`** after a pole (`barl` / `berl` …). Everyday *because* / *if* / *although* stay **`barl` / `barm`**. **`holalam berl`** types the `/b/` clause as an aimed body. Do not put this family on `/x/` (clause *and* stays `xal` / `xan`).
 
-> `zazawan vezehel derl zululon vajul.`
+> `zazawan bululon vezehel derl zululon vajul.`
 >
-> z-Azawan | v-tell | d-to-clause | z-Ululon | v-sit
+> z-Azawan | b-Ululon | v-tell | d-to-clause | z-Ululon | v-sit
 >
 > "Azawan tells Ululon to sit."
 
-**Compare with:** inner **`jel`** is still a command turn. **`derl`** fills the object with an aimed sentence without changing the outer speech act. Quotes of wording stay [spans](spans.md).
+The addressee is unhosted `/b/`. The inner `/z/` is still Ululon (English *to sit* drops that name). **`derl`** types the next sentence as an aim; the outer sentence stays a statement. Quotes of wording stay [spans](spans.md).
 
 ### Nested dependents
 <a id="nested-dependents"></a>

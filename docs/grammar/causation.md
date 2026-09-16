@@ -232,7 +232,7 @@ z-Uhubun | v-tell | h-only-if | b-fire
 ### A following sentence
 <a id="dependent"></a>
 
-When the condition is a **full sentence**, keep the same pole and hang that sentence after **`barl`**. Write the pole, then **`barl`**, then the dependent. Keep that pair together, last in the main sentence (**`barl`** last). Give the dependent its own act word only if the speech act differs. See [dependent clauses](dependents.md#dependent-clauses).
+When the condition is a **full sentence**, keep the same pole and hang that sentence after **`barl`**. Write the pole, then **`barl`**, then the dependent. Keep that pair together, last in the main sentence (**`barl`** last). The inner sentence always names its subject. See [dependent clauses](dependents.md#dependent-clauses).
 
 ```
 main sentence …  hadorom / heberom / …  barl   [dependent sentence]

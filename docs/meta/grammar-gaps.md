@@ -49,7 +49,7 @@ Do not start remaining rows until Wave 1 extra nouns are the learner’s default
 
 - [x] **11. Noun-modifying relatives (refused).** No *that / who / which / whose* inside an NP. Identify with [two sentences](../grammar/dependents.md#which-noun) (resume **-r**), hosted `/ɡ/` + `/b/`, or a [role compound](../grammar/roles.md#role-compounds) on `/ɡ/` (`gaxajul` *sitter*, not `gajul` *chair*). Restrictors still limit **when a claim counts**.
 
-- [ ] **12. Infinitive / control (large).** **`derl`** types an aimed complement (*tell to sit*) as a **full next sentence**, not a subject-less verb. *Want to walk* still repeats inner `/z/` after **`darl`**. Event purpose *so that* stays **`holalam`** + `/b/`. Values **`xo`** stays need-motive. Subject-sharing control vs full clause still open.
+- [ ] **12. Infinitive / control (large).** Complements are full next sentences. **Stand-in vowel** types them (**`darl`** *that*, **`dorl`** *whether*, **`derl`** *to*, **`durl`** *lest*); dependents do not open with `/j/`. **Inner `/z/` is never dropped** (repeat the name; resume **-r** later) — [dependent clauses](../grammar/dependents.md#dependent-clauses) / [stand-in](../grammar/dependents.md#stand-in). Event purpose stays **`holalam`**. Values **`xo`** stays need-motive. **Still thin / untaught:** *seem to*; degree *too…to*; *remember to* vs *that*; NP *a book to read* (item 11); **`durl`** examples.
 
 ## Wave 4 — optional systems
 
