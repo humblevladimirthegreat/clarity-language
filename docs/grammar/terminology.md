@@ -42,6 +42,7 @@ Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#a
 | **RECORDED** | Evidential: documented / playback | [Commentary](commentary.md#evidentiality) |
 | **RULE** | Universality: holds inside a named frame | [Special vocabulary](special-vocabulary.md#universality) |
 | **SAME** | Identity copula **`onunu`** | [Predication](predication.md#identity) |
+| **SO-THAT** | Clause-pole **`olala`** (*so that* / NP intended *for*) | [Core](core.md#so-that) |
 | **STORY** | Evidential: narrative / lore | [Commentary](commentary.md#evidentiality) |
 | **TOLD** | Evidential: hearsay | [Commentary](commentary.md#evidentiality) |
 | **UNCOUNTERED** | Universality: no counterexample comes to mind | [Special vocabulary](special-vocabulary.md#universality) |
@@ -202,7 +203,7 @@ Kind / role as predicative `/ɡ/` (no *to-be* verb).
 
 ### Clause pole / NP pole
 
-Condition vs outcome as NPs vs full sentences after **`adoro`**. **Clause pole** is the causation reading. Concession **`ezeba`** uses the same NP vs clause split (*despite Ululon* vs *although Ululon walks*).
+Condition vs outcome as NPs vs full sentences after **`adoro`**. **Clause pole** is the causation reading. Concession **`ezeba`** uses the same NP vs clause split (*despite Ululon* vs *although Ululon walks*). Intended outcome **`olala`** uses it too (*for a money-bag* vs *so that Ululon sits*).
 
 [Causation](causation.md)
 
@@ -276,7 +277,7 @@ Full sentence after **`adoro`** (last in the host slot). Inner **`jol`** / **`jo
 
 [Core](core.md#dependent-clauses)
 
-**Compare with:** English *the dog that runs* (which dog) is [which person or thing](core.md#which-noun), not **`adoro`**.
+**Compare with:** English *the dog that runs* (which dog) is [which person or thing](core.md#which-noun), not **`adoro`**. Intended outcome *so that* is [**`holalam`**](core.md#so-that) plus **`adoro`** or a noun `/b/`.
 
 ### Digitless
 
@@ -362,7 +363,7 @@ Hosted `/h/` or `/ɡ/` **`urorom`** plus model `/b/` (*like* a duck / *like* Aza
 
 ### Exchange (*for*)
 
-Hosted `/h/` or `/ɡ/` **`uhanem`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not values motive **`xo`**.
+Hosted `/h/` or `/ɡ/` **`uhanem`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not values motive **`xo`**, not intended-outcome **`olala`**.
 
 [Core](core.md#exchange)
 
@@ -532,6 +533,8 @@ Number problem / solution / goal candidates with free ordinals.
 
 [Special vocabulary](special-vocabulary.md#numbered-alternatives)
 
+**Compare with:** clause *so that* is [**`holalam`**](core.md#so-that), not the goal noun **`olalal`**.
+
 ### Numeric derivation / quasi
 
 `ROOT x NUM`; **quasi** = `ROOTx-e-`.
@@ -653,6 +656,12 @@ Word-initial job letter.
 `/x/` *therefore / however / meanwhile*.
 
 [Core](core.md#sentence-linkers)
+
+### So that / event purpose
+
+Clause-pole **`olala`**: intended outcome of the host (*so that Ululon sits*; NP *for a money-bag*). Not locative *toward*, not values **`xo`**, not discourse *therefore*.
+
+[Core](core.md#so-that)
 
 ### Sequence
 

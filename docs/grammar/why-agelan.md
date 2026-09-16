@@ -143,7 +143,7 @@ Saying whether a list is open or closed helps you notice false dichotomies, and 
 
 Everyday English *because* / *leads to* / *have to* blur sufficient vs necessary, world-reason vs speaker-grounds, and wish vs natural law.
 
-[Causation](causation.md) keeps those forks on two-place poles: *if* / *only if* / *because* / *iff*, on `/h/` for an event and `/ɡ/` for a noun. When the “rule” is really an ought (*hard work should earn promotion*), use [values](values.md) [prescription](values.md#value-force) (**`xe`**) on the act — not a causation pole.
+[Causation](causation.md) keeps those forks on two-place poles: *if* / *only if* / *because* / *iff*, on `/h/` for an event and `/ɡ/` for a noun. Intended *so that* is a separate pole (**`holalam`**, [so that](core.md#so-that)): the host is aimed at that outcome, which is not asserted like *because*, and is not a [need-motive](values.md#value-preference) (`xo`). When the “rule” is really an ought (*hard work should earn promotion*), use [values](values.md) [prescription](values.md#value-force) (**`xe`**) on the act — not a causation pole.
 
 Keeping those forks apart helps you stop treating wishes and habits as if the world must obey them.
 

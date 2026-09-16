@@ -524,7 +524,8 @@ function punctFromToken(token: IToken): PunctKind {
 
 function isOdoWord(word: LexWord): boolean {
   if (word.family.kind === "content" && word.family.roots.length === 1) {
-    return word.family.roots[0] === "orodo";
+    const root = word.family.roots[0];
+    return root === "adoro" || root === "orodo";
   }
   return false;
 }

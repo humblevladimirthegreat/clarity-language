@@ -153,11 +153,19 @@ describe("parse — joins.md", () => {
 });
 
 describe("parse — orodo dependents", () => {
-  it("parses hurugum borodol dependent", () => {
-    const result = parseText("zazawan guzumum hurugum borodol zululon vawalal.");
+  it("parses hurugum badorol dependent", () => {
+    const result = parseText("zazawan guzumum hurugum badorol zululon vawalal.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
-    assert.equal(clause.dependent!.orodo.raw, "borodol");
+    assert.equal(clause.dependent!.orodo.raw, "badorol");
+    assert.equal(clause.dependent!.clause.units.length, 2);
+  });
+
+  it("parses holalam badorol purpose dependent", () => {
+    const result = parseText("zazawan vawalal holalam badorol zululon vajul.");
+    const clause = result.utterances[0]!.bodies[0]!.clause;
+    assert.ok(clause.dependent);
+    assert.equal(clause.dependent!.orodo.raw, "badorol");
     assert.equal(clause.dependent!.clause.units.length, 2);
   });
 

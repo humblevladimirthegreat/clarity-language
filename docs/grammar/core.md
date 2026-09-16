@@ -1,6 +1,6 @@
 # Agalan core grammar
 
-How to read and write an Agalan **sentence**: who does what, word shape, default order, how a speech move starts (`/j/` vs `/x/`), and a next sentence after **`adoro`** (*that* / *whether* / *because*).
+How to read and write an Agalan **sentence**: who does what, word shape, default order, how a speech move starts (`/j/` vs `/x/`), and a next sentence after **`adoro`** (*that* / *whether* / *because* / *so that*).
 
 ## Beginner
 <a id="beginner"></a>
@@ -178,7 +178,7 @@ When English names the **other side of a swap** (*a book for a hammer*), keep th
 
 On a noun, the same root is **`guhanem`** (`dabogol guhanem bahamel` *a book for a hammer*). Ordinary `zuhanel` is still *a currency exchange*. Ordinary `vuhanem` is still *to exchange*.
 
-**Compare with:** unhosted `/b/` is still the recipient (*a book for Ululon* as who gets it). *Using* a tool is [means](#means). *Like a duck* is [simile](#similative). *Inside* is a place.
+**Compare with:** unhosted `/b/` is still the recipient (*a book for Ululon* as who gets it). *Using* a tool is [means](#means). *Like a duck* is [simile](#similative). *Inside* is a place. *Writes for a money-bag* as the intended get is [so that](#so-that) (`holalam`), not a swap.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -308,6 +308,7 @@ You can also say:
 | **`hudumem badorol`** | *until* | `udumel` *timer* | ⏲️: stop when it rings |
 | **`hababam badorol`** | *before* | `ababal` *backpack* | 🎒: packed first |
 | **`horanem badorol`** | *after* | `oranel` *hourglass* | ⌛: sand already through |
+| **`holalam badorol`** | *so that* / *in order to* | `olalal` *goal* | 🥅: you act so the shot counts |
 
 When English puts a **noun** after *despite* (*despite Ululon*), keep the same **`hezebam`** pole and put that noun in `/b/` instead of **`adoro`**. The obstacle is given, as with *although*. Do not write a second concession word. On a noun host the same pole is **`gezebam`**. (cue: 🦓 *zebra*: two stripes, still one animal)
 
@@ -319,7 +320,26 @@ When English puts a **noun** after *despite* (*despite Ululon*), keep the same *
 
 Ordinary `zezebal` is still *a zebra*.
 
-**Compare with:** *although Ululon walks* is **`hezebam badorol`** plus the next sentence. Discourse *however* is **`xezebal`** ([continue](#continue-x)). *Whether Ululon walks* is **`adoro`** plus inner **`jol`**, not **`hadorom`** (*if* is a condition, not polar ignorance). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`adoro`** on the noun.
+<a id="so-that"></a>
+<a id="event-purpose"></a>
+
+When English names the **intended outcome** of this event (*walks so that Ululon sits*, *writes for a money-bag*), keep the same hosted pair as *because*. The pole is **`holalam`**. Put the outcome in `/b/`: a following sentence after **`adoro`**, or a noun. The inner event is **not** asserted as a fact (unlike *because*). On a noun host the same pole is **`golalam`**. (cue: 🥅 *goal*: you act so the shot counts)
+
+> `zazawan vawalal holalam badorol zululon vajul.`
+>
+> z-Azawan | v-walk | h-so-that | b-next-clause | z-Ululon | v-sit
+>
+> "Azawan walks so that Ululon sits."
+
+> `zazawan vuwurul holalam bonebal.`
+>
+> z-Azawan | v-write | h-so-that | b-money-bag
+>
+> "Azawan writes for a money-bag."
+
+Ordinary `zolalal` is still *a goal* (the net).
+
+**Compare with:** *although Ululon walks* is **`hezebam badorol`** plus the next sentence. Discourse *however* is **`xezebal`** ([continue](#continue-x)). Discourse *therefore* is **`xezazal`**, a linker after a finished claim, not *so that*. *Whether Ululon walks* is **`adoro`** plus inner **`jol`**, not **`hadorom`** (*if* is a condition, not polar ignorance). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`adoro`** on the noun. *Toward* a place is locative **`hobowam`**, not this pole. Acting *for relatedness* is [values](values.md) **`xo`**, a need-motive, not an event outcome. *A book for a hammer* as a swap is [exchange](#exchange) (`huhanem`). *Want to walk* still takes a full **`adoro`** sentence (repeat the inner `/z/`).
 
 The verb has no past or future letter. *Before* / *after* / *while* / *until* place this event relative to the next sentence.
 
@@ -393,6 +413,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *question* | `jol` | | |
 | *because* | `hurugum` | `urugul` *brick* | 🧱: the cause is what the result sits on |
 | *although* | `hezebam` | `ezebal` *zebra* | 🦓: two stripes, still one animal |
+| *so-that* | `holalam` | `olalal` *goal* | 🥅: you act so the shot counts |
 | *therefore* | `xezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
 | *in-exchange-for* | `huhanem` | `uhanel` *currency-exchange* | 💱: the arrows swap one side for the other |
 | *on-behalf-of* | `hudagam` | `udagal` *id-card* | 🪪: the card stands as their face |
@@ -493,6 +514,22 @@ z-Azawan | h-on-behalf-of | b-Ululon | v-tell
 `zazawan vejel dadorol jol zululon vajul.`
 
 z-Azawan | v-see | d-next-clause | j-question | z-Ululon | v-sit
+:::
+
+**13.** *Azawan runs so that Ululon sits.*
+
+::: details Show answer
+`zazawan vurunul holalam badorol zululon vajul.`
+
+z-Azawan | v-run | h-so-that | b-next-clause | z-Ululon | v-sit
+:::
+
+**14.** *Azawan writes for a money-bag.* (intended outcome, not a swap)
+
+::: details Show answer
+`zazawan vuwurul holalam bonebal.`
+
+z-Azawan | v-write | h-so-that | b-money-bag
 :::
 
 #### Agalan → English
@@ -602,6 +639,24 @@ z-Azawan | h-on-behalf-of | b-Ululon | v-tell
 z-Uhubun | v-see | d-next-clause | j-question | z-Azawan | v-stand
 
 *Uhubun sees whether Azawan stands.*
+:::
+
+**13.** `zululon vurunul holalam badorol zazawan vajul.`
+
+::: details Show answer
+
+z-Ululon | v-run | h-so-that | b-next-clause | z-Azawan | v-sit
+
+*Ululon runs so that Azawan sits.*
+:::
+
+**14.** `zululon vuwurul holalam bonebal.`
+
+::: details Show answer
+
+z-Ululon | v-write | h-so-that | b-money-bag
+
+*Ululon writes for a money-bag.*
 :::
 
 ## Intermediate
@@ -742,7 +797,7 @@ On a noun, the same roots stay `/ɡ/` (`gebarum bazadol gubuhum budunul` *from a
 >
 > "A guard inside a bank sits."
 
-**Compare with:** unhosted `/b/` is still the recipient ([extra nouns](#extra-nouns)), not a place. *Toward* is heading, not completed *into* (*inside*). Ordinary `vebarul` is *to depart*; `hebarum` is the source relation. *Between* is one relation plus a `/b/` [join](joins.md) of two landmarks, not two relation words. Numeric *from 3 to 5* is a [range](numbers-applied.md#ranges) (number endpoints plus a SHARED continuum), not this place stacking. *Using* a tool is [means](#means) (`hahanam`), not a place. *Like* is [simile](#similative) (`hurorom`), not a place. *For a hammer* as a swap is [exchange](#exchange) (`huhanem`). *On behalf of Ululon* is [proxy](#proxy) (`hudagam`). English *of* that is not a place is [of relations](#of-relations).
+**Compare with:** unhosted `/b/` is still the recipient ([extra nouns](#extra-nouns)), not a place. *Toward* is heading, not completed *into* (*inside*). Ordinary `vebarul` is *to depart*; `hebarum` is the source relation. *Between* is one relation plus a `/b/` [join](joins.md) of two landmarks, not two relation words. Numeric *from 3 to 5* is a [range](numbers-applied.md#ranges) (number endpoints plus a SHARED continuum), not this place stacking. *Using* a tool is [means](#means) (`hahanam`), not a place. *Like* is [simile](#similative) (`hurorom`), not a place. *For a hammer* as a swap is [exchange](#exchange) (`huhanem`). *On behalf of Ululon* is [proxy](#proxy) (`hudagam`). *So that Ululon sits* is [so that](#so-that) (`holalam`), not a path landmark. English *of* that is not a place is [of relations](#of-relations).
 
 ### Of relations (*part of*, *cup of*, *made of*, *from*)
 <a id="of-relations"></a>
@@ -847,7 +902,7 @@ These words glue one finished sentence to the next (one-way; default ending **-l
 
 *therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Those same roots keep their ordinary content readings under other role letters.
 
-**Compare with:** *although* / *while* attach a dependent after **`adoro`** (`hezebam badorol`, `hegemum badorol` — [dependent clauses](#dependent-clauses)). *Despite Ululon* is the same pole with a noun in `/b/` (`hezebam bululon`). Discourse **`xezebal`** / **`xanelol`** glue a finished sentence to the next one.
+**Compare with:** *although* / *while* attach a dependent after **`adoro`** (`hezebam badorol`, `hegemum badorol` — [dependent clauses](#dependent-clauses)). *Despite Ululon* is the same pole with a noun in `/b/` (`hezebam bululon`). *So that Ululon sits* is **`holalam badorol`**; *writes for a money-bag* as the intended get is **`holalam bonebal`**. Discourse **`xezebal`** / **`xanelol`** / **`xezazal`** glue a finished sentence to the next one.
 
 ### Nested dependents
 <a id="nested-dependents"></a>

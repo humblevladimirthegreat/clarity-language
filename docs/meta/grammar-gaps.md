@@ -49,7 +49,7 @@ Do not start remaining rows until Wave 1 extra nouns are the learner’s default
 
 - [x] **11. Noun-modifying relatives (refused).** No *that / who / which / whose* inside an NP. Identify with [two sentences](../grammar/core.md#which-noun) (resume **-r**), hosted `/ɡ/` + `/b/`, or a [role compound](../grammar/roles.md#role-compounds) on `/ɡ/` (`gaxajul` *sitter*, not `gajul` *chair*). Restrictors still limit **when a claim counts**.
 
-- [ ] **12. Infinitive / control / event purpose (large).** **`adoro`** takes a **full next sentence**, not a subject-less verb. No *want to walk*, *ask Ululon to sit*, *in order to leave*. Values **`xo`** is need-motive, not “this event so that that event.” **Needs:** **`adoro`**; not relatives. May share a purpose subordinator with *so that* (parallel to *because* / *if*). Decide control (*want* shares `/z/`) vs full clause.
+- [ ] **12. Infinitive / control (large).** **`adoro`** takes a **full next sentence**, not a subject-less verb. No *want to walk*, *ask Ululon to sit*. Event purpose *so that* / *in order to* is taught: **`holalam`** + `/b/` ([core so that](../grammar/core.md#so-that)); values **`xo`** stays need-motive. **Needs:** **`adoro`**. Decide control (*want* shares `/z/`) vs full clause.
 
 ## Wave 4 — optional systems
 
@@ -66,7 +66,7 @@ Decide **whether** to add. English helpers; not required by the `/b/` model. Lat
 | Extra case letters (dative, ablative, locative) | Duplicates `/b/` + relation root |
 | Closed *in / on / at* as grammar | Several meanings each; item 2 is the fix |
 | *and / or / with / without / against / except* as prepositions | [Joins](../grammar/joins.md), [join-relations](../grammar/join-extras.md#join-relations), [revisers](../grammar/revisers.md) |
-| *because / if / although / while / until / before / after* | Already [core](../grammar/core.md#dependent-clauses) / [causation](../grammar/causation.md) |
+| *because / if / although / while / until / before / after / so that* | Already [core](../grammar/core.md#dependent-clauses) / [causation](../grammar/causation.md) |
 | *can / will / should / may / have to* as dummy auxiliaries | [Ability](../grammar/ability.md), [plan-decision](../grammar/plan-decision.md), [values](../grammar/values.md), [MAY](../grammar/commentary.md#may) |
 | *that / who / which* inside an NP | Two sentences ([which noun](../grammar/core.md#which-noun)); hosted `/ɡ/` + `/b/`; role compound on `/ɡ/` |
 | *that* (finite complement) | **`adoro`** |
@@ -85,7 +85,7 @@ Decide **whether** to add. English helpers; not required by the `/b/` model. Lat
          10 whether (independent of 2)
                           │
                     11 relatives (refused: two sentences / hosted `/ɡ/` / role on `/ɡ/`)
-                    12 infinitive / purpose
+                    12 infinitive / control
                           │
                     13 passive? (after 11)
                     14 aspect? (after evidentiality as taught)
