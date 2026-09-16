@@ -118,7 +118,7 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, emotion ACT
 | `join_act` | `joinAct` | vowel-series `/v/` **`an`** / **`on`** / … |
 | `join_relation` | `joinRelation` | same stems on `/g/` `/h/` |
 | `evidential` | `mood` | LIVE / WITNESSED / … |
-| `may` | `mood` | MAY hold map (check / no hunt / close) |
+| `may` | `mood` | MAY hold map (find out / default / who knows) |
 | `notional` | `mood` | NOTIONAL hold map |
 | `plan` | `mood` | map-resolution endings |
 | `predict` | `mood` | **`elezo`** |

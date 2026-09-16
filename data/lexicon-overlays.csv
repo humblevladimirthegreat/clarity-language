@@ -45,14 +45,14 @@ egegen,h,✅,decision,DECISION,decision mood proper (this decision-word names a 
 egegen,w,✅,decision,DECISION,decision mood proper (this decision-word names a particular object),checkmark confirms a pick; -n is ordinary proper not a firmness
 egeger,h,✅,decision,DECISION-temporary,decision mood temporary changeability (pick for now),checkmark confirms a pick; temporary decision holds only this moment
 egeger,w,✅,decision,DECISION-temporary,decision mood temporary changeability (pick for now),checkmark confirms a pick; temporary decision holds only this moment
-odohom,h,💭,may,MAY,may mood (could be; no hunt this sentence),thought balloon: the scene may be so; -m does not start a check
-odohom,w,💭,may,MAY,may mood (could be; no hunt this sentence),thought balloon: the scene may be so; -m does not start a check
-odohol,h,💭,may,MAY-check,may mood check hold (finding out),thought balloon plus looking: could be, and this sentence hunts
-odohol,w,💭,may,MAY-check,may mood check hold (finding out),thought balloon plus looking: could be, and this sentence hunts
+odohom,h,💭,may,MAY,may mood (could be; default),thought balloon: the scene may be so; -m does not find out and does not shrug it off
+odohom,w,💭,may,MAY,may mood (could be; default),thought balloon: the scene may be so; -m does not find out and does not shrug it off
+odohol,h,💭,may,MAY-find-out,may mood find-out hold (I'll / let's find out),thought balloon plus looking: could be, and you are seeking
+odohol,w,💭,may,MAY-find-out,may mood find-out hold (I'll / let's find out),thought balloon plus looking: could be, and you are seeking
 odohon,h,💭,may,MAY,may mood proper (this may-word names a particular object),thought balloon as a named caption; -n is ordinary proper not a hold
 odohon,w,💭,may,MAY,may mood proper (this may-word names a particular object),thought balloon as a named caption; -n is ordinary proper not a hold
-odohor,h,💭,may,MAY-close,may mood close hold (inquiry closed this round),thought balloon set down: could be, hunt over for now
-odohor,w,💭,may,MAY-close,may mood close hold (inquiry closed this round),thought balloon set down: could be, hunt over for now
+odohor,h,💭,may,MAY-who-knows,may mood who-knows hold (leave unsettled; may never know),thought balloon with a shrug: could be, and you are not seeking — including if you never know
+odohor,w,💭,may,MAY-who-knows,may mood who-knows hold (leave unsettled; may never know),thought balloon with a shrug: could be, and you are not seeking — including if you never know
 adadem,h,🎭,notional,NOTIONAL,notional mood soft hold (as-if framing held lightly),theater mask marks play; soft pretense is as-if without immersion
 adadem,w,🎭,notional,NOTIONAL,notional mood soft hold (as-if framing held lightly),theater mask marks play; soft pretense is as-if without immersion
 adadel,h,🎭,notional,NOTIONAL-fused,notional mood fused hold (immersed in imagined scene),theater mask covers the face; fused pretense immerses in the scene

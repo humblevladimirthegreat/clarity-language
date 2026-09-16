@@ -19,7 +19,7 @@ Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#a
 | **BECAUSE** | Clause-pole **`urugu`** (*because*) | [Causation](causation.md#because) |
 | **CAUSE** | Mechanism-framing mood **`egega`** | [Causation](causation.md#cause) |
 | **CIRCUM** | Emotion locus: charge on the situation | [Special vocabulary](special-vocabulary.md#emotion-compose) |
-| **MAY** | Potential mood **`odoho`** (*could be*; check / no hunt / close) | [Commentary](commentary.md#may) |
+| **MAY** | Potential mood **`odoho`** (*could be*; I'll find out / default / who knows) | [Commentary](commentary.md#may) |
 | **COMMON** | Universality: usual, exceptions expected | [Special vocabulary](special-vocabulary.md#universality) |
 | **DECISION** | Pick-firmness mood **`egege`** | [Plan / decision](plan-decision.md#decision) |
 | **EXTERNAL** | Emotion locus: charge at other people | [Special vocabulary](special-vocabulary.md#emotion-compose) |
@@ -377,7 +377,7 @@ A named citation as a hello (`azawan.`). Mid-word **`x`** plus **`a`** / **`o`**
 
 ### Hold
 
-**MAY** inquiry endings / **NOTIONAL** play endings.
+**MAY** find-out / who-knows endings / **NOTIONAL** play endings.
 
 [Commentary](commentary.md#may-hold)
 

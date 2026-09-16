@@ -4,6 +4,54 @@ This document contains a record of features that have been posted to the r/conla
 
 Use this document for styling examples when producing more posts, and seeing what has already been posted. New posts should be added at the top under this section.
 
+### *May* Says If You're Finding Out
+
+English *I think* often smuggles a **guess** (*I think Ululon is leaving* = maybe that is so) without saying whether you are checking, and rumination can sound like an investigation that never actually looks. Agalan keeps the ordinary verb (*leaves*, *punches*, *cries*) and adds a small `/h/` word **`odoho`** (**MAY**): the scene *could be* so. That is not a warrant, and it is not the verb *to think*.
+
+> `zululon hodohom vebarum duhubun.`
+>
+> z-Ululon | h-MAY | v-leave | d-Uhubun
+>
+> "Ululon may be leaving Uhubun."
+
+> `zazawan vodohol.`
+>
+> z-Azawan | v-thought
+>
+> "Azawan thinks." (an action of thinking, not MAY)
+
+The ending on that `/h/` word is what you are doing with the balloon **this sentence**. None of the three is the “correct” person:
+
+| Form | Stance | English |
+|------|--------|---------|
+| `hodohom` | *could be* (default) | *may* |
+| `hodohol` | seeking | *may — I'll find out* / *let's find out* |
+| `hodohor` | not seeking (including if you never know) | *may — who knows* |
+
+> `zululon hodohol vubunul dazawan.`
+>
+> z-Ululon | h-MAY-find-out | v-punch | d-Azawan
+>
+> "Ululon may be punching Azawan — I'll find out."
+
+> `zuhubun hodohor vogorol.`
+>
+> z-Uhubun | h-MAY-who-knows | v-cry
+>
+> "Uhubun may be crying — who knows."
+
+Same word on a yes/no ask when the question *is* the seeking:
+
+> `jol zazawan hodohol vubunul dululon.`
+>
+> j-question | z-Azawan | h-MAY-find-out | v-punch | d-Ululon
+>
+> "Might Azawan be punching Ululon? — let's find out."
+
+How you **know** a world-claim (live look, memory, hearsay, …) is a different inventory. MAY is only potential, plus whether you are going after it.
+
+Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/commentary.html#may
+
 ### Greetings Say What Kind of Talk This Is
 
 English *hi* is a blank check. It does not say whether you can stay, whether this is one question, whether the other person should wait, or whether you are only passing. People guess, over-commit, or get trapped in a doorway conversation they never agreed to.

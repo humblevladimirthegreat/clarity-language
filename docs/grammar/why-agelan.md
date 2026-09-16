@@ -116,7 +116,7 @@ It is easy to treat a looping *could be* as settled fact: mixing memory, hearsay
 
 Marking the channel helps you catch overconfidence and hearsay before you treat a take as settled fact.
 
-**For *could be*, use:** [MAY](commentary.md#may) (`odoho`). That marks potential, and whether this sentence hunts, sits, or closes the hunt. Evidentiality is how you know a world-claim. Ability *can* is not MAY.
+**For *could be*, use:** [MAY](commentary.md#may) (`odoho`). That marks potential, and whether this sentence finds out, stays at *may*, or leaves it at *who knows*. Evidentiality is how you know a world-claim. Ability *can* is not MAY.
 
 ### Intention, forecast, and firmness
 <a id="intention-forecast-and-firmness"></a>

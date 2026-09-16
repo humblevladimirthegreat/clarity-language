@@ -9,7 +9,7 @@ English *I think* often smuggles a **guess** (*I think Ululon is leaving Uhubun*
 ### MAY
 <a id="may"></a>
 
-When the scene **could be** so (rejection, a blow, a loss — not a warrant), keep the content verb (*leaves*, *punches*, *cries*) and add **`odoho`** as `/h/`. Start with **`hodohom`**: could be, and this sentence is **not** a hunt. (cue: 💭 *thought*: a balloon over the scene)
+When the scene **could be** so (rejection, a blow, a loss — not a warrant), keep the content verb (*leaves*, *punches*, *cries*) and add **`odoho`** as `/h/`. Start with **`hodohom`**: could be. (cue: 💭 *thought*: a balloon over the scene)
 
 The leaving or the blow is still the event named in the *could be*. Without the `/h/` word you are reporting what happens. The same root can still be ordinary content (`zodohol` *a thought*; `vodohol` *to think* as a deliberate action).
 
@@ -17,47 +17,47 @@ The leaving or the blow is still the event named in the *could be*. Without the 
 >
 > z-Ululon | h-MAY | v-leave | d-Uhubun
 >
-> "Ululon may be leaving Uhubun." — could be; no hunt (default)
+> "Ululon may be leaving Uhubun." — could be (default)
 
 **Compare with:** `zazawan vodohol.` is *Azawan thinks* (an action of thinking). **`hodohom`** is *the scene may be so*. A bare `zululon vebarum duhubun.` reports the leaving.
 
-The same `/h/` word can sit on a yes/no ask. Use **-l** when the ask *is* the hunt:
+The same `/h/` word can sit on a yes/no ask. Use **-l** when you are **finding out**:
 
 > `jol zazawan hodohol vubunul dululon.`
 >
-> j-question | z-Azawan | h-MAY-check | v-punch | d-Ululon
+> j-question | z-Azawan | h-MAY-find-out | v-punch | d-Ululon
 >
-> "Might Azawan be punching Ululon?" — could be, and I'm finding out
+> "Might Azawan be punching Ululon? — let's find out."
 
 ### Hold endings (MAY)
 <a id="may-hold"></a>
 
-On **`odoho`**, **-l / -m / -r** say what you are doing with that *could be* **this sentence**. None of them is the “correct” person: hunting, not hunting yet, and closing the hunt are all lawful. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
+On **`odoho`**, **-l / -m / -r** say what you are doing with that *could be* **this sentence**. None of them is the “correct” person: finding out, leaving it at *may*, and *who knows* are all lawful. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hodohom`** | could be; **no hunt** this sentence (default) | *may* / *could be* | `odohol` *thought* | 💭: balloon; you are not looking yet |
-| **`hodohol`** | could be, and you are **finding out** | *may — and I'm finding out* | `odohol` *thought* | 💭: balloon plus looking |
-| **`hodohor`** | could be; **inquiry closed** this round | *may — this hunt is over* | `odohol` *thought* | 💭: balloon set down |
+| **`hodohom`** | could be (default) | *may* / *could be* | `odohol` *thought* | 💭: balloon |
+| **`hodohol`** | could be, and you are **seeking** | *may — I'll find out* / *let's find out* | `odohol` *thought* | 💭: balloon plus looking |
+| **`hodohor`** | could be, and you are **not seeking** (including if you never know) | *may — who knows* | `odohol` *thought* | 💭: balloon with a shrug |
 
-When you are not sure, use **`hodohom`**. That is not wiser than looking (**-l**) or ending the hunt (**-r**); it is the grammar of *could be* with no check in this clause.
+When you are not sure, use **`hodohom`**. That is not wiser than finding out (**-l**) or *who knows* (**-r**); it is the grammar of *could be* without those stances.
 
 > `zululon hodohol vubunul dazawan.`
 >
-> z-Ululon | h-MAY-check | v-punch | d-Azawan
+> z-Ululon | h-MAY-find-out | v-punch | d-Azawan
 >
-> "Ululon may be punching Azawan — and I'm finding out."
+> "Ululon may be punching Azawan — I'll find out."
 
 > `zuhubun hodohor vogorol.`
 >
-> z-Uhubun | h-MAY-close | v-cry
+> z-Uhubun | h-MAY-who-knows | v-cry
 >
-> "Uhubun may be crying — this hunt is over."
+> "Uhubun may be crying — who knows."
 
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills for Beginner. Try each item before opening **Show answer**. Write **MAY** for *could be*; pick **-m** (no hunt), **-l** (finding out), or **-r** (hunt over). One item is thinking as an action, not MAY.
+Short drills for Beginner. Try each item before opening **Show answer**. Write **MAY** for *could be*; pick **-m** (default), **-l** (*I'll* / *let's find out*), or **-r** (*who knows*). One item is thinking as an action, not MAY.
 
 **Setting:** a café patio
 
@@ -74,15 +74,15 @@ Short drills for Beginner. Try each item before opening **Show answer**. Write *
 | *cry* | `vogorol` | |
 | *thought* (event) | `vodohol` | `odohol` *thought* |
 | *MAY* | `hodohom` | `odohol` *thought* |
-| *MAY-check* | `hodohol` | `odohol` *thought* |
-| *MAY-close* | `hodohor` | `odohol` *thought* |
+| *MAY-find-out* | `hodohol` | `odohol` *thought* |
+| *MAY-who-knows* | `hodohor` | `odohol` *thought* |
 | *punch* | `vubunul` | |
 | *scream* | `vazagal` | |
 | *fight* | `vuvugul` | |
 
 #### English → Agalan
 
-**1.** *Ululon may be seeing Uhubun.* (could be; no hunt)
+**1.** *Ululon may be seeing Uhubun.* (could be; default)
 
 ::: details Show answer
 `zululon hodohom vejel duhubun.`
@@ -106,20 +106,20 @@ z-Azawan | h-MAY | v-tell | d-Ululon
 z-Uhubun | h-MAY | v-leave | d-Azawan
 :::
 
-**4.** *Ululon may be punching Azawan — and I'm finding out.*
+**4.** *Ululon may be punching Azawan — I'll find out.*
 
 ::: details Show answer
 `zululon hodohol vubunul dazawan.`
 
-z-Ululon | h-MAY-check | v-punch | d-Azawan
+z-Ululon | h-MAY-find-out | v-punch | d-Azawan
 :::
 
-**5.** *Azawan may be crying — this hunt is over.*
+**5.** *Azawan may be crying — who knows.*
 
 ::: details Show answer
 `zazawan hodohor vogorol.`
 
-z-Azawan | h-MAY-close | v-cry
+z-Azawan | h-MAY-who-knows | v-cry
 :::
 
 **6.** *Azawan thinks.* (deliberate event, not MAY)
@@ -138,7 +138,7 @@ z-Azawan | v-thought
 z-Ululon | h-MAY | v-fight
 :::
 
-**8.** *Could Uhubun be screaming?* (yes/no; could be, no hunt)
+**8.** *Could Uhubun be screaming?* (yes/no; could be; default)
 
 ::: details Show answer
 `jol zuhubun hodohom vazagal.`
@@ -170,9 +170,9 @@ z-Azawan | h-MAY | v-see | d-Ululon
 
 ::: details Show answer
 
-z-Uhubun | h-MAY-check | v-leave | d-Azawan
+z-Uhubun | h-MAY-find-out | v-leave | d-Azawan
 
-*Uhubun may be leaving Azawan — and I'm finding out.*
+*Uhubun may be leaving Azawan — I'll find out.*
 :::
 
 **4.** `zululon vodohol.`
@@ -187,9 +187,9 @@ z-Ululon | v-thought
 
 ::: details Show answer
 
-z-Azawan | h-MAY-close | v-scream
+z-Azawan | h-MAY-who-knows | v-scream
 
-*Azawan may be screaming — this hunt is over.*
+*Azawan may be screaming — who knows.*
 :::
 
 **6.** `jol zululon hodohom vubunul dazawan.`
@@ -197,16 +197,16 @@ z-Azawan | h-MAY-close | v-scream
 ::: details Show answer
 
 j-question | z-Ululon | h-MAY | v-punch | d-Azawan
-*May Ululon be punching Azawan?* (could be; no hunt)
+*May Ululon be punching Azawan?* (could be; default)
 :::
 
 **7.** `zululon hodohol vuvugul.`
 
 ::: details Show answer
 
-z-Ululon | h-MAY-check | v-fight
+z-Ululon | h-MAY-find-out | v-fight
 
-*Ululon may be fighting — and I'm finding out.*
+*Ululon may be fighting — I'll find out.*
 :::
 
 **8.** `zuhubun hodohom vogorol.`
@@ -304,7 +304,7 @@ English sometimes frames the whole clause as play: *as if*, *for the sake of arg
 ### Hold endings (NOTIONAL)
 <a id="notional-hold"></a>
 
-Beginner already used **-l / -m / -r** on **MAY** for *finding out* / *no hunt* / *hunt over*. **NOTIONAL** reuses those letters for **play**, not for inquiry: light / immersed / mask off. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
+Beginner already used **-l / -m / -r** on **MAY** for *I'll find out* / default *may* / *who knows*. **NOTIONAL** reuses those letters for **play**, not for that stance: light / immersed / mask off. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
