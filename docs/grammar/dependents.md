@@ -350,7 +350,7 @@ Beginner used locked **`a`** (`darl` / `barl`) and *whether* **`dorl`**. Stand-i
 | **`e`** order | `der` | `derl` *to …* | `derm` *to …* (open) |
 | **`u`** undo | `dur` | `durl` *that not / lest …* | `durm` *lest …* (open) |
 
-The same grid uses **`b`** after a pole (`barl` / `berl` …). Everyday *because* / *if* / *although* stay **`barl` / `barm`**. **`holalam berl`** types the `/b/` clause as an aimed body. Do not put this family on `/x/` (clause *and* stays `xal` / `xan`).
+The same grid uses **`b`** after a pole (`barl` / `berl` / `burl` …). Everyday *because* / *if* / *although* stay **`barl` / `barm`**. **`holalam berl`** types the `/b/` clause as an aimed body; **`holalam burl`** types it as a body to keep off. Do not put this family on `/x/` (clause *and* stays `xal` / `xan`).
 
 > `zazawan bululon vezehel derl zululon vajul.`
 >
@@ -359,6 +359,24 @@ The same grid uses **`b`** after a pole (`barl` / `berl` …). Everyday *because
 > "Azawan tells Ululon to sit."
 
 The addressee is unhosted `/b/`. The inner `/z/` is still Ululon (English *to sit* drops that name). **`derl`** types the next sentence as an aim; the outer sentence stays a statement. Quotes of wording stay [spans](spans.md).
+
+English *lest* / *not to* (keep this from happening) uses vowel **`u`**: **`durl`**. Name the inner `/z/` again. The outer sentence stays a statement. *Don't sit!* as the whole move is still a [prohibition](clause.md#speech-act-beginner) (**`jul`**), not this stand-in.
+
+> `zazawan bululon vezehel durl zululon vajul.`
+>
+> z-Azawan | b-Ululon | v-tell | d-lest-clause | z-Ululon | v-sit
+>
+> "Azawan tells Ululon not to sit."
+
+When *so that* aims at keeping an outcome off, keep **`holalam`** and type `/b/` with **`burl`**:
+
+> `zazawan vawalal holalam burl zazawan vajul.`
+>
+> z-Azawan | v-walk | h-so-that | b-lest-clause | z-Azawan | v-sit
+>
+> "Azawan walks so as not to sit."
+
+**Compare with:** *tells that Ululon sits* is **`darl`**. *Tells Ululon to sit* is **`derl`**. *Walks so that Azawan sits* is **`holalam barl`**.
 
 ### Nested dependents
 <a id="nested-dependents"></a>
