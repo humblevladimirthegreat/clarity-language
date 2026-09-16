@@ -78,6 +78,12 @@ describe("classify", () => {
     assert.equal(word.rootGloss?.literal, "and (open)");
   });
 
+  it("darl is a stand-in, not a fence join", () => {
+    const word = expectReading("darl", "standIn");
+    assert.equal(word.family.kind, "joinMarker");
+    assert.equal(word.ending, "rl");
+  });
+
   it("restrictor on defined core hal", () => {
     expectReading("hal", "restrictor");
   });

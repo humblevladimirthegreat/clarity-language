@@ -31,6 +31,7 @@ import {
   WritingSpan,
   Z,
 } from "./tokens.js";
+import { isStandIn } from "./classify.js";
 import type {
   BodyClause,
   Clause,
@@ -522,14 +523,6 @@ function punctFromToken(token: IToken): PunctKind {
   return "bang";
 }
 
-function isOdoWord(word: LexWord): boolean {
-  if (word.family.kind === "content" && word.family.roots.length === 1) {
-    const root = word.family.roots[0];
-    return root === "adoro" || root === "orodo";
-  }
-  return false;
-}
-
 function npPackages(coord: NpCoord): NpPackage[] {
   return coord.parts.flatMap((part) =>
     part.items.filter((item): item is { kind: "package"; package: NpPackage } => item.kind === "package").map((item) => item.package),
@@ -538,9 +531,9 @@ function npPackages(coord: NpCoord): NpPackage[] {
 
 function unitContainsOdo(unit: Unit): boolean {
   if (unit.kind === "np") {
-    return npPackages(unit.coord).some((pkg) => isOdoWord(pkg.head));
+    return npPackages(unit.coord).some((pkg) => isStandIn(pkg.head));
   }
-  if (unit.kind === "h" && unit.unit.bound && isOdoWord(unit.unit.bound)) return true;
+  if (unit.kind === "h" && unit.unit.bound && isStandIn(unit.unit.bound)) return true;
   return false;
 }
 
@@ -612,7 +605,7 @@ function finalizeClause(units: Unit[]): Clause {
 
   const orodoUnit = resolved[orodoIdx]!;
 
-  if (orodoUnit.kind === "h" && orodoUnit.unit.bound && isOdoWord(orodoUnit.unit.bound)) {
+  if (orodoUnit.kind === "h" && orodoUnit.unit.bound && isStandIn(orodoUnit.unit.bound)) {
     const matrix = resolved.slice(0, orodoIdx + 1);
     const depUnits = resolved.slice(orodoIdx + 1);
     return {
@@ -624,24 +617,11 @@ function finalizeClause(units: Unit[]): Clause {
   let orodoLex: LexWord | undefined;
   if (orodoUnit.kind === "np") {
     for (const pkg of npPackages(orodoUnit.coord)) {
-      if (isOdoWord(pkg.head)) {
+      if (isStandIn(pkg.head)) {
         orodoLex = pkg.head;
         break;
       }
     }
-  }
-
-  const vpAfterOdo = resolved.findIndex((u, i) => i > orodoIdx && u.kind === "vp");
-  if (vpAfterOdo >= 0) {
-    const matrix = resolved.slice(0, vpAfterOdo + 1);
-    const depUnits = resolved.slice(vpAfterOdo + 1);
-    return {
-      units: matrix,
-      dependent:
-        depUnits.length > 0 && orodoLex
-          ? { orodo: orodoLex, clause: { units: depUnits } }
-          : undefined,
-    };
   }
 
   const matrix = resolved.slice(0, orodoIdx + 1);

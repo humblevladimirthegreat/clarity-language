@@ -169,7 +169,7 @@ You can name a list without saying which member you mean (*someone* / *something
 
 Write A and B, then `zar`: the join still ends both items, and **-r** means some member of that pair (you are not saying which).
 
-**Compare with:** on a content word, **-r** [resumes](pronouns.md) the last match. On a join, **-r** is an unspecified member.
+**Compare with:** on a content word, **-r** [resumes](pronouns.md) the last match. On a join, **-r** is an unspecified member. Standalone **`-rl` / `-rm`** (`darl`, `barl`) is a [stand-in](core.md#stand-in) for the next sentence, not a join and not *something*.
 
 ### Vowels and endings (recap)
 <a id="join-type-vowel-series"></a>
@@ -905,7 +905,7 @@ These limits apply to every join.
 
 **Compare with:** prefix-less **`al`** / **`am`** / … are [revisers](revisers.md). Under `/h/` `/w/`, the unit is a [restrictor](restrictors.md), not sibling *and*.
 
-*Because* / *if* use `/h/` plus `/b/` [**`adoro`**](core.md#dependent-clauses). Floating `/h/` inside a noun, adjective, or `/b/` join does not end the list. Verb-chain `/h/` scope: [VP and clause forms](#vp-clause-forms). Each clause-level item is a full clause body.
+*Because* / *if* use `/h/` plus `/b/` [**`barl`**](core.md#dependent-clauses). Floating `/h/` inside a noun, adjective, or `/b/` join does not end the list. Verb-chain `/h/` scope: [VP and clause forms](#vp-clause-forms). Each clause-level item is a full clause body.
 
 
 ### Translation practice

@@ -568,12 +568,24 @@ ForeignPayload
 // ── Join markers ────────────────────────────────────────────────────────────
 
 joinMarker
-  = series:JoinSeries ending:Ending WordEnd {
+  = series:StandInSeries cluster:StandInCoda WordEnd {
+      return {
+        ending: cluster,
+        family: { kind: "joinMarker", series },
+      };
+    }
+  / series:JoinSeries ending:Ending WordEnd {
       return {
         ending,
         family: { kind: "joinMarker", series },
       };
     }
+
+StandInSeries
+  = "a" / "e" / "o" / "u"
+
+StandInCoda
+  = "rl" / "rm"
 
 JoinSeries
   = "ao" / "ua" / "uo" / "ae" / "oe" / "ue" / "a" / "e" / "o" / "u"

@@ -153,6 +153,8 @@ const JOIN_ENDING_GLOSS: Record<string, string> = {
   m: "open",
   n: "named",
   r: "unspecified member",
+  rl: "stand-in locked",
+  rm: "stand-in open",
 };
 
 /** Fence-join gloss (not restrictors, join-acts, or `/j/` force/polar). */
@@ -162,9 +164,19 @@ export function joinFenceGloss(series: string, ending: string | undefined): stri
   return close ? `${job} (${close})` : job;
 }
 
+/** Stand-in (`darl` / `barl` / …): slot filled by the following sentence — not a join fence. */
+export function isStandIn(word: MorphWord): boolean {
+  if (word.family.kind !== "joinMarker") return false;
+  if (word.pos === "x" || word.pos === "j" || !word.pos) return false;
+  const series = word.family.series;
+  if (series !== "a" && series !== "o" && series !== "e" && series !== "u") return false;
+  return word.ending === "rl" || word.ending === "rm";
+}
+
 function isFenceJoin(word: MorphWord): boolean {
   if (word.family.kind !== "joinMarker") return false;
   if (!word.pos || word.pos === "j") return false;
+  if (isStandIn(word)) return false;
   return !isRestrictor(word);
 }
 
@@ -352,6 +364,10 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
     return { ...word, reading: "restrictor" };
   }
 
+  if (isStandIn(word) && word.family.kind === "joinMarker") {
+    return { ...word, reading: "standIn" };
+  }
+
   if (isFenceJoin(word) && word.family.kind === "joinMarker") {
     return {
       ...word,
@@ -404,6 +420,7 @@ export type ClassifyHit = {
     | "number"
     | "valueAbility"
     | "restrictor"
+    | "standIn"
     | "join"
     | "compoundLemma"
     | "published"
@@ -443,6 +460,10 @@ export function classifyHits(word: MorphWord, tables: ClassifyTables): ClassifyH
 
   if (isRestrictor(word)) {
     hits.push({ source: "restrictor", reading: "restrictor" });
+  }
+
+  if (isStandIn(word)) {
+    hits.push({ source: "standIn", reading: "standIn" });
   }
 
   if (isFenceJoin(word) && word.family.kind === "joinMarker") {

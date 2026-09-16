@@ -12,7 +12,7 @@ Each turn has: **Agalan** · **gloss** (PoS + English sense; see **[glosses.md](
 | B | **Ubunexunowen** | `ubune`×`unowe` (*hospitality*×*optimism*) | `zubur` / `dubur` / `jubur` … |
 | C | **Amadexonogon** | `amade`×`onogo` (*fellowship*×*bond*) | `zamar` / `damar` / `jamar` … |
 
-**Features touched:** vocatives; polar stance; `jol` / `jom` / `jel` / `jem` / `jum`; omissible `jal`; name **-r** (self / addressee / third); special **`aha`** (inclusive *we*); generic **`enenu`** / next-clause **`orodo`**; phrase joins + revisers; restrictors; values; evidentiality; MAY; plan/predict; causation; comparatives/equatives; numbered alternatives; ability; role compound; SAME; plurality **-x**; clause `xan`; linkers; `x#e-` / `x#e`; classification; emotion compose; universality; aside span; join-act verbs.
+**Features touched:** vocatives; polar stance; `jol` / `jom` / `jel` / `jem` / `jum`; omissible `jal`; name **-r** (self / addressee / third); special **`aha`** (inclusive *we*); generic **`enenu`** / next-clause **`darl`**; phrase joins + revisers; restrictors; values; evidentiality; MAY; plan/predict; causation; comparatives/equatives; numbered alternatives; ability; role compound; SAME; plurality **-x**; clause `xan`; linkers; `x#e-` / `x#e`; classification; emotion compose; universality; aside span; join-act verbs.
 
 ---
 
@@ -232,9 +232,9 @@ strict: *Please don't walk — you should protect competence.*
 
 loose: *Please don’t walk — stay able.*
 
-**A:** `jem zuzur zubur zamar zal dohohum vazanul hodom borodol zanunul.`
+**A:** `jem zuzur zubur zamar zal dohohum vazanul hadorom barl zanunul.`
 
-gloss: `j-request` · `z-←Uzuzuxogoven` · `z-←Ubunexunowen` · `z-←Amadexonogon` · `z-and` · `d-home` · `v-standing` · `h-if` · `b-next-clause` · `z-rain`
+gloss: `j-request` · `z-←Uzuzuxogoven` · `z-←Ubunexunowen` · `z-←Amadexonogon` · `z-and` · `d-home` · `v-standing` · `h-if` · `b-that-clause` · `z-rain`
 
 strict: *Please, let’s (A and B and C) stay standing at home if it rains.*
 
@@ -256,9 +256,9 @@ strict: *Usually, when it rains, a person does not walk.*
 
 loose: *Usually, when it rains, nobody walks.*
 
-**A:** `xezazal zuzur vezehel dorodol zubur guzumum.`
+**A:** `xezazal zuzur vezehel darl zubur guzumum.`
 
-gloss: `x-therefore` · `z-←Uzuzuxogoven` · `v-dialogue` · `d-next-clause` · `z-←Ubunexunowen` · `g-happy`
+gloss: `x-therefore` · `z-←Uzuzuxogoven` · `v-dialogue` · `d-that-clause` · `z-←Ubunexunowen` · `g-happy`
 
 strict: *Therefore I (A) say that that one (B) is happy.*
 
@@ -302,7 +302,7 @@ loose: *Ha — we're home.*
 | `ezehe` | speech; *dialogue* (metaphorical) |
 | `enenu` | someone (generic person) |
 | `aha` | interlocutors (inclusive *we*) |
-| `orodo` | next-clause |
+| `darl` | that-clause |
 | `alalu` | laugh; *amusement* (metaphorical) |
 | `uvuvu` / `erara` / `odoho` | fishing / ear / thought; *witnessed* / *told* / *MAY* (overlays) |
 | `olozo` | toolbox; *competence* (values) |

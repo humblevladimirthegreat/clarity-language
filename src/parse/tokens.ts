@@ -1,6 +1,7 @@
 import { createToken, type IToken, Lexer } from "chevrotain";
 
-import type { LexWord, MorphWord, PunctKind } from "./types.js";
+import type { LexWord, PunctKind } from "./types.js";
+import { isStandIn } from "./classify.js";
 
 /** Non-word surface atoms peeled before Peggy. */
 export type SurfaceAtom =
@@ -98,15 +99,6 @@ const CONTENT_BY_POS = {
   h: H,
 } as const;
 
-function isOdoWord(word: MorphWord): boolean {
-  const { family } = word;
-  if (family.kind === "content" && family.roots.length === 1) {
-    const root = family.roots[0];
-    return root === "adoro" || root === "orodo";
-  }
-  return false;
-}
-
 function isForceWord(word: LexWord): boolean {
   if (word.pos !== "j" || word.family.kind !== "joinMarker") return false;
   return word.family.series.length === 1;
@@ -129,6 +121,8 @@ export function classifyToTokenType(word: LexWord): AgelanTokenType {
   if (family.kind === "writingSpan") return WritingSpan;
   if (family.kind === "x" && family.xFamily === "span") return SpanOpen;
 
+  if (isStandIn(word)) return Odo;
+
   if (family.kind === "joinMarker" && reading === "join" && pos && pos in JOIN_BY_POS) {
     return JOIN_BY_POS[pos as keyof typeof JOIN_BY_POS];
   }
@@ -148,8 +142,6 @@ export function classifyToTokenType(word: LexWord): AgelanTokenType {
   }
 
   if (pos === "x" && isLinkerWord(word)) return Linker;
-
-  if (isOdoWord(word)) return Odo;
 
   if (pos && pos in CONTENT_BY_POS) {
     return CONTENT_BY_POS[pos as keyof typeof CONTENT_BY_POS];

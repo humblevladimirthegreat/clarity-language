@@ -160,21 +160,21 @@ A *…, yes?* confirm tag is its own next turn: finish the statement with a peri
 ### Embedded *whether*
 <a id="embedded-whether"></a>
 
-When the **outer** sentence is a claim (*Azawan sees…*, *Azawan tells Ululon…*) and English would say *whether*, keep [**`adoro`**](core.md#dependent-clauses) in the object slot and open the inner sentence with **`jol`** (or soft **`jom`**). The outer act stays a statement; do not put `?` on the whole stretch.
+When the **outer** sentence is a claim (*Azawan sees…*, *Azawan tells Ululon…*) and English would say *whether*, write [**`dorl`**](core.md#dependent-clauses) (soft **`dorm`**) in the object slot. The outer act stays a statement; do not put `?` on the whole stretch.
 
-> `zazawan vejel dadorol jol zululon vawalal.`
+> `zazawan vejel dorl zululon vawalal.`
 >
-> z-Azawan | v-see | d-next-clause | j-question | z-Ululon | v-walk
+> z-Azawan | v-see | d-whether-clause | z-Ululon | v-walk
 >
 > "Azawan sees whether Ululon walks."
 
-> `zazawan vejel dadorol jom zululon velebel.`
+> `zazawan vejel dorm zululon velebel.`
 >
-> z-Azawan | v-see | d-next-clause | j-soft-question | z-Ululon | v-sleep
+> z-Azawan | v-see | d-whether-clause.open | z-Ululon | v-sleep
 >
 > "Azawan sees whether Ululon sleeps, I wonder."
 
-**Compare with:** a matrix question (*Does Azawan walk?*) writes **`jol`** on the **outer** turn. *If Ululon walks* as a condition is **`hadorom badorol`**, not inner **`jol`**.
+**Compare with:** a matrix question (*Does Azawan walk?*) writes **`jol`** on the **outer** turn. *If Ululon walks* as a condition is **`hadorom barl`**, not inner **`jol`**.
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -792,6 +792,6 @@ j-question | z-clap | z-trophy | z-rank/more
 ## See also
 
 - [core.md](core.md#turn-j): turn vs continue; speech act
-- [core.md](core.md#dependent-clauses): *that* / *whether* after **`adoro`**
+- [core.md](core.md#dependent-clauses): *that* / *whether* after **`darl` / `dorl`**
 - [joins.md](joins.md): join fences; statement readings of **-r** / single-item / standalone
 - [pronouns.md](pronouns.md): content resume **-r** (fill-ask is join **-r**)

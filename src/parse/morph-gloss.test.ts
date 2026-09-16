@@ -116,8 +116,12 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("jol zar vawalal", "j-question | z-who | v-walk");
   });
 
-  it("next-clause adoro and hostless ABIL", () => {
-    expectLine("dadorol", "d-next-clause");
+  it("stand-in glosses and hostless ABIL", () => {
+    expectLine("darl", "d-that-clause");
+    expectLine("dorl", "d-whether-clause");
+    expectLine("derl", "d-to-clause");
+    expectLine("durl", "d-lest-clause");
+    expectLine("darm", "d-that-clause.open");
     expectLine("hegeraxel", "h-ABIL-unable-temporary");
   });
 

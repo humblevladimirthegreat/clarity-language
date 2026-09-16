@@ -152,29 +152,37 @@ describe("parse — joins.md", () => {
   });
 });
 
-describe("parse — orodo dependents", () => {
-  it("parses hurugum badorol dependent", () => {
-    const result = parseText("zazawan guzumum hurugum badorol zululon vawalal.");
+describe("parse — stand-in dependents", () => {
+  it("parses hurugum barl dependent", () => {
+    const result = parseText("zazawan guzumum hurugum barl zululon vawalal.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
-    assert.equal(clause.dependent!.orodo.raw, "badorol");
+    assert.equal(clause.dependent!.orodo.raw, "barl");
     assert.equal(clause.dependent!.clause.units.length, 2);
   });
 
-  it("parses holalam badorol purpose dependent", () => {
-    const result = parseText("zazawan vawalal holalam badorol zululon vajul.");
+  it("parses holalam barl purpose dependent", () => {
+    const result = parseText("zazawan vawalal holalam barl zululon vajul.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
-    assert.equal(clause.dependent!.orodo.raw, "badorol");
+    assert.equal(clause.dependent!.orodo.raw, "barl");
     assert.equal(clause.dependent!.clause.units.length, 2);
   });
 
-  it("parses content dorodol with matrix verb after orodo", () => {
-    const result = parseText("zazawan bululon dorodol vezehel zadagal vurunul.");
+  it("parses darl object with matrix verb before the opener", () => {
+    const result = parseText("zazawan bululon vezehel darl zadagal vurunul.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
     assert.equal(clause.units.some((u) => u.kind === "vp"), true);
+    assert.equal(clause.dependent!.orodo.raw, "darl");
     assert.equal(clause.dependent!.clause.units.length, 2);
+  });
+
+  it("parses dorl whether without inner jol", () => {
+    const result = parseText("zazawan vejel dorl zululon vawalal.");
+    const clause = result.utterances[0]!.bodies[0]!.clause;
+    assert.ok(clause.dependent);
+    assert.equal(clause.dependent!.orodo.raw, "dorl");
   });
 });
 

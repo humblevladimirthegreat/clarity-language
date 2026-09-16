@@ -21,7 +21,7 @@ Work **in list order**. Later items assume earlier ones are decided (taught, or 
 
 No new clause types. Unblocks locative talk and later relatives / paths.
 
-- [x] **1. Ditransitive / recipient.** Unhosted `/b/` (not immediately after `/ɡ/` or `/h/`) is the verb’s recipient / addressee; theme stays `/d/` (including **`adoro`**). Taught in [core extra nouns](../grammar/core.md#extra-nouns). Place goals stay item 2.
+- [x] **1. Ditransitive / recipient.** Unhosted `/b/` (not immediately after `/ɡ/` or `/h/`) is the verb’s recipient / addressee; theme stays `/d/` (including **`darl`**). Taught in [core extra nouns](../grammar/core.md#extra-nouns). Place goals stay item 2.
 
 - [x] **2. Locative relation set (thin).** Hosted `/h/` or `/ɡ/` + `/b/`. Inventory on [core locative relations](../grammar/core.md#locative-relations) (`ogore` *inside*, `ubuhu` *at*, `alade` *on*, `ebaru` *from*, `obowa` *toward*, `ezewu` *through*, `ejege` *out of*, `azadu` *between*). **Unblocks:** spatial *from–to* (item 9); *the house in which* (item 11).
 
@@ -41,7 +41,7 @@ No new clause types. Unblocks locative talk and later relatives / paths.
 
 - [x] **9. Spatial path *from A to B* (thin).** Two hosted locative `/h/` + `/b/` units (source, then goal). Heading = **`hobowam`**; reached point = **`hubuhum`**; ended inside = **`hogorem`**; *out of…into…* = **`hejegem`** then **`hogorem`**. Taught in [core spatial path](../grammar/core.md#spatial-path). Numeric *from 3 to 5* stays [ranges](../grammar/numbers-applied.md#ranges).
 
-- [x] **10. Embedded *whether* (thin).** **`adoro`** + inner **`jol`** / **`jom`** (outer act stays a statement). Taught in [core dependent clauses](../grammar/core.md#dependent-clauses) / [questions](../grammar/questions.md#embedded-whether). Not **`hadorom`** (*if*).
+- [x] **10. Embedded *whether* (thin).** **`dorl` / `dorm`** (outer act stays a statement). Taught in [core dependent clauses](../grammar/core.md#dependent-clauses) / [questions](../grammar/questions.md#embedded-whether). Not **`hadorom`** (*if*).
 
 ## Wave 3 — new clause types
 
@@ -49,7 +49,7 @@ Do not start remaining rows until Wave 1 extra nouns are the learner’s default
 
 - [x] **11. Noun-modifying relatives (refused).** No *that / who / which / whose* inside an NP. Identify with [two sentences](../grammar/core.md#which-noun) (resume **-r**), hosted `/ɡ/` + `/b/`, or a [role compound](../grammar/roles.md#role-compounds) on `/ɡ/` (`gaxajul` *sitter*, not `gajul` *chair*). Restrictors still limit **when a claim counts**.
 
-- [ ] **12. Infinitive / control (large).** **`adoro`** takes a **full next sentence**, not a subject-less verb. No *want to walk*, *ask Ululon to sit*. Event purpose *so that* / *in order to* is taught: **`holalam`** + `/b/` ([core so that](../grammar/core.md#so-that)); values **`xo`** stays need-motive. **Needs:** **`adoro`**. Decide control (*want* shares `/z/`) vs full clause.
+- [ ] **12. Infinitive / control (large).** **`derl`** types an aimed complement (*tell to sit*) as a **full next sentence**, not a subject-less verb. *Want to walk* still repeats inner `/z/` after **`darl`**. Event purpose *so that* stays **`holalam`** + `/b/`. Values **`xo`** stays need-motive. Subject-sharing control vs full clause still open.
 
 ## Wave 4 — optional systems
 
@@ -69,7 +69,7 @@ Decide **whether** to add. English helpers; not required by the `/b/` model. Lat
 | *because / if / although / while / until / before / after / so that* | Already [core](../grammar/core.md#dependent-clauses) / [causation](../grammar/causation.md) |
 | *can / will / should / may / have to* as dummy auxiliaries | [Ability](../grammar/ability.md), [plan-decision](../grammar/plan-decision.md), [values](../grammar/values.md), [MAY](../grammar/commentary.md#may) |
 | *that / who / which* inside an NP | Two sentences ([which noun](../grammar/core.md#which-noun)); hosted `/ɡ/` + `/b/`; role compound on `/ɡ/` |
-| *that* (finite complement) | **`adoro`** |
+| *that* (finite complement) | **`darl`** |
 | *as for / according to [Name]* | `hozal` + `/b/`; `/h/` + **-n** |
 
 ## Dependency sketch

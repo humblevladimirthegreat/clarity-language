@@ -25,7 +25,7 @@ Library-first multi-stage parser for CLI checks, fixtures that lock the grammar 
 | Layer | Library | Role |
 |-------|---------|------|
 | Word morph, number stems, writing forms | **[Peggy](https://peggyjs.org/)** | Ordered choice matches the [x-compounds decision order](../grammar/x-compounds.md#decision-order); generates JS + `.d.ts` at build time |
-| Sentence / joins / spans / `orodo` / framing | **[Chevrotain](https://chevrotain.io/)** | Grammar as TS; CST → sentence AST; operates on **typed word tokens**, not raw characters |
+| Sentence / joins / spans / stand-ins / framing | **[Chevrotain](https://chevrotain.io/)** | Grammar as TS; CST → sentence AST; operates on **typed word tokens**, not raw characters |
 | Overlays and open roots | CSV → `Map` | [`lexicon-overlays.csv`](../../data/lexicon-overlays.csv), [`lexicon-published.csv`](../../data/lexicon-published.csv), [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv) — classification, not parsing |
 | Anaphor / question / SHARED resolve | [`src/parse/resolve.ts`](../../src/parse/resolve.ts) | Discourse over a finished AST |
 
@@ -57,7 +57,7 @@ Agalan text
 │  Chevrotain — SentenceParser         │
 │  /j/ turns, /x/ continue             │
 │  right-close joins, span stacks      │
-│  ^ islands, orodo dependents           │
+│  ^ islands, stand-in dependents           │
 └──────────────────────────────────────┘
     │  ParseResult.utterances
     ▼
@@ -149,7 +149,7 @@ Owns:
 - Right-close joins at phrase / VP / clause level (illegal left fence)
 - Span open…close nesting; adjunct islands **`^ … ^`**
 - Complex `/ɡ|h/` + `/b/`; floating `/h/` as adjuncts
-- Matrix-final **`orodo`** + contiguous dependent
+- Matrix-final **stand-in** (`darl` / `barl`) + contiguous dependent
 
 Recovery is off. Illegal left fences, infix joins, and binderless islands throw `SentenceParseError`.
 
@@ -211,7 +211,7 @@ Canonical types: [`src/parse/types.ts`](../../src/parse/types.ts).
 
 - **`MorphWord`** — Stage 1: `pos`, `ending`, `plural`, `gl`, discriminated `family` (`content` / `number` / `x` / `spanClose` / `reviser` / `joinMarker` / `writingSpan` / `foreign`).
 - **`LexWord`** — Stage 2: `MorphWord` plus `reading`, optional `overlay` / `rootGloss`.
-- **Sentence AST** — `Utterance` → `BodyClause` → `Clause` (`units`, optional `orodo` `dependent`). Units: NP/VP coords, predicate `/ɡ/`, `/h/`, spans, islands, clause coords, revisers.
+- **Sentence AST** — `Utterance` → `BodyClause` → `Clause` (`units`, optional stand-in `dependent`). Units: NP/VP coords, predicate `/ɡ/`, `/h/`, spans, islands, clause coords, revisers.
 - **`ResolveInfo`** — `anaphors[]`, `asks[]` (`yesNo` / `fillAsk` / `none`), `shared[]` (`SharedRole`).
 
 ## Browser / bundle size
@@ -226,7 +226,7 @@ A production **parse** bundle is **not wired yet** (`build:lexicon-web` only bun
 
 - Peggy word grammar covers orthography, numbers (writing + speech), and [x-compounds](../grammar/x-compounds.md) decision order.
 - `classify` is table-driven from the lexicon CSVs. Overlay **`kind`** / **`gloss`** live on overlays only ([kinds](#overlay-kinds)).
-- Chevrotain sentence grammar covers framing, right-close joins, spans, islands, and **`orodo`** dependents.
+- Chevrotain sentence grammar covers framing, right-close joins, spans, islands, and **stand-in** dependents.
 - Public `parse(text)` returns a typed AST plus `resolve`; fixture tests drawn from `docs/grammar/`.
 - Peggy parser is pre-generated; `peggy` is a devDependency.
 - No ANTLR artifacts.

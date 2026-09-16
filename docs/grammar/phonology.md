@@ -80,6 +80,7 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`ohohulabede` *bedroom*) |
 | `-l` / `-m` / `-n` / `-r` | [reference suffix](reference-suffix.md) | audible end of the content word |
 | Optional `-x` | [plural](plurality.md) after the suffix | word-final `-lx` / `-mx` / `-nx` / `-rx` (letter `x`) |
+| Stand-in **`-rl` / `-rm`** | [dependent clauses](core.md#dependent-clauses) | word-final coda `rl` / `rm` (`darl`) |
 
 A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` are always followed by a vowel, so they start a syllable rather than sounding like a suffix (`zelulul`: prefix `z`, root `elulu`, ending `-l`). Spelling has one pronunciation path. Writing does not mark stress; musical rhythm may place emphasis.
 
@@ -164,9 +165,9 @@ Ordinary singing stays easier because of these shape choices:
 | No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the **word edge** |
 | No lexical stress | Music already places emphasis | Rhythm may stress a beat; spelling does not encode stress |
 | Spelling = pronunciation | You need not memorize special readings | One path from letters to sound |
-| Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-r` (optional `-x`) |
+| Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-r` (optional `-x`); stand-ins end in `-rl` / `-rm` |
 
-Legal clusters: left-hanging `gl-`; number-word role letter + `r`; word-final `-lx` / `-mx` / `-nx` / `-rx`.
+Legal clusters: left-hanging `gl-`; number-word role letter + `r`; word-final `-lx` / `-mx` / `-nx` / `-rx`; stand-in `-rl` / `-rm`.
 
 Sing a short Agalan line quickly at a high comfortable pitch:
 

@@ -53,7 +53,6 @@ const SPECIAL_PRONOUN: Record<string, string> = {
   edone: "listener",
   aha: "interlocutors",
   enenu: "someone",
-  adoro: "next-clause",
 };
 
 const LINKER_ENGLISH: Record<string, string> = {
@@ -741,6 +740,14 @@ function fenceJoinLabel(
   pos: Pos | undefined,
   ctx: MorphGlossContext,
 ): string {
+  if (ending === "rl" || ending === "rm") {
+    const open = ending === "rm" ? ".open" : "";
+    if (series === "o") return `whether-clause${open}`;
+    if (series === "e") return `to-clause${open}`;
+    if (series === "u") return `lest-clause${open}`;
+    return `that-clause${open}`;
+  }
+
   if (ending === "r") {
     if (ctx.fillAsk) {
       if (series === "u") return "who-else";
@@ -1062,7 +1069,6 @@ function rootSense(
     if (opts.named) return titleAgalanName(root, opts.nameLast !== false);
   }
 
-  if (root === "adoro") return SPECIAL_PRONOUN[root]!;
   if (tables.needGloss.has(root) && opts.need) {
     return tables.needGloss.get(root)!;
   }

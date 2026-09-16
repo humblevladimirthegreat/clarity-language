@@ -203,7 +203,7 @@ Kind / role as predicative `/ɡ/` (no *to-be* verb).
 
 ### Clause pole / NP pole
 
-Condition vs outcome as NPs vs full sentences after **`adoro`**. **Clause pole** is the causation reading. Concession **`ezeba`** uses the same NP vs clause split (*despite Ululon* vs *although Ululon walks*). Intended outcome **`olala`** uses it too (*for a money-bag* vs *so that Ululon sits*).
+Condition vs outcome as NPs vs full sentences after **`barl`**. **Clause pole** is the causation reading. Concession **`ezeba`** uses the same NP vs clause split (*despite Ululon* vs *although Ululon walks*). Intended outcome **`olala`** uses it too (*for a money-bag* vs *so that Ululon sits*).
 
 [Causation](causation.md)
 
@@ -271,13 +271,13 @@ Resume with a different PoS letter than the antecedent.
 
 [Pronouns](pronouns.md)
 
-### Dependent clause / **`adoro`**
+### Dependent clause
 
-Full sentence after **`adoro`** (last in the host slot). Inner **`jol`** / **`jom`** is English *whether* / *who*.
+A full sentence that fills a [stand-in](#stand-in) slot (`darl` / `barl` / `dorl` …). Last in the host slot; the dependent follows immediately.
 
 [Core](core.md#dependent-clauses)
 
-**Compare with:** English *the dog that runs* (which dog) is [which person or thing](core.md#which-noun), not **`adoro`**. Intended outcome *so that* is [**`holalam`**](core.md#so-that) plus **`adoro`** or a noun `/b/`.
+**Compare with:** English *the dog that runs* (which dog) is [which person or thing](core.md#which-noun), not a stand-in. Intended outcome *so that* is [**`holalam`**](core.md#so-that) plus **`barl`** or a noun `/b/`.
 
 ### Digitless
 
@@ -682,6 +682,14 @@ Typed cite / aside / mention / opaque fences; spoken opening word.
 [Spans](spans.md)
 
 **Compare with:** numeric from–to is a [range](#range-clockdate-range), not a span.
+
+### Stand-in
+
+Short word in a role slot (`darl` / `barl` / `dorl` / `derl` / `durl`, open **`-rm`**) that stands for the **following sentence**. Same vowel series as joins; not a join (joins close a list already said).
+
+[Core](core.md#stand-in)
+
+**Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause poles](#clause-pole--np-pole) (`hurugum`, `hadorom`) name the relation; the stand-in fills `/b/`.
 
 ### Special pronoun
 

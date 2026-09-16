@@ -78,7 +78,7 @@ Do **not** prefix the gloss with `gloss:`.
 
 Join morph **words** with **space + `|` + space** (`z-Azawan | v-walk`). Type it on a US keyboard (shift-backslash). Do **not** use middot (`·`): it is not on the keyboard and looks like a bullet.
 
-Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (already inside labels: `z-dog`, `next-clause`), or comma (already inside English). A spaced semicolon (` ; `) is a fine fallback if `|` is awkward in a table cell.
+Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (already inside labels: `z-dog`, `that-clause`), or comma (already inside English). A spaced semicolon (` ; `) is a fine fallback if `|` is awkward in a table cell.
 
 ## Strict vs loose free English
 <a id="strict-vs-loose-free-english"></a>
@@ -145,7 +145,7 @@ Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* s
 
 **Closed overlays** ([sense-form](../grammar/special-vocabulary.md#sense-form)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `MAY`, `SAME`, `plan`, `DECISION`, …). The Agalan letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `on` / …).
 
-**Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zugobon` / `zedonen` / `zahan` / `zenenun` / `…orodo…` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` / `…-next-clause` — never emoji etymology.
+**Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zugobon` / `zedonen` / `zahan` / `zenenun` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` — never emoji etymology. **Stand-ins** (`darl` / `dorl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
 
 ### Ordinary lexicon plus packed role English
 <a id="no-lexicon-pos-specials"></a>
@@ -181,7 +181,7 @@ Lexicon search indexes those lemmas. Morph uses the packed lemma for that role l
 ```
 
 - **PoS** — single letter matching the written prefix (`j` `z` `d` `b` `v` `g` `w` `h` `x`). Left-bound adjectives: `gl-…`.
-- **english** — short English label for the **active** sense (hyphens OK inside a label: `next-clause`, `or-exactly-one`). **Uninflected lemma** for verb senses ([english lemma](#english-lemma)). **No** Agalan root letters. **No** writing glyphs **`@`** / **`~`** (those mark **-n** / **-m** in Agalan spelling only: numbers, span fences).
+- **english** — short English label for the **active** sense (hyphens OK inside a label: `that-clause`, `or-exactly-one`). **Uninflected lemma** for verb senses ([english lemma](#english-lemma)). **No** Agalan root letters. **No** writing glyphs **`@`** / **`~`** (those mark **-n** / **-m** in Agalan spelling only: numbers, span fences).
 - **`-x-`** — mid-word compound / stance / role / span hinge; each piece is English (or a stable TAG).
 - **-l / -m / -n** — **omit**. They only choose which English sense-root is in play. Do not re-spell them as `-l` / `-m` / `-n` or as `@` / `~`.
 - **Names** — the english slot is the **English name** (`z-Azawan`, `z-Hamlet`, `z-Abogon`, `z-Uzuzu-x-Ogove`), not the virtue or kind that formed the stem, and not `z-grace@`.

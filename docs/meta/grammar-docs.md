@@ -171,7 +171,7 @@ Prefer commas, colons, parentheses, or separate sentences over em dashes. An em 
 <a id="page-skeleton"></a>
 
 1. **Title + one-line job** — the English job this page teaches (learner-facing). Sibling links only when the learner will reach for that form *now* — [Compare with](#compare-with), not “this page owns / does not own” fencing.
-2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → extra nouns + **`adoro`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
+2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → extra nouns + **`darl`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
 3. **`## Beginner` / `## Intermediate` / `## Advanced`** — per [learning-levels.md](learning-levels.md). Include **Advanced** only when that page has rare inventory to teach ([empty or pointless stages](#empty-stages)).
 4. Inside each stage: **concept → English job → Agalan shape → one consequence → 1–3 examples → (optional contrast) → full table if needed**. Cue in the same block or in the **Cue** column, not as the lead. Inside **Beginner**, H3 order is **dependency order for this page’s job** ([Beginner stage shape](#beginner-stage-shape)), not inventory order. On clause pages that is building a clause; citation notes are last (or already taught on [reference-suffix.md](../grammar/reference-suffix.md)). Later stages: [Intermediate and Advanced stage shape](#later-stage-shape). [Explain before you slogan](#explain-before-you-slogan).
 5. Optional **See also** at the end — a few precise related forms only; no long link walls in the lead (and no lead preview of later peers — [teach now; don’t preview later](#teach-now-dont-preview-later)).
@@ -214,7 +214,7 @@ Do **not** open Beginner with:
 
 **Inventory tables after one worked row.** A closed-form table with more than a few rows (subordinators, speech-act family, full PoS) follows **one** English job + example. Extra rows are “you can also say,” not equal first teaching.
 
-**Drills as a check.** After drafting Beginner, walk the [translation practice](translation-exercises.md): every taught H3 should appear in a drill, or get cut / demoted. Setup that only exists so a later drill parses (`/h/` + `/b/` before **`adoro`**) stays as the **minimum** needed for that drill.
+**Drills as a check.** After drafting Beginner, walk the [translation practice](translation-exercises.md): every taught H3 should appear in a drill, or get cut / demoted. Setup that only exists so a later drill parses (`/h/` + `/b/` before **`barl`**) stays as the **minimum** needed for that drill.
 
 ## Intermediate and Advanced stage shape
 <a id="later-stage-shape"></a>
@@ -229,7 +229,7 @@ Do **not** rerun [Beginner stage shape](#beginner-stage-shape) on later stages. 
 
 | Kind | When | Shape |
 |------|------|--------|
-| **New English job** | A construction they could not say after Beginner (soft speech acts, adjective before the noun, nested **`adoro`**) | Same lead order as Beginner: English job → Agalan shape → consequence, then **one** worked example, then the table or [Compare with](#compare-with). Cue last, not as the definition. Per-cell cues are optional. |
+| **New English job** | A construction they could not say after Beginner (soft speech acts, adjective before the noun, nested **`barl`**) | Same lead order as Beginner: English job → Agalan shape → consequence, then **one** worked example, then the table or [Compare with](#compare-with). Cue last, not as the definition. Per-cell cues are optional. |
 | **Finish the series** | The rest of a map they already use (full join single-item/standalone, remaining linkers, period/speech rhythm) | One short pointer (“Beginner already used *therefore*”) plus the inventory table. Do not unpack every row as its own H3. |
 | **Rare / stylistic Advanced** | Edge, meter, singing, uncommon variants | Inventory plus one example or one preference sentence. Skip per-cell cues. |
 
@@ -353,7 +353,7 @@ Do not merge (1)–(3) into a copula slogan (*X is Y*) or a packed imperative (*
 | Copula slogan: “the role letter is the job” | Equates a letter with an abstract label; never says *what you read off the letter* | “The first letter of the word tells you its role (subject, verb, …). Change only that letter when the same meaning plays a different role.” |
 | Packed prominence: “Put first what you want heard as the point” | “Point” is undefined; also smuggles free word order | First: roles stay on the letters, so order is free. Then: the leftmost content word is what you highlight (what the sentence is “about,” or the new information). |
 | Cue as definition: “**d** = done to” in the rule sentence | The pun is memorable only after “acted on” is taught | Teach *direct object = who or what is acted on*, then `(cue: **d** ≈ done to)`. |
-| Label = explanation: “The **boundary** is **`adoro`**.” | Names the form without saying what a boundary *does* | “The main sentence stops after **`adoro`**; the next full sentence is the content that **`adoro`** stands for.” |
+| Label = explanation: “The **boundary** is **`darl`**.” | Names the form without saying what a boundary *does* | “The main sentence stops after **`darl`**; the next full sentence is the content that **`darl`** stands for.” |
 | Omission as slogan: “**Leave `jal` out** when a period already marks a statement” | Assumes they know why `jal` exists | “A period already means ‘this is a statement,’ so you do not also write the statement word **`jal`**.” |
 
 **Test (slogan test):** cover the example block. Could a careful adult who has never opened this repo restate the rule in their own words from the lead alone? If they would have to guess what “job,” “point,” “setting,” or “body” means, unpack those words in the lead. A cue in parentheses does not count as unpacking. On Intermediate / Advanced **new-job** leads, they may already know Beginner terms; they must still get the **new** choice from the lead. Skip this test on finish-the-series tables.

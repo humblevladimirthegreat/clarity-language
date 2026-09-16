@@ -323,6 +323,18 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.deepEqual(word.family, { kind: "joinMarker", series: "a" });
   });
 
+  it("parses darl / darm as stand-ins (core.md stand-in)", () => {
+    const locked = parseOk("darl");
+    assert.equal(locked.pos, "d");
+    assert.equal(locked.ending, "rl");
+    assert.deepEqual(locked.family, { kind: "joinMarker", series: "a" });
+    const open = parseOk("dorl");
+    assert.equal(open.ending, "rl");
+    assert.deepEqual(open.family, { kind: "joinMarker", series: "o" });
+    const gist = parseOk("darm");
+    assert.equal(gist.ending, "rm");
+  });
+
   it("parses ordinary compound zuzuzuxogoven (x-compounds.md)", () => {
     const word = parseOk("zuzuzuxogoven");
     assert.deepEqual(word.family, {

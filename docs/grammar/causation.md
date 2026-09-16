@@ -232,21 +232,21 @@ z-Uhubun | v-tell | h-only-if | b-fire
 ### A following sentence
 <a id="dependent"></a>
 
-When the condition is a **full sentence**, keep the same pole and hang that sentence after **`adoro`**. Write the pole, then **`badorol`**, then the dependent. Keep that pair together, last in the main sentence (**`adoro`** last). Give the dependent its own act word only if the speech act differs. See [dependent clauses](core.md#dependent-clauses).
+When the condition is a **full sentence**, keep the same pole and hang that sentence after **`barl`**. Write the pole, then **`barl`**, then the dependent. Keep that pair together, last in the main sentence (**`barl`** last). Give the dependent its own act word only if the speech act differs. See [dependent clauses](core.md#dependent-clauses).
 
 ```
-main sentence …  hadorom / heberom / …  badorol   [dependent sentence]
+main sentence …  hadorom / heberom / …  barl   [dependent sentence]
 ```
 
-> `zazawan vawalal hadorom badorol zululon velebel.`
+> `zazawan vawalal hadorom barl zululon velebel.`
 >
-> z-Azawan | v-walk | h-if | b-next-clause | z-Ululon | v-sleep
+> z-Azawan | v-walk | h-if | b-that-clause | z-Ululon | v-sleep
 >
 > "Azawan walks if Ululon sleeps."
 
-> `zazawan vawalal heberom badorol zululon velebel.`
+> `zazawan vawalal heberom barl zululon velebel.`
 >
-> z-Azawan | v-walk | h-only-if | b-next-clause | z-Ululon | v-sleep
+> z-Azawan | v-walk | h-only-if | b-that-clause | z-Ululon | v-sleep
 >
 > "Azawan walks only if Ululon sleeps."
 
@@ -270,9 +270,9 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 | **`heberom hurugum` / `geberom gurugum`** | needed; condition asserted | *only because* / *depends on* | | 🧻 then 🧱: needed, and named as a fact |
 | **`hezazem` / `gezazem`** | both ways; condition not asserted | *if and only if* | `ezazel` *east-west* | ↔️: each side only with the other |
 
-> `zazawan vawalal hurugum badorol zululon velebel.`
+> `zazawan vawalal hurugum barl zululon velebel.`
 >
-> z-Azawan | v-walk | h-because | b-next-clause | z-Ululon | v-sleep
+> z-Azawan | v-walk | h-because | b-that-clause | z-Ululon | v-sleep
 >
 > "Azawan walks because Ululon sleeps."
 
@@ -282,9 +282,9 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 >
 > "Rain because of clouds."
 
-> `zazawan vawalal hezazem badorol zululon velebel.`
+> `zazawan vawalal hezazem barl zululon velebel.`
 >
-> z-Azawan | v-walk | h-iff | b-next-clause | z-Ululon | v-sleep
+> z-Azawan | v-walk | h-iff | b-that-clause | z-Ululon | v-sleep
 >
 > "Azawan walks if and only if Ululon sleeps."
 
@@ -317,7 +317,7 @@ To highlight **how** a result comes about (the mechanism, not only that a condit
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. A following sentence hangs after **`badorol`**. *Because* asserts the condition. *Iff* is both ways. *Only because* stacks **`heberom hurugum`**. **CAUSE** is **`hegegam`**.
+Short drills for Intermediate. Try each item before opening **Show answer**. A following sentence hangs after **`barl`**. *Because* asserts the condition. *Iff* is both ways. *Only because* stacks **`heberom hurugum`**. **CAUSE** is **`hegegam`**.
 
 **Setting:** a dam control room
 
@@ -342,40 +342,40 @@ Short drills for Intermediate. Try each item before opening **Show answer**. A f
 | *iff* | `hezazem` | `ezazel` *east-west* |
 | *because* | `hurugum` | `urugul` *brick* |
 | *CAUSE* | `hegegam` | `egegal` *gear* |
-| *next clause* | `adorol` | `adorol` *door* |
+| *that-clause* | `barl` | |
 
 #### English → Agalan
 
 **1.** *Azawan sits if Uhubun sees.*
 
 ::: details Show answer
-`zazawan vajul hadorom badorol zuhubun vejel.`
+`zazawan vajul hadorom barl zuhubun vejel.`
 
-z-Azawan | v-sit | h-if | b-next-clause | z-Uhubun | v-see
+z-Azawan | v-sit | h-if | b-that-clause | z-Uhubun | v-see
 :::
 
 **2.** *Uhubun tells only if Azawan sits.*
 
 ::: details Show answer
-`zuhubun vezehel heberom badorol zazawan vajul.`
+`zuhubun vezehel heberom barl zazawan vajul.`
 
-z-Uhubun | v-tell | h-only-if | b-next-clause | z-Azawan | v-sit
+z-Uhubun | v-tell | h-only-if | b-that-clause | z-Azawan | v-sit
 :::
 
 **3.** *Ululon pours if and only if Azawan sits.*
 
 ::: details Show answer
-`zululon vorurul hezazem badorol zazawan vajul.`
+`zululon vorurul hezazem barl zazawan vajul.`
 
-z-Ululon | v-pour | h-iff | b-next-clause | z-Azawan | v-sit
+z-Ululon | v-pour | h-iff | b-that-clause | z-Azawan | v-sit
 :::
 
 **4.** *Uhubun tells because Ululon pours.*
 
 ::: details Show answer
-`zuhubun vezehel hurugum badorol zululon vorurul.`
+`zuhubun vezehel hurugum barl zululon vorurul.`
 
-z-Uhubun | v-tell | h-because | b-next-clause | z-Ululon | v-pour
+z-Uhubun | v-tell | h-because | b-that-clause | z-Ululon | v-pour
 :::
 
 **5.** *A bell because of pressure.*
@@ -389,9 +389,9 @@ z-bell | g-because | b-pressure
 **6.** *Azawan sits only because Uhubun sees.*
 
 ::: details Show answer
-`zazawan vajul heberom hurugum badorol zuhubun vejel.`
+`zazawan vajul heberom hurugum barl zuhubun vejel.`
 
-z-Azawan | v-sit | h-only-if | h-because | b-next-clause | z-Uhubun | v-see
+z-Azawan | v-sit | h-only-if | h-because | b-that-clause | z-Uhubun | v-see
 :::
 
 **7.** *Ululon runs if there is flooding (as mechanism).*
@@ -404,38 +404,38 @@ z-Ululon | v-run | h-CAUSE | h-if | b-flood
 
 #### Agalan → English
 
-**1.** `zuhubun vajul hadorom badorol zululon vejel.`
+**1.** `zuhubun vajul hadorom barl zululon vejel.`
 
 ::: details Show answer
 
-z-Uhubun | v-sit | h-if | b-next-clause | z-Ululon | v-see
+z-Uhubun | v-sit | h-if | b-that-clause | z-Ululon | v-see
 
 *Uhubun sits if Ululon sees.*
 :::
 
-**2.** `zazawan vorurul heberom badorol zuhubun vezehel.`
+**2.** `zazawan vorurul heberom barl zuhubun vezehel.`
 
 ::: details Show answer
 
-z-Azawan | v-pour | h-only-if | b-next-clause | z-Uhubun | v-tell
+z-Azawan | v-pour | h-only-if | b-that-clause | z-Uhubun | v-tell
 
 *Azawan pours only if Uhubun tells.*
 :::
 
-**3.** `zazawan vezehel hezazem badorol zuhubun vejel.`
+**3.** `zazawan vezehel hezazem barl zuhubun vejel.`
 
 ::: details Show answer
 
-z-Azawan | v-tell | h-iff | b-next-clause | z-Uhubun | v-see
+z-Azawan | v-tell | h-iff | b-that-clause | z-Uhubun | v-see
 
 *Azawan tells if and only if Uhubun sees.*
 :::
 
-**4.** `zululon vurunul hurugum badorol zogegam.`
+**4.** `zululon vurunul hurugum barl zogegam.`
 
 ::: details Show answer
 
-z-Ululon | v-run | h-because | b-next-clause | z-flood
+z-Ululon | v-run | h-because | b-that-clause | z-flood
 
 *Ululon runs because of flooding.*
 :::
@@ -449,11 +449,11 @@ z-flood | g-because | b-pressure
 *Flooding because of pressure.*
 :::
 
-**6.** `zuhubun vezehel heberom hurugum badorol zululon vorurul.`
+**6.** `zuhubun vezehel heberom hurugum barl zululon vorurul.`
 
 ::: details Show answer
 
-z-Uhubun | v-tell | h-only-if | h-because | b-next-clause | z-Ululon | v-pour
+z-Uhubun | v-tell | h-only-if | h-because | b-that-clause | z-Ululon | v-pour
 
 *Uhubun tells only because Ululon pours.*
 :::
@@ -475,22 +475,22 @@ z-Ululon | v-pour | h-CAUSE | h-if | b-flood
 
 English *because* and *if* can hide whether you **assert the dependent as a world fact**. Agalan puts that choice on the pole: **`hurugum`** asserts the condition as the reason the outcome rests on; **`hadorom`** does not (the outcome is under that opportunity). *Only if* vs *only because* is the same factivity split on the necessary pole.
 
-> `zazawan vawalal hurugum badorol zanunul.`
+> `zazawan vawalal hurugum barl zanunul.`
 >
-> z-Azawan | v-walk | h-because | b-next-clause | z-rain
+> z-Azawan | v-walk | h-because | b-that-clause | z-rain
 >
 > "Azawan walks because it rains." Rain is asserted as the reason.
 
-> `zazawan vawalal hadorom badorol zanunul.`
+> `zazawan vawalal hadorom barl zanunul.`
 >
-> z-Azawan | v-walk | h-if | b-next-clause | z-rain
+> z-Azawan | v-walk | h-if | b-that-clause | z-rain
 >
 > "Azawan walks if it rains." Rain is not asserted; the main sentence is under that opportunity.
 
 #### Epistemic *because* (no twin root)
 <a id="epistemic-because"></a>
 
-English often uses *because* for **speaker grounds** (*they may be leaving because Q*) without treating Q as a world-fact that grounds P. Put [MAY](commentary.md#may) (`hodohom`, …) on the main sentence for the *could be*. Add **`hurugum badorol`** only when Q is also asserted as a world-foundation.
+English often uses *because* for **speaker grounds** (*they may be leaving because Q*) without treating Q as a world-fact that grounds P. Put [MAY](commentary.md#may) (`hodohom`, …) on the main sentence for the *could be*. Add **`hurugum barl`** only when Q is also asserted as a world-foundation.
 
 > `zululon hodohom vebarum duhubun.`
 >
@@ -500,7 +500,7 @@ English often uses *because* for **speaker grounds** (*they may be leaving becau
 
 **For *could be*, use:** [MAY](commentary.md#may) (`odoho`). **`hurugum`** is world-reason under the claim.
 
-**Related form:** *P, since / given that Q* (Q already shared) still uses **`hurugum badorol`**; soften with evidential `/h/` if the warrant is tentative.
+**Related form:** *P, since / given that Q* (Q already shared) still uses **`hurugum barl`**; soften with evidential `/h/` if the warrant is tentative.
 
 ### Stacks (evidentiality, CAUSE, habit)
 <a id="stacks"></a>
@@ -518,11 +518,11 @@ A one-off episode and a standing pattern use the same poles. Add extra `/h/` wor
 ### English → Agalan
 <a id="english-cues"></a>
 
-Time and discourse dependents use the same **`adoro`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a pole root.
+Time and discourse dependents use the same **`barl`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a pole root.
 
 | English | Agalan |
 |---------|---------|
-| *although* / *while* / *until* / *before* / *after* | same `/h/`+**`adoro`** shape, **-m** ([dependent clauses](core.md#dependent-clauses)): **`hezebam`** / **`hegemum`** / … |
+| *although* / *while* / *until* / *before* / *after* | same `/h/`+**`barl`** shape, **-m** ([dependent clauses](core.md#dependent-clauses)): **`hezebam`** / **`hegemum`** / … |
 | *so that* / *in order to* | same shape: **`holalam`** ([so that](core.md#so-that)); NP intended get = **`holalam`** + `/b/` **noun** |
 | *despite* (NP) | same **`hezebam`** (or **`gezebam`**) + `/b/` **noun**, not a second pole |
 | *therefore* (discourse) | **`xezazal`** ([continue](core.md#continue-x)) |
@@ -560,17 +560,17 @@ Short drills for Advanced. Try each item before opening **Show answer**. **`huru
 **1.** *Ululon pours because Uhubun sees.* (the seeing is asserted)
 
 ::: details Show answer
-`zululon vorurul hurugum badorol zuhubun vejel.`
+`zululon vorurul hurugum barl zuhubun vejel.`
 
-z-Ululon | v-pour | h-because | b-next-clause | z-Uhubun | v-see
+z-Ululon | v-pour | h-because | b-that-clause | z-Uhubun | v-see
 :::
 
 **2.** *Azawan pours if there is a test-tube.* (the test-tube is not asserted)
 
 ::: details Show answer
-`zazawan vorurul hadorom badorol zezubel.`
+`zazawan vorurul hadorom barl zezubel.`
 
-z-Azawan | v-pour | h-if | b-next-clause | z-test-tube
+z-Azawan | v-pour | h-if | b-that-clause | z-test-tube
 :::
 
 **3.** *Azawan may be pouring.* (*could be*, not a world-reason)
@@ -584,9 +584,9 @@ z-Azawan | h-MAY | v-pour
 **4.** *Azawan may be sitting, because Ululon pours.*
 
 ::: details Show answer
-`zazawan hodohom vajul hurugum badorol zululon vorurul.`
+`zazawan hodohom vajul hurugum barl zululon vorurul.`
 
-z-Azawan | h-MAY | v-sit | h-because | b-next-clause | z-Ululon | v-pour
+z-Azawan | h-MAY | v-sit | h-because | b-that-clause | z-Ululon | v-pour
 :::
 
 **5.** *Melt if there is fire, as a standing pattern.*
@@ -607,20 +607,20 @@ z-fire | g-only-if | b-lab-coat | h-CAUSE
 
 #### Agalan → English
 
-**1.** `zazawan vorurul hurugum badorol zurel.`
+**1.** `zazawan vorurul hurugum barl zurel.`
 
 ::: details Show answer
 
-z-Azawan | v-pour | h-because | b-next-clause | z-fire
+z-Azawan | v-pour | h-because | b-that-clause | z-fire
 
 *Azawan pours because there is fire.*
 :::
 
-**2.** `zululon vorurul hadorom badorol zezubel.`
+**2.** `zululon vorurul hadorom barl zezubel.`
 
 ::: details Show answer
 
-z-Ululon | v-pour | h-if | b-next-clause | z-test-tube
+z-Ululon | v-pour | h-if | b-that-clause | z-test-tube
 
 *Ululon pours if there is a test-tube.*
 :::
@@ -634,11 +634,11 @@ z-Uhubun | h-MAY | v-see
 *Uhubun may be seeing.*
 :::
 
-**4.** `zululon hodohom vorurul hurugum badorol zuhubun vejel.`
+**4.** `zululon hodohom vorurul hurugum barl zuhubun vejel.`
 
 ::: details Show answer
 
-z-Ululon | h-MAY | v-pour | h-because | b-next-clause | z-Uhubun | v-see
+z-Ululon | h-MAY | v-pour | h-because | b-that-clause | z-Uhubun | v-see
 
 *Ululon may be pouring, because Uhubun sees.*
 :::
@@ -652,11 +652,11 @@ z-lab-coat | g-if | b-fire | h-always
 *A lab coat if there is fire, as a standing pattern.*
 :::
 
-**6.** `zuhubun vorurul hegegam hurugum badorol zurel.`
+**6.** `zuhubun vorurul hegegam hurugum barl zurel.`
 
 ::: details Show answer
 
-z-Uhubun | v-pour | h-CAUSE | h-because | b-next-clause | z-fire
+z-Uhubun | v-pour | h-CAUSE | h-because | b-that-clause | z-fire
 
 *Uhubun pours because there is fire (as mechanism).*
 :::
@@ -666,4 +666,4 @@ z-Uhubun | v-pour | h-CAUSE | h-because | b-next-clause | z-fire
 - Inclusive single-item **`…aom` / `…aol`** (*at least X* / *X is enough*): [joins.md](joins.md#single-item-phrase)
 - Join-relations **`han` / `huan` / `hon`**: [join-extras.md](join-extras.md#join-relations)
 - Restrictors **`hal` / `hual`**: [restrictors.md](restrictors.md)
-- Dependent clauses / **`adoro`**: [core.md](core.md#dependent-clauses)
+- Dependent clauses / **`barl`**: [core.md](core.md#dependent-clauses)
