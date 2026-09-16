@@ -15,7 +15,7 @@ To say what someone **means to do**, use the closed mood root **`owora`**. Spell
 >
 > z-Azawan | h-plan-sketch | v-walk
 >
-> "Azawan means to walk." (direction only; default)
+> "Azawan intends to walk."
 
 Ordinary content stays available (`zoworal` *a map*; `voworal` *to plan*). Leave PLAN off when you are not framing intention.
 
@@ -23,25 +23,27 @@ Ordinary content stays available (`zoworal` *a map*; `voworal` *to plan*). Leave
 <a id="plan-map-resolution"></a>
 <a id="plan-endings"></a>
 
-On **`owora`**, **-l / -m / -r** say **how fully drawn** the intention is: direction only, steps filled in, or a backup path if the first course fails. **-n** is ordinary [proper](reference-suffix.md#proper-name--n). When you are unsure how detailed the course is, prefer **`howoram`**.
+On **`owora`**, **-l / -m / -r** say **how fully drawn** the intention is: a heading, steps filled in, or a map that already includes backups. That split is a reminder of **how prepared** you are. **-n** is ordinary [proper](reference-suffix.md#proper-name--n). When you are unsure how detailed the course is, prefer **`howoram`**.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`howoram`** | **sketch** (soft default) | direction only: *means to …* without steps | `oworal` *world-map* | 🗺️: the route is drawn, not the stops |
-| **`howoral`** | **itinerary** | steps filled in: *how* is on the map | `oworal` *world-map* | 🗺️: every stop is on the map |
-| **`howorar`** | **fork** | backup path: *if not A, then B* | `oworal` *world-map* | 🗺️: another path if the first fails |
+| **`howoram`** | **sketch** (soft default) | *intends to …* — heading only, steps not filled in | `oworal` *world-map* | **-m** ≈ map (outline only) |
+| **`howoral`** | **itinerary** | *plans to …* — step-by-step plan | `oworal` *world-map* | **-l** ≈ list (every stop in a line) |
+| **`howorar`** | **atlas** | *is fully prepared to …* — hurdles are anticipated and prepared for | `oworal` *world-map* | **-r** ≈ routes (detours already drawn) |
 
 > `zululon howoral vawalal.`
 >
 > z-Ululon | h-plan-itinerary | v-walk
 >
-> "Ululon’s itinerary is to walk." (steps on the map)
+> "Ululon plans to walk."
 
 > `zuhubun howorar vawalal.`
 >
-> z-Uhubun | h-plan-fork | v-walk
+> z-Uhubun | h-plan-atlas | v-walk
 >
-> "If that path fails, Uhubun will walk." (backup course)
+> "Uhubun is fully prepared to walk."
+
+Saying *I will* in English can hide whether you only intend a heading, you have the steps, or you are fully prepared. Picking the ending makes that preparation audible.
 
 ### Predict
 <a id="predict"></a>
@@ -52,9 +54,9 @@ To say **what will happen** in the world (rain, a result), not what someone mean
 >
 > h-predict | v-rain
 >
-> "Forecast: it rains."
+> "I predict rain."
 
-**Compare with:** English *will* as *means to …* uses [PLAN](#plan-predict) (`howoram` / `howoral` / `howorar`). PREDICT is the world forecast, not someone’s course.
+**Compare with:** English *will* as *intends to …* / *plans to …* uses [PLAN](#plan-predict) (`howoram` / `howoral` / `howorar`). PREDICT is the world forecast, not someone’s course.
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -80,7 +82,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### English → Agalan
 
-**1.** *Azawan means to sit.* (direction only)
+**1.** *Azawan intends to sit.*
 
 ::: details Show answer
 `zazawan howoram vajul.`
@@ -88,7 +90,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 z-Azawan | h-plan-sketch | v-sit
 :::
 
-**2.** *Ululon means to see a pawn.*
+**2.** *Ululon intends to see a pawn.*
 
 ::: details Show answer
 `zululon howoram degezal vejel.`
@@ -96,7 +98,7 @@ z-Azawan | h-plan-sketch | v-sit
 z-Ululon | h-plan-sketch | d-pawn | v-see
 :::
 
-**3.** *Azawan’s itinerary is to tell Uhubun.*
+**3.** *Azawan plans to tell Uhubun.*
 
 ::: details Show answer
 `zazawan howoral duhubun vezehel.`
@@ -104,7 +106,7 @@ z-Ululon | h-plan-sketch | d-pawn | v-see
 z-Azawan | h-plan-itinerary | d-Uhubun | v-tell
 :::
 
-**4.** *Forecast: Azawan sits.*
+**4.** *I predict Azawan sits.*
 
 ::: details Show answer
 `zazawan helezom vajul.`
@@ -112,7 +114,7 @@ z-Azawan | h-plan-itinerary | d-Uhubun | v-tell
 z-Azawan | h-predict | v-sit
 :::
 
-**5.** *Uhubun’s itinerary is to see Azawan.*
+**5.** *Uhubun plans to see Azawan.*
 
 ::: details Show answer
 `zuhubun howoral dazawan vejel.`
@@ -120,15 +122,15 @@ z-Azawan | h-predict | v-sit
 z-Uhubun | h-plan-itinerary | d-Azawan | v-see
 :::
 
-**6.** *If that path fails, Ululon will punch Azawan.* (backup course)
+**6.** *Ululon is fully prepared to punch Azawan.*
 
 ::: details Show answer
 `zululon howorar dazawan vubunul.`
 
-z-Ululon | h-plan-fork | d-Azawan | v-punch
+z-Ululon | h-plan-atlas | d-Azawan | v-punch
 :::
 
-**7.** *Forecast: Ululon screams.*
+**7.** *I predict Ululon screams.*
 
 ::: details Show answer
 `zululon helezom vazagal.`
@@ -136,12 +138,12 @@ z-Ululon | h-plan-fork | d-Azawan | v-punch
 z-Ululon | h-predict | v-scream
 :::
 
-**8.** *If that path fails, Ululon will fight.*
+**8.** *Ululon is fully prepared to fight.*
 
 ::: details Show answer
 `zululon howorar vuvugul.`
 
-z-Ululon | h-plan-fork | v-fight
+z-Ululon | h-plan-atlas | v-fight
 :::
 
 #### Agalan → English
@@ -152,7 +154,7 @@ z-Ululon | h-plan-fork | v-fight
 
 z-Ululon | h-plan-sketch | v-sit
 
-*Ululon means to sit.*
+*Ululon intends to sit.*
 :::
 
 **2.** `zazawan howoram degezal vejel.`
@@ -161,7 +163,7 @@ z-Ululon | h-plan-sketch | v-sit
 
 z-Azawan | h-plan-sketch | d-pawn | v-see
 
-*Azawan means to see a pawn.*
+*Azawan intends to see a pawn.*
 :::
 
 **3.** `zuhubun howoral dazawan vezehel.`
@@ -170,7 +172,7 @@ z-Azawan | h-plan-sketch | d-pawn | v-see
 
 z-Uhubun | h-plan-itinerary | d-Azawan | v-tell
 
-*Uhubun’s itinerary is to tell Azawan.*
+*Uhubun plans to tell Azawan.*
 :::
 
 **4.** `helezom vajul.`
@@ -179,7 +181,7 @@ z-Uhubun | h-plan-itinerary | d-Azawan | v-tell
 
 h-predict | v-sit
 
-*Forecast: someone sits.*
+*I predict someone sits.*
 :::
 
 **5.** `zazawan howoram duhubun vezehel.`
@@ -188,7 +190,7 @@ h-predict | v-sit
 
 z-Azawan | h-plan-sketch | d-Uhubun | v-tell
 
-*Azawan means to tell Uhubun.*
+*Azawan intends to tell Uhubun.*
 :::
 
 **6.** `zululon howoral degezal vejel.`
@@ -197,16 +199,16 @@ z-Azawan | h-plan-sketch | d-Uhubun | v-tell
 
 z-Ululon | h-plan-itinerary | d-pawn | v-see
 
-*Ululon’s itinerary is to see a pawn.*
+*Ululon plans to see a pawn.*
 :::
 
 **7.** `zuhubun howorar vazagal.`
 
 ::: details Show answer
 
-z-Uhubun | h-plan-fork | v-scream
+z-Uhubun | h-plan-atlas | v-scream
 
-*If that path fails, Uhubun will scream.*
+*Uhubun is fully prepared to scream.*
 :::
 
 **8.** `helezom vuvugul.`
@@ -215,7 +217,7 @@ z-Uhubun | h-plan-fork | v-scream
 
 h-predict | v-fight
 
-*Forecast: someone fights.*
+*I predict someone fights.*
 :::
 
 ## Intermediate
@@ -233,9 +235,9 @@ Ordinary content is still available (`zegegel` *a checkmark*; `vegegel` *to chec
 >
 > z-Ululon | h-DECISION-modifiable | v-sing
 >
-> "Ululon has decided to sing, still open to revision." (default)
+> "Ululon has decided to sing, and can still change that."
 
-**Not the same job as:** [PLAN](#plan-predict) (how fully drawn the course is). This mood marks how revisable the pick is.
+**Not the same job as:** [PLAN](#plan-predict) (how fully drawn the course is — how prepared you are). This mood marks how revisable the pick is.
 
 #### Endings — changeability
 <a id="decision-changeability"></a>
@@ -244,9 +246,9 @@ On **`egege`**, **-l / -m / -r** match unmet [changeability](values.md#value-cha
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`hegegel`** | **irreversible** | settled / final as far as you can tell | **-l** hard / locked |
-| **`hegegem`** | **modifiable** (soft default if unknown) | open to revision | **-m** open to change |
-| **`hegeger`** | **temporary** | pick for this moment; usually revisable later | **-r** light / this-moment only |
+| **`hegegel`** | **irreversible** | *has decided for good to …* | **-l** hard / locked |
+| **`hegegem`** | **modifiable** (soft default if unknown) | *has decided to …, and can still change that* | **-m** open to change |
+| **`hegeger`** | **temporary** | *has decided for now to …* | **-r** light / this-moment only |
 
 You can stack this mood after [PLAN](#plan-predict) when the clause needs both map grain and pick firmness:
 
@@ -254,7 +256,7 @@ You can stack this mood after [PLAN](#plan-predict) when the clause needs both m
 >
 > z-Azawan | h-plan-itinerary | h-DECISION-irreversible | v-walk
 >
-> "Azawan’s itinerary is to walk, and the pick is settled."
+> "Azawan plans to walk, and that choice is final."
 
 ### Forecast source
 <a id="predict-evidentiality"></a>
@@ -265,7 +267,7 @@ When you mark **how** you forecast (a usual pattern, an inference, and so on), k
 >
 > h-predict | h-PATTERN | v-rain
 >
-> "Forecast from pattern: it rains."
+> "From the usual pattern, I predict rain."
 
 **Compare with:** a pattern or [LIVE](commentary.md#live-vs-memory) claim about *this stretch* uses [evidentiality](commentary.md#evidentiality) on the content verb alone (**`hadezem`** if you are observing it now; **`huvuvum`** if you remember observing it). Add **PREDICT** when the claim is a world forecast.
 
@@ -299,7 +301,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agalan
 
-**1.** *Ululon has decided to sit, still open to revision.*
+**1.** *Ululon has decided to sit, and can still change that.*
 
 ::: details Show answer
 `zululon hegegem vajul.`
@@ -307,7 +309,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Ululon | h-DECISION-modifiable | v-sit
 :::
 
-**2.** *Azawan has decided to tell Uhubun, still open to revision.*
+**2.** *Azawan has decided to tell Uhubun, and can still change that.*
 
 ::: details Show answer
 `zazawan hegegem duhubun vezehel.`
@@ -323,7 +325,7 @@ z-Azawan | h-DECISION-modifiable | d-Uhubun | v-tell
 z-Uhubun | h-DECISION-temporary | v-write
 :::
 
-**4.** *From the usual pattern, Ululon sits.*
+**4.** *From the usual pattern, I predict Ululon sits.*
 
 ::: details Show answer
 `zululon helezom habawam vajul.`
@@ -331,7 +333,7 @@ z-Uhubun | h-DECISION-temporary | v-write
 z-Ululon | h-predict | h-PATTERN | v-sit
 :::
 
-**5.** *Azawan’s itinerary is to sit, and the pick is settled.*
+**5.** *Azawan plans to sit, and that choice is final.*
 
 ::: details Show answer
 `zazawan howoral hegegel vajul.`
@@ -371,7 +373,7 @@ z-Ululon | h-DECISION-irreversible | v-fight
 
 z-Azawan | h-DECISION-modifiable | v-sit
 
-*Azawan has decided to sit, still open to revision.*
+*Azawan has decided to sit, and can still change that.*
 :::
 
 **2.** `zululon hegegel vuwurul.`
@@ -389,7 +391,7 @@ z-Ululon | h-DECISION-irreversible | v-write
 
 h-predict | h-PATTERN | v-tell
 
-*Forecast from pattern: someone tells.*
+*From the usual pattern, I predict someone tells.*
 :::
 
 **4.** `zuhubun hegeger vajul.`
@@ -416,7 +418,7 @@ z-Azawan | h-DECISION-temporary | d-pen | v-see
 
 z-Ululon | h-plan-itinerary | h-DECISION-irreversible | d-Uhubun | v-tell
 
-*Ululon’s itinerary is to tell Uhubun, and the pick is settled.*
+*Ululon plans to tell Uhubun, and that choice is final.*
 :::
 
 **7.** `zululon hegeger dazawan vubunul.`

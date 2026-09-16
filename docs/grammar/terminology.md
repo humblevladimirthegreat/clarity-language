@@ -445,7 +445,7 @@ Content endings **-l / -m / -n / -r**.
 
 ### Map resolution
 
-**PLAN** endings: sketch / itinerary / fork.
+**PLAN** endings: sketch / itinerary / atlas.
 
 [Plan / decision](plan-decision.md#plan-map-resolution)
 

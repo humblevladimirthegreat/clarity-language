@@ -33,8 +33,8 @@ oworal,h,🗺️,plan,plan-itinerary,plan mood itinerary map-resolution (steps o
 oworal,w,🗺️,plan,plan-itinerary,plan mood itinerary map-resolution (steps on the map),map charts a route; itinerary plan fills in how
 oworan,h,🗺️,plan,plan,plan mood proper (this plan-word names a particular object),map charts a route; -n is ordinary proper not a map grain
 oworan,w,🗺️,plan,plan,plan mood proper (this plan-word names a particular object),map charts a route; -n is ordinary proper not a map grain
-oworar,h,🗺️,plan,plan-fork,plan mood fork map-resolution (contingency / backup path),map charts a route; fork plan is if-not-A-then-B
-oworar,w,🗺️,plan,plan-fork,plan mood fork map-resolution (contingency / backup path),map charts a route; fork plan is if-not-A-then-B
+oworar,h,🗺️,plan,plan-atlas,plan mood atlas map-resolution (includes backups; fully prepared),map charts a route; atlas plan is so detailed it includes backups
+oworar,w,🗺️,plan,plan-atlas,plan mood atlas map-resolution (includes backups; fully prepared),map charts a route; atlas plan is so detailed it includes backups
 elezom,h,🔭,predict,predict,predict mood (forecast about what will happen),telescope shows what is far; forecast looks ahead at a distance
 elezom,w,🔭,predict,predict,predict mood (forecast about what will happen),telescope shows what is far; forecast looks ahead at a distance
 egegel,h,✅,decision,DECISION-irreversible,decision mood irreversible changeability (settled pick),checkmark confirms a pick; irreversible decision is settled as final
