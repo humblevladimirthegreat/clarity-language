@@ -335,7 +335,7 @@ Closed `/h/` how-you-know roots.
 
 ### Extra noun (`/b/`)
 
-Noun bolted onto a complex `/ɡ/` or `/h/`.
+Hosted: noun bolted onto a complex `/ɡ/` or `/h/`. Unhosted: recipient or addressee of the verb.
 
 [Core](core.md#extra-nouns)
 

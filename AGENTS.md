@@ -20,6 +20,7 @@ This repo is TypeScript tooling around the language docs and lexicon. A web UI m
 | `docs/meta/drill-generation.md` | **Execute** policy to add those checkpoints: path allowlist (no untaught **morphology**), [settings](docs/meta/drill-generation.md#settings) inventory (global unique setting per checkpoint), [example root bank](docs/meta/drill-generation.md#root-bank) for teach lines, one grammar file per agent — [execute](docs/meta/drill-generation.md#execute). |
 | `docs/meta/language-name.md` | English name **Agalan** tracks the glasses root **`agala`** (editors only). |
 | `docs/meta/unassigned-reserved.md` | Unused-slot / unassigned-form inventory (editors only — not linked from grammar pages). |
+| `docs/meta/grammar-gaps.md` | Checklist of thin / large grammar jobs English does with helpers (recipient, locatives, relatives, infinitives, … — editors only; not linked from grammar pages). |
 | `docs/grammar/terminology.md` | Learner terminology of English names for grammatical features (as `docs/grammar/` uses them). Teaching pages do not link into it except [How to learn](docs/grammar/introduction.md#how-to-learn). |
 | `docs/meta/proposals.md` | Editor notes for `docs/proposals/` — **do not link to** proposal pages (filenames in backticks only). |
 | `docs/meta/site-redirects.md` | Public URL remaps and Amplify 404 / 301 paste (`coordination.html` → `joins.html`; editors only — not linked from grammar). |

@@ -93,9 +93,9 @@ z-Ululon | h-MAY | v-see | d-Uhubun
 **2.** *Azawan may be telling Ululon.*
 
 ::: details Show answer
-`zazawan hodohom vezehel dululon.`
+`zazawan hodohom vezehel bululon.`
 
-z-Azawan | h-MAY | v-tell | d-Ululon
+z-Azawan | h-MAY | v-tell | b-Ululon
 :::
 
 **3.** *Uhubun may be leaving Azawan.*
@@ -148,11 +148,11 @@ j-question | z-Uhubun | h-MAY | v-scream
 
 #### Agalan → English
 
-**1.** `zululon hodohom vezehel duhubun.`
+**1.** `zululon hodohom vezehel buhubun.`
 
 ::: details Show answer
 
-z-Ululon | h-MAY | v-tell | d-Uhubun
+z-Ululon | h-MAY | v-tell | b-Uhubun
 
 *Ululon may be telling Uhubun.*
 :::
@@ -365,9 +365,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Azawan tells Uhubun — live / from the scene.* (present observation)
 
 ::: details Show answer
-`zazawan hadezem vezehel duhubun.`
+`zazawan hadezem vezehel buhubun.`
 
-z-Azawan | h-LIVE | v-tell | d-Uhubun
+z-Azawan | h-LIVE | v-tell | b-Uhubun
 :::
 
 **2.** *Ululon sees a camera — from memory* (past observation).
@@ -381,9 +381,9 @@ z-Ululon | h-WITNESSED | v-see | d-camera
 **3.** *Uhubun tells Azawan — on record.*
 
 ::: details Show answer
-`zuhubun heregom vezehel dazawan.`
+`zuhubun heregom vezehel bazawan.`
 
-z-Uhubun | h-RECORDED | v-tell | d-Azawan
+z-Uhubun | h-RECORDED | v-tell | b-Azawan
 :::
 
 **4.** *Azawan sees a newspaper — from the pattern of cases.*
@@ -413,9 +413,9 @@ z-Ululon | h-INFERRED | v-punch | d-Azawan
 **7.** *As if Azawan tells Uhubun.* (soft pretensive frame)
 
 ::: details Show answer
-`zazawan hadadem vezehel duhubun.`
+`zazawan hadadem vezehel buhubun.`
 
-z-Azawan | h-NOTIONAL | v-tell | d-Uhubun
+z-Azawan | h-NOTIONAL | v-tell | b-Uhubun
 :::
 
 **8.** *As if Ululon screams.* (immersed in the imagined scene)
@@ -428,11 +428,11 @@ z-Ululon | h-NOTIONAL-fused | v-scream
 
 #### Agalan → English
 
-**1.** `zazawan heherem vezehel duhubun.`
+**1.** `zazawan heherem vezehel buhubun.`
 
 ::: details Show answer
 
-z-Azawan | h-FELT | v-tell | d-Uhubun
+z-Azawan | h-FELT | v-tell | b-Uhubun
 
 *Azawan tells Uhubun — felt / gut-known.*
 :::

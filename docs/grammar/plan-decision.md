@@ -101,9 +101,9 @@ z-Ululon | h-plan-sketch | d-pawn | v-see
 **3.** *Azawan plans to tell Uhubun.*
 
 ::: details Show answer
-`zazawan howoral duhubun vezehel.`
+`zazawan howoral buhubun vezehel.`
 
-z-Azawan | h-plan-itinerary | d-Uhubun | v-tell
+z-Azawan | h-plan-itinerary | b-Uhubun | v-tell
 :::
 
 **4.** *I predict Azawan will sit.*
@@ -166,11 +166,11 @@ z-Azawan | h-plan-sketch | d-pawn | v-see
 *Azawan intends to see a pawn.*
 :::
 
-**3.** `zuhubun howoral dazawan vezehel.`
+**3.** `zuhubun howoral bazawan vezehel.`
 
 ::: details Show answer
 
-z-Uhubun | h-plan-itinerary | d-Azawan | v-tell
+z-Uhubun | h-plan-itinerary | b-Azawan | v-tell
 
 *Uhubun plans to tell Azawan.*
 :::
@@ -184,11 +184,11 @@ h-predict | v-sit
 *I predict someone will sit.*
 :::
 
-**5.** `zazawan howoram duhubun vezehel.`
+**5.** `zazawan howoram buhubun vezehel.`
 
 ::: details Show answer
 
-z-Azawan | h-plan-sketch | d-Uhubun | v-tell
+z-Azawan | h-plan-sketch | b-Uhubun | v-tell
 
 *Azawan intends to tell Uhubun.*
 :::
@@ -312,9 +312,9 @@ z-Ululon | h-DECISION-modifiable | v-sit
 **2.** *Azawan has decided to tell Uhubun, and can still change that.*
 
 ::: details Show answer
-`zazawan hegegem duhubun vezehel.`
+`zazawan hegegem buhubun vezehel.`
 
-z-Azawan | h-DECISION-modifiable | d-Uhubun | v-tell
+z-Azawan | h-DECISION-modifiable | b-Uhubun | v-tell
 :::
 
 **3.** *Uhubun has decided for now to write.*
@@ -412,11 +412,11 @@ z-Azawan | h-DECISION-temporary | d-pen | v-see
 *Azawan has decided for now to see a pen.*
 :::
 
-**6.** `zululon howoral hegegel duhubun vezehel.`
+**6.** `zululon howoral hegegel buhubun vezehel.`
 
 ::: details Show answer
 
-z-Ululon | h-plan-itinerary | h-DECISION-irreversible | d-Uhubun | v-tell
+z-Ululon | h-plan-itinerary | h-DECISION-irreversible | b-Uhubun | v-tell
 
 *Ululon plans to tell Uhubun, and that choice is final.*
 :::

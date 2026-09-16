@@ -65,7 +65,9 @@ English *the hammer used* names what the doer uses so the event can go through. 
 
 ### The other party (`o`)
 
-Some stems name a **relation** (who is bound to whom), not an action. The extra person of that relation sits in `/b/`. To name that person from the relation stem (*the other party of the bond*), write **`o`** in the vowel slot. That named party is the **reltum**. (cue: **o** ≈ one (that other pole))
+Some stems name a **relation** (who is bound to whom), not an action. The extra person of that relation sits in **hosted** `/b/` after the relation word. To name that person from the relation stem (*the other party of the bond*), write **`o`** in the vowel slot. That named party is the **reltum**. (cue: **o** ≈ one (that other pole))
+
+**Not the same job as:** unhosted `/b/` as the recipient of a verb ([extra nouns](core.md#extra-nouns)).
 
 > `zazawan gonogom bululon.`
 > `zoxonogor vurunul.`

@@ -267,7 +267,7 @@ Beginner already used content **-r** in the same slot as the earlier word (*he s
 |--------|-----|---------|
 | `/z/` … `-r` after `/z/` | same subject again | *he / she / it / they*; *that one* |
 | `/d/` … `-r` after `/d/` | same object again | *him / her / it / them*; *that one* |
-| `/b/` … `-r` after `/b/` | same extra-noun argument | *him / her / it / them* as the relation’s argument |
+| `/b/` … `-r` after `/b/` | same extra-noun argument | *him / her / it / them* as recipient, or as the relation’s argument |
 | `/v/` … `-r` after `/v/` | same action again | *do so* / *do that* |
 | `/ɡ/` … `-r` after `/ɡ/` | same property again | *such* / *that* / *so* |
 | `/w/` … `-r` after `/w/` | same degree or frame | *that* degree / frame again |
@@ -555,7 +555,7 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `/z/` `/d/` `/b/` … `-r` | the adjunct as a noun | *that time / place / manner / reason / recipient-slot* |
+| `/z/` `/d/` `/b/` … `-r` | the adjunct as a noun | *that time / place / manner / reason* |
 | `/v/` … `-r` | act under that occasion | that doing |
 | `/ɡ/` … `-r` | property as of that occasion | that property |
 | `/w/` … `-r` | adjective-level echo of that frame | that frame |

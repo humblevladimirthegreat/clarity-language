@@ -1,0 +1,100 @@
+# Grammar gaps (English helpers)
+
+Editor checklist of **missing or thin** constructions that English often writes with prepositions, complementizers, or auxiliary verbs. Not learner text, not parser authority, **not linked from grammar pages**.
+
+This is **not** unused phonotactic slots. Those stay in [unassigned-reserved.md](unassigned-reserved.md). Rejected ideas stay in [TODO.md](../../TODO.md).
+
+**Design already chosen:** Agalan has no closed preposition class and no extra case letters. English *in / to / for / with / of / by / that / to* (infinitive) / *can* split into role letters, **content relation + `/b/`**, or a named family (joins, revisers, causation, values, ability, …). Do **not** “fix” a row here by adding a preposition PoS unless that model is rejected.
+
+When a row is done: teach it on the listed grammar page (and lexicon / overlays if needed), then **check the box** and shorten the row to a one-line pointer, or delete it.
+
+## How to use
+
+| Size | Meaning |
+|------|---------|
+| **Thin** | `/ɡ/` or `/h/` + `/b/` (or an existing family) already covers the job; missing roots, overlays, or a taught example |
+| **Large** | Needs a **new clause type** or a design decision to leave English without a twin |
+
+Work **in list order**. Later items assume earlier ones are decided (taught, or explicitly deferred). Independent thins inside Wave 1 may ship in one pass.
+
+## Wave 1 — pin extra-noun relations
+
+No new clause types. Unblocks locative talk and later relatives / paths.
+
+- [x] **1. Ditransitive / recipient.** Unhosted `/b/` (not immediately after `/ɡ/` or `/h/`) is the verb’s recipient / addressee; theme stays `/d/` (including **`adoro`**). Taught in [core extra nouns](../grammar/core.md#extra-nouns). Place goals stay item 2.
+
+- [ ] **2. Locative relation set (thin).** Architecture is `/h/` or `/ɡ/` + `/b/` ([core extra nouns](../grammar/core.md#extra-nouns); landmark on DIR in [roles.md](../grammar/roles.md#viewpoint-laterals)). Taught locative is mainly *inside* (`ogore` overlay). Publish and teach a small set: *at* (point), *on* (surface / contact), *from* (source), *toward* (goal), *through* (path), *out of*, *between* ( `/b/` join of two landmarks). Prefer overlays on existing roots ([closed forms follow the lexicon](parser-pipeline.md#closed-forms-follow-lexicon)). **Blocks:** spatial *from–to* (item 9); *the house in which* (item 11).
+
+- [ ] **3. Clause instrument *with* (thin).** Role **`exROOT`** [names](../grammar/roles.md) *the hammer used*. *Writes with a hammer* as an adjunct is untaught. Add a means relation (`/h/` + `/b/`) or teach the tool as manner `/h/` of that root. Compare with join-relation *including* / *with* ([join-extras.md](../grammar/join-extras.md#join-relations)), which is set membership, not means.
+
+- [ ] **4. Other English *of* (thin).** Ownership is `oboru` + `/b/` ([joins.md](../grammar/joins.md) SHARED example). Still missing taught relations for part–whole, contents (*cup of tea*), material (*made of*), origin (*from Rome*). Portion *of* is partly [percent](../grammar/numbers-applied.md#percent-denominators).
+
+- [ ] **5. Simile *like* (thin).** Equative *as Adj as* ([comparatives.md](../grammar/comparatives.md#equatives)), identity **`SAME`** ([predication.md](../grammar/predication.md#identity)), join *on a par with*, and NOTIONAL *as if* ([commentary.md](../grammar/commentary.md#notional)) exist. Everyday *walks like a duck* / *a house like Azawan’s* needs a similative `/h/` or `/ɡ/` + `/b/` (or a taught reuse of **`ae`** / **`SAME`**).
+
+- [ ] **6. NP *despite* (thin).** Clause *although* is **`hezebam badorol`** ([core.md](../grammar/core.md#dependent-clauses)). *Despite the rain* should reuse that pole + `/b/` **noun** (same shape as *if rain*). Teach one NP example; do not invent a second concession morph.
+
+- [ ] **7. English *by / for / about / as* cheat-sheet (thin).** Pedagogy only: one short table on [core.md](../grammar/core.md) or [terminology.md](../grammar/terminology.md) mapping each English word to the **live** Agalan jobs (agent stays `/z/`; means = item 3; deadline = time `/h/`; locative = item 2; recipient = item 1; duration = [measure](../grammar/numbers-applied.md#measure-phrases); need-purpose = [values `xo`](../grammar/values.md); topic = `hozal`; approximation = number **-m**; classification vs *while* vs *because*). No new morph.
+
+- [ ] **8. Exchange *for* and proxy *on behalf of* (thin).** *Bought for five grams* is not values `xo` and not a recipient. *On behalf of* is not reviser *instead* ([revisers.md](../grammar/revisers.md#instead)). Add relation roots + `/b/`, or defer with a one-line editor note here if the language will always paraphrase.
+
+## Wave 2 — small constructions on Wave 1
+
+- [ ] **9. Spatial path *from A to B* (thin → small grammar).** Numeric *from 3 to 5* is a [range](../grammar/numbers-applied.md#ranges). Place *from Paris to London* / *out of the house into the street* is untaught. **Needs:** item 2 (*from* / *toward*). Prefer two `/h/` + `/b/` units, or a documented reuse of rank/range **only if** places are legal endpoints (they are not, today).
+
+- [ ] **10. Embedded *whether* (thin).** Matrix *yes/no* is **`jol`**. *Know whether Ululon walks* is only “**`adoro`** + question act word.” Teach that (or a dedicated complementizer) on [core.md](../grammar/core.md#dependent-clauses) / [questions.md](../grammar/questions.md). **Needs:** existing **`adoro`** + speech act; not item 2.
+
+## Wave 3 — new clause types
+
+Do not start these until Wave 1 extra nouns are the learner’s default for English PPs (items 2–6 at least sketched). Item 1 is decided: unhosted `/b/` = recipient.
+
+- [ ] **11. Noun-modifying relatives (large).** No *that / who / which / whose* inside an NP. Restrictors ([restrictors.md](../grammar/restrictors.md)) limit **when a claim counts**, not which noun. Role compounds + **-r** name *the one seen*, not *the dog Azawan saw inside the bank*. **Needs:** extra-noun habit (Wave 1); locatives (item 2) for *the house in which*. Design choice: gap pronoun + **`adoro`**, span, or resume-only paraphrase. If paraphrase-only, document the refusal here and on core — do not leave learners guessing.
+
+- [ ] **12. Infinitive / control / event purpose (large).** **`adoro`** takes a **full next sentence**, not a subject-less verb. No *want to walk*, *ask Ululon to sit*, *in order to leave*. Values **`xo`** is need-motive, not “this event so that that event.” **Needs:** **`adoro`**; not relatives. May share a purpose subordinator with *so that* (parallel to *because* / *if*). Decide control (*want* shares `/z/`) vs full clause.
+
+## Wave 4 — optional systems
+
+Decide **whether** to add. English helpers; not required by the `/b/` model. Later than Wave 3 so relatives / purpose are not invented twice (object-first + relative often replaces a short passive).
+
+- [ ] **13. Passive / *by*-agent (large, optional).** [Free order](../grammar/core.md) highlights the object; that is **not** *a cat is seen by Azawan*. No agent demotion, no *by*-phrase, no *get*-passive. **Needs:** item 1 if the demoted agent is a recipient; relatives (item 11) may make this unnecessary. If skipped, keep the core “use the longer English” line as the whole story.
+
+- [ ] **14. Progressive / perfect / *used to* (large, optional).** No tense/aspect letter. Time is *before / after / while*, clock/date, evidential LIVE vs WITNESSED ([commentary.md](../grammar/commentary.md#evidentiality)), PREDICT, habitual **`hual`**. Observation tense is still only in [TODO.md](../../TODO.md). **Needs:** do not collapse into evidentiality. If added, stack with LIVE / WITNESSED; do not replace them.
+
+## Not gaps
+
+| English itch | Why it is not a checklist row |
+|--------------|-------------------------------|
+| Extra case letters (dative, ablative, locative) | Duplicates `/b/` + relation root |
+| Closed *in / on / at* as grammar | Several meanings each; item 2 is the fix |
+| *and / or / with / without / against / except* as prepositions | [Joins](../grammar/joins.md), [join-relations](../grammar/join-extras.md#join-relations), [revisers](../grammar/revisers.md) |
+| *because / if / although / while / until / before / after* | Already [core](../grammar/core.md#dependent-clauses) / [causation](../grammar/causation.md) |
+| *can / will / should / may / have to* as dummy auxiliaries | [Ability](../grammar/ability.md), [plan-decision](../grammar/plan-decision.md), [values](../grammar/values.md), [MAY](../grammar/commentary.md#may) |
+| *that* (finite complement) | **`adoro`** |
+| *as for / according to [Name]* | `hozal` + `/b/`; `/h/` + **-n** |
+
+## Dependency sketch
+
+```
+1 recipient          2 locatives ──────┐
+        \            /    |            │
+         3 instrument     4 *of*       │
+         5 simile         6 despite    │
+         7 cheat-sheet    8 exchange/proxy
+                          │
+                    9 place from–to
+         10 whether (independent of 2)
+                          │
+                    11 relatives ◄─────┘
+                    12 infinitive / purpose
+                          │
+                    13 passive? (after 11)
+                    14 aspect? (after evidentiality as taught)
+```
+
+## Related meta
+
+| Page | Role |
+|------|------|
+| [unassigned-reserved.md](unassigned-reserved.md) | Unused **forms**; this page is missing **jobs** |
+| [grammar-docs.md](grammar-docs.md) | Learner prose; do not dump this checklist on a grammar page |
+| [drill-generation.md](drill-generation.md) | Do not drill untaught morphology from open rows here |
+| [TODO.md](../../TODO.md) | Observation tense and other speculative features |

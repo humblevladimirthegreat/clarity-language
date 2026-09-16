@@ -243,13 +243,13 @@ z-interlocutors | d-basket | v-see
 *We (you and I) see a basket.*
 :::
 
-**5.** `zululonx dazawan vezehel.`
+**5.** `zululonx bazawan vezehel.`
 
 ::: details Show answer
 
-z-Ululon-x | d-Azawan | v-tell
+z-Ululon-x | b-Azawan | v-tell
 
-*Ululon tells Azawan and associates.*
+*Ululon and associates tell Azawan.*
 :::
 
 **6.** `zazawarx duguvel vejel.`

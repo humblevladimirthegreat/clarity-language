@@ -227,9 +227,9 @@ j-question | z-who-else | v-see | d-coat
 **6.** *Azawan tells Uhubun. Yes.* (confirm as a second turn)
 
 ::: details Show answer
-`zazawan vezehel duhubun. jael.`
+`zazawan vezehel buhubun. jael.`
 
-z-Azawan | v-tell | d-Uhubun | j-yes
+z-Azawan | v-tell | b-Uhubun | j-yes
 :::
 
 **7.** *No.* / *False.* (polar, not “don’t”)

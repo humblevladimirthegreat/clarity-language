@@ -74,8 +74,11 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 
 ### Extra nouns (`/b/`)
 <a id="extra-nouns"></a>
+<a id="unhosted-b"></a>
 
-Some adjectives and adverbs name a **relation** that needs another person or thing (*inside …*, *for …*). Put that extra noun in `/b/` right after the `/ɡ/` or `/h/` word. The root on the `/ɡ/` or `/h/` word names the relation; `/b/` marks the noun that completes it. English *to* / *for* (who receives something) uses that `/h/` + `/b/` shape too.
+`/b/` names an extra person or thing. It has two jobs, and you can tell them apart from the word **immediately before** `/b/`. `/w/` never hosts `/b/` (it only grades the previous `/ɡ/` or `/h/`).
+
+**Hosted.** Some adjectives and adverbs name a **relation** that needs another person or thing (*inside …*). Put that extra noun in `/b/` **right after** the `/ɡ/` or `/h/` word. The root on the `/ɡ/` or `/h/` word names the relation; `/b/` marks the noun that completes it. Keep that pair together.
 
 > `hogorem bohohul`
 >
@@ -88,6 +91,16 @@ Some adjectives and adverbs name a **relation** that needs another person or thi
 > z-dog | v-sleep | h-inside | b-house
 >
 > "A dog sleeps inside a house."
+
+**Unhosted.** If `/b/` does **not** follow `/ɡ/` or `/h/`, it is the **recipient** or **addressee** of the verb: the person who gets the theme or hears the telling. The theme (what is given or said) stays `/d/`. At most one unhosted `/b/` per clause. This job is a person, not a place.
+
+> `zazawan bululon vezehel.`
+>
+> z-Azawan | b-Ululon | v-tell
+>
+> "Azawan tells Ululon."
+
+Do not park that recipient immediately after a relation `/h/` or `/ɡ/`: `hogorem bululon` is *inside Ululon*, not *to Ululon*. Put the pair first, then the recipient (`hogorem bohohul bululon`).
 
 ### Turn (`/j/`): start a new speech move
 <a id="turn-j"></a>
@@ -138,7 +151,7 @@ When the setting is not that default statement, write a `/j/` act word immediate
 ### Dependent clauses
 <a id="dependent-clauses"></a>
 
-Sometimes a full sentence fills a slot in the sentence before it (*Azawan tells Ululon **that the dog runs***). That inner sentence is a **dependent clause**.
+Sometimes a full sentence fills a slot in the sentence before it (*Azawan tells Ululon **that the dog runs***). That inner sentence is a **dependent clause**. The person told is unhosted `/b/`; *that…* is often a direct object.
 
 In the main sentence, the pronoun **`adoro`** stands for whatever sentence follows right away. (cue: 🚪 *doorway*: the next sentence walks through)
 
@@ -148,9 +161,9 @@ The dependent may open with its own `/j/` words, or keep the main sentence’s s
 
 *That…* content is often a direct object, with **`adoro` last** in the main sentence:
 
-> `zazawan dululon vezehel dadorol zodogol vurunul.`
+> `zazawan bululon vezehel dadorol zodogol vurunul.`
 >
-> z-Azawan | d-Ululon | v-tell | d-next-clause | z-dog | v-run
+> z-Azawan | b-Ululon | v-tell | d-next-clause | z-dog | v-run
 >
 > "Azawan tells Ululon that the dog runs."
 
@@ -206,7 +219,7 @@ Role letters on this page:
 |--------|-----|-----|
 | `/z/` | subject (who acts) | **z** ≈ star (who the sentence is about) |
 | `/d/` | direct object (who is acted on) | **d** ≈ done to (sound of *acted on*) |
-| `/b/` | extra noun after a relation word | **b** ≈ bolted on (the extra piece) |
+| `/b/` | extra noun: recipient of the verb, or the piece after a relation word | **b** ≈ bolted on (the extra piece) |
 | `/v/` | verb (the action) | **v** as in English *verb* |
 | `/ɡ/` | adjective (a property of the noun) | **ɡ** ≈ grade (a rating of the noun) |
 | `/w/` | extra detail on the previous adjective | **w** ≈ with (stuck to that adjective) |
@@ -303,9 +316,9 @@ j-prohibition | v-sneak
 **7.** *Azawan tells Ululon that Uhubun sits.*
 
 ::: details Show answer
-`zazawan dululon vezehel dadorol zuhubun vajul.`
+`zazawan bululon vezehel dadorol zuhubun vajul.`
 
-z-Azawan | d-Ululon | v-tell | d-next-clause | z-Uhubun | v-sit
+z-Azawan | b-Ululon | v-tell | d-next-clause | z-Uhubun | v-sit
 :::
 
 **8.** *Azawan runs because Ululon punches a guard.*
@@ -463,7 +476,7 @@ A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). A further plain adj
 >
 > "a dog the same as blue Azawan"
 
-You can chain more complex units onto those extra nouns. Two complex adjectives on the same first noun need another sentence. Several `/h/` units on one verb are fine (each plain `/h/`, or `/h/`+`/b/` together, counts as one).
+You can chain more complex units onto those extra nouns. Two complex adjectives on the same first noun need another sentence. Several `/h/` units on one verb are fine (each plain `/h/`, or `/h/`+`/b/` together, counts as one). An unhosted recipient `/b/` may follow a finished pair (`hogorem bohohul bululon`); it still must not sit immediately after the relation word.
 
 ### Writing and speech rhythm (periods)
 <a id="orthography-and-prosody-periods"></a>
@@ -641,11 +654,11 @@ j-soft-question | gl-blue | z-train | v-stand
 *Does a blue train stand, perhaps?*
 :::
 
-**3.** `jem duhubun vezehel!`
+**3.** `jem buhubun vezehel!`
 
 ::: details Show answer
 
-j-request | d-Uhubun | v-tell
+j-request | b-Uhubun | v-tell
 
 *Please tell Uhubun.*
 :::
@@ -782,9 +795,9 @@ d-balloon | z-Uhubun | v-see
 **3.** *What Azawan does is tell Ululon.*
 
 ::: details Show answer
-`vezehel zazawan dululon.`
+`vezehel zazawan bululon.`
 
-v-tell | z-Azawan | d-Ululon
+v-tell | z-Azawan | b-Ululon
 :::
 
 **4.** *Hastily, Ululon sneaks.*
@@ -831,11 +844,11 @@ h-haste | z-Uhubun | v-sit
 *Hastily, Uhubun sits.*
 :::
 
-**3.** `vezehel zululon duhubun.`
+**3.** `vezehel zululon buhubun.`
 
 ::: details Show answer
 
-v-tell | z-Ululon | d-Uhubun
+v-tell | z-Ululon | b-Uhubun
 
 *What Ululon does is tell Uhubun.*
 :::

@@ -761,13 +761,13 @@ z-veil | z-everything-but
 *everything but the veil*
 :::
 
-**4.** `vuguzul vezehel vam duhubun.`
+**4.** `vuguzul vejel vam duhubun.`
 
 ::: details Show answer
 
-v-kiss | v-tell | v-and.open | d-Uhubun
+v-kiss | v-see | v-and.open | d-Uhubun
 
-*kisses and tells Uhubun*
+*kisses and sees Uhubun*
 :::
 
 **5.** `vuguzul vubunul val vul.`
@@ -889,7 +889,7 @@ These limits apply to every join.
 
 | Limit | Pattern |
 |-------|---------|
-| One slot per chain | one subject, object, `/b/` argument, `/ɡ/` stack, or `/w/` / `/h/` unit |
+| One slot per chain | one subject, object, unhosted `/b/` recipient, `/ɡ/` stack, or `/w/` / `/h/` unit; hosted `/b/` stays on its `/ɡ/` or `/h/` |
 | Matching role letter | every item head and the join share the first letter |
 | One right-close per flat list | nest as [fence nesting](#fence-nesting) |
 | Shared modifiers | only immediately after each join |

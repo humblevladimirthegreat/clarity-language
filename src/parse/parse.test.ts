@@ -62,6 +62,17 @@ describe("parse — core.md beginner", () => {
     assert.equal(result.utterances[0]!.left.vocatives[0]?.raw, "jululon");
   });
 
+  it("parses unhosted /b/ recipient plus verb", () => {
+    const result = parseText("zazawan bululon vezehel.");
+    const units = result.utterances[0]!.bodies[0]!.clause.units;
+    assert.equal(units.length, 3);
+    assert.equal(units[0]!.kind, "np");
+    assert.equal(units[1]!.kind, "np");
+    assert.equal(units[2]!.kind, "vp");
+    if (units[1]!.kind !== "np") return;
+    assert.equal(units[1]!.coord.level, "b");
+  });
+
   it("omits jal when recoverable", () => {
     const result = parseText("zazawan vawalal.");
     assert.equal(result.utterances[0]!.left.force, undefined);
@@ -151,7 +162,7 @@ describe("parse — orodo dependents", () => {
   });
 
   it("parses content dorodol with matrix verb after orodo", () => {
-    const result = parseText("zazawan dululon dorodol vezehel zadagal vurunul.");
+    const result = parseText("zazawan bululon dorodol vezehel zadagal vurunul.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
     assert.equal(clause.units.some((u) => u.kind === "vp"), true);
