@@ -149,14 +149,14 @@ z-Azawan | v-sit
   });
 
   it("formats findings as a stdout block", () => {
-    const text = formatMorphGlossFinding("docs/grammar/core.md", {
+    const text = formatMorphGlossFinding("docs/grammar/clause.md", {
       kind: "mismatch",
       line: 10,
       agalan: "zazawan vajul.",
       documented: "z-Azawan | v-walk",
       parser: "z-Azawan | v-sit",
     });
-    assert.match(text, /docs\/grammar\/core.md:10  morph gloss mismatch/);
+    assert.match(text, /docs\/grammar\/clause.md:10  morph gloss mismatch/);
     assert.match(text, /documented: z-Azawan \| v-walk/);
   });
 });

@@ -131,7 +131,7 @@ The same restrictor vowels and endings can limit **only the adjective you just w
 | `/h/` | limits the clause | *when the verb claim counts* | **h** starts *how* / *when* / *where* |
 | `/w/` | same map on the previous adjective | *never happy* / *always happy* / *sometimes happy* | **w** ≈ with (stuck to that adjective) |
 
-**Compare with:** extra detail on an adjective is still ordinary `/w/` from [core](core.md#adjective-detail-w). A restrictor on `/w/` answers **when that adjective counts**.
+**Compare with:** extra detail on an adjective is still ordinary `/w/` from [clause](clause.md#adjective-detail-w). A restrictor on `/w/` answers **when that adjective counts**.
 
 ### Listed occasions (open)
 

@@ -89,7 +89,7 @@ Hosted *can* / *can’t* (`xa` / `xe` / `xo` / `xu`) and hostless **ABIL**.
 
 The written `/j/` word: **`jal` / `jol` / `jel` / `jul`** and soft **-m**.
 
-[Core](core.md#speech-act)
+[Clause](clause.md#speech-act)
 
 **Compare with:** [speech act](#speech-act) is the setting (statement / question / command / prohibition). Polar [stance](#polar-stance) particles are not act words.
 
@@ -103,7 +103,7 @@ Listener special plus **-x**: the current addressees (no speaker).
 
 Detail on the previous adjective, not the whole clause.
 
-[Core](core.md)
+[Clause](clause.md)
 
 **Compare with:** a [restrictor](#restrictor) says when the host applies. Default `/w/` on needs is [values](#values).
 
@@ -111,7 +111,7 @@ Detail on the previous adjective, not the whole clause.
 
 Ordinary manner `/h/`.
 
-[Core](core.md#adverbs-h)
+[Clause](clause.md#adverbs-h)
 
 **Compare with:** [mood tags](#mood-tags) are closed psychological `/h/` only.
 
@@ -137,7 +137,7 @@ How many items sit before a join: **list** (2+), **single-item** (1), **standalo
 
 Complex `/h/` + `/b/` (**`ahaza`**) *as for X*.
 
-[Core](core.md#as-for)
+[Clause](clause.md#as-for)
 
 **Compare with:** values [met](#met-unmet-motive-prescription-values) / unmet on `/ɡ/` is how a need stands toward a noun, not *as for*.
 
@@ -175,7 +175,7 @@ Inside a scope island: scope-taking `/h/` and/or a join.
 
 Clause content after the left-edge `/j/` cluster.
 
-[Core](core.md#left-edge-order-and-sentence-boundaries)
+[Clause](clause.md#left-edge-order-and-sentence-boundaries)
 
 ### Bound / endorse / invite
 
@@ -225,7 +225,7 @@ Who counts as *we* / *you* when names are unavailable.
 
 Speech act **`jel` / `jem` / `jul` / `jum`**.
 
-[Core](core.md#speech-act)
+[Clause](clause.md#speech-act)
 
 ### Comparative / superlative / equative
 
@@ -237,7 +237,7 @@ Rank join + SHARED **scale** (`/ɡ/` quality or `/h/` manner); single-item = sup
 
 `/ɡ/` or `/h/` plus immediately following `/b/`.
 
-[Core](core.md#extra-nouns)
+[Clause](clause.md#extra-nouns)
 
 ### Confirming a negative
 
@@ -349,7 +349,7 @@ Closed `/h/` episode standing: leftover on the tally, or usual weather you are n
 
 Hosted: noun bolted onto a complex `/ɡ/` or `/h/`. Unhosted: recipient or addressee of the verb.
 
-[Core](core.md#extra-nouns)
+[Clause](clause.md#extra-nouns)
 
 ### Locative relation
 
@@ -403,7 +403,7 @@ Under question, join **-r** is a blank; several **-r** = fill all.
 
 Speech-act ending **-l** vs **-m**.
 
-[Core](core.md#speech-act)
+[Clause](clause.md#speech-act)
 
 ### Forecast source
 
@@ -471,13 +471,13 @@ Advanced *worse than…* bars.
 
 `/ɡ/` with second letter **l**: adjective before the next noun.
 
-[Core](core.md#left-bound-adjectives)
+[Clause](clause.md#left-bound-adjectives)
 
 ### Left edge
 
 Vocative → polar stance → act word, then body.
 
-[Core](core.md#left-edge-order-and-sentence-boundaries)
+[Clause](clause.md#left-edge-order-and-sentence-boundaries)
 
 ### Literal / metaphorical / named / resume
 
@@ -591,7 +591,7 @@ Motive **`xo`** endings.
 
 Word-order highlighting (not join arity).
 
-[Core](core.md#word-order-emphasis), [as-for](core.md#as-for)
+[Clause](clause.md#word-order-emphasis), [as-for](clause.md#as-for)
 
 ### Quasi
 
@@ -651,7 +651,7 @@ Prefix-less *including / rather / instead / except* (in-clause vs discourse by p
 
 Word-initial job letter.
 
-[Core](core.md#role-letters)
+[Clause](clause.md#role-letters)
 
 ### Scope island
 
@@ -709,7 +709,7 @@ Short word in a role slot (`darl` / `barl` / `dorl` / `derl` / `durl`, open **`-
 
 Utterance setting: statement / question / command / prohibition.
 
-[Core](core.md#speech-act)
+[Clause](clause.md#speech-act)
 
 **Compare with:** values **prescription force** is [bound / endorse / invite](#bound-endorse-invite), not speech act. Polar [stance](#polar-stance) is a left-edge particle.
 
@@ -729,7 +729,7 @@ Single-item rank with a number = bound on a line.
 
 New speech move.
 
-[Core](core.md#turn-j)
+[Clause](clause.md#turn-j)
 
 ### Under question
 
@@ -765,7 +765,7 @@ DIR × ANCHOR; whose facing is north.
 
 Left-edge `/j/` addressing.
 
-[Core](core.md#turn-j)
+[Clause](clause.md#turn-j)
 
 ### Vowel series
 
@@ -777,7 +777,7 @@ Left-edge `/j/` addressing.
 
 Prefer an audible left `/j/` rather than implied **`jal`**.
 
-[Core](core.md#weak-pause-left-cues)
+[Clause](clause.md#weak-pause-left-cues)
 
 ### Yes/no
 

@@ -1,6 +1,6 @@
 # Grammar doc style (for learners)
 
-How to write Agalan **grammar docs** under **`docs/grammar/`** so a learner can use them. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). Design authority for morphology stays in those pages (one-clause grammar: [core.md](../grammar/core.md); hosted relations: [relations.md](../grammar/relations.md); dependents / continue: [dependents.md](../grammar/dependents.md)); this page standardizes **pedagogy and prose** only.
+How to write Agalan **grammar docs** under **`docs/grammar/`** so a learner can use them. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). Design authority for morphology stays in those pages (one-clause grammar: [clause.md](../grammar/clause.md); hosted relations: [relations.md](../grammar/relations.md); dependents / continue: [dependents.md](../grammar/dependents.md)); this page standardizes **pedagogy and prose** only.
 
 Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/` — only peer links inside `grammar/`. Editors follow this page, [learning-levels.md](learning-levels.md), and [translation-exercises.md](translation-exercises.md) privately.
 
@@ -206,7 +206,7 @@ Do **not** open Beginner with:
 - writing-system notes (unicase, citation / prefix-less forms, “outside a sentence”) on a **clause** page before a working sentence
 - a form the stage’s **translation practice does not use**, unless that form is required to **parse** an example they do use (then **one sentence**, not its own H3)
 
-**Writing meta last (or elsewhere).** How letters look (lowercase) may live on [phonology.md](../grammar/phonology.md). Citation (prefix-less root + ending) is taught on [reference-suffix.md](../grammar/reference-suffix.md) Beginner. [core.md](../grammar/core.md) Beginner adds the role letter to a citation they already write. Other pages do not re-teach citation.
+**Writing meta last (or elsewhere).** How letters look (lowercase) may live on [phonology.md](../grammar/phonology.md). Citation (prefix-less root + ending) is taught on [reference-suffix.md](../grammar/reference-suffix.md) Beginner. [clause.md](../grammar/clause.md) Beginner adds the role letter to a citation they already write. Other pages do not re-teach citation.
 
 **Do not preview this page’s later H3s.** A section must not name *turn* / *continue* / omit-`jal` (or any later job on the same page) before that section exists. Either teach the opener first, or state the current pattern as a **bare statement body** (a period already marks a statement) until Turn is taught.
 
@@ -528,7 +528,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 | Level rubric / reading order | [learning-levels.md](learning-levels.md) ([cross-doc path](learning-levels.md#cross-doc-path)) |
 | Doc prose / example style | This page ([Beginner stage shape](#beginner-stage-shape), [later-stage shape](#later-stage-shape), [cues](#cues-columns), [Compare with](#compare-with)) |
 | Goals / feature criteria | [why-agelan.md](../grammar/why-agelan.md) (psych); [introduction.md](../grammar/introduction.md) (grammar design, [cue tables](../grammar/introduction.md#cues)) |
-| Core sentence grammar (one clause, `/j/`) | [core.md](../grammar/core.md) |
+| Clause grammar (one clause, `/j/`) | [clause.md](../grammar/clause.md) |
 | Hosted relation catalog | [relations.md](../grammar/relations.md) |
 | Dependents / continue (`/x/`, stand-ins) | [dependents.md](../grammar/dependents.md) |
 | IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) (letter table); [inspect.md](../grammar/inspect.md) (**Show IPA** on spoken forms). Not in other grammar-page examples |

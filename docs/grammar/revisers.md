@@ -361,7 +361,7 @@ Beginner already used a reviser at the front of a default statement. Same spelli
 | Placement | Agalan | Use |
 |-----------|--------|-----|
 | Before a written turn marker | `(vocative)* (interjection)* REV act-word BODY` | The written **`jal`** / **`jol`** / … |
-| Before a default-statement body | `REV BODY` | Implied **`jal`** ([core.md](core.md#speech-act)) |
+| Before a default-statement body | `REV BODY` | Implied **`jal`** ([clause.md](clause.md#speech-act)) |
 | Non-initial clause under `/x/` | `… REV BODY … JOIN` | Same as the opener |
 | Before an `/x/` linker | `REV LINKER BODY` | Same as prior talk |
 

@@ -1,4 +1,4 @@
-# Agalan core grammar
+# The clause
 
 How to read and write one Agalan **clause**: who does what, word shape, default order, and how a speech move starts (`/j/`).
 

@@ -68,7 +68,7 @@ Inventory tables on grammar pages use these kinds of cell:
 
 **Cue** is an optional memory helper. `≈` in a cue means “sounds like.” When **Same root as** is there, **Cue** does not repeat the everyday English; it only says why that picture maps. 
 
-Continue with [phonology.md](phonology.md#beginner) for letters and word edges, then [reference-suffix.md](reference-suffix.md#beginner) for citation endings (you can already say your name as a [greeting](reference-suffix.md#greeting)), then [core.md](core.md#beginner) for clause shape, then [relations.md](relations.md#beginner) and [dependents.md](dependents.md#beginner).
+Continue with [phonology.md](phonology.md#beginner) for letters and word edges, then [reference-suffix.md](reference-suffix.md#beginner) for citation endings (you can already say your name as a [greeting](reference-suffix.md#greeting)), then [clause.md](clause.md#beginner) for clause shape, then [dependents.md](dependents.md#beginner) and [relations.md](relations.md#beginner).
 
 ## License
 <a id="license"></a>

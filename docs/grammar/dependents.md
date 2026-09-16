@@ -5,7 +5,7 @@ How a **next sentence** fills a slot (`darl` / `barl`), how English *who / that 
 ## Beginner
 <a id="beginner"></a>
 
-You already write one clause with [role letters](core.md#role-letters) and start a new speech move with [`/j/`](core.md#turn-j). This page attaches another sentence, or keeps going without a new act.
+You already write one clause with [role letters](clause.md#role-letters) and start a new speech move with [`/j/`](clause.md#turn-j). This page attaches another sentence, or keeps going without a new act.
 
 ### Which person or thing (*who / that / which*)
 <a id="which-noun"></a>
@@ -20,7 +20,7 @@ When English hangs *who* / *that* / *which* plus a clause on a noun (*the guard 
 
 That pair is English *Azawan tells the guard who sits.* Repeat the full word when you need the same person again in the next sentence.
 
-**Compare with:** *a blue dog* is still one [adjective](core.md#adjectives-ɡ) (`gelulul`). *A dog inside a house* is still the extra-noun pair on the verb ([extra nouns](core.md#extra-nouns): `hogorem bohohul`). *Azawan tells Ululon **that** a dog runs* is a [dependent clause](#dependent-clauses) (**`darl`**): *that* packages the next sentence as content, not as a tag on *dog*.
+**Compare with:** *a blue dog* is still one [adjective](clause.md#adjectives-ɡ) (`gelulul`). *A dog inside a house* is still the extra-noun pair on the verb ([extra nouns](clause.md#extra-nouns): `hogorem bohohul`). *Azawan tells Ululon **that** a dog runs* is a [dependent clause](#dependent-clauses) (**`darl`**): *that* packages the next sentence as content, not as a tag on *dog*.
 
 
 
@@ -134,7 +134,7 @@ A word that glues two sentences (*therefore*, *however*, …) is an `/x/` **link
 >
 > "A dog walks. Therefore a cat runs."
 
-**Compare with:** [`/j/`](core.md#turn-j) starts a **new** speech move (a new statement, question, or command). `/x/` keeps the move you already started.
+**Compare with:** [`/j/`](clause.md#turn-j) starts a **new** speech move (a new statement, question, or command). `/x/` keeps the move you already started.
 
 
 ### Translation practice
@@ -298,7 +298,7 @@ A place, tool, or *of*-relation on the noun is still hosted `/ɡ/` + `/b/` (*the
 >
 > "Azawan sees a sitting guard."
 
-**Compare with:** ordinary `gajul` is *chair* / *position* as a property, not *sitting*. [Restrictors](restrictors.md) say when a **claim** counts (*never*, *only when raining*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the **same** first noun still need another sentence ([complex chaining](core.md#complex-chaining)).
+**Compare with:** ordinary `gajul` is *chair* / *position* as a property, not *sitting*. [Restrictors](restrictors.md) say when a **claim** counts (*never*, *only when raining*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the **same** first noun still need another sentence ([complex chaining](clause.md#complex-chaining)).
 
 
 ### Writing and speech rhythm (periods)

@@ -163,7 +163,7 @@ Keeping those forks apart helps you stop treating wishes and habits as if the wo
 
 English *hi* hides whether you can stay, whether this is one ask, whether the other person should wait, or whether you are only passing.
 
-A [greeting](reference-suffix.md#greeting) is your name as a citation (`azawan.`). Calling someone is a [vocative](core.md#vocative). A [greeting bid](x-compounds.md#greeting-bid) adds one vowel: presence, one slot, *one moment please*, or passing. The overlay names the **encounter**.
+A [greeting](reference-suffix.md#greeting) is your name as a citation (`azawan.`). Calling someone is a [vocative](clause.md#vocative). A [greeting bid](x-compounds.md#greeting-bid) adds one vowel: presence, one slot, *one moment please*, or passing. The overlay names the **encounter**.
 
 Marking the opening that way helps you consent to the talk without treating a wave as a blank check on time.
 
@@ -229,4 +229,4 @@ Even if the language does lose its potency over a century, having a positive imp
 ## Next
 <a id="next"></a>
 
-Continue with [introduction.md](introduction.md) for the name, grammar design, and how to learn these docs, then [phonology.md](phonology.md#beginner) for letters, [reference-suffix.md](reference-suffix.md#beginner) for citation endings, [core.md](core.md#beginner) for clause shape, then [relations.md](relations.md#beginner) and [dependents.md](dependents.md#beginner). Community updates: [Agalan on Reddit](https://www.reddit.com/r/ClarityLanguage).
+Continue with [introduction.md](introduction.md) for the name, grammar design, and how to learn these docs, then [phonology.md](phonology.md#beginner) for letters, [reference-suffix.md](reference-suffix.md#beginner) for citation endings, [clause.md](clause.md#beginner) for clause shape, then [dependents.md](dependents.md#beginner) and [relations.md](relations.md#beginner). Community updates: [Agalan on Reddit](https://www.reddit.com/r/ClarityLanguage).

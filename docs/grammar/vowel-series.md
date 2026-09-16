@@ -6,7 +6,7 @@ Some small families of words share a first letter and differ only in the next vo
 ## Beginner
 <a id="beginner"></a>
 
-You already chose statement versus question versus command by changing one vowel on the [speech-act](core.md#speech-act-beginner) word. The vowels indicate hold the claim, pick from a menu, instruct, or take the action back. That is not a one-off, you will see these vowel meanings re-used across many grammar tables.
+You already chose statement versus question versus command by changing one vowel on the [speech-act](clause.md#speech-act-beginner) word. The vowels indicate hold the claim, pick from a menu, instruct, or take the action back. That is not a one-off, you will see these vowel meanings re-used across many grammar tables.
 
 The next page is the first large family that uses this map.
 
@@ -43,5 +43,5 @@ The next page is the first large family that uses this map.
 
 ## See also
 
-- [Speech act](core.md#speech-act-beginner)
+- [Speech act](clause.md#speech-act-beginner)
 - [Stand-in](dependents.md#stand-in) (`darl` / `dorl` / `derl` / `durl`)

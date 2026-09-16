@@ -440,5 +440,5 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 - [special-vocabulary.md](../grammar/special-vocabulary.md#sense-form) — overlays and closed labels
 - [pronouns.md](../grammar/pronouns.md) — **-r** and special pronouns
 - [x-compounds.md](../grammar/x-compounds.md) — mid-word `x` families
-- [core.md](../grammar/core.md#role-letters) — role letters in a sentence
+- [clause.md](../grammar/clause.md#role-letters) — role letters in a sentence
 - [values.md](../grammar/values.md) — need stances and endings (morph keeps them; loose free usually drops channel / standing / force / changeability)

@@ -20,7 +20,7 @@ function parseText(text: string) {
   return parse(text, tables);
 }
 
-describe("parse — core.md beginner", () => {
+describe("parse — clause.md beginner", () => {
   it("parses zazawan vawalal.", () => {
     const result = parseText("zazawan vawalal.");
     assert.equal(result.utterances.length, 1);

@@ -65,7 +65,7 @@ The last letters you just used, on the same root `azawa`:
 <a id="citation-forms"></a>
 <a id="prefix-less-citation"></a>
 
-A citation is **lowercase** root + ending (`azawal`, `azawam`, `azawan`). English for a citation is the bare sense (*swan*, *grace*, *Azawan*), with no article. In a sentence you will add a first letter for the word’s job; that is [core](core.md#beginner). A [greeting](#greeting) is the named citation as a whole opening (`azawan.`).
+A citation is **lowercase** root + ending (`azawal`, `azawam`, `azawan`). English for a citation is the bare sense (*swan*, *grace*, *Azawan*), with no article. In a sentence you will add a first letter for the word’s job; that is the [clause](clause.md#beginner) page. A [greeting](#greeting) is the named citation as a whole opening (`azawan.`).
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -264,7 +264,7 @@ The rest of the role map (same **-n**):
 | `/j/` vocative + **-n** | address this named person, place, or title | `jululon`; titled group (*Team Alpha*); kind-based *everyone* uses **-l** |
 | `/j/` interjection + **-n** | named formula or conventional call | **[Amen]**, branded catchphrases; polar *yes* / *no* uses **-l** / **-m** ([polar stance](questions.md#polar-stance)) |
 
-An extra **`l`** after `/ɡ/` (`gl-`) is the before-the-noun spelling ([left-bound adjectives](core.md#left-bound-adjectives)), not a fifth reference suffix. Closed speech-act words (`jal` / `jol` / …) use their [act endings](core.md#speech-act). Manner and ordinary degree use **-l** / **-m** unless the manner or grade is itself a proper name.
+An extra **`l`** after `/ɡ/` (`gl-`) is the before-the-noun spelling ([left-bound adjectives](clause.md#left-bound-adjectives)), not a fifth reference suffix. Closed speech-act words (`jal` / `jol` / …) use their [act endings](clause.md#speech-act). Manner and ordinary degree use **-l** / **-m** unless the manner or grade is itself a proper name.
 
 **Compare with:** [join words](joins.md) use **-n** as join packaging or join content (fence joins, clause **sequence**, [join-act](join-extras.md#join-act-verbs) / [join-relation](join-extras.md#join-relations) stems). That is the one place **-n** is not a name.
 
@@ -486,6 +486,6 @@ z-Ululon | v-run | h-Amubun
 
 - [pronouns.md](pronouns.md): resume **-r**; special **`ugobo`** / **`edone`** / **`aha`** / **`enenu`**
 - [plurality.md](plurality.md): **-x** after the ending
-- [core.md](core.md): role letters; adding a first letter to a citation
+- [clause.md](clause.md): role letters; adding a first letter to a citation
 - [spans.md](spans.md#loans): mention / opaque when the **form** or a foreign acronym is the point
 - [x-compounds.md](x-compounds.md#ordinary-compound-order): long titles as ordinary compounds

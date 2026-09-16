@@ -9,7 +9,7 @@ function parseOk(input: string): MorphWord {
 }
 
 describe("parseWord — content / gl- / citation", () => {
-  it("parses zugobon as /z/ content ugobo + -n (core.md orthography)", () => {
+  it("parses zugobon as /z/ content ugobo + -n (clause.md orthography)", () => {
     const word = parseOk("zugobon");
     assert.equal(word.raw, "zugobon");
     assert.equal(word.pos, "z");
@@ -27,7 +27,7 @@ describe("parseWord — content / gl- / citation", () => {
     assert.deepEqual(word.family, { kind: "content", roots: ["azawa"] });
   });
 
-  it("parses glelulul as left-bound /ɡ/ (core.md gl-)", () => {
+  it("parses glelulul as left-bound /ɡ/ (clause.md gl-)", () => {
     const word = parseOk("glelulul");
     assert.equal(word.pos, "g");
     assert.equal(word.gl, true);
@@ -155,7 +155,7 @@ describe("parseWord — spans and writing atoms", () => {
     });
   });
 
-  it("parses writing atoms d[hi], d@[Hamlet], d[=] (spans.md / core.md)", () => {
+  it("parses writing atoms d[hi], d@[Hamlet], d[=] (spans.md / clause.md)", () => {
     const cite = parseOk("d[hi]");
     assert.equal(cite.pos, "d");
     assert.equal(cite.ending, "l");
@@ -323,7 +323,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.deepEqual(word.family, { kind: "joinMarker", series: "a" });
   });
 
-  it("parses darl / darm as stand-ins (core.md stand-in)", () => {
+  it("parses darl / darm as stand-ins (clause.md stand-in)", () => {
     const locked = parseOk("darl");
     assert.equal(locked.pos, "d");
     assert.equal(locked.ending, "rl");
@@ -369,7 +369,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
 });
 
 describe("parseWord — illegal shapes", () => {
-  it("rejects capital role letter Zazawan (core.md capitalization)", () => {
+  it("rejects capital role letter Zazawan (clause.md capitalization)", () => {
     assert.throws(() => parseWord("Zazawan"), WordParseError);
   });
 

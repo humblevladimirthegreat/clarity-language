@@ -78,6 +78,7 @@ Put **every retired public path** in `pageMoves`, not only the latest rename. To
 | Old URL | Current URL |
 |---------|-------------|
 | `/grammar/coordination.html` | `/grammar/joins.html` |
+| `/grammar/core.html` | `/grammar/clause.html` |
 
 When you find another circulating URL (Cool Features, Reddit, Discord), add a row in the same commit as the rename when you can; otherwise add the row as soon as you notice the miss.
 

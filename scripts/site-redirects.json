@@ -4,6 +4,11 @@
       "from": "/grammar/coordination.html",
       "to": "/grammar/joins.html",
       "note": "Public URL after renaming coordination.md to joins.md. Keep hash fragments; browsers preserve them on 301 and on the build stub."
+    },
+    {
+      "from": "/grammar/core.html",
+      "to": "/grammar/clause.html",
+      "note": "Public URL after renaming core.md to clause.md. Keep hash fragments; browsers preserve them on 301 and on the build stub."
     }
   ]
 }

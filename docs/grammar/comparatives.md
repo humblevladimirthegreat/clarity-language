@@ -681,6 +681,6 @@ z-Ululon | z-Typical | z-rank/less | g-showmanship
 ## See also
 
 - Fence shape, single-item / standalone, SHARED scale / continuum: [joins.md](joins.md)
-- Manner adverbs: [core.md](core.md#adverbs-h)
+- Manner adverbs: [clause.md](clause.md#adverbs-h)
 - Kind and identity (*is a dog*, *is Azawan*): [predication.md](predication.md)
 - Measure NPs: [numbers-applied.md](numbers-applied.md#measure-phrases)

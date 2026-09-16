@@ -246,4 +246,4 @@ z-Ululon | h-anything-but | b-Uhubun | v-scream
 - List joins (right-close fence): [joins.md](joins.md)
 - Causal readings of open / without: [causation.md](causation.md)
 - Prefix-less *including* / *instead*: [revisers.md](revisers.md)
-- Clause *with* a tool: [core.md](relations.md#means)
+- Clause *with* a tool: [clause.md](relations.md#means)

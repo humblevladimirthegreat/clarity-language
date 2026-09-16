@@ -444,5 +444,5 @@ z-Ululon | g-craft | g-not
 ## See also
 
 - Scalar *as ADJ as* / comparative property clauses: [comparatives.md](comparatives.md)
-- Complex `/ɡ/`+`/b/`: [core.md](core.md)
+- Complex `/ɡ/`+`/b/`: [clause.md](clause.md)
 - Negation / single-item packaging on properties: [joins.md](joins.md#negation-u)

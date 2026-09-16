@@ -138,7 +138,7 @@ SHARED scale under bare/focus **`i`**-series stays **non-equative** (equative ne
 - Equative / inequative pointers → **`i`** / **`ui`** + SHARED scale.
 - **-r:** optional on atomic **`i`** only among the new forms; stacks stay **-r**-less.
 - Examples and cross-links retarget tie/equative off **`ae`** onto **`i`**; **`ae`** demos become *then*-sequences.
-- Downstream: [comparatives.md](../../grammar/comparatives.md), [restrictors.md](../../grammar/restrictors.md), [phonology.md](../../grammar/phonology.md), [core.md](../../grammar/core.md), [predication.md](../../grammar/predication.md), [questions.md](../../grammar/questions.md), [AGENTS.md](../../../AGENTS.md).
+- Downstream: [comparatives.md](../../grammar/comparatives.md), [restrictors.md](../../grammar/restrictors.md), [phonology.md](../../grammar/phonology.md), [clause.md](../../grammar/clause.md), [predication.md](../../grammar/predication.md), [questions.md](../../grammar/questions.md), [AGENTS.md](../../../AGENTS.md).
 
 ## Open questions
 

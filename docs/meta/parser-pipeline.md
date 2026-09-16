@@ -9,7 +9,7 @@ Library-first multi-stage parser for CLI checks, fixtures that lock the grammar 
 
 1. **Library-owned string and clause structure** — morphology, numbers, writing atoms, joins, spans, utterance framing.
 2. **Thin custom layer** — lexicon/overlay classification, token adapters, AST assembly, orchestration, resolve.
-3. **Doc sync** — mid-word **`x`** rule order mirrors [x-compounds.md](../grammar/x-compounds.md); number stems mirror [numbers.md](../grammar/numbers.md); sentence fences mirror [joins.md](../grammar/joins.md) / [spans.md](../grammar/spans.md) / [core.md](../grammar/core.md) / [dependents.md](../grammar/dependents.md).
+3. **Doc sync** — mid-word **`x`** rule order mirrors [x-compounds.md](../grammar/x-compounds.md); number stems mirror [numbers.md](../grammar/numbers.md); sentence fences mirror [joins.md](../grammar/joins.md) / [spans.md](../grammar/spans.md) / [clause.md](../grammar/clause.md) / [dependents.md](../grammar/dependents.md).
 4. **Testable stages** — morph fixtures, classify fixtures, sentence fixtures, and resolve fixtures fail independently.
 5. **No design authority creep** — if a parse fork is not in the docs, fix the docs or reject the input; do not paper over with backtracking across stages.
 
@@ -147,7 +147,7 @@ Adapter: [`src/parse/tokens.ts`](../../src/parse/tokens.ts) / [`src/parse/tokeni
 
 Owns:
 
-- Utterance framing ([core.md](../grammar/core.md) — `/j/` turns, omissible default assertoric; [dependents.md](../grammar/dependents.md) — `/x/` continue)
+- Utterance framing ([clause.md](../grammar/clause.md) — `/j/` turns, omissible default assertoric; [dependents.md](../grammar/dependents.md) — `/x/` continue)
 - Right-close joins at phrase / VP / clause level (illegal left fence)
 - Span open…close nesting; adjunct islands **`^ … ^`**
 - Complex `/ɡ|h/` + `/b/`; floating `/h/` as adjuncts
@@ -255,7 +255,7 @@ A production **parse** bundle is **not wired yet** (`build:lexicon-web` only bun
 
 | Topic | Doc |
 |-------|------|
-| Core sentence grammar / `/j/` framing | [core.md](../grammar/core.md) |
+| Clause grammar / `/j/` framing | [clause.md](../grammar/clause.md) |
 | Dependents / `/x/` continue / stand-ins | [dependents.md](../grammar/dependents.md) |
 | Hosted relations | [relations.md](../grammar/relations.md) |
 | Mid-word **`x`** families | [x-compounds.md](../grammar/x-compounds.md) |

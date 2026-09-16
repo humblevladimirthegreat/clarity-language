@@ -791,7 +791,7 @@ j-question | z-clap | z-trophy | z-rank/more
 
 ## See also
 
-- [core.md](core.md#turn-j): turn; speech act
+- [clause.md](clause.md#turn-j): turn; speech act
 - [dependents.md](dependents.md#continue-x): continue
 - [dependents.md](dependents.md#dependent-clauses): *that* / *whether* after **`darl` / `dorl`**
 - [joins.md](joins.md): join fences; statement readings of **-r** / single-item / standalone

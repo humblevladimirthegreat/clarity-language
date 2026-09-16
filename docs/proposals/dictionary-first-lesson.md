@@ -69,7 +69,7 @@ Optional: show the lexicon row for `odogo` / `uzumu` / `azawa` so learners see *
 
 Phonology Intermediate stays later (word anatomy with prefixes). [vowel-series.md](../grammar/vowel-series.md) waits until speech act (`jal` / `jol` / `jel` / `jul`) exists, then sits immediately before joins — that is a **vowel series**, not the IPA table.
 
-**Prefer for the cite beat:** first Beginner subsection of [core.md](../grammar/core.md) (before role-letter table), **or** a very short page **immediately after** phonology Beginner (or interleaved with it) and **immediately before** the rest of core, then merge into core when the beat is stable.
+**Prefer for the cite beat:** first Beginner subsection of [clause.md](../grammar/clause.md) (before role-letter table), **or** a very short page **immediately after** phonology Beginner (or interleaved with it) and **immediately before** the rest of core, then merge into core when the beat is stable.
 
 **Do not:** put the whole [reference-suffix.md](../grammar/reference-suffix.md) chapter before core (left-bound `gl-`, join **-n**, number-word exception). This lesson is the **four endings on cites** plus one resume pair.
 

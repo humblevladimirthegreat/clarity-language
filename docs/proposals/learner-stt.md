@@ -2,7 +2,7 @@
 
 **Status:** PROPOSED  
 **Related:** reverse of `learner-tts.md`; long-term TODO *speech to text*; parser assumed shipped ([parser-pipeline.md](../meta/parser-pipeline.md))  
-**Design authority:** spoken forms stay in the grammar docs ([phonology.md](../grammar/phonology.md), [spans.md](../grammar/spans.md#writing-vs-speech), [numbers.md](../grammar/numbers.md#writing-preferred-shorthand), [core.md](../grammar/core.md#role-letters)). This proposal covers **tooling only**: microphone audio → Agalan letters → optional preferred writing. It does **not** train an Agalan acoustic model.
+**Design authority:** spoken forms stay in the grammar docs ([phonology.md](../grammar/phonology.md), [spans.md](../grammar/spans.md#writing-vs-speech), [numbers.md](../grammar/numbers.md#writing-preferred-shorthand), [clause.md](../grammar/clause.md#role-letters)). This proposal covers **tooling only**: microphone audio → Agalan letters → optional preferred writing. It does **not** train an Agalan acoustic model.
 
 ## Motivation
 

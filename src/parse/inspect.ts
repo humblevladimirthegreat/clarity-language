@@ -351,22 +351,22 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     return { line: "closed mood", href: "commentary.html" };
   }
   if (word.reading === "locative") {
-    return { line: "locative relation", href: "core.html#locative-relations" };
+    return { line: "locative relation", href: "relations.html#locative-relations" };
   }
   if (word.reading === "ofRelation") {
-    return { line: "of relation", href: "core.html#of-relations" };
+    return { line: "of relation", href: "relations.html#of-relations" };
   }
   if (word.reading === "means") {
-    return { line: "means", href: "core.html#means" };
+    return { line: "means", href: "relations.html#means" };
   }
   if (word.reading === "similative") {
-    return { line: "simile", href: "core.html#similative" };
+    return { line: "simile", href: "relations.html#similative" };
   }
   if (word.reading === "exchange") {
-    return { line: "exchange", href: "core.html#exchange" };
+    return { line: "exchange", href: "relations.html#exchange" };
   }
   if (word.reading === "proxy") {
-    return { line: "proxy", href: "core.html#proxy" };
+    return { line: "proxy", href: "relations.html#proxy" };
   }
   if (word.reading === "joinAct" || word.reading === "joinRelation") {
     return { line: "join extra", href: "join-extras.html" };
@@ -378,7 +378,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     return { line: "associative plural", href: "plurality.html#associative" };
   }
 
-  return { line: "word form", href: "core.html" };
+  return { line: "word form", href: "clause.html" };
 }
 
 type Cursor = {

@@ -290,7 +290,7 @@ English *going back to X* / *returning to that thread* names an earlier person o
 >
 > "Azawan walks. Ululon runs. Going back to Azawan, he sleeps."
 
-**Not the same job as:** *regarding X* / *as for X* uses `/h/` + `/b/` X ([adverbs](core.md#adverbs-h)).
+**Not the same job as:** *regarding X* / *as for X* uses `/h/` + `/b/` X ([adverbs](clause.md#adverbs-h)).
 
 ### Cross-role recast
 

@@ -1,6 +1,6 @@
 # Hosted relations
 
-How an extra noun completes a **relation** (*with* a tool, *like*, *for* a swap, *on behalf of*). Same pair as [*inside*](core.md#extra-nouns) in core: relation on `/h/` or `/ɡ/`, extra noun in `/b/` right after it.
+How an extra noun completes a **relation** (*with* a tool, *like*, *for* a swap, *on behalf of*). Same pair as [*inside*](clause.md#extra-nouns) on the clause page: relation on `/h/` or `/ɡ/`, extra noun in `/b/` right after it.
 
 ## Beginner
 <a id="beginner"></a>
@@ -10,7 +10,7 @@ You already write a hosted pair for *inside a house* (`hogorem bohohul`). The sa
 ### Means (*with* a tool)
 <a id="means"></a>
 
-When English says the action **uses a tool** (*writes with a hammer*), keep the same hosted pair as [*inside*](core.md#extra-nouns). The relation word is **`hahanam`**. Put the tool in `/b/` right after it. (cue: ✋ *hand*: you act through the hand; `/b/` is the implement)
+When English says the action **uses a tool** (*writes with a hammer*), keep the same hosted pair as [*inside*](clause.md#extra-nouns). The relation word is **`hahanam`**. Put the tool in `/b/` right after it. (cue: ✋ *hand*: you act through the hand; `/b/` is the implement)
 
 > `zazawan dabogol hahanam bahamel vuwurul.`
 >
@@ -30,7 +30,7 @@ On a noun, the same root is **`gahanam`** (`dabogol gahanam bahamel` *a book wri
 <a id="similative"></a>
 <a id="like"></a>
 
-When English says something **resembles** a model (*walks like a duck*, *a house like Azawan’s*), keep the same hosted pair as [*inside*](core.md#extra-nouns). The relation word is **`hurorom`**. Put the model in `/b/` right after it. The event or thing stays real; only the match is to that model. (cue: 🪞 *mirror*: you see a reflection, not the same object twice)
+When English says something **resembles** a model (*walks like a duck*, *a house like Azawan’s*), keep the same hosted pair as [*inside*](clause.md#extra-nouns). The relation word is **`hurorom`**. Put the model in `/b/` right after it. The event or thing stays real; only the match is to that model. (cue: 🪞 *mirror*: you see a reflection, not the same object twice)
 
 > `zazawan hurorom budugul vawalal.`
 >
@@ -58,7 +58,7 @@ Ordinary `zurorol` is still *a mirror*.
 <a id="exchange"></a>
 <a id="in-exchange-for"></a>
 
-When English names the **other side of a swap** (*a book for a hammer*), keep the same hosted pair as [*inside*](core.md#extra-nouns). The relation word is **`huhanem`**. Put what is swapped against the theme in `/b/` right after it. That extra noun is the consideration, not who receives the theme. (cue: 💱 *currency-exchange*: the arrows swap one thing for another; `/b/` is the other side)
+When English names the **other side of a swap** (*a book for a hammer*), keep the same hosted pair as [*inside*](clause.md#extra-nouns). The relation word is **`huhanem`**. Put what is swapped against the theme in `/b/` right after it. That extra noun is the consideration, not who receives the theme. (cue: 💱 *currency-exchange*: the arrows swap one thing for another; `/b/` is the other side)
 
 > `zazawan dabogol huhanem bahamel vuhanem.`
 >
@@ -78,7 +78,7 @@ On a noun, the same root is **`guhanem`** (`dabogol guhanem bahamel` *a book for
 <a id="proxy"></a>
 <a id="on-behalf-of"></a>
 
-When English says someone **acts as another person’s agent** (*tells on behalf of Ululon*), keep the same hosted pair as [*inside*](core.md#extra-nouns). The relation word is **`hudagam`**. Put that person in `/b/` right after it. The subject still does the act; `/b/` is whose agency they use, not who hears the telling. (cue: 🪪 *id-card*: the card stands as an authorized face; `/b/` is that person)
+When English says someone **acts as another person’s agent** (*tells on behalf of Ululon*), keep the same hosted pair as [*inside*](clause.md#extra-nouns). The relation word is **`hudagam`**. Put that person in `/b/` right after it. The subject still does the act; `/b/` is whose agency they use, not who hears the telling. (cue: 🪪 *id-card*: the card stands as an authorized face; `/b/` is that person)
 
 > `zazawan hudagam bululon vezehel.`
 >
@@ -264,7 +264,7 @@ On a noun, the same roots stay `/ɡ/` (`gebarum bazadol gubuhum budunul` *from a
 >
 > "A guard inside a bank sits."
 
-**Compare with:** unhosted `/b/` is still the recipient ([extra nouns](core.md#extra-nouns)), not a place. *Toward* is heading, not completed *into* (*inside*). Ordinary `vebarul` is *to depart*; `hebarum` is the source relation. *Between* is one relation plus a `/b/` [join](joins.md) of two landmarks, not two relation words. Numeric *from 3 to 5* is a [range](numbers-applied.md#ranges) (number endpoints plus a SHARED continuum), not this place stacking. *Using* a tool is [means](#means) (`hahanam`), not a place. *Like* is [simile](#similative) (`hurorom`), not a place. *For a hammer* as a swap is [exchange](#exchange) (`huhanem`). *On behalf of Ululon* is [proxy](#proxy) (`hudagam`). *So that Ululon sits* is [so that](dependents.md#so-that) (`holalam`), not a path landmark. English *of* that is not a place is [of relations](#of-relations).
+**Compare with:** unhosted `/b/` is still the recipient ([extra nouns](clause.md#extra-nouns)), not a place. *Toward* is heading, not completed *into* (*inside*). Ordinary `vebarul` is *to depart*; `hebarum` is the source relation. *Between* is one relation plus a `/b/` [join](joins.md) of two landmarks, not two relation words. Numeric *from 3 to 5* is a [range](numbers-applied.md#ranges) (number endpoints plus a SHARED continuum), not this place stacking. *Using* a tool is [means](#means) (`hahanam`), not a place. *Like* is [simile](#similative) (`hurorom`), not a place. *For a hammer* as a swap is [exchange](#exchange) (`huhanem`). *On behalf of Ululon* is [proxy](#proxy) (`hudagam`). *So that Ululon sits* is [so that](dependents.md#so-that) (`holalam`), not a path landmark. English *of* that is not a place is [of relations](#of-relations).
 
 ### Of relations (*part of*, *cup of*, *made of*, *from*)
 <a id="of-relations"></a>

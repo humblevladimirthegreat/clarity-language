@@ -9,7 +9,7 @@ Sometimes one Agalan word is two smaller meanings with **`x`** in the middle. Th
 
 ### Two roots, one word
 
-English often glues two ideas into one word (*peanut butter*) or one hyphenated name. In Agalan you write both dictionary roots in **one** word and put **`x`** between them. The first letter of the word is still the [role letter](core.md#beginner) (subject, verb, and so on). The [ending](reference-suffix.md) belongs to the whole word, not to the piece before **`x`** alone. (cue: **x** ≈ plus: two pieces make one word)
+English often glues two ideas into one word (*peanut butter*) or one hyphenated name. In Agalan you write both dictionary roots in **one** word and put **`x`** between them. The first letter of the word is still the [role letter](clause.md#beginner) (subject, verb, and so on). The [ending](reference-suffix.md) belongs to the whole word, not to the piece before **`x`** alone. (cue: **x** ≈ plus: two pieces make one word)
 
 > `zabanuxudel.`
 >
@@ -308,7 +308,7 @@ Role vowels are **`a`** / **`e`** / **`u`** / **`o`**. Span type and edge letter
 ### How you show up (name **`x`** vowel)
 <a id="greeting-bid"></a>
 
-A [greeting](reference-suffix.md#greeting) is your own name with a period (`azawan.`). [Calling someone](core.md#vocative) is their name under **`/j/`** (`jululon.`). To say **how** this opening is meant, put **`x`** and one vowel before **-n**. That vowel is about the meeting (stay and talk, one ask, wait, pass by). It is not a grade of the person.
+A [greeting](reference-suffix.md#greeting) is your own name with a period (`azawan.`). [Calling someone](clause.md#vocative) is their name under **`/j/`** (`jululon.`). To say **how** this opening is meant, put **`x`** and one vowel before **-n**. That vowel is about the meeting (stay and talk, one ask, wait, pass by). It is not a grade of the person.
 
 On your own name, it is how you arrive. When you call them, it is how you address them.
 
@@ -498,7 +498,7 @@ j-Azawan-queue | z-Uhubun | d-doorbell | v-see
 
 ## See also
 
-- **`x`** at the start of a word (keep going): [core.md](dependents.md#continue-x)
+- **`x`** at the start of a word (keep going): [dependents.md](dependents.md#continue-x)
 - How **`x`** sits in the word shape: [phonology.md](phonology.md#phonotactics)
 - [ability.md](ability.md) / [values.md](values.md) / [roles.md](roles.md) / [numeric-derivation.md](numeric-derivation.md)
 - Greeting bid: [how you show up](#greeting-bid); bare hello: [reference-suffix.md](reference-suffix.md#greeting)

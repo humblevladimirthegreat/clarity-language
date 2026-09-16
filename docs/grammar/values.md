@@ -241,7 +241,7 @@ That ending is **prescription force**: how strongly you stake that ought. If you
 
 **Unlike** [MAY](commentary.md#may) (`hodohom`): the host verb stays ordinary content there and the event is still *could be*. With **`xe`**, the same host verb is the **ought-to** act, not a simultaneous performance claim.
 
-**Compare with:** [command](core.md#speech-act-beginner) **`jel`** instructs an act outright without naming the need or prescription force. **`xe`** is need-linked deontic: *ought to advance this need*, with force on the ending.
+**Compare with:** [command](clause.md#speech-act-beginner) **`jel`** instructs an act outright without naming the need or prescription force. **`xe`** is need-linked deontic: *ought to advance this need*, with force on the ending.
 
 **Compare with:** [predict](plan-decision.md#predict) (`helezo` …) when English *should* is really a **forecast** about what will pay off the need, or when you want both *is doing* and a norm on that doing — not prescription deontic. For a plain performance report, drop **`xe`** and assert the verb alone.
 

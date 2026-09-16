@@ -61,13 +61,13 @@ English *the hammer used* names what the doer uses so the event can go through. 
 
 `zexuwurul` is a writing-implement (the **-l** sense of *write*). A book as a mere object, with no event, stays `dabogol`.
 
-**Compare with:** `zaxuwurul` is who writes; `zuxuwurul` is what is written. *Walks hastily* is ordinary [manner](core.md#adverbs-h) (`/h/`), not this vowel. *Writes with a hammer* is [means](relations.md#means) (`hahanam` + `/b/`), not this vowel: **`exROOT`** *names* the implement.
+**Compare with:** `zaxuwurul` is who writes; `zuxuwurul` is what is written. *Walks hastily* is ordinary [manner](clause.md#adverbs-h) (`/h/`), not this vowel. *Writes with a hammer* is [means](relations.md#means) (`hahanam` + `/b/`), not this vowel: **`exROOT`** *names* the implement.
 
 ### The other party (`o`)
 
 Some stems name a **relation** (who is bound to whom), not an action. The extra person of that relation sits in **hosted** `/b/` after the relation word. To name that person from the relation stem (*the other party of the bond*), write **`o`** in the vowel slot. That named party is the **reltum**. (cue: **o** ≈ one (that other pole))
 
-**Not the same job as:** unhosted `/b/` as the recipient of a verb ([extra nouns](core.md#extra-nouns)).
+**Not the same job as:** unhosted `/b/` as the recipient of a verb ([extra nouns](clause.md#extra-nouns)).
 
 > `zazawan gonogom bululon.`
 > `zoxonogor vurunul.`
