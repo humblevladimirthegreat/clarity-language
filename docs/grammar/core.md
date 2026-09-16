@@ -238,6 +238,18 @@ You can also say:
 | **`hababam badorol`** | *before* | `ababal` *backpack* | 🎒: packed first |
 | **`horanem badorol`** | *after* | `oranel` *hourglass* | ⌛: sand already through |
 
+When English puts a **noun** after *despite* (*despite Ululon*), keep the same **`hezebam`** pole and put that noun in `/b/` instead of **`adoro`**. The obstacle is given, as with *although*. Do not write a second concession word. On a noun host the same pole is **`gezebam`**. (cue: 🦓 *zebra*: two stripes, still one animal)
+
+> `zazawan vawalal hezebam bululon.`
+>
+> z-Azawan | v-walk | h-although | b-Ululon
+>
+> "Azawan walks despite Ululon."
+
+Ordinary `zezebal` is still *a zebra*.
+
+**Compare with:** *although Ululon walks* is **`hezebam badorol`** plus the next sentence. Discourse *however* is **`xezebal`** ([continue](#continue-x)).
+
 The verb has no past or future letter. *Before* / *after* / *while* / *until* place this event relative to the next sentence.
 
 ### Continue (`/x/`): keep the same speech move
@@ -308,6 +320,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *inside* | `hogorem` | `ogorel` *correct* | ⭕: being inside the boundary |
 | *next clause* | `adorol` | `adorol` *door* | 🚪: the next sentence walks through |
 | *because* | `hurugum` | `urugul` *brick* | 🧱: the cause is what the result sits on |
+| *although* | `hezebam` | `ezebal` *zebra* | 🦓: two stripes, still one animal |
 | *therefore* | `xezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
 
 #### English → Agalan
@@ -374,6 +387,14 @@ z-Azawan | b-Ululon | v-tell | d-next-clause | z-Uhubun | v-sit
 `zazawan vurunul hurugum badorol zululon dugugal vubunul.`
 
 z-Azawan | v-run | h-because | b-next-clause | z-Ululon | d-guard | v-punch
+:::
+
+**9.** *Azawan writes despite a guard.*
+
+::: details Show answer
+`zazawan vuwurul hezebam bugugal.`
+
+z-Azawan | v-write | h-although | b-guard
 :::
 
 #### Agalan → English
@@ -447,6 +468,15 @@ z-Ululon | v-sneak | h-inside | b-bank
 z-Uhubun | v-scream | x-therefore | z-Ululon | v-fight
 
 *Uhubun screams. Therefore Ululon fights.*
+:::
+
+**9.** `zululon vuvugul hezebam bugugal.`
+
+::: details Show answer
+
+z-Ululon | v-fight | h-although | b-guard
+
+*Ululon fights despite a guard.*
 :::
 
 ## Intermediate
@@ -633,7 +663,7 @@ These words glue one finished sentence to the next (one-way; default ending **-l
 
 *therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Those same roots keep their ordinary content readings under other role letters.
 
-**Compare with:** *although* / *while* attach a dependent after **`adoro`** (`hezebam badorol`, `hegemum badorol` — [dependent clauses](#dependent-clauses)). Discourse **`xezebal`** / **`xanelol`** glue a finished sentence to the next one.
+**Compare with:** *although* / *while* attach a dependent after **`adoro`** (`hezebam badorol`, `hegemum badorol` — [dependent clauses](#dependent-clauses)). *Despite Ululon* is the same pole with a noun in `/b/` (`hezebam bululon`). Discourse **`xezebal`** / **`xanelol`** glue a finished sentence to the next one.
 
 ### Nested dependents
 <a id="nested-dependents"></a>

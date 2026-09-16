@@ -112,7 +112,8 @@ urugum,h,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),brick
 urugum,g,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),brick stacks as foundation; foundation is because-reason under claim
 eberom,h,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop
 eberom,g,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop
-ezebam,h,🦓,clause_pole,although,ALTHOUGH clause pole (concession),zebra stripes show contrast; contrast is although against expectation
+ezebam,h,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite
+ezebam,g,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite
 egemum,h,♊,clause_pole,while,WHILE clause pole (concurrent),gemini twins mirror two sides; duality is while both sides at once
 udumem,h,⏲️,clause_pole,until,UNTIL clause pole (endpoint bound),timer counts down to zero; deadline is until the endpoint
 ababam,h,🎒,clause_pole,before,BEFORE clause pole (ahead-of),backpack holds what you need ahead; preparation is before the event

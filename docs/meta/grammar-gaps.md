@@ -31,7 +31,7 @@ No new clause types. Unblocks locative talk and later relatives / paths.
 
 - [x] **5. Simile *like* (thin).** Hosted `/h/` or `/ɡ/` **`urorom`** + model `/b/`. Taught in [core simile](../grammar/core.md#similative). Not **`SAME`**, not **`ae`**, not NOTIONAL, not **`gaen`**.
 
-- [ ] **6. NP *despite* (thin).** Clause *although* is **`hezebam badorol`** ([core.md](../grammar/core.md#dependent-clauses)). *Despite the rain* should reuse that pole + `/b/` **noun** (same shape as *if rain*). Teach one NP example; do not invent a second concession morph.
+- [x] **6. NP *despite* (thin).** Same **`ezeba`** pole as *although*: **`hezebam` / `gezebam`** + `/b/` noun ([core dependent clauses](../grammar/core.md#dependent-clauses)). Overlay gloss stays *although*.
 
 - [ ] **7. English *by / for / about / as* cheat-sheet (thin).** Pedagogy only: one short table on [core.md](../grammar/core.md) or [terminology.md](../grammar/terminology.md) mapping each English word to the **live** Agalan jobs (agent stays `/z/`; means = item 3; deadline = time `/h/`; locative = item 2; recipient = item 1; duration = [measure](../grammar/numbers-applied.md#measure-phrases); need-purpose = [values `xo`](../grammar/values.md); topic = `hozal`; approximation = number **-m**; classification vs *while* vs *because*). No new morph.
 

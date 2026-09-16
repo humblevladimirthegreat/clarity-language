@@ -16,6 +16,7 @@ Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#a
 |-------|-------|--------|
 | **ABIL** | Hostless *can* / *can’t* fallback **`egera`** | [Ability](ability.md#ability-fallback) |
 | **ACT** | Emotion-compose arousal (HIGH / MED / LOW) | [Special vocabulary](special-vocabulary.md#emotion-compose) |
+| **ALTHOUGH** | Clause-pole **`ezeba`** (*although* / NP *despite*) | [Core](core.md#dependent-clauses) |
 | **BECAUSE** | Clause-pole **`urugu`** (*because*) | [Causation](causation.md#because) |
 | **CAUSE** | Mechanism-framing mood **`egega`** | [Causation](causation.md#cause) |
 | **CIRCUM** | Emotion locus: charge on the situation | [Special vocabulary](special-vocabulary.md#emotion-compose) |
@@ -201,7 +202,7 @@ Kind / role as predicative `/ɡ/` (no *to-be* verb).
 
 ### Clause pole / NP pole
 
-Condition vs outcome as NPs vs full sentences after **`adoro`**. **Clause pole** is the causation reading.
+Condition vs outcome as NPs vs full sentences after **`adoro`**. **Clause pole** is the causation reading. Concession **`ezeba`** uses the same NP vs clause split (*despite Ululon* vs *although Ululon walks*).
 
 [Causation](causation.md)
 

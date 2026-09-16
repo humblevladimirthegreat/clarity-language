@@ -523,6 +523,7 @@ Time and discourse dependents use the same **`adoro`** hang as *if* / *because*.
 | English | Agalan |
 |---------|---------|
 | *although* / *while* / *until* / *before* / *after* | same `/h/`+**`adoro`** shape, **-m** ([dependent clauses](core.md#dependent-clauses)): **`hezebam`** / **`hegemum`** / … |
+| *despite* (NP) | same **`hezebam`** (or **`gezebam`**) + `/b/` **noun**, not a second pole |
 | *therefore* (discourse) | **`xezazal`** ([continue](core.md#continue-x)) |
 | *however* / *meanwhile* (discourse) | **`xezebal`** / **`xanelol`** |
 
