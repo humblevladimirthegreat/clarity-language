@@ -72,7 +72,7 @@ strict: *However — that one (B), per memory — it rains.*
 
 loose: *Still — it's raining, as I remember.*
 
-**B:** `jael xezazal zahan howoram vawalal vul.`
+**B:** `jael xezazal zahan hemabam vawalal vul.`
 
 gloss: `j-yes` · `x-therefore` · `z-interlocutors` · `h-plan` · `v-walk` · `v-not`
 
@@ -120,7 +120,7 @@ strict: *Point 2: solution #2. Please, you (B), cook bread and tea.*
 
 loose: *Second — a solution: please cook some bread and tea.*
 
-**B:** `jaol howoram xan zubur dabogo von.`
+**B:** `jaol hemabam xan zubur dabogo von.`
 
 gloss: `j-uptake` · `h-plan` · `x-and-then` · `z-←Ubunexunowen` · `d-book` · `v-choose`
 
@@ -248,7 +248,7 @@ strict: *Finally: goal #3. We (A and B and C) — pleasure met, medium activatio
 
 loose: *Finally, a third goal: we're actually enjoying this.*
 
-**C:** `harogul hanunul zenenun vawalal zul.`
+**C:** `huludol hanunul zenenun vawalal zul.`
 
 gloss: `h-COMMON` · `h-rain` · `z-someone` · `v-walk` · `z-not`
 

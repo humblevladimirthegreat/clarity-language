@@ -118,7 +118,7 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, emotion ACT
 | `join_act` | `joinAct` | vowel-series `/v/` **`an`** / **`on`** / … |
 | `join_relation` | `joinRelation` | same stems on `/g/` `/h/` |
 | `evidential` | `mood` | LIVE / WITNESSED / … |
-| `residue` | `mood` | RESIDUE **`oneba`** |
+| `residue` | `mood` | RESIDUE **`omome`** |
 | `former_climate` | `mood` | FORMER **`emebe`** |
 | `may` | `mood` | MAY hold map (find out / default / who knows) |
 | `notional` | `mood` | NOTIONAL hold map |

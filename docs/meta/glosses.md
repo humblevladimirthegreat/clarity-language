@@ -343,7 +343,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `guzumum` | `g-happy` | *happy* |
 | `huvuvum` | `h-WITNESSED` | *per memory* |
 | `hadezem` | `h-LIVE` | *from the scene* |
-| `howoram` | `h-plan-sketch` | *as a sketch plan* |
+| `hemabam` | `h-plan-sketch` | *as a sketch plan* |
 | `gonunul` | `g-SAME` | *identical to* (identity host) |
 | `von` | `v-choose` | *chooses (exactly one)* |
 
@@ -385,7 +385,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Inclusive *we* (interlocutors)
 
-> `jael xezazal zahan howoram vawalal vul.`
+> `jael xezazal zahan hemabam vawalal vul.`
 >
 > j-yes | x-therefore | z-interlocutors | h-plan-sketch | v-walk | v-not
 >

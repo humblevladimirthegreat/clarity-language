@@ -416,7 +416,7 @@ Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). S
 | **using** | **by** (`aem`) |
 | **against** | **contrary to** (`uem`) |
 
-> `zazawan vuwurul em bonebal.`
+> `zazawan vuwurul em bomomel.`
 >
 > z-Azawan | v-write | with-in-mind | b-money
 >

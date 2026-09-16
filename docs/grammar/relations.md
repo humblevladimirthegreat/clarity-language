@@ -93,7 +93,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *book* | `abogol` | | |
 | *hammer* | `ahamel` | | |
 | *duck* | `udugul` | | |
-| *money* | `onebal` | | |
+| *money* | `omomel` | | |
 | *write* | `vuwurul` | `uwurul` *write* | ✍️: putting words on the page |
 | *walk* | `vawalal` | | |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
@@ -114,7 +114,7 @@ z-Azawan | h-like | b-duck | v-walk
 **2.** *Azawan writes in exchange for money.*
 
 ::: details Show answer
-`zazawan vuwurul huhanem bonebal.`
+`zazawan vuwurul huhanem bomomel.`
 
 z-Azawan | v-write | h-in-exchange-for | b-money
 :::
@@ -147,7 +147,7 @@ z-Azawan | h-like | b-duck | v-walk
 *Azawan walks like a duck.*
 :::
 
-**3.** `zululon vuwurul huhanem bonebal.`
+**3.** `zululon vuwurul huhanem bomomel.`
 
 ::: details Show answer
 

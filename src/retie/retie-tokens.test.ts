@@ -55,6 +55,11 @@ describe("retieCore — Agalan tokens", () => {
     assert.equal(retieCore("adoro", map), "badoro");
   });
 
+  it("rewrites PoS plus bare root with no ending", () => {
+    const map = mapOf(["owora", "emaba"]);
+    assert.equal(retieCore("howora", map), "hemaba");
+  });
+
   it("rewrites a role compound host", () => {
     const map = mapOf(["edege", "uzunu"]);
     assert.equal(retieCore("gaxedegel", map), "gaxuzunul");

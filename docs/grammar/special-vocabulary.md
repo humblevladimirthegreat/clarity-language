@@ -239,17 +239,17 @@ z-fireworks | g-relatedness-unmet-modifiable | h-HIGH | h-EXTERNAL
 
 English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Keep *who / when* on the [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / …). Write exceptionlessness as a closed `/h/` mood root (optional `/w/` on a preceding `/ɡ/`). You can then pair *always* with *usually*, *by definition*, and the rest without changing the domain fence.
 
-> `zazawan hual vawalal harogul.`
+> `zazawan hual vawalal huludol.`
 >
 > z-Azawan | h-always | v-walk | h-COMMON
 >
 > "Azawan always walks, usually."
 
-The default *always* is *usually* (exceptions expected), not *must happen that way*, and not an ought. (cue: usual weather, not a law of nature.) Prefer floating `/h/`. Use **COMMON** (`harogul`) unless another row is the exceptionlessness you mean. **RULE** is complex `/h/` + `/b/` when you name the frame.
+The default *always* is *usually* (exceptions expected), not *must happen that way*, and not an ought. (cue: usual weather, not a law of nature.) Prefer floating `/h/`. Use **COMMON** (`huludol`) unless another row is the exceptionlessness you mean. **RULE** is complex `/h/` + `/b/` when you name the frame.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`harogul`** | COMMON (default climate) | *usually* (exceptions expected) | `arogul` *cloudy* | ⛅: usual sky still allows a shower |
+| **`huludol`** | COMMON (default climate) | *usually* (exceptions expected) | `uludol` *cloudy* | ⛅: usual sky still allows a shower |
 | **`habulul`** | UNCOUNTERED (search) | *as far as checked* (no counterexample comes to mind) | `abulul` *pill* | 💊: you take it to treat an ailment; the search found none |
 | **`harazal`** | FORMAL | *by definition* / math / proof | `arazal` *star* | ⭐: a charted constellation does not wander |
 | **`habelel`** | NATURAL | *by natural necessity* (unsupported objects fall) | `abelel` *apple* | 🍎: it falls because the world works that way |
@@ -257,16 +257,16 @@ The default *always* is *usually* (exceptions expected), not *must happen that w
 
 **Compare with:** *who / when* uses [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory. Usual weather you are **not** claiming now is [FORMER](knowing.md#former-climate) (`hemebem`), not COMMON.
 
-**For *I saw a pattern*, use:** [evidential](knowing.md#evidentiality) **`abawa`**. **`arogu`** is usual-weather universality; NATURAL **`abele`** stacks a separate evidential `/h/` for how you know.
+**For *I saw a pattern*, use:** [evidential](knowing.md#evidentiality) **`abawa`**. **`uludo`** is usual-weather universality; NATURAL **`abele`** stacks a separate evidential `/h/` for how you know.
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `… hual … harogul` | default universality | *always, usually* |
+| `… hual … huludol` | default universality | *always, usually* |
 | `… hual … habulul` | search found no counterexample | *always, as far as checked* |
 | `zual gagurel … harazal` | definition / proof | *every square, by definition* |
 | `… hual … habelel` + evidential `/h/` | nature plus how you know | *always, by natural necessity* (e.g. `habawam`) |
 | `… hual … hebebel begezel` | named frame | *always, under chess* |
-| `zuam gagadal … harogul` | open domain + usual universality | *every cat that comes to mind, usually* |
+| `zuam gagadal … huludol` | open domain + usual universality | *every cat that comes to mind, usually* |
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
@@ -282,7 +282,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | | |
 | *Ululon* | `ululon` | | |
 | *Uhubun* | `uhubun` | | |
-| *COMMON* | `harogul` | `arogul` *cloudy* | ⛅: usual sky still allows a shower |
+| *COMMON* | `huludol` | `uludol` *cloudy* | ⛅: usual sky still allows a shower |
 | *UNCOUNTERED* | `habulul` | `abulul` *pill* | 💊: you take it to treat an ailment; the search found none |
 | *FORMAL* | `harazal` | `arazal` *star* | ⭐: a charted constellation does not wander |
 | *NATURAL* | `habelel` | `abelel` *apple* | 🍎: it falls because the world works that way |
@@ -304,7 +304,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **1.** *Ululon always writes, usually.*
 
 ::: details Show answer
-`zululon hual vuwurul harogul.`
+`zululon hual vuwurul huludol.`
 
 z-Ululon | h-always | v-write | h-COMMON
 :::
@@ -344,14 +344,14 @@ z-Ululon | h-always | v-punch | h-RULE | b-Ahalan
 **6.** *Every claim that comes to mind, usually.*
 
 ::: details Show answer
-`zuam gedemam harogul.`
+`zuam gedemam huludol.`
 
 z-everything-but.open | g-claim | h-COMMON
 :::
 
 #### Agalan → English
 
-**1.** `zazawan hual vajul harogul.`
+**1.** `zazawan hual vajul huludol.`
 
 ::: details Show answer
 
@@ -395,7 +395,7 @@ z-Ululon | h-always | v-scream | h-RULE | b-Ahalan
 *Ululon always screams, under school.*
 :::
 
-**6.** `zuam geregem harogul.`
+**6.** `zuam geregem huludol.`
 
 ::: details Show answer
 

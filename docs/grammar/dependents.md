@@ -146,7 +146,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Ululon* | `ululon` | | |
 | *Uhubun* | `uhubun` | | |
 | *guard* | `ugugal` | | |
-| *money* | `onebal` | | |
+| *money* | `omomel` | | |
 | *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
 | *stand* | `vazanul` | `azanul` *stand* | 🧍: staying in place |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |

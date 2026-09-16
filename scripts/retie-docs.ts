@@ -19,7 +19,11 @@ import { parseRetieMapJson, RETIE_MAP_RELATIVE_PATH } from "../src/retie/map.js"
 import { lineNumberAt, rewriteMarkdown } from "../src/retie/tokens.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
-const markdownDirs = [join(rootDir, "docs", "grammar"), join(rootDir, "docs", "examples")];
+const markdownDirs = [
+  join(rootDir, "docs", "grammar"),
+  join(rootDir, "docs", "examples"),
+  join(rootDir, "docs", "meta"),
+];
 const compoundsPath = join(rootDir, "data", "lexicon-compounds.csv");
 
 type CliOptions = {
@@ -59,7 +63,7 @@ function printUsage(): void {
   console.error(`Usage: npm run retie-docs -- [--map PATH] [--write]
 
 Reads ${RETIE_MAP_RELATIVE_PATH} (from convert-word --lexicon) and reties
-Agalan tokens in docs/grammar/, docs/examples/, and data/lexicon-compounds.csv.
+Agalan tokens in docs/grammar/, docs/examples/, docs/meta/, and data/lexicon-compounds.csv.
 Default is a dry-run.`);
 }
 

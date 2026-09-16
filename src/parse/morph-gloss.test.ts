@@ -114,9 +114,9 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zugobonx", "z-speaker-x");
     expectLine("zedonenx", "z-listener-x");
     expectLine("hadezem", "h-LIVE");
-    expectLine("honebam", "h-RESIDUE");
+    expectLine("homomem", "h-RESIDUE");
     expectLine("hemebem", "h-FORMER");
-    expectLine("howoram", "h-plan-sketch");
+    expectLine("hemabam", "h-plan-sketch");
     expectLine("gonunul", "g-SAME");
   });
 
@@ -187,7 +187,7 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
   it("inclusive we", () => {
     expectLine(
-      "jael xezazal zahan howoram vawalal vul.",
+      "jael xezazal zahan hemabam vawalal vul.",
       "j-yes | x-therefore | z-interlocutors | h-plan-sketch | v-walk | v-not",
     );
   });

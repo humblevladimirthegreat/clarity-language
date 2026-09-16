@@ -68,7 +68,7 @@ describe("classify", () => {
   });
 
   it("overlay mood on residue and former-climate", () => {
-    const residue = expectReading("honebam", "mood");
+    const residue = expectReading("homomem", "mood");
     assert.equal(residue.overlay?.kind, "residue");
     assert.equal(residue.overlay?.gloss, "RESIDUE");
     const former = expectReading("hemebem", "mood");

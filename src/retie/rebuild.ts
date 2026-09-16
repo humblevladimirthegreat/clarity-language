@@ -10,6 +10,8 @@ const SPAN_CLOSE: Record<WritingBracket, string> = {
   "<": ">",
 };
 
+const POS_LETTERS = "zdbvgwhxj";
+
 /** Rewrite one orthographic word. Never substitutes inside a larger token. */
 export function retieCore(core: string, map: ReadonlyMap<string, string>): string | null {
   if (!core || map.size === 0) {
@@ -18,6 +20,14 @@ export function retieCore(core: string, map: ReadonlyMap<string, string>): strin
   const bare = map.get(core);
   if (bare && isClarityRootShape(core)) {
     return bare === core ? null : bare;
+  }
+  if (core.length >= 4 && POS_LETTERS.includes(core[0]!)) {
+    const rest = core.slice(1);
+    const mappedRest = map.get(rest);
+    if (mappedRest && isClarityRootShape(rest) && rest.length >= 3) {
+      const next = `${core[0]}${mappedRest}`;
+      return next === core ? null : next;
+    }
   }
   try {
     return rewriteParsedWord(parseWord(core), map);

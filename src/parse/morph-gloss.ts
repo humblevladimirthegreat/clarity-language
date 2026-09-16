@@ -17,7 +17,7 @@
  * | `an` in-clause | `including.named` | proper-name phrase |
  * | `har` statement / fill-ask | `h-sometimes` / `h-when` | `-r` is unspecified occasion, not `hal` |
  * | `hual` bare | `h-always` | |
- * | `howoram` | `h-plan-sketch` | overlay grain `-m` |
+ * | `hemabam` | `h-plan-sketch` | overlay grain `-m` |
  * | mid-word `x` | always `-x-` segments | never a fused English name |
  * | house-cast `-n` | `Azawan` / `Ululon` / `Uhubun` | |
  * | mention `{…}` / spoken TYPE **o** interior | pass through the surface (`z-odogo`, `odogol`) | not the English lemma |

@@ -38,10 +38,10 @@ Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#a
 | **NOTIONAL** | As-if / pretense mood **`adade`** | [Knowing](knowing.md#notional) |
 | **ONLY-IF** | Clause-pole **`ebero`** (*only if* / *needs*) | [Causation](causation.md#only-if) |
 | **PATTERN** | Evidential: from regularity | [Knowing](knowing.md#evidentiality) |
-| **PLAN** | Intention-framing mood **`owora`** | [Intention](intention.md#plan-predict) |
+| **PLAN** | Intention-framing mood **`emaba`** | [Intention](intention.md#plan-predict) |
 | **PREDICT** | Later-event forecast mood **`elezo`** | [Intention](intention.md#predict) |
 | **RECORDED** | Evidential: documented / playback | [Knowing](knowing.md#evidentiality) |
-| **RESIDUE** | Episode standing: outcome still on the current tally **`oneba`** | [Knowing](knowing.md#residue) |
+| **RESIDUE** | Episode standing: outcome still on the current tally **`omome`** | [Knowing](knowing.md#residue) |
 | **RULE** | Universality: holds inside a named frame | [Special vocabulary](special-vocabulary.md#universality) |
 | **SAME** | Identity copula **`onunu`** | [Predication](predication.md#identity) |
 | **SO-THAT** | Clause-pole **`olala`** (*so that* / NP intended *for*) | [Dependents](dependents.md#so-that) |
