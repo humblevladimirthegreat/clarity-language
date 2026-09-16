@@ -102,6 +102,21 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 
 Do not park that recipient immediately after a relation `/h/` or `/ɡ/`: `hogorem bululon` is *inside Ululon*, not *to Ululon*. Put the pair first, then the recipient (`hogorem bohohul bululon`).
 
+### Which person or thing (*who / that / which*)
+<a id="which-noun"></a>
+
+When English hangs *who* / *that* / *which* plus a clause on a noun (*the guard who sits*), write **two sentences**. First say that inner clause as an ordinary sentence. Then use that same person or thing in the next sentence.
+
+> `zugugal vajul. zazawan bugugal vezehel.`
+>
+> z-guard | v-sit | z-Azawan | b-guard | v-tell
+>
+> "A guard sits. Azawan tells the guard."
+
+That pair is English *Azawan tells the guard who sits.* Repeat the full word when you need the same person again in the next sentence.
+
+**Compare with:** *a blue dog* is still one [adjective](#adjectives-ɡ) (`gelulul`). *A dog inside a house* is still the extra-noun pair on the verb (`hogorem bohohul`). *Azawan tells Ululon **that** a dog runs* is a [dependent clause](#dependent-clauses) (**`adoro`**): *that* packages the next sentence as content, not as a tag on *dog*.
+
 ### Means (*with* a tool)
 <a id="means"></a>
 
@@ -304,7 +319,7 @@ When English puts a **noun** after *despite* (*despite Ululon*), keep the same *
 
 Ordinary `zezebal` is still *a zebra*.
 
-**Compare with:** *although Ululon walks* is **`hezebam badorol`** plus the next sentence. Discourse *however* is **`xezebal`** ([continue](#continue-x)). *Whether Ululon walks* is **`adoro`** plus inner **`jol`**, not **`hadorom`** (*if* is a condition, not polar ignorance).
+**Compare with:** *although Ululon walks* is **`hezebam badorol`** plus the next sentence. Discourse *however* is **`xezebal`** ([continue](#continue-x)). *Whether Ululon walks* is **`adoro`** plus inner **`jol`**, not **`hadorom`** (*if* is a condition, not polar ignorance). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`adoro`** on the noun.
 
 The verb has no past or future letter. *Before* / *after* / *while* / *until* place this event relative to the next sentence.
 
@@ -663,7 +678,7 @@ A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). A further plain adj
 >
 > "a dog the same as blue Azawan"
 
-You can chain more complex units onto those extra nouns. Two complex adjectives on the same first noun need another sentence. Several `/h/` units on one verb are fine (each plain `/h/`, or `/h/`+`/b/` together, counts as one). An unhosted recipient `/b/` may follow a finished pair (`hogorem bohohul bululon`); it still must not sit immediately after the relation word.
+You can chain more complex units onto those extra nouns. Two complex adjectives on the same first noun need [another sentence](#which-noun). Several `/h/` units on one verb are fine (each plain `/h/`, or `/h/`+`/b/` together, counts as one). An unhosted recipient `/b/` may follow a finished pair (`hogorem bohohul bululon`); it still must not sit immediately after the relation word.
 
 ### Locative relations
 <a id="locative-relations"></a>
@@ -719,7 +734,13 @@ A **place path** (*from A to B*, *out of the house into the train*) is still tho
 | *out of A into B* | **`hejegem`** A **`hogorem`** B |
 | *through C* on that path | add **`hezewum`** C as another `/h/` unit |
 
-On a noun, the same roots stay `/ɡ/` (`gebarum bazadol gubuhum budunul` *from a station to a train*).
+On a noun, the same roots stay `/ɡ/` (`gebarum bazadol gubuhum budunul` *from a station to a train*). *The guard in a bank* is that noun-hosted pair, not a *who*-clause:
+
+> `zugugal gogorem banabal vajul.`
+>
+> z-guard | g-inside | b-bank | v-sit
+>
+> "A guard inside a bank sits."
 
 **Compare with:** unhosted `/b/` is still the recipient ([extra nouns](#extra-nouns)), not a place. *Toward* is heading, not completed *into* (*inside*). Ordinary `vebarul` is *to depart*; `hebarum` is the source relation. *Between* is one relation plus a `/b/` [join](joins.md) of two landmarks, not two relation words. Numeric *from 3 to 5* is a [range](numbers-applied.md#ranges) (number endpoints plus a SHARED continuum), not this place stacking. *Using* a tool is [means](#means) (`hahanam`), not a place. *Like* is [simile](#similative) (`hurorom`), not a place. *For a hammer* as a swap is [exchange](#exchange) (`huhanem`). *On behalf of Ululon* is [proxy](#proxy) (`hudagam`). English *of* that is not a place is [of relations](#of-relations).
 
@@ -765,6 +786,33 @@ Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is locativ
 | **`hajabam` / `gajabam`** | identity source / provenance | *from* (origin) | `ajabal` *japan-map* | 🗾: one land’s map as where it comes from |
 
 **Compare with:** ownership is `goborul` + `/b/` ([joins](joins.md#scope-fence-p-join)). Place *inside* is `ogore`; path *from* is `ebaru` ([locative relations](#locative-relations)). *A house like Azawan’s* is [simile](#similative) (`gurorom`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`guhanem`). Portion *of* a class is [percent](numbers-applied.md#percent-denominators). Associates are plural **-x**, not meronymy. Kind *origin* (`ROOTx#e-`) is [numeric derivation](numeric-derivation.md), not this token *from*.
+
+### Which noun, with resume and kinds
+<a id="which-noun-intermediate"></a>
+
+Beginner already used two sentences for English *who / that / which*. Prefer [resume **-r**](pronouns.md#resume-r) in the second sentence.
+
+> `zugugal vajul. zazawan bugur vezehel.`
+>
+> z-guard | v-sit | z-Azawan | b-←guard | v-tell
+>
+> "A guard sits. Azawan tells that guard."
+
+> `zazawan dodogol vejel hogorem banabal. zodor vurunul.`
+>
+> z-Azawan | d-dog | v-see | h-inside | b-bank | z-←dog | v-run
+>
+> "Azawan sees a dog inside a bank. The dog runs."
+
+A place, tool, or *of*-relation on the noun is still hosted `/ɡ/` + `/b/` (*the guard inside a bank*, *a book written with a hammer*). A one-place role as a kind (*sitting guard*, *the one seen*) is a [role compound](roles.md#role-compounds) on `/ɡ/`, the same pattern as *is a fighter*:
+
+> `zazawan dugugal gaxajul vejel.`
+>
+> z-Azawan | d-guard | g-agent-x-chair | v-see
+>
+> "Azawan sees a sitting guard."
+
+**Compare with:** ordinary `gajul` is *chair* / *position* as a property, not *sitting*. [Restrictors](restrictors.md) say when a **claim** counts (*never*, *only when raining*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the **same** first noun still need another sentence ([complex chaining](#complex-chaining)).
 
 ### Writing and speech rhythm (periods)
 <a id="orthography-and-prosody-periods"></a>

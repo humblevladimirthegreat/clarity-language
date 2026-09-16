@@ -45,17 +45,17 @@ No new clause types. Unblocks locative talk and later relatives / paths.
 
 ## Wave 3 — new clause types
 
-Do not start these until Wave 1 extra nouns are the learner’s default for English PPs (items 2–6 at least sketched). Item 1 is decided: unhosted `/b/` = recipient.
+Do not start remaining rows until Wave 1 extra nouns are the learner’s default for English PPs (items 2–6 at least sketched). Item 1 is decided: unhosted `/b/` = recipient. Item 11 is refused (two sentences / hosted `/ɡ/` / role on `/ɡ/`).
 
-- [ ] **11. Noun-modifying relatives (large).** No *that / who / which / whose* inside an NP. Restrictors ([restrictors.md](../grammar/restrictors.md)) limit **when a claim counts**, not which noun. Role compounds + **-r** name *the one seen*, not *the dog Azawan saw inside the bank*. **Needs:** extra-noun habit (Wave 1); locatives (item 2) for *the house in which*. Design choice: gap pronoun + **`adoro`**, span, or resume-only paraphrase. If paraphrase-only, document the refusal here and on core — do not leave learners guessing.
+- [x] **11. Noun-modifying relatives (refused).** No *that / who / which / whose* inside an NP. Identify with [two sentences](../grammar/core.md#which-noun) (resume **-r**), hosted `/ɡ/` + `/b/`, or a [role compound](../grammar/roles.md#role-compounds) on `/ɡ/` (`gaxajul` *sitter*, not `gajul` *chair*). Restrictors still limit **when a claim counts**.
 
 - [ ] **12. Infinitive / control / event purpose (large).** **`adoro`** takes a **full next sentence**, not a subject-less verb. No *want to walk*, *ask Ululon to sit*, *in order to leave*. Values **`xo`** is need-motive, not “this event so that that event.” **Needs:** **`adoro`**; not relatives. May share a purpose subordinator with *so that* (parallel to *because* / *if*). Decide control (*want* shares `/z/`) vs full clause.
 
 ## Wave 4 — optional systems
 
-Decide **whether** to add. English helpers; not required by the `/b/` model. Later than Wave 3 so relatives / purpose are not invented twice (object-first + relative often replaces a short passive).
+Decide **whether** to add. English helpers; not required by the `/b/` model. Later than Wave 3 so purpose is not invented twice as a fake relative.
 
-- [ ] **13. Passive / *by*-agent (large, optional).** [Free order](../grammar/core.md) highlights the object; that is **not** *a cat is seen by Azawan*. No agent demotion, no *by*-phrase, no *get*-passive. **Needs:** item 1 if the demoted agent is a recipient; relatives (item 11) may make this unnecessary. If skipped, keep the core “use the longer English” line as the whole story.
+- [ ] **13. Passive / *by*-agent (large, optional).** [Free order](../grammar/core.md) highlights the object; that is **not** *a cat is seen by Azawan*. No agent demotion, no *by*-phrase, no *get*-passive. **Needs:** item 1 if the demoted agent is a recipient. Item 11 is refused (two sentences, not an in-NP clause). If skipped, keep the core “use the longer English” line as the whole story.
 
 - [ ] **14. Progressive / perfect / *used to* (large, optional).** No tense/aspect letter. Time is *before / after / while*, clock/date, evidential LIVE vs WITNESSED ([commentary.md](../grammar/commentary.md#evidentiality)), PREDICT, habitual **`hual`**. Observation tense is still only in [TODO.md](../../TODO.md). **Needs:** do not collapse into evidentiality. If added, stack with LIVE / WITNESSED; do not replace them.
 
@@ -68,6 +68,7 @@ Decide **whether** to add. English helpers; not required by the `/b/` model. Lat
 | *and / or / with / without / against / except* as prepositions | [Joins](../grammar/joins.md), [join-relations](../grammar/join-extras.md#join-relations), [revisers](../grammar/revisers.md) |
 | *because / if / although / while / until / before / after* | Already [core](../grammar/core.md#dependent-clauses) / [causation](../grammar/causation.md) |
 | *can / will / should / may / have to* as dummy auxiliaries | [Ability](../grammar/ability.md), [plan-decision](../grammar/plan-decision.md), [values](../grammar/values.md), [MAY](../grammar/commentary.md#may) |
+| *that / who / which* inside an NP | Two sentences ([which noun](../grammar/core.md#which-noun)); hosted `/ɡ/` + `/b/`; role compound on `/ɡ/` |
 | *that* (finite complement) | **`adoro`** |
 | *as for / according to [Name]* | `hozal` + `/b/`; `/h/` + **-n** |
 
@@ -83,7 +84,7 @@ Decide **whether** to add. English helpers; not required by the `/b/` model. Lat
                     9 place from–to
          10 whether (independent of 2)
                           │
-                    11 relatives ◄─────┘
+                    11 relatives (refused: two sentences / hosted `/ɡ/` / role on `/ɡ/`)
                     12 infinitive / purpose
                           │
                     13 passive? (after 11)

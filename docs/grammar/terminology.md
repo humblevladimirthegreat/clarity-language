@@ -276,6 +276,8 @@ Full sentence after **`adoro`** (last in the host slot). Inner **`jol`** / **`jo
 
 [Core](core.md#dependent-clauses)
 
+**Compare with:** English *the dog that runs* (which dog) is [which person or thing](core.md#which-noun), not **`adoro`**.
+
 ### Digitless
 
 Number word with marker and ending but no digit groups.
@@ -598,11 +600,19 @@ Material after the join closer; **SHARED scale** vs **SHARED continuum**.
 
 [Joins](joins.md), [comparatives](comparatives.md)
 
+### Relative clause (English *who / that / which*)
+
+Identify a noun with two sentences (then [resume](#resume)), a hosted `/ɡ/` + `/b/` relation, or a [role compound](#role-compound--agent--instrument--patient--reltum) on `/ɡ/`.
+
+[Core](core.md#which-noun)
+
 ### Restrictor
 
 Join-shaped `/h/` `/w/` *when the host applies*.
 
 [Restrictors](restrictors.md)
+
+**Compare with:** English *who / that / which* on a noun is [which person or thing](core.md#which-noun), not a restrictor.
 
 ### Resume
 
@@ -610,7 +620,7 @@ Content / span / number **-r** pointing back.
 
 [Pronouns](pronouns.md), [spans](spans.md), [numbers](numbers.md#number-endings)
 
-**Compare with:** join / restrictor **-r** is an [unspecified member](#unspecified-member).
+**Compare with:** join / restrictor **-r** is an [unspecified member](#unspecified-member). English *the dog that…* is two sentences, then this resume ([which person or thing](core.md#which-noun)).
 
 ### Reviser
 
@@ -623,6 +633,8 @@ Prefix-less *including / rather / instead / except* (in-clause vs discourse by p
 `a/e/u/o x ROOT`.
 
 [Roles](roles.md#role-compounds)
+
+**Compare with:** *sitting guard* is this stem on `/ɡ/` ([which noun, with resume and kinds](core.md#which-noun-intermediate)).
 
 ### Role letter
 

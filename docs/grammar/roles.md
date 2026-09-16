@@ -114,6 +114,16 @@ To say someone **is a fighter**, put the same role stem on `/ɡ/`, as in [classi
 >
 > "Azawan is a struggler."
 
+The same adjective after another noun is English *sitting guard* / *fighter friend*: the host is classified as that role.
+
+> `zazawan dugugal gaxajul vejel.`
+>
+> z-Azawan | d-guard | g-agent-x-chair | v-see
+>
+> "Azawan sees a sitting guard."
+
+**Compare with:** ordinary `gajul` is *chair* / *position* as a property. English *the guard who sat (that time)* with extra participants or a place is [two sentences](core.md#which-noun), not this kind word.
+
 ### Translation practice
 <a id="translation-practice"></a>
 

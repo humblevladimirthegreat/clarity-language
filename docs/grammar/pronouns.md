@@ -27,6 +27,8 @@ After you have already named a person or thing, the next sentence can point back
 >
 > "A dog walks. The dog sits."
 
+**Compare with:** English *the dog that walked* is that same pair of sentences, then **-r** in whatever slot you need. Do not hang a *who / that / which* clause on the noun ([which person or thing](core.md#which-noun)).
+
 When that short stem would match the **wrong** recent word, use a **full-root resume**: the **entire root** + **-r**. Short **`ele`** matches both *sleep* (`elebe`) and *big* (`ele`). After both have been used, short `veler` would pick the more recent *big*; full `veleber` picks *sleep*.
 
 > `zululon velebel. zabogol gelem. zazawan veleber.`

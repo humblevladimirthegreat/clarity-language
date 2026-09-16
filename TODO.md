@@ -7,6 +7,7 @@ review TTS
 consider removing emojis from docs (but keep in lexicon)
 local llm systematically review entire lexicon
 finish English cheat sheets, add Agalan cheat sheet
+shorter dependent clause opener than odoro
 
 ## Evidentiality / tense
 
