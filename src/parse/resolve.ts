@@ -126,11 +126,11 @@ function isJoinGap(word: LexWord): boolean {
 }
 
 function isGPackage(shared: CoordShared): shared is GPackage {
-  return typeof shared === "object" && "modifiers" in shared && "word" in shared;
+  return typeof shared === "object" && "word" in shared && shared.word.pos === "g";
 }
 
 function isHUnit(shared: CoordShared): shared is HUnit {
-  return typeof shared === "object" && "word" in shared && !("modifiers" in shared);
+  return typeof shared === "object" && "word" in shared && shared.word.pos === "h";
 }
 
 function classifySharedRole(join: LexWord, numberCount: number, shared: GPackage | HUnit): SharedRole {
@@ -310,12 +310,13 @@ function considerJoin(
 
 function considerGPackage(ctx: Ctx, pkg: GPackage): void {
   considerWord(ctx, pkg.word);
-  if (pkg.bound) considerWord(ctx, pkg.bound);
   for (const mod of pkg.modifiers) considerWord(ctx, mod);
+  if (pkg.bound) considerWord(ctx, pkg.bound);
 }
 
 function considerHUnit(ctx: Ctx, unit: HUnit): void {
   considerWord(ctx, unit.word);
+  for (const mod of unit.modifiers) considerWord(ctx, mod);
   if (unit.bound) considerWord(ctx, unit.bound);
 }
 
@@ -382,9 +383,12 @@ function considerUnit(ctx: Ctx, unit: Unit): void {
       considerHUnit(ctx, unit.unit);
       return;
     case "linker":
-    case "hook":
     case "writingSpan":
       considerWord(ctx, unit.word);
+      return;
+    case "hook":
+      considerWord(ctx, unit.word);
+      for (const mod of unit.modifiers) considerWord(ctx, mod);
       return;
     case "span":
       considerSpan(ctx, unit.span);
@@ -418,6 +422,7 @@ function considerUtterance(ctx: Ctx, utterance: Utterance, utteranceIndex: numbe
   for (const vocative of utterance.left.vocatives) considerWord(ctx, vocative);
   for (const polar of utterance.left.polars) considerWord(ctx, polar);
   if (utterance.left.hook) considerWord(ctx, utterance.left.hook);
+  for (const mod of utterance.left.hookModifiers ?? []) considerWord(ctx, mod);
   if (utterance.left.force) considerWord(ctx, utterance.left.force);
 
   for (const body of utterance.bodies) considerBody(ctx, body);

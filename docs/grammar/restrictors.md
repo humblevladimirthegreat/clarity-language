@@ -88,13 +88,19 @@ English *sometimes* is the usual match next to *never* / *always*. It still only
 
 ### On the previous adjective (`/w/`)
 
-The same restrictor vowels and endings can limit **only the adjective you just wrote**, not the whole verb claim. Spell them with letter **`w`** instead of **`h`**. Occasion words that belong to that adjective sit immediately before the restrictor and also take **`w`**. `/h/` still limits the clause.
+The same restrictor vowels and endings can limit **only the host you just wrote**, not the whole verb claim. Spell them with letter **`w`** instead of **`h`**. The host is the previous adjective, or a prefix-less [hook](hooks.md#hook-w). Occasion words that belong to that host sit immediately before the restrictor and also take **`w`**. `/h/` still limits the clause.
 
 > `zazawan guzumum wal.`
 >
 > z-Azawan | g-happy | w-never
 >
 > "Azawan is never happy."
+
+> `zaladelx ul wal zaladal.`
+>
+> z-plate-x | except | w-never | z-salad
+>
+> "The plates, never excepting a salad."
 
 > `zululon guzumum wual.`
 >
@@ -129,9 +135,9 @@ The same restrictor vowels and endings can limit **only the adjective you just w
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `/h/` | limits the clause | *when the verb claim counts* | **h** starts *how* / *when* / *where* |
-| `/w/` | same map on the previous adjective | *never happy* / *always happy* / *sometimes happy* | **w** ≈ with (stuck to that adjective) |
+| `/w/` | same map on the previous adjective or hook | *never happy* / *never excepting* | **w** ≈ with (stuck to that host) |
 
-**Compare with:** extra detail on an adjective is still ordinary `/w/` from [clause](clause.md#adjective-detail-w). A restrictor on `/w/` answers **when that adjective counts**.
+**Compare with:** extra detail on an adjective is still ordinary `/w/` from [clause](clause.md#adjective-detail-w). A restrictor on `/w/` answers **when that adjective or hook counts**.
 
 ### Listed occasions (open)
 
@@ -332,7 +338,7 @@ Each listed restrictor occasion is a simple `/h/` or `/w/` content word, or a co
 <a id="more-occasions"></a>
 <a id="defined-core-full"></a>
 
-Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *sometimes* / *anytime* / *some other time* (`har` / `hor` / `hur`). The rest of the same vowel map names exclusive, inclusive, *not when*, ranked, and leftover readings. `/w/` uses that **same** map on the previous adjective (`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`, and the rows below). One restrictor chain is one `/h/` unit (or one `/w/` stack on its host).
+Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *sometimes* / *anytime* / *some other time* (`har` / `hor` / `hur`). The rest of the same vowel map names exclusive, inclusive, *not when*, ranked, and leftover readings. `/w/` uses that **same** map on the previous adjective or prefix-less hook (`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`, and the rows below). One restrictor chain is one `/h/` unit (or one `/w/` stack on its host).
 
 > `zazawan vawalal hanunul hunugul hol.`
 >

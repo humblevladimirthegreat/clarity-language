@@ -5,18 +5,24 @@ How an extra noun completes a **relation** that still needs a root on `/h/` or `
 ## Beginner
 <a id="beginner"></a>
 
-You already write a hosted pair for *like Azawan* (`hurorom bazawan`). The same shape names other English preposition jobs that keep a **root**: pick the relation root, keep `/b/` immediately after it.
+You already write a hosted pair for *like Azawan* (`hurorom bazawan`). The same shape names other English preposition jobs that keep a **root**: pick the relation root, then `/b/`. `/w/` that grades the relation sits immediately after the `/h/` or `/ɡ/` word, before `/b/`.
 
 <a id="similative"></a>
 <a id="like"></a>
 
-When English says something **resembles** a model (*walks like a duck*, *a house like Azawan’s*), keep the same hosted pair as on the [clause](clause.md#extra-nouns) page. The relation word is **`hurorom`**. Put the model in `/b/` right after it. The event or thing stays real; only the match is to that model. (cue: 🪞 *mirror*: you see a reflection, not the same object twice)
+When English says something **resembles** a model (*walks like a duck*, *a house like Azawan’s*), keep the same hosted pair as on the [clause](clause.md#extra-nouns) page. The relation word is **`hurorom`**. Put the model in `/b/` after it (after optional `/w/`). The event or thing stays real; only the match is to that model. (cue: 🪞 *mirror*: you see a reflection, not the same object twice)
 
 > `zazawan hurorom budugul vawalal.`
 >
 > z-Azawan | h-like | b-duck | v-walk
 >
 > "Azawan walks like a duck."
+
+> `zazawan hurorom welem budugul vawalal.`
+>
+> z-Azawan | h-like | w-very | b-duck | v-walk
+>
+> "Azawan walks very like a duck."
 
 On a noun, the same root is **`gurorom`**:
 

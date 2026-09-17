@@ -198,9 +198,9 @@ describe("parse — comparatives manner scale", () => {
     assert.equal(part.join?.raw, "zel");
     assert.equal(part.shared.length, 1);
     const shared = part.shared[0]!;
-    assert.equal("modifiers" in shared, false);
     assert.ok("word" in shared);
     assert.equal(shared.word.raw, "hohogem");
+    assert.equal(shared.word.pos, "h");
   });
 });
 
@@ -231,6 +231,31 @@ describe("parse — SVO slots", () => {
     assert.equal(obj?.kind, "package");
     if (obj?.kind !== "package") return;
     assert.equal(obj.package.head.raw, "dugobon");
+  });
+});
+
+describe("parse — hosted /w/ before /b/", () => {
+  it("parses simile with /w/ between host and /b/", () => {
+    const result = parseText("zazawan hurorom welem budugul vawalal.");
+    const units = result.utterances[0]!.bodies[0]!.clause.units;
+    const h = units.find((u) => u.kind === "h");
+    assert.ok(h && h.kind === "h");
+    assert.equal(h.unit.modifiers[0]?.raw, "welem");
+    assert.equal(h.unit.bound?.raw, "budugul");
+  });
+
+  it("parses extra-noun hook with restrictor /w/ before /b/", () => {
+    const result = parseText("zodogol velebel al wal bohohul.");
+    const units = result.utterances[0]!.bodies[0]!.clause.units;
+    const hook = units.find((u) => u.kind === "hook");
+    assert.ok(hook && hook.kind === "hook");
+    assert.equal(hook.modifiers[0]?.raw, "wal");
+  });
+
+  it("parses discourse hook with /w/", () => {
+    const result = parseText("al welem zazawan vawalal.");
+    assert.equal(result.utterances[0]!.left.hook?.raw, "al");
+    assert.equal(result.utterances[0]!.left.hookModifiers?.[0]?.raw, "welem");
   });
 });
 

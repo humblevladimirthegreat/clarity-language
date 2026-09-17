@@ -84,9 +84,9 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zazawan velebel al bohohul.", "z-Azawan | v-sleep | in | b-house");
     expectLine("zodogolx al zagadal.", "z-dog-x | including | z-cat");
     expectLine("zazawan ul bazadol vawalal oel badadul.", "z-Azawan | from | b-station | v-walk | toward | b-train");
-    expectLine("zazawan velebel al bohohul.", "z-Azawan | v-sleep | in | b-house");
-    expectLine("zodogolx al zagadal.", "z-dog-x | including | z-cat");
-    expectLine("zazawan ul bazadol vawalal oel badadul.", "z-Azawan | from | b-station | v-walk | toward | b-train");
+    expectLine("zazawan velebel al welem bohohul.", "z-Azawan | v-sleep | in | w-very | b-house");
+    expectLine("zaladelx ul wal zaladal.", "z-plate-x | except | w-never | z-salad");
+    expectLine("zazawan hurorom welem budugul vawalal.", "z-Azawan | h-like | w-very | b-duck | v-walk");
     expectLine("hal", "h-never");
     expectLine("har", "h-sometimes");
     expectLine("jol zuhubun vawalal har?", "j-question | z-Uhubun | v-walk | h-when");

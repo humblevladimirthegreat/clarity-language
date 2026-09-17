@@ -76,15 +76,21 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 <a id="extra-nouns"></a>
 <a id="unhosted-b"></a>
 
-`/b/` names an extra person or thing. It has two jobs, and you can tell them apart from the word **immediately before** `/b/`. `/w/` never hosts `/b/` (it only grades the previous `/ɡ/` or `/h/`).
+`/b/` names an extra person or thing. It has two jobs, and you can tell them apart from the word **immediately before** `/b/` after skipping any `/w/` words. `/w/` never hosts `/b/`; it only grades the previous `/ɡ/` or `/h/` word.
 
-**Hosted.** Some adjectives and adverbs name a **relation** that needs another person or thing (*like …*). Put that extra noun in `/b/` **right after** the `/ɡ/` or `/h/` word. The root on the `/ɡ/` or `/h/` word names the relation; `/b/` marks the noun that completes it. Keep that pair together.
+**Hosted.** Some adjectives and adverbs name a **relation** that needs another person or thing (*like …*). Put that extra noun in `/b/` **right after** the `/ɡ/` or `/h/` word, or after that word plus `/w/` detail. The root on the `/ɡ/` or `/h/` word names the relation; `/b/` marks the noun that completes it. Keep that pair together.
 
 > `hurorom bazawan`
 >
 > h-like | b-Azawan
 >
 > "like Azawan"
+
+> `hurorom welem bazawan`
+>
+> h-like | w-very | b-Azawan
+>
+> "very like Azawan"
 
 > `zodogol velebel hurorom bazawan.`
 >
@@ -162,7 +168,7 @@ Role letters on this page:
 | `/b/` | extra noun: recipient of the verb, or the piece after a relation word | **b** ≈ bolted on (the extra piece) |
 | `/v/` | verb (the action) | **v** as in English *verb* |
 | `/ɡ/` | adjective (a property of the noun) | **ɡ** ≈ grade (a rating of the noun) |
-| `/w/` | extra detail on the previous adjective | **w** ≈ with (stuck to that adjective) |
+| `/w/` | extra detail on the previous `/ɡ/` or `/h/` word | **w** ≈ with (stuck to that host) |
 | `/h/` | adverb (how / when / where) | **h** starts *how* / *when* / *where* |
 | `/j/` | turn (start a new speech move) | **j** ≈ jump (a new act) |
 
@@ -387,7 +393,13 @@ Several `/h/` units have no fixed order. Each unit’s role comes from its dicti
 ### Complex chaining
 <a id="complex-chaining"></a>
 
-A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). A further plain adjective after that pair describes the **extra noun**, not the first noun. `/w/` after an adjective still grades that adjective.
+A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). `/w/` that grades that adjective sits **immediately after** the `/ɡ/` word, **before** `/b/`. A further plain adjective after that pair describes the **extra noun**, not the first noun.
+
+> `zodogol gonunul welem bazawan.`
+>
+> z-dog | g-SAME | w-very | b-Azawan
+>
+> "a dog the very same as Azawan"
 
 > `zodogol gonunul bazawan gelulul.`
 >
@@ -395,9 +407,9 @@ A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). A further plain adj
 >
 > "a dog the same as blue Azawan"
 
-You can chain more complex units onto those extra nouns. Two complex adjectives on the same first noun need [another sentence](dependents.md#which-noun). Several `/h/` units on one verb are fine (each plain `/h/`, or `/h/`+`/b/` together, counts as one). An unhosted recipient `/b/` may follow a finished pair (`hurorom bazawan bululon`); it still must not sit immediately after the relation word.
+You can chain more complex units onto those extra nouns. Two complex adjectives on the same first noun need [another sentence](dependents.md#which-noun). Several `/h/` units on one verb are fine (each plain `/h/`, or `/h/` plus optional `/w/` plus `/b/` together, counts as one). An unhosted recipient `/b/` may follow a finished pair (`hurorom bazawan bululon`); it still must not sit in the hosted slot after the relation word.
 
-**Compare with:** a [hook](hooks.md#extra-noun) immediately before `/b/` with no `/b/` to the left is *in* / *at* / *for*, not the recipient.
+**Compare with:** a [hook](hooks.md#extra-noun) with `/b/` after optional `/w/` and no `/b/` to the left is *in* / *at* / *for*, not the recipient.
 
 
 

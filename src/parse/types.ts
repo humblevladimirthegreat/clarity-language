@@ -172,6 +172,8 @@ export type LeftEdge = {
   vocatives: LexWord[];
   polars: LexWord[];
   hook?: LexWord;
+  /** `/w/` immediately after a left-edge hook. */
+  hookModifiers?: LexWord[];
   force?: LexWord;
   impliedForce?: ImpliedForce;
 };
@@ -192,6 +194,7 @@ export type NpPackage = {
 
 export type HUnit = {
   word: LexWord;
+  modifiers: LexWord[];
   bound?: LexWord;
 };
 
@@ -235,7 +238,7 @@ export type Unit =
   | { kind: "predicate"; adj: GPackage }
   | { kind: "h"; unit: HUnit }
   | { kind: "linker"; word: LexWord }
-  | { kind: "hook"; word: LexWord }
+  | { kind: "hook"; word: LexWord; modifiers: LexWord[] }
   | { kind: "span"; span: SpanUnit }
   | { kind: "writingSpan"; word: LexWord }
   | { kind: "island"; island: IslandUnit }

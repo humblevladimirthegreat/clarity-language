@@ -142,7 +142,14 @@ class AgelanSentenceParser extends CstParser {
             this.OR2([
               { ALT: () => this.CONSUME(Vocative) },
               { ALT: () => this.CONSUME(Polar) },
-              { ALT: () => this.CONSUME(Hook) },
+              {
+                ALT: () => {
+                  this.CONSUME(Hook);
+                  this.MANY(() => {
+                    this.CONSUME(W);
+                  });
+                },
+              },
             ]);
           });
           this.OPTION(() => {
@@ -223,7 +230,7 @@ class AgelanSentenceParser extends CstParser {
         GATE: () => tokenIs(this.LA(1), H, JoinH),
         ALT: () => this.SUBRULE(this.hCoord),
       },
-      { ALT: () => this.CONSUME(Hook) },
+      { ALT: () => this.SUBRULE(this.hookUnit) },
     ]);
   });
 
@@ -467,11 +474,21 @@ class AgelanSentenceParser extends CstParser {
 
   public hUnitRule = this.RULE("hUnitRule", () => {
     this.CONSUME(H);
+    this.MANY(() => {
+      this.CONSUME(W);
+    });
     this.OPTION(() => {
       this.OR([
         { ALT: () => this.CONSUME(B) },
         { ALT: () => this.CONSUME(Odo) },
       ]);
+    });
+  });
+
+  public hookUnit = this.RULE("hookUnit", () => {
+    this.CONSUME(Hook);
+    this.MANY(() => {
+      this.CONSUME(W);
     });
   });
 
@@ -499,11 +516,11 @@ class AgelanSentenceParser extends CstParser {
 
   public gPackage = this.RULE("gPackage", () => {
     this.CONSUME(G);
-    this.OPTION(() => {
-      this.CONSUME(B);
-    });
     this.MANY(() => {
       this.CONSUME(W);
+    });
+    this.OPTION(() => {
+      this.CONSUME(B);
     });
   });
 
@@ -654,8 +671,8 @@ function buildGPackage(cst: CstNode): GPackage {
   const wToks = childTokens(cst, "W");
   return {
     word: lexWordFromToken(gTok),
-    bound: bTok ? lexWordFromToken(bTok) : undefined,
     modifiers: wToks.map(lexWordFromToken),
+    bound: bTok ? lexWordFromToken(bTok) : undefined,
   };
 }
 
@@ -767,7 +784,16 @@ function buildHUnit(cst: CstNode): HUnit {
   const bound = childToken(cst, "B") ?? childToken(cst, "Odo");
   return {
     word: lexWordFromToken(h),
+    modifiers: childTokens(cst, "W").map(lexWordFromToken),
     bound: bound ? lexWordFromToken(bound) : undefined,
+  };
+}
+
+function buildHookUnit(cst: CstNode): { kind: "hook"; word: LexWord; modifiers: LexWord[] } {
+  return {
+    kind: "hook",
+    word: lexWordFromToken(childToken(cst, "Hook")!),
+    modifiers: childTokens(cst, "W").map(lexWordFromToken),
   };
 }
 
@@ -825,10 +851,10 @@ function buildUnit(cst: CstNode): Unit {
   const h = childNodes(cst, "hCoord")[0];
   if (h) {
     const hs = flattenHUnits(h);
-    return hs[0] ?? { kind: "h", unit: { word: lexWordFromToken(childToken(h, "H")!), } };
+    return hs[0] ?? { kind: "h", unit: { word: lexWordFromToken(childToken(h, "H")!), modifiers: [] } };
   }
-  const hook = childToken(cst, "Hook");
-  if (hook) return { kind: "hook", word: lexWordFromToken(hook) };
+  const hook = childNodes(cst, "hookUnit")[0];
+  if (hook) return buildHookUnit(hook);
   throw new SentenceParseError(`Unhandled unit: ${Object.keys(cst.children).join(",")}`);
 }
 
@@ -845,8 +871,8 @@ function expandUnits(cst: CstNode): Unit[] {
   if (g) return flattenGCoord(g);
   const h = childNodes(cst, "hCoord")[0];
   if (h) return flattenHUnits(h);
-  const hook = childToken(cst, "Hook");
-  if (hook) return [{ kind: "hook", word: lexWordFromToken(hook) }];
+  const hook = childNodes(cst, "hookUnit")[0];
+  if (hook) return [buildHookUnit(hook)];
   return [buildUnit(cst)];
 }
 
@@ -894,11 +920,13 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
   const forceTok = childToken(cst, "Force");
   const force = forceTok ? lexWordFromToken(forceTok) : undefined;
   const impliedForce = force ? undefined : impliedForceFromPolars(polars) ?? "jal";
+  const hookModifiers = childTokens(cst, "W").map(lexWordFromToken);
 
   return {
     vocatives,
     polars,
     hook: hookTok ? lexWordFromToken(hookTok) : undefined,
+    hookModifiers: hookModifiers.length > 0 ? hookModifiers : undefined,
     force,
     impliedForce,
   };
