@@ -1,204 +1,218 @@
 # Proposal: evaluation frames (*as-of*, channel, play)
 
-**Status:** PROPOSED (not current language). Grammar today: verbs have **no** past/future letter; PREDICT is later than **speech-now**; RESIDUE / FORMER score the **current** tally / climate; evidential `/h/` is **this clause only**; omitting an evidential means **unmarked**, not “keep the last channel”; *before* / *after* / *while* order **events**. There is no reference now \(R\) other than speaker-now \(S\).  
-**Related:** [knowing.md](../grammar/knowing.md) (MAY / evidentiality / RESIDUE / FORMER / NOTIONAL), [intention.md](../grammar/intention.md) (PLAN / PREDICT / DECISION), [causation.md](../grammar/causation.md#factivity) (*if* vs *because*), [dependents.md](../grammar/dependents.md) (`barl`, `/x/` continue), [relations.md](../grammar/relations.md) (hosted `/h|ɡ/` + `/b/`), [hooks.md](../grammar/hooks.md) (extra-noun *at* / *from* — not \(R\)), [spans.md](../grammar/spans.md) / [joins.md](../grammar/joins.md#scope-islands-join) (`^ … ^`), [numbers-applied.md](../grammar/numbers-applied.md#time) (clock / date), [why-agelan.md](../grammar/why-agelan.md#residue-and-former-climate)  
-**Design authority:** none until absorbed. Speakers currently do **not** mark *would* / *as of Friday* / *if he had* as a dated snapshot, and do **not** persist evidentiality or mood across clauses.
+**Status:** PROPOSED — not current language. This page is not design authority until it is absorbed.
+
+Today, verbs have no past or future letter. PREDICT looks later than the moment of speech. RESIDUE and FORMER score leftover and climate against **today’s** books. An evidential covers only the clause it sits on; leaving it off means unmarked, not “keep the last channel.” *Before*, *after*, *while*, and clock words order **events**. There is no second “now” besides the speaker’s now.
+
+Speakers therefore cannot mark *would*, *as of Friday*, or *if he had* as a dated snapshot, and they cannot carry evidentiality or mood from one clause to the next.
+
+**Related:** [knowing.md](../grammar/knowing.md), [intention.md](../grammar/intention.md), [causation.md](../grammar/causation.md#factivity), [dependents.md](../grammar/dependents.md), [relations.md](../grammar/relations.md), [hooks.md](../grammar/hooks.md), [spans.md](../grammar/spans.md), [joins.md](../grammar/joins.md#scope-islands-join), [numbers-applied.md](../grammar/numbers-applied.md#time), [why-agelan.md](../grammar/why-agelan.md#residue-and-former-climate).
 
 ## Motivation
 
-English *would*, *was going to*, *will have*, *still counted then*, *I remember that leftover*, and *if he had* mix **when the event sits**, **whose now** leftover / climate / plan / forecast are scored against, and **how you know**.
+English *would*, *was going to*, *will have*, *still counted then*, *I remember that leftover*, and *if he had* mix three jobs: when the event sits, whose “now” leftover / climate / plan / forecast are scored against, and how you know.
 
-Agalan already splits those moods and channels. It still scores them against **speech-now**, and it still drops the channel at the next clause. A remembered telling plus PREDICT is heard as *will rain* (after **now**), not *would rain* (after **that telling**). RESIDUE is leftover on **today’s** books, not Friday’s.
+Agalan already has separate moods and channels for those jobs. It still scores them against speech-now, and it still drops the channel at the next clause. A remembered telling plus PREDICT is heard as *will rain* (after now), not *would rain* (after that telling). RESIDUE is leftover on today’s books, not Friday’s.
 
-**Evaluation frames** are the missing settings: whose **now** \(R\), which **channel**, whether the host is **play**. Event order stays *before* / *after* / clock. Score moods (RESIDUE, FORMER, PREDICT, PLAN, MAY, …) stay **claims about this episode**. Channel and play stay **this host** (repeat them if the next clause still needs them). \(R\) is a hosted pole: introduce with `/b/`, reuse with resume **-r** on the **next** host — not a paragraph persist stack.
+**Evaluation frames** fill that gap. They name whose now the books use (\(R\)), which channel you are using, and whether the host is play. Event order stays with *before* / *after* / clock. Score moods stay claims about this episode. Channel and play last only as long as their host: write them again if the next clause still needs them.
 
-**Default omit = today’s language.** No \(R\), no channel, no play, local clause. Forcing frames on every clause would add shame and extra thought. Mark them when English would smuggle *would* / *as of* / *had … would* / a narrative *I saw* / a scene of *as if*.
+Whose-now is a hosted pole, like *if* or *like*. You introduce it with `/b/`, and you reuse it with resume **-r** on the next host. It is not a paragraph-wide persist stack.
 
-## Non-goals
+Leaving the marks off is today’s language: speaker-now, unmarked report, real tally, this clause only. Forcing a frame on every clause would add shame and extra thought. Mark them when English would smuggle *would*, *as of*, *had … would*, a narrative *I saw*, or a scene of *as if*.
 
-- A past / present / future letter on `/v/`.
-- Progressive / mid-course aspect (stays *while* / LIVE paraphrase).
-- “Last scene” as an implicit \(R\) (a telling, an *if*-clause, or a clock does **not** plant viewpoint by itself).
-- Reusing discourse **`x#e0`**, TALE **`horolom`**, or *after* **`oranem`** as viewpoint.
-- Silent inherit of evidentiality or mood (omit still means unmarked / speaker-now, not “keep last”).
-- Mid-word **`x`** + **`a`/`o`/`e`/`u`** on mood roots for scope (that family is [values](../grammar/values.md) / [ability](../grammar/ability.md)).
-- Reusing ending **-r** as persist on MAY / NOTIONAL / PLAN / DECISION (those endings already mean find-out / mask-off / map grain / changeability). **-r** on the *as-of* stem is **resume of \(R\)**, not persist of channel or play.
-- Prefix-less **frame-scope hooks** (`eal` / `eol` / `eel` / `eul`). Scope is the role letter: `/h/` = this clause (or this [scope island](../grammar/joins.md#scope-islands-join)); `/ɡ/` = this noun; `/w/` = this preceding `/ɡ/` adjective. No until-undone, no speech-act-long inherit, no standalone clear.
-- `/b/` on evidentials, PREDICT, PLAN, RESIDUE, or other moods as *as-of* (those `/b/` jobs stay causal / extra-noun / existing poles). Only the *as-of* overlay takes snapshot `/b/`.
-- Two *as-of* stems (outer ledger vs inner bookmark). One stem; a new hosted `/b/` **replaces** \(R\). Nested clauses may each have their own pair.
-- Paragraph-level parse state as a requirement for the first absorb.
-- Using **`^ … ^`** or span fences as a paragraph of viewpoint.
-- Observation vs imagination tense as a new slot ([TODO.md](../../TODO.md) evidentiality notes). LIVE vs WITNESSED stay channels.
+## What this is not
 
-## Architecture
+This is not a past / present / future letter on the verb, and not progressive aspect (*while* and LIVE already cover mid-course).
 
-Three **settings** (independent; at most one value each per host) plus **score claims** that are not settings:
+A telling, an *if*-clause, or a clock does not plant viewpoint by itself. Do not reuse discourse **`x#e0`**, TALE **`horolom`**, or *after* **`oranem`** as whose-now. Omitting a channel or mood still means unmarked / speaker-now, not “keep last.”
 
-| Setting | Job | Default | How far |
-|---------|-----|---------|---------|
-| **Now \(R\)** | books PREDICT / PLAN / RESIDUE / FORMER score against | speech-now \(S\) | this host (`/h/` clause or island, `/ɡ/` noun, `/w/` adjective); next host only if you **resume** |
-| **Channel** | how **you** know (LIVE, WITNESSED, RECORDED, PATTERN, INFERRED, TOLD, FELT, STORY) | unmarked report | this host only (write the evidential again next clause) |
-| **Play** | real tally vs NOTIONAL | real | this host only |
+Scope is the role letter (`/h/` this clause, `/ɡ/` this noun). There are no prefix-less persist hooks (`eal` / `eol` / …), no until-undone, and no speech-act-long inherit. Mid-word **`x`** + **`a`/`o`/`e`/`u`** stays [values](../grammar/values.md) / [ability](../grammar/ability.md). Ending **-r** on MAY, NOTIONAL, PLAN, and DECISION keeps its published jobs; **-r** on an *as-of* overlay only resumes that overlay’s snapshot.
 
-**Score claims** (ordinary `/h/` moods, always this host): RESIDUE, FORMER, PREDICT, PLAN, MAY, CAUSE, DECISION, universality, emotion compose, values, ability, restrictors.
+Only the two *as-of* overlays take snapshot `/b/`. Evidentials, PREDICT, PLAN, RESIDUE, and the other moods keep their existing `/b/` jobs.
 
-Do **not** hang snapshot `/b/` on those moods. Do **not** steal their **-l / -m / -r** for *as-of* factivity (MAY find-out, PLAN map grain, NOTIONAL mask, DECISION changeability stay as published).
+The first absorb does not add `/w/` + `/b/`. Hosted pairs today are `/h/` or `/ɡ/` plus `/b/`. Score a clause with `/h/` *as-of*; score a noun with `/ɡ/` *as-of*. A `/w/` twin can wait until a graded adjective really needs its own snapshot.
 
-**LIVE + marked \(R\)** = camera still in that snapshot (narrative present). **LIVE** alone = camera at \(S\). **WITNESSED + marked \(R\)** = you, at \(S\), pulling a scene whose internal now is \(R\). Channel is still **your** knowing at \(S\), except that LIVE-at-\(R\) moves the camera into the snapshot.
+Factivity is two overlays, not `-l` vs `-m` on one stem — same pattern as `hurugum` / `hadorom`. A new hosted `/b/` replaces whose-now (including a switch of overlay). Nested clauses may each have their own pair. The first absorb does not require paragraph parse state. One host still takes at most one *as-of* pair.
 
-## Chosen forms
+Do not wrap a memory paragraph or a *would* stretch in **`^ … ^`** or span fences. Repeat the evidential and/or resume *as-of* instead. Islands stay the existing short join / `/h/` device; they are not part of the first *as-of* teach. LIVE and WITNESSED stay channels; this is not a new observation-vs-imagination tense ([TODO.md](../../TODO.md)).
 
-### *As-of* pole (one overlay)
+## Three settings, plus ordinary score claims
 
-New overlay **`kind`:** `clause_pole` (hosted `/b/`, morph `mood`). One stem. Do **not** reuse ⌛ `orane` (*after*) or 📌 `ubuhu` (*at*). Factivity is this word’s **-l / -m**; resume is **-r** (no `/b/`).
+Each host may set **whose now**, **channel**, and **play**, independently, at most one value each.
 
-| Ending | Factivity | Overlay (`/h/`) | `/ɡ/` twin | `/w/` twin | Cue |
-|--------|-----------|-----------------|------------|------------|-----|
-| **-l** | **Asserted** (default for a real dated line) | `helerel` | `gelerel` | `welerel` | 📒 dated **line in the books** |
-| **-m** | **Unasserted** (hypothetical now) | `helerem` | `gelerem` | `welerem` | 🔖 **placeholder** in the story, not a stamped line |
-| **-r** | resume last `/b/` of this stem | `helerer` | `gelerer` | `welerer` | same snapshot value, this host |
+**Whose now (\(R\))** is the books PREDICT, PLAN, RESIDUE, and FORMER score against. The default is speech-now. It lasts for this `/h/` clause or this `/ɡ/` noun, and for the next host only if you resume it.
 
-Ordinary `zelere` stays *a ledger* (`elere` has no published metaphor yet). Overlay rows to add (sense_form, pos, kind `clause_pole`): `elerel` / `elerem` on `h`, `g`, and `w`. Continue is ending **-r**, not extra rows.
+**Channel** is how *you* know (LIVE, WITNESSED, RECORDED, PATTERN, INFERRED, TOLD, FELT, STORY). The default is an unmarked report. Write the evidential again on the next clause.
 
-**Avoided for \(R\):** 📅 `alena`, 🎥 `omovu`, 🦭 `ezeza`, ⚓ `anogo` / 🧭 `ogomo`; second bookmark stem.
+**Play** is real tally vs NOTIONAL. The default is real. It lasts for this host only.
 
-Resume **parses** in isolation (`helerer`); learner rule: only after an *as-of* introduce. Resume **with** a new `/b/` is illegal (that is a reset; use **-l** or **-m** + `/b/`). Resume does not re-state factivity: the open snapshot keeps the introduce’s asserted vs unasserted until replaced.
+RESIDUE, FORMER, PREDICT, PLAN, MAY, CAUSE, DECISION, universality, emotion compose, values, ability, and restrictors stay ordinary `/h/` claims about this episode. Do not hang snapshot `/b/` on them. Do not steal MAY / PLAN / NOTIONAL / DECISION endings for *as-of* factivity.
 
-### Channel and play (existing overlays)
+LIVE plus a marked snapshot puts the camera *in* that snapshot (narrative present). LIVE alone is the camera at speech-now. WITNESSED plus a marked snapshot is you, at speech-now, pulling a scene whose internal now is that snapshot. Channel is still how *you* know at speech-now, except that LIVE-at-snapshot moves the camera.
 
-No new evidential or NOTIONAL roots. Write them as today (`huvuvum`, `hadezem`, `hadadem`, …). They do **not** take *as-of* `/b/`. They do **not** last past this host.
+## The two *as-of* words
 
-## *As-of* grammar
+Factivity follows other `clause_pole`s: **two roots**, both overlay **-m**, not `-l` vs `-m` on one stem. Other hosted poles stay frozen `-m` (metaphor of door, brick, hourglass). *As-of* should too.
 
-### Snapshot vs resume vs scope
+Asserted whose-now is 📒 ledger **`elere`**. Unasserted whose-now is 🔖 bookmark **`oboma`**. Both are `clause_pole` (hosted `/b/`, morph `mood`). Do not reuse ⌛ `orane` (*after*) or 📌 `ubuhu` (*at*). Ordinary `zelere` stays *a ledger*; `elere` has no published metaphor yet, so the overlay uses the literal ledger as the cue. Ordinary `zobomal` is still *a bookmark*; overlay `-m` uses the published *reminder* picture: hold this place in the story without stamping the page.
 
-| Job | Shape |
-|-----|--------|
-| **Set \(R\)** | Hosted **as-of** + `/b/` immediately after |
-| **Reuse that snapshot** | Same stem, ending **-r**, **no** `/b/` — **this** host only |
-| **How far \(R\) lasts** | Role letter: `/h/` this clause (or `^ … ^` island that contains it); `/ɡ/` this noun; `/w/` the preceding `/ɡ/` adjective |
+Resume is **-r** on **that** overlay (no `/b/`). Overlay rows: `elerem` and `obomam` on `/h/` and `/ɡ/` only. No `/w/` rows on the first absorb.
 
-No hook after the pair. No until-undone. A later `/x/` clause is a new host: omit = speaker-now; write `helerer` to keep the same books.
+| Factivity | Overlay (`/h/`) | `/ɡ/` twin | Resume | Cue |
+|-----------|-----------------|------------|--------|-----|
+| **Asserted** — a real dated line in the books | `helerem` | `gelerem` | `helerer` / `gelerer` | 📒 ledger |
+| **Unasserted** — a placeholder now you are not claiming | `hobomam` | `gobomam` | `hobomar` / `gobomar` | 🔖 bookmark |
 
-### Factivity
+Same split as `hurugum` (asserted condition) vs `hadorom` (unasserted condition), aimed at whose-now instead of causal opportunity.
 
-Factivity is **not** on causal *if*. **`hadorom`** does not plant \(R\). Unasserted *as-of* (**-m**) is the **hypothetical now** so PREDICT / PLAN / RESIDUE / FORMER can score against a scene you are **not** claiming.
+**Not used:** 📅 `alena`, 🎥 `omovu`, 🦭 `ezeza`, ⚓ `anogo` / 🧭 `ogomo`. ✏️ `ebegu` (*draft*) is too close to PLAN’s sketch map. ⬜ `udeze` (*blank*) has no “now” picture.
 
-**NOTIONAL** stays play / off the real tally for the **host**. Do not use it for *if he had* (serious other-world reasoning). Play may stack with \(R\) (*as if, from Friday’s books*).
+`helerer` / `hobomar` parse even in isolation. Learners should write resume only after an introduce of **that** overlay. Resume plus a new `/b/` is illegal: that is a reset, so write `helerem` / `hobomam` plus `/b/` again. Resume restates factivity because the stem does: `helerer` cannot resume a bookmark introduce.
 
-| English | Shape |
+For learners (not required parse state): resume binds the **nearest preceding introduce of the same overlay** that has not been replaced by a new pair. A finished inner clause does not stay open for a later matrix resume. A new pair of either overlay **replaces** whose-now.
+
+Channel and play keep today’s roots (`huvuvum`, `hadezem`, `hadadem`, …). They do not take *as-of* `/b/`, and they do not last past this host. Existing `/w/` evidentials on a preceding adjective stay as they are; that `/w/` is not an *as-of* pole.
+
+## How to write *as-of*
+
+Put the *as-of* word on `/h/` or `/ɡ/`, then `/b/` immediately after. To reuse that snapshot on a later host, write the **same overlay** with **-r** and no `/b/` (`helerer` for a ledger, `hobomar` for a bookmark). `/h/` covers this clause; `/ɡ/` covers this noun. There is no extra hook and no until-undone. A later `/x/` clause is a new host: omit means speaker-now.
+
+### Counterfactual *if* is not `hadorom`
+
+**`hadorom`** stays speaker-now opportunity (*if it rains, Azawan walks*). It does not plant whose-now.
+
+English *If he'd left, the door would still be locked* is bookmark *as-of* (`hobomam`), plus RESIDUE / PREDICT as needed, **with no causal pole**. The bookmark is a hypothetical now you are not claiming, so those score moods can work against that scene. Put this contrast on [causation.md](../grammar/causation.md) in the first absorb (`hadorom` vs `hobomam`, alongside `hurugum` vs `hadorom`).
+
+NOTIONAL stays play — off the real tally for the host. Do not use it for serious *if he had*. Play may still stack with *as-of* (*as if, from Friday’s books*).
+
+A clause still has at most one **`barl`**. *If it rains, the Friday tab still stands* is the legal “both poles” case: `hadorom` plus a **date noun** in *as-of* `/b/`, not two `barl`s.
+
+| English | Write |
 |---------|--------|
-| *As of Friday, the leaving still counts* | Asserted *as-of* + RESIDUE |
-| *If it rains, Azawan walks* | **`hadorom`** only (speaker-now) |
-| *If he had left, the door would still be shut* | Unasserted *as-of* + RESIDUE (and PREDICT if *would* is later-than-\(R\)) |
-| *If he had meant to walk* | Unasserted *as-of* + PLAN |
-| *As if he had left* | NOTIONAL on the content verb |
-| Memory of Friday’s leftover | WITNESSED + asserted *as-of* + RESIDUE |
-| Memory **paragraph** | Repeat WITNESSED each clause; resume *as-of* with **`helerer`** where the books stay |
-| Historical present | LIVE + marked \(R\) |
-| *Would* on later clauses | Repeat PREDICT; resume *as-of* |
+| *As of Friday, Ululon had still left* | `helerem` + RESIDUE |
+| *As of Friday he was going to walk* | `helerem` + PLAN |
+| *If it rains, Azawan walks* | `hadorom` only (no snapshot) |
+| *If he'd left, the door would still be locked* | `hobomam` + RESIDUE (and PREDICT if *would* is later than that now) — no `hadorom` |
+| *If he'd meant to walk* | `hobomam` + PLAN — no `hadorom` |
+| *As if he'd left* | NOTIONAL on the content verb |
+| *I remember: as of Friday, Ululon had still left* | WITNESSED + `helerem` + RESIDUE |
+| Memory paragraph | repeat WITNESSED each clause; `helerer` where the ledger stays |
+| Historical present | LIVE + `helerem` |
+| *Would* on later clauses | repeat PREDICT; `hobomar` |
 
-Causal *if* plus a **real** dated ledger remains legal (*if it rains, then as of Friday the tab still counts*): both poles, different jobs.
+### What goes in `/b/`
 
-### What `/b/` may be
+A clock or date digit-string (`b_#22,7` = 22 July; `b_15,30` = 15:30), an event noun (*as of the leaving*), **`barl`** plus the next sentence (that sentence *is* whose-now), or extra-noun **-r**.
 
-Clock or date, event noun (*as of the leaving*), **`barl`** + next sentence (that sentence **is** \(R\)), extra-noun **-r**. **`barl` factivity follows the pole** (asserted claims the scene; unasserted does not).
+The *as-of* word is already the date/clock host. Do not also write a spare `h_#22,7` for the same snapshot. Bare `h_#…` / `h_…` stay ordinary event-when ([time](../grammar/numbers-applied.md#time)).
 
-Do **not** put a bare person in `/b/` as “from Ululon’s now” (collides with proxy **`hudagam`**). Prefer *as of Ululon’s telling* or `barl` + he tells.
+When `/b/` is **`barl`**, the pair stays last in the main sentence, same [dependents](../grammar/dependents.md) rule as other poles. Asserted *as-of* claims that scene; unasserted does not. A clock or event-noun `/b/` may sit mid-clause, like other hosted relations.
 
-On `/ɡ/`, the noun is scored as of that snapshot (*the tab as of Friday*); clause moods still need `/h/` *as-of* if the **verb** scores against \(R\). `/w/` *as-of* grades a preceding `/ɡ/` adjective the same way other `/w/` moods do.
+Do not put a bare person in `/b/` as “from Ululon’s now” — that collides with proxy **`hudagam`**. Prefer *as of Ululon’s telling*, or `barl` plus a telling sentence.
 
-### What \(R\) does to score moods
+On `/ɡ/`, the noun is scored as of that snapshot (*the tab as of Friday*). If the **verb** scores against that now, the clause still needs `/h/` *as-of*.
 
-Once \(R\) is set on a host (or reused by resume-**-r**):
+### What the snapshot shifts — and what it does not
 
-| Mood | Relative to \(R\) |
-|------|-------------------|
-| PREDICT | event **after** \(R\) (*would rain*) |
-| PLAN | intention **from** \(R\) (*was going to*) |
-| RESIDUE | leftover on **that** tally |
-| FORMER | not **that stretch’s** climate |
+Once whose-now is set (or resumed):
 
-**Bare verb + *as-of*:** legal = **concurrent with \(R\)** (event *at* snapshot-now: *as of Friday, Azawan is in Paris*). Teach scoring moods as the usual pair so learners do not hear *as-of* as event-when. Clock / *before* / *after* may sit beside *as-of*: *as-of* = books; the other `/h/` = event order.
+- PREDICT: the event is **after** that now (*would rain*).
+- PLAN: the intention is **from** that now (*was going to*).
+- RESIDUE: leftover on **that** tally.
+- FORMER: not **that stretch’s** climate.
+
+These still evaluate from **speech-now**, even when a snapshot is marked:
+
+- MAY: whether *you* will find out, from now — not “find out inside Friday’s books.”
+- Evidentials other than LIVE-at-snapshot: how *you* know at speech-now. WITNESSED plus *as-of* is memory of a scene whose internal now is the snapshot.
+- DECISION: how revisable the speaker’s pick is now.
+- CAUSE: how the link meshes as claimed now.
+
+LIVE-at-snapshot is the exception: the camera sits in the snapshot.
+
+A bare verb plus *as-of* is legal: the event is **concurrent** with that now (*as of Friday, Azawan is in Paris*). The first teach block must contrast *as-of* = books vs clock / *before* / *after* = event-when, or learners will hear *as-of* as a when-frame. Those when-words may sit beside *as-of*.
 
 ## Channel and play
 
-Write the evidential or NOTIONAL `/h/` as today. Scope of the channel is that evidential’s role letter (`/h/` clause or island, `/w/` on a preceding adjective) — same as current grammar. Prefer `/w/` on a value adjective; there is **no** extra hook for “this verb only.”
+Write the evidential or NOTIONAL `/h/` as today. `/h/` covers this clause; `/w/` on a preceding adjective stays current grammar. Prefer `/w/` on a value adjective. There is no extra hook for “this verb only,” and that `/w/` is not *as-of*.
 
-**One channel per host clause.** Stacking LIVE + WITNESSED stays illegal. A later clause that is still memory writes **`huvuvum`** again.
+One channel per host clause. LIVE plus WITNESSED stays illegal. A later clause that is still memory writes **`huvuvum`** again.
 
-## Binding and islands
+## How far the marks reach
 
-\(R\) sits on the **host** of the marked pair (or resume). Channel and play sit on **their** mood words. None of them leak into the next clause unless you write them (or resume \(R\)).
+Whose-now sits on the host of the pair (or the resume). Channel and play sit on their own mood words. None of them leak into the next clause unless you write them (or resume whose-now).
 
-**Does not inherit frames** (inner PREDICT defaults to after **speech-now**; inner evidential defaults to unmarked):
+These do **not** inherit frames. Inner PREDICT defaults to after speech-now; inner evidential defaults to unmarked:
 
-- The **`barl` snapshot body** (defines \(R\); no leak inward)
-- Clock / *before* / *after* (event order)
-- **`darl` / `hadorom` / `holalam` bodies** unless they contain their own frames
-- Aside spans and opaque / cite interiors
-- Later `/x/` clauses (inherit **speech act**, not \(R\) / channel / play)
+- the **`barl`** sentence that *defines* whose-now (no leak inward)
+- clock / *before* / *after*
+- **`darl` / `hadorom` / `holalam` bodies**, unless they contain their own frames
+- aside spans and opaque / cite interiors
+- later `/x/` clauses (they inherit the speech act, not the frames)
 
-### `^ … ^` (join / `/h/` islands)
+Keep existing short [scope islands](../grammar/joins.md#scope-islands-join). Do not wrap a memory stretch or a chain of `/x/` in `^ … ^`. Span fences are wording packages, not viewpoint paragraphs. The first absorb does not teach islands as an *as-of* device.
 
-Keep existing [scope islands](../grammar/joins.md#scope-islands-join): binder inside is `/h/` and/or a join; no nesting.
-
-**Length cap:** an island is a **handful of words**, and **never longer than one written sentence**. Do not wrap a memory paragraph, a chain of `/x/` clauses, or a multi-sentence *would* stretch in `^ … ^`. Repeat the evidential and/or resume \(R\) on each host instead. Inside an island, `/h/` frames **that chunk only**, then the island ends. Prosody-only edges; not a discourse persist device.
-
-Span fences (`[…]`, `{…}`, asides) are wording packages, not viewpoint paragraphs.
-
-## Stacking
-
-- **One** *as-of* pair per host. Two snapshots on one verb: illegal.
-- **One** channel; **one** play root.
-- Nested clauses may each have one of each. Resume-**-r** resumes the **latest still-open snapshot** of this stem, not “the outer one” by magic.
-- New hosted `/b/` **replaces** \(R\) (including switching asserted **-l** vs unasserted **-m**).
-- Score claims may stack with frames on the same clause (`huvuvum honenom helerel badorol`).
-- Independent slots: channel, play, and \(R\) are three marks. `/b/` only on the *as-of* word.
+One *as-of* pair per host (ledger **or** bookmark, not both), one channel, one play root. Nested clauses may each have one of each. A new hosted `/b/` replaces whose-now, including a switch from `helerem` to `hobomam`. Score claims may stack with frames on the same clause (`huvuvum honenom helerem badorol`). `/b/` belongs only on an *as-of* word.
 
 ## Examples
 
 House-cast people. Date `/b/` is a [calendar digit-string](../grammar/numbers-applied.md#time) (`b_#22,7` = 22 July). These sentences are **not** current language.
 
-Asserted *as-of* + RESIDUE (this clause):
+Asserted *as-of* plus leftover:
 
-> `zululon honenom helerel b_#22,7 vebarum.`
+> `zululon honenom helerem b_#22,7 vebarum.`
 >
-> z-Ululon | h-RESIDUE | h-as-of.asserted | b-22-July | v-leave
+> z-Ululon | h-RESIDUE | h-as-of.ledger | b-22-July | v-leave
 >
-> "As of 22 July, Ululon’s leaving still counts."
+> "As of 22 July, Ululon had still left."
 
-Bare verb concurrent with \(R\) (not event-when):
+Bare verb concurrent with the snapshot (books, not a spare `h_#22,7`):
 
-> `zazawan helerel b_#22,7 vajul al b@<Paris>.`
+> `zazawan helerem b_#22,7 vajul al b@<Paris>.`
 >
-> z-Azawan | h-as-of.asserted | b-22-July | v-sit | in | b-Paris
+> z-Azawan | h-as-of.ledger | b-22-July | v-sit | in | b-Paris
 >
-> "As of 22 July, Azawan sits in Paris."
+> "As of 22 July, Azawan is in Paris."
 
-Causal *if* only (no \(R\); PREDICT would still be after **speech-now**):
+Asserted *as-of* plus PLAN (*was going to*):
+
+> `zululon hemabam vawalal helerem b_#22,7.`
+>
+> z-Ululon | h-plan-sketch | v-walk | h-as-of.ledger | b-22-July
+>
+> "As of 22 July, Ululon was going to walk."
+
+Asserted *as-of* plus FORMER:
+
+> `zazawan hual vezehel hemebem helerem b_#22,7.`
+>
+> z-Azawan | h-always | v-tell | h-FORMER | h-as-of.ledger | b-22-July
+>
+> "As of 22 July, Azawan didn't always tell anymore — that used to be the pattern, not the climate then."
+
+Causal *if* only. PREDICT here would still be after speech-now:
 
 > `zazawan vawalal hadorom banunul.`
 >
 > z-Azawan | v-walk | h-if | b-rain
 >
-> "Azawan walks if there is rain."
+> "Azawan walks if it rains."
 
-Unasserted *as-of* + RESIDUE + PREDICT (*if he had … would still*):
+*If he had … would still* — bookmark *as-of*, no `hadorom`, `barl` last:
 
-> `zadorol gologem honenom helezom helerem barl zululon vebarum.`
+> `zadorol gologem honenom helezom hobomam barl zululon vebarum.`
 >
-> z-door | g-locked | h-RESIDUE | h-PREDICT | h-as-of.unasserted | b-that-clause | z-Ululon | v-leave
+> z-door | g-locked | h-RESIDUE | h-PREDICT | h-as-of.bookmark | b-that-clause | z-Ululon | v-leave
 >
-> "If Ululon had left, the door would still be locked." — bookmark now; leftover scored there; locked later-than that now
+> "If Ululon had left, the door would still be locked." — placeholder now; leftover scored there; locked after that now
 
-Unasserted *as-of* + PLAN:
+Bookmark *as-of* plus PLAN:
 
-> `zululon hemabam vawalal helerem b_#22,7.`
+> `zululon hemabam vawalal hobomam b_#22,7.`
 >
-> z-Ululon | h-plan-sketch | v-walk | h-as-of.unasserted | b-22-July
+> z-Ululon | h-plan-sketch | v-walk | h-as-of.bookmark | b-22-July
 >
-> "If (as of 22 July) Ululon had meant to walk."
+> "If, as of 22 July, Ululon had meant to walk."
 
 NOTIONAL is play, not a bookmark:
 
@@ -206,113 +220,98 @@ NOTIONAL is play, not a bookmark:
 >
 > z-Ululon | h-NOTIONAL | v-leave
 >
-> "As if Ululon leaves."
+> "As if Ululon were leaving."
 
-WITNESSED + asserted \(R\) + RESIDUE (one clause):
+Memory of leftover on a dated line:
 
-> `zululon huvuvum honenom helerel b_#22,7 vebarum.`
+> `zululon huvuvum honenom helerem b_#22,7 vebarum.`
 >
-> z-Ululon | h-WITNESSED | h-RESIDUE | h-as-of.asserted | b-22-July | v-leave
+> z-Ululon | h-WITNESSED | h-RESIDUE | h-as-of.ledger | b-22-July | v-leave
 >
-> "Ululon’s leaving still counted on 22 July — from memory."
+> "I remember: as of 22 July, Ululon had still left."
 
-LIVE-at-\(R\) (camera in the snapshot):
+LIVE inside the snapshot:
 
-> `zazawan hadezem helerel b_#22,7 vawalal.`
+> `zazawan hadezem helerem b_#22,7 vawalal.`
 >
-> z-Azawan | h-LIVE | h-as-of.asserted | b-22-July | v-walk
+> z-Azawan | h-LIVE | h-as-of.ledger | b-22-July | v-walk
 >
-> "Azawan walks — live in the 22 July snapshot."
+> "Azawan is walking — we're there on 22 July."
 
-`barl` defines \(R\); the telling body does **not** inherit the ledger:
+`barl` defines whose-now and is last. The telling sentence is the dated now, not itself leftover:
 
-> `zululon honenom vebarum helerel barl zululon vezehel.`
+> `zululon honenom vebarum helerem barl zululon vezehel.`
 >
-> z-Ululon | h-RESIDUE | v-leave | h-as-of.asserted | b-that-clause | z-Ululon | v-tell
+> z-Ululon | h-RESIDUE | v-leave | h-as-of.ledger | b-that-clause | z-Ululon | v-tell
 >
-> "As of Ululon’s telling, the leaving still counts." — the telling sentence is the dated now, not itself leftover
+> "As of when Ululon told it, the departure still stood."
 
-Resume of that snapshot on the next clause (channel and RESIDUE written again; no persist):
+Resume on the next clause. Write RESIDUE again; nothing persists by itself:
 
-> `zululon honenom helerel b_#22,7 vebarum. xazawan honenom helerer vawalal.`
+> `zululon honenom helerem b_#22,7 vebarum. xazawan honenom helerer vawalal.`
 >
-> z-Ululon | h-RESIDUE | h-as-of.asserted | b-22-July | v-leave | x-Azawan | h-RESIDUE | h-as-of.resume | v-walk
+> z-Ululon | h-RESIDUE | h-as-of.ledger | b-22-July | v-leave | x-Azawan | h-RESIDUE | h-as-of.ledger.resume | v-walk
 >
-> "As of 22 July, Ululon’s leaving still counts. Azawan’s walking still counts — same ledger."
+> "As of 22 July, Ululon had still left. Azawan had still walked — same books."
 
-Memory stretch: repeat the channel; resume \(R\):
+Memory stretch: repeat the channel; resume the books:
 
-> `zululon huvuvum helerel b_#22,7 honenom vebarum. xazawan huvuvum helerer vawalal.`
+> `zululon huvuvum helerem b_#22,7 honenom vebarum. xazawan huvuvum helerer vawalal.`
 >
-> z-Ululon | h-WITNESSED | h-as-of.asserted | b-22-July | h-RESIDUE | v-leave | x-Azawan | h-WITNESSED | h-as-of.resume | v-walk
+> z-Ululon | h-WITNESSED | h-as-of.ledger | b-22-July | h-RESIDUE | v-leave | x-Azawan | h-WITNESSED | h-as-of.ledger.resume | v-walk
 >
-> "From memory, as of 22 July, Ululon’s leaving still counts. Azawan walks — still memory, same books, no leftover claim on the second clause."
+> "I remember: as of 22 July, Ululon had still left. Azawan is walking — still from memory, same day in the books."
 
-`/ɡ/` twin on a noun (clause moods still need `/h/` if the verb scores against \(R\)):
+Noun as of a date. If the verb also scores against that now, add `/h/` *as-of*:
 
-> `zonebam gelerel b_#22,7.`
+> `zonebam gelerem b_#22,7.`
 >
-> z-money-bag | g-as-of.asserted | b-22-July
+> z-money-bag | g-as-of.ledger | b-22-July
 >
-> "The tab as of 22 July."
+> "The tab as it stood on 22 July."
 
-PREDICT + unasserted \(R\) on two clauses (*would*; repeat PREDICT, resume books):
+*Would* on two clauses: repeat PREDICT, resume the books:
 
-> `helezom helerem b_#22,7 vanunul. xazawan helezom helerer vawalal.`
+> `helezom hobomam b_#22,7 vanunul. xazawan helezom hobomar vawalal.`
 >
-> h-PREDICT | h-as-of.unasserted | b-22-July | v-rain | x-Azawan | h-PREDICT | h-as-of.resume | v-walk
+> h-PREDICT | h-as-of.bookmark | b-22-July | v-rain | x-Azawan | h-PREDICT | h-as-of.bookmark.resume | v-walk
 >
-> "As of that bookmark, it would rain. Azawan would walk."
+> "From then, it would rain. Azawan would walk."
 
-Short island (handful of words). Not a paragraph:
+Illegal (proxy, not whose now): not `helerem bululon`. Prefer `helerem barl zululon vezehel`.
 
-> `zazawan ^ huvuvum zululon zal ^ zam vejel.`
+Both poles, date in *as-of* `/b/`, not a second `barl`:
+
+> `zonebam honenom helerem b_#22,7 hadorom banunul.`
 >
-> z-Azawan | ^-start | h-WITNESSED | z-Ululon | z-and | ^-end | z-and.open | v-see
+> z-money-bag | h-RESIDUE | h-as-of.ledger | b-22-July | h-if | b-rain
 >
-> "Azawan and (just Ululon, that conjunct from memory) see …."
-
-Do **not** wrap a memory stretch in `^ … ^`. Repeat the evidential / resume \(R\).
-
-Illegal (proxy, not whose now): not `helerel bululon`. Prefer `helerel barl zululon vezehel` or *as of Ululon’s telling*.
-
-*If it rains, then as of 22 July the tab still counts* (both poles):
-
-> `zonebam honenom helerel b_#22,7 hadorom banunul.`
->
-> z-money-bag | h-RESIDUE | h-as-of.asserted | b-22-July | h-if | b-rain
->
-> "If there is rain, the tab still counts as of 22 July."
+> "If it rains, the 22 July tab still stands."
 
 ## Parser vs discourse
 
-| Layer | Rule |
-|-------|------|
-| Sentence parse | Hosted + `/b/` introduces *as-of*; stem + **-r** and no `/b/` resumes. Isolated `helerer` **parses**. No scope-hook series. |
-| Learner rule | Resume only after an *as-of* introduce. Islands stay short. Next clause omits \(R\) unless `helerer` (or a new pair). |
-| Docs examples | A block that uses resume includes the hosted pair in that block. |
-| Cheap local checks | Hosted *as-of* without `/b/` unless **-r**; **-r** *as-of* with `/b/` is illegal; `/b/` on evidential / PREDICT / PLAN / RESIDUE is **not** this pole. |
-| Cross-sentence bind | Optional later. Do **not** require paragraph state for the first absorb. Resume is a learner/discourse rule until a later resolve pass. |
+The sentence parser treats this like other hosted poles: `/h/` or `/ɡ/` plus `/b/` introduces *as-of*; that overlay plus **-r** and no `/b/` resumes. Isolated `helerer` / `hobomar` parse. There is no `/w/` + `/b/` and no scope-hook series.
 
-## Compare with
+Learners: resume only after an introduce of the same overlay; bind the nearest unreplaced introduce of that overlay; a finished inner clause does not stay open. The next clause omits whose-now unless you write `helerer` / `hobomar` or a new pair. `barl` stays last.
 
-| Other device | Job |
-|--------------|-----|
-| Clock / date / **`oranem`** | Event-when, not books |
-| Extra-noun **`ol`** *at* | Place / time landmark, not score-now |
-| **`hadorom`** | Causal *if*; no \(R\) |
-| NOTIONAL | Play, not hypothetical ledger |
-| **`hudagam`** | Whose agency, not whose now |
-| Speech act + `/x/` | Inherit **act**, not frames |
-| TALE **`horolom`** | Channel = lore, not \(R\) |
-| Ambient **`Ne0`** | Order of magnitude, not time |
+A docs block that uses resume should include the hosted pair in that block. The first teach includes `hadorom` vs `hobomam`.
 
-## Absorb sketch (if yes)
+Cheap local checks: hosted *as-of* needs `/b/` unless the ending is **-r**; **-r** plus `/b/` is illegal; `/b/` on an evidential, PREDICT, PLAN, or RESIDUE is not this pole.
 
-1. Overlay rows for `elerel` / `elerem` on `/h/`, `/ɡ/`, and `/w/`; resume is ending **-r**.
-2. Teach the pole on [relations.md](../grammar/relations.md); link from [knowing.md](../grammar/knowing.md) / [intention.md](../grammar/intention.md): *as-of* vs *after* vs PREDICT vs *if*. No new hook family.
-3. LIVE-at-\(R\); concurrent bare verb + *as-of*; island length cap; resume on the next host.
-4. [why-agelan.md](../grammar/why-agelan.md): rumination = which ledger; *had … would* = unasserted *as-of*, not play; memory stretches repeat the channel (opt-in, not silent leak).
-5. [grammar-gaps.md](../meta/grammar-gaps.md) item 14 / time: viewpoint as hosted pole, not a tense letter and not frame-scope hooks.
-6. Parser: hosted pair like other `clause_pole`; no last-scene inference; optional local **-r** `/b/` clash; no required paragraph state; no `ea`/`eo`/`ee`/`eu` hooks.
-7. Drills (later, not in this file): asserted + RESIDUE; unasserted *had … would*; LIVE-at-\(R\); resume on `/x/`; negative *if it rains* without *as-of*; island too long as a **don’t**.
+Cross-sentence bind can wait. The first absorb does not require paragraph state.
+
+## Nearby devices (different jobs)
+
+Clock, date, and **`oranem`** order events; they are not the books. Extra-noun **`ol`** *at* is a place or time landmark, not score-now. Bare `h_#…` is an event-when date — do not double it with *as-of* for the same snapshot.
+
+**`hadorom`** is causal *if* at speaker-now. It is not English *if he had* (`hobomam`). NOTIONAL is play, not a bookmark now. **`hudagam`** is whose agency, not whose now. `/x/` inherits the speech act, not frames. TALE **`horolom`** is lore as a channel. Ambient **`Ne0`** is order of magnitude, not time.
+
+## Absorb sketch
+
+1. Overlay rows for `elerem` and `obomam` on `/h/` and `/ɡ/` only. Resume is ending **-r** on that overlay. No `/w/` rows.
+2. Teach both poles on [relations.md](../grammar/relations.md). Put `hadorom` vs `hobomam` on [causation.md](../grammar/causation.md) in the first pass (next to `hurugum` vs `hadorom`). Link from [knowing.md](../grammar/knowing.md) and [intention.md](../grammar/intention.md): ledger vs bookmark vs *after* vs PREDICT vs *if*. No new hook family.
+3. Teach LIVE-at-snapshot; bare verb plus `helerem` vs clock; asserted PLAN; FORMER; `helerer` / `hobomar` on the next host; `barl` last; date as `b_#…` on the *as-of* word. Do not teach islands as *as-of*.
+4. [why-agelan.md](../grammar/why-agelan.md): rumination is which ledger; *had … would* is `hobomam`, not play; memory stretches repeat the channel on purpose.
+5. [grammar-gaps.md](../meta/grammar-gaps.md) item 14 / time: viewpoint as hosted poles, not a tense letter and not persist hooks.
+6. Parser: hosted pair like other `clause_pole` (`/h/` and `/ɡ/` only). No last-scene inference. Optional local check that **-r** does not take `/b/`. Resume must match overlay. No paragraph state. No `ea`/`eo`/`ee`/`eu` hooks. No `/w/` + `/b/`.
+7. Drills later: `helerem` leftover; `helerem` PLAN; FORMER; *had … would* with `hobomam` and without `hadorom`; LIVE-at-snapshot; resume on `/x/`; *if it rains* without *as-of*; do not write spare `h_#…` beside *as-of*.
