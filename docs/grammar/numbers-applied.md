@@ -55,7 +55,7 @@ Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedu
 <a id="unit-amount"></a>
 <a id="si-units"></a>
 
-English names **how much of a unit** (*two meters*, *three hours*). The unit is a lexicon noun whose **published metaphor** is that SI or everyday unit name; the amount is an ordinary `/ɡ/` scalar on that unit. Use those unit lemmas in speech, not Latin abbreviations (`m`, `kg`, `s`). Introduce the unit sense with **-m** ([metaphor](reference-suffix.md#metaphor-m)); resume with **-r** when the unit phrase is already on the table.
+English names **how much of a unit** (*two meters*, *three hours*). The unit is a lexicon noun whose **published abstract** is that SI or everyday unit name; the amount is an ordinary `/ɡ/` scalar on that unit. Use those unit lemmas in speech, not Latin abbreviations (`m`, `kg`, `s`). Introduce the unit sense with **-m** ([abstract](reference-suffix.md#abstract-m)); resume with **-r** when the unit phrase is already on the table.
 
 > `zazawan bedurem g+2 vawalal.`
 >

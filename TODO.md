@@ -8,7 +8,6 @@ add Agalan cheat sheet
 consider making negatives clearer
 final exam
 Prosody
-Rename metaphorical
 
 ## Evidentiality / tense
 

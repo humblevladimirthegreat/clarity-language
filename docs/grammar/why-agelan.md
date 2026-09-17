@@ -181,7 +181,7 @@ Numbering candidates, paraphrasing, and naming the judgment bar help you keep ch
 
 Abstract ideas are hard to hold; without a concrete picture, the psychologically useful reading of a word slips away in the moment.
 
-Published roots keep a **metaphorical** sense beside the literal one, so the abstract job rides on a familiar scene that already carries the caution. Examples:
+Published roots keep an **abstract** sense beside the **concrete** picture, so the unobservable job rides on a familiar scene that already carries the caution. Examples:
 
 * [Memory as fishing](knowing.md#evidentiality): cast into opaque water; you may pull a fish or a **boot** (the memory can be wrong).
 * [Live look as attesting](knowing.md#live-vs-memory): eye-in-speech while the scene is still in view.

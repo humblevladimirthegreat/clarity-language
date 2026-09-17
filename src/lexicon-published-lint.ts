@@ -10,7 +10,7 @@ export type PublishedSenseError = {
   row: number;
   emoji: string;
   literal: string;
-  metaphorical: string;
+  abstract: string;
   kind: PublishedSenseCollisionKind;
   reason: string;
 };
@@ -35,12 +35,12 @@ export function englishCitationForms(lemma: string): Set<string> {
   return forms;
 }
 
-export function literalMetaphorCollide(
+export function concreteAbstractCollide(
   literal: string,
-  metaphorical: string,
+  abstract: string,
 ): { kind: PublishedSenseCollisionKind } | null {
   const litNorm = normalizeEnglish(literal);
-  const metNorm = normalizeEnglish(metaphorical);
+  const metNorm = normalizeEnglish(abstract);
   if (!litNorm || !metNorm) {
     return null;
   }
@@ -49,7 +49,7 @@ export function literalMetaphorCollide(
   }
 
   const litForms = englishCitationForms(literal);
-  const metForms = englishCitationForms(metaphorical);
+  const metForms = englishCitationForms(abstract);
   for (const form of litForms) {
     if (metForms.has(form)) {
       return { kind: "related" };
@@ -63,26 +63,26 @@ export function validatePublishedSenseSeparation(rows: PublishedRow[]): Publishe
 
   for (let index = 0; index < rows.length; index++) {
     const row = rows[index]!;
-    const metaphorical = row.metaphorical.trim();
-    if (!metaphorical) {
+    const abstract = row.abstract.trim();
+    if (!abstract) {
       continue;
     }
 
-    const hit = literalMetaphorCollide(row.literal, metaphorical);
+    const hit = concreteAbstractCollide(row.concrete, abstract);
     if (!hit) {
       continue;
     }
 
     const reason =
       hit.kind === "exact"
-        ? "metaphorical matches literal (same citation lemma)"
-        : "metaphorical shares a citation form with literal (inflectional alternate)";
+        ? "abstract matches literal (same citation lemma)"
+        : "abstract shares a citation form with literal (inflectional alternate)";
 
     errors.push({
       row: index + 2,
       emoji: row.emoji,
-      literal: row.literal,
-      metaphorical,
+      literal: row.concrete,
+      abstract,
       kind: hit.kind,
       reason,
     });

@@ -7,8 +7,8 @@ export const COMPOUND_HEADERS = [
   "left",
   "join",
   "right",
-  "literal",
-  "metaphorical",
+  "concrete",
+  "abstract",
   "mnemonic",
 ] as const;
 
@@ -20,8 +20,8 @@ export type CompoundRow = {
   left: string;
   join: CompoundJoin;
   right: string;
-  literal: string;
-  metaphorical: string;
+  concrete: string;
+  abstract: string;
   mnemonic: string;
 };
 
@@ -94,8 +94,8 @@ export function parseCompoundCsv(text: string): CompoundRow[] {
     left: row.left ?? "",
     join: (row.join ?? "") as CompoundJoin,
     right: row.right ?? "",
-    literal: row.literal ?? "",
-    metaphorical: row.metaphorical ?? "",
+    concrete: row.concrete ?? "",
+    abstract: row.abstract ?? "",
     mnemonic: row.mnemonic ?? "",
   }));
 }
@@ -190,7 +190,7 @@ export function validateCompoundRows(
       }
     }
 
-    if (!row.literal.trim()) {
+    if (!row.concrete.trim()) {
       errors.push({ row: rowNum, stem, reason: "missing literal gloss" });
     }
   }

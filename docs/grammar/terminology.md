@@ -265,7 +265,7 @@ Number ending **-n**.
 
 [Numbers](numbers.md#number-endings)
 
-**Compare with:** content **-n** is [named](#literal-metaphorical-named-resume). Phrase join **-n** is a [named list](#named-list). Clause join **-n** is a [sequence](#sequence).
+**Compare with:** content **-n** is [named](#concrete-abstract-named-resume). Phrase join **-n** is a [named list](#named-list). Clause join **-n** is a [sequence](#sequence).
 
 ### Cross-role recast
 
@@ -479,7 +479,7 @@ Vocative → polar stance → act word, then body.
 
 [Clause](clause.md#left-edge-order-and-sentence-boundaries)
 
-### Literal / metaphorical / named / resume
+### Concrete / abstract / named / resume
 
 Content endings **-l / -m / -n / -r**.
 
@@ -499,7 +499,7 @@ Content endings **-l / -m / -n / -r**.
 
 ### Measure phrase / unit
 
-Amount + lexicon unit noun (published metaphor = unit name).
+Amount + lexicon unit noun (published abstract = unit name).
 
 [Numbers applied](numbers-applied.md#measure-phrases)
 
@@ -573,7 +573,7 @@ Special reading of a published root under a PoS.
 
 [Special vocabulary](special-vocabulary.md#sense-form)
 
-**Compare with:** a number under `/v/` `/h/` `/j/` `/x/` is [number as verb / adverb / interjection / discourse](#number-as-verb-adverb-interjection-discourse), not an overlay. Metaphorical **-m** stays metaphorical.
+**Compare with:** a number under `/v/` `/h/` `/j/` `/x/` is [number as verb / adverb / interjection / discourse](#number-as-verb-adverb-interjection-discourse), not an overlay. Lexicon abstract **-m** stays abstract.
 
 ### Polar stance
 

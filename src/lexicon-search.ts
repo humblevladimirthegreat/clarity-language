@@ -13,15 +13,15 @@ const POS_ENGLISH_LEMMA_RE = /^[a-z]+(?:-[a-z]+)*$/;
 const POS_ENGLISH_PIECE_RE = /^(m\.)?([zdbvgwhjx]):([a-z]+(?:-[a-z]+)*)$/;
 
 export type PosEnglishMap = {
-  literal: Partial<Record<RoleLetter, string>>;
-  metaphorical: Partial<Record<RoleLetter, string>>;
+  concrete: Partial<Record<RoleLetter, string>>;
+  abstract: Partial<Record<RoleLetter, string>>;
 };
 
 export type PublishedRow = {
   emoji: string;
-  literal: string;
+  concrete: string;
   clarity: string;
-  metaphorical: string;
+  abstract: string;
   mnemonic: string;
   englishByPos: string;
   posEnglish: PosEnglishMap;
@@ -84,7 +84,7 @@ export type LexiconSearchResult = PublishedRow & {
 
 type IndexedDoc = PublishedRow & {
   id: number;
-  literalTokens: string;
+  concreteTokens: string;
   posEnglishLemmas: string;
 };
 
@@ -92,9 +92,9 @@ type CompoundIndexedDoc = {
   id: number;
   emoji: string;
   stem: string;
-  literal: string;
-  literalTokens: string;
-  metaphorical: string;
+  concrete: string;
+  concreteTokens: string;
+  abstract: string;
   mnemonic: string;
 };
 
@@ -114,9 +114,9 @@ export { parseCompoundCsv, type CompoundRow } from "./lexicon-compounds.js";
 
 const PUBLISHED_HEADERS = [
   "emoji",
-  "literal",
+  "concrete",
   "clarity",
-  "metaphorical",
+  "abstract",
   "mnemonic",
   "english_by_pos",
 ] as const;
@@ -134,14 +134,14 @@ const OVERLAY_HEADERS = [
 const POS_PREFIXES = new Set(["z", "d", "b", "g", "v", "w", "h", "j", "x"]);
 
 const SEARCH_FIELDS = [
-  "literal",
-  "literalTokens",
+  "concrete",
+  "concreteTokens",
   "clarity",
-  "metaphorical",
+  "abstract",
   "mnemonic",
   "posEnglishLemmas",
 ] as const;
-const COMPOUND_SEARCH_FIELDS = ["literal", "literalTokens", "stem", "metaphorical", "mnemonic"] as const;
+const COMPOUND_SEARCH_FIELDS = ["concrete", "concreteTokens", "stem", "abstract", "mnemonic"] as const;
 const OVERLAY_SEARCH_FIELDS = [
   "senseForm",
   "root",
@@ -153,19 +153,19 @@ const OVERLAY_SEARCH_FIELDS = [
 ] as const;
 
 const FIELD_BOOSTS: Record<(typeof SEARCH_FIELDS)[number], number> = {
-  literal: 2,
-  metaphorical: 2,
+  concrete: 2,
+  abstract: 2,
   clarity: 1.5,
-  literalTokens: 1.5,
+  concreteTokens: 1.5,
   posEnglishLemmas: 1.8,
   mnemonic: 1,
 };
 
 const COMPOUND_FIELD_BOOSTS: Record<(typeof COMPOUND_SEARCH_FIELDS)[number], number> = {
-  literal: 2,
-  metaphorical: 2,
+  concrete: 2,
+  abstract: 2,
   stem: 1.5,
-  literalTokens: 1.5,
+  concreteTokens: 1.5,
   mnemonic: 1,
 };
 
@@ -200,10 +200,10 @@ const OVERLAY_SEARCH_OPTIONS = {
 const EMOJI_QUERY_RE = /\p{Extended_Pictographic}/u;
 
 const MATCH_FIELD_LABELS: Record<string, string> = {
-  literal: "literal",
-  literalTokens: "literal",
+  concrete: "concrete",
+  concreteTokens: "concrete",
   clarity: "clarity",
-  metaphorical: "metaphorical",
+  abstract: "abstract",
   mnemonic: "mnemonic",
   posEnglishLemmas: "english_by_pos",
   englishByPos: "english_by_pos",
@@ -218,15 +218,15 @@ const MATCH_FIELD_LABELS: Record<string, string> = {
 };
 
 export function emptyPosEnglish(): PosEnglishMap {
-  return { literal: {}, metaphorical: {} };
+  return { concrete: {}, abstract: {} };
 }
 
 export function posEnglishLemmaList(map: PosEnglishMap): string[] {
   const lemmas: string[] = [];
   for (const letter of ROLE_LETTERS) {
-    const lit = map.literal[letter];
+    const lit = map.concrete[letter];
     if (lit) lemmas.push(lit);
-    const met = map.metaphorical[letter];
+    const met = map.abstract[letter];
     if (met) lemmas.push(met);
   }
   return lemmas;
@@ -235,11 +235,11 @@ export function posEnglishLemmaList(map: PosEnglishMap): string[] {
 export function formatEnglishByPos(map: PosEnglishMap): string {
   const pieces: string[] = [];
   for (const letter of ROLE_LETTERS) {
-    const lit = map.literal[letter];
+    const lit = map.concrete[letter];
     if (lit) pieces.push(`${letter}:${lit}`);
   }
   for (const letter of ROLE_LETTERS) {
-    const met = map.metaphorical[letter];
+    const met = map.abstract[letter];
     if (met) pieces.push(`m.${letter}:${met}`);
   }
   return pieces.join("; ");
@@ -247,20 +247,20 @@ export function formatEnglishByPos(map: PosEnglishMap): string {
 
 /**
  * Packed role-English packaging: `v:see; m.v:intuit; m.h:inside`.
- * Bare keys are literal-sense mismatches; `m.` keys are metaphor-sense mismatches.
+ * Bare keys are concrete-sense mismatches; `m.` keys are abstract-sense mismatches.
  * Neither copies onto the other sense.
  */
 export function parseEnglishByPos(
   raw: string,
-  opts?: { literal?: string; metaphorical?: string; label?: string },
+  opts?: { concrete?: string; abstract?: string; label?: string },
 ): PosEnglishMap {
   const packed = raw.trim();
   const map = emptyPosEnglish();
   if (!packed) return map;
 
   const label = opts?.label ? `${opts.label}: ` : "";
-  const literalSense = (opts?.literal ?? "").trim().toLowerCase();
-  const metaphoricalSense = (opts?.metaphorical ?? "").trim().toLowerCase();
+  const concreteSense = (opts?.concrete ?? "").trim().toLowerCase();
+  const abstractSense = (opts?.abstract ?? "").trim().toLowerCase();
   const seenLit = new Set<RoleLetter>();
   const seenMet = new Set<RoleLetter>();
 
@@ -282,21 +282,21 @@ export function parseEnglishByPos(
       throw new Error(`${label}bad english_by_pos piece "${piece}"`);
     }
     if (metaphor) {
-      if (!metaphoricalSense) {
-        throw new Error(`${label}m.${pos} packing needs a metaphorical sense`);
+      if (!abstractSense) {
+        throw new Error(`${label}m.${pos} packing needs an abstract sense`);
       }
-      if (lemma === metaphoricalSense) {
+      if (lemma === abstractSense) {
         throw new Error(
-          `${label}m.${pos}:${lemma} matches the metaphorical field; omit transparent conversions`,
+          `${label}m.${pos}:${lemma} matches the abstract field; omit transparent conversions`,
         );
       }
       if (seenMet.has(pos)) {
         throw new Error(`${label}duplicate m.${pos} in english_by_pos`);
       }
       seenMet.add(pos);
-      map.metaphorical[pos] = lemma;
+      map.abstract[pos] = lemma;
     } else {
-      if (literalSense && lemma === literalSense) {
+      if (concreteSense && lemma === concreteSense) {
         throw new Error(
           `${label}${pos}:${lemma} matches the literal field; omit transparent conversions`,
         );
@@ -305,7 +305,7 @@ export function parseEnglishByPos(
         throw new Error(`${label}duplicate ${pos} in english_by_pos`);
       }
       seenLit.add(pos);
-      map.literal[pos] = lemma;
+      map.concrete[pos] = lemma;
     }
   }
 
@@ -319,18 +319,18 @@ export function parsePublishedCsv(text: string): PublishedRow[] {
   }
 
   return rows.map((row, index) => {
-    const literal = row.literal ?? "";
-    const metaphorical = row.metaphorical ?? "";
+    const concrete = row.concrete ?? "";
+    const abstract = row.abstract ?? "";
     const englishByPos = (row.english_by_pos ?? "").trim();
     const label = `lexicon-published.csv row ${index + 2}`;
     return {
       emoji: row.emoji ?? "",
-      literal,
+      concrete,
       clarity: row.clarity ?? "",
-      metaphorical,
+      abstract,
       mnemonic: row.mnemonic ?? "",
       englishByPos,
-      posEnglish: parseEnglishByPos(englishByPos, { literal, metaphorical, label }),
+      posEnglish: parseEnglishByPos(englishByPos, { concrete, abstract, label }),
     };
   });
 }
@@ -431,7 +431,7 @@ export function validateOverlayPublishedHosts(
         senseForm: overlay.senseForm,
         pos: overlay.pos,
         emoji,
-        reason: `overlay ${overlay.senseForm} does not start with published root ${root} (${emoji} ${host.literal})`,
+        reason: `overlay ${overlay.senseForm} does not start with published root ${root} (${emoji} ${host.concrete})`,
       });
     }
   }
@@ -509,7 +509,7 @@ export function splitPosPrefixedQuery(query: string): { pos: string | null; stem
   return { pos: null, stem: q };
 }
 
-export function tokenizeLiteral(literal: string): string {
+export function tokenizeConcrete(literal: string): string {
   const base = literal.trim().toLowerCase();
   if (!base) return "";
 
@@ -552,7 +552,7 @@ export function attachOverlays(rows: PublishedRow[], overlays: OverlayRow[]): Ma
 
     const keys: Array<[string, string]> = [
       [`${row.clarity}\0l`, "l"],
-      ...(row.metaphorical ? [[`${row.clarity}\0m`, "m"] as [string, string]] : []),
+      ...(row.abstract ? [[`${row.clarity}\0m`, "m"] as [string, string]] : []),
     ];
 
     for (const [key] of keys) {
@@ -577,15 +577,15 @@ export function createCompoundIndex(rows: CompoundRow[]): MiniSearch<CompoundInd
     id,
     emoji: row.emoji,
     stem: row.stem.toLowerCase(),
-    literal: row.literal.toLowerCase(),
-    literalTokens: tokenizeLiteral(row.literal),
-    metaphorical: row.metaphorical.toLowerCase(),
+    concrete: row.concrete.toLowerCase(),
+    concreteTokens: tokenizeConcrete(row.concrete),
+    abstract: row.abstract.toLowerCase(),
     mnemonic: row.mnemonic.toLowerCase(),
   }));
 
   const index = new MiniSearch<CompoundIndexedDoc>({
     fields: [...COMPOUND_SEARCH_FIELDS],
-    storeFields: ["emoji", "stem", "literal", "metaphorical", "mnemonic"],
+    storeFields: ["emoji", "stem", "concrete", "abstract", "mnemonic"],
     searchOptions: COMPOUND_SEARCH_OPTIONS,
   });
 
@@ -597,10 +597,10 @@ export function createLexiconIndex(rows: PublishedRow[]): MiniSearch<IndexedDoc>
   const docs: IndexedDoc[] = rows.map((row, id) => ({
     id,
     emoji: row.emoji,
-    literal: row.literal.toLowerCase(),
-    literalTokens: tokenizeLiteral(row.literal),
+    concrete: row.concrete.toLowerCase(),
+    concreteTokens: tokenizeConcrete(row.concrete),
     clarity: row.clarity.toLowerCase(),
-    metaphorical: row.metaphorical.toLowerCase(),
+    abstract: row.abstract.toLowerCase(),
     mnemonic: row.mnemonic.toLowerCase(),
     englishByPos: row.englishByPos,
     posEnglish: row.posEnglish,
@@ -609,7 +609,7 @@ export function createLexiconIndex(rows: PublishedRow[]): MiniSearch<IndexedDoc>
 
   const index = new MiniSearch<IndexedDoc>({
     fields: [...SEARCH_FIELDS],
-    storeFields: ["emoji", "literal", "clarity", "metaphorical", "mnemonic", "englishByPos"],
+    storeFields: ["emoji", "concrete", "clarity", "abstract", "mnemonic", "englishByPos"],
     searchOptions: SEARCH_OPTIONS,
   });
 
@@ -673,17 +673,17 @@ function exactMatchBoost(row: PublishedRow, query: string): { boost: number; fie
   let boost = 0;
   const fields: string[] = [];
 
-  if (row.literal.toLowerCase() === q) {
+  if (row.concrete.toLowerCase() === q) {
     boost += 100;
-    fields.push("literal");
+    fields.push("concrete");
   }
   if (row.clarity.toLowerCase() === q) {
     boost += 100;
     fields.push("clarity");
   }
-  if (row.metaphorical.toLowerCase() === q) {
+  if (row.abstract.toLowerCase() === q) {
     boost += 100;
-    fields.push("metaphorical");
+    fields.push("abstract");
   }
   if (row.mnemonic.toLowerCase() === q) {
     boost += 50;
@@ -756,9 +756,9 @@ function overlayResultFromPublished(
 function overlayOnlyResult(overlay: OverlayRow, score: number, matchFields: string[]): LexiconSearchResult {
   return {
     emoji: overlay.emoji,
-    literal: overlay.definition,
+    concrete: overlay.definition,
     clarity: overlay.senseForm,
-    metaphorical: "",
+    abstract: "",
     mnemonic: overlay.mnemonic,
     englishByPos: "",
     posEnglish: emptyPosEnglish(),
@@ -774,17 +774,17 @@ function exactCompoundBoost(row: CompoundRow, query: string): { boost: number; f
   let boost = 0;
   const fields: string[] = [];
 
-  if (row.literal.toLowerCase() === q) {
+  if (row.concrete.toLowerCase() === q) {
     boost += 100;
-    fields.push("literal");
+    fields.push("concrete");
   }
   if (row.stem.toLowerCase() === q) {
     boost += 100;
     fields.push("stem");
   }
-  if (row.metaphorical.toLowerCase() === q) {
+  if (row.abstract.toLowerCase() === q) {
     boost += 100;
-    fields.push("metaphorical");
+    fields.push("abstract");
   }
   if (row.mnemonic.toLowerCase() === q) {
     boost += 50;
@@ -801,9 +801,9 @@ function compoundResultFromRow(
 ): LexiconSearchResult {
   return {
     emoji: row.emoji,
-    literal: row.literal,
+    concrete: row.concrete,
     clarity: row.stem,
-    metaphorical: row.metaphorical,
+    abstract: row.abstract,
     mnemonic: row.mnemonic,
     englishByPos: "",
     posEnglish: emptyPosEnglish(),

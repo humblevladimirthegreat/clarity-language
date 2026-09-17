@@ -235,10 +235,10 @@ export function unknownLexiconContentRoots(
 function publishedGlossForRoots(
   tables: ClassifyTables,
   roots: string[],
-): { gloss: { literal?: string; metaphorical?: string }; allFound: boolean } | undefined {
+): { gloss: { concrete?: string; abstract?: string }; allFound: boolean } | undefined {
   if (roots.length === 0) return undefined;
   const literals: string[] = [];
-  const metaphoricals: string[] = [];
+  const abstracts: string[] = [];
   let allFound = true;
   let any = false;
   for (const root of roots) {
@@ -248,20 +248,20 @@ function publishedGlossForRoots(
       continue;
     }
     any = true;
-    literals.push(row.literal || root);
-    if (row.metaphorical) metaphoricals.push(row.metaphorical);
+    literals.push(row.concrete || root);
+    if (row.abstract) abstracts.push(row.abstract);
   }
   if (!any) return undefined;
-  const gloss: { literal?: string; metaphorical?: string } = {};
-  if (literals.length) gloss.literal = literals.join(" · ");
-  if (metaphoricals.length) gloss.metaphorical = metaphoricals.join(" · ");
+  const gloss: { concrete?: string; abstract?: string } = {};
+  if (literals.length) gloss.concrete = literals.join(" · ");
+  if (abstracts.length) gloss.abstract = abstracts.join(" · ");
   return { gloss, allFound };
 }
 
-function compoundLemmaGloss(row: CompoundRow): { literal?: string; metaphorical?: string } {
-  const gloss: { literal?: string; metaphorical?: string } = {};
-  if (row.literal) gloss.literal = row.literal;
-  if (row.metaphorical) gloss.metaphorical = row.metaphorical;
+function compoundLemmaGloss(row: CompoundRow): { concrete?: string; abstract?: string } {
+  const gloss: { concrete?: string; abstract?: string } = {};
+  if (row.concrete) gloss.concrete = row.concrete;
+  if (row.abstract) gloss.abstract = row.abstract;
   return gloss;
 }
 
@@ -373,7 +373,7 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
     return {
       ...word,
       reading: "join",
-      rootGloss: { literal: joinFenceGloss(word.family.series, word.ending) },
+      rootGloss: { concrete: joinFenceGloss(word.family.series, word.ending) },
     };
   }
 

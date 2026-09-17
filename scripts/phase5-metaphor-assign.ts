@@ -158,7 +158,7 @@ async function runPass1(
   const rows = loadPublishedRows();
   const empty = getEmptyRows(rows);
   if (empty.length === 0) {
-    throw new Error("No empty metaphorical rows in lexicon-published.csv");
+    throw new Error("No empty abstract rows in lexicon-published.csv");
   }
 
   const rowByEmoji = new Map(rows.map((r) => [r.emoji, r]));
@@ -219,7 +219,7 @@ async function runPass2(config: LlmClientConfig, staging: StagingFile): Promise<
 
   const rows = loadPublishedRows();
   const rowByEmoji = new Map(rows.map((r) => [r.emoji, r]));
-  const filled = rows.filter((r) => r.metaphorical);
+  const filled = rows.filter((r) => r.abstract);
   const gold = selectGoldExamples(filled, staging.lemma, staging.seed, 5);
   const used = [...getUsedMetaphors(rows)];
 
@@ -301,7 +301,7 @@ function cmdApply(lemma: string, dryRun: boolean): void {
 
   const content = readFileSync(publishedPath(), "utf8");
   const { rows } = parseCsv(content);
-  const fieldnames = ["emoji", "literal", "clarity", "metaphorical", "mnemonic", "english_by_pos"];
+  const fieldnames = ["emoji", "concrete", "clarity", "abstract", "mnemonic", "english_by_pos"];
   const published = loadPublishedRows();
   const validation = validateApply(staging, published);
 
@@ -324,7 +324,7 @@ function cmdApply(lemma: string, dryRun: boolean): void {
 
   for (const row of rows) {
     if ((row.emoji ?? "") === emoji) {
-      row.metaphorical = staging.lemma;
+      row.abstract = staging.lemma;
       row.mnemonic = mnemonic;
       updated = true;
       break;
@@ -336,7 +336,7 @@ function cmdApply(lemma: string, dryRun: boolean): void {
   }
 
   if (dryRun) {
-    console.log(`[dry-run] Would set ${emoji} metaphorical=${staging.lemma} mnemonic=${mnemonic}`);
+    console.log(`[dry-run] Would set ${emoji} abstract=${staging.lemma} mnemonic=${mnemonic}`);
     return;
   }
 

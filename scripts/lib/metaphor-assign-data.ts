@@ -3,7 +3,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { parseCsv } from "../../src/csv.js";
-import { literalMetaphorCollide } from "../../src/lexicon-published-lint.js";
+import { concreteAbstractCollide } from "../../src/lexicon-published-lint.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "../..");
 
@@ -11,7 +11,7 @@ export type PublishedRow = {
   emoji: string;
   literal: string;
   clarity: string;
-  metaphorical: string;
+  abstract: string;
   mnemonic: string;
   group: string;
   subgroup: string;
@@ -44,7 +44,7 @@ export type Pass2Candidate = {
 export type GoldExample = {
   emoji: string;
   literal: string;
-  metaphorical: string;
+  abstract: string;
   mnemonic: string;
   subgroup: string;
 };
@@ -105,9 +105,9 @@ export function loadPublishedRows(): PublishedRow[] {
   const { rows } = parseCsv(content);
   return rows.map((row) => ({
     emoji: row.emoji ?? "",
-    literal: (row.literal ?? "").trim(),
+    literal: (row.concrete ?? "").trim(),
     clarity: (row.clarity ?? "").trim(),
-    metaphorical: (row.metaphorical ?? "").trim(),
+    abstract: (row.abstract ?? "").trim(),
     mnemonic: (row.mnemonic ?? "").trim(),
     group: "",
     subgroup: "",
@@ -115,13 +115,13 @@ export function loadPublishedRows(): PublishedRow[] {
 }
 
 export function getEmptyRows(rows: PublishedRow[]): PublishedRow[] {
-  return rows.filter((r) => !r.metaphorical);
+  return rows.filter((r) => !r.abstract);
 }
 
 export function getUsedMetaphors(rows: PublishedRow[]): Set<string> {
   const used = new Set<string>();
   for (const row of rows) {
-    if (row.metaphorical) used.add(row.metaphorical.toLowerCase());
+    if (row.abstract) used.add(row.abstract.toLowerCase());
   }
   return used;
 }
@@ -227,10 +227,10 @@ export function selectGoldExamples(
 ): GoldExample[] {
   const lemmaNorm = normalizeLemma(lemma);
   const scored = filledRows
-    .filter((r) => r.metaphorical && r.mnemonic && r.mnemonic !== "REVIEW")
+    .filter((r) => r.abstract && r.mnemonic && r.mnemonic !== "REVIEW")
     .map((row) => {
       let score = 0;
-      const meta = row.metaphorical.toLowerCase();
+      const meta = row.abstract.toLowerCase();
       if (meta === lemmaNorm) score += 10;
       if (meta.includes(lemmaNorm) || lemmaNorm.includes(meta)) score += 5;
       score += wordOverlap(lemmaNorm, meta) * 2;
@@ -249,7 +249,7 @@ export function selectGoldExamples(
     chosen.push({
       emoji: row.emoji,
       literal: row.literal,
-      metaphorical: row.metaphorical,
+      abstract: row.abstract,
       mnemonic: row.mnemonic,
       subgroup: row.subgroup,
     });
@@ -259,7 +259,7 @@ export function selectGoldExamples(
     const rng = createSeededRng(seed + 99);
     const rest = filledRows.filter(
       (r) =>
-        r.metaphorical &&
+        r.abstract &&
         r.mnemonic &&
         r.mnemonic !== "REVIEW" &&
         !chosen.some((c) => c.emoji === r.emoji),
@@ -272,7 +272,7 @@ export function selectGoldExamples(
       chosen.push({
         emoji: row.emoji,
         literal: row.literal,
-        metaphorical: row.metaphorical,
+        abstract: row.abstract,
         mnemonic: row.mnemonic,
         subgroup: row.subgroup,
       });
@@ -340,11 +340,11 @@ export function validateApply(
     return { ok: false, errors, warnings };
   }
 
-  if (target.metaphorical) {
-    errors.push(`Target row already has metaphorical="${target.metaphorical}"`);
+  if (target.abstract) {
+    errors.push(`Target row already has abstract="${target.abstract}"`);
   }
 
-  if (literalMetaphorCollide(target.literal, lemma)) {
+  if (concreteAbstractCollide(target.literal, lemma)) {
     errors.push(
       `Lemma "${lemma}" collides with literal "${target.literal}" (same or inflectionally related citation form)`,
     );

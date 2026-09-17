@@ -9,7 +9,7 @@ A gloss should answer: *what is each Agalan piece doing in the clause — in Eng
 | Goal | Gloss does | Gloss does not |
 |------|------------|----------------|
 | Slot + sense | Show PoS letter and the **active English sense** | Quote Agalan phonology (`ugobo`, `uzumu`, …), except [mention / opaque interiors](#span-interiors) |
-| Separate senses | Treat literal / metaphorical / proper / overlay as **different English roots** | Chain etymology (`microphone→speaker`) |
+| Separate senses | Treat concrete / abstract / proper / overlay as **different English roots** | Chain etymology (`microphone→speaker`) |
 | Endings | Drop **-l** / **-m** / **-n** when they only pick which sense-root applies | Repeat those endings after a sense that already encodes them |
 | Structure | Keep mid-word `x` pieces, **-x**, and binding visible | Invent full English syntax for Agalan structure; copy writing glyphs (`@` / `~`) into the gloss |
 | Binding | Point **-r** (and span anaphors) at the antecedent when known | Collapse to English *he* / *she* / *it* |
@@ -26,7 +26,7 @@ A gloss should answer: *what is each Agalan piece doing in the clause — in Eng
 | **Free English (loose)** | Same places, under the morph gloss — **default** when only one free line | Natural paraphrase in `"double quotes"`; drop Agalan packaging English doesn’t mark |
 | **Free English (strict)** | Optional second quoted line (or alone when teaching packaging) | Keeps join packaging, value endings, evidential tags, cast letters, …; teaching dialogues may show **both** labeled `strict:` / `loose:` |
 | **Grammar-table gloss** | Inventory / contrast tables in grammar docs | Short free English in **English** (often *italic* in table cells); optional parenthetical notes — loose unless the row teaches packaging. **Cue** is not a gloss ([cues](grammar-docs.md#cues-columns)). |
-| **Lexicon fields** | `lexicon-published.csv` / overlays | Literal / metaphorical / mnemonic / [role English](#role-english) / definition — **inputs** to morph glosses and lookup, not utterance glosses. Verb senses use the [uninflected lemma](#english-lemma). Literal English in a **Cue** cell is still not the morph gloss. Morph does **not** take its english slot from role English. |
+| **Lexicon fields** | `lexicon-published.csv` / overlays | Concrete / abstract / mnemonic / [role English](#role-english) / definition — **inputs** to morph glosses and lookup, not utterance glosses. Verb senses use the [uninflected lemma](#english-lemma). Concrete English in a **Cue** cell is still not the morph gloss. Morph does **not** take its english slot from role English. |
 
 Grammar tables may keep a column named **Gloss** for free English. When a table needs morphology, use a **Morph** column or a separate morph line in the same format as dialogues.
 
@@ -128,7 +128,7 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 
 ## Senses are separate roots
 
-Published strings share one phonological root, but **literal**, **metaphorical**, and **proper / overlay** readings are **different gloss roots**. Gloss only the English sense that is active. Do **not** write the Agalan letters, and do **not** write **-l** / **-m** / **-n** when that ending only selected this sense.
+Published strings share one phonological root, but **concrete**, **abstract**, and **proper / overlay** readings are **different gloss roots**. Gloss only the English sense that is active. Do **not** write the Agalan letters, and do **not** write **-l** / **-m** / **-n** when that ending only selected this sense.
 
 | Agalan | Morph gloss | Not |
 |---------|-------------|-----|
@@ -150,7 +150,7 @@ Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* s
 ### Ordinary lexicon plus packed role English
 <a id="no-lexicon-pos-specials"></a>
 
-Morph uses the published **literal** or **metaphor** for that ending, unless `english_by_pos` lists a lemma for this role letter and sense ([role English](#role-english)). Do **not** invent a new English root just because the word is under `/v/`. Closed overlays, joins, hooks, speech-act vowels, and house names stay specials.
+Morph uses the published **concrete** or **abstract** for that ending, unless `english_by_pos` lists a lemma for this role letter and sense ([role English](#role-english)). Do **not** invent a new English root just because the word is under `/v/`. Closed overlays, joins, hooks, speech-act vowels, and house names stay specials.
 
 | Agalan | Morph | Free English |
 |--------|--------|------------------------------|
@@ -168,7 +168,7 @@ The checkpoint **English** column and the quoted line may say *see* / *sit* / *t
 
 Published rows may pack **role English** in `english_by_pos` when the usual English lemma for a role is not a transparent conversion of the **active** sense-root. This is not an overlay and not a second Agalan meaning.
 
-Packed form: `v:see; m.v:intuit; m.h:inside`. Bare keys (`v:see`) are **literal** mismatches only. `m.` keys are **metaphor** mismatches only. Neither copies onto the other sense. Omit a piece when English already converts the sense lemma (`perception` as `/v/` → *perceive*).
+Packed form: `v:see; m.v:intuit; m.h:inside`. Bare keys (`v:see`) are **concrete** mismatches only. `m.` keys are **abstract** mismatches only. Neither copies onto the other sense. Omit a piece when English already converts the sense lemma (`perception` as `/v/` → *perceive*).
 
 Lexicon search indexes those lemmas. Morph uses the packed lemma for that role letter and ending (`v-see`, `w-very`); other roles still use the sense-root (`z-eye`).
 
@@ -201,7 +201,7 @@ Only when it is **not** already baked into the English sense-root:
 | `(←…)` binding for **-r** | Resume is not a lexicon sense; see below |
 | Rare teaching callouts | If you must contrast two same-sense forms that differ only by ending, prefer distinct English labels (`and.open` / `and`, `j-question` / `j-soft-question`) over re-attaching `-m` / `-l` or `~` |
 
-Do **not** write `-l` / `-m` / `-n`, **`@`**, or **`~`** after a sense. Named **-n** uses the English name (`z-Azawan`), not `-n` / `-proper` / `@`. Metaphor **-m** uses the metaphor word (`g-happy`), not `happy~`.
+Do **not** write `-l` / `-m` / `-n`, **`@`**, or **`~`** after a sense. Named **-n** uses the English name (`z-Azawan`), not `-n` / `-proper` / `@`. Abstract **-m** uses the abstract word (`g-happy`), not `happy~`.
 
 ### Sense labels
 
@@ -214,7 +214,7 @@ Do **not** write `-l` / `-m` / `-n`, **`@`**, or **`~`** after a sense. Named **
 ### English lemma (no *-ing* / *-s* / *-ed*)
 <a id="english-lemma"></a>
 
-The lexicon **literal** and **metaphorical** fields, overlay **definition** labels used as senses, and the morph **english** slot all use the same **citation lemma**: the form you would look up in an English dictionary, not a conjugated or gerund form.
+The lexicon **concrete** and **abstract** fields, overlay **definition** labels used as senses, and the morph **english** slot all use the same **citation lemma**: the form you would look up in an English dictionary, not a conjugated or gerund form.
 
 | Sense is a verb (or a verb used as any PoS) | Write | Not |
 |---------------------------------------------|-------|-----|
@@ -227,7 +227,7 @@ Agalan does not mark English tense or progressive aspect on the root. Conjugatio
 
 When you retie a published literal (`dancing` → `dance`), morph lines that copied the old string follow (`v-walking` → `v-walk`, `v-walking-unable-temporary` → `v-walk-unable-temporary`).
 
-**Lexicon CSV:** On each published row, **literal** and **metaphorical** must not share a citation form on the **whole** hyphenated lemma (exact match or inflectional alternate such as `stressed` / `stress`). Reusing a **hyphen segment** alone (e.g. `credit-card` / `credit`, flag place name / demonym) is allowed. Checked by `npm run lint:lexicon`.
+**Lexicon CSV:** On each published row, **concrete** and **abstract** must not share a citation form on the **whole** hyphenated lemma (exact match or inflectional alternate such as `stressed` / `stress`). Reusing a **hyphen segment** alone (e.g. `credit-card` / `credit`, flag place name / demonym) is allowed. Checked by `npm run lint:lexicon`. Demonyms on **-m** are a listed exception to “unobservable,” not an exception to this collision rule.
 
 ### Anaphors (`-r`)
 

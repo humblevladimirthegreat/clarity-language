@@ -1,9 +1,9 @@
 import type { GoldExample, Pass1Pick, PoolEntry, PublishedRow } from "./metaphor-assign-data.js";
 
-const PHASE5_RULES = `Phase 5 rules for metaphorical glosses:
-- metaphorical is ONE lowercase English word or short hyphenated lemma (e.g. relief, self-care).
+const PHASE5_RULES = `Phase 5 rules for abstract glosses:
+- abstract is ONE lowercase English word or short hyphenated lemma (e.g. relief, self-care).
 - It is the figurative extension of the emoji's immediate reading (literal), not a second unrelated root.
-- The link must be teachable: a learner can see how literal leads to metaphorical.
+- The link must be teachable: a learner can see how literal leads to abstract.
 - Prefer strong, memorable leaps over weak associations.
 - If nothing in the list fits well, return fewer picks (or an empty array for pass 1).
 - Do not reuse metaphors already taken (listed when provided).`;
@@ -48,7 +48,7 @@ export function pass2SystemPrompt(): string {
 ${PHASE5_RULES}
 
 Pass 2 task: precision — from the shortlist only, return exactly 5 ranked candidates (or fewer if pool < 5) with draft mnemonics.
-Each mnemonic is a short English phrase linking literal → metaphorical.
+Each mnemonic is a short English phrase linking literal → abstract.
 
 Return JSON only:
 {
@@ -77,7 +77,7 @@ export function pass2UserPrompt(
       ? goldExamples
           .map(
             (ex) =>
-              `- ${ex.emoji} literal=${ex.literal} → metaphorical=${ex.metaphorical}; mnemonic="${ex.mnemonic}"`,
+              `- ${ex.emoji} literal=${ex.literal} → abstract=${ex.abstract}; mnemonic="${ex.mnemonic}"`,
           )
           .join("\n")
       : "(no examples)";
@@ -98,15 +98,15 @@ ${examples}
 Shortlist (pick from these only):
 ${tsv}
 
-Return exactly ${targetCount} ranked candidates with mnemonics using metaphorical="${lemma}".`;
+Return exactly ${targetCount} ranked candidates with mnemonics using abstract="${lemma}".`;
 }
 
 function rowToTsv(row: PublishedRow): string {
-  return `${row.emoji}\t${row.literal}\t${row.clarity}\t${row.subgroup}`;
+  return `${row.emoji}\t${row.concrete}\t${row.clarity}\t${row.subgroup}`;
 }
 
 function poolToTsv(row: PoolEntry): string {
-  return `${row.emoji}\t${row.literal}\t${row.clarity}\t${row.subgroup}\t${row.score}`;
+  return `${row.emoji}\t${row.concrete}\t${row.clarity}\t${row.subgroup}\t${row.score}`;
 }
 
 export function parsePass1Response(value: unknown): Pass1Pick[] {

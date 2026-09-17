@@ -147,7 +147,7 @@ function rowMatchesOnly(row: Record<string, string>, only: string[]): boolean {
   if (only.length === 0) {
     return true;
   }
-  const literal = (row.literal ?? "").trim();
+  const literal = (row.concrete ?? "").trim();
   const emoji = (row.emoji ?? "").trim();
   const root = (row.clarity ?? "").trim();
   return only.some((filter) => filter === literal || filter === emoji || filter === root);
@@ -187,7 +187,7 @@ function convertLexicon(only: string[]): void {
 
   const targets = only.length > 0 ? selected : rows;
   for (const row of targets) {
-    const literal = (row.literal ?? "").trim();
+    const literal = (row.concrete ?? "").trim();
     if (!literal) {
       skipped += 1;
       continue;

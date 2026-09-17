@@ -107,24 +107,24 @@ function allowedSenses(
   for (const root of roots) {
     const pub = tables.published.get(root);
     if (pub) {
-      add(all, pub.literal);
-      add(hostLemmas, pub.literal);
-      if (pub.metaphorical) {
-        add(all, pub.metaphorical);
-        add(hostLemmas, pub.metaphorical);
+      add(all, pub.concrete);
+      add(hostLemmas, pub.concrete);
+      if (pub.abstract) {
+        add(all, pub.abstract);
+        add(hostLemmas, pub.abstract);
       }
       const packed =
-        ending === "m" ? pub.posEnglish.metaphorical : pub.posEnglish.literal;
+        ending === "m" ? pub.posEnglish.abstract : pub.posEnglish.concrete;
       if (morph.pos) add(all, packed[morph.pos]);
-      for (const lemma of Object.values(pub.posEnglish.literal)) add(all, lemma);
-      for (const lemma of Object.values(pub.posEnglish.metaphorical)) add(all, lemma);
+      for (const lemma of Object.values(pub.posEnglish.concrete)) add(all, lemma);
+      for (const lemma of Object.values(pub.posEnglish.abstract)) add(all, lemma);
     }
     const compound = tables.compounds.get(root);
     if (compound) {
-      add(all, compound.literal);
-      add(all, compound.metaphorical);
-      add(hostLemmas, compound.literal);
-      add(hostLemmas, compound.metaphorical);
+      add(all, compound.concrete);
+      add(all, compound.abstract);
+      add(hostLemmas, compound.concrete);
+      add(hostLemmas, compound.abstract);
     }
   }
 

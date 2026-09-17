@@ -13,7 +13,7 @@ import {
   parsePublishedCsv,
   searchLexicon,
   splitPosPrefixedQuery,
-  tokenizeLiteral,
+  tokenizeConcrete,
   validateOverlayPublishedHosts,
 } from "./lexicon-search.js";
 
@@ -21,9 +21,9 @@ const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
 const publishedPath = join(rootDir, "data", "lexicon-published.csv");
 const overlayPath = join(rootDir, "data", "lexicon-overlays.csv");
 
-describe("tokenizeLiteral", () => {
+describe("tokenizeConcrete", () => {
   it("expands hyphenated literals into searchable tokens", () => {
-    const tokens = tokenizeLiteral("nervous-laugh");
+    const tokens = tokenizeConcrete("nervous-laugh");
     assert.match(tokens, /nervous/);
     assert.match(tokens, /laugh/);
     assert.match(tokens, /nervous-laugh/);
@@ -47,23 +47,23 @@ describe("splitPosPrefixedQuery", () => {
 describe("parseEnglishByPos", () => {
   it("treats bare keys as literal and m. as metaphor-only", () => {
     const map = parseEnglishByPos("v:smell; m.v:intuit", {
-      literal: "nose",
-      metaphorical: "intuition",
+      concrete: "nose",
+      abstract: "intuition",
     });
-    assert.equal(map.literal.v, "smell");
-    assert.equal(map.metaphorical.v, "intuit");
-    assert.equal(map.literal.h, undefined);
+    assert.equal(map.concrete.v, "smell");
+    assert.equal(map.abstract.v, "intuit");
+    assert.equal(map.concrete.h, undefined);
   });
 
   it("rejects packing that copies the sense lemma", () => {
-    assert.throws(() => parseEnglishByPos("v:eye", { literal: "eye", metaphorical: "perception" }));
+    assert.throws(() => parseEnglishByPos("v:eye", { concrete: "eye", abstract: "perception" }));
     assert.throws(() =>
-      parseEnglishByPos("m.v:perception", { literal: "eye", metaphorical: "perception" }),
+      parseEnglishByPos("m.v:perception", { concrete: "eye", abstract: "perception" }),
     );
   });
 
-  it("rejects m. when there is no metaphorical sense", () => {
-    assert.throws(() => parseEnglishByPos("m.v:intuit", { literal: "hand" }));
+  it("rejects m. when there is no abstract sense", () => {
+    assert.throws(() => parseEnglishByPos("m.v:intuit", { concrete: "hand" }));
   });
 });
 
@@ -111,20 +111,20 @@ describe("searchLexicon", () => {
 
   it('finds "laugh" via literal and hyphen tokenization', () => {
     const results = searchLexicon(index, rows, "laugh", { limit: 50, overlays, overlayIndex });
-    const literals = results.map((r) => r.literal);
+    const literals = results.map((r) => r.concrete);
     assert.ok(literals.includes("laugh"));
     assert.ok(literals.includes("nervous-laugh"));
   });
 
-  it('finds metaphorical "happy" on smile', () => {
+  it('finds abstract "happy" on smile', () => {
     const results = searchLexicon(index, rows, "happy", { limit: 20, overlays, overlayIndex });
-    const hit = results.find((r) => r.literal === "smile");
+    const hit = results.find((r) => r.concrete === "smile");
     assert.ok(hit, "expected smile among happy results");
-    assert.ok(hit.matchFields.includes("metaphorical"));
+    assert.ok(hit.matchFields.includes("abstract"));
   });
 
   it("finds a published row by its clarity root", () => {
-    const smile = rows.find((r) => r.literal === "smile");
+    const smile = rows.find((r) => r.concrete === "smile");
     assert.ok(smile);
     const results = searchLexicon(index, rows, smile.clarity, { limit: 10, overlays, overlayIndex });
     assert.ok(results.some((r) => r.clarity === smile.clarity));
@@ -134,7 +134,7 @@ describe("searchLexicon", () => {
   });
 
   it("finds live evidential overlay on the attest row", () => {
-    const attest = rows.find((r) => r.literal === "attest");
+    const attest = rows.find((r) => r.concrete === "attest");
     assert.ok(attest);
     const live = overlays.find((row) => /live evidential/i.test(row.definition) && row.pos === "h");
     assert.ok(live);
@@ -145,7 +145,7 @@ describe("searchLexicon", () => {
   });
 
   it("finds evidential sense_form and attaches overlays to fishing row", () => {
-    const fishing = rows.find((r) => r.literal === "fishing");
+    const fishing = rows.find((r) => r.concrete === "fishing");
     assert.ok(fishing);
     const witnessed = overlays.find(
       (row) => /witnessed evidential/i.test(row.definition) && row.pos === "h",
@@ -158,7 +158,7 @@ describe("searchLexicon", () => {
   });
 
   it("attaches benchmark overlays to published roots", () => {
-    const yin = rows.findIndex((r) => r.literal === "yin-yang");
+    const yin = rows.findIndex((r) => r.concrete === "yin-yang");
     assert.ok(yin >= 0);
     const rowOverlays = attached.get(yin) ?? [];
     assert.ok(rowOverlays.some((o) => o.kind === "benchmark" && o.pos === "z"));
@@ -171,7 +171,7 @@ describe("searchLexicon", () => {
     );
     assert.ok(hit, "expected overlay-only an+v for van query");
     assert.equal(hit.clarity, "an");
-    assert.match(hit.literal, /includes/i);
+    assert.match(hit.concrete, /includes/i);
     assert.ok(hit.mnemonic.length > 0);
   });
 
@@ -189,7 +189,7 @@ describe("searchLexicon", () => {
   });
 
   it("finds evidential via spelled overlay word", () => {
-    const fishing = rows.find((r) => r.literal === "fishing");
+    const fishing = rows.find((r) => r.concrete === "fishing");
     assert.ok(fishing);
     const witnessed = overlays.find(
       (row) => /witnessed evidential/i.test(row.definition) && row.pos === "h",
@@ -209,17 +209,17 @@ describe("searchLexicon", () => {
 
   it("finds eye via packed verb English see", () => {
     const results = searchLexicon(index, rows, "see", { limit: 20, overlays, overlayIndex });
-    const hit = results.find((r) => r.literal === "eye");
+    const hit = results.find((r) => r.concrete === "eye");
     assert.ok(hit, "expected eye among see results");
     assert.ok(hit.matchFields.includes("english_by_pos"));
-    assert.equal(hit.posEnglish.literal.v, "see");
+    assert.equal(hit.posEnglish.concrete.v, "see");
   });
 
   it("finds nose metaphor packing intuit without treating it as literal see", () => {
     const results = searchLexicon(index, rows, "intuit", { limit: 20, overlays, overlayIndex });
-    const hit = results.find((r) => r.literal === "nose");
+    const hit = results.find((r) => r.concrete === "nose");
     assert.ok(hit, "expected nose among intuit results");
-    assert.equal(hit.posEnglish.metaphorical.v, "intuit");
-    assert.equal(hit.posEnglish.literal.v, "smell");
+    assert.equal(hit.posEnglish.abstract.v, "intuit");
+    assert.equal(hit.posEnglish.concrete.v, "smell");
   });
 });

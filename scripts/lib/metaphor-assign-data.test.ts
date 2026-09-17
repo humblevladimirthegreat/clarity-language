@@ -14,13 +14,13 @@ import {
   type StagingFile,
 } from "./metaphor-assign-data.js";
 
-function row(emoji: string, literal: string, metaphorical = ""): PublishedRow {
+function row(emoji: string, literal: string, abstract = ""): PublishedRow {
   return {
     emoji,
     literal,
     clarity: "xxx",
-    metaphorical,
-    mnemonic: metaphorical ? "cue" : "REVIEW",
+    abstract,
+    mnemonic: abstract ? "cue" : "REVIEW",
     group: "G",
     subgroup: "sub",
   };

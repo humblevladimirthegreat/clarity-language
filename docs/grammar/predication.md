@@ -19,7 +19,7 @@ You already write a property on `/ɡ/` after the noun (*a blue dog*). When you s
 
 The same string is also the noun plus its adjective: `zazawan gomonam` is both the full sentence *Azawan is challenging* and the phrase *challenging Azawan*.
 
-A nationality or tradition uses the published metaphor on `/ɡ/` (**-m**), not a proper **-n**:
+A nationality or tradition uses the published **abstract** column on `/ɡ/` (**-m**), not a proper **-n**. That is a **demonym exception**: the people/quality is still **-m** even though it is not unobservable the way *grace* is.
 
 > `zazawan gajabam.`
 >

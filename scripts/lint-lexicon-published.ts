@@ -1,5 +1,5 @@
 /**
- * Validate data/lexicon-published.csv literal vs metaphorical sense separation.
+ * Validate data/lexicon-published.csv literal vs abstract sense separation.
  *
  * Run: npm run lint:lexicon
  *      npm run lint:lexicon -- --json
@@ -41,12 +41,12 @@ function main(): void {
   if (json) {
     console.log(JSON.stringify({ ok: errors.length === 0, count: rows.length, errors }, null, 2));
   } else if (errors.length === 0) {
-    console.log(`OK: ${rows.length} published lexicon row(s); literal and metaphorical senses differ`);
+    console.log(`OK: ${rows.length} published lexicon row(s); concrete and abstract senses differ`);
   } else {
-    console.error(`lexicon-published.csv: ${errors.length} literal/metaphor collision(s)`);
+    console.error(`lexicon-published.csv: ${errors.length} concrete/abstract collision(s)`);
     for (const err of errors) {
       console.error(
-        `  row ${err.row} ${err.emoji} literal=${err.literal} metaphorical=${err.metaphorical}: ${err.reason}`,
+        `  row ${err.row} ${err.emoji} concrete=${err.literal} abstract=${err.abstract}: ${err.reason}`,
       );
     }
   }

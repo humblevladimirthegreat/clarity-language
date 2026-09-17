@@ -60,10 +60,10 @@ describe("classify", () => {
   });
 
   it("published ordinary on literal fishing manner", () => {
-    const fishing = [...tables.published.values()].find((r) => r.literal === "fishing");
+    const fishing = [...tables.published.values()].find((r) => r.concrete === "fishing");
     assert.ok(fishing);
     const word = expectReading(`h${fishing.clarity}l`, "ordinary");
-    assert.ok(word.rootGloss?.literal);
+    assert.ok(word.rootGloss?.concrete);
     assert.equal(word.overlay, undefined);
   });
 
@@ -84,7 +84,7 @@ describe("classify", () => {
   it("fence join marker is a join reading with series gloss", () => {
     const word = expectReading("zam", "join");
     assert.equal(word.family.kind, "joinMarker");
-    assert.equal(word.rootGloss?.literal, "and (open)");
+    assert.equal(word.rootGloss?.concrete, "and (open)");
   });
 
   it("darl is a stand-in, not a fence join", () => {
@@ -232,29 +232,29 @@ describe("classify", () => {
     const word = expectReading("zohohulabedel", "ordinary");
     assert.equal(word.family.kind, "content");
     assert.equal(word.lexicalCompound, true);
-    assert.equal(word.rootGloss?.literal, "bedroom");
-    assert.equal(word.rootGloss?.metaphorical, "sanctum");
+    assert.equal(word.rootGloss?.concrete, "bedroom");
+    assert.equal(word.rootGloss?.abstract, "sanctum");
   });
 
   it("lexical compound beats accidental published substring match", () => {
     const word = expectReading("zeberelonogon", "ordinary");
     assert.equal(word.lexicalCompound, true);
-    assert.equal(word.rootGloss?.literal, "friend");
+    assert.equal(word.rootGloss?.concrete, "friend");
   });
 
   it("ordinary compound glosses both roots", () => {
     const sushi = tables.published.get(
-      [...tables.published.values()].find((r) => r.literal === "sushi")?.clarity ?? "",
+      [...tables.published.values()].find((r) => r.concrete === "sushi")?.clarity ?? "",
     );
     const coffee = tables.published.get(
-      [...tables.published.values()].find((r) => r.literal === "coffee")?.clarity ?? "",
+      [...tables.published.values()].find((r) => r.concrete === "coffee")?.clarity ?? "",
     );
     assert.ok(sushi && coffee);
     const word = expectReading(`z${sushi.clarity}x${coffee.clarity}n`, "ordinary");
     assert.equal(word.family.kind, "x");
     if (word.family.kind !== "x") return;
     assert.equal(word.family.xFamily, "compound");
-    assert.equal(word.rootGloss?.literal, "sushi · coffee");
+    assert.equal(word.rootGloss?.concrete, "sushi · coffee");
   });
 
   it("ordinary hook without overlay", () => {

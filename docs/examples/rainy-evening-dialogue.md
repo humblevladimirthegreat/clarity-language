@@ -138,9 +138,9 @@ loose: *When?*
 
 **A:** `hunugul. hexal zudum xuxul.`
 
-gloss: `h-night` · `h-aside-x-multi` · `z-fatigue` · `x-span-close`
+gloss: `h-night` · `h-aside-x-multi` · `z-burnout` · `x-span-close`
 
-strict: *At night. (aside: fatigue.)*
+strict: *At night. (aside: burnout.)*
 
 loose: *At night. (We're tired.)*
 
@@ -258,7 +258,7 @@ loose: *Usually, when it rains, nobody walks.*
 
 **A:** `xezazal zuzur vezehel darl zubur guzumum.`
 
-gloss: `x-therefore` · `z-←Uzuzuxogoven` · `v-dialogue` · `d-that-clause` · `z-←Ubunexunowen` · `g-happy`
+gloss: `x-therefore` · `z-←Uzuzuxogoven` · `v-tell` · `d-that-clause` · `z-←Ubunexunowen` · `g-happy`
 
 strict: *Therefore I (A) say that that one (B) is happy.*
 
@@ -292,18 +292,18 @@ loose: *Ha — we're home.*
 | `ogogo` | cook / nourishment |
 | `awala` | walking |
 | `anunu` | rain |
-| `ohohu` | house; *home* (metaphorical) |
+| `ohohu` | house; *home* (abstract) |
 | `unugu` | night |
-| `udu` | tired; *fatigue* (metaphorical) |
-| `uzumu` | smile; *happy* (metaphorical) |
+| `udu` | tired; *burnout* (abstract) |
+| `uzumu` | smile; *happy* (abstract) |
 | `abogo` | book |
-| `abaru` | playground; *play* |
+| `abaru` | playground; *recreation* |
 | `adana` | standing / presence |
-| `ezehe` | speech; *dialogue* (metaphorical) |
+| `ezehe` | speech; *discourse* (abstract) |
 | `enenu` | someone (generic person) |
 | `aha` | interlocutors (inclusive *we*) |
 | `darl` | that-clause |
-| `alalu` | laugh; *amusement* (metaphorical) |
+| `alalu` | laugh; *amusement* (abstract) |
 | `uvuvu` / `erara` / `odoho` | fishing / ear / thought; *witnessed* / *told* / *MAY* (overlays) |
 | `olozo` | toolbox; *competence* (values) |
 | `onugo` | construction; *blockage* / discourse *but* |

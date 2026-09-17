@@ -6,29 +6,20 @@ import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { parseCsv } from "../src/csv.js";
+import type { PublishedRow } from "../src/lexicon-search.js";
+import { parsePublishedCsv } from "../src/lexicon-search.js";
 import {
   englishCitationForms,
   validatePublishedSenseSeparation,
   type PublishedSenseError,
 } from "../src/lexicon-published-lint.js";
 import { normalizeEnglish } from "../src/lint/word-bank-docs.js";
-import type { PublishedRow } from "../src/lexicon-search.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
 const publishedPath = join(rootDir, "data", "lexicon-published.csv");
 
 function loadRows(): PublishedRow[] {
-  const { rows } = parseCsv(readFileSync(publishedPath, "utf8"));
-  return rows.map((row) => ({
-    emoji: row.emoji ?? "",
-    literal: row.literal ?? "",
-    clarity: row.clarity ?? "",
-    metaphorical: row.metaphorical ?? "",
-    mnemonic: row.mnemonic ?? "",
-    englishByPos: row.english_by_pos ?? "",
-    posEnglish: { literal: {}, metaphorical: {} },
-  }));
+  return parsePublishedCsv(readFileSync(publishedPath, "utf8"));
 }
 
 function isFlagEmoji(emoji: string): boolean {
@@ -63,7 +54,7 @@ function collisionBucket(error: PublishedSenseError): string {
   }
 
   const literal = error.literal;
-  const metaphorical = error.metaphorical;
+  const metaphorical = error.abstract;
   const litNorm = normalizeEnglish(literal);
   const metNorm = normalizeEnglish(metaphorical);
 
@@ -116,9 +107,9 @@ function main(): void {
     if (!items?.length) continue;
     console.log(`## ${bucket} (${items.length})`);
     for (const e of items) {
-      const shared = sharedCitationForms(e.literal, e.metaphorical);
+      const shared = sharedCitationForms(e.literal, e.abstract);
       console.log(
-        `  row ${e.row} ${e.emoji}  literal=${e.literal}  metaphorical=${e.metaphorical}`,
+        `  row ${e.row} ${e.emoji}  concrete=${e.literal}  abstract=${e.abstract}`,
       );
       if (shared.length) {
         console.log(`    shared citation forms: ${shared.join(", ")}`);

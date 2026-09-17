@@ -258,7 +258,7 @@ Learner tables use these headers (omit a column when every cell would be empty o
 | **Agalan** | yes | The spelling (word, letter, or pattern). A **content word** is a [citation](#citation-in-tables) whenever **Same root as** is empty — not a role-marked copy of that citation, and not a bare stem. Inflected **Agalan** (role letter already on) only when **Same root as** is filled and the English needs that letter (`vejel` *see*). |
 | **Use** | yes | What the form **does** in the clause (subject, command, continue). Not a pun. |
 | **English** | yes | English the learner may **say or produce** (sense or free English). Not a pun, and not an ending tag (`(**-m**)`). |
-| **Same root as** | no | The everyday kind of that root as a [citation](../grammar/reference-suffix.md) (**-l**): `` `urugul` *brick* ``. Fill it only when this row’s **English** is not that citation’s lemma: a published metaphor, a closed overlay, or packed role English that **differs** from the citation (`` `ejel` *eye* `` beside `vejel` *see*). If English already is the citation lemma (*climb*), leave **Same root as** empty and put the citation in **Agalan** (`ugumul`, not `vugumul`). That licenses the picture in **Cue**. Omit the column when every row is a letter, vowel-series, punctuation, or other non-lexicon cue. Empty cells are fine in a mixed drill bank. |
+| **Same root as** | no | The everyday kind of that root as a [citation](../grammar/reference-suffix.md) (**-l**): `` `urugul` *brick* ``. Fill it only when this row’s **English** is not that citation’s lemma: a published abstract, a closed overlay, or packed role English that **differs** from the citation (`` `ejel` *eye* `` beside `vejel` *see*). If English already is the citation lemma (*climb*), leave **Same root as** empty and put the citation in **Agalan** (`ugumul`, not `vugumul`). That licenses the picture in **Cue**. Omit the column when every row is a letter, vowel-series, punctuation, or other non-lexicon cue. Empty cells are fine in a mixed drill bank. |
 | **Cue** | no | Recall only: **why** the token maps. Cover this column: the rest must still be the language. ([rubric](#cue-rubric)) |
 
 **Use** and **Cue** must not be the same string. If they would be (`add` / *add*), unpack **Use** (*hold / inventory*) and keep the slogan in **Cue**.
@@ -290,9 +290,9 @@ Letter / series: `{letter} ≈ {sound or series slogan} ({why that maps})`. `**d
 | Kind | What it is | Where it goes |
 |------|-----------|----------------|
 | Letter / series | Pun on the spelling (`**d** ≈ done to`, **`a`** *add*) plus why it maps | **Cue** only. Never **Use** or **English**. Linker is **`≈`** (“sounds like”), never `=` or `→`. |
-| Scene | Published emoji + literal that licenses **-m**, then why that scene evokes the sense | **English** = metaphorical sense (*happy*, *because*). **Same root as** = citation **-l** of that picture (`uzumul` *smile*). **Cue** = `emoji: why` (or `emoji *literal*: why` if the table has no **Same root as** column) |
+| Scene | Published emoji + concrete that licenses **-m**, then why that scene evokes the sense | **English** = abstract sense (*happy*, *because*). **Same root as** = citation **-l** of that picture (`uzumul` *smile*). **Cue** = `emoji: why` (or `emoji *literal*: why` if the table has no **Same root as** column) |
 
-A lexicon path is a real **-l** / **-m** choice; the *literal* English is still not what drills ask for. Write `*happy*` in **English** (no `(**-m**)` tag — the citation ending already marks metaphor), `` `uzumul` *smile* `` in **Same root as**, and `😊: the face of *happy*` (or `from *smile*: the face of *happy*` when the table has no **Same root as** column) in **Cue** — never `smile → *happy*` as the only English. The same **Same root as** / **Cue** split applies when **English** is a role-marked use of the literal (`*see*` / `vejel` / `` `ejel` *eye* `` / `👁️: seeing is what an eye does`).
+A lexicon path is a real **-l** / **-m** choice; the *concrete* English is still not what drills ask for. Write `*happy*` in **English** (no `(**-m**)` tag — the citation ending already marks abstract), `` `uzumul` *smile* `` in **Same root as**, and `😊: the face of *happy*` (or `from *smile*: the face of *happy*` when the table has no **Same root as** column) in **Cue** — never `smile → *happy*` as the only English. The same **Same root as** / **Cue** split applies when **English** is a role-marked use of the concrete (`*see*` / `vejel` / `` `ejel` *eye* `` / `👁️: seeing is what an eye does`).
 
 Inline after the rule sentence: `(cue: …)`. Worked examples stay Agalan / morph / quoted free English ([example block](glosses.md#example-block)) — no cue line. Translation-practice spoilers add a visible morph line under the same rules ([translation-exercises.md](translation-exercises.md#principles)). The root bank may add **Same root as** and **Cue** beside **English · Agalan**.
 
@@ -303,7 +303,7 @@ A **scene** cue (`emoji *literal*: why`) is for remembering a published picture.
 
 **State it** on a **closed overlay**: a fixed special reading under one part of speech (MAY, SAME, CAUSE, ABIL, plan / DECISION, evidentials, NOTIONAL, emotion ACT / LOCUS, clause-pole **`adoro`**, locatives, means, simile *like*, exchange *for*, proxy *on behalf of*, of-relations, special pronouns, universality moods, and the same class). The learner needs the scene to remember why *this* published root hosts that job. Put `(cue: …)` on the **rule sentence** (job, shape, consequence first), or in the inventory **Cue** column with **Same root as** naming the **-l** citation. One line that the same spelling is still ordinary content under other letters is fine.
 
-**Do not state it** when the example is ordinary **lexicon metaphor** (content **-m**): `welem` *size* / *very*, `hadazam` *hastily*. Do **not** add a following sentence of the form “**`adaza`** here is the published metaphor *haste*. (cue: 💨 *dash*: …).” The morph gloss and quoted English already give the sense. **-m** as a system is taught on [reference-suffix.md](../grammar/reference-suffix.md#metaphor-m); that page (and drill **Cue** cells) may show `from *swan*: the glide of *grace*` because the lesson *is* the metaphor ending.
+**Do not state it** when the example is ordinary **lexicon abstract** (content **-m**): `welem` *size* / *very*, `hadazam` *hastily*. Do **not** add a following sentence of the form “**`adaza`** here is the published abstract *haste*. (cue: 💨 *dash*: …).” The morph gloss and quoted English already give the sense. **-m** as a system is taught on [reference-suffix.md](../grammar/reference-suffix.md#abstract-m); that page (and drill **Cue** cells) may show `from *swan*: the glide of *grace*` because the lesson *is* the abstract ending.
 
 | Do | Don’t |
 |----|--------|
@@ -311,7 +311,7 @@ A **scene** cue (`emoji *literal*: why`) is for remembering a published picture.
 | Overlay table **Cue** for SAME, ABIL, CAUSE, locatives, means, simile *like*, exchange *for*, proxy *on behalf of*, of-relations, … | A post-example etymology footnote on ordinary *haste* / *size* |
 | Cue last on the **rule**, before the first example | Cue as the paragraph *after* the worked examples |
 
-Letter / series / ending cues (`**a** ≈ add`, **m** ≈ metaphor) are the other kind; they follow [two kinds of cue](#cue-rubric) and are not this overlay-vs-lexicon split.
+Letter / series / ending cues (`**a** ≈ add`, **m** ≈ abstract) are the other kind; they follow [two kinds of cue](#cue-rubric) and are not this overlay-vs-lexicon split.
 
 Do not invent a second cue system beside metaphor, vowels, and endings when those already explain the form. **Do not use the cue as the definition:** teach **Use** and the Agalan shape first ([explain before you slogan](#explain-before-you-slogan)).
 
@@ -321,7 +321,7 @@ Usual sources (prefer one; reuse the language’s own systems):
 
 | Source | When |
 |--------|------|
-| **Metaphorical / lexicon sense** | Closed roots and overlays (**`SAME`**, **`MAY`**, ➡️ *east*: the sun’s path, so the talk moves on) |
+| **Concrete / abstract (lexicon)** | Closed roots and overlays (**`SAME`**, **`MAY`**, ➡️ *east*: the sun’s path, so the talk moves on) |
 | **Vowel series** | Join / speech act / polar stacks that share letter jobs |
 | **Ending letters** | **-l** / **-m** / **-n** / **-r** (and stance endings) when the ending *is* the lesson |
 

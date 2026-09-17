@@ -1044,7 +1044,7 @@ function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): st
   if (word.overlay) return overlayLabel(word.overlay);
   if (word.lexicalCompound) {
     return hyphenEnglish(
-      word.rootGloss?.literal || word.rootGloss?.metaphorical || roots[0] || "compound",
+      word.rootGloss?.concrete || word.rootGloss?.abstract || roots[0] || "compound",
     );
   }
   if (word.pos === "x" && roots.length === 1 && LINKER_ENGLISH[roots[0]!]) {
@@ -1079,7 +1079,7 @@ function packedRoleLemma(
   pos: Pos | undefined,
 ): string | undefined {
   if (!pos) return undefined;
-  const bank = ending === "m" ? row.posEnglish.metaphorical : row.posEnglish.literal;
+  const bank = ending === "m" ? row.posEnglish.abstract : row.posEnglish.concrete;
   return bank[pos];
 }
 
@@ -1097,7 +1097,7 @@ function rootSense(
 ): string {
   if (opts.citationEtymology) {
     const row = tables.published.get(root);
-    return hyphenEnglish(row?.metaphorical || row?.literal || root);
+    return hyphenEnglish(row?.abstract || row?.concrete || root);
   }
 
   if (opts.need && tables.needGloss.has(root)) return tables.needGloss.get(root)!;
@@ -1106,8 +1106,8 @@ function rootSense(
   if (compound) {
     const lemma =
       ending === "m"
-        ? compound.metaphorical || compound.literal
-        : compound.literal || compound.metaphorical;
+        ? compound.abstract || compound.concrete
+        : compound.concrete || compound.abstract;
     if (lemma) return hyphenEnglish(lemma);
   }
 
@@ -1128,9 +1128,9 @@ function rootSense(
   const row = tables.published.get(root);
   const packed = row ? packedRoleLemma(row, ending, opts.pos) : undefined;
   if (packed) return hyphenEnglish(packed);
-  if (ending === "m") return hyphenEnglish(row?.metaphorical || row?.literal || root);
-  if (row?.literal) return hyphenEnglish(row.literal);
-  if (row?.metaphorical) return hyphenEnglish(row.metaphorical);
+  if (ending === "m") return hyphenEnglish(row?.abstract || row?.concrete || root);
+  if (row?.concrete) return hyphenEnglish(row.concrete);
+  if (row?.abstract) return hyphenEnglish(row.abstract);
   return root;
 }
 

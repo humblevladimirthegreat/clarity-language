@@ -51,7 +51,7 @@ English *whether* is that same object slot, with vowel **`o`**: **`dorl`**. The 
 >
 > "Azawan sees whether Ululon walks."
 
-*Because* / *if* and similar use `/h/` + `/b/` **`barl`**. Keep that pair together, **last in the main sentence** (**`barl`** last). The metaphorical ending on the `/h/` word is always **-m**.
+*Because* / *if* and similar use `/h/` + `/b/` **`barl`**. Keep that pair together, **last in the main sentence** (**`barl`** last). The abstract ending on the `/h/` word is always **-m**.
 
 > `zazawan vuzunul hurugum barl zululon vawalal.`
 >

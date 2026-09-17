@@ -6,7 +6,7 @@ import { describe, it } from "node:test";
 
 import {
   englishCitationForms,
-  literalMetaphorCollide,
+  concreteAbstractCollide,
   validatePublishedSenseSeparation,
 } from "./lexicon-published-lint.js";
 import { parsePublishedCsv } from "./lexicon-search.js";
@@ -29,31 +29,31 @@ describe("englishCitationForms", () => {
   });
 });
 
-describe("literalMetaphorCollide", () => {
+describe("concreteAbstractCollide", () => {
   it("allows distinct literal and metaphor", () => {
-    assert.equal(literalMetaphorCollide("glasses", "clarity"), null);
-    assert.equal(literalMetaphorCollide("smile", "happy"), null);
-    assert.equal(literalMetaphorCollide("playground", "play"), null);
+    assert.equal(concreteAbstractCollide("glasses", "clarity"), null);
+    assert.equal(concreteAbstractCollide("smile", "happy"), null);
+    assert.equal(concreteAbstractCollide("playground", "play"), null);
   });
 
   it("flags exact and related collisions", () => {
-    assert.deepEqual(literalMetaphorCollide("passion", "passion"), { kind: "exact" });
-    assert.deepEqual(literalMetaphorCollide("stressed", "stress"), { kind: "related" });
-    assert.equal(literalMetaphorCollide("credit-card", "credit"), null);
-    assert.equal(literalMetaphorCollide("south-africa", "south-african"), null);
+    assert.deepEqual(concreteAbstractCollide("passion", "passion"), { kind: "exact" });
+    assert.deepEqual(concreteAbstractCollide("stressed", "stress"), { kind: "related" });
+    assert.equal(concreteAbstractCollide("credit-card", "credit"), null);
+    assert.equal(concreteAbstractCollide("south-africa", "south-african"), null);
   });
 
-  it("ignores empty metaphorical", () => {
+  it("ignores empty abstract", () => {
     assert.equal(
       validatePublishedSenseSeparation([
         {
           emoji: "x",
-          literal: "passion",
+          concrete: "passion",
           clarity: "atest",
-          metaphorical: "",
+          abstract: "",
           mnemonic: "",
           englishByPos: "",
-          posEnglish: { literal: {}, metaphorical: {} },
+          posEnglish: { concrete: {}, abstract: {} },
         },
       ]).length,
       0,
@@ -65,6 +65,6 @@ describe("lexicon-published.csv sense separation", () => {
   it("has no literal/metaphor citation collisions", () => {
     const rows = parsePublishedCsv(readFileSync(publishedPath, "utf8"));
     const errors = validatePublishedSenseSeparation(rows);
-    assert.equal(errors.length, 0, errors.map((e) => `row ${e.row} ${e.literal}/${e.metaphorical}`).join("; "));
+    assert.equal(errors.length, 0, errors.map((e) => `row ${e.row} ${e.literal}/${e.abstract}`).join("; "));
   });
 });

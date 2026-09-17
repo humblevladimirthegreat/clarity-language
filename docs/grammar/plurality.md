@@ -26,7 +26,7 @@ To point back to that group (or to a prior person **and** their associates), add
 >
 > "They (that one and associates) sit."
 
-A first mention of a **kind as a group in this situation** uses **-lx** (literal) or **-mx** (metaphorical). Bare **-l** / **-m** still introduce; **-lx** / **-mx** introduce a **group**.
+A first mention of a **kind as a group in this situation** uses **-lx** (concrete) or **-mx** (abstract). Bare **-l** / **-m** still introduce; **-lx** / **-mx** introduce a **group**.
 
 > `zagadalx vajul.`
 >
@@ -44,8 +44,8 @@ A first mention of a **kind as a group in this situation** uses **-lx** (literal
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| **-lx** | indefinite associative group, literal | *some cats* (a set in this situation) |
-| **-mx** | indefinite associative group, metaphorical | same grouping on a **-m** root |
+| **-lx** | indefinite associative group, concrete | *some cats* (a set in this situation) |
+| **-mx** | indefinite associative group, abstract | same grouping on a **-m** root |
 | **-nx** | named / titled group | *Team Alpha*; *Azawan and associates* as a title |
 | **-rx** | resume prior referent and associates, or a prior group | *they* (that one and associates) |
 

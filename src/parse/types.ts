@@ -136,8 +136,8 @@ export type LexOverlay = {
 };
 
 export type RootGloss = {
-  literal?: string;
-  metaphorical?: string;
+  concrete?: string;
+  abstract?: string;
 };
 
 /**

@@ -20,7 +20,7 @@ English *a teacher* names who teaches as a kind, from the same idea as *teach*. 
 >
 > "A teacher runs."
 
-The last letter is the ordinary [reference ending](reference-suffix.md): **-l** takes the stem’s everyday sense, **-m** the published metaphor. `zaxedegel` is *a teacher*; `zaxuvugul` is *a fighter*; `zaxuvugum` is *a struggler*. Non-resume names the **lexical** role. You do not need a prior teaching or fight in the talk.
+The last letter is the ordinary [reference ending](reference-suffix.md): **-l** takes the stem’s everyday concrete sense, **-m** the published abstract. `zaxedegel` is *a teacher*; `zaxuvugul` is *a fighter*; `zaxuvugum` is *a struggler*. Non-resume names the **lexical** role. You do not need a prior teaching or fight in the talk.
 
 **Compare with:** *can teach* puts the stance vowel **right** of **`x`** ([ability](ability.md): `vedegexal`). A teacher puts the role vowel **left** of **`x`**.
 

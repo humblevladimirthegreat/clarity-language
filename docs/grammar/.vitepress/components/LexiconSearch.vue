@@ -45,8 +45,8 @@ function formatOverlays(row: LexiconSearchResult): string {
   return row.overlays.map((o) => `${o.senseForm}+${o.pos}: ${o.definition}`).join('; ')
 }
 
-function literalLabel(row: LexiconSearchResult): string {
-  if (row.literal) return row.literal
+function concreteLabel(row: LexiconSearchResult): string {
+  if (row.concrete) return row.concrete
   if (row.overlayOnly) return row.overlays[0]?.definition || '(overlay)'
   return '—'
 }
@@ -105,9 +105,9 @@ onUnmounted(() => {
         <thead>
           <tr>
             <th scope="col">Emoji</th>
-            <th scope="col">Literal</th>
+            <th scope="col">Concrete</th>
             <th scope="col">Agalan</th>
-            <th scope="col">Metaphorical</th>
+            <th scope="col">Abstract</th>
             <th scope="col">Role English</th>
             <th scope="col">Overlays</th>
             <th scope="col">Mnemonic</th>
@@ -117,14 +117,14 @@ onUnmounted(() => {
           <tr v-for="(row, i) in results" :key="`${row.clarity}-${i}`">
             <td class="emoji">{{ row.emoji || '—' }}</td>
             <td class="literal">
-              {{ literalLabel(row) }}
+              {{ concreteLabel(row) }}
               <span v-if="row.matchFields.length" class="match-fields">
                 matched: {{ row.matchFields.join(', ') }}
               </span>
             </td>
             <td class="clarity">{{ row.clarity }}</td>
             <td>
-              <span v-if="row.metaphorical">{{ row.metaphorical }}</span>
+              <span v-if="row.abstract">{{ row.abstract }}</span>
               <span v-else class="empty">—</span>
             </td>
             <td>

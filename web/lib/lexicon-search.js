@@ -1866,8 +1866,8 @@ var COMPOUND_HEADERS = [
   "left",
   "join",
   "right",
-  "literal",
-  "metaphorical",
+  "concrete",
+  "abstract",
   "mnemonic"
 ];
 function parseCompoundCsv(text) {
@@ -1881,8 +1881,8 @@ function parseCompoundCsv(text) {
     left: row.left ?? "",
     join: row.join ?? "",
     right: row.right ?? "",
-    literal: row.literal ?? "",
-    metaphorical: row.metaphorical ?? "",
+    concrete: row.concrete ?? "",
+    abstract: row.abstract ?? "",
     mnemonic: row.mnemonic ?? ""
   }));
 }
@@ -1898,6 +1898,8 @@ var OVERLAY_KINDS = [
   "join_act",
   "join_relation",
   "evidential",
+  "residue",
+  "former_climate",
   "may",
   "notional",
   "plan",
@@ -1911,7 +1913,12 @@ var OVERLAY_KINDS = [
   "identity",
   "benchmark",
   "locative",
-  "means"
+  "means",
+  "similative",
+  "of_relation",
+  "exchange",
+  "proxy",
+  "stimulus"
 ];
 var OVERLAY_KIND_SET = new Set(OVERLAY_KINDS);
 function isJoinOverlayKind(kind) {
@@ -1919,9 +1926,9 @@ function isJoinOverlayKind(kind) {
 }
 var PUBLISHED_HEADERS = [
   "emoji",
-  "literal",
+  "concrete",
   "clarity",
-  "metaphorical",
+  "abstract",
   "mnemonic",
   "english_by_pos"
 ];
@@ -1936,14 +1943,14 @@ var OVERLAY_HEADERS = [
 ];
 var POS_PREFIXES = /* @__PURE__ */ new Set(["z", "d", "b", "g", "v", "w", "h", "j", "x"]);
 var SEARCH_FIELDS = [
-  "literal",
-  "literalTokens",
+  "concrete",
+  "concreteTokens",
   "clarity",
-  "metaphorical",
+  "abstract",
   "mnemonic",
   "posEnglishLemmas"
 ];
-var COMPOUND_SEARCH_FIELDS = ["literal", "literalTokens", "stem", "metaphorical", "mnemonic"];
+var COMPOUND_SEARCH_FIELDS = ["concrete", "concreteTokens", "stem", "abstract", "mnemonic"];
 var OVERLAY_SEARCH_FIELDS = [
   "senseForm",
   "root",
@@ -1954,18 +1961,18 @@ var OVERLAY_SEARCH_FIELDS = [
   "mnemonic"
 ];
 var FIELD_BOOSTS = {
-  literal: 2,
-  metaphorical: 2,
+  concrete: 2,
+  abstract: 2,
   clarity: 1.5,
-  literalTokens: 1.5,
+  concreteTokens: 1.5,
   posEnglishLemmas: 1.8,
   mnemonic: 1
 };
 var COMPOUND_FIELD_BOOSTS = {
-  literal: 2,
-  metaphorical: 2,
+  concrete: 2,
+  abstract: 2,
   stem: 1.5,
-  literalTokens: 1.5,
+  concreteTokens: 1.5,
   mnemonic: 1
 };
 var OVERLAY_FIELD_BOOSTS = {
@@ -1994,10 +2001,10 @@ var OVERLAY_SEARCH_OPTIONS = {
 };
 var EMOJI_QUERY_RE = /\p{Extended_Pictographic}/u;
 var MATCH_FIELD_LABELS = {
-  literal: "literal",
-  literalTokens: "literal",
+  concrete: "concrete",
+  concreteTokens: "concrete",
   clarity: "clarity",
-  metaphorical: "metaphorical",
+  abstract: "abstract",
   mnemonic: "mnemonic",
   posEnglishLemmas: "english_by_pos",
   englishByPos: "english_by_pos",
@@ -2011,14 +2018,14 @@ var MATCH_FIELD_LABELS = {
   definition: "definition"
 };
 function emptyPosEnglish() {
-  return { literal: {}, metaphorical: {} };
+  return { concrete: {}, abstract: {} };
 }
 function posEnglishLemmaList(map) {
   const lemmas = [];
   for (const letter of ROLE_LETTERS) {
-    const lit = map.literal[letter];
+    const lit = map.concrete[letter];
     if (lit) lemmas.push(lit);
-    const met = map.metaphorical[letter];
+    const met = map.abstract[letter];
     if (met) lemmas.push(met);
   }
   return lemmas;
@@ -2026,11 +2033,11 @@ function posEnglishLemmaList(map) {
 function formatEnglishByPos(map) {
   const pieces = [];
   for (const letter of ROLE_LETTERS) {
-    const lit = map.literal[letter];
+    const lit = map.concrete[letter];
     if (lit) pieces.push(`${letter}:${lit}`);
   }
   for (const letter of ROLE_LETTERS) {
-    const met = map.metaphorical[letter];
+    const met = map.abstract[letter];
     if (met) pieces.push(`m.${letter}:${met}`);
   }
   return pieces.join("; ");
@@ -2040,8 +2047,8 @@ function parseEnglishByPos(raw, opts) {
   const map = emptyPosEnglish();
   if (!packed) return map;
   const label = opts?.label ? `${opts.label}: ` : "";
-  const literalSense = (opts?.literal ?? "").trim().toLowerCase();
-  const metaphoricalSense = (opts?.metaphorical ?? "").trim().toLowerCase();
+  const concreteSense = (opts?.concrete ?? "").trim().toLowerCase();
+  const abstractSense = (opts?.abstract ?? "").trim().toLowerCase();
   const seenLit = /* @__PURE__ */ new Set();
   const seenMet = /* @__PURE__ */ new Set();
   for (const chunk of packed.split(";")) {
@@ -2062,21 +2069,21 @@ function parseEnglishByPos(raw, opts) {
       throw new Error(`${label}bad english_by_pos piece "${piece}"`);
     }
     if (metaphor) {
-      if (!metaphoricalSense) {
-        throw new Error(`${label}m.${pos} packing needs a metaphorical sense`);
+      if (!abstractSense) {
+        throw new Error(`${label}m.${pos} packing needs an abstract sense`);
       }
-      if (lemma === metaphoricalSense) {
+      if (lemma === abstractSense) {
         throw new Error(
-          `${label}m.${pos}:${lemma} matches the metaphorical field; omit transparent conversions`
+          `${label}m.${pos}:${lemma} matches the abstract field; omit transparent conversions`
         );
       }
       if (seenMet.has(pos)) {
         throw new Error(`${label}duplicate m.${pos} in english_by_pos`);
       }
       seenMet.add(pos);
-      map.metaphorical[pos] = lemma;
+      map.abstract[pos] = lemma;
     } else {
-      if (literalSense && lemma === literalSense) {
+      if (concreteSense && lemma === concreteSense) {
         throw new Error(
           `${label}${pos}:${lemma} matches the literal field; omit transparent conversions`
         );
@@ -2085,7 +2092,7 @@ function parseEnglishByPos(raw, opts) {
         throw new Error(`${label}duplicate ${pos} in english_by_pos`);
       }
       seenLit.add(pos);
-      map.literal[pos] = lemma;
+      map.concrete[pos] = lemma;
     }
   }
   return map;
@@ -2096,18 +2103,18 @@ function parsePublishedCsv(text) {
     throw new Error(`Unexpected CSV header: ${headers.join(",")}`);
   }
   return rows.map((row, index) => {
-    const literal = row.literal ?? "";
-    const metaphorical = row.metaphorical ?? "";
+    const concrete = row.concrete ?? "";
+    const abstract = row.abstract ?? "";
     const englishByPos = (row.english_by_pos ?? "").trim();
     const label = `lexicon-published.csv row ${index + 2}`;
     return {
       emoji: row.emoji ?? "",
-      literal,
+      concrete,
       clarity: row.clarity ?? "",
-      metaphorical,
+      abstract,
       mnemonic: row.mnemonic ?? "",
       englishByPos,
-      posEnglish: parseEnglishByPos(englishByPos, { literal, metaphorical, label })
+      posEnglish: parseEnglishByPos(englishByPos, { concrete, abstract, label })
     };
   });
 }
@@ -2183,7 +2190,7 @@ function validateOverlayPublishedHosts(overlays, published) {
         senseForm: overlay.senseForm,
         pos: overlay.pos,
         emoji,
-        reason: `overlay ${overlay.senseForm} does not start with published root ${root} (${emoji} ${host.literal})`
+        reason: `overlay ${overlay.senseForm} does not start with published root ${root} (${emoji} ${host.concrete})`
       });
     }
   }
@@ -2244,7 +2251,7 @@ function splitPosPrefixedQuery(query) {
   }
   return { pos: null, stem: q };
 }
-function tokenizeLiteral(literal) {
+function tokenizeConcrete(literal) {
   const base = literal.trim().toLowerCase();
   if (!base) return "";
   const parts = base.split("-").filter(Boolean);
@@ -2279,7 +2286,7 @@ function attachOverlays(rows, overlays) {
     }
     const keys = [
       [`${row.clarity}\0l`, "l"],
-      ...row.metaphorical ? [[`${row.clarity}\0m`, "m"]] : []
+      ...row.abstract ? [[`${row.clarity}\0m`, "m"]] : []
     ];
     for (const [key] of keys) {
       for (const overlay of byRootEnding.get(key) ?? []) {
@@ -2300,14 +2307,14 @@ function createCompoundIndex(rows) {
     id,
     emoji: row.emoji,
     stem: row.stem.toLowerCase(),
-    literal: row.literal.toLowerCase(),
-    literalTokens: tokenizeLiteral(row.literal),
-    metaphorical: row.metaphorical.toLowerCase(),
+    concrete: row.concrete.toLowerCase(),
+    concreteTokens: tokenizeConcrete(row.concrete),
+    abstract: row.abstract.toLowerCase(),
     mnemonic: row.mnemonic.toLowerCase()
   }));
   const index = new MiniSearch({
     fields: [...COMPOUND_SEARCH_FIELDS],
-    storeFields: ["emoji", "stem", "literal", "metaphorical", "mnemonic"],
+    storeFields: ["emoji", "stem", "concrete", "abstract", "mnemonic"],
     searchOptions: COMPOUND_SEARCH_OPTIONS
   });
   index.addAll(docs);
@@ -2317,10 +2324,10 @@ function createLexiconIndex(rows) {
   const docs = rows.map((row, id) => ({
     id,
     emoji: row.emoji,
-    literal: row.literal.toLowerCase(),
-    literalTokens: tokenizeLiteral(row.literal),
+    concrete: row.concrete.toLowerCase(),
+    concreteTokens: tokenizeConcrete(row.concrete),
     clarity: row.clarity.toLowerCase(),
-    metaphorical: row.metaphorical.toLowerCase(),
+    abstract: row.abstract.toLowerCase(),
     mnemonic: row.mnemonic.toLowerCase(),
     englishByPos: row.englishByPos,
     posEnglish: row.posEnglish,
@@ -2328,7 +2335,7 @@ function createLexiconIndex(rows) {
   }));
   const index = new MiniSearch({
     fields: [...SEARCH_FIELDS],
-    storeFields: ["emoji", "literal", "clarity", "metaphorical", "mnemonic", "englishByPos"],
+    storeFields: ["emoji", "concrete", "clarity", "abstract", "mnemonic", "englishByPos"],
     searchOptions: SEARCH_OPTIONS
   });
   index.addAll(docs);
@@ -2379,17 +2386,17 @@ function exactMatchBoost(row, query) {
   const q = query.toLowerCase();
   let boost = 0;
   const fields = [];
-  if (row.literal.toLowerCase() === q) {
+  if (row.concrete.toLowerCase() === q) {
     boost += 100;
-    fields.push("literal");
+    fields.push("concrete");
   }
   if (row.clarity.toLowerCase() === q) {
     boost += 100;
     fields.push("clarity");
   }
-  if (row.metaphorical.toLowerCase() === q) {
+  if (row.abstract.toLowerCase() === q) {
     boost += 100;
-    fields.push("metaphorical");
+    fields.push("abstract");
   }
   if (row.mnemonic.toLowerCase() === q) {
     boost += 50;
@@ -2447,9 +2454,9 @@ function overlayResultFromPublished(row, overlays, score, matchFields) {
 function overlayOnlyResult(overlay, score, matchFields) {
   return {
     emoji: overlay.emoji,
-    literal: overlay.definition,
+    concrete: overlay.definition,
     clarity: overlay.senseForm,
-    metaphorical: "",
+    abstract: "",
     mnemonic: overlay.mnemonic,
     englishByPos: "",
     posEnglish: emptyPosEnglish(),
@@ -2463,17 +2470,17 @@ function exactCompoundBoost(row, query) {
   const q = query.toLowerCase();
   let boost = 0;
   const fields = [];
-  if (row.literal.toLowerCase() === q) {
+  if (row.concrete.toLowerCase() === q) {
     boost += 100;
-    fields.push("literal");
+    fields.push("concrete");
   }
   if (row.stem.toLowerCase() === q) {
     boost += 100;
     fields.push("stem");
   }
-  if (row.metaphorical.toLowerCase() === q) {
+  if (row.abstract.toLowerCase() === q) {
     boost += 100;
-    fields.push("metaphorical");
+    fields.push("abstract");
   }
   if (row.mnemonic.toLowerCase() === q) {
     boost += 50;
@@ -2484,9 +2491,9 @@ function exactCompoundBoost(row, query) {
 function compoundResultFromRow(row, score, matchFields) {
   return {
     emoji: row.emoji,
-    literal: row.literal,
+    concrete: row.concrete,
     clarity: row.stem,
-    metaphorical: row.metaphorical,
+    abstract: row.abstract,
     mnemonic: row.mnemonic,
     englishByPos: "",
     posEnglish: emptyPosEnglish(),
@@ -2650,6 +2657,6 @@ export {
   senseFormEnding,
   senseFormRoot,
   splitPosPrefixedQuery,
-  tokenizeLiteral,
+  tokenizeConcrete,
   validateOverlayPublishedHosts
 };

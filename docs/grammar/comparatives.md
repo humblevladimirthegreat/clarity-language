@@ -313,7 +313,7 @@ Equality **`ae`** with a shared scale needs **two or more** names. **`ae`** with
 <a id="measured-differentials"></a>
 <a id="measure-gap"></a>
 
-English *two meters more challenging* still ranks two people on one quality, and it also names **how large the gap is**. Keep the rank join and the shared scale adjective. After that adjective, write a **measure noun** (`/b/`): that noun is the **unit** (published metaphor = SI name), and `/ɡ/` on the unit is the **amount** ([measure phrases](numbers-applied.md#measure-phrases)).
+English *two meters more challenging* still ranks two people on one quality, and it also names **how large the gap is**. Keep the rank join and the shared scale adjective. After that adjective, write a **measure noun** (`/b/`): that noun is the **unit** (published abstract = SI name), and `/ɡ/` on the unit is the **amount** ([measure phrases](numbers-applied.md#measure-phrases)).
 
 > `zazawan zululon zel gomonam bedurem g+2.`
 >

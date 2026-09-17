@@ -1,31 +1,35 @@
 # Reference suffix
 
-A content word’s last letter tells the listener how to take this meaning: a new ordinary kind, a published metaphor, or a name. That last letter is the **reference suffix**.
+A content word’s last letter tells the listener how to take this meaning: a new ordinary kind, a published abstract sense, or a name. That last letter is the **reference suffix**.
 
 Outside a sentence (a list, a heading, a dictionary line) you write **root + ending** with no first-letter job mark. That spelling is a **citation**.
 
 ## Beginner
 <a id="beginner"></a>
 
-### First mention, literal (`-l`)
+### First mention, concrete (`-l`)
+<a id="concrete-l"></a>
 <a id="literal-l"></a>
 
-When you mention a kind of thing for the first time, in its everyday meaning, end the citation with **-l**. The listener treats it as a new, ordinary instance of that kind. English for the citation is the bare kind, with no article. (cue: **l** ≈ literal)
+When you mention a kind of thing for the first time, in its everyday **concrete** meaning — a scene you could point at — end the citation with **-l**. The listener treats it as a new, ordinary instance of that kind. English for the citation is the bare kind, with no article. (cue: **l** ≈ look / concrete)
 
 > `azawal`
 >
 > "swan"
 
-### First mention, metaphor (`-m`)
+### First mention, abstract (`-m`)
+<a id="abstract-m"></a>
 <a id="metaphor-m"></a>
 
-Sometimes the meaning you want is the published **metaphor** for that root, not the everyday picture. When you introduce that sense for the first time, end the citation with **-m**. (cue: **m** ≈ metaphor)
+Sometimes the meaning you want is the published **abstract** sense for that root: a job you cannot really point at, riding on the concrete picture. When you introduce that sense for the first time, end the citation with **-m**. (cue: **m** ≈ meaning / abstract)
 
 > `azawam`
 >
 > "grace"
 
-**Compare with:** the everyday picture of the same root uses **-l** (`azawal` *swan*). *Grace* is the published metaphor of `azawa`, so the citation is **-m**. (cue: from *swan*: the glide of *grace*)
+**Compare with:** the everyday picture of the same root uses **-l** (`azawal` *swan*). *Grace* is the published abstract of `azawa`, so the citation is **-m**. (cue: from *swan*: the glide of *grace*)
+
+Nationality words are an **exception**: the people/quality sits on **-m** even though you can meet a Japanese person (`gajabam`). That is still the published second sense of the place root, not a name (**-n**).
 
 ### Named (`-n`)
 <a id="named-n-beginner"></a>
@@ -36,7 +40,7 @@ When the word is a **name** (this person or this place, not a kind of thing), en
 >
 > "Azawan"
 
-**Compare with:** the same root as a kind is `azawal` *swan*; as the published metaphor, `azawam` *grace*. **-n** names the person.
+**Compare with:** the same root as a kind is `azawal` *swan*; as the published abstract, `azawam` *grace*. **-n** names the person.
 
 ### Greeting
 <a id="greeting"></a>
@@ -57,8 +61,8 @@ The last letters you just used, on the same root `azawa`:
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `azawal` | first mention, everyday kind | *swan* | **l** ≈ literal |
-| `azawam` | first mention, published metaphor | *grace* | **m** ≈ metaphor |
+| `azawal` | first mention, everyday kind | *swan* | **l** ≈ concrete |
+| `azawam` | first mention, published abstract | *grace* | **m** ≈ abstract |
 | `azawan` | this person or place as a name | *Azawan* | **n** ≈ name |
 
 ### Writing
@@ -70,7 +74,7 @@ A citation is **lowercase** root + ending (`azawal`, `azawam`, `azawan`). Englis
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills for Beginner. Try each item before opening **Show answer**. Choose **-l** (new literal), **-m** (new metaphor), or **-n** (named). Every answer is a citation (no first-letter job mark). For a name, the English prompt is the **sense** (*grace*), not the nativized spelling (*Azawan*), except the greeting items.
+Short drills for Beginner. Try each item before opening **Show answer**. Choose **-l** (new concrete), **-m** (new abstract), or **-n** (named). Every answer is a citation (no first-letter job mark). For a name, the English prompt is the **sense** (*grace*), not the nativized spelling (*Azawan*), except the greeting items.
 
 **Setting:** a classroom
 

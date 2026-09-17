@@ -13,13 +13,13 @@ import {
 } from "./agalan-docs.js";
 
 function tablesOf(opts?: {
-  published?: Array<{ clarity: string; literal?: string }>;
+  published?: Array<{ clarity: string; concrete?: string }>;
 }): ClassifyTables {
   return createClassifyTablesFromRows(
-    (opts?.published ?? [{ clarity: "azawa", literal: "dog" }]).map((row) => ({
+    (opts?.published ?? [{ clarity: "azawa", concrete: "dog" }]).map((row) => ({
       emoji: "",
-      literal: row.literal ?? row.clarity,
-      metaphorical: "",
+      concrete: row.concrete ?? row.clarity,
+      abstract: "",
       clarity: row.clarity,
       mnemonic: "",
       englishByPos: "",
@@ -68,10 +68,10 @@ describe("peelLintChunk", () => {
 describe("lintAgalanToken", () => {
   const tables = tablesOf({
     published: [
-      { clarity: "azawa", literal: "dog" },
-      { clarity: "uzumu", literal: "happy" },
-      { clarity: "egera", literal: "ability" },
-      { clarity: "ululo", literal: "courage" },
+      { clarity: "azawa", concrete: "dog" },
+      { clarity: "uzumu", concrete: "happy" },
+      { clarity: "egera", concrete: "ability" },
+      { clarity: "ululo", concrete: "courage" },
     ],
   });
 
@@ -117,7 +117,7 @@ describe("lintAgalanToken", () => {
 
 describe("lintAgalanMarkdown", () => {
   const tables = tablesOf({
-    published: [{ clarity: "azawa", literal: "dog" }],
+    published: [{ clarity: "azawa", concrete: "dog" }],
   });
 
   it("checks backticks and fences, not prose", () => {

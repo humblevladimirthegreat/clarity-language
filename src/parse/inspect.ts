@@ -102,7 +102,7 @@ const PUNCT: Record<string, PunctKind> = {
 
 const ENDING_SENSE: Record<Ending, string> = {
   l: "exact",
-  m: "metaphorical",
+  m: "abstract",
   n: "named",
   r: "anaphor",
   rl: "stand-in",
@@ -133,6 +133,28 @@ export function endingSense(ending: Ending | undefined, word?: LexWord): string 
     return ending;
   }
   if (word?.reading === "join") return JOIN_ENDING_SENSE[ending];
+  if (word?.reading === "number") {
+    const number: Record<Ending, string> = {
+      l: "exact",
+      m: "fuzzy",
+      n: "named",
+      r: "resume",
+      rl: "stand-in",
+      rm: "stand-in.open",
+    };
+    return number[ending];
+  }
+  if (word?.reading === "ordinary" || word?.reading === "unknown") {
+    const content: Record<Ending, string> = {
+      l: "concrete",
+      m: "abstract",
+      n: "named",
+      r: "anaphor",
+      rl: "stand-in",
+      rm: "stand-in.open",
+    };
+    return content[ending];
+  }
   return ENDING_SENSE[ending];
 }
 
@@ -178,17 +200,17 @@ function senseLabelFallback(word: LexWord): string {
     return "greeting";
   }
   if (word.reading === "number") return "number";
-  if (word.reading === "join") return word.rootGloss?.literal ?? "join";
+  if (word.reading === "join") return word.rootGloss?.concrete ?? "join";
   if (word.ending === "m") {
-    return word.rootGloss?.metaphorical ?? word.rootGloss?.literal ?? word.reading;
+    return word.rootGloss?.abstract ?? word.rootGloss?.concrete ?? word.reading;
   }
   if (word.ending === "n") {
     if (word.family.kind === "foreign") return word.family.payload;
     if (word.family.kind === "writingSpan") return word.family.payload || "proper";
-    return word.rootGloss?.literal ?? "proper";
+    return word.rootGloss?.concrete ?? "proper";
   }
   if (word.ending === "r") return "anaphor";
-  return word.rootGloss?.literal ?? word.rootGloss?.metaphorical ?? word.reading;
+  return word.rootGloss?.concrete ?? word.rootGloss?.abstract ?? word.reading;
 }
 
 function familyChips(family: MorphWordFamily): string[] {
@@ -294,9 +316,9 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
     rows.push({ label: "gloss", value: word.overlay.gloss });
     rows.push({ label: "definition", value: word.overlay.definition });
   }
-  if (word.rootGloss?.literal) rows.push({ label: "literal", value: word.rootGloss.literal });
-  if (word.rootGloss?.metaphorical) {
-    rows.push({ label: "metaphorical", value: word.rootGloss.metaphorical });
+  if (word.rootGloss?.concrete) rows.push({ label: "concrete", value: word.rootGloss.concrete });
+  if (word.rootGloss?.abstract) {
+    rows.push({ label: "abstract", value: word.rootGloss.abstract });
   }
 
   return rows;

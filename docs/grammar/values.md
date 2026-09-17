@@ -326,7 +326,7 @@ Beginner already attached `/ɡ/` after a noun and `/h/` on the clause for met an
 | `h…xo…` on the clause | motive | *Azawan … (for relatedness)* (`honogoxo…`) |
 | `/w/` after a value `/ɡ/` | extra detail on that adjective | *very relatedness-serving* |
 
-Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear. Several values are several `/ɡ/` or `/h/` words (`golozoxal gonogoxal`), not stacked `x`-additions on one need. The **host** noun or verb carries literal vs metaphorical sense. `/w/` after a **need** `/ɡ/` grades that adjective; `/w/` after **`gobobum`** is the need.
+Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear. Several values are several `/ɡ/` or `/h/` words (`golozoxal gonogoxal`), not stacked `x`-additions on one need. The **host** noun or verb carries concrete vs abstract sense. `/w/` after a **need** `/ɡ/` grades that adjective; `/w/` after **`gobobum`** is the need.
 
 > `zazawan vezehel holozoxal honogoxom.`
 >

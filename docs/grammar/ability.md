@@ -19,7 +19,7 @@ To say someone **can** do something you name with one verb (*sing*, *walk*), or 
 
 The same idea as a quality uses `/ɡ/`: `zazawan guzunuxal` (*Azawan is able to sing*, as a quality). Ordinary action, no *can*: `zazawan vuzunul` (*Azawan sings*).
 
-The ending still belongs to that verb or adjective (**-l** literal, **-m** metaphorical, **-n** proper, **-r** resume). It does not change what kind of *can* you mean:
+The ending still belongs to that verb or adjective (**-l** concrete, **-m** abstract, **-n** proper, **-r** resume). It does not change what kind of *can* you mean:
 
 > `zululon vuwuruxam.`
 >
@@ -245,7 +245,7 @@ Sometimes English *can* / *can’t* is not about one named verb or quality: the 
 >
 > "Ululon is big: can’t right now." (ability on that quality).
 
-The vowels after **`x`** mean the same as in Beginner. Without **`x`**, **`egera`** just names ability as a topic (ordinary [ending](reference-suffix.md)). With a vowel after **`x`**, **-m** treats capacity as a metaphor; **-l** keeps the everyday cereal / bowl picture.
+The vowels after **`x`** mean the same as in Beginner. Without **`x`**, **`egera`** just names ability as a topic (ordinary [ending](reference-suffix.md)). With a vowel after **`x`**, **-m** treats capacity as the published abstract; **-l** keeps the everyday cereal / bowl picture.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
