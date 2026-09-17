@@ -53,6 +53,7 @@ export const OVERLAY_KINDS = [
   "of_relation",
   "exchange",
   "proxy",
+  "stimulus",
 ] as const;
 
 export type OverlayKind = (typeof OVERLAY_KINDS)[number];

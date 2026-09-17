@@ -7,8 +7,6 @@ finish English cheat sheets, including tense
 add Agalan cheat sheet
 consider making negatives clearer
 final exam
-consider what role compounds could mean on non-verbs
-
 Prosody
 Rename metaphorical
 

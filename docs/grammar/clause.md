@@ -380,7 +380,7 @@ English often puts the adjective before the noun (*a blue dog*). Agalan can too:
 >
 > "As for Azawan, Ululon walks."
 
-**Not the same job as:** [values](values.md) **met** / **unmet** on `/ɡ/` (`gonogoxal` *serves relatedness*). *As for* points at a person or thing in the clause; a value adjective says how a need stands toward that noun.
+**Not the same job as:** [values](values.md) **met** / **unmet** on `/ɡ/` (`gonogoxal` *my thing serves relatedness*). *As for* points at a person or thing in the clause; a value adjective on `/ɡ/` is a need toward a belonging.
 
 Several `/h/` units have no fixed order. Each unit’s role comes from its dictionary meaning. If two units share a role and you need a ranking, the leftmost one wins.
 

@@ -194,6 +194,15 @@ describe("classify", () => {
     assert.equal(card.overlay, undefined);
   });
 
+  it("stimulus overlay on /ɡ/; ordinary point on other letters", () => {
+    const stim = expectReading("gobobum", "stimulus");
+    assert.ok(stim.overlay);
+    assert.equal(stim.overlay!.kind, "stimulus");
+    assert.equal(stim.overlay!.gloss, "stimulus");
+    const emphasis = expectReading("zobobul", "ordinary");
+    assert.equal(emphasis.overlay, undefined);
+  });
+
   it("hosted judgment bars Mine and Everyone", () => {
     const mine = expectReading("zuroron", "mood");
     assert.ok(mine.overlay);

@@ -118,7 +118,7 @@ Source: [spans.md](../grammar/spans.md), [x-compounds.md](../grammar/x-compounds
 Source: [values.md](../grammar/values.md)
 
 - Whose-need / care direction on prescription
-- Forced listener / third-person possessives on need ascription
+- Forced listener / third-person possessives on need ascription (speaker `/ɡ/` default is [personal possession](../grammar/values.md#personal-possession); unowned is **`gobobum`**)
 
 ### Near-miss inventory (editor)
 

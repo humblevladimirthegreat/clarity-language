@@ -9,11 +9,11 @@ Compose opaque emotion labels from value plus arousal plus locus, number brainst
 ### Emotion compose
 <a id="emotion-compose"></a>
 
-When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: a [value](values.md) on the situation, how activated the charge is, and where you put it. Put the value on `/ɡ/` after the situation noun, then **one ACT** and **one LOCUS** as `/h/` (or `/w/` on that adjective). You can then say the take without smuggling a single emotion word.
+When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: a [value](values.md) on the situation, how activated the charge is, and where you put it. Put the value on `/ɡ/` after a belonging, or on `/w/` after [stimulus](values.md#stimulus) **`gobobum`** when the noun is not yours, then **one ACT** and **one LOCUS** as `/h/` (or `/w/` on that adjective). You can then say the take without smuggling a single emotion word.
 
-> `zezehel golozoxur hogegam hanedem.`
+> `zezehel gobobum wolozoxur hogegam hanedem.`
 >
-> z-speech | g-competence-unmet-temporary | h-HIGH | h-CIRCUM
+> z-speech | g-stimulus | w-competence-unmet-temporary | h-HIGH | h-CIRCUM
 >
 > "Anxious about the dialogue:" competence at stake for now; flood; room awash.
 
@@ -40,10 +40,10 @@ Under `/z/` or `/v/` the ordinary noun or verb uses the published literal ending
 
 | Agalan | English |
 |---------|---------|
-| `zezehel golozoxur hogegam hanedem` | *anxious about the dialogue* (competence at stake, temporary; flood; room awash) |
-| `zezawam gonogoxum hogegam horurum` | *resentful about the division* (unmet relatedness; flood poured onto them) |
+| `zezehel gobobum wolozoxur hogegam hanedem` | *anxious about the dialogue* (competence at stake, temporary; flood; room awash) |
+| `zezawam gobobum wonogoxum hogegam horurum` | *resentful about the division* (unmet relatedness; flood poured onto them) |
 | `zebegum golozoxam hogegam habobom` | *proud of the draft* (met competence, mental channel; flood bottled) |
-| `zememol gonogoxum hozowom horurum` | *resentful about the memo* (unmet relatedness; stillness pooling at them) |
+| `zememol gobobum wonogoxum hozowom horurum` | *resentful about the memo* (unmet relatedness; stillness pooling at them) |
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
 
@@ -101,6 +101,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *party* | `abaral` | | |
 | *fireworks* | `urewol` | | |
 | *hug* | `uhugul` | | |
+| *stimulus* | `gobobum` | `obobul` *emphasis* | ☝️: you point at it rather than keep it |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
 | *HIGH* | `hogegam` | `ogegal` *ocean* | 🌊: water in surge |
 | *LOW* | `hozowom` | `ozowol` *snow* | 🌨️: the landscape goes quiet |
@@ -156,17 +157,17 @@ z-tent | g-competence-unmet-temporary | h-HIGH | h-CIRCUM
 **6.** *Resentful about the party* (unmet relatedness; flood poured onto them)
 
 ::: details Show answer
-`zabaral gonogoxum hogegam horurum.`
+`zabaral gobobum wonogoxum hogegam horurum.`
 
-z-party | g-relatedness-unmet-modifiable | h-HIGH | h-EXTERNAL
+z-party | g-stimulus | w-relatedness-unmet-modifiable | h-HIGH | h-EXTERNAL
 :::
 
 **7.** *Resentful about the hug* (unmet relatedness; stillness pooling at them)
 
 ::: details Show answer
-`zuhugul gonogoxum hozowom horurum.`
+`zuhugul gobobum wonogoxum hozowom horurum.`
 
-z-hug | g-relatedness-unmet-modifiable | h-LOW | h-EXTERNAL
+z-hug | g-stimulus | w-relatedness-unmet-modifiable | h-LOW | h-EXTERNAL
 :::
 
 #### Agalan → English
@@ -222,11 +223,11 @@ z-Ululon | z-solution | g-first | v-tell
 *Ululon names solution 1.*
 :::
 
-**7.** `zurewol gonogoxum hogegam horurum.`
+**7.** `zurewol gobobum wonogoxum hogegam horurum.`
 
 ::: details Show answer
 
-z-fireworks | g-relatedness-unmet-modifiable | h-HIGH | h-EXTERNAL
+z-fireworks | g-stimulus | w-relatedness-unmet-modifiable | h-HIGH | h-EXTERNAL
 *Resentful about the fireworks* (unmet relatedness; flood poured onto them).
 :::
 

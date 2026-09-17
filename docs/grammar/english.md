@@ -21,7 +21,8 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agalan 
 | swap (*a book for a hammer*) | **`huhanem`** + `/b/` | [Exchange](relations.md#exchange) |
 | intended outcome (*writes for a money-bag*) | **`holalam`** + `/b/` | [So that](dependents.md#so-that) |
 | need as reason (*walks for relatedness*) | values **`xo`** on `/h/` | [Motive](values.md#value-preference) |
-| noun’s purpose (*a gift for relatedness*) | values **`xo`** on `/ɡ/` | [Motive](values.md#value-preference) |
+| noun’s purpose (*my gift for relatedness*) | values **`xo`** on `/ɡ/` | [Motive](values.md#value-preference) |
+| *my* belonging + need (*my tent serves survival*) | values **`xa` / `xu`** on `/ɡ/` | [Values](values.md#personal-possession) |
 | duration (*for three hours*) | measure phrase | [Measure phrases](numbers-applied.md#measure-phrases) |
 | topic (*as for Azawan*) | **`hozal`** + `/b/` | [As-for](clause.md#as-for) |
 

@@ -4,7 +4,7 @@
 
 A **need** is a psychological payoff you can name (autonomy, competence, relatedness, pleasure, survival, or an unspecified need). At **Beginner**, a **stance** is how you stand toward that need on a **noun**: it **serves** the need or **detracts from** it. **Intermediate** adds **prescription** on the clause (deontic: the agent **ought to** do this act for this need) and **motive** (*doing for* the need).
 
-Write the need under `/ɡ/` when you talk about a **noun** (how you feel about that thing). Write it under `/h/` when you talk about the **clause**. `/w/` is extra detail on a value adjective you just wrote, not a second way to mark the noun.
+Write the need under `/ɡ/` when you talk about a **noun you keep** (how you feel about that belonging). Write it under `/h/` when you talk about the **clause**. When the noun is not yours, mark it as a [stimulus](#stimulus) and put the need on `/w/`. `/w/` after a need `/ɡ/` is extra detail on that adjective, not a second way to mark the noun.
 
 ## Beginner
 <a id="beginner"></a>
@@ -29,13 +29,13 @@ Six published roots are the needs you can name. Pick one row. With mid-word **`x
 
 ### Met (`xa`): serves the need
 
-When you want to say that a named thing **serves** this need (pays it off), write that thing as a noun, then a `/ɡ/` word: need root, mid-word **`x`**, **`a`**, then an ending. That adjective is about the noun. The ending says how that payoff is **appreciated**.
+When you want to say that a named belonging **serves** this need (pays it off), write that thing as a noun, then a `/ɡ/` word: need root, mid-word **`x`**, **`a`**, then an ending. That adjective is about the noun. The ending says how that payoff is **appreciated**.
 
 > `zawaral gonogoxal.`
 >
 > z-wrapped-gift | g-relatedness-met-physical
 >
-> "The gift serves relatedness (appreciated physically)."
+> "My gift serves relatedness (appreciated physically)."
 
 **Not the same job as:** [ability](ability.md) (`vuzunuxal` *can sing*; `guzunuxal` *able to sing* as a property). There the left of **`x`** is an activity. Here it is a **need**, and **`xa`** means *serves this need*.
 
@@ -54,18 +54,18 @@ On a *serves* word, **-l / -m / -r** say **how the payoff is appreciated**: thro
 >
 > z-house | g-competence-met-physical
 >
-> "The house serves competence (appreciated physically)."
+> "My house serves competence (appreciated physically)."
 
 > `zabogol golozoxam.`
 >
 > z-book | g-competence-met-mental
 >
-> "The book serves competence (appreciated mentally)."
+> "My book serves competence (appreciated mentally)."
 
 ### Unmet (`xu`): detracts from the need
 <a id="value-changeability"></a>
 
-When you want to say a named thing **detracts from** this need, write that thing as a noun, then a `/ɡ/` word: need root, mid-word **`x`**, **`u`**, then an ending.
+When you want to say a named belonging **detracts from** this need, write that thing as a noun, then a `/ɡ/` word: need root, mid-word **`x`**, **`u`**, then an ending.
 
 That ending is **changeability**: how lasting that detriment is. If you do not know, use **-m**.
 
@@ -75,34 +75,48 @@ That ending is **changeability**: how lasting that detriment is. If you do not k
 | `…xum` | effort or circumstance may soften the detriment (soft default if unknown) | *modifiable* | **-m** ≈ open to change |
 | `…xur` | the detriment has no lasting impact | *temporary* | **-r** ≈ light (this moment only) |
 
-> `zazegem galodoxur.`
->
-> z-gathering | g-autonomy-unmet-temporary
->
-> "The gathering detracts from autonomy right now (temporary)."
-
 > `zabogol golozoxum.`
 >
 > z-book | g-competence-unmet-modifiable
 >
-> "The book detracts from competence (modifiable)."
+> "My book detracts from competence (modifiable)."
 
 ### Word shape
 <a id="word-shape"></a>
 <a id="value-stake"></a>
 
-A values word is a need root with mid-word **`x`**, a stance vowel, and an ending. `/ɡ/` talks about the **noun**; `/h/` talks about the **clause**.
+A values word is a need root with mid-word **`x`**, a stance vowel, and an ending. `/ɡ/` talks about a **noun you keep**; `/h/` talks about the **clause**. An unowned noun uses [stimulus](#stimulus) **`gobobum`** and the same need word on `/w/`.
 
 **-n** is ordinary [proper](reference-suffix.md#proper-name--n). **-l / -m / -r** follow that stance’s table.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`xa`** | the named noun pays off this need | *serves* / *met* | **a** ≈ add (the payoff is in) |
-| **`xu`** | the named noun subtracts from this need | *detracts from* / *unmet* | **u** ≈ undo (the need is taken down) |
+| **`xa`** | the belonging pays off this need | *serves* / *met* | **a** ≈ add (the payoff is in) |
+| **`xu`** | the belonging subtracts from this need | *detracts from* / *unmet* | **u** ≈ undo (the need is taken down) |
 
 **Intermediate** adds **`xe`** (*ought this act for this need*) and **`xo`** (*doing for this need*). See [prescription](#value-force) and [motive](#value-preference).
 
 A values word with no **`x`** is not a need: `galodol` is still ballot-box-like; `hawerol` is still strawberry as an adverb.
+
+### Personal possession
+<a id="personal-possession"></a>
+<a id="stimulus"></a>
+
+A need on `/ɡ/` means the noun is **yours** (speaker possession) and the need is how you stand toward that belonging. That shortcut puts gratitude and unmet on the things you already name as *my X*, so the stance is cheap to say. Ownership without a need is still `goborul` plus `/b/` ([joins](joins.md#scope-fence-p-join)). Someone else’s thing uses that pair, not a bare `/ɡ/` need.
+
+When the noun is **not** yours (weather, a gathering, another person’s church), write **`gobobum`** after it, then the need on `/w/`. `/w/` here is the same met / unmet word you already use on `/ɡ/`; it details the stimulus adjective. (cue: ☝️ *point*: you point at the thing; you do not hold it)
+
+> `zazegem gobobum walodoxur.`
+>
+> z-gathering | g-stimulus | w-autonomy-unmet-temporary
+>
+> "The gathering detracts from autonomy right now (temporary)."
+
+Ordinary `zobobul` is still *emphasis*. Bare **`gobobum`** with no `/w/` need does not ascribe a need. An episode (*this raining, this telling*) still uses `/h/` on the clause, possessed or not.
+
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`gobobum`** | unowned noun as need-target | *as stimulus* | `obobul` *emphasis* | ☝️: you point at it rather than keep it |
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -124,6 +138,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *rain* | `anunul` | |
 | *wind* | `uwudul` | |
 | *fire* | `urel` | |
+| *stimulus* | `gobobum` | `obobul` *emphasis* |
 | *autonomy* | `alodol` | `alodol` *ballot-box* |
 | *competence* | `olozol` | `olozol` *toolbox* |
 | *relatedness* | `onogol` | `onogol` *knot* |
@@ -133,7 +148,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### English → Agalan
 
-**1.** *The tent serves survival (appreciated physically).*
+**1.** *My tent serves survival (appreciated physically).*
 
 ::: details Show answer
 `zedenel guhuhexal.`
@@ -141,7 +156,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 z-tent | g-survival-met-physical
 :::
 
-**2.** *The backpack serves competence (appreciated mentally).*
+**2.** *My backpack serves competence (appreciated mentally).*
 
 ::: details Show answer
 `zababal golozoxam.`
@@ -152,20 +167,20 @@ z-backpack | g-competence-met-mental
 **3.** *The wind detracts from relatedness right now (temporary).*
 
 ::: details Show answer
-`zuwudul gonogoxur.`
+`zuwudul gobobum wonogoxur.`
 
-z-wind | g-relatedness-unmet-temporary
+z-wind | g-stimulus | w-relatedness-unmet-temporary
 :::
 
 **4.** *The fire detracts from survival (irreversible).*
 
 ::: details Show answer
-`zurel guhuhexul.`
+`zurel gobobum wuhuhexul.`
 
-z-fire | g-survival-unmet-irreversible
+z-fire | g-stimulus | w-survival-unmet-irreversible
 :::
 
-**5.** *The flashlight serves an unspecified need (appreciated physically).*
+**5.** *My flashlight serves an unspecified need (appreciated physically).*
 
 ::: details Show answer
 `zavazul gegexal.`
@@ -181,7 +196,7 @@ z-flashlight | g-need-met-physical
 
 z-tent | g-need-met-physical
 
-*The tent serves an unspecified need (appreciated physically).*
+*My tent serves an unspecified need (appreciated physically).*
 :::
 
 **2.** `zavazul golozoxal.`
@@ -190,14 +205,14 @@ z-tent | g-need-met-physical
 
 z-flashlight | g-competence-met-physical
 
-*The flashlight serves competence (appreciated physically).*
+*My flashlight serves competence (appreciated physically).*
 :::
 
-**3.** `zanunul galodoxum.`
+**3.** `zanunul gobobum walodoxum.`
 
 ::: details Show answer
 
-z-rain | g-autonomy-unmet-modifiable
+z-rain | g-stimulus | w-autonomy-unmet-modifiable
 
 *The rain detracts from autonomy (modifiable).*
 :::
@@ -208,7 +223,7 @@ z-rain | g-autonomy-unmet-modifiable
 
 z-tent | g-survival-met-spiritual
 
-*The tent serves survival (appreciated spiritually).*
+*My tent serves survival (appreciated spiritually).*
 :::
 
 **5.** `zababal golozoxul.`
@@ -217,14 +232,14 @@ z-tent | g-survival-met-spiritual
 
 z-backpack | g-competence-unmet-irreversible
 
-*The backpack detracts from competence (irreversible).*
+*My backpack detracts from competence (irreversible).*
 :::
 
-**6.** `zurel galodoxul.`
+**6.** `zurel gobobum walodoxul.`
 
 ::: details Show answer
 
-z-fire | g-autonomy-unmet-irreversible
+z-fire | g-stimulus | w-autonomy-unmet-irreversible
 
 *The fire detracts from autonomy (irreversible).*
 :::
@@ -274,7 +289,7 @@ English *have to* / *need to* / *doing this for…* often names a **motive**: wh
 >
 > "Azawan tells for relatedness (internal reason)."
 
-**Not the same job as:** prescription **`xe`** (*this act ought* to serve or protect this need). **`xo`** describes *doing for this need*. On `/ɡ/`, the same stance is the noun’s purpose (*a gift for relatedness*). *Walks so that Ululon sits* is an intended **event** ([so that](dependents.md#so-that), **`holalam`**), not a need. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`huhanem`). *Tells on behalf of Ululon* is [proxy](relations.md#proxy) (`hudagam`).
+**Not the same job as:** prescription **`xe`** (*this act ought* to serve or protect this need). **`xo`** describes *doing for this need*. On `/ɡ/`, the same stance is **your** noun’s purpose (*my gift for relatedness*). *Walks so that Ululon sits* is an intended **event** ([so that](dependents.md#so-that), **`holalam`**), not a need. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`huhanem`). *Tells on behalf of Ululon* is [proxy](relations.md#proxy) (`hudagam`).
 
 **-l** and **-m** are approach-framed; **-r** is guard-framed.
 
@@ -301,16 +316,17 @@ Beginner already attached `/ɡ/` after a noun and `/h/` on the clause for met an
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `g…xa…` after a noun | praise: the noun serves the need | *gift (serves relatedness)* (`gonogoxa…`) |
-| `g…xu…` after a noun | criticism: the noun detracts from the need | *gathering (detracts from autonomy)* (`galodoxu…`) |
-| `g…xo…` after a noun | the noun’s purpose is this need | *gift for relatedness* (`gonogoxo…`) |
-| `gl-` + value | the same adjective before the noun | `glonogoxal zawaral` |
+| `g…xa…` after a noun | praise: **your** noun serves the need | *my gift (serves relatedness)* (`gonogoxa…`) |
+| `g…xu…` after a noun | criticism: **your** noun detracts from the need | *my book (detracts from competence)* (`golozoxu…`) |
+| `g…xo…` after a noun | **your** noun’s purpose is this need | *my gift for relatedness* (`gonogoxo…`) |
+| `gobobum` + `/w/` need | the same stances on a noun that is **not** yours | *the gathering (detracts from autonomy)* (`gobobum walodoxu…`) |
+| `gl-` + value | the same adjective before the **belonging** | `glonogoxal zawaral` |
 | `h…xa…` on the clause | the event serves the need | *tells: competence is met* (`holozoxa…`) |
 | `h…xe…` on the clause | deontic prescription | *must* / *should* / *could* … for this need (`honogoxe…`) |
 | `h…xo…` on the clause | motive | *Azawan … (for relatedness)* (`honogoxo…`) |
 | `/w/` after a value `/ɡ/` | extra detail on that adjective | *very relatedness-serving* |
 
-Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear. Several values are several `/ɡ/` or `/h/` words (`golozoxal gonogoxal`), not stacked `x`-additions on one need. The **host** noun or verb carries literal vs metaphorical sense. `/w/` after another adjective grades **that** adjective; it does not mark the noun.
+Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear. Several values are several `/ɡ/` or `/h/` words (`golozoxal gonogoxal`), not stacked `x`-additions on one need. The **host** noun or verb carries literal vs metaphorical sense. `/w/` after a **need** `/ɡ/` grades that adjective; `/w/` after **`gobobum`** is the need.
 
 > `zazawan vezehel holozoxal honogoxom.`
 >
@@ -336,6 +352,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *prayer bead* | `abarel` | |
 | *candle* | `anedel` | |
 | *bell* | `obelel` | |
+| *ownership* | `oborul` | `oborul` *ownership* |
+| *stimulus* | `gobobum` | `obobul` *emphasis* |
 | *pray* | `vabal` | `abal` *pray* |
 | *kneel* | `vegenel` | `egenel` *kneel* |
 | *whisper* | `vuzuhul` | `uzuhul` *whisper* |
@@ -427,9 +445,9 @@ z-Ululon | v-pray | h-competence-motive-internal
 **10.** *Azawan’s church serves relatedness (appreciated physically).*
 
 ::: details Show answer
-`zuhurul gonogoxal guhurum bazawan.`
+`zuhurul goborul bazawan gobobum wonogoxal.`
 
-z-church | g-relatedness-met-physical | g-faith | b-Azawan
+z-church | g-copyright | b-Azawan | g-stimulus | w-relatedness-met-physical
 :::
 
 **11.** *Azawan prays: competence is met (physical) and relatedness is the internal motive.*
@@ -501,23 +519,23 @@ z-Azawan | v-shush | h-relatedness-motive-protective
 
 z-prayer-bead | g-pleasure-met-spiritual
 
-*The prayer bead serves pleasure (appreciated spiritually).*
+*My prayer bead serves pleasure (appreciated spiritually).*
 :::
 
-**7.** `zanedel galodoxum.`
+**7.** `zanedel gobobum walodoxum.`
 
 ::: details Show answer
 
-z-candle | g-autonomy-unmet-modifiable
+z-candle | g-stimulus | w-autonomy-unmet-modifiable
 
 *The candle detracts from autonomy (modifiable).*
 :::
 
-**8.** `zobelel gonogoxum.`
+**8.** `zobelel gobobum wonogoxum.`
 
 ::: details Show answer
 
-z-bell | g-relatedness-unmet-modifiable
+z-bell | g-stimulus | w-relatedness-unmet-modifiable
 
 *The bell detracts from relatedness (modifiable).*
 :::

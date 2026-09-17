@@ -118,6 +118,7 @@ export type LexReading =
   | "ofRelation"
   | "exchange"
   | "proxy"
+  | "stimulus"
   | "join"
   | "standIn"
   | "joinAct"

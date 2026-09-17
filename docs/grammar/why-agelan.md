@@ -87,7 +87,7 @@ Agalan’s [values](values.md) name a closed inventory of **needs** (autonomy, c
 | Prescription | Deontic on the host act for this need — *must* / *should* / *could* by force (bound / endorse / invite) |
 | Unmet | Costs the need, including how changeable that is |
 
-Naming the need and your stance toward it helps you notice gratitude, motive, and oughts instead of conflating them into vague *want* / *should* / *good*.
+Naming the need and your stance toward it helps you notice gratitude, motive, and oughts instead of conflating them into vague *want* / *should* / *good*. A need on `/ɡ/` is a belonging (so *my X serves competence* is one adjective); an unowned stimulus uses **`gobobum`** plus the need on `/w/`.
 
 ### Emotions as composition
 <a id="emotions-as-composition"></a>

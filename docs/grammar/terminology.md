@@ -752,7 +752,7 @@ Mood how-exceptionless (COMMON … RULE).
 
 ### Values
 
-Need + optional stance on `/h/` `/w/`.
+Need + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`gobobum`** + `/w/` need.
 
 [Values](values.md)
 

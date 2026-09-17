@@ -138,6 +138,7 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, emotion ACT
 | `of_relation` | `ofRelation` | *part of* / *contents* / *material* / *origin* |
 | `exchange` | `exchange` | *in-exchange-for* **`uhane`** |
 | `proxy` | `proxy` | *on-behalf-of* **`udaga`** |
+| `stimulus` | `stimulus` | need about an unowned noun **`obobu`** |
 
 Later splits of `mood` (token class, gloss tag) can follow this column without new English regexes. Special pronouns stay published + gloss, not this table, until they need a parse fork.
 

@@ -122,6 +122,7 @@ function overlayReading(overlay: OverlayRow): LexReading {
   if (overlay.kind === "of_relation") return "ofRelation";
   if (overlay.kind === "exchange") return "exchange";
   if (overlay.kind === "proxy") return "proxy";
+  if (overlay.kind === "stimulus") return "stimulus";
   return "mood";
 }
 

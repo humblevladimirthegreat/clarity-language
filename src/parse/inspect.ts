@@ -372,6 +372,9 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   if (word.reading === "proxy") {
     return { line: "proxy", href: "relations.html#proxy" };
   }
+  if (word.reading === "stimulus") {
+    return { line: "need stimulus", href: "values.html#stimulus" };
+  }
   if (word.reading === "joinAct" || word.reading === "joinRelation") {
     return { line: "join extra", href: "join-extras.html" };
   }
