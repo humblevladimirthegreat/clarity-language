@@ -42,11 +42,11 @@ When English names the **other side of a swap** (*a book for a hammer*), keep th
 
 > `zazawan dabogol huhanem bahamel vuhanem.`
 >
-> z-Azawan | d-book | h-in-exchange-for | b-hammer | v-exchange
+> z-Azawan | d-book | h-in-exchange-for | b-hammer | v-convertibility
 >
-> "Azawan exchanges a book for a hammer."
+> "Azawan trades a book for a hammer."
 
-On a noun, the same root is **`guhanem`** (`dabogol guhanem bahamel` *a book for a hammer*). Ordinary `zuhanel` is still *a currency exchange*. Ordinary `vuhanem` is still *to exchange*.
+On a noun, the same root is **`guhanem`** (`dabogol guhanem bahamel` *a book for a hammer*). Ordinary `zuhanel` is still *a currency exchange*. Ordinary `vuhanem` is still *to trade* (the convertibility act).
 
 **Compare with:** unhosted `/b/` is still the recipient (*a book for Ululon* as who gets it). *Using* a tool is a [hook](hooks.md#extra-noun) (`ael`). *Like a duck* is [simile](#similative). *In a house* is a hook (`al`).
 

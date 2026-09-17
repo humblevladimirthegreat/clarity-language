@@ -8,9 +8,9 @@ Use this document for styling examples when producing more posts, and seeing wha
 
 English *I think* often smuggles a **guess** (*I think Ululon is leaving* = maybe that is so) without saying whether you are checking, and rumination can sound like an investigation that never actually looks. Agalan keeps the ordinary verb (*leaves*, *punches*, *cries*) and adds a small `/h/` word **`odoho`** (**MAY**): the scene *could be* so. That is not a warrant, and it is not the verb *to think*.
 
-> `zululon hodohom vebarum duhubun.`
+> `zululon hodohom vebarul duhubun.`
 >
-> z-Ululon | h-MAY | v-leave | d-Uhubun
+> z-Ululon | h-MAY | v-departure | d-Uhubun
 >
 > "Ululon may be leaving Uhubun."
 

@@ -356,7 +356,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *stimulus* | `gobobum` | `obobul` *emphasis* |
 | *pray* | `vabal` | `abal` *pray* |
 | *kneel* | `vegenel` | `egenel` *kneel* |
-| *whisper* | `vuzuhul` | `uzuhul` *whisper* |
+| *shush* | `vuzuhul` | `uzuhul` *shush* |
 | *bow* | `vobowol` | `obowol` *bow* |
 | *scream* | `vazagal` | `azagal` *scream* |
 | *tell* | `vezehel` | `ezehel` *speech* |
@@ -418,7 +418,7 @@ z-Azawan | v-pray | h-relatedness-motive-internal
 z-Ululon | v-kneel | h-relatedness-motive-circumstantial
 :::
 
-**7.** *Uhubun whispers for relatedness (internal motive, as usual).*
+**7.** *Uhubun shushes for relatedness (internal motive, as usual).*
 
 ::: details Show answer
 `zuhubun vuzuhul honogoxom hual.`
@@ -510,7 +510,7 @@ z-Uhubun | v-kneel | h-relatedness-motive-internal
 
 z-Azawan | v-shush | h-relatedness-motive-protective
 
-*Azawan whispers for relatedness (protective motive).*
+*Azawan shushes for relatedness (protective motive).*
 :::
 
 **6.** `zabarel gaweroxar.`

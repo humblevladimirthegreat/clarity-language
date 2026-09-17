@@ -15,13 +15,13 @@ When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgme
 >
 > z-speech | g-stimulus | w-competence-unmet-temporary | h-HIGH | h-CIRCUM
 >
-> "Anxious about the dialogue:" competence at stake for now; flood; room awash.
+> "Anxious about the dialogue:" competence at stake for now; surge; room awash.
 
 Affect is **water**. **ACT** is tide dynamics (how much / how fast). **LOCUS** is vessel, transfer, or ambient field (where the water sits).
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hogegam`** | HIGH arousal | *flood / surge* | `ogegal` *ocean* | 🌊: water in surge |
+| **`hogegam`** | HIGH arousal | *surge / overwhelm* | `ogegal` *ocean* | 🌊: water in surge |
 | **`hejelom`** | MED arousal | *flow / drift* | `ejelol` *jellyfish* | 🪼: drifts with the current |
 | **`hozowom`** | LOW arousal | *stillness / slack* | `ozowol` *snow* | 🌨️: the landscape goes quiet |
 | **`habobom`** | INTERNAL locus | *held inside* | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
@@ -34,15 +34,15 @@ Under `/z/` or `/v/` the ordinary noun or verb uses the published literal ending
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hogegam`** + **`horurum`** | HIGH × EXTERNAL | *poured / surged onto them* | `ogegal` *ocean* · `orurul` *pour* | 🌊 onto 🫗: flood directed at them |
+| **`hogegam`** + **`horurum`** | HIGH × EXTERNAL | *poured / surged onto them* | `ogegal` *ocean* · `orurul` *pour* | 🌊 onto 🫗: surge directed at them |
 | **`hejelom`** + **`horurum`** | MED × EXTERNAL | *flowing toward them* | `ejelol` *jellyfish* · `orurul` *pour* | 🪼 toward 🫗: drift aimed at them |
 | **`hozowom`** + **`horurum`** | LOW × EXTERNAL | *pooling at them* | `ozowol` *snow* · `orurul` *pour* | 🌨️ at 🫗: slack water settled at their locus |
 
 | Agalan | English |
 |---------|---------|
-| `zezehel gobobum wolozoxur hogegam hanedem` | *anxious about the dialogue* (competence at stake, temporary; flood; room awash) |
-| `zezawam gobobum wonogoxum hogegam horurum` | *resentful about the division* (unmet relatedness; flood poured onto them) |
-| `zebegum golozoxam hogegam habobom` | *proud of the draft* (met competence, mental channel; flood bottled) |
+| `zezehel gobobum wolozoxur hogegam hanedem` | *anxious about the dialogue* (competence at stake, temporary; surge; room awash) |
+| `zezawam gobobum wonogoxum hogegam horurum` | *resentful about the division* (unmet relatedness; surge poured onto them) |
+| `zebegum golozoxam hogegam habobom` | *proud of the draft* (met competence, mental channel; surge bottled) |
 | `zememol gobobum wonogoxum hozowom horurum` | *resentful about the memo* (unmet relatedness; stillness pooling at them) |
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
@@ -130,7 +130,7 @@ z-problem | g-second
 z-Azawan | z-goal | g-first | v-tell
 :::
 
-**3.** *Proud of the lantern* (met competence, mental channel; flood bottled)
+**3.** *Proud of the lantern* (met competence, mental channel; surge bottled)
 
 ::: details Show answer
 `zalanel golozoxam hogegam habobom.`
@@ -146,7 +146,7 @@ z-lantern | g-competence-met-mental | h-HIGH | h-INTERNAL
 z-solution | g-first
 :::
 
-**5.** *Anxious about the tent* (competence at stake, temporary; flood; room awash)
+**5.** *Anxious about the tent* (competence at stake, temporary; surge; room awash)
 
 ::: details Show answer
 `zedenel golozoxur hogegam hanedem.`
@@ -154,7 +154,7 @@ z-solution | g-first
 z-tent | g-competence-unmet-temporary | h-HIGH | h-CIRCUM
 :::
 
-**6.** *Resentful about the party* (unmet relatedness; flood poured onto them)
+**6.** *Resentful about the party* (unmet relatedness; surge poured onto them)
 
 ::: details Show answer
 `zabaral gobobum wonogoxum hogegam horurum.`
@@ -203,7 +203,7 @@ z-tent | g-competence-met-mental | h-LOW | h-INTERNAL
 ::: details Show answer
 
 z-lantern | g-competence-unmet-temporary | h-HIGH | h-CIRCUM
-*Anxious about the lantern* (competence at stake, temporary; flood; room awash).
+*Anxious about the lantern* (competence at stake, temporary; surge; room awash).
 :::
 
 **5.** `zolalal g~#1.`
@@ -228,7 +228,7 @@ z-Ululon | z-solution | g-first | v-tell
 ::: details Show answer
 
 z-fireworks | g-stimulus | w-relatedness-unmet-modifiable | h-HIGH | h-EXTERNAL
-*Resentful about the fireworks* (unmet relatedness; flood poured onto them).
+*Resentful about the fireworks* (unmet relatedness; surge poured onto them).
 :::
 
 ## Advanced

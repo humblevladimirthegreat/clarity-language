@@ -141,7 +141,7 @@ The letter on the open is the role of the **entire span** in the outer sentence.
 >
 > j-prohibition | z-Ululon | v-stop
 >
-> "Don’t “halt,” Ululon."
+> "Don’t say “stop,” Ululon."
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -170,7 +170,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *write* | `vuwurul` | | |
 | *see* | `vejel` | | |
 | *sing* | `uzunul` | | |
-| *halt* | `vozodol` | | |
+| *stop* | `vozodol` | | |
 | *Uzugon* | `uzugon` | | |
 | *melody* | `uzugol` | | |
 | *small* | `gumuzem` | `umuzel` *mouse* | 🐁: a mouse is little |
@@ -226,7 +226,7 @@ z-Uhubun | d-Uzugon | v-sing
 z-Azawan | v-tell | h-happy
 :::
 
-**7.** *Don’t “halt,” Ululon.*
+**7.** *Don’t say “stop,” Ululon.*
 
 ::: details Show answer
 `jul zululon v[vozodol].`

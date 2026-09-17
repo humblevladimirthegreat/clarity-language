@@ -364,7 +364,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *X-ray* (named style) | `gararon` | `ararol` *x-ray* |
 | *Temperature* (named standard) | `hedehen` | `edehel` *thermometer* |
 | *Sleep* (titled rest) | `veleben` | `elebel` *sleep* |
-| *Injection* (titled action) | `vozorun` | `ozorul` *syringe* |
+| *Intrusion* (titled action) | `vozorun` | `ozorul` *syringe* |
 | *Emergency* (titled event) | `vamubun` | `amubul` *ambulance* |
 | *Emergency* (named frame) | `hamubun` | `amubul` *ambulance* |
 
@@ -410,7 +410,7 @@ z-Azawan | v-see | d-Ohozo-x-Abeden
 z-Edozen | v-see | d-Uhubun
 :::
 
-**6.** *Ululon injects the Injection* (that titled action).
+**6.** *Ululon runs the Intrusion* (that titled action).
 
 ::: details Show answer
 `zululon vozorun.`
@@ -466,7 +466,7 @@ z-Ohozo-x-Abeden | v-write
 ::: details Show answer
 
 z-Uhubun | v-Ozorun
-*Uhubun injects the Injection* (that titled action).
+*Uhubun runs the Intrusion* (that titled action).
 :::
 
 **6.** `zedozexohozon vejel dazawan.`

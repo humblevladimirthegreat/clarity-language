@@ -94,7 +94,7 @@ Naming the need and your stance toward it helps you notice gratitude, motive, an
 
 Opaque labels (*angry*, *anxious*, *proud*) hide which need is in play and what to ask for.
 
-Agalan [composes emotion](special-vocabulary.md#emotion-compose) from a [value](values.md) (often unmet or met), plus activation (flood / stir / …), plus locus (where it shows).
+Agalan [composes emotion](special-vocabulary.md#emotion-compose) from a [value](values.md) (often unmet or met), plus activation (surge / stir / …), plus locus (where it shows).
 
 Composing emotion from need + activation + locus helps you ask for what would actually help instead of stopping at the label.
 

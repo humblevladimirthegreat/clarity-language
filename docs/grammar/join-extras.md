@@ -90,8 +90,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| *start* | `alalom` | `alalol` *play* |
-| *finish* | `unuhum` | `unuhul` *finish-line* |
+| *play* | `dalalol` | `alalol` *play* |
+| *finish-line* | `dunuhul` | `unuhul` *finish-line* |
 | *hand* | `ahanal` | |
 | *teamwork* | `ahadam` | `ahadal` *handball* |
 | *trophy* | `odobol` | |
@@ -103,20 +103,20 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agalan
 
-**1.** *Azawan includes the start.*
+**1.** *Azawan includes the play (the start).*
 
 ::: details Show answer
-`zazawan dalalom van.`
+`zazawan dalalol van.`
 
-z-Azawan | d-start | v-includes
+z-Azawan | d-play | v-includes
 :::
 
-**2.** *Finish including Uhubun.*
+**2.** *The finish line, including Uhubun.*
 
 ::: details Show answer
-`zunuhum gan buhubun.`
+`zunuhul gan buhubun.`
 
-z-finish | g-including | b-Uhubun
+z-finish-line | g-including | b-Uhubun
 :::
 
 **3.** *Azawan chooses the hand (as the one choice).*
@@ -151,12 +151,12 @@ z-Azawan | d-medal | v-excludes
 z-teamwork | g-exclusive-for | b-Uhubun
 :::
 
-**7.** *Ululon bars the finish (anything else is fine).*
+**7.** *Ululon bars the finish line (anything else is fine).*
 
 ::: details Show answer
-`zululon dunuhum vuon.`
+`zululon dunuhul vuon.`
 
-z-Ululon | d-finish | v-bars
+z-Ululon | d-finish-line | v-bars
 :::
 
 **8.** *Ululon punches, refusing the hand.*
@@ -169,22 +169,22 @@ z-Ululon | h-against | b-hand | v-punch
 
 #### Agalan → English
 
-**1.** `zuhubun dalalom van.`
+**1.** `zuhubun dalalol van.`
 
 ::: details Show answer
 
-z-Uhubun | d-start | v-includes
+z-Uhubun | d-play | v-includes
 
-*Uhubun includes the start.*
+*Uhubun includes the play (the start).*
 :::
 
-**2.** `zunuhum guan bemedal.`
+**2.** `zunuhul guan bemedal.`
 
 ::: details Show answer
 
-z-finish | g-without | b-medal
+z-finish-line | g-without | b-medal
 
-*Finish without the medal.*
+*Finish line without the medal.*
 :::
 
 **3.** `zululon dodobol von.`

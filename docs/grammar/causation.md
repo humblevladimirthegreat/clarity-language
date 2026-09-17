@@ -329,7 +329,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. A f
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *knob* | `onobol` | |
-| *flood* | `ogegam` | `ogegal` *ocean* |
+| *overwhelm* | `ogegam` | `ogegal` *ocean* |
 | *bell* | `obelel` | |
 | *pressure* | `abamam` | `abamal` *clamp* |
 | *sit* | `vajul` | `ajul` *chair* |
@@ -394,12 +394,12 @@ z-bell | g-because | b-pressure
 z-Azawan | v-sit | h-only-if | h-because | b-that-clause | z-Uhubun | v-see
 :::
 
-**7.** *Ululon runs if there is flooding (as mechanism).*
+**7.** *Ululon runs if the surge hits (as mechanism).*
 
 ::: details Show answer
 `zululon vurunul hegegam hadorom bogegam.`
 
-z-Ululon | v-run | h-CAUSE | h-if | b-flood
+z-Ululon | v-run | h-CAUSE | h-if | b-overwhelm
 :::
 
 #### Agalan → English
@@ -435,18 +435,18 @@ z-Azawan | v-tell | h-iff | b-that-clause | z-Uhubun | v-see
 
 ::: details Show answer
 
-z-Ululon | v-run | h-because | b-that-clause | z-flood
+z-Ululon | v-run | h-because | b-that-clause | z-overwhelm
 
-*Ululon runs because of flooding.*
+*Ululon runs because of the surge.*
 :::
 
 **5.** `zogegam gurugum babamam.`
 
 ::: details Show answer
 
-z-flood | g-because | b-pressure
+z-overwhelm | g-because | b-pressure
 
-*Flooding because of pressure.*
+*The surge is because of pressure.*
 :::
 
 **6.** `zuhubun vezehel heberom hurugum barl zululon vorurul.`
@@ -462,9 +462,9 @@ z-Uhubun | v-tell | h-only-if | h-because | b-that-clause | z-Ululon | v-pour
 
 ::: details Show answer
 
-z-Ululon | v-pour | h-CAUSE | h-if | b-flood
+z-Ululon | v-pour | h-CAUSE | h-if | b-overwhelm
 
-*Ululon pours if there is flooding (as mechanism).*
+*Ululon pours if the surge hits (as mechanism).*
 :::
 
 ## Advanced
@@ -492,9 +492,9 @@ English *because* and *if* can hide whether you **assert the dependent as a worl
 
 English often uses *because* for **speaker grounds** (*they may be leaving because Q*) without treating Q as a world-fact that grounds P. Put [MAY](knowing.md#may) (`hodohom`, …) on the main sentence for the *could be*. Add **`hurugum barl`** only when Q is also asserted as a world-foundation.
 
-> `zululon hodohom vebarum duhubun.`
+> `zululon hodohom vebarul duhubun.`
 >
-> z-Ululon | h-MAY | v-leave | d-Uhubun
+> z-Ululon | h-MAY | v-departure | d-Uhubun
 >
 > "Ululon may be leaving Uhubun."
 

@@ -169,7 +169,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Uhubun* | `uhubun` | |
 | *construction* | `onugol` | |
 | *construct* | `ogonul` | |
-| *building* | `ogonum` | `ogonul` *construct* |
+| *fabrication* | `ogonum` | `ogonul` *construct* |
 | *helmet* | `ehemel` | |
 | *see* | `vejel` | `ejel` *eye* |
 | *sit* | `vajul` | `ajul` *chair* |
@@ -214,12 +214,14 @@ z-Ululon | v-scream | z-Azawan | d-←scream | v-see
 z-Azawan | z-Uhubun | v-see | z-←see | v-sit
 :::
 
-**5.** *Azawan is a builder.*
+**5.** *Azawan is a fabricator.*
 
 ::: details Show answer
 `zazawan gaxogonum.`
 
-z-Azawan | g-agent-x-building
+z-Azawan | g-agent-x-fabrication
+
+*Azawan is a fabricator.*
 :::
 
 **6.** *Azawan sees a construction site.*

@@ -204,7 +204,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *pill* | `abulul` | |
-| *bottle* | `abobol` | |
+| *baby-bottle* | `abobol` | |
 | *rock* | `arogol` | |
 | *spoon* | `ozobol` | |
 | *meter* | `edurem` | `edurel` *set-square* |

@@ -13,13 +13,13 @@ When the scene **could be** so (rejection, a blow, a loss — not a warrant), ke
 
 The leaving or the blow is still the event named in the *could be*. Without the `/h/` word you are reporting what happens. The same root can still be ordinary content (`zodohol` *a thought*; `vodohol` *to think* as a deliberate action).
 
-> `zululon hodohom vebarum duhubun.`
+> `zululon hodohom vebarul duhubun.`
 >
-> z-Ululon | h-MAY | v-leave | d-Uhubun
+> z-Ululon | h-MAY | v-departure | d-Uhubun
 >
 > "Ululon may be leaving Uhubun." — could be (default)
 
-**Compare with:** `zazawan vodohol.` is *Azawan thinks* (an action of thinking). **`hodohom`** is *the scene may be so*. A bare `zululon vebarum duhubun.` reports the leaving.
+**Compare with:** `zazawan vodohol.` is *Azawan thinks* (an action of thinking). **`hodohom`** is *the scene may be so*. A bare `zululon vebarul duhubun.` reports the leaving.
 
 The same `/h/` word can sit on a yes/no ask. Use **-l** when you are **finding out**:
 
@@ -70,7 +70,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Write *
 | *Uhubun* | `uhubun` | |
 | *see* | `vejel` | `ejel` *eye* |
 | *tell* | `vezehel` | `ezehel` *speech* |
-| *leave* | `vebarum` | `ebarul` *departure* |
+| *departure* | `vebarul` | `ebarul` *departure* |
 | *cry* | `vogorol` | |
 | *thought* (event) | `vodohol` | `odohol` *thought* |
 | *MAY* | `hodohom` | `odohol` *thought* |
@@ -101,9 +101,9 @@ z-Azawan | h-MAY | v-tell | b-Ululon
 **3.** *Uhubun may be leaving Azawan.*
 
 ::: details Show answer
-`zuhubun hodohom vebarum dazawan.`
+`zuhubun hodohom vebarul dazawan.`
 
-z-Uhubun | h-MAY | v-leave | d-Azawan
+z-Uhubun | h-MAY | v-departure | d-Azawan
 :::
 
 **4.** *Ululon may be punching Azawan — I'll find out.*
@@ -166,11 +166,11 @@ z-Azawan | h-MAY | v-see | d-Ululon
 *Azawan may be seeing Ululon.*
 :::
 
-**3.** `zuhubun hodohol vebarum dazawan.`
+**3.** `zuhubun hodohol vebarul dazawan.`
 
 ::: details Show answer
 
-z-Uhubun | h-MAY-find-out | v-leave | d-Azawan
+z-Uhubun | h-MAY-find-out | v-departure | d-Azawan
 
 *Uhubun may be leaving Azawan — I'll find out.*
 :::
@@ -294,21 +294,21 @@ English *has walked* and *used to walk* often smuggle **when** the event sits. A
 
 **RESIDUE** (`oneno`) marks leftover balance: the result is still on the books (an unpaid tab, a door that is still shut). Skipping it means you are not claiming current residue (archived, or a fresh event with nothing left to count). Ordinary `zonenom` is still *debt*.
 
-> `zululon honenom vebarum.`
+> `zululon honenom vebarul.`
 >
-> z-Ululon | h-RESIDUE | v-leave
+> z-Ululon | h-RESIDUE | v-departure
 >
 > "Ululon’s leaving still counts." — the outcome remains on the tally
 
-> `zululon huvuvum honenom vebarum.`
+> `zululon huvuvum honenom vebarul.`
 >
-> z-Ululon | h-WITNESSED | h-RESIDUE | v-leave
+> z-Ululon | h-WITNESSED | h-RESIDUE | v-departure
 >
 > "Ululon’s leaving still counts — from memory."
 
-> `zululon hadezem honenom vebarum.`
+> `zululon hadezem honenom vebarul.`
 >
-> z-Ululon | h-LIVE | h-RESIDUE | v-leave
+> z-Ululon | h-LIVE | h-RESIDUE | v-departure
 >
 > "Ululon’s leaving still counts — live / from the scene." (the leftover is in view)
 

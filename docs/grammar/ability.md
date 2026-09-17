@@ -279,7 +279,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Pre
 | *Uhubun* | `uhubun` | |
 | *locked* | `ologel` | |
 | *key* | `agegol` | |
-| *fortress* | `agazel` | |
+| *castle* | `agazel` | |
 | *punch* | `ubunul` | |
 | *guard* | `ugugal` | |
 | *scream* | `azagal` | |
@@ -419,7 +419,7 @@ z-Ululon | v-scream-unable-irreversible
 
 z-castle | h-ABIL-unable-irreversible
 
-*The fortress can never.*
+*The castle can never be taken.*
 :::
 
 ## See also
