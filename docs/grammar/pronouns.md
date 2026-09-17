@@ -306,7 +306,7 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 |--------|-----|---------|
 | noun antecedent, `/v/` … `-r` | recast as action | *do that (to/with it)* |
 | noun antecedent, `/ɡ/` … `-r` | recast as property | *that one’s* / *of that kind* |
-| verb antecedent, noun … `-r` | recast as event | *that action / event* (the doing, not the doer; [role compounds](roles.md#role-compounds) name agent/instrument/patient) |
+| verb antecedent, noun … `-r` | recast as event | *that action / event* (the doing, not the doer; [role compounds](roles.md#role-compounds) name agent/place/patient/recipient) |
 | verb antecedent, `/h/` … `-r` | recast as manner | *by doing so* / *thereby* |
 | adjective antecedent, noun … `-r` | recast as entity | *the … one* / *that quality* |
 
@@ -522,7 +522,7 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `/z/` `/d/` `/b/` … `-r` | the doing as a noun | *that action / event / doing* (not the agent/patient/instrument; use [role compounds](roles.md#role-compounds)) |
+| `/z/` `/d/` `/b/` … `-r` | the doing as a noun | *that action / event / doing* (not the agent/place/patient/recipient; use [role compounds](roles.md#role-compounds)) |
 | `/v/` … `-r` | same action again | *do so* / *do that* |
 | `/ɡ/` … `-r` | property of having done that | *such* (done that way) |
 | `/w/` … `-r` | frame on an adjective about that doing | that frame |

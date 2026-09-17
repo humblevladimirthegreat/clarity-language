@@ -3,14 +3,11 @@ https://main.d2xds94zsgwptg.amplifyapp.com
 redirects settings: https://us-east-2.console.aws.amazon.com/amplify/apps/d2xds94zsgwptg/redirects
 
 # TODO
-review TTS
-consider removing emojis from docs (but keep in lexicon)
-local llm systematically review entire lexicon
 finish English cheat sheets, including tense
 add Agalan cheat sheet
-consider making negatives clearer with stacked u
+consider making negatives clearer
 final exam
-reconsider e on role compounds
+consider what role compounds could mean on non-verbs
 
 ## Evidentiality / tense
 

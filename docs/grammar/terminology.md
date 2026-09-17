@@ -359,7 +359,7 @@ Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; frame **-m**
 
 ### Means
 
-Extra-noun [hook](hooks.md#extra-noun) **`ael`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*, not role **`exROOT`**.
+Extra-noun [hook](hooks.md#extra-noun) **`ael`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*, not role **`exROOT`** (that names the **place** of an event).
 
 [Relations](relations.md#means)
 
@@ -613,7 +613,7 @@ Material after the join closer; **SHARED scale** vs **SHARED continuum**.
 
 ### Relative clause (English *who / that / which*)
 
-Identify a noun with two sentences (then [resume](#resume)), a hosted `/ɡ/` + `/b/` relation, or a [role compound](#role-compound--agent--instrument--patient--reltum) on `/ɡ/`.
+Identify a noun with two sentences (then [resume](#resume)), a hosted `/ɡ/` + `/b/` relation, or a [role compound](#role-compound--agent--place--patient--recipient) on `/ɡ/`.
 
 [Dependents](dependents.md#which-noun)
 
@@ -639,9 +639,10 @@ Prefix-less *including / rather / instead / except*, discourse glue, and extra-n
 
 [Hooks](hooks.md)
 
-### Role compound / agent / instrument / patient / reltum
+### Role compound / agent / place / patient / recipient
+<a id="role-compound--agent--place--patient--recipient"></a>
 
-`a/e/u/o x ROOT`.
+`a/e/u/o x ROOT` ( **`o`** is also reltum on a relation stem).
 
 [Roles](roles.md#role-compounds)
 

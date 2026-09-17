@@ -55,7 +55,8 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zaxezeher", "z-agent-x-speech");
     expectLine("zaxuvugul", "z-agent-x-fight");
     expectLine("zaxuvugum", "z-agent-x-struggle");
-    expectLine("zexahamel", "z-instrument-x-hammer");
+    expectLine("zexelebel", "z-place-x-sleep");
+    expectLine("zoxezehel", "z-recipient-x-speech");
     expectLine("hexal", "h-aside-x-multi");
     expectLine("xuxul", "x-span-close");
     expectLine("x#e-", "x-starting-with");

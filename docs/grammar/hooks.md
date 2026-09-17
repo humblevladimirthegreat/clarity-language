@@ -154,7 +154,7 @@ Simplex vowels (one vowel plus an ending):
 
 **-l** is the exact extra. Frame **-m** waits for Intermediate, with the rest of the extra-noun grid.
 
-**Compare with:** *Additionally, Azawan walks* is a fronted hook whose next word is **not** `/b/` (`al zazawan vawalal`). *Like a duck* is still a hosted [simile](relations.md#similative) (`hurorom`). *Tells on behalf of Ululon* is [proxy](relations.md#proxy) (`hudagam`).
+**Compare with:** *Additionally, Azawan walks* is a fronted hook whose next word is **not** `/b/` (`al zazawan vawalal`). *Like a duck* is still a hosted [simile](relations.md#similative) (`hurorom`). *Tells on behalf of Ululon* is [proxy](relations.md#proxy) (`hudagam`). Naming the **place of an event** as its own noun (*a sleep-place*, *that scream-place*) is a [role compound](roles.md#role-compounds) with vowel **`e`**, not this hook on the same clause.
 
 ### Translation practice
 <a id="translation-practice"></a>

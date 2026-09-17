@@ -1,15 +1,14 @@
 # Role compounds
 <a id="roles"></a>
 
-When English would name a person from an event (*a fighter* from *fight*, *the one fought*), Agalan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [reference ending](reference-suffix.md). **`a`** is the doer, **`e`** is what the doer uses, **`u`** is the one the event happens to, and **`o`** is the other party of a relation.
+When English would name a person or place from an event (*a fighter* from *fight*, *the one told*, *a sleep-place*), Agalan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [reference ending](reference-suffix.md). **`a`** is the doer, **`e`** is the place of the event, **`u`** is the one the event happens to, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
 
 ## Beginner
 <a id="beginner"></a>
 
 ### Role compounds: the doer (`a`)
 <a id="role-compounds"></a>
-<a id="agent-patient-reltum"></a>
-<a id="agent-instrument-patient-reltum"></a>
+<a id="agent-place-patient-recipient"></a>
 
 English *a fighter* names who does the fighting, from the same idea as *fight*. Write a person or thing letter (`/z/` `/d/` `/b/`), then **`a`**, then mid-word **`x`**, then the event root, then an ordinary [reference ending](reference-suffix.md). The result is one content word (a **role compound**) that you can use as a participant. (cue: **a** ≈ add (add a doer))
 
@@ -31,7 +30,7 @@ Once the talk already has a matching event (*walks*), **-r** on the same stem me
 > `zaxawalar velebel.`
 >
 > z-Azawan | v-walk
-> z-←agent-x-walk | v-sleep
+> z-←walk | v-sleep
 >
 > "Azawan walks. The walker sleeps."
 
@@ -43,31 +42,51 @@ English *the one seen* or *the one fought* names the person the event happens to
 > `zuxejer vurunul.`
 >
 > z-Azawan | d-cat | v-see
-> z-←patient-x-see | v-run
+> z-←see | v-run
 >
 > "Azawan sees a cat. The one seen runs."
 
-### The implement (`e`)
+### The place (`e`)
 
-English *the hammer used* names what the doer uses so the event can go through. Use the same compound shape, but write **`e`** in the vowel slot. That named thing is the **instrument**: equipment in this event, not the doer and not what is hammered. (cue: **e** ≈ order (the means you order the event through))
+English *a sleep-place* names the spot an event sits in, from the same idea as *sleep*. Use the same compound shape as the doer, but write **`e`** in the vowel slot. That named thing is the **place of the event**: the scene, not the sleeper. (cue: **e** ≈ order (the scene the act is ordered in))
 
-> `zazawan dabogol vuwurul.`
-> `zexuwurur vajul.`
+You can name that kind of place with no prior sleep in the talk:
+
+> `zexelebel vajul.`
 >
-> z-Azawan | d-book | v-write
-> z-←instrument-x-write | v-sit
+> z-place-x-sleep | v-sit
 >
-> "Azawan writes a book. The implement sits."
+> "A sleep-place sits."
 
-`zexuwurul` is a writing-implement (the **-l** sense of *write*). A book as a mere object, with no event, stays `dabogol`.
+Once the talk already has a matching event, **-r** means **that** scene. The next sentence is a new claim about the place (who sees it, who punches it), not a locative on the first verb.
 
-**Compare with:** `zaxuwurul` is who writes; `zuxuwurul` is what is written. *Walks hastily* is ordinary [manner](clause.md#adverbs-h) (`/h/`), not this vowel. *Writes with a hammer* is [means](relations.md#means) (`hahanam` + `/b/`), not this vowel: **`exROOT`** *names* the implement.
+> `zululon vazagal.`
+> `zazawan dexazagar vejel.`
+>
+> z-Ululon | v-scream
+> z-Azawan | d-←scream | v-see
+>
+> "Ululon screams. Azawan sees the scream-place."
 
-### The other party (`o`)
+`zexogonul` is a construct-place (the **-l** sense of *construct*). A construction site as a listed kind, with no event, can stay `donugol`.
 
-Some stems name a **relation** (who is bound to whom), not an action. The extra person of that relation sits in **hosted** `/b/` after the relation word. To name that person from the relation stem (*the other party of the bond*), write **`o`** in the vowel slot. That named party is the **reltum**. (cue: **o** ≈ one (that other pole))
+**Compare with:** `zaxogonul` is who constructs; `duxogonul` is what is constructed. *Constructs in a house* locates **that same** constructing: extra-noun [hook](hooks.md#extra-noun) **`al`** plus `/b/`. Do not write **`exROOT`** when a hook on that clause would do. *Writes with a hammer* is hook **`ael`** plus `/b/`, not this vowel.
 
-**Not the same job as:** unhosted `/b/` as the recipient of a verb ([extra nouns](clause.md#extra-nouns)).
+### The extra `/b/` party (`o`)
+
+English *the one told* names who gets the telling. That person sits in unhosted `/b/` after the verb ([extra nouns](clause.md#extra-nouns)). To name them from the verb stem, write **`o`** in the vowel slot. That named party is the **recipient**. (cue: **o** ≈ one (that extra one))
+
+> `zazawan vezehel.`
+> `zoxezeher vurunul.`
+>
+> z-Azawan | v-tell
+> z-←tell | v-run
+>
+> "Azawan tells. The one told runs."
+
+You can name that kind with no prior telling: `zoxezehel` is an addressee (the **-l** sense of *speech*).
+
+Some stems name a **relation** (who is bound to whom), not an action. The extra person of that relation sits in **hosted** `/b/` after the relation word. The same **`o`** names that person from the relation stem (*the other party of the bond*). That named party is the **reltum**.
 
 > `zazawan gonogom bululon.`
 > `zoxonogor vurunul.`
@@ -77,18 +96,20 @@ Some stems name a **relation** (who is bound to whom), not an action. The extra 
 >
 > "Azawan is bound to Ululon. That other party of the bond runs."
 
+**Compare with:** extra-noun *for* (`el` plus `/b/`) is the intended get, not the hearer.
+
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…axROOT…` | names the doer of an event | *a fighter* / *the walker* | **a** ≈ add (add a doer) |
-| `…exROOT…` | names what the doer uses | *the hammer used* / *a fighting-implement* | **e** ≈ order (the means you order the event through) |
+| `…exROOT…` | names the place of an event | *a sleep-place* / *that scream-place* | **e** ≈ order (the scene the act is ordered in) |
 | `…uxROOT…` | names the undergoer of an event | *the one seen* / *the one fought* | **u** ≈ undo (the one it happens to) |
-| `…oxROOT…` | names the extra `/b/` party of a relation | *the other party of the bond* | **o** ≈ one (that other pole) |
+| `…oxROOT…` | names the extra `/b/` party | *the one told* / *the other party of the bond* | **o** ≈ one (that extra one) |
 
-**-r** looks back to the latest verb, event noun, or relation with that stem (including a stem already inside a role compound). The vowel still picks which part you mean: doer, implement, undergoer, or other party.
+**-r** looks back to the latest verb, event noun, or relation with that stem (including a stem already inside a role compound). The vowel still picks which part you mean: doer, place, undergoer, or extra `/b/` party.
 
 ### The event itself
 
-If you put the event stem on a thing letter with no role vowel (`duvugul`), you name the fight itself. Use **`ax`**, **`ex`**, or **`ux`** when you mean who fights, what they fight with, or who is fought.
+If you put the event stem on a thing letter with no role vowel (`duvugul`), you name the fight itself. Use **`ax`**, **`ex`**, **`ux`**, or **`ox`** when you mean who fights, where the fight is, who is fought, or who is told.
 
 > `zazawan duvugul vejel.`
 >
@@ -141,11 +162,11 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *construction* | `onugol` | |
 | *construct* | `ogonul` | |
 | *building* | `ogonum` | `ogonul` *construct* |
-| *hammer* | `ahamel` | |
 | *helmet* | `ehemel` | |
-| *brick* | `urugul` | |
 | *see* | `vejel` | `ejel` *eye* |
 | *sit* | `vajul` | `ajul` *chair* |
+| *sleep* | `elebel` | |
+| *tell* | `vezehel` | `ezehel` *speech* |
 | *punch* | `ubunul` | |
 | *scream* | `azagal` | |
 | *fight* | `uvugul` | |
@@ -169,12 +190,12 @@ z-agent-x-construct | v-sit
 z-Azawan | v-construct | z-←construct | d-helmet | v-see
 :::
 
-**3.** *Ululon hammers a brick. The implement sits.*
+**3.** *Ululon screams. Azawan sees the scream-place.*
 
 ::: details Show answer
-`zululon durugul vahamel. zexahamer vajul.`
+`zululon vazagal. zazawan dexazagar vejel.`
 
-z-Ululon | d-brick | v-hammer | z-←hammer | v-sit
+z-Ululon | v-scream | z-Azawan | d-←scream | v-see
 :::
 
 **4.** *Azawan sees Uhubun. The one seen sits.*
@@ -201,12 +222,12 @@ z-Azawan | g-agent-x-building
 z-Azawan | d-construction | v-see
 :::
 
-**7.** *Ululon punches Azawan. The one punched screams.*
+**7.** *Azawan tells. The one told punches.*
 
 ::: details Show answer
-`zululon zazawan vubunul. zuxubunur vazagal.`
+`zazawan vezehel. zoxezeher vubunul.`
 
-z-Ululon | z-Azawan | v-punch | z-←punch | v-scream
+z-Azawan | v-tell | z-←tell | v-punch
 :::
 
 **8.** *Azawan is bound to Ululon. That other party of the bond fights.*
@@ -219,13 +240,13 @@ z-Azawan | g-bond | b-Ululon | z-←bond | v-fight
 
 #### Agalan → English
 
-**1.** `zululon durugul vahamel. zazawan dexahamer vejel.`
+**1.** `zexelebel vajul.`
 
 ::: details Show answer
 
-z-Ululon | d-brick | v-hammer | z-Azawan | d-←hammer | v-see
+z-place-x-sleep | v-sit
 
-*Ululon hammers a brick. Azawan sees the implement.*
+*A sleep-place sits.*
 :::
 
 **2.** `zuhubun zazawan vejel. zuxejer vajul.`
@@ -273,13 +294,13 @@ z-Azawan | z-Ululon | v-fight | d-←fight | v-scream
 *Azawan fought Ululon. The one fought screams.*
 :::
 
-**7.** `zululon zazawan vubunul. zaxubunur vuvugul.`
+**7.** `zazawan vezehel. zoxezeher vurunul.`
 
 ::: details Show answer
 
-z-Ululon | z-Azawan | v-punch | z-←punch | v-fight
+z-Azawan | v-tell | z-←tell | v-run
 
-*Ululon punches Azawan. The puncher fights.*
+*Azawan tells. The one told runs.*
 :::
 
 **8.** `zuhubun gonogom bululon. zoxonogor vubunul.`

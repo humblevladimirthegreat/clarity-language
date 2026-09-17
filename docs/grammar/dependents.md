@@ -284,7 +284,7 @@ Beginner already used two sentences for English *who / that / which*. Prefer [re
 >
 > "Azawan sees a dog in a bank. The dog runs."
 
-A place, tool, or *of*-relation on the noun is still an extra-noun [hook](hooks.md#extra-noun) or hosted `/ɡ/` + `/b/` (*the guard [in](hooks.md#extra-noun) a bank*, *a book written [with a hammer](hooks.md#extra-noun)*). A one-place role as a kind (*sitting guard*, *the one seen*) is a [role compound](roles.md#role-compounds) on `/ɡ/`, the same pattern as *is a fighter*:
+A place, tool, or *of*-relation on the noun is still an extra-noun [hook](hooks.md#extra-noun) or hosted `/ɡ/` + `/b/` (*the guard [in](hooks.md#extra-noun) a bank*, *a book written [with a hammer](hooks.md#extra-noun)*). A one-place role as a kind (*sitting guard*, *the one seen*, *a sleep-place*) is a [role compound](roles.md#role-compounds) on `/ɡ/`, the same pattern as *is a fighter*:
 
 > `zazawan dugugal gaxajul vejel.`
 >

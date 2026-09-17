@@ -290,7 +290,7 @@ export type AnaphorBind = {
   match?: ContentMatch;
   /** Span TYPE vowel (cite / aside / mention / opaque). */
   typeVowel?: "a" | "e" | "o" | "u";
-  /** Role compound vowel (agent / patient / instrument / reltum). */
+  /** Role compound vowel (agent / place / patient / recipient). */
   roleVowel?: "a" | "e" | "u" | "o";
   /** Absent when no prior match. */
   antecedent?: LexWord;

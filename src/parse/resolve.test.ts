@@ -122,13 +122,22 @@ describe("resolve — role anaphors (roles.md)", () => {
     assert.equal(role!.antecedent?.raw, "vozowol");
   });
 
-  it("binds zexahamer as instrument of the prior hammer verb", () => {
-    const { anaphors } = resolveOf("zazawan durugul vahamel. zexahamer vajul.");
+  it("binds zexazagar as place of the prior scream verb", () => {
+    const { anaphors } = resolveOf("zululon vazagal. zazawan dexazagar vejel.");
     const role = anaphors.find((a) => a.kind === "role");
     assert.ok(role);
-    assert.equal(role!.pronoun.raw, "zexahamer");
+    assert.equal(role!.pronoun.raw, "dexazagar");
     assert.equal(role!.roleVowel, "e");
-    assert.equal(role!.antecedent?.raw, "vahamel");
+    assert.equal(role!.antecedent?.raw, "vazagal");
+  });
+
+  it("binds zoxezeher as recipient of the prior tell verb", () => {
+    const { anaphors } = resolveOf("zazawan vezehel. zoxezeher vurunul.");
+    const role = anaphors.find((a) => a.kind === "role");
+    assert.ok(role);
+    assert.equal(role!.pronoun.raw, "zoxezeher");
+    assert.equal(role!.roleVowel, "o");
+    assert.equal(role!.antecedent?.raw, "vezehel");
   });
 });
 

@@ -100,7 +100,7 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 >
 > "Azawan tells Ululon."
 
-Do not park that recipient immediately after a relation `/h/` or `/ɡ/`: `hurorom bululon` is *like Ululon*, not *to Ululon*. Put the pair first, then the recipient (`hurorom bazawan bululon`).
+Do not park that recipient immediately after a relation `/h/` or `/ɡ/`: `hurorom bululon` is *like Ululon*, not *to Ululon*. Put the pair first, then the recipient (`hurorom bazawan bululon`). To name the hearer from the verb stem (*the one told*), use a [role compound](roles.md#role-compounds) with vowel **`o`**.
 
 ### Turn (`/j/`): start a new speech move
 <a id="turn-j"></a>

@@ -32,7 +32,7 @@ The left root is the kind of thing; the right root narrows it (what field, what 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | full root **`x`** full root | two roots, one word | `zabanuxudel` *peanut butter* | **x** ≈ plus |
-| **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* | **a** agent / **e** instrument / **u** patient / **o** reltum |
+| **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* | **a** agent / **e** place / **u** patient / **o** recipient |
 | root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) or [ability](ability.md#ability) | `vuzunuxel` | extra vowel after the host |
 
 **Compare with:** two people stay two words (`zazawan zululon`). One double name is one word (`zazawaxululon`).
@@ -78,7 +78,7 @@ Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agala
 
 **Compare with:** a property on a noun uses `/ɡ/` (or `/w/`). A list uses a [join](joins.md).
 
-**Related form:** *a fighter* (who does / what is used / who undergoes / who relates) uses a [role compound](roles.md#role-compounds).
+**Related form:** *a fighter* (who does / where it happens / who undergoes / who is told) uses a [role compound](roles.md#role-compounds).
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -257,7 +257,7 @@ Beginner already used two roots glued with **`x`**, dictionary words with no **`
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | one vowel **`x`** one vowel, then a span ending | [span fence](spans.md) open or close | `daxal` … `xuxul` | vowel **x** vowel |
-| **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* | **a** agent / **e** instrument / **u** patient / **o** reltum |
+| **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* | **a** agent / **e** place / **u** patient / **o** recipient |
 | name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (hello or calling) | [greeting bid](#greeting-bid) | `azawaxan`; `jululoxen` | vowel on the name |
 | longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) (on a need) or [ability](ability.md#ability) (on another host) | `vuzunuxel` | extra vowel after the host |
 | longer root **`x`** a [number](numbers.md) (no ending of its own) | [numeric derivation](numeric-derivation.md#numeric-derivation) | `…x+1…` / speech `…xraba…` | number on the right |
@@ -297,7 +297,7 @@ Use the table above. Read both sides of the first **`x`** in this order:
 
 - The whole word is **`xuxul`** / **`xuxur`** / **`xuxum`** → a **span** is closing.
 - After the role letter: one vowel, **`x`**, one vowel, then a span ending → a **span** is opening ([spans](spans.md)).
-- After the role letter: one vowel **`a`** / **`e`** / **`u`** / **`o`**, **`x`**, then a longer root → a **role compound** (who does / what is used / who undergoes / who relates).
+- After the role letter: one vowel **`a`** / **`e`** / **`u`** / **`o`**, **`x`**, then a longer root → a **role compound** (who does / where it happens / who undergoes / who is told).
 - A name (one root or a [multipart proper name](reference-suffix.md#phrasal-proper-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a hello or under **`/j/`** → a [greeting bid](#greeting-bid).
 - A longer root, then **`x`**, then a single vowel **`a`** / **`e`** / **`o`** / **`u`** → **values** (on a need) or **ability** (on another host).
 - A longer root, then **`x`**, then a **number** (writing **`+`** / **`-`** / **`#`** / **`_`**; speech starts with **`r`**) → [numeric derivation](numeric-derivation.md#numeric-derivation).

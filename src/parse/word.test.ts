@@ -357,15 +357,25 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     });
   });
 
-  it("parses e x ROOT as instrument role (roles.md)", () => {
-    const word = parseOk("zexahamel");
+  it("parses e x ROOT as place role (roles.md)", () => {
+    const word = parseOk("zexelebel");
     assert.equal(word.pos, "z");
     assert.equal(word.ending, "l");
     assert.equal(word.family.kind, "x");
     if (word.family.kind === "x") {
       assert.equal(word.family.xFamily, "role");
       assert.equal(word.family.roleVowel, "e");
-      assert.deepEqual(word.family.rightRoots, ["ahame"]);
+      assert.deepEqual(word.family.rightRoots, ["elebe"]);
+    }
+  });
+
+  it("parses o x ROOT as recipient role (roles.md)", () => {
+    const word = parseOk("zoxezehel");
+    assert.equal(word.family.kind, "x");
+    if (word.family.kind === "x") {
+      assert.equal(word.family.xFamily, "role");
+      assert.equal(word.family.roleVowel, "o");
+      assert.deepEqual(word.family.rightRoots, ["ezehe"]);
     }
   });
 });

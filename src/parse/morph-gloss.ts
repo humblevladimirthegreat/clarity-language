@@ -225,9 +225,9 @@ const GREETING_STANCE: Record<string, string> = {
 
 const ROLE_VOWEL: Record<string, string> = {
   a: "agent",
-  e: "instrument",
+  e: "place",
   u: "patient",
-  o: "reltum",
+  o: "recipient",
 };
 
 const SPAN_TYPE: Record<string, string> = {
