@@ -353,7 +353,7 @@ Hosted: noun bolted onto a complex `/ɡ/` or `/h/`. Unhosted: recipient or addre
 
 ### Locative relation
 
-Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*) as extra-noun [hooks](hooks.md#extra-noun) plus landmark `/b/`. *Between* is hosted `/h/` or `/ɡ/` plus a `/b/` join. A *from A to B* path is two hook extras (source, then goal).
+Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; frame **-m** *amid* / *near* / *over* / *away from* / *in the direction of* / *out from among* / *by way of*) as extra-noun [hooks](hooks.md#extra-noun) plus landmark `/b/`. *Between* is hosted `/h/` or `/ɡ/` plus a `/b/` join. A *from A to B* path is two hook extras (source, then goal).
 
 [Relations](relations.md#locative-relations)
 
@@ -635,7 +635,7 @@ Content / span / number **-r** pointing back.
 
 ### Hook
 
-Prefix-less *including / rather / instead / except*, discourse glue, and extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (placement decides the job).
+Prefix-less *including / rather / instead / except*, discourse glue, and extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (frame **-m** *amid* / *over* / *near* / *in the direction of* / *away from* / *out from among* / *by way of* / *with in mind* / *by* / *contrary to*; placement decides the job).
 
 [Hooks](hooks.md)
 

@@ -152,7 +152,7 @@ Simplex vowels (one vowel plus an ending):
 >
 > "Azawan cooks for a salad."
 
-**-l** is the exact extra. Locative **-m** (*around*) waits for Intermediate, with the rest of the extra-noun grid.
+**-l** is the exact extra. Frame **-m** waits for Intermediate, with the rest of the extra-noun grid.
 
 **Compare with:** *Additionally, Azawan walks* is a fronted hook whose next word is **not** `/b/` (`al zazawan vawalal`). *Like a duck* is still a hosted [simile](relations.md#similative) (`hurorom`). *Tells on behalf of Ululon* is [proxy](relations.md#proxy) (`hudagam`).
 
@@ -370,18 +370,20 @@ Hook **-n** is only when the hook is **inside a proper-name phrase** ([**-n**](r
 
 Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). Stacked vowels name the rest of the everyday extras. Same trigger: `/b/` immediately on the right, and the word immediately to the left is **not** `/b/` (so `bazawan al bululon` stays *including*). Two extras need a non-`/b/` word between the first landmark and the next hook — the verb can sit there (`ul bazadol vawalal oel badadul`).
 
-| Agalan | Vowels | Name (**-l**) |
-|--------|--------|----------------|
-| **`al`** | **a** | **in** |
-| **`aol`** | **ao** | **on** |
-| **`ol`** | **o** | **at** |
-| **`oel`** | **oe** | **toward** |
-| **`ul`** | **u** | **from** |
-| **`ual`** | **ua** | **out of** |
-| **`uol`** | **uo** | **through** |
-| **`el`** | **e** | **for** |
-| **`ael`** | **ae** | **using** |
-| **`uel`** | **ue** | **against** |
+**-m** names a **frame extra**, not a second copy of the same extra: the landmark is a setting, not the exact contact, source, tool, or opponent.
+
+| **-l** | English | **-m** | English | Cue |
+|--------|---------|--------|---------|-----|
+| **`al`** | *in* | **`am`** | *amid* | **a** ≈ add (into a volume); **-m** that volume as the setting |
+| **`aol`** | *on* | **`aom`** | *over* | **ao** ≈ add onto one face; **-m** that face as the setting |
+| **`ol`** | *at* | **`om`** | *near* | **o** ≈ one (the one point); **-m** that point as the setting |
+| **`oel`** | *toward* | **`oem`** | *in the direction of* | **oe** ≈ order toward one point; **-m** that aim as the setting |
+| **`ul`** | *from* | **`um`** | *away from* | **u** ≈ undo (leave); **-m** that origin as the setting |
+| **`ual`** | *out of* | **`uam`** | *out from among* | **ua** ≈ leave a volume; **-m** that volume as the setting |
+| **`uol`** | *through* | **`uom`** | *by way of* | **uo** ≈ leave via one path; **-m** that path as the setting |
+| **`el`** | *for* | **`em`** | *with in mind* | **e** ≈ order (aim the act); **-m** the aim as a frame |
+| **`ael`** | *using* | **`aem`** | *by* | **ae** ≈ add an ordered means; **-m** the channel |
+| **`uel`** | *against* | **`uem`** | *contrary to* | **ue** ≈ undo aimed at; **-m** the opposing frame |
 
 > `zazawan vajul aol bajul.`
 >
@@ -401,20 +403,6 @@ Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). S
 >
 > "Azawan fights against a guard."
 
-**-m** names a **frame extra**, not a second copy of the same extra. Locatives are neighborhood / *around*. The last three cells have ordinary English of their own:
-
-| Name (**-l**) | Name (**-m**) |
-|--------|--------|
-| **in** | **around** (`am`) |
-| **on** | **around** (`aom`) |
-| **at** | **around** (`om`) |
-| **toward** | **around** (`oem`) |
-| **from** | **around** (`um`) |
-| **out of** | **around** (`uam`) |
-| **through** | **around** (`uom`) |
-| **for** | **with in mind** (`em`) |
-| **using** | **by** (`aem`) |
-| **against** | **contrary to** (`uem`) |
 
 > `zazawan vuwurul em bonenol.`
 >
@@ -524,12 +512,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-newspaper | including.open | z-Azawan | except | z-Ululon
 :::
 
-**2.** *Azawan writes around a page.*
+**2.** *Azawan writes over a page.*
 
 ::: details Show answer
 `zazawan vuwurul aom bababel.`
 
-z-Azawan | v-write | on.around | b-page
+z-Azawan | v-write | over | b-page
 :::
 
 **3.** *The page, with a newspaper as a replacement, and maybe more.*

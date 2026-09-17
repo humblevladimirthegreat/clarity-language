@@ -10,8 +10,7 @@ finish English cheat sheets, including tense
 add Agalan cheat sheet
 consider making negatives clearer with stacked u
 final exam
-respell and retie vocab
-test
+reconsider e on role compounds
 
 ## Evidentiality / tense
 
