@@ -84,9 +84,9 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zazawan velebel al bohohul.", "z-Azawan | v-sleep | in | b-house");
     expectLine("zodogolx al zagadal.", "z-dog-x | including | z-cat");
     expectLine("zazawan ul bazadol vawalal oel badadul.", "z-Azawan | from | b-station | v-walk | toward | b-train");
-    expectLine("zazawan velebel al welem bohohul.", "z-Azawan | v-sleep | in | w-very | b-house");
-    expectLine("zaladelx ul wal zaladal.", "z-plate-x | except | w-never | z-salad");
-    expectLine("zazawan hurorom welem budugul vawalal.", "z-Azawan | h-like | w-very | b-duck | v-walk");
+    expectLine("zazawan velebel welem al bohohul.", "z-Azawan | v-sleep | w-very | in | b-house");
+    expectLine("zaladelx wal ul zaladal.", "z-plate-x | w-never | except | z-salad");
+    expectLine("zazawan welem hurorom budugul vawalal.", "z-Azawan | w-very | h-like | b-duck | v-walk");
     expectLine("hal", "h-never");
     expectLine("har", "h-sometimes");
     expectLine("jol zuhubun vawalal har?", "j-question | z-Uhubun | v-walk | h-when");
@@ -308,7 +308,7 @@ describe("compareMorphGloss", () => {
 
   it("values bake stance and ending grain", () => {
     expectLine("zawaral gonogoxal", "z-wrapped-gift | g-relatedness-met-physical");
-    expectLine("zazegem gobobum walodoxur", "z-gathering | g-stimulus | w-autonomy-unmet-temporary");
+    expectLine("zazegem walodoxur gobobum", "z-gathering | w-autonomy-unmet-temporary | g-stimulus");
     expectLine("hogegam hanedem", "h-HIGH | h-CIRCUM");
   });
 

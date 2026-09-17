@@ -9,11 +9,11 @@ Compose opaque emotion labels from value plus arousal plus locus, number brainst
 ### Emotion compose
 <a id="emotion-compose"></a>
 
-When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: a [value](values.md) on the situation, how activated the charge is, and where you put it. Put the value on `/ɡ/` after a belonging, or on `/w/` after [stimulus](values.md#stimulus) **`gobobum`** when the noun is not yours, then **one ACT** and **one LOCUS** as `/h/` (or `/w/` on that adjective). You can then say the take without smuggling a single emotion word.
+When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: a [value](values.md) on the situation, how activated the charge is, and where you put it. Put the value on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](values.md#stimulus) **`gobobum`** when the noun is not yours, then **one ACT** and **one LOCUS** as `/h/` (or `/w/` immediately before that adjective). You can then say the take without smuggling a single emotion word.
 
-> `zezehel gobobum wolozoxur hogegam hanedem.`
+> `zezehel wolozoxur gobobum hogegam hanedem.`
 >
-> z-speech | g-stimulus | w-competence-unmet-temporary | h-HIGH | h-CIRCUM
+> z-speech | w-competence-unmet-temporary | g-stimulus | h-HIGH | h-CIRCUM
 >
 > "Anxious about the dialogue:" competence at stake for now; surge; room awash.
 
@@ -40,10 +40,10 @@ Under `/z/` or `/v/` the ordinary noun or verb uses the published literal ending
 
 | Agalan | English |
 |---------|---------|
-| `zezehel gobobum wolozoxur hogegam hanedem` | *anxious about the dialogue* (competence at stake, temporary; surge; room awash) |
-| `zezawam gobobum wonogoxum hogegam horurum` | *resentful about the division* (unmet relatedness; surge poured onto them) |
+| `zezehel wolozoxur gobobum hogegam hanedem` | *anxious about the dialogue* (competence at stake, temporary; surge; room awash) |
+| `zezawam wonogoxum gobobum hogegam horurum` | *resentful about the division* (unmet relatedness; surge poured onto them) |
 | `zebegum golozoxam hogegam habobom` | *proud of the draft* (met competence, mental channel; surge bottled) |
-| `zememol gobobum wonogoxum hozowom horurum` | *resentful about the memo* (unmet relatedness; stillness pooling at them) |
+| `zememol wonogoxum gobobum hozowom horurum` | *resentful about the memo* (unmet relatedness; stillness pooling at them) |
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
 
@@ -157,17 +157,17 @@ z-tent | g-competence-unmet-temporary | h-HIGH | h-CIRCUM
 **6.** *Resentful about the party* (unmet relatedness; surge poured onto them)
 
 ::: details Show answer
-`zabaral gobobum wonogoxum hogegam horurum.`
+`zabaral wonogoxum gobobum hogegam horurum.`
 
-z-party | g-stimulus | w-relatedness-unmet-modifiable | h-HIGH | h-EXTERNAL
+z-party | w-relatedness-unmet-modifiable | g-stimulus | h-HIGH | h-EXTERNAL
 :::
 
 **7.** *Resentful about the hug* (unmet relatedness; stillness pooling at them)
 
 ::: details Show answer
-`zuhugul gobobum wonogoxum hozowom horurum.`
+`zuhugul wonogoxum gobobum hozowom horurum.`
 
-z-hug | g-stimulus | w-relatedness-unmet-modifiable | h-LOW | h-EXTERNAL
+z-hug | w-relatedness-unmet-modifiable | g-stimulus | h-LOW | h-EXTERNAL
 :::
 
 #### Agalan → English
@@ -223,11 +223,11 @@ z-Ululon | z-solution | g-first | v-tell
 *Ululon names solution 1.*
 :::
 
-**7.** `zurewol gobobum wonogoxum hogegam horurum.`
+**7.** `zurewol wonogoxum gobobum hogegam horurum.`
 
 ::: details Show answer
 
-z-fireworks | g-stimulus | w-relatedness-unmet-modifiable | h-HIGH | h-EXTERNAL
+z-fireworks | w-relatedness-unmet-modifiable | g-stimulus | h-HIGH | h-EXTERNAL
 *Resentful about the fireworks* (unmet relatedness; surge poured onto them).
 :::
 
@@ -238,7 +238,7 @@ z-fireworks | g-stimulus | w-relatedness-unmet-modifiable | h-HIGH | h-EXTERNAL
 <a id="universality"></a>
 <a id="universality-mood"></a>
 
-English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Keep *who / when* on the [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / …). Write exceptionlessness as a closed `/h/` mood root (optional `/w/` on a preceding `/ɡ/`). You can then pair *always* with *usually*, *by definition*, and the rest without changing the domain fence.
+English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Keep *who / when* on the [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / …). Write exceptionlessness as a closed `/h/` mood root (optional `/w/` immediately before a `/ɡ/`). You can then pair *always* with *usually*, *by definition*, and the rest without changing the domain fence.
 
 > `zazawan hual vawalal hugudol.`
 >

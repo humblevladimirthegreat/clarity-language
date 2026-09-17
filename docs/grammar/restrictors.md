@@ -1,7 +1,7 @@
 # Restrictors (`/h/` / `/w/`)
 <a id="restrictors"></a>
 
-Use these words when you want to say **when** a claim counts: *only when raining*, *never*, *always*. They take the adverb letter **`h`** (or **`w`** on the previous adjective) plus the same vowels and endings you already use on [joins](joins.md) (`hal`, `hual`, `ham`, …). Time or case words sit **before** the restrictor; together they limit the verb claim (or that adjective) instead of adding another manner.
+Use these words when you want to say **when** a claim counts: *only when raining*, *never*, *always*. They take the adverb letter **`h`** (or **`w`** immediately before the adjective or hook they limit) plus the same vowels and endings you already use on [joins](joins.md) (`hal`, `hual`, `ham`, …). Time or case words sit **before** the restrictor; together they limit the verb claim (or that adjective) instead of adding another manner.
 
 ## Beginner
 <a id="beginner"></a>
@@ -86,56 +86,56 @@ English *sometimes* is the usual match next to *never* / *always*. It still only
 >
 > "No. Uhubun walks at some other time."
 
-### On the previous adjective (`/w/`)
+### On the following adjective (`/w/`)
 
-The same restrictor vowels and endings can limit **only the host you just wrote**, not the whole verb claim. Spell them with letter **`w`** instead of **`h`**. The host is the previous adjective, or a prefix-less [hook](hooks.md#hook-w). Occasion words that belong to that host sit immediately before the restrictor and also take **`w`**. `/h/` still limits the clause.
+The same restrictor vowels and endings can limit **only the host you are about to write**, not the whole verb claim. Spell them with letter **`w`** instead of **`h`**. The host is the next adjective, or a prefix-less [hook](hooks.md#hook-w). Occasion words that belong to that host sit immediately before the restrictor and also take **`w`**. `/h/` still limits the clause.
 
-> `zazawan guzumum wal.`
+> `zazawan wal guzumum.`
 >
-> z-Azawan | g-happy | w-never
+> z-Azawan | w-never | g-happy
 >
 > "Azawan is never happy."
 
-> `zaladelx ul wal zaladal.`
+> `zaladelx wal ul zaladal.`
 >
-> z-plate-x | except | w-never | z-salad
+> z-plate-x | w-never | except | z-salad
 >
 > "The plates, never excepting a salad."
 
-> `zululon guzumum wual.`
+> `zululon wual guzumum.`
 >
-> z-Ululon | g-happy | w-always
+> z-Ululon | w-always | g-happy
 >
 > "Ululon is always happy."
 
-> `zuhubun guzumum war.`
+> `zuhubun war guzumum.`
 >
-> z-Uhubun | g-happy | w-sometimes
+> z-Uhubun | w-sometimes | g-happy
 >
 > "Uhubun is sometimes happy."
 
-> `zazawan guzumum wanunul wal.`
+> `zazawan wanunul wal guzumum.`
 >
-> z-Azawan | g-happy | w-rain | w-only-when
+> z-Azawan | w-rain | w-only-when | g-happy
 >
 > "Azawan is happy only when raining."
 
-> `zululon guzumum wor.`
+> `zululon wor guzumum.`
 >
-> z-Ululon | g-happy | w-anytime
+> z-Ululon | w-anytime | g-happy
 >
 > "Ululon is happy anytime."
 
-> `zuhubun guzumum wur.`
+> `zuhubun wur guzumum.`
 >
-> z-Uhubun | g-happy | w-some-other-time
+> z-Uhubun | w-some-other-time | g-happy
 >
 > "Uhubun is happy at some other time."
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `/h/` | limits the clause | *when the verb claim counts* | **h** starts *how* / *when* / *where* |
-| `/w/` | same map on the previous adjective or hook | *never happy* / *never excepting* | **w** ≈ with (stuck to that host) |
+| `/w/` | same map on the next adjective or hook | *never happy* / *never excepting* | **w** ≈ with (stuck to that host) |
 
 **Compare with:** extra detail on an adjective is still ordinary `/w/` from [clause](clause.md#adjective-detail-w). A restrictor on `/w/` answers **when that adjective or hook counts**.
 
@@ -206,9 +206,9 @@ z-Uhubun | v-swim | h-always
 **4.** *Azawan is never happy.*
 
 ::: details Show answer
-`zazawan guzumum wal.`
+`zazawan wal guzumum.`
 
-z-Azawan | g-happy | w-never
+z-Azawan | w-never | g-happy
 :::
 
 **5.** *Ululon swims sometimes.*
@@ -263,11 +263,11 @@ z-Azawan | v-swim | h-never
 *Azawan never swims.*
 :::
 
-**3.** `zululon guzumum wual.`
+**3.** `zululon wual guzumum.`
 
 ::: details Show answer
 
-z-Ululon | g-happy | w-always
+z-Ululon | w-always | g-happy
 
 *Ululon is always happy.*
 :::
@@ -290,11 +290,11 @@ z-Azawan | v-swim | h-rain | h-night | h-when.open
 *Azawan swims when raining and at night, among other times.*
 :::
 
-**6.** `zuhubun guzumum war.`
+**6.** `zuhubun war guzumum.`
 
 ::: details Show answer
 
-z-Uhubun | g-happy | w-sometimes
+z-Uhubun | w-sometimes | g-happy
 
 *Uhubun is sometimes happy.*
 :::
@@ -338,7 +338,7 @@ Each listed restrictor occasion is a simple `/h/` or `/w/` content word, or a co
 <a id="more-occasions"></a>
 <a id="defined-core-full"></a>
 
-Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *sometimes* / *anytime* / *some other time* (`har` / `hor` / `hur`). The rest of the same vowel map names exclusive, inclusive, *not when*, ranked, and leftover readings. `/w/` uses that **same** map on the previous adjective or prefix-less hook (`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`, and the rows below). One restrictor chain is one `/h/` unit (or one `/w/` stack on its host).
+Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *sometimes* / *anytime* / *some other time* (`har` / `hor` / `hur`). The rest of the same vowel map names exclusive, inclusive, *not when*, ranked, and leftover readings. `/w/` uses that **same** map on the next adjective or prefix-less hook (`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`, and the rows below). One restrictor chain is one `/h/` unit (or one `/w/` stack immediately before its host).
 
 > `zazawan vawalal hanunul hunugul hol.`
 >
@@ -392,9 +392,9 @@ Statement readings below. Asking *when*: [questions.md](questions.md#when).
 | **`hur`** | unspecified leftover occasion | *some time other than these* | *some other time* | **u** ≈ undo + **-r** |
 | **`hael`** | equal frequency frame | *as often as among these* / *equally when these* | *equally often* / *tied frequency frame* | **a** ≈ add + **e** ≈ order |
 
-> `zazawan guzumum wanunul wunugul wol.`
+> `zazawan wanunul wunugul wol guzumum.`
 >
-> z-Azawan | g-happy | w-rain | w-night | w-when-one
+> z-Azawan | w-rain | w-night | w-when-one | g-happy
 >
 > "Azawan is happy either when raining or at night (not both)."
 
@@ -478,9 +478,9 @@ z-Azawan | v-climb | h-ice | h-fog | h-oe
 **7.** *Azawan is happy either when raining or at night, not both.*
 
 ::: details Show answer
-`zazawan guzumum wanunul wunugul wol.`
+`zazawan wanunul wunugul wol guzumum.`
 
-z-Azawan | g-happy | w-rain | w-night | w-when-one
+z-Azawan | w-rain | w-night | w-when-one | g-happy
 :::
 
 **8.** *Uhubun screams if Ululon falls.*
@@ -556,11 +556,11 @@ z-Azawan | v-scream | h-if | b-that-clause | z-Ululon | v-down
 *Azawan screams if Ululon falls.*
 :::
 
-**8.** `zululon guzumum wanunul wunugul wol.`
+**8.** `zululon wanunul wunugul wol guzumum.`
 
 ::: details Show answer
 
-z-Ululon | g-happy | w-rain | w-night | w-when-one
+z-Ululon | w-rain | w-night | w-when-one | g-happy
 
 *Ululon is happy either when raining or at night, not both.*
 :::

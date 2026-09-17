@@ -172,7 +172,7 @@ export type LeftEdge = {
   vocatives: LexWord[];
   polars: LexWord[];
   hook?: LexWord;
-  /** `/w/` immediately after a left-edge hook. */
+  /** `/w/` immediately before a left-edge hook. */
   hookModifiers?: LexWord[];
   force?: LexWord;
   impliedForce?: ImpliedForce;

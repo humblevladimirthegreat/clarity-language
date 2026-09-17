@@ -45,11 +45,11 @@ When English would say *the most challenging*, you are still ranking, but you na
 ### Degree (*much* / *slightly*)
 <a id="degree"></a>
 
-English *much more* / *slightly more* adds **how large the gap is**, without giving a number. Write that extra detail as `/w/` after the same shared adjective.
+English *much more* / *slightly more* adds **how large the gap is**, without giving a number. Write that extra detail as `/w/` immediately before the same shared adjective.
 
-> `zazawan zululon zel gomonam wogegal.`
+> `zazawan zululon zel wogegal gomonam.`
 >
-> z-Azawan | z-Ululon | z-rank/more | g-challenge | w-ocean
+> z-Azawan | z-Ululon | z-rank/more | w-ocean | g-challenge
 >
 > "Azawan is much more challenging than Ululon."
 
@@ -144,9 +144,9 @@ z-Azawan | z-Uhubun | z-equal-rank.open | g-agility
 **5.** *Ululon is much more intense than Azawan.*
 
 ::: details Show answer
-`zululon zazawan zel gohogem wogegal.`
+`zululon zazawan zel wogegal gohogem.`
 
-z-Ululon | z-Azawan | z-rank/more | g-intensity | w-ocean
+z-Ululon | z-Azawan | z-rank/more | w-ocean | g-intensity
 :::
 
 **6.** *Uhubun is more hasty than Ululon.*
@@ -203,11 +203,11 @@ z-Uhubun | z-Azawan | z-equal-rank.open | g-intensity
 *Uhubun is about as intense as Azawan.*
 :::
 
-**5.** `zuhubun zululon zel guvuvem wogegal.`
+**5.** `zuhubun zululon zel wogegal guvuvem.`
 
 ::: details Show answer
 
-z-Uhubun | z-Ululon | z-rank/more | g-agility | w-ocean
+z-Uhubun | z-Ululon | z-rank/more | w-ocean | g-agility
 
 *Uhubun is much more agile than Ululon.*
 :::
@@ -321,7 +321,7 @@ English *two meters more challenging* still ranks two people on one quality, and
 >
 > "Azawan is two meters more challenging than Ululon."
 
-**Related form:** vague *much* / *slightly* is shared `/w/` after the scale adjective (`wogegal`), not a counted `/b/`.
+**Related form:** vague *much* / *slightly* is shared `/w/` immediately before the scale adjective (`wogegal`), not a counted `/b/`.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -466,11 +466,11 @@ z-Azawan | z-Ululon | z-rank/more | g-heavy | b-gram | g-five
 *Azawan is five grams heavier than Ululon.*
 :::
 
-**6.** `zuhubun zazawan zel guluvum wogegal.`
+**6.** `zuhubun zazawan zel wogegal guluvum.`
 
 ::: details Show answer
 
-z-Uhubun | z-Azawan | z-rank/more | g-exertion | w-ocean
+z-Uhubun | z-Azawan | z-rank/more | w-ocean | g-exertion
 
 *Uhubun is much more exerted than Azawan.*
 :::

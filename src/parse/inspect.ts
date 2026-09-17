@@ -455,8 +455,8 @@ function joinLabel(joins: LexWord[], shared: Map<string, SharedRole>): string {
 }
 
 function walkGPackage(cursor: Cursor, pack: GPackage, into: number[]) {
-  pushIndex(into, takeRaw(cursor, pack.word.raw));
   for (const mod of pack.modifiers) pushIndex(into, takeRaw(cursor, mod.raw));
+  pushIndex(into, takeRaw(cursor, pack.word.raw));
   if (pack.bound) pushIndex(into, takeRaw(cursor, pack.bound.raw));
 }
 
@@ -608,8 +608,8 @@ function walkUnit(
       walkGPackage(cursor, unit.adj, into);
       break;
     case "h":
-      pushIndex(into, takeRaw(cursor, unit.unit.word.raw));
       for (const mod of unit.unit.modifiers) pushIndex(into, takeRaw(cursor, mod.raw));
+      pushIndex(into, takeRaw(cursor, unit.unit.word.raw));
       if (unit.unit.bound) pushIndex(into, takeRaw(cursor, unit.unit.bound.raw));
       break;
     case "linker":
@@ -617,8 +617,8 @@ function walkUnit(
       pushIndex(into, takeRaw(cursor, unit.word.raw));
       break;
     case "hook":
-      pushIndex(into, takeRaw(cursor, unit.word.raw));
       for (const mod of unit.modifiers) pushIndex(into, takeRaw(cursor, mod.raw));
+      pushIndex(into, takeRaw(cursor, unit.word.raw));
       break;
     case "span":
       walkSpan(cursor, unit.span, constructions, sharedRoles, into);
@@ -678,8 +678,8 @@ function walkUtterance(
   const left = utterance.left;
   for (const voc of left.vocatives) takeRaw(cursor, voc.raw);
   for (const polar of left.polars) takeRaw(cursor, polar.raw);
-  if (left.hook) takeRaw(cursor, left.hook.raw);
   for (const mod of left.hookModifiers ?? []) takeRaw(cursor, mod.raw);
+  if (left.hook) takeRaw(cursor, left.hook.raw);
   if (left.force) takeRaw(cursor, left.force.raw);
   const sink: number[] = [];
   for (const body of utterance.bodies) {

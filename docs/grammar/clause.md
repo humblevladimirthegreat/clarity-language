@@ -53,11 +53,11 @@ When you name a **property** (*blue*), put that word in `/ɡ/` (an **adjective**
 ### Extra detail on an adjective (`/w/`)
 <a id="adjective-detail-w"></a>
 
-After an adjective, you can add how intense it is or in what manner. That extra detail uses `/w/` immediately after the `/ɡ/` word.
+Before an adjective, you can add how intense it is or in what manner. That extra detail uses `/w/` immediately before the `/ɡ/` word.
 
-> `zodogol gelulul welem vawalal.`
+> `zodogol welem gelulul vawalal.`
 >
-> z-dog | g-blue | w-very | v-walk
+> z-dog | w-very | g-blue | v-walk
 >
 > "A very blue dog walks."
 
@@ -76,9 +76,9 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 <a id="extra-nouns"></a>
 <a id="unhosted-b"></a>
 
-`/b/` names an extra person or thing. It has two jobs, and you can tell them apart from the word **immediately before** `/b/` after skipping any `/w/` words. `/w/` never hosts `/b/`; it only grades the previous `/ɡ/` or `/h/` word.
+`/b/` names an extra person or thing. It has two jobs, and you can tell them apart from the word **immediately before** `/b/`. `/w/` never hosts `/b/`; it only grades the next `/ɡ/` or `/h/` word (or hook).
 
-**Hosted.** Some adjectives and adverbs name a **relation** that needs another person or thing (*like …*). Put that extra noun in `/b/` **right after** the `/ɡ/` or `/h/` word, or after that word plus `/w/` detail. The root on the `/ɡ/` or `/h/` word names the relation; `/b/` marks the noun that completes it. Keep that pair together.
+**Hosted.** Some adjectives and adverbs name a **relation** that needs another person or thing (*like …*). Put that extra noun in `/b/` **right after** the `/ɡ/` or `/h/` word. Optional `/w/` detail sits **immediately before** that host, so the pair stays together. The root on the `/ɡ/` or `/h/` word names the relation; `/b/` marks the noun that completes it.
 
 > `hurorom bazawan`
 >
@@ -86,9 +86,9 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 >
 > "like Azawan"
 
-> `hurorom welem bazawan`
+> `welem hurorom bazawan`
 >
-> h-like | w-very | b-Azawan
+> w-very | h-like | b-Azawan
 >
 > "very like Azawan"
 
@@ -168,7 +168,7 @@ Role letters on this page:
 | `/b/` | extra noun: recipient of the verb, or the piece after a relation word | **b** ≈ bolted on (the extra piece) |
 | `/v/` | verb (the action) | **v** as in English *verb* |
 | `/ɡ/` | adjective (a property of the noun) | **ɡ** ≈ grade (a rating of the noun) |
-| `/w/` | extra detail on the previous `/ɡ/` or `/h/` word | **w** ≈ with (stuck to that host) |
+| `/w/` | extra detail on the next `/ɡ/` or `/h/` word | **w** ≈ with (stuck to that host) |
 | `/h/` | adverb (how / when / where) | **h** starts *how* / *when* / *where* |
 | `/j/` | turn (start a new speech move) | **j** ≈ jump (a new act) |
 
@@ -233,9 +233,9 @@ z-Uhubun | d-Azawan | v-see
 **4.** *A very angry Ululon stands.*
 
 ::: details Show answer
-`zululon ganagal welem vadanal.`
+`zululon welem ganagal vadanal.`
 
-z-Ululon | g-angry | w-very | v-stand
+z-Ululon | w-very | g-angry | v-stand
 :::
 
 **5.** *Azawan writes hastily.*
@@ -373,7 +373,7 @@ English often puts the adjective before the noun (*a blue dog*). Agalan can too:
 >
 > "a blue dog"
 
-`/b/` and `/w/` still follow that adjective (`glelulul wegelom zodogol` = *a loud-volume blue dog*). Before-the-noun order is optional (meter, what you put first for emphasis, or comfort from your first language). This extra **`l`** is only on adjectives (`/ɡ/`).
+`/b/` still follows that adjective. `/w/` sits immediately before it (`wegelom glelulul zodogol` = *a loud-volume blue dog*), so **`l`** still looks ahead to the next noun. Before-the-noun order is optional (meter, what you put first for emphasis, or comfort from your first language). This extra **`l`** is only on adjectives (`/ɡ/`).
 
 ### As-for and free-order ties
 <a id="as-for"></a>
@@ -393,11 +393,11 @@ Several `/h/` units have no fixed order. Each unit’s role comes from its dicti
 ### Complex chaining
 <a id="complex-chaining"></a>
 
-A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). `/w/` that grades that adjective sits **immediately after** the `/ɡ/` word, **before** `/b/`. A further plain adjective after that pair describes the **extra noun**, not the first noun.
+A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). `/w/` that grades that adjective sits **immediately before** the `/ɡ/` word. A further plain adjective after that pair describes the **extra noun**, not the first noun.
 
-> `zodogol gonunul welem bazawan.`
+> `zodogol welem gonunul bazawan.`
 >
-> z-dog | g-SAME | w-very | b-Azawan
+> z-dog | w-very | g-SAME | b-Azawan
 >
 > "a dog the very same as Azawan"
 
@@ -407,9 +407,9 @@ A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). `/w/` that grades t
 >
 > "a dog the same as blue Azawan"
 
-You can chain more complex units onto those extra nouns. Two complex adjectives on the same first noun need [another sentence](dependents.md#which-noun). Several `/h/` units on one verb are fine (each plain `/h/`, or `/h/` plus optional `/w/` plus `/b/` together, counts as one). An unhosted recipient `/b/` may follow a finished pair (`hurorom bazawan bululon`); it still must not sit in the hosted slot after the relation word.
+You can chain more complex units onto those extra nouns. Two complex adjectives on the same first noun need [another sentence](dependents.md#which-noun). Several `/h/` units on one verb are fine (each plain `/h/`, or optional `/w/` plus `/h/` plus `/b/` together, counts as one). An unhosted recipient `/b/` may follow a finished pair (`hurorom bazawan bululon`); it still must not sit in the hosted slot after the relation word.
 
-**Compare with:** a [hook](hooks.md#extra-noun) with `/b/` after optional `/w/` and no `/b/` to the left is *in* / *at* / *for*, not the recipient.
+**Compare with:** a [hook](hooks.md#extra-noun) with `/b/` right after the hook and no `/b/` to the left is *in* / *at* / *for*, not the recipient.
 
 
 

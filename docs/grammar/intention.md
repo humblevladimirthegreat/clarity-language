@@ -9,7 +9,7 @@ English *will* and *going to* can mean **intention** (the course someone means t
 ### Plan
 <a id="plan-predict"></a>
 
-To say what someone **means to do**, use the closed mood root **`emaba`**. Spell it as floating `/h/`: **`hemaba`** plus an ending, then the ordinary content verb (*walk*, *write*). That lets you mark intention without borrowing English *will*, which can also be a forecast. Prefer floating `/h/`; use `/w/` only when the mood frames a preceding `/ɡ/` adjective. (cue: 🗺️ *map*: a map charts a course you mean to take)
+To say what someone **means to do**, use the closed mood root **`emaba`**. Spell it as floating `/h/`: **`hemaba`** plus an ending, then the ordinary content verb (*walk*, *write*). That lets you mark intention without borrowing English *will*, which can also be a forecast. Prefer floating `/h/`; use `/w/` only when the mood frames the `/ɡ/` adjective it sits immediately before. (cue: 🗺️ *map*: a map charts a course you mean to take)
 
 > `zazawan hemabam vawalal.`
 >
@@ -227,7 +227,7 @@ h-predict | v-fight
 <a id="decision"></a>
 <a id="decision-mood"></a>
 
-English *decide* / *I've decided* / *final decision* folds **how locked the pick is** into the verb. Agalan uses one closed mood root instead: spell **`ehege`** as floating `/h/` (**`hehege`** plus an ending), then an ordinary content verb. The ending is how revisable the pick is (still open, settled, or only for now), so you can keep the same content verb and change only that ending. Prefer floating `/h/`; use `/w/` only when the mood frames a preceding `/ɡ/` adjective. (cue: ✅ *check*: a checkmark confirms a pick)
+English *decide* / *I've decided* / *final decision* folds **how locked the pick is** into the verb. Agalan uses one closed mood root instead: spell **`ehege`** as floating `/h/` (**`hehege`** plus an ending), then an ordinary content verb. The ending is how revisable the pick is (still open, settled, or only for now), so you can keep the same content verb and change only that ending. Prefer floating `/h/`; use `/w/` only when the mood frames the `/ɡ/` adjective it sits immediately before. (cue: ✅ *check*: a checkmark confirms a pick)
 
 Ordinary content is still available (`zehegel` *a checkmark*; `vehegel` *to check / tick*).
 

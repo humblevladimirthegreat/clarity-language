@@ -235,8 +235,8 @@ describe("parse — SVO slots", () => {
 });
 
 describe("parse — hosted /w/ before /b/", () => {
-  it("parses simile with /w/ between host and /b/", () => {
-    const result = parseText("zazawan hurorom welem budugul vawalal.");
+  it("parses simile with /w/ left of host, then /b/", () => {
+    const result = parseText("zazawan welem hurorom budugul vawalal.");
     const units = result.utterances[0]!.bodies[0]!.clause.units;
     const h = units.find((u) => u.kind === "h");
     assert.ok(h && h.kind === "h");
@@ -244,8 +244,8 @@ describe("parse — hosted /w/ before /b/", () => {
     assert.equal(h.unit.bound?.raw, "budugul");
   });
 
-  it("parses extra-noun hook with restrictor /w/ before /b/", () => {
-    const result = parseText("zodogol velebel al wal bohohul.");
+  it("parses extra-noun hook with restrictor /w/ left of the hook", () => {
+    const result = parseText("zodogol velebel wal al bohohul.");
     const units = result.utterances[0]!.bodies[0]!.clause.units;
     const hook = units.find((u) => u.kind === "hook");
     assert.ok(hook && hook.kind === "hook");
@@ -253,7 +253,7 @@ describe("parse — hosted /w/ before /b/", () => {
   });
 
   it("parses discourse hook with /w/", () => {
-    const result = parseText("al welem zazawan vawalal.");
+    const result = parseText("welem al zazawan vawalal.");
     assert.equal(result.utterances[0]!.left.hook?.raw, "al");
     assert.equal(result.utterances[0]!.left.hookModifiers?.[0]?.raw, "welem");
   });

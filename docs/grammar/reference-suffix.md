@@ -263,7 +263,7 @@ The rest of the role map (same **-n**):
 | `/z/` `/d/` `/b/` + **-n** | this named entity | person, place, titled work, unique referent (*Azawan*, *Paris*, *the Odyssey*; *book by* **[Rowling]**) |
 | `/v/` + **-n** | this named event, rite, or titled action | *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]** |
 | `/ɡ/` + **-n** | this named style, tradition, brand, or category | **[Art Deco]** furniture, **[Buddhist]** monastery, **[iOS]** app (*a buddhist text* is still **-l**) |
-| `/w/` + **-n** | named scale, grade, or criterion on the preceding adjective | *spicy* **[Scoville]**, *large* **[King-size]**; ranked *worse than…* comparees: [comparatives](comparatives.md#judgment-benchmarks) |
+| `/w/` + **-n** | named scale, grade, or criterion on the following adjective | *spicy* **[Scoville]**, *large* **[King-size]**; ranked *worse than…* comparees: [comparatives](comparatives.md#judgment-benchmarks) |
 | `/h/` + **-n** | named standard, channel, or official frame | *according to* **[GAAP]**, *in* **[Q3]** as the named quarter ([number **-n**](numbers.md#number-endings) on number words) |
 | `/j/` vocative + **-n** | address this named person, place, or title | `jululon`; titled group (*Team Alpha*); kind-based *everyone* uses **-l** |
 | `/j/` interjection + **-n** | named formula or conventional call | **[Amen]**, branded catchphrases; polar *yes* / *no* uses **-l** / **-m** ([polar stance](questions.md#polar-stance)) |

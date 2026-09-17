@@ -101,7 +101,7 @@ Listener special plus **-x**: the current addressees (no speaker).
 
 ### Adjective extra (`/w/`)
 
-Detail on the previous adjective, not the whole clause.
+Detail on the following adjective, not the whole clause.
 
 [Clause](clause.md)
 
@@ -635,7 +635,7 @@ Content / span / number **-r** pointing back.
 
 ### Hook
 
-Prefix-less *including / rather / instead / except*, discourse glue, and extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (frame **-m** *amid* / *over* / *near* / *in the direction of* / *away from* / *out from among* / *by way of* / *with in mind* / *by* / *contrary to*; placement decides the job). Optional `/w/` immediately after the hook grades that hook (including restrictors); `/b/` may follow that `/w/` stretch.
+Prefix-less *including / rather / instead / except*, discourse glue, and extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (frame **-m** *amid* / *over* / *near* / *in the direction of* / *away from* / *out from among* / *by way of* / *with in mind* / *by* / *contrary to*; placement decides the job). Optional `/w/` immediately before the hook grades that hook (including restrictors); `/b/` sits immediately after the hook.
 
 [Hooks](hooks.md)
 

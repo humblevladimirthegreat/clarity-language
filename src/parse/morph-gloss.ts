@@ -672,10 +672,10 @@ function contextFor(
   }
   if (parsed) ctx.discourseHook = isLeftEdgeHook(word, parsed);
   if (word.family.kind === "hook") {
-    let i = index + 1;
-    while (words[i]?.pos === "w") i += 1;
-    const next = words[i];
-    const prev = words[index - 1];
+    const next = words[index + 1];
+    let i = index - 1;
+    while (words[i]?.pos === "w") i -= 1;
+    const prev = words[i];
     ctx.extraNounHook = next?.pos === "b" && prev?.pos !== "b";
   }
   if (word.reading === "restrictor") {

@@ -299,7 +299,7 @@ Use the table above. Read both sides of the first **`x`** in this order:
 - After the role letter: one vowel, **`x`**, one vowel, then a span ending → a **span** is opening ([spans](spans.md)).
 - After the role letter: one vowel **`a`** / **`e`** / **`u`** / **`o`**, **`x`**, then a longer root → a **role compound** (who does / where it happens / who undergoes / who is told).
 - A name (one root or a [multipart proper name](reference-suffix.md#phrasal-proper-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a hello or under **`/j/`** → a [greeting bid](#greeting-bid).
-- A longer root, then **`x`**, then a single vowel **`a`** / **`e`** / **`o`** / **`u`** → **values** (on a need: `/ɡ/` if you keep the noun, `/w/` after **`gobobum`** if you do not) or **ability** (on another host).
+- A longer root, then **`x`**, then a single vowel **`a`** / **`e`** / **`o`** / **`u`** → **values** (on a need: `/ɡ/` if you keep the noun, `/w/` immediately before **`gobobum`** if you do not) or **ability** (on another host).
 - A longer root, then **`x`**, then a **number** (writing **`+`** / **`-`** / **`#`** / **`_`**; speech starts with **`r`**) → [numeric derivation](numeric-derivation.md#numeric-derivation).
 - Full roots on **both** sides of the first **`x`** (and maybe more **`x`** + root) → an ordinary compound (sense or name).
 

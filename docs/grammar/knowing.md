@@ -341,7 +341,7 @@ English *has walked* and *used to walk* often smuggle **when** the event sits. A
 | **`honenom`** | outcome still on the current tally | *still counts* / residue | `onenom` *debt* | 💰: unpaid balance still on the books |
 | **`hemebem`** | not the climate claimed now | *former climate* | `emebem` *emptiness* | 🪹: the nesting season is over |
 
-Prefer floating `/h/`. Use `/w/` only when the standing grades a preceding `/ɡ/` adjective. The overlay ending stays **-m**.
+Prefer floating `/h/`. Use `/w/` only when the standing grades the `/ɡ/` adjective it sits immediately before. The overlay ending stays **-m**.
 
 ### Notional (as-if framing)
 <a id="notional"></a>
@@ -600,17 +600,17 @@ z-Azawan | h-always | v-tell | h-FORMER
 ### Mood on one adjective
 <a id="mood-on-adjective"></a>
 
-These `/h/` moods usually sit over the whole clause. When the *could be*, channel, residue / former climate, or as-if frame applies only to a preceding adjective (`/ɡ/`), write the same mood under `/w/` instead.
+These `/h/` moods usually sit over the whole clause. When the *could be*, channel, residue / former climate, or as-if frame applies only to the `/ɡ/` adjective it sits immediately before, write the same mood under `/w/` instead.
 
-> `zazawan gelulul wuvuvum vawalal.`
+> `zazawan wuvuvum gelulul vawalal.`
 >
-> z-Azawan | g-blue | w-WITNESSED | v-walk
+> z-Azawan | w-WITNESSED | g-blue | v-walk
 >
 > "Azawan walks — and that blue is from memory."
 
-> `zazawan gelulul wadezem vawalal.`
+> `zazawan wadezem gelulul vawalal.`
 >
-> z-Azawan | g-blue | w-LIVE | v-walk
+> z-Azawan | w-LIVE | g-blue | v-walk
 >
 > "Azawan walks — and that blue is from the scene (live)."
 

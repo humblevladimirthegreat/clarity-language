@@ -298,7 +298,7 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 <a id="cause"></a>
 <a id="cause-mood"></a>
 
-To highlight **how** a result comes about (the mechanism, not only that a condition holds), add the closed mood **`egega`** as an `/h/` word. The ending is **-m**: **`hegegam`**. You can put that mood next to a pole when both jobs apply. Ordinary content on the same root is still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*). Optional `/w/` when the mood grades only a preceding adjective. (cue: ⚙️ *gear*: how the mechanism engages)
+To highlight **how** a result comes about (the mechanism, not only that a condition holds), add the closed mood **`egega`** as an `/h/` word. The ending is **-m**: **`hegegam`**. You can put that mood next to a pole when both jobs apply. Ordinary content on the same root is still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*). Optional `/w/` when the mood grades only the `/ɡ/` adjective it sits immediately before. (cue: ⚙️ *gear*: how the mechanism engages)
 
 > `zazawan vawalal hegegam hadorom banunul.`
 >

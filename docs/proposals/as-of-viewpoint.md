@@ -71,7 +71,7 @@ Same split as `hurugum` (asserted condition) vs `hadorom` (unasserted condition)
 
 For learners (not required parse state): resume binds the **nearest preceding introduce of the same overlay** that has not been replaced by a new pair. A finished inner clause does not stay open for a later matrix resume. A new pair of either overlay **replaces** whose-now.
 
-Channel and play keep today’s roots (`huvuvum`, `hadezem`, `hadadem`, …). They do not take *as-of* `/b/`, and they do not last past this host. Existing `/w/` evidentials on a preceding adjective stay as they are; that `/w/` is not an *as-of* pole.
+Channel and play keep today’s roots (`huvuvum`, `hadezem`, `hadadem`, …). They do not take *as-of* `/b/`, and they do not last past this host. Existing `/w/` evidentials immediately before a `/ɡ/` adjective stay as they are; that `/w/` is not an *as-of* pole.
 
 ## How to write *as-of*
 
@@ -134,7 +134,7 @@ A bare verb plus *as-of* is legal: the event is **concurrent** with that now (*a
 
 ## Channel and play
 
-Write the evidential or NOTIONAL `/h/` as today. `/h/` covers this clause; `/w/` on a preceding adjective stays current grammar. Prefer `/w/` on a value adjective. There is no extra hook for “this verb only,” and that `/w/` is not *as-of*.
+Write the evidential or NOTIONAL `/h/` as today. `/h/` covers this clause; `/w/` immediately before a `/ɡ/` adjective stays current grammar. Prefer `/w/` on a value adjective. There is no extra hook for “this verb only,” and that `/w/` is not *as-of*.
 
 One channel per host clause. LIVE plus WITNESSED stays illegal. A later clause that is still memory writes **`huvuvum`** again.
 

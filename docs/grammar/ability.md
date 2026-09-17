@@ -231,7 +231,7 @@ z-Uhubun | v-scream-unable-modifiable
 ### When there is no single verb (`egera`)
 <a id="ability-fallback"></a>
 
-Sometimes English *can* / *can’t* is not about one named verb or quality: the activity takes more than one root, you just want a bare *can’t*, or the *can* covers the whole sentence. Then there is no single root to put **`x`** into. Use the special word **`egera`**: after **`egera`**, write the same **`x`**, vowel, and ending as on a verb. Put it on `/h/` when it is about the whole clause, or on `/w/` when it is about the adjective just before it. That lets you say *can* / *can’t* without naming the activity in that word. Prefer the verb itself whenever one root is enough. (cue: 🥣 *cereal*: a bowl that holds what you can do)
+Sometimes English *can* / *can’t* is not about one named verb or quality: the activity takes more than one root, you just want a bare *can’t*, or the *can* covers the whole sentence. Then there is no single root to put **`x`** into. Use the special word **`egera`**: after **`egera`**, write the same **`x`**, vowel, and ending as on a verb. Put it on `/h/` when it is about the whole clause, or on `/w/` immediately before the adjective it grades. That lets you say *can* / *can’t* without naming the activity in that word. Prefer the verb itself whenever one root is enough. (cue: 🥣 *cereal*: a bowl that holds what you can do)
 
 > `zazawan hegeraxel.`
 >
@@ -239,9 +239,9 @@ Sometimes English *can* / *can’t* is not about one named verb or quality: the 
 >
 > "Azawan can’t right now (no single verb / whole clause)."
 
-> `zululon gelem wegeraxel.`
+> `zululon wegeraxel gelem.`
 >
-> z-Ululon | g-big | w-ABIL-unable-temporary
+> z-Ululon | w-ABIL-unable-temporary | g-big
 >
 > "Ululon is big: can’t right now." (ability on that quality).
 
@@ -330,9 +330,9 @@ z-Azawan | h-ABIL-able
 **6.** *Ululon is locked: can’t right now.*
 
 ::: details Show answer
-`zululon gologel wegeraxel.`
+`zululon wegeraxel gologel.`
 
-z-Ululon | g-locked | w-ABIL-unable-temporary
+z-Ululon | w-ABIL-unable-temporary | g-locked
 :::
 
 **7.** *It’s impossible for Uhubun.* (no single verb)
@@ -370,11 +370,11 @@ z-cereal
 *Cereal / a capacity* (ordinary word: no *can* / *can’t*).
 :::
 
-**3.** `gologel wegeraxal.`
+**3.** `wegeraxal gologel.`
 
 ::: details Show answer
 
-g-locked | w-ABIL-able
+w-ABIL-able | g-locked
 *Locked: can* (ability on that quality).
 :::
 

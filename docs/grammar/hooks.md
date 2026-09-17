@@ -117,7 +117,7 @@ Sometimes the thing you want to tweak is not a phrase inside this sentence, but 
 ### Extra noun (`/b/` after the hook)
 <a id="extra-noun"></a>
 
-When the next word after the hook (skipping any `/w/` words) is `/b/`, and the word immediately before the hook is **not** `/b/`, the hook names how that extra noun sits toward the clause (or toward the noun already in play). This is not the [recipient](clause.md#extra-nouns) (`zazawan bululon vezehel` *tells Ululon*), and it is not same-role *including* (`bazawan al bululon`). (cue: `/b/` on the right after optional `/w/`, none on the left)
+When the next word after the hook is `/b/`, and the word immediately before the hook (skipping any `/w/` words) is **not** `/b/`, the hook names how that extra noun sits toward the clause (or toward the noun already in play). This is not the [recipient](clause.md#extra-nouns) (`zazawan bululon vezehel` *tells Ululon*), and it is not same-role *including* (`bazawan al bululon`). (cue: `/b/` on the right of the hook, none on the left)
 
 Simplex vowels (one vowel plus an ending):
 
@@ -134,9 +134,9 @@ Simplex vowels (one vowel plus an ending):
 >
 > "A dog sleeps in a house."
 
-> `zodogol velebel al welem bohohul.`
+> `zodogol velebel welem al bohohul.`
 >
-> z-dog | v-sleep | in | w-very | b-house
+> z-dog | v-sleep | w-very | in | b-house
 >
 > "A dog sleeps deep in a house."
 
@@ -374,7 +374,7 @@ Hook **-n** is only when the hook is **inside a proper-name phrase** ([**-n**](r
 ### Extra noun: stacked vowels and loose **-m**
 <a id="extra-noun-intermediate"></a>
 
-Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). Stacked vowels name the rest of the everyday extras. Same trigger: after skipping `/w/`, `/b/` is on the right, and the word immediately to the left of the hook is **not** `/b/` (so `bazawan al bululon` stays *including*). Two extras need a non-`/b/` word between the first landmark and the next hook — the verb can sit there (`ul bazadol vawalal oel badadul`).
+Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). Stacked vowels name the rest of the everyday extras. Same trigger: `/b/` is immediately after the hook, and the word immediately to the left of the hook (skipping `/w/`) is **not** `/b/` (so `bazawan al bululon` stays *including*). Two extras need a non-`/b/` word between the first landmark and the next hook — the verb can sit there (`ul bazadol vawalal oel badadul`).
 
 **-m** names a **frame extra**, not a second copy of the same extra: the landmark is a setting, not the exact contact, source, tool, or opponent.
 
@@ -487,33 +487,33 @@ On a non-initial conjunct under a [clause `/x/` fence](joins.md#right-close), th
 ### Detail on the hook (`/w/`)
 <a id="hook-w"></a>
 
-`/w/` always sits **immediately after** what it grades. A prefix-less hook is a host, the same way `/ɡ/` and `/h/` are. Put ordinary detail or a [restrictor](restrictors.md) on `/w/` after the hook, then the hook’s right-hand piece. Bare hooks stay legal.
+`/w/` always sits **immediately before** what it grades. A prefix-less hook is a host, the same way `/ɡ/` and `/h/` are. Put ordinary detail or a [restrictor](restrictors.md) on `/w/` before the hook, then the hook’s right-hand piece. Bare hooks stay legal.
 
 Same-role: the except (or including, rather, instead) carries that detail; clause `/h/` still grades the verb.
 
-> `zaladelx ul wazavom zaladal.`
+> `zaladelx wazavom ul zaladal.`
 >
-> z-plate-x | except | w-hesitation | z-salad
+> z-plate-x | w-hesitation | except | z-salad
 >
 > "The plates, except a salad, with hesitation."
 
-> `zaladelx ul wal zaladal.`
+> `zaladelx wal ul zaladal.`
 >
-> z-plate-x | except | w-never | z-salad
+> z-plate-x | w-never | except | z-salad
 >
 > "The plates, never excepting a salad."
 
 **Compare with:** `zaladelx ul zaladal hadazam vogogol` puts haste on the **cooking**, not on the except.
 
-Extra-noun: skip those `/w/` words when looking for `/b/`. A later `/ɡ/` still describes the landmark.
+Extra-noun: `/b/` still sits immediately after the hook. A later `/ɡ/` still describes the landmark.
 
-> `zodogol velebel al wal bohohul.`
+> `zodogol velebel wal al bohohul.`
 >
-> z-dog | v-sleep | in | w-never | b-house
+> z-dog | v-sleep | w-never | in | b-house
 >
 > "A dog sleeps, never in a house."
 
-Discourse glue uses the same window: `al welem zazawan vawalal` is *Additionally, very much so, Azawan walks.* After `/w/`, next `/b/` still means extra-noun, not glue.
+Discourse glue uses the same window: `welem al zazawan vawalal` is *Additionally, very much so, Azawan walks.* After the hook, next `/b/` still means extra-noun, not glue.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
