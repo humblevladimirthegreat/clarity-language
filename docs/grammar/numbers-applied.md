@@ -111,7 +111,7 @@ Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / a
 >
 > "Azawan is two meters more challenging than Ululon."
 
-Vague degree uses `/w/` on the scale (`zel weregel gomonam …`) with no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
+Vague degree uses `/w/` on the scale (`zel wogegal gomonam …`) with no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
 
 ### Ranges
 <a id="ranges"></a>

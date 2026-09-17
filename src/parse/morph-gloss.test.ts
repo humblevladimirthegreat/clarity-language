@@ -307,7 +307,7 @@ describe("compareMorphGloss", () => {
 
   it("values bake stance and ending grain", () => {
     expectLine("zawaral gonogoxal", "z-wrapped-gift | g-relatedness-met-physical");
-    expectLine("heregem hanedem", "h-HIGH | h-CIRCUM");
+    expectLine("hogegam hanedem", "h-HIGH | h-CIRCUM");
   });
 
   it("span interiors: cite and aside gloss English; mention passes through", () => {
