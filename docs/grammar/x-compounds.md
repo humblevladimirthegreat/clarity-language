@@ -32,7 +32,7 @@ The left root is the kind of thing; the right root narrows it (what field, what 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | full root **`x`** full root | two roots, one word | `zabanuxudel` *peanut butter* | **x** ≈ plus |
-| **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* | **a** agent / **e** place / **u** patient / **o** recipient |
+| **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxedegel` *a teacher* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
 | root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) or [ability](ability.md#ability) | `vuzunuxel` | extra vowel after the host |
 
 **Compare with:** two people stay two words (`zazawan zululon`). One double name is one word (`zazawaxululon`).
@@ -78,7 +78,7 @@ Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agala
 
 **Compare with:** a property on a noun uses `/ɡ/` (or `/w/`). A list uses a [join](joins.md).
 
-**Related form:** *a fighter* (who does / where it happens / who undergoes / who is told) uses a [role compound](roles.md#role-compounds).
+**Related form:** *a teacher* (who does / where it happens / who undergoes / who is told; **-r** *the one teaching*) uses a [role compound](roles.md#role-compounds).
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -252,18 +252,18 @@ z-Azawan | z-friend | v-punch
 ### Left and right of `x`
 <a id="families-by-shape"></a>
 
-Beginner already used two roots glued with **`x`**, dictionary words with no **`x`**, *a fighter*, and *can / can’t* on a host. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family.
+Beginner already used two roots glued with **`x`**, dictionary words with no **`x`**, *a teacher*, and *can / can’t* on a host. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | one vowel **`x`** one vowel, then a span ending | [span fence](spans.md) open or close | `daxal` … `xuxul` | vowel **x** vowel |
-| **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* | **a** agent / **e** place / **u** patient / **o** recipient |
+| **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxedegel` *a teacher* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
 | name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (hello or calling) | [greeting bid](#greeting-bid) | `azawaxan`; `jululoxen` | vowel on the name |
 | longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) (on a need) or [ability](ability.md#ability) (on another host) | `vuzunuxel` | extra vowel after the host |
 | longer root **`x`** a [number](numbers.md) (no ending of its own) | [numeric derivation](numeric-derivation.md#numeric-derivation) | `…x+1…` / speech `…xraba…` | number on the right |
 | full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zabanuxudel`; `gewezexazawan` *Azawan’s left* ([whose left](roles.md#viewpoint-laterals)); `zodunaxalanen` ([multipart names](reference-suffix.md#phrasal-proper-names)) | **x** ≈ plus |
 
-A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`**, or **`u`** left of **`x`**, you are opening a span or naming a role (*fighter*), not gluing two full roots. Role compounds still put a full root **after** that vowel. Number pieces on the right follow number grammar; in a sentence you usually spell them with letters (`…xraba…`), not `+` and digits. See [writing style](numbers.md#writing-style-numeric-vs-spelled).
+A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`**, or **`u`** left of **`x`**, you are opening a span or naming a role (*teacher*), not gluing two full roots. Role compounds still put a full root **after** that vowel. Number pieces on the right follow number grammar; in a sentence you usually spell them with letters (`…xraba…`), not `+` and digits. See [writing style](numbers.md#writing-style-numeric-vs-spelled).
 
 ### Adding another piece
 <a id="ordinary-compound-order"></a>

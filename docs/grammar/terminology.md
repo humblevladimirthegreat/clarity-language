@@ -646,7 +646,7 @@ Prefix-less *including / rather / instead / except*, discourse glue, and extra-n
 
 [Roles](roles.md#role-compounds)
 
-**Compare with:** *sitting guard* is this stem on `/ɡ/` ([which noun, with resume and kinds](dependents.md#which-noun-intermediate)).
+**Compare with:** *sitting guard* / *teacher* is this stem on `/ɡ/` with a non-resume ending ([which noun, with resume and kinds](dependents.md#which-noun-intermediate)). Resume **-r** is *the one teaching* (this instance), not the kind.
 
 ### Role letter
 

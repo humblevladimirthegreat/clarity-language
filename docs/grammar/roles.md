@@ -1,7 +1,9 @@
 # Role compounds
 <a id="roles"></a>
 
-When English would name a person or place from an event (*a fighter* from *fight*, *the one told*, *a sleep-place*), Agalan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [reference ending](reference-suffix.md). **`a`** is the doer, **`e`** is the place of the event, **`u`** is the one the event happens to, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
+When English would name a person or place from an event (*a teacher* from *teach*, *the one told*, *a sleep-place*), Agalan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [reference ending](reference-suffix.md). **`a`** is the doer, **`e`** is the place of the event, **`u`** is the one the event happens to, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
+
+The ending picks **kind** vs **this instance**. Non-resume (**-l** / **-m** / **-n**) is a lasting label: *a teacher*. Resume (**-r**) is the person or place of **that** latest matching event: *the one teaching*.
 
 ## Beginner
 <a id="beginner"></a>
@@ -10,33 +12,33 @@ When English would name a person or place from an event (*a fighter* from *fight
 <a id="role-compounds"></a>
 <a id="agent-place-patient-recipient"></a>
 
-English *a fighter* names who does the fighting, from the same idea as *fight*. Write a person or thing letter (`/z/` `/d/` `/b/`), then **`a`**, then mid-word **`x`**, then the event root, then an ordinary [reference ending](reference-suffix.md). The result is one content word (a **role compound**) that you can use as a participant. (cue: **a** ≈ add (add a doer))
+English *a teacher* names who teaches as a kind, from the same idea as *teach*. Write a person or thing letter (`/z/` `/d/` `/b/`), then **`a`**, then mid-word **`x`**, then the event root, then an ordinary [reference ending](reference-suffix.md). The result is one content word (a **role compound**) that you can use as a participant. (cue: **a** ≈ add (add a doer))
 
-> `zaxuvugul vurunul.`
+> `zaxedegel vurunul.`
 >
-> z-agent-x-fight | v-run
+> z-agent-x-teach | v-run
 >
-> "A fighter runs."
+> "A teacher runs."
 
-The last letter is the ordinary [reference ending](reference-suffix.md): **-l** takes the stem’s everyday sense, **-m** the published metaphor. `zaxuvugul` is *a fighter*; `zaxuvugum` is *a struggler*. You do not need a prior fight in the talk.
+The last letter is the ordinary [reference ending](reference-suffix.md): **-l** takes the stem’s everyday sense, **-m** the published metaphor. `zaxedegel` is *a teacher*; `zaxuvugul` is *a fighter*; `zaxuvugum` is *a struggler*. Non-resume names the **lexical** role. You do not need a prior teaching or fight in the talk.
 
-**Compare with:** *can fight* puts the stance vowel **right** of **`x`** ([ability](ability.md): `vuvuguxal`). A fighter puts the role vowel **left** of **`x`**.
+**Compare with:** *can teach* puts the stance vowel **right** of **`x`** ([ability](ability.md): `vedegexal`). A teacher puts the role vowel **left** of **`x`**.
 
-### That doer (`-r`)
+### This instance (`-r`)
 
-Once the talk already has a matching event (*walks*), **-r** on the same stem means **that** doer (*the walker*), not a new kind.
+Once the talk already has a matching event (*teaches*), **-r** on the same stem means **this** doer of that event (*the one teaching*), not the kind *teacher*.
 
-> `zazawan vawalal.`
-> `zaxawalar velebel.`
+> `zazawan vedegel.`
+> `zaxedeger velebel.`
 >
-> z-Azawan | v-walk
-> z-←walk | v-sleep
+> z-Azawan | v-teach
+> z-←teach | v-sleep
 >
-> "Azawan walks. The walker sleeps."
+> "Azawan teaches. The one teaching sleeps."
 
 ### The undergoer (`u`)
 
-English *the one seen* or *the one fought* names the person the event happens to. Use the same compound shape as the doer, but write **`u`** in the vowel slot. (cue: **u** ≈ undo (the one it happens to))
+English *the one seen* or *the one fought* names the person the event happens to. Use the same compound shape as the doer, but write **`u`** in the vowel slot. (cue: **u** ≈ undo (the one it happens to)) Non-resume is that role as a kind; **-r** is **this** undergoer of the latest matching event.
 
 > `zazawan dagadal vejel.`
 > `zuxejer vurunul.`
@@ -58,7 +60,7 @@ You can name that kind of place with no prior sleep in the talk:
 >
 > "A sleep-place sits."
 
-Once the talk already has a matching event, **-r** means **that** scene. The next sentence is a new claim about the place (who sees it, who punches it), not a locative on the first verb.
+Once the talk already has a matching event, **-r** means **this** scene of that event, not a kind of place. The next sentence is a new claim about the place (who sees it, who punches it), not a locative on the first verb.
 
 > `zululon vazagal.`
 > `zazawan dexazagar vejel.`
@@ -100,12 +102,12 @@ Some stems name a **relation** (who is bound to whom), not an action. The extra 
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…axROOT…` | names the doer of an event | *a fighter* / *the walker* | **a** ≈ add (add a doer) |
+| `…axROOT…` | names the doer of an event | *a teacher* / *the one teaching* | **a** ≈ add (add a doer) |
 | `…exROOT…` | names the place of an event | *a sleep-place* / *that scream-place* | **e** ≈ order (the scene the act is ordered in) |
-| `…uxROOT…` | names the undergoer of an event | *the one seen* / *the one fought* | **u** ≈ undo (the one it happens to) |
-| `…oxROOT…` | names the extra `/b/` party | *the one told* / *the other party of the bond* | **o** ≈ one (that extra one) |
+| `…uxROOT…` | names the undergoer of an event | *someone seen* (kind) / *the one seen* (this seeing) | **u** ≈ undo (the one it happens to) |
+| `…oxROOT…` | names the extra `/b/` party | *an addressee* / *the one told* | **o** ≈ one (that extra one) |
 
-**-r** looks back to the latest verb, event noun, or relation with that stem (including a stem already inside a role compound). The vowel still picks which part you mean: doer, place, undergoer, or extra `/b/` party.
+Non-resume is the **kind** (occupation, usual place, usual undergoer). **-r** looks back to the latest verb, event noun, or relation with that stem (including a stem already inside a role compound) and names **this instance**. The vowel still picks which part you mean: doer, place, undergoer, or extra `/b/` party.
 
 ### The event itself
 
@@ -119,9 +121,15 @@ If you put the event stem on a thing letter with no role vowel (`duvugul`), you 
 
 **Related form:** a verb’s own **-r** resumes that [event](pronouns.md) (`vuvugur` *that fighting*). Role **`ax`** / **`ux`** names the people.
 
-### Saying someone is a fighter
+### Saying someone is a teacher
 
-To say someone **is a fighter**, put the same role stem on `/ɡ/`, as in [classification](predication.md#classification). The ending still picks the stem’s lexicon: **-l** *fighter*, **-m** *struggler*.
+To say someone **is a teacher**, put the same role stem on `/ɡ/`, as in [classification](predication.md#classification). Non-resume still names the kind: **-l** *teacher*, or on *fight* **-l** *fighter* / **-m** *struggler*. Resume on `/ɡ/` classifies them as **this** doer of the matching event (*is the one teaching*).
+
+> `zazawan gaxedegel.`
+>
+> z-Azawan | g-agent-x-teach
+>
+> "Azawan is a teacher."
 
 > `zazawan gaxuvugul.`
 >
@@ -182,7 +190,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 z-agent-x-construct | v-sit
 :::
 
-**2.** *Azawan constructs. The constructor sees a helmet.*
+**2.** *Azawan constructs. The one constructing sees a helmet.*
 
 ::: details Show answer
 `zazawan vogonul. zaxogonur dehemel vejel.`
@@ -264,7 +272,7 @@ z-Uhubun | z-Azawan | v-see | z-←see | v-sit
 
 z-Ululon | v-construct | z-←construct | d-helmet | v-see
 
-*Ululon constructs. The constructor sees a helmet.*
+*Ululon constructs. The one constructing sees a helmet.*
 :::
 
 **4.** `zaxogonul vubunul.`

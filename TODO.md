@@ -9,6 +9,9 @@ consider making negatives clearer
 final exam
 consider what role compounds could mean on non-verbs
 
+Prosody
+Rename metaphorical
+
 ## Evidentiality / tense
 
 - Dedicated observation vs imagination **tense** (stacks with evidentiality channels; does not replace them). Live vs memory observation is **LIVE** (`adeze`) vs **WITNESSED** (`uvuvu`) — not a past/future slot.

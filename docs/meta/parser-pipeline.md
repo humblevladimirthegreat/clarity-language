@@ -164,7 +164,7 @@ Recovery is off. Illegal left fences, infix joins, and binderless islands throw 
 | Content **-r** | Most recent prior root whose full stem **or** letter prefix (cut through the 2nd vowel) matches ([pronouns.md](../grammar/pronouns.md)) |
 | Span **-r** / `d[=]` | Most recent span open of that TYPE ([spans.md](../grammar/spans.md)) |
 | Number **-r** / `g=+` | Most recent number with the same marker identity ([numbers.md](../grammar/numbers.md#number-endings)) |
-| Role **-r** | Most recent verb / event noun / relation / role compound with that ROOT ([roles.md](../grammar/roles.md)) |
+| Role **-r** | This instance of the matching event’s role (doer / place / undergoer / extra `/b/` party); most recent verb / event noun / relation / role compound with that ROOT. Non-resume is the lexical kind (*teacher* vs *the one teaching*) ([roles.md](../grammar/roles.md)) |
 | Join **-r** under `jol` / `jom` | Fill-ask gaps in spoken order; none → yes/no ([questions.md](../grammar/questions.md)) |
 | SHARED `/ɡ/` or `/h/` after a join | `scale` / `equative` / `distribute` / `collective` / `continuum` / `kind` / `ordinary` from join series + conjunct kinds (`/h/` is manner scale under rank / `ae`) |
 
