@@ -76,7 +76,8 @@ export function writingSpanType(bracket: WritingBracket): SpanType {
   return "u";
 }
 
-function contentMatch(pronounRoot: string, antecedentRoot: string): ContentMatch | null {
+/** How a `-r` stem lines up with an antecedent root ([pronouns.md](docs/grammar/pronouns.md)). */
+export function contentMatch(pronounRoot: string, antecedentRoot: string): ContentMatch | null {
   if (pronounRoot === antecedentRoot) return "fullRoot";
   if (pronounRoot === letterPrefix(antecedentRoot)) return "letter";
   return null;

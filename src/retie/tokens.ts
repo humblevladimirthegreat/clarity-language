@@ -1,6 +1,9 @@
 import { writingSpanEnd } from "../parse/span-scan.js";
+import { loadDefaultTables, parse } from "../parse/index.js";
+import { parseWord } from "../parse/word.js";
 
 import { retieCore } from "./rebuild.js";
+import { antecedentStemRoots, contentStemRoots, type ResumeScope } from "./resume.js";
 
 export { retieCore } from "./rebuild.js";
 
@@ -286,7 +289,99 @@ export function rewriteMarkdownCores(
 }
 
 export function rewriteMarkdown(input: string, map: ReadonlyMap<string, string>): RewriteMarkdownResult {
-  return rewriteMarkdownCores(input, (core) => retieCore(core, map));
+  const stems = collectContentStems(input);
+  const changes: RetieChange[] = [];
+  const text = transformMarkdown(
+    input,
+    0,
+    (span, index) => rewritePlainTokens(span, resumeRewrite(map, stems, span), index, changes),
+    (prose, index) => rewritePlainTokens(prose, resumeRewrite(map, stems), index, changes),
+  );
+  return { text, changes };
+}
+
+function resumeRewrite(
+  map: ReadonlyMap<string, string>,
+  stems: ReadonlySet<string>,
+  codeSpan?: string,
+): CoreRewrite {
+  const boundByRaw = codeSpan ? contentResumeBinds(codeSpan) : null;
+  const seen = new Map<string, number>();
+  return (core) => {
+    let boundAntecedentRoots: string[] | undefined;
+    if (boundByRaw) {
+      const list = boundByRaw.get(core);
+      if (list && list.length > 0) {
+        const n = seen.get(core) ?? 0;
+        seen.set(core, n + 1);
+        boundAntecedentRoots = list[n];
+      }
+    }
+    const scope: ResumeScope = boundAntecedentRoots
+      ? { stems, boundAntecedentRoots }
+      : { stems };
+    return retieCore(core, map, scope);
+  };
+}
+
+function collectContentStems(input: string): Set<string> {
+  const stems = new Set<string>();
+  const addChunk = (chunk: string) => {
+    const { core } = peelChunk(chunk);
+    if (!core) {
+      return chunk;
+    }
+    try {
+      for (const root of antecedentStemRoots(parseWord(core))) {
+        stems.add(root);
+      }
+    } catch {
+      // not an Agalan word
+    }
+    return chunk;
+  };
+  transformMarkdown(
+    input,
+    0,
+    (text) => {
+      forEachPlainChunk(text, 0, addChunk);
+      return text;
+    },
+    (text) => {
+      forEachPlainChunk(text, 0, addChunk);
+      return text;
+    },
+  );
+  return stems;
+}
+
+function contentResumeBinds(span: string): Map<string, string[][]> | null {
+  try {
+    const resolved = parse(span, loadDefaultTables()).resolve;
+    if (!resolved) {
+      return null;
+    }
+    const byRaw = new Map<string, string[][]>();
+    for (const bind of resolved.anaphors) {
+      if (bind.kind !== "content" || !bind.antecedent) {
+        continue;
+      }
+      const roots = contentStemRoots(bind.antecedent);
+      if (roots.length === 0) {
+        continue;
+      }
+      const raw = bind.pronoun.raw;
+      const list = byRaw.get(raw);
+      if (list) {
+        list.push(roots);
+      } else {
+        byRaw.set(raw, [roots]);
+      }
+    }
+    return byRaw.size > 0 ? byRaw : null;
+  } catch {
+    return null;
+  }
 }
 
 export function lineNumberAt(text: string, index: number): number {

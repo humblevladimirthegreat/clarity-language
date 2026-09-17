@@ -2,6 +2,14 @@ import { parseWord } from "../parse/word.js";
 import { writingSpanEnd } from "../parse/span-scan.js";
 import type { MorphWord, MorphWordFamily, WritingBracket } from "../parse/types.js";
 import { isClarityRootShape } from "../word-converter.js";
+import {
+  isContentResume,
+  mappedResumeRoots,
+  resumeAntecedentRoots,
+  type ResumeScope,
+} from "./resume.js";
+
+export type { ResumeScope } from "./resume.js";
 
 const SPAN_CLOSE: Record<WritingBracket, string> = {
   "[": "]",
@@ -13,7 +21,11 @@ const SPAN_CLOSE: Record<WritingBracket, string> = {
 const POS_LETTERS = "zdbvgwhxj";
 
 /** Rewrite one orthographic word. Never substitutes inside a larger token. */
-export function retieCore(core: string, map: ReadonlyMap<string, string>): string | null {
+export function retieCore(
+  core: string,
+  map: ReadonlyMap<string, string>,
+  scope?: ResumeScope,
+): string | null {
   if (!core || map.size === 0) {
     return null;
   }
@@ -30,7 +42,7 @@ export function retieCore(core: string, map: ReadonlyMap<string, string>): strin
     }
   }
   try {
-    return rewriteParsedWord(parseWord(core), map);
+    return rewriteParsedWord(parseWord(core), map, scope);
   } catch {
     return null;
   }
@@ -55,13 +67,17 @@ function rootsChanged(before: string[], after: string[]): boolean {
   return before.length !== after.length || before.some((root, i) => root !== after[i]);
 }
 
-export function rewriteParsedWord(word: MorphWord, map: ReadonlyMap<string, string>): string | null {
+export function rewriteParsedWord(
+  word: MorphWord,
+  map: ReadonlyMap<string, string>,
+  scope?: ResumeScope,
+): string | null {
   const family = word.family;
   if (family.kind === "writingSpan") {
-    return rewriteWritingSpan(word, family, map);
+    return rewriteWritingSpan(word, family, map, scope);
   }
   if (family.kind === "content") {
-    const next = mapRoots(family.roots, map);
+    const next = contentRootsAfterResume(word, family.roots, map, scope);
     if (!rootsChanged(family.roots, next)) {
       return null;
     }
@@ -80,22 +96,42 @@ export function rewriteParsedWord(word: MorphWord, map: ReadonlyMap<string, stri
   return rebuildX(word, family, left, family.rightRoots ? right : undefined);
 }
 
+function contentRootsAfterResume(
+  word: MorphWord,
+  roots: string[],
+  map: ReadonlyMap<string, string>,
+  scope: ResumeScope | undefined,
+): string[] {
+  if (isContentResume(word)) {
+    const antecedents = resumeAntecedentRoots(roots, scope);
+    if (antecedents) {
+      return mappedResumeRoots(roots, antecedents, map);
+    }
+  }
+  return mapRoots(roots, map);
+}
+
 function rewriteWritingSpan(
   word: MorphWord,
   family: Extract<MorphWordFamily, { kind: "writingSpan" }>,
   map: ReadonlyMap<string, string>,
+  scope?: ResumeScope,
 ): string | null {
   if (family.anaphor || family.bracket === "<") {
     return null;
   }
-  const nextPayload = rewriteSpanPayload(family.payload, map);
+  const nextPayload = rewriteSpanPayload(family.payload, map, scope);
   if (nextPayload === family.payload) {
     return null;
   }
   return replaceSpanPayload(word.raw, family.bracket, nextPayload);
 }
 
-function rewriteSpanPayload(payload: string, map: ReadonlyMap<string, string>): string {
+function rewriteSpanPayload(
+  payload: string,
+  map: ReadonlyMap<string, string>,
+  scope?: ResumeScope,
+): string {
   let out = "";
   let i = 0;
   while (i < payload.length) {
@@ -112,7 +148,8 @@ function rewriteSpanPayload(payload: string, map: ReadonlyMap<string, string>): 
       }
     }
     const chunk = payload.slice(i, end);
-    out += retieCore(chunk, map) ?? chunk;
+    const nested = scope ? { stems: scope.stems } : undefined;
+    out += retieCore(chunk, map, nested) ?? chunk;
     i = end;
   }
   return out;

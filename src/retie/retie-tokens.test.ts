@@ -60,6 +60,11 @@ describe("retieCore — Agalan tokens", () => {
     assert.equal(retieCore("howora", map), "hemaba");
   });
 
+  it("rewrites an isolated short resume whose parsed root is mapped", () => {
+    const map = mapOf(["uhu", "edeme"]);
+    assert.equal(retieCore("zuhur", map), "zedemer");
+  });
+
   it("rewrites a role compound host", () => {
     const map = mapOf(["edege", "uzunu"]);
     assert.equal(retieCore("gaxedegel", map), "gaxuzunul");
@@ -170,6 +175,60 @@ describe("writing spans", () => {
   it("does not rewrite HTML comments", () => {
     const { text } = rewriteMarkdown("before <!-- `zazawan` --> after `zazawan`", map);
     assert.equal(text, "before <!-- `zazawan` --> after `zululon`");
+  });
+});
+
+describe("resume-aware markdown retie", () => {
+  it("keeps a short resume when the prefix collides with a mapped root", () => {
+    const map = mapOf(["uhu", "edeme"]);
+    const { text, changes } = rewriteMarkdown(
+      "`zuhubun vorurul. zuhur vogogol.`",
+      map,
+    );
+    assert.equal(text, "`zuhubun vorurul. zuhur vogogol.`");
+    assert.equal(changes.length, 0);
+  });
+
+  it("keeps a short resume whose antecedent is in another code span", () => {
+    const map = mapOf(["uhu", "edeme"]);
+    const { text } = rewriteMarkdown("named `zuhubun` then `zuhur`.", map);
+    assert.equal(text, "named `zuhubun` then `zuhur`.");
+  });
+
+  it("still remaps an unbound prefix that is the mapped root", () => {
+    const map = mapOf(["uhu", "edeme"]);
+    const { text } = rewriteMarkdown("see `zuhur` please", map);
+    assert.equal(text, "see `zedemer` please");
+  });
+
+  it("respells a short resume from the antecedent’s new stem", () => {
+    const map = mapOf(["azawa", "ululo"]);
+    const { text } = rewriteMarkdown("`zazawan vawalal. zazar vajul.`", map);
+    assert.equal(text, "`zululon vawalal. zulur vajul.`");
+  });
+
+  it("respells a full-root resume when that root moves", () => {
+    const map = mapOf(["elebe", "ababa"]);
+    const { text } = rewriteMarkdown("`zululon velebel. zazawan veleber.`", map);
+    assert.equal(text, "`zululon vababal. zazawan vababar.`");
+  });
+
+  it("follows the bound antecedent, not a longer same-file stem", () => {
+    const map = mapOf(["ele", "ogogo"]);
+    const { text } = rewriteMarkdown(
+      "`zululon velebel. zabogol gelem. zazawan veler.`",
+      map,
+    );
+    assert.equal(text, "`zululon velebel. zabogol gogogom. zazawan vogogor.`");
+  });
+
+  it("keeps a compound-name short resume when the prefix root moves", () => {
+    const map = mapOf(["ubu", "edeme"]);
+    const { text } = rewriteMarkdown(
+      "`jubunexunowen vawalal.` then `dubur vajul.`",
+      map,
+    );
+    assert.equal(text, "`jubunexunowen vawalal.` then `dubur vajul.`");
   });
 });
 
