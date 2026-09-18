@@ -339,20 +339,22 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 You already write whether a turn is a statement, question, command, or prohibition. The extra choice here is **how firmly** you mean it.
 
-The act word is **`j` + vowel + ending**. The vowel is the family you know (**a** statement, **o** question, **e** command, **u** prohibition). **-l** stands behind the act; **-m** leaves it open (soft / tentative). Write the act word when the setting is not a default statement. A period still lets you omit **`jal`**.
+The act word is **`j` + vowel + ending**. The vowel is the family you know (**a** statement, **o** question, **e** command, **u** prohibition). **-l** stands behind the act; **-m** leaves it open (soft / offered). Write the act word when the setting is not a default statement. A period still lets you omit **`jal`**.
 
 > `jam zazawan vawalal.`
 >
 > j-soft-statement | z-Azawan | v-walk
 >
-> "Maybe Azawan walks."
+> "For what it's worth, Azawan walks."
+
+**Compare with:** [MAY](knowing.md#may) (`hodohom`) marks the scene as *could be*. **`jam`** is still a statement; you put it forward without insisting the other person take it up.
 
 The vowels match the [vowel-series](vowel-series.md) map: **a** add / hold, **o** one / menu, **e** order / rank, **u** undo.
 
 | Agalan | Use | Cue |
 |--------|-----|-----|
 | **jal** | **statement**: claim or description | **a** add + **-l**: stand behind |
-| **jam** | **soft statement**: tentative / provisional | **a** add + **-m**: hold, but leave it open |
+| **jam** | **soft statement**: offered, not insisted (*for what it's worth*) | **a** add + **-m**: hold, but leave it open |
 | **jol** | **question**: yes/no and fill-in ask | **o** one / menu + **-l**: pick an answer |
 | **jom** | **soft question**: wonder, gentle ask, offer-like | **o** menu + **-m**: ask without pinning |
 | **jel** | **command**: instruction | **e** order + **-l**: do this |
@@ -373,22 +375,20 @@ English often puts the adjective before the noun (*a blue dog*). Agalan can too:
 >
 > "a blue dog"
 
-`/b/` still follows that adjective. `/w/` sits immediately before it (`wegelom glelulul zodogol` = *a loud-volume blue dog*), so **`l`** still looks ahead to the next noun. Before-the-noun order is optional (meter, what you put first for emphasis, or comfort from your first language). This extra **`l`** is only on adjectives (`/ɡ/`).
+`/b/` still follows that adjective. `/w/` sits immediately before it (`wegelom glelulul zodogol` = *a loud-volume blue dog*), so **`l`** still looks ahead to the next noun. You might do this for meter or emphasis. This extra **`l`** is only on adjectives (`/ɡ/`).
 
 ### As-for and free-order ties
 <a id="as-for"></a>
 
 *As for X* / *regarding X* names who or what the clause is about. Use an adverb plus extra noun (`/h/` + `/b/`) with published **`oza`**: `hozal bazawan` is *as for Azawan*. You can still put first the piece you want to highlight.
 
-> `hozal bazawan zululon vawalal.`
+> `hozal bazawan zululon dazawan vejel.`
 >
-> h-hash | b-Azawan | z-Ululon | v-walk
+> h-hash | b-Azawan | z-Ululon | d-Azawan | v-see
 >
-> "As for Azawan, Ululon walks."
+> "As for Azawan, Ululon sees Azawan."
 
 **Not the same job as:** [values](values.md) **met** / **unmet** on `/ɡ/` (`gonogoxal` *my thing serves relatedness*). *As for* points at a person or thing in the clause; a value adjective on `/ɡ/` is a need toward a belonging.
-
-Several `/h/` units have no fixed order. Each unit’s role comes from its dictionary meaning. If two units share a role and you need a ranking, the leftmost one wins.
 
 ### Complex chaining
 <a id="complex-chaining"></a>
@@ -407,7 +407,15 @@ A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). `/w/` that grades t
 >
 > "a dog the same as blue Azawan"
 
-You can chain more complex units onto those extra nouns. Two complex adjectives on the same first noun need [another sentence](dependents.md#which-noun). Several `/h/` units on one verb are fine (each plain `/h/`, or optional `/w/` plus `/h/` plus `/b/` together, counts as one). An unhosted recipient `/b/` may follow a finished pair (`hurorom bazawan bululon`); it still must not sit in the hosted slot after the relation word.
+You can chain more complex units onto those extra nouns. Two complex adjectives **after** the same first noun need [another sentence](dependents.md#which-noun). To keep both on that noun in one clause, put one [before the noun](#left-bound-adjectives) with **`gl-`**; `/b/` still follows that left-bound adjective.
+
+> `glonunul bazawan zodogol gonunul bululon.`
+>
+> gl-SAME | b-Azawan | z-dog | g-SAME | b-Ululon
+>
+> "a dog the same as Azawan, the same as Ululon"
+
+Several `/h/` units on one verb are fine (each plain `/h/`, or optional `/w/` plus `/h/` plus `/b/` together, counts as one). An unhosted recipient `/b/` may follow a finished pair (`hurorom bazawan bululon`); it still must not sit in the hosted slot after the relation word.
 
 **Compare with:** a [hook](hooks.md#extra-noun) with `/b/` right after the hook and no `/b/` to the left is *in* / *at* / *for*, not the recipient.
 
@@ -450,7 +458,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agalan
 
-**1.** *Maybe Azawan sits.*
+**1.** *For what it's worth, Azawan sits.*
 
 ::: details Show answer
 `jam zazawan vajul.`
@@ -506,7 +514,7 @@ z-Azawan | g-SAME | b-Uhubun | g-blue | v-stand
 
 j-soft-statement | h-hash | b-Azawan | z-Ululon | d-ticket | v-see
 
-*As for Azawan, maybe Ululon sees a ticket.*
+*For what it's worth, as for Azawan, Ululon sees a ticket.*
 :::
 
 **2.** `jom glelulul zadadul vadanal?`
