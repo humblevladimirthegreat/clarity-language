@@ -13,9 +13,8 @@ const ERROR_IDLE_MS = 1000
 const text = ref(SAMPLE)
 
 const { tables, status, errorMessage } = useClassifyTables()
-const { error: speakError, lineFor, ipaFor } = useAgelanSpeak()
+const { error: speakError, ipaFor } = useAgelanSpeak()
 
-const showIpa = ref(false)
 const deferredParseError = ref('')
 let parseErrorTimer = 0
 
@@ -35,7 +34,6 @@ const result = computed<InspectResult>(() => {
   }
 })
 
-const spokenPreview = computed(() => lineFor(text.value))
 const ipaPreview = computed(() => ipaFor(text.value))
 
 function currentParseError(): string {
@@ -85,23 +83,7 @@ onBeforeUnmount(() => {
         label="Speak Agalan"
         :disabled="status !== 'ready'"
       />
-      <div v-if="spokenPreview" class="spoken">
-        <p class="preview">{{ spokenPreview }}</p>
-        <button
-          type="button"
-          class="btn"
-          :disabled="!ipaPreview"
-          :aria-pressed="showIpa"
-          :aria-label="showIpa ? 'Hide IPA' : 'Show IPA'"
-          @click="showIpa = !showIpa"
-        >
-          {{ showIpa ? 'Hide IPA' : 'Show IPA' }}
-        </button>
-        <p v-if="showIpa && ipaPreview" class="ipa" lang="und-Latn-fonipa">
-          <span class="ipa-label">IPA</span>
-          {{ ipaPreview }}
-        </p>
-      </div>
+      <p v-if="ipaPreview" class="ipa" lang="und-Latn-fonipa">IPA: {{ ipaPreview }}</p>
     </div>
     <p v-if="speakError" class="warn">{{ speakError }}</p>
     <p class="hint">
@@ -150,49 +132,13 @@ textarea:focus {
   margin: 0.65rem 0 0;
 }
 
-.spoken {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.5rem 0.85rem;
-  min-width: 0;
-  flex: 1 1 12rem;
-}
-
-.btn {
-  font: inherit;
-  font-size: 0.85rem;
-  padding: 0.35rem 0.7rem;
-  border-radius: 6px;
-  border: 1px solid var(--vp-c-divider);
-  background: var(--vp-c-bg);
-  color: var(--vp-c-text-1);
-  cursor: pointer;
-}
-
-.btn:disabled {
-  opacity: 0.55;
-  cursor: not-allowed;
-}
-
-.preview,
 .ipa {
   margin: 0;
   color: var(--vp-c-text-2);
   font-size: 0.9rem;
-}
-
-.ipa {
   font-family: var(--vp-font-family-mono);
-}
-
-.ipa-label {
-  font-family: var(--vp-font-family-base);
-  font-size: 0.75rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--vp-c-text-3);
-  margin-right: 0.35rem;
+  min-width: 0;
+  flex: 1 1 12rem;
 }
 
 .hint {

@@ -42,7 +42,7 @@ Each dictionary sense is one entry. Related senses across fields use an explicit
 Role letters, closed endings, and spelling that tracks sound mean a program can label word class, reference, and pronunciation from the writing. What you write is the language; Inspect only names the parts. Speakers still get free order and a singable shape.
 
 - **[Inspect](inspect.md):** paste a sentence and click or highlight a word to see its role, root sense, and how the clause hangs together.
-- **Text-to-speech:** on that same page, **Speak Agalan** plays the text. Letter-to-sound spelling plus a small syllable inventory make speech a mapping from the letters. **Show IPA** transcribes the same spoken forms.
+- **Text-to-speech:** on that same page, **Speak Agalan** plays the text. Letter-to-sound spelling plus a small syllable inventory make speech a mapping from the letters. **IPA:** beside the button transcribes the same spoken forms.
 
 ## How to learn from these docs
 <a id="how-to-learn"></a>

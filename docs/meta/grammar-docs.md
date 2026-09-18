@@ -501,7 +501,7 @@ Resume teaching may talk about a “root prefix” in running prose; the Agalan 
 - Never link to or mention `meta/`, `examples/`, `proposals/`, `data/`, or repo-root files from a grammar page.
 - One canonical anchor per concept (`<a id="…">`), matching the current heading. When a heading changes, retarget links; do not keep the old id — [one current heading, one current id](#one-current-heading).
 - Do not dump the whole related-inventory into the lead paragraph.
-- **IPA and pronunciation** belong in [phonology.md](../grammar/phonology.md) (letter table, teaching cues) and on the [Inspect](../grammar/inspect.md) tool (**Show IPA** transcribes the same spoken forms). Other grammar pages use orthographic letters (`j`, `x`, `/j/`, `/x/`) — never IPA transcriptions or sound cues in running examples. If a learner needs how a letter sounds, link once to phonology (peer in `grammar/`).
+- **IPA and pronunciation** belong in [phonology.md](../grammar/phonology.md) (letter table, teaching cues) and on the [Inspect](../grammar/inspect.md) tool (**IPA:** beside **Speak Agalan** transcribes the same spoken forms). Other grammar pages use orthographic letters (`j`, `x`, `/j/`, `/x/`) — never IPA transcriptions or sound cues in running examples. If a learner needs how a letter sounds, link once to phonology (peer in `grammar/`).
 
 ### Teach now; don’t preview later
 <a id="teach-now-dont-preview-later"></a>
@@ -531,7 +531,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 | Clause grammar (one clause, `/j/`) | [clause.md](../grammar/clause.md) |
 | Hosted relation catalog | [relations.md](../grammar/relations.md) |
 | Dependents / continue (`/x/`, stand-ins) | [dependents.md](../grammar/dependents.md) |
-| IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) (letter table); [inspect.md](../grammar/inspect.md) (**Show IPA** on spoken forms). Not in other grammar-page examples |
+| IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) (letter table); [inspect.md](../grammar/inspect.md) (**IPA:** on spoken forms). Not in other grammar-page examples |
 | Unassigned / unused-slot inventory | [unassigned-reserved.md](unassigned-reserved.md) — **never** a grammar-page row, drill, or “reserved” gloss |
 | Parser / CLI / site implementation notes | Code and `docs/meta/` — not titles, leads, or “house rules” on grammar pages |
 | Rejected or speculative features | [TODO.md](../../TODO.md) |

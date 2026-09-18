@@ -58,13 +58,13 @@ When someone starts a conversation with you, you're not sure what kind of conver
 
 In Agalan, the basic greeting is your name (so people remember it more easily) plus an optional suffix for the type of conversation you're open to right now.
 
--xan: conversation - "Let's talk!"
+-xan /ʒɑn/: conversation - "Let's talk!"
 
--xen: brief chat - "Got a few minutes?"
+-xen /ʒe̞n/: brief chat - "Got a few minutes?"
 
--xon: quick question - "Hey, got a sec?"
+-xon /ʒon/: quick question - "Hey, got a sec?"
 
--xun: just passing - "Hey." (acknowledge then continue on)
+-xun /ʒʌn/: just passing - "Hey." (acknowledge then continue on)
 
 The person responds likewise with their name and the suffix for their own preferred level of conversation. The lower level wins - if the initiator wants -xan but is responded to with -xen then they know to keep it brief.
 
