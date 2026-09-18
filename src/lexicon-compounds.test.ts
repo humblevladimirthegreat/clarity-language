@@ -93,10 +93,10 @@ describe("lexicon-compounds", () => {
       [
         {
           emoji: "🛏️",
-          stem: "ohohulabede",
-          left: "ohohu",
+          stem: "abedelohohu",
+          left: "abede",
           join: "l",
-          right: "abede",
+          right: "ohohu",
           concrete: "bedroom",
           abstract: "",
           mnemonic: "",
@@ -104,9 +104,9 @@ describe("lexicon-compounds", () => {
       ],
       new Map([["ohohu", "ahaha"]]),
     );
-    assert.equal(rows[0]?.stem, "ahahalabede");
-    assert.equal(rows[0]?.left, "ahaha");
-    assert.equal(rows[0]?.right, "abede");
-    assert.equal(changes.some((c) => c.field === "stem" && c.to === "ahahalabede"), true);
+    assert.equal(rows[0]?.stem, "abedelahaha");
+    assert.equal(rows[0]?.left, "abede");
+    assert.equal(rows[0]?.right, "ahaha");
+    assert.equal(changes.some((c) => c.field === "stem" && c.to === "abedelahaha"), true);
   });
 });

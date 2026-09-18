@@ -564,7 +564,7 @@ Single-item **-m** under question (*How about X?*).
 
 ### Ordinary compound / lexical compound
 
-KIND × FIELD with mid-word **`x`**; closed stem with join letter and no `x`.
+FIELD × KIND with mid-word **`x`**; closed stem with join letter and no `x`.
 
 [x-compounds](x-compounds.md)
 

@@ -17,11 +17,11 @@ English often glues two ideas into one word (*peanut butter*) or one hyphenated 
 >
 > "peanut butter"
 
-The left root is the kind of thing; the right root narrows it (what field, what extra label). You get one thing in the sentence, not two.
+The last root is the kind of thing; the left root specifies it (what field, what extra label). You get one thing in the sentence, not two.
 
-> `golovexagal.`
+> `gagaxolovel.`
 >
-> g-love-x-crush
+> g-crush-x-love
 >
 > "love in the crush sense"
 
@@ -38,11 +38,11 @@ The left root is the kind of thing; the right root narrows it (what field, what 
 ### Words you look up, not build
 <a id="lexical-compounds"></a>
 
-English *bedroom*, *doorbell*, and *friend* feel like one word. Agalan lists those as **one dictionary word** too. You look the word up. You do not make it on the spot by putting **`x`** between *house* and *bed*.
+English *bedroom*, *doorbell*, and *friend* feel like one word. Agalan lists those as **one dictionary word** too. You look the word up. You do not make it on the spot by putting **`x`** between *bed* and *house*.
 
 Inside the dictionary spelling you can still see the two old roots, with a join letter (**l** / **m** / **n** / **r**) instead of **`x`**. That letter is part of the entry (usually **-l**). In a sentence you add a role letter and an ending on the **whole** word, the same way you do for *dog* or *hammer*.
 
-> `zohohulabedel.`
+> `zabedelohohul.`
 >
 > z-bedroom
 >
@@ -50,10 +50,10 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `zohohulabedel` | house **-l** bed | bedroom | look it up |
-| `zobeleladorol` | bell **-l** door | doorbell | look it up |
-| `zeberelonogol` | person **-l** bond | friend | look it up |
-| `zojalanunul` | coat **-l** rain | raincoat | look it up |
+| `zabedelohohul` | bed **-l** house | bedroom | look it up |
+| `zadorolobelel` | door **-l** bell | doorbell | look it up |
+| `zonogoleberel` | bond **-l** person | friend | look it up |
+| `zanunulojal` | rain **-l** coat | raincoat | look it up |
 
 If the pairing is not in the dictionary, either glue with **`x`** (`zabanuxudel` *peanut butter*) or use two words.
 
@@ -65,8 +65,8 @@ Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agala
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | two words | two things, or a property already marked another way | `zahamel zewenel zam` *a hammer and a wrench*; `zodogol gelulul` *a blue dog* (`/ɡ/`) | |
-| **`x`** in the middle | one thing; you can still hear both roots | `golovexagal` *love in the crush sense*; `zabanuxudel` *peanut butter*; `zazawaxululon` (one person) | **x** ≈ plus |
-| dictionary word | one familiar kind, listed as a single entry | `zohohulabedel` *bedroom*; `zunowel` *sunflower* | join letter in the entry, not **`x`** |
+| **`x`** in the middle | one thing; you can still hear both roots | `gagaxolovel` *love in the crush sense*; `zabanuxudel` *peanut butter*; `zazawaxululon` (one person) | **x** ≈ plus |
+| dictionary word | one familiar kind, listed as a single entry | `zabedelohohul` *bedroom*; `zunowel` *sunflower* | join letter in the entry, not **`x`** |
 
 `zazawan zululon` is two people. `zazawaxululon` is one person.
 
@@ -88,10 +88,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| *doorbell* | `zobeleladorol` | |
-| *raincoat* | `zojalanunul` | |
-| *greenhouse* | `zohohulovowel` | |
-| *friend* | `zeberelonogol` | |
+| *doorbell* | `zadorolobelel` | |
+| *raincoat* | `zanunulojal` | |
+| *greenhouse* | `zovowelohohul` | |
+| *friend* | `zonogoleberel` | |
 | *hammer* | `ahamel` | |
 | *wrench* | `ewenel` | |
 | *axe* | `azel` | |
@@ -105,7 +105,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *a doorbell*
 
 ::: details Show answer
-`zobeleladorol.`
+`zadorolobelel.`
 
 z-doorbell
 :::
@@ -129,7 +129,7 @@ z-saw-x-wood
 **4.** *a raincoat*
 
 ::: details Show answer
-`zojalanunul.`
+`zanunulojal.`
 
 z-raincoat
 :::
@@ -145,7 +145,7 @@ z-Azawan | z-Ululon
 **6.** *Ululon sees a greenhouse.*
 
 ::: details Show answer
-`zululon dohohulovowel vejel.`
+`zululon dovowelohohul vejel.`
 
 z-Ululon | d-greenhouse | v-see
 :::
@@ -161,14 +161,14 @@ z-Azawan-x-Ululon
 **8.** *Ululon punches a friend.*
 
 ::: details Show answer
-`zululon zeberelonogol vubunul.`
+`zululon zonogoleberel vubunul.`
 
 z-Ululon | z-friend | v-punch
 :::
 
 #### Agalan → English
 
-**1.** `zeberelonogol.`
+**1.** `zonogoleberel.`
 
 ::: details Show answer
 
@@ -177,7 +177,7 @@ z-friend
 *a friend*
 :::
 
-**2.** `zuhubun dobeleladorol vejel.`
+**2.** `zuhubun dadorolobelel vejel.`
 
 ::: details Show answer
 
@@ -204,7 +204,7 @@ z-saw-x-wood
 *a wood saw*
 :::
 
-**5.** `zuhubun dojalanunul vejel.`
+**5.** `zuhubun danunulojal vejel.`
 
 ::: details Show answer
 
@@ -213,7 +213,7 @@ z-Uhubun | d-raincoat | v-see
 *Uhubun sees a raincoat.*
 :::
 
-**6.** `zeberelonogol dahamel vejel.`
+**6.** `zonogoleberel dahamel vejel.`
 
 ::: details Show answer
 
@@ -231,7 +231,7 @@ z-Ululon | d-axe | v-see
 *Ululon sees an axe.*
 :::
 
-**8.** `zazawan zeberelonogol vubunul.`
+**8.** `zazawan zonogoleberel vubunul.`
 
 ::: details Show answer
 
@@ -262,11 +262,11 @@ A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`*
 ### Adding another piece
 <a id="ordinary-compound-order"></a>
 
-When English stacks labels left to right (*love* in the *crush* sense; a shop name with a third drink), Agalan keeps that order in **one** word. The first root is the kind. Each later root after **`x`** narrows it. The ending stays at the end of the whole word, so you can add another **`x`** + root without rewriting the earlier pieces.
+When English stacks labels left to right (*crush* then *love*; a shop name with a third drink), Agalan keeps that order in **one** word. The **last** root is the kind. Each earlier root specifies it. The ending stays at the end of the whole word. Named lists (people, shops) use the same stack as a list of labels, not as kind-last packing.
 
-> `golovexagal.`
+> `gagaxolovel.`
 >
-> g-love-x-crush
+> g-crush-x-love
 >
 > "love in the crush sense"
 
@@ -355,7 +355,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| *doorbell* | `zobeleladorol` | |
+| *doorbell* | `zadorolobelel` | |
 | *see* | `vejel` | `ejel` *eye* |
 | *scream* | `azagal` | |
 | *punch* | `ubunul` | |
@@ -495,7 +495,7 @@ j-greeting
 *Wave!* (not a greeting bid on a name)
 :::
 
-**8.** `jazawaxen zuhubun dobeleladorol vejel.`
+**8.** `jazawaxen zuhubun dadorolobelel vejel.`
 
 ::: details Show answer
 

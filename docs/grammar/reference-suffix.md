@@ -287,7 +287,7 @@ English often writes a given name plus family as two words. In Agalan a short mu
 | `dodunaxalanen`, `bodunaxalanen` | same name in other slots | one named place / person as object or argument |
 | `zogovexadedan`, `zogovexadedaxunuden` | sense / shop label (two or more lexicon roots) | *Coffee-Tea*; *Coffee-Tea-Water* |
 
-A nativized loan (adapted Agalan root + ordinary ending) uses the same four last letters as any content word. A **lexical compound** is also one slot-filler: one stem, not mid-word **`x`** (`zohohulabedel` *bedroom*).
+A nativized loan (adapted Agalan root + ordinary ending) uses the same four last letters as any content word. A **lexical compound** is also one slot-filler: one stem, not mid-word **`x`** (`zabedelohohul` *bedroom*).
 
 **Compare with:** adjacent bare same-role words (`zodunan zalanen`) are two people in a [join](joins.md).
 

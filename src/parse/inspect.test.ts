@@ -111,7 +111,7 @@ describe("inspectText", () => {
   });
 
   it("Why links lexical compound lemmas", () => {
-    const token = inspectText("zohohulabedel", tables).tokens[0];
+    const token = inspectText("zabedelohohul", tables).tokens[0];
     assert.equal(token?.kind, "word");
     if (token?.kind !== "word") return;
     assert.equal(token.why?.line, "lexical compound");

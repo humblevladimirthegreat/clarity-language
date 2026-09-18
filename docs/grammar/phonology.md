@@ -76,7 +76,7 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Optional `l` after `/ɡ/` | adjective before the noun | `gl-` looks ahead to the next noun |
 | Root(s) **V(CV)+** | content | start with a vowel; each later consonant starts a new syllable |
 | Mid-word `x` | productive compound seam | joins two roots inside one word |
-| Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`ohohulabede` *bedroom*) |
+| Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`abedelohohu` *bedroom*) |
 | `-l` / `-m` / `-n` / `-r` | [reference suffix](reference-suffix.md) | audible end of the content word |
 | Optional `-x` | [plural](plurality.md) after the suffix | word-final `-lx` / `-mx` / `-nx` / `-rx` (letter `x`) |
 | Stand-in **`-rl` / `-rm`** | [dependent clauses](dependents.md#dependent-clauses) | word-final coda `rl` / `rm` (`darl`) |

@@ -44,7 +44,7 @@ You already use digitless number stems for unbounded plus, minus, last place, an
 | **`ROOTx+e`** | essence / absolute / pure type of ROOT | `zolovexrabal`: *essence of love* | **+e** unbounded plus: the kind at full |
 | **`ROOTx+e-`** | grain / seed / infinitesimal of ROOT | `zolovexrabul`: *grain of love* | **+e-** unbounded plus, tiny end |
 | **`ROOTx-e`** | void of / absolute anti-ROOT | `zevevaxrubal`: *void of fear* | **-e** unbounded minus: none of the kind |
-| **`ROOTx-e-`** | **quasi-ROOT**: the shape of ROOT without treating it as fully real (English **`quasi-`**); **`ROOTx-e-1`** / **`ROOTx-e-2`** = [quasi-N](#quasi-n) | `zeberelonogoxrubul`: *quasi-friend*; `zezazexrubudul`: *quasi-pair* | **-e-** imaginary: the shape without the ledger |
+| **`ROOTx-e-`** | **quasi-ROOT**: the shape of ROOT without treating it as fully real (English **`quasi-`**); **`ROOTx-e-1`** / **`ROOTx-e-2`** = [quasi-N](#quasi-n) | `zonogoleberexrubul`: *quasi-friend*; `zezazexrubudul`: *quasi-pair* | **-e-** imaginary: the shape without the ledger |
 | **`ROOTx#e-`** | origin / prototype / onset-form of ROOT | `zolovexrebul`: *love in its beginning form* | **#e-** last-place start |
 | **`ROOTx#e`** | telos / culmination / final form of ROOT | `zoroloxrebal`: *story’s final form* | **#e** last place |
 | **`ROOTx+`** | poly- / multi-ROOT (unspecified >1) | `zuhuruxram`: *multi-faith* | **+** unspecified more than one |
@@ -57,7 +57,7 @@ You already use digitless number stems for unbounded plus, minus, last place, an
 
 English *quasi-* says something has the **shape or role** of a kind without counting as the real thing (*quasi-friend*, *quasi-official*). Spell that as **`ROOTx-e-`**: the kind’s outline, not a full claim that it is that kind. Change only the role letter to use it as a noun, verb, adjective, and so on.
 
-> `zuhubun geberelonogoxrubul.`
+> `zuhubun gonogoleberexrubul.`
 >
 > z-Uhubun | g-friend-x-quasi
 >
@@ -65,12 +65,12 @@ English *quasi-* says something has the **shape or role** of a kind without coun
 
 | PoS | `…x-e-` | Examples |
 |-----|---------|----------|
-| **`/z/` `/d/` `/b/`** (noun) | a quasi-entity | `zeberelonogoxrubul`: *a quasi-friend*; `debenexrubul`: *a quasi-commitment* |
-| **`/v/`** (verb) | to treat as quasi- / as-if that kind | `veberelonogoxrubul`: *to quasi-befriend* / treat as friend-shaped |
+| **`/z/` `/d/` `/b/`** (noun) | a quasi-entity | `zonogoleberexrubul`: *a quasi-friend*; `debenexrubul`: *a quasi-commitment* |
+| **`/v/`** (verb) | to treat as quasi- / as-if that kind | `vonogoleberexrubul`: *to quasi-befriend* / treat as friend-shaped |
 | **`/ɡ/`** (adjective) | *quasi-* (ascribed) | `gezezaxrubul`: *quasi-official* |
 | **`/h/`** (adverb) | under quasi- framing | `hezezaxrubul`: *quasi-officially* |
 | **`/w/`** (adjunct) | host graded as quasi- | `gebenel webenexrubul`: *quasi-commitment* |
-| **`/j/`** (interjection) | *Quasi-!* / *As if that kind!* | `jeberelonogoxrubul` |
+| **`/j/`** (interjection) | *Quasi-!* / *As if that kind!* | `jonogoleberexrubul` |
 
 **Compare with:** free **`g-e-`** / **`v-e-`** / **`h-e-`** / **`j-e-`** / **`x-e-`** are imaginary amount, or number as verb / adverb / interjection / discourse ([numbers.md § Imaginary](numbers.md#imaginary)). **`ROOTx-e-`** is quasi-*kind*.
 

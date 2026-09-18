@@ -331,7 +331,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("quasi numeric derivation is English", () => {
-    expectLine("zuhubun geberelonogoxrubul", "z-Uhubun | g-friend-x-quasi");
+    expectLine("zuhubun gonogoleberexrubul", "z-Uhubun | g-friend-x-quasi");
   });
 });
 

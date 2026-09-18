@@ -229,7 +229,7 @@ describe("classify", () => {
   });
 
   it("lexical compound lemma glosses as one kind", () => {
-    const word = expectReading("zohohulabedel", "ordinary");
+    const word = expectReading("zabedelohohul", "ordinary");
     assert.equal(word.family.kind, "content");
     assert.equal(word.lexicalCompound, true);
     assert.equal(word.rootGloss?.concrete, "bedroom");
@@ -237,7 +237,7 @@ describe("classify", () => {
   });
 
   it("lexical compound beats accidental published substring match", () => {
-    const word = expectReading("zeberelonogon", "ordinary");
+    const word = expectReading("zonogoleberen", "ordinary");
     assert.equal(word.lexicalCompound, true);
     assert.equal(word.rootGloss?.concrete, "friend");
   });

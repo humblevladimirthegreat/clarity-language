@@ -1,12 +1,12 @@
 emoji,stem,left,join,right,concrete,abstract,mnemonic
-🛏️,ohohulabede,ohohu,l,abede,bedroom,sanctum,house in the bed field is the sleeping room; sanctum is a guarded inner place
-🚿,ohohulabada,ohohu,l,abada,bathroom,,house in the bath field is the washing room
-🧥,ojalanunu,oja,l,anunu,raincoat,,coat in the rain field is weather-shell clothing
-📗,abogolahala,abogo,l,ahala,textbook,canon,book in the school field is the assigned text; canon is the set text treated as given
-📓,abogoluwuru,abogo,l,uwuru,notebook,,book in the writing field is for notes
-🚒,ohohulure,ohohu,l,ure,firehouse,,house in the fire field is the station that answers fire
-🪴,ohohulovowe,ohohu,l,ovowe,greenhouse,forcing,house in the flower field grows plants under glass; forcing is heat-driven growth you cannot see as a room
-🫂,eberelonogo,ebere,l,onogo,friend,allegiance,person in the bond field is a friend; allegiance is the unobservable sidedness
-👨‍👩‍👧,ebereluguhu,ebere,l,uguhu,parent,,person in the child field is a parent
-🔔,obeleladoro,obele,l,adoro,doorbell,,bell in the door field is the call at the threshold
-🏫,ahalaluguhu,ahala,l,uguhu,kindergarten,,school in the child field is early-years school
+🛏️,abedelohohu,abede,l,ohohu,bedroom,sanctum,bed specifying house is the sleeping room; sanctum is a guarded inner place
+🚿,abadalohohu,abada,l,ohohu,bathroom,,bath specifying house is the washing room
+🧥,anunuloja,anunu,l,oja,raincoat,,rain specifying coat is weather-shell clothing
+📗,ahalalabogo,ahala,l,abogo,textbook,canon,school specifying book is the assigned text; canon is the set text treated as given
+📓,uwurulabogo,uwuru,l,abogo,notebook,,writing specifying book is for notes
+🚒,urelohohu,ure,l,ohohu,firehouse,,fire specifying house is the station that answers fire
+🪴,ovowelohohu,ovowe,l,ohohu,greenhouse,forcing,flower specifying house grows plants under glass; forcing is heat-driven growth you cannot see as a room
+🫂,onogolebere,onogo,l,ebere,friend,allegiance,bond specifying person is a friend; allegiance is the unobservable sidedness
+👨‍👩‍👧,uguhulebere,uguhu,l,ebere,parent,,child specifying person is a parent
+🔔,adorolobele,adoro,l,obele,doorbell,,door specifying bell is the call at the threshold
+🏫,uguhulahala,uguhu,l,ahala,kindergarten,,child specifying school is early-years school
