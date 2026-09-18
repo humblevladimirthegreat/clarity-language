@@ -3,11 +3,13 @@ https://main.d2xds94zsgwptg.amplifyapp.com
 redirects settings: https://us-east-2.console.aws.amazon.com/amplify/apps/d2xds94zsgwptg/redirects
 
 # TODO
-finish English cheat sheets, including tense
-add Agalan cheat sheet
-consider making negatives clearer
+finish English->Agalan cheat sheets, including tense
+add Agalan->English cheat sheet
+join vowel decision tree in advanced vowel series.
+consider making negatives clearer (stress?)
 final exam
 Prosody
+gloss overlay should indicate phrase structure and what modifies what
 
 ## Evidentiality / tense
 
