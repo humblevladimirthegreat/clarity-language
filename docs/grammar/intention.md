@@ -459,6 +459,12 @@ z-Uhubun | h-DECISION-irreversible | v-scream
 >
 > "From then, it would rain. Azawan would walk."
 
+> `zululon hehegem vawalal helerem b_#22,7.`
+>
+> z-Ululon | h-DECISION-modifiable | v-walk | h-as-of.ledger | b-_22,7
+>
+> "Ululon has decided to walk — the pick is revisable now; the walking is scored as of 22 July."
+
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
@@ -478,6 +484,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. PLAN an
 | *predict* | `helezom` |
 | *as-of.ledger* | `helerem` |
 | *as-of.bookmark* | `hobomam` |
+| *DECISION-modifiable* | `hehegem` |
 
 #### English → Agalan
 
@@ -495,6 +502,14 @@ z-Ululon | h-plan-sketch | v-walk | h-as-of.ledger | b-_22,7
 `helezom hobomam b_#22,7 vanunul.`
 
 h-predict | h-as-of.bookmark | b-_22,7 | v-rain
+:::
+
+**3.** *Ululon has decided to walk — the pick is revisable now; the walking is as of 22 July.*
+
+::: details Show answer
+`zululon hehegem vawalal helerem b_#22,7.`
+
+z-Ululon | h-DECISION-modifiable | v-walk | h-as-of.ledger | b-_22,7
 :::
 
 #### Agalan → English
@@ -515,6 +530,15 @@ h-predict | h-as-of.bookmark | b-_22,7 | v-rain | x-Azawan | h-predict | h-as-of
 z-Ululon | h-plan-sketch | v-walk | h-as-of.ledger | b-_22,7
 
 *As of 22 July, Ululon was going to walk.*
+:::
+
+**3.** `zululon hehegem vawalal helerem b_#22,7.`
+
+::: details Show answer
+
+z-Ululon | h-DECISION-modifiable | v-walk | h-as-of.ledger | b-_22,7
+
+*Ululon has decided to walk — the pick is revisable now; the walking is as of 22 July.*
 :::
 
 ## See also

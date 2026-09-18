@@ -357,6 +357,11 @@ z-ten | z-20 | z-everything-but | g-ruler
 ## Advanced
 <a id="advanced"></a>
 
+### Date as books vs event-when
+<a id="as-of-vs-clock"></a>
+
+Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftover, climate, plan, and forecast score against is [*as-of*](relations.md#as-of) (`helerem` / `hobomam` plus `/b/`). Put the date on that pole (`helerem b_#22,7`); do not also write spare `h_#22,7` for the same snapshot. Clock / *before* / *after* may sit beside *as-of*: books vs event-when are different jobs.
+
 ### Named standards and derived units
 <a id="unit-short-form"></a>
 

@@ -49,3 +49,4 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agalan 
 | topic (*as for Azawan*) | **`hozal`** + `/b/` | [As-for](clause.md#as-for) |
 | resemblance (*walks as / like a duck*) | **`hurorom`** + `/b/` | [Simile](relations.md#similative) |
 | pretense (*as if they walk*) | **NOTIONAL** | [Notional](knowing.md#notional) |
+| dated books (*as of Friday*) | **`helerem` / `hobomam`** + `/b/` | [*As-of*](relations.md#as-of) |

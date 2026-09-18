@@ -582,6 +582,8 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *Mine* | `uroron` | `urorol` *mirror* |
 | *speaker* | `ugobon` | |
 | *Everyone* | `oloben` | `olobel` *globe* |
+| *challenge* | `gomonam` | |
+| *as-of.ledger* | `welerem` | |
 
 #### English → Agalan
 
@@ -625,12 +627,12 @@ z-speaker | z-Mine | z-rank/less | g-showmanship
 z-Ululon | z-Average | z-rank/less.open | g-sing
 :::
 
-**6.** *I am less artistic than Everyone.*
+**6.** *As of 22 July, Azawan is more challenging than Ululon.*
 
 ::: details Show answer
-`zugobon zoloben zuel gabadum.`
+`zazawan zululon zel welerem b_#22,7 gomonam.`
 
-z-speaker | z-Everyone | z-rank/less | g-artistry
+z-Azawan | z-Ululon | z-rank/more | w-as-of.ledger | b-_22,7 | g-challenge
 :::
 
 #### Agalan → English
@@ -680,13 +682,13 @@ z-Azawan | z-Average | z-rank/less.open | g-showmanship
 *Azawan is somewhat less showy than Average.*
 :::
 
-**6.** `zululon zahaman zuel gohohom.`
+**6.** `zazawan zululon zel welerem b_#22,7 gomonam.`
 
 ::: details Show answer
 
-z-Ululon | z-Typical | z-rank/less | g-showmanship
+z-Azawan | z-Ululon | z-rank/more | w-as-of.ledger | b-_22,7 | g-challenge
 
-*Ululon is less showy than Typical.*
+*As of 22 July, Azawan is more challenging than Ululon.*
 :::
 
 ## See also

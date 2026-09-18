@@ -407,7 +407,43 @@ A later `/x/` clause is a new host. To keep the same books, write the **same ove
 
 Do not put a bare person in `/b/` as “from Ululon’s now.” That is [proxy](#proxy) (`hudagam`). Prefer `helerem barl zululon vezehel`.
 
-Once whose-now is set, [PREDICT](intention.md#predict) is **after** that now, [PLAN](intention.md#plan-predict) is **from** that now, [RESIDUE](knowing.md#residue) leftover is on **that** tally, and [FORMER](knowing.md#former-climate) is not **that stretch’s** climate. [MAY](knowing.md#may), [DECISION](intention.md#decision), and [CAUSE](causation.md#cause) still evaluate from speech-now. Evidentials other than LIVE-at-snapshot are how *you* know at speech-now.
+Once whose-now is set, [PREDICT](intention.md#predict) is **after** that now, [PLAN](intention.md#plan-predict) is **from** that now, [RESIDUE](knowing.md#residue) leftover is on **that** tally, and [FORMER](knowing.md#former-climate) is not **that stretch’s** climate. A bare verb is **concurrent** with that now. [MAY](knowing.md#may), [DECISION](intention.md#decision), and [CAUSE](causation.md#cause) still evaluate from speech-now. Evidentials other than LIVE-at-snapshot are how *you* know at speech-now.
+
+> `zazawan zululon zel welerem b_#22,7 gomonam.`
+>
+> z-Azawan | z-Ululon | z-rank/more | w-as-of.ledger | b-_22,7 | g-challenge
+>
+> "As of 22 July, Azawan is more challenging than Ululon." — `/w/` does not retarget the verb
+
+> `zonenol honenom helerem bebarum.`
+>
+> z-money | h-RESIDUE | h-as-of.ledger | b-abandonment
+>
+> "As of the leaving, the money still stood."
+
+> `zazawan helerem b_#22,7 hababam bebarum vajul al bohohul.`
+>
+> z-Azawan | h-as-of.ledger | b-_22,7 | h-before | b-abandonment | v-sit | in | b-house
+>
+> "As of 22 July, Azawan is in a house before the leaving." — books and event-when are different jobs
+
+> `zululon vawalal ol b_#22,7. xululon honenom helerem b=_ vebarum.`
+>
+> z-Ululon | v-walk | at | b-_22,7 | x-Ululon | h-RESIDUE | h-as-of.ledger | b-resume | v-abandonment
+>
+> "Ululon walks on 22 July. As of that date, the leaving still stood."
+
+> `zululon honenom vebarum helerem barl zululon vezehel.`
+>
+> z-Ululon | h-RESIDUE | v-abandonment | h-as-of.ledger | b-that-clause | z-Ululon | v-tell
+>
+> "As of when Ululon told it, the departure still stood." — the telling sentence is whose-now, not leftover
+
+> `zululon honenom helerem b_#22,7 vebarum. xazawan helezom hobomam b_#23,7 vawalal.`
+>
+> z-Ululon | h-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment | x-Azawan | h-predict | h-as-of.bookmark | b-_23,7 | v-walk
+>
+> "As of 22 July, Ululon had still left. From a 23 July placeholder, Azawan would walk." — a new pair replaces whose-now
 
 A finished inner clause does not stay open for a later matrix resume. Isolated `helerer` parses; write it only after an introduce of that overlay.
 
@@ -415,7 +451,7 @@ A finished inner clause does not stay open for a later matrix resume. Isolated `
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`helerem` / `gelerem` / `welerem`** | asserted whose-now | *as of* (dated ledger) | `elerem` *ledger* | 📒: a dated line in the books |
+| **`helerem` / `gelerem` / `welerem`** | asserted whose-now | *as of* (dated ledger) | `elerel` *ledger* | 📒: a dated line in the books |
 | **`hobomam` / `gobomam` / `wobomam`** | unasserted whose-now | *as of* (placeholder now) | `obomal` *bookmark* | 🔖: hold the place without stamping |
 | **`helerer` / `hobomar`** | resume that overlay | *same books* | same | **-r** restates the stem; no `/b/` |
 
@@ -443,6 +479,8 @@ Short drills for Advanced. Try each item before opening **Show answer**. The hos
 | *predict* | `helezom` |
 | *as-of.ledger* | `helerem` |
 | *as-of.bookmark* | `hobomam` |
+| *challenge* | `gomonam` |
+| *tell* | `vezehel` |
 
 #### English → Agalan
 
@@ -476,6 +514,22 @@ h-predict | h-as-of.bookmark | b-_22,7 | v-rain
 `zonenol gelerem b_#22,7.`
 
 z-money | g-as-of.ledger | b-_22,7
+:::
+
+**5.** *As of 22 July, Azawan is more challenging than Ululon.*
+
+::: details Show answer
+`zazawan zululon zel welerem b_#22,7 gomonam.`
+
+z-Azawan | z-Ululon | z-rank/more | w-as-of.ledger | b-_22,7 | g-challenge
+:::
+
+**6.** *As of the leaving, the money still stood.*
+
+::: details Show answer
+`zonenol honenom helerem bebarum.`
+
+z-money | h-RESIDUE | h-as-of.ledger | b-abandonment
 :::
 
 #### Agalan → English
@@ -514,6 +568,24 @@ h-predict | h-as-of.bookmark | b-_22,7 | v-rain | x-Azawan | h-predict | h-as-of
 z-money | g-as-of.ledger | b-_22,7
 
 *The money as of 22 July.*
+:::
+
+**5.** `zazawan zululon zel welerem b_#22,7 gomonam.`
+
+::: details Show answer
+
+z-Azawan | z-Ululon | z-rank/more | w-as-of.ledger | b-_22,7 | g-challenge
+
+*As of 22 July, Azawan is more challenging than Ululon.*
+:::
+
+**6.** `zonenol honenom helerem bebarum.`
+
+::: details Show answer
+
+z-money | h-RESIDUE | h-as-of.ledger | b-abandonment
+
+*As of the leaving, the money still stood.*
 :::
 
 

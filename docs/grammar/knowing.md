@@ -649,9 +649,6 @@ The same published roots stay ordinary content under other role letters. The clo
 >
 > "Azawan sees a boot — from memory."
 
-## Advanced
-<a id="advanced"></a>
-
 ### Residue against a snapshot
 <a id="as-of-standing"></a>
 
@@ -707,6 +704,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Score l
 | *RESIDUE* | `honenom` |
 | *WITNESSED* | `huvuvum` |
 | *LIVE* | `hadezem` |
+| *MAY* | `hodohom` |
 | *as-of.ledger* | `helerem` |
 
 #### English → Agalan
@@ -727,6 +725,14 @@ z-Ululon | h-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment
 z-Azawan | h-LIVE | h-as-of.ledger | b-_22,7 | v-walk
 :::
 
+**3.** *As of 22 July the leaving still stood — and from now, that leftover could be.*
+
+::: details Show answer
+`zululon hodohom honenom helerem b_#22,7 vebarum.`
+
+z-Ululon | h-MAY | h-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment
+:::
+
 #### Agalan → English
 
 **1.** `zululon huvuvum helerem b_#22,7 honenom vebarum.`
@@ -745,6 +751,15 @@ z-Ululon | h-WITNESSED | h-as-of.ledger | b-_22,7 | h-RESIDUE | v-abandonment
 z-Ululon | h-WITNESSED | h-as-of.ledger | b-_22,7 | h-RESIDUE | v-abandonment | x-Azawan | h-WITNESSED | h-as-of.ledger | v-walk
 
 *I remember: as of 22 July, Ululon had still left. Azawan is walking — still from memory, same day in the books.*
+:::
+
+**3.** `zululon hodohom honenom helerem b_#22,7 vebarum.`
+
+::: details Show answer
+
+z-Ululon | h-MAY | h-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment
+
+*As of 22 July the leaving still stood — and from now, that leftover could be.*
 :::
 
 ## See also

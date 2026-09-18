@@ -347,6 +347,30 @@ describe("parse — as-of poles", () => {
       SentenceParseError,
     );
   });
+
+  it("parses event-noun /b/ on as-of", () => {
+    const result = parseText("zonenol honenom helerem bebarum.");
+    const h = result.utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "helerem");
+    assert.ok(h && h.kind === "h");
+    assert.equal(h.unit.bound?.raw, "bebarum");
+  });
+
+  it("parses extra-noun resume in as-of /b/", () => {
+    const result = parseText("zululon vawalal ol b_#22,7. xululon honenom helerem b=_ vebarum.");
+    const second = result.utterances[0]!.bodies[1]!.clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "helerem");
+    assert.ok(second && second.kind === "h");
+    assert.equal(second.unit.bound?.raw, "b=_");
+  });
+
+  it("parses /w/ as-of resume immediately before the adjective", () => {
+    const result = parseText("zazawan zululon zel welerer gomonam.");
+    const np = result.utterances[0]!.bodies[0]!.clause.units[0];
+    assert.ok(np && np.kind === "np");
+    const shared = np.coord.parts[0]!.shared[0];
+    assert.ok(shared && "asOf" in shared);
+    assert.equal(shared.asOf?.word.raw, "welerer");
+    assert.equal(shared.asOf?.bound, undefined);
+  });
 });
 
 describe("parse — stage 4 resolve", () => {

@@ -13,7 +13,7 @@ gloss overlay should indicate phrase structure and what modifies what
 
 ## Evidentiality / tense
 
-- Dedicated observation vs imagination **tense** (stacks with evidentiality channels; does not replace them). Live vs memory observation is **LIVE** (`adeze`) vs **WITNESSED** (`uvuvu`) — not a past/future slot.
+- Dedicated observation vs imagination **tense** (stacks with evidentiality channels; does not replace them). Live vs memory observation is **LIVE** (`adeze`) vs **WITNESSED** (`uvuvu`) — not a past/future slot. Whose-now for leftover / climate / plan / forecast is hosted *as-of* (`helerem` / `hobomam`), not a tense letter and not persist hooks.
 - Consider sense words for observation
 
 Dictionary entries (open lexicon / concepts — not the closed list above):

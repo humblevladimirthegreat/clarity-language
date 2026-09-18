@@ -828,6 +828,8 @@ When same-role words sit next to a smaller list, wrap that stretch and its join 
 >
 > "Azawan and (just water)."
 
+**Compare with:** a memory stretch or a chain of `/x/` writes the evidential and/or resumes [*as-of*](relations.md#as-of) on the next host. Islands bound join / `/h/` scope; they are not a viewpoint paragraph.
+
 
 ### Named phrase **`-n`**
 <a id="named-list"></a>

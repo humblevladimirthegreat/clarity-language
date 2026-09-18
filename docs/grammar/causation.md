@@ -547,7 +547,7 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**. **`hurugum`** asserts the condition as a fact the outcome rests on; **`hadorom`** does not; speaker-grounds stay **`hodohom`** (**MAY**). Habit uses **`hual`**; mechanism uses **`hegegam`**.
+Short drills for Advanced. Try each item before opening **Show answer**. **`hurugum`** asserts the condition as a fact the outcome rests on; **`hadorom`** does not; English *if he had* is bookmark *as-of*, not `hadorom`. Speaker-grounds stay **`hodohom`** (**MAY**). Habit uses **`hual`**.
 
 **Setting:** a chemistry lab
 
@@ -570,6 +570,9 @@ Short drills for Advanced. Try each item before opening **Show answer**. **`huru
 | *because* | `hurugum` | `urugul` *brick* |
 | *MAY* | `hodohom` | `odohol` *thought* |
 | *CAUSE* | `hegegam` | `egegal` *gear* |
+| *RESIDUE* | `honenom` | |
+| *predict* | `helezom` | |
+| *as-of.bookmark* | `hobomam` | |
 
 #### English → Agalan
 
@@ -613,12 +616,12 @@ z-Azawan | h-MAY | v-sit | h-because | b-that-clause | z-Ululon | v-pour
 z-melt | g-if | b-fire | h-always
 :::
 
-**6.** *Fire only if there is a lab coat (as mechanism).*
+**6.** *If Ululon had poured, the test-tube would still sit.*
 
 ::: details Show answer
-`zurel geberom balabal hegegam.`
+`zezubel vajul honenom helezom hobomam barl zululon vorurul.`
 
-z-fire | g-only-if | b-lab-coat | h-CAUSE
+z-test-tube | v-sit | h-RESIDUE | h-predict | h-as-of.bookmark | b-that-clause | z-Ululon | v-pour
 :::
 
 #### Agalan → English
@@ -668,13 +671,13 @@ z-lab-coat | g-if | b-fire | h-always
 *A lab coat if there is fire, as a standing pattern.*
 :::
 
-**6.** `zuhubun vorurul hegegam hurugum barl zurel.`
+**6.** `zezubel vajul honenom helezom hobomam barl zululon vorurul.`
 
 ::: details Show answer
 
-z-Uhubun | v-pour | h-CAUSE | h-because | b-that-clause | z-fire
+z-test-tube | v-sit | h-RESIDUE | h-predict | h-as-of.bookmark | b-that-clause | z-Ululon | v-pour
 
-*Uhubun pours because there is fire (as mechanism).*
+*If Ululon had poured, the test-tube would still sit.*
 :::
 
 ## See also
