@@ -219,7 +219,7 @@ const COMPASS_ROOTS = new Set([
 const GREETING_STANCE: Record<string, string> = {
   a: "presence",
   o: "ask",
-  e: "queue",
+  e: "minutes",
   u: "passing",
 };
 
@@ -966,7 +966,7 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
             pos: word.pos,
           });
     // Ability / greeting bids: one hyphenated english slot (`walking-unable-temporary`,
-    // `Ululon-queue`). Values keep a visible `-x-` hinge (`competence-x-motive`).
+    // `Ululon-minutes`). Values keep a visible `-x-` hinge (`competence-x-motive`).
     if (word.reading === "greeting") {
       const stance = GREETING_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "greeting";
       return [`${host}-${stance}`];

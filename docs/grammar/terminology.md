@@ -420,7 +420,7 @@ Whole root + **-r** vs prefix through the second vowel.
 
 ### Greeting / greeting bid
 
-A named citation as a hello (`azawan.`). Mid-word **`x`** plus **`a`** / **`o`** / **`e`** / **`u`** on that citation or on a vocative marks presence, one ask, *one moment please*, or passing.
+A named citation as a hello (`azawan.`). Mid-word **`x`** plus **`a`** / **`o`** / **`e`** / **`u`** on that citation or on a vocative marks presence, one ask, *a few minutes*, or passing. The other person answers with a bid; the lesser bid holds (**a** stay > **e** a few minutes > **o** one ask > **u** pass).
 
 [Reference suffix](reference-suffix.md#greeting) · [X-compounds](x-compounds.md#greeting-bid)
 

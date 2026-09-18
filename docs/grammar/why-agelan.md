@@ -161,9 +161,9 @@ Keeping those forks apart helps you stop treating wishes and habits as if the wo
 ### Openings and how long the talk is
 <a id="openings"></a>
 
-English *hi* hides whether you can stay, whether this is one ask, whether the other person should wait, or whether you are only passing.
+English *hi* hides whether you can stay, whether this is a few minutes, whether this is one ask, or whether you are only passing.
 
-A [greeting](reference-suffix.md#greeting) is your name as a citation (`azawan.`). Calling someone is a [vocative](clause.md#vocative). A [greeting bid](x-compounds.md#greeting-bid) adds one vowel: presence, one slot, *one moment please*, or passing. The overlay names the **encounter**.
+A [greeting](reference-suffix.md#greeting) is your name as a citation (`azawan.`). Calling someone is a [vocative](clause.md#vocative). A [greeting bid](x-compounds.md#greeting-bid) adds one vowel: presence, a few minutes, one slot, or passing. The other person answers with a bid; the **lesser** bid is the one that holds. The overlay names the **encounter**.
 
 Marking the opening that way helps you consent to the talk without treating a wave as a blank check on time.
 

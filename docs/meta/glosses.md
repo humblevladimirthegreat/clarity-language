@@ -330,7 +330,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 |---------|-------------|-------------------------|
 | `jawavel` | `j-greeting` | *Hello.* |
 | `azawan.` | `Azawan` | *Azawan.* (hello) |
-| `jululoxen` | `j-Ululon-queue` | *Ululon — one moment please.* |
+| `jululoxen` | `j-Ululon-minutes` | *Ululon — a few minutes.* |
 | `jael` | `j-yes` | *Yes.* |
 | `jol` | `j-question` | *(yes/no or fill-ask)* |
 | `zugobol` | `z-microphone` | *a microphone* |

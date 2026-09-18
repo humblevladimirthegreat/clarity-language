@@ -121,7 +121,7 @@ const JOIN_ENDING_SENSE: Record<Ending, string> = {
 const GREETING_BID_GLOSS: Record<"a" | "e" | "o" | "u", string> = {
   a: "presence",
   o: "one ask",
-  e: "one moment please",
+  e: "a few minutes",
   u: "passing",
 };
 

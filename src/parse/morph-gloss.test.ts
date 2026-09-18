@@ -107,7 +107,7 @@ describe("morphGlossLine — glosses.md single words", () => {
   it("worked single-words table", () => {
     expectLine("jawavel", "j-greeting");
     expectLine("azawan.", "Azawan");
-    expectLine("jululoxen", "j-Ululon-queue");
+    expectLine("jululoxen", "j-Ululon-minutes");
     expectLine("jael", "j-yes");
     expectLine("jol", "j-question");
     expectLine("zedonen", "z-listener");

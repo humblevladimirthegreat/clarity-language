@@ -308,7 +308,7 @@ Role vowels are **`a`** / **`e`** / **`u`** / **`o`**. Span type and edge letter
 ### How you show up (name **`x`** vowel)
 <a id="greeting-bid"></a>
 
-A [greeting](reference-suffix.md#greeting) is your own name with a period (`azawan.`). [Calling someone](clause.md#vocative) is their name under **`/j/`** (`jululon.`). To say **how** this opening is meant, put **`x`** and one vowel before **-n**. That vowel is about the meeting (stay and talk, one ask, wait, pass by). It is not a grade of the person.
+A [greeting](reference-suffix.md#greeting) is your own name with a period (`azawan.`). [Calling someone](clause.md#vocative) is their name under **`/j/`** (`jululon.`). To say **how** this opening is meant, put **`x`** and one vowel before **-n**. That vowel is about the meeting (stay and talk, a few minutes, one ask, pass by). It is not a grade of the person.
 
 On your own name, it is how you arrive. When you call them, it is how you address them.
 
@@ -322,20 +322,36 @@ On your own name, it is how you arrive. When you call them, it is how you addres
 
 > `jululoxen.`
 >
-> j-Ululon-queue
+> j-Ululon-minutes
 >
-> "Ululon — one moment please."
+> "Ululon — a few minutes."
 
 <AgelanInspect text="jululoxen." />
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`…xan`** | presence | *I’m here / we can stay* | **a** ≈ add (time is in) |
+| **`…xen`** | minutes | *got a few minutes?* | **e** ≈ order (the slot has an end) |
 | **`…xon`** | one slot | *one ask* | **o** ≈ one |
-| **`…xen`** | queue | *one moment please* | **e** ≈ order (wait in line) |
 | **`…xun`** | pass | *just passing* (acknowledge; don’t open talk) | **u** ≈ undo (lift the talk) |
 
 Only one of these vowels per name. You can still pair your arrival with calling them (`azawaxan jululoxon`). **-n** is still the [named](reference-suffix.md#named-n-beginner) ending.
+
+The other person answers with a greeting bid too. The **lesser** bid is the one that holds for the talk: **a** (stay) is more than **e** (a few minutes), **e** is more than **o** (one ask), **o** is more than **u** (passing). If Azawan offers stay and Ululon answers with one ask, they have one ask.
+
+> `azawaxan.`
+>
+> Azawan-presence
+>
+> "Azawan — I’m here / we can stay."
+
+> `ululoxon.`
+>
+> Ululon-ask
+>
+> "Ululon — one ask." (the talk is one ask)
+
+<AgelanInspect text="azawaxan. ululoxon." />
 
 **Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](ability.md#ability) (`vuzunuxel` *can’t sing right now*). On a [need](values.md) it is a value stance. Greeting bids sit on a **named** hello or a **`/j/`** call, with **-n**.
 
@@ -371,12 +387,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 Azawan-presence
 :::
 
-**2.** *Ululon — one moment please.* (calling)
+**2.** *Ululon — a few minutes.* (calling)
 
 ::: details Show answer
 `jululoxen.`
 
-j-Ululon-queue
+j-Ululon-minutes
 :::
 
 **3.** *Azawan — one ask.*
@@ -411,12 +427,12 @@ j-Uhubun-passing
 Uhubun-ask
 :::
 
-**7.** *Azawan — one moment please.* (calling); *Ululon screams.*
+**7.** *Azawan — a few minutes.* (calling); *Ululon screams.*
 
 ::: details Show answer
 `jazawaxen zululon vazagal.`
 
-j-Azawan-queue | z-Ululon | v-scream
+j-Azawan-minutes | z-Ululon | v-scream
 :::
 
 **8.** *Ululon — just passing.* (calling); *Ululon punches Azawan.*
@@ -425,6 +441,14 @@ j-Azawan-queue | z-Ululon | v-scream
 `jululoxun zululon zazawan vubunul.`
 
 j-Ululon-passing | z-Ululon | z-Azawan | v-punch
+:::
+
+**9.** *Azawan — I’m here / we can stay.* *Ululon — one ask.* (Ululon’s bid is the one that holds)
+
+::: details Show answer
+`azawaxan. ululoxon.`
+
+Azawan-presence | Ululon-ask
 :::
 
 #### Agalan → English
@@ -459,8 +483,8 @@ Azawan-passing
 
 ::: details Show answer
 
-j-Uhubun-queue
-*Uhubun — one moment please.* (calling)
+j-Uhubun-minutes
+*Uhubun — a few minutes.* (calling)
 :::
 
 **5.** `jululoxon.`
@@ -491,9 +515,18 @@ j-greeting
 
 ::: details Show answer
 
-j-Azawan-queue | z-Uhubun | d-doorbell | v-see
+j-Azawan-minutes | z-Uhubun | d-doorbell | v-see
 
-*Azawan — one moment please.* (calling); *Uhubun sees a doorbell.*
+*Azawan — a few minutes.* (calling); *Uhubun sees a doorbell.*
+:::
+
+**9.** `azawaxan. ululoxen.`
+
+::: details Show answer
+
+Azawan-presence | Ululon-minutes
+
+*Azawan — I’m here / we can stay.* *Ululon — a few minutes.* (Ululon’s few minutes is the one that holds)
 :::
 
 ## See also

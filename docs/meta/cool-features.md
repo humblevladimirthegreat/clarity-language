@@ -54,36 +54,21 @@ Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/knowing.html#may
 
 ### Greetings Say What Kind of Talk This Is
 
-English *hi* is a blank check. It does not say whether you can stay, whether this is one question, whether the other person should wait, or whether you are only passing. People guess, over-commit, or get trapped in a doorway conversation they never agreed to.
+When someone starts a conversation with you, you're not sure what kind of conversation you're signing up for.
 
-In Agalan the basic greeting is **your name as a citation** — no extra first letter. Calling someone you know is a separate vocative with `/j/`.
+In Agalan, the basic greeting is your name (so people remember it more easily) plus an optional suffix for the type of conversation you're open to right now.
 
-> `azawan.`
->
-> Azawan
->
-> "Azawan." (hello — I’m Azawan)
+-xan: conversation - "Let's talk!"
 
-> `jululon.`
->
-> j-Ululon
->
-> "Ululon!" (hey, Ululon)
+-xen: brief chat - "Got a few minutes?"
 
-The extra move is a closed vowel on that same name (`x` plus **a** / **o** / **e** / **u**). It frames **this encounter**, not the person’s worth:
+-xon: quick question - "Hey, got a sec?"
 
-| Form | Vowel job | What they can assume |
-|------|-----------|----------------------|
-| `azawaxan` | **a** add | I’m here / we can stay |
-| `jululoxon` | **o** one | one ask (then we’re done) |
-| `jululoxen` | **e** order | *one moment please* (wait in line) |
-| `azawaxun` | **u** undo | I’m just passing; not opening talk |
+-xun: just passing - "Hey." (acknowledge then continue on)
 
-So `jululoxon` is *Ululon — got a sec?*, and `jululoxen` is *Ululon — one moment please*, instead of a *hi* that might mean either. A citation bid is how you show up; a vocative bid is how you call them (`azawaxan jululoxon` — I’m staying; Ululon, one ask).
+The person responds likewise with their name and the suffix for their own preferred level of conversation. The lower level wins - if the initiator wants -xan but is responded to with -xen then they know to keep it brief.
 
-The same `x` + vowel on a verb is *can* / *can’t*, so this reading is only on a **named citation or vocative**. Bare `azawan.` stays the default hello with no extra claim.
-
-Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/reference-suffix.html#greeting and https://main.d2xds94zsgwptg.amplifyapp.com/grammar/x-compounds.html#greeting-bid
+Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/x-compounds.html#greeting-bid
 
 ### Pronouns Copy the Start of the Noun
 
