@@ -439,6 +439,84 @@ z-Uhubun | h-DECISION-irreversible | v-scream
 *Uhubun has decided for good to scream.*
 :::
 
+## Advanced
+<a id="advanced"></a>
+
+### Plan and predict against a snapshot
+<a id="as-of-intention"></a>
+
+[PLAN](#plan-predict) and [PREDICT](#predict) without a hosted pair score against **speech-now**. With [*as-of*](relations.md#as-of), PLAN is the intention **from** that now (*was going to*), and PREDICT is **after** that now (*would rain*). Repeat PREDICT on the next clause; resume whose-now with `helerer` / `hobomar`. [DECISION](#decision) stays how revisable the pick is **now**.
+
+> `zululon hemabam vawalal helerem b_#22,7.`
+>
+> z-Ululon | h-plan-sketch | v-walk | h-as-of.ledger | b-_22,7
+>
+> "As of 22 July, Ululon was going to walk."
+
+> `helezom hobomam b_#22,7 vanunul. xazawan helezom hobomar vawalal.`
+>
+> h-predict | h-as-of.bookmark | b-_22,7 | v-rain | x-Azawan | h-predict | h-as-of.bookmark | v-walk
+>
+> "From then, it would rain. Azawan would walk."
+
+### Translation practice
+<a id="translation-practice-advanced"></a>
+
+Short drills for Advanced. Try each item before opening **Show answer**. PLAN and PREDICT score against the snapshot.
+
+**Setting:** a delayed departure board
+
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Ululon* | `ululon` |
+| *walk* | `vawalal` |
+| *rain* | `vanunul` |
+| *plan-sketch* | `hemabam` |
+| *predict* | `helezom` |
+| *as-of.ledger* | `helerem` |
+| *as-of.bookmark* | `hobomam` |
+
+#### English → Agalan
+
+**1.** *As of 22 July, Ululon was going to walk.*
+
+::: details Show answer
+`zululon hemabam vawalal helerem b_#22,7.`
+
+z-Ululon | h-plan-sketch | v-walk | h-as-of.ledger | b-_22,7
+:::
+
+**2.** *From then, it would rain.*
+
+::: details Show answer
+`helezom hobomam b_#22,7 vanunul.`
+
+h-predict | h-as-of.bookmark | b-_22,7 | v-rain
+:::
+
+#### Agalan → English
+
+**1.** `helezom hobomam b_#22,7 vanunul. xazawan helezom hobomar vawalal.`
+
+::: details Show answer
+
+h-predict | h-as-of.bookmark | b-_22,7 | v-rain | x-Azawan | h-predict | h-as-of.bookmark | v-walk
+
+*From then, it would rain. Azawan would walk.*
+:::
+
+**2.** `zululon hemabam vawalal helerem b_#22,7.`
+
+::: details Show answer
+
+z-Ululon | h-plan-sketch | v-walk | h-as-of.ledger | b-_22,7
+
+*As of 22 July, Ululon was going to walk.*
+:::
+
 ## See also
 
 - How you know a forecast: [knowing.md](knowing.md#evidentiality)

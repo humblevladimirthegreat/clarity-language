@@ -126,7 +126,7 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, emotion ACT
 | `predict` | `mood` | **`elezo`** |
 | `decision` | `mood` | DECISION changeability |
 | `cause` | `mood` | CAUSE **`egega`** |
-| `clause_pole` | `mood` | *if* / *only-if* / *iff* / *because* / *so-that* / … |
+| `clause_pole` | `mood` | *if* / *only-if* / *iff* / *because* / *so-that* / *as-of* / … |
 | `universality` | `mood` | COMMON / FORMAL / … |
 | `emotion_act` | `mood` | HIGH / MED / LOW |
 | `emotion_locus` | `mood` | INTERNAL / EXTERNAL / CIRCUM |
@@ -151,7 +151,7 @@ Owns:
 - Utterance framing ([clause.md](../grammar/clause.md) — `/j/` turns, omissible default assertoric; [dependents.md](../grammar/dependents.md) — `/x/` continue)
 - Right-close joins at phrase / VP / clause level (illegal left fence)
 - Span open…close nesting; adjunct islands **`^ … ^`**
-- Complex `/ɡ|h/` + `/b/`; floating `/h/` as adjuncts
+- Complex `/ɡ|h/` + `/b/`; `/w/` + `/b/` only for *as-of* overlays; floating `/h/` as adjuncts
 - Matrix-final **stand-in** (`darl` / `barl`) + contiguous dependent
 
 Recovery is off. Illegal left fences, infix joins, and binderless islands throw `SentenceParseError`.

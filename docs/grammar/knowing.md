@@ -649,6 +649,104 @@ The same published roots stay ordinary content under other role letters. The clo
 >
 > "Azawan sees a boot — from memory."
 
+## Advanced
+<a id="advanced"></a>
+
+### Residue against a snapshot
+<a id="as-of-standing"></a>
+
+[RESIDUE](#residue) and [FORMER](#former-climate) without a hosted pair score against **today’s** books. To score them against a dated now, add [*as-of*](relations.md#as-of). LIVE plus *as-of* puts the camera in that snapshot. WITNESSED plus *as-of* is memory of a scene whose internal now is the snapshot. Write **`huvuvum`** again on the next memory clause; resume the books with **`helerer`**. [MAY](#may) still evaluates from speech-now.
+
+> `zululon honenom helerem b_#22,7 vebarum.`
+>
+> z-Ululon | h-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment
+>
+> "As of 22 July, Ululon’s leaving still counted."
+
+> `zazawan hadezem helerem b_#22,7 vawalal.`
+>
+> z-Azawan | h-LIVE | h-as-of.ledger | b-_22,7 | v-walk
+>
+> "Azawan is walking — we're there on 22 July."
+
+> `zululon huvuvum helerem b_#22,7 honenom vebarum. xazawan huvuvum helerer vawalal.`
+>
+> z-Ululon | h-WITNESSED | h-as-of.ledger | b-_22,7 | h-RESIDUE | v-abandonment | x-Azawan | h-WITNESSED | h-as-of.ledger | v-walk
+>
+> "I remember: as of 22 July, Ululon had still left. Azawan is walking — still from memory, same day in the books."
+
+> `zazawan hual vezehel hemebem helerem b_#22,7.`
+>
+> z-Azawan | h-always | v-tell | h-FORMER | h-as-of.ledger | b-_22,7
+>
+> "As of 22 July, Azawan always telling was not that stretch’s climate."
+
+[NOTIONAL](#notional) may stack with *as-of* (*as if, from Friday’s books*). Serious English *if he had* stays bookmark `hobomam`, not play.
+
+> `zululon hadadem helerem b_#22,7 vebarum.`
+>
+> z-Ululon | h-NOTIONAL | h-as-of.ledger | b-_22,7 | v-abandonment
+>
+> "As if, from the 22 July books, Ululon were leaving."
+
+### Translation practice
+<a id="translation-practice-advanced"></a>
+
+Short drills for Advanced. Try each item before opening **Show answer**. Score leftover against the ledger; repeat the channel.
+
+**Setting:** a film archive
+
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Ululon* | `ululon` |
+| *departure* | `vebarum` |
+| *walk* | `vawalal` |
+| *RESIDUE* | `honenom` |
+| *WITNESSED* | `huvuvum` |
+| *LIVE* | `hadezem` |
+| *as-of.ledger* | `helerem` |
+
+#### English → Agalan
+
+**1.** *As of 22 July, Ululon’s leaving still counted.*
+
+::: details Show answer
+`zululon honenom helerem b_#22,7 vebarum.`
+
+z-Ululon | h-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment
+:::
+
+**2.** *Azawan is walking — we're there on 22 July.*
+
+::: details Show answer
+`zazawan hadezem helerem b_#22,7 vawalal.`
+
+z-Azawan | h-LIVE | h-as-of.ledger | b-_22,7 | v-walk
+:::
+
+#### Agalan → English
+
+**1.** `zululon huvuvum helerem b_#22,7 honenom vebarum.`
+
+::: details Show answer
+
+z-Ululon | h-WITNESSED | h-as-of.ledger | b-_22,7 | h-RESIDUE | v-abandonment
+
+*I remember: as of 22 July, Ululon had still left.*
+:::
+
+**2.** `zululon huvuvum helerem b_#22,7 honenom vebarum. xazawan huvuvum helerer vawalal.`
+
+::: details Show answer
+
+z-Ululon | h-WITNESSED | h-as-of.ledger | b-_22,7 | h-RESIDUE | v-abandonment | x-Azawan | h-WITNESSED | h-as-of.ledger | v-walk
+
+*I remember: as of 22 July, Ululon had still left. Azawan is walking — still from memory, same day in the books.*
+:::
+
 ## See also
 
 - Need ascription: [values.md](values.md)

@@ -505,6 +505,17 @@ z-Ululon | z-rank/more | h-intensity | v-lift
 ## Advanced
 <a id="advanced"></a>
 
+### Snapshot on a shared scale
+<a id="as-of-scale"></a>
+
+To score the shared adjective as of a dated now, write [*as-of*](relations.md#as-of) on `/w/` immediately before that `/ɡ/` word, with `/b/` between them. That snapshot does not retarget the verb; the clause still needs `/h/` *as-of* if the event also scores against that now.
+
+> `zazawan zululon zel welerem b_#22,7 gomonam.`
+>
+> z-Azawan | z-Ululon | z-rank/more | w-as-of.ledger | b-_22,7 | g-challenge
+>
+> "As of 22 July, Azawan is more challenging than Ululon."
+
 ### Judgment benchmarks (worse than…)
 <a id="judgment-benchmarks"></a>
 <a id="worse-than"></a>

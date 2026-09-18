@@ -126,6 +126,10 @@ function overlayReading(overlay: OverlayRow): LexReading {
   return "mood";
 }
 
+export function isAsOfOverlay(word: { overlay?: { kind: string; gloss: string } }): boolean {
+  return word.overlay?.kind === "clause_pole" && word.overlay.gloss.startsWith("as-of.");
+}
+
 function isRestrictor(word: MorphWord): boolean {
   const { family, pos, ending } = word;
   if (family.kind !== "joinMarker" || !pos || !ending) return false;

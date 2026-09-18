@@ -31,7 +31,7 @@ import {
   WritingSpan,
   Z,
 } from "./tokens.js";
-import { isStandIn } from "./classify.js";
+import { isAsOfOverlay, isStandIn } from "./classify.js";
 import type {
   BodyClause,
   Clause,
@@ -85,10 +85,22 @@ function isGlHead(token: IToken): boolean {
   return token.tokenType === G && (token.payload as LexWord).gl === true;
 }
 
+function isAsOfWToken(token: IToken): boolean {
+  return token.tokenType === W && isAsOfOverlay((token.payload as LexWord) ?? {});
+}
+
 function laAfterW(parser: CstParser, from = 1): number {
   let i = from;
-  while (parser.LA(i).tokenType === W) i += 1;
-  return i;
+  while (true) {
+    const tok = parser.LA(i);
+    if (tok.tokenType !== W) return i;
+    const ending = (tok.payload as LexWord | undefined)?.ending;
+    i += 1;
+    if (isAsOfWToken(tok) && ending !== "r") {
+      const next = parser.LA(i);
+      if (next.tokenType === B || next.tokenType === Odo) i += 1;
+    }
+  }
 }
 
 function isNpSlotLookahead(parser: CstParser, slot: NpSlot): boolean {
@@ -538,20 +550,45 @@ class AgelanSentenceParser extends CstParser {
     });
   });
 
+  public asOfWPair = this.RULE("asOfWPair", () => {
+    this.CONSUME(W);
+    this.OPTION({
+      GATE: () => tokenIs(this.LA(1), B, Odo),
+      DEF: () => {
+        this.OR([{ ALT: () => this.CONSUME(B) }, { ALT: () => this.CONSUME(Odo) }]);
+      },
+    });
+  });
+
   public gPackage = this.RULE("gPackage", () => {
-    this.MANY(() => {
-      this.CONSUME(W);
+    this.MANY({
+      GATE: () => this.LA(1).tokenType === W && !isAsOfWToken(this.LA(1)),
+      DEF: () => {
+        this.CONSUME(W);
+      },
+    });
+    this.OPTION({
+      GATE: () => isAsOfWToken(this.LA(1)),
+      DEF: () => {
+        this.SUBRULE(this.asOfWPair);
+      },
+    });
+    this.MANY2({
+      GATE: () => this.LA(1).tokenType === W && !isAsOfWToken(this.LA(1)),
+      DEF: () => {
+        this.CONSUME2(W);
+      },
     });
     this.CONSUME(G);
-    this.OPTION(() => {
-      this.CONSUME(B);
+    this.OPTION2(() => {
+      this.CONSUME2(B);
     });
   });
 
   public sharedAfterJoin = this.RULE("sharedAfterJoin", () => {
     this.OR([
-      { GATE: () => this.LA(1).tokenType === G, ALT: () => this.SUBRULE(this.gPackage) },
-      { GATE: () => this.LA(1).tokenType === H, ALT: () => this.SUBRULE(this.hUnitRule) },
+      { GATE: () => this.LA(laAfterW(this)).tokenType === G, ALT: () => this.SUBRULE(this.gPackage) },
+      { GATE: () => tokenIs(this.LA(laAfterW(this)), H), ALT: () => this.SUBRULE(this.hUnitRule) },
     ]);
   });
 }
@@ -689,14 +726,24 @@ function childTokens(parent: CstNode, key: string): IToken[] {
   return (parent.children[key] ?? []) as IToken[];
 }
 
+function buildAsOfPair(cst: CstNode): { word: LexWord; bound?: LexWord } {
+  const wTok = childToken(cst, "W")!;
+  const boundTok = childToken(cst, "B") ?? childToken(cst, "Odo");
+  return {
+    word: lexWordFromToken(wTok),
+    bound: boundTok ? lexWordFromToken(boundTok) : undefined,
+  };
+}
+
 function buildGPackage(cst: CstNode): GPackage {
   const gTok = childToken(cst, "G")!;
   const bTok = childToken(cst, "B");
-  const wToks = childTokens(cst, "W");
+  const asOfCst = childNodes(cst, "asOfWPair")[0];
   return {
     word: lexWordFromToken(gTok),
-    modifiers: wToks.map(lexWordFromToken),
+    modifiers: childTokens(cst, "W").map(lexWordFromToken),
     bound: bTok ? lexWordFromToken(bTok) : undefined,
+    asOf: asOfCst ? buildAsOfPair(asOfCst) : undefined,
   };
 }
 
@@ -1043,7 +1090,71 @@ function validateClauseCoordFences(coord: ClauseCoord): void {
   validateLeadingJoinFence(coord.parts, (part) => part.clauses.length === 0);
 }
 
+function validateAsOfWord(word: LexWord, bound: LexWord | undefined): void {
+  if (!isAsOfOverlay(word)) return;
+  if (word.ending === "r" && bound) {
+    throw new SentenceParseError("As-of resume does not take /b/");
+  }
+  if (word.ending !== "r" && !bound) {
+    throw new SentenceParseError("As-of introduce needs /b/");
+  }
+}
+
+function validateGPackageAsOf(pkg: GPackage): void {
+  validateAsOfWord(pkg.word, pkg.bound);
+  if (pkg.asOf) validateAsOfWord(pkg.asOf.word, pkg.asOf.bound);
+}
+
+function validateSharedAsOf(shared: CoordShared[]): void {
+  for (const item of shared) {
+    if ("modifiers" in item && "word" in item && !("unit" in item)) {
+      validateGPackageAsOf(item as GPackage);
+    } else if ("word" in item && "modifiers" in item) {
+      const h = item as HUnit;
+      validateAsOfWord(h.word, h.bound);
+    }
+  }
+}
+
+function validateNpAsOf(coord: NpCoord): void {
+  for (const part of coord.parts) {
+    for (const item of part.items) {
+      if (item.kind === "package") {
+        if (item.package.glAdj) validateGPackageAsOf(item.package.glAdj);
+        for (const adj of item.package.adjs) validateGPackageAsOf(adj);
+      }
+    }
+    validateSharedAsOf(part.shared);
+  }
+}
+
+function validateVpAsOf(coord: VpCoord): void {
+  for (const part of coord.parts) validateSharedAsOf(part.shared);
+}
+
+function validateClauseAsOf(units: Unit[]): void {
+  let hAsOf = 0;
+  for (const unit of units) {
+    if (unit.kind === "h") {
+      validateAsOfWord(unit.unit.word, unit.unit.bound);
+      if (isAsOfOverlay(unit.unit.word)) hAsOf += 1;
+    }
+    if (unit.kind === "predicate") validateGPackageAsOf(unit.adj);
+    if (unit.kind === "np") validateNpAsOf(unit.coord);
+    if (unit.kind === "vp") validateVpAsOf(unit.coord);
+    if (unit.kind === "clauseCoord") {
+      for (const part of unit.coord.parts) {
+        for (const clause of part.clauses) validateClauseAsOf(clause.units);
+      }
+    }
+  }
+  if (hAsOf > 1) {
+    throw new SentenceParseError("At most one as-of pair per /h/ host");
+  }
+}
+
 function validateUnits(units: Unit[]): void {
+  validateClauseAsOf(units);
   for (const unit of units) {
     if (unit.kind === "np") {
       validateNpFences(unit.coord);

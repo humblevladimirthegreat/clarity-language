@@ -1,12 +1,12 @@
 # Proposal: evaluation frames (*as-of*, channel, play)
 
-**Status:** PROPOSED — not current language. This page is not design authority until it is absorbed.
+**Status:** PARTIALLY IMPLEMENTED — absorbed into grammar and overlays. Drills and remaining pages may still catch up. Grammar pages are design authority.
 
 Today, verbs have no past or future letter. PREDICT looks later than the moment of speech. RESIDUE and FORMER score leftover and climate against **today’s** books. An evidential covers only the clause it sits on; leaving it off means unmarked, not “keep the last channel.” *Before*, *after*, *while*, and clock words order **events**. There is no second “now” besides the speaker’s now.
 
 Speakers therefore cannot mark *would*, *as of Friday*, or *if he had* as a dated snapshot, and they cannot carry evidentiality or mood from one clause to the next.
 
-**Related:** [knowing.md](../grammar/knowing.md), [intention.md](../grammar/intention.md), [causation.md](../grammar/causation.md#factivity), [dependents.md](../grammar/dependents.md), [relations.md](../grammar/relations.md), [hooks.md](../grammar/hooks.md), [spans.md](../grammar/spans.md), [joins.md](../grammar/joins.md#scope-islands-join), [comparatives.md](../grammar/comparatives.md), [numbers-applied.md](../grammar/numbers-applied.md#time), [why-agelan.md](../grammar/why-agelan.md#residue-and-former-climate).
+**Related:** [knowing.md](../../grammar/knowing.md), [intention.md](../../grammar/intention.md), [causation.md](../../grammar/causation.md#factivity), [dependents.md](../../grammar/dependents.md), [relations.md](../../grammar/relations.md), [hooks.md](../../grammar/hooks.md), [spans.md](../../grammar/spans.md), [joins.md](../../grammar/joins.md#scope-islands-join), [comparatives.md](../../grammar/comparatives.md), [numbers-applied.md](../../grammar/numbers-applied.md#time), [why-agelan.md](../../grammar/why-agelan.md#residue-and-former-climate).
 
 ## Motivation
 
@@ -26,13 +26,13 @@ This is not a past / present / future letter on the verb, and not progressive as
 
 A telling, an *if*-clause, or a clock does not plant viewpoint by itself. Do not reuse discourse **`x#e0`**, TALE **`horolom`**, or *after* **`oranem`** as whose-now. Omitting a channel or mood still means unmarked / speaker-now, not “keep last.”
 
-Scope is the role letter (`/h/` this clause, `/ɡ/` this noun, `/w/` this graded adjective). There are no prefix-less persist hooks (`eal` / `eol` / …), no until-undone, and no speech-act-long inherit. Mid-word **`x`** + **`a`/`o`/`e`/`u`** stays [values](../grammar/values.md) / [ability](../grammar/ability.md). Ending **-r** on MAY, NOTIONAL, PLAN, and DECISION keeps its published jobs; **-r** on an *as-of* overlay only resumes that overlay’s snapshot.
+Scope is the role letter (`/h/` this clause, `/ɡ/` this noun, `/w/` this graded adjective). There are no prefix-less persist hooks (`eal` / `eol` / …), no until-undone, and no speech-act-long inherit. Mid-word **`x`** + **`a`/`o`/`e`/`u`** stays [values](../../grammar/values.md) / [ability](../../grammar/ability.md). Ending **-r** on MAY, NOTIONAL, PLAN, and DECISION keeps its published jobs; **-r** on an *as-of* overlay only resumes that overlay’s snapshot.
 
 Only the two *as-of* overlays take snapshot `/b/`. Evidentials, PREDICT, PLAN, RESIDUE, and the other moods keep their existing `/b/` jobs.
 
 Factivity is two overlays, not `-l` vs `-m` on one stem — same pattern as `hurugum` / `hadorom`. A new hosted `/b/` replaces whose-now on **that host** (including a switch of overlay). Nested clauses may each have their own pair. One host still takes at most one *as-of* pair. `/h/`, `/ɡ/`, and `/w/` are different hosts, so a clause may carry a clause snapshot and an adjective snapshot at once.
 
-Do not wrap a memory paragraph or a *would* stretch in **`^ … ^`** or span fences. Repeat the evidential and/or resume *as-of* instead. Islands stay the existing short join / `/h/` device; they are not an *as-of* paragraph. LIVE and WITNESSED stay channels; this is not a new observation-vs-imagination tense ([TODO.md](../../TODO.md)).
+Do not wrap a memory paragraph or a *would* stretch in **`^ … ^`** or span fences. Repeat the evidential and/or resume *as-of* instead. Islands stay the existing short join / `/h/` device; they are not an *as-of* paragraph. LIVE and WITNESSED stay channels; this is not a new observation-vs-imagination tense ([TODO.md](../../../TODO.md)).
 
 ## Three settings, plus ordinary score claims
 
@@ -89,7 +89,7 @@ On `/w/`, `/b/` sits between the pole and the adjective (`welerem b_#22,7 gomona
 
 **`hadorom`** stays speaker-now opportunity (*if it rains, Azawan walks*). It does not plant whose-now.
 
-English *If he'd left, the door would still be locked* is bookmark *as-of* (`hobomam`), plus RESIDUE / PREDICT as needed, **with no causal pole**. The bookmark is a hypothetical now you are not claiming, so those score moods can work against that scene. Teach this contrast on [causation.md](../grammar/causation.md) next to `hurugum` vs `hadorom`.
+English *If he'd left, the door would still be locked* is bookmark *as-of* (`hobomam`), plus RESIDUE / PREDICT as needed, **with no causal pole**. The bookmark is a hypothetical now you are not claiming, so those score moods can work against that scene. Teach this contrast on [causation.md](../../grammar/causation.md) next to `hurugum` vs `hadorom`.
 
 NOTIONAL stays play — off the real tally for the host. Do not use it for serious *if he had*. Play may still stack with *as-of*.
 
@@ -122,9 +122,9 @@ Exactly one of:
 - **`barl`** plus the next sentence (that sentence *is* whose-now)
 - extra-noun **-r** (resume a date or event already on the table — not a bare person)
 
-The *as-of* word is already the date/clock host. Do not also write a spare `h_#22,7` for the same snapshot. Bare `h_#…` / `h_…` stay ordinary event-when ([time](../grammar/numbers-applied.md#time)). Clock / *before* / *after* may sit **beside** *as-of*: books vs event-when are different jobs.
+The *as-of* word is already the date/clock host. Do not also write a spare `h_#22,7` for the same snapshot. Bare `h_#…` / `h_…` stay ordinary event-when ([time](../../grammar/numbers-applied.md#time)). Clock / *before* / *after* may sit **beside** *as-of*: books vs event-when are different jobs.
 
-When `/b/` is **`barl`**, the pair stays last in the main sentence, same [dependents](../grammar/dependents.md) rule as other poles. Asserted *as-of* claims that scene; unasserted does not. A clock or event-noun `/b/` may sit mid-clause, like other hosted relations.
+When `/b/` is **`barl`**, the pair stays last in the main sentence, same [dependents](../../grammar/dependents.md) rule as other poles. Asserted *as-of* claims that scene; unasserted does not. A clock or event-noun `/b/` may sit mid-clause, like other hosted relations.
 
 The **`barl`** sentence that *defines* whose-now does not inherit the outer snapshot (no leak inward). Inner PREDICT there defaults to after speech-now unless that inner sentence has its own frames.
 
@@ -177,13 +177,13 @@ These do **not** inherit frames. Inner PREDICT defaults to after speech-now; inn
 - aside spans and opaque / cite interiors
 - later `/x/` clauses (they inherit the speech act, not the frames)
 
-Keep existing short [scope islands](../grammar/joins.md#scope-islands-join) for join / `/h/` scope. Do not wrap a memory stretch or a chain of `/x/` in `^ … ^`. Span fences are wording packages, not viewpoint paragraphs. Teach that contrast so learners do not treat islands as *as-of*.
+Keep existing short [scope islands](../../grammar/joins.md#scope-islands-join) for join / `/h/` scope. Do not wrap a memory stretch or a chain of `/x/` in `^ … ^`. Span fences are wording packages, not viewpoint paragraphs. Teach that contrast so learners do not treat islands as *as-of*.
 
 One *as-of* pair per host (ledger **or** bookmark, not both), one channel, one play root. Score claims may stack with frames on the same clause (`huvuvum honenom helerem badorol`). `/b/` belongs only on an *as-of* word.
 
 ## Examples
 
-House-cast people. Date `/b/` is a [calendar digit-string](../grammar/numbers-applied.md#time) (`b_#22,7` = 22 July). These sentences are **not** current language.
+House-cast people. Date `/b/` is a [calendar digit-string](../../grammar/numbers-applied.md#time) (`b_#22,7` = 22 July). These sentences are **not** current language.
 
 Asserted *as-of* plus leftover:
 
@@ -407,10 +407,10 @@ Clock, date, and **`oranem`** order events; they are not the books. Extra-noun *
 The language above is complete. Teach and ship in this order so learners meet one new job at a time; do not leave `/w/`, bind, or `/b/` kinds unspecified.
 
 1. Overlay rows for `elerem` and `obomam` on `/h/`, `/ɡ/`, and `/w/`. Resume is ending **-r** on that overlay.
-2. Teach both poles on [relations.md](../grammar/relations.md). Put `hadorom` vs `hobomam` on [causation.md](../grammar/causation.md) next to `hurugum` vs `hadorom`. Link from [knowing.md](../grammar/knowing.md), [intention.md](../grammar/intention.md), and [comparatives.md](../grammar/comparatives.md) (`/w/` on a shared scale). Ledger vs bookmark vs *after* vs PREDICT vs *if*. No new hook family.
+2. Teach both poles on [relations.md](../../grammar/relations.md). Put `hadorom` vs `hobomam` on [causation.md](../../grammar/causation.md) next to `hurugum` vs `hadorom`. Link from [knowing.md](../../grammar/knowing.md), [intention.md](../../grammar/intention.md), and [comparatives.md](../../grammar/comparatives.md) (`/w/` on a shared scale). Ledger vs bookmark vs *after* vs PREDICT vs *if*. No new hook family.
 3. Core teach: LIVE-at-snapshot; bare verb plus `helerem` vs clock; asserted PLAN; FORMER; `helerer` / `hobomar` on the next host; `barl` last; date as `b_#…` on the *as-of* word.
 4. Completing teach: event noun and extra-noun **-r** in `/b/`; clock / *before* / *after* beside *as-of*; `/ɡ/` noun vs `/h/` clause; `/w/` adjective snapshot; both poles (`hadorom` + date in *as-of* `/b/`); overlay replace; nested pair vs matrix resume; play stacked with *as-of*; MAY / DECISION / CAUSE still speech-now; islands and span fences are **not** viewpoint paragraphs.
-5. [why-agelan.md](../grammar/why-agelan.md): rumination is which ledger; *had … would* is `hobomam`, not play; memory stretches repeat the channel on purpose.
-6. [grammar-gaps.md](../meta/grammar-gaps.md) time / viewpoint: hosted poles, not a tense letter and not persist hooks.
+5. [why-agelan.md](../../grammar/why-agelan.md): rumination is which ledger; *had … would* is `hobomam`, not play; memory stretches repeat the channel on purpose.
+6. Time / viewpoint: hosted poles, not a tense letter and not persist hooks (`grammar-gaps.md` if present).
 7. Parser: hosted pair like other `clause_pole`s, plus `/w/` + `/b/` on these overlays only. No last-scene inference. Local checks as above. Resume must match overlay. Paragraph bind is optional tooling, not required for one-clause parse. No `ea`/`eo`/`ee`/`eu` hooks.
 8. Drills: `helerem` leftover; `helerem` PLAN; FORMER; *had … would* with `hobomam` and without `hadorom`; LIVE-at-snapshot; resume on `/x/`; *if it rains* without *as-of*; no spare `h_#…` beside *as-of*; `/ɡ/` tab-as-of; `/w/` scale-as-of; event-noun `/b/`; both poles; overlay switch; play + ledger; illegal proxy `/b/`; MAY unshifted.

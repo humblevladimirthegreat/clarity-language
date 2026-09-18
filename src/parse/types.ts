@@ -182,6 +182,8 @@ export type GPackage = {
   word: LexWord;
   bound?: LexWord;
   modifiers: LexWord[];
+  /** `/w/` *as-of* pair immediately before this `/ɡ/` adjective. */
+  asOf?: { word: LexWord; bound?: LexWord };
 };
 
 export type NpHead = LexWord;

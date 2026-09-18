@@ -125,7 +125,7 @@ English *has…* and *used to* mix **when** something happened with whether it *
 
 [RESIDUE](knowing.md#residue) marks leftover balance: the outcome is still on the books. [FORMER](knowing.md#former-climate) marks usual weather you are **not** reporting as current. Neither word is a past tense; they stack with a live look, memory, or a forecast.
 
-Marking residue vs an archived episode helps rumination stay optional. Marking former climate helps “I always was this way” stay a weather report you can stop giving.
+Marking residue vs an archived episode helps rumination stay optional. Marking former climate helps “I always was this way” stay a weather report you can stop giving. [*As-of*](relations.md#as-of) names **which ledger** leftover and climate are scored against, so rumination is not stuck on today’s books. English *had … would* is bookmark *as-of*, not play. A memory stretch writes the channel again on purpose.
 
 **Compare with:** [LIVE](knowing.md#live-vs-memory) / [WITNESSED](knowing.md#live-vs-memory) for how you know; [always](restrictors.md) **`hual`** for current climate; [*after*](dependents.md#dependent-clauses) for event order.
 

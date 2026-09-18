@@ -311,6 +311,10 @@ function considerJoin(
 function considerGPackage(ctx: Ctx, pkg: GPackage): void {
   considerWord(ctx, pkg.word);
   for (const mod of pkg.modifiers) considerWord(ctx, mod);
+  if (pkg.asOf) {
+    considerWord(ctx, pkg.asOf.word);
+    if (pkg.asOf.bound) considerWord(ctx, pkg.asOf.bound);
+  }
   if (pkg.bound) considerWord(ctx, pkg.bound);
 }
 

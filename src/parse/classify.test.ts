@@ -262,6 +262,19 @@ describe("classify", () => {
     assert.equal(word.family.kind, "hook");
     assert.equal(word.overlay, undefined);
   });
+
+  it("as-of ledger and bookmark overlays on /h/ /ɡ/ /w/, including resume", () => {
+    for (const form of ["helerem", "gelerem", "welerem", "helerer", "gelerer", "welerer"]) {
+      const word = expectReading(form, "mood");
+      assert.equal(word.overlay?.kind, "clause_pole");
+      assert.equal(word.overlay?.gloss, "as-of.ledger");
+    }
+    for (const form of ["hobomam", "gobomam", "wobomam", "hobomar", "gobomar", "wobomar"]) {
+      const word = expectReading(form, "mood");
+      assert.equal(word.overlay?.kind, "clause_pole");
+      assert.equal(word.overlay?.gloss, "as-of.bookmark");
+    }
+  });
 });
 
 describe("lexiconContentRoots", () => {

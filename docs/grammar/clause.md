@@ -76,9 +76,9 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 <a id="extra-nouns"></a>
 <a id="unhosted-b"></a>
 
-`/b/` names an extra person or thing. It has two jobs, and you can tell them apart from the word **immediately before** `/b/`. `/w/` never hosts `/b/`; it only grades the next `/ɡ/` or `/h/` word (or hook).
+`/b/` names an extra person or thing. It has two jobs, and you can tell them apart from the word **immediately before** `/b/`. On this page, `/w/` grades the next `/ɡ/` or `/h/` word (or hook); `/b/` sits after that host, not after `/w/`.
 
-**Hosted.** Some adjectives and adverbs name a **relation** that needs another person or thing (*like …*). Put that extra noun in `/b/` **right after** the `/ɡ/` or `/h/` word. Optional `/w/` detail sits **immediately before** that host, so the pair stays together. The root on the `/ɡ/` or `/h/` word names the relation; `/b/` marks the noun that completes it.
+**Hosted.** Some adjectives and adverbs name a **relation** that needs another person or thing (*like …*). Put that extra noun in `/b/` **right after** the `/ɡ/` or `/h/` word. Optional `/w/` detail sits **immediately before** that host, so the pair stays together. The root on the `/ɡ/` or `/h/` word names the relation; `/b/` marks the noun that completes it. More hosted roots, including *as of*, are on [relations](relations.md).
 
 > `hurorom bazawan`
 >

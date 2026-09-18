@@ -487,6 +487,22 @@ English *because* and *if* can hide whether you **assert the dependent as a worl
 >
 > "Azawan walks if it rains." Rain is not asserted; the main sentence is under that opportunity.
 
+English *If he'd left, the door would still be locked* is not this pole. Write bookmark [*as-of*](relations.md#as-of) (`hobomam`) plus [RESIDUE](knowing.md#residue) / [PREDICT](intention.md#predict) as needed, with **no** `hadorom`. `hadorom` stays speaker-now opportunity (*if it rains*). *If it rains, the Friday tab still stands* may stack both: `hadorom` plus a **date** in *as-of* `/b/` (still one `barl`).
+
+> `zadorol gologem honenom helezom hobomam barl zululon vebarum.`
+>
+> z-door | g-restriction | h-RESIDUE | h-predict | h-as-of.bookmark | b-that-clause | z-Ululon | v-abandonment
+>
+> "If Ululon had left, the door would still be locked."
+
+> `zonenol honenom helerem b_#22,7 hadorom banunul.`
+>
+> z-money | h-RESIDUE | h-as-of.ledger | b-_22,7 | h-if | b-rain
+>
+> "If it rains, the 22 July tab still stands."
+
+**Compare with:** [NOTIONAL](knowing.md#notional) is play (*as if*), not a bookmark now.
+
 #### Epistemic *because* (no twin root)
 <a id="epistemic-because"></a>
 

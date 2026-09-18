@@ -456,6 +456,10 @@ function joinLabel(joins: LexWord[], shared: Map<string, SharedRole>): string {
 
 function walkGPackage(cursor: Cursor, pack: GPackage, into: number[]) {
   for (const mod of pack.modifiers) pushIndex(into, takeRaw(cursor, mod.raw));
+  if (pack.asOf) {
+    pushIndex(into, takeRaw(cursor, pack.asOf.word.raw));
+    if (pack.asOf.bound) pushIndex(into, takeRaw(cursor, pack.asOf.bound.raw));
+  }
   pushIndex(into, takeRaw(cursor, pack.word.raw));
   if (pack.bound) pushIndex(into, takeRaw(cursor, pack.bound.raw));
 }

@@ -271,6 +271,84 @@ describe("parse — illegal fences", () => {
   });
 });
 
+describe("parse — as-of poles", () => {
+  it("parses hosted ledger plus date /b/", () => {
+    const result = parseText("zululon honenom helerem b_#22,7 vebarum.");
+    const h = result.utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "helerem");
+    assert.ok(h && h.kind === "h");
+    assert.equal(h.unit.word.overlay?.gloss, "as-of.ledger");
+    assert.equal(h.unit.bound?.raw, "b_#22,7");
+  });
+
+  it("parses as-of resume without /b/", () => {
+    const result = parseText("zazawan helerer vawalal.");
+    const h = result.utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "h");
+    assert.ok(h && h.kind === "h");
+    assert.equal(h.unit.word.raw, "helerer");
+    assert.equal(h.unit.bound, undefined);
+  });
+
+  it("rejects as-of resume plus /b/", () => {
+    assert.throws(() => parseText("zazawan helerer b_#22,7 vawalal."), SentenceParseError);
+  });
+
+  it("rejects as-of introduce without /b/", () => {
+    assert.throws(() => parseText("zazawan helerem vawalal."), SentenceParseError);
+  });
+
+  it("parses /ɡ/ ledger on a noun", () => {
+    const result = parseText("zonenol gelerem b_#22,7.");
+    const units = result.utterances[0]!.bodies[0]!.clause.units;
+    const pred = units.find((u) => u.kind === "predicate");
+    const np = units.find((u) => u.kind === "np");
+    if (pred?.kind === "predicate") {
+      assert.equal(pred.adj.word.raw, "gelerem");
+      assert.equal(pred.adj.bound?.raw, "b_#22,7");
+      return;
+    }
+    assert.ok(np && np.kind === "np");
+    const item = np.coord.parts[0]!.items[0];
+    assert.equal(item?.kind, "package");
+    if (item?.kind !== "package") return;
+    const g = item.package.adjs[0];
+    assert.equal(g?.word.raw, "gelerem");
+    assert.equal(g?.bound?.raw, "b_#22,7");
+  });
+
+  it("parses /w/ as-of before a shared adjective", () => {
+    const result = parseText("zazawan zululon zel welerem b_#22,7 gomonam.");
+    const np = result.utterances[0]!.bodies[0]!.clause.units[0];
+    assert.ok(np && np.kind === "np");
+    const shared = np.coord.parts[0]!.shared[0];
+    assert.ok(shared && "asOf" in shared);
+    assert.equal(shared.asOf?.word.raw, "welerem");
+    assert.equal(shared.asOf?.bound?.raw, "b_#22,7");
+    assert.equal(shared.word.raw, "gomonam");
+  });
+
+  it("parses bookmark as-of plus barl dependent", () => {
+    const result = parseText("zadorol gologem honenom helezom hobomam barl zululon vebarum.");
+    const clause = result.utterances[0]!.bodies[0]!.clause;
+    assert.ok(clause.dependent);
+    const h = clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "hobomam");
+    assert.ok(h && h.kind === "h");
+    assert.equal(h.unit.bound?.raw, "barl");
+  });
+
+  it("parses channel plus residue plus as-of", () => {
+    const result = parseText("zululon huvuvum honenom helerem b_#22,7 vebarum.");
+    const hs = result.utterances[0]!.bodies[0]!.clause.units.filter((u) => u.kind === "h");
+    assert.equal(hs.length, 3);
+  });
+
+  it("rejects two as-of /h/ hosts in one clause", () => {
+    assert.throws(
+      () => parseText("zazawan helerem b_#22,7 hobomam b_#23,7 vawalal."),
+      SentenceParseError,
+    );
+  });
+});
+
 describe("parse — stage 4 resolve", () => {
   it("attaches resolve to parse(text)", () => {
     const result = parseText("zululon vawalal. zulur vajul.");

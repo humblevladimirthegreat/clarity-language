@@ -126,8 +126,16 @@ olalam,h,🥅,clause_pole,so-that,SO-THAT clause pole (intended outcome; NP for-
 olalam,g,🥅,clause_pole,so-that,SO-THAT clause pole (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for
 elerem,h,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date
 elerem,g,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date
+elerem,w,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date
+elerer,h,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/
+elerer,g,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/
+elerer,w,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/
 obomam,h,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming
 obomam,g,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming
+obomam,w,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming
+obomar,h,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/
+obomar,g,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/
+obomar,w,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/
 egegam,h,⚙️,cause,CAUSE,CAUSE mood (mechanism framing),gear drives mechanism; mechanism frames how the link works
 egegam,w,⚙️,cause,CAUSE,CAUSE mood (mechanism framing),gear drives mechanism; mechanism frames how the link works
 an,v,,join_act,includes,join-act includes or adds object,set join a+n as verb; includes adds this object to the set

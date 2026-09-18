@@ -163,6 +163,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `dependents.md` | Intermediate | a departure board |
 | `relations.md` | Beginner | a tool crib |
 | `relations.md` | Intermediate | a train platform |
+| `relations.md` | Advanced | a records room |
 | `pronouns.md` | Beginner | a kitchen |
 | `pronouns.md` | Intermediate | a rooftop garden |
 | `pronouns.md` | Advanced | a radio booth |
@@ -201,6 +202,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `ability.md` | Intermediate | a locked vault |
 | `knowing.md` | Beginner | a café patio |
 | `knowing.md` | Intermediate | a press conference |
+| `knowing.md` | Advanced | a film archive |
 | `roles.md` | Beginner | a construction site |
 | `roles.md` | Intermediate | a harbor |
 | `x-compounds.md` | Beginner | a hardware store |
@@ -208,6 +210,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `x-compounds.md` | Advanced | unset |
 | `intention.md` | Beginner | a chess club |
 | `intention.md` | Intermediate | a board meeting |
+| `intention.md` | Advanced | a delayed departure board |
 | `join-extras.md` | Intermediate | a relay race |
 | `special-vocabulary.md` | Intermediate | a festival |
 | `special-vocabulary.md` | Advanced | a philosophy seminar |
@@ -298,6 +301,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 5 | `clause.md` | Advanced | **exists** | Leftmost content-word prominence; English cleft / *what*-cleft / fronted adverb | 4–6 items. Weak-pause cues are recognition, not the drill |
 | 6 | `dependents.md` | Intermediate | **exists** | `/x/` linkers (`xezazal`, `xezebal`, …); nested **`barl`**; stand-in vowels; which-noun with resume | Recycle Beginner **`darl`/`barl`** |
 | 13 | `relations.md` | Intermediate | **exists** | *between* **`hazanum`**; of-relations (`gobonem`, `gajaram`, `gowodom`, `gugunom`); recycle extra-noun hooks for other place talk | *Between* recycles joins Beginner `/b/` join |
+| 13 | `relations.md` | Advanced | **exists** | Hosted *as-of* **`helerem` / `hobomam`**; `/h/` `/ɡ/` `/w/`; resume **-r**; date in `/b/` | Recycle RESIDUE, PREDICT, calendar `b_#…`. Not persist hooks |
 | 4 | `reference-suffix.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
 | 4 | `reference-suffix.md` | Advanced | skip | — | no Advanced stage |
 | 9 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`aha`** vs name join vs name…**-x** | |
@@ -320,21 +324,21 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 15 | `numbers-applied.md` | Intermediate | **exists** | Digit-string labels; clock / calendar time; percent vs points; measure phrases; ranges — as taught in this stage | One topic per item. 4–8 items |
 | 15 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the stage’s teach examples** — not unassigned cells | 4–6 items |
 | 15 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; manner `/h/` immediately after the join; distributive **`a`** + SHARED `/ɡ/`; measured differentials | Measured items **Sibling OK:** numbers Intermediate **measure phrases** only |
-| 15 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zonunan`, `zahaman`, **`zuroron`** Mine vs performance **`zugobon`**, **`zoloben`** Everyone, …) | **`ugobo`** allowed on performance items |
+| 15 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zonunan`, `zahaman`, **`zuroron`** Mine vs performance **`zugobon`**, **`zoloben`** Everyone, …); `/w/` *as-of* on a shared scale | **`ugobo`** allowed on performance items. Recycle relations Advanced *as-of* |
 | 15 | `causation.md` | Intermediate | **exists** | Following-sentence **`barl`**; **`urugu`** *because* / **`ezaze`** *iff*; asserted necessary **`heberom hurugum`**; **CAUSE** **`egega`** **-m** | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
-| 15 | `causation.md` | Advanced | **exists** | Factivity; evidential / CAUSE / habit stacks as taught in this stage | MAY/evidentiality are Beginner/Intermediate recycle by the time Advanced is read |
+| 15 | `causation.md` | Advanced | **exists** | Factivity; `hadorom` vs bookmark *as-of* `hobomam`; evidential / CAUSE / habit stacks as taught in this stage | MAY/evidentiality and relations Advanced *as-of* are recycle |
 | 16 | `values.md` | Intermediate | **exists** | Prescription **`xe`** + force; motive **`xo`** + preference standing; which ending table; attachment sites | |
 | 16 | `values.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
 | 16 | `ability.md` | Intermediate | **exists** | Hostless fallback **`egera`** (**ABIL**) | |
 | 16 | `ability.md` | Advanced | — | no Advanced stage | |
 | 16 | `knowing.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`adade`** + play holds; **RESIDUE** / **FORMER**; MAY vs nearby jobs | |
-| 16 | `knowing.md` | Advanced | — | no Advanced stage | |
+| 16 | `knowing.md` | Advanced | **exists** | RESIDUE / FORMER / LIVE / WITNESSED against *as-of*; MAY unshifted | Recycle relations Advanced |
 | 16 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; bare arrow roots = compass; gravity **`uba`/`odowo`**; name/listener anchor | Prefer `…xazawan` over silent speaker default. **`edone`/`ugobo`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
 | 16 | `x-compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *one moment please* / passing) | Recycle [greeting](../grammar/reference-suffix.md#greeting) and [vocative](../grammar/clause.md#vocative). Not ability (`vuzunuxel`). Not values |
 | 16 | `roles.md` | Advanced | — | no Advanced stage | |
 | 17 | `join-extras.md` | Intermediate | **exists** | Join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 17) |
 | 17 | `intention.md` | Intermediate | **exists** | **DECISION** **`ehege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
-| 17 | `intention.md` | Advanced | — | no Advanced stage | |
+| 17 | `intention.md` | Advanced | **exists** | PLAN / PREDICT against *as-of*; DECISION speech-now | Recycle relations Advanced |
 | 17 | `special-vocabulary.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value); numbered alternatives `uzebum`/`agegom`/`olalal` + `g#N` | Overlay *inventory* is not a drill. **Needs** values Beginner (recycle). Not universality (Advanced) |
 | 17 | `special-vocabulary.md` | Advanced | **exists** | Universality (`ugudo` / `abulu` / …) as taught in this stage | 4–6 items |
 | 18 | `numeric-derivation.md` | Advanced | **exists** | `ROOT x NUM` as the stage teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
@@ -353,6 +357,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Greeting bid **`…xan` / `…xon` / `…xen` / `…xun`** on a citation or vocative | `x-compounds.md` Intermediate |
 | **`gl-`**, **`jam`/`jom`/`jem`/`jum`** as a *speech-act* system | `clause.md` Intermediate |
 | Locative relations; of-relations (`gobonem` / `gajaram` / `gowodom` / `gugunom`) | `relations.md` Intermediate |
+| Hosted *as-of* (`helerem` / `hobomam`) | `relations.md` Advanced |
 | Remaining `/x/` linkers, nested **`barl`**, stand-in vowels | `dependents.md` Intermediate |
 | **-l** / **-m** / **-n** as a *choice* on a citation | `reference-suffix.md` Beginner |
 | Letter/full-root **-r** algorithm; **`ugobo`/`edone`/`aha`/`enenu`** | `pronouns.md` Beginner |

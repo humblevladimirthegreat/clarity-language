@@ -1,6 +1,6 @@
 # Hosted relations
 
-How an extra noun completes a **relation** that still needs a root on `/h/` or `/ɡ/` (*like*, *for* a swap, *on behalf of*, *between*, *part of*). Everyday *in* / *at* / *from* / *for* (a get) / *using* are [hooks](hooks.md#extra-noun).
+How an extra noun completes a **relation** that still needs a root on `/h/` or `/ɡ/` (*like*, *for* a swap, *on behalf of*, *between*, *part of*, *as of*). Everyday *in* / *at* / *from* / *for* (a get) / *using* are [hooks](hooks.md#extra-noun).
 
 ## Beginner
 <a id="beginner"></a>
@@ -368,4 +368,152 @@ z-Ululon | from | b-station | v-walk | at | b-train
 
 *Ululon walks from a station to a train.*
 :::
+
+## Advanced
+<a id="advanced"></a>
+
+### As-of (whose now)
+<a id="as-of"></a>
+<a id="as-of-ledger"></a>
+<a id="as-of-bookmark"></a>
+
+English *as of Friday*, *would*, *was going to*, and *if he had* mix **when the event sits** with **whose “now”** leftover, climate, plan, and forecast are scored against.
+
+Write a hosted pair for that second now. Asserted whose-now (a real dated line in the books) is **`helerem`**. Unasserted whose-now (a placeholder you are not claiming) is **`hobomam`**. Put the snapshot in `/b/` immediately after. The default with no pair is speech-now. (cue: 📒 *ledger* stamps a dated line; 🔖 *bookmark* holds the place without stamping)
+
+> `zululon honenom helerem b_#22,7 vebarum.`
+>
+> z-Ululon | h-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment
+>
+> "As of 22 July, Ululon had still left."
+
+> `zazawan helerem b_#22,7 vajul al bohohul.`
+>
+> z-Azawan | h-as-of.ledger | b-_22,7 | v-sit | in | b-house
+>
+> "As of 22 July, Azawan is in a house." — the event is concurrent with that now
+
+A later `/x/` clause is a new host. To keep the same books, write the **same overlay** with **-r** and no `/b/` (`helerer` / `hobomar`). A new `/b/` replaces whose-now, including a switch of overlay. One host takes at most one *as-of* pair.
+
+> `zululon honenom helerem b_#22,7 vebarum. xazawan honenom helerer vawalal.`
+>
+> z-Ululon | h-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment | x-Azawan | h-RESIDUE | h-as-of.ledger | v-walk
+>
+> "As of 22 July, Ululon had still left. Azawan had still walked — same books."
+
+`/h/` covers this clause. `/ɡ/` covers this noun (`gelerem` *the tab as of Friday*). `/w/` covers the `/ɡ/` adjective immediately after the pair (`welerem b_#22,7 gomonam`). `/h/`, `/ɡ/`, and `/w/` are different hosts, so a clause may carry a clause snapshot and an adjective snapshot at once. If the **verb** also scores against that now, the clause still needs `/h/` *as-of* (or resume).
+
+`/b/` is a clock or date digit-string, an event noun, **`barl`** plus the next sentence (that sentence *is* whose-now; the pair stays last), or extra-noun **-r**. The *as-of* word already hosts the date: do not also write spare `h_#22,7` for the same snapshot. Bare `h_#…` stays event-when ([time](numbers-applied.md#time)). Clock / *before* / *after* may sit beside *as-of*.
+
+Do not put a bare person in `/b/` as “from Ululon’s now.” That is [proxy](#proxy) (`hudagam`). Prefer `helerem barl zululon vezehel`.
+
+Once whose-now is set, [PREDICT](intention.md#predict) is **after** that now, [PLAN](intention.md#plan-predict) is **from** that now, [RESIDUE](knowing.md#residue) leftover is on **that** tally, and [FORMER](knowing.md#former-climate) is not **that stretch’s** climate. [MAY](knowing.md#may), [DECISION](intention.md#decision), and [CAUSE](causation.md#cause) still evaluate from speech-now. Evidentials other than LIVE-at-snapshot are how *you* know at speech-now.
+
+A finished inner clause does not stay open for a later matrix resume. Isolated `helerer` parses; write it only after an introduce of that overlay.
+
+**Compare with:** [*after*](dependents.md#dependent-clauses) **`helabam`** and extra-noun **`ol`** *at* order or landmark events; they are not the books. [Causal *if*](causation.md#if) **`hadorom`** is speaker-now opportunity, not English *if he had* (`hobomam`). [NOTIONAL](knowing.md#notional) is play, not a bookmark now. [Scope islands](joins.md#scope-islands-join) bound join scope; they do not persist *as-of*. Repeat the evidential and/or resume *as-of* on the next clause.
+
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`helerem` / `gelerem` / `welerem`** | asserted whose-now | *as of* (dated ledger) | `elerem` *ledger* | 📒: a dated line in the books |
+| **`hobomam` / `gobomam` / `wobomam`** | unasserted whose-now | *as of* (placeholder now) | `obomal` *bookmark* | 🔖: hold the place without stamping |
+| **`helerer` / `hobomar`** | resume that overlay | *same books* | same | **-r** restates the stem; no `/b/` |
+
+### Translation practice
+<a id="translation-practice-advanced"></a>
+
+Short drills for Advanced. Try each item before opening **Show answer**. The hosted pair names whose now. Resume is **-r** with no `/b/`.
+
+**Setting:** a records room
+
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Ululon* | `ululon` |
+| *Uhubun* | `uhubun` |
+| *departure* | `vebarum` |
+| *sit* | `vajul` |
+| *walk* | `vawalal` |
+| *rain* | `vanunul` |
+| *house* | `ohohul` |
+| *money* | `onenol` |
+| *RESIDUE* | `honenom` |
+| *predict* | `helezom` |
+| *as-of.ledger* | `helerem` |
+| *as-of.bookmark* | `hobomam` |
+
+#### English → Agalan
+
+**1.** *As of 22 July, Ululon had still left.*
+
+::: details Show answer
+`zululon honenom helerem b_#22,7 vebarum.`
+
+z-Ululon | h-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment
+:::
+
+**2.** *As of 22 July, Azawan sits in a house.*
+
+::: details Show answer
+`zazawan helerem b_#22,7 vajul al bohohul.`
+
+z-Azawan | h-as-of.ledger | b-_22,7 | v-sit | in | b-house
+:::
+
+**3.** *From then, it would rain.*
+
+::: details Show answer
+`helezom hobomam b_#22,7 vanunul.`
+
+h-predict | h-as-of.bookmark | b-_22,7 | v-rain
+:::
+
+**4.** *The money as of 22 July.*
+
+::: details Show answer
+`zonenol gelerem b_#22,7.`
+
+z-money | g-as-of.ledger | b-_22,7
+:::
+
+#### Agalan → English
+
+**1.** `zululon honenom helerem b_#22,7 vebarum. xazawan honenom helerer vawalal.`
+
+::: details Show answer
+
+z-Ululon | h-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment | x-Azawan | h-RESIDUE | h-as-of.ledger | v-walk
+
+*As of 22 July, Ululon had still left. Azawan had still walked — same books.*
+:::
+
+**2.** `zuhubun helerem b_#22,7 vajul al bohohul.`
+
+::: details Show answer
+
+z-Uhubun | h-as-of.ledger | b-_22,7 | v-sit | in | b-house
+
+*As of 22 July, Uhubun sits in a house.*
+:::
+
+**3.** `helezom hobomam b_#22,7 vanunul. xazawan helezom hobomar vawalal.`
+
+::: details Show answer
+
+h-predict | h-as-of.bookmark | b-_22,7 | v-rain | x-Azawan | h-predict | h-as-of.bookmark | v-walk
+
+*From then, it would rain. Azawan would walk.*
+:::
+
+**4.** `zonenol gelerem b_#22,7.`
+
+::: details Show answer
+
+z-money | g-as-of.ledger | b-_22,7
+
+*The money as of 22 July.*
+:::
+
 

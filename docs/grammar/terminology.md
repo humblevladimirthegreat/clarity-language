@@ -16,6 +16,7 @@ Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#a
 |-------|-------|--------|
 | **ABIL** | Hostless *can* / *can’t* fallback **`egera`** | [Ability](ability.md#ability-fallback) |
 | **ACT** | Emotion-compose arousal (HIGH / MED / LOW) | [Special vocabulary](special-vocabulary.md#emotion-compose) |
+| **AS-OF** | Whose-now pole: ledger **`elere`** / bookmark **`oboma`** | [Relations](relations.md#as-of) |
 | **ALTHOUGH** | Clause-pole **`ezeba`** (*although* / NP *despite*) | [Dependents](dependents.md#dependent-clauses) |
 | **BECAUSE** | Clause-pole **`urugu`** (*because*) | [Causation](causation.md#because) |
 | **CAUSE** | Mechanism-framing mood **`egega`** | [Causation](causation.md#cause) |
