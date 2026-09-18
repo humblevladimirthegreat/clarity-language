@@ -1,18 +1,20 @@
 # Phonology and phonotactics
 <a id="phonology"></a>
 
-How to **sound out** Agalan: each letter has one reading, and word edges tell you where a content word stops. Cue words below are Standard American English.
+How to **sound out** Agalan. Each letter has one pronunciation. Syllables only end with a consonant at the end of the word so you know when words stop.
 
 ## Beginner
 <a id="beginner"></a>
 
-Read each letter the same way every time. A **syllable** is one beat with one vowel. Spell so those beats match what you say: consonants start a beat; the last consonant of a content word is where the word ends.
+Pronounce each letter the same way every time. A **syllable** is one beat with one vowel. Spell the beats you actually say: a consonant starts a beat, and the last consonant of a content word is where that word ends.
 
-Write native Agalan in **lowercase**. Two vowel letters in a row are two syllables (say each vowel as its own beat).
+Write native Agalan in **lowercase**. Two vowel letters in a row are two syllables. Say each vowel as its own beat.
 
 ### Vowels
 
 Agalan has four vowel letters. Unlike in English where the pronounced sound depends on the surrounding letters, the Agalan vowels are always pronounced the same.
+
+The cue words below are pronounced as in Standard American English.
 
 | Agalan | IPA | Cue |
 |--------|-----|-----|
@@ -25,10 +27,7 @@ Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org
 
 ### Consonants
 
-A consonant starts a syllable. Prefer the **voiced** version (vocal cords buzzing) so you can hold a sung note.
-
-A voiceless stop cuts the air. You may still use the unvoiced sound as style; voiced and unvoiced are not different letters.
-
+A consonant starts a syllable. There is no distinction between voiced and unvoiced. Prefer the **voiced** version (with vocal cords buzzing) so you can hold a sung note. You may still use the unvoiced sound for style. 
 <!-- Consonant order: lips (b m w v), tongue tip (d n z l r), back (g h), then English false friends (j x). Canonical alphabet / letter-name recitation follows this table (vowels e u o a first). -->
 
 | Agalan | IPA | Cue | Unvoiced variant |
@@ -48,14 +47,14 @@ A voiceless stop cuts the air. You may still use the unvoiced sound as style; vo
 | `x` | /ʒ/ <IpaPlay file="Voiced_palato-alveolar_sibilant.ogg" label="x" /> | *vision* (the *si*) | /ʃ/ <IpaPlay file="Voiceless_palato-alveolar_sibilant.ogg" label="unvoiced x" />, *shy* |
 
 ::: tip Remember
-`j` and `x` have sounds different than English. The rest are fairly standard. 
+`j` and `x` have sounds different than English. The rest are familiar. 
 :::
 
 Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) by [Peter Isotalo](https://commons.wikimedia.org/wiki/User:Peter_Isotalo), except /ɹ/ by [Erutuon](https://commons.wikimedia.org/wiki/File:Alveolar_approximant.ogg).
 
 ### Word edges
 
-A content word ends with a last consonant `-l` / `-m` / `-n`, or `-r`. That last consonant is the audible end of the word (useful when singing leaves no pause between words). Inside the word, consonants start syllables; they do not close a syllable in the middle.
+A content word ends with a last consonant `-l` / `-m` / `-n`, or `-r`. That last consonant is the audible end of the word. Inside the word, consonants start syllables. They do not close a syllable in the middle.
 
 `azawan` = *a-za-wan*. `odogol` = *o-do-gol*.
 
@@ -82,14 +81,14 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Optional `-x` | [plural](plurality.md) after the suffix | word-final `-lx` / `-mx` / `-nx` / `-rx` (letter `x`) |
 | Stand-in **`-rl` / `-rm`** | [dependent clauses](dependents.md#dependent-clauses) | word-final coda `rl` / `rm` (`darl`) |
 
-A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` are always followed by a vowel, so they start a syllable rather than sounding like a suffix (`zelulul`: prefix `z`, root `elulu`, ending `-l`). Spelling has one pronunciation path. Writing does not mark stress; musical rhythm may place emphasis.
+A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zelulul`: prefix `z`, root `elulu`, ending `-l`). Spelling has one pronunciation path. Writing does not mark stress. Musical rhythm may still place emphasis.
 
 **Related form:** word-initial `x` is the [continue](dependents.md#continue-x) prefix (discourse), not a compound seam.
 
 ### Number-word exception
 <a id="number-word-exception"></a>
 
-When English says *how many* or *which place*, Agalan writes a [number word](numbers.md). After the role letter, the spoken marker begins with `r`, so you get a cluster ordinary content never uses (`gr…`, `zr…`, `vr…`, `hr…`, `jr…`, `xr…`). You can hear “this is a number” from that cluster: content roots start with a vowel, so `r` as the start of a syllable after a role letter is the number marker (`ra` / `ru` / `re` / `ro`; end-relative rank uses `eu`, spoken `reu…` for written `#-`). Stacked vowels stay separate syllables (`juon` = *ju'on*).
+When English says *how many* or *which place*, Agalan writes a [number word](numbers.md). After the role letter, the spoken marker begins with `r`, which makes a cluster ordinary content never uses (`gr…`, `zr…`, `vr…`, `hr…`, `jr…`, `xr…`). That cluster is how you hear “this is a number.” Content roots start with a vowel, so an `r` that starts a syllable right after a role letter is the number marker (`ra` / `ru` / `re` / `ro`; counting from the end uses `eu`, spoken `reu…` for written `#-`). Stacked vowels stay separate syllables (`juon` = *ju'on*).
 
 > `zagadalx grarel.`
 >
@@ -105,7 +104,7 @@ Spoken `g+3` is `grarel` (`g` + `ra` + digit `re` + `-l`). Inside a content root
 <a id="letter-names"></a>
 <a id="letter-names-and-digits"></a>
 
-When you **spell a word aloud** or **name a letter**, say the Agalan name, not the English one. A vowel’s name is that vowel. Pause between names so two names do not run into one syllable.
+When you **spell a word aloud** or **name a letter**, say the Agalan name for it. Pause between names so two names do not run into one syllable.
 
 | Agalan | Name | Cue |
 |--------|------|-----|
@@ -154,22 +153,22 @@ Ten letters also begin a [digit syllable](numbers.md#digits). The letter name us
 ### Singability constraints
 <a id="singability-constraints"></a>
 
-Ordinary singing stays easier because of these shape choices:
+These shape choices keep ordinary singing easier:
 
 | Constraint | Why it helps | How Agalan keeps it |
 |------------|--------------|---------------------|
-| Mid-to-open vowels | Closed vowels shrink comfortable high range | Four mid-to-open vowels (/e̞ ʌ o ɑ/) |
-| One vowel per letter | A slide from one vowel to another forces tract changes mid-note | Stacked letters = separate syllables (`juon` = *ju'on*) |
-| Few consonant clusters | Clusters are harder to pronounce quickly | Ordinary shape is start-of-syllable consonant + vowel; limited clusters below |
+| Mid-to-open vowels | Tight closed vowels shrink a comfortable high range | Four mid-to-open vowels (/e̞ ʌ o ɑ/) |
+| One vowel per letter | Sliding from one vowel to another mid-note forces the mouth to change | Stacked letters = separate syllables (`juon` = *ju'on*) |
+| Few consonant clusters | Clusters are harder to say quickly | Ordinary shape is consonant-then-vowel at the start of a syllable; limited clusters below |
 | Voiced preferred | Voiceless stops cut the note; singers often voice them anyway | Voiced preferred; unvoiced allowed as style only |
 | No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the **word edge** |
 | No lexical stress | Music already places emphasis | Rhythm may stress a beat; spelling does not encode stress |
-| Spelling = pronunciation | You need not memorize special readings | One path from letters to sound |
+| Spelling = pronunciation | You do not memorize special readings | One path from letters to sound |
 | Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-r` (optional `-x`); stand-ins end in `-rl` / `-rm` |
 
 Legal clusters: left-hanging `gl-`; number-word role letter + `r`; word-final `-lx` / `-mx` / `-nx` / `-rx`; stand-in `-rl` / `-rm`.
 
-Sing a short Agalan line quickly at a high comfortable pitch:
+Try a short Agalan line quickly at a high comfortable pitch:
 
 `zazawan guzumum.`
 

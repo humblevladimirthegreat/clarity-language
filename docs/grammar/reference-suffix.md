@@ -262,13 +262,11 @@ The rest of the role map (same **-n**):
 |--------|-----|---------|
 | `/z/` `/d/` `/b/` + **-n** | this named entity | person, place, titled work, unique referent (*Azawan*, *Paris*, *the Odyssey*; *book by* **[Rowling]**) |
 | `/v/` + **-n** | this named event, rite, or titled action | *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]** |
-| `/ɡ/` + **-n** | this named style, tradition, brand, or category | **[Art Deco]** furniture, **[Buddhist]** monastery, **[iOS]** app (*a buddhist text* is still **-l**) |
-| `/w/` + **-n** | named scale, grade, or criterion on the following adjective | *spicy* **[Scoville]**, *large* **[King-size]**; ranked *worse than…* comparees: [comparatives](comparatives.md#judgment-benchmarks) |
-| `/h/` + **-n** | named standard, channel, or official frame | *according to* **[GAAP]**, *in* **[Q3]** as the named quarter ([number **-n**](numbers.md#number-endings) on number words) |
-| `/j/` vocative + **-n** | address this named person, place, or title | `jululon`; titled group (*Team Alpha*); kind-based *everyone* uses **-l** |
-| `/j/` interjection + **-n** | named formula or conventional call | **[Amen]**, branded catchphrases; polar *yes* / *no* uses **-l** / **-m** ([polar stance](questions.md#polar-stance)) |
-
-An extra **`l`** after `/ɡ/` (`gl-`) is the before-the-noun spelling ([left-bound adjectives](clause.md#left-bound-adjectives)), not a fifth reference suffix. Closed speech-act words (`jal` / `jol` / …) use their [act endings](clause.md#speech-act). Manner and ordinary degree use **-l** / **-m** unless the manner or grade is itself a proper name.
+| `/ɡ/` + **-n** | this named style, tradition, brand, or category | **[Art Deco]** furniture, **[Buddhist]** monastery, **[iOS]** app |
+| `/w/` + **-n** | named scale, grade, or criterion on the following adjective | *spicy* **[Scoville]**, *large* **[King-size]** |
+| `/h/` + **-n** | named standard, channel, or official frame | *according to* **[GAAP]**, *in* **[Q3]** as the named quarter  |
+| `/j/` vocative + **-n** | address this named person, place, or title | `jululon`; titled group (*Team Alpha*) |
+| `/j/` interjection + **-n** | named formula or conventional call | **[Amen]**, branded catchphrases |
 
 **Compare with:** [join words](joins.md) use **-n** as join packaging or join content (fence joins, clause **sequence**, [join-act](join-extras.md#join-act-verbs) / [join-relation](join-extras.md#join-relations) stems). That is the one place **-n** is not a name.
 
