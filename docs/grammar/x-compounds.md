@@ -17,8 +17,6 @@ English often glues two ideas into one word (*peanut butter*) or one hyphenated 
 >
 > "peanut butter"
 
-<AgelanInspect text="zabanuxudel." />
-
 The left root is the kind of thing; the right root narrows it (what field, what extra label). You get one thing in the sentence, not two.
 
 > `golovexagal.`
@@ -26,8 +24,6 @@ The left root is the kind of thing; the right root narrows it (what field, what 
 > g-love-x-crush
 >
 > "love in the crush sense"
-
-<AgelanInspect text="golovexagal." />
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -51,8 +47,6 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 > z-bedroom
 >
 > "a bedroom."
-
-<AgelanInspect text="zohohulabedel." />
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -276,15 +270,11 @@ When English stacks labels left to right (*love* in the *crush* sense; a shop na
 >
 > "love in the crush sense"
 
-<AgelanInspect text="golovexagal." />
-
 > `zogovexadedaxunuden.`
 >
 > z-Ogove-x-Adeda-x-Unuden
 >
 > "Coffee-Tea-Water" (one named shop)
-
-<AgelanInspect text="zogovexadedaxunuden." />
 
 [Multipart names](reference-suffix.md#phrasal-proper-names) use the same order (given name, then family, then a further title). [Body left / right](roles.md#viewpoint-laterals) is two roots: the direction, then whose facing counts as north.
 
@@ -318,15 +308,11 @@ On your own name, it is how you arrive. When you call them, it is how you addres
 >
 > "Azawan — I’m here / we can stay."
 
-<AgelanInspect text="azawaxan." />
-
 > `jululoxen.`
 >
 > j-Ululon-minutes
 >
 > "Ululon — a few minutes."
-
-<AgelanInspect text="jululoxen." />
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -350,8 +336,6 @@ The other person answers with a greeting bid too. The **lesser** bid is the one 
 > Ululon-ask
 >
 > "Ululon — one ask." (the talk is one ask)
-
-<AgelanInspect text="azawaxan. ululoxon." />
 
 **Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](ability.md#ability) (`vuzunuxel` *can’t sing right now*). On a [need](values.md) it is a value stance. Greeting bids sit on a **named** hello or a **`/j/`** call, with **-n**.
 
