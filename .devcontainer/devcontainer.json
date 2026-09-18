@@ -10,7 +10,8 @@
     "vscode": {
       "extensions": [
         "dbaeumer.vscode-eslint",
-        "saoudrizwan.claude-dev"
+        "saoudrizwan.claude-dev",
+        "ZooCodeOrganization.zoo-code"
       ],
       "settings": {
         "editor.formatOnSave": true,
