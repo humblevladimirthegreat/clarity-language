@@ -10,6 +10,7 @@ consider making negatives clearer (stress?)
 final exam
 Prosody
 gloss overlay should indicate phrase structure and what modifies what
+numeric derivation doesn't use x (lexical)
 
 ## Evidentiality / tense
 

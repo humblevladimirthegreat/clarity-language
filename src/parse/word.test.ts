@@ -254,13 +254,19 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     }
   });
 
-  it("parses hooks al, om, and ael (hooks.md)", () => {
-    assert.deepEqual(parseOk("al").family, { kind: "hook", form: "al" });
-    assert.equal(parseOk("al").ending, "l");
-    assert.deepEqual(parseOk("om").family, { kind: "hook", form: "om" });
-    assert.equal(parseOk("om").ending, "m");
-    assert.deepEqual(parseOk("ael").family, { kind: "hook", form: "ael" });
-    assert.equal(parseOk("ael").ending, "l");
+  it("parses fused extra-noun hook compounds (hooks.md)", () => {
+    const two = parseOk("vawalalul");
+    assert.equal(two.pos, "v");
+    assert.equal(two.family.kind, "content");
+    const three = parseOk("awalalual");
+    assert.equal(three.pos, undefined);
+    assert.equal(three.family.kind, "hookCompound");
+    if (three.family.kind === "hookCompound") {
+      assert.equal(three.family.leftRoot, "awala");
+      assert.equal(three.family.hook, "ual");
+    }
+    const prefixed = parseOk("vawalalual");
+    assert.equal(prefixed.family.kind, "hookCompound");
   });
 
   it("parses citation ululon (reviser prefix is not a word by itself)", () => {

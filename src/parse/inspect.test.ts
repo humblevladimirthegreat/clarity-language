@@ -110,13 +110,13 @@ describe("inspectText", () => {
     assert.equal(result.tokens[ant!.tokenIndex]?.raw, "zululon");
   });
 
-  it("Why links lexical compound lemmas", () => {
-    const token = inspectText("zabedelohohul", tables).tokens[0];
+  it("Why links hook compounds", () => {
+    const token = inspectText("vawalalul", tables).tokens[0];
     assert.equal(token?.kind, "word");
     if (token?.kind !== "word") return;
-    assert.equal(token.why?.line, "lexical compound");
-    assert.equal(token.why?.href, "x-compounds.html#lexical-compounds");
-    assert.match(token.gloss, /bedroom/i);
+    assert.equal(token.why?.line, "hook compound");
+    assert.equal(token.why?.href, "hooks.html#hook-compounds");
+    assert.match(token.gloss, /leave/i);
   });
 
   it("Why distinguishes values from role compounds", () => {

@@ -3,6 +3,7 @@
  * lexicon / overlay / morph sense for that Agalan spelling.
  */
 import { classify, lexiconContentRoots, type ClassifyTables } from "../parse/classify.js";
+import { derivedHookGloss, hookCompoundFromMorph } from "../parse/hook-compounds.js";
 import { senseFormEnding, senseFormRoot, type OverlayKind } from "../lexicon-search.js";
 import { senseLabel } from "../parse/morph-gloss.js";
 import { parseWord, WordParseError } from "../parse/word.js";
@@ -125,6 +126,15 @@ function allowedSenses(
       add(all, compound.abstract);
       add(hostLemmas, compound.concrete);
       add(hostLemmas, compound.abstract);
+    }
+  }
+  const hooked = hookCompoundFromMorph(morph);
+  if (hooked) {
+    add(all, derivedHookGloss(hooked.hook));
+    const listed = tables.compounds.get(hooked.stem);
+    if (listed) {
+      add(all, listed.concrete);
+      add(all, listed.abstract);
     }
   }
 

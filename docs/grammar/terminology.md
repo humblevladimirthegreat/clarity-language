@@ -571,6 +571,8 @@ FIELD × KIND with mid-word **`x`**; closed stem with join letter and no `x`.
 
 [x-compounds](x-compounds.md)
 
+**Compare with:** a [hook compound](hooks.md#hook-compounds) is a citation plus an extra-noun hook (`awalalul` *leave*), still with no **`x`**.
+
 ### Overlay / sense-form
 
 Special reading of a published root under a PoS.
@@ -639,7 +641,7 @@ Content / span / number **-r** pointing back.
 
 ### Hook
 
-Prefix-less *including / rather / instead / except*, discourse glue, and extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (frame **-m** *amid* / *over* / *near* / *in the direction of* / *away from* / *out from among* / *by way of* / *with in mind* / *by* / *contrary to*; placement decides the job). Optional `/w/` immediately before the hook grades that hook (including restrictors); `/b/` sits immediately after the hook.
+Prefix-less *including / rather / instead / except*, discourse glue, extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (frame **-m** *amid* / *over* / *near* / *in the direction of* / *away from* / *out from among* / *by way of* / *with in mind* / *by* / *contrary to*; placement decides the job), and fused [hook compounds](hooks.md#hook-compounds) (citation plus extra-noun hook). Optional `/w/` immediately before the free hook grades that hook (including restrictors); `/b/` sits immediately after the free hook.
 
 [Hooks](hooks.md)
 

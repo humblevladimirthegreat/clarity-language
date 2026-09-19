@@ -81,7 +81,7 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Optional `-x` | [plural](plurality.md) after the suffix | word-final `-lx` / `-mx` / `-nx` / `-rx` (letter `x`) |
 | Stand-in **`-rl` / `-rm`** | [dependent clauses](dependents.md#dependent-clauses) | word-final coda `rl` / `rm` (`darl`) |
 
-A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zelulul`: prefix `z`, root `elulu`, ending `-l`). Spelling has one pronunciation path. Writing does not mark stress. Musical rhythm may still place emphasis.
+A syllable ends with a consonant only at the **end of the word**, except a cited **-l** / **-m** immediately before a fused extra-noun [hook compound](hooks.md#hook-compounds) (`awalalul`: you still hear *walk* end, then *from*). Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zelulul`: prefix `z`, root `elulu`, ending `-l`). Spelling has one pronunciation path. Writing does not mark stress. Musical rhythm may still place emphasis.
 
 **Related form:** word-initial `x` is the [continue](dependents.md#continue-x) prefix (discourse), not a compound seam.
 
@@ -161,12 +161,12 @@ These shape choices keep ordinary singing easier:
 | One vowel per letter | Sliding from one vowel to another mid-note forces the mouth to change | Stacked letters = separate syllables (`juon` = *ju'on*) |
 | Few consonant clusters | Clusters are harder to say quickly | Ordinary shape is consonant-then-vowel at the start of a syllable; limited clusters below |
 | Voiced preferred | Voiceless stops cut the note; singers often voice them anyway | Voiced preferred; unvoiced allowed as style only |
-| No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the **word edge** |
+| No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the **word edge**, or cited **-l** / **-m** before a fused extra-noun hook |
 | No lexical stress | Music already places emphasis | Rhythm may stress a beat; spelling does not encode stress |
 | Spelling = pronunciation | You do not memorize special readings | One path from letters to sound |
 | Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-r` (optional `-x`); stand-ins end in `-rl` / `-rm` |
 
-Legal clusters: left-hanging `gl-`; number-word role letter + `r`; word-final `-lx` / `-mx` / `-nx` / `-rx`; stand-in `-rl` / `-rm`.
+Legal clusters: left-hanging `gl-`; number-word role letter + `r`; word-final `-lx` / `-mx` / `-nx` / `-rx`; stand-in `-rl` / `-rm`; cited **-l** / **-m** plus extra-noun hook vowels (`…lalul`).
 
 Try a short Agalan line quickly at a high comfortable pitch:
 

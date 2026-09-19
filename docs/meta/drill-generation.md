@@ -180,6 +180,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `questions.md` | Advanced | a quiz show |
 | `hooks.md` | Beginner | a restaurant pass |
 | `hooks.md` | Intermediate | a newsroom |
+| `hooks.md` | Advanced | a ferry slip |
 | `restrictors.md` | Beginner | a swimming pool |
 | `restrictors.md` | Intermediate | a mountain trail |
 | `spans.md` | Beginner | a rehearsal |
@@ -315,7 +316,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 12 | `questions.md` | Intermediate | **exists** | Fuller polar inventory; confirming a negative; fill-ask arity; occasion **`har`**; yes/no with single-item/standalone; fill-ask answers | |
 | 12 | `questions.md` | Advanced | **exists** | Polar contrasts; single-item/standalone inventory under question | 4–6 items |
 | 12 | `hooks.md` | Intermediate | **exists** | Ending grids; parallel chains; discourse placements; extra-noun stacks (`aol` / `oel` / `ual` / `uol` / `ael` / `uel`) and extra-noun **-m** | |
-| 12 | `hooks.md` | Advanced | skip | more examples / reserved | |
+| 12 | `hooks.md` | Advanced | **exists** | Extra-noun **hook compounds** (citation keeps **-l** / **-m**, then the extra-noun hook; lemma is the citation; `/d/` landmark) | Recycle extra-noun grid. Not same-role *including*. Not two-word `vawalal ul …` |
 | 13 | `restrictors.md` | Intermediate | **exists** | Defined core (full); conjuncts; dependent *when* | |
 | 13 | `restrictors.md` | Advanced | — | no Advanced stage | |
 | 14 | `spans.md` | Intermediate | **exists** | Spoken open shape; TYPE; EDGE; endings; nesting; **`^ … ^`** scope islands; mention of a handle **form** vs office **-n** | |
@@ -365,7 +366,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | **SAME** `gonunul` | `predication.md` Beginner |
 | Phrase/VP/clause joins, **`zal`/`zam`/`zel`**, negation **`u`** | `joins.md` Beginner |
 | Fill-ask join **-r** (`zar` / `var` / `xar`); polar **`juel`/`jaol`** as the *system* | `questions.md` Beginner |
-| Hooks **`al`/`ol`/`ul`** | `hooks.md` Beginner |
+| Extra-noun hook compounds (`awalalul`) | `hooks.md` Advanced |
 | **`hal`/`hual`/`har`** | `restrictors.md` Beginner |
 | Span brackets / `<>` | `spans.md` Beginner |
 | `g+N` / `g#N` / `g+` | `numbers.md` Beginner |

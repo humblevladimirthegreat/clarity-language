@@ -752,6 +752,8 @@ function sensePieces(
       return [family.payload];
     case "content":
       return [contentBody(word, family.roots, tables)];
+    case "hookCompound":
+      return [contentBody(word, [family.leftRoot], tables)];
     default:
       return [word.reading];
   }
@@ -1047,6 +1049,11 @@ function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): st
   if (word.lexicalCompound) {
     return hyphenEnglish(
       word.rootGloss?.concrete || word.rootGloss?.abstract || roots[0] || "compound",
+    );
+  }
+  if (word.hookCompound) {
+    return hyphenEnglish(
+      word.rootGloss?.concrete || word.rootGloss?.abstract || word.hookCompound.stem,
     );
   }
   if (word.pos === "x" && roots.length === 1 && LINKER_ENGLISH[roots[0]!]) {

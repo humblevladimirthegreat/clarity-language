@@ -85,6 +85,40 @@
     }
     return out;
   }
+
+  const EXTRA_NOUN_HOOKS = [
+    "aol", "aom", "ael", "aem", "oel", "oem", "ual", "uam", "uol", "uom", "uel", "uem",
+    "al", "am", "ol", "om", "el", "em", "ul", "um",
+  ];
+  const ROOT_VOWELS = "aeou";
+  const ROOT_CONS = "hwdjbgzmnvlr";
+
+  function isVcvRoot(root) {
+    if (!root || root.length % 2 === 0) return false;
+    for (let i = 0; i < root.length; i++) {
+      const ch = root[i];
+      if (i % 2 === 0) {
+        if (ROOT_VOWELS.indexOf(ch) < 0) return false;
+      } else if (ROOT_CONS.indexOf(ch) < 0) return false;
+    }
+    return true;
+  }
+
+  function splitHookCompound(cite) {
+    let body = cite;
+    if (body.charAt(body.length - 1) === "x") body = body.slice(0, -1);
+    for (let h = 0; h < EXTRA_NOUN_HOOKS.length; h++) {
+      const hook = EXTRA_NOUN_HOOKS[h];
+      if (body.length < hook.length + 4 || body.slice(-hook.length) !== hook) continue;
+      const leftCite = body.slice(0, -hook.length);
+      const leftEnding = leftCite.charAt(leftCite.length - 1);
+      if (leftEnding !== "l" && leftEnding !== "m") continue;
+      const leftRoot = leftCite.slice(0, -1);
+      if (!isVcvRoot(leftRoot) || leftRoot.length < 3) continue;
+      return { leftRoot: leftRoot, leftEnding: leftEnding, hook: hook };
+    }
+    return null;
+  }
 }}
 
 // ── Top level ────────────────────────────────────────────────────────────────
@@ -471,6 +505,7 @@ prefixedWord
 PrefixedBody
   = xWord
   / plainContent
+  / hookCompound
   / joinMarker
 
 // ── Mid-word x families (decision order steps 2–6) ──────────────────────────
@@ -565,6 +600,28 @@ OrdinaryCompound
 ForeignPayload
   = chars:$( (!">" .)* ) { return chars; }
 
+// ── Fused extra-noun hook after a citation (hooks.md Advanced) ──────────────
+
+hookCompound
+  = body:HookCompoundCite plural:PluralSuffix? WordEnd {
+      const parts = splitHookCompound(body);
+      return {
+        ending: parts.hook.charAt(parts.hook.length - 1),
+        plural: !!plural,
+        family: {
+          kind: "hookCompound",
+          leftRoot: parts.leftRoot,
+          leftEnding: parts.leftEnding,
+          hook: parts.hook,
+        },
+      };
+    }
+
+HookCompoundCite
+  = chars:$([aeou] [aeouhwdjbgzmnvlr]+)
+    &{ return splitHookCompound(chars) != null; }
+    { return chars; }
+
 // ── Join markers ────────────────────────────────────────────────────────────
 
 joinMarker
@@ -641,6 +698,13 @@ citation
         ending,
         plural: !!plural,
         family: contentFamily([root]),
+      });
+    }
+  / body:hookCompound {
+      return makeWord(text(), {
+        ending: body.ending,
+        plural: body.plural,
+        family: body.family,
       });
     }
 

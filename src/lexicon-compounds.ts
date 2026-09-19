@@ -1,4 +1,5 @@
 import { escapeCsvField, parseCsv } from "./csv.js";
+import { isExtraNounHook } from "./parse/hook-compounds.js";
 import { isClarityRootShape } from "./word-converter.js";
 
 export const COMPOUND_HEADERS = [
@@ -46,7 +47,7 @@ export function retieCompoundRows(
   const changes: CompoundRetieChange[] = [];
   const next = rows.map((row, index) => {
     const left = map.get(row.left) ?? row.left;
-    const right = map.get(row.right) ?? row.right;
+    const right = isExtraNounHook(row.right) ? row.right : (map.get(row.right) ?? row.right);
     const stem = `${left}${row.join}${right}`;
     const rowNum = index + 2;
     if (left !== row.left) {
@@ -159,34 +160,48 @@ export function validateCompoundRows(
     if (!publishedRoots.has(left)) {
       errors.push({ row: rowNum, stem, reason: `left root not published: ${left}` });
     }
-    if (!publishedRoots.has(right)) {
-      errors.push({ row: rowNum, stem, reason: `right root not published: ${right}` });
-    }
     if (!isCompoundMemberRoot(left)) {
       errors.push({ row: rowNum, stem, reason: `left is not a content root: ${left}` });
     }
-    if (!isCompoundMemberRoot(right)) {
-      errors.push({ row: rowNum, stem, reason: `right is not a content root: ${right}` });
+
+    const hookRight = isExtraNounHook(right);
+    if (hookRight) {
+      if (join !== "l" && join !== "m") {
+        errors.push({
+          row: rowNum,
+          stem,
+          reason: `hook compound join must be l or m (got ${join})`,
+        });
+      }
+    } else {
+      if (!publishedRoots.has(right)) {
+        errors.push({ row: rowNum, stem, reason: `right root not published: ${right}` });
+      }
+      if (!isCompoundMemberRoot(right)) {
+        errors.push({ row: rowNum, stem, reason: `right is not a content root: ${right}` });
+      }
     }
 
     if (publishedRoots.has(stem)) {
       errors.push({ row: rowNum, stem, reason: "stem is already a published simple root" });
     }
 
-    const factorizations = factorizationsForStem(stem, publishedRoots);
-    if (factorizations.length === 0) {
-      errors.push({ row: rowNum, stem, reason: "no legal published-root factorization" });
-    } else if (factorizations.length > 1) {
-      const alts = factorizations.map((f) => `${f.left}+${f.join}+${f.right}`).join(", ");
-      errors.push({ row: rowNum, stem, reason: `ambiguous factorization (${alts})` });
-    } else {
-      const only = factorizations[0]!;
-      if (only.left !== left || only.join !== join || only.right !== right) {
-        errors.push({
-          row: rowNum,
-          stem,
-          reason: `declared parts do not match unique factorization (${only.left}+${only.join}+${only.right})`,
-        });
+    if (!hookRight) {
+      const factorizations = factorizationsForStem(stem, publishedRoots);
+      if (factorizations.length === 0) {
+        errors.push({ row: rowNum, stem, reason: "no legal published-root factorization" });
+      } else if (factorizations.length > 1) {
+        const alts = factorizations.map((f) => `${f.left}+${f.join}+${f.right}`).join(", ");
+        errors.push({ row: rowNum, stem, reason: `ambiguous factorization (${alts})` });
+      } else {
+        const only = factorizations[0]!;
+        if (only.left !== left || only.join !== join || only.right !== right) {
+          errors.push({
+            row: rowNum,
+            stem,
+            reason: `declared parts do not match unique factorization (${only.left}+${only.join}+${only.right})`,
+          });
+        }
       }
     }
 

@@ -94,7 +94,7 @@ Semantic actions build a discriminated `MorphWord` only. **No lexicon calls insi
 
 1. Overlay hit on `(sense_form, pos)` → closed special vocabulary reading
 2. Else already-classified number stem → stay number
-3. Else value/ability vs [greeting bid](../grammar/x-compounds.md#greeting-bid) (named citation or `/j/` + **-n**) vs published root
+3. Else value/ability vs [greeting bid](../grammar/x-compounds.md#greeting-bid) (named citation or `/j/` + **-n**) vs published root vs [hook compound](../grammar/hooks.md#hook-compounds) (citation + extra-noun hook) vs lexical-compound stem
 4. Else unknown / foreign payload
 
 This is where join-act vs soft clause **-n**, mood vs manner, value vs ability, etc. become **readings** without re-parsing spelling.

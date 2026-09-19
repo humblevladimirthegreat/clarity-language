@@ -10,6 +10,10 @@ import {
   senseFormRoot,
 } from "../lexicon-search.js";
 
+import {
+  derivedHookGloss,
+  hookCompoundFromMorph,
+} from "./hook-compounds.js";
 import type { LexOverlay, LexReading, LexWord, MorphWord } from "./types.js";
 
 function needRootsFromOverlays(overlays: Iterable<OverlayRow>): Set<string> {
@@ -190,7 +194,25 @@ function isFenceJoin(word: MorphWord): boolean {
  * Closed families (joins, spans, numbers, foreign payloads) contribute none.
  * Vowel-only ordinary compounds are series letters, not lexicon hosts.
  */
-export function lexiconContentRoots(word: MorphWord): string[] {
+function hookCompoundLexiconRoots(
+  word: MorphWord,
+  known?: ReadonlySet<string>,
+): string[] | undefined {
+  if (!known) return undefined;
+  const parts = hookCompoundFromMorph(word);
+  if (!parts) return undefined;
+  if (!known.has(parts.leftRoot)) return undefined;
+  const morphRoot = word.family.kind === "content" ? word.family.roots[0] : undefined;
+  if (morphRoot && known.has(morphRoot)) return undefined;
+  return [parts.leftRoot];
+}
+
+export function lexiconContentRoots(
+  word: MorphWord,
+  known?: ReadonlySet<string>,
+): string[] {
+  const hooked = hookCompoundLexiconRoots(word, known);
+  if (hooked) return hooked;
   const { family } = word;
   switch (family.kind) {
     case "content":
@@ -211,6 +233,8 @@ export function lexiconContentRoots(word: MorphWord): string[] {
         return hosts;
       }
       return family.leftRoots;
+    case "hookCompound":
+      return [family.leftRoot];
     default:
       return [];
   }
@@ -233,7 +257,7 @@ export function unknownLexiconContentRoots(
   word: MorphWord,
   known: ReadonlySet<string>,
 ): string[] {
-  return lexiconContentRoots(word).filter((root) => !known.has(root));
+  return lexiconContentRoots(word, known).filter((root) => !known.has(root));
 }
 
 function publishedGlossForRoots(
@@ -267,6 +291,35 @@ function compoundLemmaGloss(row: CompoundRow): { concrete?: string; abstract?: s
   if (row.concrete) gloss.concrete = row.concrete;
   if (row.abstract) gloss.abstract = row.abstract;
   return gloss;
+}
+
+function classifyHookCompound(word: MorphWord, tables: ClassifyTables): LexWord | undefined {
+  const morphRoot = word.family.kind === "content" ? word.family.roots[0] : undefined;
+  if (morphRoot && tables.published.has(morphRoot)) return undefined;
+  const parts = hookCompoundFromMorph(word);
+  if (!parts || !tables.published.has(parts.leftRoot)) return undefined;
+  const listed = tables.compounds.get(parts.stem);
+  const published = tables.published.get(parts.leftRoot);
+  const bank =
+    parts.leftEnding === "m" ? published?.posEnglish.abstract : published?.posEnglish.concrete;
+  const packed = word.pos && bank ? bank[word.pos] : undefined;
+  const leftSense =
+    packed ||
+    (parts.leftEnding === "m"
+      ? published?.abstract || published?.concrete || parts.leftRoot
+      : published?.concrete || published?.abstract || parts.leftRoot);
+  const derived = derivedHookGloss(parts.hook);
+  const gloss = listed
+    ? compoundLemmaGloss(listed)
+    : { concrete: `${leftSense}-${derived}` };
+  return {
+    ...word,
+    family: { kind: "content", roots: [parts.leftRoot] },
+    rootGloss: gloss,
+    reading: "ordinary",
+    lexicalCompound: Boolean(listed),
+    hookCompound: parts,
+  };
 }
 
 function compoundsFromRows(rows: CompoundRow[]): Map<string, CompoundRow> {
@@ -381,6 +434,11 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
     };
   }
 
+  if (family.kind === "hookCompound") {
+    const hooked = classifyHookCompound(word, tables);
+    if (hooked) return hooked;
+  }
+
   if (family.kind === "content" && family.roots.length === 1) {
     const compoundRow = tables.compounds.get(family.roots[0]!);
     if (compoundRow) {
@@ -391,9 +449,11 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
         lexicalCompound: true,
       };
     }
+    const hooked = classifyHookCompound(word, tables);
+    if (hooked) return hooked;
   }
 
-  const roots = lexiconContentRoots(word);
+  const roots = lexiconContentRoots(word, knownLexiconRoots(tables));
   const published = publishedGlossForRoots(tables, roots);
   if (published) {
     return {
@@ -475,16 +535,27 @@ export function classifyHits(word: MorphWord, tables: ClassifyTables): ClassifyH
     hits.push({ source: "join", reading: "join" });
   }
 
-  if (family.kind === "content" && family.roots.length === 1) {
-    if (tables.compounds.get(family.roots[0]!)) {
+  let skipPublished = false;
+  if (family.kind === "hookCompound" || (family.kind === "content" && family.roots.length === 1)) {
+    if (family.kind === "content" && tables.compounds.get(family.roots[0]!)) {
       hits.push({ source: "compoundLemma", reading: "ordinary" });
+    }
+    const hooked = classifyHookCompound(word, tables);
+    if (hooked) {
+      hits.push({
+        source: hooked.lexicalCompound ? "compoundLemma" : "published",
+        reading: "ordinary",
+      });
+      skipPublished = true;
     }
   }
 
-  const roots = lexiconContentRoots(word);
-  const published = publishedGlossForRoots(tables, roots);
-  if (published) {
-    hits.push({ source: "published", reading: published.allFound ? "ordinary" : "unknown" });
+  if (!skipPublished) {
+    const roots = lexiconContentRoots(word, knownLexiconRoots(tables));
+    const published = publishedGlossForRoots(tables, roots);
+    if (published) {
+      hits.push({ source: "published", reading: published.allFound ? "ordinary" : "unknown" });
+    }
   }
 
   if (family.kind === "foreign" || family.kind === "writingSpan") {

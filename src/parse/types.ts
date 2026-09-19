@@ -80,6 +80,12 @@ export type MorphWordFamily =
     }
   | { kind: "spanClose"; flavor: SpanCloseFlavor }
   | { kind: "hook"; form: string }
+  | {
+      kind: "hookCompound";
+      leftRoot: string;
+      leftEnding: "l" | "m";
+      hook: string;
+    }
   | { kind: "joinMarker"; series: string }
   | {
       kind: "writingSpan";
@@ -149,6 +155,13 @@ export type LexWord = MorphWord & {
   reading: LexReading;
   /** Lexicon-only x-less compound lemma from lexicon-compounds.csv. */
   lexicalCompound?: boolean;
+  /** Extra-noun hook fused after a cited left word (`awalalul`). */
+  hookCompound?: {
+    leftRoot: string;
+    leftEnding: "l" | "m";
+    hook: string;
+    stem: string;
+  };
 };
 
 // ── Stage 3 sentence AST ────────────────────────────────────────────────────

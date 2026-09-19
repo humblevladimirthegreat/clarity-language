@@ -69,23 +69,43 @@ describe("lexicon-compounds", () => {
     assert.ok(alts.length >= 2);
   });
 
-  it("rejects invalid join letter", () => {
+  it("accepts extra-noun hook as the right member", () => {
     const errors = validateCompoundRows(
       [
         {
           emoji: "",
-          stem: "ohohuxabede",
-          left: "ohohu",
-          join: "x" as "l",
-          right: "abede",
-          concrete: "bad",
+          stem: "awalalul",
+          left: "awala",
+          join: "l",
+          right: "ul",
+          concrete: "leave",
           abstract: "",
           mnemonic: "",
         },
       ],
       publishedRoots,
     );
-    assert.ok(errors.some((e) => /join must be/.test(e.reason)));
+    assert.equal(errors.length, 0, errors.map((e) => e.reason).join("; "));
+  });
+
+  it("does not retie a hook right member", () => {
+    const { rows } = retieCompoundRows(
+      [
+        {
+          emoji: "",
+          stem: "awalalul",
+          left: "awala",
+          join: "l",
+          right: "ul",
+          concrete: "leave",
+          abstract: "",
+          mnemonic: "",
+        },
+      ],
+      new Map([["ul", "ogogo"]]),
+    );
+    assert.equal(rows[0]?.right, "ul");
+    assert.equal(rows[0]?.stem, "awalalul");
   });
 
   it("reties left/right and recomputes stem", () => {

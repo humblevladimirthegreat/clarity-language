@@ -242,6 +242,43 @@ describe("classify", () => {
     assert.equal(word.rootGloss?.concrete, "friend");
   });
 
+  it("listed three-letter hook compound parses as a fused citation", () => {
+    const word = expectReading("vawalalual", "ordinary");
+    assert.equal(word.hookCompound?.hook, "ual");
+    assert.equal(word.rootGloss?.concrete, "exit");
+  });
+
+  it("listed hook compound uses citation stem and fused gloss", () => {
+    const word = expectReading("vawalalul", "ordinary");
+    assert.equal(word.hookCompound?.stem, "awalalul");
+    assert.equal(word.hookCompound?.hook, "ul");
+    assert.equal(word.lexicalCompound, true);
+    assert.equal(word.rootGloss?.concrete, "leave");
+    if (word.family.kind === "content") {
+      assert.equal(word.family.roots[0], "awala");
+    }
+  });
+
+  it("citation hook compound has no role letter", () => {
+    const word = expectReading("awalalul", "ordinary");
+    assert.equal(word.pos, undefined);
+    assert.equal(word.hookCompound?.stem, "awalalul");
+    assert.equal(word.rootGloss?.concrete, "leave");
+  });
+
+  it("ordinary walk is not a hook compound", () => {
+    const word = expectReading("vawalal", "ordinary");
+    assert.equal(word.hookCompound, undefined);
+    assert.equal(word.rootGloss?.concrete, "walk");
+  });
+
+  it("unlisted left root still fuses a productive hook compound", () => {
+    const word = expectReading("vurunulul", "ordinary");
+    assert.equal(word.hookCompound?.stem, "urunulul");
+    assert.equal(word.lexicalCompound, false);
+    assert.match(word.rootGloss?.concrete ?? "", /leave/);
+  });
+
   it("ordinary compound glosses both roots", () => {
     const sushi = tables.published.get(
       [...tables.published.values()].find((r) => r.concrete === "sushi")?.clarity ?? "",

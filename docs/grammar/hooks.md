@@ -682,6 +682,57 @@ z-Azawan | v-write | on | b-page
 ## Advanced
 <a id="advanced"></a>
 
+### Hook compounds (cite + extra-noun hook)
+<a id="hook-compounds"></a>
+
+Intermediate already used a free extra-noun hook beside a verb (`vawalal ul bazadol` *walks from a station*). You can **fuse** that extra-noun hook onto a finished citation so the hook **is** the event kind: enter, leave, oppose, and the rest of the extra-noun grid.
+
+Keep the left word’s own **-l** or **-m**. Then write the extra-noun hook. There is no mid-word **`x`**. The dictionary lemma is the **citation** (no role letter), because the same stem can sit under `/z/` or `/ɡ/` as well as `/v/`.
+
+```
+CITE + HOOK
+awalal + ul → awalalul
+```
+
+In a clause, add a role letter to that citation (`vawalalul`). The extra participant is an ordinary object (`/d/`), not `/b/` (that would still be a recipient after a verb).
+
+> `zazawan dazadol vawalalul.`
+>
+> z-Azawan | d-station | v-leave
+>
+> "Azawan leaves a station."
+
+> `awalalul`
+>
+> leave
+>
+> "leave" (citation)
+
+The left ending is part of the stem, so two different left roots stay distinct once the hook is attached.
+
+| Hook | Free extra-noun | Fused **-l** | Fused **-m** | Citation (from *walk*) |
+|------|-----------------|--------------|--------------|------------------------|
+| **`al` / `am`** | *in* / *amid* | *enter* | *mill amid* | `awalalal` / `awalalam` |
+| **`aol` / `aom`** | *on* / *over* | *mount* | *cover* | `awalalaol` / `awalalaom` |
+| **`ol` / `om`** | *at* / *near* | *attend* | *adjoin* | `awalalol` / `awalalom` |
+| **`oel` / `oem`** | *toward* / *in the direction of* | *head for* | *orient* | `awalaloel` / `awalaloem` |
+| **`ul` / `um`** | *from* / *away from* | *leave* | *recede* | `awalalul` / `awalalum` |
+| **`ual` / `uam`** | *out of* / *out from among* | *exit* | *pick out* | `awalalual` / `awalaluam` |
+| **`uol` / `uom`** | *through* / *by way of* | *traverse* | *relay* | `awalaluol` / `awalaluom` |
+| **`el` / `em`** | *for* / *with in mind* | *serve* | *keep in view* | `awalalel` / `awalalem` |
+| **`ael` / `aem`** | *using* / *by* | *wield* | *channel* | `awalalael` / `awalalaem` |
+| **`uel` / `uem`** | *against* / *contrary to* | *oppose* | *defy* | `awalaluel` / `awalaluem` |
+
+> `zululon dadedal vawalalel.`
+>
+> z-Ululon | d-tea | v-serve
+>
+> "Ululon serves tea."
+
+A left root that is not *walk* still uses the same hook job (`vezehelul` *tell* fused with *from*). Listed dictionary lemmas stay citations (`awalalul`, not `vawalalul`).
+
+**Compare with:** `vawalal ul bazadol` still *walks from a station* as two words. Same-role *including* / *rather* / *instead* / *except* stay prefix-less hooks, not this fuse. A [lexical compound](x-compounds.md#lexical-compounds) like *bedroom* glues two content roots with a join letter; this glues a citation to an extra-noun hook.
+
 ### Exclusive high on a number range
 
 Inside a [measure range](numbers-applied.md#ranges), prefix-less **`ul`** on the high endpoint means *up to but not including* that number.
@@ -692,9 +743,142 @@ Inside a [measure range](numbers-applied.md#ranges), prefix-less **`ul`** on the
 >
 > "[3, 5) on the length continuum."
 
+### Translation practice
+<a id="translation-practice-advanced"></a>
+
+Short drills for Advanced. Try each item before opening **Show answer**.
+
+**Setting:** a ferry slip
+
+**Roots used here:**
+
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
+| *leave* | `awalalul` | `awalal` *walk* | cited walk plus *from* |
+| *enter* | `awalalal` | `awalal` *walk* | cited walk plus *in* |
+| *attend* | `awalalol` | `awalal` *walk* | cited walk plus *at* |
+| *exit* | `awalalual` | `awalal` *walk* | cited walk plus *out of* |
+| *oppose* | `awalaluel` | `awalal` *walk* | cited walk plus *against* |
+| *traverse* | `awalaluol` | `awalal` *walk* | cited walk plus *through* |
+| *boat* | `odadal` | | |
+| *fog* | `avogol` | | |
+| *ice* | `ujel` | | |
+| *anchor* | `anogol` | | |
+| *bell* | `obelel` | | |
+
+#### English → Agalan
+
+**1.** *Azawan leaves a boat.*
+
+::: details Show answer
+`zazawan dodadal vawalalul.`
+
+z-Azawan | d-boat | v-leave
+:::
+
+**2.** *Ululon attends a bell.*
+
+::: details Show answer
+`zululon dobelel vawalalol.`
+
+z-Ululon | d-bell | v-attend
+:::
+
+**3.** *Uhubun exits fog.*
+
+::: details Show answer
+`zuhubun davogol vawalalual.`
+
+z-Uhubun | d-fog | v-exit
+:::
+
+**4.** *Azawan opposes ice.*
+
+::: details Show answer
+`zazawan dujel vawalaluel.`
+
+z-Azawan | d-ice | v-oppose
+:::
+
+**5.** *Ululon traverses a boat.*
+
+::: details Show answer
+`zululon dodadal vawalaluol.`
+
+z-Ululon | d-boat | v-traverse
+:::
+
+**6.** *Azawan enters fog.*
+
+::: details Show answer
+`zazawan davogol vawalalal.`
+
+z-Azawan | d-fog | v-enter
+:::
+
+#### Agalan → English
+
+**1.** `davogol zululon vawalalul.`
+
+::: details Show answer
+
+d-fog | z-Ululon | v-leave
+
+*Ululon leaves fog.*
+:::
+
+**2.** `zazawan danogol vawalalol.`
+
+::: details Show answer
+
+z-Azawan | d-anchor | v-attend
+
+*Azawan attends an anchor.*
+:::
+
+**3.** `zululon dodadal vawalalual.`
+
+::: details Show answer
+
+z-Ululon | d-boat | v-exit
+
+*Ululon exits a boat.*
+:::
+
+**4.** `zuhubun davogol vawalaluel.`
+
+::: details Show answer
+
+z-Uhubun | d-fog | v-oppose
+
+*Uhubun opposes fog.*
+:::
+
+**5.** `zazawan dujel vawalaluol.`
+
+::: details Show answer
+
+z-Azawan | d-ice | v-traverse
+
+*Azawan traverses ice.*
+:::
+
+**6.** `zululon dodadal vawalalal.`
+
+::: details Show answer
+
+z-Ululon | d-boat | v-enter
+
+*Ululon enters a boat.*
+:::
+
 ## See also
 
 - List joins (*and* / *or*): [joins.md](joins.md)
 - Hosted leftover relations (*like*, *between*, *of*): [relations.md](relations.md)
 - *When* this hook counts: [restrictors.md](restrictors.md)
 - Prefix-less citation: [reference-suffix.md](reference-suffix.md#citation-forms)
+- Dictionary compounds without **`x`**: [x-compounds.md](x-compounds.md#lexical-compounds)

@@ -55,7 +55,7 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 | `zonogoleberel` | bond **-l** person | friend | look it up |
 | `zanunulojal` | rain **-l** coat | raincoat | look it up |
 
-If the pairing is not in the dictionary, either glue with **`x`** (`zabanuxudel` *peanut butter*) or use two words.
+If the pairing is not in the dictionary, either glue with **`x`** (`zabanuxudel` *peanut butter*) or use two words. Extra-noun *enter* / *leave* fused onto a citation is a [hook compound](hooks.md#hook-compounds) (`awalalul`), not this two-root join.
 
 ### One thing or two?
 <a id="compound-vs-separate"></a>
@@ -520,3 +520,4 @@ Azawan-presence | Ululon-minutes
 - [ability.md](ability.md) / [values.md](values.md) / [roles.md](roles.md) / [numeric-derivation.md](numeric-derivation.md)
 - Greeting bid: [how you show up](#greeting-bid); bare hello: [reference-suffix.md](reference-suffix.md#greeting)
 - Short office names vs long titles: [reference-suffix.md](reference-suffix.md#named-handles)
+- Extra-noun fuse on a citation: [hooks.md](hooks.md#hook-compounds)

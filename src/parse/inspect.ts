@@ -215,8 +215,10 @@ function senseLabelFallback(word: LexWord): string {
 
 function familyChips(family: MorphWordFamily): string[] {
   switch (family.kind) {
-    case "content":
-      return family.roots.map((root) => `stem ${root}`);
+    case "content": {
+      const chips = family.roots.map((root) => `stem ${root}`);
+      return chips;
+    }
     case "number": {
       const chips = [`number ${family.stem.marker}`];
       if (family.writingEndingMark) chips.push(`mark ${family.writingEndingMark}`);
@@ -238,6 +240,8 @@ function familyChips(family: MorphWordFamily): string[] {
       return [`span close ${family.flavor}`];
     case "hook":
       return [`hook ${family.form}`];
+    case "hookCompound":
+      return [`hook-compound ${family.hook}`, `stem ${family.leftRoot}`];
     case "joinMarker":
       return [`join ${family.series}`];
     case "writingSpan": {
@@ -262,6 +266,7 @@ export function chipsFor(word: LexWord): string[] {
   } else {
     chips.push(...familyChips(word.family));
   }
+  if (word.hookCompound) chips.push(`hook ${word.hookCompound.hook}`);
   chips.push(word.reading);
   return chips;
 }
@@ -282,7 +287,12 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
   const family = word.family;
   if (family.kind === "content") {
     rows.push({ label: "roots", value: family.roots.join(" · ") });
-  } else if (family.kind === "x") {
+  }
+  if (word.hookCompound) {
+    rows.push({ label: "hook compound", value: word.hookCompound.stem });
+    rows.push({ label: "fused hook", value: word.hookCompound.hook });
+  }
+  if (family.kind === "x") {
     rows.push({ label: "x family", value: family.xFamily });
     if (family.leftRoots.length) rows.push({ label: "host", value: family.leftRoots.join(" · ") });
     if (family.rightRoots?.length) {
@@ -297,6 +307,9 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
     if (family.stem.digitlessExp) rows.push({ label: "exponent", value: family.stem.digitlessExp });
   } else if (family.kind === "hook") {
     rows.push({ label: "form", value: family.form });
+  } else if (family.kind === "hookCompound") {
+    rows.push({ label: "left", value: family.leftRoot + family.leftEnding });
+    rows.push({ label: "fused hook", value: family.hook });
   } else if (family.kind === "joinMarker") {
     rows.push({
       label: word.reading === "standIn" ? "stand-in" : "series",
@@ -344,6 +357,9 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   }
   if (family.kind === "x" && family.xFamily === "numeric") {
     return { line: "numeric derivation", href: "numeric-derivation.html#numeric-derivation" };
+  }
+  if (word.hookCompound) {
+    return { line: "hook compound", href: "hooks.html#hook-compounds" };
   }
   if (word.lexicalCompound) {
     return { line: "lexical compound", href: "x-compounds.html#lexical-compounds" };
