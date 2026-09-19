@@ -99,7 +99,7 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 | Role metalanguage (`speaker`, `listener`, `interlocutors`) | *I / you / we* |
 | Join packaging (open `zam` vs closed `zal`, exclusive `dol`, fence shape) | Plain *and / or*; no “exactly one”, no open-list footnotes |
 | Sense-picking **-l / -m / -n** | Never (already omitted from morph when they only pick sense) |
-| Values **channel / standing / force / changeability** | Keep only what changes English (*can't* vs *shouldn't* vs unmet need as content); drop “(motive, soft standing)”, … Prescription **`xe`**: loose free uses *must* / *should* / *could* (or *has to* / *might*) for bound / endorse / invite — not parenthetical labels |
+| Values **channel / standing / advice-wanted / changeability** | Keep only what changes English (*can't* vs unmet need as content); drop “(motive, soft standing)”, … Prescription **`xe`**: loose free keeps the warrant when it is the point (*they asked for a move* / *as people typically want a move here* / *from our history with moves*) — not *must* / *should* / *could* as a force grade |
 | Emotion compose ACT / LOCUS / activation | Ordinary emotion English (*we're glad*), not “pleasure met · internal” |
 | Evidential / universality **tags** | Fold in only if English wants it (*I hear…*, *usually*); else omit |
 | Span fence labels | Quotes / parentheses; no “Cite:” / “aside:” |
@@ -255,7 +255,7 @@ Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#
 
 ### Mid-word `x` families
 
-Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/values.md), keep the stance **and** the ending table (contact / prescription force / preference standing / changeability): `holozoxom` → `h-competence-motive-internal`, not `h-competence-x-motive`.
+Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/values.md), keep the stance **and** the ending table (contact / advice wanted / preference standing / changeability): `holozoxom` → `h-competence-motive-internal`, not `h-competence-x-motive`.
 
 | Family | Example Agalan | Morph gloss |
 |--------|-----------------|-------------|

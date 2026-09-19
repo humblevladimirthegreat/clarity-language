@@ -52,11 +52,11 @@ How you **know** a world-claim (live look, memory, hearsay, …) is a different 
 
 Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/knowing.html#may
 
-### Greetings Say What Kind of Talk This Is
+### Greetings Say How Long the Conversation Is
 
-When someone starts a conversation with you, you're not sure what kind of conversation you're signing up for.
+When someone starts a conversation with you, you're not sure how long of a conversation you're signing up for.
 
-In Agalan, the basic greeting is your name (so people remember it more easily) plus an optional suffix for the type of conversation you're open to right now.
+In Agalan, the basic greeting is your name (so people remember it more easily) plus an optional suffix for how much talking you're open to right now.
 
 -xan /ʒɑn/: conversation - "Let's talk!"
 

@@ -84,7 +84,7 @@ Agalan’s [values](values.md) name a closed inventory of **needs** (autonomy, c
 |--------|-----|
 | Met | This serves the need, including how you contact the payoff (gratitude / savoring) — an adjective on the noun, or `/h/` on the event |
 | Motive | Acting *for* this need, including where the reason stands |
-| Prescription | Deontic on the host act for this need — *must* / *should* / *could* by force (bound / endorse / invite) |
+| Prescription | Deontic on the host act for this need — ending marks **why you think a move is wanted** (they asked / typical here / history of moves with them) |
 | Unmet | Costs the need, including how changeable that is |
 
 Naming the need and your stance toward it helps you notice gratitude, motive, and oughts instead of conflating them into vague *want* / *should* / *good*. A need on `/ɡ/` is a belonging (so *my X serves competence* is one adjective); an unowned stimulus uses the need on `/w/` immediately before **`gobobum`**.

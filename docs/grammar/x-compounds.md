@@ -318,7 +318,7 @@ On your own name, it is how you arrive. When you call them, it is how you addres
 |--------|-----|---------|-----|
 | **`…xan`** | presence | *I’m here / we can stay* | **a** ≈ add (time is in) |
 | **`…xen`** | minutes | *got a few minutes?* | **e** ≈ order (the slot has an end) |
-| **`…xon`** | one slot | *one ask* | **o** ≈ one |
+| **`…xon`** | one slot | *one ask/comment* | **o** ≈ one |
 | **`…xun`** | pass | *just passing* (acknowledge; don’t open talk) | **u** ≈ undo (lift the talk) |
 
 Only one of these vowels per name. You can still pair your arrival with calling them (`azawaxan jululoxon`). **-n** is still the [named](reference-suffix.md#named-n-beginner) ending.

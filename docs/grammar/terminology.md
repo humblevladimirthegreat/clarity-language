@@ -178,9 +178,12 @@ Clause content after the left-edge `/j/` cluster.
 
 [Clause](clause.md#left-edge-order-and-sentence-boundaries)
 
-### Bound / endorse / invite
+### Asked / typical / history
+<a id="asked-typical-history"></a>
+<a id="wording-general-history"></a>
+<a id="bound-endorse-invite"></a>
 
-Prescription-force endings on value **`xe`**: **-l** bound (*must* / *has to*), **-m** endorse (*should*), **-r** invite (*could* / *might*).
+Prescription endings on value **`xe`**: why you think a move is wanted. **-l** they asked (said or heavily implied this talk), **-m** people typically want advice here, **-r** a prior ask / standing invite / used move with them.
 
 [Values](values.md#value-force)
 
@@ -506,7 +509,7 @@ Amount + lexicon unit noun (published abstract = unit name).
 
 ### Met / unmet / motive / prescription (values)
 
-Value stances **`xa` / `xu`** (Beginner); **`xe`** / **`xo`** (Intermediate prescription / motive). Prescription **`xe`** on the clause is deontic on the host act (*ought to … for this need*), not a performance report with a separate norm tag.
+Value stances **`xa` / `xu`** (Beginner); **`xe`** / **`xo`** (Intermediate prescription / motive). Prescription **`xe`** on the clause is deontic on the host act (*ought to … for this need*), not a performance report with a separate norm tag. The ending is [why a move is wanted](#asked-typical-history), not how firmly you address them.
 
 [Values](values.md)
 
@@ -713,7 +716,7 @@ Utterance setting: statement / question / command / prohibition.
 
 [Clause](clause.md#speech-act)
 
-**Compare with:** values **prescription force** is [bound / endorse / invite](#bound-endorse-invite), not speech act. Polar [stance](#polar-stance) is a left-edge particle.
+**Compare with:** values **advice wanted** is [asked / typical / history](#asked-typical-history), not speech act. Polar [stance](#polar-stance) is a left-edge particle.
 
 ### Sufficient / necessary
 
