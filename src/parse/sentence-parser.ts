@@ -615,6 +615,38 @@ function unitContainsOdo(unit: Unit): boolean {
   return false;
 }
 
+const VERBAL_DEPENDENT_SERIES = new Set(["ae", "ue", "ao", "uo", "ua"]);
+const IMPLIED_SUBJECT_SERIES = new Set(["e", "u", "ao", "uo", "ua"]);
+
+function verbalDependentIn(unit: Unit): { word: LexWord; coord: VpCoord; stacked: boolean } | undefined {
+  if (unit.kind !== "vp" || unit.coord.parts.length === 0) return undefined;
+  const lastPart = unit.coord.parts.at(-1)!;
+  const lastItem = lastPart.items.at(-1);
+  if (!lastPart.join && lastItem?.pos === "v" && isStandIn(lastItem)) {
+    return { word: lastItem, coord: unit.coord, stacked: false };
+  }
+  const join = lastPart.join;
+  if (
+    lastPart.items.length === 0 &&
+    join?.pos === "v" &&
+    join.family.kind === "joinMarker" &&
+    VERBAL_DEPENDENT_SERIES.has(join.family.series) &&
+    (join.ending === "l" || join.ending === "m")
+  ) {
+    return { word: join, coord: unit.coord, stacked: true };
+  }
+  return undefined;
+}
+
+function hasSubjectStart(unit: Unit | undefined): boolean {
+  return unit?.kind === "np" && unit.coord.level === "z";
+}
+
+function allowsImpliedSubject(word: LexWord): boolean {
+  if (word.family.kind !== "joinMarker") return false;
+  return IMPLIED_SUBJECT_SERIES.has(word.family.series);
+}
+
 function disambiguateClause(units: Unit[]): Unit[] {
   const hasVp = units.some((u) => u.kind === "vp");
   if (hasVp || units.length !== 1 || units[0]?.kind !== "np") return units;
@@ -678,6 +710,26 @@ function mergeIslandJoins(units: Unit[]): Unit[] {
 
 function finalizeClause(units: Unit[]): Clause {
   const resolved = disambiguateClause(mergeIslandJoins(units));
+
+  for (let i = 0; i < resolved.length - 1; i++) {
+    const host = verbalDependentIn(resolved[i]!);
+    const next = resolved[i + 1];
+    if (!host || (!hasSubjectStart(next) && !(next?.kind === "vp" && allowsImpliedSubject(host.word)))) continue;
+    const dependentWord = { ...host.word, reading: "standIn" as const };
+    if (host.stacked) {
+      const lastPart = host.coord.parts.at(-1)!;
+      lastPart.items.push(dependentWord);
+      lastPart.join = undefined;
+    } else {
+      const lastPart = host.coord.parts.at(-1)!;
+      lastPart.items[lastPart.items.length - 1] = dependentWord;
+    }
+    return {
+      units: resolved.slice(0, i + 1),
+      dependent: { orodo: dependentWord, clause: { units: resolved.slice(i + 1) } },
+    };
+  }
+
   const orodoIdx = resolved.findIndex(unitContainsOdo);
   if (orodoIdx < 0) return { units: resolved };
 

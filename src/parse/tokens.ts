@@ -121,7 +121,7 @@ export function classifyToTokenType(word: LexWord): AgelanTokenType {
   if (family.kind === "writingSpan") return WritingSpan;
   if (family.kind === "x" && family.xFamily === "span") return SpanOpen;
 
-  if (isStandIn(word)) return Odo;
+  if (isStandIn(word)) return pos === "v" ? V : Odo;
 
   if (family.kind === "joinMarker" && reading === "join" && pos && pos in JOIN_BY_POS) {
     return JOIN_BY_POS[pos as keyof typeof JOIN_BY_POS];

@@ -21,7 +21,7 @@ j should just be y, remind that y is never a vowel
 consider removing some emotion emojis
 consider moving overlay forms to the top of lexicon so they get preferential retying
 cool features: collective verbs/adjectives use plural
-plurality on joins/hooks?
+suggest what plurality should mean on joins and/or hooks
 apply numbers TODO first before other TODOs (there are several and some need human feedback)
 could some causation overlay inventories be replaced by restrictors or other joins/hooks/stand-ins?
 numbers section includes pronunciation rows underneath the agalan.

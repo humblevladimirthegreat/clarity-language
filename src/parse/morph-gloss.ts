@@ -776,6 +776,22 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
   const { series } = family;
   const ending = word.ending;
 
+  if (word.reading === "standIn" && word.pos === "v") {
+    const verbalDependent: Record<string, string> = {
+      a: "state",
+      o: "question",
+      e: "command",
+      u: "prohibit",
+      ae: "confirm",
+      ue: "deny",
+      ao: "agree",
+      uo: "decline",
+      ua: "vehemently-decline",
+    };
+    const action = verbalDependent[series] ?? "state";
+    return ending === "m" || ending === "rm" ? `${action}.open` : action;
+  }
+
   if (word.reading === "joinAct") return JOIN_ACT[series] ?? "join-act";
   if (word.reading === "joinRelation") return JOIN_RELATION[series] ?? "join-relation";
 

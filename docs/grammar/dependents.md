@@ -374,6 +374,36 @@ When *so that* aims at keeping an outcome off, keep **`holalam`** and type `/b/`
 
 **Compare with:** *tells that Ululon sits* is **`darl`**. *Tells Ululon to sit* is **`derl`**. *Walks so that Azawan sits* is **`holalam barl`**.
 
+## Advanced
+<a id="advanced"></a>
+
+### Stand-in vowels in other roles
+<a id="stand-in-roles"></a>
+
+The stand-in vowel identifies the kind of sentence content, while the first letter identifies the role that content fills. Use the same vowel choices with another role letter when the following sentence fills that role. Under `/v/`, these forms make the speaker’s response to the dependent content the verb: **`vael`** confirms a statement, **`vuel`** denies it, **`vaol`** agrees to an instruction, and **`vuol`** lets the speaker decline an instruction. **`vual`** is a vehement refusal. The following sentence supplies what is stated, questioned, commanded, prohibited, confirmed, denied, accepted, or declined. A following dependent sentence gives these forms their complement-taking reading; for example, `vael` before a sentence means *confirm that*, while the join-act `vael` in a list means *tie / equate*.
+
+The **-l** forms close the response; their **-m** counterparts leave it open (gist / not only that).
+
+| Agalan | Dependent content | English |
+|--------|-------------------|---------|
+| **`varl` / `varm`** | statement-like (`a`) | *states…* |
+| **`vorl` / `vorm`** | question-like (`o`) | *questions…* |
+| **`verl` / `verm`** | instruction-like (`e`) | *commands…* |
+| **`vurl` / `vurm`** | avoidance-like (`u`) | *prohibits…* |
+| **`vael` / `vaem`** | statement-like (`a`) | *confirms that…* |
+| **`vuel` / `vuem`** | statement-like (`u` reversal) | *denies that…* |
+| **`vaol` / `vaom`** | instruction-like (`a` + `o`) | *agrees to…* |
+| **`vuol` / `vuom`** | instruction-like (`u` + `o`) | *declines to…* |
+| **`vual` / `vuam`** | instruction-like (`u` + `a`) | *vehemently refuses to…* |
+
+For example, the `/v/` word takes the following sentence as its content:
+
+`zazawan vael zululon vajul.` means "Azawan confirms that Ululon sits."
+
+`zazawan vuol zululon vajul.` means "Azawan declines to let Ululon sit."
+
+The sentence after one of these verbs has its own subject when the chosen content type requires one, just as it does after **`darl`** / **`derl`**. The verb’s role letter lets you use the same typed content as an object, a described property, or another role supported by the clause.
+
 ### Nested dependents
 <a id="nested-dependents"></a>
 
