@@ -1,13 +1,14 @@
-# Grammar doc style (for learners)
+# Grammar doc content and teaching (for learners)
 
-How to write Agalan **grammar docs** under **`docs/grammar/`** so a learner can use them. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). Design authority for morphology stays in those pages (one-clause grammar: [clause.md](../grammar/clause.md); hosted relations: [relations.md](../grammar/relations.md); dependents / continue: [dependents.md](../grammar/dependents.md)); this page standardizes **pedagogy and prose** only.
+What belongs in Agalan **grammar docs** under **`docs/grammar/`**, and how to organize it for learners. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). For wording, voice, and sentence-level style, see [doc-style.md](doc-style.md). Design authority for morphology stays in those pages (one-clause grammar: [clause.md](../grammar/clause.md); hosted relations: [relations.md](../grammar/relations.md); dependents / continue: [dependents.md](../grammar/dependents.md)); this page standardizes **pedagogy and content** only.
 
-Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/` — only peer links inside `grammar/`. Editors follow this page, [learning-levels.md](learning-levels.md), and [translation-exercises.md](translation-exercises.md) privately.
+Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/` — only peer links inside `grammar/`. Editors follow this page, [doc-style.md](doc-style.md), [learning-levels.md](learning-levels.md), and [translation-exercises.md](translation-exercises.md) privately.
 
 Related meta:
 
 | Page | Owns |
 |------|------|
+| [doc-style.md](doc-style.md) | Wording, voice, and sentence-level style for learner-facing grammar prose |
 | [learning-levels.md](learning-levels.md) | **Beginner** / **Intermediate** / **Advanced** stage rubric and [cross-doc path](learning-levels.md#cross-doc-path) (for `docs/grammar/` only) |
 | [glosses.md](glosses.md) | Morph glosses and free English ([example blocks](glosses.md#example-block); [house-name glosses](glosses.md#house-cast)) |
 | [translation-exercises.md](translation-exercises.md) | Eng ↔ Agalan checkpoints (placement, principles including house-cast people, spoiler shape; vocab **Agalan** = citation or the inflected form the row teaches) |
@@ -32,7 +33,6 @@ On this page:
 | Mix-ups and negatives | [Which tool, not which owner](#which-tool-not-which-owner) |
 | Page architecture | [Page skeleton](#page-skeleton), [Beginner](#beginner-stage-shape), [later stages](#later-stage-shape) |
 | Memory aids | [Cues](#cues-columns), [when to state a scene cue](#when-to-state-a-scene-cue) |
-| Voice | [Explain before you slogan](#explain-before-you-slogan), [plain language](#plain-language-no-assumed-linguistics) |
 | Examples / tables | [House cast](#house-cast), [Tables](#tables) ([citation in tables](#citation-in-tables)) |
 | Scope | [Cross-links](#cross-links-and-scope), [what belongs where](#what-belongs-where) |
 | Ship check | [Stage checklist](#stage-checklist) |
@@ -163,17 +163,13 @@ Do **not** keep a heading whose only job is to say there is nothing here. Learne
 
 **Bounce notes are empty stages.** Do not open a page with `## Beginner` (or a lead before the first stage heading) that only says “nothing here / come back when you are ready for Intermediate / this page is Advanced.” Omit the unused stage heading. A page that starts at Intermediate or Advanced is fine; the sidebar path already skips missing stages. Do not duplicate the same recap (“house rules,” writing-style bullets) in a later stage just to fill Advanced.
 
-## Punctuation
-
-Prefer commas, colons, parentheses, or separate sentences over em dashes. An em dash is allowed only when a sentence genuinely needs a strong break; do not use it as default clause glue.
-
 ## Page skeleton
 <a id="page-skeleton"></a>
 
 1. **Title + one-line job** — the English job this page teaches (learner-facing). Sibling links only when the learner will reach for that form *now* — [Compare with](#compare-with), not “this page owns / does not own” fencing.
 2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → extra nouns + **`darl`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
 3. **`## Beginner` / `## Intermediate` / `## Advanced`** — per [learning-levels.md](learning-levels.md). Include **Advanced** only when that page has rare inventory to teach ([empty or pointless stages](#empty-stages)).
-4. Inside each stage: **concept → English job → Agalan shape → one consequence → 1–3 examples → (optional contrast) → full table if needed**. Cue in the same block or in the **Cue** column, not as the lead. Inside **Beginner**, H3 order is **dependency order for this page’s job** ([Beginner stage shape](#beginner-stage-shape)), not inventory order. On clause pages that is building a clause; citation notes are last (or already taught on [reference-suffix.md](../grammar/reference-suffix.md)). Later stages: [Intermediate and Advanced stage shape](#later-stage-shape). [Explain before you slogan](#explain-before-you-slogan).
+4. Inside each stage: **concept → English job → Agalan shape → one consequence → 1–3 examples → (optional contrast) → full table if needed**. Cue in the same block or in the **Cue** column, not as the lead. Inside **Beginner**, H3 order is **dependency order for this page’s job** ([Beginner stage shape](#beginner-stage-shape)), not inventory order. On clause pages that is building a clause; citation notes are last (or already taught on [reference-suffix.md](../grammar/reference-suffix.md)). Later stages: [Intermediate and Advanced stage shape](#later-stage-shape). [Explain before you slogan](doc-style.md#explain-before-you-slogan).
 5. Optional **See also** at the end — a few precise related forms only; no long link walls in the lead (and no lead preview of later peers — [teach now; don’t preview later](#teach-now-dont-preview-later)).
 
 Front matter that orients (psychological purpose / limits / feature criteria / benefit tour — [why-agelan.md](../grammar/why-agelan.md); grammar design / how to learn — [introduction.md](../grammar/introduction.md)) is not a learning stage. Reading order lives in the path / sidebar — not repeated as Prerequisites.
@@ -236,8 +232,8 @@ Do **not** rerun [Beginner stage shape](#beginner-stage-shape) on later stages. 
 | Apply | Do not apply |
 |-------|----------------|
 | Hygiene and [Compare with](#compare-with) starters | Smallest-clause-first page architecture |
-| [Explain before you slogan](#explain-before-you-slogan) on **new-job** leads | Mandatory cue per inventory cell |
-| [Plain language](#plain-language-no-assumed-linguistics) for **new** labels this stage introduces | Re-gloss house shorthand Beginner already unpacked (*job*, *point*, *setting*, *body*) |
+| [Explain before you slogan](doc-style.md#explain-before-you-slogan) on **new-job** leads | Mandatory cue per inventory cell |
+| [Plain language](doc-style.md#plain-language-no-assumed-linguistics) for **new** labels this stage introduces | Re-gloss house shorthand Beginner already unpacked (*job*, *point*, *setting*, *body*) |
 | **Cue** column on vowel / ending maps | Two-to-four-sentence hard length on every lead |
 | Intermediate must not teaser Advanced ([teach now](#teach-now-dont-preview-later)); naming a Beginner form by its taught name is fine | Kitchen-sink ban — later examples may stack subsystems |
 
@@ -313,7 +309,7 @@ A **scene** cue (`emoji *literal*: why`) is for remembering a published picture.
 
 Letter / series / ending cues (`**a** ≈ add`, **m** ≈ abstract) are the other kind; they follow [two kinds of cue](#cue-rubric) and are not this overlay-vs-lexicon split.
 
-Do not invent a second cue system beside metaphor, vowels, and endings when those already explain the form. **Do not use the cue as the definition:** teach **Use** and the Agalan shape first ([explain before you slogan](#explain-before-you-slogan)).
+Do not invent a second cue system beside metaphor, vowels, and endings when those already explain the form. **Do not use the cue as the definition:** teach **Use** and the Agalan shape first ([explain before you slogan](doc-style.md#explain-before-you-slogan)).
 
 Do **not** paste a legend (“**Use** is the rule…”) on every grammar page. [How to learn](../grammar/introduction.md#how-to-learn) owns that explanation once.
 
@@ -324,98 +320,6 @@ Usual sources (prefer one; reuse the language’s own systems):
 | **Concrete / abstract (lexicon)** | Closed roots and overlays (**`SAME`**, **`MAY`**, ➡️ *east*: the sun’s path, so the talk moves on) |
 | **Vowel series** | Join / speech act / polar stacks that share letter jobs |
 | **Ending letters** | **-l** / **-m** / **-n** / **-r** (and stance endings) when the ending *is* the lesson |
-
-## Voice and length
-
-- Address the learner in second person (“use **-r** when…”, “prefer names when…”). That *you* is English pedagogy — not Agalan **`edone`**.
-- Teaching stages do not use maintainer *we* (“we now write…”) or author *I*. Author *I* is allowed only on signed non-teaching prose in this folder (acknowledgments; the purpose / limits essay), not on rule pages.
-- One idea per H2/H3. On a **new job**, the first paragraph should be one **complete** explanation: English job, Agalan shape, and what that lets the learner do ([explain before you slogan](#explain-before-you-slogan)). That is the same bar as the [easy-to-use feature criterion](../grammar/why-agelan.md#criterion-for-features) (roughly one paragraph plus a couple of examples), not a one-sentence aphorism. A later-stage H3 that only finishes a series may be a short pointer plus a table ([later-stage shape](#later-stage-shape)).
-- Prefer short paragraphs plus a table over a wall of prose.
-- Bold sparingly; put Agalan forms in backticks (`jal`, **-r**, `/ɡ/`).
-- Always call the language **Agalan**. Community / project URLs that still use a legacy host path are fine when they are the real link; do not “fix” them in learner prose.
-
-## Explain before you slogan
-<a id="explain-before-you-slogan"></a>
-
-Brevity means **no filler**, not **maximum claims per clause**. A Beginner lead may take **two to four short sentences** before the first example. One sentence is allowed only when job, shape, and consequence are already obvious from the previous H3. Later-stage **new-job** leads use the same unpacking (no hard sentence count). Later-stage **finish-the-series** leads may be one pointer sentence before the table.
-
-**Teach in this order inside the lead** (same as [Teach in this order](#teach-in-this-order), enforced inside the first paragraph):
-
-1. **English job** — what the learner is trying to say, in school-grammar English.
-2. **Agalan shape** — which letter, ending, or slot does that job, and where it sits.
-3. **Consequence** — what they may now do that English does not (reordering, omitting a word, attaching a clause).
-4. **Cue last** — letter puns, emoji scenes, and [English pictures](#unpack-english-pictures) are **after the rule**, never the definition.
-
-Do not merge (1)–(3) into a copula slogan (*X is Y*) or a packed imperative (*do A so that B*) until those three pieces have been said in ordinary English.
-
-| Smell | Why it fails | Prefer |
-|-------|--------------|--------|
-| Copula slogan: “the role letter is the job” | Equates a letter with an abstract label; never says *what you read off the letter* | “The first letter of the word tells you its role (subject, verb, …). Change only that letter when the same meaning plays a different role.” |
-| Packed prominence: “Put first what you want heard as the point” | “Point” is undefined; also smuggles free word order | First: roles stay on the letters, so order is free. Then: the leftmost content word is what you highlight (what the sentence is “about,” or the new information). |
-| Cue as definition: “**d** = done to” in the rule sentence | The pun is memorable only after “acted on” is taught | Teach *direct object = who or what is acted on*, then `(cue: **d** ≈ done to)`. |
-| Label = explanation: “The **boundary** is **`darl`**.” | Names the form without saying what a boundary *does* | “The main sentence stops after **`darl`**; the next full sentence is the content that **`darl`** stands for.” |
-| Omission as slogan: “**Leave `jal` out** when a period already marks a statement” | Assumes they know why `jal` exists | “A period already means ‘this is a statement,’ so you do not also write the statement word **`jal`**.” |
-
-**Test (slogan test):** cover the example block. Could a careful adult who has never opened this repo restate the rule in their own words from the lead alone? If they would have to guess what “job,” “point,” “setting,” or “body” means, unpack those words in the lead. A cue in parentheses does not count as unpacking. On Intermediate / Advanced **new-job** leads, they may already know Beginner terms; they must still get the **new** choice from the lead. Skip this test on finish-the-series tables.
-
-**Test (one new move):** the sentence that introduces a *new* choice (reorder, omit, attach) should not also introduce a new metaphor or a new technical noun. Split it.
-
-Do **not** pad with throat-clearing (“In this section we will…”, “It is important to note…”). Extra sentences must add **mechanism or consequence**, not warmth.
-
-Tables may stay telegraphic (**Agalan · Use · English · Same root as · Cue**). Running prose may not.
-
-### Unpack English pictures
-<a id="unpack-english-pictures"></a>
-
-A picture in the teaching English (weather, law, climate, theater, gears) is a **cue**, not the rule. State the English job in school words first. Then the picture may follow, in the same breath or in **Cue**.
-
-Do **not** let the picture stand in for the contrast. Cover the image words: the leftover must still name both sides of the split.
-
-| Smell | Why it fails | Prefer |
-|-------|--------------|--------|
-| “Habitual *always* stays a weather report rather than a law of nature.” | *Weather report* / *law of nature* are undefined vehicles; *stays* is writer fencing | “Habitual *always* is the usual pattern (exceptions expected), not something that must happen, and not an ought.” Then, if useful: `(cue: usual weather, not a law of nature).` |
-| “Universal claims are **weather reports**.” as the first teaching sentence | Equates the mood with the picture before *usually* vs *by natural necessity* | Name COMMON vs NATURAL (or *usually* vs *must happen that way*) first; then the climate picture |
-| New picture in the same sentence as a new choice | [one new move](#explain-before-you-slogan) | Split: job, then picture |
-
-**Test (cover the picture):** delete the metaphor nouns. Could they still restate the split? If not, unpack first.
-
-Allowed: published-root scenes in **Cue**; [conceptual metaphors](../grammar/why-agelan.md#conceptual-metaphors) after the job is named; one short `(cue: …)` after the plain rule.
-
-### House shorthand needs a first-use gloss
-<a id="house-shorthand"></a>
-
-[Plain language](#plain-language-no-assumed-linguistics) already requires glossing invented labels (*turn*, *role letter*, *speech act*). The same rule applies to **house shorthand that looks like ordinary English**. If the heading or table column uses the short word, the first teaching sentence must still say it in longer English once.
-
-| Short word | Unpack on first use as |
-|------------|------------------------|
-| **job** | role in the clause (subject, verb, …). Table header **Use** is the same idea; do not re-gloss the column name on every page ([How to learn](../grammar/introduction.md#cues)) |
-| **Cue** | memory aid; defined once in How to learn — not unpacked in each table |
-| **Same root as** | everyday kind of that root (citation **-l**); defined once in How to learn — not a second **English** column |
-| **point** / **prominence** | what comes first for emphasis (what the sentence is “about,” or the new information) |
-| **setting** | statement vs question vs command |
-| **body** | the clause after any opening `/j/` words |
-| **glue** / **linker** | sentence-to-sentence connective |
-
-Intermediate / Advanced **finish-the-series** inventories may stay denser once Beginner has unpacked the terms. A later-stage **new job** still glosses any **new** label on first use.
-
-## Plain language (no assumed linguistics)
-<a id="plain-language-no-assumed-linguistics"></a>
-
-Do **not** assume the reader knows linguistics jargon. Write for a motivated learner with ordinary school grammar (*subject*, *verb*, *adjective*), not for a linguistics seminar.
-
-| Do | Don’t |
-|----|--------|
-| Prefer everyday English for the job (*statement*, *ask*, *main clause*, *at the end of…*) | Lead with bare terms like *assertoric*, *illocution*, *matrix-final*, *predicative*, *prosody*, *paradigm* |
-| If a short technical label helps later cross-links, **define it in the same breath** on first use | Use the label alone and hope context teaches it |
-| **Define invented or uncommon labels before using them** (*turn*, *continue*, *speech act*, *polar stance*, *role letter*, *citation*): everyday English in the **same sentence as first use**. Same for [house shorthand](#house-shorthand) (*job*, *point*, *setting*, *body*, *linker*) | Use the label in an earlier section or as a bare heading, then gloss later; rely on [terminology.md](../grammar/terminology.md) as the first definition |
-| A heading may use that label only **after** the gloss, or the heading itself carries the gloss (*Turn (`/j/`): start a new speech move*) | Stack several undefined jargon words in one sentence (*recoverable*, *utterance*, *left-edge cluster* without a plain paraphrase) |
-| School-grammar words (*subject*, *direct object*, *adverb*) are fine when the English job is clear | Pack morphosyntax shorthand (*classification* without *is a kind*, *right-bound*, *adjunct*, *complement clause*) without a plain gloss |
-
-[terminology.md](../grammar/terminology.md) is a later lookup (via How to learn), not the first definition. Teaching pages do not assume the reader has opened it.
-
-**Test:** would a careful reader who never took a linguistics class still get the rule from the first paragraph and the example? If you hide the rest of the page, does the first sentence that contains an invented word still teach what that English word means? If not, rewrite the lead in plain words and demote the technical term to a parenthetical or a later Intermediate note.
-
-Section ids: [one current heading, one current id](#one-current-heading).
 
 ## Examples
 
@@ -526,7 +430,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 | How to use the form | Grammar doc body under **`docs/grammar/`** (tagged **Beginner** / **Intermediate** / **Advanced**) |
 | Gloss format | [glosses.md](glosses.md) |
 | Level rubric / reading order | [learning-levels.md](learning-levels.md) ([cross-doc path](learning-levels.md#cross-doc-path)) |
-| Doc prose / example style | This page ([Beginner stage shape](#beginner-stage-shape), [later-stage shape](#later-stage-shape), [cues](#cues-columns), [Compare with](#compare-with)) |
+| Doc content / teaching order | This page ([Beginner stage shape](#beginner-stage-shape), [later-stage shape](#later-stage-shape), [cues](#cues-columns), [Compare with](#compare-with)); wording and voice: [doc-style.md](doc-style.md) |
 | Goals / feature criteria | [why-agelan.md](../grammar/why-agelan.md) (psych); [introduction.md](../grammar/introduction.md) (grammar design, [cue tables](../grammar/introduction.md#cues)) |
 | Clause grammar (one clause, `/j/`) | [clause.md](../grammar/clause.md) |
 | Hosted relation catalog | [relations.md](../grammar/relations.md) |
@@ -545,7 +449,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 
 Before tagging a section **Beginner**, ask the [three questions](learning-levels.md#rubric-three-questions). Prefer the earlier stage when learners need the form to read ordinary examples. Dependency on another subsystem beats “feels hard.” Do not add Advanced for recap, unused-slot lists, bounce notes, or reminders — [empty or pointless stages](#empty-stages).
 
-Before shipping a **Beginner** stage, also check [Beginner stage shape](#beginner-stage-shape), [plain language](#plain-language-no-assumed-linguistics), [cues](#cues-columns) ([rubric](#cue-rubric)), and [explain before you slogan](#explain-before-you-slogan): invented terms and house shorthand defined on first use; lead unpacks job, shape, and consequence (slogan test); [English pictures](#unpack-english-pictures) after the split, never as the split; cue last, never as the definition, and never a caption of the emoji; first H3 is a usable form for that page (a clause on clause pages; letters or a citation on phonology / reference-suffix Beginner), not a leftover inventory table; no Intermediate teasers; drills cover the H3s (or the H3 is one-sentence setup for a drill).
+Before shipping a **Beginner** stage, also check [Beginner stage shape](#beginner-stage-shape), [plain language](doc-style.md#plain-language-no-assumed-linguistics), [cues](#cues-columns) ([rubric](#cue-rubric)), and [explain before you slogan](doc-style.md#explain-before-you-slogan): invented terms and house shorthand defined on first use; lead unpacks job, shape, and consequence (slogan test); [English pictures](doc-style.md#unpack-english-pictures) after the split, never as the split; cue last, never as the definition, and never a caption of the emoji; first H3 is a usable form for that page (a clause on clause pages; letters or a citation on phonology / reference-suffix Beginner), not a leftover inventory table; no Intermediate teasers; drills cover the H3s (or the H3 is one-sentence setup for a drill).
 
 Before shipping **Intermediate** or **Advanced**, check [later-stage shape](#later-stage-shape): each H3 is a new job, a finished series, or rare Advanced; new-job leads unpack; inventory H3s are a pointer plus a table; hygiene and [Compare with](#compare-with) still hold; no Beginner teasers of this stage, and Intermediate does not teaser Advanced; drills cover new jobs, not every inventory row.
 
@@ -563,4 +467,4 @@ VitePress does not render HTML comments. Use them for **editor-only** notes that
 <!-- Exception to house-cast: this block teaches speaker/listener specials, so `zugobon` is the point. -->
 ```
 
-Do **not** use `<!--@include: …-->` for notes — that is a VitePress include. Do not put the same note in visible parentheses, scare-quotes, or “for editors:” asides ([no process leftover](#no-process-or-corrective-leftover)). Folder-wide editor pedagogy still lives on this meta page; comments are for the **local** why, not a second style guide.
+Do **not** use `<!--@include: …-->` for notes — that is a VitePress include. Do not put the same note in visible parentheses, scare-quotes, or “for editors:” asides ([no process leftover](#no-process-or-corrective-leftover)). Folder-wide content and teaching policy lives on this meta page; wording and voice policy lives in [doc-style.md](doc-style.md). Comments are for the **local** why, not a second style guide.
