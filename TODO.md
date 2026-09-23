@@ -21,7 +21,6 @@ j should just be y, remind that y is never a vowel
 consider removing some emotion emojis
 consider moving overlay forms to the top of lexicon so they get preferential retying
 cool features: collective verbs/adjectives use plural
-role compounds continues take the role compound + rest of pronoun
 plurality on joins/hooks?
 apply numbers TODO first before other TODOs (there are several and some need human feedback)
 could some causation overlay inventories be replaced by restrictors or other joins/hooks/stand-ins?

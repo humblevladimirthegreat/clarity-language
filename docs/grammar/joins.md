@@ -398,8 +398,6 @@ Beginner already used single-item *just X* and standalone *nothing* / *everythin
 | **…en** (`zen` / …) | stock first | *X first* (stock) / *X, as usual* |
 | **…er** (`zer` / …) | unspecified ranked member | *preferably some X* / *X as a priority* |
 
-<!-- TODO: in table above, suggest  -->
-
 **Rank — standalone**
 
 Standalone **e** answers *who first* with no ranking (no favorite). Standalone **ue** answers *who last* with no ranking (no least, no veto). Closed **-l** is a fact about the set; open **-m** is a shrug.

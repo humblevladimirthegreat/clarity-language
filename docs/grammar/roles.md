@@ -36,6 +36,14 @@ Once the talk already has a matching event (*teaches*), **-r** on the same stem 
 >
 > "Azawan teaches. The one teaching sleeps."
 
+A role compound can also continue a pronoun. Keep its role-compound shape, use the event’s short resume prefix, and end in **-r**. In `vajul` (*sit*), the root prefix through the second vowel is **`aju`**. So `zaxajur` is subject **`z`** + doer role compound **`ax`** + that event prefix **`aju`** + pronoun **`-r`**.
+
+> `zazawan vajul. zaxajur vawalal.`
+>
+> z-Azawan | v-sit | z-←sit | v-walk
+>
+> "Azawan sits. The one sitting walks."
+
 ### The undergoer (`u`)
 
 English *the one seen* or *the one fought* names the person the event happens to. Use the same compound shape as the doer, but write **`u`** in the vowel slot. (cue: **u** ≈ undo (the one it happens to)) Non-resume is that role as a kind; **-r** is **this** undergoer of the latest matching event.
