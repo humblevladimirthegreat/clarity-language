@@ -12,7 +12,6 @@ consider making negatives clearer (stress?)
 final exam
 Prosody
 gloss overlay should indicate phrase structure and what modifies what
-numeric derivation doesn't use x (lexical) and add cues for why that number equates to meaning
 redo prescriptive values: conversation ID: a7a1672b-8763-4910-ba69-d8e8339e116c. Consider: Invited, Offered (unsolicited to satisfy need), Protective (unsolicited to avoid detract need)
 Cheat sheet for joins and hooks
 Define goodbye (assertiveness for meeting again? need met, name reminder?)
@@ -34,6 +33,7 @@ reconsider ending tables for https://main.d2xds94zsgwptg.amplifyapp.com/grammar/
 consider viewpoint laterals allowing non-person viewpoints (the car's left). Then clarify that the endings/resume applies to the viewpoint not the direction
 consider deleting join-extras and moving join-act verbs to joins and join-relations to relations.
 consider movingn speech acts from clause to vowel series (and renaming appropriately) or otherwise incorporating the vowel series chart more seamlessly into another series 
+do a style pass with Opus.
 
 ## Evidentiality / tense
 

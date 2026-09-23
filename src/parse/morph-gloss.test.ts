@@ -331,7 +331,11 @@ describe("compareMorphGloss", () => {
   });
 
   it("quasi numeric derivation is English", () => {
-    expectLine("zuhubun gonogoleberexrubul", "z-Uhubun | g-friend-x-quasi");
+    expectLine("zuhubun gonogoleberelrubul", "z-Uhubun | g-friend-l-quasi");
+  });
+
+  it("abstract numeric join is -m in the gloss", () => {
+    expectLine("zolovemrabal", "z-love-m-infinity");
   });
 });
 

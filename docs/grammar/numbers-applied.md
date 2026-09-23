@@ -380,7 +380,7 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bedurem g
 | coulomb | `azare` *coulomb* | `bazarem g+2` | `uruhu` *charge* |
 | radian | `ubane` *radian* | `bubanem g+1` | `erelo` *cycle* |
 
-**Related form:** normative Mine **`zuroron`** vs performance **`zugobon`** ([comparatives](comparatives.md#judgment-benchmarks)) is a judgment bar, not a unit. General **`ROOTx+1`** (*primary / singleton of a kind*) is [numeric derivation](numeric-derivation.md#scalar-digit-morphs), not an SI alias.
+**Related form:** normative Mine **`zuroron`** vs performance **`zugobon`** ([comparatives](comparatives.md#judgment-benchmarks)) is a judgment bar, not a unit. General **`ROOTl+1`** (*primary / singleton of a kind*) is [numeric derivation](numeric-derivation.md#scalar-digit-morphs), not an SI alias.
 
 ### Thresholds (single-item ranked)
 <a id="numeric-thresholds"></a>
@@ -460,6 +460,6 @@ A bare `/z/` (or other freestanding) **`…jo`** percent with no named whole is 
 ## See also
 
 - Number-word anatomy (markers, endings, exponents): [numbers.md](numbers.md)
-- Kind morphs (`ROOTxNUM`): [numeric-derivation.md](numeric-derivation.md)
+- Kind morphs (`ROOTlNUM`): [numeric-derivation.md](numeric-derivation.md)
 - Phrase fences behind ranges: [joins.md](joins.md)
 - Measured differentials on comparative scales: [comparatives.md](comparatives.md)

@@ -24,7 +24,7 @@ Usability depends on having **enough two- and three-syllable content roots** wit
 ## Non-goals
 
 - Changing how number words are **said** (`g+62` stays *gragudul*, not *agada*).
-- A new CSV column, overlay, or `ROOTxNUM` reading. Derivation already means essence / grain / …; this channel does not.
+- A new CSV column, overlay, or `ROOTlNUM` reading. Derivation already means essence / grain / …; this channel does not.
 - Encoding sign, ordinal vs scalar, `.`, `e`, or `%` as extra letters (those stay numeral grammar; chunk the digit string only).
 - Mixing letter-name recitation (`we` vs digit `wo`) into the peg. Names already use the opposite vowel; the mnemonic ignores vowels anyway.
 - Requiring a 000–999 (4-syllable) bank in v1.

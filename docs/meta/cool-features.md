@@ -202,7 +202,7 @@ The vocabulary of r/ClarityLanguage is going to be as neutral as possible. Inste
 
 /r/ClarityLanguage has a number system that has easy ways to indicate exponents and infinity, which creates fun ways to derive suffixes or words based on them. My favorites are:
 
-\-xrabu  \`1/∞\` \= infinitesimal of root, e.g. grain of truth
+\-lrabu  \`1/∞\` \= infinitesimal of root, e.g. grain of truth
 
 rebu \`\#1/∞\` \= the smallest ordinal, e.g. prototype/original
 

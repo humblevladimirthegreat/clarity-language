@@ -761,12 +761,12 @@ Both writings name the **same word**. Choose the surface by **job**: a numeral i
 | Job | Prefer | Why |
 |-----|--------|-----|
 | Free number in a clause slot | **shorthand** | `g+3`, `x#2`, `d_…` — numeral as numeral |
-| [Numeric derivation](numeric-derivation.md#numeric-derivation) / kind morph | **spelled CV** | `zolovexrabal`, not `zolovex+el` |
-| Inventory tables | **shorthand** | patterns like `ROOTx+e` are easy to scan |
+| [Numeric derivation](numeric-derivation.md#numeric-derivation) / kind morph | **spelled CV** | `zolovelrabal`, not `zolovel+el` |
+| Inventory tables | **shorthand** | patterns like `ROOTl+e` are easy to scan |
 
 **Prefer shorthand** for counts, measures, ranks, ranges, thresholds (`zagadalx g+3`, `z+3 z+5 zel`); digit-strings / times / codes (`d_555,123,4567`, `h_15,30`); scientific / engineering register (`g+5.2e-4`, `g+e3`); compact agenda markers (`x#1`, `x#3e2`); and pages that teach the numeral system.
 
-**Prefer spelled CV** for anything after mid-word **`x`** on a content root (lexicon citation forms always spelled); kind morphs on a root; literary, sung, or long prose where `+` `#` `_` and second-slot `~`/`@`/`=` break word rhythm; and pronunciation teaching.
+**Prefer spelled CV** for anything after a lexical join (**-l** / **-m**) on a content root (lexicon citation forms always spelled); kind morphs on a root; literary, sung, or long prose where `+` `#` `_` and second-slot `~`/`@`/`=` break word rhythm; and pronunciation teaching.
 
 Write free numbers with second-slot marks or trailing letters consistently. Derived words use ordinary reference endings on the host with a fully spelled `NUM`.
 
@@ -1066,7 +1066,7 @@ A digit group may use **`ba`** or **`bu`** with **no** exponent digits. That emp
 
 **Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means no power digits after that mark: `g+e`, `g+1e`, `g+0e`, `g+e-`, `g+1e-`. Bare / assert **`e0`** writes power **`0`**: `g+e0`, `g+3e0` (not digitless).
 
-One such group only in the word. Marker identity still applies. Kind compounds may use digitless **`_`** as [infinite / landmark labels](numeric-derivation.md#infinite-labels) (`ROOTx_e`, `ROOTx_e-`, `ROOTx_1e`, …).
+One such group only in the word. Marker identity still applies. Kind compounds may use digitless **`_`** as [infinite / landmark labels](numeric-derivation.md#infinite-labels) (`ROOTl_e`, `ROOTl_e-`, `ROOTl_1e`, …).
 
 #### Special values — no mantissa
 
@@ -1165,7 +1165,7 @@ Under `/x/`, **last-place** **`x#e`** (and **`x~#e`** / **`x@#e`** / **`x=#e`**)
 <a id="zero-exponential"></a>
 <a id="annihilate"></a>
 
-**Related form:** kind morphs on a **ROOT** (`ROOTx+0e`, …) are in [numeric-derivation.md](numeric-derivation.md#zero-exponent-derivation). This section is the **free** number words: the same anatomy as standalone amounts / acts.
+**Related form:** kind morphs on a **ROOT** (`ROOTl+0e`, …) are in [numeric-derivation.md](numeric-derivation.md#zero-exponent-derivation). This section is the **free** number words: the same anatomy as standalone amounts / acts.
 
 Forms that pair **mantissa `0`** with an exponent (digitless or the engineering **`e-1`** pair). Soft / named / resume endings (**`~`** / **`@`** / **`=`**) apply as on other specials.
 
@@ -1233,18 +1233,18 @@ Mantissa **`0`** + digitless **`ba`** under forward ordinal **`re` / `#`**. Numb
 | **`h#0e`** | *for a disqualified / struck turn* |
 | **`j#0e`** | *Disqualified!* / *Rank wiped!* |
 
-Soft **-m** hedges (*near-disqualified*, …). Free twin of derivation **`ROOTx#0e`** — [numeric-derivation.md](numeric-derivation.md#rank-annihilated-morph).
+Soft **-m** hedges (*near-disqualified*, …). Free twin of derivation **`ROOTl#0e`** — [numeric-derivation.md](numeric-derivation.md#rank-annihilated-morph).
 
 ##### Free vs derived
 
 | Free | Derived (spelled) | Contrast |
 |------|---------|----------|
-| **`v+0el`** | **`vodoboxrazobal`** | hostless *annihilate* vs *annihilate-the-score* (kind) |
-| **`g+0e`** | **`zedudaxrazobal`** | absolute-zero amount vs total-null credit-kind |
-| **`g+0e-1`** | **`zedudaxrabuwojazol`** | deci-null amount vs kind nullified at OoM −1 |
-| **`g-0e-1`** | **`zedudaxrubuwojazol`** | deci-residue amount vs kind residue at OoM −1 |
-| **`g#0e`** | **`zolonaxrezobal`** | disqualified place vs disqualified-*kind* |
-| **`v+0l`** | **`vodoboxrazol`** | ordinary zeroing / null-reset — weaker than **`…+0e`** |
+| **`v+0el`** | **`vodobolrazobal`** | hostless *annihilate* vs *annihilate-the-score* (kind) |
+| **`g+0e`** | **`zedudalrazobal`** | absolute-zero amount vs total-null credit-kind |
+| **`g+0e-1`** | **`zedudalrabuwojazol`** | deci-null amount vs kind nullified at OoM −1 |
+| **`g-0e-1`** | **`zedudalrubuwojazol`** | deci-residue amount vs kind residue at OoM −1 |
+| **`g#0e`** | **`zolonalrezobal`** | disqualified place vs disqualified-*kind* |
+| **`v+0l`** | **`vodobolrazol`** | ordinary zeroing / null-reset — weaker than **`…+0e`** |
 
 Free **`g+e0`** / **`g+Ne0`** are bare OoM / OoM assert on free numbers, not kind derivation morphs. Engineering OoM-null is **`±0e-1`**.
 
@@ -1450,4 +1450,4 @@ j---e-
 - Phrase fences for ranges: [joins.md](joins.md)
 - Scalar comparison / measured differentials: [comparatives.md](comparatives.md)
 - Number-word phonotactics: [phonology.md](phonology.md)
-- Kind morphs (`ROOTxNUM`): [numeric-derivation.md](numeric-derivation.md)
+- Kind morphs (`ROOTlNUM`): [numeric-derivation.md](numeric-derivation.md)

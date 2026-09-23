@@ -564,12 +564,13 @@ ValueAbilityHost
     }
 
 NumericDerivation
-  = host:ContentRoot "x" stem:PoslessNumberStem ending:Ending plural:PluralSuffix? WordEnd {
+  = host:ContentRoot join:[lm] stem:PoslessNumberStem ending:Ending plural:PluralSuffix? WordEnd {
       return {
         ending,
         plural: !!plural,
         family: xFamily("numeric", {
           leftRoots: [host],
+          join,
           numberStem: stem,
         }),
       };

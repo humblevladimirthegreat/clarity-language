@@ -56,13 +56,13 @@ describe("inspectText", () => {
   });
 
   it("keeps a Peggy failure as an error token beside valid words", () => {
-    const result = inspectText("zazawan zolovex1l vawalal.", tables);
+    const result = inspectText("zazawan zolovexrabal vawalal.", tables);
     const kinds = result.tokens.map((token) => token.kind);
     assert.deepEqual(kinds, ["word", "error", "word", "punct"]);
     const err = result.tokens[1];
     assert.equal(err?.kind, "error");
     if (err?.kind !== "error") return;
-    assert.equal(err.raw, "zolovex1l");
+    assert.equal(err.raw, "zolovexrabal");
     assert.ok(err.error.message.length > 0);
     assert.equal(result.sentenceWarning, undefined);
   });

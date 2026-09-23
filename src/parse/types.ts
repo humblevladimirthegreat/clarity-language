@@ -77,6 +77,8 @@ export type MorphWordFamily =
       stanceVowel?: "a" | "e" | "o" | "u";
       /** Nested number stem (numeric derivation). */
       numberStem?: NumberStem;
+      /** Lexical join before a numeric stem (`l` everyday host, `m` abstract). */
+      join?: "l" | "m";
     }
   | { kind: "spanClose"; flavor: SpanCloseFlavor }
   | { kind: "hook"; form: string }

@@ -37,7 +37,7 @@ describe("isAgalanLintCandidate", () => {
     assert.equal(isAgalanLintCandidate("e"), true);
     assert.equal(isAgalanLintCandidate("z-dog"), false);
     assert.equal(isAgalanLintCandidate("z-Azawan"), false);
-    assert.equal(isAgalanLintCandidate("ROOTx-e-"), false);
+    assert.equal(isAgalanLintCandidate("ROOTl-e-"), false);
     assert.equal(isAgalanLintCandidate("…axul"), false);
     assert.equal(isAgalanLintCandidate("level"), false);
     assert.equal(isAgalanLintCandidate("x"), false);
@@ -98,7 +98,7 @@ describe("lintAgalanToken", () => {
     assert.equal(lintAgalanToken("would", tables), null);
     assert.equal(lintAgalanToken("dog", tables), null);
     assert.equal(lintAgalanToken("when", tables), null);
-    const illegal = lintAgalanToken("zolovex1l", tables);
+    const illegal = lintAgalanToken("zolovexrabal", tables);
     assert.equal(illegal?.kind, "parse");
   });
 
@@ -125,7 +125,7 @@ describe("lintAgalanMarkdown", () => {
       "human sees `zazawan` and `zububul`.",
       "",
       "```",
-      "zolovex1l",
+      "zolovexrabal",
       "```",
       "",
       "<!-- `zububun` -->",
@@ -134,7 +134,7 @@ describe("lintAgalanMarkdown", () => {
     const issues = lintAgalanMarkdown(text, tables);
     assert.deepEqual(
       issues.map((i) => `${i.kind}:${i.token}`),
-      ["unknown-root:zububul", "parse:zolovex1l"],
+      ["unknown-root:zububul", "parse:zolovexrabal"],
     );
   });
 });

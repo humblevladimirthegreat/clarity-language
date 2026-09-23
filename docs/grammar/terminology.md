@@ -51,7 +51,7 @@ Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#a
 | **UNCOUNTERED** | Universality: no counterexample comes to mind | [Special vocabulary](special-vocabulary.md#universality) |
 | **WITNESSED** | Evidential: firsthand memory (reconstructive) | [Knowing](knowing.md#live-vs-memory) |
 
-**Compare with:** [imaginary](#digitless-exponent) (free-number `-e-`) and [quasi](#quasi) (`ROOTx-e-`) are not **NOTIONAL**.
+**Compare with:** [imaginary](#digitless-exponent) (free-number `-e-`) and [quasi](#quasi) (`ROOTl-e-`) are not **NOTIONAL**.
 
 ### Join-vowel names
 
@@ -297,7 +297,7 @@ Advanced free-number specials (`+e`, `-e-`, `+0e`, …). **Imaginary** is free `
 
 [Numbers](numbers.md#digitless-exponents), [imaginary](numbers.md#imaginary)
 
-**Compare with:** [quasi](#quasi) is derivation `ROOTx-e-`. **NOTIONAL** is the as-if [mood](#mood-tags), not a number.
+**Compare with:** [quasi](#quasi) is derivation `ROOTl-e-`. **NOTIONAL** is the as-if [mood](#mood-tags), not a number.
 
 ### Distributive
 
@@ -435,7 +435,7 @@ A named citation as a hello (`azawan.`). Mid-word **`x`** plus **`a`** / **`o`**
 
 ### Host
 
-Content root an `x`-stance or numeric derivation attaches to.
+Content root a values/ability `x`-stance or a numeric-derivation join attaches to.
 
 [Ability](ability.md), [values](values.md), [numeric derivation](numeric-derivation.md)
 
@@ -549,7 +549,7 @@ Number problem / solution / goal candidates with free ordinals.
 
 ### Numeric derivation / quasi
 
-`ROOT x NUM`; **quasi** = `ROOTx-e-`.
+`ROOT` + join (**-l** / **-m**) + `NUM`; **quasi** = `ROOTl-e-` (abstract host: `ROOTm-e-`).
 
 [Numeric derivation](numeric-derivation.md)
 
@@ -601,7 +601,7 @@ Word-order highlighting (not join arity).
 
 ### Quasi
 
-Derivation `ROOTx-e-` (and quasi-N).
+Derivation `ROOTl-e-` (and quasi-N).
 
 [Numeric derivation](numeric-derivation.md#quasi)
 

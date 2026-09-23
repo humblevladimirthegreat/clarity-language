@@ -110,7 +110,7 @@ State the **positive** rule: which form to use for which English job. A “not Y
 
 Do not say a reading **stays on** another section, page, or subsystem — that is fencing for writers (“don’t reassign this”), not a cue for readers. Same family as ownership fences (“this page owns / does not own X”) — [teach now; don’t preview later](#teach-now-dont-preview-later). This meta page may still use *stay* in editor English (*inventory stays in unassigned-reserved.md*). Grammar-page prose should not.
 
-**A contrast earns a place only when all three hold:** the learner would use the wrong form for **this** English *now* (English false friend, or an Agalan sibling they already met — `-x` vs **`aha`**, classification vs **`SAME`**, free `g+e` vs `ROOTx+e`, join **-r** vs content **-r**); both forms appear with a real example; and the beat fits in one or two labeled sentences after this form’s example. Search, the sidebar, and **See also** already list related pages. Do **not** catalog siblings “in case they look them up,” expand a mix-up into a related-forms table, or restate the other doc.
+**A contrast earns a place only when all three hold:** the learner would use the wrong form for **this** English *now* (English false friend, or an Agalan sibling they already met — `-x` vs **`aha`**, classification vs **`SAME`**, free `g+e` vs `ROOTl+e`, join **-r** vs content **-r**); both forms appear with a real example; and the beat fits in one or two labeled sentences after this form’s example. Search, the sidebar, and **See also** already list related pages. Do **not** catalog siblings “in case they look them up,” expand a mix-up into a related-forms table, or restate the other doc.
 
 **Skip the negative when:** they would not invent the wrong form (editor-hygiene pairs like hyphenated PoS, ~~`z-ugobo`~~); it only restates the positive (“write one token” already implies no hyphen); or a section would get a ritual **Not this** column with nothing decisive to say. A strong positive example is enough when there is no sibling to compare.
 
@@ -484,7 +484,7 @@ Do **not** call `odogo` a citation. Overlay / need / linker / mood inventories u
 
 | Exception | Why | Example |
 |-----------|-----|---------|
-| Not a content root | Letters, IPA, role letters, vowel-series cells, ending / stance slots, number formulas, shape templates | `/z/`; **`a`**; **`xa`**; `…xal`; `g+e`; `ROOTx+1`; “full root **`x`** full root” |
+| Not a content root | Letters, IPA, role letters, vowel-series cells, ending / stance slots, number formulas, shape templates | `/z/`; **`a`**; **`xa`**; `…xal`; `g+e`; `ROOTl+1`; “full root **`x`** full root” |
 | Inner piece of an **`x`** word | That piece has **no ending of its own**; a citation there invites a stranded inner suffix | Bank `uvugu` only if the cell is the event after **`ax`**; prefer the whole word `zaxuvugul` |
 | Naming the constant while endings are the lesson | Prose may say “the same root `azawa`”; the **table** still lists citations | `azawal` / `azawam` / `azawan` in the ending table |
 | Editor matching keys | Lexicon CSVs, this page’s house-cast **Root** column, [example root bank](drill-generation.md#root-bank) token lists — not learner grammar tables | `data/lexicon-published.csv` stems |

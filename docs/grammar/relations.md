@@ -265,7 +265,7 @@ Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is locativ
 | **`howodom` / `gowodom`** | constitution | *made of* | `owodol` *wood* | 🪵: the stuff the thing is made of |
 | **`hugunom` / `gugunom`** | identity source / provenance | *from* (origin) | `ugunol` *country* | 🗾: a map of one country as where it comes from |
 
-**Compare with:** ownership is `goborul` + `/b/` ([joins](joins.md#scope-fence-p-join)). A [values](values.md) need on `/ɡ/` also means speaker possession. Place *inside* is `ogore`; path *from* is `ebaru` ([locative relations](#locative-relations)). *A house like Azawan’s* is [simile](#similative) (`gurorom`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`guhanem`). Portion *of* a class is [percent](numbers-applied.md#percent-denominators). Associates are plural **-x**, not meronymy. Kind *origin* (`ROOTx#e-`) is [numeric derivation](numeric-derivation.md), not this token *from*.
+**Compare with:** ownership is `goborul` + `/b/` ([joins](joins.md#scope-fence-p-join)). A [values](values.md) need on `/ɡ/` also means speaker possession. Place *inside* is `ogore`; path *from* is `ebaru` ([locative relations](#locative-relations)). *A house like Azawan’s* is [simile](#similative) (`gurorom`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`guhanem`). Portion *of* a class is [percent](numbers-applied.md#percent-denominators). Associates are plural **-x**, not meronymy. Kind *origin* (`ROOTl#e-`) is [numeric derivation](numeric-derivation.md), not this token *from*.
 
 
 

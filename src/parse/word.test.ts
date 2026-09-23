@@ -312,16 +312,26 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     });
   });
 
-  it("parses zolovexrabal as numeric derivation +e (numeric-derivation.md)", () => {
-    const word = parseOk("zolovexrabal");
+  it("parses zolovelrabal as numeric derivation +e (numeric-derivation.md)", () => {
+    const word = parseOk("zolovelrabal");
     assert.equal(word.pos, "z");
     assert.equal(word.ending, "l");
     assert.deepEqual(word.family, {
       kind: "x",
       xFamily: "numeric",
       leftRoots: ["olove"],
+      join: "l",
       numberStem: { marker: "+", groups: [], digitlessExp: "e" },
     });
+  });
+
+  it("parses zolovemrabal as numeric derivation with abstract join -m", () => {
+    const word = parseOk("zolovemrabal");
+    assert.equal(word.family.kind, "x");
+    if (word.family.kind === "x") {
+      assert.equal(word.family.join, "m");
+      assert.equal(word.family.xFamily, "numeric");
+    }
   });
 
   it("parses zal as a join marker, not content (joins.md)", () => {
@@ -391,7 +401,7 @@ describe("parseWord — illegal shapes", () => {
     assert.throws(() => parseWord("Zazawan"), WordParseError);
   });
 
-  it("rejects ROOTx1 with no number marker (numeric-derivation.md)", () => {
-    assert.throws(() => parseWord("zolovex1l"), WordParseError);
+  it("rejects ROOT l 1 with no number marker (numeric-derivation.md)", () => {
+    assert.throws(() => parseWord("zolovel1l"), WordParseError);
   });
 });

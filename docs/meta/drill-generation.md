@@ -342,7 +342,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 17 | `intention.md` | Advanced | **exists** | PLAN / PREDICT against *as-of*; DECISION speech-now | Recycle relations Advanced |
 | 17 | `special-vocabulary.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value); numbered alternatives `uzebum`/`agegom`/`olalal` + `g#N` | Overlay *inventory* is not a drill. **Needs** values Beginner (recycle). Not universality (Advanced) |
 | 17 | `special-vocabulary.md` | Advanced | **exists** | Universality (`ugudo` / `abulu` / …) as taught in this stage | 4–6 items |
-| 18 | `numeric-derivation.md` | Advanced | **exists** | `ROOT x NUM` as the stage teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
+| 18 | `numeric-derivation.md` | Advanced | **exists** | `ROOT l NUM` as the stage teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
 
 ## Leak index
 <a id="leak-index"></a>
@@ -386,7 +386,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | **DECISION** | `intention.md` Intermediate |
 | Emotion compose; numbered alternatives | `special-vocabulary.md` Intermediate |
 | Judgment **Mine** **`zuroron`** | `comparatives.md` Advanced |
-| `ROOT x NUM` derivation | `numeric-derivation.md` Advanced |
+| `ROOT l NUM` derivation | `numeric-derivation.md` Advanced |
 | Universality overlays | `special-vocabulary.md` Advanced |
 
 **`jol`** yes/no with a house-name subject is core Beginner. **`jol zar …`** fill-ask is questions Beginner (needs joins unspecified **-r**).

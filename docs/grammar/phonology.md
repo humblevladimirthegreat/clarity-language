@@ -161,12 +161,12 @@ These shape choices keep ordinary singing easier:
 | One vowel per letter | Sliding from one vowel to another mid-note forces the mouth to change | Stacked letters = separate syllables (`juon` = *ju'on*) |
 | Few consonant clusters | Clusters are harder to say quickly | Ordinary shape is consonant-then-vowel at the start of a syllable; limited clusters below |
 | Voiced preferred | Voiceless stops cut the note; singers often voice them anyway | Voiced preferred; unvoiced allowed as style only |
-| No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the **word edge**, or cited **-l** / **-m** before a fused extra-noun hook |
+| No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the **word edge**, cited **-l** / **-m** before a fused extra-noun hook, or a lexical join (**-l** / **-m**) before a number marker `r` |
 | No lexical stress | Music already places emphasis | Rhythm may stress a beat; spelling does not encode stress |
 | Spelling = pronunciation | You do not memorize special readings | One path from letters to sound |
 | Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-r` (optional `-x`); stand-ins end in `-rl` / `-rm` |
 
-Legal clusters: left-hanging `gl-`; number-word role letter + `r`; word-final `-lx` / `-mx` / `-nx` / `-rx`; stand-in `-rl` / `-rm`; cited **-l** / **-m** plus extra-noun hook vowels (`…lalul`).
+Legal clusters: left-hanging `gl-`; number-word role letter + `r`; lexical join **-l** / **-m** plus number marker `r` on a [kind morph](numeric-derivation.md) (`…lraba…` / `…mraba…`); word-final `-lx` / `-mx` / `-nx` / `-rx`; stand-in `-rl` / `-rm`; cited **-l** / **-m** plus extra-noun hook vowels (`…lalul`).
 
 Try a short Agalan line quickly at a high comfortable pitch:
 

@@ -48,7 +48,7 @@ Source: [numbers.md](../grammar/numbers.md), [numeric-derivation.md](../grammar/
 - No-mantissa digitless-exp beyond start/last/notional: **`x+e`**, **`x-e`**, … (notional **`x-e-`** is defined)
 - Digitless-exp on end-relative marker **`#-`** / **`reu`**
 - Zero×exp under `/x/` (discourse nesting uses [generation](../grammar/numbers.md#ordinal-generation))
-- Ordinal zero×digitless under `/x/` (free twin of derivation **`ROOTx#0e`** is defined on other hosts)
+- Ordinal zero×digitless under `/x/` (free twin of derivation **`ROOTl#0e`** is defined on other hosts)
 
 ### Digitless-exp / hyperbole on `#-`
 
@@ -64,13 +64,13 @@ Source: [numeric-derivation.md](../grammar/numeric-derivation.md)
 
 | Shape | Note |
 |-------|------|
-| **`ROOTx+e0`** | Kind twin of free ones-band **`g+e0`** |
-| **`ROOTx+0e0`** | Kind twin of free **`…0e0`** |
-| **`ROOTx+Ne0`** | Kind twin of free scale-assert **`Ne0`** |
-| **`ROOTx#0e0`** / free **`#0e0`** | Ordinal morph |
-| **`ROOTx±0eN`** for **`N≠1`** | Only **`±0e-1`** assigned |
-| **`ROOTx-e-0`** | Undefined — use **`ROOTx-0`** (anti-null) or **`ROOTx-0e-`** (micro-residue) |
-| **`ROOTx-e-3`…`-e-9`** | Out of quasi morph set — prefer bare **`ROOTx-e-`** or ordinary wording |
+| **`ROOTl+e0`** | Kind twin of free ones-band **`g+e0`** |
+| **`ROOTl+0e0`** | Kind twin of free **`…0e0`** |
+| **`ROOTl+Ne0`** | Kind twin of free scale-assert **`Ne0`** |
+| **`ROOTl#0e0`** / free **`#0e0`** | Ordinal morph |
+| **`ROOTl±0eN`** for **`N≠1`** | Only **`±0e-1`** assigned |
+| **`ROOTl-e-0`** | Undefined — use **`ROOTl-0`** (anti-null) or **`ROOTl-0e-`** (micro-residue) |
+| **`ROOTl-e-3`…`-e-9`** | Out of quasi morph set — prefer bare **`ROOTl-e-`** or ordinary wording |
 
 ## Restrictors (`/h/` / `/w/`)
 

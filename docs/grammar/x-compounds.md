@@ -40,7 +40,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 
 English *bedroom*, *doorbell*, and *friend* feel like one word. Agalan lists those as **one dictionary word** too. You look the word up. You do not make it on the spot by putting **`x`** between *bed* and *house*.
 
-Inside the dictionary spelling you can still see the two old roots, with a join letter (**l** / **m** / **n** / **r**) instead of **`x`**. That letter is part of the entry (usually **-l**). In a sentence you add a role letter and an ending on the **whole** word, the same way you do for *dog* or *hammer*.
+Inside the dictionary spelling you can still see the two old roots, with a join letter instead of **`x`**. That letter is the [reference suffix](reference-suffix.md) of the **left** root: **-l** when that piece is the everyday kind, **-m** when it is the published abstract sense (named **-n** or resume **-r** if that left piece is a name or a resume). The last letter of the word is still the ending of the **whole** entry. In a sentence you add a role letter and that whole-word ending, the same way you do for *dog* or *hammer*.
 
 > `zabedelohohul.`
 >
@@ -50,10 +50,11 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `zabedelohohul` | bed **-l** house | bedroom | look it up |
-| `zadorolobelel` | door **-l** bell | doorbell | look it up |
-| `zonogoleberel` | bond **-l** person | friend | look it up |
-| `zanunulojal` | rain **-l** coat | raincoat | look it up |
+| `zabedelohohul` | bed **-l** house | bedroom | left piece everyday |
+| `zadorolobelel` | door **-l** bell | doorbell | left piece everyday |
+| `zonogoleberel` | bond **-l** person | friend | left piece everyday |
+| `zanunulojal` | rain **-l** coat | raincoat | left piece everyday |
+| `…m…` | left root in its [abstract](reference-suffix.md#abstract-m) sense | same two roots, join **-m** | **m** ≈ meaning |
 
 If the pairing is not in the dictionary, either glue with **`x`** (`zabanuxudel` *peanut butter*) or use two words. Extra-noun *enter* / *leave* fused onto a citation is a [hook compound](hooks.md#hook-compounds) (`awalalul`), not this two-root join.
 
@@ -254,10 +255,9 @@ Beginner already used two roots glued with **`x`**, dictionary words with no **`
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxedegel` *a teacher* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
 | name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (hello or calling) | [greeting bid](#greeting-bid) | `azawaxan`; `jululoxen` | vowel on the name |
 | longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) (on a need) or [ability](ability.md#ability) (on another host) | `vuzunuxel` | extra vowel after the host |
-| longer root **`x`** a [number](numbers.md) (no ending of its own) | [numeric derivation](numeric-derivation.md#numeric-derivation) | `…x+1…` / speech `…xraba…` | number on the right |
 | full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zabanuxudel`; `gewezexazawan` *Azawan’s left* ([whose left](roles.md#viewpoint-laterals)); `zodunaxalanen` ([multipart names](reference-suffix.md#phrasal-proper-names)) | **x** ≈ plus |
 
-A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`**, or **`u`** left of **`x`**, you are opening a span or naming a role (*teacher*), not gluing two full roots. Role compounds still put a full root **after** that vowel. Number pieces on the right follow number grammar; in a sentence you usually spell them with letters (`…xraba…`), not `+` and digits. See [writing style](numbers.md#writing-style-numeric-vs-spelled).
+A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`**, or **`u`** left of **`x`**, you are opening a span or naming a role (*teacher*), not gluing two full roots. Role compounds still put a full root **after** that vowel.
 
 ### Adding another piece
 <a id="ordinary-compound-order"></a>
@@ -290,7 +290,6 @@ Use the table above. Read both sides of the first **`x`** in this order:
 - After the role letter: one vowel **`a`** / **`e`** / **`u`** / **`o`**, **`x`**, then a longer root → a **role compound** (who does / where it happens / who undergoes / who is told).
 - A name (one root or a [multipart proper name](reference-suffix.md#phrasal-proper-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a hello or under **`/j/`** → a [greeting bid](#greeting-bid).
 - A longer root, then **`x`**, then a single vowel **`a`** / **`e`** / **`o`** / **`u`** → **values** (on a need: `/ɡ/` if you keep the noun, `/w/` immediately before **`gobobum`** if you do not) or **ability** (on another host).
-- A longer root, then **`x`**, then a **number** (writing **`+`** / **`-`** / **`#`** / **`_`**; speech starts with **`r`**) → [numeric derivation](numeric-derivation.md#numeric-derivation).
 - Full roots on **both** sides of the first **`x`** (and maybe more **`x`** + root) → an ordinary compound (sense or name).
 
 Role vowels are **`a`** / **`e`** / **`u`** / **`o`**. Span type and edge letters stay single vowels.

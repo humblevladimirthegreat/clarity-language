@@ -312,6 +312,11 @@ export function senseLabel(
   tables: ClassifyTables,
   ctx: MorphGlossContext = {},
 ): string {
+  if (word.family.kind === "x" && word.family.xFamily === "numeric") {
+    const body = sensePieces(word, tables, ctx).join(`-${word.family.join ?? "l"}-`);
+    if (word.plural) return body ? `${body}-x` : "-x";
+    return body;
+  }
   const body = sensePieces(word, tables, ctx).join("-x-");
   if (word.plural) return body ? `${body}-x` : "-x";
   return body;
