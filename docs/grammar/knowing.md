@@ -362,27 +362,27 @@ English sometimes frames the whole clause as play: *as if*, *for the sake of arg
 ### Hold endings (NOTIONAL)
 <a id="notional-hold"></a>
 
-Beginner already used **-l / -m / -r** on **MAY** for *I'll find out* / default *may* / *who knows*. **NOTIONAL** reuses those letters for **play**, not for that stance: light / immersed / mask off. **-n** is ordinary [proper](word-endings.md#proper-name--n).
+You can imagine a scene to explore what might follow, picture it without a special purpose, or rehearse it to prepare for doing it. **NOTIONAL** keeps the clause in that imagined frame; its ending says why you are using the frame. Beginner already used **-l / -m / -r** on **MAY** for *I'll find out* / default *may* / *who knows*. Here the same endings mark explore / imagine / rehearse. **-n** is ordinary [proper](word-endings.md#proper-name--n).
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hadadem`** | as-if noticed, held lightly (default) | *as if* (soft) | `adadel` *theater* | 🎭: mask at arm’s length |
-| **`hadadel`** | immersed in the imagined scene | *as if* (fused) | `adadel` *theater* | 🎭: mask on |
-| **`hadader`** | same as-if and a step back toward bare contact | *as if — and step back* | `adadel` *theater* | 🎭: mask off |
+| **`hadadel`** | explore a possibility or assumption | *suppose…* / *what if…?* | `adadel` *theater* | 🎭: try out a scene |
+| **`hadadem`** | imagine a scene without a further purpose (default) | *imagine…* / *as if…* | `adadel` *theater* | 🎭: picture a scene |
+| **`hadader`** | rehearse a possible scene to prepare for action | *let’s practice…* / *try acting as if…* | `adadel` *theater* | 🎭: practice a scene |
 
 When you are not sure, use **`hadadem`**.
 
-> `zuhubun hadadel vuzunul.`
+> `zazawan hadadel vuwurul.`
 >
-> z-Uhubun | h-NOTIONAL-fused | v-sing
+> z-Azawan | h-NOTIONAL-explore | v-write
 >
-> "As if Uhubun sings." — immersed in the imagined scene
+> "Suppose Azawan writes." — exploring an assumption
 
-> `zululon hadader vuwurul.`
+> `zuhubun hadader vuzunul.`
 >
-> z-Ululon | h-NOTIONAL-return | v-write
+> z-Uhubun | h-NOTIONAL-rehearse | v-sing
 >
-> "As if Ululon writes — and step back toward contact."
+> "Uhubun practices singing." — rehearsing the imagined scene
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -479,12 +479,12 @@ z-Ululon | h-INFERRED | v-punch | d-Azawan
 z-Azawan | h-NOTIONAL | v-tell | b-Uhubun
 :::
 
-**8.** *As if Ululon screams.* (immersed in the imagined scene)
+**8.** *Imagine Ululon screaming.* (no special purpose)
 
 ::: details Show answer
-`zululon hadadel vazagal.`
+`zululon hadadem vazagal.`
 
-z-Ululon | h-NOTIONAL-fused | v-scream
+z-Ululon | h-NOTIONAL | v-scream
 :::
 
 **9.** *Azawan tells Uhubun — live; the telling still counts.*
@@ -532,13 +532,13 @@ z-Uhubun | h-INFERRED | v-mute
 *Uhubun mutes — inferred from clues.*
 :::
 
-**4.** `zazawan hadader vuwurul.`
+**4.** `zuhubun hadader vuzunul.`
 
 ::: details Show answer
 
-z-Azawan | h-NOTIONAL-return | v-write
+z-Uhubun | h-NOTIONAL-rehearse | v-sing
 
-*As if Azawan writes — and step back toward contact.*
+*Uhubun practices singing.*
 :::
 
 **5.** `zululon heregom vejel dameral.`
