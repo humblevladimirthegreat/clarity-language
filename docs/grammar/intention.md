@@ -1,7 +1,7 @@
 # Intention
 <a id="intention"></a>
 
-English *will* and *going to* can mean **intention** (the course someone means to take) or a **forecast** (what you think will happen later in the world). Agalan splits those into two closed mood words: special `/h/` words that frame the whole clause rather than naming a need. Put the mood word first (floating `/h/`), then write an ordinary content verb. You can't actually know the future, so this distinction helps you be more rational about claiming what is going to happen.
+English *will* and *going to* can describe either **intention** (the course someone means to take) or a **forecast** (what someone thinks will happen later). Agalan marks these meanings with special `/h/` words at the start of the clause, followed by an ordinary verb. The distinction lets you show whether you are describing someone's chosen course or making a claim about a future event.
 
 ## Beginner
 <a id="beginner"></a>
@@ -9,7 +9,7 @@ English *will* and *going to* can mean **intention** (the course someone means t
 ### Plan
 <a id="plan-predict"></a>
 
-To say what someone **means to do**, use the closed mood root **`emaba`**. Spell it as floating `/h/`: **`hemaba`** plus an ending, then the ordinary content verb (*walk*, *write*). That lets you mark intention without borrowing English *will*, which can also be a forecast. Prefer floating `/h/`; use `/w/` only when the mood frames the `/ɡ/` adjective it sits immediately before. (cue: 🗺️ *map*: a map charts a course you mean to take)
+To say what someone **means to do**, put **`hemaba`** before the ordinary verb, such as *walk* or *write*. The `/h/` marks the mood across the clause; the ending on **`hemaba`** says how fully the person has planned the course. This separates an intention from English *will* used as a forecast. (Cue: 🗺️ A map charts a course you mean to take.)
 
 > `zazawan hemabam vawalal.`
 >
@@ -48,7 +48,7 @@ Saying *I will* in English can hide whether you only intend a heading, you have 
 ### Predict
 <a id="predict"></a>
 
-To say **what will happen later** in the world (rain, a result), not what someone means to do, use the closed mood root **`elezo`**. Spell it as floating `/h/`: **`helezo`** plus an ending, then an ordinary content verb. Prefer **`helezom`** when you are not adding more. The event is always **after now**. A guess about something already true that you cannot see (where someone is, which card) is not this mood. (cue: 🔭 *telescope*: looks ahead at a distance)
+To predict a later event, such as rain or a result, put **`helezo`** before the ordinary verb. Use **`helezom`** as the default when you have nothing more to add. The event must be later than now; a guess about something already true but hidden, such as where someone is, uses a different pattern. (Cue: 🔭 A telescope looks ahead into the distance.)
 
 > `helezom vanunul.`
 >
@@ -227,7 +227,7 @@ h-predict | v-fight
 <a id="decision"></a>
 <a id="decision-mood"></a>
 
-English *decide* / *I've decided* / *final decision* folds **how locked the pick is** into the verb. Agalan uses one closed mood root instead: spell **`ehege`** as floating `/h/` (**`hehege`** plus an ending), then an ordinary content verb. The ending is how revisable the pick is (still open, settled, or only for now), so you can keep the same content verb and change only that ending. Prefer floating `/h/`; use `/w/` only when the mood frames the `/ɡ/` adjective it sits immediately before. (cue: ✅ *check*: a checkmark confirms a pick)
+To say that someone has decided to do something, put **`hehege`** before the ordinary verb. The ending on **`hehege`** tells you whether the decision is irreversible, still changeable, or temporary. You can keep the action the same and change only the ending to show how open the decision remains. (Cue: ✅ A checkmark confirms a choice.)
 
 Ordinary content is still available (`zehegel` *a checkmark*; `vehegel` *to check / tick*).
 
@@ -237,7 +237,7 @@ Ordinary content is still available (`zehegel` *a checkmark*; `vehegel` *to chec
 >
 > "Ululon has decided to sing, and can still change that."
 
-**Not the same job as:** [PLAN](#plan-predict) (how fully drawn the course is — how prepared you are). This mood marks how revisable the pick is.
+**Compare with PLAN:** [PLAN](#plan-predict) says how fully someone has planned a course of action. DECISION says how readily they may change their choice.
 
 #### Endings — changeability
 <a id="decision-changeability"></a>
@@ -261,7 +261,7 @@ You can stack this mood after [PLAN](#plan-predict) when the clause needs both m
 ### Forecast source
 <a id="predict-evidentiality"></a>
 
-When you mark **how** you forecast (a usual pattern, an inference, and so on), keep [PREDICT](#predict) and add an ordinary [evidentiality](knowing.md#evidentiality) `/h/` after it. The forecast mood still says what **will** happen later; the evidential says how you know.
+To say both that an event will happen later and how you reached that forecast, use [PREDICT](#predict) first, then add an [evidentiality](knowing.md#evidentiality) `/h/` word. PREDICT marks the later event; the evidential word tells whether the forecast comes from a usual pattern, an inference, or another source.
 
 > `helezom habawam vanunul.`
 >

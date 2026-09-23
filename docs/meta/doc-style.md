@@ -18,7 +18,7 @@ Prefer commas, colons, parentheses, or separate sentences over em dashes.
 ## Explain before you slogan
 <a id="explain-before-you-slogan"></a>
 
-Brevity means **no filler**, not **maximum claims per clause**. A Beginner lead may take **two to four short sentences** before the first example. One sentence is allowed only when job, shape, and consequence are already obvious from the previous H3. Later-stage **new-job** leads use the same unpacking (no hard sentence count). Later-stage **finish-the-series** leads may be one pointer sentence before the table.
+Brevity means **no filler**, not **maximum claims per clause**. Conciseness must not come at the cost of clarity: use a longer sentence when the shorter version depends on awkward phrasing to stay brief. A Beginner lead may take **two to four short sentences** before the first example. One sentence is allowed only when job, shape, and consequence are already obvious from the previous H3. Later-stage **new-job** leads use the same unpacking (no hard sentence count). Later-stage **finish-the-series** leads may be one pointer sentence before the table.
 
 **Teach in this order inside the lead** (same as [Teach in this order](grammar-docs.md#teach-in-this-order), enforced inside the first paragraph):
 

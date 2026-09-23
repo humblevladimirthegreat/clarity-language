@@ -30,7 +30,8 @@ reconsider ending tables for https://main.d2xds94zsgwptg.amplifyapp.com/grammar/
 consider viewpoint laterals allowing non-person viewpoints (the car's left). Then clarify that the endings/resume applies to the viewpoint not the direction
 consider deleting join-extras and moving join-act verbs to joins and join-relations to relations.
 consider moving speech acts from clause to vowel series (and renaming appropriately) or otherwise incorporating the vowel series chart more seamlessly into another series 
-do a style pass with Opus.
+do a style pass with Luna.
+do an example and translation pass
 
 ## Evidentiality / tense
 
