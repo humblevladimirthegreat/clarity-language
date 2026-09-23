@@ -226,11 +226,11 @@ loose: *You two — pick something playful!*
 
 **C:** `jum vawalal holozoxem.`
 
-gloss: `j-prohibition` · `v-walk` · `h-competence-ought-typical`
+gloss: `j-prohibition` · `v-walk` · `h-competence-ought-offered`
 
-strict: *Please don't walk — you ought to protect competence, as people typically want a move here.*
+strict: *Please don't walk — you ought to protect competence (offered).*
 
-loose: *Please don’t walk — stay able, as people typically want a move here.*
+loose: *Please don’t walk — stay able (offered).*
 
 **A:** `jem zuzur zubur zamar zal dohohum vadanal hadorom barl zanunul.`
 

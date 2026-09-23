@@ -197,10 +197,10 @@ const VALUE_STANCE: Record<string, string> = {
   u: "unmet",
 };
 
-/** Ending grain on values (contact / advice wanted / preference / changeability). */
+/** Ending grain on values (contact / prescription warrant / preference / changeability). */
 const VALUE_GRAIN: Record<string, Partial<Record<Ending, string>>> = {
   a: { l: "physical", m: "mental", r: "spiritual" },
-  e: { l: "asked", m: "typical", r: "history" },
+  e: { l: "invited", m: "offered", r: "protective" },
   o: { l: "circumstantial", m: "internal", r: "protective" },
   u: { l: "irreversible", m: "modifiable", r: "temporary" },
 };

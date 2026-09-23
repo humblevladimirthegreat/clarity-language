@@ -13,7 +13,6 @@ final exam
 Prosody
 gloss overlay should indicate phrase structure (including proper phrases) and what modifies what
 parser tries to guess lexical compound even if not in lexicon
-redo prescriptive values: conversation ID: a7a1672b-8763-4910-ba69-d8e8339e116c. Consider: Invited, Offered (unsolicited to satisfy need), Protective (unsolicited to avoid detract need)
 Cheat sheet for joins and hooks
 Define goodbye (assertiveness for meeting again? need met, name reminder?)
 consider new consonant (th) used for new pos, used instead of x for some x-compounds or different type of compounding? maybe could be used as plural ending and role compounds (avoids collision with span pronoun)?
@@ -21,11 +20,11 @@ j should just be y, remind that y is never a vowel
 consider removing some emotion emojis
 consider moving overlay forms to the top of lexicon so they get preferential retying
 cool features: collective verbs/adjectives use plural
-suggest what plurality should mean on joins and/or hooks
 could some causation overlay inventories be replaced by restrictors or other joins/hooks/stand-ins?
 allow -n on stand-ins to allow the lexicalized nouns - statement, question, command, prohibition, etc. This includes on verbs. Reconsider what verb stand-ins should mean. 
+standardize when -n on vowel series does not mean proper, and what that meaning should reliably mean.
 numbers section includes pronunciation rows underneath the agalan.
-reconsider ending tables for https://main.d2xds94zsgwptg.amplifyapp.com/grammar/knowing.html#hold-endings-notional
+reconsider ending tables for knowing.md#hold-endings-notional
 consider viewpoint laterals allowing non-person viewpoints (the car's left). Then clarify that the endings/resume applies to the viewpoint not the direction
 do a style pass
 do an example and translation pass

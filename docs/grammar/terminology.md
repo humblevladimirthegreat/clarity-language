@@ -178,12 +178,12 @@ Clause content after the left-edge `/j/` cluster.
 
 [Clause](clause.md#left-edge-order-and-sentence-boundaries)
 
-### Asked / typical / history
+### Invited / offered / protective
 <a id="asked-typical-history"></a>
 <a id="wording-general-history"></a>
 <a id="bound-endorse-invite"></a>
 
-Prescription endings on value **`xe`**: why you think a move is wanted. **-l** they asked (said or heavily implied this talk), **-m** people typically want advice here, **-r** a prior ask / standing invite / used move with them.
+Prescription endings on value **`xe`**: why a move is welcome. **-l** invited, **-m** offered to serve the need, **-r** protective, meant to prevent detriment to the need.
 
 [Values](values.md#value-force)
 
@@ -509,7 +509,7 @@ Amount + lexicon unit noun (published abstract = unit name).
 
 ### Met / unmet / motive / prescription (values)
 
-Value stances **`xa` / `xu`** (Beginner); **`xe`** / **`xo`** (Intermediate prescription / motive). Prescription **`xe`** on the clause is deontic on the host act (*ought to … for this need*), not a performance report with a separate norm tag. The ending is [why a move is wanted](#asked-typical-history), not how firmly you address them.
+Value stances **`xa` / `xu`** (Beginner); **`xe`** / **`xo`** (Intermediate prescription / motive). Prescription **`xe`** on the clause is deontic on the host act (*ought to … for this need*), not a performance report with a separate norm tag. The ending marks whether the move is [invited, offered, or protective](#asked-typical-history), not how firmly you address them.
 
 [Values](values.md)
 
@@ -720,7 +720,7 @@ Utterance setting: statement / question / command / prohibition.
 
 [Speech moves](speech-moves.md#speech-act)
 
-**Compare with:** values **advice wanted** is [asked / typical / history](#asked-typical-history), not speech act. Polar [stance](#polar-stance) is a left-edge particle.
+**Compare with:** values **prescription warrant** is [invited / offered / protective](#asked-typical-history), not speech act. Polar [stance](#polar-stance) is a left-edge particle.
 
 ### Sufficient / necessary
 
