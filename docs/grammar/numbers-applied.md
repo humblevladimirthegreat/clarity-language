@@ -189,6 +189,32 @@ The noun names the reference class; **`jo`** grades how much of that class. Same
 
 **Related form:** `25%` (`…jo`) and `0.25` (plain scalar) name the same magnitude; **`jo`** chooses the percent-scale reading. **`ju`** likewise names a ÷100 magnitude, framed as **points**.
 
+### Numbered alternatives (problem / solution / goal)
+<a id="numbered-alternatives"></a>
+<a id="ideation"></a>
+
+When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](numbers.md) (`g#N`) — not a closed overlay. *Problem* and *solution* take the published **-m** senses; *goal* is already the **-l** literal. Prefer at least **`g#1`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
+
+> `zazawan zagegom g#2 vezehel.`
+>
+> z-Azawan | z-solution | g-second | v-tell
+>
+> "Azawan names solution 2."
+
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`uzebum`** | numbered-alternative problem | *problem* (something to fit / solve) | `uzebul` *puzzle-piece* | 🧩: pieces must fit |
+| **`agegom`** | numbered-alternative solution | *solution* (what unlocks it) | `agegol` *key* | 🔑: opens what was locked |
+| **`olalal`** | numbered-alternative goal | *goal* (net you aim at) | | 🥅: the net you shoot for |
+| free **`g#N`** | rank in **this** numbered-alternative series | *candidate N* | | `#` = ordinal place |
+| soft **`g~#N`** | tentative ranking | *maybe candidate N* | | **-m** leaves the order open |
+
+**Recipe:** `zuzebum g#1` / `zagegom g#2` / `zolalal g#1`
+
+Unnumbered `zuzebum` is just *a problem*, not a candidate in a set — write **`g#N`** when brainstorming. `-l` on the first two roots is still the picture (`zuzebul` *a puzzle piece*; `zagegol` *a key*; `vagegol` *to unlock`). Reframing the **same** situation is different wording of one frame, not a second digit.
+
+**Compare with:** discourse *point N:* uses free **`x#N`** ([number as discourse](numbers.md#number-as-discourse-marker-by-marker)), a continue. Numbered alternatives are problem / solution / goal nouns plus **`g#N`**. Clause *so that* is [**`holalam`**](dependents.md#so-that), not **`olalal`**.
+
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 

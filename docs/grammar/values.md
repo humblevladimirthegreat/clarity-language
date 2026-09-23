@@ -247,6 +247,50 @@ z-fire | w-autonomy-unmet-irreversible | g-stimulus
 ## Intermediate
 <a id="intermediate"></a>
 
+### Emotion compose
+<a id="emotion-compose"></a>
+
+When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: a [value](values.md) on the situation, how activated the charge is, and where you put it. Put the value on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](values.md#stimulus) **`gobobum`** when the noun is not yours, then **one ACT** and **one LOCUS** as `/h/` (or `/w/` immediately before that adjective). You can then say the take without smuggling a single emotion word.
+
+> `zezehel wolozoxur gobobum hogegam hanedem.`
+>
+> z-speech | w-competence-unmet-temporary | g-stimulus | h-HIGH | h-CIRCUM
+>
+> "Anxious about the dialogue:" competence at stake for now; surge; room awash.
+
+Affect is **water**. **ACT** is tide dynamics (how much / how fast). **LOCUS** is vessel, transfer, or ambient field (where the water sits).
+
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`hogegam`** | HIGH arousal | *surge / overwhelm* | `ogegal` *ocean* | 🌊: water in surge |
+| **`hejelom`** | MED arousal | *flow / drift* | `ejelol` *jellyfish* | 🪼: drifts with the current |
+| **`hozowom`** | LOW arousal | *stillness / slack* | `ozowol` *snow* | 🌨️: the landscape goes quiet |
+| **`habobom`** | INTERNAL locus | *held inside* | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
+| **`horurum`** | EXTERNAL locus | *directed at other people* | `orurul` *pour* | 🫗: liquid goes onto someone else |
+| **`hanedem`** | CIRCUM locus | *on the situation* (shared / ambient field) | `anedel` *candle* | 🕯️: light fills the room |
+
+Under `/z/` or `/v/` the ordinary noun or verb uses the published literal ending (`zogegal` *an ocean*; `vorurul` *to pour*). The compose reading is the floating `/h/` (or `/w/`) **overlay** on **-m**.
+
+**EXTERNAL** is one root (`oruru`). Scale the transfer with ACT. INTERNAL and CIRCUM combine the same way; CIRCUM is a shared field.
+
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`hogegam`** + **`horurum`** | HIGH × EXTERNAL | *poured / surged onto them* | `ogegal` *ocean* · `orurul` *pour* | 🌊 onto 🫗: surge directed at them |
+| **`hejelom`** + **`horurum`** | MED × EXTERNAL | *flowing toward them* | `ejelol` *jellyfish* · `orurul` *pour* | 🪼 toward 🫗: drift aimed at them |
+| **`hozowom`** + **`horurum`** | LOW × EXTERNAL | *pooling at them* | `ozowol` *snow* · `orurul` *pour* | 🌨️ at 🫗: slack water settled at their locus |
+
+| Agalan | English |
+|---------|---------|
+| `zezehel wolozoxur gobobum hogegam hanedem` | *anxious about the dialogue* (competence at stake, temporary; surge; room awash) |
+| `zezawam wonogoxum gobobum hogegam horurum` | *resentful about the division* (unmet relatedness; surge poured onto them) |
+| `zebegum golozoxam hogegam habobom` | *proud of the draft* (met competence, mental channel; surge bottled) |
+| `zememol wonogoxum gobobum hozowom horurum` | *resentful about the memo* (unmet relatedness; stillness pooling at them) |
+
+Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
+
+**Compare with:** *could be* uses [MAY](knowing.md#may) (`odoho`). This stack is value + activation + locus.
+
+
 ### Prescription (`xe`): ought this act for this need
 <a id="value-force"></a>
 

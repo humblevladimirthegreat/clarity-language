@@ -124,7 +124,7 @@ Source: [values.md](../grammar/values.md)
 
 | Job | Where taught |
 |-----|----------------|
-| Emotion compose | [special-vocabulary.md § Emotion compose](../grammar/special-vocabulary.md#emotion-compose) |
+| Emotion compose | [values.md § Emotion compose](../grammar/values.md#emotion-compose) |
 | MAY | [knowing.md § MAY](../grammar/knowing.md#may) — **`odoho`** + find out / default / who knows |
 | NOTIONAL | [knowing.md § Notional](../grammar/knowing.md#notional) — **`adade`** |
 | RESIDUE / FORMER | [knowing.md § Residue](../grammar/knowing.md#residue) — **`oneno`** / **`emebe`** |

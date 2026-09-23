@@ -265,5 +265,5 @@ A production **parse** bundle is **not wired yet** (`build:lexicon-web` only bun
 | Pronouns / **-r** | [pronouns.md](../grammar/pronouns.md) |
 | Questions / fill-ask | [questions.md](../grammar/questions.md) |
 | Comparatives / SHARED scale | [comparatives.md](../grammar/comparatives.md) |
-| Overlays / special vocabulary | [special-vocabulary.md](../grammar/special-vocabulary.md) |
+| Closed overlays | [lexicon](../grammar/lexicon.md) |
 | Hooks | [hooks.md](../grammar/hooks.md) |

@@ -25,11 +25,11 @@ role compounds continues take the role compound + rest of pronoun
 plurality on joins/hooks?
 apply numbers TODO first before other TODOs (there are several and some need human feedback)
 could some causation overlay inventories be replaced by restrictors or other joins/hooks/stand-ins?
-for special-vocabulary, consider redistributing them all to other pages and deleting this page. 
 numbers section includes pronunciation rows underneath the agalan.
 reconsider ending tables for https://main.d2xds94zsgwptg.amplifyapp.com/grammar/knowing.html#hold-endings-notional
 consider viewpoint laterals allowing non-person viewpoints (the car's left). Then clarify that the endings/resume applies to the viewpoint not the direction
 consider moving speech acts from clause to vowel series (and renaming appropriately) or otherwise incorporating the vowel series chart more seamlessly into another series 
+fold ability.md into intention.md
 do a style pass with Luna.
 do an example and translation pass
 

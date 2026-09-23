@@ -15,27 +15,27 @@ Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#a
 | Label | Gloss | Teach |
 |-------|-------|--------|
 | **ABIL** | Hostless *can* / *can’t* fallback **`egera`** | [Ability](ability.md#ability-fallback) |
-| **ACT** | Emotion-compose arousal (HIGH / MED / LOW) | [Special vocabulary](special-vocabulary.md#emotion-compose) |
+| **ACT** | Emotion-compose arousal (HIGH / MED / LOW) | [Values](values.md#emotion-compose) |
 | **AS-OF** | Whose-now pole: ledger **`elere`** / bookmark **`oboma`** | [Relations](relations.md#as-of) |
 | **ALTHOUGH** | Clause-pole **`ezeba`** (*although* / NP *despite*) | [Dependents](dependents.md#dependent-clauses) |
 | **BECAUSE** | Clause-pole **`urugu`** (*because*) | [Causation](causation.md#because) |
 | **CAUSE** | Mechanism-framing mood **`egega`** | [Causation](causation.md#cause) |
-| **CIRCUM** | Emotion locus: charge on the situation | [Special vocabulary](special-vocabulary.md#emotion-compose) |
+| **CIRCUM** | Emotion locus: charge on the situation | [Values](values.md#emotion-compose) |
 | **MAY** | Potential mood **`odoho`** (*could be*; I'll find out / default / who knows) | [Knowing](knowing.md#may) |
-| **COMMON** | Universality: usual, exceptions expected | [Special vocabulary](special-vocabulary.md#universality) |
+| **COMMON** | Universality: usual, exceptions expected | [Knowing](knowing.md#universality) |
 | **DECISION** | Pick-firmness mood **`ehege`** | [Intention](intention.md#decision) |
-| **EXTERNAL** | Emotion locus: charge at other people | [Special vocabulary](special-vocabulary.md#emotion-compose) |
+| **EXTERNAL** | Emotion locus: charge at other people | [Values](values.md#emotion-compose) |
 | **FELT** | Evidential: gut / body knowing | [Knowing](knowing.md#evidentiality) |
-| **FORMAL** | Universality: definition / math / proof | [Special vocabulary](special-vocabulary.md#universality) |
+| **FORMAL** | Universality: definition / math / proof | [Knowing](knowing.md#universality) |
 | **FORMER** | Episode standing: not the climate claimed now **`emebe`** | [Knowing](knowing.md#former-climate) |
-| **HIGH** / **MED** / **LOW** | Emotion ACT roots | [Special vocabulary](special-vocabulary.md#emotion-compose) |
+| **HIGH** / **MED** / **LOW** | Emotion ACT roots | [Values](values.md#emotion-compose) |
 | **IF** | Clause-pole **`adoro`** (one-way *if*) | [Causation](causation.md#if) |
 | **IFF** | Clause-pole **`ezaze`** | [Causation](causation.md#iff) |
 | **INFERRED** | Evidential: reasoned from clues | [Knowing](knowing.md#evidentiality) |
-| **INTERNAL** | Emotion locus: charge held inside | [Special vocabulary](special-vocabulary.md#emotion-compose) |
+| **INTERNAL** | Emotion locus: charge held inside | [Values](values.md#emotion-compose) |
 | **LIVE** | Evidential: concurrent / in-view observation | [Knowing](knowing.md#live-vs-memory) |
-| **LOCUS** | Emotion-compose where the charge sits | [Special vocabulary](special-vocabulary.md#emotion-compose) |
-| **NATURAL** | Universality: natural necessity | [Special vocabulary](special-vocabulary.md#universality) |
+| **LOCUS** | Emotion-compose where the charge sits | [Values](values.md#emotion-compose) |
+| **NATURAL** | Universality: natural necessity | [Knowing](knowing.md#universality) |
 | **NOTIONAL** | As-if / pretense mood **`adade`** | [Knowing](knowing.md#notional) |
 | **ONLY-IF** | Clause-pole **`ebero`** (*only if* / *needs*) | [Causation](causation.md#only-if) |
 | **PATTERN** | Evidential: from regularity | [Knowing](knowing.md#evidentiality) |
@@ -43,12 +43,12 @@ Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#a
 | **PREDICT** | Later-event forecast mood **`elezo`** | [Intention](intention.md#predict) |
 | **RECORDED** | Evidential: documented / playback | [Knowing](knowing.md#evidentiality) |
 | **RESIDUE** | Episode standing: outcome still on the current tally **`oneno`** | [Knowing](knowing.md#residue) |
-| **RULE** | Universality: holds inside a named frame | [Special vocabulary](special-vocabulary.md#universality) |
+| **RULE** | Universality: holds inside a named frame | [Knowing](knowing.md#universality) |
 | **SAME** | Identity copula **`onunu`** | [Predication](predication.md#identity) |
 | **SO-THAT** | Clause-pole **`olala`** (*so that* / NP intended *for*) | [Dependents](dependents.md#so-that) |
 | **STORY** | Evidential: narrative / lore | [Knowing](knowing.md#evidentiality) |
 | **TOLD** | Evidential: hearsay | [Knowing](knowing.md#evidentiality) |
-| **UNCOUNTERED** | Universality: no counterexample comes to mind | [Special vocabulary](special-vocabulary.md#universality) |
+| **UNCOUNTERED** | Universality: no counterexample comes to mind | [Knowing](knowing.md#universality) |
 | **WITNESSED** | Evidential: firsthand memory (reconstructive) | [Knowing](knowing.md#live-vs-memory) |
 
 **Compare with:** [imaginary](#digitless-exponent) (free-number `-e-`) and [quasi](#quasi) (`ROOTl-e-`) are not **NOTIONAL**.
@@ -545,7 +545,7 @@ Number word under `/v/` `/h/` `/j/` `/x/`.
 
 Number problem / solution / goal candidates with free ordinals.
 
-[Special vocabulary](special-vocabulary.md#numbered-alternatives)
+[Numbers in use](numbers-applied.md#numbered-alternatives)
 
 **Compare with:** clause *so that* is [**`holalam`**](dependents.md#so-that), not the goal noun **`olalal`**.
 
@@ -579,7 +579,7 @@ FIELD × KIND with mid-word **`x`**; closed stem with join letter and no `x`.
 
 Special reading of a published root under a PoS.
 
-[Special vocabulary](special-vocabulary.md#sense-form)
+[Lexicon](lexicon.md)
 
 **Compare with:** a number under `/v/` `/h/` `/j/` `/x/` is [number as verb / adverb / interjection / discourse](#number-as-verb-adverb-interjection-discourse), not an overlay. Lexicon abstract **-m** stays abstract.
 
@@ -762,7 +762,7 @@ Join / restrictor **-r** (*something* / *sometimes*); fill-ask under question.
 
 Mood how-exceptionless (COMMON … RULE).
 
-[Special vocabulary](special-vocabulary.md#universality)
+[Knowing](knowing.md#universality)
 
 ### Values
 

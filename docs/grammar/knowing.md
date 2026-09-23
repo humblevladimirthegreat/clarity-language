@@ -268,7 +268,7 @@ Pick one evidential **root** for how you know.
 >
 > "Ululon writes — so they say."
 
-**Compare with:** seeing as an action uses ordinary **`vejel`**. **`hadezem`** is *how you know* (the walk is in view now), not the verb *see*. Fear or hope uses [emotion compose](special-vocabulary.md#emotion-compose). **`heherem`** is a way of *knowing*, not that stack. **`heraram`** is someone said so about the claim; hearing a door as an action is ordinary `/v/`.
+**Compare with:** seeing as an action uses ordinary **`vejel`**. **`hadezem`** is *how you know* (the walk is in view now), not the verb *see*. Fear or hope uses [emotion compose](values.md#emotion-compose). **`heherem`** is a way of *knowing*, not that stack. **`heraram`** is someone said so about the claim; hearing a door as an action is ordinary `/v/`.
 
 ### Live vs memory
 <a id="live-vs-memory"></a>
@@ -314,7 +314,7 @@ English *has walked* and *used to walk* often smuggle **when** the event sits. A
 
 **Compare with:** [*after*](dependents.md#dependent-clauses) (`helabam badorol`) orders two events. **`honenom`** does not say the leaving was earlier; it says the **outcome still counts**. [LIVE](#live-vs-memory) is how you know, not leftover balance. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
 
-**FORMER** (`emebe`) marks **former climate**: this verb-claim is usual weather that you are **not** giving as today’s report. [Always](restrictors.md) **`hual`** is still the current climate (exceptions listed). [COMMON](special-vocabulary.md#universality) **`hugudol`** is how exceptionless that current weather is. Ordinary `zemebem` is still *emptiness*.
+**FORMER** (`emebe`) marks **former climate**: this verb-claim is usual weather that you are **not** giving as today’s report. [Always](restrictors.md) **`hual`** is still the current climate (exceptions listed). [COMMON](knowing.md#universality) **`hugudol`** is how exceptionless that current weather is. Ordinary `zemebem` is still *emptiness*.
 
 > `zazawan hual vezehel hemebem.`
 >
@@ -334,7 +334,7 @@ English *has walked* and *used to walk* often smuggle **when** the event sits. A
 >
 > "Azawan always telling will not be the current climate — forecast."
 
-**Compare with:** **`hual`** without **`hemebem`** is *always* as the weather you stand behind now. PATTERN **`habawam`** is *how you know* (a trail of cases), not “this used to be my weather.” Do not write **`hemebem`** immediately before **`hual`**: that slot is the restrictor’s occasion list (*always except when…*). Keep **`hual`** first (bare *always*), then **FORMER** after the verb, the way [COMMON](special-vocabulary.md#universality) sits after **`hual`**. **`hemebem`** is not a past tense: it is legal under LIVE and PREDICT.
+**Compare with:** **`hual`** without **`hemebem`** is *always* as the weather you stand behind now. PATTERN **`habawam`** is *how you know* (a trail of cases), not “this used to be my weather.” Do not write **`hemebem`** immediately before **`hual`**: that slot is the restrictor’s occasion list (*always except when…*). Keep **`hual`** first (bare *always*), then **FORMER** after the verb, the way [COMMON](knowing.md#universality) sits after **`hual`**. **`hemebem`** is not a past tense: it is legal under LIVE and PREDICT.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -762,11 +762,182 @@ z-Ululon | h-MAY | h-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment
 *As of 22 July the leaving still stood — and from now, that leftover could be.*
 :::
 
+### Universality
+<a id="universality"></a>
+<a id="universality-mood"></a>
+
+English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Keep *who / when* on the [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / …). Write exceptionlessness as a closed `/h/` mood root (optional `/w/` immediately before a `/ɡ/`). You can then pair *always* with *usually*, *by definition*, and the rest without changing the domain fence.
+
+> `zazawan hual vawalal hugudol.`
+>
+> z-Azawan | h-always | v-walk | h-COMMON
+>
+> "Azawan always walks, usually."
+
+The default *always* is *usually* (exceptions expected), not *must happen that way*, and not an ought. (cue: usual weather, not a law of nature.) Prefer floating `/h/`. Use **COMMON** (`hugudol`) unless another row is the exceptionlessness you mean. **RULE** is complex `/h/` + `/b/` when you name the frame.
+
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`hugudol`** | COMMON (default climate) | *usually* (exceptions expected) | `ugudol` *cloudy* | ⛅: usual sky still allows a shower |
+| **`habulul`** | UNCOUNTERED (search) | *as far as checked* (no counterexample comes to mind) | `abulul` *pill* | 💊: you take it to treat an ailment; the search found none |
+| **`harazal`** | FORMAL | *by definition* / math / proof | `arazal` *star* | ⭐: a charted constellation does not wander |
+| **`habelel`** | NATURAL | *by natural necessity* (unsupported objects fall) | `abelel` *apple* | 🍎: it falls because the world works that way |
+| **`hebebel`** | RULE | *under a named frame* (`hebebel begezel`) | `ebebel` *pepper* | 🌶️: heat that applies in that dish |
+
+**Compare with:** *who / when* uses [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory. Usual weather you are **not** claiming now is [FORMER](knowing.md#former-climate) (`hemebem`), not COMMON.
+
+**For *I saw a pattern*, use:** [evidential](knowing.md#evidentiality) **`abawa`**. **`ugudo`** is usual-weather universality; NATURAL **`abele`** stacks a separate evidential `/h/` for how you know.
+
+| Agalan | Use | English |
+|--------|-----|---------|
+| `… hual … hugudol` | default universality | *always, usually* |
+| `… hual … habulul` | search found no counterexample | *always, as far as checked* |
+| `zual gagurel … harazal` | definition / proof | *every square, by definition* |
+| `… hual … habelel` + evidential `/h/` | nature plus how you know | *always, by natural necessity* (e.g. `habawam`) |
+| `… hual … hebebel begezel` | named frame | *always, under chess* |
+| `zuam gagadal … hugudol` | open domain + usual universality | *every cat that comes to mind, usually* |
+
+### Translation practice
+<a id="translation-practice-universality"></a>
+
+Short drills for Advanced. Try each item before opening **Show answer**.
+
+**Setting:** a philosophy seminar
+
+**Roots used here:**
+
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
+| *COMMON* | `hugudol` | `ugudol` *cloudy* | ⛅: usual sky still allows a shower |
+| *UNCOUNTERED* | `habulul` | `abulul` *pill* | 💊: you take it to treat an ailment; the search found none |
+| *FORMAL* | `harazal` | `arazal` *star* | ⭐: a charted constellation does not wander |
+| *NATURAL* | `habelel` | `abelel` *apple* | 🍎: it falls because the world works that way |
+| *RULE* | `hebebel` | `ebebel` *pepper* | 🌶️: heat that applies in that dish |
+| *write* | `vuwurul` | | |
+| *sit* | `vajul` | `ajul` *chair* | |
+| *think* | `vuduhul` | | |
+| *punch* | `vubunul` | | |
+| *scream* | `vazagal` | | |
+| *book* | `abogol` | | |
+| *claim* | `adadam` | `adadal` *trademark* | |
+| *proof* | `eregum` | `eregul` *receipt* | |
+| *intellect* | `uburum` | `uburul` *brain* | |
+| *school* | `ahalal` | | |
+| evidential *pattern* | `abawam` | `abawal` *paw-prints* | 🐾: a trail of what usually happens |
+
+#### English → Agalan
+
+**1.** *Ululon always writes, usually.*
+
+::: details Show answer
+`zululon hual vuwurul hugudol.`
+
+z-Ululon | h-always | v-write | h-COMMON
+:::
+
+**2.** *Azawan always sits, as far as checked.*
+
+::: details Show answer
+`zazawan hual vajul habulul.`
+
+z-Azawan | h-always | v-sit | h-UNCOUNTERED
+:::
+
+**3.** *Every book, by definition.*
+
+::: details Show answer
+`zual gabogol harazal.`
+
+z-everything-but | g-book | h-FORMAL
+:::
+
+**4.** *Uhubun always thinks, by natural necessity* (plus a trail of cases).
+
+::: details Show answer
+`zuhubun hual vuduhul habelel habawam.`
+
+z-Uhubun | h-always | v-think | h-NATURAL | h-PATTERN
+:::
+
+**5.** *Ululon always punches, under school.*
+
+::: details Show answer
+`zululon hual vubunul hebebel bahalan.`
+
+z-Ululon | h-always | v-punch | h-RULE | b-Ahalan
+:::
+
+**6.** *Every claim that comes to mind, usually.*
+
+::: details Show answer
+`zuam gadadam hugudol.`
+
+z-everything-but.open | g-claim | h-COMMON
+:::
+
+#### Agalan → English
+
+**1.** `zazawan hual vajul hugudol.`
+
+::: details Show answer
+
+z-Azawan | h-always | v-sit | h-COMMON
+
+*Azawan always sits, usually.*
+:::
+
+**2.** `zululon hual vuwurul habulul.`
+
+::: details Show answer
+
+z-Ululon | h-always | v-write | h-UNCOUNTERED
+
+*Ululon always writes, as far as checked.*
+:::
+
+**3.** `zual guburum harazal.`
+
+::: details Show answer
+
+z-everything-but | g-intellect | h-FORMAL
+
+*Every intellect, by definition.*
+:::
+
+**4.** `zuhubun hual vuwurul habelel habawam.`
+
+::: details Show answer
+
+z-Uhubun | h-always | v-write | h-NATURAL | h-PATTERN
+*Uhubun always writes, by natural necessity* (plus a trail of cases).
+:::
+
+**5.** `zululon hual vazagal hebebel bahalan.`
+
+::: details Show answer
+
+z-Ululon | h-always | v-scream | h-RULE | b-Ahalan
+
+*Ululon always screams, under school.*
+:::
+
+**6.** `zuam geregum hugudol.`
+
+::: details Show answer
+
+z-everything-but.open | g-proof | h-COMMON
+
+*Every proof that comes to mind, usually.*
+:::
+
 ## See also
 
 - Need ascription: [values.md](values.md)
-- Emotion compose: [special-vocabulary.md](special-vocabulary.md#emotion-compose)
+- Emotion compose: [values.md](values.md#emotion-compose)
 - Forecast stacked with a channel: [intention.md](intention.md#plan-predict)
 - Clock / date / when-frames: [numbers-applied.md](numbers-applied.md#time)
 - Habitual *always*: [restrictors.md](restrictors.md)
-- Usual-climate universality: [special-vocabulary.md](special-vocabulary.md#universality)
+- Usual-climate universality: [Knowing](knowing.md#universality)

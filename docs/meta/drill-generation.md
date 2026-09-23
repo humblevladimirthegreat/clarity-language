@@ -189,7 +189,6 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `numbers.md` | Beginner | a bakery |
 | `numbers.md` | Intermediate | a sports stadium |
 | `numbers.md` | Advanced | an observatory |
-| `numbers-applied.md` | Intermediate | a pharmacy |
 | `comparatives.md` | Beginner | a racetrack |
 | `comparatives.md` | Intermediate | a weighing room |
 | `comparatives.md` | Advanced | a talent contest |
@@ -203,7 +202,6 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `ability.md` | Intermediate | a locked vault |
 | `knowing.md` | Beginner | a café patio |
 | `knowing.md` | Intermediate | a press conference |
-| `knowing.md` | Advanced | a film archive |
 | `roles.md` | Beginner | a construction site |
 | `roles.md` | Intermediate | a harbor |
 | `x-compounds.md` | Beginner | a hardware store |
@@ -213,8 +211,6 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `intention.md` | Intermediate | a board meeting |
 | `intention.md` | Advanced | a delayed departure board |
 | `join-across-roles.md` | Intermediate | a relay race |
-| `special-vocabulary.md` | Intermediate | a festival |
-| `special-vocabulary.md` | Advanced | a philosophy seminar |
 | `numeric-derivation.md` | Advanced | a foundry |
 
 ## Example root bank
@@ -340,8 +336,9 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 17 | `join-across-roles.md` | Intermediate | **exists** | Verb-phrase and clause joins (`vam`, `xam`, sequence `xan`); join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 17) |
 | 17 | `intention.md` | Intermediate | **exists** | **DECISION** **`ehege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
 | 17 | `intention.md` | Advanced | **exists** | PLAN / PREDICT against *as-of*; DECISION speech-now | Recycle relations Advanced |
-| 17 | `special-vocabulary.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value); numbered alternatives `uzebum`/`agegom`/`olalal` + `g#N` | Overlay *inventory* is not a drill. **Needs** values Beginner (recycle). Not universality (Advanced) |
-| 17 | `special-vocabulary.md` | Advanced | **exists** | Universality (`ugudo` / `abulu` / …) as taught in this stage | 4–6 items |
+| 17 | `values.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value) | Recycle values Beginner. |
+| 17 | `numbers-applied.md` | Intermediate | **exists** | Numbered alternatives `uzebum`/`agegom`/`olalal` + `g#N` | Recycle numbers Beginner. |
+| 17 | `knowing.md` | Advanced | **exists** | Universality (`ugudo` / `abulu` / …) as taught in this stage | 4–6 items |
 | 18 | `numeric-derivation.md` | Advanced | **exists** | `ROOT l NUM` as the stage teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
 
 ## Leak index
@@ -384,10 +381,11 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Join-act **`van`** / join-relation **`gan`** | `join-across-roles.md` Intermediate |
 | **PLAN** / **PREDICT** | `intention.md` Beginner |
 | **DECISION** | `intention.md` Intermediate |
-| Emotion compose; numbered alternatives | `special-vocabulary.md` Intermediate |
+| Emotion compose | `values.md` Intermediate |
+| Numbered alternatives | `numbers-applied.md` Intermediate |
 | Judgment **Mine** **`zuroron`** | `comparatives.md` Advanced |
 | `ROOT l NUM` derivation | `numeric-derivation.md` Advanced |
-| Universality overlays | `special-vocabulary.md` Advanced |
+| Universality overlays | `knowing.md` Advanced |
 
 **`jol`** yes/no with a house-name subject is core Beginner. **`jol zar …`** fill-ask is questions Beginner (needs joins unspecified **-r**).
 

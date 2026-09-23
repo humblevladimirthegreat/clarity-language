@@ -94,7 +94,7 @@ Naming the need and your stance toward it helps you notice gratitude, motive, an
 
 Opaque labels (*angry*, *anxious*, *proud*) hide which need is in play and what to ask for.
 
-Agalan [composes emotion](special-vocabulary.md#emotion-compose) from a [value](values.md) (often unmet or met), plus activation (surge / stir / …), plus locus (where it shows).
+Agalan [composes emotion](values.md#emotion-compose) from a [value](values.md) (often unmet or met), plus activation (surge / stir / …), plus locus (where it shows).
 
 Composing emotion from need + activation + locus helps you ask for what would actually help instead of stopping at the label.
 
@@ -172,7 +172,7 @@ Marking the opening that way helps you consent to the talk without treating a wa
 
 Work talk often freezes on *the* problem / *the* solution, or ranks against an invisible yardstick.
 
-Prefer [numbered alternatives](special-vocabulary.md#numbered-alternatives) so candidates stay plural and revisable. Reframe the same situation with softer wording rather than inventing a second candidate. Scalar *worse than…* can name closed [judgment benchmarks](comparatives.md#judgment-benchmarks) (Average, Typical, Mine, …) so the bar you are using stays audible, including when the bar is only your own standard.
+Prefer [numbered alternatives](numbers-applied.md#numbered-alternatives) so candidates stay plural and revisable. Reframe the same situation with softer wording rather than inventing a second candidate. Scalar *worse than…* can name closed [judgment benchmarks](comparatives.md#judgment-benchmarks) (Average, Typical, Mine, …) so the bar you are using stays audible, including when the bar is only your own standard.
 
 Numbering candidates, paraphrasing, and naming the judgment bar help you keep choice and standards revisable instead of freezing on a single frame or a hidden bar.
 
@@ -187,10 +187,10 @@ Published roots keep an **abstract** sense beside the **concrete** picture, so t
 * [Live look as attesting](knowing.md#live-vs-memory): eye-in-speech while the scene is still in view.
 * [Residue as unpaid debt](knowing.md#residue): leftover balance still on the books; not a past tense.
 * [Former climate as an empty nest](knowing.md#former-climate): the nesting season is over; not *used to* as past.
-* [Usual as weather](special-vocabulary.md#universality): a habitual *always* is a climate report; [uncountered](special-vocabulary.md#universality) is clear sky (*no counterexample comes to mind*), a search, not a proof.
+* [Usual as weather](knowing.md#universality): a habitual *always* is a climate report; [uncountered](knowing.md#universality) is clear sky (*no counterexample comes to mind*), a search, not a proof.
 * [*As if* as theater](knowing.md#notional): a stage mask frames play; the real tally stays **offstage**.
 * [Mechanism as gears](causation.md#cause): naming the gear train marks *how it meshes*.
-* [Affect as water](special-vocabulary.md#emotion-compose): tide (arousal) plus vessel / pour / ambient field (locus) instead of an opaque emotion label that hides the need.
+* [Affect as water](values.md#emotion-compose): tide (arousal) plus vessel / pour / ambient field (locus) instead of an opaque emotion label that hides the need.
 
 Conceptual metaphors help you reach and remember the healthier frame by tying it to a concrete analogy that already encodes the bias you are trying to catch.
 

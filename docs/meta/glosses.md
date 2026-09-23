@@ -143,7 +143,7 @@ Published strings share one phonological root, but **concrete**, **abstract**, a
 
 Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agalan line and from [reference-suffix.md](../grammar/reference-suffix.md). The gloss’s job is the **sense**, not a second orthography.
 
-**Closed overlays** ([sense-form](../grammar/special-vocabulary.md#sense-form)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `MAY`, `SAME`, `plan`, `DECISION`, …). The Agalan letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `on` / …).
+**Closed overlays** ([sense-form](../grammar/lexicon.md)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `MAY`, `SAME`, `plan`, `DECISION`, …). The Agalan letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `on` / …).
 
 **Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zugobon` / `zedonen` / `zahan` / `zenenun` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` — never emoji etymology. **Stand-ins** (`darl` / `dorl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
 
@@ -437,7 +437,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 
 - [spans.md](../grammar/spans.md) — mention / cite / opaque; interiors [above](#span-interiors)
 - [reference-suffix.md](../grammar/reference-suffix.md) — **-l** / **-m** / **-n** / **-r**
-- [special-vocabulary.md](../grammar/special-vocabulary.md#sense-form) — overlays and closed labels
+- [lexicon.md](../grammar/lexicon.md) — overlays and closed labels
 - [pronouns.md](../grammar/pronouns.md) — **-r** and special pronouns
 - [x-compounds.md](../grammar/x-compounds.md) — mid-word `x` families
 - [clause.md](../grammar/clause.md#role-letters) — role letters in a sentence

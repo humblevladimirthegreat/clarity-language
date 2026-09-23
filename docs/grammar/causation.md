@@ -531,7 +531,7 @@ A one-off episode and a standing pattern use the same poles. Add extra `/h/` wor
 >
 > "Rain if there are clouds, as a standing pattern."
 
-**Compare with:** *always* / *every* / *never* as exceptionlessness uses [universality](special-vocabulary.md#universality) (NATURAL **`habelel`**). **CAUSE** is **`hegegam`**.
+**Compare with:** *always* / *every* / *never* as exceptionlessness uses [universality](knowing.md#universality) (NATURAL **`habelel`**). **CAUSE** is **`hegegam`**.
 
 ### English → Agalan
 <a id="english-cues"></a>
