@@ -253,7 +253,11 @@ You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra c
 | `zazawan godogol hual` | characterizing / habitual | *Azawan is the dog type* |
 | `zazawan godogol gul` | negation | *Azawan is not a dog* |
 
-<!-- TODO: add an actual agalan example for the w hedge. If there is insufficient vocabulary to do so, report that. -->
+> `zazawan wagadum godogol.`
+>
+> z-Azawan | w-degree | g-dog
+>
+> "Azawan is somewhat of a dog."
 
 **Related form:** *the dog type* / habitual class uses [**hual**](restrictors.md).
 

@@ -470,8 +470,6 @@ z-Ululon | v-pour | h-CAUSE | h-if | b-overwhelm
 ## Advanced
 <a id="advanced"></a>
 
-<!-- TODO: do I understand correctly that nothing new is being taught in this band and it's just clarifying distinctions? Reconsider whether this band is needed. -->
-
 ### Factivity (`if` vs `because`)
 <a id="factivity"></a>
 

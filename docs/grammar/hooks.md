@@ -11,21 +11,25 @@ Three placements share the same spellings. Tell them apart from what sits to the
 ### Including (`am` / `al`)
 <a id="including"></a>
 
-You already named something (A), and you want English *including B* in that same slot. Put a hook between two phrases that play the **same clause role** (both subjects, both objects, both adjectives, …): `A HOOK B`. That hooks B onto A in place; it does not package A and B as a pair. Everyday *including* uses **`am`**. (cue: **a** ≈ add.)
+You already named something (A), and you want English *including B* in that same slot. Put a hook between two phrases that play the **same clause role** (both subjects, both objects, both adjectives, …): `A HOOK B`. That hooks B onto A in place; it does not package A and B as a pair. Everyday *including* uses **`al`**. (cue: **a** ≈ add.)
 
 ```
 A HOOK B
 ```
+
+> `zodogolx al zagadal.`
+>
+> z-dog-x | including | z-cat
+>
+> "Dogs, including a cat."
+
+**Compare with:** packaging two members as a list uses a [join](joins.md) (`zodogol zagadal zam` *a dog and a cat*). A hook **hooks** B onto A; it does not name a pair.
 
 > `zodogolx am zagadal.`
 >
 > z-dog-x | including.open | z-cat
 >
 > "Dogs, including a cat and maybe more."
-
-**Compare with:** packaging two members as a list uses a [join](joins.md) (`zodogol zagadal zam` *a dog and a cat*). A hook **hooks** B onto A; it does not name a pair.
-
-<!-- TODO: This example should be for al. am should be covered with the rest of the open endings below -->
 
 ### Rather (`el`)
 <a id="rather"></a>

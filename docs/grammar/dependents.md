@@ -335,34 +335,32 @@ These words glue one finished sentence to the next (one-way; default ending **-l
 <a id="clause-member"></a>
 <a id="stand-in"></a>
 
-Beginner used locked **`a`** (`darl` / `barl`) and *whether* **`dorl`**. Stand-ins reuse the [vowel series](speech-moves.md) (`a` / `o` / `e` / `u`) to type the following sentence. They are not joins. **`-rl`** locks that sentence as the whole filler; **`-rm`** is open (gist / not only that). Unspecified join **`-r`** with no following clause is still *something* / *anything*.
+Beginner used locked **`a`** (`darl` / `barl`) and *whether* **`dorl`**. Stand-ins reuse the [speech-act vowel series](speech-moves.md#speech-act-beginner) (`a` / `o` / `e` / `u`) to type the following sentence's content: statement-like, question-like, instruction-like, or avoidance-like. Unlike `/j/`, a stand-in does not begin a speech act; it makes that kind of sentence content fill a role in the outer sentence. They are not joins. **`-rl`** locks that sentence as the whole filler; **`-rm`** is open (gist / not only that).
 
-<!-- TODO: I'm pretty sure it's redundant to state "with no following clause". dar always means "something" even if there is a clause after it. If this is not the case, report that. Remove the normal -r column entirely from the table below, as that is not helpful for this section. -->
+| Stand-in | Content type | **`-rl`** locked | **`-rm`** open |
+|----------|--------------|------------------|----------------|
+| **`a`** hold | statement-like (compare **`jal`**) | `darl` *that …* | `darm` *that …* (gist) |
+| **`o`** pick | question-like (compare **`jol`**) | `dorl` *whether …* | `dorm` *whether …* (open) |
+| **`e`** order | instruction-like (compare **`jel`**) | `derl` *to …* | `derm` *to …* (open) |
+| **`u`** undo | avoidance-like (compare **`jul`**) | `durl` *that not / lest …* | `durm` *lest …* (open) |
 
-|  | **`-r`** (no clause) | **`-rl`** locked | **`-rm`** open |
-|--|----------------------|------------------|----------------|
-| **`a`** hold | `dar` *something* | `darl` *that …* | `darm` *that …* (gist) |
-| **`o`** pick | `dor` *anything* | `dorl` *whether …* | `dorm` *whether …* (open) |
-| **`e`** order | `der` | `derl` *to …* | `derm` *to …* (open) |
-| **`u`** undo | `dur` | `durl` *that not / lest …* | `durm` *lest …* (open) |
+The corresponding `/j/` turn makes an assertion, asks a question, gives a command, or prohibits an action. The stand-in puts that kind of content in a dependent slot; it does not assert, ask, command, or prohibit in its own right. Omit the dependent `/z/` only when the equivalent `/j/` speech act would not need an explicit subject: commands and prohibitions can leave their addressee understood, and statements or questions may omit `/z/` only when their own construction permits it. Otherwise, write the subject in the dependent sentence.
 
 The same grid uses **`b`** after a pole (`barl` / `berl` / `burl` …). Everyday *because* / *if* / *although* stay **`barl` / `barm`**. **`holalam berl`** types the `/b/` clause as an aimed body; **`holalam burl`** types it as a body to keep off. Do not put this family on `/x/` (clause *and* stays `xal` / `xan`).
 
-> `zazawan bululon vezehel derl zululon vajul.`
+> `zazawan bululon vezehel derl vajul.`
 >
-> z-Azawan | b-Ululon | v-tell | d-to-clause | z-Ululon | v-sit
+> z-Azawan | b-Ululon | v-tell | d-to-clause | v-sit
 >
 > "Azawan tells Ululon to sit."
 
-<!-- TODO: clarify that the stand-in functions identically to a j speech act that is fit into a pos slot. Derl is equivavlent to jel as a direct object. As such, zazawan bululon vezehel derl vajul is valid because "jel vajul" is a valid command. If this conflicts with another rule elsewhere, report that. -->
+The addressee is unhosted `/b/`. Since **`jel vajul`** is a command with its addressee understood, **`derl vajul`** can use the same understood subject: `zazawan bululon vezehel derl vajul.` The inner aim is Ululon's sitting; the outer sentence stays a statement. If the equivalent command needed an explicit subject, keep that `/z/` in the dependent sentence too. Quotes of wording stay [spans](spans.md).
 
-The addressee is unhosted `/b/`. The inner `/z/` is still Ululon (English *to sit* drops that name). **`derl`** types the next sentence as an aim; the outer sentence stays a statement. Quotes of wording stay [spans](spans.md).
+English *lest* / *not to* (keep this from happening) uses vowel **`u`**: **`durl`**. As with **`jul`**, the understood addressee can be the subject; write an inner `/z/` when the equivalent prohibition would need one. The outer sentence stays a statement. *Don't sit!* as the whole move is still a [prohibition](speech-moves.md#speech-act-beginner) (**`jul`**), not this stand-in.
 
-English *lest* / *not to* (keep this from happening) uses vowel **`u`**: **`durl`**. Name the inner `/z/` again. The outer sentence stays a statement. *Don't sit!* as the whole move is still a [prohibition](speech-moves.md#speech-act-beginner) (**`jul`**), not this stand-in.
-
-> `zazawan bululon vezehel durl zululon vajul.`
+> `zazawan bululon vezehel durl vajul.`
 >
-> z-Azawan | b-Ululon | v-tell | d-lest-clause | z-Ululon | v-sit
+> z-Azawan | b-Ululon | v-tell | d-lest-clause | v-sit
 >
 > "Azawan tells Ululon not to sit."
 

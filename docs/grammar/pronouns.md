@@ -310,9 +310,7 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 | verb antecedent, `/h/` … `-r` | recast as manner | *by doing so* / *thereby* |
 | adjective antecedent, noun … `-r` | recast as entity | *the … one* / *that quality* |
 
-### Specials: further notes
-
-<!-- TODO: change section heading to be more descriptive - something about plural addressee I guess -->
+### Addressing several people
 
 When you address several people at once, English *you* does not say how many. The listener root **`edone`** plus associative **-x** names everyone this turn addresses: the vocative cluster, plus anyone still held as addressee. One addressee stays singular **`edone`**; several take **`edone…x`**. Inclusive *shall we* stays **`aha`**. Soft **`zaham`** hedges whether you really share the act.
 

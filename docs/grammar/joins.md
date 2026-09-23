@@ -780,13 +780,11 @@ When same-role words sit next to a smaller list, wrap that stretch and its join 
 
 When a phrase list is an established bundle (*Stop–Drop–Roll*), end the join with **-n** under `/z/` `/d/` `/b/` `/w/`. That **-n** titles the package ([titled phrases](word-endings.md#titled-phrases)). Members keep their usual endings unless a member is itself a name.
 
-> `zadedal zogovel zon.`
+> `zereral zudel zan.`
 >
-> z-tea | z-coffee | z-or-exactly-one.named
+> z-bread | z-butter | z-and.named
 >
-> "tea or coffee (the usual named menu)"
-
-<!-- TODO: actually use stop-drop-roll or similar. Usual menu is not a sensible reading-->
+> "bread and butter" (the familiar bundle)
 
 **…an** is standalone-only on those phrase fences (*null* / *void*). Under `/ɡ/` `/h/`, **-n** forms join-derived relations; see [Join across roles](join-across-roles.md#join-relations).
 
