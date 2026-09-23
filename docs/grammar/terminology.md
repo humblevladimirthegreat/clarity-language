@@ -463,7 +463,7 @@ Right-close list closer; **conjunct** = listed item.
 
 Content `/v/` or `/ɡ/` `/h/` + join vowel + **-n**.
 
-[Join extras](join-extras.md)
+[Join-derived forms](join-derived-forms.md)
 
 ### Judgment benchmark
 

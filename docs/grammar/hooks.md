@@ -434,7 +434,7 @@ Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). S
 
 Several extra-noun hooks on one clause are several extras (*from* one landmark *toward* another). Extra-noun **-n** titles that extra as a proper-name phrase the same way; the landmark keeps its own ending.
 
-**Compare with:** company *with Ululon* is a [join-relation](join-extras.md#join-relations) (`han`). *Without* stays **`huan`**. *Like* stays [simile](relations.md#similative). *Between* stays a hosted pair plus a `/b/` join ([relations](relations.md#locative-relations)). *So that Ululon sits* is still **`holalam barl`**.
+**Compare with:** company *with Ululon* is a [join-relation](join-derived-forms.md#join-relations) (`han`). *Without* stays **`huan`**. *Like* stays [simile](relations.md#similative). *Between* stays a hosted pair plus a `/b/` join ([relations](relations.md#locative-relations)). *So that Ululon sits* is still **`holalam barl`**.
 
 ### Parallel chains
 <a id="parallel-chains"></a>

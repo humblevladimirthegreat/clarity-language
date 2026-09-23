@@ -465,7 +465,7 @@ Standalone **e** answers *who first* with no ranking (no favorite). Standalone *
 | **…or** (`zor` / …) | unspecified empty menu | *anything* / *anyone* |
 | **…ur** (`zur` / …) | unspecified empty leftover | *something else* / *someone else* |
 
-**Related form:** lone **`vun`** is a [join-act verb](join-extras.md#join-act-verbs). Yes/no, offer, emptiness, and fill-ask on a lone join: [questions](questions.md#yes-no-single-item-standalone).
+Yes/no, offer, emptiness, and fill-ask on a lone join: [questions](questions.md#yes-no-single-item-standalone). Join-derived content words such as **`vun`** are covered with the other **-n** forms in [join-derived forms](join-derived-forms.md).
 
 ### Rank joins
 <a id="rank-joins"></a>
@@ -605,27 +605,27 @@ When English would walk through events in time (*and then*), put ending **-n** o
 | `xuan` / `xuon` | sequence invert | soft complement inventory / free choice | **ua** / **uo** |
 | `xen` / `xaen` / `xoen` / `xuen` | sequence rank | soft ranked / tie / exclusive / reversal | **e** / **ae** / **oe** / **ue** |
 
-**Related form:** the same letters under `/v/` are [join-act verbs](join-extras.md#join-act-verbs); under `/ɡ/` `/h/` they are [join-relations](join-extras.md#join-relations). Ordinary content **-n** still [names](reference-suffix.md#proper-name--n) a person or titled frame.
+The `/x/` forms are clause joins; **-n** under `/v/`, `/ɡ/`, and `/h/` makes join-derived content words. See [join-derived forms](join-derived-forms.md) for their shapes and uses. Ordinary content **-n** still [names](reference-suffix.md#proper-name--n) a person or titled frame.
 
 ### VP and clause forms
 <a id="vp-clause-forms"></a>
 <a id="vowels--endings"></a>
 <a id="ending-senses-clause-joins"></a>
 
-Beginner already used `vam` and `xam`. The same vowels and endings under `/v/` and `/x/`:
+Beginner already used `vam` and `xam`. The same vowels and **-l** / **-m** / **-r** endings work under `/v/` and `/x/`. Clause **-n** forms are in [Sequence](#sequence); `/v/` **-n** forms are [join-act verbs](join-derived-forms.md#join-act-verbs).
 
-| | **-l** | **-m** | **-n** | **-r** |
-|---|--------|--------|--------|--------|
-| **a** | `val` / `xal` | `vam` / `xam` | `xan` sequence; **`van`** join-act | `var` / `xar` |
-| **o** | `vol` / `xol` | `vom` / `xom` | `xon` sequence; **`von`** join-act | `vor` / `xor` |
-| **u** | `vul` / `xul` | `vum` / `xum` | `xun` sequence; **`vun`** join-act | `vur` / `xur` |
-| **ao** | `vaol` / `xaol` | `vaom` / `xaom` | `xaon` sequence | — |
-| **ua** | `vual` / `xual` | `vuam` / `xuam` | `xuan` sequence | — |
-| **uo** | `vuol` / `xuol` | `vuom` / `xuom` | `xuon` sequence | — |
-| **e** | `vel` / `xel` | `vem` / `xem` | `xen` sequence; **`ven`** join-act | `ver` / `xer` |
-| **ae** | `vael` / `xael` | `vaem` / `xaem` | `xaen` sequence | — |
-| **oe** | `voel` / `xoel` | `voem` / `xoem` | `xoen` sequence | — |
-| **ue** | `vuel` / `xuel` | `vuem` / `xuem` | `xuen` sequence | — |
+| | **-l** | **-m** | **-r** |
+|---|--------|--------|--------|
+| **a** | `val` / `xal` | `vam` / `xam` | `var` / `xar` |
+| **o** | `vol` / `xol` | `vom` / `xom` | `vor` / `xor` |
+| **u** | `vul` / `xul` | `vum` / `xum` | `vur` / `xur` |
+| **ao** | `vaol` / `xaol` | `vaom` / `xaom` | — |
+| **ua** | `vual` / `xual` | `vuam` / `xuam` | — |
+| **uo** | `vuol` / `xuol` | `vuom` / `xuom` | — |
+| **e** | `vel` / `xel` | `vem` / `xem` | `ver` / `xer` |
+| **ae** | `vael` / `xael` | `vaem` / `xaem` | — |
+| **oe** | `voel` / `xoel` | `voem` / `xoem` | — |
+| **ue** | `vuel` / `xuel` | `vuem` / `xuem` | — |
 
 Each verb-phrase item is a verb plus its own object material. When every item is a bare verb, a `/d/` immediately after the join is SHARED over all verbs: `vejel vabelel vam dabelel` → *sees and tempts an apple*.
 
@@ -845,7 +845,7 @@ When a phrase list is an established bundle (*Stop–Drop–Roll*), end the join
 
 <!-- TODO: actually use stop-drop-roll or similar. Usual menu is not a sensible reading-->
 
-**…an** is standalone-only on those phrase fences (*null* / *void*). Under `/ɡ/` `/h/`, the same letters are [join-relations](join-extras.md#join-relations).
+**…an** is standalone-only on those phrase fences (*null* / *void*). Under `/ɡ/` `/h/`, **-n** forms join-derived relations; see [join-derived forms](join-derived-forms.md).
 
 **Compare with:** clause **`xan`** is *and then*, not a named package.
 
@@ -882,8 +882,8 @@ Join vowels stack at most two letters. Endings by role letter:
 | Role | Join endings | Notes |
 |-------|----------------|-------|
 | `/z/` `/d/` `/b/` `/w/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | phrase lists; **-n** is a named package |
-| `/ɡ/` `/h/` | same series as restrictors allow | [restrictors](restrictors.md#defined-core-full); **-n** is a [join-relation](join-extras.md#join-relations) |
-| `/v/` | **-l** / **-m** / **-r** | parallel **-n** is a [join-act verb](join-extras.md#join-act-verbs) |
+| `/ɡ/` `/h/` | same series as restrictors allow | [restrictors](restrictors.md#defined-core-full); join-derived **-n** forms are [relations](join-derived-forms.md#join-relations) |
+| `/v/` | **-l** / **-m** / **-r** | parallel **-n** forms are [join-act verbs](join-derived-forms.md#join-act-verbs) |
 | `/x/` | **-l** / **-m** / **-n** | stacked vowels take **-l** / **-m** / **-n**, not **-r** |
 
 Word shape: [phonology](phonology.md#phonotactics).
@@ -1020,5 +1020,5 @@ z-imprimatur | z-page | z-something-else
 - Prefix-less revision (*including* / *rather*): [hooks.md](hooks.md)
 - Applicability *when* under `/h/` `/w/`: [restrictors.md](restrictors.md)
 - Fill-ask and yes/no on single-item/standalone joins: [questions.md](questions.md)
-- Join-act verbs / join-relations: [join-extras.md](join-extras.md)
+- Join-derived content words: [join-derived-forms.md](join-derived-forms.md)
 - Titled phrases: [reference-suffix.md](reference-suffix.md#titled-phrases)

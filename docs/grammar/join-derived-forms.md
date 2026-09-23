@@ -1,7 +1,7 @@
-# Join extras
-<a id="join-extras"></a>
+# Join-derived forms
+<a id="join-derived-forms"></a>
 
-Content words that **name a join move** (*include*, *choose*, *without*).
+The join vowel series can also make content words ending in **-n**. Under `/v/`, the word names someone making a join move (*includes*, *chooses*); under `/ɡ/` or `/h/`, it frames a noun or event toward one `/b/` argument (*with*, *without*, *prioritizing*). These are content words, distinct from phrase and clause joins, which package lists or connect clauses. The full join patterns are in [joins](joins.md).
 
 ## Intermediate
 <a id="intermediate"></a>
@@ -20,6 +20,15 @@ When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*)
 **Related form:** packaging a list uses [joins](joins.md) (`zal` / `val` / `xal`, …).
 
 **Compare with:** *and then* between sentences uses clause [sequence](joins.md#sequence) (`xan`, …), not `van`.
+
+| Clause join | Join-act verb | Shared vowel move |
+|-------------|---------------|-------------------|
+| `xan` | `van` | add / include |
+| `xon` | `von` | one / choose |
+| `xun` | `vun` | undo / refuse |
+| `xen` | `ven` | order / prioritize |
+
+The `/x/` forms connect clauses and keep one speech act. Their `/v/` counterparts take an object and name an act on it. The remaining stacked `/v/` forms follow the same series in the inventory below.
 
 These are ordinary content verbs. Point back at a join-act you already used with a short resume or a full paraphrase. Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
 

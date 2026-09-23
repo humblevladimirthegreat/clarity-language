@@ -685,6 +685,6 @@ z-test-tube | v-sit | h-RESIDUE | h-predict | h-as-of.bookmark | b-that-clause |
 ## See also
 
 - Inclusive single-item **`…aom` / `…aol`** (*at least X* / *X is enough*): [joins.md](joins.md#single-item-phrase)
-- Join-relations **`han` / `huan` / `hon`**: [join-extras.md](join-extras.md#join-relations)
+- Join-relations **`han` / `huan` / `hon`**: [join-derived-forms.md](join-derived-forms.md#join-relations)
 - Restrictors **`hal` / `hual`**: [restrictors.md](restrictors.md)
 - Dependent clauses / **`barl`**: [dependents.md](dependents.md#dependent-clauses)

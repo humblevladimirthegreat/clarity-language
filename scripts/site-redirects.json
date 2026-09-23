@@ -24,6 +24,11 @@
       "from": "/grammar/revisers.html",
       "to": "/grammar/hooks.html",
       "note": "Public URL after renaming revisers.md to hooks.md."
+    },
+    {
+      "from": "/grammar/join-extras.html",
+      "to": "/grammar/join-derived-forms.html",
+      "note": "Public URL after renaming join-extras.md to join-derived-forms.md."
     }
   ]
 }

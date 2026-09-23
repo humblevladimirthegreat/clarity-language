@@ -544,5 +544,5 @@ z-Ululon | h-DECISION-modifiable | v-walk | h-as-of.ledger | b-_22,7
 ## See also
 
 - How you know a forecast: [knowing.md](knowing.md#evidentiality)
-- Choosing as an act: [join-extras.md](join-extras.md#join-act-verbs)
+- Choosing as an act: [join-derived-forms.md](join-derived-forms.md#join-act-verbs)
 - Autonomy as a need: [values.md](values.md#need-inventory)

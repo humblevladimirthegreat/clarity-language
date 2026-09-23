@@ -212,7 +212,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `intention.md` | Beginner | a chess club |
 | `intention.md` | Intermediate | a board meeting |
 | `intention.md` | Advanced | a delayed departure board |
-| `join-extras.md` | Intermediate | a relay race |
+| `join-derived-forms.md` | Intermediate | a relay race |
 | `special-vocabulary.md` | Intermediate | a festival |
 | `special-vocabulary.md` | Advanced | a philosophy seminar |
 | `numeric-derivation.md` | Advanced | a foundry |
@@ -337,7 +337,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 16 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; bare arrow roots = compass; gravity **`uba`/`odowo`**; name/listener anchor | Prefer `…xazawan` over silent speaker default. **`edone`/`ugobo`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
 | 16 | `x-compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *a few minutes* / passing) | Recycle [greeting](../grammar/reference-suffix.md#greeting) and [vocative](../grammar/clause.md#vocative). Not ability (`vuzunuxel`). Not values |
 | 16 | `roles.md` | Advanced | — | no Advanced stage | |
-| 17 | `join-extras.md` | Intermediate | **exists** | Join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 17) |
+| 17 | `join-derived-forms.md` | Intermediate | **exists** | Join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 17) |
 | 17 | `intention.md` | Intermediate | **exists** | **DECISION** **`ehege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
 | 17 | `intention.md` | Advanced | **exists** | PLAN / PREDICT against *as-of*; DECISION speech-now | Recycle relations Advanced |
 | 17 | `special-vocabulary.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value); numbered alternatives `uzebum`/`agegom`/`olalal` + `g#N` | Overlay *inventory* is not a drill. **Needs** values Beginner (recycle). Not universality (Advanced) |
@@ -381,7 +381,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Evidentiality / NOTIONAL / RESIDUE / FORMER | `knowing.md` Intermediate |
 | Viewpoint laterals | `roles.md` Intermediate |
 | Measure phrases / ranges / percent | `numbers-applied.md` Intermediate |
-| Join-act **`van`** / join-relation **`gan`** | `join-extras.md` Intermediate |
+| Join-act **`van`** / join-relation **`gan`** | `join-derived-forms.md` Intermediate |
 | **PLAN** / **PREDICT** | `intention.md` Beginner |
 | **DECISION** | `intention.md` Intermediate |
 | Emotion compose; numbered alternatives | `special-vocabulary.md` Intermediate |

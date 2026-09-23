@@ -36,7 +36,7 @@ const readingOrder = [
   { text: 'Role compounds', link: '/roles' },
   { text: 'x-compounds', link: '/x-compounds' },
   { text: 'Intention', link: '/intention' },
-  { text: 'Join extras', link: '/join-extras' },
+  { text: 'Join-derived forms', link: '/join-derived-forms' },
   { text: 'Special vocabulary', link: '/special-vocabulary' },
   { text: 'Numbers in use', link: '/numbers-applied' },
   { text: 'Numeric derivation', link: '/numeric-derivation' },
