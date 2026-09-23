@@ -55,7 +55,7 @@ Read **`docs/grammar/`** only, in stage order. [why-agelan.md](../grammar/why-ag
 15. [numbers.md](../grammar/numbers.md#beginner) · [comparatives.md](../grammar/comparatives.md#beginner) · [causation.md](../grammar/causation.md#beginner)
 16. [values.md](../grammar/values.md#beginner) · [ability.md](../grammar/ability.md#beginner) · [knowing.md](../grammar/knowing.md#beginner) · [roles.md](../grammar/roles.md#beginner) · [x-compounds.md](../grammar/x-compounds.md#beginner) · [intention.md](../grammar/intention.md#beginner)
 
-[join-derived-forms.md](../grammar/join-derived-forms.md) and leftover [special-vocabulary.md](../grammar/special-vocabulary.md) start at Intermediate (no Beginner slot). [intention.md](../grammar/intention.md) **DECISION** is Intermediate; plan / predict is Beginner. [numbers-applied.md](../grammar/numbers-applied.md) starts at Intermediate (depends on numbers). [numeric-derivation.md](../grammar/numeric-derivation.md) is Advanced-only.
+[join-across-roles.md](../grammar/join-across-roles.md) and leftover [special-vocabulary.md](../grammar/special-vocabulary.md) start at Intermediate (no Beginner slot). [intention.md](../grammar/intention.md) **DECISION** is Intermediate; plan / predict is Beginner. [numbers-applied.md](../grammar/numbers-applied.md) starts at Intermediate (depends on numbers). [numeric-derivation.md](../grammar/numeric-derivation.md) is Advanced-only.
 
 ### Intermediate then Advanced
 

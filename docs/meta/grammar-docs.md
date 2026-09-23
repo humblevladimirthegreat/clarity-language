@@ -132,7 +132,7 @@ Mark the one mix-up so it is easy to scan. Use **one** of these four starters (b
 |--------|--------|
 | **Compare with:** *if* / *because* use the poles above. | Sufficient / necessary / *if* / *because* **stay on** the joins. Exceptionlessness **stays on** universality. |
 | **For *could be*, use:** [MAY](../grammar/knowing.md#may) (`odoho`). This inventory is *how you know a world-claim*. | First-person *could be* **stays** MAY. |
-| **Related form:** packaging a list uses [joins](../grammar/joins.md) (`zal` / `val` / `xal`, …). | Phrase, VP, and clause **joins stay on** joins.md. |
+| **Related form:** packaging a list uses [joins](../grammar/joins.md) (`zal` / `val` / `xal`, …). | Phrase joins stay on joins.md; VP and clause joins go in join-across-roles.md. |
 | **Not the same job as:** [PLAN](../grammar/intention.md#plan-predict) (map grain). This mood marks **pick firmness**. | Intention map grain **stays PLAN**. |
 
 Place the labeled beat **after** the worked example for this form, not in the page lead. The lead says what **this** form does. **At most two** labeled beats per teach block. A third sibling is not a table — omit it; the learner can open that page.

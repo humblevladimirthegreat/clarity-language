@@ -27,8 +27,13 @@
     },
     {
       "from": "/grammar/join-extras.html",
-      "to": "/grammar/join-derived-forms.html",
-      "note": "Public URL after renaming join-extras.md to join-derived-forms.md."
+      "to": "/grammar/join-across-roles.html",
+      "note": "Public URL after renaming join-extras.md to join-across-roles.md."
+    },
+    {
+      "from": "/grammar/join-derived-forms.html",
+      "to": "/grammar/join-across-roles.html",
+      "note": "Public URL after renaming join-derived-forms.md to join-across-roles.md."
     }
   ]
 }

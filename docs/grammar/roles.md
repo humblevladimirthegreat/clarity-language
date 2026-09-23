@@ -637,5 +637,5 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 
 - Event resume vs participant: [pronouns.md](pronouns.md)
 - Mid-word **`x`** families: [x-compounds.md](x-compounds.md)
-- Join-relations as relation roots: [join-derived-forms.md](join-derived-forms.md#join-relations)
+- Join-relations as relation roots: [join-across-roles.md](join-across-roles.md#join-relations)
 - Can / can’t (vowel right of **`x`**): [ability.md](ability.md)

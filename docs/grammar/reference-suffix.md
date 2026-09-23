@@ -268,7 +268,7 @@ The rest of the role map (same **-n**):
 | `/j/` vocative + **-n** | address this named person, place, or title | `jululon`; titled group (*Team Alpha*) |
 | `/j/` interjection + **-n** | named formula or conventional call | **[Amen]**, branded catchphrases |
 
-**Compare with:** [join words](joins.md) use **-n** as join packaging or join content (fence joins, clause **sequence**, [join-act](join-derived-forms.md#join-act-verbs) / [join-relation](join-derived-forms.md#join-relations) stems). That is the one place **-n** is not a name.
+**Compare with:** [join words](joins.md) use **-n** as join packaging or join content (fence joins, clause **sequence**, [join-act](join-across-roles.md#join-act-verbs) / [join-relation](join-across-roles.md#join-relations) stems). That is the one place **-n** is not a name.
 
 ### Titled phrases (hook, join, span)
 <a id="titled-phrases"></a>

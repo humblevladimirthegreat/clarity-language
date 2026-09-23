@@ -380,7 +380,7 @@ z-Ululon | v-scream | z-Azawan | v-lie | x-and.open
 
 ### Full single-item and standalone inventories
 
-Beginner already used single-item *just X* and standalone *nothing* / *everything*. The tables below are the rest of those phrase-level readings. Same arity under `/v/` and `/x/`: [VP and clause forms](#vp-clause-forms).
+Beginner already used single-item *just X* and standalone *nothing* / *everything*. The tables below are the rest of those phrase-level readings. The series also works under `/v/` and `/x/`: [Join across roles](join-across-roles.md#vp-clause-forms).
 
 **Rank — single-item**
 
@@ -465,7 +465,7 @@ Standalone **e** answers *who first* with no ranking (no favorite). Standalone *
 | **…or** (`zor` / …) | unspecified empty menu | *anything* / *anyone* |
 | **…ur** (`zur` / …) | unspecified empty leftover | *something else* / *someone else* |
 
-Yes/no, offer, emptiness, and fill-ask on a lone join: [questions](questions.md#yes-no-single-item-standalone). Join-derived content words such as **`vun`** are covered with the other **-n** forms in [join-derived forms](join-derived-forms.md).
+Yes/no, offer, emptiness, and fill-ask on a lone join: [questions](questions.md#yes-no-single-item-standalone). Join series across roles such as **`vun`** are covered with the other **-n** forms in [join-series forms](join-across-roles.md).
 
 ### Rank joins
 <a id="rank-joins"></a>
@@ -588,61 +588,6 @@ When one list sits inside another (*(tea or coffee) and water*), write the inner
 | flat | `zadedal zogovel zunudel zol` | *tea or coffee or water* |
 | nested | `zadedal zogovel zol zunudel zal` | *(tea or coffee) and water* |
 
-Same order at phrase, verb-phrase, and clause level.
-
-### Sequence (`-n`, clause only)
-<a id="sequence"></a>
-<a id="clause-sequence"></a>
-
-When English would walk through events in time (*and then*), put ending **-n** on a clause continue join (`/x/`). Narrative *and then* is **`xan`**. The clauses keep one speech act; this **-n** orders them rather than naming a person.
-
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| `xan` | sequence add | *and then…* | **a** ≈ add |
-| `xon` | sequence menu | *or maybe…* | **o** ≈ one |
-| `xun` | sequence deny | soft *not* / *none of… as I recall…* | **u** ≈ undo |
-| `xaon` | sequence inclusive | *and/or maybe…* | **ao** ≈ add then one |
-| `xuan` / `xuon` | sequence invert | soft complement inventory / free choice | **ua** / **uo** |
-| `xen` / `xaen` / `xoen` / `xuen` | sequence rank | soft ranked / tie / exclusive / reversal | **e** / **ae** / **oe** / **ue** |
-
-The `/x/` forms are clause joins; **-n** under `/v/`, `/ɡ/`, and `/h/` makes join-derived content words. See [join-derived forms](join-derived-forms.md) for their shapes and uses. Ordinary content **-n** still [names](reference-suffix.md#proper-name--n) a person or titled frame.
-
-### VP and clause forms
-<a id="vp-clause-forms"></a>
-<a id="vowels--endings"></a>
-<a id="ending-senses-clause-joins"></a>
-
-Beginner already used `vam` and `xam`. The same vowels and **-l** / **-m** / **-r** endings work under `/v/` and `/x/`. Clause **-n** forms are in [Sequence](#sequence); `/v/` **-n** forms are [join-act verbs](join-derived-forms.md#join-act-verbs).
-
-| | **-l** | **-m** | **-r** |
-|---|--------|--------|--------|
-| **a** | `val` / `xal` | `vam` / `xam` | `var` / `xar` |
-| **o** | `vol` / `xol` | `vom` / `xom` | `vor` / `xor` |
-| **u** | `vul` / `xul` | `vum` / `xum` | `vur` / `xur` |
-| **ao** | `vaol` / `xaol` | `vaom` / `xaom` | — |
-| **ua** | `vual` / `xual` | `vuam` / `xuam` | — |
-| **uo** | `vuol` / `xuol` | `vuom` / `xuom` | — |
-| **e** | `vel` / `xel` | `vem` / `xem` | `ver` / `xer` |
-| **ae** | `vael` / `xael` | `vaem` / `xaem` | — |
-| **oe** | `voel` / `xoel` | `voem` / `xoem` | — |
-| **ue** | `vuel` / `xuel` | `vuem` / `xuem` | — |
-
-Each verb-phrase item is a verb plus its own object material. When every item is a bare verb, a `/d/` immediately after the join is SHARED over all verbs: `vejel vabelel vam dabelel` → *sees and tempts an apple*.
-
-An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, covers every item. `/h/` inside an item covers that verb phrase only.
-
-`/x/` keeps the **same speech act**. Later clauses inherit the opener and omit `/j/` (including recoverable **`jal`**).
-
-> `zazawan vawalal zululon vurunul xan.`
->
-> z-Azawan | v-walk | z-Ululon | v-run | x-and-then
->
-> "Azawan walks and then Ululon runs."
-
-> `zazawan vawalal zululon vurunul xol zuhubun velebel xal.`
->
-> "(Azawan walks or Ululon runs) and Uhubun sleeps."
-
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
@@ -703,12 +648,12 @@ z-Azawan | z-Ululon | z-and | g-happy
 z-wine | z-flower | z-or-exactly-one | z-ring | z-and
 :::
 
-**5.** *Azawan sees Uhubun and then Ululon kisses Uhubun.*
+**5.** *Azawan and Ululon see Uhubun.*
 
 ::: details Show answer
-`zazawan duhubun vejel zululon duhubun vuguzul xan.`
+`zazawan zululon zal duhubun vejel.`
 
-z-Azawan | d-Uhubun | v-see | z-Ululon | d-Uhubun | v-kiss | x-and-then
+z-Azawan | z-Ululon | z-and | d-Uhubun | v-see
 :::
 
 **6.** *at least Uhubun*
@@ -782,13 +727,13 @@ v-kiss | v-punch | v-and | v-not
 *not kiss, and not punch*
 :::
 
-**6.** `zazawan duhubun vejel zululon duhubun vuguzul xol zuhubun vajul xal.`
+**6.** `zuwunel zovowel zol.`
 
 ::: details Show answer
 
-z-Azawan | d-Uhubun | v-see | z-Ululon | d-Uhubun | v-kiss | x-or-exactly-one | z-Uhubun | v-sit | x-and
+z-wine | z-flower | z-or-exactly-one
 
-*(Azawan sees Uhubun or Ululon kisses Uhubun) and Uhubun sits.*
+*Pick one of wine or flower.*
 :::
 
 **7.** `zuwunel zovowel zunurul zel.`
@@ -845,7 +790,7 @@ When a phrase list is an established bundle (*Stop–Drop–Roll*), end the join
 
 <!-- TODO: actually use stop-drop-roll or similar. Usual menu is not a sensible reading-->
 
-**…an** is standalone-only on those phrase fences (*null* / *void*). Under `/ɡ/` `/h/`, **-n** forms join-derived relations; see [join-derived forms](join-derived-forms.md).
+**…an** is standalone-only on those phrase fences (*null* / *void*). Under `/ɡ/` `/h/`, **-n** forms join-derived relations; see [Join across roles](join-across-roles.md#join-relations).
 
 **Compare with:** clause **`xan`** is *and then*, not a named package.
 
@@ -882,9 +827,9 @@ Join vowels stack at most two letters. Endings by role letter:
 | Role | Join endings | Notes |
 |-------|----------------|-------|
 | `/z/` `/d/` `/b/` `/w/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | phrase lists; **-n** is a named package |
-| `/ɡ/` `/h/` | same series as restrictors allow | [restrictors](restrictors.md#defined-core-full); join-derived **-n** forms are [relations](join-derived-forms.md#join-relations) |
-| `/v/` | **-l** / **-m** / **-r** | parallel **-n** forms are [join-act verbs](join-derived-forms.md#join-act-verbs) |
-| `/x/` | **-l** / **-m** / **-n** | stacked vowels take **-l** / **-m** / **-n**, not **-r** |
+| `/ɡ/` `/h/` | same series as restrictors allow | [restrictors](restrictors.md#defined-core-full); **-n** forms are [join-relations](join-across-roles.md#join-relations) |
+| `/v/` | **-l** / **-m** / **-r** | parallel **-n** forms are [join-act verbs](join-across-roles.md#join-act-verbs) |
+| `/x/` | **-l** / **-m** / **-n** | clause forms: [Join across roles](join-across-roles.md); stacked vowels take **-l** / **-m** / **-n**, not **-r** |
 
 Word shape: [phonology](phonology.md#phonotactics).
 
@@ -900,13 +845,13 @@ These limits apply to every join.
 | One right-close per flat list | nest as [fence nesting](#fence-nesting) |
 | Shared modifiers | only immediately after each join |
 | Phrase **-r** | only **…ar** / **…or** / **…er** / **…ur** |
-| Verb+object packages | verb-phrase `/v/`; full sentences use `/x/` |
+| Verb+object packages | verb-phrase `/v/`; full sentences use `/x/` ([forms](join-across-roles.md)) |
 | Same role letter on every item | in-clause *including* / *rather* / *instead* / *except* are [hooks](hooks.md) |
 | Several manners on `/h/` `/w/` | juxtaposition (`hadazal howol`) |
 
 **Compare with:** prefix-less **`al`** / **`am`** / … are [hooks](hooks.md). Under `/h/` `/w/`, the unit is a [restrictor](restrictors.md), not sibling *and*.
 
-*Because* / *if* use `/h/` plus `/b/` [**`barl`**](dependents.md#dependent-clauses). Floating `/h/` inside a noun, adjective, or `/b/` join does not end the list. Verb-chain `/h/` scope: [VP and clause forms](#vp-clause-forms). Each clause-level item is a full clause body.
+*Because* / *if* use `/h/` plus `/b/` [**`barl`**](dependents.md#dependent-clauses). Floating `/h/` inside a noun, adjective, or `/b/` join does not end the list. Verb-chain `/h/` scope: [VP and clause forms](join-across-roles.md#vp-clause-forms). Each clause-level item is a full clause body.
 
 
 ### Translation practice
@@ -1020,5 +965,5 @@ z-imprimatur | z-page | z-something-else
 - Prefix-less revision (*including* / *rather*): [hooks.md](hooks.md)
 - Applicability *when* under `/h/` `/w/`: [restrictors.md](restrictors.md)
 - Fill-ask and yes/no on single-item/standalone joins: [questions.md](questions.md)
-- Join-derived content words: [join-derived-forms.md](join-derived-forms.md)
+- Join series across roles: [join-across-roles.md](join-across-roles.md)
 - Titled phrases: [reference-suffix.md](reference-suffix.md#titled-phrases)

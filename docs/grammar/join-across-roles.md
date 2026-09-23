@@ -1,10 +1,63 @@
-# Join-derived forms
-<a id="join-derived-forms"></a>
+# Join across roles
+<a id="join-across-roles"></a>
 
-The join vowel series can also make content words ending in **-n**. Under `/v/`, the word names someone making a join move (*includes*, *chooses*); under `/ɡ/` or `/h/`, it frames a noun or event toward one `/b/` argument (*with*, *without*, *prioritizing*). These are content words, distinct from phrase and clause joins, which package lists or connect clauses. The full join patterns are in [joins](joins.md).
+The same join vowel series works across roles: `/v/` packages verb phrases, `/x/` connects clauses, and **-n** under `/v/`, `/ɡ/`, or `/h/` makes join-derived content words. This page covers those forms together. Phrase fences and their set, rank, arity, and scope patterns are in [joins](joins.md).
 
 ## Intermediate
 <a id="intermediate"></a>
+
+### Sequence (`-n`, clause only)
+<a id="sequence"></a>
+<a id="clause-sequence"></a>
+
+When English would walk through events in time (*and then*), put ending **-n** on a clause continue join (`/x/`). Narrative *and then* is **`xan`**. The clauses keep one speech act; this **-n** orders them rather than naming a person.
+
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| `xan` | sequence add | *and then…* | **a** ≈ add |
+| `xon` | sequence menu | *or maybe…* | **o** ≈ one |
+| `xun` | sequence deny | soft *not* / *none of… as I recall…* | **u** ≈ undo |
+| `xaon` | sequence inclusive | *and/or maybe…* | **ao** ≈ add then one |
+| `xuan` / `xuon` | sequence invert | soft complement inventory / free choice | **ua** / **uo** |
+| `xen` / `xaen` / `xoen` / `xuen` | sequence rank | soft ranked / tie / exclusive / reversal | **e** / **ae** / **oe** / **ue** |
+
+The `/x/` forms are clause joins; **-n** under `/v/`, `/ɡ/`, and `/h/` makes join-derived content words. See [join-act verbs](#join-act-verbs) and [join-relations](#join-relations) for those forms. Ordinary content **-n** still [names](reference-suffix.md#proper-name--n) a person or titled frame.
+
+### Verb-phrase and clause forms
+<a id="vp-clause-forms"></a>
+<a id="vowels--endings"></a>
+<a id="ending-senses-clause-joins"></a>
+
+Beginner already used `vam` and `xam`. The same vowels and **-l** / **-m** / **-r** endings work under `/v/` and `/x/`. Clause **-n** forms are in [Sequence](#sequence); `/v/` **-n** forms are [join-act verbs](join-across-roles.md#join-act-verbs).
+
+| | **-l** | **-m** | **-r** |
+|---|--------|--------|--------|
+| **a** | `val` / `xal` | `vam` / `xam` | `var` / `xar` |
+| **o** | `vol` / `xol` | `vom` / `xom` | `vor` / `xor` |
+| **u** | `vul` / `xul` | `vum` / `xum` | `vur` / `xur` |
+| **ao** | `vaol` / `xaol` | `vaom` / `xaom` | — |
+| **ua** | `vual` / `xual` | `vuam` / `xuam` | — |
+| **uo** | `vuol` / `xuol` | `vuom` / `xuom` | — |
+| **e** | `vel` / `xel` | `vem` / `xem` | `ver` / `xer` |
+| **ae** | `vael` / `xael` | `vaem` / `xaem` | — |
+| **oe** | `voel` / `xoel` | `voem` / `xoem` | — |
+| **ue** | `vuel` / `xuel` | `vuem` / `xuem` | — |
+
+Each verb-phrase item is a verb plus its own object material. When every item is a bare verb, a `/d/` immediately after the join is SHARED over all verbs: `vejel vabelel vam dabelel` → *sees and tempts an apple*.
+
+An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, covers every item. `/h/` inside an item covers that verb phrase only.
+
+`/x/` keeps the **same speech act**. Later clauses inherit the opener and omit `/j/` (including recoverable **`jal`**).
+
+> `zazawan vawalal zululon vurunul xan.`
+>
+> z-Azawan | v-walk | z-Ululon | v-run | x-and-then
+>
+> "Azawan walks and then Ululon runs."
+
+> `zazawan vawalal zululon vurunul xol zuhubun velebel xal.`
+>
+> "(Azawan walks or Ululon runs) and Uhubun sleeps."
 
 ### Join-act verbs
 <a id="join-act-verbs"></a>
@@ -19,7 +72,7 @@ When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*)
 
 **Related form:** packaging a list uses [joins](joins.md) (`zal` / `val` / `xal`, …).
 
-**Compare with:** *and then* between sentences uses clause [sequence](joins.md#sequence) (`xan`, …), not `van`.
+**Compare with:** *and then* between sentences uses clause [sequence](join-across-roles.md#sequence) (`xan`, …), not `van`.
 
 | Clause join | Join-act verb | Shared vowel move |
 |-------------|---------------|-------------------|
@@ -144,12 +197,12 @@ z-Azawan | d-hand | v-choose
 z-Ululon | h-including | b-Uhubun | v-run
 :::
 
-**5.** *Azawan excludes the medal.*
+**5.** *Azawan punches, then Ululon screams.*
 
 ::: details Show answer
-`zazawan demedal vuan.`
+`zazawan vubunul zululon vazagal xan.`
 
-z-Azawan | d-medal | v-excludes
+z-Azawan | v-punch | z-Ululon | v-scream | x-and-then
 :::
 
 **6.** *A team exclusive for Uhubun.*
@@ -160,12 +213,12 @@ z-Azawan | d-medal | v-excludes
 z-teamwork | g-exclusive-for | b-Uhubun
 :::
 
-**7.** *Ululon bars the finish line (anything else is fine).*
+**7.** *Ululon runs and punches.*
 
 ::: details Show answer
-`zululon dunuhul vuon.`
+`zululon vurunul vubunul vam.`
 
-z-Ululon | d-finish-line | v-bars
+z-Ululon | v-run | v-punch | v-and.open
 :::
 
 **8.** *Ululon punches, refusing the hand.*

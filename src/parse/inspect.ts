@@ -414,7 +414,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     return { line: "need stimulus", href: "values.html#stimulus" };
   }
   if (word.reading === "joinAct" || word.reading === "joinRelation") {
-    return { line: "join-derived form", href: "join-derived-forms.html" };
+    return { line: "join-series form", href: "join-across-roles.html" };
   }
   if (word.ending === "r" && word.reading !== "value" && word.reading !== "ability" && word.reading !== "greeting") {
     return { line: "anaphor", href: "pronouns.html" };

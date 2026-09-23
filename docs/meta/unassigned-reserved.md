@@ -92,11 +92,11 @@ Spellings under `/h/` / `/w/` that share the join series but have **no circumsta
 
 ### `-n` under `/w/`
 
-- `/w/`…**-n** — reserved, no circumstance gloss (`/h/`…**-n** = [join-relations](../grammar/join-derived-forms.md#join-relations), not restrictors)
+- `/w/`…**-n** — reserved, no circumstance gloss (`/h/`…**-n** = [join-relations](../grammar/join-across-roles.md#join-relations), not restrictors)
 
 ### Join leftovers
 
-Under `/h/` / `/w/`, join spellings beyond the [defined restrictor core](../grammar/restrictors.md#defined-core-full) and beyond [join-relations](../grammar/join-derived-forms.md#join-relations) on `/h/`…**-n** — reserved slot, no gloss. See also [phrase join inventory](../grammar/joins.md#phrase-reserved-forms).
+Under `/h/` / `/w/`, join spellings beyond the [defined restrictor core](../grammar/restrictors.md#defined-core-full) and beyond [join-relations](../grammar/join-across-roles.md#join-relations) on `/h/`…**-n** — reserved slot, no gloss. See also [phrase join inventory](../grammar/joins.md#phrase-reserved-forms).
 
 ## Role compounds
 

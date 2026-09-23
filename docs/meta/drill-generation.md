@@ -212,7 +212,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `intention.md` | Beginner | a chess club |
 | `intention.md` | Intermediate | a board meeting |
 | `intention.md` | Advanced | a delayed departure board |
-| `join-derived-forms.md` | Intermediate | a relay race |
+| `join-across-roles.md` | Intermediate | a relay race |
 | `special-vocabulary.md` | Intermediate | a festival |
 | `special-vocabulary.md` | Advanced | a philosophy seminar |
 | `numeric-derivation.md` | Advanced | a foundry |
@@ -311,7 +311,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 9 | `plurality.md` | Advanced | — | no Advanced stage | |
 | 10 | `predication.md` | Intermediate | **exists** | Classification packaging; **SAME** endings / open **-m** | |
 | 10 | `predication.md` | Advanced | skip | boundaries | |
-| 11 | `joins.md` | Intermediate | **exists** | Full single-item/standalone; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains; SHARED after join; `^` islands; fence nesting; clause **sequence** (`xan`); VP/clause forms | Sample **decisions**, not every H3. 6–8 items |
+| 11 | `joins.md` | Intermediate | **exists** | Full single-item/standalone; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains; SHARED after join; `^` islands; fence nesting | Sample **decisions**, not every H3. 6–8 items |
 | 11 | `joins.md` | Advanced | **exists** | Named phrase **-n**; one rare-arity or reserved contrast from this stage | 4–6 items |
 | 12 | `questions.md` | Intermediate | **exists** | Fuller polar inventory; confirming a negative; fill-ask arity; occasion **`har`**; yes/no with single-item/standalone; fill-ask answers | |
 | 12 | `questions.md` | Advanced | **exists** | Polar contrasts; single-item/standalone inventory under question | 4–6 items |
@@ -337,7 +337,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 16 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; bare arrow roots = compass; gravity **`uba`/`odowo`**; name/listener anchor | Prefer `…xazawan` over silent speaker default. **`edone`/`ugobo`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
 | 16 | `x-compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *a few minutes* / passing) | Recycle [greeting](../grammar/reference-suffix.md#greeting) and [vocative](../grammar/clause.md#vocative). Not ability (`vuzunuxel`). Not values |
 | 16 | `roles.md` | Advanced | — | no Advanced stage | |
-| 17 | `join-derived-forms.md` | Intermediate | **exists** | Join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 17) |
+| 17 | `join-across-roles.md` | Intermediate | **exists** | Verb-phrase and clause joins (`vam`, `xam`, sequence `xan`); join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 17) |
 | 17 | `intention.md` | Intermediate | **exists** | **DECISION** **`ehege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
 | 17 | `intention.md` | Advanced | **exists** | PLAN / PREDICT against *as-of*; DECISION speech-now | Recycle relations Advanced |
 | 17 | `special-vocabulary.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value); numbered alternatives `uzebum`/`agegom`/`olalal` + `g#N` | Overlay *inventory* is not a drill. **Needs** values Beginner (recycle). Not universality (Advanced) |
@@ -364,7 +364,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Letter/full-root **-r** algorithm; **`ugobo`/`edone`/`aha`/`enenu`** | `pronouns.md` Beginner |
 | Associative **-x** | `plurality.md` Beginner |
 | **SAME** `gonunul` | `predication.md` Beginner |
-| Phrase/VP/clause joins, **`zal`/`zam`/`zel`**, negation **`u`** | `joins.md` Beginner |
+| Phrase joins, **`zal`/`zam`/`zel`**, negation **`u`** | `joins.md` Beginner |
 | Fill-ask join **-r** (`zar` / `var` / `xar`); polar **`juel`/`jaol`** as the *system* | `questions.md` Beginner |
 | Extra-noun hook compounds (`awalalul`) | `hooks.md` Advanced |
 | **`hal`/`hual`/`har`** | `restrictors.md` Beginner |
@@ -381,7 +381,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Evidentiality / NOTIONAL / RESIDUE / FORMER | `knowing.md` Intermediate |
 | Viewpoint laterals | `roles.md` Intermediate |
 | Measure phrases / ranges / percent | `numbers-applied.md` Intermediate |
-| Join-act **`van`** / join-relation **`gan`** | `join-derived-forms.md` Intermediate |
+| Join-act **`van`** / join-relation **`gan`** | `join-across-roles.md` Intermediate |
 | **PLAN** / **PREDICT** | `intention.md` Beginner |
 | **DECISION** | `intention.md` Intermediate |
 | Emotion compose; numbered alternatives | `special-vocabulary.md` Intermediate |

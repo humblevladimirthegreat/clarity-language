@@ -463,7 +463,7 @@ Right-close list closer; **conjunct** = listed item.
 
 Content `/v/` or `/ɡ/` `/h/` + join vowel + **-n**.
 
-[Join-derived forms](join-derived-forms.md)
+[Join across roles](join-across-roles.md)
 
 ### Judgment benchmark
 
@@ -684,7 +684,7 @@ Clause-pole **`olala`**: intended outcome of the host (*so that Ululon sits*; NP
 
 Clause join **-n** (`xan` *and then*).
 
-[Joins](joins.md#sequence)
+[Joins](join-across-roles.md#sequence)
 
 ### SHARED scale / SHARED continuum
 
