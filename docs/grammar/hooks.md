@@ -358,7 +358,7 @@ Beginner already used closed **-l** and open **-m** for how complete B is, or ho
 | **o** (*instead*) | `ol`: *Instead, …* | `om`: *Instead, …* and maybe more |
 | **u** (*except*) | `ul`: *Except, …* | `um`: *Except, …* and maybe more |
 
-Hook **-n** is only when the hook **titles** a proper-name phrase ([**-n**](reference-suffix.md#titled-phrases)): a store, a title, a handle. Ordinary talk keeps **-l** / **-m**. The sides keep their usual endings (kinds **-l**, abstracts **-m**, a name still **-n**).
+Hook **-n** is only when the hook **titles** a proper-name phrase ([**-n**](word-endings.md#titled-phrases)): a store, a title, a handle. Ordinary talk keeps **-l** / **-m**. The sides keep their usual endings (kinds **-l**, abstracts **-m**, a name still **-n**).
 
 > `dadedal on dogovel.`
 >
@@ -886,6 +886,6 @@ z-Ululon | d-boat | v-enter
 - List joins (*and* / *or*): [joins.md](joins.md)
 - Hosted leftover relations (*like*, *between*, *of*): [relations.md](relations.md)
 - *When* this hook counts: [restrictors.md](restrictors.md)
-- Prefix-less citation: [reference-suffix.md](reference-suffix.md#citation-forms)
-- Titled phrases: [reference-suffix.md](reference-suffix.md#titled-phrases)
+- Prefix-less citation: [word-endings.md](word-endings.md#citation-forms)
+- Titled phrases: [word-endings.md](word-endings.md#titled-phrases)
 - Dictionary compounds without **`x`**: [x-compounds.md](x-compounds.md#lexical-compounds)

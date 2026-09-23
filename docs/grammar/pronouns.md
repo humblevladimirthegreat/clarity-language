@@ -1,6 +1,6 @@
 # Pronouns
 
-English *he*, *she*, *it*, and *they* point back to someone or something already named. You already write **-l** / **-m** / **-n** on a [citation](reference-suffix.md) and on content words. The remaining last letter is **-r**: keep the role letter for this sentence’s slot (subject, object, and so on), then enough of the earlier word’s root to pick the right person or thing. That lets you skip repeating the full name while the listener still knows who you mean.
+English *he*, *she*, *it*, and *they* point back to someone or something already named. You already write **-l** / **-m** / **-n** on a [citation](word-endings.md) and on content words. The remaining last letter is **-r**: keep the role letter for this sentence’s slot (subject, object, and so on), then enough of the earlier word’s root to pick the right person or thing. That lets you skip repeating the full name while the listener still knows who you mean.
 
 ## Beginner
 <a id="beginner"></a>
@@ -42,7 +42,7 @@ When that short stem would match the **wrong** recent word, use a **full-root re
 
 Most of the time you name people with a proper name (`zazawan`, `zululon`) and resume with **-r**. A few closed roots instead name **roles in this conversation**: who is speaking, who is being spoken to, you-and-I together, or a nonspecific *someone*. They take the usual role letter for the slot they fill in the clause (subject, object, and so on). Person roles default to **-n**.
 
-When a proper name is available, prefer that name (and its **-r** resume), including for talking about yourself: [proper name](reference-suffix.md#proper-name--n).
+When a proper name is available, prefer that name (and its **-r** resume), including for talking about yourself: [proper name](word-endings.md#proper-name--n).
 
 (Ululon speaking)
 

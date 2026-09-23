@@ -1,6 +1,6 @@
 # Plurality
 
-English *they* and *the Smiths* often mean a named person plus people around them, not a counted list. Agalan marks that **associative group** with optional **-x** after the [reference suffix](reference-suffix.md).
+English *they* and *the Smiths* often mean a named person plus people around them, not a counted list. Agalan marks that **associative group** with optional **-x** after the [word ending](word-endings.md).
 
 ## Beginner
 <a id="beginner"></a>
@@ -572,4 +572,4 @@ z-Ululon-x | v-fight-x
 ## See also
 
 - Inclusive *we* **`aha`**: [pronouns.md](pronouns.md#special-pronouns)
-- Endings before **-x**: [reference-suffix.md](reference-suffix.md)
+- Endings before **-x**: [word-endings.md](word-endings.md)

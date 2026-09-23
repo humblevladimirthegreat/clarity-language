@@ -24,7 +24,7 @@ To call someone into the turn, put `/j/` before their name, which ends in **-n**
 >
 > "Ululon!" (calling Ululon)
 
-**Compare with:** a [greeting](reference-suffix.md#greeting) is the speaker’s name as a citation (`azawan.`). Calling Ululon uses `/j/`; saying Ululon walks uses `/z/` (`zazawan vawalal`).
+**Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`azawan.`). Calling Ululon uses `/j/`; saying Ululon walks uses `/z/` (`zazawan vawalal`).
 
 ### Interjections: conventional calls
 <a id="interjections"></a>

@@ -163,7 +163,7 @@ Keeping those forks apart helps you stop treating wishes and habits as if the wo
 
 English *hi* hides whether you can stay, whether this is a few minutes, whether this is one ask, or whether you are only passing.
 
-A [greeting](reference-suffix.md#greeting) is your name as a citation (`azawan.`). Calling someone is a [vocative](speech-moves.md#vocative). A [greeting bid](x-compounds.md#greeting-bid) adds one vowel: presence, a few minutes, one slot, or passing. The other person answers with a bid; the **lesser** bid is the one that holds. The overlay names the **encounter**.
+A [greeting](word-endings.md#greeting) is your name as a citation (`azawan.`). Calling someone is a [vocative](speech-moves.md#vocative). A [greeting bid](x-compounds.md#greeting-bid) adds one vowel: presence, a few minutes, one slot, or passing. The other person answers with a bid; the **lesser** bid is the one that holds. The overlay names the **encounter**.
 
 Marking the opening that way helps you consent to the talk without treating a wave as a blank check on time.
 
@@ -229,4 +229,4 @@ Even if the language does lose its potency over a century, having a positive imp
 ## Next
 <a id="next"></a>
 
-Continue with [introduction.md](introduction.md) for the name, grammar design, and how to learn these docs, then [phonology.md](phonology.md#beginner) for letters, [reference-suffix.md](reference-suffix.md#beginner) for citation endings, [clause.md](clause.md#beginner) for clause shape, then [dependents.md](dependents.md#beginner) and [relations.md](relations.md#beginner). Community updates: [Agalan on Reddit](https://www.reddit.com/r/ClarityLanguage).
+Continue with [introduction.md](introduction.md) for the name, grammar design, and how to learn these docs, then [phonology.md](phonology.md#beginner) for letters, [word-endings.md](word-endings.md#beginner) for citation endings, [clause.md](clause.md#beginner) for clause shape, then [dependents.md](dependents.md#beginner) and [relations.md](relations.md#beginner). Community updates: [Agalan on Reddit](https://www.reddit.com/r/ClarityLanguage).

@@ -87,7 +87,7 @@ That ending is **changeability**: how lasting that detriment is. If you do not k
 
 A values word is a need root with mid-word **`x`**, a stance vowel, and an ending. `/ɡ/` talks about a **noun you keep**; `/h/` talks about the **clause**. An unowned noun uses [stimulus](#stimulus) **`gobobum`** and the same need word on `/w/` immediately before it.
 
-**-n** is ordinary [proper](reference-suffix.md#proper-name--n). **-l / -m / -r** follow that stance’s table.
+**-n** is ordinary [proper](word-endings.md#proper-name--n). **-l / -m / -r** follow that stance’s table.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -333,7 +333,7 @@ That ending is **why you think a move is wanted**. Ordinary advice uses **-m**: 
 ### Motive (`xo`): preference standing
 <a id="value-preference"></a>
 
-English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/h/` on the clause with the need root, mid-word **`x`**, **`o`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or from protecting against something that detracts from the need. If you do not know the standing, use **-m**. **-n** is ordinary [proper](reference-suffix.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…xom`** plus **`hual`**).
+English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/h/` on the clause with the need root, mid-word **`x`**, **`o`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or from protecting against something that detracts from the need. If you do not know the standing, use **-m**. **-n** is ordinary [proper](word-endings.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…xom`** plus **`hual`**).
 
 > `zazawan vezehel honogoxom.`
 >

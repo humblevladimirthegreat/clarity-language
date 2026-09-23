@@ -1,7 +1,7 @@
 # Proposal: named-handle coinage (VC harvest)
 
-**Status:** PROPOSED (not current language). Grammar today: a handle is one **published** root + **-n**; long titles stay [phrasal proper names](../grammar/reference-suffix.md#phrasal-proper-names) / [named handles](../grammar/reference-suffix.md#named-handles).  
-**Related:** [reference-suffix.md](../grammar/reference-suffix.md#named-handles), [spans.md](../grammar/spans.md#loans) (mention vs office **-n**), [pronouns.md](../grammar/pronouns.md) (short resume = through the 2nd vowel)  
+**Status:** PROPOSED (not current language). Grammar today: a handle is one **published** root + **-n**; long titles stay [phrasal proper names](../grammar/word-endings.md#phrasal-proper-names) / [named handles](../grammar/word-endings.md#named-handles).  
+**Related:** [word-endings.md](../grammar/word-endings.md#named-handles), [spans.md](../grammar/spans.md#loans) (mention vs office **-n**), [pronouns.md](../grammar/pronouns.md) (short resume = through the 2nd vowel)  
 **Design authority:** none until absorbed. Speakers currently do **not** mint new `V(CV)+` stems.
 
 ## Motivation
@@ -60,6 +60,6 @@ Current language does not ask speakers to invent roots. Handles already work as 
 ## Absorb sketch (if yes)
 
 1. Decide arity (two-root only vs n-ary).
-2. Put the algorithm on [reference-suffix.md](../grammar/reference-suffix.md) Advanced; keep Beginner/Intermediate handles as published roots until that band.
+2. Put the algorithm on [word-endings.md](../grammar/word-endings.md) Advanced; keep Beginner/Intermediate handles as published roots until that band.
 3. Grammar-doc lint: either allow listed harvest products (`abulo`, …) or only show them inside mention spans.
 4. Do not add harvest stems to the published lexicon as senses.

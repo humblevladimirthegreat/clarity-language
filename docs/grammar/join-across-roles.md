@@ -21,7 +21,7 @@ When English would walk through events in time (*and then*), put ending **-n** o
 | `xuan` / `xuon` | sequence invert | soft complement inventory / free choice | **ua** / **uo** |
 | `xen` / `xaen` / `xoen` / `xuen` | sequence rank | soft ranked / tie / exclusive / reversal | **e** / **ae** / **oe** / **ue** |
 
-The `/x/` forms are clause joins; **-n** under `/v/`, `/ɡ/`, and `/h/` makes join-derived content words. See [join-act verbs](#join-act-verbs) and [join-relations](#join-relations) for those forms. Ordinary content **-n** still [names](reference-suffix.md#proper-name--n) a person or titled frame.
+The `/x/` forms are clause joins; **-n** under `/v/`, `/ɡ/`, and `/h/` makes join-derived content words. See [join-act verbs](#join-act-verbs) and [join-relations](#join-relations) for those forms. Ordinary content **-n** still [names](word-endings.md#proper-name--n) a person or titled frame.
 
 ### Verb-phrase and clause forms
 <a id="vp-clause-forms"></a>
@@ -62,7 +62,7 @@ An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, cov
 ### Join-act verbs
 <a id="join-act-verbs"></a>
 
-When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*), write that move as a verb: first letter **`v`**, the same join vowel you already use on lists, and ending **-n** (`van`, `von`, …). The object is one `/d/` word (one thing or a group). You can now name the act itself instead of only packing a list. On these verbs, **-n** is join content, not a [proper name](reference-suffix.md#proper-name--n). Put ordinary noun **-x** on the object when the group is associative; verb **-x** is [collective](plurality.md#verbs-v).
+When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*), write that move as a verb: first letter **`v`**, the same join vowel you already use on lists, and ending **-n** (`van`, `von`, …). The object is one `/d/` word (one thing or a group). You can now name the act itself instead of only packing a list. On these verbs, **-n** is join content, not a [proper name](word-endings.md#proper-name--n). Put ordinary noun **-x** on the object when the group is associative; verb **-x** is [collective](plurality.md#verbs-v).
 
 > `zazawan dabelel van.`
 >

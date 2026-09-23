@@ -23,7 +23,7 @@ Ordinary content stays available (`zemabal` *a map*; `vemabal` *to plan*). Leave
 <a id="plan-map-resolution"></a>
 <a id="plan-endings"></a>
 
-On **`emaba`**, **-l / -m / -r** say **how fully drawn** the intention is: a heading, steps filled in, or a map that already includes backups. That split is a reminder of **how prepared** you are. **-n** is ordinary [proper](reference-suffix.md#proper-name--n). When you are unsure how detailed the course is, prefer **`hemabam`**.
+On **`emaba`**, **-l / -m / -r** say **how fully drawn** the intention is: a heading, steps filled in, or a map that already includes backups. That split is a reminder of **how prepared** you are. **-n** is ordinary [proper](word-endings.md#proper-name--n). When you are unsure how detailed the course is, prefer **`hemabam`**.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -230,7 +230,7 @@ h-predict | v-fight
 <a id="ability"></a>
 <a id="incapability"></a>
 
-English *can* and *can't* usually sit in front of the verb (*can sing*, *can't sing*). In Agalan you fold that meaning into the verb or adjective itself. After the root, write **`x`**, then a vowel that means *can* or *how they can't*, then the same [ending](reference-suffix.md) that word would have had without *can*.
+English *can* and *can't* usually sit in front of the verb (*can sing*, *can't sing*). In Agalan you fold that meaning into the verb or adjective itself. After the root, write **`x`**, then a vowel that means *can* or *how they can't*, then the same [ending](word-endings.md) that word would have had without *can*.
 
 #### Can (`xa`)
 <a id="can"></a>
@@ -316,7 +316,7 @@ Ordinary content is still available (`zehegel` *a checkmark*; `vehegel` *to chec
 #### Endings — changeability
 <a id="decision-changeability"></a>
 
-On **`ehege`**, **-l / -m / -r** match unmet [changeability](values.md#value-changeability): irreversible / modifiable / temporary. **-n** is ordinary [proper](reference-suffix.md#proper-name--n). If you do not know how locked the pick is, use **-m**.
+On **`ehege`**, **-l / -m / -r** match unmet [changeability](values.md#value-changeability): irreversible / modifiable / temporary. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know how locked the pick is, use **-m**.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|

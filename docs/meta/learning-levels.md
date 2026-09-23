@@ -41,7 +41,7 @@ Read **`docs/grammar/`** only, in stage order. [why-agelan.md](../grammar/why-ag
 1. [why-agelan.md](../grammar/why-agelan.md) — psychological purpose, limits, feature criteria, benefit tour (not a learning stage)
 2. [introduction.md](../grammar/introduction.md) — name, grammar design, how to learn
 3. [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / word edges)
-4. [reference-suffix.md Beginner](../grammar/reference-suffix.md#beginner) (citation **-l** / **-m** / **-n**)
+4. [word-endings.md Beginner](../grammar/word-endings.md#beginner) (citation **-l** / **-m** / **-n**)
 5. [clause.md Beginner](../grammar/clause.md#beginner)
 6. [speech-moves.md Beginner](../grammar/speech-moves.md#beginner)
 7. [dependents.md Beginner](../grammar/dependents.md#beginner)

@@ -111,7 +111,7 @@ Source: [roles.md](../grammar/roles.md), [x-compounds.md](../grammar/x-compounds
 Source: [spans.md](../grammar/spans.md), [x-compounds.md](../grammar/x-compounds.md)
 
 - EDGE + **-r** combinations other than EDGE **`u`** (anaphor **-r** always uses EDGE **`u`** in the spoken template; other EDGE + **-r** silhouettes are ordinary compounds, not span opens)
-- Unassigned **`VOWEL x VOWEL`** silhouettes that are not taught span opens/closes — including **`xuxun`** (`/x/` + **`u` × `u`** + proper **-n**) — ordinary compounds / [phrasal names](../grammar/reference-suffix.md#phrasal-proper-names), not fences
+- Unassigned **`VOWEL x VOWEL`** silhouettes that are not taught span opens/closes — including **`xuxun`** (`/x/` + **`u` × `u`** + proper **-n**) — ordinary compounds / [phrasal names](../grammar/word-endings.md#phrasal-proper-names), not fences
 
 ## Values — later dimensions
 

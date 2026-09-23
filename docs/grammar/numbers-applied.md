@@ -55,7 +55,7 @@ Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedu
 <a id="unit-amount"></a>
 <a id="si-units"></a>
 
-English names **how much of a unit** (*two meters*, *three hours*). The unit is a lexicon noun whose **published abstract** is that SI or everyday unit name; the amount is an ordinary `/ɡ/` scalar on that unit. Use those unit lemmas in speech, not Latin abbreviations (`m`, `kg`, `s`). Introduce the unit sense with **-m** ([abstract](reference-suffix.md#abstract-m)); resume with **-r** when the unit phrase is already on the table.
+English names **how much of a unit** (*two meters*, *three hours*). The unit is a lexicon noun whose **published abstract** is that SI or everyday unit name; the amount is an ordinary `/ɡ/` scalar on that unit. Use those unit lemmas in speech, not Latin abbreviations (`m`, `kg`, `s`). Introduce the unit sense with **-m** ([abstract](word-endings.md#abstract-m)); resume with **-r** when the unit phrase is already on the table.
 
 > `zazawan bedurem g+2 vawalal.`
 >
@@ -71,7 +71,7 @@ Price *for five grams* keeps this same measure NP in `/b/` after [exchange](rela
 | `zozobam g+3`, `dobonom g+5` | subject / object / … | *three seconds*, *five grams* |
 | `gurulel g+2` on a host | modifier on a noun | rare; prefer unit as `/b/` or a freestanding noun phrase |
 
-Same endings and fuzzy **-m** habits as other number words on the amount (`g~+2` ≈ *about two*). The **unit** takes ordinary reference suffixes.
+Same endings and fuzzy **-m** habits as other number words on the amount (`g~+2` ≈ *about two*). The **unit** takes ordinary word endinges.
 
 #### Stock units
 <a id="stock-units"></a>
@@ -391,7 +391,7 @@ Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftove
 ### Named standards and derived units
 <a id="unit-short-form"></a>
 
-Everyday measure uses the **unit metaphor** on the stock roots above (`bedurem g+2`). When you cite the **conventional SI name** as a titled standard (*the meter*, *the pascal*), use **-n** on that unit root ([named handles](reference-suffix.md#named-n-beginner)). Resume a prior unit phrase with **-r** on the same root (`bedurer g+2` after `bedurem g+2` is on the table).
+Everyday measure uses the **unit metaphor** on the stock roots above (`bedurem g+2`). When you cite the **conventional SI name** as a titled standard (*the meter*, *the pascal*), use **-n** on that unit root ([named handles](word-endings.md#named-n-beginner)). Resume a prior unit phrase with **-r** on the same root (`bedurer g+2` after `bedurem g+2` is on the table).
 
 **Common derived (optional)** — unit metaphor on a dedicated root; related **quantity** stays on the original row:
 

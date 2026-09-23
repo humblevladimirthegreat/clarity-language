@@ -154,8 +154,8 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `index.md` | — | — |
 | `lexicon.md` | — | — |
 | `phonology.md` | — | — |
-| `reference-suffix.md` | Beginner | a classroom |
-| `reference-suffix.md` | Intermediate | a hospital ward |
+| `word-endings.md` | Beginner | a classroom |
+| `word-endings.md` | Intermediate | a hospital ward |
 | `clause.md` | Beginner | a bank |
 | `clause.md` | Intermediate | a waiting room |
 | `clause.md` | Advanced | a circus |
@@ -265,8 +265,8 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | — | `why-agelan.md` | skip | — | orientation |
 | — | `introduction.md` | skip | — | orientation |
 | 3 | `phonology.md` | skip | — | not translation |
-| 4 | `reference-suffix.md` | **exists** | Choose **-l** vs **-m** vs **-n** on a **citation** (prefix-less); named person vs kind vs metaphor; **greeting** named citation with period (`azawan.`) | No sentences with role letters. No **-r**. Pointers to **-x** / **`gl-`**: do **not** make those the item. No vocative `/j/` |
-| 5 | `clause.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; hosted `/ɡ|h/`+`/b/` (*like*); unhosted `/b/` recipient/addressee; house names; **-l** / **-m** / **-n** as used in examples | Do not use **`gl-`**, **`darl`**, `/x/`, nested **`barl`**, letter **-r** mechanism, **-x**, joins. Greeting citations are reference-suffix. No greeting-bid **`x`** vowel |
+| 4 | `word-endings.md` | **exists** | Choose **-l** vs **-m** vs **-n** on a **citation** (prefix-less); named person vs kind vs metaphor; **greeting** named citation with period (`azawan.`) | No sentences with role letters. No **-r**. Pointers to **-x** / **`gl-`**: do **not** make those the item. No vocative `/j/` |
+| 5 | `clause.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; hosted `/ɡ|h/`+`/b/` (*like*); unhosted `/b/` recipient/addressee; house names; **-l** / **-m** / **-n** as used in examples | Do not use **`gl-`**, **`darl`**, `/x/`, nested **`barl`**, letter **-r** mechanism, **-x**, joins. Greeting citations are word-endings. No greeting-bid **`x`** vowel |
 | 6 | `speech-moves.md` | **exists** | Turn start; call a person; conventional interjection; statement / question / command / prohibition; omit recoverable **`jal`** | Recycle clause bodies and house names; no hooks, polar stance, soft forms, or numbers |
 | 7 | `dependents.md` | **exists** | Two-sentence *who / that / which*; **`darl` last**; adverbial subordinators (`hurugum` / `hadorom` / `hezazem` / `hezebam` / `hegemum` / `hudumem` / `hababam` / `helabam` / `holalam` **`barl`**; *despite* = **`hezebam`** + `/b/` noun); `/x/` continue vs `/j/` turn; `/x/` linker may start the next written sentence after `.` | Do not use nested **`barl`**, letter **-r** mechanism. Recycle speech-moves **`jol`/`jel`/`jul`** |
 | 13 | `relations.md` | **exists** | Hosted pair for simile **`hurorom`**, exchange **`huhanem`**, proxy **`hudagam`** | Recycle clause hosted `/b/` and hooks extra-noun. No *between*, no of-relations, no **`barl`**. Not **`hahanam`** |
@@ -301,8 +301,8 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 7 | `dependents.md` | Intermediate | **exists** | `/x/` linkers (`xezazal`, `xezebal`, …); nested **`barl`**; stand-in vowels; which-noun with resume | Recycle Beginner **`darl`/`barl`** |
 | 13 | `relations.md` | Intermediate | **exists** | *between* **`hazanum`**; of-relations (`gobonem`, `gajaram`, `gowodom`, `gugunom`); recycle extra-noun hooks for other place talk | *Between* recycles joins Beginner `/b/` join |
 | 13 | `relations.md` | Advanced | **exists** | Hosted *as-of* **`helerem` / `hobomam`**; `/h/` `/ɡ/` `/w/`; resume **-r**; date in `/b/` | Recycle RESIDUE, PREDICT, calendar `b_#…`. Not persist hooks |
-| 4 | `reference-suffix.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; [titled phrases](../grammar/reference-suffix.md#titled-phrases) (hook / join / span **-n**, inner **-l** / **-m**); office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
-| 4 | `reference-suffix.md` | Advanced | skip | — | no Advanced stage |
+| 4 | `word-endings.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; [titled phrases](../grammar/word-endings.md#titled-phrases) (hook / join / span **-n**, inner **-l** / **-m**); office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
+| 4 | `word-endings.md` | Advanced | skip | — | no Advanced stage |
 | 9 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`aha`** vs name join vs name…**-x** | |
 | 9 | `pronouns.md` | Advanced | **exists** | Cross-role recast (one or two PoS flips, not the whole grid) | 4–6 items |
 | 9 | `plurality.md` | Intermediate | **exists** | Associate resolution; verb collective; collective `/ɡ/`…**-x**; vocative **-x** | |
@@ -331,7 +331,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 16 | `knowing.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`adade`** + play holds; **RESIDUE** / **FORMER**; MAY vs nearby jobs | |
 | 16 | `knowing.md` | Advanced | **exists** | RESIDUE / FORMER / LIVE / WITNESSED against *as-of*; MAY unshifted | Recycle relations Advanced |
 | 16 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; bare arrow roots = compass; gravity **`uba`/`odowo`**; name/listener anchor | Prefer `…xazawan` over silent speaker default. **`edone`/`ugobo`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
-| 16 | `x-compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *a few minutes* / passing) | Recycle [greeting](../grammar/reference-suffix.md#greeting) and [vocative](../grammar/speech-moves.md#vocative). Not ability (`vuzunuxel`). Not values |
+| 16 | `x-compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *a few minutes* / passing) | Recycle [greeting](../grammar/word-endings.md#greeting) and [vocative](../grammar/speech-moves.md#vocative). Not ability (`vuzunuxel`). Not values |
 | 16 | `roles.md` | Advanced | — | no Advanced stage | |
 | 17 | `join-across-roles.md` | Intermediate | **exists** | Verb-phrase and clause joins (`vam`, `xam`, sequence `xan`); join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 17) |
 | 17 | `intention.md` | Intermediate | **exists** | **DECISION** **`ehege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
@@ -351,13 +351,13 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | House names, SVO, omit **`jal`**, **`jol`/`jel`/`jul`**, vocative (`jululon`) | `clause.md` Beginner |
 | Means / simile / exchange / proxy hosted pairs | `relations.md` Beginner |
 | **`darl`**, *because* **`hurugum barl`**, `/x/` linker after `.` | `dependents.md` Beginner |
-| Named citation greeting (`azawan.`) | `reference-suffix.md` Beginner |
+| Named citation greeting (`azawan.`) | `word-endings.md` Beginner |
 | Greeting bid **`…xan` / `…xon` / `…xen` / `…xun`** on a citation or vocative | `x-compounds.md` Intermediate |
 | **`gl-`**, **`jam`/`jom`/`jem`/`jum`** as a *speech-act* system | `clause.md` Intermediate |
 | Locative relations; of-relations (`gobonem` / `gajaram` / `gowodom` / `gugunom`) | `relations.md` Intermediate |
 | Hosted *as-of* (`helerem` / `hobomam`) | `relations.md` Advanced |
 | Remaining `/x/` linkers, nested **`barl`**, stand-in vowels | `dependents.md` Intermediate |
-| **-l** / **-m** / **-n** as a *choice* on a citation | `reference-suffix.md` Beginner |
+| **-l** / **-m** / **-n** as a *choice* on a citation | `word-endings.md` Beginner |
 | Letter/full-root **-r** algorithm; **`ugobo`/`edone`/`aha`/`enenu`** | `pronouns.md` Beginner |
 | Associative **-x** | `plurality.md` Beginner |
 | **SAME** `gonunul` | `predication.md` Beginner |

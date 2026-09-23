@@ -9,7 +9,7 @@ Sometimes one Agalan word is two smaller meanings with **`x`** in the middle. Th
 
 ### Two roots, one word
 
-English often glues two ideas into one word (*peanut butter*) or one hyphenated name. In Agalan you write both dictionary roots in **one** word and put **`x`** between them. The first letter of the word is still the [role letter](clause.md#beginner) (subject, verb, and so on). The [ending](reference-suffix.md) belongs to the whole word, not to the piece before **`x`** alone. (cue: **x** ≈ plus: two pieces make one word)
+English often glues two ideas into one word (*peanut butter*) or one hyphenated name. In Agalan you write both dictionary roots in **one** word and put **`x`** between them. The first letter of the word is still the [role letter](clause.md#beginner) (subject, verb, and so on). The [ending](word-endings.md) belongs to the whole word, not to the piece before **`x`** alone. (cue: **x** ≈ plus: two pieces make one word)
 
 > `zabanuxudel.`
 >
@@ -40,7 +40,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 
 English *bedroom*, *doorbell*, and *friend* feel like one word. Agalan lists those as **one dictionary word** too. You look the word up. You do not make it on the spot by putting **`x`** between *bed* and *house*.
 
-Inside the dictionary spelling you can still see the two old roots, with a join letter instead of **`x`**. That letter is the [reference suffix](reference-suffix.md) of the **left** root: **-l** when that piece is the everyday kind, **-m** when it is the published abstract sense (named **-n** or resume **-r** if that left piece is a name or a resume). The last letter of the word is still the ending of the **whole** entry. In a sentence you add a role letter and that whole-word ending, the same way you do for *dog* or *hammer*.
+Inside the dictionary spelling you can still see the two old roots, with a join letter instead of **`x`**. That letter is the [word ending](word-endings.md) of the **left** root: **-l** when that piece is the everyday kind, **-m** when it is the published abstract sense (named **-n** or resume **-r** if that left piece is a name or a resume). The last letter of the word is still the ending of the **whole** entry. In a sentence you add a role letter and that whole-word ending, the same way you do for *dog* or *hammer*.
 
 > `zabedelohohul.`
 >
@@ -54,7 +54,7 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 | `zadorolobelel` | door **-l** bell | doorbell | left piece everyday |
 | `zonogoleberel` | bond **-l** person | friend | left piece everyday |
 | `zanunulojal` | rain **-l** coat | raincoat | left piece everyday |
-| `…m…` | left root in its [abstract](reference-suffix.md#abstract-m) sense | same two roots, join **-m** | **m** ≈ meaning |
+| `…m…` | left root in its [abstract](word-endings.md#abstract-m) sense | same two roots, join **-m** | **m** ≈ meaning |
 
 If the pairing is not in the dictionary, either glue with **`x`** (`zabanuxudel` *peanut butter*) or use two words. Extra-noun *enter* / *leave* fused onto a citation is a [hook compound](hooks.md#hook-compounds) (`awalalul`), not this two-root join.
 
@@ -255,7 +255,7 @@ Beginner already used two roots glued with **`x`**, dictionary words with no **`
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxedegel` *a teacher* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
 | name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (hello or calling) | [greeting bid](#greeting-bid) | `azawaxan`; `jululoxen` | vowel on the name |
 | longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) (on a need) or [ability](intention.md#ability) (on another host) | `vuzunuxel` | extra vowel after the host |
-| full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zabanuxudel`; `gewezexazawan` *Azawan’s left* ([whose left](roles.md#viewpoint-laterals)); `zodunaxalanen` ([multipart names](reference-suffix.md#phrasal-proper-names)) | **x** ≈ plus |
+| full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zabanuxudel`; `gewezexazawan` *Azawan’s left* ([whose left](roles.md#viewpoint-laterals)); `zodunaxalanen` ([multipart names](word-endings.md#phrasal-proper-names)) | **x** ≈ plus |
 
 A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`**, or **`u`** left of **`x`**, you are opening a span or naming a role (*teacher*), not gluing two full roots. Role compounds still put a full root **after** that vowel.
 
@@ -276,9 +276,9 @@ When English stacks labels left to right (*crush* then *love*; a shop name with 
 >
 > "Coffee-Tea-Water" (one named shop)
 
-[Multipart names](reference-suffix.md#phrasal-proper-names) use the same order (given name, then family, then a further title). [Body left / right](roles.md#viewpoint-laterals) is two roots: the direction, then whose facing counts as north.
+[Multipart names](word-endings.md#phrasal-proper-names) use the same order (given name, then family, then a further title). [Body left / right](roles.md#viewpoint-laterals) is two roots: the direction, then whose facing counts as north.
 
-**Compare with:** a short office **handle** is one root ([named handles](reference-suffix.md#named-handles)), not this stack. A dictionary compound is one listed word, not a live list you extend.
+**Compare with:** a short office **handle** is one root ([named handles](word-endings.md#named-handles)), not this stack. A dictionary compound is one listed word, not a live list you extend.
 
 ### Which family is this?
 <a id="decision-order"></a>
@@ -288,7 +288,7 @@ Use the table above. Read both sides of the first **`x`** in this order:
 - The whole word is **`xuxul`** / **`xuxur`** / **`xuxum`** → a **span** is closing.
 - After the role letter: one vowel, **`x`**, one vowel, then a span ending → a **span** is opening ([spans](spans.md)).
 - After the role letter: one vowel **`a`** / **`e`** / **`u`** / **`o`**, **`x`**, then a longer root → a **role compound** (who does / where it happens / who undergoes / who is told).
-- A name (one root or a [multipart proper name](reference-suffix.md#phrasal-proper-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a hello or under **`/j/`** → a [greeting bid](#greeting-bid).
+- A name (one root or a [multipart proper name](word-endings.md#phrasal-proper-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a hello or under **`/j/`** → a [greeting bid](#greeting-bid).
 - A longer root, then **`x`**, then a single vowel **`a`** / **`e`** / **`o`** / **`u`** → **values** (on a need: `/ɡ/` if you keep the noun, `/w/` immediately before **`gobobum`** if you do not) or **ability** (on another host).
 - Full roots on **both** sides of the first **`x`** (and maybe more **`x`** + root) → an ordinary compound (sense or name).
 
@@ -297,7 +297,7 @@ Role vowels are **`a`** / **`e`** / **`u`** / **`o`**. Span type and edge letter
 ### How you show up (name **`x`** vowel)
 <a id="greeting-bid"></a>
 
-A [greeting](reference-suffix.md#greeting) is your own name with a period (`azawan.`). [Calling someone](speech-moves.md#vocative) is their name under **`/j/`** (`jululon.`). To say **how** this opening is meant, put **`x`** and one vowel before **-n**. That vowel is about the meeting (stay and talk, a few minutes, one ask, pass by). It is not a grade of the person.
+A [greeting](word-endings.md#greeting) is your own name with a period (`azawan.`). [Calling someone](speech-moves.md#vocative) is their name under **`/j/`** (`jululon.`). To say **how** this opening is meant, put **`x`** and one vowel before **-n**. That vowel is about the meeting (stay and talk, a few minutes, one ask, pass by). It is not a grade of the person.
 
 On your own name, it is how you arrive. When you call them, it is how you address them.
 
@@ -320,7 +320,7 @@ On your own name, it is how you arrive. When you call them, it is how you addres
 | **`…xon`** | one slot | *one ask/comment* | **o** ≈ one |
 | **`…xun`** | pass | *just passing* (acknowledge; don’t open talk) | **u** ≈ undo (lift the talk) |
 
-Only one of these vowels per name. You can still pair your arrival with calling them (`azawaxan jululoxon`). **-n** is still the [named](reference-suffix.md#named-n-beginner) ending.
+Only one of these vowels per name. You can still pair your arrival with calling them (`azawaxan jululoxon`). **-n** is still the [named](word-endings.md#named-n-beginner) ending.
 
 The other person answers with a greeting bid too. The **lesser** bid is the one that holds for the talk: **a** (stay) is more than **e** (a few minutes), **e** is more than **o** (one ask), **o** is more than **u** (passing). If Azawan offers stay and Ululon answers with one ask, they have one ask.
 
@@ -517,6 +517,6 @@ Azawan-presence | Ululon-minutes
 - **`x`** at the start of a word (keep going): [dependents.md](dependents.md#continue-x)
 - How **`x`** sits in the word shape: [phonology.md](phonology.md#phonotactics)
 - [intention.md#ability](intention.md#ability) / [values.md](values.md) / [roles.md](roles.md) / [numeric-derivation.md](numeric-derivation.md)
-- Greeting bid: [how you show up](#greeting-bid); bare hello: [reference-suffix.md](reference-suffix.md#greeting)
-- Short office names vs long titles: [reference-suffix.md](reference-suffix.md#named-handles)
+- Greeting bid: [how you show up](#greeting-bid); bare hello: [word-endings.md](word-endings.md#greeting)
+- Short office names vs long titles: [word-endings.md](word-endings.md#named-handles)
 - Extra-noun fuse on a citation: [hooks.md](hooks.md#hook-compounds)

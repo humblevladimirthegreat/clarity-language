@@ -13,7 +13,7 @@ Start with a quote of what someone said.
 
 A **cite** holds wording you are quoting: what someone said, a title string, or a proverb **as wording**. Write the role letter, then square brackets around the quoted text. (cue: `[…]` like quote marks)
 
-Start with one quoted token as the object of *said*. A [greeting](reference-suffix.md#greeting) is the named citation, so the quoted hello is that same name:
+Start with one quoted token as the object of *said*. A [greeting](word-endings.md#greeting) is the named citation, so the quoted hello is that same name:
 
 > `zazawan d[azawan] vezehel.`
 >
@@ -28,7 +28,7 @@ The whole `d[azawan]` is the direct object (who or what is acted on). If the int
 
 You can mark how faithful the quote is. Put the mark **after** the role letter, before the opening bracket.
 
-Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gist, not the exact words, write **`~`** (`d~[zazawan vuzunul]`). When the chunk is the **work** that bears a **multi-word** title (the song, proverb, book — not the name-string), write **`@`** (`d@[uzugon ululon]`). A one-word work or person is ordinary **-n** (`duzugon`), not `d@[uzugon]`, unless the role letter or the ending is **part of the title** you are packaging. **`@`** / spoken **-n** is on the **fence**; words inside keep their usual endings ([titled phrases](reference-suffix.md#titled-phrases)).
+Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gist, not the exact words, write **`~`** (`d~[zazawan vuzunul]`). When the chunk is the **work** that bears a **multi-word** title (the song, proverb, book — not the name-string), write **`@`** (`d@[uzugon ululon]`). A one-word work or person is ordinary **-n** (`duzugon`), not `d@[uzugon]`, unless the role letter or the ending is **part of the title** you are packaging. **`@`** / spoken **-n** is on the **fence**; words inside keep their usual endings ([titled phrases](word-endings.md#titled-phrases)).
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -105,7 +105,7 @@ Keep the source’s **casing** inside `<>` when that writing system uses case (<
 
 When a published Agalan root already matches, write the ordinary word (`dagadal`, not a fence).
 
-Outside a clause, a foreign name or word is a prefix-less fence with the same marks: [citation forms](reference-suffix.md#citation-forms) (<code>@&lt;Sam&gt;</code>). A span in a sentence still takes a role letter, because it fills a sentence slot (<code>z@&lt;Sam&gt;</code>).
+Outside a clause, a foreign name or word is a prefix-less fence with the same marks: [citation forms](word-endings.md#citation-forms) (<code>@&lt;Sam&gt;</code>). A span in a sentence still takes a role letter, because it fills a sentence slot (<code>z@&lt;Sam&gt;</code>).
 
 ### Asides (`h(…)`)
 <a id="asides"></a>
@@ -365,7 +365,7 @@ Beginner already used square, round, curly, and angle brackets for cite, aside, 
 | **o** | **mention** (`{` … `}`); with **`@`** / **-n**, the **name** | the word or phrase; proper = the name-string | **o** ≈ one (one word or phrase as the object) |
 | **u** | **opaque** (`<` … `>`); interior is not native Agalan | foreign / code | **u** ≈ undo (not native Agalan) |
 
-**Compare with:** a native office name uses ordinary **-n** (`zabogon`) — [named handles](reference-suffix.md#named-handles). Mention `{abogo}` is that **word**; opaque / loan is a **foreign** acronym’s surface (<code>z@&lt;FBI&gt;</code>).
+**Compare with:** a native office name uses ordinary **-n** (`zabogon`) — [named handles](word-endings.md#named-handles). Mention `{abogo}` is that **word**; opaque / loan is a **foreign** acronym’s surface (<code>z@&lt;FBI&gt;</code>).
 
 ### EDGE (extent)
 <a id="edge"></a>
@@ -859,7 +859,7 @@ z-Uhubun | d-abugum#| | v-tell
 
 - Scope islands: [joins.md](joins.md#scope-islands-join)
 - Identity vs parenthetical comment: [predication.md](predication.md#identity)
-- Phrasal proper names: [reference-suffix.md](reference-suffix.md#phrasal-proper-names)
-- Titled phrases (hook / join / span): [reference-suffix.md](reference-suffix.md#titled-phrases)
-- Native office handles: [reference-suffix.md](reference-suffix.md#named-handles)
-- Prefix-less citation outside a clause: [reference-suffix.md](reference-suffix.md#citation-forms)
+- Phrasal proper names: [word-endings.md](word-endings.md#phrasal-proper-names)
+- Titled phrases (hook / join / span): [word-endings.md](word-endings.md#titled-phrases)
+- Native office handles: [word-endings.md](word-endings.md#named-handles)
+- Prefix-less citation outside a clause: [word-endings.md](word-endings.md#citation-forms)

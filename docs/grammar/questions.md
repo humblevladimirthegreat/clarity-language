@@ -49,7 +49,7 @@ Keep **`jol`** or **`jom`** at the start. In the slot you want filled, use a joi
 >
 > "Who walks?"
 
-If the reply is just the fill, not a full sentence, write it as a [citation](reference-suffix.md#citation-forms): root + ending, no job letter. Leave no join **-r** in the answer; that **-r** was the blank. A full sentence uses ordinary job letters.
+If the reply is just the fill, not a full sentence, write it as a [citation](word-endings.md#citation-forms): root + ending, no job letter. Leave no join **-r** in the answer; that **-r** was the blank. A full sentence uses ordinary job letters.
 
 > `azawan.`
 >
@@ -609,7 +609,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 >
 > "Is Azawan the only priority?"
 
-**Not the same job as:** proper-name **-n** ([reference suffix](reference-suffix.md#proper-name--n)).
+**Not the same job as:** proper-name **-n** ([word ending](word-endings.md#proper-name--n)).
 
 **Related form:** fill-ask length uses [join **-r**](#fill-ask-arity).
 

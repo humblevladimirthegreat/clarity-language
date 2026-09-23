@@ -45,7 +45,7 @@ Worked examples in grammar pages use a **blockquote**, not a code fence (so Mark
 > "Azawan is a dog."
 ```
 
-**When it would only repeat the quote**, omit it — typical of a simple [citation](../grammar/reference-suffix.md#citation-forms) whose sense *is* the English:
+**When it would only repeat the quote**, omit it — typical of a simple [citation](../grammar/word-endings.md#citation-forms) whose sense *is* the English:
 
 ```markdown
 > `azawal`
@@ -141,7 +141,7 @@ Published strings share one phonological root, but **concrete**, **abstract**, a
 | `huvuvum` | `h-WITNESSED` | `h-uvuvu(fishing→WITNESSED)-m` |
 | `gohohum` | `g-home` | `g-ohohu(house→home)-m` |
 
-Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agalan line and from [reference-suffix.md](../grammar/reference-suffix.md). The gloss’s job is the **sense**, not a second orthography.
+Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agalan line and from [word-endings.md](../grammar/word-endings.md). The gloss’s job is the **sense**, not a second orthography.
 
 **Closed overlays** ([sense-form](../grammar/lexicon.md)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `MAY`, `SAME`, `plan`, `DECISION`, …). The Agalan letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `on` / …).
 
@@ -436,7 +436,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 ## See also
 
 - [spans.md](../grammar/spans.md) — mention / cite / opaque; interiors [above](#span-interiors)
-- [reference-suffix.md](../grammar/reference-suffix.md) — **-l** / **-m** / **-n** / **-r**
+- [word-endings.md](../grammar/word-endings.md) — **-l** / **-m** / **-n** / **-r**
 - [lexicon.md](../grammar/lexicon.md) — overlays and closed labels
 - [pronouns.md](../grammar/pronouns.md) — **-r** and special pronouns
 - [x-compounds.md](../grammar/x-compounds.md) — mid-word `x` families

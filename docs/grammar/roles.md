@@ -1,7 +1,7 @@
 # Role compounds
 <a id="roles"></a>
 
-When English would name a person or place from an event (*a teacher* from *teach*, *the one told*, *a sleep-place*), Agalan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [reference ending](reference-suffix.md). **`a`** is the doer, **`e`** is the place of the event, **`u`** is the one the event happens to, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
+When English would name a person or place from an event (*a teacher* from *teach*, *the one told*, *a sleep-place*), Agalan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [reference ending](word-endings.md). **`a`** is the doer, **`e`** is the place of the event, **`u`** is the one the event happens to, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
 
 The ending picks **kind** vs **this instance**. Non-resume (**-l** / **-m** / **-n**) is a lasting label: *a teacher*. Resume (**-r**) is the person or place of **that** latest matching event: *the one teaching*.
 
@@ -12,7 +12,7 @@ The ending picks **kind** vs **this instance**. Non-resume (**-l** / **-m** / **
 <a id="role-compounds"></a>
 <a id="agent-place-patient-recipient"></a>
 
-English *a teacher* names who teaches as a kind, from the same idea as *teach*. Write a person or thing letter (`/z/` `/d/` `/b/`), then **`a`**, then mid-word **`x`**, then the event root, then an ordinary [reference ending](reference-suffix.md). The result is one content word (a **role compound**) that you can use as a participant. (cue: **a** ≈ add (add a doer))
+English *a teacher* names who teaches as a kind, from the same idea as *teach*. Write a person or thing letter (`/z/` `/d/` `/b/`), then **`a`**, then mid-word **`x`**, then the event root, then an ordinary [reference ending](word-endings.md). The result is one content word (a **role compound**) that you can use as a participant. (cue: **a** ≈ add (add a doer))
 
 > `zaxedegel vurunul.`
 >
@@ -20,7 +20,7 @@ English *a teacher* names who teaches as a kind, from the same idea as *teach*. 
 >
 > "A teacher runs."
 
-The last letter is the ordinary [reference ending](reference-suffix.md): **-l** takes the stem’s everyday concrete sense, **-m** the published abstract. `zaxedegel` is *a teacher*; `zaxuvugul` is *a fighter*; `zaxuvugum` is *a struggler*. Non-resume names the **lexical** role. You do not need a prior teaching or fight in the talk.
+The last letter is the ordinary [reference ending](word-endings.md): **-l** takes the stem’s everyday concrete sense, **-m** the published abstract. `zaxedegel` is *a teacher*; `zaxuvugul` is *a fighter*; `zaxuvugum` is *a struggler*. Non-resume names the **lexical** role. You do not need a prior teaching or fight in the talk.
 
 **Compare with:** *can teach* puts the stance vowel **right** of **`x`** ([ability](intention.md#ability): `vedegexal`). A teacher puts the role vowel **left** of **`x`**.
 
@@ -330,7 +330,7 @@ z-Uhubun | g-bond | b-Ululon | z-←bond | v-punch
 <a id="spatial-laterals"></a>
 <a id="my-left-your-left"></a>
 
-English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) or a side of someone’s body (*Azawan’s left*). For the body reading, write the same arrow root, then mid-word **`x`**, then whose facing counts as north (the **viewpoint**), then an ordinary [reference ending](reference-suffix.md). You can then say *walk left* without meaning *walk west*.
+English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) or a side of someone’s body (*Azawan’s left*). For the body reading, write the same arrow root, then mid-word **`x`**, then whose facing counts as north (the **viewpoint**), then an ordinary [reference ending](word-endings.md). You can then say *walk left* without meaning *walk west*.
 
 > `jel vawalal hewezexazawan.`
 >
@@ -360,7 +360,7 @@ Speaker and listener roots are the facing person when you mean *my left* / *your
 | DIR | an arrow-rose root | *north* / *ahead*, … |
 | **`x`** | joins DIR to whose facing is north | facing person after **`x`** |
 | ANCHOR | whose facing is personal north: [special](pronouns.md#special-pronouns) **`ugobo`** / **`edone`** / **`aha`**, a name, or a content **-r** of a being that can face | *Azawan’s left*, *your left* |
-| Ending | ordinary reference-suffix senses on the **whole** direction word | kind / hedge / name / resume |
+| Ending | ordinary word-endings senses on the **whole** direction word | kind / hedge / name / resume |
 
 **Compare with:** naming a doer from an event puts a **vowel** left of **`x`** ([role compounds](#role-compounds): `zaxuvugul`). Viewpoint laterals put a **direction root** left of **`x`** and a facing person on the right.
 
@@ -425,7 +425,7 @@ Bare compass + `/b/` is a region on that heading of the landmark (`gewezel berel
 
 ### Endings and resume
 
-Direction words take the same four [reference endings](reference-suffix.md) as other content words, on the **whole** heading.
+Direction words take the same four [reference endings](word-endings.md) as other content words, on the **whole** heading.
 
 | Agalan | Use | English |
 |--------|-----|---------|

@@ -9,7 +9,7 @@ Glue a [number](numbers.md) stem onto a content root with the same join as a [le
 ### Numeric derivation (`ROOT` × number stem)
 <a id="numeric-derivation"></a>
 
-English often names a *kind of thing* with a number idea baked in (*essence of love*, *a three-part dialogue*, *specimen #1*). In Agalan you write the content root, a [lexical-compound](x-compounds.md#lexical-compounds) join (**-l** / **-m**), then a number stem. That stem has no role letter and no ending of its own; the role letter and one [reference suffix](reference-suffix.md) belong to the **whole derived word**. You can then use that word in any ordinary slot: the number names a property of the kind, not a count in the clause. (cue: same glue as *bedroom*, right half is a number)
+English often names a *kind of thing* with a number idea baked in (*essence of love*, *a three-part dialogue*, *specimen #1*). In Agalan you write the content root, a [lexical-compound](x-compounds.md#lexical-compounds) join (**-l** / **-m**), then a number stem. That stem has no role letter and no ending of its own; the role letter and one [word ending](word-endings.md) belong to the **whole derived word**. You can then use that word in any ordinary slot: the number names a property of the kind, not a count in the clause. (cue: same glue as *bedroom*, right half is a number)
 
 > `zolovelrabal.`
 >
@@ -27,7 +27,7 @@ PoS + ROOT + {l|m} + NUM + {-l|-m|-n|-r}
 | **ROOT** | Open content host (`V(CV)+`) | |
 | **join** | Same letter as a [lexical compound](x-compounds.md#lexical-compounds): **-l** everyday host, **-m** abstract host | `abedelohohu` *bedroom* uses **-l** |
 | **NUM** | Number stem: same marker / digits / digitless-exp body as [numbers.md](numbers.md), without a role letter and without its own ending. Tables below use [shorthand](numbers.md#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …). Running text prefers spelled CV (`raba`, `ro…`, `rawoba`, …): [writing style](numbers.md#writing-style-numeric-vs-spelled) | spoken stem starts with **`r`**, so you hear **`lr`** or **`mr`** |
-| **Ending** | Ordinary reference suffix on the **whole word**. Approximate, proper-designation, and resume use those host endings. A free number word or ordinary syntax still counts or labels outside this family. | |
+| **Ending** | Ordinary word ending on the **whole word**. Approximate, proper-designation, and resume use those host endings. A free number word or ordinary syntax still counts or labels outside this family. | |
 
 Shape columns keep shorthand as schematic (`ROOTl+e`); example cells use spelled forms (`zolovelrabal`). Free numbers still prefer shorthand by default.
 

@@ -77,7 +77,7 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Root(s) **V(CV)+** | content | start with a vowel; each later consonant starts a new syllable |
 | Mid-word `x` | productive compound seam | joins two roots inside one word |
 | Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`abedelohohu` *bedroom*) |
-| `-l` / `-m` / `-n` / `-r` | [reference suffix](reference-suffix.md) | audible end of the content word |
+| `-l` / `-m` / `-n` / `-r` | [word ending](word-endings.md) | audible end of the content word |
 | Optional `-x` | [plural](plurality.md) after the suffix | word-final `-lx` / `-mx` / `-nx` / `-rx` (letter `x`) |
 | Stand-in **`-rl` / `-rm`** | [dependent clauses](dependents.md#dependent-clauses) | word-final coda `rl` / `rm` (`darl`) |
 
@@ -98,7 +98,7 @@ When English says *how many* or *which place*, Agalan writes a [number word](num
 
 Spoken `g+3` is `grarel` (`g` + `ra` + digit `re` + `-l`). Inside a content root, `r` still appears only after a vowel (`uruge`).
 
-**Compare with:** ordinary endings on content words use [reference suffix](reference-suffix.md) senses. Number words reuse those same four letters with [number-specific endings](reference-suffix.md#number-word-exception).
+**Compare with:** ordinary endings on content words use [word ending](word-endings.md) senses. Number words reuse those same four letters with [number-specific endings](word-endings.md#number-word-exception).
 
 ### Letter names
 <a id="letter-names"></a>
@@ -180,7 +180,7 @@ A line that piles closed vowels, clusters, and mid-word stops is harder to susta
 
 ## See also
 
-- Citation (root + ending, no sentence): [reference-suffix.md](reference-suffix.md)
+- Citation (root + ending, no sentence): [word-endings.md](word-endings.md)
 - Role letters in a clause: [clause.md](clause.md#role-letters)
 - Numbers (PoS+`r` exception and [digit syllables](numbers.md#digits)): [numbers.md](numbers.md)
 - Mention spans (letter as form in a clause): [spans.md](spans.md)

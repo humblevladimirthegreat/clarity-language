@@ -1,6 +1,6 @@
 # Proposal: reference endings on inner `x`-compound parts
 
-**Status:** PROPOSED (not current language). Grammar today: the [reference suffix](../grammar/reference-suffix.md) (**-l** / **-m** / **-n** / **-r**) belongs to the **whole** content word. Inner pieces of a productive **`x`** compound are bare roots (`gagaxolovel`, `zazawaxululon`). Closed [lexical compounds](../grammar/x-compounds.md) store a left-member letter in the **dictionary stem** (`abedelohohu`), not as a live inner ending.  
+**Status:** PROPOSED (not current language). Grammar today: the [word ending](../grammar/word-endings.md) (**-l** / **-m** / **-n** / **-r**) belongs to the **whole** content word. Inner pieces of a productive **`x`** compound are bare roots (`gagaxolovel`, `zazawaxululon`). Closed [lexical compounds](../grammar/x-compounds.md) store a left-member letter in the **dictionary stem** (`abedelohohu`), not as a live inner ending.  
 **Related:** [x-compounds.md](../grammar/x-compounds.md), [phonology.md](../grammar/phonology.md#phonotactics), [clause.md](../grammar/dependents.md#sentence-linkers) (sentence linkers), [numeric-derivation.md](../grammar/numeric-derivation.md) (right half has no ending of its own)  
 **Design authority:** none until absorbed.
 
@@ -21,7 +21,7 @@ PoS + ROOT1 + (ENDING)? + x + ROOT2 + (ENDING)? + x + … + ROOTn + ENDING
 - The **last** ending is required and is ordinary reference for the whole word (current rule).
 - An ending after a **non-final** piece is optional. Omit it when that piece’s sense is the same as the whole-word ending, or when the piece is only a field label with no independent reference.
 - Inner endings have the same four jobs as today (**-l** literal, **-m** metaphor, **-n** name, **-r** resume), scoped to **that piece**, not to the slot-filler.
-- Role-compound vowels (`a` / `e` / `u` / `o` left of **`x`**), span type/edge vowels, greeting-bid / values / ability stance vowels, and [numeric](../grammar/numeric-derivation.md) right halves still **cannot** take an inner ending (they are not content roots with a reference suffix).
+- Role-compound vowels (`a` / `e` / `u` / `o` left of **`x`**), span type/edge vowels, greeting-bid / values / ability stance vowels, and [numeric](../grammar/numeric-derivation.md) right halves still **cannot** take an inner ending (they are not content roots with a word ending).
 
 Lexical dictionary stems stay frozen (`abedelohohu`). Speakers do not insert **`x`** or rewrite the join letter ad hoc. This proposal is only for **live** **`x`**.
 

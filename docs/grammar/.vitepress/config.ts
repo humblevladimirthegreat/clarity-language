@@ -14,7 +14,7 @@ const readingOrder = [
   { text: 'Why Agalan', link: '/' },
   { text: 'Introduction', link: '/introduction' },
   { text: 'Phonology', link: '/phonology' },
-  { text: 'Reference suffix', link: '/reference-suffix' },
+  { text: 'Word endings', link: '/word-endings' },
   { text: 'Clause', link: '/clause' },
   { text: 'Speech moves', link: '/speech-moves' },
   { text: 'Dependents', link: '/dependents' },

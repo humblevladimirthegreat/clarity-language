@@ -197,7 +197,7 @@ Endings on unmet **`xu`**, **DECISION**, and ability *can’t*.
 
 Root + ending with no role letter, outside a sentence.
 
-[Reference suffix](reference-suffix.md#citation-forms)
+[Word endings](word-endings.md#citation-forms)
 
 ### Classification
 
@@ -319,11 +319,11 @@ Plain **o** + **-m**: *or none*.
 
 [Joins](joins.md#empty-allowed-om)
 
-### Ending / reference suffix
+### Ending / word ending
 
-Final **-l / -m / -n / -r** (plus optional **-x**). **Reference suffix** names the content-word table.
+Final **-l / -m / -n / -r** (plus optional **-x**). **Word endings** names the content-word table.
 
-[Reference suffix](reference-suffix.md)
+[Word endings](word-endings.md)
 
 ### Epistemic *because*
 
@@ -425,7 +425,7 @@ Whole root + **-r** vs prefix through the second vowel.
 
 A named citation as a hello (`azawan.`). Mid-word **`x`** plus **`a`** / **`o`** / **`e`** / **`u`** on that citation or on a vocative marks presence, one ask, *a few minutes*, or passing. The other person answers with a bid; the lesser bid holds (**a** stay > **e** a few minutes > **o** one ask > **u** pass).
 
-[Reference suffix](reference-suffix.md#greeting) · [X-compounds](x-compounds.md#greeting-bid)
+[Word endings](word-endings.md#greeting) · [X-compounds](x-compounds.md#greeting-bid)
 
 ### Hold
 
@@ -487,7 +487,7 @@ Vocative → polar stance → act word, then body.
 
 Content endings **-l / -m / -n / -r**.
 
-[Reference suffix](reference-suffix.md)
+[Word endings](word-endings.md)
 
 ### Loan / opaque span
 
@@ -519,7 +519,7 @@ Value stances **`xa` / `xu`** (Beginner); **`xe`** / **`xo`** (Intermediate pres
 
 Short **-n** label for a long title.
 
-[Reference suffix](reference-suffix.md#named-handles)
+[Word endings](word-endings.md#named-handles)
 
 ### Named list
 
@@ -732,7 +732,7 @@ Utterance setting: statement / question / command / prohibition.
 
 A proper-name phrase whose **-n** sits on the hook, join, or span; inner words keep their own endings.
 
-[Reference suffix](reference-suffix.md#titled-phrases)
+[Word endings](word-endings.md#titled-phrases)
 
 ### Threshold
 

@@ -128,7 +128,7 @@ Single table from [phonology.md](../../grammar/phonology.md); no English respell
 | **r** | /ɹ/ | |
 | **x** | /ʒ/ | mid-word compound joiner, discourse `/x/` prefix, and plural **-x** — same phone |
 
-**Syllables:** split so each vowel is its own nucleus; stacked vowels are separate syllables (`juon` → `ju.ón`-style timing, not a diphthong). Onsets attach left-to-right per phonotactics. Word-final coda = reference suffix (+ optional **x**).
+**Syllables:** split so each vowel is its own nucleus; stacked vowels are separate syllables (`juon` → `ju.ón`-style timing, not a diphthong). Onsets attach left-to-right per phonotactics. Word-final coda = word ending (+ optional **x**).
 
 **Clusters still legal:** `gl-` (left-bound), `PoS+r` (numbers), finals `-lx` / `-mx` / `-nx` / `-rx`.
 

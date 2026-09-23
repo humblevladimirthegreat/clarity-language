@@ -1,6 +1,6 @@
-# Reference suffix
+# Word endings
 
-A content word’s last letter tells the listener how to take this meaning: a new ordinary kind, a published abstract sense, or a name. That last letter is the **reference suffix**.
+A content word’s last letter tells the listener how to take this meaning: a new ordinary kind, a published abstract sense, or a name. That last letter is the **word ending**.
 
 Outside a sentence (a list, a heading, a dictionary line) you write **root + ending** with no first-letter job mark. That spelling is a **citation**.
 

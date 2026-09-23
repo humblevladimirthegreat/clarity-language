@@ -32,7 +32,7 @@ The same `/h/` word can sit on a yes/no ask. Use **-l** when you are **finding o
 ### Hold endings (MAY)
 <a id="may-hold"></a>
 
-On **`odoho`**, **-l / -m / -r** say what you are doing with that *could be* **this sentence**. None of them is the “correct” person: finding out, leaving it at *may*, and *who knows* are all lawful. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
+On **`odoho`**, **-l / -m / -r** say what you are doing with that *could be* **this sentence**. None of them is the “correct” person: finding out, leaving it at *may*, and *who knows* are all lawful. **-n** is ordinary [proper](word-endings.md#proper-name--n).
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -362,7 +362,7 @@ English sometimes frames the whole clause as play: *as if*, *for the sake of arg
 ### Hold endings (NOTIONAL)
 <a id="notional-hold"></a>
 
-Beginner already used **-l / -m / -r** on **MAY** for *I'll find out* / default *may* / *who knows*. **NOTIONAL** reuses those letters for **play**, not for that stance: light / immersed / mask off. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
+Beginner already used **-l / -m / -r** on **MAY** for *I'll find out* / default *may* / *who knows*. **NOTIONAL** reuses those letters for **play**, not for that stance: light / immersed / mask off. **-n** is ordinary [proper](word-endings.md#proper-name--n).
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|

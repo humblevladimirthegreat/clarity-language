@@ -5,7 +5,7 @@ How to read and write one Agalan **clause**: who does what, word shape, and defa
 ## Beginner
 <a id="beginner"></a>
 
-You already write a [citation](reference-suffix.md): root + ending (`odogol`, `awalal`, `azawan`). In a **sentence**, put a **role letter** in front. That first letter says what the word is doing (who acts, the action, and so on). The root and ending stay the ones you already chose; only the first letter changes.
+You already write a [citation](word-endings.md): root + ending (`odogol`, `awalal`, `azawan`). In a **sentence**, put a **role letter** in front. That first letter says what the word is doing (who acts, the action, and so on). The root and ending stay the ones you already chose; only the first letter changes.
 
 ### Who acts and the action
 

@@ -28,7 +28,6 @@ could some causation overlay inventories be replaced by restrictors or other joi
 numbers section includes pronunciation rows underneath the agalan.
 reconsider ending tables for https://main.d2xds94zsgwptg.amplifyapp.com/grammar/knowing.html#hold-endings-notional
 consider viewpoint laterals allowing non-person viewpoints (the car's left). Then clarify that the endings/resume applies to the viewpoint not the direction
-rename reference suffix
 do a style pass
 do an example and translation pass
 do learning order consistency pass

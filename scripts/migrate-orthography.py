@@ -29,7 +29,7 @@ ALIAS_ROOT = {
     "truthr": "truth",  # truth + -r written with extra -l in some examples
 }
 
-# Full English names whose final letter is also a reference suffix letter.
+# Full English names whose final letter is also a word ending letter.
 MERGED_NAME_ENDINGS = {
     "Superman": ("Superman", "n"),
 }

@@ -15,9 +15,9 @@ Agalan does not mark English articles. The real cut is **introduce** vs **resume
 
 | English job | Agalan already |
 |-------------|----------------|
-| New instance of a kind (*a dog*, citation *dog*) | **`-l`** / **`-m`** ([reference suffix](../../grammar/reference-suffix.md)) |
+| New instance of a kind (*a dog*, citation *dog*) | **`-l`** / **`-m`** ([word ending](../../grammar/word-endings.md)) |
 | Same stem again (*the dog* after *a dog*) | resume **`-r`** ([pronouns](../../grammar/pronouns.md#resume-r)); a second **`-l`** is a **new** instance |
-| Unique label, title, handle (*Paris*, *the Odyssey*, office name) | **`-n`**, including first mention ([named](../../grammar/reference-suffix.md#proper-name--n), [handles](../../grammar/reference-suffix.md#named-handles)) |
+| Unique label, title, handle (*Paris*, *the Odyssey*, office name) | **`-n`**, including first mention ([named](../../grammar/word-endings.md#proper-name--n), [handles](../../grammar/word-endings.md#named-handles)) |
 | One obvious object in the scene (*pass the salt*, *close the door*) | **`-l`**: new kind in a situation that already uniquely picks the object. The English article is translation, not a missing morph |
 | Bridging part (*a car… the steering wheel*) | **`-l`** on the part plus relevance to the just-named whole. A second, unrelated wheel would need other material (restrictor, extra noun, a second sentence) |
 | Shared household / frame unique on the first utterance (*feed the cat*) | **`-n`** if it is a name; otherwise **`-l`** in a frame that already has one cat. If several cats, say which ([which-noun](../../grammar/dependents.md#which-noun), adjective, join) — do not presuppose uniqueness |

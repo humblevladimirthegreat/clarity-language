@@ -120,7 +120,7 @@ Walk the letter stream with the same syllabify rules as TTS (onset + vowel; left
 - **-l / -m / -n / -r**
 - same plus **-x** (`lx` `mx` `nx` `rx`)
 
-Prefix-less [citation](../grammar/reference-suffix.md#citation-forms) is legal (root + ending, no PoS). **`PoS+r`** is reserved for [number words](../grammar/phonology.md#number-word-exception). Revisers (`al`, `am`, …) stay prefix-less closed words.
+Prefix-less [citation](../grammar/word-endings.md#citation-forms) is legal (root + ending, no PoS). **`PoS+r`** is reserved for [number words](../grammar/phonology.md#number-word-exception). Revisers (`al`, `am`, …) stay prefix-less closed words.
 
 If segmentation fails, return a **partial transcript** plus a skip/error span (do not invent phones). Same spirit as TTS: do not speak or hear material that is not in the signal.
 
@@ -249,5 +249,5 @@ Expect the phoneme model to dwarf the TS glue. Keep it off the critical docs ren
 | Phonology / IPA | [phonology.md](../grammar/phonology.md) |
 | Writing vs speech (spans) | [spans.md](../grammar/spans.md#writing-vs-speech) |
 | Number shorthand vs speech | [numbers.md](../grammar/numbers.md#writing-preferred-shorthand) |
-| Orthography / citation | [phonology.md](../grammar/phonology.md#beginner), [reference-suffix.md](../grammar/reference-suffix.md#citation-forms) |
+| Orthography / citation | [phonology.md](../grammar/phonology.md#beginner), [word-endings.md](../grammar/word-endings.md#citation-forms) |
 | Parser | [parser-pipeline.md](../meta/parser-pipeline.md) |
