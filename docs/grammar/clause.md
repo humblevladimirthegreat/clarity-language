@@ -592,8 +592,7 @@ Object-first English *It's a cat that Azawan sees* (or *A cat is what Azawan see
 ### Weak-pause left cues
 <a id="weak-pause-left-cues"></a>
 
-When you cannot hear a clear pause (singing, fast free order), prefer something audible at the start after silence: *yes* / *no*, a name you address, or a written act word. A bare body that only implies **`jal`** is easy to miss. Writing still uses `.` to mark body edges.
-
+When you cannot hear a clear pause (singing, fast free order), prefer something audible at the start after silence: *yes* / *no*, a name you address, or a written act word like `jal`. Writing still uses `.` to mark body edges.
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>

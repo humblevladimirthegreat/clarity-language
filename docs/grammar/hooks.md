@@ -25,6 +25,8 @@ A HOOK B
 
 **Compare with:** packaging two members as a list uses a [join](joins.md) (`zodogol zagadal zam` *a dog and a cat*). A hook **hooks** B onto A; it does not name a pair.
 
+<!-- TODO: This example should be for al. am should be covered with the rest of the open endings below -->
+
 ### Rather (`el`)
 <a id="rather"></a>
 
@@ -117,7 +119,7 @@ Sometimes the thing you want to tweak is not a phrase inside this sentence, but 
 ### Extra noun (`/b/` after the hook)
 <a id="extra-noun"></a>
 
-When the next word after the hook is `/b/`, and the word immediately before the hook (skipping any `/w/` words) is **not** `/b/`, the hook names how that extra noun sits toward the clause (or toward the noun already in play). This is not the [recipient](clause.md#extra-nouns) (`zazawan bululon vezehel` *tells Ululon*), and it is not same-role *including* (`bazawan al bululon`). (cue: `/b/` on the right of the hook, none on the left)
+When the next word after the hook is `/b/`, and the word immediately before the hook is **not** `/b/`, the hook names how that extra noun sits toward the clause (or toward the noun already in play). This is not the [recipient](clause.md#extra-nouns) (`zazawan bululon vezehel` *tells Ululon*), and it is not same-role *including* (`bazawan al bululon`). (cue: `/b/` on the right of the hook, none on the left)
 
 Simplex vowels (one vowel plus an ending):
 
@@ -157,6 +159,8 @@ Simplex vowels (one vowel plus an ending):
 > z-Azawan | v-cook | for | b-salad
 >
 > "Azawan cooks for a salad."
+
+<!-- replace a salad with a more sensible word like meal/dinner (replace agalan as well) -->
 
 **-l** is the exact extra. Frame **-m** waits for Intermediate, with the rest of the extra-noun grid.
 
@@ -487,7 +491,7 @@ On a non-initial conjunct under a [clause `/x/` fence](joins.md#right-close), th
 ### Detail on the hook (`/w/`)
 <a id="hook-w"></a>
 
-`/w/` always sits **immediately before** what it grades. A prefix-less hook is a host, the same way `/ɡ/` and `/h/` are. Put ordinary detail or a [restrictor](restrictors.md) on `/w/` before the hook, then the hook’s right-hand piece. Bare hooks stay legal.
+`/w/` always sits **immediately before** what it grades. A prefix-less hook is a host, the same way `/ɡ/` and `/h/` are. Put ordinary detail or a [restrictor](restrictors.md) on `/w/` before the hook, then the hook’s right-hand piece.
 
 Same-role: the except (or including, rather, instead) carries that detail; clause `/h/` still grades the verb.
 
@@ -736,6 +740,8 @@ A left root that is not *walk* still uses the same hook job (`vezehelul` *tell* 
 ### Exclusive high on a number range
 
 Inside a [measure range](numbers-applied.md#ranges), prefix-less **`ul`** on the high endpoint means *up to but not including* that number.
+
+<!-- it seems random that this is here. Should it be moved to numbers-applied? -->
 
 > `z+3 ul z+5 zal gurulel.`
 >

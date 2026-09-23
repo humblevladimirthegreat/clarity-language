@@ -321,6 +321,8 @@ English *two meters more challenging* still ranks two people on one quality, and
 >
 > "Azawan is two meters more challenging than Ululon."
 
+<!-- use a more sensible word than challenging like taller/bigger -->
+
 **Related form:** vague *much* / *slightly* is shared `/w/` immediately before the scale adjective (`wogegal`), not a counted `/b/`.
 
 ### Translation practice

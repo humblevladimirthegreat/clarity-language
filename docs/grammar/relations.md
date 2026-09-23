@@ -175,10 +175,6 @@ z-Azawan | h-on-behalf-of | b-Ululon | v-tell
 ## Intermediate
 <a id="intermediate"></a>
 
-::: tip Reminder:
-Intermediate sections assume you have read the beginner sections of every page.
-:::
-
 ### Locative relations
 <a id="locative-relations"></a>
 

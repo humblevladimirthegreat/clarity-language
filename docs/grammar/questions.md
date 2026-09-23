@@ -390,7 +390,7 @@ Beginner already used *who/what* (**…ar**) and *what else* (**…ur**). Length
 |--------|---------|---------|---------|---------|
 | **0** | *Who/what?* | *Anything?* | *What’s the priority?* | *What else?* |
 | **1** | *What/which (unknown) X?* | *Any X?* | *Which X is first?* | *What else (besides X)?* |
-| **2+** | *Which of these?* | *Any of these?* | *Whichever ranks highest?* | *What else?* / *Other than these?* |
+| **2+** | *Which of these?* | *Any of these?* | *Which ranks highest?* | *What else?* / *Other than these?* |
 
 Bare **-r** in the queried slot is unbound *who* / *what* / *where*. Bare **`var`** / **`xar`** is *what did they do?* / *what happened?*. Bare **`har`** is *when?*.
 

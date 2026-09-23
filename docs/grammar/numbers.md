@@ -395,12 +395,10 @@ Change only the first letter. The marker and digits stay the same; referential p
 | `/d/` | direct object | a code being dialed or a value being stated |
 | `/b/` | extra noun | *of size 12*; host *on* + a label |
 
-Bare clock uses `/h/` + **`ro`**; bare date uses `/h/` + **`roe`** (written `h_#…`) — [Time](numbers-applied.md#time). How exact the amount is uses the [number ending](#number-endings) (**-m** for *about*), not a `/w/` grader on the number. A digit-string usually takes the argument slot the clause needs (often `/d/`). An ordinal after a noun uses `/ɡ/`; a rank used on its own takes `/z/`, `/d/`, or `/b/`.
-
 ### Marker vowel (referential identity)
 <a id="marker-vowel-referential-identity"></a>
 
-Beginner already used **`+`** (*how many*) and **`#`** (*which place from the start*). The marker vowel **V** is the rest of that map: count versus rank versus digit-string, and (on counts) the sign of the whole word. Forward ordinal **`e`** matches [rank join **e**](joins.md#rank-joins). Count-from-the-end uses a **separate** marker **`eu`**.
+Beginner already used **`+`** (*how many*) and **`#`** (*which place from the start*). The marker vowel **V** is the rest of that map: count versus rank versus digit-string, and (on counts) the sign of the whole number. Forward ordinal **`e`** matches [rank join **e**](joins.md#rank-joins). Count-from-the-end uses a **separate** marker **`eu`**.
 
 | Agalan | Use | English | Cue |
 |---|---------|---------|-----|
@@ -414,6 +412,8 @@ One word, one identity. In [preferred writing](#writing-preferred-shorthand), th
 
 Date writing uses digit-string **`_`** with calendar-ordinal vowel **`oe`** (spoken **`roe`**, written `_#…`): `h_#22,7,2026` *on 22 July 2026*. Clock time uses **`ro`** / `h_15,30`. See [Time](numbers-applied.md#time).
 
+<!-- TODO: date writing should be moved to numbers-applied. -->
+
 #### Sign
 <a id="sign"></a>
 
@@ -424,12 +424,22 @@ Date writing uses digit-string **`_`** with calendar-ordinal vowel **`oe`** (spo
 | **End-relative ordinal** (`eu`, written `#-`) | Direction *from the end*. Digits are the count-back index (`#-1` = last, end-framed). |
 | **Digit-string** (`o`, written `_`) | Unsigned. Labels have no minus sign after **`_`**. |
 
+<!-- TODO: negative digit-strings should be allowed in the rare case that something is actually labeled with a negative number (floor -1). The vowel stack for this is uo and is written _-1
+
+also, negative and positive ua should be allowed as error bounds (+-N)
+
+we should move stacked number vowels to advanced as these are all rare cases. though double check end-relative ordinal as we might use that for sentence linkers. Halt and report if it is undesirable to extract ue to advanced.
+
+also, for numbers with stacked vowels, even though the symbols are written with - last, the u should be pronounced first for consistency with otehr vowel series and intelligibility (it's easy for a final u to get swallowed). A cue to remember this is that the symbols are written in reverse pronunciation order (ending letter is second and comes before reversed stacked vowels)
+ -->
+
 ### Number endings
 <a id="number-endings"></a>
 
-Beginner already used exact **-l** (no extra writing mark). The other endings mark *about*, a conventional title, or a repeat of a number you already gave. Speech keeps the ending letter; writing uses a **second-slot mark** after PoS (same glyphs as [span fences](spans.md)).
+Beginner already used exact **-l**. The other endings mark *about*, a conventional title, or a repeat of a number you already gave. Speech keeps the ending letter; writing uses a **second-slot mark** after PoS (same glyphs as [span fences](spans.md)).
 
-| Agalan | Use | English | Cue |
+<!-- TODO: in table below, move written to be the leftmost column-->
+| Spoken | Use | Written | Cue |
 |--------|---------|---------|-----|
 | **-l** | exact, newly stated (default) | *(none)* — `g+3`, `g+` | **-l** stand behind the amount |
 | **-m** | approximate / non-literal (“about N”) | **`~`** after PoS — `g~+3`, `g~+` | **-m** leaves the hold open |
@@ -460,6 +470,8 @@ Phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory*
 Other prefixes use the same empty payload (the marker’s identity, no named N). Time `h_` is an unspecified clock or date under bare `hro`. A date with fields uses **`roe`** / `h_#…` ([Time](numbers-applied.md#time)). Restrictor **`har`** (*sometimes*) is the [restrictor](restrictors.md).
 
 ### Exponents
+
+<!-- TODO: it probably makes sense to have bare OoM before this since it's simpler. Move this section and/or bare OoM. -->
 
 To write a large or tiny amount in one word (*27 million*, *5.2e-4*, *25%*), put an **exponent** in the digit group before the ordinary digits (the **mantissa**).
 
@@ -647,11 +659,13 @@ Worked examples: `x#2` *point 2:*; `x#-2` *penultimate item:*; `x+2` *corroborat
 Endings still apply (**-l** newly stated item, **-r** *as in (N) above* or digitless `x=#` / `x=#-` / `x=+` / …, **-n** titled item name, **-m** fuzzy *around item N*; on last-place **`x#e`** / **`x~#e`** / **`x@#e`** / **`x=#e`** and start-place **`x#e-`** / **`x~#e-`** / **`x@#e-`** / **`x=#e-`** as above).
 
 
-### Bare OoM decade bands
+### Bare OoM
 <a id="bare-oom-bands"></a>
 <a id="bare-oom"></a>
 
 **Bare** order of magnitude (exponent digits, **no mantissa**) names the **half-open decade band** `[10ᴷ, 10ᴷ⁺¹)`: *thousands* meaning 1000–9999, not every larger step. Use this when English would say the decade without a precise count.
+
+<!-- TODO: the below is just Bare OoM and has nothing to do with decades. To say the 90s, that would be g_90x for plural year 90, which should be stated in numbers-applied not here. Keep the below table as is, only move mentioning decades -->
 
 | Form | Band | Gloss |
 |------|------|--------|
@@ -707,6 +721,8 @@ To count **from the last place** (*penultimate*, *starting with the last one*), 
 <a id="ordinal-generation"></a>
 <a id="generation-ordinal"></a>
 
+<!-- TODO: move this section to numbers-applied. Do not keep a stub, fully move it. -->
+
 On forward **`#`** / **`re`** and end-relative **`#-`** / **`reu`**, a **digitful** exponent is not a power of ten. It is **how many generations away** from a focused person, version, or outline item. Use this when English would say *the third grandchild* or *the 3rd sub-point*.
 
 The marker still counts **from the start** or **from the end** inside that cohort. The exponent **`eK`** / **`e-K`** names generation **+K** (deeper / descendants) or **−K** (enclosing / ancestors). The mantissa picks which slot; omit it to name the whole cohort. Omit the exponent for the **same** generation as the focus (`g#3` = 3rd peer). Named **`e0`** asserts current generation (usually redundant).
@@ -734,19 +750,11 @@ The marker still counts **from the start** or **from the end** inside that cohor
 
 `/x/` treats generation as **agenda nesting** (`x#3e2` = *3rd sub-sub-point under the focus*; **`x#e0`** = *current-layer item(s)*). `/h/` / `/v/` / `/j/` inherit the same product (*for the 3rd time in gen +2*, *place 3rd in gen +2*, …) when the series is generation-structured. A flat event count uses **`h#N`**.
 
-
-### Percent, digit-strings, time
-<a id="percent-and-percentage-points"></a>
-<a id="percent-denominators"></a>
-<a id="percent-of-what"></a>
-<a id="time"></a>
-
-**Related form:** percent / percentage points, phone-style codes, and clock / calendar time use [numbers-applied.md](numbers-applied.md) ([percent](numbers-applied.md#percent-and-percentage-points), [digit-strings](numbers-applied.md#digit-strings), [time](numbers-applied.md#time)).
-
-
 ### Style (numeric vs spelled)
 <a id="writing-style-numeric-vs-spelled"></a>
 <a id="writing-style"></a>
+
+<!-- TODO: this section probably doesn't need to be here. spelled CV is only used in numeric-derivation so we should mention that there. Report if there are places other than numeric-derivation where spelled CV is used -->
 
 Both writings name the **same word**. Choose the surface by **job**: a numeral in a clause slot versus a kind-word built on a content root.
 
@@ -768,17 +776,12 @@ Write free numbers with second-slot marks or trailing letters consistently. Deri
 
 **Writing defaults:** (1) free numeral → shorthand by default; (2) content-root derivation → spelled CV by default; (3) shorthand in derivation tables is schematic only.
 
-### Measure phrases and ranges
-<a id="measure-phrases"></a>
-<a id="ranges"></a>
-
-**Related form:** measured units and numeric ranges use [numbers-applied.md](numbers-applied.md) ([measure phrases](numbers-applied.md#measure-phrases), [ranges](numbers-applied.md#ranges)).
-
 ### Examples inventory
 <a id="examples"></a>
 
-
 Preferred writing first; speech sketches show structure (exact **-l** unless noted). Digits in speech use the [digit table](#digits).
+
+<!-- some of the below examples are no longer taught on this page so remove them after you finish all other edits to this page. -->
 
 | Value | Preferred writing | Speech sketch |
 |-------|-------------------|---------------|
@@ -1025,7 +1028,7 @@ z-Uhubun | v-sit | h-third
 ### Ambient magnitude (casual)
 <a id="ambient-magnitude"></a>
 
-In careful writing, an omitted exponent means ones-place (`g+3` = 3). Prefer writing the exponent when the decade matters.
+In careful writing, an omitted exponent means ones-place (`g+3` = 3). Prefer writing the exponent when the magnitude matters.
 
 In casual measure-heavy talk, a stretch of conversation may set an **ambient** order of magnitude (often an engineering `e3` / `e6` / …). Bare mantissas are then heard at that decade until you cancel it.
 
@@ -1302,10 +1305,6 @@ Mantissa = how many joke-units of **late** (**`ba`**) or **early** (**`bu`**) ra
 | **`x#1e-`** | *umpteenth-first point:* / joke early agenda item |
 
 Digitless **`e`/`e-`** sits in its own group (no **`je`** / **`jo`** / **`ju`** stacked in that group).
-
-### Numeric derivation (compounds)
-
-**Related form:** a number stem after mid-word **`x`** on a content root (`ROOTx+e`, `ROOTx_12`, …) is a **kind morph** (essence, coded subtype, [infinite labels](numeric-derivation.md#infinite-labels), hyperbole-ROOT): [numeric-derivation.md](numeric-derivation.md#numeric-derivation); family cues in [x-compounds.md](x-compounds.md). Running text prefers spelled CV (`zolovexrabal`).
 
 ### Spoken group stress
 <a id="stress-pronunciation-guide"></a>

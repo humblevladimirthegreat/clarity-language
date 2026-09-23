@@ -2,6 +2,8 @@ https://main.d2xds94zsgwptg.amplifyapp.com
 
 redirects settings: https://us-east-2.console.aws.amazon.com/amplify/apps/d2xds94zsgwptg/redirects
 
+my name: obogan (innovation)
+
 # TODO
 finish English->Agalan cheat sheets, including tense
 add Agalan->English cheat sheet
@@ -10,7 +12,28 @@ consider making negatives clearer (stress?)
 final exam
 Prosody
 gloss overlay should indicate phrase structure and what modifies what
-numeric derivation doesn't use x (lexical)
+numeric derivation doesn't use x (lexical) and add cues for why that number equates to meaning
+redo prescriptive values: conversation ID: a7a1672b-8763-4910-ba69-d8e8339e116c. Consider: Invited, Offered (unsolicited to satisfy need), Protective (unsolicited to avoid detract need)
+Cheat sheet for joins and hooks
+Define goodbye (assertiveness for meeting again? need met, name reminder?)
+consider new consonant (th) used for new pos, used instead of x for some x-compounds or different type of compounding? maybe could be used as plural ending and role compounds (avoids collision with span pronoun)?
+j should just be y, remind that y is never a vowel
+consider removing some emotion emojis
+consider moving overlay forms to the top of lexicon so they get preferential retying
+cool features: collective verbs/adjectives use plural
+role compounds continues take the role compound + rest of pronoun
+plurality on joins/hooks?
+use a skill for humanizing the writing
+allow proper phrases to have non -n endings if the hook, join, or span has -n. 
+empty scope islands should be rejected by the parser as grammatically incorrect
+apply numbers TODO first before other TODOs (there are several and some need human feedback)
+could some causation overlay inventories be replaced by restrictors or other joins/hooks/stand-ins?
+for special-vocabulary, consider redistributing them all to other pages and deleting this page. 
+numbers section includes pronunciation rows underneath the agalan.
+reconsider ending tables for https://main.d2xds94zsgwptg.amplifyapp.com/grammar/knowing.html#hold-endings-notional
+consider viewpoint laterals allowing non-person viewpoints (the car's left). Then clarify that the endings/resume applies to the viewpoint not the direction
+consider deleting join-extras and moving join-act verbs to joins and join-relations to relations.
+consider movingn speech acts from clause to vowel series (and renaming appropriately) or otherwise incorporating the vowel series chart more seamlessly into another series 
 
 ## Evidentiality / tense
 

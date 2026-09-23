@@ -16,9 +16,9 @@ When English hangs *who* / *that* / *which* plus a clause on a noun (*the guard 
 >
 > z-guard | v-sit | z-Azawan | b-guard | v-tell
 >
-> "A guard sits. Azawan tells the guard."
+> "A guard sits. Azawan talks to the guard."
 
-That pair is English *Azawan tells the guard who sits.* Repeat the full word when you need the same person again in the next sentence.
+That pair is English *Azawan talks to the guard who sits.* Repeat the full word when you need the same person again in the next sentence.
 
 **Compare with:** *a blue dog* is still one [adjective](clause.md#adjectives-ɡ) (`gelulul`). *Azawan tells Ululon **that** a dog runs* is a [dependent clause](#dependent-clauses) (**`darl`**): *that* packages the next sentence as content, not as a tag on *dog*.
 
@@ -29,7 +29,7 @@ That pair is English *Azawan tells the guard who sits.* Repeat the full word whe
 
 Sometimes a full sentence fills a slot in the sentence before it (*Azawan tells Ululon **that the dog runs***). That inner sentence is a **dependent clause**. The person told is unhosted `/b/`; *that…* is often a direct object.
 
-In the main sentence, a **stand-in** **`darl`** (role letter + **`a`** + **`-rl`**) occupies that slot and stands for whatever sentence follows right away. Unspecified join **`dar`** is still *something* with no following sentence. A stand-in is not a [join](joins.md): joins close a list already said; a stand-in points forward at a sentence not yet said.
+In the main sentence, a **stand-in** **`darl`** (role letter + **`a`** + **`-rl`**) occupies that slot and stands for whatever sentence follows right away.
 
 Put **`darl` last** in its slot in the main sentence, and put the dependent **immediately after** it. Rearrange free word order so **`darl`** stays last in that slot.
 
@@ -337,6 +337,8 @@ These words glue one finished sentence to the next (one-way; default ending **-l
 
 Beginner used locked **`a`** (`darl` / `barl`) and *whether* **`dorl`**. Stand-ins reuse the [vowel series](vowel-series.md) (`a` / `o` / `e` / `u`) to type the following sentence. They are not joins. **`-rl`** locks that sentence as the whole filler; **`-rm`** is open (gist / not only that). Unspecified join **`-r`** with no following clause is still *something* / *anything*.
 
+<!-- TODO: I'm pretty sure it's redundant to state "with no following clause". dar always means "something" even if there is a clause after it. If this is not the case, report that. Remove the normal -r column entirely from the table below, as that is not helpful for this section. -->
+
 |  | **`-r`** (no clause) | **`-rl`** locked | **`-rm`** open |
 |--|----------------------|------------------|----------------|
 | **`a`** hold | `dar` *something* | `darl` *that …* | `darm` *that …* (gist) |
@@ -351,6 +353,8 @@ The same grid uses **`b`** after a pole (`barl` / `berl` / `burl` …). Everyday
 > z-Azawan | b-Ululon | v-tell | d-to-clause | z-Ululon | v-sit
 >
 > "Azawan tells Ululon to sit."
+
+<!-- TODO: clarify that the stand-in functions identically to a j speech act that is fit into a pos slot. Derl is equivavlent to jel as a direct object. As such, zazawan bululon vezehel derl vajul is valid because "jel vajul" is a valid command. If this conflicts with another rule elsewhere, report that. -->
 
 The addressee is unhosted `/b/`. The inner `/z/` is still Ululon (English *to sit* drops that name). **`derl`** types the next sentence as an aim; the outer sentence stays a statement. Quotes of wording stay [spans](spans.md).
 

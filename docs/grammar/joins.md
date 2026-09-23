@@ -393,10 +393,12 @@ Beginner already used single-item *just X* and standalone *nothing* / *everythin
 | **…aen** (`zaen` / …) | stock tie of one | *X tied for* (stock / conventional draw label) |
 | **…oem** (`zoem` / …) | open exclusive start | *start with X* / *try X first* |
 | **…oel** (`zoel` / …) | closed exclusive start | *only try X* / *X with no listed fallback* |
-| **…uel** (`zuel` / …) | closed last place | *X last, period*; + SHARED scale → least |
-| **…uem** (`zuem` / …) | open last place | *X last* / mainly leave X for last |
+| **…uel** (`zuel` / …) | closed last place | *X last*; + SHARED scale → least |
+| **…uem** (`zuem` / …) | open last place | *mainly leave X for last* |
 | **…en** (`zen` / …) | stock first | *X first* (stock) / *X, as usual* |
 | **…er** (`zer` / …) | unspecified ranked member | *preferably some X* / *X as a priority* |
+
+<!-- TODO: in table above, suggest  -->
 
 **Rank — standalone**
 
@@ -532,7 +534,6 @@ When English would say *every cat* rather than *everything but the cat*, write *
 | standalone `zual` | empty invert-add | *everything* / *everyone* |
 | `zual` + SHARED `/ɡ/` | closed every-kind | *every K* (`zual gagadal` = *every cat*) |
 | `zuam` + SHARED `/ɡ/` | open every-kind | *every K, as far as I know* |
-| `zual` + SHARED `/ɡ/` + items | every-kind minus leftovers | *every K but* exclusions |
 | single-item `zual X` (no SHARED) | leftover only | *everything but X* |
 
 > `zual gagadal.`
@@ -828,20 +829,21 @@ When same-role words sit next to a smaller list, wrap that stretch and its join 
 >
 > "Azawan and (just water)."
 
-**Compare with:** a memory stretch or a chain of `/x/` writes the evidential and/or resumes [*as-of*](relations.md#as-of) on the next host. Islands bound join / `/h/` scope; they are not a viewpoint paragraph.
-
+**Compare with:** a memory stretch or a chain of `/x/` writes the evidential and/or resumes [*as-of*](relations.md#as-of) on the next host. Islands bound join / `/h/` scope.
 
 ### Named phrase **`-n`**
 <a id="named-list"></a>
 <a id="named--conventional-ending-phrase-level-all-join-vowels"></a>
 
-When a phrase list is an established bundle (*the usual menu*, *stop–drop–roll*), end the join with **-n** under `/z/` `/d/` `/b/` `/w/`. That **-n** names the package, not a person.
+When a phrase list is an established bundle (*Stop–Drop–Roll*), end the join with **-n** under `/z/` `/d/` `/b/` `/w/`. That **-n** names the package, not a person.
 
 > `zadedal zogovel zon.`
 >
 > z-tea | z-coffee | z-or-exactly-one.named
 >
 > "tea or coffee (the usual named menu)"
+
+<!-- TODO: actually use stop-drop-roll or similar. Usual menu is not a sensible reading-->
 
 **…an** is standalone-only on those phrase fences (*null* / *void*). Under `/ɡ/` `/h/`, the same letters are [join-relations](join-extras.md#join-relations).
 
@@ -900,9 +902,6 @@ These limits apply to every join.
 | Phrase **-r** | only **…ar** / **…or** / **…er** / **…ur** |
 | Verb+object packages | verb-phrase `/v/`; full sentences use `/x/` |
 | Same role letter on every item | in-clause *including* / *rather* / *instead* / *except* are [hooks](hooks.md) |
-| Cite / mention / aside | [span fences](spans.md) |
-| Numbered *first / second* in talk | [numbers](numbers.md#number-as-discourse-marker-by-marker) |
-| Every join | role letter plus an ending |
 | Several manners on `/h/` `/w/` | juxtaposition (`hadazal howol`) |
 
 **Compare with:** prefix-less **`al`** / **`am`** / … are [hooks](hooks.md). Under `/h/` `/w/`, the unit is a [restrictor](restrictors.md), not sibling *and*.

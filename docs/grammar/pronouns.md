@@ -284,7 +284,7 @@ Beginner already used content **-r** in the same slot as the earlier word (*he s
 
 English *going back to X* / *returning to that thread* names an earlier person or thing without making the next sentence *about* them. Use continue `/x/` plus the resume stem and **-r**. You can drop that word and the following claim is unchanged; it only points the listener at which earlier thread you mean.
 
-> `zazawan vawalal. zululon vurunul. xazawar velebel.`
+> `zazawan vawalal. zululon vurunul. xazar velebel.`
 >
 > z-Azawan | v-walk | z-Ululon | v-run | x-←Azawan | v-sleep
 >
@@ -311,6 +311,8 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 | adjective antecedent, noun … `-r` | recast as entity | *the … one* / *that quality* |
 
 ### Specials: further notes
+
+<!-- TODO: change section heading to be more descriptive - something about plural addressee I guess -->
 
 When you address several people at once, English *you* does not say how many. The listener root **`edone`** plus associative **-x** names everyone this turn addresses: the vocative cluster, plus anyone still held as addressee. One addressee stays singular **`edone`**; several take **`edone…x`**. Inclusive *shall we* stays **`aha`**. Soft **`zaham`** hedges whether you really share the act.
 
@@ -527,7 +529,7 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 | `/ɡ/` … `-r` | property of having done that | *such* (done that way) |
 | `/w/` … `-r` | frame on an adjective about that doing | that frame |
 | `/h/` … `-r` | manner of acting | *by doing so* / *thereby* / *in that manner of acting* |
-| `/j/` … `-r` | vocative/interjection on that named act | rare |
+| `/j/` … `-r` | vocative/interjection on that named act | *They did that?!* |
 | `/x/` … `-r` | discourse resume of the doing | *Going back to that (doing / event)* |
 
 #### Antecedent was an adjective (`/ɡ/`)
@@ -539,7 +541,7 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 | `/ɡ/` … `-r` | same property again | *such* / *that* |
 | `/w/` … `-r` | degree of the property | *that* degree |
 | `/h/` … `-r` | manner from the property | *in that way* / *so* |
-| `/j/` … `-r` | named category as a call | rare |
+| `/j/` … `-r` | named category as a call | *It was that?!* |
 | `/x/` … `-r` | discourse resume of the property | *Going back to that (property / category)* |
 
 #### Antecedent was an adjective extra (`/w/`)
@@ -550,7 +552,7 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 | `/ɡ/` … `-r` | host property under that frame again | that property |
 | `/w/` … `-r` | same adjunct again | same adjunct |
 | `/v/` `/h/` … `-r` | act or clause framed by that degree/criterion | framed doing / occasion |
-| `/j/` … `-r` | vocative on that frame | rare |
+| `/j/` … `-r` | vocative on that frame | *In that manner?!* |
 | `/x/` … `-r` | discourse resume of the scale | *Going back to that (scale / criterion)* |
 
 #### Antecedent was an adverb (`/h/`)
@@ -562,7 +564,7 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 | `/ɡ/` … `-r` | property as of that occasion | that property |
 | `/w/` … `-r` | adjective-level echo of that frame | that frame |
 | `/h/` … `-r` | same adverb again | *thus* / *so* / *then* / *that way* |
-| `/j/` … `-r` | vocative on that occasion | rare |
+| `/j/` … `-r` | vocative on that occasion | *On that occasion?!* |
 | `/x/` … `-r` | discourse resume of the framing | *Going back to that (occasion / framing)* |
 
 #### Antecedent was `/j/` or `/x/`

@@ -253,6 +253,8 @@ You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra c
 | `zazawan godogol hual` | characterizing / habitual | *Azawan is the dog type* |
 | `zazawan godogol gul` | negation | *Azawan is not a dog* |
 
+<!-- TODO: add an actual agalan example for the w hedge. If there is insufficient vocabulary to do so, report that. -->
+
 **Related form:** *the dog type* / habitual class uses [**hual**](restrictors.md).
 
 **Related form:** *not a dog* uses [negation **u**](joins.md#negation-u) (`gul`).
@@ -265,8 +267,6 @@ Beginner already used closed **`gonunul`** (*is the same as*). The other endings
 |--------|-----|---------|
 | **-l** | stand behind the match (closed) | *is* (the same as) |
 | **-m** | leave the match open | *same for our purposes* / *basically* |
-| **-n** | titled identity frame | named equivalence |
-| **-r** | resume a prior identity claim | *the same (as already ascribed)* |
 
 | Agalan | English |
 |---------|---------|

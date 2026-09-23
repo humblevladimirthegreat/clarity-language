@@ -302,6 +302,8 @@ If the wrong reading would matter, mark co-agency with **`aha`** or a join; mark
 | Institutional frame | this meeting, this household | the scene’s default group |
 | Open | no further cue | the listener may or may not be in the set |
 
+<!-- this section is hard to read. Use simpler language and give clearer examples -->
+
 For the **address set**, take everyone in this turn’s vocative cluster, plus anyone still held as addressee by context.
 
 ### Verbs (`/v/`) — collective
@@ -337,13 +339,13 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 <a id="adjectives-g"></a>
 <a id="collective"></a>
 
-English *the boxes are heavy* can mean each box or the pile. Put **-x** on the **adjective** (after its ending) when the property holds of the **host set as one unit**. A set host with a singular adjective leaves each-member vs one-pile open. That is not “more red.”
+English *the boxes are heavy* can mean each box or the pile. Put **-x** on the **adjective** (after its ending) when the property holds of the **host set as one unit**. A set host with a singular adjective leaves each-member vs one-pile open.
 
 > `zulebolx garogomx.`
 >
 > z-file-box-x | g-heavy-x
 >
-> "The file-boxes are heavy as a pile."
+> "The file-boxes are heavy as a pile (but not individually)."
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -355,7 +357,7 @@ With a [phrase join](joins.md), SHARED singular scale under **`a`** is already *
 | Agalan | English |
 |--------|---------|
 | `zulebol zolozol zal garogom` | *the file-box and the toolbox are (each) heavy* |
-| `zulebol zolozol zal garogomx` | *heavy together* (collective SHARED) |
+| `zulebol zolozol zal garogomx` | *the file-box and the toolbox are heavy together* (collective SHARED) |
 | `zahadal gumum` | *the team is vast* (group-level size) |
 | `zulebolx garogom` | *the file-boxes are heavy* (members / plain) |
 | `zulebolx garogomx` | *the file-boxes are heavy collectively* |
