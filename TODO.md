@@ -29,7 +29,6 @@ numbers section includes pronunciation rows underneath the agalan.
 reconsider ending tables for https://main.d2xds94zsgwptg.amplifyapp.com/grammar/knowing.html#hold-endings-notional
 consider viewpoint laterals allowing non-person viewpoints (the car's left). Then clarify that the endings/resume applies to the viewpoint not the direction
 consider moving speech acts from clause to vowel series (and renaming appropriately) or otherwise incorporating the vowel series chart more seamlessly into another series 
-fold ability.md into intention.md
 do a style pass with Luna.
 do an example and translation pass
 

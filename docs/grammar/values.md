@@ -37,7 +37,7 @@ When you want to say that a named belonging **serves** this need (pays it off), 
 >
 > "My gift serves relatedness (appreciated physically)."
 
-**Not the same job as:** [ability](ability.md) (`vuzunuxal` *can sing*; `guzunuxal` *able to sing* as a property). There the left of **`x`** is an activity. Here it is a **need**, and **`xa`** means *serves this need*.
+**Not the same job as:** [ability](intention.md#ability) (`vuzunuxal` *can sing*; `guzunuxal` *able to sing* as a property). There the left of **`x`** is an activity. Here it is a **need**, and **`xa`** means *serves this need*.
 
 ### How it is appreciated (endings on met)
 <a id="value-contact"></a>
@@ -604,5 +604,5 @@ z-Ululon | v-scream | h-survival-motive-internal | h-always-except
 ## See also
 
 - Applicability *when*: [restrictors.md](restrictors.md)
-- Ability **`xa` / `xe` / `xo` / `xu`** on an activity host: [ability.md](ability.md)
+- Ability **`xa` / `xe` / `xo` / `xu`** on an activity host: [intention.md#ability](intention.md#ability)
 - DECISION reuses unmet changeability endings: [intention.md](intention.md)

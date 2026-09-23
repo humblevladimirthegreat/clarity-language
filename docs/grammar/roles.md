@@ -22,7 +22,7 @@ English *a teacher* names who teaches as a kind, from the same idea as *teach*. 
 
 The last letter is the ordinary [reference ending](reference-suffix.md): **-l** takes the stem’s everyday concrete sense, **-m** the published abstract. `zaxedegel` is *a teacher*; `zaxuvugul` is *a fighter*; `zaxuvugum` is *a struggler*. Non-resume names the **lexical** role. You do not need a prior teaching or fight in the talk.
 
-**Compare with:** *can teach* puts the stance vowel **right** of **`x`** ([ability](ability.md): `vedegexal`). A teacher puts the role vowel **left** of **`x`**.
+**Compare with:** *can teach* puts the stance vowel **right** of **`x`** ([ability](intention.md#ability): `vedegexal`). A teacher puts the role vowel **left** of **`x`**.
 
 ### This instance (`-r`)
 
@@ -638,4 +638,4 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 - Event resume vs participant: [pronouns.md](pronouns.md)
 - Mid-word **`x`** families: [x-compounds.md](x-compounds.md)
 - Join-relations as relation roots: [join-across-roles.md](join-across-roles.md#join-relations)
-- Can / can’t (vowel right of **`x`**): [ability.md](ability.md)
+- Can / can’t (vowel right of **`x`**): [intention.md#ability](intention.md#ability)

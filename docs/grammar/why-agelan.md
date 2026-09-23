@@ -103,7 +103,7 @@ Composing emotion from need + activation + locus helps you ask for what would ac
 
 *I can’t* blurs temporary block, lasting incapability, and choice.
 
-[Ability](ability.md#ability) tags **can** / **can’t** on an activity or property: can; can’t right now; can’t but may change; can’t as fixed. Ordinary *won’t* is choosing not to.
+[Ability](intention.md#ability) tags **can** / **can’t** on an activity or property: can; can’t right now; can’t but may change; can’t as fixed. Ordinary *won’t* is choosing not to.
 
 Tagging *can’t right now* vs *may yet* vs *impossible* helps you stop treating a temporary block as a fixed incapability.
 

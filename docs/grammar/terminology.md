@@ -14,7 +14,7 @@ Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#a
 
 | Label | Gloss | Teach |
 |-------|-------|--------|
-| **ABIL** | Hostless *can* / *can’t* fallback **`egera`** | [Ability](ability.md#ability-fallback) |
+| **ABIL** | Hostless *can* / *can’t* fallback **`egera`** | [Ability](intention.md#ability-fallback) |
 | **ACT** | Emotion-compose arousal (HIGH / MED / LOW) | [Values](values.md#emotion-compose) |
 | **AS-OF** | Whose-now pole: ledger **`elere`** / bookmark **`oboma`** | [Relations](relations.md#as-of) |
 | **ALTHOUGH** | Clause-pole **`ezeba`** (*although* / NP *despite*) | [Dependents](dependents.md#dependent-clauses) |
@@ -84,7 +84,7 @@ From [numbers](numbers.md#marker-vowel-referential-identity): **scalar** (`+` / 
 
 Hosted *can* / *can’t* (`xa` / `xe` / `xo` / `xu`) and hostless **ABIL**.
 
-[Ability](ability.md)
+[Ability](intention.md#ability)
 
 ### Act word
 
@@ -437,7 +437,7 @@ A named citation as a hello (`azawan.`). Mid-word **`x`** plus **`a`** / **`o`**
 
 Content root a values/ability `x`-stance or a numeric-derivation join attaches to.
 
-[Ability](ability.md), [values](values.md), [numeric derivation](numeric-derivation.md)
+[Ability](intention.md#ability), [values](values.md), [numeric derivation](numeric-derivation.md)
 
 **Compare with:** a measure [unit](#measure-phrase-unit) is not a host. Classification names the classified noun, not a host.
 

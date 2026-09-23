@@ -29,7 +29,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 |--------|-----|---------|-----|
 | full root **`x`** full root | two roots, one word | `zabanuxudel` *peanut butter* | **x** ≈ plus |
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxedegel` *a teacher* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
-| root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) or [ability](ability.md#ability) | `vuzunuxel` | extra vowel after the host |
+| root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) or [ability](intention.md#ability) | `vuzunuxel` | extra vowel after the host |
 
 **Compare with:** two people stay two words (`zazawan zululon`). One double name is one word (`zazawaxululon`).
 
@@ -254,7 +254,7 @@ Beginner already used two roots glued with **`x`**, dictionary words with no **`
 | one vowel **`x`** one vowel, then a span ending | [span fence](spans.md) open or close | `daxal` … `xuxul` | vowel **x** vowel |
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxedegel` *a teacher* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
 | name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (hello or calling) | [greeting bid](#greeting-bid) | `azawaxan`; `jululoxen` | vowel on the name |
-| longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) (on a need) or [ability](ability.md#ability) (on another host) | `vuzunuxel` | extra vowel after the host |
+| longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) (on a need) or [ability](intention.md#ability) (on another host) | `vuzunuxel` | extra vowel after the host |
 | full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zabanuxudel`; `gewezexazawan` *Azawan’s left* ([whose left](roles.md#viewpoint-laterals)); `zodunaxalanen` ([multipart names](reference-suffix.md#phrasal-proper-names)) | **x** ≈ plus |
 
 A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`**, or **`u`** left of **`x`**, you are opening a span or naming a role (*teacher*), not gluing two full roots. Role compounds still put a full root **after** that vowel.
@@ -336,7 +336,7 @@ The other person answers with a greeting bid too. The **lesser** bid is the one 
 >
 > "Ululon — one ask." (the talk is one ask)
 
-**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](ability.md#ability) (`vuzunuxel` *can’t sing right now*). On a [need](values.md) it is a value stance. Greeting bids sit on a **named** hello or a **`/j/`** call, with **-n**.
+**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (`vuzunuxel` *can’t sing right now*). On a [need](values.md) it is a value stance. Greeting bids sit on a **named** hello or a **`/j/`** call, with **-n**.
 
 **Not the same job as:** **`jawavel`** (wave / *hello* as an interjection). The bid sits on the **person**.
 
@@ -516,7 +516,7 @@ Azawan-presence | Ululon-minutes
 
 - **`x`** at the start of a word (keep going): [dependents.md](dependents.md#continue-x)
 - How **`x`** sits in the word shape: [phonology.md](phonology.md#phonotactics)
-- [ability.md](ability.md) / [values.md](values.md) / [roles.md](roles.md) / [numeric-derivation.md](numeric-derivation.md)
+- [intention.md#ability](intention.md#ability) / [values.md](values.md) / [roles.md](roles.md) / [numeric-derivation.md](numeric-derivation.md)
 - Greeting bid: [how you show up](#greeting-bid); bare hello: [reference-suffix.md](reference-suffix.md#greeting)
 - Short office names vs long titles: [reference-suffix.md](reference-suffix.md#named-handles)
 - Extra-noun fuse on a citation: [hooks.md](hooks.md#hook-compounds)

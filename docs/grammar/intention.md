@@ -79,6 +79,9 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *punch* | `vubunul` | |
 | *scream* | `vazagal` | |
 | *fight* | `vuvugul` | |
+| *climb* | `ugumul` | |
+| *stand* | `adanal` | |
+| *run* | `urunul` | |
 
 #### English → Agalan
 
@@ -223,6 +226,77 @@ h-predict | v-fight
 ## Intermediate
 <a id="intermediate"></a>
 
+### Ability and incapability
+<a id="ability"></a>
+<a id="incapability"></a>
+
+English *can* and *can't* usually sit in front of the verb (*can sing*, *can't sing*). In Agalan you fold that meaning into the verb or adjective itself. After the root, write **`x`**, then a vowel that means *can* or *how they can't*, then the same [ending](reference-suffix.md) that word would have had without *can*.
+
+#### Can (`xa`)
+<a id="can"></a>
+
+To say someone **can** do something you name with one verb (*sing*, *walk*), or **can** have a quality you name with one adjective (*see*), keep that verb or adjective. After the root, add **`x`** and **`a`**, then the usual ending. Keep the first letter the same: `/v/` for an action, `/ɡ/` for a quality. You do not need a separate helping verb like English *can*. If you are not talking about ability, leave the word ordinary. (Cue: **a** ≈ add — capability is in)
+
+> `zazawan vuzunuxal.`
+>
+> z-Azawan | v-sing-able
+>
+> "Azawan can sing."
+
+The same idea as a quality uses `/ɡ/`: `zazawan guzunuxal` (*Azawan is able to sing*, as a quality). Ordinary action, no *can*: `zazawan vuzunul` (*Azawan sings*).
+
+The ending still belongs to that verb or adjective (**-l** concrete, **-m** abstract, **-n** proper, **-r** resume). It does not change what kind of *can* you mean:
+
+> `zululon vuwuruxam.`
+>
+> z-Ululon | v-authorship-able
+>
+> "Ululon can author."
+
+#### Can't (`xe` / `xo` / `xu`)
+<a id="ability-changeability"></a>
+<a id="ability-stance"></a>
+
+English *can't* does not say whether this is just for now, not yet, or never. After **`x`**, pick **`e`**, **`o`**, or **`u`** for that difference.
+
+> `zululon vuzunuxel.`
+>
+> z-Ululon | v-sing-unable-temporary
+>
+> "Ululon can't sing right now."
+
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`xa`** | they can (this verb or quality) | *can* | **a** ≈ add (capability is in) |
+| **`xe`** | they can't, just for now (they usually can) | *can't right now* | **e** ≈ order (this moment's ranking) |
+| **`xo`** | they can't yet (use this if you are not sure how lasting it is) | *can't yet* | **o** ≈ one (one open *can't*) |
+| **`xu`** | they can never / it is impossible | *can never* / *impossible* | **u** ≈ undo (capability taken off) |
+
+> `zuhubun vuzunuxol.`
+>
+> z-Uhubun | v-sing-unable-modifiable
+>
+> "Uhubun can't sing yet."
+
+> `zazawan vurunuxul.`
+>
+> z-Azawan | v-run-unable-irreversible
+>
+> "Azawan can never run."
+
+**Compare with:** **`xa` / `xu`** on a [values](values.md) **need** root is met / unmet need (`holozoxum` *competence unmet*). On a verb or quality, **`xa` / `xu`** is can / can't.
+
+### When there is no single verb (`egera`)
+<a id="ability-fallback"></a>
+
+Sometimes English *can* / *can't* is not about one named verb or quality: the activity takes more than one root, you just want a bare *can't*, or the *can* covers the whole sentence. Then there is no single root to put **`x`** into. Use the special word **`egera`**: after **`egera`**, write the same **`x`**, vowel, and ending as on a verb. Put it on `/h/` when it is about the whole clause, or on `/w/` immediately before the adjective it grades. That lets you say *can* / *can't* without naming the activity in that word. Prefer the verb itself whenever one root is enough. (Cue: 🥣 *cereal*: a bowl that holds what you can do)
+
+> `zazawan hegeraxel.`
+>
+> z-Azawan | h-ABIL-unable-temporary
+>
+> "Azawan can't right now (no single verb / whole clause)."
+
 ### Decision (revisability)
 <a id="decision"></a>
 <a id="decision-mood"></a>
@@ -274,7 +348,7 @@ To say both that an event will happen later and how you reached that forecast, u
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**.
+Short drills for Intermediate. Try each item before opening **Show answer**. These combine ability with planning and decisions.
 
 **Setting:** a board meeting
 
@@ -298,6 +372,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *punch* | `vubunul` | |
 | *scream* | `vazagal` | |
 | *fight* | `vuvugul` | |
+| *climb* | `ugumul` | |
+| *stand* | `adanal` | |
+| *run* | `urunul` | |
 
 #### English → Agalan
 
@@ -363,6 +440,22 @@ z-Ululon | h-DECISION-irreversible | d-Azawan | v-punch
 `zululon hehegel vuvugul.`
 
 z-Ululon | h-DECISION-irreversible | v-fight
+:::
+
+**9.** *Azawan can climb.*
+
+::: details Show answer
+`zazawan vugumuxal.`
+
+z-Azawan | v-climb-able
+:::
+
+**10.** *Uhubun can't stand yet.*
+
+::: details Show answer
+`zuhubun vadanaxol.`
+
+z-Uhubun | v-stand-unable-modifiable
 :::
 
 #### Agalan → English
@@ -437,6 +530,24 @@ z-Ululon | h-DECISION-temporary | d-Azawan | v-punch
 z-Uhubun | h-DECISION-irreversible | v-scream
 
 *Uhubun has decided for good to scream.*
+:::
+
+**9.** `zululon vurunuxul.`
+
+::: details Show answer
+
+z-Ululon | v-run-unable-irreversible
+
+*Ululon can never run.*
+:::
+
+**10.** `zazawan vugumul.`
+
+::: details Show answer
+
+z-Azawan | v-climb
+
+*Azawan climbs.*
 :::
 
 ## Advanced
