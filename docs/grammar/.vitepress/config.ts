@@ -31,7 +31,6 @@ const readingOrder = [
   { text: 'Comparatives', link: '/comparatives' },
   { text: 'Causation', link: '/causation' },
   { text: 'Values', link: '/values' },
-  { text: 'Ability', link: '/ability' },
   { text: 'Knowing', link: '/knowing' },
   { text: 'Role compounds', link: '/roles' },
   { text: 'x-compounds', link: '/x-compounds' },
