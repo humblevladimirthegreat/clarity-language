@@ -262,7 +262,7 @@ class AgelanSentenceParser extends CstParser {
 
   public islandUnit = this.RULE("islandUnit", () => {
     this.CONSUME(IslandEdge);
-    this.AT_LEAST_ONE({
+    this.MANY({
       GATE: () => this.LA(1).tokenType !== IslandEdge,
       DEF: () => {
         this.SUBRULE(this.unit);
@@ -1161,6 +1161,9 @@ function validateUnits(units: Unit[]): void {
       for (const part of unit.coord.parts) {
         for (const item of part.items) {
           if (item.kind === "island") {
+            if (item.island.units.length === 0) {
+              throw new SentenceParseError("Empty scope island");
+            }
             if (!islandHasBinder(item.island)) {
               throw new SentenceParseError("Illegal binderless scope island");
             }
@@ -1173,6 +1176,9 @@ function validateUnits(units: Unit[]): void {
       validateVpFences(unit.coord);
     }
     if (unit.kind === "island") {
+      if (unit.island.units.length === 0) {
+        throw new SentenceParseError("Empty scope island");
+      }
       if (!islandHasBinder(unit.island)) {
         throw new SentenceParseError("Illegal binderless scope island");
       }

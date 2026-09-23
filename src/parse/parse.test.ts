@@ -139,6 +139,11 @@ describe("parse — joins.md", () => {
     assert.equal(unit.coord.parts[0]!.items[1]!.kind, "island");
   });
 
+  it("rejects empty scope islands", () => {
+    assert.throws(() => parseText("^ ^ zazawan vawalal."), /Empty scope island/);
+    assert.throws(() => parseText("zazawan ^ ^ zam."), /Empty scope island/);
+  });
+
   it("parses nested left-associative VP joins", () => {
     const result = parseText("vawalal velebel vol vurunul val.");
     const unit = result.utterances[0]!.bodies[0]!.clause.units[0]!;
