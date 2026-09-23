@@ -20,7 +20,7 @@ English needs a **code**: a phone, room, channel, or serial, not a counted amoun
 
 Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code. Digitless `d=_` / `g=_` and [digitless](numbers.md#digitless) `…_` mean *some code* / an unspecified label.
 
-**For *plus or minus*, use:** [sign](numbers.md#sign) on a count or ordinal. A digit-string has no plus or minus.
+**For numeric *plus or minus*, use:** [sign](numbers.md#sign) on a count or ordinal. Labels normally preserve their own written identifier.
 
 For a code as a when-frame, use a host relation + `/b/` (`/h/` *on* + `b_7` *channel 7*), or put `/ɡ/` on a noun (*channel* `g_7`).
 
@@ -40,10 +40,12 @@ Clock and date together:
 | Job | How |
 |-----|-----|
 | **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left to right; commas are writing only: hour, minute, optional seconds (`h_15,30`, `h_15,30,00`). Digitless `h_` = *at some (unspecified) clock time*. |
-| **Calendar date** | Digit-string **`_`** with **`oe`** (spoken **`roe`**, written `h_#…`; same digraph pattern as `reu`). Fields: **day, month, optional year** (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as **one digit group** (`2026` is one group). Digitless `h_` covers an unspecified date when context is calendric. An explicit *date* host + `/b/` is optional when you want to name the relation. |
+| **Calendar date** | Digit-string **`_`** with **`oe`** (spoken **`roe`**, written `h_#…`). Fields: **day, month, optional year** (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as **one digit group** (`2026` is one group). Digitless `h_` covers an unspecified date when context is calendric. An explicit *date* host + `/b/` is optional when you want to name the relation. |
 | **When-frame** | Ordinary lexicon `/h/` (*until*, *before*, recency), clock/date above, or a closed mood whose **job** locates time ([LIVE](knowing.md#live-vs-memory) / [WITNESSED](knowing.md#live-vs-memory) / [PREDICT](intention.md#predict)). [RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate) do **not** locate time. There is no past/future ending. A numeric payload (*3 days* on a unit) is relation + scalar + unit. |
 
 Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** resume a prior clock or date (digitless `h=_` = *that time/date again*). Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
+
+Calendar decade labels such as *the ’90s* name a group of years, not a bare order-of-magnitude band.
 
 **Compare with:** a phone or room **code** uses the same `_` marker under `/d/` `/b/` `/ɡ/`, not bare `/h/`. Restrictor **`har`** is *sometimes*; digitless `h_` is *some clock or date*.
 
@@ -482,6 +484,37 @@ When the whole is not the modified head, use a complex `/ɡ/` or `/h/` [of relat
 
 A bare `/z/` (or other freestanding) **`…jo`** percent with no named whole is grammatical; prefer an explicit whole (*percent of what*). Bare **`…ju`** point amounts are fine when the percent-scale quantity being moved is already clear. Rates outside everyday percent talk use a plain scalar (`je` / `e-N`).
 
+
+### Ordinal generation — digitful exponent on **`#`** / **`#-`**
+<a id="ordinal-generation"></a>
+<a id="generation-ordinal"></a>
+
+On forward **`#`** / **`re`** and end-relative **`#-`** / **`rue`**, a **digitful** exponent is not a power of ten. It is **how many generations away** from a focused person, version, or outline item. Use this when English would say *the third grandchild* or *the 3rd sub-point*.
+
+The marker still counts **from the start** or **from the end** inside that cohort. The exponent **`eK`** / **`e-K`** names generation **+K** (deeper / descendants) or **−K** (enclosing / ancestors). The mantissa picks which slot; omit it to name the whole cohort. Omit the exponent for the **same** generation as the focus (`g#3` = 3rd peer). Named **`e0`** asserts current generation (usually redundant).
+
+| Piece | Job |
+|-------|-----|
+| **Marker `#` / `#-`** | Count **from the start** / **from the end** within that generation’s cohort |
+| **Digitful exp `eK` / `e-K`** | Generation **+K** (descendants / nested deeper) or **−K** (ancestors / enclosing layer) |
+| **Mantissa** | Which **slot** in that cohort (omit mantissa = bare OoM: the generation as a whole) |
+| **Exp omitted** | **Same generation** as the focus (`g#3` = 3rd peer) — formal default |
+| **Named `e0`** | **Assert current generation** (gen 0); usually redundant when omit already means current |
+
+| Form | Reading |
+|------|---------|
+| **`g#3`** | 3rd of the focus’s own generation (from the start) |
+| **`g#-3`** | 3rd of the focus’s own generation (from the end) |
+| **`g#3e0`** | 3rd of the **current** generation, exp asserted (gen 0) |
+| **`g#e0`** | **current generation** cohort as a whole (member unspecified) |
+| **`g#3e2`** | 3rd from the start **in generation +2** (e.g. 3rd in the grandchild cohort) |
+| **`g#3e-2`** | 3rd from the start **in generation −2** (e.g. 3rd in the great-grandparent cohort) |
+| **`g#-1e2`** | last of generation +2 (end-framed within that cohort) |
+| **`g#e2`** | generation +2 cohort as a whole (member unspecified) |
+| **`g#e-1`** | generation −1 / parent layer (member unspecified) |
+| **`g#1e-1`** | 1st of generation −1 (often *the parent* when the cohort is singleton-framed) |
+
+`/x/` treats generation as **agenda nesting** (`x#3e2` = *3rd sub-sub-point under the focus*; **`x#e0`** = *current-layer item(s)*). `/h/` / `/v/` / `/j/` inherit the same product (*for the 3rd time in gen +2*, *place 3rd in gen +2*, …) when the series is generation-structured. A flat event count uses **`h#N`**.
 
 ## See also
 

@@ -46,13 +46,13 @@ Source: [numbers.md](../grammar/numbers.md), [numeric-derivation.md](../grammar/
 ### Overlay `/x/`
 
 - No-mantissa digitless-exp beyond start/last/notional: **`x+e`**, **`x-e`**, … (notional **`x-e-`** is defined)
-- Digitless-exp on end-relative marker **`#-`** / **`reu`**
-- Zero×exp under `/x/` (discourse nesting uses [generation](../grammar/numbers.md#ordinal-generation))
+- Digitless-exp on end-relative marker **`#-`** / **`rue`**
+- Zero×exp under `/x/` (discourse nesting uses [generation](../grammar/numbers-applied.md#ordinal-generation))
 - Ordinal zero×digitless under `/x/` (free twin of derivation **`ROOTl#0e`** is defined on other hosts)
 
 ### Digitless-exp / hyperbole on `#-`
 
-- Digitless-exp and hyperbole on forward/end-relative **`#-`** / **`reu`** (combine with [digitful generation](../grammar/numbers.md#ordinal-generation) when needed)
+- Digitless-exp and hyperbole on forward/end-relative **`#-`** / **`rue`** (combine with [digitful generation](../grammar/numbers-applied.md#ordinal-generation) when needed)
 
 ### Further `/j/` / `/x/` zero-exp cells
 

@@ -17,7 +17,9 @@ export function markerToSpeech(marker: NumberMarker): string {
   if (marker === "+" || marker === "ra") return "ra";
   if (marker === "-" || marker === "ru") return "ru";
   if (marker === "#" || marker === "re") return "re";
-  if (marker === "#-" || marker === "reu") return "reu";
+  if (marker === "#-" || marker === "rue") return "rue";
+  if (marker === "#_" || marker === "ruo") return "ruo";
+  if (marker === "+-" || marker === "rua") return "rua";
   return "ro";
 }
 

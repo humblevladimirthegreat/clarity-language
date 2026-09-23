@@ -949,6 +949,12 @@ function numberLabel(stem: NumberStem, pos: Pos | undefined): string {
   }
 
   const body = stem.groups.map(formatNumberGroup).filter(Boolean).join(",");
+  if (stem.marker === "#_" || stem.marker === "ruo") {
+    return body ? `negative-label-${body}` : "negative-label";
+  }
+  if (stem.marker === "+-" || stem.marker === "rua") {
+    return body ? `plus-minus-${body}` : "plus-minus-bound";
+  }
   if (stem.marker === "_" || stem.marker === "ro") {
     return body ? `_${body}` : "_";
   }

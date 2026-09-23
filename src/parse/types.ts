@@ -7,10 +7,10 @@ export type Pos = "z" | "d" | "b" | "v" | "g" | "w" | "h" | "x" | "j";
 export type Ending = "l" | "m" | "n" | "r" | "rl" | "rm";
 
 /** Writing-style number marker symbols. */
-export type WritingMarker = "+" | "-" | "#" | "#-" | "_";
+export type WritingMarker = "+" | "-" | "#" | "#-" | "_" | "+-" | "#_";
 
 /** Speech-style number marker (r + V, including digraphs). */
-export type SpeechMarker = "ra" | "ru" | "re" | "reu" | "ro" | "roe";
+export type SpeechMarker = "ra" | "ru" | "re" | "rue" | "ro" | "roe" | "rua" | "ruo";
 
 export type NumberMarker = WritingMarker | SpeechMarker;
 

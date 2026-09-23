@@ -16,7 +16,7 @@ describe("numberStemToSpeech", () => {
     assert.equal(markerToSpeech("+"), "ra");
     assert.equal(markerToSpeech("-"), "ru");
     assert.equal(markerToSpeech("#"), "re");
-    assert.equal(markerToSpeech("#-"), "reu");
+    assert.equal(markerToSpeech("#-"), "rue");
     assert.equal(markerToSpeech("_"), "ro");
   });
 
@@ -33,8 +33,8 @@ describe("numberStemToSpeech", () => {
     assert.equal(numberWordToSpeech(parseWord("g+")), "gral");
   });
 
-  it("expands g#-2 to greudul", () => {
-    assert.equal(numberWordToSpeech(parseWord("g#-2")), "greudul");
+  it("expands g#-2 to gruedul", () => {
+    assert.equal(numberWordToSpeech(parseWord("g#-2")), "gruedul");
   });
 
   it("expands approximate g~+3 to grarem", () => {

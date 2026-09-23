@@ -65,7 +65,9 @@ export function numberMarkerIdentity(marker: NumberMarker): string {
   if (marker === "+" || marker === "ra") return "scalarPos";
   if (marker === "-" || marker === "ru") return "scalarNeg";
   if (marker === "#" || marker === "re") return "ordinalFwd";
-  if (marker === "#-" || marker === "reu") return "ordinalEnd";
+  if (marker === "#-" || marker === "rue") return "ordinalEnd";
+  if (marker === "#_" || marker === "ruo") return "negativeLabel";
+  if (marker === "+-" || marker === "rua") return "errorBound";
   return "label";
 }
 

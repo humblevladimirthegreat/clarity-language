@@ -64,6 +64,9 @@
 
   function writingMarkerFromSpeechV(v) {
     if (v === "oe") return "_";
+    if (v === "ue") return "#-";
+    if (v === "uo") return "#_";
+    if (v === "ua") return "+-";
     if (v === "a") return "+";
     if (v === "u") return "-";
     if (v === "e") return "#";
@@ -319,7 +322,7 @@ WritingNumberStem
     }
 
 WritingMarker
-  = "#-" / "#" / "+" / "-" / "_"
+  = "#_" / "+-" / "#-" / "#" / "+" / "-" / "_"
 
 WritingNumberBody
   = digitless:WritingDigitlessExp NumberBodyEnd {
@@ -397,7 +400,7 @@ SpeechNumberStem
     }
 
 SpeechMarkerV
-  = "oe" / "eu" / [aeou]
+  = "oe" / "ue" / "uo" / "ua" / [aeou]
 
 SpeechDigitGroup
   = sign:("ba" / "bu") expDigits:SpeechDigitSeq "ja" mantissa:SpeechMantissa percent:SpeechPercent? {

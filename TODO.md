@@ -22,8 +22,8 @@ consider removing some emotion emojis
 consider moving overlay forms to the top of lexicon so they get preferential retying
 cool features: collective verbs/adjectives use plural
 suggest what plurality should mean on joins and/or hooks
-apply numbers TODO first before other TODOs (there are several and some need human feedback)
 could some causation overlay inventories be replaced by restrictors or other joins/hooks/stand-ins?
+allow -n on stand-ins to allow the lexicalized nouns - statement, question, command, prohibition, etc. This includes on verbs. Reconsider what verb stand-ins should mean. 
 numbers section includes pronunciation rows underneath the agalan.
 reconsider ending tables for https://main.d2xds94zsgwptg.amplifyapp.com/grammar/knowing.html#hold-endings-notional
 consider viewpoint laterals allowing non-person viewpoints (the car's left). Then clarify that the endings/resume applies to the viewpoint not the direction

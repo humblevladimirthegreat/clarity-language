@@ -88,7 +88,7 @@ A syllable ends with a consonant only at the **end of the word**, except a cited
 ### Number-word exception
 <a id="number-word-exception"></a>
 
-When English says *how many* or *which place*, Agalan writes a [number word](numbers.md). After the role letter, the spoken marker begins with `r`, which makes a cluster ordinary content never uses (`gr…`, `zr…`, `vr…`, `hr…`, `jr…`, `xr…`). That cluster is how you hear “this is a number.” Content roots start with a vowel, so an `r` that starts a syllable right after a role letter is the number marker (`ra` / `ru` / `re` / `ro`; counting from the end uses `eu`, spoken `reu…` for written `#-`). Stacked vowels stay separate syllables (`juon` = *ju'on*).
+When English says *how many* or *which place*, Agalan writes a [number word](numbers.md). After the role letter, the spoken marker begins with `r`, which makes a cluster ordinary content never uses (`gr…`, `zr…`, `vr…`, `hr…`, `jr…`, `xr…`). That cluster is how you hear “this is a number.” Content roots start with a vowel, so an `r` that starts a syllable right after a role letter is the number marker (`ra` / `ru` / `re` / `ro`; counting from the end uses written `#-`, spelled and spoken **rue** before the digits). Stacked vowels stay separate syllables (`juon` = *ju'on*).
 
 > `zagadalx grarel.`
 >
