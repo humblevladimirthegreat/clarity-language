@@ -631,7 +631,7 @@ Worked examples: `j_3` *Three!*; `j+3` *Three more!*; `j-3` *Three short!*; `j#1
 
 Endings still apply (**-m** fuzzy *about three more!*, **-n** conventional call name, **-r** resume a prior shout’s value, including digitless `j=+` / `j=_`).
 
-**Compare with:** statement / question / command words in the [speech-act section](clause.md#speech-act).
+**Compare with:** statement / question / command words in the [speech-act section](speech-moves.md#speech-act).
 
 #### Number as discourse marker (by marker)
 <a id="number-as-discourse-marker-by-marker"></a>

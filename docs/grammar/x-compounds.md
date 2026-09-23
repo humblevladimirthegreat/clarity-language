@@ -297,7 +297,7 @@ Role vowels are **`a`** / **`e`** / **`u`** / **`o`**. Span type and edge letter
 ### How you show up (name **`x`** vowel)
 <a id="greeting-bid"></a>
 
-A [greeting](reference-suffix.md#greeting) is your own name with a period (`azawan.`). [Calling someone](clause.md#vocative) is their name under **`/j/`** (`jululon.`). To say **how** this opening is meant, put **`x`** and one vowel before **-n**. That vowel is about the meeting (stay and talk, a few minutes, one ask, pass by). It is not a grade of the person.
+A [greeting](reference-suffix.md#greeting) is your own name with a period (`azawan.`). [Calling someone](speech-moves.md#vocative) is their name under **`/j/`** (`jululon.`). To say **how** this opening is meant, put **`x`** and one vowel before **-n**. That vowel is about the meeting (stay and talk, a few minutes, one ask, pass by). It is not a grade of the person.
 
 On your own name, it is how you arrive. When you call them, it is how you address them.
 

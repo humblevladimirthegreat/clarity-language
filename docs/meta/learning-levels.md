@@ -43,10 +43,10 @@ Read **`docs/grammar/`** only, in stage order. [why-agelan.md](../grammar/why-ag
 3. [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / word edges)
 4. [reference-suffix.md Beginner](../grammar/reference-suffix.md#beginner) (citation **-l** / **-m** / **-n**)
 5. [clause.md Beginner](../grammar/clause.md#beginner)
-6. [dependents.md Beginner](../grammar/dependents.md#beginner)
-7. [pronouns.md](../grammar/pronouns.md#beginner) · [plurality.md](../grammar/plurality.md#beginner)
-8. [predication.md](../grammar/predication.md#beginner)
-9. [vowel-series.md](../grammar/vowel-series.md#beginner) (one-screen map; not a new morph)
+6. [speech-moves.md Beginner](../grammar/speech-moves.md#beginner)
+7. [dependents.md Beginner](../grammar/dependents.md#beginner)
+8. [pronouns.md](../grammar/pronouns.md#beginner) · [plurality.md](../grammar/plurality.md#beginner)
+9. [predication.md](../grammar/predication.md#beginner)
 10. [joins.md](../grammar/joins.md#beginner)
 11. [questions.md](../grammar/questions.md#beginner)
 12. [hooks.md](../grammar/hooks.md#beginner) · [restrictors.md](../grammar/restrictors.md#beginner)
@@ -59,7 +59,7 @@ Read **`docs/grammar/`** only, in stage order. [why-agelan.md](../grammar/why-ag
 
 ### Intermediate then Advanced
 
-17. Every peer’s **[Intermediate](../grammar/clause.md#intermediate)** section (same dependency order as above is fine). Skip pages with no Intermediate (vowel-series). Include numbers Intermediate, [numbers-applied.md](../grammar/numbers-applied.md#intermediate), join-across-roles and overlay material, and [intention.md](../grammar/intention.md#intermediate) **DECISION** / forecast source.
+17. Every peer’s **[Intermediate](../grammar/clause.md#intermediate)** section (same dependency order as above is fine). Include numbers Intermediate, [numbers-applied.md](../grammar/numbers-applied.md#intermediate), join-across-roles and overlay material, and [intention.md](../grammar/intention.md#intermediate) **DECISION** / forecast source.
 18. Every peer’s **Advanced** section, including numbers Advanced, [relations.md](../grammar/relations.md#as-of) *as-of*, and [numeric-derivation.md](../grammar/numeric-derivation.md). Skip pages with no Advanced.
 
 Learner-facing reading order: site sidebar (**Suggested reading order**); stage notes: [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).

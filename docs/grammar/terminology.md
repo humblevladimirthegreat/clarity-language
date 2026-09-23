@@ -90,7 +90,7 @@ Hosted *can* / *can’t* (`xa` / `xe` / `xo` / `xu`) and hostless **ABIL**.
 
 The written `/j/` word: **`jal` / `jol` / `jel` / `jul`** and soft **-m**.
 
-[Clause](clause.md#speech-act)
+[Speech moves](speech-moves.md#speech-act)
 
 **Compare with:** [speech act](#speech-act) is the setting (statement / question / command / prohibition). Polar [stance](#polar-stance) particles are not act words.
 
@@ -229,7 +229,7 @@ Who counts as *we* / *you* when names are unavailable.
 
 Speech act **`jel` / `jem` / `jul` / `jum`**.
 
-[Clause](clause.md#speech-act)
+[Speech moves](speech-moves.md#speech-act)
 
 ### Comparative / superlative / equative
 
@@ -407,7 +407,7 @@ Under question, join **-r** is a blank; several **-r** = fill all.
 
 Speech-act ending **-l** vs **-m**.
 
-[Clause](clause.md#speech-act)
+[Speech moves](speech-moves.md#speech-act)
 
 ### Forecast source
 
@@ -718,7 +718,7 @@ Short word in a role slot (`darl` / `barl` / `dorl` / `derl` / `durl`, open **`-
 
 Utterance setting: statement / question / command / prohibition.
 
-[Clause](clause.md#speech-act)
+[Speech moves](speech-moves.md#speech-act)
 
 **Compare with:** values **advice wanted** is [asked / typical / history](#asked-typical-history), not speech act. Polar [stance](#polar-stance) is a left-edge particle.
 
@@ -744,7 +744,7 @@ Single-item rank with a number = bound on a line.
 
 New speech move.
 
-[Clause](clause.md#turn-j)
+[Speech moves](speech-moves.md#turn-j)
 
 ### Under question
 
@@ -780,13 +780,13 @@ DIR × ANCHOR; whose facing is north.
 
 Left-edge `/j/` addressing.
 
-[Clause](clause.md#turn-j)
+[Speech moves](speech-moves.md#turn-j)
 
 ### Vowel series
 
 **`a`** add / **`o`** one / **`e`** order / **`u`** undo; the prefix picks the table.
 
-[Vowel series](vowel-series.md)
+[Speech moves](speech-moves.md)
 
 ### Weak-pause left cue
 

@@ -149,7 +149,7 @@ Do **not** add an **Agalan · Use** (or English-bundle) table whose rows are oth
 ## Cues live in tables
 <a id="cues-live-in-tables"></a>
 
-Do not append free-text `**Cue:**` or `**Mnemonic:**` paragraphs after a table (that leftover is editor layout). Put each row’s memory aid in a **Cue** column. For tables whose rows come from the [vowel series](../grammar/vowel-series.md), **Cue** shows how **`a`** / **`o`** / **`e`** / **`u`** maps to that row. Metaphor emoji may serve as the visual cue, consistent with published-root conventions.
+Do not append free-text `**Cue:**` or `**Mnemonic:**` paragraphs after a table (that leftover is editor layout). Put each row’s memory aid in a **Cue** column. For tables whose rows come from the [vowel series](../grammar/speech-moves.md), **Cue** shows how **`a`** / **`o`** / **`e`** / **`u`** maps to that row. Metaphor emoji may serve as the visual cue, consistent with published-root conventions.
 
 If a page has several such tables, give each its own **Cue** column; never summarize the whole series once in prose and leave later tables bare. Column names and what may sit in **Cue**: [Cues](#cues-columns).
 
@@ -432,7 +432,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 | Level rubric / reading order | [learning-levels.md](learning-levels.md) ([cross-doc path](learning-levels.md#cross-doc-path)) |
 | Doc content / teaching order | This page ([Beginner stage shape](#beginner-stage-shape), [later-stage shape](#later-stage-shape), [cues](#cues-columns), [Compare with](#compare-with)); wording and voice: [doc-style.md](doc-style.md) |
 | Goals / feature criteria | [why-agelan.md](../grammar/why-agelan.md) (psych); [introduction.md](../grammar/introduction.md) (grammar design, [cue tables](../grammar/introduction.md#cues)) |
-| Clause grammar (one clause, `/j/`) | [clause.md](../grammar/clause.md) |
+| Clause grammar (one clause) | [clause.md](../grammar/clause.md) |
 | Hosted relation catalog | [relations.md](../grammar/relations.md) |
 | Dependents / continue (`/x/`, stand-ins) | [dependents.md](../grammar/dependents.md) |
 | IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) (letter table); [inspect.md](../grammar/inspect.md) (**IPA:** on spoken forms). Not in other grammar-page examples |

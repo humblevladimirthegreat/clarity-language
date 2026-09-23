@@ -300,11 +300,11 @@ That ending is **why you think a move is wanted**. Ordinary advice uses **-m**: 
 
 **Unlike** [MAY](knowing.md#may) (`hodohom`): the host verb stays ordinary content there and the event is still *could be*. With **`xe`**, the same host verb is the **ought-to** act, not a simultaneous performance claim.
 
-**Compare with:** [command](clause.md#speech-act-beginner) **`jel`** instructs an act outright without naming the need or why a move is wanted. **`xe`** is need-linked deontic: *ought to advance this need*, with that warrant on the ending.
+**Compare with:** [command](speech-moves.md#speech-act-beginner) **`jel`** instructs an act outright without naming the need or why a move is wanted. **`xe`** is need-linked deontic: *ought to advance this need*, with that warrant on the ending.
 
 **Compare with:** [predict](intention.md#predict) (`helezo` …) when English *should* is really a **forecast** about what will pay off the need, or when you want both *is doing* and a norm on that doing — not prescription deontic. For a plain performance report, drop **`xe`** and assert the verb alone.
 
-**Compare with:** [motive](#value-preference) **`xo`** plus a [request](clause.md#speech-act) **`jem`** when the speaker wants **their own** need served. **`xe`** is advice about the need named on this word.
+**Compare with:** [motive](#value-preference) **`xo`** plus a [request](speech-moves.md#speech-act) **`jem`** when the speaker wants **their own** need served. **`xe`** is advice about the need named on this word.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|

@@ -148,7 +148,7 @@ Adapter: [`src/parse/tokens.ts`](../../src/parse/tokens.ts) / [`src/parse/tokeni
 
 Owns:
 
-- Utterance framing ([clause.md](../grammar/clause.md) — `/j/` turns, omissible default assertoric; [dependents.md](../grammar/dependents.md) — `/x/` continue)
+- Utterance framing ([speech-moves.md](../grammar/speech-moves.md) — `/j/` turns, omissible default assertoric; [dependents.md](../grammar/dependents.md) — `/x/` continue)
 - Right-close joins at phrase / VP / clause level (illegal left fence)
 - Span open…close nesting; adjunct islands **`^ … ^`**
 - Complex `/ɡ|h/` + `/b/`; `/w/` + `/b/` only for *as-of* overlays; floating `/h/` as adjuncts

@@ -1,6 +1,6 @@
 # The clause
 
-How to read and write one Agalan **clause**: who does what, word shape, default order, and how a speech move starts (`/j/`).
+How to read and write one Agalan **clause**: who does what, word shape, and default order.
 
 ## Beginner
 <a id="beginner"></a>
@@ -108,54 +108,6 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 
 Do not park that recipient immediately after a relation `/h/` or `/ɡ/`: `hurorom bululon` is *like Ululon*, not *to Ululon*. Put the pair first, then the recipient (`hurorom bazawan bululon`). To name the hearer from the verb stem (*the one told*), use a [role compound](roles.md#role-compounds) with vowel **`o`**.
 
-### Turn (`/j/`): start a new speech move
-<a id="turn-j"></a>
-
-When you start a new speech move (a statement, a question, a command, including talking only to yourself), that move is a **turn**. `/j/` starts a new turn.
-
-<a id="left-edge-order-and-sentence-boundaries"></a>
-
-At the **start** of a new turn, write the **act word** (the word that says statement, question, or command) when you write it, immediately before the body (subject, object, verb, and so on). A [vocative](#vocative) can be the whole turn, or sit before that act word. Other `/j/` words that can sit there are taught with questions.
-
-A `/j/` after a finished body starts the **next** turn.
-
-### Vocative
-<a id="vocative"></a>
-
-To **call** someone into the turn, write `/j/` plus that person’s name plus **-n**. That word can be the whole turn, or sit before a clause.
-
-> `jululon.`
->
-> j-Ululon
->
-> "Ululon!" (calling Ululon)
-
-**Compare with:** a [greeting](reference-suffix.md#greeting) is the speaker’s name as a citation (`azawan.`), with no `/j/`. `/j/` addresses someone. The same name under `/z/` is a subject (`zazawan vawalal` *Azawan walks*).
-
-### Speech act: statement, question, command
-<a id="speech-act-beginner"></a>
-
-Each turn has exactly one **speech act**: whether you are stating, asking, commanding, and similar. That is the **setting** of the turn.
-
-The default statement word is **`jal`**. A period already means “this is a statement,” so you do not also write **`jal`** (as in the examples above).
-
-When the setting is not that default statement, write a `/j/` act word immediately before the body:
-
-> `jel vawalal.`
->
-> j-command | v-walk
->
-> "Walk!"
-
-| Agalan | Use | Cue |
-|--------|-----|-----|
-| **jal** | statement (often omitted) | **j** ≈ jump, **a** ≈ add (hold the claim) |
-| **jol** | question: yes/no and “fill in the blank” ask | **j** ≈ jump, **o** ≈ option (pick from a menu) |
-| **jel** | command / instruction | **j** ≈ jump, **e** ≈ order (do this) |
-| **jul** | prohibition: *don’t…* | **j** ≈ jump, **u** ≈ undo (take the action back) |
-
-
-
 ### Role letters
 <a id="role-letters"></a>
 
@@ -170,7 +122,7 @@ Role letters on this page:
 | `/ɡ/` | adjective (a property of the noun) | **ɡ** ≈ grade (a rating of the noun) |
 | `/w/` | extra detail on the next `/ɡ/` or `/h/` word | **w** ≈ with (stuck to that host) |
 | `/h/` | adverb (how / when / where) | **h** starts *how* / *when* / *where* |
-| `/j/` | turn (start a new speech move) | **j** ≈ jump (a new act) |
+| `/j/` | start a speech move | **j** ≈ jump (a new act; see [speech moves](speech-moves.md)) |
 
 
 
@@ -202,19 +154,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
 | *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
 | *like* | `hurorom` | `urorol` *mirror* | 🪞: the image is of the model |
-| *question* | `jol` | | |
 
 #### English → Agalan
 
-**1.** *Uhubun!* (calling Uhubun)
-
-::: details Show answer
-`juhubun.`
-
-j-Uhubun
-:::
-
-**2.** *Azawan sits.*
+**1.** *Azawan sits.*
 
 ::: details Show answer
 `zazawan vajul.`
@@ -222,7 +165,7 @@ j-Uhubun
 z-Azawan | v-sit
 :::
 
-**3.** *Uhubun sees Azawan.*
+**2.** *Uhubun sees Azawan.*
 
 ::: details Show answer
 `zuhubun dazawan vejel.`
@@ -230,7 +173,7 @@ z-Azawan | v-sit
 z-Uhubun | d-Azawan | v-see
 :::
 
-**4.** *A very angry Ululon stands.*
+**3.** *A very angry Ululon stands.*
 
 ::: details Show answer
 `zululon welem ganagal vadanal.`
@@ -238,7 +181,7 @@ z-Uhubun | d-Azawan | v-see
 z-Ululon | w-very | g-angry | v-stand
 :::
 
-**5.** *Azawan writes hastily.*
+**4.** *Azawan writes hastily.*
 
 ::: details Show answer
 `zazawan vuwurul hadazam.`
@@ -246,15 +189,7 @@ z-Ululon | w-very | g-angry | v-stand
 z-Azawan | v-write | h-haste
 :::
 
-**6.** *Don’t sneak.*
-
-::: details Show answer
-`jul vazanal.`
-
-j-prohibition | v-sneak
-:::
-
-**7.** *Azawan tells Ululon.*
+**5.** *Azawan tells Ululon.*
 
 ::: details Show answer
 `zazawan bululon vezehel.`
@@ -264,15 +199,7 @@ z-Azawan | b-Ululon | v-tell
 
 #### Agalan → English
 
-**1.** `jazawan.`
-
-::: details Show answer
-
-j-Azawan
-*Azawan!* (calling Azawan)
-:::
-
-**2.** `zuhubun vadanal.`
+**1.** `zuhubun vadanal.`
 
 ::: details Show answer
 
@@ -281,7 +208,7 @@ z-Uhubun | v-stand
 *Uhubun stands.*
 :::
 
-**3.** `zazawan duhubun vejel.`
+**2.** `zazawan duhubun vejel.`
 
 ::: details Show answer
 
@@ -290,7 +217,7 @@ z-Azawan | d-Uhubun | v-see
 *Azawan sees Uhubun.*
 :::
 
-**4.** `zuhubun guzumum donenol vejel.`
+**3.** `zuhubun guzumum donenol vejel.`
 
 ::: details Show answer
 
@@ -299,25 +226,7 @@ z-Uhubun | g-happy | d-money | v-see
 *Happy Uhubun sees money.*
 :::
 
-**5.** `jol zazawan vajul?`
-
-::: details Show answer
-
-j-question | z-Azawan | v-sit
-
-*Does Azawan sit?*
-:::
-
-**6.** `jel vurunul.`
-
-::: details Show answer
-
-j-command | v-run
-
-*Run!*
-:::
-
-**7.** `zululon vazanal hurorom bazawan.`
+**4.** `zululon vazanal hurorom bazawan.`
 
 ::: details Show answer
 
@@ -333,36 +242,6 @@ z-Ululon | v-sneak | h-like | b-Azawan
 ::: tip Reminder:
 Intermediate sections assume you have read the beginner sections of every page.
 :::
-
-### Speech act: firm and soft
-<a id="speech-act"></a>
-
-You already write whether a turn is a statement, question, command, or prohibition. The extra choice here is **how firmly** you mean it.
-
-The act word is **`j` + vowel + ending**. The vowel is the family you know (**a** statement, **o** question, **e** command, **u** prohibition). **-l** stands behind the act; **-m** leaves it open (soft / offered). Write the act word when the setting is not a default statement. A period still lets you omit **`jal`**.
-
-> `jam zazawan vawalal.`
->
-> j-soft-statement | z-Azawan | v-walk
->
-> "For what it's worth, Azawan walks."
-
-**Compare with:** [MAY](knowing.md#may) (`hodohom`) marks the scene as *could be*. **`jam`** is still a statement; you put it forward without insisting the other person take it up.
-
-The vowels match the [vowel-series](vowel-series.md) map: **a** add / hold, **o** one / menu, **e** order / rank, **u** undo.
-
-| Agalan | Use | Cue |
-|--------|-----|-----|
-| **jal** | **statement**: claim or description | **a** add + **-l**: stand behind |
-| **jam** | **soft statement**: offered, not insisted (*for what it's worth*) | **a** add + **-m**: hold, but leave it open |
-| **jol** | **question**: yes/no and fill-in ask | **o** one / menu + **-l**: pick an answer |
-| **jom** | **soft question**: wonder, gentle ask, offer-like | **o** menu + **-m**: ask without pinning |
-| **jel** | **command**: instruction | **e** order + **-l**: do this |
-| **jem** | **request**: soft directive (*please…*) | **e** order + **-m**: ask, don’t command |
-| **jul** | **prohibition**: *don’t…* (firm) | **u** undo + **-l**: take the action back |
-| **jum** | **soft prohibition**: *please don’t…* / *I’d rather you not…* | **u** undo + **-m**: prefer they don’t |
-
-A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/j/` words, immediately before the act word, or before a body that defaults to a statement.
 
 ### Adjectives before the noun (`gl-`)
 <a id="left-bound-adjectives"></a>
@@ -421,13 +300,6 @@ Several `/h/` units on one verb are fine (each plain `/h/`, or optional `/w/` pl
 
 
 
-### Number as interjection
-<a id="number-as-interjection"></a>
-
-A number word in `/j/` is a call-out (*Three more!*, a score). It can sit with the other opening `/j/` words, before the act word, or stand alone as its own turn. Readings by marker: [numbers.md](numbers.md#number-as-interjection-by-marker).
-
-
-
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
@@ -458,39 +330,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agalan
 
-**1.** *For what it's worth, Azawan sits.*
-
-::: details Show answer
-`jam zazawan vajul.`
-
-j-soft-statement | z-Azawan | v-sit
-:::
-
-**2.** *Does Uhubun see a ticket, perhaps?*
-
-::: details Show answer
-`jom zuhubun dugedel vejel?`
-
-j-soft-question | z-Uhubun | d-ticket | v-see
-:::
-
-**3.** *Please stand.*
-
-::: details Show answer
-`jem vadanal!`
-
-j-request | v-stand
-:::
-
-**4.** *Please don’t sneak.*
-
-::: details Show answer
-`jum vazanal!`
-
-j-soft-prohibition | v-sneak
-:::
-
-**5.** *A loud-volume red train stands.* (adjective before the noun)
+**1.** *A loud-volume red train stands.* (adjective before the noun)
 
 ::: details Show answer
 `glaredel wegelom zadadul vadanal.`
@@ -498,7 +338,7 @@ j-soft-prohibition | v-sneak
 gl-red | w-volume | z-train | v-stand
 :::
 
-**6.** *Azawan the same as blue Uhubun stands.*
+**2.** *Azawan the same as blue Uhubun stands.*
 
 ::: details Show answer
 `zazawan gonunul buhubun gelulul vadanal.`
@@ -506,45 +346,50 @@ gl-red | w-volume | z-train | v-stand
 z-Azawan | g-SAME | b-Uhubun | g-blue | v-stand
 :::
 
+**3.** *As for Azawan, Ululon sees a ticket.*
+
+::: details Show answer
+`hozal bazawan zululon dugedel vejel.`
+
+h-hash | b-Azawan | z-Ululon | d-ticket | v-see
+:::
+
+**4.** *A very blue train sits.*
+
+::: details Show answer
+`zadadul welem gelulul vajul.`
+
+z-train | w-very | g-blue | v-sit
+:::
+
+**5.** *A red train sees a blue ticket.*
+
+::: details Show answer
+`zadadul garedel gelulul dugedel vejel.`
+
+z-train | g-red | g-blue | d-ticket | v-see
+:::
+
+**6.** *Uhubun tells Ululon hastily.*
+
+::: details Show answer
+`zuhubun bululon hadazam vezehel.`
+
+z-Uhubun | b-Ululon | h-haste | v-tell
+:::
+
 #### Agalan → English
 
-**1.** `jam hozal bazawan zululon dugedel vejel.`
+**1.** `glelulul zadadul vadanal.`
 
 ::: details Show answer
 
-j-soft-statement | h-hash | b-Azawan | z-Ululon | d-ticket | v-see
+gl-blue | z-train | v-stand
 
-*For what it's worth, as for Azawan, Ululon sees a ticket.*
+*A blue train stands.*
 :::
 
-**2.** `jom glelulul zadadul vadanal?`
-
-::: details Show answer
-
-j-soft-question | gl-blue | z-train | v-stand
-
-*Does a blue train stand, perhaps?*
-:::
-
-**3.** `jem buhubun vezehel!`
-
-::: details Show answer
-
-j-request | b-Uhubun | v-tell
-
-*Please tell Uhubun.*
-:::
-
-**4.** `jum vubunul!`
-
-::: details Show answer
-
-j-soft-prohibition | v-punch
-
-*Please don’t punch.*
-:::
-
-**5.** `zuhubun gonunul bululon garedel vadanal.`
+**2.** `zuhubun gonunul bululon garedel vadanal.`
 
 ::: details Show answer
 
@@ -553,6 +398,41 @@ z-Uhubun | g-SAME | b-Ululon | g-red | v-stand
 *Uhubun the same as red Ululon stands.*
 :::
 
+**3.** `hozal bazawan zululon dugedel vejel.`
+
+::: details Show answer
+
+h-hash | b-Azawan | z-Ululon | d-ticket | v-see
+
+*As for Azawan, Ululon sees a ticket.*
+:::
+
+**4.** `zodogol welem hurorom bazawan velebel.`
+
+::: details Show answer
+
+z-dog | w-very | h-like | b-Azawan | v-sleep
+
+*A dog sleeps very like Azawan.*
+:::
+
+**5.** `zazawan gonunul buhubun gelulul vadanal.`
+
+::: details Show answer
+
+z-Azawan | g-SAME | b-Uhubun | g-blue | v-stand
+
+*Azawan the same as blue Uhubun stands.*
+:::
+
+**6.** `zadadul garedel gelulul dugedel vejel.`
+
+::: details Show answer
+
+z-train | g-red | g-blue | d-ticket | v-see
+
+*A red train sees a blue ticket.*
+:::
 
 ## Advanced
 <a id="advanced"></a>
@@ -725,4 +605,3 @@ d-Uhubun | z-Ululon | h-haste | v-punch
 
 *It's Uhubun that Ululon punches hastily.*
 :::
-

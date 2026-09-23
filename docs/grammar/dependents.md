@@ -5,7 +5,7 @@ How a **next sentence** fills a slot (`darl` / `barl`), how English *who / that 
 ## Beginner
 <a id="beginner"></a>
 
-You already write one clause with [role letters](clause.md#role-letters) and start a new speech move with [`/j/`](clause.md#turn-j). This page attaches another sentence, or keeps going without a new act.
+You already write one clause with [role letters](clause.md#role-letters) and start a new speech move with [`/j/`](speech-moves.md#turn-j). This page attaches another sentence, or keeps going without a new act.
 
 ### Which person or thing (*who / that / which*)
 <a id="which-noun"></a>
@@ -128,7 +128,7 @@ A word that glues two sentences (*therefore*, *however*, …) is an `/x/` **link
 >
 > "A dog walks. Therefore a cat runs."
 
-**Compare with:** [`/j/`](clause.md#turn-j) starts a **new** speech move (a new statement, question, or command). `/x/` keeps the move you already started.
+**Compare with:** [`/j/`](speech-moves.md#turn-j) starts a **new** speech move (a new statement, question, or command). `/x/` keeps the move you already started.
 
 
 ### Translation practice
@@ -335,7 +335,7 @@ These words glue one finished sentence to the next (one-way; default ending **-l
 <a id="clause-member"></a>
 <a id="stand-in"></a>
 
-Beginner used locked **`a`** (`darl` / `barl`) and *whether* **`dorl`**. Stand-ins reuse the [vowel series](vowel-series.md) (`a` / `o` / `e` / `u`) to type the following sentence. They are not joins. **`-rl`** locks that sentence as the whole filler; **`-rm`** is open (gist / not only that). Unspecified join **`-r`** with no following clause is still *something* / *anything*.
+Beginner used locked **`a`** (`darl` / `barl`) and *whether* **`dorl`**. Stand-ins reuse the [vowel series](speech-moves.md) (`a` / `o` / `e` / `u`) to type the following sentence. They are not joins. **`-rl`** locks that sentence as the whole filler; **`-rm`** is open (gist / not only that). Unspecified join **`-r`** with no following clause is still *something* / *anything*.
 
 <!-- TODO: I'm pretty sure it's redundant to state "with no following clause". dar always means "something" even if there is a clause after it. If this is not the case, report that. Remove the normal -r column entirely from the table below, as that is not helpful for this section. -->
 
@@ -358,7 +358,7 @@ The same grid uses **`b`** after a pole (`barl` / `berl` / `burl` …). Everyday
 
 The addressee is unhosted `/b/`. The inner `/z/` is still Ululon (English *to sit* drops that name). **`derl`** types the next sentence as an aim; the outer sentence stays a statement. Quotes of wording stay [spans](spans.md).
 
-English *lest* / *not to* (keep this from happening) uses vowel **`u`**: **`durl`**. Name the inner `/z/` again. The outer sentence stays a statement. *Don't sit!* as the whole move is still a [prohibition](clause.md#speech-act-beginner) (**`jul`**), not this stand-in.
+English *lest* / *not to* (keep this from happening) uses vowel **`u`**: **`durl`**. Name the inner `/z/` again. The outer sentence stays a statement. *Don't sit!* as the whole move is still a [prohibition](speech-moves.md#speech-act-beginner) (**`jul`**), not this stand-in.
 
 > `zazawan bululon vezehel durl zululon vajul.`
 >
@@ -463,4 +463,3 @@ z-Uhubun | v-scream | h-because | b-that-clause | z-Azawan | v-departure | h-bec
 
 *Uhubun screams because Azawan departs because Ululon punches Azawan.*
 :::
-

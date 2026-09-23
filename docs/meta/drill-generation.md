@@ -130,7 +130,7 @@ Path items joined with `·` are **co-located**, not ordered. Do **not** recycle 
 
 | Slot | Files |
 |------|--------|
-| 7 | `pronouns.md` · `plurality.md` |
+| 8 | `pronouns.md` · `plurality.md` |
 | 12 | `hooks.md` · `restrictors.md` |
 | 15 | `numbers.md` · `numbers-applied.md` · `comparatives.md` · `causation.md` |
 | 16 | `values.md` · `intention.md` · `knowing.md` · `roles.md` · `x-compounds.md` |
@@ -171,7 +171,8 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `plurality.md` | Intermediate | a choir loft |
 | `predication.md` | Beginner | a passport office |
 | `predication.md` | Intermediate | a museum gallery |
-| `vowel-series.md` | — | — |
+| `speech-moves.md` | Beginner | a theater foyer |
+| `speech-moves.md` | Intermediate | a music rehearsal |
 | `joins.md` | Beginner | a market stall |
 | `joins.md` | Intermediate | a wedding |
 | `joins.md` | Advanced | a treaty table |
@@ -265,13 +266,13 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | — | `introduction.md` | skip | — | orientation |
 | 3 | `phonology.md` | skip | — | not translation |
 | 4 | `reference-suffix.md` | **exists** | Choose **-l** vs **-m** vs **-n** on a **citation** (prefix-less); named person vs kind vs metaphor; **greeting** named citation with period (`azawan.`) | No sentences with role letters. No **-r**. Pointers to **-x** / **`gl-`**: do **not** make those the item. No vocative `/j/` |
-| 5 | `clause.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; hosted `/ɡ|h/`+`/b/` (*like*); unhosted `/b/` recipient/addressee; omit **`jal`**; **`jol` / `jel` / `jul`**; **vocative** `/j/` + house name (`jululon`); house names; **-l** / **-m** / **-n** as used in examples | Do not use **`gl-`**, **`jam`/`jom`/`jem`/`jum`**, **`darl`**, `/x/`, nested **`barl`**, letter **-r** mechanism, **-x**, joins. Polar **`jael` / `juel`** is questions, not this stage. Greeting citations are reference-suffix, not this stage. No greeting-bid **`x`** vowel |
-| 6 | `dependents.md` | **exists** | Two-sentence *who / that / which*; **`darl` last**; adverbial subordinators (`hurugum` / `hadorom` / `hezazem` / `hezebam` / `hegemum` / `hudumem` / `hababam` / `helabam` / `holalam` **`barl`**; *despite* = **`hezebam`** + `/b/` noun); `/x/` continue vs `/j/` turn; `/x/` linker may start the next written sentence after `.` | Do not use nested **`barl`**, letter **-r** mechanism. Recycle clause speech-act **`jol`/`jel`/`jul`** |
+| 5 | `clause.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; hosted `/ɡ|h/`+`/b/` (*like*); unhosted `/b/` recipient/addressee; house names; **-l** / **-m** / **-n** as used in examples | Do not use **`gl-`**, **`darl`**, `/x/`, nested **`barl`**, letter **-r** mechanism, **-x**, joins. Greeting citations are reference-suffix. No greeting-bid **`x`** vowel |
+| 6 | `speech-moves.md` | **exists** | Turn start; call a person; conventional interjection; statement / question / command / prohibition; omit recoverable **`jal`** | Recycle clause bodies and house names; no hooks, polar stance, soft forms, or numbers |
+| 7 | `dependents.md` | **exists** | Two-sentence *who / that / which*; **`darl` last**; adverbial subordinators (`hurugum` / `hadorom` / `hezazem` / `hezebam` / `hegemum` / `hudumem` / `hababam` / `helabam` / `holalam` **`barl`**; *despite* = **`hezebam`** + `/b/` noun); `/x/` continue vs `/j/` turn; `/x/` linker may start the next written sentence after `.` | Do not use nested **`barl`**, letter **-r** mechanism. Recycle speech-moves **`jol`/`jel`/`jul`** |
 | 13 | `relations.md` | **exists** | Hosted pair for simile **`hurorom`**, exchange **`huhanem`**, proxy **`hudagam`** | Recycle clause hosted `/b/` and hooks extra-noun. No *between*, no of-relations, no **`barl`**. Not **`hahanam`** |
-| 7 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`ugobo` / `edone` / `aha` / `enenu`** (when the *role* is the point); inclusive *we* **`aha`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
-| 7 | `plurality.md` | **exists** | Associative **-x** (`-lx` / `-nx` / `-rx`); not agreement; person-role **-x** (address set vs name…**-x**) | **`aha`** as the *not this* for inclusive *we*. **`ugobo`/`edone`** only on person-role items |
-| 8 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zodogol`; identity **`gonunul` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already taught in this stage |
-| 9 | `vowel-series.md` | skip | — | mnemonic only |
+| 8 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`ugobo` / `edone` / `aha` / `enenu`** (when the *role* is the point); inclusive *we* **`aha`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
+| 8 | `plurality.md` | **exists** | Associative **-x** (`-lx` / `-nx` / `-rx`); not agreement; person-role **-x** (address set vs name…**-x**) | **`aha`** as the *not this* for inclusive *we*. **`ugobo`/`edone`** only on person-role items |
+| 9 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zodogol`; identity **`gonunul` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already taught in this stage |
 | 10 | `joins.md` | **exists** | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / single-item / standalone starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask) | No hooks, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
 | 11 | `questions.md` | **exists** | **`jol`/`jom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`jael` / `juel` / `jaol`** vs **`jul`** vs join **`zul`** | **`jom`** is taught here as soft *ask* — allowed on this page even though full speech-act twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
 | 12 | `hooks.md` | **exists** | Prefix-less **hooks** (**`al`/`am`/`ol`/`ul`/`el`**); in-clause `A HOOK B`; discourse **`al`** *additionally*; extra-noun **`al`/`ol`/`ul`/`el`** + `/b/` (**in** / **at** / **from** / **for**) | Not a join (`zam` vs `am`). Not stacked extra-noun (`aol` / `ael`). Not **`x#e-` / `x#e`**
@@ -294,9 +295,10 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 
 | Path | File | Band | Status | Introduces (test these) | Notes |
 |------|------|------|--------|-------------------------|-------|
-| 5 | `clause.md` | Intermediate | **exists** | **`jam`/`jom`/`jem`/`jum`**; **`gl-`**; adverb topic `/h/`+`/b/`; complex chaining; number-as-interjection pointer only if the stage’s examples already show it | Do not require numbers Intermediate readings |
+| 5 | `clause.md` | Intermediate | **exists** | **`gl-`**; adverb topic `/h/`+`/b/`; complex chaining | |
 | 5 | `clause.md` | Advanced | **exists** | Leftmost content-word prominence; English cleft / *what*-cleft / fronted adverb | 4–6 items. Weak-pause cues are recognition, not the drill |
-| 6 | `dependents.md` | Intermediate | **exists** | `/x/` linkers (`xezazal`, `xezebal`, …); nested **`barl`**; stand-in vowels; which-noun with resume | Recycle Beginner **`darl`/`barl`** |
+| 6 | `speech-moves.md` | Intermediate | **exists** | **`jam`/`jom`/`jem`/`jum`**; opening hooks before an act word; number-as-interjection pointer only if the stage’s examples already show it | Do not require numbers Intermediate readings |
+| 7 | `dependents.md` | Intermediate | **exists** | `/x/` linkers (`xezazal`, `xezebal`, …); nested **`barl`**; stand-in vowels; which-noun with resume | Recycle Beginner **`darl`/`barl`** |
 | 13 | `relations.md` | Intermediate | **exists** | *between* **`hazanum`**; of-relations (`gobonem`, `gajaram`, `gowodom`, `gugunom`); recycle extra-noun hooks for other place talk | *Between* recycles joins Beginner `/b/` join |
 | 13 | `relations.md` | Advanced | **exists** | Hosted *as-of* **`helerem` / `hobomam`**; `/h/` `/ɡ/` `/w/`; resume **-r**; date in `/b/` | Recycle RESIDUE, PREDICT, calendar `b_#…`. Not persist hooks |
 | 4 | `reference-suffix.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; [titled phrases](../grammar/reference-suffix.md#titled-phrases) (hook / join / span **-n**, inner **-l** / **-m**); office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
@@ -329,7 +331,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 16 | `knowing.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`adade`** + play holds; **RESIDUE** / **FORMER**; MAY vs nearby jobs | |
 | 16 | `knowing.md` | Advanced | **exists** | RESIDUE / FORMER / LIVE / WITNESSED against *as-of*; MAY unshifted | Recycle relations Advanced |
 | 16 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; bare arrow roots = compass; gravity **`uba`/`odowo`**; name/listener anchor | Prefer `…xazawan` over silent speaker default. **`edone`/`ugobo`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
-| 16 | `x-compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *a few minutes* / passing) | Recycle [greeting](../grammar/reference-suffix.md#greeting) and [vocative](../grammar/clause.md#vocative). Not ability (`vuzunuxel`). Not values |
+| 16 | `x-compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *a few minutes* / passing) | Recycle [greeting](../grammar/reference-suffix.md#greeting) and [vocative](../grammar/speech-moves.md#vocative). Not ability (`vuzunuxel`). Not values |
 | 16 | `roles.md` | Advanced | — | no Advanced stage | |
 | 17 | `join-across-roles.md` | Intermediate | **exists** | Verb-phrase and clause joins (`vam`, `xam`, sequence `xan`); join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 17) |
 | 17 | `intention.md` | Intermediate | **exists** | **DECISION** **`ehege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
