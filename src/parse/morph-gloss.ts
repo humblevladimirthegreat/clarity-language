@@ -284,6 +284,8 @@ export type MorphGlossContext = {
   restrictorListed?: boolean;
   /** Spoken mention interior (TYPE **o**): gloss the surface, not the lemma. */
   passThrough?: boolean;
+  /** `/v/` join-shaped form used as the head of a following dependent sentence. */
+  dependentVerb?: boolean;
 };
 
 export type CompareMorphGlossResult = {
@@ -620,9 +622,28 @@ function analyzeLine(
     parsed = undefined;
   }
 
+  const dependentVerbCounts = new Map<string, number>();
+  const collectClause = (clause: ParseResult["utterances"][number]["bodies"][number]["clause"]): void => {
+    const dependent = clause.dependent;
+    if (!dependent) return;
+    if (dependent.orodo.pos === "v") {
+      dependentVerbCounts.set(dependent.orodo.raw, (dependentVerbCounts.get(dependent.orodo.raw) ?? 0) + 1);
+    }
+    collectClause(dependent.clause);
+  };
+  parsed?.utterances.forEach((utterance) => utterance.bodies.forEach((body) => collectClause(body.clause)));
+  const dependentVerbIndexes = new Set<number>();
+  words.forEach((word, index) => {
+    const remaining = dependentVerbCounts.get(word.raw) ?? 0;
+    if (remaining > 0 && word.pos === "v") {
+      dependentVerbIndexes.add(index);
+      dependentVerbCounts.set(word.raw, remaining - 1);
+    }
+  });
+
   const passThrough = mentionPassThroughFlags(words);
   const ctxByIndex = words.map((word, index) =>
-    contextFor(word, index, words, parsed?.resolve, parsed, passThrough[index]),
+    contextFor(word, index, words, parsed?.resolve, parsed, passThrough[index], dependentVerbIndexes.has(index)),
   );
   return { words, ctxByIndex };
 }
@@ -667,8 +688,10 @@ function contextFor(
   resolve: ResolveInfo | undefined,
   parsed: ParseResult | undefined,
   passThrough?: boolean,
+  dependentVerb = false,
 ): MorphGlossContext {
   const ctx: MorphGlossContext = {};
+  if (dependentVerb) ctx.dependentVerb = true;
   if (passThrough) ctx.passThrough = true;
   if (resolve) {
     const bind = bindFor(word, index, words, resolve.anaphors);
@@ -776,20 +799,21 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
   const { series } = family;
   const ending = word.ending;
 
-  if (word.reading === "standIn" && word.pos === "v") {
-    const verbalDependent: Record<string, string> = {
-      a: "state",
-      o: "question",
-      e: "command",
-      u: "prohibit",
-      ae: "confirm",
-      ue: "deny",
-      ao: "agree",
-      uo: "decline",
-      ua: "vehemently-decline",
+  if ((word.reading === "standIn" || ctx.dependentVerb) && word.pos === "v") {
+    const endingIsOpen = ending === "m" || ending === "rm";
+    const verbalDependent: Record<string, [string, string]> = {
+      a: ["state", "offer-as-view"],
+      o: ["question", "invite-answer"],
+      e: ["command", "request"],
+      u: ["prohibit", "caution-against"],
+      ae: ["confirm", "tentatively-confirm"],
+      ue: ["deny", "express-doubt"],
+      ao: ["agree", "tentatively-agree"],
+      uo: ["decline", "hesitate-to"],
+      ua: ["vehemently-refuse", "strongly-object-to"],
     };
-    const action = verbalDependent[series] ?? "state";
-    return ending === "m" || ending === "rm" ? `${action}.open` : action;
+    const action = verbalDependent[series] ?? verbalDependent.a!;
+    return action[endingIsOpen ? 1 : 0];
   }
 
   if (word.reading === "joinAct") return JOIN_ACT[series] ?? "join-act";
