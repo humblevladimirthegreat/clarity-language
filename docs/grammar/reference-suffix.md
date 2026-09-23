@@ -270,6 +270,25 @@ The rest of the role map (same **-n**):
 
 **Compare with:** [join words](joins.md) use **-n** as join packaging or join content (fence joins, clause **sequence**, [join-act](join-extras.md#join-act-verbs) / [join-relation](join-extras.md#join-relations) stems). That is the one place **-n** is not a name.
 
+### Titled phrases (hook, join, span)
+<a id="titled-phrases"></a>
+
+A store, title, or handle can be several words. Put **-n** on the **hook**, **join**, or **span** that packages them. That letter names the whole phrase. Each inner word keeps its own ending: a kind stays **-l**, an abstract stays **-m**, a resume stays **-r**, and a person or place that is itself a name still takes **-n**.
+
+> `dadedal on dogovel.`
+>
+> d-tea | instead.named | d-coffee
+>
+> "Tea-to-Coffee" (a cafe name)
+
+| Package | Where **-n** sits | Inner words |
+|---------|-------------------|-------------|
+| [hook](hooks.md#intermediate) | the hook (`on`, extra-noun **-n**, …) | sides keep **-l** / **-m** / **-r**, or **-n** if that side is a name |
+| [join](joins.md#named-list) | the join (`zon`, …) | members keep their usual endings |
+| [span](spans.md#when-required) | the fence (`@` / spoken **-n**) | interior tokens keep their usual endings |
+
+A short one-word name, or a compact multipart name with mid-word **`x`**, still ends the **content word** in **-n** ([phrasal proper names](#phrasal-proper-names)).
+
 ### Phrasal proper names (mid-word `x`)
 <a id="phrasal-proper-names"></a>
 
@@ -328,7 +347,7 @@ Beginner used **-n** as a name on cited roots and on content words. On `/x/`, th
 | other `/x/` root + **-n** | titled agenda / section label | thread shift (*let’s now talk about X*) |
 | clause join + **-n** | **sequence** | *and then* **`xan`**, … ([joins](joins.md)) |
 
-Prefix-less [discourse hooks](hooks.md#discourse-hooks) use hook endings. Hook **-n** only sits inside a proper-name phrase ([hooks](hooks.md#intermediate)).
+Prefix-less [discourse hooks](hooks.md#discourse-hooks) use hook endings. Hook **-n** titles a [proper-name phrase](#titled-phrases) ([hooks](hooks.md#intermediate)).
 
 ### Number-word exception
 <a id="number-word-exception"></a>
@@ -491,3 +510,4 @@ z-Ululon | v-run | h-Amubun
 - [clause.md](clause.md): role letters; adding a first letter to a citation
 - [spans.md](spans.md#loans): mention / opaque when the **form** or a foreign acronym is the point
 - [x-compounds.md](x-compounds.md#ordinary-compound-order): long titles as ordinary compounds
+- Titled phrases: [hooks.md](hooks.md#intermediate), [joins.md](joins.md#named-list), [spans.md](spans.md#when-required)

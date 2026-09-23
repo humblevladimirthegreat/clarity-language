@@ -527,6 +527,8 @@ Phrase join **-n**.
 
 [Joins](joins.md#named-list)
 
+**Compare with:** a [titled phrase](#titled-phrase) can use that join **-n** while members keep ordinary endings.
+
 ### Need inventory
 
 Six closed psychological needs under `/ɡ/` `/h/` `/w/`.
@@ -725,6 +727,12 @@ Utterance setting: statement / question / command / prohibition.
 *If* (enough) vs *only if* (needed) vs *because* / *iff*.
 
 [Causation](causation.md)
+
+### Titled phrase
+
+A proper-name phrase whose **-n** sits on the hook, join, or span; inner words keep their own endings.
+
+[Reference suffix](reference-suffix.md#titled-phrases)
 
 ### Threshold
 

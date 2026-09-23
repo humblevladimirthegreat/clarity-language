@@ -28,7 +28,7 @@ The whole `d[azawan]` is the direct object (who or what is acted on). If the int
 
 You can mark how faithful the quote is. Put the mark **after** the role letter, before the opening bracket.
 
-Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gist, not the exact words, write **`~`** (`d~[zazawan vuzunul]`). When the chunk is the **work** that bears a **multi-word** title (the song, proverb, book — not the name-string), write **`@`** (`d@[uzugon ululon]`). A one-word work or person is ordinary **-n** (`duzugon`), not `d@[uzugon]`, unless the role letter or the ending is **part of the title** you are packaging.
+Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gist, not the exact words, write **`~`** (`d~[zazawan vuzunul]`). When the chunk is the **work** that bears a **multi-word** title (the song, proverb, book — not the name-string), write **`@`** (`d@[uzugon ululon]`). A one-word work or person is ordinary **-n** (`duzugon`), not `d@[uzugon]`, unless the role letter or the ending is **part of the title** you are packaging. **`@`** / spoken **-n** is on the **fence**; words inside keep their usual endings ([titled phrases](reference-suffix.md#titled-phrases)).
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -398,7 +398,7 @@ Beginner already used a bare open, **`~`**, **`@`**, and **`[=]`**. Speech puts 
 |--------|---------|---------|-----|
 | **-l** | **exact** — verbatim / precise surface | bare open (no `@` / `~`) | **-l** stand behind the wording |
 | **-m** | **paraphrase** — gist / non-verbatim rendering | **`~`** after the role letter (`d~[…]`) | **-m** leaves the hold open |
-| **-n** | **proper** — cite: the **work**; mention: the **name** | **`@`** after the role letter (`d@[…]`, `d@{…}`) | **-n** names the chunk |
+| **-n** | **proper** — cite: the **work**; mention: the **name** | **`@`** after the role letter (`d@[…]`, `d@{…}`) | **-n** titles the chunk; interior words keep their own endings |
 | **-r** | **resume** — the **most recent span of this TYPE**; PoS = role **now** | `d[=]`, `h(=)`, `z{=}`, … | **-r** points back |
 
 Hedged proper (`@~`) is written **`d@[…]`** only (spoken as the **proper** open with uncertain tone). **`@`** / **`~`** do not combine with resume **-r**.
@@ -860,5 +860,6 @@ z-Uhubun | d-abugum#| | v-tell
 - Scope islands: [joins.md](joins.md#scope-islands-join)
 - Identity vs parenthetical comment: [predication.md](predication.md#identity)
 - Phrasal proper names: [reference-suffix.md](reference-suffix.md#phrasal-proper-names)
+- Titled phrases (hook / join / span): [reference-suffix.md](reference-suffix.md#titled-phrases)
 - Native office handles: [reference-suffix.md](reference-suffix.md#named-handles)
 - Prefix-less citation outside a clause: [reference-suffix.md](reference-suffix.md#citation-forms)

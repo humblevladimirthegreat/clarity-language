@@ -11,7 +11,7 @@ join vowel decision tree in advanced vowel series.
 consider making negatives clearer (stress?)
 final exam
 Prosody
-gloss overlay should indicate phrase structure and what modifies what
+gloss overlay should indicate phrase structure (including proper phrases) and what modifies what
 redo prescriptive values: conversation ID: a7a1672b-8763-4910-ba69-d8e8339e116c. Consider: Invited, Offered (unsolicited to satisfy need), Protective (unsolicited to avoid detract need)
 Cheat sheet for joins and hooks
 Define goodbye (assertiveness for meeting again? need met, name reminder?)
@@ -22,8 +22,6 @@ consider moving overlay forms to the top of lexicon so they get preferential ret
 cool features: collective verbs/adjectives use plural
 role compounds continues take the role compound + rest of pronoun
 plurality on joins/hooks?
-use a skill for humanizing the writing
-allow proper phrases to have non -n endings if the hook, join, or span has -n. 
 empty scope islands should be rejected by the parser as grammatically incorrect
 apply numbers TODO first before other TODOs (there are several and some need human feedback)
 could some causation overlay inventories be replaced by restrictors or other joins/hooks/stand-ins?

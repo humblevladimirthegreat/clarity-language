@@ -358,11 +358,11 @@ Beginner already used closed **-l** and open **-m** for how complete B is, or ho
 | **o** (*instead*) | `ol`: *Instead, …* | `om`: *Instead, …* and maybe more |
 | **u** (*except*) | `ul`: *Except, …* | `um`: *Except, …* and maybe more |
 
-Hook **-n** is only when the hook is **inside a proper-name phrase** ([**-n**](reference-suffix.md#proper-name--n)): a store, a title, a handle. Ordinary talk keeps **-l** / **-m**. The sides of that phrase take **-n** too.
+Hook **-n** is only when the hook **titles** a proper-name phrase ([**-n**](reference-suffix.md#titled-phrases)): a store, a title, a handle. Ordinary talk keeps **-l** / **-m**. The sides keep their usual endings (kinds **-l**, abstracts **-m**, a name still **-n**).
 
-> `dadedan on dogoven.`
+> `dadedal on dogovel.`
 >
-> d-Adedan | instead.named | d-Ogoven
+> d-tea | instead.named | d-coffee
 >
 > "Tea-to-Coffee" (a cafe name)
 
@@ -432,7 +432,7 @@ Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). S
 >
 > "Azawan walks contrary to rain."
 
-Several extra-noun hooks on one clause are several extras (*from* one landmark *toward* another). Extra-noun **-n** is the same proper-name case as above.
+Several extra-noun hooks on one clause are several extras (*from* one landmark *toward* another). Extra-noun **-n** titles that extra as a proper-name phrase the same way; the landmark keeps its own ending.
 
 **Compare with:** company *with Ululon* is a [join-relation](join-extras.md#join-relations) (`han`). *Without* stays **`huan`**. *Like* stays [simile](relations.md#similative). *Between* stays a hosted pair plus a `/b/` join ([relations](relations.md#locative-relations)). *So that Ululon sits* is still **`holalam barl`**.
 
@@ -887,4 +887,5 @@ z-Ululon | d-boat | v-enter
 - Hosted leftover relations (*like*, *between*, *of*): [relations.md](relations.md)
 - *When* this hook counts: [restrictors.md](restrictors.md)
 - Prefix-less citation: [reference-suffix.md](reference-suffix.md#citation-forms)
+- Titled phrases: [reference-suffix.md](reference-suffix.md#titled-phrases)
 - Dictionary compounds without **`x`**: [x-compounds.md](x-compounds.md#lexical-compounds)

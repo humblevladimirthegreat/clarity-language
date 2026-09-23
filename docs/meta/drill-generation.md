@@ -303,7 +303,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 6 | `dependents.md` | Intermediate | **exists** | `/x/` linkers (`xezazal`, `xezebal`, …); nested **`barl`**; stand-in vowels; which-noun with resume | Recycle Beginner **`darl`/`barl`** |
 | 13 | `relations.md` | Intermediate | **exists** | *between* **`hazanum`**; of-relations (`gobonem`, `gajaram`, `gowodom`, `gugunom`); recycle extra-noun hooks for other place talk | *Between* recycles joins Beginner `/b/` join |
 | 13 | `relations.md` | Advanced | **exists** | Hosted *as-of* **`helerem` / `hobomam`**; `/h/` `/ɡ/` `/w/`; resume **-r**; date in `/b/` | Recycle RESIDUE, PREDICT, calendar `b_#…`. Not persist hooks |
-| 4 | `reference-suffix.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
+| 4 | `reference-suffix.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; [titled phrases](../grammar/reference-suffix.md#titled-phrases) (hook / join / span **-n**, inner **-l** / **-m**); office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
 | 4 | `reference-suffix.md` | Advanced | skip | — | no Advanced stage |
 | 9 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`aha`** vs name join vs name…**-x** | |
 | 9 | `pronouns.md` | Advanced | **exists** | Cross-role recast (one or two PoS flips, not the whole grid) | 4–6 items |

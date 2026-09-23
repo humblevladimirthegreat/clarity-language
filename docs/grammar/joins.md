@@ -835,7 +835,7 @@ When same-role words sit next to a smaller list, wrap that stretch and its join 
 <a id="named-list"></a>
 <a id="named--conventional-ending-phrase-level-all-join-vowels"></a>
 
-When a phrase list is an established bundle (*Stop–Drop–Roll*), end the join with **-n** under `/z/` `/d/` `/b/` `/w/`. That **-n** names the package, not a person.
+When a phrase list is an established bundle (*Stop–Drop–Roll*), end the join with **-n** under `/z/` `/d/` `/b/` `/w/`. That **-n** titles the package ([titled phrases](reference-suffix.md#titled-phrases)). Members keep their usual endings unless a member is itself a name.
 
 > `zadedal zogovel zon.`
 >
@@ -1021,3 +1021,4 @@ z-imprimatur | z-page | z-something-else
 - Applicability *when* under `/h/` `/w/`: [restrictors.md](restrictors.md)
 - Fill-ask and yes/no on single-item/standalone joins: [questions.md](questions.md)
 - Join-act verbs / join-relations: [join-extras.md](join-extras.md)
+- Titled phrases: [reference-suffix.md](reference-suffix.md#titled-phrases)
