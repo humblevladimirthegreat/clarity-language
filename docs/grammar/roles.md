@@ -338,7 +338,7 @@ z-Uhubun | g-bond | b-Ululon | z-←bond | v-punch
 <a id="spatial-laterals"></a>
 <a id="my-left-your-left"></a>
 
-English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) or a side of someone’s body (*Azawan’s left*). For the body reading, write the same arrow root, then mid-word **`x`**, then whose facing counts as north (the **viewpoint**), then an ordinary [reference ending](word-endings.md). You can then say *walk left* without meaning *walk west*.
+English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) or a side of a viewpoint (*Azawan’s left*, *the car’s left*). For the viewpoint reading, write the same arrow root, then mid-word **`x`**, then the thing whose facing counts as north, then an ordinary [reference ending](word-endings.md). A person’s front is the direction they face. For an object, use the front its design or current use makes forward; if that does not settle a front, establish the frame in context. You can then say *walk left* without meaning *walk west*.
 
 > `jel vawalal hewezexazawan.`
 >
@@ -366,9 +366,9 @@ Speaker and listener roots are the facing person when you mean *my left* / *your
 |--------|-----|---------|
 | PoS | slot as usual (`/ɡ/` property, `/h/` path / manner, `/z/` `/d/` `/b/` side-region) | same slots as other content |
 | DIR | an arrow-rose root | *north* / *ahead*, … |
-| **`x`** | joins DIR to whose facing is north | facing person after **`x`** |
-| ANCHOR | whose facing is personal north: [special](pronouns.md#special-pronouns) **`ugobo`** / **`edone`** / **`aha`**, a name, or a content **-r** of a being that can face | *Azawan’s left*, *your left* |
-| Ending | ordinary word-endings senses on the **whole** direction word | kind / hedge / name / resume |
+| **`x`** | joins DIR to the viewpoint | viewpoint after **`x`** |
+| ANCHOR | what sets the facing frame: [special](pronouns.md#special-pronouns) **`ugobo`** / **`edone`** / **`aha`**, a person’s name, or a content **-r** of a person or oriented object | *Azawan’s left*, *your left*, *the car’s left* |
+| Ending | ordinary ending is written at the end of the whole compound; its reference is the viewpoint anchor, not the direction | viewpoint kind / hedge / name / resume |
 
 **Compare with:** naming a doer from an event puts a **vowel** left of **`x`** ([role compounds](#role-compounds): `zaxuvugul`). Viewpoint laterals put a **direction root** left of **`x`** and a facing person on the right.
 
@@ -387,7 +387,7 @@ The examples above already used *west* / body *left*. The rest of the rose is th
 | **`ozozul`** | compass heading, or back-right on a face | *southeast* / *back-right* | ↘️ *southeast-arrow*: between south and east |
 | **`ozohel`** | compass heading, or back-left on a face | *southwest* / *back-left* | ↙️ *southwest-arrow*: between south and west |
 
-Indoor headings may follow a local map (building north). Prefer a name or listener frame when you mean someone’s body rose (`…xazawan`, `…xedonen`).
+Indoor headings may follow a local map (building north). Prefer a named viewpoint or listener frame when you mean a person’s body rose (`…xazawan`, `…xedonen`). For an object, use its design or current use to determine forward; establish the frame when that is ambiguous.
 
 ### Gravity (`uba` / `odowo`)
 
@@ -433,14 +433,14 @@ Bare compass + `/b/` is a region on that heading of the landmark (`gewezel berel
 
 ### Endings and resume
 
-Direction words take the same four [reference endings](word-endings.md) as other content words, on the **whole** heading.
+Write the ordinary [reference ending](word-endings.md) at the end of the whole compound. In a viewpoint lateral, the ending applies to the **viewpoint anchor**, not to DIR: **-l** / **-m** describe the anchor’s reference, **-n** names the anchor, and **-r** resumes it. A bare direction word still takes its ending on the direction itself.
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| **-l** | indefinite / kind side-region or unmarked path | a west / a left |
-| **-m** | soft / hedged frame | a hedged heading |
-| **-n** | proper name | a named heading |
-| **-r** | resume the most recent matching **`DIR x …`** compound (same DIR stem), or the DIR half when that is the latest match: ordinary [pronoun](pronouns.md) rules | *that* left / west |
+| **-l** | indefinite / kind viewpoint anchor or unmarked path | left of a viewpoint |
+| **-m** | soft / hedged viewpoint anchor | left of a hedged viewpoint |
+| **-n** | named viewpoint anchor | that named viewpoint’s left |
+| **-r** | resume the most recent matching viewpoint anchor in a **`DIR x ANCHOR`** compound, or the anchor alone when it is the latest match: ordinary [pronoun](pronouns.md) rules | that viewpoint’s left |
 
 | Agalan | English |
 |--------|---------|

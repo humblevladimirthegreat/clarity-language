@@ -5,11 +5,8 @@ redirects settings: https://us-east-2.console.aws.amazon.com/amplify/apps/d2xds9
 my name: obogan (innovation)
 
 # TODO
-could some causation overlay inventories be replaced by restrictors or other joins/hooks/stand-ins?
 Define goodbye (assertiveness for meeting again? need met, name reminder?)
 consider new consonant (th) used for new pos, used instead of x for some x-compounds or different type of compounding? maybe could be used as plural ending?
-consider viewpoint laterals allowing non-person viewpoints (the car's left). Then clarify that the endings/resume applies to the viewpoint not the direction
-reconsider foreign spans (the grammar shouldn't change depending on the content).
 
 finish English->Agalan cheat sheets, including tense
 add Agalan->English cheat sheet
@@ -25,10 +22,10 @@ j should just be y, remind that y is never a vowel
 consider removing some emotion emojis
 consider moving overlay forms to the top of lexicon so they get preferential retying
 cool features: collective verbs/adjectives use plural
-do a style pass
-do an example and translation pass
-do learning order consistency pass
 do grammar consistency pass
+do learning order consistency pass
+do an example and translation pass
+do a style pass
 
 ## Evidentiality / tense
 

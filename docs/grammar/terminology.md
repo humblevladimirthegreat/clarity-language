@@ -772,7 +772,7 @@ Need + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`gobobum`** + `/
 
 ### Viewpoint laterals
 
-DIR × ANCHOR; whose facing is north.
+DIR × ANCHOR; the anchor sets the facing frame (person or oriented object); the ending refers to the anchor, not DIR.
 
 [Roles](roles.md#viewpoint-laterals)
 
