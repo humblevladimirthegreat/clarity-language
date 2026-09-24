@@ -13,7 +13,7 @@ join vowel decision tree in advanced vowel series.
 consider making negatives clearer (stress?)
 final exam
 Prosody
-gloss overlay should indicate phrase structure (including proper phrases) and what modifies what
+gloss should indicate phrase structure (including proper phrases) and what modifies what. Gloss overlay ui should show that as well.
 parser tries to guess lexical compound even if not in lexicon
 numbers section includes pronunciation rows underneath the agalan.
 Cheat sheet for joins and hooks
@@ -22,9 +22,10 @@ consider removing some emotion emojis
 consider moving overlay forms to the top of lexicon so they get preferential retying
 cool features: collective verbs/adjectives use plural
 do grammar consistency pass
+do parser consistency pass
 do learning order consistency pass
 do an example and translation pass
-do a style pass
+do a style pass using luna
 
 ## Evidentiality / tense
 
