@@ -12,11 +12,15 @@ To say **how many** of a thing there are, put a number word after the noun, in t
 
 > `zagadalx g+3.`
 >
+> 🔊 *zagadalx grarel.*
+>
 > z-cat-x | g-three
 >
 > "Three cats."
 
 > `zazawan dabogolx g+3 vejel.`
+>
+> 🔊 *zazawan dabogolx grarel vejel.*
 >
 > z-Azawan | d-book-x | g-three | v-see
 >
@@ -28,11 +32,15 @@ To say **which place** a thing has in a series (*the first*, *the second*, …),
 
 > `zabogol g#2.`
 >
+> 🔊 *zabogol gredul.*
+>
 > z-book | g-second
 >
 > "The second book."
 
 > `zululon dabogol g#3 vuwurul.`
+>
+> 🔊 *zululon dabogol grerel vuwurul.*
 >
 > z-Ululon | d-book | g-third | v-write
 >
@@ -45,6 +53,8 @@ You can say the count is **more than one** without naming how many. Keep the cou
 Naming the group (*cats* as a set) uses [**-x**](plurality.md) on the noun. Saying the amount is a different tool. Both may sit on the same noun (`zagadalx g+`).
 
 > `zagadalx g+.`
+>
+> 🔊 *zagadalx gral.*
 >
 > z-cat-x | g-more-than-one
 >
@@ -116,6 +126,8 @@ Short drills for Beginner. Try each item before opening **Show answer**. Count w
 ::: details Show answer
 `zabagulx g+2.`
 
+🔊 *zabagulx gradul.*
+
 z-baguette-x | g-two
 :::
 
@@ -123,6 +135,8 @@ z-baguette-x | g-two
 
 ::: details Show answer
 `zogozal g#3.`
+
+🔊 *zogozal grerel.*
 
 z-croissant | g-third
 :::
@@ -132,6 +146,8 @@ z-croissant | g-third
 ::: details Show answer
 `zogogelx g+.`
 
+🔊 *zogogelx gral.*
+
 z-cookie-x | g-more-than-one
 :::
 
@@ -139,6 +155,8 @@ z-cookie-x | g-more-than-one
 
 ::: details Show answer
 `zazawan dereralx g+3 vejel.`
+
+🔊 *zazawan dereralx grarel vejel.*
 
 z-Azawan | d-bread-x | g-three | v-see
 :::
@@ -148,6 +166,8 @@ z-Azawan | d-bread-x | g-three | v-see
 ::: details Show answer
 `zululon dububel g#2 vezehel.`
 
+🔊 *zululon dububel gredul vezehel.*
+
 z-Ululon | d-pie | g-second | v-tell
 :::
 
@@ -155,6 +175,8 @@ z-Ululon | d-pie | g-second | v-tell
 
 ::: details Show answer
 `zuhubun dodogulx g+ vejel.`
+
+🔊 *zuhubun dodogulx gral vejel.*
 
 z-Uhubun | d-doughnut-x | g-more-than-one | v-see
 :::
@@ -164,6 +186,8 @@ z-Uhubun | d-doughnut-x | g-more-than-one | v-see
 ::: details Show answer
 `zululon dabagulx g+3 vubunul.`
 
+🔊 *zululon dabagulx grarel vubunul.*
+
 z-Ululon | d-baguette-x | g-three | v-punch
 :::
 
@@ -171,6 +195,8 @@ z-Ululon | d-baguette-x | g-three | v-punch
 
 ::: details Show answer
 `zululon durel g#1 vazagal.`
+
+🔊 *zululon durel grewol vazagal.*
 
 z-Ululon | d-fire | g-first | v-scream
 :::
@@ -181,6 +207,8 @@ z-Ululon | d-fire | g-first | v-scream
 
 ::: details Show answer
 
+🔊 *zogozalx gradul.*
+
 z-croissant-x | g-two
 
 *Two croissants.*
@@ -189,6 +217,8 @@ z-croissant-x | g-two
 **2.** `zereral g#2.`
 
 ::: details Show answer
+
+🔊 *zereral gredul.*
 
 z-bread | g-second
 
@@ -199,6 +229,8 @@ z-bread | g-second
 
 ::: details Show answer
 
+🔊 *zabagulx gral.*
+
 z-baguette-x | g-more-than-one
 
 *Baguettes — more than one.*
@@ -207,6 +239,8 @@ z-baguette-x | g-more-than-one
 **4.** `zuhubun dogogelx g+3 vejel.`
 
 ::: details Show answer
+
+🔊 *zuhubun dogogelx grarel vejel.*
 
 z-Uhubun | d-cookie-x | g-three | v-see
 
@@ -217,6 +251,8 @@ z-Uhubun | d-cookie-x | g-three | v-see
 
 ::: details Show answer
 
+🔊 *zazawan dububelx gral vejel.*
+
 z-Azawan | d-pie-x | g-more-than-one | v-see
 
 *Azawan sees more than one pie.*
@@ -225,6 +261,8 @@ z-Azawan | d-pie-x | g-more-than-one | v-see
 **6.** `zululon dabagelx g+2 vurunul.`
 
 ::: details Show answer
+
+🔊 *zululon dabagelx gradul vurunul.*
 
 z-Ululon | d-bagel-x | g-two | v-run
 
@@ -235,6 +273,8 @@ z-Ululon | d-bagel-x | g-two | v-run
 
 ::: details Show answer
 
+🔊 *zululon dabagelx gral vubunul.*
+
 z-Ululon | d-bagel-x | g-more-than-one | v-punch
 
 *Ululon punches bagels — more than one.*
@@ -243,6 +283,8 @@ z-Ululon | d-bagel-x | g-more-than-one | v-punch
 **8.** `zululon durel g#1 vubunul.`
 
 ::: details Show answer
+
+🔊 *zululon durel grewol vubunul.*
 
 z-Ululon | d-fire | g-first | v-punch
 
@@ -255,59 +297,59 @@ z-Ululon | d-fire | g-first | v-punch
 
 ::: details Show answer
 
-g-four
+🔊 *gramol*
 
-*gramol*
+g-four
 :::
 
 **2.** `g#1`
 
 ::: details Show answer
 
-g-first
+🔊 *grewol*
 
-*grewol*
+g-first
 :::
 
 **3.** `g+`
 
 ::: details Show answer
 
-g-more-than-one
+🔊 *gral*
 
-*gral*
+g-more-than-one
 :::
 
 **4.** `g+21`
 
 ::: details Show answer
 
-g-21
+🔊 *graduwol*
 
-*graduwol*
+g-21
 :::
 
 **5.** `g#8`
 
 ::: details Show answer
 
-g-eighth
+🔊 *grehal*
 
-*grehal*
+g-eighth
 :::
 
 **6.** `g+7`
 
 ::: details Show answer
 
-g-seven
+🔊 *gralel*
 
-*gralel*
+g-seven
 :::
 
 #### Spoken → written
 
-**1.** *gradul*
+**1.** 🔊 *gradul*
 
 ::: details Show answer
 `g+2`
@@ -315,7 +357,7 @@ g-seven
 g-two
 :::
 
-**2.** *grerel*
+**2.** 🔊 *grerel*
 
 ::: details Show answer
 `g#3`
@@ -323,7 +365,7 @@ g-two
 g-third
 :::
 
-**3.** *grawozol*
+**3.** 🔊 *grawozol*
 
 ::: details Show answer
 `g+10`
@@ -331,7 +373,7 @@ g-third
 g-ten
 :::
 
-**4.** *grenal*
+**4.** 🔊 *grenal*
 
 ::: details Show answer
 `g#9`
@@ -339,15 +381,17 @@ g-ten
 g-ninth
 :::
 
-**5.** *gravol*
+**5.** 🔊 *graval*
 
 ::: details Show answer
 `g+5`
 
+🔊 *graval*
+
 g-five
 :::
 
-**6.** *grazol*
+**6.** 🔊 *grazol*
 
 ::: details Show answer
 `g+0`
@@ -384,9 +428,13 @@ When a number has more than one digit group, you say each comma. The spoken comm
 
 > `h_15,30`
 >
+> 🔊 *hrowovathorezol*
+>
 > h-_15,30
 >
-> "At 15:30." (spoken *hrowovathorezol*: `h` + `ro` + wo va + **tho** + re zo + `l`)
+> "At 15:30."
+
+Syllable by syllable: `h` + `ro` + wo va + **tho** + re zo + `l`.
 
 | Marker | Separator | Example | Cue |
 |--------|-----------|---------|-----|
@@ -405,6 +453,8 @@ Beginner put the number after a noun (*three cats*). You can also put the **numb
 Change only the first letter. The marker and digits stay the same; referential prefixes (`/ɡ/`, `/z/`, `/d/`, `/b/`) keep the marker’s identity.
 
 > `z+3 gelulul.`
+>
+> 🔊 *zrarel gelulul.*
 >
 > z-three | g-blue
 >
@@ -504,6 +554,8 @@ Speech uses **`ba`** / **`bu`** for that exponent, then **`ja`** if mantissa dig
 
 > `g+27e12`
 >
+> 🔊 *grabawodujadulel*
+>
 > g-27e12
 >
 > "27 × 10¹²."
@@ -597,6 +649,8 @@ You can use a number as the **action** (*add three*), as **how often** (*three t
 
 > `zululon vawalal h+3.`
 >
+> 🔊 *zululon vawalal hrarel.*
+>
 > z-Ululon | v-walk | h-three
 >
 > "Ululon walks three times."
@@ -687,6 +741,8 @@ Endings still apply (**-l** newly stated item, **-r** *as in (N) above* or digit
 
 > `zululon vawalal th+70.`
 >
+> 🔊 *zululon vawalal thralezol.*
+>
 > z-Ululon | v-walk | th-70-percent-likely
 >
 > "Ululon is probably walking (I'd put it at 70%)."
@@ -771,6 +827,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Pre
 ::: details Show answer
 `zedadalx g~+3.`
 
+🔊 *zedadalx grarem.*
+
 z-seat-x | g-three
 :::
 
@@ -778,6 +836,8 @@ z-seat-x | g-three
 
 ::: details Show answer
 `z+3 godobol.`
+
+🔊 *zrarel godobol.*
 
 z-three | g-trophy
 :::
@@ -787,6 +847,8 @@ z-three | g-trophy
 ::: details Show answer
 `zululon vurunul h+3.`
 
+🔊 *zululon vurunul hrarel.*
+
 z-Ululon | v-run | h-three
 :::
 
@@ -794,6 +856,8 @@ z-Ululon | v-run | h-three
 
 ::: details Show answer
 `zedadal g#2.`
+
+🔊 *zedadal gredul.*
 
 z-seat | g-second
 :::
@@ -803,6 +867,8 @@ z-seat | g-second
 ::: details Show answer
 `x#2 zazawan vajul.`
 
+🔊 *xredul zazawan vajul.*
+
 x-second | z-Azawan | v-sit
 :::
 
@@ -810,6 +876,8 @@ x-second | z-Azawan | v-sit
 
 ::: details Show answer
 `j+3.`
+
+🔊 *jrarel.*
 
 j-three
 :::
@@ -819,6 +887,8 @@ j-three
 ::: details Show answer
 `zululon dodobol v+3.`
 
+🔊 *zululon dodobol vrarel.*
+
 z-Ululon | d-trophy | v-three
 :::
 
@@ -826,6 +896,8 @@ z-Ululon | d-trophy | v-three
 
 ::: details Show answer
 `zululon vubunul h+3.`
+
+🔊 *zululon vubunul hrarel.*
 
 z-Ululon | v-punch | h-three
 :::
@@ -836,6 +908,8 @@ z-Ululon | v-punch | h-three
 
 ::: details Show answer
 
+🔊 *zedadalx gradum.*
+
 z-seat-x | g-two
 
 *About two seats.*
@@ -844,6 +918,8 @@ z-seat-x | g-two
 **2.** `z#2 godobol.`
 
 ::: details Show answer
+
+🔊 *zredul godobol.*
 
 z-second | g-trophy
 
@@ -854,6 +930,8 @@ z-second | g-trophy
 
 ::: details Show answer
 
+🔊 *zululon vurunul hral.*
+
 z-Ululon | v-run | h-more-than-one
 
 *Ululon runs multiple times.*
@@ -863,6 +941,8 @@ z-Ululon | v-run | h-more-than-one
 
 ::: details Show answer
 
+🔊 *jrorel.*
+
 j-_3
 *Three!* (score / label)
 :::
@@ -870,6 +950,8 @@ j-_3
 **5.** `x#2 zululon vurunul.`
 
 ::: details Show answer
+
+🔊 *xredul zululon vurunul.*
 
 x-second | z-Ululon | v-run
 
@@ -880,6 +962,8 @@ x-second | z-Ululon | v-run
 
 ::: details Show answer
 
+🔊 *zedadal gelelel gredul.*
+
 z-seat | g-bell-pepper | g-second
 
 *The second big seat.*
@@ -889,6 +973,8 @@ z-seat | g-bell-pepper | g-second
 
 ::: details Show answer
 
+🔊 *zazawan drar vejel.*
+
 z-Azawan | d-more-than-one | v-see
 
 *Azawan sees that amount again.*
@@ -897,6 +983,8 @@ z-Azawan | d-more-than-one | v-see
 **8.** `zuhubun vajul h#3.`
 
 ::: details Show answer
+
+🔊 *zuhubun vajul hrerel.*
 
 z-Uhubun | v-sit | h-third
 
@@ -914,6 +1002,8 @@ z-Uhubun | v-sit | h-third
 To count **from the last place** (*penultimate*, *starting with the last one*), use marker **`ue`** (writing **`#-`**). Count back within the **same generation / cohort** (exponent omitted). Speech uses the marker vowels in u-first order: `#-` is spelled and pronounced **rue** before its digit syllables and ending (e.g. *gruedul*). The number’s role-letter-plus-`r` cluster distinguishes it from join **`ue`**.
 
 > `zabogol g#-2.`
+>
+> 🔊 *zabogol gruedul.*
 >
 > z-book | g-second-from-end
 >
@@ -957,11 +1047,11 @@ Write the role letter, symbol stack, then digits: `g#_1` labels a floor numbered
 ### Examples inventory
 <a id="examples"></a>
 
-Preferred writing first; speech sketches show structure (exact **-l** unless noted). Digits in speech use the [digit table](#digits).
+Preferred writing first; the spoken form follows, often with its syllables in parentheses (exact **-l** unless noted). Digits in speech use the [digit table](#digits).
 
 <!-- some of the below examples are no longer taught on this page so remove them after you finish all other edits to this page. -->
 
-| Value | Preferred writing | Speech sketch |
+| Value | Preferred writing | Spoken |
 |-------|-------------------|---------------|
 | plural / more than one | `g+` | *gral* (`g` + `ra` + `l` — [digitless](#digitless)) |
 | about several (`>1`) | `g~+` | *gram* |
@@ -970,13 +1060,13 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | thousands band (1000–9999) | `g+e3` | *grabarel* (`ra` + `ba` + re + `l`) |
 | current generation cohort | `g#e0` | *grebazol* (`re` + `ba` + zo + `l` — [generation](numbers-applied.md#ordinal-generation)) |
 | 2nd from the end / penultimate | `g#-2` | *gruedul* (rue + du + `l`) |
-| 1st from the end / *Starting with the last one* | `g#-1` | *gruwol* (rue + wo + `l`) |
+| 1st from the end / *Starting with the last one* | `g#-1` | *gruewol* (rue + wo + `l`) |
 | 3rd of gen +2 | `g#3e2` | *grebadujarel* (`re` + `ba` + du + `ja` + re + `l` — [generation](numbers-applied.md#ordinal-generation)) |
 | gen −2 cohort | `g#e-2` | *grebudul* (`re` + `bu` + du + `l`) |
 | for the penultimate time | `h#-2` | *hruedul* |
 | *Penultimate!* | `j#-2` | *jruedul* |
 | 2nd-from-end point: | `x#-2` | *xruedul* |
-| *Starting with the last one:* | `x#-1` | *xruwol* |
+| *Starting with the last one:* | `x#-1` | *xruewol* |
 | last place | `g#e` | *grebal* |
 | start / beginning place | `g#e-` | *grebul* |
 | *Starting with:* | `x#e-` | *xrebul* |
@@ -1071,6 +1161,8 @@ A digit group may use **`ba`** or **`bu`** with **no** exponent digits. That emp
 | **Mantissa `0` + `ba`/`bu`∅** | [zero × digitless exp](#zero-exponent) |
 
 > `zagadalx g+e.`
+>
+> 🔊 *zagadalx grabal.*
 >
 > z-cat-x | g-infinity
 >
@@ -1318,17 +1410,6 @@ Mantissa = how many joke-units of **late** (**`ba`**) or **early** (**`bu`**) ra
 
 Digitless **`e`/`e-`** sits in its own group (no **`je`** / **`jo`** / **`ju`** stacked in that group).
 
-### Spoken group stress
-<a id="stress-pronunciation-guide"></a>
-<a id="stress"></a>
-
-Ordinary spelling carries no stress mark ([phonology](phonology.md#phonotactics)). Group boundaries are already audible through the [group separator](#group-separator), so number stress is a rhythm habit, not what tells groups apart. A melody may override it.
-
-- Digitless numbers (marker + ending only): stress the **marker** syllable (`ra` / `ru` / `re` / `ro`). The advanced `#-` marker is spelled and spoken u-first.
-- Each **digit group** stresses its **last digit**: the last **exponent** digit when the group has an exponent, even when a mantissa follows; otherwise the last **mantissa** digit. A group with no digits at all (bare **`ba`** / **`bu`**) stresses the marker itself.
-- Digit-string groups follow the same rule: last digit of each group.
-- **`je`** (decimal point): always stressed when present.
-- **`jo`** / **`ju`** (percent / percentage points): always stressed when present.
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
@@ -1356,6 +1437,8 @@ Short drills for Advanced. Try each item before opening **Show answer**. Digitle
 ::: details Show answer
 `zarazalx g+e.`
 
+🔊 *zarazalx grabal.*
+
 z-star-x | g-infinity
 :::
 
@@ -1363,6 +1446,8 @@ z-star-x | g-infinity
 
 ::: details Show answer
 `zelezolx g+1e.`
+
+🔊 *zelezolx grawobal.*
 
 z-telescope-x | g-+-1e
 :::
@@ -1372,6 +1457,8 @@ z-telescope-x | g-+-1e
 ::: details Show answer
 `x#e zazawan vejel.`
 
+🔊 *xrebal zazawan vejel.*
+
 x-finally | z-Azawan | v-see
 :::
 
@@ -1380,6 +1467,8 @@ x-finally | z-Azawan | v-see
 ::: details Show answer
 `j+e.`
 
+🔊 *jrabal.*
+
 j-infinity
 :::
 
@@ -1387,6 +1476,8 @@ j-infinity
 
 ::: details Show answer
 `j+0e.`
+
+🔊 *jrazobal.*
 j-+-0e
 :::
 
@@ -1394,6 +1485,8 @@ j-+-0e
 
 ::: details Show answer
 `x#e- zuhubun vejel.`
+
+🔊 *xrebul zuhubun vejel.*
 
 x-starting-with | z-Uhubun | v-see
 :::
@@ -1404,6 +1497,8 @@ x-starting-with | z-Uhubun | v-see
 
 ::: details Show answer
 
+🔊 *zunulx grabal.*
+
 z-sun-x | g-infinity
 
 *Suns — infinitely many.*
@@ -1412,6 +1507,8 @@ z-sun-x | g-infinity
 **2.** `j#e.`
 
 ::: details Show answer
+
+🔊 *jrebal.*
 
 j-last-place
 
@@ -1422,6 +1519,8 @@ j-last-place
 
 ::: details Show answer
 
+🔊 *xrebul zululon vejel.*
+
 x-starting-with | z-Ululon | v-see
 
 *Starting with: Ululon sees.*
@@ -1430,6 +1529,8 @@ x-starting-with | z-Ululon | v-see
 **4.** `zarazal g#1e.`
 
 ::: details Show answer
+
+🔊 *zarazal grewobal.*
 
 z-star | g-#-1e
 
@@ -1440,6 +1541,8 @@ z-star | g-#-1e
 
 ::: details Show answer
 
+🔊 *zazawan vejel hrewobal.*
+
 z-Azawan | v-see | h-#-1e
 
 *Azawan sees for the gazillionth time.*
@@ -1448,6 +1551,8 @@ z-Azawan | v-see | h-#-1e
 **6.** `j-e-.`
 
 ::: details Show answer
+
+🔊 *jrubul.*
 
 j---e-
 

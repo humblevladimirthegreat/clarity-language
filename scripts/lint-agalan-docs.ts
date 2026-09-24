@@ -7,6 +7,8 @@
  * Teach blocks and exercises with loose English must include a morph unless
  * parser output is trivially redundant with that loose line.
  * Translation **Roots used here** English is checked against the lexicon.
+ * On the number pages, shorthand number examples need a
+ * pronunciation row that matches the spoken form computed from the shorthand.
  * Mismatches, leftover ambiguity, and missing morph glosses fail the run.
  * Findings print to stdout. Each file logs morph coverage counts.
  *
@@ -14,7 +16,7 @@
  *      npm run lint:agalan -- [paths...] [--check-ambiguity]
  */
 import { readdirSync, readFileSync, statSync } from "node:fs";
-import { dirname, join, relative, resolve } from "node:path";
+import { basename, dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { lintAgalanMarkdown } from "../src/lint/agalan-docs.js";
@@ -31,6 +33,11 @@ import {
   parsePublishedCsv,
   validateOverlayPublishedHosts,
 } from "../src/lexicon-search.js";
+import {
+  formatNumberSpeechFinding,
+  lintNumberSpeechMarkdown,
+  NUMBER_SPEECH_FILES,
+} from "../src/lint/number-speech-docs.js";
 import { loadDefaultTables } from "../src/parse/index.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
 
@@ -123,6 +130,7 @@ function main(): void {
   let morphWithLoose = 0;
   let morphRedundantOmitted = 0;
   let bankCount = 0;
+  let speechCount = 0;
 
   for (const file of files) {
     const original = readFileSync(file, "utf8");
@@ -153,6 +161,13 @@ function main(): void {
       bankCount += 1;
       console.log(formatWordBankFinding(rel, finding));
     }
+
+    if (dirname(file) === grammarDir && NUMBER_SPEECH_FILES.includes(basename(file))) {
+      for (const finding of lintNumberSpeechMarkdown(original)) {
+        speechCount += 1;
+        console.log(formatNumberSpeechFinding(rel, finding));
+      }
+    }
   }
 
   if (count > 0) {
@@ -165,7 +180,11 @@ function main(): void {
     console.log(`\n${bankCount} translation word-bank issue(s).`);
   }
 
-  const fail = hostIssues + count + morphCount + bankCount;
+  if (speechCount > 0) {
+    console.log(`\n${speechCount} number pronunciation issue(s).`);
+  }
+
+  const fail = hostIssues + count + morphCount + bankCount + speechCount;
   if (fail > 0) {
     process.exit(1);
   }
@@ -175,6 +194,7 @@ function main(): void {
     `OK: ${morphChecked} morph gloss(es) compared; ${morphRedundantOmitted} redundant-omitted / ${morphWithLoose} with loose English; glosses match the parser.`,
   );
   console.log("OK: translation word-bank English matches the lexicon.");
+  console.log("OK: number pronunciation rows match their shorthand.");
 }
 
 try {

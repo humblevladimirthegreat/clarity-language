@@ -32,25 +32,31 @@ export function digitsToSyllables(digits: string): string {
   return out;
 }
 
+const DIGITLESS_EXP_RE = /^(\d*)e(-?)(\d*)$/;
+
+/**
+ * Speech for the parser's exponent shorthand (`e`, `1e-`, `e3`, `0e-1`, …).
+ * With exponent digits: `ba`/`bu` + digits, then `ja` + any mantissa.
+ * Without: mantissa, then bare `ba`/`bu`.
+ */
 export function digitlessExpToSpeech(exp: string): string {
-  switch (exp) {
-    case "e":
-      return "ba";
-    case "e-":
-      return "bu";
-    case "0e":
-      return "zoba";
-    case "0e-":
-      return "zobu";
-    case "1e":
-      return "woba";
-    case "1e-":
-      return "wobu";
-    case "0e-1":
-      return "buwojazo";
-    default:
-      return "";
+  const m = DIGITLESS_EXP_RE.exec(exp);
+  if (!m) return "";
+  const [, mantissa, minus, expDigits] = m;
+  const sign = minus ? "bu" : "ba";
+  if (expDigits) {
+    return sign + digitsToSyllables(expDigits) + (mantissa ? "ja" + digitsToSyllables(mantissa) : "");
   }
+  return digitsToSyllables(mantissa!) + sign;
+}
+
+/** Vowel offset (within digitlessExpToSpeech output) that carries stress. */
+function digitlessExpStress(exp: string): number | undefined {
+  const m = DIGITLESS_EXP_RE.exec(exp);
+  if (!m) return undefined;
+  const expDigits = m[3]!;
+  // Last exponent digit when present; otherwise the first syllable (mantissa or bare marker).
+  return expDigits ? 2 + (expDigits.length - 1) * 2 + 1 : 1;
 }
 
 function groupToSpeech(group: NumberGroup): string {
@@ -107,17 +113,6 @@ export function numberStemToSpeech(stem: NumberStem): string {
   return numberStemToSpeechStressed(stem).text;
 }
 
-const DIGITLESS_EXP_STRESS: Record<string, number> = {
-  // text: marker/digit vowel offsets within digitlessExpToSpeech output
-  e: 1, // ba — bare marker
-  "e-": 1, // bu — bare marker
-  "0e": 1, // zoba — mantissa zo (no exponent digits)
-  "0e-": 1, // zobu
-  "1e": 1, // woba
-  "1e-": 1, // wobu
-  "0e-1": 3, // bu·wo·ja·zo — last exponent digit wo
-};
-
 /** Speech text plus char offsets of vowels to carry primary stress. */
 export function numberStemToSpeechStressed(stem: NumberStem): {
   text: string;
@@ -135,9 +130,12 @@ export function numberStemToSpeechStressed(stem: NumberStem): {
   }
 
   if (stem.digitlessExp) {
-    text += digitlessExpToSpeech(stem.digitlessExp);
-    const at = DIGITLESS_EXP_STRESS[stem.digitlessExp];
-    if (at !== undefined) stress.push(text.length - digitlessExpToSpeech(stem.digitlessExp).length + at);
+    // Spelled-out stems keep leading mantissa digits in groups (`grazobal`: zo + ba).
+    for (const group of stem.groups) text += groupToSpeech(group);
+    const exp = digitlessExpToSpeech(stem.digitlessExp);
+    const at = digitlessExpStress(stem.digitlessExp);
+    if (at !== undefined) stress.push(text.length + at);
+    text += exp;
     return { text, stress };
   }
 
@@ -180,7 +178,7 @@ export function numberWordToSpeech(word: MorphWord): string {
 
 /**
  * Speech CV surface plus char offsets of vowels that carry primary stress
- * ([numbers.md § Stress](../../../docs/grammar/numbers.md)).
+ * for TTS rhythm (last digit of each group; digitless stresses the marker).
  */
 export function numberWordToSpeechStressed(word: MorphWord): {
   raw: string;
@@ -194,7 +192,8 @@ export function numberWordToSpeechStressed(word: MorphWord): {
     stem = family.stem;
   } else if (family.kind === "x" && family.xFamily === "numeric" && family.numberStem) {
     stem = family.numberStem;
-    head = posPrefix(word) + family.leftRoots.join("") + "x";
+    // Numeric derivation: host root + lexical join (`l` / `m`), not mid-word `x`.
+    head = posPrefix(word) + family.leftRoots.join("") + (family.join ?? "x");
   } else {
     throw new Error(`Not a number word: ${word.raw}`);
   }

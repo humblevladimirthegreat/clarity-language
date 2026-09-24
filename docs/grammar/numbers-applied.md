@@ -14,6 +14,8 @@ English needs a **code**: a phone, room, channel, or serial, not a counted amoun
 
 > `zazawan d_555,123,4567 vejel.`
 >
+> 🔊 *zazawan drovavavathowodurethomovagulel vejel.*
+>
 > z-Azawan | d-_555,123,4567 | v-see
 >
 > "Azawan sees 555-123-4567."
@@ -30,6 +32,8 @@ For a code as a when-frame, use a host relation + `/b/` (`/h/` *on* + `b_7` *cha
 English names a **clock time** or a **calendar date**. Both reuse digit-string grammar as bare `/h/`. Clock takes marker **`ro`** (spoken **`hro`**, written `h_…`). Date takes calendar-ordinal **`oe`** (spoken **`hroe`**, written `h_#…`). Fields are read by position, so the word already says which number is the hour or the month.
 
 > `h_15,30 zazawan vawalal.`
+>
+> 🔊 *hrowovathorezol zazawan vawalal.*
 >
 > h-_15,30 | z-Azawan | v-walk
 >
@@ -60,6 +64,8 @@ Calendar decade labels such as *the ’90s* name a group of years, not a bare or
 English names **how much of a unit** (*two meters*, *three hours*). The unit is a lexicon noun whose **published abstract** is that SI or everyday unit name; the amount is an ordinary `/ɡ/` scalar on that unit. Use those unit lemmas in speech, not Latin abbreviations (`m`, `kg`, `s`). Introduce the unit sense with **-m** ([abstract](word-endings.md#abstract-m)); resume with **-r** when the unit phrase is already on the table.
 
 > `zazawan bedurem g+2 vawalal.`
+>
+> 🔊 *zazawan bedurem gradul vawalal.*
 >
 > z-Azawan | b-meter | g-two | v-walk
 >
@@ -109,6 +115,8 @@ Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / a
 
 > `zazawan zululon zel gomonam bedurem g+2.`
 >
+> 🔊 *zazawan zululon zel gomonam bedurem gradul.*
+>
 > z-Azawan | z-Ululon | z-rank/more | g-challenge | b-meter | g-two
 >
 > "Azawan is two meters more challenging than Ululon."
@@ -125,6 +133,8 @@ Vague degree uses `/w/` on the scale (`zel wogegal gomonam …`) with no unit. D
 English *from 3 to 5* / *between 3 and 5* names a **band on a line**. Write two number endpoints inside a [phrase fence](joins.md), then a **SHARED continuum** `/ɡ/` that names the line (time, price, measure, …). That `/ɡ/` is the same SHARED slot [comparatives](comparatives.md) use; here it names a **dimension / quantity continuum**, not a ranking of people. The continuum is what makes the fence a range.
 
 > `z+3 z+5 zel gumel.`
+>
+> 🔊 *zrarel zraval zel gumel.*
 >
 > z-three | z-five | z-rank/more | g-time
 >
@@ -162,6 +172,8 @@ English *25% of the cats* names a **portion of a whole**. Close a **count** (`ra
 
 > `zagadalx g+25%.`
 >
+> 🔊 *zagadalx graduvajol.*
+>
 > z-cat-x | g-25jo
 >
 > "25% of the cats."
@@ -198,6 +210,8 @@ The noun names the reference class; **`jo`** grades how much of that class. Same
 When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](numbers.md) (`g#N`) — not a closed overlay. *Problem* and *solution* take the published **-m** senses; *goal* is already the **-l** literal. Prefer at least **`g#1`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
 
 > `zazawan zagegom g#2 vezehel.`
+>
+> 🔊 *zazawan zagegom gredul vezehel.*
 >
 > z-Azawan | z-solution | g-second | v-tell
 >
@@ -249,6 +263,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 ::: details Show answer
 `zazawan d_555,123,4567 vejel.`
 
+🔊 *zazawan drovavavathowodurethomovagulel vejel.*
+
 z-Azawan | d-_555,123,4567 | v-see
 :::
 
@@ -256,6 +272,8 @@ z-Azawan | d-_555,123,4567 | v-see
 
 ::: details Show answer
 `h_15,30 zazawan duhubun vejel.`
+
+🔊 *hrowovathorezol zazawan duhubun vejel.*
 
 h-_15,30 | z-Azawan | d-Uhubun | v-see
 :::
@@ -265,6 +283,8 @@ h-_15,30 | z-Azawan | d-Uhubun | v-see
 ::: details Show answer
 `zabululx g+25%.`
 
+🔊 *zabululx graduvajol.*
+
 z-pill-x | g-25jo
 :::
 
@@ -272,6 +292,8 @@ z-pill-x | g-25jo
 
 ::: details Show answer
 `zazawan darogol g+2 vejel.`
+
+🔊 *zazawan darogol gradul vejel.*
 
 z-Azawan | d-rock | g-two | v-see
 :::
@@ -281,6 +303,8 @@ z-Azawan | d-rock | g-two | v-see
 ::: details Show answer
 `z+3 z+5 zel gumel.`
 
+🔊 *zrarel zraval zel gumel.*
+
 z-three | z-five | z-rank/more | g-time
 :::
 
@@ -288,6 +312,8 @@ z-three | z-five | z-rank/more | g-time
 
 ::: details Show answer
 `zululon d_911 vejel.`
+
+🔊 *zululon dronawowol vejel.*
 
 z-Ululon | d-_911 | v-see
 :::
@@ -297,6 +323,8 @@ z-Ululon | d-_911 | v-see
 ::: details Show answer
 `zululon darogol g+5 vubunul.`
 
+🔊 *zululon darogol graval vubunul.*
+
 z-Ululon | d-rock | g-five | v-punch
 :::
 
@@ -304,6 +332,8 @@ z-Ululon | d-rock | g-five | v-punch
 
 ::: details Show answer
 `z+15 z+16 zel gumel.`
+
+🔊 *zrawoval zrawogul zel gumel.*
 
 z-15 | z-16 | z-rank/more | g-time
 :::
@@ -314,6 +344,8 @@ z-15 | z-16 | z-rank/more | g-time
 
 ::: details Show answer
 
+🔊 *zabobol grolel.*
+
 z-baby-bottle | g-_7
 
 *Bottle 7.*
@@ -322,6 +354,8 @@ z-baby-bottle | g-_7
 **2.** `h_09,00 zuhubun vejel.`
 
 ::: details Show answer
+
+🔊 *hrozonathozozol zuhubun vejel.*
 
 h-_09,00 | z-Uhubun | v-see
 
@@ -332,6 +366,8 @@ h-_09,00 | z-Uhubun | v-see
 
 ::: details Show answer
 
+🔊 *zabobolx gravazojol.*
+
 z-baby-bottle-x | g-50jo
 
 *50% of the bottles.*
@@ -340,6 +376,8 @@ z-baby-bottle-x | g-50jo
 **4.** `zazawan dozobol g+1 vejel.`
 
 ::: details Show answer
+
+🔊 *zazawan dozobol grawol vejel.*
 
 z-Azawan | d-spoon | g-one | v-see
 
@@ -350,6 +388,8 @@ z-Azawan | d-spoon | g-one | v-see
 
 ::: details Show answer
 
+🔊 *zrawol zrarel zal gumel.*
+
 z-one | z-three | z-and | g-time
 
 *Between 1 and 3 on time.*
@@ -358,6 +398,8 @@ z-one | z-three | z-and | g-time
 **6.** `zululon d_000 vejel.`
 
 ::: details Show answer
+
+🔊 *zululon drozozozol vejel.*
 
 z-Ululon | d-_000 | v-see
 
@@ -368,6 +410,8 @@ z-Ululon | d-_000 | v-see
 
 ::: details Show answer
 
+🔊 *hrodurethovanam zululon vazagal.*
+
 h-_23,59 | z-Ululon | v-scream
 
 *Around 23:59 Ululon screams.*
@@ -376,6 +420,8 @@ h-_23,59 | z-Ululon | v-scream
 **8.** `z+10 z+20 zual gurulel.`
 
 ::: details Show answer
+
+🔊 *zrawozol zraduzol zual gurulel.*
 
 z-ten | z-20 | z-everything-but | g-ruler
 
@@ -417,6 +463,8 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bedurem g
 English *less than 5* / *greater than 5* is a **bound**, not a two-endpoint band. When the **only** member of a [rank join](joins.md#rank-joins) fence (**`e`** / **`ue`**, and their open / named twins) is a compatible number word, that number is an extremum on the line. SHARED continuum is optional: absent = implicit numeric line; present = that named line (`z+5 zel gumel` = *time \< 5*). Special values such as +∞ use [digitless exponents](numbers.md#digitless-exponents) inside the number word (`g+e`).
 
 > `z+5 zel.`
+>
+> 🔊 *zraval zel.*
 >
 > z-five | z-rank/more
 >

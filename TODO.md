@@ -5,16 +5,14 @@ redirects settings: https://us-east-2.console.aws.amazon.com/amplify/apps/d2xds9
 my name: obogan (innovation)
 
 # TODO
-j should just be y, remind that y is never a vowel
 
 Prosody
 
-gloss should indicate phrase structure (including proper phrases) and what modifies what. Gloss overlay ui should show that as well.
+gloss should indicate phrase structure (including proper phrases) and what modifies what. First, indicate what the new gloss format should look like. 
+Fully implement the new gloss in parser and gloss overlay ui.
 parser tries to guess lexical compound even if not in lexicon
-numbers section includes pronunciation rows underneath the agalan.
 
 consider removing some emotion words from lexicon
-consider moving overlay forms to the top of lexicon so they get preferential retying
 
 cool features: collective verbs/adjectives use plural
 
@@ -24,13 +22,16 @@ do a learning order consistency check for grammar-docs. Does any grammar doc lea
 do an example and translation review in grammar-docs. Do the examples make sense and effectively demonstrate the desired concept? Does the english translation sound natural? 
 do a style pass in grammar-docs. Check for adherence to doc-style and otherwise ensure natural sounding explanations.
 
-finish English->Agalan cheat sheets, including tense
-add Agalan->English cheat sheet
-Cheat sheet for joins and hooks
-join vowel decision tree in advanced vowel series.
 final exam
 
-mass lexical compound adding
+save for cursor:
+-j should just be y, remind that y is never a vowel
+-consider moving overlay forms to the top of lexicon so they get preferential retying
+-finish English->Agalan cheat sheets, including tense
+-add Agalan->English cheat sheet
+-Cheat sheet for joins and hooks
+-join vowel decision tree in advanced vowel series.
+-mass lexical compound adding
 
 Dictionary entries (open lexicon / concepts — not the closed list above):
 -habits: triggered

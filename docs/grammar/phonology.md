@@ -20,7 +20,7 @@ The cue words below are pronounced as in Standard American English.
 |--------|-----|-----|
 | `e` | /e̞/ <IpaPlay file="Mid_front_unrounded_vowel.ogg" label="e" /> | *bet* |
 | `u` | /u/ <IpaPlay file="Close_back_rounded_vowel.ogg" label="u" /> | *boot* (no glide, like Spanish *tú*) |
-| `o` | /o̞/ <IpaPlay file="Mid_back_rounded_vowel.ogg" label="o" /> | *Cambodia* (no glide) |
+| `o` | /o̞/ <IpaPlay file="Mid_back_rounded_vowel.ogg" label="o" /> | *Cambodia* (no glide, like spanish *todo*) |
 | `a` | /ɑ/ <IpaPlay file="Open_back_unrounded_vowel.ogg" label="a" /> | *father* |
 
 Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). /u/ and /ɑ/ by [Denelson83](https://commons.wikimedia.org/wiki/User:Denelson83) and except /e̞/ and /o̞/ by [TFighterPilot](https://commons.wikimedia.org/wiki/User:TFighterPilot).

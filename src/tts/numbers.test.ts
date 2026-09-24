@@ -160,3 +160,21 @@ describe("numberWordToSpeechStressed", () => {
     assert.ok(multi.ipaPhonemes.includes("ˈ"));
   });
 });
+
+describe("digitless exponent with power digits", () => {
+  it("speaks bare OoM bands per numbers.md", () => {
+    assert.equal(numberWordToSpeech(parseWord("g+e0")), "grabazol");
+    assert.equal(numberWordToSpeech(parseWord("g+e3")), "grabarel");
+    assert.equal(numberWordToSpeech(parseWord("g#e-2")), "grebudul");
+  });
+});
+
+describe("spelled-out stems and numeric derivation", () => {
+  it("keeps mantissa digits before a digitless exponent", () => {
+    assert.equal(numberWordToSpeech(parseWord("grazobal")), "grazobal");
+  });
+
+  it("keeps the lexical join on a numeric-derivation host", () => {
+    assert.equal(numberWordToSpeech(parseWord("vologolrazobal")), "vologolrazobal");
+  });
+});
