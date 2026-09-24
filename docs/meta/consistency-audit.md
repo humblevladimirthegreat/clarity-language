@@ -34,10 +34,10 @@ Audit in waves; each wave treats earlier waves as settled. Pages within a wave a
 
 | Status | Page | Covered | Date |
 |--------|------|---------|------|
-| [ ] | `joins.md` |  |  |
-| [ ] | `hooks.md` |  |  |
-| [ ] | `restrictors.md` |  |  |
-| [ ] | `spans.md` |  |  |
+| [x] | `joins.md` | all | 2026-09-24 |
+| [x] | `hooks.md` | all | 2026-09-24 |
+| [x] | `restrictors.md` | all | 2026-09-24 |
+| [x] | `spans.md` | all | 2026-09-24 |
 
 ### Wave 3 — built on joins / hooks / numbers
 
@@ -93,3 +93,9 @@ Audit in waves; each wave treats earlier waves as settled. Pages within a wave a
 - **-lx / -mx on a kind is an indefinite group** (a set in this situation), not anchor plus associates.
 - **Conventional-call interjections (`juruzen`) name the call with -n,** not a person.
 - **Ordinal commas are nested rank.** On `#`, each comma is a place within the previous place, innermost first like dates (`g#2,3` = seat 2 in row 3). An ordinal exponent is always generation, so a large ordinal is one all-digit group (`g#1005`).
+- **Phrase-join -n with items titles the bundle;** standalone `…an` (no items) is null / void.
+- **A tie (`ae`) does not rank its members;** spoken order is irrelevant.
+- **Join -r is single-vowel only** (`a` / `o` / `e` / `u`), on every role letter that takes joins, including `/x/` (`xar`).
+- **`A ol B` = *B instead of A*** — the left item is the one replaced.
+- **Restrictor occasions are times or cases, never places.** Places go in extra-noun hooks.
+- **A clause-scoped span open (EDGE `e`) runs to clause end,** so the verb comes before it.

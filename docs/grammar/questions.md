@@ -72,6 +72,28 @@ If the reply is just the fill, not a full sentence, write it as a [citation](wor
 
 **Compare with:** pointing back at someone already named uses content resume **-r** ([pronouns](pronouns.md)). Fill-ask uses only **join** **-r**. You can tell the difference because resumes always have at least five letters due to copying three from the antecedent, whereas joins always have less than five letters. 
 
+### Question tone (`?`)
+<a id="question-tone"></a>
+
+The act word **`jol`** / **`jom`** already makes the sentence a question, so the [tone mark](speech-moves.md#tone-marks) `?` is never required. It is still **recommended**, because it shows the rising voice in writing:
+
+- **Yes/no question:** write a free-standing `?` right after the `/j/` words, so it colors the whole rest of the sentence.
+- **Fill-ask:** attach `?` to the front of each fill-ask word (the join **-r** blank), so the rise falls on what you want filled.
+
+> `jol ? zazawan vawalal.`
+>
+> j-question | ? | z-Azawan | v-walk
+>
+> "Does Azawan walk?"
+
+> `jol ?zar vawalal.`
+>
+> j-question | ?z-who | v-walk
+>
+> "Who walks?"
+
+The sentence still ends in a period.
+
 ### Fill-all
 <a id="fill-all"></a>
 

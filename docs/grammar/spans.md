@@ -169,7 +169,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *tell* | `vezehel` | | |
 | *write* | `vuwurul` | | |
 | *see* | `vejel` | | |
-| *sing* | `uzunul` | | |
+| *sing* | `vuzunul` | | |
 | *stop* | `vozodol` | | |
 | *Uzugon* | `uzugon` | | |
 | *melody* | `uzugol` | | |
@@ -344,7 +344,7 @@ Beginner writing already packages a quote, mention, aside, or blob in brackets. 
 
 | Piece | Values | Use |
 |-------|--------|-----|
-| **PoS** | `z` `d` `b` `v` `g` `w` `h` `j` `x` | slot the whole span fills |
+| **PoS** | `z` `d` `b` `v` `g` `w` `h` `th` `j` `x` | slot the whole span fills |
 | **TYPE** | **a** cite · **e** aside · **o** mention · **u** opaque | span kind |
 | **`x`** | mid-word joiner | marks a span-fence form |
 | **EDGE** | **a** · **e** · **o** · **u** | how far an open runs |
@@ -500,11 +500,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *tell* | `vezehel` |
 | *see* | `vejel` |
 | *attest* | `vadezel` |
-| *lie* | `vululel` |
-| *lie* | `ululel` |
+| *lie* (verb) | `vululel` |
+| *lie* (noun) | `ululel` |
 | *scream* | `vazagal` |
 | *punch* | `vubunul` |
-| *judge* | `ujudul` |
 | *Judge* | `ujudun` |
 | *small* | `gumuzem` |
 | *happy* | `huzumum` |
@@ -587,12 +586,13 @@ z-MENTION.multi["ululon" | "vadezel"] | g-small
 
 #### Agalan → English
 
-**1.** `zululon daxel azawan.`
+**1.** `zazawan vezehel daxel azawan.`
 
 ::: details Show answer
 
-z-Ululon | d-CITE.clause[Azawan]
-*Ululon said “Azawan.”* (hello)
+z-Azawan | v-tell | d-CITE.clause[Azawan]
+
+*Azawan said “Azawan.”* (hello; the cite runs to the clause end, so the verb comes first)
 :::
 
 **2.** `zazawan daxam zazawan vadezel xuxul vezehel.`
@@ -613,13 +613,13 @@ z-←cite.spoken | g-small
 *That (cite) is small.*
 :::
 
-**4.** `zuhubun daxon ujudun vezehel.`
+**4.** `zuhubun doxon ujudun vezehel.`
 
 ::: details Show answer
 
-z-Uhubun | d-NAME.CITE.atomic[Ujudun] | v-tell
+z-Uhubun | d-NAME.MENTION.atomic["ujudun"] | v-tell
 
-*Uhubun said “Ujudu.”*
+*Uhubun said the name “Ujudun.”*
 :::
 
 **5.** `zazawan vezehel thexol huzumum.`
@@ -649,13 +649,13 @@ z-Ululon | SCOPE[h-possibility | d-lie] | v-see
 *Ululon saw, as a possibility, the lie.*
 :::
 
-**8.** `zujudun vazagal.`
+**8.** `zazawan vezehel thexal zululon vululel xuxul.`
 
 ::: details Show answer
 
-z-Ujudun | v-scream
+z-Azawan | v-tell | th-ASIDE.multi[z-Ululon | v-lie]
 
-*The Judge screamed.*
+*Azawan tells (Ululon lies).*
 :::
 
 **9.** `zoxal uhubun vazagal xuxul gumuzem.`
@@ -695,7 +695,7 @@ xuxum  =  x + u + x + u + m
 
 An editorial span still counts as said: resume (`d[=]` / `daxur`) may point back to it. Combined `#\|` is two spoken closes in writing; write editorial first, then close-all. Bare `xuxur` closes one (editorial).
 
-**Not the same job as:** a negating clause join (`xul` / `xum`). Empty or resumed **cite opens** are `/d/` (`daxul` redacted; `daxur` that cite). Closes are **`xuxul`** / **`xuxur`**.
+**Not the same job as:** a negating clause join (`xul` / `xum`). Empty and resume forms are **opens** with a role letter (`daxul` redacted; `daxur` that cite). Closes are **`xuxul`** / **`xuxur`**.
 
 | Writing | Speech | Notes |
 |---------|--------|-------|
@@ -716,7 +716,7 @@ The rest of the spoken open map (PoS shown as `…`; EDGE **a** unless noted).
 | mention **o** | `…oxal` | `…oxam` | `…oxan` | `…oxur` |
 | opaque **u** | `…uxal` | `…uxam` | `…uxan` | `…uxur` |
 
-Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); aside atomic **`thexol`**. Clause-scoped (EDGE **e**): `…axel` / `…axem` / `…axen`. Empty exact (EDGE **u**): `…axul` / `thexul` / `…oxul` / `…uxul`. Aside **opens** use `/h/`; resume may recast the aside into another slot (`dexur`).
+Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); aside atomic **`thexol`**. Clause-scoped (EDGE **e**): `…axel` / `…axem` / `…axen`. Empty exact (EDGE **u**): `…axul` / `thexul` / `…oxul` / `…uxul`. Aside **opens** use `/th/`; resume may recast the aside into another slot (`dexur`).
 
 | Form | Use |
 |------|-----|

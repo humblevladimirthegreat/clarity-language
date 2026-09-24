@@ -96,11 +96,11 @@ The same restrictor vowels and endings can limit **only the host you are about t
 >
 > "Azawan is never happy."
 
-> `zaladelx wal ul zaladal.`
+> `zodogol velebel wal al bohohul.`
 >
-> z-plate-x | w-never | except | z-salad
+> z-dog | v-sleep | [[w-never | in] | b-house]
 >
-> "The plates, never excepting a salad."
+> "The dog never sleeps in the house."
 
 > `zululon wual guzumum.`
 >
@@ -135,7 +135,7 @@ The same restrictor vowels and endings can limit **only the host you are about t
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `/h/` | limits the clause | *when the verb claim counts* | **h** starts *how* / *when* / *where* |
-| `/w/` | same map on the next adjective or hook | *never happy* / *never excepting* | **w** ≈ with (stuck to that host) |
+| `/w/` | same map on the next adjective or hook | *never happy* / *never in the house* | **w** ≈ with (stuck to that host) |
 
 **Compare with:** extra detail on an adjective is still ordinary `/w/` from [clause](clause.md#adjective-detail-w). A restrictor on `/w/` answers **when that adjective or hook counts**.
 
@@ -172,7 +172,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *happy* | `uzumum` | `uzumul` *smile* |
 | *rain* | `anunul` | |
 | *night* | `unugul` | |
-| *fire* | `urel` | |
+| *thunderstorm* | `unerol` | |
 | *haste* | `hadazam` | `adazal` *dash* |
 | *quietude* | `howom` | `owol` *owl* |
 | *punch* | `vubunul` | |
@@ -299,22 +299,22 @@ z-Uhubun | [w-sometimes | g-happy]
 *Uhubun is sometimes happy.*
 :::
 
-**7.** `zazawan vuzuwul hurel hual.`
+**7.** `zazawan vuzuwul hunerol hual.`
 
 ::: details Show answer
 
-z-Azawan | v-swim | h-fire | h-always-except
+z-Azawan | v-swim | h-thunderstorm | h-always-except
 
-*Azawan always swims except when there is fire.*
+*Azawan always swims except during a thunderstorm.*
 :::
 
-**8.** `zululon vuzuwul hurel hual.`
+**8.** `zululon vuzuwul hanunul hual.`
 
 ::: details Show answer
 
-z-Ululon | v-swim | h-fire | h-always-except
+z-Ululon | v-swim | h-rain | h-always-except
 
-*Ululon always swims except when there is fire.*
+*Ululon always swims except when raining.*
 :::
 
 ## Intermediate
@@ -356,7 +356,7 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 
 | Agalan | Use | English (with occasions) | English (bare) | Cue |
 |--------|-----|--------------------------|----------------|-----|
-| **`hal` / `ham`** | listed times; empty list is *never* | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *never that you can think of* | **a** ≈ add |
+| **`hal` / `ham`** | listed times; empty list is *never* | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *never, as far as you can tell* | **a** ≈ add |
 | **`hol` / `hom`** | one exclusive time menu | *either when A or when B (not both)*; **`hom`** also allows *or never* | | **o** ≈ one |
 | **`haol` / `haom`** | any of the listed times suffices | *when A and/or when B* | | **a** ≈ add + **o** ≈ one |
 | **`hul` / `hum`** | invert the listed times | *not when…* / *not when…, for one* | | **u** ≈ undo |
@@ -390,7 +390,6 @@ Statement readings below. Asking *when*: [questions.md](questions.md#when).
 | **`har`** | unspecified member of the listed times | *sometimes among these* | *sometimes* | **-r** some member |
 | **`hor`** | unspecified member of a one-choice time menu | *anytime among these* | *anytime* | **o** ≈ one + **-r** |
 | **`hur`** | unspecified leftover occasion | *some time other than these* | *some other time* | **u** ≈ undo + **-r** |
-| **`hael`** | equal frequency frame | *as often as among these* / *equally when these* | *equally often* / *tied frequency frame* | **a** ≈ add + **e** ≈ order |
 
 > `zazawan wanunul wunugul wol guzumum.`
 >
@@ -420,7 +419,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *night* | `unugul` | |
 | *fog* | `avogol` | |
 | *ice* | `ujel` | |
-| *tent* | `edenel` | |
 | *scream* | `vazagal` | |
 | *fall* | `vodowol` | `odowol` *down* |
 | *that-clause* | `barl` | |
@@ -467,7 +465,7 @@ z-Azawan | v-climb | h-snow | h-uo
 z-Azawan | v-climb | h-rain | h-snow | h-when-ranked
 :::
 
-**6.** *Azawan climbs if ice, else if fog.*
+**6.** *Azawan climbs when there is ice, or failing that, when there is fog.*
 
 ::: details Show answer
 `zazawan vugumul hujel havogol hoel.`
@@ -511,13 +509,13 @@ z-Ululon | v-climb | h-rain | h-snow | h-whenever
 *Ululon climbs as often when raining as when snowing.*
 :::
 
-**3.** `zazawan vugumul hedenel hal.`
+**3.** `zazawan vugumul hujel hal.`
 
 ::: details Show answer
 
-z-Azawan | v-climb | h-tent | h-only-when
+z-Azawan | v-climb | h-ice | h-only-when
 
-*Azawan climbs only at the tent.*
+*Azawan climbs only when there is ice.*
 :::
 
 **4.** `zululon vurunul hanunul hozowol har.`
@@ -526,16 +524,16 @@ z-Azawan | v-climb | h-tent | h-only-when
 
 z-Ululon | v-run | h-rain | h-snow | h-sometimes
 
-*Ululon runs sometimes among rain or snow.*
+*Ululon sometimes runs, on some occasion of rain or snow.*
 :::
 
-**5.** `zazawan vugumul hael.`
+**5.** `zululon vurunul hunugul hur.`
 
 ::: details Show answer
 
-z-Azawan | v-climb | h-whenever
+z-Ululon | v-run | h-night | h-some-other-time
 
-*Azawan climbs equally often.*
+*Ululon runs at some time other than night.*
 :::
 
 **6.** `zuhubun vugumul havogol hul.`

@@ -17,19 +17,19 @@ You already named something (A), and you want English *including B* in that same
 A HOOK B
 ```
 
-> `zodogolx al zagadal.`
+> `zavamul al zazawan.`
 >
-> z-dog-x | including | z-cat
+> z-family | including | z-Azawan
 >
-> "Dogs, including a cat."
+> "The family, including Azawan."
 
 **Compare with:** packaging two members as a list uses a [join](joins.md) (`zodogol zagadal zam` *a dog and a cat*). A hook **hooks** B onto A; it does not name a pair.
 
-> `zodogolx am zagadal.`
+> `zavamul am zazawan.`
 >
-> z-dog-x | including.open | z-cat
+> z-family | including.open | z-Azawan
 >
-> "Dogs, including a cat and maybe more."
+> "The family, including Azawan and maybe more."
 
 ### Rather (`el`)
 <a id="rather"></a>
@@ -60,11 +60,11 @@ You want English *instead*: B takes A's slot. Same `A HOOK B` shape; vowel **o**
 
 You want English *except*: keep A and subtract B from that same slot. Same `A HOOK B` shape; vowel **u**. (cue: **u** ≈ undo.)
 
-> `zahadam ul zazawan.`
+> `zavamul ul zazawan.`
 >
-> z-teamwork | except | z-Azawan
+> z-family | except | z-Azawan
 >
-> "The team except Azawan."
+> "The family except Azawan."
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -82,11 +82,11 @@ For every same-role hook you also choose how complete the right-hand side is. **
 | **-l** (`al` / `el` / `ol` / `ul`) | B is the whole story you stand behind | unmarked (*including B*, *except B*, …) | **l** ≈ locked |
 | **-m** (`am` / `em` / `om` / `um`) | B is not the only one | *and maybe more* | **m** ≈ maybe more |
 
-> `zodogolx al zagadal.`
+> `zavamul um zazawan.`
 >
-> z-dog-x | including | z-cat
+> z-family | except.open | z-Azawan
 >
-> "Dogs, including a cat."
+> "The family except Azawan, and maybe others."
 
 ### Glue this sentence to prior talk
 <a id="discourse-hooks"></a>
@@ -152,19 +152,17 @@ Simplex vowels (one vowel plus an ending):
 >
 > "Ululon sits at a plate."
 
-> `zazawan vorurul ul buwunel.`
+> `zazawan duwunel vorurul ul bedebol.`
 >
-> z-Azawan | v-pour | from | b-wine
+> z-Azawan | d-wine | v-pour | [from | b-teapot]
 >
-> "Azawan pours from wine."
+> "Azawan pours wine from a teapot."
 
-> `zazawan vogogol el baladal.`
+> `zazawan vogogol el bavamul.`
 >
-> z-Azawan | v-cook | for | b-salad
+> z-Azawan | v-cook | [for | b-family]
 >
-> "Azawan cooks for a salad."
-
-<!-- replace a salad with a more sensible word like meal/dinner (replace agalan as well) -->
+> "Azawan cooks for a family."
 
 **-l** is the exact extra. Frame **-m** waits for Intermediate, with the rest of the extra-noun grid.
 
@@ -186,25 +184,24 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Uhubun* | `uhubun` | |
 | *plate* | `aladel` | |
 | *salad* | `aladal` | |
+| *family* | `avamul` | |
+| *teapot* | `edebol` | |
 | *wine* | `uwunel` | |
 | *beer* | `aberel` | |
 | *red* | `aredel` | |
 | *blue* | `elulul` | |
 | *cook* | `vogogol` | |
 | *pour* | `vorurul` | |
-| *see* | `vejel` | `ejel` *eye* |
 | *sit* | `vajul` | `ajul` *chair* |
-| *punch* | `vubunul` | |
-| *fight* | `vuvugul` | |
 
 #### English → Agalan
 
-**1.** *The plates, including a salad.*
+**1.** *The family, including Ululon.*
 
 ::: details Show answer
-`zaladelx al zaladal.`
+`zavamul al zululon.`
 
-z-plate-x | including | z-salad
+z-family | including | z-Ululon
 :::
 
 **2.** *Wine instead of beer.*
@@ -215,12 +212,12 @@ z-plate-x | including | z-salad
 d-beer | instead | d-wine
 :::
 
-**3.** *The plates except Ululon.*
+**3.** *The family except Ululon.*
 
 ::: details Show answer
-`zaladelx ul zululon.`
+`zavamul ul zululon.`
 
-z-plate-x | except | z-Ululon
+z-family | except | z-Ululon
 :::
 
 **4.** *Additionally, Azawan cooks.*
@@ -239,12 +236,12 @@ additionally | z-Azawan | v-cook
 [z-plate | z-salad | z-and.open]
 :::
 
-**6.** *The wine is red, or rather, blue.*
+**6.** *The plate is red, or rather, blue.*
 
 ::: details Show answer
-`zuwunel garedel el gelulul.`
+`zaladel garedel el gelulul.`
 
-[z-wine | g-red] | rather | g-blue
+[z-plate | g-red] | rather | g-blue
 :::
 
 **7.** *Ululon sits at a plate.*
@@ -255,23 +252,23 @@ additionally | z-Azawan | v-cook
 z-Ululon | v-sit | [at | b-plate]
 :::
 
-**8.** *Azawan cooks for a salad.*
+**8.** *Azawan cooks for a family.*
 
 ::: details Show answer
-`zazawan vogogol el baladal.`
+`zazawan vogogol el bavamul.`
 
-z-Azawan | v-cook | [for | b-salad]
+z-Azawan | v-cook | [for | b-family]
 :::
 
 #### Agalan → English
 
-**1.** `zaladelx am zaladal.`
+**1.** `zavamul am zuhubun.`
 
 ::: details Show answer
 
-z-plate-x | including.open | z-salad
+z-family | including.open | z-Uhubun
 
-*The plates, including a salad and maybe more.*
+*The family, including Uhubun and maybe more.*
 :::
 
 **2.** `duwunel ol daberel.`
@@ -283,13 +280,13 @@ d-wine | instead | d-beer
 *Beer instead of wine.*
 :::
 
-**3.** `zaladelx ul zuhubun.`
+**3.** `zavamul ul zuhubun.`
 
 ::: details Show answer
 
-z-plate-x | except | z-Uhubun
+z-family | except | z-Uhubun
 
-*The plates except Uhubun.*
+*The family except Uhubun.*
 :::
 
 **4.** `al zululon vogogol.`
@@ -328,13 +325,13 @@ z-salad | [in | b-plate]
 *The salad in a plate.*
 :::
 
-**8.** `zululon vorurul ul buwunel.`
+**8.** `zululon duwunel vorurul ul bedebol.`
 
 ::: details Show answer
 
-z-Ululon | v-pour | [from | b-wine]
+z-Ululon | d-wine | v-pour | [from | b-teapot]
 
-*Ululon pours from wine.*
+*Ululon pours wine from a teapot.*
 :::
 
 ## Intermediate
@@ -405,11 +402,11 @@ Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). S
 >
 > "Azawan sits on a chair."
 
-> `zazawan dabogol ael bahamel vuwurul.`
+> `zazawan dabogol ael babenel vuwurul.`
 >
-> z-Azawan | d-book | using | b-hammer | v-write
+> z-Azawan | d-book | [using | b-pen] | v-write
 >
-> "Azawan writes a book with a hammer."
+> "Azawan writes a book with a pen."
 
 > `zazawan uel bugugal vuvugul.`
 >
@@ -445,18 +442,18 @@ Several extra-noun hooks on one clause are several extras (*from* one landmark *
 
 You already hook one named A with a single `A HOOK B`. To stack several hooks on that **same** A (including B and except C, or two includings), add more hooks after the first right-hand side: `A HOOK₁ B HOOK₂ C`. Each hook still applies to A in parallel, with its own side; vowels and endings may mix. English *including (B except C)* would nest C under B instead.
 
-> `zahadam am zazawan ul zululon.`
+> `zavamul am zazawan ul zululon.`
 >
-> z-teamwork | including.open | z-Azawan | except | z-Ululon
+> z-family | including.open | z-Azawan | except | z-Ululon
 >
-> "The team, including Azawan and maybe more, except Ululon."
+> "The family, including Azawan and maybe more, except Ululon."
 
 | Chain | English |
 |-------|---------|
 | `A am B am C` | A including B and including C, and maybe more |
 | `A al B al C` | A including B and including C |
 | `A am B ul C` | A including B, and maybe more, except C |
-| `A ul B om C` | A except B, and C as a replacement, and maybe more |
+| `A ul B ul C` | A except B and except C |
 
 Same-role includes the **verb phrase**:
 
@@ -464,9 +461,9 @@ Same-role includes the **verb phrase**:
 >
 > v-run | instead.open | v-walk
 >
-> "Ran, with walk as a replacement."
+> "Walk instead of run, or some other replacement."
 
-**Compare with:** packaging *(dog instead of cat) and bird* uses a [list join](joins.md) after the revision chain (`zodogol ol zagadal zubudul zam`). The chain is tighter than the join: it eats following same-role sides paired by **HOOK**.
+**Compare with:** packaging *(cat instead of dog) and bird* uses a [list join](joins.md) after the revision chain (`zodogol ol zagadal zubudul zam` *a cat instead of a dog, and a bird*). The chain is tighter than the join: it eats following same-role sides paired by **HOOK**.
 
 ### Discourse placements
 <a id="discourse-placements"></a>
@@ -499,19 +496,19 @@ On a non-initial conjunct under a [clause `/x/` fence](joins.md#right-close), th
 
 Same-role: the except (or including, rather, instead) carries that detail; clause `/h/` still grades the verb.
 
-> `zaladelx wazavom ul zaladal.`
+> `zavamul wazavom ul zazawan.`
 >
-> z-plate-x | [w-hesitation | except] | z-salad
+> z-family | [w-hesitation | except] | z-Azawan
 >
-> "The plates, except a salad, with hesitation."
+> "The family, hesitantly excepting Azawan."
 
-> `zaladelx wal ul zaladal.`
+> `zavamul wal ul zazawan.`
 >
-> z-plate-x | w-never | except | z-salad
+> z-family | [w-never | except] | z-Azawan
 >
-> "The plates, never excepting a salad."
+> "The family, never excepting Azawan."
 
-**Compare with:** `zaladelx ul zaladal hadazam vogogol` puts haste on the **cooking**, not on the except.
+**Compare with:** `zavamul ul zazawan hadazam vogogol` puts haste on the **cooking**, not on the except.
 
 Extra-noun: `/b/` still sits immediately after the hook. A later `/ɡ/` still describes the landmark.
 
@@ -543,9 +540,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *radio* | `aradul` | |
 | *write* | `vuwurul` | |
 | *tell* | `vezehel` | `ezehel` *speech* |
-| *lie* | `vululel` | |
-| *punch* | `vubunul` | |
-| *therefore* | `xezazal` | `ezazal` *east* |
 
 #### English → Agalan
 
@@ -565,7 +559,7 @@ z-newspaper | including.open | z-Azawan | except | z-Ululon
 z-Azawan | v-write | [over | b-page]
 :::
 
-**3.** *The page, with a newspaper as a replacement, and maybe more.*
+**3.** *A newspaper instead of the page, or some other replacement.*
 
 ::: details Show answer
 `dababel om denewel.`
@@ -573,12 +567,12 @@ z-Azawan | v-write | [over | b-page]
 d-page | instead.open | d-newspaper
 :::
 
-**4.** *A camera instead of a radio, and a page.*
+**4.** *A radio instead of a camera.*
 
 ::: details Show answer
-`zameral ol zaradul zababel zam.`
+`zameral ol zaradul.`
 
-z-camera | instead | [z-radio | z-page | z-and.open]
+z-camera | instead | z-radio
 :::
 
 **5.** *Azawan: additionally, Ululon writes.*
@@ -657,7 +651,7 @@ z-newspaper | including.open | z-Azawan | including.open | z-Ululon
 
 v-write | instead.open | v-tell
 
-*Wrote, with tell as a replacement.*
+*Tell instead of write, or some other replacement.*
 :::
 
 **6.** `zenewel al zuhubun ul zululon.`
@@ -769,7 +763,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Uhubun* | `uhubun` | | |
 | *leave* | `awalalul` | `awalal` *walk* | cited walk plus *from* |
 | *enter* | `awalalal` | `awalal` *walk* | cited walk plus *in* |
-| *attend* | `awalalol` | `awalal` *walk* | cited walk plus *at* |
+| *head for* | `awalaloel` | `awalal` *walk* | cited walk plus *toward* |
 | *exit* | `awalalual` | `awalal` *walk* | cited walk plus *out of* |
 | *oppose* | `awalaluel` | `awalal` *walk* | cited walk plus *against* |
 | *traverse* | `awalaluol` | `awalal` *walk* | cited walk plus *through* |
@@ -777,7 +771,6 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *fog* | `avogol` | | |
 | *ice* | `ujel` | | |
 | *anchor* | `anogol` | | |
-| *bell* | `obelel` | | |
 
 #### English → Agalan
 
@@ -789,12 +782,12 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 z-Azawan | d-boat | v-leave
 :::
 
-**2.** *Ululon attends a bell.*
+**2.** *Ululon heads for a boat.*
 
 ::: details Show answer
-`zululon dobelel vawalalol.`
+`zululon dodadal vawalaloel.`
 
-z-Ululon | d-bell | v-attend
+z-Ululon | d-boat | v-head-for
 :::
 
 **3.** *Uhubun exits fog.*
@@ -813,12 +806,12 @@ z-Uhubun | d-fog | v-exit
 z-Azawan | d-ice | v-oppose
 :::
 
-**5.** *Ululon traverses a boat.*
+**5.** *Ululon traverses fog.*
 
 ::: details Show answer
-`zululon dodadal vawalaluol.`
+`zululon davogol vawalaluol.`
 
-z-Ululon | d-boat | v-traverse
+z-Ululon | d-fog | v-traverse
 :::
 
 **6.** *Azawan enters fog.*
@@ -840,13 +833,13 @@ d-fog | z-Ululon | v-leave
 *Ululon leaves fog.*
 :::
 
-**2.** `zazawan danogol vawalalol.`
+**2.** `zazawan danogol vawalaloel.`
 
 ::: details Show answer
 
-z-Azawan | d-anchor | v-attend
+z-Azawan | d-anchor | v-head-for
 
-*Azawan attends an anchor.*
+*Azawan heads for an anchor.*
 :::
 
 **3.** `zululon dodadal vawalalual.`

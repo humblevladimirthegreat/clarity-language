@@ -1,10 +1,10 @@
 # Joins
 
-When English would pack several things that play the same role into one slot (*a dog and a cat*, *walks and runs*), Agalan writes those items in a row and then one join word after them. That last word is how you know the list has ended. We call that pattern a **right-close fence**: items, then the join. The join starts with the same role letter as the items (`z` for people and things, `v` for verbs, `x` for whole clauses).
+When English would pack several things that play the same role into one slot (*a dog and a cat*, *walks and runs*), Agalan writes those items in a row and then one join word after them. That last word is how you know the list has ended. We call that pattern a **right-close fence**: items, then the join. The join starts with the same role letter as the items (`z` for subjects, `v` for verbs, `x` for whole clauses).
 
 Sometimes you only care that the items belong together, with no ranking among them (*and*, *or*, *not*). We call that a **set**. Sometimes you care which item comes first (*X first*, *A before B*). We call that a **rank**.
 
-The join’s vowel is the [vowel series](speech-moves.md) you just mapped: the first letter matches the items’ role; the vowel keeps hold, pick one, instruct, or reverse.
+The join’s vowel is the [vowel series](speech-moves.md) you just mapped: the first letter matches the items’ role; **a** adds, **o** picks one, **e** orders, **u** undoes.
 
 ## Beginner
 <a id="beginner"></a>
@@ -446,7 +446,7 @@ Standalone **e** answers *who first* with no ranking (no favorite). Standalone *
 |--------|-----|---------|
 | **…al** (`zal` / …) | closed empty add | *nothing* / *nobody* |
 | **…am** (`zam` / …) | open empty add | *nothing, as far as I know* |
-| **…an** (`zan` / …) | named empty add | *null* / *void* (standalone-only under `/z/` `/d/` `/b/` `/w/`) |
+| **…an** (`zan` / …) | named empty add | *null* / *void* (with items, **-n** instead names the bundle — [named phrase](#named-list)) |
 | **…ol** (`zol` / …) | closed empty menu | *no options* / *we're stuck* |
 | **…om** (`zom` / …) | open empty menu | *no pick, as far as I know* |
 | **…ual** (`zual` / …) | closed empty invert-add | *everything* / *everyone* |
@@ -471,7 +471,7 @@ Yes/no, offer, emptiness, and fill-ask on a lone join: [questions](questions.md#
 
 When English would say two people are *as ADJ as* each other, or that nobody is the biggest, write a **rank** join and put the adjective immediately after it so it grades the whole list.
 
-**`ae`** is a tie: several names, then **`zael`** (or **`zaem`**), then the adjective. Standalone **`oe`** plus that adjective is *no biggest comes to mind*. Ranking still follows the spoken order of the names before the join.
+**`ae`** is a tie: several names, then **`zael`** (or **`zaem`**), then the adjective. The order of the names does not matter in a tie. Standalone **`zoem`** plus an adjective is *no biggest comes to mind*.
 
 > `zazawan zululon zael gomonam.`
 >
@@ -608,8 +608,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *happy* | `uzumum` | `uzumul` *smile* |
 | *see* | `vejel` | `ejel` *eye* |
 | *kiss* | `vuguzul` | `uguzul` *kiss* |
-| *tell* | `vezehel` | `ezehel` *speech* |
-| *sit* | `vajul` | `ajul` *chair* |
 | *punch* | `vubunul` | `ubunul` *punch* |
 
 #### English → Agalan
@@ -713,7 +711,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 [v-kiss | v-see | v-and.open] | d-Uhubun
 
-*kisses and sees Uhubun*
+*kisses and sees Uhubun (and possibly more)*
 :::
 
 **5.** `vuguzul vubunul val vul.`
@@ -731,7 +729,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 [z-wine | z-flower | z-or-exactly-one]
 
-*Pick one of wine or flower.*
+*wine or a flower (pick one)*
 :::
 
 **7.** `zuwunel zovowel zunurul zel.`
@@ -740,7 +738,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 [z-wine | z-flower | z-ring | z-rank/more]
 
-*wine ≻ flower ≻ ring*
+*wine first, then the flower, then the ring*
 :::
 
 **8.** `zuduzel zuom.`
@@ -772,7 +770,7 @@ When same-role words sit next to a smaller list, wrap that stretch and its join 
 >
 > "Azawan and (just water)."
 
-**Compare with:** a memory stretch or a chain of `/x/` writes the evidential and/or resumes [*as-of*](relations.md#as-of) on the next host. Islands bound join / `/h/` scope.
+**Compare with:** islands bound only join and `/h/` scope. An evidential or [*as-of*](relations.md#as-of) that should cover several clauses is written or resumed on each host instead.
 
 ### Named phrase **`-n`**
 <a id="named-list"></a>
@@ -786,7 +784,7 @@ When a phrase list is an established bundle (*Stop–Drop–Roll*), end the join
 >
 > "bread and butter" (the familiar bundle)
 
-**…an** is standalone-only on those phrase fences (*null* / *void*). Under `/ɡ/` `/h/`, **-n** forms join-derived relations; see [Join across roles](join-across-roles.md#join-relations).
+Standalone **…an** (no items) is *null* / *void*. Under `/ɡ/` `/h/`, **-n** forms join-derived relations; see [Join across roles](join-across-roles.md#join-relations).
 
 **Compare with:** clause **`xan`** is *and then*, not a named package.
 
@@ -804,7 +802,7 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 | `zeberel` vs `zeberel zar` | content **-l** vs join **-r** | *a person* vs *some person, unknown who* |
 | `A B C zor` vs `… zer` | menu vs rank unspecified | any of them is fine vs pick by ranking |
 | `A B zar` / `zur` / `zual` | among / leftover / invert | some one among; some one other than; *everything but* |
-| **`oe`** | exclusive step on a ladder | preference vs contingency from context |
+| **`oe`** | exclusive start on a ladder | *try X first* (fallbacks follow) vs *only try X*; context decides preference or contingency |
 
 > `zadedal zogovel zunudel zor.`
 >
@@ -812,7 +810,7 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 >
 > "any of tea, coffee, or water is fine (no order)."
 
-**For *except*, use:** hook **`ul`** / **`um`** — [hooks](hooks.md). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (closed list but optional: `zadedal zogovel zol zal`).
+**For *except*, use:** hook **`ul`** / **`um`** — [hooks](hooks.md). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (pick one of a closed list, but the pick is optional: `zadedal zogovel zol zom`).
 
 
 ### Allowed joins by PoS
@@ -826,7 +824,7 @@ Join vowels stack at most two letters. Endings by role letter:
 | `/ɡ/` `/h/` | same series as restrictors allow | [restrictors](restrictors.md#defined-core-full); **-n** forms are [join-relations](join-across-roles.md#join-relations) |
 | `/v/` | **-l** / **-m** / **-r** | parallel **-n** forms are [join-act verbs](join-across-roles.md#join-act-verbs) |
 | `/th/` | **-l** / **-m** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | [stance joins](join-across-roles.md#stance-joins) on stance words (*not because…*) |
-| `/x/` | **-l** / **-m** / **-n** | clause forms: [Join across roles](join-across-roles.md); stacked vowels take **-l** / **-m** / **-n**, not **-r** |
+| `/x/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | clause forms: [Join across roles](join-across-roles.md) |
 
 Word shape: [phonology](phonology.md#phonotactics).
 
@@ -843,7 +841,7 @@ These limits apply to every join.
 | Shared modifiers | only immediately after each join |
 | Phrase **-r** | only **…ar** / **…or** / **…er** / **…ur** |
 | Verb+object packages | verb-phrase `/v/`; full sentences use `/x/` ([forms](join-across-roles.md)) |
-| Same role letter on every item | in-clause *including* / *rather* / *instead* / *except* are [hooks](hooks.md) |
+| Revising one item | in-clause *including* / *rather* / *instead* / *except* are [hooks](hooks.md) |
 | Several manners on `/h/` `/w/` | juxtaposition (`hadazal howol`) |
 
 **Compare with:** prefix-less **`al`** / **`am`** / … are [hooks](hooks.md). Under `/h/` `/w/`, the unit is a [restrictor](restrictors.md), not sibling *and*.
@@ -884,6 +882,7 @@ NAME[z-page | z-pen | z-or-exactly-one]
 
 ::: details Show answer
 `zan.`
+
 NAME[z-and]
 :::
 
@@ -918,6 +917,7 @@ NAME[z-and]
 ::: details Show answer
 
 NAME[z-equal-rank]
+
 *it's a draw* (stock)
 :::
 
@@ -927,7 +927,7 @@ NAME[z-equal-rank]
 
 [z-dove | z-page | z-pen | z-whatever-ranks]
 
-*pick a dove, a page, or a pen by ranking*
+*whichever of a dove, a page, or a pen ranks highest*
 :::
 
 **3.** `zazawan ^ zal ^ zam.`
