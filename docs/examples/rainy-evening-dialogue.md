@@ -16,21 +16,21 @@ Each turn has: **Agalan** · **gloss** (PoS + English sense; see **[glosses.md](
 
 ---
 
-**A:** `jubunexunowen jawavel.`
+**A:** `uzuzuxogoven.`
 
-gloss: `j-Ubunexunowen` · `j-greeting`
+gloss: `Uzuzuxogoven`
 
-strict: *Ubunexunowen! Hello.*
+strict: *Uzuzuxogoven.* (hello — the speaker is Uzuzuxogoven)
 
-loose: *Ubunexunowen! Hello.*
+loose: *Uzuzuxogoven.*
 
-**B:** `jamadexonogon juzuzuxogoven jaol jawavel.`
+**B:** `ubunexunowen.`
 
-gloss: `j-Amadexonogon` · `j-Uzuzuxogoven` · `j-uptake` · `j-greeting`
+gloss: `Ubunexunowen`
 
-strict: *Amadexonogon, Uzuzuxogoven! Sure — hello.*
+strict: *Ubunexunowen.* (hello — the speaker is Ubunexunowen)
 
-loose: *Amadexonogon, Uzuzuxogoven! Sure — hello.*
+loose: *Ubunexunowen.*
 
 **C:** `jael zamar zam zuzur zam zubur zal guzumum.`
 
@@ -286,7 +286,7 @@ loose: *Ha — we're home.*
 
 | Form | Active sense(s) |
 |------|-----------------|
-| `awave` | greeting |
+| `awave` | wave; acknowledgment |
 | `adeda` / `ogove` | tea / coffee |
 | `erera` | bread |
 | `ogogo` | cook / nourishment |

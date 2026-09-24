@@ -253,7 +253,7 @@ Beginner already used two roots glued with **`x`**, dictionary words with no **`
 |--------|-----|---------|-----|
 | one vowel **`x`** one vowel, then a span ending | [span fence](spans.md) open or close | `daxal` … `xuxul` | vowel **x** vowel |
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxedegel` *a teacher* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
-| name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (hello or calling) | [greeting bid](#greeting-bid) | `azawaxan`; `jululoxen` | vowel on the name |
+| name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | [conversation length](#conversation-length) | `azawaxan`; `jululoxen` | vowel on the name |
 | longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) (on a need) or [ability](intention.md#ability) (on another host) | `vuzunuxel` | extra vowel after the host |
 | full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zabanuxudel`; `gewezexazawan` *Azawan’s left* ([whose left](roles.md#viewpoint-laterals)); `zodunaxalanen` ([multipart names](word-endings.md#phrasal-proper-names)) | **x** ≈ plus |
 
@@ -288,57 +288,77 @@ Use the table above. Read both sides of the first **`x`** in this order:
 - The whole word is **`xuxul`** / **`xuxur`** / **`xuxum`** → a **span** is closing.
 - After the role letter: one vowel, **`x`**, one vowel, then a span ending → a **span** is opening ([spans](spans.md)).
 - After the role letter: one vowel **`a`** / **`e`** / **`u`** / **`o`**, **`x`**, then a longer root → a **role compound** (who does / where it happens / who undergoes / who is told).
-- A name (one root or a [multipart proper name](word-endings.md#phrasal-proper-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a hello or under **`/j/`** → a [greeting bid](#greeting-bid).
+- A name (one root or a [multipart proper name](word-endings.md#phrasal-proper-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a conversation-length bid → [conversation length](#conversation-length).
 - A longer root, then **`x`**, then a single vowel **`a`** / **`e`** / **`o`** / **`u`** → **values** (on a need: `/ɡ/` if you keep the noun, `/w/` immediately before **`gobobum`** if you do not) or **ability** (on another host).
 - Full roots on **both** sides of the first **`x`** (and maybe more **`x`** + root) → an ordinary compound (sense or name).
 
 Role vowels are **`a`** / **`e`** / **`u`** / **`o`**. Span type and edge letters stay single vowels.
 
-### How you show up (name **`x`** vowel)
-<a id="greeting-bid"></a>
+### Conversation length (name **`x`** vowel)
+<a id="conversation-length"></a>
 
-A [greeting](word-endings.md#greeting) is your own name with a period (`azawan.`). [Calling someone](speech-moves.md#vocative) is their name under **`/j/`** (`jululon.`). To say **how** this opening is meant, put **`x`** and one vowel before **-n**. That vowel is about the meeting (stay and talk, a few minutes, one ask, pass by). It is not a grade of the person.
+A [greeting](word-endings.md#greeting) is your own name with a period (`azawan.`). [Calling someone](speech-moves.md#vocative) is their name under **`/j/`** (`jululon.`). Add **`x`** and one vowel before **-n** to say when the conversation will end. At arrival, this sets the expected length. At departure, the same form updates how soon you are leaving. The vowel is about the conversation, not a grade of the person.
 
-On your own name, it is how you arrive. When you call them, it is how you address them.
+On your own name, it says how long you expect to stay. At departure, use the reduced level that matches how soon you are leaving.
 
 > `azawaxan.`
 >
 > Azawan-presence
 >
-> "Azawan — I’m here / we can stay."
+> "Azawan — I have time; we can stay."
 
 > `jululoxen.`
 >
 > j-Ululon-minutes
 >
-> "Ululon — a few minutes."
+> "Ululon — I have a few minutes."
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`…xan`** | presence | *I’m here / we can stay* | **a** ≈ add (time is in) |
-| **`…xen`** | minutes | *got a few minutes?* | **e** ≈ order (the slot has an end) |
-| **`…xon`** | one slot | *one ask/comment* | **o** ≈ one |
-| **`…xun`** | pass | *just passing* (acknowledge; don’t open talk) | **u** ≈ undo (lift the talk) |
+| Form | At arrival | At departure | Cue |
+|------|------------|--------------|-----|
+| **`…xan`** | open-ended: *we can stay* | — | **a** ≈ add (time is in) |
+| **`…xen`** | a few minutes: *I have a little time* | leaving soon | **e** ≈ order (the slot has an end) |
+| **`…xon`** | one slot: *one ask/comment* | about to leave | **o** ≈ one (one last slot) |
+| **`…xun`** | passing: *just acknowledging; not opening a talk* | leaving right now | **u** ≈ undo (lift the talk) |
 
-Only one of these vowels per name. You can still pair your arrival with calling them (`azawaxan jululoxon`). **-n** is still the [named](word-endings.md#named-n-beginner) ending.
+Only one of these vowels per name. These forms use the same scale throughout a conversation: a smaller level narrows the remaining time. **-n** is still the [named](word-endings.md#named-n-beginner) ending.
 
-The other person answers with a greeting bid too. The **lesser** bid is the one that holds for the talk: **a** (stay) is more than **e** (a few minutes), **e** is more than **o** (one ask), **o** is more than **u** (passing). If Azawan offers stay and Ululon answers with one ask, they have one ask.
+At arrival, the other person can answer with their own bid. The **lesser** bid sets the shared limit: **a** (open-ended) is more than **e** (a few minutes), **e** is more than **o** (one slot), and **o** is more than **u** (passing). If Azawan offers open-ended time and Ululon offers one slot, they have one slot.
 
 > `azawaxan.`
 >
 > Azawan-presence
 >
-> "Azawan — I’m here / we can stay."
+> "Azawan — I have time; we can stay."
 
 > `ululoxon.`
 >
-> Ululon-ask
+> Ululon-one-slot
 >
-> "Ululon — one ask." (the talk is one ask)
+> "Ululon — one slot." (the talk lasts for one ask)
 
-**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (`vuzunuxel` *can’t sing right now*). On a [need](values.md) it is a value stance. Greeting bids sit on a **named** hello or a **`/j/`** call, with **-n**.
+**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (`vuzunuxel` *can’t sing right now*). On a [need](values.md) it is a value stance. Conversation-length bids sit on a **named** citation or a **`/j/`** call, with **-n**.
 
-**Not the same job as:** **`jawavel`** (wave / *hello* as an interjection). The bid sits on the **person**.
+**Compare with:** a plain named citation with a period is the basic hello (`azawan.`). The bid says how much conversation the person is open to.
+
+At departure, use your own name with the reduced level:
+
+> `azawaxen.`
+>
+> Azawan-minutes
+>
+> "Azawan — I’m leaving soon."
+
+> `azawaxon.`
+>
+> Azawan-ask
+>
+> "Azawan — I’m about to leave."
+
+> `azawaxun.`
+>
+> Azawan-pass
+>
+> "Azawan — I’m leaving now."
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -358,7 +378,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vejel` | `ejel` *eye* |
 | *scream* | `azagal` | |
 | *punch* | `ubunul` | |
-| *wave* | `jawavel` | `awavel` *wave* |
+| *wave* | `awavel` | |
 
 #### English → Agalan
 
@@ -486,12 +506,14 @@ Azawan-presence | j-Uhubun-ask
 *Azawan — I’m here. Uhubun — one ask.* (calling)
 :::
 
-**7.** `jawavel.`
+**7.** *Hello — the speaker is Azawan.*
 
 ::: details Show answer
 
-j-greeting
-*Wave!* (not a greeting bid on a name)
+`azawan.`
+
+Azawan
+*Azawan.* (hello — the speaker is Azawan)
 :::
 
 **8.** `jazawaxen zuhubun dadorolobelel vejel.`
@@ -517,6 +539,6 @@ Azawan-presence | Ululon-minutes
 - **`x`** at the start of a word (keep going): [dependents.md](dependents.md#continue-x)
 - How **`x`** sits in the word shape: [phonology.md](phonology.md#phonotactics)
 - [intention.md#ability](intention.md#ability) / [values.md](values.md) / [roles.md](roles.md) / [numeric-derivation.md](numeric-derivation.md)
-- Greeting bid: [how you show up](#greeting-bid); bare hello: [word-endings.md](word-endings.md#greeting)
+- Conversation length: [name **`x`** vowel](#conversation-length); bare hello: [word-endings.md](word-endings.md#greeting)
 - Short office names vs long titles: [word-endings.md](word-endings.md#named-handles)
 - Extra-noun fuse on a citation: [hooks.md](hooks.md#hook-compounds)

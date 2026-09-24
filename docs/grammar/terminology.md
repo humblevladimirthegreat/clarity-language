@@ -421,11 +421,11 @@ Whole root + **-r** vs prefix through the second vowel.
 
 [Pronouns](pronouns.md)
 
-### Greeting / greeting bid
+### Greeting / conversation length
 
-A named citation as a hello (`azawan.`). Mid-word **`x`** plus **`a`** / **`o`** / **`e`** / **`u`** on that citation or on a vocative marks presence, one ask, *a few minutes*, or passing. The other person answers with a bid; the lesser bid holds (**a** stay > **e** a few minutes > **o** one ask > **u** pass).
+A named citation is a hello (`azawan.`). Add mid-word **`x`** plus **`a`** / **`o`** / **`e`** / **`u`** to say how long the conversation is expected to last: open-ended, a few minutes, one ask, or passing. At departure, **`xen`** means leaving soon, **`xon`** about to leave, and **`xun`** leaving now. When people set different lengths at arrival, the lesser bid holds.
 
-[Word endings](word-endings.md#greeting) · [X-compounds](x-compounds.md#greeting-bid)
+[Word endings](word-endings.md#greeting) · [X-compounds](x-compounds.md#conversation-length)
 
 ### Hold
 

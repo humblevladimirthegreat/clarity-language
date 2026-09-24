@@ -45,15 +45,15 @@ When the word is a **name** (this person or this place, not a kind of thing), en
 ### Greeting
 <a id="greeting"></a>
 
-You can **say** a named citation as a hello: offer your own name, with a period. That is how you walk in. The spelling is the same name you just wrote (`azawan`); there is no extra first letter.
+You can **say** a named citation with a period to greet someone or to say a simple goodbye. In either case, offer your own name. At the start, that is how you walk in; at the end, it is how you leave. The spelling is the same name you just wrote (`azawan`); there is no extra first letter.
 
 > `azawan.`
 >
 > Azawan
 >
-> "Azawan." (hello — the speaker is Azawan)
+> "Azawan." (hello or goodbye — the speaker is Azawan)
 
-**Compare with:** the same citation in a list or heading has no period and is not a greeting.
+**Compare with:** the same citation in a list or heading has no period and is not a greeting or goodbye.
 
 ### The three endings
 

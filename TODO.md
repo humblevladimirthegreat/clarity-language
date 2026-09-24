@@ -5,7 +5,6 @@ redirects settings: https://us-east-2.console.aws.amazon.com/amplify/apps/d2xds9
 my name: obogan (innovation)
 
 # TODO
-Define goodbye (assertiveness for meeting again? need met, name reminder?)
 consider new consonant (th) used for new pos, used instead of x for some x-compounds or different type of compounding? maybe could be used as plural ending?
 
 finish English->Agalan cheat sheets, including tense

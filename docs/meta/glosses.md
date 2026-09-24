@@ -328,7 +328,6 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 | Agalan | Morph gloss | Free English (separate) |
 |---------|-------------|-------------------------|
-| `jawavel` | `j-greeting` | *Hello.* |
 | `azawan.` | `Azawan` | *Azawan.* (hello) |
 | `jululoxen` | `j-Ululon-minutes` | *Ululon — a few minutes.* |
 | `jael` | `j-yes` | *Yes.* |

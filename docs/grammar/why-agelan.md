@@ -163,7 +163,7 @@ Keeping those forks apart helps you stop treating wishes and habits as if the wo
 
 English *hi* hides whether you can stay, whether this is a few minutes, whether this is one ask, or whether you are only passing.
 
-A [greeting](word-endings.md#greeting) is your name as a citation (`azawan.`). Calling someone is a [vocative](speech-moves.md#vocative). A [greeting bid](x-compounds.md#greeting-bid) adds one vowel: presence, a few minutes, one slot, or passing. The other person answers with a bid; the **lesser** bid is the one that holds. The overlay names the **encounter**.
+A [greeting](word-endings.md#greeting) is your name as a citation (`azawan.`). Calling someone is a [vocative](speech-moves.md#vocative). A [conversation-length bid](x-compounds.md#conversation-length) adds one vowel to your name: open-ended, a few minutes, one slot, or passing. The other person can answer with their own bid; the **lesser** bid sets the shared limit. At departure, the same form says whether you are leaving soon, about to leave, or leaving now. The overlay names the **encounter**.
 
 Marking the opening that way helps you consent to the talk without treating a wave as a blank check on time.
 

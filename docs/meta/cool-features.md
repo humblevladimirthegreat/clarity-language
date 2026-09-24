@@ -52,13 +52,13 @@ How you **know** a world-claim (live look, memory, hearsay, …) is a different 
 
 Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/knowing.html#may
 
-### Greetings Say How Long the Conversation Is
+### Greetings and Goodbyes Set Conversation Length
 
-When someone starts a conversation with you, you're not sure how long of a conversation you're signing up for.
+The name-based greeting can set an expected conversation length. At departure, the same form with a reduced level says how soon you are leaving.
 
-In Agalan, the basic greeting is your name (so people remember it more easily) plus an optional suffix for how much talking you're open to right now.
+The basic greeting is your name, with an optional ending that says how much time you have:
 
--xan /ʒɑn/: conversation - "Let's talk!"
+-xan /ʒɑn/: open-ended - "Let's talk!"
 
 -xen /ʒe̞n/: brief chat - "Got a few minutes?"
 
@@ -66,9 +66,11 @@ In Agalan, the basic greeting is your name (so people remember it more easily) p
 
 -xun /ʒʌn/: just passing - "Hey." (acknowledge then continue on)
 
+At departure, use the reduced level: **-xen** means *leaving soon*, **-xon** means *about to leave*, and **-xun** means *leaving right now*.
+
 The person responds likewise with their name and the suffix for their own preferred level of conversation. The lower level wins - if the initiator wants -xan but is responded to with -xen then they know to keep it brief.
 
-Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/x-compounds.html#greeting-bid
+Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/x-compounds.html#conversation-length
 
 ### Pronouns Copy the Start of the Noun
 
