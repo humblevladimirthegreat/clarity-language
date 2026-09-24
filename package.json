@@ -13,11 +13,11 @@
   },
   "scripts": {
     "generate:word": "peggy --format es --dts --allowed-start-rules start,words,probe_spanClose,probe_writingSpan,probe_freeNumber,probe_hook,probe_prefixedWord,probe_citation,probe_prefixedX,probe_prefixedPlain,probe_prefixedJoin -o src/generated/word-parser.js src/parse/word.peggy",
-    "build": "npm run generate:word && tsc && mkdir -p dist/generated && cp src/generated/word-parser.js src/generated/word-parser.d.ts dist/generated/",
+    "build": "npm run generate:word && npm run typecheck && tsc && mkdir -p dist/generated && cp src/generated/word-parser.js src/generated/word-parser.d.ts dist/generated/",
     "dev": "node scripts/fetch-kitten-tts.mjs && vitepress dev docs/grammar",
     "typecheck": "tsc --noEmit",
     "lint:agalan": "tsx scripts/lint-agalan-docs.ts",
-    "docs:build": "node scripts/lint-md-balance.mjs && tsx scripts/pad-exercise-spoiler-blanks.ts && tsx scripts/lint-sidebar-pages.ts && tsx scripts/lint-agalan-docs.ts && eslint docs/grammar/.vitepress/components && npm run docs:publish",
+    "docs:build": "npm test && node scripts/lint-md-balance.mjs && tsx scripts/pad-exercise-spoiler-blanks.ts && tsx scripts/lint-sidebar-pages.ts && tsx scripts/lint-agalan-docs.ts && eslint docs/grammar/.vitepress/components && npm run docs:publish",
     "docs:publish": "node scripts/fetch-kitten-tts.mjs && vitepress build docs/grammar && tsx scripts/publish-docs-extras.mjs",
     "docs:preview": "vitepress preview docs/grammar",
     "fetch:tts": "node scripts/fetch-kitten-tts.mjs",
