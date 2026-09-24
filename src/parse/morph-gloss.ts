@@ -929,7 +929,10 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
   }
 
   if (word.reading === "joinAct") return JOIN_ACT[series] ?? "join-act";
-  if (word.reading === "joinRelation") return JOIN_RELATION[series] ?? "join-relation";
+  if (word.reading === "joinRelation") {
+    if (word.pos === "h" && series === "u") return "refusing";
+    return JOIN_RELATION[series] ?? "join-relation";
+  }
 
   if (word.pos === "j") {
     if (series.length === 1) {

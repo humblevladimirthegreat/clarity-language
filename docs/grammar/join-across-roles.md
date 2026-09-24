@@ -16,10 +16,8 @@ When English would walk through events in time (*and then*), put ending **-n** o
 |--------|-----|---------|-----|
 | `xan` | sequence add | *and then…* | **a** ≈ add |
 | `xon` | sequence menu | *or maybe…* | **o** ≈ one |
-| `xun` | sequence deny | soft *not* / *none of… as I recall…* | **u** ≈ undo |
+| `xun` | sequence deny | *and then not…* | **u** ≈ undo |
 | `xaon` | sequence inclusive | *and/or maybe…* | **ao** ≈ add then one |
-| `xuan` / `xuon` | sequence invert | soft complement inventory / free choice | **ua** / **uo** |
-| `xen` / `xaen` / `xoen` / `xuen` | sequence rank | soft ranked / tie / exclusive / reversal | **e** / **ae** / **oe** / **ue** |
 
 The `/x/` forms are clause joins; **-n** under `/v/`, `/ɡ/`, and `/h/` makes join-derived content words. See [join-act verbs](#join-act-verbs) and [join-relations](#join-relations) for those forms. Ordinary content **-n** still [names](word-endings.md#proper-name--n) a person or titled frame.
 
@@ -28,7 +26,7 @@ The `/x/` forms are clause joins; **-n** under `/v/`, `/ɡ/`, and `/h/` makes jo
 <a id="vowels--endings"></a>
 <a id="ending-senses-clause-joins"></a>
 
-Beginner already used `vam` and `xam`. The same vowels and **-l** / **-m** / **-r** endings work under `/v/`, `/x/`, and stance `/th/` ([stance joins](#stance-joins)). Clause **-n** forms are in [Sequence](#sequence); `/v/` **-n** forms are [join-act verbs](join-across-roles.md#join-act-verbs).
+[Joins](joins.md#beginner) already used `vam` and `xam`. The same vowels and **-l** / **-m** / **-r** endings work under `/v/`, `/x/`, and stance `/th/` ([stance joins](#stance-joins)). Clause **-n** forms are in [Sequence](#sequence); `/v/` **-n** forms are [join-act verbs](join-across-roles.md#join-act-verbs).
 
 | | **-l** | **-m** | **-r** |
 |---|--------|--------|--------|
@@ -83,7 +81,7 @@ When English would deny or weigh **how you stand** toward a claim (*not because�
 ### Join-act verbs
 <a id="join-act-verbs"></a>
 
-When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*), write that move as a verb: first letter **`v`**, the same join vowel you already use on lists, and ending **-n** (`van`, `von`, …). The object is one `/d/` word (one thing or a group). You can now name the act itself instead of only packing a list. On these verbs, **-n** is join content, not a [proper name](word-endings.md#proper-name--n). Put ordinary noun **-x** on the object when the group is associative; verb **-x** is [collective](plurality.md#verbs-v).
+When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*), write that move as a verb: first letter **`v`**, the same join vowel you already use on lists, and ending **-n** (`van`, `von`, …). The object is one `/d/` phrase: one thing, or a group packed with a [phrase join](joins.md). You can now name the act itself instead of only packing a list. On these verbs, **-n** is join content, not a [proper name](word-endings.md#proper-name--n). Put ordinary noun **-x** on the object when the group is associative; verb **-x** is [collective](plurality.md#verbs-v).
 
 > `zazawan dabelel van.`
 >
@@ -147,7 +145,7 @@ For several members or an empty domain, put a [phrase join](joins.md) **inside**
 | **`gan` / `han`** | `/ɡ/` noun or `/h/` event toward `/b/` | *including / with* | **a** ≈ add (hold the extra member) | `zuragel gan babanul`; `zazawan han bululon vawalal` |
 | **`gon` / `hon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *exclusive for* (sole pick); `/h/` *exclusively for / as the one* | **o** ≈ one (lock that pick) | `zahadam gon bazawan`; `… hon bazawan vawalal` |
 | **`gaon` / `haon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to* (more may follow); `/h/` *among options* | **ao** ≈ add + one (admit, still open) | `zuragel gaon babanul`; `… haon babanul vawalal` |
-| **`gun` / `hun`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *against / anti-*; `/h/` *refusing* | **u** ≈ undo (reject that member) | `zuragel gun babanul`; `… hun bememal` |
+| **`gun` / `hun`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *against / anti-*; `/h/` *refusing* | **u** ≈ undo (reject that member) | `zuragel gun babanul`; `… hun bememal vawalal` |
 | **`guan` / `huan`** | `/ɡ/` or `/h/` toward `/b/` | *without / excluding* | **ua** ≈ undo + add (leave that member out) | `zuragel guan babanul`; `… huan babanul vawalal` |
 | **`guon` / `huon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to anything but*; `/h/` *barring / anything but* | **uo** ≈ undo + one (bar that one; rest free) | `zunudel guon babanul`; `… huon babanul vawalal` |
 | **`gen` / `hen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *prioritizing / headed by*; `/h/` *prioritizing* | **e** ≈ order (put this first) | `zuzebul gen babugul`; `… hen babugul vewenem` |
@@ -173,9 +171,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| *play* | `dalalol` | `alalol` *play* |
 | *finish-line* | `dunuhul` | `unuhul` *finish-line* |
-| *hand* | `ahanal` | |
 | *teamwork* | `ahadam` | `ahadal` *handball* |
 | *trophy* | `odobol` | |
 | *medal* | `emedal` | |
@@ -186,12 +182,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agalan
 
-**1.** *Azawan includes the play (the start).*
+**1.** *Azawan includes the medal.*
 
 ::: details Show answer
-`zazawan dalalol van.`
+`zazawan demedal van.`
 
-z-Azawan | d-play | v-includes
+z-Azawan | d-medal | v-includes
 :::
 
 **2.** *The finish line, including Uhubun.*
@@ -202,12 +198,12 @@ z-Azawan | d-play | v-includes
 z-finish-line | [g-including | b-Uhubun]
 :::
 
-**3.** *Azawan chooses the hand (as the one choice).*
+**3.** *Azawan chooses the medal (as the one choice).*
 
 ::: details Show answer
-`zazawan dahanal von.`
+`zazawan demedal von.`
 
-z-Azawan | d-hand | v-choose
+z-Azawan | d-medal | v-choose
 :::
 
 **4.** *Ululon runs with Uhubun.*
@@ -242,23 +238,23 @@ z-teamwork | [g-exclusive-for | b-Uhubun]
 z-Ululon | [v-run | v-punch | v-and.open]
 :::
 
-**8.** *Ululon punches, refusing the hand.*
+**8.** *Ululon runs, refusing the medal.*
 
 ::: details Show answer
-`zululon hun bahanal vubunul.`
+`zululon hun bemedal vurunul.`
 
-z-Ululon | [h-against | b-hand] | v-punch
+z-Ululon | [h-refusing | b-medal] | v-run
 :::
 
 #### Agalan → English
 
-**1.** `zuhubun dalalol van.`
+**1.** `zuhubun dodobol van.`
 
 ::: details Show answer
 
-z-Uhubun | d-play | v-includes
+z-Uhubun | d-trophy | v-includes
 
-*Uhubun includes the play (the start).*
+*Uhubun includes the trophy.*
 :::
 
 **2.** `zunuhul guan bemedal.`
@@ -301,7 +297,7 @@ z-teamwork | [g-including | b-Azawan]
 
 ::: details Show answer
 
-z-Azawan | [h-against | b-lie] | v-run
+z-Azawan | [h-refusing | b-lie] | v-run
 
 *Azawan runs, refusing a lie.*
 :::
@@ -329,4 +325,4 @@ z-Ululon | [h-anything-but | b-Uhubun] | v-scream
 - List joins (right-close fence): [joins.md](joins.md)
 - Causal readings of open / without: [causation.md](causation.md)
 - Prefix-less *including* / *instead*: [hooks.md](hooks.md)
-- Clause *with* a tool: [clause.md](relations.md#means)
+- *Using* a tool: [hooks.md](hooks.md#extra-noun)

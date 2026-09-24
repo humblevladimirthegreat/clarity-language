@@ -9,7 +9,8 @@ sample complex sentence: jael zugobon zam zedonen zal guzumum. zadedal zogovel z
 # TODO
 
 Prosody
-
+reconsider comparative zel vs zuel. The sensible meaning differs from ordinal vs cardinal
+reconsider zoel vs zel comparative. Currently zoel mean s same as zel. Maybe zoel means "this one first, then others equal priority"?
 consider removing some emotion words from lexicon
 
 do a grammar-docs/ consistency check. Does anything about the grammar seem incorrect, confusing, meaningless, or counterintuitive?
@@ -29,7 +30,7 @@ save for cursor:
 -Cheat sheet for joins and hooks
 -join vowel decision tree in advanced vowel series.
 -suggest words to fill in remaining abstract lexicon. use for useful english words, don't fill just to fill.
--ensure lexicon consistency
+-ensure lexicon consistency - are there conflicts with special forms, or do some words mean the same as another?
 -mass lexical compound adding
 
 Dictionary entries (open lexicon / concepts — not the closed list above):

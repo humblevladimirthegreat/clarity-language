@@ -1,6 +1,6 @@
 # Grammar consistency audit
 
-Editors only — not linked from grammar pages. Tracks which `docs/grammar/` pages have been checked for incorrect, confusing, meaningless, or counterintuitive grammar. If examples are non-sensicle, choose better examples. Fix what is obviously wrong. Ask about less clear cases.
+Editors only — not linked from grammar pages. Tracks which `docs/grammar/` pages have been checked for incorrect, confusing, meaningless, or counterintuitive grammar. If examples are non-sensicle, choose better examples. Fix what is obviously wrong. Ask about less clear cases with your recommendation.
 
 Status: `[x]` full pass · `[~]` partial (sections listed) · `[ ]` not started.
 
@@ -43,11 +43,11 @@ Audit in waves; each wave treats earlier waves as settled. Pages within a wave a
 
 | Status | Page | Covered | Date |
 |--------|------|---------|------|
-| [ ] | `comparatives.md` |  |  |
-| [ ] | `join-across-roles.md` |  |  |
-| [ ] | `relations.md` |  |  |
-| [ ] | `numbers-applied.md` |  |  |
-| [ ] | `numeric-derivation.md` |  |  |
+| [x] | `comparatives.md` | all | 2026-09-24 |
+| [x] | `join-across-roles.md` | all | 2026-09-24 |
+| [x] | `relations.md` | all | 2026-09-24 |
+| [x] | `numbers-applied.md` | all | 2026-09-24 |
+| [x] | `numeric-derivation.md` | all | 2026-09-24 |
 
 ### Wave 4 — meaning and mood
 
@@ -99,3 +99,9 @@ Audit in waves; each wave treats earlier waves as settled. Pages within a wave a
 - **`A ol B` = *B instead of A*** — the left item is the one replaced.
 - **Restrictor occasions are times or cases, never places.** Places go in extra-noun hooks.
 - **A clause-scoped span open (EDGE `e`) runs to clause end,** so the verb comes before it.
+- **Phrase joins are written right-close everywhere,** including single-item thresholds and range members: items, then the join, then the SHARED `/ɡ/` (`z+5 zem`, `z+3 … zar gurulel`).
+- **Measured comparative gaps use a measurable scale plus a published unit** (`godowem bedurem g+2`), never an abstract quality.
+- **An unspecified date is `h_#`;** bare `h_` is an unspecified clock time.
+- **"Departure" is `vebarul` / `bebarul`;** `-m` `ebarum` means *abandonment*.
+- **Locative *in* / *on* / *at* / *from* / *using* are extra-noun hooks,** never hosted relation roots or join-relations (tool *using* = `ael`, not `han`).
+- **Join-act verbs take one `/d/` phrase;** a phrase-join group counts as one phrase.

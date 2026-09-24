@@ -64,7 +64,7 @@ On a noun, the same root is **`guhanem`** (`dabogol guhanem bahamel` *a book for
 <a id="proxy"></a>
 <a id="on-behalf-of"></a>
 
-When English says someone **acts as another person’s agent** (*tells on behalf of Ululon*), keep the same hosted pair as [*inside*](clause.md#extra-nouns). The relation word is **`hudagam`**. Put that person in `/b/` right after it. The subject still does the act; `/b/` is whose agency they use, not who hears the telling. (cue: 🪪 *id-card*: the card stands as an authorized face; `/b/` is that person)
+When English says someone **acts as another person’s agent** (*tells on behalf of Ululon*), keep the same hosted pair as [*like*](#similative). The relation word is **`hudagam`**. Put that person in `/b/` right after it. The subject still does the act; `/b/` is whose agency they use, not who hears the telling. (cue: 🪪 *id-card*: the card stands as an authorized face; `/b/` is that person)
 
 > `zazawan hudagam bululon vezehel.`
 >
@@ -144,13 +144,13 @@ z-Uhubun | [h-like | b-duck] | v-walk
 *Uhubun walks like a duck.*
 :::
 
-**2.** `zazawan hurorom budugul vawalal.`
+**2.** `zuhubun hudagam bazawan vuwurul.`
 
 ::: details Show answer
 
-z-Azawan | [h-like | b-duck] | v-walk
+z-Uhubun | [h-on-behalf-of | b-Azawan] | v-write
 
-*Azawan walks like a duck.*
+*Uhubun writes on behalf of Azawan.*
 :::
 
 **3.** `zululon vuwurul huhanem bonenol.`
@@ -162,13 +162,13 @@ z-Ululon | v-write | [h-in-exchange-for | b-money]
 *Ululon writes in exchange for money.*
 :::
 
-**4.** `zazawan hudagam bululon vezehel.`
+**4.** `zazawan hudagam bululon buhubun vezehel.`
 
 ::: details Show answer
 
-z-Azawan | [h-on-behalf-of | b-Ululon] | v-tell
+z-Azawan | [h-on-behalf-of | b-Ululon] | b-Uhubun | v-tell
 
-*Azawan tells on behalf of Ululon.*
+*Azawan tells Uhubun on behalf of Ululon.*
 :::
 
 
@@ -216,13 +216,13 @@ Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extr
 >
 > "Ululon sits between a train and a station."
 
-Ordinary `zazanul` is still *a sandwich*. Ordinary `vebarul` is still *to depart*.
+Ordinary `zazanul` is still *a sandwich*.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hazanum` / `gazanum`** | figure in the layer of two landmarks | *between* | `azanul` *sandwich* | 🥪: the filling sits between two sides |
 
-**Compare with:** unhosted `/b/` is still the recipient. Numeric *from 3 to 5* is a [range](numbers-applied.md#ranges). *Like* is [simile](#similative). *For a hammer* as a swap is [exchange](#exchange). *On behalf of Ululon* is [proxy](#proxy). *So that Ululon sits* is [so that](dependents.md#so-that) (`holalam`). English *of* that is not a place is [of relations](#of-relations).
+**Compare with:** unhosted `/b/` is still the recipient. Numeric *from 3 to 5* is a [range](numbers-applied.md#ranges). *Like* is [simile](#similative). *For a hammer* as a swap is [exchange](#exchange). *On behalf of Ululon* is [proxy](#proxy). English *of* that is not a place is [of relations](#of-relations).
 
 ### Of relations (*part of*, *cup of*, *made of*, *from*)
 <a id="of-relations"></a>
@@ -256,7 +256,7 @@ English *of* also names how one noun sits toward another (*a hand of Ululon*, *a
 
 On an event, the same roots are `/h/` (`zazawan vagara howodom bowodol` *Azawan crafts of wood*; `zululon vawalal hugunom bolunel` *Ululon walks, originating from the city*). The same roots stay ordinary pictures under other letters (`zobonel` *a bone*; `zajaral` *a jar*; `zowodol` *wood*; `zugunol` *a country*).
 
-Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is locative *inside*, not `gajaram`.
+Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in* hook (`al`), not `gajaram`.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -265,7 +265,7 @@ Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is locativ
 | **`howodom` / `gowodom`** | constitution | *made of* | `owodol` *wood* | 🪵: the stuff the thing is made of |
 | **`hugunom` / `gugunom`** | identity source / provenance | *from* (origin) | `ugunol` *country* | 🗾: a map of one country as where it comes from |
 
-**Compare with:** ownership is `goborum` + `/b/` ([joins](joins.md#scope-fence-p-join)). A [values](values.md) need on `/ɡ/` also means speaker possession. Place *inside* is `ogore`; path *from* is `ebaru` ([locative relations](#locative-relations)). *A house like Azawan’s* is [simile](#similative) (`gurorom`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`guhanem`). Portion *of* a class is [percent](numbers-applied.md#percent-denominators). Associates are plural **-x**, not meronymy. Kind *origin* (`ROOTl#e-`) is [numeric derivation](numeric-derivation.md), not this token *from*.
+**Compare with:** ownership is `goborum` + `/b/` ([joins](joins.md#scope-fence-p-join)). A [values](values.md) need on `/ɡ/` also means speaker possession. Place *in* is the hook `al`; path *from* is the hook `ul` ([locative relations](#locative-relations)). *A house like Azawan’s* is [simile](#similative) (`gurorom`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`guhanem`). Portion *of* a class is [percent](numbers-applied.md#percent-denominators). Associates are plural **-x**, not meronymy. Kind *origin* (`ROOTl#e-`) is [numeric derivation](numeric-derivation.md), not this token *from*.
 
 
 
@@ -377,9 +377,9 @@ English *as of Friday*, *would*, *was going to*, and *if he had* mix **when the 
 
 Write a hosted pair for that second now. Asserted whose-now (a real dated line in the books) is **`helerem`**. Unasserted whose-now (a placeholder you are not claiming) is **`hobomam`**. Put the snapshot in `/b/` immediately after. The default with no pair is speech-now. (cue: 📒 *ledger* stamps a dated line; 🔖 *bookmark* holds the place without stamping)
 
-> `zululon thonenom helerem b_#22,7 vebarum.`
+> `zululon thonenom helerem b_#22,7 vebarul.`
 >
-> z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment
+> z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 >
 > "As of 22 July, Ululon had still left."
 
@@ -391,9 +391,9 @@ Write a hosted pair for that second now. Asserted whose-now (a real dated line i
 
 A later `/x/` clause is a new host. To keep the same books, write the **same overlay** with **-r** and no `/b/` (`helerer` / `hobomar`). A new `/b/` replaces whose-now, including a switch of overlay. One host takes at most one *as-of* pair.
 
-> `zululon thonenom helerem b_#22,7 vebarum. xazawan thonenom helerer vawalal.`
+> `zululon thonenom helerem b_#22,7 vebarul. xazawan thonenom helerer vawalal.`
 >
-> z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment . x-Azawan | th-RESIDUE | h-as-of.ledger | v-walk
+> z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | th-RESIDUE | h-as-of.ledger | v-walk
 >
 > "As of 22 July, Ululon had still left. Azawan had still walked — same books."
 
@@ -411,33 +411,33 @@ Once whose-now is set, [PREDICT](intention.md#predict) is **after** that now, [P
 >
 > "As of 22 July, Azawan is more challenging than Ululon." — `/w/` does not retarget the verb
 
-> `zonenol thonenom helerem bebarum.`
+> `zonenol thonenom helerem bebarul.`
 >
-> z-money | th-RESIDUE | [h-as-of.ledger | b-abandonment]
+> z-money | th-RESIDUE | [h-as-of.ledger | b-departure]
 >
 > "As of the leaving, the money still stood."
 
-> `zazawan helerem b_#22,7 hababam bebarum vajul al bohohul.`
+> `zazawan helerem b_#22,7 hababam bebarul vajul al bohohul.`
 >
-> z-Azawan | [h-as-of.ledger | b-_22,7] | [h-before | b-abandonment] | v-sit | [in | b-house]
+> z-Azawan | [h-as-of.ledger | b-_22,7] | [h-before | b-departure] | v-sit | [in | b-house]
 >
 > "As of 22 July, Azawan is in a house before the leaving." — books and event-when are different jobs
 
-> `zululon vawalal ol b_#22,7. xululon thonenom helerem b=_ vebarum.`
+> `zululon vawalal ol b_#22,7. xululon thonenom helerem b=_ vebarul.`
 >
-> z-Ululon | v-walk | [at | b-_22,7] . x-Ululon | th-RESIDUE | [h-as-of.ledger | b-←_22,7] | v-abandonment
+> z-Ululon | v-walk | [at | b-_22,7] . x-Ululon | th-RESIDUE | [h-as-of.ledger | b-←_22,7] | v-departure
 >
 > "Ululon walks on 22 July. As of that date, the leaving still stood."
 
-> `zululon thonenom vebarum helerem barl zululon vezehel.`
+> `zululon thonenom vebarul helerem barl zululon vezehel.`
 >
-> z-Ululon | th-RESIDUE | v-abandonment | [h-as-of.ledger | b-that-clause] | z-Ululon | v-tell
+> z-Ululon | th-RESIDUE | v-departure | [h-as-of.ledger | b-that-clause] | z-Ululon | v-tell
 >
 > "As of when Ululon told it, the departure still stood." — the telling sentence is whose-now, not leftover
 
-> `zululon thonenom helerem b_#22,7 vebarum. xazawan thelezom hobomam b_#23,7 vawalal.`
+> `zululon thonenom helerem b_#22,7 vebarul. xazawan thelezom hobomam b_#23,7 vawalal.`
 >
-> z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment . x-Azawan | th-predict | [h-as-of.bookmark | b-_23,7] | v-walk
+> z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | th-predict | [h-as-of.bookmark | b-_23,7] | v-walk
 >
 > "As of 22 July, Ululon had still left. From a 23 July placeholder, Azawan would walk." — a new pair replaces whose-now
 
@@ -465,7 +465,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The hos
 | *Azawan* | `azawan` |
 | *Ululon* | `ululon` |
 | *Uhubun* | `uhubun` |
-| *departure* | `vebarum` |
+| *departure* | `vebarul` |
 | *sit* | `vajul` |
 | *walk* | `vawalal` |
 | *rain* | `vanunul` |
@@ -483,9 +483,9 @@ Short drills for Advanced. Try each item before opening **Show answer**. The hos
 **1.** *As of 22 July, Ululon had still left.*
 
 ::: details Show answer
-`zululon thonenom helerem b_#22,7 vebarum.`
+`zululon thonenom helerem b_#22,7 vebarul.`
 
-z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment
+z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 :::
 
 **2.** *As of 22 July, Azawan sits in a house.*
@@ -496,7 +496,7 @@ z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment
 z-Azawan | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 :::
 
-**3.** *From then, it would rain.*
+**3.** *Taking 22 July as now (a placeholder), it would rain.*
 
 ::: details Show answer
 `thelezom hobomam b_#22,7 vanunul.`
@@ -523,18 +523,18 @@ z-money | [g-as-of.ledger | b-_22,7]
 **6.** *As of the leaving, the money still stood.*
 
 ::: details Show answer
-`zonenol thonenom helerem bebarum.`
+`zonenol thonenom helerem bebarul.`
 
-z-money | th-RESIDUE | [h-as-of.ledger | b-abandonment]
+z-money | th-RESIDUE | [h-as-of.ledger | b-departure]
 :::
 
 #### Agalan → English
 
-**1.** `zululon thonenom helerem b_#22,7 vebarum. xazawan thonenom helerer vawalal.`
+**1.** `zululon thonenom helerem b_#22,7 vebarul. xazawan thonenom helerer vawalal.`
 
 ::: details Show answer
 
-z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment . x-Azawan | th-RESIDUE | h-as-of.ledger | v-walk
+z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | th-RESIDUE | h-as-of.ledger | v-walk
 
 *As of 22 July, Ululon had still left. Azawan had still walked — same books.*
 :::
@@ -554,34 +554,34 @@ z-Uhubun | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 
 th-predict | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | th-predict | h-as-of.bookmark | v-walk
 
-*From then, it would rain. Azawan would walk.*
+*Taking 22 July as now (a placeholder), it would rain. Azawan would walk too, on the same placeholder.*
 :::
 
-**4.** `zonenol gelerem b_#22,7.`
+**4.** `zohohul gelerem b_#23,7.`
 
 ::: details Show answer
 
-z-money | [g-as-of.ledger | b-_22,7]
+z-house | [g-as-of.ledger | b-_23,7]
 
-*The money as of 22 July.*
+*The house as of 23 July.*
 :::
 
-**5.** `zazawan zululon zel welerem b_#22,7 gomonam.`
+**5.** `zululon zazawan zel welerem b_#23,7 gomonam.`
 
 ::: details Show answer
 
-[z-Azawan | z-Ululon | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
+[z-Ululon | z-Azawan | z-rank/more | [[w-as-of.ledger | b-_23,7] | g-challenge]]
 
-*As of 22 July, Azawan is more challenging than Ululon.*
+*As of 23 July, Ululon is more challenging than Azawan.*
 :::
 
-**6.** `zonenol thonenom helerem bebarum.`
+**6.** `zohohul thonenom helerem bebarul.`
 
 ::: details Show answer
 
-z-money | th-RESIDUE | [h-as-of.ledger | b-abandonment]
+z-house | th-RESIDUE | [h-as-of.ledger | b-departure]
 
-*As of the leaving, the money still stood.*
+*As of the leaving, the house still stood.*
 :::
 
 

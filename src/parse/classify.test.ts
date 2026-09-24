@@ -210,7 +210,7 @@ describe("classify", () => {
     const mine = expectReading("zuroron", "mood");
     assert.ok(mine.overlay);
     assert.equal(mine.overlay!.kind, "benchmark");
-    assert.equal(mine.overlay!.gloss, "Mine");
+    assert.equal(mine.overlay!.gloss, "my-standard");
     const everyone = expectReading("zoloben", "mood");
     assert.ok(everyone.overlay);
     assert.equal(everyone.overlay!.senseForm, "oloben");

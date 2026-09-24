@@ -76,7 +76,7 @@ English *quasi-* says something has the **shape or role** of a kind without coun
 
 ###### Quasi-N (`-e-1` / `-e-2`)
 
-When you need *quasi-* plus a **part-count** (as-if one, as-if a pair), add the same strong digit as **`+N`**, written **`-e-N`**: stem **`ru` + `bu` + exponent digit `N`** (bare order-of-magnitude anatomy, no leading digit before the exponent). That is as-if N-structure without treating it as real. Free **`g-e-1`** / **`g-e-2`** are real tiny-scale amounts (−10⁻¹ / −10⁻²), not this kind reading.
+When you need *quasi-* plus a **part-count** (as-if one, as-if a pair), add the same strong digit as **`+N`**, written **`-e-N`**: stem **`ru` + `bu` + exponent digit `N`** (bare order-of-magnitude anatomy, no leading digit before the exponent). That is as-if N-structure without treating it as real. Free **`g-e-1`** / **`g-e-2`** are real negative amounts in the OoM −1 / −2 bands, not this kind reading.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -89,11 +89,12 @@ When you need *quasi-* plus a **part-count** (as-if one, as-if a pair), add the 
 | **`ROOTl-2`** | privative: non-reciprocal / one-sided |
 | **`ROOTl-e-2`** | quasi-dual: mutuality *as if* / imaginary duality |
 | **`ROOTl-e-`** | general quasi (N unnamed) |
-| **`g-e-2`** | free real −10⁻² (bare order of magnitude) |
+| **`g-e-2`** | free real negative amount, OoM −2 band |
 
 For a zero-shaped quasi, use **`ROOTl-0`** (anti-null) or **`ROOTl-0e-`** (micro-residue). Same role-letter framing as bare quasi.
 
 ### Scalar digit morphs (`+N` / `-N`)
+<a id="scalar-digit-morphs"></a>
 
 English *a pair of…*, *three-part…*, *primary…* can name **how many parts the kind has**, not how many tokens sit in the clause. Attach a single-digit plus stem after that join. Tables use marker shorthand (**`+N`** / **`-N`**). Speech is marker + digit (`ra`+`wo` for `+1`, `ru`+`wo` for `-1`, …), so the marker vowel is part of the stem. Real words are always spelled CV (`…lrawol`). Writing **`+0`…`+9`** uses the strong readings below; **`-N`** (including **`-0`**) is the **privative** of that reading (lacks / undoes / inverse of the `+N` structure).
 
@@ -317,12 +318,12 @@ z-Uhubun | d-factory-l-one | v-see
 z-Azawan | d-gold-l-quasi | v-pour
 :::
 
-**4.** *Ululon hammers a first-order fire.*
+**4.** *Ululon pours a first-class gold.*
 
 ::: details Show answer
-`zululon durelrewol vahamel.`
+`zululon dologolrewol vorurul.`
 
-z-Ululon | d-fire-l-1st | v-hammer
+z-Ululon | d-gold-l-1st | v-pour
 :::
 
 **5.** *Ululon annihilates the gold-kind.*
@@ -353,31 +354,31 @@ z-Azawan | d-fire-l-origin | v-see
 *Azawan sees fire in its beginning form.*
 :::
 
-**3.** `zululon dahamelrudul vejel.`
+**3.** `zululon davagalrarel vejel.`
 
 ::: details Show answer
 
-z-Ululon | d-hammer-l-minus-two | v-see
+z-Ululon | d-factory-l-three | v-see
 
-*Ululon sees a one-sided hammer.*
+*Ululon sees a three-part factory.*
 :::
 
-**4.** `zululon vemelelruzol.`
+**4.** `zululon vurelruzol.`
 
 ::: details Show answer
 
-z-Ululon | v-melt-l-minus-zero
+z-Ululon | v-fire-l-minus-zero
 
-*Ululon refuses to zero the melt.*
+*Ululon refuses to let the fire go to zero.*
 :::
 
-**5.** `zululon vurelrezobal.`
+**5.** `zululon durelrebal vejel.`
 
 ::: details Show answer
 
-z-Ululon | v-fire-l-last-place
+z-Ululon | d-fire-l-telos | v-see
 
-*Ululon disqualifies the fire-kind.*
+*Ululon sees fire in its final form.*
 :::
 
 ## See also

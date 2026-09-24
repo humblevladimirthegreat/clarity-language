@@ -241,7 +241,7 @@ Beginner already used two names plus **`zel`** (*more … than*) and one name (*
 | Agalan | Use | English | Cue |
 |---------|-----|---------|-----|
 | **Multi (2+)** + shared scale under **`e` / `oe` / `ue`** | comparative ladder | earlier above later (`e` / `oe`); later above earlier under **`ue`** | **`e`** ≈ order; **`oe`** exclusive order; **`u`** ≈ undo |
-| **Single-item (1)** + shared scale under **`e` / `ue`** | superlative | *the …-est* / *the least …* under **`ue`** | **`o`** ≈ one: one name is the extreme |
+| **Single-item (1)** + shared scale under **`e` / `ue`** | superlative | *the …-est* / *the least …* under **`ue`** | one name is the extreme |
 | **Standalone (0)** + shared scale under **`e`** | unspecified ranking | *unspecified who’s biggest*; open **-m** = soft / speaker-side | empty list, still ordered |
 | **Standalone (0)** + shared scale under **`oe`** | empty superlative | *there is no biggest*; open **-m** = no biggest comes to mind | exclusive + empty = none wins |
 
@@ -259,8 +259,6 @@ Beginner already used two names plus **`zel`** (*more … than*) and one name (*
 | `zazawan zululon zer gomonam` | *whichever of Azawan or Ululon ranks higher on challenging* |
 
 **Compare with:** ranking names with no shared adjective is ordinary preference (who comes first as an alternative). Add the shared `/ɡ/` when you mean *more ADJ than*.
-
-Shared `/w/` on a ranked adjective list is shared *degree* over those properties. For *more ADJ than* on people or things, the rank fence sits on `/z/` `/d/` `/b/` and the scale sits on shared `/ɡ/`.
 
 ### Manner scale (`/h/`)
 <a id="manner-scale"></a>
@@ -313,15 +311,13 @@ Equality **`ae`** with a shared scale needs **two or more** names. **`ae`** with
 <a id="measured-differentials"></a>
 <a id="measure-gap"></a>
 
-English *two meters more challenging* still ranks two people on one quality, and it also names **how large the gap is**. Keep the rank join and the shared scale adjective. After that adjective, write a **measure noun** (`/b/`): that noun is the **unit** (published abstract = SI name), and `/ɡ/` on the unit is the **amount** ([measure phrases](numbers-applied.md#measure-phrases)).
+English *two meters taller* still ranks two people on one quality, and it also names **how large the gap is**. Keep the rank join and the shared scale adjective. After that adjective, write a **measure noun** (`/b/`): that noun is the **unit** (published abstract = SI name), and `/ɡ/` on the unit is the **amount** ([measure phrases](numbers-applied.md#measure-phrases)).
 
-> `zazawan zululon zel gomonam bedurem g+2.`
+> `zazawan zululon zel godowem bedurem g+2.`
 >
-> [z-Azawan | z-Ululon | z-rank/more | [g-challenge | b-meter]] | g-two
+> [z-Azawan | z-Ululon | z-rank/more | [g-height | b-meter]] | g-two
 >
-> "Azawan is two meters more challenging than Ululon."
-
-<!-- use a more sensible word than challenging like taller/bigger -->
+> "Azawan is two meters taller than Ululon."
 
 **Related form:** vague *much* / *slightly* is shared `/w/` immediately before the scale adjective (`wogegal`), not a counted `/b/`.
 
@@ -538,32 +534,32 @@ Each bar is a hosted overlay: published root plus **-n** under `/z/` `/d/` `/b/`
 |---------|-----|---------|----------------|
 | **`zonunan`** | named Average bar | *Average* (mean of the relevant population) | `onunal` *yin-yang* |
 | **`zahaman`** | named Typical bar | *Typical* (usual / modal case) | `ahamal` *hamster* |
-| **`zuroron`** | speaker’s **normative** bar | *Mine* | `urorol` *mirror* |
+| **`zuroron`** | speaker’s **normative** bar | *my standard* | `urorol` *mirror* |
 | **`zuluden`** | named peer bar | *Social* (in-group) | `uludel` *silhouettes* |
 | **`zalaban`** | named expert bar | *Professional* (role standard) | `alabal` *lab coat* |
 | **`zoloben`** | named universal class | *Everyone* | `olobel` *globe* |
 
 <a id="mine-vs-speaker"></a>
 
-**`zugobon`** is where the speaker sits on the scale (current skill). **`zuroron`** is the bar the speaker applies. Ordinary people as bars are ordinary **-n** names (`zululon`). *Walks like a duck* is [simile](relations.md#similative) (`hurorom`), not this Mine bar.
+**`zugobon`** is where the speaker sits on the scale (current skill). **`zuroron`** is the bar the speaker applies. Ordinary people as bars are ordinary **-n** names (`zululon`). *Walks like a duck* is [simile](relations.md#similative) (`hurorom`), not this *my standard* bar.
 
 Single-item `zazawan zuel gomonam` is *the least challenging* in the group in play. **`zoloben`** as the second name **names** the universal class as the bar. Standalone closed **`zual`** / stock **`zuan`** stay [join](joins.md#standalone-phrase) *everything / everyone* in other slots — not this overlay.
 
 | Agalan | Reading |
 |---------|---------|
-| `zugobon zalaban zuel guzunul` | *worse than Professional* at singing |
+| `zugobon zalaban zuel guzunul` | I am worse at singing than Professional |
 | `zebegum zonunan zuem gagalam` | soft: the draft is somewhat less clear than Average |
 | `zazawan zuroron zuel guzumum` | Azawan is less happy than **my personal standard** |
 | `zazawan zugobon zuel guzunul` | Azawan is less skilled at singing than **I am** (performance) |
-| `zugobon zuluden zuel gomonam` | less challenging than Social |
-| `zugobon zahaman zuel gomonam` | less challenging than Typical |
-| `zugobon zoloben zuel gomonam` | less challenging than Everyone |
-| `zugobon zululon zuel guzunul` | less skilled at singing than **Ululon** (ordinary person comparee) |
+| `zugobon zuluden zuel gomonam` | I am less challenging than Social |
+| `zugobon zahaman zuel gomonam` | I am less challenging than Typical |
+| `zugobon zoloben zuel gomonam` | I am less challenging than Everyone |
+| `zugobon zululon zuel guzunul` | I am less skilled at singing than **Ululon** (ordinary person comparee) |
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**. The *than*-conjunct is the named bar; **`zugobon`** is performance, **`zuroron`** is Mine.
+Short drills for Advanced. Try each item before opening **Show answer**. The *than*-conjunct is the named bar; **`zugobon`** is performance, **`zuroron`** is *my standard*.
 
 **Setting:** a talent contest
 
@@ -581,7 +577,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *Typical* | `ahaman` | `ahamal` *hamster* |
 | *Professional* | `alaban` | `alabal` *lab coat* |
 | *Social* | `uluden` | `uludel` *silhouettes* |
-| *Mine* | `uroron` | `urorol` *mirror* |
+| *my standard* | `uroron` | `urorol` *mirror* |
 | *speaker* | `ugobon` | |
 | *Everyone* | `oloben` | `olobel` *globe* |
 | *challenge* | `gomonam` | |
@@ -613,12 +609,12 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 [z-Ululon | z-Typical | z-rank/less | g-artistry]
 :::
 
-**4.** *I am less showy than Mine.*
+**4.** *I am less showy than my standard.*
 
 ::: details Show answer
 `zugobon zuroron zuel gohohom.`
 
-[z-speaker | z-Mine | z-rank/less | g-showmanship]
+[z-speaker | z-my-standard | z-rank/less | g-showmanship]
 :::
 
 **5.** *Ululon is somewhat worse at singing than Average.*
@@ -661,9 +657,9 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 
 ::: details Show answer
 
-[z-Azawan | z-Mine | z-rank/less.open | g-artistry]
+[z-Azawan | z-my-standard | z-rank/less.open | g-artistry]
 
-*Azawan is somewhat less artistic than Mine.*
+*Azawan is somewhat less artistic than my standard.*
 :::
 
 **4.** `zuhubun zalaban zuel guzunul.`
