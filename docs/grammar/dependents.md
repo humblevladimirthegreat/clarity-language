@@ -406,7 +406,7 @@ For example, the `/v/` word takes the following sentence as its content:
 
 > `zazawan vuon zululon vajul.`
 >
-> z-Azawan | v-decline | z-Ululon | v-sit
+> z-Azawan | v-decline-to | z-Ululon | v-sit
 >
 > *Azawan declines to let Ululon sit.*
 

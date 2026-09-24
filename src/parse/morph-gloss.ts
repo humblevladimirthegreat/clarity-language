@@ -906,7 +906,7 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
       ae: ["confirm", "tentatively-confirm"],
       ue: ["deny", "express-doubt"],
       ao: ["agree", "tentatively-agree"],
-      uo: ["decline", "hesitate-to"],
+      uo: ["decline-to", "hesitate-to"],
       ua: ["vehemently-refuse", "strongly-object-to"],
     };
     const action = verbalDependent[series] ?? verbalDependent.a!;
@@ -976,6 +976,8 @@ function fenceJoinLabel(
 
   if (series === "a" && ending === "n" && pos === "x") return "and-then";
 
+  // Open **o** leaves the pick optional, so it is no longer *exactly one*.
+  if (series === "o" && ending === "m") return "or.open";
   const job = JOIN_JOB[series] ?? series;
   if (ending === "m") return `${job}.open`;
   if (ending === "n") return `${job}.named`;

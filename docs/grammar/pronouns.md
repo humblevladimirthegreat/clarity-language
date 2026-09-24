@@ -700,7 +700,7 @@ Examples:
 
 > `zaradul welem garedel. zudomul weler gelem.`
 >
-> z-radio | [w-very | g-red] . z-studio-mic | w-←very | g-big
+> z-radio | [w-very | g-red] . z-studio-mic | [w-←very | g-big]
 >
 > "A radio is very red. A studio mic is very big too."
 

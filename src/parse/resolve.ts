@@ -311,19 +311,20 @@ function considerJoin(
 }
 
 function considerGPackage(ctx: Ctx, pkg: GPackage): void {
-  considerWord(ctx, pkg.word);
+  // Surface order: `/w/` details (and an as-of pair) precede the `/ɡ/` head.
   for (const mod of pkg.modifiers) considerWord(ctx, mod);
   if (pkg.asOf) {
     considerWord(ctx, pkg.asOf.word);
     if (pkg.asOf.bound) considerWord(ctx, pkg.asOf.bound);
   }
+  considerWord(ctx, pkg.word);
   if (pkg.bound) considerWord(ctx, pkg.bound);
   for (const adj of pkg.boundAdjs ?? []) considerGPackage(ctx, adj);
 }
 
 function considerHUnit(ctx: Ctx, unit: HUnit): void {
-  considerWord(ctx, unit.word);
   for (const mod of unit.modifiers) considerWord(ctx, mod);
+  considerWord(ctx, unit.word);
   if (unit.bound) considerWord(ctx, unit.bound);
 }
 

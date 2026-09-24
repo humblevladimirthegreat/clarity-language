@@ -457,7 +457,7 @@ A *yes/no* question can put a join ending on a **named** item instead of a fill-
 
 > `jol zuhubun zam.`
 >
-> j-question | z-Uhubun | z-offer
+> j-question | [z-Uhubun | z-and.open]
 >
 > "How about Uhubun?"
 

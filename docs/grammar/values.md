@@ -102,7 +102,7 @@ A word with no **`th`** is not a values word: `galodol` is still ballot-box-like
 <a id="personal-possession"></a>
 <a id="stimulus"></a>
 
-A need on `/ɡ/` means the noun is **yours** (speaker possession) and the need is how you stand toward that belonging. That shortcut puts gratitude and unmet on the things you already name as *my X*, so the stance is cheap to say. Ownership without a need is still `goborul` plus `/b/` ([joins](joins.md#scope-fence-p-join)). Someone else’s thing uses that pair, not a bare `/ɡ/` need.
+A need on `/ɡ/` means the noun is **yours** (speaker possession) and the need is how you stand toward that belonging. That shortcut puts gratitude and unmet on the things you already name as *my X*, so the stance is cheap to say. Ownership without a need is still `goborum` plus `/b/` ([joins](joins.md#scope-fence-p-join)). Someone else’s thing uses that pair, not a bare `/ɡ/` need.
 
 When the noun is **not** yours (weather, a gathering, another person’s church), write the need on `/w/` immediately before **`gobobum`**. `/w/` here is the same met / unmet word you already use on `/ɡ/`; it details the stimulus adjective. (cue: ☝️ *point*: you point at the thing; you do not hold it)
 

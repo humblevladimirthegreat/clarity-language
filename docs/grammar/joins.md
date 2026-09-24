@@ -69,7 +69,7 @@ When English would offer a menu and ask to *pick one*, or leave the pick *(optio
 
 > `zogovel zom.`
 >
-> z-coffee | z-or.open
+> [z-coffee | z-or.open]
 >
 > "coffee (optional)."
 
@@ -267,7 +267,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 ::: details Show answer
 `zagabel zom.`
 
-[z-grape | z-or-exactly-one.open]
+[z-grape | z-or.open]
 :::
 
 **5.** *not the cart*
@@ -558,9 +558,9 @@ When an adjective or extra noun is meant for the **whole list** (*both challengi
 >
 > "(challenging dog) and (challenging cat)."
 
-> `zodogol zagadal zam goborul bazawan.`
+> `zodogol zagadal zam goborum bazawan.`
 >
-> z-dog | z-cat | z-and.open | g-ownership | b-Azawan
+> [z-dog | z-cat | z-and.open | [g-ownership | b-Azawan]]
 >
 > "Azawan's dog and cat (and possibly more)."
 
