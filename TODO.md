@@ -5,12 +5,12 @@ redirects settings: https://us-east-2.console.aws.amazon.com/amplify/apps/d2xds9
 my name: obogan (innovation)
 
 # TODO
+does the non-prod build run tests?
 could some causation overlay inventories be replaced by restrictors or other joins/hooks/stand-ins?
 Define goodbye (assertiveness for meeting again? need met, name reminder?)
 consider new consonant (th) used for new pos, used instead of x for some x-compounds or different type of compounding? maybe could be used as plural ending and role compounds (avoids collision with span pronoun)?
-allow -n on stand-ins to allow the lexicalized nouns - statement, question, command, prohibition, etc. This includes on verbs. Reconsider what verb stand-ins should mean. 
-standardize when -n on vowel series does not mean proper, and what that meaning should reliably mean.
 consider viewpoint laterals allowing non-person viewpoints (the car's left). Then clarify that the endings/resume applies to the viewpoint not the direction
+reconsider foreign spans (the grammar shouldn't change depending on the content).
 
 finish English->Agalan cheat sheets, including tense
 add Agalan->English cheat sheet

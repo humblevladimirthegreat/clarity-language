@@ -3,8 +3,8 @@ import type { OverlayKind } from "../lexicon-search.js";
 /** Part-of-speech prefix letters (role stamps). */
 export type Pos = "z" | "d" | "b" | "v" | "g" | "w" | "h" | "x" | "j";
 
-/** Word endings endings, plus stand-in clusters `-rl` / `-rm`. */
-export type Ending = "l" | "m" | "n" | "r" | "rl" | "rm";
+/** Word endings, plus stand-in clusters `-rl` / `-rm` / lexicalized `-rn`. */
+export type Ending = "l" | "m" | "n" | "r" | "rl" | "rm" | "rn";
 
 /** Writing-style number marker symbols. */
 export type WritingMarker = "+" | "-" | "#" | "#-" | "_" | "+-" | "#_";
@@ -129,6 +129,7 @@ export type LexReading =
   | "stimulus"
   | "join"
   | "standIn"
+  | "standInNamed"
   | "joinAct"
   | "joinRelation"
   | "number"

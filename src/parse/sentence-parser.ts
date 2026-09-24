@@ -31,7 +31,7 @@ import {
   WritingSpan,
   Z,
 } from "./tokens.js";
-import { isAsOfOverlay, isStandIn } from "./classify.js";
+import { isAsOfOverlay, isNamedStandIn, isStandIn } from "./classify.js";
 import type {
   BodyClause,
   Clause,
@@ -615,23 +615,20 @@ function unitContainsOdo(unit: Unit): boolean {
   return false;
 }
 
-const VERBAL_DEPENDENT_SERIES = new Set(["ae", "ue", "ao", "uo", "ua"]);
 const IMPLIED_SUBJECT_SERIES = new Set(["e", "u", "ao", "uo", "ua"]);
 
 function verbalDependentIn(unit: Unit): { word: LexWord; coord: VpCoord; stacked: boolean } | undefined {
   if (unit.kind !== "vp" || unit.coord.parts.length === 0) return undefined;
   const lastPart = unit.coord.parts.at(-1)!;
   const lastItem = lastPart.items.at(-1);
-  if (!lastPart.join && lastItem?.pos === "v" && isStandIn(lastItem)) {
+  if (!lastPart.join && lastItem?.pos === "v" && isNamedStandIn(lastItem)) {
     return { word: lastItem, coord: unit.coord, stacked: false };
   }
   const join = lastPart.join;
   if (
     lastPart.items.length === 0 &&
     join?.pos === "v" &&
-    join.family.kind === "joinMarker" &&
-    VERBAL_DEPENDENT_SERIES.has(join.family.series) &&
-    (join.ending === "l" || join.ending === "m")
+    isNamedStandIn(join)
   ) {
     return { word: join, coord: unit.coord, stacked: true };
   }

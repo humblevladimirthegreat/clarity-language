@@ -799,8 +799,7 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
   const { series } = family;
   const ending = word.ending;
 
-  if ((word.reading === "standIn" || ctx.dependentVerb) && word.pos === "v") {
-    const endingIsOpen = ending === "m" || ending === "rm";
+  if ((word.reading === "standInNamed" || ctx.dependentVerb) && word.pos === "v") {
     const verbalDependent: Record<string, [string, string]> = {
       a: ["state", "offer-as-view"],
       o: ["question", "invite-answer"],
@@ -813,7 +812,22 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
       ua: ["vehemently-refuse", "strongly-object-to"],
     };
     const action = verbalDependent[series] ?? verbalDependent.a!;
-    return action[endingIsOpen ? 1 : 0];
+    return action[0];
+  }
+
+  if (word.reading === "standInNamed") {
+    const namedContent: Record<string, string> = {
+      a: "statement",
+      o: "question",
+      e: "command",
+      u: "prohibition",
+      ae: "confirmation",
+      ue: "denial",
+      ao: "agreement",
+      uo: "decline",
+      ua: "refusal",
+    };
+    return namedContent[series] ?? "sentence-content";
   }
 
   if (word.reading === "joinAct") return JOIN_ACT[series] ?? "join-act";

@@ -646,7 +646,7 @@ StandInSeries
   = "a" / "e" / "o" / "u"
 
 StandInCoda
-  = "rl" / "rm"
+  = "rl" / "rm" / "rn"
 
 JoinSeries
   = "ao" / "ua" / "uo" / "ae" / "oe" / "ue" / "a" / "e" / "o" / "u"
@@ -721,7 +721,7 @@ Pos
   = [zdbvgwhxj] { return text(); }
 
 Ending
-  = [lmnr] { return text(); }
+  = "rl" / "rm" / "rn" / [lmnr] { return text(); }
 
 PluralSuffix
   = "x" { return true; }

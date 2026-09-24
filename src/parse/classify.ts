@@ -115,6 +115,11 @@ function overlaySenseForm(word: MorphWord): string | null {
   return null;
 }
 
+function hasClosedOverlay(word: MorphWord, tables: ClassifyTables): boolean {
+  const senseForm = overlaySenseForm(word);
+  return Boolean(senseForm && word.pos && tables.overlays.has(overlayKey(word.pos, senseForm)));
+}
+
 function overlayReading(overlay: OverlayRow): LexReading {
   if (overlay.kind === "join_act") return "joinAct";
   if (overlay.kind === "join_relation") return "joinRelation";
@@ -166,6 +171,8 @@ const JOIN_ENDING_GLOSS: Record<string, string> = {
   rm: "stand-in open",
 };
 
+const NAMED_STAND_IN_SERIES = new Set(["a", "o", "e", "u", "ae", "ue", "ao", "uo", "ua"]);
+
 /** Fence-join gloss (not restrictors, join-acts, or `/j/` force/polar). */
 export function joinFenceGloss(series: string, ending: string | undefined): string {
   const job = JOIN_SERIES_GLOSS[series] ?? `join ${series}`;
@@ -176,16 +183,25 @@ export function joinFenceGloss(series: string, ending: string | undefined): stri
 /** Stand-in (`darl` / `barl` / …): slot filled by the following sentence — not a join fence. */
 export function isStandIn(word: MorphWord): boolean {
   if (word.family.kind !== "joinMarker") return false;
-  if (word.pos === "x" || word.pos === "j" || !word.pos) return false;
+  if (word.pos === "x" || word.pos === "j" || word.pos === "v" || !word.pos) return false;
   const series = word.family.series;
   if (series !== "a" && series !== "o" && series !== "e" && series !== "u") return false;
   return word.ending === "rl" || word.ending === "rm";
 }
 
+/** Lexicalized content names: one-vowel `-rn`, or stacked-vowel `-n`. */
+export function isNamedStandIn(word: MorphWord): boolean {
+  if (word.family.kind !== "joinMarker") return false;
+  if (word.pos === "x" || word.pos === "j" || !word.pos) return false;
+  const { series } = word.family;
+  if (!NAMED_STAND_IN_SERIES.has(series)) return false;
+  return (series.length === 1 && word.ending === "rn") || (word.pos === "v" && series.length > 1 && word.ending === "n");
+}
+
 function isFenceJoin(word: MorphWord): boolean {
   if (word.family.kind !== "joinMarker") return false;
   if (!word.pos || word.pos === "j") return false;
-  if (isStandIn(word)) return false;
+  if (isStandIn(word) || isNamedStandIn(word)) return false;
   return !isRestrictor(word);
 }
 
@@ -426,6 +442,10 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
     return { ...word, reading: "standIn" };
   }
 
+  if (isNamedStandIn(word) && !hasClosedOverlay(word, tables)) {
+    return { ...word, reading: "standInNamed" };
+  }
+
   if (isFenceJoin(word) && word.family.kind === "joinMarker") {
     return {
       ...word,
@@ -486,6 +506,7 @@ export type ClassifyHit = {
     | "valueAbility"
     | "restrictor"
     | "standIn"
+    | "standInNamed"
     | "join"
     | "compoundLemma"
     | "published"
@@ -529,6 +550,10 @@ export function classifyHits(word: MorphWord, tables: ClassifyTables): ClassifyH
 
   if (isStandIn(word)) {
     hits.push({ source: "standIn", reading: "standIn" });
+  }
+
+  if (isNamedStandIn(word) && !hasClosedOverlay(word, tables)) {
+    hits.push({ source: "standInNamed", reading: "standInNamed" });
   }
 
   if (isFenceJoin(word) && word.family.kind === "joinMarker") {

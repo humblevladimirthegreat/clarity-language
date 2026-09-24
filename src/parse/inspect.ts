@@ -107,6 +107,7 @@ const ENDING_SENSE: Record<Ending, string> = {
   r: "anaphor",
   rl: "stand-in",
   rm: "stand-in.open",
+  rn: "stand-in lexicalized",
 };
 
 const JOIN_ENDING_SENSE: Record<Ending, string> = {
@@ -116,6 +117,7 @@ const JOIN_ENDING_SENSE: Record<Ending, string> = {
   r: "unspecified member",
   rl: "stand-in locked",
   rm: "stand-in open",
+  rn: "stand-in lexicalized",
 };
 
 const GREETING_BID_GLOSS: Record<"a" | "e" | "o" | "u", string> = {
@@ -127,6 +129,7 @@ const GREETING_BID_GLOSS: Record<"a" | "e" | "o" | "u", string> = {
 
 export function endingSense(ending: Ending | undefined, word?: LexWord): string | undefined {
   if (!ending) return undefined;
+  if (word?.reading === "standInNamed") return "stand-in lexicalized";
   if (word?.reading === "standIn") {
     if (ending === "rl") return "stand-in locked";
     if (ending === "rm") return "stand-in open";
@@ -141,6 +144,7 @@ export function endingSense(ending: Ending | undefined, word?: LexWord): string 
       r: "resume",
       rl: "stand-in",
       rm: "stand-in.open",
+      rn: "stand-in lexicalized",
     };
     return number[ending];
   }
@@ -152,6 +156,7 @@ export function endingSense(ending: Ending | undefined, word?: LexWord): string 
       r: "anaphor",
       rl: "stand-in",
       rm: "stand-in.open",
+      rn: "stand-in lexicalized",
     };
     return content[ending];
   }
@@ -261,7 +266,7 @@ export function chipsFor(word: LexWord): string[] {
   if (word.ending) chips.push(`-${word.ending} ${endingSense(word.ending, word)}`);
   if (word.gl) chips.push("gl-");
   if (word.plural) chips.push("-x");
-  if (word.reading === "standIn" && word.family.kind === "joinMarker") {
+  if ((word.reading === "standIn" || word.reading === "standInNamed") && word.family.kind === "joinMarker") {
     chips.push(`stand-in ${word.family.series}`);
   } else {
     chips.push(...familyChips(word.family));
@@ -312,7 +317,7 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
     rows.push({ label: "fused hook", value: family.hook });
   } else if (family.kind === "joinMarker") {
     rows.push({
-      label: word.reading === "standIn" ? "stand-in" : "series",
+      label: word.reading === "standIn" || word.reading === "standInNamed" ? "stand-in" : "series",
       value: family.series,
     });
   } else if (family.kind === "spanClose") {

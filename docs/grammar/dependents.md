@@ -377,34 +377,34 @@ When *so that* aims at keeping an outcome off, keep **`holalam`** and type `/b/`
 ## Advanced
 <a id="advanced"></a>
 
-### Stand-in vowels in other roles
+### Lexicalized stand-ins in other roles
 <a id="stand-in-roles"></a>
 
-The stand-in vowel identifies the kind of sentence content, while the first letter identifies the role that content fills. Use the same vowel choices with another role letter when the following sentence fills that role. Under `/v/`, these forms make the speaker’s response to the dependent content the verb: **`vael`** confirms a statement, **`vuel`** denies it, **`vaol`** agrees to an instruction, and **`vuol`** lets the speaker decline an instruction. **`vual`** is a vehement refusal. The following sentence supplies what is stated, questioned, commanded, prohibited, confirmed, denied, accepted, or declined. A following dependent sentence gives these forms their complement-taking reading; for example, `vael` before a sentence means *confirm that*, while the join-act `vael` in a list means *tie / equate*.
+The stand-in vowel identifies the kind of sentence content, while the first letter identifies the role that content fills. With **-rn** (or **-n** after a stacked vowel), a stand-in becomes a lexicalized name for that content: statement, question, command, prohibition, and so on. For example, **`darn`** is a statement, **`dorn`** a question, **`dern`** a command, and **`durn`** a prohibition. Use the same vowel choices with another role letter when the following sentence fills that role. `/v/` forms use the same **-rn** / **-n** endings for their lexicalized verb readings.
 
-The **-l** forms make a closed response. Their **-m** counterparts keep the response open, with a distinct conversational job: they offer a view, invite an answer, make a request, or leave a judgment tentative.
+Each content type has one lexicalized form; there is no closed / open pair here.
 
 | Agalan | Dependent content | English |
 |--------|-------------------|---------|
-| **`varl`** / **`varm`** | statement-like (`a`) | *state…* / *offer as a view…* |
-| **`vorl`** / **`vorm`** | question-like (`o`) | *question…* / *invite an answer about…* |
-| **`verl`** / **`verm`** | instruction-like (`e`) | *command…* / *request…* |
-| **`vurl`** / **`vurm`** | avoidance-like (`u`) | *prohibit…* / *request that you not...* |
-| **`vael`** / **`vaem`** | statement-like (`a`) | *confirm that…* / *tentatively confirm that…* |
-| **`vuel`** / **`vuem`** | statement-like (`u` reversal) | *deny that…* / *express doubt that…* |
-| **`vaol`** / **`vaom`** | instruction-like (`a` + `o`) | *agree to…* / *tentatively agree to…* |
-| **`vuol`** / **`vuom`** | instruction-like (`u` + `o`) | *decline to…* / *hesitate to…* |
-| **`vual`** / **`vuam`** | instruction-like (`u` + `a`) | *vehemently refuse to…* / *strongly object to…* |
+| **`varn`** | statement-like (`a`) | *state…* |
+| **`vorn`** | question-like (`o`) | *question…* |
+| **`vern`** | instruction-like (`e`) | *command…* |
+| **`vurn`** | avoidance-like (`u`) | *prohibit…* |
+| **`vaen`** | statement-like (`a`) | *confirm that…* |
+| **`vuen`** | statement-like (`u` reversal) | *deny that…* |
+| **`vaon`** | instruction-like (`a` + `o`) | *agree to…* |
+| **`vuon`** | instruction-like (`u` + `o`) | *decline to…* |
+| **`vuan`** | instruction-like (`u` + `a`) | *vehemently refuse to…* |
 
 For example, the `/v/` word takes the following sentence as its content:
 
-> `zazawan vael zululon vajul.`
+> `zazawan vaen zululon vajul.`
 >
 > z-Azawan | v-confirm | z-Ululon | v-sit
 >
 > *Azawan confirms that Ululon sits.*
 
-> `zazawan vuol zululon vajul.`
+> `zazawan vuon zululon vajul.`
 >
 > z-Azawan | v-decline | z-Ululon | v-sit
 >
