@@ -566,13 +566,13 @@ z-Azawan | v-climb
 
 > `thelezom hobomam b_#22,7 vanunul. xazawan thelezom hobomar vawalal.`
 >
-> th-predict | h-as-of.bookmark | b-_22,7 | v-rain | x-Azawan | th-predict | h-as-of.bookmark | v-walk
+> th-predict | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | th-predict | h-as-of.bookmark | v-walk
 >
 > "From then, it would rain. Azawan would walk."
 
 > `zululon thehegem vawalal helerem b_#22,7.`
 >
-> z-Ululon | th-DECISION-modifiable | v-walk | h-as-of.ledger | b-_22,7
+> z-Ululon | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 >
 > "Ululon has decided to walk — the pick is revisable now; the walking is scored as of 22 July."
 

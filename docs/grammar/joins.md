@@ -25,19 +25,19 @@ Ending **-l** is ordinary English with no extra words: these are the only items.
 
 > `zodogol zagadal zam.`
 >
-> z-dog | z-cat | z-and.open
+> [z-dog | z-cat | z-and.open]
 >
 > "a dog and a cat (and possibly more)."
 
 > `zazawan zululon zam.`
 >
-> z-Azawan | z-Ululon | z-and.open
+> [z-Azawan | z-Ululon | z-and.open]
 >
 > "Azawan and Ululon (and possibly more)."
 
 > `vawalal vurunul vam.`
 >
-> v-walk | v-run | v-and.open
+> [v-walk | v-run | v-and.open]
 >
 > "walks and runs (and possibly more)."
 
@@ -104,13 +104,13 @@ When English would deny the listed items, use vowel **u**. One item before `zul`
 
 > `zazawan zul.`
 >
-> z-Azawan | z-not
+> [z-Azawan | z-not]
 >
 > "not Azawan."
 
 > `zadedal zogovel zul.`
 >
-> z-tea | z-coffee | z-not
+> [z-tea | z-coffee | z-not]
 >
 > "neither tea nor coffee."
 
@@ -157,13 +157,13 @@ You can name a list without saying which member you mean (*someone* / *something
 
 > `zeberel zar.`
 >
-> z-person | z-something
+> [z-person | z-something]
 >
 > "some (unknown) person."
 
 > `zadedal zogovel zar.`
 >
-> z-tea | z-coffee | z-something
+> [z-tea | z-coffee | z-something]
 >
 > "something among tea and coffee."
 
@@ -517,7 +517,7 @@ When English would deny a whole join, *not* applies to **each** item and the joi
 
 > `vawalal vurunul vol vul.`
 >
-> v-walk | v-run | v-or-exactly-one | v-not
+> [[v-walk | v-run | v-or-exactly-one] | v-not]
 >
 > "not (walk or run): not walk, or not run."
 

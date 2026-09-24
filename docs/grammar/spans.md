@@ -44,7 +44,7 @@ Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gi
 
 > `zuhubun d@[uzugon ululon] vuzunul.`
 >
-> z-Uhubun | d-cite | Uzugon | Ululon | v-sing
+> z-Uhubun | d-NAME.CITE[Uzugon | Ululon] | v-sing
 >
 > "Uhubun sang Uzugon Ululon."
 
@@ -70,7 +70,7 @@ A **mention** holds a **word or phrase** as that spelling, not a quote of speech
 
 > `z{zazawan vuzunul} gumuzem.`
 >
-> z-mention | zazawan | vuzunul | g-small
+> z-MENTION["zazawan vuzunul"] | g-small
 >
 > "The phrase “zazawan vuzunul” is small."
 
@@ -84,7 +84,7 @@ With **`@`**, mention is the **name** (the title-string you could rename), even 
 
 > `zazawan d@{uzugon} vogozom.`
 >
-> z-Azawan | d-uzugon | v-rejection
+> z-Azawan | d-NAME.MENTION["uzugon"] | v-rejection
 >
 > "Azawan dislikes the name “uzugon.”" (might still like the work)
 
@@ -122,7 +122,7 @@ The interior is ordinary Agalan: a fragment, or a clause body that keeps the **s
 
 > `zazawan vawalal th(zululon velebel).`
 >
-> z-Azawan | v-walk | th- | z-Ululon | v-sleep
+> z-Azawan | v-walk | th-ASIDE[z-Ululon | v-sleep]
 >
 > "Azawan walks (Ululon sleeps)."
 

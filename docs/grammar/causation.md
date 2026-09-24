@@ -21,7 +21,7 @@ Use `/th/` when the outcome is an **event** (the verb). Use `/ɡ/` when the outc
 
 > `zanunul gadorom buludul.`
 >
-> z-rain | g-if | b-cloud
+> z-rain | [g-if | b-cloud]
 >
 > "Rain if there are clouds."
 
@@ -42,7 +42,7 @@ When the outcome cannot happen without this (*only if* / *needs*), write the sam
 
 > `zanunul geberom buludul.`
 >
-> z-rain | g-only-if | b-cloud
+> z-rain | [g-only-if | b-cloud]
 >
 > "Rain only if there are clouds."
 
@@ -246,7 +246,7 @@ main sentence …  thadorom / theberom / …  barl   [dependent sentence]
 
 > `zazawan vawalal theberom barl zululon velebel.`
 >
-> z-Azawan | v-walk | th-only-if | b-that-clause | z-Ululon | v-sleep
+> z-Azawan | v-walk | [th-only-if | b-that-clause] | z-Ululon | v-sleep
 >
 > "Azawan walks only if Ululon sleeps."
 
@@ -278,13 +278,13 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 
 > `zanunul gurugum buludul.`
 >
-> z-rain | g-because | b-cloud
+> z-rain | [g-because | b-cloud]
 >
 > "Rain because of clouds."
 
 > `zazawan vawalal thezazem barl zululon velebel.`
 >
-> z-Azawan | v-walk | th-iff | b-that-clause | z-Ululon | v-sleep
+> z-Azawan | v-walk | [th-iff | b-that-clause] | z-Ululon | v-sleep
 >
 > "Azawan walks if and only if Ululon sleeps."
 
@@ -485,7 +485,7 @@ English *because* and *if* can hide whether you **assert the dependent as a worl
 
 > `zazawan vawalal thadorom barl zanunul.`
 >
-> z-Azawan | v-walk | th-if | b-that-clause | z-rain
+> z-Azawan | v-walk | [th-if | b-that-clause] | z-rain
 >
 > "Azawan walks if it rains." Rain is not asserted; the main sentence is under that opportunity.
 
@@ -499,7 +499,7 @@ English *If he'd left, the door would still be locked* is not this pole. Write b
 
 > `zonenol thonenom helerem b_#22,7 thadorom banunul.`
 >
-> z-money | th-RESIDUE | h-as-of.ledger | b-_22,7 | th-if | b-rain
+> z-money | th-RESIDUE | [h-as-of.ledger | b-_22,7] | [th-if | b-rain]
 >
 > "If it rains, the 22 July tab still stands."
 

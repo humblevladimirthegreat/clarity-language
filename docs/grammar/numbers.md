@@ -22,7 +22,7 @@ To say **how many** of a thing there are, put a number word after the noun, in t
 >
 > 🔊 *zazawan dabogolx grarel vejel.*
 >
-> z-Azawan | d-book-x | g-three | v-see
+> z-Azawan | [d-book-x | g-three] | v-see
 >
 > "Azawan sees three books."
 
@@ -42,7 +42,7 @@ To say **which place** a thing has in a series (*the first*, *the second*, …),
 >
 > 🔊 *zululon dabogol grerel vuwurul.*
 >
-> z-Ululon | d-book | g-third | v-write
+> z-Ululon | [d-book | g-3rd] | v-write
 >
 > "Ululon writes the third book."
 

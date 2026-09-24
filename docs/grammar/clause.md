@@ -101,13 +101,13 @@ The adverb describes the walking. The stance word describes your claim about it.
 
 > `welem hurorom bazawan`
 >
-> w-very | h-like | b-Azawan
+> [[w-very | h-like] | b-Azawan]
 >
 > "very like Azawan"
 
 > `zodogol velebel hurorom bazawan.`
 >
-> z-dog | v-sleep | h-like | b-Azawan
+> z-dog | v-sleep | [h-like | b-Azawan]
 >
 > "A dog sleeps like Azawan."
 
@@ -295,7 +295,7 @@ A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). `/w/` that grades t
 
 > `zodogol gonunul bazawan gelulul.`
 >
-> z-dog | g-SAME | b-Azawan | g-blue
+> z-dog | [g-SAME | [b-Azawan | g-blue]]
 >
 > "a dog the same as blue Azawan"
 

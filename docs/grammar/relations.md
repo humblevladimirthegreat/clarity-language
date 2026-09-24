@@ -20,7 +20,7 @@ When English says something **resembles** a model (*walks like a duck*, *a house
 
 > `zazawan welem hurorom budugul vawalal.`
 >
-> z-Azawan | w-very | h-like | b-duck | v-walk
+> z-Azawan | [[w-very | h-like] | b-duck] | v-walk
 >
 > "Azawan walks very like a duck."
 
@@ -188,13 +188,13 @@ Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extr
 
 > `zazawan ul bohohul vawalal ol bazadol.`
 >
-> z-Azawan | from | b-house | v-walk | at | b-station
+> z-Azawan | [from | b-house] | v-walk | [at | b-station]
 >
 > "Azawan walks from a house to a station."
 
 > `zululon ual bohohul vurunul al badadul.`
 >
-> z-Ululon | out-of | b-house | v-run | in | b-train
+> z-Ululon | [out-of | b-house] | v-run | [in | b-train]
 >
 > "Ululon runs out of a house into a train."
 
@@ -238,19 +238,19 @@ English *of* also names how one noun sits toward another (*a hand of Ululon*, *a
 
 > `zazawan dedebol gajaram badedal vejel.`
 >
-> z-Azawan | d-teapot | g-contents | b-tea | v-see
+> z-Azawan | [d-teapot | [g-contents | b-tea]] | v-see
 >
 > "Azawan sees a teapot of tea."
 
 > `zazawan dohohul gowodom bowodol vejel.`
 >
-> z-Azawan | d-house | g-material | b-wood | v-see
+> z-Azawan | [d-house | [g-material | b-wood]] | v-see
 >
 > "Azawan sees a house of wood."
 
 > `zululon gugunom bolunel vawalal.`
 >
-> z-Ululon | g-origin | b-skyline | v-walk
+> [z-Ululon | [g-origin | b-skyline]] | v-walk
 >
 > "Ululon of the city walks."
 
@@ -385,7 +385,7 @@ Write a hosted pair for that second now. Asserted whose-now (a real dated line i
 
 > `zazawan helerem b_#22,7 vajul al bohohul.`
 >
-> z-Azawan | h-as-of.ledger | b-_22,7 | v-sit | in | b-house
+> z-Azawan | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 >
 > "As of 22 July, Azawan is in a house." — the event is concurrent with that now
 
@@ -413,31 +413,31 @@ Once whose-now is set, [PREDICT](intention.md#predict) is **after** that now, [P
 
 > `zonenol thonenom helerem bebarum.`
 >
-> z-money | th-RESIDUE | h-as-of.ledger | b-abandonment
+> z-money | th-RESIDUE | [h-as-of.ledger | b-abandonment]
 >
 > "As of the leaving, the money still stood."
 
 > `zazawan helerem b_#22,7 hababam bebarum vajul al bohohul.`
 >
-> z-Azawan | h-as-of.ledger | b-_22,7 | h-before | b-abandonment | v-sit | in | b-house
+> z-Azawan | [h-as-of.ledger | b-_22,7] | [h-before | b-abandonment] | v-sit | [in | b-house]
 >
 > "As of 22 July, Azawan is in a house before the leaving." — books and event-when are different jobs
 
 > `zululon vawalal ol b_#22,7. xululon thonenom helerem b=_ vebarum.`
 >
-> z-Ululon | v-walk | at | b-_22,7 | x-Ululon | th-RESIDUE | h-as-of.ledger | b-resume | v-abandonment
+> z-Ululon | v-walk | [at | b-_22,7] . x-Ululon | th-RESIDUE | [h-as-of.ledger | b-←_22,7] | v-abandonment
 >
 > "Ululon walks on 22 July. As of that date, the leaving still stood."
 
 > `zululon thonenom vebarum helerem barl zululon vezehel.`
 >
-> z-Ululon | th-RESIDUE | v-abandonment | h-as-of.ledger | b-that-clause | z-Ululon | v-tell
+> z-Ululon | th-RESIDUE | v-abandonment | [h-as-of.ledger | b-that-clause] | z-Ululon | v-tell
 >
 > "As of when Ululon told it, the departure still stood." — the telling sentence is whose-now, not leftover
 
 > `zululon thonenom helerem b_#22,7 vebarum. xazawan thelezom hobomam b_#23,7 vawalal.`
 >
-> z-Ululon | th-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment | x-Azawan | th-predict | h-as-of.bookmark | b-_23,7 | v-walk
+> z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment . x-Azawan | th-predict | [h-as-of.bookmark | b-_23,7] | v-walk
 >
 > "As of 22 July, Ululon had still left. From a 23 July placeholder, Azawan would walk." — a new pair replaces whose-now
 

@@ -142,13 +142,13 @@ Simplex vowels (one vowel plus an ending):
 
 > `zodogol velebel welem al bohohul.`
 >
-> z-dog | v-sleep | w-very | in | b-house
+> z-dog | v-sleep | [[w-very | in] | b-house]
 >
 > "A dog sleeps deep in a house."
 
 > `zululon vajul ol baladel.`
 >
-> z-Ululon | v-sit | at | b-plate
+> z-Ululon | v-sit | [at | b-plate]
 >
 > "Ululon sits at a plate."
 
@@ -410,7 +410,7 @@ Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). S
 
 > `zazawan uel bugugal vuvugul.`
 >
-> z-Azawan | against | b-guard | v-fight
+> z-Azawan | [against | b-guard] | v-fight
 >
 > "Azawan fights against a guard."
 
@@ -423,13 +423,13 @@ Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). S
 
 > `zazawan vezehel aem bameral.`
 >
-> z-Azawan | v-tell | by | b-camera
+> z-Azawan | v-tell | [by | b-camera]
 >
 > "Azawan tells by camera."
 
 > `zazawan vawalal uem banunul.`
 >
-> z-Azawan | v-walk | contrary-to | b-rain
+> z-Azawan | v-walk | [contrary-to | b-rain]
 >
 > "Azawan walks contrary to rain."
 

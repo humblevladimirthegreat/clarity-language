@@ -21,7 +21,7 @@ When English would say *Azawan is more challenging than Ululon*, you put two peo
 
 > `zuhubun zazawan zel gelem.`
 >
-> z-Uhubun | z-Azawan | z-rank/more | g-big
+> [z-Uhubun | z-Azawan | z-rank/more | g-big]
 >
 > "Uhubun is bigger than Azawan."
 
@@ -38,7 +38,7 @@ When English would say *the most challenging*, you are still ranking, but you na
 
 > `zuhubun zel guzumum.`
 >
-> z-Uhubun | z-rank/more | g-happy
+> [z-Uhubun | z-rank/more | g-happy]
 >
 > "Uhubun is the happiest (of all)."
 
@@ -68,7 +68,7 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 
 > `zululon zuhubun zael guzumum.`
 >
-> z-Ululon | z-Uhubun | z-equal-rank | g-happy
+> [z-Ululon | z-Uhubun | z-equal-rank | g-happy]
 >
 > "Ululon is as happy as Uhubun."
 
@@ -275,13 +275,13 @@ When English would say *Ululon walks more intensely than Azawan*, the ladder is 
 
 > `zululon zel hohogem vawalal.`
 >
-> z-Ululon | z-rank/more | h-intensity | v-walk
+> [z-Ululon | z-rank/more | h-intensity] | v-walk
 >
 > "Ululon walks the most intensely."
 
 > `zululon zazawan zael hohogem vawalal.`
 >
-> z-Ululon | z-Azawan | z-equal-rank | h-intensity | v-walk
+> [z-Ululon | z-Azawan | z-equal-rank | h-intensity] | v-walk
 >
 > "Ululon walks as intensely as Azawan."
 

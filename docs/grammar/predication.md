@@ -60,7 +60,7 @@ Write a special adjective `gonunul` after the first name, then an extra noun (`/
 
 > `zodogol gonunul bazawan.`
 >
-> z-dog | g-SAME | b-Azawan
+> z-dog | [g-SAME | b-Azawan]
 >
 > "A dog is (named) Azawan."
 

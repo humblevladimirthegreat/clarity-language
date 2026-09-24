@@ -336,7 +336,7 @@ At arrival, the other person can answer with their own bid. The **lesser** bid s
 
 > `ululoxon.`
 >
-> Ululon-one-slot
+> Ululon-ask
 >
 > "Ululon — one slot." (the talk lasts for one ask)
 
@@ -360,7 +360,7 @@ At departure, use your own name with the reduced level:
 
 > `azawaxun.`
 >
-> Azawan-pass
+> Azawan-passing
 >
 > "Azawan — I’m leaving now."
 

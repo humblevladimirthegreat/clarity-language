@@ -107,6 +107,8 @@ If more than one slot has join **-r** in the same question, each of those **-r**
 
 > `azawan odogol.`
 >
+> Azawan | dog
+>
 > "Azawan, a dog."
 
 If only one slot is unknown, put join **-r** only there. Write the known thing as an ordinary word (`-l` / `-m`).
@@ -149,6 +151,8 @@ When a sentence body follows *yes*, write **`jael`** then the body. You do not a
 
 > `jaem.`
 >
+> j-yes-soft
+>
 > "I think so." / "Yeah."
 
 > `juel.`
@@ -157,6 +161,8 @@ When a sentence body follows *yes*, write **`jael`** then the body. You do not a
 
 > `juem.`
 >
+> j-no-soft
+>
 > "I don’t think so." / "Nah."
 
 > `jaol.`
@@ -164,6 +170,8 @@ When a sentence body follows *yes*, write **`jael`** then the body. You do not a
 > "Sure." / "I’ll take that."
 
 > `jaom.`
+>
+> j-sure-soft
 >
 > "Okay." / "Sure, I guess."
 

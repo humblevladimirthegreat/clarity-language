@@ -539,7 +539,7 @@ Examples:
 
 > `zaradul welem gelem. zudomul warar gelem.`
 >
-> z-radio | w-very | g-big . z-studio-mic | w-←radio | g-big
+> z-radio | [w-very | g-big] . z-studio-mic | [w-←radio | g-big]
 >
 > "A radio is very big. A studio mic is that big too."
 
@@ -595,7 +595,7 @@ Examples:
 
 > `zazawan vumudel. zaradul wumur gelem.`
 >
-> z-Azawan | v-mute . z-radio | w-←mute | g-big
+> z-Azawan | v-mute . z-radio | [w-←mute | g-big]
 >
 > "Azawan mutes. A radio is big as far as muting goes."
 
@@ -694,31 +694,31 @@ Examples:
 
 > `zaradul welem garedel. zudomul geler.`
 >
-> z-radio | w-very | g-red . z-studio-mic | g-←very
+> z-radio | [w-very | g-red] . z-studio-mic | g-←very
 >
 > "A radio is very red. A studio mic is that (very red) too."
 
 > `zaradul welem garedel. zudomul weler gelem.`
 >
-> z-radio | w-very | g-red . z-studio-mic | w-←very | g-big
+> z-radio | [w-very | g-red] . z-studio-mic | w-←very | g-big
 >
 > "A radio is very red. A studio mic is very big too."
 
 > `zaradul welem garedel. zazawan heler varadum.`
 >
-> z-radio | w-very | g-red . z-Azawan | h-←very | v-broadcast
+> z-radio | [w-very | g-red] . z-Azawan | h-←very | v-broadcast
 >
 > "A radio is very red. Azawan broadcasts to that degree."
 
 > `zaradul welem garedel. jeler.`
 >
-> z-radio | w-very | g-red . j-←very
+> z-radio | [w-very | g-red] . j-←very
 >
 > "A radio is very red. In that manner?!"
 
 > `zaradul welem garedel. zululon vubunul. xeler zazawan vazagal.`
 >
-> z-radio | w-very | g-red . z-Ululon | v-punch . x-←very | z-Azawan | v-scream
+> z-radio | [w-very | g-red] . z-Ululon | v-punch . x-←very | z-Azawan | v-scream
 >
 > "A radio is very red. Ululon punches. Going back to that degree, Azawan screams."
 

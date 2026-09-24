@@ -57,6 +57,8 @@ An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, cov
 
 > `zazawan vawalal zululon vurunul xol zuhubun velebel xal.`
 >
+> [[z-Azawan | v-walk | z-Ululon | v-run | x-or-exactly-one] | z-Uhubun | v-sleep | x-and]
+>
 > "(Azawan walks or Ululon runs) and Uhubun sleeps."
 
 ### Stance joins

@@ -612,7 +612,7 @@ These `/th/` moods usually sit over the whole clause. When the *could be*, chann
 
 > `zazawan wadezem gelulul vawalal.`
 >
-> z-Azawan | w-LIVE | g-blue | v-walk
+> [z-Azawan | [w-LIVE | g-blue]] | v-walk
 >
 > "Azawan walks — and that blue is from the scene (live)."
 
@@ -664,19 +664,19 @@ The same published roots stay ordinary content under other role letters. The clo
 
 > `zazawan thadezem helerem b_#22,7 vawalal.`
 >
-> z-Azawan | th-LIVE | h-as-of.ledger | b-_22,7 | v-walk
+> z-Azawan | th-LIVE | [h-as-of.ledger | b-_22,7] | v-walk
 >
 > "Azawan is walking — we're there on 22 July."
 
 > `zululon thuvuvum helerem b_#22,7 thonenom vebarum. xazawan thuvuvum helerer vawalal.`
 >
-> z-Ululon | th-WITNESSED | h-as-of.ledger | b-_22,7 | th-RESIDUE | v-abandonment | x-Azawan | th-WITNESSED | h-as-of.ledger | v-walk
+> z-Ululon | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-abandonment . x-Azawan | th-WITNESSED | h-as-of.ledger | v-walk
 >
 > "I remember: as of 22 July, Ululon had still left. Azawan is walking — still from memory, same day in the books."
 
 > `zazawan hual vezehel themebem helerem b_#22,7.`
 >
-> z-Azawan | h-always | v-tell | th-FORMER | h-as-of.ledger | b-_22,7
+> z-Azawan | h-always | v-tell | th-FORMER | [h-as-of.ledger | b-_22,7]
 >
 > "As of 22 July, Azawan always telling was not that stretch’s climate."
 

@@ -293,6 +293,26 @@ describe("compareMorphGloss", () => {
     assert.equal(block!.loose, "swan");
   });
 
+  it("extractTeachBlocks splits blockquotes separated by a blank line", () => {
+    const md = `> \`jel vawalal.\`
+>
+> j-command | v-walk
+>
+> "Walk."
+
+> \`! zazawan vawalal.\`
+>
+> ! | z-Azawan | v-walk
+>
+> "Azawan walks!"
+`;
+    const blocks = extractTeachBlocks(md);
+    assert.equal(blocks.length, 2);
+    assert.equal(blocks[1]!.agalan, "! zazawan vawalal.");
+    assert.equal(blocks[1]!.morph, "! | z-Azawan | v-walk");
+    assert.equal(blocks[1]!.loose, "Azawan walks!");
+  });
+
   it("round-trips the jael census example block", () => {
     const md = `> \`jael zugobon zam zedonen zal guzumum.\`
 >

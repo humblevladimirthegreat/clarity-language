@@ -605,13 +605,7 @@ function collectBlockquoteGroup(
       i += 1;
       continue;
     }
-    if (line.trim() === "") {
-      const next = lines[i + 1];
-      if (next !== undefined && isBlockquoteLine(next)) {
-        i += 1;
-        continue;
-      }
-    }
+    // A blank (non-`>`) line ends the blockquote: the next `>` starts a new example.
     break;
   }
   return { block, next: i };

@@ -282,7 +282,7 @@ Beginner already used two sentences for English *who / that / which*. Prefer [re
 
 > `zazawan dodogol vejel al banabal. zodor vurunul.`
 >
-> z-Azawan | d-dog | v-see | in | b-bank | z-←dog | v-run
+> z-Azawan | d-dog | v-see | [in | b-bank] . z-←dog | v-run
 >
 > "Azawan sees a dog in a bank. The dog runs."
 

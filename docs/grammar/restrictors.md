@@ -82,7 +82,7 @@ English *sometimes* is the usual match next to *never* / *always*. It still only
 
 > `juel. zuhubun vawalal hur.`
 >
-> j-no | z-Uhubun | v-walk | h-some-other-time
+> j-no . z-Uhubun | v-walk | h-some-other-time
 >
 > "No. Uhubun walks at some other time."
 
@@ -104,31 +104,31 @@ The same restrictor vowels and endings can limit **only the host you are about t
 
 > `zululon wual guzumum.`
 >
-> z-Ululon | w-always | g-happy
+> z-Ululon | [w-always | g-happy]
 >
 > "Ululon is always happy."
 
 > `zuhubun war guzumum.`
 >
-> z-Uhubun | w-sometimes | g-happy
+> z-Uhubun | [w-sometimes | g-happy]
 >
 > "Uhubun is sometimes happy."
 
 > `zazawan wanunul wal guzumum.`
 >
-> z-Azawan | w-rain | w-only-when | g-happy
+> z-Azawan | [w-rain | w-only-when | g-happy]
 >
 > "Azawan is happy only when raining."
 
 > `zululon wor guzumum.`
 >
-> z-Ululon | w-anytime | g-happy
+> z-Ululon | [w-anytime | g-happy]
 >
 > "Ululon is happy anytime."
 
 > `zuhubun wur guzumum.`
 >
-> z-Uhubun | w-some-other-time | g-happy
+> z-Uhubun | [w-some-other-time | g-happy]
 >
 > "Uhubun is happy at some other time."
 
