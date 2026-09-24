@@ -26,10 +26,10 @@ PoS + ROOT + {l|m} + NUM + {-l|-m|-n|-r}
 | **PoS** | Ordinary slot for the derived word | |
 | **ROOT** | Open content host (`V(CV)+`) | |
 | **join** | Same letter as a [lexical compound](x-compounds.md#lexical-compounds): **-l** everyday host, **-m** abstract host | `abedelohohu` *bedroom* uses **-l** |
-| **NUM** | Number stem: same marker / digits / digitless-exp body as [numbers.md](numbers.md), without a role letter and without its own ending. Tables below use [shorthand](numbers.md#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …). Running text prefers spelled CV (`raba`, `ro…`, `rawoba`, …): [writing style](numbers.md#writing-style-numeric-vs-spelled) | spoken stem starts with **`r`**, so you hear **`lr`** or **`mr`** |
+| **NUM** | Number stem: same marker / digits / digitless-exp body as [numbers.md](numbers.md), without a role letter and without its own ending. Tables below use [shorthand](numbers.md#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …). Actual words are always spelled CV (`raba`, `ro…`, `rawoba`, …): [writing style](numbers.md#writing-style-numeric-vs-spelled) | spoken stem starts with **`r`**, so you hear **`lr`** or **`mr`** |
 | **Ending** | Ordinary word ending on the **whole word**. Approximate, proper-designation, and resume use those host endings. A free number word or ordinary syntax still counts or labels outside this family. | |
 
-Shape columns keep shorthand as schematic (`ROOTl+e`); example cells use spelled forms (`zolovelrabal`). Free numbers still prefer shorthand by default.
+Shape columns keep shorthand as schematic (`ROOTl+e`); real words are always spelled (`zolovelrabal`). Shorthand is for free numbers only.
 
 **Compare with:** a free number word counts, ranks, or labels in a clause slot ([numbers.md](numbers.md)). This family names a property of the kind. Abstract host: `zolovemrabal` (join **-m**).
 
@@ -95,7 +95,7 @@ For a zero-shaped quasi, use **`ROOTl-0`** (anti-null) or **`ROOTl-0e-`** (micro
 
 ### Scalar digit morphs (`+N` / `-N`)
 
-English *a pair of…*, *three-part…*, *primary…* can name **how many parts the kind has**, not how many tokens sit in the clause. Attach a single-digit plus stem after that join. Tables use marker shorthand (**`+N`** / **`-N`**). Speech is marker + digit (`ra`+`wo` for `+1`, `ru`+`wo` for `-1`, …), so the marker vowel is part of the stem. Running-text examples prefer spelled CV (`…lrawol`). Writing **`+0`…`+9`** uses the strong readings below; **`-N`** (including **`-0`**) is the **privative** of that reading (lacks / undoes / inverse of the `+N` structure).
+English *a pair of…*, *three-part…*, *primary…* can name **how many parts the kind has**, not how many tokens sit in the clause. Attach a single-digit plus stem after that join. Tables use marker shorthand (**`+N`** / **`-N`**). Speech is marker + digit (`ra`+`wo` for `+1`, `ru`+`wo` for `-1`, …), so the marker vowel is part of the stem. Real words are always spelled CV (`…lrawol`). Writing **`+0`…`+9`** uses the strong readings below; **`-N`** (including **`-0`**) is the **privative** of that reading (lacks / undoes / inverse of the `+N` structure).
 
 > `zazawan dabenelradum vejel.`
 >

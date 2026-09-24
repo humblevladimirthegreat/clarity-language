@@ -475,14 +475,10 @@ SpeechDigitlessTail
   / "ba" { return "e"; }
   / "bu" { return "e-"; }
 
-// PoS-less number stem (numeric derivation right half)
+// PoS-less number stem (numeric derivation right half). Spelled CV only:
+// shorthand (`+3`, `#e`) is for free numbers, never inside a derivation.
 PoslessNumberStem
-  = marker:WritingMarker body:WritingNumberBody? {
-      const stem = { marker, groups: body && body.groups ? body.groups : [] };
-      if (body && body.digitlessExp) stem.digitlessExp = body.digitlessExp;
-      return stem;
-    }
-  / "r" v:SpeechMarkerV body:SpeechDigitGroups
+  = "r" v:SpeechMarkerV body:SpeechDigitGroups
     &{ return body.seps.every(function (sep) { return sep === separatorVowel(v); }); }
     digitless:SpeechDigitlessTail? {
       const stem = { marker: writingMarkerFromSpeechV(v), groups: body.groups };

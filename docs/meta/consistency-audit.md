@@ -4,40 +4,81 @@ Editors only — not linked from grammar pages. Tracks which `docs/grammar/` pag
 
 Status: `[x]` full pass · `[~]` partial (sections listed) · `[ ]` not started.
 
+## Waves
+
+Audit in waves; each wave treats earlier waves as settled. Pages within a wave are independent enough to audit in parallel.
+
+- **One agent per page.** Agents edit only their own page; cross-page problems are reported, not fixed. Exceptions: `numbers-applied.md` + `numeric-derivation.md` share one agent; `roles.md` + `x-compounds.md` share one agent; `causation.md` runs after `knowing.md` (or shares its agent).
+- **Each agent updates only its own table row.**
+- **Between waves:** run `npm run build` once, then add new settled decisions to [Decisions](#decisions-do-not-re-raise) before starting the next wave.
+- **Wave 6 last:** overview pages summarize the rest, so audit them after terms and examples settle.
+
+### Wave 0 — foundations (done)
+
 | Status | Page | Covered | Date |
 |--------|------|---------|------|
-| [ ] | `causation.md` | | |
 | [x] | `clause.md` | all | 2026-09-24 |
-| [ ] | `comparatives.md` | | |
-| [ ] | `dependents.md` | | |
-| [ ] | `english.md` | | |
-| [ ] | `hooks.md` | | |
-| [ ] | `index.md` | | |
-| [ ] | `inspect.md` | | |
-| [ ] | `intention.md` | | |
-| [ ] | `introduction.md` | | |
-| [ ] | `join-across-roles.md` | | |
-| [ ] | `joins.md` | | |
-| [ ] | `knowing.md` | | |
-| [ ] | `lexicon.md` | | |
-| [ ] | `numbers-applied.md` | | |
-| [~] | `numbers.md` | Beginner through *Saying it aloud* | 2026-09-24 |
-| [ ] | `numeric-derivation.md` | | |
 | [x] | `phonology.md` | all | 2026-09-24 |
-| [ ] | `plurality.md` | | |
-| [ ] | `predication.md` | | |
-| [ ] | `pronouns.md` | | |
-| [ ] | `questions.md` | | |
-| [ ] | `relations.md` | | |
-| [ ] | `restrictors.md` | | |
-| [ ] | `roles.md` | | |
-| [ ] | `spans.md` | | |
-| [ ] | `speech-moves.md` | | |
-| [ ] | `terminology.md` | | |
-| [ ] | `values.md` | | |
-| [ ] | `why-agelan.md` | | |
 | [x] | `word-endings.md` | all | 2026-09-24 |
-| [ ] | `x-compounds.md` | | |
+
+### Wave 1 — core cited everywhere
+
+| Status | Page | Covered | Date |
+|--------|------|---------|------|
+| [x] | `numbers.md` | all | 2026-09-24 |
+| [ ] | `pronouns.md` |  |  |
+| [ ] | `plurality.md` |  |  |
+| [ ] | `speech-moves.md` |  |  |
+
+### Wave 2 — phrase structure
+
+| Status | Page | Covered | Date |
+|--------|------|---------|------|
+| [ ] | `joins.md` |  |  |
+| [ ] | `hooks.md` |  |  |
+| [ ] | `restrictors.md` |  |  |
+| [ ] | `spans.md` |  |  |
+
+### Wave 3 — built on joins / hooks / numbers
+
+| Status | Page | Covered | Date |
+|--------|------|---------|------|
+| [ ] | `comparatives.md` |  |  |
+| [ ] | `join-across-roles.md` |  |  |
+| [ ] | `relations.md` |  |  |
+| [ ] | `numbers-applied.md` |  |  |
+| [ ] | `numeric-derivation.md` |  |  |
+
+### Wave 4 — meaning and mood
+
+| Status | Page | Covered | Date |
+|--------|------|---------|------|
+| [ ] | `questions.md` |  |  |
+| [ ] | `predication.md` |  |  |
+| [ ] | `dependents.md` |  |  |
+| [ ] | `roles.md` |  |  |
+| [ ] | `x-compounds.md` |  |  |
+
+### Wave 5 — psychology
+
+| Status | Page | Covered | Date |
+|--------|------|---------|------|
+| [ ] | `knowing.md` |  |  |
+| [ ] | `causation.md` |  |  |
+| [ ] | `intention.md` |  |  |
+| [ ] | `values.md` |  |  |
+
+### Wave 6 — overview and reference
+
+| Status | Page | Covered | Date |
+|--------|------|---------|------|
+| [ ] | `terminology.md` |  |  |
+| [ ] | `why-agelan.md` |  |  |
+| [ ] | `introduction.md` |  |  |
+| [ ] | `english.md` |  |  |
+| [ ] | `index.md` |  |  |
+| [ ] | `inspect.md` |  |  |
+| [ ] | `lexicon.md` |  |  |
 
 ## Decisions (do not re-raise)
 

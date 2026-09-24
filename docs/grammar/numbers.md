@@ -114,10 +114,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Count w
 | *bagel* | `abagel` | |
 | *fire* | `urel` | |
 | *see* | `vejel` | `ejel` *eye* |
-| *tell* | `vezehel` | `ezehel` *speech* |
-| *run* | `vurunul` | `urunul` *run* |
-| *punch* | `vubunul` | `ubunul` *punch* |
-| *scream* | `vazagal` | `azagal` *scream* |
+| *smell* | `vonozel` | `onozel` *nose* |
 
 #### English → Agalan
 
@@ -161,14 +158,14 @@ z-cookie-x | g-more-than-one
 z-Azawan | [d-bread-x | g-three] | v-see
 :::
 
-**5.** *Ululon tells the second pie.*
+**5.** *Ululon smells the second pie.*
 
 ::: details Show answer
-`zululon dububel g#2 vezehel.`
+`zululon dububel g#2 vonozel.`
 
-🔊 *zululon dububel gredul vezehel.*
+🔊 *zululon dububel gredul vonozel.*
 
-z-Ululon | [d-pie | g-2nd] | v-tell
+z-Ululon | [d-pie | g-2nd] | v-smell
 :::
 
 **6.** *Uhubun sees more than one doughnut.*
@@ -181,24 +178,24 @@ z-Ululon | [d-pie | g-2nd] | v-tell
 z-Uhubun | [d-doughnut-x | g-more-than-one] | v-see
 :::
 
-**7.** *Ululon punches three baguettes.*
+**7.** *Ululon smells three baguettes.*
 
 ::: details Show answer
-`zululon dabagulx g+3 vubunul.`
+`zululon dabagulx g+3 vonozel.`
 
-🔊 *zululon dabagulx grarel vubunul.*
+🔊 *zululon dabagulx grarel vonozel.*
 
-z-Ululon | [d-baguette-x | g-three] | v-punch
+z-Ululon | [d-baguette-x | g-three] | v-smell
 :::
 
-**8.** *Ululon screams the first fire.*
+**8.** *Ululon sees the first fire.*
 
 ::: details Show answer
-`zululon durel g#1 vazagal.`
+`zululon durel g#1 vejel.`
 
-🔊 *zululon durel grewol vazagal.*
+🔊 *zululon durel grewol vejel.*
 
-z-Ululon | [d-fire | g-1st] | v-scream
+z-Ululon | [d-fire | g-1st] | v-see
 :::
 
 #### Agalan → English
@@ -258,37 +255,37 @@ z-Azawan | [d-pie-x | g-more-than-one] | v-see
 *Azawan sees more than one pie.*
 :::
 
-**6.** `zululon dabagelx g+2 vurunul.`
+**6.** `zululon dabagelx g+2 vonozel.`
 
 ::: details Show answer
 
-🔊 *zululon dabagelx gradul vurunul.*
+🔊 *zululon dabagelx gradul vonozel.*
 
-z-Ululon | [d-bagel-x | g-two] | v-run
+z-Ululon | [d-bagel-x | g-two] | v-smell
 
-*Ululon runs two bagels.*
+*Ululon smells two bagels.*
 :::
 
-**7.** `zululon dabagelx g+ vubunul.`
+**7.** `zululon dabagelx g+ vejel.`
 
 ::: details Show answer
 
-🔊 *zululon dabagelx gral vubunul.*
+🔊 *zululon dabagelx gral vejel.*
 
-z-Ululon | [d-bagel-x | g-more-than-one] | v-punch
+z-Ululon | [d-bagel-x | g-more-than-one] | v-see
 
-*Ululon punches bagels — more than one.*
+*Ululon sees more than one bagel.*
 :::
 
-**8.** `zululon durel g#1 vubunul.`
+**8.** `zululon durel g#1 vonozel.`
 
 ::: details Show answer
 
-🔊 *zululon durel grewol vubunul.*
+🔊 *zululon durel grewol vonozel.*
 
-z-Ululon | [d-fire | g-1st] | v-punch
+z-Ululon | [d-fire | g-1st] | v-smell
 
-*Ululon punches the first fire.*
+*Ululon smells the first fire.*
 :::
 
 #### Written → spoken
@@ -385,8 +382,6 @@ g-9th
 
 ::: details Show answer
 `g+5`
-
-🔊 *graval*
 
 g-five
 :::
@@ -597,7 +592,7 @@ Same glyphs and jobs as [span-fence marks](spans.md#writing) (**`~`** soft / **`
 | **`@`** | **-n** | conventional | `g@#2`, `g@+1e`, `x@#e` |
 | **`=`** | **-r** | resume | `g=+`, `d=_`, `x=#2`, `g=#1e` |
 
-Order when both **`@`** and **`~`** apply: **`@` then `~`**. Spell **`@`** only, with uncertain tonality (same hedge habit as spans). **`=`** stands alone. Full phonetic spelling with a trailing ending letter (e.g. *grarel*, *gram*) is a pronunciation gloss on free numbers, not preferred in running text.
+A hedged conventional number (both **`@`** and **`~`**) is written with **`@`** only, as on spans. **`=`** stands alone. Full phonetic spelling with a trailing ending letter (e.g. *grarel*, *gram*) is a pronunciation gloss on free numbers, not preferred in running text.
 
 #### Marker (not written as `r`+V)
 
@@ -614,7 +609,7 @@ Place the identity symbol **immediately after** any ending mark (or after PoS wh
 
 | Speech | Preferred writing |
 |--------|-------------------|
-| *(no digit groups)* | *(empty after marker)* `g+`, `g~-`, `g=#`, `g=#`, `h_` |
+| *(no digit groups)* | *(empty after marker)* `g+`, `g~-`, `g=#`, `h_` |
 | Digit syllables (`wo`…`zo`) | Arabic **`0`–`9`** |
 | `ba` / `bu` (+ `ja` when a mantissa follows) | **`e`** / **`e-`** |
 | named exp **`0`** | **`e0`** — ones band `g+e0`; assert `g+3e0` / `g#e0` |
@@ -727,7 +722,7 @@ Endings still apply (**-m** fuzzy *about three more!*, **-n** conventional call 
 
 Under `/x/`, a digitful exponent on **`#`** is **outline depth** relative to the focused agenda item — **`x#3e2`** = *3rd sub-sub-point under the focus*; **`x#e-1`** = *parent-layer item(s)*; **`x#e0`** = *current-layer item(s)*. A flat list uses **`x#N`** (and *Finally* / *Starting with* as above).
 
-**Independence framing:** **`#`** = unmarked steps; **`+` = corroborating; **`-`** = independent (a new line of support). Ordinary *firstly / secondly* is **`x#N`**. *Starting with* without a step count is **`x#e-`**; *Finally* without a step count is **`x#e`**. Argue for or against in ordinary wording (or with evidentiality on the claim).
+**Independence framing:** **`#`** = unmarked steps; **`+`** = corroborating; **`-`** = independent (a new line of support). Ordinary *firstly / secondly* is **`x#N`**. *Starting with* without a step count is **`x#e-`**; *Finally* without a step count is **`x#e`**. Argue for or against in ordinary wording (or with evidentiality on the claim).
 
 Worked examples: `x#2` *point 2:*; `x+2` *corroborating 2:*; `x-2` *independent 2:*; `x#e` *Finally*.
 
@@ -783,12 +778,12 @@ Both writings name the **same word**. Choose the surface by **job**: a numeral i
 | Job | Prefer | Why |
 |-----|--------|-----|
 | Free number in a clause slot | **shorthand** | `g+3`, `x#2`, `d_…` — numeral as numeral |
-| [Numeric derivation](numeric-derivation.md#numeric-derivation) / kind morph | **spelled CV** | `zolovelrabal`, not `zolovel+el` |
+| [Numeric derivation](numeric-derivation.md#numeric-derivation) / kind morph | **spelled CV** (required) | `zolovelrabal` — shorthand after a root does not form a word |
 | Inventory tables | **shorthand** | patterns like `ROOTl+e` are easy to scan |
 
 **Prefer shorthand** for counts, measures, ranks, ranges, thresholds (`zagadalx g+3`, `z+3 z+5 zel`); digit-strings / times / codes (`d_555,123,4567`, `h_15,30`); scientific / engineering register (`g+5.2e-4`, `g+e3`); compact agenda markers (`x#1`, `x#3e2`); and pages that teach the numeral system.
 
-**Prefer spelled CV** for anything after a lexical join (**-l** / **-m**) on a content root (lexicon citation forms always spelled); kind morphs on a root; literary, sung, or long prose where `+` `#` `_` and second-slot `~`/`@`/`=` break word rhythm; and pronunciation teaching.
+**Always spell CV** after a lexical join (**-l** / **-m**) on a content root: kind morphs are words, not numerals. **Prefer spelled CV** for literary, sung, or long prose where `+` `#` `_` and second-slot `~`/`@`/`=` break word rhythm; and pronunciation teaching.
 
 Write free numbers with second-slot marks or trailing letters consistently. Derived words use ordinary reference endings on the host with a fully spelled `NUM`.
 
@@ -796,7 +791,7 @@ Write free numbers with second-slot marks or trailing letters consistently. Deri
 
 **Not the same job as:** derived `NUM` (no second-slot `~`/`@`/`=`). Free numbers take those marks.
 
-**Writing defaults:** (1) free numeral → shorthand by default; (2) content-root derivation → spelled CV by default; (3) shorthand in derivation tables is schematic only.
+**Writing defaults:** (1) free numeral → shorthand by default; (2) content-root derivation → always spelled CV; (3) shorthand in derivation tables is schematic only.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -818,7 +813,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Pre
 | *sit* | `vajul` | `ajul` *chair* |
 | *run* | `vurunul` | `urunul` *run* |
 | *punch* | `vubunul` | `ubunul` *punch* |
-| *elephant* | `elel` | |
+| *big* | `elem` | `elel` *elephant* |
+| *score* | `odobom` | `odobol` *trophy* |
 
 #### English → Agalan
 
@@ -832,14 +828,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Pre
 z-seat-x | g-three.about
 :::
 
-**2.** *Three (as the subject) is a trophy.*
+**2.** *Three sit.*
 
 ::: details Show answer
-`z+3 godobol.`
+`z+3 vajul.`
 
-🔊 *zrarel godobol.*
+🔊 *zrarel vajul.*
 
-z-three | g-trophy
+z-three | v-sit
 :::
 
 **3.** *Ululon runs three times.*
@@ -882,14 +878,14 @@ x-2nd | z-Azawan | v-sit
 j-three
 :::
 
-**7.** *Ululon adds three to the trophy.*
+**7.** *Ululon adds three to the score.*
 
 ::: details Show answer
-`zululon dodobol v+3.`
+`zululon dodobom v+3.`
 
-🔊 *zululon dodobol vrarel.*
+🔊 *zululon dodobom vrarel.*
 
-z-Ululon | d-trophy | v-three
+z-Ululon | d-score | v-three
 :::
 
 **8.** *Ululon punches three times.*
@@ -915,15 +911,15 @@ z-seat-x | g-two.about
 *About two seats.*
 :::
 
-**2.** `z#2 godobol.`
+**2.** `z#2 dodobol vejel.`
 
 ::: details Show answer
 
-🔊 *zredul godobol.*
+🔊 *zredul dodobol vejel.*
 
-z-2nd | g-trophy
+z-2nd | d-trophy | v-see
 
-*Second is a trophy.*
+*The second one sees the trophy.*
 :::
 
 **3.** `zululon vurunul h+.`
@@ -944,6 +940,7 @@ z-Ululon | v-run | h-more-than-one
 🔊 *jrorel.*
 
 j-_3
+
 *Three!* (score / label)
 :::
 
@@ -958,13 +955,13 @@ x-2nd | z-Ululon | v-run
 *Point 2: Ululon runs.*
 :::
 
-**6.** `zedadal gelelel g#2.`
+**6.** `zedadal gelem g#2.`
 
 ::: details Show answer
 
-🔊 *zedadal gelelel gredul.*
+🔊 *zedadal gelem gredul.*
 
-[z-seat | g-bell-pepper | g-2nd]
+[z-seat | g-big | g-2nd]
 
 *The second big seat.*
 :::
@@ -1049,8 +1046,6 @@ Write the role letter, symbol stack, then digits: `g#_1` labels a floor numbered
 
 Preferred writing first; the spoken form follows, often with its syllables in parentheses (exact **-l** unless noted). Digits in speech use the [digit table](#digits).
 
-<!-- some of the below examples are no longer taught on this page so remove them after you finish all other edits to this page. -->
-
 | Value | Preferred writing | Spoken |
 |-------|-------------------|---------------|
 | plural / more than one | `g+` | *gral* (`g` + `ra` + `l` — [digitless](#digitless)) |
@@ -1058,11 +1053,8 @@ Preferred writing first; the spoken form follows, often with its syllables in pa
 | ones band (1–9) | `g+e0` | *grabazol* (`ra` + `ba` + zo + `l` — [bare OoM](#bare-oom-bands)) |
 | three at asserted OoM 0 | `g+3e0` | *grabazojarel* (`ra` + `ba` + zo + `ja` + re + `l`) |
 | thousands band (1000–9999) | `g+e3` | *grabarel* (`ra` + `ba` + re + `l`) |
-| current generation cohort | `g#e0` | *grebazol* (`re` + `ba` + zo + `l` — [generation](numbers-applied.md#ordinal-generation)) |
 | 2nd from the end / penultimate | `g#-2` | *gruedul* (rue + du + `l`) |
 | 1st from the end / *Starting with the last one* | `g#-1` | *gruewol* (rue + wo + `l`) |
-| 3rd of gen +2 | `g#3e2` | *grebadujarel* (`re` + `ba` + du + `ja` + re + `l` — [generation](numbers-applied.md#ordinal-generation)) |
-| gen −2 cohort | `g#e-2` | *grebudul* (`re` + `bu` + du + `l`) |
 | for the penultimate time | `h#-2` | *hruedul* |
 | *Penultimate!* | `j#-2` | *jruedul* |
 | 2nd-from-end point: | `x#-2` | *xruedul* |
@@ -1102,12 +1094,7 @@ Preferred writing first; the spoken form follows, often with its syllables in pa
 | phone 555-123-4567 | `d_555,123,4567` | *drovavavathowodurethomovagulel* (`d` + `ro` + va×3 · **tho** · wo du re · **tho** · mo va gu le + `l`) |
 | scientific 5.2487083e-4 | `g+5.2487083e-4` | *grabumojavajedumohalezoharel* (`ra` + bu mo **ja** + va **je** + du mo ha · le zo ha · re) |
 | 25% | `g+25%` | *graduvajol* (`g` + `ra` + du va **jo** + `l`) |
-| 25% of the cats | `zagadalx g+25%` | host whole + `/ɡ/` percent — [denominator](numbers-applied.md#percent-denominators) |
-| about 3% | `g~+3%` | *grarejom* (`ra` + re **jo** + `m`) |
-| −12.5% | `g-12.5%` | *gruwodujevajol* (`ru` + wo du **je** va **jo**) |
-| 100% | `g+100%` | *grawozozojol* (`ra` + wo zo zo **jo**; normal mantissa digits) |
 | +2 pp | `g+2%*` | *gradujul* (`ra` + du **ju**) |
-| about −1.5 pp | `g~-1.5%*` | *gruwojevajum* (`ru` + wo **je** va **ju** + `m`) |
 | neutral point 1 / 2 | `x#1`, `x#2` | *xrewol*, *xredul* (`x` + `re` + …) |
 | end-relative point 2 | `x#-2` | *xruedul* (x + rue + du) |
 | corroborating item 3 | `x+3` | *xrarel* (`x` + `ra` + re) |
@@ -1117,7 +1104,6 @@ Preferred writing first; the spoken form follows, often with its syllables in pa
 | three times / ×3 | `h+3` | *hrarel* (`h` + `ra` + re) |
 | ÷3 / every third | `h-3` | *hrurel* (`h` + `ru` + re) |
 | at 15:30 | `h_15,30` | *hrowovathorezol* (`h` + `ro` + wo va · **tho** · re zo) — bare `hro` = time |
-| on 101.1 (frequency) | `/h/` *on* + `b_101.1` | not bare `h_…`; host + `/b/` digit-string |
 | for the third time | `h#3` | *hrerel* (`h` + `re` + re) |
 | Three! (label / score) | `j_3` | *jrorel* (`j` + `ro` + re) |
 | Three more! | `j+3` | *jrarel* (`j` + `ra` + re) |
@@ -1125,7 +1111,7 @@ Preferred writing first; the spoken form follows, often with its syllables in pa
 | twenty-seven! (label) | `j_27` | *jrodulel* (`j` + `ro` + du le) |
 | First! (place cheer) | `j#1` | *jrewol* (`j` + `re` + wo) |
 
-In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…`). Prefer naming the whole as the host of a `/ɡ/` **`jo`** percent ([denominator](numbers-applied.md#percent-denominators): `zagadalx g+25%`).
+In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…`).
 
 ### Ambient magnitude (casual)
 <a id="ambient-magnitude"></a>
@@ -1194,7 +1180,7 @@ Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as o
 
 <a id="imaginary"></a>
 
-**Imaginary (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅), no mantissa. Completes the scalar special grid. Reading is **metaphorical**: a magnitude named *as if* it counted, without entering the real tally.
+**Imaginary (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅**), no mantissa. Completes the scalar special grid. Reading is **metaphorical**: a magnitude named *as if* it counted, without entering the real tally.
 
 **Compare with:** clause-level pretensive *as if* uses spelled mood **`adade`** ([knowing.md § Notional](knowing.md#notional), e.g. `thadadem`). Free **`grubul`** / **`xrubul`** / **`thrubul`** / **`vrubul`** / **`jrubul`** are amount, discourse *imagine that:*, stance *as if*, verb *treat as imaginary*, and cheer on the number grid.
 
@@ -1206,7 +1192,7 @@ Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as o
 | **-m** on **`ba`∅** (`…em`) | **Arbitrarily large but finite** on scalars (`g~+e` / `g~-e`); on ordinals (`g~#e`) = **near last place** |
 | **-m** on **`bu`∅** (`…e-m`) | Soft / approximate small on scalars (`g~+e-`); open imaginary on **`ru`+`bu`∅** (`g~-e-`); on ordinals (`g~#e-`) = **near first place** |
 | **-n** | Conventional designation of that special (named ∞ symbol, official *last place* / *starting* title, conventional *imaginary* label, …) |
-| **-r** | Resume a prior special value of that marker+exp polarity (`g=+e` = *that +∞ again*; `g=+e-` = *that start/small again*; `g=-e-` = *that imaginary amount again*) |
+| **-r** | Resume a prior special value of that marker+exp polarity (`g=+e` = *that +∞ again*; `g=+e-` = *that arbitrarily small amount again*; `g=-e-` = *that imaginary amount again*) |
 
 ##### Number as verb and adverb
 
@@ -1225,7 +1211,7 @@ No-mantissa digitless-exp under `/v/` and `/h/` inherit special-value identity (
 | **`v~-e-`** | treat as *sort of* imaginary |
 | **`h+e`** | **unbounded multiplicity** (× without bound / unboundedly many times) |
 | **`h~+e`** | *many times but finite* |
-| **`h+e-`** | **unbounded duplicity** (÷ without bound / into unboundedly many parts) |
+| **`h+e-`** | **unbounded division** (÷ without bound / into unboundedly many parts) |
 | **`h~+e-`** | *÷ a lot / into many parts, but finite* |
 
 **Stance:** imaginary framing of a whole claim is stance, not manner, so it sits on `/th/`: **`th-e-`** = *as if* / *for the sake of argument*; **`th~-e-`** = open imaginary framing. See [number as stance](#number-as-stance-by-marker).
@@ -1301,7 +1287,7 @@ Same under `/z/` `/d/` `/b/` (`z+0e` = absolute-zero as subject; `z+0e-1` = deci
 | **`v-0e-`** | leave **micro-residue** |
 | **`v-0e-1`** | leave **residue at OoM −1** |
 | **`h+0e`** | **zero times (totally)** / annihilate repetition. Applicability *never* is restrictor **`hal`**. |
-| **`h+0e-`** | sterile / grain-null multiplicity framing |
+| **`h+0e-`** | sterile / grain-null repetition framing |
 | **`h+0e-1`** | zero-times framing **at OoM −1** |
 | **`h-0e`** | with irreducible residual repetition |
 | **`h-0e-1`** | residual repetition **at OoM −1** |
@@ -1344,10 +1330,10 @@ Soft **-m** hedges (*near-disqualified*, …). Free twin of derivation **`ROOTl#
 | Free | Derived (spelled) | Contrast |
 |------|---------|----------|
 | **`v+0el`** | **`vodobolrazobal`** | hostless *annihilate* vs *annihilate-the-score* (kind) |
-| **`g+0e`** | **`zedudalrazobal`** | absolute-zero amount vs total-null credit-kind |
-| **`g+0e-1`** | **`zedudalrabuwojazol`** | deci-null amount vs kind nullified at OoM −1 |
-| **`g-0e-1`** | **`zedudalrubuwojazol`** | deci-residue amount vs kind residue at OoM −1 |
-| **`g#0e`** | **`zolonalrezobal`** | disqualified place vs disqualified-*kind* |
+| **`g+0e`** | **`zonenolrazobal`** | absolute-zero amount vs totally wiped debt-kind |
+| **`g+0e-1`** | **`zonenolrabuwojazol`** | deci-null amount vs debt-kind nullified at OoM −1 |
+| **`g-0e-1`** | **`zonenolrubuwojazol`** | deci-residue amount vs debt-kind residue at OoM −1 |
+| **`g#0e`** | **`zolonalrezobal`** | disqualified place vs disqualified institution-kind |
 | **`v+0l`** | **`vodobolrazol`** | ordinary zeroing / null-reset — weaker than **`…+0e`** |
 
 Free **`g+e0`** / **`g+Ne0`** are bare OoM / OoM assert on free numbers, not kind derivation morphs. Engineering OoM-null is **`±0e-1`**.
@@ -1390,7 +1376,7 @@ Mantissa = how many joke-units of **late** (**`ba`**) or **early** (**`bu`**) ra
 | **-l** | Committed hyperbole — speaker stands behind the joke magnitude | `g+1e` *one gazillion*; `g#1e` *the gazillionth*; `g#1e-` *the gazillionth-first* |
 | **-m** | Soft / hedged hyperbole — *about a gazillion*, *umpteen* | `g~+1e` *roughly a gazillion*; `g~#1e` *about the gazillionth* |
 | **-n** | **Proper noun / proper designation** — the hyperbolic numeral as a name (a building called *the Gazillion*, a title *One Gazillion*, *the Gazillionth*, …) | `g@+1e`; `g@#1e` |
-| **-r** | Resume that prior hyperbolic amount or place (mantissa may repeat or drop when clear: `g=+1e` / `g=+e`; `g=#1e` / `g=#e` if the prior was this hyperbole) | |
+| **-r** | Resume that prior hyperbolic amount or place; keep the mantissa (`g=+1e`, `g=#1e`), since `g=+e` / `g=#e` resume +∞ / last place | |
 
 `/v/` `/h/` `/j/` `/x/` (hyperbole) inherit freely:
 
@@ -1427,7 +1413,6 @@ Short drills for Advanced. Try each item before opening **Show answer**. Digitle
 | *Uhubun* | `uhubun` | |
 | *star* | `arazal` | |
 | *telescope* | `elezol` | |
-| *sun* | `unul` | |
 | *see* | `vejel` | `ejel` *eye* |
 
 #### English → Agalan
@@ -1478,6 +1463,7 @@ j-plus-infinity
 `j+0e.`
 
 🔊 *jrazobal.*
+
 j-+-0e
 :::
 
@@ -1493,15 +1479,15 @@ x-starting-with | z-Uhubun | v-see
 
 #### Agalan → English
 
-**1.** `zunulx g+e.`
+**1.** `zarazalx g~+e.`
 
 ::: details Show answer
 
-🔊 *zunulx grabal.*
+🔊 *zarazalx grabam.*
 
-z-sun-x | g-plus-infinity
+z-star-x | g-plus-infinity.about
 
-*Suns — infinitely many.*
+*Stars — a huge but finite number.*
 :::
 
 **2.** `j#e.`
