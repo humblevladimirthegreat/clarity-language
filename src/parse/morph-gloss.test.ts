@@ -188,7 +188,7 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
   it("inclusive we", () => {
     expectLine(
-      "jael xezazal zahan themabam vawalal vul.",
+      "jael xezazam zahan themabam vawalal vul.",
       "j-yes | x-therefore | z-interlocutors | th-plan-sketch | [v-walk | v-not]",
     );
   });

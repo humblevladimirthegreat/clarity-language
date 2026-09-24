@@ -543,7 +543,7 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 | *although* / *while* / *until* / *before* / *after* | same pole + **`barl`** shape on adverb `/h/`, **-m** ([dependent clauses](dependents.md#dependent-clauses)): **`hezebam`** / **`hegemum`** / … |
 | *so that* / *in order to* | same shape: **`holalam`** ([so that](dependents.md#so-that)); NP intended get = **`holalam`** + `/b/` **noun** |
 | *despite* (NP) | same **`hezebam`** (or **`gezebam`**) + `/b/` **noun**, not a second pole |
-| *therefore* (discourse) | **`xezazal`** ([continue](dependents.md#continue-x)) |
+| *therefore* (discourse) | **`xezazam`** ([continue](dependents.md#continue-x)) |
 | *however* / *meanwhile* (discourse) | **`xezebal`** / **`xanelol`** |
 
 ### Translation practice

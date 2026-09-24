@@ -97,12 +97,13 @@ const SPECIAL_PRONOUN: Record<string, string> = {
   enenu: "someone",
 };
 
+/** `/x/` linkers keyed by root + ending (`xezazam` *therefore*, `xezebal` *however*). */
 const LINKER_ENGLISH: Record<string, string> = {
-  ezaza: "therefore",
-  ezeba: "however",
-  anelo: "meanwhile",
-  uvumu: "next",
-  onugo: "but",
+  ezazam: "therefore",
+  ezebal: "however",
+  anelol: "meanwhile",
+  uvumul: "next",
+  onugol: "but",
 };
 
 const JOIN_JOB: Record<string, string> = {
@@ -1263,8 +1264,8 @@ function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): st
       word.rootGloss?.concrete || word.rootGloss?.abstract || word.hookCompound.stem,
     );
   }
-  if (word.pos === "x" && word.ending === "l" && roots.length === 1 && LINKER_ENGLISH[roots[0]!]) {
-    return LINKER_ENGLISH[roots[0]!]!;
+  if (word.pos === "x" && roots.length === 1 && LINKER_ENGLISH[roots[0]! + word.ending]) {
+    return LINKER_ENGLISH[roots[0]! + word.ending]!;
   }
   if (word.pos === "j" && word.ending === "l" && roots.length === 1 && roots[0] === "awave") return "greeting";
   if (roots.length === 1) {

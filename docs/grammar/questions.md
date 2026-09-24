@@ -70,7 +70,7 @@ If the reply is just the fill, not a full sentence, write it as a [citation](wor
 >
 > "Ululon."
 
-**Compare with:** pointing back at someone already named uses content resume **-r** ([pronouns](pronouns.md)). Fill-ask uses only **join** **-r**. You can tell the difference because resumes always have at least five letters due to copying three from the antecedent, whereas joins always have less than five letters. 
+**Compare with:** pointing back at someone already named uses content resume **-r** ([pronouns](pronouns.md)). Fill-ask uses only **join** **-r**. You can tell the difference because resumes always have at least five letters due to copying three from the antecedent, whereas joins always have fewer than five letters.
 
 ### Question tone (`?`)
 <a id="question-tone"></a>
@@ -202,7 +202,7 @@ When the **outer** sentence is a claim (*Azawan sees…*, *Azawan tells Ululon�
 >
 > z-Azawan | v-see | d-whether-clause.open | z-Ululon | v-sleep
 >
-> "Azawan sees whether Ululon sleeps, I wonder."
+> "Azawan sees whether Ululon sleeps (among other things)."
 
 **Compare with:** a matrix question (*Does Azawan walk?*) writes **`jol`** on the **outer** turn. *If Ululon walks* as a condition is **`thadorom barl`**, not inner **`jol`**.
 
@@ -383,7 +383,7 @@ Beginner already used *yes* / *true* (**`jael`**), *no* / *false* (**`juel`**), 
 | **`ao`** (`jaol` / `jaom`) | option uptake | *sure* | **a** ≈ add + **o** ≈ one |
 | **`ue`** (`juel` / `juem`) | flip / mismatch | *false* | **u** ≈ undo + **e** ≈ order (judged out of line) |
 | **`uo`** (`juol` / `juom`) | reject this option | *not that* | **u** ≈ undo + **o** ≈ one |
-| **`ua`** (`jual` / `juam`) | reject the whole frame | *Hell No!* | **u** ≈ undo all the way down |
+| **`ua`** (`jual` / `juam`) | reject the whole frame | *Hell no!* | **u** ≈ undo all the way down |
 
 | Ask flavor | Exact (**-l**) | Soft (**-m**) |
 |------------|----------------|----------------|
@@ -422,7 +422,7 @@ Beginner already used *who/what* (**…ar**) and *what else* (**…ur**). Length
 | **1** | *What/which (unknown) X?* | *Any X?* | *Which X is first?* | *What else (besides X)?* |
 | **2+** | *Which of these?* | *Any of these?* | *Which ranks highest?* | *What else?* / *Other than these?* |
 
-Bare **-r** in the queried slot is unbound *who* / *what* / *where*. Bare **`var`** / **`xar`** is *what did they do?* / *what happened?*. Bare **`har`** is *when?*.
+Bare **-r** in the queried slot is unbound *who* / *what*. Bare **`var`** / **`xar`** is *what did they do?* / *what happened?*. Bare **`har`** is *when?*.
 
 ### When?
 <a id="when"></a>
@@ -442,6 +442,36 @@ To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in
 | **`hur`** / **`wur`** | *some other time* | *When else?* |
 
 **Related form:** statement occasion readings live with [restrictors](restrictors.md#more-occasions).
+
+### Where?
+<a id="where"></a>
+
+To ask *where?*, keep the [extra-noun hook](hooks.md#extra-noun) that says how the place relates to the event, and put the blank **`bar`** in the `/b/` slot after it. The hook picks which *where* you mean.
+
+> `jol zuhubun vawalal ol bar.`
+>
+> j-question | z-Uhubun | v-walk | [at | b-who]
+>
+> "Where does Uhubun walk?"
+
+> `jol zodogol velebel al bar.`
+>
+> j-question | z-dog | v-sleep | [in | b-who]
+>
+> "What does the dog sleep in?"
+
+| Agalan | English |
+|--------|---------|
+| **`ol bar`** | *Where (at)?* |
+| **`al bar`** | *In what?* |
+| **`ul bar`** | *Where from?* |
+| **`el bar`** | *For what?* |
+| **`ol bor`** | *Anywhere?* |
+| **`ol bur`** | *Where else?* |
+
+Answer with the hook and the landmark, as a [citation](word-endings.md#citation-forms): `ol bohohul.` ("At the house.").
+
+**Compare with:** *when?* is **`har`** on `/h/`. Occasions are times or cases, so a place never goes there.
 
 ### Yes/no with single-item / standalone
 <a id="yes-no-single-item-standalone"></a>
@@ -581,11 +611,11 @@ j-question | v-who
 *What did they do?*
 :::
 
-**4.** `jol donel zor.`
+**4.** `jol donel dor.`
 
 ::: details Show answer
 
-j-question | d-phone | z-which
+j-question | [d-phone | d-which]
 
 *Any phone?*
 :::
@@ -607,20 +637,20 @@ j-refuse-option-soft
 *Not that.* (soft reject of this option)
 :::
 
-**7.** `juel vululel.`
+**7.** Reply to `jol zululon vul vululel.` (*Didn’t Ululon lie?*): `juel vululel.`
 
 ::: details Show answer
 
-j-no | v-lie
+j-question | z-Ululon | v-not | v-lie . j-no | v-lie
 
-*False: did lie.*
+*Didn’t Ululon lie? — False: (Ululon) did lie.*
 :::
 
-**8.** `jol zar vezehel zuhubun har.`
+**8.** `jol zar vezehel buhubun har.`
 
 ::: details Show answer
 
-j-question | z-who | v-tell | z-Uhubun | h-when
+j-question | z-who | v-tell | b-Uhubun | h-when
 
 *Who tells Uhubun when?*
 :::
@@ -731,7 +761,6 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Uhubun* | `uhubun` |
 | *trophy* | `odobol` |
 | *bell* | `obelel` |
-| *clap* | `agabal` |
 
 #### English → Agalan
 
@@ -811,12 +840,13 @@ j-question | z-ranked-or
 *Do nothing?* / *Skip it?*
 :::
 
-**5.** `jol zagabal zodobol zel.`
+**5.** `jol zululon zuhubun zel.`
 
 ::: details Show answer
 
-j-question | [z-clap | z-trophy | z-rank/more]
-*Clap before trophy?* (closed rank of those two)
+j-question | [z-Ululon | z-Uhubun | z-rank/more]
+
+*Ululon ahead of Uhubun?* (closed rank of those two)
 :::
 
 ## See also

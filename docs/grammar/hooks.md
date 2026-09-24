@@ -140,6 +140,8 @@ Simplex vowels (one vowel plus an ending):
 >
 > "A dog sleeps in a house."
 
+To ask *where?*, put the fill-ask blank **`bar`** after the hook (`ol bar` *where?*, `ul bar` *where from?*) — see [Where?](questions.md#where).
+
 > `zodogol velebel welem al bohohul.`
 >
 > z-dog | v-sleep | [[w-very | in] | b-house]
@@ -479,7 +481,7 @@ Beginner already used a hook at the front of a default statement. Same spellings
 
 One discourse hook per opener (no parallel discourse chains on one turn marker). In-clause chains stay inside the body. After an explicit turn marker, the same spellings in the body are in-clause hooks.
 
-On a non-initial conjunct under a [clause `/x/` fence](joins.md#right-close), the hook sits immediately before that conjunct’s body: `A al B xam` → *A and additionally B*. Before an **`/x/`** linker (*therefore*, *however*, …), it scopes the linker+body stretch: `al xezazal …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xezazal …` when one cue is enough.
+On a non-initial conjunct under a [clause `/x/` fence](joins.md#right-close), the hook sits immediately before that conjunct’s body: `A al B xam` → *A and additionally B*. Before an **`/x/`** linker (*therefore*, *however*, …), it scopes the linker+body stretch: `al xezazam …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xezazam …` when one cue is enough.
 
 > `jazawan al zululon vawalal.`
 >

@@ -58,11 +58,11 @@ Write a special adjective `gonunul` after the first name, then an extra noun (`/
 >
 > "Ululon is (the same person as) Azawan."
 
-> `zodogol gonunul bazawan.`
+> `zugugal gonunul bazawan.`
 >
-> z-dog | [g-SAME | b-Azawan]
+> z-guard | [g-SAME | b-Azawan]
 >
-> "A dog is (named) Azawan."
+> "The guard is Azawan."
 
 **Compare with:** *Azawan is a dog* uses [kind / role](#classification) (`godogol`). Use **`SAME`** when two labels name one person. *A house like Azawan’s* is resemblance ([simile](relations.md#similative) `gurorom`), not one house under two names.
 
@@ -84,8 +84,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *police* | `obolul` |
 | *person* | `eberel` |
 | *page* | `ababel` |
-| *fingerprint* | `uvunul` |
-| *camera* | `ameral` |
 | *blue* | `elulul` |
 | *red* | `aredel` |
 | *Japanese* | `ajabam` |
@@ -136,20 +134,20 @@ z-Ululon | g-challenge
 z-Ululon | g-police
 :::
 
-**6.** *The fingerprint is Azawan.*
+**6.** *The guard is Azawan.*
 
 ::: details Show answer
-`zuvunul gonunul bazawan.`
+`zugugal gonunul bazawan.`
 
-z-fingerprint | [g-SAME | b-Azawan]
+z-guard | [g-SAME | b-Azawan]
 :::
 
-**7.** *The camera is Uhubun.*
+**7.** *The police officer is Uhubun.*
 
 ::: details Show answer
-`zameral gonunul buhubun.`
+`zobolul gonunul buhubun.`
 
-z-camera | [g-SAME | b-Uhubun]
+z-police | [g-SAME | b-Uhubun]
 :::
 
 **8.** *Ululon is Azawan.*
@@ -189,22 +187,22 @@ z-page | g-red
 *The page is red.*
 :::
 
-**4.** `zuvunul gonunul bululon.`
+**4.** `zugugal gonunul bululon.`
 
 ::: details Show answer
 
-z-fingerprint | [g-SAME | b-Ululon]
+z-guard | [g-SAME | b-Ululon]
 
-*The fingerprint is Ululon.*
+*The guard is Ululon.*
 :::
 
-**5.** `zazawan gonunul bobolul.`
+**5.** `zobolul gonunul bazawan.`
 
 ::: details Show answer
 
-z-Azawan | [g-SAME | b-police]
+z-police | [g-SAME | b-Azawan]
 
-*Azawan is (the same as) a police officer.*
+*The police officer is Azawan.*
 :::
 
 **6.** `zugugal vurunul.`
@@ -239,7 +237,7 @@ z-Uhubun | [g-SAME | b-Azawan]
 
 ### Classification packaging
 
-You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra choice here is how tightly that kind holds: hedge it, mark it as the usual type, or deny it. The kind word stays on `/ɡ/`; a following hedge `/w/`, characterizing **`hual`**, or negation **`gul`** packages that same pair.
+You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra choice here is how tightly that kind holds: hedge it, mark it as the usual type, or deny it. The kind word stays on `/ɡ/`; a hedge `/w/` before it, characterizing **`hual`**, or negation **`gul`** packages that same pair.
 
 > `zazawan godogol gul.`
 >
@@ -249,7 +247,7 @@ You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra c
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| classifying `/ɡ/` plus a `/w/` hedge | soft / hedged class | *Azawan is something of a dog* / *a dog, sort of* |
+| `/w/` hedge before the classifying `/ɡ/` | soft / hedged class | *Azawan is something of a dog* / *a dog, sort of* |
 | `zazawan godogol hual` | characterizing / habitual | *Azawan is the dog type* |
 | `zazawan godogol gul` | negation | *Azawan is not a dog* |
 
@@ -280,7 +278,7 @@ Beginner already used closed **`gonunul`** (*is the same as*). The other endings
 | `zululon theraram gonunul bazawan` | *Ululon is allegedly Azawan* |
 | `zeberel gonunul bazawan` | inside a noun phrase: *the person who is Azawan* |
 
-**Compare with:** ordinary *coin* is `zonunul` (or a *token*-like adjective). Identity is **`gonunu…`** plus a following `/b/` label, kept next to each other.
+**Compare with:** ordinary *coin* as a noun is `zonunul`. Identity is **`gonunul`** / **`gonunum`** plus a following `/b/` label, kept next to each other.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -323,12 +321,12 @@ z-Azawan | g-guard | g-not
 [z-Ululon | g-craft] | h-always
 :::
 
-**3.** *The framed-picture is Azawan.*
+**3.** *The guard is Azawan.*
 
 ::: details Show answer
-`zamerel gonunul bazawan.`
+`zugugal gonunul bazawan.`
 
-z-framed-picture | [g-SAME | b-Azawan]
+z-guard | [g-SAME | b-Azawan]
 :::
 
 **4.** *Ululon is basically Azawan.*
@@ -347,28 +345,28 @@ z-Ululon | [g-same | b-Azawan]
 [z-person | [g-SAME | b-Uhubun]] | d-palette | v-see
 :::
 
-**6.** *Azawan is Ululon (titled identity).*
+**6.** *The guard is basically Uhubun.*
 
 ::: details Show answer
-`zazawan gonunun bululon.`
+`zugugal gonunum buhubun.`
 
-z-Azawan | [g-Onunun | b-Ululon]
+z-guard | [g-same | b-Uhubun]
 :::
 
-**7.** *Ululon is the same (as already ascribed) as Azawan.*
+**7.** *The person who is Azawan sees a framed-picture.*
 
 ::: details Show answer
-`zululon gonunur bazawan.`
+`zeberel gonunul bazawan damerel vejel.`
 
-z-Ululon | [g-←coin.full | b-Azawan]
+[z-person | [g-SAME | b-Azawan]] | d-framed-picture | v-see
 :::
 
-**8.** *The framed-picture is not (identical to) Uhubun.*
+**8.** *The guard is not (identical to) Uhubun.*
 
 ::: details Show answer
-`zamerel gonunul buhubun gul.`
+`zugugal gonunul buhubun gul.`
 
-z-framed-picture | [g-SAME | b-Uhubun] | g-not
+z-guard | [g-SAME | b-Uhubun] | g-not
 :::
 
 #### Agalan → English
@@ -391,13 +389,13 @@ z-Uhubun | g-guard | g-not
 *Azawan is the craft type.*
 :::
 
-**3.** `zamerel gonunum bazawan.`
+**3.** `zugugal gonunum bazawan.`
 
 ::: details Show answer
 
-z-framed-picture | [g-same | b-Azawan]
+z-guard | [g-same | b-Azawan]
 
-*The framed-picture is basically Azawan.*
+*The guard is basically Azawan.*
 :::
 
 **4.** `zeberel gonunul bazawan daledel vejel.`
@@ -409,31 +407,31 @@ z-framed-picture | [g-same | b-Azawan]
 *The person who is Azawan sees a palette.*
 :::
 
-**5.** `zululon gonunun buhubun.`
+**5.** `zululon gonunul buhubun gul.`
 
 ::: details Show answer
 
-z-Ululon | [g-Onunun | b-Uhubun]
+z-Ululon | [g-SAME | b-Uhubun] | g-not
 
-*Ululon is Uhubun (titled identity).*
+*Ululon is not Uhubun.*
 :::
 
-**6.** `zazawan gonunur buhubun.`
+**6.** `zazawan gugugal hual.`
 
 ::: details Show answer
 
-z-Azawan | [g-←coin.full | b-Uhubun]
+[z-Azawan | g-guard] | h-always
 
-*Azawan is the same (as already ascribed) as Uhubun.*
+*Azawan is the guard type.*
 :::
 
-**7.** `zamerel garedel gonunul bululon gul.`
+**7.** `zamerel garedel.`
 
 ::: details Show answer
 
-[z-framed-picture | g-red | [g-SAME | b-Ululon]] | g-not
+z-framed-picture | g-red
 
-*The red framed-picture is not (identical to) Ululon.*
+*The framed-picture is red.*
 :::
 
 **8.** `zululon gagaral gul.`

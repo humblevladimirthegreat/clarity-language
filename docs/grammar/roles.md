@@ -62,11 +62,11 @@ English *a sleep-place* names the spot an event sits in, from the same idea as *
 
 You can name that kind of place with no prior sleep in the talk:
 
-> `zexelebel vajul.`
+> `zazawan dexelebel vejel.`
 >
-> z-place-x-sleep | v-sit
+> z-Azawan | d-place-x-sleep | v-see
 >
-> "A sleep-place sits."
+> "Azawan sees a sleep-place."
 
 Once the talk already has a matching event, **-r** means **this** scene of that event, not a kind of place. The next sentence is a new claim about the place (who sees it, who punches it), not a locative on the first verb.
 
@@ -151,15 +151,15 @@ To say someone **is a teacher**, put the same role stem on `/ɡ/`, as in [classi
 >
 > "Azawan is a struggler."
 
-The same adjective after another noun is English *sitting guard* / *fighter friend*: the host is classified as that role.
+The same adjective after another noun is English *fighter guard*: the host is classified as that role.
 
-> `zazawan dugugal gaxajul vejel.`
+> `zazawan dugugal gaxuvugul vejel.`
 >
-> z-Azawan | [d-guard | g-agent-x-chair] | v-see
+> z-Azawan | [d-guard | g-agent-x-fight] | v-see
 >
-> "Azawan sees a sitting guard."
+> "Azawan sees a fighter guard."
 
-**Compare with:** ordinary `gajul` is *chair* / *position* as a property. English *the guard who sat (that time)* with extra participants or a place is [two sentences](dependents.md#which-noun), not this kind word.
+**Compare with:** ordinary `guvugul` is *fight* as a property. English *the guard who fought (that time)* with extra participants or a place is [two sentences](dependents.md#which-noun), not this kind word.
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -258,13 +258,13 @@ z-Azawan | [g-bond | b-Ululon] . z-←bond | v-fight
 
 #### Agalan → English
 
-**1.** `zexelebel vajul.`
+**1.** `zululon dexelebel vejel.`
 
 ::: details Show answer
 
-z-place-x-sleep | v-sit
+z-Ululon | d-place-x-sleep | v-see
 
-*A sleep-place sits.*
+*Ululon sees a sleep-place.*
 :::
 
 **2.** `zuhubun zazawan vejel. zuxejer vajul.`
@@ -303,13 +303,13 @@ z-Ululon | d-construction | v-see
 *Ululon sees a construction site.*
 :::
 
-**6.** `zazawan zululon vuvugul. duxuvugur vazagal.`
+**6.** `zazawan zululon vuvugul. zuxuvugur vazagal.`
 
 ::: details Show answer
 
-z-Azawan | z-Ululon | v-fight . d-←fight | v-scream
+z-Azawan | z-Ululon | v-fight . z-←fight | v-scream
 
-*Azawan fought Ululon. The one fought screams.*
+*Azawan fights Ululon. The one fought screams.*
 :::
 
 **7.** `zazawan vezehel. zoxezeher vurunul.`
@@ -407,8 +407,8 @@ English *up* / *down* here follows the pull of gravity, not a face. Write **`uba
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`ubal`** | skyward, shared gravity frame | *up* / *rise* | `ubal` *up* | ⏫: away from the pull |
-| **`odowol`** | toward the pull, shared gravity frame | *down* / *fall* | `odowol` *down* | ⏬: toward the pull |
+| **`ubal`** | skyward, shared gravity frame | *up* | | ⏫: away from the pull |
+| **`odowol`** | toward the pull, shared gravity frame | *down* | | ⏬: toward the pull |
 | **`everel`** | the vertical axis | *up–down axis* | | ↕️: the axis only |
 
 ### Viewpoint vs landmark
@@ -571,7 +571,7 @@ j-command | v-walk | h-west
 
 z-ship | g-south
 
-*The ship on the south.*
+*The ship to the south.*
 :::
 
 **4.** `jel vawalal hubal.`
@@ -624,9 +624,9 @@ j-command | z-Ululon | v-walk | h-down
 
 ### Arrow roots as talk-moves
 
-When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root **bare** (no **`x`** + facing person). Generic heading is **`ogomo`** (*direction*). Facing-relative ahead / back still uses **`oroho` / `oju` × ANCHOR**.
+When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root **bare** (no **`th`** + facing person). Generic heading is **`ogomo`** (*direction*). Facing-relative ahead / back still uses **`DIR th ANCHOR`**.
 
-> `zazawan vawalal. xezazal zululon vurunul.`
+> `zazawan vawalal. xezazam zululon vurunul.`
 >
 > z-Azawan | v-walk . x-therefore | z-Ululon | v-run
 >
@@ -634,12 +634,12 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| **`ezazal`** (bare) | talk moves on | *progress*; discourse **`xezazal`** *therefore* |
-| **`ewezel`** (bare) | talk comes back | *return* |
-| **`ozohel`** (bare) | talk pulls back | *retreat* |
+| **`ezazam`** (bare) | talk moves on | *progress*; discourse **`xezazam`** *therefore* |
+| **`ewezem`** (bare) | talk comes back | *return* |
+| **`ozohem`** (bare) | talk pulls back | *retreat* |
 | **`ogomol`** | heading in general | *compass* / *direction* |
 
-**For *therefore*, use:** the [linker](dependents.md#sentence-linkers) **`xezazal`**. Body *left* / *right* still needs **`DIR th ANCHOR`**.
+**For *therefore*, use:** the [linker](dependents.md#sentence-linkers) **`xezazam`**. Body *left* / *right* still needs **`DIR th ANCHOR`**.
 
 ## See also
 

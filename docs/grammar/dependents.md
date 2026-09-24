@@ -33,7 +33,7 @@ In the main sentence, a **stand-in** **`darl`** (role letter + **`a`** + **`-rl`
 
 Put **`darl` last** in its slot in the main sentence, and put the dependent **immediately after** it. Rearrange free word order so **`darl`** stays last in that slot.
 
-The main sentence stops after **`darl`**; the next full sentence is the content that **`darl`** stands for. Do not open that inner sentence with `/j/`. The stand-in vowel already types it (*that* **`a`**, *whether* **`o`**). The inner sentence always names who does the verb (`/z/`). English often drops that person (*wants to walk*; *tells Ululon to sit*); write the name again. Resume **-r** is [pronouns](pronouns.md).
+The main sentence stops after **`darl`**; the next full sentence is the content that **`darl`** stands for. Do not open that inner sentence with `/j/`. The stand-in vowel already types it (*that* **`a`**, *whether* **`o`**). With **`darl`**, **`dorl`**, and **`barl`**, the inner sentence names who does the verb (`/z/`). English often drops that person (*wants to walk*; *tells Ululon to sit*); write the name again. Resume **-r** is [pronouns](pronouns.md).
 
 *That…* content is often a direct object, with **`darl` last** in the main sentence:
 
@@ -61,7 +61,7 @@ The pole's role letter follows the clause page. *Because*, *if*, *only if*, and 
 >
 > "Azawan sings because Ululon walks."
 
-**-m** here is the same choice as *grace* from *swan*. **Same root as** is that root as an everyday kind (citation **-l**). **Cue** only says why the picture maps to the English column.
+These poles use **-m** because they take the abstract sense of the root, not the everyday object. **Same root as** is that root as an everyday kind (citation **-l**). **Cue** only says why the picture maps to the English column.
 
 You can also say:
 
@@ -109,7 +109,7 @@ When English *to* drops the sitter, keep inner `/z/`:
 
 Ordinary `zolalal` is still *a goal* (the net).
 
-**Compare with:** *although Ululon walks* is **`hezebam barl`** plus the next sentence. Discourse *however* is **`xezebal`** ([continue](#continue-x)). Discourse *therefore* is **`xezazal`**, a linker after a finished claim, not *so that*. *Whether Ululon walks* is **`dorl`**, not **`thadorom`** (*if* is a condition, not polar ignorance). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. Acting *for relatedness* is [values](values.md) **`xo`**, a need-motive, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`huhanem`). *Want to walk* still takes a full **`darl`** sentence (repeat the inner `/z/`).
+**Compare with:** *although Ululon walks* is **`hezebam barl`** plus the next sentence. Discourse *however* is **`xezebal`** ([continue](#continue-x)). Discourse *therefore* is **`xezazam`**, a linker after a finished claim, not *so that*. *Whether Ululon walks* is **`dorl`**, not **`thadorom`** (*if* is a condition, not polar ignorance). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. Acting *for relatedness* is a [values motive](values.md#value-preference) on the need, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`huhanem`). 
 
 The verb has no past or future letter. *Before* / *after* / *while* / *until* place this event relative to the next sentence. Leftover **result** and **former climate** are standing moods, not time ([RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate)).
 
@@ -120,11 +120,11 @@ The verb has no past or future letter. *Before* / *after* / *while* / *until* pl
 
 After a statement, question, or command, you may keep going **without** starting a new speech move: the next stretch is still a statement if you were stating (still a question if you were asking, and so on). That is to **continue**. `/x/` marks it.
 
-Only the first turn (or a default statement body) chooses the setting. Do not write **`jal`** on the continued stretch: the setting is already chosen.
+Only the first turn (or a default statement body) chooses the speech act. Do not write **`jal`** on the continued stretch: the speech act is already chosen.
 
 A word that glues two sentences (*therefore*, *however*, …) is an `/x/` **linker**. A period may close the first body; the linker then **starts the next written sentence** under the same speech act:
 
-> `zodogol vawalal. xezazal zagadal vurunul.`
+> `zodogol vawalal. xezazam zagadal vurunul.`
 >
 > z-dog | v-walk . x-therefore | z-cat | v-run
 >
@@ -148,7 +148,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Ululon* | `ululon` | | |
 | *Uhubun* | `uhubun` | | |
 | *guard* | `ugugal` | | |
-| *money* | `onenol` | | |
 | *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
 | *stand* | `vadanal` | `adanal` *stand* | 🧍: staying in place |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
@@ -162,7 +161,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *because* | `thurugum` | `urugul` *brick* | 🧱: the cause is what the result sits on |
 | *although* | `hezebam` | `ezebal` *zebra* | 🦓: two stripes, still one animal |
 | *so-that* | `holalam` | `olalal` *goal* | 🥅: you act so the shot counts |
-| *therefore* | `xezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
+| *therefore* | `xezazam` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
 
 #### English → Agalan
 
@@ -206,17 +205,17 @@ z-Azawan | v-see | d-whether-clause | z-Ululon | v-sit
 z-Azawan | v-run | [h-so-that | b-that-clause] | z-Ululon | v-sit
 :::
 
-**6.** *Azawan writes so that Ululon sits.*
+**6.** *Azawan stands although Ululon screams.*
 
 ::: details Show answer
-`zazawan vuwurul holalam barl zululon vajul.`
+`zazawan vadanal hezebam barl zululon vazagal.`
 
-z-Azawan | v-write | [h-so-that | b-that-clause] | z-Ululon | v-sit
+z-Azawan | v-stand | [h-although | b-that-clause] | z-Ululon | v-scream
 :::
 
 #### Agalan → English
 
-**1.** `zuhubun vazagal. xezazal zululon vuvugul.`
+**1.** `zuhubun vazagal. xezazam zululon vuvugul.`
 
 ::: details Show answer
 
@@ -252,13 +251,13 @@ z-Ululon | v-run | [h-so-that | b-that-clause] | z-Azawan | v-sit
 *Ululon runs so that Azawan sits.*
 :::
 
-**5.** `zululon vuwurul holalam barl zazawan vajul.`
+**5.** `zuhubun vajul thurugum barl zazawan dugugal vejel.`
 
 ::: details Show answer
 
-z-Ululon | v-write | [h-so-that | b-that-clause] | z-Azawan | v-sit
+z-Uhubun | v-sit | [th-because | b-that-clause] | z-Azawan | d-guard | v-see
 
-*Ululon writes so that Azawan sits.*
+*Uhubun sits because Azawan sees a guard.*
 :::
 
 
@@ -309,7 +308,7 @@ A **period** closes the sentence body in writing, whatever the speech act. Speec
 | Bare body or hook + body after `.` | No full reset required | Implied **`jal`** (or **`jam`** only if a soft particle / written **`jam`** said so) | No jump, so same statement |
 | Soft statement / soft *yes* / *no* **-m** | Lighter fall; boundary still clear | **`jam`** (implied or written) | **-m** leaves the hold open |
 | `/x/` continue (clause join) | Dip or short pause; **no** full pitch reset | Keep opener speech act; period after the **whole** joined stretch | Dip extends; no jump |
-| `/x/` linker after `.` (`xezazal …`) | Dip into the linker; no turn reset | Keep prior speech act; may start a new written sentence under that speech act | Linker glues; still the same act |
+| `/x/` linker after `.` (`xezazam …`) | Dip into the linker; no turn reset | Keep prior speech act; may start a new written sentence under that speech act | Linker glues; still the same act |
 | **Stand-in** hang | Dip; **no** full pitch reset until the last dependent | Next sentence fills the slot; period after the **whole** stretch | Same hang as `/x/` continue |
 
 **-l** vs **-m** on the act word / *yes* / *no* is how firmly you stand behind it (closed vs soft / open).
@@ -321,7 +320,7 @@ These words glue one finished sentence to the next (one-way; default ending **-l
 
 | English | Agalan | Same root as | Cue | Example |
 |---------|--------|--------------|-----|---------|
-| *therefore* | **`xezazal`** | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on | `xezazal` |
+| *therefore* | **`xezazam`** | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on | `xezazam` |
 | *however* | **`xezebal`** | `ezebal` *zebra* | 🦓: two stripes, still one animal | `xezebal` |
 | *meanwhile* | **`xanelol`** | `anelol` *mantel-clock* | 🕰️: time passing beside the last claim | `xanelol` |
 | *next* | **`xuvumul`** | `uvumul` *film* | 🎞️: the following frame | `xuvumul` |
@@ -329,7 +328,7 @@ These words glue one finished sentence to the next (one-way; default ending **-l
 
 *therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Those same roots keep their ordinary content readings under other role letters.
 
-**Compare with:** *although* / *while* attach a dependent after **`barl`** (`hezebam barl`, `hegemum barl` — [dependent clauses](#dependent-clauses)). *Despite Ululon* is the same pole with a noun in `/b/` (`hezebam bululon`). *So that Ululon sits* is **`holalam barl`**. Discourse **`xezebal`** / **`xanelol`** / **`xezazal`** glue a finished sentence to the next one.
+**Compare with:** *although* / *while* attach a dependent after **`barl`** (`hezebam barl`, `hegemum barl` — [dependent clauses](#dependent-clauses)). *Despite Ululon* is the same pole with a noun in `/b/` (`hezebam bululon`). *So that Ululon sits* is **`holalam barl`**. Discourse **`xezebal`** / **`xanelol`** / **`xezazam`** glue a finished sentence to the next one.
 
 ### Stand-in vowels (`-rl` / `-rm`)
 <a id="clause-member"></a>
@@ -346,7 +345,7 @@ Beginner used locked **`a`** (`darl` / `barl`) and *whether* **`dorl`**. Stand-i
 
 The corresponding `/j/` turn makes an assertion, asks a question, gives a command, or prohibits an action. The stand-in puts that kind of content in a dependent slot; it does not assert, ask, command, or prohibit in its own right. Omit the dependent `/z/` only when the equivalent `/j/` speech act would not need an explicit subject: commands and prohibitions can leave their addressee understood, and statements or questions may omit `/z/` only when their own construction permits it. Otherwise, write the subject in the dependent sentence.
 
-The same grid uses **`b`** after a pole (`barl` / `berl` / `burl` …). Everyday *because* / *if* / *although* stay **`barl` / `barm`**. **`holalam berl`** types the `/b/` clause as an aimed body; **`holalam burl`** types it as a body to keep off. Do not put this family on `/x/` (clause *and* stays `xal` / `xan`).
+After a pole, the dependent is **`barl`** (or **`barm`** for gist): *because* / *if* / *although* / *so that* all use it. The one exception is purpose-not: **`holalam burl`** (*so that … not*). Do not put this family on `/x/` (clause *and* stays `xal` / `xan`).
 
 > `zazawan bululon vezehel derl vajul.`
 >
@@ -374,57 +373,6 @@ When *so that* aims at keeping an outcome off, keep **`holalam`** and type `/b/`
 
 **Compare with:** *tells that Ululon sits* is **`darl`**. *Tells Ululon to sit* is **`derl`**. *Walks so that Azawan sits* is **`holalam barl`**.
 
-## Advanced
-<a id="advanced"></a>
-
-### Lexicalized stand-ins in other roles
-<a id="stand-in-roles"></a>
-
-The stand-in vowel identifies the kind of sentence content, while the first letter identifies the role that content fills. With **-rn** (or **-n** after a stacked vowel), a stand-in becomes a lexicalized name for that content: statement, question, command, prohibition, and so on. For example, **`darn`** is a statement, **`dorn`** a question, **`dern`** a command, and **`durn`** a prohibition. Use the same vowel choices with another role letter when the following sentence fills that role. `/v/` forms use the same **-rn** / **-n** endings for their lexicalized verb readings.
-
-Each content type has one lexicalized form; there is no closed / open pair here.
-
-| Agalan | Dependent content | English |
-|--------|-------------------|---------|
-| **`varn`** | statement-like (`a`) | *state…* |
-| **`vorn`** | question-like (`o`) | *question…* |
-| **`vern`** | instruction-like (`e`) | *command…* |
-| **`vurn`** | avoidance-like (`u`) | *prohibit…* |
-| **`vaen`** | statement-like (`a`) | *confirm that…* |
-| **`vuen`** | statement-like (`u` reversal) | *deny that…* |
-| **`vaon`** | instruction-like (`a` + `o`) | *agree to…* |
-| **`vuon`** | instruction-like (`u` + `o`) | *decline to…* |
-| **`vuan`** | instruction-like (`u` + `a`) | *vehemently refuse to…* |
-
-For example, the `/v/` word takes the following sentence as its content:
-
-> `zazawan vaen zululon vajul.`
->
-> z-Azawan | v-confirm | z-Ululon | v-sit
->
-> *Azawan confirms that Ululon sits.*
-
-> `zazawan vuon zululon vajul.`
->
-> z-Azawan | v-decline-to | z-Ululon | v-sit
->
-> *Azawan declines to let Ululon sit.*
-
-The sentence after one of these verbs has its own subject when the chosen content type requires one, just as it does after **`darl`** / **`derl`**. The verb’s role letter lets you use the same typed content as an object, a described property, or another role supported by the clause.
-
-### Nested dependents
-<a id="nested-dependents"></a>
-
-Each clause has at most one **stand-in** at the end of the main sentence. The sentence after it may itself end in **`barl`**, so a further sentence hangs to the **right**.
-
-> `zazawan guzumum thurugum barl zululon vawalal thurugum barl zuhubun velebel.`
->
-> [z-Azawan | g-happy] | [th-because | b-that-clause] | z-Ululon | v-walk | th-because | b-that-clause | z-Uhubun | v-sleep
->
-> "Azawan is happy because Ululon walks because Uhubun sleeps."
-
-
-
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
@@ -445,10 +393,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vejel` |
 | *run* | `vurunul` |
 | *sneak* | `vazanal` |
-| *scream* | `vazagal` |
-| *punch* | `vubunul` |
-| *that-clause* | `darl` |
-| *because* | `thurugum` |
+| *tell* | `vezehel` |
+| *to-clause* | `derl` |
+| *lest-clause* | `durl` |
 | *next* | `xuvumul` |
 | *however* | `xezebal` |
 | *meanwhile* | `xanelol` |
@@ -463,12 +410,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Azawan | v-sit . x-next | z-Ululon | v-run
 :::
 
-**2.** *Azawan runs because Ululon punches Azawan because Uhubun screams.*
+**2.** *Azawan tells Ululon not to depart.*
 
 ::: details Show answer
-`zazawan vurunul thurugum barl zululon dazawan vubunul thurugum barl zuhubun vazagal.`
+`zazawan bululon vezehel durl vebarul.`
 
-z-Azawan | v-run | [th-because | b-that-clause] | z-Ululon | d-Azawan | v-punch | th-because | b-that-clause | z-Uhubun | v-scream
+z-Azawan | b-Ululon | v-tell | d-lest-clause | v-departure
 :::
 
 #### Agalan → English
@@ -491,11 +438,60 @@ z-Ululon | v-sneak . x-however | z-Azawan | v-run
 *Ululon sneaks. However Azawan runs.*
 :::
 
-**3.** `zuhubun vazagal thurugum barl zazawan vebarul thurugum barl zululon dazawan vubunul.`
+**3.** `zululon bazawan vezehel derl vajul.`
 
 ::: details Show answer
 
-z-Uhubun | v-scream | [th-because | b-that-clause] | z-Azawan | v-departure | th-because | b-that-clause | z-Ululon | d-Azawan | v-punch
+z-Ululon | b-Azawan | v-tell | d-to-clause | v-sit
 
-*Uhubun screams because Azawan departs because Ululon punches Azawan.*
+*Ululon tells Azawan to sit.*
 :::
+
+## Advanced
+<a id="advanced"></a>
+
+### Lexicalized stand-ins in other roles
+<a id="stand-in-roles"></a>
+
+The stand-in vowel identifies the kind of sentence content, while the first letter identifies the role that content fills. With **-rn** (or **-n** after a stacked vowel), a stand-in becomes a lexicalized name for that content: statement, question, command, prohibition, and so on. For example, **`darn`** is a statement, **`dorn`** a question, **`dern`** a command, and **`durn`** a prohibition. Use the same vowel choices with another role letter when the following sentence fills that role. `/v/` forms use the same **-rn** / **-n** endings for their lexicalized verb readings.
+
+Each content type has one lexicalized form; there is no closed / open pair here.
+
+| Agalan | Dependent content | English |
+|--------|-------------------|---------|
+| **`varn`** | statement-like (`a`) | *state…* |
+| **`vorn`** | question-like (`o`) | *question…* |
+| **`vern`** | instruction-like (`e`) | *command…* |
+| **`vurn`** | avoidance-like (`u`) | *prohibit…* |
+| **`vaen`** | accepts a statement | *confirm that…* |
+| **`vuen`** | rejects a statement | *deny that…* |
+| **`vaon`** | accepts a proposed action | *agree to…* |
+| **`vuon`** | rejects a proposed action | *decline to…* |
+| **`vuan`** | rejects a proposed action, emphatically | *vehemently refuse to…* |
+
+For example, the `/v/` word takes the following sentence as its content:
+
+> `zazawan vaen zululon vajul.`
+>
+> z-Azawan | v-confirm | z-Ululon | v-sit
+>
+> "Azawan confirms that Ululon sits."
+
+> `zazawan vuon zazawan vajul.`
+>
+> z-Azawan | v-decline-to | z-Azawan | v-sit
+>
+> "Azawan declines to sit."
+
+The sentence after one of these verbs has its own subject when the chosen content type requires one, just as it does after **`darl`** / **`derl`**. The verb’s role letter lets you use the same typed content as an object, a described property, or another role supported by the clause.
+
+### Nested dependents
+<a id="nested-dependents"></a>
+
+Each clause has at most one **stand-in** at the end of the main sentence. The sentence after it may itself end in **`barl`**, so a further sentence hangs to the **right**.
+
+> `zazawan guzumum thurugum barl zululon vawalal thurugum barl zuhubun velebel.`
+>
+> [z-Azawan | g-happy] | [th-because | b-that-clause] | z-Ululon | v-walk | th-because | b-that-clause | z-Uhubun | v-sleep
+>
+> "Azawan is happy because Ululon walks because Uhubun sleeps."

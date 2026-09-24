@@ -53,11 +53,11 @@ Audit in waves; each wave treats earlier waves as settled. Pages within a wave a
 
 | Status | Page | Covered | Date |
 |--------|------|---------|------|
-| [ ] | `questions.md` |  |  |
-| [ ] | `predication.md` |  |  |
-| [ ] | `dependents.md` |  |  |
-| [ ] | `roles.md` |  |  |
-| [ ] | `x-compounds.md` |  |  |
+| [x] | `questions.md` | all | 2026-09-24 |
+| [x] | `predication.md` | all | 2026-09-24 |
+| [x] | `dependents.md` | all | 2026-09-24 |
+| [x] | `roles.md` | all | 2026-09-24 |
+| [x] | `x-compounds.md` | all | 2026-09-24 |
 
 ### Wave 5 — psychology
 
@@ -105,3 +105,13 @@ Audit in waves; each wave treats earlier waves as settled. Pages within a wave a
 - **"Departure" is `vebarul` / `bebarul`;** `-m` `ebarum` means *abandonment*.
 - **Locative *in* / *on* / *at* / *from* / *using* are extra-noun hooks,** never hosted relation roots or join-relations (tool *using* = `ael`, not `han`).
 - **Join-act verbs take one `/d/` phrase;** a phrase-join group counts as one phrase.
+- **Bare arrow roots used as talk-moves take -m** (`ezazam` *progress*, `ewezem` *return*, `ozohem` *retreat*), and so does the *therefore* linker **`xezazam`**.
+- **In a viewpoint lateral the ending sits on the anchor;** a bare direction word is compass or gravity, with no viewpoint.
+- **An identity (`SAME`) example equates two labels for one individual** (a name and a role or definite noun), never an object with a person or a name with an indefinite kind.
+- **A plain `/ɡ/` after a `gonunul` + `/b/` pair describes the `/b/` noun.** Classify the subject in a separate sentence.
+- **Stand-ins with `a` / `o` (and `barl`) always spell out the inner `/z/`;** only `e` / `u` stand-ins may leave it out, as the matching command or prohibition would.
+- **A single-item or fill-ask join uses the role letter of the item it joins** (`donel dor`, not `donel zor`).
+- **Plain *so that* is `holalam barl`.** After a pole the dependent is `barl` / `barm`; only purpose-not uses `holalam burl`.
+- **Values motive is need root + mid-word `th` + `o` + ending** (`…thom`), never `…xom`.
+- **SAME `gonunun` / `gonunur` are unassigned;** examples use only **-l** / **-m**.
+- **A `/w/` hedge goes before the classifying `/ɡ/`.**

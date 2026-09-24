@@ -72,7 +72,7 @@ strict: *However — that one (B), per memory — it rains.*
 
 loose: *Still — it's raining, as I remember.*
 
-**B:** `jael xezazal zahan themabam vawalal vul.`
+**B:** `jael xezazam zahan themabam vawalal vul.`
 
 gloss: `j-yes` · `x-therefore` · `z-interlocutors` · `th-plan` · `v-walk` · `v-not`
 
@@ -256,7 +256,7 @@ strict: *Usually, when it rains, a person does not walk.*
 
 loose: *Usually, when it rains, nobody walks.*
 
-**A:** `xezazal zuzur vezehel darl zubur guzumum.`
+**A:** `xezazam zuzur vezehel darl zubur guzumum.`
 
 gloss: `x-therefore` · `z-←Uzuzuxogoven` · `v-tell` · `d-that-clause` · `z-←Ubunexunowen` · `g-happy`
 

@@ -226,7 +226,7 @@ Write the mark **before** what it colors, so you see the tone before you say the
 
 **Compare with:** **`jol`** asks a question; `?` only sounds unsure. A tone mark shows the feeling; [emotion compose](values.md#emotion-compose) states it as a claim, and the two can share a sentence.
 
-- A mark may go on any word, including act words and linkers (`!xezazal`, *therefore!*).
+- A mark may go on any word, including act words and linkers (`!xezazam`, *therefore!*).
 - Only `!`, `!!`, `?`, `?!`, `%`, `&`, and `;` are marks. Other stacks (`!?`, `??`, `%!`) are not.
 - `&` stresses by voice alone. To highlight with grammar, move the word to the front ([word order](clause.md)).
 - A mark on a word inside a colored island or sentence overrides it for that word.

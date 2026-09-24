@@ -114,6 +114,14 @@ Source: [roles.md](../grammar/roles.md), [x-compounds.md](../grammar/x-compounds
 |------|--------|
 | PoS `/v/` / `/h/` / `/w/` on role compounds | Undefined — prefer `/z/` `/d/` `/b/`; `/ɡ/` optional |
 
+## Identity (`SAME`)
+
+Source: [predication.md](../grammar/predication.md)
+
+| Slot | Status |
+|------|--------|
+| **`gonunun`** / **`gonunur`** (SAME with **-n** / **-r**) | Undefined — only **-l** / **-m** are taught |
+
 ## Spans
 
 Source: [spans.md](../grammar/spans.md), [x-compounds.md](../grammar/x-compounds.md)

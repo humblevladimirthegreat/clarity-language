@@ -442,7 +442,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Inclusive *we* (interlocutors)
 
-> `jael xezazal zahan themabam vawalal vul.`
+> `jael xezazam zahan themabam vawalal vul.`
 >
 > j-yes | x-therefore | z-interlocutors | th-plan-sketch | [v-walk | v-not]
 >

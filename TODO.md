@@ -11,6 +11,7 @@ sample complex sentence: jael zugobon zam zedonen zal guzumum. zadedal zogovel z
 Prosody
 reconsider comparative zel vs zuel. The sensible meaning differs from ordinal vs cardinal
 reconsider zoel vs zel comparative. Currently zoel mean s same as zel. Maybe zoel means "this one first, then others equal priority"?
+reconsider dependent inner subject dropping rules. Under what cases should it be safe to drop inner subject?
 consider removing some emotion words from lexicon
 
 do a grammar-docs/ consistency check. Does anything about the grammar seem incorrect, confusing, meaningless, or counterintuitive?

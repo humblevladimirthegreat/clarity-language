@@ -333,6 +333,8 @@ That ending says why you think a move is welcome. Use **-l** when the person inv
 ### Motive (`tho`): preference standing
 <a id="value-preference"></a>
 
+<!-- EDITOR TODO (consistency audit, wave 5): motive is need root + mid-word `th` + `o` + ending (`…thol` / `…thom` / `…thor`). The preference-standing table and prose here still spell `…xol` / `…xom` / `…xor`; make every motive form use `th` + `o`. -->
+
 English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the need root, mid-word **`th`**, **`o`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or from protecting against something that detracts from the need. If you do not know the standing, use **-m**. **-n** is ordinary [proper](word-endings.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…xom`** plus **`hual`**).
 
 > `zazawan vezehel thonogothom.`

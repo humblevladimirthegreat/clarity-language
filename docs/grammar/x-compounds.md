@@ -413,9 +413,9 @@ Azawan-ask
 **4.** *Azawan — I’m here. Ululon — one ask.*
 
 ::: details Show answer
-`azawaxan jululoxon.`
+`azawaxan. jululoxon.`
 
-Azawan-presence | j-Ululon-ask
+Azawan-presence . j-Ululon-ask
 :::
 
 **5.** *Uhubun — just passing.* (calling)
@@ -442,12 +442,12 @@ Uhubun-ask
 j-Azawan-minutes | z-Ululon | v-scream
 :::
 
-**8.** *Ululon — just passing.* (calling); *Ululon punches Azawan.*
+**8.** *Ululon — just passing.* (calling); *Uhubun punches Azawan.*
 
 ::: details Show answer
-`jululoxun zululon zazawan vubunul.`
+`jululoxun zuhubun zazawan vubunul.`
 
-j-Ululon-passing | z-Ululon | z-Azawan | v-punch
+j-Ululon-passing | z-Uhubun | z-Azawan | v-punch
 :::
 
 **9.** *Azawan — I’m here / we can stay.* *Ululon — one ask.* (Ululon’s bid is the one that holds)
@@ -510,11 +510,9 @@ Azawan-presence | j-Uhubun-ask
 *Azawan — I’m here. Uhubun — one ask.* (calling)
 :::
 
-**7.** *Hello — the speaker is Azawan.*
+**7.** `azawan.`
 
 ::: details Show answer
-
-`azawan.`
 
 Azawan
 *Azawan.* (hello — the speaker is Azawan)
