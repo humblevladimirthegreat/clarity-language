@@ -101,7 +101,7 @@ function allowedSenses(
   const all = new Set<string>();
   const hostLemmas = new Set<string>();
   const word = classify(morph, tables);
-  add(all, senseLabel(word, tables));
+  add(all, senseLabel(word, tables)?.split("-x-").join("-"));
 
   const roots = lexiconContentRoots(morph);
   const ending = morph.ending;

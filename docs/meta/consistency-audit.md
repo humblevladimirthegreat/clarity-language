@@ -1,6 +1,6 @@
 # Grammar consistency audit
 
-Editors only — not linked from grammar pages. Tracks which `docs/grammar/` pages have been checked for incorrect, confusing, meaningless, or counterintuitive grammar.
+Editors only — not linked from grammar pages. Tracks which `docs/grammar/` pages have been checked for incorrect, confusing, meaningless, or counterintuitive grammar. If examples are non-sensicle, choose better examples. Fix what is obviously wrong. Ask about less clear cases.
 
 Status: `[x]` full pass · `[~]` partial (sections listed) · `[ ]` not started.
 

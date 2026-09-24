@@ -28,6 +28,7 @@ save for cursor:
 -add Agalan->English cheat sheet
 -Cheat sheet for joins and hooks
 -join vowel decision tree in advanced vowel series.
+-suggest words to fill in remaining abstract lexicon. use for useful english words, don't fill just to fill.
 -mass lexical compound adding
 
 Dictionary entries (open lexicon / concepts — not the closed list above):

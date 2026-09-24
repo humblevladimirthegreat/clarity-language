@@ -371,16 +371,16 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *Edozen* (office handle) | `edozen` | |
-| *hospital-x-bed* (ward name) | `ohozoxabeden` | |
-| *diagnosis-x-hospital* (office full title) | `edozexohozon` | |
+| *hospital-bed* (ward name) | `ohozoxabeden` | |
+| *diagnosis-hospital* (office full title) | `edozexohozon` | |
 | *bed* | `abedel` | |
 | *sit* | `vajul` | `ajul` *chair* |
 | *see* | `vejel` | `ejel` *eye* |
 | *write* | `vuwurul` | `uwurul` *write* |
 | *run* | `vurunul` | `urunul` *run* |
 | *Hospital* (named frame) | `hohozon` | `ohozol` *hospital* |
-| *Diagnosis* (named style) | `gedozen` | `edozel` *stethoscope* |
-| *X-ray* (named style) | `gararon` | `ararol` *x-ray* |
+| *Azawan* (brand) | `gazawan` | `azawan` *Azawan* |
+| *Uhubun* (brand) | `guhubun` | `uhubun` *Uhubun* |
 | *Temperature* (named standard) | `hedehen` | `edehel` *thermometer* |
 | *Sleep* (titled rest) | `veleben` | `elebel` *sleep* |
 | *Intrusion* (titled action) | `vozorun` | `ozorul` *syringe* |
@@ -397,12 +397,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 z-Azawan | v-sit | h-Ohozon
 :::
 
-**2.** *The bed is Diagnosis-grade* (the named category).
+**2.** *The bed is an Azawan* (the brand).
 
 ::: details Show answer
-`zabedel gedozen.`
+`zabedel gazawan.`
 
-z-bed | g-Edozen
+z-bed | g-Azawan
 :::
 
 **3.** *Uhubun observes Sleep* (the ward’s titled rest hour).
@@ -463,12 +463,12 @@ z-Azawan | v-write | h-Edehen
 *Azawan writes according to Temperature* (the named standard).
 :::
 
-**3.** `zabedel gararon.`
+**3.** `zabedel guhubun.`
 
 ::: details Show answer
 
-z-bed | g-Araron
-*The bed is X-ray-ready* (the named category).
+z-bed | g-Uhubun
+*The bed is an Uhubun* (the brand).
 :::
 
 **4.** `zohozoxabeden vuwurul.`
