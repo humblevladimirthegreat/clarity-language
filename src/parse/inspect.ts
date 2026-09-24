@@ -191,7 +191,12 @@ export function inspectErrorFrom(error: unknown): InspectError {
 }
 
 export function glossFor(word: LexWord, tables?: ClassifyTables): string {
-  if (word.reading === "unknown" && !word.overlay) return "unknown root";
+  if (word.reading === "unknown" && !word.overlay) {
+    if (word.potentialCompounds?.length) {
+      return `unknown root (maybe ${word.potentialCompounds.map((c) => c.gloss).join(" / ")})`;
+    }
+    return "unknown root";
+  }
   if (!tables) {
     return senseLabelFallback(word);
   }
@@ -275,6 +280,7 @@ export function chipsFor(word: LexWord): string[] {
     chips.push(...familyChips(word.family));
   }
   if (word.hookCompound) chips.push(`hook ${word.hookCompound.hook}`);
+  if (word.potentialCompounds?.length) chips.push("potential compound");
   chips.push(word.reading);
   return chips;
 }
@@ -299,6 +305,12 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
   if (word.hookCompound) {
     rows.push({ label: "hook compound", value: word.hookCompound.stem });
     rows.push({ label: "fused hook", value: word.hookCompound.hook });
+  }
+  for (const candidate of word.potentialCompounds ?? []) {
+    rows.push({
+      label: "potential compound",
+      value: `${candidate.left} · ${candidate.join} · ${candidate.right} (${candidate.gloss})`,
+    });
   }
   if (family.kind === "x") {
     rows.push({ label: "x family", value: family.xFamily });
@@ -374,6 +386,9 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   }
   if (word.lexicalCompound) {
     return { line: "lexical compound", href: "x-compounds.html#lexical-compounds" };
+  }
+  if (word.potentialCompounds?.length) {
+    return { line: "lexical compound (unlisted)", href: "x-compounds.html#lexical-compounds" };
   }
   if (family.kind === "x" && family.xFamily === "compound") {
     return { line: "ordinary compound", href: "x-compounds.html#families-by-shape" };

@@ -1,5 +1,6 @@
 import {
   parseCompoundCsv,
+  potentialCompoundSplits,
   type CompoundRow,
 } from "../lexicon-compounds.js";
 import {
@@ -489,10 +490,37 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
   }
 
   if (roots.length > 0) {
-    return { ...word, reading: "unknown" };
+    const potentialCompounds = potentialCompoundsFor(word, tables);
+    return potentialCompounds
+      ? { ...word, reading: "unknown", potentialCompounds }
+      : { ...word, reading: "unknown" };
   }
 
   return { ...word, reading: "ordinary" };
+}
+
+/** Candidate lexical-compound splits for an unknown single content root. */
+function potentialCompoundsFor(
+  word: MorphWord,
+  tables: ClassifyTables,
+): LexWord["potentialCompounds"] {
+  if (word.family.kind !== "content" || word.family.roots.length !== 1) return undefined;
+  const stem = word.family.roots[0]!;
+  if (knownLexiconRoots(tables).has(stem)) return undefined;
+  const splits = potentialCompoundSplits(stem, (root) => tables.published.has(root));
+  if (splits.length === 0) return undefined;
+  return splits.map((split) => {
+    const left = tables.published.get(split.left);
+    const right = tables.published.get(split.right);
+    const leftSense =
+      split.join === "m"
+        ? left?.abstract || left?.concrete || split.left
+        : split.join === "l"
+          ? left?.concrete || split.left
+          : split.left;
+    const rightSense = right?.concrete || right?.abstract || split.right;
+    return { ...split, gloss: `${leftSense}-${split.join} ${rightSense}` };
+  });
 }
 
 /**

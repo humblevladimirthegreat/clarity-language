@@ -83,6 +83,26 @@ export function isCompoundMemberRoot(root: string): boolean {
   return isClarityRootShape(root) && root.length >= 3;
 }
 
+export type CompoundSplit = { left: string; join: CompoundJoin; right: string };
+
+/** Every `left + join + right` reading of an x-less stem whose members pass `isRoot`. */
+export function potentialCompoundSplits(
+  stem: string,
+  isRoot: (root: string) => boolean,
+): CompoundSplit[] {
+  const splits: CompoundSplit[] = [];
+  for (let i = 1; i < stem.length - 1; i++) {
+    const join = stem[i]!;
+    if (!JOIN_LETTERS.has(join)) continue;
+    const left = stem.slice(0, i);
+    const right = stem.slice(i + 1);
+    if (!isCompoundMemberRoot(left) || !isRoot(left)) continue;
+    if (!isExtraNounHook(right) && (!isCompoundMemberRoot(right) || !isRoot(right))) continue;
+    splits.push({ left, join: join as CompoundJoin, right });
+  }
+  return splits;
+}
+
 export function parseCompoundCsv(text: string): CompoundRow[] {
   const { headers, rows } = parseCsv(text);
   if (headers.join(",") !== COMPOUND_HEADERS.join(",")) {

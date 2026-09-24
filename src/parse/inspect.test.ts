@@ -55,6 +55,25 @@ describe("inspectText", () => {
     assert.equal(token.gloss, "unknown root");
   });
 
+  it("shows potential lexical compounds for an unlisted stem", () => {
+    const result = inspectText("zabedelozogol.", tables);
+    const token = result.tokens[0];
+    assert.equal(token?.kind, "word");
+    if (token?.kind !== "word") return;
+    assert.equal(token.word.reading, "unknown");
+    assert.deepEqual(
+      token.word.potentialCompounds?.map(({ left, join, right }) => [left, join, right]),
+      [["abede", "l", "ozogo"]],
+    );
+    assert.match(token.gloss, /^unknown root \(maybe bed-l scorpion\)$/);
+    assert.ok(token.chips.includes("potential compound"));
+
+    const listed = inspectText("zabedelohohul.", tables).tokens[0];
+    assert.equal(listed?.kind, "word");
+    if (listed?.kind !== "word") return;
+    assert.equal(listed.word.potentialCompounds, undefined);
+  });
+
   it("keeps a Peggy failure as an error token beside valid words", () => {
     const result = inspectText("zazawan zolovexrabal vawalal.", tables);
     const kinds = result.tokens.map((token) => token.kind);

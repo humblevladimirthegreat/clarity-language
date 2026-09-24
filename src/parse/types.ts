@@ -158,6 +158,13 @@ export type LexWord = MorphWord & {
   reading: LexReading;
   /** Lexicon-only x-less compound lemma from lexicon-compounds.csv. */
   lexicalCompound?: boolean;
+  /** Unlisted stem that splits into published `left + join + right` (display only). */
+  potentialCompounds?: {
+    left: string;
+    join: "l" | "m" | "n" | "r";
+    right: string;
+    gloss: string;
+  }[];
   /** Extra-noun hook fused after a cited left word (`awalalul`). */
   hookCompound?: {
     leftRoot: string;
