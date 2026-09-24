@@ -12,17 +12,17 @@ You can ask for *yes* or *no*, or you can leave a blank for *who* / *what* (a **
 
 A **question** is a sentence that wants a reply rather than asserting a fact. Mark that setting with an act word at the start of a new speech move (a **turn**): write **`jol`**, then the rest of the sentence (the **body**: subject, verb, and so on).
 
-Soft **`jom`** is the same question setting, said more gently (wondering rather than pressing). End the written question with **`?`**.
+Soft **`jom`** is the same question setting, said more gently (wondering rather than pressing). End the written question with a period, like any sentence.
 
 When every person and action in the clause is already named, the expected reply is *yes* or *no*. (cue: **o** ≈ one: a menu you pick from.)
 
-> `jol zazawan vawalal?`
+> `jol zazawan vawalal.`
 >
-> j-question | z-Azawan | v-walk ?
+> j-question | z-Azawan | v-walk
 >
 > "Does Azawan walk?"
 
-> `jom zululon velebel?`
+> `jom zululon velebel.`
 >
 > j-soft-question | z-Ululon | v-sleep
 >
@@ -30,9 +30,9 @@ When every person and action in the clause is already named, the expected reply 
 
 If the subject is *nobody* (`zal`) or the clause is *nothing happened* (`xal`), you are still asking *yes* or *no*, not *who*.
 
-> `jol zal vawalal?`
+> `jol zal vawalal.`
 >
-> j-question | z-and | v-walk ?
+> j-question | z-and | v-walk
 >
 > "Does nobody walk?"
 
@@ -43,9 +43,9 @@ Sometimes you do not want *yes* or *no*. You want the other person to **name** s
 
 Keep **`jol`** or **`jom`** at the start. In the slot you want filled, use a join word that ends in **-r** (`zar`, `var`, `xar`, …). That **-r** is the blank ([unspecified-member **-r**](joins.md#unspecified-member-r-phrase)). (cue: **-r** names this member; **a** ≈ add for *who/what*, **u** ≈ undo for *who/what else*.)
 
-> `jol zar vawalal?`
+> `jol zar vawalal.`
 >
-> j-question | z-who | v-walk ?
+> j-question | z-who | v-walk
 >
 > "Who walks?"
 
@@ -60,9 +60,9 @@ If the reply is just the fill, not a full sentence, write it as a [citation](wor
 | **a** (`zar` · `var` · `xar`) | fill the add-inventory | *Who/what?* / *What happened?* | **a** ≈ add |
 | **u** (`zur` · `vur` · `xur`) | fill what remains | *Who else?* / *What else?* | **u** ≈ undo |
 
-> `jol zur velebel?`
+> `jol zur velebel.`
 >
-> j-question | z-who-else | v-sleep ?
+> j-question | z-who-else | v-sleep
 >
 > "Who else sleeps?"
 
@@ -77,9 +77,9 @@ If the reply is just the fill, not a full sentence, write it as a [citation](wor
 
 If more than one slot has join **-r** in the same question, each of those **-r** words is a blank. The answer is expected to **fill all** of them, in the order you said them.
 
-> `jol zar vejel dar?`
+> `jol zar vejel dar.`
 >
-> j-question | z-who | v-see | d-who ?
+> j-question | z-who | v-see | d-who
 >
 > "Who sees what?"
 
@@ -89,9 +89,9 @@ If more than one slot has join **-r** in the same question, each of those **-r**
 
 If only one slot is unknown, put join **-r** only there. Write the known thing as an ordinary word (`-l` / `-m`).
 
-> `jol zar vejel dodogol?`
+> `jol zar vejel dodogol.`
 >
-> j-question | z-who | v-see | d-dog ?
+> j-question | z-who | v-see | d-dog
 >
 > "Who sees a dog?"
 
@@ -160,7 +160,7 @@ A *…, yes?* confirm tag is its own next turn: finish the statement with a peri
 ### Embedded *whether*
 <a id="embedded-whether"></a>
 
-When the **outer** sentence is a claim (*Azawan sees…*, *Azawan tells Ululon…*) and English would say *whether*, write [**`dorl`**](dependents.md#dependent-clauses) (soft **`dorm`**) in the object slot. The outer act stays a statement; do not put `?` on the whole stretch.
+When the **outer** sentence is a claim (*Azawan sees…*, *Azawan tells Ululon…*) and English would say *whether*, write [**`dorl`**](dependents.md#dependent-clauses) (soft **`dorm`**) in the object slot. The outer act stays a statement; do not write **`jol`** on the whole stretch.
 
 > `zazawan vejel dorl zululon vawalal.`
 >
@@ -206,41 +206,41 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *Does Azawan sit?*
 
 ::: details Show answer
-`jol zazawan vajul?`
+`jol zazawan vajul.`
 
-j-question | z-Azawan | v-sit ?
+j-question | z-Azawan | v-sit
 :::
 
 **2.** *Who sees the umbrella?*
 
 ::: details Show answer
-`jol zar vejel dumubul?`
+`jol zar vejel dumubul.`
 
-j-question | z-who | v-see | d-umbrella ?
+j-question | z-who | v-see | d-umbrella
 :::
 
 **3.** *Is Ululon writing, I wonder?*
 
 ::: details Show answer
-`jom zululon vuwurul?`
+`jom zululon vuwurul.`
 
-j-soft-question | z-Ululon | v-write ?
+j-soft-question | z-Ululon | v-write
 :::
 
 **4.** *Who sees what?*
 
 ::: details Show answer
-`jol zar vejel dar?`
+`jol zar vejel dar.`
 
-j-question | z-who | v-see | d-who ?
+j-question | z-who | v-see | d-who
 :::
 
 **5.** *Who else sees the coat?*
 
 ::: details Show answer
-`jol zur vejel dojal?`
+`jol zur vejel dojal.`
 
-j-question | z-who-else | v-see | d-coat ?
+j-question | z-who-else | v-see | d-coat
 :::
 
 **6.** *Azawan tells Uhubun. Yes.* (confirm as a second turn)
@@ -269,38 +269,38 @@ j-sure
 
 #### Agalan → English
 
-**1.** `jom zuhubun vejel dagegol?`
+**1.** `jom zuhubun vejel dagegol.`
 
 ::: details Show answer
 
-j-soft-question | z-Uhubun | v-see | d-key ?
+j-soft-question | z-Uhubun | v-see | d-key
 
 *Is Uhubun seeing the key, I wonder?*
 :::
 
-**2.** `jol zar vuwurul?`
+**2.** `jol zar vuwurul.`
 
 ::: details Show answer
 
-j-question | z-who | v-write ?
+j-question | z-who | v-write
 
 *Who writes?*
 :::
 
-**3.** `jol zal vajul?`
+**3.** `jol zal vajul.`
 
 ::: details Show answer
 
-j-question | z-and | v-sit ?
+j-question | z-and | v-sit
 
 *Does nobody sit?*
 :::
 
-**4.** `jol zar vezehel dar?`
+**4.** `jol zar vezehel dar.`
 
 ::: details Show answer
 
-j-question | z-who | v-tell | d-who ?
+j-question | z-who | v-tell | d-who
 
 *Who tells what?*
 :::
@@ -369,9 +369,9 @@ A stance word can stand alone (`jael.`), sit before a body (`jael zazawan vawala
 
 When the question already contains *not* (*Didn’t Azawan run?*), *yes* and *no* still say whether **that claim** matches. **`jael`** confirms the denial (*true: they didn’t*). **`juel`** says the denial is false (*they did*). Restate the body after the stance word when you want the polarity said twice. Offer words (**`jaol`** / **`juol`**) still answer *take this?*, not true/false.
 
-> `jol zazawan vul vurunul? jael.`
+> `jol zazawan vul vurunul. jael.`
 >
-> j-question | z-Azawan | v-not | v-run ? j-yes
+> j-question | z-Azawan | v-not | v-run . j-yes
 >
 > "Didn’t Azawan run? True, Azawan didn’t."
 
@@ -399,9 +399,9 @@ Bare **-r** in the queried slot is unbound *who* / *what* / *where*. Bare **`var
 
 To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in the question. Bare **`har`** is the *when* blank. The same family also asks *anytime?* and *when else?*.
 
-> `jol zuhubun vawalal har?`
+> `jol zuhubun vawalal har.`
 >
-> j-question | z-Uhubun | v-walk | h-when ?
+> j-question | z-Uhubun | v-walk | h-when
 >
 > "When does Uhubun walk?"
 
@@ -419,13 +419,13 @@ To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in
 
 A *yes/no* question can put a join ending on a **named** item instead of a fill-ask blank. Single-item **-l** (or usual **-n**) asks you to confirm that singleton (*Just Azawan?*, *Has to be Azawan?*). Single-item **-m** offers it (*How about Uhubun?*). **`…ul`** / **`…um`** / **`…un`** confirm or offer a denial (*Not Azawan?*). Standalone **-l** / **-m** check emptiness (*Nothing?*, *Got nothing?*). Fill-ask still uses **…ar** / **…or** / **…er** / **…ur**.
 
-> `jol zazawan zal?`
+> `jol zazawan zal.`
 >
-> j-question | [z-Azawan | z-and] ?
+> j-question | [z-Azawan | z-and]
 >
 > "Just Azawan?"
 
-> `jol zuhubun zam?`
+> `jol zuhubun zam.`
 >
 > j-question | z-Uhubun | z-offer
 >
@@ -460,42 +460,42 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Didn’t Azawan tell?* Then confirm: *true, Azawan didn’t.*
 
 ::: details Show answer
-`jol zazawan vul vezehel?`
+`jol zazawan vul vezehel.`
 
-j-question | z-Azawan | v-not | v-tell ?
+j-question | z-Azawan | v-not | v-tell
 `jael.`
 :::
 
 **2.** *When does Uhubun sit?*
 
 ::: details Show answer
-`jol zuhubun vajul har?`
+`jol zuhubun vajul har.`
 
-j-question | z-Uhubun | v-sit | h-when ?
+j-question | z-Uhubun | v-sit | h-when
 :::
 
 **3.** *Which key?* (one unknown)
 
 ::: details Show answer
-`jol zagegol zar?`
+`jol zagegol zar.`
 
-j-question | [z-key | z-who] ?
+j-question | [z-key | z-who]
 :::
 
 **4.** *Just Ululon?* (confirm the singleton)
 
 ::: details Show answer
-`jol zululon zal?`
+`jol zululon zal.`
 
-j-question | [z-Ululon | z-and] ?
+j-question | [z-Ululon | z-and]
 :::
 
 **5.** *How about Uhubun?* (offer)
 
 ::: details Show answer
-`jol zuhubun zam?`
+`jol zuhubun zam.`
 
-j-question | [z-Uhubun | z-and.open] ?
+j-question | [z-Uhubun | z-and.open]
 :::
 
 **6.** *Not that.* (reject this option, not a truth-flip)
@@ -509,9 +509,9 @@ j-refuse-option
 **7.** *Anytime?*
 
 ::: details Show answer
-`jol hor?`
+`jol hor.`
 
-j-question | h-anytime ?
+j-question | h-anytime
 :::
 
 **8.** *Hell no!* (refuse the whole frame)
@@ -533,38 +533,38 @@ j-yes | v-not | v-attest
 *True: didn’t attest.*
 :::
 
-**2.** `jol hur?`
+**2.** `jol hur.`
 
 ::: details Show answer
 
-j-question | h-some-other-time ?
+j-question | h-some-other-time
 
 *When else?*
 :::
 
-**3.** `jol var?`
+**3.** `jol var.`
 
 ::: details Show answer
 
-j-question | v-who ?
+j-question | v-who
 
 *What did they do?*
 :::
 
-**4.** `jol donel zor?`
+**4.** `jol donel zor.`
 
 ::: details Show answer
 
-j-question | d-phone | z-which ?
+j-question | d-phone | z-which
 
 *Any phone?*
 :::
 
-**5.** `jol zazawan zul?`
+**5.** `jol zazawan zul.`
 
 ::: details Show answer
 
-j-question | [z-Azawan | z-not] ?
+j-question | [z-Azawan | z-not]
 
 *Not Azawan?*
 :::
@@ -586,11 +586,11 @@ j-no | v-lie
 *False: did lie.*
 :::
 
-**8.** `jol zar vezehel zuhubun har?`
+**8.** `jol zar vezehel zuhubun har.`
 
 ::: details Show answer
 
-j-question | z-who | v-tell | z-Uhubun | h-when ?
+j-question | z-who | v-tell | z-Uhubun | h-when
 
 *Who tells Uhubun when?*
 :::
@@ -603,9 +603,9 @@ j-question | z-who | v-tell | z-Uhubun | h-when ?
 
 Under question, the rest of the single-item and standalone join map is confirm / offer (and fill-ask **-r**). On a list of two or more (no **-r**): **-l** picks from that closed menu; **-m** allows another name (and for **o**, *or none*); **u** is *none of* the listed; **ua** / **uo** is the complement of the listed; **ue** reverse-ranks among the listed. Join **-n** here is stock/usual.
 
-> `jol zazawan zel?`
+> `jol zazawan zel.`
 >
-> j-question | [z-Azawan | z-rank/more] ?
+> j-question | [z-Azawan | z-rank/more]
 >
 > "Is Azawan the only priority?"
 
@@ -708,41 +708,41 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **1.** *Is Azawan the only priority?*
 
 ::: details Show answer
-`jol zazawan zel?`
+`jol zazawan zel.`
 
-j-question | [z-Azawan | z-rank/more] ?
+j-question | [z-Azawan | z-rank/more]
 :::
 
 **2.** *Prefer Ululon?* / *Ululon first?* (rank offer)
 
 ::: details Show answer
-`jol zululon zem?`
+`jol zululon zem.`
 
-j-question | [z-Ululon | z-rank/more.open] ?
+j-question | [z-Ululon | z-rank/more.open]
 :::
 
 **3.** *Has to be Uhubun?*
 
 ::: details Show answer
-`jol zuhubun zol?`
+`jol zuhubun zol.`
 
-j-question | [z-Uhubun | z-or-exactly-one] ?
+j-question | [z-Uhubun | z-or-exactly-one]
 :::
 
 **4.** *Tie?* (standalone rank)
 
 ::: details Show answer
-`jol zael?`
+`jol zael.`
 
-j-question | z-equal-rank ?
+j-question | z-equal-rank
 :::
 
 **5.** *Is the trophy enough?*
 
 ::: details Show answer
-`jol zodobol zaol?`
+`jol zodobol zaol.`
 
-j-question | [z-trophy | z-and/or] ?
+j-question | [z-trophy | z-and/or]
 :::
 
 #### Agalan → English
@@ -763,29 +763,29 @@ j-no . j-refuse-option
 *no / false* (truth flip). *not that* (reject this option).
 :::
 
-**3.** `jol zobelel zual?`
+**3.** `jol zobelel zual.`
 
 ::: details Show answer
 
-j-question | [z-bell | z-everything-but] ?
+j-question | [z-bell | z-everything-but]
 
 *Everything but the bell?*
 :::
 
-**4.** `jol zoel?`
+**4.** `jol zoel.`
 
 ::: details Show answer
 
-j-question | z-ranked-or ?
+j-question | z-ranked-or
 
 *Do nothing?* / *Skip it?*
 :::
 
-**5.** `jol zagabal zodobol zel?`
+**5.** `jol zagabal zodobol zel.`
 
 ::: details Show answer
 
-j-question | [z-clap | z-trophy | z-rank/more] ?
+j-question | [z-clap | z-trophy | z-rank/more]
 *Clap before trophy?* (closed rank of those two)
 :::
 

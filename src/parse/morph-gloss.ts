@@ -36,6 +36,7 @@ import {
   type GlossNode,
   type WordBrackets,
 } from "./gloss-structure.js";
+import { toneMarkLength } from "./span-scan.js";
 import { parseWithTables } from "./parse-core.js";
 import { parseWords, WordParseError } from "./word.js";
 import type {
@@ -377,8 +378,16 @@ export function morphGlossLine(text: string, tables: ClassifyTables): string {
   const carets: number[] = [];
   /** Sentence mark after word index (`.` / `?` / `!`). */
   const marks = new Map<number, string>();
+  /** Tone mark before word index: attached (`!`) or free-standing (`! `). */
+  const tones = new Map<number, string>();
   let wordIdx = 0;
-  for (const chunk of normalized.match(/\S+/g) ?? []) {
+  for (let chunk of normalized.match(/\S+/g) ?? []) {
+    const tone = toneMarkLength(chunk, 0);
+    if (tone) {
+      tones.set(wordIdx, chunk.length === tone ? `${chunk} ` : chunk.slice(0, tone));
+      chunk = chunk.slice(tone);
+      if (!chunk) continue;
+    }
     if (chunk === "^") {
       carets.push(wordIdx);
       continue;
@@ -390,7 +399,7 @@ export function morphGlossLine(text: string, tables: ClassifyTables): string {
   }
   const tree = (parsed && buildGlossTree(parsed, words)) || tokenGlossTree(words, carets);
   const leaf = (node: { i: number; named?: boolean }) => {
-    const gloss = wordGloss(words[node.i]!, tables, ctxByIndex[node.i] ?? {});
+    const gloss = (tones.get(node.i) ?? "") + wordGloss(words[node.i]!, tables, ctxByIndex[node.i] ?? {});
     return node.named ? gloss.replace(/\.named$/, "") : gloss;
   };
   // Sentences: internal marks sit between them (` . `); a final `?` / `!` trails; a final `.` is implicit.
@@ -569,7 +578,7 @@ export function looksLikeMorphLine(line: string): boolean {
     .replace(/\[/g, "")
     .replace(/\][#|]?/g, "");
   const parts = flat.replace(/\s+[?!]$/, "").split(/\s+\|\s+|\s+·\s+|\s+;\s+|\s+[.?!]\s+/);
-  return parts.length > 0 && parts.every((part) => MORPH_TOKEN_RE.test(part));
+  return parts.length > 0 && parts.every((part) => MORPH_TOKEN_RE.test(part.replace(/^(?:!!|\?!|[!?])\s*/, "")));
 }
 
 /** Quoted pass-through payload in a morph line (`"…"`, `""` escape). */

@@ -1,6 +1,6 @@
 import type { MorphWord } from "./types.js";
 import { classifyAll, type ClassifyTables } from "./classify.js";
-import { writingSpanEnd } from "./span-scan.js";
+import { toneMarkLength, writingSpanEnd } from "./span-scan.js";
 import {
   lexWordToToken,
   surfaceAtomToToken,
@@ -48,6 +48,13 @@ export function segmentUtterance(text: string): TokenizeSegment[] {
     if (trimmed[i] === "^") {
       segments.push({ kind: "islandEdge" });
       i += 1;
+      continue;
+    }
+
+    // Tone marks are prosody only: no token.
+    const tone = toneMarkLength(trimmed, i);
+    if (tone) {
+      i += tone;
       continue;
     }
 

@@ -229,7 +229,7 @@ Written and spoken spans stay distinct: a written span label has no EDGE suffix,
 A morph line corresponds **one-to-one** with its Agalan. From the gloss alone you can rebuild the exact written words, so glosses must never merge two forms:
 
 - **Every written word is glossed**, including a spoken **`jal`**. A `jal` that was left out is not added.
-- **Sentence marks.** When one line holds several sentences, the mark between them stands alone with spaces: `z-Azawan | v-walk . z-←Azawan | v-judge`. A line-final `?` or `!` trails the same way (`… | v-walk ?`). A line-final period is implicit.
+- **Sentence marks.** When one line holds several sentences, the mark between them stands alone with spaces: `z-Azawan | v-walk . z-←Azawan | v-judge`. A line-final period is implicit. A [tone mark](../grammar/speech-moves.md#tone-marks) is copied as written: attached to the glossed word or span it colors (`!z-Azawan`), or standing alone with spaces for sentence scope (`! z-Azawan | v-walk`).
 - **One label per form.** Each (PoS, root, ending) maps to one English label. Two roots never share an English sense: when they would, reword one row in the lexicon. `npm run lint:lexicon` checks this, and `npm test` round-trips every glossed example in `docs/grammar/`.
 - **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, `.full` on a [full-root resume](#anaphors-r), and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and `.spelled` on a spelled-out number word (`grarel` → `g-three.spelled`; `g+3` → `g-three`).
 - **Ordinals use digits** (`g#2` → `g-2nd`, `g#-2` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.

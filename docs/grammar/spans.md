@@ -451,6 +451,8 @@ Sometimes *possibility* or a join should apply only to a multi-word chunk, not t
 >
 > "Azawan saw, as a possibility, the red dog." (*possibility* targets that chunk).
 
+A [tone mark](speech-moves.md#tone-marks) written right before the opening `^` colors the whole island (`!^ huzurem zodogol garedel ^`).
+
 **Compare with:** quoting, asides, mentions, and opaque blobs use typed [span fences](#writing) (`d[…]`, `th(…)`). Islands only group so a binder inside can target that chunk.
 
 - No role letter on the edges.
@@ -727,7 +729,7 @@ Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); aside at
 <a id="literal-content"></a>
 <a id="escape"></a>
 
-When a span-marker word or a fence glyph (`[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `=` / `|` / `#` / `^`) must appear **as content**, wrap that token in **atomic opaque**. Writing and speech use the same vehicle. The outer span’s wording is the opaque **interior** (the wrapper is packaging, not extra cited words).
+When a span-marker word or a fence glyph (`[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `=` / `|` / `#` / `^`) or a [tone mark](speech-moves.md#tone-marks) (`!` / `?`) must appear **as content**, wrap that token in **atomic opaque**. Writing and speech use the same vehicle. The outer span’s wording is the opaque **interior** (the wrapper is packaging, not extra cited words).
 
 ```text
 d[ vuwurul d<]> ]

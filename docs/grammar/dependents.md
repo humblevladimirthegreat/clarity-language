@@ -300,15 +300,13 @@ A place, tool, or *of*-relation on the noun is still an extra-noun [hook](hooks.
 ### Writing and speech rhythm (periods)
 <a id="orthography-and-prosody-periods"></a>
 
-A **period** (and matching **`?`** / **`!`**) closes the sentence body in writing. Speech matches that edge with pitch and a short pause.
+A **period** closes the sentence body in writing, whatever the speech act. Speech matches that edge with pitch and a short pause. The act word, not the punctuation, sets question or command. `?` and `!` are [tone marks](speech-moves.md#tone-marks) that go before the words they color.
 
 | Writing | Speech | Use | Cue |
 |---------|--------|-----|-----|
 | `.` | Fall on last stress + short pause | Closes the prior **body**. Next stretch still defaults to **`jal`** unless a new `/j/` turn, a written act word, or *yes* / *no* particle sets otherwise | Fall = the claim is done |
 | Next `/j/` turn (*yes* / *no*, vocative, written act word) | Pitch **reset** into the turn | New turn; firm **-l** / soft **-m** imply **`jal`** / **`jam`** | Reset = jump to a new act |
 | Bare body or hook + body after `.` | No full reset required | Implied **`jal`** (or **`jam`** only if a soft particle / written **`jam`** said so) | No jump, so same statement |
-| `?` | Rise or high level on last stress | Question (**`jol`** / **`jom`**); act word usually written | Rise = still waiting for an answer |
-| `!` | Sharp or clipped fall | Command / prohibition; act word usually written | Sharp fall = do this / don’t |
 | Soft statement / soft *yes* / *no* **-m** | Lighter fall; boundary still clear | **`jam`** (implied or written) | **-m** leaves the hold open |
 | `/x/` continue (clause join) | Dip or short pause; **no** full pitch reset | Keep opener speech act; period after the **whole** joined stretch | Dip extends; no jump |
 | `/x/` linker after `.` (`xezazal …`) | Dip into the linker; no turn reset | Keep prior speech act; may start a new written sentence under that speech act | Linker glues; still the same act |

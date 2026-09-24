@@ -118,11 +118,11 @@ j-Azawan
 *Azawan!* (calling Azawan)
 :::
 
-**2.** `jol zazawan vajul?`
+**2.** `jol zazawan vajul.`
 
 ::: details Show answer
 
-j-question | z-Azawan | v-sit ?
+j-question | z-Azawan | v-sit
 
 *Does Azawan sit?*
 :::
@@ -182,6 +182,47 @@ When a missed *don't* would be dangerous, say **`jul`** twice among the opening 
 >
 > "Don't sneak. I mean it."
 
+### Tone marks
+<a id="tone-marks"></a>
+
+A **tone mark** shows how you feel while you say something. It changes your voice only. It never changes the speech act (that is the act word's job), and a sentence still ends in a period.
+
+| Mark | Feeling | Voice | Cue |
+|------|---------|-------|-----|
+| `!` | Strong feeling (excited, upset: the words say which) | Louder, stressed | English *!* |
+| `!!` | Stronger still | Louder again | Doubled = more |
+| `?` | Unsure about it | Rising, tentative | English *(?)* after a doubtful word |
+| `?!` | Surprised and doubtful | Rising and loud | *Wait, what?!* |
+
+Write the mark **before** what it colors, so you see the tone before you say the words:
+
+| Written | Colors |
+|---------|--------|
+| Attached to a word: `!zazawan` | that word |
+| Attached to an [island](spans.md#scope-islands): `?^ … ^` | the island |
+| Attached to a [span](spans.md): `!d[ … ]` | the span |
+| Standing alone, then a space: `! zazawan …` | the rest of the sentence, up to the period |
+
+> `zazawan vejel ?dodogol.`
+>
+> z-Azawan | v-see | ?d-dog
+>
+> "Azawan saw a dog (?)." (unsure about just *dog*).
+
+> `! zazawan vawalal.`
+>
+> ! z-Azawan | v-walk
+>
+> "Azawan walks!"
+
+**Compare with:** **`jol`** asks a question; `?` only sounds unsure. A tone mark shows the feeling; [emotion compose](values.md#emotion-compose) states it as a claim, and the two can share a sentence.
+
+- A mark may go on any word, including act words and linkers (`!xezazal`, *therefore!*).
+- Only `!`, `!!`, `?`, and `?!` are marks. Other stacks (`!?`, `??`) are not.
+- A mark on a word inside a colored island or sentence overrides it for that word.
+- Before a span fence, the mark is **your** tone about the quote. Inside the fence, it is part of what is quoted (the original speaker's tone).
+- Speech adds no syllables: you voice the mark over its words.
+
 ### Number as interjection
 <a id="number-as-interjection"></a>
 
@@ -221,9 +262,9 @@ j-soft-statement | z-Azawan | v-sit
 **2.** *Does Uhubun see a trumpet, perhaps?*
 
 ::: details Show answer
-`jom zuhubun dudubel vejel?`
+`jom zuhubun dudubel vejel.`
 
-j-soft-question | z-Uhubun | d-trumpet | v-see ?
+j-soft-question | z-Uhubun | d-trumpet | v-see
 :::
 
 **3.** *Please stand.*
@@ -269,11 +310,11 @@ j-soft-statement | z-Azawan | v-sit
 *For what it's worth, Azawan sits.*
 :::
 
-**2.** `jom zuhubun dudubel vejel?`
+**2.** `jom zuhubun dudubel vejel.`
 
 ::: details Show answer
 
-j-soft-question | z-Uhubun | d-trumpet | v-see ?
+j-soft-question | z-Uhubun | d-trumpet | v-see
 
 *Does Uhubun see a trumpet, perhaps?*
 :::

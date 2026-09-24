@@ -128,7 +128,8 @@ export function glossCollisions(tables: ClassifyTables): GlossCollision[] {
 type Node =
   | { t: "leaf"; text: string }
   | { t: "group"; prefix: string; label: string; close: string; kids: Node[] }
-  | { t: "mark"; mark: string };
+  | { t: "mark"; mark: string }
+  | { t: "tone"; tone: string };
 
 const LABEL_RE =
   /^((?:th|gl|[zdbvgwhxj])-)?((?:NAME\.)?(?:CITE|MENTION|ASIDE|OPAQUE|SCOPE|NAME)(?:\.[a-z]+)*)\[/;
@@ -157,6 +158,12 @@ class GlossReader {
   }
 
   item(): Node {
+    // Tone mark before a word / group; a trailing space = free-standing (sentence scope).
+    const tone = this.src.slice(this.pos).match(/^(?:!!|\?!|[!?]) ?/);
+    if (tone) {
+      this.pos += tone[0].length;
+      return { t: "tone", tone: tone[0] };
+    }
     const rest = this.src.slice(this.pos);
     const labeled = rest.match(LABEL_RE);
     if (labeled || rest.startsWith("[")) {
@@ -254,13 +261,17 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
 
 // ── Surface assembly ────────────────────────────────────────────────────────
 
-type Piece = { alts: string[] } | { mark: string };
+type Piece = { alts: string[] } | { mark: string } | { tone: string };
 
 function assemble(nodes: Node[], index: GlossIndex, tables: ClassifyTables, named = false): Piece[] {
   const out: Piece[] = [];
   for (const node of nodes) {
     if (node.t === "mark") {
       out.push({ mark: node.mark });
+      continue;
+    }
+    if (node.t === "tone") {
+      out.push({ tone: node.tone });
       continue;
     }
     if (node.t === "leaf") {
@@ -313,11 +324,16 @@ function groupPieces(node: Extract<Node, { t: "group" }>, index: GlossIndex, tab
 function render(pieces: Piece[], choice: number[]): string {
   let out = "";
   let k = 0;
+  let glue = false;
   for (const piece of pieces) {
     if ("mark" in piece) out += piece.mark;
-    else {
+    else if ("tone" in piece) {
+      out += out ? ` ${piece.tone}` : piece.tone;
+      glue = true;
+    } else {
       const word = piece.alts[choice[k++]!]!;
-      out += out ? ` ${word}` : word;
+      out += out && !glue ? ` ${word}` : word;
+      glue = false;
     }
   }
   return out;

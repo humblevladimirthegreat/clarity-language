@@ -11,7 +11,8 @@ sample complex sentence: jael zugobon zam zedonen zal guzumum. zadedal zogovel z
 Prosody
 
 consider removing some emotion words from lexicon
-consider allowing ! (and other emotion punctuation?)
+
+consider other punctuation marks and tags: /s /j, 
 
 do a grammar-docs/ consistency check. Does anything about the grammar seem incorrect, confusing, meaningless, or counterintuitive?
 do a grammar-docs/ suggestion pass. Is there any common english grammar that can't be easily expressed (and not intentionally discouraged)? Could any of the existing grammar be extended into other forms to have intuitive new readings?

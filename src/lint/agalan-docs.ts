@@ -6,6 +6,7 @@ import {
   unknownLexiconContentRoots,
   type ClassifyTables,
 } from "../parse/classify.js";
+import { toneMarkLength } from "../parse/span-scan.js";
 import { letterPrefix } from "../parse/resolve.js";
 import { parseWord, WordParseError } from "../parse/word.js";
 import { forEachMarkdownCodeToken } from "../retie/tokens.js";
@@ -59,6 +60,11 @@ export function peelLintChunk(chunk: string): { prefix: string; core: string; su
   while (core.length > 0 && LEADING_QUOTE.has(core[0]!)) {
     prefix += core[0]!;
     core = core.slice(1);
+  }
+  const tone = toneMarkLength(core, 0);
+  if (tone && core.length > tone) {
+    prefix += core.slice(0, tone);
+    core = core.slice(tone);
   }
 
   for (const [left, right] of [["(", ")"]] as const) {

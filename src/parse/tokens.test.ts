@@ -78,3 +78,16 @@ describe("tokenizeUtterance", () => {
     assert.equal(tokens[1]!.image, ".");
   });
 });
+
+describe("tone marks", () => {
+  it("peels attached and free-standing marks without tokens", () => {
+    assert.deepEqual(segmentUtterance("?! zazawan !!vejel ?^ hal ^."), [
+      { kind: "word", text: "zazawan" },
+      { kind: "word", text: "vejel" },
+      { kind: "islandEdge" },
+      { kind: "word", text: "hal" },
+      { kind: "islandEdge" },
+      { kind: "punct", punct: "period" },
+    ]);
+  });
+});
