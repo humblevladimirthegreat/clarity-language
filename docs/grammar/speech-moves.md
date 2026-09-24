@@ -211,7 +211,7 @@ Write the mark **before** what it colors, so you see the tone before you say the
 
 > `! zazawan vawalal.`
 >
-> ! z-Azawan | v-walk
+> ! | z-Azawan | v-walk
 >
 > "Azawan walks!"
 

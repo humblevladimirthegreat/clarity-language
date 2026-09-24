@@ -378,13 +378,13 @@ export function morphGlossLine(text: string, tables: ClassifyTables): string {
   const carets: number[] = [];
   /** Sentence mark after word index (`.` / `?` / `!`). */
   const marks = new Map<number, string>();
-  /** Tone mark before word index: attached (`!`) or free-standing (`! `). */
+  /** Tone mark before word index: attached (`!`) or free-standing (its own `! | ` slot). */
   const tones = new Map<number, string>();
   let wordIdx = 0;
   for (let chunk of normalized.match(/\S+/g) ?? []) {
     const tone = toneMarkLength(chunk, 0);
     if (tone) {
-      tones.set(wordIdx, chunk.length === tone ? `${chunk} ` : chunk.slice(0, tone));
+      tones.set(wordIdx, chunk.length === tone ? `${chunk} | ` : chunk.slice(0, tone));
       chunk = chunk.slice(tone);
       if (!chunk) continue;
     }

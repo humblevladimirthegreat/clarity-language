@@ -158,11 +158,11 @@ class GlossReader {
   }
 
   item(): Node {
-    // Tone mark before a word / group; a trailing space = free-standing (sentence scope).
-    const tone = this.src.slice(this.pos).match(/^(?:!!|\?!|[!?]) ?/);
+    // Tone mark before a word / group; its own ` | ` slot = free-standing (sentence scope).
+    const tone = this.src.slice(this.pos).match(/^(!!|\?!|[!?])( \| )?/);
     if (tone) {
       this.pos += tone[0].length;
-      return { t: "tone", tone: tone[0] };
+      return { t: "tone", tone: tone[2] ? `${tone[1]} ` : tone[1]! };
     }
     const rest = this.src.slice(this.pos);
     const labeled = rest.match(LABEL_RE);
