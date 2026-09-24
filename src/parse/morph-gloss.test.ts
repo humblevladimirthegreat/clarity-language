@@ -368,3 +368,14 @@ describe("morphGlossLine — th stance letter", () => {
     assert.match(morphGlossLine("hababam barl zazawan vajul.", tables), /^h-before/);
   });
 });
+
+describe("morphGlossLine — stance joins and emphatic prohibition", () => {
+  it("glosses /th/ join fences", () => {
+    expectLine("zazawan vawalal thuvuvum thul.", "z-Azawan | v-walk | th-WITNESSED | th-not");
+    expectLine("zazawan vawalal thurugum bululon thul.", "z-Azawan | v-walk | th-because | b-Ululon | th-not");
+  });
+
+  it("glosses jul jul", () => {
+    expectLine("jul jul vazanal.", "j-prohibition | j-prohibition | v-sneak");
+  });
+});

@@ -180,13 +180,32 @@ class AgelanSentenceParser extends CstParser {
             ]);
           });
           this.OPTION(() => {
+            this.OPTION2({
+              GATE: () => this.julEchoAhead(),
+              DEF: () => this.CONSUME3(Force, { LABEL: "ForceEcho" }),
+            });
             this.CONSUME(Force);
           });
         },
       },
-      { ALT: () => this.CONSUME2(Force) },
+      {
+        ALT: () => {
+          this.OPTION3({
+            GATE: () => this.julEchoAhead(),
+            DEF: () => this.CONSUME4(Force, { LABEL: "ForceEcho" }),
+          });
+          this.CONSUME2(Force);
+        },
+      },
     ]);
   });
+
+  /** Emphatic prohibition: `jul jul` at the left edge (speech-moves.md § Emphatic prohibition). */
+  private julEchoAhead(): boolean {
+    const a = this.LA(1);
+    const b = this.LA(2);
+    return a.tokenType === Force && a.image === "jul" && b.tokenType === Force && b.image === "jul";
+  }
 
   public bodyClause = this.RULE("bodyClause", () => {
     this.OPTION(() => {
@@ -928,11 +947,9 @@ function flattenHUnits(cst: CstNode): Unit[] {
     const hUnits = childNodes(part, "hUnitRule").map(buildHUnit);
     const close = childNodes(part, "hJoinClose")[0];
     const { join } = joinFromClose(close);
-    if (join) {
-      for (const unit of hUnits) units.push({ kind: "h", unit });
-      continue;
-    }
     for (const unit of hUnits) units.push({ kind: "h", unit });
+    // Keep the fence (`/h/` or stance `thul` / `thol` / …) so it is not silently dropped.
+    if (join) units.push({ kind: "h", unit: { word: join, modifiers: [] } });
   }
   return units;
 }
@@ -1043,6 +1060,7 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
   const hookTok = childToken(cst, "Hook");
   const forceTok = childToken(cst, "Force");
   const force = forceTok ? lexWordFromToken(forceTok) : undefined;
+  const echoTok = childToken(cst, "ForceEcho");
   const impliedForce = force ? undefined : impliedForceFromPolars(polars) ?? "jal";
   const hookModifiers = childTokens(cst, "W").map(lexWordFromToken);
 
@@ -1051,6 +1069,7 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
     polars,
     hook: hookTok ? lexWordFromToken(hookTok) : undefined,
     hookModifiers: hookModifiers.length > 0 ? hookModifiers : undefined,
+    forceEcho: echoTok ? lexWordFromToken(echoTok) : undefined,
     force,
     impliedForce,
   };

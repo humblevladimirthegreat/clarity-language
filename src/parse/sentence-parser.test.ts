@@ -35,6 +35,26 @@ describe("sentence-parser synthetic", () => {
     assert.equal(result.utterances[0]!.bodies.length, 0);
   });
 
+  it("parses emphatic jul jul as one prohibition", () => {
+    const result = parseSentenceTokens(tokens("jul jul vazanal."));
+    assert.equal(result.utterances.length, 1);
+    assert.equal(result.utterances[0]!.left.forceEcho?.raw, "jul");
+    assert.equal(result.utterances[0]!.left.force?.raw, "jul");
+    assert.equal(result.utterances[0]!.bodies.length, 1);
+  });
+
+  it("does not fold other repeated act words", () => {
+    const result = parseSentenceTokens(tokens("jol jol vazanal."));
+    assert.equal(result.utterances.length, 2);
+    assert.equal(result.utterances[0]!.left.forceEcho, undefined);
+  });
+
+  it("keeps a stance join fence after /th/ words", () => {
+    const units = parseSentenceTokens(tokens("zazawan vawalal thuvuvum thul.")).utterances[0]!.bodies[0]!.clause.units;
+    const raws = units.flatMap((u) => (u.kind === "h" ? [u.unit.word.raw] : []));
+    assert.deepEqual(raws, ["thuvuvum", "thul"]);
+  });
+
   it("rejects leftover tokens after a complete clause", () => {
     assert.throws(() => parseSentenceTokens(tokens("zazawan vawalal xuxul.")), SentenceParseError);
   });

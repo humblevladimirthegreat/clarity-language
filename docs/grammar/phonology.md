@@ -19,11 +19,11 @@ The cue words below are pronounced as in Standard American English.
 | Agalan | IPA | Cue |
 |--------|-----|-----|
 | `e` | /e̞/ <IpaPlay file="Mid_front_unrounded_vowel.ogg" label="e" /> | *bet* |
-| `u` | /ʌ/ <IpaPlay file="Open-mid_back_unrounded_vowel.ogg" label="u" /> | *but* |
-| `o` | /o/ <IpaPlay file="Close-mid_back_rounded_vowel.ogg" label="o" /> | *boat* (no glide, like Spanish *no*) |
+| `u` | /u/ <IpaPlay file="Close_back_rounded_vowel.ogg" label="u" /> | *boot* (no glide, like Spanish *tú*) |
+| `o` | /o̞/ <IpaPlay file="Mid_back_rounded_vowel.ogg" label="o" /> | *Cambodia* (no glide) |
 | `a` | /ɑ/ <IpaPlay file="Open_back_unrounded_vowel.ogg" label="a" /> | *father* |
 
-Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) by [Denelson83](https://commons.wikimedia.org/wiki/User:Denelson83), except /e̞/ by [TFighterPilot](https://commons.wikimedia.org/wiki/File:Mid_front_unrounded_vowel.ogg).
+Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). /u/ and /ɑ/ by [Denelson83](https://commons.wikimedia.org/wiki/User:Denelson83) and except /e̞/ and /o̞/ by [TFighterPilot](https://commons.wikimedia.org/wiki/User:TFighterPilot).
 
 ### Consonants
 
@@ -113,7 +113,7 @@ When you **spell a word aloud** or **name a letter**, say the Agalan name for it
 | Agalan | Name | Cue |
 |--------|------|-----|
 | `e` | `e` | *bet* |
-| `u` | `u` | *but* |
+| `u` | `u` | *boot* |
 | `o` | `o` | *boat* (no glide) |
 | `a` | `a` | *father* |
 | `b` | `be` | *beg* |
@@ -162,7 +162,7 @@ These shape choices keep ordinary singing easier:
 
 | Constraint | Why it helps | How Agalan keeps it |
 |------------|--------------|---------------------|
-| Mid-to-open vowels | Tight closed vowels shrink a comfortable high range | Four mid-to-open vowels (/e̞ ʌ o ɑ/) |
+| Mostly mid-to-open vowels | Tight closed vowels shrink a comfortable high range | Three mid-to-open vowels (/e̞ o ɑ/) plus close /u/, which keeps the **u** ≈ undo vowel (negation, prohibition) clearly apart from **a** and **o** |
 | One vowel per letter | Sliding from one vowel to another mid-note forces the mouth to change | Stacked letters = separate syllables (`juon` = *ju'on*) |
 | Few consonant clusters | Clusters are harder to say quickly | Ordinary shape is consonant-then-vowel at the start of a syllable; limited clusters below |
 | Voiced preferred | Voiceless stops cut the note; singers often voice them anyway | Voiced preferred; unvoiced allowed as style only |

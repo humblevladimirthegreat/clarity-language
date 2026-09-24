@@ -702,6 +702,7 @@ function walkUtterance(
   for (const polar of left.polars) takeRaw(cursor, polar.raw);
   for (const mod of left.hookModifiers ?? []) takeRaw(cursor, mod.raw);
   if (left.hook) takeRaw(cursor, left.hook.raw);
+  if (left.forceEcho) takeRaw(cursor, left.forceEcho.raw);
   if (left.force) takeRaw(cursor, left.force.raw);
   const sink: number[] = [];
   for (const body of utterance.bodies) {

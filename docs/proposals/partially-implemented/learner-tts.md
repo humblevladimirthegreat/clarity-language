@@ -6,7 +6,7 @@
 
 ## Motivation
 
-Learners need to **hear** Agalan, not only read it. Native `speechSynthesis` on raw orthography fails: letter values differ from English (`j` = /j/, `x` = /ʒ/, `u` = /ʌ/), stacked vowels are separate syllables, and preferred **writing** forms (number shorthand, span brackets) are not what speech uses.
+Learners need to **hear** Agalan, not only read it. Native `speechSynthesis` on raw orthography fails: letter values differ from English (`j` = /j/, `x` = /ʒ/), stacked vowels are separate syllables, and preferred **writing** forms (number shorthand, span brackets) are not what speech uses.
 
 With a finished parser, most of the hard mapping is already structured in the AST. Usable learner TTS is then a thin **speech-normalization** pass plus a deterministic **grapheme→phoneme** table from phonology, rendered by an in-browser phoneme engine — not a custom neural voice.
 
@@ -114,7 +114,7 @@ Single table from [phonology.md](../../grammar/phonology.md); no English respell
 | Orthography | IPA (engine input) | Notes |
 |-------------|--------------------|-------|
 | **e** | /e̞/ | mid; not English “ee” |
-| **u** | /ʌ/ | |
+| **u** | /u/ | |
 | **o** | /o/ | monophthong — no /oʊ/ glide |
 | **a** | /ɑ/ | |
 | **h** | /ɦ/ | |

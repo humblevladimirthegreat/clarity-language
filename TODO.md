@@ -7,7 +7,6 @@ my name: obogan (innovation)
 # TODO
 j should just be y, remind that y is never a vowel
 
-consider making negatives clearer (stress, repeat jul?)
 Prosody
 
 gloss should indicate phrase structure (including proper phrases) and what modifies what. Gloss overlay ui should show that as well.

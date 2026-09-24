@@ -17,7 +17,7 @@ describe("normalizeIpaForKitten", () => {
 
   it("keeps Agalan inventory phones", () => {
     assert.equal(normalizeIpaForKitten("zɑːzɑːwɑn"), "zɑːzɑːwɑn");
-    assert.equal(normalizeIpaForKitten("ʌɦɡɹʒʃ"), "ʌɦɡɹʒʃ");
+    assert.equal(normalizeIpaForKitten("uɦɡɹʒʃ"), "uɦɡɹʒʃ");
   });
 
   it("keeps citation dots and lengthens non-final vowels for Kitten", () => {
@@ -25,10 +25,10 @@ describe("normalizeIpaForKitten", () => {
     assert.equal(word.ipa, "zɑ.zɑ.wɑn");
     assert.equal(wordIpaPhones(word), "zɑːzɑːwɑn");
     const juon = toPhonemeWord("juon");
-    assert.equal(juon.ipa, "jʌ.on");
-    assert.equal(wordIpaPhones(juon), "jʌːon");
-    assert.equal(wordIpaPhones(toPhonemeWord("gomonum")), "ɡoːmoːnʌm");
-    assert.equal(wordIpaPhones(toPhonemeWord("guzumum")), "ɡʌːzʌːmʌm");
+    assert.equal(juon.ipa, "ju.on");
+    assert.equal(wordIpaPhones(juon), "juːon");
+    assert.equal(wordIpaPhones(toPhonemeWord("gomonum")), "ɡoːmoːnum");
+    assert.equal(wordIpaPhones(toPhonemeWord("guzumum")), "ɡuːzuːmum");
     assert.equal(wordIpaPhones(toPhonemeWord("jal")), "jɑl");
   });
 });
@@ -68,7 +68,7 @@ describe("ipaToKittenIds", () => {
 describe("toPhonemeWord", () => {
   it("maps the phonology letter table", () => {
     assert.equal(toPhonemeWord("e").ipa, "e̞");
-    assert.equal(toPhonemeWord("u").ipa, "ʌ");
+    assert.equal(toPhonemeWord("u").ipa, "u");
     assert.equal(toPhonemeWord("o").ipa, "o");
     assert.equal(toPhonemeWord("a").ipa, "ɑ");
     assert.equal(toPhonemeWord("h").ipa, "ɦ");
@@ -82,9 +82,9 @@ describe("toPhonemeWord", () => {
     const word = toPhonemeWord("juon");
     assert.deepEqual(
       word.syllables.map((s) => s.ipa),
-      ["jʌ", "on"],
+      ["ju", "on"],
     );
-    assert.equal(word.ipa, "jʌ.on");
+    assert.equal(word.ipa, "ju.on");
   });
 
   it("keeps word-final -x as letter x /ʒ/ (zazawanx)", () => {
@@ -96,17 +96,17 @@ describe("toPhonemeWord", () => {
   it("treats mid-word x as /ʒ/ (zugoboxrawon)", () => {
     const word = toPhonemeWord("zugoboxrawon");
     assert.ok(word.ipa.includes("ʒ"));
-    assert.equal(word.ipa, "zʌ.ɡo.bo.ʒɹɑ.won");
+    assert.equal(word.ipa, "zu.ɡo.bo.ʒɹɑ.won");
   });
 
   it("keeps gl- as an onset cluster (glelulul)", () => {
     const word = toPhonemeWord("glelulul");
-    assert.equal(word.ipa, "ɡle̞.lʌ.lʌl");
+    assert.equal(word.ipa, "ɡle̞.lu.lul");
   });
 
   it("matches the phonology try-it line", () => {
     assert.equal(toPhonemeWord("zazawan").ipa, "zɑ.zɑ.wɑn");
-    assert.equal(toPhonemeWord("guzumum").ipa, "ɡʌ.zʌ.mʌm");
+    assert.equal(toPhonemeWord("guzumum").ipa, "ɡu.zu.mum");
   });
 });
 

@@ -103,7 +103,7 @@ Unvoiced variants are **style**, not letters. Before `phonesToLetters`:
 | [ʒ] [ʃ] | /ʒ/ | **x** (unvoiced **x** as style; plural **-x** is the same letter) |
 | [ɦ] [h] | /ɦ/ | **h** |
 | [e] [e̞] [ɛ] | /e̞/ | **e** |
-| [ʌ] [ə] [ʊ] (model-dependent) | /ʌ/ | **u** (adapter documents the mapping) |
+| [u] [ʊ] [uː] (model-dependent) | /u/ | **u** (adapter documents the mapping) |
 | [o] [o̞] [ɔ] | /o/ | **o** (reject /oʊ/ as two targets if the model emits a glide) |
 | [ɑ] [a] | /ɑ/ | **a** |
 | [j] | /j/ | **j** |

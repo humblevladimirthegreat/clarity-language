@@ -9,7 +9,7 @@ const VOWELS = new Set(["e", "u", "o", "a"]);
 
 const LETTER_IPA: Record<string, string> = {
   e: "e̞",
-  u: "ʌ",
+  u: "u",
   o: "o",
   a: "ɑ",
   h: "ɦ",

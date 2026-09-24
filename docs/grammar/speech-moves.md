@@ -169,6 +169,17 @@ The act word is **`j` + vowel + ending**. The vowel sets the act (**a** statemen
 
 A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/j/` words, immediately before the act word, or before a body that defaults to a statement.
 
+### Emphatic prohibition
+<a id="emphatic-prohibition"></a>
+
+When a missed *don't* would be dangerous, say **`jul`** twice among the opening `/j/` words. The repeat makes the prohibition louder; it never cancels it. Repeat only the opening act word: a second `vul` at the end of the sentence is not emphasis.
+
+> `jul jul vazanal.`
+>
+> j-prohibition | j-prohibition | v-sneak
+>
+> "Don't sneak. I mean it."
+
 ### Number as interjection
 <a id="number-as-interjection"></a>
 

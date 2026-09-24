@@ -98,6 +98,14 @@ Spellings under `/h/` / `/w/` that share the join series but have **no circumsta
 
 Under `/h/` / `/w/`, join spellings beyond the [defined restrictor core](../grammar/restrictors.md#defined-core-full) and beyond [join-relations](../grammar/join-across-roles.md#join-relations) on `/h/`…**-n** — reserved slot, no gloss. See also [phrase join inventory](../grammar/joins.md#phrase-reserved-forms).
 
+## Stance joins (`/th/`)
+
+Source: [join-across-roles.md](../grammar/join-across-roles.md#stance-joins)
+
+- **Standalone** `/th/` joins with no stance word before them (bare `thul` / `thum`, `thal`, …) — no gloss yet (*no stance* / *no reason* readings undecided)
+- **`/th/`…-n** — reserved; no join-relation or sequence reading
+- Rank series (`thel` / `thael` / `thoel` / `thuel`) on stance words — spellings in the table, no worked reading yet
+
 ## Role compounds
 
 Source: [roles.md](../grammar/roles.md), [x-compounds.md](../grammar/x-compounds.md)

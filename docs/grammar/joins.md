@@ -825,6 +825,7 @@ Join vowels stack at most two letters. Endings by role letter:
 | `/z/` `/d/` `/b/` `/w/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | phrase lists; **-n** is a named package |
 | `/ɡ/` `/h/` | same series as restrictors allow | [restrictors](restrictors.md#defined-core-full); **-n** forms are [join-relations](join-across-roles.md#join-relations) |
 | `/v/` | **-l** / **-m** / **-r** | parallel **-n** forms are [join-act verbs](join-across-roles.md#join-act-verbs) |
+| `/th/` | **-l** / **-m** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | [stance joins](join-across-roles.md#stance-joins) on stance words (*not because…*) |
 | `/x/` | **-l** / **-m** / **-n** | clause forms: [Join across roles](join-across-roles.md); stacked vowels take **-l** / **-m** / **-n**, not **-r** |
 
 Word shape: [phonology](phonology.md#phonotactics).

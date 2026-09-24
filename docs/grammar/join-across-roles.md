@@ -28,20 +28,20 @@ The `/x/` forms are clause joins; **-n** under `/v/`, `/ɡ/`, and `/h/` makes jo
 <a id="vowels--endings"></a>
 <a id="ending-senses-clause-joins"></a>
 
-Beginner already used `vam` and `xam`. The same vowels and **-l** / **-m** / **-r** endings work under `/v/` and `/x/`. Clause **-n** forms are in [Sequence](#sequence); `/v/` **-n** forms are [join-act verbs](join-across-roles.md#join-act-verbs).
+Beginner already used `vam` and `xam`. The same vowels and **-l** / **-m** / **-r** endings work under `/v/`, `/x/`, and stance `/th/` ([stance joins](#stance-joins)). Clause **-n** forms are in [Sequence](#sequence); `/v/` **-n** forms are [join-act verbs](join-across-roles.md#join-act-verbs).
 
 | | **-l** | **-m** | **-r** |
 |---|--------|--------|--------|
-| **a** | `val` / `xal` | `vam` / `xam` | `var` / `xar` |
-| **o** | `vol` / `xol` | `vom` / `xom` | `vor` / `xor` |
-| **u** | `vul` / `xul` | `vum` / `xum` | `vur` / `xur` |
-| **ao** | `vaol` / `xaol` | `vaom` / `xaom` | — |
-| **ua** | `vual` / `xual` | `vuam` / `xuam` | — |
-| **uo** | `vuol` / `xuol` | `vuom` / `xuom` | — |
-| **e** | `vel` / `xel` | `vem` / `xem` | `ver` / `xer` |
-| **ae** | `vael` / `xael` | `vaem` / `xaem` | — |
-| **oe** | `voel` / `xoel` | `voem` / `xoem` | — |
-| **ue** | `vuel` / `xuel` | `vuem` / `xuem` | — |
+| **a** | `val` / `xal` / `thal` | `vam` / `xam` / `tham` | `var` / `xar` / `thar` |
+| **o** | `vol` / `xol` / `thol` | `vom` / `xom` / `thom` | `vor` / `xor` / `thor` |
+| **u** | `vul` / `xul` / `thul` | `vum` / `xum` / `thum` | `vur` / `xur` / `thur` |
+| **ao** | `vaol` / `xaol` / `thaol` | `vaom` / `xaom` / `thaom` | — |
+| **ua** | `vual` / `xual` / `thual` | `vuam` / `xuam` / `thuam` | — |
+| **uo** | `vuol` / `xuol` / `thuol` | `vuom` / `xuom` / `thuom` | — |
+| **e** | `vel` / `xel` / `thel` | `vem` / `xem` / `them` | `ver` / `xer` / `ther` |
+| **ae** | `vael` / `xael` / `thael` | `vaem` / `xaem` / `thaem` | — |
+| **oe** | `voel` / `xoel` / `thoel` | `voem` / `xoem` / `thoem` | — |
+| **ue** | `vuel` / `xuel` / `thuel` | `vuem` / `xuem` / `thuem` | — |
 
 Each verb-phrase item is a verb plus its own object material. When every item is a bare verb, a `/d/` immediately after the join is SHARED over all verbs: `vejel vabelel vam dabelel` → *sees and tempts an apple*.
 
@@ -58,6 +58,25 @@ An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, cov
 > `zazawan vawalal zululon vurunul xol zuhubun velebel xal.`
 >
 > "(Azawan walks or Ululon runs) and Uhubun sleeps."
+
+### Stance joins
+<a id="stance-joins"></a>
+
+When English would deny or weigh **how you stand** toward a claim (*not because…*, *either I saw it or I was told*), close the [stance](clause.md#stance-th) words with a `/th/` join. The claim itself is untouched; the join works only on the stance words before it. (cue: same vowels as every other join.)
+
+> `zazawan vawalal thurugum banunul thul.`
+>
+> z-Azawan | v-walk | th-because | b-rain | th-not
+>
+> "Azawan walks, but not because of the rain."
+
+> `zazawan vawalal thuvuvum theraram thol.`
+>
+> z-Azawan | v-walk | th-WITNESSED | th-TOLD | th-or-exactly-one
+>
+> "Azawan walks: I either saw it or was told, one of the two."
+
+**Compare with:** *Azawan does not walk* denies the event, so the join goes on the verb (`vawalal vul`) or the clause (`xul`), not on `/th/`.
 
 ### Join-act verbs
 <a id="join-act-verbs"></a>

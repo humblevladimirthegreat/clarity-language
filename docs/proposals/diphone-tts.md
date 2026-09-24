@@ -10,7 +10,7 @@ KittenTTS is an English-trained neural vocoder with an IPA tokenizer. Feeding Ag
 
 Learners need to hear the [phonology](../grammar/phonology.md) table: four full vowels, stacked vowels as **two syllables**, monophthong **`o`**, `/ɦ/` and `/ɹ/` as specified. A diphone concatenator plays **those** takes, with **duration owned by the engine** (equal syllable timing), not by an English acoustic prior.
 
-There is **no** off-the-shelf IPA-universal diphone database. MBROLA / Festival banks are other languages (English `/oʊ/`, Spanish tap **r**, missing `/ʌ/` `/ɦ/`). Reusing them would repeat Kitten’s class of error. The bank is **one speaker, recorded for Agalan**.
+There is **no** off-the-shelf IPA-universal diphone database. MBROLA / Festival banks are other languages (English `/oʊ/`, Spanish tap **r**, missing `/ɦ/`). Reusing them would repeat Kitten’s class of error. The bank is **one speaker, recorded for Agalan**.
 
 ## Goals
 
@@ -53,7 +53,7 @@ PhonemePlan (existing)
         AudioBuffer
 ```
 
-`toPhonemes` stays the [letter table](../grammar/phonology.md): **`e`** `/e̞/`, **`u`** `/ʌ/`, **`o`** `/o/`, **`a`** `/ɑ/`, **`h`** `/ɦ/`, **`r`** `/ɹ/`, **`x`** `/ʒ/`. The concatenator maps those IPA symbols onto **unit ids**, not onto English ARPAbet.
+`toPhonemes` stays the [letter table](../grammar/phonology.md): **`e`** `/e̞/`, **`u`** `/u/`, **`o`** `/o/`, **`a`** `/ɑ/`, **`h`** `/ɦ/`, **`r`** `/ɹ/`, **`x`** `/ʒ/`. The concatenator maps those IPA symbols onto **unit ids**, not onto English ARPAbet.
 
 ## Diphone definition
 
@@ -69,7 +69,7 @@ Phone set for v1 (plus silence `#`):
 
 | Kind | IPA |
 |------|-----|
-| Vowels | `/e̞/` `/ʌ/` `/o/` `/ɑ/` |
+| Vowels | `/e̞/` `/u/` `/o/` `/ɑ/` |
 | Onsets | `/ɦ/` `/w/` `/ɡ/` `/d/` `/j/` `/b/` `/z/` `/m/` `/n/` `/v/` `/l/` `/ɹ/` `/ʒ/` |
 | Extra coda | none (plural **-x** is letter **x** `/ʒ/` after the ending) |
 
@@ -81,7 +81,7 @@ Do **not** ship unused C–C pairs. Generate the list from [phonotactics](../gra
 | Open syllables | every attested **C–V** and **V–C** (root `(CV)+` after the role letter) |
 | Hiatus | all **V–V** (stacked vowels are two syllables) |
 | Endings | **V–l/m/n/ɹ**; then **-lx** etc. **l/m/n/ɹ–ʒ**, **ʒ–#** |
-| Number marker | documented **PoS–ɹ** then **ɹ–V** (`ra` / `ru` / `re` / `ro`, **`eu`** as `e–ʌ`) |
+| Number marker | documented **PoS–ɹ** then **ɹ–V** (`ra` / `ru` / `re` / `ro`, **`eu`** as `e–u`) |
 | Adjective **gl-** | **`ɡ–l`** then **l–V** |
 
 Expect on the order of **150–220** units, not ~360. A TypeScript fixture enumerates the set; missing unit at Speak time is a hard error (beep / skip that span), never an English fallback.

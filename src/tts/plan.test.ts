@@ -123,9 +123,9 @@ describe("previewPhonemes", () => {
     const plan = previewPhonemes("zazawan guzumum.");
     assert.deepEqual(
       plan.words.map((w) => w.ipa),
-      ["zɑ.zɑ.wɑn", "ɡʌ.zʌ.mʌm"],
+      ["zɑ.zɑ.wɑn", "ɡu.zu.mum"],
     );
-    assert.equal(plan.ipaPhonemes, "zɑːzɑːwɑn ɡʌːzʌːmʌm.");
+    assert.equal(plan.ipaPhonemes, "zɑːzɑːwɑn ɡuːzuːmum.");
   });
 
   it("builds Kitten ids with word-spaced IPA phones", () => {
@@ -135,7 +135,7 @@ describe("previewPhonemes", () => {
     assert.equal(plan.inputIds.at(-2), KITTEN_END_MARKER_ID);
     assert.equal(plan.inputIds.at(-1), 0);
     const juon = previewPhonemes("juon");
-    assert.equal(juon.ipaPhonemes, "jʌːon");
+    assert.equal(juon.ipaPhonemes, "juːon");
   });
 
   it("includes punctuation cue between phoneme spans", () => {

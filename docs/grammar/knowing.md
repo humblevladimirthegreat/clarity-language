@@ -270,6 +270,8 @@ Pick one evidential **root** for how you know.
 
 **Compare with:** seeing as an action uses ordinary **`vejel`**. **`thadezem`** is *how you know* (the walk is in view now), not the verb *see*. Fear or hope uses [emotion compose](values.md#emotion-compose). **`theherem`** is a way of *knowing*, not that stack. **`theraram`** is someone said so about the claim; hearing a door as an action is ordinary `/v/`.
 
+**Related form:** to deny only the channel (*it happened, but I did not see it*), close the evidential with a [stance join](join-across-roles.md#stance-joins): `thuvuvum thul`. Two channels you cannot choose between take `thol`.
+
 ### Live vs memory
 <a id="live-vs-memory"></a>
 <a id="memory-record"></a>

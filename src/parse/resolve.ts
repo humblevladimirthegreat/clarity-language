@@ -430,6 +430,7 @@ function considerUtterance(ctx: Ctx, utterance: Utterance, utteranceIndex: numbe
   if (utterance.left.hook) considerWord(ctx, utterance.left.hook);
   for (const mod of utterance.left.hookModifiers ?? []) considerWord(ctx, mod);
   if (utterance.left.force) considerWord(ctx, utterance.left.force);
+  if (utterance.left.forceEcho) considerWord(ctx, utterance.left.forceEcho);
 
   for (const body of utterance.bodies) considerBody(ctx, body);
 

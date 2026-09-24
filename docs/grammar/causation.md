@@ -288,6 +288,8 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 >
 > "Azawan walks if and only if Ululon sleeps."
 
+**Related form:** *not because of X* (the outcome still holds; only the reason is denied) closes the pole with a [stance join](join-across-roles.md#stance-joins): `zazawan vawalal thurugum banunul thul`. Denying the outcome itself is `vawalal vul`.
+
 > `zazawan vawalal theberom thurugum banunul.`
 >
 > z-Azawan | v-walk | th-only-if | th-because | b-rain

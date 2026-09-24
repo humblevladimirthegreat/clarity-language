@@ -190,6 +190,8 @@ export type LeftEdge = {
   hook?: LexWord;
   /** `/w/` immediately before a left-edge hook. */
   hookModifiers?: LexWord[];
+  /** Emphatic repeat of **`jul`** before the act word. */
+  forceEcho?: LexWord;
   force?: LexWord;
   impliedForce?: ImpliedForce;
 };
