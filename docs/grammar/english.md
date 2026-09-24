@@ -24,13 +24,13 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agalan 
 | noun’s purpose (*my gift for relatedness*) | values **`tho`** on `/ɡ/` | [Motive](values.md#value-preference) |
 | *my* belonging + need (*my tent serves survival*) | values **`tha` / `thu`** on `/ɡ/` | [Values](values.md#personal-possession) |
 | duration (*for three hours*) | measure phrase | [Measure phrases](numbers-applied.md#measure-phrases) |
-| topic (*as for Azawan*) | **`hozal`** + `/b/` | [As-for](clause.md#as-for) |
+| topic (*as for Azawan*) | **`hozam`** + `/b/` | [As-for](clause.md#as-for) |
 
 ## *about*
 
 | English itch | Agalan job | Teach |
 |--------------|------------|-------|
-| regarding / as for (*about Azawan*) | **`hozal`** + `/b/` | [As-for](clause.md#as-for) |
+| regarding / as for (*about Azawan*) | **`hozam`** + `/b/` | [As-for](clause.md#as-for) |
 | what was said (*tells that the dog runs*) | **stand-in** **`darl`** (often `/d/`) | [Dependent clauses](dependents.md#dependent-clauses) |
 | approximate amount (*about three*) | number **-m** (`~`) | [Number endings](numbers.md#number-endings) |
 | approximate clock (*around 15:30*) | clock **-m** | [Time](numbers-applied.md#time) |
@@ -46,7 +46,7 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agalan 
 | same time (*as Ululon walks*) | **`hegemum barl`** | [Dependent clauses](dependents.md#dependent-clauses) |
 | reason / since (*as Ululon walks*) | **`thurugum barl`** | [Because](causation.md#because) |
 | equal degree (*as happy as*) | equative **`ae`** | [Equatives](comparatives.md#equatives) |
-| topic (*as for Azawan*) | **`hozal`** + `/b/` | [As-for](clause.md#as-for) |
+| topic (*as for Azawan*) | **`hozam`** + `/b/` | [As-for](clause.md#as-for) |
 | resemblance (*walks as / like a duck*) | **`hurorom`** + `/b/` | [Simile](relations.md#similative) |
 | pretense (*as if they walk*) | **NOTIONAL** | [Notional](knowing.md#notional) |
 | dated books (*as of Friday*) | **`helerem` / `hobomam`** + `/b/` | [*As-of*](relations.md#as-of) |

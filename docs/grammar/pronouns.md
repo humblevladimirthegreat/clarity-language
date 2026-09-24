@@ -345,7 +345,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *red* | `aredel` | | |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *like* | `hurorom` | `urorol` *mirror* | 🪞: the image is of the model |
-| *topic* | `hozal` | `ozal` *hash* | #️⃣: a heading mark |
+| *topic* | `hozam` | `ozal` *hash* | #️⃣: a heading mark |
 | *scream* | `vazagal` | | |
 | *punch* | `vubunul` | | |
 | *fight* | `vuvugul` | | |
@@ -397,9 +397,9 @@ z-Ululon | [h-like | b-potted-plant] | v-pour . z-Azawan | h-←like.full | v-ha
 **6.** *As for Uhubun, Ululon punches.*
 
 ::: details Show answer
-`hozal buhubun zululon vubunul.`
+`hozam buhubun zululon vubunul.`
 
-[h-hash | b-Uhubun] | z-Ululon | v-punch
+[h-topic | b-Uhubun] | z-Ululon | v-punch
 :::
 
 **7.** *We (you and I) harvest.*
@@ -456,11 +456,11 @@ z-Ululon | v-harvest . z-Azawan | v-pour . x-←Ululon | v-punch
 *Ululon harvests. Azawan pours. Going back to Ululon, he punches.*
 :::
 
-**5.** `hozal bazawan zuhubun vurugem.`
+**5.** `hozam bazawan zuhubun vurugem.`
 
 ::: details Show answer
 
-[h-hash | b-Azawan] | z-Uhubun | v-harvest
+[h-topic | b-Azawan] | z-Uhubun | v-harvest
 
 *As for Azawan, Uhubun harvests.*
 :::

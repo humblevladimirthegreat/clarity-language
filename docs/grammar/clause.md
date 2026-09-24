@@ -11,7 +11,7 @@ You already write a [citation](word-endings.md): root + ending (`odogol`, `awala
 
 `/z/` marks the **subject** (who acts). `/v/` marks the **verb** (the action). Write **role letter + root + ending** as one word (`zodogol` from the citation `odogol`).
 
-A period ends the statement. The usual order is **Subject – Verb**.
+A period ends the statement. With only a subject and a verb, the order is **Subject – Verb**.
 
 > `zodogol vawalal.`
 >
@@ -91,7 +91,7 @@ The adverb describes the walking. The stance word describes your claim about it.
 
 `/b/` names an extra person or thing. It has two jobs, and you can tell them apart from the word **immediately before** `/b/`. On this page, `/w/` grades the next `/ɡ/`, `/h/`, or `/th/` word (or hook); `/b/` sits after that host, not after `/w/`.
 
-**Hosted.** Some adjectives, adverbs, and stance words name a **relation** that needs another person or thing (*like …*). Put that extra noun in `/b/` **right after** the `/ɡ/`, `/h/`, or `/th/` word. Optional `/w/` detail sits **immediately before** that host, so the pair stays together. The root on the `/ɡ/`, `/h/`, or `/th/` word names the relation; `/b/` marks the noun that completes it. More hosted roots, including *as of*, are on [relations](relations.md).
+**Hosted.** A `/b/` **right after** a `/ɡ/`, `/h/`, or `/th/` word is always hosted by that word, whatever the word means. Use this for words that name a **relation** needing another person or thing (*like …*): put that extra noun in `/b/` right after the relation word. Optional `/w/` detail sits **immediately before** that host, so the pair stays together. The root on the `/ɡ/`, `/h/`, or `/th/` word names the relation; `/b/` marks the noun that completes it. More hosted roots, including *as of*, are on [relations](relations.md).
 
 > `hurorom bazawan`
 >
@@ -111,7 +111,7 @@ The adverb describes the walking. The stance word describes your claim about it.
 >
 > "A dog sleeps like Azawan."
 
-**Unhosted.** If `/b/` does **not** follow `/ɡ/`, `/h/`, or `/th/`, it is the **recipient** or **addressee** of the verb: the person who gets the theme or hears the telling. The theme (what is given or said) stays `/d/`. At most one unhosted `/b/` per clause. This job is a person, not a place.
+**Unhosted.** Only when `/b/` does **not** follow `/ɡ/`, `/h/`, or `/th/` is it the **recipient** or **addressee** of the verb: the person who gets the theme or hears the telling. The theme (what is given or said) stays `/d/`. At most one unhosted `/b/` per clause. This job is a person, not a place.
 
 > `zazawan bululon vezehel.`
 >
@@ -119,7 +119,7 @@ The adverb describes the walking. The stance word describes your claim about it.
 >
 > "Azawan tells Ululon."
 
-Do not park that recipient immediately after a relation `/h/` or `/ɡ/`: `hurorom bululon` is *like Ululon*, not *to Ululon*. Put the pair first, then the recipient (`hurorom bazawan bululon`). To name the hearer from the verb stem (*the one told*), use a [role compound](roles.md#role-compounds) with vowel **`o`**.
+Never put a recipient immediately after a `/ɡ/`, `/h/`, or `/th/` word: `hurorom bululon` is *like Ululon*, not *to Ululon*, and `hadazam bululon` is ungrammatical, not *hastily, to Ululon*. Put the recipient elsewhere (`bululon hadazam`), or after a finished pair (`hurorom bazawan bululon`). To name the hearer from the verb stem (*the one told*), use a [role compound](roles.md#role-compounds) with vowel **`o`**.
 
 ### Role letters
 <a id="role-letters"></a>
@@ -157,7 +157,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *bank* | `anabal` | | |
 | *money* | `onenol` | | |
 | *angry* | `anagal` | | |
-| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
+| *happy* | `guzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 | *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
 | *stand* | `vadanal` | `adanal` *stand* | 🧍: staying in place |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
@@ -166,7 +166,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sneak* | `vazanal` | | |
 | *run* | `vurunul` | `urunul` *run* | 🏃: leaving at speed |
 | *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
-| *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
 | *like* | `hurorom` | `urorol` *mirror* | 🪞: the image is of the model |
 
 #### English → Agalan
@@ -268,18 +267,18 @@ English often puts the adjective before the noun (*a blue dog*). Agalan can too:
 >
 > "a blue dog"
 
-`/b/` still follows that adjective. `/w/` sits immediately before it (`wegelom glelulul zodogol` = *a loud-volume blue dog*), so **`l`** still looks ahead to the next noun. You might do this for meter or emphasis. This extra **`l`** is only on adjectives (`/ɡ/`).
+`/b/` still follows that adjective. `/w/` sits immediately before it (`welem glelulul zodogol` = *a very blue dog*), so **`l`** still looks ahead to the next noun. You might do this for meter or emphasis. This extra **`l`** is only on adjectives (`/ɡ/`).
 
 ### As-for and free-order ties
 <a id="as-for"></a>
 
-*As for X* / *regarding X* names who or what the clause is about. Use an adverb plus extra noun (`/h/` + `/b/`) with published **`oza`**: `hozal bazawan` is *as for Azawan*. You can still put first the piece you want to highlight.
+*As for X* / *regarding X* names who or what the clause is about. Use an adverb plus extra noun (`/h/` + `/b/`) with published **`oza`**: `hozam bazawan` is *as for Azawan*. You can still put first the piece you want to highlight.
 
-> `hozal bazawan zululon dazawan vejel.`
+> `hozam bazawan zululon dagadal vejel.`
 >
-> [h-hash | b-Azawan] | z-Ululon | d-Azawan | v-see
+> [h-topic | b-Azawan] | z-Ululon | d-cat | v-see
 >
-> "As for Azawan, Ululon sees Azawan."
+> "As for Azawan, Ululon sees a cat."
 
 **Not the same job as:** [values](values.md) **met** / **unmet** on `/ɡ/` (`gonogothal` *my thing serves relatedness*). *As for* points at a person or thing in the clause; a value adjective on `/ɡ/` is a need toward a belonging.
 
@@ -338,18 +337,18 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *tell* | `vezehel` |
 | *sneak* | `vazanal` |
 | *punch* | `vubunul` |
-| *volume* | `wegelom` |
-| *topic* | `hozal` |
+| *very* | `welem` |
+| *topic* | `hozam` |
 | *train* | `adadul` |
 
 #### English → Agalan
 
-**1.** *A loud-volume red train stands.* (adjective before the noun)
+**1.** *A very red train stands.* (adjective before the noun)
 
 ::: details Show answer
-`glaredel wegelom zadadul vadanal.`
+`welem glaredel zadadul vadanal.`
 
-gl-red | w-volume | z-train | v-stand
+[[w-very | gl-red] | z-train] | v-stand
 :::
 
 **2.** *Azawan the same as blue Uhubun stands.*
@@ -363,9 +362,9 @@ gl-red | w-volume | z-train | v-stand
 **3.** *As for Azawan, Ululon sees a ticket.*
 
 ::: details Show answer
-`hozal bazawan zululon dugedel vejel.`
+`hozam bazawan zululon dugedel vejel.`
 
-[h-hash | b-Azawan] | z-Ululon | d-ticket | v-see
+[h-topic | b-Azawan] | z-Ululon | d-ticket | v-see
 :::
 
 **4.** *A very blue train sits.*
@@ -412,11 +411,11 @@ z-Uhubun | b-Ululon | h-haste | v-tell
 *Uhubun the same as red Ululon stands.*
 :::
 
-**3.** `hozal bazawan zululon dugedel vejel.`
+**3.** `hozam bazawan zululon dugedel vejel.`
 
 ::: details Show answer
 
-[h-hash | b-Azawan] | z-Ululon | d-ticket | v-see
+[h-topic | b-Azawan] | z-Ululon | d-ticket | v-see
 
 *As for Azawan, Ululon sees a ticket.*
 :::
@@ -566,13 +565,13 @@ v-punch | z-Ululon | d-Uhubun
 
 #### Agalan → English
 
-**1.** `jazawan dudubel zuhubun vejel.`
+**1.** `dudubel zuhubun vejel.`
 
 ::: details Show answer
 
-j-Azawan | d-trumpet | z-Uhubun | v-see
+d-trumpet | z-Uhubun | v-see
 
-*Azawan! It's a trumpet that Uhubun sees.*
+*It's a trumpet that Uhubun sees.*
 :::
 
 **2.** `hadazam zuhubun vajul.`

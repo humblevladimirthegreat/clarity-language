@@ -254,7 +254,7 @@ Beginner used **-n** for a person’s or place’s name. You can also mark a **t
 >
 > z-Uhubun | v-Uzunun
 >
-> "Uhubun sings the Sing" (that titled performance).
+> "Uhubun sings Uzunun" (that titled song).
 
 The rest of the role map (same **-n**):
 
@@ -281,7 +281,7 @@ A store, title, or handle can be several words. Put **-n** on the **hook**, **jo
 >
 > NAME[d-tea | instead | d-coffee]
 >
-> "Tea-to-Coffee" (a cafe name)
+> "Coffee-Instead-of-Tea" (a cafe name)
 
 | Package | Where **-n** sits | Inner words |
 |---------|-------------------|-------------|
@@ -317,11 +317,11 @@ A nativized loan (adapted Agalan root + ordinary ending) uses the same four last
 
 A long official title (bureau, act, titled group) may have a **handle**: one published root plus **-n**, used like any proper name, including on first mention. The long form is the same office spelled as a phrasal proper (`ROOT x ROOT` … + **-n**).
 
-> `zabogon vawalal.`
+> `zabogon vezehel.`
 >
-> z-Abogon | v-walk
+> z-Abogon | v-tell
 >
-> "Abogon walks." (office handle on first mention)
+> "Abogon announces." (office handle on first mention)
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -370,9 +370,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| *Edozen* | `edozen` | |
-| *hospital-x-bed* | `ohozoxabeden` | |
-| *diagnosis-x-hospital* | `edozexohozon` | |
+| *Edozen* (office handle) | `edozen` | |
+| *hospital-x-bed* (ward name) | `ohozoxabeden` | |
+| *diagnosis-x-hospital* (office full title) | `edozexohozon` | |
 | *bed* | `abedel` | |
 | *sit* | `vajul` | `ajul` *chair* |
 | *see* | `vejel` | `ejel` *eye* |
@@ -397,7 +397,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 z-Azawan | v-sit | h-Ohozon
 :::
 
-**2.** *The bed is Diagnosis* (the named style).
+**2.** *The bed is Diagnosis-grade* (the named category).
 
 ::: details Show answer
 `zabedel gedozen.`
@@ -405,7 +405,7 @@ z-Azawan | v-sit | h-Ohozon
 z-bed | g-Edozen
 :::
 
-**3.** *Uhubun sleeps the Sleep* (that titled rest).
+**3.** *Uhubun observes Sleep* (the ward’s titled rest hour).
 
 ::: details Show answer
 `zuhubun veleben.`
@@ -429,7 +429,7 @@ z-Azawan | v-see | d-Ohozo-x-Abeden
 z-Edozen | v-see | d-Uhubun
 :::
 
-**6.** *Ululon runs the Intrusion* (that titled action).
+**6.** *Ululon performs Intrusion* (that titled procedure).
 
 ::: details Show answer
 `zululon vozorun.`
@@ -437,7 +437,7 @@ z-Edozen | v-see | d-Uhubun
 z-Ululon | v-Ozorun
 :::
 
-**7.** *Ululon runs the Emergency* (that titled event).
+**7.** *Ululon performs Emergency* (that titled drill).
 
 ::: details Show answer
 `zululon vamubun.`
@@ -460,7 +460,7 @@ z-Uhubun | v-sit | h-Ohozon
 ::: details Show answer
 
 z-Azawan | v-write | h-Edehen
-*Azawan writes on Temperature* (the named standard).
+*Azawan writes according to Temperature* (the named standard).
 :::
 
 **3.** `zabedel gararon.`
@@ -468,7 +468,7 @@ z-Azawan | v-write | h-Edehen
 ::: details Show answer
 
 z-bed | g-Araron
-*The bed is X-ray* (the named style).
+*The bed is X-ray-ready* (the named category).
 :::
 
 **4.** `zohozoxabeden vuwurul.`
@@ -477,7 +477,7 @@ z-bed | g-Araron
 
 z-Ohozo-x-Abeden | v-write
 
-*Hospital-Bed writes.*
+*Hospital-Bed writes.* (the ward, as an office)
 :::
 
 **5.** `zuhubun vozorun.`
@@ -485,7 +485,7 @@ z-Ohozo-x-Abeden | v-write
 ::: details Show answer
 
 z-Uhubun | v-Ozorun
-*Uhubun runs the Intrusion* (that titled action).
+*Uhubun performs Intrusion* (that titled procedure).
 :::
 
 **6.** `zedozexohozon vejel dazawan.`
