@@ -210,13 +210,37 @@ describe("parse — comparatives manner scale", () => {
 });
 
 describe("parse — spans", () => {
+  const spanOf = (text: string) => {
+    const unit = parseText(text).utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "span");
+    assert.ok(unit && unit.kind === "span");
+    return unit.span;
+  };
+
+  it("parses an atomic open with exactly one interior token", () => {
+    const span = spanOf("zazawan vezehel daxol azawan.");
+    assert.equal(span.atom?.raw, "azawan");
+    assert.equal(span.close, undefined);
+  });
+
+  it("runs a clause-scoped open to the clause end", () => {
+    const span = spanOf("zazawan vezehel daxel zululon vululel.");
+    assert.equal(span.content[0]!.units.length, 2);
+    assert.equal(span.close, undefined);
+  });
+
+  it("parses an empty open with no interior", () => {
+    const span = spanOf("zazawan daxul vezehel.");
+    assert.equal(span.content.length, 0);
+    assert.equal(span.atom, undefined);
+  });
+
   it("parses daxal … xuxul span", () => {
     const result = parseText("daxal zadagal xuxul vawalal.");
     const spanUnit = result.utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "span");
     assert.ok(spanUnit);
     if (spanUnit?.kind !== "span") return;
     assert.equal(spanUnit.span.open.raw, "daxal");
-    assert.equal(spanUnit.span.close.raw, "xuxul");
+    assert.equal(spanUnit.span.close?.raw, "xuxul");
   });
 });
 

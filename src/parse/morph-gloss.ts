@@ -146,10 +146,10 @@ const JOIN_RELATION: Record<string, string> = {
 
 const HOOK_JOB: Record<string, string> = {
   al: "additionally",
-  am: "including.open",
-  an: "including.named",
-  el: "rather",
-  em: "rather.open",
+  am: "additionally.open",
+  an: "additionally.named",
+  el: "in.other.words",
+  em: "in.other.words.open",
   ol: "instead",
   om: "instead.open",
   ul: "except",
@@ -788,6 +788,8 @@ function contextFor(
     while (words[i]?.pos === "w") i -= 1;
     const prev = words[i];
     ctx.extraNounHook = next?.pos === "b" && prev?.pos !== "b";
+    // `A al B xam`: a hook between a finished verb and a new subject opens the next conjunct (glue).
+    if (prev?.pos === "v" && next?.pos === "z") ctx.discourseHook = true;
   }
   if (word.reading === "restrictor") {
     const prev = words[index - 1];
@@ -1005,7 +1007,10 @@ function restrictorLabel(
   if (series === "u") return `not-when${open}`;
   if (series === "o") return `when-one${open}`;
   if (series === "e") return `when-ranked${open}`;
-  if (series === "ae") return `whenever${open}`;
+  if (series === "ae") return `equally-when${open}`;
+  if (series === "ao") return `when-any-of${open}`;
+  if (series === "uo") return `anytime-except${open}`;
+  if (series === "oe") return `when-fallback${open}`;
   return `${series}${open}`;
 }
 

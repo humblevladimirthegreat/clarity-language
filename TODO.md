@@ -12,8 +12,6 @@ Prosody
 
 consider removing some emotion words from lexicon
 
-consider other punctuation marks and tags: /s /j, 
-
 do a grammar-docs/ consistency check. Does anything about the grammar seem incorrect, confusing, meaningless, or counterintuitive?
 do a grammar-docs/ suggestion pass. Is there any common english grammar that can't be easily expressed (and not intentionally discouraged)? Could any of the existing grammar be extended into other forms to have intuitive new readings?
 do parser consistency pass. Does the parser completely and accurately encode all the meaning of the grammar?
@@ -31,6 +29,7 @@ save for cursor:
 -Cheat sheet for joins and hooks
 -join vowel decision tree in advanced vowel series.
 -suggest words to fill in remaining abstract lexicon. use for useful english words, don't fill just to fill.
+-ensure lexicon consistency
 -mass lexical compound adding
 
 Dictionary entries (open lexicon / concepts — not the closed list above):

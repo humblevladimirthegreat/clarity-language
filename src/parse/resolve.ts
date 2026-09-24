@@ -372,6 +372,7 @@ function considerSpan(ctx: Ctx, span: SpanUnit): void {
   considerWord(ctx, span.open);
   if (!opaque) {
     for (const clause of span.content) considerClause(ctx, clause);
+    if (span.atom) considerWord(ctx, span.atom);
   }
 }
 

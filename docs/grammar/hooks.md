@@ -302,7 +302,7 @@ additionally | z-Ululon | v-cook
 
 ::: details Show answer
 
-rather | z-Ululon | v-pour | d-wine
+in.other.words | z-Ululon | v-pour | d-wine
 
 *In other words, Ululon pours wine.*
 :::
@@ -347,7 +347,7 @@ Beginner already used closed **-l** and open **-m** for how complete B is, or ho
 |--|--------|--------|
 | **a** (*including*) | `al`: including B | `am`: including B, and maybe more |
 | **e** (*rather*) | `el`: or rather B | `em`: or rather B, and maybe more |
-| **o** (*instead*) | `ol`: instead (B in place of A) | `om`: a replacement, and maybe more |
+| **o** (*instead*) | `ol`: instead (B in place of A) | `om`: B instead of A, B being one of several possible replacements |
 | **u** (*except*) | `ul`: except B | `um`: except B, and maybe more |
 
 #### Discourse
@@ -463,7 +463,7 @@ Same-role includes the **verb phrase**:
 >
 > "Walk instead of run, or some other replacement."
 
-**Compare with:** packaging *(cat instead of dog) and bird* uses a [list join](joins.md) after the revision chain (`zodogol ol zagadal zubudul zam` *a cat instead of a dog, and a bird*). The chain is tighter than the join: it eats following same-role sides paired by **HOOK**.
+**Compare with:** a hook binds last. A [list join](joins.md) after the hook closes first and becomes the hook's B side: `zodogol ol zagadal zubudul zam` is *a cat and a bird (and possibly more) instead of a dog*.
 
 ### Discourse placements
 <a id="discourse-placements"></a>
@@ -588,7 +588,7 @@ j-Azawan | additionally | z-Ululon | v-write
 ::: details Show answer
 `zazawan vuwurul al zululon vezehel xam.`
 
-[z-Azawan | v-write | including | z-Ululon | v-tell | x-and.open]
+[z-Azawan | v-write | additionally | z-Ululon | v-tell | x-and.open]
 :::
 
 **7.** *Azawan writes with a camera.*
@@ -731,21 +731,9 @@ The left ending is part of the stem, so two different left roots stay distinct o
 >
 > "Ululon serves tea."
 
-A left root that is not *walk* still uses the same hook job (`vezehelul` *tell* fused with *from*). Listed dictionary lemmas stay citations (`awalalul`, not `vawalalul`).
+A left root that is not *walk* still uses the same hook job (`vezeheluel` *contradict*: *tell* fused with *against*). Listed dictionary lemmas stay citations (`awalalul`, not `vawalalul`).
 
 **Compare with:** `vawalal ul bazadol` still *walks from a station* as two words. Same-role *including* / *rather* / *instead* / *except* stay prefix-less hooks, not this fuse. A [lexical compound](x-compounds.md#lexical-compounds) like *bedroom* glues two content roots with a join letter; this glues a citation to an extra-noun hook.
-
-### Exclusive high on a number range
-
-Inside a [measure range](numbers-applied.md#ranges), prefix-less **`ul`** on the high endpoint means *up to but not including* that number.
-
-<!-- it seems random that this is here. Should it be moved to numbers-applied? -->
-
-> `z+3 ul z+5 zal gurulel.`
->
-> z-three | except | [z-five | z-and | g-ruler]
->
-> "[3, 5) on the length continuum."
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>

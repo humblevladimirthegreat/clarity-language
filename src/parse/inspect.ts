@@ -598,7 +598,8 @@ function walkSpan(
   const open = takeRaw(cursor, span.open.raw);
   pushIndex(indices, open);
   for (const clause of span.content) walkClause(cursor, clause, constructions, sharedRoles, indices);
-  const close = takeRaw(cursor, span.close.raw);
+  if (span.atom) pushIndex(indices, takeRaw(cursor, span.atom.raw));
+  const close = span.close ? takeRaw(cursor, span.close.raw) : undefined;
   pushIndex(indices, close);
   constructions.push({
     kind: "span",

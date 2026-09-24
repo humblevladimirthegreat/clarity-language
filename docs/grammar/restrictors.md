@@ -50,14 +50,14 @@ To say the verb claim counts at every time, or at every time except some listed 
 
 ### Sometimes / anytime / some other time
 
-You can name *sometimes*, *anytime*, or *some other time* without listing a content word such as *rain*. Use ending **-r** on the restrictor (`har` / `hor` / `hur`): **-r** names some member of the time inventory without spelling that member. Nothing is required before it.
+You can name *sometimes*, *anytime*, or *some other time* without listing a content word such as *rain*. Use ending **-r** on the restrictor (`har` / `hor` / `hur`): **-r** names some member of the time inventory without spelling that member. Nothing is required before it. *Anytime* (`hor`) means any one particular time will do, not *at all times* (that is *always*, `hual`).
 
 English *sometimes* is the usual match next to *never* / *always*. It still only says there is **some** unspecified occasion — the same job *something* has on a [join](joins.md) — not a separate “many times” count.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`har`** | unspecified member of the time inventory | *sometimes* / *at some time* | **-r** names a member |
-| **`hor`** | unspecified member of a one-choice time menu | *anytime* | **o** ≈ one |
+| **`hor`** | unspecified member of a one-choice time menu | *anytime* (any one particular time, whichever you pick) | **o** ≈ one |
 | **`hur`** | unspecified leftover occasion | *some other time* | **u** ≈ undo |
 
 > `zululon vurunul har.`
@@ -348,7 +348,7 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 
 > `zululon velebel hanunul hozowol haol.`
 >
-> z-Ululon | v-sleep | h-rain | h-snow | h-when-or
+> z-Ululon | v-sleep | h-rain | h-snow | h-when-any-of
 >
 > "Ululon sleeps when raining and/or when snowing."
 
@@ -438,7 +438,7 @@ z-Azawan | v-climb | h-rain | h-night | h-when-one
 ::: details Show answer
 `zululon vurunul hanunul hozowol haol.`
 
-z-Ululon | v-run | h-rain | h-snow | h-ao
+z-Ululon | v-run | h-rain | h-snow | h-when-any-of
 :::
 
 **3.** *Uhubun does not climb when there is fog.*
@@ -454,7 +454,7 @@ z-Uhubun | v-climb | h-fog | h-not-when
 ::: details Show answer
 `zazawan vugumul hozowol huol.`
 
-z-Azawan | v-climb | h-snow | h-uo
+z-Azawan | v-climb | h-snow | h-anytime-except
 :::
 
 **5.** *Azawan climbs preferably when raining rather than when snowing.*
@@ -470,7 +470,7 @@ z-Azawan | v-climb | h-rain | h-snow | h-when-ranked
 ::: details Show answer
 `zazawan vugumul hujel havogol hoel.`
 
-z-Azawan | v-climb | h-ice | h-fog | h-oe
+z-Azawan | v-climb | h-ice | h-fog | h-when-fallback
 :::
 
 **7.** *Azawan is happy either when raining or at night, not both.*
@@ -486,7 +486,7 @@ z-Azawan | [w-rain | w-night | w-when-one | g-happy]
 ::: details Show answer
 `zuhubun vazagal thadorom barl zululon vodowol.`
 
-z-Uhubun | v-scream | [th-if | b-that-clause] | z-Ululon | v-down
+z-Uhubun | v-scream | [th-if | b-that-clause] | z-Ululon | v-fall
 :::
 
 #### Agalan → English
@@ -504,7 +504,7 @@ z-Ululon | v-climb | h-rain | h-night | h-when-one.open
 
 ::: details Show answer
 
-z-Ululon | v-climb | h-rain | h-snow | h-whenever
+z-Ululon | v-climb | h-rain | h-snow | h-equally-when
 
 *Ululon climbs as often when raining as when snowing.*
 :::
@@ -549,7 +549,7 @@ z-Uhubun | v-climb | h-fog | h-not-when
 
 ::: details Show answer
 
-z-Azawan | v-scream | [th-if | b-that-clause] | z-Ululon | v-down
+z-Azawan | v-scream | [th-if | b-that-clause] | z-Ululon | v-fall
 
 *Azawan screams if Ululon falls.*
 :::

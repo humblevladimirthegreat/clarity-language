@@ -129,13 +129,13 @@ When English would say *everything* / *everyone*, stack **u** then **a** on a st
 
 The *and* / *or* / *not* joins above are **set** joins: the items share a slot as a group, and writing one before the other does not rank them. A **rank** join is the other English job: you care which item comes first (priority, favorite, *A before B*).
 
-Write the items in that order, then a join with vowel **e**. The earlier item outranks the later. One item before `zel` means *only X matters* / *X first*. (cue: **e** ≈ order.)
+Write the items in that order, then a join with vowel **e**. The earlier item outranks the later. One item before `zel` means *only X matters*; before `zem`, *X first* / *mainly X*. (cue: **e** ≈ order.)
 
 > `zazawan zel.`
 >
 > [z-Azawan | z-rank/more]
 >
-> "only Azawan matters" / "Azawan first."
+> "only Azawan matters."
 
 ### Unspecified member (`-r`)
 <a id="unspecified-member-r-phrase"></a>
@@ -207,7 +207,8 @@ Two or more items still take the same vowel and ending as the lists above. The t
 | `zul` / `zum` + NP | single-item | *not X* · *not X (and possibly more)* |
 | `zual` + NP | single-item | *everything but X* |
 | `zel` / `zem` | standalone | *no favorite* · *no favorite, as far as I know* |
-| `zel` / `zem` + NP | single-item | *only X matters* / *X first* |
+| `zel` + NP | single-item | *only X matters* |
+| `zem` + NP | single-item | *X first* / *mainly X* |
 
 ### Translation practice
 <a id="translation-practice"></a>

@@ -136,10 +136,16 @@ function np(cur: Cursor, coord: NpCoord): GlossNode[] {
   return fences(cur, coord.parts, (item) => npItem(cur, item));
 }
 
-function span(cur: Cursor, s: SpanUnit): GlossNode {
+function span(cur: Cursor, s: SpanUnit): GlossNode | undefined {
   const open = cur.take(s.open);
+  // Resume opens (EDGE **u** + -r) are pronoun-like: gloss as the word itself.
+  if (!s.atom && !s.close && s.content.length === 0 && s.open.ending === "r") return open;
   const kids = s.content.flatMap((clause) => clauseNodes(cur, clause));
-  const close = cur.take(s.close);
+  if (s.atom) {
+    const atom = cur.take(s.atom);
+    if (atom) kids.push(atom);
+  }
+  const close = s.close ? cur.take(s.close) : undefined;
   return {
     t: "group",
     label: spokenSpanLabel(s.open),
@@ -172,7 +178,7 @@ function unitNodes(cur: Cursor, unit: Unit): GlossNode[] {
     case "hook":
       return one(group([...unit.modifiers.map((m) => cur.take(m)), cur.take(unit.word)]));
     case "span":
-      return [span(cur, unit.span)];
+      return one(span(cur, unit.span));
     case "island":
       return [island(cur, unit.island)];
     case "clauseCoord": {
@@ -250,7 +256,7 @@ function utteranceNodes(cur: Cursor, utt: Utterance): GlossNode[] {
 function minIndex(node: GlossNode): number {
   if (node.t === "leaf") return node.i;
   if (node.t === "raw") return node.at;
-  let min = Number.POSITIVE_INFINITY;
+  let min = node.from ?? Number.POSITIVE_INFINITY;
   for (const kid of node.kids) min = Math.min(min, minIndex(kid));
   return min;
 }

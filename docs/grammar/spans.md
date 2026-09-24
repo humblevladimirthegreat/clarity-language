@@ -218,12 +218,12 @@ z-MENTION["uzugo"] | g-small
 z-Uhubun | d-Uzugon | v-sing
 :::
 
-**6.** *Azawan tells (happily).*
+**6.** *Azawan sings (happily).*
 
 ::: details Show answer
-`zazawan vezehel th(huzumum).`
+`zazawan vuzunul th(huzumum).`
 
-z-Azawan | v-tell | th-ASIDE[h-happy]
+z-Azawan | v-sing | th-ASIDE[h-happy]
 :::
 
 **7.** *Don’t say “stop,” Ululon.*
@@ -361,7 +361,7 @@ Beginner already used square, round, curly, and angle brackets for cite, aside, 
 | Agalan | Use | English | Cue |
 |--------|------|---------|-----|
 | **a** | **cite** (`[` … `]`); clausal interiors: outer speaker does **not** assert | quoted wording | **a** ≈ add (hold cited words) |
-| **e** | **aside** (`th(` … `)`); `/th/` digression; outer speaker **does** assert; interior may be a fragment or a same-speech-act clause body | parenthetical | **e** ≈ order (a side instruction) |
+| **e** | **aside** (`th(` … `)`); `/th/` digression; outer speaker **does** assert; interior may be a fragment or a same-speech-act clause body | parenthetical | **e** ≈ else (an extra comment) |
 | **o** | **mention** (`{` … `}`); with **`@`** / **-n**, the **name** | the word or phrase; proper = the name-string | **o** ≈ one (one word or phrase as the object) |
 | **u** | **opaque** (`<` … `>`); interior is not native Agalan | foreign / code | **u** ≈ undo (not native Agalan) |
 
@@ -622,13 +622,13 @@ z-Uhubun | d-NAME.MENTION.atomic["ujudun"] | v-tell
 *Uhubun said the name “Ujudun.”*
 :::
 
-**5.** `zazawan vezehel thexol huzumum.`
+**5.** `zazawan vuzunul thexol huzumum.`
 
 ::: details Show answer
 
-z-Azawan | v-tell | th-ASIDE.atomic[h-happy]
+z-Azawan | v-sing | th-ASIDE.atomic[h-happy]
 
-*Azawan tells (happily).*
+*Azawan sings (happily).*
 :::
 
 **6.** `zoxol ujudu gumuzem.`

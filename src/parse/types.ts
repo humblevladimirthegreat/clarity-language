@@ -249,7 +249,10 @@ export type ClauseCoord = {
 export type SpanUnit = {
   open: LexWord;
   content: Clause[];
-  close: LexWord;
+  /** Atomic (EDGE **o**) interior: exactly one token. */
+  atom?: LexWord;
+  /** Explicit close; absent for atomic / clause-scoped / empty opens. */
+  close?: LexWord;
 };
 
 export type IslandUnit = {

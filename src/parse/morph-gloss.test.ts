@@ -77,9 +77,9 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zual", "z-everything-but");
     expectLine("xan", "x-and-then");
     expectLine("ol", "instead");
-    expectLine("am", "including.open");
+    expectLine("am", "additionally.open");
     expectLine("al", "additionally");
-    expectLine("el", "rather");
+    expectLine("el", "in.other.words");
     expectLine("ul", "except");
     expectLine("zazawan velebel al bohohul.", "z-Azawan | v-sleep | [in | b-house]");
     expectLine("zodogolx al zagadal.", "z-dog-x | including | z-cat");

@@ -64,6 +64,8 @@ export class SentenceParseError extends Error {
   }
 }
 
+const ANY_TOKEN_ALTS = allTokens.filter((t) => t !== IslandEdge && t !== Period && t !== QMark && t !== Bang);
+
 function tokenIs(token: IToken, ...types: { tokenTypeIdx?: number }[]): boolean {
   return types.some((type) => token.tokenType === type);
 }
@@ -296,10 +298,42 @@ class AgelanSentenceParser extends CstParser {
 
   public spanUnit = this.RULE("spanUnit", () => {
     this.CONSUME(SpanOpen);
-    this.MANY(() => {
-      this.SUBRULE(this.clause);
+    // EDGE decides the extent; gates read the open just consumed (LA(0)).
+    this.OR({
+      IGNORE_AMBIGUITIES: true,
+      DEF: [
+        {
+          // Atomic: exactly one following token, whatever its class.
+          GATE: () => spanEdgeOf(this.LA(0)) === "o",
+          ALT: () => {
+            this.OR2(ANY_TOKEN_ALTS.map((tokenType) => ({ ALT: () => this.consume(5, tokenType, { LABEL: "atom" }) })));
+          },
+        },
+        {
+          // Clause-scoped: runs until the next turn, clause-level `/x/` join, linker, or sentence end.
+          GATE: () => spanEdgeOf(this.LA(0)) === "e",
+          ALT: () => {
+            this.MANY2({
+              GATE: () => !tokenIs(this.LA(1), JoinX, Force, Polar, Linker, Period, QMark, Bang),
+              DEF: () => {
+                this.SUBRULE(this.unit, { LABEL: "scopedUnit" });
+              },
+            });
+          },
+        },
+        {
+          GATE: () => spanEdgeOf(this.LA(0)) === "a",
+          ALT: () => {
+            this.MANY(() => {
+              this.SUBRULE(this.clause);
+            });
+            this.CONSUME(SpanClose);
+          },
+        },
+        // Empty / resume (EDGE **u**): no interior, no close.
+        { ALT: () => {} },
+      ],
     });
-    this.CONSUME(SpanClose);
   });
 
   public zCoord = this.RULE("zCoord", () => {
@@ -976,12 +1010,23 @@ function flattenGCoord(cst: CstNode): Unit[] {
 
 function buildSpan(cst: CstNode): SpanUnit {
   const open = childToken(cst, "SpanOpen")!;
-  const close = childToken(cst, "SpanClose")!;
+  const close = childToken(cst, "SpanClose");
+  const atom = childToken(cst, "atom");
+  const scoped = childNodes(cst, "scopedUnit");
+  const content =
+    scoped.length > 0 ? [finalizeClause(scoped.flatMap(expandUnits))] : childNodes(cst, "clause").map(buildClause);
   return {
     open: lexWordFromToken(open),
-    content: childNodes(cst, "clause").map(buildClause),
-    close: lexWordFromToken(close),
+    content,
+    ...(atom ? { atom: lexWordFromToken(atom) } : {}),
+    ...(close ? { close: lexWordFromToken(close) } : {}),
   };
+}
+
+function spanEdgeOf(token: IToken): string | undefined {
+  const word = token.payload as LexWord | undefined;
+  if (!word || word.family.kind !== "x") return undefined;
+  return word.family.edgeVowel;
 }
 
 function buildUnit(cst: CstNode): Unit {
