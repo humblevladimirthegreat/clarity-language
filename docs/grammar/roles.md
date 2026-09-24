@@ -338,11 +338,11 @@ z-Uhubun | g-bond | b-Ululon | z-←bond | v-punch
 <a id="spatial-laterals"></a>
 <a id="my-left-your-left"></a>
 
-English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) or a side of a viewpoint (*Azawan’s left*, *the car’s left*). For the viewpoint reading, write the same arrow root, then mid-word **`x`**, then the thing whose facing counts as north, then an ordinary [reference ending](word-endings.md). A person’s front is the direction they face. For an object, use the front its design or current use makes forward; if that does not settle a front, establish the frame in context. You can then say *walk left* without meaning *walk west*.
+English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) or a side of a viewpoint (*Azawan’s left*, *the car’s left*). For the viewpoint reading, write the same arrow root, then mid-word **`th`**, then the thing whose facing counts as north, then an ordinary [reference ending](word-endings.md). A person’s front is the direction they face. For an object, use the front its design or current use makes forward; if that does not settle a front, establish the frame in context. You can then say *walk left* without meaning *walk west*.
 
-> `jel vawalal hewezexazawan.`
+> `jel vawalal hewezethazawan.`
 >
-> j-command | v-walk | h-west-x-Azawan
+> j-command | v-walk | h-west-th-Azawan
 >
 > "Walk left (Azawan’s left)."
 
@@ -356,9 +356,9 @@ Bare arrow words are compass points on a north-up map:
 
 Speaker and listener roots are the facing person when you mean *my left* / *your left*:
 
-> `jel zedonen vawalal hewezexedonen.`
+> `jel zedonen vawalal hewezethedonen.`
 >
-> j-command | z-listener | v-walk | h-west-x-listener
+> j-command | z-listener | v-walk | h-west-th-listener
 >
 > "You, walk left (your left)."
 
@@ -366,15 +366,15 @@ Speaker and listener roots are the facing person when you mean *my left* / *your
 |--------|-----|---------|
 | PoS | slot as usual (`/ɡ/` property, `/h/` path / manner, `/z/` `/d/` `/b/` side-region) | same slots as other content |
 | DIR | an arrow-rose root | *north* / *ahead*, … |
-| **`x`** | joins DIR to the viewpoint | viewpoint after **`x`** |
+| **`th`** | joins DIR to the viewpoint | viewpoint after **`th`** (cue: **th** ≈ *think*, whose point of view) |
 | ANCHOR | what sets the facing frame: [special](pronouns.md#special-pronouns) **`ugobo`** / **`edone`** / **`aha`**, a person’s name, or a content **-r** of a person or oriented object | *Azawan’s left*, *your left*, *the car’s left* |
 | Ending | ordinary ending is written at the end of the whole compound; its reference is the viewpoint anchor, not the direction | viewpoint kind / hedge / name / resume |
 
-**Compare with:** naming a doer from an event puts a **vowel** left of **`x`** ([role compounds](#role-compounds): `zaxuvugul`). Viewpoint laterals put a **direction root** left of **`x`** and a facing person on the right.
+**Compare with:** naming a doer from an event puts a **vowel** left of **`x`** ([role compounds](#role-compounds): `zaxuvugul`). Viewpoint laterals put a **direction root** left of **`th`** and a facing person on the right.
 
 ### Arrow rose (compass vs face)
 
-The examples above already used *west* / body *left*. The rest of the rose is the same pattern: bare = compass; **`x`** + facing person = that point on their body map.
+The examples above already used *west* / body *left*. The rest of the rose is the same pattern: bare = compass; **`th`** + facing person = that point on their body map.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -387,11 +387,11 @@ The examples above already used *west* / body *left*. The rest of the rose is th
 | **`ozozul`** | compass heading, or back-right on a face | *southeast* / *back-right* | ↘️ *southeast-arrow*: between south and east |
 | **`ozohel`** | compass heading, or back-left on a face | *southwest* / *back-left* | ↙️ *southwest-arrow*: between south and west |
 
-Indoor headings may follow a local map (building north). Prefer a named viewpoint or listener frame when you mean a person’s body rose (`…xazawan`, `…xedonen`). For an object, use its design or current use to determine forward; establish the frame when that is ambiguous.
+Indoor headings may follow a local map (building north). Prefer a named viewpoint or listener frame when you mean a person’s body rose (`…thazawan`, `…thedonen`). For an object, use its design or current use to determine forward; establish the frame when that is ambiguous.
 
 ### Gravity (`uba` / `odowo`)
 
-English *up* / *down* here follows the pull of gravity, not a face. Write **`uba`** (skyward) or **`odowo`** (toward the pull) as ordinary content words, with no **`x`** + facing person. Everyone shares that frame.
+English *up* / *down* here follows the pull of gravity, not a face. Write **`uba`** (skyward) or **`odowo`** (toward the pull) as ordinary content words, with no **`th`** + facing person. Everyone shares that frame.
 
 > `jel vawalal hubal.`
 >
@@ -413,11 +413,11 @@ English *up* / *down* here follows the pull of gravity, not a face. Write **`uba
 
 ### Viewpoint vs landmark
 
-English *on Azawan’s left of the tree* needs both a facing person and a landmark. Put the facing person after **`x`**; put the tree, door, or wall in `/b/`. `/b/` is the landmark, not whose left.
+English *on Azawan’s left of the tree* needs both a facing person and a landmark. Put the facing person after **`th`**; put the tree, door, or wall in `/b/`. `/b/` is the landmark, not whose left.
 
-> `zabogol gewezexazawan berel.`
+> `zabogol gewezethazawan berel.`
 >
-> z-book | g-west-x-Azawan | b-tree
+> z-book | g-west-th-Azawan | b-tree
 >
 > "The book is on Azawan’s left of the tree."
 
@@ -428,8 +428,8 @@ Bare compass + `/b/` is a region on that heading of the landmark (`gewezel berel
 | Agalan | Use | English |
 |--------|-----|---------|
 | Bare DIR | compass / gravity | `gewezel` *west*; `gubal` *up* |
-| **`DIR x ANCHOR`** | that point on **ANCHOR’s** facing rose | `gewezexedonen` *listener-left* |
-| **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gewezexazawan berel` *on Azawan’s-left of the tree* |
+| **`DIR th ANCHOR`** | that point on **ANCHOR’s** facing rose | `gewezethedonen` *listener-left* |
+| **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gewezethazawan berel` *on Azawan’s-left of the tree* |
 
 ### Endings and resume
 
@@ -440,15 +440,15 @@ Write the ordinary [reference ending](word-endings.md) at the end of the whole c
 | **-l** | indefinite / kind viewpoint anchor or unmarked path | left of a viewpoint |
 | **-m** | soft / hedged viewpoint anchor | left of a hedged viewpoint |
 | **-n** | named viewpoint anchor | that named viewpoint’s left |
-| **-r** | resume the most recent matching viewpoint anchor in a **`DIR x ANCHOR`** compound, or the anchor alone when it is the latest match: ordinary [pronoun](pronouns.md) rules | that viewpoint’s left |
+| **-r** | resume the most recent matching viewpoint anchor in a **`DIR th ANCHOR`** compound, or the anchor alone when it is the latest match: ordinary [pronoun](pronouns.md) rules | that viewpoint’s left |
 
 | Agalan | English |
 |--------|---------|
 | `gewezel` | *west* (shared map) |
-| `gewezexazawan` | *Azawan’s left* |
-| `gewezexedonen` | *your left* (listener facing) |
-| `gewezexugobon` | *my left* (speaker facing) |
-| `gewezexahan` | *our left* (shared facing) |
+| `gewezethazawan` | *Azawan’s left* |
+| `gewezethedonen` | *your left* (listener facing) |
+| `gewezethugobon` | *my left* (speaker facing) |
+| `gewezethahan` | *our left* (shared facing) |
 | `gubal` / `hubal` | gravity *up* |
 
 ### Translation practice
@@ -484,9 +484,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *The boat on Azawan’s left.*
 
 ::: details Show answer
-`zodadal gewezexazawan.`
+`zodadal gewezethazawan.`
 
-z-boat | g-west-x-Azawan
+z-boat | g-west-th-Azawan
 :::
 
 **2.** *Walk north.*
@@ -500,9 +500,9 @@ j-command | v-walk | h-north
 **3.** *The ship on Ululon’s right.*
 
 ::: details Show answer
-`zuhul gezazaxululon.`
+`zuhul gezazathululon.`
 
-z-ship | g-east-x-Ululon
+z-ship | g-east-th-Ululon
 :::
 
 **4.** *Walk down.*
@@ -516,25 +516,25 @@ j-command | v-walk | h-down
 **5.** *The life-ring is on Azawan’s left of the boat.*
 
 ::: details Show answer
-`zuluvel gewezexazawan bodadal.`
+`zuluvel gewezethazawan bodadal.`
 
-z-life-ring | g-west-x-Azawan | b-boat
+z-life-ring | g-west-th-Azawan | b-boat
 :::
 
 **6.** *You, walk left (your left).*
 
 ::: details Show answer
-`jel zedonen vawalal hewezexedonen.`
+`jel zedonen vawalal hewezethedonen.`
 
-j-command | z-listener | v-walk | h-west-x-listener
+j-command | z-listener | v-walk | h-west-th-listener
 :::
 
 **7.** *The boat on my left.*
 
 ::: details Show answer
-`zodadal gewezexugobon.`
+`zodadal gewezethugobon.`
 
-z-boat | g-west-x-speaker
+z-boat | g-west-th-speaker
 :::
 
 **8.** *Ululon, walk west.*
@@ -547,11 +547,11 @@ j-command | z-Ululon | v-walk | h-west
 
 #### Agalan → English
 
-**1.** `zodadal gezazaxazawan.`
+**1.** `zodadal gezazathazawan.`
 
 ::: details Show answer
 
-z-boat | g-east-x-Azawan
+z-boat | g-east-th-Azawan
 
 *The boat on Azawan’s right.*
 :::
@@ -583,29 +583,29 @@ j-command | v-walk | h-up
 *Walk up.*
 :::
 
-**5.** `zuluvel gewezexululon bodadal.`
+**5.** `zuluvel gewezethululon bodadal.`
 
 ::: details Show answer
 
-z-life-ring | g-west-x-Ululon | b-boat
+z-life-ring | g-west-th-Ululon | b-boat
 
 *The life-ring is on Ululon’s left of the boat.*
 :::
 
-**6.** `jel zedonen vawalal hezazaxedonen.`
+**6.** `jel zedonen vawalal hezazathedonen.`
 
 ::: details Show answer
 
-j-command | z-listener | v-walk | h-east-x-listener
+j-command | z-listener | v-walk | h-east-th-listener
 
 *You, walk right (your right).*
 :::
 
-**7.** `zuhul gonohexuhubun.`
+**7.** `zuhul gonohethuhubun.`
 
 ::: details Show answer
 
-z-ship | g-northwest-x-Uhubun
+z-ship | g-northwest-th-Uhubun
 
 *The ship on Uhubun’s forward-left.*
 :::
@@ -639,7 +639,7 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 | **`ozohel`** (bare) | talk pulls back | *retreat* |
 | **`ogomol`** | heading in general | *compass* / *direction* |
 
-**For *therefore*, use:** the [linker](dependents.md#sentence-linkers) **`xezazal`**. Body *left* / *right* still needs **`DIR x ANCHOR`**.
+**For *therefore*, use:** the [linker](dependents.md#sentence-linkers) **`xezazal`**. Body *left* / *right* still needs **`DIR th ANCHOR`**.
 
 ## See also
 

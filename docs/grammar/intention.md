@@ -284,7 +284,7 @@ English *can't* does not say whether this is just for now, not yet, or never. Af
 >
 > "Azawan can never run."
 
-**Compare with:** **`xa` / `xu`** on a [values](values.md) **need** root is met / unmet need (`tholozoxum` *competence unmet*). On a verb or quality, **`xa` / `xu`** is can / can't.
+**Compare with:** a [values](values.md) word joins a **need** root with **`th`**, not **`x`**: **`tha` / `thu`** is met / unmet need (`tholozothum` *competence unmet*). **`xa` / `xu`** after a verb or quality is can / can't.
 
 ### When there is no single verb (`egera`)
 <a id="ability-fallback"></a>

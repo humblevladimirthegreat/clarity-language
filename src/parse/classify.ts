@@ -424,14 +424,15 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
     return { ...word, reading: "number" };
   }
 
-  if (family.kind === "x" && family.xFamily === "valueAbility") {
+  if (family.kind === "x" && family.xFamily === "value") {
+    return { ...word, reading: "value" };
+  }
+
+  if (family.kind === "x" && family.xFamily === "ability") {
     if (word.ending === "n" && (!word.pos || word.pos === "j")) {
       return { ...word, reading: "greeting" };
     }
-    const host = family.leftRoots[0];
-    const reading: LexReading =
-      host && tables.needRoots.has(host) ? "value" : "ability";
-    return { ...word, reading };
+    return { ...word, reading: "ability" };
   }
 
   if (isRestrictor(word)) {
@@ -503,7 +504,8 @@ export type ClassifyHit = {
   source:
     | "overlay"
     | "number"
-    | "valueAbility"
+    | "value"
+    | "ability"
     | "restrictor"
     | "standIn"
     | "standInNamed"
@@ -532,16 +534,15 @@ export function classifyHits(word: MorphWord, tables: ClassifyTables): ClassifyH
     hits.push({ source: "number", reading: "number" });
   }
 
-  if (family.kind === "x" && family.xFamily === "valueAbility") {
-    if (word.ending === "n" && (!word.pos || word.pos === "j")) {
-      hits.push({ source: "valueAbility", reading: "greeting" });
-    } else {
-      const host = family.leftRoots[0];
-      hits.push({
-        source: "valueAbility",
-        reading: host && tables.needRoots.has(host) ? "value" : "ability",
-      });
-    }
+  if (family.kind === "x" && family.xFamily === "value") {
+    hits.push({ source: "value", reading: "value" });
+  }
+
+  if (family.kind === "x" && family.xFamily === "ability") {
+    hits.push({
+      source: "ability",
+      reading: word.ending === "n" && (!word.pos || word.pos === "j") ? "greeting" : "ability",
+    });
   }
 
   if (isRestrictor(word)) {

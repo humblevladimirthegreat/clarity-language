@@ -125,7 +125,10 @@ export function numberStemToSpeechStressed(stem: NumberStem): {
 } {
   const stress: number[] = [];
   // Calendar-ordinal dates (`_` + `#`, numbers.md § Time) speak the digraph marker `roe`.
-  let text = stem.calendarOrdinal ? "roe" : markerToSpeech(stem.marker);
+  const marker = stem.calendarOrdinal ? "roe" : markerToSpeech(stem.marker);
+  // Spoken comma: `th` + the marker's first vowel (numbers.md § Saying it aloud).
+  const separator = `th${marker.charAt(1)}`;
+  let text = marker;
   if (stem.groups.length === 0 && !stem.digitlessExp) {
     // Digitless word: stress the marker vowel.
     stress.push(1);
@@ -140,7 +143,8 @@ export function numberStemToSpeechStressed(stem: NumberStem): {
 
   if (stem.marker === "_" || stem.marker === "ro") {
     // Digit-string label: last digit of each comma group.
-    for (const group of stem.groups) {
+    for (const [i, group] of stem.groups.entries()) {
+      if (i > 0) text += separator;
       const start = text.length;
       const mantissa = group.mantissa ?? "";
       text += digitsToSyllables(mantissa);
@@ -149,7 +153,8 @@ export function numberStemToSpeechStressed(stem: NumberStem): {
     return { text, stress };
   }
 
-  for (const group of stem.groups) {
+  for (const [i, group] of stem.groups.entries()) {
+    if (i > 0) text += separator;
     const part = groupToSpeechStressed(group);
     for (const s of part.stress) stress.push(text.length + s);
     text += part.text;

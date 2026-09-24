@@ -99,7 +99,7 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 | Role metalanguage (`speaker`, `listener`, `interlocutors`) | *I / you / we* |
 | Join packaging (open `zam` vs closed `zal`, exclusive `dol`, fence shape) | Plain *and / or*; no “exactly one”, no open-list footnotes |
 | Sense-picking **-l / -m / -n** | Never (already omitted from morph when they only pick sense) |
-| Values **channel / standing / invitation / changeability** | Keep only what changes English (*can't* vs unmet need as content); drop “(motive, soft standing)”, … Prescription **`xe`**: loose free keeps the warrant when it is the point (*invited* / *offered* / *protective*) — not *must* / *should* / *could* as a force grade |
+| Values **channel / standing / invitation / changeability** | Keep only what changes English (*can't* vs unmet need as content); drop “(motive, soft standing)”, … Prescription **`the`**: loose free keeps the warrant when it is the point (*invited* / *offered* / *protective*) — not *must* / *should* / *could* as a force grade |
 | Emotion compose ACT / LOCUS / activation | Ordinary emotion English (*we're glad*), not “pleasure met · internal” |
 | Evidential / universality **tags** | Fold in only if English wants it (*I hear…*, *usually*); else omit |
 | Span fence labels | Quotes / parentheses; no “Cite:” / “aside:” |
@@ -255,14 +255,14 @@ Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#
 
 ### Mid-word `x` families
 
-Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/values.md), keep the stance **and** the ending table (contact / prescription warrant / preference standing / changeability): `tholozoxom` → `th-competence-motive-internal`, not `th-competence-x-motive`.
+Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/values.md), keep the stance **and** the ending table (contact / prescription warrant / preference standing / changeability): `tholozothom` → `th-competence-motive-internal`, not `th-competence-th-motive`.
 
 | Family | Example Agalan | Morph gloss |
 |--------|-----------------|-------------|
 | Ordinary / name compound | `jubunexunowen` | `j-Ubune-x-Unowen` |
 | Ordinary (three roots) | `zogovexadedaxunuden` | `z-Ogove-x-Adeda-x-Unuden` |
 | Ability / values stance | `vawalaxel` | `v-walk-unable-temporary` |
-| Values stance on need | `tholozoxom` | `th-competence-motive-internal` |
+| Values stance on need | `tholozothom` | `th-competence-motive-internal` |
 | Role compound | `zaxuvugul` | `z-agent-x-fight` |
 | Span open / close | `thexal` … `xuxul` | `th-aside-x-multi` · … · `x-span-close` |
 | Number / enumeration | `x#e-` | `x-starting-with` |
@@ -368,7 +368,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Ability + value motive
 
-> `juel zugobon vawalaxel tholozoxom.`
+> `juel zugobon vawalaxel tholozothom.`
 >
 > j-no | z-speaker | v-walk-unable-temporary | th-competence-motive-internal
 >
@@ -376,7 +376,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Numbered alternative + unmet pleasure
 
-> `x#e- zuzebum g#1 zugobonx thaweroxur.`
+> `x#e- zuzebum g#1 zugobonx thawerothur.`
 >
 > x-starting-with | z-problem | g-first | z-speaker-x | th-pleasure-unmet-temporary
 >

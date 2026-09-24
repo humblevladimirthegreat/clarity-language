@@ -363,17 +363,39 @@ g-zero
 Beginner already used one spoken word: role letter, marker, digits, ending. The same four slots hold every free number you meet next.
 
 ```
-[PoS] + r + V + ( [exponent?] [mantissa digits?] )* + [ending]
+[PoS] + r + V + ( group ( th + V₁ + group )* )? + [ending]
+group = [exponent?] [mantissa digits?]
 ```
 
 1. **PoS:** the first letter is the clause slot, as on other words.
 2. **Number marker:** consonant **r** plus a vowel **V**. **V** is a single vowel in this stage. The PoS+`r` cluster is a [number-only letter-cluster exception](phonology.md#phonotactics).
 3. **Zero or more digit groups:** each group is an optional exponent (the *order of magnitude* piece) and optional mantissa digits (the ordinary digits). When a group is present, at least one of those two pieces is present. Digits sit next to each other with no **x**. Sign, when it applies, is once for the whole word. **No groups** is digitless of that marker, or digitless **-r** resume.
-4. **Ending:** `-l` / `-m` / `-n` / `-r`.
+4. **Group separator:** each group after the first opens with **`th`** plus **V₁**, the first vowel of the marker ([below](#group-separator)).
+5. **Ending:** `-l` / `-m` / `-n` / `-r`.
 
 Speech is always the full CV form. Writing for free number words prefers shorthand (`g+3`, `g+`).
 
 **Related form:** naming a group of people or things uses [**-x**](plurality.md) on an ordinary noun.
+
+### Group separator
+<a id="group-separator"></a>
+
+When a number has more than one digit group, you say each comma. The spoken comma is **`th`** plus the first vowel of the marker. Written text keeps the comma.
+
+> `h_15,30`
+>
+> h-_15,30
+>
+> "At 15:30." (spoken *hrowovathorezol*: `h` + `ro` + wo va + **tho** + re zo + `l`)
+
+| Marker | Separator | Example | Cue |
+|--------|-----------|---------|-----|
+| **`ra`** (`+`) | **`tha`** | `g+5e3,860` | **a** ≈ add (still counting up) |
+| **`ru`** (`-`), **`rue`** (`#-`), **`ruo`** (`#_`), **`rua`** (`+-`) | **`thu`** | `g-1e9,265e3,4` | **u** ≈ undo (the sign is heard again at every break) |
+| **`re`** (`#`) | **`the`** | `g#1e3,5` (*the 1005th*) | **e** ≈ order |
+| **`ro`** (`_`), **`roe`** (`_#` dates) | **`tho`** | `d_555,123,4567`; `h_#22,7,2026` | **o** ≈ one (one label) |
+
+Say a separator exactly where a comma is written, and nowhere else: `g+860` has none; `g+5e3,860` has one. The separator must match the marker, so a listener who missed the start of a long negative number still hears **`thu`** at each break.
 
 ### Parts of speech on numbers
 <a id="parts-of-speech-on-numbers"></a>
@@ -544,11 +566,12 @@ Place the identity symbol **immediately after** any ending mark (or after PoS wh
 | Digit syllables (`wo`…`zo`) | Arabic **`0`–`9`** |
 | `ba` / `bu` (+ `ja` when a mantissa follows) | **`e`** / **`e-`** |
 | named exp **`0`** | **`e0`** — ones band `g+e0`; assert `g+3e0` / `g#e0` |
+| `th` + marker vowel ([group separator](#group-separator)) | **`,`** |
 | `je` | **`.`** |
 | `jo` | **`%`** |
 | `ju` | **`%*`** |
 
-**Commas** separate digit groups for readability (preferred for multi-group values). Commas are orthographic only; they are not spoken and do not change the word. Digitless forms have no commas.
+**Commas** separate digit groups. Each comma is spoken as the [group separator](#group-separator). Digitless forms have no commas.
 
 For long values, break into digit groups of at most three mantissa digits (plus their exponents); all groups still sit in **one** word after a single marker.
 
@@ -570,7 +593,7 @@ Prefer shorthand in free slots. Speech is always the full CV form.
 ### Number as verb / adverb / interjection / discourse
 <a id="number-as-roles"></a>
 
-You can use a number as the **action** (*add three*), as **how often** (*three times*), as a **shout** (*Three more!*), or as a **list label** (*point 2:*). Put the same markers under `/v/`, `/h/`, `/j/`, or `/x/`. The first letter chooses that job; the marker still says count, rank, or code.
+You can use a number as the **action** (*add three*), as **how often** (*three times*), as **how likely** (*70% likely*), as a **shout** (*Three more!*), or as a **list label** (*point 2:*). Put the same markers under `/v/`, `/h/`, `/th/`, `/j/`, or `/x/`. The first letter chooses that job; the marker still says count, rank, or code.
 
 > `zululon vawalal h+3.`
 >
@@ -655,6 +678,42 @@ Under `/x/`, a digitful exponent on **`#`** is **outline depth** relative to the
 Worked examples: `x#2` *point 2:*; `x+2` *corroborating 2:*; `x-2` *independent 2:*; `x#e` *Finally*.
 
 Endings still apply (**-l** newly stated item, **-r** *as in (N) above* or digitless `x=#` / `x=+` / …, **-n** titled item name, **-m** fuzzy *around item N*; on last-place **`x#e`** / **`x~#e`** / **`x@#e`** / **`x=#e`** and start-place **`x#e-`** / **`x~#e-`** / **`x@#e-`** / **`x=#e-`** as above).
+
+#### Number as stance (by marker)
+<a id="number-as-stance-by-marker"></a>
+<a id="likelihood"></a>
+
+`/th/` + number is your [stance](clause.md#stance-th) on the whole claim: how likely you think it is, or which numbered source it rests on. Spoken, it starts **`thr…`**, as in English *three*.
+
+> `zululon vawalal th+70.`
+>
+> z-Ululon | v-walk | th-70-percent-likely
+>
+> "Ululon is probably walking (I'd put it at 70%)."
+
+| Marker | Writing | Stance sense |
+|--------|---------|--------------|
+| **`ra`** | `th+N` | **Likelihood N percent** — `th+70` *70% likely*; `th+99.9` *99.9% likely*. The digits are already a percent, 0–100; do not add `%`. |
+| **`ra`** / **`ru`** | `th+` / `th-` | **likely** / **unlikely**, with no figure |
+| **`ro`** | `th_N` | **According to source N** — a footnote, reference, or exhibit label (`th_3` *per [3]*). Digitless `th_` = *per a source* you do not name. |
+
+For *30% unlikely*, give the likelihood of the claim itself (`th+70`). **`th-N`** and **`th#N`** are not used.
+
+[Digitless specials](#digitless-exponents) keep their meaning as stance:
+
+| Form | Reading |
+|------|---------|
+| **`th+e`** | **certain** — not an estimate; no exceptions allowed |
+| **`th+0e`** | **no chance at all** — ruled out, not just 0% |
+| **`th+1e`** | *a gazillion percent sure* (hyperbole) |
+| **`th-e-`** | **as if** / *for the sake of argument* — the claim is framed as imaginary |
+| **`th~-e-`** | open imaginary framing |
+
+`th+100` and `th+0` are still estimates (*I'd put it at 100%*). `th+e` and `th+0e` step outside the estimate.
+
+Endings still apply: **-m** *about* that likelihood (`th~+70` *roughly 70%*), **-n** a conventional level (`th@+95` *at the 95% confidence level*), **-r** *the same likelihood as before* (`th=+`).
+
+**Compare with:** [evidentiality](knowing.md#evidentiality) says **how** you know; `th_N` says **which** numbered source. [MAY](knowing.md#may) (`thodohom`) says the claim is open without a figure. Pretense *as if* in play or make-believe is [NOTIONAL](knowing.md#notional) (`thadadem`); `th-e-` is a quick hypothetical.
 
 
 
@@ -945,12 +1004,12 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | 27e12 | `g+27e12` | *grabawodujadulel* (`ra` + ba wo du **ja** + du le) |
 | e9 (bare) | `g+e9` | *grabanal* (`ra` + ba na; **no** `ja`) |
 | 50e-6 | `g+50e-6` | *grabugujavazol* (`ra` + bu gu **ja** + va zo) |
-| −1e9 −265e3 −4 | `g-1e9,265e3,4` | *grubanajawobarejaduguvamol* — **`ru`**; groups: ba na **ja** wo · ba re **ja** du gu va · mo |
-| $5860.04 → 5e3 + 860 + 4e-2 | `g+5e3,860,4e-2` | *grabarejavahaguzobudujamol* — ba re **ja** va · ha gu zo · bu du **ja** mo |
+| −1e9 −265e3 −4 | `g-1e9,265e3,4` | *grubanajawothubarejaduguvathumol* — **`ru`**; groups: ba na **ja** wo · **thu** · ba re **ja** du gu va · **thu** · mo |
+| $5860.04 → 5e3 + 860 + 4e-2 | `g+5e3,860,4e-2` | *grabarejavathahaguzothabudujamol* — ba re **ja** va · **tha** · ha gu zo · **tha** · bu du **ja** mo |
 | 2nd | `g#2` | *gredul*; title-like *the Second…* may take **-n** (`g@#2` / *gredun*) |
 | penultimate | `g#-2` | *gruedul* |
 | about 27e6 | `g~+27e6` | *grabagujadulem* (ba gu **ja** du le, ending **-m**) |
-| phone 555-123-4567 | `d_555,123,4567` | *drovavavawoduremovagulel* (`d` + `ro` + va×3 · wo du re · mo va gu · le + `l`) |
+| phone 555-123-4567 | `d_555,123,4567` | *drovavavathowodurethomovagulel* (`d` + `ro` + va×3 · **tho** · wo du re · **tho** · mo va gu le + `l`) |
 | scientific 5.2487083e-4 | `g+5.2487083e-4` | *grabumojavajedumohalezoharel* (`ra` + bu mo **ja** + va **je** + du mo ha · le zo ha · re) |
 | 25% | `g+25%` | *graduvajol* (`g` + `ra` + du va **jo** + `l`) |
 | 25% of the cats | `zagadalx g+25%` | host whole + `/ɡ/` percent — [denominator](numbers-applied.md#percent-denominators) |
@@ -967,7 +1026,7 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | as in (2) above (neutral) | `x=#2` | *xredur* (ending **-r**) |
 | three times / ×3 | `h+3` | *hrarel* (`h` + `ra` + re) |
 | ÷3 / every third | `h-3` | *hrurel* (`h` + `ru` + re) |
-| at 15:30 | `h_15,30` | *hrowovarezol* (`h` + `ro` + wo va · re zo) — bare `hro` = time |
+| at 15:30 | `h_15,30` | *hrowovathorezol* (`h` + `ro` + wo va · **tho** · re zo) — bare `hro` = time |
 | on 101.1 (frequency) | `/h/` *on* + `b_101.1` | not bare `h_…`; host + `/b/` digit-string |
 | for the third time | `h#3` | *hrerel* (`h` + `re` + re) |
 | Three! (label / score) | `j_3` | *jrorel* (`j` + `ro` + re) |
@@ -1045,7 +1104,7 @@ Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as o
 
 **Imaginary (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅), no mantissa. Completes the scalar special grid. Reading is **metaphorical**: a magnitude named *as if* it counted, without entering the real tally.
 
-**Compare with:** clause-level pretensive *as if* uses spelled mood **`adade`** ([knowing.md § Notional](knowing.md#notional), e.g. `thadadem`). Free **`grubul`** / **`xrubul`** / **`hrubul`** / **`vrubul`** / **`jrubul`** are amount, discourse *imagine that:*, manner *as if*, verb *treat as imaginary*, and cheer on the number grid.
+**Compare with:** clause-level pretensive *as if* uses spelled mood **`adade`** ([knowing.md § Notional](knowing.md#notional), e.g. `thadadem`). Free **`grubul`** / **`xrubul`** / **`thrubul`** / **`vrubul`** / **`jrubul`** are amount, discourse *imagine that:*, stance *as if*, verb *treat as imaginary*, and cheer on the number grid.
 
 **Endings** (no-mantissa specials):
 
@@ -1076,8 +1135,8 @@ No-mantissa digitless-exp under `/v/` and `/h/` inherit special-value identity (
 | **`h~+e`** | *many times but finite* |
 | **`h+e-`** | **unbounded duplicity** (÷ without bound / into unboundedly many parts) |
 | **`h~+e-`** | *÷ a lot / into many parts, but finite* |
-| **`h-e-`** | **as if / for the sake of argument** — event under imaginary framing |
-| **`h~-e-`** | open imaginary framing |
+
+**Stance:** imaginary framing of a whole claim is stance, not manner, so it sits on `/th/`: **`th-e-`** = *as if* / *for the sake of argument*; **`th~-e-`** = open imaginary framing. See [number as stance](#number-as-stance-by-marker).
 
 **Ordinals (`re`) — start/last landmarks:**
 
@@ -1263,11 +1322,10 @@ Digitless **`e`/`e-`** sits in its own group (no **`je`** / **`jo`** / **`ju`** 
 <a id="stress-pronunciation-guide"></a>
 <a id="stress"></a>
 
-Ordinary spelling carries no stress mark ([phonology](phonology.md#phonotactics)). On number words, stress shows internal structure so silent commas stay unambiguous in speech (`g+5e3,860,4e-2`).
+Ordinary spelling carries no stress mark ([phonology](phonology.md#phonotactics)). Group boundaries are already audible through the [group separator](#group-separator), so number stress is a rhythm habit, not what tells groups apart. A melody may override it.
 
 - Digitless numbers (marker + ending only): stress the **marker** syllable (`ra` / `ru` / `re` / `ro`). The advanced `#-` marker is spelled and spoken u-first.
 - Each **digit group** stresses its **last digit**: the last **exponent** digit when the group has an exponent, even when a mantissa follows; otherwise the last **mantissa** digit. A group with no digits at all (bare **`ba`** / **`bu`**) stresses the marker itself.
-- That group-final stress is also the **spoken group boundary**: a stressed digit followed by another digit opens a new group. This keeps multi-group values unambiguous in speech even though the written commas are silent (`g+5e3,860,4e-2`).
 - Digit-string groups follow the same rule: last digit of each group.
 - **`je`** (decimal point): always stressed when present.
 - **`jo`** / **`ju`** (percent / percentage points): always stressed when present.

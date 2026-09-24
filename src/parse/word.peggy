@@ -74,6 +74,11 @@
     return "#-";
   }
 
+  // Spoken group separator `th` + first vowel of the spoken marker (numbers.md § Saying it aloud).
+  function separatorVowel(markerV) {
+    return markerV.charAt(0);
+  }
+
   function endingFromWritingMark(mark, fallback) {
     if (mark === "~") return "m";
     if (mark === "@") return "n";
@@ -392,8 +397,10 @@ Digit = [0-9]
 
 // Speech-style: PoS + r + V + groups + ending. Marker normalizes to writing glyphs.
 SpeechNumberStem
-  = "r" v:SpeechMarkerV groups:SpeechDigitGroup* digitless:SpeechDigitlessTail? {
-      const stem = { marker: writingMarkerFromSpeechV(v), groups };
+  = "r" v:SpeechMarkerV body:SpeechDigitGroups
+    &{ return body.seps.every(function (sep) { return sep === separatorVowel(v); }); }
+    digitless:SpeechDigitlessTail? {
+      const stem = { marker: writingMarkerFromSpeechV(v), groups: body.groups };
       if (v === "oe") stem.calendarOrdinal = true;
       if (digitless) stem.digitlessExp = digitless;
       return stem;
@@ -401,6 +408,16 @@ SpeechNumberStem
 
 SpeechMarkerV
   = "oe" / "ue" / "uo" / "ua" / [aeou]
+
+// Groups after the first are opened by separator `th` + the marker's first vowel.
+SpeechDigitGroups
+  = head:SpeechDigitGroup tail:(sep:SpeechGroupSeparator g:SpeechDigitGroup { return { sep, g }; })* {
+      return { groups: [head].concat(tail.map(function (t) { return t.g; })), seps: tail.map(function (t) { return t.sep; }) };
+    }
+  / "" { return { groups: [], seps: [] }; }
+
+SpeechGroupSeparator
+  = "th" v:[aeou] { return v; }
 
 SpeechDigitGroup
   = sign:("ba" / "bu") expDigits:SpeechDigitSeq "ja" mantissa:SpeechMantissa percent:SpeechPercent? {
@@ -465,8 +482,10 @@ PoslessNumberStem
       if (body && body.digitlessExp) stem.digitlessExp = body.digitlessExp;
       return stem;
     }
-  / "r" v:SpeechMarkerV groups:SpeechDigitGroup* digitless:SpeechDigitlessTail? {
-      const stem = { marker: writingMarkerFromSpeechV(v), groups };
+  / "r" v:SpeechMarkerV body:SpeechDigitGroups
+    &{ return body.seps.every(function (sep) { return sep === separatorVowel(v); }); }
+    digitless:SpeechDigitlessTail? {
+      const stem = { marker: writingMarkerFromSpeechV(v), groups: body.groups };
       if (digitless) stem.digitlessExp = digitless;
       return stem;
     }
@@ -516,7 +535,9 @@ PrefixedBody
 xWord
   = SpanOpen
   / RoleCompound
-  / ValueAbilityCompound
+  / ValueCompound
+  / LateralCompound
+  / AbilityCompound
   / NumericDerivation
   / OrdinaryCompound
 
@@ -549,19 +570,46 @@ RoleCompound
       };
     }
 
-ValueAbilityCompound
-  = host:ValueAbilityHost "x" stanceV:[aeou] ending:Ending plural:PluralSuffix? WordEnd {
+// Values: need root + `th` + stance vowel (values.md).
+ValueCompound
+  = host:CompoundHost "th" stanceV:[aeou] ending:Ending plural:PluralSuffix? WordEnd {
       return {
         ending,
         plural: !!plural,
-        family: xFamily("valueAbility", {
+        family: xFamily("value", {
           leftRoots: host,
           stanceVowel: stanceV,
         }),
       };
     }
 
-ValueAbilityHost
+// Viewpoint lateral: direction + `th` + whose facing counts (roles.md § Viewpoint laterals).
+LateralCompound
+  = dir:ContentRoot "th" anchor:CompoundHost ending:Ending plural:PluralSuffix? WordEnd {
+      return {
+        ending,
+        plural: !!plural,
+        family: xFamily("lateral", {
+          leftRoots: [dir],
+          rightRoots: anchor,
+        }),
+      };
+    }
+
+// Ability (or conversation-length bid on a name): host + `x` + vowel.
+AbilityCompound
+  = host:CompoundHost "x" stanceV:[aeou] ending:Ending plural:PluralSuffix? WordEnd {
+      return {
+        ending,
+        plural: !!plural,
+        family: xFamily("ability", {
+          leftRoots: host,
+          stanceVowel: stanceV,
+        }),
+      };
+    }
+
+CompoundHost
   = first:ContentRoot rest:("x" r:ContentRoot { return r; })* {
       return [first].concat(rest);
     }
@@ -676,7 +724,7 @@ plainContent
 // ── Citation (prefix-less root + ending) ────────────────────────────────────
 
 citation
-  = body:(ValueAbilityCompound / NumericDerivation / OrdinaryCompound)
+  = body:(ValueCompound / LateralCompound / AbilityCompound / NumericDerivation / OrdinaryCompound)
     {
       return makeWord(text(), {
         ending: body.ending,

@@ -7,7 +7,7 @@ my name: obogan (innovation)
 # TODO
 j should just be y, remind that y is never a vowel
 
-consider making negatives clearer (stress?)
+consider making negatives clearer (stress, repeat jul?)
 Prosody
 
 gloss should indicate phrase structure (including proper phrases) and what modifies what. Gloss overlay ui should show that as well.
@@ -37,7 +37,6 @@ Dictionary entries (open lexicon / concepts — not the closed list above):
 -habits: triggered
 -unconditional self acceptance
 -apology
--percentage chances for true
 -Inner why?
 -how inner self protects
 -planning has importance value, consider numbered alternates

@@ -88,7 +88,7 @@ strict: *I wonder — who walks?*
 
 loose: *I wonder — who walks?*
 
-**A:** `juel zuzur vawalaxel tholozoxom.`
+**A:** `juel zuzur vawalaxel tholozothom.`
 
 gloss: `j-no` · `z-←Uzuzuxogoven` · `v-walk-unable-temporary` · `th-competence-motive-internal`
 
@@ -104,7 +104,7 @@ strict: *In other words, that one (A) lacks the capacity to walk.*
 
 loose: *In other words, they can't manage walking.*
 
-**C:** `x#e- zuzebum g#1. zahan thaweroxur.`
+**C:** `x#e- zuzebum g#1. zahan thawerothur.`
 
 gloss: `x-starting-with` · `z-problem` · `g-first` · `z-interlocutors` · `th-pleasure-x-unmet`
 
@@ -224,7 +224,7 @@ strict: *(You A and you C,) choose play!*
 
 loose: *You two — pick something playful!*
 
-**C:** `jum vawalal tholozoxem.`
+**C:** `jum vawalal tholozothem.`
 
 gloss: `j-prohibition` · `v-walk` · `th-competence-ought-offered`
 
@@ -240,7 +240,7 @@ strict: *Please, let’s (A and B and C) stay standing at home if it rains.*
 
 loose: *Please, let's stay home if it rains.*
 
-**B:** `x#e zolalal g#3. zuzur zubur zamar zal thaweroxal thejelom thabobom.`
+**B:** `x#e zolalal g#3. zuzur zubur zamar zal thawerothal thejelom thabobom.`
 
 gloss: `x-finally` · `z-goal` · `g-third` · `z-←Uzuzuxogoven` · `z-←Ubunexunowen` · `z-←Amadexonogon` · `z-and` · `th-pleasure-x-met` · `h-flow` · `th-INTERNAL`
 

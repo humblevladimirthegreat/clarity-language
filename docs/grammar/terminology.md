@@ -183,7 +183,7 @@ Clause content after the left-edge `/j/` cluster.
 <a id="wording-general-history"></a>
 <a id="bound-endorse-invite"></a>
 
-Prescription endings on value **`xe`**: why a move is welcome. **-l** invited, **-m** offered to serve the need, **-r** protective, meant to prevent detriment to the need.
+Prescription endings on value **`the`**: why a move is welcome. **-l** invited, **-m** offered to serve the need, **-r** protective, meant to prevent detriment to the need.
 
 [Values](values.md#value-force)
 
@@ -375,7 +375,7 @@ Hosted `/h/` or `/ɡ/` **`urorom`** plus model `/b/` (*like* a duck / *like* Aza
 
 ### Exchange (*for*)
 
-Hosted `/h/` or `/ɡ/` **`uhanem`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not values motive **`xo`**, not intended-outcome **`olala`**.
+Hosted `/h/` or `/ɡ/` **`uhanem`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not values motive **`tho`**, not intended-outcome **`olala`**.
 
 [Relations](relations.md#exchange)
 
@@ -509,7 +509,7 @@ Amount + lexicon unit noun (published abstract = unit name).
 
 ### Met / unmet / motive / prescription (values)
 
-Value stances **`xa` / `xu`** (Beginner); **`xe`** / **`xo`** (Intermediate prescription / motive). Prescription **`xe`** on the clause is deontic on the host act (*ought to … for this need*), not a performance report with a separate norm tag. The ending marks whether the move is [invited, offered, or protective](#asked-typical-history), not how firmly you address them.
+Value stances **`tha` / `thu`** (Beginner); **`the`** / **`tho`** (Intermediate prescription / motive). Prescription **`the`** on the clause is deontic on the host act (*ought to … for this need*), not a performance report with a separate norm tag. The ending marks whether the move is [invited, offered, or protective](#asked-typical-history), not how firmly you address them.
 
 [Values](values.md)
 
@@ -537,7 +537,7 @@ Six closed psychological needs under `/ɡ/` `/th/` `/w/`.
 
 ### Number as verb / adverb / interjection / discourse
 
-Number word under `/v/` `/h/` `/j/` `/x/`.
+Number word under `/v/` `/h/` `/th/` `/j/` `/x/`.
 
 [Numbers](numbers.md#number-as-roles)
 
@@ -581,7 +581,7 @@ Special reading of a published root under a PoS.
 
 [Lexicon](lexicon.md)
 
-**Compare with:** a number under `/v/` `/h/` `/j/` `/x/` is [number as verb / adverb / interjection / discourse](#number-as-verb-adverb-interjection-discourse), not an overlay. Lexicon abstract **-m** stays abstract.
+**Compare with:** a number under `/v/` `/h/` `/th/` `/j/` `/x/` is [number as verb / adverb / stance / interjection / discourse](numbers.md#number-as-roles), not an overlay. Lexicon abstract **-m** stays abstract.
 
 ### Polar stance
 
@@ -676,7 +676,7 @@ Word-initial job letter.
 
 ### So that / event purpose
 
-Clause-pole **`olala`**: intended outcome of the host (*so that Ululon sits*; NP *for a money-bag*). Not locative *toward*, not values **`xo`**, not discourse *therefore*.
+Clause-pole **`olala`**: intended outcome of the host (*so that Ululon sits*; NP *for a money-bag*). Not locative *toward*, not values **`tho`**, not discourse *therefore*.
 
 [Dependents](dependents.md#so-that)
 

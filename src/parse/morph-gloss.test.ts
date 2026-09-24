@@ -51,7 +51,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("jubunexunowen", "j-Ubune-x-Unowen");
     expectLine("zuzuzuxogovexadedan", "z-Uzuzu-x-Ogove-x-Adedan");
     expectLine("vawalaxel", "v-walk-unable-temporary");
-    expectLine("tholozoxem", "th-competence-ought-offered");
+    expectLine("tholozothem", "th-competence-ought-offered");
     expectLine("zaxezeher", "z-agent-x-speech");
     expectLine("zaxuvugul", "z-agent-x-fight");
     expectLine("zaxuvugum", "z-agent-x-struggle");
@@ -170,14 +170,14 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
   it("ability + value motive", () => {
     expectLine(
-      "juel zugobon vawalaxel tholozoxom.",
+      "juel zugobon vawalaxel tholozothom.",
       "j-no | z-speaker | v-walk-unable-temporary | th-competence-motive-internal",
     );
   });
 
   it("numbered alternative + unmet pleasure", () => {
     expectLine(
-      "x#e- zuzebum g#1 zugobonx thaweroxur.",
+      "x#e- zuzebum g#1 zugobonx thawerothur.",
       "x-starting-with | z-problem | g-first | z-speaker-x | th-pleasure-unmet-temporary",
     );
   });
@@ -307,8 +307,8 @@ describe("compareMorphGloss", () => {
   });
 
   it("values bake stance and ending grain", () => {
-    expectLine("zawaral gonogoxal", "z-wrapped-gift | g-relatedness-met-physical");
-    expectLine("zazegem walodoxur gobobum", "z-gathering | w-autonomy-unmet-temporary | g-stimulus");
+    expectLine("zawaral gonogothal", "z-wrapped-gift | g-relatedness-met-physical");
+    expectLine("zazegem walodothur gobobum", "z-gathering | w-autonomy-unmet-temporary | g-stimulus");
     expectLine("thogegam thanedem", "th-HIGH | th-CIRCUM");
   });
 
@@ -323,7 +323,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("viewpoint laterals keep compass on DIR", () => {
-    expectLine("jel vawalal hewezexazawan", "j-command | v-walk | h-west-x-Azawan");
+    expectLine("jel vawalal hewezethazawan", "j-command | v-walk | h-west-th-Azawan");
   });
 
   it("house-cast resume without a same-line antecedent", () => {

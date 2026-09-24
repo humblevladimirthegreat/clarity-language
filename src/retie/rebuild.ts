@@ -184,11 +184,20 @@ function rebuildX(
       }
       return `${prefix}${family.roleVowel}x${host}${tail}`;
     }
-    case "valueAbility": {
+    case "value":
+    case "ability": {
       if (!family.stanceVowel || left.length === 0) {
         return null;
       }
-      return `${prefix}${left.join("x")}x${family.stanceVowel}${tail}`;
+      const hinge = family.xFamily === "value" ? "th" : "x";
+      return `${prefix}${left.join("x")}${hinge}${family.stanceVowel}${tail}`;
+    }
+    case "lateral": {
+      const rightParts = right ?? [];
+      if (left.length !== 1 || rightParts.length === 0) {
+        return null;
+      }
+      return `${prefix}${left[0]}th${rightParts.join("x")}${tail}`;
     }
     case "numeric": {
       const oldHost = family.leftRoots[0] ?? "";

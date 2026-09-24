@@ -61,19 +61,23 @@ describe("numberStemToSpeech", () => {
     assert.equal(numberWordToSpeech(parseWord("grabanal")), "grabanal");
   });
 
-  it("expands g+5e3,860,4e-2 to grabarejavahaguzobudujamol", () => {
-    assert.equal(numberWordToSpeech(parseWord("g+5e3,860,4e-2")), "grabarejavahaguzobudujamol");
+  it("expands g+5e3,860,4e-2 with tha separators", () => {
+    assert.equal(numberWordToSpeech(parseWord("g+5e3,860,4e-2")), "grabarejavathahaguzothabudujamol");
   });
 
   it("expands digit-string d_555,123,4567", () => {
     assert.equal(
       numberWordToSpeech(parseWord("d_555,123,4567")),
-      "drovavavawoduremovagulel",
+      "drovavavathowodurethomovagulel",
     );
   });
 
-  it("expands h_15,30 to hrowovarezol", () => {
-    assert.equal(numberWordToSpeech(parseWord("h_15,30")), "hrowovarezol");
+  it("expands h_15,30 to hrowovathorezol", () => {
+    assert.equal(numberWordToSpeech(parseWord("h_15,30")), "hrowovathorezol");
+  });
+
+  it("uses thu between groups of a negative scalar", () => {
+    assert.equal(numberWordToSpeech(parseWord("g-1e9,265e3,4")), "grubanajawothubarejaduguvathumol");
   });
 
   it("expands calendar date h_#22,7 with roe marker", () => {
@@ -82,16 +86,16 @@ describe("numberStemToSpeech", () => {
     if (word.family.kind !== "number") return;
     assert.equal(word.family.stem.calendarOrdinal, true);
     assert.equal(word.family.stem.marker, "_");
-    assert.equal(numberWordToSpeech(word), "hroedudulel");
+    assert.equal(numberWordToSpeech(word), "hroedudutholel");
   });
 
   it("expands full calendar date h_#22,7,2026 (year stays one group)", () => {
-    assert.equal(numberWordToSpeech(parseWord("h_#22,7,2026")), "hroeduduleduzodugul");
+    assert.equal(numberWordToSpeech(parseWord("h_#22,7,2026")), "hroedudutholethoduzodugul");
   });
 
-  it("round-trips spoken calendar date groedudulel", () => {
-    const word = parseWord("groedudulel");
-    assert.equal(numberWordToSpeech(word), "groedudulel");
+  it("round-trips spoken calendar date groedudutholel", () => {
+    const word = parseWord("groedudutholel");
+    assert.equal(numberWordToSpeech(word), "groedudutholel");
   });
 
   it("round-trips speech-shaped grarel", () => {

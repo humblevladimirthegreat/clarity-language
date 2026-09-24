@@ -72,7 +72,7 @@ English *quasi-* says something has the **shape or role** of a kind without coun
 | **`/w/`** (adjunct) | host graded as quasi- | `gebenel webenelrubul`: *quasi-commitment* |
 | **`/j/`** (interjection) | *Quasi-!* / *As if that kind!* | `jonogoleberelrubul` |
 
-**Compare with:** free **`g-e-`** / **`v-e-`** / **`h-e-`** / **`j-e-`** / **`x-e-`** are imaginary amount, or number as verb / adverb / interjection / discourse ([numbers.md § Imaginary](numbers.md#imaginary)). **`ROOTl-e-`** is quasi-*kind*.
+**Compare with:** free **`g-e-`** / **`v-e-`** / **`th-e-`** / **`j-e-`** / **`x-e-`** are imaginary amount, or number as verb / stance / interjection / discourse ([numbers.md § Imaginary](numbers.md#imaginary)). **`ROOTl-e-`** is quasi-*kind*.
 
 ###### Quasi-N (`-e-1` / `-e-2`)
 

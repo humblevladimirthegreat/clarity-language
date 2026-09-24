@@ -229,26 +229,66 @@ describe("parseWord — spans and writing atoms", () => {
 });
 
 describe("parseWord — x families, revisers, joins, foreign", () => {
-  it("parses vuzunexel as valueAbility (ability.md; classify splits need-set later)", () => {
+  it("parses golozothal as a value: need + th + stance vowel (values.md)", () => {
+    const word = parseOk("golozothal");
+    assert.deepEqual(word.family, {
+      kind: "x",
+      xFamily: "value",
+      leftRoots: ["olozo"],
+      stanceVowel: "a",
+    });
+  });
+
+  it("parses tholozothom: stance role letter plus a value word", () => {
+    const word = parseOk("tholozothom");
+    assert.equal(word.pos, "th");
+    assert.equal(word.family.kind === "x" && word.family.xFamily, "value");
+  });
+
+  it("parses gewezethazawaxululon as a viewpoint lateral with a multipart anchor", () => {
+    const word = parseOk("gewezethazawaxululon");
+    assert.deepEqual(word.family, {
+      kind: "x",
+      xFamily: "lateral",
+      leftRoots: ["eweze"],
+      rightRoots: ["azawa", "ululo"],
+    });
+  });
+
+  it("requires th + marker vowel between spoken number groups (numbers.md § Group separator)", () => {
+    const word = parseOk("hrowovathorezol");
+    assert.equal(word.family.kind === "number" && word.family.stem.groups.length, 2);
+    assert.throws(() => parseWord("hrowovatharezol"));
+    const merged = parseOk("hrowovarezol");
+    assert.equal(merged.family.kind === "number" && merged.family.stem.groups.length, 1);
+  });
+
+  it("parses stance numbers under th (thrawozol = th+10)", () => {
+    const word = parseOk("thrawozol");
+    assert.equal(word.pos, "th");
+    assert.equal(word.family.kind, "number");
+  });
+
+  it("parses vuzunexel as ability (intention.md § Ability)", () => {
     const word = parseOk("vuzunexel");
     assert.equal(word.family.kind, "x");
     if (word.family.kind === "x") {
       assert.deepEqual(word.family, {
         kind: "x",
-        xFamily: "valueAbility",
+        xFamily: "ability",
         leftRoots: ["uzune"],
         stanceVowel: "e",
       });
     }
   });
 
-  it("parses azawaxan as valueAbility host (greeting bid classified later)", () => {
+  it("parses azawaxan as ability host (greeting bid classified later)", () => {
     const word = parseOk("azawaxan");
     assert.equal(word.pos, undefined);
     assert.equal(word.ending, "n");
     assert.equal(word.family.kind, "x");
     if (word.family.kind === "x") {
-      assert.equal(word.family.xFamily, "valueAbility");
+      assert.equal(word.family.xFamily, "ability");
       assert.deepEqual(word.family.leftRoots, ["azawa"]);
       assert.equal(word.family.stanceVowel, "a");
     }

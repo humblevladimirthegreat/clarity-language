@@ -117,8 +117,8 @@ describe("classify", () => {
   });
 
   it("value on need host compounds; bare need root is ordinary", () => {
-    expectReading("thalodoxal", "value");
-    expectReading("gonogoxal", "value");
+    expectReading("thalodothal", "value");
+    expectReading("gonogothal", "value");
     expectReading("hawerol", "ordinary");
   });
 

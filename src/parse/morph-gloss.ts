@@ -205,17 +205,6 @@ const VALUE_GRAIN: Record<string, Partial<Record<Ending, string>>> = {
   u: { l: "irreversible", m: "modifiable", r: "temporary" },
 };
 
-const COMPASS_ROOTS = new Set([
-  "onoho",
-  "ohuhu",
-  "ezaza",
-  "eweze",
-  "onore",
-  "onohe",
-  "ozozu",
-  "ozohe",
-]);
-
 const GREETING_STANCE: Record<string, string> = {
   a: "presence",
   o: "ask",
@@ -319,7 +308,11 @@ export function senseLabel(
     if (word.plural) return body ? `${body}-x` : "-x";
     return body;
   }
-  const body = sensePieces(word, tables, ctx).join("-x-");
+  const hinge =
+    word.family.kind === "x" && (word.family.xFamily === "value" || word.family.xFamily === "lateral")
+      ? "-th-"
+      : "-x-";
+  const body = sensePieces(word, tables, ctx).join(hinge);
   if (word.plural) return body ? `${body}-x` : "-x";
   return body;
 }
@@ -927,8 +920,45 @@ function numericKindLabel(stem: NumberStem, pos: Pos | undefined): string {
   return numberLabel(stem, pos);
 }
 
+/** Stance `/th/` numbers (numbers.md § Number as stance): likelihood, as-if, source. */
+function stanceNumberLabel(stem: NumberStem): string | null {
+  const exp = stem.digitlessExp;
+  const groups = stem.groups;
+  if (groups.length === 0) {
+    if (!exp) {
+      if (stem.marker === "+") return "likely";
+      if (stem.marker === "-") return "unlikely";
+      if (stem.marker === "_") return "per-a-source";
+      return null;
+    }
+    if (stem.marker === "+" && exp === "e") return "certain";
+    if (stem.marker === "+" && exp === "0e") return "no-chance";
+    if (stem.marker === "+" && exp === "1e") return "gazillion-percent-sure";
+    if (stem.marker === "-" && exp === "e-") return "as-if";
+    return null;
+  }
+  const body = groups.map(formatNumberGroup).filter(Boolean).join(",");
+  if (stem.marker === "_" && !exp) return `per-source-${body}`;
+  const only = groups[0]!;
+  if (
+    stem.marker === "+" &&
+    !exp &&
+    groups.length === 1 &&
+    only.mantissa !== undefined &&
+    !only.exponentDigits &&
+    !only.percent
+  ) {
+    return `${only.mantissa}-percent-likely`;
+  }
+  return null;
+}
+
 function numberLabel(stem: NumberStem, pos: Pos | undefined): string {
   const exp = stem.digitlessExp;
+  if (pos === "th") {
+    const stance = stanceNumberLabel(stem);
+    if (stance) return stance;
+  }
   if (exp) {
     if (stem.marker === "#" && (exp === "e-" || exp === "-")) {
       return pos === "x" ? "starting-with" : "start-place";
@@ -1022,7 +1052,7 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
     return [role, ...host];
   }
 
-  if (family.xFamily === "valueAbility") {
+  if (family.xFamily === "value" || family.xFamily === "ability") {
     const hostRoot = family.leftRoots[0] ?? "host";
     const host =
       tables.hostlessAbilityRoot && hostRoot === tables.hostlessAbilityRoot
@@ -1033,7 +1063,7 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
             pos: word.pos,
           });
     // Ability / greeting bids: one hyphenated english slot (`walking-unable-temporary`,
-    // `Ululon-minutes`). Values keep a visible `-x-` hinge (`competence-x-motive`).
+    // `Ululon-minutes`). Values keep a visible `-th-` hinge (`competence-th-motive`).
     if (word.reading === "greeting") {
       const stance = GREETING_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "greeting";
       return [`${host}-${stance}`];
@@ -1058,11 +1088,7 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
     return [...host, num];
   }
 
-  if (
-    family.leftRoots.length === 1 &&
-    COMPASS_ROOTS.has(family.leftRoots[0]!) &&
-    (family.rightRoots?.length ?? 0) > 0
-  ) {
+  if (family.xFamily === "lateral") {
     const dir = rootSense(family.leftRoots[0]!, "l", tables, { named: false, pos: word.pos });
     const anchors = (family.rightRoots ?? []).map((root, i, all) =>
       rootSense(root, word.ending, tables, {
@@ -1071,7 +1097,7 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
         pos: word.pos,
       }),
     );
-    return [dir, ...anchors];
+    return [dir, anchors.join("-x-")];
   }
 
   const named = word.ending === "n";

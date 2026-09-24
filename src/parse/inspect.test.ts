@@ -120,10 +120,10 @@ describe("inspectText", () => {
   });
 
   it("Why distinguishes values from role compounds", () => {
-    const value = inspectText("thalodoxal", tables).tokens[0];
+    const value = inspectText("thalodothal", tables).tokens[0];
     assert.equal(value?.kind, "word");
     if (value?.kind !== "word") return;
-    assert.equal(value.why?.line, "values, not role");
+    assert.equal(value.why?.line, "values (need + th)");
     assert.equal(value.why?.href, "values.html");
 
     const role = inspectText("zaxozowol", tables).tokens[0];

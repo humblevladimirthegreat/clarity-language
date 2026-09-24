@@ -345,14 +345,17 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
 export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   const family = word.family;
 
-  if (family.kind === "x" && family.xFamily === "valueAbility") {
+  if (family.kind === "x" && family.xFamily === "value") {
+    return { line: "values (need + th)", href: "values.html" };
+  }
+  if (family.kind === "x" && family.xFamily === "lateral") {
+    return { line: "viewpoint lateral", href: "roles.html#viewpoint-laterals" };
+  }
+  if (family.kind === "x" && family.xFamily === "ability") {
     if (word.reading === "greeting") {
-      return { line: "greeting bid, not ability", href: "x-compounds.html#greeting-bid" };
+      return { line: "greeting bid, not ability", href: "x-compounds.html#conversation-length" };
     }
-    if (word.reading === "value") {
-      return { line: "values, not role", href: "values.html" };
-    }
-    return { line: "ability, not values", href: "ability.html#ability" };
+    return { line: "ability, not values", href: "intention.html#ability" };
   }
   if (family.kind === "x" && family.xFamily === "role") {
     return { line: "role compound", href: "roles.html#role-compounds" };

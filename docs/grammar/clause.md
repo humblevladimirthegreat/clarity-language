@@ -281,7 +281,7 @@ English often puts the adjective before the noun (*a blue dog*). Agalan can too:
 >
 > "As for Azawan, Ululon sees Azawan."
 
-**Not the same job as:** [values](values.md) **met** / **unmet** on `/ɡ/` (`gonogoxal` *my thing serves relatedness*). *As for* points at a person or thing in the clause; a value adjective on `/ɡ/` is a need toward a belonging.
+**Not the same job as:** [values](values.md) **met** / **unmet** on `/ɡ/` (`gonogothal` *my thing serves relatedness*). *As for* points at a person or thing in the clause; a value adjective on `/ɡ/` is a need toward a belonging.
 
 ### Complex chaining
 <a id="complex-chaining"></a>

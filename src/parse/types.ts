@@ -51,7 +51,7 @@ export type NumberStem = {
   digitlessExp?: string;
 };
 
-export type XFamily = "span" | "role" | "valueAbility" | "numeric" | "compound";
+export type XFamily = "span" | "role" | "value" | "lateral" | "ability" | "numeric" | "compound";
 
 export type SpanCloseFlavor = "complete" | "editorial" | "closeAll";
 
