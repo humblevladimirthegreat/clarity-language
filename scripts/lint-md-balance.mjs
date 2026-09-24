@@ -14,7 +14,7 @@
  *
  * Tertiary: markdown links whose target is under `docs/proposals/`
  * (house rule — filenames in backticks only). Dead URLs on the published
- * grammar site are VitePress `ignoreDeadLinks` during `docs:build`.
+ * grammar site are VitePress `ignoreDeadLinks` during `build`.
  *
  * Quaternary (VitePress pages only, `docs/grammar/*.md` excluding
  * `.vitepress/`): raw HTML-like `<tag>` that Vue will compile. Inline

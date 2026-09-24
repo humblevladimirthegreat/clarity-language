@@ -6,7 +6,7 @@ Do **not** keep a `coordination.md` (or any retired filename) in `docs/grammar/`
 
 ## What the build already does
 
-`npm run docs:build` runs [`scripts/publish-docs-extras.mjs`](../../scripts/publish-docs-extras.mjs) after VitePress:
+`npm run build` runs [`scripts/publish-docs-extras.mjs`](../../scripts/publish-docs-extras.mjs) after VitePress:
 
 | Artifact | Job |
 |----------|-----|
@@ -34,7 +34,7 @@ When a **public `.html` path** changes (example: `coordination.md` → `joins.md
 
 Paths are root-absolute, under `/grammar/`, with `.html` (`cleanUrls` is off). Do not map `#fragments` here — Amplify never sees hashes. Browsers keep the hash when the **path** 301s and the stub uses `location.hash`. If a **heading id** changed, the new page will load without that section; that is allowed (no silent old ids).
 
-3. Run `npm run docs:build` and confirm `dist/grammar/coordination.html` (or the new `from`) exists as a stub, and `dist/amplify-redirects.json` lists the 301 **above** the `/<*>` 404 rule.
+3. Run `npm run build` and confirm `dist/grammar/coordination.html` (or the new `from`) exists as a stub, and `dist/amplify-redirects.json` lists the 301 **above** the `/<*>` 404 rule.
 4. Amplify console → the app → **Hosting → Rewrites and redirects → Manage redirects**. Replace the editor contents with `dist/amplify-redirects.json` (or the same array from a local build). **Save**.
 5. **Remove** Amplify’s default SPA rule if it is still present: regex source targeting `/index.html` with status **200**. That rule is what turned misses into a home bounce. The catch-all in our JSON is status **404** → `/grammar/404.html`.
 

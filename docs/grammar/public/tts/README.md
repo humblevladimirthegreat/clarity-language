@@ -9,7 +9,7 @@ In-browser neural TTS for Agalan **Speak**. Agalan IPA from our G2P is mapped to
 
 ONNX Runtime Web WASM/worker files are **not** stored here — they are served from `node_modules/onnxruntime-web/dist` in dev and copied into `dist/grammar/tts/ort/` at build time (`ort-wasm-plugin.ts`).
 
-Large binaries are **not** committed. Run `npm run fetch:tts` (or `npm run dev` / `docs:build`, which fetch if missing).
+Large binaries are **not** committed. Run `npm run fetch:tts` (or `npm run dev` / `build`, which fetch if missing).
 
 TextCleaner symbol table is vendored in `src/tts/kitten-ids.ts` (Apache-2.0, from [kitten-tts-js](https://github.com/Algiras/kitten-tts-js)).
 

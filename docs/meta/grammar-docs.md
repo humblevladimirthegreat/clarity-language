@@ -374,7 +374,7 @@ Short Eng ↔ Agalan checkpoints: end of a page stage only — [translation-exer
 ### Citation in tables
 <a id="citation-in-tables"></a>
 
-Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odogo`, `uzumu`, `azawa`, `odoho`). A content-word **Agalan** cell is a spelling the learner could write **as a word**. If **Same root as** is empty, that spelling is always the [citation](../grammar/word-endings.md#citation-forms) (prefix-less root + ending): `ugumul` *climb*, not `vugumul`. The **inflected** form (role letter already on) is only for rows that also fill **Same root as**, when the English needs that letter (`vejel` *see*). **English** is the lexicon lemma for that spelling (published literal / metaphor / packed role English) — do not tag `(**-m**)` or `(**-l**)` there; the Agalan ending already carries that. **Same root as** stays the everyday **-l** citation of the picture (`urugul` *brick*; `ejel` *eye* when **Agalan** is `vejel`), not a stem, and that picture English is also the published lemma (`*correct*`, not a retired gloss). Checkpoint banks apply the same rule ([translation-exercises.md](translation-exercises.md#template)); `docs:build` checks them.
+Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odogo`, `uzumu`, `azawa`, `odoho`). A content-word **Agalan** cell is a spelling the learner could write **as a word**. If **Same root as** is empty, that spelling is always the [citation](../grammar/word-endings.md#citation-forms) (prefix-less root + ending): `ugumul` *climb*, not `vugumul`. The **inflected** form (role letter already on) is only for rows that also fill **Same root as**, when the English needs that letter (`vejel` *see*). **English** is the lexicon lemma for that spelling (published literal / metaphor / packed role English) — do not tag `(**-m**)` or `(**-l**)` there; the Agalan ending already carries that. **Same root as** stays the everyday **-l** citation of the picture (`urugul` *brick*; `ejel` *eye* when **Agalan** is `vejel`), not a stem, and that picture English is also the published lemma (`*correct*`, not a retired gloss). Checkpoint banks apply the same rule ([translation-exercises.md](translation-exercises.md#template)); `build` checks them.
 
 | Publish | Example |
 |---------|---------|
@@ -456,12 +456,12 @@ Before shipping **Intermediate** or **Advanced**, check [later-stage shape](#lat
 ## Markdown hygiene
 <a id="markdown-hygiene"></a>
 
-After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run docs:build`**. It checks emphasis balance, slash-joined emphasis, Vue-illegal `<tag>` on grammar pages (write loan fences as `<code>d&lt;kimchi&gt;</code>` — inline backticks and `<code v-pre>` with a real `<` still fail Vue’s HTML parse), that Agalan words in `docs/grammar/` parse and use lexicon roots, Vue a11y on site components, and published VitePress URLs. Prefer spaces in slash-joined emphasis (`*a* / *b*`) over `*a*/*b*`. In bold headings or bullets, put forms in backticks only (`**Ranked (`e` / `ae`)**`), not nested bold inside bold.
+After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run build`**. It checks emphasis balance, slash-joined emphasis, Vue-illegal `<tag>` on grammar pages (write loan fences as `<code>d&lt;kimchi&gt;</code>` — inline backticks and `<code v-pre>` with a real `<` still fail Vue’s HTML parse), that Agalan words in `docs/grammar/` parse and use lexicon roots, Vue a11y on site components, and published VitePress URLs. Prefer spaces in slash-joined emphasis (`*a* / *b*`) over `*a*/*b*`. In bold headings or bullets, put forms in backticks only (`**Ranked (`e` / `ae`)**`), not nested bold inside bold.
 
 ### HTML comments
 <a id="html-comments"></a>
 
-VitePress does not render HTML comments. Use them for **editor-only** notes that must sit next to the grammar text — typically **why this spot is an exception** to a rule on this page (house cast, omit-`jal`, Compare-with quota, and so on). The learner never sees them; `docs:build` markdown checks and `retie-docs` skip comment bodies.
+VitePress does not render HTML comments. Use them for **editor-only** notes that must sit next to the grammar text — typically **why this spot is an exception** to a rule on this page (house cast, omit-`jal`, Compare-with quota, and so on). The learner never sees them; `build` markdown checks and `retie-docs` skip comment bodies.
 
 ```markdown
 <!-- Exception to house-cast: this block teaches speaker/listener specials, so `zugobon` is the point. -->

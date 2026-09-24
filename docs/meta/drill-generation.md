@@ -104,7 +104,7 @@ Both directions. Spoilers = Agalan or **loose** free English plus a visible morp
 
 ### 6. Self-check, then lint
 
-Run the [review checklist](#review) on your own spoilers. Then `npm run docs:build` **only when this invocation is a parent editor finishing a batch** — file-scoped rewrite agents **do not** run the build. If it fails, fix it in the same file (usually slash-joined emphasis: write `*a* / *b*`, not `*a*/*b*`).
+Run the [review checklist](#review) on your own spoilers. Then `npm run build` **only when this invocation is a parent editor finishing a batch** — file-scoped rewrite agents **do not** run the build. If it fails, fix it in the same file (usually slash-joined emphasis: write `*a* / *b*`, not `*a*/*b*`).
 
 Reply with: which checkpoints you added or skipped, and any item you dropped because a form was not in recycle.
 
