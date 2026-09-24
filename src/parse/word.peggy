@@ -718,7 +718,7 @@ AngleAnaphor
 // ── Lexical primitives ──────────────────────────────────────────────────────
 
 Pos
-  = [zdbvgwhxj] { return text(); }
+  = ("th" / [zdbvgwhxj]) { return text(); }
 
 Ending
   = "rl" / "rm" / "rn" / [lmnr] { return text(); }

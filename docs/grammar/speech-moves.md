@@ -154,7 +154,7 @@ The act word is **`j` + vowel + ending**. The vowel sets the act (**a** statemen
 >
 > "For what it's worth, Azawan walks."
 
-**Compare with:** [MAY](knowing.md#may) (`hodohom`) marks the scene as *could be*. **`jam`** is still a statement; you put it forward without insisting the other person take it up.
+**Compare with:** [MAY](knowing.md#may) (`thodohom`) marks the scene as *could be*. **`jam`** is still a statement; you put it forward without insisting the other person take it up.
 
 | Agalan | Use | Cue |
 |--------|-----|-----|

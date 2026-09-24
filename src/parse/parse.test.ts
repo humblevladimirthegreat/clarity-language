@@ -158,8 +158,8 @@ describe("parse — joins.md", () => {
 });
 
 describe("parse — stand-in dependents", () => {
-  it("parses hurugum barl dependent", () => {
-    const result = parseText("zazawan guzumum hurugum barl zululon vawalal.");
+  it("parses thurugum barl dependent", () => {
+    const result = parseText("zazawan guzumum thurugum barl zululon vawalal.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
     assert.equal(clause.dependent!.orodo.raw, "barl");
@@ -278,7 +278,7 @@ describe("parse — illegal fences", () => {
 
 describe("parse — as-of poles", () => {
   it("parses hosted ledger plus date /b/", () => {
-    const result = parseText("zululon honenom helerem b_#22,7 vebarum.");
+    const result = parseText("zululon thonenom helerem b_#22,7 vebarum.");
     const h = result.utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "helerem");
     assert.ok(h && h.kind === "h");
     assert.equal(h.unit.word.overlay?.gloss, "as-of.ledger");
@@ -332,7 +332,7 @@ describe("parse — as-of poles", () => {
   });
 
   it("parses bookmark as-of plus barl dependent", () => {
-    const result = parseText("zadorol gologem honenom helezom hobomam barl zululon vebarum.");
+    const result = parseText("zadorol gologem thonenom thelezom hobomam barl zululon vebarum.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
     const h = clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "hobomam");
@@ -341,7 +341,7 @@ describe("parse — as-of poles", () => {
   });
 
   it("parses channel plus residue plus as-of", () => {
-    const result = parseText("zululon huvuvum honenom helerem b_#22,7 vebarum.");
+    const result = parseText("zululon thuvuvum thonenom helerem b_#22,7 vebarum.");
     const hs = result.utterances[0]!.bodies[0]!.clause.units.filter((u) => u.kind === "h");
     assert.equal(hs.length, 3);
   });
@@ -354,14 +354,14 @@ describe("parse — as-of poles", () => {
   });
 
   it("parses event-noun /b/ on as-of", () => {
-    const result = parseText("zonenol honenom helerem bebarum.");
+    const result = parseText("zonenol thonenom helerem bebarum.");
     const h = result.utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "helerem");
     assert.ok(h && h.kind === "h");
     assert.equal(h.unit.bound?.raw, "bebarum");
   });
 
   it("parses extra-noun resume in as-of /b/", () => {
-    const result = parseText("zululon vawalal ol b_#22,7. xululon honenom helerem b=_ vebarum.");
+    const result = parseText("zululon vawalal ol b_#22,7. xululon thonenom helerem b=_ vebarum.");
     const second = result.utterances[0]!.bodies[1]!.clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "helerem");
     assert.ok(second && second.kind === "h");
     assert.equal(second.unit.bound?.raw, "b=_");

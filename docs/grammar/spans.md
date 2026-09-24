@@ -107,22 +107,22 @@ When a published Agalan root already matches, write the ordinary word (`dagadal`
 
 Outside a clause, a foreign name or word is a prefix-less fence with the same marks: [citation forms](word-endings.md#citation-forms) (<code>@&lt;Sam&gt;</code>). A span in a sentence still takes a role letter, because it fills a sentence slot (<code>z@&lt;Sam&gt;</code>).
 
-### Asides (`h(…)`)
+### Asides (`th(…)`)
 <a id="asides"></a>
 
-An **aside** is a parenthetical comment. Package it as an **adverb**: write **`h(`** … **`)`**. Round parentheses mark the side comment. The fence may sit anywhere an adverb may sit.
+An **aside** is a parenthetical comment. Package it as a [stance](clause.md#stance-th) word: write **`th(`** … **`)`**. Round parentheses mark the side comment. The fence may sit anywhere a stance word may sit.
 
 The interior is ordinary Agalan: a fragment, or a clause body that keeps the **same speech act** as the outer sentence (the same statement, question, or command).
 
-> `zazawan vawalal h(huzumum).`
+> `zazawan vawalal th(huzumum).`
 >
-> z-Azawan | v-walk | h-happy
+> z-Azawan | v-walk | th-happy
 >
 > "Azawan walks (happily)."
 
-> `zazawan vawalal h(zululon velebel).`
+> `zazawan vawalal th(zululon velebel).`
 >
-> z-Azawan | v-walk | h- | z-Ululon | v-sleep
+> z-Azawan | v-walk | th- | z-Ululon | v-sleep
 >
 > "Azawan walks (Ululon sleeps)."
 
@@ -148,7 +148,7 @@ The letter on the open is the role of the **entire span** in the outer sentence.
 | `/d/` | object | *said / wrote / saw “…”* (`d[azawan]`, `d[=]`, <code>d&lt;kimchi&gt;</code>) | **d** ≈ done to |
 | `/z/` | subject | the word or phrase **is** the subject (`z{odogo}`) | **z** ≈ star (who it is about) |
 | `/v/` | verb | echo the act as wording (`v[vozodol]`) | **v** as in English *verb* |
-| `/h/` | adverb | asides (`h(…)`) | **h** starts *how* / *when* / *where* |
+| `/th/` | stance | asides (`th(…)`) | **th** ≈ *think* (your side comment) |
 
 If the interior is Agalan words, those inner words still start with **their** role letters.
 
@@ -221,9 +221,9 @@ z-Uhubun | d-Uzugon | v-sing
 **6.** *Azawan tells (happily).*
 
 ::: details Show answer
-`zazawan vezehel h(huzumum).`
+`zazawan vezehel th(huzumum).`
 
-z-Azawan | v-tell | h-happy
+z-Azawan | v-tell | th-happy
 :::
 
 **7.** *Don’t say “stop,” Ululon.*
@@ -297,11 +297,11 @@ z-uzugo | g-small
 *Sam*
 :::
 
-**7.** `zululon vezehel h(zazawan vuzunul).`
+**7.** `zululon vezehel th(zazawan vuzunul).`
 
 ::: details Show answer
 
-z-Ululon | v-tell | h- | z-Azawan | v-sing
+z-Ululon | v-tell | th- | z-Azawan | v-sing
 
 *Ululon tells (Azawan sings).*
 :::
@@ -330,7 +330,7 @@ z-mention | zululon | vezehel | g-small
 ### Spoken word shape
 <a id="shape"></a>
 
-Beginner writing already packages a quote, mention, aside, or blob in brackets. Speech still has to say which slot the chunk fills, what kind of span it is, how far the open runs, and how faithful the wording is. The open is one word: role letter, then TYPE vowel, then mid-word **`x`**, then EDGE vowel, then the ending. That word stands where writing had `d[` or `h(`; a multi-token open still needs a close word later.
+Beginner writing already packages a quote, mention, aside, or blob in brackets. Speech still has to say which slot the chunk fills, what kind of span it is, how far the open runs, and how faithful the wording is. The open is one word: role letter, then TYPE vowel, then mid-word **`x`**, then EDGE vowel, then the ending. That word stands where writing had `d[` or `th(`; a multi-token open still needs a close word later.
 
 > `zazawan daxol azawan vezehel.`
 >
@@ -361,7 +361,7 @@ Beginner already used square, round, curly, and angle brackets for cite, aside, 
 | Agalan | Use | English | Cue |
 |--------|------|---------|-----|
 | **a** | **cite** (`[` … `]`); clausal interiors: outer speaker does **not** assert | quoted wording | **a** ≈ add (hold cited words) |
-| **e** | **aside** (`h(` … `)`); `/h/` digression; outer speaker **does** assert; interior may be a fragment or a same-speech-act clause body | parenthetical | **e** ≈ order (a side instruction) |
+| **e** | **aside** (`th(` … `)`); `/th/` digression; outer speaker **does** assert; interior may be a fragment or a same-speech-act clause body | parenthetical | **e** ≈ order (a side instruction) |
 | **o** | **mention** (`{` … `}`); with **`@`** / **-n**, the **name** | the word or phrase; proper = the name-string | **o** ≈ one (one word or phrase as the object) |
 | **u** | **opaque** (`<` … `>`); interior is not native Agalan | foreign / code | **u** ≈ undo (not native Agalan) |
 
@@ -399,11 +399,11 @@ Beginner already used a bare open, **`~`**, **`@`**, and **`[=]`**. Speech puts 
 | **-l** | **exact** — verbatim / precise surface | bare open (no `@` / `~`) | **-l** stand behind the wording |
 | **-m** | **paraphrase** — gist / non-verbatim rendering | **`~`** after the role letter (`d~[…]`) | **-m** leaves the hold open |
 | **-n** | **proper** — cite: the **work**; mention: the **name** | **`@`** after the role letter (`d@[…]`, `d@{…}`) | **-n** titles the chunk; interior words keep their own endings |
-| **-r** | **resume** — the **most recent span of this TYPE**; PoS = role **now** | `d[=]`, `h(=)`, `z{=}`, … | **-r** points back |
+| **-r** | **resume** — the **most recent span of this TYPE**; PoS = role **now** | `d[=]`, `th(=)`, `z{=}`, … | **-r** points back |
 
 Hedged proper (`@~`) is written **`d@[…]`** only (spoken as the **proper** open with uncertain tone). **`@`** / **`~`** do not combine with resume **-r**.
 
-**-r** resumes a prior span ([pronouns.md](pronouns.md)). `daxur` is *that (cite)* as object, matching the most recent **cite** (TYPE **a**). `hexur` / `h(=)` is *that (aside)*. The resume’s role letter need not match the earlier open’s (`zaxur` = that cite as subject). No interior; no close (EDGE **`u`**).
+**-r** resumes a prior span ([pronouns.md](pronouns.md)). `daxur` is *that (cite)* as object, matching the most recent **cite** (TYPE **a**). `thexur` / `th(=)` is *that (aside)*. The resume’s role letter need not match the earlier open’s (`zaxur` = that cite as subject). No interior; no close (EDGE **`u`**).
 
 ### Writing ↔ speech map
 
@@ -415,9 +415,9 @@ Beginner brackets map to these spoken opens and closes.
 | `d~[…]` | `daxam` … `xuxul` | paraphrased multi-token cite |
 | `d@[…]` | `daxan` … `xuxul` | proper multi-token cite; also spelling of hedged proper |
 | `d{…}` / `d~{…}` / `d@{…}` | `doxal` / `doxam` / `doxan` … `xuxul` | mention |
-| `h(…)` / `h~(…)` / `h@(…)` | `hexal` / `hexam` / `hexan` … `xuxul` | aside (open PoS is `/h/`) |
-| `h(huzumum)` | `hexol huzumum` | atomic aside |
-| `h(=)` | `hexur` | aside resume |
+| `th(…)` / `th~(…)` / `th@(…)` | `thexal` / `thexam` / `thexan` … `xuxul` | aside (open PoS is `/th/`) |
+| `th(huzumum)` | `thexol huzumum` | atomic aside |
+| `th(=)` | `thexur` | aside resume |
 | `d<…>` / `d~<…>` / `d@<…>` | `duxal` / `duxam` / `duxan` … `xuxul` | opaque |
 | `d[azawan]` | `daxol azawan` | atomic (EDGE **o**) |
 | `d@[uzugon ululon]` | `daxan uzugon ululon xuxul` | proper multi-token cite (the work) |
@@ -432,9 +432,9 @@ The close does not repeat PoS, TYPE, EDGE, or open fidelity. Explicit close for 
 
 When one packaged chunk sits inside another (a quote that contains a parenthetical, or a cite wrapping a mention), each typed fence nests. A multi-token open starts a layer; **`xuxul`** closes the innermost layer. Atomic opens and resumes do not start a new layer. **`@`** / **`~`** apply only to the immediately following open.
 
-> `zazawan d[ h(huzumum) azawan ] vezehel.`
+> `zazawan d[ th(huzumum) azawan ] vezehel.`
 >
-> z-Azawan | d-cite | h-aside | h-happy | Azawan | v-tell
+> z-Azawan | d-cite | th-aside | th-happy | Azawan | v-tell
 >
 > "Azawan said “Azawan” (happily)." (hello)
 
@@ -451,25 +451,25 @@ Sometimes *possibility* or a join should apply only to a multi-word chunk, not t
 >
 > "Azawan saw, as a possibility, the red dog." (*possibility* targets that chunk).
 
-**Compare with:** quoting, asides, mentions, and opaque blobs use typed [span fences](#writing) (`d[…]`, `h(…)`). Islands only group so a binder inside can target that chunk.
+**Compare with:** quoting, asides, mentions, and opaque blobs use typed [span fences](#writing) (`d[…]`, `th(…)`). Islands only group so a binder inside can target that chunk.
 
 - No role letter on the edges.
 - **One island per clause.** Islands do not nest.
 - Empty `^^` has no reading.
-- **Binder required:** at least one scope-taking `/h/` and/or a [join](joins.md#scope-islands-join) particle **inside**.
+- **Binder required:** at least one scope-taking `/h/` or `/th/` and/or a [join](joins.md#scope-islands-join) particle **inside**.
 - Prefer spaces inside: `^ huzurem zodogol garedel ^`.
 
 | Binder | Use inside the island |
 |--------|------------------------|
-| Scope-taking **`/h/`** | frames that **chunk** (prefer first in the island) |
+| Scope-taking **`/h/`** or **`/th/`** | frames that **chunk** (prefer first in the island) |
 | Prefixed **join** | joins **only** matching-role material **inside** — [scope islands](joins.md#scope-islands-join) |
 
 `/h/` and a join may share one island (`^ huzurem zazawan zululon zam ^`).
 
 | Placement | Reading |
 |-----------|---------|
-| `/h/` **inside** | frames that chunk |
-| `/h/` **outside** | ordinary floating adverb: frames the verb / clause |
+| `/h/` or `/th/` **inside** | frames that chunk |
+| `/h/` or `/th/` **outside** | ordinary floating word: frames the verb / clause |
 | Join **inside** | joins only interior conjuncts |
 | Join **outside** with island nearby | ordinary lookback (edges do not filter an outside join) |
 
@@ -554,9 +554,9 @@ z-Ululon | d-opaque-x-atomic | FBI | v-see
 **6.** *Azawan said “Azawan” (happily).* (cite nesting an aside)
 
 ::: details Show answer
-`zazawan d[ h(huzumum) azawan ] vezehel.`
+`zazawan d[ th(huzumum) azawan ] vezehel.`
 
-z-Azawan | d-cite | h-aside | h-happy | Azawan | v-tell
+z-Azawan | d-cite | th-aside | th-happy | Azawan | v-tell
 :::
 
 **7.** *Azawan saw, as a possibility, the lie.* (*possibility* targets that chunk)
@@ -620,11 +620,11 @@ z-Uhubun | d-cite-x-atomic | Ujudun | v-tell
 *Uhubun said “Ujudu.”*
 :::
 
-**5.** `zazawan vezehel hexol huzumum.`
+**5.** `zazawan vezehel thexol huzumum.`
 
 ::: details Show answer
 
-z-Azawan | v-tell | h-aside-x-atomic | h-happy
+z-Azawan | v-tell | th-aside-x-atomic | h-happy
 
 *Azawan tells (happily).*
 :::
@@ -710,11 +710,11 @@ The rest of the spoken open map (PoS shown as `…`; EDGE **a** unless noted).
 | TYPE | exact multi **-l** | paraphrase **-m** | proper **-n** | resume **-r** (EDGE **u**) |
 |------|--------------------|-------------------|---------------|------------------------------|
 | cite **a** | `…axal` | `…axam` | `…axan` | `…axur` |
-| aside **e** | `hexal` | `hexam` | `hexan` | `hexur` |
+| aside **e** | `thexal` | `thexam` | `thexan` | `thexur` |
 | mention **o** | `…oxal` | `…oxam` | `…oxan` | `…oxur` |
 | opaque **u** | `…uxal` | `…uxam` | `…uxan` | `…uxur` |
 
-Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); aside atomic **`hexol`**. Clause-scoped (EDGE **e**): `…axel` / `…axem` / `…axen`. Empty exact (EDGE **u**): `…axul` / `hexul` / `…oxul` / `…uxul`. Aside **opens** use `/h/`; resume may recast the aside into another slot (`dexur`).
+Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); aside atomic **`thexol`**. Clause-scoped (EDGE **e**): `…axel` / `…axem` / `…axen`. Empty exact (EDGE **u**): `…axul` / `thexul` / `…oxul` / `…uxul`. Aside **opens** use `/h/`; resume may recast the aside into another slot (`dexur`).
 
 | Form | Use |
 |------|-----|
@@ -792,9 +792,9 @@ z-Ululon | d-cite-x-multi | flaw | x-span-close-editorial | v-tell
 **3.** *Azawan said “bug” (happily), then close every open span at once.*
 
 ::: details Show answer
-`zazawan daxal hexol huzumum abugum xuxum vezehel.`
+`zazawan daxal thexol huzumum abugum xuxum vezehel.`
 
-z-Azawan | d-cite-x-multi | h-aside-x-atomic | h-happy | flaw | x-span-close-all | v-tell
+z-Azawan | d-cite-x-multi | th-aside-x-atomic | h-happy | flaw | x-span-close-all | v-tell
 :::
 
 **4.** *Azawan said “write ]”.*

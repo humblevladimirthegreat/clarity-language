@@ -1859,6 +1859,31 @@ function parseCsvLine(line) {
 var CLARITY_VOWELS = ["a", "e", "o", "u"];
 var VOWEL_SET = new Set(CLARITY_VOWELS);
 
+// src/parse/hook-compounds.ts
+var EXTRA_NOUN_HOOKS = [
+  "aol",
+  "aom",
+  "ael",
+  "aem",
+  "oel",
+  "oem",
+  "ual",
+  "uam",
+  "uol",
+  "uom",
+  "uel",
+  "uem",
+  "al",
+  "am",
+  "ol",
+  "om",
+  "el",
+  "em",
+  "ul",
+  "um"
+];
+var HOOK_SET = new Set(EXTRA_NOUN_HOOKS);
+
 // src/lexicon-compounds.ts
 var COMPOUND_HEADERS = [
   "emoji",
@@ -1888,10 +1913,10 @@ function parseCompoundCsv(text) {
 }
 
 // src/lexicon-search.ts
-var ROLE_LETTERS = ["z", "d", "b", "v", "g", "w", "h", "j", "x"];
+var ROLE_LETTERS = ["z", "d", "b", "v", "g", "w", "h", "th", "j", "x"];
 var ROLE_LETTER_SET = new Set(ROLE_LETTERS);
 var POS_ENGLISH_LEMMA_RE = /^[a-z]+(?:-[a-z]+)*$/;
-var POS_ENGLISH_PIECE_RE = /^(m\.)?([zdbvgwhjx]):([a-z]+(?:-[a-z]+)*)$/;
+var POS_ENGLISH_PIECE_RE = /^(m\.)?(th|[zdbvgwhjx]):([a-z]+(?:-[a-z]+)*)$/;
 var OVERLAY_KINDS = [
   "need",
   "ability",
@@ -1941,7 +1966,7 @@ var OVERLAY_HEADERS = [
   "definition",
   "mnemonic"
 ];
-var POS_PREFIXES = /* @__PURE__ */ new Set(["z", "d", "b", "g", "v", "w", "h", "j", "x"]);
+var POS_PREFIXES = /* @__PURE__ */ new Set(["z", "d", "b", "g", "v", "w", "h", "th", "j", "x"]);
 var SEARCH_FIELDS = [
   "concrete",
   "concreteTokens",
@@ -2244,8 +2269,8 @@ function senseFormEnding(senseForm) {
 function splitPosPrefixedQuery(query) {
   const q = query.trim().toLowerCase();
   if (q.length < 2) return { pos: null, stem: q };
-  const pos = q[0];
-  const stem = q.slice(1);
+  const pos = q.startsWith("th") ? "th" : q[0];
+  const stem = q.slice(pos.length);
   if (POS_PREFIXES.has(pos) && /^[aeiou].*[lmnr]$/.test(stem)) {
     return { pos, stem };
   }

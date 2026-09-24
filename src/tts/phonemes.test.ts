@@ -33,6 +33,14 @@ describe("normalizeIpaForKitten", () => {
   });
 });
 
+describe("th stance letter", () => {
+  it("reads th as one letter /ð/", () => {
+    assert.ok(isNativeSurface("thodohom"));
+    assert.equal(toPhonemeWord("thodohom").ipa, "ðo.do.ɦom");
+    assert.ok(!isNativeSurface("todohom"));
+  });
+});
+
 describe("ipaToKittenIds", () => {
   it("wraps with start pad, end marker, and end pad", () => {
     const ids = ipaToKittenIds("zɑzɑwɑn");

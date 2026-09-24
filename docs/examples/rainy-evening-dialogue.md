@@ -64,49 +64,49 @@ strict: *But I (C) choose coffee.*
 
 loose: *But I'm going with coffee.*
 
-**A:** `xezebal zubur huvuvum zanunul.`
+**A:** `xezebal zubur thuvuvum zanunul.`
 
-gloss: `x-however` · `z-←Ubunexunowen` · `h-WITNESSED` · `z-rain`
+gloss: `x-however` · `z-←Ubunexunowen` · `th-WITNESSED` · `z-rain`
 
 strict: *However — that one (B), per memory — it rains.*
 
 loose: *Still — it's raining, as I remember.*
 
-**B:** `jael xezazal zahan hemabam vawalal vul.`
+**B:** `jael xezazal zahan themabam vawalal vul.`
 
-gloss: `j-yes` · `x-therefore` · `z-interlocutors` · `h-plan` · `v-walk` · `v-not`
+gloss: `j-yes` · `x-therefore` · `z-interlocutors` · `th-plan` · `v-walk` · `v-not`
 
 strict: *Yes — therefore we (A and B and C as interlocutors) plan not to walk.*
 
 loose: *Yes — so we're planning not to walk.*
 
-**C:** `jom hodohom zar vawalal.`
+**C:** `jom thodohom zar vawalal.`
 
-gloss: `j-question` · `h-MAY` · `z-who` · `v-walk`
+gloss: `j-question` · `th-MAY` · `z-who` · `v-walk`
 
 strict: *I wonder — who walks?*
 
 loose: *I wonder — who walks?*
 
-**A:** `juel zuzur vawalaxel holozoxom.`
+**A:** `juel zuzur vawalaxel tholozoxom.`
 
-gloss: `j-no` · `z-←Uzuzuxogoven` · `v-walk-unable-temporary` · `h-competence-motive-internal`
+gloss: `j-no` · `z-←Uzuzuxogoven` · `v-walk-unable-temporary` · `th-competence-motive-internal`
 
 strict: *No — I (A) can't walk right now — for competence (motive, soft standing).*
 
 loose: *No — I can't walk right now.*
 
-**B:** `el zuzur hegeraxel vawalal.`
+**B:** `el zuzur thegeraxel vawalal.`
 
-gloss: `in-other-words` · `z-←Uzuzuxogoven` · `h-ABIL-unable-temporary` · `v-walk`
+gloss: `in-other-words` · `z-←Uzuzuxogoven` · `th-ABIL-unable-temporary` · `v-walk`
 
 strict: *In other words, that one (A) lacks the capacity to walk.*
 
 loose: *In other words, they can't manage walking.*
 
-**C:** `x#e- zuzebum g#1. zahan haweroxur.`
+**C:** `x#e- zuzebum g#1. zahan thaweroxur.`
 
-gloss: `x-starting-with` · `z-problem` · `g-first` · `z-interlocutors` · `h-pleasure-x-unmet`
+gloss: `x-starting-with` · `z-problem` · `g-first` · `z-interlocutors` · `th-pleasure-x-unmet`
 
 strict: *Starting with: problem #1. We (interlocutors) — pleasure unmet (temporary).*
 
@@ -120,9 +120,9 @@ strict: *Point 2: solution #2. Please, you (B), cook bread and tea.*
 
 loose: *Second — a solution: please cook some bread and tea.*
 
-**B:** `jaol hemabam xan zubur dabogo von.`
+**B:** `jaol themabam xan zubur dabogo von.`
 
-gloss: `j-uptake` · `h-plan` · `x-and-then` · `z-←Ubunexunowen` · `d-book` · `v-choose`
+gloss: `j-uptake` · `th-plan` · `x-and-then` · `z-←Ubunexunowen` · `d-book` · `v-choose`
 
 strict: *Sure — (I) plan (to), and then I (B) choose a book.*
 
@@ -136,9 +136,9 @@ strict: *When?*
 
 loose: *When?*
 
-**A:** `hunugul. hexal zudum xuxul.`
+**A:** `hunugul. thexal zudum xuxul.`
 
-gloss: `h-night` · `h-aside-x-multi` · `z-burnout` · `x-span-close`
+gloss: `h-night` · `th-aside-x-multi` · `z-burnout` · `x-span-close`
 
 strict: *At night. (aside: burnout.)*
 
@@ -176,9 +176,9 @@ strict: *Soft yes — I (C) am a cook (soft assert).*
 
 loose: *Yeah… I'd say I'm a cook.*
 
-**B:** `heraram zenenun dohohum varuval.`
+**B:** `theraram zenenun dohohum varuval.`
 
-gloss: `h-TOLD` · `z-someone` · `d-home` · `v-arrival`
+gloss: `th-TOLD` · `z-someone` · `d-home` · `v-arrival`
 
 strict: *Hearsay: someone arrived home.*
 
@@ -224,33 +224,33 @@ strict: *(You A and you C,) choose play!*
 
 loose: *You two — pick something playful!*
 
-**C:** `jum vawalal holozoxem.`
+**C:** `jum vawalal tholozoxem.`
 
-gloss: `j-prohibition` · `v-walk` · `h-competence-ought-offered`
+gloss: `j-prohibition` · `v-walk` · `th-competence-ought-offered`
 
 strict: *Please don't walk — you ought to protect competence (offered).*
 
 loose: *Please don’t walk — stay able (offered).*
 
-**A:** `jem zuzur zubur zamar zal dohohum vadanal hadorom barl zanunul.`
+**A:** `jem zuzur zubur zamar zal dohohum vadanal thadorom barl zanunul.`
 
-gloss: `j-request` · `z-←Uzuzuxogoven` · `z-←Ubunexunowen` · `z-←Amadexonogon` · `z-and` · `d-home` · `v-standing` · `h-if` · `b-that-clause` · `z-rain`
+gloss: `j-request` · `z-←Uzuzuxogoven` · `z-←Ubunexunowen` · `z-←Amadexonogon` · `z-and` · `d-home` · `v-standing` · `th-if` · `b-that-clause` · `z-rain`
 
 strict: *Please, let’s (A and B and C) stay standing at home if it rains.*
 
 loose: *Please, let's stay home if it rains.*
 
-**B:** `x#e zolalal g#3. zuzur zubur zamar zal haweroxal hejelom habobom.`
+**B:** `x#e zolalal g#3. zuzur zubur zamar zal thaweroxal thejelom thabobom.`
 
-gloss: `x-finally` · `z-goal` · `g-third` · `z-←Uzuzuxogoven` · `z-←Ubunexunowen` · `z-←Amadexonogon` · `z-and` · `h-pleasure-x-met` · `h-flow` · `h-INTERNAL`
+gloss: `x-finally` · `z-goal` · `g-third` · `z-←Uzuzuxogoven` · `z-←Ubunexunowen` · `z-←Amadexonogon` · `z-and` · `th-pleasure-x-met` · `h-flow` · `th-INTERNAL`
 
 strict: *Finally: goal #3. We (A and B and C) — pleasure met, medium activation, internal locus.*
 
 loose: *Finally, a third goal: we're actually enjoying this.*
 
-**C:** `hugudol hanunul zenenun vawalal zul.`
+**C:** `thugudol hanunul zenenun vawalal zul.`
 
-gloss: `h-COMMON` · `h-rain` · `z-someone` · `v-walk` · `z-not`
+gloss: `th-COMMON` · `h-rain` · `z-someone` · `v-walk` · `z-not`
 
 strict: *Usually, when it rains, a person does not walk.*
 

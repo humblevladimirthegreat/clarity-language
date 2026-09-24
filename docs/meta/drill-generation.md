@@ -221,7 +221,7 @@ Default people: [house cast](grammar-docs.md#house-cast) — `zazawan` / `zululo
 
 **This table is for worked examples** on grammar pages (and for morph leak checks when a teach line uses these stems). **Checkpoints do not default to it.** Checkpoint content comes from the [setting](translation-exercises.md#checkpoint-setting) plus house names.
 
-Tokens here are **stems for matching** (path allowlist / leak checks). Learner **Roots used here** cells on a checkpoint use [citations or the inflected form the row teaches](grammar-docs.md#citation-in-tables). Do not copy `(**-m**)` from this **Sense** column into learner **English**. Checkpoint **English** is the uninflected published lemma for that cell (literal, metaphor, or packed role English); inflected drill prompts (*running*) are fine. When English is not the citation kind, the Agalan cell is the in-clause word: *see* → `vejel` / `` `ejel` *eye* ``; *sit* → `vajul` / `` `ajul` *chair* ``; *tell* → `vezehel` / `` `ezehel` *speech* ``; *therefore* → `xezazal` / `` `ezazal` *east* ``; *however* → `xezebal`; *although* → `hezebam` (NP *despite* is the same `/h/` word + `/b/` noun); *so-that* → `holalam` (NP intended *for* is the same `/h/` word + `/b/` noun); *meanwhile* → `xanelol`; *haste* → `hadazam` / `` `adazal` *dash* ``; *quietude* → `howom`; *volume* → `wegelom`; *topic* → `hozal`. *because* / *inside* already list the `/h/` word (`hurugum`, `hogorem`). Do not inflect a row whose English is still the citation kind (`*dog*` stays `odogol`; *next clause* stays `adorol`).
+Tokens here are **stems for matching** (path allowlist / leak checks). Learner **Roots used here** cells on a checkpoint use [citations or the inflected form the row teaches](grammar-docs.md#citation-in-tables). Do not copy `(**-m**)` from this **Sense** column into learner **English**. Checkpoint **English** is the uninflected published lemma for that cell (literal, metaphor, or packed role English); inflected drill prompts (*running*) are fine. When English is not the citation kind, the Agalan cell is the in-clause word: *see* → `vejel` / `` `ejel` *eye* ``; *sit* → `vajul` / `` `ajul` *chair* ``; *tell* → `vezehel` / `` `ezehel` *speech* ``; *therefore* → `xezazal` / `` `ezazal` *east* ``; *however* → `xezebal`; *although* → `hezebam` (NP *despite* is the same `/h/` word + `/b/` noun); *so-that* → `holalam` (NP intended *for* is the same `/h/` word + `/b/` noun); *meanwhile* → `xanelol`; *haste* → `hadazam` / `` `adazal` *dash* ``; *quietude* → `howom`; *volume* → `wegelom`; *topic* → `hozal`. *because* / *inside* already list the `/h/` word (`thurugum`, `hogorem`). Do not inflect a row whose English is still the citation kind (`*dog*` stays `odogol`; *next clause* stays `adorol`).
 
 | Root | Sense in examples |
 |------|-------------------|
@@ -245,8 +245,8 @@ Tokens here are **stems for matching** (path allowlist / leak checks). Learner *
 | `aju` | *sit* (`vajul`; citation *chair*) |
 | `adaza` | *haste* (`hadazam`; citation *dash*) |
 | `darl` | *that-clause* |
-| `urugu` | *because* (**-m** on `/h/` `/ɡ/`) |
-| `ebero` | *only if* (**-m** on `/h/` `/ɡ/`) |
+| `urugu` | *because* (**-m** on `/th/` `/ɡ/`) |
+| `ebero` | *only if* (**-m** on `/th/` `/ɡ/`) |
 
 A teach line may add roots that already appear in that stage’s worked examples (e.g. `abele` *apple*, `adeda` *tea*, `ogove` *coffee`, `omonu` *challenging*, `onunu` **SAME**). Checkpoint tables list **setting** roots instead, even when a teach line used *walk*.
 
@@ -268,7 +268,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 4 | `word-endings.md` | **exists** | Choose **-l** vs **-m** vs **-n** on a **citation** (prefix-less); named person vs kind vs metaphor; **greeting** named citation with period (`azawan.`) | No sentences with role letters. No **-r**. Pointers to **-x** / **`gl-`**: do **not** make those the item. No vocative `/j/` |
 | 5 | `clause.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; hosted `/ɡ|h/`+`/b/` (*like*); unhosted `/b/` recipient/addressee; house names; **-l** / **-m** / **-n** as used in examples | Do not use **`gl-`**, **`darl`**, `/x/`, nested **`barl`**, letter **-r** mechanism, **-x**, joins. Greeting citations are word-endings. No conversation-length **`x`** vowel |
 | 6 | `speech-moves.md` | **exists** | Turn start; call a person; conventional interjection; statement / question / command / prohibition; omit recoverable **`jal`** | Recycle clause bodies and house names; no hooks, polar stance, soft forms, or numbers |
-| 7 | `dependents.md` | **exists** | Two-sentence *who / that / which*; **`darl` last**; adverbial subordinators (`hurugum` / `hadorom` / `hezazem` / `hezebam` / `hegemum` / `hudumem` / `hababam` / `helabam` / `holalam` **`barl`**; *despite* = **`hezebam`** + `/b/` noun); `/x/` continue vs `/j/` turn; `/x/` linker may start the next written sentence after `.` | Do not use nested **`barl`**, letter **-r** mechanism. Recycle speech-moves **`jol`/`jel`/`jul`** |
+| 7 | `dependents.md` | **exists** | Two-sentence *who / that / which*; **`darl` last**; adverbial subordinators (`thurugum` / `thadorom` / `thezazem` / `hezebam` / `hegemum` / `hudumem` / `hababam` / `helabam` / `holalam` **`barl`**; *despite* = **`hezebam`** + `/b/` noun); `/x/` continue vs `/j/` turn; `/x/` linker may start the next written sentence after `.` | Do not use nested **`barl`**, letter **-r** mechanism. Recycle speech-moves **`jol`/`jel`/`jul`** |
 | 13 | `relations.md` | **exists** | Hosted pair for simile **`hurorom`**, exchange **`huhanem`**, proxy **`hudagam`** | Recycle clause hosted `/b/` and hooks extra-noun. No *between*, no of-relations, no **`barl`**. Not **`hahanam`** |
 | 8 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`ugobo` / `edone` / `aha` / `enenu`** (when the *role* is the point); inclusive *we* **`aha`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
 | 8 | `plurality.md` | **exists** | Associative **-x** (`-lx` / `-nx` / `-rx`); not agreement; person-role **-x** (address set vs name…**-x**) | **`aha`** as the *not this* for inclusive *we*. **`ugobo`/`edone`** only on person-role items |
@@ -277,13 +277,13 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 11 | `questions.md` | **exists** | **`jol`/`jom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`jael` / `juel` / `jaol`** vs **`jul`** vs join **`zul`** | **`jom`** is taught here as soft *ask* — allowed on this page even though full speech-act twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
 | 12 | `hooks.md` | **exists** | Prefix-less **hooks** (**`al`/`am`/`ol`/`ul`/`el`**); in-clause `A HOOK B`; discourse **`al`** *additionally*; extra-noun **`al`/`ol`/`ul`/`el`** + `/b/` (**in** / **at** / **from** / **for**) | Not a join (`zam` vs `am`). Not stacked extra-noun (`aol` / `ael`). Not **`x#e-` / `x#e`**
 | 12 | `restrictors.md` | **exists** | **`hal`/`ham`/`hual`/`huam`/`har`/`hor`/`hur`** (and `/w/` twins); *only when* vs co-manner *and*; bare *never* / *always* | Not sibling hooks. Not join **`zam`** as a restrictor |
-| 14 | `spans.md` | **exists** | Writing fences `[ ]` `{ }` `( )` `< >`; **`~`/`@`**; resume `d[=]`; PoS = outer slot; **aside** = `h(…)`; interior fragment or same-speech-act clause; when a span is required vs nativized word | `<>` loans **allowed** (this stage teaches them). Prefer atomic one-token cites |
+| 14 | `spans.md` | **exists** | Writing fences `[ ]` `{ }` `( )` `< >`; **`~`/`@`**; resume `d[=]`; PoS = outer slot; **aside** = `th(…)`; interior fragment or same-speech-act clause; when a span is required vs nativized word | `<>` loans **allowed** (this stage teaches them). Prefer atomic one-token cites |
 | 15 | `numbers.md` | **exists** | `g+N` count; `g#N` ordinal; digitless **`g+`** (*more than one*) with **-x** on the noun | No `/v/` `/h/` `/j/` `/x/` number uses, exponents, ranges, percent, measures (later). **-x** from plurality is recycle |
 | 15 | `comparatives.md` | **exists** | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; single-item superlative; equative **`ae`** | **Needs:** joins Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
-| 15 | `causation.md` | **exists** | Two-place poles: outcome host + `/b/` condition; `/h/` event vs `/ɡ/` noun; *if* **`adoro`** vs *only if* **`ebero`**; no cause-arrow word | **Needs:** core extra nouns + dependents **`darl`**. *Because* / **`IFF`** / **CAUSE** are Intermediate — do not use |
-| 16 | `values.md` | **exists** | Six needs; `/ɡ/` on a belonging vs `/h/` on the clause; **`xa`** met + contact **-l / -m / -r**; **`xu`** unmet changeability; unowned **`gobobum`** + `/w/` need | **Not** prescription **`xe`** or motive **`xo`** (Intermediate). Not ability (non-need + `x` vowel). Not MAY. Not bare need-as-topic |
+| 15 | `causation.md` | **exists** | Two-place poles: outcome host + `/b/` condition; `/th/` event vs `/ɡ/` noun; *if* **`adoro`** vs *only if* **`ebero`**; no cause-arrow word | **Needs:** core extra nouns + dependents **`darl`**. *Because* / **`IFF`** / **CAUSE** are Intermediate — do not use |
+| 16 | `values.md` | **exists** | Six needs; `/ɡ/` on a belonging vs `/th/` on the clause; **`xa`** met + contact **-l / -m / -r**; **`xu`** unmet changeability; unowned **`gobobum`** + `/w/` need | **Not** prescription **`xe`** or motive **`xo`** (Intermediate). Not ability (non-need + `x` vowel). Not MAY. Not bare need-as-topic |
 | 16 | `intention.md` | **exists** | PLAN / PREDICT and host ability contrasts: **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (need roots). Not role compounds (vowel *left* of `x`). Not conversation length (named citation or `/j/`) |
-| 16 | `knowing.md` | **exists** | **MAY** **`odoho`** + 2a holds (**`hodohom`** default; **-l** find out; **-r** who knows) | Not evidentiality / NOTIONAL (Intermediate). Not **`jom`** (core Intermediate) unless you only recycle **`jol`** from core/questions Beginner |
+| 16 | `knowing.md` | **exists** | **MAY** **`odoho`** + 2a holds (**`thodohom`** default; **-l** find out; **-r** who knows) | Not evidentiality / NOTIONAL (Intermediate). Not **`jom`** (core Intermediate) unless you only recycle **`jol`** from core/questions Beginner |
 | 16 | `roles.md` | **exists** | Role compounds **`a`/`e`/`u`/`o` x ROOT`** (agent / place / patient / recipient; **`o`** = reltum on a relation); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
 | 16 | `x-compounds.md` | **exists** | Productive **`x`** vs two words vs dictionary compound; look up listed stems (`abedelohohu` / `onogolebere`); do not coin them. Live **`x`** from parts (not a pre-joined bank row) | Not parser-family inventory as drills; not coining new dictionary compounds. Greeting bid is Intermediate |
 | 16 | `intention.md` | **exists** | **PLAN** **`emaba`** map-resolution endings vs **PREDICT** **`elezo`** (bare) | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling MAY / values unused unless the page contrast needs them |
@@ -324,8 +324,8 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 15 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the stage’s teach examples** — not unassigned cells | 4–6 items |
 | 15 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; manner `/h/` immediately after the join; distributive **`a`** + SHARED `/ɡ/`; measured differentials | Measured items **Sibling OK:** numbers Intermediate **measure phrases** only |
 | 15 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zonunan`, `zahaman`, **`zuroron`** Mine vs performance **`zugobon`**, **`zoloben`** Everyone, …); `/w/` *as-of* on a shared scale | **`ugobo`** allowed on performance items. Recycle relations Advanced *as-of* |
-| 15 | `causation.md` | Intermediate | **exists** | Following-sentence **`barl`**; **`urugu`** *because* / **`ezaze`** *iff*; asserted necessary **`heberom hurugum`**; **CAUSE** **`egega`** **-m** | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
-| 15 | `causation.md` | Advanced | **exists** | Factivity; `hadorom` vs bookmark *as-of* `hobomam`; evidential / CAUSE / habit stacks as taught in this stage | MAY/evidentiality and relations Advanced *as-of* are recycle |
+| 15 | `causation.md` | Intermediate | **exists** | Following-sentence **`barl`**; **`urugu`** *because* / **`ezaze`** *iff*; asserted necessary **`theberom thurugum`**; **CAUSE** **`egega`** **-m** | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
+| 15 | `causation.md` | Advanced | **exists** | Factivity; `thadorom` vs bookmark *as-of* `hobomam`; evidential / CAUSE / habit stacks as taught in this stage | MAY/evidentiality and relations Advanced *as-of* are recycle |
 | 16 | `values.md` | Intermediate | **exists** | Prescription **`xe`** + force; motive **`xo`** + preference standing; which ending table; attachment sites | |
 | 16 | `values.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
 | 16 | `knowing.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`adade`** + play holds; **RESIDUE** / **FORMER**; MAY vs nearby jobs | |
@@ -350,7 +350,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 |------|----------------|
 | House names, SVO, omit **`jal`**, **`jol`/`jel`/`jul`**, vocative (`jululon`) | `clause.md` Beginner |
 | Means / simile / exchange / proxy hosted pairs | `relations.md` Beginner |
-| **`darl`**, *because* **`hurugum barl`**, `/x/` linker after `.` | `dependents.md` Beginner |
+| **`darl`**, *because* **`thurugum barl`**, `/x/` linker after `.` | `dependents.md` Beginner |
 | Named citation greeting (`azawan.`) | `word-endings.md` Beginner |
 | Conversation-length bid **`…xan` / `…xon` / `…xen` / `…xun`** on a citation or vocative | `x-compounds.md` Intermediate |
 | **`gl-`**, **`jam`/`jom`/`jem`/`jum`** as a *speech-act* system | `clause.md` Intermediate |
@@ -368,11 +368,11 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Span brackets / `<>` | `spans.md` Beginner |
 | `g+N` / `g#N` / `g+` | `numbers.md` Beginner |
 | SHARED scale comparatives | `comparatives.md` Beginner |
-| Causal poles *if* / *only if* (`hadorom` / `heberom`) | `causation.md` Beginner |
-| **CAUSE** **`egega`** / **`hegegam`** | `causation.md` Intermediate |
+| Causal poles *if* / *only if* (`thadorom` / `theberom`) | `causation.md` Beginner |
+| **CAUSE** **`egega`** / **`thegegam`** | `causation.md` Intermediate |
 | Value **`xa`/`xu`** on **need** roots | `values.md` Beginner |
 | Ability **`xa`/`xe`/`xo`/`xu`** on **non-need** hosts | `intention.md` Beginner |
-| **MAY** **`hodohom`** | `knowing.md` Beginner |
+| **MAY** **`thodohom`** | `knowing.md` Beginner |
 | Role **`ax`/`ux`/`ox` ROOT** | `roles.md` Beginner |
 | Prescription **`xe`** / motive **`xo`** (values) | `values.md` Intermediate |
 | Evidentiality / NOTIONAL / RESIDUE / FORMER | `knowing.md` Intermediate |

@@ -35,10 +35,10 @@ describe("inspectText", () => {
 
   it("uses overlay definition for closed mood", () => {
     const witnessed = [...tables.overlays.values()].find(
-      (o) => o.pos === "h" && /witnessed evidential/i.test(o.definition),
+      (o) => o.pos === "th" && /witnessed evidential/i.test(o.definition),
     );
     assert.ok(witnessed);
-    const result = inspectText(`h${witnessed.senseForm}`, tables);
+    const result = inspectText(`th${witnessed.senseForm}`, tables);
     const token = result.tokens[0];
     assert.equal(token?.kind, "word");
     if (token?.kind !== "word") return;
@@ -120,7 +120,7 @@ describe("inspectText", () => {
   });
 
   it("Why distinguishes values from role compounds", () => {
-    const value = inspectText("halodoxal", tables).tokens[0];
+    const value = inspectText("thalodoxal", tables).tokens[0];
     assert.equal(value?.kind, "word");
     if (value?.kind !== "word") return;
     assert.equal(value.why?.line, "values, not role");

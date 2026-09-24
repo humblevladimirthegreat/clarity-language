@@ -379,10 +379,10 @@ Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odog
 | Publish | Example |
 |---------|---------|
 | Citation of this row’s sense | `odogol` *dog*; `uzumum` *happy*; `azawan` *Azawan*; `ezazal` *therefore* |
-| Inflected form the row teaches | `hodohom`, `hemabam`, `xezazal`, `zaxuvugul`; drill-bank `vejel` *see* |
+| Inflected form the row teaches | `thodohom`, `themabam`, `xezazal`, `zaxuvugul`; drill-bank `vejel` *see* |
 | Special with its default ending | citation `ugobon` / `edonen` / `ahan` / `enenun`; in-clause `zugobon` when the slot is the point |
 
-Do **not** call `odogo` a citation. Overlay / need / linker / mood inventories use the citation or the floating `/h/` (or `/x/`) word, not the stem (`alodol` or `halodol`, not `alodo`; `odohol` or `hodohom`, not `odoho`). Combinability (`xa` / `xe`, hold endings) belongs in a **pattern** column (`…xal`) or in extra inflected rows, not by stripping the ending.
+Do **not** call `odogo` a citation. Overlay / need / linker / mood inventories use the citation or the floating `/th/` (or `/x/`) word, not the stem (`alodol` or `thalodom`, not `alodo`; `odohol` or `thodohom`, not `odoho`). Combinability (`xa` / `xe`, hold endings) belongs in a **pattern** column (`…xal`) or in extra inflected rows, not by stripping the ending.
 
 **Exceptions** (a stem or non-word is the right **Agalan** cell):
 

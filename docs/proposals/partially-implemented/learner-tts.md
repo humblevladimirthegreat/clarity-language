@@ -75,7 +75,7 @@ Preferred writing is not always what is spoken. The AST already distinguishes wr
 | Writing | Spoken behavior | Doc |
 |---------|-----------------|-----|
 | Free-number shorthand (`g+3`, `g#-2`, `d_…`, `%`, …) | Full CV number word (marker `r`+V, spoken digits / specials, ending letter) | [numbers.md](../../grammar/numbers.md#writing-preferred-shorthand) |
-| Span brackets (`d[…]`, `d@[Hamlet]`, `h(…)`, …) | Open word (`daxal` / `daxon` / …) + interior tokens + close when required | [spans.md](../../grammar/spans.md#writing-vs-speech) |
+| Span brackets (`d[…]`, `d@[Hamlet]`, `th(…)`, …) | Open word (`daxal` / `daxon` / …) + interior tokens + close when required | [spans.md](../../grammar/spans.md#writing-vs-speech) |
 | Span anaphor / empty (`d[=]`, `d[]`) | Spoken open only (`daxur`, `daxul`) | same |
 | Orthographic-only commas in digit groups | **Omit** (not spoken) | [numbers.md](../../grammar/numbers.md#writing-preferred-shorthand) |
 | Period / `?` / `!` | Boundary tags for pause + pitch hint | [dependents.md](../../grammar/dependents.md#orthography-and-prosody-periods) |

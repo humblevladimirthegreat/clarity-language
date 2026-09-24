@@ -50,15 +50,16 @@ function skipMarks(text: string, i: number): number {
 }
 
 /**
- * If `start` begins a writing-span atom (`d[…]`, `h(…)`, `z@<Sam>`, `@<Sam>`),
+ * If `start` begins a writing-span atom (`d[…]`, `th(…)`, `z@<Sam>`, `@<Sam>`),
  * return the index after the closing bracket.
  */
 export function writingSpanEnd(text: string, start: number): number | undefined {
   let i = start;
   if (i >= text.length) return undefined;
 
-  if (POS.has(text[i]!) && i + 1 < text.length) {
-    i += 1;
+  const posLen = text.startsWith("th", i) ? 2 : POS.has(text[i]!) ? 1 : 0;
+  if (posLen > 0 && i + posLen < text.length) {
+    i += posLen;
     i = skipMarks(text, i);
     if (text[i] && text[i]! in OPEN_CLOSE) {
       return scanPairedEnd(text, i);

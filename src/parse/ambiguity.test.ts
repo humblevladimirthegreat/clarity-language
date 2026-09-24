@@ -29,10 +29,10 @@ describe("checkAmbiguity", () => {
 
   it("does not treat overlay-vs-published as unresolved (closed overlay rule)", () => {
     const sense = [...tables.overlays.values()].find(
-      (o) => o.pos === "h" && /live evidential/i.test(o.definition),
+      (o) => o.pos === "th" && /live evidential/i.test(o.definition),
     );
     assert.ok(sense);
-    const result = parse(`h${sense.senseForm}.`, tables, { checkAmbiguity: true });
+    const result = parse(`th${sense.senseForm}.`, tables, { checkAmbiguity: true });
     assert.deepEqual(result.ambiguity, []);
   });
 

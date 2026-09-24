@@ -277,7 +277,7 @@ Beginner already used closed **`gonunul`** (*is the same as*). The other endings
 | `zululon gonunul bazawan` | *Ululon is (the same as) Azawan* |
 | `zululon gonunum bazawan` | *Ululon is basically Azawan* |
 | `zululon gonunul bazawan gul` | *Ululon is not (identical to) Azawan* |
-| `zululon heraram gonunul bazawan` | *Ululon is allegedly Azawan* |
+| `zululon theraram gonunul bazawan` | *Ululon is allegedly Azawan* |
 | `zeberel gonunul bazawan` | inside a noun phrase: *the person who is Azawan* |
 
 **Compare with:** ordinary *coin* is `zonunul` (or a *token*-like adjective). Identity is **`gonunu…`** plus a following `/b/` label, kept next to each other.

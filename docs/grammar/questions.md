@@ -174,7 +174,7 @@ When the **outer** sentence is a claim (*Azawan seesâ€¦*, *Azawan tells Ululonâ€
 >
 > "Azawan sees whether Ululon sleeps, I wonder."
 
-**Compare with:** a matrix question (*Does Azawan walk?*) writes **`jol`** on the **outer** turn. *If Ululon walks* as a condition is **`hadorom barl`**, not inner **`jol`**.
+**Compare with:** a matrix question (*Does Azawan walk?*) writes **`jol`** on the **outer** turn. *If Ululon walks* as a condition is **`thadorom barl`**, not inner **`jol`**.
 
 ### Translation practice
 <a id="translation-practice"></a>

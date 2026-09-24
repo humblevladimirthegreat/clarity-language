@@ -39,10 +39,10 @@ function expectReading(text: string, reading: LexReading) {
 describe("classify", () => {
   it("overlay mood on published-shaped live evidential", () => {
     const sense = [...tables.overlays.values()].find(
-      (o) => o.pos === "h" && /live evidential/i.test(o.definition),
+      (o) => o.pos === "th" && /live evidential/i.test(o.definition),
     );
     assert.ok(sense);
-    const word = expectReading(`h${sense.senseForm}`, "mood");
+    const word = expectReading(`th${sense.senseForm}`, "mood");
     assert.ok(word.overlay);
     assert.equal(word.overlay!.senseForm, sense.senseForm);
     assert.match(word.overlay!.definition, /live/i);
@@ -50,10 +50,10 @@ describe("classify", () => {
 
   it("overlay mood on published-shaped evidential", () => {
     const sense = [...tables.overlays.values()].find(
-      (o) => o.pos === "h" && /witnessed evidential/i.test(o.definition),
+      (o) => o.pos === "th" && /witnessed evidential/i.test(o.definition),
     );
     assert.ok(sense);
-    const word = expectReading(`h${sense.senseForm}`, "mood");
+    const word = expectReading(`th${sense.senseForm}`, "mood");
     assert.ok(word.overlay);
     assert.equal(word.overlay!.senseForm, sense.senseForm);
     assert.match(word.overlay!.definition, /witnessed/i);
@@ -68,10 +68,10 @@ describe("classify", () => {
   });
 
   it("overlay mood on residue and former-climate", () => {
-    const residue = expectReading("honenom", "mood");
+    const residue = expectReading("thonenom", "mood");
     assert.equal(residue.overlay?.kind, "residue");
     assert.equal(residue.overlay?.gloss, "RESIDUE");
-    const former = expectReading("hemebem", "mood");
+    const former = expectReading("themebem", "mood");
     assert.equal(former.overlay?.kind, "former_climate");
     assert.equal(former.overlay?.gloss, "FORMER");
   });
@@ -117,13 +117,13 @@ describe("classify", () => {
   });
 
   it("value on need host compounds; bare need root is ordinary", () => {
-    expectReading("halodoxal", "value");
+    expectReading("thalodoxal", "value");
     expectReading("gonogoxal", "value");
     expectReading("hawerol", "ordinary");
   });
 
   it("hostless ability overlay", () => {
-    const word = expectReading("hegeram", "ability");
+    const word = expectReading("thegeram", "ability");
     assert.ok(word.overlay);
     assert.equal(word.overlay!.senseForm, "egeram");
   });

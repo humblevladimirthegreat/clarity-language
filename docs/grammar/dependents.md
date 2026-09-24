@@ -51,11 +51,13 @@ English *whether* is that same object slot, with vowel **`o`**: **`dorl`**. The 
 >
 > "Azawan sees whether Ululon walks."
 
-*Because* / *if* and similar use `/h/` + `/b/` **`barl`**. Keep that pair together, **last in the main sentence** (**`barl`** last). The abstract ending on the `/h/` word is always **-m**.
+*Because* / *if* and similar use a pole word + `/b/` **`barl`**. Keep that pair together, **last in the main sentence** (**`barl`** last). The abstract ending on the pole word is always **-m**.
 
-> `zazawan vuzunul hurugum barl zululon vawalal.`
+The pole's role letter follows the clause page. *Because*, *if*, *only if*, and *if and only if* are your [stance](clause.md#stance-th) on why the claim holds, so they take `/th/`. *Although*, *while*, *until*, *before*, *after*, and *so that* place the event, so they stay adverbs on `/h/`.
+
+> `zazawan vuzunul thurugum barl zululon vawalal.`
 >
-> z-Azawan | v-sing | h-because | b-that-clause | z-Ululon | v-walk
+> z-Azawan | v-sing | th-because | b-that-clause | z-Ululon | v-walk
 >
 > "Azawan sings because Ululon walks."
 
@@ -65,10 +67,10 @@ You can also say:
 
 | Agalan | English | Same root as | Cue |
 |--------|---------|--------------|-----|
-| **`hurugum barl`** | *because* | `urugul` *brick* | 🧱: the cause is what the result sits on |
-| **`hadorom barl`** | *if* | `adorol` *door* | 🚪: walk through only if it opens |
-| **`heberom barl`** | *only if* | `eberol` *paper-roll* | 🧻: without it the situation does not run |
-| **`hezazem barl`** | *if and only if* | `ezazel` *east-west* | ↔️: each side only with the other |
+| **`thurugum barl`** | *because* | `urugul` *brick* | 🧱: the cause is what the result sits on |
+| **`thadorom barl`** | *if* | `adorol` *door* | 🚪: walk through only if it opens |
+| **`theberom barl`** | *only if* | `eberol` *paper-roll* | 🧻: without it the situation does not run |
+| **`thezazem barl`** | *if and only if* | `ezazel` *east-west* | ↔️: each side only with the other |
 | **`hezebam barl`** | *although* / *even though* | `ezebal` *zebra* | 🦓: two stripes, still one animal |
 | **`hegemum barl`** | *while* (at the same time) | `egemul` *gemini* | ♊: two things at once |
 | **`hudumem barl`** | *until* | `udumel` *timer* | ⏲️: stop when it rings |
@@ -107,7 +109,7 @@ When English *to* drops the sitter, keep inner `/z/`:
 
 Ordinary `zolalal` is still *a goal* (the net).
 
-**Compare with:** *although Ululon walks* is **`hezebam barl`** plus the next sentence. Discourse *however* is **`xezebal`** ([continue](#continue-x)). Discourse *therefore* is **`xezazal`**, a linker after a finished claim, not *so that*. *Whether Ululon walks* is **`dorl`**, not **`hadorom`** (*if* is a condition, not polar ignorance). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. Acting *for relatedness* is [values](values.md) **`xo`**, a need-motive, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`huhanem`). *Want to walk* still takes a full **`darl`** sentence (repeat the inner `/z/`).
+**Compare with:** *although Ululon walks* is **`hezebam barl`** plus the next sentence. Discourse *however* is **`xezebal`** ([continue](#continue-x)). Discourse *therefore* is **`xezazal`**, a linker after a finished claim, not *so that*. *Whether Ululon walks* is **`dorl`**, not **`thadorom`** (*if* is a condition, not polar ignorance). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. Acting *for relatedness* is [values](values.md) **`xo`**, a need-motive, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`huhanem`). *Want to walk* still takes a full **`darl`** sentence (repeat the inner `/z/`).
 
 The verb has no past or future letter. *Before* / *after* / *while* / *until* place this event relative to the next sentence. Leftover **result** and **former climate** are standing moods, not time ([RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate)).
 
@@ -157,7 +159,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *fight* | `vuvugul` | | |
 | *run* | `vurunul` | `urunul` *run* | 🏃: leaving at speed |
 | *that-clause* | `darl` | | |
-| *because* | `hurugum` | `urugul` *brick* | 🧱: the cause is what the result sits on |
+| *because* | `thurugum` | `urugul` *brick* | 🧱: the cause is what the result sits on |
 | *although* | `hezebam` | `ezebal` *zebra* | 🦓: two stripes, still one animal |
 | *so-that* | `holalam` | `olalal` *goal* | 🥅: you act so the shot counts |
 | *therefore* | `xezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
@@ -175,9 +177,9 @@ z-Azawan | b-Ululon | v-tell | d-that-clause | z-Uhubun | v-sit
 **2.** *Azawan runs because Ululon punches a guard.*
 
 ::: details Show answer
-`zazawan vurunul hurugum barl zululon dugugal vubunul.`
+`zazawan vurunul thurugum barl zululon dugugal vubunul.`
 
-z-Azawan | v-run | h-because | b-that-clause | z-Ululon | d-guard | v-punch
+z-Azawan | v-run | th-because | b-that-clause | z-Ululon | d-guard | v-punch
 :::
 
 **3.** *Azawan writes despite a guard.*
@@ -417,9 +419,9 @@ The sentence after one of these verbs has its own subject when the chosen conten
 
 Each clause has at most one **stand-in** at the end of the main sentence. The sentence after it may itself end in **`barl`**, so a further sentence hangs to the **right**.
 
-> `zazawan guzumum hurugum barl zululon vawalal hurugum barl zuhubun velebel.`
+> `zazawan guzumum thurugum barl zululon vawalal thurugum barl zuhubun velebel.`
 >
-> z-Azawan | g-happy | h-because | b-that-clause | z-Ululon | v-walk | h-because | b-that-clause | z-Uhubun | v-sleep
+> z-Azawan | g-happy | th-because | b-that-clause | z-Ululon | v-walk | th-because | b-that-clause | z-Uhubun | v-sleep
 >
 > "Azawan is happy because Ululon walks because Uhubun sleeps."
 
@@ -448,7 +450,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *scream* | `vazagal` |
 | *punch* | `vubunul` |
 | *that-clause* | `darl` |
-| *because* | `hurugum` |
+| *because* | `thurugum` |
 | *next* | `xuvumul` |
 | *however* | `xezebal` |
 | *meanwhile* | `xanelol` |
@@ -466,9 +468,9 @@ z-Azawan | v-sit | x-next | z-Ululon | v-run
 **2.** *Azawan runs because Ululon punches Azawan because Uhubun screams.*
 
 ::: details Show answer
-`zazawan vurunul hurugum barl zululon dazawan vubunul hurugum barl zuhubun vazagal.`
+`zazawan vurunul thurugum barl zululon dazawan vubunul thurugum barl zuhubun vazagal.`
 
-z-Azawan | v-run | h-because | b-that-clause | z-Ululon | d-Azawan | v-punch | h-because | b-that-clause | z-Uhubun | v-scream
+z-Azawan | v-run | th-because | b-that-clause | z-Ululon | d-Azawan | v-punch | th-because | b-that-clause | z-Uhubun | v-scream
 :::
 
 #### Agalan → English
@@ -491,11 +493,11 @@ z-Ululon | v-sneak | x-however | z-Azawan | v-run
 *Ululon sneaks. However Azawan runs.*
 :::
 
-**3.** `zuhubun vazagal hurugum barl zazawan vebarul hurugum barl zululon dazawan vubunul.`
+**3.** `zuhubun vazagal thurugum barl zazawan vebarul thurugum barl zululon dazawan vubunul.`
 
 ::: details Show answer
 
-z-Uhubun | v-scream | h-because | b-that-clause | z-Azawan | v-departure | h-because | b-that-clause | z-Ululon | d-Azawan | v-punch
+z-Uhubun | v-scream | th-because | b-that-clause | z-Azawan | v-departure | th-because | b-that-clause | z-Ululon | d-Azawan | v-punch
 
 *Uhubun screams because Azawan departs because Ululon punches Azawan.*
 :::

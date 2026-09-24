@@ -28,7 +28,7 @@ Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org
 ### Consonants
 
 A consonant starts a syllable. There is no distinction between voiced and unvoiced. Prefer the **voiced** version (with vocal cords buzzing) so you can hold a sung note. You may still use the unvoiced sound for style. 
-<!-- Consonant order: lips (b m w v), tongue tip (d n z l r), back (g h), then English false friends (j x). Canonical alphabet / letter-name recitation follows this table (vowels e u o a first). -->
+<!-- Consonant order: lips (b m w v), tongue tip (d n z l r), back (g h, then th as the "other h"), then English false friends (j x). Canonical alphabet / letter-name recitation follows this table (vowels e u o a first). -->
 
 | Agalan | IPA | Cue | Unvoiced variant |
 |--------|-----|-----|------------------|
@@ -43,12 +43,15 @@ A consonant starts a syllable. There is no distinction between voiced and unvoic
 | `r` | /ɹ/ <IpaPlay file="Alveolar_approximant.ogg" label="r" /> | *red* | |
 | `g` | /ɡ/ <IpaPlay file="Voiced_velar_plosive.ogg" label="g" /> | *go* | /k/ <IpaPlay file="Voiceless_velar_plosive.ogg" label="unvoiced g" />, *kite* |
 | `h` | /ɦ/ <IpaPlay file="Voiced_glottal_fricative.ogg" label="h" /> | *ahead* | /h/ <IpaPlay file="Voiceless_glottal_fricative.ogg" label="unvoiced h" />, *hat* |
+| `th` | /ð/ <IpaPlay file="Voiced_dental_fricative.ogg" label="th" /> | *this* | /θ/ <IpaPlay file="Voiceless_dental_fricative.ogg" label="unvoiced th" />, *thin* |
 | `j` | /j/ <IpaPlay file="Palatal_approximant.ogg" label="j" /> | *yes* (Germanic *j* as in *ja*) | |
 | `x` | /ʒ/ <IpaPlay file="Voiced_palato-alveolar_sibilant.ogg" label="x" /> | *vision* (the *si*) | /ʃ/ <IpaPlay file="Voiceless_palato-alveolar_sibilant.ogg" label="unvoiced x" />, *shy* |
 
 ::: tip Remember
 `j` and `x` have sounds different than English. The rest are familiar. 
 :::
+
+`th` is **one letter** written with two characters. Agalan has no `t`, so `th` never means `t` followed by `h`. It appears only as a [role letter](clause.md#role-letters), at the start of a word (`thodohom`).
 
 Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) by [Peter Isotalo](https://commons.wikimedia.org/wiki/User:Peter_Isotalo), except /ɹ/ by [Erutuon](https://commons.wikimedia.org/wiki/File:Alveolar_approximant.ogg).
 
@@ -123,6 +126,7 @@ When you **spell a word aloud** or **name a letter**, say the Agalan name for it
 | `r` | `ro` | *row* |
 | `g` | `ga` | *gaga* |
 | `h` | `hu` | *hut* |
+| `th` | `tha` | *that* |
 | `j` | `ja` | *yacht* |
 | `x` | `xe` | *shed* |
 

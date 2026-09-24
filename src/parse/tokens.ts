@@ -85,6 +85,7 @@ const JOIN_BY_POS = {
   g: JoinG,
   w: JoinW,
   h: JoinH,
+  th: JoinH,
   v: JoinV,
   x: JoinX,
 } as const;
@@ -97,6 +98,7 @@ const CONTENT_BY_POS = {
   g: G,
   w: W,
   h: H,
+  th: H,
 } as const;
 
 function isForceWord(word: LexWord): boolean {
@@ -130,7 +132,7 @@ export function classifyToTokenType(word: LexWord): AgelanTokenType {
   if (reading === "joinAct") return V;
   if (reading === "joinRelation") {
     if (pos === "g") return G;
-    if (pos === "h") return H;
+    if (pos === "h" || pos === "th") return H;
   }
 
   if (reading === "greeting") return Vocative;

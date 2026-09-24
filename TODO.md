@@ -5,32 +5,33 @@ redirects settings: https://us-east-2.console.aws.amazon.com/amplify/apps/d2xds9
 my name: obogan (innovation)
 
 # TODO
-consider new consonant (th) used for new pos, used instead of x for some x-compounds or different type of compounding? maybe could be used as plural ending?
+j should just be y, remind that y is never a vowel
 
-finish English->Agalan cheat sheets, including tense
-add Agalan->English cheat sheet
-join vowel decision tree in advanced vowel series.
 consider making negatives clearer (stress?)
-final exam
 Prosody
+
 gloss should indicate phrase structure (including proper phrases) and what modifies what. Gloss overlay ui should show that as well.
 parser tries to guess lexical compound even if not in lexicon
 numbers section includes pronunciation rows underneath the agalan.
-Cheat sheet for joins and hooks
-j should just be y, remind that y is never a vowel
-consider removing some emotion emojis
+
+consider removing some emotion words from lexicon
 consider moving overlay forms to the top of lexicon so they get preferential retying
+
 cool features: collective verbs/adjectives use plural
-do grammar consistency pass
-do parser consistency pass
-do learning order consistency pass
-do an example and translation pass
-do a style pass using luna
 
-## Evidentiality / tense
+do a grammar-docs/ consistency check. Does anything about the grammar seem incorrect, confusing, meaningless, or counterintuitive?
+do parser consistency pass. Does the parser completely and accurately encode all the meaning of the grammar?
+do a learning order consistency check for grammar-docs. Does any grammar doc learning band refer to concepts not yet taught?
+do an example and translation review in grammar-docs. Do the examples make sense and effectively demonstrate the desired concept? Does the english translation sound natural? 
+do a style pass in grammar-docs. Check for adherence to doc-style and otherwise ensure natural sounding explanations.
 
-- Dedicated observation vs imagination **tense** (stacks with evidentiality channels; does not replace them). Live vs memory observation is **LIVE** (`adeze`) vs **WITNESSED** (`uvuvu`) — not a past/future slot. Whose-now for leftover / climate / plan / forecast is hosted *as-of* (`helerem` / `hobomam`), not a tense letter and not persist hooks.
-- Consider sense words for observation
+finish English->Agalan cheat sheets, including tense
+add Agalan->English cheat sheet
+Cheat sheet for joins and hooks
+join vowel decision tree in advanced vowel series.
+final exam
+
+mass lexical compound adding
 
 Dictionary entries (open lexicon / concepts — not the closed list above):
 -habits: triggered

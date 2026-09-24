@@ -1,7 +1,7 @@
 # Intention
 <a id="intention"></a>
 
-English *will* and *going to* can describe either **intention** (the course someone means to take) or a **forecast** (what someone thinks will happen later). Agalan marks these meanings with special `/h/` words at the start of the clause, followed by an ordinary verb. The distinction lets you show whether you are describing someone's chosen course or making a claim about a future event.
+English *will* and *going to* can describe either **intention** (the course someone means to take) or a **forecast** (what someone thinks will happen later). Agalan marks these meanings with special `/th/` words at the start of the clause, followed by an ordinary verb. The distinction lets you show whether you are describing someone's chosen course or making a claim about a future event.
 
 ## Beginner
 <a id="beginner"></a>
@@ -9,11 +9,11 @@ English *will* and *going to* can describe either **intention** (the course some
 ### Plan
 <a id="plan-predict"></a>
 
-To say what someone **means to do**, put **`hemaba`** before the ordinary verb, such as *walk* or *write*. The `/h/` marks the mood across the clause; the ending on **`hemaba`** says how fully the person has planned the course. This separates an intention from English *will* used as a forecast. (Cue: 🗺️ A map charts a course you mean to take.)
+To say what someone **means to do**, put **`themaba`** before the ordinary verb, such as *walk* or *write*. The `/th/` marks the mood across the clause; the ending on **`themaba`** says how fully the person has planned the course. This separates an intention from English *will* used as a forecast. (Cue: 🗺️ A map charts a course you mean to take.)
 
-> `zazawan hemabam vawalal.`
+> `zazawan themabam vawalal.`
 >
-> z-Azawan | h-plan-sketch | v-walk
+> z-Azawan | th-plan-sketch | v-walk
 >
 > "Azawan intends to walk."
 
@@ -23,23 +23,23 @@ Ordinary content stays available (`zemabal` *a map*; `vemabal` *to plan*). Leave
 <a id="plan-map-resolution"></a>
 <a id="plan-endings"></a>
 
-On **`emaba`**, **-l / -m / -r** say **how fully drawn** the intention is: a heading, steps filled in, or a map that already includes backups. That split is a reminder of **how prepared** you are. **-n** is ordinary [proper](word-endings.md#proper-name--n). When you are unsure how detailed the course is, prefer **`hemabam`**.
+On **`emaba`**, **-l / -m / -r** say **how fully drawn** the intention is: a heading, steps filled in, or a map that already includes backups. That split is a reminder of **how prepared** you are. **-n** is ordinary [proper](word-endings.md#proper-name--n). When you are unsure how detailed the course is, prefer **`themabam`**.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hemabam`** | **sketch** (soft default) | *intends to …* — heading only, steps not filled in | `emabam` *plan-sketch* | **-m** ≈ map (outline only) |
-| **`hemabal`** | **itinerary** | *plans to …* — step-by-step plan | `emabal` *plan-itinerary* | **-l** ≈ list (every stop in a line) |
-| **`hemabar`** | **atlas** | *is fully prepared to …* — hurdles are anticipated and prepared for | `emabar` *plan-atlas* | **-r** ≈ routes (detours already drawn) |
+| **`themabam`** | **sketch** (soft default) | *intends to …* — heading only, steps not filled in | `emabam` *plan-sketch* | **-m** ≈ map (outline only) |
+| **`themabal`** | **itinerary** | *plans to …* — step-by-step plan | `emabal` *plan-itinerary* | **-l** ≈ list (every stop in a line) |
+| **`themabar`** | **atlas** | *is fully prepared to …* — hurdles are anticipated and prepared for | `emabar` *plan-atlas* | **-r** ≈ routes (detours already drawn) |
 
-> `zululon hemabal vawalal.`
+> `zululon themabal vawalal.`
 >
-> z-Ululon | h-plan-itinerary | v-walk
+> z-Ululon | th-plan-itinerary | v-walk
 >
 > "Ululon plans to walk."
 
-> `zuhubun hemabar vawalal.`
+> `zuhubun themabar vawalal.`
 >
-> z-Uhubun | h-plan-atlas | v-walk
+> z-Uhubun | th-plan-atlas | v-walk
 >
 > "Uhubun is fully prepared to walk."
 
@@ -48,15 +48,15 @@ Saying *I will* in English can hide whether you only intend a heading, you have 
 ### Predict
 <a id="predict"></a>
 
-To predict a later event, such as rain or a result, put **`helezo`** before the ordinary verb. Use **`helezom`** as the default when you have nothing more to add. The event must be later than now; a guess about something already true but hidden, such as where someone is, uses a different pattern. (Cue: 🔭 A telescope looks ahead into the distance.)
+To predict a later event, such as rain or a result, put **`thelezo`** before the ordinary verb. Use **`thelezom`** as the default when you have nothing more to add. The event must be later than now; a guess about something already true but hidden, such as where someone is, uses a different pattern. (Cue: 🔭 A telescope looks ahead into the distance.)
 
-> `helezom vanunul.`
+> `thelezom vanunul.`
 >
-> h-predict | v-rain
+> th-predict | v-rain
 >
 > "I predict it will rain."
 
-**Compare with:** English *will* as *intends to …* / *plans to …* uses [PLAN](#plan-predict) (`hemabam` / `hemabal` / `hemabar`). PREDICT is a later world forecast, not someone’s course.
+**Compare with:** English *will* as *intends to …* / *plans to …* uses [PLAN](#plan-predict) (`themabam` / `themabal` / `themabar`). PREDICT is a later world forecast, not someone’s course.
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -88,137 +88,137 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *Azawan intends to sit.*
 
 ::: details Show answer
-`zazawan hemabam vajul.`
+`zazawan themabam vajul.`
 
-z-Azawan | h-plan-sketch | v-sit
+z-Azawan | th-plan-sketch | v-sit
 :::
 
 **2.** *Ululon intends to see a pawn.*
 
 ::: details Show answer
-`zululon hemabam dawanal vejel.`
+`zululon themabam dawanal vejel.`
 
-z-Ululon | h-plan-sketch | d-pawn | v-see
+z-Ululon | th-plan-sketch | d-pawn | v-see
 :::
 
 **3.** *Azawan plans to tell Uhubun.*
 
 ::: details Show answer
-`zazawan hemabal buhubun vezehel.`
+`zazawan themabal buhubun vezehel.`
 
-z-Azawan | h-plan-itinerary | b-Uhubun | v-tell
+z-Azawan | th-plan-itinerary | b-Uhubun | v-tell
 :::
 
 **4.** *I predict Azawan will sit.*
 
 ::: details Show answer
-`zazawan helezom vajul.`
+`zazawan thelezom vajul.`
 
-z-Azawan | h-predict | v-sit
+z-Azawan | th-predict | v-sit
 :::
 
 **5.** *Uhubun plans to see Azawan.*
 
 ::: details Show answer
-`zuhubun hemabal dazawan vejel.`
+`zuhubun themabal dazawan vejel.`
 
-z-Uhubun | h-plan-itinerary | d-Azawan | v-see
+z-Uhubun | th-plan-itinerary | d-Azawan | v-see
 :::
 
 **6.** *Ululon is fully prepared to punch Azawan.*
 
 ::: details Show answer
-`zululon hemabar dazawan vubunul.`
+`zululon themabar dazawan vubunul.`
 
-z-Ululon | h-plan-atlas | d-Azawan | v-punch
+z-Ululon | th-plan-atlas | d-Azawan | v-punch
 :::
 
 **7.** *I predict Ululon will scream.*
 
 ::: details Show answer
-`zululon helezom vazagal.`
+`zululon thelezom vazagal.`
 
-z-Ululon | h-predict | v-scream
+z-Ululon | th-predict | v-scream
 :::
 
 **8.** *Ululon is fully prepared to fight.*
 
 ::: details Show answer
-`zululon hemabar vuvugul.`
+`zululon themabar vuvugul.`
 
-z-Ululon | h-plan-atlas | v-fight
+z-Ululon | th-plan-atlas | v-fight
 :::
 
 #### Agalan → English
 
-**1.** `zululon hemabam vajul.`
+**1.** `zululon themabam vajul.`
 
 ::: details Show answer
 
-z-Ululon | h-plan-sketch | v-sit
+z-Ululon | th-plan-sketch | v-sit
 
 *Ululon intends to sit.*
 :::
 
-**2.** `zazawan hemabam dawanal vejel.`
+**2.** `zazawan themabam dawanal vejel.`
 
 ::: details Show answer
 
-z-Azawan | h-plan-sketch | d-pawn | v-see
+z-Azawan | th-plan-sketch | d-pawn | v-see
 
 *Azawan intends to see a pawn.*
 :::
 
-**3.** `zuhubun hemabal bazawan vezehel.`
+**3.** `zuhubun themabal bazawan vezehel.`
 
 ::: details Show answer
 
-z-Uhubun | h-plan-itinerary | b-Azawan | v-tell
+z-Uhubun | th-plan-itinerary | b-Azawan | v-tell
 
 *Uhubun plans to tell Azawan.*
 :::
 
-**4.** `helezom vajul.`
+**4.** `thelezom vajul.`
 
 ::: details Show answer
 
-h-predict | v-sit
+th-predict | v-sit
 
 *I predict someone will sit.*
 :::
 
-**5.** `zazawan hemabam buhubun vezehel.`
+**5.** `zazawan themabam buhubun vezehel.`
 
 ::: details Show answer
 
-z-Azawan | h-plan-sketch | b-Uhubun | v-tell
+z-Azawan | th-plan-sketch | b-Uhubun | v-tell
 
 *Azawan intends to tell Uhubun.*
 :::
 
-**6.** `zululon hemabal dawanal vejel.`
+**6.** `zululon themabal dawanal vejel.`
 
 ::: details Show answer
 
-z-Ululon | h-plan-itinerary | d-pawn | v-see
+z-Ululon | th-plan-itinerary | d-pawn | v-see
 
 *Ululon plans to see a pawn.*
 :::
 
-**7.** `zuhubun hemabar vazagal.`
+**7.** `zuhubun themabar vazagal.`
 
 ::: details Show answer
 
-z-Uhubun | h-plan-atlas | v-scream
+z-Uhubun | th-plan-atlas | v-scream
 
 *Uhubun is fully prepared to scream.*
 :::
 
-**8.** `helezom vuvugul.`
+**8.** `thelezom vuvugul.`
 
 ::: details Show answer
 
-h-predict | v-fight
+th-predict | v-fight
 
 *I predict someone will fight.*
 :::
@@ -284,16 +284,16 @@ English *can't* does not say whether this is just for now, not yet, or never. Af
 >
 > "Azawan can never run."
 
-**Compare with:** **`xa` / `xu`** on a [values](values.md) **need** root is met / unmet need (`holozoxum` *competence unmet*). On a verb or quality, **`xa` / `xu`** is can / can't.
+**Compare with:** **`xa` / `xu`** on a [values](values.md) **need** root is met / unmet need (`tholozoxum` *competence unmet*). On a verb or quality, **`xa` / `xu`** is can / can't.
 
 ### When there is no single verb (`egera`)
 <a id="ability-fallback"></a>
 
-Sometimes English *can* / *can't* is not about one named verb or quality: the activity takes more than one root, you just want a bare *can't*, or the *can* covers the whole sentence. Then there is no single root to put **`x`** into. Use the special word **`egera`**: after **`egera`**, write the same **`x`**, vowel, and ending as on a verb. Put it on `/h/` when it is about the whole clause, or on `/w/` immediately before the adjective it grades. That lets you say *can* / *can't* without naming the activity in that word. Prefer the verb itself whenever one root is enough. (Cue: 🥣 *cereal*: a bowl that holds what you can do)
+Sometimes English *can* / *can't* is not about one named verb or quality: the activity takes more than one root, you just want a bare *can't*, or the *can* covers the whole sentence. Then there is no single root to put **`x`** into. Use the special word **`egera`**: after **`egera`**, write the same **`x`**, vowel, and ending as on a verb. Put it on `/th/` when it is about the whole clause, or on `/w/` immediately before the adjective it grades. That lets you say *can* / *can't* without naming the activity in that word. Prefer the verb itself whenever one root is enough. (Cue: 🥣 *cereal*: a bowl that holds what you can do)
 
-> `zazawan hegeraxel.`
+> `zazawan thegeraxel.`
 >
-> z-Azawan | h-ABIL-unable-temporary
+> z-Azawan | th-ABIL-unable-temporary
 >
 > "Azawan can't right now (no single verb / whole clause)."
 
@@ -301,13 +301,13 @@ Sometimes English *can* / *can't* is not about one named verb or quality: the ac
 <a id="decision"></a>
 <a id="decision-mood"></a>
 
-To say that someone has decided to do something, put **`hehege`** before the ordinary verb. The ending on **`hehege`** tells you whether the decision is irreversible, still changeable, or temporary. You can keep the action the same and change only the ending to show how open the decision remains. (Cue: ✅ A checkmark confirms a choice.)
+To say that someone has decided to do something, put **`thehege`** before the ordinary verb. The ending on **`thehege`** tells you whether the decision is irreversible, still changeable, or temporary. You can keep the action the same and change only the ending to show how open the decision remains. (Cue: ✅ A checkmark confirms a choice.)
 
 Ordinary content is still available (`zehegel` *a checkmark*; `vehegel` *to check / tick*).
 
-> `zululon hehegem vuzunul.`
+> `zululon thehegem vuzunul.`
 >
-> z-Ululon | h-DECISION-modifiable | v-sing
+> z-Ululon | th-DECISION-modifiable | v-sing
 >
 > "Ululon has decided to sing, and can still change that."
 
@@ -320,30 +320,30 @@ On **`ehege`**, **-l / -m / -r** match unmet [changeability](values.md#value-cha
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`hehegel`** | **irreversible** | *has decided for good to …* | **-l** hard / locked |
-| **`hehegem`** | **modifiable** (soft default if unknown) | *has decided to …, and can still change that* | **-m** open to change |
-| **`heheger`** | **temporary** | *has decided for now to …* | **-r** light / this-moment only |
+| **`thehegel`** | **irreversible** | *has decided for good to …* | **-l** hard / locked |
+| **`thehegem`** | **modifiable** (soft default if unknown) | *has decided to …, and can still change that* | **-m** open to change |
+| **`theheger`** | **temporary** | *has decided for now to …* | **-r** light / this-moment only |
 
 You can stack this mood after [PLAN](#plan-predict) when the clause needs both map grain and pick firmness:
 
-> `zazawan hemabal hehegel vawalal.`
+> `zazawan themabal thehegel vawalal.`
 >
-> z-Azawan | h-plan-itinerary | h-DECISION-irreversible | v-walk
+> z-Azawan | th-plan-itinerary | th-DECISION-irreversible | v-walk
 >
 > "Azawan plans to walk, and that choice is final."
 
 ### Forecast source
 <a id="predict-evidentiality"></a>
 
-To say both that an event will happen later and how you reached that forecast, use [PREDICT](#predict) first, then add an [evidentiality](knowing.md#evidentiality) `/h/` word. PREDICT marks the later event; the evidential word tells whether the forecast comes from a usual pattern, an inference, or another source.
+To say both that an event will happen later and how you reached that forecast, use [PREDICT](#predict) first, then add an [evidentiality](knowing.md#evidentiality) `/th/` word. PREDICT marks the later event; the evidential word tells whether the forecast comes from a usual pattern, an inference, or another source.
 
-> `helezom habawam vanunul.`
+> `thelezom thabawam vanunul.`
 >
-> h-predict | h-PATTERN | v-rain
+> th-predict | th-PATTERN | v-rain
 >
 > "From the usual pattern, I predict it will rain."
 
-**Compare with:** a pattern or [LIVE](knowing.md#live-vs-memory) claim about *this stretch* uses [evidentiality](knowing.md#evidentiality) on the content verb alone (**`hadezem`** if you are observing it now; **`huvuvum`** if you remember observing it). Add **PREDICT** when the claim is a **later** world forecast, not a guess about what is already so.
+**Compare with:** a pattern or [LIVE](knowing.md#live-vs-memory) claim about *this stretch* uses [evidentiality](knowing.md#evidentiality) on the content verb alone (**`thadezem`** if you are observing it now; **`thuvuvum`** if you remember observing it). Add **PREDICT** when the claim is a **later** world forecast, not a guess about what is already so.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -359,16 +359,16 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| **PLAN** (itinerary) | `hemabal` | `emabal` *plan-itinerary* |
-| **PREDICT** | `helezom` | `elezol` *telescope* |
-| **DECISION** (modifiable) | `hehegem` | `ehegel` *check* |
+| **PLAN** (itinerary) | `themabal` | `emabal` *plan-itinerary* |
+| **PREDICT** | `thelezom` | `elezol` *telescope* |
+| **DECISION** (modifiable) | `thehegem` | `ehegel` *check* |
 | *sit* | `vajul` | `ajul` *chair* |
 | *tell* | `vezehel` | `ezehel` *speech* |
 | *write* | `vuwurul` | |
 | *see* | `vejel` | `ejel` *eye* |
 | *clipboard* | `ugubol` | |
 | *pen* | `abenel` | |
-| *PATTERN* | `habawam` | `abawal` *paw-prints* |
+| *PATTERN* | `thabawam` | `abawal` *paw-prints* |
 | *punch* | `vubunul` | |
 | *scream* | `vazagal` | |
 | *fight* | `vuvugul` | |
@@ -381,65 +381,65 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 **1.** *Ululon has decided to sit, and can still change that.*
 
 ::: details Show answer
-`zululon hehegem vajul.`
+`zululon thehegem vajul.`
 
-z-Ululon | h-DECISION-modifiable | v-sit
+z-Ululon | th-DECISION-modifiable | v-sit
 :::
 
 **2.** *Azawan has decided to tell Uhubun, and can still change that.*
 
 ::: details Show answer
-`zazawan hehegem buhubun vezehel.`
+`zazawan thehegem buhubun vezehel.`
 
-z-Azawan | h-DECISION-modifiable | b-Uhubun | v-tell
+z-Azawan | th-DECISION-modifiable | b-Uhubun | v-tell
 :::
 
 **3.** *Uhubun has decided for now to write.*
 
 ::: details Show answer
-`zuhubun heheger vuwurul.`
+`zuhubun theheger vuwurul.`
 
-z-Uhubun | h-DECISION-temporary | v-write
+z-Uhubun | th-DECISION-temporary | v-write
 :::
 
 **4.** *From the usual pattern, I predict Ululon will sit.*
 
 ::: details Show answer
-`zululon helezom habawam vajul.`
+`zululon thelezom thabawam vajul.`
 
-z-Ululon | h-predict | h-PATTERN | v-sit
+z-Ululon | th-predict | th-PATTERN | v-sit
 :::
 
 **5.** *Azawan plans to sit, and that choice is final.*
 
 ::: details Show answer
-`zazawan hemabal hehegel vajul.`
+`zazawan themabal thehegel vajul.`
 
-z-Azawan | h-plan-itinerary | h-DECISION-irreversible | v-sit
+z-Azawan | th-plan-itinerary | th-DECISION-irreversible | v-sit
 :::
 
 **6.** *Ululon has decided for now to see a clipboard.*
 
 ::: details Show answer
-`zululon heheger dugubol vejel.`
+`zululon theheger dugubol vejel.`
 
-z-Ululon | h-DECISION-temporary | d-clipboard | v-see
+z-Ululon | th-DECISION-temporary | d-clipboard | v-see
 :::
 
 **7.** *Ululon has decided for good to punch Azawan.*
 
 ::: details Show answer
-`zululon hehegel dazawan vubunul.`
+`zululon thehegel dazawan vubunul.`
 
-z-Ululon | h-DECISION-irreversible | d-Azawan | v-punch
+z-Ululon | th-DECISION-irreversible | d-Azawan | v-punch
 :::
 
 **8.** *Ululon has decided for good to fight.*
 
 ::: details Show answer
-`zululon hehegel vuvugul.`
+`zululon thehegel vuvugul.`
 
-z-Ululon | h-DECISION-irreversible | v-fight
+z-Ululon | th-DECISION-irreversible | v-fight
 :::
 
 **9.** *Azawan can climb.*
@@ -460,74 +460,74 @@ z-Uhubun | v-stand-unable-modifiable
 
 #### Agalan → English
 
-**1.** `zazawan hehegem vajul.`
+**1.** `zazawan thehegem vajul.`
 
 ::: details Show answer
 
-z-Azawan | h-DECISION-modifiable | v-sit
+z-Azawan | th-DECISION-modifiable | v-sit
 
 *Azawan has decided to sit, and can still change that.*
 :::
 
-**2.** `zululon hehegel vuwurul.`
+**2.** `zululon thehegel vuwurul.`
 
 ::: details Show answer
 
-z-Ululon | h-DECISION-irreversible | v-write
+z-Ululon | th-DECISION-irreversible | v-write
 
 *Ululon has decided for good to write.*
 :::
 
-**3.** `helezom habawam vezehel.`
+**3.** `thelezom thabawam vezehel.`
 
 ::: details Show answer
 
-h-predict | h-PATTERN | v-tell
+th-predict | th-PATTERN | v-tell
 
 *From the usual pattern, I predict someone will tell.*
 :::
 
-**4.** `zuhubun heheger vajul.`
+**4.** `zuhubun theheger vajul.`
 
 ::: details Show answer
 
-z-Uhubun | h-DECISION-temporary | v-sit
+z-Uhubun | th-DECISION-temporary | v-sit
 
 *Uhubun has decided for now to sit.*
 :::
 
-**5.** `zazawan heheger dabenel vejel.`
+**5.** `zazawan theheger dabenel vejel.`
 
 ::: details Show answer
 
-z-Azawan | h-DECISION-temporary | d-pen | v-see
+z-Azawan | th-DECISION-temporary | d-pen | v-see
 
 *Azawan has decided for now to see a pen.*
 :::
 
-**6.** `zululon hemabal hehegel buhubun vezehel.`
+**6.** `zululon themabal thehegel buhubun vezehel.`
 
 ::: details Show answer
 
-z-Ululon | h-plan-itinerary | h-DECISION-irreversible | b-Uhubun | v-tell
+z-Ululon | th-plan-itinerary | th-DECISION-irreversible | b-Uhubun | v-tell
 
 *Ululon plans to tell Uhubun, and that choice is final.*
 :::
 
-**7.** `zululon heheger dazawan vubunul.`
+**7.** `zululon theheger dazawan vubunul.`
 
 ::: details Show answer
 
-z-Ululon | h-DECISION-temporary | d-Azawan | v-punch
+z-Ululon | th-DECISION-temporary | d-Azawan | v-punch
 
 *Ululon has decided for now to punch Azawan.*
 :::
 
-**8.** `zuhubun hehegel vazagal.`
+**8.** `zuhubun thehegel vazagal.`
 
 ::: details Show answer
 
-z-Uhubun | h-DECISION-irreversible | v-scream
+z-Uhubun | th-DECISION-irreversible | v-scream
 
 *Uhubun has decided for good to scream.*
 :::
@@ -558,21 +558,21 @@ z-Azawan | v-climb
 
 [PLAN](#plan-predict) and [PREDICT](#predict) without a hosted pair score against **speech-now**. With [*as-of*](relations.md#as-of), PLAN is the intention **from** that now (*was going to*), and PREDICT is **after** that now (*would rain*). Repeat PREDICT on the next clause; resume whose-now with `helerer` / `hobomar`. [DECISION](#decision) stays how revisable the pick is **now**.
 
-> `zululon hemabam vawalal helerem b_#22,7.`
+> `zululon themabam vawalal helerem b_#22,7.`
 >
-> z-Ululon | h-plan-sketch | v-walk | h-as-of.ledger | b-_22,7
+> z-Ululon | th-plan-sketch | v-walk | h-as-of.ledger | b-_22,7
 >
 > "As of 22 July, Ululon was going to walk."
 
-> `helezom hobomam b_#22,7 vanunul. xazawan helezom hobomar vawalal.`
+> `thelezom hobomam b_#22,7 vanunul. xazawan thelezom hobomar vawalal.`
 >
-> h-predict | h-as-of.bookmark | b-_22,7 | v-rain | x-Azawan | h-predict | h-as-of.bookmark | v-walk
+> th-predict | h-as-of.bookmark | b-_22,7 | v-rain | x-Azawan | th-predict | h-as-of.bookmark | v-walk
 >
 > "From then, it would rain. Azawan would walk."
 
-> `zululon hehegem vawalal helerem b_#22,7.`
+> `zululon thehegem vawalal helerem b_#22,7.`
 >
-> z-Ululon | h-DECISION-modifiable | v-walk | h-as-of.ledger | b-_22,7
+> z-Ululon | th-DECISION-modifiable | v-walk | h-as-of.ledger | b-_22,7
 >
 > "Ululon has decided to walk — the pick is revisable now; the walking is scored as of 22 July."
 
@@ -591,63 +591,63 @@ Short drills for Advanced. Try each item before opening **Show answer**. PLAN an
 | *Ululon* | `ululon` |
 | *walk* | `vawalal` |
 | *rain* | `vanunul` |
-| *plan-sketch* | `hemabam` |
-| *predict* | `helezom` |
+| *plan-sketch* | `themabam` |
+| *predict* | `thelezom` |
 | *as-of.ledger* | `helerem` |
 | *as-of.bookmark* | `hobomam` |
-| *DECISION-modifiable* | `hehegem` |
+| *DECISION-modifiable* | `thehegem` |
 
 #### English → Agalan
 
 **1.** *As of 22 July, Ululon was going to walk.*
 
 ::: details Show answer
-`zululon hemabam vawalal helerem b_#22,7.`
+`zululon themabam vawalal helerem b_#22,7.`
 
-z-Ululon | h-plan-sketch | v-walk | h-as-of.ledger | b-_22,7
+z-Ululon | th-plan-sketch | v-walk | h-as-of.ledger | b-_22,7
 :::
 
 **2.** *From then, it would rain.*
 
 ::: details Show answer
-`helezom hobomam b_#22,7 vanunul.`
+`thelezom hobomam b_#22,7 vanunul.`
 
-h-predict | h-as-of.bookmark | b-_22,7 | v-rain
+th-predict | h-as-of.bookmark | b-_22,7 | v-rain
 :::
 
 **3.** *Ululon has decided to walk — the pick is revisable now; the walking is as of 22 July.*
 
 ::: details Show answer
-`zululon hehegem vawalal helerem b_#22,7.`
+`zululon thehegem vawalal helerem b_#22,7.`
 
-z-Ululon | h-DECISION-modifiable | v-walk | h-as-of.ledger | b-_22,7
+z-Ululon | th-DECISION-modifiable | v-walk | h-as-of.ledger | b-_22,7
 :::
 
 #### Agalan → English
 
-**1.** `helezom hobomam b_#22,7 vanunul. xazawan helezom hobomar vawalal.`
+**1.** `thelezom hobomam b_#22,7 vanunul. xazawan thelezom hobomar vawalal.`
 
 ::: details Show answer
 
-h-predict | h-as-of.bookmark | b-_22,7 | v-rain | x-Azawan | h-predict | h-as-of.bookmark | v-walk
+th-predict | h-as-of.bookmark | b-_22,7 | v-rain | x-Azawan | th-predict | h-as-of.bookmark | v-walk
 
 *From then, it would rain. Azawan would walk.*
 :::
 
-**2.** `zululon hemabam vawalal helerem b_#22,7.`
+**2.** `zululon themabam vawalal helerem b_#22,7.`
 
 ::: details Show answer
 
-z-Ululon | h-plan-sketch | v-walk | h-as-of.ledger | b-_22,7
+z-Ululon | th-plan-sketch | v-walk | h-as-of.ledger | b-_22,7
 
 *As of 22 July, Ululon was going to walk.*
 :::
 
-**3.** `zululon hehegem vawalal helerem b_#22,7.`
+**3.** `zululon thehegem vawalal helerem b_#22,7.`
 
 ::: details Show answer
 
-z-Ululon | h-DECISION-modifiable | v-walk | h-as-of.ledger | b-_22,7
+z-Ululon | th-DECISION-modifiable | v-walk | h-as-of.ledger | b-_22,7
 
 *Ululon has decided to walk — the pick is revisable now; the walking is as of 22 July.*
 :::

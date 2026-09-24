@@ -1,93 +1,93 @@
 sense_form,pos,emoji,kind,gloss,definition,mnemonic
-alodom,h,🗳️,need,autonomy,autonomy need (choice / agency),ballot records choice; choice is agency and self-direction
+alodom,th,🗳️,need,autonomy,autonomy need (choice / agency),ballot records choice; choice is agency and self-direction
 alodom,w,🗳️,need,autonomy,autonomy need (choice / agency),ballot records choice; choice is agency and self-direction
-olozom,h,🧰,need,competence,competence need (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill
+olozom,th,🧰,need,competence,competence need (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill
 olozom,w,🧰,need,competence,competence need (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill
-onogom,h,🪢,need,relatedness,relatedness need (bond / belonging),knot ties two ends; bond is connection and care
+onogom,th,🪢,need,relatedness,relatedness need (bond / belonging),knot ties two ends; bond is connection and care
 onogom,w,🪢,need,relatedness,relatedness need (bond / belonging),knot ties two ends; bond is connection and care
-awerom,h,🍓,need,pleasure,pleasure need (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff
+awerom,th,🍓,need,pleasure,pleasure need (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff
 awerom,w,🍓,need,pleasure,pleasure need (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff
-uhuhem,h,🛡️,need,survival,survival need (defense / safety),shield blocks blows; defense is safety and health
+uhuhem,th,🛡️,need,survival,survival need (defense / safety),shield blocks blows; defense is safety and health
 uhuhem,w,🛡️,need,survival,survival need (defense / safety),shield blocks blows; defense is safety and health
-egem,h,🥚,need,need,unspecified need (potential),egg holds unrealized life; potential names a need without picking which
+egem,th,🥚,need,need,unspecified need (potential),egg holds unrealized life; potential names a need without picking which
 egem,w,🥚,need,need,unspecified need (potential),egg holds unrealized life; potential names a need without picking which
-uvuvum,h,🎣,evidential,WITNESSED,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot)
+uvuvum,th,🎣,evidential,WITNESSED,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot)
 uvuvum,w,🎣,evidential,WITNESSED,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot)
-adezem,h,👁️‍🗨️,evidential,LIVE,live evidential (present observation / concurrent access),eye-in-speech attests while the scene is in view; live is seeing-and-saying now (not memory)
+adezem,th,👁️‍🗨️,evidential,LIVE,live evidential (present observation / concurrent access),eye-in-speech attests while the scene is in view; live is seeing-and-saying now (not memory)
 adezem,w,👁️‍🗨️,evidential,LIVE,live evidential (present observation / concurrent access),eye-in-speech attests while the scene is in view; live is seeing-and-saying now (not memory)
-eregom,h,⏺️,evidential,RECORDED,recorded evidential (on record / captured),record button preserves now; record is playback of what was kept
+eregom,th,⏺️,evidential,RECORDED,recorded evidential (on record / captured),record button preserves now; record is playback of what was kept
 eregom,w,⏺️,evidential,RECORDED,recorded evidential (on record / captured),record button preserves now; record is playback of what was kept
-abawam,h,🐾,evidential,PATTERN,pattern evidential (from trail of cases),paw prints mark a trail; trail is regularity left behind
+abawam,th,🐾,evidential,PATTERN,pattern evidential (from trail of cases),paw prints mark a trail; trail is regularity left behind
 abawam,w,🐾,evidential,PATTERN,pattern evidential (from trail of cases),paw prints mark a trail; trail is regularity left behind
-unevem,h,🕵️,evidential,INFERRED,inferred evidential (from investigation),investigating follows clues; investigation is reasoned inference
+unevem,th,🕵️,evidential,INFERRED,inferred evidential (from investigation),investigating follows clues; investigation is reasoned inference
 unevem,w,🕵️,evidential,INFERRED,inferred evidential (from investigation),investigating follows clues; investigation is reasoned inference
-eraram,h,👂,evidential,TOLD,told evidential (hearsay / reportative),ear enables listening; listening under /h/ is hearsay channel
-eraram,w,👂,evidential,TOLD,told evidential (hearsay / reportative),ear enables listening; listening under /h/ is hearsay channel
-eherem,h,❤️,evidential,FELT,felt evidential (gut-known / proprioceptive),heart marks gut feeling; gut-felt is affective knowing channel
+eraram,th,👂,evidential,TOLD,told evidential (hearsay / reportative),ear enables listening; listening under /th/ is hearsay channel
+eraram,w,👂,evidential,TOLD,told evidential (hearsay / reportative),ear enables listening; listening as a /w/ detail is hearsay channel
+eherem,th,❤️,evidential,FELT,felt evidential (gut-known / proprioceptive),heart marks gut feeling; gut-felt is affective knowing channel
 eherem,w,❤️,evidential,FELT,felt evidential (gut-known / proprioceptive),heart marks gut feeling; gut-felt is affective knowing channel
-orolom,h,📜,evidential,STORY,story evidential (tale / lore / anecdote),scroll holds a tale; tale is narrative framing channel
+orolom,th,📜,evidential,STORY,story evidential (tale / lore / anecdote),scroll holds a tale; tale is narrative framing channel
 orolom,w,📜,evidential,STORY,story evidential (tale / lore / anecdote),scroll holds a tale; tale is narrative framing channel
-onenom,h,💰,residue,RESIDUE,residue mood (outcome still on the current tally),money bag holds what is owed; residue is an unpaid balance still on the books
+onenom,th,💰,residue,RESIDUE,residue mood (outcome still on the current tally),money bag holds what is owed; residue is an unpaid balance still on the books
 onenom,w,💰,residue,RESIDUE,residue mood (outcome still on the current tally),money bag holds what is owed; residue is an unpaid balance still on the books
-emebem,h,🪹,former_climate,FORMER,former-climate mood (not the climate claimed now),empty nest shows the nesting season is over; former climate is usual weather that is not current
+emebem,th,🪹,former_climate,FORMER,former-climate mood (not the climate claimed now),empty nest shows the nesting season is over; former climate is usual weather that is not current
 emebem,w,🪹,former_climate,FORMER,former-climate mood (not the climate claimed now),empty nest shows the nesting season is over; former climate is usual weather that is not current
-emabam,h,🗺️,plan,plan-sketch,plan mood sketch map-resolution (direction-only intention),map charts a route; sketch plan is intention without steps
+emabam,th,🗺️,plan,plan-sketch,plan mood sketch map-resolution (direction-only intention),map charts a route; sketch plan is intention without steps
 emabam,w,🗺️,plan,plan-sketch,plan mood sketch map-resolution (direction-only intention),map charts a route; sketch plan is intention without steps
-emabal,h,🗺️,plan,plan-itinerary,plan mood itinerary map-resolution (steps on the map),map charts a route; itinerary plan fills in how
+emabal,th,🗺️,plan,plan-itinerary,plan mood itinerary map-resolution (steps on the map),map charts a route; itinerary plan fills in how
 emabal,w,🗺️,plan,plan-itinerary,plan mood itinerary map-resolution (steps on the map),map charts a route; itinerary plan fills in how
-emaban,h,🗺️,plan,plan,plan mood proper (this plan-word names a particular object),map charts a route; -n is ordinary proper not a map grain
+emaban,th,🗺️,plan,plan,plan mood proper (this plan-word names a particular object),map charts a route; -n is ordinary proper not a map grain
 emaban,w,🗺️,plan,plan,plan mood proper (this plan-word names a particular object),map charts a route; -n is ordinary proper not a map grain
-emabar,h,🗺️,plan,plan-atlas,plan mood atlas map-resolution (includes backups; fully prepared),map charts a route; atlas plan is so detailed it includes backups
+emabar,th,🗺️,plan,plan-atlas,plan mood atlas map-resolution (includes backups; fully prepared),map charts a route; atlas plan is so detailed it includes backups
 emabar,w,🗺️,plan,plan-atlas,plan mood atlas map-resolution (includes backups; fully prepared),map charts a route; atlas plan is so detailed it includes backups
-elezom,h,🔭,predict,predict,predict mood (later-event forecast),telescope shows what is far; forecast looks ahead at a distance
+elezom,th,🔭,predict,predict,predict mood (later-event forecast),telescope shows what is far; forecast looks ahead at a distance
 elezom,w,🔭,predict,predict,predict mood (later-event forecast),telescope shows what is far; forecast looks ahead at a distance
-ehegel,h,✅,decision,DECISION-irreversible,decision mood irreversible changeability (settled pick),checkmark confirms a pick; irreversible decision is settled as final
+ehegel,th,✅,decision,DECISION-irreversible,decision mood irreversible changeability (settled pick),checkmark confirms a pick; irreversible decision is settled as final
 ehegel,w,✅,decision,DECISION-irreversible,decision mood irreversible changeability (settled pick),checkmark confirms a pick; irreversible decision is settled as final
-ehegem,h,✅,decision,DECISION-modifiable,decision mood modifiable changeability (open to revision),checkmark confirms a pick; modifiable decision stays open to change
+ehegem,th,✅,decision,DECISION-modifiable,decision mood modifiable changeability (open to revision),checkmark confirms a pick; modifiable decision stays open to change
 ehegem,w,✅,decision,DECISION-modifiable,decision mood modifiable changeability (open to revision),checkmark confirms a pick; modifiable decision stays open to change
-ehegen,h,✅,decision,DECISION,decision mood proper (this decision-word names a particular object),checkmark confirms a pick; -n is ordinary proper not a firmness
+ehegen,th,✅,decision,DECISION,decision mood proper (this decision-word names a particular object),checkmark confirms a pick; -n is ordinary proper not a firmness
 ehegen,w,✅,decision,DECISION,decision mood proper (this decision-word names a particular object),checkmark confirms a pick; -n is ordinary proper not a firmness
-eheger,h,✅,decision,DECISION-temporary,decision mood temporary changeability (pick for now),checkmark confirms a pick; temporary decision holds only this moment
+eheger,th,✅,decision,DECISION-temporary,decision mood temporary changeability (pick for now),checkmark confirms a pick; temporary decision holds only this moment
 eheger,w,✅,decision,DECISION-temporary,decision mood temporary changeability (pick for now),checkmark confirms a pick; temporary decision holds only this moment
-odohom,h,💭,may,MAY,may mood (could be; default),thought balloon: the scene may be so; -m does not find out and does not shrug it off
+odohom,th,💭,may,MAY,may mood (could be; default),thought balloon: the scene may be so; -m does not find out and does not shrug it off
 odohom,w,💭,may,MAY,may mood (could be; default),thought balloon: the scene may be so; -m does not find out and does not shrug it off
-odohol,h,💭,may,MAY-find-out,may mood find-out hold (I'll / let's find out),"thought balloon plus looking: could be, and you are seeking"
+odohol,th,💭,may,MAY-find-out,may mood find-out hold (I'll / let's find out),"thought balloon plus looking: could be, and you are seeking"
 odohol,w,💭,may,MAY-find-out,may mood find-out hold (I'll / let's find out),"thought balloon plus looking: could be, and you are seeking"
-odohon,h,💭,may,MAY,may mood proper (this may-word names a particular object),thought balloon as a named caption; -n is ordinary proper not a hold
+odohon,th,💭,may,MAY,may mood proper (this may-word names a particular object),thought balloon as a named caption; -n is ordinary proper not a hold
 odohon,w,💭,may,MAY,may mood proper (this may-word names a particular object),thought balloon as a named caption; -n is ordinary proper not a hold
-odohor,h,💭,may,MAY-who-knows,may mood who-knows hold (leave unsettled; may never know),"thought balloon with a shrug: could be, and you are not seeking — including if you never know"
+odohor,th,💭,may,MAY-who-knows,may mood who-knows hold (leave unsettled; may never know),"thought balloon with a shrug: could be, and you are not seeking — including if you never know"
 odohor,w,💭,may,MAY-who-knows,may mood who-knows hold (leave unsettled; may never know),"thought balloon with a shrug: could be, and you are not seeking — including if you never know"
-adadem,h,🎭,notional,NOTIONAL,notional mood default hold (imagining a scene without a further purpose),theater mask marks an imagined scene without a special purpose
+adadem,th,🎭,notional,NOTIONAL,notional mood default hold (imagining a scene without a further purpose),theater mask marks an imagined scene without a special purpose
 adadem,w,🎭,notional,NOTIONAL,notional mood default hold (imagining a scene without a further purpose),theater mask marks an imagined scene without a special purpose
-adadel,h,🎭,notional,NOTIONAL-explore,notional mood explore hold (testing a possibility or assumption),theater mask opens a scene to explore what might follow
+adadel,th,🎭,notional,NOTIONAL-explore,notional mood explore hold (testing a possibility or assumption),theater mask opens a scene to explore what might follow
 adadel,w,🎭,notional,NOTIONAL-explore,notional mood explore hold (testing a possibility or assumption),theater mask opens a scene to explore what might follow
-adaden,h,🎭,notional,NOTIONAL,notional mood proper (this as-if-word names a particular object),theater as a named setup; -n is ordinary proper not a hold
+adaden,th,🎭,notional,NOTIONAL,notional mood proper (this as-if-word names a particular object),theater as a named setup; -n is ordinary proper not a hold
 adaden,w,🎭,notional,NOTIONAL,notional mood proper (this as-if-word names a particular object),theater as a named setup; -n is ordinary proper not a hold
-adader,h,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action
+adader,th,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action
 adader,w,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action
-ogegam,h,🌊,emotion_act,HIGH,emotion HIGH activation (flood / surge),ocean wave surges; flood is high-arousal water motion
+ogegam,th,🌊,emotion_act,HIGH,emotion HIGH activation (flood / surge),ocean wave surges; flood is high-arousal water motion
 ogegam,w,🌊,emotion_act,HIGH,emotion HIGH activation (flood / surge),ocean wave surges; flood is high-arousal water motion
-ejelom,h,🪼,emotion_act,MED,emotion MED activation (flow / drift),jellyfish drifts with current; flow is mid motion of water
+ejelom,th,🪼,emotion_act,MED,emotion MED activation (flow / drift),jellyfish drifts with current; flow is mid motion of water
 ejelom,w,🪼,emotion_act,MED,emotion MED activation (flow / drift),jellyfish drifts with current; flow is mid motion of water
-ozowom,h,🌨️,emotion_act,LOW,emotion LOW activation (stillness / slack),snow quiets the landscape; stillness is calm slack water
+ozowom,th,🌨️,emotion_act,LOW,emotion LOW activation (stillness / slack),snow quiets the landscape; stillness is calm slack water
 ozowom,w,🌨️,emotion_act,LOW,emotion LOW activation (stillness / slack),snow quiets the landscape; stillness is calm slack water
-abobom,h,🍼,emotion_locus,INTERNAL,emotion INTERNAL locus (charge held inside),bottle holds liquid inside; bottle is in-vessel charge
+abobom,th,🍼,emotion_locus,INTERNAL,emotion INTERNAL locus (charge held inside),bottle holds liquid inside; bottle is in-vessel charge
 abobom,w,🍼,emotion_locus,INTERNAL,emotion INTERNAL locus (charge held inside),bottle holds liquid inside; bottle is in-vessel charge
-orurum,h,🫗,emotion_locus,EXTERNAL,emotion EXTERNAL locus (charge toward others),pour directs liquid outward; pour is other-directed charge
+orurum,th,🫗,emotion_locus,EXTERNAL,emotion EXTERNAL locus (charge toward others),pour directs liquid outward; pour is other-directed charge
 orurum,w,🫗,emotion_locus,EXTERNAL,emotion EXTERNAL locus (charge toward others),pour directs liquid outward; pour is other-directed charge
-anedem,h,🕯️,emotion_locus,CIRCUM,emotion CIRCUM locus (ambient / situational field),candle light fills the room; awash is charge in the surrounding field
+anedem,th,🕯️,emotion_locus,CIRCUM,emotion CIRCUM locus (ambient / situational field),candle light fills the room; awash is charge in the surrounding field
 anedem,w,🕯️,emotion_locus,CIRCUM,emotion CIRCUM locus (ambient / situational field),candle light fills the room; awash is charge in the surrounding field
-egeram,h,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host
+egeram,th,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host
 egeram,w,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host
-ugudol,h,⛅,universality,COMMON,universality COMMON warrant (usual / exceptions expected),weather is the usual climate; usual warrant expects exceptions
+ugudol,th,⛅,universality,COMMON,universality COMMON warrant (usual / exceptions expected),weather is the usual climate; usual warrant expects exceptions
 ugudol,w,⛅,universality,COMMON,universality COMMON warrant (usual / exceptions expected),weather is the usual climate; usual warrant expects exceptions
-abulul,h,💊,universality,UNCOUNTERED,universality UNCOUNTERED warrant (no counterexample found),pill remedies what ails; uncountered is no case comes to mind
+abulul,th,💊,universality,UNCOUNTERED,universality UNCOUNTERED warrant (no counterexample found),pill remedies what ails; uncountered is no case comes to mind
 abulul,w,💊,universality,UNCOUNTERED,universality UNCOUNTERED warrant (no counterexample found),pill remedies what ails; uncountered is no case comes to mind
-arazal,h,⭐,universality,FORMAL,universality FORMAL warrant (definition / proof),star chart fixes constellations; formal is proof-level exceptionlessness
+arazal,th,⭐,universality,FORMAL,universality FORMAL warrant (definition / proof),star chart fixes constellations; formal is proof-level exceptionlessness
 arazal,w,⭐,universality,FORMAL,universality FORMAL warrant (definition / proof),star chart fixes constellations; formal is proof-level exceptionlessness
-abelel,h,🍎,universality,NATURAL,universality NATURAL warrant (natural necessity),apple falls by nature; natural is necessity in the world
+abelel,th,🍎,universality,NATURAL,universality NATURAL warrant (natural necessity),apple falls by nature; natural is necessity in the world
 abelel,w,🍎,universality,NATURAL,universality NATURAL warrant (natural necessity),apple falls by nature; natural is necessity in the world
-ebebel,h,🌶️,universality,RULE,universality RULE warrant (holds inside named frame),board game has its rules; rule-frame scopes exceptionlessness
+ebebel,th,🌶️,universality,RULE,universality RULE warrant (holds inside named frame),board game has its rules; rule-frame scopes exceptionlessness
 ebebel,w,🌶️,universality,RULE,universality RULE warrant (holds inside named frame),board game has its rules; rule-frame scopes exceptionlessness
 onunan,z,☯️,benchmark,Average,judgment benchmark Average (population mean),yin-yang holds balance; balance is the average standard
 onunan,d,☯️,benchmark,Average,judgment benchmark Average (population mean),yin-yang holds balance; balance is the average standard
@@ -108,13 +108,13 @@ oloben,z,🌐,benchmark,Everyone,judgment benchmark Everyone (universal referenc
 oloben,d,🌐,benchmark,Everyone,judgment benchmark Everyone (universal reference class),globe links every place; the connected whole is the universal class
 oloben,b,🌐,benchmark,Everyone,judgment benchmark Everyone (universal reference class),globe links every place; the connected whole is the universal class
 onunul,g,🪙,identity,SAME,SAME identity (identical-to / same-as),coin has two faces one substance; same is one referent two labels
-adorom,h,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force
+adorom,th,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force
 adorom,g,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force
-ezazem,h,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if
+ezazem,th,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if
 ezazem,g,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if
-urugum,h,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),brick stacks as foundation; foundation is because-reason under claim
+urugum,th,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),brick stacks as foundation; foundation is because-reason under claim
 urugum,g,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),brick stacks as foundation; foundation is because-reason under claim
-eberom,h,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop
+eberom,th,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop
 eberom,g,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop
 ezebam,h,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite
 ezebam,g,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite
@@ -136,7 +136,7 @@ obomam,w,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now
 obomar,h,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/
 obomar,g,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/
 obomar,w,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/
-egegam,h,⚙️,cause,CAUSE,CAUSE mood (mechanism framing),gear drives mechanism; mechanism frames how the link works
+egegam,th,⚙️,cause,CAUSE,CAUSE mood (mechanism framing),gear drives mechanism; mechanism frames how the link works
 egegam,w,⚙️,cause,CAUSE,CAUSE mood (mechanism framing),gear drives mechanism; mechanism frames how the link works
 an,v,,join_act,includes,join-act includes or adds object,set join a+n as verb; includes adds this object to the set
 an,g,,join_relation,including,join-relation including (adjective + argument),set join a+n on /g/; including frames host with argument

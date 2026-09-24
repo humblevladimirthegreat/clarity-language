@@ -82,7 +82,7 @@ Agalan’s [values](values.md) name a closed inventory of **needs** (autonomy, c
 
 | Stance | Job |
 |--------|-----|
-| Met | This serves the need, including how you contact the payoff (gratitude / savoring) — an adjective on the noun, or `/h/` on the event |
+| Met | This serves the need, including how you contact the payoff (gratitude / savoring) — an adjective on the noun, or `/th/` on the event |
 | Motive | Acting *for* this need, including where the reason stands |
 | Prescription | Deontic on the host act for this need — ending marks the move's warrant or aim (**invited / offered / protective**) |
 | Unmet | Costs the need, including how changeable that is |
@@ -154,7 +154,7 @@ Saying whether a list is open or closed helps you notice false dichotomies, and 
 
 Everyday English *because* / *leads to* / *have to* blur sufficient vs necessary, world-reason vs speaker-grounds, and wish vs natural law.
 
-[Causation](causation.md) keeps those forks on two-place poles: *if* / *only if* / *because* / *iff*, on `/h/` for an event and `/ɡ/` for a noun. Intended *so that* is a separate pole (**`holalam`**, [so that](dependents.md#so-that)): the host is aimed at that outcome, which is not asserted like *because*, and is not a [need-motive](values.md#value-preference) (`xo`). When the “rule” is really an ought (*hard work should earn promotion*), use [values](values.md) [prescription](values.md#value-force) (**`xe`**) on the act — not a causation pole.
+[Causation](causation.md) keeps those forks on two-place poles: *if* / *only if* / *because* / *iff*, on `/th/` for an event and `/ɡ/` for a noun. Intended *so that* is a separate pole (**`holalam`**, [so that](dependents.md#so-that)): the host is aimed at that outcome, which is not asserted like *because*, and is not a [need-motive](values.md#value-preference) (`xo`). When the “rule” is really an ought (*hard work should earn promotion*), use [values](values.md) [prescription](values.md#value-force) (**`xe`**) on the act — not a causation pole.
 
 Keeping those forks apart helps you stop treating wishes and habits as if the world must obey them.
 

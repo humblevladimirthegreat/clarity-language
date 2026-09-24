@@ -322,11 +322,11 @@ z-Ululon | v-swim | h-fire | h-always-except
 
 ### Occasions vs a dependent *when*
 
-English *when* / *if* can name a **following sentence** (*if Azawan walks*). Write that as an adverb plus extra noun: `/h/` plus `/b/` [**`barl`**](dependents.md#dependent-clauses). The main sentence stops after **`barl`**; the next sentence is the content. Restrictors still list **phrase** times or cases immediately before the restrictor. Use a restrictor when the occasions are words in the adverb slot; use **`barl`** when the occasion is another full clause.
+English *when* / *if* can name a **following sentence** (*if Azawan walks*). Write that as a pole word plus extra noun: `/h/` (*when*) or `/th/` (*if*) plus `/b/` [**`barl`**](dependents.md#dependent-clauses). The main sentence stops after **`barl`**; the next sentence is the content. Restrictors still list **phrase** times or cases immediately before the restrictor. Use a restrictor when the occasions are words in the adverb slot; use **`barl`** when the occasion is another full clause.
 
-> `zuhubun vuzunul hadorom barl zazawan vawalal.`
+> `zuhubun vuzunul thadorom barl zazawan vawalal.`
 >
-> z-Uhubun | v-sing | h-if | b-that-clause | z-Azawan | v-walk
+> z-Uhubun | v-sing | th-if | b-that-clause | z-Azawan | v-walk
 >
 > "Uhubun sings if Azawan walks."
 
@@ -486,9 +486,9 @@ z-Azawan | w-rain | w-night | w-when-one | g-happy
 **8.** *Uhubun screams if Ululon falls.*
 
 ::: details Show answer
-`zuhubun vazagal hadorom barl zululon vodowol.`
+`zuhubun vazagal thadorom barl zululon vodowol.`
 
-z-Uhubun | v-scream | h-if | b-that-clause | z-Ululon | v-down
+z-Uhubun | v-scream | th-if | b-that-clause | z-Ululon | v-down
 :::
 
 #### Agalan → English
@@ -547,11 +547,11 @@ z-Uhubun | v-climb | h-fog | h-not-when
 *Uhubun does not climb when there is fog.*
 :::
 
-**7.** `zazawan vazagal hadorom barl zululon vodowol.`
+**7.** `zazawan vazagal thadorom barl zululon vodowol.`
 
 ::: details Show answer
 
-z-Azawan | v-scream | h-if | b-that-clause | z-Ululon | v-down
+z-Azawan | v-scream | th-if | b-that-clause | z-Ululon | v-down
 
 *Azawan screams if Ululon falls.*
 :::

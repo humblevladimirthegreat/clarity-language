@@ -13,6 +13,7 @@ const LETTER_IPA: Record<string, string> = {
   o: "o",
   a: "ɑ",
   h: "ɦ",
+  th: "ð",
   w: "w",
   g: "ɡ",
   d: "d",
@@ -47,7 +48,7 @@ export type PhonemeWord = {
   ipa: string;
 };
 
-const NATIVE_WORD = /^[aegouhwdjbzmnvlrx]+$/;
+const NATIVE_WORD = /^(?:th|[aegouhwdjbzmnvlrx])+$/;
 
 export function isNativeSurface(raw: string): boolean {
   return NATIVE_WORD.test(raw);
@@ -82,13 +83,13 @@ function phonesOf(raw: string): Phone[] {
   const phones: Phone[] = [];
   let i = 0;
   while (i < raw.length) {
-    const letter = raw[i]!;
+    const letter = raw.startsWith("th", i) ? "th" : raw[i]!;
     const ipa = LETTER_IPA[letter];
     if (!ipa) {
       throw new Error(`No phoneme for letter ${letter} in ${raw}`);
     }
     phones.push({ letter, ipa, vowel: VOWELS.has(letter), index: i });
-    i += 1;
+    i += letter.length;
   }
   return phones;
 }

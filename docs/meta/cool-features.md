@@ -8,9 +8,9 @@ Use this document for styling examples when producing more posts, and seeing wha
 
 English *I think* often smuggles a **guess** (*I think Ululon is leaving* = maybe that is so) without saying whether you are checking, and rumination can sound like an investigation that never actually looks. Agalan keeps the ordinary verb (*leaves*, *punches*, *cries*) and adds a small `/h/` word **`odoho`** (**MAY**): the scene *could be* so. That is not a warrant, and it is not the verb *to think*.
 
-> `zululon hodohom vebarul duhubun.`
+> `zululon thodohom vebarul duhubun.`
 >
-> z-Ululon | h-MAY | v-departure | d-Uhubun
+> z-Ululon | th-MAY | v-departure | d-Uhubun
 >
 > "Ululon may be leaving Uhubun."
 
@@ -24,27 +24,27 @@ The ending on that `/h/` word is what you are doing with the balloon **this sent
 
 | Form | Stance | English |
 |------|--------|---------|
-| `hodohom` | *could be* (default) | *may* |
-| `hodohol` | seeking | *may — I'll find out* / *let's find out* |
-| `hodohor` | not seeking (including if you never know) | *may — who knows* |
+| `thodohom` | *could be* (default) | *may* |
+| `thodohol` | seeking | *may — I'll find out* / *let's find out* |
+| `thodohor` | not seeking (including if you never know) | *may — who knows* |
 
-> `zululon hodohol vubunul dazawan.`
+> `zululon thodohol vubunul dazawan.`
 >
-> z-Ululon | h-MAY-find-out | v-punch | d-Azawan
+> z-Ululon | th-MAY-find-out | v-punch | d-Azawan
 >
 > "Ululon may be punching Azawan — I'll find out."
 
-> `zuhubun hodohor vogorol.`
+> `zuhubun thodohor vogorol.`
 >
-> z-Uhubun | h-MAY-who-knows | v-cry
+> z-Uhubun | th-MAY-who-knows | v-cry
 >
 > "Uhubun may be crying — who knows."
 
 Same word on a yes/no ask when the question *is* the seeking:
 
-> `jol zazawan hodohol vubunul dululon.`
+> `jol zazawan thodohol vubunul dululon.`
 >
-> j-question | z-Azawan | h-MAY-find-out | v-punch | d-Ululon
+> j-question | z-Azawan | th-MAY-find-out | v-punch | d-Ululon
 >
 > "Might Azawan be punching Ululon? — let's find out."
 

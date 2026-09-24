@@ -360,6 +360,7 @@ function peg$parse(input, options) {
   const peg$c58 = "rl";
   const peg$c59 = "rm";
   const peg$c60 = "rn";
+  const peg$c61 = "th";
 
   const peg$r0 = /^[ \t\n\r]/;
   const peg$r1 = /^[@~]/;
@@ -445,9 +446,10 @@ function peg$parse(input, options) {
   const peg$e68 = peg$literalExpectation("rl", false);
   const peg$e69 = peg$literalExpectation("rm", false);
   const peg$e70 = peg$literalExpectation("rn", false);
-  const peg$e71 = peg$classExpectation(["z", "d", "b", "v", "g", "w", "h", "x", "j"], false, false, false);
-  const peg$e72 = peg$classExpectation(["l", "m", "n", "r"], false, false, false);
-  const peg$e73 = peg$classExpectation(["h", "w", "d", "j", "b", "g", "z", "m", "n", "v", "l", "r"], false, false, false);
+  const peg$e71 = peg$literalExpectation("th", false);
+  const peg$e72 = peg$classExpectation(["z", "d", "b", "v", "g", "w", "h", "x", "j"], false, false, false);
+  const peg$e73 = peg$classExpectation(["l", "m", "n", "r"], false, false, false);
+  const peg$e74 = peg$classExpectation(["h", "w", "d", "j", "b", "g", "z", "m", "n", "v", "l", "r"], false, false, false);
 
   function peg$f0(word) {    return word;  }
   function peg$f1(head, w) {    return w;  }
@@ -5122,12 +5124,21 @@ function peg$parse(input, options) {
     let s0, s1;
 
     s0 = peg$currPos;
-    s1 = input.charAt(peg$currPos);
-    if (peg$r9.test(s1)) {
-      peg$currPos++;
+    if (input.substr(peg$currPos, 2) === peg$c61) {
+      s1 = peg$c61;
+      peg$currPos += 2;
     } else {
       s1 = peg$FAILED;
       if (peg$silentFails === 0) { peg$fail(peg$e71); }
+    }
+    if (s1 === peg$FAILED) {
+      s1 = input.charAt(peg$currPos);
+      if (peg$r9.test(s1)) {
+        peg$currPos++;
+      } else {
+        s1 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$e72); }
+      }
     }
     if (s1 !== peg$FAILED) {
       peg$savedPos = s0;
@@ -5171,7 +5182,7 @@ function peg$parse(input, options) {
             peg$currPos++;
           } else {
             s1 = peg$FAILED;
-            if (peg$silentFails === 0) { peg$fail(peg$e72); }
+            if (peg$silentFails === 0) { peg$fail(peg$e73); }
           }
           if (s1 !== peg$FAILED) {
             peg$savedPos = s0;
@@ -5304,7 +5315,7 @@ function peg$parse(input, options) {
       peg$currPos++;
     } else {
       s0 = peg$FAILED;
-      if (peg$silentFails === 0) { peg$fail(peg$e73); }
+      if (peg$silentFails === 0) { peg$fail(peg$e74); }
     }
 
     return s0;

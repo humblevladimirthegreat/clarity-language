@@ -16,9 +16,9 @@ const TRAILING_SENTENCE = new Set([".", "?", "!", ",", ":", ";", '"', "'"]);
 const LEADING_QUOTE = new Set(['"', "'"]);
 
 /** Letters, digits, and morph glyphs that can appear in a spelled Agalan word. */
-const WORD_CHAR_RE = /^[aeouhwdjbgzmnvlrx0-9+\-#_.=@~%±[\]{}()]+$/;
+const WORD_CHAR_RE = /^[aeouhtwdjbgzmnvlrx0-9+\-#_.=@~%±[\]{}()]+$/;
 
-const TEACHING_GLOSS_RE = /^[zdbvgwhxj]-[a-z@]+$/;
+const TEACHING_GLOSS_RE = /^(?:th|[zdbvgwhxj])-[a-z@]+$/;
 
 /** Mid-word x family fragments (`x`, `xa`, `ax`), not full words. */
 const X_FRAGMENT_RE = /^[aeou]?x[aeou]?$/;
@@ -87,11 +87,12 @@ function hasMorphGlyph(core: string): boolean {
   return /[x<>[\]{}+#_%]/.test(core);
 }
 
-/** PoS + published-shaped root, no ending — lemma citation like `hegera`. */
+/** PoS + published-shaped root, no ending — lemma citation like `thegera`. */
 function prefixedBareRoot(core: string): string | null {
   if (core.length < 4) return null;
-  if (!POS.includes(core[0]!)) return null;
-  const rest = core.slice(1);
+  const posLen = core.startsWith("th") ? 2 : POS.includes(core[0]!) ? 1 : 0;
+  if (posLen === 0) return null;
+  const rest = core.slice(posLen);
   if (isClarityRootShape(rest) && rest.length >= 3) return rest;
   return null;
 }
@@ -102,9 +103,9 @@ function prefixedBareRoot(core: string): string | null {
  */
 function looksLikeFullSpelledWord(core: string): boolean {
   if (unmatchedBrackets(core)) return false;
-  if (/^[zdbvgwhxj][+#_]$/.test(core)) return false;
+  if (/^(?:th|[zdbvgwhxj])[+#_]$/.test(core)) return false;
   if (hasMorphGlyph(core)) return true;
-  if (/^[zdbvgwhxj][aeou](?:[hwdjbgzmnvlr][aeou])+[lmnr]x?$/.test(core)) return true;
+  if (/^(?:th|[zdbvgwhxj])[aeou](?:[hwdjbgzmnvlr][aeou])+[lmnr]x?$/.test(core)) return true;
   if (/^[aeou](?:[hwdjbgzmnvlr][aeou])+[lmnr]x?$/.test(core)) return true;
   return false;
 }
@@ -123,7 +124,7 @@ export function isAgalanLintCandidate(core: string): boolean {
   const stripped = withoutForeignPayloads(core);
   if (/[A-Z]/.test(stripped)) return false;
   if (!WORD_CHAR_RE.test(stripped)) return false;
-  if (!/^[zdbvgwhxjaeou]/.test(core)) return false;
+  if (!/^(?:th|[zdbvgwhxjaeou])/.test(core)) return false;
   return true;
 }
 

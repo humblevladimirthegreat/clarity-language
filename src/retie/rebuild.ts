@@ -33,11 +33,12 @@ export function retieCore(
   if (bare && isClarityRootShape(core)) {
     return bare === core ? null : bare;
   }
-  if (core.length >= 4 && POS_LETTERS.includes(core[0]!)) {
-    const rest = core.slice(1);
+  const posLen = core.startsWith("th") ? 2 : POS_LETTERS.includes(core[0]!) ? 1 : 0;
+  if (core.length >= 3 + posLen && posLen > 0) {
+    const rest = core.slice(posLen);
     const mappedRest = map.get(rest);
     if (mappedRest && isClarityRootShape(rest) && rest.length >= 3) {
-      const next = `${core[0]}${mappedRest}`;
+      const next = `${core.slice(0, posLen)}${mappedRest}`;
       return next === core ? null : next;
     }
   }

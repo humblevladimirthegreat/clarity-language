@@ -72,13 +72,26 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 >
 > "A dog walks hastily."
 
+### Stance (`/th/`)
+<a id="stance-th"></a>
+
+`/h/` tells how the action happened. `/th/` tells how **you** stand toward the whole claim: how sure you are, how you know it, why it holds, or whether it is only imagined. Like `/h/`, it may sit anywhere in the sentence. `th` is considered one letter ([phonology](phonology.md#consonants)).
+
+> `zodogol thodohom vawalal.`
+>
+> z-dog | th-MAY | v-walk
+>
+> "A dog may be walking."
+
+The adverb describes the walking. The stance word describes your claim about it.
+
 ### Extra nouns (`/b/`)
 <a id="extra-nouns"></a>
 <a id="unhosted-b"></a>
 
-`/b/` names an extra person or thing. It has two jobs, and you can tell them apart from the word **immediately before** `/b/`. On this page, `/w/` grades the next `/ɡ/` or `/h/` word (or hook); `/b/` sits after that host, not after `/w/`.
+`/b/` names an extra person or thing. It has two jobs, and you can tell them apart from the word **immediately before** `/b/`. On this page, `/w/` grades the next `/ɡ/`, `/h/`, or `/th/` word (or hook); `/b/` sits after that host, not after `/w/`.
 
-**Hosted.** Some adjectives and adverbs name a **relation** that needs another person or thing (*like …*). Put that extra noun in `/b/` **right after** the `/ɡ/` or `/h/` word. Optional `/w/` detail sits **immediately before** that host, so the pair stays together. The root on the `/ɡ/` or `/h/` word names the relation; `/b/` marks the noun that completes it. More hosted roots, including *as of*, are on [relations](relations.md).
+**Hosted.** Some adjectives, adverbs, and stance words name a **relation** that needs another person or thing (*like …*). Put that extra noun in `/b/` **right after** the `/ɡ/`, `/h/`, or `/th/` word. Optional `/w/` detail sits **immediately before** that host, so the pair stays together. The root on the `/ɡ/`, `/h/`, or `/th/` word names the relation; `/b/` marks the noun that completes it. More hosted roots, including *as of*, are on [relations](relations.md).
 
 > `hurorom bazawan`
 >
@@ -98,7 +111,7 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 >
 > "A dog sleeps like Azawan."
 
-**Unhosted.** If `/b/` does **not** follow `/ɡ/` or `/h/`, it is the **recipient** or **addressee** of the verb: the person who gets the theme or hears the telling. The theme (what is given or said) stays `/d/`. At most one unhosted `/b/` per clause. This job is a person, not a place.
+**Unhosted.** If `/b/` does **not** follow `/ɡ/`, `/h/`, or `/th/`, it is the **recipient** or **addressee** of the verb: the person who gets the theme or hears the telling. The theme (what is given or said) stays `/d/`. At most one unhosted `/b/` per clause. This job is a person, not a place.
 
 > `zazawan bululon vezehel.`
 >
@@ -120,8 +133,9 @@ Role letters on this page:
 | `/b/` | extra noun: recipient of the verb, or the piece after a relation word | **b** ≈ bolted on (the extra piece) |
 | `/v/` | verb (the action) | **v** as in English *verb* |
 | `/ɡ/` | adjective (a property of the noun) | **ɡ** ≈ grade (a rating of the noun) |
-| `/w/` | extra detail on the next `/ɡ/` or `/h/` word | **w** ≈ with (stuck to that host) |
+| `/w/` | extra detail on the next `/ɡ/`, `/h/`, or `/th/` word | **w** ≈ with (stuck to that host) |
 | `/h/` | adverb (how / when / where) | **h** starts *how* / *when* / *where* |
+| `/th/` | stance (how sure, how known, why, as if) | **th** ≈ *think* (your stance on the claim) |
 | `/j/` | start a speech move | **j** ≈ jump (a new act; see [speech moves](speech-moves.md)) |
 
 
@@ -294,7 +308,7 @@ You can chain more complex units onto those extra nouns. Two complex adjectives 
 >
 > "a dog the same as Azawan, the same as Ululon"
 
-Several `/h/` units on one verb are fine (each plain `/h/`, or optional `/w/` plus `/h/` plus `/b/` together, counts as one). An unhosted recipient `/b/` may follow a finished pair (`hurorom bazawan bululon`); it still must not sit in the hosted slot after the relation word.
+Several `/h/` or `/th/` units on one verb are fine (each plain word, or optional `/w/` plus the host plus `/b/` together, counts as one). An unhosted recipient `/b/` may follow a finished pair (`hurorom bazawan bululon`); it still must not sit in the hosted slot after the relation word.
 
 **Compare with:** a [hook](hooks.md#extra-noun) with `/b/` right after the hook and no `/b/` to the left is *in* / *at* / *for*, not the recipient.
 

@@ -138,7 +138,7 @@ Published strings share one phonological root, but **concrete**, **abstract**, a
 | `guzumul` | `g-smile` | `g-uzumu(smile)-l` |
 | `guzumum` | `g-happy` | `g-uzumu(smile→happy)-m`, `g-happy-m` |
 | `huvuvul` | `h-fishing` | `h-uvuvu(fishing)-l` |
-| `huvuvum` | `h-WITNESSED` | `h-uvuvu(fishing→WITNESSED)-m` |
+| `thuvuvum` | `th-WITNESSED` | `h-uvuvu(fishing→WITNESSED)-m` |
 | `gohohum` | `g-home` | `g-ohohu(house→home)-m` |
 
 Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agalan line and from [word-endings.md](../grammar/word-endings.md). The gloss’s job is the **sense**, not a second orthography.
@@ -255,16 +255,16 @@ Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#
 
 ### Mid-word `x` families
 
-Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/values.md), keep the stance **and** the ending table (contact / prescription warrant / preference standing / changeability): `holozoxom` → `h-competence-motive-internal`, not `h-competence-x-motive`.
+Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/values.md), keep the stance **and** the ending table (contact / prescription warrant / preference standing / changeability): `tholozoxom` → `th-competence-motive-internal`, not `th-competence-x-motive`.
 
 | Family | Example Agalan | Morph gloss |
 |--------|-----------------|-------------|
 | Ordinary / name compound | `jubunexunowen` | `j-Ubune-x-Unowen` |
 | Ordinary (three roots) | `zogovexadedaxunuden` | `z-Ogove-x-Adeda-x-Unuden` |
 | Ability / values stance | `vawalaxel` | `v-walk-unable-temporary` |
-| Values stance on need | `holozoxom` | `h-competence-motive-internal` |
+| Values stance on need | `tholozoxom` | `th-competence-motive-internal` |
 | Role compound | `zaxuvugul` | `z-agent-x-fight` |
-| Span open / close | `hexal` … `xuxul` | `h-aside-x-multi` · … · `x-span-close` |
+| Span open / close | `thexal` … `xuxul` | `th-aside-x-multi` · … · `x-span-close` |
 | Number / enumeration | `x#e-` | `x-starting-with` |
 
 For **phrasal proper names**, gloss each piece (`j-Ubune-x-Unowen`, `z-Ogove-x-Adeda-x-Unuden`). Mid-word **`x`** stays visible as `-x-`. Do not put Agalan letters in the english slot, except [mention interiors](#span-interiors).
@@ -340,9 +340,9 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `zugobonx` | `z-speaker-x` | *I and associates* |
 | `zedonenx` | `z-listener-x` | *you-all* (address set) |
 | `guzumum` | `g-happy` | *happy* |
-| `huvuvum` | `h-WITNESSED` | *per memory* |
-| `hadezem` | `h-LIVE` | *from the scene* |
-| `hemabam` | `h-plan-sketch` | *as a sketch plan* |
+| `thuvuvum` | `th-WITNESSED` | *per memory* |
+| `thadezem` | `th-LIVE` | *from the scene* |
+| `themabam` | `th-plan-sketch` | *as a sketch plan* |
 | `gonunul` | `g-SAME` | *identical to* (identity host) |
 | `von` | `v-choose` | *chooses (exactly one)* |
 
@@ -358,9 +358,9 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Metaphor vs overlay vs literal
 
-> `xezebal zubur huvuvum zanunul.`
+> `xezebal zubur thuvuvum zanunul.`
 >
-> x-however | z-←Ubune-x-Unowen | h-WITNESSED | z-rain
+> x-however | z-←Ubune-x-Unowen | th-WITNESSED | z-rain
 >
 > "Still — it's raining, as I remember."
 
@@ -368,25 +368,25 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Ability + value motive
 
-> `juel zugobon vawalaxel holozoxom.`
+> `juel zugobon vawalaxel tholozoxom.`
 >
-> j-no | z-speaker | v-walk-unable-temporary | h-competence-motive-internal
+> j-no | z-speaker | v-walk-unable-temporary | th-competence-motive-internal
 >
 > "No — I can't walk right now."
 
 ### Numbered alternative + unmet pleasure
 
-> `x#e- zuzebum g#1 zugobonx haweroxur.`
+> `x#e- zuzebum g#1 zugobonx thaweroxur.`
 >
-> x-starting-with | z-problem | g-first | z-speaker-x | h-pleasure-unmet-temporary
+> x-starting-with | z-problem | g-first | z-speaker-x | th-pleasure-unmet-temporary
 >
 > "First problem: we're not enjoying this."
 
 ### Inclusive *we* (interlocutors)
 
-> `jael xezazal zahan hemabam vawalal vul.`
+> `jael xezazal zahan themabam vawalal vul.`
 >
-> j-yes | x-therefore | z-interlocutors | h-plan-sketch | v-walk | v-not
+> j-yes | x-therefore | z-interlocutors | th-plan-sketch | v-walk | v-not
 >
 > "Yes — so we're planning not to walk."
 

@@ -44,10 +44,10 @@ describe("retieCore — English substrings stay", () => {
 });
 
 describe("retieCore — Agalan tokens", () => {
-  it("rewrites overlay huhunum and citation hodom from root fields", () => {
+  it("rewrites overlay thuhunum and citation thodom from root fields", () => {
     const map = mapOf(["uhunu", "uvuvu"], ["odo", "adoro"]);
-    assert.equal(retieCore("huhunum", map), "huvuvum");
-    assert.equal(retieCore("hodom", map), "hadorom");
+    assert.equal(retieCore("thuhunum", map), "thuvuvum");
+    assert.equal(retieCore("thodom", map), "thadorom");
   });
 
   it("rewrites a mapped bare root that parseWord rejects (no ending)", () => {
@@ -57,7 +57,7 @@ describe("retieCore — Agalan tokens", () => {
 
   it("rewrites PoS plus bare root with no ending", () => {
     const map = mapOf(["owora", "emaba"]);
-    assert.equal(retieCore("howora", map), "hemaba");
+    assert.equal(retieCore("thowora", map), "themaba");
   });
 
   it("rewrites an isolated short resume whose parsed root is mapped", () => {
@@ -81,12 +81,12 @@ describe("retieCore — Agalan tokens", () => {
 describe("rewriteMarkdown mixed English", () => {
   it("reties backtick and bold-code forms beside English", () => {
     const map = mapOf(["uhunu", "uvuvu"], ["adoro", "badoro"]);
-    const input = "the level ahead of whatever sees `huhunum` and **`adoro`**.";
+    const input = "the level ahead of whatever sees `thuhunum` and **`adoro`**.";
     const { text, changes } = rewriteMarkdown(input, map);
-    assert.equal(text, "the level ahead of whatever sees `huvuvum` and **`badoro`**.");
+    assert.equal(text, "the level ahead of whatever sees `thuvuvum` and **`badoro`**.");
     assert.deepEqual(
       changes.map((c) => `${c.from}→${c.to}`),
-      ["huhunum→huvuvum", "adoro→badoro"],
+      ["thuhunum→thuvuvum", "adoro→badoro"],
     );
   });
 

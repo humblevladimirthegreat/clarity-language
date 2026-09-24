@@ -836,7 +836,7 @@ These limits apply to every join.
 
 | Limit | Pattern |
 |-------|---------|
-| One slot per chain | one subject, object, unhosted `/b/` recipient, `/ɡ/` stack, or `/w/` / `/h/` unit; hosted `/b/` stays on its `/ɡ/` or `/h/` |
+| One slot per chain | one subject, object, unhosted `/b/` recipient, `/ɡ/` stack, or `/w/` / `/h/` / `/th/` unit; hosted `/b/` stays on its `/ɡ/`, `/h/`, or `/th/` |
 | Matching role letter | every item head and the join share the first letter |
 | One right-close per flat list | nest as [fence nesting](#fence-nesting) |
 | Shared modifiers | only immediately after each join |
@@ -847,7 +847,7 @@ These limits apply to every join.
 
 **Compare with:** prefix-less **`al`** / **`am`** / … are [hooks](hooks.md). Under `/h/` `/w/`, the unit is a [restrictor](restrictors.md), not sibling *and*.
 
-*Because* / *if* use `/h/` plus `/b/` [**`barl`**](dependents.md#dependent-clauses). Floating `/h/` inside a noun, adjective, or `/b/` join does not end the list. Verb-chain `/h/` scope: [VP and clause forms](join-across-roles.md#vp-clause-forms). Each clause-level item is a full clause body.
+*Because* / *if* use `/th/` plus `/b/` [**`barl`**](dependents.md#dependent-clauses). Floating `/h/` or `/th/` inside a noun, adjective, or `/b/` join does not end the list. Verb-chain `/h/` scope: [VP and clause forms](join-across-roles.md#vp-clause-forms). Each clause-level item is a full clause body.
 
 
 ### Translation practice

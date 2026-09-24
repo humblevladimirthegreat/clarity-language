@@ -3,14 +3,14 @@ import MiniSearch from "minisearch";
 import { parseCsv } from "./csv.js";
 import type { CompoundRow } from "./lexicon-compounds.js";
 
-export const ROLE_LETTERS = ["z", "d", "b", "v", "g", "w", "h", "j", "x"] as const;
+export const ROLE_LETTERS = ["z", "d", "b", "v", "g", "w", "h", "th", "j", "x"] as const;
 
 export type RoleLetter = (typeof ROLE_LETTERS)[number];
 
 const ROLE_LETTER_SET = new Set<string>(ROLE_LETTERS);
 
 const POS_ENGLISH_LEMMA_RE = /^[a-z]+(?:-[a-z]+)*$/;
-const POS_ENGLISH_PIECE_RE = /^(m\.)?([zdbvgwhjx]):([a-z]+(?:-[a-z]+)*)$/;
+const POS_ENGLISH_PIECE_RE = /^(m\.)?(th|[zdbvgwhjx]):([a-z]+(?:-[a-z]+)*)$/;
 
 export type PosEnglishMap = {
   concrete: Partial<Record<RoleLetter, string>>;
@@ -130,8 +130,8 @@ const OVERLAY_HEADERS = [
   "mnemonic",
 ] as const;
 
-/** Single-letter PoS prefixes used when a query is a full spelled word. */
-const POS_PREFIXES = new Set(["z", "d", "b", "g", "v", "w", "h", "j", "x"]);
+/** PoS prefixes (single letters plus `th`) used when a query is a full spelled word. */
+const POS_PREFIXES = new Set(["z", "d", "b", "g", "v", "w", "h", "th", "j", "x"]);
 
 const SEARCH_FIELDS = [
   "concrete",
@@ -501,8 +501,8 @@ export function senseFormEnding(senseForm: string): string | null {
 export function splitPosPrefixedQuery(query: string): { pos: string | null; stem: string } {
   const q = query.trim().toLowerCase();
   if (q.length < 2) return { pos: null, stem: q };
-  const pos = q[0]!;
-  const stem = q.slice(1);
+  const pos = q.startsWith("th") ? "th" : q[0]!;
+  const stem = q.slice(pos.length);
   if (POS_PREFIXES.has(pos) && /^[aeiou].*[lmnr]$/.test(stem)) {
     return { pos, stem };
   }

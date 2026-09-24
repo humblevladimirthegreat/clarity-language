@@ -17,7 +17,7 @@
  * | `an` in-clause | `including.named` | proper-name phrase |
  * | `har` statement / fill-ask | `h-sometimes` / `h-when` | `-r` is unspecified occasion, not `hal` |
  * | `hual` bare | `h-always` | |
- * | `hemabam` | `h-plan-sketch` | overlay grain `-m` |
+ * | `themabam` | `th-plan-sketch` | overlay grain `-m` |
  * | mid-word `x` | always `-x-` segments | never a fused English name |
  * | house-cast `-n` | `Azawan` / `Ululon` / `Uhubun` | |
  * | mention `{…}` / spoken TYPE **o** interior | pass through the surface (`z-odogo`, `odogol`) | not the English lemma |
@@ -465,7 +465,7 @@ export function normalizeLooseEnglish(loose: string): string {
   return t;
 }
 
-const MORPH_POS_PREFIX_RE = /^[zdbvgwhxj]l?-(.+)$/;
+const MORPH_POS_PREFIX_RE = /^(?:th|[zdbvgwhxj])l?-(.+)$/;
 
 function morphSegmentBodyForLooseCompare(segment: string): string {
   const m = MORPH_POS_PREFIX_RE.exec(segment.trim());
@@ -495,7 +495,7 @@ export function morphRedundantWithLoose(
 }
 
 const MORPH_TOKEN_RE =
-  /^(?:[zdbvgwhxj]l?-)?(?:←)?[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]*(?:-x-[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]+)*(?:-x)?$|^[<>^]$|^\^-start$|^\^-end$/;
+  /^(?:(?:th|[zdbvgwhxj])l?-)?(?:←)?[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]*(?:-x-[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]+)*(?:-x)?$|^[<>^]$|^\^-start$|^\^-end$/;
 
 export function looksLikeMorphLine(line: string): boolean {
   const trimmed = line.trim();
@@ -708,7 +708,7 @@ function contextFor(
   }
   if (word.reading === "restrictor") {
     const prev = words[index - 1];
-    ctx.restrictorListed = Boolean(prev && (prev.pos === "h" || prev.pos === "w"));
+    ctx.restrictorListed = Boolean(prev && (prev.pos === "h" || prev.pos === "th" || prev.pos === "w"));
   }
   return ctx;
 }

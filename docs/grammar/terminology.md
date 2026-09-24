@@ -10,7 +10,7 @@ SMALLCAPS tags and series names as the lessons print them.
 
 ### Mood tags
 
-Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#adverb) `/h/`).
+Closed psychological [stance](#stance) `/th/` (and `/ɡ/` on causal poles; not ordinary [adverb](#adverb) `/h/`).
 
 | Label | Gloss | Teach |
 |-------|-------|--------|
@@ -114,7 +114,7 @@ Ordinary manner `/h/`.
 
 [Clause](clause.md#adverbs-h)
 
-**Compare with:** [mood tags](#mood-tags) are closed psychological `/h/` only.
+**Compare with:** [mood tags](#mood-tags) are closed psychological [stance](#stance) `/th/`, not `/h/`.
 
 ### Ambient magnitude
 
@@ -144,7 +144,7 @@ Complex `/h/` + `/b/` (**`ahaza`**) *as for X*.
 
 ### Aside
 
-Span TYPE **e** (`h(…)`).
+Span TYPE **e** (`th(…)`).
 
 [Spans](spans.md#asides)
 
@@ -168,7 +168,7 @@ Digitless exponent naming a magnitude band (`g+e0`, `g+e3`).
 
 ### Binder
 
-Inside a scope island: scope-taking `/h/` and/or a join.
+Inside a scope island: scope-taking `/h/` or `/th/` and/or a join.
 
 [Spans](spans.md#scope-islands)
 
@@ -339,19 +339,19 @@ Reason for the *could be* (**MAY**), not world **BECAUSE**.
 
 ### Evidentiality
 
-Closed `/h/` how-you-know roots.
+Closed `/th/` how-you-know roots.
 
 [Knowing](knowing.md#evidentiality)
 
 ### Residue / former climate
 
-Closed `/h/` episode standing: leftover on the tally, or usual weather you are not claiming now. Not past tense.
+Closed `/th/` episode standing: leftover on the tally, or usual weather you are not claiming now. Not past tense.
 
 [Knowing](knowing.md#residue)
 
 ### Extra noun (`/b/`)
 
-Hosted: noun bolted onto a complex `/ɡ/` or `/h/`. Unhosted: recipient or addressee of the verb.
+Hosted: noun bolted onto a complex `/ɡ/`, `/h/`, or `/th/`. Unhosted: recipient or addressee of the verb.
 
 [Clause](clause.md#extra-nouns)
 
@@ -531,7 +531,7 @@ Phrase join **-n**.
 
 ### Need inventory
 
-Six closed psychological needs under `/ɡ/` `/h/` `/w/`.
+Six closed psychological needs under `/ɡ/` `/th/` `/w/`.
 
 [Values](values.md#need-inventory)
 
@@ -700,13 +700,21 @@ Typed cite / aside / mention / opaque fences; spoken opening word.
 
 **Compare with:** numeric from–to is a [range](#range-clockdate-range), not a span.
 
+### Stance
+
+`/th/` role letter: how the speaker stands toward the whole claim (how sure, how known, why, as if), plus asides.
+
+[Clause](clause.md#stance-th)
+
+**Compare with:** [adverb](#adverb) `/h/` says how, when, or where the event happened.
+
 ### Stand-in
 
 Short word in a role slot (`darl` / `barl` / `dorl` / `derl` / `durl`, open **`-rm`**) that stands for the **following sentence**. Same vowel series as joins; not a join (joins close a list already said).
 
 [Dependents](dependents.md#stand-in)
 
-**Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause poles](#clause-pole--np-pole) (`hurugum`, `hadorom`) name the relation; the stand-in fills `/b/`.
+**Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause poles](#clause-pole--np-pole) (`thurugum`, `thadorom`) name the relation; the stand-in fills `/b/`.
 
 ### Special pronoun
 

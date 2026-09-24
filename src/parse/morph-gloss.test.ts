@@ -33,7 +33,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("guzumul", "g-smile");
     expectLine("guzumum", "g-happy");
     expectLine("huvuvul", "h-fishing");
-    expectLine("huvuvum", "h-WITNESSED");
+    expectLine("thuvuvum", "th-WITNESSED");
     expectLine("gohohum", "g-home");
   });
 
@@ -51,13 +51,13 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("jubunexunowen", "j-Ubune-x-Unowen");
     expectLine("zuzuzuxogovexadedan", "z-Uzuzu-x-Ogove-x-Adedan");
     expectLine("vawalaxel", "v-walk-unable-temporary");
-    expectLine("holozoxem", "h-competence-ought-offered");
+    expectLine("tholozoxem", "th-competence-ought-offered");
     expectLine("zaxezeher", "z-agent-x-speech");
     expectLine("zaxuvugul", "z-agent-x-fight");
     expectLine("zaxuvugum", "z-agent-x-struggle");
     expectLine("zexelebel", "z-place-x-sleep");
     expectLine("zoxezehel", "z-recipient-x-speech");
-    expectLine("hexal", "h-aside-x-multi");
+    expectLine("thexal", "th-aside-x-multi");
     expectLine("xuxul", "x-span-close");
     expectLine("x#e-", "x-starting-with");
   });
@@ -114,10 +114,10 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zahan", "z-interlocutors");
     expectLine("zugobonx", "z-speaker-x");
     expectLine("zedonenx", "z-listener-x");
-    expectLine("hadezem", "h-LIVE");
-    expectLine("honenom", "h-RESIDUE");
-    expectLine("hemebem", "h-FORMER");
-    expectLine("hemabam", "h-plan-sketch");
+    expectLine("thadezem", "th-LIVE");
+    expectLine("thonenom", "th-RESIDUE");
+    expectLine("themebem", "th-FORMER");
+    expectLine("themabam", "th-plan-sketch");
     expectLine("gonunul", "g-SAME");
   });
 
@@ -131,7 +131,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("derl", "d-to-clause");
     expectLine("durl", "d-lest-clause");
     expectLine("darm", "d-that-clause.open");
-    expectLine("hegeraxel", "h-ABIL-unable-temporary");
+    expectLine("thegeraxel", "th-ABIL-unable-temporary");
   });
 
   it("lexicon senses use packed role English when present", () => {
@@ -170,15 +170,15 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
   it("ability + value motive", () => {
     expectLine(
-      "juel zugobon vawalaxel holozoxom.",
-      "j-no | z-speaker | v-walk-unable-temporary | h-competence-motive-internal",
+      "juel zugobon vawalaxel tholozoxom.",
+      "j-no | z-speaker | v-walk-unable-temporary | th-competence-motive-internal",
     );
   });
 
   it("numbered alternative + unmet pleasure", () => {
     expectLine(
-      "x#e- zuzebum g#1 zugobonx haweroxur.",
-      "x-starting-with | z-problem | g-first | z-speaker-x | h-pleasure-unmet-temporary",
+      "x#e- zuzebum g#1 zugobonx thaweroxur.",
+      "x-starting-with | z-problem | g-first | z-speaker-x | th-pleasure-unmet-temporary",
     );
   });
 
@@ -188,15 +188,15 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
   it("inclusive we", () => {
     expectLine(
-      "jael xezazal zahan hemabam vawalal vul.",
-      "j-yes | x-therefore | z-interlocutors | h-plan-sketch | v-walk | v-not",
+      "jael xezazal zahan themabam vawalal vul.",
+      "j-yes | x-therefore | z-interlocutors | th-plan-sketch | v-walk | v-not",
     );
   });
 
   it("resume with in-text antecedent", () => {
     expectLine(
-      "jubunexunowen. xezebal zubur huvuvum zanunul.",
-      "j-Ubune-x-Unowen | x-however | z-←Ubune-x-Unowen | h-WITNESSED | z-rain",
+      "jubunexunowen. xezebal zubur thuvuvum zanunul.",
+      "j-Ubune-x-Unowen | x-however | z-←Ubune-x-Unowen | th-WITNESSED | z-rain",
     );
   });
 });
@@ -309,15 +309,15 @@ describe("compareMorphGloss", () => {
   it("values bake stance and ending grain", () => {
     expectLine("zawaral gonogoxal", "z-wrapped-gift | g-relatedness-met-physical");
     expectLine("zazegem walodoxur gobobum", "z-gathering | w-autonomy-unmet-temporary | g-stimulus");
-    expectLine("hogegam hanedem", "h-HIGH | h-CIRCUM");
+    expectLine("thogegam thanedem", "th-HIGH | th-CIRCUM");
   });
 
   it("span interiors: cite and aside gloss English; mention passes through", () => {
-    expectLine("zazawan vawalal h(huzumum)", "z-Azawan | v-walk | h-happy");
+    expectLine("zazawan vawalal th(huzumum)", "z-Azawan | v-walk | th-happy");
     expectLine("jul zululon v[vozodol]", "j-prohibition | z-Ululon | v-stop");
     expectLine(
-      "zazawan vawalal h(zululon velebel)",
-      "z-Azawan | v-walk | h- | z-Ululon | v-sleep",
+      "zazawan vawalal th(zululon velebel)",
+      "z-Azawan | v-walk | th- | z-Ululon | v-sleep",
     );
     expectLine("zululon daxol ujudul vezehel", "z-Ululon | d-cite-x-atomic | judge | v-tell");
   });
@@ -353,5 +353,18 @@ describe("morphGlossLine — extra fixtures", () => {
         `${pair.agalan} → documented ${pair.morph} vs parser ${result.actual}${result.parseError ? ` (${result.parseError})` : ""}`,
       );
     }
+  });
+});
+
+describe("morphGlossLine — th stance letter", () => {
+  it("glosses stance moods, /w/ on th, and th poles with stand-ins", () => {
+    expectLine("thodohom zazawan vajul.", "th-MAY | z-Azawan | v-sit");
+    expectLine("zazawan wuzumum thadezem vejel ejelul.", "z-Azawan | w-happy | th-LIVE | v-see | eye-leave");
+    expectLine("thurugum darl zazawan vajul.", "th-because | d-that-clause | z-Azawan | v-sit");
+    expectLine("thexal zazawan vajul xuxul.", "th-aside-x-multi | z-Azawan | v-sit | x-span-close");
+  });
+
+  it("keeps time poles and restrictors on /h/", () => {
+    assert.match(morphGlossLine("hababam barl zazawan vajul.", tables), /^h-before/);
   });
 });

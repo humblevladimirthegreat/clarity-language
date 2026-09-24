@@ -44,7 +44,7 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agalan 
 | kind / role (*Azawan as a dog*) | classification `/ɡ/` | [Kind / role](predication.md#classification) |
 | same one (*Ululon as Azawan*) | **`SAME`** + `/b/` | [Identity](predication.md#identity) |
 | same time (*as Ululon walks*) | **`hegemum barl`** | [Dependent clauses](dependents.md#dependent-clauses) |
-| reason / since (*as Ululon walks*) | **`hurugum barl`** | [Because](causation.md#because) |
+| reason / since (*as Ululon walks*) | **`thurugum barl`** | [Because](causation.md#because) |
 | equal degree (*as happy as*) | equative **`ae`** | [Equatives](comparatives.md#equatives) |
 | topic (*as for Azawan*) | **`hozal`** + `/b/` | [As-for](clause.md#as-for) |
 | resemblance (*walks as / like a duck*) | **`hurorom`** + `/b/` | [Simile](relations.md#similative) |

@@ -29,7 +29,7 @@ const VOWELS = new Set(["a", "e", "o", "u"]);
 const CONTINUUM_SERIES = new Set(["a", "e", "ue"]);
 const SCALE_SERIES = new Set(["e", "oe", "ue"]);
 const KIND_SERIES = new Set(["ua", "uo"]);
-const ROLE_FRAME_POS = new Set(["z", "d", "b", "v", "g", "h"]);
+const ROLE_FRAME_POS = new Set(["z", "d", "b", "v", "g", "h", "th"]);
 
 type SpanType = "a" | "e" | "o" | "u";
 
@@ -132,7 +132,7 @@ function isGPackage(shared: CoordShared): shared is GPackage {
 }
 
 function isHUnit(shared: CoordShared): shared is HUnit {
-  return typeof shared === "object" && "word" in shared && shared.word.pos === "h";
+  return typeof shared === "object" && "word" in shared && (shared.word.pos === "h" || shared.word.pos === "th");
 }
 
 function classifySharedRole(join: LexWord, numberCount: number, shared: GPackage | HUnit): SharedRole {

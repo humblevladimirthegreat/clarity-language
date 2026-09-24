@@ -278,7 +278,7 @@ Beginner already used content **-r** in the same slot as the earlier word (*he s
 | `/j/` interjection … `-r` | same exclamation again | repeating that call-out |
 | `/x/` … `-r` after `/x/` | same linker again | *and so* / *likewise* |
 
-**Compare with:** English *that* pointing at a quoted title, proverb, or aside uses [span resume](spans.md#endings) (`daxur` / `hexur` / …), not content **-r**.
+**Compare with:** English *that* pointing at a quoted title, proverb, or aside uses [span resume](spans.md#endings) (`daxur` / `thexur` / …), not content **-r**.
 
 ### Going back to a thread
 
