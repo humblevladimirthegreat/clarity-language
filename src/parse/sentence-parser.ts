@@ -89,28 +89,32 @@ function isAsOfWToken(token: IToken): boolean {
   return token.tokenType === W && isAsOfOverlay((token.payload as LexWord) ?? {});
 }
 
-function laAfterW(parser: CstParser, from = 1): number {
+function laAfterW(parser: AgelanSentenceParser, from = 1): number {
   let i = from;
   while (true) {
-    const tok = parser.LA(i);
+    const tok = parser.lookahead(i);
     if (tok.tokenType !== W) return i;
     const ending = (tok.payload as LexWord | undefined)?.ending;
     i += 1;
     if (isAsOfWToken(tok) && ending !== "r") {
-      const next = parser.LA(i);
+      const next = parser.lookahead(i);
       if (next.tokenType === B || next.tokenType === Odo) i += 1;
     }
   }
 }
 
-function isNpSlotLookahead(parser: CstParser, slot: NpSlot): boolean {
-  if (npSlot(parser.LA(1)) === slot) return true;
-  if (isGlHead(parser.LA(1)) && npSlot(parser.LA(2)) === slot) return true;
+function isNpSlotLookahead(parser: AgelanSentenceParser, slot: NpSlot): boolean {
+  if (npSlot(parser.lookahead(1)) === slot) return true;
+  if (isGlHead(parser.lookahead(1)) && npSlot(parser.lookahead(2)) === slot) return true;
   const i = laAfterW(parser);
-  return isGlHead(parser.LA(i)) && npSlot(parser.LA(i + 1)) === slot;
+  return isGlHead(parser.lookahead(i)) && npSlot(parser.lookahead(i + 1)) === slot;
 }
 
 class AgelanSentenceParser extends CstParser {
+  public lookahead(index: number): IToken {
+    return this.LA(index);
+  }
+
   constructor() {
     super(allTokens, { recoveryEnabled: false, maxLookahead: 3 });
     this.performSelfAnalysis();

@@ -488,13 +488,7 @@ function walkGPackage(cursor: Cursor, pack: GPackage, into: number[]) {
 function walkShared(cursor: Cursor, shared: CoordShared[], into: number[]) {
   for (const item of shared) {
     if ("modifiers" in item) walkGPackage(cursor, item, into);
-    else if ("word" in item) {
-      pushIndex(into, takeRaw(cursor, item.word.raw));
-      if ("modifiers" in item) {
-        for (const mod of item.modifiers) pushIndex(into, takeRaw(cursor, mod.raw));
-      }
-      if (item.bound) pushIndex(into, takeRaw(cursor, item.bound.raw));
-    } else pushIndex(into, takeRaw(cursor, item.raw));
+    else pushIndex(into, takeRaw(cursor, item.raw));
   }
 }
 
