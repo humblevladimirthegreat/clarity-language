@@ -38,7 +38,7 @@ You already named a wording (A), and you want English *or rather B*: a better re
 
 > `zazawan guzumum el gerelum.`
 >
-> z-Azawan | g-happy | rather | g-calm
+> [z-Azawan | g-happy] | rather | g-calm
 >
 > "Azawan is happy, or rather, calm."
 
@@ -136,7 +136,7 @@ Simplex vowels (one vowel plus an ending):
 
 > `zodogol velebel al bohohul.`
 >
-> z-dog | v-sleep | in | b-house
+> z-dog | v-sleep | [in | b-house]
 >
 > "A dog sleeps in a house."
 
@@ -236,7 +236,7 @@ additionally | z-Azawan | v-cook
 ::: details Show answer
 `zaladel zaladal zam.`
 
-z-plate | z-salad | z-and.open
+[z-plate | z-salad | z-and.open]
 :::
 
 **6.** *The wine is red, or rather, blue.*
@@ -244,7 +244,7 @@ z-plate | z-salad | z-and.open
 ::: details Show answer
 `zuwunel garedel el gelulul.`
 
-z-wine | g-red | rather | g-blue
+[z-wine | g-red] | rather | g-blue
 :::
 
 **7.** *Ululon sits at a plate.*
@@ -252,7 +252,7 @@ z-wine | g-red | rather | g-blue
 ::: details Show answer
 `zululon vajul ol baladel.`
 
-z-Ululon | v-sit | at | b-plate
+z-Ululon | v-sit | [at | b-plate]
 :::
 
 **8.** *Azawan cooks for a salad.*
@@ -260,7 +260,7 @@ z-Ululon | v-sit | at | b-plate
 ::: details Show answer
 `zazawan vogogol el baladal.`
 
-z-Azawan | v-cook | for | b-salad
+z-Azawan | v-cook | [for | b-salad]
 :::
 
 #### Agalan → English
@@ -323,7 +323,7 @@ except | z-Azawan | v-sit
 
 ::: details Show answer
 
-z-salad | in | b-plate
+z-salad | [in | b-plate]
 
 *The salad in a plate.*
 :::
@@ -332,7 +332,7 @@ z-salad | in | b-plate
 
 ::: details Show answer
 
-z-Ululon | v-pour | from | b-wine
+z-Ululon | v-pour | [from | b-wine]
 
 *Ululon pours from wine.*
 :::
@@ -366,7 +366,7 @@ Hook **-n** is only when the hook **titles** a proper-name phrase ([**-n**](word
 
 > `dadedal on dogovel.`
 >
-> d-tea | instead.named | d-coffee
+> NAME[d-tea | instead | d-coffee]
 >
 > "Tea-to-Coffee" (a cafe name)
 
@@ -375,7 +375,7 @@ Hook **-n** is only when the hook **titles** a proper-name phrase ([**-n**](word
 
 > `zodogol zul.`
 >
-> z-dog | z-not
+> [z-dog | z-not]
 >
 > "No dog."
 
@@ -401,7 +401,7 @@ Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). S
 
 > `zazawan vajul aol bajul.`
 >
-> z-Azawan | v-sit | on | b-chair
+> z-Azawan | v-sit | [on | b-chair]
 >
 > "Azawan sits on a chair."
 
@@ -420,7 +420,7 @@ Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). S
 
 > `zazawan vuwurul em bonenol.`
 >
-> z-Azawan | v-write | with-in-mind | b-money
+> z-Azawan | v-write | [with-in-mind | b-money]
 >
 > "Azawan writes with money in mind."
 
@@ -501,7 +501,7 @@ Same-role: the except (or including, rather, instead) carries that detail; claus
 
 > `zaladelx wazavom ul zaladal.`
 >
-> z-plate-x | w-hesitation | except | z-salad
+> z-plate-x | [w-hesitation | except] | z-salad
 >
 > "The plates, except a salad, with hesitation."
 
@@ -517,7 +517,7 @@ Extra-noun: `/b/` still sits immediately after the hook. A later `/ɡ/` still de
 
 > `zodogol velebel wal al bohohul.`
 >
-> z-dog | v-sleep | w-never | in | b-house
+> z-dog | v-sleep | [[w-never | in] | b-house]
 >
 > "A dog sleeps, never in a house."
 
@@ -562,7 +562,7 @@ z-newspaper | including.open | z-Azawan | except | z-Ululon
 ::: details Show answer
 `zazawan vuwurul aom bababel.`
 
-z-Azawan | v-write | over | b-page
+z-Azawan | v-write | [over | b-page]
 :::
 
 **3.** *The page, with a newspaper as a replacement, and maybe more.*
@@ -578,7 +578,7 @@ d-page | instead.open | d-newspaper
 ::: details Show answer
 `zameral ol zaradul zababel zam.`
 
-z-camera | instead | z-radio | z-page | z-and.open
+z-camera | instead | [z-radio | z-page | z-and.open]
 :::
 
 **5.** *Azawan: additionally, Ululon writes.*
@@ -594,7 +594,7 @@ j-Azawan | additionally | z-Ululon | v-write
 ::: details Show answer
 `zazawan vuwurul al zululon vezehel xam.`
 
-z-Azawan | v-write | including | z-Ululon | v-tell | x-and.open
+[z-Azawan | v-write | including | z-Ululon | v-tell | x-and.open]
 :::
 
 **7.** *Azawan writes with a camera.*
@@ -602,7 +602,7 @@ z-Azawan | v-write | including | z-Ululon | v-tell | x-and.open
 ::: details Show answer
 `zazawan ael bameral vuwurul.`
 
-z-Azawan | using | b-camera | v-write
+z-Azawan | [using | b-camera] | v-write
 :::
 
 **8.** *Azawan writes on a page.*
@@ -610,7 +610,7 @@ z-Azawan | using | b-camera | v-write
 ::: details Show answer
 `zazawan vuwurul aol bababel.`
 
-z-Azawan | v-write | on | b-page
+z-Azawan | v-write | [on | b-page]
 :::
 
 #### Agalan → English
@@ -628,7 +628,7 @@ z-newspaper | including.open | z-Uhubun | except | z-Azawan
 
 ::: details Show answer
 
-z-Azawan | v-tell | by | b-radio
+z-Azawan | v-tell | [by | b-radio]
 
 *Azawan tells by radio.*
 :::
@@ -673,7 +673,7 @@ z-newspaper | including | z-Uhubun | except | z-Ululon
 
 ::: details Show answer
 
-z-Azawan | using | b-camera | v-write
+z-Azawan | [using | b-camera] | v-write
 
 *Azawan writes with a camera.*
 :::
@@ -682,7 +682,7 @@ z-Azawan | using | b-camera | v-write
 
 ::: details Show answer
 
-z-Azawan | v-write | on | b-page
+z-Azawan | v-write | [on | b-page]
 
 *Azawan writes on a page.*
 :::
@@ -749,7 +749,7 @@ Inside a [measure range](numbers-applied.md#ranges), prefix-less **`ul`** on the
 
 > `z+3 ul z+5 zal gurulel.`
 >
-> z-three | except | z-five | z-and | g-ruler
+> z-three | except | [z-five | z-and | g-ruler]
 >
 > "[3, 5) on the length continuum."
 

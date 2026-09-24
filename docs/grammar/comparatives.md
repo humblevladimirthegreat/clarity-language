@@ -15,7 +15,7 @@ When English would say *Azawan is more challenging than Ululon*, you put two peo
 
 > `zazawan zululon zel gomonam.`
 >
-> z-Azawan | z-Ululon | z-rank/more | g-challenge
+> [z-Azawan | z-Ululon | z-rank/more | g-challenge]
 >
 > "Azawan is more challenging than Ululon."
 
@@ -32,7 +32,7 @@ When English would say *the most challenging*, you are still ranking, but you na
 
 > `zazawan zel gomonam.`
 >
-> z-Azawan | z-rank/more | g-challenge
+> [z-Azawan | z-rank/more | g-challenge]
 >
 > "Azawan is the most challenging (of all)."
 
@@ -49,7 +49,7 @@ English *much more* / *slightly more* adds **how large the gap is**, without giv
 
 > `zazawan zululon zel wogegal gomonam.`
 >
-> z-Azawan | z-Ululon | z-rank/more | w-ocean | g-challenge
+> [z-Azawan | z-Ululon | z-rank/more | [w-ocean | g-challenge]]
 >
 > "Azawan is much more challenging than Ululon."
 
@@ -62,7 +62,7 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 
 > `zazawan zululon zael gomonam.`
 >
-> z-Azawan | z-Ululon | z-equal-rank | g-challenge
+> [z-Azawan | z-Ululon | z-equal-rank | g-challenge]
 >
 > "Azawan is as challenging as Ululon."
 
@@ -78,7 +78,7 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 
 > `zazawan zululon zaem gudubul.`
 >
-> z-Azawan | z-Ululon | z-equal-rank.open | g-bright
+> [z-Azawan | z-Ululon | z-equal-rank.open | g-bright]
 >
 > "Azawan is about as bright as Ululon."
 
@@ -114,7 +114,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 ::: details Show answer
 `zazawan zululon zel guvuvem.`
 
-z-Azawan | z-Ululon | z-rank/more | g-agility
+[z-Azawan | z-Ululon | z-rank/more | g-agility]
 :::
 
 **2.** *Uhubun is as slow as Azawan.*
@@ -122,7 +122,7 @@ z-Azawan | z-Ululon | z-rank/more | g-agility
 ::: details Show answer
 `zuhubun zazawan zael ganalam.`
 
-z-Uhubun | z-Azawan | z-equal-rank | g-slow
+[z-Uhubun | z-Azawan | z-equal-rank | g-slow]
 :::
 
 **3.** *Ululon is the hastiest.*
@@ -130,7 +130,7 @@ z-Uhubun | z-Azawan | z-equal-rank | g-slow
 ::: details Show answer
 `zululon zel gadazam.`
 
-z-Ululon | z-rank/more | g-haste
+[z-Ululon | z-rank/more | g-haste]
 :::
 
 **4.** *Azawan is about as agile as Uhubun.*
@@ -138,7 +138,7 @@ z-Ululon | z-rank/more | g-haste
 ::: details Show answer
 `zazawan zuhubun zaem guvuvem.`
 
-z-Azawan | z-Uhubun | z-equal-rank.open | g-agility
+[z-Azawan | z-Uhubun | z-equal-rank.open | g-agility]
 :::
 
 **5.** *Ululon is much more intense than Azawan.*
@@ -146,7 +146,7 @@ z-Azawan | z-Uhubun | z-equal-rank.open | g-agility
 ::: details Show answer
 `zululon zazawan zel wogegal gohogem.`
 
-z-Ululon | z-Azawan | z-rank/more | w-ocean | g-intensity
+[z-Ululon | z-Azawan | z-rank/more | [w-ocean | g-intensity]]
 :::
 
 **6.** *Uhubun is more hasty than Ululon.*
@@ -154,7 +154,7 @@ z-Ululon | z-Azawan | z-rank/more | w-ocean | g-intensity
 ::: details Show answer
 `zuhubun zululon zel gadazam.`
 
-z-Uhubun | z-Ululon | z-rank/more | g-haste
+[z-Uhubun | z-Ululon | z-rank/more | g-haste]
 :::
 
 **7.** *Ululon is the most intense.*
@@ -162,7 +162,7 @@ z-Uhubun | z-Ululon | z-rank/more | g-haste
 ::: details Show answer
 `zululon zel gohogem.`
 
-z-Ululon | z-rank/more | g-intensity
+[z-Ululon | z-rank/more | g-intensity]
 :::
 
 #### Agalan → English
@@ -171,7 +171,7 @@ z-Ululon | z-rank/more | g-intensity
 
 ::: details Show answer
 
-z-Ululon | z-Uhubun | z-rank/more | g-agility
+[z-Ululon | z-Uhubun | z-rank/more | g-agility]
 
 *Ululon is more agile than Uhubun.*
 :::
@@ -180,7 +180,7 @@ z-Ululon | z-Uhubun | z-rank/more | g-agility
 
 ::: details Show answer
 
-z-Uhubun | z-rank/more | g-agility
+[z-Uhubun | z-rank/more | g-agility]
 
 *Uhubun is the most agile.*
 :::
@@ -189,7 +189,7 @@ z-Uhubun | z-rank/more | g-agility
 
 ::: details Show answer
 
-z-Ululon | z-Uhubun | z-equal-rank | g-haste
+[z-Ululon | z-Uhubun | z-equal-rank | g-haste]
 
 *Ululon is as hasty as Uhubun.*
 :::
@@ -198,7 +198,7 @@ z-Ululon | z-Uhubun | z-equal-rank | g-haste
 
 ::: details Show answer
 
-z-Uhubun | z-Azawan | z-equal-rank.open | g-intensity
+[z-Uhubun | z-Azawan | z-equal-rank.open | g-intensity]
 
 *Uhubun is about as intense as Azawan.*
 :::
@@ -207,7 +207,7 @@ z-Uhubun | z-Azawan | z-equal-rank.open | g-intensity
 
 ::: details Show answer
 
-z-Uhubun | z-Ululon | z-rank/more | w-ocean | g-agility
+[z-Uhubun | z-Ululon | z-rank/more | [w-ocean | g-agility]]
 
 *Uhubun is much more agile than Ululon.*
 :::
@@ -216,7 +216,7 @@ z-Uhubun | z-Ululon | z-rank/more | w-ocean | g-agility
 
 ::: details Show answer
 
-z-Azawan | z-Ululon | z-rank/more | g-haste
+[z-Azawan | z-Ululon | z-rank/more | g-haste]
 
 *Azawan is hastier than Ululon.*
 :::
@@ -225,7 +225,7 @@ z-Azawan | z-Ululon | z-rank/more | g-haste
 
 ::: details Show answer
 
-z-Azawan | z-rank/more | g-slow
+[z-Azawan | z-rank/more | g-slow]
 
 *Azawan is the slowest.*
 :::
@@ -269,7 +269,7 @@ When English would say *Ululon walks more intensely than Azawan*, the ladder is 
 
 > `zululon zazawan zel hohogem vawalal.`
 >
-> z-Ululon | z-Azawan | z-rank/more | h-intensity | v-walk
+> [z-Ululon | z-Azawan | z-rank/more | h-intensity] | v-walk
 >
 > "Ululon walks more intensely than Azawan."
 
@@ -294,7 +294,7 @@ English *both are challenging* (or *Azawan and Ululon are challenging*) says **e
 
 > `zazawan zululon zal gomonam.`
 >
-> z-Azawan | z-Ululon | z-and | g-challenge
+> [z-Azawan | z-Ululon | z-and | g-challenge]
 >
 > "Azawan and Ululon are challenging."
 
@@ -317,7 +317,7 @@ English *two meters more challenging* still ranks two people on one quality, and
 
 > `zazawan zululon zel gomonam bedurem g+2.`
 >
-> z-Azawan | z-Ululon | z-rank/more | g-challenge | b-meter | g-two
+> [z-Azawan | z-Ululon | z-rank/more | [g-challenge | b-meter]] | g-two
 >
 > "Azawan is two meters more challenging than Ululon."
 
@@ -354,7 +354,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 ::: details Show answer
 `zazawan zululon zuel garogom.`
 
-z-Azawan | z-Ululon | z-rank/less | g-heavy
+[z-Azawan | z-Ululon | z-rank/less | g-heavy]
 :::
 
 **2.** *Ululon is the least exerted.*
@@ -362,7 +362,7 @@ z-Azawan | z-Ululon | z-rank/less | g-heavy
 ::: details Show answer
 `zululon zuel guluvum.`
 
-z-Ululon | z-rank/less | g-exertion
+[z-Ululon | z-rank/less | g-exertion]
 :::
 
 **3.** *There is no heaviest.*
@@ -370,7 +370,7 @@ z-Ululon | z-rank/less | g-exertion
 ::: details Show answer
 `zoel garogom.`
 
-z-ranked-or | g-heavy
+[z-ranked-or | g-heavy]
 :::
 
 **4.** *Azawan and Uhubun are heavy.*
@@ -378,7 +378,7 @@ z-ranked-or | g-heavy
 ::: details Show answer
 `zazawan zuhubun zal garogom.`
 
-z-Azawan | z-Uhubun | z-and | g-heavy
+[z-Azawan | z-Uhubun | z-and | g-heavy]
 :::
 
 **5.** *Ululon is two grams heavier than Azawan.*
@@ -386,7 +386,7 @@ z-Azawan | z-Uhubun | z-and | g-heavy
 ::: details Show answer
 `zululon zazawan zel garogom bobonom g+2.`
 
-z-Ululon | z-Azawan | z-rank/more | g-heavy | b-gram | g-two
+[z-Ululon | z-Azawan | z-rank/more | [g-heavy | b-gram]] | g-two
 :::
 
 **6.** *Azawan is heavier than Ululon* (exclusive ladder).
@@ -394,7 +394,7 @@ z-Ululon | z-Azawan | z-rank/more | g-heavy | b-gram | g-two
 ::: details Show answer
 `zazawan zululon zoel garogom.`
 
-z-Azawan | z-Ululon | z-ranked-or | g-heavy
+[z-Azawan | z-Ululon | z-ranked-or | g-heavy]
 :::
 
 **7.** *Unspecified who is biggest.*
@@ -402,7 +402,7 @@ z-Azawan | z-Ululon | z-ranked-or | g-heavy
 ::: details Show answer
 `zel gelem.`
 
-z-rank/more | g-big
+[z-rank/more | g-big]
 :::
 
 **8.** *Whichever of Azawan or Ululon ranks heavier.*
@@ -410,7 +410,7 @@ z-rank/more | g-big
 ::: details Show answer
 `zazawan zululon zer garogom.`
 
-z-Azawan | z-Ululon | z-whatever-ranks | g-heavy
+[z-Azawan | z-Ululon | z-whatever-ranks | g-heavy]
 :::
 
 **9.** *Ululon lifts more intensely than Azawan.*
@@ -418,7 +418,7 @@ z-Azawan | z-Ululon | z-whatever-ranks | g-heavy
 ::: details Show answer
 `zululon zazawan zel hohogem vuluvul.`
 
-z-Ululon | z-Azawan | z-rank/more | h-intensity | v-lift
+[z-Ululon | z-Azawan | z-rank/more | h-intensity] | v-lift
 :::
 
 #### Agalan → English
@@ -427,7 +427,7 @@ z-Ululon | z-Azawan | z-rank/more | h-intensity | v-lift
 
 ::: details Show answer
 
-z-Azawan | z-Ululon | z-Uhubun | z-rank/more.open | g-heavy
+[z-Azawan | z-Ululon | z-Uhubun | z-rank/more.open | g-heavy]
 
 *Azawan is heavier than Ululon, who is heavier than Uhubun.*
 :::
@@ -436,7 +436,7 @@ z-Azawan | z-Ululon | z-Uhubun | z-rank/more.open | g-heavy
 
 ::: details Show answer
 
-z-ranked-or.open | g-big
+[z-ranked-or.open | g-big]
 
 *No biggest comes to mind.*
 :::
@@ -445,7 +445,7 @@ z-ranked-or.open | g-big
 
 ::: details Show answer
 
-z-Azawan | z-Ululon | z-whatever-ranks | g-exertion
+[z-Azawan | z-Ululon | z-whatever-ranks | g-exertion]
 
 *Whichever of Azawan or Ululon ranks more exerted.*
 :::
@@ -454,7 +454,7 @@ z-Azawan | z-Ululon | z-whatever-ranks | g-exertion
 
 ::: details Show answer
 
-z-Ululon | z-Uhubun | z-and | g-exertion
+[z-Ululon | z-Uhubun | z-and | g-exertion]
 
 *Ululon and Uhubun are exerted.*
 :::
@@ -463,7 +463,7 @@ z-Ululon | z-Uhubun | z-and | g-exertion
 
 ::: details Show answer
 
-z-Azawan | z-Ululon | z-rank/more | g-heavy | b-gram | g-five
+[z-Azawan | z-Ululon | z-rank/more | [g-heavy | b-gram]] | g-five
 
 *Azawan is five grams heavier than Ululon.*
 :::
@@ -472,7 +472,7 @@ z-Azawan | z-Ululon | z-rank/more | g-heavy | b-gram | g-five
 
 ::: details Show answer
 
-z-Uhubun | z-Azawan | z-rank/more | w-ocean | g-exertion
+[z-Uhubun | z-Azawan | z-rank/more | [w-ocean | g-exertion]]
 
 *Uhubun is much more exerted than Azawan.*
 :::
@@ -481,7 +481,7 @@ z-Uhubun | z-Azawan | z-rank/more | w-ocean | g-exertion
 
 ::: details Show answer
 
-z-whatever-ranks | g-heavy
+[z-whatever-ranks | g-heavy]
 
 *Whatever ranks heaviest.*
 :::
@@ -490,7 +490,7 @@ z-whatever-ranks | g-heavy
 
 ::: details Show answer
 
-z-Uhubun | z-rank/less | g-big
+[z-Uhubun | z-rank/less | g-big]
 
 *Uhubun is the smallest.*
 :::
@@ -499,7 +499,7 @@ z-Uhubun | z-rank/less | g-big
 
 ::: details Show answer
 
-z-Ululon | z-rank/more | h-intensity | v-lift
+[z-Ululon | z-rank/more | h-intensity] | v-lift
 
 *Ululon lifts the most intensely.*
 :::
@@ -514,7 +514,7 @@ To score the shared adjective as of a dated now, write [*as-of*](relations.md#as
 
 > `zazawan zululon zel welerem b_#22,7 gomonam.`
 >
-> z-Azawan | z-Ululon | z-rank/more | w-as-of.ledger | b-_22,7 | g-challenge
+> [z-Azawan | z-Ululon | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 >
 > "As of 22 July, Azawan is more challenging than Ululon."
 
@@ -526,7 +526,7 @@ English *worse than Average* (or *Typical*, *Professional*, *my bar*) ranks some
 
 > `zazawan zalaban zuel guzunul.`
 >
-> z-Azawan | z-Professional | z-rank/less | g-sing
+> [z-Azawan | z-Professional | z-rank/less | g-sing]
 >
 > "Azawan is worse at singing than Professional."
 
@@ -594,7 +594,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 ::: details Show answer
 `zazawan zalaban zuel guzunul.`
 
-z-Azawan | z-Professional | z-rank/less | g-sing
+[z-Azawan | z-Professional | z-rank/less | g-sing]
 :::
 
 **2.** *Azawan is less skilled at singing than I am.*
@@ -602,7 +602,7 @@ z-Azawan | z-Professional | z-rank/less | g-sing
 ::: details Show answer
 `zazawan zugobon zuel guzunul.`
 
-z-Azawan | z-speaker | z-rank/less | g-sing
+[z-Azawan | z-speaker | z-rank/less | g-sing]
 :::
 
 **3.** *Ululon is less artistic than Typical.*
@@ -610,7 +610,7 @@ z-Azawan | z-speaker | z-rank/less | g-sing
 ::: details Show answer
 `zululon zahaman zuel gabadum.`
 
-z-Ululon | z-Typical | z-rank/less | g-artistry
+[z-Ululon | z-Typical | z-rank/less | g-artistry]
 :::
 
 **4.** *I am less showy than Mine.*
@@ -618,7 +618,7 @@ z-Ululon | z-Typical | z-rank/less | g-artistry
 ::: details Show answer
 `zugobon zuroron zuel gohohom.`
 
-z-speaker | z-Mine | z-rank/less | g-showmanship
+[z-speaker | z-Mine | z-rank/less | g-showmanship]
 :::
 
 **5.** *Ululon is somewhat worse at singing than Average.*
@@ -626,7 +626,7 @@ z-speaker | z-Mine | z-rank/less | g-showmanship
 ::: details Show answer
 `zululon zonunan zuem guzunul.`
 
-z-Ululon | z-Average | z-rank/less.open | g-sing
+[z-Ululon | z-Average | z-rank/less.open | g-sing]
 :::
 
 **6.** *As of 22 July, Azawan is more challenging than Ululon.*
@@ -634,7 +634,7 @@ z-Ululon | z-Average | z-rank/less.open | g-sing
 ::: details Show answer
 `zazawan zululon zel welerem b_#22,7 gomonam.`
 
-z-Azawan | z-Ululon | z-rank/more | w-as-of.ledger | b-_22,7 | g-challenge
+[z-Azawan | z-Ululon | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 :::
 
 #### Agalan → English
@@ -643,7 +643,7 @@ z-Azawan | z-Ululon | z-rank/more | w-as-of.ledger | b-_22,7 | g-challenge
 
 ::: details Show answer
 
-z-speaker | z-Social | z-rank/less | g-sing
+[z-speaker | z-Social | z-rank/less | g-sing]
 
 *I am worse at singing than Social.*
 :::
@@ -652,7 +652,7 @@ z-speaker | z-Social | z-rank/less | g-sing
 
 ::: details Show answer
 
-z-speaker | z-Ululon | z-rank/less | g-showmanship
+[z-speaker | z-Ululon | z-rank/less | g-showmanship]
 
 *I am less showy than Ululon.*
 :::
@@ -661,7 +661,7 @@ z-speaker | z-Ululon | z-rank/less | g-showmanship
 
 ::: details Show answer
 
-z-Azawan | z-Mine | z-rank/less.open | g-artistry
+[z-Azawan | z-Mine | z-rank/less.open | g-artistry]
 
 *Azawan is somewhat less artistic than Mine.*
 :::
@@ -670,7 +670,7 @@ z-Azawan | z-Mine | z-rank/less.open | g-artistry
 
 ::: details Show answer
 
-z-Uhubun | z-Professional | z-rank/less | g-sing
+[z-Uhubun | z-Professional | z-rank/less | g-sing]
 
 *Uhubun is worse at singing than Professional.*
 :::
@@ -679,7 +679,7 @@ z-Uhubun | z-Professional | z-rank/less | g-sing
 
 ::: details Show answer
 
-z-Azawan | z-Average | z-rank/less.open | g-showmanship
+[z-Azawan | z-Average | z-rank/less.open | g-showmanship]
 
 *Azawan is somewhat less showy than Average.*
 :::
@@ -688,7 +688,7 @@ z-Azawan | z-Average | z-rank/less.open | g-showmanship
 
 ::: details Show answer
 
-z-Azawan | z-Ululon | z-rank/more | w-as-of.ledger | b-_22,7 | g-challenge
+[z-Azawan | z-Ululon | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 
 *As of 22 July, Azawan is more challenging than Ululon.*
 :::

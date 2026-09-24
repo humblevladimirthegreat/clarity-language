@@ -279,7 +279,7 @@ A store, title, or handle can be several words. Put **-n** on the **hook**, **jo
 
 > `dadedal on dogovel.`
 >
-> d-tea | instead.named | d-coffee
+> NAME[d-tea | instead | d-coffee]
 >
 > "Tea-to-Coffee" (a cafe name)
 

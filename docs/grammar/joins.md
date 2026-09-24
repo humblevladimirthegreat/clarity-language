@@ -19,7 +19,7 @@ Ending **-l** is ordinary English with no extra words: these are the only items.
 
 > `zodogol zagadal zal.`
 >
-> z-dog | z-cat | z-and
+> [z-dog | z-cat | z-and]
 >
 > "a dog and a cat."
 
@@ -52,7 +52,7 @@ Two full clauses use the same order: first clause’s words, second clause’s w
 
 > `zazawan vawalal zululon vurunul xam.`
 >
-> z-Azawan | v-walk | z-Ululon | v-run | x-and.open
+> [z-Azawan | v-walk | z-Ululon | v-run | x-and.open]
 >
 > "Azawan walks and Ululon runs (and possibly more)."
 
@@ -63,7 +63,7 @@ When English would offer a menu and ask to *pick one*, or leave the pick *(optio
 
 > `zadedal zogovel zol.`
 >
-> z-tea | z-coffee | z-or-exactly-one
+> [z-tea | z-coffee | z-or-exactly-one]
 >
 > "tea or coffee (pick one)."
 
@@ -87,7 +87,7 @@ The join still comes last when there is only one item, or none. How many items s
 
 > `zazawan zal.`
 >
-> z-Azawan | z-and
+> [z-Azawan | z-and]
 >
 > "just Azawan."
 
@@ -133,7 +133,7 @@ Write the items in that order, then a join with vowel **e**. The earlier item ou
 
 > `zazawan zel.`
 >
-> z-Azawan | z-rank/more
+> [z-Azawan | z-rank/more]
 >
 > "only Azawan matters" / "Azawan first."
 
@@ -242,7 +242,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 ::: details Show answer
 `zereral zodomal zam.`
 
-z-bread | z-tomato | z-and.open
+[z-bread | z-tomato | z-and.open]
 :::
 
 **2.** *a mango or a melon (pick one)*
@@ -250,7 +250,7 @@ z-bread | z-tomato | z-and.open
 ::: details Show answer
 `zamanol zemelol zol.`
 
-z-mango | z-melon | z-or-exactly-one
+[z-mango | z-melon | z-or-exactly-one]
 :::
 
 **3.** *just Uhubun*
@@ -258,7 +258,7 @@ z-mango | z-melon | z-or-exactly-one
 ::: details Show answer
 `zuhubun zal.`
 
-z-Uhubun | z-and
+[z-Uhubun | z-and]
 :::
 
 **4.** *a grape (optional)*
@@ -266,7 +266,7 @@ z-Uhubun | z-and
 ::: details Show answer
 `zagabel zom.`
 
-z-grape | z-or-exactly-one.open
+[z-grape | z-or-exactly-one.open]
 :::
 
 **5.** *not the cart*
@@ -274,7 +274,7 @@ z-grape | z-or-exactly-one.open
 ::: details Show answer
 `zanahol zul.`
 
-z-cart | z-not
+[z-cart | z-not]
 :::
 
 **6.** *something among bread and a tomato*
@@ -282,7 +282,7 @@ z-cart | z-not
 ::: details Show answer
 `zereral zodomal zar.`
 
-z-bread | z-tomato | z-something
+[z-bread | z-tomato | z-something]
 :::
 
 **7.** *only Azawan matters* / *Azawan first*
@@ -290,7 +290,7 @@ z-bread | z-tomato | z-something
 ::: details Show answer
 `zazawan zel.`
 
-z-Azawan | z-rank/more
+[z-Azawan | z-rank/more]
 :::
 
 **8.** *Ululon punches and Azawan sees Uhubun (and possibly more).*
@@ -298,7 +298,7 @@ z-Azawan | z-rank/more
 ::: details Show answer
 `zululon vubunul zazawan duhubun vejel xam.`
 
-z-Ululon | v-punch | z-Azawan | d-Uhubun | v-see | x-and.open
+[z-Ululon | v-punch | z-Azawan | d-Uhubun | v-see | x-and.open]
 :::
 
 #### Agalan → English
@@ -307,7 +307,7 @@ z-Ululon | v-punch | z-Azawan | d-Uhubun | v-see | x-and.open
 
 ::: details Show answer
 
-z-cart | z-and.open
+[z-cart | z-and.open]
 
 *a cart, for one* / *a cart (and possibly more)*
 :::
@@ -325,7 +325,7 @@ z-everything-but
 
 ::: details Show answer
 
-z-basket | z-something
+[z-basket | z-something]
 
 *some (unknown) basket*
 :::
@@ -334,7 +334,7 @@ z-basket | z-something
 
 ::: details Show answer
 
-z-mango | z-melon | z-not
+[z-mango | z-melon | z-not]
 
 *neither a mango nor a melon*
 :::
@@ -343,7 +343,7 @@ z-mango | z-melon | z-not
 
 ::: details Show answer
 
-z-Uhubun | z-and.open
+[z-Uhubun | z-and.open]
 
 *Uhubun, for one* / *Uhubun (and possibly more)*
 :::
@@ -352,7 +352,7 @@ z-Uhubun | z-and.open
 
 ::: details Show answer
 
-z-Uhubun | z-rank/more
+[z-Uhubun | z-rank/more]
 
 *only Uhubun matters* / *Uhubun first*
 :::
@@ -361,7 +361,7 @@ z-Uhubun | z-rank/more
 
 ::: details Show answer
 
-z-Ululon | d-basket | v-punch | z-Azawan | v-scream | x-and.open
+[z-Ululon | d-basket | v-punch | z-Azawan | v-scream | x-and.open]
 
 *Ululon punches a basket and Azawan screams (and possibly more).*
 :::
@@ -370,7 +370,7 @@ z-Ululon | d-basket | v-punch | z-Azawan | v-scream | x-and.open
 
 ::: details Show answer
 
-z-Ululon | v-scream | z-Azawan | v-lie | x-and.open
+[z-Ululon | v-scream | z-Azawan | v-lie | x-and.open]
 
 *Ululon screams and Azawan lies (and possibly more).*
 :::
@@ -475,7 +475,7 @@ When English would say two people are *as ADJ as* each other, or that nobody is 
 
 > `zazawan zululon zael gomonam.`
 >
-> z-Azawan | z-Ululon | z-equal-rank | g-challenge
+> [z-Azawan | z-Ululon | z-equal-rank | g-challenge]
 >
 > "Azawan is as challenging as Ululon."
 
@@ -496,7 +496,7 @@ Kind / domain for **ua** / **uo** is context or SHARED `/ɡ/` — [universals, d
 
 > `zadedal zogovel zual.`
 >
-> z-tea | z-coffee | z-everything-but
+> [z-tea | z-coffee | z-everything-but]
 >
 > "everything but tea and coffee."
 
@@ -510,7 +510,7 @@ When English would deny a whole join, *not* applies to **each** item and the joi
 
 > `vawalal vurunul val vul.`
 >
-> v-walk | v-run | v-and | v-not
+> [[v-walk | v-run | v-and] | v-not]
 >
 > "not (walk and run): not walk, and not run."
 
@@ -536,7 +536,7 @@ When English would say *every cat* rather than *everything but the cat*, write *
 
 > `zual gagadal.`
 >
-> z-everything-but | g-cat
+> [z-everything-but | g-cat]
 >
 > "every cat."
 
@@ -553,7 +553,7 @@ When an adjective or extra noun is meant for the **whole list** (*both challengi
 
 > `zodogol zagadal zal gomonam.`
 >
-> z-dog | z-cat | z-and | g-challenge
+> [z-dog | z-cat | z-and | g-challenge]
 >
 > "(challenging dog) and (challenging cat)."
 
@@ -619,7 +619,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 ::: details Show answer
 `zuwunel zovowel zual.`
 
-z-wine | z-flower | z-everything-but
+[z-wine | z-flower | z-everything-but]
 :::
 
 **2.** *every ring*
@@ -627,7 +627,7 @@ z-wine | z-flower | z-everything-but
 ::: details Show answer
 `zual gunurul.`
 
-z-everything-but | g-ring
+[z-everything-but | g-ring]
 :::
 
 **3.** *(happy Azawan) and (happy Ululon)*
@@ -635,7 +635,7 @@ z-everything-but | g-ring
 ::: details Show answer
 `zazawan zululon zal guzumum.`
 
-z-Azawan | z-Ululon | z-and | g-happy
+[z-Azawan | z-Ululon | z-and | g-happy]
 :::
 
 **4.** *(wine or a flower) and a ring*
@@ -643,7 +643,7 @@ z-Azawan | z-Ululon | z-and | g-happy
 ::: details Show answer
 `zuwunel zovowel zol zunurul zal.`
 
-z-wine | z-flower | z-or-exactly-one | z-ring | z-and
+[[z-wine | z-flower | z-or-exactly-one] | z-ring | z-and]
 :::
 
 **5.** *Azawan and Ululon see Uhubun.*
@@ -651,7 +651,7 @@ z-wine | z-flower | z-or-exactly-one | z-ring | z-and
 ::: details Show answer
 `zazawan zululon zal duhubun vejel.`
 
-z-Azawan | z-Ululon | z-and | d-Uhubun | v-see
+[z-Azawan | z-Ululon | z-and] | d-Uhubun | v-see
 :::
 
 **6.** *at least Uhubun*
@@ -659,7 +659,7 @@ z-Azawan | z-Ululon | z-and | d-Uhubun | v-see
 ::: details Show answer
 `zuhubun zaom.`
 
-z-Uhubun | z-and/or.open
+[z-Uhubun | z-and/or.open]
 :::
 
 **7.** *anything but the wine*
@@ -667,7 +667,7 @@ z-Uhubun | z-and/or.open
 ::: details Show answer
 `zuwunel zuol.`
 
-z-wine | z-anything-but
+[z-wine | z-anything-but]
 :::
 
 **8.** *Ululon last, period*
@@ -675,7 +675,7 @@ z-wine | z-anything-but
 ::: details Show answer
 `zululon zuel.`
 
-z-Ululon | z-rank/less
+[z-Ululon | z-rank/less]
 :::
 
 #### Agalan → English
@@ -684,7 +684,7 @@ z-Ululon | z-rank/less
 
 ::: details Show answer
 
-z-flower | z-everything-but
+[z-flower | z-everything-but]
 
 *everything but the flower*
 :::
@@ -693,7 +693,7 @@ z-flower | z-everything-but
 
 ::: details Show answer
 
-z-everything-but.open | g-ring
+[z-everything-but.open | g-ring]
 
 *every ring, as far as I know*
 :::
@@ -702,7 +702,7 @@ z-everything-but.open | g-ring
 
 ::: details Show answer
 
-z-veil | z-everything-but
+[z-veil | z-everything-but]
 
 *everything but the veil*
 :::
@@ -711,7 +711,7 @@ z-veil | z-everything-but
 
 ::: details Show answer
 
-v-kiss | v-see | v-and.open | d-Uhubun
+[v-kiss | v-see | v-and.open] | d-Uhubun
 
 *kisses and sees Uhubun*
 :::
@@ -720,7 +720,7 @@ v-kiss | v-see | v-and.open | d-Uhubun
 
 ::: details Show answer
 
-v-kiss | v-punch | v-and | v-not
+[[v-kiss | v-punch | v-and] | v-not]
 
 *not kiss, and not punch*
 :::
@@ -729,7 +729,7 @@ v-kiss | v-punch | v-and | v-not
 
 ::: details Show answer
 
-z-wine | z-flower | z-or-exactly-one
+[z-wine | z-flower | z-or-exactly-one]
 
 *Pick one of wine or flower.*
 :::
@@ -738,7 +738,7 @@ z-wine | z-flower | z-or-exactly-one
 
 ::: details Show answer
 
-z-wine | z-flower | z-ring | z-rank/more
+[z-wine | z-flower | z-ring | z-rank/more]
 
 *wine ≻ flower ≻ ring*
 :::
@@ -747,7 +747,7 @@ z-wine | z-flower | z-ring | z-rank/more
 
 ::: details Show answer
 
-z-tuxedo | z-anything-but.open
+[z-tuxedo | z-anything-but.open]
 
 *anything but the tuxedo (and possibly more)*
 :::
@@ -768,7 +768,7 @@ When same-role words sit next to a smaller list, wrap that stretch and its join 
 
 > `zazawan ^ zunudel zal ^ zam.`
 >
-> z-Azawan | ^-start | z-drinking-water | z-and | ^-end | z-and.open
+> [z-Azawan | SCOPE[z-drinking-water | z-and] | z-and.open]
 >
 > "Azawan and (just water)."
 
@@ -782,7 +782,7 @@ When a phrase list is an established bundle (*Stop–Drop–Roll*), end the join
 
 > `zereral zudel zan.`
 >
-> z-bread | z-butter | z-and.named
+> NAME[z-bread | z-butter | z-and]
 >
 > "bread and butter" (the familiar bundle)
 
@@ -808,7 +808,7 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 
 > `zadedal zogovel zunudel zor.`
 >
-> z-tea | z-coffee | z-drinking-water | z-anything
+> [z-tea | z-coffee | z-drinking-water | z-anything]
 >
 > "any of tea, coffee, or water is fine (no order)."
 
@@ -877,14 +877,14 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 ::: details Show answer
 `zababel zabenel zon.`
 
-z-page | z-pen | z-or-exactly-one.named
+NAME[z-page | z-pen | z-or-exactly-one]
 :::
 
 **2.** *null* / *void*
 
 ::: details Show answer
 `zan.`
-z-and.named
+NAME[z-and]
 :::
 
 **3.** *any of a dove, a page, or a pen is fine (no order)*
@@ -892,7 +892,7 @@ z-and.named
 ::: details Show answer
 `zodovel zababel zabenel zor.`
 
-z-dove | z-page | z-pen | z-anything
+[z-dove | z-page | z-pen | z-anything]
 :::
 
 **4.** *Azawan and (just Uhubun)*
@@ -900,7 +900,7 @@ z-dove | z-page | z-pen | z-anything
 ::: details Show answer
 `zazawan ^ zuhubun zal ^ zam.`
 
-z-Azawan | ^-start | z-Uhubun | z-and | ^-end | z-and.open
+[z-Azawan | SCOPE[z-Uhubun | z-and] | z-and.open]
 :::
 
 **5.** *someone other than Ululon*
@@ -908,7 +908,7 @@ z-Azawan | ^-start | z-Uhubun | z-and | ^-end | z-and.open
 ::: details Show answer
 `zululon zur.`
 
-z-Ululon | z-something-else
+[z-Ululon | z-something-else]
 :::
 
 #### Agalan → English
@@ -917,7 +917,7 @@ z-Ululon | z-something-else
 
 ::: details Show answer
 
-z-equal-rank.named
+NAME[z-equal-rank]
 *it's a draw* (stock)
 :::
 
@@ -925,7 +925,7 @@ z-equal-rank.named
 
 ::: details Show answer
 
-z-dove | z-page | z-pen | z-whatever-ranks
+[z-dove | z-page | z-pen | z-whatever-ranks]
 
 *pick a dove, a page, or a pen by ranking*
 :::
@@ -934,7 +934,7 @@ z-dove | z-page | z-pen | z-whatever-ranks
 
 ::: details Show answer
 
-z-Azawan | ^-start | z-and | ^-end | z-and.open
+[z-Azawan | SCOPE[z-and] | z-and.open]
 
 *Azawan and nothing*
 :::
@@ -952,7 +952,7 @@ z-anything-but
 
 ::: details Show answer
 
-z-imprimatur | z-page | z-something-else
+[z-imprimatur | z-page | z-something-else]
 
 *something other than the seal and the page*
 :::

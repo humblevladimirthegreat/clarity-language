@@ -1,5 +1,6 @@
 /**
- * Validate data/lexicon-published.csv literal vs abstract sense separation.
+ * Validate data/lexicon-published.csv literal vs abstract sense separation, and
+ * that every root + ending glosses to its own label (docs/meta/glosses.md § Round trip).
  *
  * Run: npm run lint:lexicon
  *      npm run lint:lexicon -- --json
@@ -13,6 +14,8 @@ import {
   type PublishedSenseError,
 } from "../src/lexicon-published-lint.js";
 import { parsePublishedCsv } from "../src/lexicon-search.js";
+import { glossCollisions } from "../src/parse/gloss-inverse.js";
+import { loadDefaultTables } from "../src/parse/index.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
 const publishedPath = join(rootDir, "data", "lexicon-published.csv");
@@ -51,7 +54,13 @@ function main(): void {
     }
   }
 
-  process.exit(errors.length === 0 ? 0 : 1);
+  const collisions = glossCollisions(loadDefaultTables());
+  if (collisions.length > 0 && !json) {
+    console.error(`${collisions.length} morph gloss label collision(s) (one label, several forms):`);
+    for (const c of collisions) console.error(`  ${c.gloss}: ${c.forms.join(" / ")}`);
+  }
+
+  process.exit(errors.length === 0 && collisions.length === 0 ? 0 : 1);
 }
 
 main();

@@ -425,7 +425,7 @@ function isDividerRow(line: string): boolean {
 
 function splitRow(line: string): string[] {
   const t = line.trim().replace(/^\|/, "").replace(/\|$/, "");
-  return t.split("|").map((cell) => cell.trim());
+  return t.split(/(?<!\\)\|/).map((cell) => cell.trim());
 }
 
 function unwrapCellAgalan(cell: string): string | null {
@@ -437,7 +437,7 @@ function unwrapCellAgalan(cell: string): string | null {
 
 function unwrapCellMorph(cell: string): string | null {
   const codes = [...cell.matchAll(/`([^`]+)`/g)].map((m) => m[1]!);
-  const raw = codes.length > 0 ? codes.join(" | ") : cell;
+  const raw = (codes.length > 0 ? codes.join(" | ") : cell).replace(/\\\|/g, "|");
   return raw.replace(/\s+·\s+/g, " | ").replace(/\s+;\s+/g, " | ").trim() || null;
 }
 

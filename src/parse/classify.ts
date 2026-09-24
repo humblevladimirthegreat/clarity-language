@@ -466,7 +466,7 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
       return {
         ...word,
         rootGloss: compoundLemmaGloss(compoundRow),
-        reading: "ordinary",
+        reading: missingAbstractSense(word, tables) ? "unknown" : "ordinary",
         lexicalCompound: true,
       };
     }
@@ -480,7 +480,7 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
     return {
       ...word,
       rootGloss: published.gloss,
-      reading: published.allFound ? "ordinary" : "unknown",
+      reading: published.allFound && !missingAbstractSense(word, tables) ? "ordinary" : "unknown",
     };
   }
 
@@ -493,6 +493,27 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
   }
 
   return { ...word, reading: "ordinary" };
+}
+
+/**
+ * Content word on **-m** whose root has no abstract sense (published abstract,
+ * packed abstract role English, or compound abstract) — an unknown word.
+ * Closed overlays are classified before this and never reach it.
+ */
+export function missingAbstractSense(word: MorphWord, tables: ClassifyTables): string | undefined {
+  if (word.ending !== "m" || word.family.kind !== "content") return undefined;
+  for (const root of word.family.roots) {
+    const compound = tables.compounds.get(root);
+    if (compound) {
+      if (!compound.abstract) return root;
+      continue;
+    }
+    const row = tables.published.get(root);
+    if (!row) continue;
+    const packed = word.pos ? row.posEnglish.abstract[word.pos as keyof typeof row.posEnglish.abstract] : undefined;
+    if (!row.abstract && !packed) return root;
+  }
+  return undefined;
 }
 
 export function classifyAll(words: MorphWord[], tables: ClassifyTables): LexWord[] {

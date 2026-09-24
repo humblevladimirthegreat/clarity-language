@@ -22,7 +22,7 @@ To point back to that group (or to a prior person **and** their associates), add
 
 > `zazawarx vajul.`
 >
-> z-←Azawan-x | v-sit
+> z-←Azawan.full-x | v-sit
 >
 > "They (that one and associates) sit."
 
@@ -178,7 +178,7 @@ z-Ululon-x | d-Uhubun | v-see
 ::: details Show answer
 `zazawarx duwunel vorurul.`
 
-z-←Azawan-x | d-wine | v-pour
+z-←Azawan.full-x | d-wine | v-pour
 :::
 
 **6.** *Ululon and associates sneak.*
@@ -256,7 +256,7 @@ z-Ululon-x | b-Azawan | v-tell
 
 ::: details Show answer
 
-z-←Azawan-x | d-knife | v-see
+z-←Azawan.full-x | d-knife | v-see
 
 *They (Azawan and associates) see a knife.*
 :::
@@ -470,7 +470,7 @@ z-Azawan | v-sing-x
 ::: details Show answer
 `zazawan zululon zal vuzunulx.`
 
-z-Azawan | z-Ululon | z-and | v-sing-x
+[z-Azawan | z-Ululon | z-and] | v-sing-x
 :::
 
 **6.** *The bells are heavy as a pile.*

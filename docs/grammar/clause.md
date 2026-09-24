@@ -46,7 +46,7 @@ When you name a **property** (*blue*), put that word in `/ɡ/` (an **adjective**
 
 > `zodogol gelulul vawalal.`
 >
-> z-dog | g-blue | v-walk
+> [z-dog | g-blue] | v-walk
 >
 > "A blue dog walks."
 
@@ -57,7 +57,7 @@ Before an adjective, you can add how intense it is or in what manner. That extra
 
 > `zodogol welem gelulul vawalal.`
 >
-> z-dog | w-very | g-blue | v-walk
+> [z-dog | [w-very | g-blue]] | v-walk
 >
 > "A very blue dog walks."
 
@@ -95,7 +95,7 @@ The adverb describes the walking. The stance word describes your claim about it.
 
 > `hurorom bazawan`
 >
-> h-like | b-Azawan
+> [h-like | b-Azawan]
 >
 > "like Azawan"
 
@@ -192,7 +192,7 @@ z-Uhubun | d-Azawan | v-see
 ::: details Show answer
 `zululon welem ganagal vadanal.`
 
-z-Ululon | w-very | g-angry | v-stand
+[z-Ululon | [w-very | g-angry]] | v-stand
 :::
 
 **4.** *Azawan writes hastily.*
@@ -235,7 +235,7 @@ z-Azawan | d-Uhubun | v-see
 
 ::: details Show answer
 
-z-Uhubun | g-happy | d-money | v-see
+[z-Uhubun | g-happy] | d-money | v-see
 
 *Happy Uhubun sees money.*
 :::
@@ -244,7 +244,7 @@ z-Uhubun | g-happy | d-money | v-see
 
 ::: details Show answer
 
-z-Ululon | v-sneak | h-like | b-Azawan
+z-Ululon | v-sneak | [h-like | b-Azawan]
 
 *Ululon sneaks like Azawan.*
 :::
@@ -264,7 +264,7 @@ English often puts the adjective before the noun (*a blue dog*). Agalan can too:
 
 > `glelulul zodogol.`
 >
-> gl-blue | z-dog
+> [gl-blue | z-dog]
 >
 > "a blue dog"
 
@@ -277,7 +277,7 @@ English often puts the adjective before the noun (*a blue dog*). Agalan can too:
 
 > `hozal bazawan zululon dazawan vejel.`
 >
-> h-hash | b-Azawan | z-Ululon | d-Azawan | v-see
+> [h-hash | b-Azawan] | z-Ululon | d-Azawan | v-see
 >
 > "As for Azawan, Ululon sees Azawan."
 
@@ -290,7 +290,7 @@ A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). `/w/` that grades t
 
 > `zodogol welem gonunul bazawan.`
 >
-> z-dog | w-very | g-SAME | b-Azawan
+> z-dog | [[w-very | g-SAME] | b-Azawan]
 >
 > "a dog the very same as Azawan"
 
@@ -304,7 +304,7 @@ You can chain more complex units onto those extra nouns. Two complex adjectives 
 
 > `glonunul bazawan zodogol gonunul bululon.`
 >
-> gl-SAME | b-Azawan | z-dog | g-SAME | b-Ululon
+> [[gl-SAME | b-Azawan] | z-dog] | [g-SAME | b-Ululon]
 >
 > "a dog the same as Azawan, the same as Ululon"
 
@@ -357,7 +357,7 @@ gl-red | w-volume | z-train | v-stand
 ::: details Show answer
 `zazawan gonunul buhubun gelulul vadanal.`
 
-z-Azawan | g-SAME | b-Uhubun | g-blue | v-stand
+[z-Azawan | [g-SAME | [b-Uhubun | g-blue]]] | v-stand
 :::
 
 **3.** *As for Azawan, Ululon sees a ticket.*
@@ -365,7 +365,7 @@ z-Azawan | g-SAME | b-Uhubun | g-blue | v-stand
 ::: details Show answer
 `hozal bazawan zululon dugedel vejel.`
 
-h-hash | b-Azawan | z-Ululon | d-ticket | v-see
+[h-hash | b-Azawan] | z-Ululon | d-ticket | v-see
 :::
 
 **4.** *A very blue train sits.*
@@ -373,7 +373,7 @@ h-hash | b-Azawan | z-Ululon | d-ticket | v-see
 ::: details Show answer
 `zadadul welem gelulul vajul.`
 
-z-train | w-very | g-blue | v-sit
+[z-train | [w-very | g-blue]] | v-sit
 :::
 
 **5.** *A red train sees a blue ticket.*
@@ -381,7 +381,7 @@ z-train | w-very | g-blue | v-sit
 ::: details Show answer
 `zadadul garedel gelulul dugedel vejel.`
 
-z-train | g-red | g-blue | d-ticket | v-see
+[z-train | g-red | g-blue] | d-ticket | v-see
 :::
 
 **6.** *Uhubun tells Ululon hastily.*
@@ -398,7 +398,7 @@ z-Uhubun | b-Ululon | h-haste | v-tell
 
 ::: details Show answer
 
-gl-blue | z-train | v-stand
+[gl-blue | z-train] | v-stand
 
 *A blue train stands.*
 :::
@@ -407,7 +407,7 @@ gl-blue | z-train | v-stand
 
 ::: details Show answer
 
-z-Uhubun | g-SAME | b-Ululon | g-red | v-stand
+[z-Uhubun | [g-SAME | [b-Ululon | g-red]]] | v-stand
 
 *Uhubun the same as red Ululon stands.*
 :::
@@ -416,7 +416,7 @@ z-Uhubun | g-SAME | b-Ululon | g-red | v-stand
 
 ::: details Show answer
 
-h-hash | b-Azawan | z-Ululon | d-ticket | v-see
+[h-hash | b-Azawan] | z-Ululon | d-ticket | v-see
 
 *As for Azawan, Ululon sees a ticket.*
 :::
@@ -425,7 +425,7 @@ h-hash | b-Azawan | z-Ululon | d-ticket | v-see
 
 ::: details Show answer
 
-z-dog | w-very | h-like | b-Azawan | v-sleep
+z-dog | [[w-very | h-like] | b-Azawan] | v-sleep
 
 *A dog sleeps very like Azawan.*
 :::
@@ -434,7 +434,7 @@ z-dog | w-very | h-like | b-Azawan | v-sleep
 
 ::: details Show answer
 
-z-Azawan | g-SAME | b-Uhubun | g-blue | v-stand
+[z-Azawan | [g-SAME | [b-Uhubun | g-blue]]] | v-stand
 
 *Azawan the same as blue Uhubun stands.*
 :::
@@ -443,7 +443,7 @@ z-Azawan | g-SAME | b-Uhubun | g-blue | v-stand
 
 ::: details Show answer
 
-z-train | g-red | g-blue | d-ticket | v-see
+[z-train | g-red | g-blue] | d-ticket | v-see
 
 *A red train sees a blue ticket.*
 :::

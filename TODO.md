@@ -8,18 +8,14 @@ my name: obogan (innovation)
 
 Prosody
 
-gloss should indicate phrase structure (including proper phrases) and what modifies what. First, indicate what the new gloss format should look like. 
-Fully implement the new gloss in parser and gloss overlay ui.
-parser tries to guess lexical compound even if not in lexicon
+parser displays potential lexical compound even if not in lexicon
 
 consider removing some emotion words from lexicon
 
-cool features: collective verbs/adjectives use plural
-
 do a grammar-docs/ consistency check. Does anything about the grammar seem incorrect, confusing, meaningless, or counterintuitive?
+do a grammar-docs/ suggestion pass. Is there any common english grammar that can't be easily expressed (and not intentionally discouraged)? Could any of the existing grammar be extended into other forms to have intuitive new readings?
 do parser consistency pass. Does the parser completely and accurately encode all the meaning of the grammar?
 do a learning order consistency check for grammar-docs. Does any grammar doc learning band refer to concepts not yet taught?
-do an example and translation review in grammar-docs. Do the examples make sense and effectively demonstrate the desired concept? Does the english translation sound natural? 
 do a style pass in grammar-docs. Check for adherence to doc-style and otherwise ensure natural sounding explanations.
 
 final exam

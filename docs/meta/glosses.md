@@ -120,7 +120,7 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 
 > `jol dubur dadedal dogovel dol von.`
 >
-> j-question | d-←Ubune-x-Unowen | d-tea | d-coffee | d-or-exactly-one | v-choose
+> j-question | [d-←Ubune-x-Unowen | d-tea | d-coffee | d-or-exactly-one] | v-choose
 >
 > "Do you want tea or coffee?" ← loose (default)
 >
@@ -189,7 +189,53 @@ Lexicon search indexes those lemmas. Morph uses the packed lemma for that role l
 - **Prefix-less** hooks: English only — `instead`, `rather`, `additionally`, `in`, `using` (no fake PoS).
 - **Specials / overlays / joins** — still the overlay or join job (`z-speaker`, `v-and`), never `@` because the word happens to end in **-n**.
 
-Separate **words** with spaced `|` (`z-dog | v-walk`). One morph gloss line per Agalan line (or per turn). In an [example block](#example-block), leave that line **roman** (no italics, no backticks on pieces; tables may still put a morph cell in backticks). Mid-word **`x`** stays inside one piece (`wish-x-guidance`). See [word separator](#gloss-separator).
+Separate **words** with spaced `|` (`z-dog | v-walk`). Group words into [phrase brackets](#phrase-brackets). One morph gloss line per Agalan line (or per turn). In an [example block](#example-block), leave that line **roman** (no italics, no backticks on pieces; tables may still put a morph cell in backticks). Mid-word **`x`** stays inside one piece (`wish-x-guidance`). See [word separator](#gloss-separator).
+
+### Phrase brackets
+<a id="phrase-brackets"></a>
+
+The morph line shows **phrase structure**: which words form one unit and what modifies what. Wrap any unit of **two or more words** that fills one slot in `[ … ]`. Inside a bracket, words still use ` | `. A single word never gets brackets. Roles at clause level stay flat and unbracketed, because they are sisters under the verb: subject `z`, theme `d`, verb `v`, plain `h` / `th`, unhosted recipient `b`, linkers and `/j/`.
+
+A dependent sits next to the word it modifies, in Agalan order. Nesting shows attachment:
+
+| Unit | Morph gloss |
+|------|-------------|
+| Noun + trailing `/ɡ/` | `[z-dog \| g-blue]` |
+| `gl-` adjective + noun | `[gl-blue \| z-dog]` |
+| `/w/` + its host | `[w-loud \| g-blue]` |
+| Host + hosted `/b/` | `[g-SAME \| b-Ululon]` |
+| Hook + extra noun | `[in \| b-house]` |
+| Adjective on the extra noun | `[z-dog \| [g-SAME \| [b-Azawan \| g-tall]]]` |
+| Join fence (join last) | `[d-tea \| d-coffee \| d-or]` |
+| Nested fences | `[[d-tea \| d-coffee \| d-or] \| d-water \| d-and]` |
+| Shared `/ɡ/` after a join | `[z-Azawan \| z-Ululon \| z-and \| g-happy]` |
+
+A **labeled bracket** `LABEL[ … ]` marks a package. The label is uppercase English with no glyphs. When the package has a role letter, it is the prefix: `d-CITE[…]`.
+
+| Label | Package |
+|-------|---------|
+| `NAME[…]` | [Titled phrase](../grammar/word-endings.md#titled-phrases): **-n** on the hook, join, or span that packages it |
+| `CITE[…]` / `MENTION[…]` / `ASIDE[…]` / `OPAQUE[…]` | Written span (`d[…]` / `d{…}` / `th(…)` / `d<…>`) |
+| `CITE.multi[…]` / `.clause` / `.atomic` / `.empty` | Spoken span. The suffix is the open word's EDGE (`daxal … xuxul` → `d-CITE.multi[…]`) |
+| `CITE.about[…]` | Paraphrase **-m** span (`d~[…]`, `daxam`) |
+| `NAME.CITE[…]` | Proper **-n** span (`d@[…]`, `daxan`) |
+| `SCOPE[…]` | Scope island `^ … ^` |
+
+Written and spoken spans stay distinct: a written span label has no EDGE suffix, and a spoken span label always has one. The closing bracket records the close: `]` complete, `]#` editorial (`#]`, `xuxur`), `]|` close-all (`|`, `xuxum`). A close-all ends every span open at that point.
+
+### Round trip
+<a id="round-trip"></a>
+
+A morph line corresponds **one-to-one** with its Agalan. From the gloss alone you can rebuild the exact written words, so glosses must never merge two forms:
+
+- **Every written word is glossed**, including a spoken **`jal`**. A `jal` that was left out is not added.
+- **Sentence marks.** When one line holds several sentences, the mark between them stands alone with spaces: `z-Azawan | v-walk . z-←Azawan | v-judge`. A line-final `?` or `!` trails the same way (`… | v-walk ?`). A line-final period is implicit.
+- **One label per form.** Each (PoS, root, ending) maps to one English label. Two roots never share an English sense: when they would, reword one row in the lexicon. `npm run lint:lexicon` checks this, and `npm test` round-trips every glossed example in `docs/grammar/`.
+- **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, `.full` on a [full-root resume](#anaphors-r), and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and `.spelled` on a spelled-out number word (`grarel` → `g-three.spelled`; `g+3` → `g-three`).
+- **Ordinals use digits** (`g#2` → `g-2nd`, `g#-2` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.
+- **Span resumes** gloss by type: written `d[=]` → `d-←cite`, spoken `daxur` → `d-←cite.spoken`.
+- **Unknown words fail.** A content word the lexicon cannot gloss has no morph line: a root missing from the lexicon, or **-m** on a root with no abstract sense (unless a closed overlay defines that **-m** form). `lint:agalan` reports it.
+- **Quoted pass-through.** Raw payloads (mention and opaque interiors, and a resume stem with no known antecedent) go in straight double quotes: `z-MENTION["odogo"]`. A `"` inside the payload is written `""`.
 
 ### When an ending still appears in the gloss
 
@@ -230,15 +276,21 @@ When you retie a published literal (`dancing` → `dance`), morph lines that cop
 **Lexicon CSV:** On each published row, **concrete** and **abstract** must not share a citation form on the **whole** hyphenated lemma (exact match or inflectional alternate such as `stressed` / `stress`). Reusing a **hyphen segment** alone (e.g. `credit-card` / `credit`, flag place name / demonym) is allowed. Checked by `npm run lint:lexicon`. Demonyms on **-m** are a listed exception to “unobservable,” not an exception to this collision rule.
 
 ### Anaphors (`-r`)
+<a id="anaphors-r"></a>
 
 The binder **is** the gloss root. No trailing `-r` (resume is already marked by `←`).
 
-| Case | Morph gloss |
-|------|-------------|
-| Letter / full-root resume with known name | `z-←Ubune-x-Unowen` |
-| House-cast name (`zazawan`, …) | `z-←Azawan` / `z-←Ululon` / `z-←Uhubun` |
-| Resume of a prior content word | `z-←someone` / `d-←tea` |
-| Fill-ask / unspecified member | `z-who` / `z-something` (as the docs require for that form) |
+A [short resume](../grammar/pronouns.md#resume-r) (root cut after its 2nd vowel) is unmarked. A **full-root resume** (entire root + **-r**) adds `.full`. The antecedent's label names its root, and the suffix gives the cut, so the gloss rebuilds the exact word.
+
+| Case | Agalan | Morph gloss |
+|------|--------|-------------|
+| Short resume | `zazar` | `z-←Azawan` |
+| Full-root resume | `zazawar` | `z-←Azawan.full` |
+| Full-root resume of a content word | `veleber` | `v-←sleep.full` |
+| Compound name | `zubur` | `z-←Ubune-x-Unowen` |
+| Resume of a prior content word | | `z-←someone` / `d-←tea` |
+| No antecedent, stem not in the lexicon | | `z-←"…"` (the stem itself) |
+| Fill-ask / unspecified member | `zar` | `z-who` / `z-something` (as the docs require for that form) |
 
 Do not write `z-←microphone` for a speaker antecedent.
 
@@ -264,7 +316,7 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 | Ability / values stance | `vawalaxel` | `v-walk-unable-temporary` |
 | Values stance on need | `tholozothom` | `th-competence-motive-internal` |
 | Role compound | `zaxuvugul` | `z-agent-x-fight` |
-| Span open / close | `thexal` … `xuxul` | `th-aside-x-multi` · … · `x-span-close` |
+| Span open / close | `thexal` … `xuxul` | `th-ASIDE.multi[…]` ([labeled bracket](#phrase-brackets)) |
 | Number / enumeration | `x#e-` | `x-starting-with` |
 
 For **phrasal proper names**, gloss each piece (`j-Ubune-x-Unowen`, `z-Ogove-x-Adeda-x-Unuden`). Mid-word **`x`** stays visible as `-x-`. Do not put Agalan letters in the english slot, except [mention interiors](#span-interiors).
@@ -272,22 +324,26 @@ For **phrasal proper names**, gloss each piece (`j-Ubune-x-Unowen`, `z-Ogove-x-A
 ### Mention and opaque interiors
 <a id="span-interiors"></a>
 
-**Mention** (`{…}` / spoken TYPE **o**) is a **word or phrase** as that spelling, not a quoted utterance and not the English lemma. Morph **pass through** the interior. Free English says *the word …* or *the phrase …* and keeps that spelling.
+**Mention** (`{…}` / spoken TYPE **o**) is a **word or phrase** as that spelling, not a quoted utterance and not the English lemma. The morph line **passes the interior through** in quotes inside a labeled bracket. Free English says *the word …* or *the phrase …* and keeps that spelling.
 
-| Kind | Morph | Free English |
-|------|--------|----------------|
-| Mention (one word) | Payload as written (`z{odogo}` → `z-odogo`; spoken `zoxol odogol` → `z-mention-x-atomic \| odogol`) | *The word “odogo” is small.* |
-| Mention (phrase) | Open + each interior token (`z{zazawan vuzunul}` → `z-mention \| zazawan \| vuzunul`) | *The phrase “zazawan vuzunul” is small.* |
-| Mention **`@`** | Pass-through (`d@{uzugon}` → `d-uzugon`) | *the name “uzugon”* (the title-string, not the work; still a mention when the name is one word) |
-| Opaque | Payload as written (`kimchi`, `FBI`) | The same blob |
-| Cite | Inner **Agalan words** glossed as usual (`d[azawan]` → `d-Azawan`; `daxol ujudul` → `d-cite-x-atomic \| judge`) | Translation of the **utterance** (*said “judge.”*) |
-| Cite **`@`** | Inner words as usual (`d@[uzugon ululon]` → `d-cite \| Uzugon \| Ululon`) | The **work** (*dislikes Uzugon Ululon*, *sang Uzugon Ululon*) |
+| Kind | Agalan | Morph | Free English |
+|------|--------|-------|--------------|
+| Mention (one word) | `z{odogo}` | `z-MENTION["odogo"]` | *The word “odogo” is small.* |
+| Spoken mention | `zoxol odogol` | `z-MENTION.atomic["odogol"]` | same |
+| Mention (phrase) | `z{zazawan vuzunul}` | `z-MENTION["zazawan vuzunul"]` | *The phrase “zazawan vuzunul” is small.* |
+| Mention **`@`** | `d@{uzugon}` | `d-NAME.MENTION["uzugon"]` | *the name “uzugon”* (the title-string, not the work) |
+| Opaque | `d<kimchi>` | `d-OPAQUE["kimchi"]` | The same blob |
+| Cite | `d[azawan]` | `d-CITE[Azawan]` | Translation of the **utterance** (*said “judge.”*) |
+| Spoken cite | `daxol ujudul` | `d-CITE.atomic[judge]` | same |
+| Cite **`@`** | `d@[uzugon ululon]` | `d-NAME.CITE[Uzugon \| Ululon]` | The **work** (*dislikes Uzugon Ululon*) |
+
+Words inside a cite or aside are glossed as usual. They sit in a new clause, so they keep their own role letters and brackets. Mention and opaque interiors are never glossed.
 
 Speech/writing reports (*said “X,”* *sang “X,”* *don’t “halt”*) are **cite**, even when English says *the word X*. Do not wrap that object in `{…}`. Sense-talk about a lexeme (*is a noun*, *is archaic*) is still mention; there is no extra “translate the lemma” rule — keep *the word/phrase “…”*.
 
 > `z{odogo} gumuzem.`
 >
-> z-odogo | g-small
+> z-MENTION["odogo"] | g-small
 >
 > "The word “odogo” is small."
 
@@ -319,7 +375,9 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `hual` (bare) | `h-always` |
 | `von` | `v-choose` |
 | `g+3` | `g-three` |
-| `g#2` | `g-second` |
+| `g#2` | `g-2nd` |
+| `grarel` (spelled `g+3`) | `g-three.spelled` |
+| `g+e` | `g-plus-infinity` |
 | `g+` | `g-more-than-one` |
 
 ## Worked examples
@@ -378,7 +436,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 > `x#e- zuzebum g#1 zugobonx thawerothur.`
 >
-> x-starting-with | z-problem | g-first | z-speaker-x | th-pleasure-unmet-temporary
+> x-starting-with | [z-problem | g-1st] | z-speaker-x | th-pleasure-unmet-temporary
 >
 > "First problem: we're not enjoying this."
 
@@ -386,7 +444,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 > `jael xezazal zahan themabam vawalal vul.`
 >
-> j-yes | x-therefore | z-interlocutors | th-plan-sketch | v-walk | v-not
+> j-yes | x-therefore | z-interlocutors | th-plan-sketch | [v-walk | v-not]
 >
 > "Yes — so we're planning not to walk."
 
@@ -402,7 +460,7 @@ When teaching the join morphology in the same table, add morph:
 
 | Example | Morph | Gloss |
 |---------|-------|-------|
-| `… zel g<big>l` | `z-rank/more` · `g-big` | *… is bigger …* |
+| `… zel g<big>l` | `[… \| z-rank/more \| g-big]` | *… is bigger …* |
 
 Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 
@@ -429,8 +487,9 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 2. No `→` etymology chains.
 3. No **-l** / **-m** / **-n**, and no **`@`** / **`~`**, when they only selected the sense-root. Named **-n** is the English name (`z-Azawan`), not `-n`, `@`, or `-proper`.
 4. Compounds / stance / role / span `x` pieces are always hyphenated segments (`j-Ubune-x-Unowen`). Do not fuse a name into one unsegmented English label.
-5. **-r** uses `←…` (no trailing `-r`); **-x** stays as `-x`. Resume of a house name is `z-←Azawan`, not `z-r` or `z-←Azawan`. Fill-ask is `z-who`, not `z-ar`.
-6. Free English is on its own **quoted** line (or grammar-table Gloss column) — **loose** by default; **strict** only when teaching packaging. Example blocks follow [example block layout](#example-block) (blockquote; skip a morph line only when `lint:agalan` treats parser output as redundant with that loose line).
+5. **-r** uses `←…` (no trailing `-r`), with `.full` on a full-root resume; **-x** stays as `-x`. Resume of a house name is `z-←Azawan`, not `z-r`. Fill-ask is `z-who`, not `z-ar`.
+6. Multi-word units are in [phrase brackets](#phrase-brackets), nested by attachment; packages use labeled brackets (`NAME[…]`, `CITE[…]`, `SCOPE[…]`). The line [round-trips](#round-trip) to the exact Agalan.
+7. Free English is on its own **quoted** line (or grammar-table Gloss column) — **loose** by default; **strict** only when teaching packaging. Example blocks follow [example block layout](#example-block) (blockquote; skip a morph line only when `lint:agalan` treats parser output as redundant with that loose line).
 
 ## See also
 

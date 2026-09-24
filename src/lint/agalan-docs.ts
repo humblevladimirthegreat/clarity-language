@@ -1,4 +1,10 @@
-import { knownLexiconRoots, unknownLexiconContentRoots, type ClassifyTables } from "../parse/classify.js";
+import {
+  classify,
+  knownLexiconRoots,
+  missingAbstractSense,
+  unknownLexiconContentRoots,
+  type ClassifyTables,
+} from "../parse/classify.js";
 import { parseWord, WordParseError } from "../parse/word.js";
 import { forEachMarkdownCodeToken } from "../retie/tokens.js";
 import { isClarityRootShape } from "../word-converter.js";
@@ -167,6 +173,10 @@ export function lintAgalanToken(
   if (missing.length > 0) {
     return { kind: "unknown-root", detail: `not in the lexicon: ${missing.join(", ")}` };
   }
+  const noAbstract = missingAbstractSense(word, tables);
+  if (noAbstract && !hasOverlay(word, tables)) {
+    return { kind: "unknown-root", detail: `-m on a root with no abstract sense: ${noAbstract}` };
+  }
   return null;
 }
 
@@ -192,4 +202,8 @@ export function lintAgalanMarkdown(text: string, tables: ClassifyTables): Agalan
   });
 
   return issues;
+}
+
+function hasOverlay(word: Parameters<typeof classify>[0], tables: ClassifyTables): boolean {
+  return classify(word, tables).overlay !== undefined;
 }

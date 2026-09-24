@@ -14,7 +14,7 @@ When English hangs *who* / *that* / *which* plus a clause on a noun (*the guard 
 
 > `zugugal vajul. zazawan bugugal vezehel.`
 >
-> z-guard | v-sit | z-Azawan | b-guard | v-tell
+> z-guard | v-sit . z-Azawan | b-guard | v-tell
 >
 > "A guard sits. Azawan talks to the guard."
 
@@ -57,7 +57,7 @@ The pole's role letter follows the clause page. *Because*, *if*, *only if*, and 
 
 > `zazawan vuzunul thurugum barl zululon vawalal.`
 >
-> z-Azawan | v-sing | th-because | b-that-clause | z-Ululon | v-walk
+> z-Azawan | v-sing | [th-because | b-that-clause] | z-Ululon | v-walk
 >
 > "Azawan sings because Ululon walks."
 
@@ -82,7 +82,7 @@ When English puts a **noun** after *despite* (*despite Ululon*), keep the same *
 
 > `zazawan vawalal hezebam bululon.`
 >
-> z-Azawan | v-walk | h-although | b-Ululon
+> z-Azawan | v-walk | [h-although | b-Ululon]
 >
 > "Azawan walks despite Ululon."
 
@@ -95,7 +95,7 @@ When English names the **intended outcome** of this event (*walks so that Ululon
 
 > `zazawan vawalal holalam barl zululon vajul.`
 >
-> z-Azawan | v-walk | h-so-that | b-that-clause | z-Ululon | v-sit
+> z-Azawan | v-walk | [h-so-that | b-that-clause] | z-Ululon | v-sit
 >
 > "Azawan walks so that Ululon sits."
 
@@ -103,7 +103,7 @@ When English *to* drops the sitter, keep inner `/z/`:
 
 > `zazawan vawalal holalam barl zazawan vajul.`
 >
-> z-Azawan | v-walk | h-so-that | b-that-clause | z-Azawan | v-sit
+> z-Azawan | v-walk | [h-so-that | b-that-clause] | z-Azawan | v-sit
 >
 > "Azawan walks in order to sit."
 
@@ -126,7 +126,7 @@ A word that glues two sentences (*therefore*, *however*, …) is an `/x/` **link
 
 > `zodogol vawalal. xezazal zagadal vurunul.`
 >
-> z-dog | v-walk | x-therefore | z-cat | v-run
+> z-dog | v-walk . x-therefore | z-cat | v-run
 >
 > "A dog walks. Therefore a cat runs."
 
@@ -179,7 +179,7 @@ z-Azawan | b-Ululon | v-tell | d-that-clause | z-Uhubun | v-sit
 ::: details Show answer
 `zazawan vurunul thurugum barl zululon dugugal vubunul.`
 
-z-Azawan | v-run | th-because | b-that-clause | z-Ululon | d-guard | v-punch
+z-Azawan | v-run | [th-because | b-that-clause] | z-Ululon | d-guard | v-punch
 :::
 
 **3.** *Azawan writes despite a guard.*
@@ -187,7 +187,7 @@ z-Azawan | v-run | th-because | b-that-clause | z-Ululon | d-guard | v-punch
 ::: details Show answer
 `zazawan vuwurul hezebam bugugal.`
 
-z-Azawan | v-write | h-although | b-guard
+z-Azawan | v-write | [h-although | b-guard]
 :::
 
 **4.** *Azawan sees whether Ululon sits.*
@@ -203,7 +203,7 @@ z-Azawan | v-see | d-whether-clause | z-Ululon | v-sit
 ::: details Show answer
 `zazawan vurunul holalam barl zululon vajul.`
 
-z-Azawan | v-run | h-so-that | b-that-clause | z-Ululon | v-sit
+z-Azawan | v-run | [h-so-that | b-that-clause] | z-Ululon | v-sit
 :::
 
 **6.** *Azawan writes so that Ululon sits.*
@@ -211,7 +211,7 @@ z-Azawan | v-run | h-so-that | b-that-clause | z-Ululon | v-sit
 ::: details Show answer
 `zazawan vuwurul holalam barl zululon vajul.`
 
-z-Azawan | v-write | h-so-that | b-that-clause | z-Ululon | v-sit
+z-Azawan | v-write | [h-so-that | b-that-clause] | z-Ululon | v-sit
 :::
 
 #### Agalan → English
@@ -220,7 +220,7 @@ z-Azawan | v-write | h-so-that | b-that-clause | z-Ululon | v-sit
 
 ::: details Show answer
 
-z-Uhubun | v-scream | x-therefore | z-Ululon | v-fight
+z-Uhubun | v-scream . x-therefore | z-Ululon | v-fight
 
 *Uhubun screams. Therefore Ululon fights.*
 :::
@@ -229,7 +229,7 @@ z-Uhubun | v-scream | x-therefore | z-Ululon | v-fight
 
 ::: details Show answer
 
-z-Ululon | v-fight | h-although | b-guard
+z-Ululon | v-fight | [h-although | b-guard]
 
 *Ululon fights despite a guard.*
 :::
@@ -247,7 +247,7 @@ z-Uhubun | v-see | d-whether-clause | z-Azawan | v-stand
 
 ::: details Show answer
 
-z-Ululon | v-run | h-so-that | b-that-clause | z-Azawan | v-sit
+z-Ululon | v-run | [h-so-that | b-that-clause] | z-Azawan | v-sit
 
 *Ululon runs so that Azawan sits.*
 :::
@@ -256,7 +256,7 @@ z-Ululon | v-run | h-so-that | b-that-clause | z-Azawan | v-sit
 
 ::: details Show answer
 
-z-Ululon | v-write | h-so-that | b-that-clause | z-Azawan | v-sit
+z-Ululon | v-write | [h-so-that | b-that-clause] | z-Azawan | v-sit
 
 *Ululon writes so that Azawan sits.*
 :::
@@ -276,7 +276,7 @@ Beginner already used two sentences for English *who / that / which*. Prefer [re
 
 > `zugugal vajul. zazawan bugur vezehel.`
 >
-> z-guard | v-sit | z-Azawan | b-←guard | v-tell
+> z-guard | v-sit . z-Azawan | b-←guard | v-tell
 >
 > "A guard sits. Azawan tells that guard."
 
@@ -290,7 +290,7 @@ A place, tool, or *of*-relation on the noun is still an extra-noun [hook](hooks.
 
 > `zazawan dugugal gaxajul vejel.`
 >
-> z-Azawan | d-guard | g-agent-x-chair | v-see
+> z-Azawan | [d-guard | g-agent-x-chair] | v-see
 >
 > "Azawan sees a sitting guard."
 
@@ -370,7 +370,7 @@ When *so that* aims at keeping an outcome off, keep **`holalam`** and type `/b/`
 
 > `zazawan vawalal holalam burl zazawan vajul.`
 >
-> z-Azawan | v-walk | h-so-that | b-lest-clause | z-Azawan | v-sit
+> z-Azawan | v-walk | [h-so-that | b-lest-clause] | z-Azawan | v-sit
 >
 > "Azawan walks so as not to sit."
 
@@ -421,7 +421,7 @@ Each clause has at most one **stand-in** at the end of the main sentence. The se
 
 > `zazawan guzumum thurugum barl zululon vawalal thurugum barl zuhubun velebel.`
 >
-> z-Azawan | g-happy | th-because | b-that-clause | z-Ululon | v-walk | th-because | b-that-clause | z-Uhubun | v-sleep
+> [z-Azawan | g-happy] | [th-because | b-that-clause] | z-Ululon | v-walk | th-because | b-that-clause | z-Uhubun | v-sleep
 >
 > "Azawan is happy because Ululon walks because Uhubun sleeps."
 
@@ -462,7 +462,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 ::: details Show answer
 `zazawan vajul. xuvumul zululon vurunul.`
 
-z-Azawan | v-sit | x-next | z-Ululon | v-run
+z-Azawan | v-sit . x-next | z-Ululon | v-run
 :::
 
 **2.** *Azawan runs because Ululon punches Azawan because Uhubun screams.*
@@ -470,7 +470,7 @@ z-Azawan | v-sit | x-next | z-Ululon | v-run
 ::: details Show answer
 `zazawan vurunul thurugum barl zululon dazawan vubunul thurugum barl zuhubun vazagal.`
 
-z-Azawan | v-run | th-because | b-that-clause | z-Ululon | d-Azawan | v-punch | th-because | b-that-clause | z-Uhubun | v-scream
+z-Azawan | v-run | [th-because | b-that-clause] | z-Ululon | d-Azawan | v-punch | th-because | b-that-clause | z-Uhubun | v-scream
 :::
 
 #### Agalan → English
@@ -479,7 +479,7 @@ z-Azawan | v-run | th-because | b-that-clause | z-Ululon | d-Azawan | v-punch | 
 
 ::: details Show answer
 
-z-Uhubun | v-sit | x-meanwhile | z-Ululon | d-luggage | v-see
+z-Uhubun | v-sit . x-meanwhile | z-Ululon | d-luggage | v-see
 
 *Uhubun sits. Meanwhile Ululon sees luggage.*
 :::
@@ -488,7 +488,7 @@ z-Uhubun | v-sit | x-meanwhile | z-Ululon | d-luggage | v-see
 
 ::: details Show answer
 
-z-Ululon | v-sneak | x-however | z-Azawan | v-run
+z-Ululon | v-sneak . x-however | z-Azawan | v-run
 
 *Ululon sneaks. However Azawan runs.*
 :::
@@ -497,7 +497,7 @@ z-Ululon | v-sneak | x-however | z-Azawan | v-run
 
 ::: details Show answer
 
-z-Uhubun | v-scream | th-because | b-that-clause | z-Azawan | v-departure | th-because | b-that-clause | z-Ululon | d-Azawan | v-punch
+z-Uhubun | v-scream | [th-because | b-that-clause] | z-Azawan | v-departure | th-because | b-that-clause | z-Ululon | d-Azawan | v-punch
 
 *Uhubun screams because Azawan departs because Ululon punches Azawan.*
 :::

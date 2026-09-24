@@ -10,6 +10,8 @@ import {
   validatePublishedSenseSeparation,
 } from "./lexicon-published-lint.js";
 import { parsePublishedCsv } from "./lexicon-search.js";
+import { glossCollisions } from "./parse/gloss-inverse.js";
+import { loadDefaultTables } from "./parse/index.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
 const publishedPath = join(rootDir, "data", "lexicon-published.csv");
@@ -66,5 +68,11 @@ describe("lexicon-published.csv sense separation", () => {
     const rows = parsePublishedCsv(readFileSync(publishedPath, "utf8"));
     const errors = validatePublishedSenseSeparation(rows);
     assert.equal(errors.length, 0, errors.map((e) => `row ${e.row} ${e.literal}/${e.abstract}`).join("; "));
+  });
+});
+
+describe("glossCollisions", () => {
+  it("gives every published root + ending its own morph gloss label", () => {
+    assert.deepEqual(glossCollisions(loadDefaultTables()), []);
   });
 });

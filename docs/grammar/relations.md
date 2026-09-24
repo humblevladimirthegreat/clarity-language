@@ -14,7 +14,7 @@ When English says something **resembles** a model (*walks like a duck*, *a house
 
 > `zazawan hurorom budugul vawalal.`
 >
-> z-Azawan | h-like | b-duck | v-walk
+> z-Azawan | [h-like | b-duck] | v-walk
 >
 > "Azawan walks like a duck."
 
@@ -28,7 +28,7 @@ On a noun, the same root is **`gurorom`**:
 
 > `zohohul gurorom bazawan.`
 >
-> z-house | g-like | b-Azawan
+> z-house | [g-like | b-Azawan]
 >
 > "A house like Azawan’s."
 
@@ -48,7 +48,7 @@ When English names the **other side of a swap** (*a book for a hammer*), keep th
 
 > `zazawan dabogol huhanem bahamel vuhanem.`
 >
-> z-Azawan | d-book | h-in-exchange-for | b-hammer | v-convertibility
+> z-Azawan | d-book | [h-in-exchange-for | b-hammer] | v-convertibility
 >
 > "Azawan trades a book for a hammer."
 
@@ -68,7 +68,7 @@ When English says someone **acts as another person’s agent** (*tells on behalf
 
 > `zazawan hudagam bululon vezehel.`
 >
-> z-Azawan | h-on-behalf-of | b-Ululon | v-tell
+> z-Azawan | [h-on-behalf-of | b-Ululon] | v-tell
 >
 > "Azawan tells on behalf of Ululon."
 
@@ -114,7 +114,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 ::: details Show answer
 `zazawan hurorom budugul vawalal.`
 
-z-Azawan | h-like | b-duck | v-walk
+z-Azawan | [h-like | b-duck] | v-walk
 :::
 
 **2.** *Azawan writes in exchange for money.*
@@ -122,7 +122,7 @@ z-Azawan | h-like | b-duck | v-walk
 ::: details Show answer
 `zazawan vuwurul huhanem bonenol.`
 
-z-Azawan | v-write | h-in-exchange-for | b-money
+z-Azawan | v-write | [h-in-exchange-for | b-money]
 :::
 
 **3.** *Azawan tells on behalf of Ululon.*
@@ -130,7 +130,7 @@ z-Azawan | v-write | h-in-exchange-for | b-money
 ::: details Show answer
 `zazawan hudagam bululon vezehel.`
 
-z-Azawan | h-on-behalf-of | b-Ululon | v-tell
+z-Azawan | [h-on-behalf-of | b-Ululon] | v-tell
 :::
 
 #### Agalan → English
@@ -139,7 +139,7 @@ z-Azawan | h-on-behalf-of | b-Ululon | v-tell
 
 ::: details Show answer
 
-z-Uhubun | h-like | b-duck | v-walk
+z-Uhubun | [h-like | b-duck] | v-walk
 
 *Uhubun walks like a duck.*
 :::
@@ -148,7 +148,7 @@ z-Uhubun | h-like | b-duck | v-walk
 
 ::: details Show answer
 
-z-Azawan | h-like | b-duck | v-walk
+z-Azawan | [h-like | b-duck] | v-walk
 
 *Azawan walks like a duck.*
 :::
@@ -157,7 +157,7 @@ z-Azawan | h-like | b-duck | v-walk
 
 ::: details Show answer
 
-z-Ululon | v-write | h-in-exchange-for | b-money
+z-Ululon | v-write | [h-in-exchange-for | b-money]
 
 *Ululon writes in exchange for money.*
 :::
@@ -166,7 +166,7 @@ z-Ululon | v-write | h-in-exchange-for | b-money
 
 ::: details Show answer
 
-z-Azawan | h-on-behalf-of | b-Ululon | v-tell
+z-Azawan | [h-on-behalf-of | b-Ululon] | v-tell
 
 *Azawan tells on behalf of Ululon.*
 :::
@@ -182,7 +182,7 @@ Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extr
 
 > `zazawan ul bazadol vawalal oel badadul.`
 >
-> z-Azawan | from | b-station | v-walk | toward | b-train
+> z-Azawan | [from | b-station] | v-walk | [toward | b-train]
 >
 > "Azawan walks from a station toward a train."
 
@@ -202,7 +202,7 @@ Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extr
 
 > `zugugal al banabal vajul.`
 >
-> z-guard | in | b-bank | v-sit
+> z-guard | [in | b-bank] | v-sit
 >
 > "A guard in a bank sits."
 
@@ -212,7 +212,7 @@ Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extr
 
 > `zululon vajul hazanum badadul bazadol bal.`
 >
-> z-Ululon | v-sit | h-between | b-train | b-station | b-and
+> z-Ululon | v-sit | [h-between | b-train] | [b-station | b-and]
 >
 > "Ululon sits between a train and a station."
 
@@ -232,7 +232,7 @@ English *of* also names how one noun sits toward another (*a hand of Ululon*, *a
 
 > `zazawan dahanal gobonem bululon vejel.`
 >
-> z-Azawan | d-hand | g-part-of | b-Ululon | v-see
+> z-Azawan | [d-hand | [g-part-of | b-Ululon]] | v-see
 >
 > "Azawan sees a hand of Ululon."
 
@@ -300,7 +300,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 ::: details Show answer
 `zazawan vajul aol bajul.`
 
-z-Azawan | v-sit | on | b-chair
+z-Azawan | v-sit | [on | b-chair]
 :::
 
 **2.** *Ululon walks from a station toward a train.*
@@ -308,7 +308,7 @@ z-Azawan | v-sit | on | b-chair
 ::: details Show answer
 `zululon ul bazadol vawalal oel badadul.`
 
-z-Ululon | from | b-station | v-walk | toward | b-train
+z-Ululon | [from | b-station] | v-walk | [toward | b-train]
 :::
 
 **3.** *Uhubun sits between a train and a station.*
@@ -316,7 +316,7 @@ z-Ululon | from | b-station | v-walk | toward | b-train
 ::: details Show answer
 `zuhubun vajul hazanum badadul bazadol bal.`
 
-z-Uhubun | v-sit | h-between | b-train | b-station | b-and
+z-Uhubun | v-sit | [h-between | b-train] | [b-station | b-and]
 :::
 
 **4.** *Azawan runs out of a house into a train.*
@@ -324,7 +324,7 @@ z-Uhubun | v-sit | h-between | b-train | b-station | b-and
 ::: details Show answer
 `zazawan ual bohohul vurunul al badadul.`
 
-z-Azawan | out-of | b-house | v-run | in | b-train
+z-Azawan | [out-of | b-house] | v-run | [in | b-train]
 :::
 
 #### Agalan → English
@@ -333,7 +333,7 @@ z-Azawan | out-of | b-house | v-run | in | b-train
 
 ::: details Show answer
 
-z-Uhubun | v-stand | at | b-station
+z-Uhubun | v-stand | [at | b-station]
 
 *Uhubun stands at a station.*
 :::
@@ -342,7 +342,7 @@ z-Uhubun | v-stand | at | b-station
 
 ::: details Show answer
 
-z-Azawan | v-run | out-of | b-train
+z-Azawan | v-run | [out-of | b-train]
 
 *Azawan runs out of a train.*
 :::
@@ -351,7 +351,7 @@ z-Azawan | v-run | out-of | b-train
 
 ::: details Show answer
 
-z-Ululon | v-walk | through | b-station
+z-Ululon | v-walk | [through | b-station]
 
 *Ululon walks through a station.*
 :::
@@ -360,7 +360,7 @@ z-Ululon | v-walk | through | b-station
 
 ::: details Show answer
 
-z-Ululon | from | b-station | v-walk | at | b-train
+z-Ululon | [from | b-station] | v-walk | [at | b-train]
 
 *Ululon walks from a station to a train.*
 :::
@@ -379,7 +379,7 @@ Write a hosted pair for that second now. Asserted whose-now (a real dated line i
 
 > `zululon thonenom helerem b_#22,7 vebarum.`
 >
-> z-Ululon | th-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment
+> z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment
 >
 > "As of 22 July, Ululon had still left."
 
@@ -393,7 +393,7 @@ A later `/x/` clause is a new host. To keep the same books, write the **same ove
 
 > `zululon thonenom helerem b_#22,7 vebarum. xazawan thonenom helerer vawalal.`
 >
-> z-Ululon | th-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment | x-Azawan | th-RESIDUE | h-as-of.ledger | v-walk
+> z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment . x-Azawan | th-RESIDUE | h-as-of.ledger | v-walk
 >
 > "As of 22 July, Ululon had still left. Azawan had still walked — same books."
 
@@ -407,7 +407,7 @@ Once whose-now is set, [PREDICT](intention.md#predict) is **after** that now, [P
 
 > `zazawan zululon zel welerem b_#22,7 gomonam.`
 >
-> z-Azawan | z-Ululon | z-rank/more | w-as-of.ledger | b-_22,7 | g-challenge
+> [z-Azawan | z-Ululon | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 >
 > "As of 22 July, Azawan is more challenging than Ululon." — `/w/` does not retarget the verb
 
@@ -485,7 +485,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The hos
 ::: details Show answer
 `zululon thonenom helerem b_#22,7 vebarum.`
 
-z-Ululon | th-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment
+z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment
 :::
 
 **2.** *As of 22 July, Azawan sits in a house.*
@@ -493,7 +493,7 @@ z-Ululon | th-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment
 ::: details Show answer
 `zazawan helerem b_#22,7 vajul al bohohul.`
 
-z-Azawan | h-as-of.ledger | b-_22,7 | v-sit | in | b-house
+z-Azawan | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 :::
 
 **3.** *From then, it would rain.*
@@ -501,7 +501,7 @@ z-Azawan | h-as-of.ledger | b-_22,7 | v-sit | in | b-house
 ::: details Show answer
 `thelezom hobomam b_#22,7 vanunul.`
 
-th-predict | h-as-of.bookmark | b-_22,7 | v-rain
+th-predict | [h-as-of.bookmark | b-_22,7] | v-rain
 :::
 
 **4.** *The money as of 22 July.*
@@ -509,7 +509,7 @@ th-predict | h-as-of.bookmark | b-_22,7 | v-rain
 ::: details Show answer
 `zonenol gelerem b_#22,7.`
 
-z-money | g-as-of.ledger | b-_22,7
+z-money | [g-as-of.ledger | b-_22,7]
 :::
 
 **5.** *As of 22 July, Azawan is more challenging than Ululon.*
@@ -517,7 +517,7 @@ z-money | g-as-of.ledger | b-_22,7
 ::: details Show answer
 `zazawan zululon zel welerem b_#22,7 gomonam.`
 
-z-Azawan | z-Ululon | z-rank/more | w-as-of.ledger | b-_22,7 | g-challenge
+[z-Azawan | z-Ululon | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 :::
 
 **6.** *As of the leaving, the money still stood.*
@@ -525,7 +525,7 @@ z-Azawan | z-Ululon | z-rank/more | w-as-of.ledger | b-_22,7 | g-challenge
 ::: details Show answer
 `zonenol thonenom helerem bebarum.`
 
-z-money | th-RESIDUE | h-as-of.ledger | b-abandonment
+z-money | th-RESIDUE | [h-as-of.ledger | b-abandonment]
 :::
 
 #### Agalan → English
@@ -534,7 +534,7 @@ z-money | th-RESIDUE | h-as-of.ledger | b-abandonment
 
 ::: details Show answer
 
-z-Ululon | th-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment | x-Azawan | th-RESIDUE | h-as-of.ledger | v-walk
+z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment . x-Azawan | th-RESIDUE | h-as-of.ledger | v-walk
 
 *As of 22 July, Ululon had still left. Azawan had still walked — same books.*
 :::
@@ -543,7 +543,7 @@ z-Ululon | th-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment | x-Azawan | th
 
 ::: details Show answer
 
-z-Uhubun | h-as-of.ledger | b-_22,7 | v-sit | in | b-house
+z-Uhubun | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 
 *As of 22 July, Uhubun sits in a house.*
 :::
@@ -552,7 +552,7 @@ z-Uhubun | h-as-of.ledger | b-_22,7 | v-sit | in | b-house
 
 ::: details Show answer
 
-th-predict | h-as-of.bookmark | b-_22,7 | v-rain | x-Azawan | th-predict | h-as-of.bookmark | v-walk
+th-predict | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | th-predict | h-as-of.bookmark | v-walk
 
 *From then, it would rain. Azawan would walk.*
 :::
@@ -561,7 +561,7 @@ th-predict | h-as-of.bookmark | b-_22,7 | v-rain | x-Azawan | th-predict | h-as-
 
 ::: details Show answer
 
-z-money | g-as-of.ledger | b-_22,7
+z-money | [g-as-of.ledger | b-_22,7]
 
 *The money as of 22 July.*
 :::
@@ -570,7 +570,7 @@ z-money | g-as-of.ledger | b-_22,7
 
 ::: details Show answer
 
-z-Azawan | z-Ululon | z-rank/more | w-as-of.ledger | b-_22,7 | g-challenge
+[z-Azawan | z-Ululon | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 
 *As of 22 July, Azawan is more challenging than Ululon.*
 :::
@@ -579,7 +579,7 @@ z-Azawan | z-Ululon | z-rank/more | w-as-of.ledger | b-_22,7 | g-challenge
 
 ::: details Show answer
 
-z-money | th-RESIDUE | h-as-of.ledger | b-abandonment
+z-money | th-RESIDUE | [h-as-of.ledger | b-abandonment]
 
 *As of the leaving, the money still stood.*
 :::

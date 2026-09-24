@@ -4,51 +4,89 @@ This document contains a record of features that have been posted to the r/conla
 
 Use this document for styling examples when producing more posts, and seeing what has already been posted. New posts should be added at the top under this section.
 
+### Collective Verbs and Adjectives Use Plural
+
+English *they sang* doesn't say whether they sang together or each on their own, and *the boxes are heavy* doesn't say whether each box is heavy or just the whole pile. Agalan lets you mark the difference by putting the plural **-x** on the verb or adjective itself.
+
+On a noun, **-x** says *who* is in the group. On a verb or adjective, **-x** says the group does it or has it **as one unit**. Leave it off and it's left open (each one, together, or you don't care).
+
+> `zazawanx vuzunul.`
+>
+> z-Azawan-x | v-sing
+>
+> "Azawan and friends sing." (together or separately - not saying)
+
+> `zazawanx vuzunulx.`
+>
+> z-Azawan-x | v-sing-x
+>
+> "Azawan and friends sing together, as one act."
+
+It works even with a single named person - the collective verb means others shared the act, even if they aren't named:
+
+> `zazawan vuzunulx.`
+>
+> z-Azawan | v-sing-x
+>
+> "Azawan sings with others." (not a solo)
+
+Adjectives work the same way:
+
+> `zulebolx garogom.`
+>
+> z-file-box-x | g-heavy
+>
+> "The file-boxes are heavy." (each one, or don't care)
+
+> `zulebolx garogomx.`
+>
+> z-file-box-x | g-heavy-x
+>
+> "The file-boxes are heavy as a pile." (but not individually)
+
+This is handy for fairness too: *the team is slow* can mean every member is slow or just that the group as a whole is slow, and those are very different claims about the people in it.
+
+Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/plurality.html#verbs-v
+
 ### *May* Says If You're Finding Out
 
-English *I think* often smuggles a **guess** (*I think Ululon is leaving* = maybe that is so) without saying whether you are checking, and rumination can sound like an investigation that never actually looks. Agalan keeps the ordinary verb (*leaves*, *punches*, *cries*) and adds a small `/h/` word **`odoho`** (**MAY**): the scene *could be* so. That is not a warrant, and it is not the verb *to think*.
+When we're unsure about something, we often just keep turning it over in our heads - *maybe he's mad at me, maybe he isn't* - which feels like figuring it out but never actually checks. Agalan makes you say whether you're going to find out.
+
+A possibility is marked with the stance word `odoho` (*may*), and its ending says what you're doing about it:
+
+* `thodohom` - *may* (just a possibility, the default)
+* `thodohol` - *may - I'll find out* / *let's find out*
+* `thodohor` - *may - who knows* (you're not checking, or can't)
+
+None of these is the "right" one. Letting something go with *who knows* is fine. The point is that you notice which one you're doing, so a worry you're never going to check gets called what it is.
 
 > `zululon thodohom vebarul duhubun.`
 >
-> z-Ululon | th-MAY | v-departure | d-Uhubun
+> z-Ululon | th-may | v-leave | d-Uhubun
 >
 > "Ululon may be leaving Uhubun."
 
-> `zazawan vodohol.`
->
-> z-Azawan | v-thought
->
-> "Azawan thinks." (an action of thinking, not MAY)
-
-The ending on that `/h/` word is what you are doing with the balloon **this sentence**. None of the three is the “correct” person:
-
-| Form | Stance | English |
-|------|--------|---------|
-| `thodohom` | *could be* (default) | *may* |
-| `thodohol` | seeking | *may — I'll find out* / *let's find out* |
-| `thodohor` | not seeking (including if you never know) | *may — who knows* |
-
 > `zululon thodohol vubunul dazawan.`
 >
-> z-Ululon | th-MAY-find-out | v-punch | d-Azawan
+> z-Ululon | th-may-find-out | v-punch | d-Azawan
 >
-> "Ululon may be punching Azawan — I'll find out."
+> "Ululon may be punching Azawan - I'll find out."
 
 > `zuhubun thodohor vogorol.`
 >
-> z-Uhubun | th-MAY-who-knows | v-cry
+> z-Uhubun | th-may-who-knows | v-cry
 >
-> "Uhubun may be crying — who knows."
+> "Uhubun may be crying - who knows."
 
-Same word on a yes/no ask when the question *is* the seeking:
+It works in questions too, when asking *is* the finding out:
 
 > `jol zazawan thodohol vubunul dululon.`
 >
-> j-question | z-Azawan | th-MAY-find-out | v-punch | d-Ululon
+> j-question | z-Azawan | th-may-find-out | v-punch | d-Ululon
 >
-> "Might Azawan be punching Ululon? — let's find out."
+> "Might Azawan be punching Ululon? Let's find out."
 
-How you **know** a world-claim (live look, memory, hearsay, …) is a different inventory. MAY is only potential, plus whether you are going after it.
+This is separate from the verb *to think* (`vodohol` is just the act of thinking), and separate from evidentiality, which says *how* you know something you're claiming.
 
 Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/knowing.html#may
 

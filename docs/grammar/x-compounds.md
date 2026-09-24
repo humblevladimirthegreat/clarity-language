@@ -118,7 +118,7 @@ z-doorbell
 ::: details Show answer
 `zahamel zewenel zam.`
 
-z-hammer | z-wrench | z-and.open
+[z-hammer | z-wrench | z-and.open]
 :::
 
 **3.** *a wood saw*
@@ -193,7 +193,7 @@ z-Uhubun | d-doorbell | v-see
 
 ::: details Show answer
 
-z-hammer | z-axe | z-and.open
+[z-hammer | z-axe | z-and.open]
 
 *a hammer and an axe*
 :::
@@ -455,7 +455,7 @@ j-Ululon-passing | z-Ululon | z-Azawan | v-punch
 ::: details Show answer
 `azawaxan. ululoxon.`
 
-Azawan-presence | Ululon-ask
+Azawan-presence . Ululon-ask
 :::
 
 #### Agalan → English
@@ -533,7 +533,7 @@ j-Azawan-minutes | z-Uhubun | d-doorbell | v-see
 
 ::: details Show answer
 
-Azawan-presence | Ululon-minutes
+Azawan-presence . Ululon-minutes
 
 *Azawan — I’m here / we can stay.* *Ululon — a few minutes.* (Ululon’s few minutes is the one that holds)
 :::

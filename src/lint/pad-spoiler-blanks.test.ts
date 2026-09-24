@@ -36,7 +36,7 @@ z-Azawan | v-sit
     const end = md.indexOf("## Intermediate", start);
     const slice = md.slice(start, end);
     const out = padExerciseSpoilerBlanks(slice);
-    assert.match(out, /`zuhubun zazawan zael ganalam\.`\n\nz-Uhubun/);
-    assert.match(out, /z-Uhubun \| z-rank\/more \| g-agility\n\n\*Uhubun is the most agile\.\*/);
+    assert.match(out, /`zuhubun zazawan zael ganalam\.`\n\n\[z-Uhubun/);
+    assert.match(out, /\[z-Uhubun \| z-rank\/more \| g-agility\]\n\n\*Uhubun is the most agile\.\*/);
   });
 });

@@ -13,13 +13,13 @@ import {
 } from "./agalan-docs.js";
 
 function tablesOf(opts?: {
-  published?: Array<{ clarity: string; concrete?: string }>;
+  published?: Array<{ clarity: string; concrete?: string; abstract?: string }>;
 }): ClassifyTables {
   return createClassifyTablesFromRows(
     (opts?.published ?? [{ clarity: "azawa", concrete: "dog" }]).map((row) => ({
       emoji: "",
       concrete: row.concrete ?? row.clarity,
-      abstract: "",
+      abstract: row.abstract ?? "",
       clarity: row.clarity,
       mnemonic: "",
       englishByPos: "",
@@ -69,7 +69,7 @@ describe("lintAgalanToken", () => {
   const tables = tablesOf({
     published: [
       { clarity: "azawa", concrete: "dog" },
-      { clarity: "uzumu", concrete: "happy" },
+      { clarity: "uzumu", concrete: "smile", abstract: "happy" },
       { clarity: "egera", concrete: "ability" },
       { clarity: "ululo", concrete: "courage" },
     ],

@@ -108,7 +108,7 @@ When the noun is **not** yours (weather, a gathering, another person’s church)
 
 > `zazegem walodothur gobobum.`
 >
-> z-gathering | w-autonomy-unmet-temporary | g-stimulus
+> z-gathering | [w-autonomy-unmet-temporary | g-stimulus]
 >
 > "The gathering detracts from autonomy right now (temporary)."
 
@@ -169,7 +169,7 @@ z-backpack | g-competence-met-mental
 ::: details Show answer
 `zuwudul wonogothur gobobum.`
 
-z-wind | w-relatedness-unmet-temporary | g-stimulus
+z-wind | [w-relatedness-unmet-temporary | g-stimulus]
 :::
 
 **4.** *The fire detracts from survival (irreversible).*
@@ -177,7 +177,7 @@ z-wind | w-relatedness-unmet-temporary | g-stimulus
 ::: details Show answer
 `zurel wuhuhethul gobobum.`
 
-z-fire | w-survival-unmet-irreversible | g-stimulus
+z-fire | [w-survival-unmet-irreversible | g-stimulus]
 :::
 
 **5.** *My flashlight serves an unspecified need (appreciated physically).*
@@ -212,7 +212,7 @@ z-flashlight | g-competence-met-physical
 
 ::: details Show answer
 
-z-rain | w-autonomy-unmet-modifiable | g-stimulus
+z-rain | [w-autonomy-unmet-modifiable | g-stimulus]
 
 *The rain detracts from autonomy (modifiable).*
 :::
@@ -239,7 +239,7 @@ z-backpack | g-competence-unmet-irreversible
 
 ::: details Show answer
 
-z-fire | w-autonomy-unmet-irreversible | g-stimulus
+z-fire | [w-autonomy-unmet-irreversible | g-stimulus]
 
 *The fire detracts from autonomy (irreversible).*
 :::
@@ -254,7 +254,7 @@ When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgme
 
 > `zezehel wolozothur gobobum thogegam thanedem.`
 >
-> z-speech | w-competence-unmet-temporary | g-stimulus | th-HIGH | th-CIRCUM
+> [z-speech | [w-competence-unmet-temporary | g-stimulus]] | th-HIGH | th-CIRCUM
 >
 > "Anxious about the dialogue:" competence at stake for now; surge; room awash.
 
@@ -499,7 +499,7 @@ z-Ululon | v-pray | th-competence-motive-internal
 ::: details Show answer
 `zuhurul goborul bazawan wonogothal gobobum.`
 
-z-church | g-copyright | b-Azawan | w-relatedness-met-physical | g-stimulus
+[z-church | [g-copyright | [b-Azawan | [w-relatedness-met-physical | g-stimulus]]]]
 :::
 
 **11.** *Azawan prays: competence is met (physical) and relatedness is the internal motive.*
@@ -578,7 +578,7 @@ z-prayer-bead | g-pleasure-met-spiritual
 
 ::: details Show answer
 
-z-candle | w-autonomy-unmet-modifiable | g-stimulus
+z-candle | [w-autonomy-unmet-modifiable | g-stimulus]
 
 *The candle detracts from autonomy (modifiable).*
 :::
@@ -587,7 +587,7 @@ z-candle | w-autonomy-unmet-modifiable | g-stimulus
 
 ::: details Show answer
 
-z-bell | w-relatedness-unmet-modifiable | g-stimulus
+z-bell | [w-relatedness-unmet-modifiable | g-stimulus]
 
 *The bell detracts from relatedness (modifiable).*
 :::

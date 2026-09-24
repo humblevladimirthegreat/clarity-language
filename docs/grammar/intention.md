@@ -106,7 +106,7 @@ z-Ululon | th-plan-sketch | d-pawn | v-see
 ::: details Show answer
 `zazawan themabal buhubun vezehel.`
 
-z-Azawan | th-plan-itinerary | b-Uhubun | v-tell
+z-Azawan | [th-plan-itinerary | b-Uhubun] | v-tell
 :::
 
 **4.** *I predict Azawan will sit.*
@@ -173,7 +173,7 @@ z-Azawan | th-plan-sketch | d-pawn | v-see
 
 ::: details Show answer
 
-z-Uhubun | th-plan-itinerary | b-Azawan | v-tell
+z-Uhubun | [th-plan-itinerary | b-Azawan] | v-tell
 
 *Uhubun plans to tell Azawan.*
 :::
@@ -191,7 +191,7 @@ th-predict | v-sit
 
 ::: details Show answer
 
-z-Azawan | th-plan-sketch | b-Uhubun | v-tell
+z-Azawan | [th-plan-sketch | b-Uhubun] | v-tell
 
 *Azawan intends to tell Uhubun.*
 :::
@@ -391,7 +391,7 @@ z-Ululon | th-DECISION-modifiable | v-sit
 ::: details Show answer
 `zazawan thehegem buhubun vezehel.`
 
-z-Azawan | th-DECISION-modifiable | b-Uhubun | v-tell
+z-Azawan | [th-DECISION-modifiable | b-Uhubun] | v-tell
 :::
 
 **3.** *Uhubun has decided for now to write.*
@@ -509,7 +509,7 @@ z-Azawan | th-DECISION-temporary | d-pen | v-see
 
 ::: details Show answer
 
-z-Ululon | th-plan-itinerary | th-DECISION-irreversible | b-Uhubun | v-tell
+z-Ululon | th-plan-itinerary | [th-DECISION-irreversible | b-Uhubun] | v-tell
 
 *Ululon plans to tell Uhubun, and that choice is final.*
 :::
@@ -560,7 +560,7 @@ z-Azawan | v-climb
 
 > `zululon themabam vawalal helerem b_#22,7.`
 >
-> z-Ululon | th-plan-sketch | v-walk | h-as-of.ledger | b-_22,7
+> z-Ululon | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
 >
 > "As of 22 July, Ululon was going to walk."
 
@@ -604,7 +604,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. PLAN an
 ::: details Show answer
 `zululon themabam vawalal helerem b_#22,7.`
 
-z-Ululon | th-plan-sketch | v-walk | h-as-of.ledger | b-_22,7
+z-Ululon | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
 :::
 
 **2.** *From then, it would rain.*
@@ -612,7 +612,7 @@ z-Ululon | th-plan-sketch | v-walk | h-as-of.ledger | b-_22,7
 ::: details Show answer
 `thelezom hobomam b_#22,7 vanunul.`
 
-th-predict | h-as-of.bookmark | b-_22,7 | v-rain
+th-predict | [h-as-of.bookmark | b-_22,7] | v-rain
 :::
 
 **3.** *Ululon has decided to walk — the pick is revisable now; the walking is as of 22 July.*
@@ -620,7 +620,7 @@ th-predict | h-as-of.bookmark | b-_22,7 | v-rain
 ::: details Show answer
 `zululon thehegem vawalal helerem b_#22,7.`
 
-z-Ululon | th-DECISION-modifiable | v-walk | h-as-of.ledger | b-_22,7
+z-Ululon | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 :::
 
 #### Agalan → English
@@ -629,7 +629,7 @@ z-Ululon | th-DECISION-modifiable | v-walk | h-as-of.ledger | b-_22,7
 
 ::: details Show answer
 
-th-predict | h-as-of.bookmark | b-_22,7 | v-rain | x-Azawan | th-predict | h-as-of.bookmark | v-walk
+th-predict | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | th-predict | h-as-of.bookmark | v-walk
 
 *From then, it would rain. Azawan would walk.*
 :::
@@ -638,7 +638,7 @@ th-predict | h-as-of.bookmark | b-_22,7 | v-rain | x-Azawan | th-predict | h-as-
 
 ::: details Show answer
 
-z-Ululon | th-plan-sketch | v-walk | h-as-of.ledger | b-_22,7
+z-Ululon | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
 
 *As of 22 July, Ululon was going to walk.*
 :::
@@ -647,7 +647,7 @@ z-Ululon | th-plan-sketch | v-walk | h-as-of.ledger | b-_22,7
 
 ::: details Show answer
 
-z-Ululon | th-DECISION-modifiable | v-walk | h-as-of.ledger | b-_22,7
+z-Ululon | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 
 *Ululon has decided to walk — the pick is revisable now; the walking is as of 22 July.*
 :::

@@ -96,7 +96,7 @@ When English says *how many* or *which place*, Agalan writes a [number word](num
 
 > `zagadalx grarel.`
 >
-> z-cat-x | g-three
+> z-cat-x | g-three.spelled
 >
 > "Three cats."
 

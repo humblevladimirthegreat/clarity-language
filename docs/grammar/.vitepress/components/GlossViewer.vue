@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
-import { inspectText, type InspectResult } from '@parse-browser'
+import { inspectText, morphGlossLine, type InspectResult } from '@parse-browser'
 import { useClassifyTables } from '../composables/useClassifyTables'
 import { useAgelanSpeak } from '../composables/useAgelanSpeak'
 import { warmupSpeak } from '../lib/speak-engine'
@@ -35,6 +35,16 @@ const result = computed<InspectResult>(() => {
 })
 
 const ipaPreview = computed(() => ipaFor(text.value))
+
+/** Bracketed morph gloss for the whole input (docs/meta/glosses.md § Phrase brackets). */
+const morphLine = computed(() => {
+  if (!tables.value || !text.value.trim()) return ''
+  try {
+    return morphGlossLine(text.value, tables.value)
+  } catch {
+    return ''
+  }
+})
 
 function currentParseError(): string {
   const warning = result.value.sentenceWarning
@@ -87,7 +97,7 @@ onBeforeUnmount(() => {
     </div>
     <p v-if="speakError" class="warn">{{ speakError }}</p>
     <p class="hint">
-      Hover for a short gloss. Click or highlight a word for a floating inspect card. Highlight a
+      Hover for a short gloss. The morph gloss below shows phrase structure: <code>[ … ]</code> groups a unit, and labels such as <code>NAME[…]</code> or <code>CITE[…]</code> mark packages. Click or highlight a word for a floating inspect card. Highlight a
       join, span fence, or <code>^</code> to inspect the construction. Pin or press Enter for the
       full breakdown beside the stream. Copy uses the romanized surface form (not English). Arrow
       keys walk words; <kbd>g</kbd> opens Why; <kbd>s</kbd> speaks the selection; <kbd>Esc</kbd>
@@ -97,6 +107,10 @@ onBeforeUnmount(() => {
     <p v-if="status === 'error'" class="warn">Could not load lexicon. {{ errorMessage }}</p>
     <p v-else-if="deferredParseError" class="warn" role="status">{{ deferredParseError }}</p>
     <GlossOverlay v-if="status === 'ready'" :result="result" />
+    <p v-if="status === 'ready' && morphLine" class="morph">
+      <span class="morph-label">Morph gloss</span>
+      <code>{{ morphLine }}</code>
+    </p>
   </div>
 </template>
 
@@ -145,6 +159,21 @@ textarea:focus {
   margin: 0.65rem 0 1rem;
   color: var(--vp-c-text-2);
   font-size: 0.9rem;
+}
+
+.morph {
+  margin: 0.85rem 0 0;
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
+
+.morph-label {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--vp-c-text-2);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .warn {

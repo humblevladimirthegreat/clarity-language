@@ -18,7 +18,7 @@ When every person and action in the clause is already named, the expected reply 
 
 > `jol zazawan vawalal?`
 >
-> j-question | z-Azawan | v-walk
+> j-question | z-Azawan | v-walk ?
 >
 > "Does Azawan walk?"
 
@@ -32,7 +32,7 @@ If the subject is *nobody* (`zal`) or the clause is *nothing happened* (`xal`), 
 
 > `jol zal vawalal?`
 >
-> j-question | z-and | v-walk
+> j-question | z-and | v-walk ?
 >
 > "Does nobody walk?"
 
@@ -45,7 +45,7 @@ Keep **`jol`** or **`jom`** at the start. In the slot you want filled, use a joi
 
 > `jol zar vawalal?`
 >
-> j-question | z-who | v-walk
+> j-question | z-who | v-walk ?
 >
 > "Who walks?"
 
@@ -62,7 +62,7 @@ If the reply is just the fill, not a full sentence, write it as a [citation](wor
 
 > `jol zur velebel?`
 >
-> j-question | z-who-else | v-sleep
+> j-question | z-who-else | v-sleep ?
 >
 > "Who else sleeps?"
 
@@ -79,7 +79,7 @@ If more than one slot has join **-r** in the same question, each of those **-r**
 
 > `jol zar vejel dar?`
 >
-> j-question | z-who | v-see | d-who
+> j-question | z-who | v-see | d-who ?
 >
 > "Who sees what?"
 
@@ -91,7 +91,7 @@ If only one slot is unknown, put join **-r** only there. Write the known thing a
 
 > `jol zar vejel dodogol?`
 >
-> j-question | z-who | v-see | d-dog
+> j-question | z-who | v-see | d-dog ?
 >
 > "Who sees a dog?"
 
@@ -149,7 +149,7 @@ A *…, yes?* confirm tag is its own next turn: finish the statement with a peri
 
 > `zazawan vawalal. jael.`
 >
-> z-Azawan | v-walk | j-yes
+> z-Azawan | v-walk . j-yes
 >
 > "Azawan walks. Yes."
 
@@ -208,7 +208,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 ::: details Show answer
 `jol zazawan vajul?`
 
-j-question | z-Azawan | v-sit
+j-question | z-Azawan | v-sit ?
 :::
 
 **2.** *Who sees the umbrella?*
@@ -216,7 +216,7 @@ j-question | z-Azawan | v-sit
 ::: details Show answer
 `jol zar vejel dumubul?`
 
-j-question | z-who | v-see | d-umbrella
+j-question | z-who | v-see | d-umbrella ?
 :::
 
 **3.** *Is Ululon writing, I wonder?*
@@ -224,7 +224,7 @@ j-question | z-who | v-see | d-umbrella
 ::: details Show answer
 `jom zululon vuwurul?`
 
-j-soft-question | z-Ululon | v-write
+j-soft-question | z-Ululon | v-write ?
 :::
 
 **4.** *Who sees what?*
@@ -232,7 +232,7 @@ j-soft-question | z-Ululon | v-write
 ::: details Show answer
 `jol zar vejel dar?`
 
-j-question | z-who | v-see | d-who
+j-question | z-who | v-see | d-who ?
 :::
 
 **5.** *Who else sees the coat?*
@@ -240,7 +240,7 @@ j-question | z-who | v-see | d-who
 ::: details Show answer
 `jol zur vejel dojal?`
 
-j-question | z-who-else | v-see | d-coat
+j-question | z-who-else | v-see | d-coat ?
 :::
 
 **6.** *Azawan tells Uhubun. Yes.* (confirm as a second turn)
@@ -248,7 +248,7 @@ j-question | z-who-else | v-see | d-coat
 ::: details Show answer
 `zazawan vezehel buhubun. jael.`
 
-z-Azawan | v-tell | b-Uhubun | j-yes
+z-Azawan | v-tell | b-Uhubun . j-yes
 :::
 
 **7.** *No.* / *False.* (polar, not “don’t”)
@@ -273,7 +273,7 @@ j-sure
 
 ::: details Show answer
 
-j-soft-question | z-Uhubun | v-see | d-key
+j-soft-question | z-Uhubun | v-see | d-key ?
 
 *Is Uhubun seeing the key, I wonder?*
 :::
@@ -282,7 +282,7 @@ j-soft-question | z-Uhubun | v-see | d-key
 
 ::: details Show answer
 
-j-question | z-who | v-write
+j-question | z-who | v-write ?
 
 *Who writes?*
 :::
@@ -291,7 +291,7 @@ j-question | z-who | v-write
 
 ::: details Show answer
 
-j-question | z-and | v-sit
+j-question | z-and | v-sit ?
 
 *Does nobody sit?*
 :::
@@ -300,7 +300,7 @@ j-question | z-and | v-sit
 
 ::: details Show answer
 
-j-question | z-who | v-tell | d-who
+j-question | z-who | v-tell | d-who ?
 
 *Who tells what?*
 :::
@@ -335,7 +335,7 @@ j-prohibition | v-punch
 
 ::: details Show answer
 
-z-Ululon | v-lie | j-yes
+z-Ululon | v-lie . j-yes
 
 *Ululon lies. Yes.*
 :::
@@ -371,7 +371,7 @@ When the question already contains *not* (*Didn’t Azawan run?*), *yes* and *no
 
 > `jol zazawan vul vurunul? jael.`
 >
-> j-question | z-Azawan | v-not | v-run | j-yes
+> j-question | z-Azawan | v-not | v-run ? j-yes
 >
 > "Didn’t Azawan run? True, Azawan didn’t."
 
@@ -401,7 +401,7 @@ To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in
 
 > `jol zuhubun vawalal har?`
 >
-> j-question | z-Uhubun | v-walk | h-when
+> j-question | z-Uhubun | v-walk | h-when ?
 >
 > "When does Uhubun walk?"
 
@@ -421,7 +421,7 @@ A *yes/no* question can put a join ending on a **named** item instead of a fill-
 
 > `jol zazawan zal?`
 >
-> j-question | z-Azawan | z-and
+> j-question | [z-Azawan | z-and] ?
 >
 > "Just Azawan?"
 
@@ -462,7 +462,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 ::: details Show answer
 `jol zazawan vul vezehel?`
 
-j-question | z-Azawan | v-not | v-tell
+j-question | z-Azawan | v-not | v-tell ?
 `jael.`
 :::
 
@@ -471,7 +471,7 @@ j-question | z-Azawan | v-not | v-tell
 ::: details Show answer
 `jol zuhubun vajul har?`
 
-j-question | z-Uhubun | v-sit | h-when
+j-question | z-Uhubun | v-sit | h-when ?
 :::
 
 **3.** *Which key?* (one unknown)
@@ -479,7 +479,7 @@ j-question | z-Uhubun | v-sit | h-when
 ::: details Show answer
 `jol zagegol zar?`
 
-j-question | z-key | z-who
+j-question | [z-key | z-who] ?
 :::
 
 **4.** *Just Ululon?* (confirm the singleton)
@@ -487,7 +487,7 @@ j-question | z-key | z-who
 ::: details Show answer
 `jol zululon zal?`
 
-j-question | z-Ululon | z-and
+j-question | [z-Ululon | z-and] ?
 :::
 
 **5.** *How about Uhubun?* (offer)
@@ -495,7 +495,7 @@ j-question | z-Ululon | z-and
 ::: details Show answer
 `jol zuhubun zam?`
 
-j-question | z-Uhubun | z-and.open
+j-question | [z-Uhubun | z-and.open] ?
 :::
 
 **6.** *Not that.* (reject this option, not a truth-flip)
@@ -511,7 +511,7 @@ j-refuse-option
 ::: details Show answer
 `jol hor?`
 
-j-question | h-anytime
+j-question | h-anytime ?
 :::
 
 **8.** *Hell no!* (refuse the whole frame)
@@ -537,7 +537,7 @@ j-yes | v-not | v-attest
 
 ::: details Show answer
 
-j-question | h-some-other-time
+j-question | h-some-other-time ?
 
 *When else?*
 :::
@@ -546,7 +546,7 @@ j-question | h-some-other-time
 
 ::: details Show answer
 
-j-question | v-who
+j-question | v-who ?
 
 *What did they do?*
 :::
@@ -555,7 +555,7 @@ j-question | v-who
 
 ::: details Show answer
 
-j-question | d-phone | z-which
+j-question | d-phone | z-which ?
 
 *Any phone?*
 :::
@@ -564,7 +564,7 @@ j-question | d-phone | z-which
 
 ::: details Show answer
 
-j-question | z-Azawan | z-not
+j-question | [z-Azawan | z-not] ?
 
 *Not Azawan?*
 :::
@@ -590,7 +590,7 @@ j-no | v-lie
 
 ::: details Show answer
 
-j-question | z-who | v-tell | z-Uhubun | h-when
+j-question | z-who | v-tell | z-Uhubun | h-when ?
 
 *Who tells Uhubun when?*
 :::
@@ -605,7 +605,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 > `jol zazawan zel?`
 >
-> j-question | z-Azawan | z-rank/more
+> j-question | [z-Azawan | z-rank/more] ?
 >
 > "Is Azawan the only priority?"
 
@@ -710,7 +710,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 ::: details Show answer
 `jol zazawan zel?`
 
-j-question | z-Azawan | z-rank/more
+j-question | [z-Azawan | z-rank/more] ?
 :::
 
 **2.** *Prefer Ululon?* / *Ululon first?* (rank offer)
@@ -718,7 +718,7 @@ j-question | z-Azawan | z-rank/more
 ::: details Show answer
 `jol zululon zem?`
 
-j-question | z-Ululon | z-rank/more.open
+j-question | [z-Ululon | z-rank/more.open] ?
 :::
 
 **3.** *Has to be Uhubun?*
@@ -726,7 +726,7 @@ j-question | z-Ululon | z-rank/more.open
 ::: details Show answer
 `jol zuhubun zol?`
 
-j-question | z-Uhubun | z-or-exactly-one
+j-question | [z-Uhubun | z-or-exactly-one] ?
 :::
 
 **4.** *Tie?* (standalone rank)
@@ -734,7 +734,7 @@ j-question | z-Uhubun | z-or-exactly-one
 ::: details Show answer
 `jol zael?`
 
-j-question | z-equal-rank
+j-question | z-equal-rank ?
 :::
 
 **5.** *Is the trophy enough?*
@@ -742,7 +742,7 @@ j-question | z-equal-rank
 ::: details Show answer
 `jol zodobol zaol?`
 
-j-question | z-trophy | z-and/or
+j-question | [z-trophy | z-and/or] ?
 :::
 
 #### Agalan → English
@@ -751,7 +751,7 @@ j-question | z-trophy | z-and/or
 
 ::: details Show answer
 
-j-yes | j-sure
+j-yes . j-sure
 *yes / true* (match). *sure / I’ll take that* (uptake).
 :::
 
@@ -759,7 +759,7 @@ j-yes | j-sure
 
 ::: details Show answer
 
-j-no | j-refuse-option
+j-no . j-refuse-option
 *no / false* (truth flip). *not that* (reject this option).
 :::
 
@@ -767,7 +767,7 @@ j-no | j-refuse-option
 
 ::: details Show answer
 
-j-question | z-bell | z-everything-but
+j-question | [z-bell | z-everything-but] ?
 
 *Everything but the bell?*
 :::
@@ -776,7 +776,7 @@ j-question | z-bell | z-everything-but
 
 ::: details Show answer
 
-j-question | z-ranked-or
+j-question | z-ranked-or ?
 
 *Do nothing?* / *Skip it?*
 :::
@@ -785,7 +785,7 @@ j-question | z-ranked-or
 
 ::: details Show answer
 
-j-question | z-clap | z-trophy | z-rank/more
+j-question | [z-clap | z-trophy | z-rank/more] ?
 *Clap before trophy?* (closed rank of those two)
 :::
 

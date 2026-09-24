@@ -185,7 +185,7 @@ English *first-draft*, *secondary adventure*, *third-order problem* can name **w
 
 > `zululon debegulrewol vuwurul.`
 >
-> z-Ululon | d-pencil-l-first | v-write
+> z-Ululon | d-pencil-l-1st | v-write
 >
 > "Ululon writes a first-draft."
 
@@ -322,7 +322,7 @@ z-Azawan | d-gold-l-quasi | v-pour
 ::: details Show answer
 `zululon durelrewol vahamel.`
 
-z-Ululon | d-fire-l-first | v-hammer
+z-Ululon | d-fire-l-1st | v-hammer
 :::
 
 **5.** *Ululon annihilates the gold-kind.*
@@ -330,7 +330,7 @@ z-Ululon | d-fire-l-first | v-hammer
 ::: details Show answer
 `zululon vologolrazobal.`
 
-z-Ululon | v-gold-l-infinity
+z-Ululon | v-gold-l-plus-infinity
 :::
 
 #### Agalan → English

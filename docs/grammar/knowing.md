@@ -606,7 +606,7 @@ These `/th/` moods usually sit over the whole clause. When the *could be*, chann
 
 > `zazawan wuvuvum gelulul vawalal.`
 >
-> z-Azawan | w-WITNESSED | g-blue | v-walk
+> [z-Azawan | [w-WITNESSED | g-blue]] | v-walk
 >
 > "Azawan walks — and that blue is from memory."
 
@@ -658,7 +658,7 @@ The same published roots stay ordinary content under other role letters. The clo
 
 > `zululon thonenom helerem b_#22,7 vebarum.`
 >
-> z-Ululon | th-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment
+> z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment
 >
 > "As of 22 July, Ululon’s leaving still counted."
 
@@ -684,7 +684,7 @@ The same published roots stay ordinary content under other role letters. The clo
 
 > `zululon thadadem helerem b_#22,7 vebarum.`
 >
-> z-Ululon | th-NOTIONAL | h-as-of.ledger | b-_22,7 | v-abandonment
+> z-Ululon | th-NOTIONAL | [h-as-of.ledger | b-_22,7] | v-abandonment
 >
 > "As if, from the 22 July books, Ululon were leaving."
 
@@ -716,7 +716,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Score l
 ::: details Show answer
 `zululon thonenom helerem b_#22,7 vebarum.`
 
-z-Ululon | th-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment
+z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment
 :::
 
 **2.** *Azawan is walking — we're there on 22 July.*
@@ -724,7 +724,7 @@ z-Ululon | th-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment
 ::: details Show answer
 `zazawan thadezem helerem b_#22,7 vawalal.`
 
-z-Azawan | th-LIVE | h-as-of.ledger | b-_22,7 | v-walk
+z-Azawan | th-LIVE | [h-as-of.ledger | b-_22,7] | v-walk
 :::
 
 **3.** *As of 22 July the leaving still stood — and from now, that leftover could be.*
@@ -732,7 +732,7 @@ z-Azawan | th-LIVE | h-as-of.ledger | b-_22,7 | v-walk
 ::: details Show answer
 `zululon thodohom thonenom helerem b_#22,7 vebarum.`
 
-z-Ululon | th-MAY | th-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment
+z-Ululon | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment
 :::
 
 #### Agalan → English
@@ -741,7 +741,7 @@ z-Ululon | th-MAY | th-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment
 
 ::: details Show answer
 
-z-Ululon | th-WITNESSED | h-as-of.ledger | b-_22,7 | th-RESIDUE | v-abandonment
+z-Ululon | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-abandonment
 
 *I remember: as of 22 July, Ululon had still left.*
 :::
@@ -750,7 +750,7 @@ z-Ululon | th-WITNESSED | h-as-of.ledger | b-_22,7 | th-RESIDUE | v-abandonment
 
 ::: details Show answer
 
-z-Ululon | th-WITNESSED | h-as-of.ledger | b-_22,7 | th-RESIDUE | v-abandonment | x-Azawan | th-WITNESSED | h-as-of.ledger | v-walk
+z-Ululon | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-abandonment . x-Azawan | th-WITNESSED | h-as-of.ledger | v-walk
 
 *I remember: as of 22 July, Ululon had still left. Azawan is walking — still from memory, same day in the books.*
 :::
@@ -759,7 +759,7 @@ z-Ululon | th-WITNESSED | h-as-of.ledger | b-_22,7 | th-RESIDUE | v-abandonment 
 
 ::: details Show answer
 
-z-Ululon | th-MAY | th-RESIDUE | h-as-of.ledger | b-_22,7 | v-abandonment
+z-Ululon | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment
 
 *As of 22 July the leaving still stood — and from now, that leftover could be.*
 :::
@@ -853,7 +853,7 @@ z-Azawan | h-always | v-sit | th-UNCOUNTERED
 ::: details Show answer
 `zual gabogol tharazal.`
 
-z-everything-but | g-book | th-FORMAL
+[z-everything-but | g-book] | th-FORMAL
 :::
 
 **4.** *Uhubun always thinks, by natural necessity* (plus a trail of cases).
@@ -869,7 +869,7 @@ z-Uhubun | h-always | v-think | th-NATURAL | th-PATTERN
 ::: details Show answer
 `zululon hual vubunul thebebel bahalan.`
 
-z-Ululon | h-always | v-punch | th-RULE | b-Ahalan
+z-Ululon | h-always | v-punch | [th-RULE | b-Ahalan]
 :::
 
 **6.** *Every claim that comes to mind, usually.*
@@ -877,7 +877,7 @@ z-Ululon | h-always | v-punch | th-RULE | b-Ahalan
 ::: details Show answer
 `zuam gadadam thugudol.`
 
-z-everything-but.open | g-claim | th-COMMON
+[z-everything-but.open | g-claim] | th-COMMON
 :::
 
 #### Agalan → English
@@ -904,7 +904,7 @@ z-Ululon | h-always | v-write | th-UNCOUNTERED
 
 ::: details Show answer
 
-z-everything-but | g-intellect | th-FORMAL
+[z-everything-but | g-intellect] | th-FORMAL
 
 *Every intellect, by definition.*
 :::
@@ -921,7 +921,7 @@ z-Uhubun | h-always | v-write | th-NATURAL | th-PATTERN
 
 ::: details Show answer
 
-z-Ululon | h-always | v-scream | th-RULE | b-Ahalan
+z-Ululon | h-always | v-scream | [th-RULE | b-Ahalan]
 
 *Ululon always screams, under school.*
 :::
@@ -930,7 +930,7 @@ z-Ululon | h-always | v-scream | th-RULE | b-Ahalan
 
 ::: details Show answer
 
-z-everything-but.open | g-proof | th-COMMON
+[z-everything-but.open | g-proof] | th-COMMON
 
 *Every proof that comes to mind, usually.*
 :::

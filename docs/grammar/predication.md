@@ -54,7 +54,7 @@ Write a special adjective `gonunul` after the first name, then an extra noun (`/
 
 > `zululon gonunul bazawan.`
 >
-> z-Ululon | g-SAME | b-Azawan
+> z-Ululon | [g-SAME | b-Azawan]
 >
 > "Ululon is (the same person as) Azawan."
 
@@ -141,7 +141,7 @@ z-Ululon | g-police
 ::: details Show answer
 `zuvunul gonunul bazawan.`
 
-z-fingerprint | g-SAME | b-Azawan
+z-fingerprint | [g-SAME | b-Azawan]
 :::
 
 **7.** *The camera is Uhubun.*
@@ -149,7 +149,7 @@ z-fingerprint | g-SAME | b-Azawan
 ::: details Show answer
 `zameral gonunul buhubun.`
 
-z-camera | g-SAME | b-Uhubun
+z-camera | [g-SAME | b-Uhubun]
 :::
 
 **8.** *Ululon is Azawan.*
@@ -157,7 +157,7 @@ z-camera | g-SAME | b-Uhubun
 ::: details Show answer
 `zululon gonunul bazawan.`
 
-z-Ululon | g-SAME | b-Azawan
+z-Ululon | [g-SAME | b-Azawan]
 :::
 
 #### Agalan → English
@@ -193,7 +193,7 @@ z-page | g-red
 
 ::: details Show answer
 
-z-fingerprint | g-SAME | b-Ululon
+z-fingerprint | [g-SAME | b-Ululon]
 
 *The fingerprint is Ululon.*
 :::
@@ -202,7 +202,7 @@ z-fingerprint | g-SAME | b-Ululon
 
 ::: details Show answer
 
-z-Azawan | g-SAME | b-police
+z-Azawan | [g-SAME | b-police]
 
 *Azawan is (the same as) a police officer.*
 :::
@@ -220,7 +220,7 @@ z-guard | v-run
 
 ::: details Show answer
 
-j-question | z-Ululon | g-SAME | b-Uhubun
+j-question | z-Ululon | [g-SAME | b-Uhubun]
 
 *Is Ululon Uhubun?*
 :::
@@ -229,7 +229,7 @@ j-question | z-Ululon | g-SAME | b-Uhubun
 
 ::: details Show answer
 
-z-Uhubun | g-SAME | b-Azawan
+z-Uhubun | [g-SAME | b-Azawan]
 
 *Uhubun is Azawan.*
 :::
@@ -255,7 +255,7 @@ You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra c
 
 > `zazawan wagadum godogol.`
 >
-> z-Azawan | w-degree | g-dog
+> z-Azawan | [w-degree | g-dog]
 >
 > "Azawan is somewhat of a dog."
 
@@ -320,7 +320,7 @@ z-Azawan | g-guard | g-not
 ::: details Show answer
 `zululon gagaral hual.`
 
-z-Ululon | g-craft | h-always
+[z-Ululon | g-craft] | h-always
 :::
 
 **3.** *The framed-picture is Azawan.*
@@ -328,7 +328,7 @@ z-Ululon | g-craft | h-always
 ::: details Show answer
 `zamerel gonunul bazawan.`
 
-z-framed-picture | g-SAME | b-Azawan
+z-framed-picture | [g-SAME | b-Azawan]
 :::
 
 **4.** *Ululon is basically Azawan.*
@@ -336,7 +336,7 @@ z-framed-picture | g-SAME | b-Azawan
 ::: details Show answer
 `zululon gonunum bazawan.`
 
-z-Ululon | g-same | b-Azawan
+z-Ululon | [g-same | b-Azawan]
 :::
 
 **5.** *The person who is Uhubun sees a palette.*
@@ -344,7 +344,7 @@ z-Ululon | g-same | b-Azawan
 ::: details Show answer
 `zeberel gonunul buhubun daledel vejel.`
 
-z-person | g-SAME | b-Uhubun | d-palette | v-see
+[z-person | [g-SAME | b-Uhubun]] | d-palette | v-see
 :::
 
 **6.** *Azawan is Ululon (titled identity).*
@@ -352,7 +352,7 @@ z-person | g-SAME | b-Uhubun | d-palette | v-see
 ::: details Show answer
 `zazawan gonunun bululon.`
 
-z-Azawan | g-Onunun | b-Ululon
+z-Azawan | [g-Onunun | b-Ululon]
 :::
 
 **7.** *Ululon is the same (as already ascribed) as Azawan.*
@@ -360,7 +360,7 @@ z-Azawan | g-Onunun | b-Ululon
 ::: details Show answer
 `zululon gonunur bazawan.`
 
-z-Ululon | g-coin | b-Azawan
+z-Ululon | [g-←coin.full | b-Azawan]
 :::
 
 **8.** *The framed-picture is not (identical to) Uhubun.*
@@ -368,7 +368,7 @@ z-Ululon | g-coin | b-Azawan
 ::: details Show answer
 `zamerel gonunul buhubun gul.`
 
-z-framed-picture | g-SAME | b-Uhubun | g-not
+z-framed-picture | [g-SAME | b-Uhubun] | g-not
 :::
 
 #### Agalan → English
@@ -386,7 +386,7 @@ z-Uhubun | g-guard | g-not
 
 ::: details Show answer
 
-z-Azawan | g-craft | h-always
+[z-Azawan | g-craft] | h-always
 
 *Azawan is the craft type.*
 :::
@@ -395,7 +395,7 @@ z-Azawan | g-craft | h-always
 
 ::: details Show answer
 
-z-framed-picture | g-same | b-Azawan
+z-framed-picture | [g-same | b-Azawan]
 
 *The framed-picture is basically Azawan.*
 :::
@@ -404,7 +404,7 @@ z-framed-picture | g-same | b-Azawan
 
 ::: details Show answer
 
-z-person | g-SAME | b-Azawan | d-palette | v-see
+[z-person | [g-SAME | b-Azawan]] | d-palette | v-see
 
 *The person who is Azawan sees a palette.*
 :::
@@ -413,7 +413,7 @@ z-person | g-SAME | b-Azawan | d-palette | v-see
 
 ::: details Show answer
 
-z-Ululon | g-Onunun | b-Uhubun
+z-Ululon | [g-Onunun | b-Uhubun]
 
 *Ululon is Uhubun (titled identity).*
 :::
@@ -422,7 +422,7 @@ z-Ululon | g-Onunun | b-Uhubun
 
 ::: details Show answer
 
-z-Azawan | g-coin | b-Uhubun
+z-Azawan | [g-←coin.full | b-Uhubun]
 
 *Azawan is the same (as already ascribed) as Uhubun.*
 :::
@@ -431,7 +431,7 @@ z-Azawan | g-coin | b-Uhubun
 
 ::: details Show answer
 
-z-framed-picture | g-red | g-SAME | b-Ululon | g-not
+[z-framed-picture | g-red | [g-SAME | b-Ululon]] | g-not
 
 *The red framed-picture is not (identical to) Ululon.*
 :::

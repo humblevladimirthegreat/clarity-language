@@ -17,7 +17,7 @@ Start with one quoted token as the object of *said*. A [greeting](word-endings.m
 
 > `zazawan d[azawan] vezehel.`
 >
-> z-Azawan | d-Azawan | v-tell
+> z-Azawan | d-CITE[Azawan] | v-tell
 >
 > "Azawan said “Azawan.”" (hello)
 
@@ -38,7 +38,7 @@ Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gi
 
 > `zululon d~[zazawan vuzunul] vuwurul.`
 >
-> z-Ululon | d-cite | z-Azawan | v-sing | v-write
+> z-Ululon | d-CITE.about[z-Azawan | v-sing] | v-write
 >
 > "Ululon wrote something like “Azawan sings.”"
 
@@ -64,7 +64,7 @@ A **mention** holds a **word or phrase** as that spelling, not a quote of speech
 
 > `z{odogo} gumuzem.`
 >
-> z-odogo | g-small
+> z-MENTION["odogo"] | g-small
 >
 > "The word “odogo” is small."
 
@@ -78,7 +78,7 @@ With **`@`**, mention is the **name** (the title-string you could rename), even 
 
 > `zazawan d@[uzugon ululon] vogozom.`
 >
-> z-Azawan | d-cite | Uzugon | Ululon | v-rejection
+> z-Azawan | d-NAME.CITE[Uzugon | Ululon] | v-rejection
 >
 > "Azawan dislikes Uzugon Ululon." (the work)
 
@@ -116,7 +116,7 @@ The interior is ordinary Agalan: a fragment, or a clause body that keeps the **s
 
 > `zazawan vawalal th(huzumum).`
 >
-> z-Azawan | v-walk | th-happy
+> z-Azawan | v-walk | th-ASIDE[h-happy]
 >
 > "Azawan walks (happily)."
 
@@ -139,7 +139,7 @@ The letter on the open is the role of the **entire span** in the outer sentence.
 
 > `jul zululon v[vozodol].`
 >
-> j-prohibition | z-Ululon | v-stop
+> j-prohibition | z-Ululon | v-CITE[v-stop]
 >
 > "Don’t say “stop,” Ululon."
 
@@ -185,7 +185,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 ::: details Show answer
 `zazawan d[azawan] vezehel.`
 
-z-Azawan | d-Azawan | v-tell
+z-Azawan | d-CITE[Azawan] | v-tell
 :::
 
 **2.** *Ululon wrote something like “Azawan sings.”*
@@ -193,7 +193,7 @@ z-Azawan | d-Azawan | v-tell
 ::: details Show answer
 `zululon d~[zazawan vuzunul] vuwurul.`
 
-z-Ululon | d-cite | z-Azawan | v-sing | v-write
+z-Ululon | d-CITE.about[z-Azawan | v-sing] | v-write
 :::
 
 **3.** *The word “uzugo” is small.*
@@ -201,7 +201,7 @@ z-Ululon | d-cite | z-Azawan | v-sing | v-write
 ::: details Show answer
 `z{uzugo} gumuzem.`
 
-z-uzugo | g-small
+z-MENTION["uzugo"] | g-small
 :::
 
 **4.** *Azawan saw kimchi.* (foreign surface)
@@ -223,7 +223,7 @@ z-Uhubun | d-Uzugon | v-sing
 ::: details Show answer
 `zazawan vezehel th(huzumum).`
 
-z-Azawan | v-tell | th-happy
+z-Azawan | v-tell | th-ASIDE[h-happy]
 :::
 
 **7.** *Don’t say “stop,” Ululon.*
@@ -231,7 +231,7 @@ z-Azawan | v-tell | th-happy
 ::: details Show answer
 `jul zululon v[vozodol].`
 
-j-prohibition | z-Ululon | v-stop
+j-prohibition | z-Ululon | v-CITE[v-stop]
 :::
 
 **8.** *Ululon said that?!*
@@ -247,7 +247,7 @@ j-question | z-Ululon | d-←cite | v-tell
 ::: details Show answer
 `z{zazawan vuzunul} gumuzem.`
 
-z-mention | zazawan | vuzunul | g-small
+z-MENTION["zazawan vuzunul"] | g-small
 :::
 
 #### Agalan → English
@@ -262,7 +262,7 @@ z-mention | zazawan | vuzunul | g-small
 
 ::: details Show answer
 
-z-Azawan | d-uzugo | v-see
+z-Azawan | d-MENTION["uzugo"] | v-see
 
 *Azawan saw the word “uzugo.”*
 :::
@@ -271,7 +271,7 @@ z-Azawan | d-uzugo | v-see
 
 ::: details Show answer
 
-z-Uhubun | d-uzugon | v-write
+z-Uhubun | d-NAME.MENTION["uzugon"] | v-write
 
 *Uhubun wrote the name “uzugon.”*
 :::
@@ -280,7 +280,7 @@ z-Uhubun | d-uzugon | v-write
 
 ::: details Show answer
 
-z-uzugo | g-small
+z-MENTION["uzugo"] | g-small
 
 *The word “uzugo” is small.*
 :::
@@ -301,7 +301,7 @@ z-uzugo | g-small
 
 ::: details Show answer
 
-z-Ululon | v-tell | th- | z-Azawan | v-sing
+z-Ululon | v-tell | th-ASIDE[z-Azawan | v-sing]
 
 *Ululon tells (Azawan sings).*
 :::
@@ -319,7 +319,7 @@ j-question | z-Uhubun | d-←cite | v-tell
 
 ::: details Show answer
 
-z-mention | zululon | vezehel | g-small
+z-MENTION["zululon vezehel"] | g-small
 
 *The phrase “zululon vezehel” is small.*
 :::
@@ -334,7 +334,7 @@ Beginner writing already packages a quote, mention, aside, or blob in brackets. 
 
 > `zazawan daxol azawan vezehel.`
 >
-> z-Azawan | d-cite-x-atomic | Azawan | v-tell
+> z-Azawan | d-CITE.atomic[Azawan] | v-tell
 >
 > "Azawan said “Azawan.”" (hello)
 
@@ -374,7 +374,7 @@ A pair of brackets can wrap one token or many, run to the end of the clause, or 
 
 > `zululon daxal zazawan vuzunul xuxul vezehel.`
 >
-> z-Ululon | d-cite-x-multi | z-Azawan | v-sing | x-span-close | v-tell
+> z-Ululon | d-CITE.multi[z-Azawan | v-sing] | v-tell
 >
 > "Ululon said “Azawan sings.”"
 
@@ -434,7 +434,7 @@ When one packaged chunk sits inside another (a quote that contains a parenthetic
 
 > `zazawan d[ th(huzumum) azawan ] vezehel.`
 >
-> z-Azawan | d-cite | th-aside | th-happy | Azawan | v-tell
+> z-Azawan | d-CITE[th-ASIDE[h-happy] | Azawan] | v-tell
 >
 > "Azawan said “Azawan” (happily)." (hello)
 
@@ -447,7 +447,7 @@ Sometimes *possibility* or a join should apply only to a multi-word chunk, not t
 
 > `zazawan ^ huzurem zodogol garedel ^ vejel.`
 >
-> z-Azawan | ^-start | h-possibility | z-dog | g-red | ^-end | v-see
+> z-Azawan | SCOPE[h-possibility | [z-dog | g-red]] | v-see
 >
 > "Azawan saw, as a possibility, the red dog." (*possibility* targets that chunk).
 
@@ -475,7 +475,7 @@ Sometimes *possibility* or a join should apply only to a multi-word chunk, not t
 
 > `zazawan ^ zululon zal ^ zam vejel.`
 >
-> z-Azawan | ^-start | z-Ululon | z-and | ^-end | z-and.open | v-see
+> [z-Azawan | SCOPE[z-Ululon | z-and] | z-and.open] | v-see
 >
 > "Azawan and (just Ululon) saw …."
 
@@ -516,7 +516,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 ::: details Show answer
 `zazawan daxol azawan vezehel.`
 
-z-Azawan | d-cite-x-atomic | Azawan | v-tell
+z-Azawan | d-CITE.atomic[Azawan] | v-tell
 :::
 
 **2.** *Ululon said “Azawan attests.”* (spoken multi-token cite)
@@ -524,7 +524,7 @@ z-Azawan | d-cite-x-atomic | Azawan | v-tell
 ::: details Show answer
 `zululon daxal zazawan vadezel xuxul vezehel.`
 
-z-Ululon | d-cite-x-multi | z-Azawan | v-attest | x-span-close | v-tell
+z-Ululon | d-CITE.multi[z-Azawan | v-attest] | v-tell
 :::
 
 **3.** *Uhubun said that.* (spoken cite resume)
@@ -532,7 +532,7 @@ z-Ululon | d-cite-x-multi | z-Azawan | v-attest | x-span-close | v-tell
 ::: details Show answer
 `zuhubun daxur vezehel.`
 
-z-Uhubun | d-cite-x-empty | v-tell
+z-Uhubun | d-←cite.spoken | v-tell
 :::
 
 **4.** *Azawan said \[redacted\].*
@@ -540,7 +540,7 @@ z-Uhubun | d-cite-x-empty | v-tell
 ::: details Show answer
 `zazawan daxul vezehel.`
 
-z-Azawan | d-cite-x-empty | v-tell
+z-Azawan | d-CITE.empty[] | v-tell
 :::
 
 **5.** *Ululon saw FBI.* (spoken atomic opaque)
@@ -548,7 +548,7 @@ z-Azawan | d-cite-x-empty | v-tell
 ::: details Show answer
 `zululon duxol FBI vejel.`
 
-z-Ululon | d-opaque-x-atomic | FBI | v-see
+z-Ululon | d-OPAQUE.atomic["FBI"] | v-see
 :::
 
 **6.** *Azawan said “Azawan” (happily).* (cite nesting an aside)
@@ -556,7 +556,7 @@ z-Ululon | d-opaque-x-atomic | FBI | v-see
 ::: details Show answer
 `zazawan d[ th(huzumum) azawan ] vezehel.`
 
-z-Azawan | d-cite | th-aside | th-happy | Azawan | v-tell
+z-Azawan | d-CITE[th-ASIDE[h-happy] | Azawan] | v-tell
 :::
 
 **7.** *Azawan saw, as a possibility, the lie.* (*possibility* targets that chunk)
@@ -564,7 +564,7 @@ z-Azawan | d-cite | th-aside | th-happy | Azawan | v-tell
 ::: details Show answer
 `zazawan ^ huzurem dululel ^ vejel.`
 
-z-Azawan | ^-start | h-possibility | d-lie | ^-end | v-see
+z-Azawan | SCOPE[h-possibility | d-lie] | v-see
 :::
 
 **8.** *Ululon and (just Azawan) punched.*
@@ -572,7 +572,7 @@ z-Azawan | ^-start | h-possibility | d-lie | ^-end | v-see
 ::: details Show answer
 `zululon ^ zazawan zal ^ zam vubunul.`
 
-z-Ululon | ^-start | z-Azawan | z-and | ^-end | z-and.open | v-punch
+[z-Ululon | SCOPE[z-Azawan | z-and] | z-and.open] | v-punch
 :::
 
 **9.** *The phrase “ululon vadezel” is small.* (spoken multi-token mention)
@@ -580,7 +580,7 @@ z-Ululon | ^-start | z-Azawan | z-and | ^-end | z-and.open | v-punch
 ::: details Show answer
 `zoxal ululon vadezel xuxul gumuzem.`
 
-z-mention-x-multi | ululon | vadezel | x-span-close | g-small
+z-MENTION.multi["ululon" | "vadezel"] | g-small
 :::
 
 #### Agalan → English
@@ -589,7 +589,7 @@ z-mention-x-multi | ululon | vadezel | x-span-close | g-small
 
 ::: details Show answer
 
-z-Ululon | d-cite-x-clause | Azawan
+z-Ululon | d-CITE.clause[Azawan]
 *Ululon said “Azawan.”* (hello)
 :::
 
@@ -597,7 +597,7 @@ z-Ululon | d-cite-x-clause | Azawan
 
 ::: details Show answer
 
-z-Azawan | d-cite-x-multi | z-Azawan | v-attest | x-span-close | v-tell
+z-Azawan | d-CITE.multi.about[z-Azawan | v-attest] | v-tell
 
 *Azawan said something like “Azawan attests.”*
 :::
@@ -606,7 +606,7 @@ z-Azawan | d-cite-x-multi | z-Azawan | v-attest | x-span-close | v-tell
 
 ::: details Show answer
 
-z-cite-x-empty | g-small
+z-←cite.spoken | g-small
 
 *That (cite) is small.*
 :::
@@ -615,7 +615,7 @@ z-cite-x-empty | g-small
 
 ::: details Show answer
 
-z-Uhubun | d-cite-x-atomic | Ujudun | v-tell
+z-Uhubun | d-NAME.CITE.atomic[Ujudun] | v-tell
 
 *Uhubun said “Ujudu.”*
 :::
@@ -624,7 +624,7 @@ z-Uhubun | d-cite-x-atomic | Ujudun | v-tell
 
 ::: details Show answer
 
-z-Azawan | v-tell | th-aside-x-atomic | h-happy
+z-Azawan | v-tell | th-ASIDE.atomic[h-happy]
 
 *Azawan tells (happily).*
 :::
@@ -642,7 +642,7 @@ z-mention-x-atomic | ujudu | g-small
 
 ::: details Show answer
 
-z-Ululon | ^-start | h-possibility | d-lie | ^-end | v-see
+z-Ululon | SCOPE[h-possibility | d-lie] | v-see
 
 *Ululon saw, as a possibility, the lie.*
 :::
@@ -660,7 +660,7 @@ z-Ujudun | v-scream
 
 ::: details Show answer
 
-z-mention-x-multi | uhubun | vazagal | x-span-close | g-small
+z-MENTION.multi["uhubun" | "vazagal"] | g-small
 
 *The phrase “uhubun vazagal” is small.*
 :::
@@ -674,7 +674,7 @@ You already close a multi-token span with **`xuxul`**, the spoken match for `]` 
 
 > `zazawan daxal azawan xuxur vezehel.`
 >
-> z-Azawan | d-cite-x-multi | Azawan | x-span-close-editorial | v-tell
+> z-Azawan | d-CITE.multi[Azawan]# | v-tell
 >
 > "Azawan said “Azawan…”" (hello, trailing off)
 
@@ -778,7 +778,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 ::: details Show answer
 `zuhubun daxal abugum xuxul vezehel.`
 
-z-Uhubun | d-cite-x-multi | flaw | x-span-close | v-tell
+z-Uhubun | d-CITE.multi[flaw] | v-tell
 :::
 
 **2.** *Ululon said “bug…”* (the cite trails off)
@@ -786,7 +786,7 @@ z-Uhubun | d-cite-x-multi | flaw | x-span-close | v-tell
 ::: details Show answer
 `zululon daxal abugum xuxur vezehel.`
 
-z-Ululon | d-cite-x-multi | flaw | x-span-close-editorial | v-tell
+z-Ululon | d-CITE.multi[flaw]# | v-tell
 :::
 
 **3.** *Azawan said “bug” (happily), then close every open span at once.*
@@ -794,7 +794,7 @@ z-Ululon | d-cite-x-multi | flaw | x-span-close-editorial | v-tell
 ::: details Show answer
 `zazawan daxal thexol huzumum abugum xuxum vezehel.`
 
-z-Azawan | d-cite-x-multi | th-aside-x-atomic | h-happy | flaw | x-span-close-all | v-tell
+z-Azawan | d-CITE.multi[th-ASIDE.atomic[h-happy] | flaw]| | v-tell
 :::
 
 **4.** *Azawan said “write ]”.*
@@ -808,7 +808,7 @@ z-Azawan | d-cite-x-multi | th-aside-x-atomic | h-happy | flaw | x-span-close-al
 ::: details Show answer
 `zuhubun duxal code > 1 xuxul vezehel.`
 
-z-Uhubun | d-opaque-x-multi | code | > | 1 | x-span-close | v-tell
+z-Uhubun | d-OPAQUE.multi["code" | ">" | "1"] | v-tell
 :::
 
 #### Agalan → English
@@ -817,7 +817,7 @@ z-Uhubun | d-opaque-x-multi | code | > | 1 | x-span-close | v-tell
 
 ::: details Show answer
 
-z-Azawan | d-abugum# | v-tell
+z-Azawan | d-CITE[flaw]# | v-tell
 
 *Azawan said “bug…”*
 :::
@@ -826,7 +826,7 @@ z-Azawan | d-abugum# | v-tell
 
 ::: details Show answer
 
-z-Ululon | d-cite-x-multi | flaw | x-span-close-editorial | x-span-close-all | v-tell
+z-Ululon | d-CITE.multi[flaw]# | x-span-close-all | v-tell
 
 *Ululon said “bug…”*
 :::
@@ -835,7 +835,7 @@ z-Ululon | d-cite-x-multi | flaw | x-span-close-editorial | x-span-close-all | v
 
 ::: details Show answer
 
-z-Azawan | d-cite-x-multi | d-opaque-x-atomic | xuxul | x-span-close | v-tell
+z-Azawan | d-CITE.multi[d-OPAQUE.atomic["xuxul"]] | v-tell
 
 *Azawan said “xuxul.”*
 :::
@@ -850,7 +850,7 @@ z-Azawan | d-cite-x-multi | d-opaque-x-atomic | xuxul | x-span-close | v-tell
 
 ::: details Show answer
 
-z-Uhubun | d-abugum#| | v-tell
+z-Uhubun | d-CITE[flaw]#| | v-tell
 
 *Uhubun said “bug…”*
 :::

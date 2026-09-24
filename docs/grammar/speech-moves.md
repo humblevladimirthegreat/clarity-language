@@ -120,7 +120,7 @@ j-Azawan
 
 ::: details Show answer
 
-j-question | z-Azawan | v-sit
+j-question | z-Azawan | v-sit ?
 
 *Does Azawan sit?*
 :::
@@ -222,7 +222,7 @@ j-soft-statement | z-Azawan | v-sit
 ::: details Show answer
 `jom zuhubun dugedel vejel?`
 
-j-soft-question | z-Uhubun | d-ticket | v-see
+j-soft-question | z-Uhubun | d-ticket | v-see ?
 :::
 
 **3.** *Please stand.*
@@ -230,7 +230,7 @@ j-soft-question | z-Uhubun | d-ticket | v-see
 ::: details Show answer
 `jem vadanal!`
 
-j-request | v-stand
+j-request | v-stand !
 :::
 
 **4.** *Please don’t sneak.*
@@ -238,7 +238,7 @@ j-request | v-stand
 ::: details Show answer
 `jum vazanal!`
 
-j-soft-prohibition | v-sneak
+j-soft-prohibition | v-sneak !
 :::
 
 **5.** *For what it's worth, Ululon sees a ticket.*
@@ -254,7 +254,7 @@ j-soft-statement | z-Ululon | d-ticket | v-see
 ::: details Show answer
 `jem buhubun vezehel!`
 
-j-request | b-Uhubun | v-tell
+j-request | b-Uhubun | v-tell !
 :::
 
 #### Agalan → English
@@ -272,7 +272,7 @@ j-soft-statement | z-Azawan | v-sit
 
 ::: details Show answer
 
-j-soft-question | z-Uhubun | d-ticket | v-see
+j-soft-question | z-Uhubun | d-ticket | v-see ?
 
 *Does Uhubun see a ticket, perhaps?*
 :::
@@ -281,7 +281,7 @@ j-soft-question | z-Uhubun | d-ticket | v-see
 
 ::: details Show answer
 
-j-request | v-stand
+j-request | v-stand !
 
 *Please stand.*
 :::
@@ -290,7 +290,7 @@ j-request | v-stand
 
 ::: details Show answer
 
-j-soft-prohibition | v-sneak
+j-soft-prohibition | v-sneak !
 
 *Please don’t sneak.*
 :::
@@ -308,7 +308,7 @@ j-soft-statement | z-Ululon | d-ticket | v-see
 
 ::: details Show answer
 
-j-request | b-Uhubun | v-tell
+j-request | b-Uhubun | v-tell !
 
 *Please tell Uhubun.*
 :::

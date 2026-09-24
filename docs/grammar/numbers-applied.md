@@ -67,7 +67,7 @@ English names **how much of a unit** (*two meters*, *three hours*). The unit is 
 >
 > 🔊 *zazawan bedurem gradul vawalal.*
 >
-> z-Azawan | b-meter | g-two | v-walk
+> z-Azawan | [b-meter | g-two] | v-walk
 >
 > "Azawan walks two meters."
 
@@ -117,7 +117,7 @@ Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / a
 >
 > 🔊 *zazawan zululon zel gomonam bedurem gradul.*
 >
-> z-Azawan | z-Ululon | z-rank/more | g-challenge | b-meter | g-two
+> [z-Azawan | z-Ululon | z-rank/more | [g-challenge | b-meter]] | g-two
 >
 > "Azawan is two meters more challenging than Ululon."
 
@@ -136,7 +136,7 @@ English *from 3 to 5* / *between 3 and 5* names a **band on a line**. Write two 
 >
 > 🔊 *zrarel zraval zel gumel.*
 >
-> z-three | z-five | z-rank/more | g-time
+> [z-three | z-five | z-rank/more | g-time]
 >
 > "from 3 to 5 on time."
 
@@ -213,7 +213,7 @@ When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*)
 >
 > 🔊 *zazawan zagegom gredul vezehel.*
 >
-> z-Azawan | z-solution | g-second | v-tell
+> z-Azawan | [z-solution | g-2nd] | v-tell
 >
 > "Azawan names solution 2."
 
@@ -295,7 +295,7 @@ z-pill-x | g-25jo
 
 🔊 *zazawan darogol gradul vejel.*
 
-z-Azawan | d-rock | g-two | v-see
+z-Azawan | [d-rock | g-two] | v-see
 :::
 
 **5.** *From 3 to 5 on time.*
@@ -305,7 +305,7 @@ z-Azawan | d-rock | g-two | v-see
 
 🔊 *zrarel zraval zel gumel.*
 
-z-three | z-five | z-rank/more | g-time
+[z-three | z-five | z-rank/more | g-time]
 :::
 
 **6.** *Ululon sees 911.*
@@ -325,7 +325,7 @@ z-Ululon | d-_911 | v-see
 
 🔊 *zululon darogol graval vubunul.*
 
-z-Ululon | d-rock | g-five | v-punch
+z-Ululon | [d-rock | g-five] | v-punch
 :::
 
 **8.** *From 15 to 16 on time.*
@@ -335,7 +335,7 @@ z-Ululon | d-rock | g-five | v-punch
 
 🔊 *zrawoval zrawogul zel gumel.*
 
-z-15 | z-16 | z-rank/more | g-time
+[z-15 | z-16 | z-rank/more | g-time]
 :::
 
 #### Agalan → English
@@ -379,7 +379,7 @@ z-baby-bottle-x | g-50jo
 
 🔊 *zazawan dozobol grawol vejel.*
 
-z-Azawan | d-spoon | g-one | v-see
+z-Azawan | [d-spoon | g-one] | v-see
 
 *Azawan sees one spoon.*
 :::
@@ -390,7 +390,7 @@ z-Azawan | d-spoon | g-one | v-see
 
 🔊 *zrawol zrarel zal gumel.*
 
-z-one | z-three | z-and | g-time
+[z-one | z-three | z-and | g-time]
 
 *Between 1 and 3 on time.*
 :::
@@ -412,7 +412,7 @@ z-Ululon | d-_000 | v-see
 
 🔊 *hrodurethovanam zululon vazagal.*
 
-h-_23,59 | z-Ululon | v-scream
+h-_23,59.about | z-Ululon | v-scream
 
 *Around 23:59 Ululon screams.*
 :::
@@ -423,7 +423,7 @@ h-_23,59 | z-Ululon | v-scream
 
 🔊 *zrawozol zraduzol zual gurulel.*
 
-z-ten | z-20 | z-everything-but | g-ruler
+[z-ten | z-20 | z-everything-but | g-ruler]
 
 *Outside 10–20 on measurement.*
 :::
@@ -466,7 +466,7 @@ English *less than 5* / *greater than 5* is a **bound**, not a two-endpoint band
 >
 > 🔊 *zraval zel.*
 >
-> z-five | z-rank/more
+> [z-five | z-rank/more]
 >
 > "less than 5."
 

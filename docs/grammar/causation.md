@@ -15,7 +15,7 @@ Use `/th/` when the outcome is an **event** (the verb). Use `/ɡ/` when the outc
 
 > `zazawan vawalal thadorom banunul.`
 >
-> z-Azawan | v-walk | th-if | b-rain
+> z-Azawan | v-walk | [th-if | b-rain]
 >
 > "Azawan walks if there is rain."
 
@@ -36,7 +36,7 @@ When the outcome cannot happen without this (*only if* / *needs*), write the sam
 
 > `zazawan vawalal theberom banunul.`
 >
-> z-Azawan | v-walk | th-only-if | b-rain
+> z-Azawan | v-walk | [th-only-if | b-rain]
 >
 > "Azawan walks only if there is rain."
 
@@ -93,7 +93,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. The out
 ::: details Show answer
 `zezedel gadorom bunul.`
 
-z-seedling | g-if | b-sun
+z-seedling | [g-if | b-sun]
 :::
 
 **2.** *Azawan pours if there is a bucket.*
@@ -101,7 +101,7 @@ z-seedling | g-if | b-sun
 ::: details Show answer
 `zazawan vorurul thadorom budedel.`
 
-z-Azawan | v-pour | th-if | b-bucket
+z-Azawan | v-pour | [th-if | b-bucket]
 :::
 
 **3.** *A potted plant only if there is a window.*
@@ -109,7 +109,7 @@ z-Azawan | v-pour | th-if | b-bucket
 ::: details Show answer
 `zobodel geberom buwunol.`
 
-z-potted-plant | g-only-if | b-window
+z-potted-plant | [g-only-if | b-window]
 :::
 
 **4.** *Uhubun sees Azawan if there is a window.*
@@ -117,7 +117,7 @@ z-potted-plant | g-only-if | b-window
 ::: details Show answer
 `zuhubun dazawan vejel thadorom buwunol.`
 
-z-Uhubun | d-Azawan | v-see | th-if | b-window
+z-Uhubun | d-Azawan | v-see | [th-if | b-window]
 :::
 
 **5.** *A flower only if there is sun.*
@@ -125,7 +125,7 @@ z-Uhubun | d-Azawan | v-see | th-if | b-window
 ::: details Show answer
 `zovowel geberom bunul.`
 
-z-flower | g-only-if | b-sun
+z-flower | [g-only-if | b-sun]
 :::
 
 **6.** *Azawan pours only if there is heat.*
@@ -133,7 +133,7 @@ z-flower | g-only-if | b-sun
 ::: details Show answer
 `zazawan vorurul theberom bebebem.`
 
-z-Azawan | v-pour | th-only-if | b-heat
+z-Azawan | v-pour | [th-only-if | b-heat]
 :::
 
 **7.** *Ululon tells if there is fire.*
@@ -141,7 +141,7 @@ z-Azawan | v-pour | th-only-if | b-heat
 ::: details Show answer
 `zululon vezehel thadorom burel.`
 
-z-Ululon | v-tell | th-if | b-fire
+z-Ululon | v-tell | [th-if | b-fire]
 :::
 
 **8.** *Ululon pours only if there is fire.*
@@ -149,7 +149,7 @@ z-Ululon | v-tell | th-if | b-fire
 ::: details Show answer
 `zululon vorurul theberom burel.`
 
-z-Ululon | v-pour | th-only-if | b-fire
+z-Ululon | v-pour | [th-only-if | b-fire]
 :::
 
 #### Agalan → English
@@ -158,7 +158,7 @@ z-Ululon | v-pour | th-only-if | b-fire
 
 ::: details Show answer
 
-z-flower | g-if | b-sun
+z-flower | [g-if | b-sun]
 
 *A flower if there is sun.*
 :::
@@ -167,7 +167,7 @@ z-flower | g-if | b-sun
 
 ::: details Show answer
 
-z-Uhubun | v-pour | th-if | b-seedling
+z-Uhubun | v-pour | [th-if | b-seedling]
 
 *Uhubun pours if there is a seedling.*
 :::
@@ -176,7 +176,7 @@ z-Uhubun | v-pour | th-if | b-seedling
 
 ::: details Show answer
 
-z-seedling | g-only-if | b-window
+z-seedling | [g-only-if | b-window]
 
 *A seedling only if there is a window.*
 :::
@@ -185,7 +185,7 @@ z-seedling | g-only-if | b-window
 
 ::: details Show answer
 
-z-Azawan | d-Uhubun | v-see | th-if | b-window
+z-Azawan | d-Uhubun | v-see | [th-if | b-window]
 
 *Azawan sees Uhubun if there is a window.*
 :::
@@ -194,7 +194,7 @@ z-Azawan | d-Uhubun | v-see | th-if | b-window
 
 ::: details Show answer
 
-z-tomato | g-if | b-sun
+z-tomato | [g-if | b-sun]
 
 *A tomato if there is sun.*
 :::
@@ -203,7 +203,7 @@ z-tomato | g-if | b-sun
 
 ::: details Show answer
 
-z-Azawan | v-tell | th-if | b-heat
+z-Azawan | v-tell | [th-if | b-heat]
 
 *Azawan tells if there is heat.*
 :::
@@ -212,7 +212,7 @@ z-Azawan | v-tell | th-if | b-heat
 
 ::: details Show answer
 
-z-Ululon | v-pour | th-if | b-fire
+z-Ululon | v-pour | [th-if | b-fire]
 
 *Ululon pours if there is fire.*
 :::
@@ -221,7 +221,7 @@ z-Ululon | v-pour | th-if | b-fire
 
 ::: details Show answer
 
-z-Uhubun | v-tell | th-only-if | b-fire
+z-Uhubun | v-tell | [th-only-if | b-fire]
 
 *Uhubun tells only if there is fire.*
 :::
@@ -240,7 +240,7 @@ main sentence …  thadorom / theberom / …  barl   [dependent sentence]
 
 > `zazawan vawalal thadorom barl zululon velebel.`
 >
-> z-Azawan | v-walk | th-if | b-that-clause | z-Ululon | v-sleep
+> z-Azawan | v-walk | [th-if | b-that-clause] | z-Ululon | v-sleep
 >
 > "Azawan walks if Ululon sleeps."
 
@@ -272,7 +272,7 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 
 > `zazawan vawalal thurugum barl zululon velebel.`
 >
-> z-Azawan | v-walk | th-because | b-that-clause | z-Ululon | v-sleep
+> z-Azawan | v-walk | [th-because | b-that-clause] | z-Ululon | v-sleep
 >
 > "Azawan walks because Ululon sleeps."
 
@@ -292,7 +292,7 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 
 > `zazawan vawalal theberom thurugum banunul.`
 >
-> z-Azawan | v-walk | th-only-if | th-because | b-rain
+> z-Azawan | v-walk | th-only-if | [th-because | b-rain]
 >
 > "Azawan walks only because there is rain."
 
@@ -304,7 +304,7 @@ To highlight **how** a result comes about (the mechanism, not only that a condit
 
 > `zazawan vawalal thegegam thadorom banunul.`
 >
-> z-Azawan | v-walk | th-CAUSE | th-if | b-rain
+> z-Azawan | v-walk | th-CAUSE | [th-if | b-rain]
 >
 > "Azawan walks if there is rain (as mechanism)."
 
@@ -353,7 +353,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. A f
 ::: details Show answer
 `zazawan vajul thadorom barl zuhubun vejel.`
 
-z-Azawan | v-sit | th-if | b-that-clause | z-Uhubun | v-see
+z-Azawan | v-sit | [th-if | b-that-clause] | z-Uhubun | v-see
 :::
 
 **2.** *Uhubun tells only if Azawan sits.*
@@ -361,7 +361,7 @@ z-Azawan | v-sit | th-if | b-that-clause | z-Uhubun | v-see
 ::: details Show answer
 `zuhubun vezehel theberom barl zazawan vajul.`
 
-z-Uhubun | v-tell | th-only-if | b-that-clause | z-Azawan | v-sit
+z-Uhubun | v-tell | [th-only-if | b-that-clause] | z-Azawan | v-sit
 :::
 
 **3.** *Ululon pours if and only if Azawan sits.*
@@ -369,7 +369,7 @@ z-Uhubun | v-tell | th-only-if | b-that-clause | z-Azawan | v-sit
 ::: details Show answer
 `zululon vorurul thezazem barl zazawan vajul.`
 
-z-Ululon | v-pour | th-iff | b-that-clause | z-Azawan | v-sit
+z-Ululon | v-pour | [th-iff | b-that-clause] | z-Azawan | v-sit
 :::
 
 **4.** *Uhubun tells because Ululon pours.*
@@ -377,7 +377,7 @@ z-Ululon | v-pour | th-iff | b-that-clause | z-Azawan | v-sit
 ::: details Show answer
 `zuhubun vezehel thurugum barl zululon vorurul.`
 
-z-Uhubun | v-tell | th-because | b-that-clause | z-Ululon | v-pour
+z-Uhubun | v-tell | [th-because | b-that-clause] | z-Ululon | v-pour
 :::
 
 **5.** *A bell because of pressure.*
@@ -385,7 +385,7 @@ z-Uhubun | v-tell | th-because | b-that-clause | z-Ululon | v-pour
 ::: details Show answer
 `zobelel gurugum babamam.`
 
-z-bell | g-because | b-pressure
+z-bell | [g-because | b-pressure]
 :::
 
 **6.** *Azawan sits only because Uhubun sees.*
@@ -393,7 +393,7 @@ z-bell | g-because | b-pressure
 ::: details Show answer
 `zazawan vajul theberom thurugum barl zuhubun vejel.`
 
-z-Azawan | v-sit | th-only-if | th-because | b-that-clause | z-Uhubun | v-see
+z-Azawan | v-sit | th-only-if | [th-because | b-that-clause] | z-Uhubun | v-see
 :::
 
 **7.** *Ululon runs if the surge hits (as mechanism).*
@@ -401,7 +401,7 @@ z-Azawan | v-sit | th-only-if | th-because | b-that-clause | z-Uhubun | v-see
 ::: details Show answer
 `zululon vurunul thegegam thadorom bogegam.`
 
-z-Ululon | v-run | th-CAUSE | th-if | b-overwhelm
+z-Ululon | v-run | th-CAUSE | [th-if | b-overwhelm]
 :::
 
 #### Agalan → English
@@ -410,7 +410,7 @@ z-Ululon | v-run | th-CAUSE | th-if | b-overwhelm
 
 ::: details Show answer
 
-z-Uhubun | v-sit | th-if | b-that-clause | z-Ululon | v-see
+z-Uhubun | v-sit | [th-if | b-that-clause] | z-Ululon | v-see
 
 *Uhubun sits if Ululon sees.*
 :::
@@ -419,7 +419,7 @@ z-Uhubun | v-sit | th-if | b-that-clause | z-Ululon | v-see
 
 ::: details Show answer
 
-z-Azawan | v-pour | th-only-if | b-that-clause | z-Uhubun | v-tell
+z-Azawan | v-pour | [th-only-if | b-that-clause] | z-Uhubun | v-tell
 
 *Azawan pours only if Uhubun tells.*
 :::
@@ -428,7 +428,7 @@ z-Azawan | v-pour | th-only-if | b-that-clause | z-Uhubun | v-tell
 
 ::: details Show answer
 
-z-Azawan | v-tell | th-iff | b-that-clause | z-Uhubun | v-see
+z-Azawan | v-tell | [th-iff | b-that-clause] | z-Uhubun | v-see
 
 *Azawan tells if and only if Uhubun sees.*
 :::
@@ -437,7 +437,7 @@ z-Azawan | v-tell | th-iff | b-that-clause | z-Uhubun | v-see
 
 ::: details Show answer
 
-z-Ululon | v-run | th-because | b-that-clause | z-overwhelm
+z-Ululon | v-run | [th-because | b-that-clause] | z-overwhelm
 
 *Ululon runs because of the surge.*
 :::
@@ -446,7 +446,7 @@ z-Ululon | v-run | th-because | b-that-clause | z-overwhelm
 
 ::: details Show answer
 
-z-overwhelm | g-because | b-pressure
+z-overwhelm | [g-because | b-pressure]
 
 *The surge is because of pressure.*
 :::
@@ -455,7 +455,7 @@ z-overwhelm | g-because | b-pressure
 
 ::: details Show answer
 
-z-Uhubun | v-tell | th-only-if | th-because | b-that-clause | z-Ululon | v-pour
+z-Uhubun | v-tell | th-only-if | [th-because | b-that-clause] | z-Ululon | v-pour
 
 *Uhubun tells only because Ululon pours.*
 :::
@@ -464,7 +464,7 @@ z-Uhubun | v-tell | th-only-if | th-because | b-that-clause | z-Ululon | v-pour
 
 ::: details Show answer
 
-z-Ululon | v-pour | th-CAUSE | th-if | b-overwhelm
+z-Ululon | v-pour | th-CAUSE | [th-if | b-overwhelm]
 
 *Ululon pours if the surge hits (as mechanism).*
 :::
@@ -479,7 +479,7 @@ English *because* and *if* can hide whether you **assert the dependent as a worl
 
 > `zazawan vawalal thurugum barl zanunul.`
 >
-> z-Azawan | v-walk | th-because | b-that-clause | z-rain
+> z-Azawan | v-walk | [th-because | b-that-clause] | z-rain
 >
 > "Azawan walks because it rains." Rain is asserted as the reason.
 
@@ -493,7 +493,7 @@ English *If he'd left, the door would still be locked* is not this pole. Write b
 
 > `zadorol gologem thonenom thelezom hobomam barl zululon vebarum.`
 >
-> z-door | g-restriction | th-RESIDUE | th-predict | h-as-of.bookmark | b-that-clause | z-Ululon | v-abandonment
+> [z-door | g-restriction] | th-RESIDUE | th-predict | [h-as-of.bookmark | b-that-clause] | z-Ululon | v-abandonment
 >
 > "If Ululon had left, the door would still be locked."
 
@@ -527,7 +527,7 @@ A one-off episode and a standing pattern use the same poles. Add extra words for
 
 > `zanunul gadorom buludul hual.`
 >
-> z-rain | g-if | b-cloud | h-always
+> [z-rain | [g-if | b-cloud]] | h-always
 >
 > "Rain if there are clouds, as a standing pattern."
 
@@ -583,7 +583,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. **`thur
 ::: details Show answer
 `zululon vorurul thurugum barl zuhubun vejel.`
 
-z-Ululon | v-pour | th-because | b-that-clause | z-Uhubun | v-see
+z-Ululon | v-pour | [th-because | b-that-clause] | z-Uhubun | v-see
 :::
 
 **2.** *Azawan pours if there is a test-tube.* (the test-tube is not asserted)
@@ -591,7 +591,7 @@ z-Ululon | v-pour | th-because | b-that-clause | z-Uhubun | v-see
 ::: details Show answer
 `zazawan vorurul thadorom barl zezubel.`
 
-z-Azawan | v-pour | th-if | b-that-clause | z-test-tube
+z-Azawan | v-pour | [th-if | b-that-clause] | z-test-tube
 :::
 
 **3.** *Azawan may be pouring.* (*could be*, not a world-reason)
@@ -607,7 +607,7 @@ z-Azawan | th-MAY | v-pour
 ::: details Show answer
 `zazawan thodohom vajul thurugum barl zululon vorurul.`
 
-z-Azawan | th-MAY | v-sit | th-because | b-that-clause | z-Ululon | v-pour
+z-Azawan | th-MAY | v-sit | [th-because | b-that-clause] | z-Ululon | v-pour
 :::
 
 **5.** *Melt if there is fire, as a standing pattern.*
@@ -615,7 +615,7 @@ z-Azawan | th-MAY | v-sit | th-because | b-that-clause | z-Ululon | v-pour
 ::: details Show answer
 `zemelel gadorom burel hual.`
 
-z-melt | g-if | b-fire | h-always
+[z-melt | [g-if | b-fire]] | h-always
 :::
 
 **6.** *If Ululon had poured, the test-tube would still sit.*
@@ -623,7 +623,7 @@ z-melt | g-if | b-fire | h-always
 ::: details Show answer
 `zezubel vajul thonenom thelezom hobomam barl zululon vorurul.`
 
-z-test-tube | v-sit | th-RESIDUE | th-predict | h-as-of.bookmark | b-that-clause | z-Ululon | v-pour
+z-test-tube | v-sit | th-RESIDUE | th-predict | [h-as-of.bookmark | b-that-clause] | z-Ululon | v-pour
 :::
 
 #### Agalan → English
@@ -632,7 +632,7 @@ z-test-tube | v-sit | th-RESIDUE | th-predict | h-as-of.bookmark | b-that-clause
 
 ::: details Show answer
 
-z-Azawan | v-pour | th-because | b-that-clause | z-fire
+z-Azawan | v-pour | [th-because | b-that-clause] | z-fire
 
 *Azawan pours because there is fire.*
 :::
@@ -641,7 +641,7 @@ z-Azawan | v-pour | th-because | b-that-clause | z-fire
 
 ::: details Show answer
 
-z-Ululon | v-pour | th-if | b-that-clause | z-test-tube
+z-Ululon | v-pour | [th-if | b-that-clause] | z-test-tube
 
 *Ululon pours if there is a test-tube.*
 :::
@@ -659,7 +659,7 @@ z-Uhubun | th-MAY | v-see
 
 ::: details Show answer
 
-z-Ululon | th-MAY | v-pour | th-because | b-that-clause | z-Uhubun | v-see
+z-Ululon | th-MAY | v-pour | [th-because | b-that-clause] | z-Uhubun | v-see
 
 *Ululon may be pouring, because Uhubun sees.*
 :::
@@ -668,7 +668,7 @@ z-Ululon | th-MAY | v-pour | th-because | b-that-clause | z-Uhubun | v-see
 
 ::: details Show answer
 
-z-lab-coat | g-if | b-fire | h-always
+[z-lab-coat | [g-if | b-fire]] | h-always
 
 *A lab coat if there is fire, as a standing pattern.*
 :::
@@ -677,7 +677,7 @@ z-lab-coat | g-if | b-fire | h-always
 
 ::: details Show answer
 
-z-test-tube | v-sit | th-RESIDUE | th-predict | h-as-of.bookmark | b-that-clause | z-Ululon | v-pour
+z-test-tube | v-sit | th-RESIDUE | th-predict | [h-as-of.bookmark | b-that-clause] | z-Ululon | v-pour
 
 *If Ululon had poured, the test-tube would still sit.*
 :::

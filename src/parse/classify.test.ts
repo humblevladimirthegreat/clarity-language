@@ -167,7 +167,10 @@ describe("classify", () => {
   it("hand root is ordinary without a means overlay", () => {
     const hand = expectReading("zahanal", "ordinary");
     assert.equal(hand.overlay, undefined);
-    expectReading("hahanam", "ordinary");
+  });
+
+  it("-m on a root with no abstract sense is an unknown word", () => {
+    expectReading("hahanam", "unknown");
   });
 
   it("exchange overlay on /h/ /ɡ/ and ordinary booth on other letters", () => {

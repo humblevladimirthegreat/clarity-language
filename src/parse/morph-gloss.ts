@@ -27,6 +27,13 @@
 
 import { classify, type ClassifyTables } from "./classify.js";
 import type { PublishedRow } from "../lexicon-search.js";
+import {
+  buildGlossTree,
+  renderGlossNodes,
+  tokenGlossTree,
+  unwrapLoneBracket,
+  type GlossNode,
+} from "./gloss-structure.js";
 import { parseWithTables } from "./parse-core.js";
 import { parseWords, WordParseError } from "./word.js";
 import type {
@@ -47,6 +54,38 @@ const HOUSE_CAST: Record<string, string> = {
   ululo: "Ululon",
   uhubu: "Uhubun",
 };
+
+/** House-cast short resume stems (`zazar`). */
+const HOUSE_CAST_SHORT: Record<string, string> = {
+  aza: "Azawan",
+  ulu: "Ululon",
+  uhu: "Uhubun",
+};
+
+/** Number writing mark → form suffix (glosses.md § Round trip). */
+const NUMBER_MARK_SUFFIX: Record<string, string> = { "~": ".about", "@": ".named", "=": ".again" };
+
+const VOWEL_RE = /[aeiou]/;
+
+/** Short resume cut: root up to and including its 2nd vowel (pronouns.md § Resume). */
+export function shortResumeStem(root: string): string {
+  let seen = 0;
+  for (let i = 0; i < root.length; i++) {
+    if (VOWEL_RE.test(root[i]!)) {
+      seen += 1;
+      if (seen === 2) return root.slice(0, i + 1);
+    }
+  }
+  return root;
+}
+
+/** Full-root resume: the stem is the whole antecedent root and longer than the short cut. */
+function isFullRootResume(word: LexWord, antecedent: LexWord): boolean {
+  if (word.family.kind !== "content" || antecedent.family.kind !== "content") return false;
+  const stem = word.family.roots.join("");
+  const root = antecedent.family.roots.join("");
+  return stem === root && shortResumeStem(root) !== root;
+}
 
 const SPECIAL_PRONOUN: Record<string, string> = {
   ugobo: "speaker",
@@ -249,21 +288,14 @@ const CARDINALS = [
   "twelve",
 ];
 
-const ORDINALS = [
-  "zeroth",
-  "first",
-  "second",
-  "third",
-  "fourth",
-  "fifth",
-  "sixth",
-  "seventh",
-  "eighth",
-  "ninth",
-  "tenth",
-  "eleventh",
-  "twelfth",
-];
+
+/** A content word the lexicon cannot gloss (missing root, or **-m** with no abstract sense). */
+export class UnknownWordError extends Error {
+  constructor(readonly raw: string) {
+    super(`unknown word: ${raw}`);
+    this.name = "UnknownWordError";
+  }
+}
 
 export type MorphGlossContext = {
   antecedent?: LexWord;
@@ -324,6 +356,9 @@ export function morphGlossFor(
   ctx: MorphGlossContext = {},
 ): string {
   if (ctx.passThrough) return word.raw;
+  if (word.reading === "unknown" && !word.overlay && word.family.kind === "content") {
+    throw new UnknownWordError(word.raw);
+  }
   const body = senseLabel(word, tables, ctx);
   if (word.family.kind === "hook") return body;
   const prefix =
@@ -332,93 +367,109 @@ export function morphGlossFor(
   return `${prefix}-${body}`;
 }
 
-/** Spaced ` | ` morph line for an Agalan string. */
+/** Morph line for an Agalan string: words joined by ` | `, units in `[ … ]` (glosses.md § Phrase brackets). */
 export function morphGlossLine(text: string, tables: ClassifyTables): string {
   const normalized = normalizeAgalan(text);
-  const { words, ctxByIndex } = analyzeLine(normalized, tables);
-  const pieces: string[] = [];
+  const finalMark = text.trim().match(/[?!]$/)?.[0];
+  const { words, ctxByIndex, parsed } = analyzeLine(normalized, tables);
+  const carets: number[] = [];
+  /** Sentence mark after word index (`.` / `?` / `!`). */
+  const marks = new Map<number, string>();
   let wordIdx = 0;
-  let islandOpen = true;
-  const re = /\S+/g;
-  let match: RegExpExecArray | null;
-  while ((match = re.exec(normalized)) !== null) {
-    const chunk = match[0]!;
+  for (const chunk of normalized.match(/\S+/g) ?? []) {
     if (chunk === "^") {
-      pieces.push(islandOpen ? "^-start" : "^-end");
-      islandOpen = !islandOpen;
+      carets.push(wordIdx);
       continue;
     }
-    const peeled = /[.?!]$/.test(chunk) ? chunk.slice(0, -1) : chunk;
-    if (!peeled) continue;
-    if (wordIdx >= words.length) break;
-    pieces.push(...morphGlossTokens(words[wordIdx]!, tables, ctxByIndex[wordIdx] ?? {}));
-    wordIdx += 1;
+    const mark = chunk.match(/[.?!]$/)?.[0];
+    const peeled = mark ? chunk.slice(0, -1) : chunk;
+    if (peeled) wordIdx += 1;
+    if (mark && wordIdx > 0) marks.set(wordIdx - 1, mark);
   }
-  return pieces.join(" | ");
+  const tree = (parsed && buildGlossTree(parsed, words)) || tokenGlossTree(words, carets);
+  const leaf = (node: { i: number; named?: boolean }) => {
+    const gloss = wordGloss(words[node.i]!, tables, ctxByIndex[node.i] ?? {});
+    return node.named ? gloss.replace(/\.named$/, "") : gloss;
+  };
+  // Sentences: internal marks sit between them (` . `); a final `?` / `!` trails; a final `.` is implicit.
+  const sentences: { nodes: GlossNode[]; mark?: string }[] = [{ nodes: [] }];
+  for (const node of tree) {
+    sentences[sentences.length - 1]!.nodes.push(node);
+    const last = lastLeafIndex(node);
+    const mark = last === undefined ? undefined : marks.get(last);
+    if (mark) {
+      sentences[sentences.length - 1]!.mark = mark;
+      sentences.push({ nodes: [] });
+    }
+  }
+  if (sentences.length > 1 && sentences[sentences.length - 1]!.nodes.length === 0) sentences.pop();
+  let out = "";
+  sentences.forEach((sentence, k) => {
+    out += renderGlossNodes(sentence.nodes, leaf);
+    const final = k === sentences.length - 1;
+    if (!final) out += ` ${sentence.mark ?? "."} `;
+  });
+  if (finalMark) out += ` ${finalMark}`;
+  return out;
 }
 
-function morphGlossTokens(
-  word: LexWord,
-  tables: ClassifyTables,
-  ctx: MorphGlossContext,
-  nested = false,
-): string[] {
+function lastLeafIndex(node: GlossNode): number | undefined {
+  if (node.t === "leaf") return node.i;
+  if (node.t !== "group") return undefined;
+  for (let k = node.kids.length - 1; k >= 0; k--) {
+    const found = lastLeafIndex(node.kids[k]!);
+    if (found !== undefined) return found;
+  }
+  return undefined;
+}
+
+/** Each word's leaf gloss in its line context (inverse index input). */
+export function morphGlossWords(text: string, tables: ClassifyTables): { raw: string; gloss: string }[] {
+  const { words, ctxByIndex } = analyzeLine(normalizeAgalan(text), tables);
+  return words.map((word, i) => ({ raw: word.raw, gloss: wordGloss(word, tables, ctxByIndex[i] ?? {}) }));
+}
+
+/** Quoted pass-through payload (`"…"`, inner `"` doubled). */
+export function quotePayload(payload: string): string {
+  return `"${payload.replace(/"/g, '""')}"`;
+}
+
+const WRITTEN_SPAN: Record<string, string> = { "[": "CITE", "{": "MENTION", "(": "ASIDE", "<": "OPAQUE" };
+
+/** One leaf of the morph line; written spans render as a labeled bracket. */
+function wordGloss(word: LexWord, tables: ClassifyTables, ctx: MorphGlossContext): string {
+  if (ctx.passThrough) return quotePayload(word.raw);
   const family = word.family;
-  if (family.kind === "writingSpan" && !family.anaphor) {
-    const payload = family.payload.trim();
-    if (payload && family.bracket === "{") {
-      const prefix = word.gl ? "gl" : word.pos ? word.pos : "";
-      const chunks = payload.match(/\S+/g) ?? [payload];
-      if (chunks.length === 1 && prefix) {
-        if (nested) return [`${prefix}-mention`, chunks[0]!];
-        return [`${prefix}-${chunks[0]!}`];
-      }
-      return prefix ? [`${prefix}-mention`, ...chunks] : chunks;
-    }
-    if (payload && family.bracket !== "<") {
-      const inner: string[] = [];
+  if (family.kind !== "writingSpan" || family.anaphor) return morphGlossFor(word, tables, ctx);
+  let payload = family.payload.trim();
+  // Written editorial `#]` / close-all `|]` / both `#|]` (spans.md § Close).
+  const closeMatch = payload.match(/(?:^|\s|(?<=[a-z]))(#?\|?)$/);
+  const close = closeMatch?.[1] ?? "";
+  if (close) payload = payload.slice(0, -close.length).trim();
+  const named = family.marks.includes("@") ? "NAME." : "";
+  const about = family.marks.includes("~") ? ".about" : "";
+  const label = `${named}${WRITTEN_SPAN[family.bracket]}${about}`;
+  const prefix = word.gl ? "gl-" : word.pos ? `${word.pos}-` : "";
+  let inner = "";
+  if (payload) {
+    if (family.bracket === "{" || family.bracket === "<") inner = quotePayload(payload);
+    else {
       try {
-        for (const innerWord of parseWords(payload)) {
-          inner.push(...morphGlossTokens(classify(innerWord, tables), tables, {}, true));
-        }
+        inner = unwrapLoneBracket(morphGlossLine(payload, tables));
       } catch {
-        for (const chunk of payload.match(/\S+/g) ?? []) {
-          inner.push(chunk);
-        }
+        inner = quotePayload(payload);
       }
-      const prefix =
-        word.gl ? "gl" : word.pos ? word.pos : "";
-      const fence =
-        family.bracket === "["
-          ? "cite"
-          : family.bracket === "{"
-            ? "mention"
-            : family.bracket === "("
-              ? "aside"
-              : "opaque";
-      if (inner.length === 1 && prefix) {
-        const token = inner[0]!;
-        const body = token.includes("-") ? token.slice(token.indexOf("-") + 1) : token;
-        const collapsed = [`${prefix}-${body}`];
-        if (nested) return [`${prefix}-${fence}`, ...collapsed];
-        return collapsed;
-      }
-      if (prefix) {
-        const open = family.bracket === "(" ? `${prefix}-` : `${prefix}-${fence}`;
-        return [open, ...inner];
-      }
-      return inner;
     }
   }
-  return [morphGlossFor(word, tables, ctx)];
+  return `${prefix}${label}[${inner}]${close}`;
 }
 
 export function normalizeMorphLine(line: string): string {
   return line
     .normalize("NFC")
     .trim()
-    .replace(/[ \t]+/g, " ")
-    .replace(/ ?\| ?/g, " | ");
+    .replace(/(?<!\]#?)[ \t]*\|[ \t]*/g, " | ")
+    .replace(/[ \t]+/g, " ");
 }
 
 export function normalizeAgalan(text: string): string {
@@ -434,7 +485,7 @@ export function compareMorphGloss(
 ): CompareMorphGlossResult {
   const expected = normalizeMorphLine(documented);
   try {
-    const actual = normalizeMorphLine(morphGlossLine(normalizeAgalan(agalan), tables));
+    const actual = normalizeMorphLine(morphGlossLine(agalan.normalize("NFC").trim(), tables));
     return { ok: expected === actual, expected, actual };
   } catch (error) {
     const parseError = error instanceof WordParseError
@@ -494,9 +545,21 @@ export function looksLikeMorphLine(line: string): boolean {
   const trimmed = line.trim();
   if (!trimmed || trimmed.startsWith("`") || trimmed.startsWith('"')) return false;
   if (/^(strict|loose):/i.test(trimmed)) return false;
-  const parts = trimmed.split(/\s+\|\s+|\s+·\s+|\s+;\s+/);
+  const flat = trimmed
+    .replace(QUOTED_PAYLOAD_RE, "Q")
+    .replace(PACKAGE_OPEN_RE, "")
+    .replace(/\[/g, "")
+    .replace(/\][#|]?/g, "");
+  const parts = flat.replace(/\s+[?!]$/, "").split(/\s+\|\s+|\s+·\s+|\s+;\s+|\s+[.?!]\s+/);
   return parts.length > 0 && parts.every((part) => MORPH_TOKEN_RE.test(part));
 }
+
+/** Quoted pass-through payload in a morph line (`"…"`, `""` escape). */
+const QUOTED_PAYLOAD_RE = /"(?:[^"]|"")*"/g;
+
+/** Labeled package open (`d-CITE.multi[`, `NAME[`, `SCOPE[`). */
+const PACKAGE_OPEN_RE =
+  /(?:(?:th|[zdbvgwhxj])l?-)?(?:NAME\.)?(?:CITE|MENTION|ASIDE|OPAQUE|SCOPE|NAME)(?:\.[a-z]+)*\[/g;
 
 function collectBlockquoteGroup(
   lines: string[],
@@ -604,7 +667,7 @@ function unwrapCode(text: string): string | null {
 function analyzeLine(
   text: string,
   tables: ClassifyTables,
-): { words: LexWord[]; ctxByIndex: MorphGlossContext[] } {
+): { words: LexWord[]; ctxByIndex: MorphGlossContext[]; parsed?: ParseResult } {
   const morphWords = parseWords(text);
   const words = morphWords.map((word) => classify(word, tables));
 
@@ -638,7 +701,7 @@ function analyzeLine(
   const ctxByIndex = words.map((word, index) =>
     contextFor(word, index, words, parsed?.resolve, parsed, passThrough[index], dependentVerbIndexes.has(index)),
   );
-  return { words, ctxByIndex };
+  return { words, ctxByIndex, parsed };
 }
 
 /** Spoken TYPE **o** interiors (atomic next token, or until the matching close). */
@@ -660,16 +723,16 @@ function mentionPassThroughFlags(words: LexWord[]): boolean[] {
     if (family.kind === "x" && family.xFamily === "span") {
       const type = family.typeVowel ?? "";
       const edge = family.edgeVowel ?? "";
-      if (stack.includes("o")) flags[i] = true;
+      if (stack.includes("o") || stack.includes("u")) flags[i] = true;
       if (edge === "u") continue;
       if (edge === "o") {
-        if (type === "o") atomicMentionNext = true;
+        if (type === "o" || type === "u") atomicMentionNext = true;
         continue;
       }
       stack.push(type);
       continue;
     }
-    if (stack.includes("o")) flags[i] = true;
+    if (stack.includes("o") || stack.includes("u")) flags[i] = true;
   }
   return flags;
 }
@@ -747,11 +810,22 @@ function sensePieces(
     family.kind !== "joinMarker";
   if (resume) {
     if (ctx.antecedent) {
-      return [`←${senseLabel(ctx.antecedent, tables, {})}`];
+      const full = isFullRootResume(word, ctx.antecedent) ? ".full" : "";
+      return [`←${senseLabel(ctx.antecedent, tables, {})}${full}`];
     }
     if (family.kind === "content") {
-      const house = family.roots.map((root) => HOUSE_CAST[root]).find(Boolean);
+      const house = family.roots.map((root) => HOUSE_CAST_SHORT[root]).find(Boolean);
       if (house) return [`←${house}`];
+      const houseFull = family.roots.map((root) => HOUSE_CAST[root]).find(Boolean);
+      if (houseFull) return [`←${houseFull}.full`];
+      // No antecedent: the stem's own sense, or the stem itself (glosses.md § Anaphors).
+      // Overlay -r (map resolution, changeability, …) is an ending, not a resume.
+      if (!word.overlay) {
+        const stem = family.roots.join("");
+        const body = contentBody(word, family.roots, tables);
+        if (body === stem) return [`←${quotePayload(stem)}`];
+        return [`←${body}${shortResumeStem(stem) !== stem ? ".full" : ""}`];
+      }
     }
   }
   switch (family.kind) {
@@ -764,7 +838,11 @@ function sensePieces(
     case "joinMarker":
       return [joinMarkerLabel(word, ctx)];
     case "number":
-      return [numberLabel(family.stem, word.pos)];
+      return [
+        `${numberLabel(family.stem, word.pos)}${NUMBER_MARK_SUFFIX[family.writingEndingMark ?? ""] ?? ""}` +
+          // Spelled-out number word (`grarel`) vs digit shorthand (`g+3`).
+          (/^(?:th|[zdbvgwhxj])?[a-z]+$/.test(word.raw) ? ".spelled" : ""),
+      ];
     case "x":
       return xPieces(word, tables);
     case "writingSpan":
@@ -966,7 +1044,7 @@ function numberLabel(stem: NumberStem, pos: Pos | undefined): string {
     if (stem.marker === "#" && exp === "e") {
       return pos === "x" ? "finally" : "last-place";
     }
-    if (stem.marker === "+" && exp === "e") return "infinity";
+    if (stem.marker === "+" && exp === "e") return "plus-infinity";
   }
 
   if (stem.groups.length === 0 && !exp) {
@@ -1026,9 +1104,12 @@ function cardinalEnglish(n: number): string {
   return String(n);
 }
 
+/** Digit ordinals (`1st`, `2nd`, `11th`) — never an English sense of a lexicon root. */
 function ordinalEnglish(n: number): string {
-  if (Number.isInteger(n) && n >= 0 && n < ORDINALS.length) return ORDINALS[n]!;
-  return `${cardinalEnglish(n)}-th`;
+  const mod100 = Math.abs(n) % 100;
+  const mod10 = Math.abs(n) % 10;
+  const suffix = mod100 >= 11 && mod100 <= 13 ? "th" : mod10 === 1 ? "st" : mod10 === 2 ? "nd" : mod10 === 3 ? "rd" : "th";
+  return `${n}${suffix}`;
 }
 
 function xPieces(word: LexWord, tables: ClassifyTables): string[] {
@@ -1037,6 +1118,7 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
 
   if (family.xFamily === "span") {
     const type = SPAN_TYPE[family.typeVowel ?? ""] ?? family.typeVowel ?? "span";
+    if (word.ending === "r") return [`←${type}.spoken`];
     const edge = SPAN_EDGE[family.edgeVowel ?? ""] ?? family.edgeVowel;
     return edge ? [type, edge] : [type];
   }
@@ -1121,7 +1203,6 @@ function writingSpanLabel(
   const family = word.family;
   if (family.kind !== "writingSpan") return "span";
   if (family.anaphor) {
-    if (ctx.antecedent) return `←${senseLabel(ctx.antecedent, tables, {})}`;
     if (family.bracket === "[") return "←cite";
     if (family.bracket === "(") return "←aside";
     if (family.bracket === "{") return "←mention";
@@ -1138,19 +1219,19 @@ function writingSpanLabel(
 function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): string {
   if (word.overlay) return overlayLabel(word.overlay);
   if (word.lexicalCompound) {
-    return hyphenEnglish(
-      word.rootGloss?.concrete || word.rootGloss?.abstract || roots[0] || "compound",
-    );
+    if (word.ending === "n") return titleAgalanName(roots[0] ?? "compound", true);
+    const lemma = word.ending === "m" ? word.rootGloss?.abstract : word.rootGloss?.concrete;
+    return hyphenEnglish(lemma || word.rootGloss?.concrete || roots[0] || "compound");
   }
   if (word.hookCompound) {
     return hyphenEnglish(
       word.rootGloss?.concrete || word.rootGloss?.abstract || word.hookCompound.stem,
     );
   }
-  if (word.pos === "x" && roots.length === 1 && LINKER_ENGLISH[roots[0]!]) {
+  if (word.pos === "x" && word.ending === "l" && roots.length === 1 && LINKER_ENGLISH[roots[0]!]) {
     return LINKER_ENGLISH[roots[0]!]!;
   }
-  if (word.pos === "j" && roots.length === 1 && roots[0] === "awave") return "greeting";
+  if (word.pos === "j" && word.ending === "l" && roots.length === 1 && roots[0] === "awave") return "greeting";
   if (roots.length === 1) {
     return rootSense(roots[0]!, word.ending, tables, {
       named: word.ending === "n",
@@ -1203,7 +1284,7 @@ function rootSense(
   if (opts.need && tables.needGloss.has(root)) return tables.needGloss.get(root)!;
 
   const compound = tables.compounds.get(root);
-  if (compound) {
+  if (compound && ending !== "n" && !opts.named) {
     const lemma =
       ending === "m"
         ? compound.abstract || compound.concrete
@@ -1211,7 +1292,7 @@ function rootSense(
     if (lemma) return hyphenEnglish(lemma);
   }
 
-  if (root === "ugobo") {
+  if (root === "ugobo" && ending !== "m") {
     return ending === "l" ? "microphone" : "speaker";
   }
 

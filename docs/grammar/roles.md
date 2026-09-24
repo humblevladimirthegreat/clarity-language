@@ -40,7 +40,7 @@ A role compound can also continue a pronoun. Keep its role-compound shape, use t
 
 > `zazawan vajul. zaxajur vawalal.`
 >
-> z-Azawan | v-sit | z-←sit | v-walk
+> z-Azawan | v-sit . z-←sit | v-walk
 >
 > "Azawan sits. The one sitting walks."
 
@@ -101,7 +101,7 @@ Some stems name a **relation** (who is bound to whom), not an action. The extra 
 > `zazawan gonogom bululon.`
 > `zoxonogor vurunul.`
 >
-> z-Azawan | g-bond | b-Ululon
+> z-Azawan | [g-bond | b-Ululon]
 > z-←bond | v-run
 >
 > "Azawan is bound to Ululon. That other party of the bond runs."
@@ -155,7 +155,7 @@ The same adjective after another noun is English *sitting guard* / *fighter frie
 
 > `zazawan dugugal gaxajul vejel.`
 >
-> z-Azawan | d-guard | g-agent-x-chair | v-see
+> z-Azawan | [d-guard | g-agent-x-chair] | v-see
 >
 > "Azawan sees a sitting guard."
 
@@ -203,7 +203,7 @@ z-agent-x-construct | v-sit
 ::: details Show answer
 `zazawan vogonul. zaxogonur dehemel vejel.`
 
-z-Azawan | v-construct | z-←construct | d-helmet | v-see
+z-Azawan | v-construct . z-←construct | d-helmet | v-see
 :::
 
 **3.** *Ululon screams. Azawan sees the scream-place.*
@@ -211,7 +211,7 @@ z-Azawan | v-construct | z-←construct | d-helmet | v-see
 ::: details Show answer
 `zululon vazagal. zazawan dexazagar vejel.`
 
-z-Ululon | v-scream | z-Azawan | d-←scream | v-see
+z-Ululon | v-scream . z-Azawan | d-←scream | v-see
 :::
 
 **4.** *Azawan sees Uhubun. The one seen sits.*
@@ -219,7 +219,7 @@ z-Ululon | v-scream | z-Azawan | d-←scream | v-see
 ::: details Show answer
 `zazawan zuhubun vejel. zuxejer vajul.`
 
-z-Azawan | z-Uhubun | v-see | z-←see | v-sit
+z-Azawan | z-Uhubun | v-see . z-←see | v-sit
 :::
 
 **5.** *Azawan is a fabricator.*
@@ -245,7 +245,7 @@ z-Azawan | d-construction | v-see
 ::: details Show answer
 `zazawan vezehel. zoxezeher vubunul.`
 
-z-Azawan | v-tell | z-←tell | v-punch
+z-Azawan | v-tell . z-←tell | v-punch
 :::
 
 **8.** *Azawan is bound to Ululon. That other party of the bond fights.*
@@ -253,7 +253,7 @@ z-Azawan | v-tell | z-←tell | v-punch
 ::: details Show answer
 `zazawan gonogom bululon. zoxonogor vuvugul.`
 
-z-Azawan | g-bond | b-Ululon | z-←bond | v-fight
+z-Azawan | [g-bond | b-Ululon] . z-←bond | v-fight
 :::
 
 #### Agalan → English
@@ -271,7 +271,7 @@ z-place-x-sleep | v-sit
 
 ::: details Show answer
 
-z-Uhubun | z-Azawan | v-see | z-←see | v-sit
+z-Uhubun | z-Azawan | v-see . z-←see | v-sit
 
 *Uhubun sees Azawan. The one seen sits.*
 :::
@@ -280,7 +280,7 @@ z-Uhubun | z-Azawan | v-see | z-←see | v-sit
 
 ::: details Show answer
 
-z-Ululon | v-construct | z-←construct | d-helmet | v-see
+z-Ululon | v-construct . z-←construct | d-helmet | v-see
 
 *Ululon constructs. The one constructing sees a helmet.*
 :::
@@ -307,7 +307,7 @@ z-Ululon | d-construction | v-see
 
 ::: details Show answer
 
-z-Azawan | z-Ululon | v-fight | d-←fight | v-scream
+z-Azawan | z-Ululon | v-fight . d-←fight | v-scream
 
 *Azawan fought Ululon. The one fought screams.*
 :::
@@ -316,7 +316,7 @@ z-Azawan | z-Ululon | v-fight | d-←fight | v-scream
 
 ::: details Show answer
 
-z-Azawan | v-tell | z-←tell | v-run
+z-Azawan | v-tell . z-←tell | v-run
 
 *Azawan tells. The one told runs.*
 :::
@@ -325,7 +325,7 @@ z-Azawan | v-tell | z-←tell | v-run
 
 ::: details Show answer
 
-z-Uhubun | g-bond | b-Ululon | z-←bond | v-punch
+z-Uhubun | [g-bond | b-Ululon] . z-←bond | v-punch
 
 *Uhubun is bound to Ululon. That other party of the bond punches.*
 :::
@@ -417,7 +417,7 @@ English *on Azawan’s left of the tree* needs both a facing person and a landma
 
 > `zabogol gewezethazawan berel.`
 >
-> z-book | g-west-th-Azawan | b-tree
+> z-book | [g-west-th-Azawan | b-tree]
 >
 > "The book is on Azawan’s left of the tree."
 
@@ -518,7 +518,7 @@ j-command | v-walk | h-down
 ::: details Show answer
 `zuluvel gewezethazawan bodadal.`
 
-z-life-ring | g-west-th-Azawan | b-boat
+z-life-ring | [g-west-th-Azawan | b-boat]
 :::
 
 **6.** *You, walk left (your left).*
@@ -587,7 +587,7 @@ j-command | v-walk | h-up
 
 ::: details Show answer
 
-z-life-ring | g-west-th-Ululon | b-boat
+z-life-ring | [g-west-th-Ululon | b-boat]
 
 *The life-ring is on Ululon’s left of the boat.*
 :::
@@ -628,7 +628,7 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 
 > `zazawan vawalal. xezazal zululon vurunul.`
 >
-> z-Azawan | v-walk | x-therefore | z-Ululon | v-run
+> z-Azawan | v-walk . x-therefore | z-Ululon | v-run
 >
 > "Azawan walks. Therefore Ululon runs."
 

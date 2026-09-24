@@ -51,7 +51,7 @@ An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, cov
 
 > `zazawan vawalal zululon vurunul xan.`
 >
-> z-Azawan | v-walk | z-Ululon | v-run | x-and-then
+> [z-Azawan | v-walk | z-Ululon | v-run | x-and-then]
 >
 > "Azawan walks and then Ululon runs."
 
@@ -66,7 +66,7 @@ When English would deny or weigh **how you stand** toward a claim (*not becauseâ
 
 > `zazawan vawalal thurugum banunul thul.`
 >
-> z-Azawan | v-walk | th-because | b-rain | th-not
+> z-Azawan | v-walk | [th-because | b-rain] | th-not
 >
 > "Azawan walks, but not because of the rain."
 
@@ -126,7 +126,7 @@ When a noun or event is *framed* toward something (*cake with peanuts*, *walk wi
 
 > `zuragel gan babanul.`
 >
-> z-birthday-cake | g-including | b-peanut
+> z-birthday-cake | [g-including | b-peanut]
 >
 > "Cake including / with peanuts."
 
@@ -197,7 +197,7 @@ z-Azawan | d-play | v-includes
 ::: details Show answer
 `zunuhul gan buhubun.`
 
-z-finish-line | g-including | b-Uhubun
+z-finish-line | [g-including | b-Uhubun]
 :::
 
 **3.** *Azawan chooses the hand (as the one choice).*
@@ -213,7 +213,7 @@ z-Azawan | d-hand | v-choose
 ::: details Show answer
 `zululon han buhubun vurunul.`
 
-z-Ululon | h-including | b-Uhubun | v-run
+z-Ululon | [h-including | b-Uhubun] | v-run
 :::
 
 **5.** *Azawan punches, then Ululon screams.*
@@ -221,7 +221,7 @@ z-Ululon | h-including | b-Uhubun | v-run
 ::: details Show answer
 `zazawan vubunul zululon vazagal xan.`
 
-z-Azawan | v-punch | z-Ululon | v-scream | x-and-then
+[z-Azawan | v-punch | z-Ululon | v-scream | x-and-then]
 :::
 
 **6.** *A team exclusive for Uhubun.*
@@ -229,7 +229,7 @@ z-Azawan | v-punch | z-Ululon | v-scream | x-and-then
 ::: details Show answer
 `zahadam gon buhubun.`
 
-z-teamwork | g-exclusive-for | b-Uhubun
+z-teamwork | [g-exclusive-for | b-Uhubun]
 :::
 
 **7.** *Ululon runs and punches.*
@@ -237,7 +237,7 @@ z-teamwork | g-exclusive-for | b-Uhubun
 ::: details Show answer
 `zululon vurunul vubunul vam.`
 
-z-Ululon | v-run | v-punch | v-and.open
+z-Ululon | [v-run | v-punch | v-and.open]
 :::
 
 **8.** *Ululon punches, refusing the hand.*
@@ -245,7 +245,7 @@ z-Ululon | v-run | v-punch | v-and.open
 ::: details Show answer
 `zululon hun bahanal vubunul.`
 
-z-Ululon | h-against | b-hand | v-punch
+z-Ululon | [h-against | b-hand] | v-punch
 :::
 
 #### Agalan â†’ English
@@ -263,7 +263,7 @@ z-Uhubun | d-play | v-includes
 
 ::: details Show answer
 
-z-finish-line | g-without | b-medal
+z-finish-line | [g-without | b-medal]
 
 *Finish line without the medal.*
 :::
@@ -281,7 +281,7 @@ z-Ululon | d-trophy | v-choose
 
 ::: details Show answer
 
-z-Azawan | h-including | b-Ululon | v-run
+z-Azawan | [h-including | b-Ululon] | v-run
 
 *Azawan runs with Ululon.*
 :::
@@ -290,7 +290,7 @@ z-Azawan | h-including | b-Ululon | v-run
 
 ::: details Show answer
 
-z-teamwork | g-including | b-Azawan
+z-teamwork | [g-including | b-Azawan]
 
 *A team including Azawan.*
 :::
@@ -299,7 +299,7 @@ z-teamwork | g-including | b-Azawan
 
 ::: details Show answer
 
-z-Azawan | h-against | b-lie | v-run
+z-Azawan | [h-against | b-lie] | v-run
 
 *Azawan runs, refusing a lie.*
 :::
@@ -308,7 +308,7 @@ z-Azawan | h-against | b-lie | v-run
 
 ::: details Show answer
 
-z-teamwork | g-open-to | b-Azawan
+z-teamwork | [g-open-to | b-Azawan]
 
 *A team open to Azawan (more members may follow).*
 :::
@@ -317,7 +317,7 @@ z-teamwork | g-open-to | b-Azawan
 
 ::: details Show answer
 
-z-Ululon | h-anything-but | b-Uhubun | v-scream
+z-Ululon | [h-anything-but | b-Uhubun] | v-scream
 
 *Ululon screams, barring Uhubun.*
 :::

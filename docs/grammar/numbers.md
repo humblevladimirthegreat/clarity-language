@@ -34,7 +34,7 @@ To say **which place** a thing has in a series (*the first*, *the second*, …),
 >
 > 🔊 *zabogol gredul.*
 >
-> z-book | g-second
+> z-book | g-2nd
 >
 > "The second book."
 
@@ -138,7 +138,7 @@ z-baguette-x | g-two
 
 🔊 *zogozal grerel.*
 
-z-croissant | g-third
+z-croissant | g-3rd
 :::
 
 **3.** *Cookies — more than one.*
@@ -158,7 +158,7 @@ z-cookie-x | g-more-than-one
 
 🔊 *zazawan dereralx grarel vejel.*
 
-z-Azawan | d-bread-x | g-three | v-see
+z-Azawan | [d-bread-x | g-three] | v-see
 :::
 
 **5.** *Ululon tells the second pie.*
@@ -168,7 +168,7 @@ z-Azawan | d-bread-x | g-three | v-see
 
 🔊 *zululon dububel gredul vezehel.*
 
-z-Ululon | d-pie | g-second | v-tell
+z-Ululon | [d-pie | g-2nd] | v-tell
 :::
 
 **6.** *Uhubun sees more than one doughnut.*
@@ -178,7 +178,7 @@ z-Ululon | d-pie | g-second | v-tell
 
 🔊 *zuhubun dodogulx gral vejel.*
 
-z-Uhubun | d-doughnut-x | g-more-than-one | v-see
+z-Uhubun | [d-doughnut-x | g-more-than-one] | v-see
 :::
 
 **7.** *Ululon punches three baguettes.*
@@ -188,7 +188,7 @@ z-Uhubun | d-doughnut-x | g-more-than-one | v-see
 
 🔊 *zululon dabagulx grarel vubunul.*
 
-z-Ululon | d-baguette-x | g-three | v-punch
+z-Ululon | [d-baguette-x | g-three] | v-punch
 :::
 
 **8.** *Ululon screams the first fire.*
@@ -198,7 +198,7 @@ z-Ululon | d-baguette-x | g-three | v-punch
 
 🔊 *zululon durel grewol vazagal.*
 
-z-Ululon | d-fire | g-first | v-scream
+z-Ululon | [d-fire | g-1st] | v-scream
 :::
 
 #### Agalan → English
@@ -220,7 +220,7 @@ z-croissant-x | g-two
 
 🔊 *zereral gredul.*
 
-z-bread | g-second
+z-bread | g-2nd
 
 *The second bread.*
 :::
@@ -242,7 +242,7 @@ z-baguette-x | g-more-than-one
 
 🔊 *zuhubun dogogelx grarel vejel.*
 
-z-Uhubun | d-cookie-x | g-three | v-see
+z-Uhubun | [d-cookie-x | g-three] | v-see
 
 *Uhubun sees three cookies.*
 :::
@@ -253,7 +253,7 @@ z-Uhubun | d-cookie-x | g-three | v-see
 
 🔊 *zazawan dububelx gral vejel.*
 
-z-Azawan | d-pie-x | g-more-than-one | v-see
+z-Azawan | [d-pie-x | g-more-than-one] | v-see
 
 *Azawan sees more than one pie.*
 :::
@@ -264,7 +264,7 @@ z-Azawan | d-pie-x | g-more-than-one | v-see
 
 🔊 *zululon dabagelx gradul vurunul.*
 
-z-Ululon | d-bagel-x | g-two | v-run
+z-Ululon | [d-bagel-x | g-two] | v-run
 
 *Ululon runs two bagels.*
 :::
@@ -275,7 +275,7 @@ z-Ululon | d-bagel-x | g-two | v-run
 
 🔊 *zululon dabagelx gral vubunul.*
 
-z-Ululon | d-bagel-x | g-more-than-one | v-punch
+z-Ululon | [d-bagel-x | g-more-than-one] | v-punch
 
 *Ululon punches bagels — more than one.*
 :::
@@ -286,7 +286,7 @@ z-Ululon | d-bagel-x | g-more-than-one | v-punch
 
 🔊 *zululon durel grewol vubunul.*
 
-z-Ululon | d-fire | g-first | v-punch
+z-Ululon | [d-fire | g-1st] | v-punch
 
 *Ululon punches the first fire.*
 :::
@@ -308,7 +308,7 @@ g-four
 
 🔊 *grewol*
 
-g-first
+g-1st
 :::
 
 **3.** `g+`
@@ -335,7 +335,7 @@ g-21
 
 🔊 *grehal*
 
-g-eighth
+g-8th
 :::
 
 **6.** `g+7`
@@ -362,7 +362,7 @@ g-two
 ::: details Show answer
 `g#3`
 
-g-third
+g-3rd
 :::
 
 **3.** 🔊 *grawozol*
@@ -378,7 +378,7 @@ g-ten
 ::: details Show answer
 `g#9`
 
-g-ninth
+g-9th
 :::
 
 **5.** 🔊 *graval*
@@ -829,7 +829,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Pre
 
 🔊 *zedadalx grarem.*
 
-z-seat-x | g-three
+z-seat-x | g-three.about
 :::
 
 **2.** *Three (as the subject) is a trophy.*
@@ -859,7 +859,7 @@ z-Ululon | v-run | h-three
 
 🔊 *zedadal gredul.*
 
-z-seat | g-second
+z-seat | g-2nd
 :::
 
 **5.** *Point 2: Azawan sits.*
@@ -869,7 +869,7 @@ z-seat | g-second
 
 🔊 *xredul zazawan vajul.*
 
-x-second | z-Azawan | v-sit
+x-2nd | z-Azawan | v-sit
 :::
 
 **6.** *Three more!*
@@ -910,7 +910,7 @@ z-Ululon | v-punch | h-three
 
 🔊 *zedadalx gradum.*
 
-z-seat-x | g-two
+z-seat-x | g-two.about
 
 *About two seats.*
 :::
@@ -921,7 +921,7 @@ z-seat-x | g-two
 
 🔊 *zredul godobol.*
 
-z-second | g-trophy
+z-2nd | g-trophy
 
 *Second is a trophy.*
 :::
@@ -953,7 +953,7 @@ j-_3
 
 🔊 *xredul zululon vurunul.*
 
-x-second | z-Ululon | v-run
+x-2nd | z-Ululon | v-run
 
 *Point 2: Ululon runs.*
 :::
@@ -964,7 +964,7 @@ x-second | z-Ululon | v-run
 
 🔊 *zedadal gelelel gredul.*
 
-z-seat | g-bell-pepper | g-second
+[z-seat | g-bell-pepper | g-2nd]
 
 *The second big seat.*
 :::
@@ -975,7 +975,7 @@ z-seat | g-bell-pepper | g-second
 
 🔊 *zazawan drar vejel.*
 
-z-Azawan | d-more-than-one | v-see
+z-Azawan | d-more-than-one.again | v-see
 
 *Azawan sees that amount again.*
 :::
@@ -986,7 +986,7 @@ z-Azawan | d-more-than-one | v-see
 
 🔊 *zuhubun vajul hrerel.*
 
-z-Uhubun | v-sit | h-third
+z-Uhubun | v-sit | h-3rd
 
 *Uhubun sits for the third time.*
 :::
@@ -1005,7 +1005,7 @@ To count **from the last place** (*penultimate*, *starting with the last one*), 
 >
 > 🔊 *zabogol gruedul.*
 >
-> z-book | g-second-from-end
+> z-book | g-2nd-from-end
 >
 > "The penultimate book."
 
@@ -1164,7 +1164,7 @@ A digit group may use **`ba`** or **`bu`** with **no** exponent digits. That emp
 >
 > 🔊 *zagadalx grabal.*
 >
-> z-cat-x | g-infinity
+> z-cat-x | g-plus-infinity
 >
 > "Cats — infinitely many."
 
@@ -1439,7 +1439,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Digitle
 
 🔊 *zarazalx grabal.*
 
-z-star-x | g-infinity
+z-star-x | g-plus-infinity
 :::
 
 **2.** *One gazillion telescopes.*
@@ -1469,7 +1469,7 @@ x-finally | z-Azawan | v-see
 
 🔊 *jrabal.*
 
-j-infinity
+j-plus-infinity
 :::
 
 **5.** *Annihilate!*
@@ -1499,7 +1499,7 @@ x-starting-with | z-Uhubun | v-see
 
 🔊 *zunulx grabal.*
 
-z-sun-x | g-infinity
+z-sun-x | g-plus-infinity
 
 *Suns — infinitely many.*
 :::

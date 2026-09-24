@@ -53,16 +53,16 @@ odohom,th,💭,may,MAY,may mood (could be; default),thought balloon: the scene m
 odohom,w,💭,may,MAY,may mood (could be; default),thought balloon: the scene may be so; -m does not find out and does not shrug it off
 odohol,th,💭,may,MAY-find-out,may mood find-out hold (I'll / let's find out),"thought balloon plus looking: could be, and you are seeking"
 odohol,w,💭,may,MAY-find-out,may mood find-out hold (I'll / let's find out),"thought balloon plus looking: could be, and you are seeking"
-odohon,th,💭,may,MAY,may mood proper (this may-word names a particular object),thought balloon as a named caption; -n is ordinary proper not a hold
-odohon,w,💭,may,MAY,may mood proper (this may-word names a particular object),thought balloon as a named caption; -n is ordinary proper not a hold
+odohon,th,💭,may,MAY.named,may mood proper (this may-word names a particular object),thought balloon as a named caption; -n is ordinary proper not a hold
+odohon,w,💭,may,MAY.named,may mood proper (this may-word names a particular object),thought balloon as a named caption; -n is ordinary proper not a hold
 odohor,th,💭,may,MAY-who-knows,may mood who-knows hold (leave unsettled; may never know),"thought balloon with a shrug: could be, and you are not seeking — including if you never know"
 odohor,w,💭,may,MAY-who-knows,may mood who-knows hold (leave unsettled; may never know),"thought balloon with a shrug: could be, and you are not seeking — including if you never know"
 adadem,th,🎭,notional,NOTIONAL,notional mood default hold (imagining a scene without a further purpose),theater mask marks an imagined scene without a special purpose
 adadem,w,🎭,notional,NOTIONAL,notional mood default hold (imagining a scene without a further purpose),theater mask marks an imagined scene without a special purpose
 adadel,th,🎭,notional,NOTIONAL-explore,notional mood explore hold (testing a possibility or assumption),theater mask opens a scene to explore what might follow
 adadel,w,🎭,notional,NOTIONAL-explore,notional mood explore hold (testing a possibility or assumption),theater mask opens a scene to explore what might follow
-adaden,th,🎭,notional,NOTIONAL,notional mood proper (this as-if-word names a particular object),theater as a named setup; -n is ordinary proper not a hold
-adaden,w,🎭,notional,NOTIONAL,notional mood proper (this as-if-word names a particular object),theater as a named setup; -n is ordinary proper not a hold
+adaden,th,🎭,notional,NOTIONAL.named,notional mood proper (this as-if-word names a particular object),theater as a named setup; -n is ordinary proper not a hold
+adaden,w,🎭,notional,NOTIONAL.named,notional mood proper (this as-if-word names a particular object),theater as a named setup; -n is ordinary proper not a hold
 adader,th,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action
 adader,w,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action
 ogegam,th,🌊,emotion_act,HIGH,emotion HIGH activation (flood / surge),ocean wave surges; flood is high-arousal water motion

@@ -7,7 +7,7 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agalan 
 | English itch | Agalan job | Teach |
 |--------------|------------|-------|
 | who does the action (*seen by Azawan*) | subject `/z/` (you may front the object) | [Who acts](clause.md#beginner), [word order](clause.md#word-order-emphasis) |
-| tool (*writes by / with a hammer*) | **`hahanam`** + `/b/` | [Means](relations.md#means) |
+| tool (*writes by / with a hammer*) | hook **`ael`** (*using*) + `/b/` | [Hooks](hooks.md#extra-noun) |
 | place (*by the station*) | locative **`hubuhum`** (*at*) + `/b/` (or *inside* / *on*) | [Locative relations](relations.md#locative-relations) |
 | deadline (*by 15:30*) | clock `/h/`, or *until* **`hudumem barl`** | [Time](numbers-applied.md#time), [dependent clauses](dependents.md#dependent-clauses) |
 | manner (*by walking hastily*) | ordinary adverb `/h/`, no `/b/` | [Adverbs](clause.md#adverbs-h) |

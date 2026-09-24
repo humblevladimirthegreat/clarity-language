@@ -76,7 +76,7 @@ English *sometimes* is the usual match next to *never* / *always*. It still only
 
 > `jol zuhubun vawalal hanunul?`
 >
-> j-question | z-Uhubun | v-walk | h-rain
+> j-question | z-Uhubun | v-walk | h-rain ?
 >
 > "Does Uhubun walk when raining?"
 
@@ -92,7 +92,7 @@ The same restrictor vowels and endings can limit **only the host you are about t
 
 > `zazawan wal guzumum.`
 >
-> z-Azawan | w-never | g-happy
+> z-Azawan | [w-never | g-happy]
 >
 > "Azawan is never happy."
 
@@ -208,7 +208,7 @@ z-Uhubun | v-swim | h-always
 ::: details Show answer
 `zazawan wal guzumum.`
 
-z-Azawan | w-never | g-happy
+z-Azawan | [w-never | g-happy]
 :::
 
 **5.** *Ululon swims sometimes.*
@@ -267,7 +267,7 @@ z-Azawan | v-swim | h-never
 
 ::: details Show answer
 
-z-Ululon | w-always | g-happy
+z-Ululon | [w-always | g-happy]
 
 *Ululon is always happy.*
 :::
@@ -294,7 +294,7 @@ z-Azawan | v-swim | h-rain | h-night | h-when.open
 
 ::: details Show answer
 
-z-Uhubun | w-sometimes | g-happy
+z-Uhubun | [w-sometimes | g-happy]
 
 *Uhubun is sometimes happy.*
 :::
@@ -326,7 +326,7 @@ English *when* / *if* can name a **following sentence** (*if Azawan walks*). Wri
 
 > `zuhubun vuzunul thadorom barl zazawan vawalal.`
 >
-> z-Uhubun | v-sing | th-if | b-that-clause | z-Azawan | v-walk
+> z-Uhubun | v-sing | [th-if | b-that-clause] | z-Azawan | v-walk
 >
 > "Uhubun sings if Azawan walks."
 
@@ -394,7 +394,7 @@ Statement readings below. Asking *when*: [questions.md](questions.md#when).
 
 > `zazawan wanunul wunugul wol guzumum.`
 >
-> z-Azawan | w-rain | w-night | w-when-one | g-happy
+> z-Azawan | [w-rain | w-night | w-when-one | g-happy]
 >
 > "Azawan is happy either when raining or at night (not both)."
 
@@ -480,7 +480,7 @@ z-Azawan | v-climb | h-ice | h-fog | h-oe
 ::: details Show answer
 `zazawan wanunul wunugul wol guzumum.`
 
-z-Azawan | w-rain | w-night | w-when-one | g-happy
+z-Azawan | [w-rain | w-night | w-when-one | g-happy]
 :::
 
 **8.** *Uhubun screams if Ululon falls.*
@@ -488,7 +488,7 @@ z-Azawan | w-rain | w-night | w-when-one | g-happy
 ::: details Show answer
 `zuhubun vazagal thadorom barl zululon vodowol.`
 
-z-Uhubun | v-scream | th-if | b-that-clause | z-Ululon | v-down
+z-Uhubun | v-scream | [th-if | b-that-clause] | z-Ululon | v-down
 :::
 
 #### Agalan → English
@@ -551,7 +551,7 @@ z-Uhubun | v-climb | h-fog | h-not-when
 
 ::: details Show answer
 
-z-Azawan | v-scream | th-if | b-that-clause | z-Ululon | v-down
+z-Azawan | v-scream | [th-if | b-that-clause] | z-Ululon | v-down
 
 *Azawan screams if Ululon falls.*
 :::
@@ -560,7 +560,7 @@ z-Azawan | v-scream | th-if | b-that-clause | z-Ululon | v-down
 
 ::: details Show answer
 
-z-Ululon | w-rain | w-night | w-when-one | g-happy
+z-Ululon | [w-rain | w-night | w-when-one | g-happy]
 
 *Ululon is happy either when raining or at night, not both.*
 :::
