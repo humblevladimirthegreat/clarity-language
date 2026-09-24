@@ -1,5 +1,6 @@
 import { classify, type ClassifyTables } from "./classify.js";
-import { senseLabel } from "./morph-gloss.js";
+import { morphGlossBrackets, senseLabel } from "./morph-gloss.js";
+import type { WordBrackets } from "./gloss-structure.js";
 import { parseWithTables } from "./parse-core.js";
 import { SentenceParseError } from "./sentence-parser.js";
 import type {
@@ -55,6 +56,8 @@ export type InspectWordToken = {
   word: LexWord;
   gloss: string;
   chips: string[];
+  /** Morph-gloss phrase brackets opening before / closing after this word. */
+  brackets?: WordBrackets;
   why?: InspectWhy;
   related?: InspectRelated[];
 };
@@ -486,6 +489,7 @@ function walkGPackage(cursor: Cursor, pack: GPackage, into: number[]) {
   }
   pushIndex(into, takeRaw(cursor, pack.word.raw));
   if (pack.bound) pushIndex(into, takeRaw(cursor, pack.bound.raw));
+  for (const adj of pack.boundAdjs ?? []) walkGPackage(cursor, adj, into);
 }
 
 function walkShared(cursor: Cursor, shared: CoordShared[], into: number[]) {
@@ -876,6 +880,7 @@ export function inspectText(text: string, tables: ClassifyTables): InspectResult
   }
 
   attachWhy(tokens, []);
+  if (allWordsOk) attachBrackets(tokens, text, tables);
 
   if (!allWordsOk || !tokens.some((token) => token.kind === "word")) {
     return { tokens, constructions: [] };
@@ -895,5 +900,21 @@ export function inspectText(text: string, tables: ClassifyTables): InspectResult
           ? error.message
           : String(error);
     return { tokens, constructions: [], sentenceWarning };
+  }
+}
+
+/** Phrase brackets per word token, in surface order (glosses.md § Phrase brackets). */
+function attachBrackets(tokens: InspectToken[], text: string, tables: ClassifyTables): void {
+  let brackets: WordBrackets[];
+  try {
+    brackets = morphGlossBrackets(text, tables);
+  } catch {
+    return;
+  }
+  let k = 0;
+  for (const token of tokens) {
+    if (token.kind !== "word") continue;
+    const marks = brackets[k++];
+    if (marks && (marks.open.length || marks.close.length)) token.brackets = marks;
   }
 }

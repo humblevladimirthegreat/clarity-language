@@ -318,6 +318,7 @@ function considerGPackage(ctx: Ctx, pkg: GPackage): void {
     if (pkg.asOf.bound) considerWord(ctx, pkg.asOf.bound);
   }
   if (pkg.bound) considerWord(ctx, pkg.bound);
+  for (const adj of pkg.boundAdjs ?? []) considerGPackage(ctx, adj);
 }
 
 function considerHUnit(ctx: Ctx, unit: HUnit): void {

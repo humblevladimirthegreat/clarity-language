@@ -154,7 +154,7 @@ Owns:
 - Complex `/ɡ|h/` + `/b/`; `/w/` + `/b/` only for *as-of* overlays; floating `/h/` as adjuncts
 - Matrix-final **stand-in** (`darl` / `barl`) + contiguous dependent
 
-Recovery is off. Illegal left fences, infix joins, and binderless islands throw `SentenceParseError`.
+Recovery is off. Illegal left fences and binderless islands throw `SentenceParseError`.
 
 ### Stage 4 — resolve (AST → discourse sidecar)
 

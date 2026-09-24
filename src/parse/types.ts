@@ -199,6 +199,8 @@ export type LeftEdge = {
 export type GPackage = {
   word: LexWord;
   bound?: LexWord;
+  /** Adjectives after the hosted pair describe the extra noun (clause.md § Complex chaining). */
+  boundAdjs?: GPackage[];
   modifiers: LexWord[];
   /** `/w/` *as-of* pair immediately before this `/ɡ/` adjective. */
   asOf?: { word: LexWord; bound?: LexWord };

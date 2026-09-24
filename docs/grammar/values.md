@@ -497,9 +497,9 @@ z-Ululon | v-pray | th-competence-motive-internal
 **10.** *Azawan’s church serves relatedness (appreciated physically).*
 
 ::: details Show answer
-`zuhurul goborul bazawan wonogothal gobobum.`
+`globorul bazawan zuhurul wonogothal gobobum.`
 
-[z-church | [g-copyright | [b-Azawan | [w-relatedness-met-physical | g-stimulus]]]]
+[[gl-copyright | b-Azawan] | z-church] | [w-relatedness-met-physical | g-stimulus]
 :::
 
 **11.** *Azawan prays: competence is met (physical) and relatedness is the internal motive.*

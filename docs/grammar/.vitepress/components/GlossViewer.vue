@@ -98,7 +98,7 @@ onBeforeUnmount(() => {
     <p v-if="speakError" class="warn">{{ speakError }}</p>
     <p class="hint">
       Hover for a short gloss. The morph gloss below shows phrase structure: <code>[ … ]</code> groups a unit, and labels such as <code>NAME[…]</code> or <code>CITE[…]</code> mark packages. Click or highlight a word for a floating inspect card. Highlight a
-      join, span fence, or <code>^</code> to inspect the construction. Pin or press Enter for the
+      join or span fence, or click a <code>SCOPE</code> label, to inspect the construction. Pin or press Enter for the
       full breakdown beside the stream. Copy uses the romanized surface form (not English). Arrow
       keys walk words; <kbd>g</kbd> opens Why; <kbd>s</kbd> speaks the selection; <kbd>Esc</kbd>
       closes the card. Speak Agalan expands number shorthand and span brackets. Foreign

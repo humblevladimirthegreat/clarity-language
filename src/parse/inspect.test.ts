@@ -133,3 +133,24 @@ describe("inspectText", () => {
     assert.equal(role.why?.href, "roles.html#role-compounds");
   });
 });
+
+describe("inspectText — phrase brackets", () => {
+  it("marks bracket opens and closes on word tokens", () => {
+    const shown = inspectText("jael zugobon zam zedonen zal guzumum.", tables)
+      .tokens.filter((token) => token.kind === "word")
+      .map((token) =>
+        token.kind === "word"
+          ? `${(token.brackets?.open ?? []).join("")}${token.raw}${(token.brackets?.close ?? []).join("")}`
+          : "",
+      )
+      .join(" ");
+    assert.equal(shown, "jael [[zugobon zam] zedonen zal guzumum]");
+  });
+
+  it("labels a spoken span on its open word", () => {
+    const tokens = inspectText("zazawan vujudul daxal zazawan vawalal xuxul.", tables).tokens;
+    const open = tokens.find((token) => token.raw === "daxal");
+    assert.ok(open?.kind === "word");
+    assert.deepEqual(open.brackets?.open, ["d-CITE.multi["]);
+  });
+});

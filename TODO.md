@@ -4,11 +4,11 @@ redirects settings: https://us-east-2.console.aws.amazon.com/amplify/apps/d2xds9
 
 my name: obogan (innovation)
 
+sample complex sentence: jael zugobon zam zedonen zal guzumum. zadedal zogovel zol zanunul zal ^ hurorom bazawan ^ vawalal. glonunul bululon zodogol gonunul bazawan gelulul vujudul daxal zazar vawalal xuxul. dadedal on dogovel.
+
 # TODO
 
 Prosody
-
-parser displays potential lexical compound even if not in lexicon
 
 consider removing some emotion words from lexicon
 
@@ -23,6 +23,7 @@ final exam
 save for cursor:
 -j should just be y, remind that y is never a vowel
 -consider moving overlay forms to the top of lexicon so they get preferential retying
+-scan the tests and linters. Is it special case ignoring things that it should not be?
 -finish English->Agalan cheat sheets, including tense
 -add Agalan->English cheat sheet
 -Cheat sheet for joins and hooks

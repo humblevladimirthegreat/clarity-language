@@ -270,9 +270,27 @@ describe("parse — illegal fences", () => {
     assert.throws(() => parseSentenceTokens(tokens), SentenceParseError);
   });
 
-  it("rejects infix A zam B zal C", () => {
-    const tokens = tokenizeUtterance("zadagal zam zagadal zal zadagal.", tables);
-    assert.throws(() => parseSentenceTokens(tokens), SentenceParseError);
+  it("nests A zam B zal as [[A zam] B zal]", () => {
+    const result = parseText("zadagal zam zagadal zal vawalal.");
+    const np = result.utterances[0]!.bodies[0]!.clause.units[0]!;
+    assert.ok(np.kind === "np");
+    assert.deepEqual(
+      np.coord.parts.map((part) => [part.items.length, part.join?.raw]),
+      [
+        [1, "zam"],
+        [1, "zal"],
+      ],
+    );
+  });
+
+  it("attaches an adjective after a hosted pair to the extra noun", () => {
+    const result = parseText("zodogol gonunul bazawan gelulul vawalal.");
+    const np = result.utterances[0]!.bodies[0]!.clause.units[0]!;
+    assert.ok(np.kind === "np" && np.coord.parts[0]!.items[0]!.kind === "package");
+    const pkg = np.coord.parts[0]!.items[0]!.package;
+    assert.equal(pkg.adjs.length, 1);
+    assert.equal(pkg.adjs[0]!.bound?.raw, "bazawan");
+    assert.equal(pkg.adjs[0]!.boundAdjs?.[0]?.word.raw, "gelulul");
   });
 });
 

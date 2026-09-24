@@ -32,7 +32,9 @@ import {
   renderGlossNodes,
   tokenGlossTree,
   unwrapLoneBracket,
+  bracketsByWord,
   type GlossNode,
+  type WordBrackets,
 } from "./gloss-structure.js";
 import { parseWithTables } from "./parse-core.js";
 import { parseWords, WordParseError } from "./word.js";
@@ -413,9 +415,11 @@ export function morphGlossLine(text: string, tables: ClassifyTables): string {
   return out;
 }
 
+/** Last word index a node covers, including a spoken span's folded close word. */
 function lastLeafIndex(node: GlossNode): number | undefined {
   if (node.t === "leaf") return node.i;
   if (node.t !== "group") return undefined;
+  if (node.to !== undefined) return node.to;
   for (let k = node.kids.length - 1; k >= 0; k--) {
     const found = lastLeafIndex(node.kids[k]!);
     if (found !== undefined) return found;
@@ -427,6 +431,20 @@ function lastLeafIndex(node: GlossNode): number | undefined {
 export function morphGlossWords(text: string, tables: ClassifyTables): { raw: string; gloss: string }[] {
   const { words, ctxByIndex } = analyzeLine(normalizeAgalan(text), tables);
   return words.map((word, i) => ({ raw: word.raw, gloss: wordGloss(word, tables, ctxByIndex[i] ?? {}) }));
+}
+
+/** Per-word bracket marks for the gloss overlay (same tree as {@link morphGlossLine}). */
+export function morphGlossBrackets(text: string, tables: ClassifyTables): WordBrackets[] {
+  const normalized = normalizeAgalan(text);
+  const { words, parsed } = analyzeLine(normalized, tables);
+  const carets: number[] = [];
+  let wordIdx = 0;
+  for (const chunk of normalized.match(/\S+/g) ?? []) {
+    if (chunk === "^") carets.push(wordIdx);
+    else if (chunk.replace(/[.?!]$/, "")) wordIdx += 1;
+  }
+  const tree = (parsed && buildGlossTree(parsed, words)) || tokenGlossTree(words, carets);
+  return bracketsByWord(tree, words.length);
 }
 
 /** Quoted pass-through payload (`"…"`, inner `"` doubled). */

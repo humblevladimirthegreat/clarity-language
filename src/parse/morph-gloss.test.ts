@@ -164,7 +164,7 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
   it("inclusive census turn", () => {
     expectLine(
       "jael zugobon zam zedonen zal guzumum.",
-      "j-yes | z-speaker | z-and.open | z-listener | z-and | g-happy",
+      "j-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-happy]",
     );
   });
 
@@ -296,7 +296,7 @@ describe("compareMorphGloss", () => {
   it("round-trips the jael census example block", () => {
     const md = `> \`jael zugobon zam zedonen zal guzumum.\`
 >
-> j-yes | z-speaker | z-and.open | z-listener | z-and | g-happy
+> j-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-happy]
 >
 > "Yes — you and I are happy."
 `;

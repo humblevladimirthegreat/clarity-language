@@ -408,7 +408,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 > `jael zugobon zam zedonen zal guzumum.`
 >
-> j-yes | z-speaker | z-and.open | z-listener | z-and | g-happy
+> j-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-happy]
 >
 > "Yes — you and I are happy."
 

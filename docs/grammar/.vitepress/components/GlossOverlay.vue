@@ -40,6 +40,26 @@ const popoverPlacement = ref<'above' | 'below'>('below')
 const tokens = computed(() => props.result.tokens)
 const constructions = computed(() => props.result.constructions)
 
+/** Phrase-bracket opens before a word: label (`NAME`, `d-CITE.multi`) + `[` (glosses.md § Phrase brackets). */
+function openMarks(token: InspectToken): { label: string }[] {
+  if (token.kind !== 'word' || !token.brackets) return []
+  return token.brackets.open.map((open) => ({ label: open.slice(0, -1) }))
+}
+
+/** The `^` token opening the island whose `SCOPE[` sits on word `index` (`^` itself is not drawn). */
+function caretBefore(index: number): number | null {
+  for (let i = index - 1; i >= 0; i--) {
+    const token = props.result.tokens[i]!
+    if (token.kind === 'island') return i
+    if (token.kind === 'word' || token.kind === 'error') return null
+  }
+  return null
+}
+
+function closeMarks(token: InspectToken): string[] {
+  return token.kind === 'word' && token.brackets ? token.brackets.close : []
+}
+
 const inspectable = computed(() =>
   tokens.value
     .map((token, index) => ({ token, index }))
@@ -478,8 +498,22 @@ onBeforeUnmount(() => {
       @mouseup="onStreamMouseUp"
     >
       <template v-for="(token, index) in tokens" :key="`${token.start}-${token.raw}`">
+        <template v-for="(mark, m) in openMarks(token)" :key="`o${m}`">
+          <span
+            v-if="mark.label === 'SCOPE' && caretBefore(index) !== null"
+            class="bracket scope"
+            role="button"
+            tabindex="-1"
+            title="scope island"
+            @click="onTokenClick(caretBefore(index)!)"
+          ><span class="bracket-label">SCOPE</span>[</span>
+          <span v-else class="bracket" aria-hidden="true"
+            ><span v-if="mark.label" class="bracket-label">{{ mark.label }}</span>[</span
+          >
+        </template>
+        <span v-if="token.kind === 'island'" hidden :data-token-index="index" />
         <span
-          v-if="clickable(token)"
+          v-else-if="clickable(token)"
           class="tok"
           :data-token-index="index"
           role="button"
@@ -500,6 +534,12 @@ onBeforeUnmount(() => {
           {{ token.raw }}
         </span>
         <span v-else class="tok punct" :data-token-index="index">{{ token.raw }}</span>
+        <span
+          v-for="(mark, m) in closeMarks(token)"
+          :key="`c${m}`"
+          class="bracket"
+          aria-hidden="true"
+        >{{ mark }}</span>
       </template>
     </p>
 
@@ -565,6 +605,23 @@ onBeforeUnmount(() => {
 </template>
 
 <style scoped>
+.bracket {
+  color: var(--vp-c-text-3);
+  font-family: var(--vp-font-family-mono);
+  user-select: none;
+}
+
+.bracket.scope {
+  cursor: pointer;
+}
+
+.bracket-label {
+  margin-right: 0.1em;
+  font-size: 0.7em;
+  letter-spacing: 0.02em;
+  vertical-align: 0.15em;
+}
+
 .overlay:focus {
   outline: 2px solid var(--vp-c-brand-1);
   outline-offset: 4px;

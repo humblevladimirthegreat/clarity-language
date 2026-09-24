@@ -819,6 +819,15 @@ function buildGPackage(cst: CstNode): GPackage {
   };
 }
 
+/** After a hosted pair (`/ɡ/` + `/b/`), later adjectives describe that extra noun, recursively. */
+function nestOnExtraNoun(adjs: GPackage[]): GPackage[] {
+  const hosted = adjs.findIndex((adj) => adj.bound);
+  if (hosted < 0 || hosted === adjs.length - 1) return adjs;
+  const pair = adjs[hosted]!;
+  pair.boundAdjs = nestOnExtraNoun(adjs.slice(hosted + 1));
+  return adjs.slice(0, hosted + 1);
+}
+
 function buildNpPackage(cst: CstNode): NpPackage {
   const gPackages = childNodes(cst, "gPackage");
   const firstG = gPackages[0];
@@ -826,7 +835,7 @@ function buildNpPackage(cst: CstNode): NpPackage {
     firstG && (childToken(firstG, "G")?.payload as LexWord | undefined)?.gl
       ? buildGPackage(firstG)
       : undefined;
-  const trailingAdjs = (glAdj ? gPackages.slice(1) : gPackages).map(buildGPackage);
+  const trailingAdjs = nestOnExtraNoun((glAdj ? gPackages.slice(1) : gPackages).map(buildGPackage));
   const headTok =
     childToken(cst, "Z") ??
     childToken(cst, "D") ??
@@ -1139,19 +1148,9 @@ function validateLeadingJoinFence<T extends { join?: LexWord }>(
   }
 }
 
+/** `A zam B zal` is legal nesting (`[[A zam] B zal]`), not an infix join (joins.md § Fence nesting). */
 function validateNpFences(coord: NpCoord): void {
-  const { parts } = coord;
-  if (parts.length === 0) return;
-
-  validateLeadingJoinFence(parts, (part) => part.items.length === 0);
-
-  for (let i = 0; i < parts.length - 1; i++) {
-    const part = parts[i]!;
-    const next = parts[i + 1]!;
-    if (part.items.length === 1 && part.join && next.items.length > 0) {
-      throw new SentenceParseError("Illegal infix join: conjuncts must stack before a right-close");
-    }
-  }
+  validateLeadingJoinFence(coord.parts, (part) => part.items.length === 0);
 }
 
 function validateVpFences(coord: VpCoord): void {
@@ -1175,6 +1174,7 @@ function validateAsOfWord(word: LexWord, bound: LexWord | undefined): void {
 function validateGPackageAsOf(pkg: GPackage): void {
   validateAsOfWord(pkg.word, pkg.bound);
   if (pkg.asOf) validateAsOfWord(pkg.asOf.word, pkg.asOf.bound);
+  for (const adj of pkg.boundAdjs ?? []) validateGPackageAsOf(adj);
 }
 
 function validateSharedAsOf(shared: CoordShared[]): void {
