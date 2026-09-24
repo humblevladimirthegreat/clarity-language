@@ -1,10 +1,12 @@
 import {
   classify,
   knownLexiconRoots,
+  lexiconContentRoots,
   missingAbstractSense,
   unknownLexiconContentRoots,
   type ClassifyTables,
 } from "../parse/classify.js";
+import { letterPrefix } from "../parse/resolve.js";
 import { parseWord, WordParseError } from "../parse/word.js";
 import { forEachMarkdownCodeToken } from "../retie/tokens.js";
 import { isClarityRootShape } from "../word-converter.js";
@@ -138,6 +140,7 @@ export function lintAgalanToken(
   core: string,
   tables: ClassifyTables,
   known: ReadonlySet<string> = knownLexiconRoots(tables),
+  resumeStems: ReadonlySet<string> = new Set(),
 ): { kind: AgalanLintKind; detail: string } | null {
   if (!isAgalanLintCandidate(core)) {
     return null;
@@ -169,7 +172,10 @@ export function lintAgalanToken(
     return { kind: "parse", detail };
   }
 
-  const missing = unknownLexiconContentRoots(word, known);
+  // A short resume (-r) is fine when its antecedent appears earlier in the block.
+  const missing = unknownLexiconContentRoots(word, known).filter(
+    (root) => !(word.ending === "r" && resumeStems.has(root)),
+  );
   if (missing.length > 0) {
     return { kind: "unknown-root", detail: `not in the lexicon: ${missing.join(", ")}` };
   }
@@ -184,12 +190,20 @@ export function lintAgalanMarkdown(text: string, tables: ClassifyTables): Agalan
   const known = knownLexiconRoots(tables);
   const issues: AgalanLintIssue[] = [];
 
-  forEachMarkdownCodeToken(text, ({ chunk, index }) => {
+  let currentBlock = -1;
+  let resumeStems = new Set<string>();
+
+  forEachMarkdownCodeToken(text, ({ chunk, index, block }) => {
+    if (block !== currentBlock) {
+      currentBlock = block;
+      resumeStems = new Set();
+    }
     const { prefix, core } = peelLintChunk(chunk);
     if (!core) {
       return;
     }
-    const hit = lintAgalanToken(core, tables, known);
+    const hit = lintAgalanToken(core, tables, known, resumeStems);
+    collectResumeStems(core, known, resumeStems);
     if (!hit) {
       return;
     }
@@ -206,4 +220,18 @@ export function lintAgalanMarkdown(text: string, tables: ClassifyTables): Agalan
 
 function hasOverlay(word: Parameters<typeof classify>[0], tables: ClassifyTables): boolean {
   return classify(word, tables).overlay !== undefined;
+}
+
+/** Short-resume stems of known content roots in `core` ([pronouns.md](docs/grammar/pronouns.md)). */
+function collectResumeStems(core: string, known: ReadonlySet<string>, into: Set<string>): void {
+  if (!isAgalanLintCandidate(core)) return;
+  let word;
+  try {
+    word = parseWord(core);
+  } catch {
+    return;
+  }
+  for (const root of lexiconContentRoots(word, known)) {
+    if (known.has(root)) into.add(letterPrefix(root));
+  }
 }

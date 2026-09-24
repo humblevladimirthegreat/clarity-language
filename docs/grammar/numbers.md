@@ -435,10 +435,22 @@ Syllable by syllable: `h` + `ro` + wo va + **tho** + re zo + `l`.
 |--------|-----------|---------|-----|
 | **`ra`** (`+`) | **`tha`** | `g+5e3,860` | **a** ≈ add (still counting up) |
 | **`ru`** (`-`), **`rue`** (`#-`), **`ruo`** (`#_`), **`rua`** (`+-`) | **`thu`** | `g-1e9,265e3,4` | **u** ≈ undo (the sign is heard again at every break) |
-| **`re`** (`#`) | **`the`** | `g#1e3,5` (*the 1005th*) | **e** ≈ order |
+| **`re`** (`#`) | **`the`** | `g#2,3` (*2nd within the 3rd*) | **e** ≈ order |
 | **`ro`** (`_`), **`roe`** (`_#` dates) | **`tho`** | `d_555,123,4567`; `h_#22,7,2026` | **o** ≈ one (one label) |
 
 Say a separator exactly where a comma is written, and nowhere else: `g+860` has none; `g+5e3,860` has one. The separator must match the marker, so a listener who missed the start of a long negative number still hears **`thu`** at each break.
+
+<a id="nested-rank"></a>
+
+**Nested rank.** On an ordinal, each comma opens a place *within* the place before it, innermost first, as in dates: `g#2,3` is *seat 2 in row 3*; `g#16,4` is *verse 16 of chapter 4*. An exponent on an ordinal is [generation](numbers-applied.md#ordinal-generation), so a large ordinal is one group of plain digits: `g#1005` (*the 1005th*).
+
+> `zedadal g#2,3.`
+>
+> 🔊 *zedadal gredutherel.*
+>
+> z-seat | g-#-2,3
+>
+> "Seat 2 in row 3."
 
 ### Parts of speech on numbers
 <a id="parts-of-speech-on-numbers"></a>

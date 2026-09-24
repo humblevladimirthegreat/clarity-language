@@ -26,9 +26,9 @@ Audit in waves; each wave treats earlier waves as settled. Pages within a wave a
 | Status | Page | Covered | Date |
 |--------|------|---------|------|
 | [x] | `numbers.md` | all | 2026-09-24 |
-| [ ] | `pronouns.md` |  |  |
-| [ ] | `plurality.md` |  |  |
-| [ ] | `speech-moves.md` |  |  |
+| [x] | `pronouns.md` | all | 2026-09-24 |
+| [x] | `plurality.md` | all | 2026-09-24 |
+| [x] | `speech-moves.md` | all | 2026-09-24 |
 
 ### Wave 2 — phrase structure
 
@@ -86,3 +86,10 @@ Audit in waves; each wave treats earlier waves as settled. Pages within a wave a
 - **`r` + vowel overlap is accepted.** Every vowel after number `r` has a meaning, so marker `re`, digit `re`, and letter name `ro` overlap. Number words stay unambiguous because the marker is always first.
 - **Word edges before vowel-initial words are not fixed.** Resyllabifying `…l al` across a word boundary is accepted.
 - **Hook compounds have no mid-word coda.** The cited `-l` / `-m` starts the hook's syllable (`a-wa-la-lul`).
+- **Sentences end in `.`, not `!`.** The act word carries command force; `!` has no grammatical meaning.
+- **Short resumes are preferred when unambiguous.** The build accepts a short resume when its antecedent is earlier in the same code span or fenced block.
+- **`/ɡ/` + -r on a noun means *of that kind*,** never possession.
+- **`/v/` + -r on a noun means *do the same action again, now involving that entity*.**
+- **-lx / -mx on a kind is an indefinite group** (a set in this situation), not anchor plus associates.
+- **Conventional-call interjections (`juruzen`) name the call with -n,** not a person.
+- **Ordinal commas are nested rank.** On `#`, each comma is a place within the previous place, innermost first like dates (`g#2,3` = seat 2 in row 3). An ordinal exponent is always generation, so a large ordinal is one all-digit group (`g#1005`).

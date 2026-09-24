@@ -39,6 +39,8 @@ An **interjection** is a short call that stands on its own, such as a reaction o
 
 A person’s name under `/j/` calls that person (`jululon`); an interjection gives the reaction itself as the call.
 
+Here **-n** names the conventional call *Surprise!*, not a person.
+
 ### Speech act: statement, question, command
 <a id="speech-act-beginner"></a>
 
@@ -172,7 +174,7 @@ A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/j/` w
 ### Emphatic prohibition
 <a id="emphatic-prohibition"></a>
 
-When a missed *don't* would be dangerous, say **`jul`** twice among the opening `/j/` words. The repeat makes the prohibition louder; it never cancels it. Repeat only the opening act word: a second `vul` at the end of the sentence is not emphasis.
+When a missed *don't* would be dangerous, say **`jul`** twice among the opening `/j/` words. The repeat makes the prohibition louder; it never cancels it. Repeat only the opening act word: a `jul` after the body starts a new turn instead of adding emphasis.
 
 > `jul jul vazanal.`
 >
@@ -199,13 +201,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` |
 | *Ululon* | `ululon` |
 | *Uhubun* | `uhubun` |
-| *ticket* | `ugedel` |
+| *trumpet* | `udubel` |
 | *sit* | `vajul` |
 | *stand* | `vadanal` |
 | *see* | `vejel` |
 | *tell* | `vezehel` |
 | *sneak* | `vazanal` |
-| *punch* | `vubunul` |
 
 #### English → Agalan
 
@@ -217,44 +218,44 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 j-soft-statement | z-Azawan | v-sit
 :::
 
-**2.** *Does Uhubun see a ticket, perhaps?*
+**2.** *Does Uhubun see a trumpet, perhaps?*
 
 ::: details Show answer
-`jom zuhubun dugedel vejel?`
+`jom zuhubun dudubel vejel?`
 
-j-soft-question | z-Uhubun | d-ticket | v-see ?
+j-soft-question | z-Uhubun | d-trumpet | v-see ?
 :::
 
 **3.** *Please stand.*
 
 ::: details Show answer
-`jem vadanal!`
+`jem vadanal.`
 
-j-request | v-stand !
+j-request | v-stand
 :::
 
 **4.** *Please don’t sneak.*
 
 ::: details Show answer
-`jum vazanal!`
+`jum vazanal.`
 
-j-soft-prohibition | v-sneak !
+j-soft-prohibition | v-sneak
 :::
 
-**5.** *For what it's worth, Ululon sees a ticket.*
+**5.** *For what it's worth, Ululon sees a trumpet.*
 
 ::: details Show answer
-`jam zululon dugedel vejel.`
+`jam zululon dudubel vejel.`
 
-j-soft-statement | z-Ululon | d-ticket | v-see
+j-soft-statement | z-Ululon | d-trumpet | v-see
 :::
 
 **6.** *Please tell Uhubun.*
 
 ::: details Show answer
-`jem buhubun vezehel!`
+`jem buhubun vezehel.`
 
-j-request | b-Uhubun | v-tell !
+j-request | b-Uhubun | v-tell
 :::
 
 #### Agalan → English
@@ -268,47 +269,47 @@ j-soft-statement | z-Azawan | v-sit
 *For what it's worth, Azawan sits.*
 :::
 
-**2.** `jom zuhubun dugedel vejel?`
+**2.** `jom zuhubun dudubel vejel?`
 
 ::: details Show answer
 
-j-soft-question | z-Uhubun | d-ticket | v-see ?
+j-soft-question | z-Uhubun | d-trumpet | v-see ?
 
-*Does Uhubun see a ticket, perhaps?*
+*Does Uhubun see a trumpet, perhaps?*
 :::
 
-**3.** `jem vadanal!`
+**3.** `jem vadanal.`
 
 ::: details Show answer
 
-j-request | v-stand !
+j-request | v-stand
 
 *Please stand.*
 :::
 
-**4.** `jum vazanal!`
+**4.** `jum vazanal.`
 
 ::: details Show answer
 
-j-soft-prohibition | v-sneak !
+j-soft-prohibition | v-sneak
 
 *Please don’t sneak.*
 :::
 
-**5.** `jam zululon dugedel vejel.`
+**5.** `jam zululon dudubel vejel.`
 
 ::: details Show answer
 
-j-soft-statement | z-Ululon | d-ticket | v-see
+j-soft-statement | z-Ululon | d-trumpet | v-see
 
-*For what it's worth, Ululon sees a ticket.*
+*For what it's worth, Ululon sees a trumpet.*
 :::
 
-**6.** `jem buhubun vezehel!`
+**6.** `jem buhubun vezehel.`
 
 ::: details Show answer
 
-j-request | b-Uhubun | v-tell !
+j-request | b-Uhubun | v-tell
 
 *Please tell Uhubun.*
 :::

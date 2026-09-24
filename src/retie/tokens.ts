@@ -218,6 +218,8 @@ function scanMarkdown(
 export type MarkdownCodeToken = {
   chunk: string;
   index: number;
+  /** Ordinal of the code span or fenced block holding this token. */
+  block: number;
 };
 
 /** Whitespace tokens inside inline backticks and fenced code (not prose, comments, or URLs). */
@@ -225,12 +227,14 @@ export function forEachMarkdownCodeToken(
   input: string,
   visit: (token: MarkdownCodeToken) => void,
 ): void {
+  let block = -1;
   transformMarkdown(
     input,
     0,
     (text, index) => {
+      block += 1;
       forEachPlainChunk(text, index, (chunk, chunkIndex) => {
-        visit({ chunk, index: chunkIndex });
+        visit({ chunk, index: chunkIndex, block });
         return chunk;
       });
       return text;

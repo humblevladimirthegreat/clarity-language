@@ -16,7 +16,7 @@ Without **-x**, the word picks **one** person or thing. With **-x** after the en
 >
 > "Azawan and associates walk."
 
-When the group itself has a name or title (*Azawan and associates*, *Team Alpha*), keep **-n** and add **-x**: **-nx**.
+A name already ends in **-n**, so a name plus associates is **-nx** (`zazawanx`). The same **-nx** also marks a group that has its own name or title (*Team Alpha*).
 
 To point back to that group (or to a prior person **and** their associates), add **-x** after resume **-r**:
 
@@ -26,7 +26,7 @@ To point back to that group (or to a prior person **and** their associates), add
 >
 > "They (that one and associates) sit."
 
-A first mention of a **kind as a group in this situation** uses **-lx** (concrete) or **-mx** (abstract). Bare **-l** / **-m** still introduce; **-lx** / **-mx** introduce a **group**.
+A first mention of a **kind as a group in this situation** uses **-lx** (concrete) or **-mx** (abstract). Bare **-l** / **-m** still introduce; **-lx** / **-mx** introduce an **indefinite group** (a set in this situation, not anchor plus associates).
 
 > `zagadalx vajul.`
 >
@@ -44,8 +44,8 @@ A first mention of a **kind as a group in this situation** uses **-lx** (concret
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| **-lx** | indefinite associative group, concrete | *some cats* (a set in this situation) |
-| **-mx** | indefinite associative group, abstract | same grouping on a **-m** root |
+| **-lx** | indefinite group (a set in this situation), concrete | *some cats* (a set in this situation) |
+| **-mx** | indefinite group (a set in this situation), abstract | same grouping on a **-m** root |
 | **-nx** | named / titled group | *Team Alpha*; *Azawan and associates* as a title |
 | **-rx** | resume prior referent and associates, or a prior group | *they* (that one and associates) |
 
@@ -104,7 +104,7 @@ The same roots take the role letter of the slot they fill. As a direct object th
 | **`ugobonx`** | speaker plus that person’s people (listener not assumed); `zugobonx` as subject, `dugobonx` as object | *I and my people* (not you) |
 | **`edonenx`** | all current addressees; `zedonenx` as subject, `dedonenx` as object | *you all* |
 | **`ahan`** | already the interlocutor set (no **-x**); `zahan` as subject, `dahan` as object | *we* (you and I) |
-| name / content **-r**…**-x** | that person plus associates | *X and associates* |
+| name **-nx** / resume **-rx** | that person plus associates | *X and associates* |
 
 **Compare with:** inclusive *we* uses **`aha`** (`zahan`), not **`ugobo…x`**.
 
@@ -285,7 +285,7 @@ j-question | z-Uhubun-x | v-scream
 ### Associate-set resolution
 <a id="associate-resolution"></a>
 
-English *Azawan and them* does not say who belongs. After an associative noun, membership is **open** unless you mark it. Write an explicit [join](joins.md) (or *except*) when the list matters; otherwise the listener uses the recently named cohort, then the scene’s institution (this meeting, this household). That lets you leave the set vague when it does not matter, and pin it when it does.
+English *Azawan and them* does not say who belongs. Agalan **-x** is the same: who counts is **open** unless you say. When the list matters, name the members with a [join](joins.md). When it does not, the listener guesses in this order: a group already named in the talk, then the obvious group in the scene (this meeting, this household).
 
 > `zazawanx vawalal.`
 >
@@ -293,7 +293,13 @@ English *Azawan and them* does not say who belongs. After an associative noun, m
 >
 > "Azawan and associates walk."
 
-If the wrong reading would matter, mark co-agency with **`aha`** or a join; mark “not you” with speaker or name **-x**, or a join that omits the listener (`ul dedonen` = associates minus the listener).
+If the wrong reading would matter, say so. Use **`aha`** or a join for *you and I*. For *not you*, use speaker **-x**, or subtract the listener with the *except* [hook](hooks.md) **`ul`**:
+
+> `zazawanx ul zedonen vawalal.`
+>
+> z-Azawan-x | except | z-listener | v-walk
+>
+> "Azawan and associates, not counting you, walk."
 
 | Priority | Use | English |
 |----------|-----|---------|
@@ -302,9 +308,7 @@ If the wrong reading would matter, mark co-agency with **`aha`** or a join; mark
 | Institutional frame | this meeting, this household | the scene’s default group |
 | Open | no further cue | the listener may or may not be in the set |
 
-<!-- this section is hard to read. Use simpler language and give clearer examples -->
-
-For the **address set**, take everyone in this turn’s vocative cluster, plus anyone still held as addressee by context.
+For the **address set** (`edonenx`), count everyone called in this turn’s vocatives, plus anyone still being addressed from before.
 
 ### Verbs (`/v/`) — collective
 <a id="verbs-v"></a>
@@ -322,14 +326,14 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 | subject set + singular `/v/` | how they act is left open | *they walk* (together, separately, or don’t care) |
 | subject set + `/v/`…**-x** | collective: one shared act | *they walk as one outing* |
 | named person + `/v/`…**-x** | joint doing; unnamed others share the act | *Azawan sings jointly* (not a solo) |
-| group-kind singular (*the team*) + `/v/`…**-x** | the group acts as one unit | *the team walks as one unit* |
+| group-kind singular (*the family*) + `/v/`…**-x** | the group acts as one unit | *the family walks as one unit* |
 
 | Agalan | English |
 |--------|---------|
 | `zazawanx vuzunul` | *Azawan and associates sing* (together or each, or don’t care) |
 | `zazawanx vuzunulx` | *they sing as one outing* |
 | `zazawan vuzunulx` | *Azawan sings jointly* (not a solo) |
-| `zahadal vawalalx` | *the team walks as one unit* |
+| `zavamul vawalalx` | *the family walks as one unit* |
 
 **-rx** on `/v/` resumes a prior **collective** verb (*still as one shared act*).
 
@@ -350,7 +354,7 @@ English *the boxes are heavy* can mean each box or the pile. Put **-x** on the *
 | Agalan | Use | English |
 |--------|-----|---------|
 | host set + singular `/ɡ/` | each member, or don’t care | *the boxes are heavy* |
-| host set + `/ɡ/`…**-x** | collective: the set as one pile | *heavy as a pile*; *vast as a team* |
+| host set + `/ɡ/`…**-x** | collective: the set as one pile | *heavy as a pile* |
 
 With a [phrase join](joins.md), SHARED singular scale under **`a`** is already **each member**; SHARED `/ɡ/`…**-x** is **collective**.
 
@@ -358,7 +362,7 @@ With a [phrase join](joins.md), SHARED singular scale under **`a`** is already *
 |--------|---------|
 | `zulebol zolozol zal garogom` | *the file-box and the toolbox are (each) heavy* |
 | `zulebol zolozol zal garogomx` | *the file-box and the toolbox are heavy together* (collective SHARED) |
-| `zahadal gumum` | *the team is vast* (group-level size) |
+| `zavamul gumum` | *the family is vast* (group-level size) |
 | `zulebolx garogom` | *the file-boxes are heavy* (members / plain) |
 | `zulebolx garogomx` | *the file-boxes are heavy collectively* |
 
@@ -395,14 +399,14 @@ Beginner already used **-x** on nouns and person-role specials. The rest of the 
 
 | Host | Use | English |
 |------|-----|---------|
-| nouns `/z/` `/d/` `/b/` | associative group | *Azawan and associates*; *some dogs* |
+| nouns `/z/` `/d/` `/b/` | associative group (name / resume); indefinite group (kind **-lx** / **-mx**) | *Azawan and associates*; *some dogs* |
 | vocatives `/j/` | group address | *hey, cats*; *Team Alpha* |
 | person-role specials | speaker’s people / address set | *I and my people*; *you all* |
 | `/v/`…**-x** | collective event | one shared act |
 | `/ɡ/`…**-x** | collective property | the set as one pile |
 | inner words of a non-opaque span | group reference inside the span | **-x** on those inner words |
 
-**Related form:** quantity `>1` is digitless **`g+`** (`zagadalx g+3` may use both).
+**Related form:** a count uses a [number](numbers.md) on `/ɡ/` (digitless **`g+`** = more than one; `g+3` = three). **-x** and a count can combine (`zagadalx g+3`).
 
 **For *every K*, use:** [universals](joins.md#universals-domains-generics) (`zual gagadal`; habitual **`hual`**).
 
@@ -420,7 +424,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` |
 | *Ululon* | `ululon` |
 | *Uhubun* | `uhubun` |
-| *expression* | `uzunul` |
+| *listener* | `edonen` |
 | *sheet-music* | `eduzul` |
 | *bell* | `obelel` |
 | *heavy* | `arogom` |
@@ -433,15 +437,15 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agalan
 
-**1.** *Hey, singers!*
+**1.** *Hey, you all!*
 
 ::: details Show answer
-`juzunulx.`
+`jedonenx.`
 
-j-sing-x
+j-listener-x
 :::
 
-**2.** *The sheet-musics are blue.* (members, or don’t care)
+**2.** *The sheets of music are blue.* (members, or don’t care)
 
 ::: details Show answer
 `zeduzulx gelulul.`
@@ -513,7 +517,8 @@ j-Uhubun-x
 ::: details Show answer
 
 z-sheet-music-x | g-heavy
-*The sheet-musics are heavy.* (members / plain)
+
+*The sheets of music are heavy.* (members / plain)
 :::
 
 **3.** `zuhubunx vuzunul.`
@@ -521,6 +526,7 @@ z-sheet-music-x | g-heavy
 ::: details Show answer
 
 z-Uhubun-x | v-sing
+
 *Uhubun and associates sing.* (together or each, or don’t care)
 :::
 

@@ -137,6 +137,20 @@ describe("lintAgalanMarkdown", () => {
       ["unknown-root:zububul", "parse:zolovexrabal"],
     );
   });
+
+  it("accepts a short resume only after its antecedent in the same block", () => {
+    const tables = tablesOf({ published: [
+        { clarity: "orugu", concrete: "pour" },
+        { clarity: "azawa", concrete: "grace" },
+        { clarity: "ululo", concrete: "wave" },
+      ], });
+    const text = "`zazawan vorugul. zululon vorur.` then `vorur`";
+    const issues = lintAgalanMarkdown(text, tables);
+    assert.deepEqual(
+      issues.map((i) => `${i.kind}:${i.token}`),
+      ["unknown-root:vorur"],
+    );
+  });
 });
 
 describe("forEachMarkdownCodeToken", () => {

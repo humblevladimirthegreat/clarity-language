@@ -54,11 +54,11 @@ When a proper name is available, prefer that name (and its **-r** resume), inclu
 
 Use **`ugobo`** (*speaker*) and **`edone`** (*listener*) when what matters is the conversation role, not a name.
 
-> `zugobon vuwurul dedonen.`
+> `zugobon dedonen vejel.`
 >
-> z-speaker | v-write | d-listener
+> z-speaker | d-listener | v-see
 >
-> "I write you."
+> "I see you."
 
 > `zugobon vawalal.`
 >
@@ -144,12 +144,12 @@ z-cook | v-pour . z-←cook | v-cook
 z-Ululon | v-cook . z-cookie | g-red . z-Azawan | v-←cook.full
 :::
 
-**4.** *I pour you.*
+**4.** *I see you.*
 
 ::: details Show answer
-`zugobon dedonen vorurul.`
+`zugobon dedonen vejel.`
 
-z-speaker | d-listener | v-pour
+z-speaker | d-listener | v-see
 :::
 
 **5.** *We (you and I) cook.*
@@ -294,18 +294,18 @@ English *going back to X* / *returning to that thread* names an earlier person o
 
 ### Cross-role recast
 
-Sometimes you still mean that person or thing, but you need a **different** slot: the doing, the kind, the manner. Change only the first letter; keep the resume stem and **-r**. English then uses a longer phrase (*do that with him*, *that one’s kind*) instead of *he* / *him*.
+Sometimes you still mean that person or thing, but you need a **different** slot: the doing, the kind, the manner. Change only the first letter; keep the resume stem and **-r**. English then uses a longer phrase (*do the same with him*, *of that kind*) instead of *he* / *him*.
 
 > `zazawan vajul. zululon vazar.`
 >
 > z-Azawan | v-sit . z-Ululon | v-←Azawan
 >
-> "Azawan sits. Ululon does that with him."
+> "Azawan sits. Ululon does the same with him."
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| noun antecedent, `/v/` … `-r` | recast as action | *do that (to/with it)* |
-| noun antecedent, `/ɡ/` … `-r` | recast as property | *that one’s* / *of that kind* |
+| noun antecedent, `/v/` … `-r` | the same action again, now involving that entity | *do the same to / with it* |
+| noun antecedent, `/ɡ/` … `-r` | recast as kind | *of that kind* (not possession) |
 | verb antecedent, noun … `-r` | recast as event | *that action / event* (the doing, not the doer; [role compounds](roles.md#role-compounds) name agent/place/patient/recipient) |
 | verb antecedent, `/h/` … `-r` | recast as manner | *by doing so* / *thereby* |
 | adjective antecedent, noun … `-r` | recast as entity | *the … one* / *that quality* |
@@ -341,7 +341,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *flower* | `ovowel` | | |
 | *tomato* | `odomal` | | |
 | *seedling* | `ezedel` | | |
-| *potted plant* | `obodel` | | |
 | *red* | `aredel` | | |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *like* | `hurorom` | `urorol` *mirror* | 🪞: the image is of the model |
@@ -357,17 +356,17 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Ululon pours. Azawan does so.*
 
 ::: details Show answer
-`zululon vorurul. zazawan vorurur.`
+`zululon vorurul. zazawan vorur.`
 
-z-Ululon | v-pour . z-Azawan | v-←pour.full
+z-Ululon | v-pour . z-Azawan | v-←pour
 :::
 
 **2.** *A flower is red. A tomato is such.*
 
 ::: details Show answer
-`zovowel garedel. zodomal gareder.`
+`zovowel garedel. zodomal garer.`
 
-z-flower | g-red . z-tomato | g-←red.full
+z-flower | g-red . z-tomato | g-←red
 :::
 
 **3.** *Ululon sees Azawan. Uhubun sees them.*
@@ -381,17 +380,17 @@ z-Ululon | d-Azawan | v-see . z-Uhubun | d-←Azawan | v-see
 **4.** *Azawan pours. Ululon harvests. Going back to Azawan, they see a seedling.*
 
 ::: details Show answer
-`zazawan vorurul. zululon vurugem. xazawar dezedel vejel.`
+`zazawan vorurul. zululon vurugem. xazar dezedel vejel.`
 
-z-Azawan | v-pour . z-Ululon | v-harvest . x-←Azawan.full | d-seedling | v-see
+z-Azawan | v-pour . z-Ululon | v-harvest . x-←Azawan | d-seedling | v-see
 :::
 
-**5.** *Ululon pours like a potted plant. Azawan harvests that way.*
+**5.** *Ululon pours like Azawan. Uhubun harvests that way.*
 
 ::: details Show answer
-`zululon hurorom bobodel vorurul. zazawan huroror vurugem.`
+`zululon hurorom bazawan vorurul. zuhubun huror vurugem.`
 
-z-Ululon | [h-like | b-potted-plant] | v-pour . z-Azawan | h-←like.full | v-harvest
+z-Ululon | [h-like | b-Azawan] | v-pour . z-Uhubun | h-←like | v-harvest
 :::
 
 **6.** *As for Uhubun, Ululon punches.*
@@ -420,20 +419,20 @@ z-Azawan-x | v-punch
 
 #### Agalan → English
 
-**1.** `zazawan vorurul. zululon vorurur.`
+**1.** `zazawan vorurul. zululon vorur.`
 
 ::: details Show answer
 
-z-Azawan | v-pour . z-Ululon | v-←pour.full
+z-Azawan | v-pour . z-Ululon | v-←pour
 
 *Azawan pours. Ululon does so.*
 :::
 
-**2.** `zodomal garedel. zovowel gareder.`
+**2.** `zodomal garedel. zovowel garer.`
 
 ::: details Show answer
 
-z-tomato | g-red . z-flower | g-←red.full
+z-tomato | g-red . z-flower | g-←red
 
 *A tomato is red. A flower is such.*
 :::
@@ -511,12 +510,56 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 | Agalan | Use | English |
 |--------|-----|---------|
 | `/z/` `/d/` `/b/` … `-r` | ordinary 3rd-person slot | *he / she / it / they*; *that (one)* (`/b/` still follows the host relation) |
-| `/v/` … `-r` | treat that entity as the action | *do that (to/with it)* / *X it* |
-| `/ɡ/` … `-r` | property tied to that entity | *that one’s* / *of that kind* |
+| `/v/` … `-r` | the same action again, now involving that entity | *do the same to / with it* |
+| `/ɡ/` … `-r` | of that entity’s kind (not possession) | *of that kind* |
 | `/w/` … `-r` | degree or frame on a property of that entity | *that* degree / frame |
 | `/h/` … `-r` | occasion framed by that entity | *then* / *that way* (framed by that entity) |
 | `/j/` vocative … `-r` | address that entity | vocative |
 | `/x/` … `-r` | discourse thread resume | *Going back to subject X* |
+
+Examples:
+
+> `zazawan vumudel. zululon dazar vejel.`
+>
+> z-Azawan | v-mute . z-Ululon | d-←Azawan | v-see
+>
+> "Azawan mutes. Ululon sees him."
+
+> `zazawan dudomul vumudel. zululon vudor.`
+>
+> z-Azawan | d-studio-mic | v-mute . z-Ululon | v-←studio-mic
+>
+> "Azawan mutes a studio mic. Ululon does the same to it."
+
+> `zaradul gelem. zudomul garar.`
+>
+> z-radio | g-big . z-studio-mic | g-←radio
+>
+> "A radio is big. A studio mic is of that kind."
+
+> `zaradul welem gelem. zudomul warar gelem.`
+>
+> z-radio | w-very | g-big . z-studio-mic | w-←radio | g-big
+>
+> "A radio is very big. A studio mic is that big too."
+
+> `zazawan varadum. zululon hazar vumudel.`
+>
+> z-Azawan | v-broadcast . z-Ululon | h-←Azawan | v-mute
+>
+> "Azawan broadcasts. Ululon mutes on that one's account."
+
+> `zazawan vumudel. jazar.`
+>
+> z-Azawan | v-mute . j-←Azawan
+>
+> "Azawan mutes. Hey, Azawan!"
+
+> `zazawan vumudel. zululon vubunul. xazar vazagal.`
+>
+> z-Azawan | v-mute . z-Ululon | v-punch . x-←Azawan | v-scream
+>
+> "Azawan mutes. Ululon punches. Going back to Azawan, he screams."
 
 #### Antecedent was a verb (`/v/`)
 
@@ -530,6 +573,50 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 | `/j/` … `-r` | vocative/interjection on that named act | *They did that?!* |
 | `/x/` … `-r` | discourse resume of the doing | *Going back to that (doing / event)* |
 
+Examples:
+
+> `zazawan vumudel. zumur gelem.`
+>
+> z-Azawan | v-mute . z-←mute | g-big
+>
+> "Azawan mutes. That muting is big."
+
+> `zazawan vumudel. zululon vumur.`
+>
+> z-Azawan | v-mute . z-Ululon | v-←mute
+>
+> "Azawan mutes. Ululon does so."
+
+> `zazawan dudomul vumudel. zaradul gumur.`
+>
+> z-Azawan | d-studio-mic | v-mute . z-radio | g-←mute
+>
+> "Azawan mutes a studio mic. A radio is such (muted too)."
+
+> `zazawan vumudel. zaradul wumur gelem.`
+>
+> z-Azawan | v-mute . z-radio | w-←mute | g-big
+>
+> "Azawan mutes. A radio is big as far as muting goes."
+
+> `zazawan varadum. zululon harar vumudel.`
+>
+> z-Azawan | v-broadcast . z-Ululon | h-←broadcast | v-mute
+>
+> "Azawan broadcasts. By doing so, Ululon mutes."
+
+> `zazawan vumudel. jumur.`
+>
+> z-Azawan | v-mute . j-←mute
+>
+> "Azawan mutes. He did that?!"
+
+> `zazawan vumudel. zululon vubunul. xumur zuhubun vazagal.`
+>
+> z-Azawan | v-mute . z-Ululon | v-punch . x-←mute | z-Uhubun | v-scream
+>
+> "Azawan mutes. Ululon punches. Going back to the muting, Uhubun screams."
+
 #### Antecedent was an adjective (`/ɡ/`)
 
 | Agalan | Use | English |
@@ -542,6 +629,50 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 | `/j/` … `-r` | named category as a call | *It was that?!* |
 | `/x/` … `-r` | discourse resume of the property | *Going back to that (property / category)* |
 
+Examples:
+
+> `zaradul garedel. zarer vazagal.`
+>
+> z-radio | g-red . z-←red | v-scream
+>
+> "A radio is red. The red one screams."
+
+> `zuhubun garedel. zazawan varer.`
+>
+> z-Uhubun | g-red . z-Azawan | v-←red
+>
+> "Uhubun is red. Azawan does that."
+
+> `zaradul garedel. zudomul garer.`
+>
+> z-radio | g-red . z-studio-mic | g-←red
+>
+> "A radio is red. A studio mic is such."
+
+> `zaradul welem garedel. zudomul warer gelem.`
+>
+> z-radio | w-very | g-red . z-studio-mic | w-←red | g-big
+>
+> "A radio is very red. A studio mic is big to that degree."
+
+> `zaradul garedel. zazawan harer varadum.`
+>
+> z-radio | g-red . z-Azawan | h-←red | v-broadcast
+>
+> "A radio is red. Azawan broadcasts that way."
+
+> `zaradul garedel. jarer.`
+>
+> z-radio | g-red . j-←red
+>
+> "A radio is red. It was that?!"
+
+> `zaradul garedel. zululon vubunul. xarer zazawan vazagal.`
+>
+> z-radio | g-red . z-Ululon | v-punch . x-←red | z-Azawan | v-scream
+>
+> "A radio is red. Ululon punches. Going back to the redness, Azawan screams."
+
 #### Antecedent was an adjective extra (`/w/`)
 
 | Agalan | Use | English |
@@ -552,6 +683,44 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 | `/v/` `/h/` … `-r` | act or clause framed by that degree/criterion | framed doing / occasion |
 | `/j/` … `-r` | vocative on that frame | *In that manner?!* |
 | `/x/` … `-r` | discourse resume of the scale | *Going back to that (scale / criterion)* |
+
+Examples:
+
+> `zaradul welem garedel. zululon deler vejel.`
+>
+> z-radio | [w-very | g-red] . z-Ululon | d-←very | v-see
+>
+> "A radio is very red. Ululon sees that degree."
+
+> `zaradul welem garedel. zudomul geler.`
+>
+> z-radio | w-very | g-red . z-studio-mic | g-←very
+>
+> "A radio is very red. A studio mic is that (very red) too."
+
+> `zaradul welem garedel. zudomul weler gelem.`
+>
+> z-radio | w-very | g-red . z-studio-mic | w-←very | g-big
+>
+> "A radio is very red. A studio mic is very big too."
+
+> `zaradul welem garedel. zazawan heler varadum.`
+>
+> z-radio | w-very | g-red . z-Azawan | h-←very | v-broadcast
+>
+> "A radio is very red. Azawan broadcasts to that degree."
+
+> `zaradul welem garedel. jeler.`
+>
+> z-radio | w-very | g-red . j-←very
+>
+> "A radio is very red. In that manner?!"
+
+> `zaradul welem garedel. zululon vubunul. xeler zazawan vazagal.`
+>
+> z-radio | w-very | g-red . z-Ululon | v-punch . x-←very | z-Azawan | v-scream
+>
+> "A radio is very red. Ululon punches. Going back to that degree, Azawan screams."
 
 #### Antecedent was an adverb (`/h/`)
 
@@ -565,6 +734,50 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 | `/j/` … `-r` | vocative on that occasion | *On that occasion?!* |
 | `/x/` … `-r` | discourse resume of the framing | *Going back to that (occasion / framing)* |
 
+Examples:
+
+> `zululon hurorom bazawan vumudel. zuhubun duror vejel.`
+>
+> z-Ululon | [h-like | b-Azawan] | v-mute . z-Uhubun | d-←like | v-see
+>
+> "Ululon mutes like Azawan. Uhubun sees that manner."
+
+> `zululon hurorom bazawan vumudel. zuhubun vuror.`
+>
+> z-Ululon | [h-like | b-Azawan] | v-mute . z-Uhubun | v-←like
+>
+> "Ululon mutes like Azawan. Uhubun does it that way."
+
+> `zululon hurorom bazawan vumudel. zudomul guror.`
+>
+> z-Ululon | [h-like | b-Azawan] | v-mute . z-studio-mic | g-←like
+>
+> "Ululon mutes like Azawan. A studio mic is that way."
+
+> `zululon hurorom bazawan vumudel. zaradul wuror gelem.`
+>
+> z-Ululon | [h-like | b-Azawan] | v-mute . z-radio | w-←like | g-big
+>
+> "Ululon mutes like Azawan. A radio is big in that way."
+
+> `zululon hurorom bazawan vumudel. zuhubun huror varadum.`
+>
+> z-Ululon | [h-like | b-Azawan] | v-mute . z-Uhubun | h-←like | v-broadcast
+>
+> "Ululon mutes like Azawan. Uhubun broadcasts that way."
+
+> `zululon hurorom bazawan vumudel. juror.`
+>
+> z-Ululon | [h-like | b-Azawan] | v-mute . j-←like
+>
+> "Ululon mutes like Azawan. Like that?!"
+
+> `zululon hurorom bazawan vumudel. zazawan vubunul. xuror zuhubun vazagal.`
+>
+> z-Ululon | [h-like | b-Azawan] | v-mute . z-Azawan | v-punch . x-←like | z-Uhubun | v-scream
+>
+> "Ululon mutes like Azawan. Azawan punches. Going back to that manner, Uhubun screams."
+
 #### Antecedent was `/j/` or `/x/`
 
 | Agalan | Use | English |
@@ -572,6 +785,26 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 | same class (`/j/` or `/x/`) … `-r` | repeat that vocative, interjection, or linker | same call or glue again |
 | `/x/` … `-r` from a content antecedent | discourse thread resume | *Going back to subject X* |
 | noun / verb / adjective / adverb … `-r` | recast the named formula or discourse label | ordinary referent (common for `-n` titles) |
+
+Examples:
+
+> `jazawan. jazar.`
+>
+> j-Azawan . j-←Azawan
+>
+> "Azawan! Azawan!"
+
+> `zazawan vumudel. zululon vubunul. xazar vazagal.`
+>
+> z-Azawan | v-mute . z-Ululon | v-punch . x-←Azawan | v-scream
+>
+> "Azawan mutes. Ululon punches. Going back to Azawan, he screams."
+
+> `jululon. zulur vazagal.`
+>
+> j-Ululon . z-←Ululon | v-scream
+>
+> "Ululon! He screams."
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
@@ -598,7 +831,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 #### English → Agalan
 
-**1.** *Azawan mutes. Ululon does that with them.*
+**1.** *Azawan mutes. Ululon does the same with them.*
 
 ::: details Show answer
 `zazawan vumudel. zululon vazar.`
@@ -609,9 +842,9 @@ z-Azawan | v-mute . z-Ululon | v-←Azawan
 **2.** *Ululon broadcasts. That action is big.*
 
 ::: details Show answer
-`zululon varadum. zaradur gelem.`
+`zululon varadum. zarar gelem.`
 
-z-Ululon | v-broadcast . z-←broadcast.full | g-big
+z-Ululon | v-broadcast . z-←broadcast | g-big
 :::
 
 **3.** *Azawan broadcasts. By doing so, Ululon mutes.*
@@ -625,28 +858,28 @@ z-Azawan | v-broadcast . z-Ululon | h-←broadcast | v-mute
 **4.** *A radio is red. The red one screams.*
 
 ::: details Show answer
-`zaradul garedel. zareder vazagal.`
+`zaradul garedel. zarer vazagal.`
 
-z-radio | g-red . z-←red.full | v-scream
+z-radio | g-red . z-←red | v-scream
 :::
 
 **5.** *Ululon punches. That action is big.*
 
 ::: details Show answer
-`zululon vubunul. zubunur gelem.`
+`zululon vubunul. zubur gelem.`
 
-z-Ululon | v-punch . z-←punch.full | g-big
+z-Ululon | v-punch . z-←punch | g-big
 :::
 
 #### Agalan → English
 
-**1.** `zazawan varadum. gazar gelem.`
+**1.** `zaradul gelem. zudomul garar.`
 
 ::: details Show answer
 
-z-Azawan | v-broadcast . g-←Azawan | g-big
+z-radio | g-big . z-studio-mic | g-←radio
 
-*Azawan broadcasts. That one's kind is big.*
+*A radio is big. A studio mic is of that kind.*
 :::
 
 **2.** `zululon vubunul. zazawan hubur vumudel.`
@@ -658,13 +891,13 @@ z-Ululon | v-punch . z-Azawan | h-←punch | v-mute
 *Ululon punches. By doing so, Azawan mutes.*
 :::
 
-**3.** `zudomul vumudel. zazawan vodor.`
+**3.** `zazawan dudomul vumudel. zululon vudor.`
 
 ::: details Show answer
 
-z-studio-mic | v-mute . z-Azawan | v-←tongue
+z-Azawan | d-studio-mic | v-mute . z-Ululon | v-←studio-mic
 
-*A studio mic mutes. Azawan does that with it.*
+*Azawan mutes a studio mic. Ululon does the same to it.*
 :::
 
 **4.** `zaradul gelem. zeler vazagal.`
@@ -676,11 +909,11 @@ z-radio | g-big . z-←big | v-scream
 *A radio is big. The big one screams.*
 :::
 
-**5.** `zuhubun garedel. zazawan vareder.`
+**5.** `zuhubun garedel. zazawan varer.`
 
 ::: details Show answer
 
-z-Uhubun | g-red . z-Azawan | v-←red.full
+z-Uhubun | g-red . z-Azawan | v-←red
 
 *Uhubun is red. Azawan does that.*
 :::
