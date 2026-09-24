@@ -185,7 +185,7 @@ When a missed *don't* would be dangerous, say **`jul`** twice among the opening 
 ### Tone marks
 <a id="tone-marks"></a>
 
-A **tone mark** shows how you feel while you say something. It changes your voice only. It never changes the speech act (that is the act word's job), and a sentence still ends in a period.
+A **tone mark** shows how you feel, or what you stress, while you say something. It changes your voice only. It never changes the speech act (that is the act word's job), and a sentence still ends in a period.
 
 | Mark | Feeling | Voice | Cue |
 |------|---------|-------|-----|
@@ -193,6 +193,9 @@ A **tone mark** shows how you feel while you say something. It changes your voic
 | `!!` | Stronger still | Louder again | Doubled = more |
 | `?` | Unsure about it | Rising, tentative | English *(?)* after a doubtful word |
 | `?!` | Surprised and doubtful | Rising and loud | *Wait, what?!* |
+| `%` | Joking, teasing (not meant literally) | Light, smiling | A wink |
+| `&` | Contrast: this one, not another | Stressed and slowed | *and* not the other |
+| `;` | Warm, affectionate | Soft, gentle | A soft pause |
 
 Write the mark **before** what it colors, so you see the tone before you say the words:
 
@@ -215,10 +218,17 @@ Write the mark **before** what it colors, so you see the tone before you say the
 >
 > "Azawan walks!"
 
+> `zazawan vejel &dodogol.`
+>
+> z-Azawan | v-see | &d-dog
+>
+> "Azawan saw a *dog*." (a dog, not something else).
+
 **Compare with:** **`jol`** asks a question; `?` only sounds unsure. A tone mark shows the feeling; [emotion compose](values.md#emotion-compose) states it as a claim, and the two can share a sentence.
 
 - A mark may go on any word, including act words and linkers (`!xezazal`, *therefore!*).
-- Only `!`, `!!`, `?`, and `?!` are marks. Other stacks (`!?`, `??`) are not.
+- Only `!`, `!!`, `?`, `?!`, `%`, `&`, and `;` are marks. Other stacks (`!?`, `??`, `%!`) are not.
+- `&` stresses by voice alone. To highlight with grammar, move the word to the front ([word order](clause.md)).
 - A mark on a word inside a colored island or sentence overrides it for that word.
 - Before a span fence, the mark is **your** tone about the quote. Inside the fence, it is part of what is quoted (the original speaker's tone).
 - Speech adds no syllables: you voice the mark over its words.

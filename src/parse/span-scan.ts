@@ -44,10 +44,10 @@ export function scanPairedEnd(text: string, openAt: number): number | undefined 
   return undefined;
 }
 
-/** Length of a leading tone mark (`!!` / `?!` / `!` / `?`) at `i`, or 0. */
+/** Length of a leading tone mark (`!!` / `?!` / `!` / `?` / `%` / `&` / `;`) at `i`, or 0. */
 export function toneMarkLength(text: string, i: number): number {
   if (text.startsWith("!!", i) || text.startsWith("?!", i)) return 2;
-  return text[i] === "!" || text[i] === "?" ? 1 : 0;
+  return "!?%&;".includes(text[i] ?? "\0") ? 1 : 0;
 }
 
 function skipMarks(text: string, i: number): number {

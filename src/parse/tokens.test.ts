@@ -90,4 +90,13 @@ describe("tone marks", () => {
       { kind: "punct", punct: "period" },
     ]);
   });
+
+  it("peels joking, focus, and warm marks", () => {
+    assert.deepEqual(segmentUtterance("% zazawan &vejel ;dodogol."), [
+      { kind: "word", text: "zazawan" },
+      { kind: "word", text: "vejel" },
+      { kind: "word", text: "dodogol" },
+      { kind: "punct", punct: "period" },
+    ]);
+  });
 });

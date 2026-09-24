@@ -144,7 +144,7 @@ Later splits of `mood` (token class, gloss tag) can follow this column without n
 
 ### Stage 3 — Chevrotain (typed tokens → sentence AST)
 
-Adapter: [`src/parse/tokens.ts`](../../src/parse/tokens.ts) / [`src/parse/tokenize.ts`](../../src/parse/tokenize.ts) maps `LexWord[]` plus peeled `.`, leading tone marks (`!` / `?` / `!!` / `?!`), and `^` → Chevrotain `IToken[]` (no second character lexer). Grammar: [`src/parse/sentence-parser.ts`](../../src/parse/sentence-parser.ts).
+Adapter: [`src/parse/tokens.ts`](../../src/parse/tokens.ts) / [`src/parse/tokenize.ts`](../../src/parse/tokenize.ts) maps `LexWord[]` plus peeled `.`, leading tone marks (`!` / `?` / `!!` / `?!` / `%` / `&` / `;`), and `^` → Chevrotain `IToken[]` (no second character lexer). Grammar: [`src/parse/sentence-parser.ts`](../../src/parse/sentence-parser.ts).
 
 Owns:
 

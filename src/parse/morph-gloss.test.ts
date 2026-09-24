@@ -384,5 +384,8 @@ describe("morphGlossLine — tone marks", () => {
   it("copies attached and free-standing marks", () => {
     expectLine("zazawan vejel ?dodogol.", "z-Azawan | v-see | ?d-dog");
     expectLine("! zazawan vawalal.", "! | z-Azawan | v-walk");
+    expectLine("zazawan vejel &dodogol.", "z-Azawan | v-see | &d-dog");
+    expectLine("zazawan ; vawalal.", "z-Azawan | ; | v-walk");
+    expectLine("%zazawan vawalal.", "%z-Azawan | v-walk");
   });
 });

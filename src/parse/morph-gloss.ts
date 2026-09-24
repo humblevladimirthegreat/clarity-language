@@ -577,8 +577,12 @@ export function looksLikeMorphLine(line: string): boolean {
     .replace(PACKAGE_OPEN_RE, "")
     .replace(/\[/g, "")
     .replace(/\][#|]?/g, "");
-  const parts = flat.replace(/\s+[?!]$/, "").split(/\s+\|\s+|\s+·\s+|\s+;\s+|\s+[.?!]\s+/);
-  return parts.length > 0 && parts.every((part) => MORPH_TOKEN_RE.test(part.replace(/^(?:!!|\?!|[!?])\s*/, "")));
+  const parts = flat
+    .replace(/\s+[?!]$/, "")
+    // Free-standing tone mark slot (`; | `), not a ` ; ` separator.
+    .replace(/(^|\s)(?:!!|\?!|[!?%&;])\s+\|\s+/g, "$1")
+    .split(/\s+\|\s+|\s+·\s+|\s+;\s+|\s+[.?!]\s+/);
+  return parts.length > 0 && parts.every((part) => MORPH_TOKEN_RE.test(part.replace(/^(?:!!|\?!|[!?%&;])\s*/, "")));
 }
 
 /** Quoted pass-through payload in a morph line (`"…"`, `""` escape). */
