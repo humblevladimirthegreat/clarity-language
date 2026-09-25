@@ -10,6 +10,8 @@ The lint checked one word at a time, and the morph-gloss check dropped any examp
 
 Reported by review agents and **not yet verified**. The parser accepts these forms, but no page defines them. Either the parser is too loose, or a doc reading is missing. The docs lint can't catch these, because it only checks what the docs contain.
 
+Checked against the parser and written up with a doc basis for each form in the proposal `parser-strictness.md`.
+
 **Forms the parser accepts that no page defines:**
 
 - `zual gagadalx`

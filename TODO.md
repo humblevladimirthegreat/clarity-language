@@ -18,6 +18,7 @@ consider removing some emotion words from lexicon
 do parser consistency pass. Does the parser completely and accurately encode all the meaning of the grammar?
 do a learning order consistency check for grammar-docs. Does any grammar doc learning band refer to concepts not yet taught?
 do a style pass in grammar-docs. Check for adherence to doc-style and otherwise ensure natural sounding explanations.
+parser is too loose (some forms are permitted that docs don't define)
 
 final exam
 

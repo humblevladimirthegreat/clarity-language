@@ -456,7 +456,7 @@ Before shipping **Intermediate** or **Advanced**, check [later-stage shape](#lat
 ## Markdown hygiene
 <a id="markdown-hygiene"></a>
 
-After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run build`**. It checks emphasis balance, slash-joined emphasis, Vue-illegal `<tag>` on grammar pages (write loan fences as `<code>d&lt;kimchi&gt;</code>` — inline backticks and `<code v-pre>` with a real `<` still fail Vue’s HTML parse), that Agalan words in `docs/grammar/` parse and use lexicon roots, that every example sentence and phrase parses as a whole ([marking Agalan](#marking-agalan)), Vue a11y on site components, and published VitePress URLs. Prefer spaces in slash-joined emphasis (`*a* / *b*`) over `*a*/*b*`. In bold headings or bullets, put forms in backticks only (`**Ranked (`e` / `ae`)**`), not nested bold inside bold.
+After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run build`**. Skip it when the only changed files are under `docs/meta/` or `docs/proposals/`. It checks emphasis balance, slash-joined emphasis, Vue-illegal `<tag>` on grammar pages (write loan fences as `<code>d&lt;kimchi&gt;</code>` — inline backticks and `<code v-pre>` with a real `<` still fail Vue’s HTML parse), that Agalan words in `docs/grammar/` parse and use lexicon roots, that every example sentence and phrase parses as a whole ([marking Agalan](#marking-agalan)), Vue a11y on site components, and published VitePress URLs. Prefer spaces in slash-joined emphasis (`*a* / *b*`) over `*a*/*b*`. In bold headings or bullets, put forms in backticks only (`**Ranked (`e` / `ae`)**`), not nested bold inside bold.
 
 ### Marking Agalan
 <a id="marking-agalan"></a>

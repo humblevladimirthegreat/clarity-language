@@ -71,7 +71,7 @@ Agalan text
 ParseResult  (utterances + resolve)
 ```
 
-Public entry: `parse(text)` in [`src/parse/index.ts`](../../src/parse/index.ts). CLI: `npm run parse -- 'zazawan vawalal.'`
+Public entry: `parse(text)` in [`src/parse/index.ts`](../../src/parse/index.ts). CLI: `node scripts/parse.mjs 'zazawan vawalal.'` (several quoted inputs, or `-` for one per line on stdin)
 
 ### Stage 1 — Peggy (characters → `MorphWord`)
 
