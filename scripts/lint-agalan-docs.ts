@@ -187,13 +187,24 @@ function reportLearningOrder(order: LearningOrder, allUses: readonly Constructio
   const unresolved = [...homes].filter(([, h]) => !h).map(([id]) => `  ${id}  →  ${CONSTRUCTIONS.get(id)!.anchor}`);
   const unbandedHomes = [...homes].filter(([, h]) => h && h.position === undefined).map(([id, h]) => `  ${id}  →  ${formatSection(h!)}`);
 
-  // Taught at home: some span in the home heading's subtree traces the construction.
-  const notAtHome: string[] = [];
+  // Taught at home, per family: a family is the constructions that share a home
+  // section and a first ID segment (`overlay`, `value`, `span`, …), usually the
+  // rows of one table. A representative example covers the family, so it passes
+  // when some span in the home heading's subtree traces any member.
+  const families = new Map<string, { home: Section; ids: string[] }>();
   for (const [id, home] of homes) {
-    if (!home || uses.some((u) => u.id === id && withinSection(home, u.section))) continue;
-    const elsewhere = [...new Set(uses.filter((u) => u.id === id).map((u) => formatSection(u.section)))];
+    if (!home) continue;
+    const key = `${formatSection(home)} ${id.split(".", 1)[0]}`;
+    let family = families.get(key);
+    if (!family) families.set(key, (family = { home, ids: [] }));
+    family.ids.push(id);
+  }
+  const notAtHome: string[] = [];
+  for (const { home, ids } of families.values()) {
+    if (uses.some((u) => ids.includes(u.id) && withinSection(home, u.section))) continue;
+    const elsewhere = [...new Set(uses.filter((u) => ids.includes(u.id)).map((u) => formatSection(u.section)))];
     const where = elsewhere.length > 0 ? `used in ${elsewhere.slice(0, 3).join(", ")}${elsewhere.length > 3 ? ", …" : ""}` : "used nowhere";
-    notAtHome.push(`  ${id}  →  ${formatSection(home)}  (${where})`);
+    notAtHome.push(`  ${ids.join(", ")}  →  ${formatSection(home)}  (${where})`);
   }
 
   const forward = new Map<string, { home: Section; sections: Set<string> }>();
@@ -229,7 +240,7 @@ function reportLearningOrder(order: LearningOrder, allUses: readonly Constructio
   console.log(
     `\nLearning order (report only): ${forward.size} construction(s) used before their home section ` +
       `(${forwardUses} section use(s)); ${links.length} forward link(s); ` +
-      `${notAtHome.length} construction(s) not taught in their home section; ` +
+      `${notAtHome.length} construction families not taught in their home section; ` +
       `${unresolved.length + unbandedHomes.length} home anchor(s) unresolved or outside every band; ` +
       `${unbandedCount} use(s) outside every band.` +
       (full ? "" : " Run with --order-report for details."),
@@ -244,7 +255,7 @@ function reportLearningOrder(order: LearningOrder, allUses: readonly Constructio
     for (const line of unbandedHomes) console.log(line);
   }
   if (notAtHome.length > 0) {
-    console.log("\nConstructions not taught in their home section:");
+    console.log("\nConstruction families not taught in their home section (no member traced there):");
     for (const line of notAtHome) console.log(line);
   }
   if (unbandedUses.size > 0) {
@@ -344,6 +355,7 @@ function main(): void {
   if (paths.length === 0) {
     const order = learningOrder(readingOrder.map((item) => sidebarPage(item.link)), pages);
     coverageCount = checkConstructionCoverage(uses);
+    if (process.env.DUMP_USES) require("node:fs").writeFileSync(process.env.DUMP_USES, JSON.stringify(uses.map((u) => [u.id, u.section.page, u.section.slug, u.section.position ?? null])));
     reportLearningOrder(order, uses, orderReport);
   }
 
