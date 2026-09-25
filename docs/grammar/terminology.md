@@ -67,7 +67,7 @@ English names for set / rank join vowels ([joins](joins.md)):
 | counterchoice | **uo** | *anything but* |
 | rank | **e** | earlier outranks later |
 | corank | **ae** | equal rank / tie |
-| choicerank | **oe** | exclusive ranked menu |
+| sequence | **oe** | ordered path: first item is the start, not the top |
 | counterrank | **ue** | rank reversal |
 
 ### Span TYPE / EDGE letters

@@ -26,7 +26,7 @@ import type {
 
 const VOWELS = new Set(["a", "e", "o", "u"]);
 
-const CONTINUUM_SERIES = new Set(["a", "e", "ue"]);
+const CONTINUUM_SERIES = new Set(["a", "oe"]);
 const SCALE_SERIES = new Set(["e", "oe", "ue"]);
 const KIND_SERIES = new Set(["ua", "uo"]);
 const ROLE_FRAME_POS = new Set(["z", "d", "b", "v", "g", "h", "th"]);

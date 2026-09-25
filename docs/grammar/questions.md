@@ -666,8 +666,8 @@ Under question, the rest of the single-item and standalone join map is confirm /
 |--------|---------|
 | **…em** | *Is X the top priority?* / *Prefer X?* (offer) |
 | **…el** | *Is X the only priority?* |
-| **…oem** | *Try X first?* (offer) |
-| **…oel** | *Only try X?* |
+| **…oem** | *Maybe start with X?* (offer) |
+| **…oel** | *Start with X?* |
 | **…uem** | *X last?* (offer) |
 | **…uel** | *X last only?* |
 | **…en** | *X first, as usual?* |
@@ -683,7 +683,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 | **…aem** | *Probably a tie?* |
 | **…aen** | *Draw?* (stock) |
 | **…oem** | *Not sure where to start?* |
-| **…oel** | *Do nothing?* / *Skip it?* |
+| **…oel** | *Any order?* |
 | **…uem** | *Don't mind?* / *No objection?* |
 | **…uel** | *No least-favorite?* / *No one last?* |
 | **…en** | *No favorite?* (stock) |
@@ -822,9 +822,9 @@ j-question | [z-bell | z-everything-but]
 
 ::: details Show answer
 
-j-question | z-ranked-or
+j-question | z-in-order
 
-*Do nothing?* / *Skip it?*
+*Any order?* / *In no particular order?*
 :::
 
 **5.** `jol zululon zuhubun zel.`

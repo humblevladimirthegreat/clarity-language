@@ -233,29 +233,40 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 ### Full comparative arity
 <a id="comparative-arity"></a>
 
-Beginner already used two names plus **`zel`** (*more … than*) and one name (*the …-est*). The same shared-scale pattern also uses exclusive rank **`oe`**, reverse rank **`ue`** (*less … than* / *the least*), and **zero** names.
+Beginner already used two names plus **`zel`** (*more … than*) and one name (*the …-est*). The same shared-scale pattern also uses reverse rank **`ue`** (*less … than* / *the least*) and **zero** names.
 
 | Agalan | Use | English | Cue |
 |---------|-----|---------|-----|
-| **Multi (2+)** + shared scale under **`e` / `oe` / `ue`** | comparative ladder | earlier above later (`e` / `oe`); later above earlier under **`ue`** | **`e`** ≈ order; **`oe`** exclusive order; **`u`** ≈ undo |
+| **Multi (2+)** + shared scale under **`e` / `ue`** | comparative ladder | earlier above later (`e`); later above earlier under **`ue`** | **`e`** ≈ order; **`u`** ≈ undo |
 | **Single-item (1)** + shared scale under **`e` / `ue`** | superlative | *the …-est* / *the least …* under **`ue`** | one name is the extreme |
-| **Standalone (0)** + shared scale under **`e`** | unspecified ranking | *unspecified who’s biggest*; open **-m** = soft / speaker-side | empty list, still ordered |
-| **Standalone (0)** + shared scale under **`oe`** | empty superlative | *there is no biggest*; open **-m** = no biggest comes to mind | exclusive + empty = none wins |
+| **Standalone (0)** + shared scale under **`e` / `ue`** | empty superlative | *there is no biggest* / *there is no smallest* under **`ue`**; open **-m** = none comes to mind | empty list: nobody is on top |
+
+A standalone ladder says only that nothing is on top. It does not say why (a tie, no end to the scale, or items that do not compare). To assert a tie, use [equative](#equatives) **`zael`**. To say someone is on top without naming them, use **`zer`**.
 
 | Example | Reading |
 |---------|---------|
 | `zazawan zululon zuhubun zem gomonam` | *Azawan ≻ Ululon ≻ Uhubun on challenge* (open) |
-| `zazawan zululon zoel gomonam` | *Azawan is more challenging than Ululon* (exclusive ranked ladder) |
 | `zazawan zululon zuel gomonam` | *Azawan is less challenging than Ululon* |
-| `zel gomonam` | *unspecified who’s most challenging* / *no favorite on challenge* |
-| `zuel gomonam` | *unspecified who’s least challenging* / *no least-favorite on challenge* |
-| `zoel gomonam` | *there is no most challenging* |
-| `zoem gomonam` | *no most challenging comes to mind* |
+| `zel gomonam` | *there is no most challenging* |
+| `zem gomonam` | *no most challenging comes to mind* |
+| `zuel gomonam` | *there is no least challenging* |
 | `zazawan zuel gomonam` | *Azawan is the least challenging (of all)* |
-| `zer gomonam` | *whatever ranks highest on challenging* (resume of the top rank) |
+| `zer gomonam` | *whatever ranks highest on challenging* (someone is on top; not saying who) |
 | `zazawan zululon zer gomonam` | *whichever of Azawan or Ululon ranks higher on challenging* |
 
 **Compare with:** ranking names with no shared adjective is ordinary preference (who comes first as an alternative). Add the shared `/ɡ/` when you mean *more ADJ than*.
+
+### Sorted lists (`oe`) {#sequence-scale}
+
+When English would say *from least to most ADJ* (*easiest to hardest*, a syllabus order), you are not naming a winner. You are listing items along the scale from its low end. Use [sequence](joins.md#sequence-oe) **`oe`** before the shared adjective: the first name is the **start** of the scale, the last is the far end.
+
+> `zazawan zululon zuhubun zoel gomonam.`
+>
+> [z-Azawan | z-Ululon | z-Uhubun | z-in-order | g-challenge]
+>
+> "Azawan, Ululon, Uhubun, from least to most challenging."
+
+**Compare with:** `zazawan zululon zuhubun zel gomonam` puts Azawan at the **top** (*most* challenging first). Rank **`e`** lists best-first; sequence **`oe`** lists start-first.
 
 ### Manner scale (`/h/`) {#manner-scale}
 
@@ -319,7 +330,7 @@ English *two meters taller* still ranks two people on one quality, and it also n
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. Full arity (**`oe`** / **`ue`** / standalone / **`zer`**), distributive **`zal`**, a counted measure gap vs vague **`wogegal`**, and manner **`/h/`** right after the join.
+Short drills for Intermediate. Try each item before opening **Show answer**. Full arity (**`ue`** / standalone / **`zer`**), sorted **`oe`**, distributive **`zal`**, a counted measure gap vs vague **`wogegal`**, and manner **`/h/`** right after the join.
 
 **Setting:** a weighing room
 
@@ -359,9 +370,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 **3.** *There is no heaviest.*
 
 ::: details Show answer
-`zoel garogom.`
+`zel garogom.`
 
-[z-ranked-or | g-heavy]
+[z-rank/more | g-heavy]
 :::
 
 **4.** *Azawan and Uhubun are heavy.*
@@ -380,20 +391,20 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 [z-Ululon | z-Azawan | z-rank/more | [g-heavy | b-gram]] | g-two
 :::
 
-**6.** *Azawan is heavier than Ululon* (exclusive ladder).
+**6.** *Azawan, Ululon, and Uhubun, from lightest to heaviest.*
 
 ::: details Show answer
-`zazawan zululon zoel garogom.`
+`zazawan zululon zuhubun zoel garogom.`
 
-[z-Azawan | z-Ululon | z-ranked-or | g-heavy]
+[z-Azawan | z-Ululon | z-Uhubun | z-in-order | g-heavy]
 :::
 
-**7.** *Unspecified who is biggest.*
+**7.** *There is no smallest.*
 
 ::: details Show answer
-`zel gelem.`
+`zuel gelem.`
 
-[z-rank/more | g-big]
+[z-rank/less | g-big]
 :::
 
 **8.** *Whichever of Azawan or Ululon ranks heavier.*
@@ -423,11 +434,11 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 *Azawan is heavier than Ululon, who is heavier than Uhubun.*
 :::
 
-**2.** `zoem gelem.`
+**2.** `zem gelem.`
 
 ::: details Show answer
 
-[z-ranked-or.open | g-big]
+[z-rank/more.open | g-big]
 
 *No biggest comes to mind.*
 :::
@@ -520,7 +531,7 @@ English *worse than Average* (or *Typical*, *Professional*, *my bar*) ranks some
 >
 > "Azawan is worse at singing than Professional."
 
-Closed **-l** stands behind the ranking. Open **-m** (`zuem`) is soft *somewhat worse than…*. Exclusive **`oe`** is pick-one triage on the ladder. Prefer **`ue`** plus a positive scale for English-style *worse than*; forward **`e`** fits when the scale is already cost- or harm-oriented. The same fence works under `/d/` or `/b/` when the ranked group fills that slot.
+Closed **-l** stands behind the ranking. Open **-m** (`zuem`) is soft *somewhat worse than…*. Prefer **`ue`** plus a positive scale for English-style *worse than*; forward **`e`** fits when the scale is already cost- or harm-oriented. The same fence works under `/d/` or `/b/` when the ranked group fills that slot.
 
 Each bar is a hosted overlay: published root plus **-n** under `/z/` `/d/` `/b/`. Soft *somewhat worse than…* stays on the rank join (**`zuem`**), not on a second ending of the bar.
 

@@ -116,7 +116,7 @@ const JOIN_JOB: Record<string, string> = {
   uo: "anything-but",
   e: "rank/more",
   ae: "equal-rank",
-  oe: "ranked-or",
+  oe: "in-order",
   ue: "rank/less",
 };
 
