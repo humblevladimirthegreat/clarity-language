@@ -8,7 +8,7 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agalan 
 |--------------|------------|-------|
 | who does the action (*seen by Azawan*) | subject `/z/` (you may front the object) | [Who acts](clause.md#beginner), [word order](clause.md#word-order-emphasis) |
 | tool (*writes by / with a hammer*) | hook **`ael`** (*using*) + `/b/` | [Hooks](hooks.md#extra-noun) |
-| place (*by the station*) | locative **`hubuhum`** (*at*) + `/b/` (or *inside* / *on*) | [Locative relations](relations.md#locative-relations) |
+| place (*by the station*) | hook **`om`** (*near*) + `/b/` (or **`ol`** *at*) | [Hooks](hooks.md#extra-noun) |
 | deadline (*by 15:30*) | clock `/h/`, or *until* **`hudumem barl`** | [Time](numbers-applied.md#time), [dependent clauses](dependents.md#dependent-clauses) |
 | manner (*by walking hastily*) | ordinary adverb `/h/`, no `/b/` | [Adverbs](clause.md#adverbs-h) |
 | origin (*Ululon from the city*) | **`hugunom` / `gugunom`** + `/b/` | [Of relations](relations.md#of-relations) |
@@ -19,7 +19,8 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agalan 
 |--------------|------------|-------|
 | recipient / addressee (*tells Ululon*) | unhosted `/b/` | [Extra nouns](clause.md#extra-nouns) |
 | swap (*a book for a hammer*) | **`huhanem`** + `/b/` | [Exchange](relations.md#exchange) |
-| intended outcome (*writes for a money-bag*) | **`holalam`** + `/b/` | [So that](dependents.md#so-that) |
+| intended get (*works for a money-bag*) | hook **`el`** + `/b/` | [Hooks](hooks.md#extra-noun) |
+| intended outcome (*practices for a race*) | **`holalam`** + `/b/` | [So that](dependents.md#so-that) |
 | need as reason (*walks for relatedness*) | values **`tho`** on `/th/` | [Motive](values.md#value-preference) |
 | noun’s purpose (*my gift for relatedness*) | values **`tho`** on `/ɡ/` | [Motive](values.md#value-preference) |
 | *my* belonging + need (*my tent serves survival*) | values **`tha` / `thu`** on `/ɡ/` | [Values](values.md#personal-possession) |
@@ -35,7 +36,7 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agalan 
 | approximate amount (*about three*) | number **-m** (`~`) | [Number endings](numbers.md#number-endings) |
 | approximate clock (*around 15:30*) | clock **-m** | [Time](numbers-applied.md#time) |
 | gist of wording (*something like “…”*) | span paraphrase **`~`** | [Exact, paraphrase, proper](spans.md#when-required) |
-| place (*walks about the house*) | locative (*inside* / *through*), not topic | [Locative relations](relations.md#locative-relations) |
+| place (*walks about the house*) | hook **`am`** (*amid*) or **`uol`** (*through*), not topic | [Hooks](hooks.md#extra-noun) |
 
 ## *as*
 

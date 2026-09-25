@@ -11,7 +11,6 @@ Status: `[x]` done · `[~]` partial · `[ ]` not started.
 
 ## Ground rules
 
-- **Current grammar is the baseline.** Treat [consistency-audit decisions](consistency-audit.md#decisions-do-not-re-raise) as settled; do not re-raise them as gaps.
 - **Intentionally discouraged ≠ gap.** Before logging a gap, check [why-agelan](../grammar/why-agelan.md) (limits, feature criteria) and the owning page for a deliberate omission (e.g. no general *to-be* `/v/`, no cause-arrow word, no metric prefixes, generics via joins not **-x**). If the omission is deliberate, log it once as **by design** with the citing section, and move on.
 - **"Easily" means for the learner.** A gap exists when the only route is long, unnatural, ambiguous, or taught far later than English speakers need it. Dev effort (cross-reference churn, parser work) is not a cost — see `AGENTS.md`.
 - **Extensions must be intuitive.** A proposed reading should be guessable from the existing form's meaning (same vowel series, same role-letter semantics, same ending semantics). Reject extensions that merely fill a slot.
@@ -60,13 +59,25 @@ Walk a standard English reference-grammar inventory and find the Agalan route fo
 
 ## Phase 2 — Real-text sampling (gaps, bottom-up)
 
-Checklists miss things that only surface in real use. Translate short, varied English texts into Agalan and log every point where the translator had to stop, paraphrase heavily, or guess.
+Checklists miss things that only surface in real use. Translate English sentences and texts into Agalan and log every point where the translator had to stop, paraphrase heavily, or guess.
+
+### 2a — Standard syntax test corpus
+
+Use the [Conlang Syntax Test Cases](https://cofl.github.io/conlang/resources/mirror/conlang-syntax-test-cases.html) (218 sentences, graded from *The sun shines.* to multi-clause reported speech; curated from ~1200 sentences to remove syntactic duplicates) as a fixed, external sentence set. Sentences we did not write avoid picking examples Agalan already handles well, and a shared corpus makes results comparable with other conlangs.
+
+- [ ] Copy the list into `docs/meta/syntax-test-corpus.md` (numbered, source credited) as the working sheet; add an Agalan translation + parser check per sentence. Keep the original numbering so rows can cite `STC-nn`.
+- [ ] Split into batches of ~30 (one agent per batch, in list order, since difficulty rises); each stopping point becomes a ledger row citing `STC-nn` (dedupe against Phase 1 IDs).
+- [ ] Keep the **by design** rule: a sentence whose English form is deliberately not mirrored (e.g. *is* copula, tense) is **covered** if the meaning has a natural route.
+
+The corpus covers core syntax only — its register is dated narrative, with few questions, almost no discourse markers, hedges, or speech acts, and nothing on the psychological themes. Phase 2b fills those.
+
+### 2b — Register samples
 
 - [ ] Pick ~8 short samples (≈150 words each) across registers: casual chat, text message thread, how-to instructions, news paragraph, story narration, argument / opinion, a support conversation (compassion theme), a decision memo (empowerment / rationality theme).
 - [ ] One agent per sample translates with the published lexicon and parser; each stopping point becomes a ledger row (dedupe against Phase 1 IDs).
 - [ ] Also log **lexicon-only** gaps separately (missing roots, not grammar) and hand them to the TODO lexicon items rather than this ledger.
 
-**Exit:** samples translated; new rows added; each row's verdict set.
+**Exit:** corpus and samples translated; new rows added; each row's verdict set.
 
 ## Phase 3 — Extension sweep (existing grammar, new readings)
 

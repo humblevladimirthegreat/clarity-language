@@ -10,7 +10,7 @@ SMALLCAPS tags and series names as the lessons print them.
 
 ### Mood tags
 
-Closed psychological [stance](#stance) `/th/` (and `/ɡ/` on causal poles; not ordinary [adverb](#adverb) `/h/`).
+Closed labels for psychological moods, poles, and emotion-compose pieces. Mood words are [stance](#stance) `/th/`, not ordinary [adverb](#adverb) `/h/`. Poles also take `/ɡ/` on a noun host; **SAME** is `/ɡ/`, and the *as-of* pair is `/h/`.
 
 | Label | Gloss | Teach |
 |-------|-------|--------|
@@ -136,7 +136,7 @@ How many items sit before a join: **list** (2+), **single-item** (1), **standalo
 
 ### As-for
 
-Complex `/h/` + `/b/` (**`ahaza`**) *as for X*.
+Complex `/h/` + `/b/` (**`hozam`**) *as for X*.
 
 [Clause](clause.md#as-for)
 
@@ -176,7 +176,7 @@ Inside a scope island: scope-taking `/h/` or `/th/` and/or a join.
 
 Clause content after the left-edge `/j/` cluster.
 
-[Clause](clause.md#left-edge-order-and-sentence-boundaries)
+[Speech moves](speech-moves.md#turn-j)
 
 ### Invited / offered / protective
 <a id="asked-typical-history"></a>
@@ -189,7 +189,7 @@ Prescription endings on value **`the`**: why a move is welcome. **-l** invited, 
 
 ### Changeability
 
-Endings on unmet **`xu`**, **DECISION**, and ability *can’t*.
+Endings on unmet **`thu`**, **DECISION**, and ability *can’t*.
 
 [Values](values.md#value-changeability), [Intention](intention.md#decision)
 
@@ -251,7 +251,7 @@ Polar patterns that confirm a denied body.
 
 ### Contact / contact channel
 
-Met-value **`xa`** endings (physical / mental / spiritual).
+Met-value **`tha`** endings (physical / mental / spiritual).
 
 [Values](values.md#value-contact)
 
@@ -365,23 +365,23 @@ Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; frame **-m**
 
 Extra-noun [hook](hooks.md#extra-noun) **`ael`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*, not role **`exROOT`** (that names the **place** of an event).
 
-[Relations](relations.md#means)
+[Hooks](hooks.md#extra-noun-intermediate)
 
 ### Simile (*like*)
 
-Hosted `/h/` or `/ɡ/` **`urorom`** plus model `/b/` (*like* a duck / *like* Azawan’s). Not **`SAME`**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
+Hosted **`hurorom`** / **`gurorom`** plus model `/b/` (*like* a duck / *like* Azawan’s). Not **`SAME`**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
 
 [Relations](relations.md#similative)
 
 ### Exchange (*for*)
 
-Hosted `/h/` or `/ɡ/` **`uhanem`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not values motive **`tho`**, not intended-outcome **`olala`**.
+Hosted **`huhanem`** / **`guhanem`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not values motive **`tho`**, not intended-outcome **`olala`**.
 
 [Relations](relations.md#exchange)
 
 ### Proxy (*on behalf of*)
 
-Hosted `/h/` or `/ɡ/` **`udagam`** plus principal `/b/` (*on behalf of* Ululon). Not hook *instead*, not recipient `/b/`.
+Hosted **`hudagam`** / **`gudagam`** plus principal `/b/` (*on behalf of* Ululon). Not hook *instead*, not recipient `/b/`.
 
 [Relations](relations.md#proxy)
 
@@ -423,7 +423,7 @@ Whole root + **-r** vs prefix through the second vowel.
 
 ### Greeting / conversation length
 
-A named citation is a hello (`azawan.`). Add mid-word **`x`** plus **`a`** / **`o`** / **`e`** / **`u`** to say how long the conversation is expected to last: open-ended, a few minutes, one ask, or passing. At departure, **`xen`** means leaving soon, **`xon`** about to leave, and **`xun`** leaving now. When people set different lengths at arrival, the lesser bid holds.
+A named citation is a hello (`azawan.`). Add mid-word **`x`** plus **`a`** / **`e`** / **`o`** / **`u`** to say how long the conversation is expected to last: open-ended, a few minutes, one slot, or passing. At departure, **`xen`** means leaving soon, **`xon`** about to leave, and **`xun`** leaving now. When people set different lengths at arrival, the lesser bid holds.
 
 [Word endings](word-endings.md#greeting) · [X-compounds](x-compounds.md#conversation-length)
 
@@ -435,7 +435,7 @@ A named citation is a hello (`azawan.`). Add mid-word **`x`** plus **`a`** / **`
 
 ### Host
 
-Content root a values/ability `x`-stance or a numeric-derivation join attaches to.
+Content root a values `th`-stance, an ability `x`-stance, or a numeric-derivation join attaches to.
 
 [Ability](intention.md#ability), [values](values.md), [numeric derivation](numeric-derivation.md)
 
@@ -481,7 +481,7 @@ Advanced *worse than…* bars.
 
 Vocative → polar stance → act word, then body.
 
-[Clause](clause.md#left-edge-order-and-sentence-boundaries)
+[Speech moves](speech-moves.md#turn-j)
 
 ### Concrete / abstract / named / resume
 
@@ -491,7 +491,7 @@ Content endings **-l / -m / -n / -r**.
 
 ### Loan / opaque span
 
-`PoS` + **`~`** / **`@`** / **`=`** on `<…>` (no letter after `>`).
+`PoS` + optional **`~`** / **`@`** on `<…>` (exact omits the mark; no letter after `>`; resume `d<=>`).
 
 [Spans](spans.md#loans)
 
@@ -513,7 +513,7 @@ Value stances **`tha` / `thu`** (Beginner); **`the`** / **`tho`** (Intermediate 
 
 [Values](values.md)
 
-**Compare with:** [as-for](#as-for) is **`ahaza`**, not a value stance.
+**Compare with:** [as-for](#as-for) is **`hozam`**, not a value stance.
 
 ### Named handle
 
@@ -591,7 +591,7 @@ Closed `/j/` particles **`jael` / `juel` / …**.
 
 ### Preference standing
 
-Motive **`xo`** endings.
+Motive **`tho`** endings.
 
 [Values](values.md#value-preference)
 
@@ -684,7 +684,7 @@ Clause-pole **`olala`**: intended outcome of the host (*so that Ululon sits*; NP
 
 Clause join **-n** (`xan` *and then*).
 
-[Joins](join-across-roles.md#sequence)
+[Join across roles](join-across-roles.md#sequence)
 
 ### SHARED scale / SHARED continuum
 
@@ -698,7 +698,7 @@ Typed cite / aside / mention / opaque fences; spoken opening word.
 
 [Spans](spans.md)
 
-**Compare with:** numeric from–to is a [range](#range-clockdate-range), not a span.
+**Compare with:** numeric from–to is a [range](#range-clock-date-range), not a span.
 
 ### Stance
 
@@ -714,7 +714,7 @@ Short word in a role slot (`darl` / `barl` / `dorl` / `derl` / `durl`, open **`-
 
 [Dependents](dependents.md#stand-in)
 
-**Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause poles](#clause-pole--np-pole) (`thurugum`, `thadorom`) name the relation; the stand-in fills `/b/`.
+**Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause poles](#clause-pole-np-pole) (`thurugum`, `thadorom`) name the relation; the stand-in fills `/b/`.
 
 ### Special pronoun
 
@@ -788,7 +788,7 @@ DIR × ANCHOR; the anchor sets the facing frame (person or oriented object); the
 
 Left-edge `/j/` addressing.
 
-[Speech moves](speech-moves.md#turn-j)
+[Speech moves](speech-moves.md#vocative)
 
 ### Vowel series
 

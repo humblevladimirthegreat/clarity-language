@@ -17,7 +17,7 @@ After you have already named a person or thing, the next sentence can point back
 >
 > z-Azawan | v-walk . z-←Azawan | v-sit
 >
-> "Azawan walks. He sits." (resume from the name’s root prefix)
+> "Azawan walks. Azawan sits." (resume from the name’s root prefix)
 
 **Compare with:** English often uses *the* for a kind already in the talk (*A dog walks. **The** dog sits.*). Agalan uses **-r** for that job, not a separate article.
 
@@ -288,7 +288,7 @@ English *going back to X* / *returning to that thread* names an earlier person o
 >
 > z-Azawan | v-walk . z-Ululon | v-run . x-←Azawan | v-sleep
 >
-> "Azawan walks. Ululon runs. Going back to Azawan, he sleeps."
+> "Azawan walks. Ululon runs. Going back to Azawan, Azawan sleeps."
 
 **Not the same job as:** *regarding X* / *as for X* uses `/h/` + `/b/` X ([adverbs](clause.md#adverbs-h)).
 
@@ -300,7 +300,7 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 >
 > z-Azawan | v-sit . z-Ululon | v-←Azawan
 >
-> "Azawan sits. Ululon does the same with him."
+> "Azawan sits. Ululon does the same with Azawan."
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -523,7 +523,7 @@ Examples:
 >
 > z-Azawan | v-mute . z-Ululon | d-←Azawan | v-see
 >
-> "Azawan mutes. Ululon sees him."
+> "Azawan mutes. Ululon sees Azawan."
 
 > `zazawan dudomul vumudel. zululon vudor.`
 >
@@ -559,7 +559,7 @@ Examples:
 >
 > z-Azawan | v-mute . z-Ululon | v-punch . x-←Azawan | v-scream
 >
-> "Azawan mutes. Ululon punches. Going back to Azawan, he screams."
+> "Azawan mutes. Ululon punches. Going back to Azawan, Azawan screams."
 
 #### Antecedent was a verb (`/v/`)
 
@@ -609,7 +609,7 @@ Examples:
 >
 > z-Azawan | v-mute . j-←mute
 >
-> "Azawan mutes. He did that?!"
+> "Azawan mutes. Azawan did that?!"
 
 > `zazawan vumudel. zululon vubunul. xumur zuhubun vazagal.`
 >
@@ -798,13 +798,13 @@ Examples:
 >
 > z-Azawan | v-mute . z-Ululon | v-punch . x-←Azawan | v-scream
 >
-> "Azawan mutes. Ululon punches. Going back to Azawan, he screams."
+> "Azawan mutes. Ululon punches. Going back to Azawan, Azawan screams."
 
 > `jululon. zulur vazagal.`
 >
 > j-Ululon . z-←Ululon | v-scream
 >
-> "Ululon! He screams."
+> "Ululon! Ululon screams."
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>

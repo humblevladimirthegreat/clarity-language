@@ -154,7 +154,7 @@ Saying whether a list is open or closed helps you notice false dichotomies, and 
 
 Everyday English *because* / *leads to* / *have to* blur sufficient vs necessary, world-reason vs speaker-grounds, and wish vs natural law.
 
-[Causation](causation.md) keeps those forks on two-place poles: *if* / *only if* / *because* / *iff*, on `/th/` for an event and `/ɡ/` for a noun. Intended *so that* is a separate pole (**`holalam`**, [so that](dependents.md#so-that)): the host is aimed at that outcome, which is not asserted like *because*, and is not a [need-motive](values.md#value-preference) (`tho`). When the “rule” is really an ought (*hard work should earn promotion*), use [values](values.md) [prescription](values.md#value-force) (**`xe`**) on the act — not a causation pole.
+[Causation](causation.md) keeps those forks on two-place poles: *if* / *only if* / *because* / *iff*, on `/th/` for an event and `/ɡ/` for a noun. Intended *so that* is a separate pole (**`holalam`**, [so that](dependents.md#so-that)): the host is aimed at that outcome, which is not asserted like *because*, and is not a [need-motive](values.md#value-preference) (`tho`). When the “rule” is really an ought (*hard work should earn promotion*), use [values](values.md) [prescription](values.md#value-force) (**`the`**) on the act — not a causation pole.
 
 Keeping those forks apart helps you stop treating wishes and habits as if the world must obey them.
 
@@ -229,4 +229,4 @@ Even if the language does lose its potency over a century, having a positive imp
 ## Next
 <a id="next"></a>
 
-Continue with [introduction.md](introduction.md) for the name, grammar design, and how to learn these docs, then [phonology.md](phonology.md#beginner) for letters, [word-endings.md](word-endings.md#beginner) for citation endings, [clause.md](clause.md#beginner) for clause shape, then [dependents.md](dependents.md#beginner) and [relations.md](relations.md#beginner). Community updates: [Agalan on Reddit](https://www.reddit.com/r/ClarityLanguage).
+Continue with [introduction.md](introduction.md) for the name, grammar design, and how to learn these docs, then [phonology.md](phonology.md#beginner) for letters, [word-endings.md](word-endings.md#beginner) for citation endings, [clause.md](clause.md#beginner) for clause shape, [speech-moves.md](speech-moves.md#beginner) for turns, then [dependents.md](dependents.md#beginner). Community updates: [Agalan on Reddit](https://www.reddit.com/r/ClarityLanguage).

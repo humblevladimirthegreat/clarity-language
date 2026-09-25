@@ -31,7 +31,7 @@
  * Default: docs/, AGENTS.md, TODO.md, README.md (if present)
  */
 import { readdir, readFile, access, stat } from "node:fs/promises";
-import { dirname, join, relative, resolve } from "node:path";
+import { dirname, join, relative, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { Window } from "happy-dom";
 import { Editor } from "@tiptap/core";
@@ -161,9 +161,13 @@ async function exists(path) {
   }
 }
 
+const PROPOSALS_DIR = resolve(ROOT, "docs/proposals");
+
 async function collectMdFiles(entry, out = []) {
   const path = resolve(ROOT, entry);
   if (!(await exists(path))) return out;
+  // Proposal drafts are editor scratch space: not linted.
+  if (path === PROPOSALS_DIR || path.startsWith(PROPOSALS_DIR + sep)) return out;
   const st = await stat(path);
   if (st.isFile()) {
     if (path.endsWith(".md")) out.push(path);
