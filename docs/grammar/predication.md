@@ -44,6 +44,39 @@ This use is **classification**. Same `/ɡ/` place as a quality; the kind word is
 
 **Compare with:** *A dog walks* uses a noun plus a verb (`zodogol vawalal`). When the subject **is** that kind, keep the kind on `/ɡ/`.
 
+### Existence (a lone noun)
+<a id="existence"></a>
+
+A noun with no verb and no `/ɡ/` word after it says that the thing **exists** or is here (*there is …*).
+
+> `zodogol.`
+>
+> z-dog
+>
+> "There is a dog."
+
+The same holds with a `/ɡ/` word after the noun, when the noun is a new common noun (not a name on **-n**, not a resume on **-r**). The pair introduces the thing: *there is a G Z*.
+
+> `zodogol gelem.`
+>
+> z-dog | g-big
+>
+> "There is a big dog."
+
+With a name or a resumed noun, the listener already knows the thing, so the `/ɡ/` word is a [property](#classification-property): `zazawan gomonam.` is *Azawan is challenging*, and `zodogor gelem.` is *The dog is big*.
+
+An extra-noun [hook](hooks.md#extra-noun) after the noun says **where** the thing is.
+
+> `zodogol om banabal.`
+>
+> z-dog | [near | b-bank]
+>
+> "There is a dog near a bank."
+
+An object (`/d/`) needs a verb, so a noun plus a `/d/` word with no verb is not a sentence.
+
+**Compare with:** `zodogol vawalal.` says what the dog does. `zazawan godogol.` puts Azawan in a kind.
+
 ### Identity (**SAME**)
 <a id="identity"></a>
 <a id="same"></a>

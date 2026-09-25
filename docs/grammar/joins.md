@@ -541,6 +541,8 @@ When English would say *every cat* rather than *everything but the cat*, write *
 >
 > "every cat."
 
+The kind word after **`ua`** / **`uo`** takes no **-x**: *every cat* already covers every member.
+
 Strict / definitional generics use closed `zual` plus kind (and [FORMAL](knowing.md#universality) when needed). Soft / epistemic generics use open `zuam` plus kind. Free-choice *any cat will do* uses `zor`.
 
 **For *always*, use:** bare habitual **`hual`** — [restrictors](restrictors.md).

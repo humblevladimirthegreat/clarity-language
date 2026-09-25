@@ -37,6 +37,16 @@ When that short stem would match the **wrong** recent word, use a **full-root re
 >
 > "Ululon sleeps. A book is big. Azawan does so."
 
+A **short** resume always needs an earlier word to match. A **full-root** resume can open the talk: with no earlier match, it means the one you both already know (*the dog*, the household's dog).
+
+> `zodogor vawalal.`
+>
+> z-←dog.full | v-walk
+>
+> "The dog walks." (the dog you both know)
+
+**Compare with:** short `zodor` with nothing before it points at nothing, so it is not a sentence.
+
 ### Special pronouns
 <a id="special-pronouns"></a>
 

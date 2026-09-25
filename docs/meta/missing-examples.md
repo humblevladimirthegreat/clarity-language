@@ -21,30 +21,28 @@ Snapshot: 2026-09-25. The report gives 176 constructions; 148 are exercised by t
 | `token.greeting` / `word.reading.greeting`                       | [word-endings](../grammar/word-endings.md#greeting)                  | greeting citation as an utterance (`azawan.`)                  | x-compounds                                                                |
 | `word.plural.b`                                                  | [plurality](../grammar/plurality.md#associative)                     | associative **-x** on `/b/`                                    | numbers-applied                                                            |
 | `resolve.span.bound`                                             | [spans](../grammar/spans.md#endings)                                 | span resume (**-r**) binding an earlier span                   | none                                                                       |
+| `sentence.vJoinClose.sharedAfterJoin` (`/h/`)                   | [join-across-roles](../grammar/join-across-roles.md#vp-clause-forms) | shared `/h/` after a `/v/` join (covers every verb)             | none                                                                       |
+| `/w/` before an `/h/` / `/th/` join                              | [join-across-roles](../grammar/join-across-roles.md#stance-joins)    | `/w/` grading the whole joined list                            | none                                                                       |
 | `resolve.number.bound`                                           | [numbers](../grammar/numbers.md#digitless)                           | number **-r** binding an earlier number                        | relations                                                                  |
 
 
 
 
-## Doubtful: decide before adding an example
+## Decided: rejected in parser strictness phase 2
 
-The parser accepts these, but no page clearly licenses them. Parser strictness phase 2 either rejects each one or adds an example once a page defines it.
+Each row is settled and enforced (2026-09-25): a grammar removal or an `enforce.ts` rule, with an `invalid-forms` test; no teach example.
 
-
-| Construction                                           | Question                                                                                                |
-| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
-| `sentence.utterance.QMark` / `sentence.utterance.Bang` | Sentences always end in `.`, and `?` / `!` are tone-mark prefixes. Reject `?` / `!` as sentence ends?   |
-| `word.plural.w` / `.h` / `.th` / `.x`                  | [plurality](../grammar/plurality.md) says **-x** is unused on these. Reject?                            |
-| `resolve.content.unbound`                              | **-r** with no earlier match. Used on numbers-applied and plurality: check those examples, then reject? |
-| `sentence.vJoinClose.sharedAfterJoin`                  | Shared word after a `/v/` join: does any page define its reading?                                       |
-| `sentence.hJoinClose.sharedAfterJoin`                  | Shared word after an `/h/` join: define or reject?                                                      |
-| `sentence.xJoinClose.sharedAfterJoin`                  | Shared word after a clause join: define or reject?                                                      |
-| `sentence.asOfWPair.Odo`                               | As-of pair whose bound is a stand-in: define or reject?                                                 |
-
-
-
+| Construction | Decision | Doc basis |
+| --- | --- | --- |
+| `sentence.utterance.QMark` / `sentence.utterance.Bang` | Reject: sentences end in `.`; `?` / `!` are tone-mark prefixes | [speech-moves](../grammar/speech-moves.md#tone-marks) |
+| `word.plural.w` / `.h` / `.th` / `.x` | Reject: **-x** is unused on these | [plurality](../grammar/plurality.md) |
+| `resolve.content.unbound` (short resume only) | Reject a short **-r** with no earlier match. A full-root **-r** with no match stays valid (*the one you both know*); the plurality `zazawarx` examples are full-root, so they stay | [pronouns](../grammar/pronouns.md#resume-r) |
+| `sentence.vJoinClose.sharedAfterJoin` (`/ɡ/` only) | Reject a shared `/ɡ/` after a `/v/` join. A shared `/h/` after a `/v/` join covers every item (join-across-roles already says so) and moves to the table above as a needed example | [join-across-roles](../grammar/join-across-roles.md#vp-clause-forms) |
+| `sentence.hJoinClose.sharedAfterJoin` | Reject. To grade the whole list, put `/w/` immediately before the join word | [join-across-roles](../grammar/join-across-roles.md#stance-joins) |
+| `sentence.xJoinClose.sharedAfterJoin` | Reject | [join-across-roles](../grammar/join-across-roles.md#clause-sequence) |
+| `sentence.asOfWPair.Odo` | Reject: the as-of bound is never a stand-in | [relations](../grammar/relations.md) |
 
 ## Not an example gap
 
-- `word.reading.means`: no overlay row has kind `means`, so the parser can never produce this reading. Delete the branch in `classify.ts`, or add the overlay.
+- `word.reading.means`: deleted in phase 2 (no overlay row had kind `means`).
 

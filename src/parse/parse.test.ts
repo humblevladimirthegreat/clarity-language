@@ -96,10 +96,10 @@ describe("parse — clause.md beginner", () => {
     assert.equal(result.utterances[0]!.left.force?.raw, "jam");
   });
 
-  it("parses jel command with bang", () => {
-    const result = parseText("jel vuzunel!");
+  it("parses jel command with a period", () => {
+    const result = parseText("jel vuzunel.");
     assert.equal(result.utterances[0]!.left.force?.raw, "jel");
-    assert.equal(result.utterances[0]!.bodies[0]!.punct, "bang");
+    assert.equal(result.utterances[0]!.bodies[0]!.punct, "period");
   });
 
   it("parses polar plus body", () => {

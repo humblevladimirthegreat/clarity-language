@@ -978,15 +978,15 @@ x-2nd | z-Ululon | v-run
 *The second big seat.*
 :::
 
-**7.** `zazawan d=+ vejel.`
+**7.** `zululon d+ vejel. zazawan d=+ vejel.`
 
 ::: details Show answer
 
-🔊 *zazawan drar vejel.*
+🔊 *zululon dral vejel. zazawan drar vejel.*
 
-z-Azawan | d-more-than-one.again | v-see
+z-Ululon | d-more-than-one | v-see . z-Azawan | d-←more-than-one | v-see
 
-*Azawan sees that amount again.*
+*Ululon sees more than one. Azawan sees that amount again.*
 :::
 
 **8.** `zuhubun vajul h#3.`

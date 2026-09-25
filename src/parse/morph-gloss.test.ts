@@ -89,7 +89,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zazawan welem hurorom budugul vawalal.", "z-Azawan | [[w-very | h-like] | b-duck] | v-walk");
     expectLine("hal", "h-never");
     expectLine("har", "h-sometimes");
-    expectLine("jol zuhubun vawalal har?", "j-question | z-Uhubun | v-walk | h-when ?");
+    expectLine("jol zuhubun vawalal har.", "j-question | z-Uhubun | v-walk | h-when");
     expectLine("zazawan vawalal hanunul hal", "z-Azawan | v-walk | h-rain | h-only-when");
     expectLine("hual", "h-always");
     expectLine("von", "v-choose");
@@ -207,7 +207,7 @@ describe("morphGlossLine — restrictor -r vs -l", () => {
     expectLine("zululon vawalal hal.", "z-Ululon | v-walk | h-never");
     expectLine("har", "h-sometimes");
     expectLine("zululon vurunul har.", "z-Ululon | v-run | h-sometimes");
-    expectLine("jol zuhubun vawalal har?", "j-question | z-Uhubun | v-walk | h-when ?");
+    expectLine("jol zuhubun vawalal har.", "j-question | z-Uhubun | v-walk | h-when");
   });
 });
 
@@ -380,7 +380,7 @@ describe("morphGlossLine — th stance letter", () => {
   it("glosses stance moods, /w/ on th, and th poles with stand-ins", () => {
     expectLine("thodohom zazawan vajul.", "th-MAY | z-Azawan | v-sit");
     expectLine("zazawan wuzumum thadezem vejel ejelul.", "z-Azawan | [w-happy | th-LIVE] | v-see | eye-leave");
-    expectLine("thurugum darl zazawan vajul.", "[th-because | d-that-clause] | z-Azawan | v-sit");
+    expectLine("thurugum barl zazawan vajul.", "[th-because | b-that-clause] | z-Azawan | v-sit");
     expectLine("thexal zazawan vajul xuxul.", "th-ASIDE.multi[z-Azawan | v-sit]");
   });
 

@@ -50,7 +50,7 @@ describe("glossToAgalan", () => {
       "zazawan vujudul daxal zazawan vawalal xuxul.",
       "zazawan vujudul d@[uzugon ululon].",
       "zadedal zogovel zol ^ hurorom bazawan ^ vawalal.",
-      "zazawan vawalal. zazawar vujudul?",
+      "zazawan vawalal. zazawar vujudul.",
       "zazawan vawalal. zazar vujudul.",
       "zazawan d[abugum#|] vezehel.",
       "zazawan daxur vezehel.",

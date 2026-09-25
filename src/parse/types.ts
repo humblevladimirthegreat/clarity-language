@@ -121,7 +121,6 @@ export type LexReading =
   | "restrictor"
   | "mood"
   | "locative"
-  | "means"
   | "similative"
   | "ofRelation"
   | "exchange"

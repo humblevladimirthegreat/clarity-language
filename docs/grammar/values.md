@@ -12,7 +12,7 @@ Write the need under `/ɡ/` when you talk about a **noun you keep** (how you fee
 ### Need inventory
 <a id="need-inventory"></a>
 
-Six published roots are the needs you can name. Pick one row. With mid-word **`th`** and a stance vowel, that root means the need in the English column — not the everyday object in **Same root as**.
+Six published roots are the needs you can name, and no other root takes the need form. Pick one row. With mid-word **`th`** and a stance vowel, that root means the need in the English column — not the everyday object in **Same root as**.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|

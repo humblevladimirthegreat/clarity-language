@@ -6,7 +6,7 @@ import { describe, it } from "node:test";
 
 import { grammarAnchors } from "../lint/grammar-anchors.js";
 import { sentenceGrammarKeys } from "./construction-trace.js";
-import { CONSTRUCTIONS, SENTENCE_CONSTRUCTIONS } from "./constructions.js";
+import { CONSTRUCTIONS, REJECTIONS, SENTENCE_CONSTRUCTIONS } from "./constructions.js";
 import { parse } from "./index.js";
 import { sentenceGrammar } from "./sentence-parser.js";
 
@@ -23,7 +23,8 @@ describe("construction registry", () => {
   it("anchors resolve to a grammar page heading or <a id>", () => {
     const anchorsByPage = new Map<string, Set<string>>();
     const broken: string[] = [];
-    for (const [id, entry] of CONSTRUCTIONS) {
+    const entries = [...CONSTRUCTIONS, ...Object.entries(REJECTIONS).map(([id, entry]) => [`reject.${id}`, entry] as const)];
+    for (const [id, entry] of entries) {
       const [page, fragment] = entry.anchor.split("#");
       const path = join(grammarDir, page!);
       if (!fragment || !existsSync(path)) {
@@ -42,9 +43,12 @@ describe("construction registry", () => {
 
   it("reports construction IDs, all registered", () => {
     const cases: [string, string][] = [
-      ["zazawan vawalal hogobor.", "resolve.content.unbound"],
-      ["jelel.", "token.jFallbackVocative"],
+      ["zodogor vawalal.", "resolve.content.unbound"],
+      ["jululon.", "token.jFallbackVocative"],
       ["zazawan vawalal.", "sentence.vpCoordPart.V"],
+      ["zodogol gelem.", "reading.existence"],
+      ["zodogol om banabal.", "reading.existence"],
+      ["jol.", "reading.bareQuestion"],
     ];
     for (const [input, expected] of cases) {
       const ids = parse(input, undefined, { constructions: true }).constructions ?? [];

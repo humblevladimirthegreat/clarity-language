@@ -28,6 +28,14 @@ When every person and action in the clause is already named, the expected reply 
 >
 > "Is Ululon sleeping, I wonder?"
 
+With no body at all, the question asks about what was just said: *Huh?* / *What?* Soft **`jom.`** is gentler (*Hm?*).
+
+> `jol.`
+>
+> j-question
+>
+> "Huh?"
+
 If the subject is *nobody* (`zal`) or the clause is *nothing happened* (`xal`), you are still asking *yes* or *no*, not *who*.
 
 > `jol zal vawalal.`

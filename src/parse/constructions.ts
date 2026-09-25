@@ -26,8 +26,6 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "utterance.bodyClause": { anchor: "clause.md#beginner", summary: "body with no turn cluster (implied jal)" },
   "utterance.Period": { anchor: "dependents.md#orthography-and-prosody-periods", summary: "sentence end" },
   "utterance.nextBody": { anchor: "dependents.md#continue-x", summary: "next sentence in the same turn" },
-  "utterance.QMark": { anchor: "questions.md#question", summary: "? sentence end" },
-  "utterance.Bang": { anchor: "speech-moves.md#tone-marks", summary: "! sentence end" },
 
   "leftEdge.Vocative": { anchor: "speech-moves.md#vocative", summary: "vocative / greeting at the left edge" },
   "leftEdge.Polar": { anchor: "questions.md#polar-stance", summary: "polar stance turn" },
@@ -44,7 +42,6 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "clausePart.xJoinClose": { anchor: "join-across-roles.md#clause-sequence", summary: "clause join after its clause" },
   "clausePart.standaloneJoin": { anchor: "join-across-roles.md#clause-sequence", summary: "clause join with no clause before it" },
   "xJoinClose.JoinX": { anchor: "join-across-roles.md#clause-sequence", summary: "/x/ join fence" },
-  "xJoinClose.sharedAfterJoin": { anchor: "join-across-roles.md#clause-sequence", summary: "shared word after a clause join" },
 
   "unit.islandUnit": { anchor: "joins.md#scope-islands-join", summary: "scope island" },
   "unit.spanUnit": { anchor: "spans.md#shape", summary: "spoken span" },
@@ -89,7 +86,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "vpCoordPart.vJoinClose": { anchor: "join-across-roles.md#vp-clause-forms", summary: "/v/ join after its verbs" },
   "vpCoordPart.standaloneJoin": { anchor: "joins.md#standalone-phrase", summary: "standalone /v/ join" },
   "vJoinClose.JoinV": { anchor: "join-across-roles.md#vp-clause-forms", summary: "/v/ join fence" },
-  "vJoinClose.sharedAfterJoin": { anchor: "join-across-roles.md#vp-clause-forms", summary: "shared word after a verb join" },
+  "vJoinClose.sharedAfterJoin": { anchor: "join-across-roles.md#vp-clause-forms", summary: "shared /h/ after a verb join (covers every verb)" },
 
   "gCoord.gCoordPart": { anchor: "predication.md#classification", summary: "/ɡ/ phrase parts" },
   "gCoordPart.gPackage": { anchor: "predication.md#classification", summary: "clause-level adjective" },
@@ -103,7 +100,6 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "hCoordPart.hJoinClose": { anchor: "join-across-roles.md#stance-joins", summary: "/h/ join after its adverbs" },
   "hCoordPart.standaloneJoin": { anchor: "join-across-roles.md#stance-joins", summary: "standalone /h/ join" },
   "hJoinClose.JoinH": { anchor: "join-across-roles.md#stance-joins", summary: "/h/ join fence" },
-  "hJoinClose.sharedAfterJoin": { anchor: "join-across-roles.md#stance-joins", summary: "shared word after a /h/ join" },
 
   "hUnitRule.W": { anchor: "clause.md#adjective-detail-w", summary: "/w/ detail on an adverb" },
   "hUnitRule.H": { anchor: "clause.md#adverbs-h", summary: "/h/ or /th/ word" },
@@ -121,7 +117,6 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
 
   "asOfWPair.W": { anchor: "relations.md#as-of", summary: "as-of /w/" },
   "asOfWPair.B": { anchor: "relations.md#as-of", summary: "as-of /b/ bound" },
-  "asOfWPair.Odo": { anchor: "relations.md#as-of", summary: "as-of stand-in bound" },
   "gPackage.W": { anchor: "clause.md#adjective-detail-w", summary: "/w/ detail on an adjective" },
   "gPackage.asOfWPair": { anchor: "relations.md#as-of", summary: "as-of pair before an adjective" },
   "gPackage.G": { anchor: "clause.md#adjectives-ɡ", summary: "/ɡ/ adjective" },
@@ -185,7 +180,6 @@ export const WORD_READING_CONSTRUCTIONS: Record<LexReading, ConstructionEntry> =
   restrictor: { anchor: "restrictors.md#restrictors", summary: "restrictor" },
   mood: { anchor: "knowing.md#may", summary: "closed stance mood" },
   locative: { anchor: "relations.md#locative-relations", summary: "locative relation" },
-  means: { anchor: "hooks.md#extra-noun", summary: "means relation" },
   similative: { anchor: "relations.md#similative", summary: "similative" },
   ofRelation: { anchor: "relations.md#of-relations", summary: "of-relation" },
   exchange: { anchor: "relations.md#exchange", summary: "exchange" },
@@ -210,33 +204,34 @@ export const WORD_ENDING_CONSTRUCTIONS: Record<Ending, ConstructionEntry> = {
   rn: { anchor: "dependents.md#stand-in-roles", summary: "-rn named stand-in" },
 };
 
-export const WORD_PLURAL_CONSTRUCTIONS: Record<Pos, ConstructionEntry> = {
+export const WORD_PLURAL_CONSTRUCTIONS: Record<Exclude<Pos, "w" | "h" | "th" | "x">, ConstructionEntry> = {
   z: { anchor: "plurality.md#associative", summary: "-x on /z/" },
   d: { anchor: "plurality.md#associative", summary: "-x on /d/" },
   b: { anchor: "plurality.md#associative", summary: "-x on /b/" },
   j: { anchor: "plurality.md#person-role-x", summary: "-x on a vocative" },
   v: { anchor: "plurality.md#verbs-v", summary: "collective -x on /v/" },
   g: { anchor: "plurality.md#adjectives-g", summary: "collective -x on /ɡ/" },
-  w: { anchor: "plurality.md#beginner", summary: "-x on /w/" },
-  h: { anchor: "plurality.md#beginner", summary: "-x on /h/" },
-  th: { anchor: "plurality.md#beginner", summary: "-x on /th/" },
-  x: { anchor: "plurality.md#beginner", summary: "-x on /x/" },
 };
 
 export const WORD_MISC_CONSTRUCTIONS = {
   gl: { anchor: "clause.md#left-bound-adjectives", summary: "gl- left-bound adjective" },
 } satisfies Record<string, ConstructionEntry>;
 
-export const RESOLVE_CONSTRUCTIONS: Record<`${AnaphorKind}.${"bound" | "unbound"}`, ConstructionEntry> = {
+export const RESOLVE_CONSTRUCTIONS: Record<Exclude<`${AnaphorKind}.${"bound" | "unbound"}`, "number.unbound">, ConstructionEntry> = {
   "content.bound": { anchor: "pronouns.md#resume-r", summary: "-r binds an earlier content word" },
-  "content.unbound": { anchor: "pronouns.md#resume-r", summary: "-r with no earlier match" },
+  "content.unbound": { anchor: "pronouns.md#resume-r", summary: "full-root -r with no earlier match (the one you both know)" },
   "span.bound": { anchor: "spans.md#endings", summary: "span resume binds an earlier span" },
   "span.unbound": { anchor: "spans.md#endings", summary: "span resume with no earlier span" },
   "number.bound": { anchor: "numbers.md#digitless", summary: "number -r binds an earlier number" },
-  "number.unbound": { anchor: "numbers.md#digitless", summary: "number -r with no earlier number" },
   "role.bound": { anchor: "roles.md#role-compounds", summary: "role -r binds an earlier role compound" },
   "role.unbound": { anchor: "roles.md#role-compounds", summary: "role -r with no earlier match" },
 };
+
+/** Readings of a whole utterance or clause shape (`reading.*`, [construction-trace.ts](./construction-trace.ts)). */
+export const READING_CONSTRUCTIONS = {
+  existence: { anchor: "predication.md#existence", summary: "verbless /z/ clause: there is …" },
+  bareQuestion: { anchor: "questions.md#question", summary: "jol. / jom. with no body: Huh? / Hm?" },
+} satisfies Record<string, ConstructionEntry>;
 
 function prefixed(prefix: string, entries: Record<string, ConstructionEntry>): [string, ConstructionEntry][] {
   return Object.entries(entries).map(([key, entry]) => [`${prefix}.${key}`, entry]);
@@ -253,4 +248,27 @@ export const CONSTRUCTIONS: ReadonlyMap<string, ConstructionEntry> = new Map([
   ...prefixed("word.plural", WORD_PLURAL_CONSTRUCTIONS),
   ...prefixed("word", WORD_MISC_CONSTRUCTIONS),
   ...prefixed("resolve", RESOLVE_CONSTRUCTIONS),
+  ...prefixed("reading", READING_CONSTRUCTIONS),
 ]);
+
+/**
+ * Shapes the grammar docs rule out, checked in [enforce.ts](./enforce.ts). Each
+ * anchor is the section that states the rule, so an error sends the reader there.
+ */
+export const REJECTIONS = {
+  sentenceEndMark: { anchor: "speech-moves.md#tone-marks", summary: "a sentence ends in `.`; `?` / `!` are tone-mark prefixes" },
+  linkerMidSentence: { anchor: "dependents.md#sentence-linkers", summary: "a sentence linker comes only at the start of a sentence" },
+  pluralOnPos: { anchor: "plurality.md#beginner", summary: "-x is unused on /w/, /h/, /th/, and /x/" },
+  valueSlot: { anchor: "values.md#values", summary: "a need form goes on /ɡ/, /th/, or /w/ only" },
+  valueRoot: { anchor: "values.md#need-inventory", summary: "only the six need roots take the need form" },
+  pluralKindAfterUniversal: { anchor: "joins.md#universals-domains-generics", summary: "the kind word after ua / uo takes no -x" },
+  rankJoinNumberManner: { anchor: "comparatives.md#manner-scale", summary: "the /h/ after a rank join is a manner word, not a number" },
+  standInHost: { anchor: "dependents.md#dependent-clauses", summary: "a hosted stand-in is barl after a listed pole" },
+  standInHostUndo: { anchor: "dependents.md#stand-in", summary: "burl follows only the so-that pole holalam" },
+  poleStack: { anchor: "causation.md#only-because", summary: "the only pole stack is theberom thurugum" },
+  objectNeedsVerb: { anchor: "predication.md#existence", summary: "an object /d/ needs a verb" },
+  numberResumeUnbound: { anchor: "numbers.md#digitless", summary: "a number -r needs an earlier number to match" },
+  shortResumeUnbound: { anchor: "pronouns.md#resume-r", summary: "a short -r resume needs an earlier word to match" },
+} satisfies Record<string, ConstructionEntry>;
+
+export type RejectionId = keyof typeof REJECTIONS;

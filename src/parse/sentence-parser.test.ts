@@ -44,9 +44,11 @@ describe("sentence-parser synthetic", () => {
   });
 
   it("does not fold other repeated act words", () => {
-    const result = parseSentenceTokens(tokens("jol jol vazanal."));
+    // A second turn starts only after a period; `jol` is not an echo like `jul jul`.
+    const result = parseSentenceTokens(tokens("jol. jol vazanal."));
     assert.equal(result.utterances.length, 2);
     assert.equal(result.utterances[0]!.left.forceEcho, undefined);
+    assert.throws(() => parseSentenceTokens(tokens("jol jol vazanal.")));
   });
 
   it("keeps a stance join fence after /th/ words", () => {

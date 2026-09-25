@@ -128,8 +128,12 @@ class AgelanSentenceParser extends CstParser {
   }
 
   public document = this.RULE("document", () => {
-    this.AT_LEAST_ONE(() => {
-      this.SUBRULE(this.utterance);
+    // A new utterance starts only after a sentence end (dependents.md § periods).
+    this.AT_LEAST_ONE({
+      GATE: () => tokenIs(this.LA(0), Period, EOF),
+      DEF: () => {
+        this.SUBRULE(this.utterance);
+      },
     });
     this.CONSUME(EOF);
   });
@@ -159,12 +163,6 @@ class AgelanSentenceParser extends CstParser {
       this.OPTION2(() => {
         this.SUBRULE3(this.bodyClause, { LABEL: "nextBody" });
       });
-    });
-    this.OPTION3(() => {
-      this.OR2([
-        { ALT: () => this.CONSUME(QMark) },
-        { ALT: () => this.CONSUME(Bang) },
-      ]);
     });
   });
 
@@ -248,11 +246,9 @@ class AgelanSentenceParser extends CstParser {
     ]);
   });
 
+  // Nothing is SHARED after a clause join (join-across-roles.md § clause sequence).
   public xJoinClose = this.RULE("xJoinClose", () => {
     this.CONSUME(JoinX);
-    this.OPTION(() => {
-      this.SUBRULE(this.sharedAfterJoin);
-    });
   });
 
   public unit = this.RULE("unit", () => {
@@ -499,8 +495,12 @@ class AgelanSentenceParser extends CstParser {
 
   public vJoinClose = this.RULE("vJoinClose", () => {
     this.CONSUME(JoinV);
-    this.OPTION(() => {
-      this.SUBRULE(this.sharedAfterJoin);
+    // Only a shared /h/ follows a verb join (it covers every verb); a /ɡ/ there is not shared.
+    this.OPTION({
+      GATE: () => tokenIs(this.LA(laAfterW(this)), H),
+      DEF: () => {
+        this.SUBRULE(this.sharedAfterJoin);
+      },
     });
   });
 
@@ -567,11 +567,9 @@ class AgelanSentenceParser extends CstParser {
     ]);
   });
 
+  // Nothing is SHARED after a /h/ or /th/ join; `/w/` before the join word grades the list.
   public hJoinClose = this.RULE("hJoinClose", () => {
     this.CONSUME(JoinH);
-    this.OPTION(() => {
-      this.SUBRULE(this.sharedAfterJoin);
-    });
   });
 
   public hUnitRule = this.RULE("hUnitRule", () => {
@@ -622,10 +620,11 @@ class AgelanSentenceParser extends CstParser {
 
   public asOfWPair = this.RULE("asOfWPair", () => {
     this.CONSUME(W);
+    // The as-of bound is a /b/ noun, never a stand-in (relations.md § as-of).
     this.OPTION({
-      GATE: () => tokenIs(this.LA(1), B, Odo),
+      GATE: () => this.LA(1).tokenType === B,
       DEF: () => {
-        this.OR([{ ALT: () => this.CONSUME(B) }, { ALT: () => this.CONSUME(Odo) }]);
+        this.CONSUME(B);
       },
     });
   });

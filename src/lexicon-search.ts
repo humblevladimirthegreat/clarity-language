@@ -48,7 +48,6 @@ export const OVERLAY_KINDS = [
   "identity",
   "benchmark",
   "locative",
-  "means",
   "similative",
   "of_relation",
   "exchange",

@@ -424,9 +424,6 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   if (word.reading === "ofRelation") {
     return { line: "of relation", href: "relations.html#of-relations" };
   }
-  if (word.reading === "means") {
-    return { line: "hook extra-noun", href: "hooks.html#extra-noun" };
-  }
   if (word.reading === "similative") {
     return { line: "simile", href: "relations.html#similative" };
   }

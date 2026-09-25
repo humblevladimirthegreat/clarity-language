@@ -45,6 +45,8 @@ Each verb-phrase item is a verb plus its own object material. When every item is
 
 An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, covers every item. `/h/` inside an item covers that verb phrase only.
 
+Nothing is SHARED after a clause (`/x/`) join; each clause carries its own words.
+
 `/x/` keeps the **same speech act**. Later clauses inherit the opener and omit `/j/` (including recoverable **`jal`**).
 
 > `zazawan vawalal zululon vurunul xan.`
@@ -75,6 +77,8 @@ When English would deny or weigh **how you stand** toward a claim (*not becauseâ
 > z-Azawan | v-walk | th-WITNESSED | th-TOLD | th-or-exactly-one
 >
 > "Azawan walks: I either saw it or was told, one of the two."
+
+Nothing is SHARED after an `/h/` or `/th/` join. To grade the whole list at once, put a `/w/` detail immediately before the join word.
 
 **Compare with:** *Azawan does not walk* denies the event, so the join goes on the verb (`vawalal vul`) or the clause (`xul`), not on `/th/`.
 

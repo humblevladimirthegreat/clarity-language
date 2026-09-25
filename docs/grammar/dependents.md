@@ -78,7 +78,7 @@ You can also say:
 | **`helabam barl`** | *after* | `elabal` *hourglass* | ⌛: sand already through |
 | **`holalam barl`** | *so that* / *in order to* | `olalal` *goal* | 🥅: you act so the shot counts |
 
-When English puts a **noun** after *despite* (*despite Ululon*), keep the same **`hezebam`** pole and put that noun in `/b/` instead of **`barl`**. The obstacle is given, as with *although*. Do not write a second concession word. On a noun host the same pole is **`gezebam`**. (cue: 🦓 *zebra*: two stripes, still one animal)
+When English puts a **noun** after *despite* (*despite Ululon*), keep the same **`hezebam`** pole and put that noun in `/b/` instead of **`barl`**. The obstacle is given, as with *although*. Do not write a second concession word. The *although* pole sits on `/h/` (or `/ɡ/` on a noun), never on `/th/`. On a noun host the same pole is **`gezebam`**. (cue: 🦓 *zebra*: two stripes, still one animal)
 
 > `zazawan vawalal hezebam bululon.`
 >

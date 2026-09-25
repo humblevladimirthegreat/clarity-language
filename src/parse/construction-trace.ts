@@ -1,7 +1,7 @@
 import type { CstElement, CstNode, IToken } from "chevrotain";
 
 import { classifyTokenBranch, isLexWordPayload, type TokenPayload } from "./tokens.js";
-import type { LexWord, ResolveInfo } from "./types.js";
+import type { Clause, LexWord, ParseResult, ResolveInfo } from "./types.js";
 
 function isCstNode(element: CstElement): element is CstNode {
   return "children" in element;
@@ -62,4 +62,29 @@ export function sentenceGrammarKeys(grammar: Record<string, { definition: unknow
   };
   for (const [name, rule] of Object.entries(grammar)) walk(name, rule.definition as GastNode[]);
   return keys;
+}
+
+/** Existence: no `/v/`, a new `/z/` noun first, then only `/ɡ/`, hooks, or `/b/` (predication.md § existence). */
+function isExistence(clause: Clause): boolean {
+  const [first, ...rest] = clause.units;
+  if (first?.kind !== "np" || first.coord.level !== "z") return false;
+  const heads = first.coord.parts.flatMap((part) =>
+    part.items.flatMap((item) => (item.kind === "package" ? [item.package] : [])),
+  );
+  const described = rest.some((unit) => unit.kind === "predicate") || heads.some((pkg) => pkg.adjs.length > 0);
+  // A name or resume with a /ɡ/ word is a property claim, not existence.
+  const known = heads.some((pkg) => pkg.head.ending === "n" || pkg.head.ending === "r");
+  if (described && known) return false;
+  return rest.every(
+    (unit) => unit.kind === "predicate" || unit.kind === "hook" || (unit.kind === "np" && unit.coord.level === "b"),
+  );
+}
+
+/** Collect `reading.*` IDs from utterance and clause shapes. */
+export function addReadingConstructions(result: ParseResult, out: Set<string>): void {
+  for (const utterance of result.utterances) {
+    const force = utterance.left.force?.raw;
+    if (utterance.bodies.length === 0 && (force === "jol" || force === "jom")) out.add("reading.bareQuestion");
+    for (const body of utterance.bodies) if (isExistence(body.clause)) out.add("reading.existence");
+  }
 }

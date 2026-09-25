@@ -72,9 +72,9 @@ describe("resolve — content anaphors (pronouns.md)", () => {
     assert.equal(anaphors[0]!.antecedent?.raw, "vawalal");
   });
 
-  it("leaves dangling zulur unresolved", () => {
-    const { anaphors } = resolveOf("zulur vawalal.");
-    assert.equal(anaphors[0]!.pronoun.raw, "zulur");
+  it("leaves an opening full-root resume unresolved", () => {
+    const { anaphors } = resolveOf("zodogor vawalal.");
+    assert.equal(anaphors[0]!.pronoun.raw, "zodogor");
     assert.equal(anaphors[0]!.antecedent, undefined);
   });
 
