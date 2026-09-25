@@ -57,10 +57,9 @@ import { readingOrder } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { loadDefaultTables } from "../src/parse/index.js";
 
 /**
- * Static registry plus one `overlay.*` entry per closed overlay row. Overlay rows
- * are checked only by the report-only learning-order check until it is enforced
- * (docs/proposals/learning-order-check.md phase 7); the page-level coverage check
- * covers the static registry.
+ * Static registry plus one `overlay.*` entry per closed overlay row. The
+ * learning-order check covers every entry; the page-level coverage check covers
+ * the static registry.
  */
 const CONSTRUCTIONS = constructionRegistry(loadDefaultTables().overlays.values());
 import { lineNumberAt } from "../src/retie/tokens.js";
@@ -174,12 +173,15 @@ function checkConstructionCoverage(uses: readonly ConstructionUse[]): number {
 }
 
 /**
- * Report-only (phase 1): uses and links that reach past the current section in
- * the learning order. Prints a summary; `--order-report` prints every finding.
+ * Learning order: uses that reach past the current section. Fails on a use before
+ * its home, a family not taught at home, a home anchor that does not resolve to a
+ * banded heading, and a use outside every band; those findings always print.
+ * Forward links are report-only (a link is how a page says "covered later");
+ * `--order-report` lists them. Returns the number of failing findings.
  */
 const PARSER_SEGMENTS = new Set(["sentence", "token", "word", "reading", "resolve"]);
 
-function reportLearningOrder(order: LearningOrder, allUses: readonly ConstructionUse[], full: boolean): void {
+function reportLearningOrder(order: LearningOrder, allUses: readonly ConstructionUse[], full: boolean): number {
   // Pages off the sidebar and `## See also` sections are not checked.
   const checked = (s: Section) => order.readingOrder.includes(s.page) && !s.ignored;
   const uses = allUses.filter((u) => checked(u.section));
@@ -242,15 +244,15 @@ function reportLearningOrder(order: LearningOrder, allUses: readonly Constructio
 
   const forwardUses = [...forward.values()].reduce((n, f) => n + f.sections.size, 0);
   const unbandedCount = [...unbandedUses.values()].reduce((n, c) => n + c, 0);
+  const failures = forward.size + notAtHome.length + unresolved.length + unbandedHomes.length + unbandedCount;
   console.log(
-    `\nLearning order (report only): ${forward.size} construction(s) used before their home section ` +
+    `\nLearning order: ${forward.size} construction(s) used before their home section ` +
       `(${forwardUses} section use(s)); ${links.length} forward link(s); ` +
       `${notAtHome.length} construction families not taught in their home section; ` +
       `${unresolved.length + unbandedHomes.length} home anchor(s) unresolved or outside every band; ` +
       `${unbandedCount} use(s) outside every band.` +
-      (full ? "" : " Run with --order-report for details."),
+      (full ? "" : " Forward links are report-only; run with --order-report to list them."),
   );
-  if (!full) return;
   if (unresolved.length > 0) {
     console.log("\nHome anchors that do not resolve:");
     for (const line of unresolved) console.log(line);
@@ -275,10 +277,11 @@ function reportLearningOrder(order: LearningOrder, allUses: readonly Constructio
       for (const s of f.sections) console.log(`      ${s}`);
     }
   }
-  if (links.length > 0) {
-    console.log("\nForward links:");
+  if (full && links.length > 0) {
+    console.log("\nForward links (report only):");
     for (const line of links) console.log(line);
   }
+  return failures;
 }
 
 const pageMarkdown = new Map<string, string>();
@@ -357,10 +360,11 @@ function main(): void {
   }
 
   let coverageCount = 0;
+  let orderCount = 0;
   if (paths.length === 0) {
     const order = learningOrder(readingOrder.map((item) => sidebarPage(item.link)), pages);
     coverageCount = checkConstructionCoverage(uses);
-    reportLearningOrder(order, uses, orderReport);
+    orderCount = reportLearningOrder(order, uses, orderReport);
   }
 
   if (count > 0) {
@@ -384,8 +388,13 @@ function main(): void {
   if (speechCount > 0) {
     console.log(`\n${speechCount} number pronunciation issue(s).`);
   }
+  if (orderCount > 0) {
+    console.error(
+      `\n${orderCount} learning-order issue(s). Rewrite the example with forms already taught, or move the home section earlier (docs/proposals/learning-order-check.md, No previews).`,
+    );
+  }
 
-  const fail = hostIssues + count + spanCount + duplicateIdCount + morphCount + bankCount + speechCount + coverageCount;
+  const fail = hostIssues + count + spanCount + duplicateIdCount + morphCount + bankCount + speechCount + coverageCount + orderCount;
   if (fail > 0) {
     process.exit(1);
   }
@@ -404,6 +413,7 @@ function main(): void {
   console.log("OK: number pronunciation rows match their shorthand.");
   if (paths.length === 0) {
     console.log(`OK: ${STATIC_CONSTRUCTIONS.size} constructions, all exercised by their anchor page.`);
+    console.log("OK: learning order — every construction is taught at home and used no earlier.");
   }
 }
 
