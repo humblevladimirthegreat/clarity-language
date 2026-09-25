@@ -1,0 +1,494 @@
+# Grammar gaps and extensions ledger
+
+Editors only — not linked from grammar pages. Findings ledger for the expressiveness review (plan: `docs/proposals/expressiveness-review.md`). Lists English jobs Agalan handles awkwardly or not at all (**gaps**, `G-nn`) and unused forms with an intuitive reading (**extensions**, `E-nn`). Unused **forms** live in [unassigned-reserved](unassigned-reserved.md); this page tracks **jobs**.
+
+Grammar pages teach only settled readings. Do not drill open rows as if taught ([drill-generation](drill-generation.md)).
+
+## Fields
+
+| Field | Content |
+|-------|---------|
+| ID | `G-nn` (gap), `E-nn` (extension), `D-nn` (by design) |
+| English job / source form | e.g. *reflexive "herself"*; or `th+N` on `/h/` |
+| Current route | Best existing Agalan expression, with example, or *none* |
+| Verdict | **covered** · **awkward** · **missing** · **by design** · **extension candidate** |
+| Owning page | the `docs/grammar/` page that would own it |
+| Proposal | one-line suggestion, or `docs/proposals/<file>.md` |
+| Priority | **P1** common everyday English · **P2** common in writing · **P3** niche (awkward / missing only) |
+
+## By design
+
+Deliberate omissions. An English job that only these forms would serve is **covered** if the meaning has a natural route; do not re-log it as a gap.
+
+| ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
+|----|---------------------------|---------------|---------|-------------|----------|----------|
+| D-01 | copula *to be* as a verb | property on `/ɡ/`, kind on predicative `/ɡ/` (`jal zazawan godogol`), identity **`SAME`** | by design | predication.md | — | — |
+| D-02 | grammatical past / future tense, progressive aspect | time via `/h/` lexicon, clock / date, closed moods; **RESIDUE** / **FORMER** are standing, not tense ([knowing](../grammar/knowing.md#evidentiality): verbs have no past or future letter) | by design | knowing.md, glosses.md | — | — |
+| D-03 | article *the* for an already-mentioned kind | resume **-r** | by design | pronouns.md | — | — |
+| D-04 | single *cause* arrow word (*X causes Y*) | two-place poles **`adoro`** / **`ebero`** / **`urugu`** / **`ezaze`**; **CAUSE** mood | by design | causation.md | — | — |
+| D-05 | metric prefixes (*kilo-*, *milli-*) and unit abbreviations | scaled amount on the base unit | by design | numbers-applied.md | — | — |
+| D-06 | generic plural / *every K* via plural marking | universals joins (`zual gagadal`), habitual **`hual`**; **-x** is associative | by design | plurality.md, joins.md | — | — |
+| D-07 | written capitals for names | named **-n** / **`@`**; native text is unicase | by design | phonology.md, word-endings.md | — | — |
+| D-08 | sentence-final `?` / `!` carrying force | act word carries force; tone marks are prosody only; sentences end in `.` | by design | speech-moves.md | — | — |
+| D-09 | *attacker*-style agent-noun lexicon | role compounds **`a` / `e` / `u` / `o` x ROOT** | by design | roles.md | — | — |
+
+### Settled decisions carried from the consistency audit
+
+The consistency audit (removed after wave 6) settled these; do not re-raise them as gaps:
+
+- Hosted `/b/` right after any `/ɡ/`, `/h/`, or `/th/` word is structural; a recipient there is a speaker error.
+- `r` + vowel overlap in numbers is accepted.
+- Word edges before vowel-initial words are not fixed.
+- Hook compounds have no mid-word coda.
+- Sentences end in `.`, never `?` or `!`.
+- Short resumes are preferred when unambiguous.
+- `/ɡ/` + **-r** on a noun means *of that kind*.
+- `/v/` + **-r** on a noun means *do the same action again, now involving that entity*.
+
+## Free-slot snapshot
+
+Phase 3 starts from [unassigned-reserved](unassigned-reserved.md) as of commit `48a682c` (2026-09-25). Sections: numbers free forms, numeric derivation, restrictors, stance joins, role compounds, identity (`SAME`), spans, values later dimensions, phonology.
+
+## Phase 1 — English coverage checklist
+
+Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 missing, 2 by design, 1 extension candidate). Parser / docs mismatches found along the way are handed off in [build-investigate](build-investigate.md).
+
+### Cross-group P1 themes (input to Phase 4)
+
+- **Deixis:** no taught *here / there / now / this vs that / come / go / bring / take* (G-I, G-C); hook + speaker/listener (`ol bugobon`) parses and could be the core pattern. No root for *now / today / yesterday* also blocks *ago* (G-J16).
+- **Question words:** *why / how / how many / how big* (G-A09–A12). `thurugum bar`, `hurorom bar` parse; teach like *where?*.
+- **Aspect adverbs:** *just / already / still / not yet / anymore / about to* (G-B).
+- **Permission:** *may / let / allow*, asking and granting (G-B, G-H); roots **`erene`** / **`onone`** exist.
+- **Expressive / commissive acts:** *thanks / sorry / promise* (G-H); values on `/j/` (`jonogotham`) parse.
+- **Quantity words:** *few / many / a few / several / most / enough / too / some (mass) / no K* (G-C, G-D); *at least / at most*, *half*, *more X than Y* (G-G).
+- **Degree and focus:** *almost / barely / quite / slightly / even / also* (G-D).
+- **Existentials:** *there is / there is no* (G-F06–F07); verbless clauses parse with no reading.
+- **Subordinators:** *unless*, temporal *since* (G-E, G-J13); reported wh-questions (G-E32); tag question ask form (G-A18).
+- **Others:** kin / social *'s* (G-C), reciprocal *each other* and one-clause causative (G-B), object-relative *under / above / behind* (G-J), stand-in *one* (G-F16).
+
+### A. Clause types
+
+| ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
+|----|---------------------------|---------------|---------|-------------|----------|----------|
+| G-A01 | declarative (*Azawan walks.*) | `zazawan vawalal.` (omissible `jal`); soft `jam` — speech-moves.md#speech-act-beginner, #speech-act | covered | speech-moves.md | — | — |
+| G-A02 | yes/no question (*Does Azawan walk?*) | `jol zazawan vawalal.` / soft `jom`; optional `?` — questions.md#question, #question-tone | covered | questions.md | — | — |
+| G-A03 | negative yes/no (*Didn't Azawan run?*) | `jol zazawan vurunul vul.` (post-verb `vul`); answers `jael` / `juel` — questions.md#confirming-a-negative | covered | questions.md | Fix page examples: they write `jol zazawan vul vurunul.`, which the parser rejects (see Notes) | — |
+| G-A04 | alternative question (*the teapot or the dog?*) | closed-menu list join under question: `jol zazawan dedebol dodogol dol vejel.` — questions.md#single-item-standalone-inventory | covered | questions.md | Advanced only; could get one Intermediate example | — |
+| G-A05 | wh- *who / what / do what / what happened* | join **-r** blank: `jol zar vawalal.`, `jol var.`, `jol xar.`; *what else* `zur`; fill-all `jol zar vejel dar.` — questions.md#fill-ask-r, #fill-all | covered | questions.md | — | — |
+| G-A06 | *which (X)* | `jol zagegol zar.`; list + `…ar` = *which of these*; `…er` *which first* — questions.md#fill-ask-arity | covered | questions.md | — | — |
+| G-A07 | *where / where from / in what* | hook + `bar`: `jol zuhubun vawalal ol bar.` — questions.md#where | covered | questions.md | — | — |
+| G-A08 | *when* | `jol zazawan vawalal har.` — questions.md#when | covered | questions.md | — | — |
+| G-A09 | *how* (manner / means: *How does Azawan walk?*) | none taught. Parses but untaught: `jol zazawan vawalal hurorom bar.` (*like what?*), `… ael bar.` (*using what?*). Bare `/h/` blank `har` is already *when* | missing | questions.md | Add a *How?* section: `hurorom bar` = manner (*like what?*), `ael bar` = means (*with what?*), matching the *Where?* hook+`bar` pattern | P1 |
+| G-A10 | *how* + degree (*How big is the dog?*, *how fast*) | none. No degree blank before `/ɡ/` (`wel` is already rank-restrictor; `war` rejected after the verb) | missing | questions.md / comparatives.md | Degree fill-ask on `/w/` before the adjective (e.g. a digitless `/w/` number blank, or a measure-phrase blank); check numbers free forms | P1 |
+| G-A11 | *why* / *what for* | none taught. Parses: `jol zazawan vawalal thurugum bar.` (*because of what?*), `jol zazawan vawalal holalam bar.` (*for what purpose?*) | missing | questions.md (+ causation.md#because) | Teach pole + `bar` as *why?* (`thurugum bar`), *what for?* (`holalam bar`), *under what condition?* (`thadorom bar`); fits hosted-`/b/` blank pattern | P1 |
+| G-A12 | *how many / how much* | only Advanced range fill-ask (`z+3 z+5 zar gurulem`, numbers-applied.md#unspecified-value-in-the-range--r) — needs bounds + continuum; digitless number **-r** is resume (`g=+`), not a blank | missing | numbers.md / questions.md | Beginner count blank: a number word that is a fill-ask (e.g. `g+` + join-style blank, or unbounded range `g+0 g+e gar` taught as *how many?*) | P1 |
+| G-A13 | imperative (*Walk!*) | `jel vawalal.`; addressee explicit `jel zedonen vawalal.` (roles.md examples) — speech-moves.md#speech-act-beginner | covered | speech-moves.md | — | — |
+| G-A14 | polite request (*Please walk.*) | `jem vawalal.` — speech-moves.md#speech-act | covered | speech-moves.md | — | — |
+| G-A15 | *let's* (*Let's walk.*) | `jel zahan vawalal.` / soft `jem zahan vawalal.` parse; pronouns.md mentions *shall we* = **`aha`** but no speech-moves example | awkward | speech-moves.md | Add a *let's* example (`jem zahan …`) and *let's not* (`jum zahan …`) to speech-moves | P2 |
+| G-A16 | negative imperative (*Don't walk.* / *Please don't*) | `jul vawalal.`, `jum`, emphatic `jul jul` — speech-moves.md#emphatic-prohibition | covered | speech-moves.md | — | — |
+| G-A17 | exclamative (*What a big dog!*, *How big the dog is!*) | tone + intensifier: `! zodogol welem gelel.` — speech-moves.md#tone-marks | awkward | speech-moves.md | Teach the `!` + `welem` route as the exclamative pattern; optionally a degree-exclamation (`/j/` + adjective, e.g. `jelel` parses as j-elephant) giving *So big!* | P2 |
+| G-A18 | tag question (*Azawan walks, doesn't he? / right?*) | page teaches `zazawan vawalal. jael.` as the *…, yes?* tag, but gloss reads as the speaker's own *Yes.* Untaught but parses: `zazawan vawalal. jol jael.` / `?jael.` / `jom jael.` | awkward | questions.md#polar-stance | Teach `jol jael.` (*right?*) / `jom jael.` (*…, isn't it?*) as the asking tag; keep bare `jael.` as self-confirm | P1 |
+| G-A19 | echo question (*You saw WHAT?*, *Azawan did?*) | none taught; composable: `jol zedonen vejel ?!dar.` (fill-ask + `?!`), `jol ?!zazawan vawalal.` | awkward | questions.md | Add an echo note: repeat the prior body under `jol`, `?!` on the blank or doubted word, resume **-r** for repeated items | P2 |
+| G-A20 | rhetorical question (*Who cares?*, *Isn't it obvious?*) | none. `jol` expects a reply; `%` is joking; `jam jol …` / `jal jol …` stack parses with no defined reading | missing | speech-moves.md | Define stacked `jal jol …` (claim asked as question: answer asserted) as rhetorical; soft `jam jol` for musing | P2 |
+| G-A21 | wondering / self-question (*I wonder if…*) | `jom zululon velebel.` — questions.md#question | covered | questions.md | — | — |
+
+**Notes**
+
+- Parser rejects the questions.md#confirming-a-negative examples `jol zazawan vul vurunul.` and `jael vul vurunul.`-style pre-verb `vul` ("Illegal left fence: join before conjuncts"); `jel vul vawalal.` fails too. Post-verb `vurunul vul` parses. Either the page or the parser is out of step (the build apparently does not catch it).
+- Digitless number **-r** written `g+r` parses and glosses as "more-than-one" rather than resume; docs say resume is written `g=+`.
+- Bare `jol.` / `jol jael.` as a whole turn parse but have no documented reading.
+- `/j/` + content root (`jelel`) parses as an interjection with no documented reading on **-l** (docs use **-n** for conventional calls).
+- `jol zazawan vawalal war.` fails to parse although `/w/` occasion restrictors are documented alongside `har`.
+
+### B. Verb phrase
+
+| ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
+|----|---------------------------|---------------|---------|-------------|----------|----------|
+| G-B01 | grammatical tense (past / present / future marking on the verb) | No tense letter, stated as a design choice: "Verbs have **no past or future letter**" ([knowing#evidentiality](../grammar/knowing.md#evidentiality)); "Neither word is a past tense" ([why-agelan](../grammar/why-agelan.md)); morph glosses never carry tense ([glosses](glosses.md), line ~270). Time comes from channel, *before* / *after*, clock, PREDICT | by design | knowing.md | Add to the By design table as D-nn so it is not raised again | — |
+| G-B02 | simple past (*Azawan walked*) | WITNESSED `zazawan thuvuvum vawalal.`, or a when-frame (`helabam barl`, clock `/h/`) ([knowing#live-vs-memory](../grammar/knowing.md#live-vs-memory)) | covered | knowing.md | — | — |
+| G-B03 | past with no evidential claim (plain narration: *Yesterday Azawan walked*, told with no source) | You must choose a channel or a date. Nothing plain means "earlier than now" without also saying how you know. Relative *yesterday* / *last week* is not taught on this page (see group J) | awkward | knowing.md / numbers-applied.md | Teach a recency or *earlier* `/h/` time adverb (a relative-time scale) as the neutral when-frame | P1 |
+| G-B04 | perfect *has done* (result still relevant) | RESIDUE `zazawan thonenom vawalal.` ([knowing#residue](../grammar/knowing.md#residue)) | covered | knowing.md | — | — |
+| G-B05 | experiential perfect *has ever done / has never done* | `har` *sometimes* / bare `hal` *never* are restrictor habits, not "at least once in a lifetime" ([restrictors](../grammar/restrictors.md)) | awkward | restrictors.md | Add a documented reading: `har` + WITNESSED = *has at some point*; show *never has* with `hal` | P2 |
+| G-B06 | progressive *is walking* | Unmarked verb; LIVE `zazawan thadezem vawalal.` for "going on in view"; *while* `hegemum barl` for a frame ([glosses](glosses.md)) | covered | knowing.md | — | — |
+| G-B07 | habitual (*walks every day*, *usually*) | `zazawan hual vawalal.` ([restrictors](../grammar/restrictors.md)); motive habit `…thom` + `hual` | covered | restrictors.md | — | — |
+| G-B08 | *used to* (former habit) | `zazawan hual vawalal themebem.` FORMER ([knowing#former-climate](../grammar/knowing.md#former-climate)) | covered | knowing.md | — | — |
+| G-B09 | *about to* / imminent | PREDICT `zazawan thelezom vawalal.` or PLAN `themabam` ([intention#plan-predict](../grammar/intention.md#plan-predict)). Neither marks "very soon" | awkward | intention.md | Pair PREDICT with a taught nearness `/h/` (*imminently*), or an ending on `elezo` for a near horizon | P1 |
+| G-B10 | *just* (recent past: *has just left*) | No taught recency word. At best RESIDUE + a clock time | missing | knowing.md / numbers-applied.md | Recency `/h/` adverb (*just now*) that stacks with RESIDUE / WITNESSED | P1 |
+| G-B11 | *still* (continuing state/action) | RESIDUE covers only a result that is *still on the tally* (`thonenom`). Ongoing *still walking* has no taught form | awkward | knowing.md | Teach continuation *still* separately, e.g. an `/h/` on published `ozodo` *cessation* with `u` negation, or a stance join | P1 |
+| G-B12 | *already* | Not taught. `helabam barl` orders two events and does not say "sooner than expected" | missing | knowing.md | Add an *already* / *not yet* pair (an expectation-vs-timing adverb) | P1 |
+| G-B13 | *not yet* | Taught only for ability: `vuzunuxol` *can't yet* ([intention#incapability](../grammar/intention.md#incapability)). No general *hasn't walked yet* | awkward | intention.md / knowing.md | Extend the `xo` "open, not yet" reading to a clause-level *not yet* | P1 |
+| G-B14 | *anymore* / *no longer* | FORMER `themebem` for habits only. A state that stopped (*doesn't live here anymore*) is not taught | awkward | knowing.md | Teach FORMER on non-habitual states, or pair it with `ozodo` *cessation* | P1 |
+| G-B15 | *begin / stop / finish* doing (phase verbs) | Content roots only: `vozodol` *stop* + object `dawalam` (`zazawan vozodol dawalam.` parses); `unuhu` *terminus*; nothing for *start*. Using an action noun as the object is not taught | awkward | clause.md | Teach event-noun objects for phase verbs and give *start* a root | P2 |
+| G-B16 | *again* / repeat | `/v/` + **-r** on a noun (settled: *do the same action again*); content `vererel` *repeat* as a co-verb (`zazawan vererel vawalal.` parses, not taught) | awkward | pronouns.md | Teach *again* as an `/h/` on `erebe` (`hererem`) with the verb | P2 |
+| G-B17 | *can* (ability) | `zazawan vuzunuxal.` ([intention#can](../grammar/intention.md#can)); `xe`/`xo`/`xu` for *can't* | covered | intention.md | — | — |
+| G-B18 | *could* (past ability, *could swim as a child*) | `xa` + WITNESSED / FORMER; not shown | awkward | intention.md | Add an example that stacks ability with FORMER | P3 |
+| G-B19 | *may / might / could* (epistemic) | MAY `zazawan thodohom vawalal.` ([knowing#may](../grammar/knowing.md#may)) | covered | knowing.md | — | — |
+| G-B20 | *may / can* (permission: *you may go*) | No permission route. Published `erene` *permission* and `onone` *forbidden* are content roots only. Command `jel`/`jem` is not permission | missing | speech-moves.md / values.md | A permissive speech act (*you may*) using a `/j/` series gap or `erene` on `/th/` | P1 |
+| G-B21 | *must* (obligation) | Firm command `jel`, or need-linked prescription `…thel`/`…them`/`…ther` ([values#value-force](../grammar/values.md#value-force)). By design, a bare *must* without a named need is avoided ([why-agelan](../grammar/why-agelan.md)) | by design | values.md | — | — |
+| G-B22 | *must* (epistemic: *must be home*) | Evidentials such as clue-based inference ([knowing#evidentiality](../grammar/knowing.md#evidentiality)) or a stance number `th+95` | covered | knowing.md | — | — |
+| G-B23 | *should / ought to* | `zazawan vezehel thonogothem.` ([values#value-force](../grammar/values.md#value-force)); a forecast *should* uses PREDICT | covered | values.md | — | — |
+| G-B24 | rules or norms not tied to a need (*you should signal before turning*, *passengers must…*) | Prescription requires a named need; a plain rule without one has only a command | awkward | values.md | Document which need to pick for social or legal rules, or show `jel` with generic `enenu` | P2 |
+| G-B25 | *would* (counterfactual / conditional) | as-of + RESIDUE / PREDICT ([causation](../grammar/causation.md)); NOTIONAL for hypotheticals | covered | causation.md | — | — |
+| G-B26 | *would* (past habitual, polite *would you…*) | Past habit = FORMER; polite request = soft `jem` ([speech-moves](../grammar/speech-moves.md)) | covered | speech-moves.md | — | — |
+| G-B27 | *need to / have to* | motive `zazawan vawalal thonogothom.` ([values#value-preference](../grammar/values.md#value-preference)); necessary condition `ebero` | covered | values.md | — | — |
+| G-B28 | *had better* (warning advice) | protective prescription `…ther` | covered | values.md | — | — |
+| G-B29 | *will* / *going to* (future) | PREDICT `thelezom` / PLAN `themabam`; DECISION `ehege` | covered | intention.md | — | — |
+| G-B30 | passive with agent (*seen by Azawan*) | Front the object: `dagadal zazawan vejel.` ([clause#word-order-emphasis](../grammar/clause.md#word-order-emphasis), [english#by](../grammar/english.md)) | covered | clause.md | — | — |
+| G-B31 | agentless passive (*the cat was seen*, *mistakes were made*) | `dazawan zenenun vejel.` with *someone* ([pronouns](../grammar/pronouns.md)). `dazawan vejel.` with no subject **parses** but is not taught. The undergoer compound `u x ROOT` names a kind only | awkward | clause.md | Teach dropping the subject as the agentless clause (the parser already accepts it), with a note on when to prefer `enenu` | P1 |
+| G-B32 | causative *make X do* (force) | Two sentences + CAUSE / because: `zazawan thegegam vuzunul. zululon vezehel.`; `zululon vawalal thurugum barl. zazawan dular vezehel.` ([causation](../grammar/causation.md)). No one-clause causer + causee | awkward | causation.md / roles.md | A causative route: `/b/` causee + closed causer relation, or verb + `/b/` + `egega` host | P1 |
+| G-B33 | causative *let X do* (permission) | None (see G-B20) | missing | causation.md | Pair with the permission form: `erene`-hosted causee | P1 |
+| G-B34 | causative *have / get X to do* (arrange, persuade) | Tell + *to* stand-in: `vezehel … dorl`/`derl` with the next sentence ([dependents](../grammar/dependents.md)) — *asks X to* | covered | dependents.md | — | — |
+| G-B35 | phrasal verbs, directional (*walk out*, *go in*, *climb on*) | fused hook compounds `zazawan dazadol vawalalul.` ([hooks#hook-compounds](../grammar/hooks.md#hook-compounds)) or free hook + `/b/` | covered | hooks.md | — | — |
+| G-B36 | idiomatic phrasal verbs (*give up*, *put up with*, *figure out*) | Pick a content root (`ozodo` *cessation* for *give up*); no systematic route | covered | lexicon | — | — |
+| G-B37 | light-verb constructions (*take a walk*, *have a look*, *make a decision*) | Use the content verb (`vawalal`); DECISION `ehege`. English light verbs are not needed | covered | clause.md | — | — |
+| G-B38 | reflexive (*Azawan sees herself*) | Resume in the same clause: `zazawan vejel dazar.` **parses**, but pronouns.md teaches resume only for an antecedent in the previous sentence. Ability example glosses *express themself* with no object | awkward | pronouns.md | Teach a same-clause resume = reflexive (resume picks the subject) | P1 |
+| G-B39 | reciprocal (*Azawan and Ululon see each other*) | No taught route. `zazawan zululon zal dazar vejel.` parses, but `zar` is a join member and `dazar` would just resume Azawan. Numeric derivation `ROOTl+2` *mutual* makes only nouns/adjectives ([numeric-derivation](../grammar/numeric-derivation.md)), advanced | missing | pronouns.md / join-across-roles.md | Reciprocal: a set-join resume on the object (`d` + join resume) read as *each other*, or published `ezaze` *reciprocity* as `/h/` | P1 |
+
+**Notes**
+
+- Parser: all 27 test sentences parsed, including forms the docs do not teach: subjectless `dazawan vejel.`, same-clause reflexive `zazawan vejel dazar.`, and `zazawan vozodol dawalam.`. The parser accepts more than the pages teach, so these count as awkward or missing, not covered.
+- No tense by design: yes, it is stated. knowing.md#evidentiality says "Verbs have **no past or future letter**". knowing.md#residue says the RESIDUE / FORMER moods "do **not** locate time", and so does why-agelan.md ("Neither word is a past tense"). glosses.md (~line 270) says Agalan "does not mark English tense or progressive aspect". It is **not** in the ledger's By design table. Add it (G-B01).
+- Aspect particles (*just / already / still / yet / anymore*) form the biggest gap cluster. RESIDUE and FORMER each cover only part of the ground. A single small aspect/expectation adverb series on the add / one / order / undo vowel pattern could fill most of G-B09 to G-B14.
+- Permission is a clear hole: *may* / *let* / *allow* (G-B20, G-B33). Only commands and prescriptions exist.
+- Parser speed: each `npm run parse` took about 25 s under load. The two runs that printed nothing were killed jobs (exit 144), not parse failures.
+
+### C. Noun phrase
+
+| ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
+|----|---------------------------|---------------|---------|-------------|----------|----------|
+| G-C01 | indefinite *a / an* (first mention) | bare first-mention **-l** / **-m**: `zodogol vawalal.` *A dog walks.* — [word-endings#first-mention-concrete-l](word-endings.md) | covered | word-endings.md | — | — |
+| G-C02 | *the* for an already-mentioned referent | resume **-r**: `zodogol vawalal. zodor vajul.` — [pronouns#resume-r](pronouns.md#resume-r) | by design (D-03) | pronouns.md | — | — |
+| G-C03 | *the* for a unique / situational referent never mentioned (*the sun*, *the door*, *the kitchen*) | *the sun* = unique **-n** `zunun vawalal.` ([word-endings#proper-name--n](word-endings.md#proper-name--n)); situational *the door / the boss* (unique only in context) has no taught route: **-l** reads *a door*, **-r** needs an antecedent, **-n** reads as a title | awkward | word-endings.md | Teach which ending serves a context-unique first mention (allow **-r** to resume from the shared situation, or say **-l** is fine because definiteness is not marked) | P1 |
+| G-C04 | *some* + count noun (*some cats*) | indefinite group **-lx**: `zagadalx vajul.` — [plurality#beginner](plurality.md#beginner) | covered | plurality.md | — | — |
+| G-C05 | *some* = a specific unknown one (*some person*) | join **-r**: `zeberel zar vawalal.` — [joins#unspecified-member-r-phrase](joins.md#unspecified-member-r-phrase) | covered | joins.md | — | — |
+| G-C06 | *some* + mass noun (*some bread / water*) | none taught; **-lx** is a set of referents, `g+` is count >1 | missing | plurality.md | Say whether **-lx** on a mass noun = *some (portion of) X*, or teach an unspecified-amount number (`g+` / `g~+e-`) on mass nouns | P1 |
+| G-C07 | free-choice *any* (*any cat will do*) | `zagadal zor vajul.` — [joins#universals-domains-generics](joins.md#universals-domains-generics) | covered | joins.md | — | — |
+| G-C08 | NPI *any* (*I don't see any dogs*) | negation join: `zazawan dual vejel.` / `zazawan dodogol dul vejel.`; not explicitly mapped from NPI *any* | covered | joins.md | Add an English-side note (*not … any* = **u** join) in english.md | — |
+| G-C09 | demonstrative *this / that* (anaphoric, *that dog* just mentioned) | resume **-r** (`zodor`) — [pronouns#how-english-approximates--r](pronouns.md) | covered | pronouns.md | — | — |
+| G-C10 | deictic demonstrative *this X (here) / that X (there)*, proximal vs distal, pointing at an unmentioned thing | only a place hook: `zodogol om bugobon vajul.` *a dog near me sits*; no proximal/distal determiner, no *this one* pointing pro-form | missing | pronouns.md | Closed deictic pair on the resume system (e.g. `om` + speaker / listener fused as short hook compounds, or a pointing **-r** on speaker / listener) taught as *this / that* | P1 |
+| G-C11 | *all* (of a listed / known set) | closed **-l** and-list: `zazawan zululon zal vawalal.` — [joins#and-lists-a](joins.md#beginner) | covered | joins.md | — | — |
+| G-C12 | *all / every K* (universal over a kind) | `zual gagadal vajul.` (open `zuam` for soft generic) — [joins#universals-domains-generics](joins.md#universals-domains-generics) | covered | joins.md | — | — |
+| G-C13 | *all the cats (here)* — universal over a situational group | `zual gagadalx vajul.` parses, but no page says what SHARED `/ɡ/`…**-x** under **`ua`** means (collective? situational domain?) | awkward | joins.md | Teach **`ua`** + SHARED kind + domain restriction (*all the cats in this house*) explicitly | P1 |
+| G-C14 | *each* (distributive, one at a time) | SHARED `/ɡ/` under set **`a`** = each member (`zazawan zululon zal gomonam.`) — [comparatives#distributive](comparatives.md); for *each cat sits* over a kind, **`zual gagadal`** does not mark distributive vs collective on the verb | awkward | joins.md, plurality.md | State that **`ua`** + kind with plain `/v/` is distributive (collective is `/v/`…**-x**) so *each* has a named route | P2 |
+| G-C15 | *both* | two-item **`a`** join: `zazawan zululon zal vawalal.` — [comparatives#distributive-both-are-adj](comparatives.md) | covered | joins.md | — | — |
+| G-C16 | *either* (one of two) | `zazawan zululon zol vawalal.` (pick one); free-choice `zor` — [joins#choice-o](joins.md#beginner) | covered | joins.md | — | — |
+| G-C17 | *neither* / *none of* | `zazawan zululon zul vawalal.` — [joins#negation-u](joins.md#negation-u) | covered | joins.md | — | — |
+| G-C18 | *none* / *nobody* / *no X* (standalone, or *no cats* over a kind) | standalone `zal` *nobody* / `zul vajul.`; *no cat sits* over a kind: `zual gagadal zul` fails (illegal left fence); route must be negated verb or `zul` + kind, neither taught | awkward | joins.md | Teach *no K* = **u** + SHARED kind (`zul gagadal`), mirroring *every K* | P1 |
+| G-C19 | *few* (small, "not many" — negative orientation) | none; nearest `g~+e-` (arbitrarily small amount) parses but is a scalar special, not a count quantifier | missing | numbers.md | Vague-quantity series on digitless counts (e.g. soft small **`g~+e-`** taught as *few / little*) | P1 |
+| G-C20 | *a few* / *several* (small positive count) | `zagadalx g~+3 vajul.` (*about three*) or bare OoM `g+e0` (1–9, but includes 1); neither is taught as *a few / several* | awkward | numbers.md | Map *a few* / *several* in the numbers page (e.g. `g~+3`, or `g+e0` with plural **-x**) | P1 |
+| G-C21 | *many / much / a lot of* | nearest `g~+e` (arbitrarily large but finite) — hyperbolic; no plain *many* | missing | numbers.md | Teach a non-hyperbolic *many* (e.g. soft digitless `g~+` = *a good number*) | P1 |
+| G-C22 | mass *little* (*little water*) | none (same gap as *few*; count vs mass not distinguished) | missing | numbers.md | Fold into G-C19 proposal | P2 |
+| G-C23 | *most (of the X)* | percent denominator `zagadalx g~+50%` is *about half*; *more than half* needs a range (`numbers-applied#ranges`), long | awkward | numbers-applied.md | Teach *most* as a digitless or range shorthand (e.g. `>50%` range with **-m**) | P1 |
+| G-C24 | quantity *enough (bread)* | single-item **`aol`** *X is enough* (`zazawan zululon zaol vawalal.`) is item sufficiency, not amount; causation **`adoro`** (sufficient condition) is clause-level | awkward | numbers.md, causation.md | Teach amount-sufficiency on `/ɡ/` (e.g. **`aol`** after a digitless amount, `g+ gaol`) | P1 |
+| G-C25 | *too many / too much* (excess) | none; no excess-over-need quantifier (values **`thu`** unmet does not cover *over*) | missing | numbers.md / comparatives.md | Excess route via judgment benchmark (**`ue`**-style) or amount **`aol`** negated (*more than enough*) | P2 |
+| G-C26 | possessive *'s* / *of* (ownership) | `zodogol goborum bazawan vawalal.` — [joins#scope-fence-p-join](joins.md#scope-fence-p-join); speaker *my* via values need on `/ɡ/` | covered | joins.md (owner) | Ownership is taught only inside joins.md SHARED section; give it a home in relations.md#of-relations | — |
+| G-C27 | *'s* for body part / whole–part (*Ululon's hand*) | `dahanal gobonem bululon` — [relations#of-relations](relations.md#of-relations) | covered | relations.md | — | — |
+| G-C28 | *'s* for kin / social relations (*Azawan's sister, friend, boss*) | none; `goborum` is ownership (wrong for people), `gobonem` is part-of | missing | relations.md | Add a relational-*of* host (*X related to Y as K*) or allow role compounds `ox` / kin nouns + `/b/` anchor | P1 |
+| G-C29 | double genitive (*a friend of Azawan's*) | depends on G-C28; for things `dabogol goborum bazawan` (*a book of Azawan's*) = same as *'s*, fine | awkward | relations.md | Resolved by G-C28 | P2 |
+| G-C30 | stacked possessives (*Azawan's dog's owner*) | chained hosts parse (`zodogol goborum bazawan goborum bululon`) but attachment of the second `goborum` is not taught | awkward | joins.md / relations.md | Teach chaining order of stacked of-relations | P3 |
+| G-C31 | partitive of a container / material (*a cup of tea*, *a house of wood*) | `gajaram` / `gowodom` + `/b/` — [relations#of-relations](relations.md#of-relations) | covered | relations.md | — | — |
+| G-C32 | partitive portion of a mass (*a piece of bread*, *a slice*, *a bit of*) | none; `gobonem` = constitutive part, not an arbitrary portion; measure phrases need a unit | missing | relations.md | Portion *of* relation (piece severed from a whole) beside `gobonem` | P2 |
+| G-C33 | partitive of a set (*three of the cats*, *one of them*) | percent denominators for %; count-of-set: `zagadalx g+3` reads *three cats*, not *three of those cats*; `zagar` + `g+3`? not taught | awkward | numbers-applied.md | Teach count-of-set on a resumed group (`zagadarx g+3` = *three of them*) | P1 |
+| G-C34 | noun–noun compounds, lexicalized (*bedroom*, *textbook*) | `data/lexicon-compounds.csv`: `zabedelohohul vajul.` — [x-compounds#lexical-compounds](x-compounds.md#lexical-compounds) | covered | x-compounds.md | — | — |
+| G-C35 | noun–noun compounds, productive (*dog house*, *peanut butter*) | mid-word `x`: `zabanuxudel vajul.`; or two words / hosted relation — [x-compounds#compound-vs-separate](x-compounds.md#compound-vs-separate) | covered | x-compounds.md | — | — |
+| G-C36 | appositive (*Azawan, a teacher, walks*) | classification `/ɡ/` on the name: `zazawan gaxedegel vawalal.` — [predication#classification](predication.md) | covered | predication.md | Name *appositive* in english.md → predication | — |
+| G-C37 | identifying appositive (*my friend Azawan*, *the teacher, Azawan,*) | **`SAME`**: `zazawan zaxedegel gonunul bululon`… or `zaxedegel gonunul bazawan` — [predication#identity](predication.md#identity) | covered | predication.md | — | — |
+| G-C38 | generic reference (*Cats sit. / A cat is an animal.*) | `zual gagadal` (strict) / `zuam gagadal` (soft) — [joins#universals-domains-generics](joins.md#universals-domains-generics); habitual `hual` | by design (D-06) | joins.md | — | — |
+| G-C39 | specific vs non-specific indefinite (*I want a book — any / a particular one*) | specific unknown `dabogol dar`; free-choice `dabogol dor` (both parse) | covered | joins.md | — | — |
+
+**Notes**
+
+- Approximate numbers write the `~` in the second slot (`g~+3`); `g+3~` fails the parser, matching numbers.md. Worth a drill on this since English speakers will write `~` last.
+- `zual gagadal zul` is rejected as an illegal left fence, and no page shows how to say *no K*, even though *every K* (`zual gagadal`) is taught. This is the biggest gap in the quantifier area.
+- `zual gagadalx` (every + SHARED `/ɡ/`…**-x**) parses, but its reading isn't defined. plurality.md defines `/ɡ/`…**-x** after **`a`** as collective, but nothing covers it after **`ua`**.
+- Quantity vocabulary (*few, several, many, most, enough, too many*) has no teaching home. numbers.md gives magnitudes (bands, ∞, arbitrarily small), which are too hyperbolic or technical for everyday *many* / *few*.
+- Ownership `goborum` is only defined in passing inside joins.md (SHARED after the join), and relations.md points there. Kinship and social *'s* (*Azawan's sister*) have no route.
+- Deixis gap: *this / that* is anaphoric only, via **-r**. Proximal vs distal pointing is absent, and this likely overlaps group I (*here / there*, *this / that*).
+
+### D. Modification
+
+| ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
+|----|---------------------------|---------------|---------|-------------|----------|----------|
+| G-D01 | adjective stacking (*a small blue dog*) | several `/ɡ/` after the noun, or `gl-` before it: `zodogol glelulul gumuzem vawalal.` ([clause#adjectives-ɡ](clause.md#adjectives-ɡ), [#left-bound-adjectives](clause.md#left-bound-adjectives)) | covered | clause.md | — | — |
+| G-D02 | adjective order (size-before-colour rules) | no fixed order; a plain `/ɡ/` after a `/ɡ/`+`/b/` pair describes the `/b/` noun ([clause#complex-chaining](clause.md#complex-chaining)) | covered | clause.md | Add one line saying stacked plain adjectives come in any order | — |
+| G-D03 | intensifier *very* | `/w/` `welem` before `/ɡ/`: `zodogol welem gelulul vawalal.` ([clause#adjective-detail-w](clause.md#adjective-detail-w)) | covered | clause.md | — | — |
+| G-D04 | *very* on a verb (*walks very quickly*) / *very much* on the verb | `/w/` before `/h/` works (`welem hurorom`); no taught *very much* on a bare verb | awkward | clause.md | Teach `welem` on `/h/` manner, and `/h/` `helem` = *a lot / very much* on the verb | P2 |
+| G-D05 | downtoners *slightly / a bit / somewhat* | `/w/` + content root parses (`wumuzem gelulul` *mouse-ly blue*), but only comparative *slightly* is named, with no root given ([comparatives#degree](comparatives.md#degree)); `v~+` *increase a bit* only in numbers | awkward | clause.md | Publish `wumuzem` (*small*) as the stock *slightly* next to `welem` / `wogegal` | P1 |
+| G-D06 | *quite / rather / fairly / pretty* (moderate degree) | none taught; you would have to invent a `/w/` root | missing | clause.md | Name a mid-degree `/w/` (e.g. an existing moderate-scale root) in the same `/w/` degree table as `welem` / `wumuzem` | P1 |
+| G-D07 | *extremely / overwhelmingly* | `wogegal` (*ocean*), taught only for *much more* ([comparatives#degree](comparatives.md#degree)); `zazawan welem wogegal gomonam.` parses | awkward | clause.md | Promote `wogegal` to the plain (non-comparative) `/w/` degree table | P2 |
+| G-D08 | *almost / nearly* (on a verb or adjective: *almost falls*, *almost empty*) | only numeric: `g~-e` *arbitrarily close but short* ([numbers](numbers.md#digitless-exponents)); `w~-e` / `h~-e` parse but that reading is not taught on content | missing | numbers.md / clause.md | Teach `h~-e` / `w~-e` as *almost* (the numbers page already says *arbitrarily close but still short*) — intuitive extension | P1 |
+| G-D09 | *barely / hardly / scarcely* | none | missing | numbers.md / clause.md | Mirror of G-D08: `h~+e`-type *just over the threshold*, or `wumuzem` + something; decide with G-D08 | P1 |
+| G-D10 | *too* ADJ (excess: *too hot to drink*) | none; values **unmet** covers *not enough* for a need but not a scalar excess | missing | comparatives.md | Excess = rank join against an implied benchmark (like [judgment benchmarks](comparatives.md#judgment-benchmarks)); or a `/w/` excess word + `holalam burl`-style purpose-not | P1 |
+| G-D11 | *enough* (*warm enough to swim*) | none | missing | comparatives.md | Pair with G-D10: equative `ae` against a threshold / purpose | P1 |
+| G-D12 | *so ADJ that …* (degree + result) | `welem` + next-sentence linker (*therefore* `xezazam`, [dependents](dependents.md#continue-x)) — two sentences, degree-result link lost | awkward | dependents.md | Teach the two-sentence route explicitly, or a `/w/` *to-that-degree* word pointing at the next sentence | P2 |
+| G-D13 | equative *as … as* | `zazawan zululon zael gomonam.`; open `zaem` = *about as* ([comparatives#equatives](comparatives.md#equatives)) | covered | comparatives.md | — | — |
+| G-D14 | *more / less … than*, *most / least* | `zel` / `zuel` + shared `/ɡ/`; manner via `/h/` after the join ([comparatives](comparatives.md#manner-scale)) | covered | comparatives.md | — | — |
+| G-D15 | *much more / slightly more* | `zazawan zululon zel wogegal gomonam.` ([comparatives#degree](comparatives.md#degree)) | covered | comparatives.md | (slightly: see G-D05) | — |
+| G-D16 | correlative *the more …, the more …* | none; you could chain two sentences with *because*, but the covariation is lost | missing | comparatives.md | Rank join `e` on `/x/` linking two scale claims (a *co-rank* reading) | P2 |
+| G-D17 | focus *only X* / *just X* | single-item set join `zazawan zal vawalal.` *just Azawan* ([joins#standalone-phrase](joins.md#standalone-phrase)); *only when* `hal` ([restrictors](restrictors.md)) | covered | joins.md | — | — |
+| G-D18 | focus *also / too* (*Azawan also walks*) | discourse hook `al zazawan vawalal.` *Additionally …* ([hooks#discourse-hooks](hooks.md#discourse-hooks)) adds the whole sentence; does not mark which item is added | awkward | hooks.md | Allow the same-role hook with the left side left implicit (`al zazawan` = *Azawan too*) | P1 |
+| G-D19 | scalar focus *even X* (*even Azawan walks*) | none (the hook `al` has no "least expected" reading) | missing | hooks.md | Add a stacked-vowel hook (e.g. `ael`-style) or `/w/` on the hook: *including, least expected* | P1 |
+| G-D20 | *just* = *merely* (*it's just a cat*) | `zal` single item gives *only*, but not the "no more than / small" judgment | awkward | joins.md | Teach `zal` + `wumuzem`, or say that `zal` covers both | P3 |
+| G-D21 | *apparently / reportedly / evidently* | evidential `/th/`: `theraram` hearsay, `thunevem` inferred ([knowing#evidentiality](knowing.md#evidentiality)) | covered | knowing.md | — | — |
+| G-D22 | *probably / possibly / certainly* | MAY `thodohom`; stance numbers `th+`, `th+e` ([numbers#number-as-stance-by-marker](numbers.md#number-as-stance-by-marker)) | covered | knowing.md | — | — |
+| G-D23 | *hopefully* (speaker hope toward the clause) | emotion compose is for judgment only ([values#emotion-compose](values.md#emotion-compose)); `zazawan thozedem vawalal.` parses (content *hope* under `/th/`) but is not taught | missing | values.md / clause.md | Teach content-root `/th/` stance (`thozedem` *hopefully*) as a general "speaker attitude" pattern | P1 |
+| G-D24 | *frankly / honestly / to be clear* (speech-act manner) | none; tone marks are prosody only ([speech-moves#tone-marks](speech-moves.md#tone-marks)) | missing | speech-moves.md | A `/j/` or `/th/` word for the speaker's manner of saying it | P2 |
+| G-D25 | *fortunately / sadly* (evaluative sentence adverb) | none taught; same gap as G-D23 | missing | values.md | Same pattern as G-D23 with a value / emotion root on `/th/` | P2 |
+
+**Notes**
+
+- The parser accepts any content root under `/th/` (`thozedem`) and `/w/` (`wumuzem`), and number `w~-e` / `h~-e`, but the docs teach none of these readings. So the fixes for G-D05/08/23 are mostly teaching, not new forms.
+- Only *very* (`welem`, `m.w:very` on *elephant*) has a published `/w/` role English. There are no lexicon hits for *slightly, almost, barely, enough, quite, also, frankly*.
+- In comparatives.md#degree, the heading says *much / slightly* but only *much* (`wogegal`) gets a form.
+- The scratchpad `out.txt` / `s.txt` are shared, and other agents overwrote them mid-run. My parse checks used `D-sents.txt`. Every tested sentence parsed. The last two (manner scale, MAY) are taken directly from the docs.
+
+### E. Clause combining
+
+| ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
+|----|---------------------------|---------------|---------|-------------|----------|----------|
+| G-E01 | *and* (phrase / clause) | phrase `zazawan zululon zal vawalal`; clause `zazawan vawalal zululon vurunul xal` ([joins](../grammar/joins.md), [join-across-roles#vp-clause-forms](../grammar/join-across-roles.md#vp-clause-forms)); *and then* `xan` | covered | joins.md | — | — |
+| G-E02 | *or* (exclusive / inclusive) | `xol` / `zol`; *and/or* `xaol` / `zaol` ([joins](../grammar/joins.md)) | covered | joins.md | — | — |
+| G-E03 | *but* (clause) | linker `zazawan vawalal. xonugol zululon vurunul.` / softer `xezebal` ([dependents#sentence-linkers](../grammar/dependents.md#sentence-linkers)); in-clause `xezebal` also parses mid-sentence (`zazawan vawalal xezebal zululon vurunul`) | covered | dependents.md | — | — |
+| G-E04 | *nor* / *neither … nor* | `zazawan zululon zul vawalal` (neither A nor B); clause `zazawan vawalal zululon vurunul xul` ([joins](../grammar/joins.md), negation distributes) | covered | joins.md | — | — |
+| G-E05 | *either … or* | exclusive `zol` / `xol`; the English "either" emphasis is the closed **-l** | covered | joins.md | — | — |
+| G-E06 | *both … and* | `zal`; *both ADJ* = set `a` + SHARED `/ɡ/` ([joins](../grammar/joins.md)) | covered | joins.md | — | — |
+| G-E07 | *because* / *since* (reason) / *as* | `zazawan vawalal thurugum barl zululon velebel` ([dependents#dependent-clauses](../grammar/dependents.md#dependent-clauses), [causation#because](../grammar/causation.md#because)) | covered | causation.md | — | — |
+| G-E08 | *if* (real / open conditional) | `zazawan vawalal thadorom barl zululon velebel` ([causation#dependent](../grammar/causation.md#dependent)) | covered | causation.md | — | — |
+| G-E09 | *unless* (clause) | only phrase-level `zazawan vawalal hanunul hual` (always except in rain, [restrictors](../grammar/restrictors.md)); clause *if … not* `thadorom barl zululon velebel vul` works but is untaught | awkward | causation.md | Teach `thadorom burl` (**u** stand-in = negated content, mirroring `holalam burl`) as *unless*; parses today | P1 |
+| G-E10 | *although* / *even though* / *despite* | `hezebam barl …`; NP `hezebam bululon` ([dependents](../grammar/dependents.md#dependent-clauses)) | covered | dependents.md | — | — |
+| G-E11 | *while* / *when* (same time) | `hegemum barl …`; phrase-time *when* via restrictor `hanunul hal` ([restrictors](../grammar/restrictors.md)) | covered | dependents.md | — | — |
+| G-E12 | *while* / *whereas* (contrast) | linker `xezebal` after a full sentence ([dependents#sentence-linkers](../grammar/dependents.md#sentence-linkers)); no dependent contrast pole | covered | dependents.md | — | — |
+| G-E13 | *until* | `hudumem barl …` | covered | dependents.md | — | — |
+| G-E14 | *before* / *after* | `hababam barl …` / `helabam barl …` | covered | dependents.md | — | — |
+| G-E15 | temporal *since* (*since Ululon left*, starting point up to now) | none taught; nearest `helabam barl` (*after*) loses "continuing until now"; hook `ul` is spatial *from* | missing | dependents.md | Add a *since* reading: `helabam` + open **-m**/restrictor `hual`, or hook `ul` on a `barl` clause (*from when …*); pick one and teach | P1 |
+| G-E16 | *once* / *as soon as* | `helabam barl …` (*after*); immediacy unmarked | awkward | dependents.md | Immediate-after: `/w/` detail on `helabam` (e.g. haste root `wadazam helabam barl`) or teach `helabam` + `hal` | P2 |
+| G-E17 | *whether* (embedded) | `zazawan vejel dorl zululon velebel` ([questions#embedded-whether](../grammar/questions.md#embedded-whether)) | covered | dependents.md | — | — |
+| G-E18 | restrictive relative (*the guard who sits*) | two sentences + resume: `zugugal vajul. zazawan bugur vezehel.` ([dependents#which-noun](../grammar/dependents.md#which-noun)); one-place kind via role compound `dodogol gaxajul` | covered | dependents.md | — | — |
+| G-E19 | non-restrictive relative (*Azawan, who walks, sings*) vs restrictive | same two-sentence route; no way to mark "extra info" vs "identifying which one" | awkward | dependents.md | Restrictive = hosted `/ɡ/` role compound / resume; non-restrictive = aside span `th(…)` — document the split | P2 |
+| G-E20 | object-gapped relative (*the dog that Azawan sees runs*) | two sentences: `zazawan dodogol vejel. zodor vurunul.` | covered | dependents.md | — | — |
+| G-E21 | *whose* | two sentences + ownership `goborum`: `zugugal vajul. zodogol goborum bugur vurunul.` ([relations](../grammar/relations.md) compare-with) — not taught as the *whose* route | awkward | dependents.md | Add a *whose* example to which-noun (resume in `goborum` `/b/`) | P2 |
+| G-E22 | *where* relative (*the house where Azawan sleeps*) | two sentences + hook: `zazawan velebel al bohohul. zululon vuzunul al bohor.`; kind *sleep-place* = role compound `e x ROOT` (`gexelebel`) ([roles](../grammar/roles.md#role-compounds)) | covered | dependents.md | — | — |
+| G-E23 | *when* relative (*the day when …*) | two sentences + time `/h/`; no pattern taught for resuming a time | awkward | dependents.md | Teach resume on a time noun in `/h/` (or `har`-style restrictor) as the *when*-relative pair | P3 |
+| G-E24 | free relative *whoever* / *whatever* (generic) | `zual gaxawalal vuzunul` (every walker sings: universal join + role compound) — works but untaught for this job; `zar` = *someone*, not *whoever* | awkward | joins.md | Teach *whoever V* = `zual` + agent role compound `a x ROOT`; *whatever* = `zual` + patient `u x ROOT` | P2 |
+| G-E25 | free relative *what* (*I see what Azawan sees*) | none taught; `dar` is *something*; two sentences need a named thing | missing | dependents.md | Allow unspecified-member `dar` + next sentence resuming it (`dar` … `dor`?) or patient role compound `duxejer` (*the thing seen*) | P2 |
+| G-E26 | *that*-clause as object | `zazawan bululon vezehel darl zodogol vurunul.` | covered | dependents.md | — | — |
+| G-E27 | *that*-clause as subject / adjective complement (*That he left surprised me*; *happy that*) | subject: stand-in in other roles `zarl` ([dependents#stand-in-roles](../grammar/dependents.md#stand-in-roles), advanced; `zazawan zarl vuzunul` parses) ; *happy that* = `thurugum barl` | covered | dependents.md | — | — |
+| G-E28 | infinitive complement (*wants / decides to walk*, *tells X to sit*) | `darl` + repeated subject (`zazawan vuzunul darl zazawan vawalal`); directive `derl` (`zazawan bululon vezehel derl vajul`); *decline to* `vuon` | covered | dependents.md | — | — |
+| G-E29 | gerund (*sees walking*, *enjoys swimming*) | verb root under `/d/` as noun (`zazawan dawalal vejel`) or `darl` + clause | covered | clause.md | — | — |
+| G-E30 | reported speech (indirect / direct) | indirect `darl` (`zazawan bululon vezehel darl …`); direct wording = [spans](../grammar/spans.md) | covered | dependents.md | — | — |
+| G-E31 | reported yes/no question (*asks whether*) | `zazawan bululon vezehel dorl zululon velebel.`; lexical *question…* `vorn` | covered | dependents.md | — | — |
+| G-E32 | reported wh-question (*asks who walks*, *knows what Ululon sees*) | none taught; `zazawan vezehel dorl zar vawalal` parses (fill-ask `-r` blank inside `dorl`) | missing | questions.md | Teach `dorl` + join **-r** blank = embedded wh (same blank as matrix fill-ask `jol zar vawalal`) | P1 |
+| G-E33 | *so that* / *in order to* / *so as not to* | `holalam barl …` / `holalam burl …` ([dependents#so-that](../grammar/dependents.md#so-that)) | covered | dependents.md | — | — |
+| G-E34 | result *so … that* / *such … that* (*so tired that he slept*) | two sentences + `xezazam` (*therefore*): `zazawan vawalal. xezazam zululon vajul.`; degree→result link not expressible in one clause | awkward | dependents.md | Result pole on `/h/` from the *therefore* root: `hezazam barl` (outcome follows; parses, unassigned) | P2 |
+| G-E35 | *only if* / *iff* | `theberom barl` / `thezazem barl` ([causation#only-if](../grammar/causation.md#only-if)) | covered | causation.md | — | — |
+| G-E36 | *even if* (concessive conditional) | none taught; `hezebam thadorom barl` (although + if stacked on one `barl`) parses but untaught | missing | causation.md | Teach the stack `hezebam thadorom barl` = *even if* (condition not asserted, outcome holds regardless) | P2 |
+| G-E37 | hypothetical / remote conditional (*If Ululon slept, Azawan would walk*) | open `thadorom barl` + optional stance inside dependent (`zululon th- velebel`, unlikely) or PREDICT `thelezom`; remoteness not taught as a pattern | awkward | causation.md | Teach `th-` / `th+N` inside the `barl` clause as the "remote" conditional | P3 |
+| G-E38 | counterfactual (*If Ululon had left, the door would still be locked*) | bookmark `hobomam barl` + RESIDUE/PREDICT (`zadorol gologel thonenom thelezom hobomam barl zululon vebarul`) ([causation#factivity](../grammar/causation.md#factivity)); contrary-to-fact itself unmarked | awkward | causation.md | Mark the unreal condition with imaginary `th-e-` inside the dependent (`thadorom barl zululon th-e- vebarul`, parses) — reuse of *as if* | P2 |
+
+**Notes**
+
+- Parser is permissive about hosted pole overlays: unassigned `hezazam barl` and `thezebam barl`, and the two-pole stack `hezebam thadorom barl`, all parse. Good for proposals, but the build check will not catch misuse of un-inventoried pole forms.
+- `thadorom burl` parses although [dependents#stand-in](../grammar/dependents.md#stand-in) says `holalam burl` is "the one exception" to `barl` after a pole — the parser does not enforce that restriction.
+- `xezebal` placed mid-sentence as a clause join (`zazawan vawalal xezebal zululon vurunul`) parses, though docs teach linkers only after a period; a trailing linker (`… barl zululon velebel xezebal.`) fails.
+- Causation.md (factivity) says *if he had* is `hobomam` with **no** `thadorom`, while a counterfactual is still a condition; learners get no marker that the condition is false, only a moved "now".
+- Restrictors page line ~325 says *when* + clause is "`/h/` pole + `barl`" but names no *when* pole; `hegemum` is taught only as *while* (same time).
+- `zar` standalone parses as a declarative subject (*someone walks*); no doc says whether `-r` blanks outside `jol` mean *someone* vs *whoever*.
+
+### F. Information structure
+
+| ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
+|----|---------------------------|---------------|---------|-------------|----------|----------|
+| G-F01 | topicalization by fronting (*A cat, Azawan sees*) | free order, leftmost content word highlighted: `dagadal zazawan vejel.` ([clause#word-order-emphasis](clause.md#word-order-emphasis)) | covered | clause.md | — | — |
+| G-F02 | *as for X* / *regarding X* topic | `hozam bazawan zululon dagadal vejel.` ([clause#as-for](clause.md#as-for)) | covered | clause.md | — | — |
+| G-F03 | object / adverb cleft (*It's a cat that Azawan sees*) | object-first order `dagadal zazawan vejel.` ([clause#word-order-emphasis](clause.md#word-order-emphasis)) | covered | clause.md | — | — |
+| G-F04 | subject cleft (*It was Azawan who saw the cat*, contrastive) | subject is already default-first, so order cannot mark it; only prosodic `&zazawan dagadal vejel.` ([speech-moves#tone-marks](speech-moves.md#tone-marks)) | awkward | clause.md | Teach explicitly that subject focus = `&` on the subject (or `zazawan zal` *just Azawan*), with a cleft row in the word-order table | P2 |
+| G-F05 | pseudo-cleft (*What Azawan does is see a cat*; *A cat is what he sees*) | verb-first / object-first order: `vejel zazawan dagadal.` ([clause#word-order-emphasis](clause.md#word-order-emphasis)) | covered | clause.md | — (*what I want is…* blocked only by missing *want* root: lexicon item, not grammar) | — |
+| G-F06 | existential *there is / there are* (*There is a dog near the bank*) | none taught. Parser accepts verbless `zodogol om banabal.` / `zodogol g+3 ol banabal.`, but no page says a bare subject asserts existence; bare `/b/` in `thadorom banunul` is glossed *if there is rain* only incidentally ([causation](causation.md#beginner)) | missing | predication.md | Teach verbless subject-only clause (subject + optional count `/ɡ/` + hook place) as existential; note ambiguity with predicative `/ɡ/` count (`zodogol g+3` *there are three dogs* vs *the dogs are three*) and settle it | P1 |
+| G-F07 | negative existential (*There is no dog here*) | set join `zodogol zul.` parses; standalone join *there is no biggest* taught only for superlatives ([comparatives](comparatives.md)); `zul` alone = *no* ([joins#negation-u](joins.md#negation-u)) | missing | predication.md, joins.md | Fold into G-F06: `zodogol zul om banabal.` = *there is no dog near the bank* | P1 |
+| G-F08 | extraposition (*It is hard to walk*; *It's good that Ululon sits*) | subject stand-in + predicative `/ɡ/`: `gomonam zarl zazawan vawalal.` parses; `zarl` is licensed only by the general "role letter + `a` + `-rl`" rule, no `/z/` stand-in example ([dependents#dependent-clauses](dependents.md#dependent-clauses)); alt. event resume `zazawan vawalal. zawar gomonam.` ([pronouns](pronouns.md)) | awkward | dependents.md | Add a taught `zarl` (subject clause) example with predicative `/ɡ/` (*it is hard that / to…*), incl. generic doer (`zenenun`) for impersonal *to walk* | P2 |
+| G-F09 | contrastive focus (*Azawan sees the DOG*) | tone mark `&`: `zazawan vejel &dodogol.` ([speech-moves#tone-marks](speech-moves.md#tone-marks)); or fronting | covered | speech-moves.md | — | — |
+| G-F10 | contrastive correction (*not a dog but a cat*) | two sentences with join: `zazawan dodogol vejel. zululon dodogol zul vejer.`; hooks *rather / instead* ([hooks](hooks.md)) | covered | hooks.md | — | — |
+| G-F11 | VP ellipsis *so do I* / *me too* | verb resume: `zodogol vawalal. zugobon vawar.` ([pronouns](pronouns.md) Intermediate `/v/ … -r` = *do so*) | covered | pronouns.md | — | — |
+| G-F12 | bare *me too* (no verb) | `zugobon zam.` parses but is untaught; taught route needs the verb resume (G-F11) | extension candidate | pronouns.md, joins.md | Consider teaching subject + `zam` / `zal` fragment after a claim as *me too* (add-join reading is guessable) | P3 |
+| G-F13 | *neither does she* / *me neither* | `zululon vawalal vul. zugobon vawar vul.` (verb resume + verb join `vul`, [join-across-roles](join-across-roles.md)) | covered | pronouns.md | — | — |
+| G-F14 | gapping (*Azawan sees a dog, and Ululon a cat*) | verb resume keeps it short: `zazawan dodogol vejel. zululon dagadal vejer.` Verbless `zululon dagadal.` parses but is untaught (and would clash with G-F06 existential reading) | covered | pronouns.md | — (if G-F06 adopts verbless clauses, state that verbless + two arguments is not gapping) | — |
+| G-F15 | pro-form *do so / do that* | `/v/ … -r`: `zazawan vajul. zululon vajer.` ([pronouns](pronouns.md)) | covered | pronouns.md | — | — |
+| G-F16 | pro-form *one* (*a blue one*, *I want the red one*) | composable but untaught: `zazawan dodogol garedel vejel. zululon dar godor gelulul vejel.` (`dar` *something* + `/ɡ/ -r` *of that kind* per [pronouns](pronouns.md) cross-role recast); `dodor` = *it* (same dog), not *one* | awkward | pronouns.md | Teach *one* = `zar`/`dar` + `/ɡ/` resume (+ property) as a named pattern next to *it* | P1 |
+| G-F17 | *so / not* as answer (*I think so / I don't think so*) | polar stance `jaem` / `juem` ([questions#polar-stance](questions.md#polar-stance)) | covered | questions.md | — | — |
+| G-F18 | clausal pro-form *so* in a complement (*Azawan says so*, *I hope so*, *I told you so*, *I hope not*) | none for a prior plain clause: `darr` fails to parse; span resume `d[=]` only works if the earlier content was a span ([spans](spans.md)); `darn` = *a statement*, not *that one*; `zululon vaen xar` is untaught | missing | dependents.md | Stand-in resume: stand-in + **-r** (e.g. `darr` / `dorr` / `durr`) = *that same content* (most recent claim); negative *not* via `u` vowel or `darr zul` — guessable from resume **-r** | P2 |
+| G-F19 | ellipsis with modal / ability (*Azawan can sing and so can I*) | verb resume `vuzunur` drops the ability; would need `x` ability on the resume, not taught ([intention#incapability](intention.md#incapability)) | awkward | intention.md, pronouns.md | State whether ability **`x` + vowel** may sit on a resumed verb (`/v/ … -r` stem) or on `egera`; add example | P3 |
+
+**Notes**
+
+- Parser accepts verbless clauses freely (`zodogol.`, `zululon dagadal.`, `zodogol om banabal.`, `zodogol zul om banabal.`) though no grammar page teaches them as existential, gapping, or fragment readings; the docs need to pick one reading (G-F06 / G-F14 conflict).
+- `zarl` (subject stand-in) parses with predicative `/ɡ/` (`gomonam zarl zazawan vawalal.`), but dependents.md never shows a `/z/` stand-in; the Advanced "other roles" section only illustrates `-rn` lexicalized forms and `/v/`.
+- Subject focus can't use fronting (subject already default-first), so English subject clefts rely on `&` prosody only — worth one sentence in clause.md.
+- No *want* root in the published lexicon (`lexicon-search want` → no match); log as lexicon gap, blocks the natural *what I want is…* example.
+
+### G. Comparison and quantity
+
+| ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
+|----|---------------------------|---------------|---------|-------------|----------|----------|
+| G-G01 | comparative *X is bigger than Y* | rank join `e` + shared `/ɡ/`: `zazawan zululon zel gelem.` ([comparatives#comparatives](comparatives.md#comparatives)) | covered | comparatives.md | — | — |
+| G-G02 | *less … than* | reverse rank `ue`: `zazawan zululon zuel gelem.` ([comparatives#comparative-arity](comparatives.md#comparative-arity)) | covered | comparatives.md | — | — |
+| G-G03 | superlative *the biggest* / *the least big* | single-item `zazawan zel gelem.` / `zazawan zuel gelem.` ([comparatives#superlatives](comparatives.md#superlatives)) | covered | comparatives.md | — | — |
+| G-G04 | *much / slightly more* | `/w/` before scale: `zazawan zululon zel wogegal gelem.` ([comparatives#degree](comparatives.md#degree)) | covered | comparatives.md | — | — |
+| G-G05 | measured gap *two meters taller* | measure `/b/` on scale: `zazawan zululon zel godowem bedurem g+2.` ([comparatives#measured-differentials](comparatives.md#measured-differentials)) | covered | comparatives.md | — | — |
+| G-G06 | manner comparative *walks more intensely than* | `/h/` right after join: `zululon zazawan zel hohogem vawalal.` ([comparatives#manner-scale](comparatives.md#manner-scale)) | covered | comparatives.md | — | — |
+| G-G07 | factor comparative *twice as big as* / *three times faster* | none taught; `zazawan zululon zel gelem h+2.` parses but `h+2` reads as clause *two times*, not the ratio | missing | comparatives.md | Allow a free `h+N` (factor adverb, [numbers#number-as-adverb-by-marker](numbers.md#number-as-adverb-by-marker)) immediately after the shared scale as the ratio, parallel to measured-differential `/b/`; `ae` + `h+2` = *twice as big as* | P2 |
+| G-G08 | verb-degree / frequency comparative *runs more (often) than* | no scale word for bare *more*; digitless `zazawan zululon zel h+ vawalal.` parses but untaught | awkward | comparatives.md | Teach digitless `h+` (or a frequency root) right after the join as the *more often / more* manner scale | P1 |
+| G-G09 | quantity comparative *more cats than dogs* / *fewer* | none taught (ranking needs a named scale; no *amount* scale for nouns) | missing | comparatives.md | Rank the two noun sets with stock continuum `gurulem` (or `g+` amount) as the shared scale: `zagadalx zodogolx zel gurulem` = *more cats than dogs* | P1 |
+| G-G10 | equative *as big as* / *about as big as* | `zazawan zululon zael gelem.` / `zaem` ([comparatives#equatives](comparatives.md#equatives)) | covered | comparatives.md | — | — |
+| G-G11 | *the same height / age as* | equative on the dimension: `zazawan zululon zael godowem.` ([comparatives#equatives](comparatives.md#equatives)) | covered | comparatives.md | — | — |
+| G-G12 | *same* = identity *Ululon is the same person as Azawan* | `zululon gonunul bazawan.` ([predication#identity](predication.md#identity)) | covered | predication.md | — | — |
+| G-G13 | *same* = shared referent *we read the same book* / *the same one again* | only resume **-r** on a noun (object-slot token resume) or **`SAME`** + `/b/` inside NP; no taught pattern for "same X" across two subjects | awkward | predication.md | Teach NP `dX gonunul` + resume `/b/` (or a collective-subject pattern) for *the same X* in a shared-referent sentence | P1 |
+| G-G14 | *different (from)* = not the same one | `zululon gonunul bazawan gul.` ([predication#same-endings](predication.md#same-endings)) | covered | predication.md | — | — |
+| G-G15 | *different* = unlike in kind / quality (*a different kind of house*, *Azawan is different from Ululon*) | negated simile `gurorom bazawan gul` is untaught; *another / other X* not taught here | awkward | relations.md | Teach negated similative `gurorom … gul` as *unlike / different from*, and link *another X* from the joins "other-than" (`zur`) route | P1 |
+| G-G16 | *similar / like* | similative: `zohohul gurorom bazawan.` ([relations#similative](relations.md#similative)) | covered | relations.md | — | — |
+| G-G17 | reciprocal *similar to each other* / *they look alike* | no reciprocal route for similative (`/b/` needs a model) | awkward | relations.md | Allow similative over a set subject with resume/set `/b/` for *alike*; coordinate with group B reciprocal row | P2 |
+| G-G18 | *more than N* / *fewer than N* | single-item threshold: `zagadalx g+5 guel vawalal.` / `g+5 gel` ([numbers-applied#numeric-thresholds](numbers-applied.md#numeric-thresholds)) | covered | numbers-applied.md | — (note: `e` = *less than* is counter-intuitive for learners; English *more than* uses `ue`) | — |
+| G-G19 | *at least N* (≥) | only two-endpoint range to +∞: `zagadalx g+5 g+e gal gurulem vawalal.` ([numbers-applied#numeric-thresholds](numbers-applied.md#numeric-thresholds)) | awkward | numbers-applied.md | Add an inclusive twin of the single-item threshold (one short form), so *at least 5* is as short as *more than 5* | P1 |
+| G-G20 | *at most N* (≤) | range from zero: `zagadalx g+0 g+5 gal gurulem vawalal.` | awkward | numbers-applied.md | Same inclusive-threshold proposal as G-G19 | P1 |
+| G-G21 | *approximately / about N* | number **-m**: `zagadalx g~+5 vawalal.` ([numbers#number-endings](numbers.md#number-endings)) | covered | numbers.md | — | — |
+| G-G22 | *approximately* on a non-number (*roughly equal*, *about the same*) | `zaem` equative; `gonunum` (*basically the same*) | covered | comparatives.md, predication.md | — | — |
+| G-G23 | percent *25% of the cats* | `zagadalx g+25% vawalal.` ([numbers-applied#percent-denominators](numbers-applied.md#percent-denominators)) | covered | numbers-applied.md | — | — |
+| G-G24 | fractions *half / a third of the cats* | only percent (`g+50%`) or decimal `je`; `h-3` is *÷3 / into 3* as adverb only; no fraction-of-whole reading on `/ɡ/` | awkward | numbers-applied.md | Teach `g-N` (inverse marker `ru` on `/ɡ/` modifying the whole) as *1/N of* by analogy with `h-N`, or a fraction closer parallel to `jo` | P1 |
+| G-G25 | ratios / rates *one in three*, *3 to 1*, *per hour* | *every Nth* via `h-N`; no ratio or per-unit route taught | missing | numbers-applied.md | Teach *per unit* as measure `/b/` with inverse `h-` amount, and *N in M* as percent/fraction; P2 for per-unit rates | P2 |
+| G-G26 | *each … respectively* (A and B got X and Y respectively) | none; parallel joins have no pairing marker | missing | joins.md | Pair two equal-length same-order lists by a marked join ending or a hook (e.g. rank `e` fence on both lists = *in order*); needs design | P3 |
+| G-G27 | distributive *apiece* / *each* with a count (*they each got three*; *three apples apiece*) | singular verb leaves collective vs distributive open ([plurality#verbs-v](plurality.md#verbs-v)); no marker for per-member count | missing | plurality.md | Add a distributive counterpart to verb **-x** collective (e.g. marked count scope *per member*), or teach `h-` / set-join `a` distributive reading on the count | P2 |
+| G-G28 | distributive *both are ADJ* | set join `a` + shared `/ɡ/`: `zazawan zululon zal gelem.` ([comparatives#distributive-both](comparatives.md#distributive-both)) | covered | comparatives.md | — | — |
+
+**Notes**
+
+- The parser accepts `zazawan zululon zel gelem h+2.` and `zazawan zululon zel h+ vawalal.` with no taught reading — parse success is not evidence of coverage for G-G07 / G-G08.
+- Threshold direction: single-item `z+5 zel` = *less than 5* and `zuel` = *greater than 5* (numbers-applied#numeric-thresholds) runs opposite to the comparative intuition (`zel` = *more*); learners will likely reverse it. Worth a Phase 4 look.
+- `godogolr` alone fails to parse (`/ɡ/` + **-r** "of that kind" needs a following word), so no quick *same kind* route was tested.
+- `h-N` is taught as *÷N / into N parts / every Nth* on `/h/` only; no `/ɡ/` fraction reading exists, which is why G-G24 is awkward despite the marker being close.
+
+### H. Discourse and speech acts
+
+| ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
+|----|---------------------------|---------------|---------|-------------|----------|----------|
+| G-H01 | greeting / goodbye (*hi*, *bye*) | speaker's named citation `azawan.` ([word-endings#greeting](../grammar/word-endings.md#greeting)); call the other with `jululon.` | covered | word-endings.md | — | — |
+| G-H02 | greeting to someone whose name you don't know / group greeting (*hi all*) | none taught; `jedonenx.` (listener -x) only calls them | awkward | word-endings.md / speech-moves.md | allow `/j/` + **`edone`** / **`aha`** + **-n** as a conventional greeting, or teach `jahan.` as *hello, all of us* | P2 |
+| G-H03 | thanks (*thank you*, *thanks for the gift*) | stated as a values claim: `zululon vawaral thonogotham.` "Ululon gave: relatedness met (mental)" ([values#attachment-sites](../grammar/values.md#attachment-sites)); no conventional *Thanks!* turn | awkward | values.md / speech-moves.md | values on `/j/`: need + `th` + **`a`** + ending as an expressive turn (`jonogotham.` *Thanks!*; parser already accepts) | P1 |
+| G-H04 | apology (*sorry*, *I apologize*) | own act detracted from their need: `zugobon vawaral thonogothum.`; emotion compose ([values#emotion-compose](../grammar/values.md#emotion-compose)); no lexicon *regret/sorry*, no conventional turn | awkward | values.md / speech-moves.md | twin of G-H03: `jonogothum.` *Sorry!* (unmet on `/j/`; -r = I'll repair, per changeability) | P1 |
+| G-H05 | softened request (*please…*, *could you…*) | **`jem`**: `jem vawalal.` ([speech-moves#speech-act](../grammar/speech-moves.md#speech-act)); gentle ask **`jom`** | covered | speech-moves.md | — | — |
+| G-H06 | firm request / command / prohibition | **`jel`** / **`jul`**, emphatic `jul jul vazanal.` ([speech-moves#emphatic-prohibition](../grammar/speech-moves.md#emphatic-prohibition)) | covered | speech-moves.md | — | — |
+| G-H07 | offer of a thing (*want some?*, *how about X?*) | single-item open join under question (`…am` / `…om`) ([questions](../grammar/questions.md#yes-no-single-item-standalone)); accept/refuse `jaol` / `juol` | covered | questions.md | — | — |
+| G-H08 | offer to act (*shall I…?*, *let me help*) | `jom zugobon vawalal.` (soft question, self subject); warrant **`the…m`** *offered* on the act ([values#value-force](../grammar/values.md#value-force)) | covered | speech-moves.md / values.md | — | — |
+| G-H09 | suggestion (*why don't we…*, *let's…*) | inclusive we + soft request/question: `jem zahan vawalal.` / `jom zahan vawalal.`; firm *let's* `jel zahan vawalal.` ([pronouns](../grammar/pronouns.md)) | covered | speech-moves.md | — | — |
+| G-H10 | asking permission (*may I…?*, *is it OK if…*) | `jom zugobon vawalal.` reads as offer or permission ask; no permission-specific route taught; root **`erene`** *permission* exists but no deontic use | awkward | speech-moves.md / knowing.md | deontic *permitted / forbidden* stance on `/th/` from **`erene`** / **`onone`** (`therenem` / `thononem`) | P1 |
+| G-H11 | granting permission (*you may*, *go ahead*) | `jaol.` (take up) only fits offers; `zedonen vawalal gerenem` parses but is not taught | awkward | speech-moves.md | same stance as G-H10 (`zedonen vawalal therenem.`); polar `jaol` taught as *go ahead* reply to a permission ask | P1 |
+| G-H12 | promise (*I promise to…*) | plan + locked decision: `zugobon themabal thehegel vawaral bedonen.` ([intention#decision](../grammar/intention.md#decision)); states resolve, not an obligation to the listener | awkward | intention.md | commitment stance from **`abene`** *commitment* (`thabenem`, -l binding / -m open) or a **`jal`**-series act for commissives | P2 |
+| G-H13 | warning (*watch out!*, *careful!*) | interjection `jawarun.` (*Warning!*) / `julonen.` (*Danger!*) ([speech-moves#interjections](../grammar/speech-moves.md#interjections)); advice with protective warrant `jel zedonen vawalal thuhuhether.` ([values#value-force](../grammar/values.md#value-force)); `jul jul` for danger | covered | speech-moves.md | — | — |
+| G-H14 | backchannel *uh-huh* / *right* / *got it* | polar stance `jaem.` / `jael.` (*yeah / got it*) ([questions#polar-stance](../grammar/questions.md#polar-stance)) | covered | questions.md | — | — |
+| G-H15 | backchannel *oh* (news receipt, change of state) | `juruzen.` is *Surprise!*, too strong; `jael.` loses "news to me" | missing | speech-moves.md / questions.md | teach a receipt polar (e.g. soft `jaem` vs a new-info particle); or a conventional interjection `j…n` for *I see* | P1 |
+| G-H16 | backchannel *hmm* / *I'm listening* (continuer) | none; bare `jom.` parses (*…?*) but undefined as continuer | missing | speech-moves.md | define bare act words (`jam.` / `jom.`) as continuers: *go on* / *hmm?* | P2 |
+| G-H17 | hedge on a class / adjective (*kind of a dog*, *sort of big*) | `/w/` hedge: `zazawan wagadum godogol.` ([predication](../grammar/predication.md)); **-m** on joins/numbers for *about* | covered | predication.md / clause.md | — | — |
+| G-H18 | hedge on a verb (*kind of walked*) | `zazawan vawalal hagadum.` parses but only `/w/` hedge is taught | awkward | clause.md | teach `/h/` **`agadu`** (-m) as verb-degree hedge alongside `/w/` | P2 |
+| G-H19 | hedge on the whole claim (*I guess*, *I think*, *sort of*) | soft statement `jam …`; MAY `thodohom zazawan vawalal.` ([knowing#may](../grammar/knowing.md#may)); soft polar `jaem`; tone `?` | covered | speech-moves.md / knowing.md | — | — |
+| G-H20 | *anyway* (return from digression / dismiss prior) | none; `xezebal` *however* is contrast, not topic return | missing | hooks.md#discourse-hooks | discourse hook **-r** (`ar …` = resume the main line; parser rejects `ur` today) — resume reading fits **-r** | P1 |
+| G-H21 | *actually* (correcting expectation) | `ol …` *instead* (replaces prior) ([hooks#discourse-hooks](../grammar/hooks.md#discourse-hooks)); `xezebal` | awkward | hooks.md | teach `ol` / `om` explicitly as *actually*; or `&` focus note | P1 |
+| G-H22 | *by the way* (aside) | aside span `thexal … xuxul` ([spans](../grammar/spans.md)) is a nested aside, not a new topic turn | awkward | spans.md / hooks.md | teach aside open at sentence start as *by the way* (or `am …` *additionally, and maybe more*) | P2 |
+| G-H23 | *well* (hesitation / dispreferred reply opener) | none; soft `jam` / `jaom` approximates | missing | speech-moves.md | define a filler: soft polar `jaom` as *well…* opener, or a spoken hesitation word | P2 |
+| G-H24 | *so* (consequence) | `xezazam` *therefore* ([dependents#sentence-linkers](../grammar/dependents.md#sentence-linkers)) | covered | dependents.md | — | — |
+| G-H25 | *so* (topic launch / *so, what happened?*) | none; `xuvumul` *next* partial | awkward | dependents.md / hooks.md | pair with G-H20 (`ar` resume) or note `xuvumul` as *so, next* | P3 |
+| G-H26 | *besides* / *moreover* | discourse hook `al …` *additionally* ([hooks#discourse-hooks](../grammar/hooks.md#discourse-hooks)) | covered | hooks.md | — | — |
+| G-H27 | *in fact* (strengthening prior) | `al …` adds but does not escalate; `el …` rephrases | awkward | hooks.md | reading for a rank-upward discourse hook (e.g. `ael …` *even more so*), or teach `el` + `!` | P2 |
+| G-H28 | *on the other hand* | `xezebal` *however* ([dependents#sentence-linkers](../grammar/dependents.md#sentence-linkers)) | covered | dependents.md | — | — |
+
+**Notes**
+
+- Parser is permissive beyond the docs: `jonogotham.`, `jonogothum.` (values on `/j/`), `zugobon thabenem …` (non-stance root on `/th/`), `zedonen vawalal gerenem`, `hagadum`, and bare `jom.` all parse though none is taught. Verdicts treat them as untaught.
+- `th( zululon vawalal ).` fails (spaces inside the fence); `thexal … xuxul` works.
+- Discourse hooks accept only `a/e/o/u` + **-l/-m** (`ur …` fails); the **-r** column is unused and has an intuitive *resume* reading (G-H20).
+- The speech-act system is rich for directives (`jel/jem/jul/jum`) but has no expressive (thanks/sorry) or commissive (promise) act; values-on-`/j/` would fill both from existing morphology.
+- Interjection `/j/` + **-n** is productive per speech-moves, so `jawarun` / `julonen` count as covered, but no conventional interjections other than `juruzen` are listed.
+
+### I. Deixis and reference
+
+| ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
+|----|---------------------------|---------------|---------|-------------|----------|----------|
+| G-I01 | 1st / 2nd person singular *I* / *you* | `zugobon dedonen vejel.` *I see you*; names preferred ([pronouns#special-pronouns](pronouns.md#special-pronouns)) | covered | pronouns.md | — | — |
+| G-I02 | inclusive *we* (you and I) | `zahan vajul.` ([pronouns#special-pronouns](pronouns.md#special-pronouns)) | covered | pronouns.md | — | — |
+| G-I03 | exclusive *we* / plural *you (all)* | `zugobonx vajul.` / `zedonenx vajul.` ([plurality#clusivity](plurality.md#clusivity)) | covered | plurality.md | — | — |
+| G-I04 | 3rd person *he / she / it / they* (anaphoric) | resume **-r**: `zodogol vawalal. zodor vajul.` ([pronouns#resume-r](pronouns.md#resume-r)); no gender / animacy, by stem match | covered | pronouns.md | — | — |
+| G-I05 | 3rd person on first mention with no antecedent (*he* for someone visible but unnamed) | none; **-r** needs a prior matching word; `zenenun` is nonspecific, not "that man there" | missing | pronouns.md | Exophoric pointer: noun + hook **`ol`** + speaker/listener (`zeberel ol bedonen` *the person by you*) taught as the "that one there" route, or a pointing root **`obobu`** (☝️) on `/ɡ/` as a demonstrative adjective (would need a non-values sense; `gobobum` is taken by values) | P2 |
+| G-I06 | *here* | `zazawan vawalal ol bugobon.` (*at the speaker*) parses, but no page teaches it as *here* ([hooks#extra-noun](hooks.md#extra-noun)) | awkward | hooks.md | Teach `ol bugobon` = *here*, `ol bedonen` = *there (by you)* as a deixis subsection; consider a *yonder* (neither) route, e.g. `ol bur` (leftover place) | P1 |
+| G-I07 | *there* (anaphoric, place already named) | `zazawan vawalal ol bazadol. zululon vajul ol bazar.` resume **-r** on `/b/` ([pronouns#resume-r](pronouns.md#resume-r)) | covered | pronouns.md | Add an explicit *there* example to the slot table | P3 |
+| G-I08 | *now* (speech time) | no root or closed form; speech-now is only the unmarked default ([relations#as-of](relations.md#as-of)); `xe` ability *can't right now* is ability-only; `g#e0` = current generation, not *now* | missing | relations.md | Closed `/h/` *now* reusing speech-now machinery, e.g. `/h/` on speaker + time (`ol bume…` style) or a published `h` form of an *as-of* pair pointing at speech-now; minimal: teach `ol bugobon` style with **`ume`** (🕐) — `ol bumel` parses but reads *at a time* | P1 |
+| G-I09 | *then* (anaphoric time) | `/h/` resume: `zazawan velebel hanunul. zululon vajul hanunur.` ([pronouns#cross-role-inventory](pronouns.md#cross-role-inventory)) — needs a prior `/h/` antecedent | covered | pronouns.md | — | — |
+| G-I10 | *then* (next in sequence) | `xan`: `zazawan vawalal. xan zululon vajul.` ([join-across-roles#sequence](join-across-roles.md#sequence)) | covered | join-across-roles.md | — | — |
+| G-I11 | *this / that* (anaphoric, *that one*) | resume **-r** ([pronouns#intermediate](pronouns.md#intermediate)): `zululon vejel daboger.`; spans `d[=]` for quoted text | covered | pronouns.md | — | — |
+| G-I12 | *this* vs *that* (proximal / distal contrast, pointing) | none taught; improvised `dabogol ol bugobon` / `dabogol ol bedonen` parse | missing | pronouns.md | Same deixis subsection as G-I06: noun + `ol` + speaker = *this*, + listener = *that (by you)*; vowel-series option for a distal third term | P1 |
+| G-I13 | *such* / *so* (property deixis) | `/ɡ/` / `/w/` resume **-r** ([pronouns#intermediate](pronouns.md#intermediate)) | covered | pronouns.md | — | — |
+| G-I14 | *come* | no deictic verb; `zazawan vawalal oel bugobon.` (*walks toward speaker*) parses but is untaught and manner-specific (lexicon has no generic *go / move*) | awkward | hooks.md | Teach motion + `oel bugobon` = *come*, `ul bugobon` = *go (away)*; lexicon: generic motion root | P1 |
+| G-I15 | *go* | `zazawan vawalal um bugobon.` or `oel` + goal; only walk / run roots | awkward | hooks.md | As G-I14 | P1 |
+| G-I16 | *bring / take* | `zazawan dabogol vawalal oel bugobon.` (*walks the book toward me*) — object on an intransitive motion root; no *carry* root | awkward | hooks.md | Carry root in lexicon + deictic hook (`oel bugobon` *bring*, `ul bugobon` *take away*) | P2 |
+| G-I17 | generic *you / one / they* (people in general) | `zuam geberel velebel.` soft generic ([joins#universals-domains-generics](joins.md#universals-domains-generics)); ordinary everyday register feels heavy | covered | joins.md | Consider teaching a short pointer from pronouns.md (*you* / *one* in general ≠ `edone`) | P3 |
+| G-I18 | impersonal *they* (*they say…*, unknown agents) | `zenenunx`? not taught; evidential **told** `eraram` + `/th/` covers *they say* ([knowing#evidentiality](knowing.md#evidentiality)); agent *they* = `zenenun` / `zar` | covered | knowing.md | — | — |
+| G-I19 | *someone / something* | `zenenun` ([pronouns#special-pronouns](pronouns.md#special-pronouns)); `zar` ([joins#unspecified-member-r-phrase](joins.md#unspecified-member-r-phrase)) | covered | pronouns.md, joins.md | Clarify `zenenun` vs `zar` overlap on one page | P3 |
+| G-I20 | *anything / anyone* | `zor vawalal.` ([joins](joins.md#unspecified-member-r-phrase)) | covered | joins.md | — | — |
+| G-I21 | *nothing / nobody* | `zal vawalal.` ([joins](joins.md)) | covered | joins.md | — | — |
+| G-I22 | *everything / everybody* | `zual vawalal.`; *everyone* as a kind `zual geberel` | covered | joins.md | — | — |
+| G-I23 | *something else / someone else* | `zur` ([joins](joins.md#unspecified-member-r-phrase)) | covered | joins.md | — | — |
+| G-I24 | *somewhere / anywhere / nowhere / everywhere* | hook + `/b/` join: `ol bar` / `ol bor` / `ol bal` / `ol bual` all parse, but only `ol bar` = *where?* (question) is taught ([hooks#extra-noun](hooks.md#extra-noun)); restrictors `hal` / `hual` / `har` are time-only ([restrictors](restrictors.md)) | awkward | hooks.md | Teach place indefinites as hook + standalone `/b/` join (`ol bar` *somewhere*, `ol bal` *nowhere*, `ol bual` *everywhere*); resolve clash with fill-ask `bar` in [questions#where](questions.md#where) | P1 |
+| G-I25 | *sometime / never / always / anytime* | `har` / `hal` / `hual` / `hor` ([restrictors](restrictors.md)) | covered | restrictors.md | — | — |
+| G-I26 | anaphora across sentences (tracking several referents) | short / full-root **-r**, most-recent match; `xazar` going-back; cross-role recast ([pronouns#resume-r](pronouns.md#resume-r), [#going-back-to-a-thread](pronouns.md)) | covered | pronouns.md | — | — |
+| G-I27 | anaphora to a whole previous clause (*that* = what just happened) | `/x/` resume `…-r` and spans; no plain noun-slot *that (event)* taught from a clause antecedent ([pronouns#antecedent-was-j-or-x](pronouns.md)) | awkward | pronouns.md | Teach a clause-antecedent noun pointer (e.g. `dar`-like stand-in pointing **back**) with an example | P2 |
+| G-I28 | person shift across speakers (my *I* = your *you*) | `ugobo` / `edone` are role-relative per turn; names preferred | covered | pronouns.md | — | — |
+| G-I29 | reflexive *myself / herself* (reference aspect) | resume **-r** in object slot (`zazawan dazar vejel`) — same-clause antecedent not explicitly taught | awkward | pronouns.md | Cross-listed to group B (reflexive) — dedupe there | P2 |
+
+**Notes**
+
+- Parser accepts resume **-r** with no antecedent anywhere in the text (`zazawan vawalal hogobor.`), so it gives no warning when a learner writes a deictic "that one" with no antecedent (G-I05).
+- `bar` after a hook is taught only as fill-ask *where?*; outside a question the same string would be *somewhere* by the join rule. The docs never state which wins in an assertion (G-I24).
+- Neither the lexicon nor english.md has *here, there, now, come, go, bring, take, carry*; every deictic motion / place / time job depends on untaught hook + `ugobo` / `edone` combos.
+- `zenenun` (*someone*) and `zar` (*something / someone*) overlap; pronouns.md and joins.md do not cross-reference the difference.
+- G-I29 overlaps group B (reflexive); G-I05 / G-I12 overlap group C (demonstratives).
+
+### J. Time, place, and manner phrases
+
+| ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
+|----|---------------------------|---------------|---------|-------------|----------|----------|
+| G-J01 | *in* (containment) | hook `al` + `/b/`: `zodogol velebel al bohohul.` — [hooks#extra-noun](hooks.md#extra-noun) | covered | hooks.md | — | — |
+| G-J02 | *on* (surface) | hook `aol` + `/b/`: `zabogol vajul aol bajul.` — [hooks#extra-noun-intermediate](hooks.md#extra-noun-intermediate) | covered | hooks.md | — | — |
+| G-J03 | *under* / *below* | bare gravity DIR + landmark `/b/`: `zodogol velebel hodowol berel.` — [roles#gravity](roles.md#viewpoint-laterals) + *Viewpoint vs landmark* (bare compass + `/b/` = region). Only compass is shown with a landmark; gravity + landmark is inferred, taught Intermediate on roles, not linked from hooks | awkward | hooks.md / roles.md | State `godowol`/`hodowol` + `/b/` = *under*, `gubal` + `/b/` = *above/over* explicitly, and add them to the hooks Compare-with and english.md | P1 |
+| G-J04 | *above* / *over* (vertical) | `zabogol vajul gubal berel.` (same inference as G-J03); hook `aom` is *over* only as surface-setting | awkward | roles.md | Same as G-J03; clarify `aom` vs `gubal` + `/b/` | P1 |
+| G-J05 | *behind* / *in front of* | landmark's own facing: `gojuthohohul bohohur` (DIR `th` ANCHOR + resumed landmark), or viewer-relative `gojuthazawan bohohul` — [roles#viewpoint-laterals](roles.md#viewpoint-laterals). Long; intrinsic-front case (*behind the house*) not taught, only *Azawan's left of the tree* | awkward | roles.md | Teach intrinsic front: bare-ahead/back DIR + `/b/` landmark = the landmark's own front/back (or a short `th` + resume pattern) | P1 |
+| G-J06 | *between* | `hazanum` + `/b/` join: `zululon vajul hazanum badadul bazadol bal.` — [relations#locative-relations](relations.md#locative-relations) | covered | relations.md | — | — |
+| G-J07 | *near* / *by* (place) | hook `om`: `zululon vajul om bazadol.` — [hooks#extra-noun-intermediate](hooks.md#extra-noun-intermediate); english.md *by* | covered | hooks.md | — | — |
+| G-J08 | *across* (to the other side) | `uol` *through* / `uom` *by way of*: `zazawan vawalal uol burudel.` Loses the "side to side / other side" sense | awkward | hooks.md | Consider a stacked-vowel or `-m` reading for traversal-to-far-side, or teach `uol` + `urude` *span* idiom | P2 |
+| G-J09 | *through* | hook `uol`: `zazawan vawalal uol bohohul.` | covered | hooks.md | — | — |
+| G-J10 | *toward* | hook `oel`: `zazawan vawalal oel badadul.` | covered | hooks.md | — | — |
+| G-J11 | *during* + NP | `hegemum` + `/b/` noun: `zazawan vawalal hegemum bunerol.` Parses (hosted `/b/`), but dependents.md teaches `hegemum` only with `barl`; NP object taught only for *despite* (`hezebam`) | awkward | dependents.md | Add one line: *while / before / after / until* poles take a `/b/` noun like *despite* (`hegemum bunerol` *during the storm*) | P1 |
+| G-J12 | *before* / *after* + NP | `hababam bunerol` / `helabam bunerol` — same as G-J11 (only appears incidentally in relations#as-of and knowing#residue) | awkward | dependents.md | Same as G-J11 | P1 |
+| G-J13 | *since* (continuous from a point) | `helabam` *after* + `/b/` (`zazawan vajul helabam bunerol.`) — loses "and still ongoing"; none taught | missing | dependents.md | Stack *after* with a continuing aspect, or propose `ul` *from* on a time `/b/` (`ul b_#22,7`) = *since* — intuitive extension of source hook to time | P1 |
+| G-J14 | *by* (deadline) | english.md: clock `/h/` or `hudumem barl` *until* — neither means "no later than" | awkward | numbers-applied.md | Use `hudumem` + `/b/` with **-l** closed bound, or rank threshold (`ue`) on time; teach explicitly | P2 |
+| G-J15 | *for* (duration) | measure phrase `/b/`: `zazawan vawalal bohoram g+3.` — [numbers-applied#measure-phrases](numbers-applied.md#measure-phrases) | covered | numbers-applied.md | — | — |
+| G-J16 | *ago* | none: no deictic past-offset; `hababam` needs a landmark, `elaba` *recency* is vague | missing | numbers-applied.md | Measure phrase + `hababam` + now-landmark, or `ul`/`um` *away from* now + measure (`um` + `b` now `g+3 bohoram`); needs a published *now* anchor | P1 |
+| G-J17 | *from … to* (time) | clock/date `/b/` with hooks `ul … ol` (spatial pattern in relations#locative-relations), or numeric [range](numbers-applied.md#ranges) on a continuum; not shown for clock times | awkward | numbers-applied.md | Add one clock example `ul b_9 … ol b_17` (or `oel`) to Time | P2 |
+| G-J18 | *from … to* (place) | `zazawan ul bohohul vawalal ol bazadol.` — relations#locative-relations | covered | relations.md | — | — |
+| G-J19 | *with* (instrument) | hook `ael` *using*: `zazawan dabogol ael babenel vuwurul.` | covered | hooks.md | — | — |
+| G-J20 | *by* (means / channel) | hook `aem`: `zazawan vezehel aem bameral.` | covered | hooks.md | — | — |
+| G-J21 | *by* (manner, *by walking hastily*) | adverb `/h/`: `zazawan vawalal hadazam.` — [clause#adverbs-h](clause.md#adverbs-h) | covered | clause.md | — | — |
+| G-J22 | *with* (accompaniment) | join-relation `han`: `zazawan han bululon vawalal.` — [join-across-roles#join-relations](join-across-roles.md#join-relations) | covered | join-across-roles.md | — | — |
+| G-J23 | *without* | `huan` / `guan`: `zazawan huan bululon vawalal.` | covered | join-across-roles.md | — | — |
+| G-J24 | *like* (manner resemblance) | `hurorom` + `/b/`: `zodogol velebel hurorom bazawan.` — [relations#similative](relations.md#similative) | covered | relations.md | — | — |
+| G-J25 | *to* (recipient / addressee) | unhosted `/b/`: `zazawan bululon dabogol vezehel.` — [clause#extra-nouns](clause.md#extra-nouns) | covered | clause.md | — | — |
+| G-J26 | *for* (beneficiary) | hook `el` *for* (intended get): `zazawan vogogol el bululon.`; proxy `hudagam` for *on behalf of*. `el` is glossed "intended get", so *cooks for Ululon* (benefit to a person) vs *for a money-bag* (goal to get) is blurred | awkward | hooks.md | Clarify that `el` + person = beneficiary, or split beneficiary (`em`?) from goal-to-get | P2 |
+| G-J27 | source (*from*, *out of*) | `ul` / `ual` / `um`: `zazawan vawalal ual bohohul.` | covered | hooks.md | — | — |
+| G-J28 | goal (*to*, *into*, arrival) | `ol` *at* / `al` *in* after a verb of motion (`… vawalal ol bazadol.`); `oel` = direction only. Goal vs location not distinguished (`ol` = *at* and *to*) | covered | relations.md | — | — |
+
+**Notes**
+
+- All 40-odd test sentences parsed (cold-start `npx tsx` parse needs >20 s per call; first runs timed out and were rerun).
+- The parser accepts any hosted `/h/` + `/b/` noun, so *during / before / after / until + NP* parse fine; the gap is teaching, not grammar.
+- english.md *by (deadline)* maps to `hudumem barl` *until*, which is a different meaning (event continues until vs completes no later than).
+- `aom` is glossed *over* (frame of *on*), which competes with vertical *above/over* via `gubal` + `/b/`; learners will likely pick `aom` for *over the bridge*.
+- No published root for *now* / *today* / *yesterday* found via lexicon-search; this blocks a clean *ago* and deictic time.
+
+## Phase 2 — Real-text sampling
+
+## Phase 3 — Extension sweep

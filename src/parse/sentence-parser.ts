@@ -118,7 +118,7 @@ class AgelanSentenceParser extends CstParser {
   }
 
   constructor() {
-    super(allTokens, { recoveryEnabled: false, maxLookahead: 3 });
+    super(allTokens, { recoveryEnabled: false, maxLookahead: 2 });
     this.performSelfAnalysis();
   }
 
