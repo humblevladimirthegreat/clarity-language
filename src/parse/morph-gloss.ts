@@ -1167,6 +1167,10 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
         pos: word.pos,
       }),
     );
+    if (family.stanceVowel) {
+      const stance = ABILITY_STANCE[family.stanceVowel] ?? family.stanceVowel;
+      return [role, ...host.slice(0, -1), `${host[host.length - 1] ?? "host"}-${stance}`];
+    }
     return [role, ...host];
   }
 

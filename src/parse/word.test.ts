@@ -282,6 +282,19 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     }
   });
 
+  it("parses gaxuwuruxam as role + ability on /ɡ/ only (intention.md § Ability)", () => {
+    const word = parseOk("gaxuwuruxam");
+    assert.deepEqual(word.family, {
+      kind: "x",
+      xFamily: "role",
+      leftRoots: [],
+      roleVowel: "a",
+      rightRoots: ["uwuru"],
+      stanceVowel: "a",
+    });
+    assert.throws(() => parseWord("vaxuwuruxam"));
+  });
+
   it("parses azawaxan as ability host (greeting bid classified later)", () => {
     const word = parseOk("azawaxan");
     assert.equal(word.pos, undefined);

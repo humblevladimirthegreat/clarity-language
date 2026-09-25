@@ -23,7 +23,7 @@ Use `/th/` when the outcome is an **event** (the verb). Use `/ɡ/` when the outc
 >
 > z-rain | [g-if | b-cloud]
 >
-> "Rain if there are clouds."
+> "Rain comes if there are clouds."
 
 Ordinary content on the same root is still available (`zadorol` *a door*).
 
@@ -44,7 +44,7 @@ When the outcome cannot happen without this (*only if* / *needs*), write the sam
 >
 > z-rain | [g-only-if | b-cloud]
 >
-> "Rain only if there are clouds."
+> "Rain comes only if there are clouds."
 
 Ordinary content on the same root is still available (`zeberol` *a paper-roll*).
 
@@ -88,7 +88,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. The out
 
 #### English → Agalan
 
-**1.** *A seedling if there is sun.*
+**1.** *A seedling grows if there is sun.*
 
 ::: details Show answer
 `zezedel gadorom bunul.`
@@ -104,7 +104,7 @@ z-seedling | [g-if | b-sun]
 z-Azawan | v-pour | [th-if | b-bucket]
 :::
 
-**3.** *A potted plant only if there is a window.*
+**3.** *A potted plant thrives only if there is a window.*
 
 ::: details Show answer
 `zobodel geberom buwunol.`
@@ -120,7 +120,7 @@ z-potted-plant | [g-only-if | b-window]
 z-Uhubun | d-Azawan | v-see | [th-if | b-window]
 :::
 
-**5.** *A flower only if there is sun.*
+**5.** *A flower grows only if there is sun.*
 
 ::: details Show answer
 `zovowel geberom bunul.`
@@ -160,7 +160,7 @@ z-Ululon | v-pour | [th-only-if | b-fire]
 
 z-flower | [g-if | b-sun]
 
-*A flower if there is sun.*
+*A flower grows if there is sun.*
 :::
 
 **2.** `zuhubun vorurul thadorom bezedel.`
@@ -178,7 +178,7 @@ z-Uhubun | v-pour | [th-if | b-seedling]
 
 z-seedling | [g-only-if | b-window]
 
-*A seedling only if there is a window.*
+*A seedling grows only if there is a window.*
 :::
 
 **4.** `zazawan duhubun vejel thadorom buwunol.`
@@ -196,7 +196,7 @@ z-Azawan | d-Uhubun | v-see | [th-if | b-window]
 
 z-tomato | [g-if | b-sun]
 
-*A tomato if there is sun.*
+*A tomato grows if there is sun.*
 :::
 
 **6.** `zazawan vezehel thadorom bebebem.`
@@ -260,7 +260,7 @@ Several conditions can sit inside `/b/` as a [join](joins.md) (`thadorom buludul
 <a id="only-because"></a>
 <a id="poles"></a>
 
-Beginner used *if* and *only if* without asserting the condition. Pick the pole by **direction** and by whether you **assert** the condition as a world-fact. Clause poles take **-m**. The same roots on `/ɡ/` attach to a noun. Ordinary content still uses ordinary endings (`zurugul` *a brick*; `zezazel` *reciprocity*).
+Beginner used *if* and *only if* without asserting the condition. Pick the pole by **direction** and by whether you **assert** the condition as a world-fact. Clause poles take **-m**. The same roots on `/ɡ/` attach to a noun. Ordinary content still uses ordinary endings (`zurugul` *a brick*; `zezazem` *reciprocity*).
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -280,7 +280,7 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 >
 > z-rain | [g-because | b-cloud]
 >
-> "Rain because of clouds."
+> "Rain comes because of clouds."
 
 > `zazawan vawalal thezazem barl zululon velebel.`
 >
@@ -300,7 +300,7 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 <a id="cause"></a>
 <a id="cause-mood"></a>
 
-To highlight **how** a result comes about (the mechanism, not only that a condition holds), add the closed mood **`egega`** as an `/th/` word. The ending is **-m**: **`thegegam`**. You can put that mood next to a pole when both jobs apply. Ordinary content on the same root is still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*). Optional `/w/` when the mood grades only the `/ɡ/` adjective it sits immediately before. (cue: ⚙️ *gear*: how the mechanism engages)
+To highlight **how** a result comes about (the mechanism, not only that a condition holds), add the closed mood **`egega`** as an `/th/` word. The ending is **-m**: **`thegegam`**. Always put that mood next to a pole: the pole names the condition, and **CAUSE** says the link is the mechanism. Ordinary content on the same root is still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*). Optional `/w/` when the mood grades only the `/ɡ/` adjective it sits immediately before. (cue: ⚙️ *gear*: how the mechanism engages)
 
 > `zazawan vawalal thegegam thadorom banunul.`
 >
@@ -308,11 +308,11 @@ To highlight **how** a result comes about (the mechanism, not only that a condit
 >
 > "Azawan walks if there is rain (as mechanism)."
 
-> `zululon vorurul thegegam.`
+> `zululon vorurul thegegam thurugum burel.`
 >
-> z-Ululon | v-pour | th-CAUSE
+> z-Ululon | v-pour | th-CAUSE | [th-because | b-fire]
 >
-> "Ululon pours (as mechanism)."
+> "Fire is what makes Ululon pour."
 
 **Compare with:** *because* / *if* name the condition (`thurugum` / `thadorom`). **CAUSE** names how the link meshes.
 
@@ -433,11 +433,11 @@ z-Azawan | v-tell | [th-iff | b-that-clause] | z-Uhubun | v-see
 *Azawan tells if and only if Uhubun sees.*
 :::
 
-**4.** `zululon vurunul thurugum barl zogegam.`
+**4.** `zululon vurunul thurugum bogegam.`
 
 ::: details Show answer
 
-z-Ululon | v-run | [th-because | b-that-clause] | z-overwhelm
+z-Ululon | v-run | [th-because | b-overwhelm]
 
 *Ululon runs because of the surge.*
 :::
@@ -477,23 +477,23 @@ z-Ululon | v-pour | th-CAUSE | [th-if | b-overwhelm]
 
 English *because* and *if* can hide whether you **assert the dependent as a world fact**. Agalan puts that choice on the pole: **`thurugum`** asserts the condition as the reason the outcome rests on; **`thadorom`** does not (the outcome is under that opportunity). *Only if* vs *only because* is the same factivity split on the necessary pole.
 
-> `zazawan vawalal thurugum barl zanunul.`
+> `zazawan vawalal thurugum banunul.`
 >
-> z-Azawan | v-walk | [th-because | b-that-clause] | z-rain
+> z-Azawan | v-walk | [th-because | b-rain]
 >
 > "Azawan walks because it rains." Rain is asserted as the reason.
 
-> `zazawan vawalal thadorom barl zanunul.`
+> `zazawan vawalal thadorom banunul.`
 >
-> z-Azawan | v-walk | [th-if | b-that-clause] | z-rain
+> z-Azawan | v-walk | [th-if | b-rain]
 >
 > "Azawan walks if it rains." Rain is not asserted; the main sentence is under that opportunity.
 
-English *If he'd left, the door would still be locked* is not this pole. Write bookmark [*as-of*](relations.md#as-of) (`hobomam`) plus [RESIDUE](knowing.md#residue) / [PREDICT](intention.md#predict) as needed, with **no** `thadorom`. `thadorom` stays speaker-now opportunity (*if it rains*). *If it rains, the Friday tab still stands* may stack both: `thadorom` plus a **date** in *as-of* `/b/` (still one `barl`).
+English *If he'd left, the door would still be locked* is not this pole. Write bookmark [*as-of*](relations.md#as-of) (`hobomam`) plus [RESIDUE](knowing.md#residue) / [PREDICT](intention.md#predict) as needed, with **no** `thadorom`. `thadorom` stays speaker-now opportunity (*if it rains*). *If it rains, the Friday tab still stands* may stack both: `thadorom` plus a **date** in *as-of* `/b/`.
 
-> `zadorol gologem thonenom thelezom hobomam barl zululon vebarum.`
+> `zadorol gologel thonenom thelezom hobomam barl zululon vebarul.`
 >
-> [z-door | g-restriction] | th-RESIDUE | th-predict | [h-as-of.bookmark | b-that-clause] | z-Ululon | v-abandonment
+> [z-door | g-locked] | th-RESIDUE | th-PREDICT | [h-as-of.bookmark | b-that-clause] | z-Ululon | v-departure
 >
 > "If Ululon had left, the door would still be locked."
 
@@ -529,7 +529,7 @@ A one-off episode and a standing pattern use the same poles. Add extra words for
 >
 > [z-rain | [g-if | b-cloud]] | h-always
 >
-> "Rain if there are clouds, as a standing pattern."
+> "Rain comes if there are clouds, as a standing pattern."
 
 **Compare with:** *always* / *every* / *never* as exceptionlessness uses [universality](knowing.md#universality) (NATURAL **`thabelel`**). **CAUSE** is **`thegegam`**.
 
@@ -561,8 +561,8 @@ Short drills for Advanced. Try each item before opening **Show answer**. **`thur
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *test-tube* | `ezubel` | |
-| *lab coat* | `alabal` | |
 | *melt* | `emelel` | |
+| *run* | `vurunul` | |
 | *fire* | `urel` | |
 | *sit* | `vajul` | `ajul` *chair* |
 | *pour* | `vorurul` | |
@@ -589,9 +589,9 @@ z-Ululon | v-pour | [th-because | b-that-clause] | z-Uhubun | v-see
 **2.** *Azawan pours if there is a test-tube.* (the test-tube is not asserted)
 
 ::: details Show answer
-`zazawan vorurul thadorom barl zezubel.`
+`zazawan vorurul thadorom bezubel.`
 
-z-Azawan | v-pour | [th-if | b-that-clause] | z-test-tube
+z-Azawan | v-pour | [th-if | b-test-tube]
 :::
 
 **3.** *Azawan may be pouring.* (*could be*, not a world-reason)
@@ -610,7 +610,7 @@ z-Azawan | th-MAY | v-pour
 z-Azawan | th-MAY | v-sit | [th-because | b-that-clause] | z-Ululon | v-pour
 :::
 
-**5.** *Melt if there is fire, as a standing pattern.*
+**5.** *Melting happens if there is fire, as a standing pattern.*
 
 ::: details Show answer
 `zemelel gadorom burel hual.`
@@ -618,30 +618,30 @@ z-Azawan | th-MAY | v-sit | [th-because | b-that-clause] | z-Ululon | v-pour
 [z-melt | [g-if | b-fire]] | h-always
 :::
 
-**6.** *If Ululon had poured, the test-tube would still sit.*
+**6.** *If Ululon had poured, the test-tube would still be melting.*
 
 ::: details Show answer
-`zezubel vajul thonenom thelezom hobomam barl zululon vorurul.`
+`zezubel vemelel thonenom thelezom hobomam barl zululon vorurul.`
 
-z-test-tube | v-sit | th-RESIDUE | th-predict | [h-as-of.bookmark | b-that-clause] | z-Ululon | v-pour
+z-test-tube | v-melt | th-RESIDUE | th-PREDICT | [h-as-of.bookmark | b-that-clause] | z-Ululon | v-pour
 :::
 
 #### Agalan → English
 
-**1.** `zazawan vorurul thurugum barl zurel.`
+**1.** `zazawan vorurul thurugum burel.`
 
 ::: details Show answer
 
-z-Azawan | v-pour | [th-because | b-that-clause] | z-fire
+z-Azawan | v-pour | [th-because | b-fire]
 
 *Azawan pours because there is fire.*
 :::
 
-**2.** `zululon vorurul thadorom barl zezubel.`
+**2.** `zululon vorurul thadorom bezubel.`
 
 ::: details Show answer
 
-z-Ululon | v-pour | [th-if | b-that-clause] | z-test-tube
+z-Ululon | v-pour | [th-if | b-test-tube]
 
 *Ululon pours if there is a test-tube.*
 :::
@@ -664,22 +664,22 @@ z-Ululon | th-MAY | v-pour | [th-because | b-that-clause] | z-Uhubun | v-see
 *Ululon may be pouring, because Uhubun sees.*
 :::
 
-**5.** `zalabal gadorom burel hual.`
+**5.** `zazawan vurunul thadorom burel hual.`
 
 ::: details Show answer
 
-[z-lab-coat | [g-if | b-fire]] | h-always
+z-Azawan | v-run | [th-if | b-fire] | h-always
 
-*A lab coat if there is fire, as a standing pattern.*
+*Azawan always runs if there is fire.*
 :::
 
-**6.** `zezubel vajul thonenom thelezom hobomam barl zululon vorurul.`
+**6.** `zezubel vemelel thonenom thelezom hobomam barl zululon vorurul.`
 
 ::: details Show answer
 
-z-test-tube | v-sit | th-RESIDUE | th-predict | [h-as-of.bookmark | b-that-clause] | z-Ululon | v-pour
+z-test-tube | v-melt | th-RESIDUE | th-PREDICT | [h-as-of.bookmark | b-that-clause] | z-Ululon | v-pour
 
-*If Ululon had poured, the test-tube would still sit.*
+*If Ululon had poured, the test-tube would still be melting.*
 :::
 
 ## See also

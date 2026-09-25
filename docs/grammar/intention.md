@@ -52,7 +52,7 @@ To predict a later event, such as rain or a result, put **`thelezo`** before the
 
 > `thelezom vanunul.`
 >
-> th-predict | v-rain
+> th-PREDICT | v-rain
 >
 > "I predict it will rain."
 
@@ -79,9 +79,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *punch* | `vubunul` | |
 | *scream* | `vazagal` | |
 | *fight* | `vuvugul` | |
-| *climb* | `ugumul` | |
-| *stand* | `adanal` | |
-| *run* | `urunul` | |
 
 #### English → Agalan
 
@@ -104,9 +101,9 @@ z-Ululon | th-plan-sketch | d-pawn | v-see
 **3.** *Azawan plans to tell Uhubun.*
 
 ::: details Show answer
-`zazawan themabal buhubun vezehel.`
+`zazawan buhubun themabal vezehel.`
 
-z-Azawan | [th-plan-itinerary | b-Uhubun] | v-tell
+z-Azawan | b-Uhubun | th-plan-itinerary | v-tell
 :::
 
 **4.** *I predict Azawan will sit.*
@@ -114,7 +111,7 @@ z-Azawan | [th-plan-itinerary | b-Uhubun] | v-tell
 ::: details Show answer
 `zazawan thelezom vajul.`
 
-z-Azawan | th-predict | v-sit
+z-Azawan | th-PREDICT | v-sit
 :::
 
 **5.** *Uhubun plans to see Azawan.*
@@ -138,7 +135,7 @@ z-Ululon | th-plan-atlas | d-Azawan | v-punch
 ::: details Show answer
 `zululon thelezom vazagal.`
 
-z-Ululon | th-predict | v-scream
+z-Ululon | th-PREDICT | v-scream
 :::
 
 **8.** *Ululon is fully prepared to fight.*
@@ -169,11 +166,11 @@ z-Azawan | th-plan-sketch | d-pawn | v-see
 *Azawan intends to see a pawn.*
 :::
 
-**3.** `zuhubun themabal bazawan vezehel.`
+**3.** `zuhubun bazawan themabal vezehel.`
 
 ::: details Show answer
 
-z-Uhubun | [th-plan-itinerary | b-Azawan] | v-tell
+z-Uhubun | b-Azawan | th-plan-itinerary | v-tell
 
 *Uhubun plans to tell Azawan.*
 :::
@@ -182,16 +179,16 @@ z-Uhubun | [th-plan-itinerary | b-Azawan] | v-tell
 
 ::: details Show answer
 
-th-predict | v-sit
+th-PREDICT | v-sit
 
 *I predict someone will sit.*
 :::
 
-**5.** `zazawan themabam buhubun vezehel.`
+**5.** `zazawan buhubun themabam vezehel.`
 
 ::: details Show answer
 
-z-Azawan | [th-plan-sketch | b-Uhubun] | v-tell
+z-Azawan | b-Uhubun | th-plan-sketch | v-tell
 
 *Azawan intends to tell Uhubun.*
 :::
@@ -218,7 +215,7 @@ z-Uhubun | th-plan-atlas | v-scream
 
 ::: details Show answer
 
-th-predict | v-fight
+th-PREDICT | v-fight
 
 *I predict someone will fight.*
 :::
@@ -235,7 +232,7 @@ English *can* and *can't* usually sit in front of the verb (*can sing*, *can't s
 #### Can (`xa`)
 <a id="can"></a>
 
-To say someone **can** do something you name with one verb (*sing*, *walk*), or **can** have a quality you name with one adjective (*see*), keep that verb or adjective. After the root, add **`x`** and **`a`**, then the usual ending. Keep the first letter the same: `/v/` for an action, `/ɡ/` for a quality. You do not need a separate helping verb like English *can*. If you are not talking about ability, leave the word ordinary. (Cue: **a** ≈ add — capability is in)
+To say someone **can** do something you name with one verb (*sing*, *walk*), or **can** have a quality you name with one adjective, keep that verb or adjective. After the root, add **`x`** and **`a`**, then the usual ending. Keep the first letter the same: `/v/` for an action, `/ɡ/` for a quality. You do not need a separate helping verb like English *can*. If you are not talking about ability, leave the word ordinary. (Cue: **a** ≈ add — capability is in)
 
 > `zazawan vuzunuxal.`
 >
@@ -247,11 +244,30 @@ The same idea as a quality uses `/ɡ/`: `zazawan guzunuxal` (*Azawan is able to 
 
 The ending still belongs to that verb or adjective (**-l** concrete, **-m** abstract, **-n** proper, **-r** resume). It does not change what kind of *can* you mean:
 
-> `zululon vuwuruxam.`
+> `zululon vuzunuxam.`
 >
-> z-Ululon | v-authorship-able
+> z-Ululon | v-expression-able
 >
-> "Ululon can author."
+> "Ululon can express themself."
+
+#### Can be (role + ability)
+<a id="role-ability"></a>
+
+To say someone **can be** a doer, place, undergoer, or recipient, not that they can do the act, put the ability vowel on a [role compound](roles.md#role-compounds) used as a kind on `/ɡ/`. Write the role compound, then **`x`** and the ability vowel, then the ending. This works only on `/ɡ/`, the same slot that says *is a teacher* ([classification](predication.md#classification)).
+
+> `zululon gaxuwuruxam.`
+>
+> z-Ululon | g-agent-x-authorship-able
+>
+> "Ululon can be the author."
+
+> `zazawan gaxedegexul.`
+>
+> z-Azawan | g-agent-x-teach-unable-irreversible
+>
+> "Azawan can never be a teacher."
+
+**Compare with:** `vedegexal` is *can teach* (the act). `gaxedegexal` is *can be a teacher* (fit for the role).
 
 #### Can't (`xe` / `xo` / `xu`)
 <a id="ability-changeability"></a>
@@ -339,7 +355,7 @@ To say both that an event will happen later and how you reached that forecast, u
 
 > `thelezom thabawam vanunul.`
 >
-> th-predict | th-PATTERN | v-rain
+> th-PREDICT | th-PATTERN | v-rain
 >
 > "From the usual pattern, I predict it will rain."
 
@@ -372,9 +388,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *punch* | `vubunul` | |
 | *scream* | `vazagal` | |
 | *fight* | `vuvugul` | |
-| *climb* | `ugumul` | |
-| *stand* | `adanal` | |
-| *run* | `urunul` | |
+| *climb* | `vugumul` | |
+| *stand* | `vadanal` | |
+| *run* | `vurunul` | |
 
 #### English → Agalan
 
@@ -389,9 +405,9 @@ z-Ululon | th-DECISION-modifiable | v-sit
 **2.** *Azawan has decided to tell Uhubun, and can still change that.*
 
 ::: details Show answer
-`zazawan thehegem buhubun vezehel.`
+`zazawan buhubun thehegem vezehel.`
 
-z-Azawan | [th-DECISION-modifiable | b-Uhubun] | v-tell
+z-Azawan | b-Uhubun | th-DECISION-modifiable | v-tell
 :::
 
 **3.** *Uhubun has decided for now to write.*
@@ -407,7 +423,7 @@ z-Uhubun | th-DECISION-temporary | v-write
 ::: details Show answer
 `zululon thelezom thabawam vajul.`
 
-z-Ululon | th-predict | th-PATTERN | v-sit
+z-Ululon | th-PREDICT | th-PATTERN | v-sit
 :::
 
 **5.** *Azawan plans to sit, and that choice is final.*
@@ -478,13 +494,13 @@ z-Ululon | th-DECISION-irreversible | v-write
 *Ululon has decided for good to write.*
 :::
 
-**3.** `thelezom thabawam vezehel.`
+**3.** `thelezom thabawam vazagal.`
 
 ::: details Show answer
 
-th-predict | th-PATTERN | v-tell
+th-PREDICT | th-PATTERN | v-scream
 
-*From the usual pattern, I predict someone will tell.*
+*From the usual pattern, I predict someone will scream.*
 :::
 
 **4.** `zuhubun theheger vajul.`
@@ -505,11 +521,11 @@ z-Azawan | th-DECISION-temporary | d-pen | v-see
 *Azawan has decided for now to see a pen.*
 :::
 
-**6.** `zululon themabal thehegel buhubun vezehel.`
+**6.** `zululon buhubun themabal thehegel vezehel.`
 
 ::: details Show answer
 
-z-Ululon | th-plan-itinerary | [th-DECISION-irreversible | b-Uhubun] | v-tell
+z-Ululon | b-Uhubun | th-plan-itinerary | th-DECISION-irreversible | v-tell
 
 *Ululon plans to tell Uhubun, and that choice is final.*
 :::
@@ -566,15 +582,15 @@ z-Azawan | v-climb
 
 > `thelezom hobomam b_#22,7 vanunul. xazawan thelezom hobomar vawalal.`
 >
-> th-predict | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | th-predict | h-as-of.bookmark | v-walk
+> th-PREDICT | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | th-PREDICT | h-as-of.bookmark | v-walk
 >
-> "From then, it would rain. Azawan would walk."
+> "Taking 22 July as now (a placeholder), it would rain. Azawan would walk too, on the same placeholder."
 
 > `zululon thehegem vawalal helerem b_#22,7.`
 >
 > z-Ululon | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 >
-> "Ululon has decided to walk — the pick is revisable now; the walking is scored as of 22 July."
+> "As of 22 July, Ululon had decided to walk, and that pick is still revisable now."
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
@@ -607,15 +623,15 @@ Short drills for Advanced. Try each item before opening **Show answer**. PLAN an
 z-Ululon | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
 :::
 
-**2.** *From then, it would rain.*
+**2.** *Taking 22 July as now (a placeholder), it would rain.*
 
 ::: details Show answer
 `thelezom hobomam b_#22,7 vanunul.`
 
-th-predict | [h-as-of.bookmark | b-_22,7] | v-rain
+th-PREDICT | [h-as-of.bookmark | b-_22,7] | v-rain
 :::
 
-**3.** *Ululon has decided to walk — the pick is revisable now; the walking is as of 22 July.*
+**3.** *As of 22 July, Ululon had decided to walk, and that pick is still revisable now.*
 
 ::: details Show answer
 `zululon thehegem vawalal helerem b_#22,7.`
@@ -629,9 +645,9 @@ z-Ululon | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 
 ::: details Show answer
 
-th-predict | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | th-predict | h-as-of.bookmark | v-walk
+th-PREDICT | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | th-PREDICT | h-as-of.bookmark | v-walk
 
-*From then, it would rain. Azawan would walk.*
+*Taking 22 July as now (a placeholder), it would rain. Azawan would walk too, on the same placeholder.*
 :::
 
 **2.** `zululon themabam vawalal helerem b_#22,7.`
@@ -649,7 +665,7 @@ z-Ululon | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
 
 z-Ululon | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 
-*Ululon has decided to walk — the pick is revisable now; the walking is as of 22 July.*
+*As of 22 July, Ululon had decided to walk, and that pick is still revisable now.*
 :::
 
 ## See also

@@ -63,10 +63,10 @@ Audit in waves; each wave treats earlier waves as settled. Pages within a wave a
 
 | Status | Page | Covered | Date |
 |--------|------|---------|------|
-| [ ] | `knowing.md` |  |  |
-| [ ] | `causation.md` |  |  |
-| [ ] | `intention.md` |  |  |
-| [ ] | `values.md` |  |  |
+| [x] | `knowing.md` | all | 2026-09-24 |
+| [x] | `causation.md` | all | 2026-09-24 |
+| [x] | `intention.md` | all | 2026-09-24 |
+| [x] | `values.md` | all | 2026-09-24 |
 
 ### Wave 6 — overview and reference
 
@@ -115,3 +115,13 @@ Audit in waves; each wave treats earlier waves as settled. Pages within a wave a
 - **Values motive is need root + mid-word `th` + `o` + ending** (`…thom`), never `…xom`.
 - **SAME `gonunun` / `gonunur` are unassigned;** examples use only **-l** / **-m**.
 - **A `/w/` hedge goes before the classifying `/ɡ/`.**
+- **A recipient `/b/` goes before a clause-level `/th/` mood word** (`zazawan buhubun themabal vezehel`), never right after it.
+- **Closed mood words (MAY, evidentials, RESIDUE, FORMER, NOTIONAL, universality, CAUSE) are `/th/` stance words,** never `/h/`; only the *as-of* pair `helerem` / `hobomam` is `/h/`.
+- **After a pole, a noun condition goes straight into `/b/`** (`thurugum banunul`); `barl` is only for a full dependent sentence with a verb.
+- **RULE's named frame is an ordinary kind in `/b/`** (`thebebel bozogel`), not an **-n** name.
+- **Every values ending is spelled with mid-word `th`** (`…thal`, `…thum`) in tables and prose alike, never `…x…`.
+- **Ownership is `goborum` / `globorum` (abstract -m),** never literal `goborul` *copyright*.
+- **Prescription with -l / -m says *serve* the need;** *protect* is reserved for protective **-r**.
+- **CAUSE `thegegam` always stacks on a pole;** bare CAUSE is not used.
+- **Noun-only pole sentences are generic laws;** their English supplies a verb (*Rain comes if there are clouds*).
+- **The *as-of* pair has no fixed position,** like other free `/h/` words.

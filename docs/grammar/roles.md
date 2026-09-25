@@ -22,7 +22,7 @@ English *a teacher* names who teaches as a kind, from the same idea as *teach*. 
 
 The last letter is the ordinary [reference ending](word-endings.md): **-l** takes the stem’s everyday concrete sense, **-m** the published abstract. `zaxedegel` is *a teacher*; `zaxuvugul` is *a fighter*; `zaxuvugum` is *a struggler*. Non-resume names the **lexical** role. You do not need a prior teaching or fight in the talk.
 
-**Compare with:** *can teach* puts the stance vowel **right** of **`x`** ([ability](intention.md#ability): `vedegexal`). A teacher puts the role vowel **left** of **`x`**.
+**Compare with:** *can teach* puts the stance vowel **right** of **`x`** ([ability](intention.md#ability): `vedegexal`). A teacher puts the role vowel **left** of **`x`**. Both together, on `/ɡ/` only, mean *can be a teacher* (`gaxedegexal` — [role + ability](intention.md#role-ability)).
 
 ### This instance (`-r`)
 

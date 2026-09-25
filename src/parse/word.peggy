@@ -15,6 +15,12 @@
     return ending === "l" || ending === "m" || ending === "n";
   }
 
+  // Role + ability (`gaxedegexal` *fit to be a teacher*) is classification only: `/ɡ/`.
+  function roleAbilityPosOk(pos, body) {
+    const f = body.family;
+    return !(f && f.kind === "x" && f.xFamily === "role" && f.stanceVowel) || pos === "g";
+  }
+
   function makeWord(raw, fields) {
     const word = { raw, ...fields };
     if (word.gl === false) delete word.gl;
@@ -173,7 +179,7 @@ probe_prefixedX
         family: body.family,
       });
     }
-  / pos:Pos body:xWord EOF {
+  / pos:Pos body:xWord &{ return roleAbilityPosOk(pos, body); } EOF {
       return makeWord(text(), {
         pos,
         ending: body.ending,
@@ -511,7 +517,7 @@ prefixedWord
         family: body.family,
       });
     }
-  / pos:Pos body:PrefixedBody {
+  / pos:Pos body:PrefixedBody &{ return roleAbilityPosOk(pos, body); } {
       return makeWord(text(), {
         pos,
         ending: body.ending,
@@ -553,16 +559,19 @@ SpanOpen
       };
     }
 
+// Optional ability tail (`x` + stance vowel) on `/ɡ/` only: *fit to be* that role (intention.md § Ability).
 RoleCompound
-  = roleV:("a" / "e" / "u" / "o") "x" root:ContentRoot ending:Ending plural:PluralSuffix? WordEnd {
+  = roleV:("a" / "e" / "u" / "o") "x" root:ContentRoot ability:("x" v:[aeou] { return v; })? ending:Ending plural:PluralSuffix? WordEnd {
+      const fields = {
+        leftRoots: [],
+        roleVowel: roleV,
+        rightRoots: [root],
+      };
+      if (ability) fields.stanceVowel = ability;
       return {
         ending,
         plural: !!plural,
-        family: xFamily("role", {
-          leftRoots: [],
-          roleVowel: roleV,
-          rightRoots: [root],
-        }),
+        family: xFamily("role", fields),
       };
     }
 

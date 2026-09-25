@@ -1,7 +1,7 @@
 # Knowing
 <a id="knowing"></a>
 
-English *I think* often smuggles a **guess** (*I think Ululon is leaving Uhubun* = maybe that is so) without saying whether you are checking. **MAY** marks the clause as **potential**: it *could be* so. Keep the ordinary verb and add a small `/h/` word.
+English *I think* often smuggles a **guess** (*I think Ululon is leaving Uhubun* = maybe that is so) without saying whether you are checking. **MAY** marks the clause as **potential**: it *could be* so. Keep the ordinary verb and add a small `/th/` word.
 
 ## Beginner
 <a id="beginner"></a>
@@ -11,7 +11,7 @@ English *I think* often smuggles a **guess** (*I think Ululon is leaving Uhubun*
 
 When the scene **could be** so (rejection, a blow, a loss — not a warrant), keep the content verb (*leaves*, *punches*, *cries*) and add **`odoho`** as a [stance](clause.md#stance-th) word (`/th/`). Start with **`thodohom`**: could be. (cue: 💭 *thought*: a balloon over the scene)
 
-The leaving or the blow is still the event named in the *could be*. Without the `/th/` word you are reporting what happens. The same root can still be ordinary content (`zodohol` *a thought*; `vodohol` *to think* as a deliberate action).
+The leaving or the blow is still the event named in the *could be*. Without the `/th/` word you are reporting what happens. The same root can still be ordinary content (`zodohol` *a thought*); plain *think* is its own root, `vuduhul`.
 
 > `zululon thodohom vebarul duhubun.`
 >
@@ -19,7 +19,7 @@ The leaving or the blow is still the event named in the *could be*. Without the 
 >
 > "Ululon may be leaving Uhubun." — could be (default)
 
-**Compare with:** `zazawan vodohol.` is *Azawan thinks* (an action of thinking). **`thodohom`** is *the scene may be so*. A bare `zululon vebarul duhubun.` reports the leaving.
+**Compare with:** `zazawan vuduhul.` is *Azawan thinks* (an action of thinking). **`thodohom`** is *the scene may be so*. A bare `zululon vebarul duhubun.` reports the leaving.
 
 The same `/th/` word can sit on a yes/no ask. Use **-l** when you are **finding out**:
 
@@ -72,7 +72,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Write *
 | *tell* | `vezehel` | `ezehel` *speech* |
 | *departure* | `vebarul` | `ebarul` *departure* |
 | *cry* | `vogorol` | |
-| *thought* (event) | `vodohol` | `odohol` *thought* |
+| *think* | `vuduhul` | |
 | *MAY* | `thodohom` | `odohol` *thought* |
 | *MAY-find-out* | `thodohol` | `odohol` *thought* |
 | *MAY-who-knows* | `thodohor` | `odohol` *thought* |
@@ -125,9 +125,9 @@ z-Azawan | th-MAY-who-knows | v-cry
 **6.** *Azawan thinks.* (deliberate event, not MAY)
 
 ::: details Show answer
-`zazawan vodohol.`
+`zazawan vuduhul.`
 
-z-Azawan | v-thought
+z-Azawan | v-think
 :::
 
 **7.** *Ululon may be fighting.*
@@ -175,11 +175,11 @@ z-Uhubun | th-MAY-find-out | v-departure | d-Azawan
 *Uhubun may be leaving Azawan — I'll find out.*
 :::
 
-**4.** `zululon vodohol.`
+**4.** `zululon vuduhul.`
 
 ::: details Show answer
 
-z-Ululon | v-thought
+z-Ululon | v-think
 *Ululon thinks.* (an event of thinking, not MAY)
 :::
 
@@ -197,7 +197,7 @@ z-Azawan | th-MAY-who-knows | v-scream
 ::: details Show answer
 
 j-question | z-Ululon | th-MAY | v-punch | d-Azawan
-*May Ululon be punching Azawan?* (could be; default)
+*Could Ululon be punching Azawan?* (could be; default)
 :::
 
 **7.** `zululon thodohol vuvugul.`
@@ -292,7 +292,7 @@ Pick one evidential **root** for how you know.
 <a id="former-climate"></a>
 <a id="episode-standing"></a>
 
-English *has walked* and *used to walk* often smuggle **when** the event sits. Agalan already places events with [*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, [LIVE](#live-vs-memory) / [WITNESSED](#live-vs-memory), or [PREDICT](intention.md#predict). These two `/h/` moods do **not** locate time. They say how the episode **stands**: whether an outcome **still counts on the current tally**, or whether a usual pattern is **not the climate you are claiming now**. Stack them with a channel or a when-frame; do not use them as a past or present letter.
+English *has walked* and *used to walk* often smuggle **when** the event sits. Agalan already places events with [*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, [LIVE](#live-vs-memory) / [WITNESSED](#live-vs-memory), or [PREDICT](intention.md#predict). These two `/th/` moods do **not** locate time. They say how the episode **stands**: whether an outcome **still counts on the current tally**, or whether a usual pattern is **not the climate you are claiming now**. Stack them with a channel or a when-frame; do not use them as a past or present letter.
 
 **RESIDUE** (`oneno`) marks leftover balance: the result is still on the books (an unpaid tab, a door that is still shut). Skipping it means you are not claiming current residue (archived, or a fresh event with nothing left to count). Ordinary `zonenom` is still *debt*.
 
@@ -316,27 +316,27 @@ English *has walked* and *used to walk* often smuggle **when** the event sits. A
 
 **Compare with:** [*after*](dependents.md#dependent-clauses) (`helabam badorol`) orders two events. **`thonenom`** does not say the leaving was earlier; it says the **outcome still counts**. [LIVE](#live-vs-memory) is how you know, not leftover balance. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
 
-**FORMER** (`emebe`) marks **former climate**: this verb-claim is usual weather that you are **not** giving as today’s report. [Always](restrictors.md) **`hual`** is still the current climate (exceptions listed). [COMMON](knowing.md#universality) **`thugudol`** is how exceptionless that current weather is. Ordinary `zemebem` is still *emptiness*.
+**FORMER** (`emebe`) marks **former climate**: this verb-claim is usual weather that you are **not** giving as today’s report. [Always](restrictors.md) **`hual`** is still the current climate (exceptions listed). [COMMON](#universality) **`thugudol`** is how exceptionless that current weather is. Ordinary `zemebem` is still *emptiness*.
 
 > `zazawan hual vezehel themebem.`
 >
 > z-Azawan | h-always | v-tell | th-FORMER
 >
-> "Azawan always telling is not the current climate."
+> "Azawan always tells — a former pattern, not today's."
 
 > `zazawan hual vezehel themebem thadezem.`
 >
 > z-Azawan | h-always | v-tell | th-FORMER | th-LIVE
 >
-> "Azawan always telling is not the current climate — live / from the scene." (the nest in view is empty)
+> "Azawan always tells — a former pattern, not today's; seen live." (the scene is in view, and the pattern is still not today's)
 
 > `zazawan hual vezehel themebem thelezom.`
 >
-> z-Azawan | h-always | v-tell | th-FORMER | th-predict
+> z-Azawan | h-always | v-tell | th-FORMER | th-PREDICT
 >
-> "Azawan always telling will not be the current climate — forecast."
+> "Azawan always tells — a pattern that will be former by then (forecast)."
 
-**Compare with:** **`hual`** without **`themebem`** is *always* as the weather you stand behind now. PATTERN **`thabawam`** is *how you know* (a trail of cases), not “this used to be my weather.” Do not write **`themebem`** immediately before **`hual`**: that slot is the restrictor’s occasion list (*always except when…*). Keep **`hual`** first (bare *always*), then **FORMER** after the verb, the way [COMMON](knowing.md#universality) sits after **`hual`**. **`themebem`** is not a past tense: it is legal under LIVE and PREDICT.
+**Compare with:** **`hual`** without **`themebem`** is *always* as the weather you stand behind now. PATTERN **`thabawam`** is *how you know* (a trail of cases), not “this used to be my weather.” Do not write **`themebem`** immediately before **`hual`**: that slot is the restrictor’s occasion list (*always except when…*). Keep **`hual`** first (bare *always*), then **FORMER** after the verb, the way [COMMON](#universality) sits after **`hual`**. **`themebem`** is not a past tense: it is legal under LIVE and PREDICT.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -497,7 +497,7 @@ z-Ululon | th-NOTIONAL | v-scream
 z-Azawan | th-LIVE | th-RESIDUE | v-tell | b-Uhubun
 :::
 
-**10.** *Ululon always tells — live; that is not the current climate.*
+**10.** *Ululon always tells — a former pattern, not today's; seen live.*
 
 ::: details Show answer
 `zululon hual vezehel themebem thadezem.`
@@ -593,7 +593,7 @@ z-Uhubun | th-WITNESSED | th-RESIDUE | v-tell | b-Azawan
 
 z-Azawan | h-always | v-tell | th-FORMER
 
-*Azawan always telling is not the current climate.*
+*Azawan always tells — a former pattern, not today's.*
 :::
 
 ## Advanced
@@ -634,31 +634,31 @@ The same published roots stay ordinary content under other role letters. The clo
 | `zonenom` | noun | *debt* |
 | `zemebem` | noun | *emptiness* |
 
-> `zazawan zadadel vejel.`
+> `zazawan vejel dadadel.`
 >
-> z-Azawan | z-theater | v-see
+> z-Azawan | v-see | d-theater
 >
 > "Azawan sees a theater."
 
 ### Reconstructive catch
 <a id="reconstructive-catch"></a>
 
-**`uvuvu`** is reconstructive: you pull something back, and it may not be what you hoped. The punchline can be a **boot**. Ordinary **`abodo`** *boot* is still available as content.
+**`uvuvu`** is reconstructive: you pull something back, and it may not be what you hoped (a fishing line can come up with a boot). Memory can be wrong, so **`thuvuvum`** marks the claim as recalled, not as checked now.
 
-> `zazawan thuvuvum dabodol vejel.`
+> `zazawan thuvuvum vejel dabodol.`
 >
-> z-Azawan | th-WITNESSED | d-boot | v-see
+> z-Azawan | th-WITNESSED | v-see | d-boot
 >
-> "Azawan sees a boot — from memory."
+> "Azawan saw a boot — as I remember it."
 
 ### Residue against a snapshot
 <a id="as-of-standing"></a>
 
 [RESIDUE](#residue) and [FORMER](#former-climate) without a hosted pair score against **today’s** books. To score them against a dated now, add [*as-of*](relations.md#as-of). LIVE plus *as-of* puts the camera in that snapshot. WITNESSED plus *as-of* is memory of a scene whose internal now is the snapshot. Write **`thuvuvum`** again on the next memory clause; resume the books with **`helerer`**. [MAY](#may) still evaluates from speech-now.
 
-> `zululon thonenom helerem b_#22,7 vebarum.`
+> `zululon thonenom helerem b_#22,7 vebarul.`
 >
-> z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment
+> z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 >
 > "As of 22 July, Ululon’s leaving still counted."
 
@@ -668,23 +668,23 @@ The same published roots stay ordinary content under other role letters. The clo
 >
 > "Azawan is walking — we're there on 22 July."
 
-> `zululon thuvuvum helerem b_#22,7 thonenom vebarum. xazawan thuvuvum helerer vawalal.`
+> `zululon thuvuvum helerem b_#22,7 thonenom vebarul. xazawan thuvuvum helerer vawalal.`
 >
-> z-Ululon | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-abandonment . x-Azawan | th-WITNESSED | h-as-of.ledger | v-walk
+> z-Ululon | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure . x-Azawan | th-WITNESSED | h-as-of.ledger | v-walk
 >
-> "I remember: as of 22 July, Ululon had still left. Azawan is walking — still from memory, same day in the books."
+> "I remember: as of 22 July, Ululon's leaving still counted. Azawan was walking — also from memory, against the same books."
 
 > `zazawan hual vezehel themebem helerem b_#22,7.`
 >
 > z-Azawan | h-always | v-tell | th-FORMER | [h-as-of.ledger | b-_22,7]
 >
-> "As of 22 July, Azawan always telling was not that stretch’s climate."
+> "As of 22 July, Azawan's always telling was already a former pattern."
 
 [NOTIONAL](#notional) may stack with *as-of* (*as if, from Friday’s books*). Serious English *if he had* stays bookmark `hobomam`, not play.
 
-> `zululon thadadem helerem b_#22,7 vebarum.`
+> `zululon thadadem helerem b_#22,7 vebarul.`
 >
-> z-Ululon | th-NOTIONAL | [h-as-of.ledger | b-_22,7] | v-abandonment
+> z-Ululon | th-NOTIONAL | [h-as-of.ledger | b-_22,7] | v-departure
 >
 > "As if, from the 22 July books, Ululon were leaving."
 
@@ -701,7 +701,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Score l
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Ululon* | `ululon` |
-| *departure* | `vebarum` |
+| *departure* | `vebarul` |
 | *walk* | `vawalal` |
 | *RESIDUE* | `thonenom` |
 | *WITNESSED* | `thuvuvum` |
@@ -714,9 +714,9 @@ Short drills for Advanced. Try each item before opening **Show answer**. Score l
 **1.** *As of 22 July, Ululon’s leaving still counted.*
 
 ::: details Show answer
-`zululon thonenom helerem b_#22,7 vebarum.`
+`zululon thonenom helerem b_#22,7 vebarul.`
 
-z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment
+z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 :::
 
 **2.** *Azawan is walking — we're there on 22 July.*
@@ -727,48 +727,48 @@ z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment
 z-Azawan | th-LIVE | [h-as-of.ledger | b-_22,7] | v-walk
 :::
 
-**3.** *As of 22 July the leaving still stood — and from now, that leftover could be.*
+**3.** *As of 22 July, Ululon's leaving may still have counted.*
 
 ::: details Show answer
-`zululon thodohom thonenom helerem b_#22,7 vebarum.`
+`zululon thodohom thonenom helerem b_#22,7 vebarul.`
 
-z-Ululon | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment
+z-Ululon | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 :::
 
 #### Agalan → English
 
-**1.** `zululon thuvuvum helerem b_#22,7 thonenom vebarum.`
+**1.** `zululon thuvuvum helerem b_#22,7 thonenom vebarul.`
 
 ::: details Show answer
 
-z-Ululon | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-abandonment
+z-Ululon | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure
 
-*I remember: as of 22 July, Ululon had still left.*
+*I remember: as of 22 July, Ululon's leaving still counted.*
 :::
 
-**2.** `zululon thuvuvum helerem b_#22,7 thonenom vebarum. xazawan thuvuvum helerer vawalal.`
+**2.** `zululon thuvuvum helerem b_#22,7 thonenom vebarul. xazawan thuvuvum helerer vawalal.`
 
 ::: details Show answer
 
-z-Ululon | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-abandonment . x-Azawan | th-WITNESSED | h-as-of.ledger | v-walk
+z-Ululon | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure . x-Azawan | th-WITNESSED | h-as-of.ledger | v-walk
 
-*I remember: as of 22 July, Ululon had still left. Azawan is walking — still from memory, same day in the books.*
+*I remember: as of 22 July, Ululon's leaving still counted. Azawan was walking — also from memory, against the same books.*
 :::
 
-**3.** `zululon thodohom thonenom helerem b_#22,7 vebarum.`
+**3.** `zululon thodohom thonenom helerem b_#22,7 vebarul.`
 
 ::: details Show answer
 
-z-Ululon | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-abandonment
+z-Ululon | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 
-*As of 22 July the leaving still stood — and from now, that leftover could be.*
+*As of 22 July, Ululon's leaving may still have counted.*
 :::
 
 ### Universality
 <a id="universality"></a>
 <a id="universality-mood"></a>
 
-English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Keep *who / when* on the [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / …). Write exceptionlessness as a closed `/h/` mood root (optional `/w/` immediately before a `/ɡ/`). You can then pair *always* with *usually*, *by definition*, and the rest without changing the domain fence.
+English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Keep *who / when* on the [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / …). Write exceptionlessness as a closed `/th/` mood root (optional `/w/` immediately before a `/ɡ/`). You can then pair *always* with *usually*, *by definition*, and the rest without changing the domain fence.
 
 > `zazawan hual vawalal thugudol.`
 >
@@ -784,19 +784,19 @@ The default *always* is *usually* (exceptions expected), not *must happen that w
 | **`thabulul`** | UNCOUNTERED (search) | *as far as checked* (no counterexample comes to mind) | `abulul` *pill* | 💊: you take it to treat an ailment; the search found none |
 | **`tharazal`** | FORMAL | *by definition* / math / proof | `arazal` *star* | ⭐: a charted constellation does not wander |
 | **`thabelel`** | NATURAL | *by natural necessity* (unsupported objects fall) | `abelel` *apple* | 🍎: it falls because the world works that way |
-| **`thebebel`** | RULE | *under a named frame* (`thebebel begezel`) | `ebebel` *pepper* | 🌶️: heat that applies in that dish |
+| **`thebebel`** | RULE | *under a named frame* (`thebebel bozogel`) | `ebebel` *pepper* | 🌶️: heat that applies in that dish |
 
-**Compare with:** *who / when* uses [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory. Usual weather you are **not** claiming now is [FORMER](knowing.md#former-climate) (`themebem`), not COMMON.
+**Compare with:** *who / when* uses [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory. Usual weather you are **not** claiming now is [FORMER](#former-climate) (`themebem`), not COMMON.
 
-**For *I saw a pattern*, use:** [evidential](knowing.md#evidentiality) **`abawa`**. **`ugudo`** is usual-weather universality; NATURAL **`abele`** stacks a separate evidential `/th/` for how you know.
+**For *I saw a pattern*, use:** [evidential](#evidentiality) **`abawa`**. **`ugudo`** is usual-weather universality; NATURAL **`abele`** stacks a separate evidential `/th/` for how you know.
 
 | Agalan | Use | English |
 |--------|-----|---------|
 | `… hual … thugudol` | default universality | *always, usually* |
 | `… hual … thabulul` | search found no counterexample | *always, as far as checked* |
-| `zual gagurel … tharazal` | definition / proof | *every square, by definition* |
+| `zual gaxedegel vedegel tharazal` | definition / proof | *every teacher teaches, by definition* |
 | `… hual … thabelel` + evidential `/th/` | nature plus how you know | *always, by natural necessity* (e.g. `thabawam`) |
-| `… hual … thebebel begezel` | named frame | *always, under chess* |
+| `… hal … thebebel bozogel` | named frame | *never, under soccer rules* |
 | `zuam gagadal … thugudol` | open domain + usual universality | *every cat that comes to mind, usually* |
 
 ### Translation practice
@@ -818,16 +818,22 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *FORMAL* | `tharazal` | `arazal` *star* | ⭐: a charted constellation does not wander |
 | *NATURAL* | `thabelel` | `abelel` *apple* | 🍎: it falls because the world works that way |
 | *RULE* | `thebebel` | `ebebel` *pepper* | 🌶️: heat that applies in that dish |
+| *always* | `hual` | | |
+| *never* | `hal` | | |
 | *write* | `vuwurul` | | |
 | *sit* | `vajul` | `ajul` *chair* | |
 | *think* | `vuduhul` | | |
 | *punch* | `vubunul` | | |
 | *scream* | `vazagal` | | |
-| *book* | `abogol` | | |
+| *agent-teach* | `gaxedegel` | `edegel` *teach* | |
+| *agent-fight* | `gaxuvugul` | `uvugul` *fight* | |
+| *teach* | `vedegel` | | |
+| *fight* | `vuvugul` | | |
 | *claim* | `adadam` | `adadal` *trademark* | |
 | *proof* | `eregum` | `eregul` *receipt* | |
-| *intellect* | `uburum` | `uburul` *brain* | |
-| *school* | `ahalal` | | |
+| *soccer* | `ozogel` | | |
+| *cat* | `agadal` | | |
+| *sleep* | `velebel` | `elebel` *sleep* | |
 | evidential *pattern* | `abawam` | `abawal` *paw-prints* | 🐾: a trail of what usually happens |
 
 #### English → Agalan
@@ -848,28 +854,28 @@ z-Ululon | h-always | v-write | th-COMMON
 z-Azawan | h-always | v-sit | th-UNCOUNTERED
 :::
 
-**3.** *Every book, by definition.*
+**3.** *Every teacher teaches, by definition.*
 
 ::: details Show answer
-`zual gabogol tharazal.`
+`zual gaxedegel vedegel tharazal.`
 
-[z-everything-but | g-book] | th-FORMAL
+[z-everything-but | g-agent-x-teach] | v-teach | th-FORMAL
 :::
 
-**4.** *Uhubun always thinks, by natural necessity* (plus a trail of cases).
+**4.** *Every cat sleeps, by natural necessity* (plus a trail of cases).
 
 ::: details Show answer
-`zuhubun hual vuduhul thabelel thabawam.`
+`zual gagadal velebel thabelel thabawam.`
 
-z-Uhubun | h-always | v-think | th-NATURAL | th-PATTERN
+[z-everything-but | g-cat] | v-sleep | th-NATURAL | th-PATTERN
 :::
 
-**5.** *Ululon always punches, under school.*
+**5.** *Ululon never punches, under soccer rules.*
 
 ::: details Show answer
-`zululon hual vubunul thebebel bahalan.`
+`zululon hal vubunul thebebel bozogel.`
 
-z-Ululon | h-always | v-punch | [th-RULE | b-Ahalan]
+z-Ululon | h-never | v-punch | [th-RULE | b-soccer]
 :::
 
 **6.** *Every claim that comes to mind, usually.*
@@ -900,30 +906,31 @@ z-Ululon | h-always | v-write | th-UNCOUNTERED
 *Ululon always writes, as far as checked.*
 :::
 
-**3.** `zual guburum tharazal.`
+**3.** `zual gaxuvugul vuvugul tharazal.`
 
 ::: details Show answer
 
-[z-everything-but | g-intellect] | th-FORMAL
+[z-everything-but | g-agent-x-fight] | v-fight | th-FORMAL
 
-*Every intellect, by definition.*
+*Every fighter fights, by definition.*
 :::
 
-**4.** `zuhubun hual vuwurul thabelel thabawam.`
+**4.** `zual gagadal vuduhul thabelel thabawam.`
 
 ::: details Show answer
 
-z-Uhubun | h-always | v-write | th-NATURAL | th-PATTERN
-*Uhubun always writes, by natural necessity* (plus a trail of cases).
+[z-everything-but | g-cat] | v-think | th-NATURAL | th-PATTERN
+
+*Every cat thinks, by natural necessity* (plus a trail of cases).
 :::
 
-**5.** `zululon hual vazagal thebebel bahalan.`
+**5.** `zazawan hal vajul thebebel bozogel.`
 
 ::: details Show answer
 
-z-Ululon | h-always | v-scream | [th-RULE | b-Ahalan]
+z-Azawan | h-never | v-sit | [th-RULE | b-soccer]
 
-*Ululon always screams, under school.*
+*Azawan never sits, under soccer rules.*
 :::
 
 **6.** `zuam geregum thugudol.`
@@ -942,4 +949,4 @@ z-Ululon | h-always | v-scream | [th-RULE | b-Ahalan]
 - Forecast stacked with a channel: [intention.md](intention.md#plan-predict)
 - Clock / date / when-frames: [numbers-applied.md](numbers-applied.md#time)
 - Habitual *always*: [restrictors.md](restrictors.md)
-- Usual-climate universality: [Knowing](knowing.md#universality)
+- Usual-climate universality: [Universality](#universality)

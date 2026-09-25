@@ -42,13 +42,13 @@ When you want to say that a named belonging **serves** this need (pays it off), 
 ### How it is appreciated (endings on met)
 <a id="value-contact"></a>
 
-On a *serves* word, **-l / -m / -r** say **how the payoff is appreciated**: through body and the scene you can sense, through thinking or memory, or through a big-picture step-back. Those are ways of appreciating the meet, not a ranking. Relatedness *between people* is still the need **`onogo`**.
+On a *serves* word, **-l / -m / -r** say **how the payoff is appreciated**: through body and the scene you can sense, through thinking or memory, or through a big-picture step-back. Those are ways of appreciating the payoff, not a ranking. Relatedness *between people* is still the need **`onogo`**.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…xal` | appreciated through body and the scene you can sense | *physical* | **-l** ≈ locked (on the scene you can touch) |
-| `…xam` | appreciated through thinking, memory, gratitude you take in | *mental* | **-m** ≈ open (in the head) |
-| `…xar` | appreciated through a big-picture step-back | *spiritual* | **-r** ≈ resume (to a larger frame) |
+| `…thal` | appreciated through body and the scene you can sense | *physical* | **-l** ≈ locked (on the scene you can touch) |
+| `…tham` | appreciated through thinking, memory, gratitude you take in | *mental* | **-m** ≈ open (in the head) |
+| `…thar` | appreciated through a big-picture step-back | *spiritual* | **-r** ≈ resume (to a larger frame) |
 
 > `zohohul golozothal.`
 >
@@ -71,9 +71,9 @@ That ending is **changeability**: how lasting that detriment is. If you do not k
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…xul` | the detriment is fixed as far as you can tell | *irreversible* | **-l** ≈ locked |
-| `…xum` | effort or circumstance may soften the detriment (soft default if unknown) | *modifiable* | **-m** ≈ open to change |
-| `…xur` | the detriment has no lasting impact | *temporary* | **-r** ≈ light (this moment only) |
+| `…thul` | the detriment is fixed as far as you can tell | *irreversible* | **-l** ≈ locked |
+| `…thum` | effort or circumstance may soften the detriment (soft default if unknown) | *modifiable* | **-m** ≈ open to change |
+| `…thur` | the detriment has no lasting impact | *temporary* | **-r** ≈ light (this moment only) |
 
 > `zabogol golozothum.`
 >
@@ -250,7 +250,7 @@ z-fire | [w-autonomy-unmet-irreversible | g-stimulus]
 ### Emotion compose
 <a id="emotion-compose"></a>
 
-When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: a [value](values.md) on the situation, how activated the charge is, and where you put it. Put the value on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](values.md#stimulus) **`gobobum`** when the noun is not yours, then **one ACT** and **one LOCUS** as `/th/` (or `/w/` immediately before that adjective). You can then say the take without smuggling a single emotion word.
+When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: a [value](#values) on the situation, how activated the charge is, and where you put it. Put the value on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](#stimulus) **`gobobum`** when the noun is not yours, then **one ACT** and **one LOCUS** as `/th/` (or `/w/` immediately before that adjective). You can then say the take without smuggling a single emotion word.
 
 > `zezehel wolozothur gobobum thogegam thanedem.`
 >
@@ -283,7 +283,7 @@ Under `/z/` or `/v/` the ordinary noun or verb uses the published literal ending
 |---------|---------|
 | `zezehel wolozothur gobobum thogegam thanedem` | *anxious about the dialogue* (competence at stake, temporary; surge; room awash) |
 | `zezawam wonogothum gobobum thogegam thorurum` | *resentful about the division* (unmet relatedness; surge poured onto them) |
-| `zebegum golozotham thogegam thabobom` | *proud of the draft* (met competence, mental channel; surge bottled) |
+| `zebegum golozotham thogegam thabobom` | *proud of the draft* (met competence, appreciated mentally; surge bottled) |
 | `zememol wonogothum gobobum thozowom thorurum` | *resentful about the memo* (unmet relatedness; stillness pooling at them) |
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
@@ -294,7 +294,7 @@ Raw feeling (contacting a sensation without judgment) may go unlabeled. Full com
 ### Prescription (`the`): ought this act for this need
 <a id="value-force"></a>
 
-When English puts *should* / *ought to* on the **doing** for a named need (*Uhubun ought to sing to protect survival*), put `/th/` on the clause: need root, mid-word **`th`**, **`e`**, then an ending. The **host verb** names the act that ought to count toward the need. Prescription **`the`** gives the clause **deontic** force: you are stating obligation, not reporting that the act is already happening.
+When English puts *should* / *ought to* on the **doing** for a named need (*Uhubun ought to sing to serve survival*), put `/th/` on the clause: need root, mid-word **`th`**, **`e`**, then an ending. The **host verb** names the act that ought to count toward the need. Prescription **`the`** gives the clause **deontic** force: you are stating obligation, not reporting that the act is already happening.
 
 That ending says why you think a move is welcome. Use **-l** when the person invited this move, explicitly or through a clear standing invitation. Use **-m** for an unsolicited offer meant to serve the need. Use **-r** for an unsolicited protective move meant to prevent detriment to the need. These endings describe the move's warrant and aim, not whether it succeeds. How firmly you put the act on the addressee stays on `/j/` (**`jel`** / **`jem`**, **`jal`** / **`jam`**). If no such warrant applies, drop **`the`**.
 
@@ -308,9 +308,9 @@ That ending says why you think a move is welcome. Use **-l** when the person inv
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…xel` | the person invited this kind of move | *invited* | **-l** ≈ locked to the invitation |
-| `…xem` | an unsolicited offer meant to serve the need | *offered* | **-m** ≈ open offer |
-| `…xer` | an unsolicited move meant to prevent detriment to the need | *protective* | **-r** ≈ resume safety |
+| `…thel` | the person invited this kind of move | *invited* | **-l** ≈ locked to the invitation |
+| `…them` | an unsolicited offer meant to serve the need | *offered* | **-m** ≈ open offer |
+| `…ther` | an unsolicited move meant to prevent detriment to the need | *protective* | **-r** ≈ resume safety |
 
 > `zazawan vezehel thonogothem.`
 >
@@ -322,7 +322,7 @@ That ending says why you think a move is welcome. Use **-l** when the person inv
 >
 > z-Uhubun | v-sing | th-survival-ought-invited
 >
-> "Uhubun ought to sing to protect survival (Uhubun asked for a move)."
+> "Uhubun ought to sing to serve survival (Uhubun asked for a move)."
 
 > `zululon vobowol thonogother.`
 >
@@ -333,9 +333,7 @@ That ending says why you think a move is welcome. Use **-l** when the person inv
 ### Motive (`tho`): preference standing
 <a id="value-preference"></a>
 
-<!-- EDITOR TODO (consistency audit, wave 5): motive is need root + mid-word `th` + `o` + ending (`…thol` / `…thom` / `…thor`). The preference-standing table and prose here still spell `…xol` / `…xom` / `…xor`; make every motive form use `th` + `o`. -->
-
-English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the need root, mid-word **`th`**, **`o`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or from protecting against something that detracts from the need. If you do not know the standing, use **-m**. **-n** is ordinary [proper](word-endings.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…xom`** plus **`hual`**).
+English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the need root, mid-word **`th`**, **`o`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or from protecting against something that detracts from the need. If you do not know the standing, use **-m**. **-n** is ordinary [proper](word-endings.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…thom`** plus **`hual`**).
 
 > `zazawan vezehel thonogothom.`
 >
@@ -349,9 +347,9 @@ English *have to* / *need to* / *doing this for…* often names a **motive**: wh
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…xol` | the situation pulls this motive | *circumstantial* | **-l** ≈ locked to the scene |
-| `…xom` | the agent’s own reason (soft default if unknown) | *internal* | **-m** ≈ open / from inside |
-| `…xor` | motive as protecting against unmet (away-from) | *protective* | **-r** ≈ resume away from detriment |
+| `…thol` | the situation pulls this motive | *circumstantial* | **-l** ≈ locked to the scene |
+| `…thom` | the agent’s own reason (soft default if unknown) | *internal* | **-m** ≈ open / from inside |
+| `…thor` | motive as protecting against unmet (away-from) | *protective* | **-r** ≈ resume away from detriment |
 
 ### Which ending table?
 
@@ -373,7 +371,7 @@ Beginner already attached `/ɡ/` after a noun and `/th/` on the clause for met a
 | `g…tha…` after a noun | praise: **your** noun serves the need | *my gift (serves relatedness)* (`gonogotha…`) |
 | `g…thu…` after a noun | criticism: **your** noun detracts from the need | *my book (detracts from competence)* (`golozothu…`) |
 | `g…tho…` after a noun | **your** noun’s purpose is this need | *my gift for relatedness* (`gonogotho…`) |
-| `/w/` need + `gobobum` | the same stances on a noun that is **not** yours | *the gathering (detracts from autonomy)* (`walodoxu… gobobum`) |
+| `/w/` need + `gobobum` | the same stances on a noun that is **not** yours | *the gathering (detracts from autonomy)* (`walodothu… gobobum`) |
 | `gl-` + value | the same adjective before the **belonging** | `glonogothal zawaral` |
 | `th…tha…` on the clause | the event serves the need | *tells: competence is met* (`tholozotha…`) |
 | `th…the…` on the clause | deontic prescription | *ought … for this need* (`thonogothe…`); ending = [invited / offered / protective](#value-force) |
@@ -406,7 +404,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *prayer bead* | `abarel` | |
 | *candle* | `anedel` | |
 | *bell* | `obelel` | |
-| *ownership* | `oborul` | `oborul` *ownership* |
+| *ownership* | `oborum` | `oborul` *copyright* |
 | *stimulus* | `gobobum` | `obobul` *emphasis* |
 | *pray* | `vabal` | `abal` *pray* |
 | *kneel* | `vegenel` | `egenel` *kneel* |
@@ -440,7 +438,7 @@ z-Azawan | v-tell | th-relatedness-ought-offered
 z-Uhubun | v-sleep | th-pleasure-ought-offered
 :::
 
-**3.** *Ululon ought to scream to protect survival (Ululon asked for a move).*
+**3.** *Ululon ought to scream to serve survival (Ululon asked for a move).*
 
 ::: details Show answer
 `zululon vazagal thuhuhethel.`
@@ -499,9 +497,9 @@ z-Ululon | v-pray | th-competence-motive-internal
 **10.** *Azawan’s church serves relatedness (appreciated physically).*
 
 ::: details Show answer
-`globorul bazawan zuhurul wonogothal gobobum.`
+`globorum bazawan zuhurul wonogothal gobobum.`
 
-[[gl-copyright | b-Azawan] | z-church] | [w-relatedness-met-physical | g-stimulus]
+[[gl-ownership | b-Azawan] | z-church] | [w-relatedness-met-physical | g-stimulus]
 :::
 
 **11.** *Azawan prays: competence is met (physical) and relatedness is the internal motive.*
@@ -512,12 +510,12 @@ z-Ululon | v-pray | th-competence-motive-internal
 z-Azawan | v-pray | th-competence-met-physical | th-relatedness-motive-internal
 :::
 
-**12.** *Ululon ought to scream to protect survival (Ululon asked for a move); survival is the circumstantial motive.*
+**12.** *Ululon ought to scream to serve survival (Ululon asked for a move); relatedness is the circumstantial motive.*
 
 ::: details Show answer
-`zululon vazagal thuhuhethel thuhuhethol.`
+`zululon vazagal thuhuhethel thonogothol.`
 
-z-Ululon | v-scream | th-survival-ought-invited | th-survival-motive-circumstantial
+z-Ululon | v-scream | th-survival-ought-invited | th-relatedness-motive-circumstantial
 :::
 
 #### Agalan → English

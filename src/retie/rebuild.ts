@@ -182,7 +182,8 @@ function rebuildX(
       if (!family.roleVowel || !host) {
         return null;
       }
-      return `${prefix}${family.roleVowel}x${host}${tail}`;
+      const ability = family.stanceVowel ? `x${family.stanceVowel}` : "";
+      return `${prefix}${family.roleVowel}x${host}${ability}${tail}`;
     }
     case "value":
     case "ability": {

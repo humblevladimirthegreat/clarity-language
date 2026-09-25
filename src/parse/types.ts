@@ -73,7 +73,7 @@ export type MorphWordFamily =
       edgeVowel?: "a" | "e" | "o" | "u";
       /** Role vowel (role compound). */
       roleVowel?: "a" | "e" | "u" | "o";
-      /** Values / ability stance vowel. */
+      /** Values / ability stance vowel (also role + ability on `/ɡ/`). */
       stanceVowel?: "a" | "e" | "o" | "u";
       /** Nested number stem (numeric derivation). */
       numberStem?: NumberStem;

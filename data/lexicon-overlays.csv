@@ -39,8 +39,8 @@ emaban,th,🗺️,plan,plan,plan mood proper (this plan-word names a particular 
 emaban,w,🗺️,plan,plan,plan mood proper (this plan-word names a particular object),map charts a route; -n is ordinary proper not a map grain
 emabar,th,🗺️,plan,plan-atlas,plan mood atlas map-resolution (includes backups; fully prepared),map charts a route; atlas plan is so detailed it includes backups
 emabar,w,🗺️,plan,plan-atlas,plan mood atlas map-resolution (includes backups; fully prepared),map charts a route; atlas plan is so detailed it includes backups
-elezom,th,🔭,predict,predict,predict mood (later-event forecast),telescope shows what is far; forecast looks ahead at a distance
-elezom,w,🔭,predict,predict,predict mood (later-event forecast),telescope shows what is far; forecast looks ahead at a distance
+elezom,th,🔭,predict,PREDICT,predict mood (later-event forecast),telescope shows what is far; forecast looks ahead at a distance
+elezom,w,🔭,predict,PREDICT,predict mood (later-event forecast),telescope shows what is far; forecast looks ahead at a distance
 ehegel,th,✅,decision,DECISION-irreversible,decision mood irreversible changeability (settled pick),checkmark confirms a pick; irreversible decision is settled as final
 ehegel,w,✅,decision,DECISION-irreversible,decision mood irreversible changeability (settled pick),checkmark confirms a pick; irreversible decision is settled as final
 ehegem,th,✅,decision,DECISION-modifiable,decision mood modifiable changeability (open to revision),checkmark confirms a pick; modifiable decision stays open to change

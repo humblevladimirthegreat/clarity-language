@@ -437,7 +437,7 @@ Once whose-now is set, [PREDICT](intention.md#predict) is **after** that now, [P
 
 > `zululon thonenom helerem b_#22,7 vebarul. xazawan thelezom hobomam b_#23,7 vawalal.`
 >
-> z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | th-predict | [h-as-of.bookmark | b-_23,7] | v-walk
+> z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | th-PREDICT | [h-as-of.bookmark | b-_23,7] | v-walk
 >
 > "As of 22 July, Ululon had still left. From a 23 July placeholder, Azawan would walk." — a new pair replaces whose-now
 
@@ -501,7 +501,7 @@ z-Azawan | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 ::: details Show answer
 `thelezom hobomam b_#22,7 vanunul.`
 
-th-predict | [h-as-of.bookmark | b-_22,7] | v-rain
+th-PREDICT | [h-as-of.bookmark | b-_22,7] | v-rain
 :::
 
 **4.** *The money as of 22 July.*
@@ -552,7 +552,7 @@ z-Uhubun | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 
 ::: details Show answer
 
-th-predict | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | th-predict | h-as-of.bookmark | v-walk
+th-PREDICT | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | th-PREDICT | h-as-of.bookmark | v-walk
 
 *Taking 22 July as now (a placeholder), it would rain. Azawan would walk too, on the same placeholder.*
 :::

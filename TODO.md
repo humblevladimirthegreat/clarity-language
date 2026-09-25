@@ -14,7 +14,6 @@ reconsider zoel vs zel comparative. Currently zoel mean s same as zel. Maybe zoe
 reconsider dependent inner subject dropping rules. Under what cases should it be safe to drop inner subject?
 consider removing some emotion words from lexicon
 
-do a grammar-docs/ consistency check. Does anything about the grammar seem incorrect, confusing, meaningless, or counterintuitive?
 do a grammar-docs/ suggestion pass. Is there any common english grammar that can't be easily expressed (and not intentionally discouraged)? Could any of the existing grammar be extended into other forms to have intuitive new readings?
 do parser consistency pass. Does the parser completely and accurately encode all the meaning of the grammar?
 do a learning order consistency check for grammar-docs. Does any grammar doc learning band refer to concepts not yet taught?
