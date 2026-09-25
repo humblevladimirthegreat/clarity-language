@@ -70,6 +70,11 @@ function spanCloseFlavor(token: IToken): string | undefined {
   return family?.kind === "spanClose" ? family.flavor : undefined;
 }
 
+/** Stance `/th/` join word (`thul`, `thar`, …); bare `/h/` joins are not standalone. */
+function isStanceJoin(token: IToken): boolean {
+  return token.tokenType === JoinH && (token.payload as LexWord | undefined)?.pos === "th";
+}
+
 function tokenIs(token: IToken, ...types: { tokenTypeIdx?: number }[]): boolean {
   return types.some((type) => token.tokenType === type);
 }
@@ -275,7 +280,7 @@ class AgelanSentenceParser extends CstParser {
         ALT: () => this.SUBRULE(this.gCoord),
       },
       {
-        GATE: () => this.LA(laAfterW(this)).tokenType === H,
+        GATE: () => this.LA(laAfterW(this)).tokenType === H || isStanceJoin(this.LA(1)),
         ALT: () => this.SUBRULE(this.hCoord),
       },
       {
@@ -544,17 +549,28 @@ class AgelanSentenceParser extends CstParser {
     });
   });
 
-  // No standalone `/h/` join: plain `/h/` forms are restrictors, and a stance join closes the stance words before it.
+  // Standalone stance `/th/` join (`thul` *no judgment*, fill-ask `thar` *why?*). No standalone `/h/` join:
+  // plain `/h/` forms are restrictors.
   public hCoordPart = this.RULE("hCoordPart", () => {
-    this.AT_LEAST_ONE({
-      GATE: () => this.LA(laAfterW(this)).tokenType === H,
-      DEF: () => {
-        this.SUBRULE(this.hUnitRule);
+    this.OR([
+      {
+        GATE: () => isStanceJoin(this.LA(1)),
+        ALT: () => this.SUBRULE(this.hJoinClose, { LABEL: "standaloneJoin" }),
       },
-    });
-    this.OPTION(() => {
-      this.SUBRULE(this.hJoinClose);
-    });
+      {
+        ALT: () => {
+          this.AT_LEAST_ONE({
+            GATE: () => this.LA(laAfterW(this)).tokenType === H,
+            DEF: () => {
+              this.SUBRULE(this.hUnitRule);
+            },
+          });
+          this.OPTION(() => {
+            this.SUBRULE2(this.hJoinClose);
+          });
+        },
+      },
+    ]);
   });
 
   // Nothing is SHARED after a /h/ or /th/ join; `/w/` before the join word grades the list.

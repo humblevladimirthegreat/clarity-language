@@ -57,6 +57,12 @@ describe("sentence-parser synthetic", () => {
     assert.deepEqual(raws, ["thuvuvum", "thul"]);
   });
 
+  it("parses a standalone stance join with no /th/ words before it", () => {
+    const units = parseSentenceTokens(tokens("jol zazawan vawalal thar.")).utterances[0]!.bodies[0]!.clause.units;
+    const raws = units.flatMap((u) => (u.kind === "h" ? [u.unit.word.raw] : []));
+    assert.deepEqual(raws, ["thar"]);
+  });
+
   it("rejects leftover tokens after a complete clause", () => {
     assert.throws(() => parseSentenceTokens(tokens("zazawan vawalal xuxul.")), SentenceParseError);
   });

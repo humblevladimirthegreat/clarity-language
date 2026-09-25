@@ -96,6 +96,55 @@ Nothing is SHARED after an `/h/` or `/th/` join. To grade the whole list at once
 
 **Compare with:** *Azawan does not walk* denies the event, so the join goes on the verb (`vawalal vul`) or the clause (`xul`), not on `/th/`.
 
+#### Standalone stance joins
+<a id="standalone-stance-joins"></a>
+
+When English would say how to take a claim without naming any grounds (*at face value*, *no judgment*, *all things considered*), put a `/th/` join with no stance words before it. It works like standalone `zal` *nothing*: the list of stance words is empty, and the join says what that empty stance means. The claim itself is untouched. (cue: same vowels as every other join.)
+
+> `zazawan vawalal thul.`
+>
+> z-Azawan | v-walk | th-not
+>
+> "Azawan walks. No judgment."
+
+In the table, *reason* means any grounds a stance word can give: a cause, a source, a likelihood, or a value.
+
+| Vowel | **-l** | **-m** | **-r** |
+|---|---|---|---|
+| **a** | `thal` *at face value* | `tham` *I don't think there's more to it* | `thar` *for reasons I'm not stating* |
+| **o** | `thol` *no single reason to pick* | `thom` *I'm not sure which reason it is* | `thor` *for some reason or other* |
+| **u** | `thul` *no judgment* | `thum` *not weighing in* | `thur` *not for the reason you'd think* |
+| **ao** | `thaol` *take it however you like* | `thaom` *any framing is fine, I think* | — |
+| **ua** | `thual` *all things considered* | `thuam` *all known things considered* | — |
+| **uo** | `thuol` *anything goes* | `thuom` *anything goes, I think* | — |
+| **e** | `thel` *impartially* | `them` *I don't lean either way* | — |
+| **ae** | `thael` *equally balanced* | `thaem` *equally balanced, I think* | — |
+| **oe** | `thoel` *no decisive grounds* | `thoem` *no decisive reason comes to mind* | — |
+| **ue** | `thuel` *no reason to object* | `thuem` *no objection that I know of* | — |
+
+Under a question, a standalone **-r** stance join is a [fill-ask](questions.md#fill-ask-r) for the grounds. Every vowel takes **-r** there.
+
+> `jol zazawan vawalal thar.`
+>
+> j-question | z-Azawan | v-walk | th-why
+>
+> "Why does Azawan walk?"
+
+| Word | Question |
+|---|---|
+| `thar` | *Why?* |
+| `thor` | *For any reason?* |
+| `thur` | *Why else?* |
+| `thaor` | *How do you want me to take this?* |
+| `thuar` | *What's your overall take?* |
+| `thuor` | *What reasons would you rule out?* |
+| `ther` | *What's the main reason?* |
+| `thaer` | *What are you torn between?* |
+| `thoer` | *What would settle it?* |
+| `thuer` | *What's your objection?* |
+
+**Compare with:** `thul` *no judgment* withholds any stance; **`th+0e`** *no chance* is a stance that the claim is false. `thar` *why?* asks for the speaker's grounds, not what caused the event.
+
 ### Join-act verbs
 <a id="join-act-verbs"></a>
 

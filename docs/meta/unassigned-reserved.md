@@ -102,7 +102,6 @@ Under `/h/` / `/w/`, join spellings beyond the [defined restrictor core](../gram
 
 Source: [join-across-roles.md](../grammar/join-across-roles.md#stance-joins)
 
-- **Standalone** `/th/` joins with no stance word before them (bare `thul` / `thum`, `thal`, …) — no gloss yet (*no stance* / *no reason* readings undecided)
 - **`/th/`…-n** — reserved; no join-relation or sequence reading
 - Rank series (`thel` / `thael` / `thoel` / `thuel`) on stance words — spellings in the table, no worked reading yet
 

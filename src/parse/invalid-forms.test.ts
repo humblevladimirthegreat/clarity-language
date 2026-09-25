@@ -74,11 +74,6 @@ const ROWS: Row[] = [
     rejection: "asOfPerHost",
     valid: "zululon thonenom helerem b_#22,7 vebarul.",
   },
-  {
-    invalid: "zazawan vawalal thul.",
-    rejection: undefined,
-    valid: "zazawan vawalal thurugum banunul thul.",
-  },
   // Grammar-level: a second turn starts only after a period.
   { invalid: "jol jol vazanal.", rejection: undefined, valid: "jol. jol vazanal." },
 ];

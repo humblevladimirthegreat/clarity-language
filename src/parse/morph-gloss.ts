@@ -8,6 +8,7 @@
  * | `zar` fill-ask | `z-who` | `resolve.asks` fill-ask |
  * | `zar` join `-r` | `z-something` | unspecified member |
  * | `zur` fill-ask | `z-who-else` | |
+ * | `thar` / `thur` fill-ask | `th-why` / `th-why-else` | stance grounds |
  * | `jol` / `jom` / `jam` / `jem` / `jum` | `j-question` / `j-soft-question` / `j-soft-statement` / `j-request` / `j-soft-prohibition` | `-m` act words |
  * | `zam` / `zal` | `z-and.open` / `z-and` | open vs closed |
  * | `al` left-edge | `additionally` | isolated word too |
@@ -977,6 +978,9 @@ function fenceJoinLabel(
 
   if (ending === "r") {
     if (ctx.fillAsk) {
+      // Stance fill-ask asks for grounds, not a person.
+      if (pos === "th" && series === "a") return "why";
+      if (pos === "th" && series === "u") return "why-else";
       if (series === "u") return "who-else";
       if (series === "o") return "which";
       if (series === "e") return "which-rank";
