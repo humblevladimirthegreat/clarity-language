@@ -1,7 +1,9 @@
 import type { CstElement, CstNode, IToken } from "chevrotain";
 
 import { classifyTokenBranch, isLexWordPayload, type TokenPayload } from "./tokens.js";
-import type { Clause, LexWord, ParseResult, ResolveInfo } from "./types.js";
+import { POLAR_GROUP, RESTRICTOR_GROUP, type JoinSeries } from "./constructions.js";
+import { numberMarkerIdentity } from "./resolve.js";
+import type { Clause, LexWord, NumberStem, ParseResult, ResolveInfo } from "./types.js";
 
 /** `overlay.<sense_form>.<pos>` for one lexicon-overlays.csv row. */
 export function overlayConstructionId(overlay: { senseForm: string; pos: string }): string {
@@ -22,7 +24,80 @@ export function wordConstructions(word: LexWord): string[] {
   if (word.gl) ids.push("word.gl");
   // Classify re-reads a fused hook compound as content; the fusion is still its own construction.
   if (word.hookCompound) ids.push("word.family.hookCompound");
+  ids.push(...featureConstructions(word));
   return ids;
+}
+
+/** Digitless-exponent class: which lesson a shorthand like `e`, `0e`, `e3`, `1e` belongs to. */
+function digitlessExpClass(stem: NumberStem, exp: string): string {
+  const negative = stem.marker === "-" || stem.marker === "ru";
+  if (exp.includes("-e-") || (negative && exp === "e-")) return "imaginary";
+  if (/^[+±-]?0e/.test(exp)) return "zero";
+  if (/^e\d/.test(exp)) return "bareOom";
+  if (/^\d+e/.test(exp)) return "hyperbole";
+  return "landmark";
+}
+
+/** `number.*` features of one stem (numbers.md lessons). */
+function numberFeatures(stem: NumberStem): string[] {
+  const ids = [`number.marker.${numberMarkerIdentity(stem.marker)}`];
+  if (stem.groups.length === 0 && !stem.digitlessExp) ids.push("number.digitless");
+  if (stem.groups.length > 1) ids.push("number.groups");
+  if (stem.calendarOrdinal) ids.push("number.calendar");
+  if (stem.digitlessExp) ids.push(`number.exp.${digitlessExpClass(stem, stem.digitlessExp)}`);
+  for (const group of stem.groups) {
+    if (group.exponentDigits) ids.push("number.exponent");
+    if (group.decimal) ids.push("number.decimal");
+    if (group.percent) ids.push("number.percent");
+  }
+  return ids;
+}
+
+const NUMBER_POS = new Set(["v", "h", "th", "j", "x"]);
+
+/** Per-form features of a family whose forms are taught in different sections. */
+function featureConstructions(word: LexWord): string[] {
+  const { family } = word;
+  if (word.hookCompound) return [`hook.${word.hookCompound.hook}`];
+  if (family.kind === "number") {
+    const ids = numberFeatures(family.stem);
+    if (family.writingEndingMark) ids.push(`number.writingMark.${family.writingEndingMark}`);
+    if (word.pos && NUMBER_POS.has(word.pos)) ids.push(`number.pos.${word.pos}`);
+    return ids;
+  }
+  if (family.kind === "x") {
+    const ids: string[] = [];
+    if (family.numberStem) ids.push(...numberFeatures(family.numberStem));
+    if (family.xFamily === "value" && family.stanceVowel) {
+      ids.push(`value.stance.${family.stanceVowel}`);
+      if (word.ending === "l" || word.ending === "m" || word.ending === "r") ids.push(`value.ending.${family.stanceVowel}.${word.ending}`);
+    }
+    if (family.xFamily === "span") {
+      if (family.typeVowel) ids.push(`span.type.${family.typeVowel}`);
+      if (family.edgeVowel) ids.push(`span.edge.${family.edgeVowel}`);
+      if (word.ending === "l" || word.ending === "m" || word.ending === "n" || word.ending === "r") ids.push(`span.ending.${word.ending}`);
+    }
+    if (family.xFamily === "role") {
+      if (family.roleVowel) ids.push(`role.vowel.${family.roleVowel}`);
+      if (word.ending === "r") ids.push("role.instance");
+    }
+    return ids;
+  }
+  if (family.kind === "spanClose") return [`span.close.${family.flavor}`];
+  if (family.kind === "writingSpan") return family.marks.map((mark) => `span.mark.${mark}`);
+  if (family.kind === "hook") return [`hook.${family.form}`];
+  if (family.kind === "hookCompound") return [`hook.${family.hook}`];
+  if (family.kind === "joinMarker" && !word.overlay) {
+    const { series } = family;
+    if (word.reading === "standIn") return [`standIn.${series}`];
+    if (word.reading === "restrictor") return [`restrictor.${RESTRICTOR_GROUP[series as JoinSeries]}`];
+    if (word.pos === "j") {
+      if (series.length > 1) return [`polar.${POLAR_GROUP[series as keyof typeof POLAR_GROUP]}`];
+      return word.ending === "m" ? [`force.${series}`, "force.soft"] : [`force.${series}`];
+    }
+    if (word.reading === "join") return [`join.${series}`];
+  }
+  return [];
 }
 
 function addToken(token: IToken, out: Set<string>): void {

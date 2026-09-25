@@ -60,6 +60,10 @@ describe("construction registry", () => {
       ["zodogol om banabal.", "reading.existence"],
       ["jol.", "reading.bareQuestion"],
       ["zazawan vawalal thodohom.", "overlay.odohom.th"],
+      // Per-form features of families taught across sections.
+      ["zazawan zululon zal vawalal.", "join.a"],
+      ["jol zazawan vawalal.", "force.o"],
+      ["zazawan vawalal hual.", "restrictor.always"],
     ];
     for (const [input, expected] of cases) {
       const ids = parse(input, undefined, { constructions: true }).constructions ?? [];
