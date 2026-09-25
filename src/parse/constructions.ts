@@ -8,9 +8,12 @@
  * - `token.*` — `classifyTokenBranch` branches (which slot a word may fill).
  * - `word.*` — typed morph / lexicon fields (`Record<>` keeps them complete).
  * - `resolve.*` — anaphor kind × bound / unbound.
+ * - `overlay.*` — one per closed overlay row; the anchor lives in
+ *   data/lexicon-overlays.csv ({@link constructionRegistry}).
  *
  * Anchors are `page.md#id` under docs/grammar/ and must resolve.
  */
+import { overlayConstructionId } from "./construction-trace.js";
 import type { TokenBranch } from "./tokens.js";
 import type { AnaphorKind, Ending, LexReading, MorphWordFamily, Pos, XFamily } from "./types.js";
 
@@ -174,24 +177,28 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
   compound: { anchor: "x-compounds.md#ordinary-compound-order", summary: "ordinary x compound" },
 };
 
-export const WORD_READING_CONSTRUCTIONS: Record<LexReading, ConstructionEntry> = {
+/** Readings only a closed overlay produces; those words trace `overlay.*` instead. */
+type OverlayOnlyReading =
+  | "mood"
+  | "locative"
+  | "similative"
+  | "ofRelation"
+  | "exchange"
+  | "proxy"
+  | "stimulus"
+  | "joinAct"
+  | "joinRelation";
+
+/** Non-overlay readings (an overlay word traces `overlay.*`, not `word.reading.*`). */
+export const WORD_READING_CONSTRUCTIONS: Record<Exclude<LexReading, OverlayOnlyReading>, ConstructionEntry> = {
   ordinary: { anchor: "clause.md#role-letters", summary: "ordinary content reading" },
   value: { anchor: "values.md#need-inventory", summary: "need reading" },
   ability: { anchor: "intention.md#ability", summary: "ability reading" },
   greeting: { anchor: "x-compounds.md#conversation-length", summary: "conversation-length bid" },
   restrictor: { anchor: "restrictors.md#beginner", summary: "restrictor" },
-  mood: { anchor: "knowing.md#may", summary: "closed stance mood" },
-  locative: { anchor: "relations.md#locative-relations", summary: "locative relation" },
-  similative: { anchor: "relations.md#beginner", summary: "similative" },
-  ofRelation: { anchor: "relations.md#of-relations", summary: "of-relation" },
-  exchange: { anchor: "relations.md#exchange", summary: "exchange" },
-  proxy: { anchor: "relations.md#proxy", summary: "proxy" },
-  stimulus: { anchor: "values.md#personal-possession", summary: "stimulus" },
   join: { anchor: "joins.md#join-type-vowel-series", summary: "join" },
   standIn: { anchor: "dependents.md#stand-in", summary: "stand-in" },
   standInNamed: { anchor: "dependents.md#stand-in-roles", summary: "named stand-in" },
-  joinAct: { anchor: "join-across-roles.md#join-act-verbs", summary: "join-act verb" },
-  joinRelation: { anchor: "join-across-roles.md#join-relations", summary: "join-relation" },
   number: { anchor: "numbers.md#digits", summary: "number" },
   unknown: { anchor: "word-endings.md#citation-forms", summary: "unclassified root" },
 };
@@ -255,7 +262,7 @@ function prefixed(prefix: string, entries: Record<string, ConstructionEntry>): [
   return Object.entries(entries).map(([key, entry]) => [`${prefix}.${key}`, entry]);
 }
 
-/** Every construction ID → entry. */
+/** Every construction ID → entry, except `overlay.*` ({@link constructionRegistry}). */
 export const CONSTRUCTIONS: ReadonlyMap<string, ConstructionEntry> = new Map([
   ...prefixed("sentence", SENTENCE_CONSTRUCTIONS),
   ...prefixed("token", TOKEN_CONSTRUCTIONS),
@@ -269,6 +276,17 @@ export const CONSTRUCTIONS: ReadonlyMap<string, ConstructionEntry> = new Map([
   ...prefixed("reading", READING_CONSTRUCTIONS),
   ...prefixed("tone", TONE_CONSTRUCTIONS),
 ]);
+
+type OverlayEntrySource = { senseForm: string; pos: string; anchor: string; kind: string; gloss: string };
+
+/** Every construction ID → entry, including one `overlay.*` entry per closed overlay row. */
+export function constructionRegistry(overlays: Iterable<OverlayEntrySource>): Map<string, ConstructionEntry> {
+  const registry = new Map(CONSTRUCTIONS);
+  for (const o of overlays) {
+    registry.set(overlayConstructionId(o), { anchor: o.anchor, summary: `${o.kind} overlay ${o.gloss}` });
+  }
+  return registry;
+}
 
 /**
  * Shapes the grammar docs rule out, checked in [enforce.ts](./enforce.ts). Each

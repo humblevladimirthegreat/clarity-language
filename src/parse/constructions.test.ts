@@ -6,8 +6,10 @@ import { describe, it } from "node:test";
 
 import { grammarHeadings } from "../lint/grammar-anchors.js";
 import { sentenceGrammarKeys } from "./construction-trace.js";
-import { CONSTRUCTIONS, REJECTIONS, SENTENCE_CONSTRUCTIONS } from "./constructions.js";
-import { parse } from "./index.js";
+import { constructionRegistry, REJECTIONS, SENTENCE_CONSTRUCTIONS } from "./constructions.js";
+import { loadDefaultTables, parse } from "./index.js";
+
+const CONSTRUCTIONS = constructionRegistry(loadDefaultTables().overlays.values());
 import { sentenceGrammar } from "./sentence-parser.js";
 
 const grammarDir = join(dirname(fileURLToPath(import.meta.url)), "..", "..", "docs", "grammar");
@@ -18,6 +20,12 @@ describe("construction registry", () => {
     const registered = new Set(Object.keys(SENTENCE_CONSTRUCTIONS).map((key) => `sentence.${key}`));
     assert.deepEqual([...grammar].filter((key) => !registered.has(key)).sort(), [], "grammar keys with no entry");
     assert.deepEqual([...registered].filter((key) => !grammar.has(key)).sort(), [], "entries with no grammar key");
+  });
+
+  it("gives every closed overlay row its own construction", () => {
+    const overlays = [...loadDefaultTables().overlays.values()];
+    assert.ok(overlays.length > 0);
+    for (const o of overlays) assert.ok(CONSTRUCTIONS.has(`overlay.${o.senseForm}.${o.pos}`), `${o.senseForm} + ${o.pos}`);
   });
 
   // A registry anchor names its home section, so it must be that heading's own id
@@ -51,6 +59,7 @@ describe("construction registry", () => {
       ["zodogol gelem.", "reading.existence"],
       ["zodogol om banabal.", "reading.existence"],
       ["jol.", "reading.bareQuestion"],
+      ["zazawan vawalal thodohom.", "overlay.odohom.th"],
     ];
     for (const [input, expected] of cases) {
       const ids = parse(input, undefined, { constructions: true }).constructions ?? [];

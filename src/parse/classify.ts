@@ -98,6 +98,7 @@ function overlayFromRow(row: OverlayRow): LexOverlay {
     gloss: row.gloss,
     definition: row.definition,
     mnemonic: row.mnemonic,
+    anchor: row.anchor,
   };
 }
 

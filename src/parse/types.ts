@@ -141,6 +141,8 @@ export type LexOverlay = {
   gloss: string;
   definition: string;
   mnemonic: string;
+  /** Home section (`page.md#heading-id`) that teaches this overlay. */
+  anchor: string;
 };
 
 export type RootGloss = {

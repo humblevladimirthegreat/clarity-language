@@ -34,7 +34,7 @@ const publishedPath = join(rootDir, "data", "lexicon-published.csv");
 const overlayPath = join(rootDir, "data", "lexicon-overlays.csv");
 const compoundsPath = join(rootDir, "data", "lexicon-compounds.csv");
 
-const OVERLAY_HEADERS = ["sense_form", "pos", "emoji", "kind", "gloss", "definition", "mnemonic"];
+const OVERLAY_HEADERS = ["sense_form", "pos", "emoji", "kind", "gloss", "definition", "mnemonic", "anchor"];
 
 type CliOptions = {
   lexicon: boolean;
@@ -265,6 +265,7 @@ function convertLexicon(only: string[]): void {
           gloss: overlay.gloss,
           definition: overlay.definition,
           mnemonic: overlay.mnemonic,
+          anchor: overlay.anchor,
         })),
       ),
     );

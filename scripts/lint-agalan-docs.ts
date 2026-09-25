@@ -52,9 +52,17 @@ import {
   withinSection,
 } from "../src/lint/learning-order.js";
 import { duplicateIds } from "../src/lint/grammar-anchors.js";
-import { CONSTRUCTIONS } from "../src/parse/constructions.js";
+import { CONSTRUCTIONS as STATIC_CONSTRUCTIONS, constructionRegistry } from "../src/parse/constructions.js";
 import { readingOrder } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { loadDefaultTables } from "../src/parse/index.js";
+
+/**
+ * Static registry plus one `overlay.*` entry per closed overlay row. Overlay rows
+ * are checked only by the report-only learning-order check until it is enforced
+ * (docs/proposals/learning-order-check.md phase 7); the page-level coverage check
+ * covers the static registry.
+ */
+const CONSTRUCTIONS = constructionRegistry(loadDefaultTables().overlays.values());
 import { lineNumberAt } from "../src/retie/tokens.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -149,7 +157,7 @@ type ConstructionUse = { id: string; section: Section };
  */
 function checkConstructionCoverage(uses: readonly ConstructionUse[]): number {
   const unexercised: string[] = [];
-  for (const [id, entry] of CONSTRUCTIONS) {
+  for (const [id, entry] of STATIC_CONSTRUCTIONS) {
     const page = entry.anchor.split("#")[0]!;
     if (uses.some((u) => u.id === id && u.section.page === page)) continue;
     const elsewhere = [...new Set(uses.filter((u) => u.id === id).map((u) => u.section.page))];
@@ -379,7 +387,7 @@ function main(): void {
   console.log("OK: translation word-bank English matches the lexicon.");
   console.log("OK: number pronunciation rows match their shorthand.");
   if (paths.length === 0) {
-    console.log(`OK: ${CONSTRUCTIONS.size} constructions, all exercised by their anchor page.`);
+    console.log(`OK: ${STATIC_CONSTRUCTIONS.size} constructions, all exercised by their anchor page.`);
   }
 }
 

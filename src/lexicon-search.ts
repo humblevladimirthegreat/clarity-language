@@ -71,6 +71,8 @@ export type OverlayRow = {
   gloss: string;
   definition: string;
   mnemonic: string;
+  /** Home section (`page.md#heading-id`) that teaches this overlay. */
+  anchor: string;
 };
 
 export type LexiconSearchResult = PublishedRow & {
@@ -127,6 +129,7 @@ const OVERLAY_HEADERS = [
   "gloss",
   "definition",
   "mnemonic",
+  "anchor",
 ] as const;
 
 /** PoS prefixes (single letters plus `th`) used when a query is a full spelled word. */
@@ -467,6 +470,10 @@ export function parseOverlayCsv(text: string): OverlayRow[] {
     if (!gloss) {
       throw new Error(`Overlay ${senseForm} + ${pos} is missing gloss`);
     }
+    const anchor = (row.anchor ?? "").trim();
+    if (!anchor) {
+      throw new Error(`Overlay ${senseForm} + ${pos} is missing anchor`);
+    }
 
     overlays.push({
       senseForm,
@@ -476,6 +483,7 @@ export function parseOverlayCsv(text: string): OverlayRow[] {
       gloss,
       definition: (row.definition ?? "").trim(),
       mnemonic: (row.mnemonic ?? "").trim(),
+      anchor,
     });
   }
 

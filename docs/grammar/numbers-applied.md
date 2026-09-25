@@ -184,7 +184,7 @@ English *25% of the cats* names a **portion of a whole**. Close a **count** (`ra
 | **`jo`** | percent (portion of a whole) | everyday percent figure (`25` in `25%`); those digits ÷ 100 |
 | **`ju`** | percentage points (point-scale amount or delta) | point figure (`2` in `+2%*`); those digits ÷ 100 |
 
-Digits follow the [normal digit rules](numbers.md#exponents) (including optional **`je`** inside the percent/point reading). Say the digits you mean (`100%` → <!-- lint: skip -->`wo zo zo jo`).
+Digits follow the [normal digit rules](numbers.md#exponents) (including optional **`je`** inside the percent/point reading). Say the digits you mean (`g+100%` → spoken `grawozozojol`).
 
 Order: integer digits, optional **`je`** + fractional digits, then **`jo`** or **`ju`**. **`jo`** / **`ju`** sit on **`ra`** / **`ru`** only. At most one **`jo`** or **`ju`** group in the number word; leave **`ba`** / **`bu`** off that word. Endings still apply (**-l** exact, **-m** about, **-n** conventional label, **-r** resume).
 

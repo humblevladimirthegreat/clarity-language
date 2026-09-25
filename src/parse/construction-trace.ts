@@ -3,13 +3,19 @@ import type { CstElement, CstNode, IToken } from "chevrotain";
 import { classifyTokenBranch, isLexWordPayload, type TokenPayload } from "./tokens.js";
 import type { Clause, LexWord, ParseResult, ResolveInfo } from "./types.js";
 
+/** `overlay.<sense_form>.<pos>` for one lexicon-overlays.csv row. */
+export function overlayConstructionId(overlay: { senseForm: string; pos: string }): string {
+  return `overlay.${overlay.senseForm}.${overlay.pos}`;
+}
+
 function isCstNode(element: CstElement): element is CstNode {
   return "children" in element;
 }
 
 /** Construction IDs a word carries on its own (`word.*`), independent of its slot. */
 export function wordConstructions(word: LexWord): string[] {
-  const ids = [`word.family.${word.family.kind}`, `word.reading.${word.reading}`];
+  // A closed overlay is its own construction (its home is the overlay row's anchor).
+  const ids = [`word.family.${word.family.kind}`, word.overlay ? overlayConstructionId(word.overlay) : `word.reading.${word.reading}`];
   if (word.family.kind === "x") ids.push(`word.xFamily.${word.family.xFamily}`);
   if (word.ending) ids.push(`word.ending.${word.ending}`);
   if (word.plural && word.pos) ids.push(`word.plural.${word.pos}`);

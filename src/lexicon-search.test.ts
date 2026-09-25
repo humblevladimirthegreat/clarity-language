@@ -94,6 +94,7 @@ describe("overlay csv", () => {
           gloss: "COMMON",
           definition: "universality COMMON",
           mnemonic: "",
+          anchor: "knowing.md#universality",
         },
       ],
       [],
