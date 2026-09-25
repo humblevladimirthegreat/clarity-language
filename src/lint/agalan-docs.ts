@@ -8,7 +8,9 @@ import {
 } from "../parse/classify.js";
 import { toneMarkLength } from "../parse/span-scan.js";
 import { letterPrefix } from "../parse/resolve.js";
+import { wordConstructions } from "../parse/construction-trace.js";
 import { parseWithTables } from "../parse/parse-core.js";
+import { classifyTokenBranch } from "../parse/tokens.js";
 import { parseWord, WordParseError } from "../parse/word.js";
 import { forEachMarkdownCodeSpan, forEachMarkdownCodeToken } from "../retie/tokens.js";
 import { isClarityRootShape } from "../word-converter.js";
@@ -327,9 +329,10 @@ export function classifyAgalanSpan(text: string): AgalanSpanClass | "unclassifie
   return "unclassified";
 }
 
-function parseFailure(text: string, tables: ClassifyTables): string | null {
+function parseFailure(text: string, tables: ClassifyTables, used?: Set<string>): string | null {
   try {
-    parseWithTables(text.trim(), tables);
+    const result = parseWithTables(text.trim(), tables, { constructions: used !== undefined });
+    for (const id of result.constructions ?? []) used!.add(id);
     return null;
   } catch (error) {
     return (error instanceof Error ? error.message : String(error)).split("\n")[0]!;
@@ -342,6 +345,7 @@ function lintSpanText(
   tables: ClassifyTables,
   stats: AgalanSpanStats,
   issues: AgalanSpanIssue[],
+  used?: Set<string>,
 ): void {
   const cls = classifyAgalanSpan(text);
   if (cls === "unclassified") {
@@ -354,8 +358,9 @@ function lintSpanText(
     return;
   }
   stats[cls] += 1;
+  if (cls === "word" && used) addWordSpanConstructions(text, tables, used);
   if (cls !== "sentence" && cls !== "phrase") return;
-  const failure = parseFailure(text, tables);
+  const failure = parseFailure(text, tables, used);
   if (failure == null) return;
   issues.push({
     text,
@@ -374,10 +379,28 @@ function decodeEntities(text: string): string {
   return text.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&amp;/g, "&");
 }
 
+/** A single-word span exercises its word-level and slot constructions (`word.*`, `token.*`). */
+function addWordSpanConstructions(text: string, tables: ClassifyTables, used: Set<string>): void {
+  const { core } = peelLintChunk(text.trim());
+  if (!isAgalanLintCandidate(core)) return;
+  try {
+    const word = classify(parseWord(core), tables);
+    used.add(`token.${classifyTokenBranch(word).branch}`);
+    for (const id of wordConstructions(word)) used.add(id);
+  } catch {
+    // The per-word lint reports words that do not parse.
+  }
+}
+
+/**
+ * Lint code spans. When `used` is given, it collects the construction IDs
+ * ([constructions.ts](../parse/constructions.ts)) the page's examples exercise.
+ */
 export function lintAgalanSpans(
   text: string,
   tables: ClassifyTables,
   stats: AgalanSpanStats = emptySpanStats(),
+  used?: Set<string>,
 ): AgalanSpanIssue[] {
   const issues: AgalanSpanIssue[] = [];
 
@@ -400,7 +423,7 @@ export function lintAgalanSpans(
       if (info === "agalan") {
         let offset = 0;
         for (const line of span.text.split("\n")) {
-          if (line.trim()) lintSpanText(line, span.index + offset, tables, stats, issues);
+          if (line.trim()) lintSpanText(line, span.index + offset, tables, stats, issues, used);
           offset += line.length + 1;
         }
         return;
@@ -417,7 +440,7 @@ export function lintAgalanSpans(
       });
       return;
     }
-    lintSpanText(span.text, span.index, tables, stats, issues);
+    lintSpanText(span.text, span.index, tables, stats, issues, used);
   });
 
   // HTML <code> (used where a span holds `<…>`, which Vue would read as a tag).

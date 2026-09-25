@@ -303,6 +303,8 @@ export type AmbiguityConflict = {
 export type ParseOptions = {
   /** When set, collect first-match collisions that the grammar does not resolve. */
   checkAmbiguity?: boolean;
+  /** When set, report the construction IDs the parse used ([constructions.ts](./constructions.ts)). */
+  constructions?: boolean;
 };
 
 export type ParseResult = {
@@ -311,6 +313,8 @@ export type ParseResult = {
   resolve?: ResolveInfo;
   /** Present only when `checkAmbiguity` is on. */
   ambiguity?: AmbiguityConflict[];
+  /** Construction IDs the parse used (sorted). Present only when `constructions` is on. */
+  constructions?: string[];
 };
 
 // ── Stage 4 resolve ─────────────────────────────────────────────────────────

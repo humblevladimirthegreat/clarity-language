@@ -4,13 +4,14 @@ import { readFileSync } from "node:fs";
 import { parse, SentenceParseError } from "./index.js";
 
 const USAGE = [
-  "Usage: node scripts/parse.mjs [--check-ambiguity] '<Agalan text>' ['<Agalan text>' ...]",
-  "       node scripts/parse.mjs [--check-ambiguity] - < inputs.txt   (one input per line)",
+  "Usage: node scripts/parse.mjs [--check-ambiguity] [--constructions] '<Agalan text>' ['<Agalan text>' ...]",
+  "       node scripts/parse.mjs [--check-ambiguity] [--constructions] - < inputs.txt   (one input per line)",
 ].join("\n");
 
 const raw = process.argv.slice(2);
 const checkAmbiguity = raw.includes("--check-ambiguity");
-const args = raw.filter((arg) => arg !== "--check-ambiguity");
+const constructions = raw.includes("--constructions");
+const args = raw.filter((arg) => arg !== "--check-ambiguity" && arg !== "--constructions");
 
 // Each argument is one input; `-` (or no arguments with piped stdin) reads one input per line.
 const readStdin = args.includes("-") || (args.length === 0 && !process.stdin.isTTY);
@@ -28,7 +29,7 @@ if (inputs.length === 0) {
 
 if (inputs.length === 1) {
   try {
-    console.log(JSON.stringify(parse(inputs[0]!, undefined, { checkAmbiguity }), null, 2));
+    console.log(JSON.stringify(parse(inputs[0]!, undefined, { checkAmbiguity, constructions }), null, 2));
   } catch (error) {
     if (error instanceof SentenceParseError) {
       console.error(error.message);
@@ -40,7 +41,7 @@ if (inputs.length === 1) {
   let failed = false;
   const results = inputs.map((input) => {
     try {
-      return { input, result: parse(input, undefined, { checkAmbiguity }) };
+      return { input, result: parse(input, undefined, { checkAmbiguity, constructions }) };
     } catch (error) {
       // Record any failure (sentence or word level) so one bad input does not end the batch.
       failed = true;

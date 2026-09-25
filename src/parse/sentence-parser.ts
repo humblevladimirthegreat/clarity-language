@@ -144,7 +144,7 @@ class AgelanSentenceParser extends CstParser {
         ALT: () => {
           this.SUBRULE(this.leftEdge);
           this.OPTION(() => {
-            this.SUBRULE(this.bodyClause);
+            this.SUBRULE(this.bodyClause, { LABEL: "edgeBody" });
           });
         },
       },
@@ -157,7 +157,7 @@ class AgelanSentenceParser extends CstParser {
     this.MANY(() => {
       this.CONSUME(Period);
       this.OPTION2(() => {
-        this.SUBRULE3(this.bodyClause);
+        this.SUBRULE3(this.bodyClause, { LABEL: "nextBody" });
       });
     });
     this.OPTION3(() => {
@@ -232,7 +232,7 @@ class AgelanSentenceParser extends CstParser {
       {
         GATE: () => this.LA(1).tokenType === JoinX,
         ALT: () => {
-          this.SUBRULE(this.xJoinClose);
+          this.SUBRULE(this.xJoinClose, { LABEL: "standaloneJoin" });
         },
       },
       {
@@ -381,7 +381,7 @@ class AgelanSentenceParser extends CstParser {
       {
         GATE: () => this.LA(1).tokenType === JoinZ,
         ALT: () => {
-          this.SUBRULE(this.npJoinClose);
+          this.SUBRULE(this.npJoinClose, { LABEL: "standaloneJoin" });
         },
       },
       {
@@ -408,7 +408,7 @@ class AgelanSentenceParser extends CstParser {
       {
         GATE: () => this.LA(1).tokenType === JoinD,
         ALT: () => {
-          this.SUBRULE(this.npJoinClose);
+          this.SUBRULE(this.npJoinClose, { LABEL: "standaloneJoin" });
         },
       },
       {
@@ -435,7 +435,7 @@ class AgelanSentenceParser extends CstParser {
       {
         GATE: () => this.LA(1).tokenType === JoinB,
         ALT: () => {
-          this.SUBRULE(this.npJoinClose);
+          this.SUBRULE(this.npJoinClose, { LABEL: "standaloneJoin" });
         },
       },
       {
@@ -482,7 +482,7 @@ class AgelanSentenceParser extends CstParser {
     this.OR([
       {
         GATE: () => this.LA(1).tokenType === JoinV,
-        ALT: () => this.SUBRULE(this.vJoinClose),
+        ALT: () => this.SUBRULE(this.vJoinClose, { LABEL: "standaloneJoin" }),
       },
       {
         ALT: () => {
@@ -514,7 +514,7 @@ class AgelanSentenceParser extends CstParser {
     this.OR([
       {
         GATE: () => this.LA(1).tokenType === JoinG,
-        ALT: () => this.SUBRULE(this.gJoinClose),
+        ALT: () => this.SUBRULE(this.gJoinClose, { LABEL: "standaloneJoin" }),
       },
       {
         ALT: () => {
@@ -549,7 +549,7 @@ class AgelanSentenceParser extends CstParser {
     this.OR([
       {
         GATE: () => this.LA(1).tokenType === JoinH,
-        ALT: () => this.SUBRULE(this.hJoinClose),
+        ALT: () => this.SUBRULE(this.hJoinClose, { LABEL: "standaloneJoin" }),
       },
       {
         ALT: () => {
@@ -664,6 +664,7 @@ class AgelanSentenceParser extends CstParser {
 }
 
 const parserInstance = new AgelanSentenceParser();
+let lastCst: CstNode | undefined;
 
 function punctFromToken(token: IToken): PunctKind {
   if (token.tokenType === Period) return "period";
@@ -905,6 +906,11 @@ function buildShared(cst: CstNode | undefined): CoordShared[] {
   return [];
 }
 
+/** A part's join close: after its conjuncts, or standing alone (labeled `standaloneJoin`). */
+function partJoinClose(part: CstNode, rule: string): CstNode | undefined {
+  return childNodes(part, rule)[0] ?? childNodes(part, "standaloneJoin")[0];
+}
+
 function joinFromClose(close: CstNode | undefined): { join?: LexWord; shared: CoordShared[] } {
   if (!close) return { shared: [] };
   const joinTok =
@@ -947,7 +953,7 @@ function npCoordParts(cst: CstNode): CstNode[] {
 function buildNpCoord(cst: CstNode): NpCoord {
   const parts = npCoordParts(cst);
   const built = parts.map((part) => {
-    const close = childNodes(part, "npJoinClose")[0];
+    const close = partJoinClose(part, "npJoinClose");
     const { join, shared } = joinFromClose(close);
     const items = childNodes(part, "npConjunct").map(buildNpItem);
     return { items, join, shared };
@@ -971,7 +977,7 @@ function buildVpCoord(cst: CstNode): VpCoord {
   const parts = childNodes(cst, "vpCoordPart");
   return {
     parts: parts.map((part) => {
-      const close = childNodes(part, "vJoinClose")[0];
+      const close = partJoinClose(part, "vJoinClose");
       const { join, shared } = joinFromClose(close);
       return { items: childTokens(part, "V").map(lexWordFromToken), join, shared };
     }),
@@ -1001,7 +1007,7 @@ function flattenHUnits(cst: CstNode): Unit[] {
   const units: Unit[] = [];
   for (const part of parts) {
     const hUnits = childNodes(part, "hUnitRule").map(buildHUnit);
-    const close = childNodes(part, "hJoinClose")[0];
+    const close = partJoinClose(part, "hJoinClose");
     const { join } = joinFromClose(close);
     for (const unit of hUnits) units.push({ kind: "h", unit });
     // Keep the fence (`/h/` or stance `thul` / `thol` / …) so it is not silently dropped.
@@ -1086,7 +1092,7 @@ function expandUnits(cst: CstNode): Unit[] {
 
 function buildClause(cst: CstNode): Clause {
   const parts = childNodes(cst, "clausePart");
-  const hasJoin = parts.some((part) => childNodes(part, "xJoinClose").length > 0);
+  const hasJoin = parts.some((part) => partJoinClose(part, "xJoinClose") !== undefined);
 
   if (!hasJoin) {
     const units = parts.flatMap((part) => childNodes(part, "unit").flatMap(expandUnits));
@@ -1095,7 +1101,7 @@ function buildClause(cst: CstNode): Clause {
 
   const coordParts: { clauses: Clause[]; join: LexWord }[] = [];
   for (const part of parts) {
-    const close = childNodes(part, "xJoinClose")[0];
+    const close = partJoinClose(part, "xJoinClose");
     const joinTok = close ? childToken(close, "JoinX") : undefined;
     const join = joinTok ? lexWordFromToken(joinTok) : undefined;
     const units = childNodes(part, "unit").flatMap(expandUnits);
@@ -1154,7 +1160,7 @@ function buildBodyClause(cst: CstNode, trailingPunct?: IToken): BodyClause {
 
 function buildUtterance(cst: CstNode): Utterance {
   const left = buildLeftEdge(childNodes(cst, "leftEdge")[0]);
-  const bodyCsts = childNodes(cst, "bodyClause");
+  const bodyCsts = [...childNodes(cst, "edgeBody"), ...childNodes(cst, "bodyClause"), ...childNodes(cst, "nextBody")];
   const periods = childTokens(cst, "Period");
   const trailing = childToken(cst, "QMark") ?? childToken(cst, "Bang");
 
@@ -1347,6 +1353,7 @@ function validateResult(result: ParseResult): void {
 export function parseSentenceTokens(tokens: IToken[]): ParseResult {
   parserInstance.input = tokens;
   const cst = parserInstance.document();
+  lastCst = cst;
 
   if (parserInstance.errors.length > 0) {
     throw new SentenceParseError(
@@ -1359,4 +1366,15 @@ export function parseSentenceTokens(tokens: IToken[]): ParseResult {
   const result = { utterances };
   validateResult(result);
   return result;
+}
+
+/** Parse and also return the CST (construction tracing reads rule / child keys off it). */
+export function parseSentenceTokensWithCst(tokens: IToken[]): { result: ParseResult; cst: CstNode } {
+  const result = parseSentenceTokens(tokens);
+  return { result, cst: lastCst! };
+}
+
+/** Grammar productions keyed by rule name (the sentence-layer construction inventory). */
+export function sentenceGrammar(): ReturnType<AgelanSentenceParser["getGAstProductions"]> {
+  return parserInstance.getGAstProductions();
 }

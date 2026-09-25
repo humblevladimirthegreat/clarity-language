@@ -6,9 +6,9 @@
 
 ## Motivation
 
-The docs lint already fails the build when a documented example doesn't parse. The other direction is unchecked. The parser **accepts** forms that no grammar page defines, and some that a page rules out ([initial findings](#initial-findings)). Much of the sentence grammar is open-ended ("any number of units", any role letter in a slot), so it accepts whatever isn't explicitly forbidden.
+The docs lint already fails the build when a documented example doesn't parse. Nothing checks the other direction. The parser **accepts** forms that no grammar page defines, and some that a page rules out ([initial findings](#initial-findings)). Much of the sentence grammar is open-ended ("any number of units", any role letter in a slot), so it accepts whatever isn't explicitly forbidden.
 
-Finding those forms case by case never tells us whether we're done. Learners pay for this:
+Finding these forms one at a time never tells us when we're done. Learners pay for this:
 
 - The gloss viewer, and later drills and the web UI, show a confident gloss for text that isn't Agalan. An invalid sentence gets no correction.
 - A doc typo that happens to land on an accepted but undefined form passes the build.
@@ -16,82 +16,92 @@ Finding those forms case by case never tells us whether we're done. Learners pay
 
 The fix is to invert the default. The parser accepts only what a registered construction licenses, and every registered construction points to the doc section that defines it.
 
+## Principle: the grammar is the registry
+
+We don't build a second parser or a separate detector pass that re-derives what the grammar did. The constructions are the productions the parsers already have:
+
+- **Sentence layer.** Chevrotain rules in `src/parse/sentence-parser.ts`: about 33 `RULE`s and 44 `GATE`s today. Every CST node records the rule that produced it. Chevrotain can list the whole grammar (`getGAstProductions()` / `getSerializedGastProductions()`), so the full set of rules and alternatives is available at build time. It also supports labeled alternatives inside `OR`.
+- **Word layer.** Peggy rules in `src/parse/word.peggy`, plus the `LexReading` that `classify.ts` assigns.
+- **Resolve layer.** The closed set of binding outcomes in `src/parse/resolve.ts` (`AnaphorKind` × bound / unbound).
+
+A construction ID names one of these: a rule, a labeled alternative, a word-grammar rule or reading, or a resolve outcome. Enforcement uses the parser's own mechanism, `GATE` predicates on the production that owns the rule. It doesn't use checks that run after the parse.
+
 ## Part 1: construction registry
 
-Add one registry module, `src/parse/constructions.ts`. Each entry is one grammar rule the parser may apply:
+`src/parse/constructions.ts` maps each production to its doc anchor and summary:
 
 ```text
-id:        dependent.burl
+id:        dependent.burl            (labeled ALT in the stand-in rule)
 anchor:    dependents.md#dependent-clauses
 summary:   purpose-not stand-in after its pole
-licenses:  /b/ stand-in "burl" immediately after a host in {holalam}
+gate:      previous host ∈ {holalam}
 ```
 
 ```text
-id:        resume.short
+id:        resolve.content.bound
 anchor:    pronouns.md#resume
-summary:   PoS + root prefix + -r picks the most recent matching word
-licenses:  -r word whose stem prefixes an earlier content root in the same text
-requires:  antecedent found
-```
-
-```text
-id:        values.need
-anchor:    values.md#…
-summary:   need word with stance vowel
-licenses:  need forms on /g/, /th/, /w/ only
+summary:   -r word binds the most recent matching content word
 ```
 
 Rules:
 
-- **Reject by default.** Any parser step that attaches a unit, fills a slot, applies an ending, or accepts a closed form has to name the registry entry that licenses it. If no entry licenses it, the result is a parse error that names the unlicensed shape (`no construction licenses burl after thadorom`).
-- **Constraints live in the entry, not scattered through the parser.** An entry lists the allowed hosts, slots, role letters, and endings. The parser checks them in one place, so narrowing a rule means editing its entry.
-- **Anchors must resolve.** The build fails if an entry's anchor isn't a real heading or `<a id>` on a grammar page.
-- **Error messages carry the anchor**, so the lint and the gloss viewer can point the learner to the page that shows the right form.
-
-This covers all three layers: word and classify level (endings, closed forms, where values and **-x** may go), the sentence parser (slots, order, stand-ins, linkers, shared scales), and resolve (antecedents for **-r** and digitless-number **-r**).
+- **Complete by construction.** A test compares the registry with the grammar that Chevrotain and Peggy report. Every rule and labeled alternative needs an entry, and every entry must name a real production. A new grammar rule without an anchor fails the build.
+- **Granularity follows the grammar.** A rule too coarse to name one documented construction (for example, a catch-all `unit`) gets **split in the grammar**, so the parser itself becomes more precise, not just the report.
+- **Constraints live on the production.** A narrowing is a `GATE` on the rule or alternative that owns it, and the gate's condition sits next to that rule's registry entry. The post-parse `validate*` functions in `sentence-parser.ts` move into gates over time.
+- **Anchors must resolve.** The build fails if an anchor isn't a real heading or `<a id>` on a grammar page.
+- **Error messages carry the anchor.** When a gate refuses input, the error names the construction and its anchor (`no construction licenses burl after thadorom — dependents.md#dependent-clauses`), so the lint and the gloss viewer can point the learner to the right page.
 
 ## Part 2: two-way coverage check
 
-`parse()` returns the construction IDs it applied, along with the tree. `lint-agalan-docs` then checks both directions:
+`parse()` can return the construction IDs a parse used. It reads them off the CST (rule names and labeled alternatives), the word-grammar trace, and the resolve binds. There's no separate tree walk. `lint-agalan-docs` then checks both directions:
 
-1. **Docs → registry (already mostly done).** Every doc example parses using only registered constructions.
-2. **Registry → docs (new).** Every registered construction is used by at least one example on the page its anchor names. A construction no page exercises is one the docs never taught, so the build fails. You then either add a teach example to that page, or narrow or delete the entry.
+1. **Docs → grammar (mostly done already).** Every doc example parses.
+2. **Grammar → docs (new).** Every construction is used by at least one example on the page its anchor names. If no page exercises it, the docs never taught it, and the build fails. The fix is to add a teach example to that page, or to narrow or delete the production.
 
-Check 2 is what makes "Is the parser too loose?" answerable. The registry is a finite list, and each entry is backed by a doc example, so an accepted form is either explained by a documented construction or rejected.
+Check 2 is what makes "Is the parser too loose?" answerable. The grammar is finite, and each production is backed by a doc example. An accepted form is therefore either explained by a documented construction or rejected.
 
 The lint's summary line gains a count: `N constructions, all exercised by their anchor page`.
 
 ## Negative tests
 
-Invalid forms stay in code, not in the docs. *Compare with* and *not X* lines on grammar pages show **other valid forms** with different meanings, so they can't serve as rejection tests. Add `src/parse/invalid-forms.test.ts`: each row is an input that must throw, the construction ID whose constraint rejects it, and one valid neighbor that must parse (for example `… thadorom burl …` rejected, `… holalam burl …` accepted).
+Invalid forms stay in code, not in the docs. *Compare with* and *not X* lines on grammar pages show **other valid forms** with different meanings, so they can't serve as rejection tests. Add `src/parse/invalid-forms.test.ts`. Each row gives an input that must throw, the construction whose gate rejects it, and one valid neighbor that must parse (for example, `… thadorom burl …` is rejected and `… holalam burl …` is accepted).
 
 ## Initial findings
 
-Checked on 2026-09-25 with `node scripts/parse.mjs`: the parser **accepts** every input below. Under Parts 1 and 2, each one either loses its license (a registry constraint rejects it) or needs a doc decision, then a teach example. **Decide** marks rows where the docs don't yet say which.
+Checked on 2026-09-25 with `node scripts/parse.mjs`: the parser **accepts** every input below. Each one either loses its license (a gate rejects it) or needs a doc decision followed by a teach example. **Decide** marks rows where the docs don't yet say which.
 
-| Accepted input | Likely registry outcome | Doc basis |
-|----------------|-------------------------|-----------|
-| `… thadorom burl …` | `dependent.burl` hosts = `{holalam}` | [dependents](../grammar/dependents.md): "The one exception is purpose-not: **`holalam burl`**." |
-| `… hezazam barl …` | `dependent.barl` hosts = listed poles | [dependents](../grammar/dependents.md#dependent-clauses) pole list |
+| Accepted input | Likely outcome | Doc basis |
+|----------------|----------------|-----------|
+| `… thadorom burl …` | `dependent.burl` gate: host ∈ `{holalam}` | [dependents](../grammar/dependents.md): "The one exception is purpose-not: **`holalam burl`**." |
+| `… hezazam barl …` | `dependent.barl` gate: host ∈ listed poles | [dependents](../grammar/dependents.md#dependent-clauses) pole list |
 | `… hezebam thadorom barl …` | pole stacks limited to the documented **`theberom thurugum`** | [causation](../grammar/causation.md) |
 | `… thezebam barl …` | *although* pole on `/h/` only, unless the page adds `/th/` | dependents. **Decide.** |
-| `zazawan xezebal vawalal.` | `linker.discourse` only at the start of a sentence | [dependents](../grammar/dependents.md#sentence-linkers) |
-| `zazawan vawalal hogobor.` | `resume.short` requires an antecedent | [pronouns](../grammar/pronouns.md) |
-| `zazawan g+r.` | `number.digitless.resume` requires a prior number | [numbers](../grammar/numbers.md) |
-| `zodogol.` / `zululon dagadal.` / `zodogol om banabal.` | the clause requires a `/v/` or a documented predication shape | [predication](../grammar/predication.md). **Decide** whether a lone noun is a citation utterance. |
-| `zazawan zel gelem h+2 vawalal.` / `zazawan zel h+ vawalal.` | `join.rank.shared` scale = `/ɡ/`, or `/h/` immediately after the join | [comparatives](../grammar/comparatives.md#manner-scale) |
-| `zual gagadalx.` | `plural.x` slots exclude join-scoped `/ɡ/` | [plurality](../grammar/plurality.md). **Decide.** |
-| `jonogotham zazawan vawalal.` / `zazawan hagadum vawalal.` | `values.need` slots = `/ɡ/` / `/th/` / `/w/` | [values](../grammar/values.md) |
-| `zazawan thabenem vawalal.` / `zodogol gerenem vawalal.` | `values.need` roots = need inventory | values. **Decide** against the overlays. |
-| `jol.` / `jom.` | `question.polar` requires a body | [questions](../grammar/questions.md). **Decide** whether *Huh?* gets a reading. |
+| `zazawan xezebal vawalal.` | discourse linker only at the start of a sentence | [dependents](../grammar/dependents.md#sentence-linkers) |
+| `zazawan vawalal hogobor.` | `resolve.content.unbound` is unlicensed | [pronouns](../grammar/pronouns.md) |
+| `zazawan g+r.` | `resolve.number.unbound` is unlicensed | [numbers](../grammar/numbers.md) |
+| `zodogol.` / `zululon dagadal.` / `zodogol om banabal.` | clause requires a `/v/` or a documented predication shape | [predication](../grammar/predication.md). **Decide** whether a lone noun is a citation utterance. |
+| `zazawan zel gelem h+2 vawalal.` / `zazawan zel h+ vawalal.` | rank-join shared scale = `/ɡ/`, or `/h/` immediately after the join | [comparatives](../grammar/comparatives.md#manner-scale) |
+| `zual gagadalx.` | **-x** excluded on join-scoped `/ɡ/` | [plurality](../grammar/plurality.md). **Decide.** |
+| `jonogotham zazawan vawalal.` / `zazawan hagadum vawalal.` | need forms on `/ɡ/` / `/th/` / `/w/` only | [values](../grammar/values.md) |
+| `zazawan thabenem vawalal.` / `zodogol gerenem vawalal.` | need roots = need inventory | values. **Decide** against the overlays. |
+| `jol.` / `jom.` | polar question requires a body | [questions](../grammar/questions.md). **Decide** whether *Huh?* gets a reading. |
 | `jelel.` | `/j/` forms = published series only | [speech-moves](../grammar/speech-moves.md) |
 
 ## Rollout
 
-1. **Registry with no enforcement.** Build the registry from what the parser does today, one entry per rule. Make `parse()` report construction IDs. Run check 2 and see which constructions have no example on their anchor page. That list replaces hand-collected findings like the table above.
-2. **Enforcement.** Switch to reject-by-default. Add constraints entry by entry, starting with the rows above, each with an `invalid-forms` test.
-3. **Resolve every uncovered construction** in the docs: add a teach example, narrow the entry, or delete it. Once none remain, check 2 becomes a build failure.
+1. **Registry, no enforcement.** *Done 2026-09-25.* The registry is in `src/parse/constructions.ts`, the tracing in `src/parse/construction-trace.ts` (`parse(…, { constructions: true })`, CLI `--constructions`), and the tests in `src/parse/constructions.test.ts`: every grammar production has an entry and every anchor resolves. Standalone joins and utterance bodies got `LABEL`s. `lint-agalan-docs` prints the coverage report. The first run found 176 constructions, 147 exercised by their anchor page and 29 not. Highlights:
+   - `?` / `!` sentence ends are used on no page.
+   - Standalone `/h/` / clause joins and shared words after `/v/` / `/h/` / clause joins are used on no page.
+   - `/d/` / `/b/` joins are never shown on joins.md.
+   - `-x` on `/w/` / `/h/` / `/th/` / `/x/` is used on no page.
+   - Hook compounds and the *means* reading are used on no page.
+   - Unbound `-r` appears on numbers-applied.md and plurality.md.
+
+   Not yet surfaced: shape-level combinations that reuse registered child keys (bare `jol.`, a mid-sentence linker, values on `/h/`). Those need rule splits or gates in step 2.
+
+   Original step text: Label alternatives and split coarse rules until each production names one documented construction, keeping every current doc example parsing. Map productions to anchors. Add the completeness and anchor tests. Have `parse()` report construction IDs behind an option. Run check 2 in report-only mode. Its list of unexercised constructions replaces hand-collected findings like the table above.
+2. **Enforcement.** Add gates construction by construction, starting with the rows above, each with an `invalid-forms` test. Move `validate*` checks into gates.
+3. **Resolve every uncovered construction** in the docs: add a teach example, narrow the production, or delete it. Once none remain, check 2 becomes a build failure.
 
 ## Effect on learners
 

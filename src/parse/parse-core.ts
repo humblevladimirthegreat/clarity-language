@@ -3,7 +3,8 @@ import type { IToken } from "chevrotain";
 import { collectAmbiguity } from "./ambiguity.js";
 import type { ClassifyTables } from "./classify.js";
 import { resolve } from "./resolve.js";
-import { parseSentenceTokens } from "./sentence-parser.js";
+import { addCstConstructions, addResolveConstructions } from "./construction-trace.js";
+import { parseSentenceTokensWithCst } from "./sentence-parser.js";
 import { tokenizeUtterance } from "./tokenize.js";
 import { Bang, Force, Period, Polar, QMark, Hook, Vocative } from "./tokens.js";
 import type { ParseOptions, ParseResult } from "./types.js";
@@ -51,12 +52,19 @@ export function parseWithTables(
   const tokens = tokenizeUtterance(text, tables);
   const groups = splitUtteranceGroups(tokens);
 
+  const constructions = options.constructions ? new Set<string>() : undefined;
   const utterances = groups.flatMap((group) => {
     if (group.length === 0) return [];
-    return parseSentenceTokens(group).utterances;
+    const { result, cst } = parseSentenceTokensWithCst(group);
+    if (constructions) addCstConstructions(cst, constructions);
+    return result.utterances;
   });
 
-  const result = resolve({ utterances });
+  let result = resolve({ utterances });
+  if (constructions) {
+    addResolveConstructions(result.resolve, constructions);
+    result = { ...result, constructions: [...constructions].sort() };
+  }
   if (!options.checkAmbiguity) return result;
   return { ...result, ambiguity: collectAmbiguity(text, tables) };
 }

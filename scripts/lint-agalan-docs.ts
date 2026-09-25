@@ -38,6 +38,7 @@ import {
   lintNumberSpeechMarkdown,
   NUMBER_SPEECH_FILES,
 } from "../src/lint/number-speech-docs.js";
+import { CONSTRUCTIONS } from "../src/parse/constructions.js";
 import { loadDefaultTables } from "../src/parse/index.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
 
@@ -119,6 +120,26 @@ function lintOverlayHosts(): number {
   return errors.length;
 }
 
+/**
+ * Check 2 of docs/proposals/parser-strictness.md: is every construction used
+ * by an example on the page its anchor names? Report only for now.
+ */
+function reportConstructionCoverage(usedByPage: Map<string, Set<string>>): void {
+  const unexercised: string[] = [];
+  for (const [id, entry] of CONSTRUCTIONS) {
+    const page = entry.anchor.split("#")[0]!;
+    if (usedByPage.get(page)?.has(id)) continue;
+    const elsewhere = [...usedByPage].filter(([, ids]) => ids.has(id)).map(([p]) => p);
+    const where = elsewhere.length > 0 ? `used on ${elsewhere.join(", ")}` : "used on no page";
+    unexercised.push(`  ${id}  →  ${entry.anchor}  (${where}; ${entry.summary})`);
+  }
+  const total = CONSTRUCTIONS.size;
+  console.log(
+    `\nConstructions: ${total}; ${total - unexercised.length} exercised by their anchor page; ${unexercised.length} not (report only):`,
+  );
+  for (const line of unexercised) console.log(line);
+}
+
 function main(): void {
   const { paths } = parseCli(process.argv.slice(2));
   const hostIssues = lintOverlayHosts();
@@ -133,6 +154,7 @@ function main(): void {
   let speechCount = 0;
   let spanCount = 0;
   const spanStats = emptySpanStats();
+  const usedByPage = new Map<string, Set<string>>();
 
   for (const file of files) {
     const original = readFileSync(file, "utf8");
@@ -145,7 +167,9 @@ function main(): void {
       console.error(`${rel}:${line}  \`${issue.token}\`  ${label}  (${issue.detail})`);
     }
 
-    for (const issue of lintAgalanSpans(original, tables, spanStats)) {
+    const used = new Set<string>();
+    if (dirname(file) === grammarDir) usedByPage.set(basename(file), used);
+    for (const issue of lintAgalanSpans(original, tables, spanStats, used)) {
       spanCount += 1;
       const line = lineNumberAt(original, issue.index);
       console.error(`${rel}:${line}  \`${issue.text}\`  ${issue.kind}  (${issue.detail})`);
@@ -177,6 +201,8 @@ function main(): void {
       }
     }
   }
+
+  if (paths.length === 0) reportConstructionCoverage(usedByPage);
 
   if (count > 0) {
     console.error(`\n${count} Agalan word issue(s) in docs/grammar/.`);

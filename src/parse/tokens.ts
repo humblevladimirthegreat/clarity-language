@@ -119,48 +119,73 @@ function isLinkerWord(word: LexWord): boolean {
   return word.pos === "x" && word.family.kind === "content";
 }
 
-export function classifyToTokenType(word: LexWord): AgelanTokenType {
+/** Which `classifyTokenBranch` rule assigned a word its token class (construction registry key). */
+export type TokenBranch =
+  | "hook"
+  | "spanClose"
+  | "writingSpanSlot"
+  | "writingSpan"
+  | "spanOpen"
+  | "standInVerb"
+  | "standIn"
+  | "join"
+  | "joinAct"
+  | "joinRelationG"
+  | "joinRelationH"
+  | "greeting"
+  | "polar"
+  | "force"
+  | "jFallbackVocative"
+  | "linker"
+  | "content"
+  | "citationFallback";
+
+export function classifyTokenBranch(word: LexWord): { type: AgelanTokenType; branch: TokenBranch } {
   const { family, pos, reading } = word;
 
-  if (family.kind === "hook") return Hook;
-  if (family.kind === "spanClose") return SpanClose;
+  if (family.kind === "hook") return { type: Hook, branch: "hook" };
+  if (family.kind === "spanClose") return { type: SpanClose, branch: "spanClose" };
   // A written span fills its PoS slot: `d[…]` / `z[…]` / `b[…]` are NP heads; `v[…]`, `th(…)`, … take the V / H / … slot.
   if (family.kind === "writingSpan") {
     if (pos && pos !== "z" && pos !== "d" && pos !== "b" && pos in CONTENT_BY_POS) {
-      return CONTENT_BY_POS[pos as keyof typeof CONTENT_BY_POS];
+      return { type: CONTENT_BY_POS[pos as keyof typeof CONTENT_BY_POS], branch: "writingSpanSlot" };
     }
-    return WritingSpan;
+    return { type: WritingSpan, branch: "writingSpan" };
   }
-  if (family.kind === "x" && family.xFamily === "span") return SpanOpen;
+  if (family.kind === "x" && family.xFamily === "span") return { type: SpanOpen, branch: "spanOpen" };
 
-  if (isStandIn(word)) return pos === "v" ? V : Odo;
+  if (isStandIn(word)) return pos === "v" ? { type: V, branch: "standInVerb" } : { type: Odo, branch: "standIn" };
 
   if (family.kind === "joinMarker" && reading === "join" && pos && pos in JOIN_BY_POS) {
-    return JOIN_BY_POS[pos as keyof typeof JOIN_BY_POS];
+    return { type: JOIN_BY_POS[pos as keyof typeof JOIN_BY_POS], branch: "join" };
   }
 
-  if (reading === "joinAct") return V;
+  if (reading === "joinAct") return { type: V, branch: "joinAct" };
   if (reading === "joinRelation") {
-    if (pos === "g") return G;
-    if (pos === "h" || pos === "th") return H;
+    if (pos === "g") return { type: G, branch: "joinRelationG" };
+    if (pos === "h" || pos === "th") return { type: H, branch: "joinRelationH" };
   }
 
-  if (reading === "greeting") return Vocative;
+  if (reading === "greeting") return { type: Vocative, branch: "greeting" };
 
   if (pos === "j") {
-    if (isPolarWord(word)) return Polar;
-    if (isForceWord(word)) return Force;
-    return Vocative;
+    if (isPolarWord(word)) return { type: Polar, branch: "polar" };
+    if (isForceWord(word)) return { type: Force, branch: "force" };
+    return { type: Vocative, branch: "jFallbackVocative" };
   }
 
-  if (pos === "x" && isLinkerWord(word)) return Linker;
+  if (pos === "x" && isLinkerWord(word)) return { type: Linker, branch: "linker" };
 
   if (pos && pos in CONTENT_BY_POS) {
-    return CONTENT_BY_POS[pos as keyof typeof CONTENT_BY_POS];
+    return { type: CONTENT_BY_POS[pos as keyof typeof CONTENT_BY_POS], branch: "content" };
   }
 
   // Citation / unknown without PoS — treat as generic noun slot for parsing.
-  return Z;
+  return { type: Z, branch: "citationFallback" };
+}
+
+export function classifyToTokenType(word: LexWord): AgelanTokenType {
+  return classifyTokenBranch(word).type;
 }
 
 export function surfaceAtomToToken(atom: SurfaceAtom, index: number): IToken {
