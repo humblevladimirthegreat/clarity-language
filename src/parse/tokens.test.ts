@@ -80,10 +80,13 @@ describe("tokenizeUtterance", () => {
 });
 
 describe("tone marks", () => {
-  it("peels attached and free-standing marks without tokens", () => {
+  it("emits attached and free-standing marks as tone segments", () => {
     assert.deepEqual(segmentUtterance("?! zazawan !!vejel ?^ hal ^."), [
+      { kind: "tone", mark: "?!", attached: false },
       { kind: "word", text: "zazawan" },
+      { kind: "tone", mark: "!!", attached: true },
       { kind: "word", text: "vejel" },
+      { kind: "tone", mark: "?", attached: true },
       { kind: "islandEdge" },
       { kind: "word", text: "hal" },
       { kind: "islandEdge" },
@@ -91,11 +94,10 @@ describe("tone marks", () => {
     ]);
   });
 
-  it("peels joking, focus, and warm marks", () => {
-    assert.deepEqual(segmentUtterance("% zazawan &vejel ;dodogol."), [
+  it("reads a whole stack as one run", () => {
+    assert.deepEqual(segmentUtterance("%!zazawan."), [
+      { kind: "tone", mark: "%!", attached: true },
       { kind: "word", text: "zazawan" },
-      { kind: "word", text: "vejel" },
-      { kind: "word", text: "dodogol" },
       { kind: "punct", punct: "period" },
     ]);
   });

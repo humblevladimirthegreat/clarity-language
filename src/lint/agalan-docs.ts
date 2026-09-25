@@ -6,7 +6,7 @@ import {
   unknownLexiconContentRoots,
   type ClassifyTables,
 } from "../parse/classify.js";
-import { toneMarkLength } from "../parse/span-scan.js";
+import { toneMarkLength, toneRunLength } from "../parse/span-scan.js";
 import { letterPrefix } from "../parse/resolve.js";
 import { wordConstructions } from "../parse/construction-trace.js";
 import { parseWithTables } from "../parse/parse-core.js";
@@ -310,7 +310,8 @@ const PLACEHOLDER_RE = /^[A-Z][A-Z0-9₀-₉]*$/;
 function spanWords(text: string): string[] {
   return text
     .split(/\s+/)
-    .filter(Boolean)
+    // A free-standing tone mark (`%`, `?!`) is prosody, not a word.
+    .filter((chunk) => chunk && toneRunLength(chunk, 0) !== chunk.length)
     .map((chunk) => peelLintChunk(withoutForeignPayloads(chunk).replace(/[[\](){}]/g, "")).core)
     .filter((core) => core && !SPAN_NEUTRAL.has(core));
 }

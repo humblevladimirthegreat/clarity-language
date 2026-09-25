@@ -50,6 +50,13 @@ export function toneMarkLength(text: string, i: number): number {
   return "!?%&;".includes(text[i] ?? "\0") ? 1 : 0;
 }
 
+/** Length of the run of tone-mark characters at `i` (valid mark or not), or 0. */
+export function toneRunLength(text: string, i: number): number {
+  let j = i;
+  while (j < text.length && "!?%&;".includes(text[j]!)) j += 1;
+  return j - i;
+}
+
 function skipMarks(text: string, i: number): number {
   while (i < text.length && (text[i] === "@" || text[i] === "~")) i += 1;
   return i;

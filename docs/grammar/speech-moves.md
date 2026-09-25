@@ -215,10 +215,50 @@ Write the mark **before** what it colors, so you see the tone before you say the
 >
 > "Azawan saw a *dog*." (a dog, not something else).
 
+The other marks work the same way:
+
+> `zazawan !!vawalal.`
+>
+> z-Azawan | !!v-walk
+>
+> "Azawan *walks*!!"
+
+> `?! zululon vejel dodogol.`
+>
+> ?! | z-Ululon | v-see | d-dog
+>
+> "Ululon saw a dog?!"
+
+> `% zazawan vawalal.`
+>
+> % | z-Azawan | v-walk
+>
+> "Azawan walks." (joking)
+
+> `;zululon vejel dodogol.`
+>
+> ;z-Ululon | v-see | d-dog
+>
+> "Dear Ululon saw a dog."
+
+A mark on a span or an island colors all of it:
+
+> `zazawan ?d[azawan] vezehel.`
+>
+> z-Azawan | ?d-CITE[Azawan] | v-tell
+>
+> "Azawan said “Azawan” (?)." (unsure about just the quoted word).
+
+> `zazawan !^ huzurem zodogol garedel ^ vejel.`
+>
+> z-Azawan | !SCOPE[h-possibility | [z-dog | g-red]] | v-see
+>
+> "Azawan saw, as a possibility, the red dog!" (the feeling is about that chunk).
+
 **Compare with:** **`jol`** asks a question; `?` only sounds unsure. A tone mark shows the feeling; [emotion compose](values.md#emotion-compose) states it as a claim, and the two can share a sentence.
 
 - A mark may go on any word, including act words and linkers (`!xezazam`, *therefore!*).
-- Only `!`, `!!`, `?`, `?!`, `%`, `&`, and `;` are marks. Other stacks (`!?`, `??`, `%!`) are not.
+- Only `!`, `!!`, `?`, `?!`, `%`, `&`, and `;` are marks. Other stacks (`!?`, `??`, `%!`) are not, and neither are marks in a row with a space between (`! !`).
 - `&` stresses by voice alone. To highlight with grammar, move the word to the front ([word order](clause.md)).
 - A mark on a word inside a colored island or sentence overrides it for that word.
 - Before a span fence, the mark is **your** tone about the quote. Inside the fence, it is part of what is quoted (the original speaker's tone).

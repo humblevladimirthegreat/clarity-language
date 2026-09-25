@@ -13,7 +13,20 @@ import { isAsOfOverlay, isStandIn } from "./classify.js";
 import { letterPrefix } from "./resolve.js";
 import { REJECTIONS, type RejectionId } from "./constructions.js";
 import { SentenceParseError } from "./sentence-parser.js";
-import { Bang, classifyTokenBranch, isLexWordPayload, Linker, QMark, type TokenPayload } from "./tokens.js";
+import {
+  Bang,
+  classifyTokenBranch,
+  IslandEdge,
+  isLexWordPayload,
+  Linker,
+  Period,
+  QMark,
+  SpanAtom,
+  SpanOpen,
+  Tone,
+  type TokenPayload,
+} from "./tokens.js";
+import { tokenMatcher } from "chevrotain";
 import type {
   Clause,
   CoordShared,
@@ -51,6 +64,64 @@ function series(word: LexWord | undefined): string | undefined {
 
 function isPole(word: LexWord): boolean {
   return word.overlay?.kind === "clause_pole";
+}
+
+const TONE_MARKS: Record<string, string> = {
+  "!": "strong",
+  "!!": "stronger",
+  "?": "unsure",
+  "?!": "surprised",
+  "%": "joking",
+  "&": "contrast",
+  ";": "warm",
+};
+
+/**
+ * Tone-mark placement (speech-moves.md § tone marks). A mark is a valid mark
+ * attached to a word, an island's opening `^`, or a span, or free-standing
+ * before words of the same sentence. Returns the tokens without tone marks and
+ * the `tone.*` constructions they used.
+ */
+export function enforceTones(tokens: IToken[]): { tokens: IToken[]; constructions: string[] } {
+  const kept: IToken[] = [];
+  const constructions = new Set<string>();
+  let islandOpen = false;
+  tokens.forEach((token, i) => {
+    if (token.tokenType === IslandEdge) islandOpen = !islandOpen;
+    if (token.tokenType !== Tone) {
+      kept.push(token);
+      return;
+    }
+    const { mark, attached } = token.payload as { mark: string; attached: boolean };
+    const name = TONE_MARKS[mark];
+    if (!name) throw new ConstructionError("toneStack", `"${mark}"`);
+    const next = tokens[i + 1];
+    let scope: string;
+    if (!next || next.tokenType === Period || next.tokenType === QMark || next.tokenType === Bang) {
+      throw new ConstructionError("toneTarget", `"${mark}" before ${next ? `"${next.image}"` : "the end"}`);
+    } else if (!attached) {
+      // Marks in a row are a stack even when spaced (`! ! zazawan`, `! !zazawan`).
+      if (next.tokenType === Tone) throw new ConstructionError("toneStack", `"${mark} ${next.image}"`);
+      scope = "rest";
+    } else if (next.tokenType === IslandEdge) {
+      if (islandOpen) throw new ConstructionError("toneTarget", `"${mark}" on a closing ^`);
+      scope = "island";
+    } else if (next.tokenType === SpanOpen || (tokenMatcher(next, SpanAtom) && isWritingSpan(next))) {
+      scope = "span";
+    } else if (next.tokenType === Tone) {
+      throw new ConstructionError("toneStack", `"${mark}${next.image}"`);
+    } else {
+      scope = "word";
+    }
+    constructions.add(`tone.mark.${name}`);
+    constructions.add(`tone.scope.${scope}`);
+  });
+  return { tokens: kept, constructions: [...constructions] };
+}
+
+/** A written span fence (`d[…]`, `th(…)`, `@<Sam>`), one token. */
+function isWritingSpan(token: IToken): boolean {
+  return /[[({<]/.test(token.image);
 }
 
 /** Word- and slot-level checks over the token stream, before the sentence grammar runs. */

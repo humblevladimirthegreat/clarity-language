@@ -6,6 +6,7 @@ import { isStandIn } from "./classify.js";
 /** Non-word surface atoms peeled before Peggy. */
 export type SurfaceAtom =
   | { kind: "islandEdge" }
+  | { kind: "tone"; mark: string; attached: boolean }
   | { kind: "punct"; punct: PunctKind };
 
 export type TokenPayload = LexWord | SurfaceAtom;
@@ -23,6 +24,8 @@ export const IslandEdge = wordToken("IslandEdge", false);
 export const Period = wordToken("Period", false);
 export const QMark = wordToken("QMark", false);
 export const Bang = wordToken("Bang", false);
+/** Tone mark (prosody only); checked and removed before the sentence grammar runs. */
+export const Tone = wordToken("Tone", false);
 
 export const JoinZ = wordToken("JoinZ");
 export const JoinD = wordToken("JoinD");
@@ -199,6 +202,21 @@ export function surfaceAtomToToken(atom: SurfaceAtom, index: number): IToken {
       endColumn: index + 2,
       tokenType: IslandEdge,
       tokenTypeIdx: IslandEdge.tokenTypeIdx!,
+      payload: atom,
+    };
+  }
+
+  if (atom.kind === "tone") {
+    return {
+      image: atom.mark,
+      startOffset: index,
+      endOffset: index + atom.mark.length,
+      startLine: 1,
+      endLine: 1,
+      startColumn: index + 1,
+      endColumn: index + atom.mark.length + 1,
+      tokenType: Tone,
+      tokenTypeIdx: Tone.tokenTypeIdx!,
       payload: atom,
     };
   }

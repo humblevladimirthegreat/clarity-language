@@ -137,6 +137,8 @@ function speechSegmentsFromText(text: string): SpeechSegment[] {
       wordBatch.push(segment.text);
       continue;
     }
+    // Tone marks are prosody only: nothing to speak.
+    if (segment.kind === "tone") continue;
     flushWords();
     if (segment.kind === "punct") out.push({ kind: "punct", punct: segment.punct });
     else out.push({ kind: "islandEdge" });
@@ -149,6 +151,7 @@ function tokenizeSegmentsToSpeechSegments(segments: TokenizeSegment[]): SpeechSe
   const out: SpeechSegment[] = [];
 
   for (const segment of segments) {
+    if (segment.kind === "tone") continue;
     if (segment.kind === "punct") {
       out.push({ kind: "punct", punct: segment.punct });
       continue;

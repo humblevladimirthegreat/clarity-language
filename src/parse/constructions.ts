@@ -236,6 +236,21 @@ export const READING_CONSTRUCTIONS = {
   greeting: { anchor: "word-endings.md#greeting", summary: "a named citation said alone: hello / goodbye" },
 } satisfies Record<string, ConstructionEntry>;
 
+/** Tone marks: each mark, and each scope it colors (speech-moves.md § tone marks). */
+export const TONE_CONSTRUCTIONS = {
+  "mark.strong": { anchor: "speech-moves.md#tone-marks", summary: "! strong feeling" },
+  "mark.stronger": { anchor: "speech-moves.md#tone-marks", summary: "!! stronger feeling" },
+  "mark.unsure": { anchor: "speech-moves.md#tone-marks", summary: "? unsure" },
+  "mark.surprised": { anchor: "speech-moves.md#tone-marks", summary: "?! surprised and doubtful" },
+  "mark.joking": { anchor: "speech-moves.md#tone-marks", summary: "% joking, not literal" },
+  "mark.contrast": { anchor: "speech-moves.md#tone-marks", summary: "& contrastive focus" },
+  "mark.warm": { anchor: "speech-moves.md#tone-marks", summary: "; warm, affectionate" },
+  "scope.word": { anchor: "speech-moves.md#tone-marks", summary: "mark attached to a word" },
+  "scope.island": { anchor: "speech-moves.md#tone-marks", summary: "mark attached to a scope island" },
+  "scope.span": { anchor: "speech-moves.md#tone-marks", summary: "mark attached to a span" },
+  "scope.rest": { anchor: "speech-moves.md#tone-marks", summary: "free-standing mark: rest of the sentence" },
+} satisfies Record<string, ConstructionEntry>;
+
 function prefixed(prefix: string, entries: Record<string, ConstructionEntry>): [string, ConstructionEntry][] {
   return Object.entries(entries).map(([key, entry]) => [`${prefix}.${key}`, entry]);
 }
@@ -252,6 +267,7 @@ export const CONSTRUCTIONS: ReadonlyMap<string, ConstructionEntry> = new Map([
   ...prefixed("word", WORD_MISC_CONSTRUCTIONS),
   ...prefixed("resolve", RESOLVE_CONSTRUCTIONS),
   ...prefixed("reading", READING_CONSTRUCTIONS),
+  ...prefixed("tone", TONE_CONSTRUCTIONS),
 ]);
 
 /**
@@ -260,6 +276,8 @@ export const CONSTRUCTIONS: ReadonlyMap<string, ConstructionEntry> = new Map([
  */
 export const REJECTIONS = {
   sentenceEndMark: { anchor: "speech-moves.md#tone-marks", summary: "a sentence ends in `.`; `?` / `!` are tone-mark prefixes" },
+  toneStack: { anchor: "speech-moves.md#tone-marks", summary: "only ! !! ? ?! % & ; are tone marks; other stacks are not" },
+  toneTarget: { anchor: "speech-moves.md#tone-marks", summary: "a tone mark goes before a word, an island open ^, or a span" },
   linkerMidSentence: { anchor: "dependents.md#sentence-linkers", summary: "a sentence linker comes only at the start of a sentence" },
   pluralOnPos: { anchor: "plurality.md#beginner", summary: "-x is unused on /w/, /h/, /th/, and /x/" },
   valueSlot: { anchor: "values.md#beginner", summary: "a need form goes on /ɡ/, /th/, or /w/ only" },

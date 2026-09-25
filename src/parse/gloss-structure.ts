@@ -28,7 +28,8 @@ export type GlossNode =
   /** `named`: the word's own `.named` is carried by an enclosing `NAME[…]`. */
   | { t: "leaf"; i: number; named?: boolean }
   /** `from` / `to`: word indexes a spoken span's open / close words add beyond its kids. */
-  | { t: "group"; label?: string; close?: string; kids: GlossNode[]; from?: number; to?: number }
+  /** `tone`: a tone mark on the whole group (an island's `!^`). */
+  | { t: "group"; label?: string; close?: string; kids: GlossNode[]; from?: number; to?: number; tone?: string }
   /** Top-level sentence punctuation boundary (kept so groups never straddle it). */
   | { t: "raw"; text: string; at: number };
 
@@ -358,7 +359,7 @@ function renderNode(node: GlossNode, leaf: RenderLeaf): string {
   const only = node.kids.length === 1 ? node.kids[0]! : undefined;
   const kids = node.label && only?.t === "group" && !only.label ? only.kids : node.kids;
   const inner = renderGlossNodes(kids, leaf);
-  return `${node.label ?? ""}[${inner}]${node.close ?? ""}`;
+  return `${node.tone ?? ""}${node.label ?? ""}[${inner}]${node.close ?? ""}`;
 }
 
 /** Strip one outer `[ … ]` when it spans the whole string (a lone unlabeled unit). */

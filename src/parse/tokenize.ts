@@ -1,6 +1,6 @@
 import type { MorphWord } from "./types.js";
 import { classifyAll, type ClassifyTables } from "./classify.js";
-import { toneMarkLength, writingSpanEnd } from "./span-scan.js";
+import { toneRunLength, writingSpanEnd } from "./span-scan.js";
 import {
   lexWordToToken,
   surfaceAtomToToken,
@@ -14,6 +14,7 @@ import { parseWordStream } from "./word.js";
 export type TokenizeSegment =
   | { kind: "word"; text: string }
   | { kind: "islandEdge" }
+  | { kind: "tone"; mark: string; attached: boolean }
   | { kind: "punct"; punct: PunctKind };
 
 function peelTrailingPunct(raw: string): { word: string; punct?: PunctKind } {
@@ -51,9 +52,11 @@ export function segmentUtterance(text: string): TokenizeSegment[] {
       continue;
     }
 
-    // Tone marks are prosody only: no token.
-    const tone = toneMarkLength(trimmed, i);
+    // Tone mark: prosody token. Read the whole run so a stack (`!?`) reaches enforce whole.
+    const tone = toneRunLength(trimmed, i);
     if (tone) {
+      const next = trimmed[i + tone];
+      segments.push({ kind: "tone", mark: trimmed.slice(i, i + tone), attached: next !== undefined && !/\s/.test(next) });
       i += tone;
       continue;
     }
@@ -100,6 +103,13 @@ export function tokenizeUtterance(text: string, tables: ClassifyTables): IToken[
       if (!word) throw new Error(`Missing classified word for ${segment.text}`);
       tokens.push(lexWordToToken(word, offset));
       offset += word.raw.length;
+      continue;
+    }
+
+    if (segment.kind === "tone") {
+      const atom: SurfaceAtom = { kind: "tone", mark: segment.mark, attached: segment.attached };
+      tokens.push(surfaceAtomToToken(atom, offset));
+      offset += segment.mark.length;
       continue;
     }
 

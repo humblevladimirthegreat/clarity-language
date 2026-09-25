@@ -28,6 +28,17 @@ type Row = { invalid: string; rejection: RejectionId | undefined; valid: string 
 const ROWS: Row[] = [
   { invalid: "zazawan vawalal?", rejection: "sentenceEndMark", valid: "zazawan vawalal." },
   { invalid: "jel vuzunel!", rejection: "sentenceEndMark", valid: "jel vuzunel." },
+  { invalid: "zazawan !?vawalal.", rejection: "toneStack", valid: "zazawan ?!vawalal." },
+  { invalid: "zazawan ??vawalal.", rejection: "toneStack", valid: "zazawan !!vawalal." },
+  { invalid: "! ! zazawan vawalal.", rejection: "toneStack", valid: "! zazawan vawalal." },
+  { invalid: "! !zazawan vawalal.", rejection: "toneStack", valid: "! zazawan !vawalal." },
+  { invalid: "zazawan vawalal ! .", rejection: "toneTarget", valid: "! zazawan vawalal." },
+  { invalid: "zazawan vawalal !.", rejection: "toneTarget", valid: "zazawan !vawalal." },
+  {
+    invalid: "zazawan ^ huzurem zodogol garedel !^ vejel.",
+    rejection: "toneTarget",
+    valid: "zazawan !^ huzurem zodogol garedel ^ vejel.",
+  },
   { invalid: "zazawan xezebal vawalal.", rejection: "linkerMidSentence", valid: "xezebal zazawan vawalal." },
   { invalid: "zazawan wawalalx vawalal.", rejection: "pluralOnPos", valid: "zazawanx vawalal." },
   { invalid: "zazawan vawalal hogomolx.", rejection: "pluralOnPos", valid: "zazawan vawalal hogomol." },

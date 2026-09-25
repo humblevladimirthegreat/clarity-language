@@ -388,7 +388,10 @@ export function morphGlossLine(text: string, tables: ClassifyTables, options: Mo
   const marks = new Map<number, string>();
   /** Tone mark before word index: attached (`!`) or free-standing (its own `! | ` slot). */
   const tones = new Map<number, string>();
+  /** Tone mark before an island's opening `^`, by the island's first word index: colors the `SCOPE[…]`. */
+  const islandTones = new Map<number, string>();
   let wordIdx = 0;
+  let islandOpen = false;
   for (let chunk of normalized.match(/\S+/g) ?? []) {
     const tone = toneMarkLength(chunk, 0);
     if (tone) {
@@ -397,6 +400,11 @@ export function morphGlossLine(text: string, tables: ClassifyTables, options: Mo
       if (!chunk) continue;
     }
     if (chunk === "^") {
+      if (!islandOpen && tones.has(wordIdx)) {
+        islandTones.set(wordIdx, tones.get(wordIdx)!);
+        tones.delete(wordIdx);
+      }
+      islandOpen = !islandOpen;
       carets.push(wordIdx);
       continue;
     }
@@ -406,6 +414,7 @@ export function morphGlossLine(text: string, tables: ClassifyTables, options: Mo
     if (mark && wordIdx > 0) marks.set(wordIdx - 1, mark);
   }
   const tree = (parsed && buildGlossTree(parsed, words)) || tokenGlossTree(words, carets);
+  markIslandTones(tree, islandTones);
   const leaf = (node: { i: number; named?: boolean }) => {
     const gloss = (tones.get(node.i) ?? "") + wordGloss(words[node.i]!, tables, ctxByIndex[node.i] ?? {});
     return node.named ? gloss.replace(/\.named$/, "") : gloss;
@@ -432,6 +441,27 @@ export function morphGlossLine(text: string, tables: ClassifyTables, options: Mo
   return out;
 }
 
+/** Put each island's tone mark on its `SCOPE[…]` group. */
+function markIslandTones(nodes: GlossNode[], islandTones: Map<number, string>): void {
+  for (const node of nodes) {
+    if (node.t !== "group") continue;
+    const first = firstLeafIndex(node);
+    if (node.label === "SCOPE" && first !== undefined && islandTones.has(first)) node.tone = islandTones.get(first);
+    markIslandTones(node.kids, islandTones);
+  }
+}
+
+function firstLeafIndex(node: GlossNode): number | undefined {
+  if (node.t === "leaf") return node.i;
+  if (node.t !== "group") return undefined;
+  if (node.from !== undefined) return node.from;
+  for (const kid of node.kids) {
+    const i = firstLeafIndex(kid);
+    if (i !== undefined) return i;
+  }
+  return undefined;
+}
+
 /** Last word index a node covers, including a spoken span's folded close word. */
 function lastLeafIndex(node: GlossNode): number | undefined {
   if (node.t === "leaf") return node.i;
@@ -456,7 +486,8 @@ export function morphGlossBrackets(text: string, tables: ClassifyTables): WordBr
   const { words, parsed } = analyzeLine(normalized, tables);
   const carets: number[] = [];
   let wordIdx = 0;
-  for (const chunk of normalized.match(/\S+/g) ?? []) {
+  for (const raw of normalized.match(/\S+/g) ?? []) {
+    const chunk = raw.slice(toneMarkLength(raw, 0));
     if (chunk === "^") carets.push(wordIdx);
     else if (chunk.replace(/[.?!]$/, "")) wordIdx += 1;
   }
