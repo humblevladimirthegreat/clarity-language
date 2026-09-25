@@ -43,13 +43,14 @@
     return { kind: "x", xFamily: name, ...extra };
   }
 
-  function writingSpanFamily(bracket, payload, marks, anaphor) {
+  function writingSpanFamily(bracket, payload, marks, anaphor, clauseScoped) {
     return {
       kind: "writingSpan",
       bracket,
       payload,
       marks: marks || [],
       anaphor: !!anaphor,
+      ...(clauseScoped ? { clauseScoped: true } : {}),
     };
   }
 
@@ -251,6 +252,15 @@ writingSpan
         pos,
         ending,
         family: writingSpanFamily(bracketed.bracket, bracketed.payload, marks, false),
+      });
+    }
+  // Clause-scoped (EDGE e): no close; the tokenizer ran the interior to the clause end.
+  / pos:Pos marks:WritingMarks? bracket:[[\u007b(] payload:$(.*) EOF {
+      const ending = marks && marks.includes("@") ? "n" : marks && marks.includes("~") ? "m" : "l";
+      return makeWord(text(), {
+        pos,
+        ending,
+        family: writingSpanFamily(bracket, payload.trim(), marks, false, true),
       });
     }
 

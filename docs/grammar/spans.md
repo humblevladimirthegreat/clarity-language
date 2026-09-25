@@ -725,7 +725,7 @@ Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); aside at
 
 When a span-marker word or a fence glyph (`[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `=` / `|` / `#` / `^`) or a [tone mark](speech-moves.md#tone-marks) (`!` / `?`) must appear **as content**, wrap that token in **atomic opaque**. Writing and speech use the same vehicle. The outer span’s wording is the opaque **interior** (the wrapper is packaging, not extra cited words).
 
-```text
+```agalan
 d[ vuwurul d<]> ]
 d[ d<xuxul> ]
 d[ d<|> ]
@@ -734,7 +734,7 @@ d[ vezehel d<#> ]
 
 Speech for a fence **word**:
 
-```text
+```agalan
 daxal duxol xuxul xuxul
 ```
 
@@ -742,7 +742,7 @@ daxal duxol xuxul xuxul
 
 Writing opaque `d<…>` closes on the first `>`. If the blob **contains** `>`, use the spoken opaque (EDGE **a** + **`xuxul`**):
 
-```text
+```agalan
 duxal code > 1 xuxul
 ```
 

@@ -377,8 +377,8 @@ function main(): void {
   console.log("OK: Agalan words in docs/grammar/ parse as legal and match the lexicon.");
   console.log(
     `OK: code spans — ${spanStats.sentence} sentence(s) and ${spanStats.phrase} phrase(s) parsed; ` +
-      `${spanStats.word} single word(s), ${spanStats.template} template(s), ${spanStats.english} English, ` +
-      `${spanStats["marked-fragment"]} marked fragment(s), ${spanStats["marked-skip"]} marked skip(s); 0 unclassified.`,
+      `${spanStats.template} template(s) and ${spanStats["marked-fragment"]} fragment(s) traced; ` +
+      `${spanStats.word} single word(s), ${spanStats.english} English, ${spanStats["text-fence"]} text fence(s); 0 unclassified.`,
   );
   console.log(
     `OK: ${morphChecked} morph gloss(es) compared; ${morphRedundantOmitted} redundant-omitted / ${morphWithLoose} with loose English; glosses match the parser.`,

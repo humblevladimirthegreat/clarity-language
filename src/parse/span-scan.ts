@@ -6,6 +6,27 @@ const OPEN_CLOSE: Record<string, string> = {
   "<": ">",
 };
 
+/**
+ * End of a clause-scoped written span (`d[…` with no close, EDGE **e**): the interior runs
+ * to the clause end — before the next `/x/` or `/j/` word, or before the sentence mark.
+ */
+function clauseScopedEnd(text: string, openAt: number): number {
+  let end = openAt + 1;
+  let i = openAt + 1;
+  while (i < text.length) {
+    let j = i;
+    while (j < text.length && !/\s/.test(text[j]!)) j += 1;
+    const chunk = text.slice(i, j);
+    if (i > openAt + 1 && /^[xj][aeiou+#_~@=-]/.test(chunk)) break;
+    const mark = /[.?!]+$/.exec(chunk);
+    if (mark && (j >= text.length || /\s/.test(text[j]!))) return i + chunk.length - mark[0].length;
+    end = j;
+    while (j < text.length && /\s/.test(text[j]!)) j += 1;
+    i = j;
+  }
+  return end;
+}
+
 /** Index just after a paired span starting at `openAt` (the opening bracket). */
 export function scanPairedEnd(text: string, openAt: number): number | undefined {
   const open = text[openAt];
@@ -75,7 +96,9 @@ export function writingSpanEnd(text: string, start: number): number | undefined 
     i += posLen;
     i = skipMarks(text, i);
     if (text[i] && text[i]! in OPEN_CLOSE) {
-      return scanPairedEnd(text, i);
+      const paired = scanPairedEnd(text, i);
+      if (paired !== undefined || text[i] === "<") return paired;
+      return clauseScopedEnd(text, i);
     }
     return undefined;
   }

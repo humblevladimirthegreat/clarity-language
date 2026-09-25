@@ -181,7 +181,31 @@ describe("lintAgalanSpans", () => {
   it("parses multi-word phrases unless marked a fragment", () => {
     assert.equal(lintAgalanSpans("`zul zazawan`", tables)[0]?.kind, "phrase");
     assert.deepEqual(lintAgalanSpans("<!-- lint: fragment -->`zul zazawan`", tables), []);
-    assert.deepEqual(lintAgalanSpans("<!-- lint: skip -->`wo zo jo`", tables), []);
+    assert.equal(lintAgalanSpans("<!-- lint: skip -->`wo zo jo`", tables)[0]?.kind, "bad-marker");
+  });
+
+  it("traces fragments with context supplied around them", () => {
+    const used = new Set<string>();
+    assert.deepEqual(lintAgalanSpans("<!-- lint: fragment -->`xuxur xuxum`", tables, undefined, (id) => used.add(id)), []);
+    assert.ok(used.has("span.close.editorial") && used.has("span.close.closeAll"));
+    assert.equal(lintAgalanSpans("<!-- lint: fragment -->`xuxur xuxur zo`", tables)[0]?.kind, "fragment");
+  });
+
+  it("traces templates by filling their slots", () => {
+    const trace = (span: string): Set<string> => {
+      const used = new Set<string>();
+      assert.deepEqual(lintAgalanSpans(span, tables, undefined, (id) => used.add(id)), []);
+      return used;
+    };
+    const hook = trace("`A am B`");
+    assert.ok(hook.has("hook.am"));
+    assert.ok(![...hook].some((id) => id.startsWith("hook.") && id !== "hook.am"));
+    const open = trace("`…axal`");
+    assert.ok(open.has("span.type.a") && open.has("span.edge.a"));
+    assert.ok(trace("`…l#N`").has("word.xFamily.numeric"));
+    assert.ok(trace("`d[…`").has("span.edge.e"));
+    assert.equal(lintAgalanSpans("`zo zo …`", tables)[0]?.kind, "template");
+    assert.equal(classifyAgalanSpan("ROOT"), "english");
   });
 
   it("fails spans that mix Agalan and other words without a class", () => {
@@ -195,6 +219,7 @@ describe("lintAgalanSpans", () => {
   it("requires an info string on fenced blocks and checks agalan fences", () => {
     assert.equal(lintAgalanSpans("```\nA HOOK B\n```\n", tables)[0]?.kind, "unmarked-fence");
     assert.deepEqual(lintAgalanSpans("```text\nA HOOK B\n```\n", tables), []);
+    assert.equal(lintAgalanSpans("```text\ndaxal zazawan xuxul\n```\n", tables)[0]?.kind, "agalan-in-text-fence");
     assert.equal(lintAgalanSpans("```agalan\nzul zazawan vazawal.\n```\n", tables)[0]?.kind, "sentence");
   });
 
@@ -205,9 +230,9 @@ describe("lintAgalanSpans", () => {
 
   it("counts every span in exactly one class", () => {
     const stats = emptySpanStats();
-    lintAgalanSpans("`zazawan vazawal.` `zazawan` `fast` `A am B` <!-- lint: skip -->`x y`", tables, stats);
+    lintAgalanSpans("`zazawan vazawal.` `zazawan` `fast` `A am B` <!-- lint: fragment -->`zul zazawan`", tables, stats);
     assert.deepEqual(
-      [stats.sentence, stats.word, stats.english, stats.template, stats["marked-skip"]],
+      [stats.sentence, stats.word, stats.english, stats.template, stats["marked-fragment"]],
       [1, 1, 1, 1, 1],
     );
   });

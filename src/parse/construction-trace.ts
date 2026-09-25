@@ -84,7 +84,11 @@ function featureConstructions(word: LexWord): string[] {
     return ids;
   }
   if (family.kind === "spanClose") return [`span.close.${family.flavor}`];
-  if (family.kind === "writingSpan") return family.marks.map((mark) => `span.mark.${mark}`);
+  if (family.kind === "writingSpan") {
+    const ids = family.marks.map((mark) => `span.mark.${mark}`);
+    if (family.clauseScoped) ids.push("span.edge.e");
+    return ids;
+  }
   if (family.kind === "hook") return [`hook.${family.form}`];
   if (family.kind === "hookCompound") return [`hook.${family.hook}`];
   if (family.kind === "joinMarker" && !word.overlay) {

@@ -467,7 +467,7 @@ Beginner already used a hook at the front of a default statement. Same spellings
 
 | Placement | Agalan | Use |
 |-----------|--------|-----|
-| Before a written turn marker | `(vocative)* (interjection)* HOOK act-word BODY` | The written **`jal`** / **`jol`** / … |
+| Before a written turn marker | `HOOK jal BODY` | The written **`jal`** / **`jol`** / …, after any vocatives and interjections |
 | Before a default-statement body | `HOOK BODY` | Implied **`jal`** ([speech moves](speech-moves.md#speech-act)) |
 | Non-initial clause under `/x/` | `… HOOK BODY … JOIN` | Same as the opener |
 | Before an `/x/` linker | `HOOK LINKER BODY` | Same as prior talk |

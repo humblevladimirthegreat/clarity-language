@@ -95,6 +95,8 @@ export type MorphWordFamily =
       payload: string;
       marks: ("@" | "~")[];
       anaphor: boolean;
+      /** `d[…` with no close: the interior runs to the clause end (EDGE **e**). */
+      clauseScoped?: true;
     }
   | { kind: "foreign"; payload: string; opaque: boolean };
 

@@ -474,11 +474,11 @@ After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm ru
 | Ends in `.` / `?` / `!` and starts with an Agalan word | sentence | full sentence parse (word order, fences, joins) |
 | Two or more Agalan words, no final mark | phrase | full parse |
 | One word | word | word parse + lexicon roots |
-| Contains `…` / `...` or an all-caps placeholder (`A am B`, `DIR th ANCHOR`) | template | not parsed |
+| Contains `…` / `...` or an all-caps placeholder (`A am B`, `DIR th ANCHOR`) | template | slots filled with sample words; must parse, and is traced (placeholders alone, like `ROOT`, count as English) |
 | No Agalan-shaped word | English | not parsed |
 | Agalan mixed with other words, no final mark | unclassified | **fails** |
 
-End a full example sentence with a period, so it gets the sentence check. When a phrase is a deliberate fragment that doesn't parse on its own (a list of close words, a pronunciation), mark it with a comment right before the span: `<!-- lint: fragment -->` (still Agalan, but not parsed as a phrase) or `<!-- lint: skip -->` (not Agalan). Fenced blocks need an info string: ` ```text ` for templates and diagrams, ` ```agalan ` to check each line like a span. Any other `<!-- lint: … -->` value fails.
+End a full example sentence with a period, so it gets the sentence check. When a phrase is a deliberate fragment that doesn't parse on its own (a list of close words, a pronunciation), mark it with a comment right before the span: `<!-- lint: fragment -->`. A fragment is parsed with sample context supplied before and after it, and must parse that way. There is no skip marker: `<!-- lint: skip -->` fails, as does any other `<!-- lint: … -->` value. Fenced blocks need an info string: ` ```agalan ` to check each line like a span, or ` ```text ` for notation and diagrams (a `text` line that reads as an Agalan phrase or sentence fails).
 
 A morph line is compared only after the whole example parses. If it doesn't parse, that is a finding, never a skipped comparison.
 
