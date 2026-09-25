@@ -31,7 +31,7 @@ In the main sentence, a **stand-in** **`darl`** (role letter + **`a`** + **`-rl`
 
 Put **`darl` last** in its slot in the main sentence, and put the dependent **immediately after** it. Rearrange free word order so **`darl`** stays last in that slot.
 
-The main sentence stops after **`darl`**; the next full sentence is the content that **`darl`** stands for. Do not open that inner sentence with `/j/`. The stand-in vowel already types it (*that* **`a`**, *whether* **`o`**). With **`darl`**, **`dorl`**, and **`barl`**, the inner sentence names who does the verb (`/z/`). English often drops that person (*wants to walk*; *tells Ululon to sit*); write the name again. Resume **-r** is [pronouns](pronouns.md).
+The main sentence stops after **`darl`**; the next full sentence is the content that **`darl`** stands for. Do not open that inner sentence with `/j/`. The stand-in vowel already types it (*that* **`a`**, *whether* **`o`**). With **`darl`**, **`dorl`**, and **`barl`**, the inner sentence names who does the verb (`/z/`). English often drops that person (*wants to walk*); write the name again. The one place the inner `/z/` can be left out is an instruction stand-in with an addressee ([stand-in vowels](#stand-in)). Resume **-r** is [pronouns](pronouns.md).
 
 *That…* content is often a direct object, with **`darl` last** in the main sentence:
 
@@ -335,7 +335,13 @@ Beginner used locked **`a`** (`darl` / `barl`) and *whether* **`dorl`**. Stand-i
 | **`e`** order | instruction-like (compare **`jel`**) | `derl` *to …* | `derm` *to …* (open) |
 | **`u`** undo | avoidance-like (compare **`jul`**) | `durl` *that not / lest …* | `durm` *lest …* (open) |
 
-The corresponding `/j/` turn makes an assertion, asks a question, gives a command, or prohibits an action. The stand-in puts that kind of content in a dependent slot; it does not assert, ask, command, or prohibit in its own right. Omit the dependent `/z/` only when the equivalent `/j/` speech act would not need an explicit subject: commands and prohibitions can leave their addressee understood, and statements or questions may omit `/z/` only when their own construction permits it. Otherwise, write the subject in the dependent sentence.
+The corresponding `/j/` turn makes an assertion, asks a question, gives a command, or prohibits an action. The stand-in puts that kind of content in a dependent slot; it does not assert, ask, command, or prohibit in its own right. You may leave out the dependent `/z/` only when all of these hold:
+
+1. The stand-in is **`derl`** / **`derm`**, or **`durl`** / **`durm`** telling someone *not to*.
+2. It fills the outer sentence's `/d/` slot.
+3. The outer sentence has one unhosted `/b/` (the person told).
+
+The missing subject is then that `/b/`. It is never the listener and never the outer `/z/`. In every other case, write the inner `/z/`: after **`darl`** / **`dorl`**, after any pole (**`barl`** / **`burl`**), and when the outer sentence has no unhosted `/b/` (*wants to sit*, *tries to sit*). When the doer is someone other than that `/b/`, write them too, using resume **-r** if the name would repeat.
 
 After a pole, the dependent is **`barl`** (or **`barm`** for gist): *because* / *if* / *although* / *so that* all use it. The one exception is purpose-not: **`holalam burl`** (*so that … not*). Do not put this family on `/x/` (clause *and* stays `xal` / `xan`).
 
@@ -345,9 +351,15 @@ After a pole, the dependent is **`barl`** (or **`barm`** for gist): *because* / 
 >
 > "Azawan tells Ululon to sit."
 
-The addressee is unhosted `/b/`. Since **`jel vajul`** is a command with its addressee understood, **`derl vajul`** can use the same understood subject: `zazawan bululon vezehel derl vajul.` The inner aim is Ululon's sitting; the outer sentence stays a statement. If the equivalent command needed an explicit subject, keep that `/z/` in the dependent sentence too. Quotes of wording stay [spans](spans.md).
+The person told is unhosted `/b/`, so **`derl vajul`** can leave out its subject: the sitter is Ululon. The outer sentence stays a statement. With no unhosted `/b/`, write the sitter:
 
-English *lest* / *not to* (keep this from happening) uses vowel **`u`**: **`durl`**. As with **`jul`**, the understood addressee can be the subject; write an inner `/z/` when the equivalent prohibition would need one. The outer sentence stays a statement. *Don't sit!* as the whole move is still a [prohibition](speech-moves.md#speech-act-beginner) (**`jul`**), not this stand-in.
+> `zazawan vodunam derl zazawan vajul.`
+>
+> z-Azawan | v-wish | d-to-clause | z-Azawan | v-sit
+>
+> "Azawan wishes to sit." Quotes of wording stay [spans](spans.md).
+
+English *lest* / *not to* (keep this from happening) uses vowel **`u`**: **`durl`**. When it tells someone not to act, the person told (`/b/`) can be the missing subject, as with **`derl`**. When it only keeps an outcome off, with no one told, write the inner `/z/`. The outer sentence stays a statement. *Don't sit!* as the whole move is still a [prohibition](speech-moves.md#speech-act-beginner) (**`jul`**), not this stand-in.
 
 > `zazawan bululon vezehel durl vajul.`
 >
