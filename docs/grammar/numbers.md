@@ -1,10 +1,8 @@
-# Numbers
-<a id="numbers"></a>
+# Numbers {#numbers}
 
 Use a number word when English would say **how many** of something (*three cats*) or **which place** something has in a series (*the second book*). Write that whole count or rank as **one word**.
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
 ### Counts (`g+N`)
 
@@ -62,8 +60,7 @@ Naming the group (*cats* as a set) uses [**-x**](plurality.md) on the noun. Sayi
 
 **Compare with:** English *some cats* (a set in this situation, no count) uses the noun plus [**-x**](plurality.md). Use **`g+`** when you mean the amount is more than one.
 
-### Saying it aloud
-<a id="digits"></a>
+### Saying it aloud {#digits}
 
 On the page, write the short form (`g+3`, `g#2`, `g+`). Spoken, that is still **one word**: the role-letter sound, then a **marker syllable**, then a syllable for each digit, then the ending.
 
@@ -91,8 +88,7 @@ The word ends with exact **-l**, spoken as its own last syllable. Build the spok
 - `g+20` → g + ra + du zo → *graduzol* (*twenty*)
 - `g+` → g + ra + l → *gral* (*more than one*)
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**. Count with `g+N`, rank with `g#N`, and use digitless **`g+`** with **-x** on the noun for *more than one*. After the sentence drills, convert shorthand to speech and speech to shorthand.
 
@@ -116,7 +112,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Count w
 | *see* | `vejel` | `ejel` *eye* |
 | *smell* | `vonozel` | `onozel` *nose* |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Two baguettes.*
 
@@ -198,7 +194,7 @@ z-Ululon | [d-baguette-x | g-three] | v-smell
 z-Ululon | [d-fire | g-1st] | v-see
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zogozalx g+2.`
 
@@ -394,8 +390,7 @@ g-five
 g-zero
 :::
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
 ### Word shape
 
@@ -416,8 +411,7 @@ Speech is always the full CV form. Writing for free number words prefers shortha
 
 **Related form:** naming a group of people or things uses [**-x**](plurality.md) on an ordinary noun.
 
-### Group separator
-<a id="group-separator"></a>
+### Group separator {#group-separator}
 
 When a number has more than one digit group, you say each comma. The spoken comma is **`th`** plus the first vowel of the marker. Written text keeps the comma.
 
@@ -452,8 +446,7 @@ Say a separator exactly where a comma is written, and nowhere else: `g+860` has 
 >
 > "Seat 2 in row 3."
 
-### Parts of speech on numbers
-<a id="parts-of-speech-on-numbers"></a>
+### Parts of speech on numbers {#parts-of-speech-on-numbers}
 
 Beginner put the number after a noun (*three cats*). You can also put the **number itself** in other slots: as the subject, as the object, or as the extra noun under a host.
 
@@ -474,8 +467,7 @@ Change only the first letter. The marker and digits stay the same; referential p
 | `/d/` | direct object | a code being dialed or a value being stated |
 | `/b/` | extra noun | *of size 12*; host *on* + a label |
 
-### Marker vowel (referential identity)
-<a id="marker-vowel-referential-identity"></a>
+### Marker vowel (referential identity) {#marker-vowel-referential-identity}
 
 Beginner already used **`+`** (*how many*) and **`#`** (*which place from the start*). The marker vowel **V** is the rest of that map: count versus rank versus digit-string, and (on counts) the sign of the whole number. Forward ordinal **`e`** matches [rank join **e**](joins.md#rank-joins).
 
@@ -490,8 +482,7 @@ One word, one identity. In [preferred writing](#writing-preferred-shorthand), th
 
 Clock and date writing are covered in [Time](numbers-applied.md#time).
 
-#### Sign
-<a id="sign"></a>
+#### Sign {#sign}
 
 | Identity | How sign works |
 |----------|----------------|
@@ -500,8 +491,7 @@ Clock and date writing are covered in [Time](numbers-applied.md#time).
 | **Digit-string** (`o`, written `_`) | Labels are unsigned. |
 
 
-### Number endings
-<a id="number-endings"></a>
+### Number endings {#number-endings}
 
 Beginner already used exact **-l**. The other endings mark *about*, a conventional title, or a repeat of a number you already gave. Speech keeps the ending letter; writing uses a **second-slot mark** after PoS (same glyphs as [span fences](spans.md)).
 
@@ -514,8 +504,7 @@ Beginner already used exact **-l**. The other endings mark *about*, a convention
 
 **-r** may be **digitless**: marker + **-r** alone resumes the prior value of that identity without restating digits (`g=+` = *that (scalar) amount again*; `d=_` = *that code again*; `g=#` = *that rank again*). Digits + **-r** still fine when you want to name which prior item (`x=#2` = *as in (2) above*). Match the marker to the resumed identity (`g=+` for a prior scalar). **`=`** stands alone: no stack with **`~`** / **`@`**.
 
-### Digitless
-<a id="digitless"></a>
+### Digitless {#digitless}
 <a id="digitless-numbers"></a>
 <a id="bare-marker"></a>
 
@@ -534,9 +523,8 @@ Phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory*
 
 Other prefixes use the same empty payload (the marker’s identity, no named N). Time `h_` is an unspecified clock or date under bare `hro`. A date with fields uses **`roe`** / `h_#…` ([Time](numbers-applied.md#time)). Restrictor **`har`** (*sometimes*) is the [restrictor](restrictors.md).
 
-### Bare OoM
+### Bare OoM {#bare-oom}
 <a id="bare-oom-bands"></a>
-<a id="bare-oom"></a>
 
 **Bare** order of magnitude (exponent digits, **no mantissa**) names the **half-open order-of-magnitude band** `[10ᴷ, 10ᴷ⁺¹)`: *thousands* meaning 1000–9999, not every larger step. Use this when English names a magnitude band without a precise count.
 
@@ -584,8 +572,7 @@ Speech uses **`ba`** / **`bu`** for that exponent, then **`ja`** if mantissa dig
 - **Decimal point:** say **`je`** after the digit(s) left of the point; digits after **`je`** are the fractional part.
 - Write the **base unit** plus exponent or exact count on the amount ([measure phrases](numbers-applied.md#no-metric-prefixes)).
 
-### Writing (preferred shorthand)
-<a id="writing-preferred-shorthand"></a>
+### Writing (preferred shorthand) {#writing-preferred-shorthand}
 
 Beginner already wrote `g+3` / `g#2` / `g+`. Speech is still full CV; writing for **free** number words prefers shorthand for the ending, marker, and body. Both writings name the same word.
 
@@ -664,8 +651,7 @@ You can use a number as the **action** (*add three*), as **how often** (*three t
 
 Referential prefixes (`/ɡ/` `/z/` `/d/` `/b/`) keep the marker as a plain amount or rank — [marker vowel](#marker-vowel-referential-identity).
 
-#### Number as verb (by marker)
-<a id="number-as-verb-by-marker"></a>
+#### Number as verb (by marker) {#number-as-verb-by-marker}
 
 `/v/` + number inherits the marker’s identity, so the action type follows **V**.
 
@@ -680,8 +666,7 @@ To set a quantity to an absolute value, use an ordinary verb plus the number as 
 
 Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume — including [digitless](#digitless) `v=+` / `v=_`, etc.).
 
-#### Number as adverb (by marker)
-<a id="number-as-adverb-by-marker"></a>
+#### Number as adverb (by marker) {#number-as-adverb-by-marker}
 
 `/h/` + number inherits the marker’s identity, so the adverbial role follows **V**.
 
@@ -696,8 +681,7 @@ Worked examples: `h+3` *three times*; `h-3` *÷3 / into 3*; `h#3` *for the third
 
 Endings still apply (**-m** ≈ *about* that many times / that clock or date, **-r** resume, including digitless `h=+` / `h=_`). Relative %-change factors use **`h+…`** (e.g. ×1.5). See [percent](numbers-applied.md#percent-and-percentage-points).
 
-#### Number as interjection (by marker)
-<a id="number-as-interjection-by-marker"></a>
+#### Number as interjection (by marker) {#number-as-interjection-by-marker}
 
 `/j/` + number is a **shout** (*Three more!*, a score). Number cheers sit with the other opening `/j/` words (before the act word, when a clause follows) or as a bare utterance with no act word.
 
@@ -716,8 +700,7 @@ Endings still apply (**-m** fuzzy *about three more!*, **-n** conventional call 
 
 **Compare with:** statement / question / command words in the [speech-act section](speech-moves.md#speech-act).
 
-#### Number as discourse marker (by marker)
-<a id="number-as-discourse-marker-by-marker"></a>
+#### Number as discourse marker (by marker) {#number-as-discourse-marker-by-marker}
 
 `/x/` + number is a continue for numbered list items and label cites. Marker vowel encodes **independence framing** of the list item (or cite-as-label for **`ro`**). These sit outside the main-clause argument slots (`/ɡ/` *the second page*, `/h/` *three times*, `/j/` cheers).
 
@@ -740,8 +723,7 @@ Worked examples: `x#2` *point 2:*; `x+2` *corroborating 2:*; `x-2` *independent 
 
 Endings still apply (**-l** newly stated item, **-r** *as in (N) above* or digitless `x=#` / `x=+` / …, **-n** titled item name, **-m** fuzzy *around item N*; on last-place **`x#e`** / **`x~#e`** / **`x@#e`** / **`x=#e`** and start-place **`x#e-`** / **`x~#e-`** / **`x@#e-`** / **`x=#e-`** as above).
 
-#### Number as stance (by marker)
-<a id="number-as-stance-by-marker"></a>
+#### Number as stance (by marker) {#number-as-stance-by-marker}
 <a id="likelihood"></a>
 
 `/th/` + number is your [stance](clause.md#stance-th) on the whole claim: how likely you think it is, or which numbered source it rests on. Spoken, it starts **`thr…`**, as in English *three*.
@@ -805,7 +787,7 @@ Write free numbers with second-slot marks or trailing letters consistently. Deri
 
 **Writing defaults:** (1) free numeral → shorthand by default; (2) content-root derivation → always spelled CV; (3) shorthand in derivation tables is schematic only.
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**. Prefer shorthand (`g~+3`, `g#2`). Sample PoS, endings, digitless, and number as verb / adverb / interjection / discourse — not the whole inventory.
@@ -828,7 +810,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Pre
 | *big* | `elem` | `elel` *elephant* |
 | *score* | `odobom` | `odobol` *trophy* |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *About three seats.*
 
@@ -910,7 +892,7 @@ z-Ululon | d-score | v-three
 z-Ululon | v-punch | h-three
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zedadalx g~+2.`
 
@@ -1000,8 +982,7 @@ z-Uhubun | v-sit | h-3rd
 *Uhubun sits for the third time.*
 :::
 
-## Advanced
-<a id="advanced"></a>
+## Advanced {#advanced}
 
 ### From the end — end-relative ordinal marker **`#-`** / **`ue`**
 <a id="from-the-end"></a>
@@ -1041,8 +1022,7 @@ To count **from the last place** (*penultimate*, *starting with the last one*), 
 | **`x#-2`** | *2nd-from-end point:* / *penultimate item:* |
 
 
-### Stacked markers
-<a id="stacked-markers"></a>
+### Stacked markers {#stacked-markers}
 
 When a number identity needs two marker vowels, write the symbols in their conventional order and pronounce the vowels with **`u` first**. The letter spelling and speech therefore use **ruo** for a negative digit-string label (`#_`) and **rua** for a symmetric error bound (`+-`). A negative label identifies a value below zero, such as a basement floor; `+-N` gives an uncertainty of plus or minus N. These stacked forms work with the ordinary number endings.
 
@@ -1143,8 +1123,7 @@ In casual measure-heavy talk, a stretch of conversation may set an **ambient** o
 
 **`Ne0`** is the normal assert form (any mantissa **`N≠0`**). Formal prose that never uses ambient still rarely needs **`e0`**; omit remains fine when ones-place is already clear.
 
-### Digitless exponents
-<a id="digitless-exponents"></a>
+### Digitless exponents {#digitless-exponents}
 <a id="extremum-digitless"></a>
 <a id="infinity"></a>
 <a id="special-numeric-values"></a>
@@ -1172,7 +1151,7 @@ One such group only in the word. Marker identity still applies. Kind compounds m
 
 #### Special values — no mantissa
 
-##### Referential (`/ɡ/` `/z/` `/d/` `/b/`)
+##### Referential (`/ɡ/` `/z/` `/d/` `/b/`) {#special-referential}
 
 | Form | Anatomy | Reading |
 |------|---------|---------|
@@ -1206,7 +1185,7 @@ Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as o
 | **-n** | Conventional designation of that special (named ∞ symbol, official *last place* / *starting* title, conventional *imaginary* label, …) |
 | **-r** | Resume a prior special value of that marker+exp polarity (`g=+e` = *that +∞ again*; `g=+e-` = *that arbitrarily small amount again*; `g=-e-` = *that imaginary amount again*) |
 
-##### Number as verb and adverb
+##### Number as verb and adverb {#special-number-as-verb-and-adverb}
 
 No-mantissa digitless-exp under `/v/` and `/h/` inherit special-value identity (∞ / last / start / micro) into the verb or adverb role. Soft **-m** parallels referential softs (*a lot but finite* / *near last* / …).
 
@@ -1243,7 +1222,7 @@ No-mantissa digitless-exp under `/v/` and `/h/` inherit special-value identity (
 
 Soft/named/resume endings (**`~`** / **`@`** / **`=`**) apply as on other specials.
 
-##### Number as interjection
+##### Number as interjection {#special-number-as-interjection}
 
 No-mantissa digitless-exp under `/j/` (interjection cheers):
 
@@ -1258,7 +1237,7 @@ No-mantissa digitless-exp under `/j/` (interjection cheers):
 | **`j-e-`** | *As if!* / *Imagine!* / *In theory!* (imaginary cheer) |
 | **`j~-e-`** | soft *as if!* / hedged imagine-cheer |
 
-##### Number as discourse
+##### Number as discourse {#special-number-as-discourse}
 
 Under `/x/`, **last-place** **`x#e`** (and **`x~#e`** / **`x@#e`** / **`x=#e`**) = discourse *Finally* / last point, and **start-place** **`x#e-`** (and **`x~#e-`** / **`x@#e-`** / **`x=#e-`**) = discourse *Starting with:* / beginning. See [Number as discourse marker](#number-as-discourse-marker-by-marker). End-relative discourse points use **`x#-N`**. **Imaginary discourse:** **`x-e-`** = *imagine that:* / imaginary agenda point (side-track). Soft **`x~-e-`**; named **`x@-e-`**; resume **`x=-e-`**. Corroborating is **`x+`**; independent is **`x-`**.
 
@@ -1271,7 +1250,7 @@ Under `/x/`, **last-place** **`x#e`** (and **`x~#e`** / **`x@#e`** / **`x=#e`**)
 
 Forms that pair **mantissa `0`** with an exponent (digitless or the engineering **`e-1`** pair). Soft / named / resume endings (**`~`** / **`@`** / **`=`**) apply as on other specials.
 
-##### Referential (`/ɡ/` `/z/` `/d/` `/b/`)
+##### Referential (`/ɡ/` `/z/` `/d/` `/b/`) {#zero-exponent-referential}
 
 | Form | Anatomy | Reading |
 |------|---------|---------|
@@ -1288,7 +1267,7 @@ Same under `/z/` `/d/` `/b/` (`z+0e` = absolute-zero as subject; `z+0e-1` = deci
 
 **Scalars only for `±0e-1`:** engineering OoM-null is **`ra` / `ru`**. On ordinals, digitful exp is [generation](numbers-applied.md#ordinal-generation) (`g#0e-1` ≠ engineering; **`g#e0`** = current generation). Ordinal zero×digitless **`g#0e`** = [rank annihilated](#rank-annihilated) below.
 
-##### Number as verb and adverb
+##### Number as verb and adverb {#zero-exponent-number-as-verb-and-adverb}
 
 | Form | Reading |
 |------|---------|
@@ -1306,7 +1285,7 @@ Same under `/z/` `/d/` `/b/` (`z+0e` = absolute-zero as subject; `z+0e-1` = deci
 
 Ones-band / assert-`e0` as verb / adverb / interjection / discourse are ordinary bare OoM / **`Ne0`** (**`v+e0`**, **`h+3e0`**, …): [Bare OoM](#bare-oom-bands) / [Ambient](#ambient-magnitude). Soft **-m** hedges (*almost annihilate*, *almost deci-null*, …).
 
-##### Number as interjection
+##### Number as interjection {#zero-exponent-number-as-interjection}
 
 | Form | Reading |
 |------|---------|
@@ -1318,7 +1297,7 @@ Ones-band / assert-`e0` as verb / adverb / interjection / discourse are ordinary
 
 **`j+e0`** = ones-band cheer (ordinary bare OoM).
 
-##### Number as discourse
+##### Number as discourse {#zero-exponent-number-as-discourse}
 
 Discourse nesting uses [generation](numbers-applied.md#ordinal-generation) (**`x#e0`** = current-layer assert; **`x#3e2`** = nested depth).
 
@@ -1409,7 +1388,7 @@ Mantissa = how many joke-units of **late** (**`ba`**) or **early** (**`bu`**) ra
 Digitless **`e`/`e-`** sits in its own group (no **`je`** / **`jo`** / **`ju`** stacked in that group).
 
 
-### Translation practice
+### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**. Digitless exponents, hyperbole, and zero×exp as in the teach tables — shorthand (`g+e`, `g+1e`, `x#e`).
@@ -1427,7 +1406,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Digitle
 | *telescope* | `elezol` | |
 | *see* | `vejel` | `ejel` *eye* |
 
-#### English → Agalan
+#### English → Agalan {#advanced-english-to-agalan}
 
 **1.** *Stars — infinitely many.*
 
@@ -1489,7 +1468,7 @@ j-+-0e
 x-starting-with | z-Uhubun | v-see
 :::
 
-#### Agalan → English
+#### Agalan → English {#advanced-agalan-to-english}
 
 **1.** `zarazalx g~+e.`
 

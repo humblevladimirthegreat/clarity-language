@@ -2,11 +2,9 @@
 
 English *he*, *she*, *it*, and *they* point back to someone or something already named. You already write **-l** / **-m** / **-n** on a [citation](word-endings.md) and on content words. The remaining last letter is **-r**: keep the role letter for this sentence’s slot (subject, object, and so on), then enough of the earlier word’s root to pick the right person or thing. That lets you skip repeating the full name while the listener still knows who you mean.
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
-### Resume with **-r**
-<a id="resume-r"></a>
+### Resume with **-r** {#resume-r}
 <a id="resume-r-beginner"></a>
 
 After you have already named a person or thing, the next sentence can point back instead of repeating the full word. The word you point back to is the **antecedent**. The new word takes the role letter for the slot you need **now** (subject, object, and so on), then a **prefix of that word’s root**, then **-r**. The listener takes the **most recent** word whose stem matches that prefix. (cue: **-r** ≈ resume (pick up the earlier word))
@@ -47,8 +45,7 @@ A **short** resume always needs an earlier word to match. A **full-root** resume
 
 **Compare with:** short `zodor` with nothing before it points at nothing, so it is not a sentence.
 
-### Special pronouns
-<a id="special-pronouns"></a>
+### Special pronouns {#special-pronouns}
 
 Most of the time you name people with a proper name (`zazawan`, `zululon`) and resume with **-r**. A few closed roots instead name **roles in this conversation**: who is speaking, who is being spoken to, you-and-I together, or a nonspecific *someone*. They take the usual role letter for the slot they fill in the clause (subject, object, and so on). Person roles default to **-n**.
 
@@ -101,8 +98,7 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 
 **Compare with:** *I and my people* / *you all* / *Azawan and associates* use **-x** ([clusivity](plurality.md#clusivity)). Inclusive *you and I* on this page is **`aha`**.
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
@@ -128,7 +124,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *interlocutors* | `ahan` | `ahal` *handshake* | 🤝: sharing the floor together |
 | *someone* | `enenun` | `enenul` *neutral* | 😐: not a particular person |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Azawan pours. They cook.*
 
@@ -194,7 +190,7 @@ z-Azawan | d-speaker | v-punch
 z-someone | d-Uhubun | v-punch
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zululon vogogol. zulur vorurul.`
 
@@ -268,8 +264,7 @@ j-question | z-speaker | v-cook
 *Do I cook?*
 :::
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
 ### How English approximates **-r**
 
@@ -332,7 +327,7 @@ When you address several people at once, English *you* does not say how many. Th
 
 **Compare with:** *you and I* is **`aha`**. *Azawan and associates* is name…**-x** ([plurality](plurality.md#associative)).
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -361,7 +356,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *interlocutors* | `ahan` | `ahal` *handshake* | 🤝: sharing the floor together |
 | *listener* | `edonen` | `edonel` *headphones* | 🎧: the one receiving the sound |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Ululon pours. Azawan does so.*
 
@@ -427,7 +422,7 @@ z-interlocutors | v-harvest
 z-Azawan-x | v-punch
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zazawan vorurul. zululon vorur.`
 
@@ -501,11 +496,9 @@ z-Ululon-x | v-fight
 *Ululon and associates fight.*
 :::
 
-## Advanced
-<a id="advanced"></a>
+## Advanced {#advanced}
 
-### Cross-role inventory
-<a id="cross-role-inventory"></a>
+### Cross-role inventory {#cross-role-inventory}
 
 Intermediate already recast one referent into a new slot. Each table is an **antecedent** role; rows are the **pronoun** role. The mechanism is still one **-r**.
 
@@ -816,7 +809,7 @@ Examples:
 >
 > "Ululon! Ululon screams."
 
-### Translation practice
+### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**.
@@ -839,7 +832,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *punch* | `vubunul` | | |
 | *scream* | `vazagal` | | |
 
-#### English → Agalan
+#### English → Agalan {#advanced-english-to-agalan}
 
 **1.** *Azawan mutes. Ululon does the same with them.*
 
@@ -881,7 +874,7 @@ z-radio | g-red . z-←red | v-scream
 z-Ululon | v-punch . z-←punch | g-big
 :::
 
-#### Agalan → English
+#### Agalan → English {#advanced-agalan-to-english}
 
 **1.** `zaradul gelem. zudomul garar.`
 

@@ -31,7 +31,7 @@ export function headingText(raw: string): string {
 export type Heading = {
   level: number;
   title: string;
-  /** Published id: `{#custom}`, or the slug with VitePress's `-1` / `-2` suffix on repeats. */
+  /** `{#custom}` id, or the heading slug. Ids must be unique on a page, so VitePress never suffixes one. */
   id: string;
   custom: boolean;
   /** Offset of the heading line. */
@@ -40,10 +40,9 @@ export type Heading = {
   line: number;
 };
 
-/** Headings outside fences, with the ids VitePress publishes (markdown-it-anchor `uniqueSlug`). */
+/** Headings outside fences, with their ids. */
 export function grammarHeadings(markdown: string): Heading[] {
   const out: Heading[] = [];
-  const used = new Set<string>();
   let inFence = false;
   let offset = 0;
   markdown.split("\n").forEach((text, line) => {
@@ -55,9 +54,7 @@ export function grammarHeadings(markdown: string): Heading[] {
     if (!heading) return;
     const custom = /\{#([^}]+)\}\s*$/.exec(heading[2]!);
     const title = headingText(heading[2]!.replace(/\s*\{#[^}]+\}\s*$/, ""));
-    let id = custom ? custom[1]! : headingSlug(title);
-    if (!custom) for (let i = 1, base = id; used.has(id); i += 1) id = `${base}-${i}`;
-    used.add(id);
+    const id = custom ? custom[1]! : headingSlug(title);
     out.push({ level: heading[1]!.length, title, id, custom: Boolean(custom), offset: lineOffset, line });
   });
   return out;

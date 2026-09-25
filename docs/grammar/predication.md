@@ -3,8 +3,7 @@
 
 English *is* does two jobs that look alike. You can say someone **is a kind or role** (*Azawan is a dog*): they belong in that category. You can also say two names pick out **the same one** (*Ululon is Azawan*): one person under two labels, not a category. Agalan uses a different word pattern for each.
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
 ### Property (*is ADJ*)
 <a id="classification-property"></a>
@@ -29,8 +28,7 @@ A nationality or tradition uses the published **abstract** column on `/ɡ/` (**-
 
 Demonyms stay on **-m** (`gajabam`). **-n** is a name, not “the Japanese people as a titled category.”
 
-### Kind / role
-<a id="classification"></a>
+### Kind / role {#classification}
 
 When you say someone **is that kind of thing** or **has that role** (*a dog*), you are putting them in a category, not naming a quality. Use the same pattern as a quality: the kind sits on `/ɡ/` right after the noun you are classifying. English *is* is already in that pair.
 
@@ -44,8 +42,7 @@ This use is **classification**. Same `/ɡ/` place as a quality; the kind word is
 
 **Compare with:** *A dog walks* uses a noun plus a verb (`zodogol vawalal`). When the subject **is** that kind, keep the kind on `/ɡ/`.
 
-### Existence (a lone noun)
-<a id="existence"></a>
+### Existence (a lone noun) {#existence}
 
 A noun with no verb and no `/ɡ/` word after it says that the thing **exists** or is here (*there is …*).
 
@@ -99,8 +96,7 @@ Write a special adjective `gonunul` after the first name, then an extra noun (`/
 
 **Compare with:** *Azawan is a dog* uses [kind / role](#classification) (`godogol`). Use **`SAME`** when two labels name one person. *A house like Azawan’s* is resemblance ([simile](relations.md#similative) `gurorom`), not one house under two names.
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
@@ -125,7 +121,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *walk* | `vawalal` |
 | *run* | `vurunul` |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Azawan is a guard.*
 
@@ -191,7 +187,7 @@ z-police | [g-SAME | b-Uhubun]
 z-Ululon | [g-SAME | b-Azawan]
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zobolul vawalal.`
 
@@ -265,11 +261,9 @@ z-Uhubun | [g-SAME | b-Azawan]
 *Uhubun is Azawan.*
 :::
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
-### Classification packaging
-<a id="classification-packaging"></a>
+### Classification packaging {#classification-packaging}
 
 You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra choice here is how tightly that kind holds: hedge it, mark it as the usual type, or deny it. The kind word stays on `/ɡ/`; a hedge `/w/` before it, characterizing **`hual`**, or negation **`gul`** packages that same pair.
 
@@ -314,7 +308,7 @@ Beginner already used closed **`gonunul`** (*is the same as*). The other endings
 
 **Compare with:** ordinary *coin* as a noun is `zonunul`. Identity is **`gonunul`** / **`gonunum`** plus a following `/b/` label, kept next to each other.
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -337,7 +331,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | **SAME** | `onunul` |
 | *see* | `vejel` |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Azawan is not a guard.*
 
@@ -403,7 +397,7 @@ z-guard | [g-same | b-Uhubun]
 z-guard | [g-SAME | b-Uhubun] | g-not
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zuhubun gugugal gul.`
 

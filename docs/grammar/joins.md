@@ -6,8 +6,7 @@ Sometimes you only care that the items belong together, with no ranking among th
 
 The join’s vowel is the [vowel series](speech-moves.md) you just mapped: the first letter matches the items’ role; **a** adds, **o** picks one, **e** orders, **u** undoes.
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
 ### And-lists (`a`)
 
@@ -41,8 +40,7 @@ Ending **-l** is ordinary English with no extra words: these are the only items.
 >
 > "walks and runs (and possibly more)."
 
-### Right-close fence
-<a id="right-close"></a>
+### Right-close fence {#right-close}
 <a id="join-series-ending-shared"></a>
 
 Write the items first, then the join. Readers treat everything up to that join as one role in the clause, filled by several members. One join finishes the row.
@@ -87,9 +85,8 @@ When English would offer a menu and ask to *pick one*, or leave the pick *(optio
 >
 > "coffee (optional)."
 
-### How many items
+### How many items {#standalone-phrase}
 <a id="single-item-phrase"></a>
-<a id="standalone-phrase"></a>
 
 The join still comes last when there is only one item, or none. How many items sit before it is the **arity**:
 
@@ -119,8 +116,7 @@ A standalone join fills its slot with no items. In the object slot, `dal` is *no
 >
 > "Azawan tells nobody."
 
-### Negation (`u`)
-<a id="negation-u"></a>
+### Negation (`u`) {#negation-u}
 
 When English would deny the listed items, use vowel **u**. One item before `zul` is *not X*. Two items before `zul` is *neither A nor B*; more items is *none of these*. The join alone (`zul` / `zum`) is *no*. (cue: **u** ≈ undo.)
 
@@ -199,8 +195,7 @@ Write A and B, then `zar`: the join still ends both items, and **-r** means some
 
 **Compare with:** on a content word, **-r** [resumes](pronouns.md) the last match. On a join, **-r** is an unspecified member. Standalone **`-rl` / `-rm`** (`darl`, `barl`) is a [stand-in](dependents.md#stand-in) for the next sentence, not a join and not *something*.
 
-### Vowels and endings (recap)
-<a id="join-type-vowel-series"></a>
+### Vowels and endings (recap) {#join-type-vowel-series}
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -238,8 +233,7 @@ Two or more items still take the same vowel and ending as the lists above. The t
 | `zel` + NP | single-item | *only X matters* |
 | `zem` + NP | single-item | *X first* / *mainly X* |
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
@@ -264,7 +258,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *scream* | `vazagal` | `azagal` *scream* |
 | *lie* | `vululel` | `ululel` *lie* |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *bread and a tomato (and possibly more)*
 
@@ -330,7 +324,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 [z-Ululon | v-punch | z-Azawan | d-Uhubun | v-see | x-and.open]
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zanahol zam.`
 
@@ -404,8 +398,7 @@ z-everything-but
 *Ululon screams and Azawan lies (and possibly more).*
 :::
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
 ### Full single-item and standalone inventories
 
@@ -494,8 +487,7 @@ Standalone **e** answers *who first* with no ranking (no favorite). Standalone *
 
 Yes/no, offer, emptiness, and fill-ask on a lone join: [questions](questions.md#yes-no-single-item-standalone). Join series across roles such as **`vun`** are covered with the other **-n** forms in [join-series forms](join-across-roles.md).
 
-### Rank joins
-<a id="rank-joins"></a>
+### Rank joins {#rank-joins}
 <a id="priority-ranking-e"></a>
 
 When English would say two people are *as ADJ as* each other, or that nobody is the biggest, write a **rank** join and put the adjective immediately after it so it grades the whole list.
@@ -549,8 +541,7 @@ When English would deny a whole join, *not* applies to **each** item and the joi
 >
 > "not (walk or run): not walk, or not run."
 
-### Universals, domains, and generics
-<a id="universals-domains-generics"></a>
+### Universals, domains, and generics {#universals-domains-generics}
 <a id="generics"></a>
 <a id="every-k"></a>
 
@@ -607,8 +598,7 @@ When an adjective or extra noun is meant for the **whole list** (*both challengi
 
 Further matching-role heads belong *before* the join.
 
-### Fence nesting
-<a id="fence-nesting"></a>
+### Fence nesting {#fence-nesting}
 
 When one list sits inside another (*(tea or coffee) and water*), write the inner items, then their join, then the outer item, then the outer join. Each join sits after only the stretch it closes. You nest by stacking right-close joins; a flat list still uses one join after every member.
 
@@ -617,7 +607,7 @@ When one list sits inside another (*(tea or coffee) and water*), write the inner
 | flat | `zadedal zogovel zunudel zol` | *tea or coffee or water* |
 | nested | `zadedal zogovel zol zunudel zal` | *(tea or coffee) and water* |
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -641,7 +631,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *kiss* | `vuguzul` | `uguzul` *kiss* |
 | *punch* | `vubunul` | `ubunul` *punch* |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *everything but wine and a flower*
 
@@ -707,7 +697,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-Ululon | z-rank/less]
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zovowel zual.`
 
@@ -781,11 +771,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *anything but the tuxedo (and possibly more)*
 :::
 
-## Advanced
-<a id="advanced"></a>
+## Advanced {#advanced}
 
-### Scope islands
-<a id="scope-islands-join"></a>
+### Scope islands {#scope-islands-join}
 
 When same-role words sit next to a smaller list, wrap that stretch and its join in **`^ … ^`**. The join inside the island takes members only from between those marks. One island per clause; material outside needs its own outer join.
 
@@ -880,7 +868,7 @@ These limits apply to every join.
 *Because* / *if* use `/th/` plus `/b/` [**`barl`**](dependents.md#dependent-clauses). Floating `/h/` or `/th/` inside a noun, adjective, or `/b/` join does not end the list. Verb-chain `/h/` scope: [VP and clause forms](join-across-roles.md#vp-clause-forms). Each clause-level item is a full clause body.
 
 
-### Translation practice
+### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**.
@@ -899,7 +887,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *dove* | `odovel` | |
 | *seal* | `ezezam` | `ezezal` *seal* |
 
-#### English → Agalan
+#### English → Agalan {#advanced-english-to-agalan}
 
 **1.** *a page or a pen (the usual named menu)*
 
@@ -941,7 +929,7 @@ NAME[z-and]
 [z-Ululon | z-something-else]
 :::
 
-#### Agalan → English
+#### Agalan → English {#advanced-agalan-to-english}
 
 **1.** `zaen.`
 

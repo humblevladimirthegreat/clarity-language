@@ -1,10 +1,8 @@
-# Intention
-<a id="intention"></a>
+# Intention {#intention}
 
 English *will* and *going to* can describe either **intention** (the course someone means to take) or a **forecast** (what someone thinks will happen later). Agalan marks these meanings with special `/th/` words at the start of the clause, followed by an ordinary verb. The distinction lets you show whether you are describing someone's chosen course or making a claim about a future event.
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
 ### Plan
 <a id="plan-predict"></a>
@@ -45,8 +43,7 @@ On **`emaba`**, **-l / -m / -r** say **how fully drawn** the intention is: a hea
 
 Saying *I will* in English can hide whether you only intend a heading, you have the steps, or you are fully prepared. Picking the ending makes that preparation audible.
 
-### Predict
-<a id="predict"></a>
+### Predict {#predict}
 
 To predict a later event, such as rain or a result, put **`thelezo`** before the ordinary verb. Use **`thelezom`** as the default when you have nothing more to add. The event must be later than now; a guess about something already true but hidden, such as where someone is, uses a different pattern. (Cue: 🔭 A telescope looks ahead into the distance.)
 
@@ -58,8 +55,7 @@ To predict a later event, such as rain or a result, put **`thelezo`** before the
 
 **Compare with:** English *will* as *intends to …* / *plans to …* uses [PLAN](#plan-predict) (`themabam` / `themabal` / `themabar`). PREDICT is a later world forecast, not someone’s course.
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
@@ -80,7 +76,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *scream* | `vazagal` | |
 | *fight* | `vuvugul` | |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Azawan intends to sit.*
 
@@ -146,7 +142,7 @@ z-Ululon | th-PREDICT | v-scream
 z-Ululon | th-plan-atlas | v-fight
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zululon themabam vajul.`
 
@@ -220,11 +216,9 @@ th-PREDICT | v-fight
 *I predict someone will fight.*
 :::
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
-### Ability and incapability
-<a id="ability"></a>
+### Ability and incapability {#ability}
 <a id="incapability"></a>
 
 English *can* and *can't* usually sit in front of the verb (*can sing*, *can't sing*). In Agalan you fold that meaning into the verb or adjective itself. After the root, write **`x`**, then a vowel that means *can* or *how they can't*, then the same [ending](word-endings.md) that word would have had without *can*.
@@ -361,7 +355,7 @@ To say both that an event will happen later and how you reached that forecast, u
 
 **Compare with:** a pattern or [LIVE](knowing.md#live-vs-memory) claim about *this stretch* uses [evidentiality](knowing.md#evidentiality) on the content verb alone (**`thadezem`** if you are observing it now; **`thuvuvum`** if you remember observing it). Add **PREDICT** when the claim is a **later** world forecast, not a guess about what is already so.
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**. These combine ability with planning and decisions.
@@ -392,7 +386,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *stand* | `vadanal` | |
 | *run* | `vurunul` | |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Ululon has decided to sit, and can still change that.*
 
@@ -474,7 +468,7 @@ z-Azawan | v-climb-able
 z-Uhubun | v-stand-unable-modifiable
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zazawan thehegem vajul.`
 
@@ -566,8 +560,7 @@ z-Azawan | v-climb
 *Azawan climbs.*
 :::
 
-## Advanced
-<a id="advanced"></a>
+## Advanced {#advanced}
 
 ### Plan and predict against a snapshot
 <a id="as-of-intention"></a>
@@ -592,7 +585,7 @@ z-Azawan | v-climb
 >
 > "As of 22 July, Ululon had decided to walk, and that pick is still revisable now."
 
-### Translation practice
+### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**. PLAN and PREDICT score against the snapshot.
@@ -613,7 +606,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. PLAN an
 | *as-of.bookmark* | `hobomam` |
 | *DECISION-modifiable* | `thehegem` |
 
-#### English → Agalan
+#### English → Agalan {#advanced-english-to-agalan}
 
 **1.** *As of 22 July, Ululon was going to walk.*
 
@@ -639,7 +632,7 @@ th-PREDICT | [h-as-of.bookmark | b-_22,7] | v-rain
 z-Ululon | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 :::
 
-#### Agalan → English
+#### Agalan → English {#advanced-agalan-to-english}
 
 **1.** `thelezom hobomam b_#22,7 vanunul. xazawan thelezom hobomar vawalal.`
 

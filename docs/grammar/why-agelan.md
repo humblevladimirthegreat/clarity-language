@@ -3,22 +3,19 @@
 
 Psychological purpose, limits, feature criteria, and a tour of how those aims show up in the language.
 
-## Purpose
-<a id="purpose"></a>
+## Purpose {#purpose}
 
 Agalan encodes psychological concepts and self-improvement techniques into vocabulary and grammar so that using the language nudges you toward better habits. For example, a single word for *can’t* can say whether the block is only temporary, may still change, or will not. That split keeps a hard moment from hardening into a fixed identity about who you are.
 
 The design aims at three outcomes, in this order:
 
-### Compassion
-<a id="compassion"></a>
+### Compassion {#compassion}
 
 Support self-acceptance and acceptance of others, and make judgments visible when they arise.
 
 Praise can name the need a person’s work actually served instead of stopping at a vague *good*. A flash of anger or anxiety can be said as an unmet need plus its activation and where it sits, so the charge has an audible target rather than a blank label. And *can’t* comes in kinds: temporary, modifiable, or irreversible. A block never has to read as who someone is.
 
-### Rationality
-<a id="rationality"></a>
+### Rationality {#rationality}
 
 Surface common biases that make self-delusion easy.
 
@@ -28,8 +25,7 @@ Choice lists can say whether they are open or closed, so two options cannot smug
 
 Habitual *always* is the usual pattern (exceptions expected), not something that must happen, and not an ought. When the “must” is really an ought, the sentence shows the value behind it instead of treating a wish as necessity.
 
-### Empowerment
-<a id="empowerment"></a>
+### Empowerment {#empowerment}
 
 Support authentic choice by making reasons for action visible.
 
@@ -37,8 +33,7 @@ The motive or prescription behind an action can be named on the need it serves i
 
 **Why this order.** Rationality is hard without compassion first: lack of self-acceptance fuels motivated reasoning, so truth-seeking turns into defense. Empowerment without rationality is foolish; without compassion it is antisocial; without both it is dangerous. So the stack is compassion → rationality → empowerment.
 
-## Limits
-<a id="limits"></a>
+## Limits {#limits}
 
 Agalan encodes psychological concepts and techniques, but it is **not therapy, counseling, or medical advice**, and it is not a substitute for professional care when you need it.
 
@@ -46,15 +41,13 @@ The design *aims* at compassion, rationality, and empowerment, and prefers resea
 
 The language is currently in **beta**: grammar, lexicon, and these docs can change as the design settles.
 
-## Why language can help
-<a id="why-language-can-help"></a>
+## Why language can help {#why-language-can-help}
 
 Unhelpful thoughts are often automatic: catastrophizing a small setback into “my life is ruined,” treating two options as the only ones, or labeling a feeling as *anger* without naming what need is unmet. Healthier framings exist, but they are hard to reach in the moment.
 
 Agalan puts those framings into ordinary words and optional extra pieces on words. When you speak or think in the language, the helpful distinction is already sitting in the sentence shape.
 
-## Criterion for features
-<a id="criterion-for-features"></a>
+## Criterion for features {#criterion-for-features}
 
 Psychological features fit these criteria:
 
@@ -68,13 +61,11 @@ Psychological features fit these criteria:
 
 * **Reminders where they are needed.** Nudge compassion, rationality, or empowerment mainly where those failures are likely. Some extra nudges are fine; pointless ones should stay rare. Nudges stay **optional and targeted**.
 
-## Psychological features
-<a id="psychological-features"></a>
+## Psychological features {#psychological-features}
 
 How the aims show up in vocabulary and grammar. Each section names an English job and one picture; the linked pages teach the forms.
 
-### Needs, gratitude, and oughts
-<a id="needs-gratitude-and-oughts"></a>
+### Needs, gratitude, and oughts {#needs-gratitude-and-oughts}
 
 English often conflates *I want*, *I need*, *I should*, and *this is good for me*, so gratitude, motive, and ought blur together.
 
@@ -89,8 +80,7 @@ Agalan’s [values](values.md) name a closed inventory of **needs** (autonomy, c
 
 Naming the need and your stance toward it helps you notice gratitude, motive, and oughts instead of conflating them into vague *want* / *should* / *good*. A need on `/ɡ/` is a belonging (so *my X serves competence* is one adjective); an unowned stimulus uses the need on `/w/` immediately before **`gobobum`**.
 
-### Emotions as composition
-<a id="emotions-as-composition"></a>
+### Emotions as composition {#emotions-as-composition}
 
 Opaque labels (*angry*, *anxious*, *proud*) hide which need is in play and what to ask for.
 
@@ -129,8 +119,7 @@ Marking residue vs an archived episode helps rumination stay optional. Marking f
 
 **Compare with:** [LIVE](knowing.md#live-vs-memory) / [WITNESSED](knowing.md#live-vs-memory) for how you know; [always](restrictors.md) **`hual`** for current climate; [*after*](dependents.md#dependent-clauses) for event order.
 
-### Intention, forecast, and firmness
-<a id="intention-forecast-and-firmness"></a>
+### Intention, forecast, and firmness {#intention-forecast-and-firmness}
 
 English *will* smuggles plan and prediction together. It is easy to talk as if the future were already known (a certain prediction that fuels anxiety or overconfidence), while a pick often sounds more locked than it is.
 
@@ -176,8 +165,7 @@ Prefer [numbered alternatives](numbers-applied.md#numbered-alternatives) so cand
 
 Numbering candidates, paraphrasing, and naming the judgment bar help you keep choice and standards revisable instead of freezing on a single frame or a hidden bar.
 
-### Conceptual metaphors
-<a id="conceptual-metaphors"></a>
+### Conceptual metaphors {#conceptual-metaphors}
 
 Abstract ideas are hard to hold; without a concrete picture, the psychologically useful reading of a word slips away in the moment.
 
@@ -194,8 +182,7 @@ Published roots keep an **abstract** sense beside the **concrete** picture, so t
 
 Conceptual metaphors help you reach and remember the healthier frame by tying it to a concrete analogy that already encodes the bias you are trying to catch.
 
-## Criticisms
-<a id="criticisms"></a>
+## Criticisms {#criticisms}
 
 This section addresses common criticisms regarding the use of language to influence thought.
 
@@ -208,8 +195,7 @@ Some don’t believe it is possible for a language to influence the speaker’s 
 2. Agalan’s vocabulary and grammar ensure particular frames for certain concepts (using the design laid out on this page and in the linked grammar docs).
 3. Therefore, Agalan influences how speakers think.
 
-### Ethical considerations
-<a id="ethical-considerations"></a>
+### Ethical considerations {#ethical-considerations}
 
 Some are reminded of Newspeak from 1984, where a totalitarian government alters the language to influence the populace into being more compliant. What makes Newspeak unethical is that the language is forced upon an unwitting populace.
 
@@ -217,8 +203,7 @@ For Agalan and similar languages, as long as using the language is voluntary, an
 
 Language influences but does not determine thought. Speakers who wish to think or communicate in a way discouraged by the language are still capable of doing so (though the sentences will likely be longer).
 
-### Language evolution
-<a id="language-evolution"></a>
+### Language evolution {#language-evolution}
 
 Some think that the inevitable change to languages that happens over decades of use will lead to the constructed language eventually being “watered down” to the point where it no longer has the properties that make the language beneficial.
 
@@ -226,7 +211,6 @@ While the language can and should change to keep up with the times, I am optimis
 
 Even if the language does lose its potency over a century, having a positive impact for many people over such a long period of time is still a worthwhile accomplishment.
 
-## Next
-<a id="next"></a>
+## Next {#next}
 
 Continue with [introduction.md](introduction.md) for the name, grammar design, and how to learn these docs, then [phonology.md](phonology.md#beginner) for letters, [word-endings.md](word-endings.md#beginner) for citation endings, [clause.md](clause.md#beginner) for clause shape, [speech-moves.md](speech-moves.md#beginner) for turns, then [dependents.md](dependents.md#beginner). Community updates: [Agalan on Reddit](https://www.reddit.com/r/ClarityLanguage).

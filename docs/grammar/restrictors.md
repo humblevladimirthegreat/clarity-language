@@ -3,8 +3,7 @@
 
 Use these words when you want to say **when** a claim counts: *only when raining*, *never*, *always*. They take the adverb letter **`h`** (or **`w`** immediately before the adjective or hook they limit) plus the same vowels and endings you already use on [joins](joins.md) (`hal`, `hual`, `ham`, …). Time or case words sit **before** the restrictor; together they limit the verb claim (or that adjective) instead of adding another manner.
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
 ### Only when / never (`hal`)
 
@@ -154,8 +153,7 @@ Open **-m** leaves other occasions possible: *when raining, among other times*, 
 >
 > "Azawan sleeps when raining and at night, among other times."
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
@@ -177,7 +175,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *quietude* | `howom` | `owol` *owl* |
 | *punch* | `vubunul` | |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Azawan swims only at night.*
 
@@ -243,7 +241,7 @@ z-Uhubun | v-swim | h-anytime
 z-Ululon | v-punch | d-Azawan | h-always
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zululon vuzuwul hunugul hal.`
 
@@ -317,8 +315,7 @@ z-Ululon | v-swim | h-rain | h-always-except
 *Ululon always swims except when raining.*
 :::
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
 ### Occasions vs a dependent *when*
 
@@ -334,8 +331,7 @@ Each listed restrictor occasion is a simple `/h/` or `/w/` content word, or a co
 
 **Compare with:** *only when raining* is a restrictor list (`hanunul hal`). *If Azawan walks* is the stand-in pattern above.
 
-### More occasions
-<a id="more-occasions"></a>
+### More occasions {#more-occasions}
 <a id="defined-core-full"></a>
 
 Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *sometimes* / *anytime* / *some other time* (`har` / `hor` / `hur`). The rest of the same vowel map names exclusive, inclusive, *not when*, ranked, and leftover readings. `/w/` uses that **same** map on the next adjective or prefix-less hook (`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`, and the rows below). One restrictor chain is one `/h/` unit (or one `/w/` stack immediately before its host).
@@ -397,7 +393,7 @@ Statement readings below. Asking *when*: [questions.md](questions.md#when).
 >
 > "Azawan is happy either when raining or at night (not both)."
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -423,7 +419,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *fall* | `vodowol` | `odowol` *down* |
 | *that-clause* | `barl` | |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Azawan climbs either when raining or at night, not both.*
 
@@ -489,7 +485,7 @@ z-Azawan | [w-rain | w-night | w-when-one | g-happy]
 z-Uhubun | v-scream | [th-if | b-that-clause] | z-Ululon | v-fall
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zululon vugumul hanunul hunugul hom.`
 

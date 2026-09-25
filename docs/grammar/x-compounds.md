@@ -4,8 +4,7 @@
 
 Sometimes one Agalan word is two smaller meanings with **`x`** in the middle. The last letter (**-l** / **-m** / **-n** / **-r**) still marks the **whole** word. What sits left and right of that **`x`** tells you which kind of word it is.
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
 ### Two roots, one word
 
@@ -77,8 +76,7 @@ Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agala
 
 **Related form:** *a teacher* (who does / where it happens / who undergoes / who is told; **-r** *the one teaching*) uses a [role compound](roles.md#role-compounds).
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
@@ -103,7 +101,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *see* | `vejel` | `ejel` *eye* |
 | *punch* | `ubunul` | |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *a doorbell*
 
@@ -169,7 +167,7 @@ z-Azawan-x-Ululon
 z-Ululon | z-friend | v-punch
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zonogoleberel.`
 
@@ -243,11 +241,9 @@ z-Azawan | z-friend | v-punch
 *Azawan punches a friend.*
 :::
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
-### Left and right of `x`
-<a id="families-by-shape"></a>
+### Left and right of `x` {#families-by-shape}
 
 Beginner already used two roots glued with **`x`**, dictionary words with no **`x`**, *a teacher*, and *can / can’t* on a host. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family.
 
@@ -263,8 +259,7 @@ Beginner already used two roots glued with **`x`**, dictionary words with no **`
 
 A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`**, or **`u`** left of **`x`**, you are opening a span or naming a role (*teacher*), not gluing two full roots. Role compounds still put a full root **after** that vowel.
 
-### Adding another piece
-<a id="ordinary-compound-order"></a>
+### Adding another piece {#ordinary-compound-order}
 
 When English stacks labels left to right (*crush* then *love*; a shop name with a third drink), Agalan keeps that order in **one** word. The **last** root is the kind. Each earlier root specifies it. The ending stays at the end of the whole word. Named lists (people, shops) use the same stack as a list of labels, not as kind-last packing.
 
@@ -298,8 +293,7 @@ Use the table above. If the word has a mid-word **`th`**, it is a [values](value
 
 Role vowels are **`a`** / **`e`** / **`u`** / **`o`**. Span type and edge letters stay single vowels.
 
-### Conversation length (name **`x`** vowel)
-<a id="conversation-length"></a>
+### Conversation length (name **`x`** vowel) {#conversation-length}
 
 A [greeting](word-endings.md#greeting) is your own name with a period (`azawan.`). [Calling someone](speech-moves.md#vocative) is their name under **`/j/`** (`jululon.`). Add **`x`** and one vowel before **-n** to say when the conversation will end. At arrival, this sets the expected length. At departure, the same form updates how soon you are leaving. The vowel is about the conversation, not a grade of the person.
 
@@ -364,7 +358,7 @@ At departure, use your own name with the reduced level:
 >
 > "Azawan — I’m leaving now."
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -384,7 +378,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *punch* | `ubunul` | |
 | *wave* | `awavel` | |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Azawan — I’m here / we can stay.*
 
@@ -458,7 +452,7 @@ j-Ululon-passing | z-Uhubun | z-Azawan | v-punch
 Azawan-presence . Ululon-ask
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `uhubuxan.`
 

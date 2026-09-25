@@ -2,8 +2,7 @@
 
 How an extra noun completes a **relation** that still needs a root on `/h/` or `/ɡ/` (*like*, *for* a swap, *on behalf of*, *between*, *part of*, *as of*). Everyday *in* / *at* / *from* / *for* (a get) / *using* are [hooks](hooks.md#extra-noun).
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
 You already write a hosted pair for *like Azawan* (`hurorom bazawan`). The same shape names other English preposition jobs that keep a **root**: pick the relation root, then `/b/`. `/w/` that grades the relation sits immediately before the `/h/` or `/ɡ/` word.
 
@@ -40,8 +39,7 @@ Ordinary `zurorol` is still *a mirror*.
 |--------|-----|---------|--------------|-----|
 | **`hurorom` / `gurorom`** | resemblance to a model | *like* | `urorol` *mirror* | 🪞: the image is of the model |
 
-### Exchange (*for*)
-<a id="exchange"></a>
+### Exchange (*for*) {#exchange}
 <a id="in-exchange-for"></a>
 
 When English names the **other side of a swap** (*a book for a hammer*), keep the same hosted pair as *like*. The relation word is **`huhanem`**. Put what is swapped against the theme in `/b/` right after it. That extra noun is the consideration, not who receives the theme. (cue: 💱 *currency-exchange*: the arrows swap one thing for another; `/b/` is the other side)
@@ -60,8 +58,7 @@ On a noun, the same root is **`guhanem`** (`dabogol guhanem bahamel` *a book for
 |--------|-----|---------|--------------|-----|
 | **`huhanem` / `guhanem`** | consideration / countervalue | *in exchange for* | `uhanel` *currency-exchange* | 💱: the arrows swap one side for the other |
 
-### Proxy (*on behalf of*)
-<a id="proxy"></a>
+### Proxy (*on behalf of*) {#proxy}
 <a id="on-behalf-of"></a>
 
 When English says someone **acts as another person’s agent** (*tells on behalf of Ululon*), keep the same hosted pair as [*like*](#similative). The relation word is **`hudagam`**. Put that person in `/b/` right after it. The subject still does the act; `/b/` is whose agency they use, not who hears the telling. (cue: 🪪 *id-card*: the card stands as an authorized face; `/b/` is that person)
@@ -82,8 +79,7 @@ A recipient may follow a finished pair: `zazawan hudagam bululon buhubun vezehel
 
 
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
@@ -107,7 +103,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *in-exchange-for* | `huhanem` | `uhanel` *currency-exchange* | 💱: the arrows swap one side for the other |
 | *on-behalf-of* | `hudagam` | `udagal` *id-card* | 🪪: the card stands as their face |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Azawan walks like a duck.*
 
@@ -133,7 +129,7 @@ z-Azawan | v-write | [h-in-exchange-for | b-money]
 z-Azawan | [h-on-behalf-of | b-Ululon] | v-tell
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zuhubun hurorom budugul vawalal.`
 
@@ -172,11 +168,9 @@ z-Azawan | [h-on-behalf-of | b-Ululon] | b-Uhubun | v-tell
 :::
 
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
-### Locative relations
-<a id="locative-relations"></a>
+### Locative relations {#locative-relations}
 
 Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extra-noun hooks](hooks.md#extra-noun-intermediate). Several hooks on one clause are several extras (*from* one landmark *toward* another). Write the **source** first, then the **goal**.
 
@@ -224,8 +218,7 @@ Ordinary `zazanul` is still *a sandwich*.
 
 **Compare with:** unhosted `/b/` is still the recipient. Numeric *from 3 to 5* is a [range](numbers-applied.md#ranges). *Like* is [simile](#similative). *For a hammer* as a swap is [exchange](#exchange). *On behalf of Ululon* is [proxy](#proxy). English *of* that is not a place is [of relations](#of-relations).
 
-### Of relations (*part of*, *cup of*, *made of*, *from*)
-<a id="of-relations"></a>
+### Of relations (*part of*, *cup of*, *made of*, *from*) {#of-relations}
 <a id="noun-relations"></a>
 
 English *of* also names how one noun sits toward another (*a hand of Ululon*, *a teapot of tea*, *a house of wood*, *Ululon from the city*). Keep the same hosted pair as *like*: relation on `/ɡ/` (or `/h/` on the event), extra noun in `/b/` right after it. `/b/` is the *of*-complement (the whole, the filling, the stuff, or the origin), not a recipient. (cue: each root’s picture is in **Cue**)
@@ -269,7 +262,7 @@ Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in
 
 
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -293,7 +286,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *run* | `vurunul` |
 | *between* | `hazanum` |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Azawan sits on a chair.*
 
@@ -327,7 +320,7 @@ z-Uhubun | v-sit | [h-between | b-train] | [b-station | b-and]
 z-Azawan | [out-of | b-house] | v-run | [in | b-train]
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zuhubun vadanal ol bazadol.`
 
@@ -365,11 +358,9 @@ z-Ululon | [from | b-station] | v-walk | [at | b-train]
 *Ululon walks from a station to a train.*
 :::
 
-## Advanced
-<a id="advanced"></a>
+## Advanced {#advanced}
 
-### As-of (whose now)
-<a id="as-of"></a>
+### As-of (whose now) {#as-of}
 <a id="as-of-ledger"></a>
 <a id="as-of-bookmark"></a>
 
@@ -451,7 +442,7 @@ A finished inner clause does not stay open for a later matrix resume. Isolated `
 | **`hobomam` / `gobomam` / `wobomam`** | unasserted whose-now | *as of* (placeholder now) | `obomal` *bookmark* | 🔖: hold the place without stamping |
 | **`helerer` / `hobomar`** | resume that overlay | *same books* | same | **-r** restates the stem; no `/b/` |
 
-### Translation practice
+### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**. The hosted pair names whose now. Resume is **-r** with no `/b/`.
@@ -478,7 +469,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The hos
 | *challenge* | `gomonam` |
 | *tell* | `vezehel` |
 
-#### English → Agalan
+#### English → Agalan {#advanced-english-to-agalan}
 
 **1.** *As of 22 July, Ululon had still left.*
 
@@ -528,7 +519,7 @@ z-money | [g-as-of.ledger | b-_22,7]
 z-money | th-RESIDUE | [h-as-of.ledger | b-departure]
 :::
 
-#### Agalan → English
+#### Agalan → English {#advanced-agalan-to-english}
 
 **1.** `zululon thonenom helerem b_#22,7 vebarul. xazawan thonenom helerer vawalal.`
 

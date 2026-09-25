@@ -4,11 +4,9 @@ A content word’s last letter tells the listener how to take this meaning: a ne
 
 Outside a sentence (a list, a heading, a dictionary line) you write **root + ending** with no first-letter job mark. That spelling is a **citation**.
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
-### First mention, concrete (`-l`)
-<a id="concrete-l"></a>
+### First mention, concrete (`-l`) {#concrete-l}
 <a id="literal-l"></a>
 
 When you mention a kind of thing for the first time, in its everyday **concrete** meaning — a scene you could point at — end the citation with **-l**. The listener treats it as a new, ordinary instance of that kind. English for the citation is the bare kind, with no article. (cue: **l** ≈ look / concrete)
@@ -17,8 +15,7 @@ When you mention a kind of thing for the first time, in its everyday **concrete*
 >
 > "swan"
 
-### First mention, abstract (`-m`)
-<a id="abstract-m"></a>
+### First mention, abstract (`-m`) {#abstract-m}
 <a id="metaphor-m"></a>
 
 Sometimes the meaning you want is the published **abstract** sense for that root: a job you cannot really point at, riding on the concrete picture. When you introduce that sense for the first time, end the citation with **-m**. (cue: **m** ≈ meaning / abstract)
@@ -42,8 +39,7 @@ When the word is a **name** (this person or this place, not a kind of thing), en
 
 **Compare with:** the same root as a kind is `azawal` *swan*; as the published abstract, `azawam` *grace*. **-n** names the person.
 
-### Greeting
-<a id="greeting"></a>
+### Greeting {#greeting}
 
 You can **say** a named citation with a period to greet someone or to say a simple goodbye. In either case, offer your own name. At the start, that is how you walk in; at the end, it is how you leave. The spelling is the same name you just wrote (`azawan`); there is no extra first letter.
 
@@ -65,14 +61,12 @@ The last letters you just used, on the same root `azawa`:
 | `azawam` | first mention, published abstract | *grace* | **m** ≈ abstract |
 | `azawan` | this person or place as a name | *Azawan* | **n** ≈ name |
 
-### Writing
-<a id="citation-forms"></a>
+### Writing {#citation-forms}
 <a id="prefix-less-citation"></a>
 
 A citation is **lowercase** root + ending (`azawal`, `azawam`, `azawan`). English for a citation is the bare sense (*swan*, *grace*, *Azawan*), with no article. In a sentence you will add a first letter for the word’s job; that is the [clause](clause.md#beginner) page. A [greeting](#greeting) is the named citation as a whole opening (`azawan.`).
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**. Choose **-l** (new concrete), **-m** (new abstract), or **-n** (named). Every answer is a citation (no first-letter job mark). For a name, the English prompt is the **sense** (*grace*), not the nativized spelling (*Azawan*), except the greeting items.
 
@@ -100,7 +94,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Choose 
 | *courage* (as a name) | `ululon` | | |
 | *beauty* (as a name) | `uhubun` | | |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *school* (citation)
 
@@ -166,7 +160,7 @@ Uhubun
 Ululon
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `abogol`
 
@@ -238,15 +232,13 @@ Azawan
 *Azawan.* (hello — the speaker is Azawan)
 :::
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
 ::: tip Reminder:
 Intermediate sections assume you have read the beginner sections of every page.
 :::
 
-### Proper name (`-n`)
-<a id="proper-name--n"></a>
+### Proper name (`-n`) {#proper-name--n}
 
 Beginner used **-n** for a person’s or place’s name. You can also mark a **title, proper label, or conventionally unique name** on any role letter: a named race as the verb, a named style as the adjective, a named standard as the adverb. The first letter still says the clause job; **-n** says you mean **that** titled instance, not a generic kind.
 
@@ -312,8 +304,7 @@ A nativized loan (adapted Agalan root + ordinary ending) uses the same four last
 
 **Compare with:** adjacent bare same-role words (`zodunan zalanen`) are two people in a [join](joins.md).
 
-### Named handles
-<a id="named-handles"></a>
+### Named handles {#named-handles}
 
 A long official title (bureau, act, titled group) may have a **handle**: one published root plus **-n**, used like any proper name, including on first mention. The long form is the same office spelled as a phrasal proper (`ROOT x ROOT` … + **-n**).
 
@@ -351,12 +342,11 @@ Beginner used **-n** as a name on cited roots and on content words. On `/x/`, th
 
 Prefix-less [discourse hooks](hooks.md#discourse-hooks) use hook endings. Hook **-n** titles a [proper-name phrase](#titled-phrases) ([hooks](hooks.md#intermediate)).
 
-### Number-word exception
-<a id="number-word-exception"></a>
+### Number-word exception {#number-word-exception}
 
 Beginner used **-l** / **-m** / **-n** as reference on citations. On [number words](numbers.md), those same letters (and **-r**) have **number-specific** meanings. After a role letter, the number marker **r** may start a cluster that only number words use ([phonology.md](phonology.md#phonotactics)).
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**. The point is **-n** as a title on any role letter, one **`x`-compound** name, or an office **handle**.
@@ -387,7 +377,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *Emergency* (titled event) | `vamubun` | `amubul` *ambulance* |
 | *Emergency* (named frame) | `hamubun` | `amubul` *ambulance* |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Azawan sits according to Hospital* (the named frame).
 
@@ -445,7 +435,7 @@ z-Ululon | v-Ozorun
 z-Ululon | v-Amubun
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zuhubun vajul hohozon.`
 

@@ -5,8 +5,7 @@ Use these short words to **hook a right-hand piece** onto what is already in pla
 
 Three placements share the same spellings. Tell them apart from what sits to the **right**, and whether a `/b/` word already sat to the **left**.
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
 ### Including (`am` / `al`)
 <a id="including"></a>
@@ -88,8 +87,7 @@ For every same-role hook you also choose how complete the right-hand side is. **
 >
 > "The family except Azawan, and maybe others."
 
-### Glue this sentence to prior talk
-<a id="discourse-hooks"></a>
+### Glue this sentence to prior talk {#discourse-hooks}
 
 Sometimes the thing you want to tweak is not a phrase inside this sentence, but **how this sentence attaches** to what you already said (the *glue*, or sentence-to-sentence connective). Put the same spellings at the **front** of this sentence: prior talk plays A's role, and this whole sentence is B. You get *Additionally*, *In other words*, *Instead*, or *Except* without a list join and without a continue-linker. (cue: same **a** / **o** / **e** / **u** map as in-clause.)
 
@@ -120,8 +118,7 @@ Sometimes the thing you want to tweak is not a phrase inside this sentence, but 
 
 **Compare with:** *however* / *therefore* use [continue](dependents.md#continue-x) linkers (`x…`). A fronted hook only changes how this sentence attaches to what you already said.
 
-### Extra noun (`/b/` after the hook)
-<a id="extra-noun"></a>
+### Extra noun (`/b/` after the hook) {#extra-noun}
 
 When the next word after the hook is `/b/`, and the word immediately before the hook is **not** `/b/`, the hook names how that extra noun sits toward the clause (or toward the noun already in play). This is not the [recipient](clause.md#extra-nouns) (`zazawan bululon vezehel` *tells Ululon*), and it is not same-role *including* (`bazawan al bululon`). (cue: `/b/` on the right of the hook, none on the left)
 
@@ -170,8 +167,7 @@ To ask *where?*, put the fill-ask blank **`bar`** after the hook (`ol bar` *wher
 
 **Compare with:** *Additionally, Azawan walks* is a fronted hook whose next word is **not** `/b/` (`al zazawan vawalal`). *Like a duck* is still a hosted [simile](relations.md#similative) (`hurorom`). *Tells on behalf of Ululon* is [proxy](relations.md#proxy) (`hudagam`). Naming the **place of an event** as its own noun (*a sleep-place*, *that scream-place*) is a [role compound](roles.md#role-compounds) with vowel **`e`**, not this hook on the same clause.
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
@@ -196,7 +192,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *pour* | `vorurul` | |
 | *sit* | `vajul` | `ajul` *chair* |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *The family, including Ululon.*
 
@@ -262,7 +258,7 @@ z-Ululon | v-sit | [at | b-plate]
 z-Azawan | v-cook | [for | b-family]
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zavamul am zuhubun.`
 
@@ -336,8 +332,7 @@ z-Ululon | d-wine | v-pour | [from | b-teapot]
 *Ululon pours wine from a teapot.*
 :::
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
 ### Ending grids
 
@@ -439,8 +434,7 @@ Several extra-noun hooks on one clause are several extras (*from* one landmark *
 
 **Compare with:** company *with Ululon* is a [join-relation](join-across-roles.md#join-relations) (`han`). *Without* stays **`huan`**. *Like* stays [simile](relations.md#similative). *Between* stays a hosted pair plus a `/b/` join ([relations](relations.md#locative-relations)). *So that Ululon sits* is still **`holalam barl`**.
 
-### Parallel chains
-<a id="parallel-chains"></a>
+### Parallel chains {#parallel-chains}
 
 You already hook one named A with a single `A HOOK B`. To stack several hooks on that **same** A (including B and except C, or two includings), add more hooks after the first right-hand side: `A HOOK₁ B HOOK₂ C`. Each hook still applies to A in parallel, with its own side; vowels and endings may mix. English *including (B except C)* would nest C under B instead.
 
@@ -467,8 +461,7 @@ Same-role includes the **verb phrase**:
 
 **Compare with:** a hook binds last. A [list join](joins.md) after the hook closes first and becomes the hook's B side: `zodogol ol zagadal zubudul zam` is *a cat and a bird (and possibly more) instead of a dog*.
 
-### Discourse placements
-<a id="discourse-placements"></a>
+### Discourse placements {#discourse-placements}
 
 Beginner already used a hook at the front of a default statement. Same spellings and vowel meanings, four places:
 
@@ -491,8 +484,7 @@ On a non-initial conjunct under a [clause `/x/` fence](joins.md#right-close), th
 
 **Compare with:** packaging a list uses prefixed [joins](joins.md#join-series-ending-shared) (`zal` / `zam` / `val` …).
 
-### Detail on the hook (`/w/`)
-<a id="hook-w"></a>
+### Detail on the hook (`/w/`) {#hook-w}
 
 `/w/` always sits **immediately before** what it grades. A prefix-less hook is a host, the same way `/ɡ/` and `/h/` are. Put ordinary detail or a [restrictor](restrictors.md) on `/w/` before the hook, then the hook’s right-hand piece.
 
@@ -522,7 +514,7 @@ Extra-noun: `/b/` still sits immediately after the hook. A later `/ɡ/` still de
 
 Discourse glue uses the same window: `welem al zazawan vawalal` is *Additionally, very much so, Azawan walks.* After the hook, next `/b/` still means extra-noun, not glue.
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -543,7 +535,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *write* | `vuwurul` | |
 | *tell* | `vezehel` | `ezehel` *speech* |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *The newspaper, including Azawan and maybe more, except Ululon.*
 
@@ -609,7 +601,7 @@ z-Azawan | [using | b-camera] | v-write
 z-Azawan | v-write | [on | b-page]
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zenewel am zuhubun ul zazawan.`
 
@@ -683,11 +675,9 @@ z-Azawan | v-write | [on | b-page]
 *Azawan writes on a page.*
 :::
 
-## Advanced
-<a id="advanced"></a>
+## Advanced {#advanced}
 
-### Hook compounds (cite + extra-noun hook)
-<a id="hook-compounds"></a>
+### Hook compounds (cite + extra-noun hook) {#hook-compounds}
 
 Intermediate already used a free extra-noun hook beside a verb (`vawalal ul bazadol` *walks from a station*). You can **fuse** that extra-noun hook onto a finished citation so the hook **is** the event kind: enter, leave, oppose, and the rest of the extra-noun grid.
 
@@ -737,7 +727,7 @@ A left root that is not *walk* still uses the same hook job (`vezeheluel` *contr
 
 **Compare with:** `vawalal ul bazadol` still *walks from a station* as two words. Same-role *including* / *rather* / *instead* / *except* stay prefix-less hooks, not this fuse. A [lexical compound](x-compounds.md#lexical-compounds) like *bedroom* glues two content roots with a join letter; this glues a citation to an extra-noun hook.
 
-### Translation practice
+### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**.
@@ -762,7 +752,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *ice* | `ujel` | | |
 | *anchor* | `anogol` | | |
 
-#### English → Agalan
+#### English → Agalan {#advanced-english-to-agalan}
 
 **1.** *Azawan leaves a boat.*
 
@@ -812,7 +802,7 @@ z-Ululon | d-fog | v-traverse
 z-Azawan | d-fog | v-enter
 :::
 
-#### Agalan → English
+#### Agalan → English {#advanced-agalan-to-english}
 
 **1.** `davogol zululon vawalalul.`
 

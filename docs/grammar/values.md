@@ -6,11 +6,9 @@ A **need** is a psychological payoff you can name (autonomy, competence, related
 
 Write the need under `/ɡ/` when you talk about a **noun you keep** (how you feel about that belonging). Write it under `/th/` when you talk about the **clause**. When the noun is not yours, mark it as a [stimulus](#stimulus) and put the need on `/w/` immediately before **`gobobum`**. `/w/` before a need `/ɡ/` is extra detail on that adjective, not a second way to mark the noun.
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
-### Need inventory
-<a id="need-inventory"></a>
+### Need inventory {#need-inventory}
 
 Six published roots are the needs you can name, and no other root takes the need form. Pick one row. With mid-word **`th`** and a stance vowel, that root means the need in the English column — not the everyday object in **Same root as**.
 
@@ -81,8 +79,7 @@ That ending is **changeability**: how lasting that detriment is. If you do not k
 >
 > "My book detracts from competence (modifiable)."
 
-### Word shape
-<a id="word-shape"></a>
+### Word shape {#word-shape}
 <a id="value-stake"></a>
 
 A values word is a need root with mid-word **`th`**, a stance vowel, and an ending. `/ɡ/` talks about a **noun you keep**; `/th/` talks about the **clause**. An unowned noun uses [stimulus](#stimulus) **`gobobum`** and the same need word on `/w/` immediately before it.
@@ -98,8 +95,7 @@ A values word is a need root with mid-word **`th`**, a stance vowel, and an endi
 
 A word with no **`th`** is not a values word: `galodol` is still ballot-box-like; `hawerol` is still strawberry as an adverb.
 
-### Personal possession
-<a id="personal-possession"></a>
+### Personal possession {#personal-possession}
 <a id="stimulus"></a>
 
 A need on `/ɡ/` means the noun is **yours** (speaker possession) and the need is how you stand toward that belonging. That shortcut puts gratitude and unmet on the things you already name as *my X*, so the stance is cheap to say. Ownership without a need is still `goborum` plus `/b/` ([joins](joins.md#scope-fence-p-join)). Someone else’s thing uses that pair, not a bare `/ɡ/` need.
@@ -118,8 +114,7 @@ Ordinary `zobobul` is still *emphasis*. Bare **`gobobum`** with no `/w/` need do
 |--------|-----|---------|--------------|-----|
 | **`gobobum`** | unowned noun as need-target | *as stimulus* | `obobul` *emphasis* | ☝️: you point at it rather than keep it |
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
@@ -146,7 +141,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *survival* | `uhuhel` | `uhuhel` *shield* |
 | *need* | `egel` | `egel` *egg* |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *My tent serves survival (appreciated physically).*
 
@@ -188,7 +183,7 @@ z-fire | [w-survival-unmet-irreversible | g-stimulus]
 z-flashlight | g-need-met-physical
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zedenel gegethal.`
 
@@ -244,11 +239,9 @@ z-fire | [w-autonomy-unmet-irreversible | g-stimulus]
 *The fire detracts from autonomy (irreversible).*
 :::
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
-### Emotion compose
-<a id="emotion-compose"></a>
+### Emotion compose {#emotion-compose}
 
 When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: a [value](#values) on the situation, how activated the charge is, and where you put it. Put the value on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](#stimulus) **`gobobum`** when the noun is not yours, then **one ACT** and **one LOCUS** as `/th/` (or `/w/` immediately before that adjective). You can then say the take without smuggling a single emotion word.
 
@@ -386,7 +379,7 @@ Use **-l** for an invitation, **-m** for an offer, and **-r** for a protective m
 >
 > "Azawan tells: competence is met (physical) and relatedness is the internal motive."
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -420,7 +413,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *survival* | `uhuhel` | `uhuhel` *shield* |
 | *always* | `hual` | |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Azawan ought to tell to serve relatedness (offered).*
 
@@ -518,7 +511,7 @@ z-Azawan | v-pray | th-competence-met-physical | th-relatedness-motive-internal
 z-Ululon | v-scream | th-survival-ought-invited | th-relatedness-motive-circumstantial
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zululon vezehel thonogother.`
 

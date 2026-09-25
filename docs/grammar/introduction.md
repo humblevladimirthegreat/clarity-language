@@ -4,13 +4,11 @@
 
 How these docs work, and what “good grammar design” means for this language.
 
-## Purpose
-<a id="purpose"></a>
+## Purpose {#purpose}
 
 Agalan encodes psychological distinctions into vocabulary and grammar so ordinary speech can nudge **compassion → rationality → empowerment**. Purpose, limits, and a tour of those aims: [Why Agalan](why-agelan.md).
 
-## Grammar design
-<a id="grammar-design"></a>
+## Grammar design {#grammar-design}
 
 Two supporting goals sit beside the psychology:
 
@@ -19,20 +17,17 @@ Two supporting goals sit beside the psychology:
 
 Agalan keeps three kinds of clarity in ordinary speech.
 
-### Syntactic
-<a id="syntactic"></a>
+### Syntactic {#syntactic}
 
 In a clause, every content word begins with a letter that names its role (subject, object, verb, …), so you do not have to guess from English-style word class. Default order is Subject–Object–Verb, but free order is safe because that first letter is what counts.
 
-### Referential
-<a id="referential"></a>
+### Referential {#referential}
 
 Pronouns copy a short start of an earlier word’s root (through the second vowel) and point to the **most recently mentioned matching** word. A few specials cover speaker, listener, and similar roles.
 
 **Compare with:** English *it* / *they*. The copy points at one earlier match, so you are not guessing among many possible things.
 
-### Semantic
-<a id="semantic"></a>
+### Semantic {#semantic}
 
 Each dictionary sense is one entry. Related senses across fields use an explicit compound: the field first, then the kind after mid-word **`x`** (`gagaxolovel` *love in the crush sense*).
 
@@ -70,8 +65,7 @@ Inventory tables on grammar pages use these kinds of cell:
 
 Continue with [phonology.md](phonology.md#beginner) for letters and word edges, then [word-endings.md](word-endings.md#beginner) for citation endings (you can already say your name as a [greeting](word-endings.md#greeting)), then [clause.md](clause.md#beginner) for clause shape, [speech-moves.md](speech-moves.md#beginner) for turns, then [dependents.md](dependents.md#beginner).
 
-## License
-<a id="license"></a>
+## License {#license}
 
 These grammar pages, the lexicon, and the language materials are by **humblevladimirthegreat** and are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Software and tooling that accompany them are under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
@@ -81,8 +75,7 @@ Do not present a fork, variant, or other project as the official Agalan project 
 
 Suggested attribution: *Agalan by humblevladimirthegreat, licensed under CC BY 4.0.*
 
-## Acknowledgments
-<a id="acknowledgments"></a>
+## Acknowledgments {#acknowledgments}
 
 I would like to thank ClearerThinking.org and their book The 12 Levers for being a helpful compendium of scientifically-validated personal growth techniques and noting their safety conditions.
 

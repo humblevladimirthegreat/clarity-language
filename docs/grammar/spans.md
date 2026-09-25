@@ -2,13 +2,11 @@
 
 When you set wording apart from the rest of the sentence (a quote, a parenthetical, a loan surface), Agalan packages that chunk in a **span fence**. In writing you put a role letter, then a pair of brackets around the interior. That first letter is the chunk’s role in the outer sentence (subject, object, verb, or adverb).
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
 Start with a quote of what someone said.
 
-### Cite (`[…]`)
-<a id="writing"></a>
+### Cite (`[…]`) {#writing}
 <a id="writing-vs-speech"></a>
 
 A **cite** holds wording you are quoting: what someone said, a title string, or a proverb **as wording**. Write the role letter, then square brackets around the quoted text. (cue: `[…]` like quote marks)
@@ -90,8 +88,7 @@ With **`@`**, mention is the **name** (the title-string you could rename), even 
 
 **Compare with:** `duzugon` is *Uzugon* (the work or person). `d@{uzugon}` is only the **name**.
 
-### Opaque and loan words
-<a id="loans"></a>
+### Opaque and loan words {#loans}
 
 **Opaque** holds a foreign, code, or raw surface that is not ordinary Agalan words. Write the role letter, then angle brackets around that blob. Do not put an extra letter after `>`. Faithfulness uses the same marks as cite: none / **`~`** / **`@`**, and resume uses **`=`** inside (`d<=>`).
 
@@ -132,8 +129,7 @@ A one-word manner with nothing to package is a plain adverb: `zazawan vawalal hu
 
 **Compare with:** a second name for the same person uses [identity](predication.md#identity) (`gonunu` + `/b/`), not an aside.
 
-### Outer slot
-<a id="pos"></a>
+### Outer slot {#pos}
 
 The letter on the open is the role of the **entire span** in the outer sentence. Ask what that chunk is doing out there: object of *said*, subject of *is small*, and so on. A cite can be the **verb** when you echo the act as wording:
 
@@ -152,8 +148,7 @@ The letter on the open is the role of the **entire span** in the outer sentence.
 
 If the interior is Agalan words, those inner words still start with **their** role letters.
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
@@ -178,7 +173,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *kimchi* | <code>d&lt;kimchi&gt;</code> | | |
 | *Sam* | <code>@&lt;Sam&gt;</code> | | |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Azawan said “Azawan.”* (hello)
 
@@ -250,7 +245,7 @@ j-question | z-Ululon | d-←cite | v-tell
 z-MENTION["zazawan vuzunul"] | g-small
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** <code>zululon d&lt;kimchi&gt; vejel.</code>
 
@@ -324,11 +319,9 @@ z-MENTION["zululon vezehel"] | g-small
 *The phrase “zululon vezehel” is small.*
 :::
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
-### Spoken word shape
-<a id="shape"></a>
+### Spoken word shape {#shape}
 
 Beginner writing already packages a quote, mention, aside, or blob in brackets. Speech still has to say which slot the chunk fills, what kind of span it is, how far the open runs, and how faithful the wording is. The open is one word: role letter, then TYPE vowel, then mid-word **`x`**, then EDGE vowel, then the ending. That word stands where writing had `d[` or `th(`; a multi-token open still needs a close word later.
 
@@ -367,8 +360,7 @@ Beginner already used square, round, curly, and angle brackets for cite, aside, 
 
 **Compare with:** a native office name uses ordinary **-n** (`zabogon`) — [named handles](word-endings.md#named-handles). Mention `{abogo}` is that **word**; opaque / loan is a **foreign** acronym’s surface (<code>z@&lt;FBI&gt;</code>).
 
-### EDGE (extent)
-<a id="edge"></a>
+### EDGE (extent) {#edge}
 
 A pair of brackets can wrap one token or many, run to the end of the clause, or hold nothing. In speech, the vowel **after** `x` is **EDGE**: it says whether the open waits for an explicit close, ends at the next turn or clause join, takes exactly one following token, or has no interior.
 
@@ -389,8 +381,7 @@ Resume **-r** always uses EDGE **`u`** (`daxur`).
 
 EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** takes exact **-l** (`daxul`) or resume **-r** (`daxur`).
 
-### Endings on opens and span pronouns
-<a id="endings"></a>
+### Endings on opens and span pronouns {#endings}
 
 Beginner already used a bare open, **`~`**, **`@`**, and **`[=]`**. Speech puts the same jobs on **-l** / **-m** / **-n** / **-r**.
 
@@ -433,8 +424,7 @@ Beginner brackets map to these spoken opens and closes.
 
 The close does not repeat PoS, TYPE, EDGE, or open fidelity. Explicit close for EDGE **a** is **`xuxul`**.
 
-### Nesting
-<a id="nesting"></a>
+### Nesting {#nesting}
 
 When one packaged chunk sits inside another (a quote that contains a parenthetical, or a cite wrapping a mention), each typed fence nests. A multi-token open starts a layer; **`xuxul`** closes the innermost layer. Atomic opens and resumes do not start a new layer. **`@`** / **`~`** apply only to the immediately following open.
 
@@ -446,8 +436,7 @@ When one packaged chunk sits inside another (a quote that contains a parenthetic
 
 The same nest works as `d[ z{…} ]` or `d~[ d<…> ]`.
 
-### Scope islands
-<a id="scope-islands"></a>
+### Scope islands {#scope-islands}
 
 Sometimes *possibility* or a join should apply only to a multi-word chunk, not the whole clause. Writing marks that chunk with **`^ … ^`**. Speech has no open or close word for those edges: you hear a pause and one tight phrase. The binder **inside** does the work.
 
@@ -489,7 +478,7 @@ A [tone mark](speech-moves.md#tone-marks) written right before the opening `^` c
 
 **Speech:** brief reset into the island, one tight phrase, boundary on the last island stress. In singing, use an ordinary phrase bow.
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -516,7 +505,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *possibility* | `huzurem` |
 | *FBI* | <code>d&lt;FBI&gt;</code> |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Azawan said “Azawan.”* (spoken atomic cite)
 
@@ -590,7 +579,7 @@ z-Azawan | SCOPE[h-possibility | d-lie] | v-see
 z-MENTION.multi["ululon" | "vadezel"] | g-small
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zazawan vezehel daxel azawan.`
 
@@ -673,8 +662,7 @@ z-MENTION.multi["uhubun" | "vazagal"] | g-small
 *The phrase “uhubun vazagal” is small.*
 :::
 
-## Advanced
-<a id="advanced"></a>
+## Advanced {#advanced}
 
 ### Close forms (complete / editorial / close-all)
 
@@ -760,7 +748,7 @@ duxal code > 1 xuxul
 
 **For *ordinals*, use:** [number words](numbers.md) with `#`. Inside a span, `#` is an editorial closer only when it sits immediately before `]` / `}` / `)` / `>` / `|`. `|` is close-all.
 
-### Translation practice
+### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**.
@@ -779,7 +767,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *bug* | `abugum` |
 | *happy* | `huzumum` |
 
-#### English → Agalan
+#### English → Agalan {#advanced-english-to-agalan}
 
 **1.** *Uhubun said “bug.”* (complete close of one span)
 
@@ -819,7 +807,7 @@ z-Azawan | d-CITE.multi[th-ASIDE.atomic[h-happy] | flaw]| | v-tell
 z-Uhubun | d-OPAQUE.multi["code" | ">" | "1"] | v-tell
 :::
 
-#### Agalan → English
+#### Agalan → English {#advanced-agalan-to-english}
 
 **1.** `zazawan d[abugum#] vezehel.`
 

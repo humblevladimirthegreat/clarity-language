@@ -16,7 +16,7 @@ Per-feature teaching already has its practice: rule → cue → 1–3 worked exa
 | Where | Job |
 |-------|-----|
 | **Inside each feature** | Worked examples only (house style) |
-| **End of a page stage** (e.g. [clause.md Beginner](../grammar/clause.md#beginner) → [translation practice](../grammar/clause.md#translation-practice)) | Short checkpoint for *that page’s* stack |
+| **End of a page stage** (e.g. [clause.md Beginner](../grammar/clause.md#beginner) → [translation practice](../grammar/clause.md#beginner-translation-practice)) | Short checkpoint for *that page’s* stack |
 | **End of whole Beginner / Intermediate / Advanced** (cross-doc) | Optional larger review — prefer [`examples/`](../examples/) or a dedicated practice page later; do **not** duplicate a full review on every grammar file |
 | **After a real trap** | At most 1–2 items *if* English pulls the wrong Agalan shape (e.g. *because* as a verb, a general *to be*, opaque `<>` when the page is not teaching loans) |
 
@@ -89,11 +89,10 @@ When a drill needs only one person, prefer a beat that still fits the setting an
 ## Shape (template)
 <a id="template"></a>
 
-Use a stable heading and anchor at the **end** of the stage (before the next `## Intermediate` / `## Advanced`):
+Use a stable heading and anchor at the **end** of the stage (before the next `## Intermediate` / `## Advanced`). The heading text repeats on every stage, so pin a stage-prefixed id on each of the three headings (`{#beginner-…}`, `{#intermediate-…}`, `{#advanced-…}`); ids must be unique on a page ([one id per heading](grammar-docs.md#unique-ids)). A second checkpoint in the same stage takes its section's name instead (`{#universality-translation-practice}`).
 
 ```md
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**. …
 
@@ -105,7 +104,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. …
 |---------|--------|
 | *…* | `…` |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *…*
 
@@ -116,7 +115,7 @@ z-… | v-…
 
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `…`
 
@@ -131,7 +130,7 @@ Omit recoverable **`jal`** unless the drill is teaching speech act. Match role l
 
 **Vocab table:** every checkpoint uses **English** then **Agalan** (plus **Same root as** / **Cue** when a row needs them), even when the bank is short. One sense per row (split house names `azawan` / `ululon` / `uhubun`). **English** is the published lemma for that spelling (literal, metaphor, or packed role English) — `build` checks **Roots used here** against the lexicon. Do not put an inflected English word in the bank (*running*, *hasty*, *the lie*) when the lemma is *run* / *haste* / *lie*; prompts may still use the obvious related form. SI nicknames (*gram*, *liter*) stay in **Cue** until that unit has its own published lemma. English is not an ending tag (`(**-m**)`). House people use the nativized name (`*Azawan*` / `*Ululon*` / `*Uhubun*`), matching prompts (*Azawan waits*). Sense-led *grace* (as a name) belongs only on [word-endings.md](../grammar/word-endings.md) Beginner, where the drill is pick **-n** from the sense. **Agalan** is a [citation](../grammar/word-endings.md#citation-forms) in backticks whenever **Same root as** is empty (`odogol`, `azawan`, `ugumul`) — ending already on, not a bare stem (`odogo`), and not a role-marked copy of that citation (`vugumul`). When **Same root as** is filled, **Agalan** is still the citation of *this* sense (`uzumum` *happy*) unless the English only matches with a role letter (`vejel` *see* / `` `ejel` *eye* ``; same pattern for *sit* / *tell*, and for `/x/` / `/h/` / `/w/` jobs such as `xezazam` *therefore*, `hadazam` *haste*, `wegelom` *volume`). Closed specials use their default ending (`ugobon`, not `ugobo`). Do not pack several pairs into one row, and do not add a second production row for the citation kind unless a drill asks for it. Inner **`x`** pieces and other table exceptions: [citation in tables](grammar-docs.md#citation-in-tables) (prefer the whole inflected word in the bank when the drill builds a compound). Overlay **English** is the overlay gloss (`*WITNESSED*`, `*COMMON*`, `*HIGH*`). Role compounds use the morph sense (`*agent-building*`). Named **`x`** stems use the hyphenated host lemmas (`*hospital-bed*`). Speaker/listener specials use *speaker* / *listener*, not *I* / *you*.
 
-**Caption:** later checkpoints use **`Roots used here:`** only. Spell **English** / **Agalan** / **Same root as** / **Cue** only in [How to learn](../grammar/introduction.md#cues) and the first learner banks ([clause.md](../grammar/clause.md#translation-practice) Beginner, [word-endings.md](../grammar/word-endings.md#translation-practice) Beginner).
+**Caption:** later checkpoints use **`Roots used here:`** only. Spell **English** / **Agalan** / **Same root as** / **Cue** only in [How to learn](../grammar/introduction.md#cues) and the first learner banks ([clause.md](../grammar/clause.md#beginner-translation-practice) Beginner, [word-endings.md](../grammar/word-endings.md#beginner-translation-practice) Beginner).
 
 ## Related meta
 

@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
+import { duplicateIds } from "./grammar-anchors.js";
 import {
   anchorLinks,
   learningOrder,
@@ -29,6 +30,10 @@ Intro.
 ## Advanced
 
 ### Deep
+
+## See also
+
+### Links
 `;
 
 const B = `# Page B
@@ -60,6 +65,13 @@ describe("learningOrder", () => {
       ],
     );
     assert.ok(pos("b.md#first")! < pos("a.md#more")!);
+  });
+
+  it("ignores See also sections and keeps them out of every band", () => {
+    const links = resolveAnchor(order, "a.md#links")!;
+    assert.equal(links.ignored, true);
+    assert.equal(links.position, undefined);
+    assert.equal(resolveAnchor(order, "a.md#deep")!.ignored, undefined);
   });
 
   it("leaves the page intro outside every band", () => {
@@ -95,5 +107,13 @@ describe("anchorLinks", () => {
       anchorLinks("p.md", md).map((l) => `${l.page}#${l.anchor}`),
       ["clause.md#role-letters", "p.md#here", "joins.md#a"],
     );
+  });
+});
+
+describe("duplicateIds", () => {
+  it("bans repeated heading slugs and <a id> that repeat a heading id", () => {
+    assert.deepEqual(duplicateIds("## Practice\n\n## Practice\n"), ["practice"]);
+    assert.deepEqual(duplicateIds('## Beginner\n<a id="beginner"></a>\n'), ["beginner"]);
+    assert.deepEqual(duplicateIds("## Practice {#beginner-practice}\n\n## Practice {#intermediate-practice}\n"), []);
   });
 });

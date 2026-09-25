@@ -4,7 +4,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, it } from "node:test";
 
-import { grammarAnchors } from "../lint/grammar-anchors.js";
+import { grammarHeadings } from "../lint/grammar-anchors.js";
 import { sentenceGrammarKeys } from "./construction-trace.js";
 import { CONSTRUCTIONS, REJECTIONS, SENTENCE_CONSTRUCTIONS } from "./constructions.js";
 import { parse } from "./index.js";
@@ -20,7 +20,9 @@ describe("construction registry", () => {
     assert.deepEqual([...registered].filter((key) => !grammar.has(key)).sort(), [], "entries with no grammar key");
   });
 
-  it("anchors resolve to a grammar page heading or <a id>", () => {
+  // A registry anchor names its home section, so it must be that heading's own id
+  // (docs/proposals/learning-order-check.md), not an <a id> inside the section.
+  it("anchors resolve to a grammar page heading id", () => {
     const anchorsByPage = new Map<string, Set<string>>();
     const broken: string[] = [];
     const entries = [...CONSTRUCTIONS, ...Object.entries(REJECTIONS).map(([id, entry]) => [`reject.${id}`, entry] as const)];
@@ -33,7 +35,7 @@ describe("construction registry", () => {
       }
       let anchors = anchorsByPage.get(page!);
       if (!anchors) {
-        anchors = grammarAnchors(readFileSync(path, "utf8"));
+        anchors = new Set(grammarHeadings(readFileSync(path, "utf8")).map((h) => h.id));
         anchorsByPage.set(page!, anchors);
       }
       if (!anchors.has(fragment)) broken.push(`${id}: ${entry.anchor}`);

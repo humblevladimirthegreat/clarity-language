@@ -51,6 +51,7 @@ import {
   type Section,
   withinSection,
 } from "../src/lint/learning-order.js";
+import { duplicateIds } from "../src/lint/grammar-anchors.js";
 import { CONSTRUCTIONS } from "../src/parse/constructions.js";
 import { readingOrder } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { loadDefaultTables } from "../src/parse/index.js";
@@ -168,7 +169,10 @@ function checkConstructionCoverage(uses: readonly ConstructionUse[]): number {
  * Report-only (phase 1): uses and links that reach past the current section in
  * the learning order. Prints a summary; `--order-report` prints every finding.
  */
-function reportLearningOrder(order: LearningOrder, uses: readonly ConstructionUse[], full: boolean): void {
+function reportLearningOrder(order: LearningOrder, allUses: readonly ConstructionUse[], full: boolean): void {
+  // Pages off the sidebar and `## See also` sections are not checked.
+  const checked = (s: Section) => order.readingOrder.includes(s.page) && !s.ignored;
+  const uses = allUses.filter((u) => checked(u.section));
   const homes = new Map<string, Section | undefined>();
   for (const [id, entry] of CONSTRUCTIONS) homes.set(id, resolveAnchor(order, entry.anchor));
 
@@ -190,7 +194,7 @@ function reportLearningOrder(order: LearningOrder, uses: readonly ConstructionUs
     const home = homes.get(u.id);
     if (!home || home.position === undefined) continue;
     if (u.section.position === undefined) {
-      const key = order.readingOrder.includes(u.section.page) ? formatSection(u.section) : `${u.section.page} (not in the sidebar)`;
+      const key = formatSection(u.section);
       unbandedUses.set(key, (unbandedUses.get(key) ?? 0) + 1);
       continue;
     }
@@ -202,11 +206,12 @@ function reportLearningOrder(order: LearningOrder, uses: readonly ConstructionUs
 
   const links: string[] = [];
   for (const ps of order.pages.values()) {
+    if (!order.readingOrder.includes(ps.page)) continue;
     const markdown = pageMarkdown.get(ps.page)!;
     for (const link of anchorLinks(ps.page, markdown)) {
       const from = sectionAt(ps.sections, link.index);
       const to = resolveAnchor(order, `${link.page}#${link.anchor}`);
-      if (from.position === undefined || to?.position === undefined || to.position <= from.position) continue;
+      if (from.ignored || from.position === undefined || to?.position === undefined || to.position <= from.position) continue;
       links.push(`  ${ps.page}:${lineNumberAt(markdown, link.index)}  ${formatSection(from)}  →  ${formatSection(to)}`);
     }
   }
@@ -267,6 +272,7 @@ function main(): void {
   let bankCount = 0;
   let speechCount = 0;
   let spanCount = 0;
+  let duplicateIdCount = 0;
   const spanStats = emptySpanStats();
   const pages = new Map<string, PageSections>();
   const uses: ConstructionUse[] = [];
@@ -284,6 +290,10 @@ function main(): void {
 
     let used: ((id: string, index: number) => void) | undefined;
     if (dirname(file) === grammarDir) {
+      for (const id of duplicateIds(original)) {
+        duplicateIdCount += 1;
+        console.error(`${rel}  #${id}  id is used more than once on the page (headings and <a id> share one namespace)`);
+      }
       const ps = pageSections(basename(file), original);
       pages.set(ps.page, ps);
       pageMarkdown.set(ps.page, original);
@@ -335,6 +345,11 @@ function main(): void {
   if (spanCount > 0) {
     console.error(`\n${spanCount} Agalan sentence / span issue(s) in docs/grammar/.`);
   }
+  if (duplicateIdCount > 0) {
+    console.error(
+      `\n${duplicateIdCount} duplicate id(s). Give each heading a unique id (rename it, or pin one with {#id}); drop an <a id> that repeats its heading's id.`,
+    );
+  }
   if (morphCount > 0) {
     console.log(`\n${morphCount} morph-gloss issue(s).`);
   }
@@ -346,7 +361,7 @@ function main(): void {
     console.log(`\n${speechCount} number pronunciation issue(s).`);
   }
 
-  const fail = hostIssues + count + spanCount + morphCount + bankCount + speechCount + coverageCount;
+  const fail = hostIssues + count + spanCount + duplicateIdCount + morphCount + bankCount + speechCount + coverageCount;
   if (fail > 0) {
     process.exit(1);
   }
@@ -360,6 +375,7 @@ function main(): void {
   console.log(
     `OK: ${morphChecked} morph gloss(es) compared; ${morphRedundantOmitted} redundant-omitted / ${morphWithLoose} with loose English; glosses match the parser.`,
   );
+  console.log("OK: every heading and <a id> on a grammar page is unique.");
   console.log("OK: translation word-bank English matches the lexicon.");
   console.log("OK: number pronunciation rows match their shorthand.");
   if (paths.length === 0) {

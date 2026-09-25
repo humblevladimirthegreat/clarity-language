@@ -1,15 +1,12 @@
-# Role compounds
-<a id="roles"></a>
+# Role compounds {#roles}
 
 When English would name a person or place from an event (*a teacher* from *teach*, *the one told*, *a sleep-place*), Agalan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [reference ending](word-endings.md). **`a`** is the doer, **`e`** is the place of the event, **`u`** is the one the event happens to, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
 
 The ending picks **kind** vs **this instance**. Non-resume (**-l** / **-m** / **-n**) is a lasting label: *a teacher*. Resume (**-r**) is the person or place of **that** latest matching event: *the one teaching*.
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
-### Role compounds: the doer (`a`)
-<a id="role-compounds"></a>
+### Role compounds: the doer (`a`) {#role-compounds}
 <a id="agent-place-patient-recipient"></a>
 
 English *a teacher* names who teaches as a kind, from the same idea as *teach*. Write a person or thing letter (`/z/` `/d/` `/b/`), then **`a`**, then mid-word **`x`**, then the event root, then an ordinary [reference ending](word-endings.md). The result is one content word (a **role compound**) that you can use as a participant. (cue: **a** ≈ add (add a doer))
@@ -161,8 +158,7 @@ The same adjective after another noun is English *fighter guard*: the host is cl
 
 **Compare with:** ordinary `guvugul` is *fight* as a property. English *the guard who fought (that time)* with extra participants or a place is [two sentences](dependents.md#which-noun), not this kind word.
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
@@ -188,7 +184,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *fight* | `uvugul` | |
 | *bond* | `onogom` | `onogol` *knot* |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *A constructor sits.*
 
@@ -256,7 +252,7 @@ z-Azawan | v-tell . z-←tell | v-punch
 z-Azawan | [g-bond | b-Ululon] . z-←bond | v-fight
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zululon dexelebel vejel.`
 
@@ -330,11 +326,9 @@ z-Uhubun | [g-bond | b-Ululon] . z-←bond | v-punch
 *Uhubun is bound to Ululon. That other party of the bond punches.*
 :::
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
-### Viewpoint laterals (`DIR` × anchor)
-<a id="viewpoint-laterals"></a>
+### Viewpoint laterals (`DIR` × anchor) {#viewpoint-laterals}
 <a id="spatial-laterals"></a>
 <a id="my-left-your-left"></a>
 
@@ -451,7 +445,7 @@ Write the ordinary [reference ending](word-endings.md) at the end of the whole c
 | `gewezethahan` | *our left* (shared facing) |
 | `gubal` / `hubal` | gravity *up* |
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -479,7 +473,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *listener* | `edonen` | `edonel` *headphones* |
 | *speaker* | `ugobon` | `ugobol` *microphone* |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *The boat on Azawan’s left.*
 
@@ -545,7 +539,7 @@ z-boat | g-west-th-speaker
 j-command | z-Ululon | v-walk | h-west
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zodadal gezazathazawan.`
 
@@ -619,8 +613,7 @@ j-command | z-Ululon | v-walk | h-down
 *Ululon, walk down.*
 :::
 
-## Advanced
-<a id="advanced"></a>
+## Advanced {#advanced}
 
 ### Arrow roots as talk-moves
 

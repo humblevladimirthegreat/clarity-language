@@ -4,11 +4,9 @@ This page is how you **ask** and how you answer.
 
 You can ask for *yes* or *no*, or you can leave a blank for *who* / *what* (a **fill-ask**). After a *yes* / *no* question, you can answer with a short *yes* / *no* / *sure* word (**polar stance**).
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
-### Ask (`jol` / `jom`)
-<a id="question"></a>
+### Ask (`jol` / `jom`) {#question}
 
 A **question** is a sentence that wants a reply rather than asserting a fact. Mark that setting with an act word at the start of a new speech move (a **turn**): write **`jol`**, then the rest of the sentence (the **body**: subject, verb, and so on).
 
@@ -80,8 +78,7 @@ If the reply is just the fill, not a full sentence, write it as a [citation](wor
 
 **Compare with:** pointing back at someone already named uses content resume **-r** ([pronouns](pronouns.md)). Fill-ask uses only **join** **-r**. You can tell the difference because resumes always have at least five letters due to copying three from the antecedent, whereas joins always have fewer than five letters.
 
-### Question tone (`?`)
-<a id="question-tone"></a>
+### Question tone (`?`) {#question-tone}
 
 The act word **`jol`** / **`jom`** already makes the sentence a question, so the [tone mark](speech-moves.md#tone-marks) `?` is never required. It is still **recommended**, because it shows the rising voice in writing:
 
@@ -102,8 +99,7 @@ The act word **`jol`** / **`jom`** already makes the sentence a question, so the
 
 The sentence still ends in a period.
 
-### Fill-all
-<a id="fill-all"></a>
+### Fill-all {#fill-all}
 
 If more than one slot has join **-r** in the same question, each of those **-r** words is a blank. The answer is expected to **fill all** of them, in the order you said them.
 
@@ -131,8 +127,7 @@ If only one slot is unknown, put join **-r** only there. Write the known thing a
 >
 > "Azawan."
 
-### Polar stance (*yes* / *no* / *sure*)
-<a id="polar-stance"></a>
+### Polar stance (*yes* / *no* / *sure*) {#polar-stance}
 <a id="answers"></a>
 
 After a *yes* / *no* question, you often answer with a short word that means *yes*, *no*, or *I’ll take that*. That answer is a **polar stance**. It can stand alone as a whole turn, or it can sit at the start of a turn before a sentence body.
@@ -195,8 +190,7 @@ A *…, yes?* confirm tag is its own next turn: finish the statement with a peri
 
 **Not the same job as:** *not X* inside the clause (`zul` / `vul` / `xul`).
 
-### Embedded *whether*
-<a id="embedded-whether"></a>
+### Embedded *whether* {#embedded-whether}
 
 When the **outer** sentence is a claim (*Azawan sees…*, *Azawan tells Ululon…*) and English would say *whether*, write [**`dorl`**](dependents.md#dependent-clauses) (soft **`dorm`**) in the object slot. The outer act stays a statement; do not write **`jol`** on the whole stretch.
 
@@ -214,8 +208,7 @@ When the **outer** sentence is a claim (*Azawan sees…*, *Azawan tells Ululon�
 
 **Compare with:** a matrix question (*Does Azawan walk?*) writes **`jol`** on the **outer** turn. *If Ululon walks* as a condition is **`thadorom barl`**, not inner **`jol`**.
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
@@ -239,7 +232,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *punch* | `vubunul` | |
 | *lie* | `vululel` | |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Does Azawan sit?*
 
@@ -305,7 +298,7 @@ j-no
 j-sure
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `jom zuhubun vejel dagegol.`
 
@@ -378,8 +371,7 @@ z-Ululon | v-lie . j-yes
 *Ululon lies. Yes.*
 :::
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
 ### Polar stance: fuller inventory
 
@@ -402,8 +394,7 @@ A stance word can stand alone (`jael.`), sit before a body (`jael zazawan vawala
 
 **Compare with:** *not* inside the clause uses **`zul`** / **`vul`** / **`xul`**. Polar **`juel`** / **`juol`** answer a *yes* / *no* or an offer.
 
-### Confirming a negative
-<a id="confirming-a-negative"></a>
+### Confirming a negative {#confirming-a-negative}
 
 When the question already contains *not* (*Didn’t Azawan run?*), *yes* and *no* still say whether **that claim** matches. **`jael`** confirms the denial (*true: they didn’t*). **`juel`** says the denial is false (*they did*). Restate the body after the stance word when you want the polarity said twice. Offer words (**`jaol`** / **`juol`**) still answer *take this?*, not true/false.
 
@@ -419,8 +410,7 @@ When the question already contains *not* (*Didn’t Azawan run?*), *yes* and *no
 >
 > "True: (they) didn’t run."
 
-### Fill-ask arity
-<a id="fill-ask-arity"></a>
+### Fill-ask arity {#fill-ask-arity}
 
 Beginner already used *who/what* (**…ar**) and *what else* (**…ur**). Length of the join (nothing listed, one named item, or a list) plus **…or** / **…er** finish the same map as [single-item / standalone](joins.md#single-item-phrase).
 
@@ -432,8 +422,7 @@ Beginner already used *who/what* (**…ar**) and *what else* (**…ur**). Length
 
 Bare **-r** in the queried slot is unbound *who* / *what*. Bare **`var`** / **`xar`** is *what did they do?* / *what happened?*. Bare **`har`** is *when?*.
 
-### When?
-<a id="when"></a>
+### When? {#when}
 
 To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in the question. Bare **`har`** is the *when* blank. The same family also asks *anytime?* and *when else?*.
 
@@ -451,8 +440,7 @@ To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in
 
 **Related form:** statement occasion readings live with [restrictors](restrictors.md#more-occasions).
 
-### Where?
-<a id="where"></a>
+### Where? {#where}
 
 To ask *where?*, keep the [extra-noun hook](hooks.md#extra-noun) that says how the place relates to the event, and put the blank **`bar`** in the `/b/` slot after it. The hook picks which *where* you mean.
 
@@ -501,7 +489,7 @@ A *yes/no* question can put a join ending on a **named** item instead of a fill-
 
 **Compare with:** *who* / *which* still uses join **-r** ([fill-ask](#fill-ask-r)).
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -523,7 +511,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *lie* | `vululel` | |
 | *punch* | `vubunul` | |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Didn’t Azawan tell?* Then confirm: *true, Azawan didn’t.*
 
@@ -590,7 +578,7 @@ j-question | h-anytime
 j-everything-but
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `jael vadezel vul.`
 
@@ -663,8 +651,7 @@ j-question | z-who | v-tell | b-Uhubun | h-when
 *Who tells Uhubun when?*
 :::
 
-## Advanced
-<a id="advanced"></a>
+## Advanced {#advanced}
 
 ### Single-item and standalone inventory
 <a id="single-item-standalone-inventory"></a>
@@ -753,7 +740,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 | **…or** | *Anything?* (fill-ask) |
 | **…ur** | *What else?* (fill-ask) |
 
-### Translation practice
+### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**.
@@ -770,7 +757,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *trophy* | `odobol` |
 | *bell* | `obelel` |
 
-#### English → Agalan
+#### English → Agalan {#advanced-english-to-agalan}
 
 **1.** *Is Azawan the only priority?*
 
@@ -812,7 +799,7 @@ j-question | z-equal-rank
 j-question | [z-trophy | z-and/or]
 :::
 
-#### Agalan → English
+#### Agalan → English {#advanced-agalan-to-english}
 
 **1.** `jael.` vs `jaol.`
 

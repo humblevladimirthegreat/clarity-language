@@ -3,8 +3,7 @@
 
 How to **sound out** Agalan. Each letter has one pronunciation. Syllables end with a consonant only at the end of the word (one rare number-word exception is under [Advanced](#singability-constraints)), so you know when words stop.
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
 Pronounce each letter the same way every time. A **syllable** is one beat with one vowel. Spell the beats you actually say: a consonant starts a beat, and the last consonant of a content word is where that word ends.
 
@@ -61,8 +60,7 @@ A content word ends with a last consonant `-l` / `-m` / `-n`, or `-r`. That last
 
 `azawan` = *a-za-wan*. `odogol` = *o-do-gol*.
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
 ::: tip Reminder:
 Intermediate sections assume you have read the beginner sections of every page.
@@ -89,8 +87,7 @@ A syllable ends with a consonant only at the **end of the word**. In a fused ext
 
 **Related form:** word-initial `x` is the [continue](dependents.md#continue-x) prefix (discourse), not a compound seam.
 
-### Number-word exception
-<a id="number-word-exception"></a>
+### Number-word exception {#number-word-exception}
 
 When English says *how many* or *which place*, Agalan writes a [number word](numbers.md). After the role letter, the spoken marker begins with `r`, which makes a cluster ordinary content never uses (`gr…`, `zr…`, `vr…`, `hr…`, `thr…`, `jr…`, `xr…`). That cluster is how you hear “this is a number.” Content roots start with a vowel, so an `r` that starts a syllable right after a role letter is the number marker (`ra` / `ru` / `re` / `ro`; counting from the end uses written `#-`, spelled and spoken **rue** before the digits). Stacked vowels stay separate syllables (`juon` = *ju'on*).
 
@@ -104,8 +101,7 @@ Spoken `g+3` is `grarel` (`g` + `ra` + digit `re` + `-l`). Each written comma is
 
 **Compare with:** ordinary endings on content words use [word ending](word-endings.md) senses. Number words reuse those same four letters with [number-specific endings](word-endings.md#number-word-exception).
 
-### Letter names
-<a id="letter-names"></a>
+### Letter names {#letter-names}
 <a id="letter-names-and-digits"></a>
 
 When you **spell a word aloud** or **name a letter**, say the Agalan name for it. Pause between names so two names do not run into one syllable.
@@ -152,11 +148,9 @@ Ten letters also begin a [digit syllable](numbers.md#digits). The letter name us
 | `n` | `na` (9) | `nu` | `a` ↔ `u` |
 | `z` | `zo` (0) | `ze` | `o` ↔ `e` |
 
-## Advanced
-<a id="advanced"></a>
+## Advanced {#advanced}
 
-### Singability constraints
-<a id="singability-constraints"></a>
+### Singability constraints {#singability-constraints}
 
 These shape choices keep ordinary singing easier:
 

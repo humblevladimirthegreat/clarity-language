@@ -2,11 +2,9 @@
 
 English *they* and *the Smiths* often mean a named person plus people around them, not a counted list. Agalan marks that **associative group** with optional **-x** after the [word ending](word-endings.md).
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
-### Associative group (`-x`)
-<a id="associative"></a>
+### Associative group (`-x`) {#associative}
 
 Without **-x**, the word picks **one** person or thing. With **-x** after the ending, you name an **anchor plus nearby associates** (family, coworkers, unit, household, and so on). Who counts as an associate comes from the conversation and the situation; on a name it reads as *Azawan and associates*. (cue: **-x** ≈ set with the named anchor)
 
@@ -57,8 +55,7 @@ An extra noun takes **-x** the same way. Here the recipient is Ululon and associ
 | **-nx** | named / titled group | *Team Alpha*; *Azawan and associates* as a title |
 | **-rx** | resume prior referent and associates, or a prior group | *they* (that one and associates) |
 
-### Person-role **-x**
-<a id="person-role-x"></a>
+### Person-role **-x** {#person-role-x}
 <a id="clusivity"></a>
 
 English *we* and *you* do not say whether the listener is in the group. That split is **clusivity**. On the speaker and listener roots, **-x** still adds associates, but the reading follows the conversation role: speaker plus that person’s people, or everyone you are talking to. The **address set** is everyone you are talking to right now (all current addressees, no speaker). Inclusive *you and I* stays **`aha`** ([special pronouns](pronouns.md#special-pronouns)), with no **-x**.
@@ -118,8 +115,7 @@ The same roots take the role letter of the slot they fill. As a direct object th
 
 **Not the same job as:** *you and yours* uses a **name**…**-x** (`zululonx`). **`edone…x`** is the [address set](#person-role-x) only.
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
@@ -147,7 +143,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *tell* | `vezehel` |
 | *interlocutors* | `ahan` |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Azawan and associates sit.*
 
@@ -213,7 +209,7 @@ z-Ululon-x | d-Azawan | v-punch
 j-question | z-Azawan-x | v-scream
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zuhubunx vajul.`
 
@@ -287,8 +283,7 @@ j-question | z-Uhubun-x | v-scream
 *Do Uhubun and associates scream?*
 :::
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
 ### Associate-set resolution
 <a id="associate-resolution"></a>
@@ -318,8 +313,7 @@ If the wrong reading would matter, say so. Use **`aha`** or a join for *you and 
 
 For the **address set** (`edonenx`), count everyone called in this turn’s vocatives, plus anyone still being addressed from before.
 
-### Verbs (`/v/`) — collective
-<a id="verbs-v"></a>
+### Verbs (`/v/`) — collective {#verbs-v}
 
 English *they walk* does not say whether it was one shared outing. Put **-x** on the **verb** (after its ending) when the event is **one shared act**. A set subject with a singular verb leaves together vs separately open. Noun **-x** still names **who**; verb **-x** names **how** the doing is structured.
 
@@ -347,8 +341,7 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 
 **Related form:** *three times* uses a [number](numbers.md) under `/h/`; *always* uses **`hual`**.
 
-### Adjectives (`/ɡ/`) — collective
-<a id="adjectives-g"></a>
+### Adjectives (`/ɡ/`) — collective {#adjectives-g}
 <a id="collective"></a>
 
 English *the boxes are heavy* can mean each box or the pile. Put **-x** on the **adjective** (after its ending) when the property holds of the **host set as one unit**. A set host with a singular adjective leaves each-member vs one-pile open.
@@ -418,7 +411,7 @@ Beginner already used **-x** on nouns and person-role specials. The rest of the 
 
 **For *every K*, use:** [universals](joins.md#universals-domains-generics) (`zual gagadal`; habitual **`hual`**).
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -443,7 +436,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *fight* | `vuvugul` |
 | *see* | `vejel` |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Hey, you all!*
 
@@ -509,7 +502,7 @@ z-Ululon-x | v-sneak-x
 z-Ululon-x | d-Azawan | v-punch-x
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `juhubunx.`
 

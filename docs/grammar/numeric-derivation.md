@@ -1,13 +1,10 @@
-# Numeric derivation
-<a id="numeric-derivation-page"></a>
+# Numeric derivation {#numeric-derivation-page}
 
 Glue a [number](numbers.md) stem onto a content root with the same join as a [lexical compound](x-compounds.md#lexical-compounds): **-l** when the host is the everyday kind, **-m** when that host is the published abstract sense. The number names a **property of the kind** (essence, grain, part-count, order, catalog code). Free number words still count, rank, and label in a clause slot. (cue: join then number **r** — **`lr`** / **`mr`**)
 
-## Advanced
-<a id="advanced"></a>
+## Advanced {#advanced}
 
-### Numeric derivation (`ROOT` × number stem)
-<a id="numeric-derivation"></a>
+### Numeric derivation (`ROOT` × number stem) {#numeric-derivation}
 
 English often names a *kind of thing* with a number idea baked in (*essence of love*, *a three-part dialogue*, *specimen #1*). In Agalan you write the content root, a [lexical-compound](x-compounds.md#lexical-compounds) join (**-l** / **-m**), then a number stem. That stem has no role letter and no ending of its own; the role letter and one [word ending](word-endings.md) belong to the **whole derived word**. You can then use that word in any ordinary slot: the number names a property of the kind, not a count in the clause. (cue: same glue as *bedroom*, right half is a number)
 
@@ -213,8 +210,7 @@ English *first-draft*, *secondary adventure*, *third-order problem* can name **w
 
 **Related form:** **`_N`** is *which code*; free `g#N` is *which token in the current series*.
 
-### Label / code sense (`_`)
-<a id="label-code-sense"></a>
+### Label / code sense (`_`) {#label-code-sense}
 
 English *specimen #1*, *room-12 as a coded kind* treats digits as a **catalog ID**, not a count or a rank. Marker **`_`** identifies ROOT by that code. Digits (when present) are the **label payload**. Digitless **`_`** opens [catalog topology](#infinite-labels) below.
 
@@ -270,7 +266,7 @@ Mantissa (the digit before the unbounded exponent) plus digitless exp is **comic
 
 Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zahalrewobal`** = *an umpteenth co-participation* (noun kind).
 
-### Translation practice
+### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**.
@@ -292,7 +288,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *see* | `vejel` | `ejel` *eye* |
 | *melt* | `vemelel` | `emelel` *melt* |
 
-#### English → Agalan
+#### English → Agalan {#advanced-english-to-agalan}
 
 **1.** *Azawan hammers a grain of gold.*
 
@@ -334,7 +330,7 @@ z-Ululon | d-gold-l-1st | v-pour
 z-Ululon | v-gold-l-plus-infinity
 :::
 
-#### Agalan → English
+#### Agalan → English {#advanced-agalan-to-english}
 
 **1.** `zuhubun dologolrabal vejel.`
 

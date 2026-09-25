@@ -66,6 +66,12 @@ When you rename a section, **change the heading and the id to the current name**
 
 **Test:** an unused `<a id="…">` whose name is a former heading is leftover. Delete it. One canonical id per concept, matching the **current** ordinary name (`speech-act`).
 
+### Unique ids on a page {#unique-ids}
+
+Every heading id and `<a id>` on a grammar page is unique. `lint:agalan` fails on a repeat. Never rely on VitePress's `-1` / `-2` suffixes, and never link to one. When heading text must repeat (`### Translation practice` on each stage), pin a distinct id on each with `{#id}`. To give a heading a stable short id, pin it on the heading (`### Right-close fence {#right-close}`); do not add an `<a id>` that repeats the heading's own id.
+
+A construction's registry anchor in [constructions.ts](../../src/parse/constructions.ts) is always a **heading** id, never an `<a id>` inside a section: the anchor names the home section that the learning-order check (`learning-order-check.md`) measures against.
+
 ### Omit denials of former constructions
 <a id="omit-former-construction-denials"></a>
 

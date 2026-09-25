@@ -4,10 +4,11 @@
  * Global order: every `## Beginner` band in sidebar order, then every
  * `## Intermediate` band, then every `## Advanced` band; within a band,
  * heading order. Only level-2 headings open a band, so `### Beginner forms`
- * stays inside its `## Beginner`. Doc order comes from the sidebar's
- * `readingOrder`, passed in by the caller at run time.
+ * stays inside its `## Beginner`; `## See also` closes it. Doc order comes
+ * from the sidebar's `readingOrder`, passed in by the caller at run time.
+ * Pages off the sidebar are not checked.
  */
-import { headingSlug, headingText } from "./grammar-anchors.js";
+import { anchorTags, grammarHeadings } from "./grammar-anchors.js";
 
 export const BANDS = ["beginner", "intermediate", "advanced"] as const;
 export type Band = (typeof BANDS)[number];
@@ -24,6 +25,8 @@ export type Section = {
   /** End of the heading's subtree: the next heading at the same or a higher level. */
   end: number;
   band?: Band;
+  /** In a `## See also` section: not checked. */
+  ignored?: boolean;
   /** Index in the global learning order; undefined outside every band or off the reading order. */
   position?: number;
 };
@@ -35,39 +38,31 @@ export type PageSections = {
   anchors: Map<string, Section>;
 };
 
-/** Split a grammar page into heading sections, with bands and anchors. */
+/**
+ * Split a grammar page into heading sections, with bands and anchors. A
+ * `## See also` section is `ignored`: it lists links, and is not part of any band.
+ */
 export function pageSections(page: string, markdown: string): PageSections {
   const sections: Section[] = [{ page, slug: "", title: "", level: 0, offset: 0, end: markdown.length }];
   const anchors = new Map<string, Section>();
   let band: Band | undefined;
-  let inFence = false;
-  let offset = 0;
-  for (const line of markdown.split("\n")) {
-    const lineOffset = offset;
-    offset += line.length + 1;
-    if (/^\s*```/.test(line)) inFence = !inFence;
-    if (inFence) continue;
-    const heading = /^(#{1,6})\s+(.*)$/.exec(line);
-    if (!heading) continue;
-    const level = heading[1]!.length;
-    const raw = heading[2]!;
-    const custom = /\{#([^}]+)\}\s*$/.exec(raw);
-    const title = headingText(raw.replace(/\s*\{#[^}]+\}\s*$/, ""));
-    if (level <= 2) {
-      const named = BANDS.find((b) => title.toLowerCase() === b);
-      band = named ?? (level === 1 ? undefined : band);
+  let ignored = false;
+  for (const h of grammarHeadings(markdown)) {
+    if (h.level <= 2) {
+      const named = BANDS.find((b) => h.title.toLowerCase() === b);
+      ignored = h.level === 2 && h.title.toLowerCase() === "see also";
+      band = ignored || h.level === 1 ? undefined : (named ?? band);
     }
     for (const open of sections) {
-      if (open.level >= level && open.end === markdown.length && open.level > 0) open.end = lineOffset;
+      if (open.end === markdown.length && (open.level === 0 || open.level >= h.level)) open.end = h.offset;
     }
-    if (sections[0]!.end === markdown.length) sections[0]!.end = lineOffset;
-    const slug = custom ? custom[1]! : headingSlug(title);
-    const section: Section = { page, slug, title, level, offset: lineOffset, end: markdown.length, band };
+    const section: Section = { page, slug: h.id, title: h.title, level: h.level, offset: h.offset, end: markdown.length, band };
+    if (ignored || sections.some((s) => s.ignored && withinSection(s, section))) section.ignored = true;
     sections.push(section);
-    if (!anchors.has(section.slug)) anchors.set(section.slug, section);
+    anchors.set(section.slug, section);
   }
-  for (const m of markdown.matchAll(/<a\s+id="([^"]+)"/g)) {
-    if (!anchors.has(m[1]!)) anchors.set(m[1]!, sectionAt(sections, m.index!));
+  for (const a of anchorTags(markdown)) {
+    if (!anchors.has(a.id)) anchors.set(a.id, sectionAt(sections, a.offset));
   }
   return { page, sections, anchors };
 }

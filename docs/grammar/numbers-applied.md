@@ -4,11 +4,9 @@
 Put a number word on a **label**, a **clock or date**, a **unit amount**, a **from–to** band, or an everyday **percent**. How the number word itself is built (markers, endings, exponents, writing) is in [numbers.md](numbers.md).
 
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
-### Digit-strings
-<a id="digit-strings"></a>
+### Digit-strings {#digit-strings}
 
 English needs a **code**: a phone, room, channel, or serial, not a counted amount. Write that with digit-string marker **`ro`** (written **`_`**). Leave exponents off, and group digits in threes when they are present. You can then drop the code into whatever slot the clause needs (`/d/` `/b/` `/ɡ/`).
 
@@ -26,8 +24,7 @@ Ending is usually **-l** (exact label); **-n** for an official designation; **-r
 
 For a code as a when-frame, use a host relation + `/b/` (`/h/` *on* + `b_7` *channel 7*), or put `/ɡ/` on a noun (*channel* `g_7`).
 
-### Time
-<a id="time"></a>
+### Time {#time}
 
 English names a **clock time** or a **calendar date**. Both reuse digit-string grammar as bare `/h/`. Clock takes marker **`ro`** (spoken **`hro`**, written `h_…`). Date takes calendar-ordinal **`oe`** (spoken **`hroe`**, written `h_#…`). Fields are read by position, so the word already says which number is the hour or the month.
 
@@ -55,8 +52,7 @@ Calendar decade labels such as *the ’90s* name a group of years, not a bare or
 
 **Not the same job as:** `h+3` (*three times*) and `h#3` (*for the third time*). Clock time `h_15,30` is still a digit-string.
 
-### Measure phrases
-<a id="measure-phrases"></a>
+### Measure phrases {#measure-phrases}
 <a id="units"></a>
 <a id="unit-amount"></a>
 <a id="si-units"></a>
@@ -81,8 +77,7 @@ Price *for five grams* keeps this same measure NP in `/b/` after [exchange](rela
 
 Same endings and fuzzy **-m** habits as other number words on the amount (`g~+2` ≈ *about two*). The **unit** takes ordinary word endings.
 
-#### Stock units
-<a id="stock-units"></a>
+#### Stock units {#stock-units}
 
 Base and everyday units (each row is a **unit metaphor**; the literal picture stays on the same published root unless noted):
 
@@ -123,8 +118,7 @@ Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / a
 
 Vague degree uses `/w/` on the scale (`zel wogegal godowem …`) with no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
 
-### Ranges
-<a id="ranges"></a>
+### Ranges {#ranges}
 <a id="number-ranges"></a>
 <a id="numeric-ranges"></a>
 <a id="from-to"></a>
@@ -173,8 +167,7 @@ Menu **`o`** / **`ao`** lists discrete values (*3 or 5* / *3 and/or 5*). Equativ
 
 Clock / date ranges: SHARED continuum **`gumem`** (or a host relation + `/b/`) with digit-string endpoints (`b_15,00 b_16,00 bel gumem`). Circumstance **`hal`** is a [restrictor](restrictors.md).
 
-### Percent and percentage points
-<a id="percent-and-percentage-points"></a>
+### Percent and percentage points {#percent-and-percentage-points}
 
 English *25% of the cats* names a **portion of a whole**. Close a **count** (`ra` / `ru`) with **`jo`**. That closer is parallel to fraction closer **`je`**. The whole is the noun the percent grades, same `/ɡ/` slot as a count (`zagadalx g+3` = *three cats*).
 
@@ -239,7 +232,7 @@ Unnumbered `zuzebum` is just *a problem*, not a candidate in a set — write **`
 
 **Compare with:** discourse *point N:* uses free **`x#N`** ([number as discourse](numbers.md#number-as-discourse-marker-by-marker)), a continue. Numbered alternatives are problem / solution / goal nouns plus **`g#N`**. Clause *so that* is [**`holalam`**](dependents.md#so-that), not **`olalal`**.
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**. One topic per item: labels, clock or date, percent, measures, or ranges.
@@ -265,7 +258,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 | *punch* | `vubunul` | `ubunul` *punch* |
 | *scream* | `vazagal` | `azagal` *scream* |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Azawan sees 555-123-4567.*
 
@@ -347,7 +340,7 @@ z-Ululon | [d-rock | g-five] | v-punch
 [z-15 | z-16 | z-rank/more | g-duration]
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zabobol g_7.`
 
@@ -437,8 +430,7 @@ h-_23,59.about | z-Ululon | v-scream
 *Outside 10–20.*
 :::
 
-## Advanced
-<a id="advanced"></a>
+## Advanced {#advanced}
 
 ### Date as books vs event-when
 <a id="as-of-vs-clock"></a>
@@ -499,8 +491,7 @@ Standalone **`e`** + **-r** = unspecified member of the *\< X* ray (`z+5 zer` �
 
 **Compare with:** `z+3 z+5 zel gumem` (*from 3 to 5 in time*) is a two-endpoint range; `z+3 z+5 zel` is preference; `zazawan zel` (a person) is *only Azawan matters* / [superlative-with-scale](comparatives.md). A **single-item number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
 
-### Half-open (exclude the high end only)
-<a id="half-open-exclude-the-high-end-only"></a>
+### Half-open (exclude the high end only) {#half-open-exclude-the-high-end-only}
 
 A [hook](hooks.md) **inside the range** marks an exclusive **upper** bound. Replace the second (high) conjunct with prefix-less **`ul`** + that number. SHARED continuum is required. The low endpoint stays inclusive.
 

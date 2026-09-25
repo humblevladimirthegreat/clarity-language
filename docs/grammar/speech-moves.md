@@ -1,20 +1,16 @@
-# Speech moves
-<a id="speech-moves"></a>
+# Speech moves {#speech-moves}
 
 Start a new turn with `/j/`: call someone, make a conventional call, or set the turn as a statement, question, command, or prohibition.
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
-### Turn (`/j/`): start a new speech move
-<a id="turn-j"></a>
+### Turn (`/j/`): start a new speech move {#turn-j}
 
 A **turn** is one speech move: a statement, question, command, or other act, including talking only to yourself. `/j/` starts a new turn.
 
 At the start of a turn, write its act word immediately before the body (subject, object, verb, and so on), when you write one. A `/j/` word that calls someone or makes a conventional call can come first; a `/j/` after a finished body starts the next turn.
 
-### Call someone (`/j/` + name)
-<a id="vocative"></a>
+### Call someone (`/j/` + name) {#vocative}
 
 To call someone into the turn, put `/j/` before their name, which ends in **-n**. The call can be the whole turn or come before a clause.
 
@@ -63,8 +59,7 @@ The vowel gives the act word its setting. The same four vowel cues appear in man
 | **jel** | command / instruction | **e** ≈ order (do this) |
 | **jul** | prohibition: *don’t…* | **u** ≈ undo (take the action back) |
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
@@ -81,7 +76,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sneak* | `vazanal` |
 | *run* | `vurunul` |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Uhubun!* (calling Uhubun)
 
@@ -107,7 +102,7 @@ j-prohibition | v-sneak
 j-Uruzen
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `jazawan.`
 
@@ -136,15 +131,13 @@ j-command | v-run
 *Run!*
 :::
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
 ::: tip Reminder:
 Intermediate sections assume you have read the beginner sections of every page.
 :::
 
-### Speech act: firm and soft
-<a id="speech-act"></a>
+### Speech act: firm and soft {#speech-act}
 
 You already write whether a turn is a statement, question, command, or prohibition. The extra choice here is **how firmly** you mean it.
 
@@ -171,8 +164,7 @@ The act word is **`j` + vowel + ending**. The vowel sets the act (**a** statemen
 
 A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/j/` words, immediately before the act word, or before a body that defaults to a statement.
 
-### Emphatic prohibition
-<a id="emphatic-prohibition"></a>
+### Emphatic prohibition {#emphatic-prohibition}
 
 When a missed *don't* would be dangerous, say **`jul`** twice among the opening `/j/` words. The repeat makes the prohibition louder; it never cancels it. Repeat only the opening act word: a `jul` after the body starts a new turn instead of adding emphasis.
 
@@ -182,8 +174,7 @@ When a missed *don't* would be dangerous, say **`jul`** twice among the opening 
 >
 > "Don't sneak. I mean it."
 
-### Tone marks
-<a id="tone-marks"></a>
+### Tone marks {#tone-marks}
 
 A **tone mark** shows how you feel, or what you stress, while you say something. It changes your voice only. It never changes the speech act (that is the act word's job), and a sentence still ends in a period.
 
@@ -233,12 +224,11 @@ Write the mark **before** what it colors, so you see the tone before you say the
 - Before a span fence, the mark is **your** tone about the quote. Inside the fence, it is part of what is quoted (the original speaker's tone).
 - Speech adds no syllables: you voice the mark over its words.
 
-### Number as interjection
-<a id="number-as-interjection"></a>
+### Number as interjection {#number-as-interjection}
 
 A number word in `/j/` is a call-out (*Three more!*, a score). It can sit with the other opening `/j/` words, before the act word, or stand alone as its own turn. Readings by marker: [numbers](numbers.md#number-as-interjection-by-marker).
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -259,7 +249,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *tell* | `vezehel` |
 | *sneak* | `vazanal` |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *For what it's worth, Azawan sits.*
 
@@ -309,7 +299,7 @@ j-soft-statement | z-Ululon | d-trumpet | v-see
 j-request | b-Uhubun | v-tell
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `jam zazawan vajul.`
 

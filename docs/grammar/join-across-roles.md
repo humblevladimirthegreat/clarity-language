@@ -1,14 +1,11 @@
-# Join across roles
-<a id="join-across-roles"></a>
+# Join across roles {#join-across-roles}
 
 The same join vowel series works across roles: `/v/` packages verb phrases, `/x/` connects clauses, and **-n** under `/v/`, `/ɡ/`, or `/h/` makes join-derived content words. This page covers those forms together. Phrase fences and their set, rank, arity, and scope patterns are in [joins](joins.md).
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
-### Sequence (`-n`, clause only)
+### Sequence (`-n`, clause only) {#clause-sequence}
 <a id="sequence"></a>
-<a id="clause-sequence"></a>
 
 When English would walk through events in time (*and then*), put ending **-n** on a clause continue join (`/x/`). Narrative *and then* is **`xan`**. The clauses keep one speech act; this **-n** orders them rather than naming a person.
 
@@ -21,8 +18,7 @@ When English would walk through events in time (*and then*), put ending **-n** o
 
 The `/x/` forms are clause joins; **-n** under `/v/`, `/ɡ/`, and `/h/` makes join-derived content words. See [join-act verbs](#join-act-verbs) and [join-relations](#join-relations) for those forms. Ordinary content **-n** still [names](word-endings.md#proper-name--n) a person or titled frame.
 
-### Verb-phrase and clause forms
-<a id="vp-clause-forms"></a>
+### Verb-phrase and clause forms {#vp-clause-forms}
 <a id="vowels--endings"></a>
 <a id="ending-senses-clause-joins"></a>
 
@@ -75,8 +71,7 @@ A clause join with no clause before it is the standalone reading, like `zal` *no
 >
 > "(Azawan walks or Ululon runs) and Uhubun sleeps."
 
-### Stance joins
-<a id="stance-joins"></a>
+### Stance joins {#stance-joins}
 
 When English would deny or weigh **how you stand** toward a claim (*not because…*, *either I saw it or I was told*), close the [stance](clause.md#stance-th) words with a `/th/` join. The claim itself is untouched; the join works only on the stance words before it. (cue: same vowels as every other join.)
 
@@ -96,8 +91,7 @@ Nothing is SHARED after an `/h/` or `/th/` join. To grade the whole list at once
 
 **Compare with:** *Azawan does not walk* denies the event, so the join goes on the verb (`vawalal vul`) or the clause (`xul`), not on `/th/`.
 
-#### Standalone stance joins
-<a id="standalone-stance-joins"></a>
+#### Standalone stance joins {#standalone-stance-joins}
 
 When English would say how to take a claim without naming any grounds (*at face value*, *no judgment*, *all things considered*), put a `/th/` join with no stance words before it. It works like standalone `zal` *nothing*: the list of stance words is empty, and the join says what that empty stance means. The claim itself is untouched. (cue: same vowels as every other join.)
 
@@ -145,8 +139,7 @@ Under a question, a standalone **-r** stance join is a [fill-ask](questions.md#f
 
 **Compare with:** `thul` *no judgment* withholds any stance; **`th+0e`** *no chance* is a stance that the claim is false. `thar` *why?* asks for the speaker's grounds, not what caused the event.
 
-### Join-act verbs
-<a id="join-act-verbs"></a>
+### Join-act verbs {#join-act-verbs}
 
 When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*), write that move as a verb: first letter **`v`**, the same join vowel you already use on lists, and ending **-n** (`van`, `von`, …). The object is one `/d/` phrase: one thing, or a group packed with a [phrase join](joins.md). You can now name the act itself instead of only packing a list. On these verbs, **-n** is join content, not a [proper name](word-endings.md#proper-name--n). Put ordinary noun **-x** on the object when the group is associative; verb **-x** is [collective](plurality.md#verbs-v).
 
@@ -186,8 +179,7 @@ These are ordinary content verbs. Point back at a join-act you already used with
 
 English *refuse* vs *leave out*: `zazawan dememal vun` (*Azawan refuses meat*) vs `zazawan dememal vuan` (*Azawan excludes meat*). One locked choice vs an open pick: `zazawan dabanul von` vs `zazawan dabanul vaon`. Rank vs trial: `zazawan dewenem ven` (*prioritizes the workaround*) vs `zazawan dewenem voen` (*tries the workaround*).
 
-### Join-relations
-<a id="join-relations"></a>
+### Join-relations {#join-relations}
 
 When a noun or event is *framed* toward something (*cake with peanuts*, *walk without meat*, *work prioritizing the bug*), write the frame as an adjective or adverb: first letter **`g`** or **`h`**, the same join vowel as [join-act verbs](#join-act-verbs), and ending **-n** (`gan` / `han`, …), plus one `/b/` argument. Keep that pair together (`gan` + `/b/` on a noun; `han` + `/b/` as one adverb). You can now attach *including* / *without* / *prioritizing* to a host without building a new list. On these words too, **-n** is join content toward `/b/`. Put ordinary noun **-x** on the argument when the group is associative.
 
@@ -224,7 +216,7 @@ For several members or an empty domain, put a [phrase join](joins.md) **inside**
 
 **Compare with:** *a house like Azawan’s* / *walks like a duck* is resemblance ([simile](relations.md#similative) `gurorom` / `hurorom`), not **`gaen` / `haen`** *on a par with* / *equating*.
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -247,7 +239,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *scream* | `vazagal` | |
 | *lie* | `ululel` | |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Azawan includes the medal.*
 
@@ -313,7 +305,7 @@ z-Ululon | [v-run | v-punch | v-and.open]
 z-Ululon | [h-refusing | b-medal] | v-run
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zuhubun dodobol van.`
 

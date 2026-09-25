@@ -1,13 +1,10 @@
-# Causation
-<a id="causation"></a>
+# Causation {#causation}
 
 Name whether one thing is **enough** for an outcome, whether the outcome **needs** it, and whether that condition is a **fact**.
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
-### If
-<a id="if"></a>
+### If {#if}
 
 When you mean *this would get you that* (*if* there are clouds, rain; Azawan walks *if* it rains), write the **outcome** as the host, then **`adoro`** on `/th/` or `/ɡ/`, then the condition in `/b/`. Other routes may still work. You are not claiming the condition as a fact. (cue: 🚪 *door*: walk through only if it opens)
 
@@ -29,8 +26,7 @@ Ordinary content on the same root is still available (`zadorol` *a door*).
 
 **For *X is enough* as a list (*a book will do*), use:** an inclusive [join](joins.md#single-item-phrase) (`zaol` / `zaom`).
 
-### Only if
-<a id="only-if"></a>
+### Only if {#only-if}
 
 When the outcome cannot happen without this (*only if* / *needs*), write the same two-place shape with **`ebero`**. Other things may still be required. You are not claiming the condition as a fact. (cue: 🧻 *paper-roll*: without it the situation does not run)
 
@@ -57,8 +53,7 @@ Ordinary content on the same root is still available (`zeberol` *a paper-roll*).
 
 `/th/` attaches to the event. `/ɡ/` attaches to the noun.
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**. The outcome is the host (`/th/` on an event, `/ɡ/` on a noun). *If* is **`adoro`**. *Only if* is **`ebero`**. The condition sits in `/b/`.
 
@@ -86,7 +81,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. The out
 | *if* | `thadorom` | `adorol` *door* |
 | *only-if* | `theberom` | `eberol` *paper-roll* |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *A seedling grows if there is sun.*
 
@@ -152,7 +147,7 @@ z-Ululon | v-tell | [th-if | b-fire]
 z-Ululon | v-pour | [th-only-if | b-fire]
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zovowel gadorom bunul.`
 
@@ -226,8 +221,7 @@ z-Uhubun | v-tell | [th-only-if | b-fire]
 *Uhubun tells only if there is fire.*
 :::
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
 ### A following sentence
 <a id="dependent"></a>
@@ -254,10 +248,9 @@ Several conditions can sit inside `/b/` as a [join](joins.md) (`thadorom buludul
 
 **Related form:** packaging two full sentences as *and also* uses a clause [join](joins.md) (`xam`), not a pole root.
 
-### Because, iff, and only because
+### Because, iff, and only because {#only-because}
 <a id="because"></a>
 <a id="iff"></a>
-<a id="only-because"></a>
 <a id="poles"></a>
 
 Beginner used *if* and *only if* without asserting the condition. Pick the pole by **direction** and by whether you **assert** the condition as a world-fact. Clause poles take **-m**. The same roots on `/ɡ/` attach to a noun. Ordinary content still uses ordinary endings (`zurugul` *a brick*; `zezazem` *reciprocity*).
@@ -296,8 +289,7 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 >
 > "Azawan walks only because there is rain."
 
-### CAUSE
-<a id="cause"></a>
+### CAUSE {#cause}
 <a id="cause-mood"></a>
 
 To highlight **how** a result comes about (the mechanism, not only that a condition holds), add the closed mood **`egega`** as an `/th/` word. The ending is **-m**: **`thegegam`**. Always put that mood next to a pole: the pole names the condition, and **CAUSE** says the link is the mechanism. Ordinary content on the same root is still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*). Optional `/w/` when the mood grades only the `/ɡ/` adjective it sits immediately before. (cue: ⚙️ *gear*: how the mechanism engages)
@@ -316,7 +308,7 @@ To highlight **how** a result comes about (the mechanism, not only that a condit
 
 **Compare with:** *because* / *if* name the condition (`thurugum` / `thadorom`). **CAUSE** names how the link meshes.
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**. A following sentence hangs after **`barl`**. *Because* asserts the condition. *Iff* is both ways. *Only because* stacks **`theberom thurugum`**. **CAUSE** is **`thegegam`**.
@@ -346,7 +338,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. A f
 | *CAUSE* | `thegegam` | `egegal` *gear* |
 | *that-clause* | `barl` | |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Azawan sits if Uhubun sees.*
 
@@ -404,7 +396,7 @@ z-Azawan | v-sit | th-only-if | [th-because | b-that-clause] | z-Uhubun | v-see
 z-Ululon | v-run | th-CAUSE | [th-if | b-overwhelm]
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zuhubun vajul thadorom barl zululon vejel.`
 
@@ -469,8 +461,7 @@ z-Ululon | v-pour | th-CAUSE | [th-if | b-overwhelm]
 *Ululon pours if the surge hits (as mechanism).*
 :::
 
-## Advanced
-<a id="advanced"></a>
+## Advanced {#advanced}
 
 ### Factivity (`if` vs `because`)
 <a id="factivity"></a>
@@ -533,8 +524,7 @@ A one-off episode and a standing pattern use the same poles. Add extra words for
 
 **Compare with:** *always* / *every* / *never* as exceptionlessness uses [universality](knowing.md#universality) (NATURAL **`thabelel`**). **CAUSE** is **`thegegam`**.
 
-### English → Agalan
-<a id="english-cues"></a>
+### English → Agalan {#english-cues}
 
 Time and discourse dependents use the same **`barl`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a pole root.
 
@@ -546,7 +536,7 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 | *therefore* (discourse) | **`xezazam`** ([continue](dependents.md#continue-x)) |
 | *however* / *meanwhile* (discourse) | **`xezebal`** / **`xanelol`** |
 
-### Translation practice
+### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**. **`thurugum`** asserts the condition as a fact the outcome rests on; **`thadorom`** does not; English *if he had* is bookmark *as-of*, not `thadorom`. Speaker-grounds stay **`thodohom`** (**MAY**). Habit uses **`hual`**.
@@ -576,7 +566,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. **`thur
 | *predict* | `thelezom` | |
 | *as-of.bookmark* | `hobomam` | |
 
-#### English → Agalan
+#### English → Agalan {#advanced-english-to-agalan}
 
 **1.** *Ululon pours because Uhubun sees.* (the seeing is asserted)
 
@@ -626,7 +616,7 @@ z-Azawan | th-MAY | v-sit | [th-because | b-that-clause] | z-Ululon | v-pour
 z-test-tube | v-melt | th-RESIDUE | th-PREDICT | [h-as-of.bookmark | b-that-clause] | z-Ululon | v-pour
 :::
 
-#### Agalan → English
+#### Agalan → English {#advanced-agalan-to-english}
 
 **1.** `zazawan vorurul thurugum burel.`
 

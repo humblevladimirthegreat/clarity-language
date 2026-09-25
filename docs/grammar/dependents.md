@@ -2,8 +2,7 @@
 
 How a **next sentence** fills a slot (`darl` / `barl`), how English *who / that / which* is two sentences, and how `/x/` keeps the same speech move going.
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
 You already write one clause with [role letters](clause.md#role-letters) and start a new speech move with [`/j/`](speech-moves.md#turn-j). This page attaches another sentence, or keeps going without a new act.
 
@@ -24,8 +23,7 @@ That pair is English *Azawan talks to the guard who sits.* Repeat the full word 
 
 
 
-### Dependent clauses
-<a id="dependent-clauses"></a>
+### Dependent clauses {#dependent-clauses}
 
 Sometimes a full sentence fills a slot in the sentence before it (*Azawan tells Ululon **that the dog runs***). That inner sentence is a **dependent clause**. The person told is unhosted `/b/`; *that…* is often a direct object.
 
@@ -115,8 +113,7 @@ The verb has no past or future letter. *Before* / *after* / *while* / *until* pl
 
 
 
-### Continue (`/x/`): keep the same speech move
-<a id="continue-x"></a>
+### Continue (`/x/`): keep the same speech move {#continue-x}
 
 After a statement, question, or command, you may keep going **without** starting a new speech move: the next stretch is still a statement if you were stating (still a question if you were asking, and so on). That is to **continue**. `/x/` marks it.
 
@@ -133,8 +130,7 @@ A word that glues two sentences (*therefore*, *however*, …) is an `/x/` **link
 **Compare with:** [`/j/`](speech-moves.md#turn-j) starts a **new** speech move (a new statement, question, or command). `/x/` keeps the move you already started.
 
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
@@ -163,7 +159,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *so-that* | `holalam` | `olalal` *goal* | 🥅: you act so the shot counts |
 | *therefore* | `xezazam` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Azawan tells Ululon that Uhubun sits.*
 
@@ -213,7 +209,7 @@ z-Azawan | v-run | [h-so-that | b-that-clause] | z-Ululon | v-sit
 z-Azawan | v-stand | [h-although | b-that-clause] | z-Ululon | v-scream
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zuhubun vazagal. xezazam zululon vuvugul.`
 
@@ -261,8 +257,7 @@ z-Uhubun | v-sit | [th-because | b-that-clause] | z-Azawan | d-guard | v-see
 :::
 
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
 ::: tip Reminder:
 Intermediate sections assume you have read the beginner sections of every page.
@@ -296,8 +291,7 @@ A place, tool, or *of*-relation on the noun is still an extra-noun [hook](hooks.
 **Compare with:** ordinary `gajul` is *chair* / *position* as a property, not *sitting*. [Restrictors](restrictors.md) say when a **claim** counts (*never*, *only when raining*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the **same** first noun still need another sentence ([complex chaining](clause.md#complex-chaining)).
 
 
-### Writing and speech rhythm (periods)
-<a id="orthography-and-prosody-periods"></a>
+### Writing and speech rhythm (periods) {#orthography-and-prosody-periods}
 
 A **period** closes the sentence body in writing, whatever the speech act. Speech matches that edge with pitch and a short pause. The act word, not the punctuation, sets question or command. `?` and `!` are [tone marks](speech-moves.md#tone-marks) that go before the words they color.
 
@@ -313,8 +307,7 @@ A **period** closes the sentence body in writing, whatever the speech act. Speec
 
 **-l** vs **-m** on the act word / *yes* / *no* is how firmly you stand behind it (closed vs soft / open).
 
-### Sentence linkers
-<a id="sentence-linkers"></a>
+### Sentence linkers {#sentence-linkers}
 
 These words glue one finished sentence to the next (one-way; default ending **-l** is closed). Beginner already used *therefore*.
 
@@ -330,9 +323,8 @@ These words glue one finished sentence to the next (one-way; default ending **-l
 
 **Compare with:** *although* / *while* attach a dependent after **`barl`** (`hezebam barl`, `hegemum barl` — [dependent clauses](#dependent-clauses)). *Despite Ululon* is the same pole with a noun in `/b/` (`hezebam bululon`). *So that Ululon sits* is **`holalam barl`**. Discourse **`xezebal`** / **`xanelol`** / **`xezazam`** glue a finished sentence to the next one.
 
-### Stand-in vowels (`-rl` / `-rm`)
+### Stand-in vowels (`-rl` / `-rm`) {#stand-in}
 <a id="clause-member"></a>
-<a id="stand-in"></a>
 
 Beginner used locked **`a`** (`darl` / `barl`) and *whether* **`dorl`**. Stand-ins reuse the [speech-act vowel series](speech-moves.md#speech-act-beginner) (`a` / `o` / `e` / `u`) to type the following sentence's content: statement-like, question-like, instruction-like, or avoidance-like. Unlike `/j/`, a stand-in does not begin a speech act; it makes that kind of sentence content fill a role in the outer sentence. They are not joins. **`-rl`** locks that sentence as the whole filler; **`-rm`** is open (gist / not only that).
 
@@ -373,7 +365,7 @@ When *so that* aims at keeping an outcome off, keep **`holalam`** and type `/b/`
 
 **Compare with:** *tells that Ululon sits* is **`darl`**. *Tells Ululon to sit* is **`derl`**. *Walks so that Azawan sits* is **`holalam barl`**.
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -400,7 +392,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *however* | `xezebal` |
 | *meanwhile* | `xanelol` |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Azawan sits. Next Ululon runs.*
 
@@ -418,7 +410,7 @@ z-Azawan | v-sit . x-next | z-Ululon | v-run
 z-Azawan | b-Ululon | v-tell | d-lest-clause | v-departure
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zuhubun vajul. xanelol zululon dulugal vejel.`
 
@@ -447,11 +439,9 @@ z-Ululon | b-Azawan | v-tell | d-to-clause | v-sit
 *Ululon tells Azawan to sit.*
 :::
 
-## Advanced
-<a id="advanced"></a>
+## Advanced {#advanced}
 
-### Lexicalized stand-ins in other roles
-<a id="stand-in-roles"></a>
+### Lexicalized stand-ins in other roles {#stand-in-roles}
 
 The stand-in vowel identifies the kind of sentence content, while the first letter identifies the role that content fills. With **-rn** (or **-n** after a stacked vowel), a stand-in becomes a lexicalized name for that content: statement, question, command, prohibition, and so on. For example, **`darn`** is a statement, **`dorn`** a question, **`dern`** a command, and **`durn`** a prohibition. Use the same vowel choices with another role letter when the following sentence fills that role. `/v/` forms use the same **-rn** / **-n** endings for their lexicalized verb readings.
 
@@ -485,8 +475,7 @@ For example, the `/v/` word takes the following sentence as its content:
 
 The sentence after one of these verbs has its own subject when the chosen content type requires one, just as it does after **`darl`** / **`derl`**. The verb’s role letter lets you use the same typed content as an object, a described property, or another role supported by the clause.
 
-### Nested dependents
-<a id="nested-dependents"></a>
+### Nested dependents {#nested-dependents}
 
 Each clause has at most one **stand-in** at the end of the main sentence. The sentence after it may itself end in **`barl`**, so a further sentence hangs to the **right**.
 

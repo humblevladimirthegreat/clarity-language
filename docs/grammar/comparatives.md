@@ -3,8 +3,7 @@
 
 English splits three nearby jobs on a quality like *challenging*. *More … than* and *the most* put people in **order** on that quality. *As … as* says they sit at the **same height**. *Both are challenging* only says **each has** the quality; it does not say who ranks higher or whether they match.
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 <a id="overview"></a>
 
 ### Comparatives (`e`)
@@ -87,8 +86,7 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 | Rank **`e`** (`zel`) | rank on a shared quality | *more … than* / *the …-est* | **`e`** ≈ order |
 | Equality **`ae`** (`zael` / `zaem`) | same height on the quality | *as … as* / *about as … as* | **`ae`** ≈ add + order (they share a rank) |
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**. Rank **`zel`** plus shared `/ɡ/` is *more … than*; one name before **`zel`** is the superlative; **`zael`** / **`zaem`** are *as … as* / *about as … as*.
 
@@ -107,7 +105,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 | *intensity* | `ohogem` | `ohogel` *hockey* |
 | *ocean* | `wogegal` | `ogegal` *ocean* |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Azawan is more agile than Ululon.*
 
@@ -165,7 +163,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 [z-Ululon | z-rank/more | g-intensity]
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zululon zuhubun zel guvuvem.`
 
@@ -230,8 +228,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 *Azawan is the slowest.*
 :::
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
 ### Full comparative arity
 <a id="comparative-arity"></a>
@@ -260,8 +257,7 @@ Beginner already used two names plus **`zel`** (*more … than*) and one name (*
 
 **Compare with:** ranking names with no shared adjective is ordinary preference (who comes first as an alternative). Add the shared `/ɡ/` when you mean *more ADJ than*.
 
-### Manner scale (`/h/`)
-<a id="manner-scale"></a>
+### Manner scale (`/h/`) {#manner-scale}
 
 When English would say *Ululon walks more intensely than Azawan*, the ladder is **how** they walk, not a quality of the people. Keep the same rank join. Write a manner adverb (`/h/`) **immediately after** it, then the verb. The first name sits higher on that manner.
 
@@ -307,8 +303,7 @@ Equality **`ae`** with a shared scale needs **two or more** names. **`ae`** with
 | `zazawan zululon zuhubun zael gomonam` | *Azawan, Ululon, and Uhubun are equally challenging* |
 | `zodogol zagadal zael gomonam` | *the dog is as challenging as the cat* |
 
-### Measured differentials
-<a id="measured-differentials"></a>
+### Measured differentials {#measured-differentials}
 <a id="measure-gap"></a>
 
 English *two meters taller* still ranks two people on one quality, and it also names **how large the gap is**. Keep the rank join and the shared scale adjective. After that adjective, write a **measure noun** (`/b/`): that noun is the **unit** (published abstract = SI name), and `/ɡ/` on the unit is the **amount** ([measure phrases](numbers-applied.md#measure-phrases)).
@@ -321,7 +316,7 @@ English *two meters taller* still ranks two people on one quality, and it also n
 
 **Related form:** vague *much* / *slightly* is shared `/w/` immediately before the scale adjective (`wogegal`), not a counted `/b/`.
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**. Full arity (**`oe`** / **`ue`** / standalone / **`zer`**), distributive **`zal`**, a counted measure gap vs vague **`wogegal`**, and manner **`/h/`** right after the join.
@@ -343,7 +338,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 | *intensity* | `ohogem` | `ohogel` *hockey* |
 | *lift* | `vuluvul` | `uluvul` *lift* |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Azawan is less heavy than Ululon.*
 
@@ -417,7 +412,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 [z-Ululon | z-Azawan | z-rank/more | h-intensity] | v-lift
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zazawan zululon zuhubun zem garogom.`
 
@@ -500,8 +495,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 *Ululon lifts the most intensely.*
 :::
 
-## Advanced
-<a id="advanced"></a>
+## Advanced {#advanced}
 
 ### Snapshot on a shared scale
 <a id="as-of-scale"></a>
@@ -556,7 +550,7 @@ Single-item `zazawan zuel gomonam` is *the least challenging* in the group in pl
 | `zugobon zoloben zuel gomonam` | I am less challenging than Everyone |
 | `zugobon zululon zuel guzunul` | I am less skilled at singing than **Ululon** (ordinary person comparee) |
 
-### Translation practice
+### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**. The *than*-conjunct is the named bar; **`zugobon`** is performance, **`zuroron`** is *my standard*.
@@ -583,7 +577,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *challenge* | `gomonam` | |
 | *as-of.ledger* | `welerem` | |
 
-#### English → Agalan
+#### English → Agalan {#advanced-english-to-agalan}
 
 **1.** *Azawan is worse at singing than Professional.*
 
@@ -633,7 +627,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 [z-Azawan | z-Ululon | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 :::
 
-#### Agalan → English
+#### Agalan → English {#advanced-agalan-to-english}
 
 **1.** `zugobon zuluden zuel guzunul.`
 

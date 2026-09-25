@@ -1,13 +1,10 @@
-# Knowing
-<a id="knowing"></a>
+# Knowing {#knowing}
 
 English *I think* often smuggles a **guess** (*I think Ululon is leaving Uhubun* = maybe that is so) without saying whether you are checking. **MAY** marks the clause as **potential**: it *could be* so. Keep the ordinary verb and add a small `/th/` word.
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
-### MAY
-<a id="may"></a>
+### MAY {#may}
 
 When the scene **could be** so (rejection, a blow, a loss — not a warrant), keep the content verb (*leaves*, *punches*, *cries*) and add **`odoho`** as a [stance](clause.md#stance-th) word (`/th/`). Start with **`thodohom`**: could be. (cue: 💭 *thought*: a balloon over the scene)
 
@@ -54,8 +51,7 @@ When you are not sure, use **`thodohom`**. That is not wiser than finding out (*
 >
 > "Uhubun may be crying — who knows."
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**. Write **MAY** for *could be*; pick **-m** (default), **-l** (*I'll* / *let's find out*), or **-r** (*who knows*). One item is thinking as an action, not MAY.
 
@@ -80,7 +76,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Write *
 | *scream* | `vazagal` | |
 | *fight* | `vuvugul` | |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Ululon may be seeing Uhubun.* (could be; default)
 
@@ -146,7 +142,7 @@ z-Ululon | th-MAY | v-fight
 j-question | z-Uhubun | th-MAY | v-scream
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zululon thodohom vezehel buhubun.`
 
@@ -218,11 +214,9 @@ z-Uhubun | th-MAY | v-cry
 *Uhubun may be crying.*
 :::
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
-### Evidentiality
-<a id="evidentiality"></a>
+### Evidentiality {#evidentiality}
 <a id="evidential"></a>
 
 English often says *how you know* a claim (*I saw it*, *I heard*, *I figured*). Agalan keeps the ordinary content verb and adds a closed `/th/` mood word. That word is the **channel** the claim came through, so the same walk or sleep can sit under a live look, memory, a recording, a pattern of cases, clues, hearsay, a gut sense, or a tale.
@@ -272,8 +266,7 @@ Pick one evidential **root** for how you know.
 
 **Related form:** to deny only the channel (*it happened, but I did not see it*), close the evidential with a [stance join](join-across-roles.md#stance-joins): `thuvuvum thul`. Two channels you cannot choose between take `thol`.
 
-### Live vs memory
-<a id="live-vs-memory"></a>
+### Live vs memory {#live-vs-memory}
 <a id="memory-record"></a>
 <a id="memory"></a>
 <a id="record-past"></a>
@@ -386,7 +379,7 @@ When you are not sure, use **`thadadem`**.
 >
 > "Uhubun practices singing." — rehearsing the imagined scene
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**. Write a **channel** or **NOTIONAL**, and when the prompt asks, **RESIDUE** or **FORMER**.
@@ -423,7 +416,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Wri
 | *FORMER* | `themebem` | `emebem` *emptiness* |
 | *always* | `hual` | |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Azawan tells Uhubun — live / from the scene.* (present observation)
 
@@ -505,7 +498,7 @@ z-Azawan | th-LIVE | th-RESIDUE | v-tell | b-Uhubun
 z-Ululon | h-always | v-tell | th-FORMER | th-LIVE
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zazawan theherem vezehel buhubun.`
 
@@ -596,8 +589,7 @@ z-Azawan | h-always | v-tell | th-FORMER
 *Azawan always tells — a former pattern, not today's.*
 :::
 
-## Advanced
-<a id="advanced"></a>
+## Advanced {#advanced}
 
 ### Mood on one adjective
 <a id="mood-on-adjective"></a>
@@ -640,8 +632,7 @@ The same published roots stay ordinary content under other role letters. The clo
 >
 > "Azawan sees a theater."
 
-### Reconstructive catch
-<a id="reconstructive-catch"></a>
+### Reconstructive catch {#reconstructive-catch}
 
 **`uvuvu`** is reconstructive: you pull something back, and it may not be what you hoped (a fishing line can come up with a boot). Memory can be wrong, so **`thuvuvum`** marks the claim as recalled, not as checked now.
 
@@ -688,7 +679,7 @@ The same published roots stay ordinary content under other role letters. The clo
 >
 > "As if, from the 22 July books, Ululon were leaving."
 
-### Translation practice
+### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**. Score leftover against the ledger; repeat the channel.
@@ -709,7 +700,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Score l
 | *MAY* | `thodohom` |
 | *as-of.ledger* | `helerem` |
 
-#### English → Agalan
+#### English → Agalan {#advanced-english-to-agalan}
 
 **1.** *As of 22 July, Ululon’s leaving still counted.*
 
@@ -735,7 +726,7 @@ z-Azawan | th-LIVE | [h-as-of.ledger | b-_22,7] | v-walk
 z-Ululon | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 :::
 
-#### Agalan → English
+#### Agalan → English {#advanced-agalan-to-english}
 
 **1.** `zululon thuvuvum helerem b_#22,7 thonenom vebarul.`
 
@@ -764,8 +755,7 @@ z-Ululon | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 *As of 22 July, Ululon's leaving may still have counted.*
 :::
 
-### Universality
-<a id="universality"></a>
+### Universality {#universality}
 <a id="universality-mood"></a>
 
 English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Keep *who / when* on the [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / …). Write exceptionlessness as a closed `/th/` mood root (optional `/w/` immediately before a `/ɡ/`). You can then pair *always* with *usually*, *by definition*, and the rest without changing the domain fence.
@@ -799,7 +789,7 @@ The default *always* is *usually* (exceptions expected), not *must happen that w
 | `… hal … thebebel bozogel` | named frame | *never, under soccer rules* |
 | `zuam gagadal … thugudol` | open domain + usual universality | *every cat that comes to mind, usually* |
 
-### Translation practice
+### Translation practice {#universality-translation-practice}
 <a id="translation-practice-universality"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**.
@@ -836,7 +826,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *sleep* | `velebel` | `elebel` *sleep* | |
 | evidential *pattern* | `abawam` | `abawal` *paw-prints* | 🐾: a trail of what usually happens |
 
-#### English → Agalan
+#### English → Agalan {#universality-english-to-agalan}
 
 **1.** *Ululon always writes, usually.*
 
@@ -886,7 +876,7 @@ z-Ululon | h-never | v-punch | [th-RULE | b-soccer]
 [z-everything-but.open | g-claim] | th-COMMON
 :::
 
-#### Agalan → English
+#### Agalan → English {#universality-agalan-to-english}
 
 **1.** `zazawan hual vajul thugudol.`
 

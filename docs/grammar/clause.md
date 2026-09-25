@@ -2,8 +2,7 @@
 
 How to read and write one Agalan **clause**: who does what, word shape, and default order.
 
-## Beginner
-<a id="beginner"></a>
+## Beginner {#beginner}
 
 You already write a [citation](word-endings.md): root + ending (`odogol`, `awalal`, `azawan`). In a **sentence**, put a **role letter** in front. That first letter says what the word is doing (who acts, the action, and so on). The root and ending stay the ones you already chose; only the first letter changes.
 
@@ -39,8 +38,7 @@ The usual order is **Subject – Direct Object – Verb**. Because the first let
 >
 > "A dog sees a cat."
 
-### Adjectives (`/ɡ/`)
-<a id="adjectives-ɡ"></a>
+### Adjectives (`/ɡ/`) {#adjectives-ɡ}
 
 When you name a **property** (*blue*), put that word in `/ɡ/` (an **adjective**). It follows the word it describes.
 
@@ -50,8 +48,7 @@ When you name a **property** (*blue*), put that word in `/ɡ/` (an **adjective**
 >
 > "A blue dog walks."
 
-### Extra detail on an adjective (`/w/`)
-<a id="adjective-detail-w"></a>
+### Extra detail on an adjective (`/w/`) {#adjective-detail-w}
 
 Before an adjective, you can add how intense it is or in what manner. That extra detail uses `/w/` immediately before the `/ɡ/` word.
 
@@ -61,8 +58,7 @@ Before an adjective, you can add how intense it is or in what manner. That extra
 >
 > "A very blue dog walks."
 
-### Adverbs (`/h/`)
-<a id="adverbs-h"></a>
+### Adverbs (`/h/`) {#adverbs-h}
 
 When you say **how, when, or where** an action happens, use `/h/` (an **adverb**). You may place it anywhere in that sentence. Several adverbs can sit next to each other (`hadazam howom` *hastily and quietly*).
 
@@ -72,8 +68,7 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 >
 > "A dog walks hastily."
 
-### Stance (`/th/`)
-<a id="stance-th"></a>
+### Stance (`/th/`) {#stance-th}
 
 `/h/` tells how the action happened. `/th/` tells how **you** stand toward the whole claim: how sure you are, how you know it, why it holds, or whether it is only imagined. Like `/h/`, it may sit anywhere in the sentence. `th` is considered one letter ([phonology](phonology.md#consonants)).
 
@@ -85,9 +80,8 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 
 The adverb describes the walking. The stance word describes your claim about it.
 
-### Extra nouns (`/b/`)
+### Extra nouns (`/b/`) {#unhosted-b}
 <a id="extra-nouns"></a>
-<a id="unhosted-b"></a>
 
 `/b/` names an extra person or thing. It has two jobs, and you can tell them apart from the word **immediately before** `/b/`. On this page, `/w/` grades the next `/ɡ/`, `/h/`, or `/th/` word (or hook); `/b/` sits after that host, not after `/w/`.
 
@@ -121,8 +115,7 @@ The adverb describes the walking. The stance word describes your claim about it.
 
 Never put a recipient immediately after a `/ɡ/`, `/h/`, or `/th/` word: `hurorom bululon` is *like Ululon*, not *to Ululon*, and `hadazam bululon` is ungrammatical, not *hastily, to Ululon*. Put the recipient elsewhere (`bululon hadazam`), or after a finished pair (`hurorom bazawan bululon`). To name the hearer from the verb stem (*the one told*), use a [role compound](roles.md#role-compounds) with vowel **`o`**.
 
-### Role letters
-<a id="role-letters"></a>
+### Role letters {#role-letters}
 
 Role letters on this page:
 
@@ -140,8 +133,7 @@ Role letters on this page:
 
 
 
-### Translation practice
-<a id="translation-practice"></a>
+### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
@@ -168,7 +160,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
 | *like* | `hurorom` | `urorol` *mirror* | 🪞: the image is of the model |
 
-#### English → Agalan
+#### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Azawan sits.*
 
@@ -210,7 +202,7 @@ z-Azawan | v-write | h-haste
 z-Azawan | b-Ululon | v-tell
 :::
 
-#### Agalan → English
+#### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zuhubun vadanal.`
 
@@ -249,15 +241,13 @@ z-Ululon | v-sneak | [h-like | b-Azawan]
 :::
 
 
-## Intermediate
-<a id="intermediate"></a>
+## Intermediate {#intermediate}
 
 ::: tip Reminder:
 Intermediate sections assume you have read the beginner sections of every page.
 :::
 
-### Adjectives before the noun (`gl-`)
-<a id="left-bound-adjectives"></a>
+### Adjectives before the noun (`gl-`) {#left-bound-adjectives}
 
 English often puts the adjective before the noun (*a blue dog*). Agalan can too: add **`l`** as the second letter (`/ɡ/` + **l** + root + ending). That adjective comes **before** the noun it describes and looks ahead to the next noun. (cue: **l** ≈ lean left: look ahead to the host.)
 
@@ -282,8 +272,7 @@ English often puts the adjective before the noun (*a blue dog*). Agalan can too:
 
 **Not the same job as:** [values](values.md) **met** / **unmet** on `/ɡ/` (`gonogothal` *my thing serves relatedness*). *As for* points at a person or thing in the clause; a value adjective on `/ɡ/` is a need toward a belonging.
 
-### Complex chaining
-<a id="complex-chaining"></a>
+### Complex chaining {#complex-chaining}
 
 A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). `/w/` that grades that adjective sits **immediately before** the `/ɡ/` word. A further plain adjective after that pair describes the **extra noun**, not the first noun.
 
@@ -313,7 +302,7 @@ Several `/h/` or `/th/` units on one verb are fine (each plain word, or optional
 
 
 
-### Translation practice
+### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -341,7 +330,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *topic* | `hozam` |
 | *train* | `adadul` |
 
-#### English → Agalan
+#### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *A very red train stands.* (adjective before the noun)
 
@@ -391,7 +380,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Uhubun | b-Ululon | h-haste | v-tell
 :::
 
-#### Agalan → English
+#### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `glelulul zadadul vadanal.`
 
@@ -447,8 +436,7 @@ z-dog | [[w-very | h-like] | b-Azawan] | v-sleep
 *A red train sees a blue ticket.*
 :::
 
-## Advanced
-<a id="advanced"></a>
+## Advanced {#advanced}
 
 ### Word order and English emphasis
 <a id="word-order-emphasis"></a>
@@ -482,12 +470,11 @@ Object-first English *It's a cat that Azawan sees* (or *A cat is what Azawan see
 
 *As for X* names a topic even when that person is not first: [as-for](#as-for).
 
-### Weak-pause left cues
-<a id="weak-pause-left-cues"></a>
+### Weak-pause left cues {#weak-pause-left-cues}
 
 When you cannot hear a clear pause (singing, fast free order), prefer something audible at the start after silence: *yes* / *no*, a name you address, or a written act word like `jal`. Writing still uses `.` to mark body edges.
 
-### Translation practice
+### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**.
@@ -513,7 +500,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *punch* | `vubunul` | `ubunul` *punch* |
 | *haste* | `hadazam` | `adazal` *dash* |
 
-#### English → Agalan
+#### English → Agalan {#advanced-english-to-agalan}
 
 **1.** *Hastily, Azawan sees a balloon.*
 
@@ -563,7 +550,7 @@ d-drum | z-Ululon | v-punch
 v-punch | z-Ululon | d-Uhubun
 :::
 
-#### Agalan → English
+#### Agalan → English {#advanced-agalan-to-english}
 
 **1.** `dudubel zuhubun vejel.`
 
