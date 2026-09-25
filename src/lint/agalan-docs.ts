@@ -329,10 +329,13 @@ export function classifyAgalanSpan(text: string): AgalanSpanClass | "unclassifie
   return "unclassified";
 }
 
-function parseFailure(text: string, tables: ClassifyTables, used?: Set<string>): string | null {
+/** Receives each construction ID a span exercises, with the span's offset in the page. */
+export type ConstructionSink = (id: string, index: number) => void;
+
+function parseFailure(text: string, index: number, tables: ClassifyTables, used?: ConstructionSink): string | null {
   try {
     const result = parseWithTables(text.trim(), tables, { constructions: used !== undefined });
-    for (const id of result.constructions ?? []) used!.add(id);
+    for (const id of result.constructions ?? []) used!(id, index);
     return null;
   } catch (error) {
     return (error instanceof Error ? error.message : String(error)).split("\n")[0]!;
@@ -345,7 +348,7 @@ function lintSpanText(
   tables: ClassifyTables,
   stats: AgalanSpanStats,
   issues: AgalanSpanIssue[],
-  used?: Set<string>,
+  used?: ConstructionSink,
 ): void {
   const cls = classifyAgalanSpan(text);
   if (cls === "unclassified") {
@@ -358,9 +361,9 @@ function lintSpanText(
     return;
   }
   stats[cls] += 1;
-  if (cls === "word" && used) addWordSpanConstructions(text, tables, used);
+  if (cls === "word" && used) addWordSpanConstructions(text, index, tables, used);
   if (cls !== "sentence" && cls !== "phrase") return;
-  const failure = parseFailure(text, tables, used);
+  const failure = parseFailure(text, index, tables, used);
   if (failure == null) return;
   issues.push({
     text,
@@ -380,27 +383,27 @@ function decodeEntities(text: string): string {
 }
 
 /** A single-word span exercises its word-level and slot constructions (`word.*`, `token.*`). */
-function addWordSpanConstructions(text: string, tables: ClassifyTables, used: Set<string>): void {
+function addWordSpanConstructions(text: string, index: number, tables: ClassifyTables, used: ConstructionSink): void {
   const { core } = peelLintChunk(text.trim());
   if (!isAgalanLintCandidate(core)) return;
   try {
     const word = classify(parseWord(core), tables);
-    used.add(`token.${classifyTokenBranch(word).branch}`);
-    for (const id of wordConstructions(word)) used.add(id);
+    used(`token.${classifyTokenBranch(word).branch}`, index);
+    for (const id of wordConstructions(word)) used(id, index);
   } catch {
     // The per-word lint reports words that do not parse.
   }
 }
 
 /**
- * Lint code spans. When `used` is given, it collects the construction IDs
+ * Lint code spans. When `used` is given, it receives the construction IDs
  * ([constructions.ts](../parse/constructions.ts)) the page's examples exercise.
  */
 export function lintAgalanSpans(
   text: string,
   tables: ClassifyTables,
   stats: AgalanSpanStats = emptySpanStats(),
-  used?: Set<string>,
+  used?: ConstructionSink,
 ): AgalanSpanIssue[] {
   const issues: AgalanSpanIssue[] = [];
 
@@ -447,7 +450,7 @@ export function lintAgalanSpans(
   for (const match of text.matchAll(HTML_CODE_RE)) {
     const index = match.index! + "<code>".length;
     const body = decodeEntities(match[1]!);
-    lintSpanText(body, index, tables, stats, issues);
+    lintSpanText(body, index, tables, stats, issues, used);
   }
 
   return issues;

@@ -13,7 +13,7 @@
  * Findings print to stdout. Each file logs morph coverage counts.
  *
  * Run: npm run lint:agalan
- *      npm run lint:agalan -- [paths...] [--check-ambiguity]
+ *      npm run lint:agalan -- [paths...] [--check-ambiguity] [--order-report]
  */
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { basename, dirname, join, relative, resolve } from "node:path";
@@ -38,7 +38,21 @@ import {
   lintNumberSpeechMarkdown,
   NUMBER_SPEECH_FILES,
 } from "../src/lint/number-speech-docs.js";
+import {
+  anchorLinks,
+  formatSection,
+  learningOrder,
+  pageSections,
+  resolveAnchor,
+  sectionAt,
+  sidebarPage,
+  type LearningOrder,
+  type PageSections,
+  type Section,
+  withinSection,
+} from "../src/lint/learning-order.js";
 import { CONSTRUCTIONS } from "../src/parse/constructions.js";
+import { readingOrder } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { loadDefaultTables } from "../src/parse/index.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
 
@@ -61,8 +75,9 @@ function listGrammarMarkdown(dir: string): string[] {
   return out.sort();
 }
 
-function parseCli(argv: string[]): { paths: string[] } {
+function parseCli(argv: string[]): { paths: string[]; orderReport: boolean } {
   const paths: string[] = [];
+  let orderReport = false;
   for (const arg of argv) {
     if (arg === "--help" || arg === "-h") {
       console.error(`Usage: npm run lint:agalan -- [paths...] [--check-ambiguity]
@@ -70,10 +85,15 @@ function parseCli(argv: string[]): { paths: string[] } {
 Checks backticked and fenced Agalan words under docs/grammar/.
 Morph-gloss mismatches, leftover ambiguity, missing morph glosses, coverage
 gaps, and translation word-bank English/lexicon mismatches fail.
---check-ambiguity is always on for the corpus (flag kept for callers).`);
+--check-ambiguity is always on for the corpus (flag kept for callers).
+--order-report lists every learning-order finding (the default prints counts).`);
       process.exit(0);
     }
     if (arg === "--check-ambiguity") {
+      continue;
+    }
+    if (arg === "--order-report") {
+      orderReport = true;
       continue;
     }
     if (arg.startsWith("-")) {
@@ -82,7 +102,7 @@ gaps, and translation word-bank English/lexicon mismatches fail.
     }
     paths.push(arg);
   }
-  return { paths };
+  return { paths, orderReport };
 }
 
 function resolveTargets(paths: string[]): string[] {
@@ -120,16 +140,18 @@ function lintOverlayHosts(): number {
   return errors.length;
 }
 
+type ConstructionUse = { id: string; section: Section };
+
 /**
  * Check 2 of docs/proposals/parser-strictness.md: every construction is used by
  * an example on the page its anchor names. Returns the number of gaps.
  */
-function checkConstructionCoverage(usedByPage: Map<string, Set<string>>): number {
+function checkConstructionCoverage(uses: readonly ConstructionUse[]): number {
   const unexercised: string[] = [];
   for (const [id, entry] of CONSTRUCTIONS) {
     const page = entry.anchor.split("#")[0]!;
-    if (usedByPage.get(page)?.has(id)) continue;
-    const elsewhere = [...usedByPage].filter(([, ids]) => ids.has(id)).map(([p]) => p);
+    if (uses.some((u) => u.id === id && u.section.page === page)) continue;
+    const elsewhere = [...new Set(uses.filter((u) => u.id === id).map((u) => u.section.page))];
     const where = elsewhere.length > 0 ? `used on ${elsewhere.join(", ")}` : "used on no page";
     unexercised.push(`  ${id}  →  ${entry.anchor}  (${where}; ${entry.summary})`);
   }
@@ -142,8 +164,98 @@ function checkConstructionCoverage(usedByPage: Map<string, Set<string>>): number
   return unexercised.length;
 }
 
+/**
+ * Report-only (phase 1): uses and links that reach past the current section in
+ * the learning order. Prints a summary; `--order-report` prints every finding.
+ */
+function reportLearningOrder(order: LearningOrder, uses: readonly ConstructionUse[], full: boolean): void {
+  const homes = new Map<string, Section | undefined>();
+  for (const [id, entry] of CONSTRUCTIONS) homes.set(id, resolveAnchor(order, entry.anchor));
+
+  const unresolved = [...homes].filter(([, h]) => !h).map(([id]) => `  ${id}  →  ${CONSTRUCTIONS.get(id)!.anchor}`);
+  const unbandedHomes = [...homes].filter(([, h]) => h && h.position === undefined).map(([id, h]) => `  ${id}  →  ${formatSection(h!)}`);
+
+  // Taught at home: some span in the home heading's subtree traces the construction.
+  const notAtHome: string[] = [];
+  for (const [id, home] of homes) {
+    if (!home || uses.some((u) => u.id === id && withinSection(home, u.section))) continue;
+    const elsewhere = [...new Set(uses.filter((u) => u.id === id).map((u) => formatSection(u.section)))];
+    const where = elsewhere.length > 0 ? `used in ${elsewhere.slice(0, 3).join(", ")}${elsewhere.length > 3 ? ", …" : ""}` : "used nowhere";
+    notAtHome.push(`  ${id}  →  ${formatSection(home)}  (${where})`);
+  }
+
+  const forward = new Map<string, { home: Section; sections: Set<string> }>();
+  const unbandedUses = new Map<string, number>();
+  for (const u of uses) {
+    const home = homes.get(u.id);
+    if (!home || home.position === undefined) continue;
+    if (u.section.position === undefined) {
+      const key = order.readingOrder.includes(u.section.page) ? formatSection(u.section) : `${u.section.page} (not in the sidebar)`;
+      unbandedUses.set(key, (unbandedUses.get(key) ?? 0) + 1);
+      continue;
+    }
+    if (home.position <= u.section.position) continue;
+    let f = forward.get(u.id);
+    if (!f) forward.set(u.id, (f = { home, sections: new Set() }));
+    f.sections.add(formatSection(u.section));
+  }
+
+  const links: string[] = [];
+  for (const ps of order.pages.values()) {
+    const markdown = pageMarkdown.get(ps.page)!;
+    for (const link of anchorLinks(ps.page, markdown)) {
+      const from = sectionAt(ps.sections, link.index);
+      const to = resolveAnchor(order, `${link.page}#${link.anchor}`);
+      if (from.position === undefined || to?.position === undefined || to.position <= from.position) continue;
+      links.push(`  ${ps.page}:${lineNumberAt(markdown, link.index)}  ${formatSection(from)}  →  ${formatSection(to)}`);
+    }
+  }
+
+  const forwardUses = [...forward.values()].reduce((n, f) => n + f.sections.size, 0);
+  const unbandedCount = [...unbandedUses.values()].reduce((n, c) => n + c, 0);
+  console.log(
+    `\nLearning order (report only): ${forward.size} construction(s) used before their home section ` +
+      `(${forwardUses} section use(s)); ${links.length} forward link(s); ` +
+      `${notAtHome.length} construction(s) not taught in their home section; ` +
+      `${unresolved.length + unbandedHomes.length} home anchor(s) unresolved or outside every band; ` +
+      `${unbandedCount} use(s) outside every band.` +
+      (full ? "" : " Run with --order-report for details."),
+  );
+  if (!full) return;
+  if (unresolved.length > 0) {
+    console.log("\nHome anchors that do not resolve:");
+    for (const line of unresolved) console.log(line);
+  }
+  if (unbandedHomes.length > 0) {
+    console.log("\nHome anchors outside every band:");
+    for (const line of unbandedHomes) console.log(line);
+  }
+  if (notAtHome.length > 0) {
+    console.log("\nConstructions not taught in their home section:");
+    for (const line of notAtHome) console.log(line);
+  }
+  if (unbandedUses.size > 0) {
+    console.log("\nUses outside every band (section: construction uses):");
+    for (const [key, n] of unbandedUses) console.log(`  ${key}: ${n}`);
+  }
+  if (forward.size > 0) {
+    console.log("\nConstructions used before their home section (home, then earlier sections that use it):");
+    const rows = [...forward].sort(([, a], [, b]) => a.home.position! - b.home.position!);
+    for (const [id, f] of rows) {
+      console.log(`  ${id}  →  ${formatSection(f.home)}`);
+      for (const s of f.sections) console.log(`      ${s}`);
+    }
+  }
+  if (links.length > 0) {
+    console.log("\nForward links:");
+    for (const line of links) console.log(line);
+  }
+}
+
+const pageMarkdown = new Map<string, string>();
+
 function main(): void {
-  const { paths } = parseCli(process.argv.slice(2));
+  const { paths, orderReport } = parseCli(process.argv.slice(2));
   const hostIssues = lintOverlayHosts();
   const files = resolveTargets(paths);
   const tables = loadDefaultTables();
@@ -156,7 +268,8 @@ function main(): void {
   let speechCount = 0;
   let spanCount = 0;
   const spanStats = emptySpanStats();
-  const usedByPage = new Map<string, Set<string>>();
+  const pages = new Map<string, PageSections>();
+  const uses: ConstructionUse[] = [];
 
   for (const file of files) {
     const original = readFileSync(file, "utf8");
@@ -169,8 +282,13 @@ function main(): void {
       console.error(`${rel}:${line}  \`${issue.token}\`  ${label}  (${issue.detail})`);
     }
 
-    const used = new Set<string>();
-    if (dirname(file) === grammarDir) usedByPage.set(basename(file), used);
+    let used: ((id: string, index: number) => void) | undefined;
+    if (dirname(file) === grammarDir) {
+      const ps = pageSections(basename(file), original);
+      pages.set(ps.page, ps);
+      pageMarkdown.set(ps.page, original);
+      used = (id, index) => uses.push({ id, section: sectionAt(ps.sections, index) });
+    }
     for (const issue of lintAgalanSpans(original, tables, spanStats, used)) {
       spanCount += 1;
       const line = lineNumberAt(original, issue.index);
@@ -204,7 +322,12 @@ function main(): void {
     }
   }
 
-  const coverageCount = paths.length === 0 ? checkConstructionCoverage(usedByPage) : 0;
+  let coverageCount = 0;
+  if (paths.length === 0) {
+    const order = learningOrder(readingOrder.map((item) => sidebarPage(item.link)), pages);
+    coverageCount = checkConstructionCoverage(uses);
+    reportLearningOrder(order, uses, orderReport);
+  }
 
   if (count > 0) {
     console.error(`\n${count} Agalan word issue(s) in docs/grammar/.`);
