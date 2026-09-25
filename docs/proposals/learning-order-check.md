@@ -76,12 +76,18 @@ The test is whether a reader meets a form in an example before anything has expl
 - **An advanced feature used early**, such as laterals, x-compound families, greetings / conversation length, ability, numeric derivation, or numbers-applied labels and calendar. This is worse when the use sits in a Beginner band.
 - **Same-page order** where an example in an earlier section depends on a later section's form (common in numbers.md and spans.md).
 - **Unexplained examples in a page intro** (above the first band heading), such as in hooks.md, restrictors.md and dependents.md. Give the intro a band, or move the examples down into a banded section.
-- **A family with no example at home**, when the table is the only thing that teaches the whole family (for example the need-inventory overlays and `egeram`, which are used nowhere).
+- **A family with no example at home**, when a table or prose is the only thing that teaches the whole family. Open gaps (9 families):
+  - need-inventory overlays (`/th/` and `/w/`) and `egeram`: used nowhere
+  - `span.type.*` at spans.md#type-vowels and `span.close.complete` at spans.md#shape
+  - `join.ue` at joins.md#invert-ua-uo-ue
+  - `number.decimal` at numbers.md#digits and `number.marker.scalarNeg` at numbers.md#sign
+  - `word.family.foreign` at spans.md#loans: the examples are HTML `<code>`, which the lint does not trace
+  - `resolve.number.bound` at numbers.md#digitless: digitless `-r` resume is described in prose with no example
 
 **Not problems (ignored or fixed in the checker):**
 
 - **Table cells without their own example.** Handled by family coverage above.
-- **Parser productions** (`sentence.*`, `token.*`, `word.reading.ordinary`, `resolve.*`) whose home section clearly shows the construction but is not the section the trace lands in. A learner never sees these IDs. Fix by re-homing the production, not by adding examples.
+- **Parser productions** (`sentence.*`, `token.*`, `word.*`, `reading.*`, `resolve.*`) whose home section clearly shows the construction but is not the section the trace lands in. A learner never sees these IDs. Fix by re-homing the production, not by adding examples. Coverage treats these five prefixes as one family per home section, since they name the same lesson at different parse levels. *Done:* role-letter productions moved to clause.md#who-acts-and-the-action (`/d/` ones to #direct-object-d); turn cluster to speech-moves.md#vocative and body to #speech-act-statement-question-command; clause `/x/` join to joins.md#right-close (where `xam` is taught); hostless clause-level `/ɡ/` to joins.md#negation-u (first `gomonam gul.`); value words to values.md#met-tha-serves-the-need; vocative `-x` to plurality.md#vocatives-j; close-all to spans.md's close-forms section.
 - **Foundations homed too late.** For example, `sentence.utterance.Period` is homed in dependents.md but used from the first page, and force / tone are homed in speech-moves.md. A learner reads a sentence-final `.` without a lesson. Fix the home anchor, not the docs.
 - **Overview tables and "shape" sections** at the top of a page that preview the page's own later forms on purpose. There is still no preview marker (see [No previews](#no-previews)), so such a table either moves its home anchors up or uses only forms already taught.
 - **Forward links**, when the sentence reads fine without following the link. A link is how a page says "covered later". A forward link is a problem only when the text depends on it.

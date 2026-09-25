@@ -25,8 +25,8 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "document.utterance": { anchor: "clause.md#beginner", summary: "a text is one or more utterances" },
   "document.EOF": { anchor: "clause.md#beginner", summary: "end of text" },
 
-  "utterance.leftEdge": { anchor: "speech-moves.md#turn-j", summary: "turn cluster before the body" },
-  "utterance.edgeBody": { anchor: "speech-moves.md#turn-j", summary: "body after a turn cluster" },
+  "utterance.leftEdge": { anchor: "speech-moves.md#vocative", summary: "turn cluster before the body" },
+  "utterance.edgeBody": { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "body after a turn cluster" },
   "utterance.bodyClause": { anchor: "clause.md#beginner", summary: "body with no turn cluster (implied jal)" },
   "utterance.Period": { anchor: "dependents.md#orthography-and-prosody-periods", summary: "sentence end" },
   "utterance.nextBody": { anchor: "dependents.md#continue-x", summary: "next sentence in the same turn" },
@@ -42,18 +42,18 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "bodyClause.clause": { anchor: "clause.md#beginner", summary: "clause body" },
   "clause.clausePart": { anchor: "clause.md#beginner", summary: "clause is a run of units" },
 
-  "clausePart.unit": { anchor: "clause.md#role-letters", summary: "role-lettered unit in a clause" },
-  "clausePart.xJoinClose": { anchor: "join-across-roles.md#clause-sequence", summary: "clause join after its clause" },
+  "clausePart.unit": { anchor: "clause.md#who-acts-and-the-action", summary: "role-lettered unit in a clause" },
+  "clausePart.xJoinClose": { anchor: "joins.md#right-close", summary: "clause join after its clause" },
   "clausePart.standaloneJoin": { anchor: "join-across-roles.md#vp-clause-forms", summary: "clause join with no clause before it" },
-  "xJoinClose.JoinX": { anchor: "join-across-roles.md#clause-sequence", summary: "/x/ join fence" },
+  "xJoinClose.JoinX": { anchor: "joins.md#right-close", summary: "/x/ join fence" },
 
   "unit.islandUnit": { anchor: "joins.md#scope-islands-join", summary: "scope island" },
   "unit.spanUnit": { anchor: "spans.md#shape", summary: "spoken span" },
-  "unit.zCoord": { anchor: "clause.md#role-letters", summary: "/z/ subject phrase" },
-  "unit.dCoord": { anchor: "clause.md#role-letters", summary: "/d/ object phrase" },
+  "unit.zCoord": { anchor: "clause.md#who-acts-and-the-action", summary: "/z/ subject phrase" },
+  "unit.dCoord": { anchor: "clause.md#direct-object-d", summary: "/d/ object phrase" },
   "unit.bCoord": { anchor: "clause.md#unhosted-b", summary: "unhosted /b/ phrase" },
-  "unit.vpCoord": { anchor: "clause.md#role-letters", summary: "/v/ verb phrase" },
-  "unit.gCoord": { anchor: "predication.md#classification", summary: "clause-level /ɡ/ (predicate adjective)" },
+  "unit.vpCoord": { anchor: "clause.md#who-acts-and-the-action", summary: "/v/ verb phrase" },
+  "unit.gCoord": { anchor: "joins.md#negation-u", summary: "clause-level /ɡ/ (predicate adjective)" },
   "unit.hCoord": { anchor: "clause.md#adverbs-h", summary: "/h/ or stance /th/ unit" },
   "unit.hookUnit": { anchor: "hooks.md#extra-noun", summary: "in-clause hook" },
 
@@ -65,7 +65,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "spanUnit.scopedUnit": { anchor: "spans.md#edge", summary: "clause-scoped span interior (EDGE e)" },
   "spanUnit.clause": { anchor: "spans.md#edge", summary: "multi-clause span interior (EDGE a)" },
   "spanUnit.SpanClose": { anchor: "spans.md#shape", summary: "span close word" },
-  "spanUnit.closeAll": { anchor: "spans.md#nesting", summary: "editorial close then close-all" },
+  "spanUnit.closeAll": { anchor: "spans.md#close-forms-complete-editorial-close-all", summary: "editorial close then close-all" },
 
   "zCoord.zCoordPart": { anchor: "joins.md#right-close", summary: "/z/ phrase parts" },
   "dCoord.dCoordPart": { anchor: "joins.md#right-close", summary: "/d/ phrase parts" },
@@ -79,21 +79,21 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "bCoordPart.npConjunct": { anchor: "clause.md#unhosted-b", summary: "/b/ conjunct" },
   "bCoordPart.npJoinClose": { anchor: "joins.md#right-close", summary: "/b/ join after its conjuncts" },
   "bCoordPart.standaloneJoin": { anchor: "joins.md#standalone-phrase", summary: "standalone /b/ join" },
-  "npConjunct.npPackage": { anchor: "clause.md#role-letters", summary: "noun with its adjectives" },
+  "npConjunct.npPackage": { anchor: "clause.md#who-acts-and-the-action", summary: "noun with its adjectives" },
   "npJoinClose.JoinZ": { anchor: "joins.md#and-lists-a", summary: "/z/ join fence" },
   "npJoinClose.JoinD": { anchor: "joins.md#and-lists-a", summary: "/d/ join fence" },
   "npJoinClose.JoinB": { anchor: "joins.md#and-lists-a", summary: "/b/ join fence" },
   "npJoinClose.sharedAfterJoin": { anchor: "joins.md#right-close", summary: "shared word after a noun join" },
 
   "vpCoord.vpCoordPart": { anchor: "join-across-roles.md#vp-clause-forms", summary: "/v/ phrase parts" },
-  "vpCoordPart.V": { anchor: "clause.md#role-letters", summary: "verb" },
+  "vpCoordPart.V": { anchor: "clause.md#who-acts-and-the-action", summary: "verb" },
   "vpCoordPart.vJoinClose": { anchor: "join-across-roles.md#vp-clause-forms", summary: "/v/ join after its verbs" },
   "vpCoordPart.standaloneJoin": { anchor: "joins.md#standalone-phrase", summary: "standalone /v/ join" },
   "vJoinClose.JoinV": { anchor: "join-across-roles.md#vp-clause-forms", summary: "/v/ join fence" },
   "vJoinClose.sharedAfterJoin": { anchor: "join-across-roles.md#vp-clause-forms", summary: "shared /h/ after a verb join (covers every verb)" },
 
-  "gCoord.gCoordPart": { anchor: "predication.md#classification", summary: "/ɡ/ phrase parts" },
-  "gCoordPart.gPackage": { anchor: "predication.md#classification", summary: "clause-level adjective" },
+  "gCoord.gCoordPart": { anchor: "joins.md#negation-u", summary: "/ɡ/ phrase parts" },
+  "gCoordPart.gPackage": { anchor: "joins.md#negation-u", summary: "clause-level adjective" },
   "gCoordPart.gJoinClose": { anchor: "joins.md#right-close", summary: "/ɡ/ join after its adjectives" },
   "gCoordPart.standaloneJoin": {
     anchor: "predication.md#classification-packaging",
@@ -116,8 +116,8 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "hookUnit.Hook": { anchor: "hooks.md#extra-noun", summary: "in-clause hook" },
 
   "npPackage.gPackage": { anchor: "clause.md#adjectives-ɡ", summary: "adjective on a noun (gl- before, /ɡ/ after)" },
-  "npPackage.Z": { anchor: "clause.md#role-letters", summary: "/z/ noun" },
-  "npPackage.D": { anchor: "clause.md#role-letters", summary: "/d/ noun" },
+  "npPackage.Z": { anchor: "clause.md#who-acts-and-the-action", summary: "/z/ noun" },
+  "npPackage.D": { anchor: "clause.md#direct-object-d", summary: "/d/ noun" },
   "npPackage.B": { anchor: "clause.md#unhosted-b", summary: "/b/ noun" },
   "npPackage.Odo": { anchor: "dependents.md#stand-in", summary: "stand-in as a noun" },
   "npPackage.WritingSpan": { anchor: "spans.md#writing", summary: "written span as a noun" },
@@ -150,14 +150,14 @@ export const TOKEN_CONSTRUCTIONS: Record<TokenBranch, ConstructionEntry> = {
   force: { anchor: "speech-moves.md#speech-act", summary: "speech-act word" },
   jFallbackVocative: { anchor: "speech-moves.md#vocative", summary: "any other /j/ word read as a vocative" },
   linker: { anchor: "dependents.md#sentence-linkers", summary: "/x/ content word as a sentence linker" },
-  content: { anchor: "clause.md#role-letters", summary: "content word in its role slot" },
+  content: { anchor: "clause.md#who-acts-and-the-action", summary: "content word in its role slot" },
   citationFallback: { anchor: "word-endings.md#citation-forms", summary: "prefix-less citation read as a noun" },
 };
 
 type FamilyKind = MorphWordFamily["kind"];
 
 export const WORD_FAMILY_CONSTRUCTIONS: Record<FamilyKind, ConstructionEntry> = {
-  content: { anchor: "clause.md#role-letters", summary: "content word" },
+  content: { anchor: "clause.md#who-acts-and-the-action", summary: "content word" },
   number: { anchor: "numbers.md#counts-g-n", summary: "number word" },
   x: { anchor: "x-compounds.md#families-by-shape", summary: "mid-word x compound" },
   spanClose: { anchor: "spans.md#shape", summary: "span close" },
@@ -171,7 +171,7 @@ export const WORD_FAMILY_CONSTRUCTIONS: Record<FamilyKind, ConstructionEntry> = 
 export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
   span: { anchor: "spans.md#shape", summary: "span open" },
   role: { anchor: "roles.md#role-compounds", summary: "role compound" },
-  value: { anchor: "values.md#need-inventory", summary: "value need word" },
+  value: { anchor: "values.md#met-tha-serves-the-need", summary: "value need word" },
   lateral: { anchor: "roles.md#viewpoint-laterals", summary: "viewpoint lateral" },
   ability: { anchor: "intention.md#ability", summary: "ability compound" },
   numeric: { anchor: "numeric-derivation.md#numeric-derivation", summary: "numeric derivation" },
@@ -192,8 +192,8 @@ type OverlayOnlyReading =
 
 /** Non-overlay readings (an overlay word traces `overlay.*`, not `word.reading.*`). */
 export const WORD_READING_CONSTRUCTIONS: Record<Exclude<LexReading, OverlayOnlyReading>, ConstructionEntry> = {
-  ordinary: { anchor: "clause.md#role-letters", summary: "ordinary content reading" },
-  value: { anchor: "values.md#need-inventory", summary: "need reading" },
+  ordinary: { anchor: "clause.md#who-acts-and-the-action", summary: "ordinary content reading" },
+  value: { anchor: "values.md#met-tha-serves-the-need", summary: "need reading" },
   ability: { anchor: "intention.md#ability", summary: "ability reading" },
   greeting: { anchor: "x-compounds.md#conversation-length", summary: "conversation-length bid" },
   restrictor: { anchor: "restrictors.md#beginner", summary: "restrictor" },
@@ -218,7 +218,7 @@ export const WORD_PLURAL_CONSTRUCTIONS: Record<Exclude<Pos, "w" | "h" | "th" | "
   z: { anchor: "plurality.md#associative", summary: "-x on /z/" },
   d: { anchor: "plurality.md#associative", summary: "-x on /d/" },
   b: { anchor: "plurality.md#associative", summary: "-x on /b/" },
-  j: { anchor: "plurality.md#person-role-x", summary: "-x on a vocative" },
+  j: { anchor: "plurality.md#vocatives-j", summary: "-x on a vocative" },
   v: { anchor: "plurality.md#verbs-v", summary: "collective -x on /v/" },
   g: { anchor: "plurality.md#adjectives-g", summary: "collective -x on /ɡ/" },
 };

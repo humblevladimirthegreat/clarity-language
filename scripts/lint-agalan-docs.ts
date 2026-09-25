@@ -177,6 +177,8 @@ function checkConstructionCoverage(uses: readonly ConstructionUse[]): number {
  * Report-only (phase 1): uses and links that reach past the current section in
  * the learning order. Prints a summary; `--order-report` prints every finding.
  */
+const PARSER_SEGMENTS = new Set(["sentence", "token", "word", "reading", "resolve"]);
+
 function reportLearningOrder(order: LearningOrder, allUses: readonly ConstructionUse[], full: boolean): void {
   // Pages off the sidebar and `## See also` sections are not checked.
   const checked = (s: Section) => order.readingOrder.includes(s.page) && !s.ignored;
@@ -190,11 +192,14 @@ function reportLearningOrder(order: LearningOrder, allUses: readonly Constructio
   // Taught at home, per family: a family is the constructions that share a home
   // section and a first ID segment (`overlay`, `value`, `span`, …), usually the
   // rows of one table. A representative example covers the family, so it passes
-  // when some span in the home heading's subtree traces any member.
+  // when some span in the home heading's subtree traces any member. Parser
+  // productions (`sentence`, `token`, `word`, `reading`, `resolve`) are one
+  // family: they name the same lesson at different parse levels.
   const families = new Map<string, { home: Section; ids: string[] }>();
   for (const [id, home] of homes) {
     if (!home) continue;
-    const key = `${formatSection(home)} ${id.split(".", 1)[0]}`;
+    const segment = id.split(".", 1)[0]!;
+    const key = `${formatSection(home)} ${PARSER_SEGMENTS.has(segment) ? "parser" : segment}`;
     let family = families.get(key);
     if (!family) families.set(key, (family = { home, ids: [] }));
     family.ids.push(id);
@@ -355,7 +360,6 @@ function main(): void {
   if (paths.length === 0) {
     const order = learningOrder(readingOrder.map((item) => sidebarPage(item.link)), pages);
     coverageCount = checkConstructionCoverage(uses);
-    if (process.env.DUMP_USES) require("node:fs").writeFileSync(process.env.DUMP_USES, JSON.stringify(uses.map((u) => [u.id, u.section.page, u.section.slug, u.section.position ?? null])));
     reportLearningOrder(order, uses, orderReport);
   }
 
