@@ -360,7 +360,8 @@ export function morphGlossFor(
   ctx: MorphGlossContext = {},
 ): string {
   if (ctx.passThrough) return word.raw;
-  if (word.reading === "unknown" && !word.overlay && word.family.kind === "content") {
+  // A short resume's stem is not a lexicon root; its antecedent supplies the sense.
+  if (word.reading === "unknown" && !word.overlay && word.family.kind === "content" && !ctx.antecedent) {
     throw new UnknownWordError(word.raw);
   }
   const body = senseLabel(word, tables, ctx);
@@ -372,10 +373,15 @@ export function morphGlossFor(
 }
 
 /** Morph line for an Agalan string: words joined by ` | `, units in `[ … ]` (glosses.md § Phrase brackets). */
-export function morphGlossLine(text: string, tables: ClassifyTables): string {
+export type MorphGlossOptions = {
+  /** Throw when the sentence does not parse, instead of glossing word by word (lint uses this). */
+  strict?: boolean;
+};
+
+export function morphGlossLine(text: string, tables: ClassifyTables, options: MorphGlossOptions = {}): string {
   const normalized = normalizeAgalan(text);
   const finalMark = text.trim().match(/[?!]$/)?.[0];
-  const { words, ctxByIndex, parsed } = analyzeLine(normalized, tables);
+  const { words, ctxByIndex, parsed } = analyzeLine(normalized, tables, options);
   const carets: number[] = [];
   /** Sentence mark after word index (`.` / `?` / `!`). */
   const marks = new Map<number, string>();
@@ -513,7 +519,9 @@ export function compareMorphGloss(
 ): CompareMorphGlossResult {
   const expected = normalizeMorphLine(documented);
   try {
-    const actual = normalizeMorphLine(morphGlossLine(agalan.normalize("NFC").trim(), tables));
+    const actual = normalizeMorphLine(
+      morphGlossLine(agalan.normalize("NFC").trim(), tables, { strict: true }),
+    );
     return { ok: expected === actual, expected, actual };
   } catch (error) {
     const parseError = error instanceof WordParseError
@@ -555,7 +563,7 @@ export function morphRedundantWithLoose(
 ): boolean {
   let canonical: string;
   try {
-    canonical = normalizeMorphLine(morphGlossLine(normalizeAgalan(agalan), tables));
+    canonical = normalizeMorphLine(morphGlossLine(normalizeAgalan(agalan), tables, { strict: true }));
   } catch {
     return false;
   }
@@ -693,6 +701,7 @@ function unwrapCode(text: string): string | null {
 function analyzeLine(
   text: string,
   tables: ClassifyTables,
+  options: MorphGlossOptions = {},
 ): { words: LexWord[]; ctxByIndex: MorphGlossContext[]; parsed?: ParseResult } {
   const morphWords = parseWords(text);
   const words = morphWords.map((word) => classify(word, tables));
@@ -700,7 +709,8 @@ function analyzeLine(
   let parsed: ParseResult | undefined;
   try {
     parsed = parseWithTables(text, tables);
-  } catch {
+  } catch (error) {
+    if (options.strict) throw error;
     parsed = undefined;
   }
 

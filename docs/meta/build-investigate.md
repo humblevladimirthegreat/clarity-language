@@ -1,40 +1,14 @@
-# Build investigation: unparseable examples pass the build
+# Build investigation: parser / docs mismatches
 
 Editors only. Handoff note from the expressiveness review (Phase 1, 2026-09-25) for a separate investigation.
 
-## Confirmed case
+## Resolved (2026-09-25)
 
-[questions.md](../grammar/questions.md) § *Confirming a negative* (lines ~402–408):
+The lint checked one word at a time, and the morph-gloss check dropped any example whose sentence parse failed. It now parses every example sentence and multi-word phrase as a whole. It reports a parse failure instead of skipping the gloss comparison, and it fails any code span it can't classify ([marking Agalan](grammar-docs.md#marking-agalan)). The docs the new checks flagged are fixed (questions.md *not* order, pronouns.md resume glosses, numeric-derivation `/w/` order, and others), along with two parser gaps (`v[…]` / `th(…)` outside noun slots, `xuxur xuxum`). Any documented form the parser rejects now fails `npm run build`, so the old "documented forms the parser rejects" list is covered.
 
-```
-> `jol zazawan vul vurunul. jael.`
-> `jael vul vurunul.`
-```
+## Open: parser strictness
 
-`npm run parse -- 'jol zazawan vul vurunul.'` fails: **`Illegal left fence: join before conjuncts`**. `jel vul vawalal.` fails the same way. Moving `vul` after the verb (`vurunul vul`) parses. Yet `npm run build` (including `lint-agalan-docs`) passed at commit `48a682c`.
-
-The page is wrong (clause *not* goes after the verb, as a right-close join)
-
-## Likely cause
-
-[src/lint/agalan-docs.ts](../../src/lint/agalan-docs.ts) walks code spans with `forEachMarkdownCodeToken` and checks **each word** parses and has lexicon roots. Whole-sentence errors (fence order, join arity) are probably never checked. The morph-gloss comparison ([src/lint/morph-gloss-docs.ts](../../src/lint/morph-gloss-docs.ts)) may also compare per word, or skip a pair when the sentence parse fails, instead of reporting the failure. Confirm both.
-
-## Suggested checks
-
-- Parse every code span that ends in `.` as a full utterance and fail on parse errors.
-- Grep `docs/grammar/` for `` `… vul v`` / `` `… zul z`` patterns (negation before its target) to find other cases.
-
-## Other parser / docs mismatches from Phase 1
-
-Reported by the review agents and **not yet verified**. Each is either a parser bug or a missing doc reading.
-
-**Documented forms the parser rejects:**
-
-- `th( zululon vawalal ).` — aside fence. The spelled-out form `thexal … xuxul` parses.
-- `zual gagadal zul` (*no K*): rejected as an illegal left fence.
-- `… vawalal war.`
-- `godogolr` on its own.
-- `g+3~`.
+Reported by review agents and **not yet verified**. The parser accepts these forms, but no page defines them. Either the parser is too loose, or a doc reading is missing. The docs lint can't catch these, because it only checks what the docs contain.
 
 **Forms the parser accepts that no page defines:**
 

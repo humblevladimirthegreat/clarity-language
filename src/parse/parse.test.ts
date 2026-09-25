@@ -432,3 +432,16 @@ describe("parse — stage 4 resolve", () => {
     assert.equal(result.resolve?.asks[0]?.kind, "fillAsk");
   });
 });
+
+describe("parse — spans.md written fences and closes", () => {
+  it("puts a written span in its PoS slot, not only an NP head", () => {
+    for (const text of ["zazawan vawalal th(huzumum).", "jul zululon v[vozodol].", "zululon vezehel th(zazawan vuzunul)."]) {
+      assert.doesNotThrow(() => parseText(text), text);
+    }
+  });
+
+  it("allows close-all right after an editorial close (written #|)", () => {
+    assert.doesNotThrow(() => parseText("zululon daxal abugum xuxur xuxum vezehel."));
+    assert.throws(() => parseText("zululon daxal abugum xuxul xuxum vezehel."), SentenceParseError);
+  });
+});

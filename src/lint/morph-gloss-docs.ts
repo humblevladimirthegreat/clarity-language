@@ -45,7 +45,19 @@ export type MorphCoverageGap = {
   message: string;
 };
 
-export type MorphGlossFinding = MorphMismatch | MorphAmbiguity | MorphMissingGloss | MorphCoverageGap;
+export type MorphParseError = {
+  kind: "parse-error";
+  line: number;
+  agalan: string;
+  message: string;
+};
+
+export type MorphGlossFinding =
+  | MorphMismatch
+  | MorphAmbiguity
+  | MorphMissingGloss
+  | MorphCoverageGap
+  | MorphParseError;
 
 const SKIP_CELL = /(?:^|[^\w])(?:…|\.\.\.)(?:[^\w]|$)/;
 const GLOSS_COMMENT_RE = /<!--\s*gloss:\s*([\s\S]*?)-->/i;
@@ -157,7 +169,9 @@ export function lintMorphGlossMarkdown(
   for (const pair of pairs) {
     const line = lineNumberAt(text, pair.index);
     const compare = compareMorphGloss(pair.agalan, pair.morph, tables);
-    if (!compare.parseError && !compare.ok) {
+    if (compare.parseError) {
+      findings.push({ kind: "parse-error", line, agalan: pair.agalan, message: compare.parseError });
+    } else if (!compare.ok) {
       findings.push({
         kind: "mismatch",
         line,
@@ -456,6 +470,9 @@ export function formatMorphGlossFinding(
   }
   if (finding.kind === "coverage-gap") {
     return `${loc}  ${finding.message}`;
+  }
+  if (finding.kind === "parse-error") {
+    return `${loc}  sentence does not parse  \`${finding.agalan}\`  (${finding.message.split("\n")[0]})`;
   }
   return [
     `${loc}  morph gloss mismatch`,

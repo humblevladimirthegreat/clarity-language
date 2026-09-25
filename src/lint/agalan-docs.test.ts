@@ -6,7 +6,10 @@ import { emptyPosEnglish } from "../lexicon-search.js";
 import { forEachMarkdownCodeToken } from "../retie/tokens.js";
 
 import {
+  classifyAgalanSpan,
+  emptySpanStats,
   isAgalanLintCandidate,
+  lintAgalanSpans,
   lintAgalanMarkdown,
   lintAgalanToken,
   peelLintChunk,
@@ -160,5 +163,52 @@ describe("forEachMarkdownCodeToken", () => {
       hits.push(t.chunk);
     });
     assert.deepEqual(hits, ["ululon", "g+3"]);
+  });
+});
+
+describe("lintAgalanSpans", () => {
+  const tables = tablesOf();
+
+  it("parses whole sentences: a join before its conjuncts fails", () => {
+    const text = "> `jol zazawan vul vazawal. jael.`\n>\n> j-question | z-Azawan | v-not | v-swan . j-yes\n";
+    const issues = lintAgalanSpans(text, tables);
+    assert.equal(issues.length, 1);
+    assert.equal(issues[0]!.kind, "sentence");
+    assert.match(issues[0]!.detail, /left fence/i);
+    assert.deepEqual(lintAgalanSpans("`jol zazawan vazawal vul. jael.`", tables), []);
+  });
+
+  it("parses multi-word phrases unless marked a fragment", () => {
+    assert.equal(lintAgalanSpans("`zul zazawan`", tables)[0]?.kind, "phrase");
+    assert.deepEqual(lintAgalanSpans("<!-- lint: fragment -->`zul zazawan`", tables), []);
+    assert.deepEqual(lintAgalanSpans("<!-- lint: skip -->`wo zo jo`", tables), []);
+  });
+
+  it("fails spans that mix Agalan and other words without a class", () => {
+    assert.equal(classifyAgalanSpan("zazawan runs fast"), "unclassified");
+    assert.equal(lintAgalanSpans("`zazawan runs fast`", tables)[0]?.kind, "unclassified");
+    assert.equal(classifyAgalanSpan("A am B"), "template");
+    assert.equal(classifyAgalanSpan("zazawan …"), "template");
+    assert.equal(classifyAgalanSpan("fast"), "english");
+  });
+
+  it("requires an info string on fenced blocks and checks agalan fences", () => {
+    assert.equal(lintAgalanSpans("```\nA HOOK B\n```\n", tables)[0]?.kind, "unmarked-fence");
+    assert.deepEqual(lintAgalanSpans("```text\nA HOOK B\n```\n", tables), []);
+    assert.equal(lintAgalanSpans("```agalan\nzul zazawan vazawal.\n```\n", tables)[0]?.kind, "sentence");
+  });
+
+  it("checks HTML <code> spans and rejects unknown markers", () => {
+    assert.equal(lintAgalanSpans("<code>zul zazawan vazawal.</code>", tables)[0]?.kind, "sentence");
+    assert.equal(lintAgalanSpans("<!-- lint: nope -->`zazawan`", tables)[0]?.kind, "bad-marker");
+  });
+
+  it("counts every span in exactly one class", () => {
+    const stats = emptySpanStats();
+    lintAgalanSpans("`zazawan vazawal.` `zazawan` `fast` `A am B` <!-- lint: skip -->`x y`", tables, stats);
+    assert.deepEqual(
+      [stats.sentence, stats.word, stats.english, stats.template, stats["marked-skip"]],
+      [1, 1, 1, 1, 1],
+    );
   });
 });

@@ -12,14 +12,17 @@ export type TokenPayload = LexWord | SurfaceAtom;
 
 export type AgelanTokenType = ReturnType<typeof createToken>;
 
-function wordToken(name: string): AgelanTokenType {
-  return createToken({ name, pattern: Lexer.NA });
+/** Category matched by every token an atomic span may hold (all but island edges and sentence ends). */
+export const SpanAtom = createToken({ name: "SpanAtom", pattern: Lexer.NA });
+
+function wordToken(name: string, spanAtom = true): AgelanTokenType {
+  return createToken({ name, pattern: Lexer.NA, categories: spanAtom ? [SpanAtom] : [] });
 }
 
-export const IslandEdge = wordToken("IslandEdge");
-export const Period = wordToken("Period");
-export const QMark = wordToken("QMark");
-export const Bang = wordToken("Bang");
+export const IslandEdge = wordToken("IslandEdge", false);
+export const Period = wordToken("Period", false);
+export const QMark = wordToken("QMark", false);
+export const Bang = wordToken("Bang", false);
 
 export const JoinZ = wordToken("JoinZ");
 export const JoinD = wordToken("JoinD");
@@ -76,6 +79,7 @@ export const allTokens = [
   SpanOpen,
   SpanClose,
   WritingSpan,
+  SpanAtom,
 ];
 
 const JOIN_BY_POS = {
@@ -120,7 +124,13 @@ export function classifyToTokenType(word: LexWord): AgelanTokenType {
 
   if (family.kind === "hook") return Hook;
   if (family.kind === "spanClose") return SpanClose;
-  if (family.kind === "writingSpan") return WritingSpan;
+  // A written span fills its PoS slot: `d[…]` / `z[…]` / `b[…]` are NP heads; `v[…]`, `th(…)`, … take the V / H / … slot.
+  if (family.kind === "writingSpan") {
+    if (pos && pos !== "z" && pos !== "d" && pos !== "b" && pos in CONTENT_BY_POS) {
+      return CONTENT_BY_POS[pos as keyof typeof CONTENT_BY_POS];
+    }
+    return WritingSpan;
+  }
   if (family.kind === "x" && family.xFamily === "span") return SpanOpen;
 
   if (isStandIn(word)) return pos === "v" ? V : Odo;

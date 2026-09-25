@@ -17,7 +17,7 @@ English often names a *kind of thing* with a number idea baked in (*essence of l
 >
 > "essence of love"
 
-```
+```text
 PoS + ROOT + {l|m} + NUM + {-l|-m|-n|-r}
 ```
 
@@ -69,7 +69,7 @@ English *quasi-* says something has the **shape or role** of a kind without coun
 | **`/v/`** (verb) | to treat as quasi- / as-if that kind | `vonogoleberelrubul`: *to quasi-befriend* / treat as friend-shaped |
 | **`/ɡ/`** (adjective) | *quasi-* (ascribed) | `gezezalrubul`: *quasi-official* |
 | **`/h/`** (adverb) | under quasi- framing | `hezezalrubul`: *quasi-officially* |
-| **`/w/`** (adjunct) | host graded as quasi- | `gebenel webenelrubul`: *quasi-commitment* |
+| **`/w/`** (adjunct) | host graded as quasi- | `webenelrubul gebenel`: *quasi-commitment* |
 | **`/j/`** (interjection) | *Quasi-!* / *As if that kind!* | `jonogoleberelrubul` |
 
 **Compare with:** free **`g-e-`** / **`v-e-`** / **`th-e-`** / **`j-e-`** / **`x-e-`** are imaginary amount, or number as verb / stance / interjection / discourse ([numbers.md § Imaginary](numbers.md#imaginary)). **`ROOTl-e-`** is quasi-*kind*.
@@ -130,7 +130,7 @@ English *a pair of…*, *three-part…*, *primary…* can name **how many parts 
 | **`/v/`** (verb) | act of nulling / resetting | act that refuses null / keeps residual | `vodobolrazol`: *to null the score*; `vodobolruzol`: *to anti-null / refuse to zero the score*; `vezewelrazol`: *to zero effort*; `vezewelruzol`: *to leave effort unzeroable* |
 | **`/ɡ/`** (adjective) | null / reset (ascribed) | non-emptyable / residual (ascribed) | `godobolrazol`: *null / reset*; `godobolruzol`: *won’t-null / residual*; `gozedelruzom`: *hope that won’t go to zero* (vs `gozedelrubam` *void of hope*) |
 | **`/h/`** (adverb) | clause framed as reset / zeroed | clause framed as irreducible residue | `hezewelrazom`: *with effort zeroed*; `hezewelruzom`: *with irreducible effort* / *despite any zeroing* |
-| **`/w/`** (adjunct) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `gonenol wonenolrazol`: *debt (ascribed) zeroed*; `gonenol wonenolruzol`: *debt whose balance is anti-null* |
+| **`/w/`** (adjunct) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `wonenolrazol gonenol`: *debt (ascribed) zeroed*; `wonenolruzol gonenol`: *debt whose balance is anti-null* |
 | **`/j/`** (interjection) | discourse *Zero it!* / *Null!* | discourse *Won’t zero!* / *Residue stands!* | `jodobolrazol`; `jodobolruzol` |
 
 **Related form:** a stronger wipe of the kind is [total null](#zero-exponent-derivation) **`ROOTl+0e`**. Hostless *annihilate* is free **`v+0el`**.
@@ -165,7 +165,7 @@ On free numbers, **`±0e-1`** is scalar anatomy; on ROOT the same stems are kind
 | **`/v/`** | annihilate that kind | `vodobolrazobal` |
 | **`/ɡ/`** | ascribed total-null | `gozedelrazobam` |
 | **`/h/`** | clause framed as total wipe | `hezewelrazobam` |
-| **`/w/`** | host graded toward total null | `gonenol wonenolrazobal` |
+| **`/w/`** | host graded toward total null | `wonenolrazobal gonenol` |
 | **`/j/`** | *Annihilate that kind!* | `jodobolrazobal` |
 
 **`-0e` / `-0e-` / `±0e-1`** inherit the same role-letter framing (absolute residue / micro-residue / engineering null·residue at order of magnitude −1). Free twins: **`v+0el`** *annihilate*; **`g+0e`** absolute-zero amount; **`g+0e-1`** / **`g-0e-1`** engineering null / residue: [numbers.md § Zero × exponent](numbers.md#zero-exponent).
@@ -208,7 +208,7 @@ English *first-draft*, *secondary adventure*, *third-order problem* can name **w
 | **`/v/`** (verb) | treat as / assign that order (kind-act) | `vomonalrewol`: *to first-class / premiere a challenge* (free `v#1` *take 1st place*) |
 | **`/ɡ/`** (adjective) | *Nth-order* (ascribed) | `gomolredul`: *secondary* |
 | **`/h/`** (adverb) | *at Nth-order framing* | `hababulrezol`: *zeroth-order* |
-| **`/w/`** (adjunct) | host `/ɡ/` graded as Nth-order | `gezehel wezehelrerel`: *third-order (dialogue)* |
+| **`/w/`** (adjunct) | host `/ɡ/` graded as Nth-order | `wezehelrerel gezehel`: *third-order (dialogue)* |
 | **`/j/`** (interjection) | discourse call of that order-kind | `jebegulrewol`: *First-draft!* (kind cheer; free `j#1` *First!* place cheer) |
 
 **Related form:** **`_N`** is *which code*; free `g#N` is *which token in the current series*.
@@ -253,7 +253,7 @@ Digitless **`_`** is **catalog topology**, not magnitude. Label ∞ means *the n
 | **`/v/`** (verb) | to ∞-tag / put on an open ledger | to reserve an empty code slot | `vugedelrobal`; `vugedelrobul` |
 | **`/ɡ/`** (adjective) | open-endedly coded | proto-coded / unassigned | `gugedelrobal`; `gugedelrobul` |
 | **`/h/`** (adverb) | under open-catalog framing | under pre-label framing | `hugedelrobal`; `hugedelrobul` |
-| **`/w/`** (adjunct) | host graded as open-catalog | host graded as proto-label | `zugedel wugedelrobal` |
+| **`/w/`** (adjunct) | host graded as open-catalog | host graded as proto-label | `wugedelrobal gugedel` |
 | **`/j/`** (interjection) | *Open catalog!* / *∞-tagged!* | *Unassigned!* / *Empty slot!* | `jugedelrobal`; `jugedelrobul` |
 
 ### Hyperbole sense (`+1e` / `#1e` / `_1e`)

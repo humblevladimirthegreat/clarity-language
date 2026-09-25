@@ -139,6 +139,13 @@ z-Azawan | v-sit
     assert.match(mismatch.parser, /v-sit|v-chair/);
   });
 
+  it("reports a sentence that does not parse instead of comparing word by word", () => {
+    const text = "> `zazawan vul vajul.`\n>\n> z-Azawan | v-not | v-sit\n";
+    const { findings } = lintMorphGlossMarkdown(text, tables);
+    assert.equal(findings[0]?.kind, "parse-error");
+    assert.match(formatMorphGlossFinding("x.md", findings[0]!), /sentence does not parse/);
+  });
+
   it("reports checked pair count", () => {
     const md = `> \`zazawan vajul.\`
 >

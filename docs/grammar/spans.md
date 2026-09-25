@@ -631,13 +631,13 @@ z-Azawan | v-sing | th-ASIDE.atomic[h-happy]
 *Azawan sings (happily).*
 :::
 
-**6.** `zoxol ujudu gumuzem.`
+**6.** `zoxol ujudul gumuzem.`
 
 ::: details Show answer
 
-z-mention-x-atomic | ujudu | g-small
+z-MENTION.atomic["ujudul"] | g-small
 
-*The word “ujudu” is small.*
+*The word “ujudul” is small.*
 :::
 
 **7.** `zululon ^ huzurem dululel ^ vejel.`
@@ -700,7 +700,7 @@ An editorial span still counts as said: resume (`d[=]` / `daxur`) may point back
 | Writing | Speech | Notes |
 |---------|--------|-------|
 | `d[…#]` | `daxal` … `xuxur` | editorial close |
-| `d[…#\|]` | `daxal` … `xuxur xuxum` | editorial + close-all |
+| `d[…#\|]` | `daxal` … <!-- lint: fragment -->`xuxur xuxum` | editorial + close-all |
 
 For a cut-off cite, use EDGE **`a`** + **`xuxur`**. EDGE **`e`** already ends at the clause with a whole close.
 
@@ -723,7 +723,7 @@ Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); aside at
 | `xuxul` | close one — whole |
 | `xuxur` | close one — editorial |
 | `xuxum` | close all |
-| `xuxur xuxum` | editorial + close all (writing `#\|`) |
+| <!-- lint: fragment -->`xuxur xuxum` | editorial + close all (writing `#\|`) |
 
 ### Literal content (fence words / fence marks)
 <a id="literal-content"></a>

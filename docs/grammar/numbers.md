@@ -401,7 +401,7 @@ g-zero
 
 Beginner already used one spoken word: role letter, marker, digits, ending. The same four slots hold every free number you meet next.
 
-```
+```text
 [PoS] + r + V + ( group ( th + V₁ + group )* )? + [ending]
 group = [exponent?] [mantissa digits?]
 ```
@@ -589,7 +589,7 @@ Speech uses **`ba`** / **`bu`** for that exponent, then **`ja`** if mantissa dig
 
 Beginner already wrote `g+3` / `g#2` / `g+`. Speech is still full CV; writing for **free** number words prefers shorthand for the ending, marker, and body. Both writings name the same word.
 
-```
+```text
 [PoS] + [~|@|=]? + [marker] + [body?]
 ```
 

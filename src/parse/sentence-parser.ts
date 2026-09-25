@@ -18,6 +18,7 @@ import {
   JoinZ,
   lexWordFromToken,
   Linker,
+  SpanAtom,
   Odo,
   Period,
   Polar,
@@ -64,7 +65,11 @@ export class SentenceParseError extends Error {
   }
 }
 
-const ANY_TOKEN_ALTS = allTokens.filter((t) => t !== IslandEdge && t !== Period && t !== QMark && t !== Bang);
+function spanCloseFlavor(token: IToken): string | undefined {
+  if (token.tokenType !== SpanClose) return undefined;
+  const family = (token.payload as LexWord | undefined)?.family;
+  return family?.kind === "spanClose" ? family.flavor : undefined;
+}
 
 function tokenIs(token: IToken, ...types: { tokenTypeIdx?: number }[]): boolean {
   return types.some((type) => token.tokenType === type);
@@ -306,7 +311,7 @@ class AgelanSentenceParser extends CstParser {
           // Atomic: exactly one following token, whatever its class.
           GATE: () => spanEdgeOf(this.LA(0)) === "o",
           ALT: () => {
-            this.OR2(ANY_TOKEN_ALTS.map((tokenType) => ({ ALT: () => this.consume(5, tokenType, { LABEL: "atom" }) })));
+            this.CONSUME5(SpanAtom, { LABEL: "atom" });
           },
         },
         {
@@ -328,6 +333,14 @@ class AgelanSentenceParser extends CstParser {
               this.SUBRULE(this.clause);
             });
             this.CONSUME(SpanClose);
+            // Written `#|`: editorial close `xuxur`, then close-all `xuxum` (spans.md § Editorial close).
+            this.OPTION3({
+              GATE: () =>
+                spanCloseFlavor(this.LA(0)) === "editorial" && spanCloseFlavor(this.LA(1)) === "closeAll",
+              DEF: () => {
+                this.CONSUME2(SpanClose, { LABEL: "closeAll" });
+              },
+            });
           },
         },
         // Empty / resume (EDGE **u**): no interior, no close.

@@ -254,7 +254,7 @@ English *of* also names how one noun sits toward another (*a hand of Ululon*, *a
 >
 > "Ululon of the city walks."
 
-On an event, the same roots are `/h/` (`zazawan vagara howodom bowodol` *Azawan crafts of wood*; `zululon vawalal hugunom bolunel` *Ululon walks, originating from the city*). The same roots stay ordinary pictures under other letters (`zobonel` *a bone*; `zajaral` *a jar*; `zowodol` *wood*; `zugunol` *a country*).
+On an event, the same roots are `/h/` (`zazawan vagaral howodom bowodol` *Azawan crafts of wood*; `zululon vawalal hugunom bolunel` *Ululon walks, originating from the city*). The same roots stay ordinary pictures under other letters (`zobonel` *a bone*; `zajaral` *a jar*; `zowodol` *wood*; `zugunol` *a country*).
 
 Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in* hook (`al`), not `gajaram`.
 

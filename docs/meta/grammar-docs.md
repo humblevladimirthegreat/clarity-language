@@ -456,7 +456,25 @@ Before shipping **Intermediate** or **Advanced**, check [later-stage shape](#lat
 ## Markdown hygiene
 <a id="markdown-hygiene"></a>
 
-After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run build`**. It checks emphasis balance, slash-joined emphasis, Vue-illegal `<tag>` on grammar pages (write loan fences as `<code>d&lt;kimchi&gt;</code>` — inline backticks and `<code v-pre>` with a real `<` still fail Vue’s HTML parse), that Agalan words in `docs/grammar/` parse and use lexicon roots, Vue a11y on site components, and published VitePress URLs. Prefer spaces in slash-joined emphasis (`*a* / *b*`) over `*a*/*b*`. In bold headings or bullets, put forms in backticks only (`**Ranked (`e` / `ae`)**`), not nested bold inside bold.
+After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run build`**. It checks emphasis balance, slash-joined emphasis, Vue-illegal `<tag>` on grammar pages (write loan fences as `<code>d&lt;kimchi&gt;</code>` — inline backticks and `<code v-pre>` with a real `<` still fail Vue’s HTML parse), that Agalan words in `docs/grammar/` parse and use lexicon roots, that every example sentence and phrase parses as a whole ([marking Agalan](#marking-agalan)), Vue a11y on site components, and published VitePress URLs. Prefer spaces in slash-joined emphasis (`*a* / *b*`) over `*a*/*b*`. In bold headings or bullets, put forms in backticks only (`**Ranked (`e` / `ae`)**`), not nested bold inside bold.
+
+### Marking Agalan
+<a id="marking-agalan"></a>
+
+`npm run build` puts every code span on a grammar page (inline backticks, fenced blocks, `<code>`) into exactly one class, and checks each one. Nothing is skipped silently.
+
+| Span | Class | Check |
+|------|-------|-------|
+| Ends in `.` / `?` / `!` and starts with an Agalan word | sentence | full sentence parse (word order, fences, joins) |
+| Two or more Agalan words, no final mark | phrase | full parse |
+| One word | word | word parse + lexicon roots |
+| Contains `…` / `...` or an all-caps placeholder (`A am B`, `DIR th ANCHOR`) | template | not parsed |
+| No Agalan-shaped word | English | not parsed |
+| Agalan mixed with other words, no final mark | unclassified | **fails** |
+
+End a full example sentence with a period, so it gets the sentence check. When a phrase is a deliberate fragment that doesn't parse on its own (a list of close words, a pronunciation), mark it with a comment right before the span: `<!-- lint: fragment -->` (still Agalan, but not parsed as a phrase) or `<!-- lint: skip -->` (not Agalan). Fenced blocks need an info string: ` ```text ` for templates and diagrams, ` ```agalan ` to check each line like a span. Any other `<!-- lint: … -->` value fails.
+
+A morph line is compared only after the whole example parses. If it doesn't parse, that is a finding, never a skipped comparison.
 
 ### HTML comments
 <a id="html-comments"></a>

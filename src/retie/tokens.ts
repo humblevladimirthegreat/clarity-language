@@ -119,14 +119,26 @@ function rewritePlainTokens(
  * Link labels are walked with the same pair so nested backticks still count.
  * Link targets are copied unchanged.
  */
+/** Where a code chunk came from, for callers that classify whole spans. */
+export type CodeSpanMeta = {
+  kind: "inline" | "fence";
+  /** Fence info string (` ```text ` → `text`); empty for inline code. */
+  info: string;
+  /** Body of an HTML comment that sits right before the span, with only whitespace between. */
+  marker?: string;
+};
+
 function transformMarkdown(
   input: string,
   baseIndex: number,
-  transformCode: (text: string, index: number) => string,
+  transformCode: (text: string, index: number, meta: CodeSpanMeta) => string,
   transformProse: (text: string, index: number) => string,
 ): string {
   let out = "";
   let i = 0;
+  let comment: { body: string; end: number } | undefined;
+  const markerAt = (at: number): string | undefined =>
+    comment && input.slice(comment.end, at).trim() === "" ? comment.body : undefined;
 
   const take = (end: number) => {
     out += input.slice(i, end);
@@ -136,13 +148,20 @@ function transformMarkdown(
   while (i < input.length) {
     if (input.startsWith("<!--", i)) {
       const close = input.indexOf("-->", i + 4);
-      take(close < 0 ? input.length : close + 3);
+      const end = close < 0 ? input.length : close + 3;
+      comment = { body: input.slice(i + 4, close < 0 ? input.length : close).trim(), end };
+      take(end);
       continue;
     }
 
     if (input.startsWith("```", i) || input.startsWith("~~~", i)) {
       const fence = input.slice(i, i + 3);
       const openLineEnd = input.indexOf("\n", i);
+      const fenceMeta: CodeSpanMeta = {
+        kind: "fence",
+        info: input.slice(i + 3, openLineEnd < 0 ? input.length : openLineEnd).trim(),
+        marker: markerAt(i),
+      };
       if (openLineEnd < 0) {
         take(input.length);
         continue;
@@ -150,12 +169,12 @@ function transformMarkdown(
       const closeAt = input.indexOf(`\n${fence}`, openLineEnd);
       if (closeAt < 0) {
         out += input.slice(i, openLineEnd + 1);
-        out += transformCode(input.slice(openLineEnd + 1), baseIndex + openLineEnd + 1);
+        out += transformCode(input.slice(openLineEnd + 1), baseIndex + openLineEnd + 1, fenceMeta);
         i = input.length;
         continue;
       }
       out += input.slice(i, openLineEnd + 1);
-      out += transformCode(input.slice(openLineEnd + 1, closeAt), baseIndex + openLineEnd + 1);
+      out += transformCode(input.slice(openLineEnd + 1, closeAt), baseIndex + openLineEnd + 1, fenceMeta);
       const closeEnd = closeAt + 1 + fence.length;
       out += input.slice(closeAt, closeEnd);
       i = closeEnd;
@@ -170,7 +189,11 @@ function transformMarkdown(
         continue;
       }
       out += "`";
-      out += transformCode(input.slice(i + 1, close), baseIndex + i + 1);
+      out += transformCode(input.slice(i + 1, close), baseIndex + i + 1, {
+        kind: "inline",
+        info: "",
+        marker: markerAt(i),
+      });
       out += "`";
       i = close + 1;
       continue;
@@ -221,6 +244,21 @@ export type MarkdownCodeToken = {
   /** Ordinal of the code span or fenced block holding this token. */
   block: number;
 };
+
+export type MarkdownCodeSpan = CodeSpanMeta & { text: string; index: number };
+
+/** Each inline code span and fenced block as a whole (not prose, comments, or URLs). */
+export function forEachMarkdownCodeSpan(input: string, visit: (span: MarkdownCodeSpan) => void): void {
+  transformMarkdown(
+    input,
+    0,
+    (text, index, meta) => {
+      visit({ ...meta, text, index });
+      return text;
+    },
+    (text) => text,
+  );
+}
 
 /** Whitespace tokens inside inline backticks and fenced code (not prose, comments, or URLs). */
 export function forEachMarkdownCodeToken(

@@ -19,7 +19,7 @@ import { readdirSync, readFileSync, statSync } from "node:fs";
 import { basename, dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { lintAgalanMarkdown } from "../src/lint/agalan-docs.js";
+import { emptySpanStats, lintAgalanMarkdown, lintAgalanSpans } from "../src/lint/agalan-docs.js";
 import {
   formatMorphGlossFinding,
   lintMorphGlossMarkdown,
@@ -131,6 +131,8 @@ function main(): void {
   let morphRedundantOmitted = 0;
   let bankCount = 0;
   let speechCount = 0;
+  let spanCount = 0;
+  const spanStats = emptySpanStats();
 
   for (const file of files) {
     const original = readFileSync(file, "utf8");
@@ -141,6 +143,12 @@ function main(): void {
       const line = lineNumberAt(original, issue.index);
       const label = issue.kind === "parse" ? "does not parse" : "unknown root";
       console.error(`${rel}:${line}  \`${issue.token}\`  ${label}  (${issue.detail})`);
+    }
+
+    for (const issue of lintAgalanSpans(original, tables, spanStats)) {
+      spanCount += 1;
+      const line = lineNumberAt(original, issue.index);
+      console.error(`${rel}:${line}  \`${issue.text}\`  ${issue.kind}  (${issue.detail})`);
     }
 
     const morphResult = lintMorphGlossMarkdown(original, tables);
@@ -173,6 +181,9 @@ function main(): void {
   if (count > 0) {
     console.error(`\n${count} Agalan word issue(s) in docs/grammar/.`);
   }
+  if (spanCount > 0) {
+    console.error(`\n${spanCount} Agalan sentence / span issue(s) in docs/grammar/.`);
+  }
   if (morphCount > 0) {
     console.log(`\n${morphCount} morph-gloss issue(s).`);
   }
@@ -184,12 +195,17 @@ function main(): void {
     console.log(`\n${speechCount} number pronunciation issue(s).`);
   }
 
-  const fail = hostIssues + count + morphCount + bankCount + speechCount;
+  const fail = hostIssues + count + spanCount + morphCount + bankCount + speechCount;
   if (fail > 0) {
     process.exit(1);
   }
   console.log("OK: overlay hosts match the published lexicon.");
   console.log("OK: Agalan words in docs/grammar/ parse as legal and match the lexicon.");
+  console.log(
+    `OK: code spans — ${spanStats.sentence} sentence(s) and ${spanStats.phrase} phrase(s) parsed; ` +
+      `${spanStats.word} single word(s), ${spanStats.template} template(s), ${spanStats.english} English, ` +
+      `${spanStats["marked-fragment"]} marked fragment(s), ${spanStats["marked-skip"]} marked skip(s); 0 unclassified.`,
+  );
   console.log(
     `OK: ${morphChecked} morph gloss(es) compared; ${morphRedundantOmitted} redundant-omitted / ${morphWithLoose} with loose English; glosses match the parser.`,
   );

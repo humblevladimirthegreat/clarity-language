@@ -161,7 +161,7 @@ Join vowels (Beginner already used ranked **`e`** for people):
 
 **Not the same job as:** bare **`z+3 z+5 zel`** (*prefer 3 over 5*). Without the SHARED continuum, two number conjuncts are an ordinary join.
 
-Menu **`o`** / **`ao`** lists discrete values (*3 or 5* / *3 and/or 5*). Equative **`ae`** with numbers is *equal* / *approximately equal* (`z+5 z+5 zael` / `z+3 z+5 zaem`). Exclusive ranked **`oe`** is superlative / empty-superlative with a scale. Three or more number conjuncts under **`a`** are an ordinary list (`zal z+1 z+3 z+7` = *1, 3, and 7*), even with SHARED. Single-item **`zal z+3`** is *just 3*, not a ray.
+Menu **`o`** / **`ao`** lists discrete values (*3 or 5* / *3 and/or 5*). Equative **`ae`** with numbers is *equal* / *approximately equal* (`z+5 z+5 zael` / `z+3 z+5 zaem`). Exclusive ranked **`oe`** is superlative / empty-superlative with a scale. Three or more number conjuncts under **`a`** are an ordinary list (`z+1 z+3 z+7 zal` = *1, 3, and 7*), even with SHARED. Single-item **`z+3 zal`** is *just 3*, not a ray.
 
 Clock / date ranges: SHARED continuum **`gumem`** (or a host relation + `/b/`) with digit-string endpoints (`b_15,00 b_16,00 bel gumem`). Circumstance **`hal`** is a [restrictor](restrictors.md).
 
@@ -183,7 +183,7 @@ English *25% of the cats* names a **portion of a whole**. Close a **count** (`ra
 | **`jo`** | percent (portion of a whole) | everyday percent figure (`25` in `25%`); those digits ÷ 100 |
 | **`ju`** | percentage points (point-scale amount or delta) | point figure (`2` in `+2%*`); those digits ÷ 100 |
 
-Digits follow the [normal digit rules](numbers.md#exponents) (including optional **`je`** inside the percent/point reading). Say the digits you mean (`100%` → `wo zo zo jo`).
+Digits follow the [normal digit rules](numbers.md#exponents) (including optional **`je`** inside the percent/point reading). Say the digits you mean (`100%` → <!-- lint: skip -->`wo zo zo jo`).
 
 Order: integer digits, optional **`je`** + fractional digits, then **`jo`** or **`ju`**. **`jo`** / **`ju`** sit on **`ra`** / **`ru`** only. At most one **`jo`** or **`ju`** group in the number word; leave **`ba`** / **`bu`** off that word. Endings still apply (**-l** exact, **-m** about, **-n** conventional label, **-r** resume).
 

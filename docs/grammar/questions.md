@@ -399,15 +399,15 @@ A stance word can stand alone (`jael.`), sit before a body (`jael zazawan vawala
 
 When the question already contains *not* (*Didn’t Azawan run?*), *yes* and *no* still say whether **that claim** matches. **`jael`** confirms the denial (*true: they didn’t*). **`juel`** says the denial is false (*they did*). Restate the body after the stance word when you want the polarity said twice. Offer words (**`jaol`** / **`juol`**) still answer *take this?*, not true/false.
 
-> `jol zazawan vul vurunul. jael.`
+> `jol zazawan vurunul vul. jael.`
 >
-> j-question | z-Azawan | v-not | v-run . j-yes
+> j-question | z-Azawan | [v-run | v-not] . j-yes
 >
 > "Didn’t Azawan run? True, Azawan didn’t."
 
-> `jael vul vurunul.`
+> `jael vurunul vul.`
 >
-> j-yes | v-not | v-run
+> j-yes | [v-run | v-not]
 >
 > "True: (they) didn’t run."
 
@@ -520,9 +520,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Didn’t Azawan tell?* Then confirm: *true, Azawan didn’t.*
 
 ::: details Show answer
-`jol zazawan vul vezehel.`
+`jol zazawan vezehel vul.`
 
-j-question | z-Azawan | v-not | v-tell
+j-question | z-Azawan | [v-tell | v-not]
 `jael.`
 :::
 
@@ -584,11 +584,11 @@ j-everything-but
 
 #### Agalan → English
 
-**1.** `jael vul vadezel.`
+**1.** `jael vadezel vul.`
 
 ::: details Show answer
 
-j-yes | v-not | v-attest
+j-yes | [v-attest | v-not]
 
 *True: didn’t attest.*
 :::
@@ -637,11 +637,11 @@ j-refuse-option-soft
 *Not that.* (soft reject of this option)
 :::
 
-**7.** Reply to `jol zululon vul vululel.` (*Didn’t Ululon lie?*): `juel vululel.`
+**7.** Reply to `jol zululon vululel vul.` (*Didn’t Ululon lie?*): `juel vululel.`
 
 ::: details Show answer
 
-j-question | z-Ululon | v-not | v-lie . j-no | v-lie
+j-question | z-Ululon | [v-lie | v-not] . j-no | v-lie
 
 *Didn’t Ululon lie? — False: (Ululon) did lie.*
 :::

@@ -13,7 +13,7 @@ Three placements share the same spellings. Tell them apart from what sits to the
 
 You already named something (A), and you want English *including B* in that same slot. Put a hook between two phrases that play the **same clause role** (both subjects, both objects, both adjectives, …): `A HOOK B`. That hooks B onto A in place; it does not package A and B as a pair. Everyday *including* uses **`al`**. (cue: **a** ≈ add.)
 
-```
+```text
 A HOOK B
 ```
 
@@ -693,7 +693,7 @@ Intermediate already used a free extra-noun hook beside a verb (`vawalal ul baza
 
 Keep the left word’s own **-l** or **-m**. Then write the extra-noun hook. There is no mid-word **`x`**. The dictionary lemma is the **citation** (no role letter), because the same stem can sit under `/z/` or `/ɡ/` as well as `/v/`.
 
-```
+```text
 CITE + HOOK
 awalal + ul → awalalul
 ```

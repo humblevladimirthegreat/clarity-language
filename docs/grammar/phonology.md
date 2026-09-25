@@ -131,7 +131,7 @@ When you **spell a word aloud** or **name a letter**, say the Agalan name for it
 | `j` | `ja` | *yacht* |
 | `x` | `xe` | *shed* |
 
-```
+```text
 `agada` → `a` `ga` `a` `da` `a`
 ```
 

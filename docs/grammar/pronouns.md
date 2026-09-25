@@ -651,7 +651,7 @@ Examples:
 
 > `zaradul welem garedel. zudomul warer gelem.`
 >
-> z-radio | w-very | g-red . z-studio-mic | w-←red | g-big
+> z-radio | [w-very | g-red] . z-studio-mic | [w-←red | g-big]
 >
 > "A radio is very red. A studio mic is big to that degree."
 
@@ -756,7 +756,7 @@ Examples:
 
 > `zululon hurorom bazawan vumudel. zaradul wuror gelem.`
 >
-> z-Ululon | [h-like | b-Azawan] | v-mute . z-radio | w-←like | g-big
+> z-Ululon | [h-like | b-Azawan] | v-mute . z-radio | [w-←like | g-big]
 >
 > "Ululon mutes like Azawan. A radio is big in that way."
 
