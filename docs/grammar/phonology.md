@@ -50,7 +50,7 @@ A consonant starts a syllable. There is no distinction between voiced and unvoic
 `j` and `x` have sounds different than English. The rest are familiar. 
 :::
 
-`th` is **one letter** written with two characters. Agalan has no `t`, so `th` never means `t` followed by `h`. At the start of a word it is the [stance](clause.md#stance-th) role letter (`thodohom`). Inside a word it starts a syllable like any consonant (`golozothal`, `hrowovathorezol`); it never appears inside a dictionary root.
+`th` is **one letter** written with two characters. Agalan has no `t`, so `th` never means `t` followed by `h`. At the start of a word it is the [stance](clause.md#stance-th) role letter. Inside a word it starts a syllable like any consonant (in [need](values.md) words and spoken [number groups](numbers.md#group-separator)); it never appears inside a dictionary root.
 
 Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) by [Peter Isotalo](https://commons.wikimedia.org/wiki/User:Peter_Isotalo), except /ɹ/ by [Erutuon](https://commons.wikimedia.org/wiki/File:Alveolar_approximant.ogg).
 
@@ -81,15 +81,15 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`abedelohohu` *bedroom*) |
 | `-l` / `-m` / `-n` / `-r` | [word ending](word-endings.md) | audible end of the content word |
 | Optional `-x` | [plural](plurality.md) after the suffix | word-final `-lx` / `-mx` / `-nx` / `-rx` (letter `x`) |
-| Stand-in **`-rl` / `-rm`** | [dependent clauses](dependents.md#dependent-clauses) | word-final coda `rl` / `rm` (`darl`) |
+| Stand-in **`-rl` / `-rm`** | [dependent clauses](dependents.md#dependent-clauses) | word-final coda `rl` / `rm` |
 
-A syllable ends with a consonant only at the **end of the word**. In a fused extra-noun [hook compound](hooks.md#hook-compounds), the cited **-l** / **-m** starts the hook's syllable, because the hook begins with a vowel (`awalalul` = *a-wa-la-lul*). Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zelulul`: prefix `z`, root `elulu`, ending `-l`). Spelling has one pronunciation path. Writing does not mark stress. Musical rhythm may still place emphasis.
+A syllable ends with a consonant only at the **end of the word**. In a fused extra-noun [hook compound](hooks.md#hook-compounds), the cited **-l** / **-m** starts the hook's syllable, because the hook begins with a vowel. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zelulul`: prefix `z`, root `elulu`, ending `-l`). Spelling has one pronunciation path. Writing does not mark stress. Musical rhythm may still place emphasis.
 
 **Related form:** word-initial `x` is the [continue](dependents.md#continue-x) prefix (discourse), not a compound seam.
 
 ### Number-word exception {#number-word-exception}
 
-When English says *how many* or *which place*, Agalan writes a [number word](numbers.md). After the role letter, the spoken marker begins with `r`, which makes a cluster ordinary content never uses (`gr…`, `zr…`, `vr…`, `hr…`, `thr…`, `jr…`, `xr…`). That cluster is how you hear “this is a number.” Content roots start with a vowel, so an `r` that starts a syllable right after a role letter is the number marker (`ra` / `ru` / `re` / `ro`; counting from the end uses written `#-`, spelled and spoken **rue** before the digits). Stacked vowels stay separate syllables (`juon` = *ju'on*).
+When English says *how many* or *which place*, Agalan writes a [number word](numbers.md). After the role letter, the spoken marker begins with `r`, which makes a cluster ordinary content never uses: a role letter directly followed by `r`. That cluster is how you hear “this is a number.” Content roots start with a vowel, so an `r` that starts a syllable right after a role letter is the number marker (`ra` / `ru` / `re` / `ro`; counting from the end uses written `#-`, spelled and spoken **rue** before the digits). Two vowels in a row stay two separate syllables.
 
 > `zagadalx grarel.`
 >
@@ -97,7 +97,7 @@ When English says *how many* or *which place*, Agalan writes a [number word](num
 >
 > "Three cats."
 
-Spoken `g+3` is `grarel` (`g` + `ra` + digit `re` + `-l`). Each written comma is spoken as a [group separator](numbers.md#group-separator), **`th`** plus the marker’s vowel (`h_15,30` → `hrowovathorezol`). Inside a content root, `r` still appears only after a vowel (`uruge`).
+Spoken `g+3` is `grarel` (`g` + `ra` + digit `re` + `-l`). Each written comma is spoken as a [group separator](numbers.md#group-separator), **`th`** plus the marker’s vowel. Inside a content root, `r` still appears only after a vowel (`uruge`).
 
 **Compare with:** ordinary endings on content words use [word ending](word-endings.md) senses. Number words reuse those same four letters with [number-specific endings](word-endings.md#number-word-exception).
 
@@ -157,7 +157,7 @@ These shape choices keep ordinary singing easier:
 | Constraint | Why it helps | How Agalan keeps it |
 |------------|--------------|---------------------|
 | Mostly mid-to-open vowels | Tight closed vowels shrink a comfortable high range | Three mid-to-open vowels (/e̞ o ɑ/) plus close /u/, which keeps the **u** ≈ undo vowel (negation, prohibition) clearly apart from **a** and **o** |
-| One vowel per letter | Sliding from one vowel to another mid-note forces the mouth to change | Stacked letters = separate syllables (`juon` = *ju'on*) |
+| One vowel per letter | Sliding from one vowel to another mid-note forces the mouth to change | Stacked vowels = separate syllables |
 | Few consonant clusters | Clusters are harder to say quickly | Ordinary shape is consonant-then-vowel at the start of a syllable; limited clusters below |
 | Voiced preferred | Voiceless stops cut the note; singers often voice them anyway | Voiced preferred; unvoiced allowed as style only |
 | No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the **word edge** or a lexical join (**-l** / **-m**) before a number marker `r` |
@@ -165,7 +165,7 @@ These shape choices keep ordinary singing easier:
 | Spelling = pronunciation | You do not memorize special readings | One path from letters to sound |
 | Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-r` (optional `-x`); stand-ins end in `-rl` / `-rm` |
 
-Legal clusters: left-hanging `gl-`; number-word role letter + `r`; lexical join **-l** / **-m** plus number marker `r` on a [kind morph](numeric-derivation.md) (`…lraba…` / `…mraba…`); word-final `-lx` / `-mx` / `-nx` / `-rx`; stand-in `-rl` / `-rm`. The lexical join before `r` is the only syllable-final consonant inside a word.
+Legal clusters: left-hanging `gl-`; number-word role letter + `r`; lexical join **-l** / **-m** plus number marker `r` on a [kind morph](numeric-derivation.md); word-final `-lx` / `-mx` / `-nx` / `-rx`; stand-in `-rl` / `-rm`. The lexical join before `r` is the only syllable-final consonant inside a word.
 
 Try a short Agalan line quickly at a high comfortable pitch:
 

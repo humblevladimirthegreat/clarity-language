@@ -62,13 +62,7 @@ The same holds with a `/ɡ/` word after the noun, when the noun is a new common 
 
 With a name or a resumed noun, the listener already knows the thing, so the `/ɡ/` word is a [property](#classification-property): `zazawan gomonam.` is *Azawan is challenging*, and `zodogor gelem.` is *The dog is big*.
 
-An extra-noun [hook](hooks.md#extra-noun) after the noun says **where** the thing is.
-
-> `zodogol om banabal.`
->
-> z-dog | [near | b-bank]
->
-> "There is a dog near a bank."
+Later, an extra-noun [hook](hooks.md#extra-noun) after the noun can say **where** the thing is.
 
 An object (`/d/`) needs a verb, so a noun plus a `/d/` word with no verb is not a sentence.
 
@@ -94,7 +88,7 @@ Write a special adjective `gonunul` after the first name, then an extra noun (`/
 >
 > "The guard is Azawan."
 
-**Compare with:** *Azawan is a dog* uses [kind / role](#classification) (`godogol`). Use **`SAME`** when two labels name one person. *A house like Azawan’s* is resemblance ([simile](relations.md#similative) `gurorom`), not one house under two names.
+**Compare with:** *Azawan is a dog* uses [kind / role](#classification) (`godogol`). Use **`SAME`** when two labels name one person. *A house like Azawan’s* is resemblance ([simile](relations.md#similative)), not one house under two names.
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -303,7 +297,6 @@ Beginner already used closed **`gonunul`** (*is the same as*). The other endings
 | `zululon gonunul bazawan` | *Ululon is (the same as) Azawan* |
 | `zululon gonunum bazawan` | *Ululon is basically Azawan* |
 | `zululon gonunul bazawan gul` | *Ululon is not (identical to) Azawan* |
-| `zululon theraram gonunul bazawan` | *Ululon is allegedly Azawan* |
 | `zeberel gonunul bazawan` | inside a noun phrase: *the person who is Azawan* |
 
 **Compare with:** ordinary *coin* as a noun is `zonunul`. Identity is **`gonunul`** / **`gonunum`** plus a following `/b/` label, kept next to each other.

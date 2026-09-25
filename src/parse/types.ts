@@ -157,6 +157,8 @@ export type RootGloss = {
  */
 export type LexWord = MorphWord & {
   overlay?: LexOverlay;
+  /** Need / hostless-ability row whose host this `x` value or ability word spells (`thonogothem`). */
+  hostOverlay?: LexOverlay;
   rootGloss?: RootGloss;
   reading: LexReading;
   /** Lexicon-only x-less compound lemma from lexicon-compounds.csv. */

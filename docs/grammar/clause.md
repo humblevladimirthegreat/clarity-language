@@ -72,11 +72,11 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 
 `/h/` tells how the action happened. `/th/` tells how **you** stand toward the whole claim: how sure you are, how you know it, why it holds, or whether it is only imagined. Like `/h/`, it may sit anywhere in the sentence. `th` is considered one letter ([phonology](phonology.md#consonants)).
 
-> `zodogol thodohom vawalal.`
+> `zodogol thuduhum vawalal.`
 >
-> z-dog | th-MAY | v-walk
+> z-dog | th-doubt | v-walk
 >
-> "A dog may be walking."
+> "I doubt a dog is walking."
 
 The adverb describes the walking. The stance word describes your claim about it.
 

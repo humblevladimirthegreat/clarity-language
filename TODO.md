@@ -15,8 +15,7 @@ reconsider dependent inner subject dropping rules. Under what cases should it be
 
 consider removing some emotion words from lexicon
 -expressiveness review
-I would like to do a learning order consistency check for grammar-docs - Does any grammar doc learning band refer to concepts not yet taught? Suggest an approach for doing this. You are running out of tokens for this session so don't inspect the grammar docs for your answer about the approach
-do a style pass in grammar-docs. Check for adherence to doc-style and otherwise ensure natural sounding explanations.
+-do a style pass in grammar-docs. Check for adherence to doc-style and otherwise ensure natural sounding explanations.
 
 final exam
 

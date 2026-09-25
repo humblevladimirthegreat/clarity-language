@@ -1,9 +1,9 @@
 # Restrictors (`/h/` / `/w/`)
 <a id="restrictors"></a>
 
-Use these words when you want to say **when** a claim counts: *only when raining*, *never*, *always*. They take the adverb letter **`h`** (or **`w`** immediately before the adjective or hook they limit) plus the same vowels and endings you already use on [joins](joins.md) (`hal`, `hual`, `ham`, …). Time or case words sit **before** the restrictor; together they limit the verb claim (or that adjective) instead of adding another manner.
-
 ## Beginner {#beginner}
+
+Use these words when you want to say **when** a claim counts: *only when raining*, *never*, *always*. They take the adverb letter **`h`** (or **`w`** immediately before the adjective they limit) plus the same vowels and endings you already use on [joins](joins.md). Time or case words sit **before** the restrictor; together they limit the verb claim (or that adjective) instead of adding another manner.
 
 ### Only when / never (`hal`)
 
@@ -87,19 +87,13 @@ English *sometimes* is the usual match next to *never* / *always*. It still only
 
 ### On the following adjective (`/w/`)
 
-The same restrictor vowels and endings can limit **only the host you are about to write**, not the whole verb claim. Spell them with letter **`w`** instead of **`h`**. The host is the next adjective, or a prefix-less [hook](hooks.md#hook-w). Occasion words that belong to that host sit immediately before the restrictor and also take **`w`**. `/h/` still limits the clause.
+The same restrictor vowels and endings can limit **only the host you are about to write**, not the whole verb claim. Spell them with letter **`w`** instead of **`h`**. The host is the next adjective. Occasion words that belong to that host sit immediately before the restrictor and also take **`w`**. `/h/` still limits the clause.
 
 > `zazawan wal guzumum.`
 >
 > z-Azawan | [w-never | g-happy]
 >
 > "Azawan is never happy."
-
-> `zodogol velebel wal al bohohul.`
->
-> z-dog | v-sleep | [[w-never | in] | b-house]
->
-> "The dog never sleeps in the house."
 
 > `zululon wual guzumum.`
 >
@@ -134,9 +128,9 @@ The same restrictor vowels and endings can limit **only the host you are about t
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `/h/` | limits the clause | *when the verb claim counts* | **h** starts *how* / *when* / *where* |
-| `/w/` | same map on the next adjective or hook | *never happy* / *never in the house* | **w** ≈ with (stuck to that host) |
+| `/w/` | same map on the next adjective | *never happy* | **w** ≈ with (stuck to that host) |
 
-**Compare with:** extra detail on an adjective is still ordinary `/w/` from [clause](clause.md#adjective-detail-w). A restrictor on `/w/` answers **when that adjective or hook counts**.
+**Compare with:** extra detail on an adjective is still ordinary `/w/` from [clause](clause.md#adjective-detail-w). A restrictor on `/w/` answers **when that adjective counts**.
 
 ### Listed occasions (open)
 

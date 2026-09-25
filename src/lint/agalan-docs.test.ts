@@ -228,6 +228,12 @@ describe("lintAgalanSpans", () => {
     assert.equal(lintAgalanSpans("<!-- lint: nope -->`zazawan`", tables)[0]?.kind, "bad-marker");
   });
 
+  it("traces a written <…> fence in <code> as a loan", () => {
+    const ids: string[] = [];
+    lintAgalanSpans("<code>zazawan d&lt;kimchi&gt; vejel.</code>", tables, emptySpanStats(), (id) => ids.push(id));
+    assert.ok(ids.includes("word.family.foreign"));
+  });
+
   it("counts every span in exactly one class", () => {
     const stats = emptySpanStats();
     lintAgalanSpans("`zazawan vazawal.` `zazawan` `fast` `A am B` <!-- lint: fragment -->`zul zazawan`", tables, stats);

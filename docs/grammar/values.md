@@ -4,9 +4,9 @@
 
 A **need** is a psychological payoff you can name (autonomy, competence, relatedness, pleasure, survival, or an unspecified need). At **Beginner**, a **stance** is how you stand toward that need on a **noun**: it **serves** the need or **detracts from** it. **Intermediate** adds **prescription** on the clause (deontic: the agent **ought to** do this act for this need) and **motive** (*doing for* the need).
 
-Write the need under `/ɡ/` when you talk about a **noun you keep** (how you feel about that belonging). Write it under `/th/` when you talk about the **clause**. When the noun is not yours, mark it as a [stimulus](#stimulus) and put the need on `/w/` immediately before **`gobobum`**. `/w/` before a need `/ɡ/` is extra detail on that adjective, not a second way to mark the noun.
-
 ## Beginner {#beginner}
+
+Write the need under `/ɡ/` when you talk about a **noun you keep** (how you feel about that belonging). Write it under `/th/` when you talk about the **clause**. When the noun is not yours, [personal possession](#personal-possession) shows how to point at it instead.
 
 ### Need inventory {#need-inventory}
 
@@ -29,13 +29,7 @@ Six published roots are the needs you can name, and no other root takes the need
 
 When you want to say that a named belonging **serves** this need (pays it off), write that thing as a noun, then a `/ɡ/` word: need root, mid-word **`th`**, **`a`**, then an ending. That adjective is about the noun. The ending says how that payoff is **appreciated**.
 
-> `zawaral gonogothal.`
->
-> z-wrapped-gift | g-relatedness-met-physical
->
-> "My gift serves relatedness (appreciated physically)."
-
-**Not the same job as:** [ability](intention.md#ability) (`vuzunuxal` *can sing*; `guzunuxal` *able to sing* as a property). Ability glues an activity to its vowel with **`x`**. Values glue a **need** with **`th`**, and **`tha`** means *serves this need*.
+**Not the same job as:** [ability](intention.md#ability) (*can sing*, taught later). Ability glues an activity to its vowel with **`x`**. Values glue a **need** with **`th`**, and **`tha`** means *serves this need*.
 
 ### How it is appreciated (endings on met)
 <a id="value-contact"></a>
@@ -47,6 +41,12 @@ On a *serves* word, **-l / -m / -r** say **how the payoff is appreciated**: thro
 | `…thal` | appreciated through body and the scene you can sense | *physical* | **-l** ≈ locked (on the scene you can touch) |
 | `…tham` | appreciated through thinking, memory, gratitude you take in | *mental* | **-m** ≈ open (in the head) |
 | `…thar` | appreciated through a big-picture step-back | *spiritual* | **-r** ≈ resume (to a larger frame) |
+
+> `zawaral gonogothal.`
+>
+> z-wrapped-gift | g-relatedness-met-physical
+>
+> "My gift serves relatedness (appreciated physically)."
 
 > `zohohul golozothal.`
 >
@@ -82,7 +82,7 @@ That ending is **changeability**: how lasting that detriment is. If you do not k
 ### Word shape {#word-shape}
 <a id="value-stake"></a>
 
-A values word is a need root with mid-word **`th`**, a stance vowel, and an ending. `/ɡ/` talks about a **noun you keep**; `/th/` talks about the **clause**. An unowned noun uses [stimulus](#stimulus) **`gobobum`** and the same need word on `/w/` immediately before it.
+A values word is a need root with mid-word **`th`**, a stance vowel, and an ending. `/ɡ/` talks about a **noun you keep**; `/th/` talks about the **clause**. An unowned noun uses a [stimulus](#stimulus) word, with the same need word on `/w/` immediately before it.
 
 **-n** is ordinary [proper](word-endings.md#proper-name--n). **-l / -m / -r** follow that stance’s table.
 

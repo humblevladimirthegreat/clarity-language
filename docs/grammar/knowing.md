@@ -18,14 +18,6 @@ The leaving or the blow is still the event named in the *could be*. Without the 
 
 **Compare with:** `zazawan vuduhul.` is *Azawan thinks* (an action of thinking). **`thodohom`** is *the scene may be so*. A bare `zululon vebarul duhubun.` reports the leaving.
 
-The same `/th/` word can sit on a yes/no ask. Use **-l** when you are **finding out**:
-
-> `jol zazawan thodohol vubunul dululon.`
->
-> j-question | z-Azawan | th-MAY-find-out | v-punch | d-Ululon
->
-> "Might Azawan be punching Ululon? — let's find out."
-
 ### Hold endings (MAY)
 <a id="may-hold"></a>
 
@@ -44,6 +36,14 @@ When you are not sure, use **`thodohom`**. That is not wiser than finding out (*
 > z-Ululon | th-MAY-find-out | v-punch | d-Azawan
 >
 > "Ululon may be punching Azawan — I'll find out."
+
+**`thodohol`** can also sit on a yes/no ask when you are **finding out**:
+
+> `jol zazawan thodohol vubunul dululon.`
+>
+> j-question | z-Azawan | th-MAY-find-out | v-punch | d-Ululon
+>
+> "Might Azawan be punching Ululon? — let's find out."
 
 > `zuhubun thodohor vogorol.`
 >
@@ -264,7 +264,7 @@ Pick one evidential **root** for how you know.
 
 **Compare with:** seeing as an action uses ordinary **`vejel`**. **`thadezem`** is *how you know* (the walk is in view now), not the verb *see*. Fear or hope uses [emotion compose](values.md#emotion-compose). **`theherem`** is a way of *knowing*, not that stack. **`theraram`** is someone said so about the claim; hearing a door as an action is ordinary `/v/`.
 
-**Related form:** to deny only the channel (*it happened, but I did not see it*), close the evidential with a [stance join](join-across-roles.md#stance-joins): `thuvuvum thul`. Two channels you cannot choose between take `thol`.
+**Related form:** to deny only the channel (*it happened, but I did not see it*), close the evidential with a [stance join](join-across-roles.md#stance-joins) (taught later). Two channels you cannot choose between use the same kind of join.
 
 ### Live vs memory {#live-vs-memory}
 <a id="memory-record"></a>
@@ -309,7 +309,7 @@ English *has walked* and *used to walk* often smuggle **when** the event sits. A
 
 **Compare with:** [*after*](dependents.md#dependent-clauses) (`helabam badorol`) orders two events. **`thonenom`** does not say the leaving was earlier; it says the **outcome still counts**. [LIVE](#live-vs-memory) is how you know, not leftover balance. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
 
-**FORMER** (`emebe`) marks **former climate**: this verb-claim is usual weather that you are **not** giving as today’s report. [Always](restrictors.md) **`hual`** is still the current climate (exceptions listed). [COMMON](#universality) **`thugudol`** is how exceptionless that current weather is. Ordinary `zemebem` is still *emptiness*.
+**FORMER** (`emebe`) marks **former climate**: this verb-claim is usual weather that you are **not** giving as today’s report. [Always](restrictors.md) **`hual`** is still the current climate (exceptions listed). [COMMON](#universality) (Advanced) is how exceptionless that current weather is. Ordinary `zemebem` is still *emptiness*.
 
 > `zazawan hual vezehel themebem.`
 >
@@ -352,7 +352,7 @@ English sometimes frames the whole clause as play: *as if*, *for the sake of arg
 
 **For *could be*, use:** [MAY](#may). *As if* play is this section; imagining an amount is the related form below. *Walks like a duck* keeps the walk on the real tally ([simile](relations.md#similative) `hurorom`); only the manner matches the model. *Tells on behalf of Ululon* stays on the real tally ([proxy](relations.md#proxy) `hudagam`); Azawan is still the teller.
 
-**Related form:** imaginary *amount* uses free number as verb / interjection / discourse in [numbers.md](numbers.md#imaginary). A quick hypothetical *as if* on the claim is the stance number **`th-e-`** ([number as stance](numbers.md#number-as-stance-by-marker)). A percent likelihood on the claim is **`th+N`**.
+**Related form:** imaginary *amount* uses free number as verb / interjection / discourse in [numbers.md](numbers.md#imaginary). A quick hypothetical *as if* on the claim is an imaginary [stance number](numbers.md#number-as-stance-by-marker). A percent likelihood on the claim is **`th+N`**.
 
 ### Hold endings (NOTIONAL)
 <a id="notional-hold"></a>

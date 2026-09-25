@@ -403,6 +403,13 @@ export function createClassifyTablesFromRows(
   return finishTables(published, overlays, compoundsFromRows(compoundRows));
 }
 
+/** Need and hostless-ability rows register `x` hosts; the value / ability word on that host uses the row. */
+function hostOverlay(word: MorphWord, tables: ClassifyTables): { hostOverlay?: LexOverlay } {
+  const host = word.family.kind === "x" ? word.family.leftRoots[0] : undefined;
+  const row = host && word.pos ? tables.overlays.get(overlayKey(word.pos, `${host}m`)) : undefined;
+  return row && (row.kind === "need" || row.kind === "ability") ? { hostOverlay: overlayFromRow(row) } : {};
+}
+
 export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
   const senseForm = overlaySenseForm(word);
   const pos = word.pos;
@@ -426,14 +433,14 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
   }
 
   if (family.kind === "x" && family.xFamily === "value") {
-    return { ...word, reading: "value" };
+    return { ...word, ...hostOverlay(word, tables), reading: "value" };
   }
 
   if (family.kind === "x" && family.xFamily === "ability") {
     if (word.ending === "n" && (!word.pos || word.pos === "j")) {
       return { ...word, reading: "greeting" };
     }
-    return { ...word, reading: "ability" };
+    return { ...word, ...hostOverlay(word, tables), reading: "ability" };
   }
 
   if (isRestrictor(word)) {

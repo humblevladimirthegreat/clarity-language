@@ -193,7 +193,6 @@ Write the mark **before** what it colors, so you see the tone before you say the
 | Written | Colors |
 |---------|--------|
 | Attached to a word: `!zazawan` | that word |
-| Attached to an [island](spans.md#scope-islands): `?^ … ^` | the island |
 | Attached to a [span](spans.md): `!d[ … ]` | the span |
 | Standing alone, then a space: `! zazawan …` | the rest of the sentence, up to the period |
 
@@ -241,7 +240,7 @@ The other marks work the same way:
 >
 > "Dear Ululon saw a dog."
 
-A mark on a span or an island colors all of it:
+A mark on a span colors all of it:
 
 > `zazawan ?d[azawan] vezehel.`
 >
@@ -249,18 +248,12 @@ A mark on a span or an island colors all of it:
 >
 > "Azawan said “Azawan” (?)." (unsure about just the quoted word).
 
-> `zazawan !^ huzurem zodogol garedel ^ vejel.`
->
-> z-Azawan | !SCOPE[h-possibility | [z-dog | g-red]] | v-see
->
-> "Azawan saw, as a possibility, the red dog!" (the feeling is about that chunk).
-
 **Compare with:** **`jol`** asks a question; `?` only sounds unsure. A tone mark shows the feeling; [emotion compose](values.md#emotion-compose) states it as a claim, and the two can share a sentence.
 
-- A mark may go on any word, including act words and linkers (`!xezazam`, *therefore!*).
+- A mark may go on any word, including act words and [sentence linkers](dependents.md#sentence-linkers). Attached to a [scope island](spans.md#scope-islands), it colors the whole island.
 - Only `!`, `!!`, `?`, `?!`, `%`, `&`, and `;` are marks. Other stacks (`!?`, `??`, `%!`) are not, and neither are marks in a row with a space between (`! !`).
 - `&` stresses by voice alone. To highlight with grammar, move the word to the front ([word order](clause.md)).
-- A mark on a word inside a colored island or sentence overrides it for that word.
+- A mark on a word inside a colored span or sentence overrides it for that word.
 - Before a span fence, the mark is **your** tone about the quote. Inside the fence, it is part of what is quoted (the original speaker's tone).
 - Speech adds no syllables: you voice the mark over its words.
 

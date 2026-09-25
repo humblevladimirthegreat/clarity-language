@@ -1,11 +1,11 @@
 # Hooks (*including* / *in* / *instead* / *for*)
 <a id="hooks"></a>
 
-Use these short words to **hook a right-hand piece** onto what is already in play: a same-role phrase, the prior sentence, or an extra noun. They have **no role letter** (no `z` / `v` / `g` / …): just a vowel (or stacked vowels) plus an ending (`am`, `el`, `ol`, `ul`, `aol`, …).
+## Beginner {#beginner}
+
+Use these short words to **hook a right-hand piece** onto what is already in play: a same-role phrase, the prior sentence, or an extra noun. They have **no role letter** (no `z` / `v` / `g` / …): just a vowel (or stacked vowels) plus an ending.
 
 Three placements share the same spellings. Tell them apart from what sits to the **right**, and whether a `/b/` word already sat to the **left**.
-
-## Beginner {#beginner}
 
 ### Including (`am` / `al`)
 <a id="including"></a>
@@ -52,7 +52,7 @@ You want English *instead*: B takes A's slot. Same `A HOOK B` shape; vowel **o**
 >
 > "Coffee instead of tea."
 
-**Compare with:** *Azawan tells on behalf of Ululon* keeps Azawan as the teller ([proxy](relations.md#proxy) `hudagam`); **`ol`** puts someone else in that slot.
+**Compare with:** *Azawan tells on behalf of Ululon* keeps Azawan as the teller (a [proxy](relations.md#proxy) relation); **`ol`** puts someone else in that slot.
 
 ### Except (`ul`)
 <a id="except"></a>
@@ -116,7 +116,7 @@ Sometimes the thing you want to tweak is not a phrase inside this sentence, but 
 >
 > "In other words, Uhubun is a dog."
 
-**Compare with:** *however* / *therefore* use [continue](dependents.md#continue-x) linkers (`x…`). A fronted hook only changes how this sentence attaches to what you already said.
+**Compare with:** *however* / *therefore* use [continue](dependents.md#continue-x) linkers. A fronted hook only changes how this sentence attaches to what you already said.
 
 ### Extra noun (`/b/` after the hook) {#extra-noun}
 
@@ -139,12 +139,6 @@ Simplex vowels (one vowel plus an ending):
 
 To ask *where?*, put the fill-ask blank **`bar`** after the hook (`ol bar` *where?*, `ul bar` *where from?*) — see [Where?](questions.md#where).
 
-> `zodogol velebel welem al bohohul.`
->
-> z-dog | v-sleep | [[w-very | in] | b-house]
->
-> "A dog sleeps deep in a house."
-
 > `zululon vajul ol baladel.`
 >
 > z-Ululon | v-sit | [at | b-plate]
@@ -165,7 +159,7 @@ To ask *where?*, put the fill-ask blank **`bar`** after the hook (`ol bar` *wher
 
 **-l** is the exact extra. Frame **-m** waits for Intermediate, with the rest of the extra-noun grid.
 
-**Compare with:** *Additionally, Azawan walks* is a fronted hook whose next word is **not** `/b/` (`al zazawan vawalal`). *Like a duck* is still a hosted [simile](relations.md#similative) (`hurorom`). *Tells on behalf of Ululon* is [proxy](relations.md#proxy) (`hudagam`). Naming the **place of an event** as its own noun (*a sleep-place*, *that scream-place*) is a [role compound](roles.md#role-compounds) with vowel **`e`**, not this hook on the same clause.
+**Compare with:** *Additionally, Azawan walks* is a fronted hook whose next word is **not** `/b/` (`al zazawan vawalal`). *Like a duck* is still a hosted [simile](relations.md#similative). *Tells on behalf of Ululon* is [proxy](relations.md#proxy). Naming the **place of an event** as its own noun (*a sleep-place*, *that scream-place*) is a [role compound](roles.md#role-compounds) with vowel **`e`**, not this hook on the same clause.
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -432,7 +426,7 @@ Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). S
 
 Several extra-noun hooks on one clause are several extras (*from* one landmark *toward* another). Extra-noun **-n** titles that extra as a proper-name phrase the same way; the landmark keeps its own ending.
 
-**Compare with:** company *with Ululon* is a [join-relation](join-across-roles.md#join-relations) (`han`). *Without* stays **`huan`**. *Like* stays [simile](relations.md#similative). *Between* stays a hosted pair plus a `/b/` join ([relations](relations.md#locative-relations)). *So that Ululon sits* is still **`holalam barl`**.
+**Compare with:** company *with Ululon* is a [join-relation](join-across-roles.md#join-relations). *Without* is a join-relation too. *Like* stays [simile](relations.md#similative). *Between* stays a hosted pair plus a `/b/` join ([relations](relations.md#locative-relations)). *So that Ululon sits* is still **`holalam barl`**.
 
 ### Parallel chains {#parallel-chains}
 

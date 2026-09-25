@@ -12,7 +12,7 @@ The join’s vowel is the [vowel series](speech-moves.md) you just mapped: the f
 
 When English would say *and*, write every item, then the join. Use vowel **a** on that join: you are adding the items as a group. (cue: **a** ≈ add.)
 
-The join’s first letter matches the items: `zam` after two `z-` nouns, `vam` after two `v-` verbs.
+The join’s first letter matches the items: `zam` after two `/z/` nouns, `vam` after two `/v/` verbs.
 
 Ending **-l** is ordinary English with no extra words: these are the only items. Ending **-m** means other members may exist: add *(and possibly more)*. When unsure, prefer **-m**.
 
@@ -400,6 +400,48 @@ z-everything-but
 
 ## Intermediate {#intermediate}
 
+### Rank joins {#rank-joins}
+<a id="priority-ranking-e"></a>
+
+When English would say two people are *as ADJ as* each other, or that nobody is the biggest, write a **rank** join and put the adjective immediately after it so it grades the whole list.
+
+**`ae`** is a tie: several names, then **`zael`** (or **`zaem`**), then the adjective. The order of the names does not matter in a tie. Standalone **`zoem`** plus an adjective is *no biggest comes to mind*.
+
+> `zazawan zululon zael gomonam.`
+>
+> [z-Azawan | z-Ululon | z-equal-rank | g-challenge]
+>
+> "Azawan is as challenging as Ululon."
+
+**Compare with:** *more / most* and *least* use **`e`** / **`oe`** / **`ue`** plus the same shared adjective — [comparatives](comparatives.md).
+
+### Invert (**`ua`** / **`uo`** / **`ue`**)
+<a id="invert-u-stacks"></a>
+
+Beginner already used *everything but* (**`ua`**). Leading **u** on **o** and **e** completes that invert map.
+
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **ua** | invert add | *everything but* the listed | **u** ≈ undo + **a** ≈ add |
+| **uo** | invert menu | *anything but* the listed (free choice outside) | **u** ≈ undo + **o** ≈ one |
+| **ue** | invert rank | *A after B after C* (last first) | **u** ≈ undo + **e** ≈ order |
+
+Kind / domain for **ua** / **uo** is context or SHARED `/ɡ/` — [universals, domains, and generics](#universals-domains-generics). Optional is only **`…om`**. **-r** still attaches only to single-vowel **a** / **o** / **e** / **u**.
+
+> `zadedal zogovel zual.`
+>
+> [z-tea | z-coffee | z-everything-but]
+>
+> "everything but tea and coffee."
+
+> `zazawan zululon zuhubun zuel.`
+>
+> [z-Azawan | z-Ululon | z-Uhubun | z-rank/less]
+>
+> "Uhubun, then Ululon, then Azawan." (last first)
+
+**Compare with:** plain **`u`** is *not* / *none of* the listed, not an invert stack. *Every cat* uses SHARED kind after **`zual`**: `zual gagadal`.
+
 ### Full single-item and standalone inventories
 
 Beginner already used single-item *just X* and standalone *nothing* / *everything*. The tables below are the rest of those phrase-level readings. The series also works under `/v/` and `/x/`: [Join across roles](join-across-roles.md#vp-clause-forms).
@@ -485,43 +527,7 @@ Standalone **e** answers *who first* with no ranking (no favorite). Standalone *
 | **…or** (`zor` / …) | unspecified empty menu | *anything* / *anyone* |
 | **…ur** (`zur` / …) | unspecified empty leftover | *something else* / *someone else* |
 
-Yes/no, offer, emptiness, and fill-ask on a lone join: [questions](questions.md#yes-no-single-item-standalone). Join series across roles such as **`vun`** are covered with the other **-n** forms in [join-series forms](join-across-roles.md).
-
-### Rank joins {#rank-joins}
-<a id="priority-ranking-e"></a>
-
-When English would say two people are *as ADJ as* each other, or that nobody is the biggest, write a **rank** join and put the adjective immediately after it so it grades the whole list.
-
-**`ae`** is a tie: several names, then **`zael`** (or **`zaem`**), then the adjective. The order of the names does not matter in a tie. Standalone **`zoem`** plus an adjective is *no biggest comes to mind*.
-
-> `zazawan zululon zael gomonam.`
->
-> [z-Azawan | z-Ululon | z-equal-rank | g-challenge]
->
-> "Azawan is as challenging as Ululon."
-
-**Compare with:** *more / most* and *least* use **`e`** / **`oe`** / **`ue`** plus the same shared adjective — [comparatives](comparatives.md).
-
-### Invert (**`ua`** / **`uo`** / **`ue`**)
-<a id="invert-u-stacks"></a>
-
-Beginner already used *everything but* (**`ua`**). Leading **u** on **o** and **e** completes that invert map.
-
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **ua** | invert add | *everything but* the listed | **u** ≈ undo + **a** ≈ add |
-| **uo** | invert menu | *anything but* the listed (free choice outside) | **u** ≈ undo + **o** ≈ one |
-| **ue** | invert rank | *A after B after C* (last first) | **u** ≈ undo + **e** ≈ order |
-
-Kind / domain for **ua** / **uo** is context or SHARED `/ɡ/` — [universals, domains, and generics](#universals-domains-generics). Optional is only **`…om`**. **-r** still attaches only to single-vowel **a** / **o** / **e** / **u**.
-
-> `zadedal zogovel zual.`
->
-> [z-tea | z-coffee | z-everything-but]
->
-> "everything but tea and coffee."
-
-**Compare with:** plain **`u`** is *not* / *none of* the listed, not an invert stack. *Every cat* uses SHARED kind after **`zual`**: `zual gagadal`.
+Yes/no, offer, emptiness, and fill-ask on a lone join: [questions](questions.md#yes-no-single-item-standalone). The same series on `/v/` and `/x/`, including its **-n** forms, is in [join-series forms](join-across-roles.md).
 
 ### Exclusivity, negation, and distribution
 

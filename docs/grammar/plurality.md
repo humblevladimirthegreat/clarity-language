@@ -111,9 +111,9 @@ The same roots take the role letter of the slot they fill. As a direct object th
 | **`ahan`** | already the interlocutor set (no **-x**); `zahan` as subject, `dahan` as object | *we* (you and I) |
 | name **-nx** / resume **-rx** | that person plus associates | *X and associates* |
 
-**Compare with:** inclusive *we* uses **`aha`** (`zahan`), not **`ugobo…x`**.
+**Compare with:** inclusive *we* uses **`aha`** (`zahan`), not **`ugobonx`**.
 
-**Not the same job as:** *you and yours* uses a **name**…**-x** (`zululonx`). **`edone…x`** is the [address set](#person-role-x) only.
+**Not the same job as:** *you and yours* uses a **name**…**-x** (`zululonx`). **`edonenx`** is the [address set](#person-role-x) only.
 
 ### Translation practice {#beginner-translation-practice}
 

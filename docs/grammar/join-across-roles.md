@@ -137,7 +137,7 @@ Under a question, a standalone **-r** stance join is a [fill-ask](questions.md#f
 | `thoer` | *What would settle it?* |
 | `thuer` | *What's your objection?* |
 
-**Compare with:** `thul` *no judgment* withholds any stance; **`th+0e`** *no chance* is a stance that the claim is false. `thar` *why?* asks for the speaker's grounds, not what caused the event.
+**Compare with:** `thul` *no judgment* withholds any stance; a *no chance* stance number is a stance that the claim is false. `thar` *why?* asks for the speaker's grounds, not what caused the event.
 
 ### Join-act verbs {#join-act-verbs}
 

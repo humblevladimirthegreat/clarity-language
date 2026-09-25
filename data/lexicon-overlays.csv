@@ -1,16 +1,16 @@
 sense_form,pos,emoji,kind,gloss,definition,mnemonic,anchor
-alodom,th,🗳️,need,autonomy,autonomy need (choice / agency),ballot records choice; choice is agency and self-direction,values.md#need-inventory
-alodom,w,🗳️,need,autonomy,autonomy need (choice / agency),ballot records choice; choice is agency and self-direction,values.md#need-inventory
-olozom,th,🧰,need,competence,competence need (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill,values.md#need-inventory
-olozom,w,🧰,need,competence,competence need (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill,values.md#need-inventory
-onogom,th,🪢,need,relatedness,relatedness need (bond / belonging),knot ties two ends; bond is connection and care,values.md#need-inventory
-onogom,w,🪢,need,relatedness,relatedness need (bond / belonging),knot ties two ends; bond is connection and care,values.md#need-inventory
-awerom,th,🍓,need,pleasure,pleasure need (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,values.md#need-inventory
-awerom,w,🍓,need,pleasure,pleasure need (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,values.md#need-inventory
-uhuhem,th,🛡️,need,survival,survival need (defense / safety),shield blocks blows; defense is safety and health,values.md#need-inventory
-uhuhem,w,🛡️,need,survival,survival need (defense / safety),shield blocks blows; defense is safety and health,values.md#need-inventory
-egem,th,🥚,need,need,unspecified need (potential),egg holds unrealized life; potential names a need without picking which,values.md#need-inventory
-egem,w,🥚,need,need,unspecified need (potential),egg holds unrealized life; potential names a need without picking which,values.md#need-inventory
+alodom,th,🗳️,need,autonomy,autonomy need (choice / agency),ballot records choice; choice is agency and self-direction,values.md#prescription-the-ought-this-act-for-this-need
+alodom,w,🗳️,need,autonomy,autonomy need (choice / agency),ballot records choice; choice is agency and self-direction,values.md#personal-possession
+olozom,th,🧰,need,competence,competence need (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill,values.md#prescription-the-ought-this-act-for-this-need
+olozom,w,🧰,need,competence,competence need (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill,values.md#personal-possession
+onogom,th,🪢,need,relatedness,relatedness need (bond / belonging),knot ties two ends; bond is connection and care,values.md#prescription-the-ought-this-act-for-this-need
+onogom,w,🪢,need,relatedness,relatedness need (bond / belonging),knot ties two ends; bond is connection and care,values.md#personal-possession
+awerom,th,🍓,need,pleasure,pleasure need (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,values.md#prescription-the-ought-this-act-for-this-need
+awerom,w,🍓,need,pleasure,pleasure need (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,values.md#personal-possession
+uhuhem,th,🛡️,need,survival,survival need (defense / safety),shield blocks blows; defense is safety and health,values.md#prescription-the-ought-this-act-for-this-need
+uhuhem,w,🛡️,need,survival,survival need (defense / safety),shield blocks blows; defense is safety and health,values.md#personal-possession
+egem,th,🥚,need,need,unspecified need (potential),egg holds unrealized life; potential names a need without picking which,values.md#prescription-the-ought-this-act-for-this-need
+egem,w,🥚,need,need,unspecified need (potential),egg holds unrealized life; potential names a need without picking which,values.md#personal-possession
 uvuvum,th,🎣,evidential,WITNESSED,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidentiality
 uvuvum,w,🎣,evidential,WITNESSED,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#mood-on-one-adjective
 adezem,th,👁️‍🗨️,evidential,LIVE,live evidential (present observation / concurrent access),eye-in-speech attests while the scene is in view; live is seeing-and-saying now (not memory),knowing.md#evidentiality
@@ -108,13 +108,13 @@ oloben,z,🌐,benchmark,Everyone,judgment benchmark Everyone (universal referenc
 oloben,d,🌐,benchmark,Everyone,judgment benchmark Everyone (universal reference class),globe links every place; the connected whole is the universal class,comparatives.md#judgment-benchmarks-worse-than
 oloben,b,🌐,benchmark,Everyone,judgment benchmark Everyone (universal reference class),globe links every place; the connected whole is the universal class,comparatives.md#judgment-benchmarks-worse-than
 onunul,g,🪙,identity,SAME,SAME identity (identical-to / same-as),coin has two faces one substance; same is one referent two labels,predication.md#identity-same
-adorom,th,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,causation.md#if
+adorom,th,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,dependents.md#dependent-clauses
 adorom,g,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,causation.md#if
-ezazem,th,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,causation.md#only-because
+ezazem,th,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,dependents.md#dependent-clauses
 ezazem,g,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,causation.md#only-because
-urugum,th,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),brick stacks as foundation; foundation is because-reason under claim,causation.md#only-because
+urugum,th,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),brick stacks as foundation; foundation is because-reason under claim,dependents.md#dependent-clauses
 urugum,g,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),brick stacks as foundation; foundation is because-reason under claim,causation.md#only-because
-eberom,th,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,causation.md#only-if
+eberom,th,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,dependents.md#dependent-clauses
 eberom,g,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,causation.md#only-if
 ezebam,h,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#dependent-clauses
 ezebam,g,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#dependent-clauses
@@ -170,7 +170,7 @@ uen,g,,join_relation,deprioritizing,join-relation deprioritizing (adjective),cou
 uen,h,,join_relation,deprioritizing,join-relation deprioritizing (adverb),counterrank ue+n on /h/; deprioritizing puts argument last,join-across-roles.md#join-relations
 azanum,h,🥪,locative,between,locative between (two landmarks),sandwich sits in the layer between sides; between takes a join of two landmarks,relations.md#locative-relations
 azanum,g,🥪,locative,between,locative between (two landmarks),sandwich sits in the layer between sides; between takes a join of two landmarks,relations.md#locative-relations
-urorom,h,🪞,similative,like,similative like (manner resemblance),mirror shows a reflection; like is resembling the model in /b/,relations.md#beginner
+urorom,h,🪞,similative,like,similative like (manner resemblance),mirror shows a reflection; like is resembling the model in /b/,clause.md#unhosted-b
 urorom,g,🪞,similative,like,similative like (type resemblance),mirror shows a reflection; like is a counterpart of the model in /b/,relations.md#beginner
 uhanem,h,💱,exchange,in-exchange-for,exchange in-exchange-for (consideration / countervalue),currency arrows swap one for another; in-exchange-for is the other side of the swap in /b/,relations.md#exchange
 uhanem,g,💱,exchange,in-exchange-for,exchange in-exchange-for (consideration / countervalue),currency arrows swap one for another; in-exchange-for is the other side of the swap in /b/,relations.md#exchange

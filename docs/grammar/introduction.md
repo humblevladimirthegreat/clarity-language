@@ -29,7 +29,7 @@ Pronouns copy a short start of an earlier word’s root (through the second vowe
 
 ### Semantic {#semantic}
 
-Each dictionary sense is one entry. Related senses across fields use an explicit compound: the field first, then the kind after mid-word **`x`** (`gagaxolovel` *love in the crush sense*).
+Each dictionary sense is one entry. Related senses across fields use an explicit compound: the field first, then the kind (for example, *love* in the *crush* sense is its own compound, not a second meaning of *love*). The [compound pages](x-compounds.md) teach the spelling.
 
 ### Tools those goals make possible
 <a id="tools"></a>
@@ -55,10 +55,10 @@ Inventory tables on grammar pages use these kinds of cell:
 
 | Column | What it is |
 |--------|------------|
-| **Agalan** | The word or letter you write. If **Same root as** is blank, this is the citation (`ugumul`). The in-clause spelling (`vejel`) appears only when **Same root as** names the everyday kind. |
+| **Agalan** | The word or letter you write. If **Same root as** is blank, this is the citation form of the word. The in-clause spelling (with its role letter) appears only when **Same root as** names the everyday kind. |
 | **Use** | What that form **does** (subject, question, *because* as a clause glue). This is the rule. |
 | **English** | What you would **say**: the sense to produce or understand. Checkpoint people use the name (*Azawan*), not the virtue that formed the stem. |
-| **Same root as** | The everyday kind of that same root, written as a citation (**-l**), when this row’s English is not that citation’s lemma: `urugul` *brick* when the row’s English is *because*; `ejel` *eye* when the row’s English is *see* as `vejel`. Leave it blank when English already is the citation (`ugumul` *climb*). Not every table has this column. |
+| **Same root as** | The everyday kind of that same root, written as a citation (**-l**), when this row’s English is not that citation’s lemma: the *brick* root when the row’s English is *because*; the *eye* root when the row’s English is *see*. Leave it blank when English already is the citation (a row whose English is *climb* for the *climb* root). Not every table has this column. |
 | **Cue** | A hook that helps you **remember** the letter, vowel, or picture that maps to that row. |
 
 **Cue** is an optional memory helper. `≈` in a cue means “sounds like.” When **Same root as** is there, **Cue** does not repeat the everyday English; it only says why that picture maps. 

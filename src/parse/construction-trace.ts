@@ -22,6 +22,7 @@ export function wordConstructions(word: LexWord): string[] {
   if (word.ending) ids.push(`word.ending.${word.ending}`);
   if (word.plural && word.pos) ids.push(`word.plural.${word.pos}`);
   if (word.gl) ids.push("word.gl");
+  if (word.hostOverlay) ids.push(overlayConstructionId(word.hostOverlay));
   // Classify re-reads a fused hook compound as content; the fusion is still its own construction.
   if (word.hookCompound) ids.push("word.family.hookCompound");
   ids.push(...featureConstructions(word));
@@ -86,6 +87,8 @@ function featureConstructions(word: LexWord): string[] {
   if (family.kind === "spanClose") return [`span.close.${family.flavor}`];
   if (family.kind === "writingSpan") {
     const ids = family.marks.map((mark) => `span.mark.${mark}`);
+    // A written `<…>` is the opaque / loan fence (spans.md#loans), the same lesson as a nested `<…>` payload.
+    if (family.bracket === "<") ids.push("word.family.foreign");
     if (family.clauseScoped) ids.push("span.edge.e");
     return ids;
   }

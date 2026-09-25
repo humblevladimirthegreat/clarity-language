@@ -192,7 +192,7 @@ A *…, yes?* confirm tag is its own next turn: finish the statement with a peri
 
 ### Embedded *whether* {#embedded-whether}
 
-When the **outer** sentence is a claim (*Azawan sees…*, *Azawan tells Ululon…*) and English would say *whether*, write [**`dorl`**](dependents.md#dependent-clauses) (soft **`dorm`**) in the object slot. The outer act stays a statement; do not write **`jol`** on the whole stretch.
+When the **outer** sentence is a claim (*Azawan sees…*, *Azawan tells Ululon…*) and English would say *whether*, write [**`dorl`**](dependents.md#dependent-clauses) in the object slot. The outer act stays a statement; do not write **`jol`** on the whole stretch.
 
 > `zazawan vejel dorl zululon vawalal.`
 >
@@ -200,13 +200,7 @@ When the **outer** sentence is a claim (*Azawan sees…*, *Azawan tells Ululon�
 >
 > "Azawan sees whether Ululon walks."
 
-> `zazawan vejel dorm zululon velebel.`
->
-> z-Azawan | v-see | d-whether-clause.open | z-Ululon | v-sleep
->
-> "Azawan sees whether Ululon sleeps (among other things)."
-
-**Compare with:** a matrix question (*Does Azawan walk?*) writes **`jol`** on the **outer** turn. *If Ululon walks* as a condition is **`thadorom barl`**, not inner **`jol`**.
+**Compare with:** a matrix question (*Does Azawan walk?*) writes **`jol`** on the **outer** turn. *If Ululon walks* as a condition is not inner **`jol`** either; it has its own [condition word](causation.md#if).
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -424,7 +418,7 @@ Bare **-r** in the queried slot is unbound *who* / *what*. Bare **`var`** / **`x
 
 ### When? {#when}
 
-To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in the question. Bare **`har`** is the *when* blank. The same family also asks *anytime?* and *when else?*.
+To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in the question. Bare **`har`** is the *when* blank.
 
 > `jol zuhubun vawalal har.`
 >
@@ -435,10 +429,8 @@ To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in
 | Agalan | English (statement, bare) | English (under question, bare) |
 |--------|---------------------------|--------------------------------|
 | **`har`** / **`war`** | *sometimes* | *When?* / *In what case?* |
-| **`hor`** / **`wor`** | *anytime* | *Anytime?* |
-| **`hur`** / **`wur`** | *some other time* | *When else?* |
 
-**Related form:** statement occasion readings live with [restrictors](restrictors.md#more-occasions).
+**Related form:** *anytime?* / *when else?* and the statement occasion readings live with [restrictors](restrictors.md#more-occasions).
 
 ### Where? {#where}
 
@@ -562,12 +554,12 @@ j-question | [z-Uhubun | z-and.open]
 j-refuse-option
 :::
 
-**7.** *Anytime?*
+**7.** *When does Ululon sleep?*
 
 ::: details Show answer
-`jol hor.`
+`jol zululon velebel har.`
 
-j-question | h-anytime
+j-question | z-Ululon | v-sleep | h-when
 :::
 
 **8.** *Hell no!* (refuse the whole frame)

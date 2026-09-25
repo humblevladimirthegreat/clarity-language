@@ -29,11 +29,11 @@ After you have already named a person or thing, the next sentence can point back
 
 When that short stem would match the **wrong** recent word, use a **full-root resume**: the **entire root** + **-r**. Short **`ele`** matches both *sleep* (`elebe`) and *big* (`ele`). After both have been used, short `veler` would pick the more recent *big*; full `veleber` picks *sleep*.
 
-> `zululon velebel. zabogol gelem. zazawan veleber.`
+> `zululon velebel. zazawan gelem. zuhubun veleber.`
 >
-> z-Ululon | v-sleep . z-book | g-big . z-Azawan | v-←sleep.full
+> z-Ululon | v-sleep . z-Azawan | g-big . z-Uhubun | v-←sleep.full
 >
-> "Ululon sleeps. A book is big. Azawan does so."
+> "Ululon sleeps. Azawan is big. Uhubun does so."
 
 A **short** resume always needs an earlier word to match. A **full-root** resume can open the talk: with no earlier match, it means the one you both already know (*the dog*, the household's dog).
 
@@ -115,7 +115,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *pour* | `vorurul` | `orurul` *pour* | 🫗: liquid onto a pan |
 | *cookie* | `ogogel` | | |
 | *knife* | `uguvel` | | |
-| *red* | `aredel` | | |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *scream* | `vazagal` | | |
 | *punch* | `vubunul` | | |
@@ -142,12 +141,12 @@ z-Azawan | v-pour . z-←Azawan | v-cook
 z-cook | v-pour . z-←cook | v-cook
 :::
 
-**3.** *Ululon cooks. A cookie is red. Azawan does so.*
+**3.** *Ululon cooks. Azawan sees a cookie. Uhubun does so.*
 
 ::: details Show answer
-`zululon vogogol. zogogel garedel. zazawan vogogor.`
+`zululon vogogol. zazawan dogogel vejel. zuhubun vogogor.`
 
-z-Ululon | v-cook . z-cookie | g-red . z-Azawan | v-←cook.full
+z-Ululon | v-cook . z-Azawan | d-cookie | v-see . z-Uhubun | v-←cook.full
 :::
 
 **4.** *I see you.*
@@ -219,13 +218,13 @@ z-Ululon | d-knife | v-see . z-←Ululon | d-←knife | v-see
 *Ululon sees a knife. He sees the knife.*
 :::
 
-**4.** `zuhubun vogogol. zogogel garedel. zululon vogogor.`
+**4.** `zuhubun vogogol. zululon dogogel vejel. zazawan vogogor.`
 
 ::: details Show answer
 
-z-Uhubun | v-cook . z-cookie | g-red . z-Ululon | v-←cook.full
+z-Uhubun | v-cook . z-Ululon | d-cookie | v-see . z-Azawan | v-←cook.full
 
-*Uhubun cooks. A cookie is red. Ululon does so.*
+*Uhubun cooks. Ululon sees a cookie. Azawan does so.*
 :::
 
 **5.** `zazawan dedonen vejel.`
@@ -283,7 +282,7 @@ Beginner already used content **-r** in the same slot as the earlier word (*he s
 | `/j/` interjection … `-r` | same exclamation again | repeating that call-out |
 | `/x/` … `-r` after `/x/` | same linker again | *and so* / *likewise* |
 
-**Compare with:** English *that* pointing at a quoted title, proverb, or aside uses [span resume](spans.md#endings) (`daxur` / `thexur` / …), not content **-r**.
+**Compare with:** English *that* pointing at a quoted title, proverb, or aside uses a [span resume](spans.md#endings), not content **-r**.
 
 ### Going back to a thread
 

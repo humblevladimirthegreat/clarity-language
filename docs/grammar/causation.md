@@ -24,7 +24,7 @@ Use `/th/` when the outcome is an **event** (the verb). Use `/ɡ/` when the outc
 
 Ordinary content on the same root is still available (`zadorol` *a door*).
 
-**For *X is enough* as a list (*a book will do*), use:** an inclusive [join](joins.md#single-item-phrase) (`zaol` / `zaom`).
+**For *X is enough* as a list (*a book will do*), use:** an inclusive [join](joins.md#single-item-phrase).
 
 ### Only if {#only-if}
 
@@ -281,7 +281,7 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 >
 > "Azawan walks if and only if Ululon sleeps."
 
-**Related form:** *not because of X* (the outcome still holds; only the reason is denied) closes the pole with a [stance join](join-across-roles.md#stance-joins): `zazawan vawalal thurugum banunul thul`. Denying the outcome itself is `vawalal vul`.
+**Related form:** *not because of X* (the outcome still holds; only the reason is denied) closes the pole with a [stance join](join-across-roles.md#stance-joins). Denying the outcome itself is `vawalal vul`.
 
 > `zazawan vawalal theberom thurugum banunul.`
 >
@@ -522,7 +522,7 @@ A one-off episode and a standing pattern use the same poles. Add extra words for
 >
 > "Rain comes if there are clouds, as a standing pattern."
 
-**Compare with:** *always* / *every* / *never* as exceptionlessness uses [universality](knowing.md#universality) (NATURAL **`thabelel`**). **CAUSE** is **`thegegam`**.
+**Compare with:** *always* / *every* / *never* as exceptionlessness uses [universality](knowing.md#universality). **CAUSE** is **`thegegam`**.
 
 ### English → Agalan {#english-cues}
 

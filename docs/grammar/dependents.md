@@ -1,6 +1,6 @@
 # Dependents and continue
 
-How a **next sentence** fills a slot (`darl` / `barl`), how English *who / that / which* is two sentences, and how `/x/` keeps the same speech move going.
+How a **next sentence** fills a slot in the sentence before it, how English *who / that / which* is two sentences, and how to keep the same speech move going.
 
 ## Beginner {#beginner}
 
@@ -19,7 +19,7 @@ When English hangs *who* / *that* / *which* plus a clause on a noun (*the guard 
 
 That pair is English *Azawan talks to the guard who sits.* Repeat the full word when you need the same person again in the next sentence.
 
-**Compare with:** *a blue dog* is still one [adjective](clause.md#adjectives-ɡ) (`gelulul`). *Azawan tells Ululon **that** a dog runs* is a [dependent clause](#dependent-clauses) (**`darl`**): *that* packages the next sentence as content, not as a tag on *dog*.
+**Compare with:** *a blue dog* is still one [adjective](clause.md#adjectives-ɡ) (`gelulul`). *Azawan tells Ululon **that** a dog runs* is a [dependent clause](#dependent-clauses): *that* packages the next sentence as content, not as a tag on *dog*.
 
 
 
@@ -107,7 +107,7 @@ When English *to* drops the sitter, keep inner `/z/`:
 
 Ordinary `zolalal` is still *a goal* (the net).
 
-**Compare with:** *although Ululon walks* is **`hezebam barl`** plus the next sentence. Discourse *however* is **`xezebal`** ([continue](#continue-x)). Discourse *therefore* is **`xezazam`**, a linker after a finished claim, not *so that*. *Whether Ululon walks* is **`dorl`**, not **`thadorom`** (*if* is a condition, not polar ignorance). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. Acting *for relatedness* is a [values motive](values.md#value-preference) on the need, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`huhanem`). *Works for a money-bag* (something you want to get) is the extra-noun [hook](hooks.md#extra-noun) **`el`**; use **`holalam`** when *for* names a result you aim at (*practices for a race*). 
+**Compare with:** *although Ululon walks* is **`hezebam barl`** plus the next sentence. Discourse *however* and *therefore* are sentence linkers after a finished claim ([continue](#continue-x)), not *although* or *so that*. *Whether Ululon walks* is **`dorl`**, not **`thadorom`** (*if* is a condition, not polar ignorance). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. Acting *for relatedness* is a [values motive](values.md#value-preference) on the need, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange). *Works for a money-bag* (something you want to get) is an extra-noun [hook](hooks.md#extra-noun); use **`holalam`** when *for* names a result you aim at (*practices for a race*). 
 
 The verb has no past or future letter. *Before* / *after* / *while* / *until* place this event relative to the next sentence. Leftover **result** and **former climate** are standing moods, not time ([RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate)).
 

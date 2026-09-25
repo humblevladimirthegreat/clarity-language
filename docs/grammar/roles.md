@@ -19,7 +19,7 @@ English *a teacher* names who teaches as a kind, from the same idea as *teach*. 
 
 The last letter is the ordinary [reference ending](word-endings.md): **-l** takes the stem’s everyday concrete sense, **-m** the published abstract. `zaxedegel` is *a teacher*; `zaxuvugul` is *a fighter*; `zaxuvugum` is *a struggler*. Non-resume names the **lexical** role. You do not need a prior teaching or fight in the talk.
 
-**Compare with:** *can teach* puts the stance vowel **right** of **`x`** ([ability](intention.md#ability): `vedegexal`). A teacher puts the role vowel **left** of **`x`**. Both together, on `/ɡ/` only, mean *can be a teacher* (`gaxedegexal` — [role + ability](intention.md#role-ability)).
+**Compare with:** a teacher puts the role vowel **left** of **`x`**. Later, [ability](intention.md#ability) (*can teach*) puts a vowel **right** of **`x`**, and the two can combine.
 
 ### This instance (`-r`)
 
@@ -77,7 +77,7 @@ Once the talk already has a matching event, **-r** means **this** scene of that 
 
 `zexogonul` is a construct-place (the **-l** sense of *construct*). A construction site as a listed kind, with no event, can stay `donugol`.
 
-**Compare with:** `zaxogonul` is who constructs; `duxogonul` is what is constructed. *Constructs in a house* locates **that same** constructing: extra-noun [hook](hooks.md#extra-noun) **`al`** plus `/b/`. Do not write **`exROOT`** when a hook on that clause would do. *Writes with a hammer* is hook **`ael`** plus `/b/`, not this vowel.
+**Compare with:** `zaxogonul` is who constructs; `duxogonul` is what is constructed. *Constructs in a house* locates **that same** constructing: extra-noun [hook](hooks.md#extra-noun) **`al`** plus `/b/`. Do not write **`exROOT`** when a hook on that clause would do. *Writes with a hammer* is likewise an extra-noun hook plus `/b/`, not this vowel.
 
 ### The extra `/b/` party (`o`)
 

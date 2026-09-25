@@ -33,7 +33,7 @@ On a noun, the same root is **`gurorom`**:
 
 Ordinary `zurorol` is still *a mirror*.
 
-**Compare with:** unhosted `/b/` is still the recipient. *In a house* is a [hook](hooks.md#extra-noun) (`al bohohul`). *Using* a tool is a hook (`ael bahamel`). Two labels for **one** person is not this pair. *As happy as* names a shared height, not resemblance. *As if they walk* takes the walk off the real tally; here the walk stays real.
+**Compare with:** unhosted `/b/` is still the recipient. *In a house* is a [hook](hooks.md#extra-noun) (`al bohohul`). *Using* a tool is also a [hook](hooks.md#extra-noun). Two labels for **one** person is not this pair. *As happy as* names a shared height, not resemblance. *As if they walk* takes the walk off the real tally; here the walk stays real.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -52,7 +52,7 @@ When English names the **other side of a swap** (*a book for a hammer*), keep th
 
 On a noun, the same root is **`guhanem`** (`dabogol guhanem bahamel` *a book for a hammer*). Ordinary `zuhanel` is still *a currency exchange*. Ordinary `vuhanem` is still *to trade* (the convertibility act).
 
-**Compare with:** unhosted `/b/` is still the recipient (*a book for Ululon* as who gets it). *Using* a tool is a [hook](hooks.md#extra-noun) (`ael`). *Like a duck* is [simile](#similative). *In a house* is a hook (`al`).
+**Compare with:** unhosted `/b/` is still the recipient (*a book for Ululon* as who gets it). *Using* a tool is a [hook](hooks.md#extra-noun). *Like a duck* is [simile](#similative). *In a house* is a hook (`al`).
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -71,7 +71,7 @@ When English says someone **acts as another person’s agent** (*tells on behalf
 
 A recipient may follow a finished pair: `zazawan hudagam bululon buhubun vezehel` (*tells Uhubun on behalf of Ululon*). On a noun, the same root is **`gudagam`** (`dabogol gudagam bululon` *a book on behalf of Ululon*). Ordinary `zudagal` is still *an id-card*.
 
-**Compare with:** unhosted `/b/` is still who hears the telling. *Using* a tool is a [hook](hooks.md#extra-noun). *A book for a hammer* as a swap is [exchange](#exchange). *In a house* is a hook (`al`). *Exclusively for* is a [join-relation](join-across-roles.md#join-relations) (`hon`), not this pair.
+**Compare with:** unhosted `/b/` is still who hears the telling. *Using* a tool is a [hook](hooks.md#extra-noun). *A book for a hammer* as a swap is [exchange](#exchange). *In a house* is a hook (`al`). *Exclusively for* is a [join-relation](join-across-roles.md#join-relations), not this pair.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|

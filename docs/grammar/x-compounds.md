@@ -28,13 +28,12 @@ The last root is the kind of thing; the left root specifies it (what field, what
 |--------|-----|---------|-----|
 | full root **`x`** full root | two roots, one word | `zabanuxudel` *peanut butter* | **x** ≈ plus |
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxedegel` *a teacher* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
-| root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [ability](intention.md#ability) | `vuzunuxel` | extra vowel after the host |
 
 **Compare with:** two people stay two words (`zazawan zululon`). One double name is one word (`zazawaxululon`).
 
 **Not the same job as:** a word that **starts** with **`x`** [keeps the same speech move going](dependents.md#continue-x). That **`x`** is not this glue in the middle.
 
-**Not the same job as:** mid-word **`th`**. The [stance](clause.md#stance-th) letter joins pieces when the second piece is **your view** rather than more of the same thing: a need and how it stands ([values](values.md): `golozothal`), or a direction and whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals): `gewezethazawan`). **`x`** adds; **`th`** says from where you see it. (cue: **th** ≈ *think*)
+**Not the same job as:** mid-word **`th`**. The [stance](clause.md#stance-th) letter joins pieces when the second piece is **your view** rather than more of the same thing: a need and how it stands ([values](values.md): `golozothal`), or a direction and whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals), such as *Azawan’s left*). **`x`** adds; **`th`** says from where you see it. (cue: **th** ≈ *think*)
 
 ### Words you look up, not build
 <a id="lexical-compounds"></a>
@@ -57,7 +56,7 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 | `zanunulojal` | rain **-l** coat | raincoat | left piece everyday |
 | `…m…` | left root in its [abstract](word-endings.md#abstract-m) sense | same two roots, join **-m** | **m** ≈ meaning |
 
-If the pairing is not in the dictionary, either glue with **`x`** (`zabanuxudel` *peanut butter*) or use two words. Extra-noun *enter* / *leave* fused onto a citation is a [hook compound](hooks.md#hook-compounds) (`awalalul`), not this two-root join.
+If the pairing is not in the dictionary, either glue with **`x`** (`zabanuxudel` *peanut butter*) or use two words. Extra-noun *enter* / *leave* fused onto a citation is a [hook compound](hooks.md#hook-compounds), not this two-root join.
 
 ### One thing or two?
 <a id="compound-vs-separate"></a>
@@ -245,14 +244,14 @@ z-Azawan | z-friend | v-punch
 
 ### Left and right of `x` {#families-by-shape}
 
-Beginner already used two roots glued with **`x`**, dictionary words with no **`x`**, *a teacher*, and *can / can’t* on a host. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family.
+Beginner already used two roots glued with **`x`**, dictionary words with no **`x`**, and *a teacher*. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | one vowel **`x`** one vowel, then a span ending | [span fence](spans.md) open or close | `daxal` … `xuxul` | vowel **x** vowel |
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxedegel` *a teacher* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
-| name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | [conversation length](#conversation-length) | `azawaxan`; `jululoxen` | vowel on the name |
-| longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [ability](intention.md#ability) | `vuzunuxel` | extra vowel after the host |
+| name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | [conversation length](#conversation-length) | *Azawan — I have time* | vowel on the name |
+| longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [ability](intention.md#ability) | *can’t sing right now* | extra vowel after the host |
 | full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zabanuxudel`; `zodunaxalanen` ([multipart names](word-endings.md#phrasal-proper-names)) | **x** ≈ plus |
 | need root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) | `golozothal` | **th** ≈ *think* (your view of the need) |
 | direction root **`th`** facing person | [viewpoint lateral](roles.md#viewpoint-laterals) | `gewezethazawan` *Azawan’s left* | **th** ≈ *think* (whose point of view) |
@@ -284,7 +283,7 @@ When English stacks labels left to right (*crush* then *love*; a shop name with 
 
 Use the table above. If the word has a mid-word **`th`**, it is a [values](values.md) word (a vowel follows **`th`**) or a [viewpoint lateral](roles.md#viewpoint-laterals) (a root follows **`th`**). Otherwise read both sides of the first **`x`** in this order:
 
-- The whole word is **`xuxul`** / **`xuxur`** / **`xuxum`** → a **span** is closing.
+- The whole word is a span close such as **`xuxul`** → a **span** is closing.
 - After the role letter: one vowel, **`x`**, one vowel, then a span ending → a **span** is opening ([spans](spans.md)).
 - After the role letter: one vowel **`a`** / **`e`** / **`u`** / **`o`**, **`x`**, then a longer root → a **role compound** (who does / where it happens / who undergoes / who is told).
 - A name (one root or a [multipart proper name](word-endings.md#phrasal-proper-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a conversation-length bid → [conversation length](#conversation-length).
@@ -313,10 +312,10 @@ On your own name, it says how long you expect to stay. At departure, use the red
 
 | Form | At arrival | At departure | Cue |
 |------|------------|--------------|-----|
-| **`…xan`** | open-ended: *we can stay* | — | **a** ≈ add (time is in) |
-| **`…xen`** | a few minutes: *I have a little time* | leaving soon | **e** ≈ order (the slot has an end) |
-| **`…xon`** | one slot: *one ask/comment* | about to leave | **o** ≈ one (one last slot) |
-| **`…xun`** | passing: *just acknowledging; not opening a talk* | leaving right now | **u** ≈ undo (lift the talk) |
+| `azawaxan` | open-ended: *we can stay* | — | **a** ≈ add (time is in) |
+| `azawaxen` | a few minutes: *I have a little time* | leaving soon | **e** ≈ order (the slot has an end) |
+| `azawaxon` | one slot: *one ask/comment* | about to leave | **o** ≈ one (one last slot) |
+| `azawaxun` | passing: *just acknowledging; not opening a talk* | leaving right now | **u** ≈ undo (lift the talk) |
 
 Only one of these vowels per name. These forms use the same scale throughout a conversation: a smaller level narrows the remaining time. **-n** is still the [named](word-endings.md#named-n-beginner) ending.
 
@@ -334,7 +333,7 @@ At arrival, the other person can answer with their own bid. The **lesser** bid s
 >
 > "Ululon — one slot." (the talk lasts for one ask)
 
-**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (`vuzunuxel` *can’t sing right now*). A [need](values.md) takes **`th`** + vowel instead (`golozothal`). Conversation-length bids sit on a **named** citation or a **`/j/`** call, with **-n**.
+**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [need](values.md) takes **`th`** + vowel instead (`golozothal`). Conversation-length bids sit on a **named** citation or a **`/j/`** call, with **-n**.
 
 **Compare with:** a plain named citation with a period is the basic hello (`azawan.`). The bid says how much conversation the person is open to.
 
