@@ -40,6 +40,14 @@ A first mention of a **kind as a group in this situation** uses **-lx** (concret
 >
 > "Azawan sees some dogs."
 
+An extra noun takes **-x** the same way. Here the recipient is Ululon and associates:
+
+> `zazawan bululonx vezehel.`
+>
+> z-Azawan | b-Ululon-x | v-tell
+>
+> "Azawan tells Ululon and associates."
+
 **Compare with:** English *cats* can mean a kind in general. **-lx** is a **set in this situation**.
 
 | Agalan | Use | English |

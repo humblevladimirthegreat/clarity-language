@@ -64,6 +64,17 @@ export function sentenceGrammarKeys(grammar: Record<string, { definition: unknow
   return keys;
 }
 
+/** Greeting: a prefix-less named citation said alone (`azawan.`, word-endings.md § greeting). */
+function isGreeting(clause: Clause): boolean {
+  const [only, ...rest] = clause.units;
+  if (rest.length > 0 || only?.kind !== "np" || only.coord.parts.length !== 1) return false;
+  const [part] = only.coord.parts;
+  const [item, ...more] = part!.items;
+  if (more.length > 0 || part!.join || item?.kind !== "package") return false;
+  const { head, adjs, glAdj } = item.package;
+  return !head.pos && head.ending === "n" && adjs.length === 0 && !glAdj;
+}
+
 /** Existence: no `/v/`, a new `/z/` noun first, then only `/ɡ/`, hooks, or `/b/` (predication.md § existence). */
 function isExistence(clause: Clause): boolean {
   const [first, ...rest] = clause.units;
@@ -85,6 +96,9 @@ export function addReadingConstructions(result: ParseResult, out: Set<string>): 
   for (const utterance of result.utterances) {
     const force = utterance.left.force?.raw;
     if (utterance.bodies.length === 0 && (force === "jol" || force === "jom")) out.add("reading.bareQuestion");
-    for (const body of utterance.bodies) if (isExistence(body.clause)) out.add("reading.existence");
+    for (const body of utterance.bodies) {
+      if (isGreeting(body.clause)) out.add("reading.greeting");
+      else if (isExistence(body.clause)) out.add("reading.existence");
+    }
   }
 }

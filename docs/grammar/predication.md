@@ -269,6 +269,7 @@ z-Uhubun | [g-SAME | b-Azawan]
 <a id="intermediate"></a>
 
 ### Classification packaging
+<a id="classification-packaging"></a>
 
 You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra choice here is how tightly that kind holds: hedge it, mark it as the usual type, or deny it. The kind word stays on `/ɡ/`; a hedge `/w/` before it, characterizing **`hual`**, or negation **`gul`** packages that same pair.
 

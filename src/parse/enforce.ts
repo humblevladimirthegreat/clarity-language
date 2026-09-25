@@ -9,13 +9,25 @@
 import type { IToken } from "chevrotain";
 
 import type { ClassifyTables } from "./classify.js";
-import { isStandIn } from "./classify.js";
+import { isAsOfOverlay, isStandIn } from "./classify.js";
 import { letterPrefix } from "./resolve.js";
 import { REJECTIONS, type RejectionId } from "./constructions.js";
+import { SentenceParseError } from "./sentence-parser.js";
 import { Bang, classifyTokenBranch, isLexWordPayload, Linker, QMark, type TokenPayload } from "./tokens.js";
-import type { Clause, CoordShared, GPackage, HUnit, LexWord, ParseResult, Unit } from "./types.js";
+import type {
+  Clause,
+  CoordShared,
+  GPackage,
+  HUnit,
+  IslandUnit,
+  LexWord,
+  NpCoord,
+  ParseResult,
+  Unit,
+  VpCoord,
+} from "./types.js";
 
-export class ConstructionError extends Error {
+export class ConstructionError extends SentenceParseError {
   readonly rejection: RejectionId;
   readonly anchor: string;
 
@@ -147,6 +159,8 @@ function enforceClause(clause: Clause): void {
 export function enforceResult(result: ParseResult, tables: ClassifyTables): void {
   for (const utterance of result.utterances) {
     for (const body of utterance.bodies) {
+      enforceStructure(body.clause.units);
+      if (body.clause.dependent) enforceStructure(body.clause.dependent.clause.units);
       enforceClause(body.clause);
       enforceVerbless(body.clause.units);
     }
@@ -167,4 +181,95 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
 function isFullRootResume(word: LexWord, tables: ClassifyTables): boolean {
   if (word.family.kind !== "content") return true;
   return word.family.roots.every((root) => tables.published.has(root) && letterPrefix(root) !== root);
+}
+
+function islandHasBinder(island: IslandUnit): boolean {
+  const walk = (units: Unit[]): boolean =>
+    units.some((unit) => {
+      if (unit.kind === "h" || unit.kind === "clauseCoord") return true;
+      if (unit.kind === "island") return walk(unit.island.units);
+      if (unit.kind === "vp") return unit.coord.parts.some((p) => p.join);
+      if (unit.kind !== "np") return false;
+      return unit.coord.parts.some(
+        (p) => p.join || p.items.some((item) => item.kind === "island" && walk(item.island.units)),
+      );
+    });
+  return walk(island.units);
+}
+
+function enforceIsland(island: IslandUnit): void {
+  if (island.units.length === 0) throw new ConstructionError("emptyIsland", "^ ^");
+  if (!islandHasBinder(island)) throw new ConstructionError("islandBinder", "^ … ^");
+  enforceStructure(island.units);
+}
+
+/** `A zam B zal` is legal nesting (`[[A zam] B zal]`); a join before any conjunct is a left fence (joins.md § Right-close fence). */
+function enforceLeadingFence<T extends { join?: LexWord }>(parts: T[], isEmpty: (part: T) => boolean): void {
+  const first = parts[0];
+  if (parts.length >= 2 && first && isEmpty(first) && first.join) {
+    throw new ConstructionError("leftFence", first.join.raw);
+  }
+}
+
+function enforceAsOfWord(word: LexWord, bound: LexWord | undefined): void {
+  if (!isAsOfOverlay(word)) return;
+  if (word.ending === "r" && bound) throw new ConstructionError("asOfResumeBound", `${word.raw} ${bound.raw}`);
+  if (word.ending !== "r" && !bound) throw new ConstructionError("asOfIntroduceBound", word.raw);
+}
+
+function enforceGPackageAsOf(pkg: GPackage): void {
+  enforceAsOfWord(pkg.word, pkg.bound);
+  if (pkg.asOf) enforceAsOfWord(pkg.asOf.word, pkg.asOf.bound);
+  for (const adj of pkg.boundAdjs ?? []) enforceGPackageAsOf(adj);
+}
+
+function enforceSharedAsOf(shared: CoordShared[]): void {
+  for (const item of shared) {
+    if ("modifiers" in item && "word" in item && !("unit" in item)) {
+      enforceGPackageAsOf(item as GPackage);
+    } else if ("word" in item && "modifiers" in item) {
+      const h = item as HUnit;
+      enforceAsOfWord(h.word, h.bound);
+    }
+  }
+}
+
+function enforceNp(coord: NpCoord): void {
+  enforceLeadingFence(coord.parts, (part) => part.items.length === 0);
+  for (const part of coord.parts) {
+    for (const item of part.items) {
+      if (item.kind === "package") {
+        if (item.package.glAdj) enforceGPackageAsOf(item.package.glAdj);
+        for (const adj of item.package.adjs) enforceGPackageAsOf(adj);
+      }
+      if (item.kind === "island") enforceIsland(item.island);
+    }
+    enforceSharedAsOf(part.shared);
+  }
+}
+
+function enforceVp(coord: VpCoord): void {
+  enforceLeadingFence(coord.parts, (part) => part.items.length === 0);
+  for (const part of coord.parts) enforceSharedAsOf(part.shared);
+}
+
+/** Fences, scope islands, and as-of pairs (formerly the parser's post-build `validate*` pass). */
+function enforceStructure(units: Unit[]): void {
+  let hAsOf = 0;
+  for (const unit of units) {
+    if (unit.kind === "h") {
+      enforceAsOfWord(unit.unit.word, unit.unit.bound);
+      if (isAsOfOverlay(unit.unit.word)) hAsOf += 1;
+    }
+    if (unit.kind === "predicate") enforceGPackageAsOf(unit.adj);
+    if (unit.kind === "np") enforceNp(unit.coord);
+    if (unit.kind === "vp") enforceVp(unit.coord);
+    if (unit.kind === "island") enforceIsland(unit.island);
+    if (unit.kind === "span") unit.span.content.forEach((clause) => enforceStructure(clause.units));
+    if (unit.kind === "clauseCoord") {
+      enforceLeadingFence(unit.coord.parts, (part) => part.clauses.length === 0);
+      unit.coord.parts.forEach((part) => part.clauses.forEach((clause) => enforceStructure(clause.units)));
+    }
+  }
+  if (hAsOf > 1) throw new ConstructionError("asOfPerHost", "two as-of pairs");
 }

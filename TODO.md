@@ -15,17 +15,16 @@ reconsider dependent inner subject dropping rules. Under what cases should it be
 
 consider removing some emotion words from lexicon
 -expressiveness review
-do parser consistency pass. Does the parser completely and accurately encode all the meaning of the grammar?
 do a learning order consistency check for grammar-docs. Does any grammar doc learning band refer to concepts not yet taught?
 do a style pass in grammar-docs. Check for adherence to doc-style and otherwise ensure natural sounding explanations.
-parser is too loose (some forms are permitted that docs don't define)
 
 final exam
 
 save for cursor:
 -j should just be y, remind that y is never a vowel
--consider moving overlay forms to the top of lexicon so they get preferential retying. Actually, only overlay forms should be two syllables.
+-consider moving overlay forms to the top of lexicon so they get preferential retying. Actually, only overlay forms should be two syllables. Prefer words unlikely to be referred to (such as non-nouns) for two syllables to avoid ambiguity with continues.
 -finish English->Agalan cheat sheets, including tense
+-do parser consistency pass. Does the parser completely and accurately encode all the meaning of the grammar?
 -add Agalan->English cheat sheet
 -Cheat sheet for joins and hooks
 -join vowel decision tree in advanced vowel series.

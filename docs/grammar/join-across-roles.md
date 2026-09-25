@@ -45,7 +45,21 @@ Each verb-phrase item is a verb plus its own object material. When every item is
 
 An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, covers every item. `/h/` inside an item covers that verb phrase only.
 
+> `zazawan vawalal vurunul val hohogem.`
+>
+> z-Azawan | [v-walk | v-run | v-and | h-intensity]
+>
+> "Azawan walks and runs, both intensely."
+
 Nothing is SHARED after a clause (`/x/`) join; each clause carries its own words.
+
+A clause join with no clause before it is the standalone reading, like `zal` *nothing*: `xal` is *nothing happened*, and `xam` hedges it.
+
+> `xam.`
+>
+> x-and.open
+>
+> "Nothing happened, as far as I know."
 
 `/x/` keeps the **same speech act**. Later clauses inherit the opener and omit `/j/` (including recoverable **`jal`**).
 

@@ -405,6 +405,12 @@ Hedged proper (`@~`) is written **`d@[…]`** only (spoken as the **proper** ope
 
 **-r** resumes a prior span ([pronouns.md](pronouns.md)). `daxur` is *that (cite)* as object, matching the most recent **cite** (TYPE **a**). `thexur` / `th(=)` is *that (aside)*. The resume’s role letter need not match the earlier open’s (`zaxur` = that cite as subject). No interior; no close (EDGE **`u`**).
 
+> `zazawan daxal zululon vurunul xuxul vezehel. zuhubun daxur vezehel.`
+>
+> z-Azawan | d-CITE.multi[z-Ululon | v-run] | v-tell . z-Uhubun | d-←cite-x-multi | v-tell
+>
+> "Azawan says, 'Ululon runs.' Uhubun says that too."
+
 ### Writing ↔ speech map
 
 Beginner brackets map to these spoken opens and closes.

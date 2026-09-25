@@ -174,7 +174,7 @@ describe("lintAgalanSpans", () => {
     const issues = lintAgalanSpans(text, tables);
     assert.equal(issues.length, 1);
     assert.equal(issues[0]!.kind, "sentence");
-    assert.match(issues[0]!.detail, /left fence/i);
+    assert.match(issues[0]!.detail, /closes its conjuncts/);
     assert.deepEqual(lintAgalanSpans("`jol zazawan vazawal vul. jael.`", tables), []);
   });
 

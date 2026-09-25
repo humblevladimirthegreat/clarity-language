@@ -121,10 +121,10 @@ function lintOverlayHosts(): number {
 }
 
 /**
- * Check 2 of docs/proposals/parser-strictness.md: is every construction used
- * by an example on the page its anchor names? Report only for now.
+ * Check 2 of docs/proposals/parser-strictness.md: every construction is used by
+ * an example on the page its anchor names. Returns the number of gaps.
  */
-function reportConstructionCoverage(usedByPage: Map<string, Set<string>>): void {
+function checkConstructionCoverage(usedByPage: Map<string, Set<string>>): number {
   const unexercised: string[] = [];
   for (const [id, entry] of CONSTRUCTIONS) {
     const page = entry.anchor.split("#")[0]!;
@@ -133,11 +133,13 @@ function reportConstructionCoverage(usedByPage: Map<string, Set<string>>): void 
     const where = elsewhere.length > 0 ? `used on ${elsewhere.join(", ")}` : "used on no page";
     unexercised.push(`  ${id}  →  ${entry.anchor}  (${where}; ${entry.summary})`);
   }
-  const total = CONSTRUCTIONS.size;
-  console.log(
-    `\nConstructions: ${total}; ${total - unexercised.length} exercised by their anchor page; ${unexercised.length} not (report only):`,
+  if (unexercised.length === 0) return 0;
+  console.error(
+    `\n${unexercised.length} construction(s) not exercised by their anchor page. ` +
+      "Add a teach example on that page, or narrow or delete the production:",
   );
-  for (const line of unexercised) console.log(line);
+  for (const line of unexercised) console.error(line);
+  return unexercised.length;
 }
 
 function main(): void {
@@ -202,7 +204,7 @@ function main(): void {
     }
   }
 
-  if (paths.length === 0) reportConstructionCoverage(usedByPage);
+  const coverageCount = paths.length === 0 ? checkConstructionCoverage(usedByPage) : 0;
 
   if (count > 0) {
     console.error(`\n${count} Agalan word issue(s) in docs/grammar/.`);
@@ -221,7 +223,7 @@ function main(): void {
     console.log(`\n${speechCount} number pronunciation issue(s).`);
   }
 
-  const fail = hostIssues + count + spanCount + morphCount + bankCount + speechCount;
+  const fail = hostIssues + count + spanCount + morphCount + bankCount + speechCount + coverageCount;
   if (fail > 0) {
     process.exit(1);
   }
@@ -237,6 +239,9 @@ function main(): void {
   );
   console.log("OK: translation word-bank English matches the lexicon.");
   console.log("OK: number pronunciation rows match their shorthand.");
+  if (paths.length === 0) {
+    console.log(`OK: ${CONSTRUCTIONS.size} constructions, all exercised by their anchor page.`);
+  }
 }
 
 try {

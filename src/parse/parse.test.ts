@@ -6,8 +6,6 @@ import { describe, it } from "node:test";
 
 import { createClassifyTables } from "./classify.js";
 import { parse, SentenceParseError } from "./index.js";
-import { parseSentenceTokens } from "./sentence-parser.js";
-import { tokenizeUtterance } from "./tokenize.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const tables = createClassifyTables(
@@ -123,8 +121,7 @@ describe("parse — joins.md", () => {
   });
 
   it("rejects frame echo zual zonunol zugumel zual", () => {
-    const tokens = tokenizeUtterance("zual zonunol zugumel zual.", tables);
-    assert.throws(() => parseSentenceTokens(tokens), SentenceParseError);
+    assert.throws(() => parseText("zual zonunol zugumel zual."), SentenceParseError);
   });
 
   it("parses join scope island", () => {
@@ -140,8 +137,8 @@ describe("parse — joins.md", () => {
   });
 
   it("rejects empty scope islands", () => {
-    assert.throws(() => parseText("^ ^ zazawan vawalal."), /Empty scope island/);
-    assert.throws(() => parseText("zazawan ^ ^ zam."), /Empty scope island/);
+    assert.throws(() => parseText("^ ^ zazawan vawalal."), /scope island needs words/);
+    assert.throws(() => parseText("zazawan ^ ^ zam."), /scope island needs words/);
   });
 
   it("parses nested left-associative VP joins", () => {
@@ -288,10 +285,23 @@ describe("parse — hosted /w/ before /b/", () => {
   });
 });
 
+describe("parse — /ɡ/ join fences", () => {
+  it("keeps a predicative /ɡ/ join (zazawan godogol gul)", () => {
+    const units = parseText("zazawan godogol gul.").utterances[0]!.bodies[0]!.clause.units;
+    const preds = units.flatMap((u) => (u.kind === "predicate" ? [u.adj.word.raw] : []));
+    assert.deepEqual(preds, ["godogol", "gul"]);
+  });
+
+  it("keeps the join and shared word after /ɡ/ items (g+3 g+5 gal gumem)", () => {
+    const units = parseText("g+3 g+5 gal gumem.").utterances[0]!.bodies[0]!.clause.units;
+    const preds = units.flatMap((u) => (u.kind === "predicate" ? [u.adj.word.raw] : []));
+    assert.deepEqual(preds, ["g+3", "g+5", "gal", "gumem"]);
+  });
+});
+
 describe("parse — illegal fences", () => {
   it("rejects left fence zam zadagal zagadal", () => {
-    const tokens = tokenizeUtterance("zam zadagal zagadal.", tables);
-    assert.throws(() => parseSentenceTokens(tokens), SentenceParseError);
+    assert.throws(() => parseText("zam zadagal zagadal."), SentenceParseError);
   });
 
   it("nests A zam B zal as [[A zam] B zal]", () => {

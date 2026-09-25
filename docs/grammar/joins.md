@@ -56,6 +56,20 @@ Two full clauses use the same order: first clause’s words, second clause’s w
 >
 > "Azawan walks and Ululon runs (and possibly more)."
 
+Objects and extra nouns list the same way. Two `/d/` objects close with `dal`; two `/b/` recipients close with `bal`.
+
+> `zazawan dodogol dagadal dal vejel.`
+>
+> z-Azawan | [d-dog | d-cat | d-and] | v-see
+>
+> "Azawan sees a dog and a cat."
+
+> `zazawan bululon buhubun bal vezehel.`
+>
+> z-Azawan | [b-Ululon | b-Uhubun | b-and] | v-tell
+>
+> "Azawan tells Ululon and Uhubun."
+
 ### Choice (`o`)
 <a id="empty-allowed-om"></a>
 
@@ -90,6 +104,20 @@ The join still comes last when there is only one item, or none. How many items s
 > [z-Azawan | z-and]
 >
 > "just Azawan."
+
+A standalone join fills its slot with no items. In the object slot, `dal` is *nothing*; in the extra-noun slot, `bal` is *nobody*.
+
+> `zazawan dal vejel.`
+>
+> z-Azawan | d-and | v-see
+>
+> "Azawan sees nothing."
+
+> `zazawan bal vezehel.`
+>
+> z-Azawan | b-and | v-tell
+>
+> "Azawan tells nobody."
 
 ### Negation (`u`)
 <a id="negation-u"></a>

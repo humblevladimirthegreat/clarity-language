@@ -1,6 +1,6 @@
 # Proposal: reject-by-default parser with a doc-anchored construction registry
 
-**Status:** PROPOSED (tooling, not a language change).  
+**Status:** DONE 2026-09-25 (tooling, not a language change).  
 **Related:** [clause.md](../grammar/clause.md), [marking Agalan](../meta/grammar-docs.md#marking-agalan), [src/parse/](../../src/parse/), [scripts/lint-agalan-docs.ts](../../scripts/lint-agalan-docs.ts)  
 **Design authority:** none. The grammar docs decide what is legal. This proposal makes the parser prove it follows them.
 
@@ -105,7 +105,12 @@ Checked on 2026-09-25 with `node scripts/parse.mjs`: the parser **accepted** eve
    Still open:
    Reading IDs `reading.existence` (predication.md) and `reading.bareQuestion` (questions.md) put the new doc sections under the coverage check.
    Moved to step 3: the `validate*` checks in `sentence-parser.ts` (not user-visible; rejects the same inputs).
-3. **Move `validate*` checks into gates** on the productions that own them. **Resolve every uncovered construction** in the docs: add a teach example, narrow the production, or delete it. Once none remain, check 2 becomes a build failure.
+3. **Enforce coverage.** *Done 2026-09-25.* Check 2 now fails `lint-agalan-docs` (and so the build): 166 constructions, all exercised by their anchor page.
+   - The parser's post-build `validate*` pass moved into `enforce.ts` as anchored rejections (`leftFence`, `emptyIsland`, `islandBinder`, `asOfIntroduceBound`, `asOfResumeBound`, `asOfPerHost`), each with an `invalid-forms` row. The empty-utterance check was dead (the grammar already needs one body) and was deleted. These stay post-parse, like the phase 2 rules: as gates, they would reroute input instead of refusing it (a left-fence `zam` would reparse as a standalone join).
+   - Parser bug fixed: `/ɡ/` join fences and the word shared after them were dropped from the result (`zazawan godogol gul.` read as *Azawan is a dog*). They are now kept, as `/h/` fences already were.
+   - Deleted: the standalone `/h/` join (plain `/h/` join forms are restrictors, and a stance join closes the stance words before it) and the unreachable `token.standInVerb` branch.
+   - Re-anchored: `gCoordPart.standaloneJoin` → predication.md (`godogol gul`), `gJoinClose.sharedAfterJoin` → numbers-applied.md ranges, `clausePart.standaloneJoin` → join-across-roles.md VP / clause forms, and `token.greeting` / `word.reading.greeting` → x-compounds.md (they are the conversation-length bid). New `reading.greeting` covers the bare named citation (`azawan.`), which the trace had read as existence.
+   - Teach examples added on joins, join-across-roles, numbers-applied, plurality, and spans.
 
 ## Effect on learners
 

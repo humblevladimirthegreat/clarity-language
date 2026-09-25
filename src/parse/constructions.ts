@@ -40,7 +40,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
 
   "clausePart.unit": { anchor: "clause.md#role-letters", summary: "role-lettered unit in a clause" },
   "clausePart.xJoinClose": { anchor: "join-across-roles.md#clause-sequence", summary: "clause join after its clause" },
-  "clausePart.standaloneJoin": { anchor: "join-across-roles.md#clause-sequence", summary: "clause join with no clause before it" },
+  "clausePart.standaloneJoin": { anchor: "join-across-roles.md#vp-clause-forms", summary: "clause join with no clause before it" },
   "xJoinClose.JoinX": { anchor: "join-across-roles.md#clause-sequence", summary: "/x/ join fence" },
 
   "unit.islandUnit": { anchor: "joins.md#scope-islands-join", summary: "scope island" },
@@ -91,14 +91,16 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "gCoord.gCoordPart": { anchor: "predication.md#classification", summary: "/ɡ/ phrase parts" },
   "gCoordPart.gPackage": { anchor: "predication.md#classification", summary: "clause-level adjective" },
   "gCoordPart.gJoinClose": { anchor: "joins.md#right-close", summary: "/ɡ/ join after its adjectives" },
-  "gCoordPart.standaloneJoin": { anchor: "comparatives.md#comparatives", summary: "standalone /ɡ/ join" },
+  "gCoordPart.standaloneJoin": {
+    anchor: "predication.md#classification-packaging",
+    summary: "/ɡ/ join closing the adjective on the noun before it",
+  },
   "gJoinClose.JoinG": { anchor: "joins.md#join-type-vowel-series", summary: "/ɡ/ join fence" },
-  "gJoinClose.sharedAfterJoin": { anchor: "comparatives.md#comparative-shared-scale", summary: "shared word after a /ɡ/ join" },
+  "gJoinClose.sharedAfterJoin": { anchor: "numbers-applied.md#ranges", summary: "continuum /ɡ/ after a join of number endpoints" },
 
   "hCoord.hCoordPart": { anchor: "clause.md#adverbs-h", summary: "/h/ phrase parts" },
   "hCoordPart.hUnitRule": { anchor: "clause.md#adverbs-h", summary: "adverb or stance word" },
   "hCoordPart.hJoinClose": { anchor: "join-across-roles.md#stance-joins", summary: "/h/ join after its adverbs" },
-  "hCoordPart.standaloneJoin": { anchor: "join-across-roles.md#stance-joins", summary: "standalone /h/ join" },
   "hJoinClose.JoinH": { anchor: "join-across-roles.md#stance-joins", summary: "/h/ join fence" },
 
   "hUnitRule.W": { anchor: "clause.md#adjective-detail-w", summary: "/w/ detail on an adverb" },
@@ -133,13 +135,12 @@ export const TOKEN_CONSTRUCTIONS: Record<TokenBranch, ConstructionEntry> = {
   writingSpanSlot: { anchor: "spans.md#pos", summary: "written span in a non-noun slot" },
   writingSpan: { anchor: "spans.md#writing", summary: "written span as a noun" },
   spanOpen: { anchor: "spans.md#shape", summary: "spoken span open" },
-  standInVerb: { anchor: "dependents.md#stand-in", summary: "stand-in on /v/" },
   standIn: { anchor: "dependents.md#stand-in", summary: "stand-in (darl / barl / …)" },
   join: { anchor: "joins.md#join-type-vowel-series", summary: "join fence word" },
   joinAct: { anchor: "join-across-roles.md#join-act-verbs", summary: "join-act verb" },
   joinRelationG: { anchor: "join-across-roles.md#join-relations", summary: "join-relation on /ɡ/" },
   joinRelationH: { anchor: "join-across-roles.md#join-relations", summary: "join-relation on /h/ or /th/" },
-  greeting: { anchor: "word-endings.md#greeting", summary: "greeting citation" },
+  greeting: { anchor: "x-compounds.md#conversation-length", summary: "conversation-length bid (citation + x + vowel + -n)" },
   polar: { anchor: "questions.md#polar-stance", summary: "polar stance particle" },
   force: { anchor: "speech-moves.md#speech-act", summary: "speech-act word" },
   jFallbackVocative: { anchor: "speech-moves.md#vocative", summary: "any other /j/ word read as a vocative" },
@@ -176,7 +177,7 @@ export const WORD_READING_CONSTRUCTIONS: Record<LexReading, ConstructionEntry> =
   ordinary: { anchor: "clause.md#role-letters", summary: "ordinary content reading" },
   value: { anchor: "values.md#need-inventory", summary: "need reading" },
   ability: { anchor: "intention.md#ability", summary: "ability reading" },
-  greeting: { anchor: "word-endings.md#greeting", summary: "greeting" },
+  greeting: { anchor: "x-compounds.md#conversation-length", summary: "conversation-length bid" },
   restrictor: { anchor: "restrictors.md#restrictors", summary: "restrictor" },
   mood: { anchor: "knowing.md#may", summary: "closed stance mood" },
   locative: { anchor: "relations.md#locative-relations", summary: "locative relation" },
@@ -231,6 +232,7 @@ export const RESOLVE_CONSTRUCTIONS: Record<Exclude<`${AnaphorKind}.${"bound" | "
 export const READING_CONSTRUCTIONS = {
   existence: { anchor: "predication.md#existence", summary: "verbless /z/ clause: there is …" },
   bareQuestion: { anchor: "questions.md#question", summary: "jol. / jom. with no body: Huh? / Hm?" },
+  greeting: { anchor: "word-endings.md#greeting", summary: "a named citation said alone: hello / goodbye" },
 } satisfies Record<string, ConstructionEntry>;
 
 function prefixed(prefix: string, entries: Record<string, ConstructionEntry>): [string, ConstructionEntry][] {
@@ -269,6 +271,12 @@ export const REJECTIONS = {
   objectNeedsVerb: { anchor: "predication.md#existence", summary: "an object /d/ needs a verb" },
   numberResumeUnbound: { anchor: "numbers.md#digitless", summary: "a number -r needs an earlier number to match" },
   shortResumeUnbound: { anchor: "pronouns.md#resume-r", summary: "a short -r resume needs an earlier word to match" },
+  leftFence: { anchor: "joins.md#right-close", summary: "a join word closes its conjuncts; it never comes before them" },
+  emptyIsland: { anchor: "spans.md#scope-islands", summary: "a scope island needs words between its edges" },
+  islandBinder: { anchor: "spans.md#scope-islands", summary: "a scope island needs a binder inside: an /h/ word or a join" },
+  asOfIntroduceBound: { anchor: "relations.md#as-of", summary: "an as-of word introduces its bound with a /b/ word" },
+  asOfResumeBound: { anchor: "relations.md#as-of", summary: "an as-of resume (-r) takes no /b/" },
+  asOfPerHost: { anchor: "relations.md#as-of", summary: "one /h/ host takes at most one as-of pair" },
 } satisfies Record<string, ConstructionEntry>;
 
 export type RejectionId = keyof typeof REJECTIONS;

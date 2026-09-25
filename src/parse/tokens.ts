@@ -126,7 +126,6 @@ export type TokenBranch =
   | "writingSpanSlot"
   | "writingSpan"
   | "spanOpen"
-  | "standInVerb"
   | "standIn"
   | "join"
   | "joinAct"
@@ -154,7 +153,7 @@ export function classifyTokenBranch(word: LexWord): { type: AgelanTokenType; bra
   }
   if (family.kind === "x" && family.xFamily === "span") return { type: SpanOpen, branch: "spanOpen" };
 
-  if (isStandIn(word)) return pos === "v" ? { type: V, branch: "standInVerb" } : { type: Odo, branch: "standIn" };
+  if (isStandIn(word)) return { type: Odo, branch: "standIn" };
 
   if (family.kind === "joinMarker" && reading === "join" && pos && pos in JOIN_BY_POS) {
     return { type: JOIN_BY_POS[pos as keyof typeof JOIN_BY_POS], branch: "join" };

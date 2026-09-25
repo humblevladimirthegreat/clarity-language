@@ -36,7 +36,6 @@ import { isAsOfOverlay, isNamedStandIn, isStandIn } from "./classify.js";
 import type {
   BodyClause,
   Clause,
-  ClauseCoord,
   CoordShared,
   GPackage,
   HUnit,
@@ -276,7 +275,7 @@ class AgelanSentenceParser extends CstParser {
         ALT: () => this.SUBRULE(this.gCoord),
       },
       {
-        GATE: () => tokenIs(this.LA(laAfterW(this)), H, JoinH),
+        GATE: () => this.LA(laAfterW(this)).tokenType === H,
         ALT: () => this.SUBRULE(this.hCoord),
       },
       {
@@ -545,26 +544,17 @@ class AgelanSentenceParser extends CstParser {
     });
   });
 
+  // No standalone `/h/` join: plain `/h/` forms are restrictors, and a stance join closes the stance words before it.
   public hCoordPart = this.RULE("hCoordPart", () => {
-    this.OR([
-      {
-        GATE: () => this.LA(1).tokenType === JoinH,
-        ALT: () => this.SUBRULE(this.hJoinClose, { LABEL: "standaloneJoin" }),
+    this.AT_LEAST_ONE({
+      GATE: () => this.LA(laAfterW(this)).tokenType === H,
+      DEF: () => {
+        this.SUBRULE(this.hUnitRule);
       },
-      {
-        ALT: () => {
-          this.AT_LEAST_ONE({
-            GATE: () => this.LA(laAfterW(this)).tokenType === H,
-            DEF: () => {
-              this.SUBRULE(this.hUnitRule);
-            },
-          });
-          this.OPTION(() => {
-            this.SUBRULE2(this.hJoinClose);
-          });
-        },
-      },
-    ]);
+    });
+    this.OPTION(() => {
+      this.SUBRULE(this.hJoinClose);
+    });
   });
 
   // Nothing is SHARED after a /h/ or /th/ join; `/w/` before the join word grades the list.
@@ -715,8 +705,10 @@ function allowsImpliedSubject(word: LexWord): boolean {
 }
 
 function disambiguateClause(units: Unit[]): Unit[] {
-  const hasVp = units.some((u) => u.kind === "vp");
-  if (hasVp || units.length !== 1 || units[0]?.kind !== "np") return units;
+  // A trailing `/ɡ/` join fence (`zazawan godogol gul`) closes the predicate, not a second clause part.
+  const rest = units.slice(1);
+  const onlyGFences = rest.every((u) => u.kind === "predicate" && u.adj.word.family.kind === "joinMarker");
+  if (units[0]?.kind !== "np" || !onlyGFences) return units;
 
   const coord = units[0].coord;
   const part = coord.parts[0];
@@ -737,6 +729,7 @@ function disambiguateClause(units: Unit[]): Unit[] {
       },
     },
     { kind: "predicate", adj },
+    ...rest,
   ];
 }
 
@@ -1022,6 +1015,14 @@ function flattenGCoord(cst: CstNode): Unit[] {
     for (const g of childNodes(part, "gPackage")) {
       units.push({ kind: "predicate", adj: buildGPackage(g) });
     }
+    // Keep the fence (`gul`, `gel`, …) and its shared word so neither is silently dropped.
+    const { join, shared } = joinFromClose(partJoinClose(part, "gJoinClose"));
+    if (join) units.push({ kind: "predicate", adj: { word: join, modifiers: [] } });
+    for (const item of shared) {
+      if (!("word" in item)) continue;
+      if (item.word.pos === "g") units.push({ kind: "predicate", adj: item as GPackage });
+      else units.push({ kind: "h", unit: item as HUnit });
+    }
   }
   return units;
 }
@@ -1179,176 +1180,6 @@ function buildUtterance(cst: CstNode): Utterance {
   return { left, bodies };
 }
 
-function islandHasBinder(island: IslandUnit): boolean {
-  const walk = (units: Unit[]): boolean => {
-    for (const unit of units) {
-      if (unit.kind === "h") return true;
-      if (unit.kind === "np" && unit.coord.parts.some((p) => p.join)) return true;
-      if (unit.kind === "vp" && unit.coord.parts.some((p) => p.join)) return true;
-      if (unit.kind === "clauseCoord") return true;
-      if (unit.kind === "island" && walk(unit.island.units)) return true;
-      if (unit.kind === "np") {
-        for (const part of unit.coord.parts) {
-          for (const item of part.items) {
-            if (item.kind === "island" && walk(item.island.units)) return true;
-          }
-        }
-      }
-    }
-    return false;
-  };
-  return walk(island.units);
-}
-
-function validateLeadingJoinFence<T extends { join?: LexWord }>(
-  parts: T[],
-  isEmpty: (part: T) => boolean,
-): void {
-  if (parts.length < 2) return;
-  const first = parts[0]!;
-  if (isEmpty(first) && first.join) {
-    throw new SentenceParseError("Illegal left fence: join before conjuncts");
-  }
-}
-
-/** `A zam B zal` is legal nesting (`[[A zam] B zal]`), not an infix join (joins.md § Fence nesting). */
-function validateNpFences(coord: NpCoord): void {
-  validateLeadingJoinFence(coord.parts, (part) => part.items.length === 0);
-}
-
-function validateVpFences(coord: VpCoord): void {
-  validateLeadingJoinFence(coord.parts, (part) => part.items.length === 0);
-}
-
-function validateClauseCoordFences(coord: ClauseCoord): void {
-  validateLeadingJoinFence(coord.parts, (part) => part.clauses.length === 0);
-}
-
-function validateAsOfWord(word: LexWord, bound: LexWord | undefined): void {
-  if (!isAsOfOverlay(word)) return;
-  if (word.ending === "r" && bound) {
-    throw new SentenceParseError("As-of resume does not take /b/");
-  }
-  if (word.ending !== "r" && !bound) {
-    throw new SentenceParseError("As-of introduce needs /b/");
-  }
-}
-
-function validateGPackageAsOf(pkg: GPackage): void {
-  validateAsOfWord(pkg.word, pkg.bound);
-  if (pkg.asOf) validateAsOfWord(pkg.asOf.word, pkg.asOf.bound);
-  for (const adj of pkg.boundAdjs ?? []) validateGPackageAsOf(adj);
-}
-
-function validateSharedAsOf(shared: CoordShared[]): void {
-  for (const item of shared) {
-    if ("modifiers" in item && "word" in item && !("unit" in item)) {
-      validateGPackageAsOf(item as GPackage);
-    } else if ("word" in item && "modifiers" in item) {
-      const h = item as HUnit;
-      validateAsOfWord(h.word, h.bound);
-    }
-  }
-}
-
-function validateNpAsOf(coord: NpCoord): void {
-  for (const part of coord.parts) {
-    for (const item of part.items) {
-      if (item.kind === "package") {
-        if (item.package.glAdj) validateGPackageAsOf(item.package.glAdj);
-        for (const adj of item.package.adjs) validateGPackageAsOf(adj);
-      }
-    }
-    validateSharedAsOf(part.shared);
-  }
-}
-
-function validateVpAsOf(coord: VpCoord): void {
-  for (const part of coord.parts) validateSharedAsOf(part.shared);
-}
-
-function validateClauseAsOf(units: Unit[]): void {
-  let hAsOf = 0;
-  for (const unit of units) {
-    if (unit.kind === "h") {
-      validateAsOfWord(unit.unit.word, unit.unit.bound);
-      if (isAsOfOverlay(unit.unit.word)) hAsOf += 1;
-    }
-    if (unit.kind === "predicate") validateGPackageAsOf(unit.adj);
-    if (unit.kind === "np") validateNpAsOf(unit.coord);
-    if (unit.kind === "vp") validateVpAsOf(unit.coord);
-    if (unit.kind === "clauseCoord") {
-      for (const part of unit.coord.parts) {
-        for (const clause of part.clauses) validateClauseAsOf(clause.units);
-      }
-    }
-  }
-  if (hAsOf > 1) {
-    throw new SentenceParseError("At most one as-of pair per /h/ host");
-  }
-}
-
-function validateUnits(units: Unit[]): void {
-  validateClauseAsOf(units);
-  for (const unit of units) {
-    if (unit.kind === "np") {
-      validateNpFences(unit.coord);
-      for (const part of unit.coord.parts) {
-        for (const item of part.items) {
-          if (item.kind === "island") {
-            if (item.island.units.length === 0) {
-              throw new SentenceParseError("Empty scope island");
-            }
-            if (!islandHasBinder(item.island)) {
-              throw new SentenceParseError("Illegal binderless scope island");
-            }
-            validateUnits(item.island.units);
-          }
-        }
-      }
-    }
-    if (unit.kind === "vp") {
-      validateVpFences(unit.coord);
-    }
-    if (unit.kind === "island") {
-      if (unit.island.units.length === 0) {
-        throw new SentenceParseError("Empty scope island");
-      }
-      if (!islandHasBinder(unit.island)) {
-        throw new SentenceParseError("Illegal binderless scope island");
-      }
-      validateUnits(unit.island.units);
-    }
-    if (unit.kind === "span") {
-      for (const clause of unit.span.content) validateUnits(clause.units);
-    }
-    if (unit.kind === "clauseCoord") {
-      validateClauseCoordFences(unit.coord);
-      for (const part of unit.coord.parts) {
-        for (const clause of part.clauses) validateUnits(clause.units);
-      }
-    }
-  }
-}
-
-function validateResult(result: ParseResult): void {
-  for (const utterance of result.utterances) {
-    if (
-      utterance.left.vocatives.length === 0 &&
-      utterance.left.polars.length === 0 &&
-      !utterance.left.force &&
-      !utterance.left.hook &&
-      utterance.bodies.length === 0
-    ) {
-      throw new SentenceParseError("Empty utterance");
-    }
-    for (const body of utterance.bodies) {
-      validateUnits(body.clause.units);
-      if (body.clause.dependent) validateUnits(body.clause.dependent.clause.units);
-    }
-  }
-}
-
 export function parseSentenceTokens(tokens: IToken[]): ParseResult {
   parserInstance.input = tokens;
   const cst = parserInstance.document();
@@ -1362,9 +1193,7 @@ export function parseSentenceTokens(tokens: IToken[]): ParseResult {
   }
 
   const utterances = childNodes(cst, "utterance").map(buildUtterance);
-  const result = { utterances };
-  validateResult(result);
-  return result;
+  return { utterances };
 }
 
 /** Parse and also return the CST (construction tracing reads rule / child keys off it). */

@@ -64,6 +64,21 @@ const ROWS: Row[] = [
   { invalid: "zodor vawalal.", rejection: "shortResumeUnbound", valid: "zodogor vawalal." },
   { invalid: "zazawan vawalal hogor.", rejection: "shortResumeUnbound", valid: "zazawan vawalal. zazar vajul." },
   { invalid: "zazawan g+r.", rejection: "numberResumeUnbound", valid: "zululon g+. zazawan g+r." },
+  { invalid: "zam zadagal zagadal.", rejection: "leftFence", valid: "zadagal zagadal zam." },
+  { invalid: "^ ^ zazawan vawalal.", rejection: "emptyIsland", valid: "^ zazawan zululon zam ^ vawalal." },
+  { invalid: "^ zazawan ^ vawalal.", rejection: "islandBinder", valid: "^ zazawan zululon zam ^ vawalal." },
+  { invalid: "zazawan helerem vawalal.", rejection: "asOfIntroduceBound", valid: "zazawan helerem b_#22,7 vawalal." },
+  { invalid: "zazawan helerer b_#22,7 vawalal.", rejection: "asOfResumeBound", valid: "zazawan helerer vawalal." },
+  {
+    invalid: "zululon thonenom helerem b_#22,7 hobomam b_#3 vebarul.",
+    rejection: "asOfPerHost",
+    valid: "zululon thonenom helerem b_#22,7 vebarul.",
+  },
+  {
+    invalid: "zazawan vawalal thul.",
+    rejection: undefined,
+    valid: "zazawan vawalal thurugum banunul thul.",
+  },
   // Grammar-level: a second turn starts only after a period.
   { invalid: "jol jol vazanal.", rejection: undefined, valid: "jol. jol vazanal." },
 ];

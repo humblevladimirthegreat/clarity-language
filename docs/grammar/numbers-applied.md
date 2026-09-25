@@ -146,7 +146,15 @@ All three pieces:
 2. Join **`a`** / **`e`** / **`ue`** / **`ua`** (or **`ar`** / **`er`**; stacked **`ue`** / **`ua`** take no **-r**).
 3. A **SHARED continuum** `/ɡ/` immediately after the join (a lexicon line, or stock **`gurulem`** when the line is pure numeric or already clear).
 
-The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …).
+The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). A count on a noun is a `/ɡ/` number, so a counted range closes with `gal`:
+
+> `zodogol g+3 g+5 gal gurulem vawalal.`
+>
+> 🔊 *zodogol grarel graval gal gurulem vawalal.*
+>
+> [z-dog | g-three | g-five] | g-and | g-measurement | v-walk
+>
+> "Between 3 and 5 dogs walk."
 
 Join vowels (Beginner already used ranked **`e`** for people):
 
