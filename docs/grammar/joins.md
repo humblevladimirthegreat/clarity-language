@@ -106,13 +106,13 @@ A standalone join fills its slot with no items. In the object slot, `dal` is *no
 
 > `zazawan dal vejel.`
 >
-> z-Azawan | d-and | v-see
+> z-Azawan | d-none | v-see
 >
 > "Azawan sees nothing."
 
 > `zazawan bal vezehel.`
 >
-> z-Azawan | b-and | v-tell
+> z-Azawan | b-none | v-tell
 >
 > "Azawan tells nobody."
 
@@ -582,7 +582,7 @@ When English would say *every cat* rather than *everything but the cat*, write *
 
 > `zual gagadal.`
 >
-> [z-everything-but | g-cat]
+> [z-everything | g-cat]
 >
 > "every cat."
 
@@ -594,7 +594,7 @@ With a plain verb, *every cat* acts one by one: **`zual gagadal vajul.`** is *ea
 
 > `zul gagadal vajul.`
 >
-> [z-not | g-cat] | v-sit
+> [z-no | g-cat] | v-sit
 >
 > "No cat sits."
 
@@ -602,7 +602,7 @@ For English *whoever* / *whatever*, the kind is a [role compound](roles.md#role-
 
 > `zual gaxawalal vuzunul.`
 >
-> [z-everything-but | g-agent-x-walk] | v-sing
+> [z-everything | g-agent-x-walk] | v-sing
 >
 > "Whoever walks sings."
 
@@ -691,7 +691,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 ::: details Show answer
 `zual gunurul.`
 
-[z-everything-but | g-ring]
+[z-everything | g-ring]
 :::
 
 **3.** *(happy Azawan) and (happy Ululon)*
@@ -765,7 +765,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 
-[z-everything-but.open | g-ring]
+[z-everything.open | g-ring]
 
 *every ring, as far as I know*
 :::
@@ -1015,7 +1015,7 @@ NAME[z-equal-rank]
 
 ::: details Show answer
 
-[z-Azawan | SCOPE[z-and] | z-and.open]
+[z-Azawan | SCOPE[z-none] | z-and.open]
 
 *Azawan and nothing*
 :::

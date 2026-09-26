@@ -409,3 +409,15 @@ describe("morphGlossLine — tone marks", () => {
     expectLine("%zazawan vawalal.", "%z-Azawan | v-walk");
   });
 });
+
+describe("morphGlossLine — standalone joins", () => {
+  it("standalone reads none / everything; items keep list readings", () => {
+    expectLine("zal vawalal.", "z-none | v-walk");
+    expectLine("zam vawalal.", "z-none.open | v-walk");
+    expectLine("zual vawalal.", "z-everything | v-walk");
+    expectLine("zazawan vawalal ol bual.", "z-Azawan | v-walk | [at | b-everything]");
+    expectLine("zazawan vejel dal.", "z-Azawan | v-see | d-none");
+    expectLine("zazawan zual vawalal.", "[z-Azawan | z-everything-but] | v-walk");
+    expectLine("zazawan zululon zal vawalal.", "[z-Azawan | z-Ululon | z-and] | v-walk");
+  });
+});

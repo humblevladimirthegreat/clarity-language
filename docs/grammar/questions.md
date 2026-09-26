@@ -38,7 +38,7 @@ If the subject is *nobody* (`zal`) or the clause is *nothing happened* (`xal`), 
 
 > `jol zal vawalal.`
 >
-> j-question | z-and | v-walk
+> j-question | z-none | v-walk
 >
 > "Does nobody walk?"
 
@@ -324,7 +324,7 @@ j-question | ?z-who | v-write
 
 ::: details Show answer
 
-j-question | z-and | v-sit
+j-question | z-none | v-sit
 
 *Does nobody sit?*
 :::

@@ -901,7 +901,7 @@ z-Azawan | h-always | v-sit | th-UNCOUNTERED
 ::: details Show answer
 `zual gaxedegel vedegel tharazal.`
 
-[z-everything-but | g-agent-x-teach] | v-teach | th-FORMAL
+[z-everything | g-agent-x-teach] | v-teach | th-FORMAL
 :::
 
 **8.** *Every cat sleeps, by natural necessity* (plus a trail of cases).
@@ -909,7 +909,7 @@ z-Azawan | h-always | v-sit | th-UNCOUNTERED
 ::: details Show answer
 `zual gagadal velebel thabelel thabawam.`
 
-[z-everything-but | g-cat] | v-sleep | th-NATURAL | th-PATTERN
+[z-everything | g-cat] | v-sleep | th-NATURAL | th-PATTERN
 :::
 
 **9.** *Ululon never punches, under soccer rules.*
@@ -925,7 +925,7 @@ z-Ululon | h-never | v-punch | [th-RULE | b-soccer]
 ::: details Show answer
 `zuam gadadam thugudol.`
 
-[z-everything-but.open | g-claim] | th-COMMON
+[z-everything.open | g-claim] | th-COMMON
 :::
 
 #### Agalan → English {#advanced-agalan-to-english}
@@ -988,7 +988,7 @@ z-Ululon | h-always | v-write | th-UNCOUNTERED
 
 ::: details Show answer
 
-[z-everything-but | g-agent-x-fight] | v-fight | th-FORMAL
+[z-everything | g-agent-x-fight] | v-fight | th-FORMAL
 
 *Every fighter fights, by definition.*
 :::
@@ -997,7 +997,7 @@ z-Ululon | h-always | v-write | th-UNCOUNTERED
 
 ::: details Show answer
 
-[z-everything-but | g-cat] | v-think | th-NATURAL | th-PATTERN
+[z-everything | g-cat] | v-think | th-NATURAL | th-PATTERN
 
 *Every cat thinks, by natural necessity* (plus a trail of cases).
 :::
@@ -1015,7 +1015,7 @@ z-Azawan | h-never | v-sit | [th-RULE | b-soccer]
 
 ::: details Show answer
 
-[z-everything-but.open | g-proof] | th-COMMON
+[z-everything.open | g-proof] | th-COMMON
 
 *Every proof that comes to mind, usually.*
 :::

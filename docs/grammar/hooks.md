@@ -466,13 +466,13 @@ Put a [standalone join](joins.md#standalone-phrase) in the `/b/` slot after a pl
 
 > `zazawan vawalal ol bual.`
 >
-> z-Azawan | v-walk | [at | b-everything-but]
+> z-Azawan | v-walk | [at | b-everything]
 >
 > "Azawan walks everywhere."
 
 > `zodogol velebel ol bal.`
 >
-> z-dog | v-sleep | [at | b-and]
+> z-dog | v-sleep | [at | b-none]
 >
 > "The dog sleeps nowhere."
 

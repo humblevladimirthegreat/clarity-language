@@ -120,6 +120,14 @@ const JOIN_JOB: Record<string, string> = {
   ue: "rank/less",
 };
 
+/** Standalone readings ([joins.md § Beginner forms](../../docs/grammar/joins.md#beginner-forms)). */
+const JOIN_JOB_STANDALONE: Record<string, string> = {
+  a: "none",
+  o: "no-options",
+  u: "no",
+  ua: "everything",
+};
+
 const JOIN_ACT: Record<string, string> = {
   a: "includes",
   o: "choose",
@@ -312,6 +320,8 @@ export type MorphGlossContext = {
   passThrough?: boolean;
   /** `/v/` join-shaped form used as the head of a following dependent sentence. */
   dependentVerb?: boolean;
+  /** Join closing no items (shared `/ɡ/` allowed): `zal` *none*, `zual` *everything*. */
+  standaloneJoin?: boolean;
 };
 
 export type CompareMorphGlossResult = {
@@ -765,11 +775,47 @@ function analyzeLine(
     }
   });
 
+  // A lone join word is a form citation (`zam` = z-and.open), not a standalone join.
+  const citation = words.length === 1;
+  const standaloneIndexes = citation ? new Set<number>() : standaloneJoinIndexes(words, parsed);
   const passThrough = mentionPassThroughFlags(words);
-  const ctxByIndex = words.map((word, index) =>
-    contextFor(word, index, words, parsed?.resolve, parsed, passThrough[index], dependentVerbIndexes.has(index)),
-  );
+  const ctxByIndex = words.map((word, index) => {
+    const ctx = contextFor(word, index, words, parsed?.resolve, parsed, passThrough[index], dependentVerbIndexes.has(index));
+    if (standaloneIndexes.has(index)) ctx.standaloneJoin = true;
+    return ctx;
+  });
   return { words, ctxByIndex, parsed };
+}
+
+/** Word indexes of join closes whose coord part has no items (surface order per raw form). */
+function standaloneJoinIndexes(words: LexWord[], parsed: ParseResult | undefined): Set<number> {
+  const out = new Set<number>();
+  if (!parsed) return out;
+  // Every join close in tree order, flagged standalone or not, queued per raw form.
+  const queues = new Map<string, boolean[]>();
+  // A part with no items after an earlier part closes over that part (`vawalal vurunul val vul`), so only a first part can stand alone.
+  const walk = (node: unknown, firstPart = true): void => {
+    if (Array.isArray(node)) return node.forEach((child) => walk(child));
+    if (!node || typeof node !== "object") return;
+    const obj = node as Record<string, unknown>;
+    const join = obj.join as { raw?: string } | undefined;
+    if (Array.isArray(obj.items) && join && typeof join.raw === "string") {
+      const queue = queues.get(join.raw) ?? [];
+      queue.push(firstPart && obj.items.length === 0);
+      queues.set(join.raw, queue);
+    }
+    for (const [key, value] of Object.entries(obj)) {
+      if (key === "parts" && Array.isArray(value)) value.forEach((part, i) => walk(part, i === 0));
+      else walk(value);
+    }
+  };
+  walk(parsed.utterances);
+  words.forEach((word, index) => {
+    if (word.family.kind !== "joinMarker" || word.reading !== "join") return;
+    const queue = queues.get(word.raw);
+    if (queue?.shift()) out.add(index);
+  });
+  return out;
 }
 
 /** Spoken TYPE **o** interiors (atomic next token, or until the matching close). */
@@ -1027,7 +1073,7 @@ function fenceJoinLabel(
 
   // Open **o** leaves the pick optional, so it is no longer *exactly one*.
   if (series === "o" && ending === "m") return "or.open";
-  const job = JOIN_JOB[series] ?? series;
+  const job = (ctx.standaloneJoin ? JOIN_JOB_STANDALONE[series] : undefined) ?? JOIN_JOB[series] ?? series;
   if (ending === "m") return `${job}.open`;
   if (ending === "n") return `${job}.named`;
   return job;
