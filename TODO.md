@@ -6,6 +6,8 @@ my name: obogan (innovation)
 
 sample complex sentence: jael zugobon zam zedonen zal guzumum. zadedal zogovel zol zanunul zal ^ hurorom bazawan ^ vawalal. glonunul bululon zodogol gonunul bazawan gelulul vujudul daxal zazar vawalal xuxul. dadedal on dogovel.
 
+use [skip-cd] for amplify to not deploy. 
+
 # TODO
 
 Prosody

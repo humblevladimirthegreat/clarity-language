@@ -78,16 +78,6 @@ None of these is the "right" one. Letting something go with *who knows* is fine.
 >
 > "Uhubun may be crying - who knows."
 
-It works in questions too, when asking *is* the finding out:
-
-> `jol zazawan thodohol vubunul dululon.`
->
-> j-question | z-Azawan | th-may-find-out | v-punch | d-Ululon
->
-> "Might Azawan be punching Ululon? Let's find out."
-
-This is separate from the verb *to think* (`vodohol` is just the act of thinking), and separate from evidentiality, which says *how* you know something you're claiming.
-
 Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/knowing.html#may
 
 ### Greetings and Goodbyes Set Conversation Length
