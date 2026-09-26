@@ -11,7 +11,7 @@ use [skip-cd] for amplify to not deploy.
 # TODO
 
 Prosody
-
+-confirm amplify build still works
 -consider removing some emotion words from lexicon
 -expressiveness review
 -do a style pass in grammar-docs. Check for adherence to doc-style and otherwise ensure natural sounding explanations.
