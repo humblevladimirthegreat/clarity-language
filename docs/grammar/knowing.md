@@ -338,6 +338,60 @@ English *has walked* and *used to walk* often smuggle **when** the event sits. A
 
 Prefer floating `/th/`. Use `/w/` only when the standing grades the `/ɡ/` adjective it sits immediately before. The overlay ending stays **-m**.
 
+### Already, still, not yet, no longer {#phasal}
+
+English *already*, *still*, *not yet*, and *no longer* do not place an event in time. Each compares what is true **now** with a change: has it come, or not? That is a question of standing, like RESIDUE, so Agalan uses four `/h/` words, not a tense. (cue: each root pictures the stage the change is at)
+
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`hahagam`** | the change has happened | *already* | `ahagal` *hatch* | 🐣: the chick is already out |
+| **`hanogom`** | the state goes on | *still* | `anogol` *anchor* | ⚓: the ship is held where it was |
+| **`hezedem`** | the change is expected but has not come | *not yet* | `ezedel` *seedling* | 🌱: not grown yet |
+| **`huwulum`** | the state has stopped | *no longer* / *not anymore* | `uwulul` *wilt* | 🥀: no longer fresh |
+
+> `zazawan hanogom vawalal.`
+>
+> z-Azawan | h-still | v-walk
+>
+> "Azawan is still walking."
+
+> `zazawan hezedem vawalal.`
+>
+> z-Azawan | h-not-yet | v-walk
+>
+> "Azawan hasn't walked yet."
+
+> `zazawan huwulum vawalal ol bohohul.`
+>
+> z-Azawan | h-no-longer | v-walk | [at | b-house]
+>
+> "Azawan doesn't walk at the house anymore."
+
+The ending says whether the situation is expected to **change back**. Use **-m** when it could, or when you do not know. Use **-l** when it is not expected to.
+
+| Agalan | Use | English |
+|--------|-----|---------|
+| `hahagal` | done, and it will stay done | *already, for good* |
+| `hanogol` | goes on, with no end in sight | *still, and it will keep on* |
+| `hezedel` | not yet, but it is sure to come | *not yet, but it will* |
+| `huwulul` | stopped, and it will not come back | *never again* |
+
+> `zululon hahagal vebarul.`
+>
+> z-Ululon | h-already.lasting | v-departure
+>
+> "Ululon has already left, for good."
+
+When only one `/ɡ/` adjective is still or no longer so, write the same word under `/w/` immediately before that adjective.
+
+> `zazawan dagadal wanogom gelulul vejel.`
+>
+> z-Azawan | [d-cat | [w-still | g-blue]] | v-see
+>
+> "Azawan sees a cat that is still blue."
+
+**Compare with:** RESIDUE **`thonenom`** says a finished outcome **still counts** on the tally, not that the act goes on. FORMER **`themebem`** retires a usual **pattern**; **`huwulum`** says any state or act has stopped.
+
 ### Notional (as-if framing)
 <a id="notional"></a>
 <a id="notional-mood"></a>
@@ -498,6 +552,14 @@ z-Azawan | th-LIVE | th-RESIDUE | v-tell | b-Uhubun
 z-Ululon | h-always | v-tell | th-FORMER | th-LIVE
 :::
 
+**11.** *Uhubun still screams — seen live.*
+
+::: details Show answer
+`zuhubun thadezem hanogom vazagal.`
+
+z-Uhubun | th-LIVE | h-still | v-scream
+:::
+
 #### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zazawan theherem vezehel buhubun.`
@@ -587,6 +649,15 @@ z-Uhubun | th-WITNESSED | th-RESIDUE | v-tell | b-Azawan
 z-Azawan | h-always | v-tell | th-FORMER
 
 *Azawan always tells — a former pattern, not today's.*
+:::
+
+**11.** `zululon hezedel vebarul.`
+
+::: details Show answer
+
+z-Ululon | h-not-yet.lasting | v-departure
+
+*Ululon hasn't left yet, but will.*
 :::
 
 ## Advanced {#advanced}

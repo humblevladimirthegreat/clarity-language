@@ -120,6 +120,7 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, emotion ACT
 | `evidential` | `mood` | LIVE / WITNESSED / … |
 | `residue` | `mood` | RESIDUE **`oneno`** |
 | `former_climate` | `mood` | FORMER **`emebe`** |
+| `phasal` | `mood` | *already* **`ahaga`** / *still* **`anogo`** / *not yet* **`ezede`** / *no longer* **`uwulu`** |
 | `may` | `mood` | MAY hold map (find out / default / who knows) |
 | `notional` | `mood` | NOTIONAL hold map |
 | `plan` | `mood` | map-resolution endings |

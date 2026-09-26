@@ -35,6 +35,7 @@ export const OVERLAY_KINDS = [
   "evidential",
   "residue",
   "former_climate",
+  "phasal",
   "may",
   "notional",
   "plan",

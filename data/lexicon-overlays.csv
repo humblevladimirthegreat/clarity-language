@@ -211,3 +211,19 @@ uxerenel,th,🟢,deontic,CONSENT-given,consent given outright by the affected (t
 uxerenem,th,🟢,deontic,CONSENT-assumed,consent assumed or inferred from the affected (the /b/ or else the actor),green light guessed from the one it happens to; I think they're OK with it,values.md#consent
 uxononel,th,⛔,deontic,CONSENT-refused,consent refused outright by the affected (overrides any earlier yes),no-entry sign from the one it happens to; they said no,values.md#consent
 uxononem,th,⛔,deontic,CONSENT-unlikely,consent presumed absent from the affected (they probably don't want it),no-entry sign guessed from the one it happens to; they probably don't want it,values.md#consent
+ahagal,h,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,knowing.md#phasal
+ahagal,w,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,knowing.md#phasal
+ahagam,h,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,knowing.md#phasal
+ahagam,w,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,knowing.md#phasal
+anogol,h,⚓,phasal,still.lasting,STILL phasal (the state continues); -l not expected to change back,anchor holds the ship where it was,knowing.md#phasal
+anogol,w,⚓,phasal,still.lasting,STILL phasal (the state continues); -l not expected to change back,anchor holds the ship where it was,knowing.md#phasal
+anogom,h,⚓,phasal,still,STILL phasal (the state continues); -m could change,anchor holds the ship where it was,knowing.md#phasal
+anogom,w,⚓,phasal,still,STILL phasal (the state continues); -m could change,anchor holds the ship where it was,knowing.md#phasal
+ezedel,h,🌱,phasal,not-yet.lasting,NOT-YET phasal (the change is expected but has not happened); -l not expected to change back,seedling has not grown up yet,knowing.md#phasal
+ezedel,w,🌱,phasal,not-yet.lasting,NOT-YET phasal (the change is expected but has not happened); -l not expected to change back,seedling has not grown up yet,knowing.md#phasal
+ezedem,h,🌱,phasal,not-yet,NOT-YET phasal (the change is expected but has not happened); -m could change,seedling has not grown up yet,knowing.md#phasal
+ezedem,w,🌱,phasal,not-yet,NOT-YET phasal (the change is expected but has not happened); -m could change,seedling has not grown up yet,knowing.md#phasal
+uwulul,h,🥀,phasal,no-longer.lasting,NO-LONGER phasal (the state has stopped); -l not expected to change back,wilted rose is no longer fresh,knowing.md#phasal
+uwulul,w,🥀,phasal,no-longer.lasting,NO-LONGER phasal (the state has stopped); -l not expected to change back,wilted rose is no longer fresh,knowing.md#phasal
+uwulum,h,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,knowing.md#phasal
+uwulum,w,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,knowing.md#phasal
