@@ -116,7 +116,7 @@ const JOIN_JOB: Record<string, string> = {
   uo: "anything-but",
   e: "rank/more",
   ae: "equal-rank",
-  oe: "ranked-or",
+  oe: "in-order",
   ue: "rank/less",
 };
 
@@ -129,7 +129,7 @@ const JOIN_ACT: Record<string, string> = {
   uo: "bars",
   e: "prioritizes",
   ae: "equates",
-  oe: "tries",
+  oe: "starts-with",
   ue: "deprioritizes",
 };
 
@@ -142,7 +142,7 @@ const JOIN_RELATION: Record<string, string> = {
   uo: "anything-but",
   e: "prioritizing",
   ae: "on-a-par",
-  oe: "for-trying",
+  oe: "starting-with",
   ue: "deprioritizing",
 };
 
@@ -1059,7 +1059,7 @@ function restrictorLabel(
   if (series === "ae") return `equally-when${open}`;
   if (series === "ao") return `when-any-of${open}`;
   if (series === "uo") return `anytime-except${open}`;
-  if (series === "oe") return `when-fallback${open}`;
+  if (series === "oe") return `when-in-order${open}`;
   return `${series}${open}`;
 }
 

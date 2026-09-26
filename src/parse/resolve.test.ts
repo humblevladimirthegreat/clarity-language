@@ -204,9 +204,14 @@ describe("resolve — SHARED (comparatives.md / numbers.md)", () => {
   });
 
   it("reads two number endpoints + SHARED as continuum", () => {
-    const { shared } = resolveOf("z+3 z+5 zel gumedul.");
+    const { shared } = resolveOf("z+3 z+5 zoel gumedul.");
     assert.equal(shared[0]!.role, "continuum");
     assert.equal(shared[0]!.shared.word.raw, "gumedul");
+  });
+
+  it("reads rank e with two numbers + SHARED as a scale, not a range", () => {
+    const { shared } = resolveOf("z+3 z+5 zel gumedul.");
+    assert.equal(shared[0]!.role, "scale");
   });
 
   it("does not treat bare z+3 z+5 zel as a continuum", () => {

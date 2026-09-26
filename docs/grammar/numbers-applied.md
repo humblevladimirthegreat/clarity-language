@@ -126,18 +126,18 @@ Vague degree uses `/w/` on the scale (`zel wogegal godowem …`) with no unit. D
 
 English *from 3 to 5* / *between 3 and 5* names a **band on a line**. Write two number endpoints inside a [phrase fence](joins.md), then a **SHARED continuum** `/ɡ/` that names the line (time, price, measure, …). That `/ɡ/` is the same SHARED slot [comparatives](comparatives.md) use; here it names a **dimension / quantity continuum**, not a ranking of people. The continuum is what makes the fence a range.
 
-> `z+3 z+5 zel gumem.`
+> `z+3 z+5 zoel gumem.`
 >
-> 🔊 *zrarel zraval zel gumem.*
+> 🔊 *zrarel zraval zoel gumem.*
 >
-> [z-three | z-five | z-rank/more | g-duration]
+> [z-three | z-five | z-in-order | g-duration]
 >
 > "from 3 to 5 in time."
 
 All three pieces:
 
 1. Exactly **two** endpoints of the **same kind** of number word (both scalar, both ordinal, or both digit-string / time).
-2. Join **`a`** / **`e`** / **`ue`** / **`ua`** (or **`ar`** / **`er`**; stacked **`ue`** / **`ua`** take no **-r**).
+2. Join **`a`** / **`oe`** / **`ua`** (or **`ar`**; stacked **`oe`** / **`ua`** take no **-r**).
 3. A **SHARED continuum** `/ɡ/` immediately after the join (a lexicon line, or stock **`gurulem`** when the line is pure numeric or already clear).
 
 The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). A count on a noun is a `/ɡ/` number, so a counted range closes with `gal`:
@@ -150,22 +150,21 @@ The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). A count on
 >
 > "Between 3 and 5 dogs walk."
 
-Join vowels (Beginner already used ranked **`e`** for people):
+Join vowels (Beginner already used ranked **`e`** for people; a range uses **sequence** **`oe`** instead):
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`a`** | unordered filled interval; both ends in | *between 3 and 5* (`z+3 z+5 zal gumem`) | **a** add |
-| **`e`** | directed path; first → second | *from 3 to 5* (`z+3 z+5 zel gumem`) | **e** order |
-| **`ue`** | directed reverse path (spoken order = path) | *from 5 to 3* (`z+5 z+3 zuel gumem`) | **u** undo + **e** order |
+| **`oe`** | directed path; first → second (spoken order = path, either direction) | *from 3 to 5* (`z+3 z+5 zoel gumem`); *from 5 to 3* (`z+5 z+3 zoel gumem`) | **o** one + **e** order: one after another |
 | **`ua`** | complement on the line | *outside 3–5* (`z+3 z+5 zual gumem`) | **u** undo + **a** add |
 
-**Compare with:** `zazawan zululon zel gomonam` (*Azawan is more challenging than Ululon*) ranks **people** on a scale. `z+3 z+5 zel gumem` is a **band** on a continuum. Place *from a station to a train* is two [locative](relations.md#spatial-path) `/h/` + `/b/` units, not this fence.
+**Compare with:** `zazawan zululon zel gomonam` (*Azawan is more challenging than Ululon*) ranks **people** on a scale. `z+3 z+5 zoel gumem` is a **band** on a continuum. Rank **`e`** puts the first item at the **top**; sequence **`oe`** puts it at the **start**. Place *from a station to a train* is two [locative](relations.md#spatial-path) `/h/` + `/b/` units, not this fence.
 
 **Not the same job as:** bare **`z+3 z+5 zel`** (*prefer 3 over 5*). Without the SHARED continuum, two number conjuncts are an ordinary join.
 
-Menu **`o`** / **`ao`** lists discrete values (*3 or 5* / *3 and/or 5*). Equative **`ae`** with numbers is *equal* / *approximately equal* (`z+5 z+5 zael` / `z+3 z+5 zaem`). Exclusive ranked **`oe`** is superlative / empty-superlative with a scale. Three or more number conjuncts under **`a`** are an ordinary list (`z+1 z+3 z+7 zal` = *1, 3, and 7*), even with SHARED. Single-item **`z+3 zal`** is *just 3*, not a ray.
+Menu **`o`** / **`ao`** lists discrete values (*3 or 5* / *3 and/or 5*). Equative **`ae`** with numbers is *equal* / *approximately equal* (`z+5 z+5 zael` / `z+3 z+5 zaem`). Three or more number conjuncts under **`a`** are an ordinary list (`z+1 z+3 z+7 zal` = *1, 3, and 7*), even with SHARED. Single-item **`z+3 zal`** is *just 3*, not a ray.
 
-Clock / date ranges: SHARED continuum **`gumem`** (or a host relation + `/b/`) with digit-string endpoints (`b_15,00 b_16,00 bel gumem`). Circumstance **`hal`** is a [restrictor](restrictors.md).
+Clock / date ranges: SHARED continuum **`gumem`** (or a host relation + `/b/`) with digit-string endpoints (`b_15,00 b_16,00 boel gumem`). Circumstance **`hal`** is a [restrictor](restrictors.md).
 
 ### Percent and percentage points {#percent-and-percentage-points}
 
@@ -303,11 +302,11 @@ z-Azawan | [b-meter | g-two] | v-walk
 **5.** *From 3 to 5 in time.*
 
 ::: details Show answer
-`z+3 z+5 zel gumem.`
+`z+3 z+5 zoel gumem.`
 
-🔊 *zrarel zraval zel gumem.*
+🔊 *zrarel zraval zoel gumem.*
 
-[z-three | z-five | z-rank/more | g-duration]
+[z-three | z-five | z-in-order | g-duration]
 :::
 
 **6.** *Ululon sees 911.*
@@ -333,11 +332,11 @@ z-Ululon | [d-rock | g-five] | v-punch
 **8.** *From 15 to 16 in time.*
 
 ::: details Show answer
-`z+15 z+16 zel gumem.`
+`z+15 z+16 zoel gumem.`
 
-🔊 *zrawoval zrawogul zel gumem.*
+🔊 *zrawoval zrawogul zoel gumem.*
 
-[z-15 | z-16 | z-rank/more | g-duration]
+[z-15 | z-16 | z-in-order | g-duration]
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -461,9 +460,11 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bedurem g
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
-English *less than 5* / *greater than 5* is a **bound**, not a two-endpoint band. When the **only** member of a [rank join](joins.md#rank-joins) fence (**`e`** / **`ue`**, and their open / named twins) is a compatible number word, that number is an extremum on the line. SHARED continuum is optional: absent = implicit numeric line; present = that named line (`z+5 zel gumem` = *time \< 5*). Special values such as +∞ use [digitless exponents](numbers.md#digitless-exponents) inside the number word (`g+e`).
+English *less than 5* / *greater than 5* is a **bound**, not a two-endpoint band. When the **only** member of a [rank join](joins.md#rank-joins) fence (**`e`** / **`ue`** / **`oe`**, and their open / named twins) is a compatible number word, that number is an extremum on the line. SHARED continuum is optional: absent = implicit numeric line; present = that named line (`z+5 zel gumem` = *time \< 5*). Special values such as +∞ use [digitless exponents](numbers.md#digitless-exponents) inside the number word (`g+e`).
 
 Why **`e`** gives *less than*: `X zel` says X is first / greatest, so everything else on the line is less than X. Likewise `X zuel` says X is last / least, so everything else is greater than X.
+
+Sequence **`oe`** reads the line the other way: `X zoel` says the path **starts** at X, so it is *from X on*. A path includes its starting point (like a [range](#ranges)), so this ray is **inclusive**: `z+5 zoel` is *5 or more*.
 
 > `z+5 zel.`
 >
@@ -479,17 +480,19 @@ Why **`e`** gives *less than*: `X zel` says X is first / greatest, so everything
 | **`z+5 zem`** | open / approximate less-than | *less than ~5* |
 | **`z+5 zuel`** | strict greater-than bound | *greater than 5* (`> 5`) |
 | **`z+5 zuem`** | open / approximate greater-than | *greater than ~5* |
+| **`z+5 zoel`** | inclusive ray from 5 | *5 or more* / *from 5 on* (`≥ 5`) |
+| **`z+5 zoem`** | open ray from about 5 | *from about 5 on* |
 | **`z+5 zen`** | named unspecified extremum | *under-fives*-style label |
 | **`z+5 zaen`** | named equal-to band | *equal-to-5* / tie label |
 | **`z+5 zuen`** | named floor band | conventional *greater-than* label |
 
-Same under `/d/` `/b/` `/ɡ/` (`g+5 gel` = modifier *\<5*; `d+10 duel` = object *\>10*). **`ae`** / **`oe`** single-item with a number are ordinary ranked single-item / triage. Boolean single-item (**`zal`** / **`zol`** / …) is *just this value*. Single-item **`z+ zel`** (zero-group) is ordinary single-item on plural/unspecified amount; +∞ is **`z+e`** / **`g+e`**.
+Same under `/d/` `/b/` `/ɡ/` (`g+5 gel` = modifier *\<5*; `d+10 duel` = object *\>10*). **`ae`** single-item with a number is an ordinary tie of one. Boolean single-item (**`zal`** / **`zol`** / …) is *just this value*. Single-item **`z+ zel`** (zero-group) is ordinary single-item on plural/unspecified amount; +∞ is **`z+e`** / **`g+e`**.
 
-Default bounds are **strict** (`<` / `>`). For **≤ 5** / **≥ 5**, use a two-endpoint [range](#ranges) with the bound included.
+Rank bounds (**`e`** / **`ue`**) are **strict** (`<` / `>`). The sequence ray (**`oe`**) is **inclusive** (`≥`). For **≤ 5**, use a two-endpoint [range](#ranges) with the bound included.
 
 Standalone **`e`** + **-r** = unspecified member of the *\< X* ray (`z+5 zer` → *some/whatever value \< 5*; under question → *which value \< 5?*). **`ue`** takes no **-r** (stacked forms never do: [joins](joins.md#unspecified-member-r-phrase)).
 
-**Compare with:** `z+3 z+5 zel gumem` (*from 3 to 5 in time*) is a two-endpoint range; `z+3 z+5 zel` is preference; `zazawan zel` (a person) is *only Azawan matters* / [superlative-with-scale](comparatives.md). A **single-item number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
+**Compare with:** `z+3 z+5 zoel gumem` (*from 3 to 5 in time*) is a two-endpoint range; `z+3 z+5 zel` is preference; `zazawan zel` (a person) is *only Azawan matters* / [superlative-with-scale](comparatives.md). A **single-item number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
 
 ### Half-open (exclude the high end only) {#half-open-exclude-the-high-end-only}
 

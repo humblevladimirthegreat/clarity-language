@@ -49,6 +49,16 @@ An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, cov
 
 Nothing is SHARED after a clause (`/x/`) join; each clause carries its own words.
 
+Sequence **`oe`** keeps its [phrase meaning](joins.md#sequence-oe) in both roles: the first item is where you start. Under `/v/` it is one subject doing steps in order; under `/x/` it fences a list of steps whose order is part of the message (a recipe, directions). Standalone **`xoel`** says the steps can go in any order.
+
+> `zazawan vawalal vurunul voel.`
+>
+> z-Azawan | [v-walk | v-run | v-in-order]
+>
+> "Azawan walks, then runs."
+
+**Compare with:** clause **`xan`** ([sequence](#sequence)) tells what happened next. **`xoel`** says the listed steps go in this order.
+
 A clause join with no clause before it is the standalone reading, like `zal` *nothing*: `xal` is *nothing happened*, and `xam` hedges it.
 
 > `xam.`
@@ -111,9 +121,9 @@ In the table, *reason* means any grounds a stance word can give: a cause, a sour
 | **ao** | `thaol` *take it however you like* | `thaom` *any framing is fine, I think* | — |
 | **ua** | `thual` *all things considered* | `thuam` *all known things considered* | — |
 | **uo** | `thuol` *anything goes* | `thuom` *anything goes, I think* | — |
-| **e** | `thel` *impartially* | `them` *I don't lean either way* | — |
+| **e** | `thel` *impartially* / *no decisive grounds* | `them` *I don't lean either way* | — |
 | **ae** | `thael` *equally balanced* | `thaem` *equally balanced, I think* | — |
-| **oe** | `thoel` *no decisive grounds* | `thoem` *no decisive reason comes to mind* | — |
+| **oe** | `thoel` *in no particular order* | `thoem` *not sure where to start* | — |
 | **ue** | `thuel` *no reason to object* | `thuem` *no objection that I know of* | — |
 
 Under a question, a standalone **-r** stance join is a [fill-ask](questions.md#fill-ask-r) for the grounds. Every vowel takes **-r** there.
@@ -174,10 +184,10 @@ These are ordinary content verbs. Point back at a join-act you already used with
 | **`vuon`** | bar that one; the rest stay free | *bars (anything but)* | **uo** ≈ undo + one (forbid that pick) | `zazawan dogovel vuon` |
 | **`ven`** | rank the object first | *prioritizes* | **e** ≈ order (put this first) | `zazawan dabugul ven` |
 | **`vaen`** | put the objects at the same rank | *equates / ties* | **ae** ≈ add + order (same height) | `zazawan dululon duhubun dal vaen` |
-| **`voen`** | trial the object as a pick | *tries* | **oe** ≈ one + order (try this one) | `zazawan dewenem voen` |
+| **`voen`** | put the object first in order | *starts with* | **oe** ≈ one + order (begin here) | `zazawan dewenem voen` |
 | **`vuen`** | rank the object lower | *deprioritizes* | **ue** ≈ undo + order (drop this rank) | `zazawan dubagem vuen` |
 
-English *refuse* vs *leave out*: `zazawan dememal vun` (*Azawan refuses meat*) vs `zazawan dememal vuan` (*Azawan excludes meat*). One locked choice vs an open pick: `zazawan dabanul von` vs `zazawan dabanul vaon`. Rank vs trial: `zazawan dewenem ven` (*prioritizes the workaround*) vs `zazawan dewenem voen` (*tries the workaround*).
+English *refuse* vs *leave out*: `zazawan dememal vun` (*Azawan refuses meat*) vs `zazawan dememal vuan` (*Azawan excludes meat*). One locked choice vs an open pick: `zazawan dabanul von` vs `zazawan dabanul vaon`. Rank vs sequence: `zazawan dewenem ven` (*prioritizes the workaround*: first by importance) vs `zazawan dewenem voen` (*starts with the workaround*: first in order).
 
 ### Join-relations {#join-relations}
 
@@ -209,10 +219,10 @@ For several members or an empty domain, put a [phrase join](joins.md) **inside**
 | **`guon` / `huon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to anything but*; `/h/` *barring / anything but* | **uo** ≈ undo + one (bar that one; rest free) | `zunudel guon babanul`; `… huon babanul vawalal` |
 | **`gen` / `hen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *prioritizing / headed by*; `/h/` *prioritizing* | **e** ≈ order (put this first) | `zuzebul gen babugul`; `… hen babugul vewenem` |
 | **`gaen` / `haen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *on a par with*; `/h/` *equating / tying* | **ae** ≈ add + order (same height) | `zadedal gaen bogovel`; `… haen bululon vawalal` |
-| **`goen` / `hoen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *for trying / trial of*; `/h/` *trying* | **oe** ≈ one + order (trial this one) | `zuzebul goen bewenem`; `… hoen bewenem vawalal` |
+| **`goen` / `hoen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *starting with*; `/h/` *starting with* | **oe** ≈ one + order (begin here) | `zuzebul goen bewenem`; `… hoen bewenem vawalal` |
 | **`guen` / `huen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *deprioritizing / trailing*; `/h/` *deprioritizing* | **ue** ≈ undo + order (drop this rank) | `zuragel guen bubagem`; `… huen bubagem vawalal` |
 
-*Anti-* vs *without*: `gun bememal` vs `guan bememal`. *Without X* vs *anything but X*: `guan babanul` vs `guon babanul`. Sole pick vs among options: `gon bazawan` vs `gaon bazawan`. Workaround-first vs try-the-workaround: `gen bewenem` vs `goen bewenem`.
+*Anti-* vs *without*: `gun bememal` vs `guan bememal`. *Without X* vs *anything but X*: `guan babanul` vs `guon babanul`. Sole pick vs among options: `gon bazawan` vs `gaon bazawan`. Workaround as top priority vs workaround as first step: `gen bewenem` vs `goen bewenem`.
 
 **Compare with:** *a house like Azawan’s* / *walks like a duck* is resemblance ([simile](relations.md#similative) `gurorom` / `hurorom`), not **`gaen` / `haen`** *on a par with* / *equating*.
 
