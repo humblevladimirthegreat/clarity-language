@@ -1,5 +1,5 @@
 import { computed, onMounted, ref, shallowRef, type ShallowRef } from 'vue'
-import { DEFAULT_SELF_ROOT, eligibleNames, type LearnerNameOption } from '@learner-name'
+import { DEFAULT_SELF_ROOT, eligibleNames, suggestedNames, type LearnerNameOption } from '@learner-name'
 
 /**
  * The learner's own Agalan name (a published root + -n), kept in this browser. Unset or no longer valid → the speaker special `ugobon` fills `SELF` slots.
@@ -11,6 +11,8 @@ export const OPEN_NAME_HELPER_EVENT = 'agalan:open-name-helper'
 
 const chosen = ref<string | null>(null)
 const eligible: ShallowRef<LearnerNameOption[]> = shallowRef([])
+/** Hand-picked names the helper draws from. */
+const suggested: ShallowRef<LearnerNameOption[]> = shallowRef([])
 const ready = ref(false)
 let started = false
 let loading: Promise<LearnerNameOption[]> | null = null
@@ -39,11 +41,10 @@ export function loadEligibleNames(): Promise<LearnerNameOption[]> {
     import('@data/lexicon-overlays.csv?raw'),
     import('@lexicon-search'),
   ]).then(([published, overlays, lexicon]) => {
-    const list = eligibleNames(
-      lexicon.parsePublishedCsv(published.default),
-      lexicon.parseOverlayCsv(overlays.default),
-    )
+    const rows = lexicon.parsePublishedCsv(published.default)
+    const list = eligibleNames(rows, lexicon.parseOverlayCsv(overlays.default))
     eligible.value = list
+    suggested.value = suggestedNames(rows)
     return list
   })
   return loading
@@ -92,5 +93,5 @@ export function useLearnerName() {
     window.dispatchEvent(new CustomEvent(OPEN_NAME_HELPER_EVENT))
   }
 
-  return { root, chosen, ready, eligible, set, clear, openHelper, loadEligibleNames }
+  return { root, chosen, ready, eligible, suggested, set, clear, openHelper, loadEligibleNames }
 }

@@ -6,7 +6,7 @@ import { useLearnerName } from '../composables/useLearnerName'
 import SpeakButton from './SpeakButton.vue'
 
 /** Suggest a published root as the learner's Agalan name, or show the one they chose. */
-const { chosen, eligible, set, clear, loadEligibleNames } = useLearnerName()
+const { chosen, eligible, suggested, set, clear, loadEligibleNames } = useLearnerName()
 
 const status = ref<'loading' | 'ready' | 'error'>('loading')
 const history = ref<LearnerNameOption[]>([])
@@ -23,7 +23,7 @@ function another(): void {
     at.value += 1
     return
   }
-  const list = eligible.value
+  const list = suggested.value
   if (!list.length) return
   if (shown.size >= list.length) shown.clear()
   let pick: LearnerNameOption
@@ -65,7 +65,7 @@ onMounted(async () => {
     <template v-else-if="chosenOption && !changing">
       <p class="lead">
         Your Agalan name is <code>{{ chosenOption.name }}</code>
-        <span class="senses">(<em>{{ chosenOption.concrete }}</em> / <em>{{ chosenOption.abstract }}</em>)</span>.
+        <span class="senses">(<em>{{ chosenOption.concrete }}</em><template v-if="chosenOption.abstract"> / <em>{{ chosenOption.abstract }}</em></template>)</span>.
       </p>
       <div class="actions">
         <SpeakButton :text="`${chosenOption.name}.`" label="Say it" />

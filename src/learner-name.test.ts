@@ -7,6 +7,9 @@ import { describe, it } from "node:test";
 import {
   DEFAULT_SELF_ROOT,
   eligibleNames,
+  nameBanReason,
+  SUGGESTED_ROOTS,
+  suggestedNames,
   fillSelf,
   hasSelfSlot,
   selfGlossEnglish,
@@ -20,27 +23,31 @@ const eligible = eligibleNames(rows, overlays);
 const eligibleRoots = new Set(eligible.map((option) => option.root));
 
 describe("eligibleNames", () => {
-  it("offers ordinary published roots with both senses", () => {
-    const grin = eligible.find((option) => option.root === "uguru");
-    assert.deepEqual(
-      { name: grin?.name, concrete: grin?.concrete, abstract: grin?.abstract },
-      { name: "ugurun", concrete: "grin", abstract: "delight" },
-    );
+  it("allows ordinary roots, including unflattering ones and rows without an abstract", () => {
+    for (const root of ["uguru", "uzulu", "obobo", "arada"]) assert.equal(eligibleRoots.has(root), true, root);
   });
 
-  it("excludes specials, house cast, the language root, and denied roots", () => {
-    for (const excluded of ["ugobo", "edone", "aha", "enenu", "azawa", "ululo", "uhubu", "agala", "uzulu"]) {
-      assert.equal(eligibleRoots.has(excluded), false, excluded);
+  it("bans only confusing names, with a reason", () => {
+    const reason = (root: string) => nameBanReason(rows.find((row) => row.clarity === root)!, overlays);
+    for (const root of ["ugobo", "edone", "aha", "enenu", "azawa", "ululo", "uhubu", "agala", "ehege", "odoho"]) {
+      assert.equal(eligibleRoots.has(root), false, root);
+      assert.ok(reason(root), root);
     }
+    assert.match(reason("ululo")!, /Ululon/);
+    const flag = rows.find((row) => /[\u{1F1E6}-\u{1F1FF}]/u.test(row.emoji))!;
+    assert.match(nameBanReason(flag, overlays)!, /country/);
   });
+});
 
-  it("excludes roots whose -n citation is a closed overlay", () => {
-    assert.equal(eligibleRoots.has("ehege"), false);
-    assert.equal(eligibleRoots.has("odoho"), false);
-  });
-
-  it("excludes rows missing an abstract sense", () => {
-    assert.ok(eligible.every((option) => option.concrete && option.abstract));
+describe("suggestedNames", () => {
+  it("offers all hand-picked names, each allowed and with both senses", () => {
+    const suggested = suggestedNames(rows);
+    assert.equal(suggested.length, SUGGESTED_ROOTS.length);
+    for (const option of suggested) {
+      assert.ok(eligibleRoots.has(option.root), option.root);
+      assert.ok(option.concrete && option.abstract, option.root);
+    }
+    assert.equal(suggested[0]!.name, "ugurun");
   });
 });
 

@@ -13,7 +13,7 @@ import {
   type OverlayRow,
   type PublishedRow,
 } from '@lexicon-search'
-import { eligibleNames } from '@learner-name'
+import { nameBanReason } from '@learner-name'
 import { useLearnerName } from '../composables/useLearnerName'
 
 const DEBOUNCE_MS = 100
@@ -29,8 +29,14 @@ const overlayIndex = shallowRef<MiniSearch | null>(null)
 let debounceTimer = 0
 
 const learner = useLearnerName()
-/** Roots a learner may take as their name ("Use as my name"). */
-const nameRoots = computed(() => new Set(eligibleNames(rows.value, overlays.value).map((option) => option.root)))
+/** Why a row cannot be the learner's name ("Use as my name" is then disabled), or null. */
+function banReason(row: PublishedRow): string | null {
+  return nameBanReason(row, overlays.value)
+}
+
+function useAsName(row: PublishedRow): void {
+  if (!banReason(row)) void learner.set(row.clarity)
+}
 
 const results = computed(() => {
   if (status.value !== 'ready' || !index.value) return []
@@ -132,11 +138,13 @@ onUnmounted(() => {
               {{ row.clarity }}
               <span v-if="learner.chosen.value === row.clarity" class="my-name">✓ your name</span>
               <button
-                v-else-if="nameRoots.has(row.clarity)"
+                v-else
                 type="button"
                 class="use-name"
-                :aria-label="`Use ${row.clarity}n as my name`"
-                @click="learner.set(row.clarity)"
+                :aria-disabled="banReason(row) ? 'true' : undefined"
+                :title="banReason(row) ?? `Use ${row.clarity}n as my name`"
+                :aria-label="banReason(row) ? `Can't use ${row.clarity}n as a name: ${banReason(row)}` : `Use ${row.clarity}n as my name`"
+                @click="useAsName(row)"
               >
                 Use as my name
               </button>
@@ -184,7 +192,12 @@ onUnmounted(() => {
   cursor: pointer;
 }
 
-.use-name:hover {
+.use-name[aria-disabled='true'] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.use-name:not([aria-disabled='true']):hover {
   color: var(--vp-c-brand-1);
   border-color: var(--vp-c-brand-1);
 }

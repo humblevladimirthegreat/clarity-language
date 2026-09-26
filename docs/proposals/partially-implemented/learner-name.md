@@ -107,7 +107,8 @@ Stored names stay valid across sessions. Nothing else on the site needs the help
 
 ## As built (phases 1–3)
 
-- Eligibility is one rule everywhere (helper and lexicon **Use as my name**): [`eligibleNames`](../../../src/learner-name.ts) requires both a concrete and an abstract sense, and excludes specials, house cast, `agala`, flag (country) rows, roots whose **-n** citation is a closed overlay (`ehegen`, `odohon`, …), and the editor deny list `NAME_DENY`.
+- The helper draws at random from 36 hand-picked names (`SUGGESTED_ROOTS` in [`learner-name.ts`](../../../src/learner-name.ts)), each with a concrete and an abstract sense that read well as a name.
+- The lexicon's **Use as my name** allows any published root except confusing ones (`nameBanReason`): role words `ugobo` / `edone` / `aha` / `enenu`, house cast, `agala`, roots whose **-n** citation is a closed overlay (`ehegen`, `odohon`, …), and country (flag) rows. Unflattering senses are allowed. Banned rows show a disabled button whose hover text gives the reason.
 - Slot syntax: `SELF` glued to letters inside Agalan (`zSELFn`, `SELFn.`); a free-standing `SELF` in gloss lines (`z-SELF`, or `SELF` for a bare citation). The lint fills the default before every check; the speaker and a name trace the same constructions, so learning order needs no exemption.
 - Rendering: [`learner-name-md.ts`](../../grammar/.vitepress/lib/learner-name-md.ts) → `SelfCode` / `SelfGloss`; store [`useLearnerName.ts`](../../grammar/.vitepress/composables/useLearnerName.ts) lazy-loads the lexicon to validate; nav `NameChip` opens `NameHelper`; unset slots are dotted-underline buttons that open it.
 - First use: word-endings Beginner helper, greeting example, and one checkpoint item.
