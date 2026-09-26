@@ -64,6 +64,7 @@ import { loadDefaultTables } from "../src/parse/index.js";
  */
 const CONSTRUCTIONS = constructionRegistry(loadDefaultTables().overlays.values());
 import { lineNumberAt } from "../src/retie/tokens.js";
+import { fillSelf } from "../src/learner-name.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
 const grammarDir = join(rootDir, "docs", "grammar");
@@ -334,7 +335,9 @@ function main(): void {
   const uses: ConstructionUse[] = [];
 
   for (const file of files) {
-    const original = readFileSync(file, "utf8");
+    const source = readFileSync(file, "utf8");
+    // `SELF` slots are checked as the unset default (`zugobon`, `z-speaker`); no newlines change.
+    const original = fillSelf(source);
     const rel = relative(rootDir, file);
     const issues = lintAgalanMarkdown(original, tables);
     for (const issue of issues) {
@@ -374,7 +377,7 @@ function main(): void {
       console.log(formatMorphGlossFinding(rel, finding));
     }
 
-    const bankFindings = lintWordBankMarkdown(original, tables);
+    const bankFindings = lintWordBankMarkdown(source, tables);
     for (const finding of bankFindings) {
       bankCount += 1;
       console.log(formatWordBankFinding(rel, finding));

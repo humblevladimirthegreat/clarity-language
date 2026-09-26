@@ -8,6 +8,7 @@ import { senseFormEnding, senseFormRoot, type OverlayKind } from "../lexicon-sea
 import { senseLabel } from "../parse/morph-gloss.js";
 import { parseWord, WordParseError } from "../parse/word.js";
 import { lineNumberAt } from "../retie/tokens.js";
+import { hasSelfSlot } from "../learner-name.js";
 
 export type WordBankFinding = {
   line: number;
@@ -54,6 +55,12 @@ function checkPair(
   const surface = decodeEntities(agalan).replace(/[.,!?]+$/, "");
   const got = normalizeEnglish(english);
   if (!got) return null;
+
+  // The learner's own name (`SELFn`) is not a lexicon word; its English is *your name*.
+  if (hasSelfSlot(surface)) {
+    if (got === normalizeEnglish("your name")) return null;
+    return { agalan: surface, english, column, expected: ["your name"], detail: "SELF row English must be *your name*" };
+  }
 
   let morph;
   try {

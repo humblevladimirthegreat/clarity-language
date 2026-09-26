@@ -13,6 +13,8 @@ import {
   type OverlayRow,
   type PublishedRow,
 } from '@lexicon-search'
+import { eligibleNames } from '@learner-name'
+import { useLearnerName } from '../composables/useLearnerName'
 
 const DEBOUNCE_MS = 100
 
@@ -25,6 +27,10 @@ const index = shallowRef<MiniSearch | null>(null)
 const overlayIndex = shallowRef<MiniSearch | null>(null)
 
 let debounceTimer = 0
+
+const learner = useLearnerName()
+/** Roots a learner may take as their name ("Use as my name"). */
+const nameRoots = computed(() => new Set(eligibleNames(rows.value, overlays.value).map((option) => option.root)))
 
 const results = computed(() => {
   if (status.value !== 'ready' || !index.value) return []
@@ -122,7 +128,19 @@ onUnmounted(() => {
                 matched: {{ row.matchFields.join(', ') }}
               </span>
             </td>
-            <td class="clarity">{{ row.clarity }}</td>
+            <td class="clarity">
+              {{ row.clarity }}
+              <span v-if="learner.chosen.value === row.clarity" class="my-name">✓ your name</span>
+              <button
+                v-else-if="nameRoots.has(row.clarity)"
+                type="button"
+                class="use-name"
+                :aria-label="`Use ${row.clarity}n as my name`"
+                @click="learner.set(row.clarity)"
+              >
+                Use as my name
+              </button>
+            </td>
             <td>
               <span v-if="row.abstract">{{ row.abstract }}</span>
               <span v-else class="empty">—</span>
@@ -148,6 +166,33 @@ onUnmounted(() => {
 </template>
 
 <style scoped>
+.use-name,
+.my-name {
+  display: block;
+  margin-top: 0.3rem;
+  font-family: var(--vp-font-family-base);
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.use-name {
+  padding: 0.1rem 0.45rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 999px;
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-2);
+  cursor: pointer;
+}
+
+.use-name:hover {
+  color: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-1);
+}
+
+.my-name {
+  color: var(--vp-c-brand-1);
+}
+
 .lexicon-search {
   margin-top: 1rem;
 }

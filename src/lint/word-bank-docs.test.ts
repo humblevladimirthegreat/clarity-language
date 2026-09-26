@@ -72,4 +72,17 @@ describe("lintWordBankMarkdown", () => {
     assert.equal(findings[0]!.agalan, "vajul");
     assert.equal(findings[0]!.english, "see");
   });
+
+  it("accepts the learner name slot only as *your name*", () => {
+    const md = (english: string) => `### Translation practice
+
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *${english}* | \`SELFn\` |
+`;
+    assert.deepEqual(lintWordBankMarkdown(md("your name"), tables), []);
+    assert.equal(lintWordBankMarkdown(md("speaker"), tables).length, 1);
+  });
 });

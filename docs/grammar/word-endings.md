@@ -39,15 +39,19 @@ When the word is a **name** (this person or this place, not a kind of thing), en
 
 **Compare with:** the same root as a kind is `azawal` *swan*; as the published abstract, `azawam` *grace*. **-n** names the person.
 
+Most published roots can be your own name this way. Pick one here, or from the [lexicon](./lexicon.md). Examples marked as yours then show it.
+
+<NameHelper />
+
 ### Greeting {#greeting}
 
-You can **say** a named citation with a period to greet someone or to say a simple goodbye. In either case, offer your own name. At the start, that is how you walk in; at the end, it is how you leave. The spelling is the same name you just wrote (`azawan`); there is no extra first letter.
+You can **say** a named citation with a period to greet someone or to say a simple goodbye. In either case, offer your own name. At the start, that is how you walk in; at the end, it is how you leave. The spelling is your name as you just wrote it; there is no extra first letter.
 
-> `azawan.`
+> `SELFn.`
 >
-> Azawan
+> SELF
 >
-> "Azawan." (hello or goodbye — the speaker is Azawan)
+> Your name, said as hello or goodbye.
 
 **Compare with:** the same citation in a list or heading has no period and is not a greeting or goodbye.
 
@@ -93,6 +97,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Choose 
 | *grace* (as a name) | `azawan` | | |
 | *courage* (as a name) | `ululon` | | |
 | *beauty* (as a name) | `uhubun` | | |
+| *your name* | `SELFn` | | from the name helper above |
 
 #### English → Agalan {#beginner-english-to-agalan}
 
@@ -158,6 +163,14 @@ Uhubun
 `ululon.`
 
 Ululon
+:::
+
+**9.** *Hello — say it with your own name.*
+
+::: details Show answer
+`SELFn.`
+
+SELF
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}

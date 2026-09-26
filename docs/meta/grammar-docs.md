@@ -353,6 +353,8 @@ When an example needs a **person**, use these nativized names (published root + 
 
 **`ugobo` / `edone`** only when that page is teaching those specials, the point is the **discourse role** (name unavailable, address set, clusivity), or a closed construction is keyed to speaker/listener (performance **`zugobon`**, viewpoint *my left* when the anchor is the role). Inclusive *we* stays **`aha`**; nonspecific *someone* stays **`enenu`**. Named Mine is overlay **`zuroron`**, not the speaker pronoun. Foreign `PoS<…>n` names only when teaching loans or spans. Checkpoints: [translation-exercises.md](translation-exercises.md#principles). Morph / resume: [glosses.md](glosses.md#house-cast).
 
+**The learner (first person).** When the speaker is the reader, write the name slot **`SELF`** in the Agalan (`zSELFn vawalal.`, greeting `SELFn.`) and a free-standing `SELF` in the morph line (`z-SELF | v-walk`). Free English is *I* / *me* / *my*. The site shows the name the learner chose in the name helper ([word-endings.md](../grammar/word-endings.md#named-n-beginner), nav chip), or **`ugobon`** / *speaker* until they choose. `build` checks the slot as **`ugobo`**. Do not make a house person “name himself” to mean *I*, and do not use a dummy **`zugobon`** where a name is the point. Pages teaching the speaker role itself keep **`ugobo`**. A **Roots used here** row for the slot is `*your name*` / `` `SELFn` ``. Available from word-endings Beginner onward.
+
 Default example block ([layout](glosses.md#example-block)):
 
 ```markdown

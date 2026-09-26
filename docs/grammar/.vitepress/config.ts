@@ -2,6 +2,7 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
 import { buildStampIso, formatBuildStampEt } from './lib/build-stamp'
 import { injectInArticleToc } from './lib/inject-in-article-toc'
+import { learnerNameSlots } from './lib/learner-name-md'
 import { ortWasmPlugin } from './lib/ort-wasm-plugin'
 import { readingOrder } from './lib/reading-order'
 
@@ -31,6 +32,7 @@ export default defineConfig({
       alias: {
         '@data': dataDir,
         '@lexicon-search': `${srcDir}/lexicon-search.ts`,
+        '@learner-name': `${srcDir}/learner-name.ts`,
         '@parse-browser': `${srcDir}/parse/browser.ts`,
         '@tts-browser': `${srcDir}/tts/browser.ts`,
       },
@@ -90,6 +92,7 @@ export default defineConfig({
     toc: { level: [2, 3] },
     config(md) {
       injectInArticleToc(md)
+      learnerNameSlots(md)
     },
   },
 })
