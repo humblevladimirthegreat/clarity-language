@@ -176,7 +176,7 @@ export const WORD_FAMILY_CONSTRUCTIONS: Record<FamilyKind, ConstructionEntry> = 
 export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
   span: { anchor: "spans.md#shape", summary: "span open" },
   role: { anchor: "roles.md#role-compounds", summary: "role compound" },
-  value: { anchor: "interests.md#how-it-is-appreciated-endings-on-met", summary: "value interest word" },
+  interest: { anchor: "interests.md#how-it-is-appreciated-endings-on-met", summary: "interest word" },
   lateral: { anchor: "roles.md#viewpoint-laterals", summary: "viewpoint lateral" },
   ability: { anchor: "x-compounds.md#conversation-length", summary: "ability compound" },
   numeric: { anchor: "numeric-derivation.md#numeric-derivation", summary: "numeric derivation" },
@@ -198,7 +198,7 @@ type OverlayOnlyReading =
 /** Non-overlay readings (an overlay word traces `overlay.*`, not `word.reading.*`). */
 export const WORD_READING_CONSTRUCTIONS: Record<Exclude<LexReading, OverlayOnlyReading>, ConstructionEntry> = {
   ordinary: { anchor: "phonology.md#word-edges", summary: "ordinary content reading" },
-  value: { anchor: "interests.md#how-it-is-appreciated-endings-on-met", summary: "interest reading" },
+  interest: { anchor: "interests.md#how-it-is-appreciated-endings-on-met", summary: "interest reading" },
   ability: { anchor: "intention.md#ability", summary: "ability reading" },
   greeting: { anchor: "x-compounds.md#conversation-length", summary: "conversation-length bid" },
   restrictor: { anchor: "restrictors.md#beginner", summary: "restrictor" },
@@ -301,8 +301,8 @@ export const NUMBER_FEATURE_CONSTRUCTIONS = {
 
 type Vowel = "a" | "e" | "o" | "u";
 
-/** Values: each stance vowel, and the endings on it (interests.md). */
-export const VALUE_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vowel}.${"l" | "m" | "r"}`, ConstructionEntry> = {
+/** Interests: each stance vowel, and the endings on it (interests.md). */
+export const INTEREST_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vowel}.${"l" | "m" | "r"}`, ConstructionEntry> = {
   "stance.a": { anchor: "interests.md#how-it-is-appreciated-endings-on-met", summary: "met tha" },
   "stance.u": { anchor: "interests.md#unmet-thu-detracts-from-the-interest", summary: "unmet thu" },
   "stance.e": { anchor: "interests.md#prescription-the-ought-this-act-for-this-interest", summary: "prescription the" },
@@ -472,7 +472,7 @@ export const CONSTRUCTIONS: ReadonlyMap<string, ConstructionEntry> = new Map([
   ...prefixed("reading", READING_CONSTRUCTIONS),
   ...prefixed("tone", TONE_CONSTRUCTIONS),
   ...prefixed("number", NUMBER_FEATURE_CONSTRUCTIONS),
-  ...prefixed("value", VALUE_FEATURE_CONSTRUCTIONS),
+  ...prefixed("interest", INTEREST_FEATURE_CONSTRUCTIONS),
   ...prefixed("join", JOIN_SERIES_CONSTRUCTIONS),
   ...prefixed("force", FORCE_CONSTRUCTIONS),
   ...prefixed("polar", POLAR_CONSTRUCTIONS),
@@ -504,8 +504,8 @@ export const REJECTIONS = {
   toneTarget: { anchor: "speech-moves.md#tone-marks", summary: "a tone mark goes before a word, an island open ^, or a span" },
   linkerMidSentence: { anchor: "dependents.md#sentence-linkers", summary: "a sentence linker comes only at the start of a sentence" },
   pluralOnPos: { anchor: "plurality.md#beginner", summary: "-x is unused on /w/, /h/, /th/, and /x/" },
-  valueSlot: { anchor: "interests.md#beginner", summary: "a interest form goes on /ɡ/, /th/, or /w/ only" },
-  valueRoot: { anchor: "interests.md#interest-inventory", summary: "only the six interest roots take the interest form" },
+  interestSlot: { anchor: "interests.md#beginner", summary: "an interest form goes on /ɡ/, /th/, or /w/ only" },
+  interestRoot: { anchor: "interests.md#interest-inventory", summary: "only the six interest roots take the interest form" },
   pluralKindAfterUniversal: { anchor: "joins.md#universals-domains-generics", summary: "the kind word after ua / uo takes no -x" },
   rankJoinNumberManner: { anchor: "comparatives.md#manner-scale", summary: "the /h/ after a rank join is a manner word; the only number there is digitless h+ (how often)" },
   reversedSequenceSlot: { anchor: "joins.md#reversed-sequence-eo", summary: "eo is a phrase join only (/z/ /d/ /b/ /ɡ/)" },

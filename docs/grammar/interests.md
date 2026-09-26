@@ -1,6 +1,6 @@
 # Interests (`/ɡ/` / `/th/` / `/w/`)
-<a id="values"></a>
-<a id="value-ascription"></a>
+<a id="interests"></a>
+<a id="interest-ascription"></a>
 
 An **interest** is something that is good for a person, a psychological payoff you can name (autonomy, competence, relatedness, pleasure, survival, or an unspecified interest). It means *what is in your interest*, not curiosity, and an unmet interest is a cost to name, not a lack in you. At **Beginner**, a **stance** is how you stand toward that interest on a **noun**: it **serves** the interest or **detracts from** it. **Intermediate** adds **prescription** on the clause (deontic: the agent **ought to** do this act for this interest) and **motive** (*doing for* the interest).
 
@@ -32,7 +32,7 @@ When you want to say that a named belonging **serves** this interest (pays it of
 **Not the same job as:** [ability](intention.md#ability) (*can sing*, taught later). Ability glues an activity to its vowel with **`x`**. Interest words glue a **interest** with **`th`**, and **`tha`** means *serves this interest*.
 
 ### How it is appreciated (endings on met)
-<a id="value-contact"></a>
+<a id="interest-contact"></a>
 
 On a *serves* word, **-l / -m / -r** say **how the payoff is appreciated**: through body and the scene you can sense, through thinking or memory, or through a big-picture step-back. Those are ways of appreciating the payoff, not a ranking. Relatedness *between people* is still the interest **`onogo`**.
 
@@ -61,7 +61,7 @@ On a *serves* word, **-l / -m / -r** say **how the payoff is appreciated**: thro
 > "My book serves competence (appreciated mentally)."
 
 ### Unmet (`thu`): detracts from the interest
-<a id="value-changeability"></a>
+<a id="interest-changeability"></a>
 
 When you want to say a named belonging **detracts from** this interest, write that thing as a noun, then a `/ɡ/` word: interest root, mid-word **`th`**, **`u`**, then an ending.
 
@@ -80,7 +80,7 @@ That ending is **changeability**: how lasting that detriment is. If you do not k
 > "My book detracts from competence (modifiable)."
 
 ### Word shape {#word-shape}
-<a id="value-stake"></a>
+<a id="interest-stake"></a>
 
 A interest word is a interest root with mid-word **`th`**, a stance vowel, and an ending. `/ɡ/` talks about a **noun you keep**; `/th/` talks about the **clause**. An unowned noun uses a [stimulus](#stimulus) word, with the same interest word on `/w/` immediately before it.
 
@@ -91,7 +91,7 @@ A interest word is a interest root with mid-word **`th`**, a stance vowel, and a
 | **`tha`** | the belonging pays off this interest | *serves* / *met* | **a** ≈ add (the payoff is in) |
 | **`thu`** | the belonging subtracts from this interest | *detracts from* / *unmet* | **u** ≈ undo (the interest is taken down) |
 
-**Intermediate** adds **`the`** (*ought this act for this interest*) and **`tho`** (*doing for this interest*). See [prescription](#value-force) and [motive](#value-preference).
+**Intermediate** adds **`the`** (*ought this act for this interest*) and **`tho`** (*doing for this interest*). See [prescription](#interest-force) and [motive](#interest-preference).
 
 A word with no **`th`** is not a interest word: `galodol` is still ballot-box-like; `hawerol` is still strawberry as an adverb.
 
@@ -243,7 +243,7 @@ z-fire | [w-autonomy-unmet-irreversible | g-stimulus]
 
 ### Emotion compose {#emotion-compose}
 
-When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: an [interest stance](#values) on the situation, how activated the charge is, and where you put it. Put the value on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](#stimulus) **`gobobum`** when the noun is not yours, then **one ACT** and **one LOCUS** as `/th/` (or `/w/` immediately before that adjective). You can then say the take without smuggling a single emotion word.
+When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: an [interest stance](#interests) on the situation, how activated the charge is, and where you put it. Put the value on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](#stimulus) **`gobobum`** when the noun is not yours, then **one ACT** and **one LOCUS** as `/th/` (or `/w/` immediately before that adjective). You can then say the take without smuggling a single emotion word.
 
 > `zezehel wolozothur gobobum thogegam thanedem.`
 >
@@ -285,7 +285,7 @@ Raw feeling (contacting a sensation without judgment) may go unlabeled. Full com
 
 
 ### Prescription (`the`): ought this act for this interest
-<a id="value-force"></a>
+<a id="interest-force"></a>
 
 When English puts *should* / *ought to* on the **doing** for a named interest (*Uhubun ought to sing to serve survival*), put `/th/` on the clause: interest root, mid-word **`th`**, **`e`**, then an ending. The **host verb** names the act that ought to count toward the interest. Prescription **`the`** gives the clause **deontic** force: you are stating obligation, not reporting that the act is already happening.
 
@@ -297,7 +297,7 @@ That ending says why you think a move is welcome. Use **-l** when the person inv
 
 **Compare with:** [predict](intention.md#predict) (`thelezo` …) when English *should* is really a **forecast** about what will pay off the interest, or when you want both *is doing* and a norm on that doing — not prescription deontic. For a plain performance report, drop **`the`** and assert the verb alone.
 
-**Compare with:** [motive](#value-preference) **`tho`** plus a [request](speech-moves.md#speech-act) **`yem`** when the speaker wants **their own** interest served. **`the`** is advice about the interest named on this word.
+**Compare with:** [motive](#interest-preference) **`tho`** plus a [request](speech-moves.md#speech-act) **`yem`** when the speaker wants **their own** interest served. **`the`** is advice about the interest named on this word.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -324,7 +324,7 @@ That ending says why you think a move is welcome. Use **-l** when the person inv
 > "Ululon ought to bow to serve relatedness (as a protective move)."
 
 ### Motive (`tho`): preference standing
-<a id="value-preference"></a>
+<a id="interest-preference"></a>
 
 English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the interest root, mid-word **`th`**, **`o`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or from protecting against something that detracts from the interest. If you do not know the standing, use **-m**. **-n** is ordinary [proper](word-endings.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…thom`** plus **`hual`**).
 
@@ -350,10 +350,10 @@ Beginner already used *serves* and *detracts from*. Intermediate adds *ought thi
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`tha`** | [how it is appreciated](#value-contact) endings | *serves* / *met* | **a** ≈ add |
-| **`the`** | [invited / offered / protective](#value-force) endings | *ought this act for this interest* | **e** ≈ order (instruct / ought) |
-| **`tho`** | [preference standing](#value-preference) endings | *doing for this interest* | **o** ≈ one (one interest as the reason) |
-| **`thu`** | [changeability](#value-changeability) endings | *detracts from* / *unmet* | **u** ≈ undo |
+| **`tha`** | [how it is appreciated](#interest-contact) endings | *serves* / *met* | **a** ≈ add |
+| **`the`** | [invited / offered / protective](#interest-force) endings | *ought this act for this interest* | **e** ≈ order (instruct / ought) |
+| **`tho`** | [preference standing](#interest-preference) endings | *doing for this interest* | **o** ≈ one (one interest as the reason) |
+| **`thu`** | [changeability](#interest-changeability) endings | *detracts from* / *unmet* | **u** ≈ undo |
 
 ### Attachment sites
 
@@ -367,7 +367,7 @@ Beginner already attached `/ɡ/` after a noun and `/th/` on the clause for met a
 | `/w/` interest + `gobobum` | the same stances on a noun that is **not** yours | *the gathering (detracts from autonomy)* (`walodothu… gobobum`) |
 | `gl-` + interest word | the same adjective before the **belonging** | `glonogothal zawaral` |
 | `th…tha…` on the clause | the event serves the interest | *tells: competence is met* (`tholozotha…`) |
-| `th…the…` on the clause | deontic prescription | *ought … for this interest* (`thonogothe…`); ending = [invited / offered / protective](#value-force) |
+| `th…the…` on the clause | deontic prescription | *ought … for this interest* (`thonogothe…`); ending = [invited / offered / protective](#interest-force) |
 | `th…tho…` on the clause | motive | *Azawan … (for relatedness)* (`thonogotho…`) |
 | `/w/` before an interest `/ɡ/` | extra detail on that adjective | *very relatedness-serving* |
 
@@ -381,7 +381,7 @@ Use **-l** for an invitation, **-m** for an offer, and **-r** for a protective m
 
 ### Thanks and sorry {#thanks-sorry}
 
-Agalan has no set phrase for *thank you*. Say that what the other person did **met your interest**: a lone clause `/th/` met word is a whole sentence, and saying it to the one who acted is the thanks. Pick the interest that was actually served; the ending says how you appreciate it ([endings on met](#value-contact)). (cue: thanks = *that met my interest*)
+Agalan has no set phrase for *thank you*. Say that what the other person did **met your interest**: a lone clause `/th/` met word is a whole sentence, and saying it to the one who acted is the thanks. Pick the interest that was actually served; the ending says how you appreciate it ([endings on met](#interest-contact)). (cue: thanks = *that met my interest*)
 
 > `thonogotham.`
 >
@@ -395,7 +395,7 @@ Agalan has no set phrase for *thank you*. Say that what the other person did **m
 >
 > "That helped me do it." — *thanks for the hand*
 
-*Sorry* is about **their** interest, not yours. A lone unmet word would say *my* interest went unmet, so name whose interest in `/b/` right after it. The ending is the same [changeability](#value-changeability) as on any unmet word, so it says how serious the harm is. (cue: sorry = *that detracted from your interest*)
+*Sorry* is about **their** interest, not yours. A lone unmet word would say *my* interest went unmet, so name whose interest in `/b/` right after it. The ending is the same [changeability](#interest-changeability) as on any unmet word, so it says how serious the harm is. (cue: sorry = *that detracted from your interest*)
 
 > `thonogothum bedonen.`
 >
@@ -446,7 +446,7 @@ The negatives **`thononel`** / **`thononem`** use the root **`onone`** (⛔ *no 
 
 To **ask** for permission, put the clause under [ask](questions.md#question): `yom zSELFn vajul therenel.` (*May I sit?*). Grant it with [**`yaol.`**](questions.md#polar-stance) (*go ahead*).
 
-**Compare with:** [prescription](#value-force) **`the`** says the act *ought* to serve an interest; permission only says the act is *allowed*. [Ability](intention.md#incapability) says someone *can* do it; permission says whether they *may*.
+**Compare with:** [prescription](#interest-force) **`the`** says the act *ought* to serve an interest; permission only says the act is *allowed*. [Ability](intention.md#incapability) says someone *can* do it; permission says whether they *may*.
 
 ### Consent (`thuxerenel` / `thuxerenem`) {#consent}
 

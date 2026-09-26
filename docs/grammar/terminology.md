@@ -185,13 +185,13 @@ Clause content after the left-edge `/y/` cluster.
 
 Prescription endings on interest **`the`**: why a move is welcome. **-l** invited, **-m** offered to serve the interest, **-r** protective, meant to prevent detriment to the interest.
 
-[Interests](interests.md#value-force)
+[Interests](interests.md#interest-force)
 
 ### Changeability
 
 Endings on unmet **`thu`**, **DECISION**, and ability *can’t*.
 
-[Interests](interests.md#value-changeability), [Intention](intention.md#decision)
+[Interests](interests.md#interest-changeability), [Intention](intention.md#decision)
 
 ### Citation / prefix-less citation
 
@@ -253,7 +253,7 @@ Polar patterns that confirm a denied body.
 
 Met-interest **`tha`** endings (physical / mental / spiritual).
 
-[Interests](interests.md#value-contact)
+[Interests](interests.md#interest-contact)
 
 ### Continue (`/x/`)
 
@@ -593,7 +593,7 @@ Closed `/y/` particles **`yael` / `yuel` / …**.
 
 Motive **`tho`** endings.
 
-[Interests](interests.md#value-preference)
+[Interests](interests.md#interest-preference)
 
 ### Prominence
 

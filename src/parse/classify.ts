@@ -17,20 +17,20 @@ import {
 } from "./hook-compounds.js";
 import type { LexOverlay, LexReading, LexWord, MorphWord } from "./types.js";
 
-function needRootsFromOverlays(overlays: Iterable<OverlayRow>): Set<string> {
+function interestRootsFromOverlays(overlays: Iterable<OverlayRow>): Set<string> {
   const roots = new Set<string>();
   for (const overlay of overlays) {
-    if (overlay.kind === "need") {
+    if (overlay.kind === "interest") {
       roots.add(senseFormRoot(overlay.senseForm));
     }
   }
   return roots;
 }
 
-function needGlossFromOverlays(overlays: Iterable<OverlayRow>): Map<string, string> {
+function interestGlossFromOverlays(overlays: Iterable<OverlayRow>): Map<string, string> {
   const gloss = new Map<string, string>();
   for (const overlay of overlays) {
-    if (overlay.kind !== "need") continue;
+    if (overlay.kind !== "interest") continue;
     const root = senseFormRoot(overlay.senseForm);
     if (!gloss.has(root)) gloss.set(root, overlay.gloss);
   }
@@ -46,8 +46,8 @@ function hostlessAbilityRootFromOverlays(overlays: Iterable<OverlayRow>): string
   return null;
 }
 
-/** Closed need hosts — filled from overlay `kind` at table load. */
-export const NEED_ROOTS = new Set<string>();
+/** Closed interest hosts — filled from overlay `kind` at table load. */
+export const INTEREST_ROOTS = new Set<string>();
 
 /** Defined restrictor core spellings under `/h/` / `/w/` (not `-n`). */
 const RESTRICTOR_CORE = new Set<string>([
@@ -81,8 +81,8 @@ export type ClassifyTables = {
   overlays: Map<string, OverlayRow>;
   published: Map<string, PublishedRow>;
   compounds: Map<string, CompoundRow>;
-  needRoots: Set<string>;
-  needGloss: Map<string, string>;
+  interestRoots: Set<string>;
+  interestGloss: Map<string, string>;
   hostlessAbilityRoot: string | null;
 };
 
@@ -135,7 +135,7 @@ function overlayReading(overlay: OverlayRow): LexReading {
   if (overlay.kind === "join_act") return "joinAct";
   if (overlay.kind === "join_relation") return "joinRelation";
   if (overlay.kind === "ability") return "ability";
-  if (overlay.kind === "need") return "value";
+  if (overlay.kind === "interest") return "interest";
   if (overlay.kind === "locative") return "locative";
   if (overlay.kind === "similative") return "similative";
   if (overlay.kind === "of_relation") return "ofRelation";
@@ -362,14 +362,14 @@ function finishTables(
   compounds: Map<string, CompoundRow>,
 ): ClassifyTables {
   const overlayList = [...overlays.values()];
-  const needRoots = needRootsFromOverlays(overlayList);
-  const needGloss = needGlossFromOverlays(overlayList);
+  const interestRoots = interestRootsFromOverlays(overlayList);
+  const interestGloss = interestGlossFromOverlays(overlayList);
   const hostlessAbilityRoot = hostlessAbilityRootFromOverlays(overlayList);
-  NEED_ROOTS.clear();
-  for (const root of needRoots) {
-    NEED_ROOTS.add(root);
+  INTEREST_ROOTS.clear();
+  for (const root of interestRoots) {
+    INTEREST_ROOTS.add(root);
   }
-  return { overlays, published, compounds, needRoots, needGloss, hostlessAbilityRoot };
+  return { overlays, published, compounds, interestRoots, interestGloss, hostlessAbilityRoot };
 }
 
 export function createClassifyTables(
@@ -412,11 +412,11 @@ export function createClassifyTablesFromRows(
   return finishTables(published, overlays, compoundsFromRows(compoundRows));
 }
 
-/** Need and hostless-ability rows register `x` hosts; the value / ability word on that host uses the row. */
+/** Interest and hostless-ability rows register `x` hosts; the interest / ability word on that host uses the row. */
 function hostOverlay(word: MorphWord, tables: ClassifyTables): { hostOverlay?: LexOverlay } {
   const host = word.family.kind === "x" ? word.family.leftRoots[0] : undefined;
   const row = host && word.pos ? tables.overlays.get(overlayKey(word.pos, `${host}m`)) : undefined;
-  return row && (row.kind === "need" || row.kind === "ability") ? { hostOverlay: overlayFromRow(row) } : {};
+  return row && (row.kind === "interest" || row.kind === "ability") ? { hostOverlay: overlayFromRow(row) } : {};
 }
 
 export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
@@ -425,8 +425,8 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
 
   if (senseForm && pos) {
     const overlayRow = tables.overlays.get(overlayKey(pos, senseForm));
-    // Need overlays register hosts for `x`+vowel values; the bare spelling is ordinary.
-    if (overlayRow && overlayRow.kind !== "need") {
+    // Interest overlays register hosts for `x`+vowel interest words; the bare spelling is ordinary.
+    if (overlayRow && overlayRow.kind !== "interest") {
       return {
         ...word,
         overlay: overlayFromRow(overlayRow),
@@ -441,8 +441,8 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
     return { ...word, reading: "number" };
   }
 
-  if (family.kind === "x" && family.xFamily === "value") {
-    return { ...word, ...hostOverlay(word, tables), reading: "value" };
+  if (family.kind === "x" && family.xFamily === "interest") {
+    return { ...word, ...hostOverlay(word, tables), reading: "interest" };
   }
 
   if (family.kind === "x" && family.xFamily === "ability") {
@@ -569,7 +569,7 @@ export type ClassifyHit = {
   source:
     | "overlay"
     | "number"
-    | "value"
+    | "interest"
     | "ability"
     | "restrictor"
     | "standIn"
@@ -588,7 +588,7 @@ export function classifyHits(word: MorphWord, tables: ClassifyTables): ClassifyH
 
   if (senseForm && pos) {
     const overlayRow = tables.overlays.get(overlayKey(pos, senseForm));
-    if (overlayRow && overlayRow.kind !== "need") {
+    if (overlayRow && overlayRow.kind !== "interest") {
       hits.push({ source: "overlay", reading: overlayReading(overlayRow) });
     }
   }
@@ -599,8 +599,8 @@ export function classifyHits(word: MorphWord, tables: ClassifyTables): ClassifyH
     hits.push({ source: "number", reading: "number" });
   }
 
-  if (family.kind === "x" && family.xFamily === "value") {
-    hits.push({ source: "value", reading: "value" });
+  if (family.kind === "x" && family.xFamily === "interest") {
+    hits.push({ source: "interest", reading: "interest" });
   }
 
   if (family.kind === "x" && family.xFamily === "ability") {

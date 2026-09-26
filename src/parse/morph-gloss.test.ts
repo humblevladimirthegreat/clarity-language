@@ -260,7 +260,7 @@ describe("compareMorphGloss", () => {
     );
   });
 
-  it("ordinary -l on a need host root uses literal sense, not need overlay", () => {
+  it("ordinary -l on an interest host root uses literal sense, not interest overlay", () => {
     expectLine("zazawan gonogol bululon", "z-Azawan | [g-knot | b-Ululon]");
   });
 

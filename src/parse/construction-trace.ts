@@ -69,9 +69,9 @@ function featureConstructions(word: LexWord): string[] {
   if (family.kind === "x") {
     const ids: string[] = [];
     if (family.numberStem) ids.push(...numberFeatures(family.numberStem));
-    if (family.xFamily === "value" && family.stanceVowel) {
-      ids.push(`value.stance.${family.stanceVowel}`);
-      if (word.ending === "l" || word.ending === "m" || word.ending === "r") ids.push(`value.ending.${family.stanceVowel}.${word.ending}`);
+    if (family.xFamily === "interest" && family.stanceVowel) {
+      ids.push(`interest.stance.${family.stanceVowel}`);
+      if (word.ending === "l" || word.ending === "m" || word.ending === "r") ids.push(`interest.ending.${family.stanceVowel}.${word.ending}`);
     }
     if (family.xFamily === "span") {
       if (family.typeVowel) ids.push(`span.type.${family.typeVowel}`);

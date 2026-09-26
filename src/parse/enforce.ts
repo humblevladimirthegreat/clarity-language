@@ -54,7 +54,7 @@ export class ConstructionError extends SentenceParseError {
 }
 
 const NO_PLURAL_POS = new Set(["w", "h", "th", "x"]);
-const VALUE_POS = new Set(["g", "th", "w"]);
+const INTEREST_POS = new Set(["g", "th", "w"]);
 const RANK_SERIES = new Set(["e", "oe", "eo", "ue", "ae"]);
 const PHRASE_POS = new Set(["z", "d", "b", "g"]);
 const KIND_SERIES = new Set(["ua", "uo"]);
@@ -159,10 +159,10 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   if (family.kind === "joinMarker" && family.series === "eo" && !(word.pos && PHRASE_POS.has(word.pos))) {
     throw new ConstructionError("reversedSequenceSlot", word.raw);
   }
-  if (family.kind === "x" && family.xFamily === "value") {
-    if (word.pos && !VALUE_POS.has(word.pos)) throw new ConstructionError("valueSlot", word.raw);
-    if (!family.leftRoots.every((root) => tables.needRoots.has(root))) {
-      throw new ConstructionError("valueRoot", word.raw);
+  if (family.kind === "x" && family.xFamily === "interest") {
+    if (word.pos && !INTEREST_POS.has(word.pos)) throw new ConstructionError("interestSlot", word.raw);
+    if (!family.leftRoots.every((root) => tables.interestRoots.has(root))) {
+      throw new ConstructionError("interestRoot", word.raw);
     }
   }
 }

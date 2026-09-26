@@ -229,20 +229,20 @@ describe("parseWord — spans and writing atoms", () => {
 });
 
 describe("parseWord — x families, revisers, joins, foreign", () => {
-  it("parses golozothal as a value: need + th + stance vowel (interests.md)", () => {
+  it("parses golozothal as an interest: interest + th + stance vowel (interests.md)", () => {
     const word = parseOk("golozothal");
     assert.deepEqual(word.family, {
       kind: "x",
-      xFamily: "value",
+      xFamily: "interest",
       leftRoots: ["olozo"],
       stanceVowel: "a",
     });
   });
 
-  it("parses tholozothom: stance role letter plus a value word", () => {
+  it("parses tholozothom: stance role letter plus an interest word", () => {
     const word = parseOk("tholozothom");
     assert.equal(word.pos, "th");
-    assert.equal(word.family.kind === "x" && word.family.xFamily, "value");
+    assert.equal(word.family.kind === "x" && word.family.xFamily, "interest");
   });
 
   it("parses gewezethazawaxululon as a viewpoint lateral with a multipart anchor", () => {

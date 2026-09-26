@@ -57,7 +57,7 @@ describe("drillCoverage", () => {
   const homes = new Map<string, Section | undefined>([
     ["span.x", resolveAnchor(order, "a.md#basics")],
     ["span.y", resolveAnchor(order, "a.md#basics")],
-    ["value.z", resolveAnchor(order, "a.md#basics")],
+    ["interest.z", resolveAnchor(order, "a.md#basics")],
     ["token.t", resolveAnchor(order, "a.md#more")],
     ["span.m", resolveAnchor(order, "a.md#more")],
     ["span.o", resolveAnchor(order, "b.md#other")],
@@ -65,13 +65,13 @@ describe("drillCoverage", () => {
   const families = constructionFamilies(homes);
   const uses = [
     { id: "span.y", section: at("a.md", "#### English") },
-    { id: "value.z", section: at("a.md", "### Basics") },
+    { id: "interest.z", section: at("a.md", "### Basics") },
   ];
 
   it("covers a family by any member, reports uncovered, flags missing sections", () => {
     const r = drillCoverage(order, families, uses, new Set());
     assert.equal(r.covered, 1);
-    assert.deepEqual(r.uncovered.map((u) => u.family.ids), [["value.z"]]);
+    assert.deepEqual(r.uncovered.map((u) => u.family.ids), [["interest.z"]]);
     assert.deepEqual(r.missing.sort(), ["a.md|intermediate", "b.md|beginner"]);
   });
 

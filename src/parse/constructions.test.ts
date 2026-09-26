@@ -60,7 +60,7 @@ describe("construction registry", () => {
       ["zodogol om banabal.", "reading.existence"],
       ["yol.", "reading.bareQuestion"],
       ["zazawan vawalal thodohom.", "overlay.odohom.th"],
-      // A value or ability word uses the need / hostless-ability row of its host.
+      // An interest or ability word uses the interest / hostless-ability row of its host.
       ["zazawan vawalal thonogothem.", "overlay.onogom.th"],
       ["zazawan thegeraxel.", "overlay.egeram.th"],
       // Per-form features of families taught across sections.

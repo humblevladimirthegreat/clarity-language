@@ -17,9 +17,9 @@ function formalClassifyPair(a: ClassifyHit, b: ClassifyHit): boolean {
   const sources = new Set([a.source, b.source]);
   if (sources.has("overlay") && sources.has("published")) return true;
   if (sources.has("overlay") && sources.has("foreign")) return true;
-  if (sources.has("overlay") && (sources.has("value") || sources.has("ability"))) return true;
+  if (sources.has("overlay") && (sources.has("interest") || sources.has("ability"))) return true;
   if (sources.has("restrictor") && sources.has("join")) return true;
-  if ((sources.has("value") || sources.has("ability")) && sources.has("published")) return true;
+  if ((sources.has("interest") || sources.has("ability")) && sources.has("published")) return true;
   if (sources.has("number") && sources.has("published")) return true;
   if (sources.has("overlay") && sources.has("join")) {
     const readings = new Set([a.reading, b.reading]);

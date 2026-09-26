@@ -257,7 +257,7 @@ const ABILITY_STANCE: Record<string, string> = {
   u: "unable-irreversible",
 };
 
-const VALUE_STANCE: Record<string, string> = {
+const INTEREST_STANCE: Record<string, string> = {
   a: "met",
   e: "ought",
   o: "motive",
@@ -265,7 +265,7 @@ const VALUE_STANCE: Record<string, string> = {
 };
 
 /** Ending grain on values (contact / prescription warrant / preference / changeability). */
-const VALUE_GRAIN: Record<string, Partial<Record<Ending, string>>> = {
+const INTEREST_GRAIN: Record<string, Partial<Record<Ending, string>>> = {
   a: { l: "physical", m: "mental", r: "spiritual" },
   e: { l: "invited", m: "offered", r: "protective" },
   o: { l: "circumstantial", m: "internal", r: "protective" },
@@ -374,7 +374,7 @@ export function senseLabel(
     return body;
   }
   const hinge =
-    word.family.kind === "x" && (word.family.xFamily === "value" || word.family.xFamily === "lateral")
+    word.family.kind === "x" && (word.family.xFamily === "interest" || word.family.xFamily === "lateral")
       ? "-th-"
       : "-x-";
   const body = sensePieces(word, tables, ctx).join(hinge);
@@ -974,7 +974,7 @@ function sensePieces(
   const family = word.family;
   const resume =
     word.ending === "r" &&
-    word.reading !== "value" &&
+    word.reading !== "interest" &&
     word.reading !== "ability" &&
     family.kind !== "joinMarker";
   if (resume) {
@@ -1324,14 +1324,14 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
     return [role, ...host];
   }
 
-  if (family.xFamily === "value" || family.xFamily === "ability") {
+  if (family.xFamily === "interest" || family.xFamily === "ability") {
     const hostRoot = family.leftRoots[0] ?? "host";
     const host =
       tables.hostlessAbilityRoot && hostRoot === tables.hostlessAbilityRoot
         ? "ABIL"
         : rootSense(hostRoot, word.ending, tables, {
             named: word.reading === "greeting" || word.ending === "n",
-            need: word.reading === "value",
+            interest: word.reading === "interest",
             pos: word.pos,
           });
     // Ability / greeting bids: one hyphenated english slot (`walking-unable-temporary`,
@@ -1340,11 +1340,11 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
       const stance = GREETING_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "greeting";
       return [`${host}-${stance}`];
     }
-    if (word.reading === "value") {
-      const stance = VALUE_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "stance";
+    if (word.reading === "interest") {
+      const stance = INTEREST_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "stance";
       const grain =
         family.stanceVowel && word.ending
-          ? VALUE_GRAIN[family.stanceVowel]?.[word.ending]
+          ? INTEREST_GRAIN[family.stanceVowel]?.[word.ending]
           : undefined;
       return grain ? [`${host}-${stance}-${grain}`] : [host, stance];
     }
@@ -1425,7 +1425,7 @@ function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): st
   if (roots.length === 1) {
     return rootSense(roots[0]!, word.ending, tables, {
       named: word.ending === "n",
-      need: word.reading === "value",
+      interest: word.reading === "interest",
       pos: word.pos,
     });
   }
@@ -1433,7 +1433,7 @@ function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): st
     .map((root) =>
       rootSense(root, word.ending, tables, {
         named: word.ending === "n",
-        need: word.reading === "value",
+        interest: word.reading === "interest",
         pos: word.pos,
       }),
     )
@@ -1461,7 +1461,7 @@ function rootSense(
   opts: {
     named?: boolean;
     nameLast?: boolean;
-    need?: boolean;
+    interest?: boolean;
     citationEtymology?: boolean;
     pos?: Pos;
   } = {},
@@ -1471,7 +1471,7 @@ function rootSense(
     return hyphenEnglish(row?.abstract || row?.concrete || root);
   }
 
-  if (opts.need && tables.needGloss.has(root)) return tables.needGloss.get(root)!;
+  if (opts.interest && tables.interestGloss.has(root)) return tables.interestGloss.get(root)!;
 
   const compound = tables.compounds.get(root);
   if (compound && ending !== "n" && !opts.named) {
@@ -1492,8 +1492,8 @@ function rootSense(
     if (opts.named) return titleAgalanName(root, opts.nameLast !== false);
   }
 
-  if (tables.needGloss.has(root) && opts.need) {
-    return tables.needGloss.get(root)!;
+  if (tables.interestGloss.has(root) && opts.interest) {
+    return tables.interestGloss.get(root)!;
   }
 
   const row = tables.published.get(root);

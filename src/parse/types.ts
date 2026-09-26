@@ -51,7 +51,7 @@ export type NumberStem = {
   digitlessExp?: string;
 };
 
-export type XFamily = "span" | "role" | "value" | "lateral" | "ability" | "numeric" | "compound";
+export type XFamily = "span" | "role" | "interest" | "lateral" | "ability" | "numeric" | "compound";
 
 export type SpanCloseFlavor = "complete" | "editorial" | "closeAll";
 
@@ -117,7 +117,7 @@ export type MorphWord = {
 /** Stage-2 lexicon reading (tables + thin PoS/ending branches). */
 export type LexReading =
   | "ordinary"
-  | "value"
+  | "interest"
   | "ability"
   | "greeting"
   | "restrictor"
@@ -157,7 +157,7 @@ export type RootGloss = {
  */
 export type LexWord = MorphWord & {
   overlay?: LexOverlay;
-  /** Need / hostless-ability row whose host this `x` value or ability word spells (`thonogothem`). */
+  /** Interest / hostless-ability row whose host this `x` interest or ability word spells (`thonogothem`). */
   hostOverlay?: LexOverlay;
   rootGloss?: RootGloss;
   reading: LexReading;

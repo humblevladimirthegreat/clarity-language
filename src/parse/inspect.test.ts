@@ -139,11 +139,11 @@ describe("inspectText", () => {
   });
 
   it("Why distinguishes interests from role compounds", () => {
-    const value = inspectText("thalodothal", tables).tokens[0];
-    assert.equal(value?.kind, "word");
-    if (value?.kind !== "word") return;
-    assert.equal(value.why?.line, "interests (interest + th)");
-    assert.equal(value.why?.href, "interests.html");
+    const interest = inspectText("thalodothal", tables).tokens[0];
+    assert.equal(interest?.kind, "word");
+    if (interest?.kind !== "word") return;
+    assert.equal(interest.why?.line, "interests (interest + th)");
+    assert.equal(interest.why?.href, "interests.html");
 
     const role = inspectText("zaxozowol", tables).tokens[0];
     assert.equal(role?.kind, "word");

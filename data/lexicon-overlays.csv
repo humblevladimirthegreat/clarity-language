@@ -1,16 +1,16 @@
 sense_form,pos,emoji,kind,gloss,definition,mnemonic,anchor
-alodom,th,🗳️,need,autonomy,autonomy interest (choice / agency),ballot records choice; choice is agency and self-direction,interests.md#prescription-the-ought-this-act-for-this-interest
-alodom,w,🗳️,need,autonomy,autonomy interest (choice / agency),ballot records choice; choice is agency and self-direction,interests.md#personal-possession
-olozom,th,🧰,need,competence,competence interest (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill,interests.md#prescription-the-ought-this-act-for-this-interest
-olozom,w,🧰,need,competence,competence interest (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill,interests.md#personal-possession
-onogom,th,🪢,need,relatedness,relatedness interest (bond / belonging),knot ties two ends; bond is connection and care,interests.md#prescription-the-ought-this-act-for-this-interest
-onogom,w,🪢,need,relatedness,relatedness interest (bond / belonging),knot ties two ends; bond is connection and care,interests.md#personal-possession
-awerom,th,🍓,need,pleasure,pleasure interest (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,interests.md#prescription-the-ought-this-act-for-this-interest
-awerom,w,🍓,need,pleasure,pleasure interest (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,interests.md#personal-possession
-uhuhem,th,🛡️,need,survival,survival interest (defense / safety),shield blocks blows; defense is safety and health,interests.md#prescription-the-ought-this-act-for-this-interest
-uhuhem,w,🛡️,need,survival,survival interest (defense / safety),shield blocks blows; defense is safety and health,interests.md#personal-possession
-egem,th,🥚,need,interest,unspecified interest (potential),egg holds unrealized life; potential names an interest without picking which,interests.md#prescription-the-ought-this-act-for-this-interest
-egem,w,🥚,need,interest,unspecified interest (potential),egg holds unrealized life; potential names an interest without picking which,interests.md#personal-possession
+alodom,th,🗳️,interest,autonomy,autonomy interest (choice / agency),ballot records choice; choice is agency and self-direction,interests.md#prescription-the-ought-this-act-for-this-interest
+alodom,w,🗳️,interest,autonomy,autonomy interest (choice / agency),ballot records choice; choice is agency and self-direction,interests.md#personal-possession
+olozom,th,🧰,interest,competence,competence interest (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill,interests.md#prescription-the-ought-this-act-for-this-interest
+olozom,w,🧰,interest,competence,competence interest (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill,interests.md#personal-possession
+onogom,th,🪢,interest,relatedness,relatedness interest (bond / belonging),knot ties two ends; bond is connection and care,interests.md#prescription-the-ought-this-act-for-this-interest
+onogom,w,🪢,interest,relatedness,relatedness interest (bond / belonging),knot ties two ends; bond is connection and care,interests.md#personal-possession
+awerom,th,🍓,interest,pleasure,pleasure interest (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,interests.md#prescription-the-ought-this-act-for-this-interest
+awerom,w,🍓,interest,pleasure,pleasure interest (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,interests.md#personal-possession
+uhuhem,th,🛡️,interest,survival,survival interest (defense / safety),shield blocks blows; defense is safety and health,interests.md#prescription-the-ought-this-act-for-this-interest
+uhuhem,w,🛡️,interest,survival,survival interest (defense / safety),shield blocks blows; defense is safety and health,interests.md#personal-possession
+egem,th,🥚,interest,interest,unspecified interest (potential),egg holds unrealized life; potential names an interest without picking which,interests.md#prescription-the-ought-this-act-for-this-interest
+egem,w,🥚,interest,interest,unspecified interest (potential),egg holds unrealized life; potential names an interest without picking which,interests.md#personal-possession
 uvuvum,th,🎣,evidential,WITNESSED,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidentiality
 uvuvum,w,🎣,evidential,WITNESSED,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#mood-on-one-adjective
 adezem,th,👁️‍🗨️,evidential,LIVE,live evidential (present observation / concurrent access),eye-in-speech attests while the scene is in view; live is seeing-and-saying now (not memory),knowing.md#evidentiality

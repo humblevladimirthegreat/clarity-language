@@ -334,7 +334,7 @@ Ordinary content is still available (`zehegel` *a checkmark*; `vehegel` *to chec
 #### Endings — changeability
 <a id="decision-changeability"></a>
 
-On **`ehege`**, **-l / -m / -r** match unmet [changeability](interests.md#value-changeability): irreversible / modifiable / temporary. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know how locked the pick is, use **-m**.
+On **`ehege`**, **-l / -m / -r** match unmet [changeability](interests.md#interest-changeability): irreversible / modifiable / temporary. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know how locked the pick is, use **-m**.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|

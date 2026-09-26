@@ -32,8 +32,8 @@ const LEADING_FILLERS = [
 const TRAILING_FILLERS = ["", "l", "n", "m", "r", "2", "2l", "2n", "azawal", "azawan", "awalal", "a", "ul"];
 const NUMBER_FILLERS = ["2", "3", "2l", "3l", "2n", "3n"];
 const ROOT_FILLERS = ["azawa", "awala"];
-/** Need roots, for value patterns (`g…tha…`). */
-const NEED_FILLERS = ["onogo", "olozo"];
+/** Interest roots, for interest patterns (`g…tha…`). */
+const INTEREST_FILLERS = ["onogo", "olozo"];
 
 type Slot = { start: number; end: number; options: string[] };
 
@@ -49,7 +49,7 @@ function slotOptions(text: string, start: number, end: number): string[] {
   if (name === "ROOT") return ROOT_FILLERS;
   if (name === "DIR") return ["eweze", "ubuzu"];
   if (name === "ANCHOR") return ["edone", "azawa"];
-  if (before && after) return ["", ...ROOT_FILLERS, ...NEED_FILLERS, "a", "x", "l"];
+  if (before && after) return ["", ...ROOT_FILLERS, ...INTEREST_FILLERS, "a", "x", "l"];
   return after ? LEADING_FILLERS : TRAILING_FILLERS;
 }
 

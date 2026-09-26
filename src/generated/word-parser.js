@@ -781,7 +781,7 @@ function peg$parse(input, options) {
     return {
       ending,
       plural: !!plural,
-      family: xFamily("value", {
+      family: xFamily("interest", {
         leftRoots: host,
         stanceVowel: stanceV,
       }),

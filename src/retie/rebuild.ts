@@ -185,12 +185,12 @@ function rebuildX(
       const ability = family.stanceVowel ? `x${family.stanceVowel}` : "";
       return `${prefix}${family.roleVowel}x${host}${ability}${tail}`;
     }
-    case "value":
+    case "interest":
     case "ability": {
       if (!family.stanceVowel || left.length === 0) {
         return null;
       }
-      const hinge = family.xFamily === "value" ? "th" : "x";
+      const hinge = family.xFamily === "interest" ? "th" : "x";
       return `${prefix}${left.join("x")}${hinge}${family.stanceVowel}${tail}`;
     }
     case "lateral": {

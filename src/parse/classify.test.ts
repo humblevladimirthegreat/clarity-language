@@ -105,7 +105,7 @@ describe("classify", () => {
     expectReading("g+3", "number");
   });
 
-  it("ability on non-need host compound", () => {
+  it("ability on non-interest host compound", () => {
     expectReading("vuzunexel", "ability");
   });
 
@@ -116,9 +116,9 @@ describe("classify", () => {
     expectReading("uhubuxun", "greeting");
   });
 
-  it("value on need host compounds; bare need root is ordinary", () => {
-    expectReading("thalodothal", "value");
-    expectReading("gonogothal", "value");
+  it("interest on interest host compounds; bare interest root is ordinary", () => {
+    expectReading("thalodothal", "interest");
+    expectReading("gonogothal", "interest");
     expectReading("hawerol", "ordinary");
   });
 

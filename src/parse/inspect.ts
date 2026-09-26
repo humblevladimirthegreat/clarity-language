@@ -361,7 +361,7 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
 export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   const family = word.family;
 
-  if (family.kind === "x" && family.xFamily === "value") {
+  if (family.kind === "x" && family.xFamily === "interest") {
     return { line: "interests (interest + th)", href: "interests.html" };
   }
   if (family.kind === "x" && family.xFamily === "lateral") {
@@ -440,7 +440,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   if (word.reading === "joinAct" || word.reading === "joinRelation") {
     return { line: "join-series form", href: "join-across-roles.html" };
   }
-  if (word.ending === "r" && word.reading !== "value" && word.reading !== "ability" && word.reading !== "greeting") {
+  if (word.ending === "r" && word.reading !== "interest" && word.reading !== "ability" && word.reading !== "greeting") {
     return { line: "anaphor", href: "pronouns.html" };
   }
   if (word.plural) {

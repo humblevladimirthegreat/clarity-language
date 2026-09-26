@@ -180,7 +180,7 @@ function isRoleAnaphor(word: LexWord): boolean {
 
 function isContentAnaphor(word: LexWord): boolean {
   if (word.ending !== "r") return false;
-  if (word.reading === "value" || word.reading === "ability") return false;
+  if (word.reading === "interest" || word.reading === "ability") return false;
   if (word.reading === "restrictor" || word.reading === "mood") return false;
   if (word.family.kind === "joinMarker") return false;
   if (word.family.kind === "hook" || word.family.kind === "spanClose") return false;
