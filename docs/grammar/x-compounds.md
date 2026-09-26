@@ -294,15 +294,15 @@ Role vowels are **`a`** / **`e`** / **`u`** / **`o`**. Span type and edge letter
 
 ### Conversation length (name **`x`** vowel) {#conversation-length}
 
-A [greeting](word-endings.md#greeting) is your own name with a period (`azawan.`). [Calling someone](speech-moves.md#vocative) is their name under **`/j/`** (`jululon.`). Add **`x`** and one vowel before **-n** to say when the conversation will end. At arrival, this sets the expected length. At departure, the same form updates how soon you are leaving. The vowel is about the conversation, not a grade of the person.
+A [greeting](word-endings.md#greeting) is your own name with a period (`SELFn.`). [Calling someone](speech-moves.md#vocative) is their name under **`/j/`** (`jululon.`). Add **`x`** and one vowel before **-n** to say when the conversation will end. At arrival, this sets the expected length. At departure, the same form updates how soon you are leaving. The vowel is about the conversation, not a grade of the person.
 
 On your own name, it says how long you expect to stay. At departure, use the reduced level that matches how soon you are leaving.
 
-> `azawaxan.`
+> `SELFxan.`
 >
-> Azawan-presence
+> SELF-presence
 >
-> "Azawan — I have time; we can stay."
+> "I have time; we can stay."
 
 > `jululoxen.`
 >
@@ -312,20 +312,20 @@ On your own name, it says how long you expect to stay. At departure, use the red
 
 | Form | At arrival | At departure | Cue |
 |------|------------|--------------|-----|
-| `azawaxan` | open-ended: *we can stay* | — | **a** ≈ add (time is in) |
-| `azawaxen` | a few minutes: *I have a little time* | leaving soon | **e** ≈ order (the slot has an end) |
-| `azawaxon` | one slot: *one ask/comment* | about to leave | **o** ≈ one (one last slot) |
-| `azawaxun` | passing: *just acknowledging; not opening a talk* | leaving right now | **u** ≈ undo (lift the talk) |
+| `SELFxan` | open-ended: *we can stay* | — | **a** ≈ add (time is in) |
+| `SELFxen` | a few minutes: *I have a little time* | leaving soon | **e** ≈ order (the slot has an end) |
+| `SELFxon` | one slot: *one ask/comment* | about to leave | **o** ≈ one (one last slot) |
+| `SELFxun` | passing: *just acknowledging; not opening a talk* | leaving right now | **u** ≈ undo (lift the talk) |
 
 Only one of these vowels per name. These forms use the same scale throughout a conversation: a smaller level narrows the remaining time. **-n** is still the [named](word-endings.md#named-n-beginner) ending.
 
-At arrival, the other person can answer with their own bid. The **lesser** bid sets the shared limit: **a** (open-ended) is more than **e** (a few minutes), **e** is more than **o** (one slot), and **o** is more than **u** (passing). If Azawan offers open-ended time and Ululon offers one slot, they have one slot.
+At arrival, the other person can answer with their own bid. The **lesser** bid sets the shared limit: **a** (open-ended) is more than **e** (a few minutes), **e** is more than **o** (one slot), and **o** is more than **u** (passing). If you offer open-ended time and Ululon offers one slot, you have one slot.
 
-> `azawaxan.`
+> `SELFxan.`
 >
-> Azawan-presence
+> SELF-presence
 >
-> "Azawan — I have time; we can stay."
+> "I have time; we can stay."
 
 > `ululoxon.`
 >
@@ -335,27 +335,27 @@ At arrival, the other person can answer with their own bid. The **lesser** bid s
 
 **Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [need](values.md) takes **`th`** + vowel instead (`golozothal`). Conversation-length bids sit on a **named** citation or a **`/j/`** call, with **-n**.
 
-**Compare with:** a plain named citation with a period is the basic hello (`azawan.`). The bid says how much conversation the person is open to.
+**Compare with:** a plain named citation with a period is the basic hello (`SELFn.`). The bid says how much conversation the person is open to.
 
 At departure, use your own name with the reduced level:
 
-> `azawaxen.`
+> `SELFxen.`
 >
-> Azawan-minutes
+> SELF-minutes
 >
-> "Azawan — I’m leaving soon."
+> "I’m leaving soon."
 
-> `azawaxon.`
+> `SELFxon.`
 >
-> Azawan-ask
+> SELF-ask
 >
-> "Azawan — I’m about to leave."
+> "I’m about to leave."
 
-> `azawaxun.`
+> `SELFxun.`
 >
-> Azawan-passing
+> SELF-passing
 >
-> "Azawan — I’m leaving now."
+> "I’m leaving now."
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -368,6 +368,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agalan | Same root as |
 |---------|--------|--------------|
+| *your name* | `SELFn` | |
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
@@ -379,12 +380,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
-**1.** *Azawan — I’m here / we can stay.*
+**1.** *(Your name) — I’m here / we can stay.*
 
 ::: details Show answer
-`azawaxan.`
+`SELFxan.`
 
-Azawan-presence
+SELF-presence
 :::
 
 **2.** *Ululon — a few minutes.* (calling)
@@ -395,20 +396,20 @@ Azawan-presence
 j-Ululon-minutes
 :::
 
-**3.** *Azawan — one ask.*
+**3.** *(Your name) — one ask.*
 
 ::: details Show answer
-`azawaxon.`
+`SELFxon.`
 
-Azawan-ask
+SELF-ask
 :::
 
-**4.** *Azawan — I’m here. Ululon — one ask.*
+**4.** *(Your name) — I’m here. Ululon — one ask.*
 
 ::: details Show answer
-`azawaxan. jululoxon.`
+`SELFxan. jululoxon.`
 
-Azawan-presence . j-Ululon-ask
+SELF-presence . j-Ululon-ask
 :::
 
 **5.** *Uhubun — just passing.* (calling)
@@ -443,12 +444,12 @@ j-Azawan-minutes | z-Ululon | v-scream
 j-Ululon-passing | z-Uhubun | z-Azawan | v-punch
 :::
 
-**9.** *Azawan — I’m here / we can stay.* *Ululon — one ask.* (Ululon’s bid is the one that holds)
+**9.** *(Your name) — I’m here / we can stay.* *Ululon — one ask.* (Ululon’s bid is the one that holds)
 
 ::: details Show answer
-`azawaxan. ululoxon.`
+`SELFxan. ululoxon.`
 
-Azawan-presence . Ululon-ask
+SELF-presence . Ululon-ask
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}

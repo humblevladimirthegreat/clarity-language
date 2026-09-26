@@ -410,7 +410,7 @@ The negatives **`thononel`** / **`thononem`** use the root **`onone`** (⛔ *no 
 | **`thononel`** | a person forbids it | *may not* / *I won't let you* | **-l** ≈ locked to a forbidder |
 | **`thononem`** | a rule or norm forbids it | *is not allowed to* | **-m** ≈ open standing rule |
 
-To **ask** for permission, put the clause under [ask](questions.md#question): `jom zugobon vajul therenel.` (*May I sit?*). Grant it with [**`jaol.`**](questions.md#polar-stance) (*go ahead*).
+To **ask** for permission, put the clause under [ask](questions.md#question): `jom zSELFn vajul therenel.` (*May I sit?*). Grant it with [**`jaol.`**](questions.md#polar-stance) (*go ahead*).
 
 **Compare with:** [prescription](#value-force) **`the`** says the act *ought* to serve a need; permission only says the act is *allowed*. [Ability](intention.md#incapability) says someone *can* do it; permission says whether they *may*.
 
@@ -438,7 +438,7 @@ The ending says **how you know**. Use **-l** when they said yes outright. Use **
 >
 > "Ululon lets themself sleep."
 
-**-m** is allowed but visibly weaker. Choosing it makes *I assumed* part of the sentence instead of hiding it inside *they were fine with it*. On yourself, **-m** is half-hearted: `zugobon vajul thuxerenem.` is *I suppose I'm OK with sitting*.
+**-m** is allowed but visibly weaker. Choosing it makes *I assumed* part of the sentence instead of hiding it inside *they were fine with it*. On yourself, **-m** is half-hearted: `zSELFn vajul thuxerenem.` is *I suppose I'm OK with sitting*.
 
 The negatives are **`thuxononel`** and **`thuxononem`**. **-l** means they said no; that overrides any earlier yes. **-m** means they probably don't want it; with no `/b/`, it is *not letting yourself*.
 
@@ -451,7 +451,7 @@ The negatives are **`thuxononel`** and **`thuxononem`**. **-l** means they said 
 
 To check in, ask: `jom zazawan vezehel thuxerenel.` (*Are you still OK with this?*).
 
-**Compare with:** permission **`therenel`** can come from anyone with the standing to grant it: `zazawan vezehel therenel bululon.` means Ululon allowed it, which is not the same as the listener agreeing. `zugobon vajul therenel.` is *I'm allowed to sit* (someone let me); `zugobon vajul thuxerenel.` is *I let myself sit*.
+**Compare with:** permission **`therenel`** can come from anyone with the standing to grant it: `zazawan vezehel therenel bululon.` means Ululon allowed it, which is not the same as the listener agreeing. `zSELFn vajul therenel.` is *I'm allowed to sit* (someone let me); `zSELFn vajul thuxerenel.` is *I let myself sit*.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>

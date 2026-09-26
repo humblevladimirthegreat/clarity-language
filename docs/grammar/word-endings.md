@@ -68,7 +68,7 @@ The last letters you just used, on the same root `azawa`:
 ### Writing {#citation-forms}
 <a id="prefix-less-citation"></a>
 
-A citation is **lowercase** root + ending (`azawal`, `azawam`, `azawan`). English for a citation is the bare sense (*swan*, *grace*, *Azawan*), with no article. In a sentence you will add a first letter for the word’s job; that is the [clause](clause.md#beginner) page. A [greeting](#greeting) is the named citation as a whole opening (`azawan.`).
+A citation is **lowercase** root + ending (`azawal`, `azawam`, `azawan`). English for a citation is the bare sense (*swan*, *grace*, *Azawan*), with no article. In a sentence you will add a first letter for the word’s job; that is the [clause](clause.md#beginner) page. A [greeting](#greeting) is the named citation as a whole opening (`SELFn.`).
 
 ### Translation practice {#beginner-translation-practice}
 

@@ -59,13 +59,11 @@ Most of the time you name people with a proper name (`zazawan`, `zululon`) and r
 
 When a proper name is available, prefer that name (and its **-r** resume), including for talking about yourself: [proper name](word-endings.md#proper-name--n).
 
-(Ululon speaking)
-
-> `zululon vawalal.`
+> `zSELFn vawalal.`
 >
-> z-Ululon | v-walk
+> z-SELF | v-walk
 >
-> "I walk." Ululon names himself rather than saying *I*.
+> "I walk." You name yourself rather than saying *I*.
 
 Use **`ugobo`** (*speaker*) and **`edone`** (*listener*) when what matters is the conversation role, not a name.
 
