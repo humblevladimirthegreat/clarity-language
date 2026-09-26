@@ -283,11 +283,11 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 15 | `comparatives.md` | **exists** | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; single-item superlative; equative **`ae`** | **Needs:** joins Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
 | 15 | `causation.md` | **exists** | Two-place poles: outcome host + `/b/` condition; `/th/` event vs `/ɡ/` noun; *if* **`adoro`** vs *only if* **`ebero`**; no cause-arrow word | **Needs:** core extra nouns + dependents **`darl`**. *Because* / **`IFF`** / **CAUSE** are Intermediate — do not use |
 | 16 | `interests.md` | **exists** | Six needs; `/ɡ/` on a belonging vs `/th/` on the clause; **`tha`** met + contact **-l / -m / -r**; **`thu`** unmet changeability; unowned **`gobobum`** + `/w/` need | **Not** prescription **`the`** or motive **`tho`** (Intermediate). Not ability (non-interest + `x` vowel). Not MAY. Not bare need-as-topic |
-| 16 | `intention.md` | **exists** | PLAN / PREDICT and host ability contrasts: **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (interest roots). Not role compounds (vowel *left* of `x`). Not conversation length (named citation or `/y/`) |
+| 16 | `intention.md` | **exists** | PLAN and host ability contrasts: **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (interest roots). Not role compounds (vowel *left* of `x`). Not conversation length (named citation or `/y/`) |
 | 16 | `knowing.md` | **exists** | **MAY** **`odoho`** + 2a holds (**`thodohom`** default; **-l** find out; **-r** who knows) | Not evidentiality / NOTIONAL (Intermediate). Not **`yom`** (core Intermediate) unless you only recycle **`yol`** from core/questions Beginner |
 | 16 | `roles.md` | **exists** | Role compounds **`a`/`e`/`u`/`o` x ROOT`** (agent / place / patient / recipient; **`o`** = reltum on a relation); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
 | 16 | `x-compounds.md` | **exists** | Productive **`x`** vs two words vs dictionary compound; look up listed stems (`abedelohohu` / `onogolebere`); do not coin them. Live **`x`** from parts (not a pre-joined bank row) | Not parser-family inventory as drills; not coining new dictionary compounds. Greeting bid is Intermediate |
-| 16 | `intention.md` | **exists** | **PLAN** **`emaba`** map-resolution endings vs **PREDICT** **`elezo`** (bare) | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling MAY / values unused unless the page contrast needs them |
+| 16 | `intention.md` | **exists** | **PLAN** **`emaba`** map-resolution endings | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling MAY / values unused unless the page contrast needs them |
 
 ### Intermediate then Advanced
 <a id="allowlist-later"></a>
@@ -301,7 +301,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 6 | `speech-moves.md` | Intermediate | **exists** | **`yam`/`yom`/`yem`/`yum`**; opening hooks before an act word; number-as-interjection pointer only if the stage’s examples already show it | Do not require numbers Intermediate readings |
 | 7 | `dependents.md` | Intermediate | **exists** | `/x/` linkers (`xezazam`, `xezebal`, …); nested **`barl`**; stand-in vowels; which-noun with resume | Recycle Beginner **`darl`/`barl`** |
 | 13 | `relations.md` | Intermediate | **exists** | *between* **`hazanum`**; of-relations (`gobonem`, `gajaram`, `gowodom`, `gugunom`); recycle extra-noun hooks for other place talk | *Between* recycles joins Beginner `/b/` join |
-| 13 | `relations.md` | Advanced | **exists** | Hosted *as-of* **`helerem` / `hobomam`**; `/h/` `/ɡ/` `/w/`; resume **-r**; date in `/b/` | Recycle RESIDUE, PREDICT, calendar `b_#…`. Not persist hooks |
+| 13 | `relations.md` | Advanced | **exists** | Hosted *as-of* **`helerem` / `hobomam`**; `/h/` `/ɡ/` `/w/`; resume **-r**; date in `/b/` | Recycle RESIDUE, forecast, calendar `b_#…`. Not persist hooks |
 | 4 | `word-endings.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; [titled phrases](../grammar/word-endings.md#titled-phrases) (hook / join / span **-n**, inner **-l** / **-m**); office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
 | 4 | `word-endings.md` | Advanced | skip | — | no Advanced stage |
 | 9 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`aha`** vs name join vs name…**-x** | |
@@ -335,8 +335,8 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 16 | `x-compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *a few minutes* / passing) | Recycle [greeting](../grammar/word-endings.md#greeting) and [vocative](../grammar/speech-moves.md#vocative). Not ability (`vuzunuxel`). Not values |
 | 16 | `roles.md` | Advanced | — | no Advanced stage | |
 | 17 | `join-across-roles.md` | Intermediate | **exists** | Verb-phrase and clause joins (`vam`, `xam`, sequence `xan`); join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 17) |
-| 17 | `intention.md` | Intermediate | **exists** | **DECISION** **`ehege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
-| 17 | `intention.md` | Advanced | **exists** | PLAN / PREDICT against *as-of*; DECISION speech-now | Recycle relations Advanced |
+| 17 | `intention.md` | Intermediate | **exists** | **DECISION** **`ehege`** changeability; forecast = evidential + `b+` vs PLAN; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
+| 17 | `intention.md` | Advanced | **exists** | PLAN / forecast against *as-of*; DECISION speech-now | Recycle relations Advanced |
 | 17 | `interests.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value) | Recycle values Beginner. |
 | 17 | `numbers-applied.md` | Intermediate | **exists** | Numbered alternatives `uzebum`/`agegom`/`olalal` + `g#N` | Recycle numbers Beginner. |
 | 18 | `numeric-derivation.md` | Advanced | **exists** | `ROOT l NUM` as the stage teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
@@ -379,7 +379,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Viewpoint laterals | `roles.md` Intermediate |
 | Measure phrases / ranges / percent | `numbers-applied.md` Intermediate |
 | Join-act **`van`** / join-relation **`gan`** | `join-across-roles.md` Intermediate |
-| **PLAN** / **PREDICT** | `intention.md` Beginner |
+| **PLAN** | `intention.md` Beginner |
 | **DECISION** | `intention.md` Intermediate |
 | Emotion compose | `interests.md` Intermediate |
 | Numbered alternatives | `numbers-applied.md` Intermediate |

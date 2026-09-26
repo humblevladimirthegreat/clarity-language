@@ -1232,6 +1232,9 @@ function numberLabel(stem: NumberStem, pos: Pos | undefined): string {
   }
 
   if (stem.groups.length === 0 && !exp) {
+    // Digitless signed amount on /b/ is an unmeasured offset (knowing.md#forecast).
+    if (pos === "b" && stem.marker === "+") return "later";
+    if (pos === "b" && stem.marker === "-") return "earlier";
     if (stem.marker === "+") return "more-than-one";
     if (stem.marker === "-") return "negative-unspecified";
     if (stem.marker === "#") return "some-rank";

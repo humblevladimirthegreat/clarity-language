@@ -221,7 +221,7 @@ z-Uhubun | th-MAY | v-cry
 
 English often says *how you know* a claim (*I saw it*, *I heard*, *I figured*). Agalan keeps the ordinary content verb and adds a closed `/th/` mood word. That word is the **channel** the claim came through, so the same walk or sleep can sit under a live look, memory, a recording, a pattern of cases, clues, hearsay, a gut sense, or a tale.
 
-Verbs have **no past or future letter**. Some channels already locate the event because of how you know: **LIVE** is watching while the scene is still in view; **WITNESSED** is memory of watching; **RECORDED** is playback of a capture. [PREDICT](intention.md#predict) / [PLAN](intention.md#plan-predict) look ahead (the event is later). Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, or a [signed offset](#dated-channel) on the channel) when inference or hearsay needs a different time than this stretch.
+Verbs have **no past or future letter**. Some channels already locate the event because of how you know: **LIVE** is watching while the scene is still in view; **WITNESSED** is memory of watching; **RECORDED** is playback of a capture, or a schedule. There is no forecast word: a claim that something **will** happen is a channel plus the later offset **`b+`** ([forecasts](#forecast)), so a forecast always says how you know. [PLAN](intention.md#plan-predict) is intention, not a forecast. Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, or a [signed offset](#dated-channel) on the channel) when inference or hearsay needs a different time than this stretch.
 
 > `zazawan thadezem vawalal.`
 >
@@ -241,7 +241,7 @@ Verbs have **no past or future letter**. Some channels already locate the event 
 |--------|-----|---------|--------------|-----|
 | **`thadezem`** | firsthand / concurrent channel | *live* / *from the scene* | `adezel` *attest* | 👁️‍🗨️: seeing-and-saying while it is in view |
 | **`thuvuvum`** | firsthand / reconstructive channel | *from memory* (past observation) | `uvuvul` *fishing* | 🎣: you pull something back |
-| **`theregom`** | documented / captured channel | *on record* / *playback* | `eregol` *record* | ⏺️: what was saved plays back |
+| **`theregom`** | documented / captured / scheduled channel | *on record* / *playback* / *scheduled* | `eregol` *record* | ⏺️: what was saved plays back |
 | **`thabawam`** | regularity / similar cases | *from the pattern* | `abawal` *paw-prints* | 🐾: cases left behind |
 | **`thunevem`** | reasoned from clues | *inferred* | `unevel` *investigate* | 🕵️: you work the clues |
 | **`theraram`** | someone said so | *so they say* / hearsay | `eraral` *ear* | 👂: you heard it told |
@@ -266,6 +266,57 @@ Pick one evidential **root** for how you know.
 
 **Related form:** to deny only the channel (*it happened, but I did not see it*), close the evidential with a [stance join](join-across-roles.md#stance-joins) (taught later). Two channels you cannot choose between use the same kind of join.
 
+### Evidence strength {#evidence-strength}
+
+The ending on a channel says **how strong the evidence is**: how much the claim rests on, not how likely the event is. Use **-m** by default. Use **-l** when the evidence is solid and **-r** when it is thin. Likelihood is a separate [stance number](numbers.md#number-as-stance-by-marker) (`th+70`), so a strong pattern can still give middling odds, and a rumor can claim certainty.
+
+| Channel | **-l** strong | **-m** (default) | **-r** weak |
+|---------|---------------|------------------|-------------|
+| LIVE | `thadezel` a clear, full view | `thadezem` | `thadezer` a glimpse |
+| WITNESSED | `thuvuvul` a vivid memory | `thuvuvum` | `thuvuvur` a hazy memory |
+| RECORDED | `theregol` an authoritative record or official schedule | `theregom` | `theregor` an unofficial or partial record |
+| PATTERN | `thabawal` a well-established pattern | `thabawam` | `thabawar` a few cases |
+| INFERRED | `thunevel` strong clues | `thunevem` | `thunever` a weak clue |
+| TOLD | `theraral` a reliable source | `theraram` | `therarar` a rumor |
+| FELT | `theherel` a strong gut sense | `theherem` | `theherer` a faint hunch |
+| TALE | `thorolol` established lore | `thorolom` | `thorolor` a loose anecdote |
+
+> `zululon therarar vebarul.`
+>
+> z-Ululon | th-TOLD.weak | v-departure
+>
+> "Rumor has it Ululon left."
+
+> `zazawan thuvuvul vawalal.`
+>
+> z-Azawan | th-WITNESSED.strong | v-walk
+>
+> "Azawan walked — I remember it clearly."
+
+### Forecasts (`b+`) {#forecast}
+
+Agalan has no *will* word for the world. To say something **will** happen, use a channel and put the later offset **`b+`** right after it: a `/b/` number with a plus sign and no digits, meaning *some time after now*. The channel says what the forecast rests on, so a forecast cannot hide its warrant. For a hunch, the honest channel is FELT. The mirror **`b-`** is *some time before now*, for a past claim with no measured amount.
+
+> `thabawam b+ vanunul.`
+>
+> [th-PATTERN | b-later] | v-rain
+>
+> "It will rain (going by the pattern)."
+
+> `zululon theherer b+ vebarul.`
+>
+> z-Ululon | [th-FELT.weak | b-later] | v-departure
+>
+> "I have a faint hunch Ululon will leave."
+
+> `zazawan theregol b+ vezehel.`
+>
+> z-Azawan | [th-RECORDED.strong | b-later] | v-tell
+>
+> "Azawan is officially scheduled to speak."
+
+**Compare with:** [PLAN](intention.md#plan-predict) (`themabam`) says what someone **intends** to do; it needs no channel. A forecast is a claim about the world. To say **how much** later (*in three hours*), replace `b+` with a measured [dated channel](#dated-channel) (Advanced). *Could be* with no warrant is [MAY](#may), not a forecast.
+
 ### Live vs memory {#live-vs-memory}
 <a id="memory-record"></a>
 <a id="memory"></a>
@@ -285,7 +336,7 @@ Pick one evidential **root** for how you know.
 <a id="former-climate"></a>
 <a id="episode-standing"></a>
 
-English *has walked* and *used to walk* often smuggle **when** the event sits. Agalan already places events with [*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, [LIVE](#live-vs-memory) / [WITNESSED](#live-vs-memory), or [PREDICT](intention.md#predict). These two `/th/` moods do **not** locate time. They say how the episode **stands**: whether an outcome **still counts on the current tally**, or whether a usual pattern is **not the climate you are claiming now**. Stack them with a channel or a when-frame; do not use them as a past or present letter.
+English *has walked* and *used to walk* often smuggle **when** the event sits. Agalan already places events with [*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, [LIVE](#live-vs-memory) / [WITNESSED](#live-vs-memory), or a [forecast](#forecast). These two `/th/` moods do **not** locate time. They say how the episode **stands**: whether an outcome **still counts on the current tally**, or whether a usual pattern is **not the climate you are claiming now**. Stack them with a channel or a when-frame; do not use them as a past or present letter.
 
 **RESIDUE** (`oneno`) marks leftover balance: the result is still on the books (an unpaid tab, a door that is still shut). Skipping it means you are not claiming current residue (archived, or a fresh event with nothing left to count). Ordinary `zonenom` is still *debt*.
 
@@ -323,13 +374,13 @@ English *has walked* and *used to walk* often smuggle **when** the event sits. A
 >
 > "Azawan always tells — a former pattern, not today's; seen live." (the scene is in view, and the pattern is still not today's)
 
-> `zazawan hual vezehel themebem thelezom.`
+> `zazawan hual vezehel themebem thabawam b+.`
 >
-> z-Azawan | h-always | v-tell | th-FORMER | th-PREDICT
+> z-Azawan | h-always | v-tell | th-FORMER | [th-PATTERN | b-later]
 >
-> "Azawan always tells — a pattern that will be former by then (forecast)."
+> "Azawan always tells — a pattern that will be former by then (forecast from the pattern)."
 
-**Compare with:** **`hual`** without **`themebem`** is *always* as the weather you stand behind now. PATTERN **`thabawam`** is *how you know* (a trail of cases), not “this used to be my weather.” Do not write **`themebem`** immediately before **`hual`**: that slot is the restrictor’s occasion list (*always except when…*). Keep **`hual`** first (bare *always*), then **FORMER** after the verb, the way [COMMON](#universality) sits after **`hual`**. **`themebem`** is not a past tense: it is legal under LIVE and PREDICT.
+**Compare with:** **`hual`** without **`themebem`** is *always* as the weather you stand behind now. PATTERN **`thabawam`** is *how you know* (a trail of cases), not “this used to be my weather.” Do not write **`themebem`** immediately before **`hual`**: that slot is the restrictor’s occasion list (*always except when…*). Keep **`hual`** first (bare *always*), then **FORMER** after the verb, the way [COMMON](#universality) sits after **`hual`**. **`themebem`** is not a past tense: it is legal under LIVE and in a forecast.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -479,6 +530,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Wri
 | *RESIDUE* | `thonenom` | `onenom` *debt* |
 | *FORMER* | `themebem` | `emebem` *emptiness* |
 | *always* | `hual` | |
+| *TOLD.weak* | `therarar` | `eraral` *ear* |
+| *PATTERN.strong* | `thabawal` | `abawal` *paw-prints* |
+| *RECORDED.strong* | `theregol` | `eregol` *record* |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
@@ -568,6 +622,22 @@ z-Ululon | h-always | v-tell | th-FORMER | th-LIVE
 `zuhubun thadezem hanogom vazagal.`
 
 z-Uhubun | th-LIVE | h-still | v-scream
+:::
+
+**12.** *Ululon screams — rumor has it.*
+
+::: details Show answer
+`zululon therarar vazagal.`
+
+z-Ululon | th-TOLD.weak | v-scream
+:::
+
+**13.** *Going by a well-established pattern, Azawan will tell Uhubun.*
+
+::: details Show answer
+`zazawan thabawal b+ vezehel buhubun.`
+
+z-Azawan | [th-PATTERN.strong | b-later] | v-tell | b-Uhubun
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -668,6 +738,15 @@ z-Azawan | h-always | v-tell | th-FORMER
 z-Ululon | h-not-yet.lasting | v-departure
 
 *Ululon hasn't left yet, but will.*
+:::
+
+**12.** `zuhubun theregol b+ vezehel.`
+
+::: details Show answer
+
+z-Uhubun | [th-RECORDED.strong | b-later] | v-tell
+
+*Uhubun is officially scheduled to speak.*
 :::
 
 ## Advanced {#advanced}
@@ -786,13 +865,14 @@ Some channels only point one way:
 
 | Channel | Sign | Why |
 |---------|------|-----|
-| **`thuvuvum`** WITNESSED, **`theregom`** RECORDED | **`-`** only | you already observed or captured it |
+| **`thuvuvum`** WITNESSED | **`-`** only | you already observed it |
 | **`thadezem`** LIVE | no offset | the scene is in view now |
+| **`theregom`** RECORDED | **`-`** or **`+`** | **`-`**: captured then; **`+`**: scheduled for then |
 | **`thabawam`** PATTERN | **`-`** or **`+`** | **`-`**: it happened then, if the pattern held; **`+`**: it will, if the pattern holds |
 | **`thunevem`** INFERRED, **`theraram`** TOLD, **`theherem`** FELT, **`thorolom`** TALE | **`-`** or **`+`** | the channel does not fix the time |
-| [PREDICT](intention.md#predict) **`thelezom`**, [PLAN](intention.md#plan-predict) **`themabam`** | **`+`** only | the event is later |
+| [PLAN](intention.md#plan-predict) **`themabam`** | **`+`** only | the intended act is later |
 
-The wrong sign on a one-way channel (**`thuvuvum`** with **`+`**, **`thelezom`** with **`-`**) is not a sentence.
+The wrong sign on a one-way word (**`thuvuvum`** with **`+`**, **`themabam`** with **`-`**) is not a sentence.
 
 For *just* and *about to*, use the [just-short](numbers.md#just-short) amount with no unit: **`b-e-`** is *a hair before now*, **`b+e-`** is *a hair after now*.
 
@@ -804,13 +884,13 @@ For *just* and *about to*, use the [just-short](numbers.md#just-short) amount wi
 >
 > "I just saw Azawan walk."
 
-> `thelezom b+e- vanunul.`
+> `thunevem b+e- vanunul.`
 >
-> 🔊 *thelezom brabul vanunul.*
+> 🔊 *thunevem brabul vanunul.*
 >
-> [th-PREDICT | b-+-e-] | v-rain
+> [th-INFERRED | b-+-e-] | v-rain
 >
-> "It is about to rain."
+> "It is about to rain (from the clouds)."
 
 > `zululon thabawam bohoram g-3 velebel.`
 >
@@ -846,7 +926,7 @@ The unit sets how wide *now* is. Zero hours is *right now*; zero [days](numbers-
 >
 > "I hear Azawan sings today."
 
-Use zero on a channel that takes either sign. **LIVE** `thadezem` already means *now in view*, so it needs no offset. **WITNESSED** and **RECORDED** take **`-`** only, and PREDICT and PLAN take **`+`** only, so zero is not a sentence on them.
+Use zero on a channel that takes either sign. **LIVE** `thadezem` already means *now in view*, so it needs no offset. **WITNESSED** takes **`-`** only and PLAN takes **`+`** only, so zero is not a sentence on them.
 
 ### Universality {#universality}
 <a id="universality-mood"></a>
@@ -1105,7 +1185,7 @@ z-Azawan | h-never | v-sit | [th-RULE | b-soccer]
 
 - Interest ascription: [interests.md](interests.md)
 - Emotion compose: [interests.md](interests.md#emotion-compose)
-- Forecast stacked with a channel: [intention.md](intention.md#plan-predict)
+- Plan vs forecast: [intention.md](intention.md#plan-predict)
 - Clock / date / when-frames: [numbers-applied.md](numbers-applied.md#time)
 - Habitual *always*: [restrictors.md](restrictors.md)
 - Usual-climate universality: [Universality](#universality)

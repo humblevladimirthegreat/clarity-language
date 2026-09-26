@@ -297,7 +297,7 @@ That ending says why you think a move is welcome. Use **-l** when the person inv
 
 **Compare with:** [command](speech-moves.md#speech-act-beginner) **`yel`** instructs an act outright without naming the interest or why a move is wanted. **`the`** is interest-linked deontic: *ought to advance this interest*, with that warrant on the ending.
 
-**Compare with:** [predict](intention.md#predict) (`thelezo` …) when English *should* is really a **forecast** about what will pay off the interest, or when you want both *is doing* and a norm on that doing — not prescription deontic. For a plain performance report, drop **`the`** and assert the verb alone.
+**Compare with:** a [forecast](knowing.md#forecast) (a channel plus `b+`) when English *should* is really a **forecast** about what will pay off the interest, or when you want both *is doing* and a norm on that doing — not prescription deontic. For a plain performance report, drop **`the`** and assert the verb alone.
 
 **Compare with:** [motive](#interest-preference) **`tho`** plus a [request](speech-moves.md#speech-act) **`yem`** when the speaker wants **their own** interest served. **`the`** is advice about the interest named on this word.
 

@@ -40,8 +40,7 @@ Closed labels for psychological moods, poles, and emotion-compose pieces. Mood w
 | **ONLY-IF** | Clause-pole **`ebero`** (*only if* / *needs*) | [Causation](causation.md#only-if) |
 | **PATTERN** | Evidential: from regularity | [Knowing](knowing.md#evidentiality) |
 | **PLAN** | Intention-framing mood **`emaba`** | [Intention](intention.md#plan-predict) |
-| **PREDICT** | Later-event forecast mood **`elezo`** | [Intention](intention.md#predict) |
-| **RECORDED** | Evidential: documented / playback | [Knowing](knowing.md#evidentiality) |
+| **RECORDED** | Evidential: documented / playback / scheduled | [Knowing](knowing.md#evidentiality) |
 | **RESIDUE** | Episode standing: outcome still on the current tally **`oneno`** | [Knowing](knowing.md#residue) |
 | **RULE** | Universality: holds inside a named frame | [Knowing](knowing.md#universality) |
 | **SAME** | Identity copula **`onunu`** | [Predication](predication.md#identity) |
@@ -331,6 +330,12 @@ Reason for the *could be* (**MAY**), not world **BECAUSE**.
 
 [Comparatives](comparatives.md#equatives)
 
+### Evidence strength
+
+Endings on an evidential channel: **-l** strong evidence, **-m** default, **-r** weak evidence. How much the claim rests on, not how likely it is.
+
+[Knowing](knowing.md#evidence-strength)
+
 ### Evidentiality
 
 Closed `/th/` how-you-know roots.
@@ -403,11 +408,12 @@ Speech-act ending **-l** vs **-m**.
 
 [Speech moves](speech-moves.md#speech-act)
 
-### Forecast source
+### Forecast
+<a id="forecast-source"></a>
 
-Evidentiality stacked on **PREDICT**.
+A claim that something **will** happen: an evidential channel plus the later offset **`b+`**. There is no forecast word, so a forecast always names how you know it.
 
-[Intention](intention.md#predict-evidentiality)
+[Knowing](knowing.md#forecast)
 
 ### Full-root resume / short resume
 

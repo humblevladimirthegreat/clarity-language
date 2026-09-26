@@ -392,7 +392,7 @@ describe("parse — as-of poles", () => {
   });
 
   it("parses bookmark as-of plus barl dependent", () => {
-    const result = parseText("zadorol gologem thonenom thelezom hobomam barl zululon vebarum.");
+    const result = parseText("zadorol gologem thonenom thunevem b+ hobomam barl zululon vebarum.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
     const h = clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "hobomam");

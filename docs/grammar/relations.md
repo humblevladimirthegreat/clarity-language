@@ -438,7 +438,7 @@ A later `/x/` clause is a new host. To keep the same books, write the **same ove
 
 Do not put a bare person in `/b/` as “from Ululon’s now.” That is [proxy](#proxy) (`hudagam`). Prefer `helerem barl zululon vezehel`.
 
-Once whose-now is set, [PREDICT](intention.md#predict) is **after** that now, [PLAN](intention.md#plan-predict) is **from** that now, [RESIDUE](knowing.md#residue) leftover is on **that** tally, and [FORMER](knowing.md#former-climate) is not **that stretch’s** climate. A bare verb is **concurrent** with that now. [MAY](knowing.md#may), [DECISION](intention.md#decision), and [CAUSE](causation.md#cause) still evaluate from speech-now. Evidentials other than LIVE-at-snapshot are how *you* know at speech-now.
+Once whose-now is set, a [forecast](knowing.md#forecast) offset (`b+`) counts **after** that now, [PLAN](intention.md#plan-predict) is **from** that now, [RESIDUE](knowing.md#residue) leftover is on **that** tally, and [FORMER](knowing.md#former-climate) is not **that stretch’s** climate. A bare verb is **concurrent** with that now. [MAY](knowing.md#may), [DECISION](intention.md#decision), and [CAUSE](causation.md#cause) still evaluate from speech-now. Evidentials other than LIVE-at-snapshot are how *you* know at speech-now.
 
 > `zazawan zululon zel welerem b_#22,7 gomonam.`
 >
@@ -470,11 +470,11 @@ Once whose-now is set, [PREDICT](intention.md#predict) is **after** that now, [P
 >
 > "As of when Ululon told it, the departure still stood." — the telling sentence is whose-now, not leftover
 
-> `zululon thonenom helerem b_#22,7 vebarul. xazawan thelezom hobomam b_#23,7 vawalal.`
+> `zululon thonenom helerem b_#22,7 vebarul. xazawan thabawam b+ hobomam b_#23,7 vawalal.`
 >
-> z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | th-PREDICT | [h-as-of.bookmark | b-_23,7] | v-walk
+> z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | [th-PATTERN | b-later] | [h-as-of.bookmark | b-_23,7] | v-walk
 >
-> "As of 22 July, Ululon had still left. From a 23 July placeholder, Azawan would walk." — a new pair replaces whose-now
+> "As of 22 July, Ululon had still left. From a 23 July placeholder, Azawan would walk, going by the pattern." — a new pair replaces whose-now
 
 A finished inner clause does not stay open for a later matrix resume. Isolated `helerer` parses; write it only after an introduce of that overlay.
 
@@ -507,7 +507,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The hos
 | *house* | `ohohul` |
 | *money* | `onenol` |
 | *RESIDUE* | `thonenom` |
-| *predict* | `thelezom` |
+| *PATTERN* | `thabawam` |
 | *as-of.ledger* | `helerem` |
 | *as-of.bookmark* | `hobomam` |
 | *challenge* | `gomonam` |
@@ -531,12 +531,12 @@ z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 z-Azawan | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 :::
 
-**3.** *Taking 22 July as now (a placeholder), it would rain.*
+**3.** *Taking 22 July as now (a placeholder), it would rain, going by the pattern.*
 
 ::: details Show answer
-`thelezom hobomam b_#22,7 vanunul.`
+`thabawam b+ hobomam b_#22,7 vanunul.`
 
-th-PREDICT | [h-as-of.bookmark | b-_22,7] | v-rain
+[th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain
 :::
 
 **4.** *The money as of 22 July.*
@@ -583,13 +583,13 @@ z-Uhubun | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 *As of 22 July, Uhubun sits in a house.*
 :::
 
-**3.** `thelezom hobomam b_#22,7 vanunul. xazawan thelezom hobomar vawalal.`
+**3.** `thabawam b+ hobomam b_#22,7 vanunul. xazawan thabawam b+ hobomar vawalal.`
 
 ::: details Show answer
 
-th-PREDICT | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | th-PREDICT | h-as-of.bookmark | v-walk
+[th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | [th-PATTERN | b-later] | h-as-of.bookmark | v-walk
 
-*Taking 22 July as now (a placeholder), it would rain. Azawan would walk too, on the same placeholder.*
+*Taking 22 July as now (a placeholder), it would rain, going by the pattern. Azawan would walk too, on the same placeholder.*
 :::
 
 **4.** `zohohul gelerem b_#23,7.`

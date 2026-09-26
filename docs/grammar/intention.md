@@ -1,6 +1,6 @@
 # Intention {#intention}
 
-English *will* and *going to* can describe either **intention** (the course someone means to take) or a **forecast** (what someone thinks will happen later). Agalan marks these meanings with special `/th/` words at the start of the clause, followed by an ordinary verb. The distinction lets you show whether you are describing someone's chosen course or making a claim about a future event.
+English *will* and *going to* can describe either **intention** (the course someone means to take) or a **forecast** (what someone thinks will happen later). Agalan marks intention with a `/th/` word before an ordinary verb. A forecast has no word of its own: it is a [channel](knowing.md#forecast) that says how you know, plus a later offset (taught later). The distinction lets you show whether you are describing someone's chosen course or making a claim about a future event.
 
 ## Beginner {#beginner}
 
@@ -43,17 +43,7 @@ On **`emaba`**, **-l / -m / -r** say **how fully drawn** the intention is: a map
 
 Saying *I will* in English can hide whether you only intend a heading, you have the steps, or you are fully prepared. Picking the ending makes that preparation audible.
 
-### Predict {#predict}
-
-To predict a later event, such as rain or a result, put **`thelezo`** before the ordinary verb. Use **`thelezom`** as the default when you have nothing more to add. The event must be later than now; a guess about something already true but hidden, such as where someone is, uses a different pattern. (Cue: 🔭 A telescope looks ahead into the distance.)
-
-> `thelezom vanunul.`
->
-> th-PREDICT | v-rain
->
-> "I predict it will rain."
-
-**Compare with:** English *will* as *intends to …* / *plans to …* uses [PLAN](#plan-predict) (`themabal` / `themabam` / `themabar`). PREDICT is a later world forecast, not someone’s course. To say *how much* later (*in three hours*), add a `+` [offset](knowing.md#dated-channel) after PREDICT or PLAN.
+**Compare with:** a forecast about the world (*it will rain*) is not PLAN. PLAN says what someone means to do, and needs no warrant. A forecast always names how you know it: a channel plus a later offset ([forecasts](knowing.md#forecast), taught later). To say *how much* later someone means to act (*in three hours*), add a `+` [offset](knowing.md#dated-channel) after PLAN.
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -102,12 +92,12 @@ z-Ululon | th-plan-sketch | d-pawn | v-see
 z-Azawan | b-Uhubun | th-plan-itinerary | v-tell
 :::
 
-**4.** *I predict Azawan will sit.*
+**4.** *Uhubun is fully prepared to sit.*
 
 ::: details Show answer
-`zazawan thelezom vajul.`
+`zuhubun themabal vajul.`
 
-z-Azawan | th-PREDICT | v-sit
+z-Uhubun | th-plan-atlas | v-sit
 :::
 
 **5.** *Uhubun plans to see Azawan.*
@@ -126,12 +116,12 @@ z-Uhubun | th-plan-itinerary | d-Azawan | v-see
 z-Ululon | th-plan-atlas | d-Azawan | v-punch
 :::
 
-**7.** *I predict Ululon will scream.*
+**7.** *Ululon plans to scream.*
 
 ::: details Show answer
-`zululon thelezom vazagal.`
+`zululon themabam vazagal.`
 
-z-Ululon | th-PREDICT | v-scream
+z-Ululon | th-plan-itinerary | v-scream
 :::
 
 **8.** *Ululon is fully prepared to fight.*
@@ -171,13 +161,13 @@ z-Uhubun | b-Azawan | th-plan-itinerary | v-tell
 *Uhubun plans to tell Azawan.*
 :::
 
-**4.** `thelezom vajul.`
+**4.** `zuhubun themabar vajul.`
 
 ::: details Show answer
 
-th-PREDICT | v-sit
+z-Uhubun | th-plan-sketch | v-sit
 
-*I predict someone will sit.*
+*Uhubun intends to sit.*
 :::
 
 **5.** `zazawan buhubun themabar vezehel.`
@@ -207,13 +197,13 @@ z-Uhubun | th-plan-atlas | v-scream
 *Uhubun is fully prepared to scream.*
 :::
 
-**8.** `thelezom vuvugul.`
+**8.** `zazawan themabam vuvugul.`
 
 ::: details Show answer
 
-th-PREDICT | v-fight
+z-Azawan | th-plan-itinerary | v-fight
 
-*I predict someone will fight.*
+*Azawan plans to fight.*
 :::
 
 ## Intermediate {#intermediate}
@@ -358,18 +348,24 @@ PLAN and DECISION endings run the same way: **-l** is the most settled, **-m** t
 >
 > "Ululon is thinking of walking, and has decided only for now."
 
-### Forecast source
+### Plan or forecast
 <a id="predict-evidentiality"></a>
 
-To say both that an event will happen later and how you reached that forecast, use [PREDICT](#predict) first, then add an [evidentiality](knowing.md#evidentiality) `/th/` word. PREDICT marks the later event; the evidential word tells whether the forecast comes from a usual pattern, an inference, or another source.
+English *will* can be a plan or a forecast. A plan uses [PLAN](#plan-predict) and needs no warrant. A forecast about the world uses an [evidential](knowing.md#evidentiality) channel plus the later offset **`b+`** ([forecasts](knowing.md#forecast)): the channel says what the forecast rests on.
 
-> `thelezom thabawam vanunul.`
+> `thabawam b+ vanunul.`
 >
-> th-PREDICT | th-PATTERN | v-rain
+> [th-PATTERN | b-later] | v-rain
 >
-> "From the usual pattern, I predict it will rain."
+> "It will rain (going by the usual pattern)."
 
-**Compare with:** a pattern or [LIVE](knowing.md#live-vs-memory) claim about *this stretch* uses [evidentiality](knowing.md#evidentiality) on the content verb alone (**`thadezem`** if you are observing it now; **`thuvuvum`** if you remember observing it). Add **PREDICT** when the claim is a **later** world forecast, not a guess about what is already so.
+> `zululon themabam thunevel b+ vajul.`
+>
+> z-Ululon | th-plan-itinerary | [th-INFERRED.strong | b-later] | v-sit
+>
+> "Ululon plans to sit, and the clues strongly say it will happen."
+
+**Compare with:** a channel with no offset is a claim about *this stretch* (**`thadezem`** if you are observing it now; **`thuvuvum`** if you remember observing it). Add **`b+`** when the claim is about a **later** event, not a guess about what is already so.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -386,7 +382,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | **PLAN** (itinerary) | `themabam` | `emabam` *plan-itinerary* |
-| **PREDICT** | `thelezom` | `elezol` *telescope* |
 | **DECISION** (modifiable) | `thehegem` | `ehegel` *check* |
 | *sit* | `vajul` | `ajul` *chair* |
 | *tell* | `vezehel` | `ezehel` *speech* |
@@ -428,12 +423,12 @@ z-Azawan | b-Uhubun | th-DECISION-modifiable | v-tell
 z-Uhubun | th-DECISION-temporary | v-write
 :::
 
-**4.** *From the usual pattern, I predict Ululon will sit.*
+**4.** *Going by the usual pattern, Ululon will sit.*
 
 ::: details Show answer
-`zululon thelezom thabawam vajul.`
+`zululon thabawam b+ vajul.`
 
-z-Ululon | th-PREDICT | th-PATTERN | v-sit
+z-Ululon | [th-PATTERN | b-later] | v-sit
 :::
 
 **5.** *Azawan plans to sit, and that choice is final.*
@@ -512,13 +507,13 @@ z-Ululon | th-DECISION-irreversible | v-write
 *Ululon has decided for good to write.*
 :::
 
-**3.** `thelezom thabawam vazagal.`
+**3.** `thabawam b+ vazagal.`
 
 ::: details Show answer
 
-th-PREDICT | th-PATTERN | v-scream
+[th-PATTERN | b-later] | v-scream
 
-*From the usual pattern, I predict someone will scream.*
+*Going by the usual pattern, someone will scream.*
 :::
 
 **4.** `zuhubun theheger vajul.`
@@ -596,10 +591,10 @@ z-Ululon | th-ABIL-unable-irreversible
 
 ## Advanced {#advanced}
 
-### Plan and predict against a snapshot
+### Plan and forecast against a snapshot
 <a id="as-of-intention"></a>
 
-[PLAN](#plan-predict) and [PREDICT](#predict) without a hosted pair score against **speech-now**. With [*as-of*](relations.md#as-of), PLAN is the intention **from** that now (*was going to*), and PREDICT is **after** that now (*would rain*). Repeat PREDICT on the next clause; resume whose-now with `helerer` / `hobomar`. [DECISION](#decision) stays how revisable the pick is **now**.
+[PLAN](#plan-predict) and a [forecast](knowing.md#forecast) (channel + `b+`) without a hosted pair score against **speech-now**. With [*as-of*](relations.md#as-of), PLAN is the intention **from** that now (*was going to*), and the forecast offset counts **after** that now (*would rain*). Repeat the channel and `b+` on the next clause; resume whose-now with `helerer` / `hobomar`. [DECISION](#decision) stays how revisable the pick is **now**.
 
 > `zululon themabar vawalal helerem b_#22,7.`
 >
@@ -607,11 +602,11 @@ z-Ululon | th-ABIL-unable-irreversible
 >
 > "As of 22 July, Ululon was going to walk."
 
-> `thelezom hobomam b_#22,7 vanunul. xazawan thelezom hobomar vawalal.`
+> `thabawam b+ hobomam b_#22,7 vanunul. xazawan thabawam b+ hobomar vawalal.`
 >
-> th-PREDICT | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | th-PREDICT | h-as-of.bookmark | v-walk
+> [th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | [th-PATTERN | b-later] | h-as-of.bookmark | v-walk
 >
-> "Taking 22 July as now (a placeholder), it would rain. Azawan would walk too, on the same placeholder."
+> "Taking 22 July as now (a placeholder), it would rain, going by the pattern. Azawan would walk too, on the same placeholder."
 
 > `zululon thehegem vawalal helerem b_#22,7.`
 >
@@ -622,7 +617,7 @@ z-Ululon | th-ABIL-unable-irreversible
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**. PLAN and PREDICT score against the snapshot.
+Short drills for Advanced. Try each item before opening **Show answer**. PLAN and forecasts score against the snapshot.
 
 **Setting:** a delayed departure board
 
@@ -635,7 +630,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. PLAN an
 | *walk* | `vawalal` |
 | *rain* | `vanunul` |
 | *plan-sketch* | `themabar` |
-| *predict* | `thelezom` |
+| *PATTERN* | `thabawam` |
 | *as-of.ledger* | `helerem` |
 | *as-of.bookmark* | `hobomam` |
 | *DECISION-modifiable* | `thehegem` |
@@ -650,12 +645,12 @@ Short drills for Advanced. Try each item before opening **Show answer**. PLAN an
 z-Ululon | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
 :::
 
-**2.** *Taking 22 July as now (a placeholder), it would rain.*
+**2.** *Taking 22 July as now (a placeholder), it would rain, going by the pattern.*
 
 ::: details Show answer
-`thelezom hobomam b_#22,7 vanunul.`
+`thabawam b+ hobomam b_#22,7 vanunul.`
 
-th-PREDICT | [h-as-of.bookmark | b-_22,7] | v-rain
+[th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain
 :::
 
 **3.** *As of 22 July, Ululon had decided to walk, and that pick is still revisable now.*
@@ -668,13 +663,13 @@ z-Ululon | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 
 #### Agalan → English {#advanced-agalan-to-english}
 
-**1.** `thelezom hobomam b_#22,7 vanunul. xazawan thelezom hobomar vawalal.`
+**1.** `thabawam b+ hobomam b_#22,7 vanunul. xazawan thabawam b+ hobomar vawalal.`
 
 ::: details Show answer
 
-th-PREDICT | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | th-PREDICT | h-as-of.bookmark | v-walk
+[th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | [th-PATTERN | b-later] | h-as-of.bookmark | v-walk
 
-*Taking 22 July as now (a placeholder), it would rain. Azawan would walk too, on the same placeholder.*
+*Taking 22 July as now (a placeholder), it would rain, going by the pattern. Azawan would walk too, on the same placeholder.*
 :::
 
 **2.** `zululon themabar vawalal helerem b_#22,7.`
