@@ -230,6 +230,8 @@ export type HUnit = {
   word: LexWord;
   modifiers: LexWord[];
   bound?: LexWord;
+  /** Number word on the hosted `/b/` (measure amount, e.g. a signed time offset). */
+  boundAmount?: LexWord;
 };
 
 export type CoordShared = GPackage | HUnit | LexWord;

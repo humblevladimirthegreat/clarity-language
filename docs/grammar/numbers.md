@@ -1019,31 +1019,31 @@ One such group only in the word. Marker identity still applies. Kind compounds m
 | **`g~+e`** | **`ra`** + **`ba`∅** + **-m** | **arbitrarily large but finite** |
 | **`g+e-`** | **`ra`** + **`bu`∅** + **-l** | **arbitrarily small but finite** |
 | **`g-e`** | **`ru`** + **`ba`∅** + **-l** | **−∞** |
-| **`g~-e`** | **`ru`** + **`ba`∅** + **-m** | **arbitrarily large but finite** (negative / deficit); against a bound: *arbitrarily close but still short* — *(almost)* |
+| **`g~-e`** | **`ru`** + **`ba`∅** + **-m** | **arbitrarily large but finite** (negative / deficit) |
 | **`g#e`** | **`re`** + **`ba`∅** + **-l** | **last place** / telos landmark (ultimate-descendant pole of the [generation](numbers-applied.md#ordinal-generation) axis) |
 | **`g~#e`** | **`re`** + **`ba`∅** + **-m** | **near last place** |
 | **`g#e-`** | **`re`** + **`bu`∅** + **-l** | **start / beginning place** / origin landmark: first with emphasis on **onset** (*the starting one*, *at the beginning*). Numbered 1st is `g#1`. Ultimate-ancestor pole |
 | **`g~#e-`** | **`re`** + **`bu`∅** + **-m** | **near first place** |
-| **`g-e-`** | **`ru`** + **`bu`∅** + **-l** | **imaginary amount:** as-if magnitude off the real commitment ledger (metaphorical, not complex-number math) |
-| **`g~-e-`** | **`ru`** + **`bu`∅** + **-m** | **open imaginary** — *sort of imaginary* / hedged as-if amount |
+| **`g-e-`** | **`ru`** + **`bu`∅** + **-l** | **just short:** arbitrarily small but finite shortfall — *a hair under*; against a target, *almost* |
+| **`g~-e-`** | **`ru`** + **`bu`∅** + **-m** | **nearly** — a small shortfall, not claimed to be tiny |
 
-Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as object; `b+e-` = *of an arbitrarily small but finite amount*; `z-e-` = imaginary amount as subject). Contrast **`g#1`** = numbered *first* / *1st*; **`g#e-`** = beginning/onset landmark.
+Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as object; `b+e-` = *of an arbitrarily small but finite amount*; `z-e-` = a hair-short amount as subject). Contrast **`g#1`** = numbered *first* / *1st*; **`g#e-`** = beginning/onset landmark.
 
-<a id="imaginary"></a>
+<a id="just-short"></a>
 
-**Imaginary (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅**), no mantissa. Completes the scalar special grid. Reading is **metaphorical**: a magnitude named *as if* it counted, without entering the real tally.
+**Just short (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅**), no mantissa. It mirrors **`g+e-`** (a hair over zero): **`g-e-`** is a hair **under** — the smallest shortfall. Against a target it reads *almost*; as a [signed time offset](knowing.md#dated-channel) it reads *just before* (`b-e-` *just now*), and **`b+e-`** reads *just after* (*any moment now*).
 
-**Compare with:** clause-level pretensive *as if* uses spelled mood **`adade`** ([knowing.md § Notional](knowing.md#notional), e.g. `thadadem`). Free **`grubul`** / **`xrubul`** / **`thrubul`** / **`vrubul`** / **`jrubul`** are amount, discourse *imagine that:*, stance *as if*, verb *treat as imaginary*, and cheer on the number grid.
+**Compare with:** *as if* uses spelled mood **`adade`** ([knowing.md § Notional](knowing.md#notional), e.g. `thadadem`). Free **`grubul`** / **`xrubul`** / **`thrubul`** / **`vrubul`** / **`hrubul`** / **`jrubul`** are the amount, discourse *just before that:*, stance *virtually*, verb *nudge down*, adverb *almost*, and cheer *so close!* on the number grid.
 
 **Endings** (no-mantissa specials):
 
 | Ending | Sense |
 |--------|-------|
-| **-l** | Exact special value (default): +∞ / −∞ / last place / start place / arbitrarily small but finite / imaginary as in the form table |
+| **-l** | Exact special value (default): +∞ / −∞ / last place / start place / arbitrarily small but finite / just short as in the form table |
 | **-m** on **`ba`∅** (`…em`) | **Arbitrarily large but finite** on scalars (`g~+e` / `g~-e`); on ordinals (`g~#e`) = **near last place** |
-| **-m** on **`bu`∅** (`…e-m`) | Soft / approximate small on scalars (`g~+e-`); open imaginary on **`ru`+`bu`∅** (`g~-e-`); on ordinals (`g~#e-`) = **near first place** |
-| **-n** | Conventional designation of that special (named ∞ symbol, official *last place* / *starting* title, conventional *imaginary* label, …) |
-| **-r** | Resume a prior special value of that marker+exp polarity (`g=+e` = *that +∞ again*; `g=+e-` = *that arbitrarily small amount again*; `g=-e-` = *that imaginary amount again*) |
+| **-m** on **`bu`∅** (`…e-m`) | Soft / approximate small on scalars (`g~+e-`); *nearly* on **`ru`+`bu`∅** (`g~-e-`); on ordinals (`g~#e-`) = **near first place** |
+| **-n** | Conventional designation of that special (named ∞ symbol, official *last place* / *starting* title, …) |
+| **-r** | Resume a prior special value of that marker+exp polarity (`g=+e` = *that +∞ again*; `g=+e-` = *that arbitrarily small amount again*; `g=-e-` = *that same hair-short amount again*) |
 
 ##### Number as verb and adverb {#special-number-as-verb-and-adverb}
 
@@ -1058,14 +1058,16 @@ No-mantissa digitless-exp under `/v/` and `/h/` inherit special-value identity (
 | **`v-e`** | **decrease without bound** |
 | **`v~-e`** | *decrease a lot but finite* |
 | **`v+e-`** | **nudge up** — increase by an arbitrarily small but finite amount |
-| **`v-e-`** | **treat as imaginary:** frame the patient as make-believe / mind-only / not for the real tally |
-| **`v~-e-`** | treat as *sort of* imaginary |
+| **`v-e-`** | **nudge down** — decrease by an arbitrarily small but finite amount |
+| **`v~-e-`** | *ease down a little* |
 | **`h+e`** | **unbounded multiplicity** (× without bound / unboundedly many times) |
 | **`h~+e`** | *many times but finite* |
 | **`h+e-`** | **unbounded division** (÷ without bound / into unboundedly many parts) |
 | **`h~+e-`** | *÷ a lot / into many parts, but finite* |
+| **`h-e-`** | **almost** — the action falls a hair short of one full time (`zazawan h-e- vajul.` *Azawan almost sits*) |
+| **`h~-e-`** | *nearly* — a small shortfall, not claimed to be tiny |
 
-**Stance:** imaginary framing of a whole claim is stance, not manner, so it sits on `/th/`: **`th-e-`** = *as if* / *for the sake of argument*; **`th~-e-`** = open imaginary framing. See [number as stance](#special-number-as-stance).
+**Stance:** a whole claim that holds all but a hair is stance, not manner, so it sits on `/th/`: **`th-e-`** = *virtually* / *practically*; **`th~-e-`** = *more or less*. **`h-e-`** says the event fell short; **`th-e-`** says your claim is a hair short of exact. See [number as stance](#special-number-as-stance).
 
 **Ordinals (`re`) — start/last landmarks:**
 
@@ -1094,8 +1096,8 @@ No-mantissa digitless-exp under `/j/` (interjection cheers):
 | **`j~#e`** | *Almost finally!* / soft coda cheer |
 | **`j#e-`** | *(finally, we're) starting!* (onset cheer). Discourse **`x#e-`** is *Starting with:* |
 | **`j~#e-`** | soft onset cheer |
-| **`j-e-`** | *As if!* / *Imagine!* / *In theory!* (imaginary cheer) |
-| **`j~-e-`** | soft *as if!* / hedged imagine-cheer |
+| **`j-e-`** | *So close!* / *Almost!* (near-miss cheer) |
+| **`j~-e-`** | soft *nearly!* |
 
 ##### Number as discourse {#special-number-as-discourse}
 
@@ -1105,7 +1107,7 @@ No-mantissa digitless-exp under `/j/` (interjection cheers):
 
 Under `/x/`, a digitful exponent on **`#`** is **outline depth** relative to the focused agenda item — **`x#3e2`** = *3rd sub-sub-point under the focus*; **`x#e-1`** = *parent-layer item(s)*; **`x#e0`** = *current-layer item(s)*. A flat list uses **`x#N`** (and *Finally* / *Starting with* as above).
 
-These sit beside the numbered points of [Number as discourse marker](#number-as-discourse-marker-by-marker). End-relative discourse points use **`x#-N`**. **Imaginary discourse:** **`x-e-`** = *imagine that:* / imaginary agenda point (side-track). Soft **`x~-e-`**; named **`x@-e-`**; resume **`x=-e-`**. Corroborating is **`x+`**; independent is **`x-`**.
+These sit beside the numbered points of [Number as discourse marker](#number-as-discourse-marker-by-marker). End-relative discourse points use **`x#-N`**. **Just-before discourse:** **`x-e-`** = *just before that:* (step back a moment in the telling). Soft **`x~-e-`**; named **`x@-e-`**; resume **`x=-e-`**. Corroborating is **`x+`**; independent is **`x-`**.
 
 #### Zero × exponent
 <a id="zero-exponent"></a>
@@ -1253,8 +1255,8 @@ Digitless specials, zero × exponent, and hyperbole keep their meaning under [st
 | **`th+e`** | **certain** — not an estimate; no exceptions allowed |
 | **`th+0e`** | **no chance at all** — ruled out, not just 0% |
 | **`th+1e`** | *a gazillion percent sure* (hyperbole) |
-| **`th-e-`** | **as if** / *for the sake of argument* — the claim is framed as imaginary |
-| **`th~-e-`** | open imaginary framing |
+| **`th-e-`** | **virtually** / *practically* — the claim holds all but a hair |
+| **`th~-e-`** | *more or less* |
 
 `th+100` and `th+0` are still estimates (*I'd put it at 100%*). `th+e` and `th+0e` step outside the estimate.
 
@@ -1543,7 +1545,7 @@ z-Azawan | v-see | h-#-1e
 
 j---e-
 
-*As if!*
+*So close!*
 :::
 
 

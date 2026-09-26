@@ -221,7 +221,7 @@ z-Uhubun | th-MAY | v-cry
 
 English often says *how you know* a claim (*I saw it*, *I heard*, *I figured*). Agalan keeps the ordinary content verb and adds a closed `/th/` mood word. That word is the **channel** the claim came through, so the same walk or sleep can sit under a live look, memory, a recording, a pattern of cases, clues, hearsay, a gut sense, or a tale.
 
-Verbs have **no past or future letter**. Some channels already locate the event because of how you know: **LIVE** is watching while the scene is still in view; **WITNESSED** is memory of watching; **RECORDED** is playback of a capture. [PREDICT](intention.md#predict) / [PLAN](intention.md#plan-predict) look ahead (the event is later). Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, recency) when inference or hearsay needs a different time than this stretch.
+Verbs have **no past or future letter**. Some channels already locate the event because of how you know: **LIVE** is watching while the scene is still in view; **WITNESSED** is memory of watching; **RECORDED** is playback of a capture. [PREDICT](intention.md#predict) / [PLAN](intention.md#plan-predict) look ahead (the event is later). Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, or a [signed offset](#dated-channel) on the channel) when inference or hearsay needs a different time than this stretch.
 
 > `zazawan thadezem vawalal.`
 >
@@ -350,9 +350,9 @@ English sometimes frames the whole clause as play: *as if*, *for the sake of arg
 >
 > "As if Azawan walks." — notional framing held lightly (default)
 
-**For *could be*, use:** [MAY](#may). *As if* play is this section; imagining an amount is the related form below. *Walks like a duck* keeps the walk on the real tally ([simile](relations.md#similative) `hurorom`); only the manner matches the model. *Tells on behalf of Ululon* stays on the real tally ([proxy](relations.md#proxy) `hudagam`); Azawan is still the teller.
+**For *could be*, use:** [MAY](#may). *As if* play is this section. *Walks like a duck* keeps the walk on the real tally ([simile](relations.md#similative) `hurorom`); only the manner matches the model. *Tells on behalf of Ululon* stays on the real tally ([proxy](relations.md#proxy) `hudagam`); Azawan is still the teller.
 
-**Related form:** imaginary *amount* uses free number as verb / interjection / discourse in [numbers.md](numbers.md#imaginary). A quick hypothetical *as if* on the claim is an imaginary [stance number](numbers.md#number-as-stance-by-marker). A percent likelihood on the claim is **`th+N`**.
+**Related form:** a percent likelihood on the claim is the [stance number](numbers.md#number-as-stance-by-marker) **`th+N`**.
 
 ### Hold endings (NOTIONAL)
 <a id="notional-hold"></a>
@@ -678,6 +678,72 @@ The same published roots stay ordinary content under other role letters. The clo
 > z-Ululon | th-NOTIONAL | [h-as-of.ledger | b-_22,7] | v-departure
 >
 > "As if, from the 22 July books, Ululon were leaving."
+
+### Dated channel (signed offset) {#dated-channel}
+<a id="ago"></a>
+<a id="time-offset"></a>
+
+English *three hours ago* and *in three hours* count from now. Agalan counts from the channel instead: put a [measure phrase](numbers-applied.md#measure-phrases) in `/b/` immediately after the evidential. The amount is **signed**: **`-`** is earlier than now, **`+`** is later than now. The offset always dates the **event**, not the moment you learned about it. There is no bare *ago* word, so a dated claim always says how you know it.
+
+> `zazawan thuvuvum bohoram g-3 vawalal.`
+>
+> 🔊 *zazawan thuvuvum bohoram grurel vawalal.*
+>
+> z-Azawan | [th-WITNESSED | [b-hour | g-minus-three]] | v-walk
+>
+> "I saw Azawan walk three hours ago."
+
+> `zululon theraram bohoram g+3 vebarul.`
+>
+> 🔊 *zululon theraram bohoram grarel vebarul.*
+>
+> z-Ululon | [th-TOLD | [b-hour | g-three]] | v-departure
+>
+> "I hear Ululon leaves in three hours."
+
+Some channels only point one way:
+
+| Channel | Sign | Why |
+|---------|------|-----|
+| **`thuvuvum`** WITNESSED, **`theregom`** RECORDED | **`-`** only | you already observed or captured it |
+| **`thadezem`** LIVE | no offset | the scene is in view now |
+| **`thabawam`** PATTERN | **`-`** or **`+`** | **`-`**: it happened then, if the pattern held; **`+`**: it will, if the pattern holds |
+| **`thunevem`** INFERRED, **`theraram`** TOLD, **`theherem`** FELT, **`thorolom`** TALE | **`-`** or **`+`** | the channel does not fix the time |
+| [PREDICT](intention.md#predict) **`thelezom`**, [PLAN](intention.md#plan-predict) **`themabam`** | **`+`** only | the event is later |
+
+The wrong sign on a one-way channel (**`thuvuvum`** with **`+`**, **`thelezom`** with **`-`**) is not a sentence.
+
+For *just* and *about to*, use the [just-short](numbers.md#just-short) amount with no unit: **`b-e-`** is *a hair before now*, **`b+e-`** is *a hair after now*.
+
+> `zazawan thuvuvum b-e- vawalal.`
+>
+> 🔊 *zazawan thuvuvum brubul vawalal.*
+>
+> z-Azawan | [th-WITNESSED | b---e-] | v-walk
+>
+> "I just saw Azawan walk."
+
+> `thelezom b+e- vanunul.`
+>
+> 🔊 *thelezom brabul vanunul.*
+>
+> [th-PREDICT | b-+-e-] | v-rain
+>
+> "It is about to rain."
+
+An offset of zero (`bohoram g+0`) places the event at now, still on a channel. Agalan has no bare *now* word.
+
+> `zululon thabawam bohoram g-3 velebel.`
+>
+> 🔊 *zululon thabawam bohoram grurel velebel.*
+>
+> z-Ululon | [th-PATTERN | [b-hour | g-minus-three]] | v-sleep
+>
+> "Going by the pattern, Ululon slept three hours ago."
+
+With an [as-of](relations.md#as-of) pair, the offset counts from that whose-now instead of speech-now.
+
+**Compare with:** an absolute clock or date (`h_#22,7`) dates the event without a channel. [RESIDUE](#residue) and [FORMER](#former-climate) do not locate time, so they take no offset.
 
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>

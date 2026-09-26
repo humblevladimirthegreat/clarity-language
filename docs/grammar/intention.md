@@ -53,7 +53,7 @@ To predict a later event, such as rain or a result, put **`thelezo`** before the
 >
 > "I predict it will rain."
 
-**Compare with:** English *will* as *intends to …* / *plans to …* uses [PLAN](#plan-predict) (`themabam` / `themabal` / `themabar`). PREDICT is a later world forecast, not someone’s course.
+**Compare with:** English *will* as *intends to …* / *plans to …* uses [PLAN](#plan-predict) (`themabam` / `themabal` / `themabar`). PREDICT is a later world forecast, not someone’s course. To say *how much* later (*in three hours*), add a `+` [offset](knowing.md#dated-channel) after PREDICT or PLAN.
 
 ### Translation practice {#beginner-translation-practice}
 

@@ -585,7 +585,19 @@ class AgelanSentenceParser extends CstParser {
     this.CONSUME(H);
     this.OPTION(() => {
       this.OR([
-        { ALT: () => this.CONSUME(B) },
+        {
+          ALT: () => {
+            this.CONSUME(B);
+            // A number word right after the hosted /b/ is its amount (measure phrase, e.g. a signed offset).
+            this.OPTION2({
+              GATE: () => {
+                const la = this.LA(1);
+                return la.tokenType === G && (la.payload as LexWord).family.kind === "number";
+              },
+              DEF: () => this.CONSUME(G),
+            });
+          },
+        },
         { ALT: () => this.CONSUME(Odo) },
       ]);
     });
@@ -999,6 +1011,7 @@ function buildHUnit(cst: CstNode): HUnit {
     word: lexWordFromToken(h),
     modifiers: childTokens(cst, "W").map(lexWordFromToken),
     bound: bound ? lexWordFromToken(bound) : undefined,
+    boundAmount: childToken(cst, "G") ? lexWordFromToken(childToken(cst, "G")!) : undefined,
   };
 }
 

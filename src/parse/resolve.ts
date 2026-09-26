@@ -326,6 +326,7 @@ function considerHUnit(ctx: Ctx, unit: HUnit): void {
   for (const mod of unit.modifiers) considerWord(ctx, mod);
   considerWord(ctx, unit.word);
   if (unit.bound) considerWord(ctx, unit.bound);
+  if (unit.boundAmount) considerWord(ctx, unit.boundAmount);
 }
 
 function considerNpPackage(ctx: Ctx, pkg: NpPackage): void {

@@ -1079,7 +1079,7 @@ function numericKindLabel(stem: NumberStem, pos: Pos | undefined): string {
   return numberLabel(stem, pos);
 }
 
-/** Stance `/th/` numbers (numbers.md § Number as stance): likelihood, as-if, source. */
+/** Stance `/th/` numbers (numbers.md § Number as stance): likelihood, virtually, source. */
 function stanceNumberLabel(stem: NumberStem): string | null {
   const exp = stem.digitlessExp;
   const groups = stem.groups;
@@ -1093,7 +1093,7 @@ function stanceNumberLabel(stem: NumberStem): string | null {
     if (stem.marker === "+" && exp === "e") return "certain";
     if (stem.marker === "+" && exp === "0e") return "no-chance";
     if (stem.marker === "+" && exp === "1e") return "gazillion-percent-sure";
-    if (stem.marker === "-" && exp === "e-") return "as-if";
+    if (stem.marker === "-" && exp === "e-") return "virtually";
     return null;
   }
   const body = groups.map(formatNumberGroup).filter(Boolean).join(",");

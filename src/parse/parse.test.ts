@@ -326,6 +326,14 @@ describe("parse — illegal fences", () => {
     assert.equal(pkg.adjs[0]!.bound?.raw, "bazawan");
     assert.equal(pkg.adjs[0]!.boundAdjs?.[0]?.word.raw, "gelulul");
   });
+
+  it("attaches a number word after a hosted /b/ on /th/ as its amount (signed offset)", () => {
+    const result = parseText("zazawan thuvuvum bohoram g-3 vawalal.");
+    const unit = result.utterances[0]!.bodies[0]!.clause.units[1]!;
+    assert.ok(unit.kind === "h");
+    assert.equal(unit.unit.bound?.raw, "bohoram");
+    assert.equal(unit.unit.boundAmount?.raw, "g-3");
+  });
 });
 
 describe("parse — as-of poles", () => {
