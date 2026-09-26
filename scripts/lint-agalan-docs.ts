@@ -52,7 +52,7 @@ import {
   withinSection,
 } from "../src/lint/learning-order.js";
 import { duplicateIds } from "../src/lint/grammar-anchors.js";
-import { constructionFamilies, drillCoverage, drillSkips } from "../src/lint/drill-coverage.js";
+import { constructionFamilies, drillCoverage, drillSkips, duplicateDrills } from "../src/lint/drill-coverage.js";
 import { CONSTRUCTIONS as STATIC_CONSTRUCTIONS, constructionRegistry } from "../src/parse/constructions.js";
 import { readingOrder } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { loadDefaultTables } from "../src/parse/index.js";
@@ -290,7 +290,7 @@ function reportDrillCoverage(order: LearningOrder, uses: readonly ConstructionUs
   const { missing, uncovered, covered } = drillCoverage(order, constructionFamilies(homes), checked, skips);
   console.log(
     `\nDrill coverage: ${covered} construction famil(ies) practiced in their band's drill; ` +
-      `${uncovered.length} not practiced; ${missing.length} page band(s) with no translation practice.`,
+      `${uncovered.length} not practiced; ${missing.length} page band(s) with no translation practice; ${duplicateDrills(order).length} with more than one.`,
   );
   if (missing.length > 0) {
     console.log("\nPage bands with taught families but no translation practice:");
@@ -299,13 +299,18 @@ function reportDrillCoverage(order: LearningOrder, uses: readonly ConstructionUs
       console.log(`  ${page}  ${band}  (expected ### Translation practice {#${band}-translation-practice})`);
     }
   }
+  const duplicates = duplicateDrills(order);
+  if (duplicates.length > 0) {
+    console.log("\nPage bands with more than one translation practice section (merge them into one):");
+    for (const { key, drills } of duplicates) console.log(`  ${key.replace("|", "  ")}  (${drills.map(formatSection).join(", ")})`);
+  }
   if (uncovered.length > 0) {
     console.log("\nFamilies not practiced in their band's drill:");
-    for (const { family, drill } of uncovered) {
-      console.log(`  ${family.ids.join(", ")}  →  ${formatSection(drill)}  (taught at ${formatSection(family.home)})`);
+    for (const { family, drills } of uncovered) {
+      console.log(`  ${family.ids.join(", ")}  →  ${drills.map(formatSection).join(", ")}  (taught at ${formatSection(family.home)})`);
     }
   }
-  return missing.length + uncovered.length;
+  return missing.length + uncovered.length + duplicates.length;
 }
 
 const pageMarkdown = new Map<string, string>();
@@ -422,7 +427,7 @@ function main(): void {
 
   if (drillCount > 0) {
     console.error(
-      `\n${drillCount} drill-coverage issue(s). Add ### Translation practice {#<band>-translation-practice}, or an item in it that uses the family (docs/meta/drill-generation.md), or mark the page + band skip in its allowlist.`,
+      `\n${drillCount} drill-coverage issue(s). Add ### Translation practice {#<band>-translation-practice}, or an item in it that uses the family, or merge duplicate sections (docs/meta/drill-generation.md), or mark the page + band skip in its allowlist.`,
     );
   }
 

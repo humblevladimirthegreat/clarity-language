@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { constructionFamilies, drillCoverage, drillSkips } from "./drill-coverage.js";
+import { constructionFamilies, drillCoverage, drillSkips, duplicateDrills } from "./drill-coverage.js";
 import { learningOrder, pageSections, resolveAnchor, sectionAt, type Section } from "./learning-order.js";
 
 const A = `# Page A
@@ -78,5 +78,22 @@ describe("drillCoverage", () => {
   it("exempts skipped page bands and parser families", () => {
     const r = drillCoverage(order, families, uses, new Set(["a.md|intermediate", "b.md|beginner"]));
     assert.deepEqual(r.missing, []);
+  });
+});
+
+describe("duplicateDrills", () => {
+  it("flags a band with two translation practice sections", () => {
+    const md = `# C
+
+## Advanced
+
+### Translation practice {#advanced-translation-practice}
+
+### Other
+
+### Translation practice {#other-translation-practice}
+`;
+    const order = learningOrder(["c.md"], new Map([["c.md", pageSections("c.md", md)]]));
+    assert.deepEqual(duplicateDrills(order).map((d) => d.key), ["c.md|advanced"]);
   });
 });

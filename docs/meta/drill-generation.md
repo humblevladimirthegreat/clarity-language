@@ -23,12 +23,12 @@ Parse the user’s file/stage from their message. Accept `joins`, `joins.md`, `d
 |--------|--------|
 | One grammar file, no stage | Generate **every missing** checkpoint for that file (table below), **Beginner then Intermediate then Advanced** |
 | One file + one stage | Generate **only** that stage’s checkpoint |
-| Several files, “all pages”, or no file | **Do not start.** Reply with: process **one file per invocation**; list remaining [generate](#allowlist) files that still lack a checkpoint. Stop |
+| Several files or “all pages” | Work through them in [path](learning-levels.md#cross-doc-path) order, one file at a time |
+| No file | List the [generate](#allowlist) files that still lack a checkpoint, and the drill-coverage findings from the lint. Stop |
+| Drill-coverage lint findings | Add 1–3 items to the existing checkpoint that use the named family; keep its setting and roots table |
 | A file whose [allowlist](#allowlist) rows are all **skip** | Say it is skipped and why. Stop |
 
-Edit **only** `docs/grammar/<file>.md` **and** that file’s **Setting** cell(s) in [settings](#settings). Do not edit other policy, other grammar pages, `AGENTS.md`, or other meta unless the user asked to change the policy.
-
-If two agents might share a file: **one file → one agent**. Do not start a second job on a file that already has a drill job in flight.
+Edit **only** the target `docs/grammar/<file>.md` page(s) **and** their **Setting** cell(s) in [settings](#settings). Do not edit other policy, other grammar pages, `AGENTS.md`, or other meta unless the user asked to change the policy.
 
 ### 2. Look up the checkpoint
 
@@ -104,14 +104,14 @@ Both directions. Spoilers = Agalan or **loose** free English plus a visible morp
 
 ### 6. Self-check, then lint
 
-Run the [review checklist](#review) on your own spoilers. Then `npm run build` **only when this invocation is a parent editor finishing a batch** — file-scoped rewrite agents **do not** run the build. If it fails, fix it in the same file (usually slash-joined emphasis: write `*a* / *b*`, not `*a*/*b*`).
+Run the [review checklist](#review) on your own spoilers. Then run `npm run build`. It fails when a family taught in a page band is not used by that band’s checkpoint. If it fails, fix it in the same file (usually slash-joined emphasis: write `*a* / *b*`, not `*a*/*b*`).
 
 Reply with: which checkpoints you added or skipped, and any item you dropped because a form was not in recycle.
 
 ## Recycle
 <a id="recycle"></a>
 
-Drills depend on **what has been taught**, not on other files’ drill text. Parallel file-agents are fine once this allowlist exists.
+Drills depend on **what has been taught**, not on other files’ drill text.
 
 | This checkpoint | Recycle |
 |-----------------|--------|
@@ -203,6 +203,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `intention.md` | Intermediate | a locked vault |
 | `knowing.md` | Beginner | a café patio |
 | `knowing.md` | Intermediate | a press conference |
+| `knowing.md` | Advanced | a film archive |
 | `roles.md` | Beginner | a construction site |
 | `roles.md` | Intermediate | a harbor |
 | `x-compounds.md` | Beginner | a hardware store |
@@ -329,7 +330,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 16 | `values.md` | Intermediate | **exists** | Prescription **`the`** + force; motive **`tho`** + preference standing; which ending table; attachment sites | |
 | 16 | `values.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
 | 16 | `knowing.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`adade`** + play holds; **RESIDUE** / **FORMER**; MAY vs nearby jobs | |
-| 16 | `knowing.md` | Advanced | **exists** | RESIDUE / FORMER / LIVE / WITNESSED against *as-of*; MAY unshifted | Recycle relations Advanced |
+| 16 | `knowing.md` | Advanced | **exists** | RESIDUE / FORMER / LIVE / WITNESSED against *as-of*; MAY unshifted; mood on one adjective; universality (`ugudo` / `abulu` / …) | Recycle relations Advanced. One checkpoint for the whole stage |
 | 16 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR th ANCHOR`**; bare arrow roots = compass; gravity **`uba`/`odowo`**; name/listener anchor | Prefer `…thazawan` over silent speaker default. **`edone`/`ugobo`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
 | 16 | `x-compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *a few minutes* / passing) | Recycle [greeting](../grammar/word-endings.md#greeting) and [vocative](../grammar/speech-moves.md#vocative). Not ability (`vuzunuxel`). Not values |
 | 16 | `roles.md` | Advanced | — | no Advanced stage | |
@@ -338,7 +339,6 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 17 | `intention.md` | Advanced | **exists** | PLAN / PREDICT against *as-of*; DECISION speech-now | Recycle relations Advanced |
 | 17 | `values.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value) | Recycle values Beginner. |
 | 17 | `numbers-applied.md` | Intermediate | **exists** | Numbered alternatives `uzebum`/`agegom`/`olalal` + `g#N` | Recycle numbers Beginner. |
-| 17 | `knowing.md` | Advanced | **exists** | Universality (`ugudo` / `abulu` / …) as taught in this stage | 4–6 items |
 | 18 | `numeric-derivation.md` | Advanced | **exists** | `ROOT l NUM` as the stage teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
 
 ## Leak index

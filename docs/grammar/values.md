@@ -488,6 +488,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *permission* | `erenel` | `erenel` *green* |
 | *forbidden* | `ononel` | `ononel` *no-entry* |
 | *always* | `hual` | |
+| *HIGH* | `thogegam` | `ogegal` *ocean* |
+| *EXTERNAL* | `thorurum` | `orurul` *pour* |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
@@ -603,6 +605,14 @@ z-Azawan | v-kneel | [th-PERMIT-granted | b-Uhubun]
 z-Azawan | v-shush | [th-CONSENT-assumed | [b-Ululon | b-Uhubun | b-and]]
 :::
 
+**15.** *Resentful about the bell:* relatedness unmet; surge poured onto them.
+
+::: details Show answer
+`zobelel wonogothum gobobum thogegam thorurum.`
+
+[z-bell | [w-relatedness-unmet-modifiable | g-stimulus]] | th-HIGH | th-EXTERNAL
+:::
+
 #### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zululon vezehel thonogother.`
@@ -711,6 +721,15 @@ z-Uhubun | v-sleep | th-CONSENT-given
 z-Azawan | v-scream | [th-CONSENT-refused | b-Ululon]
 
 *Azawan screams, though Ululon said no to it.*
+:::
+
+**13.** `zuhurul golozotham thozowom thabobom.`
+
+::: details Show answer
+
+[z-church | g-competence-met-mental] | th-LOW | th-INTERNAL
+
+*Quietly proud of my church:* competence met (appreciated mentally); stillness held inside.
 :::
 
 ## See also

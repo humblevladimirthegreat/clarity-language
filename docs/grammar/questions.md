@@ -231,17 +231,17 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *Does Azawan sit?*
 
 ::: details Show answer
-`jol zazawan vajul.`
+`jol ? zazawan vajul.`
 
-j-question | z-Azawan | v-sit
+j-question | ? | z-Azawan | v-sit
 :::
 
 **2.** *Who sees the umbrella?*
 
 ::: details Show answer
-`jol zar vejel dumubul.`
+`jol ?zar vejel dumubul.`
 
-j-question | z-who | v-see | d-umbrella
+j-question | ?z-who | v-see | d-umbrella
 :::
 
 **3.** *Is Ululon writing, I wonder?*
@@ -303,11 +303,11 @@ j-soft-question | z-Uhubun | v-see | d-key
 *Is Uhubun seeing the key, I wonder?*
 :::
 
-**2.** `jol zar vuwurul.`
+**2.** `jol ?zar vuwurul.`
 
 ::: details Show answer
 
-j-question | z-who | v-write
+j-question | ?z-who | v-write
 
 *Who writes?*
 :::

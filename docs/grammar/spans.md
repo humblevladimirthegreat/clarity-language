@@ -579,6 +579,14 @@ z-Azawan | SCOPE[h-possibility | d-lie] | v-see
 z-MENTION.multi["ululon" | "vadezel"] | g-small
 :::
 
+**10.** *Uhubun saw, as a possibility, the lie!* (strong feeling on that chunk)
+
+::: details Show answer
+`zuhubun !^ huzurem dululel ^ vejel.`
+
+z-Uhubun | !SCOPE[h-possibility | d-lie] | v-see
+:::
+
 #### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zazawan vezehel daxel azawan.`
@@ -660,6 +668,15 @@ z-Azawan | v-tell | th-ASIDE.multi[z-Ululon | v-lie]
 z-MENTION.multi["uhubun" | "vazagal"] | g-small
 
 *The phrase “uhubun vazagal” is small.*
+:::
+
+**10.** `zululon ?^ zazawan zal ^ zam vubunul.`
+
+::: details Show answer
+
+[z-Ululon | ?SCOPE[z-Azawan | z-and] | z-and.open] | v-punch
+
+*Ululon and (just Azawan?) punched.* (unsure about that chunk)
 :::
 
 ## Advanced {#advanced}

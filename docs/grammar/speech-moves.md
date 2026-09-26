@@ -332,6 +332,22 @@ j-soft-statement | z-Ululon | d-trumpet | v-see
 j-request | b-Uhubun | v-tell
 :::
 
+**7.** *Azawan sees a trumpet (a trumpet, not something else).*
+
+::: details Show answer
+`zazawan vejel &dudubel.`
+
+z-Azawan | v-see | &d-trumpet
+:::
+
+**8.** *Uhubun sneaks?!*
+
+::: details Show answer
+`?! zuhubun vazanal.`
+
+?! | z-Uhubun | v-sneak
+:::
+
 #### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `jam zazawan vajul.`
@@ -386,6 +402,24 @@ j-soft-statement | z-Ululon | d-trumpet | v-see
 j-request | b-Uhubun | v-tell
 
 *Please tell Uhubun.*
+:::
+
+**7.** `% zululon vazanal.`
+
+::: details Show answer
+
+% | z-Ululon | v-sneak
+
+*Ululon sneaks.* (joking)
+:::
+
+**8.** `jem !vadanal.`
+
+::: details Show answer
+
+j-request | !v-stand
+
+*Please, stand!*
 :::
 
 ## See also

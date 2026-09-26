@@ -724,6 +724,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-Ululon | z-rank/less]
 :::
 
+**9.** *Azawan kisses first, then Ululon.*
+
+::: details Show answer
+`zazawan zululon zoel vuguzul.`
+
+[z-Azawan | z-Ululon | z-in-order] | v-kiss
+:::
+
 #### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zovowel zual.`
@@ -796,6 +804,15 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-tuxedo | z-anything-but.open]
 
 *anything but the tuxedo (and possibly more)*
+:::
+
+**9.** `zuhubun zoel dunurul vejel.`
+
+::: details Show answer
+
+[z-Uhubun | z-in-order] | d-ring | v-see
+
+*Starting with Uhubun, they see the ring.*
 :::
 
 ## Advanced {#advanced}

@@ -129,6 +129,14 @@ z-Azawan | v-write | [h-in-exchange-for | b-money]
 z-Azawan | [h-on-behalf-of | b-Ululon] | v-tell
 :::
 
+**4.** *A hammer like Azawan’s.*
+
+::: details Show answer
+`zahamel gurorom bazawan.`
+
+z-hammer | [g-like | b-Azawan]
+:::
+
 #### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zuhubun hurorom budugul vawalal.`
@@ -167,6 +175,15 @@ z-Azawan | [h-on-behalf-of | b-Ululon] | b-Uhubun | v-tell
 *Azawan tells Uhubun on behalf of Ululon.*
 :::
 
+
+**5.** `zabogol gurorom buhubun.`
+
+::: details Show answer
+
+z-book | [g-like | b-Uhubun]
+
+*A book like Uhubun’s.*
+:::
 
 ## Intermediate {#intermediate}
 
@@ -293,6 +310,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *walk* | `vawalal` |
 | *run* | `vurunul` |
 | *between* | `hazanum` |
+| *wood* | `owodol` |
+| *material* | `gowodom` |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
@@ -326,6 +345,14 @@ z-Uhubun | v-sit | [h-between | [b-train | b-station | b-and]]
 `zazawan ual bohohul vurunul al badadul.`
 
 z-Azawan | [out-of | b-house] | v-run | [in | b-train]
+:::
+
+**5.** *Uhubun sits on a chair made of wood.*
+
+::: details Show answer
+`zuhubun vajul aol bajul gowodom bowodol.`
+
+z-Uhubun | v-sit | [on | [b-chair | [g-material | b-wood]]]
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -364,6 +391,15 @@ z-Ululon | v-walk | [through | b-station]
 z-Ululon | [from | b-station] | v-walk | [at | b-train]
 
 *Ululon walks from a station to a train.*
+:::
+
+**5.** `zazawan gugunom bohohul vurunul.`
+
+::: details Show answer
+
+[z-Azawan | [g-origin | b-house]] | v-run
+
+*Azawan, from that house, runs.*
 :::
 
 ## Advanced {#advanced}

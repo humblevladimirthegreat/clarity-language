@@ -252,6 +252,14 @@ z-Ululon | v-sit | [at | b-plate]
 z-Azawan | v-cook | [for | b-family]
 :::
 
+**9.** *Beer instead of wine, and maybe something else too.*
+
+::: details Show answer
+`duwunel om daberel.`
+
+d-wine | instead.open | d-beer
+:::
+
 #### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zavamul am zuhubun.`
@@ -324,6 +332,15 @@ z-salad | [in | b-plate]
 z-Ululon | d-wine | v-pour | [from | b-teapot]
 
 *Ululon pours wine from a teapot.*
+:::
+
+**9.** `zavamul um zululon.`
+
+::: details Show answer
+
+z-family | except.open | z-Ululon
+
+*The family except Ululon, and maybe others.*
 :::
 
 ## Intermediate {#intermediate}

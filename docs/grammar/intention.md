@@ -468,6 +468,14 @@ z-Azawan | v-climb-able
 z-Uhubun | v-stand-unable-modifiable
 :::
 
+**11.** *Azawan can't right now.* (the whole thing, not one verb)
+
+::: details Show answer
+`zazawan thegeraxel.`
+
+z-Azawan | th-ABIL-unable-temporary
+:::
+
 #### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zazawan thehegem vajul.`
@@ -558,6 +566,16 @@ z-Ululon | v-run-unable-irreversible
 z-Azawan | v-climb
 
 *Azawan climbs.*
+:::
+
+
+**11.** `zululon thegeraxul.`
+
+::: details Show answer
+
+z-Ululon | th-ABIL-unable-irreversible
+
+*Ululon can never do it.* (the whole thing, not one verb)
 :::
 
 ## Advanced {#advanced}

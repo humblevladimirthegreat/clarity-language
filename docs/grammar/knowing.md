@@ -767,82 +767,6 @@ The unit sets how wide *now* is. Zero hours is *right now*; zero [days](numbers-
 
 Use zero on a channel that takes either sign. **LIVE** `thadezem` already means *now in view*, so it needs no offset. **WITNESSED** and **RECORDED** take **`-`** only, and PREDICT and PLAN take **`+`** only, so zero is not a sentence on them.
 
-### Translation practice {#advanced-translation-practice}
-<a id="translation-practice-advanced"></a>
-
-Short drills for Advanced. Try each item before opening **Show answer**. Score leftover against the ledger; repeat the channel.
-
-**Setting:** a film archive
-
-**Roots used here:**
-
-| English | Agalan |
-|---------|--------|
-| *Azawan* | `azawan` |
-| *Ululon* | `ululon` |
-| *departure* | `vebarul` |
-| *walk* | `vawalal` |
-| *RESIDUE* | `thonenom` |
-| *WITNESSED* | `thuvuvum` |
-| *LIVE* | `thadezem` |
-| *MAY* | `thodohom` |
-| *as-of.ledger* | `helerem` |
-
-#### English → Agalan {#advanced-english-to-agalan}
-
-**1.** *As of 22 July, Ululon’s leaving still counted.*
-
-::: details Show answer
-`zululon thonenom helerem b_#22,7 vebarul.`
-
-z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
-:::
-
-**2.** *Azawan is walking — we're there on 22 July.*
-
-::: details Show answer
-`zazawan thadezem helerem b_#22,7 vawalal.`
-
-z-Azawan | th-LIVE | [h-as-of.ledger | b-_22,7] | v-walk
-:::
-
-**3.** *As of 22 July, Ululon's leaving may still have counted.*
-
-::: details Show answer
-`zululon thodohom thonenom helerem b_#22,7 vebarul.`
-
-z-Ululon | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
-:::
-
-#### Agalan → English {#advanced-agalan-to-english}
-
-**1.** `zululon thuvuvum helerem b_#22,7 thonenom vebarul.`
-
-::: details Show answer
-
-z-Ululon | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure
-
-*I remember: as of 22 July, Ululon's leaving still counted.*
-:::
-
-**2.** `zululon thuvuvum helerem b_#22,7 thonenom vebarul. xazawan thuvuvum helerer vawalal.`
-
-::: details Show answer
-
-z-Ululon | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure . x-Azawan | th-WITNESSED | h-as-of.ledger | v-walk
-
-*I remember: as of 22 July, Ululon's leaving still counted. Azawan was walking — also from memory, against the same books.*
-:::
-
-**3.** `zululon thodohom thonenom helerem b_#22,7 vebarul.`
-
-::: details Show answer
-
-z-Ululon | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
-
-*As of 22 July, Ululon's leaving may still have counted.*
-:::
-
 ### Universality {#universality}
 <a id="universality-mood"></a>
 
@@ -877,12 +801,12 @@ The default *always* is *usually* (exceptions expected), not *must happen that w
 | `… hal … thebebel bozogel` | named frame | *never, under soccer rules* |
 | `zuam gagadal … thugudol` | open domain + usual universality | *every cat that comes to mind, usually* |
 
-### Translation practice {#universality-translation-practice}
-<a id="translation-practice-universality"></a>
+### Translation practice {#advanced-translation-practice}
+<a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**.
+Short drills for Advanced. Try each item before opening **Show answer**. Score leftover against the ledger; repeat the channel. The later items keep the domain fence and add how exceptionless the claim is.
 
-**Setting:** a philosophy seminar
+**Setting:** a film archive
 
 **Roots used here:**
 
@@ -891,6 +815,14 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | | |
 | *Ululon* | `ululon` | | |
 | *Uhubun* | `uhubun` | | |
+| *departure* | `vebarul` | | |
+| *walk* | `vawalal` | | |
+| *RESIDUE* | `thonenom` | | |
+| *WITNESSED* | `thuvuvum` | | |
+| *LIVE* | `thadezem` | | |
+| *MAY* | `thodohom` | | |
+| *as-of.ledger* | `helerem` | | |
+| *blue* | `elulul` | | |
 | *COMMON* | `thugudol` | `ugudol` *cloudy* | ⛅: usual sky still allows a shower |
 | *UNCOUNTERED* | `thabulul` | `abulul` *pill* | 💊: you take it to treat an ailment; the search found none |
 | *FORMAL* | `tharazal` | `arazal` *star* | ⭐: a charted constellation does not wander |
@@ -914,9 +846,41 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *sleep* | `velebel` | `elebel` *sleep* | |
 | evidential *pattern* | `abawam` | `abawal` *paw-prints* | 🐾: a trail of what usually happens |
 
-#### English → Agalan {#universality-english-to-agalan}
+#### English → Agalan {#advanced-english-to-agalan}
 
-**1.** *Ululon always writes, usually.*
+**1.** *As of 22 July, Ululon’s leaving still counted.*
+
+::: details Show answer
+`zululon thonenom helerem b_#22,7 vebarul.`
+
+z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
+:::
+
+**2.** *Azawan is walking — we're there on 22 July.*
+
+::: details Show answer
+`zazawan thadezem helerem b_#22,7 vawalal.`
+
+z-Azawan | th-LIVE | [h-as-of.ledger | b-_22,7] | v-walk
+:::
+
+**3.** *As of 22 July, Ululon's leaving may still have counted.*
+
+::: details Show answer
+`zululon thodohom thonenom helerem b_#22,7 vebarul.`
+
+z-Ululon | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
+:::
+
+**4.** *Ululon walks — and that blue is live, from the scene itself.*
+
+::: details Show answer
+`zululon wadezem gelulul vawalal.`
+
+[z-Ululon | [w-LIVE | g-blue]] | v-walk
+:::
+
+**5.** *Ululon always writes, usually.*
 
 ::: details Show answer
 `zululon hual vuwurul thugudol.`
@@ -924,7 +888,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 z-Ululon | h-always | v-write | th-COMMON
 :::
 
-**2.** *Azawan always sits, as far as checked.*
+**6.** *Azawan always sits, as far as checked.*
 
 ::: details Show answer
 `zazawan hual vajul thabulul.`
@@ -932,7 +896,7 @@ z-Ululon | h-always | v-write | th-COMMON
 z-Azawan | h-always | v-sit | th-UNCOUNTERED
 :::
 
-**3.** *Every teacher teaches, by definition.*
+**7.** *Every teacher teaches, by definition.*
 
 ::: details Show answer
 `zual gaxedegel vedegel tharazal.`
@@ -940,7 +904,7 @@ z-Azawan | h-always | v-sit | th-UNCOUNTERED
 [z-everything-but | g-agent-x-teach] | v-teach | th-FORMAL
 :::
 
-**4.** *Every cat sleeps, by natural necessity* (plus a trail of cases).
+**8.** *Every cat sleeps, by natural necessity* (plus a trail of cases).
 
 ::: details Show answer
 `zual gagadal velebel thabelel thabawam.`
@@ -948,7 +912,7 @@ z-Azawan | h-always | v-sit | th-UNCOUNTERED
 [z-everything-but | g-cat] | v-sleep | th-NATURAL | th-PATTERN
 :::
 
-**5.** *Ululon never punches, under soccer rules.*
+**9.** *Ululon never punches, under soccer rules.*
 
 ::: details Show answer
 `zululon hal vubunul thebebel bozogel.`
@@ -956,7 +920,7 @@ z-Azawan | h-always | v-sit | th-UNCOUNTERED
 z-Ululon | h-never | v-punch | [th-RULE | b-soccer]
 :::
 
-**6.** *Every claim that comes to mind, usually.*
+**10.** *Every claim that comes to mind, usually.*
 
 ::: details Show answer
 `zuam gadadam thugudol.`
@@ -964,9 +928,45 @@ z-Ululon | h-never | v-punch | [th-RULE | b-soccer]
 [z-everything-but.open | g-claim] | th-COMMON
 :::
 
-#### Agalan → English {#universality-agalan-to-english}
+#### Agalan → English {#advanced-agalan-to-english}
 
-**1.** `zazawan hual vajul thugudol.`
+**1.** `zululon thuvuvum helerem b_#22,7 thonenom vebarul.`
+
+::: details Show answer
+
+z-Ululon | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure
+
+*I remember: as of 22 July, Ululon's leaving still counted.*
+:::
+
+**2.** `zululon thuvuvum helerem b_#22,7 thonenom vebarul. xazawan thuvuvum helerer vawalal.`
+
+::: details Show answer
+
+z-Ululon | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure . x-Azawan | th-WITNESSED | h-as-of.ledger | v-walk
+
+*I remember: as of 22 July, Ululon's leaving still counted. Azawan was walking — also from memory, against the same books.*
+:::
+
+**3.** `zululon thodohom thonenom helerem b_#22,7 vebarul.`
+
+::: details Show answer
+
+z-Ululon | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
+
+*As of 22 July, Ululon's leaving may still have counted.*
+:::
+
+**4.** `zazawan wodohom gelulul vawalal.`
+
+::: details Show answer
+
+[z-Azawan | [w-MAY | g-blue]] | v-walk
+
+*Azawan walks — and that may be blue.* (only the color is open)
+:::
+
+**5.** `zazawan hual vajul thugudol.`
 
 ::: details Show answer
 
@@ -975,7 +975,7 @@ z-Azawan | h-always | v-sit | th-COMMON
 *Azawan always sits, usually.*
 :::
 
-**2.** `zululon hual vuwurul thabulul.`
+**6.** `zululon hual vuwurul thabulul.`
 
 ::: details Show answer
 
@@ -984,7 +984,7 @@ z-Ululon | h-always | v-write | th-UNCOUNTERED
 *Ululon always writes, as far as checked.*
 :::
 
-**3.** `zual gaxuvugul vuvugul tharazal.`
+**7.** `zual gaxuvugul vuvugul tharazal.`
 
 ::: details Show answer
 
@@ -993,7 +993,7 @@ z-Ululon | h-always | v-write | th-UNCOUNTERED
 *Every fighter fights, by definition.*
 :::
 
-**4.** `zual gagadal vuduhul thabelel thabawam.`
+**8.** `zual gagadal vuduhul thabelel thabawam.`
 
 ::: details Show answer
 
@@ -1002,7 +1002,7 @@ z-Ululon | h-always | v-write | th-UNCOUNTERED
 *Every cat thinks, by natural necessity* (plus a trail of cases).
 :::
 
-**5.** `zazawan hal vajul thebebel bozogel.`
+**9.** `zazawan hal vajul thebebel bozogel.`
 
 ::: details Show answer
 
@@ -1011,7 +1011,7 @@ z-Azawan | h-never | v-sit | [th-RULE | b-soccer]
 *Azawan never sits, under soccer rules.*
 :::
 
-**6.** `zuam geregum thugudol.`
+**10.** `zuam geregum thugudol.`
 
 ::: details Show answer
 

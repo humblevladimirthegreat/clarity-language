@@ -343,6 +343,16 @@ z-Ululon | [d-rock | g-five] | v-punch
 [z-15 | z-16 | z-in-order | g-duration]
 :::
 
+**9.** *On 22 July, Uhubun screams.*
+
+::: details Show answer
+`h_#22,7 zuhubun vazagal.`
+
+🔊 *hroedudutholel zuhubun vazagal.*
+
+h-_22,7 | z-Uhubun | v-scream
+:::
+
 #### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zabobol g_7.`
@@ -431,6 +441,17 @@ h-_23,59.about | z-Ululon | v-scream
 [z-ten | z-20 | z-everything-but | g-measurement]
 
 *Outside 10–20.*
+:::
+
+**9.** `h_#1,4 zululon vawalal.`
+
+::: details Show answer
+
+🔊 *hroewothomol zululon vawalal.*
+
+h-_1,4 | z-Ululon | v-walk
+
+*On 1 April, Ululon walks.*
 :::
 
 ## Advanced {#advanced}

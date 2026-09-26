@@ -89,7 +89,7 @@ When a drill needs only one person, prefer a beat that still fits the setting an
 ## Shape (template)
 <a id="template"></a>
 
-Use a stable heading and anchor at the **end** of the stage (before the next `## Intermediate` / `## Advanced`). The heading text repeats on every stage, so pin a stage-prefixed id on each of the three headings (`{#beginner-…}`, `{#intermediate-…}`, `{#advanced-…}`); ids must be unique on a page ([one id per heading](grammar-docs.md#unique-ids)). A second checkpoint in the same stage takes its section's name instead (`{#universality-translation-practice}`).
+Use a stable heading and anchor at the **end** of the stage (before the next `## Intermediate` / `## Advanced`). The heading text repeats on every stage, so pin a stage-prefixed id on each of the three headings (`{#beginner-…}`, `{#intermediate-…}`, `{#advanced-…}`); ids must be unique on a page ([one id per heading](grammar-docs.md#unique-ids)). Each stage has **one** checkpoint: when a stage teaches several topics, fold their items into that one section (the lint fails on a second `Translation practice` heading in a stage).
 
 ```md
 ### Translation practice {#beginner-translation-practice}

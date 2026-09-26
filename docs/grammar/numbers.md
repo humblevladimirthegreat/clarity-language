@@ -891,6 +891,36 @@ z-Ululon | d-score | v-three
 z-Ululon | v-punch | h-three
 :::
 
+**9.** *Thousands see the trophy.* (the thousands band, no exact count)
+
+::: details Show answer
+`z+e3 dodobol vejel.`
+
+🔊 *zrabarel dodobol vejel.*
+
+z-+-e3 | d-trophy | v-see
+:::
+
+**10.** *Ululon adds 5.2 to the score.*
+
+::: details Show answer
+`zululon dodobom v+5.2.`
+
+🔊 *zululon dodobom vravajedul.*
+
+z-Ululon | d-score | v-5.2
+:::
+
+**11.** *Azawan will probably punch (I'd put it at 70%).*
+
+::: details Show answer
+`zazawan vubunul th+70.`
+
+🔊 *zazawan vubunul thralezol.*
+
+z-Azawan | v-punch | th-70-percent-likely
+:::
+
 #### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `zedadalx g~+2.`
@@ -979,6 +1009,17 @@ z-Ululon | d-more-than-one | v-see . z-Azawan | d-←more-than-one | v-see
 z-Uhubun | v-sit | h-3rd
 
 *Uhubun sits for the third time.*
+:::
+
+**9.** `z+5e3,860 vajul.`
+
+::: details Show answer
+
+🔊 *zrabarejavathahaguzol vajul.*
+
+z-5e3,860 | v-sit
+
+*5860 sit.*
 :::
 
 ## Advanced {#advanced}
@@ -1480,6 +1521,26 @@ j-+-0e
 x-starting-with | z-Uhubun | v-see
 :::
 
+**7.** *Azawan sees the penultimate star.*
+
+::: details Show answer
+`zazawan darazal g#-2 vejel.`
+
+🔊 *zazawan darazal gruedul vejel.*
+
+z-Azawan | [d-star | g-2nd-from-end] | v-see
+:::
+
+**8.** *Ululon sees three stars, give or take one.*
+
+::: details Show answer
+`zululon darazalx g+3 g+-1 vejel.`
+
+🔊 *zululon darazalx grarel gruawol vejel.*
+
+z-Ululon | [d-star-x | g-three | g-plus-minus-1] | v-see
+:::
+
 #### Agalan → English {#advanced-agalan-to-english}
 
 **1.** `zarazalx g~+e.`
@@ -1548,6 +1609,17 @@ j---e-
 *So close!*
 :::
 
+
+**7.** `zazawan delezol g#_1 vejel.`
+
+::: details Show answer
+
+🔊 *zazawan delezol gruowol vejel.*
+
+z-Azawan | [d-telescope | g-negative-label-1] | v-see
+
+*Azawan sees telescope −1.* (a below-zero label)
+:::
 
 ## See also
 

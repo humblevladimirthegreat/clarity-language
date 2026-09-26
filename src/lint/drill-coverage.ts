@@ -62,13 +62,31 @@ export function drillSkips(markdown: string): Set<string> {
   return skips;
 }
 
+/** Drill sections on a page in one band (`Translation practice` headings). */
+export function drillSections(sections: readonly Section[], band: Band): Section[] {
+  return sections.filter((s) => s.band === band && !s.ignored && /^translation practice\b/i.test(s.title));
+}
+
+/** `page|band` pairs with more than one drill section: each band has one checkpoint. */
+export function duplicateDrills(order: LearningOrder): { key: string; drills: Section[] }[] {
+  const out: { key: string; drills: Section[] }[] = [];
+  for (const ps of order.pages.values()) {
+    if (!order.readingOrder.includes(ps.page)) continue;
+    for (const band of BANDS) {
+      const drills = drillSections(ps.sections, band);
+      if (drills.length > 1) out.push({ key: `${ps.page}|${band}`, drills });
+    }
+  }
+  return out;
+}
+
 export type ConstructionUse = { id: string; section: Section };
 
 export type DrillCoverage = {
   /** `page|band` pairs that home a family but have no drill section. */
   missing: string[];
-  /** Families whose drill section traces no member. */
-  uncovered: { family: Family; drill: Section }[];
+  /** Families whose drill sections trace no member. */
+  uncovered: { family: Family; drills: Section[] }[];
   covered: number;
 };
 
@@ -86,13 +104,13 @@ export function drillCoverage(
     if (family.parser || !home.band || home.ignored || !order.readingOrder.includes(home.page)) continue;
     const key = `${home.page}|${home.band}`;
     if (skips.has(key)) continue;
-    const drill = order.pages.get(home.page)?.anchors.get(`${home.band}-translation-practice`);
-    if (!drill || drill.band !== home.band) {
+    const drills = drillSections(order.pages.get(home.page)?.sections ?? [], home.band);
+    if (drills.length === 0) {
       missing.add(key);
       continue;
     }
-    if (uses.some((u) => family.ids.includes(u.id) && withinSection(drill, u.section))) covered += 1;
-    else uncovered.push({ family, drill });
+    if (uses.some((u) => family.ids.includes(u.id) && drills.some((d) => withinSection(d, u.section)))) covered += 1;
+    else uncovered.push({ family, drills });
   }
   return { missing: [...missing], uncovered, covered };
 }
