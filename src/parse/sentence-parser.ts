@@ -205,6 +205,11 @@ class AgelanSentenceParser extends CstParser {
             DEF: () => this.CONSUME4(Force, { LABEL: "ForceEcho" }),
           });
           this.CONSUME2(Force);
+          // Asking tag `jol jael.` (questions.md § polar stance): force + polars with no body.
+          this.MANY2({
+            GATE: () => tokenIs(this.LA(1), Polar) && this.tagPolarsAhead(),
+            DEF: () => this.CONSUME2(Polar),
+          });
         },
       },
     ]);
@@ -215,6 +220,13 @@ class AgelanSentenceParser extends CstParser {
     const a = this.LA(1);
     const b = this.LA(2);
     return a.tokenType === Force && a.image === "jul" && b.tokenType === Force && b.image === "jul";
+  }
+
+  /** Only polars remain before the period (the asking tag has no body). */
+  private tagPolarsAhead(): boolean {
+    let i = 1;
+    while (tokenIs(this.LA(i), Polar)) i++;
+    return tokenIs(this.LA(i), Period, EOF);
   }
 
   public bodyClause = this.RULE("bodyClause", () => {

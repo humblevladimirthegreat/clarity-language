@@ -45,6 +45,14 @@ A **short** resume always needs an earlier word to match. A **full-root** resume
 
 **Compare with:** short `zodor` with nothing before it points at nothing, so it is not a sentence.
 
+The antecedent can sit in the same sentence. A resume in the object slot that points back at the subject is English *herself* / *himself* / *themself* (a reflexive).
+
+> `zazawan vejel dazar.`
+>
+> z-Azawan | v-see | d-←Azawan
+>
+> "Azawan sees themself."
+
 ### Special pronouns {#special-pronouns}
 
 Most of the time you name people with a proper name (`zazawan`, `zululon`) and resume with **-r**. A few closed roots instead name **roles in this conversation**: who is speaking, who is being spoken to, you-and-I together, or a nonspecific *someone*. They take the usual role letter for the slot they fill in the clause (subject, object, and so on). Person roles default to **-n**.
@@ -313,6 +321,14 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 | verb antecedent, noun … `-r` | recast as event | *that action / event* (the doing, not the doer; [role compounds](roles.md#role-compounds) name agent/place/patient/recipient) |
 | verb antecedent, `/h/` … `-r` | recast as manner | *by doing so* / *thereby* |
 | adjective antecedent, noun … `-r` | recast as entity | *the … one* / *that quality* |
+
+For English *one* (*a blue one*, *the red one*), write the unspecified **`dar`** *something* and resume the noun as a kind on `/ɡ/`, then add the new property. **`dodor`** would be the same dog; **`dar`** with **`godor`** is another thing of the dog kind.
+
+> `zazawan dodogol garedel vejel. zululon dar godor gelulul vejel.`
+>
+> z-Azawan | [d-dog | g-red] | v-see . z-Ululon | [d-something | g-←dog] | g-blue | v-see
+>
+> "Azawan sees a red dog. Ululon sees a blue one."
 
 ### Addressing several people
 

@@ -289,6 +289,27 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 >
 > "Azawan walks only because there is rain."
 
+*Unless* is *if … not*. Keep **`thadorom`** and type the following sentence with **`burl`** ([stand-in vowels](dependents.md#stand-in)): the outcome holds unless that sentence is true.
+
+> `zazawan vawalal thadorom burl zululon velebel.`
+>
+> z-Azawan | v-walk | [th-if | b-lest-clause] | z-Ululon | v-sleep
+>
+> "Azawan walks unless Ululon sleeps."
+
+*Even if* stacks the *although* pole **`hezebam`** right before **`thadorom`**. The condition is still not asserted, and the outcome holds either way.
+
+> `zazawan vawalal hezebam thadorom barl zululon velebel.`
+>
+> z-Azawan | v-walk | h-although | [th-if | b-that-clause] | z-Ululon | v-sleep
+>
+> "Azawan walks even if Ululon sleeps."
+
+| Agalan | English |
+|--------|---------|
+| **`thadorom burl`** | *unless* |
+| **`hezebam thadorom barl`** | *even if* |
+
 ### CAUSE {#cause}
 <a id="cause-mood"></a>
 

@@ -46,6 +46,16 @@ Clock and date together:
 
 Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** resume a prior clock or date (digitless `h=_` = *that time/date again*). Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
 
+For *from … to* with clock times, put each time in `/b/` after the hooks **`ul`** *from* and **`oel`** *toward* ([extra nouns](hooks.md#extra-noun-intermediate)). As with any two extras, keep a non-`/b/` word, such as the verb, between them.
+
+> `zazawan ul b_9 vawalal oel b_17.`
+>
+> 🔊 *zazawan ul bronal vawalal oel browolel.*
+>
+> z-Azawan | [from | b-_9] | v-walk | [toward | b-_17]
+>
+> "Azawan walks from 9:00 to 17:00."
+
 Calendar decade labels such as *the ’90s* name a group of years, not a bare order-of-magnitude band.
 
 **Compare with:** a phone or room **code** uses the same `_` marker under `/d/` `/b/` `/ɡ/`, not bare `/h/`. Restrictor **`har`** is *sometimes*; digitless `h_` is *some clock or date*.
@@ -202,6 +212,16 @@ In [preferred writing](numbers.md#writing-preferred-shorthand): **`%`** → spee
 | `zagadalx g+25%` | percent grades the modified noun | *25% of the cats* |
 | `dezubelx g+95%` | same, object slot | *95% of the tests* |
 | `beberelx g+5%` under a host relation | same, `/b/` | *5% of the people* |
+
+For a count out of a group already named (*three of them*), resume the group and give the count.
+
+> `zagadalx vajul. zagarx g+3 vurunul.`
+>
+> 🔊 *zagadalx vajul. zagarx grarel vurunul.*
+>
+> z-cat-x | v-sit . [z-←cat-x-x | g-three] | v-run
+>
+> "The cats sit. Three of them run."
 
 The noun names the reference class; **`jo`** grades how much of that class. Same endings on the percent word (**-m** ≈ *about 25% of …*).
 

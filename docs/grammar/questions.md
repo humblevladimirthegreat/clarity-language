@@ -186,6 +186,14 @@ A *…, yes?* confirm tag is its own next turn: finish the statement with a peri
 >
 > "Azawan walks. Yes."
 
+That bare **`jael.`** confirms your own claim. To ask the listener to confirm (*…, right?*), put the question word before it: **`jol jael.`** Soft **`jom jael.`** is *…, isn't it?*
+
+> `zazawan vawalal. jol jael.`
+>
+> z-Azawan | v-walk . j-question | j-yes
+>
+> "Azawan walks, right?"
+
 **Compare with:** a command *Don’t walk* uses **`jul`**. **`juel`** answers whether a claim is true.
 
 **Not the same job as:** *not X* inside the clause (`zul` / `vul` / `xul`).
@@ -460,6 +468,66 @@ To ask *where?*, keep the [extra-noun hook](hooks.md#extra-noun) that says how t
 Answer with the hook and the landmark, as a [citation](word-endings.md#citation-forms): `ol bohohul.` ("At the house.").
 
 **Compare with:** *when?* is **`har`** on `/h/`. Occasions are times or cases, so a place never goes there.
+
+### How? {#how}
+
+*How?* works like *where?*: keep the word that says how the answer relates to the event, and put the blank **`bar`** after it. For manner (*in what way?*), use the similative [**`hurorom`**](relations.md) *like*.
+
+> `jol zazawan vawalal hurorom bar.`
+>
+> j-question | z-Azawan | v-walk | h-like | b-who
+>
+> "How does Azawan walk?" (*like what?*)
+
+*How?* about means (*with what?*) is the *using* hook plus the blank; it comes with the [stacked-vowel hooks](hooks.md#extra-noun-intermediate).
+
+### Why? {#why}
+
+*Why?* uses a [condition word](causation.md) with the blank **`bar`**. Pick the word for the kind of reason you want.
+
+> `jol zazawan vawalal thurugum bar.`
+>
+> j-question | z-Azawan | v-walk | th-because | b-who
+>
+> "Why does Azawan walk?" (*because of what?*)
+
+> `jol zazawan vawalal holalam bar.`
+>
+> j-question | z-Azawan | v-walk | h-so-that | b-who
+>
+> "What does Azawan walk for?"
+
+| Agalan | English |
+|--------|---------|
+| **`thurugum bar`** | *Why?* (*because of what?*) |
+| **`holalam bar`** | *What for?* (*for what purpose?*) |
+| **`thadorom bar`** | *Under what condition?* / *In what case?* |
+
+### Echo questions {#echo}
+
+An echo question repeats what someone just said, because you doubt it or did not catch it (*You saw WHAT?*). Repeat the sentence under **`jol`**. Put the doubting [tone mark](speech-moves.md#tone-marks) **`?!`** on the blank or on the word you doubt.
+
+> `jol zedonen vejel ?!dar.`
+>
+> j-question | z-listener | v-see | ?!d-who
+>
+> "You saw WHAT?"
+
+> `jol ?!zazawan vawalal.`
+>
+> j-question | ?!z-Azawan | v-walk
+>
+> "AZAWAN walked?"
+
+### Reported questions {#reported-questions}
+
+To report a *who* / *what* question inside a claim (*Azawan asks who walks*), put the same blank you would use in a direct question inside [**`dorl`**](#embedded-whether).
+
+> `zazawan vezehel dorl zar vawalal.`
+>
+> z-Azawan | v-tell | d-whether-clause | z-something | v-walk
+>
+> "Azawan asks who walks."
 
 ### Yes/no with single-item / standalone
 <a id="yes-no-single-item-standalone"></a>

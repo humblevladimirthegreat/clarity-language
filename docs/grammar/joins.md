@@ -588,6 +588,24 @@ When English would say *every cat* rather than *everything but the cat*, write *
 
 The kind word after **`ua`** / **`uo`** takes no **-x**: *every cat* already covers every member.
 
+With a plain verb, *every cat* acts one by one: **`zual gagadal vajul.`** is *each cat sits*. For all of them acting together, put [collective **-x**](plurality.md) on the verb (`vajulx`).
+
+*No cat* is the same shape with **`u`**: **`zul`** plus the kind.
+
+> `zul gagadal vajul.`
+>
+> [z-not | g-cat] | v-sit
+>
+> "No cat sits."
+
+For English *whoever* / *whatever*, the kind is a [role compound](roles.md#role-compounds): *every walker* is *whoever walks*. Use the agent compound (**`a`**) for *whoever*, and the undergoer compound (**`u`**) for *whatever*.
+
+> `zual gaxawalal vuzunul.`
+>
+> [z-everything-but | g-agent-x-walk] | v-sing
+>
+> "Whoever walks sings."
+
 Strict / definitional generics use closed `zual` plus kind (and [FORMAL](knowing.md#universality) when needed). Soft / epistemic generics use open `zuam` plus kind. Free-choice *any cat will do* uses `zor`.
 
 **For *always*, use:** bare habitual **`hual`** — [restrictors](restrictors.md).

@@ -62,12 +62,18 @@ const ROWS: Row[] = [
     valid: "thurugum barl zazawan vajul.",
   },
   {
-    invalid: "zazawan vawalal thadorom burl zululon velebel.",
+    invalid: "zazawan vawalal thurugum burl zululon velebel.",
     rejection: "standInHostUndo",
-    valid: "zazawan vawalal holalam burl zululon velebel.",
+    valid: "zazawan vawalal thadorom burl zululon velebel.",
   },
   {
-    invalid: "zazawan vawalal hezebam thadorom barl zululon velebel.",
+    invalid: "zazawan vawalal thadorom hezebam barl zululon velebel.",
+    rejection: "poleStack",
+    valid: "zazawan vawalal hezebam thadorom barl zululon velebel.",
+  },
+  { invalid: "jol jael zazawan vawalal.", rejection: undefined, valid: "jol jael." },
+  {
+    invalid: "zazawan vawalal thurugum hezebam barl zululon velebel.",
     rejection: "poleStack",
     valid: "zazawan vawalal theberom thurugum barl zululon velebel.",
   },

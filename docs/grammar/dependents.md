@@ -86,6 +86,20 @@ When English puts a **noun** after *despite* (*despite Ululon*), keep the same *
 
 Ordinary `zezebal` is still *a zebra*.
 
+The time poles take a noun the same way. Put the event or period in `/b/` right after **`hegemum`** *during*, **`hababam`** *before*, **`helabam`** *after*, or **`hudumem`** *until*.
+
+> `zazawan vawalal hegemum bunerol.`
+>
+> z-Azawan | v-walk | [h-while | b-thunderstorm]
+>
+> "Azawan walks during the thunderstorm."
+
+> `zazawan vajul helabam bunerol.`
+>
+> z-Azawan | v-sit | [h-after | b-thunderstorm]
+>
+> "Azawan sits after the thunderstorm."
+
 <a id="so-that"></a>
 <a id="event-purpose"></a>
 
@@ -288,6 +302,22 @@ A place, tool, or *of*-relation on the noun is still an extra-noun [hook](hooks.
 >
 > "Azawan sees a sitting guard."
 
+For English *whose*, resume the person inside the ownership relation [**`goborum`**](relations.md) in the second sentence.
+
+> `zugugal vajul. zodogol goborum bugur vurunul.`
+>
+> z-guard | v-sit . [z-dog | [g-ownership | b-←guard]] | v-run
+>
+> "A guard sits. The guard's dog runs." (*The guard whose dog runs sits.*)
+
+English uses the same *who* clause for two jobs. When it picks out **which** one (*the guard who sits*, not the other guard), use the two-sentence pattern or a role compound, as above. When it only adds extra information about someone already known (*Azawan, who walks, sings*), put that information in an [aside](spans.md) **`th(…)`** inside the sentence.
+
+> `zazawan th(zazar vawalal) vuzunul.`
+>
+> z-Azawan | th-ASIDE[z-←Azawan | v-walk] | v-sing
+>
+> "Azawan, who walks, sings."
+
 **Compare with:** ordinary `gajul` is *chair* / *position* as a property, not *sitting*. [Restrictors](restrictors.md) say when a **claim** counts (*never*, *only when raining*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the **same** first noun still need another sentence ([complex chaining](clause.md#complex-chaining)).
 
 
@@ -343,7 +373,7 @@ The corresponding `/j/` turn makes an assertion, asks a question, gives a comman
 
 The missing subject is then that `/b/`. It is never the listener and never the outer `/z/`. In every other case, write the inner `/z/`: after **`darl`** / **`dorl`**, after any pole (**`barl`** / **`burl`**), and when the outer sentence has no unhosted `/b/` (*wants to sit*, *tries to sit*). When the doer is someone other than that `/b/`, write them too, using resume **-r** if the name would repeat.
 
-After a pole, the dependent is **`barl`** (or **`barm`** for gist): *because* / *if* / *although* / *so that* all use it. The one exception is purpose-not: **`holalam burl`** (*so that … not*). Do not put this family on `/x/` (clause *and* stays `xal` / `xan`).
+After a pole, the dependent is **`barl`** (or **`barm`** for gist): *because* / *if* / *although* / *so that* all use it. There are two exceptions, both with **`burl`**: purpose-not **`holalam burl`** (*so that … not*) and **`thadorom burl`** (*unless*). Do not put this family on `/x/` (clause *and* stays `xal` / `xan`).
 
 > `zazawan bululon vezehel derl vajul.`
 >
@@ -374,6 +404,14 @@ When *so that* aims at keeping an outcome off, keep **`holalam`** and type `/b/`
 > z-Azawan | v-walk | [h-so-that | b-lest-clause] | z-Azawan | v-sit
 >
 > "Azawan walks so as not to sit."
+
+English *unless* is *if … not*: keep the *if* pole **`thadorom`** and type `/b/` with **`burl`**. The following sentence is the condition that must **not** hold.
+
+> `zazawan vawalal thadorom burl zululon velebel.`
+>
+> z-Azawan | v-walk | [th-if | b-lest-clause] | z-Ululon | v-sleep
+>
+> "Azawan walks unless Ululon sleeps."
 
 **Compare with:** *tells that Ululon sits* is **`darl`**. *Tells Ululon to sit* is **`derl`**. *Walks so that Azawan sits* is **`holalam barl`**.
 
@@ -484,6 +522,14 @@ For example, the `/v/` word takes the following sentence as its content:
 > z-Azawan | v-decline-to | z-Azawan | v-sit
 >
 > "Azawan declines to sit."
+
+A `/z/` stand-in puts the whole following sentence in the subject slot. With a predicative `/ɡ/`, that is English *it is … that* / *it is … to*.
+
+> `gomonam zarl zazawan vawalal.`
+>
+> g-challenge | z-that-clause | z-Azawan | v-walk
+>
+> "It is hard for Azawan to walk."
 
 The sentence after one of these verbs has its own subject when the chosen content type requires one, just as it does after **`darl`** / **`derl`**. The verb’s role letter lets you use the same typed content as an object, a described property, or another role supported by the clause.
 

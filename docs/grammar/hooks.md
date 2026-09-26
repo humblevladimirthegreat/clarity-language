@@ -95,7 +95,7 @@ Sometimes the thing you want to tweak is not a phrase inside this sentence, but 
 |--------|-----|---------|-----|
 | `al …` | further committed point | *Additionally, …* | **a** ≈ add |
 | `el …` | rephrase prior | *In other words, …* | **e** ≈ order |
-| `ol …` | this claim replaces prior | *Instead, …* | **o** ≈ one |
+| `ol …` | this claim replaces prior | *Instead, …* / *Actually, …* | **o** ≈ one |
 | `ul …` | exception to the prior frame | *Except, …* | **u** ≈ undo |
 
 > `al zazawan vawalal.`
@@ -109,6 +109,8 @@ Sometimes the thing you want to tweak is not a phrase inside this sentence, but 
 > instead | z-Ululon | v-sleep
 >
 > "Instead, Ululon sleeps."
+
+Use the same **`ol …`** for *actually* when you correct what someone expected: the new claim replaces the old one.
 
 > `el zuhubun godogol.`
 >
@@ -442,6 +444,37 @@ Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). S
 > z-Azawan | v-walk | [contrary-to | b-rain]
 >
 > "Azawan walks contrary to rain."
+
+To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`ael`**, the same way as [Where?](questions.md#where).
+
+> `jol zazawan dabogol ael bar vuwurul.`
+>
+> j-question | z-Azawan | d-book | [using | b-who] | v-write
+>
+> "How does Azawan write the book?"
+
+### Somewhere, nowhere, everywhere {#place-indefinites}
+
+Put a [standalone join](joins.md#standalone-phrase) in the `/b/` slot after a place hook. Outside a question, **`bar`** is an unspecified member (*somewhere*), the same way **`zar`** is *someone*. Under **`jol`**, it is the *where?* blank.
+
+| Agalan | English |
+|--------|---------|
+| **`ol bar`** | *somewhere* (under **`jol`**: *where?*) |
+| **`ol bur`** | *somewhere else* |
+| **`ol bal`** | *nowhere* |
+| **`ol bual`** | *everywhere* |
+
+> `zazawan vawalal ol bual.`
+>
+> z-Azawan | v-walk | [at | b-everything-but]
+>
+> "Azawan walks everywhere."
+
+> `zodogol velebel ol bal.`
+>
+> z-dog | v-sleep | [at | b-and]
+>
+> "The dog sleeps nowhere."
 
 Several extra-noun hooks on one clause are several extras (*from* one landmark *toward* another). Extra-noun **-n** titles that extra as a proper-name phrase the same way; the landmark keeps its own ending.
 

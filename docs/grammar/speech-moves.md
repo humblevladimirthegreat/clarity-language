@@ -162,6 +162,20 @@ The act word is **`j` + vowel + ending**. The vowel sets the act (**a** statemen
 | **jul** | **prohibition**: *don’t…* (firm) | **u** undo + **-l**: take the action back |
 | **jum** | **soft prohibition**: *please don’t…* / *I’d rather you not…* | **u** undo + **-m**: prefer they don’t |
 
+For *let's*, make a soft request with inclusive *we*, **`aha`** ([special pronouns](pronouns.md#special-pronouns)), as the subject. *Let's not* is the soft prohibition.
+
+> `jem zahan vawalal.`
+>
+> j-request | z-interlocutors | v-walk
+>
+> "Let's walk."
+
+> `jum zahan velebel.`
+>
+> j-soft-prohibition | z-interlocutors | v-sleep
+>
+> "Let's not sleep."
+
 A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/j/` words, immediately before the act word, or before a body that defaults to a statement.
 
 ### Emphatic prohibition {#emphatic-prohibition}

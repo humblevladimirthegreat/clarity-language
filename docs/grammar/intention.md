@@ -234,6 +234,14 @@ To say someone **can** do something you name with one verb (*sing*, *walk*), or 
 >
 > "Azawan can sing."
 
+For English *could* about a skill someone used to have, add [FORMER](knowing.md#former-climate) **`themebem`**: the ability is not today's report.
+
+> `zazawan vuzunuxal themebem.`
+>
+> z-Azawan | v-sing-able | th-FORMER
+>
+> "Azawan could sing." (as a former ability)
+
 The same idea as a quality uses `/ɡ/`: `zazawan guzunuxal` (*Azawan is able to sing*, as a quality). Ordinary action, no *can*: `zazawan vuzunul` (*Azawan sings*).
 
 The ending still belongs to that verb or adjective (**-l** concrete, **-m** abstract, **-n** proper, **-r** resume). It does not change what kind of *can* you mean:

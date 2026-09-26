@@ -189,14 +189,14 @@ function enforceHostedStandIn(units: Unit[], index: number, unit: HUnit): void {
   const host = unit.word;
   if (!isPole(host)) throw new ConstructionError("standInHost", `${host.raw} ${bound.raw}`);
   const s = series(bound);
-  const soThat = host.overlay!.gloss === "so-that";
-  if (bound.pos !== "b" || !(s === "a" || (s === "u" && soThat))) {
+  const undoHost = host.overlay!.gloss === "so-that" || host.overlay!.gloss === "if";
+  if (bound.pos !== "b" || !(s === "a" || (s === "u" && undoHost))) {
     throw new ConstructionError(s === "u" ? "standInHostUndo" : "standInHost", `${host.raw} ${bound.raw}`);
   }
   const prev = units[index - 1];
   if (prev?.kind === "h" && !prev.unit.bound && isPole(prev.unit.word)) {
     const stack = `${prev.unit.word.overlay!.gloss} ${host.overlay!.gloss}`;
-    if (stack !== "only-if because") {
+    if (stack !== "only-if because" && stack !== "although if") {
       throw new ConstructionError("poleStack", `${prev.unit.word.raw} ${host.raw}`);
     }
   }

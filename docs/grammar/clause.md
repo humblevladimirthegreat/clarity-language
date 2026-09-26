@@ -302,6 +302,46 @@ Several `/h/` or `/th/` units on one verb are fine (each plain word, or optional
 
 
 
+### How much: degree words on `/w/` {#degree-w}
+
+Beginner used **`welem`** *very* before an adjective. The same `/w/` slot takes a few stock degree words, and each one works before an adverb as well as an adjective.
+
+| Agalan | English | Cue |
+|--------|---------|-----|
+| **`welem`** | *very* | *big*, as a degree |
+| **`wogegal`** | *extremely* / *overwhelmingly* | an ocean of it |
+| **`wumuzem`** | *slightly* / *a bit* | *small*, as a degree |
+
+> `zodogol welem hadazam vawalal.`
+>
+> z-dog | [w-very | h-haste] | v-walk
+>
+> "A dog walks very hastily."
+
+> `zodogol wogegal gelulul vawalal.`
+>
+> [z-dog | [w-ocean | g-blue]] | v-walk
+>
+> "An extremely blue dog walks."
+
+> `zodogol wumuzem gelulul vawalal.`
+>
+> [z-dog | [w-small | g-blue]] | v-walk
+>
+> "A slightly blue dog walks."
+
+### Leaving out who acts {#no-subject}
+
+A clause does not need a subject. With no `/z/`, nobody is named as the one who acts, like English *The cat was seen* or *Mistakes were made*.
+
+> `dazawan vejel.`
+>
+> d-Azawan | v-see
+>
+> "Azawan was seen."
+
+**Compare with:** [**`zenenun`**](pronouns.md#special-pronouns) *someone* says that somebody did it. With no subject at all, the sentence says nothing about the doer.
+
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
@@ -462,11 +502,14 @@ Same roles, object first:
 | Agalan | Use | English |
 |--------|-----|---------|
 | `zazawan dagadal vejel.` | subject first | *Azawan sees a cat.* |
+| `&zazawan dagadal vejel.` | subject, contrasted | *It was Azawan who saw the cat.* |
 | `dagadal zazawan vejel.` | object first | *It's a cat that Azawan sees.* |
 | `vejel zazawan dagadal.` | verb first | *What Azawan does is see a cat.* |
 | `hadazam zazawan vawalal.` | adverb first | *Hastily, Azawan walks.* |
 
 Object-first English *It's a cat that Azawan sees* (or *A cat is what Azawan sees*) still names Azawan as the one who sees. *A cat is seen* hides who sees unless you add *by Azawan*. Use the longer English when you only want to highlight the object.
+
+The subject is already first by default, so order cannot single it out. To say *it was Azawan (not someone else) who…*, put the [contrastive focus](speech-moves.md#tone-marks) mark **`&`** on the subject.
 
 *As for X* names a topic even when that person is not first: [as-for](#as-for).
 

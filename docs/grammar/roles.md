@@ -417,6 +417,20 @@ English *on Azawan’s left of the tree* needs both a facing person and a landma
 
 Bare compass + `/b/` is a region on that heading of the landmark (`gewezel berel` *west of the tree*).
 
+Gravity works the same way: bare **`odowo`** + `/b/` is *under* the landmark, and bare **`uba`** + `/b/` is *above* / *over* it.
+
+> `zodogol velebel hodowol berel.`
+>
+> z-dog | v-sleep | [h-down | b-tree]
+>
+> "The dog sleeps under the tree."
+
+> `zabogol vajul gubal berel.`
+>
+> z-book | v-sit | [g-up | b-tree]
+>
+> "The book sits above the tree."
+
 **Compare with:** locative *at* / *on* / *inside* name how the figure sits relative to the landmark ([locative relations](relations.md#locative-relations)), not a compass heading.
 
 | Agalan | Use | English |
