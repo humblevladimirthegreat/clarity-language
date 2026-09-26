@@ -27,38 +27,40 @@ Six published roots are the interests you can name, and no other root takes the 
 
 ### Met (`tha`): serves the interest
 
-When you want to say that a named belonging **serves** this interest (pays it off), write that thing as a noun, then a `/ɡ/` word: interest root, mid-word **`th`**, **`a`**, then an ending. That adjective is about the noun. The ending says how that payoff is **appreciated**.
+When you want to say that a named belonging **serves** this interest (pays it off), write that thing as a noun, then a `/ɡ/` word: interest root, mid-word **`th`**, **`a`**, then an ending. That adjective is about the noun. The ending says the payoff's **time horizon**: whether it serves the interest over the long run or only for now.
 
 **Not the same job as:** [ability](intention.md#ability) (*can sing*, taught later). Ability glues an activity to its vowel with **`x`**. Interest words glue a **interest** with **`th`**, and **`tha`** means *serves this interest*.
 
-### How it is appreciated (endings on met)
+### Time horizon (endings on met) {#time-horizon-endings-on-met}
 <a id="interest-contact"></a>
 
-On a *serves* word, **-l / -m / -r** say **how the payoff is appreciated**: through body and the scene you can sense, through thinking or memory, or through a big-picture step-back. Those are ways of appreciating the payoff, not a ranking. Relatedness *between people* is still the interest **`onogo`**.
+On a *serves* word, **-l / -m / -r** say **how long the payoff lasts**: over the long run, unstated, or only for now. It uses the same scale as [unmet](#interest-changeability): **-l** lasts, **-r** passes. If you do not know, use **-m**.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…thal` | appreciated through body and the scene you can sense | *physical* | **-l** ≈ locked (on the scene you can touch) |
-| `…tham` | appreciated through thinking, memory, gratitude you take in | *mental* | **-m** ≈ open (in the head) |
-| `…thar` | appreciated through a big-picture step-back | *spiritual* | **-r** ≈ resume (to a larger frame) |
+| `…thal` | serves the interest over the long run | *long-term* | **-l** ≈ lasting |
+| `…tham` | serves the interest; time horizon unstated (soft default if unknown) | *serves* | **-m** ≈ open |
+| `…thar` | serves the interest now, not lastingly | *short-term* / *for now* | **-r** ≈ for now |
 
 > `zawaral gonogothal.`
 >
-> z-wrapped-gift | g-relatedness-met-physical
+> z-wrapped-gift | g-relatedness-met-long-term
 >
-> "My gift serves relatedness (appreciated physically)."
+> "My gift serves relatedness in the long term."
 
-> `zohohul golozothal.`
+> `zohohul golozotham.`
 >
-> z-house | g-competence-met-physical
+> z-house | g-competence-met-any-term
 >
-> "My house serves competence (appreciated physically)."
+> "My house serves competence."
 
-> `zabogol golozotham.`
+> `zabogol golozothar.`
 >
-> z-book | g-competence-met-mental
+> z-book | g-competence-met-short-term
 >
-> "My book serves competence (appreciated mentally)."
+> "My book serves competence for now."
+
+**Compare with:** [unmet](#interest-changeability) uses the same scale for a cost. Together they can say *good for now, bad in the long run*: a short-term **`tha`** word and a lasting **`thu`** word on the same noun.
 
 ### Unmet (`thu`): detracts from the interest
 <a id="interest-changeability"></a>
@@ -143,20 +145,20 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### English → Agalan {#beginner-english-to-agalan}
 
-**1.** *My tent serves survival (appreciated physically).*
+**1.** *My tent serves survival in the long term.*
 
 ::: details Show answer
 `zedenel guhuhethal.`
 
-z-tent | g-survival-met-physical
+z-tent | g-survival-met-long-term
 :::
 
-**2.** *My backpack serves competence (appreciated mentally).*
+**2.** *My backpack serves competence.*
 
 ::: details Show answer
 `zababal golozotham.`
 
-z-backpack | g-competence-met-mental
+z-backpack | g-competence-met-any-term
 :::
 
 **3.** *The wind detracts from relatedness right now (temporary).*
@@ -175,12 +177,12 @@ z-wind | [w-relatedness-unmet-temporary | g-stimulus]
 z-fire | [w-survival-unmet-irreversible | g-stimulus]
 :::
 
-**5.** *My flashlight serves an unspecified interest (appreciated physically).*
+**5.** *My flashlight serves an unspecified interest in the long term.*
 
 ::: details Show answer
 `zavazul gegethal.`
 
-z-flashlight | g-interest-met-physical
+z-flashlight | g-interest-met-long-term
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
@@ -189,18 +191,18 @@ z-flashlight | g-interest-met-physical
 
 ::: details Show answer
 
-z-tent | g-interest-met-physical
+z-tent | g-interest-met-long-term
 
-*My tent serves an unspecified interest (appreciated physically).*
+*My tent serves an unspecified interest in the long term.*
 :::
 
 **2.** `zavazul golozothal.`
 
 ::: details Show answer
 
-z-flashlight | g-competence-met-physical
+z-flashlight | g-competence-met-long-term
 
-*My flashlight serves competence (appreciated physically).*
+*My flashlight serves competence in the long term.*
 :::
 
 **3.** `zanunul walodothum gobobum.`
@@ -216,9 +218,9 @@ z-rain | [w-autonomy-unmet-modifiable | g-stimulus]
 
 ::: details Show answer
 
-z-tent | g-survival-met-spiritual
+z-tent | g-survival-met-short-term
 
-*My tent serves survival (appreciated spiritually).*
+*My tent serves survival for now.*
 :::
 
 **5.** `zababal golozothul.`
@@ -276,7 +278,7 @@ Under `/z/` or `/v/` the ordinary noun or verb uses the published literal ending
 |---------|---------|
 | `zezehel wolozothur gobobum thogegam thanedem` | *anxious about the dialogue* (competence at stake, temporary; surge; room awash) |
 | `zezawam wonogothum gobobum thogegam thorurum` | *resentful about the division* (unmet relatedness; surge poured onto them) |
-| `zebegum golozotham thogegam thabobom` | *proud of the draft* (met competence, appreciated mentally; surge bottled) |
+| `zebegum golozotham thogegam thabobom` | *proud of the draft* (met competence; surge bottled) |
 | `zememol wonogothum gobobum thozowom thorurum` | *resentful about the memo* (unmet relatedness; stillness pooling at them) |
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
@@ -289,7 +291,7 @@ Raw feeling (contacting a sensation without judgment) may go unlabeled. Full com
 
 When English puts *should* / *ought to* on the **doing** for a named interest (*Uhubun ought to sing to serve survival*), put `/th/` on the clause: interest root, mid-word **`th`**, **`e`**, then an ending. The **host verb** names the act that ought to count toward the interest. Prescription **`the`** gives the clause **deontic** force: you are stating obligation, not reporting that the act is already happening.
 
-That ending says why you think a move is welcome. Use **-l** when the person invited this move, explicitly or through a clear standing invitation. Use **-m** for an unsolicited offer meant to serve the interest. Use **-r** for an unsolicited protective move meant to prevent detriment to the interest. These endings describe the move's warrant and aim, not whether it succeeds. How firmly you put the act on the addressee stays on `/y/` (**`yel`** / **`yem`**, **`yal`** / **`yam`**). If no such warrant applies, drop **`the`**.
+That ending says why you think a move is welcome. Use **-l** when the person invited this move, explicitly or through a clear standing invitation. Use **-m** for an unsolicited offer meant to serve the interest. Use **-r** for a trial: the move is worth trying to see whether it serves the interest, not a settled recommendation. These endings describe the move's warrant and aim, not whether it succeeds. How firmly you put the act on the addressee stays on `/y/` (**`yel`** / **`yem`**, **`yal`** / **`yam`**). If no such warrant applies, drop **`the`**.
 
 **Unlike** [MAY](knowing.md#may) (`thodohom`): the host verb stays ordinary content there and the event is still *could be*. With **`the`**, the same host verb is the **ought-to** act, not a simultaneous performance claim.
 
@@ -301,9 +303,9 @@ That ending says why you think a move is welcome. Use **-l** when the person inv
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…thel` | the person invited this kind of move | *invited* | **-l** ≈ locked to the invitation |
+| `…thel` | the person invited this kind of move | *invited* | **-l** ≈ locked to their word |
 | `…them` | an unsolicited offer meant to serve the interest | *offered* | **-m** ≈ open offer |
-| `…ther` | an unsolicited move meant to prevent detriment to the interest | *protective* | **-r** ≈ resume safety |
+| `…ther` | a move worth trying, to see whether it serves the interest | *worth a try* | **-r** ≈ for now (a trial run) |
 
 > `zazawan vezehel thonogothem.`
 >
@@ -319,14 +321,22 @@ That ending says why you think a move is welcome. Use **-l** when the person inv
 
 > `zululon vobowol thonogother.`
 >
-> z-Ululon | v-bow | th-relatedness-ought-protective
+> z-Ululon | v-bow | th-relatedness-ought-trial
 >
-> "Ululon ought to bow to serve relatedness (as a protective move)."
+> "Ululon ought to try bowing to serve relatedness (worth a try)."
+
+A move meant to **prevent** harm to the interest is a *so that … not* dependent ([so that](dependents.md#so-that)): **`holalam`** + **`burl`**, then the outcome to keep off.
+
+> `zululon vobowol thonogothem holalam burl zazawan vebarul.`
+>
+> z-Ululon | v-bow | th-relatedness-ought-offered | [h-so-that | b-lest-clause] | z-Azawan | v-departure
+>
+> "Ululon ought to bow for relatedness, so that Azawan does not leave."
 
 ### Motive (`tho`): preference standing
 <a id="interest-preference"></a>
 
-English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the interest root, mid-word **`th`**, **`o`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or from protecting against something that detracts from the interest. If you do not know the standing, use **-m**. **-n** is ordinary [proper](word-endings.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…thom`** plus **`hual`**).
+English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the interest root, mid-word **`th`**, **`o`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or is only a working reason for now. If you do not know the standing, use **-m**. **-n** is ordinary [proper](word-endings.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…thom`** plus **`hual`**).
 
 > `zazawan vezehel thonogothom.`
 >
@@ -334,15 +344,15 @@ English *have to* / *need to* / *doing this for…* often names a **motive**: wh
 >
 > "Azawan tells for relatedness (internal reason)."
 
-**Not the same job as:** prescription **`the`** (*this act ought* to serve or protect this interest). **`tho`** describes *doing for this interest*. On `/ɡ/`, the same stance is **your** noun’s purpose (*my gift for relatedness*). *Walks so that Ululon sits* is an intended **event** ([so that](dependents.md#so-that), **`holalam`**), not an interest. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`huhanem`). *Tells on behalf of Ululon* is [proxy](relations.md#proxy) (`hudagam`).
+**Not the same job as:** prescription **`the`** (*this act ought* to serve this interest). **`tho`** describes *doing for this interest*. On `/ɡ/`, the same stance is **your** noun’s purpose (*my gift for relatedness*). *Walks so that Ululon sits* is an intended **event** ([so that](dependents.md#so-that), **`holalam`**), not an interest. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`huhanem`). *Tells on behalf of Ululon* is [proxy](relations.md#proxy) (`hudagam`).
 
-**-l** and **-m** are approach-framed; **-r** is guard-framed.
+A reason held **to keep a cost off** is a *so that … not* dependent ([so that](dependents.md#so-that), **`holalam burl`**), as with prescription.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…thol` | the situation pulls this motive | *circumstantial* | **-l** ≈ locked to the scene |
 | `…thom` | the agent’s own reason (soft default if unknown) | *internal* | **-m** ≈ open / from inside |
-| `…thor` | motive as protecting against unmet (away-from) | *protective* | **-r** ≈ resume away from detriment |
+| `…thor` | a working reason for now; it may change | *for now* / *provisional* | **-r** ≈ for now |
 
 ### Which ending table?
 
@@ -350,8 +360,8 @@ Beginner already used *serves* and *detracts from*. Intermediate adds *ought thi
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`tha`** | [how it is appreciated](#interest-contact) endings | *serves* / *met* | **a** ≈ add |
-| **`the`** | [invited / offered / protective](#interest-force) endings | *ought this act for this interest* | **e** ≈ order (instruct / ought) |
+| **`tha`** | [time horizon](#time-horizon-endings-on-met) endings | *serves* / *met* | **a** ≈ add |
+| **`the`** | [invited / offered / trial](#interest-force) endings | *ought this act for this interest* | **e** ≈ order (instruct / ought) |
 | **`tho`** | [preference standing](#interest-preference) endings | *doing for this interest* | **o** ≈ one (one interest as the reason) |
 | **`thu`** | [changeability](#interest-changeability) endings | *detracts from* / *unmet* | **u** ≈ undo |
 
@@ -367,33 +377,39 @@ Beginner already attached `/ɡ/` after a noun and `/th/` on the clause for met a
 | `/w/` interest + `gobobum` | the same stances on a noun that is **not** yours | *the gathering (detracts from autonomy)* (`walodothu… gobobum`) |
 | `gl-` + interest word | the same adjective before the **belonging** | `glonogothal zawaral` |
 | `th…tha…` on the clause | the event serves the interest | *tells: competence is met* (`tholozotha…`) |
-| `th…the…` on the clause | deontic prescription | *ought … for this interest* (`thonogothe…`); ending = [invited / offered / protective](#interest-force) |
+| `th…the…` on the clause | deontic prescription | *ought … for this interest* (`thonogothe…`); ending = [invited / offered / trial](#interest-force) |
 | `th…tho…` on the clause | motive | *Azawan … (for relatedness)* (`thonogotho…`) |
 | `/w/` before an interest `/ɡ/` | extra detail on that adjective | *very relatedness-serving* |
 
-Use **-l** for an invitation, **-m** for an offer, and **-r** for a protective move. Prefer **-m** on **`thu` / `tho`** when that table’s dimension is unclear. Several interests are several `/ɡ/` or `/th/` words (`golozothal gonogothal`), not stacked `th`-additions on one interest. The **host** noun or verb carries concrete vs abstract sense. `/w/` before a **interest** `/ɡ/` grades that adjective; `/w/` immediately before **`gobobum`** is the interest.
+On **`the`**, use **-l** for an invitation, **-m** for an offer, and **-r** for a trial. Prefer **-m** on **`thu` / `tho`** when that table’s dimension is unclear. Several interests are several `/ɡ/` or `/th/` words (`golozothal gonogothal`), not stacked `th`-additions on one interest. The **host** noun or verb carries concrete vs abstract sense. `/w/` before a **interest** `/ɡ/` grades that adjective; `/w/` immediately before **`gobobum`** is the interest.
 
 > `zazawan vezehel tholozothal thonogothom.`
 >
-> z-Azawan | v-tell | th-competence-met-physical | th-relatedness-motive-internal
+> z-Azawan | v-tell | th-competence-met-long-term | th-relatedness-motive-internal
 >
-> "Azawan tells: competence is met (physical) and relatedness is the internal motive."
+> "Azawan tells: it serves competence in the long term, and relatedness is the internal motive."
 
 ### Thanks and sorry {#thanks-sorry}
 
-Agalan has no set phrase for *thank you*. Say that what the other person did **met your interest**: a lone clause `/th/` met word is a whole sentence, and saying it to the one who acted is the thanks. Pick the interest that was actually served; the ending says how you appreciate it ([endings on met](#interest-contact)). (cue: thanks = *that met my interest*)
+Agalan has no set phrase for *thank you*. Say that what the other person did **met your interest**: a lone clause `/th/` met word is a whole sentence, and saying it to the one who acted is the thanks. Pick the interest that was actually served; the ending says how long the payoff lasts ([endings on met](#time-horizon-endings-on-met)). (cue: thanks = *that met my interest*)
 
 > `thonogotham.`
 >
-> th-relatedness-met-mental
+> th-relatedness-met-any-term
 >
 > "That meant a lot to me." — *thank you*
 
 > `tholozothal.`
 >
-> th-competence-met-physical
+> th-competence-met-long-term
 >
-> "That helped me do it." — *thanks for the hand*
+> "That will keep helping me do it." — *thanks, that sets me up*
+
+| Agalan | Use | English |
+|--------|-----|---------|
+| `…thal` | the help lasts | *that will stay with me* |
+| `…tham` | the help, horizon unstated (default) | *thank you* |
+| `…thar` | the help is for now | *thanks, that got me through* |
 
 *Sorry* is about **their** interest, not yours. A lone unmet word would say *my* interest went unmet, so name whose interest in `/b/` right after it. The ending is the same [changeability](#interest-changeability) as on any unmet word, so it says how serious the harm is. (cue: sorry = *that detracted from your interest*)
 
@@ -551,12 +567,12 @@ z-Uhubun | v-sleep | th-pleasure-ought-offered
 z-Ululon | v-scream | th-survival-ought-invited
 :::
 
-**4.** *Uhubun ought to bow to protect relatedness (protective).*
+**4.** *Uhubun ought to try bowing for relatedness (worth a try).*
 
 ::: details Show answer
 `zuhubun vobowol thonogother.`
 
-z-Uhubun | v-bow | th-relatedness-ought-protective
+z-Uhubun | v-bow | th-relatedness-ought-trial
 :::
 
 **5.** *Azawan prays for relatedness (internal reason).*
@@ -583,12 +599,12 @@ z-Ululon | v-kneel | th-relatedness-motive-circumstantial
 z-Uhubun | v-shush | th-relatedness-motive-internal | h-always-except
 :::
 
-**8.** *Azawan bows for relatedness (protective motive).*
+**8.** *Azawan bows for relatedness (a reason for now).*
 
 ::: details Show answer
 `zazawan vobowol thonogothor.`
 
-z-Azawan | v-bow | th-relatedness-motive-protective
+z-Azawan | v-bow | th-relatedness-motive-provisional
 :::
 
 **9.** *Ululon prays for competence (internal reason).*
@@ -599,20 +615,20 @@ z-Azawan | v-bow | th-relatedness-motive-protective
 z-Ululon | v-pray | th-competence-motive-internal
 :::
 
-**10.** *Azawan’s church serves relatedness (appreciated physically).*
+**10.** *Azawan’s church serves relatedness in the long term.*
 
 ::: details Show answer
 `globorum bazawan zuhurul wonogothal gobobum.`
 
-[[gl-ownership | b-Azawan] | z-church] | [w-relatedness-met-physical | g-stimulus]
+[[gl-ownership | b-Azawan] | z-church] | [w-relatedness-met-long-term | g-stimulus]
 :::
 
-**11.** *Azawan prays: competence is met (physical) and relatedness is the internal motive.*
+**11.** *Azawan prays: it serves competence in the long term, and relatedness is the internal motive.*
 
 ::: details Show answer
 `zazawan vabal tholozothal thonogothom.`
 
-z-Azawan | v-pray | th-competence-met-physical | th-relatedness-motive-internal
+z-Azawan | v-pray | th-competence-met-long-term | th-relatedness-motive-internal
 :::
 
 **12.** *Ululon ought to scream to serve survival (Ululon asked for a move); relatedness is the circumstantial motive.*
@@ -653,18 +669,18 @@ z-Azawan | v-shush | [th-CONSENT-assumed | [b-Ululon | b-Uhubun | b-and]]
 
 ::: details Show answer
 
-z-Ululon | v-tell | th-relatedness-ought-protective
+z-Ululon | v-tell | th-relatedness-ought-trial
 
-*Ululon ought to tell to protect relatedness (protective).*
+*Ululon ought to try telling for relatedness (worth a try).*
 :::
 
 **2.** `zuhubun vazagal thuhuhether.`
 
 ::: details Show answer
 
-z-Uhubun | v-scream | th-survival-ought-protective
+z-Uhubun | v-scream | th-survival-ought-trial
 
-*Uhubun ought to scream to protect survival (protective).*
+*Uhubun ought to try screaming for survival (worth a try).*
 :::
 
 **3.** `zululon vabal tholozothol.`
@@ -689,18 +705,18 @@ z-Uhubun | v-kneel | th-relatedness-motive-internal
 
 ::: details Show answer
 
-z-Azawan | v-shush | th-relatedness-motive-protective
+z-Azawan | v-shush | th-relatedness-motive-provisional
 
-*Azawan shushes for relatedness (protective motive).*
+*Azawan shushes for relatedness (a reason for now).*
 :::
 
 **6.** `zabarel gawerothar.`
 
 ::: details Show answer
 
-z-prayer-bead | g-pleasure-met-spiritual
+z-prayer-bead | g-pleasure-met-short-term
 
-*My prayer bead serves pleasure (appreciated spiritually).*
+*My prayer bead serves pleasure for now.*
 :::
 
 **7.** `zanedel walodothum gobobum.`
@@ -761,9 +777,9 @@ z-Azawan | v-scream | [th-CONSENT-refused | b-Ululon]
 
 ::: details Show answer
 
-[z-church | g-competence-met-mental] | th-LOW | th-INTERNAL
+[z-church | g-competence-met-any-term] | th-LOW | th-INTERNAL
 
-*Quietly proud of my church:* competence met (appreciated mentally); stillness held inside.
+*Quietly proud of my church:* competence met; stillness held inside.
 :::
 
 ## See also

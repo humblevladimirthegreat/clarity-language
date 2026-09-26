@@ -31,14 +31,14 @@ onenom,th,💰,residue,RESIDUE,residue mood (outcome still on the current tally)
 onenom,w,💰,residue,RESIDUE,residue mood (outcome still on the current tally),money bag holds what is owed; residue is an unpaid balance still on the books,knowing.md#mood-on-one-adjective
 emebem,th,🪹,former_climate,FORMER,former-climate mood (not the climate claimed now),empty nest shows the nesting season is over; former climate is usual weather that is not current,knowing.md#residue-and-former-climate
 emebem,w,🪹,former_climate,FORMER,former-climate mood (not the climate claimed now),empty nest shows the nesting season is over; former climate is usual weather that is not current,knowing.md#mood-on-one-adjective
-emabam,th,🗺️,plan,plan-sketch,plan mood sketch map-resolution (direction-only intention),map charts a route; sketch plan is intention without steps,intention.md#plan
-emabam,w,🗺️,plan,plan-sketch,plan mood sketch map-resolution (direction-only intention),map charts a route; sketch plan is intention without steps,intention.md#plan
-emabal,th,🗺️,plan,plan-itinerary,plan mood itinerary map-resolution (steps on the map),map charts a route; itinerary plan fills in how,intention.md#plan
-emabal,w,🗺️,plan,plan-itinerary,plan mood itinerary map-resolution (steps on the map),map charts a route; itinerary plan fills in how,intention.md#plan
+emabar,th,🗺️,plan,plan-sketch,plan mood sketch map-resolution (direction-only intention),map charts a route; sketch plan is intention without steps,intention.md#plan
+emabar,w,🗺️,plan,plan-sketch,plan mood sketch map-resolution (direction-only intention),map charts a route; sketch plan is intention without steps,intention.md#plan
+emabam,th,🗺️,plan,plan-itinerary,plan mood itinerary map-resolution (steps on the map),map charts a route; itinerary plan fills in how,intention.md#plan
+emabam,w,🗺️,plan,plan-itinerary,plan mood itinerary map-resolution (steps on the map),map charts a route; itinerary plan fills in how,intention.md#plan
 emaban,th,🗺️,plan,plan,plan mood proper (this plan-word names a particular object),map charts a route; -n is ordinary proper not a map grain,intention.md#plan
 emaban,w,🗺️,plan,plan,plan mood proper (this plan-word names a particular object),map charts a route; -n is ordinary proper not a map grain,intention.md#plan
-emabar,th,🗺️,plan,plan-atlas,plan mood atlas map-resolution (includes backups; fully prepared),map charts a route; atlas plan is so detailed it includes backups,intention.md#plan
-emabar,w,🗺️,plan,plan-atlas,plan mood atlas map-resolution (includes backups; fully prepared),map charts a route; atlas plan is so detailed it includes backups,intention.md#plan
+emabal,th,🗺️,plan,plan-atlas,plan mood atlas map-resolution (includes backups; fully prepared),map charts a route; atlas plan is so detailed it includes backups,intention.md#plan
+emabal,w,🗺️,plan,plan-atlas,plan mood atlas map-resolution (includes backups; fully prepared),map charts a route; atlas plan is so detailed it includes backups,intention.md#plan
 elezom,th,🔭,predict,PREDICT,predict mood (later-event forecast),telescope shows what is far; forecast looks ahead at a distance,intention.md#predict
 elezom,w,🔭,predict,PREDICT,predict mood (later-event forecast),telescope shows what is far; forecast looks ahead at a distance,intention.md#predict
 ehegel,th,✅,decision,DECISION-irreversible,decision mood irreversible changeability (settled pick),checkmark confirms a pick; irreversible decision is settled as final,intention.md#decision-revisability
@@ -59,12 +59,12 @@ odohor,th,💭,may,MAY-who-knows,may mood who-knows hold (leave unsettled; may n
 odohor,w,💭,may,MAY-who-knows,may mood who-knows hold (leave unsettled; may never know),"thought balloon with a shrug: could be, and you are not seeking — including if you never know",knowing.md#mood-on-one-adjective
 adadem,th,🎭,notional,NOTIONAL,notional mood default hold (imagining a scene without a further purpose),theater mask marks an imagined scene without a special purpose,knowing.md#notional-as-if-framing
 adadem,w,🎭,notional,NOTIONAL,notional mood default hold (imagining a scene without a further purpose),theater mask marks an imagined scene without a special purpose,knowing.md#mood-on-one-adjective
-adadel,th,🎭,notional,NOTIONAL-explore,notional mood explore hold (testing a possibility or assumption),theater mask opens a scene to explore what might follow,knowing.md#hold-endings-notional
-adadel,w,🎭,notional,NOTIONAL-explore,notional mood explore hold (testing a possibility or assumption),theater mask opens a scene to explore what might follow,knowing.md#mood-on-one-adjective
+adader,th,🎭,notional,NOTIONAL-suppose,notional mood suppose hold (toying with a possibility or assumption for now),theater mask tried on for a moment to toy with what might follow,knowing.md#hold-endings-notional
+adader,w,🎭,notional,NOTIONAL-suppose,notional mood suppose hold (toying with a possibility or assumption for now),theater mask tried on for a moment to toy with what might follow,knowing.md#mood-on-one-adjective
 adaden,th,🎭,notional,NOTIONAL.named,notional mood proper (this as-if-word names a particular object),theater as a named setup; -n is ordinary proper not a hold,knowing.md#notional-as-if-framing
 adaden,w,🎭,notional,NOTIONAL.named,notional mood proper (this as-if-word names a particular object),theater as a named setup; -n is ordinary proper not a hold,knowing.md#mood-on-one-adjective
-adader,th,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,knowing.md#hold-endings-notional
-adader,w,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,knowing.md#mood-on-one-adjective
+adadel,th,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,knowing.md#hold-endings-notional
+adadel,w,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,knowing.md#mood-on-one-adjective
 ogegam,th,🌊,emotion_act,HIGH,emotion HIGH activation (flood / surge),ocean wave surges; flood is high-arousal water motion,interests.md#emotion-compose
 ogegam,w,🌊,emotion_act,HIGH,emotion HIGH activation (flood / surge),ocean wave surges; flood is high-arousal water motion,interests.md#emotion-compose
 ejelom,th,🪼,emotion_act,MED,emotion MED activation (flow / drift),jellyfish drifts with current; flow is mid motion of water,interests.md#emotion-compose

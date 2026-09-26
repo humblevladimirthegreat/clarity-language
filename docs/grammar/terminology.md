@@ -178,12 +178,12 @@ Clause content after the left-edge `/y/` cluster.
 
 [Speech moves](speech-moves.md#turn-y)
 
-### Invited / offered / protective
+### Invited / offered / trial
 <a id="asked-typical-history"></a>
 <a id="wording-general-history"></a>
 <a id="bound-endorse-invite"></a>
 
-Prescription endings on interest **`the`**: why a move is welcome. **-l** invited, **-m** offered to serve the interest, **-r** protective, meant to prevent detriment to the interest.
+Prescription endings on interest **`the`**: why a move is welcome. **-l** invited, **-m** offered to serve the interest, **-r** a trial, worth trying to see whether it serves the interest.
 
 [Interests](interests.md#interest-force)
 
@@ -248,12 +248,6 @@ Rank join + SHARED **scale** (`/ɡ/` quality or `/h/` manner); single-item = sup
 Polar patterns that confirm a denied body.
 
 [Questions](questions.md#confirming-a-negative)
-
-### Contact / contact channel
-
-Met-interest **`tha`** endings (physical / mental / spiritual).
-
-[Interests](interests.md#interest-contact)
 
 ### Continue (`/x/`)
 
@@ -497,7 +491,7 @@ Content endings **-l / -m / -n / -r**.
 
 ### Map resolution
 
-**PLAN** endings: sketch / itinerary / atlas.
+**PLAN** endings: **-l** atlas / **-m** itinerary (default) / **-r** sketch.
 
 [Intention](intention.md#plan-map-resolution)
 
@@ -728,13 +722,20 @@ Utterance setting: statement / question / command / prohibition.
 
 [Speech moves](speech-moves.md#speech-act)
 
-**Compare with:** interest **prescription warrant** is [invited / offered / protective](#asked-typical-history), not speech act. Polar [stance](#polar-stance) is a left-edge particle.
+**Compare with:** interest **prescription warrant** is [invited / offered / trial](#asked-typical-history), not speech act. Polar [stance](#polar-stance) is a left-edge particle.
 
 ### Sufficient / necessary
 
 *If* (enough) vs *only if* (needed) vs *because* / *iff*.
 
 [Causation](causation.md)
+
+### Time horizon
+<a id="contact--contact-channel"></a>
+
+Met-interest **`tha`** endings: **-l** long-term, **-m** unstated (default), **-r** short-term.
+
+[Interests](interests.md#time-horizon-endings-on-met)
 
 ### Titled phrase
 

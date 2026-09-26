@@ -99,7 +99,7 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 | Role metalanguage (`speaker`, `listener`, `interlocutors`) | *I / you / we* |
 | Join packaging (open `zam` vs closed `zal`, exclusive `dol`, fence shape) | Plain *and / or*; no “exactly one”, no open-list footnotes |
 | Sense-picking **-l / -m / -n** | Never (already omitted from morph when they only pick sense) |
-| Values **channel / standing / invitation / changeability** | Keep only what changes English (*can't* vs unmet interest as content); drop “(motive, soft standing)”, … Prescription **`the`**: loose free keeps the warrant when it is the point (*invited* / *offered* / *protective*) — not *must* / *should* / *could* as a force grade |
+| Values **time horizon / standing / invitation / changeability** | Keep only what changes English (*can't* vs unmet interest as content); drop “(motive, soft standing)”, … Prescription **`the`**: loose free keeps the warrant when it is the point (*invited* / *offered* / *worth a try*) — not *must* / *should* / *could* as a force grade |
 | Emotion compose ACT / LOCUS / activation | Ordinary emotion English (*we're glad*), not “pleasure met · internal” |
 | Evidential / universality **tags** | Fold in only if English wants it (*I hear…*, *usually*); else omit |
 | Span fence labels | Quotes / parentheses; no “Cite:” / “aside:” |
@@ -400,7 +400,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `guzumum` | `g-happy` | *happy* |
 | `thuvuvum` | `th-WITNESSED` | *per memory* |
 | `thadezem` | `th-LIVE` | *from the scene* |
-| `themabam` | `th-plan-sketch` | *as a sketch plan* |
+| `themabar` | `th-plan-sketch` | *as a sketch plan* |
 | `gonunul` | `g-SAME` | *identical to* (identity host) |
 | `von` | `v-choose` | *chooses (exactly one)* |
 
@@ -442,7 +442,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Inclusive *we* (interlocutors)
 
-> `yael xezazam zahan themabam vawalal vul.`
+> `yael xezazam zahan themabar vawalal vul.`
 >
 > y-yes | x-therefore | z-interlocutors | th-plan-sketch | [v-walk | v-not]
 >

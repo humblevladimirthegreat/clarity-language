@@ -411,27 +411,27 @@ English sometimes frames the whole clause as play: *as if*, *for the sake of arg
 ### Hold endings (NOTIONAL)
 <a id="notional-hold"></a>
 
-You can imagine a scene to explore what might follow, picture it without a special purpose, or rehearse it to prepare for doing it. **NOTIONAL** keeps the clause in that imagined frame; its ending says why you are using the frame. Beginner already used **-l / -m / -r** on **MAY** for *I'll find out* / default *may* / *who knows*. Here the same endings mark explore / imagine / rehearse. **-n** is ordinary [proper](word-endings.md#proper-name--n).
+You can rehearse an imagined scene to prepare for doing it, picture it without a special purpose, or just toy with a *what if*. **NOTIONAL** keeps the clause in that imagined frame; its ending says how much weight the frame carries. The endings follow [PLAN](intention.md#plan-predict) (atlas / itinerary / sketch): **-l** is the most committed to action, **-m** the default, and **-r** the lightest. **-n** is ordinary [proper](word-endings.md#proper-name--n).
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`thadadel`** | explore a possibility or assumption | *suppose…* / *what if…?* | `adadel` *theater* | 🎭: try out a scene |
+| **`thadadel`** | rehearse a possible scene to prepare for action | *let’s practice…* / *try acting as if…* | `adadel` *theater* | 🎭: practice a scene |
 | **`thadadem`** | imagine a scene without a further purpose (default) | *imagine…* / *as if…* | `adadel` *theater* | 🎭: picture a scene |
-| **`thadader`** | rehearse a possible scene to prepare for action | *let’s practice…* / *try acting as if…* | `adadel` *theater* | 🎭: practice a scene |
+| **`thadader`** | toy with a possibility or assumption, for now | *suppose…* / *what if…?* | `adadel` *theater* | 🎭: try on a mask for a moment |
 
 When you are not sure, use **`thadadem`**.
 
-> `zazawan thadadel vuwurul.`
->
-> z-Azawan | th-NOTIONAL-explore | v-write
->
-> "Suppose Azawan writes." — exploring an assumption
-
-> `zuhubun thadader vuzunul.`
+> `zuhubun thadadel vuzunul.`
 >
 > z-Uhubun | th-NOTIONAL-rehearse | v-sing
 >
 > "Uhubun practices singing." — rehearsing the imagined scene
+
+> `zazawan thadader vuwurul.`
+>
+> z-Azawan | th-NOTIONAL-suppose | v-write
+>
+> "Suppose Azawan writes." — toying with an assumption
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -589,7 +589,7 @@ z-Uhubun | th-INFERRED | v-mute
 *Uhubun mutes — inferred from clues.*
 :::
 
-**4.** `zuhubun thadader vuzunul.`
+**4.** `zuhubun thadadel vuzunul.`
 
 ::: details Show answer
 

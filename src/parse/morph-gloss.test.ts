@@ -120,7 +120,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("thadezem", "th-LIVE");
     expectLine("thonenom", "th-RESIDUE");
     expectLine("themebem", "th-FORMER");
-    expectLine("themabam", "th-plan-sketch");
+    expectLine("themabar", "th-plan-sketch");
     expectLine("gonunul", "g-SAME");
   });
 
@@ -191,7 +191,7 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
   it("inclusive we", () => {
     expectLine(
-      "yael xezazam zahan themabam vawalal vul.",
+      "yael xezazam zahan themabar vawalal vul.",
       "y-yes | x-therefore | z-interlocutors | th-plan-sketch | [v-walk | v-not]",
     );
   });
@@ -330,7 +330,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("values bake stance and ending grain", () => {
-    expectLine("zawaral gonogothal", "z-wrapped-gift | g-relatedness-met-physical");
+    expectLine("zawaral gonogothal", "z-wrapped-gift | g-relatedness-met-long-term");
     expectLine("zazegem walodothur gobobum", "z-gathering | [w-autonomy-unmet-temporary | g-stimulus]");
     expectLine("thogegam thanedem", "th-HIGH | th-CIRCUM");
   });

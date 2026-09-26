@@ -11,9 +11,9 @@ To say what someone **means to do**, put **`themaba`** before the ordinary verb,
 
 > `zazawan themabam vawalal.`
 >
-> z-Azawan | th-plan-sketch | v-walk
+> z-Azawan | th-plan-itinerary | v-walk
 >
-> "Azawan intends to walk."
+> "Azawan plans to walk."
 
 Ordinary content stays available (`zemabal` *a map*; `vemabal` *to plan*). Leave PLAN off when you are not framing intention.
 
@@ -21,21 +21,21 @@ Ordinary content stays available (`zemabal` *a map*; `vemabal` *to plan*). Leave
 <a id="plan-map-resolution"></a>
 <a id="plan-endings"></a>
 
-On **`emaba`**, **-l / -m / -r** say **how fully drawn** the intention is: a heading, steps filled in, or a map that already includes backups. That split is a reminder of **how prepared** you are. **-n** is ordinary [proper](word-endings.md#proper-name--n). When you are unsure how detailed the course is, prefer **`themabam`**.
+On **`emaba`**, **-l / -m / -r** say **how fully drawn** the intention is: a map that already includes backups, steps filled in, or only a heading. **-l** is the most prepared and **-r** the least formed. That split is a reminder of **how prepared** you are. **-n** is ordinary [proper](word-endings.md#proper-name--n). When you are unsure how detailed the course is, use **`themabam`**: it claims a plan without saying how much is filled in.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`themabam`** | **sketch** (soft default) | *intends to …* — heading only, steps not filled in | `emabam` *plan-sketch* | **-m** ≈ map (outline only) |
-| **`themabal`** | **itinerary** | *plans to …* — step-by-step plan | `emabal` *plan-itinerary* | **-l** ≈ list (every stop in a line) |
-| **`themabar`** | **atlas** | *is fully prepared to …* — hurdles are anticipated and prepared for | `emabar` *plan-atlas* | **-r** ≈ routes (detours already drawn) |
+| **`themabal`** | **atlas** | *is fully prepared to …* — hurdles are anticipated and prepared for | `emabal` *plan-atlas* | **-l** ≈ locked in (detours already drawn) |
+| **`themabam`** | **itinerary** (soft default) | *plans to …* — steps laid out, or detail unstated | `emabam` *plan-itinerary* | **-m** ≈ middle (the route, no backups) |
+| **`themabar`** | **sketch** | *intends to …* / *is thinking of …* — heading only, steps not filled in | `emabar` *plan-sketch* | **-r** ≈ rough (a heading for now) |
 
-> `zululon themabal vawalal.`
+> `zululon themabar vawalal.`
 >
-> z-Ululon | th-plan-itinerary | v-walk
+> z-Ululon | th-plan-sketch | v-walk
 >
-> "Ululon plans to walk."
+> "Ululon intends to walk."
 
-> `zuhubun themabar vawalal.`
+> `zuhubun themabal vawalal.`
 >
 > z-Uhubun | th-plan-atlas | v-walk
 >
@@ -53,7 +53,7 @@ To predict a later event, such as rain or a result, put **`thelezo`** before the
 >
 > "I predict it will rain."
 
-**Compare with:** English *will* as *intends to …* / *plans to …* uses [PLAN](#plan-predict) (`themabam` / `themabal` / `themabar`). PREDICT is a later world forecast, not someone’s course. To say *how much* later (*in three hours*), add a `+` [offset](knowing.md#dated-channel) after PREDICT or PLAN.
+**Compare with:** English *will* as *intends to …* / *plans to …* uses [PLAN](#plan-predict) (`themabal` / `themabam` / `themabar`). PREDICT is a later world forecast, not someone’s course. To say *how much* later (*in three hours*), add a `+` [offset](knowing.md#dated-channel) after PREDICT or PLAN.
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -81,7 +81,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *Azawan intends to sit.*
 
 ::: details Show answer
-`zazawan themabam vajul.`
+`zazawan themabar vajul.`
 
 z-Azawan | th-plan-sketch | v-sit
 :::
@@ -89,7 +89,7 @@ z-Azawan | th-plan-sketch | v-sit
 **2.** *Ululon intends to see a pawn.*
 
 ::: details Show answer
-`zululon themabam dawanal vejel.`
+`zululon themabar dawanal vejel.`
 
 z-Ululon | th-plan-sketch | d-pawn | v-see
 :::
@@ -97,7 +97,7 @@ z-Ululon | th-plan-sketch | d-pawn | v-see
 **3.** *Azawan plans to tell Uhubun.*
 
 ::: details Show answer
-`zazawan buhubun themabal vezehel.`
+`zazawan buhubun themabam vezehel.`
 
 z-Azawan | b-Uhubun | th-plan-itinerary | v-tell
 :::
@@ -113,7 +113,7 @@ z-Azawan | th-PREDICT | v-sit
 **5.** *Uhubun plans to see Azawan.*
 
 ::: details Show answer
-`zuhubun themabal dazawan vejel.`
+`zuhubun themabam dazawan vejel.`
 
 z-Uhubun | th-plan-itinerary | d-Azawan | v-see
 :::
@@ -121,7 +121,7 @@ z-Uhubun | th-plan-itinerary | d-Azawan | v-see
 **6.** *Ululon is fully prepared to punch Azawan.*
 
 ::: details Show answer
-`zululon themabar dazawan vubunul.`
+`zululon themabal dazawan vubunul.`
 
 z-Ululon | th-plan-atlas | d-Azawan | v-punch
 :::
@@ -137,14 +137,14 @@ z-Ululon | th-PREDICT | v-scream
 **8.** *Ululon is fully prepared to fight.*
 
 ::: details Show answer
-`zululon themabar vuvugul.`
+`zululon themabal vuvugul.`
 
 z-Ululon | th-plan-atlas | v-fight
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
 
-**1.** `zululon themabam vajul.`
+**1.** `zululon themabar vajul.`
 
 ::: details Show answer
 
@@ -153,7 +153,7 @@ z-Ululon | th-plan-sketch | v-sit
 *Ululon intends to sit.*
 :::
 
-**2.** `zazawan themabam dawanal vejel.`
+**2.** `zazawan themabar dawanal vejel.`
 
 ::: details Show answer
 
@@ -162,7 +162,7 @@ z-Azawan | th-plan-sketch | d-pawn | v-see
 *Azawan intends to see a pawn.*
 :::
 
-**3.** `zuhubun bazawan themabal vezehel.`
+**3.** `zuhubun bazawan themabam vezehel.`
 
 ::: details Show answer
 
@@ -180,7 +180,7 @@ th-PREDICT | v-sit
 *I predict someone will sit.*
 :::
 
-**5.** `zazawan buhubun themabam vezehel.`
+**5.** `zazawan buhubun themabar vezehel.`
 
 ::: details Show answer
 
@@ -189,7 +189,7 @@ z-Azawan | b-Uhubun | th-plan-sketch | v-tell
 *Azawan intends to tell Uhubun.*
 :::
 
-**6.** `zululon themabal dawanal vejel.`
+**6.** `zululon themabam dawanal vejel.`
 
 ::: details Show answer
 
@@ -198,7 +198,7 @@ z-Ululon | th-plan-itinerary | d-pawn | v-see
 *Ululon plans to see a pawn.*
 :::
 
-**7.** `zuhubun themabar vazagal.`
+**7.** `zuhubun themabal vazagal.`
 
 ::: details Show answer
 
@@ -344,11 +344,19 @@ On **`ehege`**, **-l / -m / -r** match unmet [changeability](interests.md#intere
 
 You can stack this mood after [PLAN](#plan-predict) when the clause needs both map grain and pick firmness:
 
-> `zazawan themabal thehegel vawalal.`
+> `zazawan themabam thehegel vawalal.`
 >
 > z-Azawan | th-plan-itinerary | th-DECISION-irreversible | v-walk
 >
 > "Azawan plans to walk, and that choice is final."
+
+PLAN and DECISION endings run the same way: **-l** is the most settled, **-m** the default, and **-r** the lightest.
+
+> `zululon themabar theheger vawalal.`
+>
+> z-Ululon | th-plan-sketch | th-DECISION-temporary | v-walk
+>
+> "Ululon is thinking of walking, and has decided only for now."
 
 ### Forecast source
 <a id="predict-evidentiality"></a>
@@ -377,7 +385,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| **PLAN** (itinerary) | `themabal` | `emabal` *plan-itinerary* |
+| **PLAN** (itinerary) | `themabam` | `emabam` *plan-itinerary* |
 | **PREDICT** | `thelezom` | `elezol` *telescope* |
 | **DECISION** (modifiable) | `thehegem` | `ehegel` *check* |
 | *sit* | `vajul` | `ajul` *chair* |
@@ -431,7 +439,7 @@ z-Ululon | th-PREDICT | th-PATTERN | v-sit
 **5.** *Azawan plans to sit, and that choice is final.*
 
 ::: details Show answer
-`zazawan themabal thehegel vajul.`
+`zazawan themabam thehegel vajul.`
 
 z-Azawan | th-plan-itinerary | th-DECISION-irreversible | v-sit
 :::
@@ -531,7 +539,7 @@ z-Azawan | th-DECISION-temporary | d-pen | v-see
 *Azawan has decided for now to see a pen.*
 :::
 
-**6.** `zululon buhubun themabal thehegel vezehel.`
+**6.** `zululon buhubun themabam thehegel vezehel.`
 
 ::: details Show answer
 
@@ -593,7 +601,7 @@ z-Ululon | th-ABIL-unable-irreversible
 
 [PLAN](#plan-predict) and [PREDICT](#predict) without a hosted pair score against **speech-now**. With [*as-of*](relations.md#as-of), PLAN is the intention **from** that now (*was going to*), and PREDICT is **after** that now (*would rain*). Repeat PREDICT on the next clause; resume whose-now with `helerer` / `hobomar`. [DECISION](#decision) stays how revisable the pick is **now**.
 
-> `zululon themabam vawalal helerem b_#22,7.`
+> `zululon themabar vawalal helerem b_#22,7.`
 >
 > z-Ululon | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
 >
@@ -626,7 +634,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. PLAN an
 | *Ululon* | `ululon` |
 | *walk* | `vawalal` |
 | *rain* | `vanunul` |
-| *plan-sketch* | `themabam` |
+| *plan-sketch* | `themabar` |
 | *predict* | `thelezom` |
 | *as-of.ledger* | `helerem` |
 | *as-of.bookmark* | `hobomam` |
@@ -637,7 +645,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. PLAN an
 **1.** *As of 22 July, Ululon was going to walk.*
 
 ::: details Show answer
-`zululon themabam vawalal helerem b_#22,7.`
+`zululon themabar vawalal helerem b_#22,7.`
 
 z-Ululon | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
 :::
@@ -669,7 +677,7 @@ th-PREDICT | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | th-PREDICT | h-a
 *Taking 22 July as now (a placeholder), it would rain. Azawan would walk too, on the same placeholder.*
 :::
 
-**2.** `zululon themabam vawalal helerem b_#22,7.`
+**2.** `zululon themabar vawalal helerem b_#22,7.`
 
 ::: details Show answer
 

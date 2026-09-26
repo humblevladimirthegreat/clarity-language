@@ -73,9 +73,9 @@ Agalan’s [interests](interests.md) name a closed inventory of **interests** (a
 
 | Stance | Job |
 |--------|-----|
-| Met | This serves the interest, including how you contact the payoff (gratitude / savoring) — an adjective on the noun, or `/th/` on the event |
+| Met | This serves the interest, including whether the payoff lasts or is only for now (gratitude / savoring) — an adjective on the noun, or `/th/` on the event |
 | Motive | Acting *for* this interest, including where the reason stands |
-| Prescription | Deontic on the host act for this interest — ending marks the move's warrant or aim (**invited / offered / protective**) |
+| Prescription | Deontic on the host act for this interest — ending marks the move's warrant or aim (**invited / offered / trial**) |
 | Unmet | Costs the interest, including how changeable that is |
 
 Naming the interest and your stance toward it helps you notice gratitude, motive, and oughts instead of conflating them into vague *want* / *should* / *good*. An interest on `/ɡ/` is a belonging (so *my X serves competence* is one adjective); an unowned stimulus uses the interest on `/w/` immediately before **`gobobum`**.

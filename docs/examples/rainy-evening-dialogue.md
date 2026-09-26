@@ -72,7 +72,7 @@ strict: *However — that one (B), per memory — it rains.*
 
 loose: *Still — it's raining, as I remember.*
 
-**B:** `yael xezazam zahan themabam vawalal vul.`
+**B:** `yael xezazam zahan themabar vawalal vul.`
 
 gloss: `y-yes` · `x-therefore` · `z-interlocutors` · `th-plan` · `v-walk` · `v-not`
 
@@ -120,7 +120,7 @@ strict: *Point 2: solution #2. Please, you (B), cook bread and tea.*
 
 loose: *Second — a solution: please cook some bread and tea.*
 
-**B:** `yaol themabam xan zubur dabogo von.`
+**B:** `yaol themabar xan zubur dabogo von.`
 
 gloss: `y-uptake` · `th-plan` · `x-and-then` · `z-←Ubunexunowen` · `d-book` · `v-choose`
 

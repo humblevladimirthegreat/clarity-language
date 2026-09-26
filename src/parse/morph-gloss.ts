@@ -18,7 +18,7 @@
  * | `an` in-clause | `including.named` | proper-name phrase |
  * | `har` statement / fill-ask | `h-sometimes` / `h-when` | `-r` is unspecified occasion, not `hal` |
  * | `hual` bare | `h-always` | |
- * | `themabam` | `th-plan-sketch` | overlay grain `-m` |
+ * | `themabam` | `th-plan-itinerary` | overlay grain `-m` |
  * | mid-word `x` | always `-x-` segments | never a fused English name |
  * | house-cast `-n` | `Azawan` / `Ululon` / `Uhubun` | |
  * | mention `{…}` / spoken TYPE **o** interior | pass through the surface (`z-odogo`, `odogol`) | not the English lemma |
@@ -264,11 +264,11 @@ const INTEREST_STANCE: Record<string, string> = {
   u: "unmet",
 };
 
-/** Ending grain on values (contact / prescription warrant / preference / changeability). */
+/** Ending grain on values (time horizon / prescription warrant / preference / changeability). */
 const INTEREST_GRAIN: Record<string, Partial<Record<Ending, string>>> = {
-  a: { l: "physical", m: "mental", r: "spiritual" },
-  e: { l: "invited", m: "offered", r: "protective" },
-  o: { l: "circumstantial", m: "internal", r: "protective" },
+  a: { l: "long-term", m: "any-term", r: "short-term" },
+  e: { l: "invited", m: "offered", r: "trial" },
+  o: { l: "circumstantial", m: "internal", r: "provisional" },
   u: { l: "irreversible", m: "modifiable", r: "temporary" },
 };
 
