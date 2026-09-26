@@ -103,12 +103,20 @@ describe("resolve — span and number anaphors", () => {
     assert.equal(span!.antecedent?.raw, "d[hi]");
   });
 
-  it("binds g=+ to the prior scalar (numbers.md)", () => {
-    const { anaphors } = resolveOf("z+3 vawalal. z=+ vajul.");
+  it("binds digitful z=+3 to the prior scalar (numbers.md)", () => {
+    const { anaphors } = resolveOf("z+3 vawalal. z=+3 vajul.");
     const num = anaphors.find((a) => a.kind === "number");
     assert.ok(num);
-    assert.equal(num!.pronoun.raw, "z=+");
+    assert.equal(num!.pronoun.raw, "z=+3");
     assert.equal(num!.antecedent?.raw, "z+3");
+  });
+
+  it("digitless z=+ is not a resume; under question it is a fill-ask (numbers.md#digitless)", () => {
+    const statement = resolveOf("z+3 vawalal. z=+ vajul.");
+    assert.equal(statement.anaphors.some((a) => a.kind === "number"), false);
+    const question = resolveOf("yol zagadalx g=+ vajul.");
+    assert.equal(question.asks[0]?.kind, "fillAsk");
+    assert.equal(question.asks[0]?.gaps[0]?.raw, "g=+");
   });
 });
 

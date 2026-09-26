@@ -465,15 +465,15 @@ Beginner already used exact **-l**. The other endings mark *about*, a convention
 | *(none)* — `g+3`, `g+` | **-l** | exact, newly stated (default) | **-l** stands behind the amount |
 | **`~`** after PoS — `g~+3`, `g~+` | **-m** | approximate / non-literal (“about N”) | **-m** leaves the hold open |
 | **`@`** after PoS — `g@#2` | **-n** | conventional designation (titles, official labels, *the Second…*) | **-n** names the number |
-| **`=`** after PoS — `g=+`, `g=#2`, `d=_` | **-r** | resume of a previously stated number, code, or rank | **-r** points back |
+| **`=`** after PoS — `g=+3`, `g=#2`, `d=_12` | **-r** | resume of a previously stated number, code, or rank (at least one digit) | **-r** points back |
 
-**-r** may be **digitless**: marker + **-r** alone resumes the prior value of that identity without restating digits (`g=+` = *that (scalar) amount again*; `d=_` = *that code again*; `g=#` = *that rank again*). Digits + **-r** still fine when you want to name which prior item (`g=#2` = *that second one again*). Match the marker to the resumed identity (`g=+` for a prior scalar). **`=`** stands alone: no stack with **`~`** / **`@`**.
+A resume needs **at least one digit**: `g=+3` = *that three again*; `g=#2` = *that second one again*. Match the marker to the resumed identity. Digitless **-r** (`g=+`) is not a resume: like a standalone join **-r**, it is *some number* in a statement and *which number?* in a question ([digitless](#digitless)). **`=`** stands alone.
 
 ### Digitless {#digitless}
 <a id="digitless-numbers"></a>
 <a id="bare-marker"></a>
 
-Beginner already used **`g+`** for *more than one*. Any marker may drop every digit group: **role letter + marker + ending** only. The marker still says what kind of number this is. With **-l** / **-m** / **-n**, the amount, rank, or label is **unspecified**. With **-r**, the word only repeats a prior value of that kind.
+Beginner already used **`g+`** for *more than one*. Any marker may drop every digit group: **role letter + marker + ending** only. The marker still says what kind of number this is. With **-l** / **-m** / **-n**, the amount, rank, or label is **unspecified**. With **-r**, the word is a blank, like a standalone join **-r**: *some number* in a statement, *which number?* in a [fill-ask](questions.md#fill-ask-r).
 
 | Agalan | Use | English | Cue |
 |--------|---------|---------|-----|
@@ -510,15 +510,57 @@ A mass noun such as *tea* is not counted, so *more than one* makes no sense for 
 
 *Many*, *few*, *enough*, and *too much* compare the amount against a baseline, so they are [comparatives](comparatives.md#vague-amounts), not number words.
 
-Phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory**. Digitless number **-r** repeats a **prior numeric value**. Digitless number **-l** (and **-m** / **-n**) introduces an unspecified amount of that marker.
+Phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory**. Digitless number **-r** picks an unspecified **value** the same way: *some amount*, with no claim that it is more than one. Digitless number **-l** (and **-m** / **-n**) introduces an unspecified amount of that marker, and **`g+`** still says *more than one*.
 
-> `zululon d+ vejel. zazawan d=+ vejel.`
+> `zazawan d=+ vejel.`
 >
-> 🔊 *zululon dral vejel. zazawan drar vejel.*
+> 🔊 *zazawan drar vejel.*
 >
-> z-Ululon | d-more-than-one | v-see . z-Azawan | d-←more-than-one | v-see
+> z-Azawan | d-some-amount | v-see
 >
-> "Ululon sees several. Azawan sees that many too."
+> "Azawan sees some number of them."
+
+Under question, the same word is the blank: *how many?* ([below](#how-many)).
+
+> `yol zazawan d=+ vejel.`
+>
+> 🔊 *yol zazawan drar vejel.*
+>
+> y-question | z-Azawan | d-how-many | v-see
+>
+> "How many does Azawan see?"
+
+To repeat a number already given, keep at least one digit: `zululon d+3 vejel. zazawan d=+3 vejel.` *Ululon sees three. Azawan sees those three too.*
+
+#### How many? {#how-many}
+
+To ask for a **number**, write a [number word](numbers.md) with no digits and the **-r** ending (written **`=`** after the job letter). That empty number is the blank, the same way `zar` is the blank for *who?* ([fill-ask](questions.md#fill-ask-r)). The marker says which kind of number you want. (cue: **-r** names this member; the marker vowel says count, place, or code)
+
+> `yol zazawan dagadalx g=+ vejel.`
+>
+> 🔊 *yol zazawan dagadalx grar vejel.*
+>
+> y-question | z-Azawan | [d-cat-x | g-how-many] | v-see
+>
+> "How many cats does Azawan see?"
+
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| `g=+` (*grar*) | fill a count or amount | *How many?* / *How much?* | **a** ≈ add |
+| `g=#` (*grer*) | fill a place in order | *Which place?* (*which floor, which chapter*) | **e** ≈ order |
+| `g=_` (*gror*) | fill a code or label | *What number?* (*phone, room*) | **o** ≈ one |
+
+> `yol zululon vajul ol b=#.`
+>
+> 🔊 *yol zululon vajul ol brer.*
+>
+> y-question | z-Ululon | v-sit | [at | b-which-place]
+>
+> "Which place does Ululon sit in?"
+
+Answer with the number as a [citation](word-endings.md#citation-forms) or a full sentence.
+
+**Compare with:** outside a question, the same word is *some number* (`zazawan d=+ vejel.` *Azawan sees some number of them*). To repeat a number already given, keep a digit: `d=+3` ([above](#digitless)).
 
 Other prefixes use the same empty payload (the marker’s identity, no named N). Restrictor **`har`** (*sometimes*) is the [restrictor](restrictors.md).
 
@@ -630,7 +672,7 @@ Same glyphs and jobs as [span-fence marks](spans.md#writing) (**`~`** soft / **`
 | *(none)* | **-l** | exact (default) | `g+3`, `g+`, `g#2`, `d_555,123,4567` |
 | **`~`** | **-m** | approximate / soft | `g~+3`, `g~+`, `g~+27e6`, `g~#2` |
 | **`@`** | **-n** | conventional | `g@#2`, `g@_12` |
-| **`=`** | **-r** | resume | `g=+`, `d=_`, `g=#2` |
+| **`=`** | **-r** | resume (digit) / blank (digitless) | `g=+3`, `g=#2`, `g=+` |
 
 A hedged conventional number (both **`@`** and **`~`**) is written with **`@`** only, as on spans. **`=`** stands alone. Full phonetic spelling with a trailing ending letter (e.g. *grarel*, *gram*) is a pronunciation gloss on free numbers, not preferred in running text.
 
@@ -674,7 +716,8 @@ Prefer shorthand in free slots. Speech is always the full CV form.
 | −3 (object) | `d-3` | *−3* |
 | second (modifier) | `g#2` | *the second* |
 | about 3 | `g~+3` | approximate (**-m**) |
-| that amount again | `g=+` | digitless **-r** resume |
+| how many? / some amount | `g=+` | digitless **-r** blank |
+| that three again | `g=+3` | **-r** resume (needs a digit) |
 | room 12 | `g_12` | digit-string label |
 
 ### Number as verb / adverb / interjection / discourse
@@ -697,7 +740,7 @@ Referential prefixes (`/ɡ/` `/z/` `/d/` `/b/`) keep the marker as a plain amoun
 
 To set a quantity to an absolute value, use an ordinary verb plus the number as argument or adverb. **For *multiply* / *divide*, use:** an ordinary verb plus **`h+N`** / **`h-N`**. With [percentage points](numbers-applied.md#percent-and-percentage-points) (**`yu`**), **`ra`** / **`ru`** as verbs mean increase/decrease by that point amount.
 
-Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume — including [digitless](#digitless) `v=+` / `v=_`, etc.).
+Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume with a digit; digitless `v=+` / `v=_` is a [blank](#digitless)).
 
 #### Number as adverb (by marker) {#number-as-adverb-by-marker}
 
@@ -720,7 +763,7 @@ Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume —
 
 Worked examples: `h+3` *three times*; `h-3` *÷3 / into 3*; `h#3` *for the third time*; `h_15,30` *at 15:30*. Frequency codes sit on a host: `/h/` *on* + `b_101.1`.
 
-Endings still apply (**-m** ≈ *about* that many times / that clock or date, **-r** resume, including digitless `h=+` / `h=_`). Relative %-change factors use **`h+…`** (e.g. ×1.5). See [percent](numbers-applied.md#percent-and-percentage-points).
+Endings still apply (**-m** ≈ *about* that many times / that clock or date, **-r** resume with a digit; digitless `h=+` *how many times?* / `h=_` *when?* is a [blank](#digitless)). Relative %-change factors use **`h+…`** (e.g. ×1.5). See [percent](numbers-applied.md#percent-and-percentage-points).
 
 #### Number as interjection (by marker) {#number-as-interjection-by-marker}
 
@@ -737,7 +780,7 @@ English *Three!* naming a score or count is **`y_`**. *Three more!* (increment t
 
 Worked examples: `y_3` *Three!*; `y+3` *Three more!*; `y-3` *Three short!*; `y#1` *First!*.
 
-Endings still apply (**-m** fuzzy *about three more!*, **-n** conventional call name, **-r** resume a prior shout’s value, including digitless `y=+` / `y=_`).
+Endings still apply (**-m** fuzzy *about three more!*, **-n** conventional call name, **-r** resume a prior shout’s value, with a digit).
 
 **Compare with:** statement / question / command words in the [speech-act section](speech-moves.md#speech-act).
 
@@ -758,7 +801,7 @@ Bare OoM bands keep their band under `/v/` `/h/` `/y/`: **`v+e3`** *increase by 
 
 Worked examples: `x#2` *point 2:*; `x+2` *corroborating 2:*; `x-2` *independent 2:*.
 
-Endings still apply (**-l** newly stated item, **-r** *as in (N) above* or digitless `x=#` / `x=+` / …, **-n** titled item name, **-m** fuzzy *around item N*).
+Endings still apply (**-l** newly stated item, **-r** *as in (N) above* (with a digit; digitless `x=#` is a [blank](#digitless)), **-n** titled item name, **-m** fuzzy *around item N*).
 
 #### Number as stance (by marker) {#number-as-stance-by-marker}
 <a id="likelihood"></a>
@@ -781,7 +824,7 @@ Endings still apply (**-l** newly stated item, **-r** *as in (N) above* or digit
 
 For *30% unlikely*, give the likelihood of the claim itself (`th+70`). **`th-N`** and **`th#N`** are not used.
 
-Endings still apply: **-m** *about* that likelihood (`th~+70` *roughly 70%*), **-n** a conventional level (`th@+95` *at the 95% confidence level*), **-r** *the same likelihood as before* (`th=+`).
+Endings still apply: **-m** *about* that likelihood (`th~+70` *roughly 70%*), **-n** a conventional level (`th@+95` *at the 95% confidence level*), **-r** *the same likelihood as before* (`th=+70`); digitless `th=+` asks *how likely?* under question.
 
 **Compare with:** [evidentiality](knowing.md#evidentiality) says **how** you know; `th_N` says **which** numbered source. [MAY](knowing.md#may) (`thodohom`) says the claim is open without a figure. Pretense *as if* in play or make-believe is [NOTIONAL](knowing.md#notional).
 
@@ -1015,15 +1058,15 @@ x-2nd | z-Ululon | v-run
 *The second big seat.*
 :::
 
-**7.** `zululon d+ vejel. zazawan d=+ vejel.`
+**7.** `yol zululon d=+ vejel.`
 
 ::: details Show answer
 
-🔊 *zululon dral vejel. zazawan drar vejel.*
+🔊 *yol zululon drar vejel.*
 
-z-Ululon | d-more-than-one | v-see . z-Azawan | d-←more-than-one | v-see
+y-question | z-Ululon | d-how-many | v-see
 
-*Ululon sees more than one. Azawan sees that amount again.*
+*How many does Ululon see?*
 :::
 
 **8.** `zuhubun vajul h#3.`
@@ -1404,8 +1447,9 @@ Preferred writing first; the spoken form follows, often with its syllables in pa
 | some negative amount | `z-` | *zrul* |
 | some rank | `g#` | *grel* |
 | some code (object) | `d_` | *drol* |
-| that (prior) scalar again | `g=+` | *grar* (digitless **-r**) |
-| that (prior) code again | `d=_` | *dror* |
+| how many? / some amount | `g=+` | *grar* (digitless **-r**) |
+| which place? / some place | `g=#` | *grer* |
+| what code? / some code | `d=_` | *dror* |
 | increase (unspecified) | `v+` | *vral* |
 | increase a bit | `v~+` | *vram* |
 | multiple times | `h+` | *hral* |

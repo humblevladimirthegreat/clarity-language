@@ -458,7 +458,7 @@ Once whose-now is set, [PREDICT](intention.md#predict) is **after** that now, [P
 >
 > "As of 22 July, Azawan is in a house before the leaving." — books and event-when are different jobs
 
-> `zululon vawalal ol b_#22,7. xululon thonenom helerem b=_ vebarul.`
+> `zululon vawalal ol b_#22,7. xululon thonenom helerem b=_#22,7 vebarul.`
 >
 > z-Ululon | v-walk | [at | b-_22,7] . x-Ululon | th-RESIDUE | [h-as-of.ledger | b-←_22,7] | v-departure
 >

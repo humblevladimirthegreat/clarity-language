@@ -39,6 +39,7 @@ import {
 } from "./gloss-structure.js";
 import { toneMarkLength } from "./span-scan.js";
 import { parseWithTables } from "./parse-core.js";
+import { isDigitlessNumberBlank } from "./resolve.js";
 import { parseWords, WordParseError } from "./word.js";
 import type {
   AnaphorBind,
@@ -68,6 +69,19 @@ const HOUSE_CAST_SHORT: Record<string, string> = {
 
 /** Number writing mark → form suffix (glosses.md § Round trip). */
 const NUMBER_MARK_SUFFIX: Record<string, string> = { "~": ".about", "@": ".named", "=": ".again" };
+
+/** Digitless number **-r** by marker: fill-ask blank under question, else *some number* ([numbers § Digitless](../../docs/grammar/numbers.md#digitless)). */
+const NUMBER_BLANK: Record<string, { ask: string; some: string }> = {
+  "+": { ask: "how-many", some: "some-amount" },
+  "-": { ask: "how-far-below-zero", some: "some-negative-amount" },
+  "#": { ask: "which-place", some: "some-place" },
+  "#-": { ask: "which-place-from-end", some: "some-place-from-end" },
+  _: { ask: "what-code", some: "some-code" },
+};
+
+function numberMarkSuffix(word: LexWord, ctx: MorphGlossContext): string {
+  return NUMBER_MARK_SUFFIX[word.family.kind === "number" ? (word.family.writingEndingMark ?? "") : ""] ?? "";
+}
 
 const VOWEL_RE = /[aeiou]/;
 
@@ -993,8 +1007,12 @@ function sensePieces(
     case "joinMarker":
       return [joinMarkerLabel(word, ctx)];
     case "number":
+      if (isDigitlessNumberBlank(word)) {
+        const blank = NUMBER_BLANK[family.stem.marker];
+        if (blank) return [ctx.fillAsk ? blank.ask : blank.some];
+      }
       return [
-        `${numberLabel(family.stem, word.pos)}${NUMBER_MARK_SUFFIX[family.writingEndingMark ?? ""] ?? ""}` +
+        `${numberLabel(family.stem, word.pos)}${numberMarkSuffix(word, ctx)}` +
           // Spelled-out number word (`grarel`) vs digit shorthand (`g+3`).
           (/^(?:th|[zdbvgwhxyj])?[a-z]+$/.test(word.raw) ? ".spelled" : ""),
       ];

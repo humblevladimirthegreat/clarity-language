@@ -379,6 +379,40 @@ Use **-l** for an invitation, **-m** for an offer, and **-r** for a protective m
 >
 > "Azawan tells: competence is met (physical) and relatedness is the internal motive."
 
+### Thanks and sorry {#thanks-sorry}
+
+Agalan has no set phrase for *thank you*. Say that what the other person did **met your need**: a lone clause `/th/` met word is a whole sentence, and saying it to the one who acted is the thanks. Pick the need that was actually served; the ending says how you appreciate it ([endings on met](#value-contact)). (cue: thanks = *that met my need*)
+
+> `thonogotham.`
+>
+> th-relatedness-met-mental
+>
+> "That meant a lot to me." — *thank you*
+
+> `tholozothal.`
+>
+> th-competence-met-physical
+>
+> "That helped me do it." — *thanks for the hand*
+
+*Sorry* is about **their** need, not yours. A lone unmet word would say *my* need went unmet, so name whose need in `/b/` right after it. The ending is the same [changeability](#value-changeability) as on any unmet word, so it says how serious the harm is. (cue: sorry = *that detracted from your need*)
+
+> `thonogothum bedonen.`
+>
+> [th-relatedness-unmet-modifiable | b-listener]
+>
+> "That hurt your sense of connection." — *I'm sorry*
+
+| Agalan | Use | English |
+|--------|-----|---------|
+| `…thul bedonen` | the harm is lasting | *I'm deeply sorry* |
+| `…thum bedonen` | the harm can be softened (default) | *I'm sorry* |
+| `…thur bedonen` | the harm is passing | *my bad* |
+
+The `/b/` can name anyone: `thonogothum bululon.` owns a harm to Ululon, even when you are telling someone else.
+
+**Compare with:** a met word with a `/b/` person (`thonogotham bululon.`) says the act met **Ululon's** need: *Ululon appreciated it*, not your thanks.
+
 ### Permission (`therenel` / `therenem`) {#permission}
 
 English *may* / *is allowed to* says a restriction is lifted. Put **`therenel`** or **`therenem`** on the clause: stance **`th`** on the root **`erene`** (🟢 *green circle*). The ending says **who lifts the restriction**. Use **-l** when a person grants it; that person is the speaker unless a hosted `/b/` names someone else. Use **-m** when a rule or norm allows it and no one in particular is granting it.

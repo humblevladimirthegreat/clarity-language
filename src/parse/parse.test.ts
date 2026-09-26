@@ -421,10 +421,10 @@ describe("parse — as-of poles", () => {
   });
 
   it("parses extra-noun resume in as-of /b/", () => {
-    const result = parseText("zululon vawalal ol b_#22,7. xululon thonenom helerem b=_ vebarum.");
+    const result = parseText("zululon vawalal ol b_#22,7. xululon thonenom helerem b=_#22,7 vebarum.");
     const second = result.utterances[0]!.bodies[1]!.clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "helerem");
     assert.ok(second && second.kind === "h");
-    assert.equal(second.unit.bound?.raw, "b=_");
+    assert.equal(second.unit.bound?.raw, "b=_#22,7");
   });
 
   it("parses /w/ as-of resume immediately before the adjective", () => {

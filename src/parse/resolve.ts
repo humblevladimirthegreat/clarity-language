@@ -123,6 +123,7 @@ function isQuestionForce(word: LexWord | undefined): boolean {
 }
 
 function isJoinGap(word: LexWord): boolean {
+  if (isDigitlessNumberBlank(word)) return true;
   if (word.ending !== "r" || word.family.kind !== "joinMarker") return false;
   return word.reading === "join" || word.reading === "restrictor";
 }
@@ -163,8 +164,14 @@ function isSpanAnaphor(word: LexWord): boolean {
   return family.kind === "x" && family.xFamily === "span" && word.ending === "r";
 }
 
+/** Digitless number **-r** (`g=+`): *some number*, or a fill-ask blank under question — not a resume (numbers.md#digitless). */
+export function isDigitlessNumberBlank(word: LexWord): boolean {
+  const family = word.family;
+  return family.kind === "number" && word.ending === "r" && family.stem.groups.length === 0 && !family.stem.digitlessExp;
+}
+
 function isNumberAnaphor(word: LexWord): boolean {
-  return word.family.kind === "number" && word.ending === "r";
+  return word.family.kind === "number" && word.ending === "r" && !isDigitlessNumberBlank(word);
 }
 
 function isRoleAnaphor(word: LexWord): boolean {

@@ -18,7 +18,7 @@ English needs a **code**: a phone, room, channel, or serial, not a counted amoun
 >
 > "Azawan sees 555-123-4567."
 
-Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code. Digitless `d=_` / `g=_` and [digitless](numbers.md#digitless) `…_` mean *some code* / an unspecified label.
+Ending is usually **-l** (exact label); **-n** for an official designation; **-r** with a digit resumes a prior code. Digitless `d=_` / `g=_` is *some code*, or *what number?* in a question; digitless **-l** `…_` is an unspecified label ([digitless](numbers.md#digitless)).
 
 **For numeric *plus or minus*, use:** [sign](numbers.md#sign) on a count or ordinal. Labels normally preserve their own written identifier.
 
@@ -44,7 +44,7 @@ Clock and date together:
 | **Calendar date** | Digit-string **`_`** with **`oe`** (spoken **`roe`**, written `h_#…`). Fields: **day, month, optional year** (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as **one digit group** (`2026` is one group). Digitless `h_#` covers an unspecified date. An explicit *date* host + `/b/` is optional when you want to name the relation. |
 | **When-frame** | Ordinary lexicon `/h/` (*until*, *before*, recency), clock/date above, a signed [offset on the channel](knowing.md#dated-channel) (*three hours ago* / *in three hours*), or a closed mood whose **job** locates time ([LIVE](knowing.md#live-vs-memory) / [WITNESSED](knowing.md#live-vs-memory) / [PREDICT](intention.md#predict)). [RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate) do **not** locate time. There is no past/future ending. A numeric payload (*3 days* on a unit) is relation + scalar + unit. |
 
-Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** resume a prior clock or date (digitless `h=_` = *that time/date again*). Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
+Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** resume a prior clock or date with its digits; digitless `h=_` asks *when?* / *what time?* in a question ([digitless](numbers.md#digitless)). Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
 
 For *from … to* with clock times, put each time in `/b/` after the hooks **`ul`** *from* and **`oel`** *toward* ([extra nouns](hooks.md#extra-noun-intermediate)). As with any two extras, keep a non-`/b/` word, such as the verb, between them.
 
@@ -651,6 +651,52 @@ The marker still counts **from the start** or **from the end** inside that cohor
 | **`g#1e-1`** | 1st of generation −1 (often *the parent* when the cohort is singleton-framed) |
 
 `/x/` treats generation as **agenda nesting** (`x#3e2` = *3rd sub-sub-point under the focus*; **`x#e0`** = *current-layer item(s)*). `/h/` / `/v/` / `/y/` inherit the same product (*for the 3rd time in gen +2*, *place 3rd in gen +2*, …) when the series is generation-structured. A flat event count uses **`h#N`**.
+
+#### Kin {#kin-generations}
+
+Generations form a **tree**, like an outline. A cohort is only the members **under the same node**, so the plain forms name close family and never side branches:
+
+- **`g#e-1`** is the layer directly above the focus: the **parents**, not aunts or uncles.
+- **`g#e0`** is the others under the same parent: the **siblings**, not cousins. It never includes the focus.
+- **`g#e1`** / **`g#e2`** are the focus's own **children** / **grandchildren**, not nieces or nephews.
+
+The mantissa is **birth order** within that cohort: **`g#1e0`** is the eldest sibling, **`g#-1e0`** the youngest. To say whose family it is, put the anchor person in `/b/` right after the number. (cue: the number says how far up or down the tree; `/b/` says from whom)
+
+> `zululon g#e0 bazawan vawalal.`
+>
+> 🔊 *zululon grebazol bazawan vawalal.*
+>
+> [z-Ululon | [g-#-e0 | b-Azawan]] | v-walk
+>
+> "Ululon, Azawan's sibling, walks."
+
+> `zululon g#1e0 bazawan vawalal.`
+>
+> 🔊 *zululon grebazoyawol bazawan vawalal.*
+>
+> [z-Ululon | [g-#-1e0 | b-Azawan]] | v-walk
+>
+> "Ululon, Azawan's eldest sibling, walks."
+
+> `zuguhul g#2e1 bazawan vawalal.`
+>
+> 🔊 *zuguhul grebawoyadul bazawan vawalal.*
+>
+> [z-child | [g-#-2e1 | b-Azawan]] | v-walk
+>
+> "Azawan's second child walks."
+
+For a side branch, nest a second anchor: first step to the relative, then from there. *Aunt or uncle* is a sibling of a parent.
+
+> `zululon g#e0 beberel g#1e-1 bazawan vawalal.`
+>
+> 🔊 *zululon grebazol beberel grebuwoyawol bazawan vawalal.*
+>
+> [z-Ululon | [g-#-e0 | [b-person | [g-#-1e-1 | b-Azawan]]]] | v-walk
+>
+> "Ululon, a sibling of Azawan's first parent, walks." — Azawan's aunt or uncle
+
+**Compare with:** friends, bosses, and other non-kin relations are not generations, so these forms do not name them.
 
 ## See also
 

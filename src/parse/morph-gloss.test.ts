@@ -70,6 +70,9 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zol", "z-or-exactly-one");
     expectLine("zel", "z-rank/more");
     expectLine("zael", "z-equal-rank");
+    expectLine("zagadalx g=+ vajul.", "[z-cat-x | g-some-amount] | v-sit");
+    expectLine("yol zagadalx g=+ vajul.", "y-question | [z-cat-x | g-how-many] | v-sit");
+    expectLine("yol zazawan vajul ol b=#.", "y-question | z-Azawan | v-sit | [at | b-which-place]");
     expectLine("zaem", "z-equal-rank.open");
     expectLine("zar", "z-something");
     expectLine("zul", "z-not");

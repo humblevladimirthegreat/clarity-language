@@ -12,10 +12,12 @@ use [skip-cd] for amplify to not deploy.
 
 Prosody
 -confirm amplify build still works
+-confirm we still have chats after rebuild
+-rename values/needs
 -consider removing some emotion words from lexicon
 -expressiveness review
 -do a style pass in grammar-docs. Check for adherence to doc-style and otherwise ensure natural sounding explanations.
--grammar simplification pass: could we remove special overlay forms and re-use existing grammar?
+-grammar simplification pass: could we remove special overlay forms and re-use existing grammar? Could some ending letter tables be aligned?
 
 final exam
 

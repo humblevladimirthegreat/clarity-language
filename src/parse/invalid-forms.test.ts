@@ -81,7 +81,7 @@ const ROWS: Row[] = [
   { invalid: "zululon dagadal.", rejection: "objectNeedsVerb", valid: "zodogol om banabal." },
   { invalid: "zodor vawalal.", rejection: "shortResumeUnbound", valid: "zodogor vawalal." },
   { invalid: "zazawan vawalal hogor.", rejection: "shortResumeUnbound", valid: "zazawan vawalal. zazar vajul." },
-  { invalid: "zazawan g+r.", rejection: "numberResumeUnbound", valid: "zululon g+. zazawan g+r." },
+  { invalid: "zazawan g=+3.", rejection: "numberResumeUnbound", valid: "zululon g+3. zazawan g=+3." },
   { invalid: "zam zadagal zagadal.", rejection: "leftFence", valid: "zadagal zagadal zam." },
   { invalid: "^ ^ zazawan vawalal.", rejection: "emptyIsland", valid: "^ zazawan zululon zam ^ vawalal." },
   { invalid: "^ zazawan ^ vawalal.", rejection: "islandBinder", valid: "^ zazawan zululon zam ^ vawalal." },
