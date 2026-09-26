@@ -50,7 +50,7 @@ A consonant starts a syllable. There is no distinction between voiced and unvoic
 `x` sounds different than English. The rest are familiar. `y` is always a consonant, never a vowel.
 :::
 
-`th` is **one letter** written with two characters. Agalan has no `t`, so `th` never means `t` followed by `h`. At the start of a word it is the [stance](clause.md#stance-th) role letter. Inside a word it starts a syllable like any consonant (in [need](values.md) words and spoken [number groups](numbers.md#group-separator)); it never appears inside a dictionary root.
+`th` is **one letter** written with two characters. Agalan has no `t`, so `th` never means `t` followed by `h`. At the start of a word it is the [stance](clause.md#stance-th) role letter. Inside a word it starts a syllable like any consonant (in [need](interests.md) words and spoken [number groups](numbers.md#group-separator)); it never appears inside a dictionary root.
 
 Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) by [Peter Isotalo](https://commons.wikimedia.org/wiki/User:Peter_Isotalo), except /ɹ/ by [Erutuon](https://commons.wikimedia.org/wiki/File:Alveolar_approximant.ogg).
 
@@ -77,7 +77,7 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Optional `l` after `/ɡ/` | adjective before the noun | `gl-` looks ahead to the next noun |
 | Root(s) **V(CV)+** | content | start with a vowel; each later consonant starts a new syllable |
 | Mid-word `x` | productive compound seam | joins two roots inside one word |
-| Mid-word `th` | viewpoint seam | joins a need to its stance vowel ([values](values.md)) or a direction to whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals)) |
+| Mid-word `th` | viewpoint seam | joins an interest to its stance vowel ([interests](interests.md)) or a direction to whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals)) |
 | Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`abedelohohu` *bedroom*) |
 | `-l` / `-m` / `-n` / `-r` | [word ending](word-endings.md) | audible end of the content word |
 | Optional `-x` | [plural](plurality.md) after the suffix | word-final `-lx` / `-mx` / `-nx` / `-rx` (letter `x`) |

@@ -272,11 +272,11 @@ r/ClarityLanguage fixes this and related errors by requiring the denominator to 
 
 subject stated intention (which were?), believed due to internal factors (like what?), believed due to external factors (like what?), accidental/non-conscious agent. If you don’t know, then give the benefit of the doubt \- bad outcomes are due to external factors, good outcomes are due to internal factors. Make into causality.
 
-/r/ClarityLanguage conjugates verbs based on attribution \- whether the speaker believes that the subject performed the verb due to an intention (internal locus), or whether it was automatically / mindlessly / caused by the environment (external locus; default). If internal, what need was being filled. If external, what was the cause.
+/r/ClarityLanguage conjugates verbs based on attribution \- whether the speaker believes that the subject performed the verb due to an intention (internal locus), or whether it was automatically / mindlessly / caused by the environment (external locus; default). If internal, what interest was being filled. If external, what was the cause.
 
 This serves multiple purposes. When referring to your own actions, you consider whether you are acting with intention and whether you are blaming yourself (for successes or failures). When referring to other people, you consider whether you credit them for their successes or failures. 
 
-When someone makes a mistake, the external locus is a charitable interpretation, which is good for fostering good will and compassion. If they make a mistake and you assign internal locus, it prompts you for wondering what need it was they wanted to fill, which can help you understand. 
+When someone makes a mistake, the external locus is a charitable interpretation, which is good for fostering good will and compassion. If they make a mistake and you assign internal locus, it prompts you for wondering what interest it was they wanted to fill, which can help you understand. 
 
 If someone does something good, external locus means that you credit it with luck. Internal focus means you recognize their agency. 
 
@@ -287,11 +287,11 @@ I’ve come up with a new feeling categorization system for r/claritylanguage. E
 1. Activation (high, neutral, low) \- does the feeling cause you to have high, low, or no change in your energy?  
 2. Locus (internal, external, circumstantial) \-  was the emotion triggered by something that changed in yourself, others, or random/environmental factors?  
 3. Need (various) \- which of your needs (in the [NVC sense](https://www.nycnvc.org/needs/)) are involved?   
-4. Satisfaction (met, unmet) \- is the need being met or unmet?
+4. Satisfaction (met, unmet) \- is the interest being met or unmet?
 
 There would be single words to represent the 9 combinations of activation \+ locus. Each need would be a noun with an affix that signifies met/unmet. 
 
-Each component also implies what should be done. High activation implies you should discharge that energy. Medium activation means you can think about it. Low activation means you need to rest. Internal locus means to change something entirely within your control. External locus means you should change how you interact with somebody/something else. Circumstantial locus means you should either accept, adapt, or remove yourself from the circumstances. A met need suggests you should double-down on the locus. Unmet need means you should drop defenses.
+Each component also implies what should be done. High activation implies you should discharge that energy. Medium activation means you can think about it. Low activation means you need to rest. Internal locus means to change something entirely within your control. External locus means you should change how you interact with somebody/something else. Circumstantial locus means you should either accept, adapt, or remove yourself from the circumstances. A met interest suggests you should double-down on the locus. Unmet need means you should drop defenses.
 
 High-Activation \+ Circumstantial-Locus \+ Unmet Need: Consistency \= **Anxiety**  
 The high activation implies you need to dissipate the energy. Circumstantial locus means you can’t change what’s causing this. Unmet need means you 
@@ -479,7 +479,7 @@ Problems: the number doesn’t actually matter, hard to keep track. Might forget
 
 ### First Person Emotional Intention
 
-In /r/ClarityLanguage I’ve replaced the subject form of the first person pronoun with intention words. Whenever you would use the first person pronoun as a subject (indicating you are performing some action) you instead indicate which emotional need you intend to fulfill with your action. So instead of  “I am about to apologize to him” you might say “\[To fulfill my need for peace, I\] am about to apologize to him.” 
+In /r/ClarityLanguage I’ve replaced the subject form of the first person pronoun with intention words. Whenever you would use the first person pronoun as a subject (indicating you are performing some action) you instead indicate which emotional need you intend to fulfill with your action. So instead of  “I am about to apologize to him” you might say “\[To fulfill my interest for peace, I\] am about to apologize to him.” 
 
 For more details and an example, see [this post](https://www.reddit.com/r/ClarityLanguage/comments/10zc9ry/first_person_emotional_intention/).
 
@@ -586,7 +586,7 @@ While you can get around this by using a word like “nothing” as the silver l
 
 /r/ClarityLanguage has the Intention part of speech, which explains why the speaker is talking. The most common usage for this is to state what (usually emotional) need the speaker wants fulfilled. Examples include “to spread joy”, “to uphold my integrity”, “to foster connection.” 
 
-When speaking, this is helpful so that the listener knows what need the speaker wants fulfilled so the listener can help fulfill it (if desired). It also acts as a way for the speaker to make sure they are saying something they really want to (instead of reacting out of anger). When thinking (with your inner monologue), the intention word helps the thinker consider why they are doing something, and to do so with intention.
+When speaking, this is helpful so that the listener knows what interest the speaker wants fulfilled so the listener can help fulfill it (if desired). It also acts as a way for the speaker to make sure they are saying something they really want to (instead of reacting out of anger). When thinking (with your inner monologue), the intention word helps the thinker consider why they are doing something, and to do so with intention.
 
 ### Unstated Premises
 

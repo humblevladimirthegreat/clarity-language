@@ -1,40 +1,40 @@
-# Values (`/ɡ/` / `/th/` / `/w/`)
+# Interests (`/ɡ/` / `/th/` / `/w/`)
 <a id="values"></a>
 <a id="value-ascription"></a>
 
-A **need** is a psychological payoff you can name (autonomy, competence, relatedness, pleasure, survival, or an unspecified need). At **Beginner**, a **stance** is how you stand toward that need on a **noun**: it **serves** the need or **detracts from** it. **Intermediate** adds **prescription** on the clause (deontic: the agent **ought to** do this act for this need) and **motive** (*doing for* the need).
+An **interest** is something that is good for a person, a psychological payoff you can name (autonomy, competence, relatedness, pleasure, survival, or an unspecified interest). It means *what is in your interest*, not curiosity, and an unmet interest is a cost to name, not a lack in you. At **Beginner**, a **stance** is how you stand toward that interest on a **noun**: it **serves** the interest or **detracts from** it. **Intermediate** adds **prescription** on the clause (deontic: the agent **ought to** do this act for this interest) and **motive** (*doing for* the interest).
 
 ## Beginner {#beginner}
 
-Write the need under `/ɡ/` when you talk about a **noun you keep** (how you feel about that belonging). Write it under `/th/` when you talk about the **clause**. When the noun is not yours, [personal possession](#personal-possession) shows how to point at it instead.
+Write the interest under `/ɡ/` when you talk about a **noun you keep** (how you feel about that belonging). Write it under `/th/` when you talk about the **clause**. When the noun is not yours, [personal possession](#personal-possession) shows how to point at it instead.
 
-### Need inventory {#need-inventory}
+### Interest inventory {#interest-inventory}
 
-Six published roots are the needs you can name, and no other root takes the need form. Pick one row. With mid-word **`th`** and a stance vowel, that root means the need in the English column — not the everyday object in **Same root as**.
+Six published roots are the interests you can name, and no other root takes the interest form. Pick one row. With mid-word **`th`** and a stance vowel, that root means the interest in the English column — not the everyday object in **Same root as**.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`alodo`** | autonomy need | *autonomy* (choice, agency, self-direction) | `alodol` *ballot-box* | 🗳️: voting is choosing for yourself |
-| **`olozo`** | competence need | *competence* (efficacy, skill, getting things to work) | `olozol` *toolbox* | 🧰: the kit that gets things working |
-| **`onogo`** | relatedness need | *relatedness* (connection, belonging, care) | `onogol` *knot* | 🪢: ties people together |
-| **`awero`** | pleasure need | *pleasure* (enjoyment, comfort, aesthetic payoff) | `awerol` *strawberry* | 🍓: sweetness you enjoy |
-| **`uhuhe`** | survival need | *survival* (safety, health, material sufficiency) | `uhuhel` *shield* | 🛡️: what keeps you safe |
-| **`ege`** | a need without picking among the five | *unspecified need* | `egel` *egg* | 🥚: not yet a specific kind |
+| **`alodo`** | autonomy interest | *autonomy* (choice, agency, self-direction) | `alodol` *ballot-box* | 🗳️: voting is choosing for yourself |
+| **`olozo`** | competence interest | *competence* (efficacy, skill, getting things to work) | `olozol` *toolbox* | 🧰: the kit that gets things working |
+| **`onogo`** | relatedness interest | *relatedness* (connection, belonging, care) | `onogol` *knot* | 🪢: ties people together |
+| **`awero`** | pleasure interest | *pleasure* (enjoyment, comfort, aesthetic payoff) | `awerol` *strawberry* | 🍓: sweetness you enjoy |
+| **`uhuhe`** | survival interest | *survival* (safety, health, material sufficiency) | `uhuhel` *shield* | 🛡️: what keeps you safe |
+| **`ege`** | an interest without picking among the five | *unspecified interest* | `egel` *egg* | 🥚: not yet a specific kind |
 
-**Compare with:** `zalodol` is a *ballot box*. `galodol` is ballot-box-like. Under `/ɡ/` with **`tha`** / **`thu`**, **`alodo`** is the *autonomy* need.
+**Compare with:** `zalodol` is a *ballot box*. `galodol` is ballot-box-like. Under `/ɡ/` with **`tha`** / **`thu`**, **`alodo`** is the *autonomy* interest.
 
-**Compare with:** *when* / *always* / *never* on `/h/` is a [restrictor](restrictors.md). This page names a **need**.
+**Compare with:** *when* / *always* / *never* on `/h/` is a [restrictor](restrictors.md). This page names a **interest**.
 
-### Met (`tha`): serves the need
+### Met (`tha`): serves the interest
 
-When you want to say that a named belonging **serves** this need (pays it off), write that thing as a noun, then a `/ɡ/` word: need root, mid-word **`th`**, **`a`**, then an ending. That adjective is about the noun. The ending says how that payoff is **appreciated**.
+When you want to say that a named belonging **serves** this interest (pays it off), write that thing as a noun, then a `/ɡ/` word: interest root, mid-word **`th`**, **`a`**, then an ending. That adjective is about the noun. The ending says how that payoff is **appreciated**.
 
-**Not the same job as:** [ability](intention.md#ability) (*can sing*, taught later). Ability glues an activity to its vowel with **`x`**. Values glue a **need** with **`th`**, and **`tha`** means *serves this need*.
+**Not the same job as:** [ability](intention.md#ability) (*can sing*, taught later). Ability glues an activity to its vowel with **`x`**. Interest words glue a **interest** with **`th`**, and **`tha`** means *serves this interest*.
 
 ### How it is appreciated (endings on met)
 <a id="value-contact"></a>
 
-On a *serves* word, **-l / -m / -r** say **how the payoff is appreciated**: through body and the scene you can sense, through thinking or memory, or through a big-picture step-back. Those are ways of appreciating the payoff, not a ranking. Relatedness *between people* is still the need **`onogo`**.
+On a *serves* word, **-l / -m / -r** say **how the payoff is appreciated**: through body and the scene you can sense, through thinking or memory, or through a big-picture step-back. Those are ways of appreciating the payoff, not a ranking. Relatedness *between people* is still the interest **`onogo`**.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -60,10 +60,10 @@ On a *serves* word, **-l / -m / -r** say **how the payoff is appreciated**: thro
 >
 > "My book serves competence (appreciated mentally)."
 
-### Unmet (`thu`): detracts from the need
+### Unmet (`thu`): detracts from the interest
 <a id="value-changeability"></a>
 
-When you want to say a named belonging **detracts from** this need, write that thing as a noun, then a `/ɡ/` word: need root, mid-word **`th`**, **`u`**, then an ending.
+When you want to say a named belonging **detracts from** this interest, write that thing as a noun, then a `/ɡ/` word: interest root, mid-word **`th`**, **`u`**, then an ending.
 
 That ending is **changeability**: how lasting that detriment is. If you do not know, use **-m**.
 
@@ -82,25 +82,25 @@ That ending is **changeability**: how lasting that detriment is. If you do not k
 ### Word shape {#word-shape}
 <a id="value-stake"></a>
 
-A values word is a need root with mid-word **`th`**, a stance vowel, and an ending. `/ɡ/` talks about a **noun you keep**; `/th/` talks about the **clause**. An unowned noun uses a [stimulus](#stimulus) word, with the same need word on `/w/` immediately before it.
+A interest word is a interest root with mid-word **`th`**, a stance vowel, and an ending. `/ɡ/` talks about a **noun you keep**; `/th/` talks about the **clause**. An unowned noun uses a [stimulus](#stimulus) word, with the same interest word on `/w/` immediately before it.
 
 **-n** is ordinary [proper](word-endings.md#proper-name--n). **-l / -m / -r** follow that stance’s table.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`tha`** | the belonging pays off this need | *serves* / *met* | **a** ≈ add (the payoff is in) |
-| **`thu`** | the belonging subtracts from this need | *detracts from* / *unmet* | **u** ≈ undo (the need is taken down) |
+| **`tha`** | the belonging pays off this interest | *serves* / *met* | **a** ≈ add (the payoff is in) |
+| **`thu`** | the belonging subtracts from this interest | *detracts from* / *unmet* | **u** ≈ undo (the interest is taken down) |
 
-**Intermediate** adds **`the`** (*ought this act for this need*) and **`tho`** (*doing for this need*). See [prescription](#value-force) and [motive](#value-preference).
+**Intermediate** adds **`the`** (*ought this act for this interest*) and **`tho`** (*doing for this interest*). See [prescription](#value-force) and [motive](#value-preference).
 
-A word with no **`th`** is not a values word: `galodol` is still ballot-box-like; `hawerol` is still strawberry as an adverb.
+A word with no **`th`** is not a interest word: `galodol` is still ballot-box-like; `hawerol` is still strawberry as an adverb.
 
 ### Personal possession {#personal-possession}
 <a id="stimulus"></a>
 
-A need on `/ɡ/` means the noun is **yours** (speaker possession) and the need is how you stand toward that belonging. That shortcut puts gratitude and unmet on the things you already name as *my X*, so the stance is cheap to say. Ownership without a need is still `goborum` plus `/b/` ([joins](joins.md#scope-fence-p-join)). Someone else’s thing uses that pair, not a bare `/ɡ/` need.
+An interest on `/ɡ/` means the noun is **yours** (speaker possession) and the interest is how you stand toward that belonging. That shortcut puts gratitude and unmet on the things you already name as *my X*, so the stance is cheap to say. Ownership without an interest is still `goborum` plus `/b/` ([joins](joins.md#scope-fence-p-join)). Someone else’s thing uses that pair, not a bare `/ɡ/` need.
 
-When the noun is **not** yours (weather, a gathering, another person’s church), write the need on `/w/` immediately before **`gobobum`**. `/w/` here is the same met / unmet word you already use on `/ɡ/`; it details the stimulus adjective. (cue: ☝️ *point*: you point at the thing; you do not hold it)
+When the noun is **not** yours (weather, a gathering, another person’s church), write the interest on `/w/` immediately before **`gobobum`**. `/w/` here is the same met / unmet word you already use on `/ɡ/`; it details the stimulus adjective. (cue: ☝️ *point*: you point at the thing; you do not hold it)
 
 > `zazegem walodothur gobobum.`
 >
@@ -108,11 +108,11 @@ When the noun is **not** yours (weather, a gathering, another person’s church)
 >
 > "The gathering detracts from autonomy right now (temporary)."
 
-Ordinary `zobobul` is still *emphasis*. Bare **`gobobum`** with no `/w/` need does not ascribe a need. An episode (*this raining, this telling*) still uses `/th/` on the clause, possessed or not.
+Ordinary `zobobul` is still *emphasis*. Bare **`gobobum`** with no `/w/` interest does not ascribe an interest. An episode (*this raining, this telling*) still uses `/th/` on the clause, possessed or not.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`gobobum`** | unowned noun as need-target | *as stimulus* | `obobul` *emphasis* | ☝️: you point at it rather than keep it |
+| **`gobobum`** | unowned noun as interest-target | *as stimulus* | `obobul` *emphasis* | ☝️: you point at it rather than keep it |
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -139,7 +139,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *relatedness* | `onogol` | `onogol` *knot* |
 | *pleasure* | `awerol` | `awerol` *strawberry* |
 | *survival* | `uhuhel` | `uhuhel` *shield* |
-| *need* | `egel` | `egel` *egg* |
+| *interest* | `egel` | `egel` *egg* |
 
 #### English → Agalan {#beginner-english-to-agalan}
 
@@ -175,12 +175,12 @@ z-wind | [w-relatedness-unmet-temporary | g-stimulus]
 z-fire | [w-survival-unmet-irreversible | g-stimulus]
 :::
 
-**5.** *My flashlight serves an unspecified need (appreciated physically).*
+**5.** *My flashlight serves an unspecified interest (appreciated physically).*
 
 ::: details Show answer
 `zavazul gegethal.`
 
-z-flashlight | g-need-met-physical
+z-flashlight | g-interest-met-physical
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
@@ -189,9 +189,9 @@ z-flashlight | g-need-met-physical
 
 ::: details Show answer
 
-z-tent | g-need-met-physical
+z-tent | g-interest-met-physical
 
-*My tent serves an unspecified need (appreciated physically).*
+*My tent serves an unspecified interest (appreciated physically).*
 :::
 
 **2.** `zavazul golozothal.`
@@ -243,7 +243,7 @@ z-fire | [w-autonomy-unmet-irreversible | g-stimulus]
 
 ### Emotion compose {#emotion-compose}
 
-When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: a [value](#values) on the situation, how activated the charge is, and where you put it. Put the value on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](#stimulus) **`gobobum`** when the noun is not yours, then **one ACT** and **one LOCUS** as `/th/` (or `/w/` immediately before that adjective). You can then say the take without smuggling a single emotion word.
+When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: an [interest stance](#values) on the situation, how activated the charge is, and where you put it. Put the value on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](#stimulus) **`gobobum`** when the noun is not yours, then **one ACT** and **one LOCUS** as `/th/` (or `/w/` immediately before that adjective). You can then say the take without smuggling a single emotion word.
 
 > `zezehel wolozothur gobobum thogegam thanedem.`
 >
@@ -281,29 +281,29 @@ Under `/z/` or `/v/` the ordinary noun or verb uses the published literal ending
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
 
-**Compare with:** *could be* uses [MAY](knowing.md#may) (`odoho`). This stack is value + activation + locus.
+**Compare with:** *could be* uses [MAY](knowing.md#may) (`odoho`). This stack is interest + activation + locus.
 
 
-### Prescription (`the`): ought this act for this need
+### Prescription (`the`): ought this act for this interest
 <a id="value-force"></a>
 
-When English puts *should* / *ought to* on the **doing** for a named need (*Uhubun ought to sing to serve survival*), put `/th/` on the clause: need root, mid-word **`th`**, **`e`**, then an ending. The **host verb** names the act that ought to count toward the need. Prescription **`the`** gives the clause **deontic** force: you are stating obligation, not reporting that the act is already happening.
+When English puts *should* / *ought to* on the **doing** for a named interest (*Uhubun ought to sing to serve survival*), put `/th/` on the clause: interest root, mid-word **`th`**, **`e`**, then an ending. The **host verb** names the act that ought to count toward the interest. Prescription **`the`** gives the clause **deontic** force: you are stating obligation, not reporting that the act is already happening.
 
-That ending says why you think a move is welcome. Use **-l** when the person invited this move, explicitly or through a clear standing invitation. Use **-m** for an unsolicited offer meant to serve the need. Use **-r** for an unsolicited protective move meant to prevent detriment to the need. These endings describe the move's warrant and aim, not whether it succeeds. How firmly you put the act on the addressee stays on `/y/` (**`yel`** / **`yem`**, **`yal`** / **`yam`**). If no such warrant applies, drop **`the`**.
+That ending says why you think a move is welcome. Use **-l** when the person invited this move, explicitly or through a clear standing invitation. Use **-m** for an unsolicited offer meant to serve the interest. Use **-r** for an unsolicited protective move meant to prevent detriment to the interest. These endings describe the move's warrant and aim, not whether it succeeds. How firmly you put the act on the addressee stays on `/y/` (**`yel`** / **`yem`**, **`yal`** / **`yam`**). If no such warrant applies, drop **`the`**.
 
 **Unlike** [MAY](knowing.md#may) (`thodohom`): the host verb stays ordinary content there and the event is still *could be*. With **`the`**, the same host verb is the **ought-to** act, not a simultaneous performance claim.
 
-**Compare with:** [command](speech-moves.md#speech-act-beginner) **`yel`** instructs an act outright without naming the need or why a move is wanted. **`the`** is need-linked deontic: *ought to advance this need*, with that warrant on the ending.
+**Compare with:** [command](speech-moves.md#speech-act-beginner) **`yel`** instructs an act outright without naming the interest or why a move is wanted. **`the`** is interest-linked deontic: *ought to advance this interest*, with that warrant on the ending.
 
-**Compare with:** [predict](intention.md#predict) (`thelezo` …) when English *should* is really a **forecast** about what will pay off the need, or when you want both *is doing* and a norm on that doing — not prescription deontic. For a plain performance report, drop **`the`** and assert the verb alone.
+**Compare with:** [predict](intention.md#predict) (`thelezo` …) when English *should* is really a **forecast** about what will pay off the interest, or when you want both *is doing* and a norm on that doing — not prescription deontic. For a plain performance report, drop **`the`** and assert the verb alone.
 
-**Compare with:** [motive](#value-preference) **`tho`** plus a [request](speech-moves.md#speech-act) **`yem`** when the speaker wants **their own** need served. **`the`** is advice about the need named on this word.
+**Compare with:** [motive](#value-preference) **`tho`** plus a [request](speech-moves.md#speech-act) **`yem`** when the speaker wants **their own** interest served. **`the`** is advice about the interest named on this word.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…thel` | the person invited this kind of move | *invited* | **-l** ≈ locked to the invitation |
-| `…them` | an unsolicited offer meant to serve the need | *offered* | **-m** ≈ open offer |
-| `…ther` | an unsolicited move meant to prevent detriment to the need | *protective* | **-r** ≈ resume safety |
+| `…them` | an unsolicited offer meant to serve the interest | *offered* | **-m** ≈ open offer |
+| `…ther` | an unsolicited move meant to prevent detriment to the interest | *protective* | **-r** ≈ resume safety |
 
 > `zazawan vezehel thonogothem.`
 >
@@ -326,7 +326,7 @@ That ending says why you think a move is welcome. Use **-l** when the person inv
 ### Motive (`tho`): preference standing
 <a id="value-preference"></a>
 
-English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the need root, mid-word **`th`**, **`o`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or from protecting against something that detracts from the need. If you do not know the standing, use **-m**. **-n** is ordinary [proper](word-endings.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…thom`** plus **`hual`**).
+English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the interest root, mid-word **`th`**, **`o`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or from protecting against something that detracts from the interest. If you do not know the standing, use **-m**. **-n** is ordinary [proper](word-endings.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…thom`** plus **`hual`**).
 
 > `zazawan vezehel thonogothom.`
 >
@@ -334,7 +334,7 @@ English *have to* / *need to* / *doing this for…* often names a **motive**: wh
 >
 > "Azawan tells for relatedness (internal reason)."
 
-**Not the same job as:** prescription **`the`** (*this act ought* to serve or protect this need). **`tho`** describes *doing for this need*. On `/ɡ/`, the same stance is **your** noun’s purpose (*my gift for relatedness*). *Walks so that Ululon sits* is an intended **event** ([so that](dependents.md#so-that), **`holalam`**), not a need. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`huhanem`). *Tells on behalf of Ululon* is [proxy](relations.md#proxy) (`hudagam`).
+**Not the same job as:** prescription **`the`** (*this act ought* to serve or protect this interest). **`tho`** describes *doing for this interest*. On `/ɡ/`, the same stance is **your** noun’s purpose (*my gift for relatedness*). *Walks so that Ululon sits* is an intended **event** ([so that](dependents.md#so-that), **`holalam`**), not an interest. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`huhanem`). *Tells on behalf of Ululon* is [proxy](relations.md#proxy) (`hudagam`).
 
 **-l** and **-m** are approach-framed; **-r** is guard-framed.
 
@@ -351,8 +351,8 @@ Beginner already used *serves* and *detracts from*. Intermediate adds *ought thi
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`tha`** | [how it is appreciated](#value-contact) endings | *serves* / *met* | **a** ≈ add |
-| **`the`** | [invited / offered / protective](#value-force) endings | *ought this act for this need* | **e** ≈ order (instruct / ought) |
-| **`tho`** | [preference standing](#value-preference) endings | *doing for this need* | **o** ≈ one (one need as the reason) |
+| **`the`** | [invited / offered / protective](#value-force) endings | *ought this act for this interest* | **e** ≈ order (instruct / ought) |
+| **`tho`** | [preference standing](#value-preference) endings | *doing for this interest* | **o** ≈ one (one interest as the reason) |
 | **`thu`** | [changeability](#value-changeability) endings | *detracts from* / *unmet* | **u** ≈ undo |
 
 ### Attachment sites
@@ -361,17 +361,17 @@ Beginner already attached `/ɡ/` after a noun and `/th/` on the clause for met a
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `g…tha…` after a noun | praise: **your** noun serves the need | *my gift (serves relatedness)* (`gonogotha…`) |
-| `g…thu…` after a noun | criticism: **your** noun detracts from the need | *my book (detracts from competence)* (`golozothu…`) |
-| `g…tho…` after a noun | **your** noun’s purpose is this need | *my gift for relatedness* (`gonogotho…`) |
-| `/w/` need + `gobobum` | the same stances on a noun that is **not** yours | *the gathering (detracts from autonomy)* (`walodothu… gobobum`) |
-| `gl-` + value | the same adjective before the **belonging** | `glonogothal zawaral` |
-| `th…tha…` on the clause | the event serves the need | *tells: competence is met* (`tholozotha…`) |
-| `th…the…` on the clause | deontic prescription | *ought … for this need* (`thonogothe…`); ending = [invited / offered / protective](#value-force) |
+| `g…tha…` after a noun | praise: **your** noun serves the interest | *my gift (serves relatedness)* (`gonogotha…`) |
+| `g…thu…` after a noun | criticism: **your** noun detracts from the interest | *my book (detracts from competence)* (`golozothu…`) |
+| `g…tho…` after a noun | **your** noun’s purpose is this interest | *my gift for relatedness* (`gonogotho…`) |
+| `/w/` interest + `gobobum` | the same stances on a noun that is **not** yours | *the gathering (detracts from autonomy)* (`walodothu… gobobum`) |
+| `gl-` + interest word | the same adjective before the **belonging** | `glonogothal zawaral` |
+| `th…tha…` on the clause | the event serves the interest | *tells: competence is met* (`tholozotha…`) |
+| `th…the…` on the clause | deontic prescription | *ought … for this interest* (`thonogothe…`); ending = [invited / offered / protective](#value-force) |
 | `th…tho…` on the clause | motive | *Azawan … (for relatedness)* (`thonogotho…`) |
-| `/w/` before a value `/ɡ/` | extra detail on that adjective | *very relatedness-serving* |
+| `/w/` before an interest `/ɡ/` | extra detail on that adjective | *very relatedness-serving* |
 
-Use **-l** for an invitation, **-m** for an offer, and **-r** for a protective move. Prefer **-m** on **`thu` / `tho`** when that table’s dimension is unclear. Several values are several `/ɡ/` or `/th/` words (`golozothal gonogothal`), not stacked `th`-additions on one need. The **host** noun or verb carries concrete vs abstract sense. `/w/` before a **need** `/ɡ/` grades that adjective; `/w/` immediately before **`gobobum`** is the need.
+Use **-l** for an invitation, **-m** for an offer, and **-r** for a protective move. Prefer **-m** on **`thu` / `tho`** when that table’s dimension is unclear. Several interests are several `/ɡ/` or `/th/` words (`golozothal gonogothal`), not stacked `th`-additions on one interest. The **host** noun or verb carries concrete vs abstract sense. `/w/` before a **interest** `/ɡ/` grades that adjective; `/w/` immediately before **`gobobum`** is the interest.
 
 > `zazawan vezehel tholozothal thonogothom.`
 >
@@ -381,7 +381,7 @@ Use **-l** for an invitation, **-m** for an offer, and **-r** for a protective m
 
 ### Thanks and sorry {#thanks-sorry}
 
-Agalan has no set phrase for *thank you*. Say that what the other person did **met your need**: a lone clause `/th/` met word is a whole sentence, and saying it to the one who acted is the thanks. Pick the need that was actually served; the ending says how you appreciate it ([endings on met](#value-contact)). (cue: thanks = *that met my need*)
+Agalan has no set phrase for *thank you*. Say that what the other person did **met your interest**: a lone clause `/th/` met word is a whole sentence, and saying it to the one who acted is the thanks. Pick the interest that was actually served; the ending says how you appreciate it ([endings on met](#value-contact)). (cue: thanks = *that met my interest*)
 
 > `thonogotham.`
 >
@@ -395,7 +395,7 @@ Agalan has no set phrase for *thank you*. Say that what the other person did **m
 >
 > "That helped me do it." — *thanks for the hand*
 
-*Sorry* is about **their** need, not yours. A lone unmet word would say *my* need went unmet, so name whose need in `/b/` right after it. The ending is the same [changeability](#value-changeability) as on any unmet word, so it says how serious the harm is. (cue: sorry = *that detracted from your need*)
+*Sorry* is about **their** interest, not yours. A lone unmet word would say *my* interest went unmet, so name whose interest in `/b/` right after it. The ending is the same [changeability](#value-changeability) as on any unmet word, so it says how serious the harm is. (cue: sorry = *that detracted from your interest*)
 
 > `thonogothum bedonen.`
 >
@@ -411,7 +411,7 @@ Agalan has no set phrase for *thank you*. Say that what the other person did **m
 
 The `/b/` can name anyone: `thonogothum bululon.` owns a harm to Ululon, even when you are telling someone else.
 
-**Compare with:** a met word with a `/b/` person (`thonogotham bululon.`) says the act met **Ululon's** need: *Ululon appreciated it*, not your thanks.
+**Compare with:** a met word with a `/b/` person (`thonogotham bululon.`) says the act met **Ululon's** interest: *Ululon appreciated it*, not your thanks.
 
 ### Permission (`therenel` / `therenem`) {#permission}
 
@@ -446,7 +446,7 @@ The negatives **`thononel`** / **`thononem`** use the root **`onone`** (⛔ *no 
 
 To **ask** for permission, put the clause under [ask](questions.md#question): `yom zSELFn vajul therenel.` (*May I sit?*). Grant it with [**`yaol.`**](questions.md#polar-stance) (*go ahead*).
 
-**Compare with:** [prescription](#value-force) **`the`** says the act *ought* to serve a need; permission only says the act is *allowed*. [Ability](intention.md#incapability) says someone *can* do it; permission says whether they *may*.
+**Compare with:** [prescription](#value-force) **`the`** says the act *ought* to serve an interest; permission only says the act is *allowed*. [Ability](intention.md#incapability) says someone *can* do it; permission says whether they *may*.
 
 ### Consent (`thuxerenel` / `thuxerenem`) {#consent}
 

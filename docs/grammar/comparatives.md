@@ -613,20 +613,20 @@ Single-item `zazawan zuel gomonam` is *the least challenging* in the group in pl
 | `zugobon zoloben zuel gomonam` | I am less challenging than Everyone |
 | `zugobon zululon zuel guzunul` | I am less skilled at singing than **Ululon** (ordinary person comparee) |
 
-### Need benchmarks (*enough* / *too*) {#need-benchmarks}
+### Interest benchmarks (*enough* / *too*) {#interest-benchmarks}
 
-English *enough* and *too* compare against **what a need requires**. Agalan names that bar like the others: the [need root](values.md#need-inventory) plus **-n**. The bar is the **speaker's** need unless you say otherwise.
+English *enough* and *too* compare against **what an interest requires**. Agalan names that bar like the others: the [interest root](interests.md#interest-inventory) plus **-n**. The bar is the **speaker's** need unless you say otherwise.
 
 | Agalan | Use | English | Same root as |
 |---------|-----|---------|----------------|
-| **`zegen`** | need bar, need not named | *Needed* (what is needed) | `egel` *egg* |
-| **`zuhuhen`** | survival need bar | *what safety needs* | `uhuhel` *shield* |
-| **`zonogon`** | relatedness need bar | *what connection needs* | `onogol` *knot* |
-| **`zolozon`** | competence need bar | *what getting it done needs* | `olozol` *toolbox* |
-| **`zalodon`** | autonomy need bar | *what choice needs* | `alodol` *ballot-box* |
-| **`zaweron`** | pleasure need bar | *what enjoyment needs* | `awerol` *strawberry* |
+| **`zegen`** | interest bar, need not named | *Needed* (what is needed) | `egel` *egg* |
+| **`zuhuhen`** | survival interest bar | *what safety needs* | `uhuhel` *shield* |
+| **`zonogon`** | relatedness interest bar | *what connection needs* | `onogol` *knot* |
+| **`zolozon`** | competence interest bar | *what getting it done needs* | `olozol` *toolbox* |
+| **`zalodon`** | autonomy interest bar | *what choice needs* | `alodol` *ballot-box* |
+| **`zaweron`** | pleasure interest bar | *what enjoyment needs* | `awerol` *strawberry* |
 
-Tie **`ae`** against a need bar is *enough*. Rank **`e`** is *too much*, and **`ue`** is *not enough*.
+Tie **`ae`** against a interest bar is *enough*. Rank **`e`** is *too much*, and **`ue`** is *not enough*.
 
 > `zadedal zegen zael g+.`
 >
@@ -646,11 +646,11 @@ Tie **`ae`** against a need bar is *enough*. Rank **`e`** is *too much*, and **`
 >
 > "There is not enough tea."
 
-With a quality as the scale, the same pattern gives *too ADJ* and *ADJ enough*. A specific need bar says which need sets the limit.
+With a quality as the scale, the same pattern gives *too ADJ* and *ADJ enough*. A specific interest bar says which interest sets the limit.
 
 > `zadedal zuhuhen zel gohodol.`
 >
-> [z-tea | z-Survival-need | z-rank/more | g-hot]
+> [z-tea | z-Survival-interest | z-rank/more | g-hot]
 >
 > "The tea is too hot to be safe."
 
@@ -662,7 +662,7 @@ To say **whose** need it is, put that person in `/b/` right after the shared sca
 >
 > "There is enough tea for Ululon."
 
-**Compare with:** **`zuroron`** (*my standard*) is what the speaker **prefers**. **`zegen`** is what the need **requires**. `zadedal zuroron zel g+` is *more tea than I like*, and `zadedal zegen zel g+` is *more tea than is needed*.
+**Compare with:** **`zuroron`** (*my standard*) is what the speaker **prefers**. **`zegen`** is what the interest **requires**. `zadedal zuroron zel g+` is *more tea than I like*, and `zadedal zegen zel g+` is *more tea than is needed*.
 
 ### Vague amounts (*many* / *few*) {#vague-amounts}
 
@@ -691,7 +691,7 @@ English *many* and *few* compare against an unstated baseline. Agalan always nam
 | *many* / *few* (for here) | **`zahaman`** *Typical* |
 | *a lot* / *not many* (on average) | **`zonunan`** *Average* |
 | *too many* / *too few* (to my taste) | **`zuroron`** *my standard* |
-| *too much* / *enough* / *not enough* | **`zegen`** or a specific need bar |
+| *too much* / *enough* / *not enough* | **`zegen`** or a specific interest bar |
 
 The bar is never dropped. A single-item `zagadalx zel g+` already means *the most cats* (a [superlative](#superlatives)).
 
@@ -722,11 +722,11 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *challenge* | `gomonam` | |
 | *as-of.ledger* | `welerem` | |
 | *Needed* | `egen` | `egel` *egg* |
-| *Survival-need* | `uhuhen` | `uhuhel` *shield* |
-| *Relatedness-need* | `onogon` | `onogol` *knot* |
-| *Competence-need* | `olozon` | `olozol` *toolbox* |
-| *Autonomy-need* | `alodon` | `alodol` *ballot-box* |
-| *Pleasure-need* | `aweron` | `awerol` *strawberry* |
+| *Survival-interest* | `uhuhen` | `uhuhel` *shield* |
+| *Relatedness-interest* | `onogon` | `onogol` *knot* |
+| *Competence-interest* | `olozon` | `olozol` *toolbox* |
+| *Autonomy-interest* | `alodon` | `alodol` *ballot-box* |
+| *Pleasure-interest* | `aweron` | `awerol` *strawberry* |
 | *artistry* | `abadum` | `abadul` *paintbrush* |
 
 #### English → Agalan {#advanced-english-to-agalan}
@@ -792,7 +792,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 ::: details Show answer
 `zuhubun zuhuhen zel gohohom.`
 
-[z-Uhubun | z-Survival-need | z-rank/more | g-showmanship]
+[z-Uhubun | z-Survival-interest | z-rank/more | g-showmanship]
 :::
 
 **9.** *Ululon sings less than connection needs.*
@@ -800,7 +800,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 ::: details Show answer
 `zululon zonogon zuel guzunul.`
 
-[z-Ululon | z-Relatedness-need | z-rank/less | g-sing]
+[z-Ululon | z-Relatedness-interest | z-rank/less | g-sing]
 :::
 
 #### Agalan → English {#advanced-agalan-to-english}
@@ -863,7 +863,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 
 ::: details Show answer
 
-[z-Azawan | z-Competence-need | z-equal-rank | g-sing]
+[z-Azawan | z-Competence-interest | z-equal-rank | g-sing]
 
 *Azawan sings well enough to get the job done.*
 :::
@@ -872,7 +872,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 
 ::: details Show answer
 
-[z-Uhubun | z-Autonomy-need | z-rank/more | g-showmanship]
+[z-Uhubun | z-Autonomy-interest | z-rank/more | g-showmanship]
 
 *Uhubun is showier than free choice needs.*
 :::
@@ -881,7 +881,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 
 ::: details Show answer
 
-[z-Ululon | z-Pleasure-need | z-rank/less | g-artistry]
+[z-Ululon | z-Pleasure-interest | z-rank/less | g-artistry]
 
 *Ululon has less artistry than enjoyment needs.*
 :::

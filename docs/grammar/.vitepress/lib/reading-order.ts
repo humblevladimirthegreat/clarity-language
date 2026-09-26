@@ -19,7 +19,7 @@ export const readingOrder = [
   { text: 'Numbers', link: '/numbers' },
   { text: 'Comparatives', link: '/comparatives' },
   { text: 'Causation', link: '/causation' },
-  { text: 'Values', link: '/values' },
+  { text: 'Interests', link: '/interests' },
   { text: 'Knowing', link: '/knowing' },
   { text: 'Role compounds', link: '/roles' },
   { text: 'x-compounds', link: '/x-compounds' },

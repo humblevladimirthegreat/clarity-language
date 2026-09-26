@@ -138,12 +138,12 @@ describe("inspectText", () => {
     assert.match(token.gloss, /leave/i);
   });
 
-  it("Why distinguishes values from role compounds", () => {
+  it("Why distinguishes interests from role compounds", () => {
     const value = inspectText("thalodothal", tables).tokens[0];
     assert.equal(value?.kind, "word");
     if (value?.kind !== "word") return;
-    assert.equal(value.why?.line, "values (need + th)");
-    assert.equal(value.why?.href, "values.html");
+    assert.equal(value.why?.line, "interests (interest + th)");
+    assert.equal(value.why?.href, "interests.html");
 
     const role = inspectText("zaxozowol", tables).tokens[0];
     assert.equal(role?.kind, "word");

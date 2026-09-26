@@ -302,7 +302,7 @@ English *can't* does not say whether this is just for now, not yet, or never. Af
 >
 > "Azawan can never run."
 
-**Compare with:** a [values](values.md) word joins a **need** root with **`th`**, not **`x`**: **`tha` / `thu`** is met / unmet need (`tholozothum` *competence unmet*). **`xa` / `xu`** after a verb or quality is can / can't.
+**Compare with:** a [interests](interests.md) word joins a **interest** root with **`th`**, not **`x`**: **`tha` / `thu`** is met / unmet interest (`tholozothum` *competence unmet*). **`xa` / `xu`** after a verb or quality is can / can't.
 
 ### When there is no single verb (`egera`)
 <a id="ability-fallback"></a>
@@ -334,7 +334,7 @@ Ordinary content is still available (`zehegel` *a checkmark*; `vehegel` *to chec
 #### Endings — changeability
 <a id="decision-changeability"></a>
 
-On **`ehege`**, **-l / -m / -r** match unmet [changeability](values.md#value-changeability): irreversible / modifiable / temporary. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know how locked the pick is, use **-m**.
+On **`ehege`**, **-l / -m / -r** match unmet [changeability](interests.md#value-changeability): irreversible / modifiable / temporary. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know how locked the pick is, use **-m**.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -691,4 +691,4 @@ z-Ululon | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 
 - How you know a forecast: [knowing.md](knowing.md#evidentiality)
 - Choosing as an act: [join-across-roles.md](join-across-roles.md#join-act-verbs)
-- Autonomy as a need: [values.md](values.md#need-inventory)
+- Autonomy as an interest: [interests.md](interests.md#interest-inventory)

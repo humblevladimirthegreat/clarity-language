@@ -585,7 +585,7 @@ RoleCompound
       };
     }
 
-// Values: need root + `th` + stance vowel (values.md).
+// Values: need root + `th` + stance vowel (interests.md).
 ValueCompound
   = host:CompoundHost "th" stanceV:[aeou] ending:Ending plural:PluralSuffix? WordEnd {
       return {

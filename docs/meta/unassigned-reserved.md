@@ -130,16 +130,16 @@ Source: [spans.md](../grammar/spans.md), [x-compounds.md](../grammar/x-compounds
 
 ## Values — later dimensions
 
-Source: [values.md](../grammar/values.md)
+Source: [interests.md](../grammar/interests.md)
 
-- Whose-need / care direction on prescription
-- Forced listener / third-person possessives on need ascription (speaker `/ɡ/` default is [personal possession](../grammar/values.md#personal-possession); unowned is **`gobobum`**)
+- Whose-interest / care direction on prescription
+- Forced listener / third-person possessives on interest ascription (speaker `/ɡ/` default is [personal possession](../grammar/interests.md#personal-possession); unowned is **`gobobum`**)
 
 ### Near-miss inventory (editor)
 
 | Job | Where taught |
 |-----|----------------|
-| Emotion compose | [values.md § Emotion compose](../grammar/values.md#emotion-compose) |
+| Emotion compose | [interests.md § Emotion compose](../grammar/interests.md#emotion-compose) |
 | MAY | [knowing.md § MAY](../grammar/knowing.md#may) — **`odoho`** + find out / default / who knows |
 | NOTIONAL | [knowing.md § Notional](../grammar/knowing.md#notional) — **`adade`** |
 | RESIDUE / FORMER | [knowing.md § Residue](../grammar/knowing.md#residue) — **`oneno`** / **`emebe`** |

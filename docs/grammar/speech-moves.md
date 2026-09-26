@@ -262,7 +262,7 @@ A mark on a span colors all of it:
 >
 > "Azawan said “Azawan” (?)." (unsure about just the quoted word).
 
-**Compare with:** **`yol`** asks a question; `?` only sounds unsure. A tone mark shows the feeling; [emotion compose](values.md#emotion-compose) states it as a claim, and the two can share a sentence.
+**Compare with:** **`yol`** asks a question; `?` only sounds unsure. A tone mark shows the feeling; [emotion compose](interests.md#emotion-compose) states it as a claim, and the two can share a sentence.
 
 - A mark may go on any word, including act words and [sentence linkers](dependents.md#sentence-linkers). Attached to a [scope island](spans.md#scope-islands), it colors the whole island.
 - Only `!`, `!!`, `?`, `?!`, `%`, `&`, and `;` are marks. Other stacks (`!?`, `??`, `%!`) are not, and neither are marks in a row with a space between (`! !`).

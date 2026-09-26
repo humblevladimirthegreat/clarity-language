@@ -362,7 +362,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   const family = word.family;
 
   if (family.kind === "x" && family.xFamily === "value") {
-    return { line: "values (need + th)", href: "values.html" };
+    return { line: "interests (interest + th)", href: "interests.html" };
   }
   if (family.kind === "x" && family.xFamily === "lateral") {
     return { line: "viewpoint lateral", href: "roles.html#viewpoint-laterals" };
@@ -371,7 +371,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     if (word.reading === "greeting") {
       return { line: "greeting bid, not ability", href: "x-compounds.html#conversation-length" };
     }
-    return { line: "ability, not values", href: "intention.html#ability" };
+    return { line: "ability, not interests", href: "intention.html#ability" };
   }
   if (family.kind === "x" && family.xFamily === "role") {
     return { line: "role compound", href: "roles.html#role-compounds" };
@@ -435,7 +435,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     return { line: "proxy", href: "relations.html#proxy" };
   }
   if (word.reading === "stimulus") {
-    return { line: "need stimulus", href: "values.html#stimulus" };
+    return { line: "interest stimulus", href: "interests.html#stimulus" };
   }
   if (word.reading === "joinAct" || word.reading === "joinRelation") {
     return { line: "join-series form", href: "join-across-roles.html" };

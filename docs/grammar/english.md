@@ -21,9 +21,9 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agalan 
 | swap (*a book for a hammer*) | **`huhanem`** + `/b/` | [Exchange](relations.md#exchange) |
 | intended get (*works for a money-bag*) | hook **`el`** + `/b/` | [Hooks](hooks.md#extra-noun) |
 | intended outcome (*practices for a race*) | **`holalam`** + `/b/` | [So that](dependents.md#so-that) |
-| need as reason (*walks for relatedness*) | values **`tho`** on `/th/` | [Motive](values.md#value-preference) |
-| noun’s purpose (*my gift for relatedness*) | values **`tho`** on `/ɡ/` | [Motive](values.md#value-preference) |
-| *my* belonging + need (*my tent serves survival*) | values **`tha` / `thu`** on `/ɡ/` | [Values](values.md#personal-possession) |
+| interest as reason (*walks for relatedness*) | interest **`tho`** on `/th/` | [Motive](interests.md#value-preference) |
+| noun’s purpose (*my gift for relatedness*) | interest **`tho`** on `/ɡ/` | [Motive](interests.md#value-preference) |
+| *my* belonging + interest (*my tent serves survival*) | interest **`tha` / `thu`** on `/ɡ/` | [Interests](interests.md#personal-possession) |
 | duration (*for three hours*) | measure phrase | [Measure phrases](numbers-applied.md#measure-phrases) |
 | topic (*as for Azawan*) | **`hozam`** + `/b/` | [As-for](clause.md#as-for) |
 

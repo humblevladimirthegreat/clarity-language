@@ -33,7 +33,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 
 **Not the same job as:** a word that **starts** with **`x`** [keeps the same speech move going](dependents.md#continue-x). That **`x`** is not this glue in the middle.
 
-**Not the same job as:** mid-word **`th`**. The [stance](clause.md#stance-th) letter joins pieces when the second piece is **your view** rather than more of the same thing: a need and how it stands ([values](values.md): `golozothal`), or a direction and whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals), such as *Azawan’s left*). **`x`** adds; **`th`** says from where you see it. (cue: **th** ≈ *think*)
+**Not the same job as:** mid-word **`th`**. The [stance](clause.md#stance-th) letter joins pieces when the second piece is **your view** rather than more of the same thing: an interest and how it stands ([interests](interests.md): `golozothal`), or a direction and whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals), such as *Azawan’s left*). **`x`** adds; **`th`** says from where you see it. (cue: **th** ≈ *think*)
 
 ### Words you look up, not build
 <a id="lexical-compounds"></a>
@@ -253,7 +253,7 @@ Beginner already used two roots glued with **`x`**, dictionary words with no **`
 | name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | [conversation length](#conversation-length) | *Azawan — I have time* | vowel on the name |
 | longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [ability](intention.md#ability) | *can’t sing right now* | extra vowel after the host |
 | full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zabanuxudel`; `zodunaxalanen` ([multipart names](word-endings.md#phrasal-proper-names)) | **x** ≈ plus |
-| need root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) | `golozothal` | **th** ≈ *think* (your view of the need) |
+| interest root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [interests](interests.md) | `golozothal` | **th** ≈ *think* (your view of the interest) |
 | direction root **`th`** facing person | [viewpoint lateral](roles.md#viewpoint-laterals) | `gewezethazawan` *Azawan’s left* | **th** ≈ *think* (whose point of view) |
 
 A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`**, or **`u`** left of **`x`**, you are opening a span or naming a role (*teacher*), not gluing two full roots. Role compounds still put a full root **after** that vowel.
@@ -281,7 +281,7 @@ When English stacks labels left to right (*crush* then *love*; a shop name with 
 ### Which family is this?
 <a id="decision-order"></a>
 
-Use the table above. If the word has a mid-word **`th`**, it is a [values](values.md) word (a vowel follows **`th`**) or a [viewpoint lateral](roles.md#viewpoint-laterals) (a root follows **`th`**). Otherwise read both sides of the first **`x`** in this order:
+Use the table above. If the word has a mid-word **`th`**, it is a [interests](interests.md) word (a vowel follows **`th`**) or a [viewpoint lateral](roles.md#viewpoint-laterals) (a root follows **`th`**). Otherwise read both sides of the first **`x`** in this order:
 
 - The whole word is a span close such as **`xuxul`** → a **span** is closing.
 - After the role letter: one vowel, **`x`**, one vowel, then a span ending → a **span** is opening ([spans](spans.md)).
@@ -333,7 +333,7 @@ At arrival, the other person can answer with their own bid. The **lesser** bid s
 >
 > "Ululon — one slot." (the talk lasts for one ask)
 
-**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [need](values.md) takes **`th`** + vowel instead (`golozothal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**.
+**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [need](interests.md) takes **`th`** + vowel instead (`golozothal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**.
 
 **Compare with:** a plain named citation with a period is the basic hello (`SELFn.`). The bid says how much conversation the person is open to.
 
@@ -534,7 +534,7 @@ Azawan-presence . Ululon-minutes
 
 - **`x`** at the start of a word (keep going): [dependents.md](dependents.md#continue-x)
 - How **`x`** sits in the word shape: [phonology.md](phonology.md#phonotactics)
-- [intention.md#ability](intention.md#ability) / [values.md](values.md) / [roles.md](roles.md) / [numeric-derivation.md](numeric-derivation.md)
+- [intention.md#ability](intention.md#ability) / [interests.md](interests.md) / [roles.md](roles.md) / [numeric-derivation.md](numeric-derivation.md)
 - Conversation length: [name **`x`** vowel](#conversation-length); bare hello: [word-endings.md](word-endings.md#greeting)
 - Short office names vs long titles: [word-endings.md](word-endings.md#named-handles)
 - Extra-noun fuse on a citation: [hooks.md](hooks.md#hook-compounds)

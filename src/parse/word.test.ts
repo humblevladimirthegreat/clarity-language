@@ -229,7 +229,7 @@ describe("parseWord — spans and writing atoms", () => {
 });
 
 describe("parseWord — x families, revisers, joins, foreign", () => {
-  it("parses golozothal as a value: need + th + stance vowel (values.md)", () => {
+  it("parses golozothal as a value: need + th + stance vowel (interests.md)", () => {
     const word = parseOk("golozothal");
     assert.deepEqual(word.family, {
       kind: "x",

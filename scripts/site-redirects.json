@@ -34,6 +34,11 @@
       "from": "/grammar/join-derived-forms.html",
       "to": "/grammar/join-across-roles.html",
       "note": "Public URL after renaming join-derived-forms.md to join-across-roles.md."
+    },
+    {
+      "from": "/grammar/values.html",
+      "to": "/grammar/interests.html",
+      "note": "Public URL after renaming values.md to interests.md."
     }
   ]
 }

@@ -1,16 +1,16 @@
 sense_form,pos,emoji,kind,gloss,definition,mnemonic,anchor
-alodom,th,🗳️,need,autonomy,autonomy need (choice / agency),ballot records choice; choice is agency and self-direction,values.md#prescription-the-ought-this-act-for-this-need
-alodom,w,🗳️,need,autonomy,autonomy need (choice / agency),ballot records choice; choice is agency and self-direction,values.md#personal-possession
-olozom,th,🧰,need,competence,competence need (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill,values.md#prescription-the-ought-this-act-for-this-need
-olozom,w,🧰,need,competence,competence need (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill,values.md#personal-possession
-onogom,th,🪢,need,relatedness,relatedness need (bond / belonging),knot ties two ends; bond is connection and care,values.md#prescription-the-ought-this-act-for-this-need
-onogom,w,🪢,need,relatedness,relatedness need (bond / belonging),knot ties two ends; bond is connection and care,values.md#personal-possession
-awerom,th,🍓,need,pleasure,pleasure need (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,values.md#prescription-the-ought-this-act-for-this-need
-awerom,w,🍓,need,pleasure,pleasure need (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,values.md#personal-possession
-uhuhem,th,🛡️,need,survival,survival need (defense / safety),shield blocks blows; defense is safety and health,values.md#prescription-the-ought-this-act-for-this-need
-uhuhem,w,🛡️,need,survival,survival need (defense / safety),shield blocks blows; defense is safety and health,values.md#personal-possession
-egem,th,🥚,need,need,unspecified need (potential),egg holds unrealized life; potential names a need without picking which,values.md#prescription-the-ought-this-act-for-this-need
-egem,w,🥚,need,need,unspecified need (potential),egg holds unrealized life; potential names a need without picking which,values.md#personal-possession
+alodom,th,🗳️,need,autonomy,autonomy interest (choice / agency),ballot records choice; choice is agency and self-direction,interests.md#prescription-the-ought-this-act-for-this-interest
+alodom,w,🗳️,need,autonomy,autonomy interest (choice / agency),ballot records choice; choice is agency and self-direction,interests.md#personal-possession
+olozom,th,🧰,need,competence,competence interest (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill,interests.md#prescription-the-ought-this-act-for-this-interest
+olozom,w,🧰,need,competence,competence interest (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill,interests.md#personal-possession
+onogom,th,🪢,need,relatedness,relatedness interest (bond / belonging),knot ties two ends; bond is connection and care,interests.md#prescription-the-ought-this-act-for-this-interest
+onogom,w,🪢,need,relatedness,relatedness interest (bond / belonging),knot ties two ends; bond is connection and care,interests.md#personal-possession
+awerom,th,🍓,need,pleasure,pleasure interest (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,interests.md#prescription-the-ought-this-act-for-this-interest
+awerom,w,🍓,need,pleasure,pleasure interest (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,interests.md#personal-possession
+uhuhem,th,🛡️,need,survival,survival interest (defense / safety),shield blocks blows; defense is safety and health,interests.md#prescription-the-ought-this-act-for-this-interest
+uhuhem,w,🛡️,need,survival,survival interest (defense / safety),shield blocks blows; defense is safety and health,interests.md#personal-possession
+egem,th,🥚,need,interest,unspecified interest (potential),egg holds unrealized life; potential names an interest without picking which,interests.md#prescription-the-ought-this-act-for-this-interest
+egem,w,🥚,need,interest,unspecified interest (potential),egg holds unrealized life; potential names an interest without picking which,interests.md#personal-possession
 uvuvum,th,🎣,evidential,WITNESSED,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidentiality
 uvuvum,w,🎣,evidential,WITNESSED,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#mood-on-one-adjective
 adezem,th,👁️‍🗨️,evidential,LIVE,live evidential (present observation / concurrent access),eye-in-speech attests while the scene is in view; live is seeing-and-saying now (not memory),knowing.md#evidentiality
@@ -65,18 +65,18 @@ adaden,th,🎭,notional,NOTIONAL.named,notional mood proper (this as-if-word nam
 adaden,w,🎭,notional,NOTIONAL.named,notional mood proper (this as-if-word names a particular object),theater as a named setup; -n is ordinary proper not a hold,knowing.md#mood-on-one-adjective
 adader,th,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,knowing.md#hold-endings-notional
 adader,w,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,knowing.md#mood-on-one-adjective
-ogegam,th,🌊,emotion_act,HIGH,emotion HIGH activation (flood / surge),ocean wave surges; flood is high-arousal water motion,values.md#emotion-compose
-ogegam,w,🌊,emotion_act,HIGH,emotion HIGH activation (flood / surge),ocean wave surges; flood is high-arousal water motion,values.md#emotion-compose
-ejelom,th,🪼,emotion_act,MED,emotion MED activation (flow / drift),jellyfish drifts with current; flow is mid motion of water,values.md#emotion-compose
-ejelom,w,🪼,emotion_act,MED,emotion MED activation (flow / drift),jellyfish drifts with current; flow is mid motion of water,values.md#emotion-compose
-ozowom,th,🌨️,emotion_act,LOW,emotion LOW activation (stillness / slack),snow quiets the landscape; stillness is calm slack water,values.md#emotion-compose
-ozowom,w,🌨️,emotion_act,LOW,emotion LOW activation (stillness / slack),snow quiets the landscape; stillness is calm slack water,values.md#emotion-compose
-abobom,th,🍼,emotion_locus,INTERNAL,emotion INTERNAL locus (charge held inside),bottle holds liquid inside; bottle is in-vessel charge,values.md#emotion-compose
-abobom,w,🍼,emotion_locus,INTERNAL,emotion INTERNAL locus (charge held inside),bottle holds liquid inside; bottle is in-vessel charge,values.md#emotion-compose
-orurum,th,🫗,emotion_locus,EXTERNAL,emotion EXTERNAL locus (charge toward others),pour directs liquid outward; pour is other-directed charge,values.md#emotion-compose
-orurum,w,🫗,emotion_locus,EXTERNAL,emotion EXTERNAL locus (charge toward others),pour directs liquid outward; pour is other-directed charge,values.md#emotion-compose
-anedem,th,🕯️,emotion_locus,CIRCUM,emotion CIRCUM locus (ambient / situational field),candle light fills the room; awash is charge in the surrounding field,values.md#emotion-compose
-anedem,w,🕯️,emotion_locus,CIRCUM,emotion CIRCUM locus (ambient / situational field),candle light fills the room; awash is charge in the surrounding field,values.md#emotion-compose
+ogegam,th,🌊,emotion_act,HIGH,emotion HIGH activation (flood / surge),ocean wave surges; flood is high-arousal water motion,interests.md#emotion-compose
+ogegam,w,🌊,emotion_act,HIGH,emotion HIGH activation (flood / surge),ocean wave surges; flood is high-arousal water motion,interests.md#emotion-compose
+ejelom,th,🪼,emotion_act,MED,emotion MED activation (flow / drift),jellyfish drifts with current; flow is mid motion of water,interests.md#emotion-compose
+ejelom,w,🪼,emotion_act,MED,emotion MED activation (flow / drift),jellyfish drifts with current; flow is mid motion of water,interests.md#emotion-compose
+ozowom,th,🌨️,emotion_act,LOW,emotion LOW activation (stillness / slack),snow quiets the landscape; stillness is calm slack water,interests.md#emotion-compose
+ozowom,w,🌨️,emotion_act,LOW,emotion LOW activation (stillness / slack),snow quiets the landscape; stillness is calm slack water,interests.md#emotion-compose
+abobom,th,🍼,emotion_locus,INTERNAL,emotion INTERNAL locus (charge held inside),bottle holds liquid inside; bottle is in-vessel charge,interests.md#emotion-compose
+abobom,w,🍼,emotion_locus,INTERNAL,emotion INTERNAL locus (charge held inside),bottle holds liquid inside; bottle is in-vessel charge,interests.md#emotion-compose
+orurum,th,🫗,emotion_locus,EXTERNAL,emotion EXTERNAL locus (charge toward others),pour directs liquid outward; pour is other-directed charge,interests.md#emotion-compose
+orurum,w,🫗,emotion_locus,EXTERNAL,emotion EXTERNAL locus (charge toward others),pour directs liquid outward; pour is other-directed charge,interests.md#emotion-compose
+anedem,th,🕯️,emotion_locus,CIRCUM,emotion CIRCUM locus (ambient / situational field),candle light fills the room; awash is charge in the surrounding field,interests.md#emotion-compose
+anedem,w,🕯️,emotion_locus,CIRCUM,emotion CIRCUM locus (ambient / situational field),candle light fills the room; awash is charge in the surrounding field,interests.md#emotion-compose
 egeram,th,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#when-there-is-no-single-verb-egera
 egeram,w,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#when-there-is-no-single-verb-egera
 ugudol,th,⛅,universality,COMMON,universality COMMON warrant (usual / exceptions expected),weather is the usual climate; usual warrant expects exceptions,knowing.md#universality
@@ -107,24 +107,24 @@ alaban,b,🥼,benchmark,Professional,judgment benchmark Professional (expert / r
 oloben,z,🌐,benchmark,Everyone,judgment benchmark Everyone (universal reference class),globe links every place; the connected whole is the universal class,comparatives.md#judgment-benchmarks-worse-than
 oloben,d,🌐,benchmark,Everyone,judgment benchmark Everyone (universal reference class),globe links every place; the connected whole is the universal class,comparatives.md#judgment-benchmarks-worse-than
 oloben,b,🌐,benchmark,Everyone,judgment benchmark Everyone (universal reference class),globe links every place; the connected whole is the universal class,comparatives.md#judgment-benchmarks-worse-than
-egen,z,🥚,benchmark,Needed,judgment benchmark Needed (what the speaker's need requires; need unspecified),egg holds what is needed to grow; the need is the bar,comparatives.md#need-benchmarks
-egen,d,🥚,benchmark,Needed,judgment benchmark Needed (what the speaker's need requires; need unspecified),egg holds what is needed to grow; the need is the bar,comparatives.md#need-benchmarks
-egen,b,🥚,benchmark,Needed,judgment benchmark Needed (what the speaker's need requires; need unspecified),egg holds what is needed to grow; the need is the bar,comparatives.md#need-benchmarks
-uhuhen,z,🛡️,benchmark,Survival-need,judgment benchmark what the survival need requires (safety / health),shield guards survival; safety sets the bar,comparatives.md#need-benchmarks
-uhuhen,d,🛡️,benchmark,Survival-need,judgment benchmark what the survival need requires (safety / health),shield guards survival; safety sets the bar,comparatives.md#need-benchmarks
-uhuhen,b,🛡️,benchmark,Survival-need,judgment benchmark what the survival need requires (safety / health),shield guards survival; safety sets the bar,comparatives.md#need-benchmarks
-onogon,z,🪢,benchmark,Relatedness-need,judgment benchmark what the relatedness need requires (connection),knot ties people together; connection sets the bar,comparatives.md#need-benchmarks
-onogon,d,🪢,benchmark,Relatedness-need,judgment benchmark what the relatedness need requires (connection),knot ties people together; connection sets the bar,comparatives.md#need-benchmarks
-onogon,b,🪢,benchmark,Relatedness-need,judgment benchmark what the relatedness need requires (connection),knot ties people together; connection sets the bar,comparatives.md#need-benchmarks
-olozon,z,🧰,benchmark,Competence-need,judgment benchmark what the competence need requires (getting it to work),toolbox gets the job done; working sets the bar,comparatives.md#need-benchmarks
-olozon,d,🧰,benchmark,Competence-need,judgment benchmark what the competence need requires (getting it to work),toolbox gets the job done; working sets the bar,comparatives.md#need-benchmarks
-olozon,b,🧰,benchmark,Competence-need,judgment benchmark what the competence need requires (getting it to work),toolbox gets the job done; working sets the bar,comparatives.md#need-benchmarks
-alodon,z,🗳️,benchmark,Autonomy-need,judgment benchmark what the autonomy need requires (choice),ballot is choosing for yourself; choice sets the bar,comparatives.md#need-benchmarks
-alodon,d,🗳️,benchmark,Autonomy-need,judgment benchmark what the autonomy need requires (choice),ballot is choosing for yourself; choice sets the bar,comparatives.md#need-benchmarks
-alodon,b,🗳️,benchmark,Autonomy-need,judgment benchmark what the autonomy need requires (choice),ballot is choosing for yourself; choice sets the bar,comparatives.md#need-benchmarks
-aweron,z,🍓,benchmark,Pleasure-need,judgment benchmark what the pleasure need requires (enjoyment),strawberry is enjoyment; enjoyment sets the bar,comparatives.md#need-benchmarks
-aweron,d,🍓,benchmark,Pleasure-need,judgment benchmark what the pleasure need requires (enjoyment),strawberry is enjoyment; enjoyment sets the bar,comparatives.md#need-benchmarks
-aweron,b,🍓,benchmark,Pleasure-need,judgment benchmark what the pleasure need requires (enjoyment),strawberry is enjoyment; enjoyment sets the bar,comparatives.md#need-benchmarks
+egen,z,🥚,benchmark,Needed,judgment benchmark Needed (what the speaker's interest requires; interest unspecified),egg holds what is needed to grow; the interest is the bar,comparatives.md#interest-benchmarks
+egen,d,🥚,benchmark,Needed,judgment benchmark Needed (what the speaker's interest requires; interest unspecified),egg holds what is needed to grow; the interest is the bar,comparatives.md#interest-benchmarks
+egen,b,🥚,benchmark,Needed,judgment benchmark Needed (what the speaker's interest requires; interest unspecified),egg holds what is needed to grow; the interest is the bar,comparatives.md#interest-benchmarks
+uhuhen,z,🛡️,benchmark,Survival-interest,judgment benchmark what the survival interest requires (safety / health),shield guards survival; safety sets the bar,comparatives.md#interest-benchmarks
+uhuhen,d,🛡️,benchmark,Survival-interest,judgment benchmark what the survival interest requires (safety / health),shield guards survival; safety sets the bar,comparatives.md#interest-benchmarks
+uhuhen,b,🛡️,benchmark,Survival-interest,judgment benchmark what the survival interest requires (safety / health),shield guards survival; safety sets the bar,comparatives.md#interest-benchmarks
+onogon,z,🪢,benchmark,Relatedness-interest,judgment benchmark what the relatedness interest requires (connection),knot ties people together; connection sets the bar,comparatives.md#interest-benchmarks
+onogon,d,🪢,benchmark,Relatedness-interest,judgment benchmark what the relatedness interest requires (connection),knot ties people together; connection sets the bar,comparatives.md#interest-benchmarks
+onogon,b,🪢,benchmark,Relatedness-interest,judgment benchmark what the relatedness interest requires (connection),knot ties people together; connection sets the bar,comparatives.md#interest-benchmarks
+olozon,z,🧰,benchmark,Competence-interest,judgment benchmark what the competence interest requires (getting it to work),toolbox gets the job done; working sets the bar,comparatives.md#interest-benchmarks
+olozon,d,🧰,benchmark,Competence-interest,judgment benchmark what the competence interest requires (getting it to work),toolbox gets the job done; working sets the bar,comparatives.md#interest-benchmarks
+olozon,b,🧰,benchmark,Competence-interest,judgment benchmark what the competence interest requires (getting it to work),toolbox gets the job done; working sets the bar,comparatives.md#interest-benchmarks
+alodon,z,🗳️,benchmark,Autonomy-interest,judgment benchmark what the autonomy interest requires (choice),ballot is choosing for yourself; choice sets the bar,comparatives.md#interest-benchmarks
+alodon,d,🗳️,benchmark,Autonomy-interest,judgment benchmark what the autonomy interest requires (choice),ballot is choosing for yourself; choice sets the bar,comparatives.md#interest-benchmarks
+alodon,b,🗳️,benchmark,Autonomy-interest,judgment benchmark what the autonomy interest requires (choice),ballot is choosing for yourself; choice sets the bar,comparatives.md#interest-benchmarks
+aweron,z,🍓,benchmark,Pleasure-interest,judgment benchmark what the pleasure interest requires (enjoyment),strawberry is enjoyment; enjoyment sets the bar,comparatives.md#interest-benchmarks
+aweron,d,🍓,benchmark,Pleasure-interest,judgment benchmark what the pleasure interest requires (enjoyment),strawberry is enjoyment; enjoyment sets the bar,comparatives.md#interest-benchmarks
+aweron,b,🍓,benchmark,Pleasure-interest,judgment benchmark what the pleasure interest requires (enjoyment),strawberry is enjoyment; enjoyment sets the bar,comparatives.md#interest-benchmarks
 onunul,g,🪙,identity,SAME,SAME identity (identical-to / same-as),coin has two faces one substance; same is one referent two labels,predication.md#identity-same
 adorom,th,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,dependents.md#dependent-clauses
 adorom,g,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,causation.md#if
@@ -194,7 +194,7 @@ uhanem,h,💱,exchange,in-exchange-for,exchange in-exchange-for (consideration /
 uhanem,g,💱,exchange,in-exchange-for,exchange in-exchange-for (consideration / countervalue),currency arrows swap one for another; in-exchange-for is the other side of the swap in /b/,relations.md#exchange
 udagam,h,🪪,proxy,on-behalf-of,proxy on-behalf-of (authorized agency),id card stands as an authorized face; on-behalf-of is whose agency /b/ holds,relations.md#proxy
 udagam,g,🪪,proxy,on-behalf-of,proxy on-behalf-of (authorized agency),id card stands as an authorized face; on-behalf-of is whose agency /b/ holds,relations.md#proxy
-obobum,g,☝️,stimulus,stimulus,stimulus (need about a noun you do not possess),pointing finger marks the thing you are scoring; stimulus is the noun as a need-target not a belonging,values.md#personal-possession
+obobum,g,☝️,stimulus,stimulus,stimulus (interest about a noun you do not possess),pointing finger marks the thing you are scoring; stimulus is the noun as an interest-target not a belonging,interests.md#personal-possession
 obonem,h,🦴,of_relation,part-of,of-relation part-of (constitutive piece),bone is a piece of the body; part-of is the meronym in /b/'s whole,relations.md#of-relations
 obonem,g,🦴,of_relation,part-of,of-relation part-of (constitutive piece),bone is a piece of the body; part-of is the meronym in /b/'s whole,relations.md#of-relations
 ajaram,h,🫙,of_relation,contents,of-relation contents (filling of a vessel),jar stores what is kept; contents is the filling in /b/,relations.md#of-relations
@@ -203,14 +203,14 @@ owodom,h,🪵,of_relation,material,of-relation material (constitution),wood is t
 owodom,g,🪵,of_relation,material,of-relation material (constitution),wood is the stuff something is made of; material is the stuff in /b/,relations.md#of-relations
 ugunom,h,🗾,of_relation,origin,of-relation origin (provenance / identity source),a map of one land marks that area's identity; origin is the source in /b/,relations.md#of-relations
 ugunom,g,🗾,of_relation,origin,of-relation origin (provenance / identity source),a map of one land marks that area's identity; origin is the source in /b/,relations.md#of-relations
-erenel,th,🟢,deontic,PERMIT-granted,permission granted by a person (speaker by default or the /b/ grantor),green light switched on by someone; granted permission is a person saying go,values.md#permission
-erenem,th,🟢,deontic,PERMIT-allowed,permission from a rule or norm (no one grants it),green light on a standing signal; allowed is the rule saying go,values.md#permission
-ononel,th,⛔,deontic,FORBID-forbidden,forbidden by a person (speaker by default or the /b/ forbidder),no-entry sign put up by someone; a person blocks the way,values.md#permission
-ononem,th,⛔,deontic,FORBID-disallowed,disallowed by a rule or norm,standing no-entry sign; the rule blocks the way,values.md#permission
-uxerenel,th,🟢,deontic,CONSENT-given,consent given outright by the affected (the /b/ or else the actor),green light from the one it happens to; they said yes,values.md#consent
-uxerenem,th,🟢,deontic,CONSENT-assumed,consent assumed or inferred from the affected (the /b/ or else the actor),green light guessed from the one it happens to; I think they're OK with it,values.md#consent
-uxononel,th,⛔,deontic,CONSENT-refused,consent refused outright by the affected (overrides any earlier yes),no-entry sign from the one it happens to; they said no,values.md#consent
-uxononem,th,⛔,deontic,CONSENT-unlikely,consent presumed absent from the affected (they probably don't want it),no-entry sign guessed from the one it happens to; they probably don't want it,values.md#consent
+erenel,th,🟢,deontic,PERMIT-granted,permission granted by a person (speaker by default or the /b/ grantor),green light switched on by someone; granted permission is a person saying go,interests.md#permission
+erenem,th,🟢,deontic,PERMIT-allowed,permission from a rule or norm (no one grants it),green light on a standing signal; allowed is the rule saying go,interests.md#permission
+ononel,th,⛔,deontic,FORBID-forbidden,forbidden by a person (speaker by default or the /b/ forbidder),no-entry sign put up by someone; a person blocks the way,interests.md#permission
+ononem,th,⛔,deontic,FORBID-disallowed,disallowed by a rule or norm,standing no-entry sign; the rule blocks the way,interests.md#permission
+uxerenel,th,🟢,deontic,CONSENT-given,consent given outright by the affected (the /b/ or else the actor),green light from the one it happens to; they said yes,interests.md#consent
+uxerenem,th,🟢,deontic,CONSENT-assumed,consent assumed or inferred from the affected (the /b/ or else the actor),green light guessed from the one it happens to; I think they're OK with it,interests.md#consent
+uxononel,th,⛔,deontic,CONSENT-refused,consent refused outright by the affected (overrides any earlier yes),no-entry sign from the one it happens to; they said no,interests.md#consent
+uxononem,th,⛔,deontic,CONSENT-unlikely,consent presumed absent from the affected (they probably don't want it),no-entry sign guessed from the one it happens to; they probably don't want it,interests.md#consent
 ahagal,h,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,knowing.md#phasal
 ahagal,w,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,knowing.md#phasal
 ahagam,h,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,knowing.md#phasal

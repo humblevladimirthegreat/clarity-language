@@ -82,8 +82,8 @@ Checked on 2026-09-25 with `node scripts/parse.mjs`: the parser **accepted** eve
 | `zodogol.` / `zululon dagadal.` / `zodogol om banabal.` | valid: [existence](../grammar/predication.md#existence), `zodogol.` = *There is a dog.*, `zodogol om banabal.` = *There is a dog near a bank.* `zululon dagadal.` is **rejected**: an object `/d/` needs a `/v/`. | [predication](../grammar/predication.md) |
 | `zazawan zel gelem h+2 vawalal.` / `zazawan zel h+ vawalal.` | rank-join shared scale = `/ɡ/`, or `/h/` immediately after the join | [comparatives](../grammar/comparatives.md#manner-scale) |
 | `zual gagadalx.` | **-x** excluded on join-scoped `/ɡ/` | [joins](../grammar/joins.md#universals-domains-generics): the kind after **`ua`** / **`uo`** takes no **-x**. **Decided:** reject. (Collective SHARED `/ɡ/`…**-x** after **`a`** stays valid.) |
-| `yonogotham zazawan vawalal.` / `zazawan hagadum vawalal.` | need forms on `/ɡ/` / `/th/` / `/w/` only | [values](../grammar/values.md) |
-| `zawaral gabenethal.` | the need form (ROOT + `th` + stance vowel) takes only the six inventory roots; read the list from the `need` overlays | [values](../grammar/values.md#need-inventory). **Decided:** reject. |
+| `yonogotham zazawan vawalal.` / `zazawan hagadum vawalal.` | need forms on `/ɡ/` / `/th/` / `/w/` only | [values](../grammar/interests.md) |
+| `zawaral gabenethal.` | the need form (ROOT + `th` + stance vowel) takes only the six inventory roots; read the list from the `need` overlays | [values](../grammar/interests.md#need-inventory). **Decided:** reject. |
 | `yol.` / `yom.` | stays valid: bare `yol.` = *Huh?*, `yom.` = *Hm?* | [questions](../grammar/questions.md#question) |
 | `yelel.` | stays valid: a `/y/` call on **-l** is taught (`yubal.`, `yagadalx.`) | [speech-moves](../grammar/speech-moves.md) |
 

@@ -164,7 +164,7 @@ type FamilyKind = MorphWordFamily["kind"];
 export const WORD_FAMILY_CONSTRUCTIONS: Record<FamilyKind, ConstructionEntry> = {
   content: { anchor: "phonology.md#word-edges", summary: "content word" },
   number: { anchor: "numbers.md#counts-g-n", summary: "number word" },
-  x: { anchor: "values.md#how-it-is-appreciated-endings-on-met", summary: "mid-word x compound" },
+  x: { anchor: "interests.md#how-it-is-appreciated-endings-on-met", summary: "mid-word x compound" },
   spanClose: { anchor: "spans.md#shape", summary: "span close" },
   hook: { anchor: "hooks.md#beginner", summary: "hook" },
   hookCompound: { anchor: "hooks.md#hook-compounds", summary: "fused extra-noun hook compound" },
@@ -176,7 +176,7 @@ export const WORD_FAMILY_CONSTRUCTIONS: Record<FamilyKind, ConstructionEntry> = 
 export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
   span: { anchor: "spans.md#shape", summary: "span open" },
   role: { anchor: "roles.md#role-compounds", summary: "role compound" },
-  value: { anchor: "values.md#how-it-is-appreciated-endings-on-met", summary: "value need word" },
+  value: { anchor: "interests.md#how-it-is-appreciated-endings-on-met", summary: "value interest word" },
   lateral: { anchor: "roles.md#viewpoint-laterals", summary: "viewpoint lateral" },
   ability: { anchor: "x-compounds.md#conversation-length", summary: "ability compound" },
   numeric: { anchor: "numeric-derivation.md#numeric-derivation", summary: "numeric derivation" },
@@ -198,7 +198,7 @@ type OverlayOnlyReading =
 /** Non-overlay readings (an overlay word traces `overlay.*`, not `word.reading.*`). */
 export const WORD_READING_CONSTRUCTIONS: Record<Exclude<LexReading, OverlayOnlyReading>, ConstructionEntry> = {
   ordinary: { anchor: "phonology.md#word-edges", summary: "ordinary content reading" },
-  value: { anchor: "values.md#how-it-is-appreciated-endings-on-met", summary: "need reading" },
+  value: { anchor: "interests.md#how-it-is-appreciated-endings-on-met", summary: "interest reading" },
   ability: { anchor: "intention.md#ability", summary: "ability reading" },
   greeting: { anchor: "x-compounds.md#conversation-length", summary: "conversation-length bid" },
   restrictor: { anchor: "restrictors.md#beginner", summary: "restrictor" },
@@ -301,24 +301,24 @@ export const NUMBER_FEATURE_CONSTRUCTIONS = {
 
 type Vowel = "a" | "e" | "o" | "u";
 
-/** Values: each stance vowel, and the endings on it (values.md). */
+/** Values: each stance vowel, and the endings on it (interests.md). */
 export const VALUE_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vowel}.${"l" | "m" | "r"}`, ConstructionEntry> = {
-  "stance.a": { anchor: "values.md#how-it-is-appreciated-endings-on-met", summary: "met tha" },
-  "stance.u": { anchor: "values.md#unmet-thu-detracts-from-the-need", summary: "unmet thu" },
-  "stance.e": { anchor: "values.md#prescription-the-ought-this-act-for-this-need", summary: "prescription the" },
-  "stance.o": { anchor: "values.md#motive-tho-preference-standing", summary: "motive tho" },
-  "ending.a.l": { anchor: "values.md#how-it-is-appreciated-endings-on-met", summary: "met contact channel -l" },
-  "ending.a.m": { anchor: "values.md#how-it-is-appreciated-endings-on-met", summary: "met contact channel -m" },
-  "ending.a.r": { anchor: "values.md#how-it-is-appreciated-endings-on-met", summary: "met contact channel -r" },
-  "ending.u.l": { anchor: "values.md#unmet-thu-detracts-from-the-need", summary: "unmet -l" },
-  "ending.u.m": { anchor: "values.md#unmet-thu-detracts-from-the-need", summary: "unmet -m" },
-  "ending.u.r": { anchor: "values.md#unmet-thu-detracts-from-the-need", summary: "unmet -r" },
-  "ending.e.l": { anchor: "values.md#prescription-the-ought-this-act-for-this-need", summary: "invited prescription" },
-  "ending.e.m": { anchor: "values.md#prescription-the-ought-this-act-for-this-need", summary: "offered prescription" },
-  "ending.e.r": { anchor: "values.md#prescription-the-ought-this-act-for-this-need", summary: "protective prescription" },
-  "ending.o.l": { anchor: "values.md#motive-tho-preference-standing", summary: "motive standing -l" },
-  "ending.o.m": { anchor: "values.md#motive-tho-preference-standing", summary: "motive standing -m" },
-  "ending.o.r": { anchor: "values.md#motive-tho-preference-standing", summary: "motive standing -r" },
+  "stance.a": { anchor: "interests.md#how-it-is-appreciated-endings-on-met", summary: "met tha" },
+  "stance.u": { anchor: "interests.md#unmet-thu-detracts-from-the-interest", summary: "unmet thu" },
+  "stance.e": { anchor: "interests.md#prescription-the-ought-this-act-for-this-interest", summary: "prescription the" },
+  "stance.o": { anchor: "interests.md#motive-tho-preference-standing", summary: "motive tho" },
+  "ending.a.l": { anchor: "interests.md#how-it-is-appreciated-endings-on-met", summary: "met contact channel -l" },
+  "ending.a.m": { anchor: "interests.md#how-it-is-appreciated-endings-on-met", summary: "met contact channel -m" },
+  "ending.a.r": { anchor: "interests.md#how-it-is-appreciated-endings-on-met", summary: "met contact channel -r" },
+  "ending.u.l": { anchor: "interests.md#unmet-thu-detracts-from-the-interest", summary: "unmet -l" },
+  "ending.u.m": { anchor: "interests.md#unmet-thu-detracts-from-the-interest", summary: "unmet -m" },
+  "ending.u.r": { anchor: "interests.md#unmet-thu-detracts-from-the-interest", summary: "unmet -r" },
+  "ending.e.l": { anchor: "interests.md#prescription-the-ought-this-act-for-this-interest", summary: "invited prescription" },
+  "ending.e.m": { anchor: "interests.md#prescription-the-ought-this-act-for-this-interest", summary: "offered prescription" },
+  "ending.e.r": { anchor: "interests.md#prescription-the-ought-this-act-for-this-interest", summary: "protective prescription" },
+  "ending.o.l": { anchor: "interests.md#motive-tho-preference-standing", summary: "motive standing -l" },
+  "ending.o.m": { anchor: "interests.md#motive-tho-preference-standing", summary: "motive standing -m" },
+  "ending.o.r": { anchor: "interests.md#motive-tho-preference-standing", summary: "motive standing -r" },
 };
 
 /** Join fence series vowel (joins.md, comparatives.md). */
@@ -504,8 +504,8 @@ export const REJECTIONS = {
   toneTarget: { anchor: "speech-moves.md#tone-marks", summary: "a tone mark goes before a word, an island open ^, or a span" },
   linkerMidSentence: { anchor: "dependents.md#sentence-linkers", summary: "a sentence linker comes only at the start of a sentence" },
   pluralOnPos: { anchor: "plurality.md#beginner", summary: "-x is unused on /w/, /h/, /th/, and /x/" },
-  valueSlot: { anchor: "values.md#beginner", summary: "a need form goes on /ɡ/, /th/, or /w/ only" },
-  valueRoot: { anchor: "values.md#need-inventory", summary: "only the six need roots take the need form" },
+  valueSlot: { anchor: "interests.md#beginner", summary: "a interest form goes on /ɡ/, /th/, or /w/ only" },
+  valueRoot: { anchor: "interests.md#interest-inventory", summary: "only the six interest roots take the interest form" },
   pluralKindAfterUniversal: { anchor: "joins.md#universals-domains-generics", summary: "the kind word after ua / uo takes no -x" },
   rankJoinNumberManner: { anchor: "comparatives.md#manner-scale", summary: "the /h/ after a rank join is a manner word; the only number there is digitless h+ (how often)" },
   reversedSequenceSlot: { anchor: "joins.md#reversed-sequence-eo", summary: "eo is a phrase join only (/z/ /d/ /b/ /ɡ/)" },

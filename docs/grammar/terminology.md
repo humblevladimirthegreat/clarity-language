@@ -15,26 +15,26 @@ Closed labels for psychological moods, poles, and emotion-compose pieces. Mood w
 | Label | Gloss | Teach |
 |-------|-------|--------|
 | **ABIL** | Hostless *can* / *can’t* fallback **`egera`** | [Ability](intention.md#ability-fallback) |
-| **ACT** | Emotion-compose arousal (HIGH / MED / LOW) | [Values](values.md#emotion-compose) |
+| **ACT** | Emotion-compose arousal (HIGH / MED / LOW) | [Interests](interests.md#emotion-compose) |
 | **AS-OF** | Whose-now pole: ledger **`elere`** / bookmark **`oboma`** | [Relations](relations.md#as-of) |
 | **ALTHOUGH** | Clause-pole **`ezeba`** (*although* / NP *despite*) | [Dependents](dependents.md#dependent-clauses) |
 | **BECAUSE** | Clause-pole **`urugu`** (*because*) | [Causation](causation.md#because) |
 | **CAUSE** | Mechanism-framing mood **`egega`** | [Causation](causation.md#cause) |
-| **CIRCUM** | Emotion locus: charge on the situation | [Values](values.md#emotion-compose) |
+| **CIRCUM** | Emotion locus: charge on the situation | [Interests](interests.md#emotion-compose) |
 | **MAY** | Potential mood **`odoho`** (*could be*; I'll find out / default / who knows) | [Knowing](knowing.md#may) |
 | **COMMON** | Universality: usual, exceptions expected | [Knowing](knowing.md#universality) |
 | **DECISION** | Pick-firmness mood **`ehege`** | [Intention](intention.md#decision) |
-| **EXTERNAL** | Emotion locus: charge at other people | [Values](values.md#emotion-compose) |
+| **EXTERNAL** | Emotion locus: charge at other people | [Interests](interests.md#emotion-compose) |
 | **FELT** | Evidential: gut / body knowing | [Knowing](knowing.md#evidentiality) |
 | **FORMAL** | Universality: definition / math / proof | [Knowing](knowing.md#universality) |
 | **FORMER** | Episode standing: not the climate claimed now **`emebe`** | [Knowing](knowing.md#former-climate) |
-| **HIGH** / **MED** / **LOW** | Emotion ACT roots | [Values](values.md#emotion-compose) |
+| **HIGH** / **MED** / **LOW** | Emotion ACT roots | [Interests](interests.md#emotion-compose) |
 | **IF** | Clause-pole **`adoro`** (one-way *if*) | [Causation](causation.md#if) |
 | **IFF** | Clause-pole **`ezaze`** | [Causation](causation.md#iff) |
 | **INFERRED** | Evidential: reasoned from clues | [Knowing](knowing.md#evidentiality) |
-| **INTERNAL** | Emotion locus: charge held inside | [Values](values.md#emotion-compose) |
+| **INTERNAL** | Emotion locus: charge held inside | [Interests](interests.md#emotion-compose) |
 | **LIVE** | Evidential: concurrent / in-view observation | [Knowing](knowing.md#live-vs-memory) |
-| **LOCUS** | Emotion-compose where the charge sits | [Values](values.md#emotion-compose) |
+| **LOCUS** | Emotion-compose where the charge sits | [Interests](interests.md#emotion-compose) |
 | **NATURAL** | Universality: natural necessity | [Knowing](knowing.md#universality) |
 | **NOTIONAL** | As-if / pretense mood **`adade`** | [Knowing](knowing.md#notional) |
 | **ONLY-IF** | Clause-pole **`ebero`** (*only if* / *needs*) | [Causation](causation.md#only-if) |
@@ -106,7 +106,7 @@ Detail on the following adjective, not the whole clause.
 
 [Clause](clause.md)
 
-**Compare with:** a [restrictor](#restrictor) says when the host applies. Default `/w/` on needs is [values](#values).
+**Compare with:** a [restrictor](#restrictor) says when the host applies. Default `/w/` on interests is [interests](#interests).
 
 ### Adverb
 
@@ -140,7 +140,7 @@ Complex `/h/` + `/b/` (**`hozam`**) *as for X*.
 
 [Clause](clause.md#as-for)
 
-**Compare with:** values [met](#met-unmet-motive-prescription-values) / unmet on `/ɡ/` is how a need stands toward a noun, not *as for*.
+**Compare with:** interest [met](#met-unmet-motive-prescription-interests) / unmet on `/ɡ/` is how an interest stands toward a noun, not *as for*.
 
 ### Aside
 
@@ -183,15 +183,15 @@ Clause content after the left-edge `/y/` cluster.
 <a id="wording-general-history"></a>
 <a id="bound-endorse-invite"></a>
 
-Prescription endings on value **`the`**: why a move is welcome. **-l** invited, **-m** offered to serve the need, **-r** protective, meant to prevent detriment to the need.
+Prescription endings on interest **`the`**: why a move is welcome. **-l** invited, **-m** offered to serve the interest, **-r** protective, meant to prevent detriment to the interest.
 
-[Values](values.md#value-force)
+[Interests](interests.md#value-force)
 
 ### Changeability
 
 Endings on unmet **`thu`**, **DECISION**, and ability *can’t*.
 
-[Values](values.md#value-changeability), [Intention](intention.md#decision)
+[Interests](interests.md#value-changeability), [Intention](intention.md#decision)
 
 ### Citation / prefix-less citation
 
@@ -251,9 +251,9 @@ Polar patterns that confirm a denied body.
 
 ### Contact / contact channel
 
-Met-value **`tha`** endings (physical / mental / spiritual).
+Met-interest **`tha`** endings (physical / mental / spiritual).
 
-[Values](values.md#value-contact)
+[Interests](interests.md#value-contact)
 
 ### Continue (`/x/`)
 
@@ -375,7 +375,7 @@ Hosted **`hurorom`** / **`gurorom`** plus model `/b/` (*like* a duck / *like* Az
 
 ### Exchange (*for*)
 
-Hosted **`huhanem`** / **`guhanem`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not values motive **`tho`**, not intended-outcome **`olala`**.
+Hosted **`huhanem`** / **`guhanem`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not interests motive **`tho`**, not intended-outcome **`olala`**.
 
 [Relations](relations.md#exchange)
 
@@ -435,9 +435,9 @@ A named citation is a hello (`azawan.`). Add mid-word **`x`** plus **`a`** / **`
 
 ### Host
 
-Content root a values `th`-stance, an ability `x`-stance, or a numeric-derivation join attaches to.
+Content root an interest `th`-stance, an ability `x`-stance, or a numeric-derivation join attaches to.
 
-[Ability](intention.md#ability), [values](values.md), [numeric derivation](numeric-derivation.md)
+[Ability](intention.md#ability), [interests](interests.md), [numeric derivation](numeric-derivation.md)
 
 **Compare with:** a measure [unit](#measure-phrase-unit) is not a host. Classification names the classified noun, not a host.
 
@@ -507,13 +507,13 @@ Amount + lexicon unit noun (published abstract = unit name).
 
 [Numbers applied](numbers-applied.md#measure-phrases)
 
-### Met / unmet / motive / prescription (values)
+### Met / unmet / motive / prescription (interests)
 
-Value stances **`tha` / `thu`** (Beginner); **`the`** / **`tho`** (Intermediate prescription / motive). Prescription **`the`** on the clause is deontic on the host act (*ought to … for this need*), not a performance report with a separate norm tag. The ending marks whether the move is [invited, offered, or protective](#asked-typical-history), not how firmly you address them.
+Interest stances **`tha` / `thu`** (Beginner); **`the`** / **`tho`** (Intermediate prescription / motive). Prescription **`the`** on the clause is deontic on the host act (*ought to … for this interest*), not a performance report with a separate norm tag. The ending marks whether the move is [invited, offered, or protective](#asked-typical-history), not how firmly you address them.
 
-[Values](values.md)
+[Interests](interests.md)
 
-**Compare with:** [as-for](#as-for) is **`hozam`**, not a value stance.
+**Compare with:** [as-for](#as-for) is **`hozam`**, not a interest stance.
 
 ### Named handle
 
@@ -529,11 +529,11 @@ Phrase join **-n**.
 
 **Compare with:** a [titled phrase](#titled-phrase) can use that join **-n** while members keep ordinary endings.
 
-### Need inventory
+### Interest inventory
 
-Six closed psychological needs under `/ɡ/` `/th/` `/w/`.
+Six closed psychological interests under `/ɡ/` `/th/` `/w/`.
 
-[Values](values.md#need-inventory)
+[Interests](interests.md#interest-inventory)
 
 ### Number as verb / adverb / interjection / discourse
 
@@ -593,7 +593,7 @@ Closed `/y/` particles **`yael` / `yuel` / …**.
 
 Motive **`tho`** endings.
 
-[Values](values.md#value-preference)
+[Interests](interests.md#value-preference)
 
 ### Prominence
 
@@ -676,7 +676,7 @@ Word-initial job letter.
 
 ### So that / event purpose
 
-Clause-pole **`olala`**: intended outcome of the host (*so that Ululon sits*; NP *for a money-bag*). Not locative *toward*, not values **`tho`**, not discourse *therefore*.
+Clause-pole **`olala`**: intended outcome of the host (*so that Ululon sits*; NP *for a money-bag*). Not locative *toward*, not interest **`tho`**, not discourse *therefore*.
 
 [Dependents](dependents.md#so-that)
 
@@ -728,7 +728,7 @@ Utterance setting: statement / question / command / prohibition.
 
 [Speech moves](speech-moves.md#speech-act)
 
-**Compare with:** values **prescription warrant** is [invited / offered / protective](#asked-typical-history), not speech act. Polar [stance](#polar-stance) is a left-edge particle.
+**Compare with:** interest **prescription warrant** is [invited / offered / protective](#asked-typical-history), not speech act. Polar [stance](#polar-stance) is a left-edge particle.
 
 ### Sufficient / necessary
 
@@ -772,11 +772,11 @@ Mood how-exceptionless (COMMON … RULE).
 
 [Knowing](knowing.md#universality)
 
-### Values
+### Interests
 
-Need + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`gobobum`** + `/w/` need.
+Interest + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`gobobum`** + `/w/` need.
 
-[Values](values.md)
+[Interests](interests.md)
 
 ### Viewpoint laterals
 
