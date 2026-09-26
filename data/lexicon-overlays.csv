@@ -162,9 +162,9 @@ en,h,,join_relation,prioritizing,join-relation prioritizing (adverb),rank join e
 aen,v,,join_act,equates,join-act equates or ties objects,equative ae+n as verb; equates ties candidates together,join-across-roles.md#join-act-verbs
 aen,g,,join_relation,on-a-par,join-relation on a par with (adjective),equative ae+n on /g/; on a par equates with argument,join-across-roles.md#join-relations
 aen,h,,join_relation,on-a-par,join-relation equating or tying (adverb),equative ae+n on /h/; equating ties to argument,join-across-roles.md#join-relations
-oen,v,,join_act,tries,join-act tries object,trial oe+n as verb; tries tests the fix,join-across-roles.md#join-act-verbs
-oen,g,,join_relation,for-trying,join-relation for trying (adjective),trial oe+n on /g/; for trying tests argument,join-across-roles.md#join-relations
-oen,h,,join_relation,for-trying,join-relation trying (adverb),trial oe+n on /h/; trying is trial of argument,join-across-roles.md#join-relations
+oen,v,,join_act,starts-with,join-act starts with object,sequence oe+n as verb; starts with puts the object first in order,join-across-roles.md#join-act-verbs
+oen,g,,join_relation,starting-with,join-relation starting with (adjective),sequence oe+n on /g/; starting with puts argument first in order,join-across-roles.md#join-relations
+oen,h,,join_relation,starting-with,join-relation starting with (adverb),sequence oe+n on /h/; starting with puts argument first in order,join-across-roles.md#join-relations
 uen,v,,join_act,deprioritizes,join-act deprioritizes object,counterrank ue+n as verb; deprioritizes puts this last,join-across-roles.md#join-act-verbs
 uen,g,,join_relation,deprioritizing,join-relation deprioritizing (adjective),counterrank ue+n on /g/; deprioritizing trails argument,join-across-roles.md#join-relations
 uen,h,,join_relation,deprioritizing,join-relation deprioritizing (adverb),counterrank ue+n on /h/; deprioritizing puts argument last,join-across-roles.md#join-relations

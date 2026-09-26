@@ -363,7 +363,7 @@ Closed **`hel`** ranks **when** it matters. **`hal`** still means *only when* th
 |--------|-----|---------|-----|
 | **`hel` / `hem`** | priority among occasions | *preferably when A ≻ when B…* (closed / open) | **e** ≈ order |
 | **`hael` / `haem`** | equal frequency among occasions | *as often as* / *equally when A and when B* | **a** ≈ add + **e** ≈ order |
-| **`hoel` / `hoem`** | fallback occasions | *if A, else if B…* | **o** ≈ one + **e** ≈ order |
+| **`hoel` / `hoem`** | occasions in order | *first when A, then when B* (closed / open) | **o** ≈ one + **e** ≈ order |
 
 > `zazawan vawalal hamubum hozorem hel.`
 >
@@ -455,12 +455,12 @@ z-Azawan | v-climb | h-snow | h-anytime-except
 z-Azawan | v-climb | h-rain | h-snow | h-when-ranked
 :::
 
-**6.** *Azawan climbs when there is ice, or failing that, when there is fog.*
+**6.** *Azawan climbs first when there is ice, then when there is fog.*
 
 ::: details Show answer
 `zazawan vugumul hujel havogol hoel.`
 
-z-Azawan | v-climb | h-ice | h-fog | h-when-fallback
+z-Azawan | v-climb | h-ice | h-fog | h-when-in-order
 :::
 
 **7.** *Azawan is happy either when raining or at night, not both.*

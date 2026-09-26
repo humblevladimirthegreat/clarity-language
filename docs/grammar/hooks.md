@@ -399,6 +399,8 @@ Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). S
 >
 > "Azawan writes a book with a pen."
 
+**Compare with:** hook **`oel`** names where a path **ends** (*toward X*). A [sequence](joins.md#sequence-oe) join on one noun, **`zoel`**, names where it **starts** (*from X on*).
+
 > `zazawan uel bugugal vuvugul.`
 >
 > z-Azawan | [against | b-guard] | v-fight
