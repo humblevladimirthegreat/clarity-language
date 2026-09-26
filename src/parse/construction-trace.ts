@@ -32,7 +32,7 @@ export function wordConstructions(word: LexWord): string[] {
 /** Digitless-exponent class: which lesson a shorthand like `e`, `0e`, `e3`, `1e` belongs to. */
 function digitlessExpClass(stem: NumberStem, exp: string): string {
   const negative = stem.marker === "-" || stem.marker === "ru";
-  if (exp.includes("-e-") || (negative && exp === "e-")) return "imaginary";
+  if (exp.includes("-e-") || (negative && exp === "e-")) return "shortfall";
   if (/^[+±-]?0e/.test(exp)) return "zero";
   if (/^e\d/.test(exp)) return "bareOom";
   if (/^\d+e/.test(exp)) return "hyperbole";

@@ -650,6 +650,7 @@ function walkUnit(
       for (const mod of unit.unit.modifiers) pushIndex(into, takeRaw(cursor, mod.raw));
       pushIndex(into, takeRaw(cursor, unit.unit.word.raw));
       if (unit.unit.bound) pushIndex(into, takeRaw(cursor, unit.unit.bound.raw));
+      if (unit.unit.boundAmount) pushIndex(into, takeRaw(cursor, unit.unit.boundAmount.raw));
       break;
     case "linker":
     case "writingSpan":

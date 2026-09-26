@@ -91,7 +91,8 @@ function gPackage(cur: Cursor, pack: GPackage): GlossNode | undefined {
 
 function hUnit(cur: Cursor, unit: HUnit): GlossNode | undefined {
   const host = group([...unit.modifiers.map((m) => cur.take(m)), cur.take(unit.word)]);
-  return group([host, cur.take(unit.bound)]);
+  if (!unit.boundAmount) return group([host, cur.take(unit.bound)]);
+  return group([host, group([cur.take(unit.bound), cur.take(unit.boundAmount)])]);
 }
 
 function shared(cur: Cursor, item: CoordShared): GlossNode | undefined {

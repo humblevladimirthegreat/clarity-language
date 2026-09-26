@@ -51,7 +51,7 @@ Closed labels for psychological moods, poles, and emotion-compose pieces. Mood w
 | **UNCOUNTERED** | Universality: no counterexample comes to mind | [Knowing](knowing.md#universality) |
 | **WITNESSED** | Evidential: firsthand memory (reconstructive) | [Knowing](knowing.md#live-vs-memory) |
 
-**Compare with:** [imaginary](#digitless-exponent) (free-number `-e-`) and [quasi](#quasi) (`ROOTl-e-`) are not **NOTIONAL**.
+**Compare with:** [quasi](#quasi) (`ROOTl-e-`) is not **NOTIONAL**.
 
 ### Join-vowel names
 
@@ -293,9 +293,9 @@ Number word with marker and ending but no digit groups.
 
 ### Digitless exponent
 
-Advanced free-number specials (`+e`, `-e-`, `+0e`, …). **Imaginary** is free `-e-`.
+Advanced free-number specials (`+e`, `-e-`, `+0e`, …). **Just short** is free `-e-`.
 
-[Numbers](numbers.md#digitless-exponents), [imaginary](numbers.md#imaginary)
+[Numbers](numbers.md#digitless-exponents), [just short](numbers.md#just-short)
 
 **Compare with:** [quasi](#quasi) is derivation `ROOTl-e-`. **NOTIONAL** is the as-if [mood](#mood-tags), not a number.
 
