@@ -51,6 +51,7 @@ import type {
   Unit,
   Utterance,
   VpCoord,
+  BoundJoin,
 } from "./types.js";
 import type { LexWord } from "./types.js";
 
@@ -588,6 +589,7 @@ class AgelanSentenceParser extends CstParser {
         {
           ALT: () => {
             this.CONSUME(B);
+            this.OPTION3({ GATE: () => boundJoinAhead(this), DEF: () => this.SUBRULE(this.boundJoinTail) });
             // A number word right after the hosted /b/ is its amount (measure phrase, e.g. a signed offset).
             this.OPTION2({
               GATE: () => {
@@ -669,7 +671,14 @@ class AgelanSentenceParser extends CstParser {
     this.CONSUME(G);
     this.OPTION2(() => {
       this.CONSUME2(B);
+      this.OPTION3({ GATE: () => boundJoinAhead(this), DEF: () => this.SUBRULE(this.boundJoinTail) });
     });
+  });
+
+  // The one hosted /b/ slot may hold a join: more /b/ members closed by a /b/ join word.
+  public boundJoinTail = this.RULE("boundJoinTail", () => {
+    this.MANY({ GATE: () => this.LA(1).tokenType === B, DEF: () => this.CONSUME(B) });
+    this.CONSUME(JoinB);
   });
 
   public sharedAfterJoin = this.RULE("sharedAfterJoin", () => {
@@ -857,6 +866,19 @@ function childNodes(parent: CstNode, key: string): CstNode[] {
   return (parent.children[key] ?? []) as CstNode[];
 }
 
+/** Hosted `/b/` continues as a join: zero or more further `/b/` words, then a `/b/` join word. */
+function boundJoinAhead(parser: AgelanSentenceParser): boolean {
+  let i = 1;
+  while (parser.lookahead(i).tokenType === B) i++;
+  return parser.lookahead(i).tokenType === JoinB;
+}
+
+function buildBoundJoin(parent: CstNode): BoundJoin | undefined {
+  const tail = childNodes(parent, "boundJoinTail")[0];
+  if (!tail) return undefined;
+  return { members: childTokens(tail, "B").map(lexWordFromToken), join: lexWordFromToken(childToken(tail, "JoinB")!) };
+}
+
 function childToken(parent: CstNode, key: string, index = 0): IToken | undefined {
   const tok = parent.children[key]?.[index];
   return tok ? (tok as IToken) : undefined;
@@ -883,6 +905,7 @@ function buildGPackage(cst: CstNode): GPackage {
     word: lexWordFromToken(gTok),
     modifiers: childTokens(cst, "W").map(lexWordFromToken),
     bound: bTok ? lexWordFromToken(bTok) : undefined,
+    boundJoin: buildBoundJoin(cst),
     asOf: asOfCst ? buildAsOfPair(asOfCst) : undefined,
   };
 }
@@ -1011,6 +1034,7 @@ function buildHUnit(cst: CstNode): HUnit {
     word: lexWordFromToken(h),
     modifiers: childTokens(cst, "W").map(lexWordFromToken),
     bound: bound ? lexWordFromToken(bound) : undefined,
+    boundJoin: buildBoundJoin(cst),
     boundAmount: childToken(cst, "G") ? lexWordFromToken(childToken(cst, "G")!) : undefined,
   };
 }

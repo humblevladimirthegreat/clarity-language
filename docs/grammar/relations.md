@@ -206,9 +206,17 @@ Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extr
 
 > `zululon vajul hazanum badadul bazadol bal.`
 >
-> z-Ululon | v-sit | [h-between | b-train] | [b-station | b-and]
+> z-Ululon | v-sit | [h-between | [b-train | b-station | b-and]]
 >
 > "Ululon sits between a train and a station."
+
+The `/b/` after the host is **one slot**. A join (`bal`) or a [plural](plurality.md) fills it whole; the landmarks do not need a slot each. The same holds on a noun:
+
+> `zazawan gazanum badadul bazadol bal vajul.`
+>
+> [z-Azawan | [g-between | [b-train | b-station | b-and]]] | v-sit
+>
+> "Azawan, between a train and a station, sits."
 
 Ordinary `zazanul` is still *a sandwich*.
 
@@ -309,7 +317,7 @@ z-Ululon | [from | b-station] | v-walk | [toward | b-train]
 ::: details Show answer
 `zuhubun vajul hazanum badadul bazadol bal.`
 
-z-Uhubun | v-sit | [h-between | b-train] | [b-station | b-and]
+z-Uhubun | v-sit | [h-between | [b-train | b-station | b-and]]
 :::
 
 **4.** *Azawan runs out of a house into a train.*

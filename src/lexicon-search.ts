@@ -53,6 +53,7 @@ export const OVERLAY_KINDS = [
   "exchange",
   "proxy",
   "stimulus",
+  "deontic",
 ] as const;
 
 export type OverlayKind = (typeof OVERLAY_KINDS)[number];
@@ -359,6 +360,8 @@ export type OverlayHostError = {
   reason: string;
 };
 
+const ROLE_PREFIX = /^[aeuo]x/;
+
 /**
  * Hosted overlays must spell a published root (same emoji; sense_form starts with
  * that root). Join-series rows are exempt.
@@ -427,7 +430,8 @@ export function validateOverlayPublishedHosts(
       continue;
     }
 
-    if (!overlay.senseForm.startsWith(root)) {
+    // A role-compound overlay (`uxerenel`) spells the root after its role vowel + `x`.
+    if (!overlay.senseForm.replace(ROLE_PREFIX, "").startsWith(root)) {
       errors.push({
         row: rowNum,
         senseForm: overlay.senseForm,

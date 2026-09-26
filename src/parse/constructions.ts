@@ -123,6 +123,10 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "npPackage.Odo": { anchor: "dependents.md#dependent-clauses", summary: "stand-in as a noun" },
   "npPackage.WritingSpan": { anchor: "spans.md#writing", summary: "written span as a noun" },
 
+  "hUnitRule.boundJoinTail": { anchor: "relations.md#locative-relations", summary: "hosted /b/ slot filled by a join" },
+  "gPackage.boundJoinTail": { anchor: "relations.md#locative-relations", summary: "hosted /b/ slot on /ɡ/ filled by a join" },
+  "boundJoinTail.B": { anchor: "relations.md#locative-relations", summary: "later member of a hosted /b/ join" },
+  "boundJoinTail.JoinB": { anchor: "relations.md#locative-relations", summary: "join word closing a hosted /b/ slot" },
   "asOfWPair.W": { anchor: "relations.md#as-of", summary: "as-of /w/" },
   "asOfWPair.B": { anchor: "relations.md#as-of", summary: "as-of /b/ bound" },
   "gPackage.W": { anchor: "clause.md#adjective-detail-w", summary: "/w/ detail on an adjective" },

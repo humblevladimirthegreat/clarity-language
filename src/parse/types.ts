@@ -208,9 +208,13 @@ export type LeftEdge = {
   impliedForce?: ImpliedForce;
 };
 
+/** The hosted `/b/` slot filled by a join: later members and the closing `/b/` join word. */
+export type BoundJoin = { members: LexWord[]; join: LexWord };
+
 export type GPackage = {
   word: LexWord;
   bound?: LexWord;
+  boundJoin?: BoundJoin;
   /** Adjectives after the hosted pair describe the extra noun (clause.md § Complex chaining). */
   boundAdjs?: GPackage[];
   modifiers: LexWord[];
@@ -230,6 +234,7 @@ export type HUnit = {
   word: LexWord;
   modifiers: LexWord[];
   bound?: LexWord;
+  boundJoin?: BoundJoin;
   /** Number word on the hosted `/b/` (measure amount, e.g. a signed time offset). */
   boundAmount?: LexWord;
 };

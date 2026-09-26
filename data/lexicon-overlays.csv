@@ -185,3 +185,11 @@ owodom,h,🪵,of_relation,material,of-relation material (constitution),wood is t
 owodom,g,🪵,of_relation,material,of-relation material (constitution),wood is the stuff something is made of; material is the stuff in /b/,relations.md#of-relations
 ugunom,h,🗾,of_relation,origin,of-relation origin (provenance / identity source),a map of one land marks that area's identity; origin is the source in /b/,relations.md#of-relations
 ugunom,g,🗾,of_relation,origin,of-relation origin (provenance / identity source),a map of one land marks that area's identity; origin is the source in /b/,relations.md#of-relations
+erenel,th,🟢,deontic,PERMIT-granted,permission granted by a person (speaker by default or the /b/ grantor),green light switched on by someone; granted permission is a person saying go,values.md#permission
+erenem,th,🟢,deontic,PERMIT-allowed,permission from a rule or norm (no one grants it),green light on a standing signal; allowed is the rule saying go,values.md#permission
+ononel,th,⛔,deontic,FORBID-forbidden,forbidden by a person (speaker by default or the /b/ forbidder),no-entry sign put up by someone; a person blocks the way,values.md#permission
+ononem,th,⛔,deontic,FORBID-disallowed,disallowed by a rule or norm,standing no-entry sign; the rule blocks the way,values.md#permission
+uxerenel,th,🟢,deontic,CONSENT-given,consent given outright by the affected (the /b/ or else the actor),green light from the one it happens to; they said yes,values.md#consent
+uxerenem,th,🟢,deontic,CONSENT-assumed,consent assumed or inferred from the affected (the /b/ or else the actor),green light guessed from the one it happens to; I think they're OK with it,values.md#consent
+uxononel,th,⛔,deontic,CONSENT-refused,consent refused outright by the affected (overrides any earlier yes),no-entry sign from the one it happens to; they said no,values.md#consent
+uxononem,th,⛔,deontic,CONSENT-unlikely,consent presumed absent from the affected (they probably don't want it),no-entry sign guessed from the one it happens to; they probably don't want it,values.md#consent

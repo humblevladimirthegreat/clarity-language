@@ -319,6 +319,7 @@ function considerGPackage(ctx: Ctx, pkg: GPackage): void {
   }
   considerWord(ctx, pkg.word);
   if (pkg.bound) considerWord(ctx, pkg.bound);
+  for (const w of pkg.boundJoin?.members ?? []) considerWord(ctx, w);
   for (const adj of pkg.boundAdjs ?? []) considerGPackage(ctx, adj);
 }
 
@@ -326,6 +327,7 @@ function considerHUnit(ctx: Ctx, unit: HUnit): void {
   for (const mod of unit.modifiers) considerWord(ctx, mod);
   considerWord(ctx, unit.word);
   if (unit.bound) considerWord(ctx, unit.bound);
+  for (const w of unit.boundJoin?.members ?? []) considerWord(ctx, w);
   if (unit.boundAmount) considerWord(ctx, unit.boundAmount);
 }
 

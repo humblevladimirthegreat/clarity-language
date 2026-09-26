@@ -22,6 +22,7 @@ import type {
   SpanUnit,
   Unit,
   Utterance,
+  BoundJoin,
 } from "./types.js";
 
 export type GlossNode =
@@ -85,14 +86,22 @@ function gPackage(cur: Cursor, pack: GPackage): GlossNode | undefined {
   const asOf = pack.asOf ? group([cur.take(pack.asOf.word), cur.take(pack.asOf.bound)]) : undefined;
   const host = group([...mods, asOf, cur.take(pack.word)]);
   if (!pack.bound) return host;
-  const bound = cur.take(pack.bound);
+  const bound = boundSlot(cur, pack.bound, pack.boundJoin);
   return group([host, group([bound, ...(pack.boundAdjs ?? []).map((adj) => gPackage(cur, adj))])]);
 }
 
 function hUnit(cur: Cursor, unit: HUnit): GlossNode | undefined {
   const host = group([...unit.modifiers.map((m) => cur.take(m)), cur.take(unit.word)]);
-  if (!unit.boundAmount) return group([host, cur.take(unit.bound)]);
-  return group([host, group([cur.take(unit.bound), cur.take(unit.boundAmount)])]);
+  const bound = boundSlot(cur, unit.bound, unit.boundJoin);
+  if (!unit.boundAmount) return group([host, bound]);
+  return group([host, group([bound, cur.take(unit.boundAmount)])]);
+}
+
+/** One hosted `/b/` slot: a single noun, or a join's members plus its join word. */
+function boundSlot(cur: Cursor, bound: LexWord | undefined, join: BoundJoin | undefined): GlossNode | undefined {
+  const first = cur.take(bound);
+  if (!join) return first;
+  return group([first, ...join.members.map((m) => cur.take(m)), cur.take(join.join)]);
 }
 
 function shared(cur: Cursor, item: CoordShared): GlossNode | undefined {

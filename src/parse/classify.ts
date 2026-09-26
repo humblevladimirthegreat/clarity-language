@@ -114,6 +114,15 @@ function overlaySenseForm(word: MorphWord): string | null {
     return family.series + ending;
   }
 
+  if (
+    family.kind === "x" &&
+    family.xFamily === "role" &&
+    family.leftRoots.length === 0 &&
+    family.rightRoots?.length === 1
+  ) {
+    return `${family.roleVowel}x${family.rightRoots[0]}${ending}`;
+  }
+
   return null;
 }
 

@@ -16,6 +16,8 @@ reconsider dependent inner subject dropping rules. Under what cases should it be
 consider removing some emotion words from lexicon
 -expressiveness review
 -do a style pass in grammar-docs. Check for adherence to doc-style and otherwise ensure natural sounding explanations.
+-examples auto-fill with your name
+-coverage checker sees what is drilled
 
 final exam
 

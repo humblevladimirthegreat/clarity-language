@@ -22,6 +22,7 @@ import type {
   Unit,
   Utterance,
   VpCoord,
+  BoundJoin,
 } from "./types.js";
 import { parseWord, WordParseError } from "./word.js";
 
@@ -493,6 +494,10 @@ function joinLabel(joins: LexWord[], shared: Map<string, SharedRole>): string {
   return `join ${series}`;
 }
 
+function boundJoinWords(join: BoundJoin | undefined): LexWord[] {
+  return join ? [...join.members, join.join] : [];
+}
+
 function walkGPackage(cursor: Cursor, pack: GPackage, into: number[]) {
   for (const mod of pack.modifiers) pushIndex(into, takeRaw(cursor, mod.raw));
   if (pack.asOf) {
@@ -501,6 +506,7 @@ function walkGPackage(cursor: Cursor, pack: GPackage, into: number[]) {
   }
   pushIndex(into, takeRaw(cursor, pack.word.raw));
   if (pack.bound) pushIndex(into, takeRaw(cursor, pack.bound.raw));
+  for (const w of boundJoinWords(pack.boundJoin)) pushIndex(into, takeRaw(cursor, w.raw));
   for (const adj of pack.boundAdjs ?? []) walkGPackage(cursor, adj, into);
 }
 
@@ -650,6 +656,7 @@ function walkUnit(
       for (const mod of unit.unit.modifiers) pushIndex(into, takeRaw(cursor, mod.raw));
       pushIndex(into, takeRaw(cursor, unit.unit.word.raw));
       if (unit.unit.bound) pushIndex(into, takeRaw(cursor, unit.unit.bound.raw));
+      for (const w of boundJoinWords(unit.unit.boundJoin)) pushIndex(into, takeRaw(cursor, w.raw));
       if (unit.unit.boundAmount) pushIndex(into, takeRaw(cursor, unit.unit.boundAmount.raw));
       break;
     case "linker":

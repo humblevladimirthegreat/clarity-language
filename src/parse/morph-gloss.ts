@@ -1205,6 +1205,8 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
   }
 
   if (family.xFamily === "role") {
+    // A closed role-compound overlay (`thuxerenel` consent) glosses as its overlay label.
+    if (word.overlay) return [overlayLabel(word.overlay)];
     const role = ROLE_VOWEL[family.roleVowel ?? ""] ?? "role";
     const host = (family.rightRoots ?? []).map((root) =>
       rootSense(root, word.ending, tables, {
