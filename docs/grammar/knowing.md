@@ -367,7 +367,7 @@ English *already*, *still*, *not yet*, and *no longer* do not place an event in 
 >
 > "Azawan doesn't walk at the house anymore."
 
-The ending says whether the situation is expected to **change back**. Use **-m** when it could, or when you do not know. Use **-l** when it is not expected to.
+The ending says how settled the current stage is, on the same strong-to-light scale as [DECISION](intention.md#decision-changeability). Use **-m** when it could change back, or when you do not know. Use **-l** when it is not expected to. Use **-r** when it holds only for now: it is likely to change back soon, or, on *not yet*, the change may never come.
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -375,12 +375,22 @@ The ending says whether the situation is expected to **change back**. Use **-m**
 | `hanogol` | goes on, with no end in sight | *still, and it will keep on* |
 | `hezedel` | not yet, but it is sure to come | *not yet, but it will* |
 | `huwulul` | stopped, and it will not come back | *never again* |
+| `hahagar` | done, but likely to come undone | *already, for now* |
+| `hanogor` | goes on, but about to end | *still, for now* |
+| `hezeder` | not yet, and it may never come | *not yet, maybe never* |
+| `huwulur` | stopped for now; expected to resume | *paused* / *not for now* |
 
 > `zululon hahagal vebarul.`
 >
 > z-Ululon | h-already.lasting | v-departure
 >
 > "Ululon has already left, for good."
+
+> `zazawan huwulur vawalal.`
+>
+> z-Azawan | h-no-longer.for-now | v-walk
+>
+> "Azawan has stopped walking for now." — a pause, not quitting (`huwulul`)
 
 When only one `/ɡ/` adjective is still or no longer so, write the same word under `/w/` immediately before that adjective.
 
