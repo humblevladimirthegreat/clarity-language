@@ -10,4 +10,5 @@ docs/grammar/public/tts/voices.npz
 .env.*
 !.env.example
 tmp/
-docs/grammar/.vitepress/.temp/*.tsbuildinfo
+docs/grammar/.vitepress/.temp/
+*.tsbuildinfo
