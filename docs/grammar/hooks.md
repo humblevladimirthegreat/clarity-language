@@ -430,6 +430,64 @@ Several extra-noun hooks on one clause are several extras (*from* one landmark *
 
 **Compare with:** company *with Ululon* is a [join-relation](join-across-roles.md#join-relations). *Without* is a join-relation too. *Like* stays [simile](relations.md#similative). *Between* stays a hosted pair plus a `/b/` join ([relations](relations.md#locative-relations)). *So that Ululon sits* is still **`holalam barl`**.
 
+### Here and there, this and that {#deixis}
+<a id="here-there"></a>
+
+English *here*, *there*, *this*, and *that* point at things by distance. Agalan points from a **person in the conversation** instead: put a place hook before [speaker, listener, or interlocutors](pronouns.md#special-pronouns) in `/b/`. You always say whose *here* you mean, the same way [viewpoint laterals](roles.md#viewpoint-laterals) say whose *left*.
+
+Names come first. When you know who is talking or listening, use their name as the landmark (`om bazawan` *near Azawan*). Speaker and listener are for when the conversation role is the point, or you have no name to use.
+
+| Agalan | Landmark | English |
+|--------|----------|---------|
+| `om bugobon` | near the speaker | *here*, *this* |
+| `om bedonen` | near the listener | *there (by you)*, *that* |
+| `om bahan` | near both of you | *here (with us)* |
+| `um bahan` | away from both of you | *over there*, *yonder* |
+
+Use `ol` in place of `om` for the exact spot (`ol bugobon` *right where I am*).
+
+> `zodogol om bugobon vajul.`
+>
+> z-dog | [near | b-speaker] | v-sit
+>
+> "This dog sits here by me."
+
+> `zazawan dabogol om bedonen vejel.`
+>
+> z-Azawan | d-book | [near | b-listener] | v-see
+>
+> "Azawan sees that book by you."
+
+> `zululon velebel um bahan.`
+>
+> z-Ululon | v-sleep | [away-from | b-interlocutors]
+>
+> "Ululon sleeps over there."
+
+English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Agalan names the landmark with a motion verb and a path hook: **`oel`** (*toward*) for *come*, **`ul`** (*from*) for *go away*.
+
+> `zazawan vawalal oel bugobon.`
+>
+> z-Azawan | v-walk | [toward | b-speaker]
+>
+> "Azawan comes over to me."
+
+> `zululon vawalal oel bedonen.`
+>
+> z-Ululon | v-walk | [toward | b-listener]
+>
+> "Ululon is coming to you."
+
+> `zazawan vawalal ul bugobon.`
+>
+> z-Azawan | v-walk | [from | b-speaker]
+>
+> "Azawan walks away from me."
+
+In reported speech, the speaker is still whoever says the whole sentence. After *that* (`darl`, see [dependents](dependents.md#stand-in)), `om bugobon` is near the person talking now. Inside a quoted [cite span](spans.md), the quoted person is the speaker, as in English direct quotes.
+
+**Compare with:** *that dog* for a dog already named is [resume **-r**](pronouns.md#resume-r) (`zodor`), not a place. *Where?* is `ol bar` ([Where?](questions.md#where)).
+
 ### Parallel chains {#parallel-chains}
 
 You already hook one named A with a single `A HOOK B`. To stack several hooks on that **same** A (including B and except C, or two includings), add more hooks after the first right-hand side: `A HOOK₁ B HOOK₂ C`. Each hook still applies to A in parallel, with its own side; vowels and endings may mix. English *including (B except C)* would nest C under B instead.

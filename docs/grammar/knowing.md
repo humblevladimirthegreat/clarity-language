@@ -731,8 +731,6 @@ For *just* and *about to*, use the [just-short](numbers.md#just-short) amount wi
 >
 > "It is about to rain."
 
-An offset of zero (`bohoram g+0`) places the event at now, still on a channel. Agalan has no bare *now* word.
-
 > `zululon thabawam bohoram g-3 velebel.`
 >
 > 🔊 *zululon thabawam bohoram grurel velebel.*
@@ -744,6 +742,30 @@ An offset of zero (`bohoram g+0`) places the event at now, still on a channel. A
 With an [as-of](relations.md#as-of) pair, the offset counts from that whose-now instead of speech-now.
 
 **Compare with:** an absolute clock or date (`h_#22,7`) dates the event without a channel. [RESIDUE](#residue) and [FORMER](#former-climate) do not locate time, so they take no offset.
+
+#### Now and today {#now}
+
+Agalan has no short *now* word. Say *now* with an offset of **zero**: the event sits no time away from the moment you speak. The channel stays, so *now* still says how you know it.
+
+> `zululon thunevem bohoram g+0 velebel.`
+>
+> 🔊 *zululon thunevem bohoram grazol velebel.*
+>
+> z-Ululon | [th-INFERRED | [b-hour | g-zero]] | v-sleep
+>
+> "Ululon must be asleep right now."
+
+The unit sets how wide *now* is. Zero hours is *right now*; zero [days](numbers-applied.md#stock-units) is *today*.
+
+> `zazawan theraram bunuzem g+0 vuzunul.`
+>
+> 🔊 *zazawan theraram bunuzem grazol vuzunul.*
+>
+> z-Azawan | [th-TOLD | [b-day | g-zero]] | v-sing
+>
+> "I hear Azawan sings today."
+
+Use zero on a channel that takes either sign. **LIVE** `thadezem` already means *now in view*, so it needs no offset. **WITNESSED** and **RECORDED** take **`-`** only, and PREDICT and PLAN take **`+`** only, so zero is not a sentence on them.
 
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>

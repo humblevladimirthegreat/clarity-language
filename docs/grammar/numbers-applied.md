@@ -92,6 +92,10 @@ Base and everyday units (each row is a **unit metaphor**; the literal picture st
 | mole | `ugozo` *mole* | `bugozom g+1` | `ugozol` *microscope* | 🔬: amount of substance |
 | candela | `uluhu` *candela* | `buluhum g+100` | `uluhul` *lightbulb* | 💡: luminous intensity |
 | hour (civil duration) | `ohora` *hour* | `bohoram g+3` | `ohoral` *hourglass* | ⏳: civil hour block |
+| day | `unuze` *day* | `bunuzem g+2` | `unuzel` *sunrise* | 🌅: sunrise to sunrise |
+| week | `alena` *week* | `balenam g+1` | `alenal` *calendar* | 📅: one row of the calendar page |
+| month | `amono` *month* | `bamonom g+6` | `amonol` *moon* | 🌙: one lunar cycle |
+| year | `urewo` *year* | `burewom g+10` | `urewol` *fireworks* | 🎆: fireworks greet each new year |
 | heat grade (not kelvin) | `edehe` *temperature* | `bedehem g+37` | `edehel` *thermometer* | 🌡️: how hot or cold |
 
 Related **quantity** words (*heavy*, *flow*, *time* as continuum, …) stay on their own roots (`arogom` *heavy*, `gumem` *duration*, …); they are not SI measure nouns.

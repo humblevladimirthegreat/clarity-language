@@ -96,7 +96,7 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 | **`ahan`** | speaker and addressees together (`zahan` in subject slot) | *we* (you and I) | `ahal` *handshake* | 🤝: sharing the floor together |
 | **`enenun`** | nonspecific individual (`zenenun` in subject slot) | *someone* | `enenul` *neutral* | 😐: not a particular person |
 
-**Compare with:** *I and my people* / *you all* / *Azawan and associates* use **-x** ([clusivity](plurality.md#clusivity)). Inclusive *you and I* on this page is **`aha`**.
+**Compare with:** *I and my people* / *you all* / *Azawan and associates* use **-x** ([clusivity](plurality.md#clusivity)). Inclusive *you and I* on this page is **`aha`**. *Here* / *there* and *this* / *that* use these same words as a landmark after a place hook ([deixis](hooks.md#deixis)).
 
 ### Translation practice {#beginner-translation-practice}
 
