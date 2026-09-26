@@ -221,7 +221,7 @@ z-Uhubun | th-MAY | v-cry
 
 English often says *how you know* a claim (*I saw it*, *I heard*, *I figured*). Agalan keeps the ordinary content verb and adds a closed `/th/` mood word. That word is the **channel** the claim came through, so the same walk or sleep can sit under a live look, memory, a recording, a pattern of cases, clues, hearsay, a gut sense, or a tale.
 
-Verbs have **no past or future letter**. Some channels already locate the event because of how you know: **LIVE** is watching while the scene is still in view; **WITNESSED** is memory of watching; **RECORDED** is playback of a capture. [PREDICT](intention.md#predict) / [PLAN](intention.md#plan-predict) look ahead (the event is later). Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, recency) when inference or hearsay needs a different time than this stretch.
+Verbs have **no past or future letter**. Some channels already locate the event because of how you know: **LIVE** is watching while the scene is still in view; **WITNESSED** is memory of watching; **RECORDED** is playback of a capture. [PREDICT](intention.md#predict) / [PLAN](intention.md#plan-predict) look ahead (the event is later). Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, or a [signed offset](#dated-channel) on the channel) when inference or hearsay needs a different time than this stretch.
 
 > `zazawan thadezem vawalal.`
 >
@@ -279,6 +279,50 @@ Pick one evidential **root** for how you know.
 | **`thadezem`** | concurrent / in-view observation | *live* / *from the scene* | `adezel` *attest* | 👁️‍🗨️: seeing-and-saying while it is in view |
 | **`thuvuvum`** | reconstructive / recalled observation | *I remember* / *from memory* | `uvuvul` *fishing* | 🎣: retrieval from the water |
 | **`theregom`** | documented / captured past | *on record* / *according to…* | `eregol` *record* | ⏺️: playback archive |
+
+### Dated channel (signed offset) {#dated-channel}
+<a id="ago"></a>
+<a id="time-offset"></a>
+
+English *three hours ago* and *in three hours* count from now. Agalan counts from the channel instead: put a [measure phrase](numbers-applied.md#measure-phrases) in `/b/` immediately after the evidential. The amount is **signed**: **`-`** is earlier than now, **`+`** is later than now. The offset always dates the **event**, not the moment you learned about it. There is no bare *ago* word, so a dated claim always says how you know it.
+
+> `zazawan thuvuvum bohoram g-3 vawalal.`
+>
+> 🔊 *zazawan thuvuvum bohoram grurel vawalal.*
+>
+> z-Azawan | [th-WITNESSED | [b-hour | g-minus.three]] | v-walk
+>
+> "I saw Azawan walk three hours ago."
+
+> `zululon theraram bohoram g+3 vebarul.`
+>
+> 🔊 *zululon theraram bohoram grarel vebarul.*
+>
+> z-Ululon | [th-TOLD | [b-hour | g-three]] | v-departure
+>
+> "I hear Ululon leaves in three hours."
+
+Some channels only point one way:
+
+| Channel | Sign | Why |
+|---------|------|-----|
+| **`thuvuvum`** WITNESSED, **`theregom`** RECORDED | **`-`** only | you already observed or captured it |
+| **`thadezem`** LIVE | no offset | the scene is in view now |
+| **`thabawam`** PATTERN | **`-`** or **`+`** | **`-`**: it happened then, if the pattern held; **`+`**: it will, if the pattern holds |
+| **`thunevem`** INFERRED, **`theraram`** TOLD, **`theherem`** FELT, **`thorolom`** TALE | **`-`** or **`+`** | the channel does not fix the time |
+| [PREDICT](intention.md#predict) **`thelezom`**, [PLAN](intention.md#plan-predict) **`themabam`** | **`+`** only | the event is later |
+
+> `zululon thabawam bohoram g-3 velebel.`
+>
+> 🔊 *zululon thabawam bohoram grurel velebel.*
+>
+> z-Ululon | [th-PATTERN | [b-hour | g-minus.three]] | v-sleep
+>
+> "Going by the pattern, Ululon slept three hours ago."
+
+With an [as-of](relations.md#as-of) pair, the offset counts from that whose-now instead of speech-now.
+
+**Compare with:** an absolute clock or date (`h_#22,7`) dates the event without a channel. [RESIDUE](#residue) and [FORMER](#former-climate) do not locate time, so they take no offset.
 
 ### Residue and former climate
 <a id="residue"></a>
