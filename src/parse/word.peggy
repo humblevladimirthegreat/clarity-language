@@ -712,7 +712,7 @@ StandInCoda
   = "rl" / "rm" / "rn"
 
 JoinSeries
-  = "ao" / "ua" / "uo" / "ae" / "oe" / "ue" / "a" / "e" / "o" / "u"
+  = "ao" / "ua" / "uo" / "ae" / "oe" / "eo" / "ue" / "a" / "e" / "o" / "u"
 
 // ── Plain content / foreign ─────────────────────────────────────────────────
 

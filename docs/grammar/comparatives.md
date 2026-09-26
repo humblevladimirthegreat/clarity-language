@@ -292,6 +292,58 @@ When English would say *Ululon walks more intensely than Azawan*, the ladder is 
 
 **Compare with:** `gohogem` after `zel` (no verb) is *more intense* as a quality of the people. **`hohogem` after the verb** is ordinary *how* they walk, not the ladder.
 
+### Amount scale (`g+`) {#amount-scale}
+
+When English would say *more cats than dogs*, the ladder is **how many**, not a quality. Keep the rank join. For the shared word, write the [digitless number](numbers.md#digitless) **`g+`**: after a rank join it means *by amount*.
+
+> `zagadalx zodogolx zel g+.`
+>
+> [z-cat-x | z-dog-x | z-rank/more | g-amount]
+>
+> "There are more cats than dogs."
+
+> `zagadalx zodogolx zuel g+.`
+>
+> [z-cat-x | z-dog-x | z-rank/less | g-amount]
+>
+> "There are fewer cats than dogs."
+
+> `zagadalx zodogolx zael g+.`
+>
+> [z-cat-x | z-dog-x | z-equal-rank | g-amount]
+>
+> "There are as many cats as dogs."
+
+The noun decides whether English says *many* or *much*: cats are counted, tea is measured. Agalan uses the same **`g+`** for both.
+
+Open **`g~+`** ranks by a **rough impression** instead of a count: *it looks like more cats than dogs*. Use **`g+`** when you counted or measured, and **`g~+`** when you are going by how it seems.
+
+> `zagadalx zodogolx zel g~+.`
+>
+> [z-cat-x | z-dog-x | z-rank/more | g-amount.about]
+>
+> "It looks like there are more cats than dogs."
+
+To say **how many more**, put the difference in `/b/` right after **`g+`**. A count needs no unit noun: the unit is the thing counted.
+
+> `zagadalx zodogolx zel g+ b+3.`
+>
+> [z-cat-x | z-dog-x | z-rank/more | [g-amount | b-three]]
+>
+> "There are three more cats than dogs."
+
+**Compare with:** after set join **`a`**, a shared word describes each item, so `zagadalx zodogolx zal g+` is *several cats and several dogs*. Only a **rank** join turns **`g+`** into the scale. For a named quantity such as weight or time, use its own word (`garogom`, `gumem`), not **`g+`**.
+
+### Frequency scale (`h+`) {#frequency-scale}
+
+*Walks more often than* ranks how many **times**. Write digitless **`h+`** in the manner slot right after the rank join. Only digitless **`h+`** works here. Other number words are not manner words.
+
+> `zazawan zululon zel h+ vawalal.`
+>
+> [z-Azawan | z-Ululon | z-rank/more | h-how-often] | v-walk
+>
+> "Azawan walks more often than Ululon."
+
 ### Distributive *both are ADJ*
 <a id="distributive-both"></a>
 
@@ -561,6 +613,88 @@ Single-item `zazawan zuel gomonam` is *the least challenging* in the group in pl
 | `zugobon zoloben zuel gomonam` | I am less challenging than Everyone |
 | `zugobon zululon zuel guzunul` | I am less skilled at singing than **Ululon** (ordinary person comparee) |
 
+### Need benchmarks (*enough* / *too*) {#need-benchmarks}
+
+English *enough* and *too* compare against **what a need requires**. Agalan names that bar like the others: the [need root](values.md#need-inventory) plus **-n**. The bar is the **speaker's** need unless you say otherwise.
+
+| Agalan | Use | English | Same root as |
+|---------|-----|---------|----------------|
+| **`zegen`** | need bar, need not named | *Needed* (what is needed) | `egel` *egg* |
+| **`zuhuhen`** | survival need bar | *what safety needs* | `uhuhel` *shield* |
+| **`zonogon`** | relatedness need bar | *what connection needs* | `onogol` *knot* |
+| **`zolozon`** | competence need bar | *what getting it done needs* | `olozol` *toolbox* |
+| **`zalodon`** | autonomy need bar | *what choice needs* | `alodol` *ballot-box* |
+| **`zaweron`** | pleasure need bar | *what enjoyment needs* | `awerol` *strawberry* |
+
+Tie **`ae`** against a need bar is *enough*. Rank **`e`** is *too much*, and **`ue`** is *not enough*.
+
+> `zadedal zegen zael g+.`
+>
+> [z-tea | z-Needed | z-equal-rank | g-amount]
+>
+> "There is enough tea."
+
+> `zadedal zegen zel g+.`
+>
+> [z-tea | z-Needed | z-rank/more | g-amount]
+>
+> "There is too much tea."
+
+> `zadedal zegen zuel g+.`
+>
+> [z-tea | z-Needed | z-rank/less | g-amount]
+>
+> "There is not enough tea."
+
+With a quality as the scale, the same pattern gives *too ADJ* and *ADJ enough*. A specific need bar says which need sets the limit.
+
+> `zadedal zuhuhen zel gohodol.`
+>
+> [z-tea | z-Survival-need | z-rank/more | g-hot]
+>
+> "The tea is too hot to be safe."
+
+To say **whose** need it is, put that person in `/b/` right after the shared scale.
+
+> `zadedal zegen zael g+ bululon.`
+>
+> [z-tea | z-Needed | z-equal-rank | [g-amount | b-Ululon]]
+>
+> "There is enough tea for Ululon."
+
+**Compare with:** **`zuroron`** (*my standard*) is what the speaker **prefers**. **`zegen`** is what the need **requires**. `zadedal zuroron zel g+` is *more tea than I like*, and `zadedal zegen zel g+` is *more tea than is needed*.
+
+### Vague amounts (*many* / *few*) {#vague-amounts}
+
+English *many* and *few* compare against an unstated baseline. Agalan always names it: put a bar in the list and rank on [amount](#amount-scale). Pick the bar that you mean.
+
+> `zagadalx zahaman zel g+.`
+>
+> [z-cat-x | z-Typical | z-rank/more | g-amount]
+>
+> "There are many cats (more than usual)."
+
+> `zagadalx zahaman zuel g+.`
+>
+> [z-cat-x | z-Typical | z-rank/less | g-amount]
+>
+> "There are few cats (fewer than usual)."
+
+> `zagadalx zuroron zel g~+.`
+>
+> [z-cat-x | z-my-standard | z-rank/more | g-amount.about]
+>
+> "It feels like too many cats to me."
+
+| English | Bar |
+|---------|-----|
+| *many* / *few* (for here) | **`zahaman`** *Typical* |
+| *a lot* / *not many* (on average) | **`zonunan`** *Average* |
+| *too many* / *too few* (to my taste) | **`zuroron`** *my standard* |
+| *too much* / *enough* / *not enough* | **`zegen`** or a specific need bar |
+
+The bar is never dropped. A single-item `zagadalx zel g+` already means *the most cats* (a [superlative](#superlatives)).
+
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
@@ -587,6 +721,13 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *Everyone* | `oloben` | `olobel` *globe* |
 | *challenge* | `gomonam` | |
 | *as-of.ledger* | `welerem` | |
+| *Needed* | `egen` | `egel` *egg* |
+| *Survival-need* | `uhuhen` | `uhuhel` *shield* |
+| *Relatedness-need* | `onogon` | `onogol` *knot* |
+| *Competence-need* | `olozon` | `olozol` *toolbox* |
+| *Autonomy-need* | `alodon` | `alodol` *ballot-box* |
+| *Pleasure-need* | `aweron` | `awerol` *strawberry* |
+| *artistry* | `abadum` | `abadul` *paintbrush* |
 
 #### English → Agalan {#advanced-english-to-agalan}
 
@@ -636,6 +777,30 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 `zazawan zululon zel welerem b_#22,7 gomonam.`
 
 [z-Azawan | z-Ululon | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
+:::
+
+**7.** *Azawan has enough artistry (as much as is needed).*
+
+::: details Show answer
+`zazawan zegen zael gabadum.`
+
+[z-Azawan | z-Needed | z-equal-rank | g-artistry]
+:::
+
+**8.** *Uhubun is too showy to be safe.*
+
+::: details Show answer
+`zuhubun zuhuhen zel gohohom.`
+
+[z-Uhubun | z-Survival-need | z-rank/more | g-showmanship]
+:::
+
+**9.** *Ululon sings less than connection needs.*
+
+::: details Show answer
+`zululon zonogon zuel guzunul.`
+
+[z-Ululon | z-Relatedness-need | z-rank/less | g-sing]
 :::
 
 #### Agalan → English {#advanced-agalan-to-english}
@@ -692,6 +857,33 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 [z-Azawan | z-Ululon | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 
 *As of 22 July, Azawan is more challenging than Ululon.*
+:::
+
+**7.** `zazawan zolozon zael guzunul.`
+
+::: details Show answer
+
+[z-Azawan | z-Competence-need | z-equal-rank | g-sing]
+
+*Azawan sings well enough to get the job done.*
+:::
+
+**8.** `zuhubun zalodon zel gohohom.`
+
+::: details Show answer
+
+[z-Uhubun | z-Autonomy-need | z-rank/more | g-showmanship]
+
+*Uhubun is showier than free choice needs.*
+:::
+
+**9.** `zululon zaweron zuel gabadum.`
+
+::: details Show answer
+
+[z-Ululon | z-Pleasure-need | z-rank/less | g-artistry]
+
+*Ululon has less artistry than enjoyment needs.*
 :::
 
 ## See also

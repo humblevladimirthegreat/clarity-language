@@ -463,6 +463,25 @@ A sequence does not say which item is better. With two number endpoints and a SH
 
 **Compare with:** clause *and then* between sentences is [sequence **`xan`**](join-across-roles.md#sequence). **`zoel`** orders nouns inside one slot.
 
+### Reversed sequence (**`eo`**) {#reversed-sequence-eo}
+
+**`oe`** reads its list from the **start**. **`eo`** swaps the two letters and reads from the **end**: the last item listed comes first, as in a countdown.
+
+> `zazawan zululon zuhubun zeol.`
+>
+> [z-Azawan | z-Ululon | z-Uhubun | z-in-reverse-order]
+>
+> "Uhubun, then Ululon, then Azawan."
+
+Its main use is with one number. `z+5 zoel` runs **up** from 5 (*5 or more*). `z+5 zeol` runs **down** from 5 (*5 or fewer*): an inclusive [ray](numbers-applied.md#numeric-thresholds) the other way.
+
+| Arity | Closed **-l** | Open **-m** |
+|-------|---------------|-------------|
+| Multi (2+) | `A B zeol` *B, then A* | `A B zeom` *roughly B, then A* |
+| Single-item | `X zeol` *up to X* / *X or less* | `X zeom` *up to about X* |
+
+**`eo`** is a phrase join only: `/z/` `/d/` `/b/` `/ɡ/`. (cue: **e** ≈ order + **o** ≈ one: the letters of **`oe`** in reverse)
+
 ### Full single-item and standalone inventories
 
 Beginner already used single-item *just X* and standalone *nothing* / *everything*. The tables below are the rest of those phrase-level readings. The series also works under `/v/` and `/x/`: [Join across roles](join-across-roles.md#vp-clause-forms).
@@ -748,6 +767,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 `zazawan zululon zoel vuguzul.`
 
 [z-Azawan | z-Ululon | z-in-order] | v-kiss
+:::
+
+**10.** *Uhubun kisses first, then Ululon, then Azawan.* (list Azawan first)
+
+::: details Show answer
+`zazawan zululon zuhubun zeol vuguzul.`
+
+[z-Azawan | z-Ululon | z-Uhubun | z-in-reverse-order] | v-kiss
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}

@@ -107,6 +107,24 @@ alaban,b,🥼,benchmark,Professional,judgment benchmark Professional (expert / r
 oloben,z,🌐,benchmark,Everyone,judgment benchmark Everyone (universal reference class),globe links every place; the connected whole is the universal class,comparatives.md#judgment-benchmarks-worse-than
 oloben,d,🌐,benchmark,Everyone,judgment benchmark Everyone (universal reference class),globe links every place; the connected whole is the universal class,comparatives.md#judgment-benchmarks-worse-than
 oloben,b,🌐,benchmark,Everyone,judgment benchmark Everyone (universal reference class),globe links every place; the connected whole is the universal class,comparatives.md#judgment-benchmarks-worse-than
+egen,z,🥚,benchmark,Needed,judgment benchmark Needed (what the speaker's need requires; need unspecified),egg holds what is needed to grow; the need is the bar,comparatives.md#need-benchmarks
+egen,d,🥚,benchmark,Needed,judgment benchmark Needed (what the speaker's need requires; need unspecified),egg holds what is needed to grow; the need is the bar,comparatives.md#need-benchmarks
+egen,b,🥚,benchmark,Needed,judgment benchmark Needed (what the speaker's need requires; need unspecified),egg holds what is needed to grow; the need is the bar,comparatives.md#need-benchmarks
+uhuhen,z,🛡️,benchmark,Survival-need,judgment benchmark what the survival need requires (safety / health),shield guards survival; safety sets the bar,comparatives.md#need-benchmarks
+uhuhen,d,🛡️,benchmark,Survival-need,judgment benchmark what the survival need requires (safety / health),shield guards survival; safety sets the bar,comparatives.md#need-benchmarks
+uhuhen,b,🛡️,benchmark,Survival-need,judgment benchmark what the survival need requires (safety / health),shield guards survival; safety sets the bar,comparatives.md#need-benchmarks
+onogon,z,🪢,benchmark,Relatedness-need,judgment benchmark what the relatedness need requires (connection),knot ties people together; connection sets the bar,comparatives.md#need-benchmarks
+onogon,d,🪢,benchmark,Relatedness-need,judgment benchmark what the relatedness need requires (connection),knot ties people together; connection sets the bar,comparatives.md#need-benchmarks
+onogon,b,🪢,benchmark,Relatedness-need,judgment benchmark what the relatedness need requires (connection),knot ties people together; connection sets the bar,comparatives.md#need-benchmarks
+olozon,z,🧰,benchmark,Competence-need,judgment benchmark what the competence need requires (getting it to work),toolbox gets the job done; working sets the bar,comparatives.md#need-benchmarks
+olozon,d,🧰,benchmark,Competence-need,judgment benchmark what the competence need requires (getting it to work),toolbox gets the job done; working sets the bar,comparatives.md#need-benchmarks
+olozon,b,🧰,benchmark,Competence-need,judgment benchmark what the competence need requires (getting it to work),toolbox gets the job done; working sets the bar,comparatives.md#need-benchmarks
+alodon,z,🗳️,benchmark,Autonomy-need,judgment benchmark what the autonomy need requires (choice),ballot is choosing for yourself; choice sets the bar,comparatives.md#need-benchmarks
+alodon,d,🗳️,benchmark,Autonomy-need,judgment benchmark what the autonomy need requires (choice),ballot is choosing for yourself; choice sets the bar,comparatives.md#need-benchmarks
+alodon,b,🗳️,benchmark,Autonomy-need,judgment benchmark what the autonomy need requires (choice),ballot is choosing for yourself; choice sets the bar,comparatives.md#need-benchmarks
+aweron,z,🍓,benchmark,Pleasure-need,judgment benchmark what the pleasure need requires (enjoyment),strawberry is enjoyment; enjoyment sets the bar,comparatives.md#need-benchmarks
+aweron,d,🍓,benchmark,Pleasure-need,judgment benchmark what the pleasure need requires (enjoyment),strawberry is enjoyment; enjoyment sets the bar,comparatives.md#need-benchmarks
+aweron,b,🍓,benchmark,Pleasure-need,judgment benchmark what the pleasure need requires (enjoyment),strawberry is enjoyment; enjoyment sets the bar,comparatives.md#need-benchmarks
 onunul,g,🪙,identity,SAME,SAME identity (identical-to / same-as),coin has two faces one substance; same is one referent two labels,predication.md#identity-same
 adorom,th,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,dependents.md#dependent-clauses
 adorom,g,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,causation.md#if

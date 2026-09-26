@@ -484,6 +484,32 @@ Beginner already used **`g+`** for *more than one*. Any marker may drop every di
 
 **Compare with:** noun [**-x**](plurality.md) names a **group of referents**. Digitless **`ra`** names a **count/amount `>1`** without saying N. They may co-occur (`zagadalx g+3`).
 
+<a id="a-few"></a>
+
+Open **`g~+`** is a soft count: *a few* / *some*. It says there is more than one without claiming a number. The closed **`g+`** stays *more than one*.
+
+> `zagadalx g~+ vajul.`
+>
+> 🔊 *zagadalx gram vajul.*
+>
+> [z-cat-x | g-more-than-one.about] | v-sit
+>
+> "A few cats sit."
+
+<a id="mass-some"></a>
+
+A mass noun such as *tea* is not counted, so *more than one* makes no sense for it. On a mass noun, **`g+`** is *some*: an amount that is not zero.
+
+> `zadedal g+ vajul.`
+>
+> 🔊 *zadedal gral vajul.*
+>
+> [z-tea | g-more-than-one] | v-sit
+>
+> "Some tea sits there."
+
+*Many*, *few*, *enough*, and *too much* compare the amount against a baseline, so they are [comparatives](comparatives.md#vague-amounts), not number words.
+
 Phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory**. Digitless number **-r** repeats a **prior numeric value**. Digitless number **-l** (and **-m** / **-n**) introduces an unspecified amount of that marker.
 
 > `zululon d+ vejel. zazawan d=+ vejel.`

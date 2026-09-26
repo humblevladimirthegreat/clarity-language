@@ -227,6 +227,40 @@ The noun names the reference class; **`jo`** grades how much of that class. Same
 
 **Related form:** `25%` (`…jo`) and `0.25` (plain scalar) name the same magnitude; **`jo`** chooses the percent-scale reading. **`ju`** likewise names a ÷100 magnitude, framed as **points**.
 
+#### Fractions (*half of*) {#fractions}
+
+English *half of the cats* / *a third of the tea* splits the whole into N parts. Put **`g-N`** right after the noun: the **`ru`** marker divides, as `/h/` **`h-N`** does. A whole number of 2 or more names one part in N.
+
+> `zagadalx g-2 vajul.`
+>
+> 🔊 *zagadalx grudul vajul.*
+>
+> [z-cat-x | g-half-of] | v-sit
+>
+> "Half of the cats sit."
+
+> `zadedal g-3 vajul.`
+>
+> 🔊 *zadedal grurel vajul.*
+>
+> [z-tea | g-third-of] | v-sit
+>
+> "A third of the tea sits there."
+
+**`g-N`** is a fraction only right after a plain noun. After a [measure](#measure-phrases) unit, a minus number is still a negative amount (`bedurem g-2` *minus 2 meters*).
+
+#### *Most* {#most}
+
+*Most of the cats* means *more than half*. Write **`g+50%`** and close it as a greater-than [threshold](#numeric-thresholds) with **`guel`**.
+
+> `zagadalx g+50% guel vajul.`
+>
+> 🔊 *zagadalx gravazojol guel vajul.*
+>
+> [z-cat-x | g-50jo] | g-rank/less | v-sit
+>
+> "Most of the cats sit."
+
 ### Numbered alternatives (problem / solution / goal)
 <a id="numbered-alternatives"></a>
 <a id="ideation"></a>
@@ -505,11 +539,13 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bedurem g
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
-English *less than 5* / *greater than 5* is a **bound**, not a two-endpoint band. When the **only** member of a [rank join](joins.md#rank-joins) fence (**`e`** / **`ue`** / **`oe`**, and their open / named twins) is a compatible number word, that number is an extremum on the line. SHARED continuum is optional: absent = implicit numeric line; present = that named line (`z+5 zel gumem` = *time \< 5*). Special values such as +∞ use [digitless exponents](numbers.md#digitless-exponents) inside the number word (`g+e`).
+English *less than 5* / *greater than 5* is a **bound**, not a two-endpoint band. When the **only** member of a [rank join](joins.md#rank-joins) fence (**`e`** / **`ue`** / **`oe`** / **`eo`**, and their open / named twins) is a compatible number word, that number is an extremum on the line. SHARED continuum is optional: absent = implicit numeric line; present = that named line (`z+5 zel gumem` = *time \< 5*). Special values such as +∞ use [digitless exponents](numbers.md#digitless-exponents) inside the number word (`g+e`).
 
 Why **`e`** gives *less than*: `X zel` says X is first / greatest, so everything else on the line is less than X. Likewise `X zuel` says X is last / least, so everything else is greater than X.
 
 Sequence **`oe`** reads the line the other way: `X zoel` says the path **starts** at X, so it is *from X on*. A path includes its starting point (like a [range](#ranges)), so this ray is **inclusive**: `z+5 zoel` is *5 or more*.
+
+[Reversed sequence **`eo`**](joins.md#reversed-sequence-eo) runs the same path **down**: `z+5 zeol` starts at 5 and goes toward the low end, so it is *5 or fewer* / *at most 5*, again inclusive.
 
 > `z+5 zel.`
 >
@@ -527,13 +563,15 @@ Sequence **`oe`** reads the line the other way: `X zoel` says the path **starts*
 | **`z+5 zuem`** | open / approximate greater-than | *greater than ~5* |
 | **`z+5 zoel`** | inclusive ray from 5 | *5 or more* / *from 5 on* (`≥ 5`) |
 | **`z+5 zoem`** | open ray from about 5 | *from about 5 on* |
+| **`z+5 zeol`** | inclusive ray down from 5 | *5 or fewer* / *at most 5* (`≤ 5`) |
+| **`z+5 zeom`** | open ray down from about 5 | *up to about 5* |
 | **`z+5 zen`** | named unspecified extremum | *under-fives*-style label |
 | **`z+5 zaen`** | named equal-to band | *equal-to-5* / tie label |
 | **`z+5 zuen`** | named floor band | conventional *greater-than* label |
 
 Same under `/d/` `/b/` `/ɡ/` (`g+5 gel` = modifier *\<5*; `d+10 duel` = object *\>10*). **`ae`** single-item with a number is an ordinary tie of one. Boolean single-item (**`zal`** / **`zol`** / …) is *just this value*. Single-item **`z+ zel`** (zero-group) is ordinary single-item on plural/unspecified amount; +∞ is **`z+e`** / **`g+e`**.
 
-Rank bounds (**`e`** / **`ue`**) are **strict** (`<` / `>`). The sequence ray (**`oe`**) is **inclusive** (`≥`). For **≤ 5**, use a two-endpoint [range](#ranges) with the bound included.
+Rank bounds (**`e`** / **`ue`**) are **strict** (`<` / `>`). The sequence rays are **inclusive**: **`oe`** is `≥`, **`eo`** is `≤`.
 
 Standalone **`e`** + **-r** = unspecified member of the *\< X* ray (`z+5 zer` → *some/whatever value \< 5*; under question → *which value \< 5?*). **`ue`** takes no **-r** (stacked forms never do: [joins](joins.md#unspecified-member-r-phrase)).
 

@@ -55,7 +55,8 @@ export class ConstructionError extends SentenceParseError {
 
 const NO_PLURAL_POS = new Set(["w", "h", "th", "x"]);
 const VALUE_POS = new Set(["g", "th", "w"]);
-const RANK_SERIES = new Set(["e", "oe", "ue", "ae"]);
+const RANK_SERIES = new Set(["e", "oe", "eo", "ue", "ae"]);
+const PHRASE_POS = new Set(["z", "d", "b", "g"]);
 const KIND_SERIES = new Set(["ua", "uo"]);
 
 function series(word: LexWord | undefined): string | undefined {
@@ -155,6 +156,9 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
     throw new ConstructionError("pluralOnPos", word.raw);
   }
   const family = word.family;
+  if (family.kind === "joinMarker" && family.series === "eo" && !(word.pos && PHRASE_POS.has(word.pos))) {
+    throw new ConstructionError("reversedSequenceSlot", word.raw);
+  }
   if (family.kind === "x" && family.xFamily === "value") {
     if (word.pos && !VALUE_POS.has(word.pos)) throw new ConstructionError("valueSlot", word.raw);
     if (!family.leftRoots.every((root) => tables.needRoots.has(root))) {
@@ -171,6 +175,11 @@ function isHUnit(item: CoordShared): item is HUnit {
   return "word" in item && ((item as HUnit).word.pos === "h" || (item as HUnit).word.pos === "th");
 }
 
+/** Digitless `h+` / `h~+` after a rank join ranks by how often (comparatives.md#frequency-scale). */
+function isFrequencyScale(word: LexWord): boolean {
+  return word.family.kind === "number" && word.family.stem.marker === "+" && word.family.stem.groups.length === 0 && !word.family.stem.digitlessExp;
+}
+
 function enforceShared(join: LexWord | undefined, shared: CoordShared[]): void {
   const s = series(join);
   if (!s) return;
@@ -178,7 +187,7 @@ function enforceShared(join: LexWord | undefined, shared: CoordShared[]): void {
     if (KIND_SERIES.has(s) && isGPackage(item) && item.word.plural) {
       throw new ConstructionError("pluralKindAfterUniversal", `${join!.raw} ${item.word.raw}`);
     }
-    if (RANK_SERIES.has(s) && isHUnit(item) && item.word.family.kind === "number") {
+    if (RANK_SERIES.has(s) && isHUnit(item) && item.word.family.kind === "number" && !isFrequencyScale(item.word)) {
       throw new ConstructionError("rankJoinNumberManner", `${join!.raw} ${item.word.raw}`);
     }
   }

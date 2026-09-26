@@ -117,6 +117,7 @@ const JOIN_JOB: Record<string, string> = {
   e: "rank/more",
   ae: "equal-rank",
   oe: "in-order",
+  eo: "in-reverse-order",
   ue: "rank/less",
 };
 
@@ -322,6 +323,9 @@ export type MorphGlossContext = {
   dependentVerb?: boolean;
   /** Join closing no items (shared `/ɡ/` allowed): `zal` *none*, `zual` *everything*. */
   standaloneJoin?: boolean;
+  /** Digitless `g+` / `h+` right after a rank join: the amount / frequency scale. */
+  amountScale?: boolean;  /** `/ɡ/` `g-N` right after a plain noun: *1/N of* that noun. */
+  fraction?: boolean;
 };
 
 export type CompareMorphGlossResult = {
@@ -513,8 +517,41 @@ export function quotePayload(payload: string): string {
 const WRITTEN_SPAN: Record<string, string> = { "[": "CITE", "{": "MENTION", "(": "ASIDE", "<": "OPAQUE" };
 
 /** One leaf of the morph line; written spans render as a labeled bracket. */
+const AMOUNT_SCALE_SERIES = new Set(["e", "ue", "ae", "oe", "eo"]);
+
+/** Digitless `g+` / `h+` immediately after a rank join ([comparatives § Amount scale](../../docs/grammar/comparatives.md#amount-scale)). */
+function isAmountScale(word: LexWord, prev: LexWord | undefined): boolean {
+  const family = word.family;
+  if (family.kind !== "number" || (word.pos !== "g" && word.pos !== "h")) return false;
+  if (family.stem.marker !== "+" || family.stem.groups.length > 0 || family.stem.digitlessExp) return false;
+  return prev?.family.kind === "joinMarker" && prev.reading === "join" && AMOUNT_SCALE_SERIES.has(prev.family.series);
+}
+
+const FRACTION_NAMES: Record<number, string> = { 2: "half", 3: "third", 4: "quarter" };
+
+/** `/ɡ/` `g-N` (whole N ≥ 2) right after a plain **-l** noun ([numbers-applied § Fractions](../../docs/grammar/numbers-applied.md#fractions)). */
+function isFraction(word: LexWord, prev: LexWord | undefined): boolean {
+  const family = word.family;
+  if (family.kind !== "number" || word.pos !== "g" || family.stem.marker !== "-" || family.stem.digitlessExp) return false;
+  const [group, ...rest] = family.stem.groups;
+  if (!group?.mantissa || rest.length || group.exponentDigits || group.decimal || group.percent) return false;
+  if (Number(group.mantissa) < 2) return false;
+  return prev?.family.kind === "content" && prev.ending === "l" && (prev.pos === "z" || prev.pos === "d" || prev.pos === "b");
+}
+
+function fractionGloss(word: LexWord): string {
+  const family = word.family as Extract<LexWord["family"], { kind: "number" }>;
+  const n = Number(family.stem.groups[0]!.mantissa);
+  return `g-${FRACTION_NAMES[n] ?? `one-${ordinalEnglish(n)}`}-of`;
+}
+
 function wordGloss(word: LexWord, tables: ClassifyTables, ctx: MorphGlossContext): string {
   if (ctx.passThrough) return quotePayload(word.raw);
+  if (ctx.fraction) return fractionGloss(word);
+  if (ctx.amountScale && word.family.kind === "number") {
+    const about = word.family.writingEndingMark === "~" || word.ending === "m" ? ".about" : "";
+    return `${word.pos}-${word.pos === "h" ? "how-often" : "amount"}${about}`;
+  }
   const family = word.family;
   if (family.kind !== "writingSpan" || family.anaphor) return morphGlossFor(word, tables, ctx);
   let payload = family.payload.trim();
@@ -782,6 +819,8 @@ function analyzeLine(
   const ctxByIndex = words.map((word, index) => {
     const ctx = contextFor(word, index, words, parsed?.resolve, parsed, passThrough[index], dependentVerbIndexes.has(index));
     if (standaloneIndexes.has(index)) ctx.standaloneJoin = true;
+    if (isAmountScale(word, words[index - 1])) ctx.amountScale = true;
+    if (isFraction(word, words[index - 1])) ctx.fraction = true;
     return ctx;
   });
   return { words, ctxByIndex, parsed };
