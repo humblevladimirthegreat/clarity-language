@@ -203,14 +203,18 @@ owodom,h,🪵,of_relation,material,of-relation material (constitution),wood is t
 owodom,g,🪵,of_relation,material,of-relation material (constitution),wood is the stuff something is made of; material is the stuff in /b/,relations.md#of-relations
 ugunom,h,🗾,of_relation,origin,of-relation origin (provenance / identity source),a map of one land marks that area's identity; origin is the source in /b/,relations.md#of-relations
 ugunom,g,🗾,of_relation,origin,of-relation origin (provenance / identity source),a map of one land marks that area's identity; origin is the source in /b/,relations.md#of-relations
-erenel,th,🟢,deontic,PERMIT-granted,permission granted by a person (speaker by default or the /b/ grantor),green light switched on by someone; granted permission is a person saying go,interests.md#permission
-erenem,th,🟢,deontic,PERMIT-allowed,permission from a rule or norm (no one grants it),green light on a standing signal; allowed is the rule saying go,interests.md#permission
-ononel,th,⛔,deontic,FORBID-forbidden,forbidden by a person (speaker by default or the /b/ forbidder),no-entry sign put up by someone; a person blocks the way,interests.md#permission
-ononem,th,⛔,deontic,FORBID-disallowed,disallowed by a rule or norm,standing no-entry sign; the rule blocks the way,interests.md#permission
-uxerenel,th,🟢,deontic,CONSENT-given,consent given outright by the affected (the /b/ or else the actor),green light from the one it happens to; they said yes,interests.md#consent
-uxerenem,th,🟢,deontic,CONSENT-assumed,consent assumed or inferred from the affected (the /b/ or else the actor),green light guessed from the one it happens to; I think they're OK with it,interests.md#consent
-uxononel,th,⛔,deontic,CONSENT-refused,consent refused outright by the affected (overrides any earlier yes),no-entry sign from the one it happens to; they said no,interests.md#consent
-uxononem,th,⛔,deontic,CONSENT-unlikely,consent presumed absent from the affected (they probably don't want it),no-entry sign guessed from the one it happens to; they probably don't want it,interests.md#consent
+erenel,th,🟢,deontic,PERMIT-allowed,permission from a rule policy or formal right (no one in particular grants it),green light on a standing signal; allowed is the rule saying go,interests.md#permission
+erenem,th,🟢,deontic,PERMIT-granted,permission granted by a person (speaker by default or the /b/ grantor),green light switched on by someone; granted permission is a person saying go,interests.md#permission
+erener,th,🟢,deontic,PERMIT-tolerated,tacit permission (no one objected; nobody granted it),green light nobody switched off; tolerated is no one saying stop,interests.md#permission
+ononel,th,⛔,deontic,FORBID-disallowed,disallowed by a rule policy or formal ban,standing no-entry sign; the rule blocks the way,interests.md#permission
+ononem,th,⛔,deontic,FORBID-forbidden,forbidden by a person (speaker by default or the /b/ forbidder),no-entry sign put up by someone; a person blocks the way,interests.md#permission
+ononer,th,⛔,deontic,FORBID-frowned-on,tacitly disapproved (no one forbade it outright),no-entry sign half-raised; nobody said no but it is not welcome,interests.md#permission
+uxerenel,th,🟢,deontic,CONSENT-contract,consent by binding agreement from the affected (the /b/ or else the actor); withdrawing it has terms,green light signed in advance by the one it happens to; they agreed on paper,interests.md#consent
+uxerenem,th,🟢,deontic,CONSENT-given,consent given outright by the affected (the /b/ or else the actor); revocable any time,green light from the one it happens to; they said yes,interests.md#consent
+uxerener,th,🟢,deontic,CONSENT-assumed,consent assumed or inferred from the affected (the /b/ or else the actor),green light guessed from the one it happens to; I think they're OK with it,interests.md#consent
+uxononel,th,⛔,deontic,CONSENT-opted-out,binding refusal by the affected (a settled opt-out),no-entry sign signed by the one it happens to; they opted out for good,interests.md#consent
+uxononem,th,⛔,deontic,CONSENT-refused,consent refused outright by the affected (withdraws any earlier revocable yes),no-entry sign from the one it happens to; they said no,interests.md#consent
+uxononer,th,⛔,deontic,CONSENT-unlikely,consent presumed absent from the affected (they probably don't want it),no-entry sign guessed from the one it happens to; they probably don't want it,interests.md#consent
 ahagal,h,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,knowing.md#phasal
 ahagal,w,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,knowing.md#phasal
 ahagam,h,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,knowing.md#phasal

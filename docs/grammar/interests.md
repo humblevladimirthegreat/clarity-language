@@ -429,79 +429,95 @@ The `/b/` can name anyone: `thonogothum bululon.` owns a harm to Ululon, even wh
 
 **Compare with:** a met word with a `/b/` person (`thonogotham bululon.`) says the act met **Ululon's** interest: *Ululon appreciated it*, not your thanks.
 
-### Permission (`therenel` / `therenem`) {#permission}
+### Permission (`therenel` / `therenem` / `therener`) {#permission}
 
-English *may* / *is allowed to* says a restriction is lifted. Put **`therenel`** or **`therenem`** on the clause: stance **`th`** on the root **`erene`** (🟢 *green circle*). The ending says **who lifts the restriction**. Use **-l** when a person grants it; that person is the speaker unless a hosted `/b/` names someone else. Use **-m** when a rule or norm allows it and no one in particular is granting it.
+English *may* / *is allowed to* says a restriction is lifted. Put **`therenel`**, **`therenem`**, or **`therener`** on the clause: stance **`th`** on the root **`erene`** (🟢 *green circle*). The ending says **how formally the restriction is lifted**, on the same strong-to-light scale as the other stance endings. Use **-l** when a rule, policy, or formal right allows it. Use **-m** when a person grants it; that person is the speaker unless a hosted `/b/` names someone else. Use **-r** when no one granted it but no one objected either. If you do not know, use **-m**.
 
-> `zazawan vawalal therenel.`
+> `zazawan vawalal therenem.`
 >
 > z-Azawan | v-walk | th-PERMIT-granted
 >
 > "Azawan may walk (I'm allowing it)."
 
-> `zazawan vawalal therenel bululon.`
+> `zazawan vawalal therenem bululon.`
 >
 > z-Azawan | v-walk | [th-PERMIT-granted | b-Ululon]
 >
 > "Ululon lets Azawan walk."
 
-> `zuhubun vajul therenem.`
+> `zuhubun vajul therenel.`
 >
 > z-Uhubun | v-sit | th-PERMIT-allowed
 >
 > "Uhubun is allowed to sit (the rules allow it)."
 
-The negatives **`thononel`** / **`thononem`** use the root **`onone`** (⛔ *no entry*) with the same endings.
+> `zululon velebel therener.`
+>
+> z-Ululon | v-sleep | th-PERMIT-tolerated
+>
+> "Ululon sleeps, and no one is stopping it."
+
+The negatives use the root **`onone`** (⛔ *no entry*) with the same endings.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`therenel`** | a person grants it (speaker, or the `/b/`) | *may* / *I'm letting you* | **-l** ≈ locked to a grantor |
-| **`therenem`** | a rule or norm allows it | *is allowed to* | **-m** ≈ open standing rule |
-| **`thononel`** | a person forbids it | *may not* / *I won't let you* | **-l** ≈ locked to a forbidder |
-| **`thononem`** | a rule or norm forbids it | *is not allowed to* | **-m** ≈ open standing rule |
+| **`therenel`** | a rule, policy, or formal right allows it | *is allowed to* / *has the right to* | **-l** ≈ locked in (on paper) |
+| **`therenem`** | a person grants it (speaker, or the `/b/`) (default) | *may* / *I'm letting you* | **-m** ≈ a person's word |
+| **`therener`** | tolerated: no one granted it, no one objected | *no one's stopping it* | **-r** ≈ light (no word given) |
+| **`thononel`** | a rule, policy, or formal ban forbids it | *is not allowed to* | **-l** ≈ locked in (on paper) |
+| **`thononem`** | a person forbids it | *may not* / *I won't let you* | **-m** ≈ a person's word |
+| **`thononer`** | frowned on: no one forbade it, but it is not welcome | *people won't like it* | **-r** ≈ light (no word given) |
 
-To **ask** for permission, put the clause under [ask](questions.md#question): `yom zSELFn vajul therenel.` (*May I sit?*). Grant it with [**`yaol.`**](questions.md#polar-stance) (*go ahead*).
+To **ask** for permission, put the clause under [ask](questions.md#question): `yom zSELFn vajul therenem.` (*May I sit?*). Grant it with [**`yaol.`**](questions.md#polar-stance) (*go ahead*).
 
 **Compare with:** [prescription](#interest-force) **`the`** says the act *ought* to serve an interest; permission only says the act is *allowed*. [Ability](intention.md#incapability) says someone *can* do it; permission says whether they *may*.
 
-### Consent (`thuxerenel` / `thuxerenem`) {#consent}
+### Consent (`thuxerenel` / `thuxerenem` / `thuxerener`) {#consent}
 
-Consent is permission from **the one the act happens to**: their body, their things, their time. Put **`thuxerenel`** or **`thuxerenem`** on the clause: stance **`th`**, then role vowel **`u`** (the one it happens to), mid-word **`x`**, and the root **`erene`**. The hosted `/b/` names who consents. That slot holds one noun; when several people are affected, fill it with a [plural](plurality.md) or a [join](joins.md). The actor's own consent is always implied, so **with no `/b/` the only person affected is the actor**, and the clause reads as *letting yourself*.
+Consent is permission from **the one the act happens to**: their body, their things, their time. Put **`thuxerenel`**, **`thuxerenem`**, or **`thuxerener`** on the clause: stance **`th`**, then role vowel **`u`** (the one it happens to), mid-word **`x`**, and the root **`erene`**. The hosted `/b/` names who consents. That slot holds one noun; when several people are affected, fill it with a [plural](plurality.md) or a [join](joins.md). The actor's own consent is always implied, so **with no `/b/` the only person affected is the actor**, and the clause reads as *letting yourself*.
 
-The ending says **how you know**. Use **-l** when they said yes outright. Use **-m** when you are assuming or inferring it.
+The ending says **how binding the yes is**, on the same scale as [permission](#permission). Use **-l** for a binding agreement: they signed on in advance, and withdrawing has terms. Use **-m** when they said yes; they can take it back at any time. Use **-r** when you are assuming or inferring it and no one said yes. If you know they said yes but not how binding it is, use **-m**.
 
-> `zazawan vezehel thuxerenel buhubun.`
+> `zazawan vezehel thuxerenem buhubun.`
 >
 > z-Azawan | v-tell | [th-CONSENT-given | b-Uhubun]
 >
 > "Azawan tells, and Uhubun said yes to it."
 
-> `zazawan vezehel thuxerenem buhubun bululon bal.`
+> `zazawan vezehel thuxerenel buhubun.`
+>
+> z-Azawan | v-tell | [th-CONSENT-contract | b-Uhubun]
+>
+> "Azawan tells, as Uhubun agreed to in advance."
+
+> `zazawan vezehel thuxerener buhubun bululon bal.`
 >
 > z-Azawan | v-tell | [th-CONSENT-assumed | [b-Uhubun | b-Ululon | b-and]]
 >
 > "Azawan tells, assuming Uhubun and Ululon are OK with it."
 
-> `zululon velebel thuxerenel.`
+> `zululon velebel thuxerenem.`
 >
 > z-Ululon | v-sleep | th-CONSENT-given
 >
 > "Ululon lets themself sleep."
 
-**-m** is allowed but visibly weaker. Choosing it makes *I assumed* part of the sentence instead of hiding it inside *they were fine with it*. On yourself, **-m** is half-hearted: `zSELFn vajul thuxerenem.` is *I suppose I'm OK with sitting*.
+**-r** is allowed but visibly weaker. Choosing it makes *I assumed* part of the sentence instead of hiding it inside *they were fine with it*. On yourself, **-r** is half-hearted: `zSELFn vajul thuxerener.` is *I suppose I'm OK with sitting*. **-l** on yourself is a vow: `zSELFn vajul thuxerenel.` is *I've committed myself to sitting*.
 
-The negatives are **`thuxononel`** and **`thuxononem`**. **-l** means they said no; that overrides any earlier yes. **-m** means they probably don't want it; with no `/b/`, it is *not letting yourself*.
+The negatives **`thuxononel`** / **`thuxononem`** / **`thuxononer`** use the same endings. **-l** is a binding refusal: they opted out, and the matter is settled. **-m** means they said no. Any no withdraws an ordinary **-m** yes; only a **-l** agreement has terms for withdrawing. **-r** means they probably don't want it; with no `/b/`, it is *not letting yourself*.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thuxerenel`** | the affected said yes | *they agreed* / *I let myself* | **-l** ≈ locked to their word |
-| **`thuxerenem`** | consent assumed or inferred | *I think they're OK with it* | **-m** ≈ open guess |
-| **`thuxononel`** | the affected said no | *they refused* | **-l** ≈ locked to their word |
-| **`thuxononem`** | consent presumed absent | *they probably don't want it* / *I won't let myself* | **-m** ≈ open guess |
+| **`thuxerenel`** | a binding agreement; withdrawing it has terms | *by agreement* / *they signed on* | **-l** ≈ locked in (on paper) |
+| **`thuxerenem`** | the affected said yes; they can take it back (default) | *they agreed* / *I let myself* | **-m** ≈ their word, still open |
+| **`thuxerener`** | consent assumed or inferred | *I think they're OK with it* | **-r** ≈ light (no word given) |
+| **`thuxononel`** | a binding refusal | *they opted out* | **-l** ≈ locked in (on paper) |
+| **`thuxononem`** | the affected said no | *they refused* | **-m** ≈ their word |
+| **`thuxononer`** | consent presumed absent | *they probably don't want it* / *I won't let myself* | **-r** ≈ light (no word given) |
 
-To check in, ask: `yom zazawan vezehel thuxerenel.` (*Are you still OK with this?*).
+To check in, ask: `yom zazawan vezehel thuxerenem.` (*Are you still OK with this?*).
 
-**Compare with:** permission **`therenel`** can come from anyone with the standing to grant it: `zazawan vezehel therenel bululon.` means Ululon allowed it, which is not the same as the listener agreeing. `zSELFn vajul therenel.` is *I'm allowed to sit* (someone let me); `zSELFn vajul thuxerenel.` is *I let myself sit*.
+**Compare with:** permission **`therenem`** can come from anyone with the standing to grant it: `zazawan vezehel therenem bululon.` means Ululon allowed it, which is not the same as the listener agreeing. `zSELFn vajul therenem.` is *I'm allowed to sit* (someone let me); `zSELFn vajul thuxerenem.` is *I let myself sit*.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -642,7 +658,7 @@ z-Ululon | v-scream | th-survival-ought-invited | th-relatedness-motive-circumst
 **13.** *Uhubun lets Azawan kneel.*
 
 ::: details Show answer
-`zazawan vegenel therenel buhubun.`
+`zazawan vegenel therenem buhubun.`
 
 z-Azawan | v-kneel | [th-PERMIT-granted | b-Uhubun]
 :::
@@ -650,7 +666,7 @@ z-Azawan | v-kneel | [th-PERMIT-granted | b-Uhubun]
 **14.** *Azawan shushes, assuming Ululon and Uhubun are OK with it.*
 
 ::: details Show answer
-`zazawan vuzuhul thuxerenem bululon buhubun bal.`
+`zazawan vuzuhul thuxerener bululon buhubun bal.`
 
 z-Azawan | v-shush | [th-CONSENT-assumed | [b-Ululon | b-Uhubun | b-and]]
 :::
@@ -746,7 +762,7 @@ z-Ululon | v-scream | th-survival-motive-internal | h-always-except
 *Ululon screams for survival (internal motive, as usual).*
 :::
 
-**10.** `zululon vabal thononem.`
+**10.** `zululon vabal thononel.`
 
 ::: details Show answer
 
@@ -755,7 +771,7 @@ z-Ululon | v-pray | th-FORBID-disallowed
 *Ululon is not allowed to pray (the rules forbid it).*
 :::
 
-**11.** `zuhubun velebel thuxerenel.`
+**11.** `zuhubun velebel thuxerenem.`
 
 ::: details Show answer
 
@@ -764,7 +780,7 @@ z-Uhubun | v-sleep | th-CONSENT-given
 *Uhubun lets themself sleep.*
 :::
 
-**12.** `zazawan vazagal thuxononel bululon.`
+**12.** `zazawan vazagal thuxononem bululon.`
 
 ::: details Show answer
 
