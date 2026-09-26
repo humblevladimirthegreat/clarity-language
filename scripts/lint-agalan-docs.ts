@@ -52,6 +52,7 @@ import {
   withinSection,
 } from "../src/lint/learning-order.js";
 import { duplicateIds } from "../src/lint/grammar-anchors.js";
+import { constructionFamilies, drillCoverage, drillSkips } from "../src/lint/drill-coverage.js";
 import { CONSTRUCTIONS as STATIC_CONSTRUCTIONS, constructionRegistry } from "../src/parse/constructions.js";
 import { readingOrder } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { loadDefaultTables } from "../src/parse/index.js";
@@ -94,7 +95,8 @@ Checks backticked and fenced Agalan words under docs/grammar/.
 Morph-gloss mismatches, leftover ambiguity, missing morph glosses, coverage
 gaps, and translation word-bank English/lexicon mismatches fail.
 --check-ambiguity is always on for the corpus (flag kept for callers).
---order-report lists every learning-order finding (the default prints counts).`);
+--order-report lists every learning-order finding (the default prints counts).
+Families not practiced in their page band's translation drill fail.`);
       process.exit(0);
     }
     if (arg === "--check-ambiguity") {
@@ -150,6 +152,7 @@ function lintOverlayHosts(): number {
 
 type ConstructionUse = { id: string; section: Section };
 
+
 /**
  * Check 2 of docs/proposals/parser-strictness.md: every construction is used by
  * an example on the page its anchor names. Returns the number of gaps.
@@ -179,8 +182,6 @@ function checkConstructionCoverage(uses: readonly ConstructionUse[]): number {
  * Forward links are report-only (a link is how a page says "covered later");
  * `--order-report` lists them. Returns the number of failing findings.
  */
-const PARSER_SEGMENTS = new Set(["sentence", "token", "word", "reading", "resolve"]);
-
 function reportLearningOrder(order: LearningOrder, allUses: readonly ConstructionUse[], full: boolean): number {
   // Pages off the sidebar and `## See also` sections are not checked.
   const checked = (s: Section) => order.readingOrder.includes(s.page) && !s.ignored;
@@ -197,17 +198,9 @@ function reportLearningOrder(order: LearningOrder, allUses: readonly Constructio
   // when some span in the home heading's subtree traces any member. Parser
   // productions (`sentence`, `token`, `word`, `reading`, `resolve`) are one
   // family: they name the same lesson at different parse levels.
-  const families = new Map<string, { home: Section; ids: string[] }>();
-  for (const [id, home] of homes) {
-    if (!home) continue;
-    const segment = id.split(".", 1)[0]!;
-    const key = `${formatSection(home)} ${PARSER_SEGMENTS.has(segment) ? "parser" : segment}`;
-    let family = families.get(key);
-    if (!family) families.set(key, (family = { home, ids: [] }));
-    family.ids.push(id);
-  }
+  const families = constructionFamilies(homes);
   const notAtHome: string[] = [];
-  for (const { home, ids } of families.values()) {
+  for (const { home, ids } of families) {
     if (uses.some((u) => ids.includes(u.id) && withinSection(home, u.section))) continue;
     const elsewhere = [...new Set(uses.filter((u) => ids.includes(u.id)).map((u) => formatSection(u.section)))];
     const where = elsewhere.length > 0 ? `used in ${elsewhere.slice(0, 3).join(", ")}${elsewhere.length > 3 ? ", …" : ""}` : "used nowhere";
@@ -282,6 +275,37 @@ function reportLearningOrder(order: LearningOrder, allUses: readonly Constructio
     for (const line of links) console.log(line);
   }
   return failures;
+}
+
+/**
+ * Drill coverage: each family is practiced by its page's same-band translation
+ * drill. A missing drill section and an unpracticed family both fail and always
+ * print. Returns the number of findings.
+ */
+function reportDrillCoverage(order: LearningOrder, uses: readonly ConstructionUse[]): number {
+  const homes = new Map<string, Section | undefined>();
+  for (const [id, entry] of CONSTRUCTIONS) homes.set(id, resolveAnchor(order, entry.anchor));
+  const skips = drillSkips(readFileSync(join(rootDir, "docs", "meta", "drill-generation.md"), "utf8"));
+  const checked = uses.filter((u) => !u.section.ignored);
+  const { missing, uncovered, covered } = drillCoverage(order, constructionFamilies(homes), checked, skips);
+  console.log(
+    `\nDrill coverage: ${covered} construction famil(ies) practiced in their band's drill; ` +
+      `${uncovered.length} not practiced; ${missing.length} page band(s) with no translation practice.`,
+  );
+  if (missing.length > 0) {
+    console.log("\nPage bands with taught families but no translation practice:");
+    for (const key of missing) {
+      const [page, band] = key.split("|");
+      console.log(`  ${page}  ${band}  (expected ### Translation practice {#${band}-translation-practice})`);
+    }
+  }
+  if (uncovered.length > 0) {
+    console.log("\nFamilies not practiced in their band's drill:");
+    for (const { family, drill } of uncovered) {
+      console.log(`  ${family.ids.join(", ")}  →  ${formatSection(drill)}  (taught at ${formatSection(family.home)})`);
+    }
+  }
+  return missing.length + uncovered.length;
 }
 
 const pageMarkdown = new Map<string, string>();
@@ -361,10 +385,12 @@ function main(): void {
 
   let coverageCount = 0;
   let orderCount = 0;
+  let drillCount = 0;
   if (paths.length === 0) {
     const order = learningOrder(readingOrder.map((item) => sidebarPage(item.link)), pages);
     coverageCount = checkConstructionCoverage(uses);
     orderCount = reportLearningOrder(order, uses, orderReport);
+    drillCount = reportDrillCoverage(order, uses);
   }
 
   if (count > 0) {
@@ -394,7 +420,13 @@ function main(): void {
     );
   }
 
-  const fail = hostIssues + count + spanCount + duplicateIdCount + morphCount + bankCount + speechCount + coverageCount + orderCount;
+  if (drillCount > 0) {
+    console.error(
+      `\n${drillCount} drill-coverage issue(s). Add ### Translation practice {#<band>-translation-practice}, or an item in it that uses the family (docs/meta/drill-generation.md), or mark the page + band skip in its allowlist.`,
+    );
+  }
+
+  const fail = hostIssues + count + spanCount + duplicateIdCount + morphCount + bankCount + speechCount + coverageCount + orderCount + drillCount;
   if (fail > 0) {
     process.exit(1);
   }
