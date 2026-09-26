@@ -13,7 +13,7 @@
   },
   "scripts": {
     "generate:word": "peggy --format es --dts --allowed-start-rules start,words,probe_spanClose,probe_writingSpan,probe_freeNumber,probe_hook,probe_prefixedWord,probe_citation,probe_prefixedX,probe_prefixedPlain,probe_prefixedJoin -o src/generated/word-parser.js src/parse/word.peggy",
-    "build": "npm run generate:word && npm run typecheck && tsc && mkdir -p dist/generated && cp src/generated/word-parser.js src/generated/word-parser.d.ts dist/generated/ && npm test && node scripts/lint-md-balance.mjs && tsx scripts/pad-exercise-spoiler-blanks.ts && tsx scripts/lint-sidebar-pages.ts && tsx scripts/lint-agalan-docs.ts && eslint docs/grammar/.vitepress/components && npm run docs:publish",
+    "build": "node scripts/build.mjs",
     "dev": "node scripts/fetch-kitten-tts.mjs && vitepress dev docs/grammar",
     "typecheck": "tsc --noEmit",
     "lint:agalan": "tsx scripts/lint-agalan-docs.ts",
@@ -35,7 +35,7 @@
     "web": "npm run build:lexicon-web && npx --yes serve . -p 4173 -o /web/"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=24"
   },
   "license": "SEE LICENSE IN NOTICE",
   "private": true,

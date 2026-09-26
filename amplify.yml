@@ -3,6 +3,10 @@ frontend:
   phases:
     preBuild:
       commands:
+        # Amplify ignores .nvmrc / engines; install and select the pinned Node
+        - nvm install
+        - nvm use
+        - node --version
         - npm ci
     build:
       commands:

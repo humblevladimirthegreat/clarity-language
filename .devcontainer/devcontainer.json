@@ -1,15 +1,22 @@
 {
   "name": "clarity-language",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:24-bookworm",
+  "features": {
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1": {}
+  },
+  "mounts": [
+    "source=clarity-language-claude-home,target=/home/node/.claude,type=volume"
+  ],
   "runArgs": ["--add-host=host.docker.internal:host-gateway"],
   "containerEnv": {
     "LM_STUDIO_BASE_URL": "http://host.docker.internal:1234/v1"
   },
-  "postCreateCommand": "npm install",
+  "postCreateCommand": "sudo chown -R node:node /home/node/.claude && npm install",
   "customizations": {
     "vscode": {
       "extensions": [
         "dbaeumer.vscode-eslint",
+        "anthropic.claude-code",
         "saoudrizwan.claude-dev",
         "ZooCodeOrganization.zoo-code"
       ],
