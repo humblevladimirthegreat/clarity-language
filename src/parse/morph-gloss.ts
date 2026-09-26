@@ -9,7 +9,7 @@
  * | `zar` join `-r` | `z-something` | unspecified member |
  * | `zur` fill-ask | `z-who-else` | |
  * | `thar` / `thur` fill-ask | `th-why` / `th-why-else` | stance grounds |
- * | `jol` / `jom` / `jam` / `jem` / `jum` | `j-question` / `j-soft-question` / `j-soft-statement` / `j-request` / `j-soft-prohibition` | `-m` act words |
+ * | `yol` / `yom` / `yam` / `yem` / `yum` | `y-question` / `y-soft-question` / `y-soft-statement` / `y-request` / `y-soft-prohibition` | `-m` act words |
  * | `zam` / `zal` | `z-and.open` / `z-and` | open vs closed |
  * | `al` left-edge | `additionally` | isolated word too |
  * | `al` in-clause | `including` | |

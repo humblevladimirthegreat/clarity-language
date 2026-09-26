@@ -205,7 +205,7 @@ class AgelanSentenceParser extends CstParser {
             DEF: () => this.CONSUME4(Force, { LABEL: "ForceEcho" }),
           });
           this.CONSUME2(Force);
-          // Asking tag `jol jael.` (questions.md § polar stance): force + polars with no body.
+          // Asking tag `yol yael.` (questions.md § polar stance): force + polars with no body.
           this.MANY2({
             GATE: () => tokenIs(this.LA(1), Polar) && this.tagPolarsAhead(),
             DEF: () => this.CONSUME2(Polar),
@@ -215,7 +215,7 @@ class AgelanSentenceParser extends CstParser {
     ]);
   });
 
-  /** Emphatic prohibition: `jul jul` at the left edge (speech-moves.md § Emphatic prohibition). */
+  /** Emphatic prohibition: `yul yul` at the left edge (speech-moves.md § Emphatic prohibition). */
   private julEchoAhead(): boolean {
     const a = this.LA(1);
     const b = this.LA(2);

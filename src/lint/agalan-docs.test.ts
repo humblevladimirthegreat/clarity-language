@@ -34,7 +34,7 @@ function tablesOf(opts?: {
 
 describe("isAgalanLintCandidate", () => {
   it("skips fragments, slash PoS, teaching glosses, and placeholders", () => {
-    assert.equal(isAgalanLintCandidate("/j/"), false);
+    assert.equal(isAgalanLintCandidate("/y/"), false);
     assert.equal(isAgalanLintCandidate("-r"), false);
     assert.equal(isAgalanLintCandidate("gl-"), false);
     assert.equal(isAgalanLintCandidate("e"), true);

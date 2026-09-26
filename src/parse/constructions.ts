@@ -27,7 +27,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
 
   "utterance.leftEdge": { anchor: "speech-moves.md#vocative", summary: "turn cluster before the body" },
   "utterance.edgeBody": { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "body after a turn cluster" },
-  "utterance.bodyClause": { anchor: "word-endings.md#greeting", summary: "body with no turn cluster (implied jal)" },
+  "utterance.bodyClause": { anchor: "word-endings.md#greeting", summary: "body with no turn cluster (implied yal)" },
   "utterance.Period": { anchor: "word-endings.md#greeting", summary: "sentence end" },
   "utterance.nextBody": { anchor: "dependents.md#which-person-or-thing-who-that-which", summary: "next sentence in the same turn" },
 
@@ -35,7 +35,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "leftEdge.Polar": { anchor: "questions.md#polar-stance", summary: "polar stance turn" },
   "leftEdge.W": { anchor: "hooks.md#hook-w", summary: "/w/ on a left-edge hook" },
   "leftEdge.Hook": { anchor: "hooks.md#discourse-hooks", summary: "discourse hook at the left edge" },
-  "leftEdge.ForceEcho": { anchor: "speech-moves.md#emphatic-prohibition", summary: "jul jul emphatic prohibition" },
+  "leftEdge.ForceEcho": { anchor: "speech-moves.md#emphatic-prohibition", summary: "yul yul emphatic prohibition" },
   "leftEdge.Force": { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "speech-act word" },
 
   "bodyClause.Linker": { anchor: "dependents.md#continue-x", summary: "sentence linker before a clause" },
@@ -245,7 +245,7 @@ export const RESOLVE_CONSTRUCTIONS: Record<Exclude<`${AnaphorKind}.${"bound" | "
 /** Readings of a whole utterance or clause shape (`reading.*`, [construction-trace.ts](./construction-trace.ts)). */
 export const READING_CONSTRUCTIONS = {
   existence: { anchor: "predication.md#existence", summary: "verbless /z/ clause: there is …" },
-  bareQuestion: { anchor: "questions.md#question", summary: "jol. / jom. with no body: Huh? / Hm?" },
+  bareQuestion: { anchor: "questions.md#question", summary: "yol. / yom. with no body: Huh? / Hm?" },
   greeting: { anchor: "word-endings.md#greeting", summary: "a named citation said alone: hello / goodbye" },
 } satisfies Record<string, ConstructionEntry>;
 
@@ -340,16 +340,16 @@ export const JOIN_SERIES_CONSTRUCTIONS: Record<JoinSeries, ConstructionEntry> = 
 
 /** Speech-act words: vowel, and the soft (-m) form (speech-moves.md). */
 export const FORCE_CONSTRUCTIONS: Record<Vowel | "soft", ConstructionEntry> = {
-  a: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "jal statement" },
-  o: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "jol question" },
+  a: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "yal statement" },
+  o: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "yol question" },
   e: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "jel command" },
-  u: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "jul prohibition" },
+  u: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "yul prohibition" },
   soft: { anchor: "questions.md#question", summary: "soft speech act (-m)" },
 };
 
 /** Polar stance particles, grouped by the section that teaches them (questions.md). */
 export const POLAR_CONSTRUCTIONS = {
-  starter: { anchor: "questions.md#polar-stance", summary: "jael yes / juel no / jaol sure" },
+  starter: { anchor: "questions.md#polar-stance", summary: "yael yes / yuel no / yaol sure" },
   fuller: { anchor: "questions.md#polar-stance-fuller-inventory", summary: "juol / jual / joel" },
 } satisfies Record<string, ConstructionEntry>;
 

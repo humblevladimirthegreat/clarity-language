@@ -1,6 +1,6 @@
 # Proposal: spell the palatal approximant `y` instead of `j`
 
-**Status:** proposed 2026-09-26 (spelling change only; the sound /j/ is unchanged).  
+**Status:** phases 1–3 done 2026-09-26; phase 4 (lexicon) waits for the next batched retie; phase 5 after that. Spelling change only; the sound /j/ is unchanged.  
 **Origin:** `TODO.md` — "j should just be y, remind that y is never a vowel".  
 **Related:** [phonology.md](../grammar/phonology.md), [clause.md](../grammar/clause.md), [speech-moves.md](../grammar/speech-moves.md), [questions.md](../grammar/questions.md), [numbers.md](../grammar/numbers.md), [src/parse/word.peggy](../../src/parse/word.peggy), [data/lexicon-published.csv](../../data/lexicon-published.csv)
 
@@ -60,6 +60,8 @@ Content roots keep `j` for now (see [Phase 4](#phase-4-respell-the-lexicon-batch
 Exit: `npm run build` green (every Agalan span parses, morph glosses match).
 
 ### Phase 3 — Remaining non-lexicon cleanup
+
+**Done notes:** the parser reads `y` and `j` as the same role letter and reports `y` (`Pos` returns `"y"`). Content roots still use `j`. Heading anchors whose slugs changed (`speech-moves.md#turn-j` → `#turn-y`, `plurality.md#vocatives-j` → `#vocatives-y`, the pronouns and terminology `/y/` headings) cannot get a server redirect, since `#hash` never reaches the server, and [site-redirects.md](../meta/site-redirects.md) rules out keeping old-slug ids, so old deep links land at the top of the page. Nothing stored outside the docs needed respelling: speech is synthesized in the browser from `src/tts/phonemes.ts`.
 
 1. `AGENTS.md`: role-letter bullets (**`/j/`** = turn → **`/y/`**), orthography note.
 2. Any public URL or anchor that contains a `j` role-letter or number form (e.g. a heading slug with `jael`) gets a redirect in [site-redirects.md](../meta/site-redirects.md).
