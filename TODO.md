@@ -4,7 +4,7 @@ redirects settings: https://us-east-2.console.aws.amazon.com/amplify/apps/d2xds9
 
 my name: obogan (innovation)
 
-sample complex sentence: jael zugobon zam zedonen zal guzumum. zadedal zogovel zol zanunul zal ^ hurorom bazawan ^ vawalal. glonunul bululon zodogol gonunul bazawan gelulul vujudul daxal zazar vawalal xuxul. dadedal on dogovel.
+sample complex sentence: yael zugobon zam zedonen zal guzumum. zadedal zogovel zol zanunul zal ^ hurorom bazawan ^ vawalal. glonunul bululon zodogol gonunul bazawan gelulul vujudul daxal zazar vawalal xuxul. dadedal on dogovel.
 
 use [skip-cd] for amplify to not deploy. 
 
@@ -16,13 +16,12 @@ Prosody
 -expressiveness review
 -do a style pass in grammar-docs. Check for adherence to doc-style and otherwise ensure natural sounding explanations.
 -grammar simplification pass: could we remove special overlay forms and re-use existing grammar?
--optimize tests
 
 final exam
 
 save for cursor:
--j should just be y, final pass
 -consider moving overlay forms to the top of lexicon so they get preferential retying. Actually, only overlay forms should be two syllables. Prefer words unlikely to be referred to (such as non-nouns) for two syllables to avoid ambiguity with continues.
+-j should just be y, final pass
 -finish English->Agalan cheat sheets, including tense
 -do parser consistency pass. Does the parser completely and accurately encode all the meaning of the grammar?
 -add Agalan->English cheat sheet

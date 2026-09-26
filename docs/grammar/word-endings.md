@@ -270,8 +270,8 @@ The rest of the role map (same **-n**):
 | `/ɡ/` + **-n** | this named style, tradition, brand, or category | **[Art Deco]** furniture, **[Buddhist]** monastery, **[iOS]** app |
 | `/w/` + **-n** | named scale, grade, or criterion on the following adjective | *spicy* **[Scoville]**, *large* **[King-size]** |
 | `/h/` + **-n** | named standard, channel, or official frame | *according to* **[GAAP]**, *in* **[Q3]** as the named quarter  |
-| `/j/` vocative + **-n** | address this named person, place, or title | `jululon`; titled group (*Team Alpha*) |
-| `/j/` interjection + **-n** | named formula or conventional call | **[Amen]**, branded catchphrases |
+| `/y/` vocative + **-n** | address this named person, place, or title | `yululon`; titled group (*Team Alpha*) |
+| `/y/` interjection + **-n** | named formula or conventional call | **[Amen]**, branded catchphrases |
 
 **Another exception:** a [stand-in](dependents.md#stand-in-roles) with **-rn** (single vowel) or **-n** (stacked vowel) names a sentence-content category, such as a statement, question, command, or prohibition. On `/v/`, these endings give the corresponding lexicalized response verbs, such as *state*, *confirm*, or *decline*.
 

@@ -18,7 +18,7 @@ Source: [numbers.md](../grammar/numbers.md), [numeric-derivation.md](../grammar/
 
 ### Mantissa `0` + named exp `0` (`…0e0`)
 
-- **`g+0e0`**, **`v+0e0`**, **`h+0e0`**, **`j+0e0`**, ordinal **`#0e0`**, overlays, … — mantissa **`0`** + named exp **`0`**
+- **`g+0e0`**, **`v+0e0`**, **`h+0e0`**, **`y+0e0`**, ordinal **`#0e0`**, overlays, … — mantissa **`0`** + named exp **`0`**
 - Grammar states **`…0e0`** is **not used**; no assigned reading yet
 
 ### Other `±0eN` / `±0e-N` for `N≠1`
@@ -35,11 +35,11 @@ Source: [numbers.md](../grammar/numbers.md), [numeric-derivation.md](../grammar/
 
 - **`ro`** under `/v/` / `/h/` (label marker on overlay hosts)
 
-### Overlay `/j/` — no-mantissa digitless exp
+### Overlay `/y/` — no-mantissa digitless exp
 
-- Beyond the defined table: **`j-e`**, **`j+e-`**, **`j_…`**, …
+- Beyond the defined table: **`y-e`**, **`y+e-`**, **`y_…`**, …
 
-### Overlay `/j/` — zero-exp
+### Overlay `/y/` — zero-exp
 
 - Beyond the defined zero×exp table
 
@@ -54,7 +54,7 @@ Source: [numbers.md](../grammar/numbers.md), [numeric-derivation.md](../grammar/
 
 - Digitless-exp and hyperbole on forward/end-relative **`#-`** / **`rue`** (combine with [digitful generation](../grammar/numbers-applied.md#ordinal-generation) when needed)
 
-### Further `/j/` / `/x/` zero-exp cells
+### Further `/y/` / `/x/` zero-exp cells
 
 - **`x+0e`**, **`x±0e-1`**, **`x#0e`**, … beyond defined overlays
 

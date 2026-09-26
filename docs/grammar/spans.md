@@ -50,9 +50,9 @@ Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gi
 
 To point back at a prior span without repeating its interior, put **`=`** inside the same brackets: `d[=]`. The letter on the resume is the role this pointer plays in *this* sentence (here still the object of *said*).
 
-> `jol zululon d[=] vezehel.`
+> `yol zululon d[=] vezehel.`
 >
-> j-question | z-Ululon | d-←cite | v-tell
+> y-question | z-Ululon | d-←cite | v-tell
 >
 > "Ululon said that?!"
 
@@ -133,9 +133,9 @@ A one-word manner with nothing to package is a plain adverb: `zazawan vawalal hu
 
 The letter on the open is the role of the **entire span** in the outer sentence. Ask what that chunk is doing out there: object of *said*, subject of *is small*, and so on. A cite can be the **verb** when you echo the act as wording:
 
-> `jul zululon v[vozodol].`
+> `yul zululon v[vozodol].`
 >
-> j-prohibition | z-Ululon | v-CITE[v-stop]
+> y-prohibition | z-Ululon | v-CITE[v-stop]
 >
 > "Don’t say “stop,” Ululon."
 
@@ -224,17 +224,17 @@ z-Azawan | v-sing | th-ASIDE[h-happy]
 **7.** *Don’t say “stop,” Ululon.*
 
 ::: details Show answer
-`jul zululon v[vozodol].`
+`yul zululon v[vozodol].`
 
-j-prohibition | z-Ululon | v-CITE[v-stop]
+y-prohibition | z-Ululon | v-CITE[v-stop]
 :::
 
 **8.** *Ululon said that?!*
 
 ::: details Show answer
-`jol zululon d[=] vezehel.`
+`yol zululon d[=] vezehel.`
 
-j-question | z-Ululon | d-←cite | v-tell
+y-question | z-Ululon | d-←cite | v-tell
 :::
 
 **9.** *The phrase “zazawan vuzunul” is small.*
@@ -301,11 +301,11 @@ z-Ululon | v-tell | th-ASIDE[z-Azawan | v-sing]
 *Ululon tells (Azawan sings).*
 :::
 
-**8.** `jol zuhubun d[=] vezehel.`
+**8.** `yol zuhubun d[=] vezehel.`
 
 ::: details Show answer
 
-j-question | z-Uhubun | d-←cite | v-tell
+y-question | z-Uhubun | d-←cite | v-tell
 
 *Uhubun said that?!*
 :::
@@ -337,7 +337,7 @@ Beginner writing already packages a quote, mention, aside, or blob in brackets. 
 
 | Piece | Values | Use |
 |-------|--------|-----|
-| **PoS** | `z` `d` `b` `v` `g` `w` `h` `th` `j` `x` | slot the whole span fills |
+| **PoS** | `z` `d` `b` `v` `g` `w` `h` `th` `y` `x` | slot the whole span fills |
 | **TYPE** | **a** cite · **e** aside · **o** mention · **u** opaque | span kind |
 | **`x`** | mid-word joiner | marks a span-fence form |
 | **EDGE** | **a** · **e** · **o** · **u** | how far an open runs |
@@ -373,7 +373,7 @@ A pair of brackets can wrap one token or many, run to the end of the clause, or 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **a** | **multi-token open** — stays open until an explicit close (default) | `d[…]` … `]` (needs close) | **a** ≈ add (push more tokens) |
-| **e** | **clause-scoped** — ends before the next speech-act `/j/` or clause-level `/x/` join | `d[…` run to clause end (no close) | **e** ≈ order (this clause only) |
+| **e** | **clause-scoped** — ends before the next speech-act `/y/` or clause-level `/x/` join | `d[…` run to clause end (no close) | **e** ≈ order (this clause only) |
 | **o** | **atomic** — exactly **one** following token | `d[azawan]`, <code>d&lt;kimchi&gt;</code> | **o** ≈ one |
 | **u** | **empty / redacted** — no interior; also **resume** **-r** | `d[]`, `d[=]` | **u** ≈ undo (nothing inside) |
 

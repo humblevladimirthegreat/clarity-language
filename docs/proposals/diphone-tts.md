@@ -102,7 +102,7 @@ v1 quality bar: **language-lab clear**, metronomic syllables, audible splices ac
 |-----------|-----------|
 | Syllable duration | Equal ms per syllable (tune one constant); last syllable may add coda time |
 | Stretch | Time-scale the **vowel steady state** inside the diphone; do not smear stops |
-| F0 | Constant; small fall at `.` / `?` / `!` and the existing `/j/` vs `/x/` tags from the SpeechPlan |
+| F0 | Constant; small fall at `.` / `?` / `!` and the existing `/y/` vs `/x/` tags from the SpeechPlan |
 | Energy | Match overlap RMS so joins do not pump |
 | Join | Equal-power crossfade in the mid-phone overlap |
 | Gap | SpeechPlan pauses only; no extra English-like isochrony |
@@ -146,7 +146,7 @@ No IMS-Toucan in the docs path (Python, large, approximate phones).
 
 - [ ] Legal diphone list is generated from phonotactics + number **PoS–ɹ** + **gl-** + **-x** clusters; tests fail if Speak requests an unlisted unit.
 - [ ] Native example words from [phonology.md](../grammar/phonology.md) play with **one vowel nucleus per letter**, no G2P `ː`.
-- [ ] Hiatus (`juon` = `/ju.on/`) is two syllables of comparable length.
+- [ ] Hiatus (`yuon` = `/ju.on/`) is two syllables of comparable length.
 - [ ] Default Speak path does not load Kitten for native Agalan.
 - [ ] Offline after first sprite load; no cloud.
 - [ ] Opaque interiors still do not use Agalan units (loan policy unchanged).
@@ -154,7 +154,7 @@ No IMS-Toucan in the docs path (Python, large, approximate phones).
 
 ## Phased delivery
 
-1. **Inventory + concatenator on silence/tones** — sequence builder + overlap-add with placeholder tones; fixtures for `zazawan`, `juon`, `zelulul`, a number word, `…x`.
+1. **Inventory + concatenator on silence/tones** — sequence builder + overlap-add with placeholder tones; fixtures for `zazawan`, `yuon`, `zelulul`, a number word, `…x`.
 2. **Record + label** the legal bank (voiced only).
 3. **Wire Speak** — swap Kitten; drop vowel-length hack; lazy-load sprite.
 4. **F0 / pause** — map existing SpeechPlan boundary tags onto a flat pitch plus falls.

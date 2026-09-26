@@ -39,9 +39,9 @@ When you are not sure, use **`thodohom`**. That is not wiser than finding out (*
 
 **`thodohol`** can also sit on a yes/no ask when you are **finding out**:
 
-> `jol zazawan thodohol vubunul dululon.`
+> `yol zazawan thodohol vubunul dululon.`
 >
-> j-question | z-Azawan | th-MAY-find-out | v-punch | d-Ululon
+> y-question | z-Azawan | th-MAY-find-out | v-punch | d-Ululon
 >
 > "Might Azawan be punching Ululon? — let's find out."
 
@@ -137,9 +137,9 @@ z-Ululon | th-MAY | v-fight
 **8.** *Could Uhubun be screaming?* (yes/no; could be; default)
 
 ::: details Show answer
-`jol zuhubun thodohom vazagal.`
+`yol zuhubun thodohom vazagal.`
 
-j-question | z-Uhubun | th-MAY | v-scream
+y-question | z-Uhubun | th-MAY | v-scream
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
@@ -188,11 +188,11 @@ z-Azawan | th-MAY-who-knows | v-scream
 *Azawan may be screaming — who knows.*
 :::
 
-**6.** `jol zululon thodohom vubunul dazawan.`
+**6.** `yol zululon thodohom vubunul dazawan.`
 
 ::: details Show answer
 
-j-question | z-Ululon | th-MAY | v-punch | d-Azawan
+y-question | z-Ululon | th-MAY | v-punch | d-Azawan
 *Could Ululon be punching Azawan?* (could be; default)
 :::
 

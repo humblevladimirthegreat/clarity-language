@@ -79,7 +79,7 @@ type SingingPlan = {
 **Rules:**
 
 - **Onset consonants** (`/z/` in `za`): short; F0 may track the following vowel or stay unvoiced-noise-shaped; do not stretch to a whole beat.
-- **Nucleus:** holds the note. Hiatus (`juon` = `/ju.on/`) is **two** nuclei — two notes, or one note with two vowel qualities in sequence, never a diphthong slide unless the contour **draws** a glide (discouraged; fights phonology).
+- **Nucleus:** holds the note. Hiatus (`yuon` = `/ju.on/`) is **two** nuclei — two notes, or one note with two vowel qualities in sequence, never a diphthong slide unless the contour **draws** a glide (discouraged; fights phonology).
 - **Coda** (`/n/` in `wan`, `/ʒ/` in **-x**): short at the end of the last note; word-edge still audible as in singability notes.
 - **Rests:** SpeechPlan pauses and explicit contour gaps; not English isochrony.
 - **Legato:** no gap + voiced diphones. **Attack:** optional `#` or a short glottal if the editor marks a new note onset on a vowel-initial syllable.
@@ -118,7 +118,7 @@ No extra neural weights.
 |------|------------|
 | Chipmunk / gravel on wide melody | Document safe range; extra pitch banks later |
 | Stretched `/z/` hiss | Editor + engine: duration budget is vowel-only |
-| Hiatus sung as English `/ju/` | Two nuclei in the plan; fixtures on `juon` |
+| Hiatus sung as English `/ju/` | Two nuclei in the plan; fixtures on `yuon` |
 | Learners think spelling marks pitch | Contour is UI-only; grammar stays unstressed |
 | Joins worse when notes jump | Crossfade still mid-phone; optional tiny `#` at leap |
 | WORLD WASM size | Share with Speak; load on first Sung Play |
@@ -138,7 +138,7 @@ No extra neural weights.
 - [ ] Diphone Speak F0 imposition exists (dependency).
 - [ ] A `SingingPlan` (or equivalent) plays a phonology example on a **held monotone** longer than speech, phones unchanged (no G2P `ː`).
 - [ ] Same word with **two different syllable width** contours changes timing, not letter identity.
-- [ ] Hiatus: `juon` remains two vowels under a two-note contour.
+- [ ] Hiatus: `yuon` remains two vowels under a two-note contour.
 - [ ] v1 documents the safe F0 window around the recorded pitch.
 - [ ] Offline after sprite + vocoder load; no cloud.
 - [ ] Grammar pages do not claim a sung orthography.

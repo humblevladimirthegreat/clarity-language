@@ -142,21 +142,21 @@ describe("resolve — role anaphors (roles.md)", () => {
 });
 
 describe("resolve — yes/no vs fill-ask (questions.md)", () => {
-  it("classifies jol zugobon vawalal. as yes/no", () => {
-    const { asks } = resolveOf("jol zugobon vawalal.");
+  it("classifies yol zugobon vawalal. as yes/no", () => {
+    const { asks } = resolveOf("yol zugobon vawalal.");
     assert.equal(asks[0]!.kind, "yesNo");
     assert.equal(asks[0]!.gaps.length, 0);
   });
 
-  it("classifies jol zar vawalal. as fill-ask", () => {
-    const { asks, anaphors } = resolveOf("jol zar vawalal.");
+  it("classifies yol zar vawalal. as fill-ask", () => {
+    const { asks, anaphors } = resolveOf("yol zar vawalal.");
     assert.equal(asks[0]!.kind, "fillAsk");
     assert.equal(asks[0]!.gaps.map((g) => g.raw).join(" "), "zar");
     assert.equal(anaphors.length, 0);
   });
 
   it("orders fill-all gaps zar … dar", () => {
-    const { asks } = resolveOf("jol zar vejel dar.");
+    const { asks } = resolveOf("yol zar vejel dar.");
     assert.equal(asks[0]!.kind, "fillAsk");
     assert.deepEqual(
       asks[0]!.gaps.map((g) => g.raw),
@@ -164,8 +164,8 @@ describe("resolve — yes/no vs fill-ask (questions.md)", () => {
     );
   });
 
-  it("classifies jom zar vawalal. as fill-ask", () => {
-    const { asks } = resolveOf("jom zar vawalal.");
+  it("classifies yom zar vawalal. as fill-ask", () => {
+    const { asks } = resolveOf("yom zar vawalal.");
     assert.equal(asks[0]!.kind, "fillAsk");
   });
 });

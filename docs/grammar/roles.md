@@ -334,25 +334,25 @@ z-Uhubun | [g-bond | b-Ululon] . z-←bond | v-punch
 
 English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) or a side of a viewpoint (*Azawan’s left*, *the car’s left*). For the viewpoint reading, write the same arrow root, then mid-word **`th`**, then the thing whose facing counts as north, then an ordinary [reference ending](word-endings.md). A person’s front is the direction they face. For an object, use the front its design or current use makes forward; if that does not settle a front, establish the frame in context. You can then say *walk left* without meaning *walk west*.
 
-> `jel vawalal hewezethazawan.`
+> `yel vawalal hewezethazawan.`
 >
-> j-command | v-walk | h-west-th-Azawan
+> y-command | v-walk | h-west-th-Azawan
 >
 > "Walk left (Azawan’s left)."
 
 Bare arrow words are compass points on a north-up map:
 
-> `jel vawalal hewezel.`
+> `yel vawalal hewezel.`
 >
-> j-command | v-walk | h-west
+> y-command | v-walk | h-west
 >
 > "Walk west."
 
 Speaker and listener roots are the facing person when you mean *my left* / *your left*:
 
-> `jel zedonen vawalal hewezethedonen.`
+> `yel zedonen vawalal hewezethedonen.`
 >
-> j-command | z-listener | v-walk | h-west-th-listener
+> y-command | z-listener | v-walk | h-west-th-listener
 >
 > "You, walk left (your left)."
 
@@ -387,15 +387,15 @@ Indoor headings may follow a local map (building north). Prefer a named viewpoin
 
 English *up* / *down* here follows the pull of gravity, not a face. Write **`uba`** (skyward) or **`odowo`** (toward the pull) as ordinary content words, with no **`th`** + facing person. Everyone shares that frame.
 
-> `jel vawalal hubal.`
+> `yel vawalal hubal.`
 >
-> j-command | v-walk | h-up
+> y-command | v-walk | h-up
 >
 > "Walk up."
 
-> `jubal.`
+> `yubal.`
 >
-> j-up
+> y-up
 >
 > "Up!"
 
@@ -500,9 +500,9 @@ z-boat | g-west-th-Azawan
 **2.** *Walk north.*
 
 ::: details Show answer
-`jel vawalal horohol.`
+`yel vawalal horohol.`
 
-j-command | v-walk | h-north
+y-command | v-walk | h-north
 :::
 
 **3.** *The ship on Ululon’s right.*
@@ -516,9 +516,9 @@ z-ship | g-east-th-Ululon
 **4.** *Walk down.*
 
 ::: details Show answer
-`jel vawalal hodowol.`
+`yel vawalal hodowol.`
 
-j-command | v-walk | h-down
+y-command | v-walk | h-down
 :::
 
 **5.** *The life-ring is on Azawan’s left of the boat.*
@@ -532,9 +532,9 @@ z-life-ring | [g-west-th-Azawan | b-boat]
 **6.** *You, walk left (your left).*
 
 ::: details Show answer
-`jel zedonen vawalal hewezethedonen.`
+`yel zedonen vawalal hewezethedonen.`
 
-j-command | z-listener | v-walk | h-west-th-listener
+y-command | z-listener | v-walk | h-west-th-listener
 :::
 
 **7.** *The boat on my left.*
@@ -548,9 +548,9 @@ z-boat | g-west-th-speaker
 **8.** *Ululon, walk west.*
 
 ::: details Show answer
-`jel zululon vawalal hewezel.`
+`yel zululon vawalal hewezel.`
 
-j-command | z-Ululon | v-walk | h-west
+y-command | z-Ululon | v-walk | h-west
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -564,11 +564,11 @@ z-boat | g-east-th-Azawan
 *The boat on Azawan’s right.*
 :::
 
-**2.** `jel vawalal hewezel.`
+**2.** `yel vawalal hewezel.`
 
 ::: details Show answer
 
-j-command | v-walk | h-west
+y-command | v-walk | h-west
 
 *Walk west.*
 :::
@@ -582,11 +582,11 @@ z-ship | g-south
 *The ship to the south.*
 :::
 
-**4.** `jel vawalal hubal.`
+**4.** `yel vawalal hubal.`
 
 ::: details Show answer
 
-j-command | v-walk | h-up
+y-command | v-walk | h-up
 
 *Walk up.*
 :::
@@ -600,11 +600,11 @@ z-life-ring | [g-west-th-Ululon | b-boat]
 *The life-ring is on Ululon’s left of the boat.*
 :::
 
-**6.** `jel zedonen vawalal hezazathedonen.`
+**6.** `yel zedonen vawalal hezazathedonen.`
 
 ::: details Show answer
 
-j-command | z-listener | v-walk | h-east-th-listener
+y-command | z-listener | v-walk | h-east-th-listener
 
 *You, walk right (your right).*
 :::
@@ -618,11 +618,11 @@ z-ship | g-northwest-th-Uhubun
 *The ship on Uhubun’s forward-left.*
 :::
 
-**8.** `jel zululon vawalal hodowol.`
+**8.** `yel zululon vawalal hodowol.`
 
 ::: details Show answer
 
-j-command | z-Ululon | v-walk | h-down
+y-command | z-Ululon | v-walk | h-down
 
 *Ululon, walk down.*
 :::

@@ -1,4 +1,4 @@
-const POS = new Set(["z", "d", "b", "v", "g", "w", "h", "x", "j"]);
+const POS = new Set(["z", "d", "b", "v", "g", "w", "h", "x", "y", "j"]);
 const OPEN_CLOSE: Record<string, string> = {
   "[": "]",
   "{": "}",
@@ -8,7 +8,7 @@ const OPEN_CLOSE: Record<string, string> = {
 
 /**
  * End of a clause-scoped written span (`d[…` with no close, EDGE **e**): the interior runs
- * to the clause end — before the next `/x/` or `/j/` word, or before the sentence mark.
+ * to the clause end — before the next `/x/` or `/y/` word, or before the sentence mark.
  */
 function clauseScopedEnd(text: string, openAt: number): number {
   let end = openAt + 1;
@@ -17,7 +17,7 @@ function clauseScopedEnd(text: string, openAt: number): number {
     let j = i;
     while (j < text.length && !/\s/.test(text[j]!)) j += 1;
     const chunk = text.slice(i, j);
-    if (i > openAt + 1 && /^[xj][aeiou+#_~@=-]/.test(chunk)) break;
+    if (i > openAt + 1 && /^[xyj][aeiou+#_~@=-]/.test(chunk)) break;
     const mark = /[.?!]+$/.exec(chunk);
     if (mark && (j >= text.length || /\s/.test(text[j]!))) return i + chunk.length - mark[0].length;
     end = j;

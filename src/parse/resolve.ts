@@ -118,7 +118,7 @@ function spanTypeOf(word: LexWord): SpanType | undefined {
 }
 
 function isQuestionForce(word: LexWord | undefined): boolean {
-  if (!word || word.pos !== "j" || word.family.kind !== "joinMarker") return false;
+  if (!word || word.pos !== "y" || word.family.kind !== "joinMarker") return false;
   return word.family.series === "o";
 }
 

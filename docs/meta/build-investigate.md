@@ -22,8 +22,8 @@ Checked against the parser and written up with a doc basis for each form in the 
 - `xezebal` mid-clause (taught only after a period)
 - **-r** with no earlier word to point back to (`hogobor`)
 - `g+r` (glosses as *more than one*)
-- bare `jol.`, bare `jom.`, `jelel`
-- values on `/j/` (`jonogotham`), `thabenem`, `gerenem`, `hagadum`
+- bare `yol.`, bare `yom.`, `yelel`
+- values on `/y/` (`yonogotham`), `thabenem`, `gerenem`, `hagadum`
 
 **Performance:** `npm run parse` takes about 30 s per call. Agents batch-checked via a script importing `src/parse/index.js`.
 

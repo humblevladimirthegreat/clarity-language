@@ -20,7 +20,7 @@ export type BoundaryTag =
   | "bang"
   | "softM"
   | "xContinue"
-  | "jTurn"
+  | "yTurn"
   | "islandEnter"
   | "islandExit";
 
@@ -64,7 +64,7 @@ function classifyFramingRole(word: MorphWord): FramingRole {
 
   if (family.kind === "hook") return "hook";
 
-  if (pos === "j") {
+  if (pos === "y") {
     if (family.kind === "joinMarker") {
       return family.series.length === 1 ? "force" : "polar";
     }
@@ -206,7 +206,7 @@ function speechTokensFromSegments(segments: SpeechSegment[]): SpeechToken[] {
     if (role === "linker" || role === "clauseJoin") {
       tokens.push({ kind: "boundary", tag: "xContinue", raw: "" });
     } else if (afterBodyEnd && (role === "force" || role === "polar" || role === "vocative")) {
-      tokens.push({ kind: "boundary", tag: "jTurn", raw: "" });
+      tokens.push({ kind: "boundary", tag: "yTurn", raw: "" });
     }
 
     afterBodyEnd = false;
@@ -253,7 +253,7 @@ function boundaryToPhoneme(tag: BoundaryTag): string {
     case "islandEnter":
     case "islandExit":
       return ",";
-    case "jTurn":
+    case "yTurn":
       return "...";
     default:
       return ".";

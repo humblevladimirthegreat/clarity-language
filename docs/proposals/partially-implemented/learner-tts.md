@@ -6,7 +6,7 @@
 
 ## Motivation
 
-Learners need to **hear** Agalan, not only read it. Native `speechSynthesis` on raw orthography fails: letter values differ from English (`j` = /j/, `x` = /ʒ/), stacked vowels are separate syllables, and preferred **writing** forms (number shorthand, span brackets) are not what speech uses.
+Learners need to **hear** Agalan, not only read it. Native `speechSynthesis` on raw orthography fails: letter values differ from English (`x` = /ʒ/), stacked vowels are separate syllables, and preferred **writing** forms (number shorthand, span brackets) are not what speech uses.
 
 With a finished parser, most of the hard mapping is already structured in the AST. Usable learner TTS is then a thin **speech-normalization** pass plus a deterministic **grapheme→phoneme** table from phonology, rendered by an in-browser phoneme engine — not a custom neural voice.
 
@@ -79,7 +79,7 @@ Preferred writing is not always what is spoken. The AST already distinguishes wr
 | Span anaphor / empty (`d[=]`, `d[]`) | Spoken open only (`daxur`, `daxul`) | same |
 | Orthographic-only commas in digit groups | **Omit** (not spoken) | [numbers.md](../../grammar/numbers.md#writing-preferred-shorthand) |
 | Period / `?` / `!` | Boundary tags for pause + pitch hint | [dependents.md](../../grammar/dependents.md#orthography-and-prosody-periods) |
-| `/x/` continue vs new `/j/` turn | Boundary tags (dip vs reset) | same |
+| `/x/` continue vs new `/y/` turn | Boundary tags (dip vs reset) | same |
 | Adjunct-scope `^ … ^` | **No** open/close words; island boundary tags only | [spans.md](../../grammar/spans.md#scope-islands) |
 
 ### Already speech-shaped
@@ -121,14 +121,14 @@ Single table from [phonology.md](../../grammar/phonology.md); no English respell
 | **w** | /w/ | |
 | **g** | /ɡ/ | |
 | **d** | /d/ | |
-| **j** | /j/ | |
+| **y** | /j/ | |
 | **b** | /b/ | |
 | **z** | /z/ | |
 | **m** **n** **v** **l** | /m/ /n/ /v/ /l/ | |
 | **r** | /ɹ/ | |
 | **x** | /ʒ/ | mid-word compound joiner, discourse `/x/` prefix, and plural **-x** — same phone |
 
-**Syllables:** split so each vowel is its own nucleus; stacked vowels are separate syllables (`juon` → `ju.ón`-style timing, not a diphthong). Onsets attach left-to-right per phonotactics. Word-final coda = word ending (+ optional **x**).
+**Syllables:** split so each vowel is its own nucleus; stacked vowels are separate syllables (`yuon` → `ju.ón`-style timing, not a diphthong). Onsets attach left-to-right per phonotactics. Word-final coda = word ending (+ optional **x**).
 
 **Clusters still legal:** `gl-` (left-bound), `PoS+r` (numbers), finals `-lx` / `-mx` / `-nx` / `-rx`.
 
@@ -160,7 +160,7 @@ Coarse cues only — enough for learners to hear structure, not a full intonatio
 | `!` | Clipped fall + pause |
 | Soft **-m** force / particle | Slightly shorter / lighter fall (if engine allows; else same as `.`) |
 | `/x/` continue | Short dip / pause; **no** full reset |
-| New `/j/` turn | Longer pause + pitch reset if engine supports |
+| New `/y/` turn | Longer pause + pitch reset if engine supports |
 | Scope island `^…^` | Slight reset in; tighter spacing inside; boundary after last island word |
 | Word boundary | Tiny gap or engine word break |
 | Span open / close words | Spoken as ordinary words (they are phonotactically normal) |
@@ -239,7 +239,7 @@ Expect the WASM voice pack to dwarf the TS glue; keep it out of the critical ren
 - [x] `toPhonemes` matches the phonology letter table; stacked vowels are separate syllables; **-x** is /ʒ/. (Phase 1)  
 - [x] In-browser Play speaks a parseable example offline after first WASM load. (Phase 1 Gloss overlay)  
 - [x] Opaque/foreign interiors never use Agalan G2P; loan policy is documented and tested. (Phase 2 skips interiors; loan islands are Phase 4)  
-- [x] Fixtures cover at least: plain clause, plural **-x**, compound mid-word **`x`**, free-number shorthand, multi-token cite with close, island boundaries, `?` / `/x/` continue. (Phase 3: island boundaries, `/x/` continue, soft **-m**, `/j/` turn)  
+- [x] Fixtures cover at least: plain clause, plural **-x**, compound mid-word **`x`**, free-number shorthand, multi-token cite with close, island boundaries, `?` / `/x/` continue. (Phase 3: island boundaries, `/x/` continue, soft **-m**, `/y/` turn)  
 - [x] `previewSpeech` available for pedagogy (“show what will be spoken”). (Phase 1 Gloss preview line + CLI)  
 - [x] No cloud TTS required for native Agalan audio.
 
@@ -247,7 +247,7 @@ Expect the WASM voice pack to dwarf the TS glue; keep it out of the critical ren
 
 1. **Phoneme core** — native words only (already speech-shaped strings) + WASM play. **v1 surface:** [Inspect](../../grammar/inspect.md) (**Speak Agalan** / **Speak word**).  
 2. **Normalizer** — numbers + spans + period/`?`/`!` pauses.  
-3. **Framing cues** — `/j/` vs `/x/`, soft **-m**, islands. **Done** (boundary tags + eSpeak mapping).  
+3. **Framing cues** — `/y/` vs `/x/`, soft **-m**, islands. **Done** (boundary tags + eSpeak mapping).  
 4. **Loan islands** — `speechSynthesis` (or skip) for `<>` payloads.  
 5. **Doc UX** — Play on grammar examples; `previewSpeech` toggle in docs.
 

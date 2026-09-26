@@ -526,11 +526,11 @@ Other prefixes use the same empty payload (the marker’s identity, no named N).
 
 To write a large or tiny amount in one word (*27 million*, *5.2e-4*, *25%*), put an **exponent** in the digit group before the ordinary digits (the **mantissa**).
 
-Speech uses **`ba`** / **`bu`** for that exponent, then **`ja`** if mantissa digits follow. You can drop a separate *times ten to the…* phrase; the magnitude lives in the same number word.
+Speech uses **`ba`** / **`bu`** for that exponent, then **`ya`** if mantissa digits follow. You can drop a separate *times ten to the…* phrase; the magnitude lives in the same number word.
 
 > `g+27e12`
 >
-> 🔊 *grabawodujadulel*
+> 🔊 *grabawoduyadulel*
 >
 > g-27e12
 >
@@ -540,22 +540,22 @@ Speech uses **`ba`** / **`bu`** for that exponent, then **`ja`** if mantissa dig
 |--------|-----|---------|-----|
 | **ba** | positive exponent, then its digits | *e12* | **`a`** ≈ add |
 | **bu** | negative exponent, then its digits | *e-6* | **`u`** ≈ undo |
-| **ja** | after exponent digits when a mantissa follows | (not a digit) | |
-| **je** | decimal point | *5.2* | |
-| **jo** | percent closer | *25%* — [percent](numbers-applied.md#percent-and-percentage-points) | |
-| **ju** | percentage-point closer | *+2 pp* — [percent](numbers-applied.md#percent-and-percentage-points) | |
+| **ya** | after exponent digits when a mantissa follows | (not a digit) | |
+| **ye** | decimal point | *5.2* | |
+| **yo** | percent closer | *25%* — [percent](numbers-applied.md#percent-and-percentage-points) | |
+| **yu** | percentage-point closer | *+2 pp* — [percent](numbers-applied.md#percent-and-percentage-points) | |
 
 - The exponent comes **before** that group’s mantissa digits.
-- If a mantissa follows, say **`ja`** after the last exponent digit, then the mantissa. Example: `27e12` → `ba` + `wo` + `du` + `ja` + `du` + `le`.
-- Exponent only, no mantissa: `ba`/`bu` + exponent digits and omit **`ja`**. Example: *e9* → `ba` + `na`.
+- If a mantissa follows, say **`ya`** after the last exponent digit, then the mantissa. Example: `27e12` → `ba` + `wo` + `du` + `ya` + `du` + `le`.
+- Exponent only, no mantissa: `ba`/`bu` + exponent digits and omit **`ya`**. Example: *e9* → `ba` + `na`.
 - Ordinary amounts usually omit exponent **`0`**: write `g+3`.
 - Default **order of magnitude** uses **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`).
-- **Decimal point:** say **`je`** after the digit(s) left of the point; digits after **`je`** are the fractional part.
+- **Decimal point:** say **`ye`** after the digit(s) left of the point; digits after **`ye`** are the fractional part.
 - Write the **base unit** plus exponent or exact count on the amount ([measure phrases](numbers-applied.md#no-metric-prefixes)).
 
 > `g+5.2`
 >
-> 🔊 *gravajedul*
+> 🔊 *gravayedul*
 >
 > g-5.2
 >
@@ -584,13 +584,13 @@ When a number has more than one digit group, you say each comma. The spoken comm
 
 > `g+5e3,860`
 >
-> 🔊 *grabarejavathahaguzol*
+> 🔊 *grabareyavathahaguzol*
 >
 > g-5e3,860
 >
 > "5860."
 
-Syllable by syllable: `g` + `ra` + ba re ja va + **tha** + ha gu zo + `l`.
+Syllable by syllable: `g` + `ra` + ba re ya va + **tha** + ha gu zo + `l`.
 
 | Marker | Separator | Example | Cue |
 |--------|-----------|---------|-----|
@@ -651,12 +651,12 @@ Place the identity symbol **immediately after** any ending mark (or after PoS wh
 |--------|-------------------|
 | *(no digit groups)* | *(empty after marker)* `g+`, `g~-`, `g=#`, `d_` |
 | Digit syllables (`wo`…`zo`) | Arabic **`0`–`9`** |
-| `ba` / `bu` (+ `ja` when a mantissa follows) | **`e`** / **`e-`** |
+| `ba` / `bu` (+ `ya` when a mantissa follows) | **`e`** / **`e-`** |
 | named exp **`0`** | **`e0`** — ones band `g+e0`; assert `g+3e0` / `g#e0` |
 | `th` + marker vowel ([group separator](#group-separator)) | **`,`** |
-| `je` | **`.`** |
-| `jo` | **`%`** |
-| `ju` | **`%*`** |
+| `ye` | **`.`** |
+| `yo` | **`%`** |
+| `yu` | **`%*`** |
 
 **Commas** separate digit groups. Each comma is spoken as the [group separator](#group-separator). Digitless forms have no commas.
 
@@ -680,7 +680,7 @@ Prefer shorthand in free slots. Speech is always the full CV form.
 ### Number as verb / adverb / interjection / discourse
 <a id="number-as-roles"></a>
 
-You can use a number as the **action** (*add three*), as **how often** (*three times*), as **how likely** (*70% likely*), as a **shout** (*Three more!*), or as a **list label** (*point 2:*). Put the same markers under `/v/`, `/h/`, `/th/`, `/j/`, or `/x/`. The first letter chooses that job; the marker still says count, rank, or code.
+You can use a number as the **action** (*add three*), as **how often** (*three times*), as **how likely** (*70% likely*), as a **shout** (*Three more!*), or as a **list label** (*point 2:*). Put the same markers under `/v/`, `/h/`, `/th/`, `/y/`, or `/x/`. The first letter chooses that job; the marker still says count, rank, or code.
 
 Referential prefixes (`/ɡ/` `/z/` `/d/` `/b/`) keep the marker as a plain amount or rank — [marker vowel](#marker-vowel-referential-identity).
 
@@ -695,7 +695,7 @@ Referential prefixes (`/ɡ/` `/z/` `/d/` `/b/`) keep the marker as a plain amoun
 | **`re`** | **Take / assign rank N (from the start)** — intransitive *place Nth* / *come in Nth*; transitive *put (object) in Nth place* / *rank as Nth*. |
 | **`ro`** | **Enter / dial / input that digit-string** — type the code, dial the phone number, key the ID. Object (if any) is the channel or device; the digits are in the verb. |
 
-To set a quantity to an absolute value, use an ordinary verb plus the number as argument or adverb. **For *multiply* / *divide*, use:** an ordinary verb plus **`h+N`** / **`h-N`**. With [percentage points](numbers-applied.md#percent-and-percentage-points) (**`ju`**), **`ra`** / **`ru`** as verbs mean increase/decrease by that point amount.
+To set a quantity to an absolute value, use an ordinary verb plus the number as argument or adverb. **For *multiply* / *divide*, use:** an ordinary verb plus **`h+N`** / **`h-N`**. With [percentage points](numbers-applied.md#percent-and-percentage-points) (**`yu`**), **`ra`** / **`ru`** as verbs mean increase/decrease by that point amount.
 
 Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume — including [digitless](#digitless) `v=+` / `v=_`, etc.).
 
@@ -724,28 +724,28 @@ Endings still apply (**-m** ≈ *about* that many times / that clock or date, **
 
 #### Number as interjection (by marker) {#number-as-interjection-by-marker}
 
-`/j/` + number is a **shout** (*Three more!*, a score). Number cheers sit with the other opening `/j/` words (before the act word, when a clause follows) or as a bare utterance with no act word.
+`/y/` + number is a **shout** (*Three more!*, a score). Number cheers sit with the other opening `/y/` words (before the act word, when a clause follows) or as a bare utterance with no act word.
 
 | Marker | Writing | Interjection sense |
 |--------|---------|-------------------|
-| **`ra`** | `j+N` | **Quantity addition** — *Three more!*; *Ten more!* (add N to the relevant count / tally / order). |
-| **`ru`** | `j-N` | **Deficit / shortfall call** — *Three short!*; *Three fewer!*; *Down by 2!*; *−3!* (mirror of `j+`). |
-| **`re`** | `j#N` | **Place / rank cheer (from the start)** — *First!*; *Second!* (podium / place shout). |
-| **`ro`** | `j_…` | **Digit-label / magnitude call-out** — *Three!*; *B-12!*; *five-five-five!*; score, bingo, code, or ID as a bare reading of the digits (not “N more”). |
+| **`ra`** | `y+N` | **Quantity addition** — *Three more!*; *Ten more!* (add N to the relevant count / tally / order). |
+| **`ru`** | `y-N` | **Deficit / shortfall call** — *Three short!*; *Three fewer!*; *Down by 2!*; *−3!* (mirror of `y+`). |
+| **`re`** | `y#N` | **Place / rank cheer (from the start)** — *First!*; *Second!* (podium / place shout). |
+| **`ro`** | `y_…` | **Digit-label / magnitude call-out** — *Three!*; *B-12!*; *five-five-five!*; score, bingo, code, or ID as a bare reading of the digits (not “N more”). |
 
-English *Three!* naming a score or count is **`j_`**. *Three more!* (increment the tally) is **`j+`**.
+English *Three!* naming a score or count is **`y_`**. *Three more!* (increment the tally) is **`y+`**.
 
-Worked examples: `j_3` *Three!*; `j+3` *Three more!*; `j-3` *Three short!*; `j#1` *First!*.
+Worked examples: `y_3` *Three!*; `y+3` *Three more!*; `y-3` *Three short!*; `y#1` *First!*.
 
-Endings still apply (**-m** fuzzy *about three more!*, **-n** conventional call name, **-r** resume a prior shout’s value, including digitless `j=+` / `j=_`).
+Endings still apply (**-m** fuzzy *about three more!*, **-n** conventional call name, **-r** resume a prior shout’s value, including digitless `y=+` / `y=_`).
 
 **Compare with:** statement / question / command words in the [speech-act section](speech-moves.md#speech-act).
 
-Bare OoM bands keep their band under `/v/` `/h/` `/j/`: **`v+e3`** *increase by a thousands-band amount*; **`h+e0`** *× a ones-band factor*; **`j+e3`** *Thousands!* (band cheer).
+Bare OoM bands keep their band under `/v/` `/h/` `/y/`: **`v+e3`** *increase by a thousands-band amount*; **`h+e0`** *× a ones-band factor*; **`y+e3`** *Thousands!* (band cheer).
 
 #### Number as discourse marker (by marker) {#number-as-discourse-marker-by-marker}
 
-`/x/` + number is a continue for numbered list items and label cites. Marker vowel encodes **independence framing** of the list item (or cite-as-label for **`ro`**). These sit outside the main-clause argument slots (`/ɡ/` *the second page*, `/h/` *three times*, `/j/` cheers).
+`/x/` + number is a continue for numbered list items and label cites. Marker vowel encodes **independence framing** of the list item (or cite-as-label for **`ro`**). These sit outside the main-clause argument slots (`/ɡ/` *the second page*, `/h/` *three times*, `/y/` cheers).
 
 | Marker | Writing | Discourse sense |
 |--------|---------|-----------------|
@@ -890,11 +890,11 @@ x-2nd | z-Azawan | v-sit
 **6.** *Three more!*
 
 ::: details Show answer
-`j+3.`
+`y+3.`
 
-🔊 *jrarel.*
+🔊 *yrarel.*
 
-j-three
+y-three
 :::
 
 **7.** *Ululon adds three to the score.*
@@ -932,7 +932,7 @@ z-+-e3 | d-trophy | v-see
 ::: details Show answer
 `zululon dodobom v+5.2.`
 
-🔊 *zululon dodobom vravajedul.*
+🔊 *zululon dodobom vravayedul.*
 
 z-Ululon | d-score | v-5.2
 :::
@@ -982,13 +982,13 @@ z-Ululon | v-run | h-more-than-one
 *Ululon runs multiple times.*
 :::
 
-**4.** `j_3.`
+**4.** `y_3.`
 
 ::: details Show answer
 
-🔊 *jrorel.*
+🔊 *yrorel.*
 
-j-_3
+y-_3
 
 *Three!* (score / label)
 :::
@@ -1041,7 +1041,7 @@ z-Uhubun | v-sit | h-3rd
 
 ::: details Show answer
 
-🔊 *zrabarejavathahaguzol vajul.*
+🔊 *zrabareyavathahaguzol vajul.*
 
 z-5e3,860 | v-sit
 
@@ -1100,7 +1100,7 @@ Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as o
 
 **Just short (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅**), no mantissa. It mirrors **`g+e-`** (a hair over zero): **`g-e-`** is a hair **under** — the smallest shortfall. Against a target it reads *almost*; as a [signed time offset](knowing.md#dated-channel) it reads *just before* (`b-e-` *just now*), and **`b+e-`** reads *just after* (*any moment now*).
 
-**Compare with:** *as if* uses spelled mood **`adade`** ([knowing.md § Notional](knowing.md#notional), e.g. `thadadem`). Free **`grubul`** / **`xrubul`** / **`thrubul`** / **`vrubul`** / **`hrubul`** / **`jrubul`** are the amount, discourse *just before that:*, stance *virtually*, verb *nudge down*, adverb *almost*, and cheer *so close!* on the number grid.
+**Compare with:** *as if* uses spelled mood **`adade`** ([knowing.md § Notional](knowing.md#notional), e.g. `thadadem`). Free **`grubul`** / **`xrubul`** / **`thrubul`** / **`vrubul`** / **`hrubul`** / **`yrubul`** are the amount, discourse *just before that:*, stance *virtually*, verb *nudge down*, adverb *almost*, and cheer *so close!* on the number grid.
 
 **Endings** (no-mantissa specials):
 
@@ -1153,18 +1153,18 @@ Soft/named/resume endings (**`~`** / **`@`** / **`=`**) apply as on other specia
 
 ##### Number as interjection {#special-number-as-interjection}
 
-No-mantissa digitless-exp under `/j/` (interjection cheers):
+No-mantissa digitless-exp under `/y/` (interjection cheers):
 
 | Form | Reading |
 |------|---------|
-| **`j+e`** | *To infinity!* |
-| **`j~+e`** | *To a huge (but finite) amount!* |
-| **`j#e`** | *Finally!* (place/coda cheer). Discourse **`x#e`** is *Finally:* |
-| **`j~#e`** | *Almost finally!* / soft coda cheer |
-| **`j#e-`** | *(finally, we're) starting!* (onset cheer). Discourse **`x#e-`** is *Starting with:* |
-| **`j~#e-`** | soft onset cheer |
-| **`j-e-`** | *So close!* / *Almost!* (near-miss cheer) |
-| **`j~-e-`** | soft *nearly!* |
+| **`y+e`** | *To infinity!* |
+| **`y~+e`** | *To a huge (but finite) amount!* |
+| **`y#e`** | *Finally!* (place/coda cheer). Discourse **`x#e`** is *Finally:* |
+| **`y~#e`** | *Almost finally!* / soft coda cheer |
+| **`y#e-`** | *(finally, we're) starting!* (onset cheer). Discourse **`x#e-`** is *Starting with:* |
+| **`y~#e-`** | soft onset cheer |
+| **`y-e-`** | *So close!* / *Almost!* (near-miss cheer) |
+| **`y~-e-`** | soft *nearly!* |
 
 ##### Number as discourse {#special-number-as-discourse}
 
@@ -1224,13 +1224,13 @@ Ones-band / assert-`e0` as verb / adverb / interjection / discourse are ordinary
 
 | Form | Reading |
 |------|---------|
-| **`j+0e`** | *Annihilate!* / *Wipe it!* |
-| **`j+0e-`** | *Sterilize!* / *Null the seed!* |
-| **`j+0e-1`** | *Null at deci!* / *Wipe at 10⁻¹!* |
-| **`j-0e`** | *Residue stands!* / *Won’t totally wipe!* |
-| **`j-0e-1`** | *Deci-residue stands!* |
+| **`y+0e`** | *Annihilate!* / *Wipe it!* |
+| **`y+0e-`** | *Sterilize!* / *Null the seed!* |
+| **`y+0e-1`** | *Null at deci!* / *Wipe at 10⁻¹!* |
+| **`y-0e`** | *Residue stands!* / *Won’t totally wipe!* |
+| **`y-0e-1`** | *Deci-residue stands!* |
 
-**`j+e0`** = ones-band cheer (ordinary bare OoM).
+**`y+e0`** = ones-band cheer (ordinary bare OoM).
 
 ##### Number as discourse {#zero-exponent-number-as-discourse}
 
@@ -1247,7 +1247,7 @@ Mantissa **`0`** + digitless **`ba`** under forward ordinal **`re` / `#`**. Numb
 | **`z#0e`** / **`d#0e`** / **`b#0e`** | same as subject / object / modifier |
 | **`v#0e`** | *disqualify* / take annihilated place |
 | **`h#0e`** | *for a disqualified / struck turn* |
-| **`j#0e`** | *Disqualified!* / *Rank wiped!* |
+| **`y#0e`** | *Disqualified!* / *Rank wiped!* |
 
 Soft **-m** hedges (*near-disqualified*, …). Free twin of derivation **`ROOTl#0e`** — [numeric-derivation.md](numeric-derivation.md#rank-annihilated-morph).
 
@@ -1295,7 +1295,7 @@ Mantissa = how many joke-units of **late** (**`ba`**) or **early** (**`bu`**) ra
 | **-n** | **Proper noun / proper designation** — the hyperbolic numeral as a name (a building called *the Gazillion*, a title *One Gazillion*, *the Gazillionth*, …) | `g@+1e`; `g@#1e` |
 | **-r** | Resume that prior hyperbolic amount or place; keep the mantissa (`g=+1e`, `g=#1e`), since `g=+e` / `g=#e` resume +∞ / last place | |
 
-`/v/` `/h/` `/j/` `/x/` (hyperbole) inherit freely:
+`/v/` `/h/` `/y/` `/x/` (hyperbole) inherit freely:
 
 | Form | Reading |
 |------|---------|
@@ -1305,13 +1305,13 @@ Mantissa = how many joke-units of **late** (**`ba`**) or **early** (**`bu`**) ra
 | **`v+1e`** | *add a gazillion* |
 | **`v#1e`** | *place / come in gazillionth* / *rank as umpteenth* |
 | **`v#1e-`** | *place / come in gazillionth-first* |
-| **`j+1e`** | *a gazillion more!* |
-| **`j#1e`** | *Gazillionth!* (comic late place cheer) |
-| **`j#1e-`** | *Gazillionth-first!* (comic early place cheer) |
+| **`y+1e`** | *a gazillion more!* |
+| **`y#1e`** | *Gazillionth!* (comic late place cheer) |
+| **`y#1e-`** | *Gazillionth-first!* (comic early place cheer) |
 | **`x#1e`** | *umpteenth point:* / joke late agenda item |
 | **`x#1e-`** | *umpteenth-first point:* / joke early agenda item |
 
-Digitless **`e`/`e-`** sits in its own group (no **`je`** / **`jo`** / **`ju`** stacked in that group).
+Digitless **`e`/`e-`** sits in its own group (no **`ye`** / **`yo`** / **`yu`** stacked in that group).
 
 #### Number as stance {#special-number-as-stance}
 
@@ -1355,13 +1355,13 @@ To count **from the last place** (*penultimate*, *starting with the last one*), 
 
 `g#2` = numbered *2nd* (from the start); `g#-2` = *2nd from the end*; `g#e` = last as landmark; `g#e-` = start landmark (no mantissa).
 
-`/v/` `/h/` `/j/` `/x/` inherit:
+`/v/` `/h/` `/y/` `/x/` inherit:
 
 | Form | Reading |
 |------|---------|
 | **`h#-2`** | *for the 2nd-from-last time* / *the penultimate time* |
 | **`v#-2`** | *place / come in 2nd from the end* |
-| **`j#-2`** | *Penultimate!* / *Second from last!* |
+| **`y#-2`** | *Penultimate!* / *Second from last!* |
 | **`x#-1`** | *1st-from-end point:* / *Starting with the last one:* (counting twin of **`x#e`** *Finally:*) |
 | **`x#-2`** | *2nd-from-end point:* / *penultimate item:* |
 
@@ -1387,12 +1387,12 @@ Preferred writing first; the spoken form follows, often with its syllables in pa
 | plural / more than one | `g+` | *gral* (`g` + `ra` + `l` — [digitless](#digitless)) |
 | about several (`>1`) | `g~+` | *gram* |
 | ones band (1–9) | `g+e0` | *grabazol* (`ra` + `ba` + zo + `l` — [bare OoM](#bare-oom-bands)) |
-| three at asserted OoM 0 | `g+3e0` | *grabazojarel* (`ra` + `ba` + zo + `ja` + re + `l`) |
+| three at asserted OoM 0 | `g+3e0` | *grabazoyarel* (`ra` + `ba` + zo + `ya` + re + `l`) |
 | thousands band (1000–9999) | `g+e3` | *grabarel* (`ra` + `ba` + re + `l`) |
 | 2nd from the end / penultimate | `g#-2` | *gruedul* (rue + du + `l`) |
 | 1st from the end / *Starting with the last one* | `g#-1` | *gruewol* (rue + wo + `l`) |
 | for the penultimate time | `h#-2` | *hruedul* |
-| *Penultimate!* | `j#-2` | *jruedul* |
+| *Penultimate!* | `y#-2` | *yruedul* |
 | 2nd-from-end point: | `x#-2` | *xruedul* |
 | *Starting with the last one:* | `x#-1` | *xruewol* |
 | last place | `g#e` | *grebal* |
@@ -1411,7 +1411,7 @@ Preferred writing first; the spoken form follows, often with its syllables in pa
 | multiple times | `h+` | *hral* |
 | a few times | `h~+` | *hram* |
 | at some clock/date | `h_` | *hrol* — unspecified when under bare `hro`; ≠ `har` |
-| More! | `j+` | *jral* |
+| More! | `y+` | *yral* |
 | 3 | `g+3` | *grarel* (`g` + `ra` + re + `l`) |
 | −3 | `g-3` | *grurel* (`g` + `ru` + re + `l`) |
 | 3 (as subject) | `z+3` | *zrarel* |
@@ -1419,18 +1419,18 @@ Preferred writing first; the spoken form follows, often with its syllables in pa
 | of size 12 | `b+12` | *brawodul* (`b` + `ra` + wo du) |
 | room 12 (modifier) | `g_12` | *growodul* (`g` + `ro` + wo du) |
 | 139 | `g+139` | *graworenal* (`ra` + wo re na) |
-| 27e12 | `g+27e12` | *grabawodujadulel* (`ra` + ba wo du **ja** + du le) |
-| e9 (bare) | `g+e9` | *grabanal* (`ra` + ba na; **no** `ja`) |
-| 50e-6 | `g+50e-6` | *grabugujavazol* (`ra` + bu gu **ja** + va zo) |
-| −1e9 −265e3 −4 | `g-1e9,265e3,4` | *grubanajawothubarejaduguvathumol* — **`ru`**; groups: ba na **ja** wo · **thu** · ba re **ja** du gu va · **thu** · mo |
-| $5860.04 → 5e3 + 860 + 4e-2 | `g+5e3,860,4e-2` | *grabarejavathahaguzothabudujamol* — ba re **ja** va · **tha** · ha gu zo · **tha** · bu du **ja** mo |
+| 27e12 | `g+27e12` | *grabawoduyadulel* (`ra` + ba wo du **ya** + du le) |
+| e9 (bare) | `g+e9` | *grabanal* (`ra` + ba na; **no** `ya`) |
+| 50e-6 | `g+50e-6` | *grabuguyavazol* (`ra` + bu gu **ya** + va zo) |
+| −1e9 −265e3 −4 | `g-1e9,265e3,4` | *grubanayawothubareyaduguvathumol* — **`ru`**; groups: ba na **ya** wo · **thu** · ba re **ya** du gu va · **thu** · mo |
+| $5860.04 → 5e3 + 860 + 4e-2 | `g+5e3,860,4e-2` | *grabareyavathahaguzothabuduyamol* — ba re **ya** va · **tha** · ha gu zo · **tha** · bu du **ya** mo |
 | 2nd | `g#2` | *gredul*; title-like *the Second…* may take **-n** (`g@#2` / *gredun*) |
 | penultimate | `g#-2` | *gruedul* |
-| about 27e6 | `g~+27e6` | *grabagujadulem* (ba gu **ja** du le, ending **-m**) |
+| about 27e6 | `g~+27e6` | *grabaguyadulem* (ba gu **ya** du le, ending **-m**) |
 | phone 555-123-4567 | `d_555,123,4567` | *drovavavathowodurethomovagulel* (`d` + `ro` + va×3 · **tho** · wo du re · **tho** · mo va gu le + `l`) |
-| scientific 5.2487083e-4 | `g+5.2487083e-4` | *grabumojavajedumohalezoharel* (`ra` + bu mo **ja** + va **je** + du mo ha · le zo ha · re) |
-| 25% | `g+25%` | *graduvajol* (`g` + `ra` + du va **jo** + `l`) |
-| +2 pp | `g+2%*` | *gradujul* (`ra` + du **ju**) |
+| scientific 5.2487083e-4 | `g+5.2487083e-4` | *grabumoyavayedumohalezoharel* (`ra` + bu mo **ya** + va **ye** + du mo ha · le zo ha · re) |
+| 25% | `g+25%` | *graduvayol* (`g` + `ra` + du va **yo** + `l`) |
+| +2 pp | `g+2%*` | *graduyul* (`ra` + du **yu**) |
 | neutral point 1 / 2 | `x#1`, `x#2` | *xrewol*, *xredul* (`x` + `re` + …) |
 | end-relative point 2 | `x#-2` | *xruedul* (x + rue + du) |
 | corroborating item 3 | `x+3` | *xrarel* (`x` + `ra` + re) |
@@ -1441,11 +1441,11 @@ Preferred writing first; the spoken form follows, often with its syllables in pa
 | ÷3 / every third | `h-3` | *hrurel* (`h` + `ru` + re) |
 | at 15:30 | `h_15,30` | *hrowovathorezol* (`h` + `ro` + wo va · **tho** · re zo) — bare `hro` = time |
 | for the third time | `h#3` | *hrerel* (`h` + `re` + re) |
-| Three! (label / score) | `j_3` | *jrorel* (`j` + `ro` + re) |
-| Three more! | `j+3` | *jrarel* (`j` + `ra` + re) |
-| Three short! / Three fewer! / −3! | `j-3` | *jrurel* (`j` + `ru` + re) |
-| twenty-seven! (label) | `j_27` | *jrodulel* (`j` + `ro` + du le) |
-| First! (place cheer) | `j#1` | *jrewol* (`j` + `re` + wo) |
+| Three! (label / score) | `y_3` | *yrorel* (`y` + `ro` + re) |
+| Three more! | `y+3` | *yrarel* (`y` + `ra` + re) |
+| Three short! / Three fewer! / −3! | `y-3` | *yrurel* (`y` + `ru` + re) |
+| twenty-seven! (label) | `y_27` | *yrodulel* (`y` + `ro` + du le) |
+| First! (place cheer) | `y#1` | *yrewol* (`y` + `re` + wo) |
 
 In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…`).
 
@@ -1520,21 +1520,21 @@ x-finally | z-Azawan | v-see
 **4.** *To infinity!*
 
 ::: details Show answer
-`j+e.`
+`y+e.`
 
-🔊 *jrabal.*
+🔊 *yrabal.*
 
-j-plus-infinity
+y-plus-infinity
 :::
 
 **5.** *Annihilate!*
 
 ::: details Show answer
-`j+0e.`
+`y+0e.`
 
-🔊 *jrazobal.*
+🔊 *yrazobal.*
 
-j-+-0e
+y-+-0e
 :::
 
 **6.** *Starting with: Uhubun sees.*
@@ -1580,13 +1580,13 @@ z-star-x | g-plus-infinity.about
 *Stars — a huge but finite number.*
 :::
 
-**2.** `j#e.`
+**2.** `y#e.`
 
 ::: details Show answer
 
-🔊 *jrebal.*
+🔊 *yrebal.*
 
-j-last-place
+y-last-place
 
 *Finally!*
 :::
@@ -1624,13 +1624,13 @@ z-Azawan | v-see | h-#-1e
 *Azawan sees for the gazillionth time.*
 :::
 
-**6.** `j-e-.`
+**6.** `y-e-.`
 
 ::: details Show answer
 
-🔊 *jrubul.*
+🔊 *yrubul.*
 
-j---e-
+y---e-
 
 *So close!*
 :::

@@ -6,7 +6,7 @@
 
 ## Motivation
 
-Learners will want to **check pronunciation** (did this utterance match the example?) and later **dictate** drills. English-centric STT (unconstrained Whisper, Web Speech API) will invent English spelling and wrong phones (`j` as *jay*, `x` as *ks*, stacked vowels as diphthongs).
+Learners will want to **check pronunciation** (did this utterance match the example?) and later **dictate** drills. English-centric STT (unconstrained Whisper, Web Speech API) will invent English spelling and wrong phones (`x` as *ks*, stacked vowels as diphthongs).
 
 Agalan is a small, regular sound system with spelling that shows the sound. The expensive part of ASR is **acoustics**; the Agalan-specific part is **mapping phones to letters and legal words**. Existing open-source **universal / multilingual phoneme recognizers** already do the first job. This proposal reuses those models unchanged and puts Agalan knowledge in a thin inverse of the TTS stack (`toPhonemes` run backwards, then `toSpeech` run backwards).
 
@@ -106,12 +106,12 @@ Unvoiced variants are **style**, not letters. Before `phonesToLetters`:
 | [u] [ʊ] [uː] (model-dependent) | /u/ | **u** (adapter documents the mapping) |
 | [o] [o̞] [ɔ] | /o/ | **o** (reject /oʊ/ as two targets if the model emits a glide) |
 | [ɑ] [a] | /ɑ/ | **a** |
-| [j] | /j/ | **j** |
+| [j] | /j/ | **y** |
 | [w] | /w/ | **w** |
 | [m] [n] [l] | same | **m** **n** **l** |
 | [ɹ] [r] [ɾ] | /ɹ/ | **r** |
 
-**Hiatus:** two adjacent vowel phones → two letters, two syllables (`juon` not a diphthong). If the model emits a diphthong symbol, split it in the adapter.
+**Hiatus:** two adjacent vowel phones → two letters, two syllables (`yuon` not a diphthong). If the model emits a diphthong symbol, split it in the adapter.
 
 ## Segmentation
 

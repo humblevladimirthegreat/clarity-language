@@ -84,7 +84,7 @@ describe("lintAgalanToken", () => {
     assert.equal(lintAgalanToken("azawa", tables), null);
     assert.equal(lintAgalanToken("g+3", tables), null);
     assert.equal(lintAgalanToken("al", tables), null);
-    assert.equal(lintAgalanToken("jal", tables), null);
+    assert.equal(lintAgalanToken("yal", tables), null);
     assert.equal(lintAgalanToken("d<sushi>", tables), null);
     assert.equal(lintAgalanToken("d[hi]", tables), null);
     assert.equal(lintAgalanToken("daxal", tables), null);
@@ -170,18 +170,18 @@ describe("lintAgalanSpans", () => {
   const tables = tablesOf();
 
   it("parses whole sentences: a join before its conjuncts fails", () => {
-    const text = "> `jol zazawan vul vazawal. jael.`\n>\n> j-question | z-Azawan | v-not | v-swan . j-yes\n";
+    const text = "> `yol zazawan vul vazawal. yael.`\n>\n> y-question | z-Azawan | v-not | v-swan . y-yes\n";
     const issues = lintAgalanSpans(text, tables);
     assert.equal(issues.length, 1);
     assert.equal(issues[0]!.kind, "sentence");
     assert.match(issues[0]!.detail, /closes its conjuncts/);
-    assert.deepEqual(lintAgalanSpans("`jol zazawan vazawal vul. jael.`", tables), []);
+    assert.deepEqual(lintAgalanSpans("`yol zazawan vazawal vul. yael.`", tables), []);
   });
 
   it("parses multi-word phrases unless marked a fragment", () => {
     assert.equal(lintAgalanSpans("`zul zazawan`", tables)[0]?.kind, "phrase");
     assert.deepEqual(lintAgalanSpans("<!-- lint: fragment -->`zul zazawan`", tables), []);
-    assert.equal(lintAgalanSpans("<!-- lint: skip -->`wo zo jo`", tables)[0]?.kind, "bad-marker");
+    assert.equal(lintAgalanSpans("<!-- lint: skip -->`wo zo yo`", tables)[0]?.kind, "bad-marker");
   });
 
   it("traces fragments with context supplied around them", () => {

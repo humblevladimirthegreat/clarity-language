@@ -260,11 +260,11 @@ z-someone | v-scream
 *Someone screams.*
 :::
 
-**8.** `jol zugobon vogogol.`
+**8.** `yol zugobon vogogol.`
 
 ::: details Show answer
 
-j-question | z-speaker | v-cook
+y-question | z-speaker | v-cook
 
 *Do I cook?*
 :::
@@ -284,8 +284,8 @@ Beginner already used content **-r** in the same slot as the earlier word (*he s
 | `/ɡ/` … `-r` after `/ɡ/` | same property again | *such* / *that* / *so* |
 | `/w/` … `-r` after `/w/` | same degree or frame | *that* degree / frame again |
 | `/h/` … `-r` after `/h/` | same adverb again | *thus* / *so* / *that way* / *then* |
-| `/j/` vocative … `-r` | same addressee again | calling that person again |
-| `/j/` interjection … `-r` | same exclamation again | repeating that call-out |
+| `/y/` vocative … `-r` | same addressee again | calling that person again |
+| `/y/` interjection … `-r` | same exclamation again | repeating that call-out |
 | `/x/` … `-r` after `/x/` | same linker again | *and so* / *likewise* |
 
 **Compare with:** English *that* pointing at a quoted title, proverb, or aside uses a [span resume](spans.md#endings), not content **-r**.
@@ -530,7 +530,7 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 | `/ɡ/` … `-r` | of that entity’s kind (not possession) | *of that kind* |
 | `/w/` … `-r` | degree or frame on a property of that entity | *that* degree / frame |
 | `/h/` … `-r` | occasion framed by that entity | *then* / *that way* (framed by that entity) |
-| `/j/` vocative … `-r` | address that entity | vocative |
+| `/y/` vocative … `-r` | address that entity | vocative |
 | `/x/` … `-r` | discourse thread resume | *Going back to subject X* |
 
 Examples:
@@ -565,9 +565,9 @@ Examples:
 >
 > "Azawan broadcasts. Ululon mutes on that one's account."
 
-> `zazawan vumudel. jazar.`
+> `zazawan vumudel. yazar.`
 >
-> z-Azawan | v-mute . j-←Azawan
+> z-Azawan | v-mute . y-←Azawan
 >
 > "Azawan mutes. Hey, Azawan!"
 
@@ -586,7 +586,7 @@ Examples:
 | `/ɡ/` … `-r` | property of having done that | *such* (done that way) |
 | `/w/` … `-r` | frame on an adjective about that doing | that frame |
 | `/h/` … `-r` | manner of acting | *by doing so* / *thereby* / *in that manner of acting* |
-| `/j/` … `-r` | vocative/interjection on that named act | *They did that?!* |
+| `/y/` … `-r` | vocative/interjection on that named act | *They did that?!* |
 | `/x/` … `-r` | discourse resume of the doing | *Going back to that (doing / event)* |
 
 Examples:
@@ -621,9 +621,9 @@ Examples:
 >
 > "Azawan broadcasts. By doing so, Ululon mutes."
 
-> `zazawan vumudel. jumur.`
+> `zazawan vumudel. yumur.`
 >
-> z-Azawan | v-mute . j-←mute
+> z-Azawan | v-mute . y-←mute
 >
 > "Azawan mutes. Azawan did that?!"
 
@@ -642,7 +642,7 @@ Examples:
 | `/ɡ/` … `-r` | same property again | *such* / *that* |
 | `/w/` … `-r` | degree of the property | *that* degree |
 | `/h/` … `-r` | manner from the property | *in that way* / *so* |
-| `/j/` … `-r` | named category as a call | *It was that?!* |
+| `/y/` … `-r` | named category as a call | *It was that?!* |
 | `/x/` … `-r` | discourse resume of the property | *Going back to that (property / category)* |
 
 Examples:
@@ -677,9 +677,9 @@ Examples:
 >
 > "A radio is red. Azawan broadcasts that way."
 
-> `zaradul garedel. jarer.`
+> `zaradul garedel. yarer.`
 >
-> z-radio | g-red . j-←red
+> z-radio | g-red . y-←red
 >
 > "A radio is red. It was that?!"
 
@@ -697,7 +697,7 @@ Examples:
 | `/ɡ/` … `-r` | host property under that frame again | that property |
 | `/w/` … `-r` | same adjunct again | same adjunct |
 | `/v/` `/h/` … `-r` | act or clause framed by that degree/criterion | framed doing / occasion |
-| `/j/` … `-r` | vocative on that frame | *In that manner?!* |
+| `/y/` … `-r` | vocative on that frame | *In that manner?!* |
 | `/x/` … `-r` | discourse resume of the scale | *Going back to that (scale / criterion)* |
 
 Examples:
@@ -726,9 +726,9 @@ Examples:
 >
 > "A radio is very red. Azawan broadcasts to that degree."
 
-> `zaradul welem garedel. jeler.`
+> `zaradul welem garedel. yeler.`
 >
-> z-radio | [w-very | g-red] . j-←very
+> z-radio | [w-very | g-red] . y-←very
 >
 > "A radio is very red. In that manner?!"
 
@@ -747,7 +747,7 @@ Examples:
 | `/ɡ/` … `-r` | property as of that occasion | that property |
 | `/w/` … `-r` | adjective-level echo of that frame | that frame |
 | `/h/` … `-r` | same adverb again | *thus* / *so* / *then* / *that way* |
-| `/j/` … `-r` | vocative on that occasion | *On that occasion?!* |
+| `/y/` … `-r` | vocative on that occasion | *On that occasion?!* |
 | `/x/` … `-r` | discourse resume of the framing | *Going back to that (occasion / framing)* |
 
 Examples:
@@ -782,9 +782,9 @@ Examples:
 >
 > "Ululon mutes like Azawan. Uhubun broadcasts that way."
 
-> `zululon hurorom bazawan vumudel. juror.`
+> `zululon hurorom bazawan vumudel. yuror.`
 >
-> z-Ululon | [h-like | b-Azawan] | v-mute . j-←like
+> z-Ululon | [h-like | b-Azawan] | v-mute . y-←like
 >
 > "Ululon mutes like Azawan. Like that?!"
 
@@ -794,19 +794,19 @@ Examples:
 >
 > "Ululon mutes like Azawan. Azawan punches. Going back to that manner, Uhubun screams."
 
-#### Antecedent was `/j/` or `/x/`
+#### Antecedent was `/y/` or `/x/`
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| same class (`/j/` or `/x/`) … `-r` | repeat that vocative, interjection, or linker | same call or glue again |
+| same class (`/y/` or `/x/`) … `-r` | repeat that vocative, interjection, or linker | same call or glue again |
 | `/x/` … `-r` from a content antecedent | discourse thread resume | *Going back to subject X* |
 | noun / verb / adjective / adverb … `-r` | recast the named formula or discourse label | ordinary referent (common for `-n` titles) |
 
 Examples:
 
-> `jazawan. jazar.`
+> `yazawan. yazar.`
 >
-> j-Azawan . j-←Azawan
+> y-Azawan . y-←Azawan
 >
 > "Azawan! Azawan!"
 
@@ -816,9 +816,9 @@ Examples:
 >
 > "Azawan mutes. Ululon punches. Going back to Azawan, Azawan screams."
 
-> `jululon. zulur vazagal.`
+> `yululon. zulur vazagal.`
 >
-> j-Ululon . z-←Ululon | v-scream
+> y-Ululon . z-←Ululon | v-scream
 >
 > "Ululon! Ululon screams."
 

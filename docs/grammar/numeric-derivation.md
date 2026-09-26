@@ -67,9 +67,9 @@ English *quasi-* says something has the **shape or role** of a kind without coun
 | **`/ɡ/`** (adjective) | *quasi-* (ascribed) | `gezezalrubul`: *quasi-official* |
 | **`/h/`** (adverb) | under quasi- framing | `hezezalrubul`: *quasi-officially* |
 | **`/w/`** (adjunct) | host graded as quasi- | `webenelrubul gebenel`: *quasi-commitment* |
-| **`/j/`** (interjection) | *Quasi-!* / *As if that kind!* | `jonogoleberelrubul` |
+| **`/y/`** (interjection) | *Quasi-!* / *As if that kind!* | `yonogoleberelrubul` |
 
-**Compare with:** free **`g-e-`** / **`v-e-`** / **`th-e-`** / **`j-e-`** / **`x-e-`** are the free *just short* amount, or number as verb / stance / interjection / discourse ([numbers.md § Just short](numbers.md#just-short)). **`ROOTl-e-`** is quasi-*kind*.
+**Compare with:** free **`g-e-`** / **`v-e-`** / **`th-e-`** / **`y-e-`** / **`x-e-`** are the free *just short* amount, or number as verb / stance / interjection / discourse ([numbers.md § Just short](numbers.md#just-short)). **`ROOTl-e-`** is quasi-*kind*.
 
 ###### Quasi-N (`-e-1` / `-e-2`)
 
@@ -128,7 +128,7 @@ English *a pair of…*, *three-part…*, *primary…* can name **how many parts 
 | **`/ɡ/`** (adjective) | null / reset (ascribed) | non-emptyable / residual (ascribed) | `godobolrazol`: *null / reset*; `godobolruzol`: *won’t-null / residual*; `gozedelruzom`: *hope that won’t go to zero* (vs `gozedelrubam` *void of hope*) |
 | **`/h/`** (adverb) | clause framed as reset / zeroed | clause framed as irreducible residue | `hezewelrazom`: *with effort zeroed*; `hezewelruzom`: *with irreducible effort* / *despite any zeroing* |
 | **`/w/`** (adjunct) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `wonenolrazol gonenol`: *debt (ascribed) zeroed*; `wonenolruzol gonenol`: *debt whose balance is anti-null* |
-| **`/j/`** (interjection) | discourse *Zero it!* / *Null!* | discourse *Won’t zero!* / *Residue stands!* | `jodobolrazol`; `jodobolruzol` |
+| **`/y/`** (interjection) | discourse *Zero it!* / *Null!* | discourse *Won’t zero!* / *Residue stands!* | `yodobolrazol`; `yodobolruzol` |
 
 **Related form:** a stronger wipe of the kind is [total null](#zero-exponent-derivation) **`ROOTl+0e`**. Hostless *annihilate* is free **`v+0el`**.
 
@@ -163,7 +163,7 @@ On free numbers, **`±0e-1`** is scalar anatomy; on ROOT the same stems are kind
 | **`/ɡ/`** | ascribed total-null | `gozedelrazobam` |
 | **`/h/`** | clause framed as total wipe | `hezewelrazobam` |
 | **`/w/`** | host graded toward total null | `wonenolrazobal gonenol` |
-| **`/j/`** | *Annihilate that kind!* | `jodobolrazobal` |
+| **`/y/`** | *Annihilate that kind!* | `yodobolrazobal` |
 
 **`-0e` / `-0e-` / `±0e-1`** inherit the same role-letter framing (absolute residue / micro-residue / engineering null·residue at order of magnitude −1). Free twins: **`v+0el`** *annihilate*; **`g+0e`** absolute-zero amount; **`g+0e-1`** / **`g-0e-1`** engineering null / residue: [numbers.md § Zero × exponent](numbers.md#zero-exponent).
 
@@ -174,7 +174,7 @@ On free numbers, **`±0e-1`** is scalar anatomy; on ROOT the same stems are kind
 |--------|-----|---------|-----|
 | **`ROOTl#0e`** | rank-annihilated / disqualified form of ROOT: place wiped as a kind property | `zomonalrezobal`: *a disqualified challenge (as type)*; `vomonalrezobal`: *to disqualify that challenge-kind*. Free **`g#0e`** is *disqualified place in this series*. | **#** is place; **0e** wipes that place |
 
-**`#0e`** vs **`#0`:** annihilated place vs zeroth-order rung. **`#0e`** vs **`+0e`:** rank wipe vs kind total-null. Free **`#e0`** is [current generation](numbers-applied.md#ordinal-generation). Same role-letter framing as other ordinal morphs (`/z/` disqualified kind, `/v/` disqualify-as-kind, `/j/` *Disqualified!*, …).
+**`#0e`** vs **`#0`:** annihilated place vs zeroth-order rung. **`#0e`** vs **`+0e`:** rank wipe vs kind total-null. Free **`#e0`** is [current generation](numbers-applied.md#ordinal-generation). Same role-letter framing as other ordinal morphs (`/z/` disqualified kind, `/v/` disqualify-as-kind, `/y/` *Disqualified!*, …).
 
 ### Ordinal digit morphs (`#N`)
 <a id="ordinal-digit-morphs"></a>
@@ -206,7 +206,7 @@ English *first-draft*, *secondary adventure*, *third-order problem* can name **w
 | **`/ɡ/`** (adjective) | *Nth-order* (ascribed) | `gomolredul`: *secondary* |
 | **`/h/`** (adverb) | *at Nth-order framing* | `hababulrezol`: *zeroth-order* |
 | **`/w/`** (adjunct) | host `/ɡ/` graded as Nth-order | `wezehelrerel gezehel`: *third-order (dialogue)* |
-| **`/j/`** (interjection) | discourse call of that order-kind | `jebegulrewol`: *First-draft!* (kind cheer; free `j#1` *First!* place cheer) |
+| **`/y/`** (interjection) | discourse call of that order-kind | `yebegulrewol`: *First-draft!* (kind cheer; free `y#1` *First!* place cheer) |
 
 **Related form:** **`_N`** is *which code*; free `g#N` is *which token in the current series*.
 
@@ -250,7 +250,7 @@ Digitless **`_`** is **catalog topology**, not magnitude. Label ∞ means *the n
 | **`/ɡ/`** (adjective) | open-endedly coded | proto-coded / unassigned | `gugedelrobal`; `gugedelrobul` |
 | **`/h/`** (adverb) | under open-catalog framing | under pre-label framing | `hugedelrobal`; `hugedelrobul` |
 | **`/w/`** (adjunct) | host graded as open-catalog | host graded as proto-label | `wugedelrobal gugedel` |
-| **`/j/`** (interjection) | *Open catalog!* / *∞-tagged!* | *Unassigned!* / *Empty slot!* | `jugedelrobal`; `jugedelrobul` |
+| **`/y/`** (interjection) | *Open catalog!* / *∞-tagged!* | *Unassigned!* / *Empty slot!* | `yugedelrobal`; `yugedelrobul` |
 
 ### Hyperbole sense (`+1e` / `#1e` / `_1e`)
 

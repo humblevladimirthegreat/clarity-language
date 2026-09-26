@@ -294,7 +294,7 @@ Role vowels are **`a`** / **`e`** / **`u`** / **`o`**. Span type and edge letter
 
 ### Conversation length (name **`x`** vowel) {#conversation-length}
 
-A [greeting](word-endings.md#greeting) is your own name with a period (`SELFn.`). [Calling someone](speech-moves.md#vocative) is their name under **`/j/`** (`jululon.`). Add **`x`** and one vowel before **-n** to say when the conversation will end. At arrival, this sets the expected length. At departure, the same form updates how soon you are leaving. The vowel is about the conversation, not a grade of the person.
+A [greeting](word-endings.md#greeting) is your own name with a period (`SELFn.`). [Calling someone](speech-moves.md#vocative) is their name under **`/y/`** (`yululon.`). Add **`x`** and one vowel before **-n** to say when the conversation will end. At arrival, this sets the expected length. At departure, the same form updates how soon you are leaving. The vowel is about the conversation, not a grade of the person.
 
 On your own name, it says how long you expect to stay. At departure, use the reduced level that matches how soon you are leaving.
 
@@ -304,9 +304,9 @@ On your own name, it says how long you expect to stay. At departure, use the red
 >
 > "I have time; we can stay."
 
-> `jululoxen.`
+> `yululoxen.`
 >
-> j-Ululon-minutes
+> y-Ululon-minutes
 >
 > "Ululon — I have a few minutes."
 
@@ -333,7 +333,7 @@ At arrival, the other person can answer with their own bid. The **lesser** bid s
 >
 > "Ululon — one slot." (the talk lasts for one ask)
 
-**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [need](values.md) takes **`th`** + vowel instead (`golozothal`). Conversation-length bids sit on a **named** citation or a **`/j/`** call, with **-n**.
+**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [need](values.md) takes **`th`** + vowel instead (`golozothal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**.
 
 **Compare with:** a plain named citation with a period is the basic hello (`SELFn.`). The bid says how much conversation the person is open to.
 
@@ -391,9 +391,9 @@ SELF-presence
 **2.** *Ululon — a few minutes.* (calling)
 
 ::: details Show answer
-`jululoxen.`
+`yululoxen.`
 
-j-Ululon-minutes
+y-Ululon-minutes
 :::
 
 **3.** *(Your name) — one ask.*
@@ -407,17 +407,17 @@ SELF-ask
 **4.** *(Your name) — I’m here. Ululon — one ask.*
 
 ::: details Show answer
-`SELFxan. jululoxon.`
+`SELFxan. yululoxon.`
 
-SELF-presence . j-Ululon-ask
+SELF-presence . y-Ululon-ask
 :::
 
 **5.** *Uhubun — just passing.* (calling)
 
 ::: details Show answer
-`juhubuxun.`
+`yuhubuxun.`
 
-j-Uhubun-passing
+y-Uhubun-passing
 :::
 
 **6.** *Uhubun — one ask.* (citation)
@@ -431,17 +431,17 @@ Uhubun-ask
 **7.** *Azawan — a few minutes.* (calling); *Ululon screams.*
 
 ::: details Show answer
-`jazawaxen zululon vazagal.`
+`yazawaxen zululon vazagal.`
 
-j-Azawan-minutes | z-Ululon | v-scream
+y-Azawan-minutes | z-Ululon | v-scream
 :::
 
 **8.** *Ululon — just passing.* (calling); *Uhubun punches Azawan.*
 
 ::: details Show answer
-`jululoxun zuhubun zazawan vubunul.`
+`yululoxun zuhubun zazawan vubunul.`
 
-j-Ululon-passing | z-Uhubun | z-Azawan | v-punch
+y-Ululon-passing | z-Uhubun | z-Azawan | v-punch
 :::
 
 **9.** *(Your name) — I’m here / we can stay.* *Ululon — one ask.* (Ululon’s bid is the one that holds)
@@ -463,11 +463,11 @@ Uhubun-presence
 *Uhubun — I’m here / we can stay.*
 :::
 
-**2.** `jululoxun.`
+**2.** `yululoxun.`
 
 ::: details Show answer
 
-j-Ululon-passing
+y-Ululon-passing
 *Ululon — just passing.* (calling)
 :::
 
@@ -480,27 +480,27 @@ Azawan-passing
 *Azawan — just passing.*
 :::
 
-**4.** `juhubuxen.`
+**4.** `yuhubuxen.`
 
 ::: details Show answer
 
-j-Uhubun-minutes
+y-Uhubun-minutes
 *Uhubun — a few minutes.* (calling)
 :::
 
-**5.** `jululoxon.`
+**5.** `yululoxon.`
 
 ::: details Show answer
 
-j-Ululon-ask
+y-Ululon-ask
 *Ululon — one ask.* (calling)
 :::
 
-**6.** `azawaxan juhubuxon.`
+**6.** `azawaxan yuhubuxon.`
 
 ::: details Show answer
 
-Azawan-presence | j-Uhubun-ask
+Azawan-presence | y-Uhubun-ask
 *Azawan — I’m here. Uhubun — one ask.* (calling)
 :::
 
@@ -512,11 +512,11 @@ Azawan
 *Azawan.* (hello — the speaker is Azawan)
 :::
 
-**8.** `jazawaxen zuhubun dadorolobelel vejel.`
+**8.** `yazawaxen zuhubun dadorolobelel vejel.`
 
 ::: details Show answer
 
-j-Azawan-minutes | z-Uhubun | d-doorbell | v-see
+y-Azawan-minutes | z-Uhubun | d-doorbell | v-see
 
 *Azawan — a few minutes.* (calling); *Uhubun sees a doorbell.*
 :::

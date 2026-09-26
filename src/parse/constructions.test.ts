@@ -54,18 +54,18 @@ describe("construction registry", () => {
   it("reports construction IDs, all registered", () => {
     const cases: [string, string][] = [
       ["zodogor vawalal.", "resolve.content.unbound"],
-      ["jululon.", "token.jFallbackVocative"],
+      ["yululon.", "token.yFallbackVocative"],
       ["zazawan vawalal.", "sentence.vpCoordPart.V"],
       ["zodogol gelem.", "reading.existence"],
       ["zodogol om banabal.", "reading.existence"],
-      ["jol.", "reading.bareQuestion"],
+      ["yol.", "reading.bareQuestion"],
       ["zazawan vawalal thodohom.", "overlay.odohom.th"],
       // A value or ability word uses the need / hostless-ability row of its host.
       ["zazawan vawalal thonogothem.", "overlay.onogom.th"],
       ["zazawan thegeraxel.", "overlay.egeram.th"],
       // Per-form features of families taught across sections.
       ["zazawan zululon zal vawalal.", "join.a"],
-      ["jol zazawan vawalal.", "force.o"],
+      ["yol zazawan vawalal.", "force.o"],
       ["zazawan vawalal hual.", "restrictor.always"],
     ];
     for (const [input, expected] of cases) {

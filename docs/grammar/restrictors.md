@@ -73,15 +73,15 @@ English *sometimes* is the usual match next to *never* / *always*. It still only
 
 **`hur`** names an occasion **outside** the times already in play: leftover, not the listed ones, and with nothing listed, leftover of the times already under discussion. Bare **`hur`** only says some leftover occasion exists (*at some other time*). It does not say the claim holds at leftover times in general.
 
-> `jol zuhubun vawalal hanunul.`
+> `yol zuhubun vawalal hanunul.`
 >
-> j-question | z-Uhubun | v-walk | h-rain
+> y-question | z-Uhubun | v-walk | h-rain
 >
 > "Does Uhubun walk when raining?"
 
-> `juel. zuhubun vawalal hur.`
+> `yuel. zuhubun vawalal hur.`
 >
-> j-no . z-Uhubun | v-walk | h-some-other-time
+> y-no . z-Uhubun | v-walk | h-some-other-time
 >
 > "No. Uhubun walks at some other time."
 

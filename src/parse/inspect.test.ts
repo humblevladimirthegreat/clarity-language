@@ -155,7 +155,7 @@ describe("inspectText", () => {
 
 describe("inspectText — phrase brackets", () => {
   it("marks bracket opens and closes on word tokens", () => {
-    const shown = inspectText("jael zugobon zam zedonen zal guzumum.", tables)
+    const shown = inspectText("yael zugobon zam zedonen zal guzumum.", tables)
       .tokens.filter((token) => token.kind === "word")
       .map((token) =>
         token.kind === "word"
@@ -163,7 +163,7 @@ describe("inspectText — phrase brackets", () => {
           : "",
       )
       .join(" ");
-    assert.equal(shown, "jael [[zugobon zam] zedonen zal guzumum]");
+    assert.equal(shown, "yael [[zugobon zam] zedonen zal guzumum]");
   });
 
   it("labels a spoken span on its open word", () => {

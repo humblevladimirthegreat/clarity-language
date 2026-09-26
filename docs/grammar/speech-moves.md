@@ -1,52 +1,52 @@
 # Speech moves {#speech-moves}
 
-Start a new turn with `/j/`: call someone, make a conventional call, or set the turn as a statement, question, command, or prohibition.
+Start a new turn with `/y/`: call someone, make a conventional call, or set the turn as a statement, question, command, or prohibition.
 
 ## Beginner {#beginner}
 
-### Turn (`/j/`): start a new speech move {#turn-j}
+### Turn (`/y/`): start a new speech move {#turn-y}
 
-A **turn** is one speech move: a statement, question, command, or other act, including talking only to yourself. `/j/` starts a new turn.
+A **turn** is one speech move: a statement, question, command, or other act, including talking only to yourself. `/y/` starts a new turn.
 
-At the start of a turn, write its act word immediately before the body (subject, object, verb, and so on), when you write one. A `/j/` word that calls someone or makes a conventional call can come first; a `/j/` after a finished body starts the next turn.
+At the start of a turn, write its act word immediately before the body (subject, object, verb, and so on), when you write one. A `/y/` word that calls someone or makes a conventional call can come first; a `/y/` after a finished body starts the next turn.
 
-### Call someone (`/j/` + name) {#vocative}
+### Call someone (`/y/` + name) {#vocative}
 
-To call someone into the turn, put `/j/` before their name, which ends in **-n**. The call can be the whole turn or come before a clause.
+To call someone into the turn, put `/y/` before their name, which ends in **-n**. The call can be the whole turn or come before a clause.
 
-> `jululon.`
+> `yululon.`
 >
-> j-Ululon
+> y-Ululon
 >
 > "Ululon!" (calling Ululon)
 
-**Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`SELFn.`). Calling Ululon uses `/j/`; saying Ululon walks uses `/z/` (`zazawan vawalal`).
+**Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`SELFn.`). Calling Ululon uses `/y/`; saying Ululon walks uses `/z/` (`zazawan vawalal`).
 
 ### Interjections: conventional calls
 <a id="interjections"></a>
 
-An **interjection** is a short call that stands on its own, such as a reaction or exclamation. Write the reaction under `/j/` and end it in **-n** to name the call:
+An **interjection** is a short call that stands on its own, such as a reaction or exclamation. Write the reaction under `/y/` and end it in **-n** to name the call:
 
-> `juruzen.`
+> `yuruzen.`
 >
-> j-Uruzen
+> y-Uruzen
 >
 > "Surprise!"
 
-A person’s name under `/j/` calls that person (`jululon`); an interjection gives the reaction itself as the call.
+A person’s name under `/y/` calls that person (`yululon`); an interjection gives the reaction itself as the call.
 
 Here **-n** names the conventional call *Surprise!*, not a person.
 
 ### Speech act: statement, question, command
 <a id="speech-act-beginner"></a>
 
-Each turn has one **speech act**: whether you are stating, asking, commanding, or similar. The default statement word is **`jal`**. A period already marks a statement, so you can leave **`jal`** out when it is clear.
+Each turn has one **speech act**: whether you are stating, asking, commanding, or similar. The default statement word is **`yal`**. A period already marks a statement, so you can leave **`yal`** out when it is clear.
 
-When the turn is not a statement, put its `/j/` act word immediately before the body:
+When the turn is not a statement, put its `/y/` act word immediately before the body:
 
-> `jel vawalal.`
+> `yel vawalal.`
 >
-> j-command | v-walk
+> y-command | v-walk
 >
 > "Walk!"
 
@@ -54,10 +54,10 @@ The vowel gives the act word its setting. The same four vowel cues appear in man
 
 | Agalan | Use | Cue |
 |--------|-----|-----|
-| **jal** | statement (often omitted) | **a** ≈ add (hold the claim) |
-| **jol** | question: yes/no and fill-in ask | **o** ≈ one (pick from a menu) |
-| **jel** | command / instruction | **e** ≈ order (do this) |
-| **jul** | prohibition: *don’t…* | **u** ≈ undo (take the action back) |
+| **yal** | statement (often omitted) | **a** ≈ add (hold the claim) |
+| **yol** | question: yes/no and fill-in ask | **o** ≈ one (pick from a menu) |
+| **yel** | command / instruction | **e** ≈ order (do this) |
+| **yul** | prohibition: *don’t…* | **u** ≈ undo (take the action back) |
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -81,52 +81,52 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *Uhubun!* (calling Uhubun)
 
 ::: details Show answer
-`juhubun.`
+`yuhubun.`
 
-j-Uhubun
+y-Uhubun
 :::
 
 **2.** *Don’t sneak.*
 
 ::: details Show answer
-`jul vazanal.`
+`yul vazanal.`
 
-j-prohibition | v-sneak
+y-prohibition | v-sneak
 :::
 
 **3.** *Surprise!* (as a call)
 
 ::: details Show answer
-`juruzen.`
+`yuruzen.`
 
-j-Uruzen
+y-Uruzen
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
 
-**1.** `jazawan.`
+**1.** `yazawan.`
 
 ::: details Show answer
 
-j-Azawan
+y-Azawan
 
 *Azawan!* (calling Azawan)
 :::
 
-**2.** `jol zazawan vajul.`
+**2.** `yol zazawan vajul.`
 
 ::: details Show answer
 
-j-question | z-Azawan | v-sit
+y-question | z-Azawan | v-sit
 
 *Does Azawan sit?*
 :::
 
-**3.** `jel vurunul.`
+**3.** `yel vurunul.`
 
 ::: details Show answer
 
-j-command | v-run
+y-command | v-run
 
 *Run!*
 :::
@@ -141,50 +141,50 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 You already write whether a turn is a statement, question, command, or prohibition. The extra choice here is **how firmly** you mean it.
 
-The act word is **`j` + vowel + ending**. The vowel sets the act (**a** statement, **o** question, **e** command, **u** prohibition). **-l** stands behind the act; **-m** leaves it open (soft / offered). Write the act word when the setting is not a default statement. A period still lets you omit **`jal`**.
+The act word is **`y` + vowel + ending**. The vowel sets the act (**a** statement, **o** question, **e** command, **u** prohibition). **-l** stands behind the act; **-m** leaves it open (soft / offered). Write the act word when the setting is not a default statement. A period still lets you omit **`yal`**.
 
-> `jam zazawan vawalal.`
+> `yam zazawan vawalal.`
 >
-> j-soft-statement | z-Azawan | v-walk
+> y-soft-statement | z-Azawan | v-walk
 >
 > "For what it's worth, Azawan walks."
 
-**Compare with:** [MAY](knowing.md#may) (`thodohom`) marks the scene as *could be*. **`jam`** is still a statement; you put it forward without insisting the other person take it up.
+**Compare with:** [MAY](knowing.md#may) (`thodohom`) marks the scene as *could be*. **`yam`** is still a statement; you put it forward without insisting the other person take it up.
 
 | Agalan | Use | Cue |
 |--------|-----|-----|
-| **jal** | **statement**: claim or description | **a** add + **-l**: stand behind |
-| **jam** | **soft statement**: offered, not insisted (*for what it's worth*) | **a** add + **-m**: hold, but leave it open |
-| **jol** | **question**: yes/no and fill-in ask | **o** one / menu + **-l**: pick an answer |
-| **jom** | **soft question**: wonder, gentle ask, offer-like | **o** menu + **-m**: ask without pinning |
-| **jel** | **command**: instruction | **e** order + **-l**: do this |
-| **jem** | **request**: soft directive (*please…*) | **e** order + **-m**: ask, don’t command |
-| **jul** | **prohibition**: *don’t…* (firm) | **u** undo + **-l**: take the action back |
-| **jum** | **soft prohibition**: *please don’t…* / *I’d rather you not…* | **u** undo + **-m**: prefer they don’t |
+| **yal** | **statement**: claim or description | **a** add + **-l**: stand behind |
+| **yam** | **soft statement**: offered, not insisted (*for what it's worth*) | **a** add + **-m**: hold, but leave it open |
+| **yol** | **question**: yes/no and fill-in ask | **o** one / menu + **-l**: pick an answer |
+| **yom** | **soft question**: wonder, gentle ask, offer-like | **o** menu + **-m**: ask without pinning |
+| **yel** | **command**: instruction | **e** order + **-l**: do this |
+| **yem** | **request**: soft directive (*please…*) | **e** order + **-m**: ask, don’t command |
+| **yul** | **prohibition**: *don’t…* (firm) | **u** undo + **-l**: take the action back |
+| **yum** | **soft prohibition**: *please don’t…* / *I’d rather you not…* | **u** undo + **-m**: prefer they don’t |
 
 For *let's*, make a soft request with inclusive *we*, **`aha`** ([special pronouns](pronouns.md#special-pronouns)), as the subject. *Let's not* is the soft prohibition.
 
-> `jem zahan vawalal.`
+> `yem zahan vawalal.`
 >
-> j-request | z-interlocutors | v-walk
+> y-request | z-interlocutors | v-walk
 >
 > "Let's walk."
 
-> `jum zahan velebel.`
+> `yum zahan velebel.`
 >
-> j-soft-prohibition | z-interlocutors | v-sleep
+> y-soft-prohibition | z-interlocutors | v-sleep
 >
 > "Let's not sleep."
 
-A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/j/` words, immediately before the act word, or before a body that defaults to a statement.
+A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/y/` words, immediately before the act word, or before a body that defaults to a statement.
 
 ### Emphatic prohibition {#emphatic-prohibition}
 
-When a missed *don't* would be dangerous, say **`jul`** twice among the opening `/j/` words. The repeat makes the prohibition louder; it never cancels it. Repeat only the opening act word: a `jul` after the body starts a new turn instead of adding emphasis.
+When a missed *don't* would be dangerous, say **`yul`** twice among the opening `/y/` words. The repeat makes the prohibition louder; it never cancels it. Repeat only the opening act word: a `yul` after the body starts a new turn instead of adding emphasis.
 
-> `jul jul vazanal.`
+> `yul yul vazanal.`
 >
-> j-prohibition | j-prohibition | v-sneak
+> y-prohibition | y-prohibition | v-sneak
 >
 > "Don't sneak. I mean it."
 
@@ -262,7 +262,7 @@ A mark on a span colors all of it:
 >
 > "Azawan said “Azawan” (?)." (unsure about just the quoted word).
 
-**Compare with:** **`jol`** asks a question; `?` only sounds unsure. A tone mark shows the feeling; [emotion compose](values.md#emotion-compose) states it as a claim, and the two can share a sentence.
+**Compare with:** **`yol`** asks a question; `?` only sounds unsure. A tone mark shows the feeling; [emotion compose](values.md#emotion-compose) states it as a claim, and the two can share a sentence.
 
 - A mark may go on any word, including act words and [sentence linkers](dependents.md#sentence-linkers). Attached to a [scope island](spans.md#scope-islands), it colors the whole island.
 - Only `!`, `!!`, `?`, `?!`, `%`, `&`, and `;` are marks. Other stacks (`!?`, `??`, `%!`) are not, and neither are marks in a row with a space between (`! !`).
@@ -273,7 +273,7 @@ A mark on a span colors all of it:
 
 ### Number as interjection {#number-as-interjection}
 
-A number word in `/j/` is a call-out (*Three more!*, a score). It can sit with the other opening `/j/` words, before the act word, or stand alone as its own turn. Readings by marker: [numbers](numbers.md#number-as-interjection-by-marker).
+A number word in `/y/` is a call-out (*Three more!*, a score). It can sit with the other opening `/y/` words, before the act word, or stand alone as its own turn. Readings by marker: [numbers](numbers.md#number-as-interjection-by-marker).
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -301,49 +301,49 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *For what it's worth, Azawan sits.*
 
 ::: details Show answer
-`jam zazawan vajul.`
+`yam zazawan vajul.`
 
-j-soft-statement | z-Azawan | v-sit
+y-soft-statement | z-Azawan | v-sit
 :::
 
 **2.** *Does Uhubun see a trumpet, perhaps?*
 
 ::: details Show answer
-`jom zuhubun dudubel vejel.`
+`yom zuhubun dudubel vejel.`
 
-j-soft-question | z-Uhubun | d-trumpet | v-see
+y-soft-question | z-Uhubun | d-trumpet | v-see
 :::
 
 **3.** *Please stand.*
 
 ::: details Show answer
-`jem vadanal.`
+`yem vadanal.`
 
-j-request | v-stand
+y-request | v-stand
 :::
 
 **4.** *Please don’t sneak.*
 
 ::: details Show answer
-`jum vazanal.`
+`yum vazanal.`
 
-j-soft-prohibition | v-sneak
+y-soft-prohibition | v-sneak
 :::
 
 **5.** *For what it's worth, Ululon sees a trumpet.*
 
 ::: details Show answer
-`jam zululon dudubel vejel.`
+`yam zululon dudubel vejel.`
 
-j-soft-statement | z-Ululon | d-trumpet | v-see
+y-soft-statement | z-Ululon | d-trumpet | v-see
 :::
 
 **6.** *Please tell Uhubun.*
 
 ::: details Show answer
-`jem buhubun vezehel.`
+`yem buhubun vezehel.`
 
-j-request | b-Uhubun | v-tell
+y-request | b-Uhubun | v-tell
 :::
 
 **7.** *Azawan sees a trumpet (a trumpet, not something else).*
@@ -364,56 +364,56 @@ z-Azawan | v-see | &d-trumpet
 
 #### Agalan → English {#intermediate-agalan-to-english}
 
-**1.** `jam zazawan vajul.`
+**1.** `yam zazawan vajul.`
 
 ::: details Show answer
 
-j-soft-statement | z-Azawan | v-sit
+y-soft-statement | z-Azawan | v-sit
 
 *For what it's worth, Azawan sits.*
 :::
 
-**2.** `jom zuhubun dudubel vejel.`
+**2.** `yom zuhubun dudubel vejel.`
 
 ::: details Show answer
 
-j-soft-question | z-Uhubun | d-trumpet | v-see
+y-soft-question | z-Uhubun | d-trumpet | v-see
 
 *Does Uhubun see a trumpet, perhaps?*
 :::
 
-**3.** `jem vadanal.`
+**3.** `yem vadanal.`
 
 ::: details Show answer
 
-j-request | v-stand
+y-request | v-stand
 
 *Please stand.*
 :::
 
-**4.** `jum vazanal.`
+**4.** `yum vazanal.`
 
 ::: details Show answer
 
-j-soft-prohibition | v-sneak
+y-soft-prohibition | v-sneak
 
 *Please don’t sneak.*
 :::
 
-**5.** `jam zululon dudubel vejel.`
+**5.** `yam zululon dudubel vejel.`
 
 ::: details Show answer
 
-j-soft-statement | z-Ululon | d-trumpet | v-see
+y-soft-statement | z-Ululon | d-trumpet | v-see
 
 *For what it's worth, Ululon sees a trumpet.*
 :::
 
-**6.** `jem buhubun vezehel.`
+**6.** `yem buhubun vezehel.`
 
 ::: details Show answer
 
-j-request | b-Uhubun | v-tell
+y-request | b-Uhubun | v-tell
 
 *Please tell Uhubun.*
 :::
@@ -427,11 +427,11 @@ j-request | b-Uhubun | v-tell
 *Ululon sneaks.* (joking)
 :::
 
-**8.** `jem !vadanal.`
+**8.** `yem !vadanal.`
 
 ::: details Show answer
 
-j-request | !v-stand
+y-request | !v-stand
 
 *Please, stand!*
 :::

@@ -140,7 +140,7 @@ export function enforceTokens(tokens: IToken[], tables: ClassifyTables): void {
         prev.image === "." ||
         branch === "force" ||
         branch === "polar" ||
-        branch === "jFallbackVocative" ||
+        branch === "yFallbackVocative" ||
         branch === "greeting" ||
         branch === "hook";
       if (!opensBody) throw new ConstructionError("linkerMidSentence", token.image);

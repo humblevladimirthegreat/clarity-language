@@ -27,7 +27,7 @@ Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org
 ### Consonants
 
 A consonant starts a syllable. There is no distinction between voiced and unvoiced. Prefer the **voiced** version (with vocal cords buzzing) so you can hold a sung note. You may still use the unvoiced sound for style. 
-<!-- Consonant order: lips (b m w v), tongue tip (d n z l r), back (g h, then th as the "other h"), then English false friends (j x). Canonical alphabet / letter-name recitation follows this table (vowels e u o a first). -->
+<!-- Consonant order: lips (b m w v), tongue tip (d n z l r), y (palatal, between tongue tip and back), back (g h, then th as the "other h"), then the English false friend (x). Canonical alphabet / letter-name recitation follows this table (vowels e u o a first). -->
 
 | Agalan | IPA | Cue | Unvoiced variant |
 |--------|-----|-----|------------------|
@@ -40,14 +40,14 @@ A consonant starts a syllable. There is no distinction between voiced and unvoic
 | `z` | /z/ <IpaPlay file="Voiced_alveolar_sibilant.ogg" label="z" /> | *zoo* | /s/ <IpaPlay file="Voiceless_alveolar_sibilant.ogg" label="unvoiced z" />, *sea* |
 | `l` | /l/ <IpaPlay file="Alveolar_lateral_approximant.ogg" label="l" /> | *lie* | |
 | `r` | /ɹ/ <IpaPlay file="Alveolar_approximant.ogg" label="r" /> | *red* | |
+| `y` | /j/ <IpaPlay file="Palatal_approximant.ogg" label="y" /> | *yes* | |
 | `g` | /ɡ/ <IpaPlay file="Voiced_velar_plosive.ogg" label="g" /> | *go* | /k/ <IpaPlay file="Voiceless_velar_plosive.ogg" label="unvoiced g" />, *kite* |
 | `h` | /ɦ/ <IpaPlay file="Voiced_glottal_fricative.ogg" label="h" /> | *ahead* | /h/ <IpaPlay file="Voiceless_glottal_fricative.ogg" label="unvoiced h" />, *hat* |
 | `th` | /ð/ <IpaPlay file="Voiced_dental_fricative.ogg" label="th" /> | *this* | /θ/ <IpaPlay file="Voiceless_dental_fricative.ogg" label="unvoiced th" />, *thin* |
-| `j` | /j/ <IpaPlay file="Palatal_approximant.ogg" label="j" /> | *yes* (Germanic *j* as in *ja*) | |
 | `x` | /ʒ/ <IpaPlay file="Voiced_palato-alveolar_sibilant.ogg" label="x" /> | *vision* (the *si*) | /ʃ/ <IpaPlay file="Voiceless_palato-alveolar_sibilant.ogg" label="unvoiced x" />, *shy* |
 
 ::: tip Remember
-`j` and `x` have sounds different than English. The rest are familiar. 
+`x` sounds different than English. The rest are familiar. `y` is always a consonant, never a vowel.
 :::
 
 `th` is **one letter** written with two characters. Agalan has no `t`, so `th` never means `t` followed by `h`. At the start of a word it is the [stance](clause.md#stance-th) role letter. Inside a word it starts a syllable like any consonant (in [need](values.md) words and spoken [number groups](numbers.md#group-separator)); it never appears inside a dictionary root.
@@ -121,10 +121,10 @@ When you **spell a word aloud** or **name a letter**, say the Agalan name for it
 | `z` | `ze` | *zen* |
 | `l` | `lo` | *low* |
 | `r` | `ro` | *row* |
+| `y` | `ya` | *yacht* |
 | `g` | `ga` | *gaga* |
 | `h` | `hu` | *who* |
 | `th` | `tha` | *that* |
-| `j` | `ja` | *yacht* |
 | `x` | `xe` | *shed* |
 
 ```text

@@ -82,10 +82,10 @@ Checked on 2026-09-25 with `node scripts/parse.mjs`: the parser **accepted** eve
 | `zodogol.` / `zululon dagadal.` / `zodogol om banabal.` | valid: [existence](../grammar/predication.md#existence), `zodogol.` = *There is a dog.*, `zodogol om banabal.` = *There is a dog near a bank.* `zululon dagadal.` is **rejected**: an object `/d/` needs a `/v/`. | [predication](../grammar/predication.md) |
 | `zazawan zel gelem h+2 vawalal.` / `zazawan zel h+ vawalal.` | rank-join shared scale = `/ɡ/`, or `/h/` immediately after the join | [comparatives](../grammar/comparatives.md#manner-scale) |
 | `zual gagadalx.` | **-x** excluded on join-scoped `/ɡ/` | [joins](../grammar/joins.md#universals-domains-generics): the kind after **`ua`** / **`uo`** takes no **-x**. **Decided:** reject. (Collective SHARED `/ɡ/`…**-x** after **`a`** stays valid.) |
-| `jonogotham zazawan vawalal.` / `zazawan hagadum vawalal.` | need forms on `/ɡ/` / `/th/` / `/w/` only | [values](../grammar/values.md) |
+| `yonogotham zazawan vawalal.` / `zazawan hagadum vawalal.` | need forms on `/ɡ/` / `/th/` / `/w/` only | [values](../grammar/values.md) |
 | `zawaral gabenethal.` | the need form (ROOT + `th` + stance vowel) takes only the six inventory roots; read the list from the `need` overlays | [values](../grammar/values.md#need-inventory). **Decided:** reject. |
-| `jol.` / `jom.` | stays valid: bare `jol.` = *Huh?*, `jom.` = *Hm?* | [questions](../grammar/questions.md#question) |
-| `jelel.` | stays valid: a `/j/` call on **-l** is taught (`jubal.`, `jagadalx.`) | [speech-moves](../grammar/speech-moves.md) |
+| `yol.` / `yom.` | stays valid: bare `yol.` = *Huh?*, `yom.` = *Hm?* | [questions](../grammar/questions.md#question) |
+| `yelel.` | stays valid: a `/y/` call on **-l** is taught (`yubal.`, `yagadalx.`) | [speech-moves](../grammar/speech-moves.md) |
 
 ## Rollout
 
@@ -97,11 +97,11 @@ Checked on 2026-09-25 with `node scripts/parse.mjs`: the parser **accepted** eve
    - Hook compounds and the *means* reading are used on no page.
    - Unbound `-r` appears on numbers-applied.md and plurality.md.
 
-   Not yet surfaced: shape-level combinations that reuse registered child keys (bare `jol.`, a mid-sentence linker, values on `/h/`). Those need rule splits or gates in step 2.
+   Not yet surfaced: shape-level combinations that reuse registered child keys (bare `yol.`, a mid-sentence linker, values on `/h/`). Those need rule splits or gates in step 2.
 
    Original step text: Label alternatives and split coarse rules until each production names one documented construction, keeping every current doc example parsing. Map productions to anchors. Add the completeness and anchor tests. Have `parse()` report construction IDs behind an option. Run check 2 in report-only mode. Its list of unexercised constructions replaces hand-collected findings like the table above.
 2. **Enforcement.** *Mostly done 2026-09-25.* Rejections live in `src/parse/enforce.ts` (`ConstructionError` names the rule and its anchor from `REJECTIONS` in `constructions.ts`); rows are in `src/parse/invalid-forms.test.ts`. Grammar-level removals: `?` / `!` sentence ends, SHARED after `/h/` / `/th/` / `/x/` joins, a shared `/ɡ/` after a `/v/` join, a stand-in as the as-of bound, a new utterance with no period before it (this is what let a mid-sentence linker through), and the dead `means` reading. Enforced from the findings table: stand-in hosts (`clause_pole` overlays; `burl` only after `holalam`), pole stacks (`theberom thurugum` only), linker placement, short unbound **-r**, `/z/` + `/d/` with no `/v/`, a number `/h/` after a rank join, **-x** on the kind after `ua` / `uo`, need-form slot and roots, **-x** on `/w/` `/h/` `/th/` `/x/`.
-   Settled after review: `/j/` words on **-l** stay valid (`jubal.`, `jagadalx.`; `jelel.` has no reading issue). Unbound number **-r** is rejected (the numbers.md drill now names a number first). Verbless fragments stay valid; only `/z/` + `/d/` with no `/v/` is rejected. `h+2` after a rank-join adjective is a plain adverb. A root ending at its 2nd vowel (`odo`) reads as a short resume.
+   Settled after review: `/y/` words on **-l** stay valid (`yubal.`, `yagadalx.`; `yelel.` has no reading issue). Unbound number **-r** is rejected (the numbers.md drill now names a number first). Verbless fragments stay valid; only `/z/` + `/d/` with no `/v/` is rejected. `h+2` after a rank-join adjective is a plain adverb. A root ending at its 2nd vowel (`odo`) reads as a short resume.
    Still open:
    Reading IDs `reading.existence` (predication.md) and `reading.bareQuestion` (questions.md) put the new doc sections under the coverage check.
    Moved to step 3: the `validate*` checks in `sentence-parser.ts` (not user-visible; rejects the same inputs).

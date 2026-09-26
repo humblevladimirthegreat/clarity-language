@@ -72,7 +72,7 @@ describe("retieCore — Agalan tokens", () => {
 
   it("leaves join markers and revisers alone", () => {
     const map = mapOf(["al", "xxxx"], ["a", "e"]);
-    assert.equal(retieCore("jol", map), null);
+    assert.equal(retieCore("yol", map), null);
     assert.equal(retieCore("al", map), null);
     assert.equal(retieCore("on", map), null);
   });
@@ -90,11 +90,11 @@ describe("rewriteMarkdown mixed English", () => {
     );
   });
 
-  it("reties inside a multi-word code span and keeps jol", () => {
+  it("reties inside a multi-word code span and keeps yol", () => {
     const map = mapOf(["azawa", "ululo"]);
-    const input = "English then `jol zazawan vawalal.` still English.";
+    const input = "English then `yol zazawan vawalal.` still English.";
     const { text } = rewriteMarkdown(input, map);
-    assert.equal(text, "English then `jol zululon vawalal.` still English.");
+    assert.equal(text, "English then `yol zululon vawalal.` still English.");
   });
 
   it("does not retie link targets", () => {
@@ -225,10 +225,10 @@ describe("resume-aware markdown retie", () => {
   it("keeps a compound-name short resume when the prefix root moves", () => {
     const map = mapOf(["ubu", "edeme"]);
     const { text } = rewriteMarkdown(
-      "`jubunexunowen vawalal.` then `dubur vajul.`",
+      "`yubunexunowen vawalal.` then `dubur vajul.`",
       map,
     );
-    assert.equal(text, "`jubunexunowen vawalal.` then `dubur vajul.`");
+    assert.equal(text, "`yubunexunowen vawalal.` then `dubur vajul.`");
   });
 });
 

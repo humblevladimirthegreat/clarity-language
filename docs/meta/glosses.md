@@ -118,9 +118,9 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 
 ### Example (same Agalan, three readings)
 
-> `jol dubur dadedal dogovel dol von.`
+> `yol dubur dadedal dogovel dol von.`
 >
-> j-question | [d-←Ubune-x-Unowen | d-tea | d-coffee | d-or-exactly-one] | v-choose
+> y-question | [d-←Ubune-x-Unowen | d-tea | d-coffee | d-or-exactly-one] | v-choose
 >
 > "Do you want tea or coffee?" ← loose (default)
 >
@@ -180,7 +180,7 @@ Lexicon search indexes those lemmas. Morph uses the packed lemma for that role l
 {PoS}-{english}(-x-{english|TAG})*[-x]
 ```
 
-- **PoS** — single letter matching the written prefix (`j` `z` `d` `b` `v` `g` `w` `h` `x`). Left-bound adjectives: `gl-…`.
+- **PoS** — single letter matching the written prefix (`y` `z` `d` `b` `v` `g` `w` `h` `x`). Left-bound adjectives: `gl-…`.
 - **english** — short English label for the **active** sense (hyphens OK inside a label: `that-clause`, `or-exactly-one`). **Uninflected lemma** for verb senses ([english lemma](#english-lemma)). **No** Agalan root letters. **No** writing glyphs **`@`** / **`~`** (those mark **-n** / **-m** in Agalan spelling only: numbers, span fences).
 - **`-x-`** — mid-word compound / stance / role / span hinge; each piece is English (or a stable TAG).
 - **-l / -m / -n** — **omit**. They only choose which English sense-root is in play. Do not re-spell them as `-l` / `-m` / `-n` or as `@` / `~`.
@@ -194,7 +194,7 @@ Separate **words** with spaced `|` (`z-dog | v-walk`). Group words into [phrase 
 ### Phrase brackets
 <a id="phrase-brackets"></a>
 
-The morph line shows **phrase structure**: which words form one unit and what modifies what. Wrap any unit of **two or more words** that fills one slot in `[ … ]`. Inside a bracket, words still use ` | `. A single word never gets brackets. Roles at clause level stay flat and unbracketed, because they are sisters under the verb: subject `z`, theme `d`, verb `v`, plain `h` / `th`, unhosted recipient `b`, linkers and `/j/`.
+The morph line shows **phrase structure**: which words form one unit and what modifies what. Wrap any unit of **two or more words** that fills one slot in `[ … ]`. Inside a bracket, words still use ` | `. A single word never gets brackets. Roles at clause level stay flat and unbracketed, because they are sisters under the verb: subject `z`, theme `d`, verb `v`, plain `h` / `th`, unhosted recipient `b`, linkers and `/y/`.
 
 A dependent sits next to the word it modifies, in Agalan order. Nesting shows attachment:
 
@@ -228,7 +228,7 @@ Written and spoken spans stay distinct: a written span label has no EDGE suffix,
 
 A morph line corresponds **one-to-one** with its Agalan. From the gloss alone you can rebuild the exact written words, so glosses must never merge two forms:
 
-- **Every written word is glossed**, including a spoken **`jal`**. A `jal` that was left out is not added.
+- **Every written word is glossed**, including a spoken **`yal`**. A `yal` that was left out is not added.
 - **Sentence marks.** When one line holds several sentences, the mark between them stands alone with spaces: `z-Azawan | v-walk . z-←Azawan | v-judge`. A line-final period is implicit. A [tone mark](../grammar/speech-moves.md#tone-marks) is copied as written: attached to the glossed word or span it colors (`!z-Azawan`), or standing alone with spaces for sentence scope (`! z-Azawan | v-walk`).
 - **One label per form.** Each (PoS, root, ending) maps to one English label. Two roots never share an English sense: when they would, reword one row in the lexicon. `npm run lint:lexicon` checks this, and `npm test` round-trips every glossed example in `docs/grammar/`.
 - **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, `.full` on a [full-root resume](#anaphors-r), and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and `.spelled` on a spelled-out number word (`grarel` → `g-three.spelled`; `g+3` → `g-three`).
@@ -245,7 +245,7 @@ Only when it is **not** already baked into the English sense-root:
 |---------------|-----|
 | `-x` | Associative / collective ascription / collective doing / address-set — not a sense picker |
 | `(←…)` binding for **-r** | Resume is not a lexicon sense; see below |
-| Rare teaching callouts | If you must contrast two same-sense forms that differ only by ending, prefer distinct English labels (`and.open` / `and`, `j-question` / `j-soft-question`) over re-attaching `-m` / `-l` or `~` |
+| Rare teaching callouts | If you must contrast two same-sense forms that differ only by ending, prefer distinct English labels (`and.open` / `and`, `y-question` / `y-soft-question`) over re-attaching `-m` / `-l` or `~` |
 
 Do **not** write `-l` / `-m` / `-n`, **`@`**, or **`~`** after a sense. Named **-n** uses the English name (`z-Azawan`), not `-n` / `-proper` / `@`. Abstract **-m** uses the abstract word (`g-happy`), not `happy~`.
 
@@ -311,7 +311,7 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 
 | Family | Example Agalan | Morph gloss |
 |--------|-----------------|-------------|
-| Ordinary / name compound | `jubunexunowen` | `j-Ubune-x-Unowen` |
+| Ordinary / name compound | `yubunexunowen` | `y-Ubune-x-Unowen` |
 | Ordinary (three roots) | `zogovexadedaxunuden` | `z-Ogove-x-Adeda-x-Unuden` |
 | Ability / values stance | `vawalaxel` | `v-walk-unable-temporary` |
 | Values stance on need | `tholozothom` | `th-competence-motive-internal` |
@@ -319,7 +319,7 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 | Span open / close | `thexal` … `xuxul` | `th-ASIDE.multi[…]` ([labeled bracket](#phrase-brackets)) |
 | Number / enumeration | `x#e-` | `x-starting-with` |
 
-For **phrasal proper names**, gloss each piece (`j-Ubune-x-Unowen`, `z-Ogove-x-Adeda-x-Unuden`). Mid-word **`x`** stays visible as `-x-`. Do not put Agalan letters in the english slot, except [mention interiors](#span-interiors).
+For **phrasal proper names**, gloss each piece (`y-Ubune-x-Unowen`, `z-Ogove-x-Adeda-x-Unuden`). Mid-word **`x`** stays visible as `-x-`. Do not put Agalan letters in the english slot, except [mention interiors](#span-interiors).
 
 ### Mention and opaque interiors
 <a id="span-interiors"></a>
@@ -387,9 +387,9 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | Agalan | Morph gloss | Free English (separate) |
 |---------|-------------|-------------------------|
 | `azawan.` | `Azawan` | *Azawan.* (hello) |
-| `jululoxen` | `j-Ululon-minutes` | *Ululon — a few minutes.* |
-| `jael` | `j-yes` | *Yes.* |
-| `jol` | `j-question` | *(yes/no or fill-ask)* |
+| `yululoxen` | `y-Ululon-minutes` | *Ululon — a few minutes.* |
+| `yael` | `y-yes` | *Yes.* |
+| `yol` | `y-question` | *(yes/no or fill-ask)* |
 | `zugobol` | `z-microphone` | *a microphone* |
 | `zugobon` | `z-speaker` | *I* / *the speaker* |
 | `zedonen` | `z-listener` | *you* / *the listener* |
@@ -406,9 +406,9 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Dialogue turn (morph + loose free)
 
-> `jael zugobon zam zedonen zal guzumum.`
+> `yael zugobon zam zedonen zal guzumum.`
 >
-> j-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-happy]
+> y-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-happy]
 >
 > "Yes — you and I are happy."
 
@@ -426,9 +426,9 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Ability + value motive
 
-> `juel zugobon vawalaxel tholozothom.`
+> `yuel zugobon vawalaxel tholozothom.`
 >
-> j-no | z-speaker | v-walk-unable-temporary | th-competence-motive-internal
+> y-no | z-speaker | v-walk-unable-temporary | th-competence-motive-internal
 >
 > "No — I can't walk right now."
 
@@ -442,9 +442,9 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Inclusive *we* (interlocutors)
 
-> `jael xezazam zahan themabam vawalal vul.`
+> `yael xezazam zahan themabam vawalal vul.`
 >
-> j-yes | x-therefore | z-interlocutors | th-plan-sketch | [v-walk | v-not]
+> y-yes | x-therefore | z-interlocutors | th-plan-sketch | [v-walk | v-not]
 >
 > "Yes — so we're planning not to walk."
 
@@ -486,7 +486,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 1. English senses only — no Agalan root spellings, except [mention / opaque interiors](#span-interiors). Verb senses are the uninflected lemma (`dance`, not `dancing`).
 2. No `→` etymology chains.
 3. No **-l** / **-m** / **-n**, and no **`@`** / **`~`**, when they only selected the sense-root. Named **-n** is the English name (`z-Azawan`), not `-n`, `@`, or `-proper`.
-4. Compounds / stance / role / span `x` pieces are always hyphenated segments (`j-Ubune-x-Unowen`). Do not fuse a name into one unsegmented English label.
+4. Compounds / stance / role / span `x` pieces are always hyphenated segments (`y-Ubune-x-Unowen`). Do not fuse a name into one unsegmented English label.
 5. **-r** uses `←…` (no trailing `-r`), with `.full` on a full-root resume; **-x** stays as `-x`. Resume of a house name is `z-←Azawan`, not `z-r`. Fill-ask is `z-who`, not `z-ar`.
 6. Multi-word units are in [phrase brackets](#phrase-brackets), nested by attachment; packages use labeled brackets (`NAME[…]`, `CITE[…]`, `SCOPE[…]`). The line [round-trips](#round-trip) to the exact Agalan.
 7. Free English is on its own **quoted** line (or grammar-table Gloss column) — **loose** by default; **strict** only when teaching packaging. Example blocks follow [example block layout](#example-block) (blockquote; skip a morph line only when `lint:agalan` treats parser output as redundant with that loose line).

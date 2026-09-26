@@ -109,12 +109,12 @@ const CONTENT_BY_POS = {
 } as const;
 
 function isForceWord(word: LexWord): boolean {
-  if (word.pos !== "j" || word.family.kind !== "joinMarker") return false;
+  if (word.pos !== "y" || word.family.kind !== "joinMarker") return false;
   return word.family.series.length === 1;
 }
 
 function isPolarWord(word: LexWord): boolean {
-  if (word.pos !== "j" || word.family.kind !== "joinMarker") return false;
+  if (word.pos !== "y" || word.family.kind !== "joinMarker") return false;
   return word.family.series.length > 1;
 }
 
@@ -137,7 +137,7 @@ export type TokenBranch =
   | "greeting"
   | "polar"
   | "force"
-  | "jFallbackVocative"
+  | "yFallbackVocative"
   | "linker"
   | "content"
   | "citationFallback";
@@ -170,10 +170,10 @@ export function classifyTokenBranch(word: LexWord): { type: AgelanTokenType; bra
 
   if (reading === "greeting") return { type: Vocative, branch: "greeting" };
 
-  if (pos === "j") {
+  if (pos === "y") {
     if (isPolarWord(word)) return { type: Polar, branch: "polar" };
     if (isForceWord(word)) return { type: Force, branch: "force" };
-    return { type: Vocative, branch: "jFallbackVocative" };
+    return { type: Vocative, branch: "yFallbackVocative" };
   }
 
   if (pos === "x" && isLinkerWord(word)) return { type: Linker, branch: "linker" };

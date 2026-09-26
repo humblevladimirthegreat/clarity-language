@@ -210,7 +210,7 @@ Do **not** open Beginner with:
 
 **Writing meta last (or elsewhere).** How letters look (lowercase) may live on [phonology.md](../grammar/phonology.md). Citation (prefix-less root + ending) is taught on [word-endings.md](../grammar/word-endings.md) Beginner. [clause.md](../grammar/clause.md) Beginner adds the role letter to a citation they already write. Other pages do not re-teach citation.
 
-**Do not preview this page’s later H3s.** A section must not name *turn* / *continue* / omit-`jal` (or any later job on the same page) before that section exists. Either teach the opener first, or state the current pattern as a **bare statement body** (a period already marks a statement) until Turn is taught.
+**Do not preview this page’s later H3s.** A section must not name *turn* / *continue* / omit-`yal` (or any later job on the same page) before that section exists. Either teach the opener first, or state the current pattern as a **bare statement body** (a period already marks a statement) until Turn is taught.
 
 **Same example, two English jobs:** if one Agalan string is both a full sentence and a noun phrase (or two readings), say that in the same block. Do not silently reuse the string under a new gloss.
 
@@ -223,7 +223,7 @@ Do **not** open Beginner with:
 <a id="intermediate-stage-shape"></a>
 <a id="advanced-stage-shape"></a>
 
-Folder-wide hygiene still applies: [present the current language only](#present-the-current-language-only), [no process leftover](#no-process-or-corrective-leftover), [which tool, not which owner](#which-tool-not-which-owner), house cast, omit default **`jal`**, [empty stages](#empty-stages). A learner who opens Intermediate without rereading Beginner must not meet editor history, “stays on,” or denials of withdrawn constructions.
+Folder-wide hygiene still applies: [present the current language only](#present-the-current-language-only), [no process leftover](#no-process-or-corrective-leftover), [which tool, not which owner](#which-tool-not-which-owner), house cast, omit default **`yal`**, [empty stages](#empty-stages). A learner who opens Intermediate without rereading Beginner must not meet editor history, “stays on,” or denials of withdrawn constructions.
 
 Do **not** rerun [Beginner stage shape](#beginner-stage-shape) on later stages. Completing a paradigm as a table is the job of Intermediate; rare or stylistic inventory is the job of Advanced. Forcing “grow one cell at a time” there fights the dual role.
 
@@ -335,7 +335,7 @@ Usual sources (prefer one; reuse the language’s own systems):
 | Everyday [example root bank](drill-generation.md#root-bank) verbs (*walk*, *sleep*, *see*) in **teach** lines | Using that same walk/sleep palette as the default **checkpoint** plot ([checkpoint setting](translation-exercises.md#checkpoint-setting) owns drills) |
 | Published roots when the gloss matches; `PoS` + **`~`/`@`** + `<…>` for donor spelling | Invented “lexicon-shaped” stems, a closed overlay with its own frozen spelling, or split/hyphenated PoS tokens in learner text |
 | Named [house people](#house-cast) when the clause needs a person | Default *I* / *you* (`zugobon` / `zedonen`) as dummy subjects |
-| Omit default **`jal`** when the page is not teaching the speech act | Leading every example with **`jal`** by habit |
+| Omit default **`yal`** when the page is not teaching the speech act | Leading every example with **`yal`** by habit |
 | Morph gloss + **loose** free English by default ([glosses.md](glosses.md)); packed role English when the lexicon lists it (`v-see` for `vejel`) | Merging free English into the morph gloss, or inventing a `/v/` lemma that is not in `english_by_pos` |
 | Strict free English only when teaching packaging | Strict-only Beginner pages |
 | A negative only when the mix-up is expected ([Compare with](#compare-with)) | Listing “no X” or a **Not this** column by habit |
@@ -343,7 +343,7 @@ Usual sources (prefer one; reuse the language’s own systems):
 ### House people
 <a id="house-cast"></a>
 
-When an example needs a **person**, use these nativized names (published root + **-n**). Free English keeps *Azawan*, not *Grace* / *I* / *you*. Checkpoint **English** cells match that name (`*Azawan*`), not `*grace* (name **Azawan**)`. Sense-led *grace* (as a name) is only for [word-endings.md](../grammar/word-endings.md) Beginner citation drills. Do not cast abstract roots as participants (`jal zazawan godogol`, not “grace is more challenging than courage”). Keep abstract roots for the form being taught.
+When an example needs a **person**, use these nativized names (published root + **-n**). Free English keeps *Azawan*, not *Grace* / *I* / *you*. Checkpoint **English** cells match that name (`*Azawan*`), not `*grace* (name **Azawan**)`. Sense-led *grace* (as a name) is only for [word-endings.md](../grammar/word-endings.md) Beginner citation drills. Do not cast abstract roots as participants (`yal zazawan godogol`, not “grace is more challenging than courage”). Keep abstract roots for the form being taught.
 
 | Agalan | English | Root |
 |--------|---------|------|
@@ -413,7 +413,7 @@ Resume teaching may talk about a “root prefix” in running prose; the Agalan 
 - Never link to or mention `meta/`, `examples/`, `proposals/`, `data/`, or repo-root files from a grammar page.
 - One canonical anchor per concept (`<a id="…">`), matching the current heading. When a heading changes, retarget links; do not keep the old id — [one current heading, one current id](#one-current-heading).
 - Do not dump the whole related-inventory into the lead paragraph.
-- **IPA and pronunciation** belong in [phonology.md](../grammar/phonology.md) (letter table, teaching cues) and on the [Inspect](../grammar/inspect.md) tool (**IPA:** beside **Speak Agalan** transcribes the same spoken forms). Other grammar pages use orthographic letters (`j`, `x`, `/j/`, `/x/`) — never IPA transcriptions or sound cues in running examples. If a learner needs how a letter sounds, link once to phonology (peer in `grammar/`).
+- **IPA and pronunciation** belong in [phonology.md](../grammar/phonology.md) (letter table, teaching cues) and on the [Inspect](../grammar/inspect.md) tool (**IPA:** beside **Speak Agalan** transcribes the same spoken forms). Other grammar pages use orthographic letters (`y`, `x`, `/y/`, `/x/`) — never IPA transcriptions or sound cues in running examples. If a learner needs how a letter sounds, link once to phonology (peer in `grammar/`).
 
 ### Teach now; don’t preview later
 <a id="teach-now-dont-preview-later"></a>
@@ -487,7 +487,7 @@ A morph line is compared only after the whole example parses. If it doesn't pars
 ### HTML comments
 <a id="html-comments"></a>
 
-VitePress does not render HTML comments. Use them for **editor-only** notes that must sit next to the grammar text — typically **why this spot is an exception** to a rule on this page (house cast, omit-`jal`, Compare-with quota, and so on). The learner never sees them; `build` markdown checks and `retie-docs` skip comment bodies.
+VitePress does not render HTML comments. Use them for **editor-only** notes that must sit next to the grammar text — typically **why this spot is an exception** to a rule on this page (house cast, omit-`yal`, Compare-with quota, and so on). The learner never sees them; `build` markdown checks and `retie-docs` skip comment bodies.
 
 ```markdown
 <!-- Exception to house-cast: this block teaches speaker/listener specials, so `zugobon` is the point. -->

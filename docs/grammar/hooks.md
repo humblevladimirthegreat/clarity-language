@@ -447,19 +447,19 @@ Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). S
 
 To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`ael`**, the same way as [Where?](questions.md#where).
 
-> `jol zazawan dabogol ael bar vuwurul.`
+> `yol zazawan dabogol ael bar vuwurul.`
 >
-> j-question | z-Azawan | d-book | [using | b-who] | v-write
+> y-question | z-Azawan | d-book | [using | b-who] | v-write
 >
 > "How does Azawan write the book?"
 
 ### Somewhere, nowhere, everywhere {#place-indefinites}
 
-Put a [standalone join](joins.md#standalone-phrase) in the `/b/` slot after a place hook. Outside a question, **`bar`** is an unspecified member (*somewhere*), the same way **`zar`** is *someone*. Under **`jol`**, it is the *where?* blank.
+Put a [standalone join](joins.md#standalone-phrase) in the `/b/` slot after a place hook. Outside a question, **`bar`** is an unspecified member (*somewhere*), the same way **`zar`** is *someone*. Under **`yol`**, it is the *where?* blank.
 
 | Agalan | English |
 |--------|---------|
-| **`ol bar`** | *somewhere* (under **`jol`**: *where?*) |
+| **`ol bar`** | *somewhere* (under **`yol`**: *where?*) |
 | **`ol bur`** | *somewhere else* |
 | **`ol bal`** | *nowhere* |
 | **`ol bual`** | *everywhere* |
@@ -571,8 +571,8 @@ Beginner already used a hook at the front of a default statement. Same spellings
 
 | Placement | Agalan | Use |
 |-----------|--------|-----|
-| Before a written turn marker | `HOOK jal BODY` | The written **`jal`** / **`jol`** / …, after any vocatives and interjections |
-| Before a default-statement body | `HOOK BODY` | Implied **`jal`** ([speech moves](speech-moves.md#speech-act)) |
+| Before a written turn marker | `HOOK yal BODY` | The written **`yal`** / **`yol`** / …, after any vocatives and interjections |
+| Before a default-statement body | `HOOK BODY` | Implied **`yal`** ([speech moves](speech-moves.md#speech-act)) |
 | Non-initial clause under `/x/` | `… HOOK BODY … JOIN` | Same as the opener |
 | Before an `/x/` linker | `HOOK LINKER BODY` | Same as prior talk |
 
@@ -580,9 +580,9 @@ One discourse hook per opener (no parallel discourse chains on one turn marker).
 
 On a non-initial conjunct under a [clause `/x/` fence](joins.md#right-close), the hook sits immediately before that conjunct’s body: `A al B xam` → *A and additionally B*. Before an **`/x/`** linker (*therefore*, *however*, …), it scopes the linker+body stretch: `al xezazam …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xezazam …` when one cue is enough.
 
-> `jazawan al zululon vawalal.`
+> `yazawan al zululon vawalal.`
 >
-> j-Azawan | additionally | z-Ululon | v-walk
+> y-Azawan | additionally | z-Ululon | v-walk
 >
 > "Azawan: additionally, Ululon walks." (vocative, then discourse hook)
 
@@ -676,9 +676,9 @@ z-camera | instead | z-radio
 **5.** *Azawan: additionally, Ululon writes.*
 
 ::: details Show answer
-`jazawan al zululon vuwurul.`
+`yazawan al zululon vuwurul.`
 
-j-Azawan | additionally | z-Ululon | v-write
+y-Azawan | additionally | z-Ululon | v-write
 :::
 
 **6.** *Azawan writes and additionally Ululon tells.*
@@ -725,11 +725,11 @@ z-Azawan | v-tell | [by | b-radio]
 *Azawan tells by radio.*
 :::
 
-**3.** `juhubun ol zululon vuwurul.`
+**3.** `yuhubun ol zululon vuwurul.`
 
 ::: details Show answer
 
-j-Uhubun | instead | z-Ululon | v-write
+y-Uhubun | instead | z-Ululon | v-write
 
 *Uhubun: instead, Ululon writes.*
 :::

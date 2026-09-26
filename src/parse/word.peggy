@@ -395,8 +395,8 @@ WritingMantissa
     }
 
 WritingPercent
-  = "%*" { return "ju"; }
-  / "%" { return "jo"; }
+  = "%*" { return "yu"; }
+  / "%" { return "yo"; }
 
 WritingDigitlessExp
   = "0e-1" { return "0e-1"; }
@@ -436,7 +436,7 @@ SpeechGroupSeparator
   = "th" v:[aeou] { return v; }
 
 SpeechDigitGroup
-  = sign:("ba" / "bu") expDigits:SpeechDigitSeq "ja" mantissa:SpeechMantissa percent:SpeechPercent? {
+  = sign:("ba" / "bu") expDigits:SpeechDigitSeq ("ya" / "ja") mantissa:SpeechMantissa percent:SpeechPercent? {
       return compactGroup({
         exponentSign: sign,
         exponentDigits: parseSpeechDigits(expDigits),
@@ -462,10 +462,10 @@ SpeechDigitGroup
     }
 
 SpeechMantissa
-  = int:SpeechDigitSeq "je" frac:SpeechDigitSeq {
+  = int:SpeechDigitSeq ("ye" / "je") frac:SpeechDigitSeq {
       return { digits: parseSpeechDigits(int) + "." + parseSpeechDigits(frac), decimal: true };
     }
-  / "je" frac:SpeechDigitSeq {
+  / ("ye" / "je") frac:SpeechDigitSeq {
       return { digits: "." + parseSpeechDigits(frac), decimal: true };
     }
   / digits:SpeechDigitSeq {
@@ -473,8 +473,8 @@ SpeechMantissa
     }
 
 SpeechPercent
-  = "ju" { return "ju"; }
-  / "jo" { return "jo"; }
+  = ("yu" / "ju") { return "yu"; }
+  / ("yo" / "jo") { return "yo"; }
 
 SpeechDigitSeq
   = syll:SpeechDigitSyllable+ { return syll.join(""); }
@@ -781,7 +781,9 @@ AngleAnaphor
 // ── Lexical primitives ──────────────────────────────────────────────────────
 
 Pos
-  = ("th" / [zdbvgwhxj]) { return text(); }
+  = "th" { return "th"; }
+  / [yj] { return "y"; }
+  / [zdbvgwhx] { return text(); }
 
 Ending
   = "rl" / "rm" / "rn" / [lmnr] { return text(); }

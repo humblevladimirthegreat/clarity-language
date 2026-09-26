@@ -26,7 +26,7 @@ export function markerToSpeech(marker: NumberMarker): string {
 export function digitsToSyllables(digits: string): string {
   let out = "";
   for (const ch of digits) {
-    if (ch === ".") out += "je";
+    if (ch === ".") out += "ye";
     else out += DIGIT_TO_SYLLABLE[ch] ?? "";
   }
   return out;
@@ -36,7 +36,7 @@ const DIGITLESS_EXP_RE = /^(\d*)e(-?)(\d*)$/;
 
 /**
  * Speech for the parser's exponent shorthand (`e`, `1e-`, `e3`, `0e-1`, …).
- * With exponent digits: `ba`/`bu` + digits, then `ja` + any mantissa.
+ * With exponent digits: `ba`/`bu` + digits, then `ya` + any mantissa.
  * Without: mantissa, then bare `ba`/`bu`.
  */
 export function digitlessExpToSpeech(exp: string): string {
@@ -45,7 +45,7 @@ export function digitlessExpToSpeech(exp: string): string {
   const [, mantissa, minus, expDigits] = m;
   const sign = minus ? "bu" : "ba";
   if (expDigits) {
-    return sign + digitsToSyllables(expDigits) + (mantissa ? "ja" + digitsToSyllables(mantissa) : "");
+    return sign + digitsToSyllables(expDigits) + (mantissa ? "ya" + digitsToSyllables(mantissa) : "");
   }
   return digitsToSyllables(mantissa!) + sign;
 }
@@ -85,14 +85,14 @@ function groupToSpeechStressed(group: NumberGroup): { text: string; stress: numb
   }
 
   if (hasMantissa) {
-    if (hasExponent) text += "ja";
+    if (hasExponent) text += "ya";
     const mantissaStart = text.length;
     text += digitsToSyllables(group.mantissa!);
     if (!hasExponent) {
       // No exponent: stress the LAST mantissa digit's vowel.
       stress.push(mantissaStart + (group.mantissa!.length - 1) * 2 + 1);
     }
-    // je (decimal point) is always stressed wherever it appears.
+    // ye (decimal point) is always stressed wherever it appears.
     let at = mantissaStart;
     for (const ch of group.mantissa!) {
       if (ch === ".") stress.push(at + 1);
@@ -101,7 +101,7 @@ function groupToSpeechStressed(group: NumberGroup): { text: string; stress: numb
   }
 
   if (group.percent) {
-    stress.push(text.length + 1); // jo / ju always stressed
+    stress.push(text.length + 1); // yo / yu always stressed
     text += group.percent;
   }
 

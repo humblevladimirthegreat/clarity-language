@@ -4,7 +4,7 @@ How a **next sentence** fills a slot in the sentence before it, how English *who
 
 ## Beginner {#beginner}
 
-You already write one clause with [role letters](clause.md#role-letters) and start a new speech move with [`/j/`](speech-moves.md#turn-j). This page attaches another sentence, or keeps going without a new act.
+You already write one clause with [role letters](clause.md#role-letters) and start a new speech move with [`/y/`](speech-moves.md#turn-y). This page attaches another sentence, or keeps going without a new act.
 
 ### Which person or thing (*who / that / which*)
 <a id="which-noun"></a>
@@ -31,7 +31,7 @@ In the main sentence, a **stand-in** **`darl`** (role letter + **`a`** + **`-rl`
 
 Put **`darl` last** in its slot in the main sentence, and put the dependent **immediately after** it. Rearrange free word order so **`darl`** stays last in that slot.
 
-The main sentence stops after **`darl`**; the next full sentence is the content that **`darl`** stands for. Do not open that inner sentence with `/j/`. The stand-in vowel already types it (*that* **`a`**, *whether* **`o`**). With **`darl`**, **`dorl`**, and **`barl`**, the inner sentence names who does the verb (`/z/`). English often drops that person (*wants to walk*); write the name again. The one place the inner `/z/` can be left out is an instruction stand-in with an addressee ([stand-in vowels](#stand-in)). Resume **-r** is [pronouns](pronouns.md).
+The main sentence stops after **`darl`**; the next full sentence is the content that **`darl`** stands for. Do not open that inner sentence with `/y/`. The stand-in vowel already types it (*that* **`a`**, *whether* **`o`**). With **`darl`**, **`dorl`**, and **`barl`**, the inner sentence names who does the verb (`/z/`). English often drops that person (*wants to walk*); write the name again. The one place the inner `/z/` can be left out is an instruction stand-in with an addressee ([stand-in vowels](#stand-in)). Resume **-r** is [pronouns](pronouns.md).
 
 *That…* content is often a direct object, with **`darl` last** in the main sentence:
 
@@ -131,7 +131,7 @@ The verb has no past or future letter. *Before* / *after* / *while* / *until* pl
 
 After a statement, question, or command, you may keep going **without** starting a new speech move: the next stretch is still a statement if you were stating (still a question if you were asking, and so on). That is to **continue**. `/x/` marks it.
 
-Only the first turn (or a default statement body) chooses the speech act. Do not write **`jal`** on the continued stretch: the speech act is already chosen.
+Only the first turn (or a default statement body) chooses the speech act. Do not write **`yal`** on the continued stretch: the speech act is already chosen.
 
 A word that glues two sentences (*therefore*, *however*, …) is an `/x/` **linker**. A period may close the first body; the linker then **starts the next written sentence** under the same speech act:
 
@@ -141,7 +141,7 @@ A word that glues two sentences (*therefore*, *however*, …) is an `/x/` **link
 >
 > "A dog walks. Therefore a cat runs."
 
-**Compare with:** [`/j/`](speech-moves.md#turn-j) starts a **new** speech move (a new statement, question, or command). `/x/` keeps the move you already started.
+**Compare with:** [`/y/`](speech-moves.md#turn-y) starts a **new** speech move (a new statement, question, or command). `/x/` keeps the move you already started.
 
 
 ### Translation practice {#beginner-translation-practice}
@@ -327,10 +327,10 @@ A **period** closes the sentence body in writing, whatever the speech act. Speec
 
 | Writing | Speech | Use | Cue |
 |---------|--------|-----|-----|
-| `.` | Fall on last stress + short pause | Closes the prior **body**. Next stretch still defaults to **`jal`** unless a new `/j/` turn, a written act word, or *yes* / *no* particle sets otherwise | Fall = the claim is done |
-| Next `/j/` turn (*yes* / *no*, vocative, written act word) | Pitch **reset** into the turn | New turn; firm **-l** / soft **-m** imply **`jal`** / **`jam`** | Reset = jump to a new act |
-| Bare body or hook + body after `.` | No full reset required | Implied **`jal`** (or **`jam`** only if a soft particle / written **`jam`** said so) | No jump, so same statement |
-| Soft statement / soft *yes* / *no* **-m** | Lighter fall; boundary still clear | **`jam`** (implied or written) | **-m** leaves the hold open |
+| `.` | Fall on last stress + short pause | Closes the prior **body**. Next stretch still defaults to **`yal`** unless a new `/y/` turn, a written act word, or *yes* / *no* particle sets otherwise | Fall = the claim is done |
+| Next `/y/` turn (*yes* / *no*, vocative, written act word) | Pitch **reset** into the turn | New turn; firm **-l** / soft **-m** imply **`yal`** / **`yam`** | Reset = jump to a new act |
+| Bare body or hook + body after `.` | No full reset required | Implied **`yal`** (or **`yam`** only if a soft particle / written **`yam`** said so) | No jump, so same statement |
+| Soft statement / soft *yes* / *no* **-m** | Lighter fall; boundary still clear | **`yam`** (implied or written) | **-m** leaves the hold open |
 | `/x/` continue (clause join) | Dip or short pause; **no** full pitch reset | Keep opener speech act; period after the **whole** joined stretch | Dip extends; no jump |
 | `/x/` linker after `.` (`xezazam …`) | Dip into the linker; no turn reset | Keep prior speech act; may start a new written sentence under that speech act | Linker glues; still the same act |
 | **Stand-in** hang | Dip; **no** full pitch reset until the last dependent | Next sentence fills the slot; period after the **whole** stretch | Same hang as `/x/` continue |
@@ -356,16 +356,16 @@ These words glue one finished sentence to the next (one-way; default ending **-l
 ### Stand-in vowels (`-rl` / `-rm`) {#stand-in}
 <a id="clause-member"></a>
 
-Beginner used locked **`a`** (`darl` / `barl`) and *whether* **`dorl`**. Stand-ins reuse the [speech-act vowel series](speech-moves.md#speech-act-beginner) (`a` / `o` / `e` / `u`) to type the following sentence's content: statement-like, question-like, instruction-like, or avoidance-like. Unlike `/j/`, a stand-in does not begin a speech act; it makes that kind of sentence content fill a role in the outer sentence. They are not joins. **`-rl`** locks that sentence as the whole filler; **`-rm`** is open (gist / not only that).
+Beginner used locked **`a`** (`darl` / `barl`) and *whether* **`dorl`**. Stand-ins reuse the [speech-act vowel series](speech-moves.md#speech-act-beginner) (`a` / `o` / `e` / `u`) to type the following sentence's content: statement-like, question-like, instruction-like, or avoidance-like. Unlike `/y/`, a stand-in does not begin a speech act; it makes that kind of sentence content fill a role in the outer sentence. They are not joins. **`-rl`** locks that sentence as the whole filler; **`-rm`** is open (gist / not only that).
 
 | Stand-in | Content type | **`-rl`** locked | **`-rm`** open |
 |----------|--------------|------------------|----------------|
-| **`a`** hold | statement-like (compare **`jal`**) | `darl` *that …* | `darm` *that …* (gist) |
-| **`o`** pick | question-like (compare **`jol`**) | `dorl` *whether …* | `dorm` *whether …* (open) |
-| **`e`** order | instruction-like (compare **`jel`**) | `derl` *to …* | `derm` *to …* (open) |
-| **`u`** undo | avoidance-like (compare **`jul`**) | `durl` *that not / lest …* | `durm` *lest …* (open) |
+| **`a`** hold | statement-like (compare **`yal`**) | `darl` *that …* | `darm` *that …* (gist) |
+| **`o`** pick | question-like (compare **`yol`**) | `dorl` *whether …* | `dorm` *whether …* (open) |
+| **`e`** order | instruction-like (compare **`yel`**) | `derl` *to …* | `derm` *to …* (open) |
+| **`u`** undo | avoidance-like (compare **`yul`**) | `durl` *that not / lest …* | `durm` *lest …* (open) |
 
-The corresponding `/j/` turn makes an assertion, asks a question, gives a command, or prohibits an action. The stand-in puts that kind of content in a dependent slot; it does not assert, ask, command, or prohibit in its own right. You may leave out the dependent `/z/` only when all of these hold:
+The corresponding `/y/` turn makes an assertion, asks a question, gives a command, or prohibits an action. The stand-in puts that kind of content in a dependent slot; it does not assert, ask, command, or prohibit in its own right. You may leave out the dependent `/z/` only when all of these hold:
 
 1. The stand-in is **`derl`** / **`derm`**, or **`durl`** / **`durm`** telling someone *not to*.
 2. It fills the outer sentence's `/d/` slot.
@@ -389,7 +389,7 @@ The person told is unhosted `/b/`, so **`derl vajul`** can leave out its subject
 >
 > "Azawan wishes to sit." Quotes of wording stay [spans](spans.md).
 
-English *lest* / *not to* (keep this from happening) uses vowel **`u`**: **`durl`**. When it tells someone not to act, the person told (`/b/`) can be the missing subject, as with **`derl`**. When it only keeps an outcome off, with no one told, write the inner `/z/`. The outer sentence stays a statement. *Don't sit!* as the whole move is still a [prohibition](speech-moves.md#speech-act-beginner) (**`jul`**), not this stand-in.
+English *lest* / *not to* (keep this from happening) uses vowel **`u`**: **`durl`**. When it tells someone not to act, the person told (`/b/`) can be the missing subject, as with **`derl`**. When it only keeps an outcome off, with no one told, write the inner `/z/`. The outer sentence stays a statement. *Don't sit!* as the whole move is still a [prohibition](speech-moves.md#speech-act-beginner) (**`yul`**), not this stand-in.
 
 > `zazawan bululon vezehel durl vajul.`
 >

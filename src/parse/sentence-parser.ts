@@ -219,7 +219,7 @@ class AgelanSentenceParser extends CstParser {
   private julEchoAhead(): boolean {
     const a = this.LA(1);
     const b = this.LA(2);
-    return a.tokenType === Force && a.image === "jul" && b.tokenType === Force && b.image === "jul";
+    return a.tokenType === Force && a.image.replace(/^j/, "y") === "yul" && b.tokenType === Force && b.image.replace(/^j/, "y") === "yul";
   }
 
   /** Only polars remain before the period (the asking tag has no body). */
@@ -1185,12 +1185,12 @@ function buildClause(cst: CstNode): Clause {
 function impliedForceFromPolars(polars: LexWord[]): ImpliedForce | undefined {
   if (polars.length === 0) return undefined;
   const last = polars[polars.length - 1]!;
-  return last.ending === "m" ? "jam" : "jal";
+  return last.ending === "m" ? "yam" : "yal";
 }
 
 function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
   if (!cst) {
-    return { vocatives: [], polars: [], impliedForce: "jal" };
+    return { vocatives: [], polars: [], impliedForce: "yal" };
   }
 
   const vocatives = childTokens(cst, "Vocative").map(lexWordFromToken);
@@ -1199,7 +1199,7 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
   const forceTok = childToken(cst, "Force");
   const force = forceTok ? lexWordFromToken(forceTok) : undefined;
   const echoTok = childToken(cst, "ForceEcho");
-  const impliedForce = force ? undefined : impliedForceFromPolars(polars) ?? "jal";
+  const impliedForce = force ? undefined : impliedForceFromPolars(polars) ?? "yal";
   const hookModifiers = childTokens(cst, "W").map(lexWordFromToken);
 
   return {

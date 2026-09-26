@@ -183,7 +183,7 @@ const JOIN_ENDING_GLOSS: Record<string, string> = {
 
 const NAMED_STAND_IN_SERIES = new Set(["a", "o", "e", "u", "ae", "ue", "ao", "uo", "ua"]);
 
-/** Fence-join gloss (not restrictors, join-acts, or `/j/` force/polar). */
+/** Fence-join gloss (not restrictors, join-acts, or `/y/` force/polar). */
 export function joinFenceGloss(series: string, ending: string | undefined): string {
   const job = JOIN_SERIES_GLOSS[series] ?? `join ${series}`;
   const close = ending ? JOIN_ENDING_GLOSS[ending] : undefined;
@@ -193,7 +193,7 @@ export function joinFenceGloss(series: string, ending: string | undefined): stri
 /** Stand-in (`darl` / `barl` / …): slot filled by the following sentence — not a join fence. */
 export function isStandIn(word: MorphWord): boolean {
   if (word.family.kind !== "joinMarker") return false;
-  if (word.pos === "x" || word.pos === "j" || word.pos === "v" || !word.pos) return false;
+  if (word.pos === "x" || word.pos === "y" || word.pos === "v" || !word.pos) return false;
   const series = word.family.series;
   if (series !== "a" && series !== "o" && series !== "e" && series !== "u") return false;
   return word.ending === "rl" || word.ending === "rm";
@@ -202,7 +202,7 @@ export function isStandIn(word: MorphWord): boolean {
 /** Lexicalized content names: one-vowel `-rn`, or stacked-vowel `-n`. */
 export function isNamedStandIn(word: MorphWord): boolean {
   if (word.family.kind !== "joinMarker") return false;
-  if (word.pos === "x" || word.pos === "j" || !word.pos) return false;
+  if (word.pos === "x" || word.pos === "y" || !word.pos) return false;
   const { series } = word.family;
   if (!NAMED_STAND_IN_SERIES.has(series)) return false;
   return (series.length === 1 && word.ending === "rn") || (word.pos === "v" && series.length > 1 && word.ending === "n");
@@ -210,7 +210,7 @@ export function isNamedStandIn(word: MorphWord): boolean {
 
 function isFenceJoin(word: MorphWord): boolean {
   if (word.family.kind !== "joinMarker") return false;
-  if (!word.pos || word.pos === "j") return false;
+  if (!word.pos || word.pos === "y") return false;
   if (isStandIn(word) || isNamedStandIn(word)) return false;
   return !isRestrictor(word);
 }
@@ -446,7 +446,7 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
   }
 
   if (family.kind === "x" && family.xFamily === "ability") {
-    if (word.ending === "n" && (!word.pos || word.pos === "j")) {
+    if (word.ending === "n" && (!word.pos || word.pos === "y")) {
       return { ...word, reading: "greeting" };
     }
     return { ...word, ...hostOverlay(word, tables), reading: "ability" };
@@ -606,7 +606,7 @@ export function classifyHits(word: MorphWord, tables: ClassifyTables): ClassifyH
   if (family.kind === "x" && family.xFamily === "ability") {
     hits.push({
       source: "ability",
-      reading: word.ending === "n" && (!word.pos || word.pos === "j") ? "greeting" : "ability",
+      reading: word.ending === "n" && (!word.pos || word.pos === "y") ? "greeting" : "ability",
     });
   }
 

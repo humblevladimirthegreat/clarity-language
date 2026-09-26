@@ -88,7 +88,7 @@ Hosted *can* / *can’t* (`xa` / `xe` / `xo` / `xu`) and hostless **ABIL**.
 
 ### Act word
 
-The written `/j/` word: **`jal` / `jol` / `jel` / `jul`** and soft **-m**.
+The written `/y/` word: **`yal` / `yol` / `yel` / `yul`** and soft **-m**.
 
 [Speech moves](speech-moves.md#speech-act)
 
@@ -174,9 +174,9 @@ Inside a scope island: scope-taking `/h/` or `/th/` and/or a join.
 
 ### Body (utterance)
 
-Clause content after the left-edge `/j/` cluster.
+Clause content after the left-edge `/y/` cluster.
 
-[Speech moves](speech-moves.md#turn-j)
+[Speech moves](speech-moves.md#turn-y)
 
 ### Invited / offered / protective
 <a id="asked-typical-history"></a>
@@ -227,7 +227,7 @@ Who counts as *we* / *you* when names are unavailable.
 
 ### Command / request / prohibition
 
-Speech act **`jel` / `jem` / `jul` / `jum`**.
+Speech act **`yel` / `yem` / `yul` / `yum`**.
 
 [Speech moves](speech-moves.md#speech-act)
 
@@ -481,7 +481,7 @@ Advanced *worse than…* bars.
 
 Vocative → polar stance → act word, then body.
 
-[Speech moves](speech-moves.md#turn-j)
+[Speech moves](speech-moves.md#turn-y)
 
 ### Concrete / abstract / named / resume
 
@@ -537,7 +537,7 @@ Six closed psychological needs under `/ɡ/` `/th/` `/w/`.
 
 ### Number as verb / adverb / interjection / discourse
 
-Number word under `/v/` `/h/` `/th/` `/j/` `/x/`.
+Number word under `/v/` `/h/` `/th/` `/y/` `/x/`.
 
 [Numbers](numbers.md#number-as-roles)
 
@@ -581,11 +581,11 @@ Special reading of a published root under a PoS.
 
 [Lexicon](lexicon.md)
 
-**Compare with:** a number under `/v/` `/h/` `/th/` `/j/` `/x/` is [number as verb / adverb / stance / interjection / discourse](numbers.md#number-as-roles), not an overlay. Lexicon abstract **-m** stays abstract.
+**Compare with:** a number under `/v/` `/h/` `/th/` `/y/` `/x/` is [number as verb / adverb / stance / interjection / discourse](numbers.md#number-as-roles), not an overlay. Lexicon abstract **-m** stays abstract.
 
 ### Polar stance
 
-Closed `/j/` particles **`jael` / `juel` / …**.
+Closed `/y/` particles **`yael` / `yuel` / …**.
 
 [Questions](questions.md#polar-stance)
 
@@ -748,11 +748,11 @@ Single-item rank with a number = bound on a line.
 
 [Numbers applied](numbers-applied.md)
 
-### Turn (`/j/`)
+### Turn (`/y/`)
 
 New speech move.
 
-[Speech moves](speech-moves.md#turn-j)
+[Speech moves](speech-moves.md#turn-y)
 
 ### Under question
 
@@ -786,7 +786,7 @@ DIR × ANCHOR; the anchor sets the facing frame (person or oriented object); the
 
 ### Vocative
 
-Left-edge `/j/` addressing.
+Left-edge `/y/` addressing.
 
 [Speech moves](speech-moves.md#vocative)
 
@@ -798,7 +798,7 @@ Left-edge `/j/` addressing.
 
 ### Weak-pause left cue
 
-Prefer an audible left `/j/` rather than implied **`jal`**.
+Prefer an audible left `/y/` rather than implied **`yal`**.
 
 [Clause](clause.md#weak-pause-left-cues)
 
@@ -808,4 +808,4 @@ Question type with no join **-r**.
 
 [Questions](questions.md#question)
 
-**Compare with:** [polar stance](#polar-stance) is **`jael` / `juel` / …**, not the yes/no question type.
+**Compare with:** [polar stance](#polar-stance) is **`yael` / `yuel` / …**, not the yes/no question type.

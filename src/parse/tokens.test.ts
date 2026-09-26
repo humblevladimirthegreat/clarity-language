@@ -59,9 +59,9 @@ describe("classifyToTokenType", () => {
     assert.equal(classifyToTokenType(lex("hal")).name, H.name);
   });
 
-  it("maps jal to Force and jael to Polar", () => {
-    assert.equal(classifyToTokenType(lex("jal")).name, Force.name);
-    assert.equal(classifyToTokenType(lex("jael")).name, Polar.name);
+  it("maps yal to Force and yael to Polar", () => {
+    assert.equal(classifyToTokenType(lex("yal")).name, Force.name);
+    assert.equal(classifyToTokenType(lex("yael")).name, Polar.name);
   });
 
   it("maps darl to Odo", () => {

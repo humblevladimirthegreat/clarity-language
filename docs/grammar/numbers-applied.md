@@ -182,26 +182,26 @@ Clock / date ranges: SHARED continuum **`gumem`** (or a host relation + `/b/`) w
 
 ### Percent and percentage points {#percent-and-percentage-points}
 
-English *25% of the cats* names a **portion of a whole**. Close a **count** (`ra` / `ru`) with **`jo`**. That closer is parallel to fraction closer **`je`**. The whole is the noun the percent grades, same `/ɡ/` slot as a count (`zagadalx g+3` = *three cats*).
+English *25% of the cats* names a **portion of a whole**. Close a **count** (`ra` / `ru`) with **`yo`**. That closer is parallel to fraction closer **`ye`**. The whole is the noun the percent grades, same `/ɡ/` slot as a count (`zagadalx g+3` = *three cats*).
 
 > `zagadalx g+25%.`
 >
-> 🔊 *zagadalx graduvajol.*
+> 🔊 *zagadalx graduvayol.*
 >
-> z-cat-x | g-25jo
+> z-cat-x | g-25yo
 >
 > "25% of the cats."
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| **`jo`** | percent (portion of a whole) | everyday percent figure (`25` in `25%`); those digits ÷ 100 |
-| **`ju`** | percentage points (point-scale amount or delta) | point figure (`2` in `+2%*`); those digits ÷ 100 |
+| **`yo`** | percent (portion of a whole) | everyday percent figure (`25` in `25%`); those digits ÷ 100 |
+| **`yu`** | percentage points (point-scale amount or delta) | point figure (`2` in `+2%*`); those digits ÷ 100 |
 
-Digits follow the [normal digit rules](numbers.md#exponents) (including optional **`je`** inside the percent/point reading). Say the digits you mean (`g+100%` → spoken `grawozozojol`).
+Digits follow the [normal digit rules](numbers.md#exponents) (including optional **`ye`** inside the percent/point reading). Say the digits you mean (`g+100%` → spoken `grawozozoyol`).
 
-Order: integer digits, optional **`je`** + fractional digits, then **`jo`** or **`ju`**. **`jo`** / **`ju`** sit on **`ra`** / **`ru`** only. At most one **`jo`** or **`ju`** group in the number word; leave **`ba`** / **`bu`** off that word. Endings still apply (**-l** exact, **-m** about, **-n** conventional label, **-r** resume).
+Order: integer digits, optional **`ye`** + fractional digits, then **`yo`** or **`yu`**. **`yo`** / **`yu`** sit on **`ra`** / **`ru`** only. At most one **`yo`** or **`yu`** group in the number word; leave **`ba`** / **`bu`** off that word. Endings still apply (**-l** exact, **-m** about, **-n** conventional label, **-r** resume).
 
-In [preferred writing](numbers.md#writing-preferred-shorthand): **`%`** → speech **`jo`**; **`%*`** → speech **`ju`** (sign still on **`ra`** / **`ru`**, written **`+`** / **`-`**).
+In [preferred writing](numbers.md#writing-preferred-shorthand): **`%`** → speech **`yo`**; **`%*`** → speech **`yu`** (sign still on **`ra`** / **`ru`**, written **`+`** / **`-`**).
 
 #### Denominator (portion “of what”)
 <a id="percent-denominators"></a>
@@ -223,9 +223,9 @@ For a count out of a group already named (*three of them*), resume the group and
 >
 > "The cats sit. Three of them run."
 
-The noun names the reference class; **`jo`** grades how much of that class. Same endings on the percent word (**-m** ≈ *about 25% of …*).
+The noun names the reference class; **`yo`** grades how much of that class. Same endings on the percent word (**-m** ≈ *about 25% of …*).
 
-**Related form:** `25%` (`…jo`) and `0.25` (plain scalar) name the same magnitude; **`jo`** chooses the percent-scale reading. **`ju`** likewise names a ÷100 magnitude, framed as **points**.
+**Related form:** `25%` (`…yo`) and `0.25` (plain scalar) name the same magnitude; **`yo`** chooses the percent-scale reading. **`yu`** likewise names a ÷100 magnitude, framed as **points**.
 
 #### Fractions (*half of*) {#fractions}
 
@@ -255,9 +255,9 @@ English *half of the cats* / *a third of the tea* splits the whole into N parts.
 
 > `zagadalx g+50% guel vajul.`
 >
-> 🔊 *zagadalx gravazojol guel vajul.*
+> 🔊 *zagadalx gravazoyol guel vajul.*
 >
-> [z-cat-x | g-50jo] | g-rank/less | v-sit
+> [z-cat-x | g-50yo] | g-rank/less | v-sit
 >
 > "Most of the cats sit."
 
@@ -342,9 +342,9 @@ h-_15,30 | z-Azawan | d-Uhubun | v-see
 ::: details Show answer
 `zabululx g+25%.`
 
-🔊 *zabululx graduvajol.*
+🔊 *zabululx graduvayol.*
 
-z-pill-x | g-25jo
+z-pill-x | g-25yo
 :::
 
 **4.** *Azawan walks two meters.*
@@ -435,9 +435,9 @@ h-_09,00 | z-Uhubun | v-see
 
 ::: details Show answer
 
-🔊 *zabobolx gravazojol.*
+🔊 *zabobolx gravazoyol.*
 
-z-baby-bottle-x | g-50jo
+z-baby-bottle-x | g-50yo
 
 *50% of the bottles.*
 :::
@@ -610,15 +610,15 @@ Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which val
 
 ### Percent points, factors, and other wholes
 
-**`ju`** is a point-scale amount or delta (`+2` percentage points; often `/v/` **`ra`** / **`ru`**: increase or decrease by that point amount). `from A% to B%` uses [ranges](#ranges).
+**`yu`** is a point-scale amount or delta (`+2` percentage points; often `/v/` **`ra`** / **`ru`**: increase or decrease by that point amount). `from A% to B%` uses [ranges](#ranges).
 
 **For *+50% relative to baseline*, use:** a multiplicative `/h/` factor (**`h+1.5`**, …) or ordinary *relative-to* wording.
 
 When the whole is not the modified head, use a complex `/ɡ/` or `/h/` [of relation](relations.md#of-relations) (`gobonem` *part of*) + `/b/` whole, with the percent elsewhere in the clause as needed. Numbers take no `/w/` and no open arguments.
 
-**`…ju`** point amounts, factor change (`/h/` **`h+…`**), *top / bottom N%* rank bands, and *N% done* take their “whole” from context or a separately named class.
+**`…yu`** point amounts, factor change (`/h/` **`h+…`**), *top / bottom N%* rank bands, and *N% done* take their “whole” from context or a separately named class.
 
-A bare `/z/` (or other freestanding) **`…jo`** percent with no named whole is grammatical; prefer an explicit whole (*percent of what*). Bare **`…ju`** point amounts are fine when the percent-scale quantity being moved is already clear. Rates outside everyday percent talk use a plain scalar (`je` / `e-N`).
+A bare `/z/` (or other freestanding) **`…yo`** percent with no named whole is grammatical; prefer an explicit whole (*percent of what*). Bare **`…yu`** point amounts are fine when the percent-scale quantity being moved is already clear. Rates outside everyday percent talk use a plain scalar (`ye` / `e-N`).
 
 
 ### Ordinal generation — digitful exponent on **`#`** / **`#-`**
@@ -650,7 +650,7 @@ The marker still counts **from the start** or **from the end** inside that cohor
 | **`g#e-1`** | generation −1 / parent layer (member unspecified) |
 | **`g#1e-1`** | 1st of generation −1 (often *the parent* when the cohort is singleton-framed) |
 
-`/x/` treats generation as **agenda nesting** (`x#3e2` = *3rd sub-sub-point under the focus*; **`x#e0`** = *current-layer item(s)*). `/h/` / `/v/` / `/j/` inherit the same product (*for the 3rd time in gen +2*, *place 3rd in gen +2*, …) when the series is generation-structured. A flat event count uses **`h#N`**.
+`/x/` treats generation as **agenda nesting** (`x#3e2` = *3rd sub-sub-point under the focus*; **`x#e0`** = *current-layer item(s)*). `/h/` / `/v/` / `/y/` inherit the same product (*for the 3rd time in gen +2*, *place 3rd in gen +2*, …) when the series is generation-structured. A flat event count uses **`h#N`**.
 
 ## See also
 

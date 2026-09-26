@@ -400,15 +400,15 @@ For more details about the language, rules, and rationale, see [this post](https
 
 Grammatical number in /r/ClarityLanguage is marked by a particle that goes in front of the noun. This word optionally takes a number as a suffix, allowing for more precise number marking.
 
-**jam** \- at least two (plural)  
-**ja\[number\]** \- at least \[number\]  
-**jem** \- exactly one (default)  
-**je\[number\]** \- exactly \[number\]  
-**jom** \- at most zero (none)  
-**jo\[number\]** \- at most \[number\]
+**yam** \- at least two (plural)  
+**ya\[number\]** \- at least \[number\]  
+**yem** \- exactly one (default)  
+**ye\[number\]** \- exactly \[number\]  
+**yom** \- at most zero (none)  
+**yo\[number\]** \- at most \[number\]
 
 Generally if you specify the number, you just give the order of magnitude rather than a precise number.   
-**jaberem** \- at least 100 (hundreds)
+**yaberem** \- at least 100 (hundreds)
 
 ## **Habitual Tenses**
 
@@ -454,7 +454,7 @@ You add an *a* at the beginning of the number group if it’s positive, or a *u*
 \-Ordinal numbers are written with a \# and start with *o*.  
 \-If you are listing a series of digits (such as a phone number), each group starts with *e*. Each digit group is still a compound word, but you omit the exponents. Groups of three are strongly preferred. Stress is on the first digit of each group.  
 \-When used in a sentence, the part-of-speech prefix is added to every digit group.   
-\-In scientific contexts, you might use proper scientific notation instead. The first digit and the decimal point is in the first group, but you still break the rest into groups of three, but you save the exponent for the end. The decimal point (*ja*) indicates that scientific notation is being used and is always stressed.
+\-In scientific contexts, you might use proper scientific notation instead. The first digit and the decimal point is in the first group, but you still break the rest into groups of three, but you save the exponent for the end. The decimal point (*ya*) indicates that scientific notation is being used and is always stressed.
 
 ### Built-in Number Mneumonics
 

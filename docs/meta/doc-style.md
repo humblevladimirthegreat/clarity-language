@@ -12,7 +12,7 @@ Prefer commas, colons, parentheses, or separate sentences over em dashes.
 - Teaching stages do not use maintainer *we* (“we now write…”) or author *I*. Author *I* is allowed only on signed non-teaching prose in this folder (acknowledgments; the purpose / limits essay), not on rule pages.
 - One idea per H2/H3. On a **new job**, the first paragraph should be one **complete** explanation: English job, Agalan shape, and what that lets the learner do ([explain before you slogan](#explain-before-you-slogan)). That is the same bar as the [easy-to-use feature criterion](../grammar/why-agelan.md#criterion-for-features) (roughly one paragraph plus a couple of examples), not a one-sentence aphorism. A later-stage H3 that only finishes a series may be a short pointer plus a table ([later-stage shape](grammar-docs.md#later-stage-shape)).
 - Prefer short paragraphs plus a table over a wall of prose.
-- Bold sparingly; put Agalan forms in backticks (`jal`, **-r**, `/ɡ/`).
+- Bold sparingly; put Agalan forms in backticks (`yal`, **-r**, `/ɡ/`).
 - Always call the language **Agalan**. Community / project URLs that still use a legacy host path are fine when they are the real link; do not “fix” them in learner prose.
 
 ## Explain before you slogan
@@ -35,7 +35,7 @@ Do not merge (1)–(3) into a copula slogan (*X is Y*) or a packed imperative (*
 | Packed prominence: “Put first what you want heard as the point” | “Point” is undefined; also smuggles free word order | First: roles stay on the letters, so order is free. Then: the leftmost content word is what you highlight (what the sentence is “about,” or the new information). |
 | Cue as definition: “**d** = done to” in the rule sentence | The pun is memorable only after “acted on” is taught | Teach *direct object = who or what is acted on*, then `(cue: **d** ≈ done to)`. |
 | Label = explanation: “The **boundary** is **`darl`**.” | Names the form without saying what a boundary *does* | “The main sentence stops after **`darl`**; the next full sentence is the content that **`darl`** stands for.” |
-| Omission as slogan: “**Leave `jal` out** when a period already marks a statement” | Assumes they know why `jal` exists | “A period already means ‘this is a statement,’ so you do not also write the statement word **`jal`**.” |
+| Omission as slogan: “**Leave `yal` out** when a period already marks a statement” | Assumes they know why `yal` exists | “A period already means ‘this is a statement,’ so you do not also write the statement word **`yal`**.” |
 
 **Test (slogan test):** cover the example block. Could a careful adult who has never opened this repo restate the rule in their own words from the lead alone? If they would have to guess what “job,” “point,” “setting,” or “body” means, unpack those words in the lead. A cue in parentheses does not count as unpacking. On Intermediate / Advanced **new-job** leads, they may already know Beginner terms; they must still get the **new** choice from the lead. Skip this test on finish-the-series tables.
 
@@ -74,7 +74,7 @@ Allowed: published-root scenes in **Cue**; [conceptual metaphors](../grammar/why
 | **Same root as** | everyday kind of that root (citation **-l**); defined once in How to learn — not a second **English** column |
 | **point** / **prominence** | what comes first for emphasis (what the sentence is “about,” or the new information) |
 | **setting** | statement vs question vs command |
-| **body** | the clause after any opening `/j/` words |
+| **body** | the clause after any opening `/y/` words |
 | **glue** / **linker** | sentence-to-sentence connective |
 
 Intermediate / Advanced **finish-the-series** inventories may stay denser once Beginner has unpacked the terms. A later-stage **new job** still glosses any **new** label on first use.
@@ -89,7 +89,7 @@ Do **not** assume the reader knows linguistics jargon. Write for a motivated lea
 | Prefer everyday English for the job (*statement*, *ask*, *main clause*, *at the end of…*) | Lead with bare terms like *assertoric*, *illocution*, *matrix-final*, *predicative*, *prosody*, *paradigm* |
 | If a short technical label helps later cross-links, **define it in the same breath** on first use | Use the label alone and hope context teaches it |
 | **Define invented or uncommon labels before using them** (*turn*, *continue*, *speech act*, *polar stance*, *role letter*, *citation*): everyday English in the **same sentence as first use**. Same for [house shorthand](#house-shorthand) (*job*, *point*, *setting*, *body*, *linker*) | Use the label in an earlier section or as a bare heading, then gloss later; rely on [terminology.md](../grammar/terminology.md) as the first definition |
-| A heading may use that label only **after** the gloss, or the heading itself carries the gloss (*Turn (`/j/`): start a new speech move*) | Stack several undefined jargon words in one sentence (*recoverable*, *utterance*, *left-edge cluster* without a plain paraphrase) |
+| A heading may use that label only **after** the gloss, or the heading itself carries the gloss (*Turn (`/y/`): start a new speech move*) | Stack several undefined jargon words in one sentence (*recoverable*, *utterance*, *left-edge cluster* without a plain paraphrase) |
 | School-grammar words (*subject*, *direct object*, *adverb*) are fine when the English job is clear | Pack morphosyntax shorthand (*classification* without *is a kind*, *right-bound*, *adjunct*, *complement clause*) without a plain gloss |
 
 [terminology.md](../grammar/terminology.md) is a later lookup (via How to learn), not the first definition. Teaching pages do not assume the reader has opened it.

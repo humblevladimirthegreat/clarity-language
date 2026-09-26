@@ -1,7 +1,7 @@
 import type { OverlayKind } from "../lexicon-search.js";
 
 /** Part-of-speech prefix letters (role stamps). */
-export type Pos = "z" | "d" | "b" | "v" | "g" | "w" | "h" | "th" | "x" | "j";
+export type Pos = "z" | "d" | "b" | "v" | "g" | "w" | "h" | "th" | "x" | "y";
 
 /** Word endings, plus stand-in clusters `-rl` / `-rm` / lexicalized `-rn`. */
 export type Ending = "l" | "m" | "n" | "r" | "rl" | "rm" | "rn";
@@ -22,12 +22,12 @@ export type NumberGroup = {
   exponentDigits?: string;
   /** Mantissa digits (Arabic or CV syllables). */
   mantissa?: string;
-  /** Speech `ja` between exponent and mantissa. */
+  /** Speech `ya` between exponent and mantissa. */
   hasJa?: boolean;
-  /** Decimal point (speech `je` / writing `.`). */
+  /** Decimal point (speech `ye` / writing `.`). */
   decimal?: boolean;
-  /** Percent (`jo` / `%`) or percentage-point (`ju` / `%*`) closer. */
-  percent?: "jo" | "ju";
+  /** Percent (`yo` / `%`) or percentage-point (`yu` / `%*`) closer. */
+  percent?: "yo" | "yu";
 };
 
 /**
@@ -181,17 +181,17 @@ export type LexWord = MorphWord & {
 
 // ── Stage 3 sentence AST ────────────────────────────────────────────────────
 
-export type ImpliedForce = "jal" | "jam";
+export type ImpliedForce = "yal" | "yam";
 
 export type ClauseForce =
-  | "jal"
-  | "jam"
-  | "jol"
-  | "jom"
-  | "jel"
-  | "jem"
-  | "jul"
-  | "jum";
+  | "yal"
+  | "yam"
+  | "yol"
+  | "yom"
+  | "yel"
+  | "yem"
+  | "yul"
+  | "yum";
 
 export type PunctKind = "period" | "qmark" | "bang";
 

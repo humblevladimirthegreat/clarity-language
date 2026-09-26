@@ -24,12 +24,12 @@ describe("normalizeIpaForKitten", () => {
     const word = toPhonemeWord("zazawan");
     assert.equal(word.ipa, "zɑ.zɑ.wɑn");
     assert.equal(wordIpaPhones(word), "zɑːzɑːwɑn");
-    const juon = toPhonemeWord("juon");
-    assert.equal(juon.ipa, "ju.on");
-    assert.equal(wordIpaPhones(juon), "juːon");
+    const yuon = toPhonemeWord("yuon");
+    assert.equal(yuon.ipa, "ju.on");
+    assert.equal(wordIpaPhones(yuon), "juːon");
     assert.equal(wordIpaPhones(toPhonemeWord("gomonum")), "ɡoːmoːnum");
     assert.equal(wordIpaPhones(toPhonemeWord("guzumum")), "ɡuːzuːmum");
-    assert.equal(wordIpaPhones(toPhonemeWord("jal")), "jɑl");
+    assert.equal(wordIpaPhones(toPhonemeWord("yal")), "jɑl");
   });
 });
 
@@ -59,7 +59,7 @@ describe("ipaToKittenIds", () => {
   });
 
   it("does not inject hiatus stress on stacked vowels", () => {
-    const ids = ipaToKittenIds(wordIpaPhones(toPhonemeWord("juon")));
+    const ids = ipaToKittenIds(wordIpaPhones(toPhonemeWord("yuon")));
     assert.ok(ids.includes(textToKittenIds("ː")[0]!));
     assert.ok(!ids.includes(textToKittenIds("ˈ")[0]!));
   });
@@ -78,8 +78,8 @@ describe("toPhonemeWord", () => {
     assert.equal(toPhonemeWord("g").ipa, "ɡ");
   });
 
-  it("splits stacked vowels as separate syllables (juon)", () => {
-    const word = toPhonemeWord("juon");
+  it("splits stacked vowels as separate syllables (yuon)", () => {
+    const word = toPhonemeWord("yuon");
     assert.deepEqual(
       word.syllables.map((s) => s.ipa),
       ["ju", "on"],

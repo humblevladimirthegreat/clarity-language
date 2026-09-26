@@ -624,7 +624,7 @@ export function normalizeLooseEnglish(loose: string): string {
   return t;
 }
 
-const MORPH_POS_PREFIX_RE = /^(?:th|[zdbvgwhxj])l?-(.+)$/;
+const MORPH_POS_PREFIX_RE = /^(?:th|[zdbvgwhxy])l?-(.+)$/;
 
 function morphSegmentBodyForLooseCompare(segment: string): string {
   const m = MORPH_POS_PREFIX_RE.exec(segment.trim());
@@ -654,7 +654,7 @@ export function morphRedundantWithLoose(
 }
 
 const MORPH_TOKEN_RE =
-  /^(?:(?:th|[zdbvgwhxj])l?-)?(?:←)?[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]*(?:-x-[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]+)*(?:-x)?$|^[<>^]$|^\^-start$|^\^-end$/;
+  /^(?:(?:th|[zdbvgwhxy])l?-)?(?:←)?[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]*(?:-x-[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]+)*(?:-x)?$|^[<>^]$|^\^-start$|^\^-end$/;
 
 export function looksLikeMorphLine(line: string): boolean {
   const trimmed = line.trim();
@@ -678,7 +678,7 @@ const QUOTED_PAYLOAD_RE = /"(?:[^"]|"")*"/g;
 
 /** Labeled package open (`d-CITE.multi[`, `NAME[`, `SCOPE[`). */
 const PACKAGE_OPEN_RE =
-  /(?:(?:th|[zdbvgwhxj])l?-)?(?:NAME\.)?(?:CITE|MENTION|ASIDE|OPAQUE|SCOPE|NAME)(?:\.[a-z]+)*\[/g;
+  /(?:(?:th|[zdbvgwhxy])l?-)?(?:NAME\.)?(?:CITE|MENTION|ASIDE|OPAQUE|SCOPE|NAME)(?:\.[a-z]+)*\[/g;
 
 function collectBlockquoteGroup(
   lines: string[],
@@ -996,7 +996,7 @@ function sensePieces(
       return [
         `${numberLabel(family.stem, word.pos)}${NUMBER_MARK_SUFFIX[family.writingEndingMark ?? ""] ?? ""}` +
           // Spelled-out number word (`grarel`) vs digit shorthand (`g+3`).
-          (/^(?:th|[zdbvgwhxj])?[a-z]+$/.test(word.raw) ? ".spelled" : ""),
+          (/^(?:th|[zdbvgwhxyj])?[a-z]+$/.test(word.raw) ? ".spelled" : ""),
       ];
     case "x":
       return xPieces(word, tables);
@@ -1062,7 +1062,7 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
     return JOIN_RELATION[series] ?? "join-relation";
   }
 
-  if (word.pos === "j") {
+  if (word.pos === "y") {
     if (series.length === 1) {
       if (ending === "m") return FORCE_JOB_SOFT[series] ?? FORCE_JOB[series] ?? series;
       return FORCE_JOB[series] ?? series;
@@ -1260,8 +1260,8 @@ function formatNumberGroup(g: NumberGroup): string {
   } else if (!g.mantissa && g.exponentSign) {
     s += g.exponentSign === "bu" ? "e-" : "e";
   }
-  if (g.percent === "jo") s += "jo";
-  if (g.percent === "ju") s += "ju";
+  if (g.percent === "yo") s += "yo";
+  if (g.percent === "yu") s += "yu";
   return s;
 }
 
@@ -1403,7 +1403,7 @@ function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): st
   if (word.pos === "x" && roots.length === 1 && LINKER_ENGLISH[roots[0]! + word.ending]) {
     return LINKER_ENGLISH[roots[0]! + word.ending]!;
   }
-  if (word.pos === "j" && word.ending === "l" && roots.length === 1 && roots[0] === "awave") return "greeting";
+  if (word.pos === "y" && word.ending === "l" && roots.length === 1 && roots[0] === "awave") return "greeting";
   if (roots.length === 1) {
     return rootSense(roots[0]!, word.ending, tables, {
       named: word.ending === "n",

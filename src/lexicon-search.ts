@@ -3,14 +3,14 @@ import MiniSearch from "minisearch";
 import { parseCsv } from "./csv.js";
 import type { CompoundRow } from "./lexicon-compounds.js";
 
-export const ROLE_LETTERS = ["z", "d", "b", "v", "g", "w", "h", "th", "j", "x"] as const;
+export const ROLE_LETTERS = ["z", "d", "b", "v", "g", "w", "h", "th", "y", "x"] as const;
 
 export type RoleLetter = (typeof ROLE_LETTERS)[number];
 
 const ROLE_LETTER_SET = new Set<string>(ROLE_LETTERS);
 
 const POS_ENGLISH_LEMMA_RE = /^[a-z]+(?:-[a-z]+)*$/;
-const POS_ENGLISH_PIECE_RE = /^(m\.)?(th|[zdbvgwhjx]):([a-z]+(?:-[a-z]+)*)$/;
+const POS_ENGLISH_PIECE_RE = /^(m\.)?(th|[zdbvgwhyx]):([a-z]+(?:-[a-z]+)*)$/;
 
 export type PosEnglishMap = {
   concrete: Partial<Record<RoleLetter, string>>;
@@ -134,7 +134,7 @@ const OVERLAY_HEADERS = [
 ] as const;
 
 /** PoS prefixes (single letters plus `th`) used when a query is a full spelled word. */
-const POS_PREFIXES = new Set(["z", "d", "b", "g", "v", "w", "h", "th", "j", "x"]);
+const POS_PREFIXES = new Set(["z", "d", "b", "g", "v", "w", "h", "th", "y", "x"]);
 
 const SEARCH_FIELDS = [
   "concrete",

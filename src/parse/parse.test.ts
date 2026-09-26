@@ -55,9 +55,9 @@ describe("parse — clause.md beginner", () => {
     assert.equal(result.utterances[0]!.bodies.length, 0);
   });
 
-  it("parses vocative jululon.", () => {
-    const result = parseText("jululon.");
-    assert.equal(result.utterances[0]!.left.vocatives[0]?.raw, "jululon");
+  it("parses vocative yululon.", () => {
+    const result = parseText("yululon.");
+    assert.equal(result.utterances[0]!.left.vocatives[0]?.raw, "yululon");
   });
 
   it("parses unhosted /b/ recipient plus verb", () => {
@@ -71,38 +71,38 @@ describe("parse — clause.md beginner", () => {
     assert.equal(units[1]!.coord.level, "b");
   });
 
-  it("omits jal when recoverable", () => {
+  it("omits yal when recoverable", () => {
     const result = parseText("zazawan vawalal.");
     assert.equal(result.utterances[0]!.left.force, undefined);
-    assert.equal(result.utterances[0]!.left.impliedForce, "jal");
+    assert.equal(result.utterances[0]!.left.impliedForce, "yal");
   });
 
-  it("parses jol question", () => {
-    const result = parseText("jol zugobon vawalal.");
+  it("parses yol question", () => {
+    const result = parseText("yol zugobon vawalal.");
     assert.ok(result.utterances[0]!.left.force);
-    assert.equal(result.utterances[0]!.left.force!.raw, "jol");
+    assert.equal(result.utterances[0]!.left.force!.raw, "yol");
   });
 
   it("parses confirm tag as second utterance", () => {
-    const result = parseText("zazawan vawalal. jael.");
+    const result = parseText("zazawan vawalal. yael.");
     assert.equal(result.utterances.length, 2);
-    assert.equal(result.utterances[1]!.left.polars[0]?.raw, "jael");
+    assert.equal(result.utterances[1]!.left.polars[0]?.raw, "yael");
   });
 
-  it("parses jam soft statement", () => {
-    const result = parseText("jam zazawan vawalal.");
-    assert.equal(result.utterances[0]!.left.force?.raw, "jam");
+  it("parses yam soft statement", () => {
+    const result = parseText("yam zazawan vawalal.");
+    assert.equal(result.utterances[0]!.left.force?.raw, "yam");
   });
 
-  it("parses jel command with a period", () => {
-    const result = parseText("jel vuzunel.");
-    assert.equal(result.utterances[0]!.left.force?.raw, "jel");
+  it("parses yel command with a period", () => {
+    const result = parseText("yel vuzunel.");
+    assert.equal(result.utterances[0]!.left.force?.raw, "yel");
     assert.equal(result.utterances[0]!.bodies[0]!.punct, "period");
   });
 
   it("parses polar plus body", () => {
-    const result = parseText("jael zugobon vawalal.");
-    assert.equal(result.utterances[0]!.left.polars[0]?.raw, "jael");
+    const result = parseText("yael zugobon vawalal.");
+    assert.equal(result.utterances[0]!.left.polars[0]?.raw, "yael");
     assert.equal(result.utterances[0]!.bodies[0]!.clause.units.length, 2);
   });
 });
@@ -180,7 +180,7 @@ describe("parse — stand-in dependents", () => {
     assert.equal(clause.dependent!.clause.units.length, 2);
   });
 
-  it("parses dorl whether without inner jol", () => {
+  it("parses dorl whether without inner yol", () => {
     const result = parseText("zazawan vejel dorl zululon vawalal.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
@@ -445,15 +445,15 @@ describe("parse — stage 4 resolve", () => {
     assert.equal(result.resolve.anaphors[0]?.antecedent?.raw, "zululon");
   });
 
-  it("marks jol zar vawalal. as fill-ask", () => {
-    const result = parseText("jol zar vawalal.");
+  it("marks yol zar vawalal. as fill-ask", () => {
+    const result = parseText("yol zar vawalal.");
     assert.equal(result.resolve?.asks[0]?.kind, "fillAsk");
   });
 });
 
 describe("parse — spans.md written fences and closes", () => {
   it("puts a written span in its PoS slot, not only an NP head", () => {
-    for (const text of ["zazawan vawalal th(huzumum).", "jul zululon v[vozodol].", "zululon vezehel th(zazawan vuzunul)."]) {
+    for (const text of ["zazawan vawalal th(huzumum).", "yul zululon v[vozodol].", "zululon vezehel th(zazawan vuzunul)."]) {
       assert.doesNotThrow(() => parseText(text), text);
     }
   });

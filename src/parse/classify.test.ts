@@ -109,10 +109,10 @@ describe("classify", () => {
     expectReading("vuzunexel", "ability");
   });
 
-  it("greeting bid on citation or /j/ vocative, not ability", () => {
+  it("greeting bid on citation or /y/ vocative, not ability", () => {
     expectReading("azawaxan", "greeting");
-    expectReading("jazawaxan", "greeting");
-    expectReading("jululoxen", "greeting");
+    expectReading("yazawaxan", "greeting");
+    expectReading("yululoxen", "greeting");
     expectReading("uhubuxun", "greeting");
   });
 
@@ -325,7 +325,7 @@ describe("lexiconContentRoots", () => {
     assert.deepEqual(lexiconContentRoots(parseWord("daxal")), []);
     assert.deepEqual(lexiconContentRoots(parseWord("g+3")), []);
     assert.deepEqual(lexiconContentRoots(parseWord("d<sushi>")), []);
-    assert.deepEqual(lexiconContentRoots(parseWord("jal")), []);
+    assert.deepEqual(lexiconContentRoots(parseWord("yal")), []);
     assert.deepEqual(lexiconContentRoots(parseWord("xuxun")), []);
     assert.equal(unknownLexiconContentRoots(parseWord("zazawan"), knownLexiconRoots(tables)).length, 0);
   });

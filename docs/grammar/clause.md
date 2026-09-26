@@ -129,7 +129,7 @@ Role letters on this page:
 | `/w/` | extra detail on the next `/ɡ/`, `/h/`, or `/th/` word | **w** ≈ with (stuck to that host) |
 | `/h/` | adverb (how / when / where) | **h** starts *how* / *when* / *where* |
 | `/th/` | stance (how sure, how known, why, as if) | **th** ≈ *think* (your stance on the claim) |
-| `/j/` | start a speech move | **j** ≈ jump (a new act; see [speech moves](speech-moves.md)) |
+| `/y/` | start a speech move | **y** ≈ *yo!* (a new act; see [speech moves](speech-moves.md)) |
 
 
 
@@ -483,7 +483,7 @@ z-dog | [[w-very | h-like] | b-Azawan] | v-sleep
 
 The first letter already says who acts, who is acted on, and what the action is. Moving those words does not change who did what. The **leftmost content word** of the clause body is what you highlight: what the sentence is “about,” or the new information.
 
-English usually keeps subject–verb–object and uses extra wording, a different voice, or spoken stress for that job. When you translate, keep the same highlight in English. Copy Agalan order into English only when that English is also a natural way to put that piece first (*Hastily, Azawan walks*). Opening `/j/` words sit before the body and are not this highlight. Keep a [stand-in](dependents.md#stand-in) **`darl` / `barl`** last in its slot; move the other words around it.
+English usually keeps subject–verb–object and uses extra wording, a different voice, or spoken stress for that job. When you translate, keep the same highlight in English. Copy Agalan order into English only when that English is also a natural way to put that piece first (*Hastily, Azawan walks*). Opening `/y/` words sit before the body and are not this highlight. Keep a [stand-in](dependents.md#stand-in) **`darl` / `barl`** last in its slot; move the other words around it.
 
 > `zazawan dagadal vejel.`
 >
@@ -515,7 +515,7 @@ The subject is already first by default, so order cannot single it out. To say *
 
 ### Weak-pause left cues {#weak-pause-left-cues}
 
-When you cannot hear a clear pause (singing, fast free order), prefer something audible at the start after silence: *yes* / *no*, a name you address, or a written act word like `jal`. Writing still uses `.` to mark body edges.
+When you cannot hear a clear pause (singing, fast free order), prefer something audible at the start after silence: *yes* / *no*, a name you address, or a written act word like `yal`. Writing still uses `.` to mark body edges.
 
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>

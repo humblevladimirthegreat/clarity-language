@@ -289,15 +289,15 @@ Raw feeling (contacting a sensation without judgment) may go unlabeled. Full com
 
 When English puts *should* / *ought to* on the **doing** for a named need (*Uhubun ought to sing to serve survival*), put `/th/` on the clause: need root, mid-word **`th`**, **`e`**, then an ending. The **host verb** names the act that ought to count toward the need. Prescription **`the`** gives the clause **deontic** force: you are stating obligation, not reporting that the act is already happening.
 
-That ending says why you think a move is welcome. Use **-l** when the person invited this move, explicitly or through a clear standing invitation. Use **-m** for an unsolicited offer meant to serve the need. Use **-r** for an unsolicited protective move meant to prevent detriment to the need. These endings describe the move's warrant and aim, not whether it succeeds. How firmly you put the act on the addressee stays on `/j/` (**`jel`** / **`jem`**, **`jal`** / **`jam`**). If no such warrant applies, drop **`the`**.
+That ending says why you think a move is welcome. Use **-l** when the person invited this move, explicitly or through a clear standing invitation. Use **-m** for an unsolicited offer meant to serve the need. Use **-r** for an unsolicited protective move meant to prevent detriment to the need. These endings describe the move's warrant and aim, not whether it succeeds. How firmly you put the act on the addressee stays on `/y/` (**`yel`** / **`yem`**, **`yal`** / **`yam`**). If no such warrant applies, drop **`the`**.
 
 **Unlike** [MAY](knowing.md#may) (`thodohom`): the host verb stays ordinary content there and the event is still *could be*. With **`the`**, the same host verb is the **ought-to** act, not a simultaneous performance claim.
 
-**Compare with:** [command](speech-moves.md#speech-act-beginner) **`jel`** instructs an act outright without naming the need or why a move is wanted. **`the`** is need-linked deontic: *ought to advance this need*, with that warrant on the ending.
+**Compare with:** [command](speech-moves.md#speech-act-beginner) **`yel`** instructs an act outright without naming the need or why a move is wanted. **`the`** is need-linked deontic: *ought to advance this need*, with that warrant on the ending.
 
 **Compare with:** [predict](intention.md#predict) (`thelezo` …) when English *should* is really a **forecast** about what will pay off the need, or when you want both *is doing* and a norm on that doing — not prescription deontic. For a plain performance report, drop **`the`** and assert the verb alone.
 
-**Compare with:** [motive](#value-preference) **`tho`** plus a [request](speech-moves.md#speech-act) **`jem`** when the speaker wants **their own** need served. **`the`** is advice about the need named on this word.
+**Compare with:** [motive](#value-preference) **`tho`** plus a [request](speech-moves.md#speech-act) **`yem`** when the speaker wants **their own** need served. **`the`** is advice about the need named on this word.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -410,7 +410,7 @@ The negatives **`thononel`** / **`thononem`** use the root **`onone`** (⛔ *no 
 | **`thononel`** | a person forbids it | *may not* / *I won't let you* | **-l** ≈ locked to a forbidder |
 | **`thononem`** | a rule or norm forbids it | *is not allowed to* | **-m** ≈ open standing rule |
 
-To **ask** for permission, put the clause under [ask](questions.md#question): `jom zSELFn vajul therenel.` (*May I sit?*). Grant it with [**`jaol.`**](questions.md#polar-stance) (*go ahead*).
+To **ask** for permission, put the clause under [ask](questions.md#question): `yom zSELFn vajul therenel.` (*May I sit?*). Grant it with [**`yaol.`**](questions.md#polar-stance) (*go ahead*).
 
 **Compare with:** [prescription](#value-force) **`the`** says the act *ought* to serve a need; permission only says the act is *allowed*. [Ability](intention.md#incapability) says someone *can* do it; permission says whether they *may*.
 
@@ -449,7 +449,7 @@ The negatives are **`thuxononel`** and **`thuxononem`**. **-l** means they said 
 | **`thuxononel`** | the affected said no | *they refused* | **-l** ≈ locked to their word |
 | **`thuxononem`** | consent presumed absent | *they probably don't want it* / *I won't let myself* | **-m** ≈ open guess |
 
-To check in, ask: `jom zazawan vezehel thuxerenel.` (*Are you still OK with this?*).
+To check in, ask: `yom zazawan vezehel thuxerenel.` (*Are you still OK with this?*).
 
 **Compare with:** permission **`therenel`** can come from anyone with the standing to grant it: `zazawan vezehel therenel bululon.` means Ululon allowed it, which is not the same as the listener agreeing. `zSELFn vajul therenel.` is *I'm allowed to sit* (someone let me); `zSELFn vajul thuxerenel.` is *I let myself sit*.
 

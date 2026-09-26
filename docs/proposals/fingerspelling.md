@@ -55,9 +55,9 @@ Spoken names stay as in phonology. Plural **-x** uses the **x** hold (`xe`).
 | **z** | *ze* | **Chinese Z** | Index + little finger extended, tips to the side, back of hand to viewer; other fingers bent. **Not** STS rounded-middle-finger **Z**, **not** ASL zigzag |
 | **l** | *lo* | STS **L** | |
 | **r** | *ro* | STS **R** | |
+| **y** | *ya* | STS **J** | **Hold** (flat hand; same sound as STS **J**); not ASL pinky-trace. Open question: switch to STS **Y** to match the letter? |
 | **g** | *ga* | STS **G** | ASL false friend risk (see below) |
 | **h** | *hu* | STS **H** | |
-| **j** | *ja* | STS **J** | **Hold** (flat hand); not ASL pinky-trace |
 | **x** | *xe* | STS **X** | Hold; check vs Chinese **Z** (open question). Plural **-x** is this same sign after the ending. |
 
 **Dropped STS letters:** **c f i k p q s t y å ä ö**. Dropping **y / å / ä / ö** also drops the STS letters that use **path movement**.
@@ -76,7 +76,7 @@ Content word: PoS letter, then root letters, then ending (**l / m / n / r**), th
 
 ## Why this mix
 
-- **STS** supplies a one-hand Latin set whose **j** is already a hold, with more print-cursive iconicity than ASL, and no need to teach English-only letters.
+- **STS** supplies a one-hand Latin set whose **J** (our **y**) is already a hold, with more print-cursive iconicity than ASL, and no need to teach English-only letters.
 - **Chinese Z** is a hold that still suggests the **two bars** of printed **Z**; STS **Z** is a weak cursive pose and is marked *less common* even in Swedish.
 
 ASL transfer is **not** a goal. STS and ASL share some shapes on **different** letters (e.g. ASL **B C D R S** ≈ STS **D S L X G**). Charts must say **do not read this as ASL**.

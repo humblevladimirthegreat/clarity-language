@@ -22,7 +22,7 @@ Deliberate omissions. An English job that only these forms would serve is **cove
 
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
-| D-01 | copula *to be* as a verb | property on `/ɡ/`, kind on predicative `/ɡ/` (`jal zazawan godogol`), identity **`SAME`** | by design | predication.md | — | — |
+| D-01 | copula *to be* as a verb | property on `/ɡ/`, kind on predicative `/ɡ/` (`yal zazawan godogol`), identity **`SAME`** | by design | predication.md | — | — |
 | D-02 | grammatical past / future tense, progressive aspect | time via `/h/` lexicon, clock / date, closed moods; **RESIDUE** / **FORMER** are standing, not tense ([knowing](../grammar/knowing.md#evidentiality): verbs have no past or future letter) | by design | knowing.md, glosses.md | — | — |
 | D-03 | article *the* for an already-mentioned kind | resume **-r** | by design | pronouns.md | — | — |
 | D-04 | single *cause* arrow word (*X causes Y*) | two-place poles **`adoro`** / **`ebero`** / **`urugu`** / **`ezaze`**; **CAUSE** mood | by design | causation.md | — | — |
@@ -66,7 +66,7 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 - **Question words:** done 2026-09-26: *why / how* (G-A09, G-A11). Open: *how many / how big* (G-A10, G-A12).
 - **Aspect adverbs:** *just / already / still / not yet / anymore / about to* (G-B).
 - **Permission:** done 2026-09-26: permission `therenel` / `therenem`, consent `thuxerenel` / `thuxerenem` (values.md).
-- **Expressive / commissive acts:** *thanks / sorry / promise* (G-H); values on `/j/` (`jonogotham`) parse.
+- **Expressive / commissive acts:** *thanks / sorry / promise* (G-H); values on `/y/` (`yonogotham`) parse.
 - **Quantity words:** done 2026-09-26: *a few* `g~+`, mass *some* `g+`, *many / few / enough / too* = amount scale `g+` against a named bar (judgment or need bar), *most* `g+50% guel`, *half* `g-2`, *at most* `eo` ray, *more X than Y*. Open: *how many / how big* (G-A10, G-A12).
 - **Degree and focus:** *almost / barely / quite / slightly / even / also* (G-D).
 - **Existentials:** done 2026-09-26: *there is* = lone noun ([predication#existence](../grammar/predication.md#existence)). Open: *there is no* (G-F07).
@@ -77,35 +77,35 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
-| G-A01 | declarative (*Azawan walks.*) | `zazawan vawalal.` (omissible `jal`); soft `jam` — speech-moves.md#speech-act-beginner, #speech-act | covered | speech-moves.md | — | — |
-| G-A02 | yes/no question (*Does Azawan walk?*) | `jol zazawan vawalal.` / soft `jom`; optional `?` — questions.md#question, #question-tone | covered | questions.md | — | — |
-| G-A03 | negative yes/no (*Didn't Azawan run?*) | `jol zazawan vurunul vul.` (post-verb `vul`); answers `jael` / `juel` — questions.md#confirming-a-negative | covered | questions.md | Fix page examples: they write `jol zazawan vul vurunul.`, which the parser rejects (see Notes) | — |
-| G-A04 | alternative question (*the teapot or the dog?*) | closed-menu list join under question: `jol zazawan dedebol dodogol dol vejel.` — questions.md#single-item-standalone-inventory | covered | questions.md | Advanced only; could get one Intermediate example | — |
-| G-A05 | wh- *who / what / do what / what happened* | join **-r** blank: `jol zar vawalal.`, `jol var.`, `jol xar.`; *what else* `zur`; fill-all `jol zar vejel dar.` — questions.md#fill-ask-r, #fill-all | covered | questions.md | — | — |
-| G-A06 | *which (X)* | `jol zagegol zar.`; list + `…ar` = *which of these*; `…er` *which first* — questions.md#fill-ask-arity | covered | questions.md | — | — |
-| G-A07 | *where / where from / in what* | hook + `bar`: `jol zuhubun vawalal ol bar.` — questions.md#where | covered | questions.md | — | — |
-| G-A08 | *when* | `jol zazawan vawalal har.` — questions.md#when | covered | questions.md | — | — |
-| G-A09 | *how* (manner / means: *How does Azawan walk?*) | `jol zazawan vawalal hurorom bar.`; means `ael bar` | covered | questions.md#how, hooks.md#extra-noun-intermediate | — | — |
+| G-A01 | declarative (*Azawan walks.*) | `zazawan vawalal.` (omissible `yal`); soft `yam` — speech-moves.md#speech-act-beginner, #speech-act | covered | speech-moves.md | — | — |
+| G-A02 | yes/no question (*Does Azawan walk?*) | `yol zazawan vawalal.` / soft `yom`; optional `?` — questions.md#question, #question-tone | covered | questions.md | — | — |
+| G-A03 | negative yes/no (*Didn't Azawan run?*) | `yol zazawan vurunul vul.` (post-verb `vul`); answers `yael` / `yuel` — questions.md#confirming-a-negative | covered | questions.md | Fix page examples: they write `yol zazawan vul vurunul.`, which the parser rejects (see Notes) | — |
+| G-A04 | alternative question (*the teapot or the dog?*) | closed-menu list join under question: `yol zazawan dedebol dodogol dol vejel.` — questions.md#single-item-standalone-inventory | covered | questions.md | Advanced only; could get one Intermediate example | — |
+| G-A05 | wh- *who / what / do what / what happened* | join **-r** blank: `yol zar vawalal.`, `yol var.`, `yol xar.`; *what else* `zur`; fill-all `yol zar vejel dar.` — questions.md#fill-ask-r, #fill-all | covered | questions.md | — | — |
+| G-A06 | *which (X)* | `yol zagegol zar.`; list + `…ar` = *which of these*; `…er` *which first* — questions.md#fill-ask-arity | covered | questions.md | — | — |
+| G-A07 | *where / where from / in what* | hook + `bar`: `yol zuhubun vawalal ol bar.` — questions.md#where | covered | questions.md | — | — |
+| G-A08 | *when* | `yol zazawan vawalal har.` — questions.md#when | covered | questions.md | — | — |
+| G-A09 | *how* (manner / means: *How does Azawan walk?*) | `yol zazawan vawalal hurorom bar.`; means `ael bar` | covered | questions.md#how, hooks.md#extra-noun-intermediate | — | — |
 | G-A10 | *how* + degree (*How big is the dog?*, *how fast*) | none. No degree blank before `/ɡ/` (`wel` is already rank-restrictor; `war` rejected after the verb) | missing | questions.md / comparatives.md | Degree fill-ask on `/w/` before the adjective (e.g. a digitless `/w/` number blank, or a measure-phrase blank); check numbers free forms | P1 |
 | G-A11 | *why* / *what for* | `thurugum bar` / `holalam bar` / `thadorom bar` | covered | questions.md#why | — | — |
 | G-A12 | *how many / how much* | only Advanced range fill-ask (`z+3 z+5 zar gurulem`, numbers-applied.md#unspecified-value-in-the-range--r) — needs bounds + continuum; digitless number **-r** is resume (`g=+`), not a blank | missing | numbers.md / questions.md | Beginner count blank: a number word that is a fill-ask (e.g. `g+` + join-style blank, or unbounded range `g+0 g+e gar` taught as *how many?*) | P1 |
-| G-A13 | imperative (*Walk!*) | `jel vawalal.`; addressee explicit `jel zedonen vawalal.` (roles.md examples) — speech-moves.md#speech-act-beginner | covered | speech-moves.md | — | — |
-| G-A14 | polite request (*Please walk.*) | `jem vawalal.` — speech-moves.md#speech-act | covered | speech-moves.md | — | — |
-| G-A15 | *let's* (*Let's walk.*) | `jem zahan vawalal.` / `jum zahan …` | covered | speech-moves.md#speech-act | — | — |
-| G-A16 | negative imperative (*Don't walk.* / *Please don't*) | `jul vawalal.`, `jum`, emphatic `jul jul` — speech-moves.md#emphatic-prohibition | covered | speech-moves.md | — | — |
-| G-A17 | exclamative (*What a big dog!*, *How big the dog is!*) | tone + intensifier: `! zodogol welem gelel.` — speech-moves.md#tone-marks | awkward | speech-moves.md | Teach the `!` + `welem` route as the exclamative pattern; optionally a degree-exclamation (`/j/` + adjective, e.g. `jelel` parses as j-elephant) giving *So big!* | P2 |
-| G-A18 | tag question (*Azawan walks, doesn't he? / right?*) | `zazawan vawalal. jol jael.` (parser change 2026-09-26) | covered | questions.md#polar-stance | — | — |
-| G-A19 | echo question (*You saw WHAT?*, *Azawan did?*) | `jol zedonen vejel ?!dar.` | covered | questions.md#echo | — | — |
-| G-A20 | rhetorical question (*Who cares?*, *Isn't it obvious?*) | none. `jol` expects a reply; `%` is joking; `jam jol …` / `jal jol …` stack parses with no defined reading | missing | speech-moves.md | Define stacked `jal jol …` (claim asked as question: answer asserted) as rhetorical; soft `jam jol` for musing | P2 |
-| G-A21 | wondering / self-question (*I wonder if…*) | `jom zululon velebel.` — questions.md#question | covered | questions.md | — | — |
+| G-A13 | imperative (*Walk!*) | `yel vawalal.`; addressee explicit `yel zedonen vawalal.` (roles.md examples) — speech-moves.md#speech-act-beginner | covered | speech-moves.md | — | — |
+| G-A14 | polite request (*Please walk.*) | `yem vawalal.` — speech-moves.md#speech-act | covered | speech-moves.md | — | — |
+| G-A15 | *let's* (*Let's walk.*) | `yem zahan vawalal.` / `yum zahan …` | covered | speech-moves.md#speech-act | — | — |
+| G-A16 | negative imperative (*Don't walk.* / *Please don't*) | `yul vawalal.`, `yum`, emphatic `yul yul` — speech-moves.md#emphatic-prohibition | covered | speech-moves.md | — | — |
+| G-A17 | exclamative (*What a big dog!*, *How big the dog is!*) | tone + intensifier: `! zodogol welem gelel.` — speech-moves.md#tone-marks | awkward | speech-moves.md | Teach the `!` + `welem` route as the exclamative pattern; optionally a degree-exclamation (`/y/` + adjective, e.g. `yelel` parses as y-elephant) giving *So big!* | P2 |
+| G-A18 | tag question (*Azawan walks, doesn't he? / right?*) | `zazawan vawalal. yol yael.` (parser change 2026-09-26) | covered | questions.md#polar-stance | — | — |
+| G-A19 | echo question (*You saw WHAT?*, *Azawan did?*) | `yol zedonen vejel ?!dar.` | covered | questions.md#echo | — | — |
+| G-A20 | rhetorical question (*Who cares?*, *Isn't it obvious?*) | none. `yol` expects a reply; `%` is joking; `yam yol …` / `yal yol …` stack parses with no defined reading | missing | speech-moves.md | Define stacked `yal yol …` (claim asked as question: answer asserted) as rhetorical; soft `yam yol` for musing | P2 |
+| G-A21 | wondering / self-question (*I wonder if…*) | `yom zululon velebel.` — questions.md#question | covered | questions.md | — | — |
 
 **Notes**
 
-- Parser rejects the questions.md#confirming-a-negative examples `jol zazawan vul vurunul.` and `jael vul vurunul.`-style pre-verb `vul` ("Illegal left fence: join before conjuncts"); `jel vul vawalal.` fails too. Post-verb `vurunul vul` parses. Either the page or the parser is out of step (the build apparently does not catch it).
+- Parser rejects the questions.md#confirming-a-negative examples `yol zazawan vul vurunul.` and `yael vul vurunul.`-style pre-verb `vul` ("Illegal left fence: join before conjuncts"); `yel vul vawalal.` fails too. Post-verb `vurunul vul` parses. Either the page or the parser is out of step (the build apparently does not catch it).
 - Digitless number **-r** written `g+r` parses and glosses as "more-than-one" rather than resume; docs say resume is written `g=+`.
-- Bare `jol.` / `jol jael.` as a whole turn parse but have no documented reading.
-- `/j/` + content root (`jelel`) parses as an interjection with no documented reading on **-l** (docs use **-n** for conventional calls).
-- `jol zazawan vawalal war.` fails to parse although `/w/` occasion restrictors are documented alongside `har`.
+- Bare `yol.` / `yol yael.` as a whole turn parse but have no documented reading.
+- `/y/` + content root (`yelel`) parses as an interjection with no documented reading on **-l** (docs use **-n** for conventional calls).
+- `yol zazawan vawalal war.` fails to parse although `/w/` occasion restrictors are documented alongside `har`.
 
 ### B. Verb phrase
 
@@ -131,12 +131,12 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 | G-B18 | *could* (past ability, *could swim as a child*) | `zazawan vuzunuxal themebem.` | covered | intention.md#can | — | — |
 | G-B19 | *may / might / could* (epistemic) | MAY `zazawan thodohom vawalal.` ([knowing#may](../grammar/knowing.md#may)) | covered | knowing.md | — | — |
 | G-B20 | *may / can* (permission: *you may go*) | `zazawan vawalal therenel.` (granted) / `therenem` (rule allows); negatives `thononel` / `thononem` — [values#permission](../grammar/values.md#permission) | covered | values.md | — | — |
-| G-B21 | *must* (obligation) | Firm command `jel`, or need-linked prescription `…thel`/`…them`/`…ther` ([values#value-force](../grammar/values.md#value-force)). By design, a bare *must* without a named need is avoided ([why-agelan](../grammar/why-agelan.md)) | by design | values.md | — | — |
+| G-B21 | *must* (obligation) | Firm command `yel`, or need-linked prescription `…thel`/`…them`/`…ther` ([values#value-force](../grammar/values.md#value-force)). By design, a bare *must* without a named need is avoided ([why-agelan](../grammar/why-agelan.md)) | by design | values.md | — | — |
 | G-B22 | *must* (epistemic: *must be home*) | Evidentials such as clue-based inference ([knowing#evidentiality](../grammar/knowing.md#evidentiality)) or a stance number `th+95` | covered | knowing.md | — | — |
 | G-B23 | *should / ought to* | `zazawan vezehel thonogothem.` ([values#value-force](../grammar/values.md#value-force)); a forecast *should* uses PREDICT | covered | values.md | — | — |
-| G-B24 | rules or norms not tied to a need (*you should signal before turning*, *passengers must…*) | Prescription requires a named need; a plain rule without one has only a command | awkward | values.md | Document which need to pick for social or legal rules, or show `jel` with generic `enenu` | P2 |
+| G-B24 | rules or norms not tied to a need (*you should signal before turning*, *passengers must…*) | Prescription requires a named need; a plain rule without one has only a command | awkward | values.md | Document which need to pick for social or legal rules, or show `yel` with generic `enenu` | P2 |
 | G-B25 | *would* (counterfactual / conditional) | as-of + RESIDUE / PREDICT ([causation](../grammar/causation.md)); NOTIONAL for hypotheticals | covered | causation.md | — | — |
-| G-B26 | *would* (past habitual, polite *would you…*) | Past habit = FORMER; polite request = soft `jem` ([speech-moves](../grammar/speech-moves.md)) | covered | speech-moves.md | — | — |
+| G-B26 | *would* (past habitual, polite *would you…*) | Past habit = FORMER; polite request = soft `yem` ([speech-moves](../grammar/speech-moves.md)) | covered | speech-moves.md | — | — |
 | G-B27 | *need to / have to* | motive `zazawan vawalal thonogothom.` ([values#value-preference](../grammar/values.md#value-preference)); necessary condition `ebero` | covered | values.md | — | — |
 | G-B28 | *had better* (warning advice) | protective prescription `…ther` | covered | values.md | — | — |
 | G-B29 | *will* / *going to* (future) | PREDICT `thelezom` / PLAN `themabam`; DECISION `ehege` | covered | intention.md | — | — |
@@ -241,7 +241,7 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 | G-D21 | *apparently / reportedly / evidently* | evidential `/th/`: `theraram` hearsay, `thunevem` inferred ([knowing#evidentiality](knowing.md#evidentiality)) | covered | knowing.md | — | — |
 | G-D22 | *probably / possibly / certainly* | MAY `thodohom`; stance numbers `th+`, `th+e` ([numbers#number-as-stance-by-marker](numbers.md#number-as-stance-by-marker)) | covered | knowing.md | — | — |
 | G-D23 | *hopefully* (speaker hope toward the clause) | emotion compose is for judgment only ([values#emotion-compose](values.md#emotion-compose)); `zazawan thozedem vawalal.` parses (content *hope* under `/th/`) but is not taught | missing | values.md / clause.md | Teach content-root `/th/` stance (`thozedem` *hopefully*) as a general "speaker attitude" pattern | P1 |
-| G-D24 | *frankly / honestly / to be clear* (speech-act manner) | none; tone marks are prosody only ([speech-moves#tone-marks](speech-moves.md#tone-marks)) | missing | speech-moves.md | A `/j/` or `/th/` word for the speaker's manner of saying it | P2 |
+| G-D24 | *frankly / honestly / to be clear* (speech-act manner) | none; tone marks are prosody only ([speech-moves#tone-marks](speech-moves.md#tone-marks)) | missing | speech-moves.md | A `/y/` or `/th/` word for the speaker's manner of saying it | P2 |
 | G-D25 | *fortunately / sadly* (evaluative sentence adverb) | none taught; same gap as G-D23 | missing | values.md | Same pattern as G-D23 with a value / emotion root on `/th/` | P2 |
 
 **Notes**
@@ -301,7 +301,7 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 - `xezebal` placed mid-sentence as a clause join (`zazawan vawalal xezebal zululon vurunul`) parses, though docs teach linkers only after a period; a trailing linker (`… barl zululon velebel xezebal.`) fails.
 - Causation.md (factivity) says *if he had* is `hobomam` with **no** `thadorom`, while a counterfactual is still a condition; learners get no marker that the condition is false, only a moved "now".
 - Restrictors page line ~325 says *when* + clause is "`/h/` pole + `barl`" but names no *when* pole; `hegemum` is taught only as *while* (same time).
-- `zar` standalone parses as a declarative subject (*someone walks*); no doc says whether `-r` blanks outside `jol` mean *someone* vs *whoever*.
+- `zar` standalone parses as a declarative subject (*someone walks*); no doc says whether `-r` blanks outside `yol` mean *someone* vs *whoever*.
 
 ### F. Information structure
 
@@ -323,7 +323,7 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 | G-F14 | gapping (*Azawan sees a dog, and Ululon a cat*) | verb resume keeps it short: `zazawan dodogol vejel. zululon dagadal vejer.` Verbless `zululon dagadal.` parses but is untaught (and a lone noun + `/ɡ/` already reads as existence or property — [predication#existence](../grammar/predication.md#existence)) | covered | pronouns.md | — (state that verbless subject + object is not gapping: an object needs a verb) | — |
 | G-F15 | pro-form *do so / do that* | `/v/ … -r`: `zazawan vajul. zululon vajer.` ([pronouns](pronouns.md)) | covered | pronouns.md | — | — |
 | G-F16 | pro-form *one* (*a blue one*, *I want the red one*) | `zululon dar godor gelulul vejel.` | covered | pronouns.md#cross-role-recast | — | — |
-| G-F17 | *so / not* as answer (*I think so / I don't think so*) | polar stance `jaem` / `juem` ([questions#polar-stance](questions.md#polar-stance)) | covered | questions.md | — | — |
+| G-F17 | *so / not* as answer (*I think so / I don't think so*) | polar stance `yaem` / `yuem` ([questions#polar-stance](questions.md#polar-stance)) | covered | questions.md | — | — |
 | G-F18 | clausal pro-form *so* in a complement (*Azawan says so*, *I hope so*, *I told you so*, *I hope not*) | none for a prior plain clause: `darr` fails to parse; span resume `d[=]` only works if the earlier content was a span ([spans](spans.md)); `darn` = *a statement*, not *that one*; `zululon vaen xar` is untaught | missing | dependents.md | Stand-in resume: stand-in + **-r** (e.g. `darr` / `dorr` / `durr`) = *that same content* (most recent claim); negative *not* via `u` vowel or `darr zul` — guessable from resume **-r** | P2 |
 | G-F19 | ellipsis with modal / ability (*Azawan can sing and so can I*) | verb resume `vuzunur` drops the ability; would need `x` ability on the resume, not taught ([intention#incapability](intention.md#incapability)) | awkward | intention.md, pronouns.md | State whether ability **`x` + vowel** may sit on a resumed verb (`/v/ … -r` stem) or on `egera`; add example | P3 |
 
@@ -378,29 +378,29 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
-| G-H01 | greeting / goodbye (*hi*, *bye*) | speaker's named citation `azawan.` ([word-endings#greeting](../grammar/word-endings.md#greeting)); call the other with `jululon.` | covered | word-endings.md | — | — |
-| G-H02 | greeting to someone whose name you don't know / group greeting (*hi all*) | none taught; `jedonenx.` (listener -x) only calls them | awkward | word-endings.md / speech-moves.md | allow `/j/` + **`edone`** / **`aha`** + **-n** as a conventional greeting, or teach `jahan.` as *hello, all of us* | P2 |
-| G-H03 | thanks (*thank you*, *thanks for the gift*) | stated as a values claim: `zululon vawaral thonogotham.` "Ululon gave: relatedness met (mental)" ([values#attachment-sites](../grammar/values.md#attachment-sites)); no conventional *Thanks!* turn | awkward | values.md / speech-moves.md | values on `/j/`: need + `th` + **`a`** + ending as an expressive turn (`jonogotham.` *Thanks!*; parser already accepts) | P1 |
-| G-H04 | apology (*sorry*, *I apologize*) | own act detracted from their need: `zugobon vawaral thonogothum.`; emotion compose ([values#emotion-compose](../grammar/values.md#emotion-compose)); no lexicon *regret/sorry*, no conventional turn | awkward | values.md / speech-moves.md | twin of G-H03: `jonogothum.` *Sorry!* (unmet on `/j/`; -r = I'll repair, per changeability) | P1 |
-| G-H05 | softened request (*please…*, *could you…*) | **`jem`**: `jem vawalal.` ([speech-moves#speech-act](../grammar/speech-moves.md#speech-act)); gentle ask **`jom`** | covered | speech-moves.md | — | — |
-| G-H06 | firm request / command / prohibition | **`jel`** / **`jul`**, emphatic `jul jul vazanal.` ([speech-moves#emphatic-prohibition](../grammar/speech-moves.md#emphatic-prohibition)) | covered | speech-moves.md | — | — |
-| G-H07 | offer of a thing (*want some?*, *how about X?*) | single-item open join under question (`…am` / `…om`) ([questions](../grammar/questions.md#yes-no-single-item-standalone)); accept/refuse `jaol` / `juol` | covered | questions.md | — | — |
-| G-H08 | offer to act (*shall I…?*, *let me help*) | `jom zugobon vawalal.` (soft question, self subject); warrant **`the…m`** *offered* on the act ([values#value-force](../grammar/values.md#value-force)) | covered | speech-moves.md / values.md | — | — |
-| G-H09 | suggestion (*why don't we…*, *let's…*) | inclusive we + soft request/question: `jem zahan vawalal.` / `jom zahan vawalal.`; firm *let's* `jel zahan vawalal.` ([pronouns](../grammar/pronouns.md)) | covered | speech-moves.md | — | — |
-| G-H10 | asking permission (*may I…?*, *is it OK if…*) | `jom zugobon vajul therenel.`; *is it OK with you* = consent `thuxerenel` — [values#permission](../grammar/values.md#permission), [values#consent](../grammar/values.md#consent) | covered | values.md | — | — |
-| G-H11 | granting permission (*you may*, *go ahead*) | `jaol.` in reply to a permission ask; declarative `…therenel.` — [values#permission](../grammar/values.md#permission) | covered | values.md | — | — |
-| G-H12 | promise (*I promise to…*) | plan + locked decision: `zugobon themabal thehegel vawaral bedonen.` ([intention#decision](../grammar/intention.md#decision)); states resolve, not an obligation to the listener | awkward | intention.md | commitment stance from **`abene`** *commitment* (`thabenem`, -l binding / -m open) or a **`jal`**-series act for commissives | P2 |
-| G-H13 | warning (*watch out!*, *careful!*) | interjection `jawarun.` (*Warning!*) / `julonen.` (*Danger!*) ([speech-moves#interjections](../grammar/speech-moves.md#interjections)); advice with protective warrant `jel zedonen vawalal thuhuhether.` ([values#value-force](../grammar/values.md#value-force)); `jul jul` for danger | covered | speech-moves.md | — | — |
-| G-H14 | backchannel *uh-huh* / *right* / *got it* | polar stance `jaem.` / `jael.` (*yeah / got it*) ([questions#polar-stance](../grammar/questions.md#polar-stance)) | covered | questions.md | — | — |
-| G-H15 | backchannel *oh* (news receipt, change of state) | `juruzen.` is *Surprise!*, too strong; `jael.` loses "news to me" | missing | speech-moves.md / questions.md | teach a receipt polar (e.g. soft `jaem` vs a new-info particle); or a conventional interjection `j…n` for *I see* | P1 |
-| G-H16 | backchannel *hmm* / *I'm listening* (continuer) | none; bare `jom.` parses (*…?*) but undefined as continuer | missing | speech-moves.md | define bare act words (`jam.` / `jom.`) as continuers: *go on* / *hmm?* | P2 |
+| G-H01 | greeting / goodbye (*hi*, *bye*) | speaker's named citation `azawan.` ([word-endings#greeting](../grammar/word-endings.md#greeting)); call the other with `yululon.` | covered | word-endings.md | — | — |
+| G-H02 | greeting to someone whose name you don't know / group greeting (*hi all*) | none taught; `yedonenx.` (listener -x) only calls them | awkward | word-endings.md / speech-moves.md | allow `/y/` + **`edone`** / **`aha`** + **-n** as a conventional greeting, or teach `yahan.` as *hello, all of us* | P2 |
+| G-H03 | thanks (*thank you*, *thanks for the gift*) | stated as a values claim: `zululon vawaral thonogotham.` "Ululon gave: relatedness met (mental)" ([values#attachment-sites](../grammar/values.md#attachment-sites)); no conventional *Thanks!* turn | awkward | values.md / speech-moves.md | values on `/y/`: need + `th` + **`a`** + ending as an expressive turn (`yonogotham.` *Thanks!*; parser already accepts) | P1 |
+| G-H04 | apology (*sorry*, *I apologize*) | own act detracted from their need: `zugobon vawaral thonogothum.`; emotion compose ([values#emotion-compose](../grammar/values.md#emotion-compose)); no lexicon *regret/sorry*, no conventional turn | awkward | values.md / speech-moves.md | twin of G-H03: `yonogothum.` *Sorry!* (unmet on `/y/`; -r = I'll repair, per changeability) | P1 |
+| G-H05 | softened request (*please…*, *could you…*) | **`yem`**: `yem vawalal.` ([speech-moves#speech-act](../grammar/speech-moves.md#speech-act)); gentle ask **`yom`** | covered | speech-moves.md | — | — |
+| G-H06 | firm request / command / prohibition | **`yel`** / **`yul`**, emphatic `yul yul vazanal.` ([speech-moves#emphatic-prohibition](../grammar/speech-moves.md#emphatic-prohibition)) | covered | speech-moves.md | — | — |
+| G-H07 | offer of a thing (*want some?*, *how about X?*) | single-item open join under question (`…am` / `…om`) ([questions](../grammar/questions.md#yes-no-single-item-standalone)); accept/refuse `yaol` / `yuol` | covered | questions.md | — | — |
+| G-H08 | offer to act (*shall I…?*, *let me help*) | `yom zugobon vawalal.` (soft question, self subject); warrant **`the…m`** *offered* on the act ([values#value-force](../grammar/values.md#value-force)) | covered | speech-moves.md / values.md | — | — |
+| G-H09 | suggestion (*why don't we…*, *let's…*) | inclusive we + soft request/question: `yem zahan vawalal.` / `yom zahan vawalal.`; firm *let's* `yel zahan vawalal.` ([pronouns](../grammar/pronouns.md)) | covered | speech-moves.md | — | — |
+| G-H10 | asking permission (*may I…?*, *is it OK if…*) | `yom zugobon vajul therenel.`; *is it OK with you* = consent `thuxerenel` — [values#permission](../grammar/values.md#permission), [values#consent](../grammar/values.md#consent) | covered | values.md | — | — |
+| G-H11 | granting permission (*you may*, *go ahead*) | `yaol.` in reply to a permission ask; declarative `…therenel.` — [values#permission](../grammar/values.md#permission) | covered | values.md | — | — |
+| G-H12 | promise (*I promise to…*) | plan + locked decision: `zugobon themabal thehegel vawaral bedonen.` ([intention#decision](../grammar/intention.md#decision)); states resolve, not an obligation to the listener | awkward | intention.md | commitment stance from **`abene`** *commitment* (`thabenem`, -l binding / -m open) or a **`yal`**-series act for commissives | P2 |
+| G-H13 | warning (*watch out!*, *careful!*) | interjection `yawarun.` (*Warning!*) / `yulonen.` (*Danger!*) ([speech-moves#interjections](../grammar/speech-moves.md#interjections)); advice with protective warrant `yel zedonen vawalal thuhuhether.` ([values#value-force](../grammar/values.md#value-force)); `yul yul` for danger | covered | speech-moves.md | — | — |
+| G-H14 | backchannel *uh-huh* / *right* / *got it* | polar stance `yaem.` / `yael.` (*yeah / got it*) ([questions#polar-stance](../grammar/questions.md#polar-stance)) | covered | questions.md | — | — |
+| G-H15 | backchannel *oh* (news receipt, change of state) | `yuruzen.` is *Surprise!*, too strong; `yael.` loses "news to me" | missing | speech-moves.md / questions.md | teach a receipt polar (e.g. soft `yaem` vs a new-info particle); or a conventional interjection `y…n` for *I see* | P1 |
+| G-H16 | backchannel *hmm* / *I'm listening* (continuer) | none; bare `yom.` parses (*…?*) but undefined as continuer | missing | speech-moves.md | define bare act words (`yam.` / `yom.`) as continuers: *go on* / *hmm?* | P2 |
 | G-H17 | hedge on a class / adjective (*kind of a dog*, *sort of big*) | `/w/` hedge: `zazawan wagadum godogol.` ([predication](../grammar/predication.md)); **-m** on joins/numbers for *about* | covered | predication.md / clause.md | — | — |
 | G-H18 | hedge on a verb (*kind of walked*) | `zazawan vawalal hagadum.` parses but only `/w/` hedge is taught | awkward | clause.md | teach `/h/` **`agadu`** (-m) as verb-degree hedge alongside `/w/` | P2 |
-| G-H19 | hedge on the whole claim (*I guess*, *I think*, *sort of*) | soft statement `jam …`; MAY `thodohom zazawan vawalal.` ([knowing#may](../grammar/knowing.md#may)); soft polar `jaem`; tone `?` | covered | speech-moves.md / knowing.md | — | — |
+| G-H19 | hedge on the whole claim (*I guess*, *I think*, *sort of*) | soft statement `yam …`; MAY `thodohom zazawan vawalal.` ([knowing#may](../grammar/knowing.md#may)); soft polar `yaem`; tone `?` | covered | speech-moves.md / knowing.md | — | — |
 | G-H20 | *anyway* (return from digression / dismiss prior) | none; `xezebal` *however* is contrast, not topic return | missing | hooks.md#discourse-hooks | discourse hook **-r** (`ar …` = resume the main line; parser rejects `ur` today) — resume reading fits **-r** | P1 |
 | G-H21 | *actually* (correcting expectation) | `ol …` | covered | hooks.md#discourse-hooks | — | — |
 | G-H22 | *by the way* (aside) | aside span `thexal … xuxul` ([spans](../grammar/spans.md)) is a nested aside, not a new topic turn | awkward | spans.md / hooks.md | teach aside open at sentence start as *by the way* (or `am …` *additionally, and maybe more*) | P2 |
-| G-H23 | *well* (hesitation / dispreferred reply opener) | none; soft `jam` / `jaom` approximates | missing | speech-moves.md | define a filler: soft polar `jaom` as *well…* opener, or a spoken hesitation word | P2 |
+| G-H23 | *well* (hesitation / dispreferred reply opener) | none; soft `yam` / `yaom` approximates | missing | speech-moves.md | define a filler: soft polar `yaom` as *well…* opener, or a spoken hesitation word | P2 |
 | G-H24 | *so* (consequence) | `xezazam` *therefore* ([dependents#sentence-linkers](../grammar/dependents.md#sentence-linkers)) | covered | dependents.md | — | — |
 | G-H25 | *so* (topic launch / *so, what happened?*) | none; `xuvumul` *next* partial | awkward | dependents.md / hooks.md | pair with G-H20 (`ar` resume) or note `xuvumul` as *so, next* | P3 |
 | G-H26 | *besides* / *moreover* | discourse hook `al …` *additionally* ([hooks#discourse-hooks](../grammar/hooks.md#discourse-hooks)) | covered | hooks.md | — | — |
@@ -409,11 +409,11 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 
 **Notes**
 
-- Parser is permissive beyond the docs: `jonogotham.`, `jonogothum.` (values on `/j/`), `zugobon thabenem …` (non-stance root on `/th/`), `zedonen vawalal gerenem`, `hagadum`, and bare `jom.` all parse though none is taught. Verdicts treat them as untaught.
+- Parser is permissive beyond the docs: `yonogotham.`, `yonogothum.` (values on `/y/`), `zugobon thabenem …` (non-stance root on `/th/`), `zedonen vawalal gerenem`, `hagadum`, and bare `yom.` all parse though none is taught. Verdicts treat them as untaught.
 - `th( zululon vawalal ).` fails (spaces inside the fence); `thexal … xuxul` works.
 - Discourse hooks accept only `a/e/o/u` + **-l/-m** (`ur …` fails); the **-r** column is unused and has an intuitive *resume* reading (G-H20).
-- The speech-act system is rich for directives (`jel/jem/jul/jum`) but has no expressive (thanks/sorry) or commissive (promise) act; values-on-`/j/` would fill both from existing morphology.
-- Interjection `/j/` + **-n** is productive per speech-moves, so `jawarun` / `julonen` count as covered, but no conventional interjections other than `juruzen` are listed.
+- The speech-act system is rich for directives (`yel/yem/yul/yum`) but has no expressive (thanks/sorry) or commissive (promise) act; values-on-`/y/` would fill both from existing morphology.
+- Interjection `/y/` + **-n** is productive per speech-moves, so `yawarun` / `yulonen` count as covered, but no conventional interjections other than `yuruzen` are listed.
 
 ### I. Deixis and reference
 

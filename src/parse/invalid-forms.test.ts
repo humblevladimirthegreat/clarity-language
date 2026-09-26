@@ -27,7 +27,7 @@ type Row = { invalid: string; rejection: RejectionId | undefined; valid: string 
 
 const ROWS: Row[] = [
   { invalid: "zazawan vawalal?", rejection: "sentenceEndMark", valid: "zazawan vawalal." },
-  { invalid: "jel vuzunel!", rejection: "sentenceEndMark", valid: "jel vuzunel." },
+  { invalid: "yel vuzunel!", rejection: "sentenceEndMark", valid: "yel vuzunel." },
   { invalid: "zazawan !?vawalal.", rejection: "toneStack", valid: "zazawan ?!vawalal." },
   { invalid: "zazawan ??vawalal.", rejection: "toneStack", valid: "zazawan !!vawalal." },
   { invalid: "! ! zazawan vawalal.", rejection: "toneStack", valid: "! zazawan vawalal." },
@@ -42,7 +42,7 @@ const ROWS: Row[] = [
   { invalid: "zazawan xezebal vawalal.", rejection: "linkerMidSentence", valid: "xezebal zazawan vawalal." },
   { invalid: "zazawan wawalalx vawalal.", rejection: "pluralOnPos", valid: "zazawanx vawalal." },
   { invalid: "zazawan vawalal hogomolx.", rejection: "pluralOnPos", valid: "zazawan vawalal hogomol." },
-  { invalid: "jonogotham zazawan vawalal.", rejection: "valueSlot", valid: "zawaral gonogothal." },
+  { invalid: "yonogotham zazawan vawalal.", rejection: "valueSlot", valid: "zawaral gonogothal." },
   { invalid: "zawaral gabenethal.", rejection: "valueRoot", valid: "zawaral gonogothal." },
   { invalid: "zual gagadalx.", rejection: "pluralKindAfterUniversal", valid: "zual gagadal." },
   { invalid: "zazawan zel h+2 vawalal.", rejection: "rankJoinNumberManner", valid: "zazawan zululon zel h+ vawalal." },
@@ -72,7 +72,7 @@ const ROWS: Row[] = [
     rejection: "poleStack",
     valid: "zazawan vawalal hezebam thadorom barl zululon velebel.",
   },
-  { invalid: "jol jael zazawan vawalal.", rejection: undefined, valid: "jol jael." },
+  { invalid: "yol yael zazawan vawalal.", rejection: undefined, valid: "yol yael." },
   {
     invalid: "zazawan vawalal thurugum hezebam barl zululon velebel.",
     rejection: "poleStack",
@@ -93,7 +93,7 @@ const ROWS: Row[] = [
     valid: "zululon thonenom helerem b_#22,7 vebarul.",
   },
   // Grammar-level: a second turn starts only after a period.
-  { invalid: "jol jol vazanal.", rejection: undefined, valid: "jol. jol vazanal." },
+  { invalid: "yol yol vazanal.", rejection: undefined, valid: "yol. yol vazanal." },
 ];
 
 describe("invalid forms", () => {

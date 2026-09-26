@@ -204,9 +204,9 @@ z-Ululon-x | d-Azawan | v-punch
 **8.** *Do Azawan and associates scream?*
 
 ::: details Show answer
-`jol zazawanx vazagal.`
+`yol zazawanx vazagal.`
 
-j-question | z-Azawan-x | v-scream
+y-question | z-Azawan-x | v-scream
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
@@ -274,11 +274,11 @@ z-Ululon-x | d-Uhubun | v-punch
 *Ululon and associates punch Uhubun.*
 :::
 
-**8.** `jol zuhubunx vazagal.`
+**8.** `yol zuhubunx vazagal.`
 
 ::: details Show answer
 
-j-question | z-Uhubun-x | v-scream
+y-question | z-Uhubun-x | v-scream
 
 *Do Uhubun and associates scream?*
 :::
@@ -375,13 +375,13 @@ For *red books*, put **-x** on the **noun**; keep color and trait singular on `/
 
 **Compare with:** a scale or continuum in [comparatives](comparatives.md) and [ranges](numbers-applied.md#ranges) is one line, so that adjective is singular.
 
-### Vocatives (`/j/`)
+### Vocatives (`/y/`)
 
-To call a group at the start of a turn, put **-x** on the vocative (`/j/`) after its ending, the same way you mark associates on a noun. That names who you are talking to as an associative group.
+To call a group at the start of a turn, put **-x** on the vocative (`/y/`) after its ending, the same way you mark associates on a noun. That names who you are talking to as an associative group.
 
-> `jagadalx.`
+> `yagadalx.`
 >
-> j-cat-x
+> y-cat-x
 >
 > "Hey, cats!"
 
@@ -390,7 +390,7 @@ To call a group at the start of a turn, put **-x** on the vocative (`/j/`) after
 | **-lx** | kind-based group address | *hey, kids* |
 | **-nx** | titled group | *Team Alpha* |
 | **-rx** | prior addressee and associates | *hey, you (that one) and associates* |
-| **`jedonenx`** | current addressees, no name | *hey, you all* |
+| **`yedonenx`** | current addressees, no name | *hey, you all* |
 
 **For *everyone*, use:** [universals](joins.md#universals-domains-generics) (`…ual`).
 
@@ -401,7 +401,7 @@ Beginner already used **-x** on nouns and person-role specials. The rest of the 
 | Host | Use | English |
 |------|-----|---------|
 | nouns `/z/` `/d/` `/b/` | associative group (name / resume); indefinite group (kind **-lx** / **-mx**) | *Azawan and associates*; *some dogs* |
-| vocatives `/j/` | group address | *hey, cats*; *Team Alpha* |
+| vocatives `/y/` | group address | *hey, cats*; *Team Alpha* |
 | person-role specials | speaker’s people / address set | *I and my people*; *you all* |
 | `/v/`…**-x** | collective event | one shared act |
 | `/ɡ/`…**-x** | collective property | the set as one pile |
@@ -441,9 +441,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Hey, you all!*
 
 ::: details Show answer
-`jedonenx.`
+`yedonenx.`
 
-j-listener-x
+y-listener-x
 :::
 
 **2.** *The sheets of music are blue.* (members, or don’t care)
@@ -504,11 +504,11 @@ z-Ululon-x | d-Azawan | v-punch-x
 
 #### Agalan → English {#intermediate-agalan-to-english}
 
-**1.** `juhubunx.`
+**1.** `yuhubunx.`
 
 ::: details Show answer
 
-j-Uhubun-x
+y-Uhubun-x
 
 *Hey, Uhubun and associates!*
 :::
@@ -558,11 +558,11 @@ z-bell-x | g-blue
 *The bells are blue.*
 :::
 
-**7.** `jazawanx.`
+**7.** `yazawanx.`
 
 ::: details Show answer
 
-j-Azawan-x
+y-Azawan-x
 
 *Hey, Azawan and associates!*
 :::

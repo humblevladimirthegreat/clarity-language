@@ -49,12 +49,12 @@ describe("numberStemToSpeech", () => {
     assert.equal(numberWordToSpeech(parseWord("g+e")), "grabal");
   });
 
-  it("expands g+0e-1 to grabuwojazol", () => {
-    assert.equal(numberWordToSpeech(parseWord("g+0e-1")), "grabuwojazol");
+  it("expands g+0e-1 to grabuwoyazol", () => {
+    assert.equal(numberWordToSpeech(parseWord("g+0e-1")), "grabuwoyazol");
   });
 
-  it("expands g+27e12 to grabawodujadulel", () => {
-    assert.equal(numberWordToSpeech(parseWord("g+27e12")), "grabawodujadulel");
+  it("expands g+27e12 to grabawoduyadulel", () => {
+    assert.equal(numberWordToSpeech(parseWord("g+27e12")), "grabawoduyadulel");
   });
 
   it("expands bare OoM speech twin grabanal", () => {
@@ -62,7 +62,7 @@ describe("numberStemToSpeech", () => {
   });
 
   it("expands g+5e3,860,4e-2 with tha separators", () => {
-    assert.equal(numberWordToSpeech(parseWord("g+5e3,860,4e-2")), "grabarejavathahaguzothabudujamol");
+    assert.equal(numberWordToSpeech(parseWord("g+5e3,860,4e-2")), "grabareyavathahaguzothabuduyamol");
   });
 
   it("expands digit-string d_555,123,4567", () => {
@@ -77,7 +77,7 @@ describe("numberStemToSpeech", () => {
   });
 
   it("uses thu between groups of a negative scalar", () => {
-    assert.equal(numberWordToSpeech(parseWord("g-1e9,265e3,4")), "grubanajawothubarejaduguvathumol");
+    assert.equal(numberWordToSpeech(parseWord("g-1e9,265e3,4")), "grubanayawothubareyaduguvathumol");
   });
 
   it("expands calendar date h_#22,7 with roe marker", () => {
@@ -117,7 +117,7 @@ describe("numberWordToSpeechStressed", () => {
   }
 
   it("stresses the last exponent digit when a group has an exponent (g+27e12)", () => {
-    assert.deepEqual(stressedLetters("g+27e12"), ["u"]); // ba wo DU ja du le
+    assert.deepEqual(stressedLetters("g+27e12"), ["u"]); // ba wo DU ya du le
   });
 
   it("stresses the last mantissa digit when a group has no exponent (g+139)", () => {

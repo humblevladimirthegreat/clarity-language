@@ -59,7 +59,7 @@ describe("previewSpeech", () => {
   });
 
   it("adds question boundary", () => {
-    const plan = previewSpeech("jol zazawan vawalal?");
+    const plan = previewSpeech("yol zazawan vawalal?");
     assert.ok(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "qmark"));
   });
 
@@ -68,7 +68,7 @@ describe("previewSpeech", () => {
     const tags = boundaryTags(plan);
     assert.ok(tags.includes("period"));
     assert.ok(tags.includes("xContinue"));
-    assert.equal(tags.includes("jTurn"), false);
+    assert.equal(tags.includes("yTurn"), false);
     const xIdx = plan.tokens.findIndex((t) => t.kind === "boundary" && t.tag === "xContinue");
     const linkerIdx = plan.tokens.findIndex((t) => t.kind === "word" && t.raw === "xamalal");
     assert.ok(xIdx >= 0 && linkerIdx > xIdx);
@@ -82,32 +82,32 @@ describe("previewSpeech", () => {
     assert.ok(xIdx >= 0 && joinIdx > xIdx);
   });
 
-  it("adds jTurn before polar second turn", () => {
-    const plan = previewSpeech("zazawan vawalal. jael.");
-    assert.deepEqual(plan.spoken, ["zazawan", "vawalal", "jael"]);
+  it("adds yTurn before polar second turn", () => {
+    const plan = previewSpeech("zazawan vawalal. yael.");
+    assert.deepEqual(plan.spoken, ["zazawan", "vawalal", "yael"]);
     const tags = boundaryTags(plan);
     assert.ok(tags.includes("period"));
-    assert.ok(tags.includes("jTurn"));
-    const jIdx = plan.tokens.findIndex((t) => t.kind === "boundary" && t.tag === "jTurn");
-    const polarIdx = plan.tokens.findIndex((t) => t.kind === "word" && t.raw === "jael");
+    assert.ok(tags.includes("yTurn"));
+    const jIdx = plan.tokens.findIndex((t) => t.kind === "boundary" && t.tag === "yTurn");
+    const polarIdx = plan.tokens.findIndex((t) => t.kind === "word" && t.raw === "yael");
     assert.ok(jIdx >= 0 && polarIdx > jIdx);
   });
 
   it("uses softM for soft force statement", () => {
-    const plan = previewSpeech("jam zazawan vawalal.");
+    const plan = previewSpeech("yam zazawan vawalal.");
     assert.ok(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "softM"));
     assert.equal(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "period"), false);
   });
 
   it("keeps period for firm polar turn", () => {
-    const plan = previewSpeech("jael.");
+    const plan = previewSpeech("yael.");
     assert.ok(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "period"));
     assert.equal(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "softM"), false);
   });
 
-  it("does not add jTurn after period before reviser", () => {
+  it("does not add yTurn after period before reviser", () => {
     const plan = previewSpeech("zazawan vawalal. al zululon vawalal.");
-    assert.equal(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "jTurn"), false);
+    assert.equal(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "yTurn"), false);
   });
 
   it("skips unparsed tokens instead of throwing", () => {
@@ -134,8 +134,8 @@ describe("previewPhonemes", () => {
     assert.equal(plan.inputIds[0], 0);
     assert.equal(plan.inputIds.at(-2), KITTEN_END_MARKER_ID);
     assert.equal(plan.inputIds.at(-1), 0);
-    const juon = previewPhonemes("juon");
-    assert.equal(juon.ipaPhonemes, "juːon");
+    const yuon = previewPhonemes("yuon");
+    assert.equal(yuon.ipaPhonemes, "juːon");
   });
 
   it("includes punctuation cue between phoneme spans", () => {

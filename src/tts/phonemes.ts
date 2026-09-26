@@ -18,6 +18,7 @@ const LETTER_IPA: Record<string, string> = {
   g: "ɡ",
   d: "d",
   j: "j",
+  y: "j",
   b: "b",
   z: "z",
   m: "m",
@@ -48,7 +49,7 @@ export type PhonemeWord = {
   ipa: string;
 };
 
-const NATIVE_WORD = /^(?:th|[aegouhwdjbzmnvlrx])+$/;
+const NATIVE_WORD = /^(?:th|[aegouhwdjybzmnvlrx])+$/;
 
 export function isNativeSurface(raw: string): boolean {
   return NATIVE_WORD.test(raw);

@@ -15,7 +15,7 @@ import { morphGlossFor, morphGlossLine, morphGlossWords, normalizeMorphLine, sho
 import type { MorphGlossContext } from "./morph-gloss.js";
 import { parseWords } from "./word.js";
 
-const POS = ["z", "d", "b", "v", "g", "w", "h", "th", "x", "j"] as const;
+const POS = ["z", "d", "b", "v", "g", "w", "h", "th", "x", "y"] as const;
 const ENDINGS = ["l", "m", "n"] as const;
 const SERIES = ["a", "o", "e", "u", "ae", "ao", "oe", "eo", "ue", "ua", "uo"];
 const JOIN_ENDINGS = ["l", "m", "n", "r", "rl", "rm", "rn"];
@@ -77,7 +77,7 @@ export function buildGlossIndex(tables: ClassifyTables, extraLines: string[] = [
         const gloss = glossOne(surface, tables, {});
         if (!gloss) continue;
         add(index.forms, gloss, surface);
-        const body = gloss.replace(/^(?:th|gl|[zdbvgwhxj])-/, "");
+        const body = gloss.replace(/^(?:th|gl|[zdbvgwhxy])-/, "");
         add(index.roots, body, root);
       }
     }
@@ -133,7 +133,7 @@ type Node =
   | { t: "tone"; tone: string };
 
 const LABEL_RE =
-  /^((?:th|gl|[zdbvgwhxj])-)?((?:NAME\.)?(?:CITE|MENTION|ASIDE|OPAQUE|SCOPE|NAME)(?:\.[a-z]+)*)\[/;
+  /^((?:th|gl|[zdbvgwhxy])-)?((?:NAME\.)?(?:CITE|MENTION|ASIDE|OPAQUE|SCOPE|NAME)(?:\.[a-z]+)*)\[/;
 
 class GlossReader {
   pos = 0;
@@ -224,7 +224,7 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
   if (named) for (const form of index.forms.get(`${core}.named`) ?? []) out.add(form + suffix);
   for (const form of index.forms.get(core) ?? []) out.add(form + suffix);
 
-  const spanResume = core.match(/^((?:th|gl|[zdbvgwhxj])-)?←(cite|aside|mention|opaque)(\.spoken)?$/);
+  const spanResume = core.match(/^((?:th|gl|[zdbvgwhxy])-)?←(cite|aside|mention|opaque)(\.spoken)?$/);
   if (spanResume) {
     const pos = (spanResume[1] ?? "").replace(/-$/, "");
     const type = spanResume[2]!.toUpperCase();
@@ -236,7 +236,7 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
     return [...out];
   }
 
-  const resume = core.match(/^((?:th|gl|[zdbvgwhxj])-)?←(.*)$/);
+  const resume = core.match(/^((?:th|gl|[zdbvgwhxy])-)?←(.*)$/);
   if (resume) {
     const pos = (resume[1] ?? "").replace(/-$/, "");
     let body = resume[2]!;
@@ -252,7 +252,7 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
     }
   }
 
-  const named_ = core.match(/^((?:th|gl|[zdbvgwhxj])-)?([A-Z].*)$/);
+  const named_ = core.match(/^((?:th|gl|[zdbvgwhxy])-)?([A-Z].*)$/);
   if (named_) {
     const root = nameRoot(named_[2]!);
     if (root) out.add(`${(named_[1] ?? "").replace(/-$/, "")}${root}n${suffix}`);

@@ -29,9 +29,9 @@ const TRAILING_SENTENCE = new Set([".", "?", "!", ",", ":", ";", '"', "'"]);
 const LEADING_QUOTE = new Set(['"', "'"]);
 
 /** Letters, digits, and morph glyphs that can appear in a spelled Agalan word. */
-const WORD_CHAR_RE = /^[aeouhtwdjbgzmnvlrx0-9+\-#_.,=@~%±[\]{}()]+$/;
+const WORD_CHAR_RE = /^[aeouhtwdjybgzmnvlrx0-9+\-#_.,=@~%±[\]{}()]+$/;
 
-const TEACHING_GLOSS_RE = /^(?:th|[zdbvgwhxj])-(?:[a-z@]+$|[<[{(])/;
+const TEACHING_GLOSS_RE = /^(?:th|[zdbvgwhxyj])-(?:[a-z@]+$|[<[{(])/;
 
 /** Mid-word x family fragments (`x`, `xa`, `ax`), not full words. */
 const X_FRAGMENT_RE = /^[aeou]?x[aeou]?$/;
@@ -43,7 +43,7 @@ const ENGLISH_IN_CODE = new Set([
   "vowel",
 ]);
 
-const POS = "zdbvgwhxj";
+const POS = "zdbvgwhxyj";
 
 const BRACKET_PAIRS = [
   ["(", ")"],
@@ -121,9 +121,9 @@ function prefixedBareRoot(core: string): string | null {
  */
 function looksLikeFullSpelledWord(core: string): boolean {
   if (unmatchedBrackets(core)) return false;
-  if (/^(?:th|[zdbvgwhxj])[+#_]$/.test(core)) return false;
+  if (/^(?:th|[zdbvgwhxyj])[+#_]$/.test(core)) return false;
   if (hasMorphGlyph(core)) return true;
-  if (/^(?:th|[zdbvgwhxj])[aeou](?:[hwdjbgzmnvlr][aeou])+[lmnr]x?$/.test(core)) return true;
+  if (/^(?:th|[zdbvgwhxyj])[aeou](?:[hwdjbgzmnvlr][aeou])+[lmnr]x?$/.test(core)) return true;
   if (/^[aeou](?:[hwdjbgzmnvlr][aeou])+[lmnr]x?$/.test(core)) return true;
   return false;
 }
@@ -142,7 +142,7 @@ export function isAgalanLintCandidate(core: string): boolean {
   const stripped = withoutForeignPayloads(core);
   if (/[A-Z]/.test(stripped)) return false;
   if (!WORD_CHAR_RE.test(stripped)) return false;
-  if (!/^(?:th|[zdbvgwhxjaeou])/.test(core)) return false;
+  if (!/^(?:th|[zdbvgwhxyjaeou])/.test(core)) return false;
   return true;
 }
 
@@ -330,7 +330,7 @@ function spanWords(text: string): string[] {
 
 /** Class of one span (or one line of an `agalan` fence), before parsing. */
 /** A spoken opaque span (`duxal … xuxul`): its interior is foreign, not Agalan words. */
-const SPOKEN_OPAQUE_RE = /(\b(?:th|[zdbvgwhxj])ux[ae][lmn]\s)[\s\S]*?(\sxuxu[lmr]\b)/g;
+const SPOKEN_OPAQUE_RE = /(\b(?:th|[zdbvgwhxyj])ux[ae][lmn]\s)[\s\S]*?(\sxuxu[lmr]\b)/g;
 
 export function classifyAgalanSpan(text: string): AgalanSpanClass | "unclassified" {
   const trimmed = text.trim().replace(SPOKEN_OPAQUE_RE, "$1$2");

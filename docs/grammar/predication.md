@@ -237,11 +237,11 @@ z-guard | v-run
 *A guard runs.*
 :::
 
-**7.** `jol zululon gonunul buhubun.`
+**7.** `yol zululon gonunul buhubun.`
 
 ::: details Show answer
 
-j-question | z-Ululon | [g-SAME | b-Uhubun]
+y-question | z-Ululon | [g-SAME | b-Uhubun]
 
 *Is Ululon Uhubun?*
 :::

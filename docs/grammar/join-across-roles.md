@@ -67,7 +67,7 @@ A clause join with no clause before it is the standalone reading, like `zal` *no
 >
 > "Nothing happened, as far as I know."
 
-`/x/` keeps the **same speech act**. Later clauses inherit the opener and omit `/j/` (including recoverable **`jal`**).
+`/x/` keeps the **same speech act**. Later clauses inherit the opener and omit `/y/` (including recoverable **`yal`**).
 
 > `zazawan vawalal zululon vurunul xan.`
 >
@@ -128,9 +128,9 @@ In the table, *reason* means any grounds a stance word can give: a cause, a sour
 
 Under a question, a standalone **-r** stance join is a [fill-ask](questions.md#fill-ask-r) for the grounds. Every vowel takes **-r** there.
 
-> `jol zazawan vawalal thar.`
+> `yol zazawan vawalal thar.`
 >
-> j-question | z-Azawan | v-walk | th-why
+> y-question | z-Azawan | v-walk | th-why
 >
 > "Why does Azawan walk?"
 

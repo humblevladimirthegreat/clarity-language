@@ -54,7 +54,7 @@ function numberFeatures(stem: NumberStem): string[] {
   return ids;
 }
 
-const NUMBER_POS = new Set(["v", "h", "th", "j", "x"]);
+const NUMBER_POS = new Set(["v", "h", "th", "y", "x"]);
 
 /** Per-form features of a family whose forms are taught in different sections. */
 function featureConstructions(word: LexWord): string[] {
@@ -98,7 +98,7 @@ function featureConstructions(word: LexWord): string[] {
     const { series } = family;
     if (word.reading === "standIn") return [`standIn.${series}`];
     if (word.reading === "restrictor") return [`restrictor.${RESTRICTOR_GROUP[series as keyof typeof RESTRICTOR_GROUP]}`];
-    if (word.pos === "j") {
+    if (word.pos === "y") {
       if (series.length > 1) return [`polar.${POLAR_GROUP[series as keyof typeof POLAR_GROUP]}`];
       return word.ending === "m" ? [`force.${series}`, "force.soft"] : [`force.${series}`];
     }
@@ -182,8 +182,8 @@ function isExistence(clause: Clause): boolean {
 /** Collect `reading.*` IDs from utterance and clause shapes. */
 export function addReadingConstructions(result: ParseResult, out: Set<string>): void {
   for (const utterance of result.utterances) {
-    const force = utterance.left.force?.raw;
-    if (utterance.bodies.length === 0 && (force === "jol" || force === "jom")) out.add("reading.bareQuestion");
+    const force = utterance.left.force?.raw.replace(/^j/, "y");
+    if (utterance.bodies.length === 0 && (force === "yol" || force === "yom")) out.add("reading.bareQuestion");
     for (const body of utterance.bodies) {
       if (isGreeting(body.clause)) out.add("reading.greeting");
       else if (isExistence(body.clause)) out.add("reading.existence");

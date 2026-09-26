@@ -55,7 +55,7 @@ Agalan text
     ▼
 ┌──────────────────────────────────────┐
 │  Chevrotain — SentenceParser         │
-│  /j/ turns, /x/ continue             │
+│  /y/ turns, /x/ continue             │
 │  right-close joins, span stacks      │
 │  ^ islands, stand-in dependents           │
 └──────────────────────────────────────┘
@@ -82,7 +82,7 @@ Owns every **string-shaped** subsystem:
 - PoS prefix, left-bound **`gl-`**, reference ending, optional **-x**
 - Foreign `PoS<…>ENDING` / opaque `PoS<…>` (no phonology inside `<>`)
 - Free number words and writing shorthand ([numbers.md](../grammar/numbers.md))
-- Mid-word **`x`** families: rule alternation order = doc decision order (closes → span open → role → conversation length name+vowel+**-n` (citation or `/j/`) → value/ability → numeric → ordinary compound)
+- Mid-word **`x`** families: rule alternation order = doc decision order (closes → span open → role → conversation length name+vowel+**-n` (citation or `/y/`) → value/ability → numeric → ordinary compound)
 - Span open/close **word shapes**; writing bracket atoms (`d@[…]`, …)
 - Prefix-less [hooks](../grammar/hooks.md)
 
@@ -94,7 +94,7 @@ Semantic actions build a discriminated `MorphWord` only. **No lexicon calls insi
 
 1. Overlay hit on `(sense_form, pos)` → closed special vocabulary reading
 2. Else already-classified number stem → stay number
-3. Else value/ability vs [conversation length](../grammar/x-compounds.md#conversation-length) (named citation or `/j/` + **-n**) vs published root vs [hook compound](../grammar/hooks.md#hook-compounds) (citation + extra-noun hook) vs lexical-compound stem
+3. Else value/ability vs [conversation length](../grammar/x-compounds.md#conversation-length) (named citation or `/y/` + **-n**) vs published root vs [hook compound](../grammar/hooks.md#hook-compounds) (citation + extra-noun hook) vs lexical-compound stem
 4. Else unknown / foreign payload
 
 This is where join-act vs soft clause **-n**, mood vs manner, value vs ability, etc. become **readings** without re-parsing spelling.
@@ -148,7 +148,7 @@ Adapter: [`src/parse/tokens.ts`](../../src/parse/tokens.ts) / [`src/parse/tokeni
 
 Owns:
 
-- Utterance framing ([speech-moves.md](../grammar/speech-moves.md) — `/j/` turns, omissible default assertoric; [dependents.md](../grammar/dependents.md) — `/x/` continue)
+- Utterance framing ([speech-moves.md](../grammar/speech-moves.md) — `/y/` turns, omissible default assertoric; [dependents.md](../grammar/dependents.md) — `/x/` continue)
 - Right-close joins at phrase / VP / clause level (illegal left fence)
 - Span open…close nesting; adjunct islands **`^ … ^`**
 - Complex `/ɡ|h/` + `/b/`; `/w/` + `/b/` only for *as-of* overlays; floating `/h/` as adjuncts
@@ -166,7 +166,7 @@ Recovery is off. Illegal left fences and binderless islands throw `SentenceParse
 | Span **-r** / `d[=]` | Most recent span open of that TYPE ([spans.md](../grammar/spans.md)) |
 | Number **-r** / `g=+` | Most recent number with the same marker identity ([numbers.md](../grammar/numbers.md#number-endings)) |
 | Role **-r** | This instance of the matching event’s role (doer / place / undergoer / extra `/b/` party); most recent verb / event noun / relation / role compound with that ROOT. Non-resume is the lexical kind (*teacher* vs *the one teaching*) ([roles.md](../grammar/roles.md)) |
-| Join **-r** under `jol` / `jom` | Fill-ask gaps in spoken order; none → yes/no ([questions.md](../grammar/questions.md)) |
+| Join **-r** under `yol` / `yom` | Fill-ask gaps in spoken order; none → yes/no ([questions.md](../grammar/questions.md)) |
 | SHARED `/ɡ/` or `/h/` after a join | `scale` / `equative` / `distribute` / `collective` / `continuum` / `kind` / `ordinary` from join series + conjunct kinds (`/h/` is manner scale under rank / `ae`) |
 
 Skipped as anaphors: join **-r** (ask / unspecified-member), restrictors, values / ability ending channels. Dangling resumes are recorded with no `antecedent` — they do not fail the parse.
@@ -255,7 +255,7 @@ A production **parse** bundle is **not wired yet** (`build:lexicon-web` only bun
 
 | Topic | Doc |
 |-------|------|
-| Clause grammar / `/j/` framing | [clause.md](../grammar/clause.md) |
+| Clause grammar / `/y/` framing | [clause.md](../grammar/clause.md) |
 | Dependents / `/x/` continue / stand-ins | [dependents.md](../grammar/dependents.md) |
 | Hosted relations | [relations.md](../grammar/relations.md) |
 | Mid-word **`x`** families | [x-compounds.md](../grammar/x-compounds.md) |

@@ -153,7 +153,7 @@ export const TOKEN_CONSTRUCTIONS: Record<TokenBranch, ConstructionEntry> = {
   greeting: { anchor: "x-compounds.md#conversation-length", summary: "conversation-length bid (citation + x + vowel + -n)" },
   polar: { anchor: "questions.md#polar-stance", summary: "polar stance particle" },
   force: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "speech-act word" },
-  jFallbackVocative: { anchor: "speech-moves.md#vocative", summary: "any other /j/ word read as a vocative" },
+  yFallbackVocative: { anchor: "speech-moves.md#vocative", summary: "any other /y/ word read as a vocative" },
   linker: { anchor: "dependents.md#continue-x", summary: "/x/ content word as a sentence linker" },
   content: { anchor: "phonology.md#word-edges", summary: "content word in its role slot" },
   citationFallback: { anchor: "phonology.md#word-edges", summary: "prefix-less citation read as a noun" },
@@ -223,7 +223,7 @@ export const WORD_PLURAL_CONSTRUCTIONS: Record<Exclude<Pos, "w" | "h" | "th" | "
   z: { anchor: "plurality.md#associative", summary: "-x on /z/" },
   d: { anchor: "plurality.md#associative", summary: "-x on /d/" },
   b: { anchor: "plurality.md#associative", summary: "-x on /b/" },
-  j: { anchor: "plurality.md#vocatives-j", summary: "-x on a vocative" },
+  y: { anchor: "plurality.md#vocatives-y", summary: "-x on a vocative" },
   v: { anchor: "plurality.md#verbs-v", summary: "collective -x on /v/" },
   g: { anchor: "plurality.md#adjectives-g", summary: "collective -x on /ɡ/" },
 };
@@ -295,7 +295,7 @@ export const NUMBER_FEATURE_CONSTRUCTIONS = {
   "pos.v": { anchor: "numbers.md#number-as-verb-by-marker", summary: "number as verb" },
   "pos.h": { anchor: "numbers.md#number-as-adverb-by-marker", summary: "number as adverb" },
   "pos.th": { anchor: "numbers.md#number-as-stance-by-marker", summary: "number as stance" },
-  "pos.j": { anchor: "numbers.md#number-as-interjection-by-marker", summary: "number as interjection" },
+  "pos.y": { anchor: "numbers.md#number-as-interjection-by-marker", summary: "number as interjection" },
   "pos.x": { anchor: "numbers.md#number-as-discourse-marker-by-marker", summary: "number as discourse marker" },
 } satisfies Record<string, ConstructionEntry>;
 

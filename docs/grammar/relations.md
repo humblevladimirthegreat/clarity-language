@@ -279,7 +279,7 @@ Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hobonem` / `gobonem`** | constitutive piece | *part of* | `obonel` *bone* | 🦴: the piece that holds the body’s shape |
-| **`hajaram` / `gajaram`** | filling of a vessel | *contents of* | `ajaral` *jar* | 🫙: the vessel named by what it stores |
+| **`hajaram` / `gajaram`** | filling of a vessel | *contents of* | `ajaral` *yar* | 🫙: the vessel named by what it stores |
 | **`howodom` / `gowodom`** | constitution | *made of* | `owodol` *wood* | 🪵: the stuff the thing is made of |
 | **`hugunom` / `gugunom`** | identity source / provenance | *from* (origin) | `ugunol` *country* | 🗾: a map of one country as where it comes from |
 

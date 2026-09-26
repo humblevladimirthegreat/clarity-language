@@ -25,7 +25,7 @@ const NAMED_FILLERS: Record<string, string[]> = {
   JOIN: ["zal", "zol", "zel"],
 };
 const LEADING_FILLERS = [
-  "z", "d", "v", "g", "b", "h", "w", "x", "j", "th",
+  "z", "d", "v", "g", "b", "h", "w", "x", "y", "th",
   "zazawa", "vawala", "gazawa", "gonogo", "golozo", "thonogo", "walodo",
   "g+", "g+2", "g~+", "g#", "grawozozo",
 ];
@@ -109,7 +109,7 @@ function traceDerivationShape(num: string, tables: ClassifyTables): string[] | n
 
 /**
  * Retries when the template as written leaves out something every real use supplies:
- * the role letter before a bare fence (`[…]`, `{…}`), or the word ending (`…jo`).
+ * the role letter before a bare fence (`[…]`, `{…}`), or the word ending (`…yo`).
  */
 function variants(template: string): string[] {
   const out: string[] = [];

@@ -29,26 +29,26 @@ describe("sentence-parser synthetic", () => {
     assert.equal(result.utterances[0]!.bodies[0]!.clause.units.length, 2);
   });
 
-  it("parses polar-only turn jael.", () => {
-    const result = parseSentenceTokens(tokens("jael."));
-    assert.equal(result.utterances[0]!.left.polars[0]?.raw, "jael");
+  it("parses polar-only turn yael.", () => {
+    const result = parseSentenceTokens(tokens("yael."));
+    assert.equal(result.utterances[0]!.left.polars[0]?.raw, "yael");
     assert.equal(result.utterances[0]!.bodies.length, 0);
   });
 
-  it("parses emphatic jul jul as one prohibition", () => {
-    const result = parseSentenceTokens(tokens("jul jul vazanal."));
+  it("parses emphatic yul yul as one prohibition", () => {
+    const result = parseSentenceTokens(tokens("yul yul vazanal."));
     assert.equal(result.utterances.length, 1);
-    assert.equal(result.utterances[0]!.left.forceEcho?.raw, "jul");
-    assert.equal(result.utterances[0]!.left.force?.raw, "jul");
+    assert.equal(result.utterances[0]!.left.forceEcho?.raw, "yul");
+    assert.equal(result.utterances[0]!.left.force?.raw, "yul");
     assert.equal(result.utterances[0]!.bodies.length, 1);
   });
 
   it("does not fold other repeated act words", () => {
-    // A second turn starts only after a period; `jol` is not an echo like `jul jul`.
-    const result = parseSentenceTokens(tokens("jol. jol vazanal."));
+    // A second turn starts only after a period; `yol` is not an echo like `yul yul`.
+    const result = parseSentenceTokens(tokens("yol. yol vazanal."));
     assert.equal(result.utterances.length, 2);
     assert.equal(result.utterances[0]!.left.forceEcho, undefined);
-    assert.throws(() => parseSentenceTokens(tokens("jol jol vazanal.")));
+    assert.throws(() => parseSentenceTokens(tokens("yol yol vazanal.")));
   });
 
   it("keeps a stance join fence after /th/ words", () => {
@@ -58,7 +58,7 @@ describe("sentence-parser synthetic", () => {
   });
 
   it("parses a standalone stance join with no /th/ words before it", () => {
-    const units = parseSentenceTokens(tokens("jol zazawan vawalal thar.")).utterances[0]!.bodies[0]!.clause.units;
+    const units = parseSentenceTokens(tokens("yol zazawan vawalal thar.")).utterances[0]!.bodies[0]!.clause.units;
     const raws = units.flatMap((u) => (u.kind === "h" ? [u.unit.word.raw] : []));
     assert.deepEqual(raws, ["thar"]);
   });
