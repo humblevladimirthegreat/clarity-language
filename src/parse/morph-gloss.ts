@@ -69,6 +69,7 @@ const HOUSE_CAST_SHORT: Record<string, string> = {
 
 /** Number writing mark → form suffix (glosses.md § Round trip). */
 const NUMBER_MARK_SUFFIX: Record<string, string> = { "~": ".about", "@": ".named", "=": ".again" };
+const SPELLED_ENDING_MARK: Record<string, string> = { m: "~", n: "@", r: "=" };
 
 /** Digitless number **-r** by marker: fill-ask blank under question, else *some number* ([numbers § Digitless](../../docs/grammar/numbers.md#digitless)). */
 const NUMBER_BLANK: Record<string, { ask: string; some: string }> = {
@@ -80,7 +81,9 @@ const NUMBER_BLANK: Record<string, { ask: string; some: string }> = {
 };
 
 function numberMarkSuffix(word: LexWord, ctx: MorphGlossContext): string {
-  return NUMBER_MARK_SUFFIX[word.family.kind === "number" ? (word.family.writingEndingMark ?? "") : ""] ?? "";
+  if (word.family.kind !== "number") return "";
+  // Spelled words carry the ending letter instead of a second-slot mark (`gram` = `g~+`).
+  return NUMBER_MARK_SUFFIX[word.family.writingEndingMark ?? SPELLED_ENDING_MARK[word.ending ?? ""] ?? ""] ?? "";
 }
 
 const VOWEL_RE = /[aeiou]/;
@@ -1049,9 +1052,7 @@ function sensePieces(
         if (blank) return [ctx.fillAsk ? blank.ask : blank.some];
       }
       return [
-        `${numberLabel(family.stem, word.pos)}${numberMarkSuffix(word, ctx)}` +
-          // Spelled-out number word (`grarel`) vs digit shorthand (`g+3`).
-          (/^(?:th|[zdbvgwhxyj])?[a-z]+$/.test(word.raw) ? ".spelled" : ""),
+        `${numberLabel(family.stem, word.pos)}${numberMarkSuffix(word, ctx)}${numberSurfaceSuffix(word.raw, family.stem)}`,
       ];
     case "x":
       return xPieces(word, tables);
@@ -1561,4 +1562,17 @@ function titleAgalanName(root: string, withN: boolean): string {
 
 function hyphenEnglish(text: string): string {
   return text.trim().toLowerCase().replace(/\s+/g, "-").replace(/[()]/g, "");
+}
+
+/**
+ * Marks a number word written in its non-preferred surface: digitless words are
+ * preferred spelled (`gral`), digitful ones in shorthand (`g+3`). So `grarel` →
+ * `.spelled` and `g+` → `.short`; the preferred surface is unmarked.
+ */
+function numberSurfaceSuffix(raw: string, stem: NumberStem): string {
+  const spelled = /^(?:th|[zdbvgwhxyj])?[a-z]+$/.test(raw);
+  const hasDigits =
+    stem.groups.some((g) => g.mantissa || g.exponentDigits) || /[0-9]/.test(stem.digitlessExp ?? "");
+  if (spelled) return hasDigits ? ".spelled" : "";
+  return hasDigits ? "" : ".short";
 }

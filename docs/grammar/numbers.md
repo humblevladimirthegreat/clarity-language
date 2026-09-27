@@ -44,25 +44,22 @@ To say **which place** a thing has in a series (*the first*, *the second*, …),
 >
 > "Ululon writes the third book."
 
-### More than one (`g+`)
+### More than one (`gral`) {#more-than-one-g}
 
-You can say the count is **more than one** without naming how many. Keep the count marker and leave the digits off: **`g+`**.
+You can say the count is **more than one** without naming how many. Keep the count marker and leave the digits off: **`gral`**. A number word with no digits is written out in letters; tables write it `g+`.
 
-Naming the group (*cats* as a set) uses [**-x**](plurality.md) on the noun. Saying the amount is a different tool. Both may sit on the same noun (`zagadalx g+`).
+Naming the group (*cats* as a set) uses [**-x**](plurality.md) on the noun. Saying the amount is a different tool. Both may sit on the same noun (`zagadalx gral`).
 
-> `zagadalx g+.`
->
-> 🔊 *zagadalx gral.*
->
+> `zagadalx gral.`
 > z-cat-x | g-more-than-one
 >
 > "Cats — more than one."
 
-**Compare with:** English *some cats* (a set in this situation, no count) uses the noun plus [**-x**](plurality.md). Use **`g+`** when you mean the amount is more than one.
+**Compare with:** English *some cats* (a set in this situation, no count) uses the noun plus [**-x**](plurality.md). Use **`gral`** when you mean the amount is more than one.
 
 ### Saying it aloud {#digits}
 
-On the page, write the short form (`g+3`, `g#2`, `g+`). Spoken, that is still **one word**: the role-letter sound, then a **marker syllable**, then a syllable for each digit, then the ending.
+On the page, a number with digits uses the short form (`g+3`, `g#2`). Spoken, that is still **one word**: the role-letter sound, then a **marker syllable**, then a syllable for each digit, then the ending.
 
 Two marker syllables cover count and rank:
 
@@ -90,7 +87,7 @@ The word ends with exact **-l**, spoken as its own last syllable. Build the spok
 
 ### Translation practice {#beginner-translation-practice}
 
-Short drills for Beginner. Try each item before opening **Show answer**. Count with `g+N`, rank with `g#N`, and use digitless **`g+`** with **-x** on the noun for *more than one*. After the sentence drills, convert shorthand to speech and speech to shorthand.
+Short drills for Beginner. Try each item before opening **Show answer**. Count with `g+N`, rank with `g#N`, and use digitless **`gral`** with **-x** on the noun for *more than one*. After the sentence drills, convert shorthand to speech and speech to shorthand.
 
 **Setting:** a bakery
 
@@ -137,9 +134,7 @@ z-croissant | g-3rd
 **3.** *Cookies — more than one.*
 
 ::: details Show answer
-`zogogelx g+.`
-
-🔊 *zogogelx gral.*
+`zogogelx gral.`
 
 z-cookie-x | g-more-than-one
 :::
@@ -167,9 +162,7 @@ z-Ululon | [d-pie | g-2nd] | v-smell
 **6.** *Uhubun sees more than one doughnut.*
 
 ::: details Show answer
-`zuhubun dodogulx g+ vejel.`
-
-🔊 *zuhubun dodogulx gral vejel.*
+`zuhubun dodogulx gral vejel.`
 
 z-Uhubun | [d-doughnut-x | g-more-than-one] | v-see
 :::
@@ -218,7 +211,7 @@ z-bread | g-2nd
 *The second bread.*
 :::
 
-**3.** `zabagulx g+.`
+**3.** `zabagulx gral.`
 
 ::: details Show answer
 
@@ -240,7 +233,7 @@ z-Uhubun | [d-cookie-x | g-three] | v-see
 *Uhubun sees three cookies.*
 :::
 
-**5.** `zazawan dububelx g+ vejel.`
+**5.** `zazawan dububelx gral vejel.`
 
 ::: details Show answer
 
@@ -262,7 +255,7 @@ z-Ululon | [d-bagel-x | g-two] | v-smell
 *Ululon smells two bagels.*
 :::
 
-**7.** `zululon dabagelx g+ vejel.`
+**7.** `zululon dabagelx gral vejel.`
 
 ::: details Show answer
 
@@ -310,7 +303,7 @@ g-1st
 
 🔊 *gral*
 
-g-more-than-one
+g-more-than-one.short
 :::
 
 **4.** `g+21`
@@ -407,7 +400,7 @@ group = [exponent?] [mantissa digits?]
 4. **Group separator:** each group after the first opens with **`th`** plus **V₁**, the first vowel of the marker ([below](#group-separator)).
 5. **Ending:** `-l` / `-m` / `-n` / `-r`.
 
-Speech is always the full CV form. Writing for free number words prefers shorthand (`g+3`, `g+`).
+Speech is always the full CV form. Writing uses shorthand when the word has digits (`g+3`) and spells it out when it has none (`gral`): [style](#writing-style-numeric-vs-spelled).
 
 **Related form:** naming a group of people or things uses [**-x**](plurality.md) on an ordinary noun.
 
@@ -467,13 +460,13 @@ Beginner already used exact **-l**. The other endings mark *about*, a convention
 | **`@`** after PoS — `g@#2` | **-n** | conventional designation (titles, official labels, *the Second…*) | **-n** names the number |
 | **`=`** after PoS — `g=+3`, `g=#2`, `d=_12` | **-r** | resume of a previously stated number, code, or rank (at least one digit) | **-r** points back |
 
-A resume needs **at least one digit**: `g=+3` = *that three again*; `g=#2` = *that second one again*. Match the marker to the resumed identity. Digitless **-r** (`g=+`) is not a resume: like a standalone join **-r**, it is *some number* in a statement and *which number?* in a question ([digitless](#digitless)). **`=`** stands alone.
+A resume needs **at least one digit**: `g=+3` = *that three again*; `g=#2` = *that second one again*. Match the marker to the resumed identity. Digitless **-r** (`grar`) is not a resume: like a standalone join **-r**, it is *some number* in a statement and *which number?* in a question ([digitless](#digitless)). **`=`** stands alone.
 
 ### Digitless {#digitless}
 <a id="digitless-numbers"></a>
 <a id="bare-marker"></a>
 
-Beginner already used **`g+`** for *more than one*. Any marker may drop every digit group: **role letter + marker + ending** only. The marker still says what kind of number this is. With **-l** / **-m** / **-n**, the amount, rank, or label is **unspecified**. With **-r**, the word is a blank, like a standalone join **-r**: *some number* in a statement, *which number?* in a [fill-ask](questions.md#fill-ask-r).
+Beginner already used **`gral`** for *more than one*. Any marker may drop every digit group: **role letter + marker + ending** only. The marker still says what kind of number this is. With **-l** / **-m** / **-n**, the amount, rank, or label is **unspecified**. With **-r**, the word is a blank, like a standalone join **-r**: *some number* in a statement, *which number?* in a [fill-ask](questions.md#fill-ask-r).
 
 | Agalan | Use | English | Cue |
 |--------|---------|---------|-----|
@@ -484,50 +477,38 @@ Beginner already used **`g+`** for *more than one*. Any marker may drop every di
 
 **Compare with:** noun [**-x**](plurality.md) names a **group of referents**. Digitless **`ra`** names a **count/amount `>1`** without saying N. They may co-occur (`zagadalx g+3`).
 
-On a `/b/` offset right after a channel, digitless **`b+`** is *later* and **`b-`** is *earlier*, with no amount claimed ([forecasts](knowing.md#forecast)).
+On a `/b/` offset right after a channel, digitless **`bral`** is *later* and **`brul`** is *earlier*, with no amount claimed ([forecasts](knowing.md#forecast)).
 
 <a id="a-few"></a>
 
-Open **`g~+`** is a soft count: *a few* / *some*. It says there is more than one without claiming a number. The closed **`g+`** stays *more than one*.
+Open **`gram`** is a soft count: *a few* / *some*. It says there is more than one without claiming a number. The closed **`gral`** stays *more than one*.
 
-> `zagadalx g~+ vajul.`
->
-> 🔊 *zagadalx gram vajul.*
->
+> `zagadalx gram vajul.`
 > [z-cat-x | g-more-than-one.about] | v-sit
 >
 > "A few cats sit."
 
 <a id="mass-some"></a>
 
-A mass noun such as *tea* is not counted, so *more than one* makes no sense for it. On a mass noun, **`g+`** is *some*: an amount that is not zero.
+A mass noun such as *tea* is not counted, so *more than one* makes no sense for it. On a mass noun, **`gral`** is *some*: an amount that is not zero.
 
-> `zadedal g+ vajul.`
->
-> 🔊 *zadedal gral vajul.*
->
+> `zadedal gral vajul.`
 > [z-tea | g-more-than-one] | v-sit
 >
 > "Some tea sits there."
 
 *Many*, *few*, *enough*, and *too much* compare the amount against a baseline, so they are [comparatives](comparatives.md#vague-amounts), not number words.
 
-Phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory**. Digitless number **-r** picks an unspecified **value** the same way: *some amount*, with no claim that it is more than one. Digitless number **-l** (and **-m** / **-n**) introduces an unspecified amount of that marker, and **`g+`** still says *more than one*.
+Phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory**. Digitless number **-r** picks an unspecified **value** the same way: *some amount*, with no claim that it is more than one. Digitless number **-l** (and **-m** / **-n**) introduces an unspecified amount of that marker, and **`gral`** still says *more than one*.
 
-> `zazawan d=+ vejel.`
->
-> 🔊 *zazawan drar vejel.*
->
+> `zazawan drar vejel.`
 > z-Azawan | d-some-amount | v-see
 >
 > "Azawan sees some number of them."
 
 Under question, the same word is the blank: *how many?* ([below](#how-many)).
 
-> `yol zazawan d=+ vejel.`
->
-> 🔊 *yol zazawan drar vejel.*
->
+> `yol zazawan drar vejel.`
 > y-question | z-Azawan | d-how-many | v-see
 >
 > "How many does Azawan see?"
@@ -538,10 +519,7 @@ To repeat a number already given, keep at least one digit: `zululon d+3 vejel. z
 
 To ask for a **number**, write a [number word](numbers.md) with no digits and the **-r** ending (written **`=`** after the job letter). That empty number is the blank, the same way `zar` is the blank for *who?* ([fill-ask](questions.md#fill-ask-r)). The marker says which kind of number you want. (cue: **-r** names this member; the marker vowel says count, place, or code)
 
-> `yol zazawan dagadalx g=+ vejel.`
->
-> 🔊 *yol zazawan dagadalx grar vejel.*
->
+> `yol zazawan dagadalx grar vejel.`
 > y-question | z-Azawan | [d-cat-x | g-how-many] | v-see
 >
 > "How many cats does Azawan see?"
@@ -552,39 +530,30 @@ To ask for a **number**, write a [number word](numbers.md) with no digits and th
 | `g=#` (*grer*) | fill a place in order | *Which place?* (*which floor, which chapter*) | **e** ≈ order |
 | `g=_` (*gror*) | fill a code or label | *What number?* (*phone, room*) | **o** ≈ one |
 
-> `yol zululon vajul ol b=#.`
->
-> 🔊 *yol zululon vajul ol brer.*
->
+> `yol zululon vajul ol brer.`
 > y-question | z-Ululon | v-sit | [at | b-which-place]
 >
 > "Which place does Ululon sit in?"
 
 Answer with the number as a [citation](word-endings.md#citation-forms) or a full sentence.
 
-**Compare with:** outside a question, the same word is *some number* (`zazawan d=+ vejel.` *Azawan sees some number of them*). To repeat a number already given, keep a digit: `d=+3` ([above](#digitless)).
+**Compare with:** outside a question, the same word is *some number* (`zazawan drar vejel.` *Azawan sees some number of them*). To repeat a number already given, keep a digit: `d=+3` ([above](#digitless)).
 
 #### How big? How fast? {#how-big}
 
-To ask **how much** of a quality, put the same blank on `/w/` immediately before the adjective or adverb: **`w=+`**. It is the degree slot that [*barely* / *almost*](#just-short) use.
+To ask **how much** of a quality, put the same blank on `/w/` immediately before the adjective or adverb: **`wrar`**. It is the degree slot that [*barely* / *almost*](#just-short) use.
 
-> `yol zodogol w=+ gelem.`
->
-> 🔊 *yol zodogol wrar gelem.*
->
+> `yol zodogol wrar gelem.`
 > y-question | z-dog | [w-how-many | g-big]
 >
 > "How big is the dog?"
 
-> `yol zodogol vurunul w=+ hadazam.`
->
-> 🔊 *yol zodogol vurunul wrar hadazam.*
->
+> `yol zodogol vurunul wrar hadazam.`
 > y-question | z-dog | v-run | [w-how-many | h-haste]
 >
 > "How fast does the dog run?"
 
-To ask for an exact size in units, fill a [measure phrase](numbers-applied.md#measure-phrases) instead: `yol zodogol bedurem g=+ gelem.` *How many meters big is the dog?*
+To ask for an exact size in units, fill a [measure phrase](numbers-applied.md#measure-phrases) instead: `yol zodogol bedurem grar gelem.` *How many meters big is the dog?*
 
 Other prefixes use the same empty payload (the marker’s identity, no named N). Restrictor **`har`** (*sometimes*) is the [restrictor](restrictors.md).
 
@@ -681,7 +650,7 @@ Say a separator exactly where a comma is written, and nowhere else: `g+860` has 
 
 ### Writing (preferred shorthand) {#writing-preferred-shorthand}
 
-Beginner already wrote `g+3` / `g#2` / `g+`. Speech is still full CV; writing for **free** number words prefers shorthand for the ending, marker, and body. Both writings name the same word.
+Beginner already wrote `g+3` / `g#2`. Speech is still full CV; writing for a **free** number word with digits prefers shorthand for the ending, marker, and body. A word with no digits is spelled out in running text ([style](#writing-style-numeric-vs-spelled)); the shorthand below is how tables write it. Both writings name the same word.
 
 ```text
 [PoS] + [~|@|=]? + [marker] + [body?]
@@ -764,7 +733,7 @@ Referential prefixes (`/ɡ/` `/z/` `/d/` `/b/`) keep the marker as a plain amoun
 
 To set a quantity to an absolute value, use an ordinary verb plus the number as argument or adverb. **For *multiply* / *divide*, use:** an ordinary verb plus **`h+N`** / **`h-N`**. With [percentage points](numbers-applied.md#percent-and-percentage-points) (**`yu`**), **`ra`** / **`ru`** as verbs mean increase/decrease by that point amount.
 
-Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume with a digit; digitless `v=+` / `v=_` is a [blank](#digitless)).
+Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume with a digit; digitless `vrar` / `vror` is a [blank](#digitless)).
 
 #### Number as adverb (by marker) {#number-as-adverb-by-marker}
 
@@ -787,7 +756,7 @@ Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume wit
 
 Worked examples: `h+3` *three times*; `h-3` *÷3 / into 3*; `h#3` *for the third time*; `h_15,30` *at 15:30*. Frequency codes sit on a host: `/h/` *on* + `b_101.1`.
 
-Endings still apply (**-m** ≈ *about* that many times / that clock or date, **-r** resume with a digit; digitless `h=+` *how many times?* / `h=_` *when?* is a [blank](#digitless)). Relative %-change factors use **`h+…`** (e.g. ×1.5). See [percent](numbers-applied.md#percent-and-percentage-points).
+Endings still apply (**-m** ≈ *about* that many times / that clock or date, **-r** resume with a digit; digitless `hrar` *how many times?* / `hror` *when?* is a [blank](#digitless)). Relative %-change factors use **`h+…`** (e.g. ×1.5). See [percent](numbers-applied.md#percent-and-percentage-points).
 
 #### Number as interjection (by marker) {#number-as-interjection-by-marker}
 
@@ -800,7 +769,7 @@ Endings still apply (**-m** ≈ *about* that many times / that clock or date, **
 | **`re`** | `y#N` | **Place / rank cheer (from the start)** — *First!*; *Second!* (podium / place shout). |
 | **`ro`** | `y_…` | **Digit-label / magnitude call-out** — *Three!*; *B-12!*; *five-five-five!*; score, bingo, code, or ID as a bare reading of the digits (not “N more”). |
 
-English *Three!* naming a score or count is **`y_`**. *Three more!* (increment the tally) is **`y+`**.
+English *Three!* naming a score or count is **`yrol`**. *Three more!* (increment the tally) is **`yral`**.
 
 Worked examples: `y_3` *Three!*; `y+3` *Three more!*; `y-3` *Three short!*; `y#1` *First!*.
 
@@ -825,7 +794,7 @@ Bare OoM bands keep their band under `/v/` `/h/` `/y/`: **`v+e3`** *increase by 
 
 Worked examples: `x#2` *point 2:*; `x+2` *corroborating 2:*; `x-2` *independent 2:*.
 
-Endings still apply (**-l** newly stated item, **-r** *as in (N) above* (with a digit; digitless `x=#` is a [blank](#digitless)), **-n** titled item name, **-m** fuzzy *around item N*).
+Endings still apply (**-l** newly stated item, **-r** *as in (N) above* (with a digit; digitless `xrer` is a [blank](#digitless)), **-n** titled item name, **-m** fuzzy *around item N*).
 
 #### Number as stance (by marker) {#number-as-stance-by-marker}
 <a id="likelihood"></a>
@@ -848,7 +817,7 @@ Endings still apply (**-l** newly stated item, **-r** *as in (N) above* (with a 
 
 For *30% unlikely*, give the likelihood of the claim itself (`th+70`). **`th-N`** and **`th#N`** are not used.
 
-Endings still apply: **-m** *about* that likelihood (`th~+70` *roughly 70%*), **-n** a conventional level (`th@+95` *at the 95% confidence level*), **-r** *the same likelihood as before* (`th=+70`); digitless `th=+` asks *how likely?* under question.
+Endings still apply: **-m** *about* that likelihood (`th~+70` *roughly 70%*), **-n** a conventional level (`th@+95` *at the 95% confidence level*), **-r** *the same likelihood as before* (`th=+70`); digitless `thrar` asks *how likely?* under question.
 
 **Compare with:** [evidentiality](knowing.md#evidentiality) says **how** you know; `th_N` says **which** numbered source. [MAY](knowing.md#may) (`thodohom`) says the claim is open without a figure. Pretense *as if* in play or make-believe is [NOTIONAL](knowing.md#notional).
 
@@ -859,25 +828,20 @@ Endings still apply: **-m** *about* that likelihood (`th~+70` *roughly 70%*), **
 <a id="writing-style-numeric-vs-spelled"></a>
 <a id="writing-style"></a>
 
-Both writings name the **same word**. Choose the surface by **job**: a numeral in a clause slot versus a kind-word built on a content root.
+Both writings name the **same word**. Choose the surface by one test: **does the word have a digit?**
 
-| Job | Prefer | Why |
-|-----|--------|-----|
-| Free number in a clause slot | **shorthand** | `g+3`, `x#2`, `d_…` — numeral as numeral |
+| Word | Prefer | Why |
+|------|--------|-----|
+| Free number **with digits** | **shorthand** | `g+3`, `x#2`, `d_555,123,4567`, `g+e0` — a value to scan and compare |
+| Free number **with no digits** | **spelled CV** | `gral`, `gram`, `drar`, `wrar` — a word such as *more than one*, *a few*, *how many*, *how much*, not a value |
 | [Numeric derivation](numeric-derivation.md#numeric-derivation) / kind morph | **spelled CV** (required) | shorthand after a root does not form a word |
-| Inventory tables | **shorthand** | patterns are easy to scan |
+| Inventory tables | **shorthand** | patterns are easy to scan; a digitless row may add its spelling |
 
-**Prefer shorthand** for counts, measures, ranks, ranges, thresholds (`zagadalx g+3`, `z+3 z+5 zel`); digit-strings / times / codes (`d_555,123,4567`, `h_15,30`); scientific / engineering register (`g+5.2e-4`, `g+e3`); compact agenda markers (`x#1`, `x#3`); and pages that teach the numeral system.
-
-**Always spell CV** after a lexical join (**-l** / **-m**) on a content root: kind morphs are words, not numerals. **Prefer spelled CV** for literary, sung, or long prose where `+` `#` `_` and second-slot `~`/`@`/`=` break word rhythm; and pronunciation teaching.
+A power digit counts: `g+e0` keeps shorthand. Only a word with no digit anywhere (`g+`, `d=+`) is spelled. Pages that teach the shorthand itself (writing and speech drills) still show digitless shorthand.
 
 Write free numbers with second-slot marks or trailing letters consistently. Derived words use ordinary reference endings on the host with a fully spelled `NUM`.
 
-**Other spelled-CV uses:** digitless plural (`g+` or spelled *gral*). Numeric derivation is the main use; this is an established free-number exception.
-
 **Not the same job as:** derived `NUM` (no second-slot `~`/`@`/`=`). Free numbers take those marks.
-
-**Writing defaults:** (1) free numeral → shorthand by default; (2) content-root derivation → always spelled CV; (3) shorthand in derivation tables is schematic only.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -1038,7 +1002,7 @@ z-2nd | d-trophy | v-see
 *The second one sees the trophy.*
 :::
 
-**3.** `zululon vurunul h+.`
+**3.** `zululon vurunul hral.`
 
 ::: details Show answer
 
@@ -1082,7 +1046,7 @@ x-2nd | z-Ululon | v-run
 *The second big seat.*
 :::
 
-**7.** `yol zululon d=+ vejel.`
+**7.** `yol zululon drar vejel.`
 
 ::: details Show answer
 
@@ -1131,15 +1095,12 @@ A digit group may use **`ba`** or **`bu`** with **no** exponent digits. That emp
 | **Mantissa `≠0` + `ba`/`bu`∅** | hyperbole (*N gazillion* / *umpteenth*) |
 | **Mantissa `0` + `ba`/`bu`∅** | [zero × digitless exp](#zero-exponent) |
 
-> `zagadalx g+e.`
->
-> 🔊 *zagadalx grabal.*
->
+> `zagadalx grabal.`
 > z-cat-x | g-plus-infinity
 >
 > "Cats — infinitely many."
 
-**Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means no power digits after that mark: `g+e`, `g+e-`. Bare / assert **`e0`** writes power **`0`**: `g+e0`, `g+3e0` (not digitless).
+**Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means no power digits after that mark: `g+e` / `g+e-` in tables, spelled `grabal` / `grabul` in running text. Bare / assert **`e0`** writes power **`0`**: `g+e0`, `g+3e0` (not digitless).
 
 One such group only in the word. Marker identity still applies. Kind compounds may use digitless **`_`** as [infinite / landmark labels](numeric-derivation.md#infinite-labels) (`ROOTl_e`, `ROOTl_e-`, `ROOTl_1e`, …).
 
@@ -1161,11 +1122,11 @@ One such group only in the word. Marker identity still applies. Kind compounds m
 | **`g-e-`** | **`ru`** + **`bu`∅** + **-l** | **just short:** arbitrarily small but finite shortfall — *a hair under*; against a target, *almost* |
 | **`g~-e-`** | **`ru`** + **`bu`∅** + **-m** | **nearly** — a small shortfall, not claimed to be tiny |
 
-Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as object; `b+e-` = *of an arbitrarily small but finite amount*; `z-e-` = a hair-short amount as subject). Contrast **`g#1`** = numbered *first* / *1st*; **`g#e-`** = beginning/onset landmark.
+Same under `/z/` `/d/` `/b/` (`zrabal` = +∞ as subject; `drebul` = start-place as object; `brabul` = *of an arbitrarily small but finite amount*; `zrubul` = a hair-short amount as subject). Contrast **`g#1`** = numbered *first* / *1st*; **`grebul`** = beginning/onset landmark.
 
 <a id="just-short"></a>
 
-**Just short (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅**), no mantissa. It mirrors **`g+e-`** (a hair over zero): **`g-e-`** is a hair **under** — the smallest shortfall. Against a target it reads *almost*; as a [signed time offset](knowing.md#dated-channel) it reads *just before* (`b-e-` *just now*), and **`b+e-`** reads *just after* (*any moment now*).
+**Just short (`grubul`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅**), no mantissa. It mirrors **`grabul`** (a hair over zero): **`grubul`** is a hair **under** — the smallest shortfall. Against a target it reads *almost*; as a [signed time offset](knowing.md#dated-channel) it reads *just before* (`brubul` *just now*), and **`brabul`** reads *just after* (*any moment now*).
 
 **Compare with:** *as if* uses spelled mood **`adade`** ([knowing.md § Notional](knowing.md#notional), e.g. `thadadem`). Free **`grubul`** / **`xrubul`** / **`thrubul`** / **`vrubul`** / **`hrubul`** / **`yrubul`** are the amount, discourse *just before that:*, stance *virtually*, verb *nudge down*, adverb *almost*, and cheer *so close!* on the number grid.
 
@@ -1201,19 +1162,16 @@ No-mantissa digitless-exp under `/v/` and `/h/` inherit special-value identity (
 | **`h-e-`** | **almost** — the action falls a hair short of one full time (`zazawan h-e- vajul.` *Azawan almost sits*) |
 | **`h~-e-`** | *came close* — it fell short despite a real effort |
 
-**Margin vs effort:** **-l** (`h+e-` / `h-e-`) measures the margin: over or under by a hair. **`~`** (**-m**) reports the felt effort instead: `zazawan h~+e- vajul.` is *Azawan managed to sit, just*; `zazawan h~-e- vajul.` is *Azawan tried hard to sit and didn't quite*. Division into parts keeps its counted form `h-N`.
+**Margin vs effort:** **-l** (`hrabul` / `hrubul`) measures the margin: over or under by a hair. **`~`** (**-m**) reports the felt effort instead: `zazawan hrabum vajul.` is *Azawan managed to sit, just*; `zazawan hrubum vajul.` is *Azawan tried hard to sit and didn't quite*. Division into parts keeps its counted form `h-N`.
 
-**On a quality:** the same pair sits on `/w/` before an adjective or adverb. **`w+e-`** = *barely*; **`w-e-`** = *almost*.
+**On a quality:** the same pair sits on `/w/` before an adjective or adverb. **`wrabul`** = *barely*; **`wrubul`** = *almost*.
 
-> `zodogol w-e- gelulul vawalal.`
->
-> 🔊 *zodogol wrubul gelulul vawalal.*
->
+> `zodogol wrubul gelulul vawalal.`
 > [z-dog | [w---e- | g-blue]] | v-walk
 >
 > "An almost blue dog walks."
 
-**Stance:** a whole claim that holds all but a hair is stance, not manner, so it sits on `/th/`: **`th-e-`** = *virtually* / *practically*; **`th~-e-`** = *more or less*. **`h-e-`** says the event fell short; **`th-e-`** says your claim is a hair short of exact. See [number as stance](#special-number-as-stance).
+**Stance:** a whole claim that holds all but a hair is stance, not manner, so it sits on `/th/`: **`thrubul`** = *virtually* / *practically*; **`thrubum`** = *more or less*. **`hrubul`** says the event fell short; **`thrubul`** says your claim is a hair short of exact. See [number as stance](#special-number-as-stance).
 
 **Ordinals (`re`) — start/last landmarks:**
 
@@ -1247,13 +1205,13 @@ No-mantissa digitless-exp under `/y/` (interjection cheers):
 
 ##### Number as discourse {#special-number-as-discourse}
 
-**Last point / *Finally*:** **`x#e`** = *Finally:* / *last point:* (committed coda item). Soft **`x~#e`** = near-final; named **`x@#e`** = ritual / titled *Finally*; **`x=#e`** resumes that last-point marker. Extra items use discourse hook **`al`** (*additionally*: [hooks.md](hooks.md#discourse-hooks)).
+**Last point / *Finally*:** **`xrebal`** = *Finally:* / *last point:* (committed coda item). Soft **`xrebam`** = near-final; named **`xreban`** = ritual / titled *Finally*; **`xrebar`** resumes that last-point marker. Extra items use discourse hook **`al`** (*additionally*: [hooks.md](hooks.md#discourse-hooks)).
 
-**Starting point / *Starting with*:** **`x#e-`** = *Starting with:* / *to begin:* (committed opening item). Soft **`x~#e-`** = near-start; named **`x@#e-`** = ritual / titled *Starting with*; **`x=#e-`** resumes that start-point marker. Numbered *firstly* is **`x#1`**.
+**Starting point / *Starting with*:** **`xrebul`** = *Starting with:* / *to begin:* (committed opening item). Soft **`xrebum`** = near-start; named **`xrebun`** = ritual / titled *Starting with*; **`xrebur`** resumes that start-point marker. Numbered *firstly* is **`x#1`**.
 
 Under `/x/`, a digitful exponent on **`#`** is **outline depth** relative to the focused agenda item — **`x#3e2`** = *3rd sub-sub-point under the focus*; **`x#e-1`** = *parent-layer item(s)*; **`x#e0`** = *current-layer item(s)*. A flat list uses **`x#N`** (and *Finally* / *Starting with* as above).
 
-These sit beside the numbered points of [Number as discourse marker](#number-as-discourse-marker-by-marker). End-relative discourse points use **`x#-N`**. **Just-before discourse:** **`x-e-`** = *just before that:* (step back a moment in the telling). Soft **`x~-e-`**; named **`x@-e-`**; resume **`x=-e-`**. Corroborating is **`x+`**; independent is **`x-`**.
+These sit beside the numbered points of [Number as discourse marker](#number-as-discourse-marker-by-marker). End-relative discourse points use **`x#-N`**. **Just-before discourse:** **`xrubul`** = *just before that:* (step back a moment in the telling). Soft **`xrubum`**; named **`xrubun`**; resume **`xrubur`**. Corroborating is **`xral`**; independent is **`xrul`**.
 
 #### Zero × exponent
 <a id="zero-exponent"></a>
@@ -1277,7 +1235,7 @@ Forms that pair **mantissa `0`** with an exponent (digitless or the engineering 
 
 Same under `/z/` `/d/` `/b/` (`z+0e` = absolute-zero as subject; `z+0e-1` = deci-null as subject).
 
-**Emptiness chain (amounts):** **`g-e`** (−∞ deficit), **`g+0`** (plain zero), **`g+0e`** (absolute zero), **`g+0e-`** (sterile micro-null), **`g+0e-1`** (engineering null at 10⁻¹). Bare **`g+e0`** is the [ones decade band](#bare-oom-bands) (1–9).
+**Emptiness chain (amounts):** **`grubal`** (−∞ deficit), **`g+0`** (plain zero), **`g+0e`** (absolute zero), **`g+0e-`** (sterile micro-null), **`g+0e-1`** (engineering null at 10⁻¹). Bare **`g+e0`** is the [ones decade band](#bare-oom-bands) (1–9).
 
 **Scalars only for `±0e-1`:** engineering OoM-null is **`ra` / `ru`**. On ordinals, digitful exp is [generation](numbers-applied.md#ordinal-generation) (`g#0e-1` ≠ engineering; **`g#e0`** = current generation). Ordinal zero×digitless **`g#0e`** = [rank annihilated](#rank-annihilated) below.
 
@@ -1352,7 +1310,7 @@ Same under other referential PoS for scalars.
 
 ##### Ordinal umpteenth / umpteenth-first (`re` + **`ba`∅** / **`bu`∅**)
 
-Mantissa = how many joke-units of **late** (**`ba`**) or **early** (**`bu`**) rank. Still **finite** place hyperbole. Landmarks are **`g#e`** / **`g#e-`**.
+Mantissa = how many joke-units of **late** (**`ba`**) or **early** (**`bu`**) rank. Still **finite** place hyperbole. Landmarks are **`grebal`** / **`grebul`**.
 
 | Form | Reading |
 |------|---------|
@@ -1363,7 +1321,7 @@ Mantissa = how many joke-units of **late** (**`ba`**) or **early** (**`bu`**) ra
 | **`g#3e-`** | *the three-gazillionth-first* |
 | **`g~#1e-`** | *about the gazillionth-first* |
 
-`g#e` is last place; `g#e-` is the start landmark; `g#1` is numbered *1st*.
+`grebal` is last place; `grebul` is the start landmark; `g#1` is numbered *1st*.
 
 **Endings** on hyperbolic forms:
 
@@ -1404,7 +1362,7 @@ Digitless specials, zero × exponent, and hyperbole keep their meaning under [st
 | **`th-e-`** | **virtually** / *practically* — the claim holds all but a hair |
 | **`th~-e-`** | *more or less* |
 
-`th+100` and `th+0` are still estimates (*I'd put it at 100%*). `th+e` and `th+0e` step outside the estimate.
+`th+100` and `th+0` are still estimates (*I'd put it at 100%*). `thrabal` and `th+0e` step outside the estimate.
 
 
 ### From the end — end-relative ordinal marker **`#-`** / **`ue`**
@@ -1432,7 +1390,7 @@ To count **from the last place** (*penultimate*, *starting with the last one*), 
 | **`g=#-2`** | resume that prior end-relative place |
 | **`g#-`** | unspecified end-relative rank ([zero groups](#digitless)) |
 
-`g#2` = numbered *2nd* (from the start); `g#-2` = *2nd from the end*; `g#e` = last as landmark; `g#e-` = start landmark (no mantissa).
+`g#2` = numbered *2nd* (from the start); `g#-2` = *2nd from the end*; `grebal` = last as landmark; `grebul` = start landmark (no mantissa).
 
 `/v/` `/h/` `/y/` `/x/` inherit:
 
@@ -1550,7 +1508,7 @@ In casual measure-heavy talk, a stretch of conversation may set an **ambient** o
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**. Digitless exponents, hyperbole, and zero×exp as in the teach tables — shorthand (`g+e`, `g+1e`, `x#e`).
+Short drills for Advanced. Try each item before opening **Show answer**. Digitless exponents, hyperbole, and zero×exp as in the teach tables. Forms with a digit use shorthand (`g+1e`); digitless forms are spelled out (`grabal`, `xrebal`).
 
 **Setting:** an observatory
 
@@ -1570,9 +1528,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Digitle
 **1.** *Stars — infinitely many.*
 
 ::: details Show answer
-`zarazalx g+e.`
-
-🔊 *zarazalx grabal.*
+`zarazalx grabal.`
 
 z-star-x | g-plus-infinity
 :::
@@ -1590,9 +1546,7 @@ z-telescope-x | g-+-1e
 **3.** *Finally: Azawan sees.*
 
 ::: details Show answer
-`x#e zazawan vejel.`
-
-🔊 *xrebal zazawan vejel.*
+`xrebal zazawan vejel.`
 
 x-finally | z-Azawan | v-see
 :::
@@ -1600,9 +1554,7 @@ x-finally | z-Azawan | v-see
 **4.** *To infinity!*
 
 ::: details Show answer
-`y+e.`
-
-🔊 *yrabal.*
+`yrabal.`
 
 y-plus-infinity
 :::
@@ -1620,9 +1572,7 @@ y-+-0e
 **6.** *Starting with: Uhubun sees.*
 
 ::: details Show answer
-`x#e- zuhubun vejel.`
-
-🔊 *xrebul zuhubun vejel.*
+`xrebul zuhubun vejel.`
 
 x-starting-with | z-Uhubun | v-see
 :::
@@ -1649,7 +1599,7 @@ z-Ululon | [d-star-x | g-three | g-plus-minus-1] | v-see
 
 #### Agalan → English {#advanced-agalan-to-english}
 
-**1.** `zarazalx g~+e.`
+**1.** `zarazalx grabam.`
 
 ::: details Show answer
 
@@ -1660,7 +1610,7 @@ z-star-x | g-plus-infinity.about
 *Stars — a huge but finite number.*
 :::
 
-**2.** `y#e.`
+**2.** `yrebal.`
 
 ::: details Show answer
 
@@ -1671,7 +1621,7 @@ y-last-place
 *Finally!*
 :::
 
-**3.** `x#e- zululon vejel.`
+**3.** `xrebul zululon vejel.`
 
 ::: details Show answer
 
@@ -1704,7 +1654,7 @@ z-Azawan | v-see | h-#-1e
 *Azawan sees for the gazillionth time.*
 :::
 
-**6.** `y-e-.`
+**6.** `yrubul.`
 
 ::: details Show answer
 

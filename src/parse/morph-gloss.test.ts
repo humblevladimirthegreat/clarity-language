@@ -111,7 +111,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zoxezehel", "z-recipient-x-speech");
     expectLine("thexal", "th-ASIDE.multi[]");
     expectLine("xuxul", "x-span-close");
-    expectLine("x#e-", "x-starting-with");
+    expectLine("xrebul", "x-starting-with");
   });
 
   it("joins, revisers, numbers", () => {
@@ -149,8 +149,10 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("hual", "h-always");
     expectLine("von", "v-choose");
     expectLine("g+3", "g-three");
+    expectLine("grarel", "g-three.spelled");
+    expectLine("gral", "g-more-than-one");
+    expectLine("g+", "g-more-than-one.short");
     expectLine("g#2", "g-2nd");
-    expectLine("g+", "g-more-than-one");
   });
 
   it("scientific and percent number writing", () => {
@@ -232,7 +234,7 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
   it("numbered alternative + unmet pleasure", () => {
     expectLine(
-      "x#e- zuzebum g#1 zugobonx thawerothur.",
+      "xrebul zuzebum g#1 zugobonx thawerothur.",
       "x-starting-with | [z-problem | g-1st] | z-speaker-x | th-pleasure-unmet-passing",
     );
   });

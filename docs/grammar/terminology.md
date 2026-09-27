@@ -411,7 +411,7 @@ Speech-act ending **-l** vs **-m**.
 ### Forecast
 <a id="forecast-source"></a>
 
-A claim that something **will** happen: an evidential channel plus the later offset **`b+`**. There is no forecast word, so a forecast always names how you know it.
+A claim that something **will** happen: an evidential channel plus the later offset **`bral`**. There is no forecast word, so a forecast always names how you know it.
 
 [Knowing](knowing.md#forecast)
 

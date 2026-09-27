@@ -18,7 +18,7 @@ English needs a **code**: a phone, room, channel, or serial, not a counted amoun
 >
 > "Azawan sees 555-123-4567."
 
-Ending is usually **-l** (exact label); **-n** for an official designation; **-r** with a digit resumes a prior code. Digitless `d=_` / `g=_` is *some code*, or *what number?* in a question; digitless **-l** `…_` is an unspecified label ([digitless](numbers.md#digitless)).
+Ending is usually **-l** (exact label); **-n** for an official designation; **-r** with a digit resumes a prior code. Digitless `dror` / `gror` is *some code*, or *what number?* in a question; digitless **-l** `…_` is an unspecified label ([digitless](numbers.md#digitless)).
 
 **For numeric *plus or minus*, use:** [sign](numbers.md#sign) on a count or ordinal. Labels normally preserve their own written identifier.
 
@@ -44,7 +44,7 @@ Clock and date together:
 | **Calendar date** | Digit-string **`_`** with **`oe`** (spoken **`roe`**, written `h_#…`). Fields: **day, month, optional year** (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as **one digit group** (`2026` is one group). Digitless `h_#` covers an unspecified date. An explicit *date* host + `/b/` is optional when you want to name the relation. |
 | **When-frame** | Ordinary lexicon `/h/` (*until*, *before*, recency), clock/date above, a signed [offset on the channel](knowing.md#dated-channel) (*three hours ago* / *in three hours*), or a closed mood whose **job** locates time ([LIVE](knowing.md#live-vs-memory) / [WITNESSED](knowing.md#live-vs-memory), or a channel plus `b+` for a [forecast](knowing.md#forecast)). [RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate) do **not** locate time. There is no past/future ending. A numeric payload (*3 days* on a unit) is relation + scalar + unit. |
 
-Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** resume a prior clock or date with its digits; digitless `h=_` asks *when?* / *what time?* in a question ([digitless](numbers.md#digitless)). Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
+Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** resume a prior clock or date with its digits; digitless `hror` asks *when?* / *what time?* in a question ([digitless](numbers.md#digitless)). Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
 
 For *from … to* with clock times, put each time in `/b/` after the hooks **`ul`** *from* and **`oel`** *toward* ([extra nouns](hooks.md#extra-noun-intermediate)). As with any two extras, keep a non-`/b/` word, such as the verb, between them.
 
@@ -58,7 +58,7 @@ For *from … to* with clock times, put each time in `/b/` after the hooks **`ul
 
 Calendar decade labels such as *the ’90s* name a group of years, not a bare order-of-magnitude band.
 
-**Compare with:** a phone or room **code** uses the same `_` marker under `/d/` `/b/` `/ɡ/`, not bare `/h/`. Restrictor **`har`** is *sometimes*; digitless `h_` is *some clock or date*.
+**Compare with:** a phone or room **code** uses the same `_` marker under `/d/` `/b/` `/ɡ/`, not bare `/h/`. Restrictor **`har`** is *sometimes*; digitless `hrol` is *some clock or date*.
 
 **Not the same job as:** `h+3` (*three times*) and `h#3` (*for the third time*). Clock time `h_15,30` is still a digit-string.
 
@@ -539,7 +539,7 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bedurem g
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
-English *less than 5* / *greater than 5* is a **bound**, not a two-endpoint band. When the **only** member of a [rank join](joins.md#rank-joins) fence (**`e`** / **`ue`** / **`oe`** / **`eo`**, and their open / named twins) is a compatible number word, that number is an extremum on the line. SHARED continuum is optional: absent = implicit numeric line; present = that named line (`z+5 zel gumem` = *time \< 5*). Special values such as +∞ use [digitless exponents](numbers.md#digitless-exponents) inside the number word (`g+e`).
+English *less than 5* / *greater than 5* is a **bound**, not a two-endpoint band. When the **only** member of a [rank join](joins.md#rank-joins) fence (**`e`** / **`ue`** / **`oe`** / **`eo`**, and their open / named twins) is a compatible number word, that number is an extremum on the line. SHARED continuum is optional: absent = implicit numeric line; present = that named line (`z+5 zel gumem` = *time \< 5*). Special values such as +∞ use [digitless exponents](numbers.md#digitless-exponents) inside the number word (`grabal`).
 
 Why **`e`** gives *less than*: `X zel` says X is first / greatest, so everything else on the line is less than X. Likewise `X zuel` says X is last / least, so everything else is greater than X.
 
@@ -569,7 +569,7 @@ Sequence **`oe`** reads the line the other way: `X zoel` says the path **starts*
 | **`z+5 zaen`** | named equal-to band | *equal-to-5* / tie label |
 | **`z+5 zuen`** | named floor band | conventional *greater-than* label |
 
-Same under `/d/` `/b/` `/ɡ/` (`g+5 gel` = modifier *\<5*; `d+10 duel` = object *\>10*). **`ae`** single-item with a number is an ordinary tie of one. Boolean single-item (**`zal`** / **`zol`** / …) is *just this value*. Single-item **`z+ zel`** (zero-group) is ordinary single-item on plural/unspecified amount; +∞ is **`z+e`** / **`g+e`**.
+Same under `/d/` `/b/` `/ɡ/` (`g+5 gel` = modifier *\<5*; `d+10 duel` = object *\>10*). **`ae`** single-item with a number is an ordinary tie of one. Boolean single-item (**`zal`** / **`zol`** / …) is *just this value*. Single-item **`zral zel`** (zero-group) is ordinary single-item on plural/unspecified amount; +∞ is **`zrabal`** / **`grabal`**.
 
 Rank bounds (**`e`** / **`ue`**) are **strict** (`<` / `>`). The sequence rays are **inclusive**: **`oe`** is `≥`, **`eo`** is `≤`.
 

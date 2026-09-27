@@ -221,7 +221,7 @@ z-Uhubun | th-MAY | v-cry
 
 English often says *how you know* a claim (*I saw it*, *I heard*, *I figured*). Agalan keeps the ordinary content verb and adds a closed `/th/` mood word. That word is the **channel** the claim came through, so the same walk or sleep can sit under a live look, memory, a recording, a pattern of cases, clues, hearsay, a gut sense, or a tale.
 
-Verbs have **no past or future letter**. Some channels already locate the event because of how you know: **LIVE** is watching while the scene is still in view; **WITNESSED** is memory of watching; **RECORDED** is playback of a capture, or a schedule. There is no forecast word: a claim that something **will** happen is a channel plus the later offset **`b+`** ([forecasts](#forecast)), so a forecast always says how you know. [PLAN](intention.md#plan-predict) is intention, not a forecast. Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, or a [signed offset](#dated-channel) on the channel) when inference or hearsay needs a different time than this stretch.
+Verbs have **no past or future letter**. Some channels already locate the event because of how you know: **LIVE** is watching while the scene is still in view; **WITNESSED** is memory of watching; **RECORDED** is playback of a capture, or a schedule. There is no forecast word: a claim that something **will** happen is a channel plus the later offset **`bral`** ([forecasts](#forecast)), so a forecast always says how you know. [PLAN](intention.md#plan-predict) is intention, not a forecast. Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, or a [signed offset](#dated-channel) on the channel) when inference or hearsay needs a different time than this stretch.
 
 > `zazawan thadezem vawalal.`
 >
@@ -293,29 +293,29 @@ The ending on a channel says **how strong the evidence is**: how much the claim 
 >
 > "Azawan walked — I remember it clearly."
 
-### Forecasts (`b+`) {#forecast}
+### Forecasts (`bral`) {#forecast}
 
-Agalan has no *will* word for the world. To say something **will** happen, use a channel and put the later offset **`b+`** right after it: a `/b/` number with a plus sign and no digits, meaning *some time after now*. The channel says what the forecast rests on, so a forecast cannot hide its warrant. For a hunch, the honest channel is FELT. The mirror **`b-`** is *some time before now*, for a past claim with no measured amount.
+Agalan has no *will* word for the world. To say something **will** happen, use a channel and put the later offset **`bral`** right after it: a `/b/` number with a plus sign and no digits (`b+` in tables), meaning *some time after now*. The channel says what the forecast rests on, so a forecast cannot hide its warrant. For a hunch, the honest channel is FELT. The mirror **`brul`** is *some time before now*, for a past claim with no measured amount.
 
-> `thabawam b+ vanunul.`
+> `thabawam bral vanunul.`
 >
 > [th-PATTERN | b-later] | v-rain
 >
 > "It will rain (going by the pattern)."
 
-> `zululon theherer b+ vebarul.`
+> `zululon theherer bral vebarul.`
 >
 > z-Ululon | [th-FELT.weak | b-later] | v-departure
 >
 > "I have a faint hunch Ululon will leave."
 
-> `zazawan theregol b+ vezehel.`
+> `zazawan theregol bral vezehel.`
 >
 > z-Azawan | [th-RECORDED.strong | b-later] | v-tell
 >
 > "Azawan is officially scheduled to speak."
 
-**Compare with:** [PLAN](intention.md#plan-predict) (`themabam`) says what someone **intends** to do; it needs no channel. A forecast is a claim about the world. To say **how much** later (*in three hours*), replace `b+` with a measured [dated channel](#dated-channel) (Advanced). *Could be* with no warrant is [MAY](#may), not a forecast.
+**Compare with:** [PLAN](intention.md#plan-predict) (`themabam`) says what someone **intends** to do; it needs no channel. A forecast is a claim about the world. To say **how much** later (*in three hours*), replace `bral` with a measured [dated channel](#dated-channel) (Advanced). *Could be* with no warrant is [MAY](#may), not a forecast.
 
 ### Live vs memory {#live-vs-memory}
 <a id="memory-record"></a>
@@ -374,7 +374,7 @@ English *has walked* and *used to walk* often smuggle **when** the event sits. A
 >
 > "Azawan always tells — a former pattern, not today's; seen live." (the scene is in view, and the pattern is still not today's)
 
-> `zazawan hual vezehel themebem thabawam b+.`
+> `zazawan hual vezehel themebem thabawam bral.`
 >
 > z-Azawan | h-always | v-tell | th-FORMER | [th-PATTERN | b-later]
 >
@@ -635,7 +635,7 @@ z-Ululon | th-TOLD.weak | v-scream
 **13.** *Going by a well-established pattern, Azawan will tell Uhubun.*
 
 ::: details Show answer
-`zazawan thabawal b+ vezehel buhubun.`
+`zazawan thabawal bral vezehel buhubun.`
 
 z-Azawan | [th-PATTERN.strong | b-later] | v-tell | b-Uhubun
 :::
@@ -740,7 +740,7 @@ z-Ululon | h-not-yet.lasting | v-departure
 *Ululon hasn't left yet, but will.*
 :::
 
-**12.** `zuhubun theregol b+ vezehel.`
+**12.** `zuhubun theregol bral vezehel.`
 
 ::: details Show answer
 
@@ -874,20 +874,14 @@ Some channels only point one way:
 
 The wrong sign on a one-way word (**`thuvuvum`** with **`+`**, **`themabam`** with **`-`**) is not a sentence.
 
-For *just* and *about to*, use the [just-short](numbers.md#just-short) amount with no unit: **`b-e-`** is *a hair before now*, **`b+e-`** is *a hair after now*.
+For *just* and *about to*, use the [just-short](numbers.md#just-short) amount with no unit: **`brubul`** is *a hair before now*, **`brabul`** is *a hair after now*.
 
-> `zazawan thuvuvum b-e- vawalal.`
->
-> 🔊 *zazawan thuvuvum brubul vawalal.*
->
+> `zazawan thuvuvum brubul vawalal.`
 > z-Azawan | [th-WITNESSED | b---e-] | v-walk
 >
 > "I just saw Azawan walk."
 
-> `thunevem b+e- vanunul.`
->
-> 🔊 *thunevem brabul vanunul.*
->
+> `thunevem brabul vanunul.`
 > [th-INFERRED | b-+-e-] | v-rain
 >
 > "It is about to rain (from the clouds)."

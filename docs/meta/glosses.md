@@ -231,7 +231,7 @@ A morph line corresponds **one-to-one** with its Agalan. From the gloss alone yo
 - **Every written word is glossed**, including a spoken **`yal`**. A `yal` that was left out is not added.
 - **Sentence marks.** When one line holds several sentences, the mark between them stands alone with spaces: `z-Azawan | v-walk . z-←Azawan | v-judge`. A line-final period is implicit. A [tone mark](../grammar/speech-moves.md#tone-marks) is copied as written: attached to the glossed word or span it colors (`!z-Azawan`), or standing alone with spaces for sentence scope (`! z-Azawan | v-walk`).
 - **One label per form.** Each (PoS, root, ending) maps to one English label. Two roots never share an English sense: when they would, reword one row in the lexicon. `npm run lint:lexicon` checks this, and `npm test` round-trips every glossed example in `docs/grammar/`.
-- **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, `.full` on a [full-root resume](#anaphors-r), and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and `.spelled` on a spelled-out number word (`grarel` → `g-three.spelled`; `g+3` → `g-three`).
+- **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, `.full` on a [full-root resume](#anaphors-r), and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and a surface mark when a number word is not in its [preferred writing](../grammar/numbers.md#writing-style-numeric-vs-spelled): `.spelled` on a spelled-out word with digits (`grarel` → `g-three.spelled`; `g+3` → `g-three`), `.short` on digitless shorthand (`g+` → `g-more-than-one.short`; `gral` → `g-more-than-one`).
 - **Ordinals use digits** (`g#2` → `g-2nd`, `g#-2` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.
 - **Span resumes** gloss by type: written `d[=]` → `d-←cite`, spoken `daxur` → `d-←cite.spoken`.
 - **Unknown words fail.** A content word the lexicon cannot gloss has no morph line: a root missing from the lexicon, or **-m** on a root with no abstract sense (unless a closed overlay defines that **-m** form). `lint:agalan` reports it.
@@ -317,7 +317,7 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 | Values stance on need | `tholozothom` | `th-competence-motive-internal` |
 | Role compound | `zaxuvugul` | `z-agent-x-fight` |
 | Span open / close | `thexal` … `xuxul` | `th-ASIDE.multi[…]` ([labeled bracket](#phrase-brackets)) |
-| Number / enumeration | `x#e-` | `x-starting-with` |
+| Number / enumeration | `xrebul` | `x-starting-with` |
 
 For **phrasal proper names**, gloss each piece (`y-Ubune-x-Unowen`, `z-Ogove-x-Adeda-x-Unuden`). Mid-word **`x`** stays visible as `-x-`. Do not put Agalan letters in the english slot, except [mention interiors](#span-interiors).
 
@@ -378,7 +378,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `g#2` | `g-2nd` |
 | `grarel` (spelled `g+3`) | `g-three.spelled` |
 | `g+e` | `g-plus-infinity` |
-| `g+` | `g-more-than-one` |
+| `gral` | `g-more-than-one` |
 
 ## Worked examples
 
@@ -434,7 +434,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Numbered alternative + unmet pleasure
 
-> `x#e- zuzebum g#1 zugobonx thawerothur.`
+> `xrebul zuzebum g#1 zugobonx thawerothur.`
 >
 > x-starting-with | [z-problem | g-1st] | z-speaker-x | th-pleasure-unmet-passing
 >

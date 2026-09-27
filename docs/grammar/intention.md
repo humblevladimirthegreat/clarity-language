@@ -418,21 +418,21 @@ A [PLAN](#plan-predict) atlas (**`themabal`**) already includes backups. Chain t
 ### Plan or forecast
 <a id="predict-evidentiality"></a>
 
-English *will* can be a plan or a forecast. A plan uses [PLAN](#plan-predict) and needs no warrant. A forecast about the world uses an [evidential](knowing.md#evidentiality) channel plus the later offset **`b+`** ([forecasts](knowing.md#forecast)): the channel says what the forecast rests on.
+English *will* can be a plan or a forecast. A plan uses [PLAN](#plan-predict) and needs no warrant. A forecast about the world uses an [evidential](knowing.md#evidentiality) channel plus the later offset **`bral`** ([forecasts](knowing.md#forecast)): the channel says what the forecast rests on.
 
-> `thabawam b+ vanunul.`
+> `thabawam bral vanunul.`
 >
 > [th-PATTERN | b-later] | v-rain
 >
 > "It will rain (going by the usual pattern)."
 
-> `zululon themabam thunevel b+ vajul.`
+> `zululon themabam thunevel bral vajul.`
 >
 > z-Ululon | th-plan-itinerary | [th-INFERRED.strong | b-later] | v-sit
 >
 > "Ululon plans to sit, and the clues strongly say it will happen."
 
-**Compare with:** a channel with no offset is a claim about *this stretch* (**`thadezem`** if you are observing it now; **`thuvuvum`** if you remember observing it). Add **`b+`** when the claim is about a **later** event, not a guess about what is already so.
+**Compare with:** a channel with no offset is a claim about *this stretch* (**`thadezem`** if you are observing it now; **`thuvuvum`** if you remember observing it). Add **`bral`** when the claim is about a **later** event, not a guess about what is already so.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -495,7 +495,7 @@ z-Uhubun | th-DECISION-temporary | v-write
 **4.** *Going by the usual pattern, Ululon will sit.*
 
 ::: details Show answer
-`zululon thabawam b+ vajul.`
+`zululon thabawam bral vajul.`
 
 z-Ululon | [th-PATTERN | b-later] | v-sit
 :::
@@ -592,7 +592,7 @@ z-Ululon | th-DECISION-irreversible | v-write
 *Ululon has decided for good to write.*
 :::
 
-**3.** `thabawam b+ vazagal.`
+**3.** `thabawam bral vazagal.`
 
 ::: details Show answer
 
@@ -679,7 +679,7 @@ z-Ululon | th-ABIL-unable-irreversible
 ### Plan and forecast against a snapshot
 <a id="as-of-intention"></a>
 
-[PLAN](#plan-predict) and a [forecast](knowing.md#forecast) (channel + `b+`) without a hosted pair score against **speech-now**. With [*as-of*](relations.md#as-of), PLAN is the intention **from** that now (*was going to*), and the forecast offset counts **after** that now (*would rain*). Repeat the channel and `b+` on the next clause; resume whose-now with `helerer` / `hobomar`. [DECISION](#decision) stays how revisable the pick is **now**.
+[PLAN](#plan-predict) and a [forecast](knowing.md#forecast) (channel + `bral`) without a hosted pair score against **speech-now**. With [*as-of*](relations.md#as-of), PLAN is the intention **from** that now (*was going to*), and the forecast offset counts **after** that now (*would rain*). Repeat the channel and `bral` on the next clause; resume whose-now with `helerer` / `hobomar`. [DECISION](#decision) stays how revisable the pick is **now**.
 
 > `zululon themabar vawalal helerem b_#22,7.`
 >
@@ -687,7 +687,7 @@ z-Ululon | th-ABIL-unable-irreversible
 >
 > "As of 22 July, Ululon was going to walk."
 
-> `thabawam b+ hobomam b_#22,7 vanunul. xazawan thabawam b+ hobomar vawalal.`
+> `thabawam bral hobomam b_#22,7 vanunul. xazawan thabawam bral hobomar vawalal.`
 >
 > [th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | [th-PATTERN | b-later] | h-as-of.bookmark | v-walk
 >
@@ -733,7 +733,7 @@ z-Ululon | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
 **2.** *Taking 22 July as now (a placeholder), it would rain, going by the pattern.*
 
 ::: details Show answer
-`thabawam b+ hobomam b_#22,7 vanunul.`
+`thabawam bral hobomam b_#22,7 vanunul.`
 
 [th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain
 :::
@@ -748,7 +748,7 @@ z-Ululon | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 
 #### Agalan → English {#advanced-agalan-to-english}
 
-**1.** `thabawam b+ hobomam b_#22,7 vanunul. xazawan thabawam b+ hobomar vawalal.`
+**1.** `thabawam bral hobomam b_#22,7 vanunul. xazawan thabawam bral hobomar vawalal.`
 
 ::: details Show answer
 

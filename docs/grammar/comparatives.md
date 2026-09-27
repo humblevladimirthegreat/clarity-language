@@ -292,53 +292,53 @@ When English would say *Ululon walks more intensely than Azawan*, the ladder is 
 
 **Compare with:** `gohogem` after `zel` (no verb) is *more intense* as a quality of the people. **`hohogem` after the verb** is ordinary *how* they walk, not the ladder.
 
-### Amount scale (`g+`) {#amount-scale}
+### Amount scale (`gral`) {#amount-scale}
 
-When English would say *more cats than dogs*, the ladder is **how many**, not a quality. Keep the rank join. For the shared word, write the [digitless number](numbers.md#digitless) **`g+`**: after a rank join it means *by amount*.
+When English would say *more cats than dogs*, the ladder is **how many**, not a quality. Keep the rank join. For the shared word, write the [digitless number](numbers.md#digitless) **`gral`**: after a rank join it means *by amount*.
 
-> `zagadalx zodogolx zel g+.`
+> `zagadalx zodogolx zel gral.`
 >
 > [z-cat-x | z-dog-x | z-rank/more | g-amount]
 >
 > "There are more cats than dogs."
 
-> `zagadalx zodogolx zuel g+.`
+> `zagadalx zodogolx zuel gral.`
 >
 > [z-cat-x | z-dog-x | z-rank/less | g-amount]
 >
 > "There are fewer cats than dogs."
 
-> `zagadalx zodogolx zael g+.`
+> `zagadalx zodogolx zael gral.`
 >
 > [z-cat-x | z-dog-x | z-equal-rank | g-amount]
 >
 > "There are as many cats as dogs."
 
-The noun decides whether English says *many* or *much*: cats are counted, tea is measured. Agalan uses the same **`g+`** for both.
+The noun decides whether English says *many* or *much*: cats are counted, tea is measured. Agalan uses the same **`gral`** for both.
 
-Open **`g~+`** ranks by a **rough impression** instead of a count: *it looks like more cats than dogs*. Use **`g+`** when you counted or measured, and **`g~+`** when you are going by how it seems.
+Open **`gram`** ranks by a **rough impression** instead of a count: *it looks like more cats than dogs*. Use **`gral`** when you counted or measured, and **`gram`** when you are going by how it seems.
 
-> `zagadalx zodogolx zel g~+.`
+> `zagadalx zodogolx zel gram.`
 >
 > [z-cat-x | z-dog-x | z-rank/more | g-amount.about]
 >
 > "It looks like there are more cats than dogs."
 
-To say **how many more**, put the difference in `/b/` right after **`g+`**. A count needs no unit noun: the unit is the thing counted.
+To say **how many more**, put the difference in `/b/` right after **`gral`**. A count needs no unit noun: the unit is the thing counted.
 
-> `zagadalx zodogolx zel g+ b+3.`
+> `zagadalx zodogolx zel gral b+3.`
 >
 > [z-cat-x | z-dog-x | z-rank/more | [g-amount | b-three]]
 >
 > "There are three more cats than dogs."
 
-**Compare with:** after set join **`a`**, a shared word describes each item, so `zagadalx zodogolx zal g+` is *several cats and several dogs*. Only a **rank** join turns **`g+`** into the scale. For a named quantity such as weight or time, use its own word (`garogom`, `gumem`), not **`g+`**.
+**Compare with:** after set join **`a`**, a shared word describes each item, so `zagadalx zodogolx zal gral` is *several cats and several dogs*. Only a **rank** join turns **`gral`** into the scale. For a named quantity such as weight or time, use its own word (`garogom`, `gumem`), not **`gral`**.
 
-### Frequency scale (`h+`) {#frequency-scale}
+### Frequency scale (`hral`) {#frequency-scale}
 
-*Walks more often than* ranks how many **times**. Write digitless **`h+`** in the manner slot right after the rank join. Only digitless **`h+`** works here. Other number words are not manner words.
+*Walks more often than* ranks how many **times**. Write digitless **`hral`** in the manner slot right after the rank join. Only digitless **`hral`** works here. Other number words are not manner words.
 
-> `zazawan zululon zel h+ vawalal.`
+> `zazawan zululon zel hral vawalal.`
 >
 > [z-Azawan | z-Ululon | z-rank/more | h-how-often] | v-walk
 >
@@ -628,19 +628,19 @@ English *enough* and *too* compare against **what an interest requires**. Agalan
 
 Tie **`ae`** against a interest bar is *enough*. Rank **`e`** is *too much*, and **`ue`** is *not enough*.
 
-> `zadedal zegen zael g+.`
+> `zadedal zegen zael gral.`
 >
 > [z-tea | z-Needed | z-equal-rank | g-amount]
 >
 > "There is enough tea."
 
-> `zadedal zegen zel g+.`
+> `zadedal zegen zel gral.`
 >
 > [z-tea | z-Needed | z-rank/more | g-amount]
 >
 > "There is too much tea."
 
-> `zadedal zegen zuel g+.`
+> `zadedal zegen zuel gral.`
 >
 > [z-tea | z-Needed | z-rank/less | g-amount]
 >
@@ -656,31 +656,31 @@ With a quality as the scale, the same pattern gives *too ADJ* and *ADJ enough*. 
 
 To say **whose** need it is, put that person in `/b/` right after the shared scale.
 
-> `zadedal zegen zael g+ bululon.`
+> `zadedal zegen zael gral bululon.`
 >
 > [z-tea | z-Needed | z-equal-rank | [g-amount | b-Ululon]]
 >
 > "There is enough tea for Ululon."
 
-**Compare with:** **`zuroron`** (*my standard*) is what the speaker **prefers**. **`zegen`** is what the interest **requires**. `zadedal zuroron zel g+` is *more tea than I like*, and `zadedal zegen zel g+` is *more tea than is needed*.
+**Compare with:** **`zuroron`** (*my standard*) is what the speaker **prefers**. **`zegen`** is what the interest **requires**. `zadedal zuroron zel gral` is *more tea than I like*, and `zadedal zegen zel gral` is *more tea than is needed*.
 
 ### Vague amounts (*many* / *few*) {#vague-amounts}
 
 English *many* and *few* compare against an unstated baseline. Agalan always names it: put a bar in the list and rank on [amount](#amount-scale). Pick the bar that you mean.
 
-> `zagadalx zahaman zel g+.`
+> `zagadalx zahaman zel gral.`
 >
 > [z-cat-x | z-Typical | z-rank/more | g-amount]
 >
 > "There are many cats (more than usual)."
 
-> `zagadalx zahaman zuel g+.`
+> `zagadalx zahaman zuel gral.`
 >
 > [z-cat-x | z-Typical | z-rank/less | g-amount]
 >
 > "There are few cats (fewer than usual)."
 
-> `zagadalx zuroron zel g~+.`
+> `zagadalx zuroron zel gram.`
 >
 > [z-cat-x | z-my-standard | z-rank/more | g-amount.about]
 >
@@ -693,7 +693,7 @@ English *many* and *few* compare against an unstated baseline. Agalan always nam
 | *too many* / *too few* (to my taste) | **`zuroron`** *my standard* |
 | *too much* / *enough* / *not enough* | **`zegen`** or a specific interest bar |
 
-The bar is never dropped. A single-item `zagadalx zel g+` already means *the most cats* (a [superlative](#superlatives)).
+The bar is never dropped. A single-item `zagadalx zel gral` already means *the most cats* (a [superlative](#superlatives)).
 
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>

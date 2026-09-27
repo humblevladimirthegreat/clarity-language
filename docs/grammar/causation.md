@@ -519,9 +519,9 @@ English *because* and *if* can hide whether you **assert the dependent as a worl
 >
 > "Azawan walks if it rains." Rain is not asserted; the main sentence is under that opportunity.
 
-English *If he'd left, the door would still be locked* is not this pole. Write bookmark [*as-of*](relations.md#as-of) (`hobomam`) plus [RESIDUE](knowing.md#residue) / a [forecast](knowing.md#forecast) (a channel such as INFERRED plus `b+`) as needed, with **no** `thadorom`. `thadorom` stays speaker-now opportunity (*if it rains*). *If it rains, the Friday tab still stands* may stack both: `thadorom` plus a **date** in *as-of* `/b/`.
+English *If he'd left, the door would still be locked* is not this pole. Write bookmark [*as-of*](relations.md#as-of) (`hobomam`) plus [RESIDUE](knowing.md#residue) / a [forecast](knowing.md#forecast) (a channel such as INFERRED plus `bral`) as needed, with **no** `thadorom`. `thadorom` stays speaker-now opportunity (*if it rains*). *If it rains, the Friday tab still stands* may stack both: `thadorom` plus a **date** in *as-of* `/b/`.
 
-> `zadorol gologel thonenom thunevem b+ hobomam barl zululon vebarul.`
+> `zadorol gologel thonenom thunevem bral hobomam barl zululon vebarul.`
 >
 > [z-door | g-locked] | th-RESIDUE | [th-INFERRED | b-later] | [h-as-of.bookmark | b-that-clause] | z-Ululon | v-departure
 >
@@ -650,7 +650,7 @@ z-Azawan | th-MAY | v-sit | [th-because | b-that-clause] | z-Ululon | v-pour
 **6.** *If Ululon had poured, the test-tube would still be melting.*
 
 ::: details Show answer
-`zezubel vemelel thonenom thunevem b+ hobomam barl zululon vorurul.`
+`zezubel vemelel thonenom thunevem bral hobomam barl zululon vorurul.`
 
 z-test-tube | v-melt | th-RESIDUE | [th-INFERRED | b-later] | [h-as-of.bookmark | b-that-clause] | z-Ululon | v-pour
 :::
@@ -702,7 +702,7 @@ z-Azawan | v-run | [th-if | b-fire] | h-always
 *Azawan always runs if there is fire.*
 :::
 
-**6.** `zezubel vemelel thonenom thunevem b+ hobomam barl zululon vorurul.`
+**6.** `zezubel vemelel thonenom thunevem bral hobomam barl zululon vorurul.`
 
 ::: details Show answer
 

@@ -464,7 +464,7 @@ A later `/x/` clause is a new host. To keep the same books, write the **same ove
 
 Do not put a bare person in `/b/` as “from Ululon’s now.” That is [proxy](#proxy) (`hudagam`). Prefer `helerem barl zululon vezehel`.
 
-Once whose-now is set, a [forecast](knowing.md#forecast) offset (`b+`) counts **after** that now, [PLAN](intention.md#plan-predict) is **from** that now, [RESIDUE](knowing.md#residue) leftover is on **that** tally, and [FORMER](knowing.md#former-climate) is not **that stretch’s** climate. A bare verb is **concurrent** with that now. [MAY](knowing.md#may), [DECISION](intention.md#decision), and [CAUSE](causation.md#cause) still evaluate from speech-now. Evidentials other than LIVE-at-snapshot are how *you* know at speech-now.
+Once whose-now is set, a [forecast](knowing.md#forecast) offset (`bral`) counts **after** that now, [PLAN](intention.md#plan-predict) is **from** that now, [RESIDUE](knowing.md#residue) leftover is on **that** tally, and [FORMER](knowing.md#former-climate) is not **that stretch’s** climate. A bare verb is **concurrent** with that now. [MAY](knowing.md#may), [DECISION](intention.md#decision), and [CAUSE](causation.md#cause) still evaluate from speech-now. Evidentials other than LIVE-at-snapshot are how *you* know at speech-now.
 
 > `zazawan zululon zel welerem b_#22,7 gomonam.`
 >
@@ -496,7 +496,7 @@ Once whose-now is set, a [forecast](knowing.md#forecast) offset (`b+`) counts **
 >
 > "As of when Ululon told it, the departure still stood." — the telling sentence is whose-now, not leftover
 
-> `zululon thonenom helerem b_#22,7 vebarul. xazawan thabawam b+ hobomam b_#23,7 vawalal.`
+> `zululon thonenom helerem b_#22,7 vebarul. xazawan thabawam bral hobomam b_#23,7 vawalal.`
 >
 > z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | [th-PATTERN | b-later] | [h-as-of.bookmark | b-_23,7] | v-walk
 >
@@ -560,7 +560,7 @@ z-Azawan | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 **3.** *Taking 22 July as now (a placeholder), it would rain, going by the pattern.*
 
 ::: details Show answer
-`thabawam b+ hobomam b_#22,7 vanunul.`
+`thabawam bral hobomam b_#22,7 vanunul.`
 
 [th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain
 :::
@@ -609,7 +609,7 @@ z-Uhubun | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 *As of 22 July, Uhubun sits in a house.*
 :::
 
-**3.** `thabawam b+ hobomam b_#22,7 vanunul. xazawan thabawam b+ hobomar vawalal.`
+**3.** `thabawam bral hobomam b_#22,7 vanunul. xazawan thabawam bral hobomar vawalal.`
 
 ::: details Show answer
 

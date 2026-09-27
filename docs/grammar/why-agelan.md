@@ -127,7 +127,7 @@ Agalan splits them: [PLAN](intention.md#plan-predict) for what you mean to do; a
 
 Splitting plan, prediction, and decision firmness helps you avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and a revisable pick as locked forever.
 
-**Compare with:** English *will*. Use PLAN for intention, a channel plus `b+` for a forecast, and DECISION for how firm the pick is.
+**Compare with:** English *will*. Use PLAN for intention, a channel plus `bral` for a forecast, and DECISION for how firm the pick is.
 
 ### Open lists, closed lists, and false dichotomies
 <a id="open-and-closed-lists"></a>
