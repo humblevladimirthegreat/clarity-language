@@ -11,13 +11,13 @@ use [skip-cd] for amplify to not deploy.
 # TODO
 
 Prosody
--confirm amplify build still works
 -confirm we still have chats after rebuild
 -consider removing some emotion words from lexicon
 -expressiveness review
 -do a style pass in grammar-docs. Check for adherence to doc-style and otherwise ensure natural sounding explanations.
 -grammar simplification pass: could we remove special overlay forms and re-use existing grammar? 
 -Rare learning band
+-lint check that vocabulary is taught and used in translation exercises.
 
 final exam
 

@@ -803,11 +803,11 @@ Left-edge `/y/` addressing.
 
 [Speech moves](speech-moves.md)
 
-### Weak-pause left cue
+### Audible start
 
 Prefer an audible left `/y/` rather than implied **`yal`**.
 
-[Clause](clause.md#weak-pause-left-cues)
+[Clause](clause.md#audible-start)
 
 ### Yes/no
 

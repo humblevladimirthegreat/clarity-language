@@ -479,7 +479,7 @@ A [tone mark](speech-moves.md#tone-marks) written right before the opening `^` c
 >
 > "Azawan and (just Ululon) saw …."
 
-A `/b/` right after an `/h/` word is hosted by it ([extra nouns](clause.md#unhosted-b)). To put a recipient `/b/` in an island, write it **before** the binder:
+A `/b/` right after an `/h/` word is hosted by it ([extra nouns](clause.md#extra-nouns)). To put a recipient `/b/` in an island, write it **before** the binder:
 
 > `zazawan ^ bululon huzurem ^ vezehel.`
 >

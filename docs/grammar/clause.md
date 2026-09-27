@@ -28,9 +28,9 @@ A name you already cite with **-n** (`azawan`) keeps **-n** in the sentence:
 
 ### Direct object (`/d/`)
 
-`/d/` marks the **direct object**: who or what is acted on.
+The **direct object** is who or what the action is done to. Mark it with `/d/`. The usual order is **Subject – Direct Object – Verb**.
 
-The usual order is **Subject – Direct Object – Verb**. Because the first letter already says each word’s role, you may move those three without changing who did what. Put first the piece you want to highlight: the person or thing the sentence is “about,” or the new information. English often does that with stress; Agalan can do it with order.
+Because the first letter already says each word’s role, you may move those three words without changing who did what. Put first the piece you want to highlight: the person or thing the sentence is “about,” or the new information. English often does that with stress; Agalan can do it with order.
 
 > `zodogol dagadal vejel.`
 >
@@ -40,7 +40,7 @@ The usual order is **Subject – Direct Object – Verb**. Because the first let
 
 ### Adjectives (`/ɡ/`) {#adjectives-ɡ}
 
-When you name a **property** (*blue*), put that word in `/ɡ/` (an **adjective**). It follows the word it describes.
+An **adjective** names a property of a noun (*blue*). Mark it with `/ɡ/` and put it right after the noun it describes. You can stack several adjectives after one noun.
 
 > `zodogol gelulul vawalal.`
 >
@@ -50,7 +50,7 @@ When you name a **property** (*blue*), put that word in `/ɡ/` (an **adjective**
 
 ### Extra detail on an adjective (`/w/`) {#adjective-detail-w}
 
-Before an adjective, you can add how intense it is or in what manner. That extra detail uses `/w/` immediately before the `/ɡ/` word.
+To say how strongly a property holds (*very* blue), add a word marked with `/w/` immediately before the adjective. The `/w/` word describes only the adjective right after it, not the noun.
 
 > `zodogol welem gelulul vawalal.`
 >
@@ -60,7 +60,7 @@ Before an adjective, you can add how intense it is or in what manner. That extra
 
 ### Adverbs (`/h/`) {#adverbs-h}
 
-When you say **how, when, or where** an action happens, use `/h/` (an **adverb**). You may place it anywhere in that sentence. Several adverbs can sit next to each other (`hadazam howom` *hastily and quietly*).
+An **adverb** says how, when, or where an action happens. Mark it with `/h/`. You may place it anywhere in the sentence, and several adverbs can sit next to each other (`hadazam howom` *hastily and quietly*).
 
 > `zodogol hadazam vawalal.`
 >
@@ -70,7 +70,7 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 
 ### Stance (`/th/`) {#stance-th}
 
-`/h/` tells how the action happened. `/th/` tells how **you** stand toward the whole claim: how sure you are, how you know it, why it holds, or whether it is only imagined. Like `/h/`, it may sit anywhere in the sentence. `th` is considered one letter ([phonology](phonology.md#consonants)).
+An adverb describes the action. A **stance** word describes how **you**, the speaker, stand toward the whole claim: how sure you are, how you know it, why it holds, or whether it is only imagined. Mark it with `/th/`. Like `/h/`, it may sit anywhere in the sentence. `th` counts as one letter ([phonology](phonology.md#consonants)).
 
 > `zodogol thuduhum vawalal.`
 >
@@ -80,18 +80,19 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 
 The adverb describes the walking. The stance word describes your claim about it.
 
-### Extra nouns (`/b/`) {#unhosted-b}
-<a id="extra-nouns"></a>
+### Extra nouns (`/b/`) {#extra-nouns}
 
-`/b/` names an extra person or thing. It has two jobs, and you can tell them apart from the word **immediately before** `/b/`. On this page, `/w/` grades the next `/ɡ/`, `/h/`, or `/th/` word (or hook); `/b/` sits after that host, not after `/w/`.
+`/b/` marks an **extra noun**: a person or thing beyond the subject and direct object. It has two jobs. You tell them apart by the word **immediately before** the `/b/` word.
 
-**Hosted.** A `/b/` **right after** a `/ɡ/`, `/h/`, or `/th/` word is always hosted by that word, whatever the word means. Use this for words that name a **relation** needing another person or thing (*like …*): put that extra noun in `/b/` right after the relation word. Optional `/w/` detail sits **immediately before** that host, so the pair stays together. The root on the `/ɡ/`, `/h/`, or `/th/` word names the relation; `/b/` marks the noun that completes it. More hosted roots, including *as of*, are on [relations](relations.md).
+**Hosted: completing a relation.** Some words name a relation that needs another person or thing (*like …*). Put that word in `/ɡ/`, `/h/`, or `/th/`, then put the other noun in `/b/` right after it. That relation word is the `/b/` word’s **host**: a `/b/` right after a `/ɡ/`, `/h/`, or `/th/` word always completes that word. (cue: 🪞 *mirror*: the image is *like* the model.)
 
 > `hurorom bazawan`
 >
 > [h-like | b-Azawan]
 >
 > "like Azawan"
+
+A `/w/` word still goes before the host, so the host and its `/b/` stay side by side.
 
 > `welem hurorom bazawan`
 >
@@ -105,7 +106,7 @@ The adverb describes the walking. The stance word describes your claim about it.
 >
 > "A dog sleeps like Azawan."
 
-**Unhosted.** Only when `/b/` does **not** follow `/ɡ/`, `/h/`, or `/th/` is it the **recipient** or **addressee** of the verb: the person who gets the theme or hears the telling. The theme (what is given or said) stays `/d/`. At most one unhosted `/b/` per clause. This job is a person, not a place.
+**Unhosted: who receives.** A `/b/` word anywhere else is the person who receives what the verb passes on: who gets the thing given, or who hears what is told. What is given or said is still `/d/`. A clause has at most one of these.
 
 > `zazawan bululon vezehel.`
 >
@@ -113,33 +114,29 @@ The adverb describes the walking. The stance word describes your claim about it.
 >
 > "Azawan tells Ululon."
 
-Never put a recipient immediately after a `/ɡ/`, `/h/`, or `/th/` word: `hurorom bululon` is *like Ululon*, not *to Ululon*, and `hadazam bululon` is ungrammatical, not *hastily, to Ululon*. Put the recipient elsewhere (`bululon hadazam`), or after a finished pair (`hurorom bazawan bululon`). To name the hearer from the verb stem (*the one told*), use a [role compound](roles.md#role-compounds) with vowel **`o`**.
+**Compare with:** `hurorom bululon` is *like Ululon*, because a `/b/` right after `/h/` completes it. To add a person who receives, keep that `/b/` word away from a `/ɡ/`, `/h/`, or `/th/` word: `bululon hadazam`, or after a finished pair (`hurorom bazawan bululon`).
 
 ### Role letters {#role-letters}
 
-Role letters on this page:
+The role letters you have used so far:
 
 | Agalan | Use | Cue |
 |--------|-----|-----|
 | `/z/` | subject (who acts) | **z** ≈ star (who the sentence is about) |
 | `/d/` | direct object (who is acted on) | **d** ≈ done to (sound of *acted on*) |
 | `/b/` | extra noun: recipient of the verb, or the piece after a relation word | **b** ≈ bolted on (the extra piece) |
-| `/v/` | verb (the action) | **v** as in English *verb* |
+| `/v/` | verb (the action) | **v** ≈ *verb* (the English name for the job starts with it) |
 | `/ɡ/` | adjective (a property of the noun) | **ɡ** ≈ grade (a rating of the noun) |
 | `/w/` | extra detail on the next `/ɡ/`, `/h/`, or `/th/` word | **w** ≈ with (stuck to that host) |
 | `/h/` | adverb (how / when / where) | **h** starts *how* / *when* / *where* |
 | `/th/` | stance (how sure, how known, why, as if) | **th** ≈ *think* (your stance on the claim) |
-| `/y/` | start a speech move | **y** ≈ *yo!* (a new act; see [speech moves](speech-moves.md)) |
-
-
-
 ### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a bank
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here:**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -155,8 +152,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
 | *write* | `vuwurul` | `uwurul` *write* | ✍️: putting words on the page |
-| *sneak* | `vazanal` | | |
-| *run* | `vurunul` | `urunul` *run* | 🏃: leaving at speed |
+| *sneak* | `vazanal` | `azanal` *sneak* | 🥷: moving unseen |
+| *doubt* | `thuduhum` | `uduhul` *think* | 🤔: thinking it over shows doubt |
 | *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
 | *like* | `hurorom` | `urorol` *mirror* | 🪞: the image is of the model |
 
@@ -202,6 +199,14 @@ z-Azawan | v-write | h-haste
 z-Azawan | b-Ululon | v-tell
 :::
 
+**6.** *I doubt that Uhubun is sitting.*
+
+::: details Show answer
+`zuhubun thuduhum vajul.`
+
+z-Uhubun | th-doubt | v-sit
+:::
+
 #### Agalan → English {#beginner-agalan-to-english}
 
 **1.** `zuhubun vadanal.`
@@ -240,7 +245,6 @@ z-Ululon | v-sneak | [h-like | b-Azawan]
 *Ululon sneaks like Azawan.*
 :::
 
-
 ## Intermediate {#intermediate}
 
 ::: tip Reminder:
@@ -249,7 +253,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 ### Adjectives before the noun (`gl-`) {#left-bound-adjectives}
 
-English often puts the adjective before the noun (*a blue dog*). Agalan can too: add **`l`** as the second letter (`/ɡ/` + **l** + root + ending). That adjective comes **before** the noun it describes and looks ahead to the next noun. (cue: **l** ≈ lean left: look ahead to the host.)
+English puts the adjective before the noun (*a blue dog*). Agalan can too: add **`l`** as the second letter (`/ɡ/` + **l** + root + ending), and that adjective describes the **next** noun instead of the one before it. This lets you choose the order for meter or emphasis, and it frees the spot after the noun for another adjective. (cue: **l** ≈ lean: the word leans toward the noun ahead.)
 
 > `glelulul zodogol.`
 >
@@ -257,12 +261,11 @@ English often puts the adjective before the noun (*a blue dog*). Agalan can too:
 >
 > "a blue dog"
 
-`/b/` still follows that adjective. `/w/` sits immediately before it (`welem glelulul zodogol` = *a very blue dog*), so **`l`** still looks ahead to the next noun. You might do this for meter or emphasis. This extra **`l`** is only on adjectives (`/ɡ/`).
+A `/b/` word still follows that adjective, and a `/w/` word still sits immediately before it (`welem glelulul zodogol` = *a very blue dog*). This extra **`l`** goes only on adjectives (`/ɡ/`).
 
-### As-for and free-order ties
-<a id="as-for"></a>
+### As for (`hozam`) {#as-for}
 
-*As for X* / *regarding X* names who or what the clause is about. Use an adverb plus extra noun (`/h/` + `/b/`) with published **`oza`**: `hozam bazawan` is *as for Azawan*. You can still put first the piece you want to highlight.
+English *as for X* or *regarding X* names who or what the sentence is about, even when X is not the subject or object. In Agalan, put **`hozam`** *topic* in `/h/` and X in a hosted `/b/` right after it: `hozam bazawan` is *as for Azawan*. The rest of the sentence keeps its free order. (cue: #️⃣ *hash*: a hashtag marks what the post is about.)
 
 > `hozam bazawan zululon dagadal vejel.`
 >
@@ -270,11 +273,9 @@ English often puts the adjective before the noun (*a blue dog*). Agalan can too:
 >
 > "As for Azawan, Ululon sees a cat."
 
-**Not the same job as:** [interests](interests.md) **met** / **unmet** on `/ɡ/` (`gonogothal` *my thing serves relatedness*). *As for* points at a person or thing in the clause; a interest adjective on `/ɡ/` is an interest toward a belonging.
-
 ### Complex chaining {#complex-chaining}
 
-A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). `/w/` that grades that adjective sits **immediately before** the `/ɡ/` word. A further plain adjective after that pair describes the **extra noun**, not the first noun.
+A relation adjective with its hosted `/b/` (*the same as Azawan*, **`gonunul`** + `/b/`) works as one unit after a noun. You can keep chaining: a plain adjective after that pair describes the **extra noun**, not the first noun, and a `/w/` word that grades the relation sits immediately before the `/ɡ/` word. (cue: 🪙 *coin*: two faces of one thing.)
 
 > `zodogol welem gonunul bazawan.`
 >
@@ -288,7 +289,7 @@ A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). `/w/` that grades t
 >
 > "a dog the same as blue Azawan"
 
-You can chain more complex units onto those extra nouns. Two complex adjectives **after** the same first noun need [another sentence](dependents.md#which-noun). To keep both on that noun in one clause, put one [before the noun](#left-bound-adjectives) with **`gl-`**; `/b/` still follows that left-bound adjective.
+Because a second relation after the pair would attach to the extra noun, you cannot put two relation adjectives **after** the same first noun. To keep both on that noun in one clause, put one [before the noun](#left-bound-adjectives) with **`gl-`**; its `/b/` still follows it. Otherwise use [another sentence](dependents.md#which-noun).
 
 > `glonunul bazawan zodogol gonunul bululon.`
 >
@@ -296,11 +297,9 @@ You can chain more complex units onto those extra nouns. Two complex adjectives 
 >
 > "a dog the same as Azawan, the same as Ululon"
 
-Several `/h/` or `/th/` units on one verb are fine (each plain word, or optional `/w/` plus the host plus `/b/` together, counts as one). An unhosted recipient `/b/` may follow a finished pair (`hurorom bazawan bululon`); it still must not sit in the hosted slot after the relation word.
+A verb can take several `/h/` or `/th/` units. Each plain word counts as one unit, and so does a host with its `/b/` (plus any `/w/` before it).
 
-**Compare with:** a [hook](hooks.md#extra-noun) with `/b/` right after the hook and no `/b/` to the left is *in* / *at* / *for*, not the recipient.
-
-
+**Compare with:** a [hook](hooks.md#extra-noun) followed by `/b/` means *in* / *at* / *for*, not the person who receives.
 
 ### How much: degree words on `/w/` {#degree-w}
 
@@ -308,10 +307,10 @@ Beginner used **`welem`** *very* before an adjective. The same `/w/` slot takes 
 
 | Agalan | English | Cue |
 |--------|---------|-----|
-| **`welem`** | *very* | *big*, as a degree |
-| **`wogegal`** | *extremely* / *overwhelmingly* | an ocean of it |
-| **`wumuzem`** | *slightly* / *a bit* | *small*, as a degree |
-| **`wegerum`** | *quite* / *fairly* | a speaker at medium volume |
+| `welem` | *very* | 🐘: big, as a degree |
+| `wogegal` | *extremely* / *overwhelmingly* | 🌊: an ocean of it |
+| `wumuzem` | *slightly* / *a bit* | 🐁: small, as a degree |
+| `wegerum` | *quite* / *fairly* | 🔉: medium volume, not loud or soft |
 
 > `zodogol welem hadazam vawalal.`
 >
@@ -339,7 +338,7 @@ Beginner used **`welem`** *very* before an adjective. The same `/w/` slot takes 
 
 ### Leaving out who acts {#no-subject}
 
-A clause does not need a subject. With no `/z/`, nobody is named as the one who acts, like English *The cat was seen* or *Mistakes were made*.
+English uses the passive (*The cat was seen*, *Mistakes were made*) to avoid naming who acted. Agalan simply leaves out the `/z/` word. The verb and its object stay the same, and the sentence says nothing about who did it.
 
 > `dazawan vejel.`
 >
@@ -347,10 +346,9 @@ A clause does not need a subject. With no `/z/`, nobody is named as the one who 
 >
 > "Azawan was seen."
 
-**Compare with:** [**`zenenun`**](pronouns.md#special-pronouns) *someone* says that somebody did it. With no subject at all, the sentence says nothing about the doer.
+**Compare with:** [`zenenun`](pronouns.md#special-pronouns) *someone* says that somebody did it, without saying who. With no subject at all, the sentence does not mention a doer.
 
 ### Translation practice {#intermediate-translation-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
@@ -371,8 +369,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *stand* | `vadanal` |
 | *see* | `vejel` |
 | *tell* | `vezehel` |
-| *sneak* | `vazanal` |
-| *punch* | `vubunul` |
 | *very* | `welem` |
 | *topic* | `hozam` |
 | *train* | `adadul` |
@@ -427,6 +423,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Uhubun | b-Ululon | h-haste | v-tell
 :::
 
+**7.** *Azawan was seen.*
+
+::: details Show answer
+`dazawan vejel.`
+
+d-Azawan | v-see
+:::
+
 #### Agalan → English {#intermediate-agalan-to-english}
 
 **1.** `glelulul zadadul vadanal.`
@@ -447,13 +451,13 @@ z-Uhubun | b-Ululon | h-haste | v-tell
 *Uhubun the same as red Ululon stands.*
 :::
 
-**3.** `hozam bazawan zululon dugedel vejel.`
+**3.** `dugedel vejel.`
 
 ::: details Show answer
 
-[h-topic | b-Azawan] | z-Ululon | d-ticket | v-see
+d-ticket | v-see
 
-*As for Azawan, Ululon sees a ticket.*
+*A ticket was seen.*
 :::
 
 **4.** `zodogol welem hurorom bazawan velebel.`
@@ -465,32 +469,31 @@ z-dog | [[w-very | h-like] | b-Azawan] | v-sleep
 *A dog sleeps very like Azawan.*
 :::
 
-**5.** `zazawan gonunul buhubun gelulul vadanal.`
+**5.** `zadadul welem garedel vajul.`
 
 ::: details Show answer
 
-[z-Azawan | [g-SAME | [b-Uhubun | g-blue]]] | v-stand
+[z-train | [w-very | g-red]] | v-sit
 
-*Azawan the same as blue Uhubun stands.*
+*A very red train sits.*
 :::
 
-**6.** `zadadul garedel gelulul dugedel vejel.`
+**6.** `hozam buhubun zazawan bululon vezehel.`
 
 ::: details Show answer
 
-[z-train | g-red | g-blue] | d-ticket | v-see
+[h-topic | b-Uhubun] | z-Azawan | b-Ululon | v-tell
 
-*A red train sees a blue ticket.*
+*As for Uhubun, Azawan tells Ululon.*
 :::
 
 ## Advanced {#advanced}
 
-### Word order and English emphasis
-<a id="word-order-emphasis"></a>
+### Word order and English emphasis {#word-order-emphasis}
 
-The first letter already says who acts, who is acted on, and what the action is. Moving those words does not change who did what. The **leftmost content word** of the clause body is what you highlight: what the sentence is “about,” or the new information.
+Beginner showed that you may reorder the words of a clause, because the first letters already say who did what. The **first content word** is what you highlight: what the sentence is “about,” or the new information. Opening `/y/` words come before the clause itself and do not count.
 
-English usually keeps subject–verb–object and uses extra wording, a different voice, or spoken stress for that job. When you translate, keep the same highlight in English. Copy Agalan order into English only when that English is also a natural way to put that piece first (*Hastily, Azawan walks*). Opening `/y/` words sit before the body and are not this highlight. Keep a [stand-in](dependents.md#stand-in) **`darl` / `barl`** last in its slot; move the other words around it.
+English usually keeps subject–verb–object order and uses extra wording, the passive, or spoken stress for that job. When you translate, keep the same highlight in English. Copy Agalan order into English only when that English is also a natural way to put that piece first (*Hastily, Azawan walks*). Keep a [stand-in](dependents.md#stand-in) `darl` / `barl` last in its slot, and move the other words around it.
 
 > `zazawan dagadal vejel.`
 >
@@ -520,12 +523,11 @@ The subject is already first by default, so order cannot single it out. To say *
 
 *As for X* names a topic even when that person is not first: [as-for](#as-for).
 
-### Weak-pause left cues {#weak-pause-left-cues}
+### Starting a sentence audibly {#audible-start}
 
-When you cannot hear a clear pause (singing, fast free order), prefer something audible at the start after silence: *yes* / *no*, a name you address, or a written act word like `yal`. Writing still uses `.` to mark body edges.
+In writing, the period shows where one sentence ends and the next begins. In speech, a listener may miss that pause, especially in singing or with free word order. When that could happen, begin the next sentence with a word that can only start one: *yes* / *no*, the name of the person you address, or the statement word `yal`.
 
 ### Translation practice {#advanced-translation-practice}
-<a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**.
 
