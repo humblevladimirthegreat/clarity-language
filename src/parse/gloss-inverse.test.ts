@@ -57,7 +57,7 @@ describe("glossToAgalan", () => {
       "zazawan d[=] vezehel.",
       "z{odogo} gumuzem.",
       "zagadalx grarel.",
-      "zagadalx g+3.",
+      "zagadalx grarel.",
       "zugobonx vawalal.",
       "zazawan vujudul daxal zazar vawalal xuxul. dadedal on dogovel.",
     ]) {

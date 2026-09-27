@@ -87,7 +87,31 @@
   }
 
   // Spoken group separator `th` + first vowel of the spoken marker (numbers.md § Saying it aloud).
-  function separatorVowel(markerV) {
+  // Mantissa 0 / 1 + bare ba / bu is one digitless-exp stem (`woba` = `1e`), matching writing `g+1e`.
+function foldDigitlessTail(stem, digitless) {
+  const only = stem.groups.length === 1 ? stem.groups[0] : null;
+  if (only && Object.keys(only).length === 1 && (only.mantissa === "0" || only.mantissa === "1") && (digitless === "e" || digitless === "e-")) {
+    stem.groups = [];
+    stem.digitlessExp = only.mantissa + digitless;
+  } else stem.digitlessExp = digitless;
+}
+
+// A lone exponent group is the writing's digitless-exp body (`rabare` = `+e3`, `razobuwo` = `+0e-1`).
+function foldBareExponent(stem) {
+  const only = stem.groups.length === 1 ? stem.groups[0] : null;
+  if (!only || !only.exponentSign || only.exponentDigits === undefined || only.percent || only.decimal) return;
+  const exp = (only.exponentSign === "ba" ? "e" : "e-") + only.exponentDigits;
+  const keys = Object.keys(only).filter((k) => k !== "hasJa");
+  if (keys.length === 2) {
+    stem.groups = [];
+    stem.digitlessExp = exp;
+  } else if (keys.length === 3 && only.mantissa === "0" && exp === "e-1") {
+    stem.groups = [];
+    stem.digitlessExp = "0e-1";
+  }
+}
+
+function separatorVowel(markerV) {
     return markerV.charAt(0);
   }
 
@@ -669,7 +693,8 @@ function peg$parse(input, options) {
   function peg$f67(v, body, digitless) {
     const stem = { marker: writingMarkerFromSpeechV(v), groups: body.groups };
     if (v === "oe") stem.calendarOrdinal = true;
-    if (digitless) stem.digitlessExp = digitless;
+    if (digitless) foldDigitlessTail(stem, digitless);
+    else foldBareExponent(stem);
     return stem;
   }
   function peg$f68(head, sep, g) {    return { sep, g };  }
@@ -723,7 +748,8 @@ function peg$parse(input, options) {
   function peg$f87(v, body) {    return body.seps.every(function (sep) { return sep === separatorVowel(v); });  }
   function peg$f88(v, body, digitless) {
     const stem = { marker: writingMarkerFromSpeechV(v), groups: body.groups };
-    if (digitless) stem.digitlessExp = digitless;
+    if (digitless) foldDigitlessTail(stem, digitless);
+    else foldBareExponent(stem);
     return stem;
   }
   function peg$f89(form) {

@@ -326,7 +326,7 @@ Open **`gram`** ranks by a **rough impression** instead of a count: *it looks li
 
 To say **how many more**, put the difference in `/b/` right after **`gral`**. A count needs no unit noun: the unit is the thing counted.
 
-> `zagadalx zodogolx zel gral b+3.`
+> `zagadalx zodogolx zel gral brarel.`
 >
 > [z-cat-x | z-dog-x | z-rank/more | [g-amount | b-three]]
 >
@@ -371,7 +371,7 @@ Equality **`ae`** with a shared scale needs **two or more** names. **`ae`** with
 
 English *two meters taller* still ranks two people on one quality, and it also names **how large the gap is**. Keep the rank join and the shared scale adjective. After that adjective, write a **measure noun** (`/b/`): that noun is the **unit** (published abstract = SI name), and `/ɡ/` on the unit is the **amount** ([measure phrases](numbers-applied.md#measure-phrases)).
 
-> `zazawan zululon zel godowem bedurem g+2.`
+> `zazawan zululon zel godowem bedurem gradul.`
 >
 > [z-Azawan | z-Ululon | z-rank/more | [g-height | b-meter]] | g-two
 >
@@ -438,7 +438,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 **5.** *Ululon is two grams heavier than Azawan.*
 
 ::: details Show answer
-`zululon zazawan zel garogom bobonom g+2.`
+`zululon zazawan zel garogom bobonom gradul.`
 
 [z-Ululon | z-Azawan | z-rank/more | [g-heavy | b-gram]] | g-two
 :::
@@ -513,7 +513,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 *Ululon and Uhubun are exerted.*
 :::
 
-**5.** `zazawan zululon zel garogom bobonom g+5.`
+**5.** `zazawan zululon zel garogom bobonom graval.`
 
 ::: details Show answer
 

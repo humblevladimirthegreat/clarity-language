@@ -60,7 +60,7 @@ Calendar decade labels such as *the ’90s* name a group of years, not a bare or
 
 **Compare with:** a phone or room **code** uses the same `_` marker under `/d/` `/b/` `/ɡ/`, not bare `/h/`. Restrictor **`har`** is *sometimes*; digitless `hrol` is *some clock or date*.
 
-**Not the same job as:** `h+3` (*three times*) and `h#3` (*for the third time*). Clock time `h_15,30` is still a digit-string.
+**Not the same job as:** `hrarel` (*three times*) and `hrerel` (*for the third time*). Clock time `h_15,30` is still a digit-string.
 
 ### Measure phrases {#measure-phrases}
 <a id="units"></a>
@@ -69,10 +69,7 @@ Calendar decade labels such as *the ’90s* name a group of years, not a bare or
 
 English names **how much of a unit** (*two meters*, *three hours*). The unit is a lexicon noun whose **published abstract** is that SI or everyday unit name; the amount is an ordinary `/ɡ/` scalar on that unit. Use those unit lemmas in speech, not Latin abbreviations (`m`, `kg`, `s`). Introduce the unit sense with **-m** ([abstract](word-endings.md#abstract-m)); resume with **-r** when the unit phrase is already on the table.
 
-> `zazawan bedurem g+2 vawalal.`
->
-> 🔊 *zazawan bedurem gradul vawalal.*
->
+> `zazawan bedurem gradul vawalal.`
 > z-Azawan | [b-meter | g-two] | v-walk
 >
 > "Azawan walks two meters."
@@ -85,7 +82,7 @@ Price *for five grams* keeps this same measure NP in `/b/` after [exchange](rela
 | `zozobam g+3`, `dobonom g+5` | subject / object / … | *three seconds*, *five grams* |
 | `gedurem g+2` on a host | modifier on a noun | rare; prefer unit as `/b/` or a freestanding noun phrase |
 
-Same endings and fuzzy **-m** habits as other number words on the amount (`g~+2` ≈ *about two*). The **unit** takes ordinary word endings.
+Same endings and fuzzy **-m** habits as other number words on the amount (`gradum` ≈ *about two*). The **unit** takes ordinary word endings.
 
 #### Stock units {#stock-units}
 
@@ -110,7 +107,7 @@ Base and everyday units (each row is a **unit metaphor**; the literal picture st
 
 Related **quantity** words (*heavy*, *flow*, *time* as continuum, …) stay on their own roots (`arogom` *heavy*, `gumem` *duration*, …); they are not SI measure nouns.
 
-`bohoram g+3` ≈ *three hours*.
+`bohoram grarel` ≈ *three hours*.
 
 #### Scale the amount
 <a id="no-metric-prefixes"></a>
@@ -122,10 +119,7 @@ Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / a
 
 **Measured differentials** (*two meters taller*) put that measure noun phrase as the **single `/b/`** on the SHARED scale adjective of a [comparative](comparatives.md#measured-differentials):
 
-> `zazawan zululon zel godowem bedurem g+2.`
->
-> 🔊 *zazawan zululon zel godowem bedurem gradul.*
->
+> `zazawan zululon zel godowem bedurem gradul.`
 > [z-Azawan | z-Ululon | z-rank/more | [g-height | b-meter]] | g-two
 >
 > "Azawan is two meters taller than Ululon."
@@ -140,10 +134,7 @@ Vague degree uses `/w/` on the scale (`zel wogegal godowem …`) with no unit. D
 
 English *from 3 to 5* / *between 3 and 5* names a **band on a line**. Write two number endpoints inside a [phrase fence](joins.md), then a **SHARED continuum** `/ɡ/` that names the line (time, price, measure, …). That `/ɡ/` is the same SHARED slot [comparatives](comparatives.md) use; here it names a **dimension / quantity continuum**, not a ranking of people. The continuum is what makes the fence a range.
 
-> `z+3 z+5 zoel gumem.`
->
-> 🔊 *zrarel zraval zoel gumem.*
->
+> `zrarel zraval zoel gumem.`
 > [z-three | z-five | z-in-order | g-duration]
 >
 > "from 3 to 5 in time."
@@ -156,10 +147,7 @@ All three pieces:
 
 The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). A count on a noun is a `/ɡ/` number, so a counted range closes with `gal`:
 
-> `zodogol g+3 g+5 gal gurulem vawalal.`
->
-> 🔊 *zodogol grarel graval gal gurulem vawalal.*
->
+> `zodogol grarel graval gal gurulem vawalal.`
 > [z-dog | [g-three | g-five | g-and | g-measurement]] | v-walk
 >
 > "Between 3 and 5 dogs walk."
@@ -172,17 +160,17 @@ Join vowels (Beginner already used ranked **`e`** for people; a range uses **seq
 | **`oe`** | directed path; first → second (spoken order = path, either direction) | *from 3 to 5* (`z+3 z+5 zoel gumem`); *from 5 to 3* (`z+5 z+3 zoel gumem`) | **o** one + **e** order: one after another |
 | **`ua`** | complement on the line | *outside 3–5* (`z+3 z+5 zual gumem`) | **u** undo + **a** add |
 
-**Compare with:** `zazawan zululon zel gomonam` (*Azawan is more challenging than Ululon*) ranks **people** on a scale. `z+3 z+5 zoel gumem` is a **band** on a continuum. Rank **`e`** puts the first item at the **top**; sequence **`oe`** puts it at the **start**. Place *from a station to a train* is two [locative](relations.md#spatial-path) `/h/` + `/b/` units, not this fence.
+**Compare with:** `zazawan zululon zel gomonam` (*Azawan is more challenging than Ululon*) ranks **people** on a scale. `zrarel zraval zoel gumem` is a **band** on a continuum. Rank **`e`** puts the first item at the **top**; sequence **`oe`** puts it at the **start**. Place *from a station to a train* is two [locative](relations.md#spatial-path) `/h/` + `/b/` units, not this fence.
 
-**Not the same job as:** bare **`z+3 z+5 zel`** (*prefer 3 over 5*). Without the SHARED continuum, two number conjuncts are an ordinary join.
+**Not the same job as:** bare **`zrarel zraval zel`** (*prefer 3 over 5*). Without the SHARED continuum, two number conjuncts are an ordinary join.
 
-Menu **`o`** / **`ao`** lists discrete values (*3 or 5* / *3 and/or 5*). Equative **`ae`** with numbers is *equal* / *approximately equal* (`z+5 z+5 zael` / `z+3 z+5 zaem`). Three or more number conjuncts under **`a`** are an ordinary list (`z+1 z+3 z+7 zal` = *1, 3, and 7*), even with SHARED. Single-item **`z+3 zal`** is *just 3*, not a ray.
+Menu **`o`** / **`ao`** lists discrete values (*3 or 5* / *3 and/or 5*). Equative **`ae`** with numbers is *equal* / *approximately equal* (`zraval zraval zael` / `zrarel zraval zaem`). Three or more number conjuncts under **`a`** are an ordinary list (`zrawol zrarel zralel zal` = *1, 3, and 7*), even with SHARED. Single-item **`zrarel zal`** is *just 3*, not a ray.
 
 Clock / date ranges: SHARED continuum **`gumem`** (or a host relation + `/b/`) with digit-string endpoints (`b_15,00 b_16,00 boel gumem`). Circumstance **`hal`** is a [restrictor](restrictors.md).
 
 ### Percent and percentage points {#percent-and-percentage-points}
 
-English *25% of the cats* names a **portion of a whole**. Close a **count** (`ra` / `ru`) with **`yo`**. That closer is parallel to fraction closer **`ye`**. The whole is the noun the percent grades, same `/ɡ/` slot as a count (`zagadalx g+3` = *three cats*).
+English *25% of the cats* names a **portion of a whole**. Close a **count** (`ra` / `ru`) with **`yo`**. That closer is parallel to fraction closer **`ye`**. The whole is the noun the percent grades, same `/ɡ/` slot as a count (`zagadalx grarel` = *three cats*).
 
 > `zagadalx g+25%.`
 >
@@ -215,10 +203,7 @@ In [preferred writing](numbers.md#writing-preferred-shorthand): **`%`** → spee
 
 For a count out of a group already named (*three of them*), resume the group and give the count.
 
-> `zagadalx vajul. zagarx g+3 vurunul.`
->
-> 🔊 *zagadalx vajul. zagarx grarel vurunul.*
->
+> `zagadalx vajul. zagarx grarel vurunul.`
 > z-cat-x | v-sit . [z-←cat-x-x | g-three] | v-run
 >
 > "The cats sit. Three of them run."
@@ -231,23 +216,17 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 English *half of the cats* / *a third of the tea* splits the whole into N parts. Put **`g-N`** right after the noun: the **`ru`** marker divides, as `/h/` **`h-N`** does. A whole number of 2 or more names one part in N.
 
-> `zagadalx g-2 vajul.`
->
-> 🔊 *zagadalx grudul vajul.*
->
+> `zagadalx grudul vajul.`
 > [z-cat-x | g-half-of] | v-sit
 >
 > "Half of the cats sit."
 
-> `zadedal g-3 vajul.`
->
-> 🔊 *zadedal grurel vajul.*
->
+> `zadedal grurel vajul.`
 > [z-tea | g-third-of] | v-sit
 >
 > "A third of the tea sits there."
 
-**`g-N`** is a fraction only right after a plain noun. After a [measure](#measure-phrases) unit, a minus number is still a negative amount (`bedurem g-2` *minus 2 meters*).
+**`g-N`** is a fraction only right after a plain noun. After a [measure](#measure-phrases) unit, a minus number is still a negative amount (`bedurem grudul` *minus 2 meters*).
 
 #### *Most* {#most}
 
@@ -265,12 +244,9 @@ English *half of the cats* / *a third of the tea* splits the whole into N parts.
 <a id="numbered-alternatives"></a>
 <a id="ideation"></a>
 
-When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](numbers.md) (`g#N`) — not a closed overlay. *Problem* and *solution* take the published **-m** senses; *goal* is already the **-l** literal. Prefer at least **`g#1`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
+When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](numbers.md) (`g#N`) — not a closed overlay. *Problem* and *solution* take the published **-m** senses; *goal* is already the **-l** literal. Prefer at least **`grewol`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
 
-> `zazawan zagegom g#2 vezehel.`
->
-> 🔊 *zazawan zagegom gredul vezehel.*
->
+> `zazawan zagegom gredul vezehel.`
 > z-Azawan | [z-solution | g-2nd] | v-tell
 >
 > "Azawan names solution 2."
@@ -283,7 +259,7 @@ When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*)
 | free **`g#N`** | rank in **this** numbered-alternative series | *candidate N* | | `#` = ordinal place |
 | soft **`g~#N`** | tentative ranking | *maybe candidate N* | | **-m** leaves the order open |
 
-**Recipe:** `zuzebum g#1` / `zagegom g#2` / `zolalal g#1`
+**Recipe:** `zuzebum grewol` / `zagegom gredul` / `zolalal grewol`
 
 Unnumbered `zuzebum` is just *a problem*, not a candidate in a set — write **`g#N`** when brainstorming. `-l` on the first two roots is still the picture (`zuzebul` *a puzzle piece*; `zagegol` *a key*; `vagegol` *to unlock*). Reframing the **same** situation is different wording of one frame, not a second digit.
 
@@ -350,9 +326,7 @@ z-pill-x | g-25yo
 **4.** *Azawan walks two meters.*
 
 ::: details Show answer
-`zazawan bedurem g+2 vawalal.`
-
-🔊 *zazawan bedurem gradul vawalal.*
+`zazawan bedurem gradul vawalal.`
 
 z-Azawan | [b-meter | g-two] | v-walk
 :::
@@ -360,9 +334,7 @@ z-Azawan | [b-meter | g-two] | v-walk
 **5.** *From 3 to 5 in time.*
 
 ::: details Show answer
-`z+3 z+5 zoel gumem.`
-
-🔊 *zrarel zraval zoel gumem.*
+`zrarel zraval zoel gumem.`
 
 [z-three | z-five | z-in-order | g-duration]
 :::
@@ -380,9 +352,7 @@ z-Ululon | d-_911 | v-see
 **7.** *Ululon punches five rocks.*
 
 ::: details Show answer
-`zululon darogol g+5 vubunul.`
-
-🔊 *zululon darogol graval vubunul.*
+`zululon darogol graval vubunul.`
 
 z-Ululon | [d-rock | g-five] | v-punch
 :::
@@ -442,7 +412,7 @@ z-baby-bottle-x | g-50yo
 *50% of the bottles.*
 :::
 
-**4.** `zazawan dozobol g+1 vejel.`
+**4.** `zazawan dozobol grawol vejel.`
 
 ::: details Show answer
 
@@ -453,7 +423,7 @@ z-Azawan | [d-spoon | g-one] | v-see
 *Azawan sees one spoon.*
 :::
 
-**5.** `z+1 z+3 zal gumem.`
+**5.** `zrawol zrarel zal gumem.`
 
 ::: details Show answer
 
@@ -518,7 +488,7 @@ Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftove
 ### Named standards and derived units
 <a id="unit-short-form"></a>
 
-Everyday measure uses the **unit metaphor** on the stock roots above (`bedurem g+2`). When you cite the **conventional SI name** as a titled standard (*the meter*, *the pascal*), use **-n** on that unit root ([named handles](word-endings.md#named-n-beginner)). Resume a prior unit phrase with **-r** on the same root (`bedurer g+2` after `bedurem g+2` is on the table).
+Everyday measure uses the **unit metaphor** on the stock roots above (`bedurem gradul`). When you cite the **conventional SI name** as a titled standard (*the meter*, *the pascal*), use **-n** on that unit root ([named handles](word-endings.md#named-n-beginner)). Resume a prior unit phrase with **-r** on the same root (`bedurer gradul` after `bedurem gradul` is on the table).
 
 **Common derived (optional)** — unit metaphor on a dedicated root; related **quantity** stays on the original row:
 
@@ -539,18 +509,15 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bedurem g
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
-English *less than 5* / *greater than 5* is a **bound**, not a two-endpoint band. When the **only** member of a [rank join](joins.md#rank-joins) fence (**`e`** / **`ue`** / **`oe`** / **`eo`**, and their open / named twins) is a compatible number word, that number is an extremum on the line. SHARED continuum is optional: absent = implicit numeric line; present = that named line (`z+5 zel gumem` = *time \< 5*). Special values such as +∞ use [digitless exponents](numbers.md#digitless-exponents) inside the number word (`grabal`).
+English *less than 5* / *greater than 5* is a **bound**, not a two-endpoint band. When the **only** member of a [rank join](joins.md#rank-joins) fence (**`e`** / **`ue`** / **`oe`** / **`eo`**, and their open / named twins) is a compatible number word, that number is an extremum on the line. SHARED continuum is optional: absent = implicit numeric line; present = that named line (`zraval zel gumem` = *time \< 5*). Special values such as +∞ use [digitless exponents](numbers.md#digitless-exponents) inside the number word (`grabal`).
 
 Why **`e`** gives *less than*: `X zel` says X is first / greatest, so everything else on the line is less than X. Likewise `X zuel` says X is last / least, so everything else is greater than X.
 
-Sequence **`oe`** reads the line the other way: `X zoel` says the path **starts** at X, so it is *from X on*. A path includes its starting point (like a [range](#ranges)), so this ray is **inclusive**: `z+5 zoel` is *5 or more*.
+Sequence **`oe`** reads the line the other way: `X zoel` says the path **starts** at X, so it is *from X on*. A path includes its starting point (like a [range](#ranges)), so this ray is **inclusive**: `zraval zoel` is *5 or more*.
 
-[Reversed sequence **`eo`**](joins.md#reversed-sequence-eo) runs the same path **down**: `z+5 zeol` starts at 5 and goes toward the low end, so it is *5 or fewer* / *at most 5*, again inclusive.
+[Reversed sequence **`eo`**](joins.md#reversed-sequence-eo) runs the same path **down**: `zraval zeol` starts at 5 and goes toward the low end, so it is *5 or fewer* / *at most 5*, again inclusive.
 
-> `z+5 zel.`
->
-> 🔊 *zraval zel.*
->
+> `zraval zel.`
 > [z-five | z-rank/more]
 >
 > "less than 5."
@@ -569,13 +536,13 @@ Sequence **`oe`** reads the line the other way: `X zoel` says the path **starts*
 | **`z+5 zaen`** | named equal-to band | *equal-to-5* / tie label |
 | **`z+5 zuen`** | named floor band | conventional *greater-than* label |
 
-Same under `/d/` `/b/` `/ɡ/` (`g+5 gel` = modifier *\<5*; `d+10 duel` = object *\>10*). **`ae`** single-item with a number is an ordinary tie of one. Boolean single-item (**`zal`** / **`zol`** / …) is *just this value*. Single-item **`zral zel`** (zero-group) is ordinary single-item on plural/unspecified amount; +∞ is **`zrabal`** / **`grabal`**.
+Same under `/d/` `/b/` `/ɡ/` (`graval gel` = modifier *\<5*; `d+10 duel` = object *\>10*). **`ae`** single-item with a number is an ordinary tie of one. Boolean single-item (**`zal`** / **`zol`** / …) is *just this value*. Single-item **`zral zel`** (zero-group) is ordinary single-item on plural/unspecified amount; +∞ is **`zrabal`** / **`grabal`**.
 
 Rank bounds (**`e`** / **`ue`**) are **strict** (`<` / `>`). The sequence rays are **inclusive**: **`oe`** is `≥`, **`eo`** is `≤`.
 
-Standalone **`e`** + **-r** = unspecified member of the *\< X* ray (`z+5 zer` → *some/whatever value \< 5*; under question → *which value \< 5?*). **`ue`** takes no **-r** (stacked forms never do: [joins](joins.md#unspecified-member-r-phrase)).
+Standalone **`e`** + **-r** = unspecified member of the *\< X* ray (`zraval zer` → *some/whatever value \< 5*; under question → *which value \< 5?*). **`ue`** takes no **-r** (stacked forms never do: [joins](joins.md#unspecified-member-r-phrase)).
 
-**Compare with:** `z+3 z+5 zoel gumem` (*from 3 to 5 in time*) is a two-endpoint range; `z+3 z+5 zel` is preference; `zazawan zel` (a person) is *only Azawan matters* / [superlative-with-scale](comparatives.md). A **single-item number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
+**Compare with:** `zrarel zraval zoel gumem` (*from 3 to 5 in time*) is a two-endpoint range; `zrarel zraval zel` is preference; `zazawan zel` (a person) is *only Azawan matters* / [superlative-with-scale](comparatives.md). A **single-item number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
 
 ### Half-open (exclude the high end only) {#half-open-exclude-the-high-end-only}
 
@@ -604,7 +571,7 @@ Fence **-r** on a number-range shape (still with SHARED continuum) names an **un
 | `z+3 z+5 zer gurulem` | whatever-by-rank | *whatever-by-rank in [3, 5]* |
 | `z+3 z+5 zur gurulem` | other-than the range | *some value other than (in) [3, 5]* |
 
-Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which value in 3–5?*). Same under `/d/` `/b/` `/ɡ/` as the slot needs (`g+3 g+5 gal gumem` = modifier *times 3–5*; `d+10 ul d+20 dar gurulem` = object *some value in [10, 20)*).
+Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which value in 3–5?*). Same under `/d/` `/b/` `/ɡ/` as the slot needs (`grarel graval gal gumem` = modifier *times 3–5*; `d+10 ul d+20 dar gurulem` = object *some value in [10, 20)*).
 
 **Not the same job as:** content-word resume **-r**, and discrete *something among two listed values*.
 
@@ -627,7 +594,7 @@ A bare `/z/` (or other freestanding) **`…yo`** percent with no named whole is 
 
 On forward **`#`** / **`re`** and end-relative **`#-`** / **`rue`**, a **digitful** exponent is not a power of ten. It is **how many generations away** from a focused person, version, or outline item. Use this when English would say *the third grandchild* or *the 3rd sub-point*.
 
-The marker still counts **from the start** or **from the end** inside that cohort. The exponent **`eK`** / **`e-K`** names generation **+K** (deeper / descendants) or **−K** (enclosing / ancestors). The mantissa picks which slot; omit it to name the whole cohort. Omit the exponent for the **same** generation as the focus (`g#3` = 3rd peer). Named **`e0`** asserts current generation (usually redundant).
+The marker still counts **from the start** or **from the end** inside that cohort. The exponent **`eK`** / **`e-K`** names generation **+K** (deeper / descendants) or **−K** (enclosing / ancestors). The mantissa picks which slot; omit it to name the whole cohort. Omit the exponent for the **same** generation as the focus (`grerel` = 3rd peer). Named **`e0`** asserts current generation (usually redundant).
 
 | Piece | Job |
 |-------|-----|
@@ -650,22 +617,19 @@ The marker still counts **from the start** or **from the end** inside that cohor
 | **`g#e-1`** | generation −1 / parent layer (member unspecified) |
 | **`g#1e-1`** | 1st of generation −1 (often *the parent* when the cohort is singleton-framed) |
 
-`/x/` treats generation as **agenda nesting** (`x#3e2` = *3rd sub-sub-point under the focus*; **`x#e0`** = *current-layer item(s)*). `/h/` / `/v/` / `/y/` inherit the same product (*for the 3rd time in gen +2*, *place 3rd in gen +2*, …) when the series is generation-structured. A flat event count uses **`h#N`**.
+`/x/` treats generation as **agenda nesting** (`x#3e2` = *3rd sub-sub-point under the focus*; **`xrebazol`** = *current-layer item(s)*). `/h/` / `/v/` / `/y/` inherit the same product (*for the 3rd time in gen +2*, *place 3rd in gen +2*, …) when the series is generation-structured. A flat event count uses **`h#N`**.
 
 #### Kin {#kin-generations}
 
 Generations form a **tree**, like an outline. A cohort is only the members **under the same node**, so the plain forms name close family and never side branches:
 
-- **`g#e-1`** is the layer directly above the focus: the **parents**, not aunts or uncles.
-- **`g#e0`** is the others under the same parent: the **siblings**, not cousins. It never includes the focus.
-- **`g#e1`** / **`g#e2`** are the focus's own **children** / **grandchildren**, not nieces or nephews.
+- **`grebuwol`** is the layer directly above the focus: the **parents**, not aunts or uncles.
+- **`grebazol`** is the others under the same parent: the **siblings**, not cousins. It never includes the focus.
+- **`grebawol`** / **`grebadul`** are the focus's own **children** / **grandchildren**, not nieces or nephews.
 
 The mantissa is **birth order** within that cohort: **`g#1e0`** is the eldest sibling, **`g#-1e0`** the youngest. To say whose family it is, put the anchor person in `/b/` right after the number. (cue: the number says how far up or down the tree; `/b/` says from whom)
 
-> `zululon g#e0 bazawan vawalal.`
->
-> 🔊 *zululon grebazol bazawan vawalal.*
->
+> `zululon grebazol bazawan vawalal.`
 > [z-Ululon | [g-#-e0 | b-Azawan]] | v-walk
 >
 > "Ululon, Azawan's sibling, walks."
@@ -688,7 +652,7 @@ The mantissa is **birth order** within that cohort: **`g#1e0`** is the eldest si
 
 For a side branch, nest a second anchor: first step to the relative, then from there. *Aunt or uncle* is a sibling of a parent.
 
-> `zululon g#e0 beberel g#1e-1 bazawan vawalal.`
+> `zululon grebazol beberel g#1e-1 bazawan vawalal.`
 >
 > 🔊 *zululon grebazol beberel grebuwoyawol bazawan vawalal.*
 >

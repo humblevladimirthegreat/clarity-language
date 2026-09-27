@@ -73,7 +73,7 @@ describe("morphGlossLine — SHARED only where it can describe the join", () => 
     expectLine("zodogol garedel gumuzem gal hohogem vawalal.", "[z-dog | [g-red | g-small | g-and]] | h-intensity | v-walk");
   });
   it("keeps a range continuum after two number endpoints", () => {
-    expectLine("zodogol g+3 g+5 gal gurulem vawalal.", "[z-dog | [g-three | g-five | g-and | g-measurement]] | v-walk");
+    expectLine("zodogol grarel graval gal gurulem vawalal.", "[z-dog | [g-three | g-five | g-and | g-measurement]] | v-walk");
   });
 });
 
@@ -148,17 +148,20 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zazawan vawalal hanunul hal", "z-Azawan | v-walk | h-rain | h-only-when");
     expectLine("hual", "h-always");
     expectLine("von", "v-choose");
-    expectLine("g+3", "g-three");
-    expectLine("grarel", "g-three.spelled");
+    expectLine("grarel", "g-three");
+    expectLine("g+3", "g-three.short");
+    expectLine("g+12", "g-twelve");
+    expectLine("grawodul", "g-twelve.spelled");
+    expectLine("g+3 g+12", "g-three | g-twelve");
     expectLine("gral", "g-more-than-one");
     expectLine("g+", "g-more-than-one.short");
-    expectLine("g#2", "g-2nd");
+    expectLine("gredul", "g-2nd");
   });
 
   it("scientific and percent number writing", () => {
     expectLine("g+27e12", "g-27e12");
     expectLine("g+25%", "g-25yo");
-    expectLine("g+3", "g-three");
+    expectLine("grarel", "g-three");
   });
 
   it("worked single-words table", () => {
@@ -234,7 +237,7 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
   it("numbered alternative + unmet pleasure", () => {
     expectLine(
-      "xrebul zuzebum g#1 zugobonx thawerothur.",
+      "xrebul zuzebum grewol zugobonx thawerothur.",
       "x-starting-with | [z-problem | g-1st] | z-speaker-x | th-pleasure-unmet-passing",
     );
   });

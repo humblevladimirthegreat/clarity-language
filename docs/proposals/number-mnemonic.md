@@ -1,7 +1,7 @@
 # Proposal: digit-onset mnemonic (Major system)
 
 **Status:** PROPOSED  
-**Related:** [numbers.md § Saying it aloud](../grammar/numbers.md#digits) (digit syllables); [phonology.md § letter names](../grammar/phonology.md#letter-names) (opposite-vowel names so recitation ≠ digit); [phonology.md § phonotactics](../grammar/phonology.md#phonotactics) (roots `V(CV)+`; ending consonants); [lexicon.md](../grammar/lexicon.md) / [`data/lexicon-published.csv`](../../data/lexicon-published.csv)  
+**Related:** [numbers.md § Counts](../grammar/numbers.md#counts) (digit syllables); [phonology.md § letter names](../grammar/phonology.md#letter-names) (opposite-vowel names so recitation ≠ digit); [phonology.md § phonotactics](../grammar/phonology.md#phonotactics) (roots `V(CV)+`; ending consonants); [lexicon.md](../grammar/lexicon.md) / [`data/lexicon-published.csv`](../../data/lexicon-published.csv)  
 **Design authority:** spoken number grammar is unchanged. This is an optional **memory channel** that reuses the existing digit onsets. It does not add morphology, a second digit table, or numeric-derivation readings.
 
 ## Motivation
@@ -32,7 +32,7 @@ Usability depends on having **enough two- and three-syllable content roots** wit
 
 ## The map
 
-Same onsets as [digit syllables](../grammar/numbers.md#digits):
+Same onsets as [digit syllables](../grammar/numbers.md#counts):
 
 | Digit | Onset | Syllable |
 |-------|--------|----------|

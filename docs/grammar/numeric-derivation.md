@@ -73,7 +73,7 @@ English *quasi-* says something has the **shape or role** of a kind without coun
 
 ###### Quasi-N (`-e-1` / `-e-2`)
 
-When you need *quasi-* plus a **part-count** (as-if one, as-if a pair), add the same strong digit as **`+N`**, written **`-e-N`**: stem **`ru` + `bu` + exponent digit `N`** (bare order-of-magnitude anatomy, no leading digit before the exponent). That is as-if N-structure without treating it as real. Free **`g-e-1`** / **`g-e-2`** are real negative amounts in the OoM −1 / −2 bands, not this kind reading.
+When you need *quasi-* plus a **part-count** (as-if one, as-if a pair), add the same strong digit as **`+N`**, written **`-e-N`**: stem **`ru` + `bu` + exponent digit `N`** (bare order-of-magnitude anatomy, no leading digit before the exponent). That is as-if N-structure without treating it as real. Free **`grubuwol`** / **`grubudul`** are real negative amounts in the OoM −1 / −2 bands, not this kind reading.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -130,14 +130,14 @@ English *a pair of…*, *three-part…*, *primary…* can name **how many parts 
 | **`/w/`** (adjunct) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `wonenolrazol gonenol`: *debt (ascribed) zeroed*; `wonenolruzol gonenol`: *debt whose balance is anti-null* |
 | **`/y/`** (interjection) | discourse *Zero it!* / *Null!* | discourse *Won’t zero!* / *Residue stands!* | `yodobolrazol`; `yodobolruzol` |
 
-**Related form:** a stronger wipe of the kind is [total null](#zero-exponent-derivation) **`ROOTl+0e`**. Hostless *annihilate* is free **`v+0el`**.
+**Related form:** a stronger wipe of the kind is [total null](#zero-exponent-derivation) **`ROOTl+0e`**. Hostless *annihilate* is free **`vrazobal`**.
 
 ### Zero × exponent (`+0e` / `±0e-1` / …)
 <a id="zero-exponent-derivation"></a>
 <a id="total-null"></a>
 <a id="engineering-null-morph"></a>
 
-The same zero×exponent stems as free [zero × exponent](numbers.md#zero-exponent) can sit on ROOT. Then they name **wipe or residue of the kind**, not a hostless amount. Free **`v+0el`** is *annihilate* with no kind attached; **`vodobolrazobal`** is annihilate-*score*.
+The same zero×exponent stems as free [zero × exponent](numbers.md#zero-exponent) can sit on ROOT. Then they name **wipe or residue of the kind**, not a hostless amount. Free **`vrazobal`** is *annihilate* with no kind attached; **`vodobolrazobal`** is annihilate-*score*.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -150,7 +150,7 @@ The same zero×exponent stems as free [zero × exponent](numbers.md#zero-exponen
 
 The **host ending** marks soft / named / resume.
 
-**Emptiness chain (kinds):** **`ROOTl-e`** (void of kind), **`ROOTl+0`** (resettable null), **`ROOTl+0e`** (total null), **`ROOTl+0e-`** (sterile grain), **`ROOTl+0e-1`** (engineering null at 10⁻¹). Free bare **`g+e0`** / **`Ne0`** are [ones-band / OoM-0 assert](numbers.md#bare-oom-bands) on free numbers.
+**Emptiness chain (kinds):** **`ROOTl-e`** (void of kind), **`ROOTl+0`** (resettable null), **`ROOTl+0e`** (total null), **`ROOTl+0e-`** (sterile grain), **`ROOTl+0e-1`** (engineering null at 10⁻¹). Free bare **`grabazol`** / **`Ne0`** are [ones-band / OoM-0 assert](numbers.md#bare-oom-bands) on free numbers.
 
 On free numbers, **`±0e-1`** is scalar anatomy; on ROOT the same stems are kind-scale wipe / residue.
 
@@ -165,7 +165,7 @@ On free numbers, **`±0e-1`** is scalar anatomy; on ROOT the same stems are kind
 | **`/w/`** | host graded toward total null | `wonenolrazobal gonenol` |
 | **`/y/`** | *Annihilate that kind!* | `yodobolrazobal` |
 
-**`-0e` / `-0e-` / `±0e-1`** inherit the same role-letter framing (absolute residue / micro-residue / engineering null·residue at order of magnitude −1). Free twins: **`v+0el`** *annihilate*; **`g+0e`** absolute-zero amount; **`g+0e-1`** / **`g-0e-1`** engineering null / residue: [numbers.md § Zero × exponent](numbers.md#zero-exponent).
+**`-0e` / `-0e-` / `±0e-1`** inherit the same role-letter framing (absolute residue / micro-residue / engineering null·residue at order of magnitude −1). Free twins: **`vrazobal`** *annihilate*; **`grazobal`** absolute-zero amount; **`g+0e-1`** / **`g-0e-1`** engineering null / residue: [numbers.md § Zero × exponent](numbers.md#zero-exponent).
 
 ##### Rank-annihilated morph (`#0e`)
 <a id="rank-annihilated-morph"></a>
@@ -264,7 +264,7 @@ Mantissa (the digit before the unbounded exponent) plus digitless exp is **comic
 | **`ROOTl_1e`** | *gazillion-coded ROOT* (comic SKU sprawl) | `zavagalrowobal`: *a gazillion-SKU product* | **`_`** + **1e** = comic SKU sprawl |
 | **`ROOTl_1e-`** | *gazillionth-of-a-code ROOT* (vanishing ID) | `zeguzelrowobul`: *a vanishingly coded registration* | **`_`** + **1e-** = a vanishing ID |
 
-Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zahalrewobal`** = *an umpteenth co-participation* (noun kind).
+Free **`hrewobal`** = *for the gazillionth time* (clause adverb). Derived **`zahalrewobal`** = *an umpteenth co-participation* (noun kind).
 
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
@@ -327,7 +327,7 @@ z-Ululon | d-gold-l-1st | v-pour
 ::: details Show answer
 `zululon vologolrazobal.`
 
-z-Ululon | v-gold-l-plus-infinity
+z-Ululon | v-gold-l-+-0e
 :::
 
 #### Agalan → English {#advanced-agalan-to-english}

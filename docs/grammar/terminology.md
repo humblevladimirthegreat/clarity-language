@@ -161,7 +161,7 @@ Span open that does not nest-push (EDGE **o**).
 
 ### Bare OoM
 
-Digitless exponent naming a magnitude band (`g+e0`, `g+e3`).
+Digitless exponent naming a magnitude band (`grabazol`, `grabarel`).
 
 [Numbers](numbers.md#bare-oom-bands)
 

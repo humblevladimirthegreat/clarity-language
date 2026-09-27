@@ -163,7 +163,7 @@ type FamilyKind = MorphWordFamily["kind"];
 
 export const WORD_FAMILY_CONSTRUCTIONS: Record<FamilyKind, ConstructionEntry> = {
   content: { anchor: "phonology.md#word-edges", summary: "content word" },
-  number: { anchor: "numbers.md#counts-g-n", summary: "number word" },
+  number: { anchor: "numbers.md#counts", summary: "number word" },
   x: { anchor: "interests.md#time-horizon-endings-on-met", summary: "mid-word x compound" },
   spanClose: { anchor: "spans.md#shape", summary: "span close" },
   hook: { anchor: "hooks.md#beginner", summary: "hook" },
@@ -205,7 +205,7 @@ export const WORD_READING_CONSTRUCTIONS: Record<Exclude<LexReading, OverlayOnlyR
   join: { anchor: "joins.md#and-lists-a", summary: "join" },
   standIn: { anchor: "dependents.md#dependent-clauses", summary: "stand-in" },
   standInNamed: { anchor: "dependents.md#stand-in-roles", summary: "named stand-in" },
-  number: { anchor: "numbers.md#counts-g-n", summary: "number" },
+  number: { anchor: "numbers.md#counts", summary: "number" },
   unknown: { anchor: "spans.md#writing", summary: "unclassified root" },
 };
 
@@ -271,14 +271,14 @@ export const TONE_CONSTRUCTIONS = {
  * stem inside a numeric derivation.
  */
 export const NUMBER_FEATURE_CONSTRUCTIONS = {
-  "marker.scalarPos": { anchor: "numbers.md#counts-g-n", summary: "+ count" },
+  "marker.scalarPos": { anchor: "numbers.md#counts", summary: "+ count" },
   "marker.scalarNeg": { anchor: "numbers.md#marker-vowel-referential-identity", summary: "- negative" },
-  "marker.ordinalFwd": { anchor: "numbers.md#ordinals-g-n", summary: "# ordinal" },
+  "marker.ordinalFwd": { anchor: "numbers.md#ordinals", summary: "# ordinal" },
   "marker.ordinalEnd": { anchor: "numbers.md#from-the-end-—-end-relative-ordinal-marker-ue", summary: "#- ordinal from the end" },
   "marker.label": { anchor: "numbers.md#marker-vowel-referential-identity", summary: "_ label / digit string" },
   "marker.negativeLabel": { anchor: "numbers.md#stacked-markers", summary: "#_ negative label" },
   "marker.errorBound": { anchor: "numbers.md#stacked-markers", summary: "+- error bound" },
-  digitless: { anchor: "numbers.md#more-than-one-g", summary: "number with no digits" },
+  digitless: { anchor: "numbers.md#more-than-one", summary: "number with no digits" },
   exponent: { anchor: "numbers.md#exponents", summary: "digitful exponent" },
   "exp.landmark": { anchor: "numbers.md#digitless-exponents", summary: "digitless exponent e / e-" },
   "exp.bareOom": { anchor: "numbers.md#bare-oom", summary: "bare OoM band e0 / e3" },

@@ -407,7 +407,7 @@ Beginner already used **-x** on nouns and person-role specials. The rest of the 
 | `/ɡ/`…**-x** | collective property | the set as one pile |
 | inner words of a non-opaque span | group reference inside the span | **-x** on those inner words |
 
-**Related form:** a count uses a [number](numbers.md) on `/ɡ/` (digitless **`gral`** = more than one; `g+3` = three). **-x** and a count can combine (`zagadalx g+3`).
+**Related form:** a count uses a [number](numbers.md) on `/ɡ/` (digitless **`gral`** = more than one; `grarel` = three). **-x** and a count can combine (`zagadalx grarel`).
 
 **For *every K*, use:** [universals](joins.md#universals-domains-generics) (`zual gagadal`; habitual **`hual`**).
 

@@ -492,7 +492,7 @@ Rank **`e`** puts the first item at the **top** (*A matters more than B*). When 
 | Single-item | `X zoel` *start with X* / *from X on* | `X zoem` *maybe start with X* |
 | Standalone | `zoel` *in no particular order* / *any order* | `zoem` *not sure where to start* |
 
-A sequence does not say which item is better. With two number endpoints and a SHARED continuum it is a [range](numbers-applied.md#ranges) (`z+3 z+5 zoel gumem` = *from 3 to 5*); a single number is an inclusive [ray](numbers-applied.md#numeric-thresholds) (`z+5 zoel` = *5 or more*). With a SHARED quality it sorts the list from low to high: [comparatives](comparatives.md#sequence-scale). (cue: **o** ≈ one + **e** ≈ order — one after another)
+A sequence does not say which item is better. With two number endpoints and a SHARED continuum it is a [range](numbers-applied.md#ranges) (`zrarel zraval zoel gumem` = *from 3 to 5*); a single number is an inclusive [ray](numbers-applied.md#numeric-thresholds) (`zraval zoel` = *5 or more*). With a SHARED quality it sorts the list from low to high: [comparatives](comparatives.md#sequence-scale). (cue: **o** ≈ one + **e** ≈ order — one after another)
 
 **Compare with:** clause *and then* between sentences is [sequence **`xan`**](join-across-roles.md#sequence). **`zoel`** orders nouns inside one slot.
 
@@ -506,7 +506,7 @@ A sequence does not say which item is better. With two number endpoints and a SH
 >
 > "Uhubun, then Ululon, then Azawan."
 
-Its main use is with one number. `z+5 zoel` runs **up** from 5 (*5 or more*). `z+5 zeol` runs **down** from 5 (*5 or fewer*): an inclusive [ray](numbers-applied.md#numeric-thresholds) the other way.
+Its main use is with one number. `zraval zoel` runs **up** from 5 (*5 or more*). `zraval zeol` runs **down** from 5 (*5 or fewer*): an inclusive [ray](numbers-applied.md#numeric-thresholds) the other way.
 
 | Arity | Closed **-l** | Open **-m** |
 |-------|---------------|-------------|

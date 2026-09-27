@@ -93,11 +93,11 @@ When English says *how many* or *which place*, Agalan writes a [number word](num
 
 > `zagadalx grarel.`
 >
-> z-cat-x | g-three.spelled
+> z-cat-x | g-three
 >
 > "Three cats."
 
-Spoken `g+3` is `grarel` (`g` + `ra` + digit `re` + `-l`). Each written comma is spoken as a [group separator](numbers.md#group-separator), **`th`** plus the marker’s vowel. Inside a content root, `r` still appears only after a vowel (`uruge`).
+`grarel` is `g` + `ra` + digit `re` + `-l`. Each written comma is spoken as a [group separator](numbers.md#group-separator), **`th`** plus the marker’s vowel. Inside a content root, `r` still appears only after a vowel (`uruge`).
 
 **Compare with:** ordinary endings on content words use [word ending](word-endings.md) senses. Number words reuse those same four letters with [number-specific endings](word-endings.md#number-word-exception).
 
@@ -133,7 +133,7 @@ When you **spell a word aloud** or **name a letter**, say the Agalan name for it
 
 In a clause, package the glyph as a [mention](spans.md) (`d{z}`: interior spoken `ze`).
 
-Ten letters also begin a [digit syllable](numbers.md#digits). The letter name uses the **opposite** vowel (`a`↔`u`, `o`↔`e`), so naming the letter is not the same as counting.
+Ten letters also begin a [digit syllable](numbers.md#counts). The letter name uses the **opposite** vowel (`a`↔`u`, `o`↔`e`), so naming the letter is not the same as counting.
 
 | Agalan | Digit syllable | Name | Cue |
 |--------|----------------|------|-----|
@@ -181,6 +181,6 @@ A line that piles closed vowels, clusters, and mid-word stops is harder to susta
 
 - Citation (root + ending, no sentence): [word-endings.md](word-endings.md)
 - Role letters in a clause: [clause.md](clause.md#role-letters)
-- Numbers (PoS+`r` exception and [digit syllables](numbers.md#digits)): [numbers.md](numbers.md)
+- Numbers (PoS+`r` exception and [digit syllables](numbers.md#counts)): [numbers.md](numbers.md)
 - Mention spans (letter as form in a clause): [spans.md](spans.md)
 - Mid-word `x` and `th`: [x-compounds.md](x-compounds.md)

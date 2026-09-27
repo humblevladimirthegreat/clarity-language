@@ -4,49 +4,63 @@ Use a number word when English would say **how many** of something (*three cats*
 
 ## Beginner {#beginner}
 
-### Counts (`g+N`)
+### Counts {#counts}
 
-To say **how many** of a thing there are, put a number word after the noun, in the same place as other adjectives (`/ɡ/`). The word starts with **`g`**, then the count marker (written **`+`**), then the digit: **`g+3`** is *three*.
+To say **how many** of a thing there are, put a number word after the noun, in the same place as other adjectives (`/ɡ/`). A number word is built like any other word, one syllable at a time:
 
-> `zagadalx g+3.`
->
-> 🔊 *zagadalx grarel.*
->
+1. the role letter **`g`**;
+2. the count marker **`ra`**;
+3. one syllable for each digit;
+4. the ending **-l**.
+
+Digits are spoken and written as these syllables:
+
+| Digit | Syllable | Digit | Syllable |
+|-------|----------|-------|----------|
+| 1 | wo | 6 | gu |
+| 2 | du | 7 | le |
+| 3 | re | 8 | ha |
+| 4 | mo | 9 | na |
+| 5 | va | 0 | zo |
+
+So *three* is **g** + **ra** + **re** + **l**: **`grarel`**.
+
+> `zagadalx grarel.`
 > z-cat-x | g-three
 >
 > "Three cats."
 
-> `zazawan dabogolx g+3 vejel.`
->
-> 🔊 *zazawan dabogolx grarel vejel.*
->
+> `zazawan dabogolx grarel vejel.`
 > z-Azawan | [d-book-x | g-three] | v-see
 >
 > "Azawan sees three books."
 
-### Ordinals (`g#N`)
+A number with more digits is still **one word**: one syllable per digit, left to right. *Twenty* is **g** + **ra** + **du** + **zo** + **l**: **`graduzol`**.
 
-To say **which place** a thing has in a series (*the first*, *the second*, …), put a rank number after the noun, in the same adjective place. **`g#2`** is *the second*. Written **`#`** is the rank marker; the digit follows.
+### Ordinals {#ordinals}
 
-> `zabogol g#2.`
->
-> 🔊 *zabogol gredul.*
->
+To say **which place** a thing has in a series (*the first*, *the second*, …), swap the count marker **`ra`** for the rank marker **`re`**. **`gredul`** is *the second*.
+
+> `zabogol gredul.`
 > z-book | g-2nd
 >
 > "The second book."
 
-> `zululon dabogol g#3 vuwurul.`
->
-> 🔊 *zululon dabogol grerel vuwurul.*
->
+> `zululon dabogol grerel vuwurul.`
 > z-Ululon | [d-book | g-3rd] | v-write
 >
 > "Ululon writes the third book."
 
-### More than one (`gral`) {#more-than-one-g}
+| Marker | Use | English | Cue |
+|--------|--------|---------|-----|
+| **`ra`** | count | *how many* | **`a`** ≈ add |
+| **`re`** | rank | *which place* | **`e`** ≈ order |
 
-You can say the count is **more than one** without naming how many. Keep the count marker and leave the digits off: **`gral`**. A number word with no digits is written out in letters; tables write it `g+`.
+The marker **`r`** right after the role letter is how you hear that a word is a number: ordinary words never put a consonant there.
+
+### More than one (`gral`) {#more-than-one}
+
+You can say the count is **more than one** without naming how many. Keep the count marker and leave the digits off: **`gral`**.
 
 Naming the group (*cats* as a set) uses [**-x**](plurality.md) on the noun. Saying the amount is a different tool. Both may sit on the same noun (`zagadalx gral`).
 
@@ -57,37 +71,9 @@ Naming the group (*cats* as a set) uses [**-x**](plurality.md) on the noun. Sayi
 
 **Compare with:** English *some cats* (a set in this situation, no count) uses the noun plus [**-x**](plurality.md). Use **`gral`** when you mean the amount is more than one.
 
-### Saying it aloud {#digits}
-
-On the page, a number with digits uses the short form (`g+3`, `g#2`). Spoken, that is still **one word**: the role-letter sound, then a **marker syllable**, then a syllable for each digit, then the ending.
-
-Two marker syllables cover count and rank:
-
-| Agalan | Use | English | Cue |
-|--------|--------|---------|-----|
-| **ra** (`+`) | count | *how many* | **`a`** ≈ add |
-| **re** (`#`) | rank | *which place* | **`e`** ≈ order |
-
-Digits are spoken as these syllables:
-
-| Digit | Syllable | Digit | Syllable |
-|-------|----------|-------|----------|
-| 1 | wo | 6 | gu |
-| 2 | du | 7 | le |
-| 3 | re | 8 | ha |
-| 4 | mo | 9 | na |
-| 5 | va | 0 | zo |
-
-The word ends with exact **-l**, spoken as its own last syllable. Build the spoken form left to right:
-
-- `g+3` → **g** + **ra** + re → ***grarel*** (*three*)
-- `g#2` → g + **re** + du → ***gredul*** (*the second*)
-- `g+20` → g + ra + du zo → *graduzol* (*twenty*)
-- `g+` → g + ra + l → *gral* (*more than one*)
-
 ### Translation practice {#beginner-translation-practice}
 
-Short drills for Beginner. Try each item before opening **Show answer**. Count with `g+N`, rank with `g#N`, and use digitless **`gral`** with **-x** on the noun for *more than one*. After the sentence drills, convert shorthand to speech and speech to shorthand.
+Short drills for Beginner. Try each item before opening **Show answer**. Count with **`ra`**, rank with **`re`**, and use digitless **`gral`** with **-x** on the noun for *more than one*.
 
 **Setting:** a bakery
 
@@ -114,9 +100,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Count w
 **1.** *Two baguettes.*
 
 ::: details Show answer
-`zabagulx g+2.`
-
-🔊 *zabagulx gradul.*
+`zabagulx gradul.`
 
 z-baguette-x | g-two
 :::
@@ -124,9 +108,7 @@ z-baguette-x | g-two
 **2.** *The third croissant.*
 
 ::: details Show answer
-`zogozal g#3.`
-
-🔊 *zogozal grerel.*
+`zogozal grerel.`
 
 z-croissant | g-3rd
 :::
@@ -142,9 +124,7 @@ z-cookie-x | g-more-than-one
 **4.** *Azawan sees three breads.*
 
 ::: details Show answer
-`zazawan dereralx g+3 vejel.`
-
-🔊 *zazawan dereralx grarel vejel.*
+`zazawan dereralx grarel vejel.`
 
 z-Azawan | [d-bread-x | g-three] | v-see
 :::
@@ -152,9 +132,7 @@ z-Azawan | [d-bread-x | g-three] | v-see
 **5.** *Ululon smells the second pie.*
 
 ::: details Show answer
-`zululon dububel g#2 vonozel.`
-
-🔊 *zululon dububel gredul vonozel.*
+`zululon dububel gredul vonozel.`
 
 z-Ululon | [d-pie | g-2nd] | v-smell
 :::
@@ -170,9 +148,7 @@ z-Uhubun | [d-doughnut-x | g-more-than-one] | v-see
 **7.** *Ululon smells three baguettes.*
 
 ::: details Show answer
-`zululon dabagulx g+3 vonozel.`
-
-🔊 *zululon dabagulx grarel vonozel.*
+`zululon dabagulx grarel vonozel.`
 
 z-Ululon | [d-baguette-x | g-three] | v-smell
 :::
@@ -180,31 +156,25 @@ z-Ululon | [d-baguette-x | g-three] | v-smell
 **8.** *Ululon sees the first fire.*
 
 ::: details Show answer
-`zululon durel g#1 vejel.`
-
-🔊 *zululon durel grewol vejel.*
+`zululon durel grewol vejel.`
 
 z-Ululon | [d-fire | g-1st] | v-see
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
 
-**1.** `zogozalx g+2.`
+**1.** `zogozalx gradul.`
 
 ::: details Show answer
-
-🔊 *zogozalx gradul.*
 
 z-croissant-x | g-two
 
 *Two croissants.*
 :::
 
-**2.** `zereral g#2.`
+**2.** `zereral gredul.`
 
 ::: details Show answer
-
-🔊 *zereral gredul.*
 
 z-bread | g-2nd
 
@@ -215,18 +185,14 @@ z-bread | g-2nd
 
 ::: details Show answer
 
-🔊 *zabagulx gral.*
-
 z-baguette-x | g-more-than-one
 
 *Baguettes — more than one.*
 :::
 
-**4.** `zuhubun dogogelx g+3 vejel.`
+**4.** `zuhubun dogogelx grarel vejel.`
 
 ::: details Show answer
-
-🔊 *zuhubun dogogelx grarel vejel.*
 
 z-Uhubun | [d-cookie-x | g-three] | v-see
 
@@ -237,18 +203,14 @@ z-Uhubun | [d-cookie-x | g-three] | v-see
 
 ::: details Show answer
 
-🔊 *zazawan dububelx gral vejel.*
-
 z-Azawan | [d-pie-x | g-more-than-one] | v-see
 
 *Azawan sees more than one pie.*
 :::
 
-**6.** `zululon dabagelx g+2 vonozel.`
+**6.** `zululon dabagelx gradul vonozel.`
 
 ::: details Show answer
-
-🔊 *zululon dabagelx gradul vonozel.*
 
 z-Ululon | [d-bagel-x | g-two] | v-smell
 
@@ -259,135 +221,25 @@ z-Ululon | [d-bagel-x | g-two] | v-smell
 
 ::: details Show answer
 
-🔊 *zululon dabagelx gral vejel.*
-
 z-Ululon | [d-bagel-x | g-more-than-one] | v-see
 
 *Ululon sees more than one bagel.*
 :::
 
-**8.** `zululon durel g#1 vonozel.`
+**8.** `zululon durel grewol vonozel.`
 
 ::: details Show answer
-
-🔊 *zululon durel grewol vonozel.*
 
 z-Ululon | [d-fire | g-1st] | v-smell
 
 *Ululon smells the first fire.*
 :::
 
-#### Written → spoken
-
-**1.** `g+4`
-
-::: details Show answer
-
-🔊 *gramol*
-
-g-four
-:::
-
-**2.** `g#1`
-
-::: details Show answer
-
-🔊 *grewol*
-
-g-1st
-:::
-
-**3.** `g+`
-
-::: details Show answer
-
-🔊 *gral*
-
-g-more-than-one.short
-:::
-
-**4.** `g+21`
-
-::: details Show answer
-
-🔊 *graduwol*
-
-g-21
-:::
-
-**5.** `g#8`
-
-::: details Show answer
-
-🔊 *grehal*
-
-g-8th
-:::
-
-**6.** `g+7`
-
-::: details Show answer
-
-🔊 *gralel*
-
-g-seven
-:::
-
-#### Spoken → written
-
-**1.** 🔊 *gradul*
-
-::: details Show answer
-`g+2`
-
-g-two
-:::
-
-**2.** 🔊 *grerel*
-
-::: details Show answer
-`g#3`
-
-g-3rd
-:::
-
-**3.** 🔊 *grawozol*
-
-::: details Show answer
-`g+10`
-
-g-ten
-:::
-
-**4.** 🔊 *grenal*
-
-::: details Show answer
-`g#9`
-
-g-9th
-:::
-
-**5.** 🔊 *graval*
-
-::: details Show answer
-`g+5`
-
-g-five
-:::
-
-**6.** 🔊 *grazol*
-
-::: details Show answer
-`g+0`
-
-g-zero
-:::
-
 ## Intermediate {#intermediate}
 
 ### Word shape
 
-Beginner already used one spoken word: role letter, marker, digits, ending. The same four slots hold every free number you meet next.
+Beginner already built one word: role letter, marker, digit syllables, ending. The same four slots hold every free number you meet next.
 
 ```text
 [PoS] + r + V + ( group ( th + V₁ + group )* )? + [ending]
@@ -400,7 +252,7 @@ group = [exponent?] [mantissa digits?]
 4. **Group separator:** each group after the first opens with **`th`** plus **V₁**, the first vowel of the marker ([below](#group-separator)).
 5. **Ending:** `-l` / `-m` / `-n` / `-r`.
 
-Speech is always the full CV form. Writing uses shorthand when the word has digits (`g+3`) and spells it out when it has none (`gral`): [style](#writing-style-numeric-vs-spelled).
+Speech is always the full CV form. Writing also has a [shorthand](#writing-preferred-shorthand) for numbers with two or more digits (`g+12`); zero, one digit, or none stays spelled (`grarel`, `gral`): [style](#writing-style-numeric-vs-spelled).
 
 **Related form:** naming a group of people or things uses [**-x**](plurality.md) on an ordinary noun.
 
@@ -410,10 +262,7 @@ Beginner put the number after a noun (*three cats*). You can also put the **numb
 
 Change only the first letter. The marker and digits stay the same; referential prefixes (`/ɡ/`, `/z/`, `/d/`, `/b/`) keep the marker’s identity.
 
-> `z+3 gelulul.`
->
-> 🔊 *zrarel gelulul.*
->
+> `zrarel gelulul.`
 > z-three | g-blue
 >
 > "Three is blue."
@@ -460,7 +309,7 @@ Beginner already used exact **-l**. The other endings mark *about*, a convention
 | **`@`** after PoS — `g@#2` | **-n** | conventional designation (titles, official labels, *the Second…*) | **-n** names the number |
 | **`=`** after PoS — `g=+3`, `g=#2`, `d=_12` | **-r** | resume of a previously stated number, code, or rank (at least one digit) | **-r** points back |
 
-A resume needs **at least one digit**: `g=+3` = *that three again*; `g=#2` = *that second one again*. Match the marker to the resumed identity. Digitless **-r** (`grar`) is not a resume: like a standalone join **-r**, it is *some number* in a statement and *which number?* in a question ([digitless](#digitless)). **`=`** stands alone.
+A resume needs **at least one digit**: `grarer` = *that three again*; `gredur` = *that second one again*. Match the marker to the resumed identity. Digitless **-r** (`grar`) is not a resume: like a standalone join **-r**, it is *some number* in a statement and *which number?* in a question ([digitless](#digitless)). **`=`** stands alone.
 
 ### Digitless {#digitless}
 <a id="digitless-numbers"></a>
@@ -475,7 +324,7 @@ Beginner already used **`gral`** for *more than one*. Any marker may drop every 
 | **`re`** (`…#`) | unspecified **rank from the start** | *some nth* / *some place*; exact ranks keep digits (`…#N`) | **`e`** ≈ order |
 | **`ro`** (`…_`) | unspecified **digit-string / label** | *some code*; *a label*; exact labels keep digits (`…_…`) | **`o`** ≈ one |
 
-**Compare with:** noun [**-x**](plurality.md) names a **group of referents**. Digitless **`ra`** names a **count/amount `>1`** without saying N. They may co-occur (`zagadalx g+3`).
+**Compare with:** noun [**-x**](plurality.md) names a **group of referents**. Digitless **`ra`** names a **count/amount `>1`** without saying N. They may co-occur (`zagadalx grarel`).
 
 On a `/b/` offset right after a channel, digitless **`bral`** is *later* and **`brul`** is *earlier*, with no amount claimed ([forecasts](knowing.md#forecast)).
 
@@ -513,7 +362,7 @@ Under question, the same word is the blank: *how many?* ([below](#how-many)).
 >
 > "How many does Azawan see?"
 
-To repeat a number already given, keep at least one digit: `zululon d+3 vejel. zazawan d=+3 vejel.` *Ululon sees three. Azawan sees those three too.*
+To repeat a number already given, keep at least one digit: `zululon drarel vejel. zazawan drarer vejel.` *Ululon sees three. Azawan sees those three too.*
 
 #### How many? {#how-many}
 
@@ -537,7 +386,7 @@ To ask for a **number**, write a [number word](numbers.md) with no digits and th
 
 Answer with the number as a [citation](word-endings.md#citation-forms) or a full sentence.
 
-**Compare with:** outside a question, the same word is *some number* (`zazawan drar vejel.` *Azawan sees some number of them*). To repeat a number already given, keep a digit: `d=+3` ([above](#digitless)).
+**Compare with:** outside a question, the same word is *some number* (`zazawan drar vejel.` *Azawan sees some number of them*). To repeat a number already given, keep a digit: `drarer` ([above](#digitless)).
 
 #### How big? How fast? {#how-big}
 
@@ -583,7 +432,7 @@ Speech uses **`ba`** / **`bu`** for that exponent, then **`ya`** if mantissa dig
 - The exponent comes **before** that group’s mantissa digits.
 - If a mantissa follows, say **`ya`** after the last exponent digit, then the mantissa. Example: `27e12` → `ba` + `wo` + `du` + `ya` + `du` + `le`.
 - Exponent only, no mantissa: `ba`/`bu` + exponent digits and omit **`ya`**. Example: *e9* → `ba` + `na`.
-- Ordinary amounts usually omit exponent **`0`**: write `g+3`.
+- Ordinary amounts usually omit exponent **`0`**: write `grarel`.
 - Default **order of magnitude** uses **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`).
 - **Decimal point:** say **`ye`** after the digit(s) left of the point; digits after **`ye`** are the fractional part.
 - Write the **base unit** plus exponent or exact count on the amount ([measure phrases](numbers-applied.md#no-metric-prefixes)).
@@ -611,7 +460,7 @@ Speech uses **`ba`** / **`bu`** for that exponent, then **`ya`** if mantissa dig
 | **`g+e6`** | `[10⁶, 10⁷)` | *millions* band only |
 | **`g-e3`** | `(−10⁴, −10³]` polarity with **`ru`** | negative thousands band |
 
-Same under `/z/` `/d/` `/b/`. Soft **`g~+e3`** ≈ *about in the thousands band*. Exact count inside a band uses a mantissa (`g+4e3` = 4000), not bare OoM.
+Same under `/z/` `/d/` `/b/`. Soft **`grabarem`** ≈ *about in the thousands band*. Exact count inside a band uses a mantissa (`g+4e3` = 4000), not bare OoM.
 
 ### Group separator {#group-separator}
 
@@ -650,7 +499,7 @@ Say a separator exactly where a comma is written, and nowhere else: `g+860` has 
 
 ### Writing (preferred shorthand) {#writing-preferred-shorthand}
 
-Beginner already wrote `g+3` / `g#2`. Speech is still full CV; writing for a **free** number word with digits prefers shorthand for the ending, marker, and body. A word with no digits is spelled out in running text ([style](#writing-style-numeric-vs-spelled)); the shorthand below is how tables write it. Both writings name the same word.
+Beginner spelled every number out (`grarel`, `graduzol`). Writing also has a **shorthand** for the ending, marker, and body: `g+3` for *grarel*, `g+20` for *graduzol*. Both writings name the same word. Running text uses shorthand once a number has two or more digits; zero, one digit, or none stays spelled ([style](#writing-style-numeric-vs-spelled)). Tables use shorthand for every row, so patterns line up.
 
 ```text
 [PoS] + [~|@|=]? + [marker] + [body?]
@@ -667,7 +516,7 @@ Same glyphs and jobs as [span-fence marks](spans.md#writing) (**`~`** soft / **`
 | **`@`** | **-n** | conventional | `g@#2`, `g@_12` |
 | **`=`** | **-r** | resume (digit) / blank (digitless) | `g=+3`, `g=#2`, `g=+` |
 
-A hedged conventional number (both **`@`** and **`~`**) is written with **`@`** only, as on spans. **`=`** stands alone. Full phonetic spelling with a trailing ending letter (e.g. *grarel*, *gram*) is a pronunciation gloss on free numbers, not preferred in running text.
+A hedged conventional number (both **`@`** and **`~`**) is written with **`@`** only, as on spans. **`=`** stands alone. A spelled word shows its ending as the last letter (*grarel*, *gram*) instead of a mark.
 
 #### Marker (not written as `r`+V)
 
@@ -746,15 +595,12 @@ Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume wit
 | **`re`** | `h#N` | **Nth occurrence of the event (from the start)** — *for the Nth time*; *on the Nth try* (clause-event ordinal, not discourse list independence). |
 | **`ro`** | `h_…` | **Clock** — *at 15:30* (`h_15,30`). **Date** uses a calendar ordinal: *on 22 July 2026*. Channel, frequency, and other codes use a host relation + `/b/` (or `/ɡ/` on a noun). See [Time](numbers-applied.md#time). |
 
-> `zululon vawalal h+3.`
->
-> 🔊 *zululon vawalal hrarel.*
->
+> `zululon vawalal hrarel.`
 > z-Ululon | v-walk | h-three
 >
 > "Ululon walks three times."
 
-Worked examples: `h+3` *three times*; `h-3` *÷3 / into 3*; `h#3` *for the third time*; `h_15,30` *at 15:30*. Frequency codes sit on a host: `/h/` *on* + `b_101.1`.
+Worked examples: `hrarel` *three times*; `hrurel` *÷3 / into 3*; `hrerel` *for the third time*; `h_15,30` *at 15:30*. Frequency codes sit on a host: `/h/` *on* + `b_101.1`.
 
 Endings still apply (**-m** ≈ *about* that many times / that clock or date, **-r** resume with a digit; digitless `hrar` *how many times?* / `hror` *when?* is a [blank](#digitless)). Relative %-change factors use **`h+…`** (e.g. ×1.5). See [percent](numbers-applied.md#percent-and-percentage-points).
 
@@ -771,13 +617,13 @@ Endings still apply (**-m** ≈ *about* that many times / that clock or date, **
 
 English *Three!* naming a score or count is **`yrol`**. *Three more!* (increment the tally) is **`yral`**.
 
-Worked examples: `y_3` *Three!*; `y+3` *Three more!*; `y-3` *Three short!*; `y#1` *First!*.
+Worked examples: `y_3` *Three!*; `yrarel` *Three more!*; `yrurel` *Three short!*; `yrewol` *First!*.
 
 Endings still apply (**-m** fuzzy *about three more!*, **-n** conventional call name, **-r** resume a prior shout’s value, with a digit).
 
 **Compare with:** statement / question / command words in the [speech-act section](speech-moves.md#speech-act).
 
-Bare OoM bands keep their band under `/v/` `/h/` `/y/`: **`v+e3`** *increase by a thousands-band amount*; **`h+e0`** *× a ones-band factor*; **`y+e3`** *Thousands!* (band cheer).
+Bare OoM bands keep their band under `/v/` `/h/` `/y/`: **`vrabarel`** *increase by a thousands-band amount*; **`hrabazol`** *× a ones-band factor*; **`yrabarel`** *Thousands!* (band cheer).
 
 #### Number as discourse marker (by marker) {#number-as-discourse-marker-by-marker}
 
@@ -792,7 +638,7 @@ Bare OoM bands keep their band under `/v/` `/h/` `/y/`: **`v+e3`** *increase by 
 
 **Independence framing:** **`#`** = unmarked steps; **`+`** = corroborating; **`-`** = independent (a new line of support). Ordinary *firstly / secondly* is **`x#N`**. Argue for or against in ordinary wording (or with evidentiality on the claim).
 
-Worked examples: `x#2` *point 2:*; `x+2` *corroborating 2:*; `x-2` *independent 2:*.
+Worked examples: `xredul` *point 2:*; `xradul` *corroborating 2:*; `xrudul` *independent 2:*.
 
 Endings still apply (**-l** newly stated item, **-r** *as in (N) above* (with a digit; digitless `xrer` is a [blank](#digitless)), **-n** titled item name, **-m** fuzzy *around item N*).
 
@@ -828,16 +674,19 @@ Endings still apply: **-m** *about* that likelihood (`th~+70` *roughly 70%*), **
 <a id="writing-style-numeric-vs-spelled"></a>
 <a id="writing-style"></a>
 
-Both writings name the **same word**. Choose the surface by one test: **does the word have a digit?**
+Both writings name the **same word**. Choose the surface by one test: **how many digits does the word have?** Count every digit, including exponent digits.
 
 | Word | Prefer | Why |
 |------|--------|-----|
-| Free number **with digits** | **shorthand** | `g+3`, `x#2`, `d_555,123,4567`, `g+e0` — a value to scan and compare |
-| Free number **with no digits** | **spelled CV** | `gral`, `gram`, `drar`, `wrar` — a word such as *more than one*, *a few*, *how many*, *how much*, not a value |
+| Free number with **two or more digits** | **shorthand** | `g+12`, `x#21`, `g+5.2e-4` — a value to scan and compare |
+| Free number with **one digit or none** | **spelled CV** | `grarel` *three*, `gredul` *second*, `grazol` *zero*, `gral` *more than one*, `drar` *how many* — reads as a word, as English writes *three* |
+| Digit-string label or code (`_`) | **shorthand** | `d_5`, `d_555,123,4567` — a code, not an amount (English *Room 5*) |
 | [Numeric derivation](numeric-derivation.md#numeric-derivation) / kind morph | **spelled CV** (required) | shorthand after a root does not form a word |
-| Inventory tables | **shorthand** | patterns are easy to scan; a digitless row may add its spelling |
+| Inventory tables | **shorthand** | patterns are easy to scan |
 
-A power digit counts: `g+e0` keeps shorthand. Only a word with no digit anywhere (`g+`, `d=+`) is spelled. Pages that teach the shorthand itself (writing and speech drills) still show digitless shorthand.
+**Side by side:** number words next to each other (a range, a list of values) share one writing. If any of them needs shorthand, write them all in shorthand: `z+3 z+12 zoel gumem`, not `zrarel z+12 zoel gumem`.
+
+Speech and writing drills that teach the shorthand itself still show one-digit shorthand.
 
 Write free numbers with second-slot marks or trailing letters consistently. Derived words use ordinary reference endings on the host with a fully spelled `NUM`.
 
@@ -846,7 +695,7 @@ Write free numbers with second-slot marks or trailing letters consistently. Deri
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. Prefer shorthand (`g~+3`, `g#2`). Sample PoS, endings, digitless, and number as verb / adverb / interjection / discourse — not the whole inventory.
+Short drills for Intermediate. Try each item before opening **Show answer**. Use shorthand for two or more digits (`g+12`, `g#21`); spell zero, one digit, or none (`grarem`, `gredul`, `gral`). Sample PoS, endings, digitless, and number as verb / adverb / interjection / discourse — not the whole inventory.
 
 **Setting:** a sports stadium
 
@@ -871,9 +720,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Pre
 **1.** *About three seats.*
 
 ::: details Show answer
-`zedadalx g~+3.`
-
-🔊 *zedadalx grarem.*
+`zedadalx grarem.`
 
 z-seat-x | g-three.about
 :::
@@ -881,9 +728,7 @@ z-seat-x | g-three.about
 **2.** *Three sit.*
 
 ::: details Show answer
-`z+3 vajul.`
-
-🔊 *zrarel vajul.*
+`zrarel vajul.`
 
 z-three | v-sit
 :::
@@ -891,9 +736,7 @@ z-three | v-sit
 **3.** *Ululon runs three times.*
 
 ::: details Show answer
-`zululon vurunul h+3.`
-
-🔊 *zululon vurunul hrarel.*
+`zululon vurunul hrarel.`
 
 z-Ululon | v-run | h-three
 :::
@@ -901,9 +744,7 @@ z-Ululon | v-run | h-three
 **4.** *The second seat.*
 
 ::: details Show answer
-`zedadal g#2.`
-
-🔊 *zedadal gredul.*
+`zedadal gredul.`
 
 z-seat | g-2nd
 :::
@@ -911,9 +752,7 @@ z-seat | g-2nd
 **5.** *Point 2: Azawan sits.*
 
 ::: details Show answer
-`x#2 zazawan vajul.`
-
-🔊 *xredul zazawan vajul.*
+`xredul zazawan vajul.`
 
 x-2nd | z-Azawan | v-sit
 :::
@@ -921,9 +760,7 @@ x-2nd | z-Azawan | v-sit
 **6.** *Three more!*
 
 ::: details Show answer
-`y+3.`
-
-🔊 *yrarel.*
+`yrarel.`
 
 y-three
 :::
@@ -931,9 +768,7 @@ y-three
 **7.** *Ululon adds three to the score.*
 
 ::: details Show answer
-`zululon dodobom v+3.`
-
-🔊 *zululon dodobom vrarel.*
+`zululon dodobom vrarel.`
 
 z-Ululon | d-score | v-three
 :::
@@ -941,9 +776,7 @@ z-Ululon | d-score | v-three
 **8.** *Ululon punches three times.*
 
 ::: details Show answer
-`zululon vubunul h+3.`
-
-🔊 *zululon vubunul hrarel.*
+`zululon vubunul hrarel.`
 
 z-Ululon | v-punch | h-three
 :::
@@ -951,9 +784,7 @@ z-Ululon | v-punch | h-three
 **9.** *Thousands see the trophy.* (the thousands band, no exact count)
 
 ::: details Show answer
-`z+e3 dodobol vejel.`
-
-🔊 *zrabarel dodobol vejel.*
+`zrabarel dodobol vejel.`
 
 z-+-e3 | d-trophy | v-see
 :::
@@ -980,7 +811,7 @@ z-Azawan | v-punch | th-70-percent-likely
 
 #### Agalan → English {#intermediate-agalan-to-english}
 
-**1.** `zedadalx g~+2.`
+**1.** `zedadalx gradum.`
 
 ::: details Show answer
 
@@ -991,7 +822,7 @@ z-seat-x | g-two.about
 *About two seats.*
 :::
 
-**2.** `z#2 dodobol vejel.`
+**2.** `zredul dodobol vejel.`
 
 ::: details Show answer
 
@@ -1024,7 +855,7 @@ y-_3
 *Three!* (score / label)
 :::
 
-**5.** `x#2 zululon vurunul.`
+**5.** `xredul zululon vurunul.`
 
 ::: details Show answer
 
@@ -1035,7 +866,7 @@ x-2nd | z-Ululon | v-run
 *Point 2: Ululon runs.*
 :::
 
-**6.** `zedadal gelem g#2.`
+**6.** `zedadal gelem gredul.`
 
 ::: details Show answer
 
@@ -1057,7 +888,7 @@ y-question | z-Ululon | d-how-many | v-see
 *How many does Ululon see?*
 :::
 
-**8.** `zuhubun vajul h#3.`
+**8.** `zuhubun vajul hrerel.`
 
 ::: details Show answer
 
@@ -1077,6 +908,87 @@ z-Uhubun | v-sit | h-3rd
 z-5e3,860 | v-sit
 
 *5860 sit.*
+:::
+
+#### Written → spoken {#intermediate-written-to-spoken}
+
+**1.** `g+45`
+
+::: details Show answer
+
+🔊 *gramoval*
+
+g-45
+:::
+
+**2.** `g#12`
+
+::: details Show answer
+
+🔊 *grewodul*
+
+g-12th
+:::
+
+**3.** `g+21`
+
+::: details Show answer
+
+🔊 *graduwol*
+
+g-21
+:::
+
+**4.** `g~+30`
+
+::: details Show answer
+
+🔊 *grarezom*
+
+g-30.about
+:::
+
+**5.** `g+105`
+
+::: details Show answer
+
+🔊 *grawozoval*
+
+g-105
+:::
+
+#### Spoken → written {#intermediate-spoken-to-written}
+
+**1.** 🔊 *graduzol*
+
+::: details Show answer
+`g+20`
+
+g-20
+:::
+
+**2.** 🔊 *grawozol*
+
+::: details Show answer
+`g+10`
+
+g-ten
+:::
+
+**3.** 🔊 *grenagul*
+
+::: details Show answer
+`g#96`
+
+g-96th
+:::
+
+**4.** 🔊 *grawovam*
+
+::: details Show answer
+`g~+15`
+
+g-15.about
 :::
 
 ## Advanced {#advanced}
@@ -1100,7 +1012,7 @@ A digit group may use **`ba`** or **`bu`** with **no** exponent digits. That emp
 >
 > "Cats — infinitely many."
 
-**Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means no power digits after that mark: `g+e` / `g+e-` in tables, spelled `grabal` / `grabul` in running text. Bare / assert **`e0`** writes power **`0`**: `g+e0`, `g+3e0` (not digitless).
+**Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means no power digits after that mark: `g+e` / `g+e-` in tables, spelled `grabal` / `grabul` in running text. Bare / assert **`e0`** writes power **`0`**: `grabazol`, `g+3e0` (not digitless).
 
 One such group only in the word. Marker identity still applies. Kind compounds may use digitless **`_`** as [infinite / landmark labels](numeric-derivation.md#infinite-labels) (`ROOTl_e`, `ROOTl_e-`, `ROOTl_1e`, …).
 
@@ -1122,7 +1034,7 @@ One such group only in the word. Marker identity still applies. Kind compounds m
 | **`g-e-`** | **`ru`** + **`bu`∅** + **-l** | **just short:** arbitrarily small but finite shortfall — *a hair under*; against a target, *almost* |
 | **`g~-e-`** | **`ru`** + **`bu`∅** + **-m** | **nearly** — a small shortfall, not claimed to be tiny |
 
-Same under `/z/` `/d/` `/b/` (`zrabal` = +∞ as subject; `drebul` = start-place as object; `brabul` = *of an arbitrarily small but finite amount*; `zrubul` = a hair-short amount as subject). Contrast **`g#1`** = numbered *first* / *1st*; **`grebul`** = beginning/onset landmark.
+Same under `/z/` `/d/` `/b/` (`zrabal` = +∞ as subject; `drebul` = start-place as object; `brabul` = *of an arbitrarily small but finite amount*; `zrubul` = a hair-short amount as subject). Contrast **`grewol`** = numbered *first* / *1st*; **`grebul`** = beginning/onset landmark.
 
 <a id="just-short"></a>
 
@@ -1207,9 +1119,9 @@ No-mantissa digitless-exp under `/y/` (interjection cheers):
 
 **Last point / *Finally*:** **`xrebal`** = *Finally:* / *last point:* (committed coda item). Soft **`xrebam`** = near-final; named **`xreban`** = ritual / titled *Finally*; **`xrebar`** resumes that last-point marker. Extra items use discourse hook **`al`** (*additionally*: [hooks.md](hooks.md#discourse-hooks)).
 
-**Starting point / *Starting with*:** **`xrebul`** = *Starting with:* / *to begin:* (committed opening item). Soft **`xrebum`** = near-start; named **`xrebun`** = ritual / titled *Starting with*; **`xrebur`** resumes that start-point marker. Numbered *firstly* is **`x#1`**.
+**Starting point / *Starting with*:** **`xrebul`** = *Starting with:* / *to begin:* (committed opening item). Soft **`xrebum`** = near-start; named **`xrebun`** = ritual / titled *Starting with*; **`xrebur`** resumes that start-point marker. Numbered *firstly* is **`xrewol`**.
 
-Under `/x/`, a digitful exponent on **`#`** is **outline depth** relative to the focused agenda item — **`x#3e2`** = *3rd sub-sub-point under the focus*; **`x#e-1`** = *parent-layer item(s)*; **`x#e0`** = *current-layer item(s)*. A flat list uses **`x#N`** (and *Finally* / *Starting with* as above).
+Under `/x/`, a digitful exponent on **`#`** is **outline depth** relative to the focused agenda item — **`x#3e2`** = *3rd sub-sub-point under the focus*; **`xrebuwol`** = *parent-layer item(s)*; **`xrebazol`** = *current-layer item(s)*. A flat list uses **`x#N`** (and *Finally* / *Starting with* as above).
 
 These sit beside the numbered points of [Number as discourse marker](#number-as-discourse-marker-by-marker). End-relative discourse points use **`x#-N`**. **Just-before discourse:** **`xrubul`** = *just before that:* (step back a moment in the telling). Soft **`xrubum`**; named **`xrubun`**; resume **`xrubur`**. Corroborating is **`xral`**; independent is **`xrul`**.
 
@@ -1233,11 +1145,11 @@ Forms that pair **mantissa `0`** with an exponent (digitless or the engineering 
 | **`g+0e-1`** | mantissa **`0`** + digitful **`bu`** + exp **`1`** | **engineering null at OoM −1:** amount wiped at scale 10⁻¹ (deci-null). Sterile digitless is **`g+0e-`**. Bare OoM is **`g+e-1`**. |
 | **`g-0e-1`** | **`ru`** + mantissa **`0`** + digitful **`bu`** + exp **`1`** | **engineering residue at OoM −1** — irreducible leftover at that scale |
 
-Same under `/z/` `/d/` `/b/` (`z+0e` = absolute-zero as subject; `z+0e-1` = deci-null as subject).
+Same under `/z/` `/d/` `/b/` (`zrazobal` = absolute-zero as subject; `z+0e-1` = deci-null as subject).
 
-**Emptiness chain (amounts):** **`grubal`** (−∞ deficit), **`g+0`** (plain zero), **`g+0e`** (absolute zero), **`g+0e-`** (sterile micro-null), **`g+0e-1`** (engineering null at 10⁻¹). Bare **`g+e0`** is the [ones decade band](#bare-oom-bands) (1–9).
+**Emptiness chain (amounts):** **`grubal`** (−∞ deficit), **`grazol`** (plain zero), **`grazobal`** (absolute zero), **`grazobul`** (sterile micro-null), **`g+0e-1`** (engineering null at 10⁻¹). Bare **`grabazol`** is the [ones decade band](#bare-oom-bands) (1–9).
 
-**Scalars only for `±0e-1`:** engineering OoM-null is **`ra` / `ru`**. On ordinals, digitful exp is [generation](numbers-applied.md#ordinal-generation) (`g#0e-1` ≠ engineering; **`g#e0`** = current generation). Ordinal zero×digitless **`g#0e`** = [rank annihilated](#rank-annihilated) below.
+**Scalars only for `±0e-1`:** engineering OoM-null is **`ra` / `ru`**. On ordinals, digitful exp is [generation](numbers-applied.md#ordinal-generation) (`g#0e-1` ≠ engineering; **`grebazol`** = current generation). Ordinal zero×digitless **`grezobal`** = [rank annihilated](#rank-annihilated) below.
 
 ##### Number as verb and adverb {#zero-exponent-number-as-verb-and-adverb}
 
@@ -1255,7 +1167,7 @@ Same under `/z/` `/d/` `/b/` (`z+0e` = absolute-zero as subject; `z+0e-1` = deci
 | **`h-0e`** | with irreducible residual repetition |
 | **`h-0e-1`** | residual repetition **at OoM −1** |
 
-Ones-band / assert-`e0` as verb / adverb / interjection / discourse are ordinary bare OoM / **`Ne0`** (**`v+e0`**, **`h+3e0`**, …): [Bare OoM](#bare-oom-bands) / [Ambient](#ambient-magnitude). Soft **-m** hedges (*almost annihilate*, *almost deci-null*, …).
+Ones-band / assert-`e0` as verb / adverb / interjection / discourse are ordinary bare OoM / **`Ne0`** (**`vrabazol`**, **`h+3e0`**, …): [Bare OoM](#bare-oom-bands) / [Ambient](#ambient-magnitude). Soft **-m** hedges (*almost annihilate*, *almost deci-null*, …).
 
 ##### Number as interjection {#zero-exponent-number-as-interjection}
 
@@ -1267,11 +1179,11 @@ Ones-band / assert-`e0` as verb / adverb / interjection / discourse are ordinary
 | **`y-0e`** | *Residue stands!* / *Won’t totally wipe!* |
 | **`y-0e-1`** | *Deci-residue stands!* |
 
-**`y+e0`** = ones-band cheer (ordinary bare OoM).
+**`yrabazol`** = ones-band cheer (ordinary bare OoM).
 
 ##### Number as discourse {#zero-exponent-number-as-discourse}
 
-Discourse nesting uses [generation](numbers-applied.md#ordinal-generation) (**`x#e0`** = current-layer assert; **`x#3e2`** = nested depth).
+Discourse nesting uses [generation](numbers-applied.md#ordinal-generation) (**`xrebazol`** = current-layer assert; **`x#3e2`** = nested depth).
 
 ##### Ordinal rank annihilated (`#0e`)
 <a id="rank-annihilated"></a>
@@ -1290,7 +1202,7 @@ Soft **-m** hedges (*near-disqualified*, …). Free twin of derivation **`ROOTl#
 
 ##### Free vs derived
 
-The same zero × exponent stems can also sit on a content root as kind words (*annihilate the score*, *a totally wiped debt-kind*); those spelled forms are taught in [numeric derivation](numeric-derivation.md#zero-exponent-derivation). Free **`g+e0`** / **`g+Ne0`** are bare OoM / OoM assert on free numbers, not kind derivation morphs. Engineering OoM-null is **`±0e-1`**.
+The same zero × exponent stems can also sit on a content root as kind words (*annihilate the score*, *a totally wiped debt-kind*); those spelled forms are taught in [numeric derivation](numeric-derivation.md#zero-exponent-derivation). Free **`grabazol`** / **`g+Ne0`** are bare OoM / OoM assert on free numbers, not kind derivation morphs. Engineering OoM-null is **`±0e-1`**.
 
 #### Hyperbole — mantissa + digitless exponent
 <a id="gazillion"></a>
@@ -1321,7 +1233,7 @@ Mantissa = how many joke-units of **late** (**`ba`**) or **early** (**`bu`**) ra
 | **`g#3e-`** | *the three-gazillionth-first* |
 | **`g~#1e-`** | *about the gazillionth-first* |
 
-`grebal` is last place; `grebul` is the start landmark; `g#1` is numbered *1st*.
+`grebal` is last place; `grebul` is the start landmark; `grewol` is numbered *1st*.
 
 **Endings** on hyperbolic forms:
 
@@ -1362,7 +1274,7 @@ Digitless specials, zero × exponent, and hyperbole keep their meaning under [st
 | **`th-e-`** | **virtually** / *practically* — the claim holds all but a hair |
 | **`th~-e-`** | *more or less* |
 
-`th+100` and `th+0` are still estimates (*I'd put it at 100%*). `thrabal` and `th+0e` step outside the estimate.
+`th+100` and `thrazol` are still estimates (*I'd put it at 100%*). `thrabal` and `thrazobal` step outside the estimate.
 
 
 ### From the end — end-relative ordinal marker **`#-`** / **`ue`**
@@ -1372,10 +1284,7 @@ Digitless specials, zero × exponent, and hyperbole keep their meaning under [st
 
 To count **from the last place** (*penultimate*, *starting with the last one*), use marker **`ue`** (writing **`#-`**). Count back within the **same generation / cohort** (exponent omitted). Speech uses the marker vowels in u-first order: `#-` is spelled and pronounced **rue** before its digit syllables and ending (e.g. *gruedul*). The number’s role-letter-plus-`r` cluster distinguishes it from join **`ue`**.
 
-> `zabogol g#-2.`
->
-> 🔊 *zabogol gruedul.*
->
+> `zabogol gruedul.`
 > z-book | g-2nd-from-end
 >
 > "The penultimate book."
@@ -1390,7 +1299,7 @@ To count **from the last place** (*penultimate*, *starting with the last one*), 
 | **`g=#-2`** | resume that prior end-relative place |
 | **`g#-`** | unspecified end-relative rank ([zero groups](#digitless)) |
 
-`g#2` = numbered *2nd* (from the start); `g#-2` = *2nd from the end*; `grebal` = last as landmark; `grebul` = start landmark (no mantissa).
+`gredul` = numbered *2nd* (from the start); `gruedul` = *2nd from the end*; `grebal` = last as landmark; `grebul` = start landmark (no mantissa).
 
 `/v/` `/h/` `/y/` `/x/` inherit:
 
@@ -1407,7 +1316,7 @@ To count **from the last place** (*penultimate*, *starting with the last one*), 
 
 When a number identity needs two marker vowels, write the symbols in their conventional order and pronounce the vowels with **`u` first**. The letter spelling and speech therefore use **ruo** for a negative digit-string label (`#_`) and **rua** for a symmetric error bound (`+-`). A negative label identifies a value below zero, such as a basement floor; `+-N` gives an uncertainty of plus or minus N. These stacked forms work with the ordinary number endings.
 
-Write the role letter, symbol stack, then digits: `g#_1` labels a floor numbered −1; `g+-3` gives an uncertainty of ±3.
+Write the role letter, symbol stack, then digits: `gruowol` labels a floor numbered −1; `gruarel` gives an uncertainty of ±3.
 
 | Symbol stack | Spelled and spoken marker | Use |
 |--------------|---------------------------|-----|
@@ -1490,7 +1399,7 @@ In a sentence, the PoS attaches to that single number word (see [Parts of speech
 ### Ambient magnitude (casual)
 <a id="ambient-magnitude"></a>
 
-In careful writing, an omitted exponent means ones-place (`g+3` = 3). Prefer writing the exponent when the magnitude matters.
+In careful writing, an omitted exponent means ones-place (`grarel` = 3). Prefer writing the exponent when the magnitude matters.
 
 In casual measure-heavy talk, a stretch of conversation may set an **ambient** order of magnitude (often an engineering `e3` / `e6` / …). Bare mantissas are then heard at that decade until you cancel it.
 
@@ -1508,7 +1417,7 @@ In casual measure-heavy talk, a stretch of conversation may set an **ambient** o
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**. Digitless exponents, hyperbole, and zero×exp as in the teach tables. Forms with a digit use shorthand (`g+1e`); digitless forms are spelled out (`grabal`, `xrebal`).
+Short drills for Advanced. Try each item before opening **Show answer**. Digitless exponents, hyperbole, and zero×exp as in the teach tables. Forms with a digit use shorthand (`grawobal`); digitless forms are spelled out (`grabal`, `xrebal`).
 
 **Setting:** an observatory
 
@@ -1536,9 +1445,7 @@ z-star-x | g-plus-infinity
 **2.** *One gazillion telescopes.*
 
 ::: details Show answer
-`zelezolx g+1e.`
-
-🔊 *zelezolx grawobal.*
+`zelezolx grawobal.`
 
 z-telescope-x | g-+-1e
 :::
@@ -1562,9 +1469,7 @@ y-plus-infinity
 **5.** *Annihilate!*
 
 ::: details Show answer
-`y+0e.`
-
-🔊 *yrazobal.*
+`yrazobal.`
 
 y-+-0e
 :::
@@ -1580,9 +1485,7 @@ x-starting-with | z-Uhubun | v-see
 **7.** *Azawan sees the penultimate star.*
 
 ::: details Show answer
-`zazawan darazal g#-2 vejel.`
-
-🔊 *zazawan darazal gruedul vejel.*
+`zazawan darazal gruedul vejel.`
 
 z-Azawan | [d-star | g-2nd-from-end] | v-see
 :::
@@ -1590,9 +1493,7 @@ z-Azawan | [d-star | g-2nd-from-end] | v-see
 **8.** *Ululon sees three stars, give or take one.*
 
 ::: details Show answer
-`zululon darazalx g+3 g+-1 vejel.`
-
-🔊 *zululon darazalx grarel gruawol vejel.*
+`zululon darazalx grarel gruawol vejel.`
 
 z-Ululon | [d-star-x | g-three | g-plus-minus-1] | v-see
 :::
@@ -1632,7 +1533,7 @@ x-starting-with | z-Ululon | v-see
 *Starting with: Ululon sees.*
 :::
 
-**4.** `zarazal g#1e.`
+**4.** `zarazal grewobal.`
 
 ::: details Show answer
 
@@ -1643,7 +1544,7 @@ z-star | g-#-1e
 *The gazillionth / umpteenth star.*
 :::
 
-**5.** `zazawan vejel h#1e.`
+**5.** `zazawan vejel hrewobal.`
 
 ::: details Show answer
 
@@ -1666,7 +1567,7 @@ y---e-
 :::
 
 
-**7.** `zazawan delezol g#_1 vejel.`
+**7.** `zazawan delezol gruowol vejel.`
 
 ::: details Show answer
 

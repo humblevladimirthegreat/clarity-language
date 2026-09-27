@@ -352,6 +352,8 @@ export type MorphGlossContext = {
   /** Digitless `g+` / `h+` right after a rank join: the amount / frequency scale. */
   amountScale?: boolean;  /** `/ɡ/` `g-N` right after a plain noun: *1/N of* that noun. */
   fraction?: boolean;
+  /** Number word beside another number that needs shorthand: the whole run prefers shorthand. */
+  shorthandRun?: boolean;
 };
 
 export type CompareMorphGlossResult = {
@@ -849,6 +851,7 @@ function analyzeLine(
     if (isFraction(word, words[index - 1])) ctx.fraction = true;
     return ctx;
   });
+  markShorthandRuns(words, ctxByIndex);
   return { words, ctxByIndex, parsed };
 }
 
@@ -1052,7 +1055,7 @@ function sensePieces(
         if (blank) return [ctx.fillAsk ? blank.ask : blank.some];
       }
       return [
-        `${numberLabel(family.stem, word.pos)}${numberMarkSuffix(word, ctx)}${numberSurfaceSuffix(word.raw, family.stem)}`,
+        `${numberLabel(family.stem, word.pos)}${numberMarkSuffix(word, ctx)}${numberSurfaceSuffix(word.raw, family.stem, ctx)}`,
       ];
     case "x":
       return xPieces(word, tables);
@@ -1565,14 +1568,41 @@ function hyphenEnglish(text: string): string {
 }
 
 /**
- * Marks a number word written in its non-preferred surface: digitless words are
- * preferred spelled (`gral`), digitful ones in shorthand (`g+3`). So `grarel` →
- * `.spelled` and `g+` → `.short`; the preferred surface is unmarked.
+ * Whether a number word is preferred in shorthand ([numbers § Style](../../docs/grammar/numbers.md#writing-style-numeric-vs-spelled)):
+ * more than one digit in total (mantissa and exponent), or a digit-string label.
+ * Zero or one digit is preferred spelled (`gral`, `grarel`, `grabazol`).
  */
-function numberSurfaceSuffix(raw: string, stem: NumberStem): string {
+export function prefersNumberShorthand(stem: NumberStem): boolean {
+  if (stem.marker === "_" || stem.calendarOrdinal) return true;
+  let digits = (stem.digitlessExp ?? "").replace(/[^0-9]/g, "").length;
+  for (const g of stem.groups) digits += `${g.mantissa ?? ""}${g.exponentDigits ?? ""}`.replace(/[^0-9]/g, "").length;
+  return digits > 1;
+}
+
+/** Side-by-side number words (a range, a list of values) share one surface: shorthand if any needs it. */
+function markShorthandRuns(words: LexWord[], ctxByIndex: MorphGlossContext[]): void {
+  let start = 0;
+  while (start < words.length) {
+    let end = start;
+    while (end < words.length && words[end]!.family.kind === "number") end++;
+    if (end - start > 1) {
+      const run = words.slice(start, end);
+      if (run.some((w) => w.family.kind === "number" && prefersNumberShorthand(w.family.stem))) {
+        for (let i = start; i < end; i++) ctxByIndex[i]!.shorthandRun = true;
+      }
+    }
+    start = Math.max(end, start + 1);
+  }
+}
+
+/**
+ * Marks a number word written in its non-preferred surface: `.spelled` on a spelled word
+ * that prefers shorthand (`grawowol` for `g+11`), `.short` on shorthand that prefers
+ * spelling (`g+`, `g+3`). The preferred surface is unmarked.
+ */
+function numberSurfaceSuffix(raw: string, stem: NumberStem, ctx: MorphGlossContext): string {
   const spelled = /^(?:th|[zdbvgwhxyj])?[a-z]+$/.test(raw);
-  const hasDigits =
-    stem.groups.some((g) => g.mantissa || g.exponentDigits) || /[0-9]/.test(stem.digitlessExp ?? "");
-  if (spelled) return hasDigits ? ".spelled" : "";
-  return hasDigits ? "" : ".short";
+  const short = ctx.shorthandRun || prefersNumberShorthand(stem);
+  if (spelled) return short ? ".spelled" : "";
+  return short ? "" : ".short";
 }

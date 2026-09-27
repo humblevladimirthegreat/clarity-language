@@ -279,7 +279,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 12 | `hooks.md` | **exists** | Prefix-less **hooks** (**`al`/`am`/`ol`/`ul`/`el`**); in-clause `A HOOK B`; discourse **`al`** *additionally*; extra-noun **`al`/`ol`/`ul`/`el`** + `/b/` (**in** / **at** / **from** / **for**) | Not a join (`zam` vs `am`). Not stacked extra-noun (`aol` / `ael`). Not **`xrebul` / `xrebal`**
 | 12 | `restrictors.md` | **exists** | **`hal`/`ham`/`hual`/`huam`/`har`/`hor`/`hur`** (and `/w/` twins); *only when* vs co-manner *and*; bare *never* / *always* | Not sibling hooks. Not join **`zam`** as a restrictor |
 | 14 | `spans.md` | **exists** | Writing fences `[ ]` `{ }` `( )` `< >`; **`~`/`@`**; resume `d[=]`; PoS = outer slot; **aside** = `th(…)`; interior fragment or same-speech-act clause; when a span is required vs nativized word | `<>` loans **allowed** (this stage teaches them). Prefer atomic one-token cites |
-| 15 | `numbers.md` | **exists** | `g+N` count; `g#N` ordinal; digitless **`gral`** (*more than one*; written out, `g+` in tables) with **-x** on the noun | No `/v/` `/h/` `/y/` `/x/` number uses, exponents, ranges, percent, measures (later). **-x** from plurality is recycle |
+| 15 | `numbers.md` | **exists** | spelled counts (**`grarel`**) and ordinals (**`gredul`**) with the digit syllables; digitless **`gral`** (*more than one*); no shorthand (Intermediate) with **-x** on the noun | No `/v/` `/h/` `/y/` `/x/` number uses, exponents, ranges, percent, measures (later). **-x** from plurality is recycle |
 | 15 | `comparatives.md` | **exists** | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; single-item superlative; equative **`ae`** | **Needs:** joins Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
 | 15 | `causation.md` | **exists** | Two-place poles: outcome host + `/b/` condition; `/th/` event vs `/ɡ/` noun; *if* **`adoro`** vs *only if* **`ebero`**; no cause-arrow word | **Needs:** core extra nouns + dependents **`darl`**. *Because* / **`IFF`** / **CAUSE** are Intermediate — do not use |
 | 16 | `interests.md` | **exists** | Six needs; `/ɡ/` on a belonging vs `/th/` on the clause; **`tha`** met + contact **-l / -m / -r**; **`thu`** unmet changeability; unowned **`gobobum`** + `/w/` need | **Not** prescription **`the`** or motive **`tho`** (Intermediate). Not ability (non-interest + `x` vowel). Not MAY. Not bare need-as-topic |
@@ -366,7 +366,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Extra-noun hook compounds (`awalalul`) | `hooks.md` Advanced |
 | **`hal`/`hual`/`har`** | `restrictors.md` Beginner |
 | Span brackets / `<>` | `spans.md` Beginner |
-| `g+N` / `g#N` / `gral` | `numbers.md` Beginner |
+| spelled counts / ordinals / `gral` (no shorthand) | `numbers.md` Beginner |
 | SHARED scale comparatives | `comparatives.md` Beginner |
 | Causal poles *if* / *only if* (`thadorom` / `theberom`) | `causation.md` Beginner |
 | **CAUSE** **`egega`** / **`thegegam`** | `causation.md` Intermediate |

@@ -295,7 +295,7 @@ The ending on a channel says **how strong the evidence is**: how much the claim 
 
 ### Forecasts (`bral`) {#forecast}
 
-Agalan has no *will* word for the world. To say something **will** happen, use a channel and put the later offset **`bral`** right after it: a `/b/` number with a plus sign and no digits (`b+` in tables), meaning *some time after now*. The channel says what the forecast rests on, so a forecast cannot hide its warrant. For a hunch, the honest channel is FELT. The mirror **`brul`** is *some time before now*, for a past claim with no measured amount.
+Agalan has no *will* word for the world. To say something **will** happen, use a channel and put the later offset **`bral`** right after it: a `/b/` number with a plus sign and no digits, meaning *some time after now*. The channel says what the forecast rests on, so a forecast cannot hide its warrant. For a hunch, the honest channel is FELT. The mirror **`brul`** is *some time before now*, for a past claim with no measured amount.
 
 > `thabawam bral vanunul.`
 >
@@ -845,18 +845,12 @@ The same published roots stay ordinary content under other role letters. The clo
 
 English *three hours ago* and *in three hours* count from now. Agalan counts from the channel instead: put a [measure phrase](numbers-applied.md#measure-phrases) in `/b/` immediately after the evidential. The amount is **signed**: **`-`** is earlier than now, **`+`** is later than now. The offset always dates the **event**, not the moment you learned about it. There is no bare *ago* word, so a dated claim always says how you know it.
 
-> `zazawan thuvuvum bohoram g-3 vawalal.`
->
-> 🔊 *zazawan thuvuvum bohoram grurel vawalal.*
->
+> `zazawan thuvuvum bohoram grurel vawalal.`
 > z-Azawan | [th-WITNESSED | [b-hour | g-minus-three]] | v-walk
 >
 > "I saw Azawan walk three hours ago."
 
-> `zululon theraram bohoram g+3 vebarul.`
->
-> 🔊 *zululon theraram bohoram grarel vebarul.*
->
+> `zululon theraram bohoram grarel vebarul.`
 > z-Ululon | [th-TOLD | [b-hour | g-three]] | v-departure
 >
 > "I hear Ululon leaves in three hours."
@@ -886,10 +880,7 @@ For *just* and *about to*, use the [just-short](numbers.md#just-short) amount wi
 >
 > "It is about to rain (from the clouds)."
 
-> `zululon thabawam bohoram g-3 velebel.`
->
-> 🔊 *zululon thabawam bohoram grurel velebel.*
->
+> `zululon thabawam bohoram grurel velebel.`
 > z-Ululon | [th-PATTERN | [b-hour | g-minus-three]] | v-sleep
 >
 > "Going by the pattern, Ululon slept three hours ago."
@@ -902,20 +893,14 @@ With an [as-of](relations.md#as-of) pair, the offset counts from that whose-now 
 
 Agalan has no short *now* word. Say *now* with an offset of **zero**: the event sits no time away from the moment you speak. The channel stays, so *now* still says how you know it.
 
-> `zululon thunevem bohoram g+0 velebel.`
->
-> 🔊 *zululon thunevem bohoram grazol velebel.*
->
+> `zululon thunevem bohoram grazol velebel.`
 > z-Ululon | [th-INFERRED | [b-hour | g-zero]] | v-sleep
 >
 > "Ululon must be asleep right now."
 
 The unit sets how wide *now* is. Zero hours is *right now*; zero [days](numbers-applied.md#stock-units) is *today*.
 
-> `zazawan theraram bunuzem g+0 vuzunul.`
->
-> 🔊 *zazawan theraram bunuzem grazol vuzunul.*
->
+> `zazawan theraram bunuzem grazol vuzunul.`
 > z-Azawan | [th-TOLD | [b-day | g-zero]] | v-sing
 >
 > "I hear Azawan sings today."
