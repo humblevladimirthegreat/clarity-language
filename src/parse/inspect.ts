@@ -365,6 +365,9 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   if (family.kind === "x" && family.xFamily === "interest") {
     return { line: "interests (interest + th)", href: "interests.html" };
   }
+  if (family.kind === "x" && family.xFamily === "lateral" && family.landmark) {
+    return { line: "landmark lateral (the /b/ landmark's own facing)", href: "roles.html#landmark-facing" };
+  }
   if (family.kind === "x" && family.xFamily === "lateral") {
     return { line: "viewpoint lateral", href: "roles.html#viewpoint-laterals" };
   }

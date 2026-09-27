@@ -346,6 +346,7 @@ function enforceLeadingFence<T extends { join?: LexWord }>(parts: T[], isEmpty: 
 }
 
 function enforceAsOfWord(word: LexWord, bound: LexWord | undefined): void {
+  if (word.family.kind === "x" && word.family.landmark && !bound) throw new ConstructionError("landmarkLateralBound", word.raw);
   if (!isAsOfOverlay(word)) return;
   if (word.ending === "r" && bound) throw new ConstructionError("asOfResumeBound", `${word.raw} ${bound.raw}`);
   if (word.ending !== "r" && !bound) throw new ConstructionError("asOfIntroduceBound", word.raw);

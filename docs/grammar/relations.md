@@ -287,6 +287,32 @@ Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in
 
 
 
+### Social relations (*Azawan's friend*, *boss*) {#social-relations}
+
+English *'s* also names a social tie (*Azawan's friend*, *Azawan's boss*). Put the root for the tie on `/ɡ/` with **-m** (the abstract sense), and put the other person in hosted `/b/` right after it, as with the *of* relations. `/b/` is the person the tie points to.
+
+> `zululon gamaram bazawan.`
+>
+> z-Ululon | [g-companionship | b-Azawan]
+>
+> "Ululon is Azawan's friend."
+
+> `zazawan dululon gowonom bazawan vejel.`
+>
+> z-Azawan | [d-Ululon | [g-leadership | b-Azawan]] | v-see
+>
+> "Azawan sees Ululon, Azawan's boss."
+
+Any root whose abstract sense is a tie works this way (`goholom` *partner of*, `gonogom` *bound to*). To name the other side of the tie without repeating anyone, use the [role compound](roles.md#role-compounds) with **`o`**: after `zululon gamaram bazawan`, `zoxamarar` is *the other party of that friendship* (Azawan).
+
+| Agalan | Use | English | Same root as |
+|--------|-----|---------|--------------|
+| **`gamaram`** + `/b/` | companion of `/b/` | *friend of* | `amaral` *Mrs Claus* |
+| **`gowonom`** + `/b/` | the one `/b/` answers to | *boss of* | `owonol` *crown* |
+| **`goholom`** + `/b/` | partner of `/b/` | *partner of* | `oholol` *holding hands* |
+
+**Compare with:** kin uses generation numbers ([kin generations](numbers-applied.md#kin-generations)). Ownership is `goborum`. *Part of* is `gobonem`.
+
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 

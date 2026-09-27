@@ -46,6 +46,7 @@ const ROWS: Row[] = [
   { invalid: "zazawan vawalal hogomolx.", rejection: "pluralOnPos", valid: "zazawan vawalal hogomol." },
   { invalid: "yonogotham zazawan vawalal.", rejection: "interestSlot", valid: "zawaral gonogothal." },
   { invalid: "zawaral gabenethal.", rejection: "interestRoot", valid: "zawaral gonogothal." },
+  { invalid: "zodogol vajul gojuthol.", rejection: "landmarkLateralBound", valid: "zodogol vajul gojuthol bohohul." },
   { invalid: "zual gagadalx.", rejection: "pluralKindAfterUniversal", valid: "zual gagadal." },
   { invalid: "zazawan zel h+2 vawalal.", rejection: "rankJoinNumberManner", valid: "zazawan zululon zel h+ vawalal." },
   { invalid: "heol vawalal.", rejection: "reversedSequenceSlot", valid: "zagadalx g+5 geol vajul." },

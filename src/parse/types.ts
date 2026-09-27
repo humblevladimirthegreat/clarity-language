@@ -67,6 +67,8 @@ export type MorphWordFamily =
       leftRoots: string[];
       /** Roots right of `x` for compound family only. */
       rightRoots?: string[];
+      /** Viewpoint lateral `DIR th o`: the hosted `/b/` landmark's own facing (roles.md#landmark-facing). */
+      landmark?: boolean;
       /** Span TYPE vowel (span open). */
       typeVowel?: "a" | "e" | "o" | "u";
       /** Span EDGE vowel (span open). */

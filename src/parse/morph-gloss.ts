@@ -1418,7 +1418,7 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
         pos: word.pos,
       }),
     );
-    return [dir, anchors.join("-x-")];
+    return [dir, family.landmark ? "landmark" : anchors.join("-x-")];
   }
 
   const named = word.ending === "n";

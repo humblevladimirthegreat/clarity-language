@@ -437,7 +437,34 @@ Gravity works the same way: bare **`odowo`** + `/b/` is *under* the landmark, an
 |--------|-----|---------|
 | Bare DIR | compass / gravity | `gewezel` *west*; `gubal` *up* |
 | **`DIR th ANCHOR`** | that point on **ANCHOR’s** facing rose | `gewezethedonen` *listener-left* |
+| DIR + **`th`** + **`o`** + `/b/` | that point on the **landmark’s** own rose | `gojuthol bohohul` *behind the house* |
 | **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gewezethazawan berel` *on Azawan’s-left of the tree* |
+
+### The landmark's own front (DIR + `th` + `o`) {#landmark-facing}
+
+English *behind the house* means the house's own back, not a compass heading and not the speaker's back. Write the arrow root, then **`th`**, then **`o`** in place of a facing person, then the ending. Put the landmark in hosted `/b/` right after it. **`o`** is the same vowel that names the extra `/b/` party in [role compounds](#role-compounds): here, the `/b/` landmark is the one whose facing counts.
+
+> `zodogol vajul gojuthol bohohul.`
+>
+> z-dog | v-sit | [g-south-th-landmark | b-house]
+>
+> "The dog sits behind the house."
+
+> `zazawan vawalal horohothol badorol.`
+>
+> z-Azawan | v-walk | [h-north-th-landmark | b-door]
+>
+> "Azawan walks in front of the door."
+
+The landmark's front is where its design or current use faces (a house's front door, a car's windshield). A DIR + **`th`** + **`o`** word always takes a `/b/` landmark.
+
+| Agalan | English |
+|--------|---------|
+| `gojuthol bohohul` | *behind the house* (its own back) |
+| `gorohothol bohohul` | *in front of the house* |
+| `gewezethol bohohul` | *on the house's left* |
+| `gewezethazawan bohohul` | *on Azawan's left of the house* |
+| `gewezel bohohul` | *west of the house* |
 
 ### Endings and resume
 

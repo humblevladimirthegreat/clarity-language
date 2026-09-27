@@ -313,7 +313,7 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 ### CAUSE {#cause}
 <a id="cause-mood"></a>
 
-To highlight **how** a result comes about (the mechanism, not only that a condition holds), add the closed mood **`egega`** as an `/th/` word. The ending is **-m**: **`thegegam`**. Always put that mood next to a pole: the pole names the condition, and **CAUSE** says the link is the mechanism. Ordinary content on the same root is still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*). Optional `/w/` when the mood grades only the `/ɡ/` adjective it sits immediately before. (cue: ⚙️ *gear*: how the mechanism engages)
+To highlight **how** a result comes about (the mechanism, not only that a condition holds), add the closed mood **`egega`** as an `/th/` word. The ending is **-m**: **`thegegam`**. Put that mood next to a pole, or give it its own `/b/` causer (below): the pole names the condition, and **CAUSE** says the link is the mechanism. Ordinary content on the same root is still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*). Optional `/w/` when the mood grades only the `/ɡ/` adjective it sits immediately before. (cue: ⚙️ *gear*: how the mechanism engages)
 
 > `zazawan vawalal thegegam thadorom banunul.`
 >
@@ -328,6 +328,24 @@ To highlight **how** a result comes about (the mechanism, not only that a condit
 > "Fire is what makes Ululon pour."
 
 **Compare with:** *because* / *if* name the condition (`thurugum` / `thadorom`). **CAUSE** names how the link meshes.
+
+#### Make someone do it {#make}
+
+English *Azawan makes Ululon tell* has a causer and a causee. Keep the causee as the subject of the event. Put the causer in hosted `/b/` right after **`thegegam`**, with no pole. The `/b/` word is the one who makes it happen.
+
+> `zululon vezehel thegegam bazawan.`
+>
+> z-Ululon | v-tell | [th-CAUSE | b-Azawan]
+>
+> "Azawan makes Ululon tell."
+
+When a pole follows **`thegegam`**, the `/b/` belongs to the pole, as above (`thegegam thurugum burel` *because of fire, as mechanism*).
+
+**Compare with:** *let* is [permission](interests.md#permission), which puts the grantor in the same hosted `/b/` slot. *Get someone to* (ask, persuade) is tell + a *to* [stand-in](dependents.md#stand-in).
+
+| Agalan | English |
+|--------|---------|
+| **`thegegam`** + `/b/` | *make* (causer in `/b/`) |
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>

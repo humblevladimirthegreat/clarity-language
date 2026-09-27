@@ -419,7 +419,20 @@ function hostOverlay(word: MorphWord, tables: ClassifyTables): { hostOverlay?: L
   return row && (row.kind === "interest" || row.kind === "ability") ? { hostOverlay: overlayFromRow(row) } : {};
 }
 
+/** Arrow-rose roots (roles.md#arrow-rose-compass-vs-face); `DIR th o` on these is a landmark lateral. */
+const ARROW_ROOTS = new Set(["oroho", "onore", "ezaza", "ozozu", "oju", "ozohe", "eweze", "onohe"]);
+
+/** `DIR th o` parses as an interest shape; on an arrow root it is the landmark's own facing. */
+function landmarkLateral(word: MorphWord): MorphWord | undefined {
+  const family = word.family;
+  if (family.kind !== "x" || family.xFamily !== "interest" || family.stanceVowel !== "o") return undefined;
+  if (family.leftRoots.length !== 1 || !ARROW_ROOTS.has(family.leftRoots[0]!)) return undefined;
+  return { ...word, family: { kind: "x", xFamily: "lateral", leftRoots: family.leftRoots, rightRoots: [], landmark: true } };
+}
+
 export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
+  const lateral = landmarkLateral(word);
+  if (lateral) return classify(lateral, tables);
   const senseForm = overlaySenseForm(word);
   const pos = word.pos;
 
