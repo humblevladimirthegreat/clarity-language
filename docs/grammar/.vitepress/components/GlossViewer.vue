@@ -2,10 +2,8 @@
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { inspectText, morphGlossLine, type InspectResult } from '@parse-browser'
 import { useClassifyTables } from '../composables/useClassifyTables'
-import { useAgelanSpeak } from '../composables/useAgelanSpeak'
-import { warmupSpeak } from '../lib/speak-engine'
+import { previewPhonemes } from '@tts-browser'
 import GlossOverlay from './GlossOverlay.vue'
-import SpeakButton from './SpeakButton.vue'
 
 const SAMPLE = 'zazawan vawalal.'
 const ERROR_IDLE_MS = 1000
@@ -13,7 +11,6 @@ const ERROR_IDLE_MS = 1000
 const text = ref(SAMPLE)
 
 const { tables, status, errorMessage } = useClassifyTables()
-const { error: speakError, ipaFor } = useAgelanSpeak()
 
 const deferredParseError = ref('')
 let parseErrorTimer = 0
@@ -34,7 +31,15 @@ const result = computed<InspectResult>(() => {
   }
 })
 
-const ipaPreview = computed(() => ipaFor(text.value))
+/** Phonology IPA for the spoken forms (writing shorthand and spans expanded). */
+const ipaPreview = computed(() => {
+  if (!text.value.trim()) return ''
+  try {
+    return previewPhonemes(text.value).words.map((w) => w.ipa).join('  ')
+  } catch {
+    return ''
+  }
+})
 
 /** Bracketed morph gloss for the whole input (docs/meta/glosses.md § Phrase brackets). */
 const morphLine = computed(() => {
@@ -66,9 +71,6 @@ watch([text, result], scheduleParseError)
 
 onMounted(() => {
   scheduleParseError()
-  void warmupSpeak().catch(() => {
-    /* prefetch failure surfaces on Speak click */
-  })
 })
 
 onBeforeUnmount(() => {
@@ -87,21 +89,13 @@ onBeforeUnmount(() => {
       aria-label="Agalan text"
       :disabled="status !== 'ready'"
     />
-    <div class="speak-bar">
-      <SpeakButton
-        :text="text"
-        label="Speak Agalan"
-        :disabled="status !== 'ready'"
-      />
-      <p v-if="ipaPreview" class="ipa" lang="und-Latn-fonipa">IPA: {{ ipaPreview }}</p>
-    </div>
-    <p v-if="speakError" class="warn">{{ speakError }}</p>
+    <p v-if="ipaPreview" class="ipa" lang="und-Latn-fonipa">IPA: {{ ipaPreview }}</p>
     <p class="hint">
       Hover for a short gloss. The morph gloss below shows phrase structure: <code>[ … ]</code> groups a unit, and labels such as <code>NAME[…]</code> or <code>CITE[…]</code> mark packages. Click or highlight a word for a floating inspect card. Highlight a
       join or span fence, or click a <code>SCOPE</code> label, to inspect the construction. Pin or press Enter for the
       full breakdown beside the stream. Copy uses the romanized surface form (not English). Arrow
-      keys walk words; <kbd>g</kbd> opens Why; <kbd>s</kbd> speaks the selection; <kbd>Esc</kbd>
-      closes the card. Speak Agalan expands number shorthand and span brackets. Foreign
+      keys walk words; <kbd>g</kbd> opens Why; <kbd>Esc</kbd>
+      closes the card. IPA expands number shorthand and span brackets. Foreign
       <code>&lt;&gt;</code> interiors and compact loans are skipped.
     </p>
     <p v-if="status === 'error'" class="warn">Could not load lexicon. {{ errorMessage }}</p>
@@ -138,21 +132,11 @@ textarea:focus {
   outline-offset: 1px;
 }
 
-.speak-bar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.65rem 1rem;
-  margin: 0.65rem 0 0;
-}
-
 .ipa {
-  margin: 0;
+  margin: 0.65rem 0 0;
   color: var(--vp-c-text-2);
   font-size: 0.9rem;
   font-family: var(--vp-font-family-mono);
-  min-width: 0;
-  flex: 1 1 12rem;
 }
 
 .hint {

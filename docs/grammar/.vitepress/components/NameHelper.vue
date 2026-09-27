@@ -3,7 +3,6 @@ import { computed, onMounted, ref } from 'vue'
 import { withBase } from 'vitepress'
 import type { LearnerNameOption } from '@learner-name'
 import { useLearnerName } from '../composables/useLearnerName'
-import SpeakButton from './SpeakButton.vue'
 
 /** Suggest a published root as the learner's Agalan name, or show the one they chose. */
 const { chosen, eligible, suggested, set, clear, loadEligibleNames } = useLearnerName()
@@ -68,7 +67,6 @@ onMounted(async () => {
         <span class="senses">(<em>{{ chosenOption.concrete }}</em><template v-if="chosenOption.abstract"> / <em>{{ chosenOption.abstract }}</em></template>)</span>.
       </p>
       <div class="actions">
-        <SpeakButton :text="`${chosenOption.name}.`" label="Say it" />
         <button type="button" class="btn" @click="change">Change</button>
         <button type="button" class="btn" @click="clear">Clear</button>
       </div>
@@ -88,7 +86,6 @@ onMounted(async () => {
       </div>
       <p v-else-if="status === 'loading'" class="note">Loading names…</p>
       <div class="actions">
-        <SpeakButton v-if="current" :text="`${current.name}.`" label="Say it" />
         <button type="button" class="btn" :disabled="at <= 0" @click="back">Back</button>
         <button type="button" class="btn" :disabled="status !== 'ready'" @click="another">Another</button>
         <button type="button" class="btn primary" :disabled="!current" @click="choose">Choose this name</button>

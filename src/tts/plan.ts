@@ -2,7 +2,6 @@ import { parse as peggyParse } from "../generated/word-parser.js";
 import { segmentUtterance, type TokenizeSegment } from "../parse/tokenize.js";
 import type { MorphWord, PunctKind } from "../parse/types.js";
 import { parseWord } from "../parse/word.js";
-import { ipaPhonemesToKittenIdChunks, ipaToKittenIds } from "./kitten-ids.js";
 import {
   isNativeSurface,
   toPhonemeWord,
@@ -38,12 +37,8 @@ export type SpeechPlan = {
 export type PhonemePlan = {
   words: PhonemeWord[];
   skipped: { raw: string; reason: SkipReason }[];
-  /** Word-spaced IPA phoneme stream for Kitten (no syllable dots; non-final vowels lengthened). */
+  /** Word-spaced IPA phoneme stream for a synthesizer (no syllable dots; boundary punctuation kept). */
   ipaPhonemes: string;
-  /** Kitten TextCleaner token ids ([0, …ids, 10, 0]). */
-  inputIds: number[];
-  /** Id chunks when the utterance exceeds Kitten's length cap. */
-  inputIdChunks: number[][];
 };
 
 type FramingRole = "force" | "polar" | "vocative" | "linker" | "clauseJoin" | "hook" | "ordinary";
@@ -280,14 +275,10 @@ export function toPhonemes(plan: SpeechPlan): PhonemePlan {
     }
   }
 
-  const ipaPhonemes = renderIpaPhonemes(parts);
-  const inputIdChunks = ipaPhonemesToKittenIdChunks(ipaPhonemes);
   return {
     words,
     skipped: plan.skipped,
-    ipaPhonemes,
-    inputIds: ipaToKittenIds(ipaPhonemes),
-    inputIdChunks,
+    ipaPhonemes: renderIpaPhonemes(parts),
   };
 }
 

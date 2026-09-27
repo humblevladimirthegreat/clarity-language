@@ -1,34 +1,17 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import {
-  ipaToKittenIds,
-  KITTEN_END_MARKER_ID,
-  normalizeIpaForKitten,
-  textToKittenIds,
-} from "./kitten-ids.js";
 import { isNativeSurface, toPhonemeWord, wordIpaPhones } from "./phonemes.js";
 
-describe("normalizeIpaForKitten", () => {
-  it("maps e̞ to ASCII e", () => {
-    assert.equal(normalizeIpaForKitten("e̞"), "e");
-    assert.equal(normalizeIpaForKitten("ɡle̞"), "ɡle");
-  });
-
-  it("keeps Agalan inventory phones", () => {
-    assert.equal(normalizeIpaForKitten("zɑːzɑːwɑn"), "zɑːzɑːwɑn");
-    assert.equal(normalizeIpaForKitten("uɦɡɹʒʃ"), "uɦɡɹʒʃ");
-  });
-
-  it("keeps citation dots and lengthens non-final vowels for Kitten", () => {
+describe("wordIpaPhones", () => {
+  it("keeps citation dots on ipa and joins syllables without them", () => {
     const word = toPhonemeWord("zazawan");
     assert.equal(word.ipa, "zɑ.zɑ.wɑn");
-    assert.equal(wordIpaPhones(word), "zɑːzɑːwɑn");
+    assert.equal(wordIpaPhones(word), "zɑzɑwɑn");
     const yuon = toPhonemeWord("yuon");
     assert.equal(yuon.ipa, "ju.on");
-    assert.equal(wordIpaPhones(yuon), "juːon");
-    assert.equal(wordIpaPhones(toPhonemeWord("gomonum")), "ɡoːmoːnum");
-    assert.equal(wordIpaPhones(toPhonemeWord("guzumum")), "ɡuːzuːmum");
+    assert.equal(wordIpaPhones(yuon), "juon");
+    assert.equal(wordIpaPhones(toPhonemeWord("gomonum")), "ɡomonum");
     assert.equal(wordIpaPhones(toPhonemeWord("yal")), "jɑl");
   });
 });
@@ -38,30 +21,6 @@ describe("th stance letter", () => {
     assert.ok(isNativeSurface("thodohom"));
     assert.equal(toPhonemeWord("thodohom").ipa, "ðo.do.ɦom");
     assert.ok(!isNativeSurface("todohom"));
-  });
-});
-
-describe("ipaToKittenIds", () => {
-  it("wraps with start pad, end marker, and end pad", () => {
-    const ids = ipaToKittenIds("zɑzɑwɑn");
-    assert.equal(ids[0], 0);
-    assert.equal(ids.at(-2), KITTEN_END_MARKER_ID);
-    assert.equal(ids.at(-1), 0);
-  });
-
-  it("maps zazawan phones without syllable dots", () => {
-    const word = toPhonemeWord("zazawan");
-    const ids = ipaToKittenIds(wordIpaPhones(word));
-    assert.ok(ids.includes(textToKittenIds("z")[0]!));
-    assert.ok(ids.includes(textToKittenIds("ɑ")[0]!));
-    assert.ok(ids.includes(textToKittenIds("ː")[0]!));
-    assert.ok(!ids.includes(textToKittenIds(".")[0]!));
-  });
-
-  it("does not inject hiatus stress on stacked vowels", () => {
-    const ids = ipaToKittenIds(wordIpaPhones(toPhonemeWord("yuon")));
-    assert.ok(ids.includes(textToKittenIds("ː")[0]!));
-    assert.ok(!ids.includes(textToKittenIds("ˈ")[0]!));
   });
 });
 

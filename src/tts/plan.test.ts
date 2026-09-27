@@ -1,7 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { KITTEN_END_MARKER_ID } from "./kitten-ids.js";
 import { previewPhonemes, previewSpeech } from "./plan.js";
 
 function boundaryTags(plan: ReturnType<typeof previewSpeech>): string[] {
@@ -125,17 +124,14 @@ describe("previewPhonemes", () => {
       plan.words.map((w) => w.ipa),
       ["zɑ.zɑ.wɑn", "ɡu.zu.mum"],
     );
-    assert.equal(plan.ipaPhonemes, "zɑːzɑːwɑn ɡuːzuːmum.");
+    assert.equal(plan.ipaPhonemes, "zɑzɑwɑn ɡuzumum.");
   });
 
-  it("builds Kitten ids with word-spaced IPA phones", () => {
+  it("builds a word-spaced IPA phoneme stream", () => {
     const plan = previewPhonemes("zazawan vawalal.");
-    assert.equal(plan.ipaPhonemes, "zɑːzɑːwɑn vɑːwɑːlɑl.");
-    assert.equal(plan.inputIds[0], 0);
-    assert.equal(plan.inputIds.at(-2), KITTEN_END_MARKER_ID);
-    assert.equal(plan.inputIds.at(-1), 0);
+    assert.equal(plan.ipaPhonemes, "zɑzɑwɑn vɑwɑlɑl.");
     const yuon = previewPhonemes("yuon");
-    assert.equal(yuon.ipaPhonemes, "juːon");
+    assert.equal(yuon.ipaPhonemes, "juon");
   });
 
   it("includes punctuation cue between phoneme spans", () => {
@@ -150,7 +146,7 @@ describe("previewPhonemes", () => {
 
   it("keeps word spaces inside islands without comma between words", () => {
     const plan = previewPhonemes("^ zazawan vawalal ^");
-    assert.match(plan.ipaPhonemes, /zɑːzɑːwɑn vɑːwɑːlɑl/);
+    assert.match(plan.ipaPhonemes, /zɑzɑwɑn vɑwɑlɑl/);
     assert.doesNotMatch(plan.ipaPhonemes, /wɑn, vɑ/);
   });
 });

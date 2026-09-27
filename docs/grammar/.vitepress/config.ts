@@ -3,7 +3,6 @@ import { defineConfig } from 'vitepress'
 import { buildStampIso, formatBuildStampEt } from './lib/build-stamp'
 import { injectInArticleToc } from './lib/inject-in-article-toc'
 import { learnerNameSlots } from './lib/learner-name-md'
-import { ortWasmPlugin } from './lib/ort-wasm-plugin'
 import { readingOrder } from './lib/reading-order'
 
 const buildAt = new Date()
@@ -27,7 +26,6 @@ export default defineConfig({
       __SITE_BUILD_ISO__: JSON.stringify(buildStampIso(buildAt)),
       __SITE_BUILD_ET__: JSON.stringify(formatBuildStampEt(buildAt)),
     },
-    plugins: [ortWasmPlugin(repoRoot, '/grammar/')],
     resolve: {
       alias: {
         '@data': dataDir,
@@ -36,9 +34,6 @@ export default defineConfig({
         '@parse-browser': `${srcDir}/parse/browser.ts`,
         '@tts-browser': `${srcDir}/tts/browser.ts`,
       },
-    },
-    optimizeDeps: {
-      exclude: ['onnxruntime-web'],
     },
     worker: {
       format: 'es',
