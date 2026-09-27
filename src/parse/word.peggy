@@ -502,7 +502,7 @@ PoslessNumberStem
       return stem;
     }
 
-// ── Hooks (prefix-less; ending required; no -r / -x) ────────────────────────
+// ── Hooks (prefix-less; ending required; -r only on a simplex vowel; no -x) ────────────────────────
 
 hook
   = form:HookForm WordEnd {
@@ -514,6 +514,7 @@ hook
 
 HookForm
   = ("ao" / "ae" / "oe" / "ua" / "uo" / "ue" / [aeou]) [lmn] { return text(); }
+  / [aeou] "r" { return text(); }
 
 // ── Prefixed words (PoS + body) ─────────────────────────────────────────────
 

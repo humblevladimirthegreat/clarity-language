@@ -447,6 +447,26 @@ The `/b/` can name anyone: `thonogothum bululon.` owns a harm to Ululon, even wh
 
 **Compare with:** a met word with a `/b/` person (`thonogotham bululon.`) says the act met **Ululon's** interest: *Ululon appreciated it*, not your thanks.
 
+### Hopefully and other attitudes {#speaker-attitude}
+
+English *hopefully*, *luckily*, and *sadly* say how **you**, the speaker, feel about the whole claim. In Agalan, put the content root for that feeling on `/th/` with **-m**. It is always the speaker's attitude, never the subject's. For the subject's manner (*Azawan walks hopefully*), use `/h/` (`hozedem`).
+
+| Agalan | Use | English | Same root as |
+|--------|-----|---------|--------------|
+| **`thozedem`** | you want it, and it is still open | *hopefully* | `ozedel` *crossed-fingers* |
+| **`thaladom`** | it went well by chance | *luckily* | `aladol` *ladybug* |
+| **`thovorom`** | it saddens you | *sadly* | `ovorol` *frown* |
+
+> `zazawan thozedem vawalal.`
+>
+> z-Azawan | th-hope | v-walk
+>
+> "Hopefully Azawan walks."
+
+Hope is not a way of **knowing**, so it cannot hold up a forecast by itself. To say *hopefully … will*, add a real [evidence channel](knowing.md#forecast) as well. Hope colors the claim; the channel says what backs it.
+
+**Compare with:** a hunch with no evidence is FELT ([evidentiality](knowing.md#evidentiality)). **`thozedem`** says you want the outcome; FELT says your gut expects it.
+
 ### Permission (`therenel` / `therenem` / `therener`) {#permission}
 
 English *may* / *is allowed to* says a restriction is lifted. Put **`therenel`**, **`therenem`**, or **`therener`** on the clause: stance **`th`** on the root **`erene`** (🟢 *green circle*). The ending says **how formally the restriction is lifted**, on the same strong-to-light scale as the other stance endings. Use **-l** when a rule, policy, or formal right allows it. Use **-m** when a person grants it; that person is the speaker unless a hosted `/b/` names someone else. Use **-r** when no one granted it but no one objected either. If you do not know, use **-m**.

@@ -395,7 +395,11 @@ export const STAND_IN_CONSTRUCTIONS: Record<Vowel, ConstructionEntry> = {
 };
 
 /** Hook forms (hooks.md). */
-export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook, ConstructionEntry> = {
+export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "er" | "or" | "ur", ConstructionEntry> = {
+  ar: { anchor: "hooks.md#hook-resume", summary: "ar resume hook" },
+  er: { anchor: "hooks.md#hook-resume", summary: "er resume hook" },
+  or: { anchor: "hooks.md#hook-resume", summary: "or resume hook" },
+  ur: { anchor: "hooks.md#hook-resume", summary: "ur resume hook" },
   al: { anchor: "hooks.md#including-am-al", summary: "al including" },
   am: { anchor: "hooks.md#including-am-al", summary: "am including" },
   el: { anchor: "hooks.md#rather-el", summary: "el rather" },
@@ -523,6 +527,7 @@ export const REJECTIONS = {
   islandBinder: { anchor: "spans.md#scope-islands", summary: "a scope island needs a binder inside: an /h/ word or a join" },
   asOfIntroduceBound: { anchor: "relations.md#as-of", summary: "an as-of word introduces its bound with a /b/ word" },
   asOfResumeBound: { anchor: "relations.md#as-of", summary: "an as-of resume (-r) takes no /b/" },
+  hookResumeNoun: { anchor: "hooks.md#hook-resume", summary: "a resume hook (-r) points back and takes no /b/ noun" },
   asOfPerHost: { anchor: "relations.md#as-of", summary: "one /h/ host takes at most one as-of pair" },
 } satisfies Record<string, ConstructionEntry>;
 

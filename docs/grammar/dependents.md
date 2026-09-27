@@ -100,6 +100,8 @@ The time poles take a noun the same way. Put the event or period in `/b/` right 
 >
 > "Azawan sits after the thunderstorm."
 
+For *since* (from a starting point up to now), see [the *from* hook on a time](hooks.md#since). *Since* meaning *because* is **`thurugum barl`**.
+
 <a id="so-that"></a>
 <a id="event-purpose"></a>
 
@@ -507,7 +509,7 @@ Each content type has one lexicalized form; there is no closed / open pair here.
 | **`vuen`** | rejects a statement | *deny that…* |
 | **`vaon`** | accepts a proposed action | *agree to…* |
 | **`vuon`** | rejects a proposed action | *decline to…* |
-| **`vuan`** | rejects a proposed action, emphatically | *vehemently refuse to…* |
+| **`vuan`** | rejects the premise behind a question or claim | *dispute the premise that…* |
 
 For example, the `/v/` word takes the following sentence as its content:
 

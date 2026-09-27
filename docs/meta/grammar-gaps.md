@@ -71,8 +71,9 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 - **Quantity words:** done 2026-09-26: *a few* `g~+`, mass *some* `g+`, *many / few / enough / too* = amount scale `g+` against a named bar (judgment or interest bar), *most* `g+50% guel`, *half* `g-2`, *at most* `eo` ray, *more X than Y*. Done: *how many / how big* (G-A10, G-A12).
 - **Degree and focus:** done 2026-09-27: *quite* `wegerum`, *barely* `h+e-` / `w+e-` (effort `h~+e-` / `h~-e-`), *almost* on adjectives `w-e-`, *even* `wuruzem al`, *too* = verb resume. Promise (G-H12) = self-consent **-l**.
 - **Existentials:** done 2026-09-26: *there is* = lone noun ([predication#existence](../grammar/predication.md#existence)). Open: *there is no* (G-F07).
-- **Subordinators:** done 2026-09-26: *unless* (G-E09), reported wh-questions (G-E32), asking tag (G-A18). Open: temporal *since* (G-E15, G-J13).
-- **Others:** kin / social *'s* (G-C), reciprocal *each other* and one-clause causative (G-B), *behind / in front of* (G-J05). Done 2026-09-26: *under / above* (G-J03–04), pro-form *one* (G-F16).
+- **Subordinators:** done 2026-09-26: *unless* (G-E09), reported wh-questions (G-E32), asking tag (G-A18). Done 2026-09-27: temporal *since* = `ul` *from* on a time (G-E15, G-J13).
+- **Discourse / attitude:** done 2026-09-27: *hopefully / luckily / sadly* = content root on `/th/` (G-D23, G-D25); *oh* = polar **-r** `yaer` (G-H15); *anyway* = resume hook `or` (G-H20); polar `ua` now rejects the question's premise, strength via `!!`.
+- **Others:** kin / social *'s* (G-C), one-clause causative (G-B), *behind / in front of* (G-J05). Done 2026-09-26: *under / above* (G-J03–04), pro-form *one* (G-F16). Done 2026-09-27: reciprocal *each other* `hezazem` (G-B39).
 
 ### A. Clause types
 
@@ -152,7 +153,7 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 | G-B38 | reflexive (*Azawan sees herself*) | `zazawan vejel dazar.` | covered | pronouns.md#resume-r | — | — |
 | G-B40 | *try* (attempt, with no order implied: *Azawan tries the workaround*) | ATTEMPT **`thezube-`** + verb; **-l** committed / **-m** unstated / **-r** trial run ([intention#try](../grammar/intention.md#try)) | covered | intention.md | — | — |
 | G-B41 | fallback condition (*if A, else if B*: B applies only when A fails) | attempt + mid clause sequence **`xon`** *failing that*: `zazawan thezuber vawalal xon zazar vuzunul.` ([intention#fallback](../grammar/intention.md#fallback)) | covered | intention.md | — | — |
-| G-B39 | reciprocal (*Azawan and Ululon see each other*) | No taught route. `zazawan zululon zal dazar vejel.` parses, but `zar` is a join member and `dazar` would just resume Azawan. Numeric derivation `ROOTl+2` *mutual* makes only nouns/adjectives ([numeric-derivation](../grammar/numeric-derivation.md)), advanced | missing | pronouns.md / join-across-roles.md | Reciprocal: a set-join resume on the object (`d` + join resume) read as *each other*, or published `ezaze` *reciprocity* as `/h/` | P1 |
+| G-B39 | reciprocal (*Azawan and Ululon see each other*) | `zazawan zululon zal vejel hezazem.` (`ezaze` *reciprocity* on `/h/`; **-l** strictly pairwise) — pronouns.md#reciprocal | covered | pronouns.md / join-across-roles.md | — | — |
 
 **Notes**
 
@@ -241,9 +242,9 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 | G-D20 | *just* = *merely* (*it's just a cat*) | `zal` single item gives *only*, but not the "no more than / small" judgment | awkward | joins.md | Teach `zal` + `wumuzem`, or say that `zal` covers both | P3 |
 | G-D21 | *apparently / reportedly / evidently* | evidential `/th/`: `theraram` hearsay, `thunevem` inferred ([knowing#evidentiality](knowing.md#evidentiality)) | covered | knowing.md | — | — |
 | G-D22 | *probably / possibly / certainly* | MAY `thodohom`; stance numbers `th+`, `th+e` ([numbers#number-as-stance-by-marker](numbers.md#number-as-stance-by-marker)) | covered | knowing.md | — | — |
-| G-D23 | *hopefully* (speaker hope toward the clause) | emotion compose is for judgment only ([values#emotion-compose](interests.md#emotion-compose)); `zazawan thozedem vawalal.` parses (content *hope* under `/th/`) but is not taught | missing | interests.md / clause.md | Teach content-root `/th/` stance (`thozedem` *hopefully*) as a general "speaker attitude" pattern | P1 |
+| G-D23 | *hopefully* (speaker hope toward the clause) | content root on `/th/` **-m** = speaker attitude (`thozedem` *hopefully*, `thaladom` *luckily*, `thovorom` *sadly*); hope is not a channel, so a forecast still needs one — interests.md#speaker-attitude | covered | interests.md / clause.md | — | — |
 | G-D24 | *frankly / honestly / to be clear* (speech-act manner) | none; tone marks are prosody only ([speech-moves#tone-marks](speech-moves.md#tone-marks)) | missing | speech-moves.md | A `/y/` or `/th/` word for the speaker's manner of saying it | P2 |
-| G-D25 | *fortunately / sadly* (evaluative sentence adverb) | none taught; same gap as G-D23 | missing | interests.md | Same pattern as G-D23 with a value / emotion root on `/th/` | P2 |
+| G-D25 | *fortunately / sadly* (evaluative sentence adverb) | same pattern as G-D23: `thaladom` *luckily*, `thovorom` *sadly* — interests.md#speaker-attitude | covered | interests.md | — | — |
 
 **Notes**
 
@@ -270,7 +271,7 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 | G-E12 | *while* / *whereas* (contrast) | linker `xezebal` after a full sentence ([dependents#sentence-linkers](../grammar/dependents.md#sentence-linkers)); no dependent contrast pole | covered | dependents.md | — | — |
 | G-E13 | *until* | `hudumem barl …` | covered | dependents.md | — | — |
 | G-E14 | *before* / *after* | `hababam barl …` / `helabam barl …` | covered | dependents.md | — | — |
-| G-E15 | temporal *since* (*since Ululon left*, starting point up to now) | none taught; nearest `helabam barl` (*after*) loses "continuing until now"; hook `ul` is spatial *from* | missing | dependents.md | Add a *since* reading: `helabam` + open **-m**/restrictor `hual`, or hook `ul` on a `barl` clause (*from when …*); pick one and teach | P1 |
+| G-E15 | temporal *since* (*since Ululon left*, starting point up to now) | extra-noun `ul` *from* on a time `/b/` (`zazawan vajul ul bunerol.`) or `ul barl` + sentence — dependents.md#since | covered | dependents.md | — | — |
 | G-E16 | *once* / *as soon as* | `helabam barl …` (*after*); immediacy unmarked | awkward | dependents.md | Immediate-after: `/w/` detail on `helabam` (e.g. haste root `wadazam helabam barl`) or teach `helabam` + `hal` | P2 |
 | G-E17 | *whether* (embedded) | `zazawan vejel dorl zululon velebel` ([questions#embedded-whether](../grammar/questions.md#embedded-whether)) | covered | dependents.md | — | — |
 | G-E18 | restrictive relative (*the guard who sits*) | two sentences + resume: `zugugal vajul. zazawan bugur vezehel.` ([dependents#which-noun](../grammar/dependents.md#which-noun)); one-place kind via role compound `dodogol gaxajul` | covered | dependents.md | — | — |
@@ -393,17 +394,17 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 | G-H12 | promise (*I promise to…*) | self-consent **-l** said to the listener: `zSELFn vawalal thuxerenel.`; named promisee: `el` + `/b/` — [interests#consent](../grammar/interests.md#consent) | covered | interests.md | — | — |
 | G-H13 | warning (*watch out!*, *careful!*) | interjection `yawarun.` (*Warning!*) / `yulonen.` (*Danger!*) ([speech-moves#interjections](../grammar/speech-moves.md#interjections)); advice with offered warrant `yel zedonen vawalal thuhuhethem.` ([values#interest-force](../grammar/interests.md#interest-force)); `yul yul` for danger | covered | speech-moves.md | — | — |
 | G-H14 | backchannel *uh-huh* / *right* / *got it* | polar stance `yaem.` / `yael.` (*yeah / got it*) ([questions#polar-stance](../grammar/questions.md#polar-stance)) | covered | questions.md | — | — |
-| G-H15 | backchannel *oh* (news receipt, change of state) | `yuruzen.` is *Surprise!*, too strong; `yael.` loses "news to me" | missing | speech-moves.md / questions.md | teach a receipt polar (e.g. soft `yaem` vs a new-info particle); or a conventional interjection `y…n` for *I see* | P1 |
+| G-H15 | backchannel *oh* (news receipt, change of state) | polar **-r** = just-formed stance: `yaer` *oh / I see* (receipt, not agreement), `yuer` *huh?* — questions.md#polar-endings | covered | speech-moves.md / questions.md | — | — |
 | G-H16 | backchannel *hmm* / *I'm listening* (continuer) | none; bare `yom.` parses (*…?*) but undefined as continuer | missing | speech-moves.md | define bare act words (`yam.` / `yom.`) as continuers: *go on* / *hmm?* | P2 |
 | G-H17 | hedge on a class / adjective (*kind of a dog*, *sort of big*) | `/w/` hedge: `zazawan wagadum godogol.` ([predication](../grammar/predication.md)); **-m** on joins/numbers for *about* | covered | predication.md / clause.md | — | — |
 | G-H18 | hedge on a verb (*kind of walked*) | `zazawan vawalal hagadum.` parses but only `/w/` hedge is taught | awkward | clause.md | teach `/h/` **`agadu`** (-m) as verb-degree hedge alongside `/w/` | P2 |
 | G-H19 | hedge on the whole claim (*I guess*, *I think*, *sort of*) | soft statement `yam …`; MAY `thodohom zazawan vawalal.` ([knowing#may](../grammar/knowing.md#may)); soft polar `yaem`; tone `?` | covered | speech-moves.md / knowing.md | — | — |
-| G-H20 | *anyway* (return from digression / dismiss prior) | none; `xezebal` *however* is contrast, not topic return | missing | hooks.md#discourse-hooks | discourse hook **-r** (`ar …` = resume the main line; parser rejects `ur` today) — resume reading fits **-r** | P1 |
+| G-H20 | *anyway* (return from digression / dismiss prior) | resume hook `or …` *Anyway* (plus `er` *as I said*, `ar` *going back to that*, `ur` *never mind that*) — hooks.md#hook-resume | covered | hooks.md#discourse-hooks | — | — |
 | G-H21 | *actually* (correcting expectation) | `ol …` | covered | hooks.md#discourse-hooks | — | — |
 | G-H22 | *by the way* (aside) | aside span `thexal … xuxul` ([spans](../grammar/spans.md)) is a nested aside, not a new topic turn | awkward | spans.md / hooks.md | teach aside open at sentence start as *by the way* (or `am …` *additionally, and maybe more*) | P2 |
 | G-H23 | *well* (hesitation / dispreferred reply opener) | none; soft `yam` / `yaom` approximates | missing | speech-moves.md | define a filler: soft polar `yaom` as *well…* opener, or a spoken hesitation word | P2 |
 | G-H24 | *so* (consequence) | `xezazam` *therefore* ([dependents#sentence-linkers](../grammar/dependents.md#sentence-linkers)) | covered | dependents.md | — | — |
-| G-H25 | *so* (topic launch / *so, what happened?*) | none; `xuvumul` *next* partial | awkward | dependents.md / hooks.md | pair with G-H20 (`ar` resume) or note `xuvumul` as *so, next* | P3 |
+| G-H25 | *so* (topic launch / *so, what happened?*) | none; `xuvumul` *next* partial | awkward | dependents.md / hooks.md | pair with G-H20 (`or` / `ar` resume hooks) or note `xuvumul` as *so, next* | P3 |
 | G-H26 | *besides* / *moreover* | discourse hook `al …` *additionally* ([hooks#discourse-hooks](../grammar/hooks.md#discourse-hooks)) | covered | hooks.md | — | — |
 | G-H27 | *in fact* (strengthening prior) | `al …` adds but does not escalate; `el …` rephrases | awkward | hooks.md | reading for a rank-upward discourse hook (e.g. `ael …` *even more so*), or teach `el` + `!` | P2 |
 | G-H28 | *on the other hand* | `xezebal` *however* ([dependents#sentence-linkers](../grammar/dependents.md#sentence-linkers)) | covered | dependents.md | — | — |
@@ -412,7 +413,7 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 
 - Parser is permissive beyond the docs: `yonogotham.`, `yonogothum.` (values on `/y/`), `zugobon thabenem …` (non-stance root on `/th/`), `zedonen vawalal gerenem`, `hagadum`, and bare `yom.` all parse though none is taught. Verdicts treat them as untaught.
 - `th( zululon vawalal ).` fails (spaces inside the fence); `thexal … xuxul` works.
-- Discourse hooks accept only `a/e/o/u` + **-l/-m** (`ur …` fails); the **-r** column is unused and has an intuitive *resume* reading (G-H20).
+- Done 2026-09-27: hooks take **-r** on a plain vowel as a resume hook (G-H20, [hooks#hook-resume](../grammar/hooks.md#hook-resume)).
 - The speech-act system is rich for directives (`yel/yem/yul/yum`) but has no expressive (thanks/sorry) or commissive (promise) act; values-on-`/y/` would fill both from existing morphology.
 - Interjection `/y/` + **-n** is productive per speech-moves, so `yawarun` / `yulonen` count as covered, but no conventional interjections other than `yuruzen` are listed.
 
@@ -474,7 +475,7 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 | G-J10 | *toward* | hook `oel`: `zazawan vawalal oel badadul.` | covered | hooks.md | — | — |
 | G-J11 | *during* + NP | `hegemum bunerol` | covered | dependents.md#dependent-clauses | — | — |
 | G-J12 | *before* / *after* + NP | `hababam` / `helabam` + `/b/` | covered | dependents.md#dependent-clauses | — | — |
-| G-J13 | *since* (continuous from a point) | `helabam` *after* + `/b/` (`zazawan vajul helabam bunerol.`) — loses "and still ongoing"; none taught | missing | dependents.md | Stack *after* with a continuing aspect, or propose `ul` *from* on a time `/b/` (`ul b_#22,7`) = *since* — intuitive extension of source hook to time | P1 |
+| G-J13 | *since* (continuous from a point) | extra-noun `ul` *from* on a time `/b/` (`zazawan vajul ul bunerol.`) — dependents.md#since (same as G-E15) | covered | dependents.md | — | — |
 | G-J14 | *by* (deadline) | english.md: clock `/h/` or `hudumem barl` *until* — neither means "no later than" | awkward | numbers-applied.md | Use `hudumem` + `/b/` with **-l** closed bound, or rank threshold (`ue`) on time; teach explicitly | P2 |
 | G-J15 | *for* (duration) | measure phrase `/b/`: `zazawan vawalal bohoram g+3.` — [numbers-applied#measure-phrases](numbers-applied.md#measure-phrases) | covered | numbers-applied.md | — | — |
 | G-J16 | *ago* | channel + signed measure offset: `zazawan thuvuvum bohoram g-3 vawalal.` (*three hours ago*); `+` = *from now* | covered | knowing.md | Offset dates the event, never the moment of learning. Day / week / month / year units: G-J29 | — |

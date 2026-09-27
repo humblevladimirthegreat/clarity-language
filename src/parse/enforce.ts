@@ -230,6 +230,10 @@ function enforceClause(clause: Clause): void {
     if (unit.kind === "np" || unit.kind === "vp") {
       for (const part of unit.coord.parts) enforceShared(part.join, part.shared);
     }
+    if (unit.kind === "hook" && unit.word.ending === "r") {
+      const next = units[i + 1];
+      if (next?.kind === "np" && next.coord.level === "b") throw new ConstructionError("hookResumeNoun", unit.word.raw);
+    }
     if (unit.kind === "island") enforceClause({ units: unit.island.units });
     if (unit.kind === "span") unit.span.content.forEach(enforceClause);
     if (unit.kind === "clauseCoord") clauseCoordClauses(unit.coord).forEach(enforceClause);

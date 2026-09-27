@@ -171,6 +171,26 @@ To ask *where?*, put the fill-ask blank **`bar`** after the hook (`ol bar` *wher
 
 **Compare with:** *Additionally, Azawan walks* is a fronted hook whose next word is **not** `/b/` (`al zazawan vawalal`). *Like a duck* is still a hosted [simile](relations.md#similative). *Tells on behalf of Ululon* is [proxy](relations.md#proxy). Naming the **place of an event** as its own noun (*a sleep-place*, *that scream-place*) is a [role compound](roles.md#role-compounds) with vowel **`e`**, not this hook on the same clause.
 
+### Since (`ul` on a time) {#since}
+
+For *since* (from a starting point, and still true now), use **`ul`** *from* with a time instead of a place: *from the thunderstorm on*. [**`helabam`**](dependents.md#dependent-clauses) *after* only places the event later. **`ul`** says it has run from that point until now. (cue: **u** ≈ undo: leave the starting point behind)
+
+> `zazawan vajul ul bunerol.`
+>
+> z-Azawan | v-sit | [from | b-thunderstorm]
+>
+> "Azawan has been sitting since the thunderstorm."
+
+For *since* before a sentence, put **`barl`** after **`ul`** and the starting event after it.
+
+> `zazawan vawalal ul barl zululon velebel.`
+>
+> z-Azawan | v-walk | [from | b-that-clause] | z-Ululon | v-sleep
+>
+> "Azawan has been walking since Ululon fell asleep."
+
+**Compare with:** *since* meaning *because* is **`thurugum barl`**. Agalan keeps the time reading and the cause reading apart.
+
 ### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
@@ -558,7 +578,55 @@ With an object, `vovol` moves something else: `zazawan vovol dajul.` *Azawan mov
 
 In reported speech, the speaker is still whoever says the whole sentence. After *that* (`darl`, see [dependents](dependents.md#stand-in)), `om bugobon` is near the person talking now. Inside a quoted [cite span](spans.md), the quoted person is the speaker, as in English direct quotes.
 
-**Compare with:** *that dog* for a dog already named is [resume **-r**](pronouns.md#resume-r) (`zodor`), not a place. *Where?* is `ol bar` ([Where?](questions.md#where)).
+**Compare with:** *that dog* for a dog already named is [resume **-r**](pronouns.md#resume-r) (`zodor`), not a place. *Where?* is `ol bar` ([Where?](questions.md#where)). *There* for a place already named is a [resume hook](#hook-resume).
+
+### Point back (`or` / `ar` / `ur` / `er`) {#hook-resume}
+
+A hook with **-r** points back, the way [resume **-r**](pronouns.md#resume-r) does on a noun. It takes no noun to its right. Only the plain vowels take **-r**: `ar`, `er`, `or`, `ur`.
+
+After the verb, a resume hook points back to a landmark already in play. You do not repeat the `/b/` word.
+
+| Agalan | Points back to | English |
+|--------|----------------|---------|
+| `ar` | inside the place already named | *in there* / *in it* |
+| `or` | the place already named | *there* |
+| `ur` | the place already named, as a source | *from there* |
+| `er` | the one already named, as a goal | *for that* / *for it* |
+
+> `zazawan vajul ol bohohul. zululon vajul or.`
+>
+> z-Azawan | v-sit | [at | b-house] . z-Ululon | v-sit | there
+>
+> "Azawan sits at the house. Ululon sits there too."
+
+> `zodogol velebel al bohohul. zodor vurunul ur.`
+>
+> z-dog | v-sleep | [in | b-house] . z-←dog | v-run | from.there
+>
+> "The dog sleeps in the house. It runs from there."
+
+At the front of a sentence, a resume hook points back to an earlier stretch of talk, not just the last sentence.
+
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| `or …` | back to the main line after a side topic | *Anyway, …* | **o** ≈ one (the one main thread) |
+| `er …` | say an earlier point again | *As I said, …* | **e** ≈ order (the wording again) |
+| `ar …` | add to an earlier point, not the last one | *Going back to that, …* | **a** ≈ add |
+| `ur …` | drop the last point | *Never mind that, …* | **u** ≈ undo |
+
+> `or zazawan vawalal.`
+>
+> anyway | z-Azawan | v-walk
+>
+> "Anyway, Azawan walks."
+
+> `ur zululon velebel.`
+>
+> never.mind.that | z-Ululon | v-sleep
+>
+> "Never mind that: Ululon sleeps."
+
+**Compare with:** `ol …` *Instead* replaces the last claim. `or …` *Anyway* leaves the side topic standing and returns to the main one. To go back to a **person or thing** rather than a line of talk, use a [thread resume](pronouns.md#going-back-to-a-thread) (`xazar`).
 
 ### Parallel chains {#parallel-chains}
 
@@ -733,6 +801,22 @@ z-Azawan | [using | b-camera] | v-write
 `zazawan vuwurul aol bababel.`
 
 z-Azawan | v-write | [on | b-page]
+:::
+
+**9.** *Azawan writes on a page. Ululon writes there too.*
+
+::: details Show answer
+`zazawan vuwurul aol bababel. zululon vuwurul or.`
+
+z-Azawan | v-write | [on | b-page] . z-Ululon | v-write | there
+:::
+
+**10.** *Anyway, Ululon tells.*
+
+::: details Show answer
+`or zululon vezehel.`
+
+anyway | z-Ululon | v-tell
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}

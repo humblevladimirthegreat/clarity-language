@@ -179,6 +179,10 @@ const HOOK_JOB: Record<string, string> = {
   om: "instead.open",
   ul: "except",
   um: "except.open",
+  ar: "going.back.to.that",
+  er: "as.I.said",
+  or: "anyway",
+  ur: "never.mind.that",
 };
 
 const HOOK_IN_CLAUSE: Record<string, string> = {
@@ -197,6 +201,10 @@ const HOOK_IN_CLAUSE: Record<string, string> = {
 };
 
 const HOOK_EXTRA_NOUN: Record<string, string> = {
+  ar: "in.there",
+  or: "there",
+  ur: "from.there",
+  er: "for.that",
   al: "in",
   am: "amid",
   an: "in.named",
@@ -248,6 +256,7 @@ const POLAR_JOB: Record<string, string> = {
   ue: "no",
   ao: "sure",
   uo: "refuse-option",
+  ua: "reject-frame",
 };
 
 const ABILITY_STANCE: Record<string, string> = {
@@ -1060,6 +1069,8 @@ function sensePieces(
 }
 
 function hookLabel(form: string, ctx: MorphGlossContext): string {
+  // A resume hook (-r) takes no /b/: mid-clause it points back to the landmark (hooks.md § point back).
+  if (form.endsWith("r") && !ctx.discourseHook) return HOOK_EXTRA_NOUN[form] ?? form;
   if (ctx.extraNounHook) return HOOK_EXTRA_NOUN[form] ?? form;
   if (ctx.discourseHook) return HOOK_JOB[form] ?? form;
   return HOOK_IN_CLAUSE[form] ?? HOOK_JOB[form] ?? form;
@@ -1081,7 +1092,7 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
       ue: ["deny", "express-doubt"],
       ao: ["agree", "tentatively-agree"],
       uo: ["decline-to", "hesitate-to"],
-      ua: ["vehemently-refuse", "strongly-object-to"],
+      ua: ["reject-premise", "question-framing"],
     };
     const action = verbalDependent[series] ?? verbalDependent.a!;
     return action[0];
@@ -1097,7 +1108,7 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
       ue: "denial",
       ao: "agreement",
       uo: "decline",
-      ua: "refusal",
+      ua: "premise-rejection",
     };
     return namedContent[series] ?? "sentence-content";
   }
@@ -1114,7 +1125,11 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
       return FORCE_JOB[series] ?? series;
     }
     const polar = POLAR_JOB[series];
-    if (polar) return ending === "m" ? `${polar}-soft` : polar;
+    if (polar) {
+      if (ending === "m") return `${polar}-soft`;
+      if (ending === "r") return `${polar}-fresh`;
+      return polar;
+    }
   }
 
   if (word.reading === "restrictor") {

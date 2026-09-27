@@ -342,6 +342,20 @@ For English *one* (*a blue one*, *the red one*), write the unspecified **`dar`**
 >
 > "Azawan sees a red dog. Ululon sees a blue one."
 
+### Each other {#reciprocal}
+
+For *each other*, join the people in `/z/` and add **`hezazem`** after the verb. The root is **`ezaze`** *reciprocity*: each one does it to the others. Do not write a resume in `/d/` (`dazar` would just mean Azawan again).
+
+> `zazawan zululon zal vejel hezazem.`
+>
+> [z-Azawan | z-Ululon | z-and] | v-see | h-reciprocity
+>
+> "Azawan and Ululon see each other."
+
+With **-l**, **`hezazel`** is strictly pairwise: every one of them does it to every other one. **-m** is the everyday *each other* / *one another*, where it only has to go both ways in general.
+
+**Compare with:** **`thezazem barl`** on `/th/` is *if and only if* ([dependents](dependents.md#dependent-clauses)). On `/h/` with no `/b/`, the same root is *each other*.
+
 ### Addressing several people
 
 When you address several people at once, English *you* does not say how many. The listener root **`edone`** plus associative **-x** names everyone this turn addresses: the vocative cluster, plus anyone still held as addressee. One addressee stays singular **`edone`**; several take **`edone…x`**. Inclusive *shall we* stays **`aha`**. Soft **`zaham`** hedges whether you really share the act.
