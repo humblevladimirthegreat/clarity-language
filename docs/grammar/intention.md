@@ -407,11 +407,11 @@ Each clause keeps its own ending, so you can probe the first option and commit t
 
 A [PLAN](#plan-predict) atlas (**`themabal`**) already includes backups. Chain them with **`xon`** to name them, first choice first:
 
-> `zazawan themabal vawalal xon zazar vuzunul.`
+> `zazawan themabal vawalal xon zazar vuzunul xon zazar velebel.`
 >
-> [z-Azawan | th-plan-atlas | v-walk | x-or-else | z-←Azawan | v-sing]
+> [z-Azawan | th-plan-atlas | v-walk | x-or-else | z-←Azawan | v-sing | x-or-else | z-←Azawan | v-sleep]
 >
-> "Azawan's plan is to walk, with singing as the backup."
+> "Azawan's plan is to walk; failing that, to sing; failing that, to sleep."
 
 **Compare with:** [ability](#ability) says whether someone **can** do something; an attempt makes no claim either way. [PLAN](#plan-predict) is intention before acting; an attempt is acting with the outcome open. Unordered *or* is **`xol`** ([clause joins](joins.md#clause-joins)): no first choice and no backup.
 

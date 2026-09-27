@@ -668,7 +668,7 @@ export function morphRedundantWithLoose(
 }
 
 const MORPH_TOKEN_RE =
-  /^(?:(?:th|[zdbvgwhxy])l?-)?(?:←)?[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]*(?:-x-[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]+)*(?:-x)?$|^[<>^]$|^\^-start$|^\^-end$/;
+  /^(?:(?:th|[zdbvgwhxy])l?-)?←*[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]*(?:-x-[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]+)*(?:-x)?$|^[<>^]$|^\^-start$|^\^-end$/;
 
 export function looksLikeMorphLine(line: string): boolean {
   const trimmed = line.trim();
@@ -930,7 +930,7 @@ function contextFor(
   if (passThrough) ctx.passThrough = true;
   if (resolve) {
     const bind = bindFor(word, index, words, resolve.anaphors);
-    if (bind?.antecedent) ctx.antecedent = bind.antecedent;
+    if (bind?.antecedent) ctx.antecedent = rootAntecedent(bind.antecedent, resolve.anaphors);
     ctx.fillAsk = isFillAsk(word, resolve.asks);
   }
   if (parsed) ctx.discourseHook = isLeftEdgeHook(word, parsed);
@@ -968,6 +968,19 @@ function bindFor(
     n += 1;
   }
   return undefined;
+}
+
+/** A resume of a resume (`zazar … zazar`) glosses the original referent, not `←←`. */
+function rootAntecedent(antecedent: LexWord, binds: AnaphorBind[]): LexWord {
+  let current = antecedent;
+  const seen = new Set<LexWord>();
+  while (current.ending === "r" && !seen.has(current)) {
+    seen.add(current);
+    const next = binds.find((bind) => bind.pronoun === current)?.antecedent;
+    if (!next) break;
+    current = next;
+  }
+  return current;
 }
 
 function isFillAsk(word: LexWord, asks: AskRecord[]): boolean {

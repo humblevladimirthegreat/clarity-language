@@ -42,6 +42,12 @@ describe("morphGlossLine — clause joins go between clauses", () => {
     expectLine("zazawan vawalal xol xal.", "[z-Azawan | v-walk | x-or-exactly-one | x-none]");
     expectLine("xual ul zazawan vawalal.", "x-everything | except | z-Azawan | v-walk");
   });
+  it("glosses a resume of a resume as the original referent", () => {
+    expectLine(
+      "zazawan themabal vawalal xon zazar vuzunul xon zazar velebel.",
+      "[z-Azawan | th-plan-atlas | v-walk | x-or-else | z-←Azawan | v-sing | x-or-else | z-←Azawan | v-sleep]",
+    );
+  });
   it("glosses the sequence fallback after an attempt", () => {
     expectLine(
       "zazawan thezuber vawalal xon zazar vuzunul.",
