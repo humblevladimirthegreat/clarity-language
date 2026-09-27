@@ -88,6 +88,14 @@ Agalan [composes emotion](interests.md#emotion-compose) from a [value](interests
 
 Composing emotion from interest + activation + locus helps you ask for what would actually help instead of stopping at the label.
 
+### How far a label reaches {#how-far-a-label-reaches}
+
+English *Ululon is angry* can mean one outburst or the kind of person Ululon is. One act slides into a verdict on someone's nature, and a name for a problem (*lazy*, *anxious*) starts to sound like its cause.
+
+[Label scope](predication.md#label-scope) lets any label say how far it reaches: this one occasion, a pattern with exceptions, true in one relationship (*a stranger to Azawan*), or only a name that explains nothing.
+
+Marking a label's reach helps you describe what happened without turning it into who someone is, including yourself.
+
 ### Can, can’t, and won’t
 <a id="can-cant-and-wont"></a>
 
