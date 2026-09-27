@@ -564,6 +564,28 @@ Answer with the number as a [citation](word-endings.md#citation-forms) or a full
 
 **Compare with:** outside a question, the same word is *some number* (`zazawan d=+ vejel.` *Azawan sees some number of them*). To repeat a number already given, keep a digit: `d=+3` ([above](#digitless)).
 
+#### How big? How fast? {#how-big}
+
+To ask **how much** of a quality, put the same blank on `/w/` immediately before the adjective or adverb: **`w=+`**. It is the degree slot that [*barely* / *almost*](#just-short) use.
+
+> `yol zodogol w=+ gelem.`
+>
+> 🔊 *yol zodogol wrar gelem.*
+>
+> y-question | z-dog | [w-how-many | g-big]
+>
+> "How big is the dog?"
+
+> `yol zodogol vurunul w=+ hadazam.`
+>
+> 🔊 *yol zodogol vurunul wrar hadazam.*
+>
+> y-question | z-dog | v-run | [w-how-many | h-haste]
+>
+> "How fast does the dog run?"
+
+To ask for an exact size in units, fill a [measure phrase](numbers-applied.md#measure-phrases) instead: `yol zodogol bedurem g=+ gelem.` *How many meters big is the dog?*
+
 Other prefixes use the same empty payload (the marker’s identity, no named N). Restrictor **`har`** (*sometimes*) is the [restrictor](restrictors.md).
 
 ### Exponents

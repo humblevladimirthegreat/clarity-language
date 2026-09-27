@@ -522,25 +522,39 @@ Use `ol` in place of `om` for the exact spot (`ol bugobon` *right where I am*).
 >
 > "Ululon sleeps over there."
 
-English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Agalan names the landmark with a motion verb and a path hook: **`oel`** (*toward*) for *come*, **`ul`** (*from*) for *go away*.
+English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Agalan names the landmark with the plain motion verb **`vovol`** (*go*) and a path hook: **`oel`** (*toward*) for *come*, **`ul`** (*from*) for *go away*. `vovol` says nothing about how someone travels; use `vawalal` (*walk*) or `vurunul` (*run*) only when the manner matters.
 
-> `zazawan vawalal oel bugobon.`
+> `zazawan vovol oel bugobon.`
 >
-> z-Azawan | v-walk | [toward | b-speaker]
+> z-Azawan | v-go | [toward | b-speaker]
 >
 > "Azawan comes over to me."
 
-> `zululon vawalal oel bedonen.`
+> `zululon vovol oel bedonen.`
 >
-> z-Ululon | v-walk | [toward | b-listener]
+> z-Ululon | v-go | [toward | b-listener]
 >
 > "Ululon is coming to you."
 
-> `zazawan vawalal ul bugobon.`
+> `zazawan vovol ul bugobon.`
 >
-> z-Azawan | v-walk | [from | b-speaker]
+> z-Azawan | v-go | [from | b-speaker]
 >
-> "Azawan walks away from me."
+> "Azawan goes away from me."
+
+With an object, `vovol` moves something else: `zazawan vovol dajul.` *Azawan moves the chair.* When the mover goes along with the thing, use **`vulugal`** (*carry*). The same hooks then give English *bring* and *take*:
+
+> `zazawan vulugal dagegel oel bugobon.`
+>
+> z-Azawan | v-carry | d-package | [toward | b-speaker]
+>
+> "Azawan brings me the package."
+
+> `zazawan vulugal dagegel ul bugobon.`
+>
+> z-Azawan | v-carry | d-package | [from | b-speaker]
+>
+> "Azawan takes the package away."
 
 In reported speech, the speaker is still whoever says the whole sentence. After *that* (`darl`, see [dependents](dependents.md#stand-in)), `om bugobon` is near the person talking now. Inside a quoted [cite span](spans.md), the quoted person is the speaker, as in English direct quotes.
 

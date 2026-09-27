@@ -63,12 +63,12 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 
 ### Cross-group P1 themes (input to Phase 4)
 
-- **Deixis:** done 2026-09-26: *here / there / this / that / come / go* = place hook + speaker / listener / interlocutors ([hooks#deixis](../grammar/hooks.md#deixis)); *now / today* = zero channel offset ([knowing#now](../grammar/knowing.md#now)); day / week / month / year units published. Open: *bring / take* (no carry root, G-I16) and a generic motion root.
-- **Question words:** done 2026-09-26: *why / how* (G-A09, G-A11). Open: *how many / how big* (G-A10, G-A12).
+- **Deixis:** done 2026-09-26: *here / there / this / that / come / go* = place hook + speaker / listener / interlocutors ([hooks#deixis](../grammar/hooks.md#deixis)); *now / today* = zero channel offset ([knowing#now](../grammar/knowing.md#now)); day / week / month / year units published. Done 2026-09-27: generic *go / move* `vovol` (👣 `ovo`) and *carry* `vulugal` (🧳 `uluga`); *bring / take* = carry + `oel` / `ul` (G-I16).
+- **Question words:** done 2026-09-26: *why / how* (G-A09, G-A11). Done 2026-09-27: *how big / how fast* = `w=+` before the adjective / adverb (G-A10).
 - **Aspect adverbs:** *just / already / still / not yet / anymore / about to* (G-B).
 - **Permission:** done 2026-09-26: permission `therenem` / `therenel`, consent `thuxerenem` / `thuxerener` (interests.md).
 - **Expressive / commissive acts:** *thanks / sorry / promise* (G-H); values on `/y/` (`yonogotham`) parse.
-- **Quantity words:** done 2026-09-26: *a few* `g~+`, mass *some* `g+`, *many / few / enough / too* = amount scale `g+` against a named bar (judgment or interest bar), *most* `g+50% guel`, *half* `g-2`, *at most* `eo` ray, *more X than Y*. Open: *how many / how big* (G-A10, G-A12).
+- **Quantity words:** done 2026-09-26: *a few* `g~+`, mass *some* `g+`, *many / few / enough / too* = amount scale `g+` against a named bar (judgment or interest bar), *most* `g+50% guel`, *half* `g-2`, *at most* `eo` ray, *more X than Y*. Done: *how many / how big* (G-A10, G-A12).
 - **Degree and focus:** done 2026-09-27: *quite* `wegerum`, *barely* `h+e-` / `w+e-` (effort `h~+e-` / `h~-e-`), *almost* on adjectives `w-e-`, *even* `wuruzem al`, *too* = verb resume. Promise (G-H12) = self-consent **-l**.
 - **Existentials:** done 2026-09-26: *there is* = lone noun ([predication#existence](../grammar/predication.md#existence)). Open: *there is no* (G-F07).
 - **Subordinators:** done 2026-09-26: *unless* (G-E09), reported wh-questions (G-E32), asking tag (G-A18). Open: temporal *since* (G-E15, G-J13).
@@ -87,7 +87,7 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 | G-A07 | *where / where from / in what* | hook + `bar`: `yol zuhubun vawalal ol bar.` — questions.md#where | covered | questions.md | — | — |
 | G-A08 | *when* | `yol zazawan vawalal har.` — questions.md#when | covered | questions.md | — | — |
 | G-A09 | *how* (manner / means: *How does Azawan walk?*) | `yol zazawan vawalal hurorom bar.`; means `ael bar` | covered | questions.md#how, hooks.md#extra-noun-intermediate | — | — |
-| G-A10 | *how* + degree (*How big is the dog?*, *how fast*) | none. No degree blank before `/ɡ/` (`wel` is already rank-restrictor; `war` rejected after the verb) | missing | questions.md / comparatives.md | Degree fill-ask on `/w/` before the adjective (e.g. a digitless `/w/` number blank, or a measure-phrase blank); check numbers free forms | P1 |
+| G-A10 | *how* + degree (*How big is the dog?*, *how fast*) | `yol zodogol w=+ gelem.` / `yol zodogol vurunul w=+ hadazam.`; exact size via measure blank `bedurem g=+` — [numbers#how-big](../grammar/numbers.md#how-big) | covered | numbers.md | — | — |
 | G-A11 | *why* / *what for* | `thurugum bar` / `holalam bar` / `thadorom bar` | covered | questions.md#why | — | — |
 | G-A12 | *how many / how much* | digitless number **-r** is a blank like standalone join **-r**: `yol zazawan dagadalx g=+ vejel.` *How many cats?*; `g=#` *which place?*, `d=_` *what number?*; statement = *some number*. Resume needs a digit (`g=+3`) — [numbers#how-many](../grammar/numbers.md#how-many) | covered | numbers.md | — | — |
 | G-A13 | imperative (*Walk!*) | `yel vawalal.`; addressee explicit `yel zedonen vawalal.` (roles.md examples) — speech-moves.md#speech-act-beginner | covered | speech-moves.md | — | — |
@@ -435,7 +435,7 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 | G-I13 | *such* / *so* (property deixis) | `/ɡ/` / `/w/` resume **-r** ([pronouns#intermediate](pronouns.md#intermediate)) | covered | pronouns.md | — | — |
 | G-I14 | *come* | motion + `oel bugobon` / `oel bedonen` — [hooks#deixis](../grammar/hooks.md#deixis); still manner-specific (no generic *go* root) | covered | hooks.md | — | — |
 | G-I15 | *go* | motion + `ul bugobon` (*go away*) or `oel` + goal — [hooks#deixis](../grammar/hooks.md#deixis) | covered | hooks.md | — | — |
-| G-I16 | *bring / take* | `zazawan dabogol vawalal oel bugobon.` (*walks the book toward me*) — object on an intransitive motion root; no *carry* root | awkward | hooks.md | Carry root in lexicon + deictic hook (`oel bugobon` *bring*, `ul bugobon` *take away*) | P2 |
+| G-I16 | *bring / take* | `zazawan vulugal dagegel oel bugobon.` *bring* / `… ul bugobon` *take away*; generic *go / move* `vovol` — [hooks#deixis](../grammar/hooks.md#deixis). *take* = *grab* is a separate, non-motion verb | covered | hooks.md | — | — |
 | G-I17 | generic *you / one / they* (people in general) | `zuam geberel velebel.` soft generic ([joins#universals-domains-generics](joins.md#universals-domains-generics)); ordinary everyday register feels heavy | covered | joins.md | Consider teaching a short pointer from pronouns.md (*you* / *one* in general ≠ `edone`) | P3 |
 | G-I18 | impersonal *they* (*they say…*, unknown agents) | `zenenunx`? not taught; evidential **told** `eraram` + `/th/` covers *they say* ([knowing#evidentiality](knowing.md#evidentiality)); agent *they* = `zenenun` / `zar` | covered | knowing.md | — | — |
 | G-I19 | *someone / something* | `zenenun` ([pronouns#special-pronouns](pronouns.md#special-pronouns)); `zar` ([joins#unspecified-member-r-phrase](joins.md#unspecified-member-r-phrase)) | covered | pronouns.md, joins.md | Clarify `zenenun` vs `zar` overlap on one page | P3 |
