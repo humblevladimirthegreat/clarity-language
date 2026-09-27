@@ -4,6 +4,21 @@ This document contains a record of features that have been posted to the r/conla
 
 Use this document for styling examples when producing more posts, and seeing what has already been posted. New posts should be added at the top under this section.
 
+### Labels Say How Far They Reach
+
+Labeling a person from one behavior is a classic cognitive distortion, and it hides inside ordinary adjectives. "Ululon is angry" could mean one outburst or Ululon's whole personality, and listeners (including you, about yourself) tend to hear the second. Psychologists call the tendency to explain behavior by character instead of circumstance the [fundamental attribution error](https://en.wikipedia.org/wiki/Fundamental_attribution_error), and treating categories as fixed essences is [psychological essentialism](https://en.wikipedia.org/wiki/Essentialism#In_psychology).
+
+Agalan lets any label mark how far it reaches with a small infix (`th` + a vowel) before the word ending:
+
+- **tha** — this one occasion: *ganagathal* "angry this time"
+- **the** — a pattern with exceptions: *vululethel* "tends to lie"
+- **tho** — true in one relationship: *galulethom bululon* "a stranger to Ululon" (not a stranger in general)
+- **thu** — a name only, not an explanation: *ganuzuthul* "what gets called anxious"
+
+None of the four is a claim about someone's essence. The plain word stays neutral, so you aren't forced to mark every label, but when you want to say "he failed" without meaning "he's a failure," the grammar has a one-syllable way to do it. Bonus: the same **tho** form already gave Agalan *behind the house* (the house's own back), so the direction words turned out to be a special case of the same idea.
+
+You can learn the forms here: [https://main.d2xds94zsgwptg.amplifyapp.com/grammar/predication.html\#label-scope](https://main.d2xds94zsgwptg.amplifyapp.com/grammar/predication.html#label-scope)
+
 ### Collective Verbs and Adjectives Use Plural
 
 English *they sang* doesn't say whether they sang together or each on their own, and *the boxes are heavy* doesn't say whether each box is heavy or just the whole pile. Agalan lets you mark the difference by putting the plural **-x** on the verb or adjective itself.
@@ -540,21 +555,6 @@ To facilitate evidence consideration, /r/ClarityLanguage splits the words for *a
 Labeling, or ascribing (usually negative) qualities to a person based on their behavior, is a common cognitive distortion that can cause a lot of [personal and interpersonal issues](https://cogbtherapy.com/cbt-blog/cognitive-distortions-labeling). For example, thinking that you are a failure because you failed at a particular task. It’s better to simply focus on the particular event or behavior rather than making general statements about yourself or others.
 
 /r/ClarityLanguage helps avoid this by not having adjectives related to human behavior/personality (mean, stingy, failure, etc). Instead you are encouraged to describe the specific behavior that you don’t like. “He spoke curtly to me.” The closest thing to labeling is to use a construction that means something like “I always fail” or “he always interacts meanly” and thanks to the Generalization Counterexample Prompt, using these constructions prompts the speaker to consider whether there are counterexamples of this. I’ll probably also discourage positive labeling, like *good* or *nice*, though I haven’t decided yet.
-
-### Labels Say How Far They Reach
-
-Labeling a person from one behavior is a classic cognitive distortion, and it hides inside ordinary adjectives. "Ululon is angry" could mean one outburst or Ululon's whole personality, and listeners (including you, about yourself) tend to hear the second. Psychologists call the tendency to explain behavior by character instead of circumstance the [fundamental attribution error](https://en.wikipedia.org/wiki/Fundamental_attribution_error), and treating categories as fixed essences is [psychological essentialism](https://en.wikipedia.org/wiki/Essentialism#In_psychology).
-
-Agalan lets any label mark how far it reaches with a small infix (`th` + a vowel) before the word ending:
-
-- **tha** — this one occasion: *ganagathal* "angry this time"
-- **the** — a pattern with exceptions: *vululethel* "tends to lie"
-- **tho** — true in one relationship: *galulethom bululon* "a stranger to Ululon" (not a stranger in general)
-- **thu** — a name only, not an explanation: *ganuzuthul* "what gets called anxious"
-
-None of the four is a claim about someone's essence. The plain word stays neutral, so you aren't forced to mark every label, but when you want to say "he failed" without meaning "he's a failure," the grammar has a one-syllable way to do it. Bonus: the same **tho** form already gave Agalan *behind the house* (the house's own back), so the direction words turned out to be a special case of the same idea.
-
-You can learn the forms here: [https://main.d2xds94zsgwptg.amplifyapp.com/grammar/predication.html\#label-scope](https://main.d2xds94zsgwptg.amplifyapp.com/grammar/predication.html#label-scope)
 
 ### Example 
 
