@@ -815,7 +815,9 @@ function mergeIslandJoins(units: Unit[]): Unit[] {
       current.kind === "np" && current.coord.parts.every((part) => !part.join);
     const closerIsJoinNp =
       closer?.kind === "np" && closer.coord.parts.some((part) => part.join);
-    if (currentIsOpenNp && island?.kind === "island" && closerIsJoinNp && closer.kind === "np") {
+    // Only same-role material merges around an island (`zazawan ^ zunudel zal ^ zam`).
+    const sameRole = current.kind === "np" && closer?.kind === "np" && current.coord.level === closer.coord.level;
+    if (currentIsOpenNp && island?.kind === "island" && closerIsJoinNp && closer.kind === "np" && sameRole) {
       const leading = current.coord.parts.flatMap((part) => part.items);
       const firstClose = closer.coord.parts[0]!;
       out.push({
@@ -1007,7 +1009,7 @@ function joinFromClose(close: CstNode | undefined): { join?: LexWord; shared: Co
 }
 
 function buildIsland(cst: CstNode): IslandUnit {
-  return { units: childNodes(cst, "unit").map(buildUnit) };
+  return { units: childNodes(cst, "unit").flatMap(expandUnits) };
 }
 
 function buildNpItem(cst: CstNode): NpItem {

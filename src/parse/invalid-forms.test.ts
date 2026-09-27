@@ -87,6 +87,11 @@ const ROWS: Row[] = [
   { invalid: "zam zadagal zagadal.", rejection: "leftFence", valid: "zadagal zagadal zam." },
   { invalid: "^ ^ zazawan vawalal.", rejection: "emptyIsland", valid: "^ zazawan zululon zam ^ vawalal." },
   { invalid: "^ zazawan ^ vawalal.", rejection: "islandBinder", valid: "^ zazawan zululon zam ^ vawalal." },
+  { invalid: "zazawan ^ huzurem dodogol vejel ^.", rejection: "islandOneSlot", valid: "zazawan ^ huzurem dodogol ^ vejel." },
+  { invalid: "^ huzurem zazawan vawalal ^.", rejection: "islandOneSlot", valid: "^ huzurem zazawan ^ vawalal." },
+  { invalid: "zazawan ^ huzurem hohogem ^ vawalal.", rejection: "islandSlotRole", valid: "zazawan ^ huzurem zodogol ^ vejel." },
+  { invalid: "zululon ^ huzurem gonunul ^ bazawan.", rejection: "islandSlotRole", valid: "zululon ^ huzurem gonunul bazawan ^." },
+  { invalid: "zululon gonunul ^ bazawan bululon bal ^.", rejection: "islandSlotRole", valid: "zululon gonunul bazawan." },
   { invalid: "zazawan helerem vawalal.", rejection: "asOfIntroduceBound", valid: "zazawan helerem b_#22,7 vawalal." },
   { invalid: "zazawan helerer b_#22,7 vawalal.", rejection: "asOfResumeBound", valid: "zazawan helerer vawalal." },
   {

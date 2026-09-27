@@ -897,7 +897,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ### Scope islands {#scope-islands-join}
 
-When same-role words sit next to a smaller list, wrap that stretch and its join in **`^ … ^`**. The join inside the island takes members only from between those marks. One island per clause; material outside needs its own outer join.
+When same-role words sit next to a smaller list, wrap that stretch and its join in **`^ … ^`**. The join inside the island takes members only from between those marks. One island per clause; material outside needs its own outer join. An island holds at most one phrase and may close partway through it ([scope islands](spans.md#scope-islands)).
 
 | Agalan | English |
 |--------|---------|

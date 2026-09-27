@@ -270,6 +270,7 @@ function islandHasBinder(island: IslandUnit): boolean {
       if (unit.kind === "h" || unit.kind === "clauseCoord") return true;
       if (unit.kind === "island") return walk(unit.island.units);
       if (unit.kind === "vp") return unit.coord.parts.some((p) => p.join);
+      if (unit.kind === "predicate") return unit.adj.word.family.kind === "joinMarker";
       if (unit.kind !== "np") return false;
       return unit.coord.parts.some(
         (p) => p.join || p.items.some((item) => item.kind === "island" && walk(item.island.units)),
@@ -278,10 +279,50 @@ function islandHasBinder(island: IslandUnit): boolean {
   return walk(island.units);
 }
 
+/** The phrase role a unit fills inside an island; binders (`/h/`, `/th/`) and hooks fill none. */
+function islandSlot(unit: Unit): string | undefined {
+  if (unit.kind === "np") return unit.coord.level;
+  if (unit.kind === "vp") return "v";
+  if (unit.kind === "predicate") return "g";
+  if (unit.kind === "span") return "span";
+  return undefined;
+}
+
 function enforceIsland(island: IslandUnit): void {
   if (island.units.length === 0) throw new ConstructionError("emptyIsland", "^ ^");
   if (!islandHasBinder(island)) throw new ConstructionError("islandBinder", "^ … ^");
+  const slots = new Set(island.units.map(islandSlot).filter((slot) => slot !== undefined));
+  if (slots.size === 0) throw new ConstructionError("islandSlotRole", "^ … ^");
+  if (slots.size > 1) throw new ConstructionError("islandOneSlot", `^ … ^ (${[...slots].join(" + ")})`);
   enforceStructure(island.units);
+}
+
+/** A host with no `/b/` of its own, cut off by an island edge from the `/b/` on the other side. */
+function isOpenHost(unit: Unit | undefined): boolean {
+  if (unit?.kind === "predicate") return !unit.adj.bound && unit.adj.word.family.kind !== "joinMarker";
+  if (unit?.kind === "h") return !unit.unit.bound && unit.unit.word.family.kind !== "joinMarker";
+  // A noun's trailing adjective hosts a following `/b/` too (`zululon gonunul bazawan`).
+  if (unit?.kind === "np") {
+    const last = unit.coord.parts.at(-1);
+    const item = last && !last.join ? last.items.at(-1) : undefined;
+    const adj = item?.kind === "package" ? item.package.adjs.at(-1) : undefined;
+    return Boolean(adj && !adj.bound && adj.word.family.kind !== "joinMarker");
+  }
+  return false;
+}
+
+function isBPhrase(unit: Unit | undefined): boolean {
+  return unit?.kind === "np" && unit.coord.level === "b";
+}
+
+/** An island edge never splits a host from its hosted `/b/` (spans.md § Scope islands). */
+function enforceIslandEdges(units: Unit[]): void {
+  units.forEach((unit, i) => {
+    if (unit.kind !== "island") return;
+    const inner = unit.island.units;
+    if (isOpenHost(units[i - 1]) && isBPhrase(inner[0])) throw new ConstructionError("islandSlotRole", "host ^ /b/");
+    if (isOpenHost(inner.at(-1)) && isBPhrase(units[i + 1])) throw new ConstructionError("islandSlotRole", "host ^ /b/");
+  });
 }
 
 /** `A zam B zal` is legal nesting (`[[A zam] B zal]`); a join before any conjunct is a left fence (joins.md § Right-close fence). */
@@ -342,6 +383,7 @@ function enforceVp(coord: VpCoord): void {
 
 /** Fences, scope islands, and as-of pairs (formerly the parser's post-build `validate*` pass). */
 function enforceStructure(units: Unit[]): void {
+  enforceIslandEdges(units);
   let hAsOf = 0;
   for (const unit of units) {
     if (unit.kind === "h") {
