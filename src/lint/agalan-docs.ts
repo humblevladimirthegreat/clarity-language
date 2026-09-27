@@ -14,7 +14,7 @@ import { parseWithTables } from "../parse/parse-core.js";
 import { classifyTokenBranch } from "../parse/tokens.js";
 import { parseWord, WordParseError } from "../parse/word.js";
 import { traceFragment, traceTemplate } from "./template-trace.js";
-import { forEachMarkdownCodeSpan, forEachMarkdownCodeToken } from "../retie/tokens.js";
+import { forEachMarkdownCodeSpan, forEachMarkdownCodeToken, type MarkdownCodeSpan } from "../retie/tokens.js";
 import { isClarityRootShape } from "../word-converter.js";
 
 export type AgalanLintKind = "parse" | "unknown-root";
@@ -406,6 +406,49 @@ function addWordSpanConstructions(text: string, index: number, tables: ClassifyT
   }
 }
 
+/** How {@link walkAgalanSpans} hands out a page's code spans. */
+export type AgalanSpanVisitor = {
+  /** Span text the lint checks as Agalan: inline spans, `agalan` fence lines, and `<code>` bodies. */
+  text: (text: string, index: number) => void;
+  /** A span preceded by a `<!-- lint: … -->` marker (`marker` is the text after `lint:`, or undefined if malformed). */
+  marked?: (span: MarkdownCodeSpan, marker: string | undefined) => void;
+  /** A fence with a non-`agalan` info string. */
+  otherFence?: (span: MarkdownCodeSpan) => void;
+  /** A fence with no info string. */
+  unmarkedFence?: (span: MarkdownCodeSpan) => void;
+};
+
+/** Walk a page's code spans the way the docs lint reads them. */
+export function walkAgalanSpans(text: string, visit: AgalanSpanVisitor): void {
+  forEachMarkdownCodeSpan(text, (span) => {
+    if (span.marker?.startsWith("lint:")) {
+      visit.marked?.(span, LINT_MARKER_RE.exec(span.marker)?.[1]);
+      return;
+    }
+    if (span.kind === "fence") {
+      const info = span.info.split(/\s+/)[0] ?? "";
+      if (info === "agalan") {
+        let offset = 0;
+        for (const line of span.text.split("\n")) {
+          if (line.trim()) visit.text(line, span.index + offset);
+          offset += line.length + 1;
+        }
+      } else if (info) {
+        visit.otherFence?.(span);
+      } else {
+        visit.unmarkedFence?.(span);
+      }
+      return;
+    }
+    visit.text(span.text, span.index);
+  });
+
+  // HTML <code> (used where a span holds `<…>`, which Vue would read as a tag).
+  for (const match of text.matchAll(HTML_CODE_RE)) {
+    visit.text(decodeEntities(match[1]!), match.index! + "<code>".length);
+  }
+}
+
 /**
  * Lint code spans. When `used` is given, it receives the construction IDs
  * ([constructions.ts](../parse/constructions.ts)) the page's examples exercise.
@@ -418,70 +461,48 @@ export function lintAgalanSpans(
 ): AgalanSpanIssue[] {
   const issues: AgalanSpanIssue[] = [];
 
-  forEachMarkdownCodeSpan(text, (span) => {
-    const marker = span.marker ? LINT_MARKER_RE.exec(span.marker)?.[1] : undefined;
-    if (span.marker?.startsWith("lint:") && marker !== "skip" && marker !== "fragment") {
-      issues.push({ text: span.text, index: span.index, kind: "bad-marker", detail: `unknown marker: ${span.marker}` });
-      return;
-    }
-    if (marker === "skip") {
-      issues.push({
-        text: span.text,
-        index: span.index,
-        kind: "bad-marker",
-        detail: "<!-- lint: skip --> is not allowed; make the span parse, or write it another way",
-      });
-      return;
-    }
-    if (marker === "fragment") {
-      stats["marked-fragment"] += 1;
-      lintTraced(span.text, span.index, "fragment", () => traceFragment(span.text, tables), issues, used);
-      return;
-    }
-    if (span.kind === "fence") {
-      const info = span.info.split(/\s+/)[0] ?? "";
-      if (info === "agalan") {
-        let offset = 0;
-        for (const line of span.text.split("\n")) {
-          if (line.trim()) lintSpanText(line, span.index + offset, tables, stats, issues, used);
-          offset += line.length + 1;
-        }
-        return;
+  walkAgalanSpans(text, {
+    text: (body, index) => lintSpanText(body, index, tables, stats, issues, used),
+    marked: (span, marker) => {
+      if (marker === "fragment") {
+        stats["marked-fragment"] += 1;
+        lintTraced(span.text, span.index, "fragment", () => traceFragment(span.text, tables), issues, used);
+      } else if (marker === "skip") {
+        issues.push({
+          text: span.text,
+          index: span.index,
+          kind: "bad-marker",
+          detail: "<!-- lint: skip --> is not allowed; make the span parse, or write it another way",
+        });
+      } else {
+        issues.push({ text: span.text, index: span.index, kind: "bad-marker", detail: `unknown marker: ${span.marker}` });
       }
-      if (info) {
-        stats["text-fence"] += 1;
-        let offset = 0;
-        for (const line of span.text.split("\n")) {
-          const cls = line.trim() ? classifyAgalanSpan(line) : "english";
-          if (cls === "sentence" || cls === "phrase") {
-            issues.push({
-              text: line,
-              index: span.index + offset,
-              kind: "agalan-in-text-fence",
-              detail: "reads as Agalan; put it in an ```agalan fence",
-            });
-          }
-          offset += line.length + 1;
+    },
+    otherFence: (span) => {
+      stats["text-fence"] += 1;
+      let offset = 0;
+      for (const line of span.text.split("\n")) {
+        const cls = line.trim() ? classifyAgalanSpan(line) : "english";
+        if (cls === "sentence" || cls === "phrase") {
+          issues.push({
+            text: line,
+            index: span.index + offset,
+            kind: "agalan-in-text-fence",
+            detail: "reads as Agalan; put it in an ```agalan fence",
+          });
         }
-        return;
+        offset += line.length + 1;
       }
+    },
+    unmarkedFence: (span) => {
       issues.push({
         text: span.text.split("\n")[0] ?? "",
         index: span.index,
         kind: "unmarked-fence",
         detail: "fenced block needs an info string: ```agalan (checked) or ```text (not Agalan)",
       });
-      return;
-    }
-    lintSpanText(span.text, span.index, tables, stats, issues, used);
+    },
   });
-
-  // HTML <code> (used where a span holds `<…>`, which Vue would read as a tag).
-  for (const match of text.matchAll(HTML_CODE_RE)) {
-    const index = match.index! + "<code>".length;
-    const body = decodeEntities(match[1]!);
-    lintSpanText(body, index, tables, stats, issues, used);
-  }
 
   return issues;
 }
