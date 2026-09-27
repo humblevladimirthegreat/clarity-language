@@ -29,6 +29,7 @@ import {
 import { tokenMatcher } from "chevrotain";
 import type {
   Clause,
+  ClauseCoord,
   CoordShared,
   GPackage,
   HUnit,
@@ -230,7 +231,7 @@ function enforceClause(clause: Clause): void {
     }
     if (unit.kind === "island") enforceClause({ units: unit.island.units });
     if (unit.kind === "span") unit.span.content.forEach(enforceClause);
-    if (unit.kind === "clauseCoord") unit.coord.parts.forEach((part) => part.clauses.forEach(enforceClause));
+    if (unit.kind === "clauseCoord") clauseCoordClauses(unit.coord).forEach(enforceClause);
   });
   if (clause.dependent) enforceClause(clause.dependent.clause);
 }
@@ -284,6 +285,12 @@ function enforceIsland(island: IslandUnit): void {
 }
 
 /** `A zam B zal` is legal nesting (`[[A zam] B zal]`); a join before any conjunct is a left fence (joins.md § Right-close fence). */
+function clauseCoordClauses(coord: ClauseCoord): Clause[] {
+  const out = coord.first ? [coord.first] : [];
+  for (const link of coord.links) if (link.clause) out.push(link.clause);
+  return out;
+}
+
 function enforceLeadingFence<T extends { join?: LexWord }>(parts: T[], isEmpty: (part: T) => boolean): void {
   const first = parts[0];
   if (parts.length >= 2 && first && isEmpty(first) && first.join) {
@@ -347,8 +354,9 @@ function enforceStructure(units: Unit[]): void {
     if (unit.kind === "island") enforceIsland(unit.island);
     if (unit.kind === "span") unit.span.content.forEach((clause) => enforceStructure(clause.units));
     if (unit.kind === "clauseCoord") {
-      enforceLeadingFence(unit.coord.parts, (part) => part.clauses.length === 0);
-      unit.coord.parts.forEach((part) => part.clauses.forEach((clause) => enforceStructure(clause.units)));
+      const last = unit.coord.links.at(-1);
+      if (unit.coord.first && last && !last.clause) throw new ConstructionError("clauseSingleItem", last.join.raw);
+      clauseCoordClauses(unit.coord).forEach((clause) => enforceStructure(clause.units));
     }
   }
   if (hAsOf > 1) throw new ConstructionError("asOfPerHost", "two as-of pairs");

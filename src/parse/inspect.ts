@@ -414,7 +414,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   }
   if (word.reading === "mood") {
     const kind = word.overlay?.kind;
-    if (kind === "plan" || kind === "predict" || kind === "decision") {
+    if (kind === "plan" || kind === "predict" || kind === "decision" || kind === "attempt") {
       return { line: "closed mood", href: "intention.html" };
     }
     return { line: "closed mood", href: "knowing.html" };
@@ -677,14 +677,13 @@ function walkUnit(
       const indices: number[] = [];
       const triggers: number[] = [];
       const joins: LexWord[] = [];
-      for (const part of unit.coord.parts) {
-        for (const clause of part.clauses) {
-          walkClause(cursor, clause, constructions, sharedRoles, indices);
-        }
-        const idx = takeRaw(cursor, part.join.raw);
+      if (unit.coord.first) walkClause(cursor, unit.coord.first, constructions, sharedRoles, indices);
+      for (const link of unit.coord.links) {
+        const idx = takeRaw(cursor, link.join.raw);
         pushIndex(indices, idx);
         pushIndex(triggers, idx);
-        joins.push(part.join);
+        joins.push(link.join);
+        if (link.clause) walkClause(cursor, link.clause, constructions, sharedRoles, indices);
       }
       if (triggers.length > 0) {
         constructions.push({

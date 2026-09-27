@@ -7,12 +7,12 @@ The same join vowel series works across roles: `/v/` packages verb phrases, `/x/
 ### Sequence (`-n`, clause only) {#clause-sequence}
 <a id="sequence"></a>
 
-When English would walk through events in time (*and then*), put ending **-n** on a clause continue join (`/x/`). Narrative *and then* is **`xan`**. The clauses keep one speech act; this **-n** orders them rather than naming a person.
+When English would walk through events in time (*and then*), put ending **-n** on a clause continue join (`/x/`). Narrative *and then* is **`xan`**. Like every clause join, it goes [between](joins.md#clause-joins) the clauses: `A xan B xan C` reads one step at a time. The clauses keep one speech act; this **-n** orders them rather than naming a person.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `xan` | sequence add | *and then…* | **a** ≈ add |
-| `xon` | sequence menu | *or maybe…* | **o** ≈ one |
+| `xon` | sequence menu | *or maybe…*; after an [attempt](intention.md#try), *failing that…* | **o** ≈ one |
 | `xun` | sequence deny | *and then not…* | **u** ≈ undo |
 | `xaon` | sequence inclusive | *and/or maybe…* | **ao** ≈ add then one |
 
@@ -57,7 +57,7 @@ Sequence **`oe`** keeps its [phrase meaning](joins.md#sequence-oe) in both roles
 >
 > "Azawan walks, then runs."
 
-**Compare with:** clause **`xan`** ([sequence](#sequence)) tells what happened next. **`xoel`** says the listed steps go in this order.
+**Compare with:** clause **`xan`** ([sequence](#sequence)) tells what happened next, one step at a time. **`xoel`** makes the order part of the claim (a recipe, directions): `A xoel B xoel C` says these steps go in this order.
 
 A clause join with no clause before it is the standalone reading, like `zal` *nothing*: `xal` is *nothing happened*, and `xam` hedges it.
 
@@ -69,15 +69,15 @@ A clause join with no clause before it is the standalone reading, like `zal` *no
 
 `/x/` keeps the **same speech act**. Later clauses inherit the opener and omit `/y/` (including recoverable **`yal`**).
 
-> `zazawan vawalal zululon vurunul xan.`
+> `zazawan vawalal xan zululon vurunul.`
 >
-> [z-Azawan | v-walk | z-Ululon | v-run | x-and-then]
+> [z-Azawan | v-walk | x-and-then | z-Ululon | v-run]
 >
 > "Azawan walks and then Ululon runs."
 
-> `zazawan vawalal zululon vurunul xol zuhubun velebel xal.`
+> `zazawan vawalal xol zululon vurunul xal zuhubun velebel.`
 >
-> [[z-Azawan | v-walk | z-Ululon | v-run | x-or-exactly-one] | z-Uhubun | v-sleep | x-and]
+> [[z-Azawan | v-walk | x-or-exactly-one | z-Ululon | v-run] | x-and | z-Uhubun | v-sleep]
 >
 > "(Azawan walks or Ululon runs) and Uhubun sleeps."
 
@@ -99,7 +99,7 @@ When English would deny or weigh **how you stand** toward a claim (*not because�
 
 Nothing is SHARED after an `/h/` or `/th/` join. To grade the whole list at once, put a `/w/` detail immediately before the join word.
 
-**Compare with:** *Azawan does not walk* denies the event, so the join goes on the verb (`vawalal vul`) or the clause (`xul`), not on `/th/`.
+**Compare with:** *Azawan does not walk* denies the event, so the join goes on the verb (`vawalal vul`), not on `/th/`.
 
 #### Standalone stance joins {#standalone-stance-joins}
 
@@ -286,9 +286,9 @@ z-Ululon | [h-including | b-Uhubun] | v-run
 **5.** *Azawan punches, then Ululon screams.*
 
 ::: details Show answer
-`zazawan vubunul zululon vazagal xan.`
+`zazawan vubunul xan zululon vazagal.`
 
-[z-Azawan | v-punch | z-Ululon | v-scream | x-and-then]
+[z-Azawan | v-punch | x-and-then | z-Ululon | v-scream]
 :::
 
 **6.** *A team exclusive for Uhubun.*

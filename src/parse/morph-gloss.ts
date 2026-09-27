@@ -852,6 +852,18 @@ function standaloneJoinIndexes(words: LexWord[], parsed: ParseResult | undefined
     if (!node || typeof node !== "object") return;
     const obj = node as Record<string, unknown>;
     const join = obj.join as { raw?: string } | undefined;
+    // Clause chain: only a lone link with no clause on either side stands alone (`xal.` / stand-in `xal`).
+    if (Array.isArray(obj.links)) {
+      const links = obj.links as { join: { raw: string }; clause?: unknown }[];
+      if (obj.first) walk(obj.first);
+      links.forEach((link) => {
+        const queue = queues.get(link.join.raw) ?? [];
+        queue.push(!obj.first && links.length === 1 && !link.clause);
+        queues.set(link.join.raw, queue);
+        if (link.clause) walk(link.clause);
+      });
+      return;
+    }
     if (Array.isArray(obj.items) && join && typeof join.raw === "string") {
       const queue = queues.get(join.raw) ?? [];
       queue.push(firstPart && obj.items.length === 0);
@@ -928,8 +940,11 @@ function contextFor(
     while (words[i]?.pos === "w") i -= 1;
     const prev = words[i];
     ctx.extraNounHook = next?.pos === "b" && prev?.pos !== "b";
-    // `A al B xam`: a hook between a finished verb and a new subject opens the next conjunct (glue).
-    if (prev?.pos === "v" && next?.pos === "z") ctx.discourseHook = true;
+    // `A xam al B`: a hook right after a clause join opens that conjunct (glue). After a stand-in
+    // clause (`xual ul …`, nothing clause-like before it) the hook is same-role instead.
+    const isXJoin = (w: LexWord | undefined) => w?.pos === "x" && w.family.kind === "joinMarker";
+    const beforePrev = words[i - 1];
+    if (isXJoin(prev) && beforePrev && !isXJoin(beforePrev)) ctx.discourseHook = true;
   }
   if (word.reading === "restrictor") {
     const prev = words[index - 1];
@@ -1126,7 +1141,10 @@ function fenceJoinLabel(
     return "something";
   }
 
-  if (series === "a" && ending === "n" && pos === "x") return "and-then";
+  if (ending === "n" && pos === "x") {
+    const sequence: Record<string, string> = { a: "and-then", o: "or-else", u: "and-then-not", ao: "and-or-else" };
+    if (sequence[series]) return sequence[series];
+  }
 
   // Open **o** leaves the pick optional, so it is no longer *exactly one*.
   if (series === "o" && ending === "m") return "or.open";

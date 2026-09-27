@@ -46,13 +46,7 @@ Ending **-l** is ordinary English with no extra words: these are the only items.
 Write the items first, then the join. Readers treat everything up to that join as one role in the clause, filled by several members. One join finishes the row.
 
 
-Two full clauses use the same order: first clause’s words, second clause’s words, then a join that starts with `x` (`xam`).
-
-> `zazawan vawalal zululon vurunul xam.`
->
-> [z-Azawan | v-walk | z-Ululon | v-run | x-and.open]
->
-> "Azawan walks and Ululon runs (and possibly more)."
+Two full clauses are the one exception: the join that starts with `x` goes **between** them, so you hear how the clauses relate before the second one starts. See [clause joins](#clause-joins).
 
 Objects and extra nouns list the same way. Two `/d/` objects close with `dal`; two `/b/` recipients close with `bal`.
 
@@ -233,6 +227,45 @@ Two or more items still take the same vowel and ending as the lists above. The t
 | `zel` + NP | single-item | *only X matters* |
 | `zem` + NP | single-item | *X first* / *mainly X* |
 
+### Clause joins (`/x/`) {#clause-joins}
+<a id="clause-join-position"></a>
+
+A clause is long, so a join that waits until the end would leave you holding two whole sentences before you learn how they relate. A clause join that starts with `x` therefore goes **between** the clauses: first clause, join, second clause. Every other join still closes its list on the right.
+
+> `zazawan vawalal xam zululon vurunul.`
+>
+> [z-Azawan | v-walk | x-and.open | z-Ululon | v-run]
+>
+> "Azawan walks and Ululon runs (and possibly more)."
+
+> `zazawan vawalal xol zululon vurunul xol zuhubun velebel.`
+>
+> [z-Azawan | v-walk | x-or-exactly-one | z-Ululon | v-run | x-or-exactly-one | z-Uhubun | v-sleep]
+>
+> "Azawan walks, or Ululon runs, or Uhubun sleeps: exactly one of the three."
+
+Repeat the same join word and the list stays flat. Switch to a **different** join word and everything before it closes as one group: `A xol B xal C` is *(A or B) and C* ([clause forms](join-across-roles.md#vp-clause-forms)). The set joins **a** / **o** / **u** do not care about order, so you can put the group you want first. For a group on the right, end the sentence and start the next one with the join: the join then takes the **whole** next sentence.
+
+> `zazawan vawalal. xan zululon vurunul xol zuhubun velebel.`
+>
+> z-Azawan | v-walk . x-and-then | [z-Ululon | v-run | x-or-exactly-one | z-Uhubun | v-sleep]
+>
+> "Azawan walks. Then Ululon runs or Uhubun sleeps."
+
+A clause join never sits on one clause alone. To deny or single out one clause, put the join on the part you mean: **`vawalal vul`** *does not walk*, **`zazawan zal`** *only Azawan*.
+
+A join word with no clause before it stands for a clause of its own: `xal.` *nothing happened*, `xar` *something happened*, `xur` *something else happened*, `xual` *everything happened*. You can use that stand-in as one item of a clause list:
+
+| Agalan | English |
+|--------|---------|
+| `zazawan vawalal xam xar.` | *Azawan walks, for one* (and something else happened too) |
+| `zazawan vawalal xol xal.` | *Azawan may walk* (Azawan walks, or nothing happens) |
+| `zazawan vawalal xel xur.` | *mainly, Azawan walks* (that outranks anything else) |
+
+For *everything happened except that A*, put the except [hook](hooks.md#except-ul) after the stand-in `xual`.
+
+**Compare with:** a sentence linker (*therefore*, *however*) also starts the next sentence, but it is a content word with its own meaning ([continue](dependents.md#continue-x)).
+
 ### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
@@ -319,9 +352,9 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **8.** *Ululon punches and Azawan sees Uhubun (and possibly more).*
 
 ::: details Show answer
-`zululon vubunul zazawan duhubun vejel xam.`
+`zululon vubunul xam zazawan duhubun vejel.`
 
-[z-Ululon | v-punch | z-Azawan | d-Uhubun | v-see | x-and.open]
+[z-Ululon | v-punch | x-and.open | z-Azawan | d-Uhubun | v-see]
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
@@ -380,20 +413,20 @@ z-everything-but
 *only Uhubun matters* / *Uhubun first*
 :::
 
-**7.** `zululon dazegel vubunul zazawan vazagal xam.`
+**7.** `zululon dazegel vubunul xam zazawan vazagal.`
 
 ::: details Show answer
 
-[z-Ululon | d-basket | v-punch | z-Azawan | v-scream | x-and.open]
+[z-Ululon | d-basket | v-punch | x-and.open | z-Azawan | v-scream]
 
 *Ululon punches a basket and Azawan screams (and possibly more).*
 :::
 
-**8.** `zululon vazagal zazawan vululel xam.`
+**8.** `zululon vazagal xam zazawan vululel.`
 
 ::: details Show answer
 
-[z-Ululon | v-scream | z-Azawan | v-lie | x-and.open]
+[z-Ululon | v-scream | x-and.open | z-Azawan | v-lie]
 
 *Ululon screams and Azawan lies (and possibly more).*
 :::
@@ -484,7 +517,7 @@ Its main use is with one number. `z+5 zoel` runs **up** from 5 (*5 or more*). `z
 
 ### Full single-item and standalone inventories
 
-Beginner already used single-item *just X* and standalone *nothing* / *everything*. The tables below are the rest of those phrase-level readings. The series also works under `/v/` and `/x/`: [Join across roles](join-across-roles.md#vp-clause-forms).
+Beginner already used single-item *just X* and standalone *nothing* / *everything*. The tables below are the rest of those phrase-level readings. The series also works under `/v/`: [Join across roles](join-across-roles.md#vp-clause-forms). Clause `/x/` joins have standalone and stand-in readings but no single-item one ([clause joins](#clause-joins)).
 
 **Rank — single-item**
 
@@ -664,7 +697,7 @@ Further matching-role heads belong *before* the join.
 
 ### Fence nesting {#fence-nesting}
 
-When one list sits inside another (*(tea or coffee) and water*), write the inner items, then their join, then the outer item, then the outer join. Each join sits after only the stretch it closes. You nest by stacking right-close joins; a flat list still uses one join after every member.
+When one list sits inside another (*(tea or coffee) and water*), write the inner items, then their join, then the outer item, then the outer join. Each join sits after only the stretch it closes. You nest by stacking right-close joins; a flat list still uses one join after every member. Clause joins group by position instead ([clause joins](#clause-joins)).
 
 | Pattern | Agalan | English |
 |---------|--------|---------|
@@ -932,7 +965,7 @@ Join vowels stack at most two letters. Endings by role letter:
 | `/ɡ/` `/h/` | same series as restrictors allow | [restrictors](restrictors.md#defined-core-full); **-n** forms are [join-relations](join-across-roles.md#join-relations) |
 | `/v/` | **-l** / **-m** / **-r** | parallel **-n** forms are [join-act verbs](join-across-roles.md#join-act-verbs) |
 | `/th/` | **-l** / **-m** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | [stance joins](join-across-roles.md#stance-joins) on stance words (*not because…*) |
-| `/x/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | clause forms: [Join across roles](join-across-roles.md) |
+| `/x/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | between clauses, not after them ([clause joins](#clause-joins)); forms: [Join across roles](join-across-roles.md) |
 
 Word shape: [phonology](phonology.md#phonotactics).
 

@@ -40,6 +40,8 @@ const ROWS: Row[] = [
     valid: "zazawan !^ huzurem zodogol garedel ^ vejel.",
   },
   { invalid: "zazawan xezebal vawalal.", rejection: "linkerMidSentence", valid: "xezebal zazawan vawalal." },
+  { invalid: "zazawan vawalal xul.", rejection: "clauseSingleItem", valid: "zazawan vawalal vul." },
+  { invalid: "zazawan vawalal xam zululon vurunul xam.", rejection: "clauseSingleItem", valid: "zazawan vawalal xam zululon vurunul." },
   { invalid: "zazawan wawalalx vawalal.", rejection: "pluralOnPos", valid: "zazawanx vawalal." },
   { invalid: "zazawan vawalal hogomolx.", rejection: "pluralOnPos", valid: "zazawan vawalal hogomol." },
   { invalid: "yonogotham zazawan vawalal.", rejection: "interestSlot", valid: "zawaral gonogothal." },

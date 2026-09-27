@@ -254,8 +254,14 @@ export type VpCoord = {
   parts: { items: LexWord[]; join?: LexWord; shared: CoordShared[] }[];
 };
 
+/**
+ * Clause chain: `/x/` joins go **between** clauses (joins.md § clause joins).
+ * `first` absent + one link without a clause = standalone (`xal.`, or a stand-in item).
+ * A repeated join word keeps one flat list; a new join word closes everything before it as one group.
+ */
 export type ClauseCoord = {
-  parts: { clauses: Clause[]; join: LexWord }[];
+  first?: Clause;
+  links: { join: LexWord; clause?: Clause }[];
 };
 
 export type SpanUnit = {

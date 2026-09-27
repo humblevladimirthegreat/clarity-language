@@ -348,6 +348,73 @@ PLAN and DECISION endings run the same way: **-l** is the most settled, **-m** t
 >
 > "Ululon is thinking of walking, and has decided only for now."
 
+### Try {#try}
+<a id="attempt"></a>
+
+To say that someone is trying to do something, put **`thezube`** before the ordinary verb. The outcome stays open: the sentence says the attempt happens, not whether it works. The ending tells you how committed the attempt is. (Cue: 🧪 A test tube tries a sample to see what happens.)
+
+Ordinary content is still available (`zezubel` *a test tube*).
+
+> `zazawan thezubem vuwurul.`
+>
+> z-Azawan | th-ATTEMPT-unstated | v-write
+>
+> "Azawan tries to write."
+
+#### Endings — commitment
+<a id="attempt-commitment"></a>
+
+On **`ezube`**, **-l / -m / -r** say how far the attempt will go. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know, use **-m**.
+
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`thezubel`** | **committed** | *really tries to …* / *keeps trying to …* until it works or is ruled out | **-l** the full run |
+| **`thezubem`** | **unstated** (soft default) | *tries to …* | **-m** middle |
+| **`thezuber`** | **trial run** | *tries out …* / *gives … a shot*: a low-stakes probe, and failing is useful to know | **-r** a small sample |
+
+> `zululon thezuber vuzunul.`
+>
+> z-Ululon | th-ATTEMPT-trial | v-sing
+>
+> "Ululon gives singing a try."
+
+> `zululon thezubel vawalal.`
+>
+> z-Ululon | th-ATTEMPT-committed | v-walk
+>
+> "Ululon keeps trying to walk."
+
+A trial run (**-r**) plans for failure: if it fails, that is what the probe was for. Use it when you want to lower the stakes, for yourself or for someone else.
+
+#### Fallback (`xon`) {#fallback}
+<a id="or-else"></a>
+
+For *try A; failing that, B*, join the attempt to the backup with the clause sequence join [**`xon`**](join-across-roles.md#sequence). It goes between the two clauses. The backup comes into play only if the attempt before it fails, and exactly one of them ends up holding.
+
+> `zazawan thezuber vawalal xon zazar vuzunul.`
+>
+> [z-Azawan | th-ATTEMPT-trial | v-walk | x-or-else | z-←Azawan | v-sing]
+>
+> "Azawan tries walking; failing that, Azawan sings."
+
+Each clause keeps its own ending, so you can probe the first option and commit to the backup:
+
+> `zazawan thezuber vawalal xon zazar thezubel vuzunul.`
+>
+> [z-Azawan | th-ATTEMPT-trial | v-walk | x-or-else | z-←Azawan | th-ATTEMPT-committed | v-sing]
+>
+> "Azawan tries walking; failing that, Azawan really tries singing."
+
+A [PLAN](#plan-predict) atlas (**`themabal`**) already includes backups. Chain them with **`xon`** to name them, first choice first:
+
+> `zazawan themabal vawalal xon zazar vuzunul.`
+>
+> [z-Azawan | th-plan-atlas | v-walk | x-or-else | z-←Azawan | v-sing]
+>
+> "Azawan's plan is to walk, with singing as the backup."
+
+**Compare with:** [ability](#ability) says whether someone **can** do something; an attempt makes no claim either way. [PLAN](#plan-predict) is intention before acting; an attempt is acting with the outcome open. Unordered *or* is **`xol`** ([clause joins](joins.md#clause-joins)): no first choice and no backup.
+
 ### Plan or forecast
 <a id="predict-evidentiality"></a>
 
@@ -370,7 +437,7 @@ English *will* can be a plan or a forecast. A plan uses [PLAN](#plan-predict) an
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. These combine ability with planning and decisions.
+Short drills for Intermediate. Try each item before opening **Show answer**. These combine ability with planning, decisions, and attempts.
 
 **Setting:** a board meeting
 
@@ -383,6 +450,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *Uhubun* | `uhubun` | |
 | **PLAN** (itinerary) | `themabam` | `emabam` *plan-itinerary* |
 | **DECISION** (modifiable) | `thehegem` | `ehegel` *check* |
+| *attempt-committed* | `thezubel` | `ezubel` *test-tube* |
+| *attempt-trial* | `thezuber` | `ezubel` *test-tube* |
 | *sit* | `vajul` | `ajul` *chair* |
 | *tell* | `vezehel` | `ezehel` *speech* |
 | *write* | `vuwurul` | |
@@ -485,6 +554,22 @@ z-Uhubun | v-stand-unable-modifiable
 `zazawan thegeraxel.`
 
 z-Azawan | th-ABIL-unable-temporary
+:::
+
+**12.** *Azawan keeps trying to climb.*
+
+::: details Show answer
+`zazawan thezubel vugumul.`
+
+z-Azawan | th-ATTEMPT-committed | v-climb
+:::
+
+**13.** *Azawan gives standing a try; failing that, Azawan sits.*
+
+::: details Show answer
+`zazawan thezuber vadanal xon zazar vajul.`
+
+[z-Azawan | th-ATTEMPT-trial | v-stand | x-or-else | z-←Azawan | v-sit]
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}

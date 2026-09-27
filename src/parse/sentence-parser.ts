@@ -233,39 +233,62 @@ class AgelanSentenceParser extends CstParser {
     this.OPTION(() => {
       this.CONSUME(Linker);
     });
+    // Sentence-initial clause join before a clause: joins the prior sentence to this whole one (joins.md § clause joins).
+    this.OPTION2({
+      GATE: () => this.crossPeriodJoinAhead(),
+      DEF: () => this.CONSUME(JoinX, { LABEL: "crossJoin" }),
+    });
     this.SUBRULE(this.clause);
   });
 
+  /** `/x/` at sentence start followed by a clause (not `.`, a hook, or another `/x/`). */
+  private crossPeriodJoinAhead(): boolean {
+    if (this.LA(1).tokenType !== JoinX) return false;
+    if (this.LA(laAfterW(this, 2)).tokenType === Hook) return false;
+    return !tokenIs(this.LA(2), JoinX, Period, EOF, QMark, Bang, SpanClose, Force, Polar, Linker);
+  }
+
+  /** `/x/` joins go between clauses: item, join, item, … (joins.md § clause joins). */
   public clause = this.RULE("clause", () => {
-    this.AT_LEAST_ONE(() => {
-      this.SUBRULE(this.clausePart);
+    this.SUBRULE(this.clauseItem);
+    this.MANY(() => {
+      this.CONSUME(JoinX, { LABEL: "midJoin" });
+      this.OPTION({
+        GATE: () => !this.clauseEndAhead(),
+        DEF: () => this.SUBRULE2(this.clauseItem),
+      });
     });
   });
 
-  public clausePart = this.RULE("clausePart", () => {
+  private clauseEndAhead(): boolean {
+    return tokenIs(this.LA(1), Period, EOF, QMark, Bang, SpanClose, Force, Polar, Linker);
+  }
+
+  /** A clause, or a standalone `/x/` word as a stand-in clause (optionally `xual ul …` with a hook). */
+  public clauseItem = this.RULE("clauseItem", () => {
     this.OR([
       {
         GATE: () => this.LA(1).tokenType === JoinX,
         ALT: () => {
-          this.SUBRULE(this.xJoinClose, { LABEL: "standaloneJoin" });
+          this.CONSUME(JoinX, { LABEL: "standIn" });
+          this.OPTION({
+            GATE: () => this.LA(laAfterW(this)).tokenType === Hook,
+            DEF: () => {
+              this.AT_LEAST_ONE(() => {
+                this.SUBRULE(this.unit);
+              });
+            },
+          });
         },
       },
       {
         ALT: () => {
-          this.AT_LEAST_ONE(() => {
-            this.SUBRULE(this.unit);
-          });
-          this.OPTION(() => {
-            this.SUBRULE2(this.xJoinClose);
+          this.AT_LEAST_ONE2(() => {
+            this.SUBRULE2(this.unit);
           });
         },
       },
     ]);
-  });
-
-  // Nothing is SHARED after a clause join (join-across-roles.md § clause sequence).
-  public xJoinClose = this.RULE("xJoinClose", () => {
-    this.CONSUME(JoinX);
   });
 
   public unit = this.RULE("unit", () => {
@@ -1155,30 +1178,27 @@ function expandUnits(cst: CstNode): Unit[] {
   return [buildUnit(cst)];
 }
 
+function buildClauseItem(cst: CstNode): Clause {
+  const standInTok = childToken(cst, "standIn");
+  const units = childNodes(cst, "unit").flatMap(expandUnits);
+  if (!standInTok) return finalizeClause(units);
+  const standIn: Unit = { kind: "clauseCoord", coord: { links: [{ join: lexWordFromToken(standInTok) }] } };
+  if (units.length === 0) return { units: [standIn] };
+  const rest = finalizeClause(units);
+  return { ...rest, units: [standIn, ...rest.units] };
+}
+
 function buildClause(cst: CstNode): Clause {
-  const parts = childNodes(cst, "clausePart");
-  const hasJoin = parts.some((part) => partJoinClose(part, "xJoinClose") !== undefined);
-
-  if (!hasJoin) {
-    const units = parts.flatMap((part) => childNodes(part, "unit").flatMap(expandUnits));
-    return finalizeClause(units);
-  }
-
-  const coordParts: { clauses: Clause[]; join: LexWord }[] = [];
-  for (const part of parts) {
-    const close = partJoinClose(part, "xJoinClose");
-    const joinTok = close ? childToken(close, "JoinX") : undefined;
-    const join = joinTok ? lexWordFromToken(joinTok) : undefined;
-    const units = childNodes(part, "unit").flatMap(expandUnits);
-    if (!join) continue;
-    coordParts.push({
-      clauses: units.length > 0 ? [finalizeClause(units)] : [],
-      join,
-    });
-  }
-
+  const items = childNodes(cst, "clauseItem").map(buildClauseItem);
+  const joins = childTokens(cst, "midJoin").map(lexWordFromToken);
+  if (joins.length === 0) return items[0]!;
   return {
-    units: [{ kind: "clauseCoord", coord: { parts: coordParts } }],
+    units: [
+      {
+        kind: "clauseCoord",
+        coord: { first: items[0], links: joins.map((join, i) => ({ join, clause: items[i + 1] })) },
+      },
+    ],
   };
 }
 
@@ -1214,7 +1234,7 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
 }
 
 function buildBodyClause(cst: CstNode, trailingPunct?: IToken): BodyClause {
-  const linkerTok = childToken(cst, "Linker");
+  const linkerTok = childToken(cst, "Linker") ?? childToken(cst, "crossJoin");
   const clauseCst = childNodes(cst, "clause")[0]!;
   return {
     linker: linkerTok ? lexWordFromToken(linkerTok) : undefined,

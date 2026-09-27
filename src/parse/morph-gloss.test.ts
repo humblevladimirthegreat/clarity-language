@@ -25,6 +25,31 @@ function expectLine(agalan: string, morph: string): void {
   assert.equal(morphGlossLine(agalan, tables), normalizeMorphLine(morph), agalan);
 }
 
+describe("morphGlossLine — clause joins go between clauses", () => {
+  it("groups a switched join over the list before it", () => {
+    expectLine(
+      "zazawan vawalal xol zululon vurunul xal zuhubun velebel.",
+      "[[z-Azawan | v-walk | x-or-exactly-one | z-Ululon | v-run] | x-and | z-Uhubun | v-sleep]",
+    );
+  });
+  it("reads a sentence-initial join as linking the whole next sentence", () => {
+    expectLine(
+      "zazawan vawalal. xan zululon vurunul xol zuhubun velebel.",
+      "z-Azawan | v-walk . x-and-then | [z-Ululon | v-run | x-or-exactly-one | z-Uhubun | v-sleep]",
+    );
+  });
+  it("takes a standalone join as a stand-in clause item", () => {
+    expectLine("zazawan vawalal xol xal.", "[z-Azawan | v-walk | x-or-exactly-one | x-none]");
+    expectLine("xual ul zazawan vawalal.", "x-everything | except | z-Azawan | v-walk");
+  });
+  it("glosses the sequence fallback after an attempt", () => {
+    expectLine(
+      "zazawan thezuber vawalal xon zazar vuzunul.",
+      "[z-Azawan | th-ATTEMPT-trial | v-walk | x-or-else | z-←Azawan | v-sing]",
+    );
+  });
+});
+
 describe("morphGlossLine — glosses.md single words", () => {
   it("senses-are-separate-roots table", () => {
     expectLine("zugobol", "z-microphone");

@@ -65,6 +65,14 @@ You want English *except*: keep A and subtract B from that same slot. Same `A HO
 >
 > "The family except Azawan."
 
+The left side can be a stand-in clause ([clause joins](joins.md#clause-joins)); the right side is then a clause:
+
+> `xual ul zazawan vawalal.`
+>
+> x-everything | except | z-Azawan | v-walk
+>
+> "Everything happened except that Azawan walked."
+
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **a** | add a member in the same slot | *including*: A, including B | **a** ≈ add |
@@ -573,12 +581,12 @@ Beginner already used a hook at the front of a default statement. Same spellings
 |-----------|--------|-----|
 | Before a written turn marker | `HOOK yal BODY` | The written **`yal`** / **`yol`** / …, after any vocatives and interjections |
 | Before a default-statement body | `HOOK BODY` | Implied **`yal`** ([speech moves](speech-moves.md#speech-act)) |
-| Non-initial clause under `/x/` | `… HOOK BODY … JOIN` | Same as the opener |
+| Later clause under `/x/` | `… JOIN HOOK BODY` | Same as the opener |
 | Before an `/x/` linker | `HOOK LINKER BODY` | Same as prior talk |
 
 One discourse hook per opener (no parallel discourse chains on one turn marker). In-clause chains stay inside the body. After an explicit turn marker, the same spellings in the body are in-clause hooks.
 
-On a non-initial conjunct under a [clause `/x/` fence](joins.md#right-close), the hook sits immediately before that conjunct’s body: `A al B xam` → *A and additionally B*. Before an **`/x/`** linker (*therefore*, *however*, …), it scopes the linker+body stretch: `al xezazam …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xezazam …` when one cue is enough.
+On a later clause in a [clause `/x/` join](joins.md#clause-joins), the hook sits right after the join, before that clause’s body: `A xam al B` → *A and additionally B*. Before an **`/x/`** linker (*therefore*, *however*, …), it scopes the linker+body stretch: `al xezazam …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xezazam …` when one cue is enough.
 
 > `yazawan al zululon vawalal.`
 >
@@ -684,9 +692,9 @@ y-Azawan | additionally | z-Ululon | v-write
 **6.** *Azawan writes and additionally Ululon tells.*
 
 ::: details Show answer
-`zazawan vuwurul al zululon vezehel xam.`
+`zazawan vuwurul xam al zululon vezehel.`
 
-[z-Azawan | v-write | additionally | z-Ululon | v-tell | x-and.open]
+[z-Azawan | v-write | x-and.open | additionally | z-Ululon | v-tell]
 :::
 
 **7.** *Azawan writes with a camera.*

@@ -193,12 +193,17 @@ function unitNodes(cur: Cursor, unit: Unit): GlossNode[] {
     case "island":
       return [island(cur, unit.island)];
     case "clauseCoord": {
-      let acc: GlossNode | undefined;
-      for (const part of unit.coord.parts) {
-        const clauses = part.clauses.flatMap((c) => clauseNodes(cur, c));
-        acc = group([acc, ...clauses, cur.take(part.join)]);
+      // Mid joins: a repeated join word extends the flat list; a new join word closes it as one group.
+      const { first, links } = unit.coord;
+      let kids: (GlossNode | undefined)[] = first ? clauseNodes(cur, first) : [];
+      let prev: string | undefined;
+      for (const link of links) {
+        if (prev !== undefined && link.join.raw !== prev) kids = [group(kids)];
+        kids.push(cur.take(link.join));
+        if (link.clause) kids.push(...clauseNodes(cur, link.clause));
+        prev = link.join.raw;
       }
-      return one(acc);
+      return one(group(kids));
     }
     default:
       return [];

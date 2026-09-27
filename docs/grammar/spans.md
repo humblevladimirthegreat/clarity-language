@@ -706,7 +706,7 @@ xuxum  =  x + u + x + u + m
 
 An editorial span still counts as said: resume (`d[=]` / `daxur`) may point back to it. Combined `#\|` is two spoken closes in writing; write editorial first, then close-all. Bare `xuxur` closes one (editorial).
 
-**Not the same job as:** a negating clause join (`xul` / `xum`). Empty and resume forms are **opens** with a role letter (`daxul` redacted; `daxur` that cite). Closes are **`xuxul`** / **`xuxur`**.
+**Not the same job as:** a clause join (`xul` / `xum`, which go between clauses). Empty and resume forms are **opens** with a role letter (`daxul` redacted; `daxur` that cite). Closes are **`xuxul`** / **`xuxur`**.
 
 | Writing | Speech | Notes |
 |---------|--------|-------|
