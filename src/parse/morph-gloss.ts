@@ -269,6 +269,14 @@ const ABILITY_STANCE: Record<string, string> = {
   u: "unable-irreversible",
 };
 
+/** Label scope seam vowels (predication.md#label-scope). */
+const SCOPE_VOWEL: Record<string, string> = {
+  a: "once",
+  e: "pattern",
+  o: "relative",
+  u: "name-only",
+};
+
 const INTEREST_STANCE: Record<string, string> = {
   a: "met",
   e: "ought",
@@ -388,7 +396,7 @@ export function senseLabel(
     return body;
   }
   const hinge =
-    word.family.kind === "x" && (word.family.xFamily === "interest" || word.family.xFamily === "lateral")
+    word.family.kind === "x" && (word.family.xFamily === "interest" || word.family.xFamily === "scope" || word.family.xFamily === "lateral")
       ? "-th-"
       : "-x-";
   const body = sensePieces(word, tables, ctx).join(hinge);
@@ -1403,6 +1411,11 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
     }
     const stance = ABILITY_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "ability";
     return [`${host}-${stance}`];
+  }
+
+  if (family.xFamily === "scope") {
+    const host = family.leftRoots.map((root) => rootSense(root, word.ending, tables, { named: word.ending === "n", pos: word.pos }));
+    return [...host, SCOPE_VOWEL[family.stanceVowel ?? ""] ?? "scope"];
   }
 
   if (family.xFamily === "numeric") {

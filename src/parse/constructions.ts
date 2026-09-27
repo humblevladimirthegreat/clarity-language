@@ -87,6 +87,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
 
   "vpCoord.vpCoordPart": { anchor: "clause.md#who-acts-and-the-action", summary: "/v/ phrase parts" },
   "vpCoordPart.V": { anchor: "clause.md#who-acts-and-the-action", summary: "verb" },
+  "vpCoordPart.B": { anchor: "predication.md#scope-relative", summary: "hosted /b/ after a tho verb" },
   "vpCoordPart.vJoinClose": { anchor: "joins.md#and-lists-a", summary: "/v/ join after its verbs" },
   "vpCoordPart.standaloneJoin": { anchor: "joins.md#standalone-phrase", summary: "standalone /v/ join" },
   "vJoinClose.JoinV": { anchor: "joins.md#and-lists-a", summary: "/v/ join fence" },
@@ -177,6 +178,7 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
   span: { anchor: "spans.md#shape", summary: "span open" },
   role: { anchor: "roles.md#role-compounds", summary: "role compound" },
   interest: { anchor: "interests.md#time-horizon-endings-on-met", summary: "interest word" },
+  scope: { anchor: "predication.md#label-scope", summary: "label scope" },
   lateral: { anchor: "roles.md#viewpoint-laterals", summary: "viewpoint lateral" },
   ability: { anchor: "x-compounds.md#conversation-length", summary: "ability compound" },
   numeric: { anchor: "numeric-derivation.md#numeric-derivation", summary: "numeric derivation" },
@@ -300,6 +302,14 @@ export const NUMBER_FEATURE_CONSTRUCTIONS = {
 } satisfies Record<string, ConstructionEntry>;
 
 type Vowel = "a" | "e" | "o" | "u";
+
+/** Label scope: each seam vowel (predication.md#label-scope). */
+const SCOPE_FEATURE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
+  "vowel.a": { anchor: "predication.md#label-scope", summary: "this occasion only tha" },
+  "vowel.e": { anchor: "predication.md#scope-pattern", summary: "a pattern the" },
+  "vowel.o": { anchor: "predication.md#scope-relative", summary: "relative to a party tho" },
+  "vowel.u": { anchor: "predication.md#scope-name-only", summary: "name only thu" },
+};
 
 /** Interests: each stance vowel, and the endings on it (interests.md). */
 export const INTEREST_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vowel}.${"l" | "m" | "r"}`, ConstructionEntry> = {
@@ -477,6 +487,7 @@ export const CONSTRUCTIONS: ReadonlyMap<string, ConstructionEntry> = new Map([
   ...prefixed("tone", TONE_CONSTRUCTIONS),
   ...prefixed("number", NUMBER_FEATURE_CONSTRUCTIONS),
   ...prefixed("interest", INTEREST_FEATURE_CONSTRUCTIONS),
+  ...prefixed("scope", SCOPE_FEATURE_CONSTRUCTIONS),
   ...prefixed("join", JOIN_SERIES_CONSTRUCTIONS),
   ...prefixed("force", FORCE_CONSTRUCTIONS),
   ...prefixed("polar", POLAR_CONSTRUCTIONS),
@@ -509,7 +520,8 @@ export const REJECTIONS = {
   linkerMidSentence: { anchor: "dependents.md#sentence-linkers", summary: "a sentence linker comes only at the start of a sentence" },
   pluralOnPos: { anchor: "plurality.md#beginner", summary: "-x is unused on /w/, /h/, /th/, and /x/" },
   interestSlot: { anchor: "interests.md#beginner", summary: "an interest form goes on /ɡ/, /th/, or /w/ only" },
-  interestRoot: { anchor: "interests.md#interest-inventory", summary: "only the six interest roots take the interest form" },
+  labelScopeSlot: { anchor: "predication.md#label-scope", summary: "label scope goes on /ɡ/, /z/, /d/, /b/, /v/, or /h/ only" },
+  labelScopeArrow: { anchor: "roles.md#landmark-facing", summary: "on a direction root the th seam takes only o (the landmark's own facing)" },
   pluralKindAfterUniversal: { anchor: "joins.md#universals-domains-generics", summary: "the kind word after ua / uo takes no -x" },
   rankJoinNumberManner: { anchor: "comparatives.md#manner-scale", summary: "the /h/ after a rank join is a manner word; the only number there is digitless h+ (how often)" },
   reversedSequenceSlot: { anchor: "joins.md#reversed-sequence-eo", summary: "eo is a phrase join only (/z/ /d/ /b/ /ɡ/)" },

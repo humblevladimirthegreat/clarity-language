@@ -73,6 +73,7 @@ function featureConstructions(word: LexWord): string[] {
       ids.push(`interest.stance.${family.stanceVowel}`);
       if (word.ending === "l" || word.ending === "m" || word.ending === "r") ids.push(`interest.ending.${family.stanceVowel}.${word.ending}`);
     }
+    if (family.xFamily === "scope" && family.stanceVowel) ids.push(`scope.vowel.${family.stanceVowel}`);
     if (family.xFamily === "span") {
       if (family.typeVowel) ids.push(`span.type.${family.typeVowel}`);
       if (family.edgeVowel) ids.push(`span.edge.${family.edgeVowel}`);

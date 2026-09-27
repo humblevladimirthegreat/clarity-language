@@ -99,6 +99,12 @@ function isGlHead(token: IToken): boolean {
   return token.tokenType === G && (token.payload as LexWord).gl === true;
 }
 
+/** A label-scope `tho` verb hosts the `/b/` right after it (predication.md#scope-relative). */
+function isScopeThoVerb(token: IToken): boolean {
+  const family = (token.payload as LexWord | undefined)?.family;
+  return token.tokenType === V && family?.kind === "x" && family.xFamily === "scope" && family.stanceVowel === "o";
+}
+
 function isAsOfWToken(token: IToken): boolean {
   return token.tokenType === W && isAsOfOverlay((token.payload as LexWord) ?? {});
 }
@@ -543,7 +549,13 @@ class AgelanSentenceParser extends CstParser {
       {
         ALT: () => {
           this.AT_LEAST_ONE(() => {
-            this.CONSUME(V);
+            const verb = this.CONSUME(V);
+            this.OPTION3({
+              GATE: () => isScopeThoVerb(verb) && this.LA(1).tokenType === B,
+              DEF: () => {
+                this.CONSUME(B);
+              },
+            });
           });
           this.OPTION(() => {
             this.SUBRULE2(this.vJoinClose);
@@ -1103,7 +1115,13 @@ function buildVpCoord(cst: CstNode): VpCoord {
     parts: parts.map((part) => {
       const close = partJoinClose(part, "vJoinClose");
       const { join, shared } = joinFromClose(close);
-      return { items: childTokens(part, "V").map(lexWordFromToken), join, shared };
+      const verbs = childTokens(part, "V");
+      const hosted = childTokens(part, "B").map((b) => {
+        const verb = verbs.filter((v) => v.startOffset < b.startOffset).at(-1)!;
+        return { verb: lexWordFromToken(verb), bound: lexWordFromToken(b) };
+      });
+      const built = { items: verbs.map(lexWordFromToken), join, shared };
+      return hosted.length > 0 ? { ...built, hosted } : built;
     }),
   };
 }

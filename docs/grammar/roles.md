@@ -456,6 +456,8 @@ English *behind the house* means the house's own back, not a compass heading and
 >
 > "Azawan walks in front of the door."
 
+This is [label scope](predication.md#label-scope) **`tho`** on a direction: the direction relative to that landmark. Arrow roots take no other scope vowel.
+
 The landmark's front is where its design or current use faces (a house's front door, a car's windshield). A DIR + **`th`** + **`o`** word always takes a `/b/` landmark.
 
 | Agalan | English |

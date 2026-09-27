@@ -51,7 +51,7 @@ export type NumberStem = {
   digitlessExp?: string;
 };
 
-export type XFamily = "span" | "role" | "interest" | "lateral" | "ability" | "numeric" | "compound";
+export type XFamily = "span" | "role" | "interest" | "scope" | "lateral" | "ability" | "numeric" | "compound";
 
 export type SpanCloseFlavor = "complete" | "editorial" | "closeAll";
 
@@ -75,7 +75,7 @@ export type MorphWordFamily =
       edgeVowel?: "a" | "e" | "o" | "u";
       /** Role vowel (role compound). */
       roleVowel?: "a" | "e" | "u" | "o";
-      /** Values / ability stance vowel (also role + ability on `/ɡ/`). */
+      /** Values / label-scope / ability stance vowel (also role + ability on `/ɡ/`). */
       stanceVowel?: "a" | "e" | "o" | "u";
       /** Nested number stem (numeric derivation). */
       numberStem?: NumberStem;
@@ -263,7 +263,13 @@ export type NpCoord = {
 };
 
 export type VpCoord = {
-  parts: { items: LexWord[]; join?: LexWord; shared: CoordShared[] }[];
+  parts: {
+    items: LexWord[];
+    join?: LexWord;
+    shared: CoordShared[];
+    /** Hosted `/b/` right after a label-scope `tho` verb (predication.md#label-scope). */
+    hosted?: { verb: LexWord; bound: LexWord }[];
+  }[];
 };
 
 /**

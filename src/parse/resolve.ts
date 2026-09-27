@@ -368,6 +368,7 @@ function considerNpCoord(ctx: Ctx, coord: NpCoord): void {
 function considerVpCoord(ctx: Ctx, coord: VpCoord): void {
   for (const part of coord.parts) {
     for (const item of part.items) considerWord(ctx, item);
+    for (const hosted of part.hosted ?? []) considerWord(ctx, hosted.bound);
     if (part.join) considerJoin(ctx, part.join, part.shared, 0);
     else {
       for (const shared of part.shared) {
