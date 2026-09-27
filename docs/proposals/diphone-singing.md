@@ -1,7 +1,7 @@
 # Proposal: diphone singing (pitch / timing contour)
 
 **Status:** PROPOSED  
-**Related:** waveform units and concat glue in `diphone-tts.md`; parse → `toSpeech` → `toPhonemes` in `learner-tts.md`; singability **design** (not this UI) in [phonology.md § Singability](../grammar/phonology.md#singability-constraints)  
+**Related:** waveform units and concat glue in `diphone-tts.md`; parse → `toSpeech` → `toPhonemes` in `src/tts/` (see `diphone-tts.md`); singability **design** (not this UI) in [phonology.md § Singability](../grammar/phonology.md#singability-constraints)  
 **Design authority:** letters, syllables, and voiced-preferred consonants stay in the grammar. This proposal is **tooling only**: the same recorded diphone bank, with a **drawn F0 + duration contour** instead of spoken defaults. It does not add melody to the language or a singing orthography.
 
 ## Motivation

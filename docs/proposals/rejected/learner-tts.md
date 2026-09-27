@@ -1,6 +1,6 @@
 # Proposal: usable learner TTS (in-browser)
 
-**Status:** PAUSED — the KittenTTS synthesis stage and the site Speak UI were removed (unreliable output, build-time model download). The engine-neutral stages (`src/tts/`: `toSpeech`, number / span expansion, `toPhonemes`) remain and still feed the Inspect IPA line and the number-speech lint; a replacement synthesizer is `diphone-tts.md`. Phases 1–3 were done before the pause.  
+**Status:** REJECTED — KittenTTS synthesis and the Speak UI were removed (unreliable output, build-time model download). Reimplementation is `diphone-tts.md`, which carries the kept stages, loan policy and UI notes. The engine-neutral code (`src/tts/`) remains.  
 **Related:** long-term TODO *text to speech*; depends on [parser-pipeline.md](../../meta/parser-pipeline.md) (**assumed shipped** — `parse(text)` → typed AST); inverse dictation (no Agalan speech training) is `learner-stt.md`  
 **Design authority:** spoken forms stay in the grammar docs ([phonology.md](../../grammar/phonology.md), [spans.md](../../grammar/spans.md#writing-vs-speech), [numbers.md](../../grammar/numbers.md#writing-preferred-shorthand), [dependents.md](../../grammar/dependents.md#orthography-and-prosody-periods)). This proposal covers **tooling only**: writing → speech surface → audio.
 
