@@ -484,6 +484,8 @@ Beginner already used **`g+`** for *more than one*. Any marker may drop every di
 
 **Compare with:** noun [**-x**](plurality.md) names a **group of referents**. Digitless **`ra`** names a **count/amount `>1`** without saying N. They may co-occur (`zagadalx g+3`).
 
+On a `/b/` offset right after a channel, digitless **`b+`** is *later* and **`b-`** is *earlier*, with no amount claimed ([forecasts](knowing.md#forecast)).
+
 <a id="a-few"></a>
 
 Open **`g~+`** is a soft count: *a few* / *some*. It says there is more than one without claiming a number. The closed **`g+`** stays *more than one*.

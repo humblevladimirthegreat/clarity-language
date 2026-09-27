@@ -73,9 +73,9 @@ Agalan’s [interests](interests.md) name a closed inventory of **interests** (a
 
 | Stance | Job |
 |--------|-----|
-| Met | This serves the interest, including how you contact the payoff (gratitude / savoring) — an adjective on the noun, or `/th/` on the event |
+| Met | This serves the interest, including whether the payoff lasts or is only for now (gratitude / savoring) — an adjective on the noun, or `/th/` on the event |
 | Motive | Acting *for* this interest, including where the reason stands |
-| Prescription | Deontic on the host act for this interest — ending marks the move's warrant or aim (**invited / offered / protective**) |
+| Prescription | Deontic on the host act for this interest — ending marks the move's warrant or aim (**invited / offered / trial**) |
 | Unmet | Costs the interest, including how changeable that is |
 
 Naming the interest and your stance toward it helps you notice gratitude, motive, and oughts instead of conflating them into vague *want* / *should* / *good*. An interest on `/ɡ/` is a belonging (so *my X serves competence* is one adjective); an unowned stimulus uses the interest on `/w/` immediately before **`gobobum`**.
@@ -104,7 +104,7 @@ It is easy to treat a looping *could be* as settled fact: mixing memory, hearsay
 
 [Evidentiality](knowing.md#evidentiality) lets a claim about the world name **how you know**: live look, memory, record, pattern, inference, hearsay, gut-felt, or story. Memory (**WITNESSED**) is pulling a scene back from earlier (you may mis-reel it). A live look (**LIVE**) is seeing it while it is still in view.
 
-Marking the channel helps you catch overconfidence and hearsay before you treat a take as settled fact.
+The channel's [ending](knowing.md#evidence-strength) says how strong that evidence is (a vivid memory or a hazy one, a reliable source or a rumor), separately from how likely the claim is. Marking the channel helps you catch overconfidence and hearsay before you treat a take as settled fact.
 
 **For *could be*, use:** [MAY](knowing.md#may) (`odoho`). That marks potential, and whether this sentence finds out, stays at *may*, or leaves it at *who knows*. Evidentiality is how you know a world-claim. Ability *can* is not MAY.
 
@@ -123,11 +123,11 @@ Marking residue vs an archived episode helps rumination stay optional. Marking f
 
 English *will* smuggles plan and prediction together. It is easy to talk as if the future were already known (a certain prediction that fuels anxiety or overconfidence), while a pick often sounds more locked than it is.
 
-Agalan splits them: [PLAN](intention.md#plan-predict) for what you mean to do; [PREDICT](intention.md#plan-predict) for a forecast; [DECISION](intention.md#decision) for how revisable a pick is.
+Agalan splits them: [PLAN](intention.md#plan-predict) for what you mean to do; a [forecast](knowing.md#forecast) for what the world will do; [DECISION](intention.md#decision) for how revisable a pick is. A forecast has no word of its own: it is an evidential channel plus a later offset, so every forecast says what it rests on, and its ending says how strong that evidence is.
 
 Splitting plan, prediction, and decision firmness helps you avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and a revisable pick as locked forever.
 
-**Compare with:** English *will*. Use PLAN for intention, PREDICT for a forecast, and DECISION for how firm the pick is.
+**Compare with:** English *will*. Use PLAN for intention, a channel plus `b+` for a forecast, and DECISION for how firm the pick is.
 
 ### Open lists, closed lists, and false dichotomies
 <a id="open-and-closed-lists"></a>
