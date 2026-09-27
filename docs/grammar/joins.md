@@ -695,6 +695,14 @@ When an adjective or extra noun is meant for the **whole list** (*both challengi
 
 Further matching-role heads belong *before* the join.
 
+SHARED material has to be able to describe what the join lists. After a noun join, a `/ɡ/` describes every noun, and an `/h/` is only a [scale](comparatives.md#manner-scale) after rank **`e`** / **`ue`**, equative **`ae`**, or sequence **`oe`**. After a verb join, only an `/h/` is SHARED. Nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item; the one exception is a range’s continuum after two number endpoints. Any other `/h/` after a join is an ordinary adverb on the verb:
+
+> `zazawan zululon zal hohogem vawalal.`
+>
+> [z-Azawan | z-Ululon | z-and] | h-intensity | v-walk
+>
+> "Azawan and Ululon walk intensely."
+
 ### Fence nesting {#fence-nesting}
 
 When one list sits inside another (*(tea or coffee) and water*), write the inner items, then their join, then the outer item, then the outer join. Each join sits after only the stretch it closes. You nest by stacking right-close joins; a flat list still uses one join after every member. Clause joins group by position instead ([clause joins](#clause-joins)).
@@ -703,6 +711,7 @@ When one list sits inside another (*(tea or coffee) and water*), write the inner
 |---------|--------|---------|
 | flat | `zadedal zogovel zunudel zol` | *tea or coffee or water* |
 | nested | `zadedal zogovel zol zunudel zal` | *(tea or coffee) and water* |
+| nested adjectives | `garedel gumuzem gul gelem gal` | *(neither red nor small) and big* |
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -910,14 +919,6 @@ When same-role words sit next to a smaller list, wrap that stretch and its join 
 > [z-Azawan | SCOPE[z-drinking-water | z-and] | z-and.open]
 >
 > "Azawan and (just water)."
-
-Adjective lists need an island to nest. A `/ɡ/` word right after a join is [SHARED](#scope-fence-p-join), so `garedel gumuzem gul gelem` makes *big* describe the whole denied list rather than start the outer one. Put the inner list in an island instead:
-
-> `zodogol ^ garedel gumuzem gul ^ gelem gal vawalal.`
->
-> [z-dog | [SCOPE[g-red | g-small | g-not] | g-big | g-and]] | v-walk
->
-> "A dog that is neither red nor small, and big, walks."
 
 **Compare with:** islands bound only join and `/h/` scope. An evidential or [*as-of*](relations.md#as-of) that should cover several clauses is written or resumed on each host instead.
 

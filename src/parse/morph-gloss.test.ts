@@ -56,6 +56,27 @@ describe("morphGlossLine — clause joins go between clauses", () => {
   });
 });
 
+describe("morphGlossLine — SHARED only where it can describe the join", () => {
+  it("leaves an /h/ after a set noun join on the verb", () => {
+    expectLine("zazawan zululon zal hohogem vawalal.", "[z-Azawan | z-Ululon | z-and] | h-intensity | v-walk");
+  });
+  it("keeps an /h/ after a rank noun join as the scale", () => {
+    expectLine("zazawan zululon zel hohogem vawalal.", "[z-Azawan | z-Ululon | z-rank/more | h-intensity] | v-walk");
+  });
+  it("reads a /ɡ/ after a /ɡ/ join as the next item, so adjective lists nest", () => {
+    expectLine(
+      "zodogol garedel gumuzem gul gelem gal vawalal.",
+      "[z-dog | [[g-red | g-small | g-not] | g-big | g-and]] | v-walk",
+    );
+  });
+  it("leaves an /h/ after a /ɡ/ join on the verb", () => {
+    expectLine("zodogol garedel gumuzem gal hohogem vawalal.", "[z-dog | [g-red | g-small | g-and]] | h-intensity | v-walk");
+  });
+  it("keeps a range continuum after two number endpoints", () => {
+    expectLine("zodogol g+3 g+5 gal gurulem vawalal.", "[z-dog | [g-three | g-five | g-and | g-measurement]] | v-walk");
+  });
+});
+
 describe("morphGlossLine — glosses.md single words", () => {
   it("senses-are-separate-roots table", () => {
     expectLine("zugobol", "z-microphone");
