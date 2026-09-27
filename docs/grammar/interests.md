@@ -370,6 +370,8 @@ A reason held **to keep a cost off** is a *so that … not* dependent ([so that]
 | `…thom` | the agent’s own reason (soft default if unknown) | *internal* | **-m** ≈ open / from inside |
 | `…thor` | a working reason for now; it may change | *for now* / *provisional* | **-r** ≈ for now |
 
+A reason the situation pulls is as legitimate as one from inside. The ending says where the reason comes from, not how good it is.
+
 ### Which ending table?
 
 Beginner already used *serves* and *detracts from*. Intermediate adds *ought this act for* and *doing for*. Pick the ending table that matches the stance vowel.
