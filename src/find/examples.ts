@@ -3,6 +3,7 @@ import { classify, type ClassifyTables } from "../parse/classify.js";
 import { wordConstructions } from "../parse/construction-trace.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import { parseWord } from "../parse/word.js";
+import { fillSelf } from "../learner-name.js";
 import { classifyAgalanSpan, isAgalanLintCandidate, peelLintChunk, walkAgalanSpans } from "../lint/agalan-docs.js";
 import { flattenWords, type FoundWord } from "./query.js";
 
@@ -35,10 +36,13 @@ function parseExample(text: string, cls: Example["cls"], tables: ClassifyTables)
   }
 }
 
-/** Sentence, phrase, and single-word examples on a page (templates and fragments are skipped). */
+/**
+ * Sentence, phrase, and single-word examples on a page (templates and fragments are skipped).
+ * `SELF` slots are filled with the default learner root, as the docs lint does.
+ */
 export function collectExamples(markdown: string, tables: ClassifyTables): Example[] {
   const examples: Example[] = [];
-  walkAgalanSpans(markdown, {
+  walkAgalanSpans(fillSelf(markdown), {
     text: (text, index) => {
       const cls = classifyAgalanSpan(text);
       if (cls !== "sentence" && cls !== "phrase" && cls !== "word") return;

@@ -70,3 +70,12 @@ describe("collectExamples", () => {
     );
   });
 });
+
+describe("learner name slot", () => {
+  it("parses SELF examples with the default learner root", () => {
+    assert.deepEqual(
+      collectExamples("`yom zSELFn vajul therenem.`", tables).map((e) => e.text),
+      ["yom zugobon vajul therenem."],
+    );
+  });
+});
