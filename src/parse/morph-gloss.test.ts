@@ -406,6 +406,16 @@ describe("compareMorphGloss", () => {
     expectLine("yel vawalal hewezethazawan", "y-command | v-walk | h-west-th-Azawan");
   });
 
+  it("label scope glosses its seam vowel", () => {
+    expectLine("zululon ganagathal", "z-Ululon | g-angry-th-once");
+    expectLine("zazawan vululethel", "z-Azawan | v-lie-th-pattern");
+    expectLine("zululon ganuzuthul", "z-Ululon | g-anxious-th-name-only");
+  });
+
+  it("a tho verb hosts the /b/ right after it", () => {
+    expectLine("zazawan vululethol bululon", "z-Azawan | [v-lie-th-relative | b-Ululon]");
+  });
+
   it("house-cast resume without a same-line antecedent", () => {
     expectLine("zazawarx vajul", "z-←Azawan.full-x | v-sit");
   });

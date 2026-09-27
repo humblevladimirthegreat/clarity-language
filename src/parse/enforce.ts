@@ -9,7 +9,7 @@
 import type { IToken } from "chevrotain";
 
 import type { ClassifyTables } from "./classify.js";
-import { isAsOfOverlay, isStandIn } from "./classify.js";
+import { ARROW_ROOTS, isAsOfOverlay, isStandIn } from "./classify.js";
 import { letterPrefix } from "./resolve.js";
 import { REJECTIONS, type RejectionId } from "./constructions.js";
 import { SentenceParseError } from "./sentence-parser.js";
@@ -57,6 +57,8 @@ export class ConstructionError extends SentenceParseError {
 
 const NO_PLURAL_POS = new Set(["w", "h", "th", "x"]);
 const INTEREST_POS = new Set(["g", "th", "w"]);
+/** Label scope goes on content slots (predication.md#label-scope). */
+const SCOPE_POS = new Set(["g", "z", "d", "b", "v", "h"]);
 const RANK_SERIES = new Set(["e", "oe", "eo", "ue", "ae"]);
 const PHRASE_POS = new Set(["z", "d", "b", "g"]);
 const KIND_SERIES = new Set(["ua", "uo"]);
@@ -163,9 +165,10 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   }
   if (family.kind === "x" && family.xFamily === "interest") {
     if (word.pos && !INTEREST_POS.has(word.pos)) throw new ConstructionError("interestSlot", word.raw);
-    if (!family.leftRoots.every((root) => tables.interestRoots.has(root))) {
-      throw new ConstructionError("interestRoot", word.raw);
-    }
+  }
+  if (family.kind === "x" && family.xFamily === "scope") {
+    if (word.pos && !SCOPE_POS.has(word.pos)) throw new ConstructionError("labelScopeSlot", word.raw);
+    if (family.leftRoots.some((root) => ARROW_ROOTS.has(root))) throw new ConstructionError("labelScopeArrow", word.raw);
   }
 }
 

@@ -420,7 +420,7 @@ function hostOverlay(word: MorphWord, tables: ClassifyTables): { hostOverlay?: L
 }
 
 /** Arrow-rose roots (roles.md#arrow-rose-compass-vs-face); `DIR th o` on these is a landmark lateral. */
-const ARROW_ROOTS = new Set(["oroho", "onore", "ezaza", "ozozu", "oju", "ozohe", "eweze", "onohe"]);
+export const ARROW_ROOTS = new Set(["oroho", "onore", "ezaza", "ozozu", "oju", "ozohe", "eweze", "onohe"]);
 
 /** `DIR th o` parses as an interest shape; on an arrow root it is the landmark's own facing. */
 function landmarkLateral(word: MorphWord): MorphWord | undefined {
@@ -430,9 +430,19 @@ function landmarkLateral(word: MorphWord): MorphWord | undefined {
   return { ...word, family: { kind: "x", xFamily: "lateral", leftRoots: family.leftRoots, rightRoots: [], landmark: true } };
 }
 
+/** `ROOT th V` on any root outside the six interests is label scope (predication.md#label-scope). */
+function labelScope(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {
+  const family = word.family;
+  if (family.kind !== "x" || family.xFamily !== "interest") return undefined;
+  if (family.leftRoots.every((root) => tables.interestRoots.has(root))) return undefined;
+  return { ...word, family: { ...family, xFamily: "scope" } };
+}
+
 export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
   const lateral = landmarkLateral(word);
   if (lateral) return classify(lateral, tables);
+  const scope = labelScope(word, tables);
+  if (scope) return classify(scope, tables);
   const senseForm = overlaySenseForm(word);
   const pos = word.pos;
 
@@ -612,7 +622,7 @@ export function classifyHits(word: MorphWord, tables: ClassifyTables): ClassifyH
     hits.push({ source: "number", reading: "number" });
   }
 
-  if (family.kind === "x" && family.xFamily === "interest") {
+  if (family.kind === "x" && family.xFamily === "interest" && family.leftRoots.every((root) => tables.interestRoots.has(root))) {
     hits.push({ source: "interest", reading: "interest" });
   }
 

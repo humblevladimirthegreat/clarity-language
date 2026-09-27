@@ -184,7 +184,10 @@ function unitNodes(cur: Cursor, unit: Unit): GlossNode[] {
     case "np":
       return np(cur, unit.coord);
     case "vp":
-      return fences(cur, unit.coord.parts, (w) => cur.take(w));
+      return fences(cur, unit.coord.parts, (w) => {
+        const hosted = unit.coord.parts.flatMap((p) => p.hosted ?? []).find((h) => h.verb.raw === w.raw);
+        return hosted ? group([cur.take(w), cur.take(hosted.bound)]) : cur.take(w);
+      });
     case "gCoord":
       return gCoordNodes(cur, unit.coord);
     case "predicate":

@@ -311,6 +311,75 @@ Beginner already used closed **`gonunul`** (*is the same as*). The other endings
 
 **Compare with:** ordinary *coin* as a noun is `zonunul`. Identity is **`gonunul`** / **`gonunum`** plus a following `/b/` label, kept next to each other.
 
+### Label scope {#label-scope}
+
+English *Ululon is angry* can mean one outburst or the kind of person Ululon is. The same word does both jobs, and a single act easily turns into a claim about someone's nature. To say how far a label reaches, write the root, then mid-word **`th`**, then a scope vowel, then the ending. The vowel says what the label covers: this one occasion, a pattern, one relationship, or only a name. The word keeps its usual slot, so a label on `/ɡ/` is still *is ADJ*, and a verb is still the verb.
+
+> `zululon ganagathal.`
+>
+> z-Ululon | g-angry-th-once
+>
+> "Ululon is angry this time."
+
+A label with no scope vowel says nothing about how far it reaches. Use one when that reach matters, the way you would add *this time* or *tends to* in English.
+
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`tha`** | this one occasion only | *angry this time*, *lied (this once)* | **a** ≈ add (one instance added) |
+| **`the`** | a pattern: a repeated tendency, not a fixed nature | *tends to be angry*, *often lies* | **e** ≈ order (a sequence of times) |
+| **`tho`** | true in one relationship: relative to the hosted `/b/` right after it, or to an unstated party | *a stranger to Azawan*, *lying, as far as Ululon is concerned* | **o** ≈ one (that extra one) |
+| **`thu`** | a name only: a tag for what happens, not an explanation of it | *what gets called anxiety*, *so-called lazy* | **u** ≈ undo (undo the implied cause) |
+
+The seam goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`. The six [interest](interests.md) roots use this spot for their own stances instead.
+
+#### This occasion (`tha`) {#scope-occasion}
+
+> `zazawan vululethal.`
+>
+> z-Azawan | v-lie-th-once
+>
+> "Azawan lied this once."
+
+#### A pattern (`the`) {#scope-pattern}
+
+> `zazawan vululethel.`
+>
+> z-Azawan | v-lie-th-pattern
+>
+> "Azawan tends to lie."
+
+**Compare with:** characterizing **`hual`** (`zazawan godogol hual`) says the label holds at every time. **`the`** says it holds often, with exceptions left uncounted.
+
+#### Relative to a party (`tho`) {#scope-relative}
+
+Put the party in `/b/` right after the word. On `/ɡ/`, `/h/`, and `/v/`, that `/b/` is hosted by the **`tho`** word, so a verb's recipient comes after the pair. On a noun, **`tho`** stands alone; to name the party, say the label on `/ɡ/` instead.
+
+> `zazawan galulethom bululon.`
+>
+> z-Azawan | [g-strangeness-th-relative | b-Ululon]
+>
+> "Azawan is a stranger to Ululon."
+
+> `zazawan vululethol bululon.`
+>
+> z-Azawan | [v-lie-th-relative | b-Ululon]
+>
+> "To Ululon, what Azawan does counts as lying."
+
+With no `/b/`, the party is unstated: *a stranger (to someone)*.
+
+#### Name only (`thu`) {#scope-name-only}
+
+> `zululon ganuzuthul.`
+>
+> z-Ululon | g-anxious-th-name-only
+>
+> "Ululon is what gets called anxious."
+
+**Compare with:** **-n** makes a proper name, and a [paraphrase span](spans.md) quotes someone's wording. **`thu`** keeps the ordinary word and marks it as a label that explains nothing.
+
+**Compare with:** on an arrow root, [**`tho`** + `/b/`](roles.md#landmark-facing) is the landmark's own facing (*behind the house*): the direction relative to that landmark.
+
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
@@ -333,6 +402,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *red* | `aredel` |
 | **SAME** | `onunul` |
 | *see* | `vejel` |
+| *angry* | `anagal` |
+| *anxious* | `anuzul` |
+| *lie* | `ululel` |
+| *strangeness* | `alulem` |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
@@ -398,6 +471,38 @@ z-guard | [g-same | b-Uhubun]
 `zugugal gonunul buhubun gul.`
 
 z-guard | [[g-SAME | b-Uhubun] | g-not]
+:::
+
+**9.** *The guard is angry this time.*
+
+::: details Show answer
+`zugugal ganagathal.`
+
+z-guard | g-angry-th-once
+:::
+
+**10.** *Azawan tends to lie.*
+
+::: details Show answer
+`zazawan vululethel.`
+
+z-Azawan | v-lie-th-pattern
+:::
+
+**11.** *To Ululon, what the guard does counts as lying.*
+
+::: details Show answer
+`zugugal vululethol bululon.`
+
+z-guard | [v-lie-th-relative | b-Ululon]
+:::
+
+**12.** *Uhubun is what gets called anxious.*
+
+::: details Show answer
+`zuhubun ganuzuthul.`
+
+z-Uhubun | g-anxious-th-name-only
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -472,6 +577,42 @@ z-framed-picture | g-red
 z-Ululon | [g-craft | g-not]
 
 *Ululon is not a craftsperson.*
+:::
+
+**9.** `zuhubun galulethom bazawan.`
+
+::: details Show answer
+
+z-Uhubun | [g-strangeness-th-relative | b-Azawan]
+
+*Uhubun is a stranger to Azawan.*
+:::
+
+**10.** `zululon ganagathel.`
+
+::: details Show answer
+
+z-Ululon | g-angry-th-pattern
+
+*Ululon tends to be angry.*
+:::
+
+**11.** `zazawan vululethal.`
+
+::: details Show answer
+
+z-Azawan | v-lie-th-once
+
+*Azawan lied this once.*
+:::
+
+**12.** `zugugal ganuzuthul.`
+
+::: details Show answer
+
+z-guard | g-anxious-th-name-only
+
+*The guard is what gets called anxious.*
 :::
 
 ## See also
