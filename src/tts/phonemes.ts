@@ -1,8 +1,6 @@
 /**
  * Grapheme → phoneme for native Agalan spelling.
  * IPA targets are from docs/grammar/phonology.md.
- *
- * Browser Speak maps this IPA to KittenTTS input_ids (see kitten-ids.ts).
  */
 
 const VOWELS = new Set(["e", "u", "o", "a"]);
@@ -55,29 +53,9 @@ export function isNativeSurface(raw: string): boolean {
   return NATIVE_WORD.test(raw);
 }
 
-/** Lengthen this syllable's nucleus (`ː` after the vowel). */
-function kittenLengthNucleus(syl: Syllable, ipa: string): string {
-  const vowel = syl.phones.find((p) => p.vowel);
-  if (!vowel) return ipa;
-  const at = ipa.indexOf(vowel.ipa);
-  if (at === -1) return ipa;
-  const end = at + vowel.ipa.length;
-  if (ipa.startsWith("ː", end)) return ipa;
-  return `${ipa.slice(0, end)}ː${ipa.slice(end)}`;
-}
-
-/**
- * Concatenate syllable IPA for Kitten (no dots).
- * Non-final vowels get `ː` so Kitten does not reduce them.
- */
+/** Concatenate syllable IPA (no dots). */
 export function wordIpaPhones(word: PhonemeWord): string {
-  let out = "";
-  const last = word.syllables.length - 1;
-  for (let i = 0; i < word.syllables.length; i++) {
-    const syl = word.syllables[i]!;
-    out += i !== last ? kittenLengthNucleus(syl, syl.ipa) : syl.ipa;
-  }
-  return out;
+  return word.syllables.map((syl) => syl.ipa).join("");
 }
 
 function phonesOf(raw: string): Phone[] {

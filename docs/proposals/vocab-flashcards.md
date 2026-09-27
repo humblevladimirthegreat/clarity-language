@@ -1,7 +1,7 @@
 # Proposal: vocab flashcard generator / system
 
 **Status:** PROPOSED  
-**Related:** long-term TODO *vocab flashcard generator/system*; reuses [lexicon search](../grammar/lexicon.md) / [`src/lexicon-search.ts`](../../src/lexicon-search.ts); optional later drill UI may sit next to `gloss-overlay-ui.md` and `learner-tts.md` (neither required for v1)  
+**Related:** long-term TODO *vocab flashcard generator/system*; reuses [lexicon search](../grammar/lexicon.md) / [`src/lexicon-search.ts`](../../src/lexicon-search.ts); optional later drill UI may sit next to `gloss-overlay-ui.md` and `diphone-tts.md` (neither required for v1)  
 **Design authority:** remains [`docs/grammar/`](../grammar/introduction.md), [glosses.md](../meta/glosses.md), and lexicon CSVs. This proposal covers **tooling only**: turn published roots and overlays into study decks; do not invent senses or replace the lexicon as source of truth.
 
 ## Motivation
@@ -22,7 +22,7 @@ The data is already curated (`lexicon-published.csv`, `lexicon-overlays.csv`). S
 ## Non-goals
 
 - Replacing lexicon search or becoming the primary root browser.
-- Training or shipping **Agalan TTS** on cards (see `learner-tts.md` when speech exists; flashcards do not depend on it).
+- Training or shipping **Agalan TTS** on cards (see `diphone-tts.md` when speech exists; flashcards do not depend on it).
 - LLM sentence enrichment, DALL·E card art, or forking CSV→Anki SaaS/CLIs aimed at natural L2 pairs.
 - Implementing a full custom SRS product (scheduling, sync, mobile clients).
 - Inflected full-sentence production as the v1 unit of study (roots and overlays first; cloze / PoS+ending drills later).
@@ -120,7 +120,7 @@ Exact beginner slices can follow [learning-levels.md](../meta/learning-levels.md
 
 - Inflected prompts (PoS + ending → surface form).
 - **D** cloze / translation-exercise decks.
-- Optional Agalan audio on the Agalan face once `learner-tts.md` ships.
+- Optional Agalan audio on the Agalan face once `diphone-tts.md` ships.
 
 ## Interaction with other proposals
 
@@ -128,7 +128,7 @@ Exact beginner slices can follow [learning-levels.md](../meta/learning-levels.md
 |----------|----------------|
 | Lexicon search (shipped) | Discovery and filtering inspiration; flashcards are retention, not lookup |
 | `gloss-overlay-ui.md` | Sentence inspect while reading; flashcards study isolated roots/overlays |
-| `learner-tts.md` | Optional later audio on Agalan face; not a v1 dependency |
+| `diphone-tts.md` | Optional later audio on Agalan face; not a v1 dependency |
 | [parser-pipeline.md](../meta/parser-pipeline.md) | Needed for inflected / cloze decks (v3), not for root export |
 
 ## Out of scope for product debates

@@ -14,12 +14,11 @@
   "scripts": {
     "generate:word": "peggy --format es --dts --allowed-start-rules start,words,probe_spanClose,probe_writingSpan,probe_freeNumber,probe_hook,probe_prefixedWord,probe_citation,probe_prefixedX,probe_prefixedPlain,probe_prefixedJoin -o src/generated/word-parser.js src/parse/word.peggy",
     "build": "node scripts/build.mjs",
-    "dev": "node scripts/fetch-kitten-tts.mjs && vitepress dev docs/grammar",
+    "dev": "vitepress dev docs/grammar",
     "typecheck": "tsc --noEmit",
     "lint:agalan": "tsx scripts/lint-agalan-docs.ts",
-    "docs:publish": "node scripts/fetch-kitten-tts.mjs && vitepress build docs/grammar && tsx scripts/publish-docs-extras.mjs",
+    "docs:publish": "vitepress build docs/grammar && tsx scripts/publish-docs-extras.mjs",
     "docs:preview": "vitepress preview docs/grammar",
-    "fetch:tts": "node scripts/fetch-kitten-tts.mjs",
     "convert-word": "tsx scripts/convert-word.ts",
     "retie-docs": "tsx scripts/retie-docs.ts",
     "metaphor-assign": "tsx scripts/phase5-metaphor-assign.ts",
@@ -31,7 +30,6 @@
     "build:lexicon-web": "esbuild src/lexicon-search.ts --bundle --format=esm --outfile=web/lib/lexicon-search.js --platform=browser",
     "test": "tsx --test src/*.test.ts src/**/*.test.ts docs/grammar/.vitepress/components/*.test.ts docs/grammar/.vitepress/lib/*.test.ts scripts/lib/*.test.ts",
     "parse": "node scripts/parse.mjs",
-    "speak": "tsx src/tts/cli.ts",
     "web": "npm run build:lexicon-web && npx --yes serve . -p 4173 -o /web/"
   },
   "engines": {
@@ -57,7 +55,6 @@
     "fflate": "^0.8.2",
     "globals": "^17.12.0",
     "happy-dom": "^20.11.1",
-    "onnxruntime-web": "^1.21.0",
     "peggy": "^5.1.0",
     "tsx": "^4.23.1",
     "typescript": "^5.9.3",

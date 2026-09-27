@@ -1,7 +1,7 @@
 # Proposal: click-to-gloss overlay UI
 
 **Status:** v1–v2 **shipped** (click / hover inspect in viewer + VitePress widgets); highlight-to-gloss **proposed**  
-**Related:** long-term TODO *web tools (overlay glosses)*; depends on [parser-pipeline.md](../../meta/parser-pipeline.md) (**assumed shipped** — `parse(text)` → typed AST + morph tokens); `speed-reading-view.md` / `speed-reading-icons.md` may share the same token map later; `learner-tts.md` may later speak the same selected range  
+**Related:** long-term TODO *web tools (overlay glosses)*; depends on [parser-pipeline.md](../../meta/parser-pipeline.md) (**assumed shipped** — `parse(text)` → typed AST + morph tokens); `speed-reading-view.md` / `speed-reading-icons.md` may share the same token map later; `diphone-tts.md` may later speak the same selected range  
 **Design authority:** remains [`docs/grammar/`](../../grammar/introduction.md) and lexicon CSVs. This proposal covers **tooling only**: render parsed Agalan so learners can inspect a word (or construction) without leaving the reading surface.
 
 ## Motivation
@@ -24,7 +24,7 @@ With a finished parser and lexicon/overlay classification, the hard part is alre
 - Full discourse resolve in v1 (anaphors, fill-ask vs yes/no) — optional later pass when the pipeline exposes it.
 - Replacing the published lexicon search UI; this is sentence-level overlay, not root browsing.
 - Shipping a full speed-reading glyph mode in v1 (share the token map later).
-- Teaching English aloud (see `learner-tts.md` for speech).
+- Teaching English aloud (see `diphone-tts.md` for speech).
 - Auto-glossing English prose on grammar pages (overlay fires only on Agalan — see [When the highlight is Agalan](#when-the-highlight-is-agalan)).
 
 ## Product shells
@@ -89,7 +89,7 @@ Optional later: **snap to constituents** — if the drag ends mid-join or mid-sp
 
 **Placement:** anchored popover at the selection’s bounding rect (below if space, flip above).
 
-Optional less-aggressive variant (especially shell **C**): a small **gloss chip** at the selection first; full card on click (Translate-icon pattern). Optional later: a one-line **live phrase gloss** that updates as the selection grows; morph chips only when the range stabilizes. The same selected tokens can later drive learner TTS (`learner-tts.md`) (`speakAst` on the range) without a second picker.
+Optional less-aggressive variant (especially shell **C**): a small **gloss chip** at the selection first; full card on click (Translate-icon pattern). Optional later: a one-line **live phrase gloss** that updates as the selection grows; morph chips only when the range stabilizes. The same selected tokens can later drive learner TTS (`diphone-tts.md`) (`speakAst` on the range) without a second picker.
 
 ### When the highlight is Agalan
 
@@ -154,7 +154,7 @@ Reuse the existing inspect card. Selection becomes the unified pointer (click wi
 - Snap to smallest closed fence (optional exact vs snap toggle).
 - Shell **C**: parse-gate and/or gloss chip / context menu before the card.
 - Shell **D**: TipTap bubble menu on the editor selection.
-- Optional: live phrase-gloss line while the drag grows; speak selected range via learner TTS (`learner-tts.md`).
+- Optional: live phrase-gloss line while the drag grows; speak selected range via learner TTS (`diphone-tts.md`).
 - Optional speed-read glyph mode sharing the same token map.
 
 ## Out of scope for styling debates

@@ -37,7 +37,7 @@ Each dictionary sense is one entry. Related senses across fields use an explicit
 Role letters, closed endings, and spelling that tracks sound mean a program can label word class, reference, and pronunciation from the writing. What you write is the language; Inspect only names the parts. Speakers still get free order and a singable shape.
 
 - **[Inspect](inspect.md):** paste a sentence and click or highlight a word to see its role, root sense, and how the clause hangs together.
-- **Text-to-speech:** on that same page, **Speak Agalan** plays the text. Letter-to-sound spelling plus a small syllable inventory make speech a mapping from the letters. **IPA:** beside the button transcribes the same spoken forms.
+- **Pronunciation:** on that same page, **IPA:** transcribes the text as spoken. Letter-to-sound spelling plus a small syllable inventory make pronunciation a mapping from the letters.
 
 ## How to learn from these docs
 <a id="how-to-learn"></a>
@@ -83,4 +83,4 @@ I would also like to thank the Conlangs community on Reddit for their wealth of 
 
 I also thank all the beta testers and reviewers for your feedback and questions.
 
-Speak uses KittenTTS (KittenML) in the browser via ONNX Runtime Web, with token mapping and voice-file loading adapted from kitten-tts-js. The grammar site is built with VitePress; parsing uses Chevrotain and Peggy.
+The grammar site is built with VitePress; parsing uses Chevrotain and Peggy.
