@@ -288,6 +288,20 @@ Beginner already used content **-r** in the same slot as the earlier word (*he s
 | `/y/` interjection … `-r` | same exclamation again | repeating that call-out |
 | `/x/` … `-r` after `/x/` | same linker again | *and so* / *likewise* |
 
+For English *too* / *also*, resume the action. `/v/` **-r** is *the same action again*, so a new subject with a resumed verb reads *does so too*. With the same subject, recast the verb with a new object: *does the same with the dog too*.
+
+> `zululon vawalal. zazawan vawalar.`
+>
+> z-Ululon | v-walk . z-Azawan | v-←walk.full
+>
+> "Ululon walks. Azawan does too."
+
+> `zazawan vejel dagadal. zazawan vejer dodogol.`
+>
+> z-Azawan | v-see | d-cat . z-Azawan | v-←see | d-dog
+>
+> "Azawan sees a cat. Azawan sees a dog too."
+
 **Compare with:** English *that* pointing at a quoted title, proverb, or aside uses a [span resume](spans.md#endings), not content **-r**.
 
 ### Going back to a thread

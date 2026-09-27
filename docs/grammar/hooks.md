@@ -614,6 +614,14 @@ Same-role: the except (or including, rather, instead) carries that detail; claus
 >
 > "The family, never excepting Azawan."
 
+A surprise word on the *including* hook gives English *even*: **`wuruzem al`** adds B and says openly that B is the one nobody expected.
+
+> `zululon wuruzem al zazawan vawalal.`
+>
+> z-Ululon | [w-amazement | including] | z-Azawan | v-walk
+>
+> "Ululon walks, and even Azawan does."
+
 **Compare with:** `zavamul ul zazawan hadazam vogogol` puts haste on the **cooking**, not on the except.
 
 Extra-noun: `/b/` still sits immediately after the hook. A later `/ɡ/` still describes the landmark.

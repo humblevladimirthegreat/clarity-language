@@ -311,6 +311,7 @@ Beginner used **`welem`** *very* before an adjective. The same `/w/` slot takes 
 | **`welem`** | *very* | *big*, as a degree |
 | **`wogegal`** | *extremely* / *overwhelmingly* | an ocean of it |
 | **`wumuzem`** | *slightly* / *a bit* | *small*, as a degree |
+| **`wegerum`** | *quite* / *fairly* | a speaker at medium volume |
 
 > `zodogol welem hadazam vawalal.`
 >
@@ -329,6 +330,12 @@ Beginner used **`welem`** *very* before an adjective. The same `/w/` slot takes 
 > [z-dog | [w-small | g-blue]] | v-walk
 >
 > "A slightly blue dog walks."
+
+> `zodogol wegerum gelulul vawalal.`
+>
+> [z-dog | [w-quite | g-blue]] | v-walk
+>
+> "A fairly blue dog walks."
 
 ### Leaving out who acts {#no-subject}
 

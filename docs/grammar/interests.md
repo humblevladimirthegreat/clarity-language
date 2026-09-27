@@ -522,6 +522,16 @@ The ending says **how binding the yes is**, on the same scale as [permission](#p
 
 **-r** is allowed but visibly weaker. Choosing it makes *I assumed* part of the sentence instead of hiding it inside *they were fine with it*. On yourself, **-r** is half-hearted: `zSELFn vajul thuxerener.` is *I suppose I'm OK with sitting*. **-l** on yourself is a vow: `zSELFn vajul thuxerenel.` is *I've committed myself to sitting*.
 
+**Promise:** a vow said to someone is a promise. The listener is the one you promise by default: `zSELFn vawalal thuxerenel.`, said to someone, is *I promise (you) to walk*. To name a different person as the one you promise, add the *for* hook ([extra noun](hooks.md#extra-noun)).
+
+> `zSELFn vawalal thuxerenel el buhubun.`
+>
+> z-SELF | v-walk | th-CONSENT-contract | [for | b-Uhubun]
+>
+> "I promise Uhubun I'll walk."
+
+The weaker endings stay weaker on purpose: **-m** is *I'll do it* (you can still back out), and **-r** cannot pass for a promise.
+
 The negatives **`thuxononel`** / **`thuxononem`** / **`thuxononer`** use the same endings. **-l** is a binding refusal: they opted out, and the matter is settled. **-m** means they said no. Any no withdraws an ordinary **-m** yes; only a **-l** agreement has terms for withdrawing. **-r** means they probably don't want it; with no `/b/`, it is *not letting yourself*.
 
 | Agalan | Use | English | Cue |

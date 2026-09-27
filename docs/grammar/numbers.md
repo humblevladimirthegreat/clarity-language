@@ -1174,10 +1174,22 @@ No-mantissa digitless-exp under `/v/` and `/h/` inherit special-value identity (
 | **`v~-e-`** | *ease down a little* |
 | **`h+e`** | **unbounded multiplicity** (× without bound / unboundedly many times) |
 | **`h~+e`** | *many times but finite* |
-| **`h+e-`** | **unbounded division** (÷ without bound / into unboundedly many parts) |
-| **`h~+e-`** | *÷ a lot / into many parts, but finite* |
+| **`h+e-`** | **barely** — the action clears one full time by a hair (`zazawan h+e- vajul.` *Azawan barely sits*) |
+| **`h~+e-`** | *scraped by* — it happened, but only with strain |
 | **`h-e-`** | **almost** — the action falls a hair short of one full time (`zazawan h-e- vajul.` *Azawan almost sits*) |
-| **`h~-e-`** | *nearly* — a small shortfall, not claimed to be tiny |
+| **`h~-e-`** | *came close* — it fell short despite a real effort |
+
+**Margin vs effort:** **-l** (`h+e-` / `h-e-`) measures the margin: over or under by a hair. **`~`** (**-m**) reports the felt effort instead: `zazawan h~+e- vajul.` is *Azawan managed to sit, just*; `zazawan h~-e- vajul.` is *Azawan tried hard to sit and didn't quite*. Division into parts keeps its counted form `h-N`.
+
+**On a quality:** the same pair sits on `/w/` before an adjective or adverb. **`w+e-`** = *barely*; **`w-e-`** = *almost*.
+
+> `zodogol w-e- gelulul vawalal.`
+>
+> 🔊 *zodogol wrubul gelulul vawalal.*
+>
+> [z-dog | [w---e- | g-blue]] | v-walk
+>
+> "An almost blue dog walks."
 
 **Stance:** a whole claim that holds all but a hair is stance, not manner, so it sits on `/th/`: **`th-e-`** = *virtually* / *practically*; **`th~-e-`** = *more or less*. **`h-e-`** says the event fell short; **`th-e-`** says your claim is a hair short of exact. See [number as stance](#special-number-as-stance).
 
