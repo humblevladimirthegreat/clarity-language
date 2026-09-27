@@ -1,10 +1,13 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { buildRootMap, parseRetieMapJson, serializeRetieMap, type RetiePair } from "./map.js";
+import { loadDefaultTables } from "../parse/index.js";
+import { rewriteMarkdown } from "./markdown.js";
+import { buildRootMap, checkMapCollisions, parseRetieMapJson, serializeRetieMap, type RetiePair } from "./map.js";
 import { rewriteParsedWord } from "./rebuild.js";
 import { parseWord } from "../parse/word.js";
-import { lineNumberAt, peelChunk, retieCore, rewriteMarkdown } from "./tokens.js";
+import { lineNumberAt, peelChunk, retieCore } from "./tokens.js";
+import { bridgeTables, verifyRetiedSpans } from "./verify.js";
 
 function mapOf(...pairs: [string, string][]): Map<string, string> {
   return new Map(pairs);
@@ -99,9 +102,9 @@ describe("rewriteMarkdown mixed English", () => {
 
   it("does not retie link targets", () => {
     const map = mapOf(["adoro", "badoro"]);
-    const input = "see [adoro](adoro.md) please";
+    const input = "see [`adoro`](adoro.md) please";
     const { text } = rewriteMarkdown(input, map);
-    assert.equal(text, "see [badoro](adoro.md) please");
+    assert.equal(text, "see [`badoro`](adoro.md) please");
   });
 
   it("peels wrapping backticks", () => {
@@ -111,8 +114,8 @@ describe("rewriteMarkdown mixed English", () => {
   it("peels punctuation on hodom", () => {
     const map = mapOf(["odo", "adoro"]);
     assert.deepEqual(peelChunk("(hodom)."), { prefix: "(", core: "hodom", suffix: ")." });
-    const { text } = rewriteMarkdown("call (hodom).", map);
-    assert.equal(text, "call (hadorom).");
+    const { text } = rewriteMarkdown("call `(hodom).`", map);
+    assert.equal(text, "call `(hadorom).`");
   });
 
   it("does not peel writing-span brackets", () => {
@@ -229,6 +232,136 @@ describe("resume-aware markdown retie", () => {
       map,
     );
     assert.equal(text, "`yubunexunowen vawalal.` then `dubur vajul.`");
+  });
+});
+
+describe("tone marks", () => {
+  const map = mapOf(["azawa", "ululo"]);
+
+  it("peels a tone mark off the word", () => {
+    assert.deepEqual(peelChunk("?!zazawan."), { prefix: "?!", core: "zazawan", suffix: "." });
+  });
+
+  it("reties words carrying a tone mark", () => {
+    const { text } = rewriteMarkdown("`!zazawan vawalal.` `&zazawan` `;zazawan vajul.`", map);
+    assert.equal(text, "`!zululon vawalal.` `&zululon` `;zululon vajul.`");
+  });
+});
+
+describe("classification-gated retie", () => {
+  const map = mapOf(["azawa", "ululo"], ["obono", "abaga"]);
+
+  it("reties emphasised prose citations but only reports bare prose hits", () => {
+    const { text, reviews } = rewriteMarkdown("The obono in prose, and *azawa* cited.", map);
+    assert.equal(text, "The obono in prose, and *ululo* cited.");
+    assert.deepEqual(reviews.map((r) => r.text), ["obono"]);
+  });
+
+  it("leaves English-class spans and text-fence English alone", () => {
+    const input = "`obono is big` and\n```text\nthe obono is here\n```\n";
+    const { text, reviews } = rewriteMarkdown(input, map);
+    assert.equal(text, input);
+    assert.equal(reviews.length, 2);
+  });
+
+  it("reties a text-fence line that reads as Agalan", () => {
+    const { text } = rewriteMarkdown("```text\nzazawan vawalal.\n```\n", map);
+    assert.equal(text, "```text\nzululon vawalal.\n```\n");
+  });
+
+  it("reports an unclassified span instead of rewriting it", () => {
+    const input = "`zazawan means swan`";
+    const { text, reviews } = rewriteMarkdown(input, map);
+    assert.equal(text, input);
+    assert.match(reviews[0]!.reason, /mixes/);
+  });
+
+  it("reties a marked fragment", () => {
+    const { text } = rewriteMarkdown("<!-- lint: fragment --> `zazawan vawalal`", map);
+    assert.equal(text, "<!-- lint: fragment --> `zululon vawalal`");
+  });
+
+  it("reties a template around its placeholders", () => {
+    const { text } = rewriteMarkdown("`zazawan VERB.`", map);
+    assert.equal(text, "`zululon VERB.`");
+  });
+
+  it("leaves a spoken opaque interior alone", () => {
+    const { text } = rewriteMarkdown("`zazawan duxal zazawan xuxul vawalal.`", map);
+    assert.equal(text, "`zululon duxal zazawan xuxul vawalal.`");
+  });
+
+  it("reties HTML code bodies", () => {
+    const { text } = rewriteMarkdown("see <code>zazawan d&lt;sushi&gt;</code> here", map);
+    assert.equal(text, "see <code>zululon d&lt;sushi&gt;</code> here");
+  });
+
+  it("reties the host of a fused hook compound", () => {
+    const { text } = rewriteMarkdown("`zazawan dazadol vawalalul.`", mapOf(["awala", "ojojo"]));
+    assert.equal(text, "`zazawan dazadol vojojolul.`");
+  });
+
+  it("respells a resume chained to an earlier resume", () => {
+    const { text } = rewriteMarkdown("`zazawan vawalal xon zazar vuzunul xon zazar velebel.`", map);
+    assert.equal(text, "`zululon vawalal xon zulur vuzunul xon zulur velebel.`");
+  });
+
+  it("reties a markdown fence as a page of its own", () => {
+    const { text } = rewriteMarkdown("```markdown\n> `zazawan vawalal.`\n```\n", map);
+    assert.equal(text, "```markdown\n> `zululon vawalal.`\n```\n");
+  });
+
+  it("reties an emphasised Agalan sentence in prose", () => {
+    const { text } = rewriteMarkdown("> 🔊 *zazawan vawalal.*", map);
+    assert.equal(text, "> 🔊 *zululon vawalal.*");
+  });
+
+  it("reties overlay spellings through their root", () => {
+    const overlayMap = mapOf(["alodo", "ibibi"]);
+    const { text } = rewriteMarkdown("`thalodom`", overlayMap);
+    assert.equal(text, "`thibibim`");
+  });
+});
+
+describe("verifyRetiedSpans", () => {
+  const map = mapOf(["azawa", "ululo"]);
+
+  it("bridges old and new spellings so an unconverted lexicon does not flag the retie", () => {
+    const moved = mapOf(["azawa", "ojojo"]);
+    const { spans } = rewriteMarkdown("`zazawan vawalal.`", moved);
+    assert.deepEqual(verifyRetiedSpans(spans, moved, bridgeTables(moved)), []);
+  });
+
+  const tables = loadDefaultTables();
+
+  it("passes a clean retie, including a respelled resume", () => {
+    const { spans } = rewriteMarkdown("`zazawan vawalal. zazar vajul.`", map);
+    assert.deepEqual(verifyRetiedSpans(spans, map, tables), []);
+  });
+
+  it("catches a rewrite that changes something the map does not", () => {
+    const spans = [{ before: "zazawan vawalal.", after: "zululon vajul.", index: 0, cls: "sentence" }];
+    const failures = verifyRetiedSpans(spans, map, tables);
+    assert.equal(failures.length, 1);
+    assert.match(failures[0]!.detail, /awala/);
+  });
+
+  it("catches a rewrite that stops parsing", () => {
+    const spans = [{ before: "zazawan vawalal.", after: "zululon vawalal vawalal zz.", index: 0, cls: "sentence" }];
+    assert.equal(verifyRetiedSpans(spans, map, tables).length, 1);
+  });
+});
+
+describe("checkMapCollisions", () => {
+  it("flags a new root already in use or English-shaped", () => {
+    const collisions = checkMapCollisions(mapOf(["azawa", "ululo"], ["obono", "are"], ["uhubu", "azawa"]), {
+      rootsInUse: new Set(["ululo", "azawa"]),
+      englishWords: new Set(["are"]),
+    });
+    assert.deepEqual(
+      collisions.map((c) => c.newRoot),
+      ["ululo", "are"],
+    );
   });
 });
 

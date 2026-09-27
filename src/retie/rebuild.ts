@@ -1,3 +1,4 @@
+import { hookCompoundFromMorph } from "../parse/hook-compounds.js";
 import { parseWord } from "../parse/word.js";
 import { writingSpanEnd } from "../parse/span-scan.js";
 import type { MorphWord, MorphWordFamily, WritingBracket } from "../parse/types.js";
@@ -73,6 +74,10 @@ export function rewriteParsedWord(
   map: ReadonlyMap<string, string>,
   scope?: ResumeScope,
 ): string | null {
+  const hooked = rewriteHookCompound(word, map);
+  if (hooked !== undefined) {
+    return hooked;
+  }
   const family = word.family;
   if (family.kind === "writingSpan") {
     return rewriteWritingSpan(word, family, map, scope);
@@ -95,6 +100,31 @@ export function rewriteParsedWord(
     return null;
   }
   return rebuildX(word, family, left, family.rightRoots ? right : undefined);
+}
+
+/**
+ * Fused extra-noun hook compound (`awalalul` = `awala` + **-l** + hook `ul`):
+ * only the host root moves. `undefined` when the word is not one.
+ */
+function rewriteHookCompound(word: MorphWord, map: ReadonlyMap<string, string>): string | null | undefined {
+  const parts = hookCompoundFromMorph(word);
+  if (!parts) {
+    return undefined;
+  }
+  const whole = word.family.kind === "content" ? word.family.roots[0] : undefined;
+  if (whole && map.has(whole)) {
+    return undefined; // the whole stem is a mapped root, not a hook compound
+  }
+  const next = map.get(parts.leftRoot);
+  if (!next) {
+    return null;
+  }
+  const prefix = posPrefix(word);
+  const rest = word.raw.slice(prefix.length);
+  if (!rest.startsWith(parts.leftRoot)) {
+    return null;
+  }
+  return `${prefix}${next}${rest.slice(parts.leftRoot.length)}`;
 }
 
 function contentRootsAfterResume(

@@ -6,7 +6,8 @@ import {
   unknownLexiconContentRoots,
   type ClassifyTables,
 } from "../parse/classify.js";
-import { toneMarkLength, toneRunLength } from "../parse/span-scan.js";
+import { peelWordChunk } from "../parse/peel.js";
+import { toneRunLength } from "../parse/span-scan.js";
 import { letterPrefix } from "../parse/resolve.js";
 import { wordConstructions } from "../parse/construction-trace.js";
 import { parseWithTables } from "../parse/parse-core.js";
@@ -25,9 +26,6 @@ export type AgalanLintIssue = {
   detail: string;
 };
 
-const TRAILING_SENTENCE = new Set([".", "?", "!", ",", ":", ";", '"', "'"]);
-const LEADING_QUOTE = new Set(['"', "'"]);
-
 /** Letters, digits, and morph glyphs that can appear in a spelled Agalan word. */
 const WORD_CHAR_RE = /^[aeouhtwdjybgzmnvlrx0-9+\-#_.,=@~%±[\]{}()]+$/;
 
@@ -37,7 +35,7 @@ const TEACHING_GLOSS_RE = /^(?:th|[zdbvgwhxyj])-(?:[a-z@]+$|[<[{(])/;
 const X_FRAGMENT_RE = /^[aeou]?x[aeou]?$/;
 
 /** English that can appear in grammar backticks and also look Agalan-shaped. */
-const ENGLISH_IN_CODE = new Set([
+export const ENGLISH_IN_CODE = new Set([
   "are",
   "bare",
   "vowel",
@@ -52,35 +50,8 @@ const BRACKET_PAIRS = [
   ["<", ">"],
 ] as const;
 
-export function peelLintChunk(chunk: string): { prefix: string; core: string; suffix: string } {
-  let prefix = "";
-  let suffix = "";
-  let core = chunk;
-
-  while (core.length > 0 && TRAILING_SENTENCE.has(core.at(-1)!)) {
-    suffix = core.at(-1)! + suffix;
-    core = core.slice(0, -1);
-  }
-  while (core.length > 0 && LEADING_QUOTE.has(core[0]!)) {
-    prefix += core[0]!;
-    core = core.slice(1);
-  }
-  const tone = toneMarkLength(core, 0);
-  if (tone && core.length > tone) {
-    prefix += core.slice(0, tone);
-    core = core.slice(tone);
-  }
-
-  for (const [left, right] of [["(", ")"]] as const) {
-    if (core.startsWith(left) && core.endsWith(right) && core.length > 2) {
-      prefix += left;
-      suffix = `${right}${suffix}`;
-      core = core.slice(1, -1);
-    }
-  }
-
-  return { prefix, core, suffix };
-}
+/** Same peel as retie ([peel.ts](../parse/peel.ts)). */
+export const peelLintChunk = peelWordChunk;
 
 function withoutForeignPayloads(core: string): string {
   return core.replace(/<[^>]*>/g, "");
@@ -315,7 +286,7 @@ export function emptySpanStats(): AgalanSpanStats {
   };
 }
 
-const LINT_MARKER_RE = /^lint:\s*(\S+)$/;
+export const LINT_MARKER_RE = /^lint:\s*(\S+)$/;
 const SPAN_NEUTRAL = new Set(["^", "|"]);
 const PLACEHOLDER_RE = /^[A-Z][A-Z0-9₀-₉]*$/;
 
@@ -330,7 +301,7 @@ function spanWords(text: string): string[] {
 
 /** Class of one span (or one line of an `agalan` fence), before parsing. */
 /** A spoken opaque span (`duxal … xuxul`): its interior is foreign, not Agalan words. */
-const SPOKEN_OPAQUE_RE = /(\b(?:th|[zdbvgwhxyj])ux[ae][lmn]\s)[\s\S]*?(\sxuxu[lmr]\b)/g;
+export const SPOKEN_OPAQUE_RE = /(\b(?:th|[zdbvgwhxyj])ux[ae][lmn]\s)[\s\S]*?(\sxuxu[lmr]\b)/g;
 
 export function classifyAgalanSpan(text: string): AgalanSpanClass | "unclassified" {
   const trimmed = text.trim().replace(SPOKEN_OPAQUE_RE, "$1$2");
@@ -416,9 +387,9 @@ function lintTraced(
   }
 }
 
-const HTML_CODE_RE = /<code>([\s\S]*?)<\/code>/g;
+export const HTML_CODE_RE = /<code>([\s\S]*?)<\/code>/g;
 
-function decodeEntities(text: string): string {
+export function decodeEntities(text: string): string {
   return text.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&amp;/g, "&");
 }
 

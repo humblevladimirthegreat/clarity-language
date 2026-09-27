@@ -1,4 +1,6 @@
+import { peelWordChunk } from "../parse/peel.js";
 import { writingSpanEnd } from "../parse/span-scan.js";
+import type { ClassifyTables } from "../parse/classify.js";
 import { loadDefaultTables, parse } from "../parse/index.js";
 import { parseWord } from "../parse/word.js";
 
@@ -21,48 +23,10 @@ export type RewriteMarkdownResult = {
 export type CoreRewrite = (core: string) => string | null;
 
 const TRAILING_SENTENCE = new Set([".", "?", "!", ",", ":", ";", '"', "'", "`"]);
-const LEADING_QUOTE = new Set(['"', "'", "`"]);
 
-export function peelChunk(chunk: string): { prefix: string; core: string; suffix: string } {
-  const spanEnd = writingSpanEnd(chunk, 0);
-  if (spanEnd !== undefined && spanEnd > 0) {
-    return { prefix: "", core: chunk.slice(0, spanEnd), suffix: chunk.slice(spanEnd) };
-  }
+export const peelChunk = peelWordChunk;
 
-  let prefix = "";
-  let suffix = "";
-  let core = chunk;
-
-  while (core.length > 0 && TRAILING_SENTENCE.has(core.at(-1)!)) {
-    suffix = core.at(-1)! + suffix;
-    core = core.slice(0, -1);
-  }
-  while (core.length > 0 && LEADING_QUOTE.has(core[0]!)) {
-    prefix += core[0]!;
-    core = core.slice(1);
-  }
-
-  if (core.startsWith("(") && core.endsWith(")") && core.length > 2) {
-    prefix += "(";
-    suffix = `)${suffix}`;
-    core = core.slice(1, -1);
-  }
-
-  while (core.startsWith("**") && core.endsWith("**") && core.length > 4) {
-    prefix += "**";
-    suffix = `**${suffix}`;
-    core = core.slice(2, -2);
-  }
-  while (core.startsWith("*") && core.endsWith("*") && core.length > 2 && !core.startsWith("**")) {
-    prefix += "*";
-    suffix = `*${suffix}`;
-    core = core.slice(1, -1);
-  }
-
-  return { prefix, core, suffix };
-}
-
-function forEachPlainChunk(
+export function forEachPlainChunk(
   text: string,
   baseIndex: number,
   visit: (chunk: string, index: number) => string,
@@ -93,7 +57,7 @@ function forEachPlainChunk(
   return out;
 }
 
-function rewritePlainTokens(
+export function rewritePlainTokens(
   text: string,
   rewriteCore: CoreRewrite,
   baseIndex: number,
@@ -128,7 +92,7 @@ export type CodeSpanMeta = {
   marker?: string;
 };
 
-function transformMarkdown(
+export function transformMarkdown(
   input: string,
   baseIndex: number,
   transformCode: (text: string, index: number, meta: CodeSpanMeta) => string,
@@ -227,17 +191,6 @@ function transformMarkdown(
   return out;
 }
 
-function scanMarkdown(
-  input: string,
-  rewriteCore: CoreRewrite,
-  baseIndex: number,
-  changes: RetieChange[],
-): string {
-  const rewrite = (text: string, index: number) =>
-    rewritePlainTokens(text, rewriteCore, index, changes);
-  return transformMarkdown(input, baseIndex, rewrite, rewrite);
-}
-
 export type MarkdownCodeToken = {
   chunk: string;
   index: number;
@@ -321,33 +274,13 @@ function nextMarkup(input: string, from: number): number {
   return next === from ? from + 1 : next;
 }
 
-export function rewriteMarkdownCores(
-  input: string,
-  rewriteCore: CoreRewrite,
-): RewriteMarkdownResult {
-  const changes: RetieChange[] = [];
-  const text = scanMarkdown(input, rewriteCore, 0, changes);
-  return { text, changes };
-}
-
-export function rewriteMarkdown(input: string, map: ReadonlyMap<string, string>): RewriteMarkdownResult {
-  const stems = collectContentStems(input);
-  const changes: RetieChange[] = [];
-  const text = transformMarkdown(
-    input,
-    0,
-    (span, index) => rewritePlainTokens(span, resumeRewrite(map, stems, span), index, changes),
-    (prose, index) => rewritePlainTokens(prose, resumeRewrite(map, stems), index, changes),
-  );
-  return { text, changes };
-}
-
-function resumeRewrite(
+export function resumeRewrite(
   map: ReadonlyMap<string, string>,
   stems: ReadonlySet<string>,
   codeSpan?: string,
+  tables?: ClassifyTables,
 ): CoreRewrite {
-  const boundByRaw = codeSpan ? contentResumeBinds(codeSpan) : null;
+  const boundByRaw = codeSpan ? contentResumeBinds(codeSpan, tables) : null;
   const seen = new Map<string, number>();
   return (core) => {
     let boundAntecedentRoots: string[] | undefined;
@@ -366,7 +299,7 @@ function resumeRewrite(
   };
 }
 
-function collectContentStems(input: string): Set<string> {
+export function collectContentStems(input: string): Set<string> {
   const stems = new Set<string>();
   const addChunk = (chunk: string) => {
     const { core } = peelChunk(chunk);
@@ -397,9 +330,10 @@ function collectContentStems(input: string): Set<string> {
   return stems;
 }
 
-function contentResumeBinds(span: string): Map<string, string[][]> | null {
+/** `tables` should know the old roots (see `bridgeTables`), or binds to moved roots are lost. */
+function contentResumeBinds(span: string, tables = loadDefaultTables()): Map<string, string[][]> | null {
   try {
-    const resolved = parse(span, loadDefaultTables()).resolve;
+    const resolved = parse(span, tables).resolve;
     if (!resolved) {
       return null;
     }
@@ -408,11 +342,13 @@ function contentResumeBinds(span: string): Map<string, string[][]> | null {
       if (bind.kind !== "content" || !bind.antecedent) {
         continue;
       }
-      const roots = contentStemRoots(bind.antecedent);
+      const raw = bind.pronoun.raw;
+      // A resume bound to an earlier resume (`zazar … zazar`) follows that one's antecedent.
+      const chained = bind.antecedent.ending === "r" ? byRaw.get(bind.antecedent.raw)?.at(-1) : undefined;
+      const roots = chained ?? contentStemRoots(bind.antecedent);
       if (roots.length === 0) {
         continue;
       }
-      const raw = bind.pronoun.raw;
       const list = byRaw.get(raw);
       if (list) {
         list.push(roots);

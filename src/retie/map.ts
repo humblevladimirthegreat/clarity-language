@@ -70,3 +70,28 @@ export function parseRetieMapJson(text: string): Map<string, string> {
   }
   return buildRootMap(pairs);
 }
+
+export type MapCollision = {
+  newRoot: string;
+  reason: string;
+};
+
+/**
+ * New spellings that would read as something else after the retie:
+ * an unrelated word already spelled with the new root, or an English word in code.
+ */
+export function checkMapCollisions(
+  map: ReadonlyMap<string, string>,
+  context: { rootsInUse: ReadonlySet<string>; englishWords: ReadonlySet<string> },
+): MapCollision[] {
+  const collisions: MapCollision[] = [];
+  for (const newRoot of new Set(map.values())) {
+    if (context.englishWords.has(newRoot)) {
+      collisions.push({ newRoot, reason: "is an English word the doc lint treats as English in code" });
+    }
+    if (context.rootsInUse.has(newRoot) && !map.has(newRoot)) {
+      collisions.push({ newRoot, reason: "already spells a root used in the docs that is not moving" });
+    }
+  }
+  return collisions;
+}
