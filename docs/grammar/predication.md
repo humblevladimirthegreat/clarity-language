@@ -263,7 +263,7 @@ You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra c
 
 > `zazawan godogol gul.`
 >
-> z-Azawan | g-dog | g-not
+> z-Azawan | [g-dog | g-not]
 >
 > "Azawan is not a dog."
 
@@ -289,7 +289,7 @@ For *unlike* / *different from*, use the [similative](relations.md#similative) *
 
 > `zazawan gurorom bululon gul.`
 >
-> z-Azawan | [g-like | b-Ululon] | g-not
+> z-Azawan | [[g-like | b-Ululon] | g-not]
 >
 > "Azawan is different from Ululon."
 
@@ -341,7 +341,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 ::: details Show answer
 `zazawan gugugal gul.`
 
-z-Azawan | g-guard | g-not
+z-Azawan | [g-guard | g-not]
 :::
 
 **2.** *Ululon is the craft type.*
@@ -397,7 +397,7 @@ z-guard | [g-same | b-Uhubun]
 ::: details Show answer
 `zugugal gonunul buhubun gul.`
 
-z-guard | [g-SAME | b-Uhubun] | g-not
+z-guard | [[g-SAME | b-Uhubun] | g-not]
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -406,7 +406,7 @@ z-guard | [g-SAME | b-Uhubun] | g-not
 
 ::: details Show answer
 
-z-Uhubun | g-guard | g-not
+z-Uhubun | [g-guard | g-not]
 
 *Uhubun is not a guard.*
 :::
@@ -442,7 +442,7 @@ z-guard | [g-same | b-Azawan]
 
 ::: details Show answer
 
-z-Ululon | [g-SAME | b-Uhubun] | g-not
+z-Ululon | [[g-SAME | b-Uhubun] | g-not]
 
 *Ululon is not Uhubun.*
 :::
@@ -469,7 +469,7 @@ z-framed-picture | g-red
 
 ::: details Show answer
 
-z-Ululon | g-craft | g-not
+z-Ululon | [g-craft | g-not]
 
 *Ululon is not a craftsperson.*
 :::

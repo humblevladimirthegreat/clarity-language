@@ -41,6 +41,7 @@ export const OVERLAY_KINDS = [
   "plan",
   "predict",
   "decision",
+  "attempt",
   "cause",
   "clause_pole",
   "universality",

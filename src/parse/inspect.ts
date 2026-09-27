@@ -8,6 +8,7 @@ import type {
   Clause,
   CoordShared,
   Ending,
+  GCoord,
   GPackage,
   IslandUnit,
   LexWord,
@@ -414,7 +415,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   }
   if (word.reading === "mood") {
     const kind = word.overlay?.kind;
-    if (kind === "plan" || kind === "predict" || kind === "decision") {
+    if (kind === "plan" || kind === "predict" || kind === "decision" || kind === "attempt") {
       return { line: "closed mood", href: "intention.html" };
     }
     return { line: "closed mood", href: "knowing.html" };
@@ -522,10 +523,41 @@ function walkNpItem(cursor: Cursor, item: NpItem, constructions: InspectConstruc
     const pack = item.package;
     if (pack.glAdj) walkGPackage(cursor, pack.glAdj, into);
     pushIndex(into, takeRaw(cursor, pack.head.raw));
-    for (const adj of pack.adjs) walkGPackage(cursor, adj, into);
+    if (pack.adjCoord) walkGCoord(cursor, pack.adjCoord, constructions, new Map(), into);
+    else for (const adj of pack.adjs) walkGPackage(cursor, adj, into);
     return;
   }
   walkIsland(cursor, item.island, constructions, into);
+}
+
+/** A joined `/ɡ/` list in surface order, recorded as one join construction like a noun list. */
+function walkGCoord(
+  cursor: Cursor,
+  coord: GCoord,
+  constructions: InspectConstruction[],
+  sharedRoles: Map<string, SharedRole>,
+  into: number[],
+) {
+  const indices: number[] = [];
+  const triggers: number[] = [];
+  const joins: LexWord[] = [];
+  for (const part of coord.parts) {
+    for (const item of part.items) {
+      if (item.kind === "adj") walkGPackage(cursor, item.adj, indices);
+      else walkIsland(cursor, item.island, constructions, indices);
+    }
+    if (part.join) {
+      const idx = takeRaw(cursor, part.join.raw);
+      pushIndex(indices, idx);
+      pushIndex(triggers, idx);
+      joins.push(part.join);
+    }
+    walkShared(cursor, part.shared, indices);
+  }
+  if (triggers.length > 0) {
+    constructions.push({ kind: "join", label: joinLabel(joins, sharedRoles), tokenIndices: indices, triggerIndices: triggers });
+  }
+  into.push(...indices);
 }
 
 function walkNp(
@@ -652,6 +684,9 @@ function walkUnit(
     case "predicate":
       walkGPackage(cursor, unit.adj, into);
       break;
+    case "gCoord":
+      walkGCoord(cursor, unit.coord, constructions, sharedRoles, into);
+      break;
     case "h":
       for (const mod of unit.unit.modifiers) pushIndex(into, takeRaw(cursor, mod.raw));
       pushIndex(into, takeRaw(cursor, unit.unit.word.raw));
@@ -677,14 +712,13 @@ function walkUnit(
       const indices: number[] = [];
       const triggers: number[] = [];
       const joins: LexWord[] = [];
-      for (const part of unit.coord.parts) {
-        for (const clause of part.clauses) {
-          walkClause(cursor, clause, constructions, sharedRoles, indices);
-        }
-        const idx = takeRaw(cursor, part.join.raw);
+      if (unit.coord.first) walkClause(cursor, unit.coord.first, constructions, sharedRoles, indices);
+      for (const link of unit.coord.links) {
+        const idx = takeRaw(cursor, link.join.raw);
         pushIndex(indices, idx);
         pushIndex(triggers, idx);
-        joins.push(part.join);
+        joins.push(link.join);
+        if (link.clause) walkClause(cursor, link.clause, constructions, sharedRoles, indices);
       }
       if (triggers.length > 0) {
         constructions.push({

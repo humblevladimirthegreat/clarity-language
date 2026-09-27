@@ -126,6 +126,7 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, emotion ACT
 | `plan` | `mood` | map-resolution endings |
 | `predict` | `mood` | **`elezo`** |
 | `decision` | `mood` | DECISION changeability |
+| `attempt` | `mood` | ATTEMPT commitment (**`ezube`**) |
 | `cause` | `mood` | CAUSE **`egega`** |
 | `clause_pole` | `mood` | *if* / *only-if* / *iff* / *because* / *so-that* / *as-of* / … |
 | `universality` | `mood` | COMMON / FORMAL / … |

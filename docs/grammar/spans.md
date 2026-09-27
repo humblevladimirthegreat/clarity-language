@@ -451,6 +451,9 @@ A [tone mark](speech-moves.md#tone-marks) written right before the opening `^` c
 **Compare with:** quoting, asides, mentions, and opaque blobs use typed [span fences](#writing) (`d[…]`, `th(…)`). Islands only group so a binder inside can target that chunk.
 
 - No role letter on the edges.
+- **At most one phrase.** After its binder, an island holds at most one phrase: a `/z/`, `/d/`, or `/b/` noun phrase, a `/v/` verb phrase, or a `/ɡ/` stack, with that phrase’s own adjectives, `/w/` detail, and join. An `/h/` word is a binder, never the phrase.
+- **It may close early.** The island can stop partway through its phrase; the pause marks where. By the end of the phrase at the latest, it has closed: a new role letter or the outer join always comes after the island.
+- **Hosts keep their `/b/`.** A host (`/ɡ/`, `/h/`, `/th/`) and its hosted `/b/` are both inside the island or both outside.
 - **One island per clause.** Islands do not nest.
 - Empty `^^` has no reading.
 - **Binder required:** at least one scope-taking `/h/` or `/th/` and/or a [join](joins.md#scope-islands-join) particle **inside**.
@@ -458,7 +461,7 @@ A [tone mark](speech-moves.md#tone-marks) written right before the opening `^` c
 
 | Binder | Use inside the island |
 |--------|------------------------|
-| Scope-taking **`/h/`** or **`/th/`** | frames that **chunk** (prefer first in the island) |
+| Scope-taking **`/h/`** or **`/th/`** | frames that **chunk** (prefer first in the island; see the `/b/` exception below) |
 | Prefixed **join** | joins **only** matching-role material **inside** — [scope islands](joins.md#scope-islands-join) |
 
 `/h/` and a join may share one island (`^ huzurem zazawan zululon zam ^`).
@@ -476,7 +479,25 @@ A [tone mark](speech-moves.md#tone-marks) written right before the opening `^` c
 >
 > "Azawan and (just Ululon) saw …."
 
-**Speech:** brief reset into the island, one tight phrase, boundary on the last island stress. In singing, use an ordinary phrase bow.
+A `/b/` right after an `/h/` word is hosted by it ([extra nouns](clause.md#unhosted-b)). To put a recipient `/b/` in an island, write it **before** the binder:
+
+> `zazawan ^ bululon huzurem ^ vezehel.`
+>
+> z-Azawan | SCOPE[b-Ululon | h-possibility] | v-tell
+>
+> "Azawan tells, possibly, Ululon."
+
+The word before the island must not be a `/ɡ/`, `/h/`, or `/th/` word either, or it would host that `/b/` across the edge.
+
+An island can hold part of a phrase. Here only *not small* is grouped, so **`gul`** denies *small* alone and **`gal`** adds it to *red*:
+
+> `zodogol garedel ^ gumuzem gul ^ gal vawalal.`
+>
+> [z-dog | [g-red | SCOPE[g-small | g-not] | g-and]] | v-walk
+>
+> "A dog that is red and not small walks."
+
+**Speech:** brief reset into the island, one tight phrase, boundary on the last island stress. In singing, use an ordinary phrase bow. Because an island never runs past one phrase, a listener who misses the closing pause is off by at most part of that phrase.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -706,7 +727,7 @@ xuxum  =  x + u + x + u + m
 
 An editorial span still counts as said: resume (`d[=]` / `daxur`) may point back to it. Combined `#\|` is two spoken closes in writing; write editorial first, then close-all. Bare `xuxur` closes one (editorial).
 
-**Not the same job as:** a negating clause join (`xul` / `xum`). Empty and resume forms are **opens** with a role letter (`daxul` redacted; `daxur` that cite). Closes are **`xuxul`** / **`xuxur`**.
+**Not the same job as:** a clause join (`xul` / `xum`, which go between clauses). Empty and resume forms are **opens** with a role letter (`daxul` redacted; `daxur` that cite). Closes are **`xuxul`** / **`xuxur`**.
 
 | Writing | Speech | Notes |
 |---------|--------|-------|

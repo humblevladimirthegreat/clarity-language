@@ -25,6 +25,58 @@ function expectLine(agalan: string, morph: string): void {
   assert.equal(morphGlossLine(agalan, tables), normalizeMorphLine(morph), agalan);
 }
 
+describe("morphGlossLine — clause joins go between clauses", () => {
+  it("groups a switched join over the list before it", () => {
+    expectLine(
+      "zazawan vawalal xol zululon vurunul xal zuhubun velebel.",
+      "[[z-Azawan | v-walk | x-or-exactly-one | z-Ululon | v-run] | x-and | z-Uhubun | v-sleep]",
+    );
+  });
+  it("reads a sentence-initial join as linking the whole next sentence", () => {
+    expectLine(
+      "zazawan vawalal. xan zululon vurunul xol zuhubun velebel.",
+      "z-Azawan | v-walk . x-and-then | [z-Ululon | v-run | x-or-exactly-one | z-Uhubun | v-sleep]",
+    );
+  });
+  it("takes a standalone join as a stand-in clause item", () => {
+    expectLine("zazawan vawalal xol xal.", "[z-Azawan | v-walk | x-or-exactly-one | x-none]");
+    expectLine("xual ul zazawan vawalal.", "x-everything | except | z-Azawan | v-walk");
+  });
+  it("glosses a resume of a resume as the original referent", () => {
+    expectLine(
+      "zazawan themabal vawalal xon zazar vuzunul xon zazar velebel.",
+      "[z-Azawan | th-plan-atlas | v-walk | x-or-else | z-←Azawan | v-sing | x-or-else | z-←Azawan | v-sleep]",
+    );
+  });
+  it("glosses the sequence fallback after an attempt", () => {
+    expectLine(
+      "zazawan thezuber vawalal xon zazar vuzunul.",
+      "[z-Azawan | th-ATTEMPT-trial | v-walk | x-or-else | z-←Azawan | v-sing]",
+    );
+  });
+});
+
+describe("morphGlossLine — SHARED only where it can describe the join", () => {
+  it("leaves an /h/ after a set noun join on the verb", () => {
+    expectLine("zazawan zululon zal hohogem vawalal.", "[z-Azawan | z-Ululon | z-and] | h-intensity | v-walk");
+  });
+  it("keeps an /h/ after a rank noun join as the scale", () => {
+    expectLine("zazawan zululon zel hohogem vawalal.", "[z-Azawan | z-Ululon | z-rank/more | h-intensity] | v-walk");
+  });
+  it("reads a /ɡ/ after a /ɡ/ join as the next item, so adjective lists nest", () => {
+    expectLine(
+      "zodogol garedel gumuzem gul gelem gal vawalal.",
+      "[z-dog | [[g-red | g-small | g-not] | g-big | g-and]] | v-walk",
+    );
+  });
+  it("leaves an /h/ after a /ɡ/ join on the verb", () => {
+    expectLine("zodogol garedel gumuzem gal hohogem vawalal.", "[z-dog | [g-red | g-small | g-and]] | h-intensity | v-walk");
+  });
+  it("keeps a range continuum after two number endpoints", () => {
+    expectLine("zodogol g+3 g+5 gal gurulem vawalal.", "[z-dog | [g-three | g-five | g-and | g-measurement]] | v-walk");
+  });
+});
+
 describe("morphGlossLine — glosses.md single words", () => {
   it("senses-are-separate-roots table", () => {
     expectLine("zugobol", "z-microphone");

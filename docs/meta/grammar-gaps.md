@@ -32,6 +32,7 @@ Deliberate omissions. An English job that only these forms would serve is **cove
 | D-08 | sentence-final `?` / `!` carrying force | act word carries force; tone marks are prosody only; sentences end in `.` | by design | speech-moves.md | — | — |
 | D-09 | *attacker*-style agent-noun lexicon | role compounds **`a` / `e` / `u` / `o` x ROOT** | by design | roles.md | — | — |
 | D-10 | neutral past / *earlier* / bare *now* word | signed offset on a channel ([knowing#dated-channel](../grammar/knowing.md#dated-channel)): `thuvuvum bohoram g-3`; forecast (channel + `b+`) / PLAN `+`; *just* / *about to* = `b-e-` / `b+e-` | by design | knowing.md | Every offset from now sits on an evidential or forecast (channel + `b+`) / PLAN; wrong sign on a one-way channel is not a sentence. Absolute dates stay channel-free | — |
+| D-11 | single-item clause join (`A xul` *not the case that A*, `A xal` *only A happened*) | clause `/x/` joins go between clauses only; deny / focus on the verb or noun (`vawalal vul`, `zazawan zal`); stand-in items (`A xol xal` *optionally A*, `A xam xar`, `A xel xur`, `xual ul A`) — [joins#clause-joins](../grammar/joins.md#clause-joins) | by design | joins.md | — | — |
 
 ### Settled decisions from the dated-channel review
 
@@ -149,8 +150,8 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 | G-B36 | idiomatic phrasal verbs (*give up*, *put up with*, *figure out*) | Pick a content root (`ozodo` *cessation* for *give up*); no systematic route | covered | lexicon | — | — |
 | G-B37 | light-verb constructions (*take a walk*, *have a look*, *make a decision*) | Use the content verb (`vawalal`); DECISION `ehege`. English light verbs are not needed | covered | clause.md | — | — |
 | G-B38 | reflexive (*Azawan sees herself*) | `zazawan vejel dazar.` | covered | pronouns.md#resume-r | — | — |
-| G-B40 | *try* (attempt, with no order implied: *Azawan tries the workaround*) | none; join-act `voen` is now *starts with* (sequence), and the lexicon has no *try* / *attempt* root | missing | join-across-roles.md / lexicon | Add a *try* root or sense; keep `voen` as sequence | P1 |
-| G-B41 | fallback condition (*if A, else if B*: B applies only when A fails) | none; restrictor `hoel` is now occasions in order, and `hel` (*preferably when A rather than B*) states a preference, not a plan B | missing | restrictors.md | Likely the same form as G-B40 *try* (attempt A, fall back to B) | P2 |
+| G-B40 | *try* (attempt, with no order implied: *Azawan tries the workaround*) | ATTEMPT **`thezube-`** + verb; **-l** committed / **-m** unstated / **-r** trial run ([intention#try](../grammar/intention.md#try)) | covered | intention.md | — | — |
+| G-B41 | fallback condition (*if A, else if B*: B applies only when A fails) | attempt + mid clause sequence **`xon`** *failing that*: `zazawan thezuber vawalal xon zazar vuzunul.` ([intention#fallback](../grammar/intention.md#fallback)) | covered | intention.md | — | — |
 | G-B39 | reciprocal (*Azawan and Ululon see each other*) | No taught route. `zazawan zululon zal dazar vejel.` parses, but `zar` is a join member and `dazar` would just resume Azawan. Numeric derivation `ROOTl+2` *mutual* makes only nouns/adjectives ([numeric-derivation](../grammar/numeric-derivation.md)), advanced | missing | pronouns.md / join-across-roles.md | Reciprocal: a set-join resume on the object (`d` + join resume) read as *each other*, or published `ezaze` *reciprocity* as `/h/` | P1 |
 
 **Notes**

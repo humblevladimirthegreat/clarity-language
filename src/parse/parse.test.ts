@@ -286,16 +286,36 @@ describe("parse — hosted /w/ before /b/", () => {
 });
 
 describe("parse — /ɡ/ join fences", () => {
-  it("keeps a predicative /ɡ/ join (zazawan godogol gul)", () => {
-    const units = parseText("zazawan godogol gul.").utterances[0]!.bodies[0]!.clause.units;
-    const preds = units.flatMap((u) => (u.kind === "predicate" ? [u.adj.word.raw] : []));
-    assert.deepEqual(preds, ["godogol", "gul"]);
+  const gCoordOf = (text: string) => {
+    const units = parseText(text).utterances[0]!.bodies[0]!.clause.units;
+    const unit = units.find((u) => u.kind === "gCoord");
+    assert.ok(unit?.kind === "gCoord", text);
+    return unit.coord.parts.map((part) => ({
+      items: part.items.map((item) => (item.kind === "adj" ? item.adj.word.raw : "^")),
+      join: part.join?.raw,
+      shared: part.shared.map((s) => ("raw" in s ? s.raw : s.word.raw)),
+    }));
+  };
+
+  it("keeps a predicative /ɡ/ join as one list (zazawan godogol gul)", () => {
+    assert.deepEqual(gCoordOf("zazawan godogol gul."), [{ items: ["godogol"], join: "gul", shared: [] }]);
   });
 
   it("keeps the join and shared word after /ɡ/ items (g+3 g+5 gal gumem)", () => {
-    const units = parseText("g+3 g+5 gal gumem.").utterances[0]!.bodies[0]!.clause.units;
-    const preds = units.flatMap((u) => (u.kind === "predicate" ? [u.adj.word.raw] : []));
-    assert.deepEqual(preds, ["g+3", "g+5", "gal", "gumem"]);
+    assert.deepEqual(gCoordOf("g+3 g+5 gal gumem."), [{ items: ["g+3", "g+5"], join: "gal", shared: ["gumem"] }]);
+  });
+
+  it("keeps an attributive list with an island on the noun", () => {
+    const units = parseText("zodogol garedel ^ gumuzem gul ^ gelem gal vawalal.").utterances[0]!.bodies[0]!.clause.units;
+    const np = units[0]!;
+    assert.ok(np.kind === "np");
+    const item = np.coord.parts[0]!.items[0]!;
+    assert.ok(item.kind === "package");
+    assert.deepEqual(
+      item.package.adjCoord?.parts.map((part) => [part.items.map((i) => (i.kind === "adj" ? i.adj.word.raw : "^")), part.join?.raw]),
+      [[["garedel", "^", "gelem"], "gal"]],
+    );
+    assert.deepEqual(item.package.adjs.map((a) => a.word.raw), ["garedel", "gumuzem", "gelem"]);
   });
 });
 

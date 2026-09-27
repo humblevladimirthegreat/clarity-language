@@ -198,7 +198,7 @@ That bare **`yael.`** confirms your own claim. To ask the listener to confirm (*
 
 **Compare with:** a command *Don’t walk* uses **`yul`**. **`yuel`** answers whether a claim is true.
 
-**Not the same job as:** *not X* inside the clause (`zul` / `vul` / `xul`).
+**Not the same job as:** *not X* inside the clause (`zul` / `vul`).
 
 ### Embedded *whether* {#embedded-whether}
 
@@ -396,7 +396,7 @@ Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), 
 
 A stance word can stand alone (`yael.`), sit before a body (`yael zazawan vawalal.`), or come as a confirm tag in the next turn after `.`. After a stance-plus-body beat, keep going with **`/x/`**; write another polar word only when you take a new stance turn. In a solo run of thought, **`yuel`** can mark a correction, **`yaol`** the next step, **`yael`** a point you lock.
 
-**Compare with:** *not* inside the clause uses **`zul`** / **`vul`** / **`xul`**. Polar **`yuel`** / **`yuol`** answer a *yes* / *no* or an offer.
+**Compare with:** *not* inside the clause uses **`zul`** / **`vul`**. Polar **`yuel`** / **`yuol`** answer a *yes* / *no* or an offer.
 
 ### Confirming a negative {#confirming-a-negative}
 

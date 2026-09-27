@@ -160,7 +160,7 @@ The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). A count on
 >
 > 🔊 *zodogol grarel graval gal gurulem vawalal.*
 >
-> [z-dog | g-three | g-five] | g-and | g-measurement | v-walk
+> [z-dog | [g-three | g-five | g-and | g-measurement]] | v-walk
 >
 > "Between 3 and 5 dogs walk."
 
@@ -257,7 +257,7 @@ English *half of the cats* / *a third of the tea* splits the whole into N parts.
 >
 > 🔊 *zagadalx gravazoyol guel vajul.*
 >
-> [z-cat-x | g-50yo] | g-rank/less | v-sit
+> [z-cat-x | [g-50yo | g-rank/less]] | v-sit
 >
 > "Most of the cats sit."
 

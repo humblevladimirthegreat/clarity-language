@@ -398,6 +398,15 @@ function considerUnit(ctx: Ctx, unit: Unit): void {
     case "predicate":
       considerGPackage(ctx, unit.adj);
       return;
+    case "gCoord":
+      for (const part of unit.coord.parts) {
+        for (const item of part.items) {
+          if (item.kind === "adj") considerGPackage(ctx, item.adj);
+          else considerIsland(ctx, item.island);
+        }
+        if (part.join && ctx.question && isJoinGap(part.join)) ctx.gaps.push(part.join);
+      }
+      return;
     case "h":
       considerHUnit(ctx, unit.unit);
       return;
@@ -416,9 +425,10 @@ function considerUnit(ctx: Ctx, unit: Unit): void {
       considerIsland(ctx, unit.island);
       return;
     case "clauseCoord":
-      for (const part of unit.coord.parts) {
-        for (const clause of part.clauses) considerClause(ctx, clause);
-        if (ctx.question && isJoinGap(part.join)) ctx.gaps.push(part.join);
+      if (unit.coord.first) considerClause(ctx, unit.coord.first);
+      for (const link of unit.coord.links) {
+        if (ctx.question && isJoinGap(link.join)) ctx.gaps.push(link.join);
+        if (link.clause) considerClause(ctx, link.clause);
       }
       return;
   }

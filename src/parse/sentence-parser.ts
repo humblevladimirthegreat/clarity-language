@@ -37,6 +37,8 @@ import type {
   BodyClause,
   Clause,
   CoordShared,
+  GCoord,
+  GItem,
   GPackage,
   HUnit,
   ImpliedForce,
@@ -99,6 +101,19 @@ function isGlHead(token: IToken): boolean {
 
 function isAsOfWToken(token: IToken): boolean {
   return token.tokenType === W && isAsOfOverlay((token.payload as LexWord) ?? {});
+}
+
+const SCALE_SERIES = new Set(["e", "ue", "ae", "oe"]);
+const RANGE_SERIES = new Set(["a", "oe", "ua"]);
+
+function joinSeries(token: IToken): string {
+  const family = (token.payload as LexWord | undefined)?.family;
+  return family?.kind === "joinMarker" ? family.series : "";
+}
+
+function isNumberToken(token: IToken): boolean {
+  const word = token.payload as LexWord | undefined;
+  return token.tokenType === G && (word?.family.kind === "number" || word?.reading === "number");
 }
 
 function laAfterW(parser: AgelanSentenceParser, from = 1): number {
@@ -233,39 +248,62 @@ class AgelanSentenceParser extends CstParser {
     this.OPTION(() => {
       this.CONSUME(Linker);
     });
+    // Sentence-initial clause join before a clause: joins the prior sentence to this whole one (joins.md § clause joins).
+    this.OPTION2({
+      GATE: () => this.crossPeriodJoinAhead(),
+      DEF: () => this.CONSUME(JoinX, { LABEL: "crossJoin" }),
+    });
     this.SUBRULE(this.clause);
   });
 
+  /** `/x/` at sentence start followed by a clause (not `.`, a hook, or another `/x/`). */
+  private crossPeriodJoinAhead(): boolean {
+    if (this.LA(1).tokenType !== JoinX) return false;
+    if (this.LA(laAfterW(this, 2)).tokenType === Hook) return false;
+    return !tokenIs(this.LA(2), JoinX, Period, EOF, QMark, Bang, SpanClose, Force, Polar, Linker);
+  }
+
+  /** `/x/` joins go between clauses: item, join, item, … (joins.md § clause joins). */
   public clause = this.RULE("clause", () => {
-    this.AT_LEAST_ONE(() => {
-      this.SUBRULE(this.clausePart);
+    this.SUBRULE(this.clauseItem);
+    this.MANY(() => {
+      this.CONSUME(JoinX, { LABEL: "midJoin" });
+      this.OPTION({
+        GATE: () => !this.clauseEndAhead(),
+        DEF: () => this.SUBRULE2(this.clauseItem),
+      });
     });
   });
 
-  public clausePart = this.RULE("clausePart", () => {
+  private clauseEndAhead(): boolean {
+    return tokenIs(this.LA(1), Period, EOF, QMark, Bang, SpanClose, Force, Polar, Linker);
+  }
+
+  /** A clause, or a standalone `/x/` word as a stand-in clause (optionally `xual ul …` with a hook). */
+  public clauseItem = this.RULE("clauseItem", () => {
     this.OR([
       {
         GATE: () => this.LA(1).tokenType === JoinX,
         ALT: () => {
-          this.SUBRULE(this.xJoinClose, { LABEL: "standaloneJoin" });
+          this.CONSUME(JoinX, { LABEL: "standIn" });
+          this.OPTION({
+            GATE: () => this.LA(laAfterW(this)).tokenType === Hook,
+            DEF: () => {
+              this.AT_LEAST_ONE(() => {
+                this.SUBRULE(this.unit);
+              });
+            },
+          });
         },
       },
       {
         ALT: () => {
-          this.AT_LEAST_ONE(() => {
-            this.SUBRULE(this.unit);
-          });
-          this.OPTION(() => {
-            this.SUBRULE2(this.xJoinClose);
+          this.AT_LEAST_ONE2(() => {
+            this.SUBRULE2(this.unit);
           });
         },
       },
     ]);
-  });
-
-  // Nothing is SHARED after a clause join (join-across-roles.md § clause sequence).
-  public xJoinClose = this.RULE("xJoinClose", () => {
-    this.CONSUME(JoinX);
   });
 
   public unit = this.RULE("unit", () => {
@@ -480,8 +518,13 @@ class AgelanSentenceParser extends CstParser {
       { ALT: () => this.CONSUME(JoinD) },
       { ALT: () => this.CONSUME(JoinB) },
     ]);
-    this.OPTION(() => {
-      this.SUBRULE(this.sharedAfterJoin);
+    // SHARED /ɡ/ describes every noun; SHARED /h/ is only a scale, after a rank / equative / sequence join.
+    this.OPTION({
+      GATE: () =>
+        this.LA(laAfterW(this)).tokenType === G || (tokenIs(this.LA(laAfterW(this)), H) && SCALE_SERIES.has(joinSeries(this.LA(0)))),
+      DEF: () => {
+        this.SUBRULE(this.sharedAfterJoin);
+      },
     });
   });
 
@@ -551,10 +594,21 @@ class AgelanSentenceParser extends CstParser {
 
   public gJoinClose = this.RULE("gJoinClose", () => {
     this.CONSUME(JoinG);
-    this.OPTION(() => {
-      this.SUBRULE(this.sharedAfterJoin);
+    // Nothing modifies a list of adjectives; the one SHARED /ɡ/ here is a range's continuum (numbers-applied.md § Ranges).
+    this.OPTION({
+      GATE: () => this.LA(laAfterW(this)).tokenType === G && this.rangeJoinBehind(),
+      DEF: () => {
+        this.SUBRULE(this.sharedAfterJoin);
+      },
     });
   });
+
+  /** The join just consumed closes two number endpoints with `a` / `oe` / `ua`. */
+  private rangeJoinBehind(): boolean {
+    return (
+      RANGE_SERIES.has(joinSeries(this.LA(0))) && isNumberToken(this.LA(-1)) && isNumberToken(this.LA(-2))
+    );
+  }
 
   public hCoord = this.RULE("hCoord", () => {
     this.AT_LEAST_ONE(() => {
@@ -754,6 +808,19 @@ function allowsImpliedSubject(word: LexWord): boolean {
 }
 
 function disambiguateClause(units: Unit[]): Unit[] {
+  // Verbless `zazawan godogol gul` / `zazawan garedel gumuzem gal`: the joined list is the predicate.
+  if (units.length === 1 && units[0]!.kind === "np") {
+    const coord = units[0].coord;
+    const part = coord.parts[0];
+    const item = coord.parts.length === 1 && part && !part.join && part.items.length === 1 ? part.items[0] : undefined;
+    if (item?.kind === "package" && item.package.adjCoord) {
+      const { adjCoord, ...pkg } = item.package;
+      return [
+        { kind: "np", coord: { level: coord.level, parts: [{ items: [{ kind: "package", package: { ...pkg, adjs: [] } }], shared: [] }] } },
+        { kind: "gCoord", coord: adjCoord },
+      ];
+    }
+  }
   // A trailing `/ɡ/` join fence (`zazawan godogol gul`) closes the predicate, not a second clause part.
   const rest = units.slice(1);
   const onlyGFences = rest.every((u) => u.kind === "predicate" && u.adj.word.family.kind === "joinMarker");
@@ -792,7 +859,9 @@ function mergeIslandJoins(units: Unit[]): Unit[] {
       current.kind === "np" && current.coord.parts.every((part) => !part.join);
     const closerIsJoinNp =
       closer?.kind === "np" && closer.coord.parts.some((part) => part.join);
-    if (currentIsOpenNp && island?.kind === "island" && closerIsJoinNp && closer.kind === "np") {
+    // Only same-role material merges around an island (`zazawan ^ zunudel zal ^ zam`).
+    const sameRole = current.kind === "np" && closer?.kind === "np" && current.coord.level === closer.coord.level;
+    if (currentIsOpenNp && island?.kind === "island" && closerIsJoinNp && closer.kind === "np" && sameRole) {
       const leading = current.coord.parts.flatMap((part) => part.items);
       const firstClose = closer.coord.parts[0]!;
       out.push({
@@ -818,7 +887,7 @@ function mergeIslandJoins(units: Unit[]): Unit[] {
 }
 
 function finalizeClause(units: Unit[]): Clause {
-  const resolved = disambiguateClause(mergeIslandJoins(units));
+  const resolved = disambiguateClause(mergeAdjLists(mergeIslandJoins(units)));
 
   for (let i = 0; i < resolved.length - 1; i++) {
     const host = verbalDependentIn(resolved[i]!);
@@ -984,7 +1053,7 @@ function joinFromClose(close: CstNode | undefined): { join?: LexWord; shared: Co
 }
 
 function buildIsland(cst: CstNode): IslandUnit {
-  return { units: childNodes(cst, "unit").map(buildUnit) };
+  return { units: childNodes(cst, "unit").flatMap(expandUnits) };
 }
 
 function buildNpItem(cst: CstNode): NpItem {
@@ -1073,6 +1142,121 @@ function flattenHUnits(cst: CstNode): Unit[] {
   return units;
 }
 
+function buildGCoord(cst: CstNode): GCoord {
+  return {
+    parts: childNodes(cst, "gCoordPart").map((part) => {
+      const { join, shared } = joinFromClose(partJoinClose(part, "gJoinClose"));
+      const items: GItem[] = childNodes(part, "gPackage").map((g) => ({ kind: "adj", adj: buildGPackage(g) }));
+      return { items, join, shared };
+    }),
+  };
+}
+
+/** `/ɡ/` material that can continue an adjective list: an adjective, a `/ɡ/` coord, or an island of those. */
+function isGMaterial(unit: Unit | undefined): boolean {
+  if (unit?.kind === "predicate" || unit?.kind === "gCoord") return true;
+  return unit?.kind === "island" && unit.island.units.length > 0 && unit.island.units.every(isGMaterial);
+}
+
+function hasGJoin(unit: Unit): boolean {
+  if (unit.kind === "gCoord") return true;
+  if (unit.kind === "predicate") return unit.adj.word.family.kind === "joinMarker";
+  return unit.kind === "island" && unit.island.units.some(hasGJoin);
+}
+
+type GToken = GItem | { kind: "join"; join: LexWord; shared: CoordShared[] };
+
+function gTokens(unit: Unit): GToken[] {
+  if (unit.kind === "island") return [{ kind: "island", island: unit.island }];
+  if (unit.kind === "predicate") {
+    return unit.adj.word.family.kind === "joinMarker"
+      ? [{ kind: "join", join: unit.adj.word, shared: [] }]
+      : [{ kind: "adj", adj: unit.adj }];
+  }
+  if (unit.kind === "gCoord") {
+    return unit.coord.parts.flatMap((part): GToken[] => [
+      ...part.items,
+      ...(part.join ? [{ kind: "join" as const, join: part.join, shared: part.shared }] : []),
+    ]);
+  }
+  return [];
+}
+
+/** Right-close parts from a flat run: each join closes the items since the previous join. */
+function gCoordFromTokens(tokens: GToken[]): GCoord {
+  const parts: GCoord["parts"] = [];
+  let items: GItem[] = [];
+  for (const token of tokens) {
+    if (token.kind === "join") {
+      parts.push({ items, join: token.join, shared: token.shared });
+      items = [];
+    } else items.push(token);
+  }
+  if (items.length > 0) parts.push({ items, shared: [] });
+  return { parts };
+}
+
+function gCoordAdjs(coord: GCoord): GPackage[] {
+  return coord.parts.flatMap((part) =>
+    part.items.flatMap((item) =>
+      item.kind === "adj"
+        ? [item.adj]
+        : item.island.units.flatMap((u) => (u.kind === "predicate" || u.kind === "gCoord" ? gTokens(u) : []))
+            .flatMap((t) => (t.kind === "adj" ? [t.adj] : [])),
+    ),
+  );
+}
+
+/**
+ * Gather a joined `/ɡ/` list into one structure (joins.md § right-close). After a noun whose package already
+ * has adjectives, the list is attributive on that package; elsewhere it is one predicate `gCoord` unit.
+ */
+function mergeAdjLists(units: Unit[]): Unit[] {
+  const out: Unit[] = [];
+  let i = 0;
+  while (i < units.length) {
+    const unit = units[i]!;
+    let j = i;
+    while (j < units.length && isGMaterial(units[j])) j += 1;
+    if (j === i) {
+      out.push(unit);
+      i += 1;
+      continue;
+    }
+    const run = units.slice(i, j);
+    if (!run.some(hasGJoin)) {
+      out.push(...run);
+      i = j;
+      continue;
+    }
+    const prev = out.at(-1);
+    const lastPart = prev?.kind === "np" ? prev.coord.parts.at(-1) : undefined;
+    const lastItem = lastPart && !lastPart.join ? lastPart.items.at(-1) : undefined;
+    // `/ɡ/` right after a noun describes it (as `npPackage` does); a bare leading join (`zodogol gal`) stays apart.
+    const first = run[0]!;
+    const leadingJoin = first.kind === "gCoord" && first.coord.parts[0]!.items.length === 0;
+    const attributive =
+      lastItem?.kind === "package" &&
+      !lastItem.package.adjCoord &&
+      (lastItem.package.adjs.length > 0 || !leadingJoin);
+    if (!attributive && run.length === 1 && run[0]!.kind === "gCoord") {
+      out.push(run[0]!);
+      i = j;
+      continue;
+    }
+    if (attributive && lastItem.kind === "package") {
+      const pkg = lastItem.package;
+      const tokens: GToken[] = [...pkg.adjs.map((adj): GItem => ({ kind: "adj", adj })), ...run.flatMap(gTokens)];
+      const adjCoord = gCoordFromTokens(tokens);
+      lastItem.package = { ...pkg, adjs: gCoordAdjs(adjCoord), adjCoord };
+    } else {
+      out.push({ kind: "gCoord", coord: gCoordFromTokens(run.flatMap(gTokens)) });
+    }
+    i = j;
+  }
+  return out;
+}
+
 function flattenGCoord(cst: CstNode): Unit[] {
   const parts = childNodes(cst, "gCoordPart");
   const units: Unit[] = [];
@@ -1147,7 +1331,10 @@ function expandUnits(cst: CstNode): Unit[] {
   const vp = childNodes(cst, "vpCoord")[0];
   if (vp) return [{ kind: "vp", coord: buildVpCoord(vp) }];
   const g = childNodes(cst, "gCoord")[0];
-  if (g) return flattenGCoord(g);
+  if (g) {
+    const coord = buildGCoord(g);
+    return coord.parts.some((part) => part.join) ? [{ kind: "gCoord", coord }] : flattenGCoord(g);
+  }
   const h = childNodes(cst, "hCoord")[0];
   if (h) return flattenHUnits(h);
   const hook = childNodes(cst, "hookUnit")[0];
@@ -1155,30 +1342,27 @@ function expandUnits(cst: CstNode): Unit[] {
   return [buildUnit(cst)];
 }
 
+function buildClauseItem(cst: CstNode): Clause {
+  const standInTok = childToken(cst, "standIn");
+  const units = childNodes(cst, "unit").flatMap(expandUnits);
+  if (!standInTok) return finalizeClause(units);
+  const standIn: Unit = { kind: "clauseCoord", coord: { links: [{ join: lexWordFromToken(standInTok) }] } };
+  if (units.length === 0) return { units: [standIn] };
+  const rest = finalizeClause(units);
+  return { ...rest, units: [standIn, ...rest.units] };
+}
+
 function buildClause(cst: CstNode): Clause {
-  const parts = childNodes(cst, "clausePart");
-  const hasJoin = parts.some((part) => partJoinClose(part, "xJoinClose") !== undefined);
-
-  if (!hasJoin) {
-    const units = parts.flatMap((part) => childNodes(part, "unit").flatMap(expandUnits));
-    return finalizeClause(units);
-  }
-
-  const coordParts: { clauses: Clause[]; join: LexWord }[] = [];
-  for (const part of parts) {
-    const close = partJoinClose(part, "xJoinClose");
-    const joinTok = close ? childToken(close, "JoinX") : undefined;
-    const join = joinTok ? lexWordFromToken(joinTok) : undefined;
-    const units = childNodes(part, "unit").flatMap(expandUnits);
-    if (!join) continue;
-    coordParts.push({
-      clauses: units.length > 0 ? [finalizeClause(units)] : [],
-      join,
-    });
-  }
-
+  const items = childNodes(cst, "clauseItem").map(buildClauseItem);
+  const joins = childTokens(cst, "midJoin").map(lexWordFromToken);
+  if (joins.length === 0) return items[0]!;
   return {
-    units: [{ kind: "clauseCoord", coord: { parts: coordParts } }],
+    units: [
+      {
+        kind: "clauseCoord",
+        coord: { first: items[0], links: joins.map((join, i) => ({ join, clause: items[i + 1] })) },
+      },
+    ],
   };
 }
 
@@ -1214,7 +1398,7 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
 }
 
 function buildBodyClause(cst: CstNode, trailingPunct?: IToken): BodyClause {
-  const linkerTok = childToken(cst, "Linker");
+  const linkerTok = childToken(cst, "Linker") ?? childToken(cst, "crossJoin");
   const clauseCst = childNodes(cst, "clause")[0]!;
   return {
     linker: linkerTok ? lexWordFromToken(linkerTok) : undefined,
