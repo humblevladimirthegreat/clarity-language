@@ -233,7 +233,7 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
   it("numbered alternative + unmet pleasure", () => {
     expectLine(
       "x#e- zuzebum g#1 zugobonx thawerothur.",
-      "x-starting-with | [z-problem | g-1st] | z-speaker-x | th-pleasure-unmet-temporary",
+      "x-starting-with | [z-problem | g-1st] | z-speaker-x | th-pleasure-unmet-passing",
     );
   });
 
@@ -382,8 +382,8 @@ describe("compareMorphGloss", () => {
   });
 
   it("values bake stance and ending grain", () => {
-    expectLine("zawaral gonogothal", "z-wrapped-gift | g-relatedness-met-long-term");
-    expectLine("zazegem walodothur gobobum", "z-gathering | [w-autonomy-unmet-temporary | g-stimulus]");
+    expectLine("zawaral gonogothal", "z-wrapped-gift | g-relatedness-met-lasting");
+    expectLine("zazegem walodothur gobobum", "z-gathering | [w-autonomy-unmet-passing | g-stimulus]");
     expectLine("thogegam thanedem", "th-HIGH | th-CIRCUM");
   });
 

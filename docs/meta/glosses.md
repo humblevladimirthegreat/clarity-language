@@ -436,7 +436,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 > `x#e- zuzebum g#1 zugobonx thawerothur.`
 >
-> x-starting-with | [z-problem | g-1st] | z-speaker-x | th-pleasure-unmet-temporary
+> x-starting-with | [z-problem | g-1st] | z-speaker-x | th-pleasure-unmet-passing
 >
 > "First problem: we're not enjoying this."
 
