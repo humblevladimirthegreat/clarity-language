@@ -27,24 +27,24 @@ Six published roots are the interests you can name, and no other root takes the 
 
 ### Met (`tha`): serves the interest
 
-When you want to say that a named belonging **serves** this interest (pays it off), write that thing as a noun, then a `/ɡ/` word: interest root, mid-word **`th`**, **`a`**, then an ending. That adjective is about the noun. The ending says the payoff's **time horizon**: whether it serves the interest over the long run or only for now.
+When you want to say that a named belonging **serves** this interest (pays it off), write that thing as a noun, then a `/ɡ/` word: interest root, mid-word **`th`**, **`a`**, then an ending. That adjective is about the noun. The ending says the payoff's **time horizon**: whether the payoff lasts or arrives right away.
 
 **Not the same job as:** [ability](intention.md#ability) (*can sing*, taught later). Ability glues an activity to its vowel with **`x`**. Interest words glue a **interest** with **`th`**, and **`tha`** means *serves this interest*.
 
 ### Time horizon (endings on met) {#time-horizon-endings-on-met}
 <a id="interest-contact"></a>
 
-On a *serves* word, **-l / -m / -r** say **how long the payoff lasts**: over the long run, unstated, or only for now. It uses the same scale as [unmet](#interest-changeability): **-l** lasts, **-r** passes. If you do not know, use **-m**.
+On a *serves* word, **-l / -m / -r** say **when the payoff lands**: lasting, unstated, or immediate. Neither end is better; a good day needs both. It uses the same scale as [unmet](#interest-changeability): **-l** lasts, **-r** passes. If you do not know, use **-m**.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…thal` | serves the interest over the long run | *long-term* | **-l** ≈ lasting |
+| `…thal` | serves the interest over time | *lasting* | **-l** ≈ lasting |
 | `…tham` | serves the interest; time horizon unstated (soft default if unknown) | *serves* | **-m** ≈ open |
-| `…thar` | serves the interest now, not lastingly | *short-term* / *for now* | **-r** ≈ for now |
+| `…thar` | serves the interest right away | *immediate* | **-r** ≈ in the moment |
 
 > `zawaral gonogothal.`
 >
-> z-wrapped-gift | g-relatedness-met-long-term
+> z-wrapped-gift | g-relatedness-met-lasting
 >
 > "My gift serves relatedness in the long term."
 
@@ -56,11 +56,19 @@ On a *serves* word, **-l / -m / -r** say **how long the payoff lasts**: over the
 
 > `zabogol golozothar.`
 >
-> z-book | g-competence-met-short-term
+> z-book | g-competence-met-immediate
 >
-> "My book serves competence for now."
+> "My book serves competence right now."
 
-**Compare with:** [unmet](#interest-changeability) uses the same scale for a cost. Together they can say *good for now, bad in the long run*: a short-term **`tha`** word and a lasting **`thu`** word on the same noun.
+An immediate payoff is often exactly what is needed:
+
+> `zawerol gawerothar.`
+>
+> z-strawberry | g-pleasure-met-immediate
+>
+> "My strawberry is a pleasure right now."
+
+**Compare with:** [unmet](#interest-changeability) uses the same scale for a cost.
 
 ### Unmet (`thu`): detracts from the interest
 <a id="interest-changeability"></a>
@@ -73,13 +81,21 @@ That ending is **changeability**: how lasting that detriment is. If you do not k
 |--------|-----|---------|-----|
 | `…thul` | the detriment is fixed as far as you can tell | *irreversible* | **-l** ≈ locked |
 | `…thum` | effort or circumstance may soften the detriment (soft default if unknown) | *modifiable* | **-m** ≈ open to change |
-| `…thur` | the detriment has no lasting impact | *temporary* | **-r** ≈ light (this moment only) |
+| `…thur` | the detriment has no lasting impact | *passing* | **-r** ≈ in the moment |
 
 > `zabogol golozothum.`
 >
 > z-book | g-competence-unmet-modifiable
 >
 > "My book detracts from competence (modifiable)."
+
+One noun can carry both a **`tha`** word and a **`thu`** word, and the pairing runs either way: *good now, costly later* (an immediate **`tha`** word and a lasting **`thu`** word), or *costly now, good later*:
+
+> `zabogol gawerothur golozothal.`
+>
+> [z-book | g-pleasure-unmet-passing | g-competence-met-lasting]
+>
+> "My book is a slog for now, but it builds lasting competence."
 
 ### Word shape {#word-shape}
 <a id="interest-stake"></a>
@@ -106,9 +122,9 @@ When the noun is **not** yours (weather, a gathering, another person’s church)
 
 > `zazegem walodothur gobobum.`
 >
-> z-gathering | [w-autonomy-unmet-temporary | g-stimulus]
+> z-gathering | [w-autonomy-unmet-passing | g-stimulus]
 >
-> "The gathering detracts from autonomy right now (temporary)."
+> "The gathering detracts from autonomy right now (passing)."
 
 Ordinary `zobobul` is still *emphasis*. Bare **`gobobum`** with no `/w/` interest does not ascribe an interest. An episode (*this raining, this telling*) still uses `/th/` on the clause, possessed or not.
 
@@ -150,7 +166,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 ::: details Show answer
 `zedenel guhuhethal.`
 
-z-tent | g-survival-met-long-term
+z-tent | g-survival-met-lasting
 :::
 
 **2.** *My backpack serves competence.*
@@ -161,12 +177,12 @@ z-tent | g-survival-met-long-term
 z-backpack | g-competence-met-any-term
 :::
 
-**3.** *The wind detracts from relatedness right now (temporary).*
+**3.** *The wind detracts from relatedness right now (passing).*
 
 ::: details Show answer
 `zuwudul wonogothur gobobum.`
 
-z-wind | [w-relatedness-unmet-temporary | g-stimulus]
+z-wind | [w-relatedness-unmet-passing | g-stimulus]
 :::
 
 **4.** *The fire detracts from survival (irreversible).*
@@ -182,7 +198,7 @@ z-fire | [w-survival-unmet-irreversible | g-stimulus]
 ::: details Show answer
 `zavazul gegethal.`
 
-z-flashlight | g-interest-met-long-term
+z-flashlight | g-interest-met-lasting
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
@@ -191,7 +207,7 @@ z-flashlight | g-interest-met-long-term
 
 ::: details Show answer
 
-z-tent | g-interest-met-long-term
+z-tent | g-interest-met-lasting
 
 *My tent serves an unspecified interest in the long term.*
 :::
@@ -200,7 +216,7 @@ z-tent | g-interest-met-long-term
 
 ::: details Show answer
 
-z-flashlight | g-competence-met-long-term
+z-flashlight | g-competence-met-lasting
 
 *My flashlight serves competence in the long term.*
 :::
@@ -218,9 +234,9 @@ z-rain | [w-autonomy-unmet-modifiable | g-stimulus]
 
 ::: details Show answer
 
-z-tent | g-survival-met-short-term
+z-tent | g-survival-met-immediate
 
-*My tent serves survival for now.*
+*My tent serves survival right now.*
 :::
 
 **5.** `zababal golozothul.`
@@ -249,7 +265,7 @@ When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgme
 
 > `zezehel wolozothur gobobum thogegam thanedem.`
 >
-> [z-speech | [w-competence-unmet-temporary | g-stimulus]] | th-HIGH | th-CIRCUM
+> [z-speech | [w-competence-unmet-passing | g-stimulus]] | th-HIGH | th-CIRCUM
 >
 > "Anxious about the dialogue:" competence at stake for now; surge; room awash.
 
@@ -354,6 +370,8 @@ A reason held **to keep a cost off** is a *so that … not* dependent ([so that]
 | `…thom` | the agent’s own reason (soft default if unknown) | *internal* | **-m** ≈ open / from inside |
 | `…thor` | a working reason for now; it may change | *for now* / *provisional* | **-r** ≈ for now |
 
+A reason the situation pulls is as legitimate as one from inside. The ending says where the reason comes from, not how good it is.
+
 ### Which ending table?
 
 Beginner already used *serves* and *detracts from*. Intermediate adds *ought this act for* and *doing for*. Pick the ending table that matches the stance vowel.
@@ -385,7 +403,7 @@ On **`the`**, use **-l** for an invitation, **-m** for an offer, and **-r** for 
 
 > `zazawan vezehel tholozothal thonogothom.`
 >
-> z-Azawan | v-tell | th-competence-met-long-term | th-relatedness-motive-internal
+> z-Azawan | v-tell | th-competence-met-lasting | th-relatedness-motive-internal
 >
 > "Azawan tells: it serves competence in the long term, and relatedness is the internal motive."
 
@@ -401,7 +419,7 @@ Agalan has no set phrase for *thank you*. Say that what the other person did **m
 
 > `tholozothal.`
 >
-> th-competence-met-long-term
+> th-competence-met-lasting
 >
 > "That will keep helping me do it." — *thanks, that sets me up*
 
@@ -409,7 +427,7 @@ Agalan has no set phrase for *thank you*. Say that what the other person did **m
 |--------|-----|---------|
 | `…thal` | the help lasts | *that will stay with me* |
 | `…tham` | the help, horizon unstated (default) | *thank you* |
-| `…thar` | the help is for now | *thanks, that got me through* |
+| `…thar` | the help landed right when needed | *thanks, that got me through* |
 
 *Sorry* is about **their** interest, not yours. A lone unmet word would say *my* interest went unmet, so name whose interest in `/b/` right after it. The ending is the same [changeability](#interest-changeability) as on any unmet word, so it says how serious the harm is. (cue: sorry = *that detracted from your interest*)
 
@@ -636,7 +654,7 @@ z-Ululon | v-pray | th-competence-motive-internal
 ::: details Show answer
 `globorum bazawan zuhurul wonogothal gobobum.`
 
-[[gl-ownership | b-Azawan] | z-church] | [w-relatedness-met-long-term | g-stimulus]
+[[gl-ownership | b-Azawan] | z-church] | [w-relatedness-met-lasting | g-stimulus]
 :::
 
 **11.** *Azawan prays: it serves competence in the long term, and relatedness is the internal motive.*
@@ -644,7 +662,7 @@ z-Ululon | v-pray | th-competence-motive-internal
 ::: details Show answer
 `zazawan vabal tholozothal thonogothom.`
 
-z-Azawan | v-pray | th-competence-met-long-term | th-relatedness-motive-internal
+z-Azawan | v-pray | th-competence-met-lasting | th-relatedness-motive-internal
 :::
 
 **12.** *Ululon ought to scream to serve survival (Ululon asked for a move); relatedness is the circumstantial motive.*
@@ -730,9 +748,9 @@ z-Azawan | v-shush | th-relatedness-motive-provisional
 
 ::: details Show answer
 
-z-prayer-bead | g-pleasure-met-short-term
+z-prayer-bead | g-pleasure-met-immediate
 
-*My prayer bead serves pleasure for now.*
+*My prayer bead is a pleasure right now.*
 :::
 
 **7.** `zanedel walodothum gobobum.`

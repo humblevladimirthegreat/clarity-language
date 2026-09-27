@@ -739,7 +739,7 @@ Utterance setting: statement / question / command / prohibition.
 ### Time horizon
 <a id="contact--contact-channel"></a>
 
-Met-interest **`tha`** endings: **-l** long-term, **-m** unstated (default), **-r** short-term.
+Met-interest **`tha`** endings: **-l** lasting, **-m** unstated (default), **-r** immediate. Neither end is better.
 
 [Interests](interests.md#time-horizon-endings-on-met)
 

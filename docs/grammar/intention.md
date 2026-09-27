@@ -21,19 +21,19 @@ Ordinary content stays available (`zemabal` *a map*; `vemabal` *to plan*). Leave
 <a id="plan-map-resolution"></a>
 <a id="plan-endings"></a>
 
-On **`emaba`**, **-l / -m / -r** say **how fully drawn** the intention is: a map that already includes backups, steps filled in, or only a heading. **-l** is the most prepared and **-r** the least formed. That split is a reminder of **how prepared** you are. **-n** is ordinary [proper](word-endings.md#proper-name--n). When you are unsure how detailed the course is, use **`themabam`**: it claims a plan without saying how much is filled in.
+On **`emaba`**, **-l / -m / -r** say **how fully drawn** the intention is: a map that already includes backups, steps filled in, or just the direction. That split shows **how much of the route is drawn**. No level is better: match the detail to the plan, and a sketch is often all a small or early plan needs. **-n** is ordinary [proper](word-endings.md#proper-name--n). When you are unsure how detailed the course is, use **`themabam`**: it claims a plan without saying how much is filled in.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`themabal`** | **atlas** | *is fully prepared to …* — hurdles are anticipated and prepared for | `emabal` *plan-atlas* | **-l** ≈ locked in (detours already drawn) |
 | **`themabam`** | **itinerary** (soft default) | *plans to …* — steps laid out, or detail unstated | `emabam` *plan-itinerary* | **-m** ≈ middle (the route, no backups) |
-| **`themabar`** | **sketch** | *intends to …* / *is thinking of …* — heading only, steps not filled in | `emabar` *plan-sketch* | **-r** ≈ rough (a heading for now) |
+| **`themabar`** | **sketch** | *intends to …* / *is thinking of …* — the direction, details left open | `emabar` *plan-sketch* | **-r** ≈ rough (a direction for now) |
 
 > `zululon themabar vawalal.`
 >
 > z-Ululon | th-plan-sketch | v-walk
 >
-> "Ululon intends to walk."
+> "Ululon is thinking of a walk." (a sketch is plenty here)
 
 > `zuhubun themabal vawalal.`
 >
@@ -41,7 +41,7 @@ On **`emaba`**, **-l / -m / -r** say **how fully drawn** the intention is: a map
 >
 > "Uhubun is fully prepared to walk."
 
-Saying *I will* in English can hide whether you only intend a heading, you have the steps, or you are fully prepared. Picking the ending makes that preparation audible.
+Saying *I will* in English can hide whether you have a direction, the steps, or backups too. Picking the ending makes that level of detail audible, so others know how firm the details are.
 
 **Compare with:** a forecast about the world (*it will rain*) is not PLAN. PLAN says what someone means to do, and needs no warrant. A forecast always names how you know it: a channel plus a later offset ([forecasts](knowing.md#forecast), taught later). To say *how much* later someone means to act (*in three hours*), add a `+` [offset](knowing.md#dated-channel) after PLAN.
 
@@ -368,7 +368,7 @@ On **`ezube`**, **-l / -m / -r** say how far the attempt will go. **-n** is ordi
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thezubel`** | **committed** | *really tries to …* / *keeps trying to …* until it works or is ruled out | **-l** the full run |
+| **`thezubel`** | **committed** | *commits to trying …* / *keeps trying to …* until it works or is ruled out | **-l** the full run |
 | **`thezubem`** | **unstated** (soft default) | *tries to …* | **-m** middle |
 | **`thezuber`** | **trial run** | *tries out …* / *gives … a shot*: a low-stakes probe, and failing is useful to know | **-r** a small sample |
 
@@ -403,7 +403,7 @@ Each clause keeps its own ending, so you can probe the first option and commit t
 >
 > [z-Azawan | th-ATTEMPT-trial | v-walk | x-or-else | z-←Azawan | th-ATTEMPT-committed | v-sing]
 >
-> "Azawan tries walking; failing that, Azawan really tries singing."
+> "Azawan tries walking; failing that, Azawan commits to trying singing."
 
 A [PLAN](#plan-predict) atlas (**`themabal`**) already includes backups. Chain them with **`xon`** to name them, first choice first:
 

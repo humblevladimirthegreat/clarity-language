@@ -266,10 +266,10 @@ const INTEREST_STANCE: Record<string, string> = {
 
 /** Ending grain on values (time horizon / prescription warrant / preference / changeability). */
 const INTEREST_GRAIN: Record<string, Partial<Record<Ending, string>>> = {
-  a: { l: "long-term", m: "any-term", r: "short-term" },
+  a: { l: "lasting", m: "any-term", r: "immediate" },
   e: { l: "invited", m: "offered", r: "trial" },
   o: { l: "circumstantial", m: "internal", r: "provisional" },
-  u: { l: "irreversible", m: "modifiable", r: "temporary" },
+  u: { l: "irreversible", m: "modifiable", r: "passing" },
 };
 
 const GREETING_STANCE: Record<string, string> = {
