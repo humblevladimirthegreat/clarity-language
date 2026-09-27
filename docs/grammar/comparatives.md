@@ -615,11 +615,11 @@ Single-item `zazawan zuel gomonam` is *the least challenging* in the group in pl
 
 ### Interest benchmarks (*enough* / *too*) {#interest-benchmarks}
 
-English *enough* and *too* compare against **what an interest requires**. Agalan names that bar like the others: the [interest root](interests.md#interest-inventory) plus **-n**. The bar is the **speaker's** need unless you say otherwise.
+English *enough* and *too* compare against **what an interest requires**. Agalan names that bar like the others: the [interest root](interests.md#interest-inventory) plus **-n**. The bar is the **speaker's** interest unless you say otherwise.
 
 | Agalan | Use | English | Same root as |
 |---------|-----|---------|----------------|
-| **`zegen`** | interest bar, need not named | *Needed* (what is needed) | `egel` *egg* |
+| **`zegen`** | interest bar, interest not named | *Some-interest* (what an interest requires) | `egel` *egg* |
 | **`zuhuhen`** | survival interest bar | *what safety needs* | `uhuhel` *shield* |
 | **`zonogon`** | relatedness interest bar | *what connection needs* | `onogol` *knot* |
 | **`zolozon`** | competence interest bar | *what getting it done needs* | `olozol` *toolbox* |
@@ -630,19 +630,19 @@ Tie **`ae`** against a interest bar is *enough*. Rank **`e`** is *too much*, and
 
 > `zadedal zegen zael gral.`
 >
-> [z-tea | z-Needed | z-equal-rank | g-amount]
+> [z-tea | z-Some-interest | z-equal-rank | g-amount]
 >
 > "There is enough tea."
 
 > `zadedal zegen zel gral.`
 >
-> [z-tea | z-Needed | z-rank/more | g-amount]
+> [z-tea | z-Some-interest | z-rank/more | g-amount]
 >
 > "There is too much tea."
 
 > `zadedal zegen zuel gral.`
 >
-> [z-tea | z-Needed | z-rank/less | g-amount]
+> [z-tea | z-Some-interest | z-rank/less | g-amount]
 >
 > "There is not enough tea."
 
@@ -658,7 +658,7 @@ To say **whose** need it is, put that person in `/b/` right after the shared sca
 
 > `zadedal zegen zael gral bululon.`
 >
-> [z-tea | z-Needed | z-equal-rank | [g-amount | b-Ululon]]
+> [z-tea | z-Some-interest | z-equal-rank | [g-amount | b-Ululon]]
 >
 > "There is enough tea for Ululon."
 
@@ -721,7 +721,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *Everyone* | `oloben` | `olobel` *globe* |
 | *challenge* | `gomonam` | |
 | *as-of.ledger* | `welerem` | |
-| *Needed* | `egen` | `egel` *egg* |
+| *Some-interest* | `egen` | `egel` *egg* |
 | *Survival-interest* | `uhuhen` | `uhuhel` *shield* |
 | *Relatedness-interest* | `onogon` | `onogol` *knot* |
 | *Competence-interest* | `olozon` | `olozol` *toolbox* |
@@ -784,7 +784,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 ::: details Show answer
 `zazawan zegen zael gabadum.`
 
-[z-Azawan | z-Needed | z-equal-rank | g-artistry]
+[z-Azawan | z-Some-interest | z-equal-rank | g-artistry]
 :::
 
 **8.** *Uhubun is too showy to be safe.*
