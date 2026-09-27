@@ -425,7 +425,7 @@ Agalan has no set phrase for *thank you*. Say that what the other person did **m
 |--------|-----|---------|
 | `…thal` | the help lasts | *that will stay with me* |
 | `…tham` | the help, horizon unstated (default) | *thank you* |
-| `…thar` | the help is for now | *thanks, that got me through* |
+| `…thar` | the help landed right when needed | *thanks, that got me through* |
 
 *Sorry* is about **their** interest, not yours. A lone unmet word would say *my* interest went unmet, so name whose interest in `/b/` right after it. The ending is the same [changeability](#interest-changeability) as on any unmet word, so it says how serious the harm is. (cue: sorry = *that detracted from your interest*)
 
