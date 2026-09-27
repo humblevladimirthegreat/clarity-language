@@ -122,16 +122,16 @@ describe("previewPhonemes", () => {
     const plan = previewPhonemes("zazawan guzumum.");
     assert.deepEqual(
       plan.words.map((w) => w.ipa),
-      ["zɑ.zɑ.wɑn", "ɡu.zu.mum"],
+      ["zä.zä.wän", "ɡu.zu.mum"],
     );
-    assert.equal(plan.ipaPhonemes, "zɑzɑwɑn ɡuzumum.");
+    assert.equal(plan.ipaPhonemes, "zäzäwän ɡuzumum.");
   });
 
   it("builds a word-spaced IPA phoneme stream", () => {
     const plan = previewPhonemes("zazawan vawalal.");
-    assert.equal(plan.ipaPhonemes, "zɑzɑwɑn vɑwɑlɑl.");
+    assert.equal(plan.ipaPhonemes, "zäzäwän väwäläl.");
     const yuon = previewPhonemes("yuon");
-    assert.equal(yuon.ipaPhonemes, "juon");
+    assert.equal(yuon.ipaPhonemes, "juo̞n");
   });
 
   it("includes punctuation cue between phoneme spans", () => {
@@ -146,7 +146,7 @@ describe("previewPhonemes", () => {
 
   it("keeps word spaces inside islands without comma between words", () => {
     const plan = previewPhonemes("^ zazawan vawalal ^");
-    assert.match(plan.ipaPhonemes, /zɑzɑwɑn vɑwɑlɑl/);
-    assert.doesNotMatch(plan.ipaPhonemes, /wɑn, vɑ/);
+    assert.match(plan.ipaPhonemes, /zäzäwän väwäläl/);
+    assert.doesNotMatch(plan.ipaPhonemes, /wän, vä/);
   });
 });

@@ -1,6 +1,8 @@
 /**
  * Grapheme → phoneme for native Agalan spelling.
  * IPA targets are from docs/grammar/phonology.md.
+ * Keep LETTER_IPA in sync with the vowel and consonant tables there:
+ * a change to either must update the other (and the tests here).
  */
 
 const VOWELS = new Set(["e", "u", "o", "a"]);
@@ -8,8 +10,8 @@ const VOWELS = new Set(["e", "u", "o", "a"]);
 const LETTER_IPA: Record<string, string> = {
   e: "e̞",
   u: "u",
-  o: "o",
-  a: "ɑ",
+  o: "o̞",
+  a: "ä",
   h: "ɦ",
   th: "ð",
   w: "w",

@@ -9,6 +9,8 @@ Pronounce each letter the same way every time. A **syllable** is one beat with o
 
 Write native Agalan in **lowercase**. Two vowel letters in a row are two syllables. Say each vowel as its own beat.
 
+<!-- Sync: the IPA in the vowel and consonant tables must match LETTER_IPA in src/tts/phonemes.ts. Change both together. -->
+
 ### Vowels
 
 Agalan has four vowel letters. Unlike in English where the pronounced sound depends on the surrounding letters, the Agalan vowels are always pronounced the same.
@@ -20,9 +22,9 @@ The cue words below are pronounced as in Standard American English.
 | `e` | /e̞/ <IpaPlay file="Mid_front_unrounded_vowel.ogg" label="e" /> | *bet* |
 | `u` | /u/ <IpaPlay file="Close_back_rounded_vowel.ogg" label="u" /> | *boot* (no glide, like Spanish *tú*) |
 | `o` | /o̞/ <IpaPlay file="Mid_back_rounded_vowel.ogg" label="o" /> | *Cambodia* (no glide, like spanish *todo*) |
-| `a` | /ɑ/ <IpaPlay file="Open_back_unrounded_vowel.ogg" label="a" /> | *father* |
+| `a` | /ä/ <IpaPlay file="Open_central_unrounded_vowel.ogg" label="a" /> | *spa* (like Spanish *casa*) |
 
-Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). /u/ and /ɑ/ by [Denelson83](https://commons.wikimedia.org/wiki/User:Denelson83) and except /e̞/ and /o̞/ by [TFighterPilot](https://commons.wikimedia.org/wiki/User:TFighterPilot).
+Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). /u/ and /ä/ by [Denelson83](https://commons.wikimedia.org/wiki/User:Denelson83) and except /e̞/ and /o̞/ by [TFighterPilot](https://commons.wikimedia.org/wiki/User:TFighterPilot).
 
 ### Consonants
 
@@ -156,7 +158,9 @@ These shape choices keep ordinary singing easier:
 
 | Constraint | Why it helps | How Agalan keeps it |
 |------------|--------------|---------------------|
-| Mostly mid-to-open vowels | Tight closed vowels shrink a comfortable high range | Three mid-to-open vowels (/e̞ o ɑ/) plus close /u/, which keeps the **u** ≈ undo vowel (negation, prohibition) clearly apart from **a** and **o** |
+| Mostly mid-to-open vowels | Close vowels lose support on high notes, so they shrink a comfortable high range | Three mid-to-open vowels (/e̞ o̞ ä/) plus close /u/; no /i/ |
+| Vowels far apart | Singers open vowels on high notes; well-spaced vowels stay recognizable when they shift | Four of the five classical singing vowels: central /ä/, mid /e̞/ and /o̞/, and corner /u/, which keeps the **u** ≈ undo vowel (negation, prohibition) clearly apart from **a** and **o** |
+| Pure vowels | A vowel that glides into another (English *go*, *day*) changes tone on a held note | Mid /e̞/ and /o̞/ sit away from the English glides /eɪ/ and /oʊ/, so learners hold them steady |
 | One vowel per letter | Sliding from one vowel to another mid-note forces the mouth to change | Stacked vowels = separate syllables |
 | Few consonant clusters | Clusters are harder to say quickly | Ordinary shape is consonant-then-vowel at the start of a syllable; limited clusters below |
 | Voiced preferred | Voiceless stops cut the note; singers often voice them anyway | Voiced preferred; unvoiced allowed as style only |
@@ -165,13 +169,15 @@ These shape choices keep ordinary singing easier:
 | Spelling = pronunciation | You do not memorize special readings | One path from letters to sound |
 | Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-r` (optional `-x`); stand-ins end in `-rl` / `-rm` |
 
+On high notes, **u** may open toward [ʊ] (as in *book*); that is still **u**.
+
 Legal clusters: left-hanging `gl-`; number-word role letter + `r`; lexical join **-l** / **-m** plus number marker `r` on a [kind morph](numeric-derivation.md); word-final `-lx` / `-mx` / `-nx` / `-rx`; stand-in `-rl` / `-rm`. The lexical join before `r` is the only syllable-final consonant inside a word.
 
 Try a short Agalan line quickly at a high comfortable pitch:
 
 `zazawan guzumum.`
 
-/ za.za.wan ɡu.zu.mum /
+/ zä.zä.wän ɡu.zu.mum /
 
 A line that piles closed vowels, clusters, and mid-word stops is harder to sustain even when it is only a little harder to speak:
 
