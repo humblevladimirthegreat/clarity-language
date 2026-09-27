@@ -398,6 +398,15 @@ function considerUnit(ctx: Ctx, unit: Unit): void {
     case "predicate":
       considerGPackage(ctx, unit.adj);
       return;
+    case "gCoord":
+      for (const part of unit.coord.parts) {
+        for (const item of part.items) {
+          if (item.kind === "adj") considerGPackage(ctx, item.adj);
+          else considerIsland(ctx, item.island);
+        }
+        if (part.join && ctx.question && isJoinGap(part.join)) ctx.gaps.push(part.join);
+      }
+      return;
     case "h":
       considerHUnit(ctx, unit.unit);
       return;

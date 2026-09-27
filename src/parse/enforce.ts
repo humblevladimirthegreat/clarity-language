@@ -31,6 +31,7 @@ import type {
   Clause,
   ClauseCoord,
   CoordShared,
+  GCoord,
   GPackage,
   HUnit,
   IslandUnit,
@@ -271,6 +272,7 @@ function islandHasBinder(island: IslandUnit): boolean {
       if (unit.kind === "island") return walk(unit.island.units);
       if (unit.kind === "vp") return unit.coord.parts.some((p) => p.join);
       if (unit.kind === "predicate") return unit.adj.word.family.kind === "joinMarker";
+      if (unit.kind === "gCoord") return true;
       if (unit.kind !== "np") return false;
       return unit.coord.parts.some(
         (p) => p.join || p.items.some((item) => item.kind === "island" && walk(item.island.units)),
@@ -283,7 +285,7 @@ function islandHasBinder(island: IslandUnit): boolean {
 function islandSlot(unit: Unit): string | undefined {
   if (unit.kind === "np") return unit.coord.level;
   if (unit.kind === "vp") return "v";
-  if (unit.kind === "predicate") return "g";
+  if (unit.kind === "predicate" || unit.kind === "gCoord") return "g";
   if (unit.kind === "span") return "span";
   return undefined;
 }
@@ -369,8 +371,20 @@ function enforceNp(coord: NpCoord): void {
       if (item.kind === "package") {
         if (item.package.glAdj) enforceGPackageAsOf(item.package.glAdj);
         for (const adj of item.package.adjs) enforceGPackageAsOf(adj);
+        if (item.package.adjCoord) enforceGCoord(item.package.adjCoord);
       }
       if (item.kind === "island") enforceIsland(item.island);
+    }
+    enforceSharedAsOf(part.shared);
+  }
+}
+
+function enforceGCoord(coord: GCoord): void {
+  enforceLeadingFence(coord.parts, (part) => part.items.length === 0);
+  for (const part of coord.parts) {
+    for (const item of part.items) {
+      if (item.kind === "adj") enforceGPackageAsOf(item.adj);
+      else enforceIsland(item.island);
     }
     enforceSharedAsOf(part.shared);
   }
@@ -391,6 +405,7 @@ function enforceStructure(units: Unit[]): void {
       if (isAsOfOverlay(unit.unit.word)) hAsOf += 1;
     }
     if (unit.kind === "predicate") enforceGPackageAsOf(unit.adj);
+    if (unit.kind === "gCoord") enforceGCoord(unit.coord);
     if (unit.kind === "np") enforceNp(unit.coord);
     if (unit.kind === "vp") enforceVp(unit.coord);
     if (unit.kind === "island") enforceIsland(unit.island);

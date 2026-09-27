@@ -8,6 +8,7 @@ import type {
   Clause,
   CoordShared,
   Ending,
+  GCoord,
   GPackage,
   IslandUnit,
   LexWord,
@@ -522,10 +523,41 @@ function walkNpItem(cursor: Cursor, item: NpItem, constructions: InspectConstruc
     const pack = item.package;
     if (pack.glAdj) walkGPackage(cursor, pack.glAdj, into);
     pushIndex(into, takeRaw(cursor, pack.head.raw));
-    for (const adj of pack.adjs) walkGPackage(cursor, adj, into);
+    if (pack.adjCoord) walkGCoord(cursor, pack.adjCoord, constructions, new Map(), into);
+    else for (const adj of pack.adjs) walkGPackage(cursor, adj, into);
     return;
   }
   walkIsland(cursor, item.island, constructions, into);
+}
+
+/** A joined `/ɡ/` list in surface order, recorded as one join construction like a noun list. */
+function walkGCoord(
+  cursor: Cursor,
+  coord: GCoord,
+  constructions: InspectConstruction[],
+  sharedRoles: Map<string, SharedRole>,
+  into: number[],
+) {
+  const indices: number[] = [];
+  const triggers: number[] = [];
+  const joins: LexWord[] = [];
+  for (const part of coord.parts) {
+    for (const item of part.items) {
+      if (item.kind === "adj") walkGPackage(cursor, item.adj, indices);
+      else walkIsland(cursor, item.island, constructions, indices);
+    }
+    if (part.join) {
+      const idx = takeRaw(cursor, part.join.raw);
+      pushIndex(indices, idx);
+      pushIndex(triggers, idx);
+      joins.push(part.join);
+    }
+    walkShared(cursor, part.shared, indices);
+  }
+  if (triggers.length > 0) {
+    constructions.push({ kind: "join", label: joinLabel(joins, sharedRoles), tokenIndices: indices, triggerIndices: triggers });
+  }
+  into.push(...indices);
 }
 
 function walkNp(
@@ -651,6 +683,9 @@ function walkUnit(
       break;
     case "predicate":
       walkGPackage(cursor, unit.adj, into);
+      break;
+    case "gCoord":
+      walkGCoord(cursor, unit.coord, constructions, sharedRoles, into);
       break;
     case "h":
       for (const mod of unit.unit.modifiers) pushIndex(into, takeRaw(cursor, mod.raw));

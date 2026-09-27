@@ -170,12 +170,13 @@ function isExistence(clause: Clause): boolean {
   const heads = first.coord.parts.flatMap((part) =>
     part.items.flatMap((item) => (item.kind === "package" ? [item.package] : [])),
   );
-  const described = rest.some((unit) => unit.kind === "predicate") || heads.some((pkg) => pkg.adjs.length > 0);
+  const described =
+    rest.some((unit) => unit.kind === "predicate" || unit.kind === "gCoord") || heads.some((pkg) => pkg.adjs.length > 0);
   // A name or resume with a /ɡ/ word is a property claim, not existence.
   const known = heads.some((pkg) => pkg.head.ending === "n" || pkg.head.ending === "r");
   if (described && known) return false;
   return rest.every(
-    (unit) => unit.kind === "predicate" || unit.kind === "hook" || (unit.kind === "np" && unit.coord.level === "b"),
+    (unit) => unit.kind === "predicate" || unit.kind === "gCoord" || unit.kind === "hook" || (unit.kind === "np" && unit.coord.level === "b"),
   );
 }
 

@@ -37,6 +37,8 @@ import type {
   BodyClause,
   Clause,
   CoordShared,
+  GCoord,
+  GItem,
   GPackage,
   HUnit,
   ImpliedForce,
@@ -777,6 +779,19 @@ function allowsImpliedSubject(word: LexWord): boolean {
 }
 
 function disambiguateClause(units: Unit[]): Unit[] {
+  // Verbless `zazawan godogol gul` / `zazawan garedel gumuzem gal`: the joined list is the predicate.
+  if (units.length === 1 && units[0]!.kind === "np") {
+    const coord = units[0].coord;
+    const part = coord.parts[0];
+    const item = coord.parts.length === 1 && part && !part.join && part.items.length === 1 ? part.items[0] : undefined;
+    if (item?.kind === "package" && item.package.adjCoord) {
+      const { adjCoord, ...pkg } = item.package;
+      return [
+        { kind: "np", coord: { level: coord.level, parts: [{ items: [{ kind: "package", package: { ...pkg, adjs: [] } }], shared: [] }] } },
+        { kind: "gCoord", coord: adjCoord },
+      ];
+    }
+  }
   // A trailing `/ɡ/` join fence (`zazawan godogol gul`) closes the predicate, not a second clause part.
   const rest = units.slice(1);
   const onlyGFences = rest.every((u) => u.kind === "predicate" && u.adj.word.family.kind === "joinMarker");
@@ -843,7 +858,7 @@ function mergeIslandJoins(units: Unit[]): Unit[] {
 }
 
 function finalizeClause(units: Unit[]): Clause {
-  const resolved = disambiguateClause(mergeIslandJoins(units));
+  const resolved = disambiguateClause(mergeAdjLists(mergeIslandJoins(units)));
 
   for (let i = 0; i < resolved.length - 1; i++) {
     const host = verbalDependentIn(resolved[i]!);
@@ -1098,6 +1113,121 @@ function flattenHUnits(cst: CstNode): Unit[] {
   return units;
 }
 
+function buildGCoord(cst: CstNode): GCoord {
+  return {
+    parts: childNodes(cst, "gCoordPart").map((part) => {
+      const { join, shared } = joinFromClose(partJoinClose(part, "gJoinClose"));
+      const items: GItem[] = childNodes(part, "gPackage").map((g) => ({ kind: "adj", adj: buildGPackage(g) }));
+      return { items, join, shared };
+    }),
+  };
+}
+
+/** `/ɡ/` material that can continue an adjective list: an adjective, a `/ɡ/` coord, or an island of those. */
+function isGMaterial(unit: Unit | undefined): boolean {
+  if (unit?.kind === "predicate" || unit?.kind === "gCoord") return true;
+  return unit?.kind === "island" && unit.island.units.length > 0 && unit.island.units.every(isGMaterial);
+}
+
+function hasGJoin(unit: Unit): boolean {
+  if (unit.kind === "gCoord") return true;
+  if (unit.kind === "predicate") return unit.adj.word.family.kind === "joinMarker";
+  return unit.kind === "island" && unit.island.units.some(hasGJoin);
+}
+
+type GToken = GItem | { kind: "join"; join: LexWord; shared: CoordShared[] };
+
+function gTokens(unit: Unit): GToken[] {
+  if (unit.kind === "island") return [{ kind: "island", island: unit.island }];
+  if (unit.kind === "predicate") {
+    return unit.adj.word.family.kind === "joinMarker"
+      ? [{ kind: "join", join: unit.adj.word, shared: [] }]
+      : [{ kind: "adj", adj: unit.adj }];
+  }
+  if (unit.kind === "gCoord") {
+    return unit.coord.parts.flatMap((part): GToken[] => [
+      ...part.items,
+      ...(part.join ? [{ kind: "join" as const, join: part.join, shared: part.shared }] : []),
+    ]);
+  }
+  return [];
+}
+
+/** Right-close parts from a flat run: each join closes the items since the previous join. */
+function gCoordFromTokens(tokens: GToken[]): GCoord {
+  const parts: GCoord["parts"] = [];
+  let items: GItem[] = [];
+  for (const token of tokens) {
+    if (token.kind === "join") {
+      parts.push({ items, join: token.join, shared: token.shared });
+      items = [];
+    } else items.push(token);
+  }
+  if (items.length > 0) parts.push({ items, shared: [] });
+  return { parts };
+}
+
+function gCoordAdjs(coord: GCoord): GPackage[] {
+  return coord.parts.flatMap((part) =>
+    part.items.flatMap((item) =>
+      item.kind === "adj"
+        ? [item.adj]
+        : item.island.units.flatMap((u) => (u.kind === "predicate" || u.kind === "gCoord" ? gTokens(u) : []))
+            .flatMap((t) => (t.kind === "adj" ? [t.adj] : [])),
+    ),
+  );
+}
+
+/**
+ * Gather a joined `/ɡ/` list into one structure (joins.md § right-close). After a noun whose package already
+ * has adjectives, the list is attributive on that package; elsewhere it is one predicate `gCoord` unit.
+ */
+function mergeAdjLists(units: Unit[]): Unit[] {
+  const out: Unit[] = [];
+  let i = 0;
+  while (i < units.length) {
+    const unit = units[i]!;
+    let j = i;
+    while (j < units.length && isGMaterial(units[j])) j += 1;
+    if (j === i) {
+      out.push(unit);
+      i += 1;
+      continue;
+    }
+    const run = units.slice(i, j);
+    if (!run.some(hasGJoin)) {
+      out.push(...run);
+      i = j;
+      continue;
+    }
+    const prev = out.at(-1);
+    const lastPart = prev?.kind === "np" ? prev.coord.parts.at(-1) : undefined;
+    const lastItem = lastPart && !lastPart.join ? lastPart.items.at(-1) : undefined;
+    // `/ɡ/` right after a noun describes it (as `npPackage` does); a bare leading join (`zodogol gal`) stays apart.
+    const first = run[0]!;
+    const leadingJoin = first.kind === "gCoord" && first.coord.parts[0]!.items.length === 0;
+    const attributive =
+      lastItem?.kind === "package" &&
+      !lastItem.package.adjCoord &&
+      (lastItem.package.adjs.length > 0 || !leadingJoin);
+    if (!attributive && run.length === 1 && run[0]!.kind === "gCoord") {
+      out.push(run[0]!);
+      i = j;
+      continue;
+    }
+    if (attributive && lastItem.kind === "package") {
+      const pkg = lastItem.package;
+      const tokens: GToken[] = [...pkg.adjs.map((adj): GItem => ({ kind: "adj", adj })), ...run.flatMap(gTokens)];
+      const adjCoord = gCoordFromTokens(tokens);
+      lastItem.package = { ...pkg, adjs: gCoordAdjs(adjCoord), adjCoord };
+    } else {
+      out.push({ kind: "gCoord", coord: gCoordFromTokens(run.flatMap(gTokens)) });
+    }
+    i = j;
+  }
+  return out;
+}
+
 function flattenGCoord(cst: CstNode): Unit[] {
   const parts = childNodes(cst, "gCoordPart");
   const units: Unit[] = [];
@@ -1172,7 +1302,10 @@ function expandUnits(cst: CstNode): Unit[] {
   const vp = childNodes(cst, "vpCoord")[0];
   if (vp) return [{ kind: "vp", coord: buildVpCoord(vp) }];
   const g = childNodes(cst, "gCoord")[0];
-  if (g) return flattenGCoord(g);
+  if (g) {
+    const coord = buildGCoord(g);
+    return coord.parts.some((part) => part.join) ? [{ kind: "gCoord", coord }] : flattenGCoord(g);
+  }
   const h = childNodes(cst, "hCoord")[0];
   if (h) return flattenHUnits(h);
   const hook = childNodes(cst, "hookUnit")[0];

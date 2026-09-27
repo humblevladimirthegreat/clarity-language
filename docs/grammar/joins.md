@@ -116,7 +116,7 @@ When English would deny the listed items, use vowel **u**. One item before `zul`
 
 > `gomonam gul.`
 >
-> g-challenge | g-not
+> [g-challenge | g-not]
 >
 > "not challenging."
 
@@ -910,6 +910,14 @@ When same-role words sit next to a smaller list, wrap that stretch and its join 
 > [z-Azawan | SCOPE[z-drinking-water | z-and] | z-and.open]
 >
 > "Azawan and (just water)."
+
+Adjective lists need an island to nest. A `/ɡ/` word right after a join is [SHARED](#scope-fence-p-join), so `garedel gumuzem gul gelem` makes *big* describe the whole denied list rather than start the outer one. Put the inner list in an island instead:
+
+> `zodogol ^ garedel gumuzem gul ^ gelem gal vawalal.`
+>
+> [z-dog | [SCOPE[g-red | g-small | g-not] | g-big | g-and]] | v-walk
+>
+> "A dog that is neither red nor small, and big, walks."
 
 **Compare with:** islands bound only join and `/h/` scope. An evidential or [*as-of*](relations.md#as-of) that should cover several clauses is written or resumed on each host instead.
 

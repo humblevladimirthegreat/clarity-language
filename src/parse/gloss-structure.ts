@@ -11,6 +11,7 @@
 import type {
   Clause,
   CoordShared,
+  GCoord,
   GPackage,
   HUnit,
   IslandUnit,
@@ -112,6 +113,7 @@ function shared(cur: Cursor, item: CoordShared): GlossNode | undefined {
 function npPackage(cur: Cursor, pack: NpPackage): GlossNode | undefined {
   const gl = pack.glAdj ? gPackage(cur, pack.glAdj) : undefined;
   const head = cur.take(pack.head);
+  if (pack.adjCoord) return group([gl, head, ...gCoordNodes(cur, pack.adjCoord)]);
   return group([gl, head, ...pack.adjs.map((adj) => gPackage(cur, adj))]);
 }
 
@@ -141,6 +143,10 @@ function fences<T>(
     acc = node ? [node] : [];
   }
   return acc;
+}
+
+function gCoordNodes(cur: Cursor, coord: GCoord): GlossNode[] {
+  return fences(cur, coord.parts, (item) => (item.kind === "adj" ? gPackage(cur, item.adj) : island(cur, item.island)));
 }
 
 function np(cur: Cursor, coord: NpCoord): GlossNode[] {
@@ -179,6 +185,8 @@ function unitNodes(cur: Cursor, unit: Unit): GlossNode[] {
       return np(cur, unit.coord);
     case "vp":
       return fences(cur, unit.coord.parts, (w) => cur.take(w));
+    case "gCoord":
+      return gCoordNodes(cur, unit.coord);
     case "predicate":
       return one(gPackage(cur, unit.adj));
     case "h":

@@ -461,7 +461,7 @@ A [tone mark](speech-moves.md#tone-marks) written right before the opening `^` c
 
 | Binder | Use inside the island |
 |--------|------------------------|
-| Scope-taking **`/h/`** or **`/th/`** | frames that **chunk** (prefer first in the island) |
+| Scope-taking **`/h/`** or **`/th/`** | frames that **chunk** (prefer first in the island; see the `/b/` exception below) |
 | Prefixed **join** | joins **only** matching-role material **inside** — [scope islands](joins.md#scope-islands-join) |
 
 `/h/` and a join may share one island (`^ huzurem zazawan zululon zam ^`).
@@ -479,11 +479,21 @@ A [tone mark](speech-moves.md#tone-marks) written right before the opening `^` c
 >
 > "Azawan and (just Ululon) saw …."
 
+A `/b/` right after an `/h/` word is hosted by it ([extra nouns](clause.md#unhosted-b)). To put a recipient `/b/` in an island, write it **before** the binder:
+
+> `zazawan ^ bululon huzurem ^ vezehel.`
+>
+> z-Azawan | SCOPE[b-Ululon | h-possibility] | v-tell
+>
+> "Azawan tells, possibly, Ululon."
+
+The word before the island must not be a `/ɡ/`, `/h/`, or `/th/` word either, or it would host that `/b/` across the edge.
+
 An island can hold part of a phrase. Here only *not small* is grouped, so **`gul`** denies *small* alone and **`gal`** adds it to *red*:
 
 > `zodogol garedel ^ gumuzem gul ^ gal vawalal.`
 >
-> [z-dog | g-red] | SCOPE[g-small | g-not] | g-and | v-walk
+> [z-dog | [g-red | SCOPE[g-small | g-not] | g-and]] | v-walk
 >
 > "A dog that is red and not small walks."
 

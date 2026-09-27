@@ -227,7 +227,17 @@ export type NpHead = LexWord;
 export type NpPackage = {
   glAdj?: GPackage;
   head: NpHead;
+  /** Every adjective on the head, flat (including those inside `adjCoord` islands). */
   adjs: GPackage[];
+  /** Present when the adjectives form a joined list (`garedel gumuzem gul gelem gal`): order and fences. */
+  adjCoord?: GCoord;
+};
+
+export type GItem = { kind: "adj"; adj: GPackage } | { kind: "island"; island: IslandUnit };
+
+/** A `/ɡ/` list with right-close fences, attributive (on a noun package) or predicate (its own unit). */
+export type GCoord = {
+  parts: { items: GItem[]; join?: LexWord; shared: CoordShared[] }[];
 };
 
 export type HUnit = {
@@ -292,7 +302,8 @@ export type Unit =
   | { kind: "span"; span: SpanUnit }
   | { kind: "writingSpan"; word: LexWord }
   | { kind: "island"; island: IslandUnit }
-  | { kind: "clauseCoord"; coord: ClauseCoord };
+  | { kind: "clauseCoord"; coord: ClauseCoord }
+  | { kind: "gCoord"; coord: GCoord };
 
 export type Clause = {
   units: Unit[];
