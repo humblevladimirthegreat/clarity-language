@@ -531,6 +531,36 @@ To **ask** for permission, put the clause under [ask](questions.md#question): `y
 
 **Compare with:** [prescription](#sake-force) **`the`** says the act *ought* to serve a sake; permission only says the act is *allowed*. [Ability](intention.md#incapability) says someone *can* do it; permission says whether they *may*.
 
+### Requirement (`themehol` / `themehom` / `themehor`) {#requirement}
+
+English *must* / *has to* / *is supposed to* puts a demand on an act without naming a sake. Put **`themehol`**, **`themehom`**, or **`themehor`** on the clause: stance **`th`** on the root **`emeho`** (📝 *memo*). The endings follow permission. Use **-l** when a rule, policy, or law requires it. Use **-m** when a person demands it; that person is the speaker unless a hosted `/b/` names someone else. Use **-r** when nothing is written and no one demands it, but people expect it. If you do not know, use **-m**.
+
+> `zazawan vowogal themehol.`
+>
+> z-Azawan | v-walk | th-REQUIRE-rule
+>
+> "Azawan has to walk (the rules say so)."
+
+> `zahaben vehahel themehom balahen.`
+>
+> z-Ahaben | v-sit | [th-REQUIRE-demanded | b-Alahen]
+>
+> "Alahen makes Ahaben sit."
+
+> `zalahen vezebal themehor.`
+>
+> z-Alahen | v-sleep | th-REQUIRE-expected
+>
+> "Alahen is supposed to sleep."
+
+| Agazan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`themehol`** | a rule, policy, or law requires it | *must* / *is required to* | **-l** ≈ locked in (on paper) |
+| **`themehom`** | a person demands it (speaker, or the `/b/`) (default) | *has to* / *I need you to* | **-m** ≈ a person's word |
+| **`themehor`** | custom expects it; no rule, no one demanding | *is supposed to* | **-r** ≈ light (no word given) |
+
+**Compare with:** [prescription](#sake-force) **`the`** says the act *ought* to serve a named sake, a reason you can check. Requirement says only that a rule, a person, or custom demands it. A [command](speech-moves.md#speech-act-beginner) **`yel`** is the speaker telling the listener now; **`themehom`** reports a demand, which may be someone else's.
+
 ### Consent (`thuxegal` / `thuxegam` / `thuxegar`) {#consent}
 
 Consent is permission from **the one the act happens to**: their body, their things, their time. Put **`thuxegal`**, **`thuxegam`**, or **`thuxegar`** on the clause: stance **`th`**, then role vowel **`u`** (the one it happens to), mid-word **`x`**, and the root **`ega`**. The hosted `/b/` names who consents. That slot holds one noun; when several people are affected, fill it with a [plural](plurality.md) or a [join](joins.md). The actor's own consent is always implied, so **with no `/b/` the only person affected is the actor**, and the clause reads as *letting yourself*.
@@ -863,6 +893,33 @@ z-Azawan | v-scream | [th-CONSENT-refused | b-Alahen]
 z-church | g-competence-met-any-term-INTERNAL-FLOWING
 
 *Quietly proud of my church:* competence met; held inside; flowing.
+:::
+
+**14.** `zazawan venehal themehol.`
+
+::: details Show answer
+
+z-Azawan | v-kneel | th-REQUIRE-rule
+
+*Azawan has to kneel (the rules say so).*
+:::
+
+**15.** `zahaben vahehal themehom balahen.`
+
+::: details Show answer
+
+z-Ahaben | v-hush | [th-REQUIRE-demanded | b-Alahen]
+
+*Alahen makes Ahaben hush.*
+:::
+
+**16.** `zalahen vabayel themehor.`
+
+::: details Show answer
+
+z-Alahen | v-bow | th-REQUIRE-expected
+
+*Alahen is supposed to bow.*
 :::
 
 ## See also

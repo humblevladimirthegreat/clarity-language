@@ -332,7 +332,7 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 |--------|-----|---------|
 | noun antecedent, `/v/` … `-r` | the same action again, now involving that entity | *do the same to / with it* |
 | noun antecedent, `/ɡ/` … `-r` | recast as kind | *of that kind* (not possession) |
-| verb antecedent, noun … `-r` | recast as event | *that action / event* (the doing, not the doer; [role compounds](roles.md#role-compounds) name agent/place/patient/recipient) |
+| verb antecedent, noun … `-r` | recast as event | *that action / event*: the same event, with its participants (*that* = what just happened; the doing, not the doer; [role compounds](roles.md#role-compounds) name agent/place/patient/recipient) |
 | verb antecedent, `/h/` … `-r` | recast as manner | *by doing so* / *thereby* |
 | adjective antecedent, noun … `-r` | recast as entity | *the … one* / *that quality* |
 

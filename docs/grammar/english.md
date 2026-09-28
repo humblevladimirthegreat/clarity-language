@@ -7,7 +7,7 @@ These pages are recipes, not lessons. Each one shows how forms you already learn
 | [People, things and places](say-people-places.md) | *as for X*, *whose*, *different from*, office titles, *do the same to it* |
 | [Amounts, sizes and time](say-amounts.md) | *from least to most*, *both are*, *two meters taller*, *most of*, *25% of*, units, dates |
 | [Reasons, knowledge and plans](say-reasons.md) | *because* vs *if*, *would have*, habits, *as of 22 July* |
-| [Asking and answering](say-questions.md) | *You saw WHAT?*, *asks who*, *Just X?* / *How about X?* |
+| [Asking and answering](say-questions.md) | *You saw WHAT?*, *asks who*, *Just X?* / *How about X?*, *What a big dog!*, *by the way* |
 
 ## One English word, many jobs {#many-jobs}
 

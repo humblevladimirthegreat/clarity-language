@@ -64,6 +64,40 @@ English *well…* warns that the answer is not the plain *yes* the question hope
 
 **Compare with:** **`yuel`** says the claim is false. **`yuam`** says the question does not quite fit, and the body says what happened instead.
 
+## Exclamations and side remarks {#reactions}
+
+### *What a big dog!* {#exclamations}
+
+**Needs:** [tone marks](speech-moves.md#tone-marks) · [extra detail on an adjective](clause.md#adjective-detail-w) · [interjections](speech-moves.md#interjections)
+
+English *What a big dog!* and *How big the dog is!* say the dog is very big and that you feel strongly about it. Say the degree with *very* **`welavam`** and the feeling with the tone mark **`!`** before the sentence. Use **`!!`** for more.
+
+> `! zodogal welavam gelavam.`
+>
+> ! | z-dog | [w-very | g-big]
+>
+> "What a big dog!"
+
+For a bare *So big!*, give the reaction as an interjection with **`!`**:
+
+> `!yelavan.`
+>
+> !y-Elavan
+>
+> "So big!"
+
+### *By the way* {#by-the-way}
+
+**Needs:** [asides](spans.md#asides)
+
+English *by the way* adds a side remark, then goes back to the main point. Put an aside **`th(`** … **`)`** at the start of the sentence. The closing fence is the return to the main point.
+
+> `th(zalahen vezebal) zazawan vowogal.`
+>
+> th-ASIDE[z-Alahen | v-sleep] | z-Azawan | v-walk
+>
+> "By the way, Alahen is asleep. Anyway, Azawan walks."
+
 ## Offers and confirmations with joins {#join-questions}
 
 ### Single-item and standalone inventory

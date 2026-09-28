@@ -77,29 +77,7 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 
 ### A. Clause types
 
-| ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
-|----|---------------------------|---------------|---------|-------------|----------|----------|
-| G-A01 | declarative (*Azawan walks.*) | `zazawan vowogal.` (omissible `yal`); soft `yam` — speech-moves.md#speech-act-beginner, #speech-act | covered | speech-moves.md | — | — |
-| G-A02 | yes/no question (*Does Azawan walk?*) | `yol zazawan vowogal.` / soft `yom`; optional `?` — questions.md#question, #question-tone | covered | questions.md | — | — |
-| G-A03 | negative yes/no (*Didn't Azawan run?*) | `yol zazawan varahal vul.` (post-verb `vul`); answers `yael` / `yuel` — questions.md#confirming-a-negative | covered | questions.md | Fix page examples: they write `yol zazawan vul varahal.`, which the parser rejects (see Notes) | — |
-| G-A04 | alternative question (*the teapot or the dog?*) | closed-menu list join under question: `yol zazawan dedebul dodogal dol vahahal.` — say-questions.md#single-item-standalone-inventory | covered | questions.md | Advanced only; could get one Intermediate example | — |
-| G-A05 | wh- *who / what / do what / what happened* | join **-r** blank: `yol zar vowogal.`, `yol var.`, `yol xar.`; *what else* `zur`; fill-all `yol zar vahahal dar.` — questions.md#fill-ask-r, #fill-all | covered | questions.md | — | — |
-| G-A06 | *which (X)* | `yol zegehul zar.`; list + `…ar` = *which of these*; `…er` *which first* — questions.md#fill-ask-arity | covered | questions.md | — | — |
-| G-A07 | *where / where from / in what* | hook + `bar`: `yol zahaben vowogal ol bar.` — questions.md#where | covered | questions.md | — | — |
-| G-A08 | *when* | `yol zazawan vowogal har.` — questions.md#when | covered | questions.md | — | — |
-| G-A09 | *how* (manner / means: *How does Azawan walk?*) | `yol zazawan vowogal homem bar.`; means `ael bar` | covered | questions.md#how, hooks.md#extra-noun-intermediate | — | — |
-| G-A10 | *how* + degree (*How big is the dog?*, *how fast*) | `yol zodogal w=+ gelavam.` / `yol zodogal varahal w=+ hadehom.`; exact size via measure blank `bezezem g=+` — [numbers#how-big](../grammar/numbers.md#how-big) | covered | numbers.md | — | — |
-| G-A11 | *why* / *what for* | `theram bar` / `hagom bar` / `thodom bar` | covered | questions.md#why | — | — |
-| G-A12 | *how many / how much* | digitless number **-r** is a blank like standalone join **-r**: `yol zazawan dagadalx g=+ vahahal.` *How many cats?*; `g=#` *which place?*, `d=_` *what number?*; statement = *some number*. Resume needs a digit (`g=+3`) — [numbers#how-many](../grammar/numbers.md#how-many) | covered | numbers.md | — | — |
-| G-A13 | imperative (*Walk!*) | `yel vowogal.`; addressee explicit `yel zohen vowogal.` (roles.md examples) — speech-moves.md#speech-act-beginner | covered | speech-moves.md | — | — |
-| G-A14 | polite request (*Please walk.*) | `yem vowogal.` — speech-moves.md#speech-act | covered | speech-moves.md | — | — |
-| G-A15 | *let's* (*Let's walk.*) | `yem zohan vowogal.` / `yum zohan …` | covered | speech-moves.md#speech-act | — | — |
-| G-A16 | negative imperative (*Don't walk.* / *Please don't*) | `yul vowogal.`, `yum`, emphatic `yul yul` — speech-moves.md#emphatic-prohibition | covered | speech-moves.md | — | — |
-| G-A17 | exclamative (*What a big dog!*, *How big the dog is!*) | tone + intensifier: `! zodogal welavam gelaval.` — speech-moves.md#tone-marks | awkward | speech-moves.md | Teach the `!` + `welavam` route as the exclamative pattern; optionally a degree-exclamation (`/y/` + adjective, e.g. `yelaval` parses as y-elephant) giving *So big!* | P2 |
-| G-A18 | tag question (*Azawan walks, doesn't he? / right?*) | `zazawan vowogal. yol yael.` (parser change 2026-09-26) | covered | questions.md#polar-stance | — | — |
-| G-A19 | echo question (*You saw WHAT?*, *Azawan did?*) | `yol zohen vahahal ?!dar.` | covered | say-questions.md#echo | — | — |
-| G-A20 | rhetorical question (*Who cares?*, *Isn't it obvious?*) | `yal yol …` (answer held; soft `yam yol` = musing) — [questions#rhetorical](../grammar/questions.md#rhetorical) | covered | questions.md | — | P2 |
-| G-A21 | wondering / self-question (*I wonder if…*) | `yom zalahen vezebal.` — questions.md#question | covered | questions.md | — | — |
+No open rows.
 
 **Notes**
 
@@ -114,46 +92,11 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
 | G-B01 | grammatical tense (past / present / future marking on the verb) | No tense letter, stated as a design choice: "Verbs have **no past or future letter**" ([knowing#evidentiality](../grammar/knowing.md#evidentiality)); "Neither word is a past tense" ([why-agazan](../grammar/why-agazan.md)); morph glosses never carry tense ([glosses](glosses.md), line ~270). Time comes from channel, *before* / *after*, clock, forecast (channel + `b+`) | by design | knowing.md | Add to the By design table as D-nn so it is not raised again | — |
-| G-B02 | simple past (*Azawan walked*) | WITNESSED `zazawan thunom vowogal.`, or a when-frame (`hulam barl`, clock `/h/`) ([knowing#live-vs-memory](../grammar/knowing.md#live-vs-memory)) | covered | knowing.md | — | — |
 | G-B03 | past with no evidential claim (plain narration: *Yesterday Azawan walked*, told with no source) | channel or date: `thunom` / `themam` / `thazom` (*per the tale*, for narration), or a clock / date | by design | knowing.md | Neutral past is deliberately absent (see D-10). No *earlier* adverb and no bare *before now*: *before* / *after* always name a landmark | — |
-| G-B04 | perfect *has done* (result still relevant) | RESIDUE `zazawan thamom vowogal.` ([knowing#residue](../grammar/knowing.md#residue)) | covered | knowing.md | — | — |
 | G-B05 | experiential perfect *has ever done / has never done* | `har` *sometimes* / bare `hal` *never* are restrictor habits, not "at least once in a lifetime" ([restrictors](../grammar/restrictors.md)) | awkward | restrictors.md | Add a documented reading: `har` + WITNESSED = *has at some point*; show *never has* with `hal` | P2 |
-| G-B06 | progressive *is walking* | Unmarked verb; LIVE `zazawan thodum vowogal.` for "going on in view"; *while* `hehum barl` for a frame ([glosses](glosses.md)) | covered | knowing.md | — | — |
-| G-B07 | habitual (*walks every day*, *usually*) | `zazawan hual vowogal.` ([restrictors](../grammar/restrictors.md)); motive habit `…thom` + `hual` | covered | restrictors.md | — | — |
-| G-B08 | *used to* (former habit) | `zazawan hual vowogal thunem.` FORMER ([knowing#former-climate](../grammar/knowing.md#former-climate)) | covered | knowing.md | — | — |
-| G-B09 | *about to* / imminent | channel + just-after offset: `thevem b+e- verehel.` ([knowing#dated-channel](../grammar/knowing.md#dated-channel)) | covered | knowing.md | — | — |
-| G-B10 | *just* (recent past: *has just left*) | channel + just-before offset: `zazawan thunom b-e- vowogal.` | covered | knowing.md | — | — |
-| G-B11 | *still* (continuing state/action) | `/h/` STILL `hagem` (`/w/` on one adjective); ending = permanence, **-l** not expected to change back / **-m** could change / **-r** only for now — [knowing#phasal](../grammar/knowing.md#phasal) | covered | knowing.md | — | — |
-| G-B12 | *already* | `/h/` ALREADY `huham` (`/w/` on one adjective); ending = permanence, **-l** not expected to change back / **-m** could change / **-r** only for now — [knowing#phasal](../grammar/knowing.md#phasal) | covered | knowing.md | — | — |
-| G-B13 | *not yet* | `/h/` NOT-YET `hezum` (`/w/` on one adjective); ending = permanence, **-l** not expected to change back / **-m** could change / **-r** only for now — [knowing#phasal](../grammar/knowing.md#phasal) | covered | knowing.md | — | — |
-| G-B14 | *anymore* / *no longer* | `/h/` NO-LONGER `hewem` (`/w/` on one adjective); ending = permanence, **-l** not expected to change back / **-m** could change / **-r** only for now — [knowing#phasal](../grammar/knowing.md#phasal) | covered | knowing.md | — | — |
 | G-B15 | *begin / stop / finish* doing (phase verbs) | Content roots only: `vazadal` *stop* + object `dowogam` (`zazawan vazadal dowogam.` parses); `eveha` *terminus*; nothing for *start*. Using an action noun as the object is not taught | awkward | clause.md | Teach event-noun objects for phase verbs and give *start* a root | P2 |
 | G-B16 | *again* / repeat | `/v/` + **-r** on a noun (settled: *do the same action again*); content `vegezol` *repeat* as a co-verb (`zazawan vegezol vowogal.` parses, not taught) | awkward | pronouns.md | Teach *again* as an `/h/` on `erebe` (`hegezom`) with the verb | P2 |
-| G-B17 | *can* (ability) | `zazawan vezehexal.` ([intention#can](../grammar/intention.md#can)); `xe`/`xo`/`xu` for *can't* | covered | intention.md | — | — |
-| G-B18 | *could* (past ability, *could swim as a child*) | `zazawan vezehexal thunem.` | covered | intention.md#can | — | — |
-| G-B19 | *may / might / could* (epistemic) | MAY `zazawan thovom vowogal.` ([knowing#may](../grammar/knowing.md#may)) | covered | knowing.md | — | — |
-| G-B20 | *may / can* (permission: *you may go*) | `zazawan vowogal thegam.` (granted) / `thegal` (rule allows) / `thegar` (tolerated); negatives `therem` / `therel` / `therer` — [values#permission](../grammar/sakes.md#permission) | covered | sakes.md | — | — |
 | G-B21 | *must* (obligation) | Firm command `yel`, or need-linked prescription `…thel`/`…them`/`…ther` ([values#sake-force](../grammar/sakes.md#sake-force)). By design, a bare *must* without a named sake is avoided ([why-agazan](../grammar/why-agazan.md)) | by design | sakes.md | — | — |
-| G-B22 | *must* (epistemic: *must be home*) | Evidentials such as clue-based inference ([knowing#evidentiality](../grammar/knowing.md#evidentiality)) or a stance number `th+95` | covered | knowing.md | — | — |
-| G-B23 | *should / ought to* | `zazawan vezebel thonathem.` ([values#sake-force](../grammar/sakes.md#sake-force)); a forecast *should* uses a channel + `b+` ([knowing#forecast](../grammar/knowing.md#forecast)) | covered | sakes.md | — | — |
-| G-B24 | rules or norms not tied to a sake (*you should signal before turning*, *passengers must…*) | Prescription requires a named sake; a plain rule without one has only a command | awkward | sakes.md | Document which sake to pick for social or legal rules, or show `yel` with generic `onu` | P2 |
-| G-B25 | *would* (counterfactual / conditional) | as-of + RESIDUE / forecast (channel + `b+`) ([causation](../grammar/causation.md)); NOTIONAL for hypotheticals | covered | causation.md | — | — |
-| G-B26 | *would* (past habitual, polite *would you…*) | Past habit = FORMER; polite request = soft `yem` ([speech-moves](../grammar/speech-moves.md)) | covered | speech-moves.md | — | — |
-| G-B27 | *need to / have to* | motive `zazawan vowogal thonathom.` ([values#sake-preference](../grammar/sakes.md#sake-preference)); necessary condition `ebo` | covered | sakes.md | — | — |
-| G-B28 | *had better* (warning advice) | offered prescription `…them` + *so that … not* (`hagom burl`) | covered | sakes.md | — | — |
-| G-B29 | *will* / *going to* (future) | forecast = channel + `b+` (`thabem b+ verehel.`; RECORDED `+` = scheduled) / PLAN `thumam`; DECISION `eha` | covered | knowing.md, intention.md | — | — |
-| G-B30 | passive with agent (*seen by Azawan*) | Front the object: `dagadal zazawan vahahal.` ([clause#word-order-emphasis](../grammar/clause.md#word-order-emphasis), [english#by](../grammar/english.md)) | covered | clause.md | — | — |
-| G-B31 | agentless passive (*the cat was seen*, *mistakes were made*) | `dazawan vahahal.` | covered | clause.md#no-subject | — | — |
-| G-B32 | causative *make X do* (force) | CAUSE with a hosted `/b/` causer and no pole: `zalahen vezebel thegem bazawan.` (*Azawan makes Alahen tell*) — [causation#make](../grammar/causation.md#make); pairs with permission *let* (`thegam` + `/b/`) | covered | causation.md | — | — |
-| G-B33 | causative *let X do* (permission) | Permission **-m** with a hosted `/b/` grantor: `zazawan vowogal thegam balahen.` (*Alahen lets Azawan walk*) — [values#permission](../grammar/sakes.md#permission) | covered | sakes.md | — | — |
-| G-B34 | causative *have / get X to do* (arrange, persuade) | Tell + *to* stand-in: `vezebel … dorl`/`derl` with the next sentence ([dependents](../grammar/dependents.md)) — *asks X to* | covered | dependents.md | — | — |
-| G-B35 | phrasal verbs, directional (*walk out*, *go in*, *climb on*) | fused hook compounds `zazawan dezedel vowogalul.` ([hooks#hook-compounds](../grammar/hooks.md#hook-compounds)) or free hook + `/b/` | covered | hooks.md | — | — |
-| G-B36 | idiomatic phrasal verbs (*give up*, *put up with*, *figure out*) | Pick a content root (`azada` *cessation* for *give up*); no systematic route | covered | lexicon | — | — |
-| G-B37 | light-verb constructions (*take a walk*, *have a look*, *make a decision*) | Use the content verb (`vowogal`); DECISION `eha`. English light verbs are not needed | covered | clause.md | — | — |
-| G-B38 | reflexive (*Azawan sees herself*) | `zazawan vahahal dazar.` | covered | pronouns.md#resume-r | — | — |
-| G-B40 | *try* (attempt, with no order implied: *Azawan tries the workaround*) | ATTEMPT **`thezube-`** + verb; **-l** committed / **-m** unstated / **-r** trial run ([intention#try](../grammar/intention.md#try)) | covered | intention.md | — | — |
-| G-B41 | fallback condition (*if A, else if B*: B applies only when A fails) | attempt + mid clause sequence **`xon`** *failing that*: `zazawan thudor vowogal xon zazar vezehel.` ([intention#fallback](../grammar/intention.md#fallback)) | covered | intention.md | — | — |
-| G-B39 | reciprocal (*Azawan and Alahen see each other*) | `zazawan zalahen zal vahahal hewum.` (`ewu` *reciprocity* on `/h/`; **-l** strictly pairwise) — pronouns.md#reciprocal | covered | pronouns.md / join-across-roles.md | — | — |
 
 **Notes**
 
@@ -167,45 +110,11 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
-| G-C01 | indefinite *a / an* (first mention) | bare first-mention **-l** / **-m**: `zodogal vowogal.` *A dog walks.* — [word-endings#first-mention-concrete-l](word-endings.md) | covered | word-endings.md | — | — |
 | G-C02 | *the* for an already-mentioned referent | resume **-r**: `zodogal vowogal. zodor vehahel.` — [pronouns#resume-r](pronouns.md#resume-r) | by design (D-03) | pronouns.md | — | — |
-| G-C03 | *the* for a unique / situational referent never mentioned (*the sun*, *the door*, *the kitchen*) | *the sun* = unique **-n** `zazahon vowogal.`; situational *the door* = plain **-l**: Agazan does not mark *the* vs *a*, so context supplies definiteness (decided 2026-09-26) | covered | word-endings.md | State the **-l** reading on word-endings.md if learners ask | — |
-| G-C04 | *some* + count noun (*some cats*) | indefinite group **-lx**: `zagadalx vehahel.` — [plurality#beginner](plurality.md#beginner) | covered | plurality.md | — | — |
-| G-C05 | *some* = a specific unknown one (*some person*) | join **-r**: `zebezal zar vowogal.` — [joins#unspecified-member-r-phrase](joins.md#unspecified-member-r-phrase) | covered | joins.md | — | — |
-| G-C06 | *some* + mass noun (*some bread / water*) | `g+` on a mass noun = non-zero amount: `zedehel g+ vehahel.` ([numbers#mass-some](../grammar/numbers.md#mass-some)) | covered | numbers.md | — | — |
-| G-C07 | free-choice *any* (*any cat will do*) | `zagadal zor vehahel.` — [joins#universals-domains-generics](joins.md#universals-domains-generics) | covered | joins.md | — | — |
-| G-C08 | NPI *any* (*I don't see any dogs*) | negation join: `zazawan dual vahahal.` / `zazawan dodogal dul vahahal.`; not explicitly mapped from NPI *any* | covered | joins.md | Add an English-side note (*not … any* = **u** join) in english.md | — |
-| G-C09 | demonstrative *this / that* (anaphoric, *that dog* just mentioned) | resume **-r** (`zodor`) — [pronouns#how-english-approximates--r](pronouns.md) | covered | pronouns.md | — | — |
-| G-C10 | deictic demonstrative *this X (here) / that X (there)*, proximal vs distal, pointing at an unmentioned thing | `zodogal om bamun vehahel.` *this dog (by me)*; `om bohen` *that (by you)*; `um bohan` *yonder* — [hooks#deixis](../grammar/hooks.md#deixis) | covered | hooks.md | — | — |
-| G-C11 | *all* (of a listed / known set) | closed **-l** and-list: `zazawan zalahen zal vowogal.` — [joins#and-lists-a](joins.md#beginner) | covered | joins.md | — | — |
-| G-C12 | *all / every K* (universal over a kind) | `zual gagadal vehahel.` (open `zuam` for soft generic) — [joins#universals-domains-generics](joins.md#universals-domains-generics) | covered | joins.md | — | — |
-| G-C13 | *all the cats (here)* — universal over a situational group | `zual gagadal` + place hook: `zual gagadal ol bahazal vehahel.`; no hook = the situation's cats; kind takes no **-x** — [joins#universals-domains-generics](../grammar/joins.md#universals-domains-generics) | covered | joins.md | — | — |
-| G-C14 | *each* (distributive, one at a time) | `zual gagadal vehahel.` distributive vs `vehahelx` collective | covered | joins.md#universals-domains-generics | — | — |
-| G-C15 | *both* | two-item **`a`** join: `zazawan zalahen zal vowogal.` — [comparatives#distributive-both-are-adj](comparatives.md) | covered | joins.md | — | — |
-| G-C16 | *either* (one of two) | `zazawan zalahen zol vowogal.` (pick one); free-choice `zor` — [joins#choice-o](joins.md#beginner) | covered | joins.md | — | — |
-| G-C17 | *neither* / *none of* | `zazawan zalahen zul vowogal.` — [joins#negation-u](joins.md#negation-u) | covered | joins.md | — | — |
-| G-C18 | *none* / *nobody* / *no X* (standalone, or *no cats* over a kind) | `zul gagadal vehahel.` | covered | joins.md#universals-domains-generics | — | — |
-| G-C19 | *few* (small, "not many" — negative orientation) | amount rank below a named bar: `zagadalx zahen zuel g+.` *few cats* ([comparatives#vague-amounts](../grammar/comparatives.md#vague-amounts)) | covered | comparatives.md | — | — |
-| G-C20 | *a few* / *several* (small positive count) | soft digitless count `g~+`: `zagadalx g~+ vehahel.` ([numbers#a-few](../grammar/numbers.md#a-few)) | covered | numbers.md | — | — |
-| G-C21 | *many / much / a lot of* | amount rank above a named bar: `zagadalx zahen zel g+.` ([comparatives#vague-amounts](../grammar/comparatives.md#vague-amounts)) | covered | comparatives.md | — | — |
-| G-C22 | mass *little* (*little water*) | same as *few*: `zedehel zahen zuel g+.` ([comparatives#vague-amounts](../grammar/comparatives.md#vague-amounts)) | covered | comparatives.md | — | — |
-| G-C23 | *most (of the X)* | `zagadalx g+50% guel vehahel.` (more than half — [numbers-applied#most](../grammar/say-amounts.md#most)) | covered | numbers-applied.md | — | — |
-| G-C24 | quantity *enough (bread)* | tie against a sake bar: `zedehel zugen zael g+.`; whose sake = `/b/` after the scale ([comparatives#sake-benchmarks](../grammar/comparatives.md#sake-benchmarks)) | covered | comparatives.md | — | — |
-| G-C25 | *too many / too much* (excess) | rank above a sake bar (`zedehel zugen zel g+.`) or above *my standard* (`zomen`) ([comparatives#sake-benchmarks](../grammar/comparatives.md#sake-benchmarks)) | covered | comparatives.md | — | — |
-| G-C26 | possessive *'s* / *of* (ownership) | `zodogal gegabem bazawan vowogal.` — [joins#scope-fence-p-join](joins.md#scope-fence-p-join); speaker *my* via values need on `/ɡ/` | covered | joins.md (owner) | Ownership is taught only inside joins.md SHARED section; give it a home in relations.md#of-relations | — |
-| G-C27 | *'s* for body part / whole–part (*Alahen's hand*) | `dahadal gabom balahen` — [relations#of-relations](relations.md#of-relations) | covered | relations.md | — | — |
-| G-C28 | *'s* for kin / social relations (*Azawan's sister, friend, boss*) | kin: generation ordinal + `/b/` anchor ([numbers-applied#kin-generations](../grammar/numbers-applied.md#kin-generations)); social: tie root on `/ɡ/` **-m** + hosted `/b/` (`zalahen gemezem bazawan` *Azawan's friend*; `gagawum` *boss of*; `gohoham` *partner of*) — [relations#social-relations](../grammar/relations.md#social-relations). 👑 `agawu` gained abstract *leadership* 2026-09-27 | covered | relations.md | — | — |
 | G-C29 | double genitive (*a friend of Azawan's*) | depends on G-C28; for things `dubugal gegabem bazawan` (*a book of Azawan's*) = same as *'s*, fine | awkward | relations.md | Resolved by G-C28 | P2 |
 | G-C30 | stacked possessives (*Azawan's dog's owner*) | chained hosts parse (`zodogal gegabem bazawan gegabem balahen`) but attachment of the second `gegabem` is not taught | awkward | joins.md / relations.md | Teach chaining order of stacked of-relations | P3 |
-| G-C31 | partitive of a container / material (*a cup of tea*, *a house of wood*) | `gaham` / `guwam` + `/b/` — [relations#of-relations](relations.md#of-relations) | covered | relations.md | — | — |
 | G-C32 | partitive portion of a mass (*a piece of bread*, *a slice*, *a bit of*) | none; `gabom` = constitutive part, not an arbitrary portion; measure phrases need a unit | missing | relations.md | Portion *of* relation (piece severed from a whole) beside `gabom` | P2 |
-| G-C33 | partitive of a set (*three of the cats*, *one of them*) | `zagarx g+3` | covered | say-amounts.md#percent-denominators | — | — |
-| G-C34 | noun–noun compounds, lexicalized (*bedroom*, *textbook*) | `data/lexicon-compounds.csv`: `zebedalahazal vehahel.` — [x-compounds#lexical-compounds](x-compounds.md#lexical-compounds) | covered | x-compounds.md | — | — |
-| G-C35 | noun–noun compounds, productive (*dog house*, *peanut butter*) | mid-word `x`: `zebeyexabedel vehahel.`; or two words / hosted relation — [x-compounds#compound-vs-separate](x-compounds.md#compound-vs-separate) | covered | x-compounds.md | — | — |
-| G-C36 | appositive (*Azawan, a teacher, walks*) | classification `/ɡ/` on the name: `zazawan gaxedehol vowogal.` — [predication#classification](predication.md) | covered | predication.md | Name *appositive* in english.md → predication | — |
-| G-C37 | identifying appositive (*my friend Azawan*, *the teacher, Azawan,*) | **`SAME`**: `zazawan zaxedehol gogal balahen`… or `zaxedehol gogal bazawan` — [predication#identity](predication.md#identity) | covered | predication.md | — | — |
 | G-C38 | generic reference (*Cats sit. / A cat is an animal.*) | `zual gagadal` (strict) / `zuam gagadal` (soft) — [joins#universals-domains-generics](joins.md#universals-domains-generics); habitual `hual` | by design (D-06) | joins.md | — | — |
-| G-C39 | specific vs non-specific indefinite (*I want a book — any / a particular one*) | specific unknown `dubugal dar`; free-choice `dubugal dor` (both parse) | covered | joins.md | — | — |
 
 **Notes**
 
@@ -220,31 +129,9 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
-| G-D01 | adjective stacking (*a small blue dog*) | several `/ɡ/` after the noun, or `gl-` before it: `zodogal glubuhal gamazam vowogal.` ([clause#adjectives-ɡ](clause.md#adjectives-ɡ), [#left-bound-adjectives](clause.md#left-bound-adjectives)) | covered | clause.md | — | — |
-| G-D02 | adjective order (size-before-colour rules) | no fixed order; a plain `/ɡ/` after a `/ɡ/`+`/b/` pair describes the `/b/` noun ([clause#complex-chaining](clause.md#complex-chaining)) | covered | clause.md | Add one line saying stacked plain adjectives come in any order | — |
-| G-D03 | intensifier *very* | `/w/` `welavam` before `/ɡ/`: `zodogal welavam gubuhal vowogal.` ([clause#adjective-detail-w](clause.md#adjective-detail-w)) | covered | clause.md | — | — |
-| G-D04 | *very* on a verb (*walks very quickly*) / *very much* on the verb | `welavam hadehom` | covered | clause.md#degree-w | — | — |
-| G-D05 | downtoners *slightly / a bit / somewhat* | `wamazam` | covered | clause.md#degree-w | — | — |
-| G-D06 | *quite / rather / fairly / pretty* (moderate degree) | `/w/` `wadeham` (medium-speaker root **`adeha`**, `m.w:quite`) — [clause#degree-w](../grammar/clause.md#degree-w) | covered | clause.md | — | — |
-| G-D07 | *extremely / overwhelmingly* | `wohahal` | covered | clause.md#degree-w | — | — |
-| G-D08 | *almost / nearly* (on a verb or adjective: *almost falls*, *almost empty*) | verb: `h-e-` (*almost*), `h~-e-` (*came close*, effort); adjective / adverb: `w-e-`; claim: `th-e-` (*virtually*); amount: `g-e-` (*just short*) — [numbers#special-number-as-verb-and-adverb](../grammar/numbers.md#special-number-as-verb-and-adverb) | covered | numbers.md | — | — |
-| G-D09 | *barely / hardly / scarcely* | verb: `h+e-` (*barely*, margin), `h~+e-` (*scraped by*, effort); adjective / adverb: `w+e-` — [numbers#special-number-as-verb-and-adverb](../grammar/numbers.md#special-number-as-verb-and-adverb). Unbounded division retired (counted `h-N` stays) | covered | numbers.md | — | — |
-| G-D10 | *too* ADJ (excess: *too hot to drink*) | rank above a sake bar on the quality: `zedehel zuhon zel gahadol.` ([comparatives#sake-benchmarks](../grammar/comparatives.md#sake-benchmarks)) | covered | comparatives.md | — | — |
-| G-D11 | *enough* (*warm enough to swim*) | tie **`ae`** against a sake bar on the quality ([comparatives#sake-benchmarks](../grammar/comparatives.md#sake-benchmarks)) | covered | comparatives.md | — | — |
 | G-D12 | *so ADJ that …* (degree + result) | `welavam` + next-sentence linker (*therefore* `xezadam`, [dependents](dependents.md#continue-x)) — two sentences, degree-result link lost | awkward | dependents.md | Teach the two-sentence route explicitly, or a `/w/` *to-that-degree* word pointing at the next sentence | P2 |
-| G-D13 | equative *as … as* | `zazawan zalahen zael gamadam.`; open `zaem` = *about as* ([comparatives#equatives](comparatives.md#equatives)) | covered | comparatives.md | — | — |
-| G-D14 | *more / less … than*, *most / least* | `zel` / `zuel` + shared `/ɡ/`; manner via `/h/` after the join ([comparatives](comparatives.md#manner-scale)) | covered | comparatives.md | — | — |
-| G-D15 | *much more / slightly more* | `zazawan zalahen zel wohahal gamadam.` ([comparatives#degree](comparatives.md#degree)) | covered | comparatives.md | (slightly: see G-D05) | — |
 | G-D16 | correlative *the more …, the more …* | none; you could chain two sentences with *because*, but the covariation is lost | missing | comparatives.md | Rank join `e` on `/x/` linking two scale claims (a *co-rank* reading) | P2 |
-| G-D17 | focus *only X* / *just X* | single-item set join `zazawan zal vowogal.` *just Azawan* ([joins#standalone-phrase](joins.md#standalone-phrase)); *only when* `hal` ([restrictors](restrictors.md)) | covered | joins.md | — | — |
-| G-D18 | focus *also / too* (*Azawan also walks*) | resume the action: `zalahen vowogal. zazawan vowogar.`; new object: `zazawan vahahar dodogal.` — [pronouns](../grammar/pronouns.md#intermediate); two in one clause: `A al B`; context-only *too*: discourse `al`. Leftless `al` rejected (ambiguous with discourse glue and non-adjacent `A al B`) | covered | pronouns.md | — | — |
-| G-D19 | scalar focus *even X* (*even Azawan walks*) | surprise on the hook: `zalahen wazebam al zazawan vowogal.` — [hooks#hook-w](../grammar/hooks.md#hook-w) | covered | hooks.md | — | — |
 | G-D20 | *just* = *merely* (*it's just a cat*) | `zal` single item gives *only*, but not the "no more than / small" judgment | awkward | joins.md | Teach `zal` + `wamazam`, or say that `zal` covers both | P3 |
-| G-D21 | *apparently / reportedly / evidently* | evidential `/th/`: `themam` hearsay, `thevem` inferred ([knowing#evidentiality](knowing.md#evidentiality)) | covered | knowing.md | — | — |
-| G-D22 | *probably / possibly / certainly* | MAY `thovom`; stance numbers `th+`, `th+e` ([numbers#number-as-stance-by-marker](numbers.md#number-as-stance-by-marker)) | covered | knowing.md | — | — |
-| G-D23 | *hopefully* (speaker hope toward the clause) | content root on `/th/` **-m** = speaker attitude (`thevegem` *hopefully*, `theledem` *luckily*, `thavawom` *sadly*); hope is not a channel, so a forecast still needs one — sakes.md#speaker-attitude | covered | sakes.md / clause.md | — | — |
-| G-D24 | *frankly / honestly / to be clear* (speech-act manner) | stance `/th/` on ordinary roots: `thagazam` *to be clear*, `thaveham` *frankly* — [speech-moves#speech-manner](../grammar/speech-moves.md#speech-manner) | covered | speech-moves.md | — | P2 |
-| G-D25 | *fortunately / sadly* (evaluative sentence adverb) | same pattern as G-D23: `theledem` *luckily*, `thavawom` *sadly* — sakes.md#speaker-attitude | covered | sakes.md | — | — |
 
 **Notes**
 
@@ -257,42 +144,9 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
-| G-E01 | *and* (phrase / clause) | phrase `zazawan zalahen zal vowogal`; clause `zazawan vowogal zalahen varahal xal` ([joins](../grammar/joins.md), [join-across-roles#vp-clause-forms](../grammar/join-across-roles.md#vp-clause-forms)); *and then* `xan` | covered | joins.md | — | — |
-| G-E02 | *or* (exclusive / inclusive) | `xol` / `zol`; *and/or* `xaol` / `zaol` ([joins](../grammar/joins.md)) | covered | joins.md | — | — |
-| G-E03 | *but* (clause) | linker `zazawan vowogal. xagozal zalahen varahal.` / softer `xazel` ([dependents#sentence-linkers](../grammar/dependents.md#sentence-linkers)); in-clause `xazel` also parses mid-sentence (`zazawan vowogal xazel zalahen varahal`) | covered | dependents.md | — | — |
-| G-E04 | *nor* / *neither … nor* | `zazawan zalahen zul vowogal` (neither A nor B); clause `zazawan vowogal zalahen varahal xul` ([joins](../grammar/joins.md), negation distributes) | covered | joins.md | — | — |
-| G-E05 | *either … or* | exclusive `zol` / `xol`; the English "either" emphasis is the closed **-l** | covered | joins.md | — | — |
-| G-E06 | *both … and* | `zal`; *both ADJ* = set `a` + SHARED `/ɡ/` ([joins](../grammar/joins.md)) | covered | joins.md | — | — |
-| G-E07 | *because* / *since* (reason) / *as* | `zazawan vowogal theram barl zalahen vezebal` ([dependents#dependent-clauses](../grammar/dependents.md#dependent-clauses), [causation#because](../grammar/causation.md#because)) | covered | causation.md | — | — |
-| G-E08 | *if* (real / open conditional) | `zazawan vowogal thodom barl zalahen vezebal` ([causation#dependent](../grammar/causation.md#dependent)) | covered | causation.md | — | — |
-| G-E09 | *unless* (clause) | `thodom burl` (parser change 2026-09-26) | covered | dependents.md#stand-in, causation.md#only-because | — | — |
-| G-E10 | *although* / *even though* / *despite* | `hazem barl …`; NP `hazem balahen` ([dependents](../grammar/dependents.md#dependent-clauses)) | covered | dependents.md | — | — |
-| G-E11 | *while* / *when* (same time) | `hehum barl …`; phrase-time *when* via restrictor `herehel hal` ([restrictors](../grammar/restrictors.md)) | covered | dependents.md | — | — |
-| G-E12 | *while* / *whereas* (contrast) | linker `xazel` after a full sentence ([dependents#sentence-linkers](../grammar/dependents.md#sentence-linkers)); no dependent contrast pole | covered | dependents.md | — | — |
-| G-E13 | *until* | `hodam barl …` | covered | dependents.md | — | — |
-| G-E14 | *before* / *after* | `habum barl …` / `hulam barl …` | covered | dependents.md | — | — |
-| G-E15 | temporal *since* (*since Alahen left*, starting point up to now) | extra-noun `ul` *from* on a time `/b/` (`zazawan vehahel ul bavodel.`) or `ul barl` + sentence — dependents.md#since | covered | dependents.md | — | — |
 | G-E16 | *once* / *as soon as* | `hulam barl …` (*after*); immediacy unmarked | awkward | dependents.md | Immediate-after: `/w/` detail on `hulam` (e.g. haste root `wadehom hulam barl`) or teach `hulam` + `hal` | P2 |
-| G-E17 | *whether* (embedded) | `zazawan vahahal dorl zalahen vezebal` ([questions#embedded-whether](../grammar/questions.md#embedded-whether)) | covered | dependents.md | — | — |
-| G-E18 | restrictive relative (*the guard who sits*) | two sentences + resume: `zagadul vehahel. zazawan bagar vezebel.` ([dependents#which-noun](../grammar/dependents.md#which-noun)); one-place kind via role compound `dodogal gaxehahel` | covered | dependents.md | — | — |
-| G-E19 | non-restrictive relative (*Azawan, who walks, sings*) vs restrictive | restrictive = two sentences / role compound; non-restrictive = aside `th(…)` | covered | say-people-places.md#which-noun-intermediate | — | — |
-| G-E20 | object-gapped relative (*the dog that Azawan sees runs*) | two sentences: `zazawan dodogal vahahal. zodor varahal.` | covered | dependents.md | — | — |
-| G-E21 | *whose* | `zodogal gegabem bagar` | covered | say-people-places.md#which-noun-intermediate | — | — |
-| G-E22 | *where* relative (*the house where Azawan sleeps*) | two sentences + hook: `zazawan vezebal al bahazal. zalahen vezehel al bahar.`; kind *sleep-place* = role compound `e x ROOT` (`gexezebal`) ([roles](../grammar/roles.md#role-compounds)) | covered | dependents.md | — | — |
 | G-E23 | *when* relative (*the day when …*) | two sentences + time `/h/`; no pattern taught for resuming a time | awkward | dependents.md | Teach resume on a time noun in `/h/` (or `har`-style restrictor) as the *when*-relative pair | P3 |
-| G-E24 | free relative *whoever* / *whatever* (generic) | `zual gaxowogal vezehel.` | covered | joins.md#universals-domains-generics | — | — |
-| G-E25 | free relative *what* (*I see what Azawan sees*) | undergoer role compound **-r** after the event: `zazawan varadal. zalahen vahahal duxaradar.` — say-people-places.md#free-relative-what (main verb must differ, or **-r** binds to it) | covered | say-people-places.md | — | — |
-| G-E26 | *that*-clause as object | `zazawan balahen vezebel darl zodogal varahal.` | covered | dependents.md | — | — |
-| G-E27 | *that*-clause as subject / adjective complement (*That he left surprised me*; *happy that*) | subject: stand-in in other roles `zarl` ([dependents#stand-in-roles](../grammar/dependents.md#stand-in-roles), advanced; `zazawan zarl vezehel` parses) ; *happy that* = `theram barl` | covered | dependents.md | — | — |
-| G-E28 | infinitive complement (*wants / decides to walk*, *tells X to sit*) | `darl` + repeated subject (`zazawan vezehel darl zazawan vowogal`); directive `derl` (`zazawan balahen vezebel derl vehahel`); *decline to* `vuon` | covered | dependents.md | — | — |
-| G-E29 | gerund (*sees walking*, *enjoys swimming*) | verb root under `/d/` as noun (`zazawan dowogal vahahal`) or `darl` + clause | covered | clause.md | — | — |
-| G-E30 | reported speech (indirect / direct) | indirect `darl` (`zazawan balahen vezebel darl …`); direct wording = [spans](../grammar/spans.md) | covered | dependents.md | — | — |
-| G-E31 | reported yes/no question (*asks whether*) | `zazawan balahen vezebel dorl zalahen vezebal.`; lexical *question…* `vorn` | covered | dependents.md | — | — |
-| G-E32 | reported wh-question (*asks who walks*, *knows what Alahen sees*) | `zazawan vezebel dorl zar vowogal.` | covered | say-questions.md#reported-questions | — | — |
-| G-E33 | *so that* / *in order to* / *so as not to* | `hagom barl …` / `hagom burl …` ([dependents#so-that](../grammar/dependents.md#so-that)) | covered | dependents.md | — | — |
 | G-E34 | result *so … that* / *such … that* (*so tired that he slept*) | two sentences + `xezadam` (*therefore*): `zazawan vowogal. xezadam zalahen vehahel.`; degree→result link not expressible in one clause | awkward | dependents.md | Result pole on `/h/` from the *therefore* root: `hezadam barl` (outcome follows; parses, unassigned) | P2 |
-| G-E35 | *only if* / *iff* | `thebom barl` / `thewum barl` ([causation#only-if](../grammar/causation.md#only-if)) | covered | causation.md | — | — |
-| G-E36 | *even if* (concessive conditional) | `hazem thodom barl` (parser change 2026-09-26) | covered | causation.md#only-because | — | — |
 | G-E37 | hypothetical / remote conditional (*If Alahen slept, Azawan would walk*) | open `thodom barl` + optional stance inside dependent (`zalahen th- vezebal`, unlikely) or forecast (channel + `b+`) `thevem b+`; remoteness not taught as a pattern | awkward | causation.md | Teach `th-` / `th+N` inside the `barl` clause as the "remote" conditional | P3 |
 | G-E38 | counterfactual (*If Alahen had left, the door would still be locked*) | bookmark `humem barl` + RESIDUE + forecast (`zodol galagel thamom thevem b+ humem barl zalahen vadebal`) ([causation#factivity](../grammar/say-reasons.md#factivity)); contrary-to-fact itself unmarked | awkward | causation.md | Mark the unreal condition with imaginary `th-e-` inside the dependent (`thodom barl zalahen th-e- vadebal`, parses) — reuse of *as if* | P2 |
 
@@ -309,23 +163,7 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
-| G-F01 | topicalization by fronting (*A cat, Azawan sees*) | free order, leftmost content word highlighted: `dagadal zazawan vahahal.` ([clause#word-order-emphasis](clause.md#word-order-emphasis)) | covered | clause.md | — | — |
-| G-F02 | *as for X* / *regarding X* topic | `hahehom bazawan zalahen dagadal vahahal.` ([clause#as-for](say-people-places.md#as-for)) | covered | clause.md | — | — |
-| G-F03 | object / adverb cleft (*It's a cat that Azawan sees*) | object-first order `dagadal zazawan vahahal.` ([clause#word-order-emphasis](clause.md#word-order-emphasis)) | covered | clause.md | — | — |
-| G-F04 | subject cleft (*It was Azawan who saw the cat*, contrastive) | `&zazawan dagadal vahahal.` | covered | clause.md#word-order-emphasis | — | — |
-| G-F05 | pseudo-cleft (*What Azawan does is see a cat*; *A cat is what he sees*) | verb-first / object-first order: `vahahal zazawan dagadal.` ([clause#word-order-emphasis](clause.md#word-order-emphasis)) | covered | clause.md | — (*what I want is…* blocked only by missing *want* root: lexicon item, not grammar) | — |
-| G-F06 | existential *there is / there are* (*There is a dog near the bank*) | lone noun (optionally + `/ɡ/` on a new common noun) asserts existence: `zodogal.` *There is a dog*, `zodogal gelavam.` *There is a big dog*; a hook adds where ([predication#existence](../grammar/predication.md#existence)) | covered | predication.md | — | — |
-| G-F07 | negative existential (*There is no dog here*) | verbless *no K*: `zul godogal.` ([joins#universals-domains-generics](../grammar/joins.md#universals-domains-generics)); `zodogal zul.` stays *not a dog* | covered | joins.md | — | — |
-| G-F08 | extraposition (*It is hard to walk*; *It's good that Alahen sits*) | `gamadam zarl zazawan vowogal.` | covered | dependents.md#stand-in-roles | — | — |
-| G-F09 | contrastive focus (*Azawan sees the DOG*) | tone mark `&`: `zazawan vahahal &dodogal.` ([speech-moves#tone-marks](speech-moves.md#tone-marks)); or fronting | covered | speech-moves.md | — | — |
-| G-F10 | contrastive correction (*not a dog but a cat*) | two sentences with join: `zazawan dodogal vahahal. zalahen dodogal zul vahahar.`; hooks *rather / instead* ([hooks](hooks.md)) | covered | hooks.md | — | — |
-| G-F11 | VP ellipsis *so do I* / *me too* | verb resume: `zodogal vowogal. zamun vowor.` ([pronouns](pronouns.md) Intermediate `/v/ … -r` = *do so*) | covered | pronouns.md | — | — |
 | G-F12 | bare *me too* (no verb) | `zamun zam.` parses but is untaught; taught route needs the verb resume (G-F11) | extension candidate | pronouns.md, joins.md | Consider teaching subject + `zam` / `zal` fragment after a claim as *me too* (add-join reading is guessable) | P3 |
-| G-F13 | *neither does she* / *me neither* | `zalahen vowogal vul. zamun vowor vul.` (verb resume + verb join `vul`, [join-across-roles](join-across-roles.md)) | covered | pronouns.md | — | — |
-| G-F14 | gapping (*Azawan sees a dog, and Alahen a cat*) | verb resume keeps it short: `zazawan dodogal vahahal. zalahen dagadal vahahar.` Verbless `zalahen dagadal.` parses but is untaught (and a lone noun + `/ɡ/` already reads as existence or property — [predication#existence](../grammar/predication.md#existence)) | covered | pronouns.md | — (state that verbless subject + object is not gapping: an object needs a verb) | — |
-| G-F15 | pro-form *do so / do that* | `/v/ … -r`: `zazawan vehahel. zalahen vajer.` ([pronouns](pronouns.md)) | covered | pronouns.md | — | — |
-| G-F16 | pro-form *one* (*a blue one*, *I want the red one*) | `zalahen dar godor gubuhal vahahal.` | covered | pronouns.md#cross-role-recast | — | — |
-| G-F17 | *so / not* as answer (*I think so / I don't think so*) | polar stance `yaem` / `yuem` ([questions#polar-stance](questions.md#polar-stance)) | covered | questions.md | — | — |
 | G-F18 | clausal pro-form *so* in a complement (*Azawan says so*, *I hope so*, *I told you so*, *I hope not*) | none for a prior plain clause: `darr` fails to parse; span resume `d[=]` only works if the earlier content was a span ([spans](spans.md)); `darn` = *a statement*, not *that one*; `zalahen vaen xar` is untaught | missing | dependents.md | Stand-in resume: stand-in + **-r** (e.g. `darr` / `dorr` / `durr`) = *that same content* (most recent claim); negative *not* via `u` vowel or `darr zul` — guessable from resume **-r** | P2 |
 | G-F19 | ellipsis with modal / ability (*Azawan can sing and so can I*) | verb resume `vezeher` drops the ability; would need `x` ability on the resume, not taught ([intention#incapability](intention.md#incapability)) | awkward | intention.md, pronouns.md | State whether ability **`x` + vowel** may sit on a resumed verb (`/v/ … -r` stem) or on `eze`; add example | P3 |
 
@@ -340,34 +178,9 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
-| G-G01 | comparative *X is bigger than Y* | rank join `e` + shared `/ɡ/`: `zazawan zalahen zel gelavam.` ([comparatives#comparatives](comparatives.md#comparatives)) | covered | comparatives.md | — | — |
-| G-G02 | *less … than* | reverse rank `ue`: `zazawan zalahen zuel gelavam.` ([comparatives#comparative-arity](comparatives.md#comparative-arity)) | covered | comparatives.md | — | — |
-| G-G03 | superlative *the biggest* / *the least big* | single-item `zazawan zel gelavam.` / `zazawan zuel gelavam.` ([comparatives#superlatives](comparatives.md#superlatives)) | covered | comparatives.md | — | — |
-| G-G04 | *much / slightly more* | `/w/` before scale: `zazawan zalahen zel wohahal gelavam.` ([comparatives#degree](comparatives.md#degree)) | covered | comparatives.md | — | — |
-| G-G05 | measured gap *two meters taller* | measure `/b/` on scale: `zazawan zalahen zel gadavem bezezem g+2.` ([comparatives#measured-differentials](say-amounts.md#measured-differentials)) | covered | comparatives.md | — | — |
-| G-G06 | manner comparative *walks more intensely than* | `/h/` right after join: `zalahen zazawan zel hahegem vowogal.` ([comparatives#manner-scale](comparatives.md#manner-scale)) | covered | comparatives.md | — | — |
-| G-G07 | factor comparative *twice as big as* / *three times faster* | `ae` + shared scale + factor `h+N` / `h-N`: `zazawan zalahen zael gelavam hradul.` — [comparatives#factor](../grammar/comparatives.md#factor) | covered | comparatives.md | — | P2 |
-| G-G08 | verb-degree / frequency comparative *runs more (often) than* | digitless `h+` after the rank join: `zazawan zalahen zel h+ vowogal.` ([comparatives#frequency-scale](../grammar/comparatives.md#frequency-scale)) | covered | comparatives.md | — | — |
-| G-G09 | quantity comparative *more cats than dogs* / *fewer* | `g+` amount scale: `zagadalx zodogalx zel g+.`; rough `g~+`; difference `zel g+ b+3` ([comparatives#amount-scale](../grammar/comparatives.md#amount-scale)) | covered | comparatives.md | — | — |
-| G-G10 | equative *as big as* / *about as big as* | `zazawan zalahen zael gelavam.` / `zaem` ([comparatives#equatives](comparatives.md#equatives)) | covered | comparatives.md | — | — |
-| G-G11 | *the same height / age as* | equative on the dimension: `zazawan zalahen zael gadavem.` ([comparatives#equatives](comparatives.md#equatives)) | covered | comparatives.md | — | — |
-| G-G12 | *same* = identity *Alahen is the same person as Azawan* | `zalahen gogal bazawan.` ([predication#identity](predication.md#identity)) | covered | predication.md | — | — |
-| G-G13 | *same* = shared referent *we read the same book* / *the same one again* | **`SAME`** with no `/b/`: joined subject `zazawan zalahen zal dubugal gogal varadal.` (each vs the others, [joins](../grammar/joins.md#universals-domains-generics)); single subject = the one already mentioned ([predication#identity](../grammar/predication.md#identity)) | covered | predication.md, joins.md | — | — |
-| G-G14 | *different (from)* = not the same one | `zalahen gogal bazawan gul.` ([predication#same-endings](predication.md#same-endings)) | covered | predication.md | — | — |
-| G-G15 | *different* = unlike in kind / quality (*a different kind of house*, *Azawan is different from Alahen*) | `zazawan gomem balahen gul.` | covered | say-people-places.md#different | — | — |
-| G-G16 | *similar / like* | similative: `zahazal gomem bazawan.` ([relations#similative](relations.md#similative)) | covered | relations.md | — | — |
 | G-G17 | reciprocal *similar to each other* / *they look alike* | no reciprocal route for similative (`/b/` needs a model) | awkward | relations.md | Allow similative over a set subject with resume/set `/b/` for *alike*; coordinate with group B reciprocal row | P2 |
-| G-G18 | *more than N* / *fewer than N* | single-item threshold: `zagadalx g+5 guel vowogal.` / `g+5 gel` ([numbers-applied#numeric-thresholds](numbers-applied.md#numeric-thresholds)) | covered | numbers-applied.md | — (note: `e` = *less than* is counter-intuitive for learners; English *more than* uses `ue`) | — |
-| G-G19 | *at least N* (≥) | sequence ray **`oe`** is inclusive: `z+5 zoel` *5 or more*; modifier `g+5 goel` ([numbers-applied#numeric-thresholds](../grammar/numbers-applied.md#numeric-thresholds)) | covered | numbers-applied.md | — | — |
-| G-G20 | *at most N* (≤) | reversed-sequence ray: `z+5 zeol` *5 or fewer* ([numbers-applied#numeric-thresholds](../grammar/numbers-applied.md#numeric-thresholds), [joins#reversed-sequence-eo](../grammar/joins.md#reversed-sequence-eo)) | covered | numbers-applied.md | — | — |
-| G-G21 | *approximately / about N* | number **-m**: `zagadalx g~+5 vowogal.` ([numbers#number-endings](numbers.md#number-endings)) | covered | numbers.md | — | — |
-| G-G22 | *approximately* on a non-number (*roughly equal*, *about the same*) | `zaem` equative; `gogam` (*basically the same*) | covered | comparatives.md, predication.md | — | — |
-| G-G23 | percent *25% of the cats* | `zagadalx g+25% vowogal.` ([numbers-applied#percent-denominators](say-amounts.md#percent-denominators)) | covered | numbers-applied.md | — | — |
-| G-G24 | fractions *half / a third of the cats* | `g-N` after a plain noun: `zagadalx g-2 vehahel.` *half of the cats* ([numbers-applied#fractions](../grammar/numbers-applied.md#fractions)) | covered | numbers-applied.md | — | — |
 | G-G25 | ratios / rates *one in three*, *3 to 1*, *per hour* | *one in N* = fraction `g-N` after the noun (`zagadalx grurel vehahel.`) — say-amounts.md#one-in-n; *every Nth* via `h-N`; no per-unit rate (*per hour*) or ratio (*3 to 1*) | missing | numbers-applied.md | Per-unit rates need a new attachment (measure `/b/` + inverse amount); ratio *N to M* undecided | P2 |
-| G-G26 | *each … respectively* (A and B got X and Y respectively) | `/w/` **`wazagum`** (🧦) right before the later list's `a` join word; partner list of equal length in the clause ([joins#respectively](../grammar/joins.md#respectively)) | covered | joins.md | — | — |
 | G-G27 | distributive *apiece* / *each* with a count (*they each got three*; *three apples apiece*) | singular verb leaves collective vs distributive open ([plurality#verbs-v](plurality.md#verbs-v)); no marker for per-member count | missing | plurality.md | Add a distributive counterpart to verb **-x** collective (e.g. marked count scope *per member*), or teach `h-` / set-join `a` distributive reading on the count | P2 |
-| G-G28 | distributive *both are ADJ* | set join `a` + shared `/ɡ/`: `zazawan zalahen zal gelavam.` ([comparatives#distributive-both](say-amounts.md#distributive-both)) | covered | comparatives.md | — | — |
 
 **Notes**
 
@@ -380,34 +193,10 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
-| G-H01 | greeting / goodbye (*hi*, *bye*) | speaker's named citation `azawan.` ([word-endings#greeting](../grammar/word-endings.md#greeting)); call the other with `yalahen.` | covered | word-endings.md | — | — |
 | G-H02 | greeting to someone whose name you don't know / group greeting (*hi all*) | none taught; `yohenx.` (listener -x) only calls them | awkward | word-endings.md / speech-moves.md | allow `/y/` + **`ohe`** / **`oha`** + **-n** as a conventional greeting, or teach `yohan.` as *hello, all of us* | P2 |
-| G-H03 | thanks (*thank you*, *thanks for the gift*) | a lone met `/th/` value is the thanks: `thonatham.`; sake root says what for, ending = appreciation channel — [values#thanks-sorry](../grammar/sakes.md#thanks-sorry) | covered | sakes.md | — | — |
-| G-H04 | apology (*sorry*, *I apologize*) | unmet `/th/` value + `/b/` owner of the sake: `thonathum bohen.`; changeability grades it (**-l** deep / **-m** default / **-r** *my bad*) — [values#thanks-sorry](../grammar/sakes.md#thanks-sorry) | covered | sakes.md | — | — |
-| G-H05 | softened request (*please…*, *could you…*) | **`yem`**: `yem vowogal.` ([speech-moves#speech-act](../grammar/speech-moves.md#speech-act)); gentle ask **`yom`** | covered | speech-moves.md | — | — |
-| G-H06 | firm request / command / prohibition | **`yel`** / **`yul`**, emphatic `yul yul vezevul.` ([speech-moves#emphatic-prohibition](../grammar/speech-moves.md#emphatic-prohibition)) | covered | speech-moves.md | — | — |
-| G-H07 | offer of a thing (*want some?*, *how about X?*) | single-item open join under question (`…am` / `…om`) ([questions](../grammar/questions.md#yes-no-single-item-standalone)); accept/refuse `yaol` / `yuol` | covered | questions.md | — | — |
-| G-H08 | offer to act (*shall I…?*, *let me help*) | `yom zamun vowogal.` (soft question, self subject); warrant **`the…m`** *offered* on the act ([values#sake-force](../grammar/sakes.md#sake-force)) | covered | speech-moves.md / sakes.md | — | — |
-| G-H09 | suggestion (*why don't we…*, *let's…*) | inclusive we + soft request/question: `yem zohan vowogal.` / `yom zohan vowogal.`; firm *let's* `yel zohan vowogal.` ([pronouns](../grammar/pronouns.md)) | covered | speech-moves.md | — | — |
-| G-H10 | asking permission (*may I…?*, *is it OK if…*) | `yom zamun vehahel thegam.`; *is it OK with you* = consent `thuxegam` — [values#permission](../grammar/sakes.md#permission), [values#consent](../grammar/sakes.md#consent) | covered | sakes.md | — | — |
-| G-H11 | granting permission (*you may*, *go ahead*) | `yaol.` in reply to a permission ask; declarative `…therenem.` — [values#permission](../grammar/sakes.md#permission) | covered | sakes.md | — | — |
-| G-H12 | promise (*I promise to…*) | self-consent **-l** said to the listener: `zSELFn vowogal thuxegal.`; named promisee: `el` + `/b/` — [sakes#consent](../grammar/sakes.md#consent) | covered | sakes.md | — | — |
-| G-H13 | warning (*watch out!*, *careful!*) | interjection `yowawon.` (*Warning!*) / `yogozon.` (*Danger!*) ([speech-moves#interjections](../grammar/speech-moves.md#interjections)); advice with offered warrant `yel zohen vowogal thuhothem.` ([values#sake-force](../grammar/sakes.md#sake-force)); `yul yul` for danger | covered | speech-moves.md | — | — |
-| G-H14 | backchannel *uh-huh* / *right* / *got it* | polar stance `yaem.` / `yael.` (*yeah / got it*) ([questions#polar-stance](../grammar/questions.md#polar-stance)) | covered | questions.md | — | — |
-| G-H15 | backchannel *oh* (news receipt, change of state) | polar **-r** = just-formed stance: `yaer` *oh / I see* (receipt, not agreement), `yuer` *huh?* — questions.md#polar-endings | covered | speech-moves.md / questions.md | — | — |
-| G-H16 | backchannel *hmm* / *I'm listening* (continuer) | fresh-receipt `yaer.` (*mm-hm* / *I see*, no agreement) — say-questions.md#continuer | covered | say-questions.md | — | — |
-| G-H17 | hedge on a class / adjective (*kind of a dog*, *sort of big*) | `/w/` hedge: `zazawan wabedum godogal.` ([predication](../grammar/predication.md)); **-m** on joins/numbers for *about* | covered | predication.md / clause.md | — | — |
 | G-H18 | hedge on a verb (*kind of walked*) | `zazawan vowogal habedum.` parses but only `/w/` hedge is taught | awkward | clause.md | teach `/h/` **`abedu`** (-m) as verb-degree hedge alongside `/w/` | P2 |
-| G-H19 | hedge on the whole claim (*I guess*, *I think*, *sort of*) | soft statement `yam …`; MAY `thovom zazawan vowogal.` ([knowing#may](../grammar/knowing.md#may)); soft polar `yaem`; tone `?` | covered | speech-moves.md / knowing.md | — | — |
-| G-H20 | *anyway* (return from digression / dismiss prior) | resume hook `or …` *Anyway* (plus `er` *as I said*, `ar` *going back to that*, `ur` *never mind that*) — hooks.md#hook-resume | covered | hooks.md#discourse-hooks | — | — |
-| G-H21 | *actually* (correcting expectation) | `ol …` | covered | hooks.md#discourse-hooks | — | — |
-| G-H22 | *by the way* (aside) | aside span `thexal … xuxul` ([spans](../grammar/spans.md)) is a nested aside, not a new topic turn | awkward | spans.md / hooks.md | teach aside open at sentence start as *by the way* (or `am …` *additionally, and maybe more*) | P2 |
-| G-H23 | *well* (hesitation / dispreferred reply opener) | soft frame-reject `yuam` + body (*well…*: the question does not quite fit) — say-questions.md#well | covered | say-questions.md | — | — |
-| G-H24 | *so* (consequence) | `xezadam` *therefore* ([dependents#sentence-linkers](../grammar/dependents.md#sentence-linkers)) | covered | dependents.md | — | — |
 | G-H25 | *so* (topic launch / *so, what happened?*) | none; `xevavel` *next* partial | awkward | dependents.md / hooks.md | pair with G-H20 (`or` / `ar` resume hooks) or note `xevavel` as *so, next* | P3 |
-| G-H26 | *besides* / *moreover* | discourse hook `al …` *additionally* ([hooks#discourse-hooks](../grammar/hooks.md#discourse-hooks)) | covered | hooks.md | — | — |
 | G-H27 | *in fact* (strengthening prior) | `al …` adds but does not escalate; `el …` rephrases | awkward | hooks.md | reading for a rank-upward discourse hook (e.g. `ael …` *even more so*), or teach `el` + `!` | P2 |
-| G-H28 | *on the other hand* | `xazel` *however* ([dependents#sentence-linkers](../grammar/dependents.md#sentence-linkers)) | covered | dependents.md | — | — |
 
 **Notes**
 
@@ -421,35 +210,7 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
-| G-I01 | 1st / 2nd person singular *I* / *you* | `zamun dohen vahahal.` *I see you*; names preferred ([pronouns#special-pronouns](pronouns.md#special-pronouns)) | covered | pronouns.md | — | — |
-| G-I02 | inclusive *we* (you and I) | `zohan vehahel.` ([pronouns#special-pronouns](pronouns.md#special-pronouns)) | covered | pronouns.md | — | — |
-| G-I03 | exclusive *we* / plural *you (all)* | `zamunx vehahel.` / `zohenx vehahel.` ([plurality#clusivity](plurality.md#clusivity)) | covered | plurality.md | — | — |
-| G-I04 | 3rd person *he / she / it / they* (anaphoric) | resume **-r**: `zodogal vowogal. zodor vehahel.` ([pronouns#resume-r](pronouns.md#resume-r)); no gender / animacy, by stem match | covered | pronouns.md | — | — |
-| G-I05 | 3rd person on first mention with no antecedent (*he* for someone visible but unnamed) | noun + `om bohen` / `om bamun` (*that person by you*) — [hooks#deixis](../grammar/hooks.md#deixis); names preferred | covered | pronouns.md | — | — |
-| G-I06 | *here* | `om bamun` *here*, `om bohen` *there (by you)*, `om bohan` *here with us*, `um bohan` *over there* — [hooks#deixis](../grammar/hooks.md#deixis) | covered | hooks.md | — | — |
-| G-I07 | *there* (anaphoric, place already named) | `zazawan vowogal ol bezedel. zalahen vehahel ol bezer.` resume **-r** on `/b/` ([pronouns#resume-r](pronouns.md#resume-r)) | covered | pronouns.md | Add an explicit *there* example to the slot table | P3 |
-| G-I08 | *now* (speech time) | zero offset on a two-way channel: `zalahen thevem bagazem g+0 vezebal.`; `bazazam g+0` *today* — [knowing#now](../grammar/knowing.md#now) | covered | knowing.md | — | — |
-| G-I09 | *then* (anaphoric time) | `/h/` resume: `zazawan vezebal herehel. zalahen vehahel hereher.` ([pronouns#cross-role-inventory](say-people-places.md#cross-role-inventory)) — needs a prior `/h/` antecedent | covered | pronouns.md | — | — |
-| G-I10 | *then* (next in sequence) | `xan`: `zazawan vowogal. xan zalahen vehahel.` ([join-across-roles#sequence](join-across-roles.md#sequence)) | covered | join-across-roles.md | — | — |
-| G-I11 | *this / that* (anaphoric, *that one*) | resume **-r** ([pronouns#intermediate](pronouns.md#intermediate)): `zalahen vahahal daboger.`; spans `d[=]` for quoted text | covered | pronouns.md | — | — |
-| G-I12 | *this* vs *that* (proximal / distal contrast, pointing) | same as G-I06 — [hooks#deixis](../grammar/hooks.md#deixis) | covered | hooks.md | — | — |
-| G-I13 | *such* / *so* (property deixis) | `/ɡ/` / `/w/` resume **-r** ([pronouns#intermediate](pronouns.md#intermediate)) | covered | pronouns.md | — | — |
-| G-I14 | *come* | motion + `oel bamun` / `oel bohen` — [hooks#deixis](../grammar/hooks.md#deixis); still manner-specific (no generic *go* root) | covered | hooks.md | — | — |
-| G-I15 | *go* | motion + `ul bamun` (*go away*) or `oel` + goal — [hooks#deixis](../grammar/hooks.md#deixis) | covered | hooks.md | — | — |
-| G-I16 | *bring / take* | `zazawan valagal dabegol oel bamun.` *bring* / `… ul bamun` *take away*; generic *go / move* `vuvudel` — [hooks#deixis](../grammar/hooks.md#deixis). *take* = *grab* is a separate, non-motion verb | covered | hooks.md | — | — |
-| G-I17 | generic *you / one / they* (people in general) | `zuam gebezal vezebal.` soft generic ([joins#universals-domains-generics](joins.md#universals-domains-generics)); ordinary everyday register feels heavy | covered | joins.md | Consider teaching a short pointer from pronouns.md (*you* / *one* in general ≠ `ohe`) | P3 |
-| G-I18 | impersonal *they* (*they say…*, unknown agents) | `zonunx`? not taught; evidential **told** `emam` + `/th/` covers *they say* ([knowing#evidentiality](knowing.md#evidentiality)); agent *they* = `zonun` / `zar` | covered | knowing.md | — | — |
-| G-I19 | *someone / something* | `zonun` ([pronouns#special-pronouns](pronouns.md#special-pronouns)); `zar` ([joins#unspecified-member-r-phrase](joins.md#unspecified-member-r-phrase)) | covered | pronouns.md, joins.md | Clarify `zonun` vs `zar` overlap on one page | P3 |
-| G-I20 | *anything / anyone* | `zor vowogal.` ([joins](joins.md#unspecified-member-r-phrase)) | covered | joins.md | — | — |
-| G-I21 | *nothing / nobody* | `zal vowogal.` ([joins](joins.md)) | covered | joins.md | — | — |
-| G-I22 | *everything / everybody* | `zual vowogal.`; *everyone* as a kind `zual gebezal` | covered | joins.md | — | — |
-| G-I23 | *something else / someone else* | `zur` ([joins](joins.md#unspecified-member-r-phrase)) | covered | joins.md | — | — |
-| G-I24 | *somewhere / anywhere / nowhere / everywhere* | `ol bar` / `ol bur` / `ol bal` / `ol bual` | covered | hooks.md#place-indefinites | — | — |
-| G-I25 | *sometime / never / always / anytime* | `har` / `hal` / `hual` / `hor` ([restrictors](restrictors.md)) | covered | restrictors.md | — | — |
-| G-I26 | anaphora across sentences (tracking several referents) | short / full-root **-r**, most-recent match; `xazar` going-back; cross-role recast ([pronouns#resume-r](pronouns.md#resume-r), [#going-back-to-a-thread](pronouns.md)) | covered | pronouns.md | — | — |
-| G-I27 | anaphora to a whole previous clause (*that* = what just happened) | `/x/` resume `…-r` and spans; no plain noun-slot *that (event)* taught from a clause antecedent ([pronouns#antecedent-was-j-or-x](pronouns.md)) | awkward | pronouns.md | Teach a clause-antecedent noun pointer (e.g. `dar`-like stand-in pointing **back**) with an example | P2 |
-| G-I28 | person shift across speakers (my *I* = your *you*) | `amu` / `ohe` are role-relative per turn; names preferred | covered | pronouns.md | — | — |
-| G-I29 | reflexive *myself / herself* (reference aspect) | `zazawan vahahal dazar.` | covered | pronouns.md#resume-r | — | — |
+| G-I30 | anaphora to a previous clause that a verb resume cannot pick up: no verb (`yal zazawan godogal`, *that surprised me*), a denied or unreal event (*Azawan didn't leave; that surprised me*), the claim not the event (*I doubt that*), several clauses (*he lied, then left; that's why*) | none | missing | dependents.md | Same fix as G-F18: backward stand-in `darr` / `dorr` / … = *that same content* | P2 |
 
 **Notes**
 
@@ -463,35 +224,9 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
-| G-J01 | *in* (containment) | hook `al` + `/b/`: `zodogal vezebal al bahazal.` — [hooks#extra-noun](hooks.md#extra-noun) | covered | hooks.md | — | — |
-| G-J02 | *on* (surface) | hook `aol` + `/b/`: `zubugal vehahel aol behahel.` — [hooks#extra-noun-intermediate](hooks.md#extra-noun-intermediate) | covered | hooks.md | — | — |
-| G-J03 | *under* / *below* | `hadahel bedehul` | covered | roles.md#viewpoint-vs-landmark | — | — |
-| G-J04 | *above* / *over* (vertical) | `gabahal bedehul` | covered | roles.md#viewpoint-vs-landmark | — | — |
-| G-J05 | *behind* / *in front of* | landmark lateral **`DIR th o`** + hosted `/b/` = the landmark's own facing: `gazavathol bahazal` *behind the house* — [roles#landmark-facing](../grammar/roles.md#landmark-facing) (parser change 2026-09-27) | covered | roles.md | — | — |
-| G-J06 | *between* | `hozam` + `/b/` join: `zalahen vehahel hozam bedehal bezedel bal.` — [relations#locative-relations](relations.md#locative-relations) | covered | relations.md | — | — |
-| G-J07 | *near* / *by* (place) | hook `om`: `zalahen vehahel om bezedel.` — [hooks#extra-noun-intermediate](hooks.md#extra-noun-intermediate); english.md *by* | covered | hooks.md | — | — |
 | G-J08 | *across* (to the other side) | `uol` *through* / `uom` *by way of*: `zazawan vowogal uol bebevul.` Loses the "side to side / other side" sense | awkward | hooks.md | Consider a stacked-vowel or `-m` reading for traversal-to-far-side, or teach `uol` + `ebevu` *span* idiom | P2 |
-| G-J09 | *through* | hook `uol`: `zazawan vowogal uol bahazal.` | covered | hooks.md | — | — |
-| G-J10 | *toward* | hook `oel`: `zazawan vowogal oel bedehal.` | covered | hooks.md | — | — |
-| G-J11 | *during* + NP | `hehum bavodel` | covered | dependents.md#dependent-clauses | — | — |
-| G-J12 | *before* / *after* + NP | `habum` / `hulam` + `/b/` | covered | dependents.md#dependent-clauses | — | — |
-| G-J13 | *since* (continuous from a point) | extra-noun `ul` *from* on a time `/b/` (`zazawan vehahel ul bavodel.`) — dependents.md#since (same as G-E15) | covered | dependents.md | — | — |
 | G-J14 | *by* (deadline) | english.md: clock `/h/` or `hodam barl` *until* — neither means "no later than" | awkward | numbers-applied.md | Use `hodam` + `/b/` with **-l** closed bound, or rank threshold (`ue`) on time; teach explicitly | P2 |
-| G-J15 | *for* (duration) | measure phrase `/b/`: `zazawan vowogal bagazem g+3.` — [numbers-applied#measure-phrases](numbers-applied.md#measure-phrases) | covered | numbers-applied.md | — | — |
-| G-J16 | *ago* | channel + signed measure offset: `zazawan thunom bagazem g-3 vowogal.` (*three hours ago*); `+` = *from now* | covered | knowing.md | Offset dates the event, never the moment of learning. Day / week / month / year units: G-J29 | — |
-| G-J17 | *from … to* (time) | `zazawan ul b_9 vowogal oel b_17.` | covered | numbers-applied.md#time | — | — |
-| G-J18 | *from … to* (place) | `zazawan ul bahazal vowogal ol bezedel.` — relations#locative-relations | covered | relations.md | — | — |
-| G-J19 | *with* (instrument) | hook `ael` *using*: `zazawan dubugal ael bebewul varadal.` | covered | hooks.md | — | — |
-| G-J20 | *by* (means / channel) | hook `aem`: `zazawan vezebel aem bagahol.` | covered | hooks.md | — | — |
-| G-J21 | *by* (manner, *by walking hastily*) | adverb `/h/`: `zazawan vowogal hadehom.` — [clause#adverbs-h](clause.md#adverbs-h) | covered | clause.md | — | — |
-| G-J22 | *with* (accompaniment) | join-relation `han`: `zazawan han balahen vowogal.` — [join-across-roles#join-relations](join-across-roles.md#join-relations) | covered | join-across-roles.md | — | — |
-| G-J23 | *without* | `huan` / `guan`: `zazawan huan balahen vowogal.` | covered | join-across-roles.md | — | — |
-| G-J24 | *like* (manner resemblance) | `homem` + `/b/`: `zodogal vezebal homem bazawan.` — [relations#similative](relations.md#similative) | covered | relations.md | — | — |
-| G-J25 | *to* (recipient / addressee) | unhosted `/b/`: `zazawan balahen dubugal vezebel.` — [clause#extra-nouns](clause.md#extra-nouns) | covered | clause.md | — | — |
 | G-J26 | *for* (beneficiary) | hook `el` *for* (intended get): `zazawan vugugal el balahen.`; proxy `hadem` for *on behalf of*. `el` is glossed "intended get", so *cooks for Alahen* (benefit to a person) vs *for a money-bag* (goal to get) is blurred | awkward | hooks.md | Clarify that `el` + person = beneficiary, or split beneficiary (`em`?) from goal-to-get | P2 |
-| G-J27 | source (*from*, *out of*) | `ul` / `ual` / `um`: `zazawan vowogal ual bahazal.` | covered | hooks.md | — | — |
-| G-J28 | goal (*to*, *into*, arrival) | `ol` *at* / `al` *in* after a verb of motion (`… vowogal ol bezedel.`); `oel` = direction only. Goal vs location not distinguished (`ol` = *at* and *to*) | covered | relations.md | — | — |
-| G-J29 | time units *day / week / month / year* | `azaza` *day*, `agade` *week*, `umuha` *month*, `avawe` *year* — [numbers-applied#stock-units](../grammar/numbers-applied.md#stock-units) | covered | numbers-applied.md | — | — |
 
 **Notes**
 

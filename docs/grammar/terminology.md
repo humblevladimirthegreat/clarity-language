@@ -46,6 +46,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **PLAN** | Intention-framing mood | `thumam` | [Intention](intention.md#plan-predict) |
 | **REACHING** | Emotion locus: reaching to change a target | `wonathumoer` | [Sakes](sakes.md#emotion-compose) |
 | **RECORDED** | Evidential: documented / playback / scheduled | `therum` | [Knowing](knowing.md#evidentiality) |
+| **REQUIRE** | Requirement (*must*) without a sake | `themehol` | [Sakes](sakes.md#requirement) |
 | **RESIDUE** | Episode standing: outcome still on the current tally | `thamom` | [Knowing](knowing.md#residue) |
 | **RESISTING** | Emotion locus: pushing against a target | `wonathumuer` | [Sakes](sakes.md#emotion-compose) |
 | **ROLE** | Emotion locus: felt in a capacity, not personally | `wonathumael` | [Sakes](sakes.md#emotion-compose) |

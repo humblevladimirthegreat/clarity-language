@@ -227,6 +227,9 @@ egar,th,🟢,deontic,PERMIT-tolerated,tacit permission (no one objected; nobody 
 erel,th,⛔,deontic,FORBID-disallowed,disallowed by a rule policy or formal ban,standing no-entry sign; the rule blocks the way,sakes.md#permission
 erem,th,⛔,deontic,FORBID-forbidden,forbidden by a person (speaker by default or the /b/ forbidder),no-entry sign put up by someone; a person blocks the way,sakes.md#permission
 erer,th,⛔,deontic,FORBID-frowned-on,tacitly disapproved (no one forbade it outright),no-entry sign half-raised; nobody said no but it is not welcome,sakes.md#permission
+emehol,th,📝,deontic,REQUIRE-rule,required by a rule policy or law (no one in particular demands it),memo of standing policy; a rule on paper says you must,sakes.md#requirement
+emehom,th,📝,deontic,REQUIRE-demanded,required by a person (speaker by default or the /b/ who demands it),memo handed to you by someone; a person says you must,sakes.md#requirement
+emehor,th,📝,deontic,REQUIRE-expected,expected by custom (no rule and no one demanding it),unwritten memo everyone knows; you are supposed to,sakes.md#requirement
 uxegal,th,🟢,deontic,CONSENT-contract,consent by binding agreement from the affected (the /b/ or else the actor); withdrawing it has terms,green light signed in advance by the one it happens to; they agreed on paper,sakes.md#consent
 uxegam,th,🟢,deontic,CONSENT-given,consent given outright by the affected (the /b/ or else the actor); revocable any time,green light from the one it happens to; they said yes,sakes.md#consent
 uxegar,th,🟢,deontic,CONSENT-assumed,consent assumed or inferred from the affected (the /b/ or else the actor),green light guessed from the one it happens to; I think they're OK with it,sakes.md#consent
