@@ -383,7 +383,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ululon* | `ululon` | | |
 | *Uhubun* | `uhubun` | | |
 | *pour* | `vorurul` | `orurul` *pour* | 🫗: water onto soil |
-| *harvest* | `vurugem` | `urugel` *rice plant* | 🌾: bringing the crop in |
+| *harvest* | `vurugem` | `urugel` *paddy* | 🌾: bringing the crop in |
 | *flower* | `ovowel` | | |
 | *tomato* | `odomal` | | |
 | *seedling* | `ezedel` | | |

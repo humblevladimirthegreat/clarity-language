@@ -397,7 +397,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *guard* | `ugugal` |
 | *craft* | `agaral` |
 | *person* | `eberel` |
-| *framed-picture* | `amerel` |
+| *frame* | `amerel` |
 | *palette* | `aledel` |
 | *red* | `aredel` |
 | **SAME** | `onunul` |
@@ -457,12 +457,12 @@ z-Ululon | [g-same | b-Azawan]
 z-guard | [g-same | b-Uhubun]
 :::
 
-**7.** *The person who is Azawan sees a framed-picture.*
+**7.** *The person who is Azawan sees a frame.*
 
 ::: details Show answer
 `zeberel gonunul bazawan damerel vejel.`
 
-[z-person | [g-SAME | b-Azawan]] | d-framed-picture | v-see
+[z-person | [g-SAME | b-Azawan]] | d-frame | v-see
 :::
 
 **8.** *The guard is not (identical to) Uhubun.*
@@ -565,9 +565,9 @@ z-Ululon | [[g-SAME | b-Uhubun] | g-not]
 
 ::: details Show answer
 
-z-framed-picture | g-red
+z-frame | g-red
 
-*The framed-picture is red.*
+*The frame is red.*
 :::
 
 **8.** `zululon gagaral gul.`

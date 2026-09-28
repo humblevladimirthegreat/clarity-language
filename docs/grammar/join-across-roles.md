@@ -195,7 +195,7 @@ When a noun or event is *framed* toward something (*cake with peanuts*, *walk wi
 
 > `zuragel gan babanul.`
 >
-> z-birthday-cake | [g-including | b-peanut]
+> z-birthday | [g-including | b-peanut]
 >
 > "Cake including / with peanuts."
 

@@ -623,7 +623,7 @@ English *enough* and *too* compare against **what an interest requires**. Agalan
 | **`zuhuhen`** | survival interest bar | *what safety needs* | `uhuhel` *shield* |
 | **`zonogon`** | relatedness interest bar | *what connection needs* | `onogol` *knot* |
 | **`zolozon`** | competence interest bar | *what getting it done needs* | `olozol` *toolbox* |
-| **`zalodon`** | autonomy interest bar | *what choice needs* | `alodol` *ballot-box* |
+| **`zalodon`** | autonomy interest bar | *what choice needs* | `alodol` *ballot* |
 | **`zaweron`** | pleasure interest bar | *what enjoyment needs* | `awerol` *strawberry* |
 
 Tie **`ae`** against a interest bar is *enough*. Rank **`e`** is *too much*, and **`ue`** is *not enough*.
@@ -711,7 +711,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *Uhubun* | `uhubun` | |
 | *sing* | `uzunul` | |
 | *artistry* | `abadum` | `abadul` *paintbrush* |
-| *showmanship* | `ohohom` | `ohohol` *hot dog* |
+| *showmanship* | `ohohom` | `ohohol` *hotdog* |
 | *Average* | `onunan` | `onunal` *yin-yang* |
 | *Typical* | `ahaman` | `ahamal` *hamster* |
 | *Professional* | `alaban` | `alabal` *lab coat* |
@@ -725,7 +725,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *Survival-interest* | `uhuhen` | `uhuhel` *shield* |
 | *Relatedness-interest* | `onogon` | `onogol` *knot* |
 | *Competence-interest* | `olozon` | `olozol` *toolbox* |
-| *Autonomy-interest* | `alodon` | `alodol` *ballot-box* |
+| *Autonomy-interest* | `alodon` | `alodol` *ballot* |
 | *Pleasure-interest* | `aweron` | `awerol` *strawberry* |
 | *artistry* | `abadum` | `abadul` *paintbrush* |
 

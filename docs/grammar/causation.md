@@ -67,7 +67,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. The out
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *seedling* | `ezedel` | |
-| *potted plant* | `obodel` | |
+| *house plant* | `obodel` | |
 | *tomato* | `odomal` | |
 | *flower* | `ovowel` | |
 | *window* | `uwunol` | |
@@ -99,12 +99,12 @@ z-seedling | [g-if | b-sun]
 z-Azawan | v-pour | [th-if | b-bucket]
 :::
 
-**3.** *A potted plant thrives only if there is a window.*
+**3.** *A house plant thrives only if there is a window.*
 
 ::: details Show answer
 `zobodel geberom buwunol.`
 
-z-potted-plant | [g-only-if | b-window]
+z-house-plant | [g-only-if | b-window]
 :::
 
 **4.** *Uhubun sees Azawan if there is a window.*

@@ -61,7 +61,7 @@ On a noun, the same root is **`guhanem`** (`dabogol guhanem bahamel` *a book for
 ### Proxy (*on behalf of*) {#proxy}
 <a id="on-behalf-of"></a>
 
-When English says someone **acts as another person’s agent** (*tells on behalf of Ululon*), keep the same hosted pair as [*like*](#similative). The relation word is **`hudagam`**. Put that person in `/b/` right after it. The subject still does the act; `/b/` is whose agency they use, not who hears the telling. (cue: 🪪 *id-card*: the card stands as an authorized face; `/b/` is that person)
+When English says someone **acts as another person’s agent** (*tells on behalf of Ululon*), keep the same hosted pair as [*like*](#similative). The relation word is **`hudagam`**. Put that person in `/b/` right after it. The subject still does the act; `/b/` is whose agency they use, not who hears the telling. (cue: 🪪 *id*: the card stands as an authorized face; `/b/` is that person)
 
 > `zazawan hudagam bululon vezehel.`
 >
@@ -69,13 +69,13 @@ When English says someone **acts as another person’s agent** (*tells on behalf
 >
 > "Azawan tells on behalf of Ululon."
 
-A recipient may follow a finished pair: `zazawan hudagam bululon buhubun vezehel` (*tells Uhubun on behalf of Ululon*). On a noun, the same root is **`gudagam`** (`dabogol gudagam bululon` *a book on behalf of Ululon*). Ordinary `zudagal` is still *an id-card*.
+A recipient may follow a finished pair: `zazawan hudagam bululon buhubun vezehel` (*tells Uhubun on behalf of Ululon*). On a noun, the same root is **`gudagam`** (`dabogol gudagam bululon` *a book on behalf of Ululon*). Ordinary `zudagal` is still *an id*.
 
 **Compare with:** unhosted `/b/` is still who hears the telling. *Using* a tool is a [hook](hooks.md#extra-noun). *A book for a hammer* as a swap is [exchange](#exchange). *In a house* is a hook (`al`). *Exclusively for* is a [join-relation](join-across-roles.md#join-relations), not this pair.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hudagam` / `gudagam`** | authorized agency | *on behalf of* | `udagal` *id-card* | 🪪: the card stands as their face |
+| **`hudagam` / `gudagam`** | authorized agency | *on behalf of* | `udagal` *id* | 🪪: the card stands as their face |
 
 
 
@@ -101,7 +101,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
 | *like* | `hurorom` | `urorol` *mirror* | 🪞: the image is of the model |
 | *in-exchange-for* | `huhanem` | `uhanel` *currency-exchange* | 💱: the arrows swap one side for the other |
-| *on-behalf-of* | `hudagam` | `udagal` *id-card* | 🪪: the card stands as their face |
+| *on-behalf-of* | `hudagam` | `udagal` *id* | 🪪: the card stands as their face |
 
 #### English → Agalan {#beginner-english-to-agalan}
 

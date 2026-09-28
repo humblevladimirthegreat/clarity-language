@@ -14,14 +14,14 @@ Six published roots are the interests you can name, and no other root takes the 
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`alodo`** | autonomy interest | *autonomy* (choice, agency, self-direction) | `alodol` *ballot-box* | 🗳️: voting is choosing for yourself |
+| **`alodo`** | autonomy interest | *autonomy* (choice, agency, self-direction) | `alodol` *ballot* | 🗳️: voting is choosing for yourself |
 | **`olozo`** | competence interest | *competence* (efficacy, skill, getting things to work) | `olozol` *toolbox* | 🧰: the kit that gets things working |
 | **`onogo`** | relatedness interest | *relatedness* (connection, belonging, care) | `onogol` *knot* | 🪢: ties people together |
 | **`awero`** | pleasure interest | *pleasure* (enjoyment, comfort, aesthetic payoff) | `awerol` *strawberry* | 🍓: sweetness you enjoy |
 | **`uhuhe`** | survival interest | *survival* (safety, health, material sufficiency) | `uhuhel` *shield* | 🛡️: what keeps you safe |
 | **`ege`** | an interest without picking among the five | *unspecified interest* | `egel` *egg* | 🥚: not yet a specific kind |
 
-**Compare with:** `zalodol` is a *ballot box*. `galodol` is ballot-box-like. Under `/ɡ/` with **`tha`** / **`thu`**, **`alodo`** is the *autonomy* interest.
+**Compare with:** `zalodol` is a *ballot*. `galodol` is ballot-like. Under `/ɡ/` with **`tha`** / **`thu`**, **`alodo`** is the *autonomy* interest.
 
 **Compare with:** *when* / *always* / *never* on `/h/` is a [restrictor](restrictors.md). This page names a **interest**.
 
@@ -44,7 +44,7 @@ On a *serves* word, **-l / -m / -r** say **when the payoff lands**: lasting, uns
 
 > `zawaral gonogothal.`
 >
-> z-wrapped-gift | g-relatedness-met-lasting
+> z-present | g-relatedness-met-lasting
 >
 > "My gift serves relatedness in the long term."
 
@@ -111,7 +111,7 @@ A interest word is a interest root with mid-word **`th`**, a stance vowel, and a
 
 **Intermediate** adds **`the`** (*ought this act for this interest*) and **`tho`** (*doing for this interest*). See [prescription](#interest-force) and [motive](#interest-preference).
 
-A word with no **`th`** is not a interest word: `galodol` is still ballot-box-like; `hawerol` is still strawberry as an adverb.
+A word with no **`th`** is not a interest word: `galodol` is still ballot-like; `hawerol` is still strawberry as an adverb.
 
 ### Personal possession {#personal-possession}
 <a id="stimulus"></a>
@@ -152,7 +152,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *wind* | `uwudul` | |
 | *fire* | `urel` | |
 | *stimulus* | `gobobum` | `obobul` *emphasis* |
-| *autonomy* | `alodol` | `alodol` *ballot-box* |
+| *autonomy* | `alodol` | `alodol` *ballot* |
 | *competence* | `olozol` | `olozol` *toolbox* |
 | *relatedness* | `onogol` | `onogol` *knot* |
 | *pleasure* | `awerol` | `awerol` *strawberry* |
@@ -582,19 +582,19 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *church* | `uhurul` | |
-| *prayer bead* | `abarel` | |
+| *rosary* | `abarel` | |
 | *candle* | `anedel` | |
 | *bell* | `obelel` | |
 | *ownership* | `oborum` | `oborul` *copyright* |
 | *stimulus* | `gobobum` | `obobul` *emphasis* |
 | *pray* | `vabal` | `abal` *pray* |
 | *kneel* | `vegenel` | `egenel` *kneel* |
-| *shush* | `vuzuhul` | `uzuhul` *shush* |
+| *hush* | `vuzuhul` | `uzuhul` *hush* |
 | *bow* | `vobowol` | `obowol` *bow* |
 | *scream* | `vazagal` | `azagal` *scream* |
 | *tell* | `vezehel` | `ezehel` *speech* |
 | *sleep* | `velebel` | `elebel` *sleep* |
-| *autonomy* | `alodol` | `alodol` *ballot-box* |
+| *autonomy* | `alodol` | `alodol` *ballot* |
 | *competence* | `olozol` | `olozol` *toolbox* |
 | *relatedness* | `onogol` | `onogol` *knot* |
 | *pleasure* | `awerol` | `awerol` *strawberry* |
@@ -655,12 +655,12 @@ z-Azawan | v-pray | th-relatedness-motive-internal
 z-Ululon | v-kneel | th-relatedness-motive-circumstantial
 :::
 
-**7.** *Uhubun shushes for relatedness (internal motive, as usual).*
+**7.** *Uhubun hushes for relatedness (internal motive, as usual).*
 
 ::: details Show answer
 `zuhubun vuzuhul thonogothom hual.`
 
-z-Uhubun | v-shush | th-relatedness-motive-internal | h-always-except
+z-Uhubun | v-hush | th-relatedness-motive-internal | h-always-except
 :::
 
 **8.** *Azawan bows for relatedness (a reason for now).*
@@ -711,12 +711,12 @@ z-Ululon | v-scream | th-survival-ought-invited | th-relatedness-motive-circumst
 z-Azawan | v-kneel | [th-PERMIT-granted | b-Uhubun]
 :::
 
-**14.** *Azawan shushes, assuming Ululon and Uhubun are OK with it.*
+**14.** *Azawan hushes, assuming Ululon and Uhubun are OK with it.*
 
 ::: details Show answer
 `zazawan vuzuhul thuxerener bululon buhubun bal.`
 
-z-Azawan | v-shush | [th-CONSENT-assumed | [b-Ululon | b-Uhubun | b-and]]
+z-Azawan | v-hush | [th-CONSENT-assumed | [b-Ululon | b-Uhubun | b-and]]
 :::
 
 **15.** *Resentful about the bell:* relatedness unmet; surge poured onto them.
@@ -769,18 +769,18 @@ z-Uhubun | v-kneel | th-relatedness-motive-internal
 
 ::: details Show answer
 
-z-Azawan | v-shush | th-relatedness-motive-provisional
+z-Azawan | v-hush | th-relatedness-motive-provisional
 
-*Azawan shushes for relatedness (a reason for now).*
+*Azawan hushes for relatedness (a reason for now).*
 :::
 
 **6.** `zabarel gawerothar.`
 
 ::: details Show answer
 
-z-prayer-bead | g-pleasure-met-immediate
+z-rosary | g-pleasure-met-immediate
 
-*My prayer bead is a pleasure right now.*
+*My rosary is a pleasure right now.*
 :::
 
 **7.** `zanedel walodothum gobobum.`

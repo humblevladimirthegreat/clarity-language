@@ -504,7 +504,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Uhubun* | `uhubun` | |
 | *boat* | `odadal` | |
 | *ship* | `uhul` | |
-| *life-ring* | `uluvel` | |
+| *life-buoy* | `uluvel` | |
 | *walk* | `awalal` | |
 | *north* / body *ahead* | `orohol` | |
 | *south* / body *back* | `ojul` | |
@@ -550,12 +550,12 @@ z-ship | g-east-th-Ululon
 y-command | v-walk | h-down
 :::
 
-**5.** *The life-ring is on Azawan’s left of the boat.*
+**5.** *The life-buoy is on Azawan’s left of the boat.*
 
 ::: details Show answer
 `zuluvel gewezethazawan bodadal.`
 
-z-life-ring | [g-west-th-Azawan | b-boat]
+z-life-buoy | [g-west-th-Azawan | b-boat]
 :::
 
 **6.** *You, walk left (your left).*
@@ -624,9 +624,9 @@ y-command | v-walk | h-up
 
 ::: details Show answer
 
-z-life-ring | [g-west-th-Ululon | b-boat]
+z-life-buoy | [g-west-th-Ululon | b-boat]
 
-*The life-ring is on Ululon’s left of the boat.*
+*The life-buoy is on Ululon’s left of the boat.*
 :::
 
 **6.** `yel zedonen vawalal hezazathedonen.`
