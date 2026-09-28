@@ -19,7 +19,7 @@ import { readdirSync, readFileSync, statSync } from "node:fs";
 import { basename, dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { emptySpanStats, lintAgalanMarkdown, lintAgalanSpans } from "../src/lint/agalan-docs.js";
+import { emptySpanStats, lintAgalanMarkdown, lintAgalanSpans, lintBareRoots } from "../src/lint/agalan-docs.js";
 import {
   formatMorphGlossFinding,
   lintMorphGlossMarkdown,
@@ -364,6 +364,10 @@ function main(): void {
       pages.set(ps.page, ps);
       pageMarkdown.set(ps.page, original);
       used = (id, index) => uses.push({ id, section: sectionAt(ps.sections, index) });
+    }
+    for (const issue of lintBareRoots(original, tables)) {
+      spanCount += 1;
+      console.error(`${rel}:${lineNumberAt(original, issue.index)}  \`${issue.text}\`  bare-root  (root ${issue.root} is not in the lexicon; write the current root)`);
     }
     for (const issue of lintAgalanSpans(original, tables, spanStats, used)) {
       spanCount += 1;

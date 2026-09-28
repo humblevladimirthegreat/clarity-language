@@ -521,3 +521,24 @@ export function lintAgalanSpans(
 
   return issues;
 }
+
+export type BareRootIssue = { text: string; index: number; root: string };
+
+/**
+ * A code span naming a root with no ending (`eze`, or PoS + root `theha`) reads as English to
+ * the span lint, so a respelled root would go stale unseen. The root must be published (or a
+ * listed compound stem). Single vowels after `th` are the interest / scope seam, not roots.
+ */
+export function lintBareRoots(text: string, tables: ClassifyTables): BareRootIssue[] {
+  const issues: BareRootIssue[] = [];
+  walkAgalanSpans(text, {
+    text: (span, index) => {
+      const m = /^(?:th|[zdbvgwhxy])?([aeou][a-z]+)$/.exec(span.trim());
+      const root = m?.[1];
+      if (!root || !isClarityRootShape(root)) return;
+      if (tables.published.has(root) || tables.compounds.has(root)) return;
+      issues.push({ text: span.trim(), index, root });
+    },
+  });
+  return issues;
+}

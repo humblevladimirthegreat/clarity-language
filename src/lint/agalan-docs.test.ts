@@ -246,3 +246,13 @@ describe("lintAgalanSpans", () => {
     );
   });
 });
+
+describe("lintBareRoots", () => {
+  it("flags a bare root missing from the lexicon, not a published one or a th seam", async () => {
+    const { loadDefaultTables } = await import("../parse/index.js");
+    const { lintBareRoots } = await import("./agalan-docs.js");
+    const tables = loadDefaultTables();
+    const found = lintBareRoots("Use `azawa`, `tha`, `theha`, and `ezuzo` or `thezuzo`.", tables).map((i) => i.text);
+    assert.deepEqual(found, ["ezuzo", "thezuzo"]);
+  });
+});
