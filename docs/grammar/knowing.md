@@ -518,11 +518,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Wri
 | *Ahaben* | `ahaben` | |
 | *tell* | `vezebel` | `ezebel` *speech* |
 | *see* | `vahahal` | `ahahal` *eye* |
-| *write* | `varadal` | |
 | *camera* | `agahol` | |
 | *newspaper* | `unuzel` | |
 | *radio* | `eredel` | |
 | *mute* | `vamuyul` | |
+| *sing* | `vezehel` | |
+| *departure* | `vadebal` | |
 | *punch* | `vabahel` | |
 | *scream* | `vezogel` | |
 | *MAY* | `thovom` | `ovol` *thought* |
@@ -891,11 +892,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Score l
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
 | *Alahen* | `alahen` | | |
-| *Ahaben* | `ahaben` | | |
-| *departure* | `vadebal` | | |
 | *walk* | `vowogal` | | |
-| *RESIDUE* | `thamom` | | |
-| *WITNESSED* | `thunom` | | |
 | *LIVE* | `thodum` | | |
 | *MAY* | `thovom` | | |
 | *blue* | `ubuhal` | | |
@@ -910,7 +907,6 @@ Short drills for Advanced. Try each item before opening **Show answer**. Score l
 | *sit* | `vehahel` | `ehahel` *chair* | |
 | *think* | `vevegal` | | |
 | *punch* | `vabahel` | | |
-| *scream* | `vezogel` | | |
 | *agent-teach* | `gaxedehol` | `edehol` *teach* | |
 | *agent-fight* | `gaxavadal` | `avadal` *fight* | |
 | *teach* | `vedehol` | | |

@@ -515,6 +515,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahaben* | `ahaben` |
 | *tell* | `vezebel` |
 | *see* | `vahahal` |
+| *sing* | `vezehel` |
 | *attest* | `vodul` |
 | *lie* (verb) | `valahal` |
 | *lie* (noun) | `alahal` |

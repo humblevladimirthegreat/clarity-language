@@ -617,7 +617,6 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *Social* | `ezon` | `ezol` *silhouettes* |
 | *my standard* | `omen` | `omel` *mirror* |
 | *speaker* | `amun` | |
-| *Everyone* | `olon` | `olol` *globe* |
 | *Some-interest* | `ugen` | `ugel` *egg* |
 | *Survival-interest* | `uhon` | `uhol` *shield* |
 | *Relatedness-interest* | `onan` | `onal` *knot* |

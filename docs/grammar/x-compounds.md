@@ -377,7 +377,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vahahal` | `ahahal` *eye* |
 | *scream* | `ezogel` | |
 | *punch* | `abahel` | |
-| *wave* | `eweval` | |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 

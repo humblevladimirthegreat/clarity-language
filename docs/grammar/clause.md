@@ -143,9 +143,9 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | | |
 | *Alahen* | `alahen` | | |
 | *Ahaben* | `ahaben` | | |
-| *bank* | `abagul` | | |
 | *money* | `amol` | | |
 | *angry* | `anegel` | | |
+| *very* | `welavam` | | |
 | *happy* | `gazaham` | `azahal` *smile* | 😊: the face of *happy* |
 | *sit* | `vehahel` | `ehahel` *chair* | 🪑: taking a seat |
 | *stand* | `vazadol` | `azadol` *stand* | 🧍: staying in place |
@@ -361,6 +361,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *tell* | `vezebel` |
 | *very* | `welavam` |
 | *train* | `edehal` |
+| *dog* | `odogal` |
+| *sleep* | `ezebal` |
+| *haste* | `hadehom` |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 

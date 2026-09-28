@@ -1,5 +1,6 @@
 /** The parsed Agalan examples on a docs page, as the docs lint reads them. */
 import { classify, type ClassifyTables } from "../parse/classify.js";
+import type { LexWord } from "../parse/types.js";
 import { wordConstructions } from "../parse/construction-trace.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import { parseWord } from "../parse/word.js";
@@ -14,6 +15,8 @@ export type Example = {
   cls: "sentence" | "phrase" | "word";
   words: FoundWord[];
   constructions: string[];
+  /** Resume words bound to an antecedent in the same example. */
+  boundResumes: Set<LexWord>;
 };
 
 function chunksOf(text: string): string[] {
@@ -26,10 +29,14 @@ function parseExample(text: string, cls: Example["cls"], tables: ClassifyTables)
       const { core } = peelLintChunk(text.trim());
       if (!isAgalanLintCandidate(core)) return null;
       const word = classify(parseWord(core), tables);
-      return { words: [{ word, unit: "", position: 0 }], constructions: wordConstructions(word) };
+      return { words: [{ word, unit: "", position: 0 }], constructions: wordConstructions(word), boundResumes: new Set() };
     }
     const result = parseWithTables(text.trim(), tables, { constructions: true });
-    return { words: flattenWords(result, chunksOf(text)), constructions: result.constructions ?? [] };
+    const boundResumes = new Set<LexWord>();
+    for (const bind of result.resolve?.anaphors ?? []) {
+      if (bind.antecedent) boundResumes.add(bind.pronoun);
+    }
+    return { words: flattenWords(result, chunksOf(text)), constructions: result.constructions ?? [], boundResumes };
   } catch {
     // The docs lint reports spans that do not parse.
     return null;

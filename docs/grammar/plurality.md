@@ -434,7 +434,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *sneak* | `vezevul` |
 | *punch* | `vabahel` |
 | *fight* | `vavadal` |
-| *see* | `vahahal` |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 

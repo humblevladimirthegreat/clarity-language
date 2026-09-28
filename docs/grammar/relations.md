@@ -537,7 +537,6 @@ Short drills for Advanced. Try each item before opening **Show answer**. The hos
 | *as-of.ledger* | `henem` |
 | *as-of.bookmark* | `humem` |
 | *challenge* | `gamadam` |
-| *tell* | `vezebel` |
 
 #### English → Agalan {#advanced-english-to-agalan}
 

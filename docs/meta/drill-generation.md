@@ -64,11 +64,9 @@ Every **morph** (role letter, ending, closed special, join vowel, speech act, �
 2. This row’s **Recycle** set ([how recycle is computed](#recycle))
 3. A closed punctuation / speech act already in recycle (`yol`, omitted **`yal`**, `.`)
 
-Every **content** root must be:
+Every **content** root (published lexicon or compound lemma, house names included) must be a row in this checkpoint’s **Roots used here**, and its English in the item must match that row. A root in this stage’s worked examples still needs a row. Overlay words need a row only when the drill English is that word.
 
-1. A house-cast name, **or**
-2. A published stem (lexicon / overlay / compound lemma) whose English in the item matches that row, listed in **Roots used here**, **or**
-3. A root that already appears in this stage’s worked examples (optional; do not prefer example-bank *walk* / *sleep* as the checkpoint action)
+Every **Roots used here** row must be used by at least one item. `build` checks both directions by root, not spelling: a row covers other roles, full-root resumes, role compounds, and viewpoint-lateral anchors on the same root, and a short resume counts through its antecedent.
 
 If you cannot certify a token, drop the item. Do not guess from English. Do not invent stems.
 
@@ -397,7 +395,7 @@ Use this after generating, or when asked only to review a file’s drills.
 
 For each spoiler token family:
 
-1. **Morph** tokens: **Introduces**, **Recycle**, or this stage’s examples. Content tokens: house names, published setting roots in **Roots used here**, or this stage’s examples. Else **fail**. Missing from the [example root bank](#root-bank) is **not** a fail for checkpoint content.
+1. **Morph** tokens: **Introduces**, **Recycle**, or this stage’s examples. Content tokens: a row in **Roots used here**. Else **fail**. A bank row no item uses → **fail**. Missing from the [example root bank](#root-bank) is **not** a fail for checkpoint content.
 2. Check [leak index](#leak-index) for **morphology**: first-taught later than this checkpoint → **fail**. Content roots are not leak-indexed.
 3. Same-slot sibling novelty not in **Sibling OK** → **fail**.
 4. English *I* / *you* as dummy people → **fail** (unless this stage teaches **`amu`/`ohe`**). *I* written with the **`SELF`** slot is not a dummy.

@@ -142,9 +142,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agalan | Same root as |
 |---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
 | *tent* | `ededul` | |
 | *backpack* | `abul` | |
 | *flashlight* | `avehal` | |
@@ -155,7 +152,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *autonomy* | `abal` | `abal` *ballot* |
 | *competence* | `udul` | `udul` *toolbox* |
 | *relatedness* | `onal` | `onal` *knot* |
-| *pleasure* | `ozul` | `ozul` *strawberry* |
 | *survival* | `uhol` | `uhol` *shield* |
 | *interest* | `ugel` | `ugel` *egg* |
 

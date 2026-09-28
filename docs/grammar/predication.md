@@ -105,7 +105,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Ahaben* | `ahaben` |
 | *guard* | `agadul` |
 | *police* | `abazal` |
-| *person* | `ebezal` |
 | *page* | `abehel` |
 | *blue* | `ubuhal` |
 | *red* | `eredal` |

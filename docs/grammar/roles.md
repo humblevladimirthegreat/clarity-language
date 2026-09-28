@@ -182,6 +182,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *punch* | `abahel` | |
 | *scream* | `ezogel` | |
 | *fight* | `avadal` | |
+| *run* | `arahal` | |
 | *bond* | `onam` | `onal` *knot* |
 
 #### English → Agalan {#beginner-english-to-agalan}

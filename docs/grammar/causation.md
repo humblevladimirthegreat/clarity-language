@@ -361,7 +361,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**. A f
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
-| *knob* | `anabal` | |
 | *overwhelm* | `ohaham` | `ohahal` *ocean* |
 | *bell* | `ebevol` | |
 | *pressure* | `agabem` | `agabel` *clamp* |

@@ -6,7 +6,8 @@
  * morph lines in translation-exercise spoilers) are compared to the parser.
  * Teach blocks and exercises with loose English must include a morph unless
  * parser output is trivially redundant with that loose line.
- * Translation **Roots used here** English is checked against the lexicon.
+ * Translation **Roots used here** English is checked against the lexicon; each
+ * bank lists every content root its drills use, and every row is used.
  * On the number pages, shorthand number examples need a
  * pronunciation row that matches the spoken form computed from the shorthand.
  * Mismatches, leftover ambiguity, and missing morph glosses fail the run.
@@ -26,7 +27,9 @@ import {
 } from "../src/lint/morph-gloss-docs.js";
 import {
   formatWordBankFinding,
+  formatWordBankUsageFinding,
   lintWordBankMarkdown,
+  lintWordBankUsage,
 } from "../src/lint/word-bank-docs.js";
 import {
   parseOverlayCsv,
@@ -96,7 +99,8 @@ function parseCli(argv: string[]): { paths: string[]; orderReport: boolean } {
 
 Checks backticked and fenced Agalan words under docs/grammar/.
 Morph-gloss mismatches, leftover ambiguity, missing morph glosses, coverage
-gaps, and translation word-bank English/lexicon mismatches fail.
+gaps, and translation word-bank English/lexicon mismatches fail. Word banks
+must list every drill content root, and every row must be used.
 --check-ambiguity is always on for the corpus (flag kept for callers).
 --order-report lists every learning-order finding (the default prints counts).
 Families not practiced in their page band's translation drill fail.`);
@@ -392,6 +396,10 @@ function main(): void {
     for (const finding of bankFindings) {
       bankCount += 1;
       console.log(formatWordBankFinding(rel, finding));
+    }
+    for (const finding of lintWordBankUsage(source, tables)) {
+      bankCount += 1;
+      console.log(formatWordBankUsageFinding(rel, finding));
     }
 
     if (dirname(file) === grammarDir && NUMBER_SPEECH_FILES.includes(basename(file))) {

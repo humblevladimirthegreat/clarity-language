@@ -228,7 +228,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *umbrella* | `amebel` | |
 | *coat* | `ogodul` | |
 | *key* | `egehul` | |
-| *purse* | `abezal` | |
 | *write* | `varadal` | |
 | *see* | `vahahal` | `ahahal` *eye* |
 | *sit* | `vehahel` | `ehahel` *chair* |
@@ -596,7 +595,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *tell* | `vezebel` | `ezebel` *speech* |
 | *attest* | `vodul` | |
 | *lie* | `valahal` | |
-| *punch* | `vabahel` | |
+| *sleep* | `ezebal` | |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 

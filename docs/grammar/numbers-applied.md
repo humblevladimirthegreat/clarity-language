@@ -209,8 +209,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 | *rock* | `aragal` | |
 | *spoon* | `uzubul` | |
 | *meter* | `ezezem` | `ezezel` *set-square* |
-| *gram* | `ababam` | `ababal` *pound* |
 | *time* | `adahal` | |
+| *measurement* | `uruham` | |
 | *walk* | `vowogal` | `owogal` *walk* |
 | *see* | `vahahal` | `ahahal` *eye* |
 | *punch* | `vabahel` | `abahel` *punch* |

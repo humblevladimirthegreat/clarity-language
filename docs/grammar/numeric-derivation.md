@@ -286,7 +286,6 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *hammer* | `vahavel` | `ahavel` *hammer* |
 | *pour* | `vobohel` | `obohel` *pour* |
 | *see* | `vahahal` | `ahahal` *eye* |
-| *melt* | `vemehul` | `emehul` *melt* |
 
 #### English → Agalan {#advanced-english-to-agalan}
 

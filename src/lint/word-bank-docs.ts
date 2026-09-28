@@ -8,7 +8,9 @@ import { senseFormEnding, senseFormRoot, type OverlayKind } from "../lexicon-sea
 import { senseLabel } from "../parse/morph-gloss.js";
 import { parseWord, WordParseError } from "../parse/word.js";
 import { lineNumberAt } from "../retie/tokens.js";
-import { hasSelfSlot } from "../learner-name.js";
+import { fillSelf, hasSelfSlot } from "../learner-name.js";
+import { collectExamples } from "../find/examples.js";
+import type { LexWord } from "../parse/types.js";
 
 export type WordBankFinding = {
   line: number;
@@ -240,7 +242,7 @@ function findRootsTable(
   lines: string[],
   start: number,
   end: number,
-): { rows: BankRow[] } | null {
+): { rows: BankRow[]; caption: number; end: number } | null {
   let caption = -1;
   for (let i = start; i < end; i++) {
     if (ROOTS_CAPTION_RE.test(lines[i]!)) {
@@ -280,7 +282,7 @@ function findRootsTable(
     });
     i += 1;
   }
-  return { rows };
+  return { rows, caption, end: i };
 }
 
 function parseSameRoot(cell: string): { agalan: string | null; english: string | null } {
@@ -325,6 +327,149 @@ function lineIndexToCharIndex(text: string, lineIndex: number): number {
     offset += lines[i]!.length + 1;
   }
   return offset;
+}
+
+export type WordBankUsageFinding = {
+  line: number;
+  kind: "missing" | "unused" | "no-bank";
+  /** Lexicon roots the finding is about (empty for `no-bank`). */
+  roots: string[];
+  /** The word as written: the drill use (`missing`) or the bank cell (`unused`). */
+  surface: string;
+};
+
+/**
+ * Word banks against their drills: every lexicon content root the drills use
+ * (answer spoilers and Agalan prompts, under the `####` direction headings) has
+ * a **Roots used here** row, and every row is used. Roots match, not spellings
+ * (`veyel` in the bank covers `zeyel`, a full-root resume, a role compound's
+ * inner root). Overlay words need no row, but a row for one must be used.
+ */
+export function lintWordBankUsage(text: string, tables: ClassifyTables): WordBankUsageFinding[] {
+  // `SELF` fills as the default learner root, so the `SELFn` row covers `SELF` uses.
+  const filled = fillSelf(text);
+  const lines = filled.split(/\r?\n/);
+  const lineStarts: number[] = [];
+  let offset = 0;
+  for (const line of lines) {
+    lineStarts.push(offset);
+    offset += line.length + 1;
+  }
+  const lineOf = (index: number): number => {
+    let lo = 0;
+    let hi = lineStarts.length - 1;
+    while (lo < hi) {
+      const mid = (lo + hi + 1) >> 1;
+      if (lineStarts[mid]! <= index) lo = mid;
+      else hi = mid - 1;
+    }
+    return lo;
+  };
+
+  const examples = collectExamples(filled, tables);
+  const findings: WordBankUsageFinding[] = [];
+  for (const range of practiceRanges(lines)) {
+    let drillStart = -1;
+    for (let i = range.start + 1; i < range.end; i++) {
+      if (/^#### /.test(lines[i]!)) {
+        drillStart = i;
+        break;
+      }
+    }
+    if (drillStart < 0) continue;
+
+    const used = new Set<string>();
+    const required = new Map<string, { line: number; surface: string }>();
+    for (const example of examples) {
+      const at = lineOf(example.index);
+      if (at < drillStart || at >= range.end) continue;
+      for (const { word } of example.words) {
+        // A bound resume's stem is a cut of its antecedent, which counts on its own.
+        if (example.boundResumes.has(word)) continue;
+        for (const { root, overlay } of vocabUses(word, tables)) {
+          used.add(root);
+          if (!overlay && !required.has(root)) required.set(root, { line: at + 1, surface: word.raw });
+        }
+      }
+    }
+
+    const table = findRootsTable(lines, range.start, drillStart);
+    if (!table) {
+      if (required.size > 0) {
+        findings.push({ line: range.start + 1, kind: "no-bank", roots: [], surface: "" });
+      }
+      continue;
+    }
+
+    const banked = new Set<string>();
+    for (const row of table.rows) {
+      if (!row.agalan) continue;
+      const roots = bankRoots(row.agalan, tables);
+      for (const root of roots) banked.add(root);
+      if (roots.length > 0 && !roots.some((root) => used.has(root))) {
+        findings.push({ line: row.lineIndex + 1, kind: "unused", roots, surface: row.agalan });
+      }
+    }
+    for (const [root, use] of required) {
+      if (!banked.has(root)) findings.push({ line: use.line, kind: "missing", roots: [root], surface: use.surface });
+    }
+  }
+  return findings.sort((a, b) => a.line - b.line);
+}
+
+/**
+ * Lexicon roots a word spells (published or compound stems): a numeric derivation keeps its host,
+ * a viewpoint lateral its anchor, and a `[…]` / `{…}` / `(…)` span the words inside it.
+ * `overlay` marks roots that only host a closed overlay here.
+ */
+function vocabUses(word: LexWord, tables: ClassifyTables): { root: string; overlay: boolean }[] {
+  const { family } = word;
+  if (family.kind === "writingSpan") {
+    if (family.bracket === "<") return [];
+    const inner: { root: string; overlay: boolean }[] = [];
+    for (const chunk of family.payload.split(/\s+/)) {
+      const core = chunk.replace(/^[^a-z]+|[^a-z]+$/g, "");
+      if (!core) continue;
+      try {
+        inner.push(...vocabUses(classify(parseWord(core), tables), tables));
+      } catch (error) {
+        // The span lint reports an interior that does not parse.
+        if (!(error instanceof WordParseError)) throw error;
+      }
+    }
+    return inner;
+  }
+  let roots = lexiconContentRoots(word);
+  if (family.kind === "x" && family.xFamily === "numeric") roots = family.leftRoots;
+  if (family.kind === "x" && family.xFamily === "lateral") roots = [...family.leftRoots, ...(family.rightRoots ?? [])];
+  const overlay = Boolean(word.overlay || word.hostOverlay);
+  return roots
+    .filter((root) => tables.published.has(root) || tables.compounds.has(root))
+    .map((root) => ({ root, overlay }));
+}
+
+function bankRoots(agalan: string, tables: ClassifyTables): string[] {
+  const surface = agalan.replace(/[.,!?]+$/, "");
+  try {
+    const morph = parseWord(surface);
+    if (isForeignPayload(morph.family)) return [];
+    return vocabUses(classify(morph, tables), tables).map((use) => use.root);
+  } catch (error) {
+    // The English check reports a bank cell that does not parse.
+    if (error instanceof WordParseError) return [];
+    throw error;
+  }
+}
+
+export function formatWordBankUsageFinding(relpath: string, finding: WordBankUsageFinding): string {
+  switch (finding.kind) {
+    case "missing":
+      return `${relpath}:${finding.line}  word-bank missing root  \`${finding.surface}\` uses ${finding.roots.join(", ")}, which has no **Roots used here** row`;
+    case "unused":
+      return `${relpath}:${finding.line}  word-bank unused row  \`${finding.surface}\` (${finding.roots.join(", ")}) is not used in the drills`;
+    case "no-bank":
+      return `${relpath}:${finding.line}  word-bank missing  translation practice uses content roots but has no **Roots used here** table`;
+  }
 }
 
 export function formatWordBankFinding(relpath: string, finding: WordBankFinding): string {
