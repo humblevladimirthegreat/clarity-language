@@ -346,6 +346,14 @@ describe("verifyRetiedSpans", () => {
     assert.match(failures[0]!.detail, /awala/);
   });
 
+  it("reports a tree change with no new resume link as info", () => {
+    const moved = mapOf(["ojo", "azava"]);
+    const spans = [{ before: "gojuthol bohohul.", after: "gazavathol bohohul.", index: 0, cls: "sentence" }];
+    const failures = verifyRetiedSpans(spans, moved, bridgeTables(moved));
+    assert.equal(failures.length, 1);
+    assert.equal(failures[0]!.level, "info");
+  });
+
   it("catches a rewrite that stops parsing", () => {
     const spans = [{ before: "zazawan vawalal.", after: "zululon vawalal vawalal zz.", index: 0, cls: "sentence" }];
     assert.equal(verifyRetiedSpans(spans, map, tables).length, 1);

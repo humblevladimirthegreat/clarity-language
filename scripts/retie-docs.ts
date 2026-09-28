@@ -7,8 +7,8 @@
  *      npm run retie-docs -- --map tmp/lexicon-retie-map.json --write
  *
  * Only spans the doc lint reads as Agalan are rewritten (plus `*emphasised*` prose citations);
- * other hits are listed for review. Rewritten sentences must parse the same way after the
- * retie, and `--write` re-lints the changed files.
+ * other hits are listed for review. A rewrite that stops parsing or moves an unmapped root
+ * blocks `--write`. A new resume link is a warning. Other parse-tree changes are info.
  */
 import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { dirname, join, relative } from "node:path";
@@ -156,6 +156,8 @@ function main(): void {
   const sources = new Map(files.map((file) => [file, readFileSync(file, "utf8")]));
   let total = 0;
   let blocking = 0;
+  let warnings = 0;
+  let info = 0;
   const written: { file: string; text: string }[] = [];
 
   const collisions = checkMapCollisions(map, {
@@ -177,9 +179,18 @@ function main(): void {
       console.log(`${rel}:${lineNumberAt(original, review.index)}  review  \`${review.text}\`  (${review.reason})`);
     }
     for (const failure of verifyRetiedSpans(spans, map, tables)) {
-      blocking += 1;
       const line = lineNumberAt(original, failure.span.index);
-      console.error(`${rel}:${line}  verify  \`${failure.span.before}\` → \`${failure.span.after}\`  (${failure.detail})`);
+      const rendered = `${rel}:${line}  ${failure.level}  \`${failure.span.before}\` → \`${failure.span.after}\`  (${failure.detail})`;
+      if (failure.level === "info") {
+        info += 1;
+        console.log(rendered);
+      } else if (failure.level === "warning") {
+        warnings += 1;
+        console.warn(rendered);
+      } else {
+        blocking += 1;
+        console.error(rendered);
+      }
     }
     if (changes.length === 0) {
       continue;
@@ -203,7 +214,7 @@ function main(): void {
   }
 
   const filesChanged = written.length + (compoundChanges.length > 0 ? 1 : 0);
-  const summary = `${total} reties in ${filesChanged} files; ${reviewCount} to review; ${blocking} blocking`;
+  const summary = `${total} reties in ${filesChanged} files; ${reviewCount} to review; ${warnings} warning; ${info} info; ${blocking} blocking`;
   if (!options.write) {
     console.log(`Dry-run: ${summary}. Pass --write to apply.`);
     return;

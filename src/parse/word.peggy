@@ -130,7 +130,7 @@ function separatorVowel(markerV) {
     "al", "am", "ol", "om", "el", "em", "ul", "um",
   ];
   const ROOT_VOWELS = "aeou";
-  const ROOT_CONS = "hwdjbgzmnvlr";
+  const ROOT_CONS = "hwdyjbgzmnvlr";
 
   function isVcvRoot(root) {
     if (!root || root.length % 2 === 0) return false;
@@ -712,7 +712,7 @@ hookCompound
     }
 
 HookCompoundCite
-  = chars:$([aeou] [aeouhwdjbgzmnvlr]+)
+  = chars:$([aeou] [aeouhwdyjbgzmnvlr]+)
     &{ return splitHookCompound(chars) != null; }
     { return chars; }
 
@@ -829,4 +829,4 @@ RootTail
     }
 
 Onset
-  = [hwdjbgzmnvlr]
+  = [hwdyjbgzmnvlr]

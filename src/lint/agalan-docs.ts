@@ -94,8 +94,8 @@ function looksLikeFullSpelledWord(core: string): boolean {
   if (unmatchedBrackets(core)) return false;
   if (/^(?:th|[zdbvgwhxyj])[+#_]$/.test(core)) return false;
   if (hasMorphGlyph(core)) return true;
-  if (/^(?:th|[zdbvgwhxyj])[aeou](?:[hwdjbgzmnvlr][aeou])+[lmnr]x?$/.test(core)) return true;
-  if (/^[aeou](?:[hwdjbgzmnvlr][aeou])+[lmnr]x?$/.test(core)) return true;
+  if (/^(?:th|[zdbvgwhxyj])[aeou](?:[hwdyjbgzmnvlr][aeou])+[lmnr]x?$/.test(core)) return true;
+  if (/^[aeou](?:[hwdyjbgzmnvlr][aeou])+[lmnr]x?$/.test(core)) return true;
   return false;
 }
 

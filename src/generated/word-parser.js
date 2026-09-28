@@ -135,7 +135,7 @@ function separatorVowel(markerV) {
     "al", "am", "ol", "om", "el", "em", "ul", "um",
   ];
   const ROOT_VOWELS = "aeou";
-  const ROOT_CONS = "hwdjbgzmnvlr";
+  const ROOT_CONS = "hwdyjbgzmnvlr";
 
   function isVcvRoot(root) {
     if (!root || root.length % 2 === 0) return false;
@@ -412,11 +412,11 @@ function peg$parse(input, options) {
   const peg$r6 = /^[aeou]/;
   const peg$r7 = /^[lmn]/;
   const peg$r8 = /^[lm]/;
-  const peg$r9 = /^[aeouhwdjbgzmnvlr]/;
+  const peg$r9 = /^[aeouhwdyjbgzmnvlr]/;
   const peg$r10 = /^[yj]/;
   const peg$r11 = /^[zdbvgwhx]/;
   const peg$r12 = /^[lmnr]/;
-  const peg$r13 = /^[hwdjbgzmnvlr]/;
+  const peg$r13 = /^[hwdyjbgzmnvlr]/;
 
   const peg$e0 = peg$classExpectation([" ", "\t", "\n", "\r"], false, false, false);
   const peg$e1 = peg$anyExpectation();
@@ -491,7 +491,7 @@ function peg$parse(input, options) {
   const peg$e70 = peg$classExpectation(["l", "m", "n"], false, false, false);
   const peg$e71 = peg$literalExpectation("x", false);
   const peg$e72 = peg$classExpectation(["l", "m"], false, false, false);
-  const peg$e73 = peg$classExpectation(["a", "e", "o", "u", "h", "w", "d", "j", "b", "g", "z", "m", "n", "v", "l", "r"], false, false, false);
+  const peg$e73 = peg$classExpectation(["a", "e", "o", "u", "h", "w", "d", "y", "j", "b", "g", "z", "m", "n", "v", "l", "r"], false, false, false);
   const peg$e74 = peg$literalExpectation("rl", false);
   const peg$e75 = peg$literalExpectation("rm", false);
   const peg$e76 = peg$literalExpectation("rn", false);
@@ -499,7 +499,7 @@ function peg$parse(input, options) {
   const peg$e78 = peg$classExpectation(["y", "j"], false, false, false);
   const peg$e79 = peg$classExpectation(["z", "d", "b", "v", "g", "w", "h", "x"], false, false, false);
   const peg$e80 = peg$classExpectation(["l", "m", "n", "r"], false, false, false);
-  const peg$e81 = peg$classExpectation(["h", "w", "d", "j", "b", "g", "z", "m", "n", "v", "l", "r"], false, false, false);
+  const peg$e81 = peg$classExpectation(["h", "w", "d", "y", "j", "b", "g", "z", "m", "n", "v", "l", "r"], false, false, false);
 
   function peg$f0(word) {    return word;  }
   function peg$f1(head, w) {    return w;  }

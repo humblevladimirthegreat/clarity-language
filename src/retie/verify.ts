@@ -13,9 +13,13 @@ import { parse } from "../parse/index.js";
 
 import type { RetiedSpan } from "./markdown.js";
 
+export type RetieVerifyLevel = "blocking" | "warning" | "info";
+
 export type RetieVerifyFailure = {
   span: RetiedSpan;
   detail: string;
+  /** `warning` is a new resume link. `info` is any other tree change. Neither blocks. */
+  level: RetieVerifyLevel;
 };
 
 /** Keys that carry spelling or lexicon text, not structure. */
@@ -59,12 +63,19 @@ function shapeOf(value: unknown): Shape {
   return { structure, roots, resume };
 }
 
-function tryParse(text: string, tables: ClassifyTables): { shape: Shape } | { error: string } {
+function tryParse(text: string, tables: ClassifyTables): { shape: Shape; value: unknown } | { error: string } {
   try {
-    return { shape: shapeOf(parse(text.trim(), tables)) };
+    const value = parse(text.trim(), tables);
+    return { shape: shapeOf(value), value };
   } catch (error) {
     return { error: (error instanceof Error ? error.message : String(error)).split("\n")[0]! };
   }
+}
+
+/** Pronouns the resolve pass bound as resumes. */
+function anaphorRaws(value: unknown): string[] {
+  const anaphors = (value as { resolve?: { anaphors?: { pronoun?: { raw?: string } }[] } }).resolve?.anaphors ?? [];
+  return anaphors.map((anaphor) => anaphor.pronoun?.raw ?? "");
 }
 
 /** A short resume stem respelled from its moved antecedent (`aza` → `ulu` after `azawa` → `ululo`). */
@@ -132,11 +143,21 @@ export function verifyRetiedSpans(
     if ("error" in before) continue; // already broken before the retie; the lint reports it
     const after = tryParse(span.after, tables);
     if ("error" in after) {
-      failures.push({ span, detail: `parsed before the retie, not after: ${after.error}` });
+      failures.push({ span, level: "blocking", detail: `parsed before the retie, not after: ${after.error}` });
       continue;
     }
     if (before.shape.structure !== after.shape.structure) {
-      failures.push({ span, detail: "parse structure changed" });
+      const beforeLinks = anaphorRaws(before.value);
+      const afterLinks = anaphorRaws(after.value);
+      if (afterLinks.length > beforeLinks.length) {
+        failures.push({
+          span,
+          level: "warning",
+          detail: `resume link appeared (${beforeLinks.length} → ${afterLinks.length}: ${afterLinks.join(", ")}); the example may need a different antecedent`,
+        });
+      } else {
+        failures.push({ span, level: "info", detail: "parse structure changed" });
+      }
       continue;
     }
     const expected = before.shape.roots.map((root) => map.get(root) ?? root);
@@ -153,6 +174,7 @@ export function verifyRetiedSpans(
       const i = bad >= 0 ? bad : expected.length;
       failures.push({
         span,
+        level: "blocking",
         detail: `root ${before.shape.roots[i] ?? "∅"} became ${after.shape.roots[i] ?? "∅"}, expected ${expected[i] ?? "∅"}`,
       });
     }
