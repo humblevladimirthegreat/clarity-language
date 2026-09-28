@@ -100,6 +100,7 @@ function featureConstructions(word: LexWord): string[] {
   if (family.kind === "joinMarker" && !word.overlay) {
     const { series } = family;
     if (word.reading === "standIn") return [`standIn.${series}`];
+    if (word.reading === "standInBack") return [`standInBack.${series}`];
     if (word.reading === "restrictor") return [`restrictor.${RESTRICTOR_GROUP[series as keyof typeof RESTRICTOR_GROUP]}`];
     if (word.pos === "y") {
       if (series.length > 1) return [`polar.${POLAR_GROUP[series as keyof typeof POLAR_GROUP]}`];

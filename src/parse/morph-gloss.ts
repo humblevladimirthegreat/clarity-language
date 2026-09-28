@@ -1139,6 +1139,16 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
     return namedContent[series] ?? "sentence-content";
   }
 
+  if (word.reading === "standInBack") {
+    const backContent: Record<string, string> = {
+      a: "that-same-claim",
+      o: "that-same-question",
+      e: "that-same-instruction",
+      u: "that-same-prohibition",
+    };
+    return backContent[series] ?? "that-same-content";
+  }
+
   if (word.reading === "joinAct") return JOIN_ACT[series] ?? "join-act";
   if (word.reading === "joinRelation") {
     if (word.pos === "h" && series === "u") return "refusing";

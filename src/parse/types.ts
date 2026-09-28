@@ -4,7 +4,7 @@ import type { OverlayKind } from "../lexicon-search.js";
 export type Pos = "z" | "d" | "b" | "v" | "g" | "w" | "h" | "th" | "x" | "y";
 
 /** Word endings, plus stand-in clusters `-rl` / `-rm` / lexicalized `-rn`. */
-export type Ending = "l" | "m" | "n" | "r" | "rl" | "rm" | "rn";
+export type Ending = "l" | "m" | "n" | "r" | "rl" | "rm" | "rn" | "rth";
 
 /** Writing-style number marker symbols. */
 export type WritingMarker = "+" | "-" | "#" | "#-" | "_" | "+-" | "#_";
@@ -137,6 +137,7 @@ export type LexReading =
   | "join"
   | "standIn"
   | "standInNamed"
+  | "standInBack"
   | "joinAct"
   | "joinRelation"
   | "number"

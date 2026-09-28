@@ -210,6 +210,7 @@ export const WORD_READING_CONSTRUCTIONS: Record<Exclude<LexReading, OverlayOnlyR
   join: { anchor: "joins.md#and-lists-a", summary: "join" },
   standIn: { anchor: "dependents.md#dependent-clauses", summary: "stand-in" },
   standInNamed: { anchor: "dependents.md#stand-in-roles", summary: "named stand-in" },
+  standInBack: { anchor: "dependents.md#stand-in-back", summary: "backward stand-in" },
   number: { anchor: "numbers.md#counts", summary: "number" },
   unknown: { anchor: "spans.md#writing", summary: "unclassified root" },
 };
@@ -222,6 +223,7 @@ export const WORD_ENDING_CONSTRUCTIONS: Record<Ending, ConstructionEntry> = {
   rl: { anchor: "dependents.md#dependent-clauses", summary: "-rl stand-in" },
   rm: { anchor: "dependents.md#stand-in", summary: "-rm stand-in" },
   rn: { anchor: "dependents.md#stand-in-roles", summary: "-rn named stand-in" },
+  rth: { anchor: "dependents.md#stand-in-back", summary: "-rth backward stand-in" },
 };
 
 export const WORD_PLURAL_CONSTRUCTIONS: Record<Exclude<Pos, "w" | "h" | "th" | "x">, ConstructionEntry> = {
@@ -408,6 +410,13 @@ export const STAND_IN_CONSTRUCTIONS: Record<Vowel, ConstructionEntry> = {
   u: { anchor: "dependents.md#stand-in", summary: "durl lest" },
 };
 
+export const STAND_IN_BACK_CONSTRUCTIONS: Record<Vowel, ConstructionEntry> = {
+  a: { anchor: "dependents.md#stand-in-back", summary: "darth that same claim" },
+  o: { anchor: "dependents.md#stand-in-back", summary: "dorth that same question" },
+  e: { anchor: "dependents.md#stand-in-back", summary: "derth that same instruction" },
+  u: { anchor: "dependents.md#stand-in-back", summary: "durth that same don't" },
+};
+
 /** Hook forms (hooks.md). */
 export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "er" | "or" | "ur", ConstructionEntry> = {
   ar: { anchor: "hooks.md#hook-resume", summary: "ar resume hook" },
@@ -497,6 +506,7 @@ export const CONSTRUCTIONS: ReadonlyMap<string, ConstructionEntry> = new Map([
   ...prefixed("polar", POLAR_CONSTRUCTIONS),
   ...prefixed("restrictor", RESTRICTOR_CONSTRUCTIONS),
   ...prefixed("standIn", STAND_IN_CONSTRUCTIONS),
+  ...prefixed("standInBack", STAND_IN_BACK_CONSTRUCTIONS),
   ...prefixed("hook", HOOK_FORM_CONSTRUCTIONS),
   ...prefixed("span", SPAN_FEATURE_CONSTRUCTIONS),
   ...prefixed("role", ROLE_FEATURE_CONSTRUCTIONS),

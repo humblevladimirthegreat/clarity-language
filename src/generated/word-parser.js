@@ -397,8 +397,9 @@ function peg$parse(input, options) {
   const peg$c59 = "rl";
   const peg$c60 = "rm";
   const peg$c61 = "rn";
-  const peg$c62 = "eo";
-  const peg$c63 = "y";
+  const peg$c62 = "rth";
+  const peg$c63 = "eo";
+  const peg$c64 = "y";
 
   const peg$r0 = /^[ \t\n\r]/;
   const peg$r1 = /^[[{(]/;
@@ -489,11 +490,12 @@ function peg$parse(input, options) {
   const peg$e71 = peg$literalExpectation("rl", false);
   const peg$e72 = peg$literalExpectation("rm", false);
   const peg$e73 = peg$literalExpectation("rn", false);
-  const peg$e74 = peg$literalExpectation("eo", false);
-  const peg$e75 = peg$literalExpectation("y", false);
-  const peg$e76 = peg$classExpectation(["z", "d", "b", "v", "g", "w", "h", "x"], false, false, false);
-  const peg$e77 = peg$classExpectation(["l", "m", "n", "r"], false, false, false);
-  const peg$e78 = peg$classExpectation(["h", "w", "d", "y", "b", "g", "z", "m", "n", "v", "l", "r"], false, false, false);
+  const peg$e74 = peg$literalExpectation("rth", false);
+  const peg$e75 = peg$literalExpectation("eo", false);
+  const peg$e76 = peg$literalExpectation("y", false);
+  const peg$e77 = peg$classExpectation(["z", "d", "b", "v", "g", "w", "h", "x"], false, false, false);
+  const peg$e78 = peg$classExpectation(["l", "m", "n", "r"], false, false, false);
+  const peg$e79 = peg$classExpectation(["h", "w", "d", "y", "b", "g", "z", "m", "n", "v", "l", "r"], false, false, false);
 
   function peg$f0(word) {    return word;  }
   function peg$f1(head, w) {    return w;  }
@@ -5316,6 +5318,15 @@ function peg$parse(input, options) {
           s0 = peg$FAILED;
           if (peg$silentFails === 0) { peg$fail(peg$e73); }
         }
+        if (s0 === peg$FAILED) {
+          if (input.substr(peg$currPos, 3) === peg$c62) {
+            s0 = peg$c62;
+            peg$currPos += 3;
+          } else {
+            s0 = peg$FAILED;
+            if (peg$silentFails === 0) { peg$fail(peg$e74); }
+          }
+        }
       }
     }
 
@@ -5365,12 +5376,12 @@ function peg$parse(input, options) {
               if (peg$silentFails === 0) { peg$fail(peg$e38); }
             }
             if (s0 === peg$FAILED) {
-              if (input.substr(peg$currPos, 2) === peg$c62) {
-                s0 = peg$c62;
+              if (input.substr(peg$currPos, 2) === peg$c63) {
+                s0 = peg$c63;
                 peg$currPos += 2;
               } else {
                 s0 = peg$FAILED;
-                if (peg$silentFails === 0) { peg$fail(peg$e74); }
+                if (peg$silentFails === 0) { peg$fail(peg$e75); }
               }
               if (s0 === peg$FAILED) {
                 if (input.substr(peg$currPos, 2) === peg$c32) {
@@ -5673,11 +5684,11 @@ function peg$parse(input, options) {
     if (s0 === peg$FAILED) {
       s0 = peg$currPos;
       if (input.charCodeAt(peg$currPos) === 121) {
-        s1 = peg$c63;
+        s1 = peg$c64;
         peg$currPos++;
       } else {
         s1 = peg$FAILED;
-        if (peg$silentFails === 0) { peg$fail(peg$e75); }
+        if (peg$silentFails === 0) { peg$fail(peg$e76); }
       }
       if (s1 !== peg$FAILED) {
         peg$savedPos = s0;
@@ -5691,7 +5702,7 @@ function peg$parse(input, options) {
           peg$currPos++;
         } else {
           s1 = peg$FAILED;
-          if (peg$silentFails === 0) { peg$fail(peg$e76); }
+          if (peg$silentFails === 0) { peg$fail(peg$e77); }
         }
         if (s1 !== peg$FAILED) {
           peg$savedPos = s0;
@@ -5737,7 +5748,7 @@ function peg$parse(input, options) {
             peg$currPos++;
           } else {
             s1 = peg$FAILED;
-            if (peg$silentFails === 0) { peg$fail(peg$e77); }
+            if (peg$silentFails === 0) { peg$fail(peg$e78); }
           }
           if (s1 !== peg$FAILED) {
             peg$savedPos = s0;
@@ -5870,7 +5881,7 @@ function peg$parse(input, options) {
       peg$currPos++;
     } else {
       s0 = peg$FAILED;
-      if (peg$silentFails === 0) { peg$fail(peg$e78); }
+      if (peg$silentFails === 0) { peg$fail(peg$e79); }
     }
 
     return s0;

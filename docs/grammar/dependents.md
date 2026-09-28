@@ -373,6 +373,35 @@ English *unless* is *if … not*: keep the *if* pole **`thodom`** and type `/b/`
 
 **Compare with:** *tells that Alahen sits* is **`darl`**. *Tells Alahen to sit* is **`derl`**. *Walks so that Azawan sits* is **`hagom barl`**.
 
+### Pointing back (`-rth`) {#stand-in-back}
+
+A stand-in on **`-rl`** / **`-rm`** holds a slot for the sentence that comes **next**. To point **back** at content already said, end the stand-in in **`-rth`**: English *so* in *Azawan says so*, or *that* in *Alahen doubts that*. Nothing follows it; the sentence ends as usual.
+
+The vowel still types the content, and the word stands for the most recent content of that type:
+
+| Stand-in | Points back to | English |
+|----------|----------------|---------|
+| **`darth`** | the last statement | *so* / *that* |
+| **`dorth`** | the last question | *that question* |
+| **`derth`** | the last instruction | *that (instruction)* |
+| **`durth`** | the last *not* / *lest* content | *not* (*I hope not*) |
+
+> `zalahen vehahel. zazawan vezebel darth.`
+>
+> z-Alahen | v-sit . z-Azawan | v-tell | d-that-same-claim
+>
+> "Alahen sits. Azawan says so."
+
+> `zazawan balahen vezebel durl vehahel. zalahen vuhudem durth.`
+>
+> z-Azawan | b-Alahen | v-tell | d-lest-clause | v-sit . z-Alahen | v-wish | d-that-same-prohibition
+>
+> "Azawan tells Alahen not to sit. Alahen wishes not to, too."
+
+The content can be anything a sentence says: a verbless sentence, a denied event, or several sentences chained with `/x/`. A [resume](pronouns.md#resume-r) **-r** picks up one word; **`-rth`** picks up what was said.
+
+Other role letters work the same way as the forward stand-in: **`barth`** after a pole (*because of that*), **`zarth`** as the subject.
+
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
@@ -396,6 +425,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *tell* | `vezebel` |
 | *to-clause* | `derl` |
 | *lest-clause* | `durl` |
+| *that-same-claim* | `darth` |
 | *next* | `xevavel` |
 | *however* | `xazel` |
 | *meanwhile* | `xagagal` |
@@ -416,6 +446,14 @@ z-Azawan | v-sit . x-next | z-Alahen | v-run
 `zazawan balahen vezebel durl vadebal.`
 
 z-Azawan | b-Alahen | v-tell | d-lest-clause | v-departure
+:::
+
+**3.** *Alahen runs. Ahaben says so.*
+
+::: details Show answer
+`zalahen varahal. zahaben vezebel darth.`
+
+z-Alahen | v-run . z-Ahaben | v-tell | d-that-same-claim
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}

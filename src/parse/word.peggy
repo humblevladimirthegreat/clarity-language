@@ -739,7 +739,7 @@ StandInSeries
   = "a" / "e" / "o" / "u"
 
 StandInCoda
-  = "rl" / "rm" / "rn"
+  = "rl" / "rm" / "rn" / "rth"
 
 JoinSeries
   = "ao" / "ua" / "uo" / "ae" / "oe" / "eo" / "ue" / "a" / "e" / "o" / "u"

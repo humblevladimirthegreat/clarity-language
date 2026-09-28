@@ -2,6 +2,8 @@
 
 Editors only — not linked from grammar pages. Findings ledger for the expressiveness review (plan: `docs/proposals/expressiveness-review.md`). Lists English jobs Agazan handles awkwardly or not at all (**gaps**, `G-nn`) and unused forms with an intuitive reading (**extensions**, `E-nn`). Unused **forms** live in [unassigned-reserved](unassigned-reserved.md); this page tracks **jobs**.
 
+Once a row is resolved (the form or recipe is applied to the grammar docs), **remove the row** — this ledger lists only open jobs, not covered ones.
+
 Grammar pages teach only settled readings. Do not drill open rows as if taught ([drill-generation](drill-generation.md)).
 
 ## Fields
@@ -164,7 +166,6 @@ No open rows.
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
 | G-F12 | bare *me too* (no verb) | `zamun zam.` parses but is untaught; taught route needs the verb resume (G-F11) | extension candidate | pronouns.md, joins.md | Consider teaching subject + `zam` / `zal` fragment after a claim as *me too* (add-join reading is guessable) | P3 |
-| G-F18 | clausal pro-form *so* in a complement (*Azawan says so*, *I hope so*, *I told you so*, *I hope not*) | none for a prior plain clause: `darr` fails to parse; span resume `d[=]` only works if the earlier content was a span ([spans](spans.md)); `darn` = *a statement*, not *that one*; `zalahen vaen xar` is untaught | missing | dependents.md | Stand-in resume: stand-in + **-r** (e.g. `darr` / `dorr` / `durr`) = *that same content* (most recent claim); negative *not* via `u` vowel or `darr zul` — guessable from resume **-r** | P2 |
 | G-F19 | ellipsis with modal / ability (*Azawan can sing and so can I*) | verb resume `vezeher` drops the ability; would need `x` ability on the resume, not taught ([intention#incapability](intention.md#incapability)) | awkward | intention.md, pronouns.md | State whether ability **`x` + vowel** may sit on a resumed verb (`/v/ … -r` stem) or on `eze`; add example | P3 |
 
 **Notes**
@@ -208,9 +209,7 @@ No open rows.
 
 ### I. Deixis and reference
 
-| ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
-|----|---------------------------|---------------|---------|-------------|----------|----------|
-| G-I30 | anaphora to a previous clause that a verb resume cannot pick up: no verb (`yal zazawan godogal`, *that surprised me*), a denied or unreal event (*Azawan didn't leave; that surprised me*), the claim not the event (*I doubt that*), several clauses (*he lied, then left; that's why*) | none | missing | dependents.md | Same fix as G-F18: backward stand-in `darr` / `dorr` / … = *that same content* | P2 |
+No open rows.
 
 **Notes**
 

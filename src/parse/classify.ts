@@ -201,6 +201,15 @@ export function isStandIn(word: MorphWord): boolean {
   return word.ending === "rl" || word.ending === "rm";
 }
 
+/** Backward stand-in (`darth` / `durth` / …): that same content, already said. */
+export function isBackStandIn(word: MorphWord): boolean {
+  if (word.family.kind !== "joinMarker") return false;
+  if (word.pos === "x" || word.pos === "y" || word.pos === "v" || !word.pos) return false;
+  const series = word.family.series;
+  if (series !== "a" && series !== "o" && series !== "e" && series !== "u") return false;
+  return word.ending === "rth";
+}
+
 /** Lexicalized content names: one-vowel `-rn`, or stacked-vowel `-n`. */
 export function isNamedStandIn(word: MorphWord): boolean {
   if (word.family.kind !== "joinMarker") return false;
@@ -213,7 +222,7 @@ export function isNamedStandIn(word: MorphWord): boolean {
 function isFenceJoin(word: MorphWord): boolean {
   if (word.family.kind !== "joinMarker") return false;
   if (!word.pos || word.pos === "y") return false;
-  if (isStandIn(word) || isNamedStandIn(word)) return false;
+  if (isStandIn(word) || isNamedStandIn(word) || isBackStandIn(word)) return false;
   return !isRestrictor(word);
 }
 
@@ -542,6 +551,10 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
     return { ...word, reading: "standInNamed" };
   }
 
+  if (isBackStandIn(word)) {
+    return { ...word, reading: "standInBack" };
+  }
+
   if (isFenceJoin(word) && word.family.kind === "joinMarker") {
     return {
       ...word,
@@ -657,6 +670,7 @@ export type ClassifyHit = {
     | "restrictor"
     | "standIn"
     | "standInNamed"
+    | "standInBack"
     | "join"
     | "compoundLemma"
     | "published"
@@ -703,6 +717,10 @@ export function classifyHits(word: MorphWord, tables: ClassifyTables): ClassifyH
 
   if (isNamedStandIn(word) && !hasClosedOverlay(word, tables)) {
     hits.push({ source: "standInNamed", reading: "standInNamed" });
+  }
+
+  if (isBackStandIn(word)) {
+    hits.push({ source: "standInBack", reading: "standInBack" });
   }
 
   if (isFenceJoin(word) && word.family.kind === "joinMarker") {

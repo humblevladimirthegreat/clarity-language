@@ -15,9 +15,9 @@ Prosody
 -consider removing some emotion words from lexicon
 -expressiveness review
 -grammar simplification pass: could we remove special overlay forms and re-use existing grammar? 
--lint check that vocabulary is taught and used in translation exercises.
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -intentionally discourage speaker and listener person pronoun by making them five letters instead of three.
+-formalize claritish - superset of english that allows dropping in agazan forms into English sentences that are useful (not easily expressible in english). The goal is to provide an easy entry point to the language that will benefit people and excite them to learn the full language.
 
 final exam
 

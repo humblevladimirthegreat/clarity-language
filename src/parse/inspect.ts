@@ -113,6 +113,7 @@ const ENDING_SENSE: Record<Ending, string> = {
   rl: "stand-in",
   rm: "stand-in.open",
   rn: "stand-in lexicalized",
+  rth: "stand-in backward",
 };
 
 const JOIN_ENDING_SENSE: Record<Ending, string> = {
@@ -123,6 +124,7 @@ const JOIN_ENDING_SENSE: Record<Ending, string> = {
   rl: "stand-in locked",
   rm: "stand-in open",
   rn: "stand-in lexicalized",
+  rth: "stand-in backward",
 };
 
 const GREETING_BID_GLOSS: Record<"a" | "e" | "o" | "u", string> = {
@@ -135,6 +137,7 @@ const GREETING_BID_GLOSS: Record<"a" | "e" | "o" | "u", string> = {
 export function endingSense(ending: Ending | undefined, word?: LexWord): string | undefined {
   if (!ending) return undefined;
   if (word?.reading === "standInNamed") return "stand-in lexicalized";
+  if (word?.reading === "standInBack") return "stand-in backward";
   if (word?.reading === "standIn") {
     if (ending === "rl") return "stand-in locked";
     if (ending === "rm") return "stand-in open";
@@ -150,6 +153,7 @@ export function endingSense(ending: Ending | undefined, word?: LexWord): string 
       rl: "stand-in",
       rm: "stand-in.open",
       rn: "stand-in lexicalized",
+      rth: "stand-in backward",
     };
     return number[ending];
   }
@@ -162,6 +166,7 @@ export function endingSense(ending: Ending | undefined, word?: LexWord): string 
       rl: "stand-in",
       rm: "stand-in.open",
       rn: "stand-in lexicalized",
+      rth: "stand-in backward",
     };
     return content[ending];
   }
@@ -276,7 +281,7 @@ export function chipsFor(word: LexWord): string[] {
   if (word.ending) chips.push(`-${word.ending} ${endingSense(word.ending, word)}`);
   if (word.gl) chips.push("gl-");
   if (word.plural) chips.push("-x");
-  if ((word.reading === "standIn" || word.reading === "standInNamed") && word.family.kind === "joinMarker") {
+  if ((word.reading === "standIn" || word.reading === "standInNamed" || word.reading === "standInBack") && word.family.kind === "joinMarker") {
     chips.push(`stand-in ${word.family.series}`);
   } else {
     chips.push(...familyChips(word.family));
