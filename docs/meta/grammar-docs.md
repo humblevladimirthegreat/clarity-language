@@ -430,12 +430,30 @@ In each section, mention **only what that section is teaching**. Do not name, te
 
 Pages stay dual-role (learner text + source of truth): Intermediate / Advanced inventories and precise end anchors are fine when the *lead and Beginner teach block* stay slim. Intermediate must not name Advanced as a teaser (“X is Advanced”); a later heading is enough. If an Advanced inventory dwarfs the Beginner teach block, split the file. Later-stage H3 shape: [Intermediate and Advanced](#later-stage-shape).
 
+## Recipe track {#recipe-track}
+
+**Saying it in Agalan** ([english.md](../grammar/english.md) plus `say-people-places.md`, `say-amounts.md`, `say-reasons.md`, `say-questions.md`) holds **applications**: sections that teach no new form but show how taught forms answer an English job. The track is outside the stage order.
+
+**Test before adding a section to a stage page** (especially when closing a [grammar gap](grammar-gaps.md)):
+
+| Section introduces… | Goes |
+|---------------------|------|
+| a root, closed word or overlay, a new ending meaning, a role-letter use, a word-order or attachment rule, or a construction [home](../../src/parse/constructions.ts) | stage page (mechanism) |
+| nothing new, but everyday talk needs it early (*who / that / which*, *since*, *unless*, *thanks*) | stage page, kept to a short recipe (≤ ~10 lines + example) |
+| nothing new, and it answers a less common English need (*whose*, *two meters taller*, *most of*, *would have*, echo questions) | recipe track |
+| a lookup grid that restates forms taught above | the page's `## Reference tables` tail (before **See also**) |
+
+**Recipe shape:** H2 per English area, H3 per English job; after the heading, a **Needs:** line linking every section the recipe uses (any stage — the track is read after them); worked example with morph gloss; **Compare with** as usual. Practice goes in a `## Practice` section at the end of the page (H3 per block, unique ids), not in a stage checkpoint.
+
+**Direction:** track pages link to stage pages; **stage pages never link to or preview the track** (no *see the recipe*, no See also entry). The lookup pages ([english.md](../grammar/english.md), [terminology.md](../grammar/terminology.md)) may link to either.
+
 ## What belongs where
 <a id="what-belongs-where"></a>
 
 | Material | Place |
 |----------|--------|
 | How to use the form | Grammar doc body under **`docs/grammar/`** (tagged **Beginner** / **Intermediate** / **Advanced**) |
+| How taught forms answer a less common English job | [Recipe track](#recipe-track) (`say-*.md`) |
 | Gloss format | [glosses.md](glosses.md) |
 | Level rubric / reading order | [learning-levels.md](learning-levels.md) ([cross-doc path](learning-levels.md#cross-doc-path)) |
 | Doc content / teaching order | This page ([Beginner stage shape](#beginner-stage-shape), [later-stage shape](#later-stage-shape), [cues](#cues-columns), [Compare with](#compare-with)); wording and voice: [doc-style.md](doc-style.md) |

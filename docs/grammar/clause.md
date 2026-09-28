@@ -263,16 +263,6 @@ English puts the adjective before the noun (*a blue dog*). Agalan can too: add *
 
 A `/b/` word still follows that adjective, and a `/w/` word still sits immediately before it (`welavam glubuhal zodogal` = *a very blue dog*). This extra **`l`** goes only on adjectives (`/ɡ/`).
 
-### As for (`hahehom`) {#as-for}
-
-English *as for X* or *regarding X* names who or what the sentence is about, even when X is not the subject or object. In Agalan, put **`hahehom`** *topic* in `/h/` and X in a hosted `/b/` right after it: `hahehom bazawan` is *as for Azawan*. The rest of the sentence keeps its free order. (cue: #️⃣ *hash*: a hashtag marks what the post is about.)
-
-> `hahehom bazawan zalahen dagadal vahahal.`
->
-> [h-topic | b-Azawan] | z-Alahen | d-cat | v-see
->
-> "As for Azawan, Alahen sees a cat."
-
 ### Complex chaining {#complex-chaining}
 
 A relation adjective with its hosted `/b/` (*the same as Azawan*, **`gogal`** + `/b/`) works as one unit after a noun. You can keep chaining: a plain adjective after that pair describes the **extra noun**, not the first noun, and a `/w/` word that grades the relation sits immediately before the `/ɡ/` word. (cue: 🪙 *coin*: two faces of one thing.)
@@ -370,7 +360,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vahahal` |
 | *tell* | `vezebel` |
 | *very* | `welavam` |
-| *topic* | `hahehom` |
 | *train* | `edehal` |
 
 #### English → Agalan {#intermediate-english-to-agalan}
@@ -391,15 +380,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-Azawan | [g-SAME | [b-Ahaben | g-blue]]] | v-stand
 :::
 
-**3.** *As for Azawan, Alahen sees a ticket.*
-
-::: details Show answer
-`hahehom bazawan zalahen dedegal vahahal.`
-
-[h-topic | b-Azawan] | z-Alahen | d-ticket | v-see
-:::
-
-**4.** *A very blue train sits.*
+**3.** *A very blue train sits.*
 
 ::: details Show answer
 `zedehal welavam gubuhal vehahel.`
@@ -407,7 +388,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-train | [w-very | g-blue]] | v-sit
 :::
 
-**5.** *A red train sees a blue ticket.*
+**4.** *A red train sees a blue ticket.*
 
 ::: details Show answer
 `zedehal geredal gubuhal dedegal vahahal.`
@@ -415,7 +396,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-train | g-red | g-blue] | d-ticket | v-see
 :::
 
-**6.** *Ahaben tells Alahen hastily.*
+**5.** *Ahaben tells Alahen hastily.*
 
 ::: details Show answer
 `zahaben balahen hadehom vezebel.`
@@ -423,7 +404,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Ahaben | b-Alahen | h-haste | v-tell
 :::
 
-**7.** *Azawan was seen.*
+**6.** *Azawan was seen.*
 
 ::: details Show answer
 `dazawan vahahal.`
@@ -478,14 +459,6 @@ z-dog | [[w-very | h-like] | b-Azawan] | v-sleep
 *A very red train sits.*
 :::
 
-**6.** `hahehom bahaben zazawan balahen vezebel.`
-
-::: details Show answer
-
-[h-topic | b-Ahaben] | z-Azawan | b-Alahen | v-tell
-
-*As for Ahaben, Azawan tells Alahen.*
-:::
 
 ## Advanced {#advanced}
 
@@ -520,8 +493,6 @@ Same roles, object first:
 Object-first English *It's a cat that Azawan sees* (or *A cat is what Azawan sees*) still names Azawan as the one who sees. *A cat is seen* hides who sees unless you add *by Azawan*. Use the longer English when you only want to highlight the object.
 
 The subject is already first by default, so order cannot single it out. To say *it was Azawan (not someone else) who…*, put the [contrastive focus](speech-moves.md#tone-marks) mark **`&`** on the subject.
-
-*As for X* names a topic even when that person is not first: [as-for](#as-for).
 
 ### Starting a sentence audibly {#audible-start}
 

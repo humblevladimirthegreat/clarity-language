@@ -492,7 +492,7 @@ Rank **`e`** puts the first item at the **top** (*A matters more than B*). When 
 | Single-item | `X zoel` *start with X* / *from X on* | `X zoem` *maybe start with X* |
 | Standalone | `zoel` *in no particular order* / *any order* | `zoem` *not sure where to start* |
 
-A sequence does not say which item is better. With two number endpoints and a SHARED continuum it is a [range](numbers-applied.md#ranges) (`zrarel zraval zoel gadaham` = *from 3 to 5*); a single number is an inclusive [ray](numbers-applied.md#numeric-thresholds) (`zraval zoel` = *5 or more*). With a SHARED quality it sorts the list from low to high: [comparatives](comparatives.md#sequence-scale). (cue: **o** ≈ one + **e** ≈ order — one after another)
+A sequence does not say which item is better. With two number endpoints and a SHARED continuum it is a [range](numbers-applied.md#ranges) (`zrarel zraval zoel gadaham` = *from 3 to 5*); a single number is an inclusive [ray](numbers-applied.md#numeric-thresholds) (`zraval zoel` = *5 or more*). With a SHARED quality it sorts the list from low to high. (cue: **o** ≈ one + **e** ≈ order — one after another)
 
 **Compare with:** clause *and then* between sentences is [sequence **`xan`**](join-across-roles.md#sequence). **`zoel`** orders nouns inside one slot.
 
@@ -689,7 +689,7 @@ When an adjective or extra noun is meant for the **whole list** (*both challengi
 | **a** + `/ɡ/`…**-x** | [collective](plurality.md#adjectives-g) (*ADJ together*) |
 | **ae** + SHARED scale | [equative](comparatives.md#equatives) (`/ɡ/` or `/h/`) |
 | **e** / **ue** on NP | [comparison scale](comparatives.md) (`/ɡ/` or `/h/`) |
-| **oe** on NP | [sorted low to high](comparatives.md#sequence-scale) (`/ɡ/` or `/h/`) |
+| **oe** on NP | sorted low to high (`/ɡ/` or `/h/`) |
 | **ua** / **uo** | kind / domain for universals |
 | **a** / **oe** / **ua** + two number endpoints | [range](numbers-applied.md#ranges) with continuum `/ɡ/` |
 
@@ -939,30 +939,6 @@ Standalone **…an** (no items) is *null* / *void*. Under `/ɡ/` `/h/`, **-n** f
 **Compare with:** clause **`xan`** is *and then*, not a named package.
 
 
-### Rare arities and edge readings
-
-Most other phrase joins need two or more items. These edge readings keep a defined sense at every arity, or mix two joins by nesting.
-
-| Agalan | Use | English |
-|--------|-----|---------|
-| **…ul** / **…um** / **…un** | deny at every arity | standalone *no*; one item *not X*; multi *none of* |
-| **…ar** / **…or** / **…er** / **…ur** | unspecified member at every arity | [unspecified **-r**](#unspecified-member-r-phrase) |
-| **…aen** / **…en** / **…an** standalone | stock empty rank / named empty | *it's a draw*; *no favorite* (stock); *null* / *void* |
-| **…ual** / **…uol** standalone | empty invert | *everything*; *anything (goes)* |
-| `zebezal` vs `zebezal zar` | content **-l** vs join **-r** | *a person* vs *some person, unknown who* |
-| `A B C zor` vs `… zer` | menu vs rank unspecified | any of them is fine vs pick by ranking |
-| `A B zar` / `zur` / `zual` | among / leftover / invert | some one among; some one other than; *everything but* |
-| `A B zel` vs `A B zoel` | rank vs [sequence](#sequence-oe) | A matters more than B vs A, then B |
-
-> `zedehel zagavel zowodel zor.`
->
-> [z-tea | z-coffee | z-drinking-water | z-anything]
->
-> "any of tea, coffee, or water is fine (no order)."
-
-**For *except*, use:** hook **`ul`** / **`um`** — [hooks](hooks.md). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (pick one of a closed list, but the pick is optional: `zedehel zagavel zol zom`).
-
-
 ### Allowed joins by PoS
 <a id="phrase-reserved-forms"></a>
 
@@ -1106,6 +1082,33 @@ z-anything-but
 
 *something other than the seal and the page*
 :::
+
+## Reference tables {#reference-tables}
+
+Lookup grids that restate forms taught above; nothing here is new.
+
+### Rare arities and edge readings
+
+Most other phrase joins need two or more items. These edge readings keep a defined sense at every arity, or mix two joins by nesting.
+
+| Agalan | Use | English |
+|--------|-----|---------|
+| **…ul** / **…um** / **…un** | deny at every arity | standalone *no*; one item *not X*; multi *none of* |
+| **…ar** / **…or** / **…er** / **…ur** | unspecified member at every arity | [unspecified **-r**](#unspecified-member-r-phrase) |
+| **…aen** / **…en** / **…an** standalone | stock empty rank / named empty | *it's a draw*; *no favorite* (stock); *null* / *void* |
+| **…ual** / **…uol** standalone | empty invert | *everything*; *anything (goes)* |
+| `zebezal` vs `zebezal zar` | content **-l** vs join **-r** | *a person* vs *some person, unknown who* |
+| `A B C zor` vs `… zer` | menu vs rank unspecified | any of them is fine vs pick by ranking |
+| `A B zar` / `zur` / `zual` | among / leftover / invert | some one among; some one other than; *everything but* |
+| `A B zel` vs `A B zoel` | rank vs [sequence](#sequence-oe) | A matters more than B vs A, then B |
+
+> `zedehel zagavel zowodel zor.`
+>
+> [z-tea | z-coffee | z-drinking-water | z-anything]
+>
+> "any of tea, coffee, or water is fine (no order)."
+
+**For *except*, use:** hook **`ul`** / **`um`** — [hooks](hooks.md). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (pick one of a closed list, but the pick is optional: `zedehel zagavel zol zom`).
 
 ## See also
 

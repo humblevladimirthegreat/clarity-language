@@ -52,7 +52,7 @@ export default defineConfig({
       { text: 'Lexicon', link: '/lexicon' },
       { text: 'Inspect', link: '/inspect' },
       { text: 'Terminology', link: '/terminology' },
-      { text: 'English cheat sheet', link: '/english' },
+      { text: 'Saying it in Agalan', link: '/english' },
     ],
     sidebar: [
       {
@@ -60,12 +60,21 @@ export default defineConfig({
         items: readingOrder,
       },
       {
+        text: 'Saying it in Agalan',
+        items: [
+          { text: 'Overview', link: '/english' },
+          { text: 'People, things and places', link: '/say-people-places' },
+          { text: 'Amounts, sizes and time', link: '/say-amounts' },
+          { text: 'Reasons, knowledge and plans', link: '/say-reasons' },
+          { text: 'Asking and answering', link: '/say-questions' },
+        ],
+      },
+      {
         text: 'Tools',
         items: [
           { text: 'Lexicon', link: '/lexicon' },
           { text: 'Inspect', link: '/inspect' },
           { text: 'Terminology', link: '/terminology' },
-          { text: 'English cheat sheet', link: '/english' },
         ],
       },
     ],

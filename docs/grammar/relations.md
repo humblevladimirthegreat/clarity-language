@@ -283,7 +283,7 @@ Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in
 | **`huwam` / `guwam`** | constitution | *made of* | `uwal` *wood* | 🪵: the stuff the thing is made of |
 | **`hagum` / `gagum`** | identity source / provenance | *from* (origin) | `agul` *country* | 🗾: a map of one country as where it comes from |
 
-**Compare with:** ownership is `gegabem` + `/b/` ([joins](joins.md#scope-fence-p-join)). A [interests](interests.md) need on `/ɡ/` also means speaker possession. Place *in* is the hook `al`; path *from* is the hook `ul` ([locative relations](#locative-relations)). *A house like Azawan’s* is [simile](#similative) (`gomem`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`gogem`). Portion *of* a class is [percent](numbers-applied.md#percent-denominators). Associates are plural **-x**, not meronymy. Kind *origin* (`ROOTl#e-`) is [numeric derivation](numeric-derivation.md), not this token *from*.
+**Compare with:** ownership is `gegabem` + `/b/` ([joins](joins.md#scope-fence-p-join)). A [interests](interests.md) need on `/ɡ/` also means speaker possession. Place *in* is the hook `al`; path *from* is the hook `ul` ([locative relations](#locative-relations)). *A house like Azawan’s* is [simile](#similative) (`gomem`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`gogem`). Portion *of* a class is [percent](numbers-applied.md#percent-and-percentage-points). Associates are plural **-x**, not meronymy. Kind *origin* (`ROOTl#e-`) is [numeric derivation](numeric-derivation.md), not this token *from*.
 
 
 

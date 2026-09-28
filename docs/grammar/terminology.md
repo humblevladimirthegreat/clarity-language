@@ -137,7 +137,7 @@ How many items sit before a join: **list** (2+), **single-item** (1), **standalo
 
 Complex `/h/` + `/b/` (**`hahehom`**) *as for X*.
 
-[Clause](clause.md#as-for)
+[Clause](say-people-places.md#as-for)
 
 **Compare with:** interest [met](#met-unmet-motive-prescription-interests) / unmet on `/ɡ/` is how an interest stands toward a noun, not *as for*.
 
@@ -296,7 +296,7 @@ Advanced free-number specials (`+e`, `-e-`, `+0e`, …). **Just short** is free 
 
 Set **`a`** + singular SHARED = *both/each are ADJ*.
 
-[Comparatives](comparatives.md#distributive-both)
+[Comparatives](say-amounts.md#distributive-both)
 
 ### Domain / generic / *every K*
 
@@ -322,7 +322,7 @@ Final **-l / -m / -n / -r** (plus optional **-x**). **Word endings** names the c
 
 Reason for the *could be* (**MAY**), not world **BECAUSE**.
 
-[Causation](causation.md#epistemic-because)
+[Causation](say-reasons.md#epistemic-because)
 
 ### Equative
 
@@ -394,7 +394,7 @@ Hosted `/h/` or `/ɡ/` plus `/b/` for English *of* that is not ownership or a pl
 
 Whether **IF** vs **BECAUSE** treats the dependent as asserted.
 
-[Causation](causation.md#factivity)
+[Causation](say-reasons.md#factivity)
 
 ### Fill-ask / fill-all
 
@@ -519,7 +519,7 @@ Interest stances **`tha` / `thu`** (Beginner); **`the`** / **`tho`** (Intermedia
 
 Short **-n** label for a long title.
 
-[Word endings](word-endings.md#named-handles)
+[Word endings](say-people-places.md#named-handles)
 
 ### Named list
 
@@ -545,7 +545,7 @@ Number word under `/v/` `/h/` `/th/` `/y/` `/x/`.
 
 Number problem / solution / goal candidates with free ordinals.
 
-[Numbers in use](numbers-applied.md#numbered-alternatives)
+[Numbers in use](say-amounts.md#numbered-alternatives)
 
 **Compare with:** clause *so that* is [**`hagom`**](dependents.md#so-that), not the goal noun **`agol`**.
 
@@ -599,7 +599,7 @@ Motive **`tho`** endings.
 
 Word-order highlighting (not join arity).
 
-[Clause](clause.md#word-order-emphasis), [as-for](clause.md#as-for)
+[Clause](clause.md#word-order-emphasis), [as-for](say-people-places.md#as-for)
 
 ### Quasi
 
@@ -654,7 +654,7 @@ Prefix-less *including / rather / instead / except*, discourse glue, extra-noun 
 
 [Roles](roles.md#role-compounds)
 
-**Compare with:** *sitting guard* / *teacher* is this stem on `/ɡ/` with a non-resume ending ([which noun, with resume and kinds](dependents.md#which-noun-intermediate)). Resume **-r** is *the one teaching* (this instance), not the kind.
+**Compare with:** *sitting guard* / *teacher* is this stem on `/ɡ/` with a non-resume ending ([which noun, with resume and kinds](say-people-places.md#which-noun-intermediate)). Resume **-r** is *the one teaching* (this instance), not the kind.
 
 ### Role letter
 

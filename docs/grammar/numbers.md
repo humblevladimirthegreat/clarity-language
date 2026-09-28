@@ -435,7 +435,7 @@ Speech uses **`ba`** / **`bu`** for that exponent, then **`ya`** if mantissa dig
 - Ordinary amounts usually omit exponent **`0`**: write `grarel`.
 - Default **order of magnitude** uses **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`).
 - **Decimal point:** say **`ye`** after the digit(s) left of the point; digits after **`ye`** are the fractional part.
-- Write the **base unit** plus exponent or exact count on the amount ([measure phrases](numbers-applied.md#no-metric-prefixes)).
+- Write the **base unit** plus exponent or exact count on the amount ([measure phrases](numbers-applied.md#measure-phrases)).
 
 > `g+5.2`
 >
@@ -1323,79 +1323,6 @@ Write the role letter, symbol stack, then digits: `gruowol` labels a floor numbe
 | **`#_`** | **r-u-o** | A digit-string label whose value is negative (for example, a below-ground floor label). |
 | **`+-`** | **r-u-a** | A symmetric error bound of ±N. |
 
-### Examples inventory
-<a id="examples"></a>
-
-Preferred writing first; the spoken form follows, often with its syllables in parentheses (exact **-l** unless noted). Digits in speech use the [digit table](#digits).
-
-| Value | Preferred writing | Spoken |
-|-------|-------------------|---------------|
-| plural / more than one | `g+` | *gral* (`g` + `ra` + `l` — [digitless](#digitless)) |
-| about several (`>1`) | `g~+` | *gram* |
-| ones band (1–9) | `g+e0` | *grabazol* (`ra` + `ba` + zo + `l` — [bare OoM](#bare-oom-bands)) |
-| three at asserted OoM 0 | `g+3e0` | *grabazoyarel* (`ra` + `ba` + zo + `ya` + re + `l`) |
-| thousands band (1000–9999) | `g+e3` | *grabarel* (`ra` + `ba` + re + `l`) |
-| 2nd from the end / penultimate | `g#-2` | *gruedul* (rue + du + `l`) |
-| 1st from the end / *Starting with the last one* | `g#-1` | *gruewol* (rue + wo + `l`) |
-| for the penultimate time | `h#-2` | *hruedul* |
-| *Penultimate!* | `y#-2` | *yruedul* |
-| 2nd-from-end point: | `x#-2` | *xruedul* |
-| *Starting with the last one:* | `x#-1` | *xruewol* |
-| last place | `g#e` | *grebal* |
-| start / beginning place | `g#e-` | *grebul* |
-| *Starting with:* | `x#e-` | *xrebul* |
-| *Finally:* | `x#e` | *xrebal* |
-| take 2nd from the end | `v#-2` | *vruedul* |
-| some end-relative rank | `g#-` | *gruel* |
-| some negative amount | `z-` | *zrul* |
-| some rank | `g#` | *grel* |
-| some code (object) | `d_` | *drol* |
-| how many? / some amount | `g=+` | *grar* (digitless **-r**) |
-| which place? / some place | `g=#` | *grer* |
-| what code? / some code | `d=_` | *dror* |
-| increase (unspecified) | `v+` | *vral* |
-| increase a bit | `v~+` | *vram* |
-| multiple times | `h+` | *hral* |
-| a few times | `h~+` | *hram* |
-| at some clock/date | `h_` | *hrol* — unspecified when under bare `hro`; ≠ `har` |
-| More! | `y+` | *yral* |
-| 3 | `g+3` | *grarel* (`g` + `ra` + re + `l`) |
-| −3 | `g-3` | *grurel* (`g` + `ru` + re + `l`) |
-| 3 (as subject) | `z+3` | *zrarel* |
-| −3 (as object) | `d-3` | *drurel* |
-| of size 12 | `b+12` | *brawodul* (`b` + `ra` + wo du) |
-| room 12 (modifier) | `g_12` | *growodul* (`g` + `ro` + wo du) |
-| 139 | `g+139` | *graworenal* (`ra` + wo re na) |
-| 27e12 | `g+27e12` | *grabawoduyadulel* (`ra` + ba wo du **ya** + du le) |
-| e9 (bare) | `g+e9` | *grabanal* (`ra` + ba na; **no** `ya`) |
-| 50e-6 | `g+50e-6` | *grabuguyavazol* (`ra` + bu gu **ya** + va zo) |
-| −1e9 −265e3 −4 | `g-1e9,265e3,4` | *grubanayawothubareyaduguvathumol* — **`ru`**; groups: ba na **ya** wo · **thu** · ba re **ya** du gu va · **thu** · mo |
-| $5860.04 → 5e3 + 860 + 4e-2 | `g+5e3,860,4e-2` | *grabareyavathahaguzothabuduyamol* — ba re **ya** va · **tha** · ha gu zo · **tha** · bu du **ya** mo |
-| 2nd | `g#2` | *gredul*; title-like *the Second…* may take **-n** (`g@#2` / *gredun*) |
-| penultimate | `g#-2` | *gruedul* |
-| about 27e6 | `g~+27e6` | *grabaguyadulem* (ba gu **ya** du le, ending **-m**) |
-| phone 555-123-4567 | `d_555,123,4567` | *drovavavathowodurethomovagulel* (`d` + `ro` + va×3 · **tho** · wo du re · **tho** · mo va gu le + `l`) |
-| scientific 5.2487083e-4 | `g+5.2487083e-4` | *grabumoyavayedumohalezoharel* (`ra` + bu mo **ya** + va **ye** + du mo ha · le zo ha · re) |
-| 25% | `g+25%` | *graduvayol* (`g` + `ra` + du va **yo** + `l`) |
-| +2 pp | `g+2%*` | *graduyul* (`ra` + du **yu**) |
-| neutral point 1 / 2 | `x#1`, `x#2` | *xrewol*, *xredul* (`x` + `re` + …) |
-| end-relative point 2 | `x#-2` | *xruedul* (x + rue + du) |
-| corroborating item 3 | `x+3` | *xrarel* (`x` + `ra` + re) |
-| independent item 2 | `x-2` | *xrudul* (`x` + `ru` + du) — ≠ **`x#-2`** |
-| regarding agenda 12 | `x_12` | *xrowodul* (`x` + `ro` + wo du) |
-| as in (2) above (neutral) | `x=#2` | *xredur* (ending **-r**) |
-| three times / ×3 | `h+3` | *hrarel* (`h` + `ra` + re) |
-| ÷3 / every third | `h-3` | *hrurel* (`h` + `ru` + re) |
-| at 15:30 | `h_15,30` | *hrowovathorezol* (`h` + `ro` + wo va · **tho** · re zo) — bare `hro` = time |
-| for the third time | `h#3` | *hrerel* (`h` + `re` + re) |
-| Three! (label / score) | `y_3` | *yrorel* (`y` + `ro` + re) |
-| Three more! | `y+3` | *yrarel* (`y` + `ra` + re) |
-| Three short! / Three fewer! / −3! | `y-3` | *yrurel* (`y` + `ru` + re) |
-| twenty-seven! (label) | `y_27` | *yrodulel* (`y` + `ro` + du le) |
-| First! (place cheer) | `y#1` | *yrewol* (`y` + `re` + wo) |
-
-In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…`).
-
 ### Ambient magnitude (casual)
 <a id="ambient-magnitude"></a>
 
@@ -1577,6 +1504,83 @@ z-Azawan | [d-telescope | g-negative-label-1] | v-see
 
 *Azawan sees telescope −1.* (a below-zero label)
 :::
+
+## Reference tables {#reference-tables}
+
+Lookup grids that restate forms taught above; nothing here is new.
+
+### Examples inventory
+<a id="examples"></a>
+
+Preferred writing first; the spoken form follows, often with its syllables in parentheses (exact **-l** unless noted). Digits in speech use the [digit table](#digits).
+
+| Value | Preferred writing | Spoken |
+|-------|-------------------|---------------|
+| plural / more than one | `g+` | *gral* (`g` + `ra` + `l` — [digitless](#digitless)) |
+| about several (`>1`) | `g~+` | *gram* |
+| ones band (1–9) | `g+e0` | *grabazol* (`ra` + `ba` + zo + `l` — [bare OoM](#bare-oom-bands)) |
+| three at asserted OoM 0 | `g+3e0` | *grabazoyarel* (`ra` + `ba` + zo + `ya` + re + `l`) |
+| thousands band (1000–9999) | `g+e3` | *grabarel* (`ra` + `ba` + re + `l`) |
+| 2nd from the end / penultimate | `g#-2` | *gruedul* (rue + du + `l`) |
+| 1st from the end / *Starting with the last one* | `g#-1` | *gruewol* (rue + wo + `l`) |
+| for the penultimate time | `h#-2` | *hruedul* |
+| *Penultimate!* | `y#-2` | *yruedul* |
+| 2nd-from-end point: | `x#-2` | *xruedul* |
+| *Starting with the last one:* | `x#-1` | *xruewol* |
+| last place | `g#e` | *grebal* |
+| start / beginning place | `g#e-` | *grebul* |
+| *Starting with:* | `x#e-` | *xrebul* |
+| *Finally:* | `x#e` | *xrebal* |
+| take 2nd from the end | `v#-2` | *vruedul* |
+| some end-relative rank | `g#-` | *gruel* |
+| some negative amount | `z-` | *zrul* |
+| some rank | `g#` | *grel* |
+| some code (object) | `d_` | *drol* |
+| how many? / some amount | `g=+` | *grar* (digitless **-r**) |
+| which place? / some place | `g=#` | *grer* |
+| what code? / some code | `d=_` | *dror* |
+| increase (unspecified) | `v+` | *vral* |
+| increase a bit | `v~+` | *vram* |
+| multiple times | `h+` | *hral* |
+| a few times | `h~+` | *hram* |
+| at some clock/date | `h_` | *hrol* — unspecified when under bare `hro`; ≠ `har` |
+| More! | `y+` | *yral* |
+| 3 | `g+3` | *grarel* (`g` + `ra` + re + `l`) |
+| −3 | `g-3` | *grurel* (`g` + `ru` + re + `l`) |
+| 3 (as subject) | `z+3` | *zrarel* |
+| −3 (as object) | `d-3` | *drurel* |
+| of size 12 | `b+12` | *brawodul* (`b` + `ra` + wo du) |
+| room 12 (modifier) | `g_12` | *growodul* (`g` + `ro` + wo du) |
+| 139 | `g+139` | *graworenal* (`ra` + wo re na) |
+| 27e12 | `g+27e12` | *grabawoduyadulel* (`ra` + ba wo du **ya** + du le) |
+| e9 (bare) | `g+e9` | *grabanal* (`ra` + ba na; **no** `ya`) |
+| 50e-6 | `g+50e-6` | *grabuguyavazol* (`ra` + bu gu **ya** + va zo) |
+| −1e9 −265e3 −4 | `g-1e9,265e3,4` | *grubanayawothubareyaduguvathumol* — **`ru`**; groups: ba na **ya** wo · **thu** · ba re **ya** du gu va · **thu** · mo |
+| $5860.04 → 5e3 + 860 + 4e-2 | `g+5e3,860,4e-2` | *grabareyavathahaguzothabuduyamol* — ba re **ya** va · **tha** · ha gu zo · **tha** · bu du **ya** mo |
+| 2nd | `g#2` | *gredul*; title-like *the Second…* may take **-n** (`g@#2` / *gredun*) |
+| penultimate | `g#-2` | *gruedul* |
+| about 27e6 | `g~+27e6` | *grabaguyadulem* (ba gu **ya** du le, ending **-m**) |
+| phone 555-123-4567 | `d_555,123,4567` | *drovavavathowodurethomovagulel* (`d` + `ro` + va×3 · **tho** · wo du re · **tho** · mo va gu le + `l`) |
+| scientific 5.2487083e-4 | `g+5.2487083e-4` | *grabumoyavayedumohalezoharel* (`ra` + bu mo **ya** + va **ye** + du mo ha · le zo ha · re) |
+| 25% | `g+25%` | *graduvayol* (`g` + `ra` + du va **yo** + `l`) |
+| +2 pp | `g+2%*` | *graduyul* (`ra` + du **yu**) |
+| neutral point 1 / 2 | `x#1`, `x#2` | *xrewol*, *xredul* (`x` + `re` + …) |
+| end-relative point 2 | `x#-2` | *xruedul* (x + rue + du) |
+| corroborating item 3 | `x+3` | *xrarel* (`x` + `ra` + re) |
+| independent item 2 | `x-2` | *xrudul* (`x` + `ru` + du) — ≠ **`x#-2`** |
+| regarding agenda 12 | `x_12` | *xrowodul* (`x` + `ro` + wo du) |
+| as in (2) above (neutral) | `x=#2` | *xredur* (ending **-r**) |
+| three times / ×3 | `h+3` | *hrarel* (`h` + `ra` + re) |
+| ÷3 / every third | `h-3` | *hrurel* (`h` + `ru` + re) |
+| at 15:30 | `h_15,30` | *hrowovathorezol* (`h` + `ro` + wo va · **tho** · re zo) — bare `hro` = time |
+| for the third time | `h#3` | *hrerel* (`h` + `re` + re) |
+| Three! (label / score) | `y_3` | *yrorel* (`y` + `ro` + re) |
+| Three more! | `y+3` | *yrarel* (`y` + `ra` + re) |
+| Three short! / Three fewer! / −3! | `y-3` | *yrurel* (`y` + `ru` + re) |
+| twenty-seven! (label) | `y_27` | *yrodulel* (`y` + `ro` + du le) |
+| First! (place cheer) | `y#1` | *yrewol* (`y` + `re` + wo) |
+
+In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…`).
 
 ## See also
 

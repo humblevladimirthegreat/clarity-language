@@ -15,7 +15,6 @@ Prosody
 -consider removing some emotion words from lexicon
 -expressiveness review
 -grammar simplification pass: could we remove special overlay forms and re-use existing grammar? 
--Rare learning band
 -lint check that vocabulary is taught and used in translation exercises.
 -consider Promoting common non-nouns and compound-word parts to be two syllables. 
 -intentionally discourage speaker and listener person pronoun by making them five letters instead of three.

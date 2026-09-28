@@ -317,31 +317,6 @@ A nativized loan (adapted Agalan root + ordinary ending) uses the same four last
 
 **Compare with:** adjacent bare same-role words (`zuhuden zaloden`) are two people in a [join](joins.md).
 
-### Named handles {#named-handles}
-
-A long official title (bureau, act, titled group) may have a **handle**: one published root plus **-n**, used like any proper name, including on first mention. The long form is the same office spelled as a phrasal proper (`ROOT x ROOT` … + **-n**).
-
-> `zubugan vezebel.`
->
-> z-Ubugan | v-tell
->
-> "Ubugan announces." (office handle on first mention)
-
-| Agalan | Use | English |
-|--------|-----|---------|
-| `zubugan` | handle: one root + **-n** | default talk, including first mention |
-| `zubugaxalahen` | long title: phrasal proper (`ROOT x ROOT` … + **-n**) | full legal / ceremonial name of the same office |
-
-> `zubugaxalahen.`
->
-> z-Ubuga-x-Alahen
->
-> "Book-Courage" (full title of that office)
-
-Resume the handle like any name. If a short letter-pronoun (through the 2nd vowel) would pick the wrong earlier word, use the **full root** + **-r** (`zubugar`).
-
-**Compare with:** a [mention](spans.md#loans) packages the **word** (`z{ubuga}` = *the word “abogo”*). A foreign letter-name is a loan or opaque span (<code>z@&lt;FBI&gt;</code>).
-
 ### Continue (`/x/`): overview
 <a id="continue-x"></a>
 
@@ -373,9 +348,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
-| *Ezuden* (office handle) | `ezuden` | |
 | *hospital-bed* (ward name) | `ahazexebedan` | |
-| *diagnosis-hospital* (office full title) | `ezudexahazen` | |
 | *bed* | `ebedal` | |
 | *sit* | `vehahel` | `ehahel` *chair* |
 | *see* | `vahahal` | `ahahal` *eye* |
@@ -424,15 +397,7 @@ z-Ahaben | v-Ezeban
 z-Azawan | v-see | d-Ahaze-x-Ebedan
 :::
 
-**5.** *Ezuden sees Ahaben.* (office handle, first mention)
-
-::: details Show answer
-`zezuden vahahal dahaben.`
-
-z-Ezuden | v-see | d-Ahaben
-:::
-
-**6.** *Alahen performs Intrusion* (that titled procedure).
+**5.** *Alahen performs Intrusion* (that titled procedure).
 
 ::: details Show answer
 `zalahen vazehen.`
@@ -440,7 +405,7 @@ z-Ezuden | v-see | d-Ahaben
 z-Alahen | v-Azehen
 :::
 
-**7.** *Alahen performs Emergency* (that titled drill).
+**6.** *Alahen performs Emergency* (that titled drill).
 
 ::: details Show answer
 `zalahen vamaban.`
@@ -491,15 +456,7 @@ z-Ahaben | v-Azehen
 *Ahaben performs Intrusion* (that titled procedure).
 :::
 
-**6.** `zezudexahazen vahahal dazawan.`
-
-::: details Show answer
-
-z-Ezude-x-Ahazen | v-see | d-Azawan
-*Diagnosis-Hospital sees Azawan.* (that office’s full title)
-:::
-
-**7.** `zalahen varahal hamaban.`
+**6.** `zalahen varahal hamaban.`
 
 ::: details Show answer
 

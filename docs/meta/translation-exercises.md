@@ -33,6 +33,7 @@ Per-feature teaching already has its practice: rule → cue → 1–3 worked exa
 |----------|--------|
 | Rule + worked example | Grammar section body |
 | Short Eng ↔ Agalan checkpoint | End of that page’s **Beginner** / **Intermediate** / **Advanced** stage |
+| Practice for a recipe | `## Practice` at the end of that `say-*.md` page ([recipe track](grammar-docs.md#recipe-track)); same principles, not a stage checkpoint |
 | Multi-turn dialogue practice | [`examples/`](../examples/) — not inside every grammar section; grammar pages do not link there |
 | Cross-doc “finish the whole level” review | Optional later; not required on each peer page |
 

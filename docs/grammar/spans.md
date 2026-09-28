@@ -358,7 +358,7 @@ Beginner already used square, round, curly, and angle brackets for cite, aside, 
 | **o** | **mention** (`{` … `}`); with **`@`** / **-n**, the **name** | the word or phrase; proper = the name-string | **o** ≈ one (one word or phrase as the object) |
 | **u** | **opaque** (`<` … `>`); interior is not native Agalan | foreign / code | **u** ≈ undo (not native Agalan) |
 
-**Compare with:** a native office name uses ordinary **-n** (`zubugan`) — [named handles](word-endings.md#named-handles). Mention `{abogo}` is that **word**; opaque / loan is a **foreign** acronym’s surface (<code>z@&lt;FBI&gt;</code>).
+**Compare with:** a native office name uses ordinary **-n** (`zubugan`). Mention `{abogo}` is that **word**; opaque / loan is a **foreign** acronym’s surface (<code>z@&lt;FBI&gt;</code>).
 
 ### EDGE (extent) {#edge}
 
@@ -736,56 +736,6 @@ An editorial span still counts as said: resume (`d[=]` / `daxur`) may point back
 
 For a cut-off cite, use EDGE **`a`** + **`xuxur`**. EDGE **`e`** already ends at the clause with a whole close.
 
-### Spoken inventory
-<a id="inventory"></a>
-
-The rest of the spoken open map (PoS shown as `…`; EDGE **a** unless noted).
-
-| TYPE | exact multi **-l** | paraphrase **-m** | proper **-n** | resume **-r** (EDGE **u**) |
-|------|--------------------|-------------------|---------------|------------------------------|
-| cite **a** | `…axal` | `…axam` | `…axan` | `…axur` |
-| aside **e** | `thexal` | `thexam` | `thexan` | `thexur` |
-| mention **o** | `…oxal` | `…oxam` | `…oxan` | `…oxur` |
-| opaque **u** | `…uxal` | `…uxam` | `…uxan` | `…uxur` |
-
-Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); aside atomic **`thexol`**. Clause-scoped (EDGE **e**): `…axel` / `…axem` / `…axen`. Empty exact (EDGE **u**): `…axul` / `thexul` / `…oxul` / `…uxul`. Aside **opens** use `/th/`; resume may recast the aside into another slot (`dexur`).
-
-| Form | Use |
-|------|-----|
-| `xuxul` | close one — whole |
-| `xuxur` | close one — editorial |
-| `xuxum` | close all |
-| <!-- lint: fragment -->`xuxur xuxum` | editorial + close all (writing `#\|`) |
-
-### Literal content (fence words / fence marks)
-<a id="literal-content"></a>
-<a id="escape"></a>
-
-When a span-marker word or a fence glyph (`[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `=` / `|` / `#` / `^`) or a [tone mark](speech-moves.md#tone-marks) (`!` / `?`) must appear **as content**, wrap that token in **atomic opaque**. Writing and speech use the same vehicle. The outer span’s wording is the opaque **interior** (the wrapper is packaging, not extra cited words).
-
-```agalan
-d[ varadal d<]> ]
-d[ d<xuxul> ]
-d[ d<|> ]
-d[ vezebel d<#> ]
-```
-
-Speech for a fence **word**:
-
-```agalan
-daxal duxol xuxul xuxul
-```
-
-`d[ vezebel d<#> ]` is a whole cite whose last content character is `#` (a bare `#]` would be editorial close). A hyphen before a closer is ordinary content.
-
-Writing opaque `d<…>` closes on the first `>`. If the blob **contains** `>`, use the spoken opaque (EDGE **a** + **`xuxul`**):
-
-```agalan
-duxal code > 1 xuxul
-```
-
-**For *ordinals*, use:** [number words](numbers.md) with `#`. Inside a span, `#` is an editorial closer only when it sits immediately before `]` / `}` / `)` / `>` / `|`. `|` is close-all.
-
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
@@ -801,7 +751,6 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
 | *tell* | `vezebel` |
-| *write* | `varadal` |
 | *bug* | `abogam` |
 | *happy* | `hazaham` |
 
@@ -831,20 +780,6 @@ z-Alahen | d-CITE.multi[flaw]# | v-tell
 z-Azawan | d-CITE.multi[th-ASIDE.atomic[h-happy] | flaw]| | v-tell
 :::
 
-**4.** *Azawan said “write ]”.*
-
-::: details Show answer
-<code>zazawan d[ varadal d&lt;]&gt; ] vezebel.</code>
-:::
-
-**5.** *Ahaben said “code > 1.”* (spoken opaque, because a writing angle-bracket fence would close on the first greater-than)
-
-::: details Show answer
-`zahaben duxal code > 1 xuxul vezebel.`
-
-z-Ahaben | d-OPAQUE.multi["code" | ">" | "1"] | v-tell
-:::
-
 #### Agalan → English {#advanced-agalan-to-english}
 
 **1.** `zazawan d[abogam#] vezebel.`
@@ -865,22 +800,7 @@ z-Alahen | d-CITE.multi[flaw]# | x-span-close-all | v-tell
 *Alahen said “bug…”*
 :::
 
-**3.** `zazawan daxal duxol xuxul xuxul vezebel.`
-
-::: details Show answer
-
-z-Azawan | d-CITE.multi[d-OPAQUE.atomic["xuxul"]] | v-tell
-
-*Azawan said “xuxul.”*
-:::
-
-**4.** <code>zalahen d[ varadal d&lt;#&gt; ] vezebel.</code>
-
-::: details Show answer
-*Alahen said “write #.”*
-:::
-
-**5.** `zahaben d[abogam#|] vezebel.`
+**3.** `zahaben d[abogam#|] vezebel.`
 
 ::: details Show answer
 
@@ -889,11 +809,35 @@ z-Ahaben | d-CITE[flaw]#| | v-tell
 *Ahaben said “bug…”*
 :::
 
+## Reference tables {#reference-tables}
+
+Lookup grids that restate forms taught above; nothing here is new.
+
+### Spoken inventory
+<a id="inventory"></a>
+
+The rest of the spoken open map (PoS shown as `…`; EDGE **a** unless noted).
+
+| TYPE | exact multi **-l** | paraphrase **-m** | proper **-n** | resume **-r** (EDGE **u**) |
+|------|--------------------|-------------------|---------------|------------------------------|
+| cite **a** | `…axal` | `…axam` | `…axan` | `…axur` |
+| aside **e** | `thexal` | `thexam` | `thexan` | `thexur` |
+| mention **o** | `…oxal` | `…oxam` | `…oxan` | `…oxur` |
+| opaque **u** | `…uxal` | `…uxam` | `…uxan` | `…uxur` |
+
+Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); aside atomic **`thexol`**. Clause-scoped (EDGE **e**): `…axel` / `…axem` / `…axen`. Empty exact (EDGE **u**): `…axul` / `thexul` / `…oxul` / `…uxul`. Aside **opens** use `/th/`; resume may recast the aside into another slot (`dexur`).
+
+| Form | Use |
+|------|-----|
+| `xuxul` | close one — whole |
+| `xuxur` | close one — editorial |
+| `xuxum` | close all |
+| <!-- lint: fragment -->`xuxur xuxum` | editorial + close all (writing `#\|`) |
+
 ## See also
 
 - Scope islands: [joins.md](joins.md#scope-islands-join)
 - Identity vs parenthetical comment: [predication.md](predication.md#identity)
 - Phrasal proper names: [word-endings.md](word-endings.md#phrasal-proper-names)
 - Titled phrases (hook / join / span): [word-endings.md](word-endings.md#titled-phrases)
-- Native office handles: [word-endings.md](word-endings.md#named-handles)
 - Prefix-less citation outside a clause: [word-endings.md](word-endings.md#citation-forms)

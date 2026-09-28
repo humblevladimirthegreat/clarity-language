@@ -656,27 +656,6 @@ y-command | z-Alahen | v-walk | h-down
 *Alahen, walk down.*
 :::
 
-## Advanced {#advanced}
-
-### Arrow roots as talk-moves
-
-When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root **bare** (no **`th`** + facing person). Generic heading is **`agabu`** (*direction*). Facing-relative ahead / back still uses **`DIR th ANCHOR`**.
-
-> `zazawan vowogal. xezadam zalahen varahal.`
->
-> z-Azawan | v-walk . x-therefore | z-Alahen | v-run
->
-> "Azawan walks. Therefore Alahen runs."
-
-| Agalan | Use | English |
-|--------|-----|---------|
-| **`ezadam`** (bare) | talk moves on | *progress*; discourse **`xezadam`** *therefore* |
-| **`ewezam`** (bare) | talk comes back | *return* |
-| **`azawem`** (bare) | talk pulls back | *retreat* |
-| **`agabul`** | heading in general | *compass* / *direction* |
-
-**For *therefore*, use:** the [linker](dependents.md#sentence-linkers) **`xezadam`**. Body *left* / *right* still needs **`DIR th ANCHOR`**.
-
 ## See also
 
 - Event resume vs participant: [pronouns.md](pronouns.md)

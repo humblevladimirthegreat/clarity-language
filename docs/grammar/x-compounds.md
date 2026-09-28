@@ -277,7 +277,7 @@ When English stacks labels left to right (*crush* then *love*; a shop name with 
 
 [Multipart names](word-endings.md#phrasal-proper-names) use the same order (given name, then family, then a further title). [Body left / right](roles.md#viewpoint-laterals) is not this stack: it joins the direction and whose facing counts with **`th`** (`gewezathazawan`), because the second root is a point of view, not a kind.
 
-**Compare with:** a short office **handle** is one root ([named handles](word-endings.md#named-handles)), not this stack. A dictionary compound is one listed word, not a live list you extend.
+**Compare with:** a short office **handle** is one root plus [**-n**](word-endings.md#proper-name--n), not this stack. A dictionary compound is one listed word, not a live list you extend.
 
 ### Which family is this?
 <a id="decision-order"></a>
@@ -537,5 +537,4 @@ Azawan-presence . Alahen-minutes
 - How **`x`** sits in the word shape: [phonology.md](phonology.md#phonotactics)
 - [intention.md#ability](intention.md#ability) / [interests.md](interests.md) / [roles.md](roles.md) / [numeric-derivation.md](numeric-derivation.md)
 - Conversation length: [name **`x`** vowel](#conversation-length); bare hello: [word-endings.md](word-endings.md#greeting)
-- Short office names vs long titles: [word-endings.md](word-endings.md#named-handles)
 - Extra-noun fuse on a citation: [hooks.md](hooks.md#hook-compounds)

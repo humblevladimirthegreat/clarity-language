@@ -283,16 +283,6 @@ You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra c
 
 **Related form:** *not a dog* uses [negation **u**](joins.md#negation-u) (`gul`).
 
-### Different from {#different}
-
-For *unlike* / *different from*, use the [similative](relations.md#similative) **`gomem`** with the model in `/b/`, then close it with a negating join **`gul`**. The match to the model is denied.
-
-> `zazawan gomem balahen gul.`
->
-> z-Azawan | [[g-like | b-Alahen] | g-not]
->
-> "Azawan is different from Alahen."
-
 ### **SAME** endings
 
 Beginner already used closed **`gogal`** (*is the same as*). The other endings on that same adjective finish the map.

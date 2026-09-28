@@ -109,23 +109,6 @@ Related **quantity** words (*heavy*, *flow*, *time* as continuum, …) stay on t
 
 `bagazem grarel` ≈ *three hours*.
 
-#### Scale the amount
-<a id="no-metric-prefixes"></a>
-<a id="metric-prefixes"></a>
-
-Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / an exact count): `bezezem g+5400` or `bezezem g+5.4e3`; `bababam g+70e3`.
-
-**For *kilometers* / *milligrams*, use:** that scaled amount on the base unit. There is no *kilo-* / *milli-* / *mega-* stem.
-
-**Measured differentials** (*two meters taller*) put that measure noun phrase as the **single `/b/`** on the SHARED scale adjective of a [comparative](comparatives.md#measured-differentials):
-
-> `zazawan zalahen zel gadavem bezezem gradul.`
-> [z-Azawan | z-Alahen | z-rank/more | [g-height | b-meter]] | g-two
->
-> "Azawan is two meters taller than Alahen."
-
-Vague degree uses `/w/` on the scale (`zel wohahal gadavem …`) with no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
-
 ### Ranges {#ranges}
 <a id="number-ranges"></a>
 <a id="numeric-ranges"></a>
@@ -191,27 +174,6 @@ Order: integer digits, optional **`ye`** + fractional digits, then **`yo`** or *
 
 In [preferred writing](numbers.md#writing-preferred-shorthand): **`%`** → speech **`yo`**; **`%*`** → speech **`yu`** (sign still on **`ra`** / **`ru`**, written **`+`** / **`-`**).
 
-#### Denominator (portion “of what”)
-<a id="percent-denominators"></a>
-<a id="percent-of-what"></a>
-
-| Agalan | Use | English |
-|--------|-----|---------|
-| `zagadalx g+25%` | percent grades the modified noun | *25% of the cats* |
-| `dudolx g+95%` | same, object slot | *95% of the tests* |
-| `bebezalx g+5%` under a host relation | same, `/b/` | *5% of the people* |
-
-For a count out of a group already named (*three of them*), resume the group and give the count.
-
-> `zagadalx vehahel. zagarx grarel varahal.`
-> z-cat-x | v-sit . [z-←cat-x-x | g-three] | v-run
->
-> "The cats sit. Three of them run."
-
-The noun names the reference class; **`yo`** grades how much of that class. Same endings on the percent word (**-m** ≈ *about 25% of …*).
-
-**Related form:** `25%` (`…yo`) and `0.25` (plain scalar) name the same magnitude; **`yo`** chooses the percent-scale reading. **`yu`** likewise names a ÷100 magnitude, framed as **points**.
-
 #### Fractions (*half of*) {#fractions}
 
 English *half of the cats* / *a third of the tea* splits the whole into N parts. Put **`g-N`** right after the noun: the **`ru`** marker divides, as `/h/` **`h-N`** does. A whole number of 2 or more names one part in N.
@@ -227,43 +189,6 @@ English *half of the cats* / *a third of the tea* splits the whole into N parts.
 > "A third of the tea sits there."
 
 **`g-N`** is a fraction only right after a plain noun. After a [measure](#measure-phrases) unit, a minus number is still a negative amount (`bezezem grudul` *minus 2 meters*).
-
-#### *Most* {#most}
-
-*Most of the cats* means *more than half*. Write **`g+50%`** and close it as a greater-than [threshold](#numeric-thresholds) with **`guel`**.
-
-> `zagadalx g+50% guel vehahel.`
->
-> 🔊 *zagadalx gravazoyol guel vehahel.*
->
-> [z-cat-x | [g-50yo | g-rank/less]] | v-sit
->
-> "Most of the cats sit."
-
-### Numbered alternatives (problem / solution / goal)
-<a id="numbered-alternatives"></a>
-<a id="ideation"></a>
-
-When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](numbers.md) (`g#N`) — not a closed overlay. *Problem* and *solution* take the published **-m** senses; *goal* is already the **-l** literal. Prefer at least **`grewol`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
-
-> `zazawan zegehum gredul vezebel.`
-> z-Azawan | [z-solution | g-2nd] | v-tell
->
-> "Azawan names solution 2."
-
-| Agalan | Use | English | Same root as | Cue |
-|--------|-----|---------|--------------|-----|
-| **`ehegom`** | numbered-alternative problem | *problem* (something to fit / solve) | `ehegol` *puzzle-piece* | 🧩: pieces must fit |
-| **`egehum`** | numbered-alternative solution | *solution* (what unlocks it) | `egehul` *key* | 🔑: opens what was locked |
-| **`agol`** | numbered-alternative goal | *goal* (net you aim at) | | 🥅: the net you shoot for |
-| free **`g#N`** | rank in **this** numbered-alternative series | *candidate N* | | `#` = ordinal place |
-| soft **`g~#N`** | tentative ranking | *maybe candidate N* | | **-m** leaves the order open |
-
-**Recipe:** `zehegom grewol` / `zegehum gredul` / `zagol grewol`
-
-Unnumbered `zehegom` is just *a problem*, not a candidate in a set — write **`g#N`** when brainstorming. `-l` on the first two roots is still the picture (`zehegol` *a puzzle piece*; `zegehul` *a key*; `vegehul` *to unlock*). Reframing the **same** situation is different wording of one frame, not a second digit.
-
-**Compare with:** discourse *point N:* uses free **`x#N`** ([number as discourse](numbers.md#number-as-discourse-marker-by-marker)), a continue. Numbered alternatives are problem / solution / goal nouns plus **`g#N`**. Clause *so that* is [**`hagom`**](dependents.md#so-that), not **`agol`**.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -480,31 +405,6 @@ h-_1,4 | z-Alahen | v-walk
 
 ## Advanced {#advanced}
 
-### Date as books vs event-when
-<a id="as-of-vs-clock"></a>
-
-Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftover, climate, plan, and forecast score against is [*as-of*](relations.md#as-of) (`henem` / `humem` plus `/b/`). Put the date on that pole (`henem b_#22,7`); do not also write spare `h_#22,7` for the same snapshot. Clock / *before* / *after* may sit beside *as-of*: books vs event-when are different jobs.
-
-### Named standards and derived units
-<a id="unit-short-form"></a>
-
-Everyday measure uses the **unit metaphor** on the stock roots above (`bezezem gradul`). When you cite the **conventional SI name** as a titled standard (*the meter*, *the pascal*), use **-n** on that unit root ([named handles](word-endings.md#named-n-beginner)). Resume a prior unit phrase with **-r** on the same root (`bezezer gradul` after `bezezem gradul` is on the table).
-
-**Common derived (optional)** — unit metaphor on a dedicated root; related **quantity** stays on the original row:
-
-| Unit | Unit root (metaphor) | Example | Quantity (unchanged) |
-|------|----------------------|---------|----------------------|
-| newton | `avava` *newton* | `bavavam g+10` | `abahe` *force* |
-| pascal | `edaze` *pascal* | `bedazem g+101325` | `agabe` *pressure* |
-| joule | `azaho` *joule* | `bazahom g+500` | `abado` *energy* |
-| watt | `omoda` *watt* | `bomodam g+60` | `abage` *power* |
-| hertz | `azuba` *hertz* | `bazubam g+50` | `adavo` *rhythm* |
-| ohm | `obodo` *ohm* | `bobodom g+100` | `agoza` *blockage* |
-| coulomb | `azoba` *coulomb* | `bazobam g+2` | `araze` *charge* |
-| radian | `adawe` *radian* | `badawem g+1` | `eredu` *cycle* |
-
-**Related form:** normative *my standard* **`zomen`** vs performance **`zamun`** ([comparatives](comparatives.md#judgment-benchmarks)) is a judgment bar, not a unit. General **`ROOTl+1`** (*primary / singleton of a kind*) is [numeric derivation](numeric-derivation.md#scalar-digit-morphs), not an SI alias.
-
 ### Thresholds (single-item ranked)
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
@@ -557,36 +457,6 @@ A [hook](hooks.md) **inside the range** marks an exclusive **upper** bound. Repl
 Open **`um`** on the high end = soft / non-exhaustive exclusion of that bound. Other revision vowels (**`al`** / **`el`** / **`ol`**) are ordinary hooks, not range-bound markers.
 
 Fence **-l** / **-m** / **-n** keep ordinary closed / open / named senses on the range (*exactly this band* / *around this band* / *the teens*-style label). Endpoint [number endings](numbers.md#number-endings) still apply (**-m** ≈ fuzzy that bound).
-
-### Unspecified value in the range (**-r**)
-<a id="unspecified-value-in-the-range--r"></a>
-
-Fence **-r** on a number-range shape (still with SHARED continuum) names an **unspecified member of the range**.
-
-| Agalan | Use | English |
-|--------|-----|---------|
-| `z+3 z+5 zar guruham` | unspecified member of the inclusive band | *some value in [3, 5]* |
-| `z+3 ul z+5 zar guruham` | unspecified member of the exclusive-high band | *some value in [3, 5)* |
-| `z+3 z+5 zor guruham` | free-choice | *any value in [3, 5]* |
-| `z+3 z+5 zer guruham` | whatever-by-rank | *whatever-by-rank in [3, 5]* |
-| `z+3 z+5 zur guruham` | other-than the range | *some value other than (in) [3, 5]* |
-
-Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which value in 3–5?*). Same under `/d/` `/b/` `/ɡ/` as the slot needs (`grarel graval gal gadaham` = modifier *times 3–5*; `d+10 ul d+20 dar guruham` = object *some value in [10, 20)*).
-
-**Not the same job as:** content-word resume **-r**, and discrete *something among two listed values*.
-
-### Percent points, factors, and other wholes
-
-**`yu`** is a point-scale amount or delta (`+2` percentage points; often `/v/` **`ra`** / **`ru`**: increase or decrease by that point amount). `from A% to B%` uses [ranges](#ranges).
-
-**For *+50% relative to baseline*, use:** a multiplicative `/h/` factor (**`h+1.5`**, …) or ordinary *relative-to* wording.
-
-When the whole is not the modified head, use a complex `/ɡ/` or `/h/` [of relation](relations.md#of-relations) (`gabom` *part of*) + `/b/` whole, with the percent elsewhere in the clause as needed. Numbers take no `/w/` and no open arguments.
-
-**`…yu`** point amounts, factor change (`/h/` **`h+…`**), *top / bottom N%* rank bands, and *N% done* take their “whole” from context or a separately named class.
-
-A bare `/z/` (or other freestanding) **`…yo`** percent with no named whole is grammatical; prefer an explicit whole (*percent of what*). Bare **`…yu`** point amounts are fine when the percent-scale quantity being moved is already clear. Rates outside everyday percent talk use a plain scalar (`ye` / `e-N`).
-
 
 ### Ordinal generation — digitful exponent on **`#`** / **`#-`**
 <a id="ordinal-generation"></a>

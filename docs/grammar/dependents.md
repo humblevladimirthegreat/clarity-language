@@ -279,50 +279,6 @@ z-Ahaben | v-sit | [th-because | b-that-clause] | z-Azawan | d-guard | v-see
 Intermediate sections assume you have read the beginner sections of every page.
 :::
 
-### Which noun, with resume and kinds
-<a id="which-noun-intermediate"></a>
-
-Beginner already used two sentences for English *who / that / which*. Prefer [resume **-r**](pronouns.md#resume-r) in the second sentence.
-
-> `zagadul vehahel. zazawan bagar vezebel.`
->
-> z-guard | v-sit . z-Azawan | b-←guard | v-tell
->
-> "A guard sits. Azawan tells that guard."
-
-> `zazawan dodogal vahahal al babagul. zodor varahal.`
->
-> z-Azawan | d-dog | v-see | [in | b-bank] . z-←dog | v-run
->
-> "Azawan sees a dog in a bank. The dog runs."
-
-A place, tool, or *of*-relation on the noun is still an extra-noun [hook](hooks.md#extra-noun) or hosted `/ɡ/` + `/b/` (*the guard [in](hooks.md#extra-noun) a bank*, *a book written [with a hammer](hooks.md#extra-noun)*). A one-place role as a **kind** (*sitting guard*, *teacher*, *a sleep-place*) is a [role compound](roles.md#role-compounds) on `/ɡ/` with a non-resume ending, the same pattern as *is a teacher*. Resume **-r** on that compound is **this instance** (*the one teaching*), not the occupation.
-
-> `zazawan dagadul gaxehahel vahahal.`
->
-> z-Azawan | [d-guard | g-agent-x-chair] | v-see
->
-> "Azawan sees a sitting guard."
-
-For English *whose*, resume the person inside the ownership relation [**`gegabem`**](relations.md) in the second sentence.
-
-> `zagadul vehahel. zodogal gegabem bagar varahal.`
->
-> z-guard | v-sit . [z-dog | [g-ownership | b-←guard]] | v-run
->
-> "A guard sits. The guard's dog runs." (*The guard whose dog runs sits.*)
-
-English uses the same *who* clause for two jobs. When it picks out **which** one (*the guard who sits*, not the other guard), use the two-sentence pattern or a role compound, as above. When it only adds extra information about someone already known (*Azawan, who walks, sings*), put that information in an [aside](spans.md) **`th(…)`** inside the sentence.
-
-> `zazawan th(zazar vowogal) vezehel.`
->
-> z-Azawan | th-ASIDE[z-←Azawan | v-walk] | v-sing
->
-> "Azawan, who walks, sings."
-
-**Compare with:** ordinary `gehahel` is *chair* / *position* as a property, not *sitting*. [Restrictors](restrictors.md) say when a **claim** counts (*never*, *only when raining*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the **same** first noun still need another sentence ([complex chaining](clause.md#complex-chaining)).
-
-
 ### Writing and speech rhythm (periods) {#orthography-and-prosody-periods}
 
 A **period** closes the sentence body in writing, whatever the speech act. Speech matches that edge with pitch and a short pause. The act word, not the punctuation, sets question or command. `?` and `!` are [tone marks](speech-moves.md#tone-marks) that go before the words they color.
