@@ -390,7 +390,7 @@ function collectHashFallbackCandidates(input: string): string[] {
   return out;
 }
 
-function* clarityRootCandidates(input: string): Generator<string> {
+export function* clarityRootCandidates(input: string): Generator<string> {
   const tokens = mappedSourceLetters(input);
   const seen = new Set<string>();
 
