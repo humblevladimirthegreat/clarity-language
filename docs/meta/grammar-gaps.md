@@ -97,7 +97,6 @@ No open rows.
 |----|---------------------------|---------------|---------|-------------|----------|----------|
 | G-B01 | grammatical tense (past / present / future marking on the verb) | No tense letter, stated as a design choice: "Verbs have **no past or future letter**" ([knowing#evidentiality](../grammar/knowing.md#evidentiality)); "Neither word is a past tense" ([why-agazan](../grammar/why-agazan.md)); morph glosses never carry tense ([glosses](glosses.md), line ~270). Time comes from channel, *before* / *after*, clock, forecast (channel + `b+`) | by design | knowing.md | Add to the By design table as D-nn so it is not raised again | — |
 | G-B03 | past with no evidential claim (plain narration: *Yesterday Azawan walked*, told with no source) | channel or date: `thunom` / `themam` / `thazom` (*per the tale*, for narration), or a clock / date | by design | knowing.md | Neutral past is deliberately absent (see D-10). No *earlier* adverb and no bare *before now*: *before* / *after* always name a landmark | — |
-| G-B15 | *begin / stop / finish* doing (phase verbs) | Content roots only: `vazadal` *stop* + object `dowogam` (`zazawan vazadal dowogam.` parses); `eveha` *terminus*; nothing for *start*. Using an action noun as the object is not taught | awkward | clause.md | Teach event-noun objects for phase verbs and give *start* a root | P2 |
 | G-B21 | *must* (obligation) | Firm command `yel`, or need-linked prescription `…thel`/`…them`/`…ther` ([values#sake-force](../grammar/sakes.md#sake-force)). By design, a bare *must* without a named sake is avoided ([why-agazan](../grammar/why-agazan.md)) | by design | sakes.md | — | — |
 
 **Notes**
@@ -113,7 +112,6 @@ No open rows.
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
 | G-C02 | *the* for an already-mentioned referent | resume **-r**: `zodogal vowogal. zodor vehahel.` — [pronouns#resume-r](pronouns.md#resume-r) | by design (D-03) | pronouns.md | — | — |
-| G-C29 | double genitive (*a friend of Azawan's*) | depends on G-C28; for things `dubugal gegabem bazawan` (*a book of Azawan's*) = same as *'s*, fine | awkward | relations.md | Resolved by G-C28 | P2 |
 | G-C30 | stacked possessives (*Azawan's dog's owner*) | chained hosts parse (`zodogal gegabem bazawan gegabem balahen`) but attachment of the second `gegabem` is not taught | awkward | joins.md / relations.md | Teach chaining order of stacked of-relations | P3 |
 | G-C38 | generic reference (*Cats sit. / A cat is an animal.*) | `zual gagadal` (strict) / `zuam gagadal` (soft) — [joins#universals-domains-generics](joins.md#universals-domains-generics); habitual `hual` | by design (D-06) | joins.md | — | — |
 
@@ -142,7 +140,6 @@ No open rows.
 
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
-| G-E16 | *once* / *as soon as* | `hulam barl …` (*after*); immediacy unmarked | awkward | dependents.md | Immediate-after: `/w/` detail on `hulam` (e.g. haste root `wadehom hulam barl`) or teach `hulam` + `hal` | P2 |
 | G-E23 | *when* relative (*the day when …*) | two sentences + time `/h/`; no pattern taught for resuming a time | awkward | dependents.md | Teach resume on a time noun in `/h/` (or `har`-style restrictor) as the *when*-relative pair | P3 |
 
 **Notes**
@@ -158,7 +155,7 @@ No open rows.
 
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
-| G-F12 | bare *me too* (no verb) | `zamun zam.` parses but is untaught; taught route needs the verb resume (G-F11) | extension candidate | pronouns.md, joins.md | Consider teaching subject + `zam` / `zal` fragment after a claim as *me too* (add-join reading is guessable) | P3 |
+| G-F12 | bare *me too* (no verb) | `zSELFn zam.` (speaker's name + single-item open add *X, for one*) parses but is untaught as a reply; taught route needs the verb resume (G-F11). Not `zal` (single-item = *only X*) | extension candidate | pronouns.md, joins.md | Teach speaker's name + single-item `zam` after a claim as *me too* (reuses the taught *X, for one* reading) | P3 |
 | G-F19 | ellipsis with modal / ability (*Azawan can sing and so can I*) | verb resume `vezeher` drops the ability; would need `x` ability on the resume, not taught ([intention#incapability](intention.md#incapability)) | awkward | intention.md, pronouns.md | State whether ability **`x` + vowel** may sit on a resumed verb (`/v/ … -r` stem) or on `eze`; add example | P3 |
 
 **Notes**
@@ -209,8 +206,6 @@ No open rows.
 
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
-| G-J08 | *across* (to the other side) | `uol` *through* / `uom` *by way of*: `zazawan vowogal uol bebevul.` Loses the "side to side / other side" sense | awkward | hooks.md | Consider a stacked-vowel or `-m` reading for traversal-to-far-side, or teach `uol` + `ebevu` *span* idiom | P2 |
-| G-J14 | *by* (deadline) | english.md: clock `/h/` or `hodam barl` *until* — neither means "no later than" | awkward | numbers-applied.md | Use `hodam` + `/b/` with **-l** closed bound, or rank threshold (`ue`) on time; teach explicitly | P2 |
 
 **Notes**
 

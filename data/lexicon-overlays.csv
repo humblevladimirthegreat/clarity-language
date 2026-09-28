@@ -156,6 +156,7 @@ azem,h,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),z
 azem,g,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#dependent-clauses
 ehum,h,♊,clause_pole,while,WHILE clause pole (concurrent),gemini twins mirror two sides; duality is while both sides at once,dependents.md#dependent-clauses
 odam,h,⏲️,clause_pole,until,UNTIL clause pole (endpoint bound),timer counts down to zero; deadline is until the endpoint,dependents.md#dependent-clauses
+odal,h,⏲️,clause_pole,by,BY clause pole (deadline: done at or before the endpoint),timer rings at zero; -l is the hard cutoff the event must beat,dependents.md#dependent-clauses
 abum,h,🎒,clause_pole,before,BEFORE clause pole (ahead-of),backpack holds what you need ahead; preparation is before the event,dependents.md#dependent-clauses
 ulam,h,⌛,clause_pole,after,AFTER clause pole (just-after),hourglass just emptied; recency is after the prior edge,dependents.md#dependent-clauses
 agom,h,🥅,clause_pole,so-that,SO-THAT clause pole (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#dependent-clauses
@@ -207,6 +208,8 @@ uen,g,,join_relation,deprioritizing,join-relation deprioritizing (adjective),cou
 uen,h,,join_relation,deprioritizing,join-relation deprioritizing (adverb),counterrank ue+n on /h/; deprioritizing puts argument last,join-across-roles.md#join-relations
 ozam,h,🥪,locative,between,locative between (two landmarks),sandwich sits in the layer between sides; between takes a join of two landmarks,relations.md#locative-relations
 ozam,g,🥪,locative,between,locative between (two landmarks),sandwich sits in the layer between sides; between takes a join of two landmarks,relations.md#locative-relations
+ebevum,h,🌉,locative,across,locative across (edge to far edge of one landmark),bridge spans the gap; across is reaching from one side to the other,relations.md#locative-relations
+ebevum,g,🌉,locative,across,locative across (edge to far edge of one landmark),bridge spans the gap; across is reaching from one side to the other,relations.md#locative-relations
 omem,h,🪞,similative,like,similative like (manner resemblance),mirror shows a reflection; like is resembling the model in /b/,clause.md#extra-nouns
 omem,g,🪞,similative,like,similative like (type resemblance),mirror shows a reflection; like is a counterpart of the model in /b/,relations.md#beginner
 ogem,h,💱,exchange,in-exchange-for,exchange in-exchange-for (consideration / countervalue),currency arrows swap one for another; in-exchange-for is the other side of the swap in /b/,relations.md#exchange

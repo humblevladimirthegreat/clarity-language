@@ -6,7 +6,7 @@ These pages are recipes, not lessons. Each one shows how forms you already learn
 |------|------------------|
 | [People, things and places](say-people-places.md) | *as for X*, *whose*, *different from*, office titles, *do the same to it* |
 | [Amounts, sizes and time](say-amounts.md) | *from least to most*, *both are*, *two meters taller*, *most of*, *25% of*, units, dates |
-| [Reasons, knowledge and plans](say-reasons.md) | *because* vs *if*, *would have*, habits, *as of 22 July* |
+| [Reasons, knowledge and plans](say-reasons.md) | *because* vs *if*, *would have*, habits, *start / stop doing*, *as of 22 July* |
 | [Asking and answering](say-questions.md) | *You saw WHAT?*, *asks who*, *Just X?* / *How about X?*, *What a big dog!*, *by the way* |
 
 ## One English word, many jobs {#many-jobs}
@@ -20,7 +20,7 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agazan 
 | who does the action (*seen by Azawan*) | subject `/z/` (you may front the object) | [Who acts](clause.md#beginner), [word order](clause.md#word-order-emphasis) |
 | tool (*writes by / with a hammer*) | hook **`ael`** (*using*) + `/b/` | [Hooks](hooks.md#extra-noun) |
 | place (*by the station*) | hook **`om`** (*near*) + `/b/` (or **`ol`** *at*) | [Hooks](hooks.md#extra-noun) |
-| deadline (*by 15:30*) | clock `/h/`, or *until* **`hodam barl`** | [Time](numbers-applied.md#time), [dependent clauses](dependents.md#dependent-clauses) |
+| deadline (*by 15:30*, *by the storm*) | **`hodal`** + `/b/` (or **`hodal barl`** + sentence) | [By a deadline](dependents.md#by-deadline) |
 | manner (*by walking hastily*) | ordinary adverb `/h/`, no `/b/` | [Adverbs](clause.md#adverbs-h) |
 | origin (*Alahen from the city*) | **`hagum` / `gagum`** + `/b/` | [Of relations](relations.md#of-relations) |
 

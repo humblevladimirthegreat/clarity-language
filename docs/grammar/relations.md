@@ -251,9 +251,22 @@ The `/b/` after the host is **one slot**. A join (`bal`) or a [plural](plurality
 
 Ordinary `zozal` is still *a sandwich*.
 
+<a id="across"></a>
+
+*Across* also needs a root. The hook **`uol`** *through* goes through the inside of the landmark (a crowd, a tunnel). **`hebevum`** goes from one edge to the far edge (a street, a river). Put the landmark in `/b/` right after it. (cue: 🌉 *bridge*: a bridge spans the gap)
+
+> `zazawan vowogal hebevum bezedel.`
+>
+> z-Azawan | v-walk | [h-across | b-station]
+>
+> "Azawan walks across the station."
+
+On a noun it is **`gebevum`**: *Azawan, across the station, sits.* Ordinary `zebevul` is still *a bridge*.
+
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hozam` / `gozam`** | figure in the layer of two landmarks | *between* | `ozal` *sandwich* | 🥪: the filling sits between two sides |
+| **`hebevum` / `gebevum`** | path from one edge of the landmark to the far edge | *across* | `ebevul` *bridge* | 🌉: a bridge spans the gap |
 
 **Compare with:** unhosted `/b/` is still the recipient. Numeric *from 3 to 5* is a [range](numbers-applied.md#ranges). *Like* is [simile](#similative). *For a hammer* as a swap is [exchange](#exchange). *On behalf of Alahen* is [proxy](#proxy). English *of* that is not a place is [of relations](#of-relations).
 

@@ -72,6 +72,7 @@ You can also say:
 | **`hazem barl`** | *although* / *even though* | `azel` *zebra* | 🦓: two stripes, still one animal |
 | **`hehum barl`** | *while* (at the same time) | `ehul` *gemini* | ♊: two things at once |
 | **`hodam barl`** | *until* | `odal` *timer* | ⏲️: stop when it rings |
+| **`hodal barl`** | *by the time* | `odal` *timer* | ⏲️: done before it rings |
 | **`habum barl`** | *before* | `abul` *backpack* | 🎒: packed first |
 | **`hulam barl`** | *after* | `ulal` *hourglass* | ⌛: sand already through |
 | **`hagom barl`** | *so that* / *in order to* | `agol` *goal* | 🥅: you act so the shot counts |
@@ -99,6 +100,26 @@ The time poles take a noun the same way. Put the event or period in `/b/` right 
 > z-Azawan | v-sit | [h-after | b-thunderstorm]
 >
 > "Azawan sits after the thunderstorm."
+
+<a id="by-deadline"></a>
+
+*Until* and *by* use the same timer root. **`hodam`** *until* says this event lasts up to the endpoint. **`hodal`** *by* says this event is done at the endpoint or sooner: **-l** is the hard cutoff. (cue: ⏲️ *timer*: done before it rings)
+
+> `zazawan vowogal hodal bavodel.`
+>
+> z-Azawan | v-walk | [h-by | b-thunderstorm]
+>
+> "Azawan walks by the thunderstorm (no later than it)."
+
+<a id="as-soon-as"></a>
+
+For *as soon as* / *once*, keep **`hulam`** *after* and put the haste word **`wadehom`** in front of it. The gap between the two events is as short as it can be.
+
+> `zazawan vowogal wadehom hulam barl zalahen vehahel.`
+>
+> z-Azawan | v-walk | [[w-haste | h-after] | b-that-clause] | z-Alahen | v-sit
+>
+> "Azawan walks as soon as Alahen sits."
 
 For *since* (from a starting point up to now), see [the *from* hook on a time](hooks.md#since). *Since* meaning *because* is **`theram barl`**.
 

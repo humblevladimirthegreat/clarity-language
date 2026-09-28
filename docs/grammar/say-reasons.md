@@ -1,6 +1,6 @@
 # Reasons, knowledge and plans
 
-Recipes for English *because* / *if* / *would have*, habits, and *as of that date*. Every form here is taught on a grammar page; each recipe links what it needs.
+Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* doing, and *as of that date*. Every form here is taught on a grammar page; each recipe links what it needs.
 
 ## Reasons and conditions {#reasons}
 
@@ -102,6 +102,34 @@ A one-off episode and a standing pattern use the same poles. Add extra words for
 > "Rain comes if there are clouds, as a standing pattern."
 
 **Compare with:** *always* / *every* / *never* as exceptionlessness uses [universality](knowing.md#universality). **CAUSE** is **`thegem`**.
+
+## Starting and stopping {#phase-verbs}
+
+**Needs:** [objects `/d/`](clause.md#beginner), [word endings](word-endings.md).
+
+English *start* / *stop* / *finish* doing something are ordinary verbs. Put the activity in `/d/` as an ordinary noun (`dowogal` *a walk*).
+
+| English | Agazan | Same root as |
+|---------|--------|--------------|
+| *start* | `vebeham` | ▶️ `ebehal` *play button* |
+| *stop* | `vazadal` | 🛑 `azadal` *stop sign* |
+| *finish* | `vevehal` | 🏁 `evehal` *finish line* |
+
+> `zazawan vebeham dowogal.`
+>
+> z-Azawan | v-commencement | d-walk
+>
+> "Azawan starts walking."
+
+> `zazawan vevehal dowogal.`
+>
+> z-Azawan | v-finish-line | d-walk
+>
+> "Azawan finishes walking."
+
+*Stop* means the activity ends, finished or not. *Finish* means it reached its end.
+
+**Compare with:** *still* / *no longer* / *not yet* are [phasal words](knowing.md#phasal), not these verbs.
 
 ## Against a dated now {#dated-now}
 
