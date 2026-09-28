@@ -53,7 +53,7 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 | `zabedelohohul` | bed **-l** house | bedroom | left piece everyday |
 | `zadorolobelel` | door **-l** bell | doorbell | left piece everyday |
 | `zonogoleberel` | bond **-l** person | friend | left piece everyday |
-| `zanunulojal` | rain **-l** coat | raincoat | left piece everyday |
+| `zanunuloyal` | rain **-l** coat | raincoat | left piece everyday |
 | `…m…` | left root in its [abstract](word-endings.md#abstract-m) sense | same two roots, join **-m** | **m** ≈ meaning |
 
 If the pairing is not in the dictionary, either glue with **`x`** (`zebeyexabedel` *peanut butter*) or use two words. Extra-noun *enter* / *leave* fused onto a citation is a [hook compound](hooks.md#hook-compounds), not this two-root join.
@@ -89,7 +89,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Ululon* | `alahen` | |
 | *Uhubun* | `ahaben` | |
 | *doorbell* | `zadorolobelel` | |
-| *raincoat* | `zanunulojal` | |
+| *raincoat* | `zanunuloyal` | |
 | *greenhouse* | `zovowelohohul` | |
 | *friend* | `zonogoleberel` | |
 | *hammer* | `ahavel` | |
@@ -129,7 +129,7 @@ z-saw-x-wood
 **4.** *a raincoat*
 
 ::: details Show answer
-`zanunulojal.`
+`zanunuloyal.`
 
 z-raincoat
 :::
@@ -204,7 +204,7 @@ z-saw-x-wood
 *a wood saw*
 :::
 
-**5.** `zahaben danunulojal vahahal.`
+**5.** `zahaben danunuloyal vahahal.`
 
 ::: details Show answer
 

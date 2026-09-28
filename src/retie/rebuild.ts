@@ -19,7 +19,7 @@ const SPAN_CLOSE: Record<WritingBracket, string> = {
   "<": ">",
 };
 
-const POS_LETTERS = "zdbvgwhxyj";
+const POS_LETTERS = "zdbvgwhxy";
 
 /** Rewrite one orthographic word. Never substitutes inside a larger token. */
 export function retieCore(

@@ -81,11 +81,11 @@ describe("tokenizeUtterance", () => {
 
 describe("tone marks", () => {
   it("emits attached and free-standing marks as tone segments", () => {
-    assert.deepEqual(segmentUtterance("?! zazawan !!vejel ?^ hal ^."), [
+    assert.deepEqual(segmentUtterance("?! zazawan !!veyel ?^ hal ^."), [
       { kind: "tone", mark: "?!", attached: false },
       { kind: "word", text: "zazawan" },
       { kind: "tone", mark: "!!", attached: true },
-      { kind: "word", text: "vejel" },
+      { kind: "word", text: "veyel" },
       { kind: "tone", mark: "?", attached: true },
       { kind: "islandEdge" },
       { kind: "word", text: "hal" },

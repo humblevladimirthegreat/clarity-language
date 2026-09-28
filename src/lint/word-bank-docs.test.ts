@@ -22,7 +22,7 @@ function tablesOf(): ClassifyTables {
         emoji: "",
         concrete: "eye",
         abstract: "",
-        clarity: "eje",
+        clarity: "eye",
         mnemonic: "",
         englishByPos: "v:see",
         posEnglish: parseEnglishByPos("v:see", { concrete: "eye" }),
@@ -31,7 +31,7 @@ function tablesOf(): ClassifyTables {
         emoji: "",
         concrete: "chair",
         abstract: "",
-        clarity: "aju",
+        clarity: "ayu",
         mnemonic: "",
         englishByPos: "v:sit",
         posEnglish: parseEnglishByPos("v:sit", { concrete: "chair" }),
@@ -48,7 +48,7 @@ const BANK = `### Translation practice
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | \`azawan\` | |
-| *see* | \`vejel\` | \`ejel\` *eye* |
+| *see* | \`veyel\` | \`eyel\` *eye* |
 `;
 
 describe("lintWordBankMarkdown", () => {
@@ -65,11 +65,11 @@ describe("lintWordBankMarkdown", () => {
 
 | English | Agalan |
 |---------|--------|
-| *see* | \`vajul\` |
+| *see* | \`vayul\` |
 `;
     const findings = lintWordBankMarkdown(md, tables);
     assert.equal(findings.length, 1);
-    assert.equal(findings[0]!.agalan, "vajul");
+    assert.equal(findings[0]!.agalan, "vayul");
     assert.equal(findings[0]!.english, "see");
   });
 

@@ -7,7 +7,7 @@ describe("padExerciseSpoilerBlanks", () => {
   it("inserts blank between morph and loose English in details", () => {
     const md = `### Translation practice
 
-**1.** \`zazawan vajul.\`
+**1.** \`zazawan vayul.\`
 
 ::: details Show answer
 z-Azawan | v-sit
@@ -22,12 +22,12 @@ z-Azawan | v-sit
     const md = `### Translation practice
 
 ::: details Show answer
-\`zazawan vajul.\`
+\`zazawan vayul.\`
 z-Azawan | v-sit
 :::
 `;
     const out = padExerciseSpoilerBlanks(md);
-    assert.match(out, /`zazawan vajul\.`\n\nz-Azawan \| v-sit/);
+    assert.match(out, /`zazawan vayul\.`\n\nz-Azawan \| v-sit/);
   });
 
   it("pads comparatives beginner block", () => {

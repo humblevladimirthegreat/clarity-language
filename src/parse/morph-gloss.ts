@@ -1614,7 +1614,7 @@ function markShorthandRuns(words: LexWord[], ctxByIndex: MorphGlossContext[]): v
  * spelling (`g+`, `g+3`). The preferred surface is unmarked.
  */
 function numberSurfaceSuffix(raw: string, stem: NumberStem, ctx: MorphGlossContext): string {
-  const spelled = /^(?:th|[zdbvgwhxyj])?[a-z]+$/.test(raw);
+  const spelled = /^(?:th|[zdbvgwhxy])?[a-z]+$/.test(raw);
   const short = ctx.shorthandRun || prefersNumberShorthand(stem);
   if (spelled) return short ? ".spelled" : "";
   return short ? "" : ".short";

@@ -122,9 +122,9 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zol", "z-or-exactly-one");
     expectLine("zel", "z-rank/more");
     expectLine("zael", "z-equal-rank");
-    expectLine("zagadalx g=+ vajul.", "[z-cat-x | g-some-amount] | v-sit");
-    expectLine("yol zagadalx g=+ vajul.", "y-question | [z-cat-x | g-how-many] | v-sit");
-    expectLine("yol zazawan vajul ol b=#.", "y-question | z-Azawan | v-sit | [at | b-which-place]");
+    expectLine("zagadalx g=+ vayul.", "[z-cat-x | g-some-amount] | v-sit");
+    expectLine("yol zagadalx g=+ vayul.", "y-question | [z-cat-x | g-how-many] | v-sit");
+    expectLine("yol zazawan vayul ol b=#.", "y-question | z-Azawan | v-sit | [at | b-which-place]");
     expectLine("zaem", "z-equal-rank.open");
     expectLine("zar", "z-something");
     expectLine("zul", "z-not");
@@ -195,8 +195,8 @@ describe("morphGlossLine — glosses.md single words", () => {
   });
 
   it("lexicon senses use packed role English when present", () => {
-    expectLine("vajul", "v-sit");
-    expectLine("vejel", "v-see");
+    expectLine("vayul", "v-sit");
+    expectLine("veyel", "v-see");
     expectLine("vezehel", "v-tell");
     expectLine("vebarul", "v-departure");
     expectLine("welem", "w-very");
@@ -206,11 +206,11 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("hurorom", "h-like");
     expectLine("gurorom", "g-like");
     expectLine("gobonem", "g-part-of");
-    expectLine("gajaram", "g-contents");
+    expectLine("gayaram", "g-contents");
     expectLine("gowodom", "g-material");
     expectLine("gugunom", "g-origin");
     expectLine("hazanum", "h-between");
-    expectLine("zejel", "z-eye");
+    expectLine("zeyel", "z-eye");
     expectLine("hozal", "h-hash");
     expectLine("yam", "y-soft-statement");
     expectLine("yem", "y-request");
@@ -295,7 +295,7 @@ describe("compareMorphGloss", () => {
 
   it("emits scope island edges in morph gloss", () => {
     expectLine(
-      "zazawan ^ huzurem zodogol garedel ^ vejel",
+      "zazawan ^ huzurem zodogol garedel ^ veyel",
       "z-Azawan | SCOPE[h-possibility | [z-dog | g-red]] | v-see",
     );
   });
@@ -324,7 +324,7 @@ describe("compareMorphGloss", () => {
   it("morphRedundantWithLoose allows single-word citation skips", () => {
     assert.equal(morphRedundantWithLoose("azawal", "swan", tables), true);
     assert.equal(morphRedundantWithLoose("azawan.", '"Azawan."', tables), true);
-    assert.equal(morphRedundantWithLoose("zazawan vajul.", "Azawan sits.", tables), false);
+    assert.equal(morphRedundantWithLoose("zazawan vayul.", "Azawan sits.", tables), false);
     assert.equal(morphRedundantWithLoose("z!!!", "nope", tables), false);
   });
 
@@ -399,7 +399,7 @@ describe("compareMorphGloss", () => {
       "zazawan vawalal th(zululon velebel)",
       "z-Azawan | v-walk | th-ASIDE[z-Ululon | v-sleep]",
     );
-    expectLine("zululon daxol ujudul vezehel", "z-Ululon | d-CITE.atomic[judge] | v-tell");
+    expectLine("zululon daxol uyudul vezehel", "z-Ululon | d-CITE.atomic[judge] | v-tell");
   });
 
   it("viewpoint laterals keep compass on DIR", () => {
@@ -417,7 +417,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("house-cast resume without a same-line antecedent", () => {
-    expectLine("zazawarx vajul", "z-←Azawan.full-x | v-sit");
+    expectLine("zazawarx vayul", "z-←Azawan.full-x | v-sit");
   });
 
   it("quasi numeric derivation is English", () => {
@@ -448,14 +448,14 @@ describe("morphGlossLine — extra fixtures", () => {
 
 describe("morphGlossLine — th stance letter", () => {
   it("glosses stance moods, /w/ on th, and th poles with stand-ins", () => {
-    expectLine("thodohom zazawan vajul.", "th-MAY | z-Azawan | v-sit");
-    expectLine("zazawan wuzumum thadezem vejel ejelul.", "z-Azawan | [w-happy | th-LIVE] | v-see | eye-leave");
-    expectLine("thurugum barl zazawan vajul.", "[th-because | b-that-clause] | z-Azawan | v-sit");
-    expectLine("thexal zazawan vajul xuxul.", "th-ASIDE.multi[z-Azawan | v-sit]");
+    expectLine("thodohom zazawan vayul.", "th-MAY | z-Azawan | v-sit");
+    expectLine("zazawan wuzumum thadezem veyel eyelul.", "z-Azawan | [w-happy | th-LIVE] | v-see | eye-leave");
+    expectLine("thurugum barl zazawan vayul.", "[th-because | b-that-clause] | z-Azawan | v-sit");
+    expectLine("thexal zazawan vayul xuxul.", "th-ASIDE.multi[z-Azawan | v-sit]");
   });
 
   it("keeps time poles and restrictors on /h/", () => {
-    assert.match(morphGlossLine("hababam barl zazawan vajul.", tables), /^\[h-before/);
+    assert.match(morphGlossLine("hababam barl zazawan vayul.", tables), /^\[h-before/);
   });
 });
 
@@ -472,9 +472,9 @@ describe("morphGlossLine — stance joins and emphatic prohibition", () => {
 
 describe("morphGlossLine — tone marks", () => {
   it("copies attached and free-standing marks", () => {
-    expectLine("zazawan vejel ?dodogol.", "z-Azawan | v-see | ?d-dog");
+    expectLine("zazawan veyel ?dodogol.", "z-Azawan | v-see | ?d-dog");
     expectLine("! zazawan vawalal.", "! | z-Azawan | v-walk");
-    expectLine("zazawan vejel &dodogol.", "z-Azawan | v-see | &d-dog");
+    expectLine("zazawan veyel &dodogol.", "z-Azawan | v-see | &d-dog");
     expectLine("zazawan ; vawalal.", "z-Azawan | ; | v-walk");
     expectLine("%zazawan vawalal.", "%z-Azawan | v-walk");
   });
@@ -486,7 +486,7 @@ describe("morphGlossLine — standalone joins", () => {
     expectLine("zam vawalal.", "z-none.open | v-walk");
     expectLine("zual vawalal.", "z-everything | v-walk");
     expectLine("zazawan vawalal ol bual.", "z-Azawan | v-walk | [at | b-everything]");
-    expectLine("zazawan vejel dal.", "z-Azawan | v-see | d-none");
+    expectLine("zazawan veyel dal.", "z-Azawan | v-see | d-none");
     expectLine("zazawan zual vawalal.", "[z-Azawan | z-everything-but] | v-walk");
     expectLine("zazawan zululon zal vawalal.", "[z-Azawan | z-Ululon | z-and] | v-walk");
   });

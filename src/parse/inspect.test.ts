@@ -120,7 +120,7 @@ describe("inspectText", () => {
   });
 
   it("links -r to its antecedent", () => {
-    const result = inspectText("zululon vawalal. zulur vajul.", tables);
+    const result = inspectText("zululon vawalal. zulur vayul.", tables);
     const pronoun = result.tokens.find((token) => token.kind === "word" && token.raw === "zulur");
     assert.equal(pronoun?.kind, "word");
     if (pronoun?.kind !== "word") return;

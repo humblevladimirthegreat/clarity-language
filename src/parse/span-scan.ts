@@ -1,4 +1,4 @@
-const POS = new Set(["z", "d", "b", "v", "g", "w", "h", "x", "y", "j"]);
+const POS = new Set(["z", "d", "b", "v", "g", "w", "h", "x", "y"]);
 const OPEN_CLOSE: Record<string, string> = {
   "[": "]",
   "{": "}",
@@ -17,7 +17,7 @@ function clauseScopedEnd(text: string, openAt: number): number {
     let j = i;
     while (j < text.length && !/\s/.test(text[j]!)) j += 1;
     const chunk = text.slice(i, j);
-    if (i > openAt + 1 && /^[xyj][aeiou+#_~@=-]/.test(chunk)) break;
+    if (i > openAt + 1 && /^[xy][aeiou+#_~@=-]/.test(chunk)) break;
     const mark = /[.?!]+$/.exec(chunk);
     if (mark && (j >= text.length || /\s/.test(text[j]!))) return i + chunk.length - mark[0].length;
     end = j;

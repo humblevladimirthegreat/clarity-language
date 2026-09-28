@@ -141,7 +141,7 @@ describe("classify", () => {
     assert.ok(part.overlay);
     assert.equal(part.overlay!.kind, "of_relation");
     assert.equal(part.overlay!.gloss, "part-of");
-    const contents = expectReading("hajaram", "ofRelation");
+    const contents = expectReading("hayaram", "ofRelation");
     assert.equal(contents.overlay!.gloss, "contents");
     const material = expectReading("gowodom", "ofRelation");
     assert.equal(material.overlay!.gloss, "material");

@@ -130,7 +130,7 @@ function separatorVowel(markerV) {
     "al", "am", "ol", "om", "el", "em", "ul", "um",
   ];
   const ROOT_VOWELS = "aeou";
-  const ROOT_CONS = "hwdyjbgzmnvlr";
+  const ROOT_CONS = "hwdybgzmnvlr";
 
   function isVcvRoot(root) {
     if (!root || root.length % 2 === 0) return false;
@@ -461,7 +461,7 @@ SpeechGroupSeparator
   = "th" v:[aeou] { return v; }
 
 SpeechDigitGroup
-  = sign:("ba" / "bu") expDigits:SpeechDigitSeq ("ya" / "ja") mantissa:SpeechMantissa percent:SpeechPercent? {
+  = sign:("ba" / "bu") expDigits:SpeechDigitSeq "ya" mantissa:SpeechMantissa percent:SpeechPercent? {
       return compactGroup({
         exponentSign: sign,
         exponentDigits: parseSpeechDigits(expDigits),
@@ -487,10 +487,10 @@ SpeechDigitGroup
     }
 
 SpeechMantissa
-  = int:SpeechDigitSeq ("ye" / "je") frac:SpeechDigitSeq {
+  = int:SpeechDigitSeq "ye" frac:SpeechDigitSeq {
       return { digits: parseSpeechDigits(int) + "." + parseSpeechDigits(frac), decimal: true };
     }
-  / ("ye" / "je") frac:SpeechDigitSeq {
+  / "ye" frac:SpeechDigitSeq {
       return { digits: "." + parseSpeechDigits(frac), decimal: true };
     }
   / digits:SpeechDigitSeq {
@@ -498,8 +498,8 @@ SpeechMantissa
     }
 
 SpeechPercent
-  = ("yu" / "ju") { return "yu"; }
-  / ("yo" / "jo") { return "yo"; }
+  = "yu" { return "yu"; }
+  / "yo" { return "yo"; }
 
 SpeechDigitSeq
   = syll:SpeechDigitSyllable+ { return syll.join(""); }
@@ -712,7 +712,7 @@ hookCompound
     }
 
 HookCompoundCite
-  = chars:$([aeou] [aeouhwdyjbgzmnvlr]+)
+  = chars:$([aeou] [aeouhwdybgzmnvlr]+)
     &{ return splitHookCompound(chars) != null; }
     { return chars; }
 
@@ -809,7 +809,7 @@ AngleAnaphor
 
 Pos
   = "th" { return "th"; }
-  / [yj] { return "y"; }
+  / "y" { return "y"; }
   / [zdbvgwhx] { return text(); }
 
 Ending
@@ -829,4 +829,4 @@ RootTail
     }
 
 Onset
-  = [hwdyjbgzmnvlr]
+  = [hwdybgzmnvlr]

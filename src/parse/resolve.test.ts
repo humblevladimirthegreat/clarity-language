@@ -37,7 +37,7 @@ describe("letterPrefix (pronouns.md)", () => {
 
 describe("resolve — content anaphors (pronouns.md)", () => {
   it("binds zulur to ululo by letter prefix", () => {
-    const { anaphors } = resolveOf("zululon vawalal. zulur vajul.");
+    const { anaphors } = resolveOf("zululon vawalal. zulur vayul.");
     assert.equal(anaphors.length, 1);
     assert.equal(anaphors[0]!.kind, "content");
     assert.equal(anaphors[0]!.match, "letter");
@@ -60,7 +60,7 @@ describe("resolve — content anaphors (pronouns.md)", () => {
   });
 
   it("binds zazawar to azawa by full root", () => {
-    const { anaphors } = resolveOf("zazawan vawalal. zazawar vajul.");
+    const { anaphors } = resolveOf("zazawan vawalal. zazawar vayul.");
     assert.equal(anaphors[0]!.match, "fullRoot");
     assert.equal(anaphors[0]!.antecedent?.raw, "zazawan");
   });
@@ -95,7 +95,7 @@ describe("resolve — content anaphors (pronouns.md)", () => {
 
 describe("resolve — span and number anaphors", () => {
   it("binds writing d[=] to the most recent cite (spans.md)", () => {
-    const { anaphors } = resolveOf("d[hi] vawalal. d[=] vajul.");
+    const { anaphors } = resolveOf("d[hi] vawalal. d[=] vayul.");
     const span = anaphors.find((a) => a.kind === "span");
     assert.ok(span);
     assert.equal(span!.typeVowel, "a");
@@ -104,7 +104,7 @@ describe("resolve — span and number anaphors", () => {
   });
 
   it("binds digitful z=+3 to the prior scalar (numbers.md)", () => {
-    const { anaphors } = resolveOf("z+3 vawalal. z=+3 vajul.");
+    const { anaphors } = resolveOf("z+3 vawalal. z=+3 vayul.");
     const num = anaphors.find((a) => a.kind === "number");
     assert.ok(num);
     assert.equal(num!.pronoun.raw, "z=+3");
@@ -112,9 +112,9 @@ describe("resolve — span and number anaphors", () => {
   });
 
   it("digitless z=+ is not a resume; under question it is a fill-ask (numbers.md#digitless)", () => {
-    const statement = resolveOf("z+3 vawalal. z=+ vajul.");
+    const statement = resolveOf("z+3 vawalal. z=+ vayul.");
     assert.equal(statement.anaphors.some((a) => a.kind === "number"), false);
-    const question = resolveOf("yol zagadalx g=+ vajul.");
+    const question = resolveOf("yol zagadalx g=+ vayul.");
     assert.equal(question.asks[0]?.kind, "fillAsk");
     assert.equal(question.asks[0]?.gaps[0]?.raw, "g=+");
   });
@@ -131,7 +131,7 @@ describe("resolve — role anaphors (roles.md)", () => {
   });
 
   it("binds zexazagar as place of the prior scream verb", () => {
-    const { anaphors } = resolveOf("zululon vazagal. zazawan dexazagar vejel.");
+    const { anaphors } = resolveOf("zululon vazagal. zazawan dexazagar veyel.");
     const role = anaphors.find((a) => a.kind === "role");
     assert.ok(role);
     assert.equal(role!.pronoun.raw, "dexazagar");
@@ -164,7 +164,7 @@ describe("resolve — yes/no vs fill-ask (questions.md)", () => {
   });
 
   it("orders fill-all gaps zar … dar", () => {
-    const { asks } = resolveOf("yol zar vejel dar.");
+    const { asks } = resolveOf("yol zar veyel dar.");
     assert.equal(asks[0]!.kind, "fillAsk");
     assert.deepEqual(
       asks[0]!.gaps.map((g) => g.raw),

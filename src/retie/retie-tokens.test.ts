@@ -206,8 +206,8 @@ describe("resume-aware markdown retie", () => {
 
   it("respells a short resume from the antecedent’s new stem", () => {
     const map = mapOf(["azawa", "ululo"]);
-    const { text } = rewriteMarkdown("`zazawan vawalal. zazar vajul.`", map);
-    assert.equal(text, "`zululon vawalal. zulur vajul.`");
+    const { text } = rewriteMarkdown("`zazawan vawalal. zazar vayul.`", map);
+    assert.equal(text, "`zululon vawalal. zulur vayul.`");
   });
 
   it("respells a full-root resume when that root moves", () => {
@@ -228,10 +228,10 @@ describe("resume-aware markdown retie", () => {
   it("keeps a compound-name short resume when the prefix root moves", () => {
     const map = mapOf(["ubu", "edeme"]);
     const { text } = rewriteMarkdown(
-      "`yubunexunowen vawalal.` then `dubur vajul.`",
+      "`yubunexunowen vawalal.` then `dubur vayul.`",
       map,
     );
-    assert.equal(text, "`yubunexunowen vawalal.` then `dubur vajul.`");
+    assert.equal(text, "`yubunexunowen vawalal.` then `dubur vayul.`");
   });
 });
 
@@ -243,8 +243,8 @@ describe("tone marks", () => {
   });
 
   it("reties words carrying a tone mark", () => {
-    const { text } = rewriteMarkdown("`!zazawan vawalal.` `&zazawan` `;zazawan vajul.`", map);
-    assert.equal(text, "`!zululon vawalal.` `&zululon` `;zululon vajul.`");
+    const { text } = rewriteMarkdown("`!zazawan vawalal.` `&zazawan` `;zazawan vayul.`", map);
+    assert.equal(text, "`!zululon vawalal.` `&zululon` `;zululon vayul.`");
   });
 });
 
@@ -297,8 +297,8 @@ describe("classification-gated retie", () => {
   });
 
   it("reties the host of a fused hook compound", () => {
-    const { text } = rewriteMarkdown("`zazawan dazadol vawalalul.`", mapOf(["awala", "ojojo"]));
-    assert.equal(text, "`zazawan dazadol vojojolul.`");
+    const { text } = rewriteMarkdown("`zazawan dazadol vawalalul.`", mapOf(["awala", "obobo"]));
+    assert.equal(text, "`zazawan dazadol vobobolul.`");
   });
 
   it("respells a resume chained to an earlier resume", () => {
@@ -327,7 +327,7 @@ describe("verifyRetiedSpans", () => {
   const map = mapOf(["azawa", "ululo"]);
 
   it("bridges old and new spellings so an unconverted lexicon does not flag the retie", () => {
-    const moved = mapOf(["azawa", "ojojo"]);
+    const moved = mapOf(["azawa", "obobo"]);
     const { spans } = rewriteMarkdown("`zazawan vawalal.`", moved);
     assert.deepEqual(verifyRetiedSpans(spans, moved, bridgeTables(moved)), []);
   });
@@ -335,20 +335,20 @@ describe("verifyRetiedSpans", () => {
   const tables = loadDefaultTables();
 
   it("passes a clean retie, including a respelled resume", () => {
-    const { spans } = rewriteMarkdown("`zazawan vawalal. zazar vajul.`", map);
+    const { spans } = rewriteMarkdown("`zazawan vawalal. zazar vayul.`", map);
     assert.deepEqual(verifyRetiedSpans(spans, map, tables), []);
   });
 
   it("catches a rewrite that changes something the map does not", () => {
-    const spans = [{ before: "zazawan vawalal.", after: "zululon vajul.", index: 0, cls: "sentence" }];
+    const spans = [{ before: "zazawan vawalal.", after: "zululon vayul.", index: 0, cls: "sentence" }];
     const failures = verifyRetiedSpans(spans, map, tables);
     assert.equal(failures.length, 1);
     assert.match(failures[0]!.detail, /awala/);
   });
 
   it("reports a tree change with no new resume link as info", () => {
-    const moved = mapOf(["ojo", "azava"]);
-    const spans = [{ before: "gojuthol bohohul.", after: "gazavathol bohohul.", index: 0, cls: "sentence" }];
+    const moved = mapOf(["obo", "azava"]);
+    const spans = [{ before: "goyuthol bohohul.", after: "gazavathol bohohul.", index: 0, cls: "sentence" }];
     const failures = verifyRetiedSpans(spans, moved, bridgeTables(moved));
     assert.equal(failures.length, 1);
     assert.equal(failures[0]!.level, "info");

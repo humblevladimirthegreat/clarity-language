@@ -18,13 +18,12 @@ Prosody
 -grammar simplification pass: could we remove special overlay forms and re-use existing grammar? 
 -Rare learning band
 -lint check that vocabulary is taught and used in translation exercises.
--reconsider how to make emotions shorter (compound words?)
+-reconsider how to make emotions shorter (lexical compounds)
 
 final exam
 
 save for cursor:
 -consider moving overlay forms to the top of lexicon so they get preferential retying. Actually, only overlay forms should be two syllables. Prefer words unlikely to be referred to (such as non-nouns) for two syllables to avoid ambiguity with continues.
--j should just be y, final pass
 -finish English->Agalan cheat sheets, including tense
 -do parser consistency pass. Does the parser completely and accurately encode all the meaning of the grammar?
 -add Agalan->English cheat sheet

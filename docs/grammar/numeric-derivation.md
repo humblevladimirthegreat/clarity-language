@@ -143,10 +143,10 @@ The same zero×exponent stems as free [zero × exponent](numbers.md#zero-exponen
 |--------|-----|---------|-----|
 | **`ROOTl+0e`** | total null / absolute wipe of the kind | `vodovelrazobal`: *annihilate the score* (kind); `zomolrazobal`: *a totally wiped debt-kind* | **0** empty × **e** unbounded = wipe with no leftover scale |
 | **`ROOTl+0e-`** | sterile / null grain of ROOT | `zevegelrazobum`: *sterile hope*; `zerehulrazobul`: *registration with no seed* | **0e-** = empty at the tiny end: no seed |
-| **`ROOTl+0e-1`** | engineering null at order of magnitude −1 of ROOT: kind wiped at scale 10⁻¹ | `zehegolrabuwojazol`: *deci-null problem*; `vodovelrabuwojazol`: *null the score at deci scale* | **0e-1** = empty at the tenths band |
+| **`ROOTl+0e-1`** | engineering null at order of magnitude −1 of ROOT: kind wiped at scale 10⁻¹ | `zehegolrabuwoyazol`: *deci-null problem*; `vodovelrabuwoyazol`: *null the score at deci scale* | **0e-1** = empty at the tenths band |
 | **`ROOTl-0e`** | absolute residue of ROOT | `zomolruzobal`: *debt as absolute residue*; `vazewelruzobal`: *leave effort as absolute residue* | **-0e** = the minus of total wipe: residue that will not go |
 | **`ROOTl-0e-`** | micro-residue of ROOT | `zevelruzobul`: *memory as micro-residue* | **-0e-** = residue at the tiny end |
-| **`ROOTl-0e-1`** | engineering residue at order of magnitude −1 of ROOT | `zomolrubuwojazol`: *debt as deci-scale residue* | **-0e-1** = residue at the tenths band |
+| **`ROOTl-0e-1`** | engineering residue at order of magnitude −1 of ROOT | `zomolrubuwoyazol`: *debt as deci-scale residue* | **-0e-1** = residue at the tenths band |
 
 The **host ending** marks soft / named / resume.
 

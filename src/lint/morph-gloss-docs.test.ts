@@ -14,7 +14,7 @@ function tablesOf(): ClassifyTables {
   return createClassifyTablesFromRows(
     [
       { emoji: "", concrete: "swan", abstract: "grace", clarity: "azawa", mnemonic: "", englishByPos: "", posEnglish: emptyPosEnglish() },
-      { emoji: "", concrete: "chair", abstract: "", clarity: "aju", mnemonic: "", englishByPos: "v:sit", posEnglish: parseEnglishByPos("v:sit", { concrete: "chair" }) },
+      { emoji: "", concrete: "chair", abstract: "", clarity: "ayu", mnemonic: "", englishByPos: "v:sit", posEnglish: parseEnglishByPos("v:sit", { concrete: "chair" }) },
     ],
     [],
   );
@@ -27,7 +27,7 @@ const PRACTICE = `### Translation practice
 **1.** *Azawan sits.*
 
 ::: details Show answer
-\`zazawan vajul.\`
+\`zazawan vayul.\`
 
 z-Azawan | v-sit
 
@@ -35,7 +35,7 @@ z-Azawan | v-sit
 
 #### Agalan → English
 
-**1.** \`zazawan vajul.\`
+**1.** \`zazawan vayul.\`
 
 ::: details Show answer
 z-Azawan | v-sit
@@ -48,9 +48,9 @@ describe("extractTranslationExercises", () => {
   it("pairs spoiler and prompt Agalan with visible morph glosses", () => {
     const items = extractTranslationExercises(PRACTICE);
     assert.equal(items.length, 2);
-    assert.equal(items[0]!.agalan, "zazawan vajul.");
+    assert.equal(items[0]!.agalan, "zazawan vayul.");
     assert.equal(items[0]!.morph, "z-Azawan | v-sit");
-    assert.equal(items[1]!.agalan, "zazawan vajul.");
+    assert.equal(items[1]!.agalan, "zazawan vayul.");
     assert.equal(items[0]!.loose, "Azawan sits.");
     assert.equal(items[1]!.loose, "Azawan sits.");
   });
@@ -61,7 +61,7 @@ describe("extractTranslationExercises", () => {
 **1.** *Azawan sits.*
 
 ::: details Show answer
-\`zazawan vajul.\`
+\`zazawan vayul.\`
 :::
 `;
     const items = extractTranslationExercises(md);
@@ -79,7 +79,7 @@ describe("lintMorphGlossMarkdown", () => {
 **1.** *Azawan sits.*
 
 ::: details Show answer
-\`zazawan vajul.\`
+\`zazawan vayul.\`
 
 z-Azawan | v-sit
 
@@ -88,7 +88,7 @@ z-Azawan | v-sit
 **2.** *Azawan sits.*
 
 ::: details Show answer
-\`zazawan vajul.\`
+\`zazawan vayul.\`
 :::
 `;
     const { findings } = lintMorphGlossMarkdown(md, tables);
@@ -96,7 +96,7 @@ z-Azawan | v-sit
   });
 
   it("does not require exercise glosses outside translation practice", () => {
-    const md = `> \`zazawan vajul.\`
+    const md = `> \`zazawan vayul.\`
 >
 > z-Azawan | v-sit
 `;
@@ -117,7 +117,7 @@ z-Azawan | v-sit
   });
 
   it("requires teach morph when loose English is a full sentence", () => {
-    const md = `> \`zazawan vajul.\`
+    const md = `> \`zazawan vayul.\`
 >
 > "Azawan sits."
 `;
@@ -129,7 +129,7 @@ z-Azawan | v-sit
   });
 
   it("fails teach-block mismatches", () => {
-    const md = `> \`zazawan vajul.\`
+    const md = `> \`zazawan vayul.\`
 >
 > z-Azawan | v-walk
 `;
@@ -140,14 +140,14 @@ z-Azawan | v-sit
   });
 
   it("reports a sentence that does not parse instead of comparing word by word", () => {
-    const text = "> `zazawan vul vajul.`\n>\n> z-Azawan | v-not | v-sit\n";
+    const text = "> `zazawan vul vayul.`\n>\n> z-Azawan | v-not | v-sit\n";
     const { findings } = lintMorphGlossMarkdown(text, tables);
     assert.equal(findings[0]?.kind, "parse-error");
     assert.match(formatMorphGlossFinding("x.md", findings[0]!), /sentence does not parse/);
   });
 
   it("reports checked pair count", () => {
-    const md = `> \`zazawan vajul.\`
+    const md = `> \`zazawan vayul.\`
 >
 > z-Azawan | v-sit
 `;
@@ -159,7 +159,7 @@ z-Azawan | v-sit
     const text = formatMorphGlossFinding("docs/grammar/clause.md", {
       kind: "mismatch",
       line: 10,
-      agalan: "zazawan vajul.",
+      agalan: "zazawan vayul.",
       documented: "z-Azawan | v-walk",
       parser: "z-Azawan | v-sit",
     });

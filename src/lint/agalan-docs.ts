@@ -29,7 +29,7 @@ export type AgalanLintIssue = {
 /** Letters, digits, and morph glyphs that can appear in a spelled Agalan word. */
 const WORD_CHAR_RE = /^[aeouhtwdjybgzmnvlrx0-9+\-#_.,=@~%±[\]{}()]+$/;
 
-const TEACHING_GLOSS_RE = /^(?:th|[zdbvgwhxyj])-(?:[a-z@]+$|[<[{(])/;
+const TEACHING_GLOSS_RE = /^(?:th|[zdbvgwhxy])-(?:[a-z@]+$|[<[{(])/;
 
 /** Mid-word x family fragments (`x`, `xa`, `ax`), not full words. */
 const X_FRAGMENT_RE = /^[aeou]?x[aeou]?$/;
@@ -41,7 +41,7 @@ export const ENGLISH_IN_CODE = new Set([
   "vowel",
 ]);
 
-const POS = "zdbvgwhxyj";
+const POS = "zdbvgwhxy";
 
 const BRACKET_PAIRS = [
   ["(", ")"],
@@ -90,12 +90,24 @@ function prefixedBareRoot(core: string): string | null {
  * Worth reporting a parse failure: morph glyphs, or PoS/citation + CV body + ending.
  * English in backticks (`and`, `would`, `dog`) does not match.
  */
+/** `j` standing where `y` would make a native word (`jal`, `agaja`). Payloads `<…>` keep their own spelling. */
+function nativeJIsAgalan(core: string): boolean {
+  if (!withoutForeignPayloads(core).includes("j")) return false;
+  const asY = core.replace(/<[^>]*>|j/g, (m) => (m === "j" ? "y" : m));
+  try {
+    parseWord(asY);
+    return true;
+  } catch {
+    return looksLikeFullSpelledWord(asY) || isClarityRootShape(asY);
+  }
+}
+
 function looksLikeFullSpelledWord(core: string): boolean {
   if (unmatchedBrackets(core)) return false;
-  if (/^(?:th|[zdbvgwhxyj])[+#_]$/.test(core)) return false;
+  if (/^(?:th|[zdbvgwhxy])[+#_]$/.test(core)) return false;
   if (hasMorphGlyph(core)) return true;
-  if (/^(?:th|[zdbvgwhxyj])[aeou](?:[hwdyjbgzmnvlr][aeou])+[lmnr]x?$/.test(core)) return true;
-  if (/^[aeou](?:[hwdyjbgzmnvlr][aeou])+[lmnr]x?$/.test(core)) return true;
+  if (/^(?:th|[zdbvgwhxy])[aeou](?:[hwdybgzmnvlr][aeou])+[lmnr]x?$/.test(core)) return true;
+  if (/^[aeou](?:[hwdybgzmnvlr][aeou])+[lmnr]x?$/.test(core)) return true;
   return false;
 }
 
@@ -113,7 +125,7 @@ export function isAgalanLintCandidate(core: string): boolean {
   const stripped = withoutForeignPayloads(core);
   if (/[A-Z]/.test(stripped)) return false;
   if (!WORD_CHAR_RE.test(stripped)) return false;
-  if (!/^(?:th|[zdbvgwhxyjaeou])/.test(core)) return false;
+  if (!/^(?:th|[zdbvgwhxyjaeou])/.test(core)) return false; // leading j still enters, so the j lint can reject it
   return true;
 }
 
@@ -125,6 +137,9 @@ export function lintAgalanToken(
 ): { kind: AgalanLintKind; detail: string } | null {
   if (!isAgalanLintCandidate(core)) {
     return null;
+  }
+  if (nativeJIsAgalan(core)) {
+    return { kind: "parse", detail: "`j` is not a letter; write `y`" };
   }
 
   if (isClarityRootShape(core) && core.length >= 3) {
@@ -301,7 +316,7 @@ function spanWords(text: string): string[] {
 
 /** Class of one span (or one line of an `agalan` fence), before parsing. */
 /** A spoken opaque span (`duxal … xuxul`): its interior is foreign, not Agalan words. */
-export const SPOKEN_OPAQUE_RE = /(\b(?:th|[zdbvgwhxyj])ux[ae][lmn]\s)[\s\S]*?(\sxuxu[lmr]\b)/g;
+export const SPOKEN_OPAQUE_RE = /(\b(?:th|[zdbvgwhxy])ux[ae][lmn]\s)[\s\S]*?(\sxuxu[lmr]\b)/g;
 
 export function classifyAgalanSpan(text: string): AgalanSpanClass | "unclassified" {
   const trimmed = text.trim().replace(SPOKEN_OPAQUE_RE, "$1$2");

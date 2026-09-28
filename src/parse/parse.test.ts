@@ -164,7 +164,7 @@ describe("parse — stand-in dependents", () => {
   });
 
   it("parses holalam barl purpose dependent", () => {
-    const result = parseText("zazawan vawalal holalam barl zululon vajul.");
+    const result = parseText("zazawan vawalal holalam barl zululon vayul.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
     assert.equal(clause.dependent!.orodo.raw, "barl");
@@ -181,7 +181,7 @@ describe("parse — stand-in dependents", () => {
   });
 
   it("parses dorl whether without inner yol", () => {
-    const result = parseText("zazawan vejel dorl zululon vawalal.");
+    const result = parseText("zazawan veyel dorl zululon vawalal.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
     assert.equal(clause.dependent!.orodo.raw, "dorl");
@@ -460,7 +460,7 @@ describe("parse — as-of poles", () => {
 
 describe("parse — stage 4 resolve", () => {
   it("attaches resolve to parse(text)", () => {
-    const result = parseText("zululon vawalal. zulur vajul.");
+    const result = parseText("zululon vawalal. zulur vayul.");
     assert.ok(result.resolve);
     assert.equal(result.resolve.anaphors[0]?.antecedent?.raw, "zululon");
   });

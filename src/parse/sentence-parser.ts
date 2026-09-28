@@ -240,7 +240,7 @@ class AgelanSentenceParser extends CstParser {
   private julEchoAhead(): boolean {
     const a = this.LA(1);
     const b = this.LA(2);
-    return a.tokenType === Force && a.image.replace(/^j/, "y") === "yul" && b.tokenType === Force && b.image.replace(/^j/, "y") === "yul";
+    return a.tokenType === Force && a.image === "yul" && b.tokenType === Force && b.image === "yul";
   }
 
   /** Only polars remain before the period (the asking tag has no body). */

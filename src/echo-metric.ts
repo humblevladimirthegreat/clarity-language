@@ -122,7 +122,7 @@ export function echo(root: string, cmu: string, w: Weights = WEIGHTS): number {
   const words = cmu.split("|").map((s) => s.trim().split(/\s+/).filter(Boolean));
   const candidates = [words.flatMap((p, i) => segment(p, i === 0))];
   if (words.length > 1) candidates.push(...words.map((p) => segment(p, true)));
-  const letters = [...root.replaceAll("j", "y")]; // published roots still spell the glide `j`
+  const letters = [...root];
   const wild = letters.map(() => null);
   return Math.max(...candidates.map((segs) => {
     const ceiling = raw(wild, segs, w);

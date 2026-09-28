@@ -184,7 +184,7 @@ function isExistence(clause: Clause): boolean {
 /** Collect `reading.*` IDs from utterance and clause shapes. */
 export function addReadingConstructions(result: ParseResult, out: Set<string>): void {
   for (const utterance of result.utterances) {
-    const force = utterance.left.force?.raw.replace(/^j/, "y");
+    const force = utterance.left.force?.raw;
     if (utterance.bodies.length === 0 && (force === "yol" || force === "yom")) out.add("reading.bareQuestion");
     for (const body of utterance.bodies) {
       if (isGreeting(body.clause)) out.add("reading.greeting");

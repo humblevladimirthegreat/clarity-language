@@ -31,7 +31,7 @@ describe("toPhonemeWord", () => {
     assert.equal(toPhonemeWord("o").ipa, "o̞");
     assert.equal(toPhonemeWord("a").ipa, "ä");
     assert.equal(toPhonemeWord("h").ipa, "ɦ");
-    assert.equal(toPhonemeWord("j").ipa, "j");
+    assert.equal(toPhonemeWord("y").ipa, "j");
     assert.equal(toPhonemeWord("x").ipa, "ʒ");
     assert.equal(toPhonemeWord("r").ipa, "ɹ");
     assert.equal(toPhonemeWord("g").ipa, "ɡ");

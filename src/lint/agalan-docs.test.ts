@@ -85,6 +85,9 @@ describe("lintAgalanToken", () => {
     assert.equal(lintAgalanToken("g+3", tables), null);
     assert.equal(lintAgalanToken("al", tables), null);
     assert.equal(lintAgalanToken("yal", tables), null);
+    assert.equal(lintAgalanToken("d<jam>", tables), null);
+    assert.equal(lintAgalanToken("just", tables), null);
+    assert.equal(lintAgalanToken("jal", tables)?.detail, "`j` is not a letter; write `y`");
     assert.equal(lintAgalanToken("d<sushi>", tables), null);
     assert.equal(lintAgalanToken("d[hi]", tables), null);
     assert.equal(lintAgalanToken("daxal", tables), null);
@@ -230,7 +233,7 @@ describe("lintAgalanSpans", () => {
 
   it("traces a written <…> fence in <code> as a loan", () => {
     const ids: string[] = [];
-    lintAgalanSpans("<code>zazawan d&lt;kimchi&gt; vejel.</code>", tables, emptySpanStats(), (id) => ids.push(id));
+    lintAgalanSpans("<code>zazawan d&lt;kimchi&gt; veyel.</code>", tables, emptySpanStats(), (id) => ids.push(id));
     assert.ok(ids.includes("word.family.foreign"));
   });
 

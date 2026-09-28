@@ -23,7 +23,7 @@ const CONSONANT_REMAP: Record<string, string> = {
   n: "n",
   h: "h",
   w: "w",
-  j: "j",
+  j: "y",
   l: "l",
   r: "r",
   p: "b",
@@ -55,8 +55,7 @@ const MAX_ROOT_LENGTH = 5;
 export const CLARITY_VOWELS = ["a", "e", "o", "u"] as const;
 
 /**
- * Agalan root consonants. `j` stays so published roots still pass the shape check;
- * new roots spell the glide `y` (j-to-y.md). Mid-word `x` is never a root letter.
+ * Agalan root consonants. The glide is `y`. Mid-word `x` is never a root letter.
  */
 export const CLARITY_CONSONANTS = [
   "b",
@@ -68,13 +67,12 @@ export const CLARITY_CONSONANTS = [
   "n",
   "h",
   "w",
-  "j",
   "y",
   "l",
   "r",
 ] as const;
 
-/** Consonants the pronunciation generator may write. The glide is `y`, not `j`. */
+/** Consonants the pronunciation generator may write. */
 const GENERATED_CONSONANTS = ["b", "d", "g", "h", "y", "l", "m", "n", "r", "v", "w", "z"] as const;
 const SECOND_CONSONANT_BAN = new Set(["l", "m", "n", "r"]);
 const STOPS = new Set(["b", "d", "g"]);
