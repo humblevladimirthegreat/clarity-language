@@ -1,6 +1,6 @@
 # Proposal: pronunciation-based English echo
 
-**Status:** Step 1 APPLIED (2026-09-28): 115 `concrete` labels renamed in place (no `echo_word` column); Step 2 APPLIED (2026-09-28): CMU lookup + phoneme map; Step 3 APPLIED (2026-09-28): pronunciation metric, tuned on agent-drafted, editor-accepted ratings; Step 4 PROPOSED.  
+**Status:** Step 1 APPLIED (2026-09-28): 115 `concrete` labels renamed in place (no `echo_word` column); Step 2 APPLIED (2026-09-28): CMU lookup + phoneme map; Step 3 APPLIED (2026-09-28): pronunciation metric, tuned on agent-drafted, editor-accepted ratings; Step 4 APPLIED to the dry run (2026-09-28): phoneme-built candidates ranked by the metric.  
 **Related:** `lexicon-revamp.md` (its dry run introduced the first echo metric), [data/lexicon-published.csv](../../data/lexicon-published.csv), [scripts/prototype-lexicon-revamp.ts](../../scripts/prototype-lexicon-revamp.ts), [src/word-converter.ts](../../src/word-converter.ts)
 
 ## Motivation
@@ -87,10 +87,17 @@ A root (V C V or V C V C V) is scored by its **best in-order alignment** with th
 
 ## Step 4: use it in the generator
 
-Once the metric is trusted, build candidates from the phonemes too: keep the word's first consonant, prefer the stressed syllable's onset as the second consonant (subject to the second-consonant ban and the stop rules in `lexicon-revamp.md`), and rank candidates by the metric instead of by the converter's list order. That should raise echo more than any metric change, because today the generator works from spelling and the metric only measures the result.
+**Status:** APPLIED to the dry run only (2026-09-28): with `--pron-echo`, [scripts/prototype-lexicon-revamp.ts](../../scripts/prototype-lexicon-revamp.ts) builds long-root candidates from the phonemes. `src/word-converter.ts` and published roots are unchanged.
+
+- **Replace, not add:** under `--pron-echo` the converter's spelling candidates are not used for long roots.
+- **Candidates:** the first consonant is the label's first consonant (for a multi-word label, the first consonant of any of its words). The second consonant may be any letter except `l` / `m` / `n` / `r` (the second-consonant ban). It may be a stop only if the English word has that stop, so filler stops never appear. All vowels are tried; vowels follow the phoneme map, so stressed AH gives `a`.
+- **Ranking:** by the metric. Ties go to fewer stops, then alphabetical order. When the stressed onset is banned, the next-best onset by score wins. The converter-era rule that preferred a non-stop second consonant over an English stop no longer applies. The metric decides.
+- **Collisions:** placement is unchanged (priority, then regret). Each row takes its best-scoring free candidate.
+- **Short roots** were already placed by the metric over every VCV. They use it unchanged.
+- **Success measure:** the mean echo of long roots rises. The report now also lists the share of consonants in each group (stops, fricatives, glides, `l m n r`).
 
 ## Open questions
 
 - Which modifier-variant rows keep separate roots? That is a meaning decision, not an echo one.
-- Which CMU label replaces each of the 79 missing ones (`tmp/echo-pron/report.md`)?
 - For countries, is the distinctive word always the right echo (*samoa* vs *american*)?
+- Should the phoneme generator replace the converter in `src/word-converter.ts` (and so in `convert-word --lexicon`)?

@@ -12,6 +12,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { escapeCsvField, parseCsv } from '../src/csv.ts';
 import * as converter from '../src/word-converter.ts';
 import { echo as pronEcho, loadPron } from './echo-metric.ts';
+import { PHONEME_MAP } from './echo-pronunciation-map.ts';
 
 const OUT = 'tmp/lexicon-revamp';
 /**
@@ -273,7 +274,32 @@ const softenFillers = (w: string, eng: Set<string>) => {
   for (const k of [1, 3]) if (STOPS.has(w[k]) && !eng.has(w[k])) out = out.slice(0, k) + pick + out.slice(k + 1);
   return out;
 };
+/**
+ * --pron-echo (echo-metric.md Step 4): long-root candidates built from the CMU phonemes instead of
+ * the converter. First consonant = the first consonant of the label (or of any of its words); the
+ * second consonant is any letter but l/m/n/r (ban), and a stop only when the English word has it;
+ * vowels free. Ranked by the pronunciation metric, ties by fewer stops, then alphabetically — so a
+ * banned stressed onset falls back to the next-best one by score.
+ */
+const pronCandidatesFor = (r: Row) => {
+  const cmu = pron!.get(r.concrete)!;
+  const words = cmu.split('|').map((w) => w.trim().split(/\s+/));
+  const letterOf = (p: string) => PHONEME_MAP[p.replace(/\d$/, '')];
+  const isCons = (p: string) => !/\d$/.test(p);
+  const eng = new Set(words.flat().filter(isCons).map(letterOf));
+  const firsts = new Set(words.map((w) => w.find(isCons)).filter((p): p is string => !!p).map(letterOf));
+  const c1s = firsts.size ? [...firsts] : C;
+  const c2s = C.filter((c) => !(SECOND_CONSONANT_BAN && JOIN.has(c)) && (!STOPS.has(c) || eng.has(c)));
+  const scored: [string, number][] = [];
+  for (const c1 of c1s) for (const c2 of c2s) for (const a of V) for (const b of V) for (const c of V) {
+    const w = a + c1 + b + c2 + c;
+    scored.push([w, pronEcho(w, cmu)]);
+  }
+  scored.sort((x, y) => y[1] - x[1] || stopCount(x[0]) - stopCount(y[0]) || (x[0] < y[0] ? -1 : 1));
+  return scored.slice(0, LIMIT).map(([w]) => w);
+};
 const candidatesFor = (r: Row) => {
+  if (PRON_ECHO) return pronCandidatesFor(r);
   const out: string[] = [];
   const eng = englishConsonants(r);
   const toks = mappedSourceLetters(r.concrete);
@@ -607,7 +633,7 @@ L.push('# Lexicon revamp — dry run', '', 'Generated from `data/*.csv` (unchang
   '- flags regenerated like every other row; join overlays not eligible',
   `- compound rule: **${COMPOUND_RULE}** (prefix = short-root prefix ban; slot4 = no l/m/n/r second consonant; listed = only listed compounds checked)`,
   `- VCV cost: ${ECHO_W} × echo distance + ${DISPLACE_W} × long roots displaced by the compound-split ban + shared-prefix penalty (kind ×3, position/sibling ×2, domain ×1); annealed`,
-  (IGNORE_CLOSE_PAIRS ? '- **echo-first:** domain / sibling spacing and shared-prefix penalty off; grammatical group floors, uniqueness and compound-split ban kept\n' : '') + (SLOT4_SWAP && SECOND_CONSONANT_BAN ? '- **slot-4 swap:** a candidate with l/m/n/r as second consonant is used with its consonants swapped (dropped if both are l/m/n/r)\n' : '') + (PRON_ECHO ? '- **echo metric:** pronunciation (CMU, scripts/echo-metric.ts)\n' : '') + (SPELLING_TO_SOUND ? '- **spelling → sound:** -ing / -ed stripped; ng, gh, mb, kn, ph, th merged; final s+stop → s\n' : '') + '- long roots: regenerated from the concrete label (converter candidate order), placed by priority = English frequency rank of the most frequent sense; overrides: ' + (Object.keys(PRIORITY_OVERRIDES).join(' ') || 'none'), '');
+  (IGNORE_CLOSE_PAIRS ? '- **echo-first:** domain / sibling spacing and shared-prefix penalty off; grammatical group floors, uniqueness and compound-split ban kept\n' : '') + (SLOT4_SWAP && SECOND_CONSONANT_BAN ? '- **slot-4 swap:** a candidate with l/m/n/r as second consonant is used with its consonants swapped (dropped if both are l/m/n/r)\n' : '') + (PRON_ECHO ? '- **echo metric:** pronunciation (CMU, scripts/echo-metric.ts)\n' : '') + (SPELLING_TO_SOUND ? '- **spelling → sound:** -ing / -ed stripped; ng, gh, mb, kn, ph, th merged; final s+stop → s\n' : '') + '- long roots: regenerated from the concrete label (' + (PRON_ECHO ? 'phoneme candidates ranked by the pronunciation metric' : 'converter candidate order') + '), placed by priority = English frequency rank of the most frequent sense; overrides: ' + (Object.keys(PRIORITY_OVERRIDES).join(' ') || 'none'), '');
 const overlayN = eligible.filter((r) => !r.marked).length;
 L.push('## Budget', '', `overlay ${overlayN} / marked ${eligible.length - overlayN} / pinned ${PINNED.size} / reserved ${RESERVED.length} / free ${192 - eligible.length - RESERVED.length} of 192 VCVs`, '');
 L.push('## Outcome per root', '', '| Reason | Roots |', '|---|---|', ...[...whyCounts].sort((a, b) => b[1] - a[1]).map(([k, v]) => `| ${k} | ${v} |`), '');
@@ -626,6 +652,18 @@ L.push(`Roots using a swapped candidate: ${swappedRows.length} — e.g. ${swappe
   }
   L.push(`Roots using a non-stop second consonant chosen over a stop (rule 4): ${rows.filter((r) => preferred.has(`${r.emoji}:${r.root}`)).length}`, '');
   L.push(`Second consonant of long roots: ${eng} from the English word, ${fill} filler (${fillStops} of them stops). Stop deprioritising: ${DEPRIORITIZE_STOPS ? 'on' : 'off'}.`, '');
+}
+{
+  const GROUPS: [string, string][] = [['stops b d g', 'bdg'], ['fricatives v z h', 'vzh'], ['glides w y', 'wyj'], ['l m n r', 'lmnr']];
+  const pct = (list: string[]) => {
+    const cs = list.flatMap((x) => [...x].filter((c) => !V.includes(c)));
+    return GROUPS.map(([, g]) => ((cs.filter((c) => g.includes(c)).length / cs.length) * 100).toFixed(1) + '%');
+  };
+  const nf = rows.filter((r) => !r.flag);
+  L.push('## Consonant groups (% of consonants)', '', `| | ${GROUPS.map(([n]) => n).join(' | ')} |`, `|---|${GROUPS.map(() => '---|').join('')}`,
+    `| Current lexicon | ${pct(rows.map((r) => r.orig)).join(' | ')} |`,
+    `| Dry run | ${pct(rows.map((r) => r.root!)).join(' | ')} |`,
+    `| Dry run, non-flag | ${pct(nf.map((r) => r.root!)).join(' | ')} |`, '');
 }
 L.push(...echoLines);
 L.push('## Checks', '',
