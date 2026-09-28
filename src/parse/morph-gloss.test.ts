@@ -387,7 +387,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("values bake stance and ending grain", () => {
-    expectLine("zawaral gonogothal", "z-wrapped-gift | g-relatedness-met-lasting");
+    expectLine("zawaral gonogothal", "z-present | g-relatedness-met-lasting");
     expectLine("zazegem walodothur gobobum", "z-gathering | [w-autonomy-unmet-passing | g-stimulus]");
     expectLine("thogegam thanedem", "th-HIGH | th-CIRCUM");
   });

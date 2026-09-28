@@ -186,7 +186,7 @@ describe("classify", () => {
     assert.equal(verb.overlay, undefined);
   });
 
-  it("proxy overlay on /h/ /ɡ/ and ordinary id-card on other letters", () => {
+  it("proxy overlay on /h/ /ɡ/ and ordinary id on other letters", () => {
     const behalf = expectReading("hudagam", "proxy");
     assert.ok(behalf.overlay);
     assert.equal(behalf.overlay!.kind, "proxy");

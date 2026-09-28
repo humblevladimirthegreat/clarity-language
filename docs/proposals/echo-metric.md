@@ -1,6 +1,6 @@
 # Proposal: pronunciation-based English echo
 
-**Status:** PROPOSED (2026-09-28); nothing under `data/` or `docs/grammar/` has changed.  
+**Status:** Step 1 APPLIED (2026-09-28): 115 `concrete` labels renamed in place (no `echo_word` column); Step 2 APPLIED (2026-09-28): CMU lookup + phoneme map; Steps 3–4 PROPOSED.  
 **Related:** `lexicon-revamp.md` (its dry run introduced the first echo metric), [data/lexicon-published.csv](../../data/lexicon-published.csv), [scripts/prototype-lexicon-revamp.ts](../../scripts/prototype-lexicon-revamp.ts), [src/word-converter.ts](../../src/word-converter.ts)
 
 ## Motivation
@@ -28,7 +28,7 @@ A fourth problem sits upstream of both: **the English labels themselves**. The m
 Proposed changes:
 
 1. **Review all 283 hyphenated labels** by the table above. An agent can draft the replacements, with a reason per row; an editor accepts or rejects each.
-2. **Add an `echo_word` column** to `lexicon-published.csv`: the single English word the root is built from, when it differs from `concrete` (*hot-dog* → *hotdog*, *american-samoa* → *samoa*). The generator and the metric use it; `concrete` stays the gloss.
+2. **Rename `concrete` in place** to the word the root echoes (*hot-dog* → *hotdog*, *bosnia-herzegovina* → *bosnia*). No separate `echo_word` column: `concrete` is both the gloss and the echo source.
 3. **Flag same-sense rows** (the modifier variants) for a meaning decision before the revamp spends a root on each.
 
 Renaming `concrete` affects docs: translation **Roots used here** lines must match the lexicon gloss, and `build` checks that. Renames go through the normal lexicon edit and `npm run build`.
@@ -37,28 +37,33 @@ Renaming `concrete` affects docs: translation **Roots used here** lines must mat
 
 Use the **CMU Pronouncing Dictionary** (about 134,000 words, including many names; permissive licence; one text file, downloaded to `tmp/` like the frequency list — no new library). Each word is a phoneme string with a stress mark on each vowel: *smile* = `S M AY1 L`, *hippopotamus* = `HH IH2 P AH0 P AA1 T AH0 M AH0 S` (`1` = primary stress, `2` = secondary, `0` = unstressed).
 
-- **Coverage:** look up `echo_word` (or each word of `concrete`). Words not in the dictionary fall back to today's spelling → sound rules, and the report lists them.
-- **Phoneme → Agalan letter map.** A design decision, like today's spelling map. A first draft:
+**Status:** APPLIED (2026-09-28) as [scripts/echo-pronunciation.ts](../../scripts/echo-pronunciation.ts) → `tmp/echo-pron/pron.csv` + `report.md`.
+
+- **Build temporarily ignored:** while this work only edits the lexicon, `npm run build` is not run and its doc failures (glosses and **Roots used here** lines that still use old labels) are expected. Docs are retied in one pass once the lexicon settles.
+- **Variant:** score the **first** CMU pronunciation, except where the script's `VARIANTS` picks the right sense (*tear* = *teer*, *wind* = air, *id* / *un* / *us* = letters, *st* = *saint*, *record* = noun). The CMU download is pinned to cmudict commit `7479086`.
+- **Coverage:** look up `concrete`. When the only difference from a CMU entry is a hyphen, the lexicon is respelled to match CMU (`--write`; applied: *video-game* → *videogame*). A label stays hyphenated when the two-word form is the more common lookup (`KEEP_HYPHEN`: *old-man*). A joined label missing from CMU that splits into two common CMU words is re-hyphenated (applied: 35, e.g. *airkiss* → *air-kiss*, *firetruck* → *fire-truck*; *tamale*, *singlet*, *pinata*, *mahjong* excluded). A hyphenated label is looked up by its parts. No spelling fallback: a label missing from CMU is reported, and the fix is to find a label that is in CMU. Small territories keep their names; loanwords are replaced with a CMU word where possible (applied: *onigiri* → *rice-ball*, *matryoshka* → *nesting-doll*, *capsicum* → *bell-pepper*, *alembic* → *still*, *hanafuda* → *flower-cards*, *sauropod* → *brontosaurus*, *hamsa* → *hand-of-fatima*, *boba* → *bubble-tea*). Kept although missing, because no English word is as recognisable: *tempura*, *tamale*, *mahjong*, *pinata*, *sagittarius*, *ophiuchus*. Also replaced: *shush* → *hush*, *unamused* → *unimpressed*, *orate* → *orator*, *sparkler* → *sparkle*, *singlet* → *tank-top*, *prev-track* → *previous-track*. The script's `OVERRIDES` gives our own pronunciation (American, CMU phonemes) for *hibiscus*, *khanda*, *unlink*, *interrobang*, the six kept loans and the 19 territories CMU lacks (keyed by the whole label). Now: 1,166 exact, 183 by parts, 0 missing.
+- **Phoneme → Agalan letter map.** `x` and `th` never occur inside a root, so their English sounds map elsewhere. `y` is allowed in roots as a consonant only.
 
 | English sounds | Agalan |
 |---|---|
 | P B | `b` |
 | T D | `d` |
 | K G | `g` |
-| F V | `v` |
-| S Z SH ZH TH DH | `z` |
-| CH JH | `z` (or `d`) |
-| HH | `h` |
+| F V TH DH | `v` |
+| S Z | `z` |
+| SH ZH CH JH HH | `h` |
 | W | `w` |
 | Y | `y` |
-| M N NG | `m` / `n` / `n` |
-| L R | `l` / `r` |
-| AA AE AH | `a` |
-| EH EY IH IY | `e` |
+| M | `m` |
+| N NG | `n` |
+| L | `l` |
+| R | `r` |
+| AA AE AH AY AW | `a` |
+| EH EY IH IY ER | `e` |
 | AO OW OY | `o` |
-| UH UW AW | `u` |
+| UH UW | `u` |
 
-   The stressed vowel's mapping matters most; unstressed `AH0` ("uh") should not count against a root.
+   Stressed AH (*love*, *cup*) maps to `a` even where existing roots use `o`: the metric is meant to improve existing roots, not to fit them. The stressed vowel's mapping matters most; unstressed `AH0` ("uh") is written `·` and never counts against a root.
 
 ## Step 3: a better metric
 
@@ -68,7 +73,7 @@ Score a root by the **best in-order alignment** of its letters with the English 
 - **Distance decay:** each English consonant skipped between two matched root consonants multiplies the later match by 0.6. This makes the look-ahead limit measurable.
 - **Vowels:** the root's first vowel against the word's first vowel; each later root vowel against the vowel after the consonant it follows. The stressed vowel counts 1, other vowels 0.5, unstressed "uh" 0 (never a penalty).
 - **Normalise** by the best score any root of that length could get for that word, so a short word that fits a 3-letter root perfectly scores 1.
-- **Multi-word labels:** score against `echo_word` if set; otherwise take the best of each word and the joined label.
+- **Multi-word labels:** take the best of each word and the joined label.
 
 Then **check the metric by ear**: rate about 50 roots from 0 to 3 (editor, with an agent draft), and tune the weights until the metric ranks them the same way.
 
@@ -79,7 +84,6 @@ Once the metric is trusted, build candidates from the phonemes too: keep the wor
 ## Open questions
 
 - Which modifier-variant rows keep separate roots? That is a meaning decision, not an echo one.
-- Is *ch* / *j* closer to `z` or `d` for learners? Is *sh* `z`?
-- Should the English vowel *ee* (IY) map to `e`, or does it stay a free choice?
+- Which CMU label replaces each of the 79 missing ones (`tmp/echo-pron/report.md`)?
 - For countries, is the distinctive word always the right echo (*samoa* vs *american*)?
 - Should echo be scored against the abstract sense for rows where the abstract is the main use (`agala` is mostly *clarity*)? The dry run scores concrete only, because that is what the root was built from.

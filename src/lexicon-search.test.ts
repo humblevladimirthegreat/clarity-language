@@ -110,11 +110,11 @@ describe("searchLexicon", () => {
   const overlayIndex = createOverlayIndex(overlays);
   const attached = attachOverlays(rows, overlays);
 
-  it('finds "laugh" via literal and hyphen tokenization', () => {
+  it('finds "laugh" via literal and "down" via hyphen tokenization', () => {
     const results = searchLexicon(index, rows, "laugh", { limit: 50, overlays, overlayIndex });
-    const literals = results.map((r) => r.concrete);
-    assert.ok(literals.includes("laugh"));
-    assert.ok(literals.includes("nervous-laugh"));
+    assert.ok(results.map((r) => r.concrete).includes("laugh"));
+    const down = searchLexicon(index, rows, "down", { limit: 50, overlays, overlayIndex });
+    assert.ok(down.map((r) => r.concrete).includes("thumbs-down"));
   });
 
   it('finds abstract "happy" on smile', () => {
