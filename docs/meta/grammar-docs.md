@@ -443,7 +443,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 | nothing new, and it answers a less common English need (*whose*, *two meters taller*, *most of*, *would have*, echo questions) | recipe track |
 | a lookup grid that restates forms taught above | the page's `## Reference tables` tail (before **See also**) |
 
-**Recipe shape:** H2 per English area, H3 per English job; after the heading, a **Needs:** line linking every section the recipe uses (any stage — the track is read after them); worked example with morph gloss; **Compare with** as usual. Practice goes in a `## Practice` section at the end of the page (H3 per block, unique ids), not in a stage checkpoint.
+**Recipe shape:** H2 per English area, H3 per English job; after the heading, a **Needs:** line linking every section the recipe uses (any stage — the track is read after them); worked example with morph gloss; **Compare with** as usual. Practice goes in a `## Practice` section at the end of the page (H3 per block, unique ids), not in a stage checkpoint. A recipe H3 that spells a content root pins an English `{#id}` ([retie-safe writing](#retie-safe-writing)).
 
 **Direction:** track pages link to stage pages; **stage pages never link to or preview the track** (no *see the recipe*, no See also entry). The lookup pages ([english.md](../grammar/english.md), [terminology.md](../grammar/terminology.md)) may link to either.
 
@@ -505,10 +505,22 @@ A morph line is compared only after the whole example parses. If it doesn't pars
 ### HTML comments
 <a id="html-comments"></a>
 
-VitePress does not render HTML comments. Use them for **editor-only** notes that must sit next to the grammar text — typically **why this spot is an exception** to a rule on this page (house cast, omit-`yal`, Compare-with quota, and so on). The learner never sees them; `build` markdown checks skip comment bodies; `retie-docs` skips them too, except `<!-- gloss: … -->` morph lines, which follow their Agalan.
+VitePress does not render HTML comments. Use them for **editor-only** notes that must sit next to the grammar text — typically **why this spot is an exception** to a rule on this page (house cast, omit-`yal`, Compare-with quota, and so on). The learner never sees them; `build` markdown checks skip comment bodies, except the retie markers in [retie-safe writing](#retie-safe-writing). `retie-docs` skips comment bodies too, except `<!-- gloss: … -->` morph lines, which follow their Agalan, and `<!-- retie: shared-prefix -->`, which is checked after the rewrite.
 
 ```markdown
 <!-- Exception to house-cast: this block teaches speaker/listener specials, so `zugobon` is the point. -->
 ```
 
 Do **not** use `<!--@include: …-->` for notes — that is a VitePress include. Do not put the same note in visible parentheses, scare-quotes, or “for editors:” asides ([no process leftover](#no-process-or-corrective-leftover)). Folder-wide content and teaching policy lives on this meta page; wording and voice policy lives in [doc-style.md](doc-style.md). Comments are for the **local** why, not a second style guide.
+
+### Retie-safe writing
+<a id="retie-safe-writing"></a>
+
+A lexicon retie rewrites Agalan it can see as a word. Write so each spelling has one place to move.
+
+- Agalan in prose is one backtick span: a whole word, or a whole sentence or phrase. Italics are English (*sleep*, *one*, *Azawan*), including an English word whose letters are also a root (*eye*). A cite interior that is Agalan is that span. When prose names the two parts of a compound, each part is its own span; the whole stem stays one span when that word is what the example parses.
+- A heading whose backtick form is a published root, a compound stem, or an overlay sense form gets an explicit English `{#id}` that does not contain that spelling (`### Gravity (`abaha` / `adahe`) {#gravity}`). Closed letters and hooks (`a`, `hal`, `am`) may stay in the auto slug. Recipe headings follow the same rule.
+- An example whose point is two roots sharing a short cut is marked `<!-- retie: shared-prefix -->` immediately before that prose and its example. The marked roots have to share a cut. `<!-- retie: skip -->` is only for a page that records past spellings, never a page under `docs/grammar/`.
+- Code names a closed root by emoji in [`src/closed-roots.ts`](../../src/closed-roots.ts), not by a string spelling.
+
+The house-cast English name (*Azawan*) stays. It is the capitalised root, and the retie rewrites that copy from the named word.

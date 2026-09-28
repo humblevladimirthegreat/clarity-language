@@ -16,14 +16,14 @@ Prosody
 -expressiveness review
 -grammar simplification pass: could we remove special overlay forms and re-use existing grammar? 
 -lint check that vocabulary is taught and used in translation exercises.
--consider Promoting common non-nouns and compound-word parts to be two syllables. 
+-consider Promoting common non-nouns and compound-word parts to be three letter. 
 -intentionally discourage speaker and listener person pronoun by making them five letters instead of three.
 -remove unneeded tests
 
 final exam
 
 save for near end of limit resets:
--review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by overlay-roots
+-review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by overlay-roots.
 -mass lexical compound adding
 -refactor codebase
 -do a style pass in grammar-docs. Check for adherence to doc-style and otherwise ensure natural sounding explanations.

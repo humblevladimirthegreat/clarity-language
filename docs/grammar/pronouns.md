@@ -27,6 +27,8 @@ After you have already named a person or thing, the next sentence can point back
 
 **Compare with:** English *the dog that walked* is that same pair of sentences, then **-r** in whatever slot you need. Do not hang a *who / that / which* clause on the noun ([which person or thing](dependents.md#which-noun)).
 
+<!-- retie: shared-prefix -->
+
 When that short stem would match the **wrong** recent word, use a **full-root resume**: the **entire root** + **-r**. Short **`eze`** matches both *sleep* (`ezeba`) and *speechless* (`ezebo`). After both have been used, short `vezer` would pick the more recent *speechless*; full `vezebar` picks *sleep*.
 
 > `zalahen vezebal. zazawan gezebol. zahaben vezebar.`

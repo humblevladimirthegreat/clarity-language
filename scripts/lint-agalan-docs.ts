@@ -52,6 +52,7 @@ import {
   withinSection,
 } from "../src/lint/learning-order.js";
 import { duplicateIds } from "../src/lint/grammar-anchors.js";
+import { lintRetieFormat } from "../src/lint/retie-format.js";
 import { constructionFamilies, drillCoverage, drillSkips, duplicateDrills } from "../src/lint/drill-coverage.js";
 import { CONSTRUCTIONS as STATIC_CONSTRUCTIONS, constructionRegistry } from "../src/parse/constructions.js";
 import { readingOrder } from "../docs/grammar/.vitepress/lib/reading-order.js";
@@ -330,6 +331,7 @@ function main(): void {
   let speechCount = 0;
   let spanCount = 0;
   let duplicateIdCount = 0;
+  let retieFormatCount = 0;
   const spanStats = emptySpanStats();
   const pages = new Map<string, PageSections>();
   const uses: ConstructionUse[] = [];
@@ -352,6 +354,10 @@ function main(): void {
       for (const id of duplicateIds(original)) {
         duplicateIdCount += 1;
         console.error(`${rel}  #${id}  id is used more than once on the page (headings and <a id> share one namespace)`);
+      }
+      for (const finding of lintRetieFormat(original, tables)) {
+        retieFormatCount += 1;
+        console.error(`${rel}:${lineNumberAt(original, finding.index)}  retie-format  (${finding.detail})`);
       }
       const ps = pageSections(basename(file), original);
       pages.set(ps.page, ps);
@@ -412,6 +418,11 @@ function main(): void {
       `\n${duplicateIdCount} duplicate id(s). Give each heading a unique id (rename it, or pin one with {#id}); drop an <a id> that repeats its heading's id.`,
     );
   }
+  if (retieFormatCount > 0) {
+    console.error(
+      `\n${retieFormatCount} retie-format issue(s). Pin an English heading id, put Agalan in backticks, or fix the shared-prefix mark (docs/meta/grammar-docs.md).`,
+    );
+  }
   if (morphCount > 0) {
     console.log(`\n${morphCount} morph-gloss issue(s).`);
   }
@@ -434,7 +445,18 @@ function main(): void {
     );
   }
 
-  const fail = hostIssues + count + spanCount + duplicateIdCount + morphCount + bankCount + speechCount + coverageCount + orderCount + drillCount;
+  const fail =
+    hostIssues +
+    count +
+    spanCount +
+    duplicateIdCount +
+    retieFormatCount +
+    morphCount +
+    bankCount +
+    speechCount +
+    coverageCount +
+    orderCount +
+    drillCount;
   if (fail > 0) {
     process.exit(1);
   }

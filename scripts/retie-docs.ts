@@ -9,8 +9,9 @@
  * Only spans the doc lint reads as Agalan are rewritten (plus emphasised prose runs that parse
  * as an Agalan sentence or phrase); other hits are listed for review. English copies follow
  * their Agalan: named-word names, quoted payloads, morph lines, and heading anchors.
- * A rewrite that stops parsing, moves an unmapped root, or rebinds a resume blocks `--write`,
- * as does a map whose old spellings the word grammar cannot read or that was already applied.
+ * A rewrite that stops parsing, moves an unmapped root, rebinds a resume, or splits a
+ * marked shared short cut blocks `--write`, as does a map whose old spellings the word
+ * grammar cannot read or that was already applied.
  */
 import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { basename, dirname, join, relative } from "node:path";
@@ -21,6 +22,7 @@ import { parseCompoundCsv, validateCompoundRows } from "../src/lexicon-compounds
 import { ensureFrequencyFile, loadFrequencyRanks } from "../src/lexicon-place.js";
 import { fillSelf } from "../src/learner-name.js";
 import { ENGLISH_IN_CODE, lintAgalanMarkdown, lintAgalanSpans } from "../src/lint/agalan-docs.js";
+import { lintRetieFormat, sharedPrefixLosses } from "../src/lint/retie-format.js";
 import { formatMorphGlossFinding, lintMorphGlossMarkdown } from "../src/lint/morph-gloss-docs.js";
 import { formatNumberSpeechFinding, lintNumberSpeechMarkdown, NUMBER_SPEECH_FILES } from "../src/lint/number-speech-docs.js";
 import { formatWordBankFinding, lintWordBankMarkdown } from "../src/lint/word-bank-docs.js";
@@ -249,6 +251,9 @@ function lintPage(rel: string, source: string, tables: ClassifyTables): string[]
   for (const finding of lintWordBankMarkdown(source, tables)) {
     out.push(formatWordBankFinding(rel, finding));
   }
+  for (const finding of lintRetieFormat(text, tables)) {
+    out.push(`${rel}:${lineNumberAt(text, finding.index)}  retie-format  (${finding.detail})`);
+  }
   // The build checks pronunciation rows on the number pages only.
   if (NUMBER_SPEECH_FILES.includes(basename(rel))) {
     for (const finding of lintNumberSpeechMarkdown(text)) {
@@ -410,6 +415,9 @@ async function main(): Promise<void> {
     const rel = relative(rootDir, file);
     for (const item of result.reviews) {
       review(`${rel}:${lineNumberAt(original, item.index)}  review  \`${item.text}\`  (${item.reason})`);
+    }
+    for (const loss of sharedPrefixLosses(original, result.text, tables.old, tables.current)) {
+      block(`${rel}:${lineNumberAt(original, loss.index)}  blocking  ${loss.detail}`);
     }
     for (const failure of verifyRetiedSpans(result.spans, map, tables)) {
       const line = lineNumberAt(original, failure.span.index);

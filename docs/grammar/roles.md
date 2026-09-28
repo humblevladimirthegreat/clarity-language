@@ -383,7 +383,7 @@ The examples above already used *west* / body *left*. The rest of the rose is th
 
 Indoor headings may follow a local map (building north). Prefer a named viewpoint or listener frame when you mean a person’s body rose (`…thazawan`, `…thedonen`). For an object, use its design or current use to determine forward; establish the frame when that is ambiguous.
 
-### Gravity (`abaha` / `adahe`)
+### Gravity (`abaha` / `adahe`) {#gravity}
 
 English *up* / *down* here follows the pull of gravity, not a face. Write **`abaha`** (skyward) or **`adahe`** (toward the pull) as ordinary content words, with no **`th`** + facing person. Everyone shares that frame.
 

@@ -294,8 +294,7 @@ English *can't* does not say whether this is just for now, not yet, or never. Af
 
 **Compare with:** a [interests](interests.md) word joins a **interest** root with **`th`**, not **`x`**: **`tha` / `thu`** is met / unmet interest (`thuduthum` *competence unmet*). **`xa` / `xu`** after a verb or quality is can / can't.
 
-### When there is no single verb (`eze`)
-<a id="ability-fallback"></a>
+### When there is no single verb (`eze`) {#ability-fallback}
 
 Sometimes English *can* / *can't* is not about one named verb or quality: the activity takes more than one root, you just want a bare *can't*, or the *can* covers the whole sentence. Then there is no single root to put **`x`** into. Use the special word **`eze`**: after **`eze`**, write the same **`x`**, vowel, and ending as on a verb. Put it on `/th/` when it is about the whole clause, or on `/w/` immediately before the adjective it grades. That lets you say *can* / *can't* without naming the activity in that word. Prefer the verb itself whenever one root is enough. (Cue: 🥣 *cereal*: a bowl that holds what you can do)
 

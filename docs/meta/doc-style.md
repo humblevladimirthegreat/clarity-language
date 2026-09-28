@@ -12,7 +12,7 @@ Prefer commas, colons, parentheses, or separate sentences over em dashes.
 - Teaching stages do not use maintainer *we* (“we now write…”) or author *I*. Author *I* is allowed only on signed non-teaching prose in this folder (acknowledgments; the purpose / limits essay), not on rule pages.
 - One idea per H2/H3. On a **new job**, the first paragraph should be one **complete** explanation: English job, Agalan shape, and what that lets the learner do ([explain before you slogan](#explain-before-you-slogan)). That is the same bar as the [easy-to-use feature criterion](../grammar/why-agelan.md#criterion-for-features) (roughly one paragraph plus a couple of examples), not a one-sentence aphorism. A later-stage H3 that only finishes a series may be a short pointer plus a table ([later-stage shape](grammar-docs.md#later-stage-shape)).
 - Prefer short paragraphs plus a table over a wall of prose.
-- Bold sparingly; put Agalan forms in backticks (`yal`, **-r**, `/ɡ/`).
+- Bold sparingly; put Agalan forms in backticks (`yal`, **-r**, `/ɡ/`), not italics. A heading that spells a content root pins an English `{#id}` ([retie-safe writing](grammar-docs.md#retie-safe-writing)).
 - Always call the language **Agalan**. Community / project URLs that still use a legacy host path are fine when they are the real link; do not “fix” them in learner prose.
 
 ## Explain before you slogan
