@@ -9,6 +9,7 @@
  * difference from a CMU entry is a hyphen (hot-dog ↔ hotdog) in data/lexicon-published.csv.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { toAgalan } from './echo-pronunciation-map.ts';
 
 const CMU_FILE = 'tmp/cmudict.dict';
 /** Pinned cmudict commit, so reruns give the same pronunciations. */
@@ -58,54 +59,30 @@ const OVERRIDES: Record<string, string> = {
   mahjong: 'M AA1 ZH AA2 NG',
   sagittarius: 'S AE2 JH IH0 T EH1 R IY0 AH0 S',
   ophiuchus: 'AO2 F IY0 UW1 K AH0 S',
-  // Places: keyed by the whole label, one primary stress per word.
+  // Places: keyed by the whole label, one primary stress per word, `|` between words.
   uae: 'Y UW2 EY2 IY1',
-  'bouvet-island': 'B UW0 V EY1 AY1 L AH0 N D',
-  'cote-d-ivoire': 'K OW1 T D IY0 V W AA1 R',
-  'clipperton-island': 'K L IH1 P ER0 T AH0 N AY1 L AH0 N D',
+  'bouvet-island': 'B UW0 V EY1 | AY1 L AH0 N D',
+  'cote-d-ivoire': 'K OW1 T | D IY0 V W AA1 R',
+  'clipperton-island': 'K L IH1 P ER0 T AH0 N | AY1 L AH0 N D',
   czechia: 'CH EH1 K IY0 AH0',
   ceuta: 'S EY1 UW0 T AH0',
-  'faroe-islands': 'F EH1 R OW0 AY1 L AH0 N D Z',
-  'guinea-bissau': 'G IH1 N IY0 B IH0 S AW1',
+  'faroe-islands': 'F EH1 R OW0 | AY1 L AH0 N D Z',
+  'guinea-bissau': 'G IH1 N IY0 | B IH0 S AW1',
   chagos: 'CH AA1 G OW0 S',
   nauru: 'N AA0 UW1 R UW0',
   niue: 'N IY0 UW1 EY0',
-  'pitcairn-islands': 'P IH1 T K EH0 R N AY1 L AH0 N D Z',
+  'pitcairn-islands': 'P IH1 T K EH0 R N | AY1 L AH0 N D Z',
   svalbard: 'S V AA1 L B AA0 R',
-  'sint-maarten': 'S IH1 N T M AA1 R T AH0 N',
+  'sint-maarten': 'S IH1 N T | M AA1 R T AH0 N',
   eswatini: 'EH2 S W AA0 T IY1 N IY0',
-  'turks-caicos': 'T ER1 K S K EY1 K OW0 S',
+  'turks-caicos': 'T ER1 K S | K EY1 K OW0 S',
   tokelau: 'T OW1 K AH0 L AW0',
-  'timor-leste': 'T IY1 M AO0 R L EH1 S T EY0',
+  'timor-leste': 'T IY1 M AO0 R | L EH1 S T EY0',
   turkiye: 'T ER1 K IY0 Y EH0',
 };
 for (const [word, phones] of Object.entries(OVERRIDES)) {
   if (cmu.has(word)) throw new Error(`override ${word} is already in CMU`);
   cmu.set(word, phones.split(' '));
-}
-
-/**
- * Phoneme → Agalan letter. `x` and `th` never occur in roots, so SH / ZH → h and TH / DH → v.
- * Vowels map by quality; stress is kept on the phoneme for the metric (Step 3).
- */
-export const PHONEME_MAP: Record<string, string> = {
-  P: 'b', B: 'b', T: 'd', D: 'd', K: 'g', G: 'g', F: 'v', V: 'v',
-  S: 'z', Z: 'z', SH: 'h', ZH: 'h', TH: 'v', DH: 'v', CH: 'h', JH: 'h',
-  HH: 'h', W: 'w', Y: 'y', M: 'm', N: 'n', NG: 'n', L: 'l', R: 'r',
-  AA: 'a', AE: 'a', AH: 'a', AY: 'a', AW: 'a',
-  EH: 'e', EY: 'e', IH: 'e', IY: 'e', ER: 'e',
-  AO: 'o', OW: 'o', OY: 'o',
-  UH: 'u', UW: 'u',
-};
-
-/** Agalan sound string; unstressed AH0 ("uh") is written `·` (never scored against a root). */
-export function toAgalan(phones: string[]): string {
-  return phones.map((p) => {
-    if (p === 'AH0') return '·';
-    const letter = PHONEME_MAP[p.replace(/\d$/, '')];
-    if (!letter) throw new Error(`unmapped phoneme ${p}`);
-    return p.endsWith('1') ? letter.toUpperCase() : letter;
-  }).join('');
 }
 
 function parseCsvLine(line: string): string[] {
@@ -163,14 +140,14 @@ for (let n = 1; n < lines.length; n++) {
       const [a, b] = splits.sort((x, y) => Math.min(y[0].length, y[1].length) - Math.min(x[0].length, x[1].length))[0];
       const to = `${a}-${b}`;
       hyphenFixes.push({ line: n, from: cols[iConcrete], to });
-      lookup = `${a} ${b}`; phones = [...cmu.get(a)!, ...cmu.get(b)!]; status = 'hyphen-fix';
+      lookup = `${a} ${b}`; phones = [...cmu.get(a)!, '|', ...cmu.get(b)!]; status = 'hyphen-fix';
     }
   }
   if (!phones && label.includes('-')) {
     const parts = label.split('-');
     if (parts.every((p) => cmu.has(p))) {
       lookup = parts.join(' ');
-      phones = parts.flatMap((p) => cmu.get(p)!);
+      phones = parts.flatMap((p, i) => [...(i ? ['|'] : []), ...cmu.get(p)!]);
       status = 'parts';
     }
   }

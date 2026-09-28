@@ -11,6 +11,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { escapeCsvField, parseCsv } from '../src/csv.ts';
 import * as converter from '../src/word-converter.ts';
+import { echo as pronEcho, loadPron } from './echo-metric.ts';
 
 const OUT = 'tmp/lexicon-revamp';
 /**
@@ -67,6 +68,8 @@ const jy = (s: string) => s.replace(/j/g, 'y');
  *  - a stop after s at the end of a word is dropped: desk → des, list → lis.
  */
 const SPELLING_TO_SOUND = true;
+/** --pron-echo: score echo by pronunciation (scripts/echo-metric.ts, docs/proposals/echo-metric.md Step 3) instead of spelling. */
+const PRON_ECHO = process.argv.includes('--pron-echo');
 const soundSpell = (label: string, force = false) =>
   !SPELLING_TO_SOUND && !force
     ? label
@@ -206,7 +209,7 @@ const eligible = rows.filter((r) => r.groups.size > 0 && !r.pinned);
  *   1st vowel: 1 = the word's first vowel; each later vowel: 0.5 = the vowel after the consonant before it.
  * Divided by the maximum: 7 for a long root, 4.5 for a short one.
  */
-const echoScore = (label: string, root: string) => {
+const spellingEcho = (label: string, root: string) => {
   const toks = converter.mappedSourceLetters(soundSpell(label, true)).map(jy);
   const isV = (t: string) => V.includes(t);
   const cons = toks.map((t, k) => [t, k] as const).filter(([t]) => !isV(t));
@@ -226,6 +229,13 @@ const echoScore = (label: string, root: string) => {
     if (i2 >= 0 && vowelAfter(cons[i2][1]) === root[4]) pts += 0.5;
   }
   return pts / (root.length === 5 ? 7 : 4.5);
+};
+const pron = PRON_ECHO ? loadPron() : undefined;
+const echoScore = (label: string, root: string) => {
+  if (!pron) return spellingEcho(label, root);
+  const cmu = pron.get(label);
+  if (!cmu) throw new Error(`no pronunciation for ${label}: rerun scripts/echo-pronunciation.ts`);
+  return pronEcho(root, cmu);
 };
 // ---- VCV placement: one constraint problem (annealing) ----
 const reserved = new Set(RESERVED);
@@ -597,7 +607,7 @@ L.push('# Lexicon revamp — dry run', '', 'Generated from `data/*.csv` (unchang
   '- flags regenerated like every other row; join overlays not eligible',
   `- compound rule: **${COMPOUND_RULE}** (prefix = short-root prefix ban; slot4 = no l/m/n/r second consonant; listed = only listed compounds checked)`,
   `- VCV cost: ${ECHO_W} × echo distance + ${DISPLACE_W} × long roots displaced by the compound-split ban + shared-prefix penalty (kind ×3, position/sibling ×2, domain ×1); annealed`,
-  (IGNORE_CLOSE_PAIRS ? '- **echo-first:** domain / sibling spacing and shared-prefix penalty off; grammatical group floors, uniqueness and compound-split ban kept\n' : '') + (SLOT4_SWAP && SECOND_CONSONANT_BAN ? '- **slot-4 swap:** a candidate with l/m/n/r as second consonant is used with its consonants swapped (dropped if both are l/m/n/r)\n' : '') + (SPELLING_TO_SOUND ? '- **spelling → sound:** -ing / -ed stripped; ng, gh, mb, kn, ph, th merged; final s+stop → s\n' : '') + '- long roots: regenerated from the concrete label (converter candidate order), placed by priority = English frequency rank of the most frequent sense; overrides: ' + (Object.keys(PRIORITY_OVERRIDES).join(' ') || 'none'), '');
+  (IGNORE_CLOSE_PAIRS ? '- **echo-first:** domain / sibling spacing and shared-prefix penalty off; grammatical group floors, uniqueness and compound-split ban kept\n' : '') + (SLOT4_SWAP && SECOND_CONSONANT_BAN ? '- **slot-4 swap:** a candidate with l/m/n/r as second consonant is used with its consonants swapped (dropped if both are l/m/n/r)\n' : '') + (PRON_ECHO ? '- **echo metric:** pronunciation (CMU, scripts/echo-metric.ts)\n' : '') + (SPELLING_TO_SOUND ? '- **spelling → sound:** -ing / -ed stripped; ng, gh, mb, kn, ph, th merged; final s+stop → s\n' : '') + '- long roots: regenerated from the concrete label (converter candidate order), placed by priority = English frequency rank of the most frequent sense; overrides: ' + (Object.keys(PRIORITY_OVERRIDES).join(' ') || 'none'), '');
 const overlayN = eligible.filter((r) => !r.marked).length;
 L.push('## Budget', '', `overlay ${overlayN} / marked ${eligible.length - overlayN} / pinned ${PINNED.size} / reserved ${RESERVED.length} / free ${192 - eligible.length - RESERVED.length} of 192 VCVs`, '');
 L.push('## Outcome per root', '', '| Reason | Roots |', '|---|---|', ...[...whyCounts].sort((a, b) => b[1] - a[1]).map(([k, v]) => `| ${k} | ${v} |`), '');
