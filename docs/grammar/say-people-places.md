@@ -73,6 +73,22 @@ For *unlike* / *different from*, use the [similative](relations.md#similative) *
 >
 > "Azawan is different from Alahen."
 
+### *What someone did* {#free-relative-what}
+
+**Needs:** [The undergoer (`u`)](roles.md#the-undergoer-u) · [This instance (`-r`)](roles.md#this-instance-r)
+
+English *what* in *Alahen sees what Azawan writes* names the thing an event happened to, with no noun for it. State that event first, then point back at its undergoer with the **`u`** role compound in **-r**: *the thing written*.
+
+> `zazawan varadal. zalahen vahahal duxaradar.`
+>
+> z-Azawan | v-write . z-Alahen | v-see | d-←write
+>
+> "Alahen sees what Azawan writes."
+
+Keep the two verbs different. **-r** points at the latest matching event, so `zalahen vahahal duxahahar` would point at Alahen's own seeing.
+
+**Compare with:** `dar` is *something* (a new, unnamed thing), not the thing from an event already said.
+
 ### Named handles {#named-handles}
 
 **Needs:** [Proper name `-n`](word-endings.md#proper-name--n) · [Phrasal proper names](word-endings.md#phrasal-proper-names)

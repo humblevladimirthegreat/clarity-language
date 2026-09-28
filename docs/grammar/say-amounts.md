@@ -121,6 +121,20 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 >
 > "Most of the cats sit."
 
+### *One in three* {#one-in-n}
+
+**Needs:** [Fractions](numbers-applied.md#fractions)
+
+*One in three cats* is the same share as *a third of the cats*. Write the [fraction](numbers-applied.md#fractions) **`g-N`** right after the noun.
+
+> `zagadalx grurel vehahel.`
+>
+> [z-cat-x | g-third-of] | v-sit
+>
+> "One in three cats sits."
+
+**Compare with:** `/h/` **`h-3`** is *every third time*: it counts repeats of the event, not members of a group.
+
 ### Percent points, factors, and other wholes
 
 **Needs:** [Percent](numbers-applied.md#percent-and-percentage-points) · [Number as adverb](numbers.md#number-as-adverb-by-marker) · [Of relations](relations.md#of-relations)

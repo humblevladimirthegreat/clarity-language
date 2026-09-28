@@ -34,6 +34,36 @@ To report a *who* / *what* question inside a claim (*Azawan asks who walks*), pu
 >
 > "Azawan asks who walks."
 
+## Listening and hedged replies {#listening}
+
+### *Mm-hm* while someone talks {#continuer}
+
+**Needs:** [Three endings](questions.md#polar-endings)
+
+While someone tells you something, English keeps them going with *mm-hm* or *I see*, without agreeing or disagreeing. Reply **`yaer.`** after each point: it says only that the news reached you.
+
+> `zazawan vowogal. yaer.`
+>
+> z-Azawan | v-walk . y-yes-fresh
+>
+> "Azawan walked." "Mm-hm."
+
+**Compare with:** **`yom.`** (*Hm?*) asks about what was just said, so the speaker stops to explain. **`yaem.`** (*yeah*) agrees with the claim.
+
+### *Well…* before an unwelcome answer {#well}
+
+**Needs:** [Three endings](questions.md#polar-endings)
+
+English *well…* warns that the answer is not the plain *yes* the question hoped for. Start the reply with **`yuam`** (*it's more complicated than that*), then give the answer.
+
+> `yol zazawan vowogal. yuam zazawan vehahel.`
+>
+> y-question | z-Azawan | v-walk . y-reject-frame-soft | z-Azawan | v-sit
+>
+> "Did Azawan walk?" "Well… Azawan sat."
+
+**Compare with:** **`yuel`** says the claim is false. **`yuam`** says the question does not quite fit, and the body says what happened instead.
+
 ## Offers and confirmations with joins {#join-questions}
 
 ### Single-item and standalone inventory
