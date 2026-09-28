@@ -19,13 +19,13 @@ When English hangs *who* / *that* / *which* plus a clause on a noun (*the guard 
 
 That pair is English *Azawan talks to the guard who sits.* Repeat the full word when you need the same person again in the next sentence.
 
-**Compare with:** *a blue dog* is still one [adjective](clause.md#adjectives-ɡ) (`gubuhal`). *Azawan tells Ululon **that** a dog runs* is a [dependent clause](#dependent-clauses): *that* packages the next sentence as content, not as a tag on *dog*.
+**Compare with:** *a blue dog* is still one [adjective](clause.md#adjectives-ɡ) (`gubuhal`). *Azawan tells Alahen **that** a dog runs* is a [dependent clause](#dependent-clauses): *that* packages the next sentence as content, not as a tag on *dog*.
 
 
 
 ### Dependent clauses {#dependent-clauses}
 
-Sometimes a full sentence fills a slot in the sentence before it (*Azawan tells Ululon **that the dog runs***). That inner sentence is a **dependent clause**. The person told is unhosted `/b/`; *that…* is often a direct object.
+Sometimes a full sentence fills a slot in the sentence before it (*Azawan tells Alahen **that the dog runs***). That inner sentence is a **dependent clause**. The person told is unhosted `/b/`; *that…* is often a direct object.
 
 In the main sentence, a **stand-in** **`darl`** (role letter + **`a`** + **`-rl`**) occupies that slot and stands for whatever sentence follows right away.
 
@@ -37,17 +37,17 @@ The main sentence stops after **`darl`**; the next full sentence is the content 
 
 > `zazawan balahen vezebel darl zodogal varahal.`
 >
-> z-Azawan | b-Ululon | v-tell | d-that-clause | z-dog | v-run
+> z-Azawan | b-Alahen | v-tell | d-that-clause | z-dog | v-run
 >
-> "Azawan tells Ululon that the dog runs."
+> "Azawan tells Alahen that the dog runs."
 
 English *whether* is that same object slot, with vowel **`o`**: **`dorl`**. The outer sentence stays a statement. End the whole stretch with a period (the outer act is still a claim).
 
 > `zazawan vahahal dorl zalahen vowogal.`
 >
-> z-Azawan | v-see | d-whether-clause | z-Ululon | v-walk
+> z-Azawan | v-see | d-whether-clause | z-Alahen | v-walk
 >
-> "Azawan sees whether Ululon walks."
+> "Azawan sees whether Alahen walks."
 
 *Because* / *if* and similar use a pole word + `/b/` **`barl`**. Keep that pair together, **last in the main sentence** (**`barl`** last). The abstract ending on the pole word is always **-m**.
 
@@ -55,9 +55,9 @@ The pole's role letter follows the clause page. *Because*, *if*, *only if*, and 
 
 > `zazawan vezehel thabem barl zalahen vowogal.`
 >
-> z-Azawan | v-sing | [th-because | b-that-clause] | z-Ululon | v-walk
+> z-Azawan | v-sing | [th-because | b-that-clause] | z-Alahen | v-walk
 >
-> "Azawan sings because Ululon walks."
+> "Azawan sings because Alahen walks."
 
 These poles use **-m** because they take the abstract sense of the root, not the everyday object. **Same root as** is that root as an everyday kind (citation **-l**). **Cue** only says why the picture maps to the English column.
 
@@ -69,20 +69,20 @@ You can also say:
 | **`thowem barl`** | *if* | `owel` *door* | 🚪: walk through only if it opens |
 | **`thorom barl`** | *only if* | `orol` *paper-roll* | 🧻: without it the situation does not run |
 | **`thedom barl`** | *if and only if* | `edol` *east-west* | ↔️: each side only with the other |
-| **`hezem barl`** | *although* / *evevun though* | `ezel` *zebra* | 🦓: two stripes, still one animal |
+| **`hezem barl`** | *although* / *even though* | `ezel` *zebra* | 🦓: two stripes, still one animal |
 | **`hahem barl`** | *while* (at the same time) | `ahel` *gemini* | ♊: two things at once |
 | **`hodam barl`** | *until* | `odal` *timer* | ⏲️: stop when it rings |
 | **`habum barl`** | *before* | `abul` *backpack* | 🎒: packed first |
 | **`helam barl`** | *after* | `elal` *hourglass* | ⌛: sand already through |
 | **`hagom barl`** | *so that* / *in order to* | `agol` *goal* | 🥅: you act so the shot counts |
 
-When English puts a **noun** after *despite* (*despite Ululon*), keep the same **`hezem`** pole and put that noun in `/b/` instead of **`barl`**. The obstacle is given, as with *although*. Do not write a second concession word. The *although* pole sits on `/h/` (or `/ɡ/` on a noun), never on `/th/`. On a noun host the same pole is **`gezem`**. (cue: 🦓 *zebra*: two stripes, still one animal)
+When English puts a **noun** after *despite* (*despite Alahen*), keep the same **`hezem`** pole and put that noun in `/b/` instead of **`barl`**. The obstacle is given, as with *although*. Do not write a second concession word. The *although* pole sits on `/h/` (or `/ɡ/` on a noun), never on `/th/`. On a noun host the same pole is **`gezem`**. (cue: 🦓 *zebra*: two stripes, still one animal)
 
 > `zazawan vowogal hezem balahen.`
 >
-> z-Azawan | v-walk | [h-although | b-Ululon]
+> z-Azawan | v-walk | [h-although | b-Alahen]
 >
-> "Azawan walks despite Ululon."
+> "Azawan walks despite Alahen."
 
 Ordinary `zezel` is still *a zebra*.
 
@@ -105,13 +105,13 @@ For *since* (from a starting point up to now), see [the *from* hook on a time](h
 <a id="so-that"></a>
 <a id="event-purpose"></a>
 
-When English names the **intended outcome** of this event (*walks so that Ululon sits*), keep the same hosted pair as *because*. The pole is **`hagom`**. Put the outcome in `/b/` as a following sentence after **`barl`**. The inner event is **not** asserted as a fact (unlike *because*). On a noun host the same pole is **`gagom`**. (cue: 🥅 *goal*: you act so the shot counts)
+When English names the **intended outcome** of this event (*walks so that Alahen sits*), keep the same hosted pair as *because*. The pole is **`hagom`**. Put the outcome in `/b/` as a following sentence after **`barl`**. The inner event is **not** asserted as a fact (unlike *because*). On a noun host the same pole is **`gagom`**. (cue: 🥅 *goal*: you act so the shot counts)
 
 > `zazawan vowogal hagom barl zalahen vehahel.`
 >
-> z-Azawan | v-walk | [h-so-that | b-that-clause] | z-Ululon | v-sit
+> z-Azawan | v-walk | [h-so-that | b-that-clause] | z-Alahen | v-sit
 >
-> "Azawan walks so that Ululon sits."
+> "Azawan walks so that Alahen sits."
 
 When English *to* drops the sitter, keep inner `/z/`:
 
@@ -123,7 +123,7 @@ When English *to* drops the sitter, keep inner `/z/`:
 
 Ordinary `zagol` is still *a goal* (the net).
 
-**Compare with:** *although Ululon walks* is **`hezem barl`** plus the next sentence. Discourse *however* and *therefore* are sentence linkers after a finished claim ([continue](#continue-x)), not *although* or *so that*. *Whether Ululon walks* is **`dorl`**, not **`thowem`** (*if* is a condition, not polar ignorance). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. Acting *for relatedness* is a [interest motive](interests.md#interest-preference) on the interest, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange). *Works for a money-bag* (something you want to get) is an extra-noun [hook](hooks.md#extra-noun); use **`hagom`** when *for* names a result you aim at (*practices for a race*). 
+**Compare with:** *although Alahen walks* is **`hezem barl`** plus the next sentence. Discourse *however* and *therefore* are sentence linkers after a finished claim ([continue](#continue-x)), not *although* or *so that*. *Whether Alahen walks* is **`dorl`**, not **`thowem`** (*if* is a condition, not polar ignorance). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. Acting *for relatedness* is a [interest motive](interests.md#interest-preference) on the interest, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange). *Works for a money-bag* (something you want to get) is an extra-noun [hook](hooks.md#extra-noun); use **`hagom`** when *for* names a result you aim at (*practices for a race*). 
 
 The verb has no past or future letter. *Before* / *after* / *while* / *until* place this event relative to the next sentence. Leftover **result** and **former climate** are standing moods, not time ([RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate)).
 
@@ -157,8 +157,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
-| *Ululon* | `alahen` | | |
-| *Uhubun* | `ahaben` | | |
+| *Alahen* | `alahen` | | |
+| *Ahaben* | `ahaben` | | |
 | *guard* | `agadul` | | |
 | *sit* | `vehahel` | `ehahel` *chair* | 🪑: taking a seat |
 | *stand* | `vazadol` | `azadol` *stand* | 🧍: staying in place |
@@ -177,20 +177,20 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### English → Agalan {#beginner-english-to-agalan}
 
-**1.** *Azawan tells Ululon that Uhubun sits.*
+**1.** *Azawan tells Alahen that Ahaben sits.*
 
 ::: details Show answer
 `zazawan balahen vezebel darl zahaben vehahel.`
 
-z-Azawan | b-Ululon | v-tell | d-that-clause | z-Uhubun | v-sit
+z-Azawan | b-Alahen | v-tell | d-that-clause | z-Ahaben | v-sit
 :::
 
-**2.** *Azawan runs because Ululon punches a guard.*
+**2.** *Azawan runs because Alahen punches a guard.*
 
 ::: details Show answer
 `zazawan varahal thabem barl zalahen dagadul vabahel.`
 
-z-Azawan | v-run | [th-because | b-that-clause] | z-Ululon | d-guard | v-punch
+z-Azawan | v-run | [th-because | b-that-clause] | z-Alahen | d-guard | v-punch
 :::
 
 **3.** *Azawan writes despite a guard.*
@@ -201,28 +201,28 @@ z-Azawan | v-run | [th-because | b-that-clause] | z-Ululon | d-guard | v-punch
 z-Azawan | v-write | [h-although | b-guard]
 :::
 
-**4.** *Azawan sees whether Ululon sits.*
+**4.** *Azawan sees whether Alahen sits.*
 
 ::: details Show answer
 `zazawan vahahal dorl zalahen vehahel.`
 
-z-Azawan | v-see | d-whether-clause | z-Ululon | v-sit
+z-Azawan | v-see | d-whether-clause | z-Alahen | v-sit
 :::
 
-**5.** *Azawan runs so that Ululon sits.*
+**5.** *Azawan runs so that Alahen sits.*
 
 ::: details Show answer
 `zazawan varahal hagom barl zalahen vehahel.`
 
-z-Azawan | v-run | [h-so-that | b-that-clause] | z-Ululon | v-sit
+z-Azawan | v-run | [h-so-that | b-that-clause] | z-Alahen | v-sit
 :::
 
-**6.** *Azawan stands although Ululon screams.*
+**6.** *Azawan stands although Alahen screams.*
 
 ::: details Show answer
 `zazawan vazadol hezem barl zalahen vezogel.`
 
-z-Azawan | v-stand | [h-although | b-that-clause] | z-Ululon | v-scream
+z-Azawan | v-stand | [h-although | b-that-clause] | z-Alahen | v-scream
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
@@ -231,45 +231,45 @@ z-Azawan | v-stand | [h-although | b-that-clause] | z-Ululon | v-scream
 
 ::: details Show answer
 
-z-Uhubun | v-scream . x-therefore | z-Ululon | v-fight
+z-Ahaben | v-scream . x-therefore | z-Alahen | v-fight
 
-*Uhubun screams. Therefore Ululon fights.*
+*Ahaben screams. Therefore Alahen fights.*
 :::
 
 **2.** `zalahen vavadal hezem bagadul.`
 
 ::: details Show answer
 
-z-Ululon | v-fight | [h-although | b-guard]
+z-Alahen | v-fight | [h-although | b-guard]
 
-*Ululon fights despite a guard.*
+*Alahen fights despite a guard.*
 :::
 
 **3.** `zahaben vahahal dorl zazawan vazadol.`
 
 ::: details Show answer
 
-z-Uhubun | v-see | d-whether-clause | z-Azawan | v-stand
+z-Ahaben | v-see | d-whether-clause | z-Azawan | v-stand
 
-*Uhubun sees whether Azawan stands.*
+*Ahaben sees whether Azawan stands.*
 :::
 
 **4.** `zalahen varahal hagom barl zazawan vehahel.`
 
 ::: details Show answer
 
-z-Ululon | v-run | [h-so-that | b-that-clause] | z-Azawan | v-sit
+z-Alahen | v-run | [h-so-that | b-that-clause] | z-Azawan | v-sit
 
-*Ululon runs so that Azawan sits.*
+*Alahen runs so that Azawan sits.*
 :::
 
 **5.** `zahaben vehahel thabem barl zazawan dagadul vahahal.`
 
 ::: details Show answer
 
-z-Uhubun | v-sit | [th-because | b-that-clause] | z-Azawan | d-guard | v-see
+z-Ahaben | v-sit | [th-because | b-that-clause] | z-Azawan | d-guard | v-see
 
-*Uhubun sits because Azawan sees a guard.*
+*Ahaben sits because Azawan sees a guard.*
 :::
 
 
@@ -314,7 +314,7 @@ For English *whose*, resume the person inside the ownership relation [**`gegabem
 
 English uses the same *who* clause for two jobs. When it picks out **which** one (*the guard who sits*, not the other guard), use the two-sentence pattern or a role compound, as above. When it only adds extra information about someone already known (*Azawan, who walks, sings*), put that information in an [aside](spans.md) **`th(…)`** inside the sentence.
 
-> `zazawan th(zezor vowogal) vezehel.`
+> `zazawan th(zazar vowogal) vezehel.`
 >
 > z-Azawan | th-ASIDE[z-←Azawan | v-walk] | v-sing
 >
@@ -353,7 +353,7 @@ These words glue one finished sentence to the next (one-way; default ending **-l
 
 *therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Those same roots keep their ordinary content readings under other role letters.
 
-**Compare with:** *although* / *while* attach a dependent after **`barl`** (`hezem barl`, `hahem barl` — [dependent clauses](#dependent-clauses)). *Despite Ululon* is the same pole with a noun in `/b/` (`hezem balahen`). *So that Ululon sits* is **`hagom barl`**. Discourse **`xezel`** / **`xagagal`** / **`xezadam`** glue a finished sentence to the next one.
+**Compare with:** *although* / *while* attach a dependent after **`barl`** (`hezem barl`, `hahem barl` — [dependent clauses](#dependent-clauses)). *Despite Alahen* is the same pole with a noun in `/b/` (`hezem balahen`). *So that Alahen sits* is **`hagom barl`**. Discourse **`xezel`** / **`xagagal`** / **`xezadam`** glue a finished sentence to the next one.
 
 ### Stand-in vowels (`-rl` / `-rm`) {#stand-in}
 <a id="clause-member"></a>
@@ -379,11 +379,11 @@ After a pole, the dependent is **`barl`** (or **`barm`** for gist): *because* / 
 
 > `zazawan balahen vezebel derl vehahel.`
 >
-> z-Azawan | b-Ululon | v-tell | d-to-clause | v-sit
+> z-Azawan | b-Alahen | v-tell | d-to-clause | v-sit
 >
-> "Azawan tells Ululon to sit."
+> "Azawan tells Alahen to sit."
 
-The person told is unhosted `/b/`, so **`derl vehahel`** can leave out its subject: the sitter is Ululon. The outer sentence stays a statement. With no unhosted `/b/`, write the sitter:
+The person told is unhosted `/b/`, so **`derl vehahel`** can leave out its subject: the sitter is Alahen. The outer sentence stays a statement. With no unhosted `/b/`, write the sitter:
 
 > `zazawan vuhudem derl zazawan vehahel.`
 >
@@ -395,9 +395,9 @@ English *lest* / *not to* (keep this from happening) uses vowel **`u`**: **`durl
 
 > `zazawan balahen vezebel durl vehahel.`
 >
-> z-Azawan | b-Ululon | v-tell | d-lest-clause | v-sit
+> z-Azawan | b-Alahen | v-tell | d-lest-clause | v-sit
 >
-> "Azawan tells Ululon not to sit."
+> "Azawan tells Alahen not to sit."
 
 When *so that* aims at keeping an outcome off, keep **`hagom`** and type `/b/` with **`burl`**:
 
@@ -411,11 +411,11 @@ English *unless* is *if … not*: keep the *if* pole **`thowem`** and type `/b/`
 
 > `zazawan vowogal thowem burl zalahen vezebal.`
 >
-> z-Azawan | v-walk | [th-if | b-lest-clause] | z-Ululon | v-sleep
+> z-Azawan | v-walk | [th-if | b-lest-clause] | z-Alahen | v-sleep
 >
-> "Azawan walks unless Ululon sleeps."
+> "Azawan walks unless Alahen sleeps."
 
-**Compare with:** *tells that Ululon sits* is **`darl`**. *Tells Ululon to sit* is **`derl`**. *Walks so that Azawan sits* is **`hagom barl`**.
+**Compare with:** *tells that Alahen sits* is **`darl`**. *Tells Alahen to sit* is **`derl`**. *Walks so that Azawan sits* is **`hagom barl`**.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -429,8 +429,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agalan |
 |---------|--------|
 | *Azawan* | `azawan` |
-| *Ululon* | `alahen` |
-| *Uhubun* | `ahaben` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
 | *luggage* | `alagal` |
 | *departure* | `vadebal` |
 | *sit* | `vehahel` |
@@ -446,20 +446,20 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
-**1.** *Azawan sits. Next Ululon runs.*
+**1.** *Azawan sits. Next Alahen runs.*
 
 ::: details Show answer
 `zazawan vehahel. xevavel zalahen varahal.`
 
-z-Azawan | v-sit . x-next | z-Ululon | v-run
+z-Azawan | v-sit . x-next | z-Alahen | v-run
 :::
 
-**2.** *Azawan tells Ululon not to depart.*
+**2.** *Azawan tells Alahen not to depart.*
 
 ::: details Show answer
 `zazawan balahen vezebel durl vadebal.`
 
-z-Azawan | b-Ululon | v-tell | d-lest-clause | v-departure
+z-Azawan | b-Alahen | v-tell | d-lest-clause | v-departure
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -468,27 +468,27 @@ z-Azawan | b-Ululon | v-tell | d-lest-clause | v-departure
 
 ::: details Show answer
 
-z-Uhubun | v-sit . x-meanwhile | z-Ululon | d-luggage | v-see
+z-Ahaben | v-sit . x-meanwhile | z-Alahen | d-luggage | v-see
 
-*Uhubun sits. Meanwhile Ululon sees luggage.*
+*Ahaben sits. Meanwhile Alahen sees luggage.*
 :::
 
 **2.** `zalahen vezevul. xezel zazawan varahal.`
 
 ::: details Show answer
 
-z-Ululon | v-sneak . x-however | z-Azawan | v-run
+z-Alahen | v-sneak . x-however | z-Azawan | v-run
 
-*Ululon sneaks. However Azawan runs.*
+*Alahen sneaks. However Azawan runs.*
 :::
 
 **3.** `zalahen bazawan vezebel derl vehahel.`
 
 ::: details Show answer
 
-z-Ululon | b-Azawan | v-tell | d-to-clause | v-sit
+z-Alahen | b-Azawan | v-tell | d-to-clause | v-sit
 
-*Ululon tells Azawan to sit.*
+*Alahen tells Azawan to sit.*
 :::
 
 ## Advanced {#advanced}
@@ -515,9 +515,9 @@ For example, the `/v/` word takes the following sentence as its content:
 
 > `zazawan vaen zalahen vehahel.`
 >
-> z-Azawan | v-confirm | z-Ululon | v-sit
+> z-Azawan | v-confirm | z-Alahen | v-sit
 >
-> "Azawan confirms that Ululon sits."
+> "Azawan confirms that Alahen sits."
 
 > `zazawan vuon zazawan vehahel.`
 >
@@ -541,6 +541,6 @@ Each clause has at most one **stand-in** at the end of the main sentence. The se
 
 > `zazawan gazaham thabem barl zalahen vowogal thabem barl zahaben vezebal.`
 >
-> [z-Azawan | g-happy] | [th-because | b-that-clause] | z-Ululon | v-walk | th-because | b-that-clause | z-Uhubun | v-sleep
+> [z-Azawan | g-happy] | [th-because | b-that-clause] | z-Alahen | v-walk | th-because | b-that-clause | z-Ahaben | v-sleep
 >
-> "Azawan is happy because Ululon walks because Uhubun sleeps."
+> "Azawan is happy because Alahen walks because Ahaben sleeps."

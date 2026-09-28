@@ -125,7 +125,7 @@ Do not say a reading **stays on** another section, page, or subsystem — that i
 | Write **prefix + root + ending** as one token: `zazawan` | “…as one token — **no hyphen** after the PoS letter” |
 | Who you address sits at the start of the speech move, before the sentence body | “Vocatives **do not** appear mid-clause” *with no learner reason to try that yet* |
 
-Mark the one mix-up so it is easy to scan. Use **ovavo** of these four starters (bold, then a colon), then **use X for Y** and one peer link. Do not invent other labels (`Trap:`, *Near miss:*, “Do not confuse…”, “Not to be confused with…”). The body after the starter still teaches the split. Do not follow the label with a filename alone.
+Mark the one mix-up so it is easy to scan. Use **one** of these four starters (bold, then a colon), then **use X for Y** and one peer link. Do not invent other labels (`Trap:`, *Near miss:*, “Do not confuse…”, “Not to be confused with…”). The body after the starter still teaches the split. Do not follow the label with a filename alone.
 
 | Starter | When |
 |---------|------|
@@ -200,7 +200,7 @@ Do not open a **Beginner** section, or a later-stage H3 that teaches a **new Eng
 
 **Grow one job at a time.** A Beginner stage opens with the **smallest form that does this page’s English job**. For clause pages that is a working sentence. For [phonology.md](../grammar/phonology.md) that is letters and cited word edges. For [word-endings.md](../grammar/word-endings.md) Beginner that is prefix-less **citation** (root + ending), not a sentence.
 
-Each later H3 adds **ovavo** job (or one letter) and a worked example.
+Each later H3 adds **one** job (or one letter) and a worked example.
 
 Do **not** open Beginner with:
 
@@ -214,7 +214,7 @@ Do **not** open Beginner with:
 
 **Same example, two English jobs:** if one Agalan string is both a full sentence and a noun phrase (or two readings), say that in the same block. Do not silently reuse the string under a new gloss.
 
-**Inventory tables after one worked row.** A closed-form table with more than a few rows (subordinators, speech-act family, full PoS) follows **ovavo** English job + example. Extra rows are “you can also say,” not equal first teaching.
+**Inventory tables after one worked row.** A closed-form table with more than a few rows (subordinators, speech-act family, full PoS) follows **one** English job + example. Extra rows are “you can also say,” not equal first teaching.
 
 **Drills as a check.** After drafting Beginner, walk the [translation practice](translation-exercises.md): every taught H3 should appear in a drill, or get cut / demoted. Setup that only exists so a later drill parses (`/h/` + `/b/` before **`barl`**) stays as the **minimum** needed for that drill.
 
@@ -231,7 +231,7 @@ Do **not** rerun [Beginner stage shape](#beginner-stage-shape) on later stages. 
 
 | Kind | When | Shape |
 |------|------|--------|
-| **New English job** | A construction they could not say after Beginner (soft speech acts, adjective before the noun, nested **`barl`**) | Same lead order as Beginner: English job → Agalan shape → consequence, then **ovavo** worked example, then the table or [Compare with](#compare-with). Cue last, not as the definition. Per-cell cues are optional. |
+| **New English job** | A construction they could not say after Beginner (soft speech acts, adjective before the noun, nested **`barl`**) | Same lead order as Beginner: English job → Agalan shape → consequence, then **one** worked example, then the table or [Compare with](#compare-with). Cue last, not as the definition. Per-cell cues are optional. |
 | **Finish the series** | The rest of a map they already use (full join single-item/standalone, remaining linkers, period/speech rhythm) | One short pointer (“Beginner already used *therefore*”) plus the inventory table. Do not unpack every row as its own H3. |
 | **Rare / stylistic Advanced** | Edge, meter, singing, uncommon variants | Inventory plus one example or one preference sentence. Skip per-cell cues. |
 
@@ -278,7 +278,7 @@ A cue is a **bridge**: one reason the visible token (letter, vowel, emoji) maps 
 | **Bridge** | Hide the emoji, the *literal*, and the letter being punned. What remains still says *why* the token maps to this row. | 🧱 *brick* — leftover is the picture’s name |
 | **Not a caption** | Cue ≠ Unicode/CLDR name, ≠ **Agalan** spelled in English, ≠ `from *smile*` with no why | *doorway*, *zebra*, *timer* alone |
 | **Not the answer** | Cue is not a synonym of **English** / **Use** | *because* restated as *cause* / *foundation* as a second gloss cell |
-| **One hop** | Token → **ovavo** reason → the row | `brick → foundation → because` as three English labels |
+| **One hop** | Token → **one** reason → the row | `brick → foundation → because` as three English labels |
 | **Short** | One clause after the token | A second slogan system |
 
 Scene shape: `{emoji} *{literal}*: {why that evokes this row}` when there is no **Same root as** column. The *literal* is the lexicon **from**; the clause after the colon is the cue proper. When **Same root as** already names the citation and the *literal*, **Cue** is `{emoji}: {why}` — do not repeat *brick* in **Cue**.
@@ -348,8 +348,8 @@ When an example needs a **person**, use these nativized names (published root + 
 | Agalan | English | Root |
 |--------|---------|------|
 | `zazawan` | *Azawan* | `azawa` *grace* |
-| `zalahen` | *Ululon* | `alahe` *courage* |
-| `zahaben` | *Uhubun* | `ahabe` *beauty* |
+| `zalahen` | *Alahen* | `alahe` *courage* |
+| `zahaben` | *Ahaben* | `ahabe` *beauty* |
 
 **`ema` / `eha`** only when that page is teaching those specials, the point is the **discourse role** (name unavailable, address set, clusivity), or a closed construction is keyed to speaker/listener (performance **`zeman`**, viewpoint *my left* when the anchor is the role). Inclusive *we* stays **`oha`**; nonspecific *someone* stays **`anu`**. Named Mine is overlay **`zemun`**, not the speaker pronoun. Foreign `PoS<…>n` names only when teaching loans or spans. Checkpoints: [translation-exercises.md](translation-exercises.md#principles). Morph / resume: [glosses.md](glosses.md#house-cast).
 

@@ -1,7 +1,7 @@
 # Predication (classification and identity)
 <a id="predication"></a>
 
-English *is* does two jobs that look alike. You can say someone **is a kind or role** (*Azawan is a dog*): they belong in that category. You can also say two names pick out **the same one** (*Ululon is Azawan*): one person under two labels, not a category. Agalan uses a different word pattern for each.
+English *is* does two jobs that look alike. You can say someone **is a kind or role** (*Azawan is a dog*): they belong in that category. You can also say two names pick out **the same one** (*Alahen is Azawan*): one person under two labels, not a category. Agalan uses a different word pattern for each.
 
 ## Beginner {#beginner}
 
@@ -72,15 +72,15 @@ An object (`/d/`) needs a verb, so a noun plus a `/d/` word with no verb is not 
 <a id="identity"></a>
 <a id="same"></a>
 
-When two names pick out **the same person or thing** (*Ululon is Azawan*), you are not putting Ululon in a kind. You are saying the two labels match: they are one individual.
+When two names pick out **the same person or thing** (*Alahen is Azawan*), you are not putting Alahen in a kind. You are saying the two labels match: they are one individual.
 
 Write a special adjective `gugol` after the first name, then an extra noun (`/b/`) for the other label. Keep `gugol` and that `/b/` word **next to each other**. That pair is **identity**. The adjective’s English name is **`SAME`**; its root is **`ugo`**. (cue: 🪙 *coin*: two faces, one substance)
 
 > `zalahen gugol bazawan.`
 >
-> z-Ululon | [g-SAME | b-Azawan]
+> z-Alahen | [g-SAME | b-Azawan]
 >
-> "Ululon is (the same person as) Azawan."
+> "Alahen is (the same person as) Azawan."
 
 > `zagadul gugol bazawan.`
 >
@@ -101,8 +101,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan |
 |---------|--------|
 | *Azawan* | `azawan` |
-| *Ululon* | `alahen` |
-| *Uhubun* | `ahaben` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
 | *guard* | `agadul` |
 | *police* | `abazal` |
 | *person* | `ebezal` |
@@ -133,28 +133,28 @@ z-Azawan | g-guard
 z-page | g-blue
 :::
 
-**3.** *Uhubun is Japanese.*
+**3.** *Ahaben is Japanese.*
 
 ::: details Show answer
 `zahaben gahebam.`
 
-z-Uhubun | g-japanese
+z-Ahaben | g-japanese
 :::
 
-**4.** *Ululon is challenging.*
+**4.** *Alahen is challenging.*
 
 ::: details Show answer
 `zalahen gamadam.`
 
-z-Ululon | g-challenge
+z-Alahen | g-challenge
 :::
 
-**5.** *Ululon is a police officer.*
+**5.** *Alahen is a police officer.*
 
 ::: details Show answer
 `zalahen gabazal.`
 
-z-Ululon | g-police
+z-Alahen | g-police
 :::
 
 **6.** *The guard is Azawan.*
@@ -165,20 +165,20 @@ z-Ululon | g-police
 z-guard | [g-SAME | b-Azawan]
 :::
 
-**7.** *The police officer is Uhubun.*
+**7.** *The police officer is Ahaben.*
 
 ::: details Show answer
 `zabazal gugol bahaben.`
 
-z-police | [g-SAME | b-Uhubun]
+z-police | [g-SAME | b-Ahaben]
 :::
 
-**8.** *Ululon is Azawan.*
+**8.** *Alahen is Azawan.*
 
 ::: details Show answer
 `zalahen gugol bazawan.`
 
-z-Ululon | [g-SAME | b-Azawan]
+z-Alahen | [g-SAME | b-Azawan]
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
@@ -214,9 +214,9 @@ z-page | g-red
 
 ::: details Show answer
 
-z-guard | [g-SAME | b-Ululon]
+z-guard | [g-SAME | b-Alahen]
 
-*The guard is Ululon.*
+*The guard is Alahen.*
 :::
 
 **5.** `zabazal gugol bazawan.`
@@ -241,18 +241,18 @@ z-guard | v-run
 
 ::: details Show answer
 
-y-question | z-Ululon | [g-SAME | b-Uhubun]
+y-question | z-Alahen | [g-SAME | b-Ahaben]
 
-*Is Ululon Uhubun?*
+*Is Alahen Ahaben?*
 :::
 
 **8.** `zahaben gugol bazawan.`
 
 ::: details Show answer
 
-z-Uhubun | [g-SAME | b-Azawan]
+z-Ahaben | [g-SAME | b-Azawan]
 
-*Uhubun is Azawan.*
+*Ahaben is Azawan.*
 :::
 
 ## Intermediate {#intermediate}
@@ -289,9 +289,9 @@ For *unlike* / *different from*, use the [similative](relations.md#similative) *
 
 > `zazawan gemum balahen gul.`
 >
-> z-Azawan | [[g-like | b-Ululon] | g-not]
+> z-Azawan | [[g-like | b-Alahen] | g-not]
 >
-> "Azawan is different from Ululon."
+> "Azawan is different from Alahen."
 
 ### **SAME** endings
 
@@ -304,22 +304,22 @@ Beginner already used closed **`gugol`** (*is the same as*). The other endings o
 
 | Agalan | English |
 |---------|---------|
-| `zalahen gugol bazawan` | *Ululon is (the same as) Azawan* |
-| `zalahen gugom bazawan` | *Ululon is basically Azawan* |
-| `zalahen gugol bazawan gul` | *Ululon is not (identical to) Azawan* |
+| `zalahen gugol bazawan` | *Alahen is (the same as) Azawan* |
+| `zalahen gugom bazawan` | *Alahen is basically Azawan* |
+| `zalahen gugol bazawan gul` | *Alahen is not (identical to) Azawan* |
 | `zebezal gugol bazawan` | inside a noun phrase: *the person who is Azawan* |
 
 **Compare with:** ordinary *coin* as a noun is `zugol`. Identity is **`gugol`** / **`gugom`** plus a following `/b/` label, kept next to each other.
 
 ### Label scope {#label-scope}
 
-English *Ululon is angry* can mean one outburst or the kind of person Ululon is. The same word does both jobs, and a single act easily turns into a claim about someone's nature. To say how far a label reaches, write the root, then mid-word **`th`**, then a scope vowel, then the ending. The vowel says what the label covers: this one occasion, a pattern, one relationship, or only a name. The word keeps its usual slot, so a label on `/ɡ/` is still *is ADJ*, and a verb is still the verb.
+English *Alahen is angry* can mean one outburst or the kind of person Alahen is. The same word does both jobs, and a single act easily turns into a claim about someone's nature. To say how far a label reaches, write the root, then mid-word **`th`**, then a scope vowel, then the ending. The vowel says what the label covers: this one occasion, a pattern, one relationship, or only a name. The word keeps its usual slot, so a label on `/ɡ/` is still *is ADJ*, and a verb is still the verb.
 
 > `zalahen ganegethal.`
 >
-> z-Ululon | g-angry-th-once
+> z-Alahen | g-angry-th-once
 >
-> "Ululon is angry this time."
+> "Alahen is angry this time."
 
 A label with no scope vowel says nothing about how far it reaches. Use one when that reach matters, the way you would add *this time* or *tends to* in English.
 
@@ -327,7 +327,7 @@ A label with no scope vowel says nothing about how far it reaches. Use one when 
 |--------|-----|---------|-----|
 | **`tha`** | this one occasion only | *angry this time*, *lied (this once)* | **a** ≈ add (one instance added) |
 | **`the`** | a pattern: a repeated tendency, not a fixed nature | *tends to be angry*, *often lies* | **e** ≈ order (a sequence of times) |
-| **`tho`** | true in one relationship: relative to the hosted `/b/` right after it, or to an unstated party | *a stranger to Azawan*, *lying, as far as Ululon is concerned* | **o** ≈ one (that extra one) |
+| **`tho`** | true in one relationship: relative to the hosted `/b/` right after it, or to an unstated party | *a stranger to Azawan*, *lying, as far as Alahen is concerned* | **o** ≈ one (that extra one) |
 | **`thu`** | a name only: a tag for what happens, not an explanation of it | *what gets called anxiety*, *so-called lazy* | **u** ≈ undo (undo the implied cause) |
 
 The seam goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`. The six [interest](interests.md) roots use this spot for their own stances instead.
@@ -356,15 +356,15 @@ Put the party in `/b/` right after the word. On `/ɡ/`, `/h/`, and `/v/`, that `
 
 > `zazawan gelehothom balahen.`
 >
-> z-Azawan | [g-strangeness-th-relative | b-Ululon]
+> z-Azawan | [g-strangeness-th-relative | b-Alahen]
 >
-> "Azawan is a stranger to Ululon."
+> "Azawan is a stranger to Alahen."
 
 > `zazawan valahathol balahen.`
 >
-> z-Azawan | [v-lie-th-relative | b-Ululon]
+> z-Azawan | [v-lie-th-relative | b-Alahen]
 >
-> "To Ululon, what Azawan does counts as lying."
+> "To Alahen, what Azawan does counts as lying."
 
 With no `/b/`, the party is unstated: *a stranger (to someone)*.
 
@@ -372,9 +372,9 @@ With no `/b/`, the party is unstated: *a stranger (to someone)*.
 
 > `zalahen ganagothul.`
 >
-> z-Ululon | g-anxious-th-name-only
+> z-Alahen | g-anxious-th-name-only
 >
-> "Ululon is what gets called anxious."
+> "Alahen is what gets called anxious."
 
 **Compare with:** **-n** makes a proper name, and a [paraphrase span](spans.md) quotes someone's wording. **`thu`** keeps the ordinary word and marks it as a label that explains nothing.
 
@@ -392,8 +392,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agalan |
 |---------|--------|
 | *Azawan* | `azawan` |
-| *Ululon* | `alahen` |
-| *Uhubun* | `ahaben` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
 | *guard* | `agadul` |
 | *craft* | `agugal` |
 | *person* | `ebezal` |
@@ -417,12 +417,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Azawan | [g-guard | g-not]
 :::
 
-**2.** *Ululon is the craft type.*
+**2.** *Alahen is the craft type.*
 
 ::: details Show answer
 `zalahen gagugal hual.`
 
-[z-Ululon | g-craft] | h-always
+[z-Alahen | g-craft] | h-always
 :::
 
 **3.** *The guard is Azawan.*
@@ -433,28 +433,28 @@ z-Azawan | [g-guard | g-not]
 z-guard | [g-SAME | b-Azawan]
 :::
 
-**4.** *Ululon is basically Azawan.*
+**4.** *Alahen is basically Azawan.*
 
 ::: details Show answer
 `zalahen gugom bazawan.`
 
-z-Ululon | [g-same | b-Azawan]
+z-Alahen | [g-same | b-Azawan]
 :::
 
-**5.** *The person who is Uhubun sees a palette.*
+**5.** *The person who is Ahaben sees a palette.*
 
 ::: details Show answer
 `zebezal gugol bahaben dabudol vahahal.`
 
-[z-person | [g-SAME | b-Uhubun]] | d-palette | v-see
+[z-person | [g-SAME | b-Ahaben]] | d-palette | v-see
 :::
 
-**6.** *The guard is basically Uhubun.*
+**6.** *The guard is basically Ahaben.*
 
 ::: details Show answer
 `zagadul gugom bahaben.`
 
-z-guard | [g-same | b-Uhubun]
+z-guard | [g-same | b-Ahaben]
 :::
 
 **7.** *The person who is Azawan sees a frame.*
@@ -465,12 +465,12 @@ z-guard | [g-same | b-Uhubun]
 [z-person | [g-SAME | b-Azawan]] | d-frame | v-see
 :::
 
-**8.** *The guard is not (identical to) Uhubun.*
+**8.** *The guard is not (identical to) Ahaben.*
 
 ::: details Show answer
 `zagadul gugol bahaben gul.`
 
-z-guard | [[g-SAME | b-Uhubun] | g-not]
+z-guard | [[g-SAME | b-Ahaben] | g-not]
 :::
 
 **9.** *The guard is angry this time.*
@@ -489,20 +489,20 @@ z-guard | g-angry-th-once
 z-Azawan | v-lie-th-pattern
 :::
 
-**11.** *To Ululon, what the guard does counts as lying.*
+**11.** *To Alahen, what the guard does counts as lying.*
 
 ::: details Show answer
 `zagadul valahathol balahen.`
 
-z-guard | [v-lie-th-relative | b-Ululon]
+z-guard | [v-lie-th-relative | b-Alahen]
 :::
 
-**12.** *Uhubun is what gets called anxious.*
+**12.** *Ahaben is what gets called anxious.*
 
 ::: details Show answer
 `zahaben ganagothul.`
 
-z-Uhubun | g-anxious-th-name-only
+z-Ahaben | g-anxious-th-name-only
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -511,9 +511,9 @@ z-Uhubun | g-anxious-th-name-only
 
 ::: details Show answer
 
-z-Uhubun | [g-guard | g-not]
+z-Ahaben | [g-guard | g-not]
 
-*Uhubun is not a guard.*
+*Ahaben is not a guard.*
 :::
 
 **2.** `zazawan gagugal hual.`
@@ -547,9 +547,9 @@ z-guard | [g-same | b-Azawan]
 
 ::: details Show answer
 
-z-Ululon | [[g-SAME | b-Uhubun] | g-not]
+z-Alahen | [[g-SAME | b-Ahaben] | g-not]
 
-*Ululon is not Uhubun.*
+*Alahen is not Ahaben.*
 :::
 
 **6.** `zazawan gagadul hual.`
@@ -574,27 +574,27 @@ z-frame | g-red
 
 ::: details Show answer
 
-z-Ululon | [g-craft | g-not]
+z-Alahen | [g-craft | g-not]
 
-*Ululon is not a craftsperson.*
+*Alahen is not a craftsperson.*
 :::
 
 **9.** `zahaben gelehothom bazawan.`
 
 ::: details Show answer
 
-z-Uhubun | [g-strangeness-th-relative | b-Azawan]
+z-Ahaben | [g-strangeness-th-relative | b-Azawan]
 
-*Uhubun is a stranger to Azawan.*
+*Ahaben is a stranger to Azawan.*
 :::
 
 **10.** `zalahen ganegethel.`
 
 ::: details Show answer
 
-z-Ululon | g-angry-th-pattern
+z-Alahen | g-angry-th-pattern
 
-*Ululon tends to be angry.*
+*Alahen tends to be angry.*
 :::
 
 **11.** `zazawan valahathal.`

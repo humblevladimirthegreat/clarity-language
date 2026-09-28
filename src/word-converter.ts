@@ -1,6 +1,9 @@
 import { lookupPronunciation } from "./cmu-dict.ts";
 import { echo } from "./echo-metric.ts";
 import { PHONEME_MAP } from "./pronunciation-map.ts";
+import { CLARITY_CONSONANTS, CLARITY_VOWELS, isClarityRootShape } from "./root-shape.ts";
+
+export { CLARITY_CONSONANTS, CLARITY_VOWELS, isClarityRootShape };
 
 const VOWEL_LETTERS = new Set(["a", "e", "i", "o", "u", "y"]);
 
@@ -50,27 +53,6 @@ const DIGIT_TO_LETTER: Record<string, string> = {
 };
 
 const MAX_ROOT_LENGTH = 5;
-
-/** Agalan root vowels (phonology inventory). */
-export const CLARITY_VOWELS = ["a", "e", "o", "u"] as const;
-
-/**
- * Agalan root consonants. The glide is `y`. Mid-word `x` is never a root letter.
- */
-export const CLARITY_CONSONANTS = [
-  "b",
-  "d",
-  "g",
-  "v",
-  "z",
-  "m",
-  "n",
-  "h",
-  "w",
-  "y",
-  "l",
-  "r",
-] as const;
 
 /** Consonants the pronunciation generator may write. */
 const GENERATED_CONSONANTS = ["b", "d", "g", "h", "y", "l", "m", "n", "r", "v", "w", "z"] as const;
@@ -202,26 +184,6 @@ export function* clarityRootCandidates(input: string): Generator<string> {
     seen.add(root);
     yield root;
   }
-}
-
-/**
- * Whether `root` is a legal ordinary content root: V(CV)+ using the phonology letter inventory.
- */
-export function isClarityRootShape(root: string): boolean {
-  if (root.length === 0 || root.length % 2 === 0) {
-    return false;
-  }
-  for (let i = 0; i < root.length; i++) {
-    const ch = root[i]!;
-    if (i % 2 === 0) {
-      if (!(CLARITY_VOWELS as readonly string[]).includes(ch)) {
-        return false;
-      }
-    } else if (!(CLARITY_CONSONANTS as readonly string[]).includes(ch)) {
-      return false;
-    }
-  }
-  return true;
 }
 
 /** Syllable count for a V(CV)+ root (one syllable per vowel). */

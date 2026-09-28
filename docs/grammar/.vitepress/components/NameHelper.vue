@@ -93,7 +93,7 @@ onMounted(async () => {
       </div>
       <p class="note">
         Or <a :href="lexiconHref">pick your own in the lexicon</a> (<strong>Use as my name</strong> on a row).
-        Until you choose, examples marked as yours use <code>ugobon</code>, the word for whoever is speaking.
+        Until you choose, examples marked as yours use <code>eman</code>, the word for whoever is speaking.
       </p>
     </template>
   </div>

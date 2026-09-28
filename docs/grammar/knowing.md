@@ -1,6 +1,6 @@
 # Knowing {#knowing}
 
-English *I think* often smuggles a **guess** (*I think Ululon is leaving Uhubun* = maybe that is so) without saying whether you are checking. **MAY** marks the clause as **potential**: it *could be* so. Keep the ordinary verb and add a small `/th/` word.
+English *I think* often smuggles a **guess** (*I think Alahen is leaving Ahaben* = maybe that is so) without saying whether you are checking. **MAY** marks the clause as **potential**: it *could be* so. Keep the ordinary verb and add a small `/th/` word.
 
 ## Beginner {#beginner}
 
@@ -12,9 +12,9 @@ The leaving or the blow is still the event named in the *could be*. Without the 
 
 > `zalahen thovom vadebal dahaben.`
 >
-> z-Ululon | th-MAY | v-departure | d-Uhubun
+> z-Alahen | th-MAY | v-departure | d-Ahaben
 >
-> "Ululon may be leaving Uhubun." — could be (default)
+> "Alahen may be leaving Ahaben." — could be (default)
 
 **Compare with:** `zazawan vevegal.` is *Azawan thinks* (an action of thinking). **`thovom`** is *the scene may be so*. A bare `zalahen vadebal dahaben.` reports the leaving.
 
@@ -33,23 +33,23 @@ When you are not sure, use **`thovom`**. That is not wiser than finding out (**-
 
 > `zalahen thovol vabahel dazawan.`
 >
-> z-Ululon | th-MAY-find-out | v-punch | d-Azawan
+> z-Alahen | th-MAY-find-out | v-punch | d-Azawan
 >
-> "Ululon may be punching Azawan — I'll find out."
+> "Alahen may be punching Azawan — I'll find out."
 
 **`thovol`** can also sit on a yes/no ask when you are **finding out**:
 
 > `yol zazawan thovol vabahel dalahen.`
 >
-> y-question | z-Azawan | th-MAY-find-out | v-punch | d-Ululon
+> y-question | z-Azawan | th-MAY-find-out | v-punch | d-Alahen
 >
-> "Might Azawan be punching Ululon? — let's find out."
+> "Might Azawan be punching Alahen? — let's find out."
 
 > `zahaben thovor vagahul.`
 >
-> z-Uhubun | th-MAY-who-knows | v-cry
+> z-Ahaben | th-MAY-who-knows | v-cry
 >
-> "Uhubun may be crying — who knows."
+> "Ahaben may be crying — who knows."
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -62,8 +62,8 @@ Short drills for Beginner. Try each item before opening **Show answer**. Write *
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *see* | `vahahal` | `ahahal` *eye* |
 | *tell* | `vezebel` | `ezebel` *speech* |
 | *departure* | `vadebal` | `adebal` *departure* |
@@ -78,36 +78,36 @@ Short drills for Beginner. Try each item before opening **Show answer**. Write *
 
 #### English → Agalan {#beginner-english-to-agalan}
 
-**1.** *Ululon may be seeing Uhubun.* (could be; default)
+**1.** *Alahen may be seeing Ahaben.* (could be; default)
 
 ::: details Show answer
 `zalahen thovom vahahal dahaben.`
 
-z-Ululon | th-MAY | v-see | d-Uhubun
+z-Alahen | th-MAY | v-see | d-Ahaben
 :::
 
-**2.** *Azawan may be telling Ululon.*
+**2.** *Azawan may be telling Alahen.*
 
 ::: details Show answer
 `zazawan thovom vezebel balahen.`
 
-z-Azawan | th-MAY | v-tell | b-Ululon
+z-Azawan | th-MAY | v-tell | b-Alahen
 :::
 
-**3.** *Uhubun may be leaving Azawan.*
+**3.** *Ahaben may be leaving Azawan.*
 
 ::: details Show answer
 `zahaben thovom vadebal dazawan.`
 
-z-Uhubun | th-MAY | v-departure | d-Azawan
+z-Ahaben | th-MAY | v-departure | d-Azawan
 :::
 
-**4.** *Ululon may be punching Azawan — I'll find out.*
+**4.** *Alahen may be punching Azawan — I'll find out.*
 
 ::: details Show answer
 `zalahen thovol vabahel dazawan.`
 
-z-Ululon | th-MAY-find-out | v-punch | d-Azawan
+z-Alahen | th-MAY-find-out | v-punch | d-Azawan
 :::
 
 **5.** *Azawan may be crying — who knows.*
@@ -126,20 +126,20 @@ z-Azawan | th-MAY-who-knows | v-cry
 z-Azawan | v-think
 :::
 
-**7.** *Ululon may be fighting.*
+**7.** *Alahen may be fighting.*
 
 ::: details Show answer
 `zalahen thovom vavadal.`
 
-z-Ululon | th-MAY | v-fight
+z-Alahen | th-MAY | v-fight
 :::
 
-**8.** *Could Uhubun be screaming?* (yes/no; could be; default)
+**8.** *Could Ahaben be screaming?* (yes/no; could be; default)
 
 ::: details Show answer
 `yol zahaben thovom vezogel.`
 
-y-question | z-Uhubun | th-MAY | v-scream
+y-question | z-Ahaben | th-MAY | v-scream
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
@@ -148,35 +148,35 @@ y-question | z-Uhubun | th-MAY | v-scream
 
 ::: details Show answer
 
-z-Ululon | th-MAY | v-tell | b-Uhubun
+z-Alahen | th-MAY | v-tell | b-Ahaben
 
-*Ululon may be telling Uhubun.*
+*Alahen may be telling Ahaben.*
 :::
 
 **2.** `zazawan thovom vahahal dalahen.`
 
 ::: details Show answer
 
-z-Azawan | th-MAY | v-see | d-Ululon
+z-Azawan | th-MAY | v-see | d-Alahen
 
-*Azawan may be seeing Ululon.*
+*Azawan may be seeing Alahen.*
 :::
 
 **3.** `zahaben thovol vadebal dazawan.`
 
 ::: details Show answer
 
-z-Uhubun | th-MAY-find-out | v-departure | d-Azawan
+z-Ahaben | th-MAY-find-out | v-departure | d-Azawan
 
-*Uhubun may be leaving Azawan — I'll find out.*
+*Ahaben may be leaving Azawan — I'll find out.*
 :::
 
 **4.** `zalahen vevegal.`
 
 ::: details Show answer
 
-z-Ululon | v-think
-*Ululon thinks.* (an event of thinking, not MAY)
+z-Alahen | v-think
+*Alahen thinks.* (an event of thinking, not MAY)
 :::
 
 **5.** `zazawan thovor vezogel.`
@@ -192,26 +192,26 @@ z-Azawan | th-MAY-who-knows | v-scream
 
 ::: details Show answer
 
-y-question | z-Ululon | th-MAY | v-punch | d-Azawan
-*Could Ululon be punching Azawan?* (could be; default)
+y-question | z-Alahen | th-MAY | v-punch | d-Azawan
+*Could Alahen be punching Azawan?* (could be; default)
 :::
 
 **7.** `zalahen thovol vavadal.`
 
 ::: details Show answer
 
-z-Ululon | th-MAY-find-out | v-fight
+z-Alahen | th-MAY-find-out | v-fight
 
-*Ululon may be fighting — I'll find out.*
+*Alahen may be fighting — I'll find out.*
 :::
 
 **8.** `zahaben thovom vagahul.`
 
 ::: details Show answer
 
-z-Uhubun | th-MAY | v-cry
+z-Ahaben | th-MAY | v-cry
 
-*Uhubun may be crying.*
+*Ahaben may be crying.*
 :::
 
 ## Intermediate {#intermediate}
@@ -252,15 +252,15 @@ Pick one evidential **root** for how you know.
 
 > `zalahen thugum vezebal.`
 >
-> z-Ululon | th-RECORDED | v-sleep
+> z-Alahen | th-RECORDED | v-sleep
 >
-> "Ululon sleeps — on record."
+> "Alahen sleeps — on record."
 
 > `zalahen theram varadal.`
 >
-> z-Ululon | th-TOLD | v-write
+> z-Alahen | th-TOLD | v-write
 >
-> "Ululon writes — so they say."
+> "Alahen writes — so they say."
 
 **Compare with:** seeing as an action uses ordinary **`vahahal`**. **`thodem`** is *how you know* (the walk is in view now), not the verb *see*. Fear or hope uses [emotion compose](interests.md#emotion-compose). **`thahom`** is a way of *knowing*, not that stack. **`theram`** is someone said so about the claim; hearing a door as an action is ordinary `/v/`.
 
@@ -283,9 +283,9 @@ The ending on a channel says **how strong the evidence is**: how much the claim 
 
 > `zalahen therar vadebal.`
 >
-> z-Ululon | th-TOLD.weak | v-departure
+> z-Alahen | th-TOLD.weak | v-departure
 >
-> "Rumor has it Ululon left."
+> "Rumor has it Alahen left."
 
 > `zazawan thevel vowogal.`
 >
@@ -305,9 +305,9 @@ Agalan has no *will* word for the world. To say something **will** happen, use a
 
 > `zalahen thahor bral vadebal.`
 >
-> z-Ululon | [th-FELT.weak | b-later] | v-departure
+> z-Alahen | [th-FELT.weak | b-later] | v-departure
 >
-> "I have a faint hunch Ululon will leave."
+> "I have a faint hunch Alahen will leave."
 
 > `zazawan thugul bral vezebel.`
 >
@@ -342,21 +342,21 @@ English *has walked* and *used to walk* often smuggle **when** the event sits. A
 
 > `zalahen thomom vadebal.`
 >
-> z-Ululon | th-RESIDUE | v-departure
+> z-Alahen | th-RESIDUE | v-departure
 >
-> "Ululon’s leaving still counts." — the outcome remains on the tally
+> "Alahen’s leaving still counts." — the outcome remains on the tally
 
 > `zalahen thevem thomom vadebal.`
 >
-> z-Ululon | th-WITNESSED | th-RESIDUE | v-departure
+> z-Alahen | th-WITNESSED | th-RESIDUE | v-departure
 >
-> "Ululon’s leaving still counts — from memory."
+> "Alahen’s leaving still counts — from memory."
 
 > `zalahen thodem thomom vadebal.`
 >
-> z-Ululon | th-LIVE | th-RESIDUE | v-departure
+> z-Alahen | th-LIVE | th-RESIDUE | v-departure
 >
-> "Ululon’s leaving still counts — live / from the scene." (the leftover is in view)
+> "Alahen’s leaving still counts — live / from the scene." (the leftover is in view)
 
 **Compare with:** [*after*](dependents.md#dependent-clauses) (`helam bowel`) orders two events. **`thomom`** does not say the leaving was earlier; it says the **outcome still counts**. [LIVE](#live-vs-memory) is how you know, not leftover balance. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
 
@@ -433,9 +433,9 @@ The ending says how settled the current stage is, on the same strong-to-light sc
 
 > `zalahen hohol vadebal.`
 >
-> z-Ululon | h-already.lasting | v-departure
+> z-Alahen | h-already.lasting | v-departure
 >
-> "Ululon has already left, for good."
+> "Alahen has already left, for good."
 
 > `zazawan hewer vowogal.`
 >
@@ -465,7 +465,7 @@ English sometimes frames the whole clause as play: *as if*, *for the sake of arg
 >
 > "As if Azawan walks." — notional framing held lightly (default)
 
-**For *could be*, use:** [MAY](#may). *As if* play is this section. *Walks like a duck* keeps the walk on the real tally ([simile](relations.md#similative) `hemum`); only the manner matches the model. *Tells on behalf of Ululon* stays on the real tally ([proxy](relations.md#proxy) `hadum`); Azawan is still the teller.
+**For *could be*, use:** [MAY](#may). *As if* play is this section. *Walks like a duck* keeps the walk on the real tally ([simile](relations.md#similative) `hemum`); only the manner matches the model. *Tells on behalf of Alahen* stays on the real tally ([proxy](relations.md#proxy) `hadum`); Azawan is still the teller.
 
 **Related form:** a percent likelihood on the claim is the [stance number](numbers.md#number-as-stance-by-marker) **`th+N`**.
 
@@ -484,9 +484,9 @@ When you are not sure, use **`thavem`**.
 
 > `zahaben thavel vezehel.`
 >
-> z-Uhubun | th-NOTIONAL-rehearse | v-sing
+> z-Ahaben | th-NOTIONAL-rehearse | v-sing
 >
-> "Uhubun practices singing." — rehearsing the imagined scene
+> "Ahaben practices singing." — rehearsing the imagined scene
 
 > `zazawan thaver varadal.`
 >
@@ -506,8 +506,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Wri
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *tell* | `vezebel` | `ezebel` *speech* |
 | *see* | `vahahal` | `ahahal` *eye* |
 | *write* | `varadal` | |
@@ -536,28 +536,28 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Wri
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
-**1.** *Azawan tells Uhubun — live / from the scene.* (present observation)
+**1.** *Azawan tells Ahaben — live / from the scene.* (present observation)
 
 ::: details Show answer
 `zazawan thodem vezebel bahaben.`
 
-z-Azawan | th-LIVE | v-tell | b-Uhubun
+z-Azawan | th-LIVE | v-tell | b-Ahaben
 :::
 
-**2.** *Ululon sees a camera — from memory* (past observation).
+**2.** *Alahen sees a camera — from memory* (past observation).
 
 ::: details Show answer
 `zalahen thevem vahahal dagahol.`
 
-z-Ululon | th-WITNESSED | v-see | d-camera
+z-Alahen | th-WITNESSED | v-see | d-camera
 :::
 
-**3.** *Uhubun tells Azawan — on record.*
+**3.** *Ahaben tells Azawan — on record.*
 
 ::: details Show answer
 `zahaben thugum vezebel bazawan.`
 
-z-Uhubun | th-RECORDED | v-tell | b-Azawan
+z-Ahaben | th-RECORDED | v-tell | b-Azawan
 :::
 
 **4.** *Azawan sees a newspaper — from the pattern of cases.*
@@ -568,76 +568,76 @@ z-Uhubun | th-RECORDED | v-tell | b-Azawan
 z-Azawan | th-PATTERN | v-see | d-newspaper
 :::
 
-**5.** *Ululon mutes — so they say.* (hearsay)
+**5.** *Alahen mutes — so they say.* (hearsay)
 
 ::: details Show answer
 `zalahen theram vamuyul.`
 
-z-Ululon | th-TOLD | v-mute
+z-Alahen | th-TOLD | v-mute
 :::
 
-**6.** *Ululon punches Azawan — inferred from clues.*
+**6.** *Alahen punches Azawan — inferred from clues.*
 
 ::: details Show answer
 `zalahen thanem vabahel dazawan.`
 
-z-Ululon | th-INFERRED | v-punch | d-Azawan
+z-Alahen | th-INFERRED | v-punch | d-Azawan
 :::
 
-**7.** *As if Azawan tells Uhubun.* (soft pretensive frame)
+**7.** *As if Azawan tells Ahaben.* (soft pretensive frame)
 
 ::: details Show answer
 `zazawan thavem vezebel bahaben.`
 
-z-Azawan | th-NOTIONAL | v-tell | b-Uhubun
+z-Azawan | th-NOTIONAL | v-tell | b-Ahaben
 :::
 
-**8.** *Imagine Ululon screaming.* (no special purpose)
+**8.** *Imagine Alahen screaming.* (no special purpose)
 
 ::: details Show answer
 `zalahen thavem vezogel.`
 
-z-Ululon | th-NOTIONAL | v-scream
+z-Alahen | th-NOTIONAL | v-scream
 :::
 
-**9.** *Azawan tells Uhubun — live; the telling still counts.*
+**9.** *Azawan tells Ahaben — live; the telling still counts.*
 
 ::: details Show answer
 `zazawan thodem thomom vezebel bahaben.`
 
-z-Azawan | th-LIVE | th-RESIDUE | v-tell | b-Uhubun
+z-Azawan | th-LIVE | th-RESIDUE | v-tell | b-Ahaben
 :::
 
-**10.** *Ululon always tells — a former pattern, not today's; seen live.*
+**10.** *Alahen always tells — a former pattern, not today's; seen live.*
 
 ::: details Show answer
 `zalahen hual vezebel thenem thodem.`
 
-z-Ululon | h-always | v-tell | th-FORMER | th-LIVE
+z-Alahen | h-always | v-tell | th-FORMER | th-LIVE
 :::
 
-**11.** *Uhubun still screams — seen live.*
+**11.** *Ahaben still screams — seen live.*
 
 ::: details Show answer
 `zahaben thodem hagam vezogel.`
 
-z-Uhubun | th-LIVE | h-still | v-scream
+z-Ahaben | th-LIVE | h-still | v-scream
 :::
 
-**12.** *Ululon screams — rumor has it.*
+**12.** *Alahen screams — rumor has it.*
 
 ::: details Show answer
 `zalahen therar vezogel.`
 
-z-Ululon | th-TOLD.weak | v-scream
+z-Alahen | th-TOLD.weak | v-scream
 :::
 
-**13.** *Going by a well-established pattern, Azawan will tell Uhubun.*
+**13.** *Going by a well-established pattern, Azawan will tell Ahaben.*
 
 ::: details Show answer
 `zazawan thobal bral vezebel bahaben.`
 
-z-Azawan | [th-PATTERN.strong | b-later] | v-tell | b-Uhubun
+z-Azawan | [th-PATTERN.strong | b-later] | v-tell | b-Ahaben
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -646,80 +646,80 @@ z-Azawan | [th-PATTERN.strong | b-later] | v-tell | b-Uhubun
 
 ::: details Show answer
 
-z-Azawan | th-FELT | v-tell | b-Uhubun
+z-Azawan | th-FELT | v-tell | b-Ahaben
 
-*Azawan tells Uhubun — felt / gut-known.*
+*Azawan tells Ahaben — felt / gut-known.*
 :::
 
 **2.** `zalahen thozom vahahal deredel.`
 
 ::: details Show answer
 
-z-Ululon | th-STORY | v-see | d-radio
+z-Alahen | th-STORY | v-see | d-radio
 
-*Ululon sees a radio — per the tale.*
+*Alahen sees a radio — per the tale.*
 :::
 
 **3.** `zahaben thanem vamuyul.`
 
 ::: details Show answer
 
-z-Uhubun | th-INFERRED | v-mute
+z-Ahaben | th-INFERRED | v-mute
 
-*Uhubun mutes — inferred from clues.*
+*Ahaben mutes — inferred from clues.*
 :::
 
 **4.** `zahaben thavel vezehel.`
 
 ::: details Show answer
 
-z-Uhubun | th-NOTIONAL-rehearse | v-sing
+z-Ahaben | th-NOTIONAL-rehearse | v-sing
 
-*Uhubun practices singing.*
+*Ahaben practices singing.*
 :::
 
 **5.** `zalahen thugum vahahal dagahol.`
 
 ::: details Show answer
 
-z-Ululon | th-RECORDED | v-see | d-camera
+z-Alahen | th-RECORDED | v-see | d-camera
 
-*Ululon sees a camera — on record.*
+*Alahen sees a camera — on record.*
 :::
 
 **6.** `zahaben thevem vezebel.`
 
 ::: details Show answer
 
-z-Uhubun | th-WITNESSED | v-tell
+z-Ahaben | th-WITNESSED | v-tell
 
-*Uhubun tells — from memory (a past observation).*
+*Ahaben tells — from memory (a past observation).*
 :::
 
 **7.** `zalahen thodem vabahel dazawan.`
 
 ::: details Show answer
 
-z-Ululon | th-LIVE | v-punch | d-Azawan
+z-Alahen | th-LIVE | v-punch | d-Azawan
 
-*Ululon punches Azawan — live / from the scene.*
+*Alahen punches Azawan — live / from the scene.*
 :::
 
 **8.** `zahaben thovom vezogel.`
 
 ::: details Show answer
 
-z-Uhubun | th-MAY | v-scream
-*Uhubun may be screaming.* (*could be* — not how you know a world-claim)
+z-Ahaben | th-MAY | v-scream
+*Ahaben may be screaming.* (*could be* — not how you know a world-claim)
 :::
 
 **9.** `zahaben thevem thomom vezebel bazawan.`
 
 ::: details Show answer
 
-z-Uhubun | th-WITNESSED | th-RESIDUE | v-tell | b-Azawan
+z-Ahaben | th-WITNESSED | th-RESIDUE | v-tell | b-Azawan
 
-*Uhubun tells Azawan — from memory; the telling still counts.*
+*Ahaben tells Azawan — from memory; the telling still counts.*
 :::
 
 **10.** `zazawan hual vezebel thenem.`
@@ -735,18 +735,18 @@ z-Azawan | h-always | v-tell | th-FORMER
 
 ::: details Show answer
 
-z-Ululon | h-not-yet.lasting | v-departure
+z-Alahen | h-not-yet.lasting | v-departure
 
-*Ululon hasn't left yet, but will.*
+*Alahen hasn't left yet, but will.*
 :::
 
 **12.** `zahaben thugul bral vezebel.`
 
 ::: details Show answer
 
-z-Uhubun | [th-RECORDED.strong | b-later] | v-tell
+z-Ahaben | [th-RECORDED.strong | b-later] | v-tell
 
-*Uhubun is officially scheduled to speak.*
+*Ahaben is officially scheduled to speak.*
 :::
 
 ## Advanced {#advanced}
@@ -809,9 +809,9 @@ The same published roots stay ordinary content under other role letters. The clo
 
 > `zalahen thomom henum b_#22,7 vadebal.`
 >
-> z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
+> z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 >
-> "As of 22 July, Ululon’s leaving still counted."
+> "As of 22 July, Alahen’s leaving still counted."
 
 > `zazawan thodem henum b_#22,7 vowogal.`
 >
@@ -821,9 +821,9 @@ The same published roots stay ordinary content under other role letters. The clo
 
 > `zalahen thevem henum b_#22,7 thomom vadebal. xazawan thevem henur vowogal.`
 >
-> z-Ululon | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure . x-Azawan | th-WITNESSED | h-as-of.ledger | v-walk
+> z-Alahen | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure . x-Azawan | th-WITNESSED | h-as-of.ledger | v-walk
 >
-> "I remember: as of 22 July, Ululon's leaving still counted. Azawan was walking — also from memory, against the same books."
+> "I remember: as of 22 July, Alahen's leaving still counted. Azawan was walking — also from memory, against the same books."
 
 > `zazawan hual vezebel thenem henum b_#22,7.`
 >
@@ -835,9 +835,9 @@ The same published roots stay ordinary content under other role letters. The clo
 
 > `zalahen thavem henum b_#22,7 vadebal.`
 >
-> z-Ululon | th-NOTIONAL | [h-as-of.ledger | b-_22,7] | v-departure
+> z-Alahen | th-NOTIONAL | [h-as-of.ledger | b-_22,7] | v-departure
 >
-> "As if, from the 22 July books, Ululon were leaving."
+> "As if, from the 22 July books, Alahen were leaving."
 
 ### Dated channel (signed offset) {#dated-channel}
 <a id="ago"></a>
@@ -851,9 +851,9 @@ English *three hours ago* and *in three hours* count from now. Agalan counts fro
 > "I saw Azawan walk three hours ago."
 
 > `zalahen theram bagazem grarel vadebal.`
-> z-Ululon | [th-TOLD | [b-hour | g-three]] | v-departure
+> z-Alahen | [th-TOLD | [b-hour | g-three]] | v-departure
 >
-> "I hear Ululon leaves in three hours."
+> "I hear Alahen leaves in three hours."
 
 Some channels only point one way:
 
@@ -881,9 +881,9 @@ For *just* and *about to*, use the [just-short](numbers.md#just-short) amount wi
 > "It is about to rain (from the clouds)."
 
 > `zalahen thobam bagazem grurel vezebal.`
-> z-Ululon | [th-PATTERN | [b-hour | g-minus-three]] | v-sleep
+> z-Alahen | [th-PATTERN | [b-hour | g-minus-three]] | v-sleep
 >
-> "Going by the pattern, Ululon slept three hours ago."
+> "Going by the pattern, Alahen slept three hours ago."
 
 With an [as-of](relations.md#as-of) pair, the offset counts from that whose-now instead of speech-now.
 
@@ -894,9 +894,9 @@ With an [as-of](relations.md#as-of) pair, the offset counts from that whose-now 
 Agalan has no short *now* word. Say *now* with an offset of **zero**: the event sits no time away from the moment you speak. The channel stays, so *now* still says how you know it.
 
 > `zalahen thanem bagazem grazol vezebal.`
-> z-Ululon | [th-INFERRED | [b-hour | g-zero]] | v-sleep
+> z-Alahen | [th-INFERRED | [b-hour | g-zero]] | v-sleep
 >
-> "Ululon must be asleep right now."
+> "Alahen must be asleep right now."
 
 The unit sets how wide *now* is. Zero hours is *right now*; zero [days](numbers-applied.md#stock-units) is *today*.
 
@@ -953,8 +953,8 @@ Short drills for Advanced. Try each item before opening **Show answer**. Score l
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
-| *Ululon* | `alahen` | | |
-| *Uhubun* | `ahaben` | | |
+| *Alahen* | `alahen` | | |
+| *Ahaben* | `ahaben` | | |
 | *departure* | `vadebal` | | |
 | *walk* | `vowogal` | | |
 | *RESIDUE* | `thomom` | | |
@@ -988,12 +988,12 @@ Short drills for Advanced. Try each item before opening **Show answer**. Score l
 
 #### English → Agalan {#advanced-english-to-agalan}
 
-**1.** *As of 22 July, Ululon’s leaving still counted.*
+**1.** *As of 22 July, Alahen’s leaving still counted.*
 
 ::: details Show answer
 `zalahen thomom henum b_#22,7 vadebal.`
 
-z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
+z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 :::
 
 **2.** *Azawan is walking — we're there on 22 July.*
@@ -1004,28 +1004,28 @@ z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 z-Azawan | th-LIVE | [h-as-of.ledger | b-_22,7] | v-walk
 :::
 
-**3.** *As of 22 July, Ululon's leaving may still have counted.*
+**3.** *As of 22 July, Alahen's leaving may still have counted.*
 
 ::: details Show answer
 `zalahen thovom thomom henum b_#22,7 vadebal.`
 
-z-Ululon | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
+z-Alahen | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 :::
 
-**4.** *Ululon walks — and that blue is live, from the scene itself.*
+**4.** *Alahen walks — and that blue is live, from the scene itself.*
 
 ::: details Show answer
 `zalahen wodem gubuhal vowogal.`
 
-[z-Ululon | [w-LIVE | g-blue]] | v-walk
+[z-Alahen | [w-LIVE | g-blue]] | v-walk
 :::
 
-**5.** *Ululon always writes, usually.*
+**5.** *Alahen always writes, usually.*
 
 ::: details Show answer
 `zalahen hual varadal thagul.`
 
-z-Ululon | h-always | v-write | th-COMMON
+z-Alahen | h-always | v-write | th-COMMON
 :::
 
 **6.** *Azawan always sits, as far as checked.*
@@ -1052,12 +1052,12 @@ z-Azawan | h-always | v-sit | th-UNCOUNTERED
 [z-everything | g-cat] | v-sleep | th-NATURAL | th-PATTERN
 :::
 
-**9.** *Ululon never punches, under soccer rules.*
+**9.** *Alahen never punches, under soccer rules.*
 
 ::: details Show answer
 `zalahen hal vabahel thubel bazogel.`
 
-z-Ululon | h-never | v-punch | [th-RULE | b-soccer]
+z-Alahen | h-never | v-punch | [th-RULE | b-soccer]
 :::
 
 **10.** *Every claim that comes to mind, usually.*
@@ -1074,27 +1074,27 @@ z-Ululon | h-never | v-punch | [th-RULE | b-soccer]
 
 ::: details Show answer
 
-z-Ululon | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure
+z-Alahen | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure
 
-*I remember: as of 22 July, Ululon's leaving still counted.*
+*I remember: as of 22 July, Alahen's leaving still counted.*
 :::
 
 **2.** `zalahen thevem henum b_#22,7 thomom vadebal. xazawan thevem henur vowogal.`
 
 ::: details Show answer
 
-z-Ululon | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure . x-Azawan | th-WITNESSED | h-as-of.ledger | v-walk
+z-Alahen | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure . x-Azawan | th-WITNESSED | h-as-of.ledger | v-walk
 
-*I remember: as of 22 July, Ululon's leaving still counted. Azawan was walking — also from memory, against the same books.*
+*I remember: as of 22 July, Alahen's leaving still counted. Azawan was walking — also from memory, against the same books.*
 :::
 
 **3.** `zalahen thovom thomom henum b_#22,7 vadebal.`
 
 ::: details Show answer
 
-z-Ululon | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
+z-Alahen | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 
-*As of 22 July, Ululon's leaving may still have counted.*
+*As of 22 July, Alahen's leaving may still have counted.*
 :::
 
 **4.** `zazawan wovom gubuhal vowogal.`
@@ -1119,9 +1119,9 @@ z-Azawan | h-always | v-sit | th-COMMON
 
 ::: details Show answer
 
-z-Ululon | h-always | v-write | th-UNCOUNTERED
+z-Alahen | h-always | v-write | th-UNCOUNTERED
 
-*Ululon always writes, as far as checked.*
+*Alahen always writes, as far as checked.*
 :::
 
 **7.** `zual gaxavadal vavadal thezul.`

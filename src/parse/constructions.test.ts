@@ -53,20 +53,20 @@ describe("construction registry", () => {
 
   it("reports construction IDs, all registered", () => {
     const cases: [string, string][] = [
-      ["zodogor vawalal.", "resolve.content.unbound"],
-      ["yululon.", "token.yFallbackVocative"],
-      ["zazawan vawalal.", "sentence.vpCoordPart.V"],
-      ["zodogol gelem.", "reading.existence"],
-      ["zodogol om banabal.", "reading.existence"],
+      ["zodogar vowogal.", "resolve.content.unbound"],
+      ["yalahen.", "token.yFallbackVocative"],
+      ["zazawan vowogal.", "sentence.vpCoordPart.V"],
+      ["zodogal gelavam.", "reading.existence"],
+      ["zodogal om babagul.", "reading.existence"],
       ["yol.", "reading.bareQuestion"],
-      ["zazawan vawalal thodohom.", "overlay.odohom.th"],
+      ["zazawan vowogal thovom.", "overlay.ovom.th"],
       // An interest or ability word uses the interest / hostless-ability row of its host.
-      ["zazawan vawalal thonogothem.", "overlay.onogom.th"],
-      ["zazawan thegeraxel.", "overlay.egeram.th"],
+      ["zazawan vowogal thunethem.", "overlay.unem.th"],
+      ["zazawan thazexel.", "overlay.azem.th"],
       // Per-form features of families taught across sections.
-      ["zazawan zululon zal vawalal.", "join.a"],
-      ["yol zazawan vawalal.", "force.o"],
-      ["zazawan vawalal hual.", "restrictor.always"],
+      ["zazawan zalahen zal vowogal.", "join.a"],
+      ["yol zazawan vowogal.", "force.o"],
+      ["zazawan vowogal hual.", "restrictor.always"],
     ];
     for (const [input, expected] of cases) {
       const ids = parse(input, undefined, { constructions: true }).constructions ?? [];
@@ -76,6 +76,6 @@ describe("construction registry", () => {
   });
 
   it("stays off by default", () => {
-    assert.equal(parse("zazawan vawalal.").constructions, undefined);
+    assert.equal(parse("zazawan vowogal.").constructions, undefined);
   });
 });

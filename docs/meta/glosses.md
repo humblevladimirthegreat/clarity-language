@@ -67,7 +67,7 @@ A **complex citation** still gets a gloss if the morph unpacks structure the quo
 |------|--------|-----|
 | Surface | `` `agelan.` `` | Copyable Agalan; the only code span |
 | Morph | `z-dog | v-walk` | English labels; roman (no italics, no per-token backticks); spaced ` | ` between **words** |
-| Free English | `"A dog walks."` | Straight double quotes. Teaching notes stay **after** the quotes: `"Uhubun sings the Sing"` (that titled performance). |
+| Free English | `"A dog walks."` | Straight double quotes. Teaching notes stay **after** the quotes: `"Ahaben sings the Sing"` (that titled performance). |
 
 Do **not** prefix the gloss with `gloss:`.
 
@@ -113,7 +113,7 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 - Force English can say (*please*, *don’t*, *I wonder*)
 - Stance that changes the verb (*can't* vs *ought not* vs unmet interest as content)
 - Comparatives / equatives / causation / plan when they are the point of the turn
-- Mention interiors as *the word “odogo”* / *the phrase “…”* (Agalan spelling, not the English lemma) — [span interiors](#span-interiors)
+- Mention interiors as *the word “odoga”* / *the phrase “…”* (Agalan spelling, not the English lemma) — [span interiors](#span-interiors)
 - Opaque interiors as the same blob (`kimchi`, `FBI`)
 
 ### Example (same Agalan, three readings)
@@ -203,12 +203,12 @@ A dependent sits next to the word it modifies, in Agalan order. Nesting shows at
 | Noun + trailing `/ɡ/` | `[z-dog \| g-blue]` |
 | `gl-` adjective + noun | `[gl-blue \| z-dog]` |
 | `/w/` + its host | `[w-loud \| g-blue]` |
-| Host + hosted `/b/` | `[g-SAME \| b-Ululon]` |
+| Host + hosted `/b/` | `[g-SAME \| b-Alahen]` |
 | Hook + extra noun | `[in \| b-house]` |
 | Adjective on the extra noun | `[z-dog \| [g-SAME \| [b-Azawan \| g-tall]]]` |
 | Join fence (join last) | `[d-tea \| d-coffee \| d-or]` |
 | Nested fences | `[[d-tea \| d-coffee \| d-or] \| d-water \| d-and]` |
-| Shared `/ɡ/` after a join | `[z-Azawan \| z-Ululon \| z-and \| g-happy]` |
+| Shared `/ɡ/` after a join | `[z-Azawan \| z-Alahen \| z-and \| g-happy]` |
 
 A **labeled bracket** `LABEL[ … ]` marks a package. The label is uppercase English with no glyphs. When the package has a role letter, it is the prefix: `d-CITE[…]`.
 
@@ -235,7 +235,7 @@ A morph line corresponds **one-to-one** with its Agalan. From the gloss alone yo
 - **Ordinals use digits** (`gredul` → `g-2nd`, `gruedul` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.
 - **Span resumes** gloss by type: written `d[=]` → `d-←cite`, spoken `daxur` → `d-←cite.spoken`.
 - **Unknown words fail.** A content word the lexicon cannot gloss has no morph line: a root missing from the lexicon, or **-m** on a root with no abstract sense (unless a closed overlay defines that **-m** form). `lint:agalan` reports it.
-- **Quoted pass-through.** Raw payloads (mention and opaque interiors, and a resume stem with no known antecedent) go in straight double quotes: `z-MENTION["odogo"]`. A `"` inside the payload is written `""`.
+- **Quoted pass-through.** Raw payloads (mention and opaque interiors, and a resume stem with no known antecedent) go in straight double quotes: `z-MENTION["odoga"]`. A `"` inside the payload is written `""`.
 
 ### When an ending still appears in the gloss
 
@@ -302,8 +302,8 @@ Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#
 | Agalan | Morph gloss | Free English | Resume |
 |--------|-------------|--------------|--------|
 | `zazawan` | `z-Azawan` | *Azawan* | `zazar` → `z-←Azawan` |
-| `zalahen` | `z-Ululon` | *Ululon* | `zalar` → `z-←Ululon` |
-| `zahaben` | `z-Uhubun` | *Uhubun* | `zahar` → `z-←Uhubun` |
+| `zalahen` | `z-Alahen` | *Alahen* | `zalar` → `z-←Alahen` |
+| `zahaben` | `z-Ahaben` | *Ahaben* | `zahar` → `z-←Ahaben` |
 
 ### Mid-word `x` families
 
@@ -328,14 +328,14 @@ For **phrasal proper names**, gloss each piece (`y-Ubune-x-Unowen`, `z-Ogove-x-A
 
 | Kind | Agalan | Morph | Free English |
 |------|--------|-------|--------------|
-| Mention (one word) | `z{odoga}` | `z-MENTION["odogo"]` | *The word “odogo” is small.* |
-| Spoken mention | `zoxol odogal` | `z-MENTION.atomic["odogol"]` | same |
-| Mention (phrase) | `z{zazawan vezehel}` | `z-MENTION["zazawan vuzunul"]` | *The phrase “zazawan vuzunul” is small.* |
-| Mention **`@`** | `d@{onodan}` | `d-NAME.MENTION["uzugon"]` | *the name “uzugon”* (the title-string, not the work) |
+| Mention (one word) | `z{odoga}` | `z-MENTION["odoga"]` | *The word “odoga” is small.* |
+| Spoken mention | `zoxol odogal` | `z-MENTION.atomic["odogal"]` | same |
+| Mention (phrase) | `z{zazawan vezehel}` | `z-MENTION["zazawan vezehel"]` | *The phrase “zazawan vezehel” is small.* |
+| Mention **`@`** | `d@{onodan}` | `d-NAME.MENTION["onodan"]` | *the name “onodan”* (the title-string, not the work) |
 | Opaque | `d<kimchi>` | `d-OPAQUE["kimchi"]` | The same blob |
 | Cite | `d[azawan]` | `d-CITE[Azawan]` | Translation of the **utterance** (*said “judge.”*) |
 | Spoken cite | `daxol ahahol` | `d-CITE.atomic[judge]` | same |
-| Cite **`@`** | `d@[onodan alahen]` | `d-NAME.CITE[Uzugon \| Ululon]` | The **work** (*dislikes Uzugon Ululon*) |
+| Cite **`@`** | `d@[onodan alahen]` | `d-NAME.CITE[Onodan \| Alahen]` | The **work** (*dislikes Onodan Alahen*) |
 
 Words inside a cite or aside are glossed as usual. They sit in a new clause, so they keep their own role letters and brackets. Mention and opaque interiors are never glossed.
 
@@ -343,9 +343,9 @@ Speech/writing reports (*said “X,”* *sang “X,”* *don’t “halt”*) ar
 
 > `z{odoga} gamazam.`
 >
-> z-MENTION["odogo"] | g-small
+> z-MENTION["odoga"] | g-small
 >
-> "The word “odogo” is small."
+> "The word “odoga” is small."
 
 ### Underspecification and joins
 
@@ -388,7 +388,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | Agalan | Morph gloss | Free English (separate) |
 |---------|-------------|-------------------------|
 | `azawan.` | `Azawan` | *Azawan.* (hello) |
-| `yalahexen` | `y-Ululon-minutes` | *Ululon — a few minutes.* |
+| `yalahexen` | `y-Alahen-minutes` | *Alahen — a few minutes.* |
 | `yael` | `y-yes` | *Yes.* |
 | `yol` | `y-question` | *(yes/no or fill-ask)* |
 | `zemal` | `z-microphone` | *a microphone* |

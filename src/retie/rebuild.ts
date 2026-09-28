@@ -2,7 +2,7 @@ import { hookCompoundFromMorph } from "../parse/hook-compounds.js";
 import { parseWord } from "../parse/word.js";
 import { writingSpanEnd } from "../parse/span-scan.js";
 import type { MorphWord, MorphWordFamily, WritingBracket } from "../parse/types.js";
-import { isClarityRootShape } from "../word-converter.js";
+import { isClarityRootShape } from "../root-shape.js";
 import {
   isContentResume,
   mappedResumeRoots,

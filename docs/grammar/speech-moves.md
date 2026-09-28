@@ -16,11 +16,11 @@ To call someone into the turn, put `/y/` before their name, which ends in **-n**
 
 > `yalahen.`
 >
-> y-Ululon
+> y-Alahen
 >
-> "Ululon!" (calling Ululon)
+> "Alahen!" (calling Alahen)
 
-**Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`SELFn.`). Calling Ululon uses `/y/`; saying Ululon walks uses `/z/` (`zazawan vowogal`).
+**Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`SELFn.`). Calling Alahen uses `/y/`; saying Alahen walks uses `/z/` (`zazawan vowogal`).
 
 ### Interjections: conventional calls
 <a id="interjections"></a>
@@ -29,7 +29,7 @@ An **interjection** is a short call that stands on its own, such as a reaction o
 
 > `yazeban.`
 >
-> y-Uruzen
+> y-Azeban
 >
 > "Surprise!"
 
@@ -70,7 +70,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan |
 |---------|--------|
 | *Azawan* | `azawan` |
-| *Uhubun* | `ahaben` |
+| *Ahaben* | `ahaben` |
 | *surprise* | `azebal` |
 | *sit* | `vehahel` |
 | *sneak* | `vezevul` |
@@ -78,12 +78,12 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### English → Agalan {#beginner-english-to-agalan}
 
-**1.** *Uhubun!* (calling Uhubun)
+**1.** *Ahaben!* (calling Ahaben)
 
 ::: details Show answer
 `yahaben.`
 
-y-Uhubun
+y-Ahaben
 :::
 
 **2.** *Don’t sneak.*
@@ -99,7 +99,7 @@ y-prohibition | v-sneak
 ::: details Show answer
 `yazeban.`
 
-y-Uruzen
+y-Azeban
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
@@ -238,9 +238,9 @@ The other marks work the same way:
 
 > `?! zalahen vahahal dodogal.`
 >
-> ?! | z-Ululon | v-see | d-dog
+> ?! | z-Alahen | v-see | d-dog
 >
-> "Ululon saw a dog?!"
+> "Alahen saw a dog?!"
 
 > `% zazawan vowogal.`
 >
@@ -250,9 +250,9 @@ The other marks work the same way:
 
 > `;zalahen vahahal dodogal.`
 >
-> ;z-Ululon | v-see | d-dog
+> ;z-Alahen | v-see | d-dog
 >
-> "Dear Ululon saw a dog."
+> "Dear Alahen saw a dog."
 
 A mark on a span colors all of it:
 
@@ -287,8 +287,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agalan |
 |---------|--------|
 | *Azawan* | `azawan` |
-| *Ululon* | `alahen` |
-| *Uhubun* | `ahaben` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
 | *trumpet* | `adawol` |
 | *sit* | `vehahel` |
 | *stand* | `vazadol` |
@@ -306,12 +306,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 y-soft-statement | z-Azawan | v-sit
 :::
 
-**2.** *Does Uhubun see a trumpet, perhaps?*
+**2.** *Does Ahaben see a trumpet, perhaps?*
 
 ::: details Show answer
 `yom zahaben dadawol vahahal.`
 
-y-soft-question | z-Uhubun | d-trumpet | v-see
+y-soft-question | z-Ahaben | d-trumpet | v-see
 :::
 
 **3.** *Please stand.*
@@ -330,20 +330,20 @@ y-request | v-stand
 y-soft-prohibition | v-sneak
 :::
 
-**5.** *For what it's worth, Ululon sees a trumpet.*
+**5.** *For what it's worth, Alahen sees a trumpet.*
 
 ::: details Show answer
 `yam zalahen dadawol vahahal.`
 
-y-soft-statement | z-Ululon | d-trumpet | v-see
+y-soft-statement | z-Alahen | d-trumpet | v-see
 :::
 
-**6.** *Please tell Uhubun.*
+**6.** *Please tell Ahaben.*
 
 ::: details Show answer
 `yem bahaben vezebel.`
 
-y-request | b-Uhubun | v-tell
+y-request | b-Ahaben | v-tell
 :::
 
 **7.** *Azawan sees a trumpet (a trumpet, not something else).*
@@ -354,12 +354,12 @@ y-request | b-Uhubun | v-tell
 z-Azawan | v-see | &d-trumpet
 :::
 
-**8.** *Uhubun sneaks?!*
+**8.** *Ahaben sneaks?!*
 
 ::: details Show answer
 `?! zahaben vezevul.`
 
-?! | z-Uhubun | v-sneak
+?! | z-Ahaben | v-sneak
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -377,9 +377,9 @@ y-soft-statement | z-Azawan | v-sit
 
 ::: details Show answer
 
-y-soft-question | z-Uhubun | d-trumpet | v-see
+y-soft-question | z-Ahaben | d-trumpet | v-see
 
-*Does Uhubun see a trumpet, perhaps?*
+*Does Ahaben see a trumpet, perhaps?*
 :::
 
 **3.** `yem vazadol.`
@@ -404,27 +404,27 @@ y-soft-prohibition | v-sneak
 
 ::: details Show answer
 
-y-soft-statement | z-Ululon | d-trumpet | v-see
+y-soft-statement | z-Alahen | d-trumpet | v-see
 
-*For what it's worth, Ululon sees a trumpet.*
+*For what it's worth, Alahen sees a trumpet.*
 :::
 
 **6.** `yem bahaben vezebel.`
 
 ::: details Show answer
 
-y-request | b-Uhubun | v-tell
+y-request | b-Ahaben | v-tell
 
-*Please tell Uhubun.*
+*Please tell Ahaben.*
 :::
 
 **7.** `% zalahen vezevul.`
 
 ::: details Show answer
 
-% | z-Ululon | v-sneak
+% | z-Alahen | v-sneak
 
-*Ululon sneaks.* (joking)
+*Alahen sneaks.* (joking)
 :::
 
 **8.** `yem !vazadol.`

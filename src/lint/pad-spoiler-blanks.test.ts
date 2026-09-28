@@ -7,7 +7,7 @@ describe("padExerciseSpoilerBlanks", () => {
   it("inserts blank between morph and loose English in details", () => {
     const md = `### Translation practice
 
-**1.** \`zazawan vayul.\`
+**1.** \`zazawan vehahel.\`
 
 ::: details Show answer
 z-Azawan | v-sit
@@ -22,12 +22,12 @@ z-Azawan | v-sit
     const md = `### Translation practice
 
 ::: details Show answer
-\`zazawan vayul.\`
+\`zazawan vehahel.\`
 z-Azawan | v-sit
 :::
 `;
     const out = padExerciseSpoilerBlanks(md);
-    assert.match(out, /`zazawan vayul\.`\n\nz-Azawan \| v-sit/);
+    assert.match(out, /`zazawan vehahel\.`\n\nz-Azawan \| v-sit/);
   });
 
   it("pads comparatives beginner block", () => {
@@ -36,7 +36,7 @@ z-Azawan | v-sit
     const end = md.indexOf("## Intermediate", start);
     const slice = md.slice(start, end);
     const out = padExerciseSpoilerBlanks(slice);
-    assert.match(out, /`zuhubun zazawan zael ganalam\.`\n\n\[z-Uhubun/);
-    assert.match(out, /\[z-Uhubun \| z-rank\/more \| g-agility\]\n\n\*Uhubun is the most agile\.\*/);
+    assert.match(out, /`zahaben zazawan zael gezehom\.`\n\n\[z-Ahaben/);
+    assert.match(out, /\[z-Ahaben \| z-rank\/more \| g-agility\]\n\n\*Ahaben is the most agile\.\*/);
   });
 });

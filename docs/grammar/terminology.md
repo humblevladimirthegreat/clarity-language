@@ -208,7 +208,7 @@ Kind / role as predicative `/ɡ/` (no *to-be* verb).
 
 ### Clause pole / NP pole
 
-Condition vs outcome as NPs vs full sentences after **`barl`**. **Clause pole** is the causation reading. Concession **`eze`** uses the same NP vs clause split (*despite Ululon* vs *although Ululon walks*). Intended outcome **`ago`** uses it too (*for a money-bag* vs *so that Ululon sits*).
+Condition vs outcome as NPs vs full sentences after **`barl`**. **Clause pole** is the causation reading. Concession **`eze`** uses the same NP vs clause split (*despite Alahen* vs *although Alahen walks*). Intended outcome **`ago`** uses it too (*for a money-bag* vs *so that Alahen sits*).
 
 [Causation](causation.md)
 
@@ -380,7 +380,7 @@ Hosted **`hohem`** / **`gohem`** plus consideration `/b/` (*in exchange for* a h
 
 ### Proxy (*on behalf of*)
 
-Hosted **`hadum`** / **`gadum`** plus principal `/b/` (*on behalf of* Ululon). Not hook *instead*, not recipient `/b/`.
+Hosted **`hadum`** / **`gadum`** plus principal `/b/` (*on behalf of* Alahen). Not hook *instead*, not recipient `/b/`.
 
 [Relations](relations.md#proxy)
 
@@ -676,7 +676,7 @@ Word-initial job letter.
 
 ### So that / event purpose
 
-Clause-pole **`ago`**: intended outcome of the host (*so that Ululon sits*; NP *for a money-bag*). Not locative *toward*, not interest **`tho`**, not discourse *therefore*.
+Clause-pole **`ago`**: intended outcome of the host (*so that Alahen sits*; NP *for a money-bag*). Not locative *toward*, not interest **`tho`**, not discourse *therefore*.
 
 [Dependents](dependents.md#so-that)
 

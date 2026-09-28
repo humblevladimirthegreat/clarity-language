@@ -324,7 +324,7 @@ describe("classification-gated retie", () => {
 });
 
 describe("verifyRetiedSpans", () => {
-  const map = mapOf(["azawa", "ululo"]);
+  const map = mapOf(["azawa", "alahe"]);
 
   it("bridges old and new spellings so an unconverted lexicon does not flag the retie", () => {
     const moved = mapOf(["azawa", "obobo"]);
@@ -335,15 +335,15 @@ describe("verifyRetiedSpans", () => {
   const tables = loadDefaultTables();
 
   it("passes a clean retie, including a respelled resume", () => {
-    const { spans } = rewriteMarkdown("`zazawan vawalal. zazar vayul.`", map);
+    const { spans } = rewriteMarkdown("`zazawan vowogal. zazar vehahel.`", map);
     assert.deepEqual(verifyRetiedSpans(spans, map, tables), []);
   });
 
   it("catches a rewrite that changes something the map does not", () => {
-    const spans = [{ before: "zazawan vawalal.", after: "zululon vayul.", index: 0, cls: "sentence" }];
+    const spans = [{ before: "zazawan vowogal.", after: "zalahen vehahel.", index: 0, cls: "sentence" }];
     const failures = verifyRetiedSpans(spans, map, tables);
     assert.equal(failures.length, 1);
-    assert.match(failures[0]!.detail, /awala/);
+    assert.match(failures[0]!.detail, /owoga/);
   });
 
   it("reports a tree change with no new resume link as info", () => {
@@ -355,7 +355,7 @@ describe("verifyRetiedSpans", () => {
   });
 
   it("catches a rewrite that stops parsing", () => {
-    const spans = [{ before: "zazawan vawalal.", after: "zululon vawalal vawalal zz.", index: 0, cls: "sentence" }];
+    const spans = [{ before: "zazawan vowogal.", after: "zalahen vowogal vowogal zz.", index: 0, cls: "sentence" }];
     assert.equal(verifyRetiedSpans(spans, map, tables).length, 1);
   });
 });

@@ -70,10 +70,10 @@ Once the talk already has a matching event, **-r** means **this** scene of that 
 > `zalahen vezogel.`
 > `zazawan dexezoger vahahal.`
 >
-> z-Ululon | v-scream
+> z-Alahen | v-scream
 > z-Azawan | d-←scream | v-see
 >
-> "Ululon screams. Azawan sees the scream-place."
+> "Alahen screams. Azawan sees the scream-place."
 
 `zexaguzal` is a construct-place (the **-l** sense of *construct*). A construction site as a listed kind, with no event, can stay `dagozal`.
 
@@ -98,10 +98,10 @@ Some stems name a **relation** (who is bound to whom), not an action. The extra 
 > `zazawan gunem balahen.`
 > `zoxuner varahal.`
 >
-> z-Azawan | [g-bond | b-Ululon]
+> z-Azawan | [g-bond | b-Alahen]
 > z-←bond | v-run
 >
-> "Azawan is bound to Ululon. That other party of the bond runs."
+> "Azawan is bound to Alahen. That other party of the bond runs."
 
 **Compare with:** extra-noun *for* (`el` plus `/b/`) is the intended get, not the hearer.
 
@@ -169,8 +169,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *construction* | `agozal` | |
 | *construct* | `aguzal` | |
 | *fabrication* | `aguzam` | `aguzal` *construct* |
@@ -202,20 +202,20 @@ z-agent-x-construct | v-sit
 z-Azawan | v-construct . z-←construct | d-helmet | v-see
 :::
 
-**3.** *Ululon screams. Azawan sees the scream-place.*
+**3.** *Alahen screams. Azawan sees the scream-place.*
 
 ::: details Show answer
 `zalahen vezogel. zazawan dexezoger vahahal.`
 
-z-Ululon | v-scream . z-Azawan | d-←scream | v-see
+z-Alahen | v-scream . z-Azawan | d-←scream | v-see
 :::
 
-**4.** *Azawan sees Uhubun. The one seen sits.*
+**4.** *Azawan sees Ahaben. The one seen sits.*
 
 ::: details Show answer
 `zazawan zahaben vahahal. zuxahahar vehahel.`
 
-z-Azawan | z-Uhubun | v-see . z-←see | v-sit
+z-Azawan | z-Ahaben | v-see . z-←see | v-sit
 :::
 
 **5.** *Azawan is a fabricator.*
@@ -244,12 +244,12 @@ z-Azawan | d-construction | v-see
 z-Azawan | v-tell . z-←tell | v-punch
 :::
 
-**8.** *Azawan is bound to Ululon. That other party of the bond fights.*
+**8.** *Azawan is bound to Alahen. That other party of the bond fights.*
 
 ::: details Show answer
 `zazawan gunem balahen. zoxuner vavadal.`
 
-z-Azawan | [g-bond | b-Ululon] . z-←bond | v-fight
+z-Azawan | [g-bond | b-Alahen] . z-←bond | v-fight
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
@@ -258,27 +258,27 @@ z-Azawan | [g-bond | b-Ululon] . z-←bond | v-fight
 
 ::: details Show answer
 
-z-Ululon | d-place-x-sleep | v-see
+z-Alahen | d-place-x-sleep | v-see
 
-*Ululon sees a sleep-place.*
+*Alahen sees a sleep-place.*
 :::
 
 **2.** `zahaben zazawan vahahal. zuxahahar vehahel.`
 
 ::: details Show answer
 
-z-Uhubun | z-Azawan | v-see . z-←see | v-sit
+z-Ahaben | z-Azawan | v-see . z-←see | v-sit
 
-*Uhubun sees Azawan. The one seen sits.*
+*Ahaben sees Azawan. The one seen sits.*
 :::
 
 **3.** `zalahen vaguzal. zaxaguzar dehedul vahahal.`
 
 ::: details Show answer
 
-z-Ululon | v-construct . z-←construct | d-helmet | v-see
+z-Alahen | v-construct . z-←construct | d-helmet | v-see
 
-*Ululon constructs. The one constructing sees a helmet.*
+*Alahen constructs. The one constructing sees a helmet.*
 :::
 
 **4.** `zaxaguzal vabahel.`
@@ -294,18 +294,18 @@ z-agent-x-construct | v-punch
 
 ::: details Show answer
 
-z-Ululon | d-construction | v-see
+z-Alahen | d-construction | v-see
 
-*Ululon sees a construction site.*
+*Alahen sees a construction site.*
 :::
 
 **6.** `zazawan zalahen vavadal. zuxavadar vezogel.`
 
 ::: details Show answer
 
-z-Azawan | z-Ululon | v-fight . z-←fight | v-scream
+z-Azawan | z-Alahen | v-fight . z-←fight | v-scream
 
-*Azawan fights Ululon. The one fought screams.*
+*Azawan fights Alahen. The one fought screams.*
 :::
 
 **7.** `zazawan vezebel. zoxezeber varahal.`
@@ -321,9 +321,9 @@ z-Azawan | v-tell . z-←tell | v-run
 
 ::: details Show answer
 
-z-Uhubun | [g-bond | b-Ululon] . z-←bond | v-punch
+z-Ahaben | [g-bond | b-Alahen] . z-←bond | v-punch
 
-*Uhubun is bound to Ululon. That other party of the bond punches.*
+*Ahaben is bound to Alahen. That other party of the bond punches.*
 :::
 
 ## Intermediate {#intermediate}
@@ -500,8 +500,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *boat* | `obodal` | |
 | *ship* | `ehebal` | |
 | *life-buoy* | `alavul` | |
@@ -534,12 +534,12 @@ z-boat | g-west-th-Azawan
 y-command | v-walk | h-north
 :::
 
-**3.** *The ship on Ululon’s right.*
+**3.** *The ship on Alahen’s right.*
 
 ::: details Show answer
 `zehebal gezadathalahen.`
 
-z-ship | g-east-th-Ululon
+z-ship | g-east-th-Alahen
 :::
 
 **4.** *Walk down.*
@@ -574,12 +574,12 @@ y-command | z-listener | v-walk | h-west-th-listener
 z-boat | g-west-th-speaker
 :::
 
-**8.** *Ululon, walk west.*
+**8.** *Alahen, walk west.*
 
 ::: details Show answer
 `yel zalahen vowogal hewezal.`
 
-y-command | z-Ululon | v-walk | h-west
+y-command | z-Alahen | v-walk | h-west
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -624,9 +624,9 @@ y-command | v-walk | h-up
 
 ::: details Show answer
 
-z-life-buoy | [g-west-th-Ululon | b-boat]
+z-life-buoy | [g-west-th-Alahen | b-boat]
 
-*The life-buoy is on Ululon’s left of the boat.*
+*The life-buoy is on Alahen’s left of the boat.*
 :::
 
 **6.** `yel zehan vowogal hezadathehan.`
@@ -642,18 +642,18 @@ y-command | z-listener | v-walk | h-east-th-listener
 
 ::: details Show answer
 
-z-ship | g-northwest-th-Uhubun
+z-ship | g-northwest-th-Ahaben
 
-*The ship on Uhubun’s forward-left.*
+*The ship on Ahaben’s forward-left.*
 :::
 
 **8.** `yel zalahen vowogal hadahel.`
 
 ::: details Show answer
 
-y-command | z-Ululon | v-walk | h-down
+y-command | z-Alahen | v-walk | h-down
 
-*Ululon, walk down.*
+*Alahen, walk down.*
 :::
 
 ## Advanced {#advanced}
@@ -664,9 +664,9 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 
 > `zazawan vowogal. xezadam zalahen varahal.`
 >
-> z-Azawan | v-walk . x-therefore | z-Ululon | v-run
+> z-Azawan | v-walk . x-therefore | z-Alahen | v-run
 >
-> "Azawan walks. Therefore Ululon runs."
+> "Azawan walks. Therefore Alahen runs."
 
 | Agalan | Use | English |
 |--------|-----|---------|

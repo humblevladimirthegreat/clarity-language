@@ -8,7 +8,7 @@ Sometimes one Agalan word is two smaller meanings with **`x`** in the middle. Th
 
 ### Two roots, one word
 
-English often glues two ideas into one word (*peanut butter*) or one hyphenated name. In Agalan you write both dictionary roots in **ovavo** word and put **`x`** between them. The first letter of the word is still the [role letter](clause.md#beginner) (subject, verb, and so on). The [ending](word-endings.md) belongs to the whole word, not to the piece before **`x`** alone. (cue: **x** ≈ plus: two pieces make one word)
+English often glues two ideas into one word (*peanut butter*) or one hyphenated name. In Agalan you write both dictionary roots in **one** word and put **`x`** between them. The first letter of the word is still the [role letter](clause.md#beginner) (subject, verb, and so on). The [ending](word-endings.md) belongs to the whole word, not to the piece before **`x`** alone. (cue: **x** ≈ plus: two pieces make one word)
 
 > `zebeyexabedel.`
 >
@@ -42,7 +42,7 @@ English *bedroom*, *doorbell*, and *friend* feel like one word. Agalan lists tho
 
 Inside the dictionary spelling you can still see the two old roots, with a join letter instead of **`x`**. That letter is the [word ending](word-endings.md) of the **left** root: **-l** when that piece is the everyday kind, **-m** when it is the published abstract sense (named **-n** or resume **-r** if that left piece is a name or a resume). The last letter of the word is still the ending of the **whole** entry. In a sentence you add a role letter and that whole-word ending, the same way you do for *dog* or *hammer*.
 
-> `zabedelohohul.`
+> `zebedalahazal.`
 >
 > z-bedroom
 >
@@ -50,10 +50,10 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `zabedelohohul` | bed **-l** house | bedroom | left piece everyday |
-| `zadorolobelel` | door **-l** bell | doorbell | left piece everyday |
-| `zonogoleberel` | bond **-l** person | friend | left piece everyday |
-| `zanunuloyal` | rain **-l** coat | raincoat | left piece everyday |
+| `zebedalahazal` | bed **-l** house | bedroom | left piece everyday |
+| `zowelebevol` | door **-l** bell | doorbell | left piece everyday |
+| `zunelebezal` | bond **-l** person | friend | left piece everyday |
+| `zerehelogodul` | rain **-l** coat | raincoat | left piece everyday |
 | `…m…` | left root in its [abstract](word-endings.md#abstract-m) sense | same two roots, join **-m** | **m** ≈ meaning |
 
 If the pairing is not in the dictionary, either glue with **`x`** (`zebeyexabedel` *peanut butter*) or use two words. Extra-noun *enter* / *leave* fused onto a citation is a [hook compound](hooks.md#hook-compounds), not this two-root join.
@@ -67,7 +67,7 @@ Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agala
 |--------|-----|---------|-----|
 | two words | two things, or a property already marked another way | `zahavel zerevol zam` *a hammer and a wrench*; `zodogal gubuhal` *a blue dog* (`/ɡ/`) | |
 | **`x`** in the middle | one thing; you can still hear both roots | `gagayaxalaval` *love in the crush sense*; `zebeyexabedel` *peanut butter*; `zazawaxalahen` (one person) | **x** ≈ plus |
-| dictionary word | one familiar kind, listed as a single entry | `zabedelohohul` *bedroom*; `zazoval` *sunflower* | join letter in the entry, not **`x`** |
+| dictionary word | one familiar kind, listed as a single entry | `zebedalahazal` *bedroom*; `zazoval` *sunflower* | join letter in the entry, not **`x`** |
 
 `zazawan zalahen` is two people. `zazawaxalahen` is one person.
 
@@ -86,12 +86,12 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
-| *doorbell* | `zadorolobelel` | |
-| *raincoat* | `zanunuloyal` | |
-| *greenhouse* | `zovowelohohul` | |
-| *friend* | `zonogoleberel` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
+| *doorbell* | `zowelebevol` | |
+| *raincoat* | `zerehelogodul` | |
+| *greenhouse* | `zavavulahazal` | |
+| *friend* | `zunelebezal` | |
 | *hammer* | `ahavel` | |
 | *wrench* | `erevol` | |
 | *axe* | `agezol` | |
@@ -105,7 +105,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *a doorbell*
 
 ::: details Show answer
-`zadorolobelel.`
+`zowelebevol.`
 
 z-doorbell
 :::
@@ -129,46 +129,46 @@ z-saw-x-wood
 **4.** *a raincoat*
 
 ::: details Show answer
-`zanunuloyal.`
+`zerehelogodul.`
 
 z-raincoat
 :::
 
-**5.** *Azawan and Ululon* (two people)
+**5.** *Azawan and Alahen* (two people)
 
 ::: details Show answer
 `zazawan zalahen.`
 
-z-Azawan | z-Ululon
+z-Azawan | z-Alahen
 :::
 
-**6.** *Ululon sees a greenhouse.*
+**6.** *Alahen sees a greenhouse.*
 
 ::: details Show answer
-`zalahen dovowelohohul vahahal.`
+`zalahen davavulahazal vahahal.`
 
-z-Ululon | d-greenhouse | v-see
+z-Alahen | d-greenhouse | v-see
 :::
 
-**7.** *Azawan-Ululon* (one person)
+**7.** *Azawan-Alahen* (one person)
 
 ::: details Show answer
 `zazawaxalahen.`
 
-z-Azawan-x-Ululon
+z-Azawan-x-Alahen
 :::
 
-**8.** *Ululon punches a friend.*
+**8.** *Alahen punches a friend.*
 
 ::: details Show answer
-`zalahen zonogoleberel vabahel.`
+`zalahen zunelebezal vabahel.`
 
-z-Ululon | z-friend | v-punch
+z-Alahen | z-friend | v-punch
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
 
-**1.** `zonogoleberel.`
+**1.** `zunelebezal.`
 
 ::: details Show answer
 
@@ -177,13 +177,13 @@ z-friend
 *a friend*
 :::
 
-**2.** `zahaben dadorolobelel vahahal.`
+**2.** `zahaben dowelebevol vahahal.`
 
 ::: details Show answer
 
-z-Uhubun | d-doorbell | v-see
+z-Ahaben | d-doorbell | v-see
 
-*Uhubun sees a doorbell.*
+*Ahaben sees a doorbell.*
 :::
 
 **3.** `zahavel zagezol zam.`
@@ -204,16 +204,16 @@ z-saw-x-wood
 *a wood saw*
 :::
 
-**5.** `zahaben danunuloyal vahahal.`
+**5.** `zahaben derehelogodul vahahal.`
 
 ::: details Show answer
 
-z-Uhubun | d-raincoat | v-see
+z-Ahaben | d-raincoat | v-see
 
-*Uhubun sees a raincoat.*
+*Ahaben sees a raincoat.*
 :::
 
-**6.** `zonogoleberel dahavel vahahal.`
+**6.** `zunelebezal dahavel vahahal.`
 
 ::: details Show answer
 
@@ -226,12 +226,12 @@ z-friend | d-hammer | v-see
 
 ::: details Show answer
 
-z-Ululon | d-axe | v-see
+z-Alahen | d-axe | v-see
 
-*Ululon sees an axe.*
+*Alahen sees an axe.*
 :::
 
-**8.** `zazawan zonogoleberel vabahel.`
+**8.** `zazawan zunelebezal vabahel.`
 
 ::: details Show answer
 
@@ -261,7 +261,7 @@ A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`*
 
 ### Adding another piece {#ordinary-compound-order}
 
-When English stacks labels left to right (*crush* then *love*; a shop name with a third drink), Agalan keeps that order in **ovavo** word. The **last** root is the kind. Each earlier root specifies it. The ending stays at the end of the whole word. Named lists (people, shops) use the same stack as a list of labels, not as kind-last packing.
+When English stacks labels left to right (*crush* then *love*; a shop name with a third drink), Agalan keeps that order in **one** word. The **last** root is the kind. Each earlier root specifies it. The ending stays at the end of the whole word. Named lists (people, shops) use the same stack as a list of labels, not as kind-last packing.
 
 > `gagayaxalaval.`
 >
@@ -271,7 +271,7 @@ When English stacks labels left to right (*crush* then *love*; a shop name with 
 
 > `zagavexedehexowoden.`
 >
-> z-Ogove-x-Adeda-x-Unuden
+> z-Agave-x-Edehe-x-Owoden
 >
 > "Coffee-Tea-Water" (one named shop)
 
@@ -307,9 +307,9 @@ On your own name, it says how long you expect to stay. At departure, use the red
 
 > `yalahexen.`
 >
-> y-Ululon-minutes
+> y-Alahen-minutes
 >
-> "Ululon — I have a few minutes."
+> "Alahen — I have a few minutes."
 
 | Form | At arrival | At departure | Cue |
 |------|------------|--------------|-----|
@@ -320,7 +320,7 @@ On your own name, it says how long you expect to stay. At departure, use the red
 
 Only one of these vowels per name. These forms use the same scale throughout a conversation: a smaller level narrows the remaining time. **-n** is still the [named](word-endings.md#named-n-beginner) ending.
 
-At arrival, the other person can answer with their own bid. The **lesser** bid sets the shared limit: **a** (open-ended) is more than **e** (a few minutes), **e** is more than **o** (one slot), and **o** is more than **u** (passing). If you offer open-ended time and Ululon offers one slot, you have one slot.
+At arrival, the other person can answer with their own bid. The **lesser** bid sets the shared limit: **a** (open-ended) is more than **e** (a few minutes), **e** is more than **o** (one slot), and **o** is more than **u** (passing). If you offer open-ended time and Alahen offers one slot, you have one slot.
 
 > `SELFxan.`
 >
@@ -330,9 +330,9 @@ At arrival, the other person can answer with their own bid. The **lesser** bid s
 
 > `alahexon.`
 >
-> Ululon-ask
+> Alahen-ask
 >
-> "Ululon — one slot." (the talk lasts for one ask)
+> "Alahen — one slot." (the talk lasts for one ask)
 
 **Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [need](interests.md) takes **`th`** + vowel instead (`gudathal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**.
 
@@ -371,13 +371,13 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|--------------|
 | *your name* | `SELFn` | |
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
-| *doorbell* | `zadorolobelel` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
+| *doorbell* | `zowelebevol` | |
 | *see* | `vahahal` | `ahahal` *eye* |
 | *scream* | `ezogel` | |
 | *punch* | `abahel` | |
-| *wozobo* | `eweval` | |
+| *wave* | `eweval` | |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
@@ -389,12 +389,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 SELF-presence
 :::
 
-**2.** *Ululon — a few minutes.* (calling)
+**2.** *Alahen — a few minutes.* (calling)
 
 ::: details Show answer
 `yalahexen.`
 
-y-Ululon-minutes
+y-Alahen-minutes
 :::
 
 **3.** *(Your name) — one ask.*
@@ -405,52 +405,52 @@ y-Ululon-minutes
 SELF-ask
 :::
 
-**4.** *(Your name) — I’m here. Ululon — one ask.*
+**4.** *(Your name) — I’m here. Alahen — one ask.*
 
 ::: details Show answer
 `SELFxan. yalahexon.`
 
-SELF-presence . y-Ululon-ask
+SELF-presence . y-Alahen-ask
 :::
 
-**5.** *Uhubun — just passing.* (calling)
+**5.** *Ahaben — just passing.* (calling)
 
 ::: details Show answer
 `yahabexun.`
 
-y-Uhubun-passing
+y-Ahaben-passing
 :::
 
-**6.** *Uhubun — one ask.* (citation)
+**6.** *Ahaben — one ask.* (citation)
 
 ::: details Show answer
 `ahabexon.`
 
-Uhubun-ask
+Ahaben-ask
 :::
 
-**7.** *Azawan — a few minutes.* (calling); *Ululon screams.*
+**7.** *Azawan — a few minutes.* (calling); *Alahen screams.*
 
 ::: details Show answer
 `yazawaxen zalahen vezogel.`
 
-y-Azawan-minutes | z-Ululon | v-scream
+y-Azawan-minutes | z-Alahen | v-scream
 :::
 
-**8.** *Ululon — just passing.* (calling); *Uhubun punches Azawan.*
+**8.** *Alahen — just passing.* (calling); *Ahaben punches Azawan.*
 
 ::: details Show answer
 `yalahexun zahaben zazawan vabahel.`
 
-y-Ululon-passing | z-Uhubun | z-Azawan | v-punch
+y-Alahen-passing | z-Ahaben | z-Azawan | v-punch
 :::
 
-**9.** *(Your name) — I’m here / we can stay.* *Ululon — one ask.* (Ululon’s bid is the one that holds)
+**9.** *(Your name) — I’m here / we can stay.* *Alahen — one ask.* (Alahen’s bid is the one that holds)
 
 ::: details Show answer
 `SELFxan. alahexon.`
 
-SELF-presence . Ululon-ask
+SELF-presence . Alahen-ask
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -459,17 +459,17 @@ SELF-presence . Ululon-ask
 
 ::: details Show answer
 
-Uhubun-presence
+Ahaben-presence
 
-*Uhubun — I’m here / we can stay.*
+*Ahaben — I’m here / we can stay.*
 :::
 
 **2.** `yalahexun.`
 
 ::: details Show answer
 
-y-Ululon-passing
-*Ululon — just passing.* (calling)
+y-Alahen-passing
+*Alahen — just passing.* (calling)
 :::
 
 **3.** `azawaxun.`
@@ -485,24 +485,24 @@ Azawan-passing
 
 ::: details Show answer
 
-y-Uhubun-minutes
-*Uhubun — a few minutes.* (calling)
+y-Ahaben-minutes
+*Ahaben — a few minutes.* (calling)
 :::
 
 **5.** `yalahexon.`
 
 ::: details Show answer
 
-y-Ululon-ask
-*Ululon — one ask.* (calling)
+y-Alahen-ask
+*Alahen — one ask.* (calling)
 :::
 
 **6.** `azawaxan yahabexon.`
 
 ::: details Show answer
 
-Azawan-presence | y-Uhubun-ask
-*Azawan — I’m here. Uhubun — one ask.* (calling)
+Azawan-presence | y-Ahaben-ask
+*Azawan — I’m here. Ahaben — one ask.* (calling)
 :::
 
 **7.** `azawan.`
@@ -513,22 +513,22 @@ Azawan
 *Azawan.* (hello — the speaker is Azawan)
 :::
 
-**8.** `yazawaxen zahaben dadorolobelel vahahal.`
+**8.** `yazawaxen zahaben dowelebevol vahahal.`
 
 ::: details Show answer
 
-y-Azawan-minutes | z-Uhubun | d-doorbell | v-see
+y-Azawan-minutes | z-Ahaben | d-doorbell | v-see
 
-*Azawan — a few minutes.* (calling); *Uhubun sees a doorbell.*
+*Azawan — a few minutes.* (calling); *Ahaben sees a doorbell.*
 :::
 
 **9.** `azawaxan. alahexen.`
 
 ::: details Show answer
 
-Azawan-presence . Ululon-minutes
+Azawan-presence . Alahen-minutes
 
-*Azawan — I’m here / we can stay.* *Ululon — a few minutes.* (Ululon’s few minutes is the one that holds)
+*Azawan — I’m here / we can stay.* *Alahen — a few minutes.* (Alahen’s few minutes is the one that holds)
 :::
 
 ## See also

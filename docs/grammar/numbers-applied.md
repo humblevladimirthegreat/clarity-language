@@ -120,9 +120,9 @@ Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / a
 **Measured differentials** (*two meters taller*) put that measure noun phrase as the **single `/b/`** on the SHARED scale adjective of a [comparative](comparatives.md#measured-differentials):
 
 > `zazawan zalahen zel gadavam bezezem gradul.`
-> [z-Azawan | z-Ululon | z-rank/more | [g-height | b-meter]] | g-two
+> [z-Azawan | z-Alahen | z-rank/more | [g-height | b-meter]] | g-two
 >
-> "Azawan is two meters taller than Ululon."
+> "Azawan is two meters taller than Alahen."
 
 Vague degree uses `/w/` on the scale (`zel wohul gadavam …`) with no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
 
@@ -160,7 +160,7 @@ Join vowels (Beginner already used ranked **`e`** for people; a range uses **seq
 | **`oe`** | directed path; first → second (spoken order = path, either direction) | *from 3 to 5* (`z+3 z+5 zoel gadaham`); *from 5 to 3* (`z+5 z+3 zoel gadaham`) | **o** one + **e** order: one after another |
 | **`ua`** | complement on the line | *outside 3–5* (`z+3 z+5 zual gadaham`) | **u** undo + **a** add |
 
-**Compare with:** `zazawan zalahen zel gamadam` (*Azawan is more challenging than Ululon*) ranks **people** on a scale. `zrarel zraval zoel gadaham` is a **band** on a continuum. Rank **`e`** puts the first item at the **top**; sequence **`oe`** puts it at the **start**. Place *from a station to a train* is two [locative](relations.md#spatial-path) `/h/` + `/b/` units, not this fence.
+**Compare with:** `zazawan zalahen zel gamadam` (*Azawan is more challenging than Alahen*) ranks **people** on a scale. `zrarel zraval zoel gadaham` is a **band** on a continuum. Rank **`e`** puts the first item at the **top**; sequence **`oe`** puts it at the **start**. Place *from a station to a train* is two [locative](relations.md#spatial-path) `/h/` + `/b/` units, not this fence.
 
 **Not the same job as:** bare **`zrarel zraval zel`** (*prefer 3 over 5*). Without the SHARED continuum, two number conjuncts are an ordinary join.
 
@@ -277,8 +277,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *pill* | `edal` | |
 | *baby-bottle* | `ebel` | |
 | *rock* | `aragal` | |
@@ -303,14 +303,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 z-Azawan | d-_555,123,4567 | v-see
 :::
 
-**2.** *At 15:30 Azawan sees Uhubun.*
+**2.** *At 15:30 Azawan sees Ahaben.*
 
 ::: details Show answer
 `h_15,30 zazawan dahaben vahahal.`
 
 🔊 *hrowovathorezol zazawan dahaben vahahal.*
 
-h-_15,30 | z-Azawan | d-Uhubun | v-see
+h-_15,30 | z-Azawan | d-Ahaben | v-see
 :::
 
 **3.** *25% of the pills.*
@@ -339,22 +339,22 @@ z-Azawan | [b-meter | g-two] | v-walk
 [z-three | z-five | z-in-order | g-duration]
 :::
 
-**6.** *Ululon sees 911.*
+**6.** *Alahen sees 911.*
 
 ::: details Show answer
 `zalahen d_911 vahahal.`
 
 🔊 *zalahen dronawowol vahahal.*
 
-z-Ululon | d-_911 | v-see
+z-Alahen | d-_911 | v-see
 :::
 
-**7.** *Ululon punches five rocks.*
+**7.** *Alahen punches five rocks.*
 
 ::: details Show answer
 `zalahen daragal graval vabahel.`
 
-z-Ululon | [d-rock | g-five] | v-punch
+z-Alahen | [d-rock | g-five] | v-punch
 :::
 
 **8.** *From 15 to 16 in time.*
@@ -367,14 +367,14 @@ z-Ululon | [d-rock | g-five] | v-punch
 [z-15 | z-16 | z-in-order | g-duration]
 :::
 
-**9.** *On 22 July, Uhubun screams.*
+**9.** *On 22 July, Ahaben screams.*
 
 ::: details Show answer
 `h_#22,7 zahaben vezogel.`
 
 🔊 *hroedudutholel zahaben vezogel.*
 
-h-_22,7 | z-Uhubun | v-scream
+h-_22,7 | z-Ahaben | v-scream
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -396,9 +396,9 @@ z-baby-bottle | g-_7
 
 🔊 *hrozonathozozol zahaben vahahal.*
 
-h-_09,00 | z-Uhubun | v-see
+h-_09,00 | z-Ahaben | v-see
 
-*At 09:00 Uhubun sees.*
+*At 09:00 Ahaben sees.*
 :::
 
 **3.** `zebelx g+50%.`
@@ -440,9 +440,9 @@ z-Azawan | [d-spoon | g-one] | v-see
 
 🔊 *zalahen drozozozol vahahal.*
 
-z-Ululon | d-_000 | v-see
+z-Alahen | d-_000 | v-see
 
-*Ululon sees 000.*
+*Alahen sees 000.*
 :::
 
 **7.** `h~_23,59 zalahen vezogel.`
@@ -451,9 +451,9 @@ z-Ululon | d-_000 | v-see
 
 🔊 *hrodurethovanam zalahen vezogel.*
 
-h-_23,59.about | z-Ululon | v-scream
+h-_23,59.about | z-Alahen | v-scream
 
-*Around 23:59 Ululon screams.*
+*Around 23:59 Alahen screams.*
 :::
 
 **8.** `z+10 z+20 zual guruham.`
@@ -473,9 +473,9 @@ h-_23,59.about | z-Ululon | v-scream
 
 🔊 *hroewothomol zalahen vowogal.*
 
-h-_1,4 | z-Ululon | v-walk
+h-_1,4 | z-Alahen | v-walk
 
-*On 1 April, Ululon walks.*
+*On 1 April, Alahen walks.*
 :::
 
 ## Advanced {#advanced}
@@ -630,17 +630,17 @@ Generations form a **tree**, like an outline. A cohort is only the members **und
 The mantissa is **birth order** within that cohort: **`g#1e0`** is the eldest sibling, **`g#-1e0`** the youngest. To say whose family it is, put the anchor person in `/b/` right after the number. (cue: the number says how far up or down the tree; `/b/` says from whom)
 
 > `zalahen grebazol bazawan vowogal.`
-> [z-Ululon | [g-#-e0 | b-Azawan]] | v-walk
+> [z-Alahen | [g-#-e0 | b-Azawan]] | v-walk
 >
-> "Ululon, Azawan's sibling, walks."
+> "Alahen, Azawan's sibling, walks."
 
 > `zalahen g#1e0 bazawan vowogal.`
 >
 > 🔊 *zalahen grebazoyawol bazawan vowogal.*
 >
-> [z-Ululon | [g-#-1e0 | b-Azawan]] | v-walk
+> [z-Alahen | [g-#-1e0 | b-Azawan]] | v-walk
 >
-> "Ululon, Azawan's eldest sibling, walks."
+> "Alahen, Azawan's eldest sibling, walks."
 
 > `zahadel g#2e1 bazawan vowogal.`
 >
@@ -656,9 +656,9 @@ For a side branch, nest a second anchor: first step to the relative, then from t
 >
 > 🔊 *zalahen grebazol bebezal grebuwoyawol bazawan vowogal.*
 >
-> [z-Ululon | [g-#-e0 | [b-person | [g-#-1e-1 | b-Azawan]]]] | v-walk
+> [z-Alahen | [g-#-e0 | [b-person | [g-#-1e-1 | b-Azawan]]]] | v-walk
 >
-> "Ululon, a sibling of Azawan's first parent, walks." — Azawan's aunt or uncle
+> "Alahen, a sibling of Azawan's first parent, walks." — Azawan's aunt or uncle
 
 **Compare with:** friends, bosses, and other non-kin relations are not generations, so these forms do not name them.
 

@@ -74,8 +74,8 @@ describe("lexicon-compounds", () => {
       [
         {
           emoji: "",
-          stem: "awalalul",
-          left: "awala",
+          stem: "owogalul",
+          left: "owoga",
           join: "l",
           right: "ul",
           concrete: "leave",
@@ -113,7 +113,7 @@ describe("lexicon-compounds", () => {
       [
         {
           emoji: "🛏️",
-          stem: "abedelohohu",
+          stem: "ebedalahaza",
           left: "abede",
           join: "l",
           right: "ohohu",

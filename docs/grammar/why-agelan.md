@@ -90,7 +90,7 @@ Composing emotion from interest + activation + locus helps you ask for what woul
 
 ### How far a label reaches {#how-far-a-label-reaches}
 
-English *Ululon is angry* can mean one outburst or the kind of person Ululon is. One act slides into a verdict on someone's nature, and a name for a problem (*lazy*, *anxious*) starts to sound like its cause.
+English *Alahen is angry* can mean one outburst or the kind of person Alahen is. One act slides into a verdict on someone's nature, and a name for a problem (*lazy*, *anxious*) starts to sound like its cause.
 
 [Label scope](predication.md#label-scope) lets any label say how far it reaches: this one occasion, a pattern with exceptions, true in one relationship (*a stranger to Azawan*), or only a name that explains nothing.
 

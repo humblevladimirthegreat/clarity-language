@@ -43,23 +43,23 @@ function roundTrip(agalan: string): string {
 describe("glossToAgalan", () => {
   it("rebuilds each spec example exactly", () => {
     for (const agalan of [
-      "dadedal on dogovel.",
-      "zodogol gonunul bazawan gelulul.",
-      "glonunul bazawan zodogol gonunul bululon.",
-      "zadedal zogovel zol zanunul zal vawalal.",
-      "zazawan vujudul daxal zazawan vawalal xuxul.",
-      "zazawan vujudul d@[uzugon ululon].",
-      "zadedal zogovel zol ^ hurorom bazawan ^ vawalal.",
-      "zazawan vawalal. zazawar vujudul.",
-      "zazawan vawalal. zazar vujudul.",
-      "zazawan d[abugum#|] vezehel.",
-      "zazawan daxur vezehel.",
-      "zazawan d[=] vezehel.",
-      "z{odogo} gumuzem.",
+      "dedehel on dagavel.",
+      "zodogal gugol bazawan gubuhal.",
+      "glugol bazawan zodogal gugol balahen.",
+      "zedehel zagavel zol zerehel zal vowogal.",
+      "zazawan vahahol daxal zazawan vowogal xuxul.",
+      "zazawan vahahol d@[onodan alahen].",
+      "zedehel zagavel zol ^ hemum bazawan ^ vowogal.",
+      "zazawan vowogal. zazawar vahahol.",
+      "zazawan vowogal. zazar vahahol.",
+      "zazawan d[abugum#|] vezebel.",
+      "zazawan daxur vezebel.",
+      "zazawan d[=] vezebel.",
+      "z{odoga} gamazam.",
       "zagadalx grarel.",
       "zagadalx grarel.",
-      "zugobonx vawalal.",
-      "zazawan vujudul daxal zazar vawalal xuxul. dadedal on dogovel.",
+      "zemanx vowogal.",
+      "zazawan vahahol daxal zazar vowogal xuxul. dedehel on dagavel.",
     ]) {
       assert.equal(canonical(roundTrip(agalan)), canonical(agalan), agalan);
     }

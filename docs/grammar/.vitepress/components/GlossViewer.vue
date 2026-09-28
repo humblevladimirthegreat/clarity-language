@@ -5,7 +5,7 @@ import { useClassifyTables } from '../composables/useClassifyTables'
 import { previewPhonemes } from '@tts-browser'
 import GlossOverlay from './GlossOverlay.vue'
 
-const SAMPLE = 'zazawan vawalal.'
+const SAMPLE = 'zazawan vowogal.'
 const ERROR_IDLE_MS = 1000
 
 const text = ref(SAMPLE)

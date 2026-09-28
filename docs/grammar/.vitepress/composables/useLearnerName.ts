@@ -2,7 +2,7 @@ import { computed, onMounted, ref, shallowRef, type ShallowRef } from 'vue'
 import { DEFAULT_SELF_ROOT, eligibleNames, suggestedNames, type LearnerNameOption } from '@learner-name'
 
 /**
- * The learner's own Agalan name (a published root + -n), kept in this browser. Unset or no longer valid → the speaker special `ugobon` fills `SELF` slots.
+ * The learner's own Agalan name (a published root + -n), kept in this browser. Unset or no longer valid → the speaker special `eman` fills `SELF` slots.
  */
 
 const STORAGE_KEY = 'agalan.learnerName'

@@ -11,13 +11,13 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agalan 
 | place (*by the station*) | hook **`om`** (*near*) + `/b/` (or **`ol`** *at*) | [Hooks](hooks.md#extra-noun) |
 | deadline (*by 15:30*) | clock `/h/`, or *until* **`hodam barl`** | [Time](numbers-applied.md#time), [dependent clauses](dependents.md#dependent-clauses) |
 | manner (*by walking hastily*) | ordinary adverb `/h/`, no `/b/` | [Adverbs](clause.md#adverbs-h) |
-| origin (*Ululon from the city*) | **`hagem` / `gagem`** + `/b/` | [Of relations](relations.md#of-relations) |
+| origin (*Alahen from the city*) | **`hagem` / `gagem`** + `/b/` | [Of relations](relations.md#of-relations) |
 
 ## *for*
 
 | English itch | Agalan job | Teach |
 |--------------|------------|-------|
-| recipient / addressee (*tells Ululon*) | unhosted `/b/` | [Extra nouns](clause.md#extra-nouns) |
+| recipient / addressee (*tells Alahen*) | unhosted `/b/` | [Extra nouns](clause.md#extra-nouns) |
 | swap (*a book for a hammer*) | **`hohem`** + `/b/` | [Exchange](relations.md#exchange) |
 | intended get (*works for a money-bag*) | hook **`el`** + `/b/` | [Hooks](hooks.md#extra-noun) |
 | intended outcome (*practices for a race*) | **`hagom`** + `/b/` | [So that](dependents.md#so-that) |
@@ -43,9 +43,9 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agalan 
 | English itch | Agalan job | Teach |
 |--------------|------------|-------|
 | kind / role (*Azawan as a dog*) | classification `/ɡ/` | [Kind / role](predication.md#classification) |
-| same one (*Ululon as Azawan*) | **`SAME`** + `/b/` | [Identity](predication.md#identity) |
-| same time (*as Ululon walks*) | **`hahem barl`** | [Dependent clauses](dependents.md#dependent-clauses) |
-| reason / since (*as Ululon walks*) | **`thabem barl`** | [Because](causation.md#because) |
+| same one (*Alahen as Azawan*) | **`SAME`** + `/b/` | [Identity](predication.md#identity) |
+| same time (*as Alahen walks*) | **`hahem barl`** | [Dependent clauses](dependents.md#dependent-clauses) |
+| reason / since (*as Alahen walks*) | **`thabem barl`** | [Because](causation.md#because) |
 | equal degree (*as happy as*) | equative **`ae`** | [Equatives](comparatives.md#equatives) |
 | topic (*as for Azawan*) | **`hahehom`** + `/b/` | [As-for](clause.md#as-for) |
 | resemblance (*walks as / like a duck*) | **`hemum`** + `/b/` | [Simile](relations.md#similative) |

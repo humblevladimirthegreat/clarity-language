@@ -1,6 +1,6 @@
 import { escapeCsvField, parseCsv } from "./csv.js";
 import { isExtraNounHook } from "./parse/hook-compounds.js";
-import { isClarityRootShape } from "./word-converter.js";
+import { isClarityRootShape } from "./root-shape.js";
 
 export const COMPOUND_HEADERS = [
   "emoji",

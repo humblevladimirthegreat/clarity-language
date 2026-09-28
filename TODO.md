@@ -20,12 +20,13 @@ Prosody
 -lint check that vocabulary is taught and used in translation exercises.
 -reconsider how to make emotions shorter (lexical compounds)
 -consider Promoting common non-nouns and compound-word parts to be two syllables. 
+-intentionally discourage speaker and listener person pronoun by making them five letters instead of three.
+-remove unneeded tests
 
 final exam
 
 save for near end of limit resets:
--try to fill in remaining abstract lexicon in published-lexicon. use for useful english words, don't fill just to fill, ok to leave blank
--ensure lexicon consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed.
+-review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by overlay-roots
 -mass lexical compound adding
 
 

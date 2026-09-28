@@ -6,13 +6,13 @@ Use this document for styling examples when producing more posts, and seeing wha
 
 ### Labels Say How Far They Reach
 
-Labeling a person from one behavior is a classic cognitive distortion, and it hides inside ordinary adjectives. "Ululon is angry" could mean one outburst or Ululon's whole personality, and listeners (including you, about yourself) tend to hear the second. Psychologists call the tendency to explain behavior by character instead of circumstance the [fundamental attribution error](https://en.wikipedia.org/wiki/Fundamental_attribution_error), and treating categories as fixed essences is [psychological essentialism](https://en.wikipedia.org/wiki/Essentialism#In_psychology).
+Labeling a person from one behavior is a classic cognitive distortion, and it hides inside ordinary adjectives. "Alahen is angry" could mean one outburst or Alahen's whole personality, and listeners (including you, about yourself) tend to hear the second. Psychologists call the tendency to explain behavior by character instead of circumstance the [fundamental attribution error](https://en.wikipedia.org/wiki/Fundamental_attribution_error), and treating categories as fixed essences is [psychological essentialism](https://en.wikipedia.org/wiki/Essentialism#In_psychology).
 
 Agalan lets any label mark how far it reaches with a small infix (`th` + a vowel) before the word ending:
 
 - **tha** — this one occasion: *ganegethal* "angry this time"
 - **the** — a pattern with exceptions: *valahathel* "tends to lie"
-- **tho** — true in one relationship: *gelehothom balahen* "a stranger to Ululon" (not a stranger in general)
+- **tho** — true in one relationship: *gelehothom balahen* "a stranger to Alahen" (not a stranger in general)
 - **thu** — a name only, not an explanation: *ganagothul* "what gets called anxious"
 
 None of the four is a claim about someone's essence. The plain word stays neutral, so you aren't forced to mark every label, but when you want to say "he failed" without meaning "he's a failure," the grammar has a one-syllable way to do it. Bonus: the same **tho** form already gave Agalan *behind the house* (the house's own back), so the direction words turned out to be a special case of the same idea.
@@ -77,21 +77,21 @@ None of these is the "right" one. Letting something go with *who knows* is fine.
 
 > `zalahen thovom vadebal dahaben.`
 >
-> z-Ululon | th-may | v-leave | d-Uhubun
+> z-Alahen | th-may | v-leave | d-Ahaben
 >
-> "Ululon may be leaving Uhubun."
+> "Alahen may be leaving Ahaben."
 
 > `zalahen thovol vabahel dazawan.`
 >
-> z-Ululon | th-may-find-out | v-punch | d-Azawan
+> z-Alahen | th-may-find-out | v-punch | d-Azawan
 >
-> "Ululon may be punching Azawan - I'll find out."
+> "Alahen may be punching Azawan - I'll find out."
 
 > `zahaben thovor vagahul.`
 >
-> z-Uhubun | th-may-who-knows | v-cry
+> z-Ahaben | th-may-who-knows | v-cry
 >
-> "Uhubun may be crying - who knows."
+> "Ahaben may be crying - who knows."
 
 Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/knowing.html#may
 
@@ -123,9 +123,9 @@ The first letter is the part of speech in this sentence (`z-` subject, `d-` obje
 
 > `zazawan dalahen vemedul. zalar dazar vabahel.`
 
-> z-Azawan | d-Ululon | v-middle-finger | z←Ululon | d←Azawan | v-punch
+> z-Azawan | d-Alahen | v-middle-finger | z←Alahen | d←Azawan | v-punch
 
-> "Azawan flips off Ululon. He (Ululon) punches him (Azawan)."
+> "Azawan flips off Alahen. He (Alahen) punches him (Azawan)."
 
 The pronoun `dazar` was derived from the first three letters of `azawan`, and the pronoun `zalar` was derived from the first three letters of `alahen`.
 

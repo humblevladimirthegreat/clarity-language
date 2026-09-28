@@ -34,7 +34,7 @@ export function contentStemRoots(word: StemWord): string[] {
 
 /**
  * Longer same-file stem this short resume prefixes, if any.
- * Prefers the longest letter-match so `uhu`+`-r` after `uhubu` stays Uhubun
+ * Prefers the longest letter-match so `aha`+`-r` after `ahabe` stays Ahaben
  * when `uhu` is also a mapped published root.
  */
 export function pickResumeAntecedent(

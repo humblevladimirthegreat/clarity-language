@@ -20,9 +20,9 @@
  * | `hual` bare | `h-always` | |
  * | `themabam` | `th-plan-itinerary` | overlay grain `-m` |
  * | mid-word `x` | always `-x-` segments | never a fused English name |
- * | house-cast `-n` | `Azawan` / `Ululon` / `Uhubun` | |
+ * | house-cast `-n` | `Azawan` / `Alahen` / `Ahaben` | |
  * | mention `{…}` / spoken TYPE **o** interior | pass through the surface (`z-odogo`, `odogol`) | not the English lemma |
- * | `zugobon` / `zedonen` / `zahan` / `zenenun` | `speaker` / `listener` / `interlocutors` / `someone` | |
+ * | `zeman` / `zehan` / `zohan` / `zanun` | `speaker` / `listener` / `interlocutors` / `someone` | |
  * | ordinary lexicon (`vejel`, `vajul`, …) | packed `english_by_pos` when present for this role + sense, else literal / metaphor | [glosses.md](../../docs/meta/glosses.md#role-english) |
  */
 
@@ -56,15 +56,15 @@ import type {
 
 const HOUSE_CAST: Record<string, string> = {
   azawa: "Azawan",
-  ululo: "Ululon",
-  uhubu: "Uhubun",
+  alahe: "Alahen",
+  ahabe: "Ahaben",
 };
 
 /** House-cast short resume stems (`zazar`). */
 const HOUSE_CAST_SHORT: Record<string, string> = {
   aza: "Azawan",
-  ulu: "Ululon",
-  uhu: "Uhubun",
+  ala: "Alahen",
+  aha: "Ahaben",
 };
 
 /** Number writing mark → form suffix (glosses.md § Round trip). */
@@ -109,19 +109,19 @@ function isFullRootResume(word: LexWord, antecedent: LexWord): boolean {
 }
 
 const SPECIAL_PRONOUN: Record<string, string> = {
-  ugobo: "speaker",
-  edone: "listener",
-  aha: "interlocutors",
-  enenu: "someone",
+  ema: "speaker",
+  eha: "listener",
+  oha: "interlocutors",
+  anu: "someone",
 };
 
-/** `/x/` linkers keyed by root + ending (`xezazam` *therefore*, `xezebal` *however*). */
+/** `/x/` linkers keyed by root + ending (`xezadam` *therefore*, `xezel` *however*). */
 const LINKER_ENGLISH: Record<string, string> = {
-  ezazam: "therefore",
-  ezebal: "however",
-  anelol: "meanwhile",
-  uvumul: "next",
-  onugol: "but",
+  ezadam: "therefore",
+  ezel: "however",
+  agagal: "meanwhile",
+  evavel: "next",
+  agozal: "but",
 };
 
 const JOIN_JOB: Record<string, string> = {
@@ -1396,7 +1396,7 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
             pos: word.pos,
           });
     // Ability / greeting bids: one hyphenated english slot (`walking-unable-temporary`,
-    // `Ululon-minutes`). Values keep a visible `-th-` hinge (`competence-th-motive`).
+    // `Alahen-minutes`). Values keep a visible `-th-` hinge (`competence-th-motive`).
     if (word.reading === "greeting") {
       const stance = GREETING_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "greeting";
       return [`${host}-${stance}`];
@@ -1487,7 +1487,7 @@ function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): st
   if (word.pos === "x" && roots.length === 1 && LINKER_ENGLISH[roots[0]! + word.ending]) {
     return LINKER_ENGLISH[roots[0]! + word.ending]!;
   }
-  if (word.pos === "y" && word.ending === "l" && roots.length === 1 && roots[0] === "awave") return "greeting";
+  if (word.pos === "y" && word.ending === "l" && roots.length === 1 && roots[0] === "eweva") return "greeting";
   if (roots.length === 1) {
     return rootSense(roots[0]!, word.ending, tables, {
       named: word.ending === "n",
@@ -1548,7 +1548,7 @@ function rootSense(
     if (lemma) return hyphenEnglish(lemma);
   }
 
-  if (root === "ugobo" && ending !== "m") {
+  if (root === "ema" && ending !== "m") {
     return ending === "l" ? "microphone" : "speaker";
   }
 

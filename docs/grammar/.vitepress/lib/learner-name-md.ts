@@ -4,10 +4,10 @@ import { hasSelfSlot } from '../../../../src/learner-name'
 
 /**
  * `SELF` slots (the learner's own name) in grammar Markdown:
- * - an inline code span with a slot (`zSELFn vawalal.`) → `<SelfCode>`;
+ * - an inline code span with a slot (`zSELFn vowogal.`) → `<SelfCode>`;
  * - an `agalan` fence → each line with a slot becomes `<SelfCode bare>`;
  * - a free-standing `SELF` in plain text (a morph-gloss line: `z-SELF`) → `<SelfGloss>`.
- * Static HTML shows the default (`ugobon` / `speaker`); the components swap in the chosen name.
+ * Static HTML shows the default (`eman` / `speaker`); the components swap in the chosen name.
  */
 export function learnerNameSlots(md: MarkdownIt): void {
   const codeInline = md.renderer.rules.code_inline

@@ -154,15 +154,15 @@ scrutiny
 ::: details Show answer
 `ahaben`
 
-Uhubun
+Ahaben
 :::
 
-**8.** *Hello — the speaker is Ululon.*
+**8.** *Hello — the speaker is Alahen.*
 
 ::: details Show answer
 `alahen.`
 
-Ululon
+Alahen
 :::
 
 **9.** *Hello — say it with your own name.*
@@ -233,7 +233,7 @@ grace
 
 ::: details Show answer
 
-Ululon
+Alahen
 *courage* (as a name)
 :::
 
@@ -257,9 +257,9 @@ Beginner used **-n** for a person’s or place’s name. You can also mark a **t
 
 > `zahaben vezehen.`
 >
-> z-Uhubun | v-Uzunun
+> z-Ahaben | v-Ezehen
 >
-> "Uhubun sings Uzunun" (that titled song).
+> "Ahaben sings Ezehen" (that titled song).
 
 The rest of the role map (same **-n**):
 
@@ -303,17 +303,17 @@ English often writes a given name plus family as two words. In Agalan a short mu
 
 > `zuhudexaloden vowogal.`
 >
-> z-Oduna-x-Alanen | v-walk
+> z-Uhude-x-Aloden | v-walk
 >
-> "Odunaxalanen walks."
+> "Uhudexaloden walks."
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `zuhudexaloden` | nativized multipart (roots + mid-word **`x`**) | *Odunaxalanen* (*wish*×*guidance*: one person) |
+| `zuhudexaloden` | nativized multipart (roots + mid-word **`x`**) | *Uhudexaloden* (*wish*×*guidance*: one person) |
 | `duhudexaloden`, `buhudexaloden` | same name in other slots | one named place / person as object or argument |
 | `zagavexedehen`, `zagavexedehexowoden` | sense / shop label (two or more lexicon roots) | *Coffee-Tea*; *Coffee-Tea-Water* |
 
-A nativized loan (adapted Agalan root + ordinary ending) uses the same four last letters as any content word. A **lexical compound** is also one slot-filler: one stem, not mid-word **`x`** (`zabedelohohul` *bedroom*).
+A nativized loan (adapted Agalan root + ordinary ending) uses the same four last letters as any content word. A **lexical compound** is also one slot-filler: one stem, not mid-word **`x`** (`zebedalahazal` *bedroom*).
 
 **Compare with:** adjacent bare same-role words (`zuhuden zaloden`) are two people in a [join](joins.md).
 
@@ -323,9 +323,9 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 
 > `zubugan vezebel.`
 >
-> z-Abogon | v-tell
+> z-Ubugan | v-tell
 >
-> "Abogon announces." (office handle on first mention)
+> "Ubugan announces." (office handle on first mention)
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -334,7 +334,7 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 
 > `zubugaxalahen.`
 >
-> z-Abogo-x-Ululon
+> z-Ubuga-x-Alahen
 >
 > "Book-Courage" (full title of that office)
 
@@ -371,9 +371,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
-| *Edozen* (office handle) | `ezuden` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
+| *Ezuden* (office handle) | `ezuden` | |
 | *hospital-bed* (ward name) | `ahazexebedan` | |
 | *diagnosis-hospital* (office full title) | `ezudexahazen` | |
 | *bed* | `ebedal` | |
@@ -383,7 +383,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *run* | `varahal` | `arahal` *run* |
 | *Hospital* (named frame) | `hahazen` | `ahazel` *hospital* |
 | *Azawan* (brand) | `gazawan` | `azawan` *Azawan* |
-| *Uhubun* (brand) | `gahaben` | `ahaben` *Uhubun* |
+| *Ahaben* (brand) | `gahaben` | `ahaben` *Ahaben* |
 | *Temperature* (named standard) | `heveden` | `evedel` *thermometer* |
 | *Sleep* (titled rest) | `vezeban` | `ezebal` *sleep* |
 | *Intrusion* (titled action) | `vazehen` | `azehel` *syringe* |
@@ -397,7 +397,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 ::: details Show answer
 `zazawan vehahel hahazen.`
 
-z-Azawan | v-sit | h-Ohozon
+z-Azawan | v-sit | h-Ahazen
 :::
 
 **2.** *The bed is an Azawan* (the brand).
@@ -408,12 +408,12 @@ z-Azawan | v-sit | h-Ohozon
 z-bed | g-Azawan
 :::
 
-**3.** *Uhubun observes Sleep* (the ward’s titled rest hour).
+**3.** *Ahaben observes Sleep* (the ward’s titled rest hour).
 
 ::: details Show answer
 `zahaben vezeban.`
 
-z-Uhubun | v-Eleben
+z-Ahaben | v-Ezeban
 :::
 
 **4.** *Azawan sees Hospital-Bed.* (the ward’s phrasal name)
@@ -421,31 +421,31 @@ z-Uhubun | v-Eleben
 ::: details Show answer
 `zazawan vahahal dahazexebedan.`
 
-z-Azawan | v-see | d-Ohozo-x-Abeden
+z-Azawan | v-see | d-Ahaze-x-Ebedan
 :::
 
-**5.** *Edozen sees Uhubun.* (office handle, first mention)
+**5.** *Ezuden sees Ahaben.* (office handle, first mention)
 
 ::: details Show answer
 `zezuden vahahal dahaben.`
 
-z-Edozen | v-see | d-Uhubun
+z-Ezuden | v-see | d-Ahaben
 :::
 
-**6.** *Ululon performs Intrusion* (that titled procedure).
+**6.** *Alahen performs Intrusion* (that titled procedure).
 
 ::: details Show answer
 `zalahen vazehen.`
 
-z-Ululon | v-Ozorun
+z-Alahen | v-Azehen
 :::
 
-**7.** *Ululon performs Emergency* (that titled drill).
+**7.** *Alahen performs Emergency* (that titled drill).
 
 ::: details Show answer
 `zalahen vamaban.`
 
-z-Ululon | v-Amubun
+z-Alahen | v-Amaban
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -454,15 +454,15 @@ z-Ululon | v-Amubun
 
 ::: details Show answer
 
-z-Uhubun | v-sit | h-Ohozon
-*Uhubun sits according to Hospital* (the named frame).
+z-Ahaben | v-sit | h-Ahazen
+*Ahaben sits according to Hospital* (the named frame).
 :::
 
 **2.** `zazawan varadal heveden.`
 
 ::: details Show answer
 
-z-Azawan | v-write | h-Edehen
+z-Azawan | v-write | h-Eveden
 *Azawan writes according to Temperature* (the named standard).
 :::
 
@@ -470,15 +470,15 @@ z-Azawan | v-write | h-Edehen
 
 ::: details Show answer
 
-z-bed | g-Uhubun
-*The bed is an Uhubun* (the brand).
+z-bed | g-Ahaben
+*The bed is an Ahaben* (the brand).
 :::
 
 **4.** `zahazexebedan varadal.`
 
 ::: details Show answer
 
-z-Ohozo-x-Abeden | v-write
+z-Ahaze-x-Ebedan | v-write
 
 *Hospital-Bed writes.* (the ward, as an office)
 :::
@@ -487,15 +487,15 @@ z-Ohozo-x-Abeden | v-write
 
 ::: details Show answer
 
-z-Uhubun | v-Ozorun
-*Uhubun performs Intrusion* (that titled procedure).
+z-Ahaben | v-Azehen
+*Ahaben performs Intrusion* (that titled procedure).
 :::
 
 **6.** `zezudexahazen vahahal dazawan.`
 
 ::: details Show answer
 
-z-Edoze-x-Ohozon | v-see | d-Azawan
+z-Ezude-x-Ahazen | v-see | d-Azawan
 *Diagnosis-Hospital sees Azawan.* (that office’s full title)
 :::
 
@@ -503,8 +503,8 @@ z-Edoze-x-Ohozon | v-see | d-Azawan
 
 ::: details Show answer
 
-z-Ululon | v-run | h-Amubun
-*Ululon runs in Emergency* (the named frame).
+z-Alahen | v-run | h-Amaban
+*Alahen runs in Emergency* (the named frame).
 :::
 
 

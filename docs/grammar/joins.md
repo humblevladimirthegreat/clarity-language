@@ -30,9 +30,9 @@ Ending **-l** is ordinary English with no extra words: these are the only items.
 
 > `zazawan zalahen zam.`
 >
-> [z-Azawan | z-Ululon | z-and.open]
+> [z-Azawan | z-Alahen | z-and.open]
 >
-> "Azawan and Ululon (and possibly more)."
+> "Azawan and Alahen (and possibly more)."
 
 > `vowogal varahal vam.`
 >
@@ -58,9 +58,9 @@ Objects and extra nouns list the same way. Two `/d/` objects close with `dal`; t
 
 > `zazawan balahen bahaben bal vezebel.`
 >
-> z-Azawan | [b-Ululon | b-Uhubun | b-and] | v-tell
+> z-Azawan | [b-Alahen | b-Ahaben | b-and] | v-tell
 >
-> "Azawan tells Ululon and Uhubun."
+> "Azawan tells Alahen and Ahaben."
 
 ### Choice (`o`)
 <a id="empty-allowed-om"></a>
@@ -234,23 +234,23 @@ A clause is long, so a join that waits until the end would leave you holding two
 
 > `zazawan vowogal xam zalahen varahal.`
 >
-> [z-Azawan | v-walk | x-and.open | z-Ululon | v-run]
+> [z-Azawan | v-walk | x-and.open | z-Alahen | v-run]
 >
-> "Azawan walks and Ululon runs (and possibly more)."
+> "Azawan walks and Alahen runs (and possibly more)."
 
 > `zazawan vowogal xol zalahen varahal xol zahaben vezebal.`
 >
-> [z-Azawan | v-walk | x-or-exactly-one | z-Ululon | v-run | x-or-exactly-one | z-Uhubun | v-sleep]
+> [z-Azawan | v-walk | x-or-exactly-one | z-Alahen | v-run | x-or-exactly-one | z-Ahaben | v-sleep]
 >
-> "Azawan walks, or Ululon runs, or Uhubun sleeps: exactly one of the three."
+> "Azawan walks, or Alahen runs, or Ahaben sleeps: exactly one of the three."
 
 Repeat the same join word and the list stays flat. Switch to a **different** join word and everything before it closes as one group: `A xol B xal C` is *(A or B) and C* ([clause forms](join-across-roles.md#vp-clause-forms)). The set joins **a** / **o** / **u** do not care about order, so you can put the group you want first. For a group on the right, end the sentence and start the next one with the join: the join then takes the **whole** next sentence.
 
 > `zazawan vowogal. xan zalahen varahal xol zahaben vezebal.`
 >
-> z-Azawan | v-walk . x-and-then | [z-Ululon | v-run | x-or-exactly-one | z-Uhubun | v-sleep]
+> z-Azawan | v-walk . x-and-then | [z-Alahen | v-run | x-or-exactly-one | z-Ahaben | v-sleep]
 >
-> "Azawan walks. Then Ululon runs or Uhubun sleeps."
+> "Azawan walks. Then Alahen runs or Ahaben sleeps."
 
 A clause join never sits on one clause alone. To deny or single out one clause, put the join on the part you mean: **`vowogal vul`** *does not walk*, **`zazawan zal`** *only Azawan*.
 
@@ -277,8 +277,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *bread* | `ebewel` | |
 | *tomato* | `adedol` | |
 | *mango* | `amegol` | |
@@ -309,12 +309,12 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 [z-mango | z-melon | z-or-exactly-one]
 :::
 
-**3.** *just Uhubun*
+**3.** *just Ahaben*
 
 ::: details Show answer
 `zahaben zal.`
 
-[z-Uhubun | z-and]
+[z-Ahaben | z-and]
 :::
 
 **4.** *a grape (optional)*
@@ -349,12 +349,12 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 [z-Azawan | z-rank/more]
 :::
 
-**8.** *Ululon punches and Azawan sees Uhubun (and possibly more).*
+**8.** *Alahen punches and Azawan sees Ahaben (and possibly more).*
 
 ::: details Show answer
 `zalahen vabahel xam zazawan dahaben vahahal.`
 
-[z-Ululon | v-punch | x-and.open | z-Azawan | d-Uhubun | v-see]
+[z-Alahen | v-punch | x-and.open | z-Azawan | d-Ahaben | v-see]
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
@@ -399,36 +399,36 @@ z-everything-but
 
 ::: details Show answer
 
-[z-Uhubun | z-and.open]
+[z-Ahaben | z-and.open]
 
-*Uhubun, for one* / *Uhubun (and possibly more)*
+*Ahaben, for one* / *Ahaben (and possibly more)*
 :::
 
 **6.** `zahaben zel.`
 
 ::: details Show answer
 
-[z-Uhubun | z-rank/more]
+[z-Ahaben | z-rank/more]
 
-*only Uhubun matters* / *Uhubun first*
+*only Ahaben matters* / *Ahaben first*
 :::
 
 **7.** `zalahen dabezul vabahel xam zazawan vezogel.`
 
 ::: details Show answer
 
-[z-Ululon | d-basket | v-punch | x-and.open | z-Azawan | v-scream]
+[z-Alahen | d-basket | v-punch | x-and.open | z-Azawan | v-scream]
 
-*Ululon punches a basket and Azawan screams (and possibly more).*
+*Alahen punches a basket and Azawan screams (and possibly more).*
 :::
 
 **8.** `zalahen vezogel xam zazawan valahal.`
 
 ::: details Show answer
 
-[z-Ululon | v-scream | x-and.open | z-Azawan | v-lie]
+[z-Alahen | v-scream | x-and.open | z-Azawan | v-lie]
 
-*Ululon screams and Azawan lies (and possibly more).*
+*Alahen screams and Azawan lies (and possibly more).*
 :::
 
 ## Intermediate {#intermediate}
@@ -442,9 +442,9 @@ When English would say two people are *as ADJ as* each other, write a **rank** j
 
 > `zazawan zalahen zael gamadam.`
 >
-> [z-Azawan | z-Ululon | z-equal-rank | g-challenge]
+> [z-Azawan | z-Alahen | z-equal-rank | g-challenge]
 >
-> "Azawan is as challenging as Ululon."
+> "Azawan is as challenging as Alahen."
 
 **Compare with:** *more / most* and *least* use **`e`** / **`ue`** plus the same shared adjective — [comparatives](comparatives.md).
 
@@ -469,9 +469,9 @@ Kind / domain for **ua** / **uo** is context or SHARED `/ɡ/` — [universals, d
 
 > `zazawan zalahen zahaben zuel.`
 >
-> [z-Azawan | z-Ululon | z-Uhubun | z-rank/less]
+> [z-Azawan | z-Alahen | z-Ahaben | z-rank/less]
 >
-> "Uhubun, then Ululon, then Azawan." (last first)
+> "Ahaben, then Alahen, then Azawan." (last first)
 
 **Compare with:** plain **`u`** is *not* / *none of* the listed, not an invert stack. *Every cat* uses SHARED kind after **`zual`**: `zual gagadal`.
 
@@ -482,9 +482,9 @@ Rank **`e`** puts the first item at the **top** (*A matters more than B*). When 
 
 > `zazawan zalahen zahaben zoel.`
 >
-> [z-Azawan | z-Ululon | z-Uhubun | z-in-order]
+> [z-Azawan | z-Alahen | z-Ahaben | z-in-order]
 >
-> "Azawan, then Ululon, then Uhubun."
+> "Azawan, then Alahen, then Ahaben."
 
 | Arity | Closed **-l** | Open **-m** |
 |-------|---------------|-------------|
@@ -502,9 +502,9 @@ A sequence does not say which item is better. With two number endpoints and a SH
 
 > `zazawan zalahen zahaben zeol.`
 >
-> [z-Azawan | z-Ululon | z-Uhubun | z-in-reverse-order]
+> [z-Azawan | z-Alahen | z-Ahaben | z-in-reverse-order]
 >
-> "Uhubun, then Ululon, then Azawan."
+> "Ahaben, then Alahen, then Azawan."
 
 Its main use is with one number. `zraval zoel` runs **up** from 5 (*5 or more*). `zraval zeol` runs **down** from 5 (*5 or fewer*): an inclusive [ray](numbers-applied.md#numeric-thresholds) the other way.
 
@@ -699,9 +699,9 @@ SHARED material has to be able to describe what the join lists. After a noun joi
 
 > `zazawan zalahen zal hahegem vowogal.`
 >
-> [z-Azawan | z-Ululon | z-and] | h-intensity | v-walk
+> [z-Azawan | z-Alahen | z-and] | h-intensity | v-walk
 >
-> "Azawan and Ululon walk intensely."
+> "Azawan and Alahen walk intensely."
 
 ### Fence nesting {#fence-nesting}
 
@@ -725,8 +725,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *wine* | `awahel` | |
 | *flower* | `avavul` | |
 | *ring* | `erehal` | |
@@ -755,12 +755,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-everything | g-ring]
 :::
 
-**3.** *(happy Azawan) and (happy Ululon)*
+**3.** *(happy Azawan) and (happy Alahen)*
 
 ::: details Show answer
 `zazawan zalahen zal gazaham.`
 
-[z-Azawan | z-Ululon | z-and | g-happy]
+[z-Azawan | z-Alahen | z-and | g-happy]
 :::
 
 **4.** *(wine or a flower) and a ring*
@@ -771,20 +771,20 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [[z-wine | z-flower | z-or-exactly-one] | z-ring | z-and]
 :::
 
-**5.** *Azawan and Ululon see Uhubun.*
+**5.** *Azawan and Alahen see Ahaben.*
 
 ::: details Show answer
 `zazawan zalahen zal dahaben vahahal.`
 
-[z-Azawan | z-Ululon | z-and] | d-Uhubun | v-see
+[z-Azawan | z-Alahen | z-and] | d-Ahaben | v-see
 :::
 
-**6.** *at least Uhubun*
+**6.** *at least Ahaben*
 
 ::: details Show answer
 `zahaben zaom.`
 
-[z-Uhubun | z-and/or.open]
+[z-Ahaben | z-and/or.open]
 :::
 
 **7.** *anything but the wine*
@@ -795,28 +795,28 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-wine | z-anything-but]
 :::
 
-**8.** *Ululon last, period*
+**8.** *Alahen last, period*
 
 ::: details Show answer
 `zalahen zuel.`
 
-[z-Ululon | z-rank/less]
+[z-Alahen | z-rank/less]
 :::
 
-**9.** *Azawan kisses first, then Ululon.*
+**9.** *Azawan kisses first, then Alahen.*
 
 ::: details Show answer
 `zazawan zalahen zoel vegezal.`
 
-[z-Azawan | z-Ululon | z-in-order] | v-kiss
+[z-Azawan | z-Alahen | z-in-order] | v-kiss
 :::
 
-**10.** *Uhubun kisses first, then Ululon, then Azawan.* (list Azawan first)
+**10.** *Ahaben kisses first, then Alahen, then Azawan.* (list Azawan first)
 
 ::: details Show answer
 `zazawan zalahen zahaben zeol vegezal.`
 
-[z-Azawan | z-Ululon | z-Uhubun | z-in-reverse-order] | v-kiss
+[z-Azawan | z-Alahen | z-Ahaben | z-in-reverse-order] | v-kiss
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -852,9 +852,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 
-[v-kiss | v-see | v-and.open] | d-Uhubun
+[v-kiss | v-see | v-and.open] | d-Ahaben
 
-*kisses and sees Uhubun (and possibly more)*
+*kisses and sees Ahaben (and possibly more)*
 :::
 
 **5.** `vegezal vabahel val vul.`
@@ -897,9 +897,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 
-[z-Uhubun | z-in-order] | d-ring | v-see
+[z-Ahaben | z-in-order] | d-ring | v-see
 
-*Starting with Uhubun, they see the ring.*
+*Starting with Ahaben, they see the ring.*
 :::
 
 ## Advanced {#advanced}
@@ -1011,8 +1011,8 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *page* | `abehel` | |
 | *pen* | `ebewul` | |
 | *dove* | `adavul` | |
@@ -1044,20 +1044,20 @@ NAME[z-and]
 [z-dove | z-page | z-pen | z-anything]
 :::
 
-**4.** *Azawan and (just Uhubun)*
+**4.** *Azawan and (just Ahaben)*
 
 ::: details Show answer
 `zazawan ^ zahaben zal ^ zam.`
 
-[z-Azawan | SCOPE[z-Uhubun | z-and] | z-and.open]
+[z-Azawan | SCOPE[z-Ahaben | z-and] | z-and.open]
 :::
 
-**5.** *someone other than Ululon*
+**5.** *someone other than Alahen*
 
 ::: details Show answer
 `zalahen zur.`
 
-[z-Ululon | z-something-else]
+[z-Alahen | z-something-else]
 :::
 
 #### Agalan → English {#advanced-agalan-to-english}

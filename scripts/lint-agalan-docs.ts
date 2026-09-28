@@ -336,7 +336,7 @@ function main(): void {
 
   for (const file of files) {
     const source = readFileSync(file, "utf8");
-    // `SELF` slots are checked as the unset default (`zugobon`, `z-speaker`); no newlines change.
+    // `SELF` slots are checked as the unset default (`zeman`, `z-speaker`); no newlines change.
     const original = fillSelf(source);
     const rel = relative(rootDir, file);
     const issues = lintAgalanMarkdown(original, tables);

@@ -87,7 +87,7 @@ export function rewriteMarkdown(
   /** One inline span or one fence line, routed by its lint class. */
   const rewriteLine = (text: string, index: number, onlyReadsAsAgalan = false): string => {
     if (!text.trim()) return text;
-    // Classify with the learner-name slot filled, as the lint does (`zSELFn` → `zugobon`).
+    // Classify with the learner-name slot filled, as the lint does (`zSELFn` → `zeman`).
     const cls = classifyAgalanSpan(fillSelf(text));
     const allowed = onlyReadsAsAgalan ? cls !== "template" && REWRITE_CLASSES.has(cls) : REWRITE_CLASSES.has(cls);
     if (allowed) {

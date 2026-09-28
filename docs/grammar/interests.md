@@ -143,8 +143,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *tent* | `ededul` | |
 | *backpack* | `abul` | |
 | *flashlight* | `avehal` | |
@@ -305,7 +305,7 @@ Raw feeling (contacting a sensation without judgment) may go unlabeled. Full com
 ### Prescription (`the`): ought this act for this interest
 <a id="interest-force"></a>
 
-When English puts *should* / *ought to* on the **doing** for a named interest (*Uhubun ought to sing to serve survival*), put `/th/` on the clause: interest root, mid-word **`th`**, **`e`**, then an ending. The **host verb** names the act that ought to count toward the interest. Prescription **`the`** gives the clause **deontic** force: you are stating obligation, not reporting that the act is already happening.
+When English puts *should* / *ought to* on the **doing** for a named interest (*Ahaben ought to sing to serve survival*), put `/th/` on the clause: interest root, mid-word **`th`**, **`e`**, then an ending. The **host verb** names the act that ought to count toward the interest. Prescription **`the`** gives the clause **deontic** force: you are stating obligation, not reporting that the act is already happening.
 
 That ending says why you think a move is welcome. Use **-l** when the person invited this move, explicitly or through a clear standing invitation. Use **-m** for an unsolicited offer meant to serve the interest. Use **-r** for a trial: the move is worth trying to see whether it serves the interest, not a settled recommendation. These endings describe the move's warrant and aim, not whether it succeeds. How firmly you put the act on the addressee stays on `/y/` (**`yel`** / **`yem`**, **`yal`** / **`yam`**). If no such warrant applies, drop **`the`**.
 
@@ -331,23 +331,23 @@ That ending says why you think a move is welcome. Use **-l** when the person inv
 
 > `zahaben vezehel thehethel.`
 >
-> z-Uhubun | v-sing | th-survival-ought-invited
+> z-Ahaben | v-sing | th-survival-ought-invited
 >
-> "Uhubun ought to sing to serve survival (Uhubun asked for a move)."
+> "Ahaben ought to sing to serve survival (Ahaben asked for a move)."
 
 > `zalahen vabayal thunether.`
 >
-> z-Ululon | v-bow | th-relatedness-ought-trial
+> z-Alahen | v-bow | th-relatedness-ought-trial
 >
-> "Ululon ought to try bowing to serve relatedness (worth a try)."
+> "Alahen ought to try bowing to serve relatedness (worth a try)."
 
 A move meant to **prevent** harm to the interest is a *so that … not* dependent ([so that](dependents.md#so-that)): **`hagom`** + **`burl`**, then the outcome to keep off.
 
 > `zalahen vabayal thunethem hagom burl zazawan vadebal.`
 >
-> z-Ululon | v-bow | th-relatedness-ought-offered | [h-so-that | b-lest-clause] | z-Azawan | v-departure
+> z-Alahen | v-bow | th-relatedness-ought-offered | [h-so-that | b-lest-clause] | z-Azawan | v-departure
 >
-> "Ululon ought to bow for relatedness, so that Azawan does not leave."
+> "Alahen ought to bow for relatedness, so that Azawan does not leave."
 
 ### Motive (`tho`): preference standing
 <a id="interest-preference"></a>
@@ -360,7 +360,7 @@ English *have to* / *need to* / *doing this for…* often names a **motive**: wh
 >
 > "Azawan tells for relatedness (internal reason)."
 
-**Not the same job as:** prescription **`the`** (*this act ought* to serve this interest). **`tho`** describes *doing for this interest*. On `/ɡ/`, the same stance is **your** noun’s purpose (*my gift for relatedness*). *Walks so that Ululon sits* is an intended **event** ([so that](dependents.md#so-that), **`hagom`**), not an interest. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`hohem`). *Tells on behalf of Ululon* is [proxy](relations.md#proxy) (`hadum`).
+**Not the same job as:** prescription **`the`** (*this act ought* to serve this interest). **`tho`** describes *doing for this interest*. On `/ɡ/`, the same stance is **your** noun’s purpose (*my gift for relatedness*). *Walks so that Alahen sits* is an intended **event** ([so that](dependents.md#so-that), **`hagom`**), not an interest. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`hohem`). *Tells on behalf of Alahen* is [proxy](relations.md#proxy) (`hadum`).
 
 A reason held **to keep a cost off** is a *so that … not* dependent ([so that](dependents.md#so-that), **`hagom burl`**), as with prescription.
 
@@ -389,14 +389,14 @@ Beginner already attached `/ɡ/` after a noun and `/th/` on the clause for met a
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `g…tha…` after a noun | praise: **your** noun serves the interest | *my gift (serves relatedness)* (`gonogotha…`) |
-| `g…thu…` after a noun | criticism: **your** noun detracts from the interest | *my book (detracts from competence)* (`golozothu…`) |
-| `g…tho…` after a noun | **your** noun’s purpose is this interest | *my gift for relatedness* (`gonogotho…`) |
-| `/w/` interest + `gobem` | the same stances on a noun that is **not** yours | *the gathering (detracts from autonomy)* (`walodothu… gobem`) |
+| `g…tha…` after a noun | praise: **your** noun serves the interest | *my gift (serves relatedness)* (`gunetha…`) |
+| `g…thu…` after a noun | criticism: **your** noun detracts from the interest | *my book (detracts from competence)* (`gudathu…`) |
+| `g…tho…` after a noun | **your** noun’s purpose is this interest | *my gift for relatedness* (`gunetho…`) |
+| `/w/` interest + `gobem` | the same stances on a noun that is **not** yours | *the gathering (detracts from autonomy)* (`wabathu… gobem`) |
 | `gl-` + interest word | the same adjective before the **belonging** | `glunethal zebezol` |
-| `th…tha…` on the clause | the event serves the interest | *tells: competence is met* (`tholozotha…`) |
-| `th…the…` on the clause | deontic prescription | *ought … for this interest* (`thonogothe…`); ending = [invited / offered / trial](#interest-force) |
-| `th…tho…` on the clause | motive | *Azawan … (for relatedness)* (`thonogotho…`) |
+| `th…tha…` on the clause | the event serves the interest | *tells: competence is met* (`thudatha…`) |
+| `th…the…` on the clause | deontic prescription | *ought … for this interest* (`thunethe…`); ending = [invited / offered / trial](#interest-force) |
+| `th…tho…` on the clause | motive | *Azawan … (for relatedness)* (`thunetho…`) |
 | `/w/` before an interest `/ɡ/` | extra detail on that adjective | *very relatedness-serving* |
 
 On **`the`**, use **-l** for an invitation, **-m** for an offer, and **-r** for a trial. Prefer **-m** on **`thu` / `tho`** when that table’s dimension is unclear. Several interests are several `/ɡ/` or `/th/` words (`gudathal gunethal`), not stacked `th`-additions on one interest. The **host** noun or verb carries concrete vs abstract sense. `/w/` before a **interest** `/ɡ/` grades that adjective; `/w/` immediately before **`gobem`** is the interest.
@@ -443,9 +443,9 @@ Agalan has no set phrase for *thank you*. Say that what the other person did **m
 | `…thum behan` | the harm can be softened (default) | *I'm sorry* |
 | `…thur behan` | the harm is passing | *my bad* |
 
-The `/b/` can name anyone: `thunethum balahen.` owns a harm to Ululon, even when you are telling someone else.
+The `/b/` can name anyone: `thunethum balahen.` owns a harm to Alahen, even when you are telling someone else.
 
-**Compare with:** a met word with a `/b/` person (`thunetham balahen.`) says the act met **Ululon's** interest: *Ululon appreciated it*, not your thanks.
+**Compare with:** a met word with a `/b/` person (`thunetham balahen.`) says the act met **Alahen's** interest: *Alahen appreciated it*, not your thanks.
 
 ### Hopefully and other attitudes {#speaker-attitude}
 
@@ -479,21 +479,21 @@ English *may* / *is allowed to* says a restriction is lifted. Put **`thogel`**, 
 
 > `zazawan vowogal thogem balahen.`
 >
-> z-Azawan | v-walk | [th-PERMIT-granted | b-Ululon]
+> z-Azawan | v-walk | [th-PERMIT-granted | b-Alahen]
 >
-> "Ululon lets Azawan walk."
+> "Alahen lets Azawan walk."
 
 > `zahaben vehahel thogel.`
 >
-> z-Uhubun | v-sit | th-PERMIT-allowed
+> z-Ahaben | v-sit | th-PERMIT-allowed
 >
-> "Uhubun is allowed to sit (the rules allow it)."
+> "Ahaben is allowed to sit (the rules allow it)."
 
 > `zalahen vezebal thoger.`
 >
-> z-Ululon | v-sleep | th-PERMIT-tolerated
+> z-Alahen | v-sleep | th-PERMIT-tolerated
 >
-> "Ululon sleeps, and no one is stopping it."
+> "Alahen sleeps, and no one is stopping it."
 
 The negatives use the root **`ere`** (⛔ *no entry*) with the same endings.
 
@@ -518,27 +518,27 @@ The ending says **how binding the yes is**, on the same scale as [permission](#p
 
 > `zazawan vezebel thuxogem bahaben.`
 >
-> z-Azawan | v-tell | [th-CONSENT-given | b-Uhubun]
+> z-Azawan | v-tell | [th-CONSENT-given | b-Ahaben]
 >
-> "Azawan tells, and Uhubun said yes to it."
+> "Azawan tells, and Ahaben said yes to it."
 
 > `zazawan vezebel thuxogel bahaben.`
 >
-> z-Azawan | v-tell | [th-CONSENT-contract | b-Uhubun]
+> z-Azawan | v-tell | [th-CONSENT-contract | b-Ahaben]
 >
-> "Azawan tells, as Uhubun agreed to in advance."
+> "Azawan tells, as Ahaben agreed to in advance."
 
 > `zazawan vezebel thuxoger bahaben balahen bal.`
 >
-> z-Azawan | v-tell | [th-CONSENT-assumed | [b-Uhubun | b-Ululon | b-and]]
+> z-Azawan | v-tell | [th-CONSENT-assumed | [b-Ahaben | b-Alahen | b-and]]
 >
-> "Azawan tells, assuming Uhubun and Ululon are OK with it."
+> "Azawan tells, assuming Ahaben and Alahen are OK with it."
 
 > `zalahen vezebal thuxogem.`
 >
-> z-Ululon | v-sleep | th-CONSENT-given
+> z-Alahen | v-sleep | th-CONSENT-given
 >
-> "Ululon lets themself sleep."
+> "Alahen lets themself sleep."
 
 **-r** is allowed but visibly weaker. Choosing it makes *I assumed* part of the sentence instead of hiding it inside *they were fine with it*. On yourself, **-r** is half-hearted: `zSELFn vehahel thuxoger.` is *I suppose I'm OK with sitting*. **-l** on yourself is a vow: `zSELFn vehahel thuxogel.` is *I've committed myself to sitting*.
 
@@ -546,9 +546,9 @@ The ending says **how binding the yes is**, on the same scale as [permission](#p
 
 > `zSELFn vowogal thuxogel el bahaben.`
 >
-> z-SELF | v-walk | th-CONSENT-contract | [for | b-Uhubun]
+> z-SELF | v-walk | th-CONSENT-contract | [for | b-Ahaben]
 >
-> "I promise Uhubun I'll walk."
+> "I promise Ahaben I'll walk."
 
 The weaker endings stay weaker on purpose: **-m** is *I'll do it* (you can still back out), and **-r** cannot pass for a promise.
 
@@ -565,7 +565,7 @@ The negatives **`thuxerel`** / **`thuxerem`** / **`thuxerer`** use the same endi
 
 To check in, ask: `yom zazawan vezebel thuxogem.` (*Are you still OK with this?*).
 
-**Compare with:** permission **`thogem`** can come from anyone with the standing to grant it: `zazawan vezebel thogem balahen.` means Ululon allowed it, which is not the same as the listener agreeing. `zSELFn vehahel thogem.` is *I'm allowed to sit* (someone let me); `zSELFn vehahel thuxogem.` is *I let myself sit*.
+**Compare with:** permission **`thogem`** can come from anyone with the standing to grant it: `zazawan vezebel thogem balahen.` means Alahen allowed it, which is not the same as the listener agreeing. `zSELFn vehahel thogem.` is *I'm allowed to sit* (someone let me); `zSELFn vehahel thuxogem.` is *I let myself sit*.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -579,8 +579,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *church* | `ehehal` | |
 | *rosary* | `orozol` | |
 | *candle* | `ogal` | |
@@ -615,28 +615,28 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Azawan | v-tell | th-relatedness-ought-offered
 :::
 
-**2.** *Uhubun ought to sleep to serve pleasure (offered).*
+**2.** *Ahaben ought to sleep to serve pleasure (offered).*
 
 ::: details Show answer
 `zahaben vezebal thozethem.`
 
-z-Uhubun | v-sleep | th-pleasure-ought-offered
+z-Ahaben | v-sleep | th-pleasure-ought-offered
 :::
 
-**3.** *Ululon ought to scream to serve survival (Ululon asked for a move).*
+**3.** *Alahen ought to scream to serve survival (Alahen asked for a move).*
 
 ::: details Show answer
 `zalahen vezogel thehethel.`
 
-z-Ululon | v-scream | th-survival-ought-invited
+z-Alahen | v-scream | th-survival-ought-invited
 :::
 
-**4.** *Uhubun ought to try bowing for relatedness (worth a try).*
+**4.** *Ahaben ought to try bowing for relatedness (worth a try).*
 
 ::: details Show answer
 `zahaben vabayal thunether.`
 
-z-Uhubun | v-bow | th-relatedness-ought-trial
+z-Ahaben | v-bow | th-relatedness-ought-trial
 :::
 
 **5.** *Azawan prays for relatedness (internal reason).*
@@ -647,20 +647,20 @@ z-Uhubun | v-bow | th-relatedness-ought-trial
 z-Azawan | v-pray | th-relatedness-motive-internal
 :::
 
-**6.** *Ululon kneels for relatedness (the situation pulls it).*
+**6.** *Alahen kneels for relatedness (the situation pulls it).*
 
 ::: details Show answer
 `zalahen venehal thunethol.`
 
-z-Ululon | v-kneel | th-relatedness-motive-circumstantial
+z-Alahen | v-kneel | th-relatedness-motive-circumstantial
 :::
 
-**7.** *Uhubun hushes for relatedness (internal motive, as usual).*
+**7.** *Ahaben hushes for relatedness (internal motive, as usual).*
 
 ::: details Show answer
 `zahaben vahehal thunethom hual.`
 
-z-Uhubun | v-hush | th-relatedness-motive-internal | h-always-except
+z-Ahaben | v-hush | th-relatedness-motive-internal | h-always-except
 :::
 
 **8.** *Azawan bows for relatedness (a reason for now).*
@@ -671,12 +671,12 @@ z-Uhubun | v-hush | th-relatedness-motive-internal | h-always-except
 z-Azawan | v-bow | th-relatedness-motive-provisional
 :::
 
-**9.** *Ululon prays for competence (internal reason).*
+**9.** *Alahen prays for competence (internal reason).*
 
 ::: details Show answer
 `zalahen vebewal thudathom.`
 
-z-Ululon | v-pray | th-competence-motive-internal
+z-Alahen | v-pray | th-competence-motive-internal
 :::
 
 **10.** *Azawan’s church serves relatedness in the long term.*
@@ -695,28 +695,28 @@ z-Ululon | v-pray | th-competence-motive-internal
 z-Azawan | v-pray | th-competence-met-lasting | th-relatedness-motive-internal
 :::
 
-**12.** *Ululon ought to scream to serve survival (Ululon asked for a move); relatedness is the circumstantial motive.*
+**12.** *Alahen ought to scream to serve survival (Alahen asked for a move); relatedness is the circumstantial motive.*
 
 ::: details Show answer
 `zalahen vezogel thehethel thunethol.`
 
-z-Ululon | v-scream | th-survival-ought-invited | th-relatedness-motive-circumstantial
+z-Alahen | v-scream | th-survival-ought-invited | th-relatedness-motive-circumstantial
 :::
 
-**13.** *Uhubun lets Azawan kneel.*
+**13.** *Ahaben lets Azawan kneel.*
 
 ::: details Show answer
 `zazawan venehal thogem bahaben.`
 
-z-Azawan | v-kneel | [th-PERMIT-granted | b-Uhubun]
+z-Azawan | v-kneel | [th-PERMIT-granted | b-Ahaben]
 :::
 
-**14.** *Azawan hushes, assuming Ululon and Uhubun are OK with it.*
+**14.** *Azawan hushes, assuming Alahen and Ahaben are OK with it.*
 
 ::: details Show answer
 `zazawan vahehal thuxoger balahen bahaben bal.`
 
-z-Azawan | v-hush | [th-CONSENT-assumed | [b-Ululon | b-Uhubun | b-and]]
+z-Azawan | v-hush | [th-CONSENT-assumed | [b-Alahen | b-Ahaben | b-and]]
 :::
 
 **15.** *Resentful about the bell:* relatedness unmet; surge poured onto them.
@@ -733,36 +733,36 @@ z-Azawan | v-hush | [th-CONSENT-assumed | [b-Ululon | b-Uhubun | b-and]]
 
 ::: details Show answer
 
-z-Ululon | v-tell | th-relatedness-ought-trial
+z-Alahen | v-tell | th-relatedness-ought-trial
 
-*Ululon ought to try telling for relatedness (worth a try).*
+*Alahen ought to try telling for relatedness (worth a try).*
 :::
 
 **2.** `zahaben vezogel thehether.`
 
 ::: details Show answer
 
-z-Uhubun | v-scream | th-survival-ought-trial
+z-Ahaben | v-scream | th-survival-ought-trial
 
-*Uhubun ought to try screaming for survival (worth a try).*
+*Ahaben ought to try screaming for survival (worth a try).*
 :::
 
 **3.** `zalahen vebewal thudathol.`
 
 ::: details Show answer
 
-z-Ululon | v-pray | th-competence-motive-circumstantial
+z-Alahen | v-pray | th-competence-motive-circumstantial
 
-*Ululon prays for competence (circumstantial motive).*
+*Alahen prays for competence (circumstantial motive).*
 :::
 
 **4.** `zahaben venehal thunethom.`
 
 ::: details Show answer
 
-z-Uhubun | v-kneel | th-relatedness-motive-internal
+z-Ahaben | v-kneel | th-relatedness-motive-internal
 
-*Uhubun kneels for relatedness (internal reason).*
+*Ahaben kneels for relatedness (internal reason).*
 :::
 
 **5.** `zazawan vahehal thunethor.`
@@ -805,36 +805,36 @@ z-bell | [w-relatedness-unmet-modifiable | g-stimulus]
 
 ::: details Show answer
 
-z-Ululon | v-scream | th-survival-motive-internal | h-always-except
+z-Alahen | v-scream | th-survival-motive-internal | h-always-except
 
-*Ululon screams for survival (internal motive, as usual).*
+*Alahen screams for survival (internal motive, as usual).*
 :::
 
 **10.** `zalahen vebewal therel.`
 
 ::: details Show answer
 
-z-Ululon | v-pray | th-FORBID-disallowed
+z-Alahen | v-pray | th-FORBID-disallowed
 
-*Ululon is not allowed to pray (the rules forbid it).*
+*Alahen is not allowed to pray (the rules forbid it).*
 :::
 
 **11.** `zahaben vezebal thuxogem.`
 
 ::: details Show answer
 
-z-Uhubun | v-sleep | th-CONSENT-given
+z-Ahaben | v-sleep | th-CONSENT-given
 
-*Uhubun lets themself sleep.*
+*Ahaben lets themself sleep.*
 :::
 
 **12.** `zazawan vezogel thuxerem balahen.`
 
 ::: details Show answer
 
-z-Azawan | v-scream | [th-CONSENT-refused | b-Ululon]
+z-Azawan | v-scream | [th-CONSENT-refused | b-Alahen]
 
-*Azawan screams, though Ululon said no to it.*
+*Azawan screams, though Alahen said no to it.*
 :::
 
 **13.** `zehehal gudatham thuzum thebem.`

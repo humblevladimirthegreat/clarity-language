@@ -17,23 +17,23 @@ const SLOT_RE = /…|\.\.\.|[A-Z][A-Z0-9₀-₉]*/g;
 /** A character that continues a word (so a slot next to it is part of that word). */
 const WORD_CHAR_RE = /[a-z0-9#+_~@=±-]/;
 
-const WORD_FILLERS = ["zazawan", "vawalal", "gazawal", "bazawan", "zazawan vawalal", "dazawan", "hazawal", "wazawal"];
+const WORD_FILLERS = ["zazawan", "vowogal", "gazawal", "bazawan", "zazawan vowogal", "dazawan", "hazawal", "wazawal"];
 const NAMED_FILLERS: Record<string, string[]> = {
   HOOK: ["al", "am", "ul", "ol", "el", "aol"],
-  BODY: ["zazawan vawalal", "vawalal"],
+  BODY: ["zazawan vowogal", "vowogal"],
   LINKER: ["xal", "xol"],
   JOIN: ["zal", "zol", "zel"],
 };
 const LEADING_FILLERS = [
   "z", "d", "v", "g", "b", "h", "w", "x", "y", "th",
-  "zazawa", "vawala", "gazawa", "gonogo", "golozo", "thonogo", "walodo",
+  "zazawa", "vowoga", "gazawa", "gune", "guda", "thune", "waba",
   "g+", "g+2", "g~+", "g#", "grawozozo",
 ];
-const TRAILING_FILLERS = ["", "l", "n", "m", "r", "2", "2l", "2n", "azawal", "azawan", "awalal", "a", "ul"];
+const TRAILING_FILLERS = ["", "l", "n", "m", "r", "2", "2l", "2n", "azawal", "azawan", "owogal", "a", "ul"];
 const NUMBER_FILLERS = ["2", "3", "2l", "3l", "2n", "3n"];
-const ROOT_FILLERS = ["azawa", "awala"];
+const ROOT_FILLERS = ["azawa", "owoga"];
 /** Interest roots, for interest patterns (`g…tha…`). */
-const INTEREST_FILLERS = ["onogo", "olozo"];
+const INTEREST_FILLERS = ["une", "uda"];
 
 type Slot = { start: number; end: number; options: string[] };
 
@@ -47,8 +47,8 @@ function slotOptions(text: string, start: number, end: number): string[] {
   }
   if (name === "N") return NUMBER_FILLERS;
   if (name === "ROOT") return ROOT_FILLERS;
-  if (name === "DIR") return ["eweze", "ubuzu"];
-  if (name === "ANCHOR") return ["edone", "azawa"];
+  if (name === "DIR") return ["eweza", "onova"];
+  if (name === "ANCHOR") return ["eha", "azawa"];
   if (before && after) return ["", ...ROOT_FILLERS, ...INTEREST_FILLERS, "a", "x", "l"];
   return after ? LEADING_FILLERS : TRAILING_FILLERS;
 }
@@ -157,8 +157,8 @@ export function traceTemplate(text: string, tables: ClassifyTables): string[] {
   throw new Error("no filling of the template's slots parses");
 }
 
-const FRAGMENT_BEFORE = ["", "zazawan", "daxal zazawan", "doxal vawalal", "daxal daxal zazawan", "doxal doxal vawalal"];
-const FRAGMENT_AFTER = ["", "zazawan", "vawalal"];
+const FRAGMENT_BEFORE = ["", "zazawan", "daxal zazawan", "doxal vowogal", "daxal daxal zazawan", "doxal doxal vowogal"];
+const FRAGMENT_AFTER = ["", "zazawan", "vowogal"];
 
 /** Constructions a fragment exercises: the fragment with context supplied before and after. */
 export function traceFragment(text: string, tables: ClassifyTables): string[] {

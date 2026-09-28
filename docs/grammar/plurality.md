@@ -6,7 +6,7 @@ English *they* and *the Smiths* often mean a named person plus people around the
 
 ### Associative group (`-x`) {#associative}
 
-Without **-x**, the word picks **ovavo** person or thing. With **-x** after the ending, you name an **anchor plus nearby associates** (family, coworkers, unit, household, and so on). Who counts as an associate comes from the conversation and the situation; on a name it reads as *Azawan and associates*. (cue: **-x** ≈ set with the named anchor)
+Without **-x**, the word picks **one** person or thing. With **-x** after the ending, you name an **anchor plus nearby associates** (family, coworkers, unit, household, and so on). Who counts as an associate comes from the conversation and the situation; on a name it reads as *Azawan and associates*. (cue: **-x** ≈ set with the named anchor)
 
 > `zazawanx vowogal.`
 >
@@ -38,13 +38,13 @@ A first mention of a **kind as a group in this situation** uses **-lx** (concret
 >
 > "Azawan sees some dogs."
 
-An extra noun takes **-x** the same way. Here the recipient is Ululon and associates:
+An extra noun takes **-x** the same way. Here the recipient is Alahen and associates:
 
 > `zazawan balahenx vezebel.`
 >
-> z-Azawan | b-Ululon-x | v-tell
+> z-Azawan | b-Alahen-x | v-tell
 >
-> "Azawan tells Ululon and associates."
+> "Azawan tells Alahen and associates."
 
 **Compare with:** English *cats* can mean a kind in general. **-lx** is a **set in this situation**.
 
@@ -74,9 +74,9 @@ English *we* and *you* do not say whether the listener is in the group. That spl
 
 > `zalahenx vehahel.`
 >
-> z-Ululon-x | v-sit
+> z-Alahen-x | v-sit
 >
-> "You (Ululon) and your associates sit."
+> "You (Alahen) and your associates sit."
 
 > `zohan vowogal.`
 >
@@ -126,8 +126,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan |
 |---------|--------|
 | *Azawan* | `azawan` |
-| *Ululon* | `alahen` |
-| *Uhubun* | `ahaben` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
 | *ant* | `anadol` |
 | *basket* | `abezul` |
 | *sandwich* | `azal` |
@@ -169,12 +169,12 @@ z-ant-x | v-sit
 z-Azawan-x | d-basket | v-see
 :::
 
-**4.** *You (Ululon) and your associates see Uhubun.*
+**4.** *You (Alahen) and your associates see Ahaben.*
 
 ::: details Show answer
 `zalahenx dahaben vahahal.`
 
-z-Ululon-x | d-Uhubun | v-see
+z-Alahen-x | d-Ahaben | v-see
 :::
 
 **5.** *They (Azawan and associates) pour wine.* (Azawan already mentioned)
@@ -185,20 +185,20 @@ z-Ululon-x | d-Uhubun | v-see
 z-←Azawan.full-x | d-wine | v-pour
 :::
 
-**6.** *Ululon and associates sneak.*
+**6.** *Alahen and associates sneak.*
 
 ::: details Show answer
 `zalahenx vezevul.`
 
-z-Ululon-x | v-sneak
+z-Alahen-x | v-sneak
 :::
 
-**7.** *Ululon and associates punch Azawan.*
+**7.** *Alahen and associates punch Azawan.*
 
 ::: details Show answer
 `zalahenx dazawan vabahel.`
 
-z-Ululon-x | d-Azawan | v-punch
+z-Alahen-x | d-Azawan | v-punch
 :::
 
 **8.** *Do Azawan and associates scream?*
@@ -215,9 +215,9 @@ y-question | z-Azawan-x | v-scream
 
 ::: details Show answer
 
-z-Uhubun-x | v-sit
+z-Ahaben-x | v-sit
 
-*Uhubun and associates sit.*
+*Ahaben and associates sit.*
 :::
 
 **2.** `zazawanx dazal vahahal.`
@@ -251,9 +251,9 @@ z-interlocutors | d-basket | v-see
 
 ::: details Show answer
 
-z-Ululon-x | b-Azawan | v-tell
+z-Alahen-x | b-Azawan | v-tell
 
-*Ululon and associates tell Azawan.*
+*Alahen and associates tell Azawan.*
 :::
 
 **6.** `zazawarx danaval vahahal.`
@@ -269,18 +269,18 @@ z-←Azawan.full-x | d-knife | v-see
 
 ::: details Show answer
 
-z-Ululon-x | d-Uhubun | v-punch
+z-Alahen-x | d-Ahaben | v-punch
 
-*Ululon and associates punch Uhubun.*
+*Alahen and associates punch Ahaben.*
 :::
 
 **8.** `yol zahabenx vezogel.`
 
 ::: details Show answer
 
-y-question | z-Uhubun-x | v-scream
+y-question | z-Ahaben-x | v-scream
 
-*Do Uhubun and associates scream?*
+*Do Ahaben and associates scream?*
 :::
 
 ## Intermediate {#intermediate}
@@ -306,7 +306,7 @@ If the wrong reading would matter, say so. Use **`oha`** or a join for *you and 
 
 | Priority | Use | English |
 |----------|-----|---------|
-| Explicit join / except | listed members win | *Azawan and Ululon*; associates minus the listener |
+| Explicit join / except | listed members win | *Azawan and Alahen*; associates minus the listener |
 | Recently named cohort | family, team title already in the talk | that introduced group |
 | Institutional frame | this meeting, this household | the scene’s default group |
 | Open | no further cue | the listener may or may not be in the set |
@@ -423,8 +423,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agalan |
 |---------|--------|
 | *Azawan* | `azawan` |
-| *Ululon* | `alahen` |
-| *Uhubun* | `ahaben` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
 | *listener* | `ehan` |
 | *sheet-music* | `umuyul` |
 | *bell* | `ebevol` |
@@ -470,12 +470,12 @@ z-Azawan-x | v-sing
 z-Azawan | v-sing-x
 :::
 
-**5.** *Azawan and Ululon sing as one outing.* (listed members)
+**5.** *Azawan and Alahen sing as one outing.* (listed members)
 
 ::: details Show answer
 `zazawan zalahen zal vezehelx.`
 
-[z-Azawan | z-Ululon | z-and] | v-sing-x
+[z-Azawan | z-Alahen | z-and] | v-sing-x
 :::
 
 **6.** *The bells are heavy as a pile.*
@@ -486,20 +486,20 @@ z-Azawan | v-sing-x
 z-bell-x | g-heavy-x
 :::
 
-**7.** *Ululon and associates sneak as one outing.*
+**7.** *Alahen and associates sneak as one outing.*
 
 ::: details Show answer
 `zalahenx vezevulx.`
 
-z-Ululon-x | v-sneak-x
+z-Alahen-x | v-sneak-x
 :::
 
-**8.** *Ululon and associates punch Azawan as one shared act.*
+**8.** *Alahen and associates punch Azawan as one shared act.*
 
 ::: details Show answer
 `zalahenx dazawan vabahelx.`
 
-z-Ululon-x | d-Azawan | v-punch-x
+z-Alahen-x | d-Azawan | v-punch-x
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -508,9 +508,9 @@ z-Ululon-x | d-Azawan | v-punch-x
 
 ::: details Show answer
 
-y-Uhubun-x
+y-Ahaben-x
 
-*Hey, Uhubun and associates!*
+*Hey, Ahaben and associates!*
 :::
 
 **2.** `zumuyulx garagam.`
@@ -526,18 +526,18 @@ z-sheet-music-x | g-heavy
 
 ::: details Show answer
 
-z-Uhubun-x | v-sing
+z-Ahaben-x | v-sing
 
-*Uhubun and associates sing.* (together or each, or don’t care)
+*Ahaben and associates sing.* (together or each, or don’t care)
 :::
 
 **4.** `zalahen vezehelx.`
 
 ::: details Show answer
 
-z-Ululon | v-sing-x
+z-Alahen | v-sing-x
 
-*Ululon sings jointly (not a solo).*
+*Alahen sings jointly (not a solo).*
 :::
 
 **5.** `zazawanx vezehelx.`
@@ -571,9 +571,9 @@ y-Azawan-x
 
 ::: details Show answer
 
-z-Ululon-x | v-fight-x
+z-Alahen-x | v-fight-x
 
-*Ululon and associates fight as one outing.*
+*Alahen and associates fight as one outing.*
 :::
 
 ## See also

@@ -1,15 +1,15 @@
 emoji,stem,left,join,right,concrete,abstract,mnemonic
-🛏️,ebedalahevo,ebeda,l,ahevo,bedroom,sanctum,bed specifying house is the sleeping room; sanctum is a guarded inner place
-🚿,abevalahevo,abeva,l,ahevo,bathroom,,bath specifying house is the washing room
-🧥,erehelaguda,erehe,l,aguda,raincoat,,rain specifying coat is weather-shell clothing
-📗,azawolubuga,azawo,l,ubuga,textbook,canon,school specifying book is the assigned text; canon is the set text treated as given
-📓,aradelubuga,arade,l,ubuga,writing-book,,writing specifying book is for notes
-🚒,avahelahevo,avahe,l,ahevo,firehouse,,fire specifying house is the station that answers fire
-🪴,evevelahevo,eveve,l,ahevo,greenhouse,forcing,flower specifying house grows plants under glass; forcing is heat-driven growth you cannot see as a room
+🛏️,ebedalahaza,ebeda,l,ahaza,bedroom,sanctum,bed specifying house is the sleeping room; sanctum is a guarded inner place
+🚿,abevalahaza,abeva,l,ahaza,bathroom,,bath specifying house is the washing room
+🧥,erehelogodu,erehe,l,ogodu,raincoat,,rain specifying coat is weather-shell clothing
+📗,uzugulubuga,uzugu,l,ubuga,textbook,canon,school specifying book is the assigned text; canon is the set text treated as given
+📓,aradalubuga,arada,l,ubuga,writing-book,,writing specifying book is for notes
+🚒,avahelahaza,avahe,l,ahaza,firehouse,,fire specifying house is the station that answers fire
+🪴,avavulahaza,avavu,l,ahaza,greenhouse,forcing,flower specifying house grows plants under glass; forcing is heat-driven growth you cannot see as a room
 🫂,unelebeza,une,l,ebeza,friend,allegiance,bond specifying person is a friend; allegiance is the unobservable sidedness
 👨‍👩‍👧,ahadelebeza,ahade,l,ebeza,parent,,child specifying person is a parent
 🔔,owelebevo,owe,l,ebevo,doorbell,,door specifying bell is the call at the threshold
-🏫,ahadelazawo,ahade,l,azawo,kindergarten,,child specifying school is early-years school
+🏫,ahadeluzugu,ahade,l,uzugu,kindergarten,,child specifying school is early-years school
 🚶,owogalal,owoga,l,al,enter,,walk cited -l plus in is enter
 🚶,owogalam,owoga,l,am,mill-amid,,walk cited -l plus amid is mill-amid
 🚶,owogalaol,owoga,l,aol,mount,,walk cited -l plus on is mount

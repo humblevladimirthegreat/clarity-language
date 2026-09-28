@@ -80,7 +80,7 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Root(s) **V(CV)+** | content | start with a vowel; each later consonant starts a new syllable |
 | Mid-word `x` | productive compound seam | joins two roots inside one word |
 | Mid-word `th` | stance seam | joins an interest to its stance vowel ([interests](interests.md)), any other root to a scope vowel ([label scope](predication.md#label-scope)), or a direction to whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals)) |
-| Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`abedelohohu` *bedroom*) |
+| Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`ebedalahaza` *bedroom*) |
 | `-l` / `-m` / `-n` / `-r` | [word ending](word-endings.md) | audible end of the content word |
 | Optional `-x` | [plural](plurality.md) after the suffix | word-final `-lx` / `-mx` / `-nx` / `-rx` (letter `x`) |
 | Stand-in **`-rl` / `-rm`** | [dependent clauses](dependents.md#dependent-clauses) | word-final coda `rl` / `rm` |

@@ -64,8 +64,8 @@ Short drills for Beginner. Try each item before opening **Show answer**. The out
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *seedling* | `ozal` | |
 | *house plant* | `ahazul` | |
 | *tomato* | `adedol` | |
@@ -107,12 +107,12 @@ z-Azawan | v-pour | [th-if | b-bucket]
 z-house-plant | [g-only-if | b-window]
 :::
 
-**4.** *Uhubun sees Azawan if there is a window.*
+**4.** *Ahaben sees Azawan if there is a window.*
 
 ::: details Show answer
 `zahaben dazawan vahahal thowem bewedol.`
 
-z-Uhubun | d-Azawan | v-see | [th-if | b-window]
+z-Ahaben | d-Azawan | v-see | [th-if | b-window]
 :::
 
 **5.** *A flower grows only if there is sun.*
@@ -131,20 +131,20 @@ z-flower | [g-only-if | b-sun]
 z-Azawan | v-pour | [th-only-if | b-heat]
 :::
 
-**7.** *Ululon tells if there is fire.*
+**7.** *Alahen tells if there is fire.*
 
 ::: details Show answer
 `zalahen vezebel thowem bavahel.`
 
-z-Ululon | v-tell | [th-if | b-fire]
+z-Alahen | v-tell | [th-if | b-fire]
 :::
 
-**8.** *Ululon pours only if there is fire.*
+**8.** *Alahen pours only if there is fire.*
 
 ::: details Show answer
 `zalahen vorul thorom bavahel.`
 
-z-Ululon | v-pour | [th-only-if | b-fire]
+z-Alahen | v-pour | [th-only-if | b-fire]
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
@@ -162,9 +162,9 @@ z-flower | [g-if | b-sun]
 
 ::: details Show answer
 
-z-Uhubun | v-pour | [th-if | b-seedling]
+z-Ahaben | v-pour | [th-if | b-seedling]
 
-*Uhubun pours if there is a seedling.*
+*Ahaben pours if there is a seedling.*
 :::
 
 **3.** `zozal gorom bewedol.`
@@ -180,9 +180,9 @@ z-seedling | [g-only-if | b-window]
 
 ::: details Show answer
 
-z-Azawan | d-Uhubun | v-see | [th-if | b-window]
+z-Azawan | d-Ahaben | v-see | [th-if | b-window]
 
-*Azawan sees Uhubun if there is a window.*
+*Azawan sees Ahaben if there is a window.*
 :::
 
 **5.** `zadedol gowem bazahol.`
@@ -207,18 +207,18 @@ z-Azawan | v-tell | [th-if | b-heat]
 
 ::: details Show answer
 
-z-Ululon | v-pour | [th-if | b-fire]
+z-Alahen | v-pour | [th-if | b-fire]
 
-*Ululon pours if there is fire.*
+*Alahen pours if there is fire.*
 :::
 
 **8.** `zahaben vezebel thorom bavahel.`
 
 ::: details Show answer
 
-z-Uhubun | v-tell | [th-only-if | b-fire]
+z-Ahaben | v-tell | [th-only-if | b-fire]
 
-*Uhubun tells only if there is fire.*
+*Ahaben tells only if there is fire.*
 :::
 
 ## Intermediate {#intermediate}
@@ -229,20 +229,20 @@ z-Uhubun | v-tell | [th-only-if | b-fire]
 When the condition is a **full sentence**, keep the same pole and hang that sentence after **`barl`**. Write the pole, then **`barl`**, then the dependent. Keep that pair together, last in the main sentence (**`barl`** last). The inner sentence always names its subject. See [dependent clauses](dependents.md#dependent-clauses).
 
 ```text
-main sentence …  thadorom / theberom / …  barl   [dependent sentence]
+main sentence …  thowem / thorom / …  barl   [dependent sentence]
 ```
 
 > `zazawan vowogal thowem barl zalahen vezebal.`
 >
-> z-Azawan | v-walk | [th-if | b-that-clause] | z-Ululon | v-sleep
+> z-Azawan | v-walk | [th-if | b-that-clause] | z-Alahen | v-sleep
 >
-> "Azawan walks if Ululon sleeps."
+> "Azawan walks if Alahen sleeps."
 
 > `zazawan vowogal thorom barl zalahen vezebal.`
 >
-> z-Azawan | v-walk | [th-only-if | b-that-clause] | z-Ululon | v-sleep
+> z-Azawan | v-walk | [th-only-if | b-that-clause] | z-Alahen | v-sleep
 >
-> "Azawan walks only if Ululon sleeps."
+> "Azawan walks only if Alahen sleeps."
 
 Several conditions can sit inside `/b/` as a [join](joins.md) (`thowem bagayol buzul baom` *if clouds and/or snow*).
 
@@ -265,9 +265,9 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 
 > `zazawan vowogal thabem barl zalahen vezebal.`
 >
-> z-Azawan | v-walk | [th-because | b-that-clause] | z-Ululon | v-sleep
+> z-Azawan | v-walk | [th-because | b-that-clause] | z-Alahen | v-sleep
 >
-> "Azawan walks because Ululon sleeps."
+> "Azawan walks because Alahen sleeps."
 
 > `zerehel gabem bagayol.`
 >
@@ -277,9 +277,9 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 
 > `zazawan vowogal thedom barl zalahen vezebal.`
 >
-> z-Azawan | v-walk | [th-iff | b-that-clause] | z-Ululon | v-sleep
+> z-Azawan | v-walk | [th-iff | b-that-clause] | z-Alahen | v-sleep
 >
-> "Azawan walks if and only if Ululon sleeps."
+> "Azawan walks if and only if Alahen sleeps."
 
 **Related form:** *not because of X* (the outcome still holds; only the reason is denied) closes the pole with a [stance join](join-across-roles.md#stance-joins). Denying the outcome itself is `vowogal vul`.
 
@@ -293,17 +293,17 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 
 > `zazawan vowogal thowem burl zalahen vezebal.`
 >
-> z-Azawan | v-walk | [th-if | b-lest-clause] | z-Ululon | v-sleep
+> z-Azawan | v-walk | [th-if | b-lest-clause] | z-Alahen | v-sleep
 >
-> "Azawan walks unless Ululon sleeps."
+> "Azawan walks unless Alahen sleeps."
 
 *Even if* stacks the *although* pole **`hezem`** right before **`thowem`**. The condition is still not asserted, and the outcome holds either way.
 
 > `zazawan vowogal hezem thowem barl zalahen vezebal.`
 >
-> z-Azawan | v-walk | h-although | [th-if | b-that-clause] | z-Ululon | v-sleep
+> z-Azawan | v-walk | h-although | [th-if | b-that-clause] | z-Alahen | v-sleep
 >
-> "Azawan walks even if Ululon sleeps."
+> "Azawan walks even if Alahen sleeps."
 
 | Agalan | English |
 |--------|---------|
@@ -323,21 +323,21 @@ To highlight **how** a result comes about (the mechanism, not only that a condit
 
 > `zalahen vorul thegem thabem bavahel.`
 >
-> z-Ululon | v-pour | th-CAUSE | [th-because | b-fire]
+> z-Alahen | v-pour | th-CAUSE | [th-because | b-fire]
 >
-> "Fire is what makes Ululon pour."
+> "Fire is what makes Alahen pour."
 
 **Compare with:** *because* / *if* name the condition (`thabem` / `thowem`). **CAUSE** names how the link meshes.
 
 #### Make someone do it {#make}
 
-English *Azawan makes Ululon tell* has a causer and a causee. Keep the causee as the subject of the event. Put the causer in hosted `/b/` right after **`thegem`**, with no pole. The `/b/` word is the one who makes it happen.
+English *Azawan makes Alahen tell* has a causer and a causee. Keep the causee as the subject of the event. Put the causer in hosted `/b/` right after **`thegem`**, with no pole. The `/b/` word is the one who makes it happen.
 
 > `zalahen vezebel thegem bazawan.`
 >
-> z-Ululon | v-tell | [th-CAUSE | b-Azawan]
+> z-Alahen | v-tell | [th-CAUSE | b-Azawan]
 >
-> "Azawan makes Ululon tell."
+> "Azawan makes Alahen tell."
 
 When a pole follows **`thegem`**, the `/b/` belongs to the pole, as above (`thegem thabem bavahel` *because of fire, as mechanism*).
 
@@ -359,8 +359,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. A f
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *knob* | `anabal` | |
 | *overwhelm* | `ohum` | `ohul` *ocean* |
 | *bell* | `ebevol` | |
@@ -379,36 +379,36 @@ Short drills for Intermediate. Try each item before opening **Show answer**. A f
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
-**1.** *Azawan sits if Uhubun sees.*
+**1.** *Azawan sits if Ahaben sees.*
 
 ::: details Show answer
 `zazawan vehahel thowem barl zahaben vahahal.`
 
-z-Azawan | v-sit | [th-if | b-that-clause] | z-Uhubun | v-see
+z-Azawan | v-sit | [th-if | b-that-clause] | z-Ahaben | v-see
 :::
 
-**2.** *Uhubun tells only if Azawan sits.*
+**2.** *Ahaben tells only if Azawan sits.*
 
 ::: details Show answer
 `zahaben vezebel thorom barl zazawan vehahel.`
 
-z-Uhubun | v-tell | [th-only-if | b-that-clause] | z-Azawan | v-sit
+z-Ahaben | v-tell | [th-only-if | b-that-clause] | z-Azawan | v-sit
 :::
 
-**3.** *Ululon pours if and only if Azawan sits.*
+**3.** *Alahen pours if and only if Azawan sits.*
 
 ::: details Show answer
 `zalahen vorul thedom barl zazawan vehahel.`
 
-z-Ululon | v-pour | [th-iff | b-that-clause] | z-Azawan | v-sit
+z-Alahen | v-pour | [th-iff | b-that-clause] | z-Azawan | v-sit
 :::
 
-**4.** *Uhubun tells because Ululon pours.*
+**4.** *Ahaben tells because Alahen pours.*
 
 ::: details Show answer
 `zahaben vezebel thabem barl zalahen vorul.`
 
-z-Uhubun | v-tell | [th-because | b-that-clause] | z-Ululon | v-pour
+z-Ahaben | v-tell | [th-because | b-that-clause] | z-Alahen | v-pour
 :::
 
 **5.** *A bell because of pressure.*
@@ -419,20 +419,20 @@ z-Uhubun | v-tell | [th-because | b-that-clause] | z-Ululon | v-pour
 z-bell | [g-because | b-pressure]
 :::
 
-**6.** *Azawan sits only because Uhubun sees.*
+**6.** *Azawan sits only because Ahaben sees.*
 
 ::: details Show answer
 `zazawan vehahel thorom thabem barl zahaben vahahal.`
 
-z-Azawan | v-sit | th-only-if | [th-because | b-that-clause] | z-Uhubun | v-see
+z-Azawan | v-sit | th-only-if | [th-because | b-that-clause] | z-Ahaben | v-see
 :::
 
-**7.** *Ululon runs if the surge hits (as mechanism).*
+**7.** *Alahen runs if the surge hits (as mechanism).*
 
 ::: details Show answer
 `zalahen varahal thegem thowem bohum.`
 
-z-Ululon | v-run | th-CAUSE | [th-if | b-overwhelm]
+z-Alahen | v-run | th-CAUSE | [th-if | b-overwhelm]
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -441,36 +441,36 @@ z-Ululon | v-run | th-CAUSE | [th-if | b-overwhelm]
 
 ::: details Show answer
 
-z-Uhubun | v-sit | [th-if | b-that-clause] | z-Ululon | v-see
+z-Ahaben | v-sit | [th-if | b-that-clause] | z-Alahen | v-see
 
-*Uhubun sits if Ululon sees.*
+*Ahaben sits if Alahen sees.*
 :::
 
 **2.** `zazawan vorul thorom barl zahaben vezebel.`
 
 ::: details Show answer
 
-z-Azawan | v-pour | [th-only-if | b-that-clause] | z-Uhubun | v-tell
+z-Azawan | v-pour | [th-only-if | b-that-clause] | z-Ahaben | v-tell
 
-*Azawan pours only if Uhubun tells.*
+*Azawan pours only if Ahaben tells.*
 :::
 
 **3.** `zazawan vezebel thedom barl zahaben vahahal.`
 
 ::: details Show answer
 
-z-Azawan | v-tell | [th-iff | b-that-clause] | z-Uhubun | v-see
+z-Azawan | v-tell | [th-iff | b-that-clause] | z-Ahaben | v-see
 
-*Azawan tells if and only if Uhubun sees.*
+*Azawan tells if and only if Ahaben sees.*
 :::
 
 **4.** `zalahen varahal thabem bohum.`
 
 ::: details Show answer
 
-z-Ululon | v-run | [th-because | b-overwhelm]
+z-Alahen | v-run | [th-because | b-overwhelm]
 
-*Ululon runs because of the surge.*
+*Alahen runs because of the surge.*
 :::
 
 **5.** `zohum gabem bagabem.`
@@ -486,18 +486,18 @@ z-overwhelm | [g-because | b-pressure]
 
 ::: details Show answer
 
-z-Uhubun | v-tell | th-only-if | [th-because | b-that-clause] | z-Ululon | v-pour
+z-Ahaben | v-tell | th-only-if | [th-because | b-that-clause] | z-Alahen | v-pour
 
-*Uhubun tells only because Ululon pours.*
+*Ahaben tells only because Alahen pours.*
 :::
 
 **7.** `zalahen vorul thegem thowem bohum.`
 
 ::: details Show answer
 
-z-Ululon | v-pour | th-CAUSE | [th-if | b-overwhelm]
+z-Alahen | v-pour | th-CAUSE | [th-if | b-overwhelm]
 
-*Ululon pours if the surge hits (as mechanism).*
+*Alahen pours if the surge hits (as mechanism).*
 :::
 
 ## Advanced {#advanced}
@@ -523,9 +523,9 @@ English *If he'd left, the door would still be locked* is not this pole. Write b
 
 > `zowel galagel thomom thanem bral humum barl zalahen vadebal.`
 >
-> [z-door | g-locked] | th-RESIDUE | [th-INFERRED | b-later] | [h-as-of.bookmark | b-that-clause] | z-Ululon | v-departure
+> [z-door | g-locked] | th-RESIDUE | [th-INFERRED | b-later] | [h-as-of.bookmark | b-that-clause] | z-Alahen | v-departure
 >
-> "If Ululon had left, the door would still be locked."
+> "If Alahen had left, the door would still be locked."
 
 > `zomol thomom henum b_#22,7 thowem berehel.`
 >
@@ -542,9 +542,9 @@ English often uses *because* for **speaker grounds** (*they may be leaving becau
 
 > `zalahen thovom vadebal dahaben.`
 >
-> z-Ululon | th-MAY | v-departure | d-Uhubun
+> z-Alahen | th-MAY | v-departure | d-Ahaben
 >
-> "Ululon may be leaving Uhubun."
+> "Alahen may be leaving Ahaben."
 
 **For *could be*, use:** [MAY](knowing.md#may) (`ovo`). **`thabem`** is world-reason under the claim.
 
@@ -587,8 +587,8 @@ Short drills for Advanced. Try each item before opening **Show answer**. **`thab
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *test-tube* | `edel` | |
 | *melt* | `emehul` | |
 | *run* | `varahal` | |
@@ -607,12 +607,12 @@ Short drills for Advanced. Try each item before opening **Show answer**. **`thab
 
 #### English → Agalan {#advanced-english-to-agalan}
 
-**1.** *Ululon pours because Uhubun sees.* (the seeing is asserted)
+**1.** *Alahen pours because Ahaben sees.* (the seeing is asserted)
 
 ::: details Show answer
 `zalahen vorul thabem barl zahaben vahahal.`
 
-z-Ululon | v-pour | [th-because | b-that-clause] | z-Uhubun | v-see
+z-Alahen | v-pour | [th-because | b-that-clause] | z-Ahaben | v-see
 :::
 
 **2.** *Azawan pours if there is a test-tube.* (the test-tube is not asserted)
@@ -631,12 +631,12 @@ z-Azawan | v-pour | [th-if | b-test-tube]
 z-Azawan | th-MAY | v-pour
 :::
 
-**4.** *Azawan may be sitting, because Ululon pours.*
+**4.** *Azawan may be sitting, because Alahen pours.*
 
 ::: details Show answer
 `zazawan thovom vehahel thabem barl zalahen vorul.`
 
-z-Azawan | th-MAY | v-sit | [th-because | b-that-clause] | z-Ululon | v-pour
+z-Azawan | th-MAY | v-sit | [th-because | b-that-clause] | z-Alahen | v-pour
 :::
 
 **5.** *Melting happens if there is fire, as a standing pattern.*
@@ -647,12 +647,12 @@ z-Azawan | th-MAY | v-sit | [th-because | b-that-clause] | z-Ululon | v-pour
 [z-melt | [g-if | b-fire]] | h-always
 :::
 
-**6.** *If Ululon had poured, the test-tube would still be melting.*
+**6.** *If Alahen had poured, the test-tube would still be melting.*
 
 ::: details Show answer
 `zedel vemehul thomom thanem bral humum barl zalahen vorul.`
 
-z-test-tube | v-melt | th-RESIDUE | [th-INFERRED | b-later] | [h-as-of.bookmark | b-that-clause] | z-Ululon | v-pour
+z-test-tube | v-melt | th-RESIDUE | [th-INFERRED | b-later] | [h-as-of.bookmark | b-that-clause] | z-Alahen | v-pour
 :::
 
 #### Agalan → English {#advanced-agalan-to-english}
@@ -670,27 +670,27 @@ z-Azawan | v-pour | [th-because | b-fire]
 
 ::: details Show answer
 
-z-Ululon | v-pour | [th-if | b-test-tube]
+z-Alahen | v-pour | [th-if | b-test-tube]
 
-*Ululon pours if there is a test-tube.*
+*Alahen pours if there is a test-tube.*
 :::
 
 **3.** `zahaben thovom vahahal.`
 
 ::: details Show answer
 
-z-Uhubun | th-MAY | v-see
+z-Ahaben | th-MAY | v-see
 
-*Uhubun may be seeing.*
+*Ahaben may be seeing.*
 :::
 
 **4.** `zalahen thovom vorul thabem barl zahaben vahahal.`
 
 ::: details Show answer
 
-z-Ululon | th-MAY | v-pour | [th-because | b-that-clause] | z-Uhubun | v-see
+z-Alahen | th-MAY | v-pour | [th-because | b-that-clause] | z-Ahaben | v-see
 
-*Ululon may be pouring, because Uhubun sees.*
+*Alahen may be pouring, because Ahaben sees.*
 :::
 
 **5.** `zazawan varahal thowem bavahel hual.`
@@ -706,9 +706,9 @@ z-Azawan | v-run | [th-if | b-fire] | h-always
 
 ::: details Show answer
 
-z-test-tube | v-melt | th-RESIDUE | [th-INFERRED | b-later] | [h-as-of.bookmark | b-that-clause] | z-Ululon | v-pour
+z-test-tube | v-melt | th-RESIDUE | [th-INFERRED | b-later] | [h-as-of.bookmark | b-that-clause] | z-Alahen | v-pour
 
-*If Ululon had poured, the test-tube would still be melting.*
+*If Alahen had poured, the test-tube would still be melting.*
 :::
 
 ## See also

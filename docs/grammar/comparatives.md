@@ -10,19 +10,19 @@ English splits three nearby jobs on a quality like *challenging*. *More … than
 <a id="comparatives"></a>
 <a id="comparative-shared-scale"></a>
 
-When English would say *Azawan is more challenging than Ululon*, you put two people in order on one quality. Write both names, then the **rank join** **`zel`** (vowel **`e`**), then the adjective they share (`/ɡ/`). The first name sits higher on that quality than the second. Both may still sit high; the join only says who ranks higher. (cue: **`e`** ≈ order — the shared `/ɡ/` is the ladder)
+When English would say *Azawan is more challenging than Alahen*, you put two people in order on one quality. Write both names, then the **rank join** **`zel`** (vowel **`e`**), then the adjective they share (`/ɡ/`). The first name sits higher on that quality than the second. Both may still sit high; the join only says who ranks higher. (cue: **`e`** ≈ order — the shared `/ɡ/` is the ladder)
 
 > `zazawan zalahen zel gamadam.`
 >
-> [z-Azawan | z-Ululon | z-rank/more | g-challenge]
+> [z-Azawan | z-Alahen | z-rank/more | g-challenge]
 >
-> "Azawan is more challenging than Ululon."
+> "Azawan is more challenging than Alahen."
 
 > `zahaben zazawan zel gelavam.`
 >
-> [z-Uhubun | z-Azawan | z-rank/more | g-big]
+> [z-Ahaben | z-Azawan | z-rank/more | g-big]
 >
-> "Uhubun is bigger than Azawan."
+> "Ahaben is bigger than Azawan."
 
 ### Superlatives (`zel` + one name)
 <a id="superlatives"></a>
@@ -37,9 +37,9 @@ When English would say *the most challenging*, you are still ranking, but you na
 
 > `zahaben zel gazaham.`
 >
-> [z-Uhubun | z-rank/more | g-happy]
+> [z-Ahaben | z-rank/more | g-happy]
 >
-> "Uhubun is the happiest (of all)."
+> "Ahaben is the happiest (of all)."
 
 ### Degree (*much* / *slightly*)
 <a id="degree"></a>
@@ -48,9 +48,9 @@ English *much more* / *slightly more* adds **how large the gap is**, without giv
 
 > `zazawan zalahen zel wohul gamadam.`
 >
-> [z-Azawan | z-Ululon | z-rank/more | [w-ocean | g-challenge]]
+> [z-Azawan | z-Alahen | z-rank/more | [w-ocean | g-challenge]]
 >
-> "Azawan is much more challenging than Ululon."
+> "Azawan is much more challenging than Alahen."
 
 ### Equatives (`ae` + shared scale)
 <a id="equatives"></a>
@@ -61,15 +61,15 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 
 > `zazawan zalahen zael gamadam.`
 >
-> [z-Azawan | z-Ululon | z-equal-rank | g-challenge]
+> [z-Azawan | z-Alahen | z-equal-rank | g-challenge]
 >
-> "Azawan is as challenging as Ululon."
+> "Azawan is as challenging as Alahen."
 
 > `zalahen zahaben zael gazaham.`
 >
-> [z-Ululon | z-Uhubun | z-equal-rank | g-happy]
+> [z-Alahen | z-Ahaben | z-equal-rank | g-happy]
 >
-> "Ululon is as happy as Uhubun."
+> "Alahen is as happy as Ahaben."
 
 **Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zazawan gamadam` *Azawan is challenging*. Use **`ae`** when two people share a height on the quality. *Walks like a duck* is resemblance ([simile](relations.md#similative) `hemum`), not a shared score on a named scale.
 
@@ -77,9 +77,9 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 
 > `zazawan zalahen zaem gabadul.`
 >
-> [z-Azawan | z-Ululon | z-equal-rank.open | g-bright]
+> [z-Azawan | z-Alahen | z-equal-rank.open | g-bright]
 >
-> "Azawan is about as bright as Ululon."
+> "Azawan is about as bright as Alahen."
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -97,8 +97,8 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *slow* | `ezehom` | `ezehol` *snail* |
 | *haste* | `adehom` | `adehol` *dash* |
 | *agility* | `ahagum` | `ahagul` *field hockey* |
@@ -107,60 +107,60 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 
 #### English → Agalan {#beginner-english-to-agalan}
 
-**1.** *Azawan is more agile than Ululon.*
+**1.** *Azawan is more agile than Alahen.*
 
 ::: details Show answer
 `zazawan zalahen zel gahagum.`
 
-[z-Azawan | z-Ululon | z-rank/more | g-agility]
+[z-Azawan | z-Alahen | z-rank/more | g-agility]
 :::
 
-**2.** *Uhubun is as slow as Azawan.*
+**2.** *Ahaben is as slow as Azawan.*
 
 ::: details Show answer
 `zahaben zazawan zael gezehom.`
 
-[z-Uhubun | z-Azawan | z-equal-rank | g-slow]
+[z-Ahaben | z-Azawan | z-equal-rank | g-slow]
 :::
 
-**3.** *Ululon is the hastiest.*
+**3.** *Alahen is the hastiest.*
 
 ::: details Show answer
 `zalahen zel gadehom.`
 
-[z-Ululon | z-rank/more | g-haste]
+[z-Alahen | z-rank/more | g-haste]
 :::
 
-**4.** *Azawan is about as agile as Uhubun.*
+**4.** *Azawan is about as agile as Ahaben.*
 
 ::: details Show answer
 `zazawan zahaben zaem gahagum.`
 
-[z-Azawan | z-Uhubun | z-equal-rank.open | g-agility]
+[z-Azawan | z-Ahaben | z-equal-rank.open | g-agility]
 :::
 
-**5.** *Ululon is much more intense than Azawan.*
+**5.** *Alahen is much more intense than Azawan.*
 
 ::: details Show answer
 `zalahen zazawan zel wohul gahegem.`
 
-[z-Ululon | z-Azawan | z-rank/more | [w-ocean | g-intensity]]
+[z-Alahen | z-Azawan | z-rank/more | [w-ocean | g-intensity]]
 :::
 
-**6.** *Uhubun is more hasty than Ululon.*
+**6.** *Ahaben is more hasty than Alahen.*
 
 ::: details Show answer
 `zahaben zalahen zel gadehom.`
 
-[z-Uhubun | z-Ululon | z-rank/more | g-haste]
+[z-Ahaben | z-Alahen | z-rank/more | g-haste]
 :::
 
-**7.** *Ululon is the most intense.*
+**7.** *Alahen is the most intense.*
 
 ::: details Show answer
 `zalahen zel gahegem.`
 
-[z-Ululon | z-rank/more | g-intensity]
+[z-Alahen | z-rank/more | g-intensity]
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
@@ -169,54 +169,54 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 
 ::: details Show answer
 
-[z-Ululon | z-Uhubun | z-rank/more | g-agility]
+[z-Alahen | z-Ahaben | z-rank/more | g-agility]
 
-*Ululon is more agile than Uhubun.*
+*Alahen is more agile than Ahaben.*
 :::
 
 **2.** `zahaben zel gahagum.`
 
 ::: details Show answer
 
-[z-Uhubun | z-rank/more | g-agility]
+[z-Ahaben | z-rank/more | g-agility]
 
-*Uhubun is the most agile.*
+*Ahaben is the most agile.*
 :::
 
 **3.** `zalahen zahaben zael gadehom.`
 
 ::: details Show answer
 
-[z-Ululon | z-Uhubun | z-equal-rank | g-haste]
+[z-Alahen | z-Ahaben | z-equal-rank | g-haste]
 
-*Ululon is as hasty as Uhubun.*
+*Alahen is as hasty as Ahaben.*
 :::
 
 **4.** `zahaben zazawan zaem gahegem.`
 
 ::: details Show answer
 
-[z-Uhubun | z-Azawan | z-equal-rank.open | g-intensity]
+[z-Ahaben | z-Azawan | z-equal-rank.open | g-intensity]
 
-*Uhubun is about as intense as Azawan.*
+*Ahaben is about as intense as Azawan.*
 :::
 
 **5.** `zahaben zalahen zel wohul gahagum.`
 
 ::: details Show answer
 
-[z-Uhubun | z-Ululon | z-rank/more | [w-ocean | g-agility]]
+[z-Ahaben | z-Alahen | z-rank/more | [w-ocean | g-agility]]
 
-*Uhubun is much more agile than Ululon.*
+*Ahaben is much more agile than Alahen.*
 :::
 
 **6.** `zazawan zalahen zel gadehom.`
 
 ::: details Show answer
 
-[z-Azawan | z-Ululon | z-rank/more | g-haste]
+[z-Azawan | z-Alahen | z-rank/more | g-haste]
 
-*Azawan is hastier than Ululon.*
+*Azawan is hastier than Alahen.*
 :::
 
 **7.** `zazawan zel gezehom.`
@@ -245,14 +245,14 @@ A standalone ladder says only that nothing is on top. It does not say why (a tie
 
 | Example | Reading |
 |---------|---------|
-| `zazawan zalahen zahaben zem gamadam` | *Azawan ≻ Ululon ≻ Uhubun on challenge* (open) |
-| `zazawan zalahen zuel gamadam` | *Azawan is less challenging than Ululon* |
+| `zazawan zalahen zahaben zem gamadam` | *Azawan ≻ Alahen ≻ Ahaben on challenge* (open) |
+| `zazawan zalahen zuel gamadam` | *Azawan is less challenging than Alahen* |
 | `zel gamadam` | *there is no most challenging* |
 | `zem gamadam` | *no most challenging comes to mind* |
 | `zuel gamadam` | *there is no least challenging* |
 | `zazawan zuel gamadam` | *Azawan is the least challenging (of all)* |
 | `zer gamadam` | *whatever ranks highest on challenging* (someone is on top; not saying who) |
-| `zazawan zalahen zer gamadam` | *whichever of Azawan or Ululon ranks higher on challenging* |
+| `zazawan zalahen zer gamadam` | *whichever of Azawan or Alahen ranks higher on challenging* |
 
 **Compare with:** ranking names with no shared adjective is ordinary preference (who comes first as an alternative). Add the shared `/ɡ/` when you mean *more ADJ than*.
 
@@ -262,33 +262,33 @@ When English would say *from least to most ADJ* (*easiest to hardest*, a syllabu
 
 > `zazawan zalahen zahaben zoel gamadam.`
 >
-> [z-Azawan | z-Ululon | z-Uhubun | z-in-order | g-challenge]
+> [z-Azawan | z-Alahen | z-Ahaben | z-in-order | g-challenge]
 >
-> "Azawan, Ululon, Uhubun, from least to most challenging."
+> "Azawan, Alahen, Ahaben, from least to most challenging."
 
 **Compare with:** `zazawan zalahen zahaben zel gamadam` puts Azawan at the **top** (*most* challenging first). Rank **`e`** lists best-first; sequence **`oe`** lists start-first.
 
 ### Manner scale (`/h/`) {#manner-scale}
 
-When English would say *Ululon walks more intensely than Azawan*, the ladder is **how** they walk, not a quality of the people. Keep the same rank join. Write a manner adverb (`/h/`) **immediately after** it, then the verb. The first name sits higher on that manner.
+When English would say *Alahen walks more intensely than Azawan*, the ladder is **how** they walk, not a quality of the people. Keep the same rank join. Write a manner adverb (`/h/`) **immediately after** it, then the verb. The first name sits higher on that manner.
 
 > `zalahen zazawan zel hahegem vowogal.`
 >
-> [z-Ululon | z-Azawan | z-rank/more | h-intensity] | v-walk
+> [z-Alahen | z-Azawan | z-rank/more | h-intensity] | v-walk
 >
-> "Ululon walks more intensely than Azawan."
+> "Alahen walks more intensely than Azawan."
 
 > `zalahen zel hahegem vowogal.`
 >
-> [z-Ululon | z-rank/more | h-intensity] | v-walk
+> [z-Alahen | z-rank/more | h-intensity] | v-walk
 >
-> "Ululon walks the most intensely."
+> "Alahen walks the most intensely."
 
 > `zalahen zazawan zael hahegem vowogal.`
 >
-> [z-Ululon | z-Azawan | z-equal-rank | h-intensity] | v-walk
+> [z-Alahen | z-Azawan | z-equal-rank | h-intensity] | v-walk
 >
-> "Ululon walks as intensely as Azawan."
+> "Alahen walks as intensely as Azawan."
 
 **Compare with:** `gahegem` after `zel` (no verb) is *more intense* as a quality of the people. **`hahegem` after the verb** is ordinary *how* they walk, not the ladder.
 
@@ -340,20 +340,20 @@ To say **how many more**, put the difference in `/b/` right after **`gral`**. A 
 
 > `zazawan zalahen zel hral vowogal.`
 >
-> [z-Azawan | z-Ululon | z-rank/more | h-how-often] | v-walk
+> [z-Azawan | z-Alahen | z-rank/more | h-how-often] | v-walk
 >
-> "Azawan walks more often than Ululon."
+> "Azawan walks more often than Alahen."
 
 ### Distributive *both are ADJ*
 <a id="distributive-both"></a>
 
-English *both are challenging* (or *Azawan and Ululon are challenging*) says **each** has the quality. It does not rank them and does not say they match in height. Write the names, then set join **`a`** (`zal`), then a shared singular adjective (`/ɡ/`). Each name gets that adjective.
+English *both are challenging* (or *Azawan and Alahen are challenging*) says **each** has the quality. It does not rank them and does not say they match in height. Write the names, then set join **`a`** (`zal`), then a shared singular adjective (`/ɡ/`). Each name gets that adjective.
 
 > `zazawan zalahen zal gamadam.`
 >
-> [z-Azawan | z-Ululon | z-and | g-challenge]
+> [z-Azawan | z-Alahen | z-and | g-challenge]
 >
-> "Azawan and Ululon are challenging."
+> "Azawan and Alahen are challenging."
 
 **Compare with:** *as challenging as* uses equality **`ae`** (`zael`). *More challenging than* uses rank **`e`**.
 
@@ -363,7 +363,7 @@ Equality **`ae`** with a shared scale needs **two or more** names. **`ae`** with
 
 | Example | Reading |
 |---------|---------|
-| `zazawan zalahen zahaben zael gamadam` | *Azawan, Ululon, and Uhubun are equally challenging* |
+| `zazawan zalahen zahaben zael gamadam` | *Azawan, Alahen, and Ahaben are equally challenging* |
 | `zodogal zagadal zael gamadam` | *the dog is as challenging as the cat* |
 
 ### Measured differentials {#measured-differentials}
@@ -373,9 +373,9 @@ English *two meters taller* still ranks two people on one quality, and it also n
 
 > `zazawan zalahen zel gadavam bezezem gradul.`
 >
-> [z-Azawan | z-Ululon | z-rank/more | [g-height | b-meter]] | g-two
+> [z-Azawan | z-Alahen | z-rank/more | [g-height | b-meter]] | g-two
 >
-> "Azawan is two meters taller than Ululon."
+> "Azawan is two meters taller than Alahen."
 
 **Related form:** vague *much* / *slightly* is shared `/w/` immediately before the scale adjective (`wohul`), not a counted `/b/`.
 
@@ -391,8 +391,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *heavy* | `aragam` | `aragal` *rock* |
 | *exertion* | `elevam` | `eleval` *lift* |
 | *big* | `elavam` | `elaval` *elephant* |
@@ -403,20 +403,20 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
-**1.** *Azawan is less heavy than Ululon.*
+**1.** *Azawan is less heavy than Alahen.*
 
 ::: details Show answer
 `zazawan zalahen zuel garagam.`
 
-[z-Azawan | z-Ululon | z-rank/less | g-heavy]
+[z-Azawan | z-Alahen | z-rank/less | g-heavy]
 :::
 
-**2.** *Ululon is the least exerted.*
+**2.** *Alahen is the least exerted.*
 
 ::: details Show answer
 `zalahen zuel gelevam.`
 
-[z-Ululon | z-rank/less | g-exertion]
+[z-Alahen | z-rank/less | g-exertion]
 :::
 
 **3.** *There is no heaviest.*
@@ -427,28 +427,28 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 [z-rank/more | g-heavy]
 :::
 
-**4.** *Azawan and Uhubun are heavy.*
+**4.** *Azawan and Ahaben are heavy.*
 
 ::: details Show answer
 `zazawan zahaben zal garagam.`
 
-[z-Azawan | z-Uhubun | z-and | g-heavy]
+[z-Azawan | z-Ahaben | z-and | g-heavy]
 :::
 
-**5.** *Ululon is two grams heavier than Azawan.*
+**5.** *Alahen is two grams heavier than Azawan.*
 
 ::: details Show answer
 `zalahen zazawan zel garagam babayum gradul.`
 
-[z-Ululon | z-Azawan | z-rank/more | [g-heavy | b-gram]] | g-two
+[z-Alahen | z-Azawan | z-rank/more | [g-heavy | b-gram]] | g-two
 :::
 
-**6.** *Azawan, Ululon, and Uhubun, from lightest to heaviest.*
+**6.** *Azawan, Alahen, and Ahaben, from lightest to heaviest.*
 
 ::: details Show answer
 `zazawan zalahen zahaben zoel garagam.`
 
-[z-Azawan | z-Ululon | z-Uhubun | z-in-order | g-heavy]
+[z-Azawan | z-Alahen | z-Ahaben | z-in-order | g-heavy]
 :::
 
 **7.** *There is no smallest.*
@@ -459,20 +459,20 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 [z-rank/less | g-big]
 :::
 
-**8.** *Whichever of Azawan or Ululon ranks heavier.*
+**8.** *Whichever of Azawan or Alahen ranks heavier.*
 
 ::: details Show answer
 `zazawan zalahen zer garagam.`
 
-[z-Azawan | z-Ululon | z-whatever-ranks | g-heavy]
+[z-Azawan | z-Alahen | z-whatever-ranks | g-heavy]
 :::
 
-**9.** *Ululon lifts more intensely than Azawan.*
+**9.** *Alahen lifts more intensely than Azawan.*
 
 ::: details Show answer
 `zalahen zazawan zel hahegem veleval.`
 
-[z-Ululon | z-Azawan | z-rank/more | h-intensity] | v-lift
+[z-Alahen | z-Azawan | z-rank/more | h-intensity] | v-lift
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -481,9 +481,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 
 ::: details Show answer
 
-[z-Azawan | z-Ululon | z-Uhubun | z-rank/more.open | g-heavy]
+[z-Azawan | z-Alahen | z-Ahaben | z-rank/more.open | g-heavy]
 
-*Azawan is heavier than Ululon, who is heavier than Uhubun.*
+*Azawan is heavier than Alahen, who is heavier than Ahaben.*
 :::
 
 **2.** `zem gelavam.`
@@ -499,36 +499,36 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 
 ::: details Show answer
 
-[z-Azawan | z-Ululon | z-whatever-ranks | g-exertion]
+[z-Azawan | z-Alahen | z-whatever-ranks | g-exertion]
 
-*Whichever of Azawan or Ululon ranks more exerted.*
+*Whichever of Azawan or Alahen ranks more exerted.*
 :::
 
 **4.** `zalahen zahaben zal gelevam.`
 
 ::: details Show answer
 
-[z-Ululon | z-Uhubun | z-and | g-exertion]
+[z-Alahen | z-Ahaben | z-and | g-exertion]
 
-*Ululon and Uhubun are exerted.*
+*Alahen and Ahaben are exerted.*
 :::
 
 **5.** `zazawan zalahen zel garagam babayum graval.`
 
 ::: details Show answer
 
-[z-Azawan | z-Ululon | z-rank/more | [g-heavy | b-gram]] | g-five
+[z-Azawan | z-Alahen | z-rank/more | [g-heavy | b-gram]] | g-five
 
-*Azawan is five grams heavier than Ululon.*
+*Azawan is five grams heavier than Alahen.*
 :::
 
 **6.** `zahaben zazawan zel wohul gelevam.`
 
 ::: details Show answer
 
-[z-Uhubun | z-Azawan | z-rank/more | [w-ocean | g-exertion]]
+[z-Ahaben | z-Azawan | z-rank/more | [w-ocean | g-exertion]]
 
-*Uhubun is much more exerted than Azawan.*
+*Ahaben is much more exerted than Azawan.*
 :::
 
 **7.** `zer garagam.`
@@ -544,18 +544,18 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 
 ::: details Show answer
 
-[z-Uhubun | z-rank/less | g-big]
+[z-Ahaben | z-rank/less | g-big]
 
-*Uhubun is the smallest.*
+*Ahaben is the smallest.*
 :::
 
 **9.** `zalahen zel hahegem veleval.`
 
 ::: details Show answer
 
-[z-Ululon | z-rank/more | h-intensity] | v-lift
+[z-Alahen | z-rank/more | h-intensity] | v-lift
 
-*Ululon lifts the most intensely.*
+*Alahen lifts the most intensely.*
 :::
 
 ## Advanced {#advanced}
@@ -567,9 +567,9 @@ To score the shared adjective as of a dated now, write [*as-of*](relations.md#as
 
 > `zazawan zalahen zel wenum b_#22,7 gamadam.`
 >
-> [z-Azawan | z-Ululon | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
+> [z-Azawan | z-Alahen | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 >
-> "As of 22 July, Azawan is more challenging than Ululon."
+> "As of 22 July, Azawan is more challenging than Alahen."
 
 ### Judgment benchmarks (worse than…)
 <a id="judgment-benchmarks"></a>
@@ -611,7 +611,7 @@ Single-item `zazawan zuel gamadam` is *the least challenging* in the group in pl
 | `zeman zezon zuel gamadam` | I am less challenging than Social |
 | `zeman zahun zuel gamadam` | I am less challenging than Typical |
 | `zeman zogon zuel gamadam` | I am less challenging than Everyone |
-| `zeman zalahen zuel gezehel` | I am less skilled at singing than **Ululon** (ordinary person comparee) |
+| `zeman zalahen zuel gezehel` | I am less skilled at singing than **Alahen** (ordinary person comparee) |
 
 ### Interest benchmarks (*enough* / *too*) {#interest-benchmarks}
 
@@ -658,9 +658,9 @@ To say **whose** need it is, put that person in `/b/` right after the shared sca
 
 > `zedehel zegan zael gral balahen.`
 >
-> [z-tea | z-Some-interest | z-equal-rank | [g-amount | b-Ululon]]
+> [z-tea | z-Some-interest | z-equal-rank | [g-amount | b-Alahen]]
 >
-> "There is enough tea for Ululon."
+> "There is enough tea for Alahen."
 
 **Compare with:** **`zemun`** (*my standard*) is what the speaker **prefers**. **`zegan`** is what the interest **requires**. `zedehel zemun zel gral` is *more tea than I like*, and `zedehel zegan zel gral` is *more tea than is needed*.
 
@@ -707,8 +707,8 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *sing* | `ezehel` | |
 | *artistry* | `ebudam` | `ebudal` *paintbrush* |
 | *showmanship* | `ahudom` | `ahudol` *hotdog* |
@@ -747,12 +747,12 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 [z-Azawan | z-speaker | z-rank/less | g-sing]
 :::
 
-**3.** *Ululon is less artistic than Typical.*
+**3.** *Alahen is less artistic than Typical.*
 
 ::: details Show answer
 `zalahen zahun zuel gebudam.`
 
-[z-Ululon | z-Typical | z-rank/less | g-artistry]
+[z-Alahen | z-Typical | z-rank/less | g-artistry]
 :::
 
 **4.** *I am less showy than my standard.*
@@ -763,20 +763,20 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 [z-speaker | z-my-standard | z-rank/less | g-showmanship]
 :::
 
-**5.** *Ululon is somewhat worse at singing than Average.*
+**5.** *Alahen is somewhat worse at singing than Average.*
 
 ::: details Show answer
 `zalahen zayen zuem gezehel.`
 
-[z-Ululon | z-Average | z-rank/less.open | g-sing]
+[z-Alahen | z-Average | z-rank/less.open | g-sing]
 :::
 
-**6.** *As of 22 July, Azawan is more challenging than Ululon.*
+**6.** *As of 22 July, Azawan is more challenging than Alahen.*
 
 ::: details Show answer
 `zazawan zalahen zel wenum b_#22,7 gamadam.`
 
-[z-Azawan | z-Ululon | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
+[z-Azawan | z-Alahen | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 :::
 
 **7.** *Azawan has enough artistry (as much as is needed).*
@@ -787,20 +787,20 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 [z-Azawan | z-Some-interest | z-equal-rank | g-artistry]
 :::
 
-**8.** *Uhubun is too showy to be safe.*
+**8.** *Ahaben is too showy to be safe.*
 
 ::: details Show answer
 `zahaben zehen zel gahudom.`
 
-[z-Uhubun | z-Survival-interest | z-rank/more | g-showmanship]
+[z-Ahaben | z-Survival-interest | z-rank/more | g-showmanship]
 :::
 
-**9.** *Ululon sings less than connection needs.*
+**9.** *Alahen sings less than connection needs.*
 
 ::: details Show answer
 `zalahen zunen zuel gezehel.`
 
-[z-Ululon | z-Relatedness-interest | z-rank/less | g-sing]
+[z-Alahen | z-Relatedness-interest | z-rank/less | g-sing]
 :::
 
 #### Agalan → English {#advanced-agalan-to-english}
@@ -818,9 +818,9 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 
 ::: details Show answer
 
-[z-speaker | z-Ululon | z-rank/less | g-showmanship]
+[z-speaker | z-Alahen | z-rank/less | g-showmanship]
 
-*I am less showy than Ululon.*
+*I am less showy than Alahen.*
 :::
 
 **3.** `zazawan zemun zuem gebudam.`
@@ -836,9 +836,9 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 
 ::: details Show answer
 
-[z-Uhubun | z-Professional | z-rank/less | g-sing]
+[z-Ahaben | z-Professional | z-rank/less | g-sing]
 
-*Uhubun is worse at singing than Professional.*
+*Ahaben is worse at singing than Professional.*
 :::
 
 **5.** `zazawan zayen zuem gahudom.`
@@ -854,9 +854,9 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 
 ::: details Show answer
 
-[z-Azawan | z-Ululon | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
+[z-Azawan | z-Alahen | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 
-*As of 22 July, Azawan is more challenging than Ululon.*
+*As of 22 July, Azawan is more challenging than Alahen.*
 :::
 
 **7.** `zazawan zudan zael gezehel.`
@@ -872,18 +872,18 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 
 ::: details Show answer
 
-[z-Uhubun | z-Autonomy-interest | z-rank/more | g-showmanship]
+[z-Ahaben | z-Autonomy-interest | z-rank/more | g-showmanship]
 
-*Uhubun is showier than free choice needs.*
+*Ahaben is showier than free choice needs.*
 :::
 
 **9.** `zalahen zozen zuel gebudam.`
 
 ::: details Show answer
 
-[z-Ululon | z-Pleasure-interest | z-rank/less | g-artistry]
+[z-Alahen | z-Pleasure-interest | z-rank/less | g-artistry]
 
-*Ululon has less artistry than enjoyment needs.*
+*Alahen has less artistry than enjoyment needs.*
 :::
 
 ## See also

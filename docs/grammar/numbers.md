@@ -47,9 +47,9 @@ To say **which place** a thing has in a series (*the first*, *the second*, …),
 > "The second book."
 
 > `zalahen dubugal grerel varadal.`
-> z-Ululon | [d-book | g-3rd] | v-write
+> z-Alahen | [d-book | g-3rd] | v-write
 >
-> "Ululon writes the third book."
+> "Alahen writes the third book."
 
 | Marker | Use | English | Cue |
 |--------|--------|---------|-----|
@@ -82,15 +82,15 @@ Short drills for Beginner. Try each item before opening **Show answer**. Count w
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *baguette* | `ubogel` | |
 | *croissant* | `ogazal` | |
 | *cookie* | `ugugol` | |
 | *bread* | `ebewel` | |
 | *pie* | `abawul` | |
 | *doughnut* | `ododel` | |
-| *bezegol* | `ebagol` | |
+| *bagel* | `ebagol` | |
 | *fire* | `avahel` | |
 | *see* | `vahahal` | `ahahal` *eye* |
 | *smell* | `vonozal` | `onozal` *nose* |
@@ -129,36 +129,36 @@ z-cookie-x | g-more-than-one
 z-Azawan | [d-bread-x | g-three] | v-see
 :::
 
-**5.** *Ululon smells the second pie.*
+**5.** *Alahen smells the second pie.*
 
 ::: details Show answer
 `zalahen dabawul gredul vonozal.`
 
-z-Ululon | [d-pie | g-2nd] | v-smell
+z-Alahen | [d-pie | g-2nd] | v-smell
 :::
 
-**6.** *Uhubun sees more than one doughnut.*
+**6.** *Ahaben sees more than one doughnut.*
 
 ::: details Show answer
 `zahaben dododelx gral vahahal.`
 
-z-Uhubun | [d-doughnut-x | g-more-than-one] | v-see
+z-Ahaben | [d-doughnut-x | g-more-than-one] | v-see
 :::
 
-**7.** *Ululon smells three baguettes.*
+**7.** *Alahen smells three baguettes.*
 
 ::: details Show answer
 `zalahen dubogelx grarel vonozal.`
 
-z-Ululon | [d-baguette-x | g-three] | v-smell
+z-Alahen | [d-baguette-x | g-three] | v-smell
 :::
 
-**8.** *Ululon sees the first fire.*
+**8.** *Alahen sees the first fire.*
 
 ::: details Show answer
 `zalahen davahel grewol vahahal.`
 
-z-Ululon | [d-fire | g-1st] | v-see
+z-Alahen | [d-fire | g-1st] | v-see
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
@@ -194,9 +194,9 @@ z-baguette-x | g-more-than-one
 
 ::: details Show answer
 
-z-Uhubun | [d-cookie-x | g-three] | v-see
+z-Ahaben | [d-cookie-x | g-three] | v-see
 
-*Uhubun sees three cookies.*
+*Ahaben sees three cookies.*
 :::
 
 **5.** `zazawan dabawulx gral vahahal.`
@@ -212,27 +212,27 @@ z-Azawan | [d-pie-x | g-more-than-one] | v-see
 
 ::: details Show answer
 
-z-Ululon | [d-bagel-x | g-two] | v-smell
+z-Alahen | [d-bagel-x | g-two] | v-smell
 
-*Ululon smells two bagels.*
+*Alahen smells two bagels.*
 :::
 
 **7.** `zalahen debagolx gral vahahal.`
 
 ::: details Show answer
 
-z-Ululon | [d-bagel-x | g-more-than-one] | v-see
+z-Alahen | [d-bagel-x | g-more-than-one] | v-see
 
-*Ululon sees more than one bagel.*
+*Alahen sees more than one bagel.*
 :::
 
 **8.** `zalahen davahel grewol vonozal.`
 
 ::: details Show answer
 
-z-Ululon | [d-fire | g-1st] | v-smell
+z-Alahen | [d-fire | g-1st] | v-smell
 
-*Ululon smells the first fire.*
+*Alahen smells the first fire.*
 :::
 
 ## Intermediate {#intermediate}
@@ -362,7 +362,7 @@ Under question, the same word is the blank: *how many?* ([below](#how-many)).
 >
 > "How many does Azawan see?"
 
-To repeat a number already given, keep at least one digit: `zalahen drarel vahahal. zazawan drarer vahahal.` *Ululon sees three. Azawan sees those three too.*
+To repeat a number already given, keep at least one digit: `zalahen drarel vahahal. zazawan drarer vahahal.` *Alahen sees three. Azawan sees those three too.*
 
 #### How many? {#how-many}
 
@@ -380,9 +380,9 @@ To ask for a **number**, write a [number word](numbers.md) with no digits and th
 | `g=_` (*gror*) | fill a code or label | *What number?* (*phone, room*) | **o** ≈ one |
 
 > `yol zalahen vehahel ol brer.`
-> y-question | z-Ululon | v-sit | [at | b-which-place]
+> y-question | z-Alahen | v-sit | [at | b-which-place]
 >
-> "Which place does Ululon sit in?"
+> "Which place does Alahen sit in?"
 
 Answer with the number as a [citation](word-endings.md#citation-forms) or a full sentence.
 
@@ -544,7 +544,7 @@ Place the identity symbol **immediately after** any ending mark (or after PoS wh
 
 **Commas** separate digit groups. Each comma is spoken as the [group separator](#group-separator). Digitless forms have no commas.
 
-For long values, break into digit groups of at most three mantissa digits (plus their exponents); all groups still sit in **ovavo** word after a single marker.
+For long values, break into digit groups of at most three mantissa digits (plus their exponents); all groups still sit in **one** word after a single marker.
 
 ### Starter examples
 
@@ -596,9 +596,9 @@ Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume wit
 | **`ro`** | `h_…` | **Clock** — *at 15:30* (`h_15,30`). **Date** uses a calendar ordinal: *on 22 July 2026*. Channel, frequency, and other codes use a host relation + `/b/` (or `/ɡ/` on a noun). See [Time](numbers-applied.md#time). |
 
 > `zalahen vowogal hrarel.`
-> z-Ululon | v-walk | h-three
+> z-Alahen | v-walk | h-three
 >
-> "Ululon walks three times."
+> "Alahen walks three times."
 
 Worked examples: `hrarel` *three times*; `hrurel` *÷3 / into 3*; `hrerel` *for the third time*; `h_15,30` *at 15:30*. Frequency codes sit on a host: `/h/` *on* + `b_101.1`.
 
@@ -651,9 +651,9 @@ Endings still apply (**-l** newly stated item, **-r** *as in (N) above* (with a 
 >
 > 🔊 *zalahen vowogal thralezol.*
 >
-> z-Ululon | v-walk | th-70-percent-likely
+> z-Alahen | v-walk | th-70-percent-likely
 >
-> "Ululon is probably walking (I'd put it at 70%)."
+> "Alahen is probably walking (I'd put it at 70%)."
 
 | Marker | Writing | Stance sense |
 |--------|---------|--------------|
@@ -704,8 +704,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Use
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *seat* | `ezedal` | |
 | *trophy* | `odovel` | |
 | *see* | `vahahal` | `ahahal` *eye* |
@@ -733,12 +733,12 @@ z-seat-x | g-three.about
 z-three | v-sit
 :::
 
-**3.** *Ululon runs three times.*
+**3.** *Alahen runs three times.*
 
 ::: details Show answer
 `zalahen varahal hrarel.`
 
-z-Ululon | v-run | h-three
+z-Alahen | v-run | h-three
 :::
 
 **4.** *The second seat.*
@@ -765,20 +765,20 @@ x-2nd | z-Azawan | v-sit
 y-three
 :::
 
-**7.** *Ululon adds three to the score.*
+**7.** *Alahen adds three to the score.*
 
 ::: details Show answer
 `zalahen dodovem vrarel.`
 
-z-Ululon | d-score | v-three
+z-Alahen | d-score | v-three
 :::
 
-**8.** *Ululon punches three times.*
+**8.** *Alahen punches three times.*
 
 ::: details Show answer
 `zalahen vabahel hrarel.`
 
-z-Ululon | v-punch | h-three
+z-Alahen | v-punch | h-three
 :::
 
 **9.** *Thousands see the trophy.* (the thousands band, no exact count)
@@ -789,14 +789,14 @@ z-Ululon | v-punch | h-three
 z-+-e3 | d-trophy | v-see
 :::
 
-**10.** *Ululon adds 5.2 to the score.*
+**10.** *Alahen adds 5.2 to the score.*
 
 ::: details Show answer
 `zalahen dodovem v+5.2.`
 
 🔊 *zalahen dodovem vravayedul.*
 
-z-Ululon | d-score | v-5.2
+z-Alahen | d-score | v-5.2
 :::
 
 **11.** *Azawan will probably punch (I'd put it at 70%).*
@@ -839,9 +839,9 @@ z-2nd | d-trophy | v-see
 
 🔊 *zalahen varahal hral.*
 
-z-Ululon | v-run | h-more-than-one
+z-Alahen | v-run | h-more-than-one
 
-*Ululon runs multiple times.*
+*Alahen runs multiple times.*
 :::
 
 **4.** `y_3.`
@@ -861,9 +861,9 @@ y-_3
 
 🔊 *xredul zalahen varahal.*
 
-x-2nd | z-Ululon | v-run
+x-2nd | z-Alahen | v-run
 
-*Point 2: Ululon runs.*
+*Point 2: Alahen runs.*
 :::
 
 **6.** `zezedal gelavam gredul.`
@@ -883,9 +883,9 @@ x-2nd | z-Ululon | v-run
 
 🔊 *yol zalahen drar vahahal.*
 
-y-question | z-Ululon | d-how-many | v-see
+y-question | z-Alahen | d-how-many | v-see
 
-*How many does Ululon see?*
+*How many does Alahen see?*
 :::
 
 **8.** `zahaben vehahel hrerel.`
@@ -894,9 +894,9 @@ y-question | z-Ululon | d-how-many | v-see
 
 🔊 *zahaben vehahel hrerel.*
 
-z-Uhubun | v-sit | h-3rd
+z-Ahaben | v-sit | h-3rd
 
-*Uhubun sits for the third time.*
+*Ahaben sits for the third time.*
 :::
 
 **9.** `z+5e3,860 vehahel.`
@@ -1426,8 +1426,8 @@ Short drills for Advanced. Try each item before opening **Show answer**. Digitle
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *star* | `ezul` | |
 | *telescope* | `edazol` | |
 | *see* | `vahahal` | `ahahal` *eye* |
@@ -1474,12 +1474,12 @@ y-plus-infinity
 y-+-0e
 :::
 
-**6.** *Starting with: Uhubun sees.*
+**6.** *Starting with: Ahaben sees.*
 
 ::: details Show answer
 `xrebul zahaben vahahal.`
 
-x-starting-with | z-Uhubun | v-see
+x-starting-with | z-Ahaben | v-see
 :::
 
 **7.** *Azawan sees the penultimate star.*
@@ -1490,12 +1490,12 @@ x-starting-with | z-Uhubun | v-see
 z-Azawan | [d-star | g-2nd-from-end] | v-see
 :::
 
-**8.** *Ululon sees three stars, give or take one.*
+**8.** *Alahen sees three stars, give or take one.*
 
 ::: details Show answer
 `zalahen dezulx grarel gruawol vahahal.`
 
-z-Ululon | [d-star-x | g-three | g-plus-minus-1] | v-see
+z-Alahen | [d-star-x | g-three | g-plus-minus-1] | v-see
 :::
 
 #### Agalan → English {#advanced-agalan-to-english}
@@ -1528,9 +1528,9 @@ y-last-place
 
 🔊 *xrebul zalahen vahahal.*
 
-x-starting-with | z-Ululon | v-see
+x-starting-with | z-Alahen | v-see
 
-*Starting with: Ululon sees.*
+*Starting with: Alahen sees.*
 :::
 
 **4.** `zezul grewobal.`

@@ -92,7 +92,7 @@ Anchors:
 | Intermediate | `<a id="translation-practice-intermediate"></a>` |
 | Advanced | `<a id="translation-practice-advanced"></a>` |
 
-Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Next line: **Setting:** one place or occasion. Put **Roots used here** once as the English / Agalan table for **this setting** (house names + setting content), using that template’s caption (later banks do not repeat the How-to-learn column legend; **Same root as** warning only when that column is present). Learner **Agalan** cells are [citations](translation-exercises.md#template) by default (`odogal`, not a bank stem `odoga`), or the inflected form the row teaches (`vahahal` *see*). House-person **English** is *Azawan* / *Ululon* / *Uhubun*, not `*grace* (name **Azawan**)`. Pick a setting **not already named** in [settings](#settings) ([unique globally](translation-exercises.md#checkpoint-setting)); write the same phrase into this file’s cell when you replace. Teaching examples stay on the [example root bank](#root-bank); do not rewrite them to match the drill. Numbered items in each direction **climb in tension**.
+Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Next line: **Setting:** one place or occasion. Put **Roots used here** once as the English / Agalan table for **this setting** (house names + setting content), using that template’s caption (later banks do not repeat the How-to-learn column legend; **Same root as** warning only when that column is present). Learner **Agalan** cells are [citations](translation-exercises.md#template) by default (`odogal`, not a bank stem `odoga`), or the inflected form the row teaches (`vahahal` *see*). House-person **English** is *Azawan* / *Alahen* / *Ahaben*, not `*grace* (name **Azawan**)`. Pick a setting **not already named** in [settings](#settings) ([unique globally](translation-exercises.md#checkpoint-setting)); write the same phrase into this file’s cell when you replace. Teaching examples stay on the [example root bank](#root-bank); do not rewrite them to match the drill. Numbered items in each direction **climb in tension**.
 
 | Band kind | Items per direction |
 |-----------|---------------------|
@@ -218,7 +218,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 ## Example root bank
 <a id="root-bank"></a>
 
-Default people: [house cast](grammar-docs.md#house-cast) — `zazawan` / `zalahen` / `zahaben` (`azawa` / `alahe` / `ahabe` + **-n**). Morph: `z-Azawan` / `z-Ululon` / `z-Uhubun`.
+Default people: [house cast](grammar-docs.md#house-cast) — `zazawan` / `zalahen` / `zahaben` (`azawa` / `alahe` / `ahabe` + **-n**). Morph: `z-Azawan` / `z-Alahen` / `z-Ahaben`.
 
 **This table is for worked examples** on grammar pages (and for morph leak checks when a teach line uses these stems). **Checkpoints do not default to it.** Checkpoint content comes from the [setting](translation-exercises.md#checkpoint-setting) plus house names.
 
@@ -226,7 +226,7 @@ Tokens here are **stems for matching** (path allowlist / leak checks). Learner *
 
 | Root | Sense in examples |
 |------|-------------------|
-| `azawa` / `alahe` / `ahabe` | names **Azawan** / **Ululon** / **Uhubun** |
+| `azawa` / `alahe` / `ahabe` | names **Azawan** / **Alahen** / **Ahaben** |
 | `odoga` | *dog* |
 | `agada` | *cat* |
 | `ubuga` | *book* |
@@ -286,7 +286,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 16 | `intention.md` | **exists** | PLAN and host ability contrasts: **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (interest roots). Not role compounds (vowel *left* of `x`). Not conversation length (named citation or `/y/`) |
 | 16 | `knowing.md` | **exists** | **MAY** **`ovo`** + 2a holds (**`thovom`** default; **-l** find out; **-r** who knows) | Not evidentiality / NOTIONAL (Intermediate). Not **`yom`** (core Intermediate) unless you only recycle **`yol`** from core/questions Beginner |
 | 16 | `roles.md` | **exists** | Role compounds **`a`/`e`/`u`/`o` x ROOT`** (agent / place / patient / recipient; **`o`** = reltum on a relation); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
-| 16 | `x-compounds.md` | **exists** | Productive **`x`** vs two words vs dictionary compound; look up listed stems (`abedelohohu` / `onogolebere`); do not coin them. Live **`x`** from parts (not a pre-joined bank row) | Not parser-family inventory as drills; not coining new dictionary compounds. Greeting bid is Intermediate |
+| 16 | `x-compounds.md` | **exists** | Productive **`x`** vs two words vs dictionary compound; look up listed stems (`ebedalahaza` / `unelebeza`); do not coin them. Live **`x`** from parts (not a pre-joined bank row) | Not parser-family inventory as drills; not coining new dictionary compounds. Greeting bid is Intermediate |
 | 16 | `intention.md` | **exists** | **PLAN** **`ama`** map-resolution endings | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling MAY / values unused unless the page contrast needs them |
 
 ### Intermediate then Advanced

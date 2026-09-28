@@ -110,11 +110,11 @@ A `/w/` word still goes before the host, so the host and its `/b/` stay side by 
 
 > `zazawan balahen vezebel.`
 >
-> z-Azawan | b-Ululon | v-tell
+> z-Azawan | b-Alahen | v-tell
 >
-> "Azawan tells Ululon."
+> "Azawan tells Alahen."
 
-**Compare with:** `hemum balahen` is *like Ululon*, because a `/b/` right after `/h/` completes it. To add a person who receives, keep that `/b/` word away from a `/ɡ/`, `/h/`, or `/th/` word: `balahen hadehom`, or after a finished pair (`hemum bazawan balahen`).
+**Compare with:** `hemum balahen` is *like Alahen*, because a `/b/` right after `/h/` completes it. To add a person who receives, keep that `/b/` word away from a `/ɡ/`, `/h/`, or `/th/` word: `balahen hadehom`, or after a finished pair (`hemum bazawan balahen`).
 
 ### Role letters {#role-letters}
 
@@ -141,8 +141,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
-| *Ululon* | `alahen` | | |
-| *Uhubun* | `ahaben` | | |
+| *Alahen* | `alahen` | | |
+| *Ahaben* | `ahaben` | | |
 | *bank* | `abagul` | | |
 | *money* | `omol` | | |
 | *angry* | `anegel` | | |
@@ -167,20 +167,20 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 z-Azawan | v-sit
 :::
 
-**2.** *Uhubun sees Azawan.*
+**2.** *Ahaben sees Azawan.*
 
 ::: details Show answer
 `zahaben dazawan vahahal.`
 
-z-Uhubun | d-Azawan | v-see
+z-Ahaben | d-Azawan | v-see
 :::
 
-**3.** *A very angry Ululon stands.*
+**3.** *A very angry Alahen stands.*
 
 ::: details Show answer
 `zalahen welavam ganegel vazadol.`
 
-[z-Ululon | [w-very | g-angry]] | v-stand
+[z-Alahen | [w-very | g-angry]] | v-stand
 :::
 
 **4.** *Azawan writes hastily.*
@@ -191,20 +191,20 @@ z-Uhubun | d-Azawan | v-see
 z-Azawan | v-write | h-haste
 :::
 
-**5.** *Azawan tells Ululon.*
+**5.** *Azawan tells Alahen.*
 
 ::: details Show answer
 `zazawan balahen vezebel.`
 
-z-Azawan | b-Ululon | v-tell
+z-Azawan | b-Alahen | v-tell
 :::
 
-**6.** *I doubt that Uhubun is sitting.*
+**6.** *I doubt that Ahaben is sitting.*
 
 ::: details Show answer
 `zahaben thevegam vehahel.`
 
-z-Uhubun | th-doubt | v-sit
+z-Ahaben | th-doubt | v-sit
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
@@ -213,36 +213,36 @@ z-Uhubun | th-doubt | v-sit
 
 ::: details Show answer
 
-z-Uhubun | v-stand
+z-Ahaben | v-stand
 
-*Uhubun stands.*
+*Ahaben stands.*
 :::
 
 **2.** `zazawan dahaben vahahal.`
 
 ::: details Show answer
 
-z-Azawan | d-Uhubun | v-see
+z-Azawan | d-Ahaben | v-see
 
-*Azawan sees Uhubun.*
+*Azawan sees Ahaben.*
 :::
 
 **3.** `zahaben gazaham domol vahahal.`
 
 ::: details Show answer
 
-[z-Uhubun | g-happy] | d-money | v-see
+[z-Ahaben | g-happy] | d-money | v-see
 
-*Happy Uhubun sees money.*
+*Happy Ahaben sees money.*
 :::
 
 **4.** `zalahen vezevul hemum bazawan.`
 
 ::: details Show answer
 
-z-Ululon | v-sneak | [h-like | b-Azawan]
+z-Alahen | v-sneak | [h-like | b-Azawan]
 
-*Ululon sneaks like Azawan.*
+*Alahen sneaks like Azawan.*
 :::
 
 ## Intermediate {#intermediate}
@@ -269,9 +269,9 @@ English *as for X* or *regarding X* names who or what the sentence is about, eve
 
 > `hahehom bazawan zalahen dagadal vahahal.`
 >
-> [h-topic | b-Azawan] | z-Ululon | d-cat | v-see
+> [h-topic | b-Azawan] | z-Alahen | d-cat | v-see
 >
-> "As for Azawan, Ululon sees a cat."
+> "As for Azawan, Alahen sees a cat."
 
 ### Complex chaining {#complex-chaining}
 
@@ -293,9 +293,9 @@ Because a second relation after the pair would attach to the extra noun, you can
 
 > `glugol bazawan zodogal gugol balahen.`
 >
-> [[gl-SAME | b-Azawan] | z-dog] | [g-SAME | b-Ululon]
+> [[gl-SAME | b-Azawan] | z-dog] | [g-SAME | b-Alahen]
 >
-> "a dog the same as Azawan, the same as Ululon"
+> "a dog the same as Azawan, the same as Alahen"
 
 A verb can take several `/h/` or `/th/` units. Each plain word counts as one unit, and so does a host with its `/b/` (plus any `/w/` before it).
 
@@ -359,8 +359,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agalan |
 |---------|--------|
 | *Azawan* | `azawan` |
-| *Ululon* | `alahen` |
-| *Uhubun* | `ahaben` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
 | *ticket* | `edegal` |
 | *blue* | `ubuhal` |
 | *red* | `eredal` |
@@ -383,20 +383,20 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [[w-very | gl-red] | z-train] | v-stand
 :::
 
-**2.** *Azawan the same as blue Uhubun stands.*
+**2.** *Azawan the same as blue Ahaben stands.*
 
 ::: details Show answer
 `zazawan gugol bahaben gubuhal vazadol.`
 
-[z-Azawan | [g-SAME | [b-Uhubun | g-blue]]] | v-stand
+[z-Azawan | [g-SAME | [b-Ahaben | g-blue]]] | v-stand
 :::
 
-**3.** *As for Azawan, Ululon sees a ticket.*
+**3.** *As for Azawan, Alahen sees a ticket.*
 
 ::: details Show answer
 `hahehom bazawan zalahen dedegal vahahal.`
 
-[h-topic | b-Azawan] | z-Ululon | d-ticket | v-see
+[h-topic | b-Azawan] | z-Alahen | d-ticket | v-see
 :::
 
 **4.** *A very blue train sits.*
@@ -415,12 +415,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-train | g-red | g-blue] | d-ticket | v-see
 :::
 
-**6.** *Uhubun tells Ululon hastily.*
+**6.** *Ahaben tells Alahen hastily.*
 
 ::: details Show answer
 `zahaben balahen hadehom vezebel.`
 
-z-Uhubun | b-Ululon | h-haste | v-tell
+z-Ahaben | b-Alahen | h-haste | v-tell
 :::
 
 **7.** *Azawan was seen.*
@@ -446,9 +446,9 @@ d-Azawan | v-see
 
 ::: details Show answer
 
-[z-Uhubun | [g-SAME | [b-Ululon | g-red]]] | v-stand
+[z-Ahaben | [g-SAME | [b-Alahen | g-red]]] | v-stand
 
-*Uhubun the same as red Ululon stands.*
+*Ahaben the same as red Alahen stands.*
 :::
 
 **3.** `dedegal vahahal.`
@@ -482,9 +482,9 @@ z-dog | [[w-very | h-like] | b-Azawan] | v-sleep
 
 ::: details Show answer
 
-[h-topic | b-Uhubun] | z-Azawan | b-Ululon | v-tell
+[h-topic | b-Ahaben] | z-Azawan | b-Alahen | v-tell
 
-*As for Uhubun, Azawan tells Ululon.*
+*As for Ahaben, Azawan tells Alahen.*
 :::
 
 ## Advanced {#advanced}
@@ -538,8 +538,8 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *balloon* | `abevul` | |
 | *trumpet* | `adawol` | |
 | *drum* | `adavol` | |
@@ -562,44 +562,44 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 h-haste | z-Azawan | d-balloon | v-see
 :::
 
-**2.** *It's a balloon that Uhubun sees.*
+**2.** *It's a balloon that Ahaben sees.*
 
 ::: details Show answer
 `dabevul zahaben vahahal.`
 
-d-balloon | z-Uhubun | v-see
+d-balloon | z-Ahaben | v-see
 :::
 
-**3.** *What Azawan does is tell Ululon.*
+**3.** *What Azawan does is tell Alahen.*
 
 ::: details Show answer
 `vezebel zazawan balahen.`
 
-v-tell | z-Azawan | b-Ululon
+v-tell | z-Azawan | b-Alahen
 :::
 
-**4.** *Hastily, Ululon sneaks.*
+**4.** *Hastily, Alahen sneaks.*
 
 ::: details Show answer
 `hadehom zalahen vezevul.`
 
-h-haste | z-Ululon | v-sneak
+h-haste | z-Alahen | v-sneak
 :::
 
-**5.** *It's a drum that Ululon punches.*
+**5.** *It's a drum that Alahen punches.*
 
 ::: details Show answer
 `dadavol zalahen vabahel.`
 
-d-drum | z-Ululon | v-punch
+d-drum | z-Alahen | v-punch
 :::
 
-**6.** *What Ululon does is punch Uhubun.*
+**6.** *What Alahen does is punch Ahaben.*
 
 ::: details Show answer
 `vabahel zalahen dahaben.`
 
-v-punch | z-Ululon | d-Uhubun
+v-punch | z-Alahen | d-Ahaben
 :::
 
 #### Agalan → English {#advanced-agalan-to-english}
@@ -608,52 +608,52 @@ v-punch | z-Ululon | d-Uhubun
 
 ::: details Show answer
 
-d-trumpet | z-Uhubun | v-see
+d-trumpet | z-Ahaben | v-see
 
-*It's a trumpet that Uhubun sees.*
+*It's a trumpet that Ahaben sees.*
 :::
 
 **2.** `hadehom zahaben vehahel.`
 
 ::: details Show answer
 
-h-haste | z-Uhubun | v-sit
+h-haste | z-Ahaben | v-sit
 
-*Hastily, Uhubun sits.*
+*Hastily, Ahaben sits.*
 :::
 
 **3.** `vezebel zalahen bahaben.`
 
 ::: details Show answer
 
-v-tell | z-Ululon | b-Uhubun
+v-tell | z-Alahen | b-Ahaben
 
-*What Ululon does is tell Uhubun.*
+*What Alahen does is tell Ahaben.*
 :::
 
 **4.** `dabegol zalahen vahahal.`
 
 ::: details Show answer
 
-d-package | z-Ululon | v-see
+d-package | z-Alahen | v-see
 
-*It's a package that Ululon sees.*
+*It's a package that Alahen sees.*
 :::
 
 **5.** `damazol zalahen vabahel.`
 
 ::: details Show answer
 
-d-mask | z-Ululon | v-punch
+d-mask | z-Alahen | v-punch
 
-*It's a mask that Ululon punches.*
+*It's a mask that Alahen punches.*
 :::
 
 **6.** `dahaben zalahen hadehom vabahel.`
 
 ::: details Show answer
 
-d-Uhubun | z-Ululon | h-haste | v-punch
+d-Ahaben | z-Alahen | h-haste | v-punch
 
-*It's Uhubun that Ululon punches hastily.*
+*It's Ahaben that Alahen punches hastily.*
 :::

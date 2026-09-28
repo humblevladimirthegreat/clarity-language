@@ -27,23 +27,23 @@ describe("parseTerm", () => {
 
 describe("example words", () => {
   it("lists words in surface order with their unit", () => {
-    const { words } = sentence("zazawan vovol oel bugobon.");
+    const { words } = sentence("zazawan vuvudel oel beman.");
     assert.deepEqual(
       words.map((w) => [w.word.raw, w.unit]),
       [
         ["zazawan", "np"],
-        ["vovol", "vp"],
+        ["vuvudel", "vp"],
         ["oel", "hook"],
-        ["bugobon", "np"],
+        ["beman", "np"],
       ],
     );
   });
   it("includes left-edge hooks", () => {
-    const { words } = sentence("or zazawan vawalal.");
+    const { words } = sentence("or zazawan vowogal.");
     assert.ok(matchesTerm(words[0]!, parseTerm("family=hook,ending=r")));
   });
   it("matches adjacent sequences only", () => {
-    const { words } = sentence("zululon vezehel thegegam bazawan.");
+    const { words } = sentence("zalahen vezebel thegem bazawan.");
     assert.deepEqual(matchSequence(words, [parseTerm("role=th"), parseTerm("role=b")]), [2]);
     assert.deepEqual(matchSequence(words, [parseTerm("role=v"), parseTerm("role=b")]), []);
   });
@@ -52,21 +52,21 @@ describe("example words", () => {
 describe("collectExamples", () => {
   it("reads inline, <code>, and agalan fence spans, and skips fragments", () => {
     const md = [
-      "Say `zazawan vawalal.` or <code>zululon vawalal.</code>.",
+      "Say `zazawan vowogal.` or <code>zalahen vowogal.</code>.",
       "",
       "```agalan",
-      "zazawan velebel.",
+      "zazawan vezebal.",
       "```",
       "",
-      "<!-- lint: fragment --> `zazawan vawalal`",
+      "<!-- lint: fragment --> `zazawan vowogal`",
       "",
       "```text",
-      "zazawan vawalal.",
+      "zazawan vowogal.",
       "```",
     ].join("\n");
     assert.deepEqual(
       collectExamples(md, tables).map((e) => e.text),
-      ["zazawan vawalal.", "zazawan velebel.", "zululon vawalal."],
+      ["zazawan vowogal.", "zazawan vezebal.", "zalahen vowogal."],
     );
   });
 });
@@ -74,8 +74,8 @@ describe("collectExamples", () => {
 describe("learner name slot", () => {
   it("parses SELF examples with the default learner root", () => {
     assert.deepEqual(
-      collectExamples("`yom zSELFn vayul therenem.`", tables).map((e) => e.text),
-      ["yom zugobon vayul therenem."],
+      collectExamples("`yom zSELFn vehahel thogem.`", tables).map((e) => e.text),
+      ["yom zeman vehahel thogem."],
     );
   });
 });

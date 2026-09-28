@@ -278,6 +278,27 @@ export function knownLexiconRoots(tables: ClassifyTables): Set<string> {
   return known;
 }
 
+const shortResumeStemCache = new WeakMap<ClassifyTables, Set<string>>();
+
+/** Short resume stems (`odo` of `odoga`, cut through the 2nd vowel) of published roots ([pronouns.md](../../docs/grammar/pronouns.md#resume-r)). */
+function publishedShortResumeStems(tables: ClassifyTables): Set<string> {
+  let stems = shortResumeStemCache.get(tables);
+  if (!stems) {
+    stems = new Set();
+    for (const root of tables.published.keys()) {
+      let vowels = 0;
+      for (let i = 0; i < root.length; i++) {
+        if ("aeiou".includes(root[i]!) && ++vowels === 2) {
+          stems.add(root.slice(0, i + 1));
+          break;
+        }
+      }
+    }
+    shortResumeStemCache.set(tables, stems);
+  }
+  return stems;
+}
+
 /** Content hosts missing from `known`. */
 export function unknownLexiconContentRoots(
   word: MorphWord,
@@ -420,7 +441,7 @@ function hostOverlay(word: MorphWord, tables: ClassifyTables): { hostOverlay?: L
 }
 
 /** Arrow-rose roots (roles.md#arrow-rose-compass-vs-face); `DIR th o` on these is a landmark lateral. */
-export const ARROW_ROOTS = new Set(["oroho", "onore", "ezaza", "ozozu", "oju", "ozohe", "eweze", "onohe"]);
+export const ARROW_ROOTS = new Set(["onova", "anove", "ezada", "azove", "azava", "azawe", "eweza", "onove"]);
 
 /** `DIR th o` parses as an interest shape; on an arrow root it is the landmark's own facing. */
 function landmarkLateral(word: MorphWord): MorphWord | undefined {
@@ -526,6 +547,11 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
 
   if (family.kind === "foreign" || family.kind === "writingSpan") {
     return { ...word, reading: "unknown" };
+  }
+
+  // A short resume (`zodor`) cuts a published root; it reads as that root, not as an unknown word.
+  if (word.ending === "r" && family.kind === "content" && roots.length === 1 && publishedShortResumeStems(tables).has(roots[0]!)) {
+    return { ...word, reading: "ordinary" };
   }
 
   if (roots.length > 0) {

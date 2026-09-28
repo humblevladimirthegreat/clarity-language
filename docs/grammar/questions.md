@@ -22,9 +22,9 @@ When every person and action in the clause is already named, the expected reply 
 
 > `yom zalahen vezebal.`
 >
-> y-soft-question | z-Ululon | v-sleep
+> y-soft-question | z-Alahen | v-sleep
 >
-> "Is Ululon sleeping, I wonder?"
+> "Is Alahen sleeping, I wonder?"
 
 With no body at all, the question asks about what was just said: *Huh?* / *What?* Soft **`yom.`** is gentler (*Hm?*).
 
@@ -74,7 +74,7 @@ If the reply is just the fill, not a full sentence, write it as a [citation](wor
 
 > `alahen.`
 >
-> "Ululon."
+> "Alahen."
 
 **Compare with:** pointing back at someone already named uses content resume **-r** ([pronouns](pronouns.md)). Fill-ask uses only **join** **-r**. You can tell the difference because resumes always have at least five letters due to copying three from the antecedent, whereas joins always have fewer than five letters.
 
@@ -202,15 +202,15 @@ That bare **`yael.`** confirms your own claim. To ask the listener to confirm (*
 
 ### Embedded *whether* {#embedded-whether}
 
-When the **outer** sentence is a claim (*Azawan sees…*, *Azawan tells Ululon…*) and English would say *whether*, write [**`dorl`**](dependents.md#dependent-clauses) in the object slot. The outer act stays a statement; do not write **`yol`** on the whole stretch.
+When the **outer** sentence is a claim (*Azawan sees…*, *Azawan tells Alahen…*) and English would say *whether*, write [**`dorl`**](dependents.md#dependent-clauses) in the object slot. The outer act stays a statement; do not write **`yol`** on the whole stretch.
 
 > `zazawan vahahal dorl zalahen vowogal.`
 >
-> z-Azawan | v-see | d-whether-clause | z-Ululon | v-walk
+> z-Azawan | v-see | d-whether-clause | z-Alahen | v-walk
 >
-> "Azawan sees whether Ululon walks."
+> "Azawan sees whether Alahen walks."
 
-**Compare with:** a matrix question (*Does Azawan walk?*) writes **`yol`** on the **outer** turn. *If Ululon walks* as a condition is not inner **`yol`** either; it has its own [condition word](causation.md#if).
+**Compare with:** a matrix question (*Does Azawan walk?*) writes **`yol`** on the **outer** turn. *If Alahen walks* as a condition is not inner **`yol`** either; it has its own [condition word](causation.md#if).
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -223,8 +223,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *umbrella* | `amebel` | |
 | *coat* | `ogodul` | |
 | *key* | `egehol` | |
@@ -254,12 +254,12 @@ y-question | ? | z-Azawan | v-sit
 y-question | ?z-who | v-see | d-umbrella
 :::
 
-**3.** *Is Ululon writing, I wonder?*
+**3.** *Is Alahen writing, I wonder?*
 
 ::: details Show answer
 `yom zalahen varadal.`
 
-y-soft-question | z-Ululon | v-write
+y-soft-question | z-Alahen | v-write
 :::
 
 **4.** *Who sees what?*
@@ -278,12 +278,12 @@ y-question | z-who | v-see | d-who
 y-question | z-who-else | v-see | d-coat
 :::
 
-**6.** *Azawan tells Uhubun. Yes.* (confirm as a second turn)
+**6.** *Azawan tells Ahaben. Yes.* (confirm as a second turn)
 
 ::: details Show answer
 `zazawan vezebel bahaben. yael.`
 
-z-Azawan | v-tell | b-Uhubun . y-yes
+z-Azawan | v-tell | b-Ahaben . y-yes
 :::
 
 **7.** *No.* / *False.* (polar, not “don’t”)
@@ -308,9 +308,9 @@ y-sure
 
 ::: details Show answer
 
-y-soft-question | z-Uhubun | v-see | d-key
+y-soft-question | z-Ahaben | v-see | d-key
 
-*Is Uhubun seeing the key, I wonder?*
+*Is Ahaben seeing the key, I wonder?*
 :::
 
 **2.** `yol ?zar varadal.`
@@ -353,8 +353,8 @@ y-yes-soft
 
 ::: details Show answer
 
-Ululon
-*Ululon.* (just the fill)
+Alahen
+*Alahen.* (just the fill)
 :::
 
 **7.** `yul vabahel.`
@@ -370,9 +370,9 @@ y-prohibition | v-punch
 
 ::: details Show answer
 
-z-Ululon | v-lie . y-yes
+z-Alahen | v-lie . y-yes
 
-*Ululon lies. Yes.*
+*Alahen lies. Yes.*
 :::
 
 ## Intermediate {#intermediate}
@@ -421,9 +421,9 @@ Each stance takes three endings, on the same strong-to-light scale as elsewhere.
 
 > `yol zalahen vezebal. yuar.`
 >
-> y-question | z-Ululon | v-sleep . y-reject-frame-fresh
+> y-question | z-Alahen | v-sleep . y-reject-frame-fresh
 >
-> "Is Ululon asleep? I'd rather not say for now."
+> "Is Alahen asleep? I'd rather not say for now."
 
 For a stronger stance, use the [tone mark](speech-moves.md#tone-marks) **`!!`**, not a different word. **`!!yaol`** is *Absolutely!* / *Yes, please!*, and **`!!yuol`** is *Hell no!*
 
@@ -483,9 +483,9 @@ To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in
 
 > `yol zahaben vowogal har.`
 >
-> y-question | z-Uhubun | v-walk | h-when
+> y-question | z-Ahaben | v-walk | h-when
 >
-> "When does Uhubun walk?"
+> "When does Ahaben walk?"
 
 | Agalan | English (statement, bare) | English (under question, bare) |
 |--------|---------------------------|--------------------------------|
@@ -499,9 +499,9 @@ To ask *where?*, keep the [extra-noun hook](hooks.md#extra-noun) that says how t
 
 > `yol zahaben vowogal ol bar.`
 >
-> y-question | z-Uhubun | v-walk | [at | b-who]
+> y-question | z-Ahaben | v-walk | [at | b-who]
 >
-> "Where does Uhubun walk?"
+> "Where does Ahaben walk?"
 
 > `yol zodogal vezebal al bar.`
 >
@@ -586,7 +586,7 @@ To report a *who* / *what* question inside a claim (*Azawan asks who walks*), pu
 <a id="yes-no-single-item-standalone"></a>
 <a id="under-question"></a>
 
-A *yes/no* question can put a join ending on a **named** item instead of a fill-ask blank. Single-item **-l** (or usual **-n**) asks you to confirm that singleton (*Just Azawan?*, *Has to be Azawan?*). Single-item **-m** offers it (*How about Uhubun?*). **`…ul`** / **`…um`** / **`…un`** confirm or offer a denial (*Not Azawan?*). Standalone **-l** / **-m** check emptiness (*Nothing?*, *Got nothing?*). Fill-ask still uses **…ar** / **…or** / **…er** / **…ur**.
+A *yes/no* question can put a join ending on a **named** item instead of a fill-ask blank. Single-item **-l** (or usual **-n**) asks you to confirm that singleton (*Just Azawan?*, *Has to be Azawan?*). Single-item **-m** offers it (*How about Ahaben?*). **`…ul`** / **`…um`** / **`…un`** confirm or offer a denial (*Not Azawan?*). Standalone **-l** / **-m** check emptiness (*Nothing?*, *Got nothing?*). Fill-ask still uses **…ar** / **…or** / **…er** / **…ur**.
 
 > `yol zazawan zal.`
 >
@@ -596,9 +596,9 @@ A *yes/no* question can put a join ending on a **named** item instead of a fill-
 
 > `yol zahaben zam.`
 >
-> y-question | [z-Uhubun | z-and.open]
+> y-question | [z-Ahaben | z-and.open]
 >
-> "How about Uhubun?"
+> "How about Ahaben?"
 
 **Compare with:** *who* / *which* still uses join **-r** ([fill-ask](#fill-ask-r)).
 
@@ -614,8 +614,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *key* | `egehol` | |
 | *phone* | `ovavol` | |
 | *sit* | `vehahel` | `ehahel` *chair* |
@@ -635,12 +635,12 @@ y-question | z-Azawan | [v-tell | v-not]
 `yael.`
 :::
 
-**2.** *When does Uhubun sit?*
+**2.** *When does Ahaben sit?*
 
 ::: details Show answer
 `yol zahaben vehahel har.`
 
-y-question | z-Uhubun | v-sit | h-when
+y-question | z-Ahaben | v-sit | h-when
 :::
 
 **3.** *Which key?* (one unknown)
@@ -651,20 +651,20 @@ y-question | z-Uhubun | v-sit | h-when
 y-question | [z-key | z-who]
 :::
 
-**4.** *Just Ululon?* (confirm the singleton)
+**4.** *Just Alahen?* (confirm the singleton)
 
 ::: details Show answer
 `yol zalahen zal.`
 
-y-question | [z-Ululon | z-and]
+y-question | [z-Alahen | z-and]
 :::
 
-**5.** *How about Uhubun?* (offer)
+**5.** *How about Ahaben?* (offer)
 
 ::: details Show answer
 `yol zahaben zam.`
 
-y-question | [z-Uhubun | z-and.open]
+y-question | [z-Ahaben | z-and.open]
 :::
 
 **6.** *Not that.* (reject this option, not a truth-flip)
@@ -675,12 +675,12 @@ y-question | [z-Uhubun | z-and.open]
 y-refuse-option
 :::
 
-**7.** *When does Ululon sleep?*
+**7.** *When does Alahen sleep?*
 
 ::: details Show answer
 `yol zalahen vezebal har.`
 
-y-question | z-Ululon | v-sleep | h-when
+y-question | z-Alahen | v-sleep | h-when
 :::
 
 **8.** *Hell no!*
@@ -746,22 +746,22 @@ y-refuse-option-soft
 *Not that.* (soft reject of this option)
 :::
 
-**7.** Reply to `yol zalahen valahal vul.` (*Didn’t Ululon lie?*): `yuel valahal.`
+**7.** Reply to `yol zalahen valahal vul.` (*Didn’t Alahen lie?*): `yuel valahal.`
 
 ::: details Show answer
 
-y-question | z-Ululon | [v-lie | v-not] . y-no | v-lie
+y-question | z-Alahen | [v-lie | v-not] . y-no | v-lie
 
-*Didn’t Ululon lie? — False: (Ululon) did lie.*
+*Didn’t Alahen lie? — False: (Alahen) did lie.*
 :::
 
 **8.** `yol zar vezebel bahaben har.`
 
 ::: details Show answer
 
-y-question | z-who | v-tell | b-Uhubun | h-when
+y-question | z-who | v-tell | b-Ahaben | h-when
 
-*Who tells Uhubun when?*
+*Who tells Ahaben when?*
 :::
 
 ## Advanced {#advanced}
@@ -865,8 +865,8 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | English | Agalan |
 |---------|--------|
 | *Azawan* | `azawan` |
-| *Ululon* | `alahen` |
-| *Uhubun* | `ahaben` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
 | *trophy* | `odovel` |
 | *bell* | `ebevol` |
 
@@ -880,20 +880,20 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 y-question | [z-Azawan | z-rank/more]
 :::
 
-**2.** *Prefer Ululon?* / *Ululon first?* (rank offer)
+**2.** *Prefer Alahen?* / *Alahen first?* (rank offer)
 
 ::: details Show answer
 `yol zalahen zem.`
 
-y-question | [z-Ululon | z-rank/more.open]
+y-question | [z-Alahen | z-rank/more.open]
 :::
 
-**3.** *Has to be Uhubun?*
+**3.** *Has to be Ahaben?*
 
 ::: details Show answer
 `yol zahaben zol.`
 
-y-question | [z-Uhubun | z-or-exactly-one]
+y-question | [z-Ahaben | z-or-exactly-one]
 :::
 
 **4.** *Tie?* (standalone rank)
@@ -952,9 +952,9 @@ y-question | z-in-order
 
 ::: details Show answer
 
-y-question | [z-Ululon | z-Uhubun | z-rank/more]
+y-question | [z-Alahen | z-Ahaben | z-rank/more]
 
-*Ululon ahead of Uhubun?* (closed rank of those two)
+*Alahen ahead of Ahaben?* (closed rank of those two)
 :::
 
 ## See also

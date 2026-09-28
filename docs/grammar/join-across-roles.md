@@ -71,15 +71,15 @@ A clause join with no clause before it is the standalone reading, like `zal` *no
 
 > `zazawan vowogal xan zalahen varahal.`
 >
-> [z-Azawan | v-walk | x-and-then | z-Ululon | v-run]
+> [z-Azawan | v-walk | x-and-then | z-Alahen | v-run]
 >
-> "Azawan walks and then Ululon runs."
+> "Azawan walks and then Alahen runs."
 
 > `zazawan vowogal xol zalahen varahal xal zahaben vezebal.`
 >
-> [[z-Azawan | v-walk | x-or-exactly-one | z-Ululon | v-run] | x-and | z-Uhubun | v-sleep]
+> [[z-Azawan | v-walk | x-or-exactly-one | z-Alahen | v-run] | x-and | z-Ahaben | v-sleep]
 >
-> "(Azawan walks or Ululon runs) and Uhubun sleeps."
+> "(Azawan walks or Alahen runs) and Ahaben sleeps."
 
 ### Stance joins {#stance-joins}
 
@@ -201,7 +201,7 @@ When a noun or event is *framed* toward something (*cake with peanuts*, *walk wi
 
 Content *including* needs that `/b/` (`gan b…`). A stock label uses a [mention](spans.md) span.
 
-**Compare with:** *writes with a hammer* is an extra-noun [hook](hooks.md#extra-noun) (`ael` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Ululon* is [proxy](relations.md#proxy) (`hadum`), not **`hon`** *exclusively for*. **`uel`** is *against* that party, not **`hun`** *refusing*.
+**Compare with:** *writes with a hammer* is an extra-noun [hook](hooks.md#extra-noun) (`ael` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Alahen* is [proxy](relations.md#proxy) (`hadum`), not **`hon`** *exclusively for*. **`uel`** is *against* that party, not **`hun`** *refusing*.
 
 **Not the same job as:** adjective [joins](joins.md) (`gal` / `gam` / `gar`). Join-relations take **-n** toward one `/b/`.
 
@@ -238,8 +238,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *finish-line* | `devehal` | `evehal` *finish-line* |
 | *teamwork* | `ahodom` | `ahodol` *handball* |
 | *trophy* | `odovel` | |
@@ -259,12 +259,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Azawan | d-medal | v-includes
 :::
 
-**2.** *The finish line, including Uhubun.*
+**2.** *The finish line, including Ahaben.*
 
 ::: details Show answer
 `zevehal gan bahaben.`
 
-z-finish-line | [g-including | b-Uhubun]
+z-finish-line | [g-including | b-Ahaben]
 :::
 
 **3.** *Azawan chooses the medal (as the one choice).*
@@ -275,44 +275,44 @@ z-finish-line | [g-including | b-Uhubun]
 z-Azawan | d-medal | v-choose
 :::
 
-**4.** *Ululon runs with Uhubun.*
+**4.** *Alahen runs with Ahaben.*
 
 ::: details Show answer
 `zalahen han bahaben varahal.`
 
-z-Ululon | [h-including | b-Uhubun] | v-run
+z-Alahen | [h-including | b-Ahaben] | v-run
 :::
 
-**5.** *Azawan punches, then Ululon screams.*
+**5.** *Azawan punches, then Alahen screams.*
 
 ::: details Show answer
 `zazawan vabahel xan zalahen vezogel.`
 
-[z-Azawan | v-punch | x-and-then | z-Ululon | v-scream]
+[z-Azawan | v-punch | x-and-then | z-Alahen | v-scream]
 :::
 
-**6.** *A team exclusive for Uhubun.*
+**6.** *A team exclusive for Ahaben.*
 
 ::: details Show answer
 `zahodom gon bahaben.`
 
-z-teamwork | [g-exclusive-for | b-Uhubun]
+z-teamwork | [g-exclusive-for | b-Ahaben]
 :::
 
-**7.** *Ululon runs and punches.*
+**7.** *Alahen runs and punches.*
 
 ::: details Show answer
 `zalahen varahal vabahel vam.`
 
-z-Ululon | [v-run | v-punch | v-and.open]
+z-Alahen | [v-run | v-punch | v-and.open]
 :::
 
-**8.** *Ululon runs, refusing the medal.*
+**8.** *Alahen runs, refusing the medal.*
 
 ::: details Show answer
 `zalahen hun bamedal varahal.`
 
-z-Ululon | [h-refusing | b-medal] | v-run
+z-Alahen | [h-refusing | b-medal] | v-run
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -321,9 +321,9 @@ z-Ululon | [h-refusing | b-medal] | v-run
 
 ::: details Show answer
 
-z-Uhubun | d-trophy | v-includes
+z-Ahaben | d-trophy | v-includes
 
-*Uhubun includes the trophy.*
+*Ahaben includes the trophy.*
 :::
 
 **2.** `zevehal guan bamedal.`
@@ -339,18 +339,18 @@ z-finish-line | [g-without | b-medal]
 
 ::: details Show answer
 
-z-Ululon | d-trophy | v-choose
+z-Alahen | d-trophy | v-choose
 
-*Ululon chooses the trophy (as the one choice).*
+*Alahen chooses the trophy (as the one choice).*
 :::
 
 **4.** `zazawan han balahen varahal.`
 
 ::: details Show answer
 
-z-Azawan | [h-including | b-Ululon] | v-run
+z-Azawan | [h-including | b-Alahen] | v-run
 
-*Azawan runs with Ululon.*
+*Azawan runs with Alahen.*
 :::
 
 **5.** `zahodom gan bazawan.`
@@ -384,9 +384,9 @@ z-teamwork | [g-open-to | b-Azawan]
 
 ::: details Show answer
 
-z-Ululon | [h-anything-but | b-Uhubun] | v-scream
+z-Alahen | [h-anything-but | b-Ahaben] | v-scream
 
-*Ululon screams, barring Uhubun.*
+*Alahen screams, barring Ahaben.*
 :::
 
 ## See also

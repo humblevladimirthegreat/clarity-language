@@ -22,7 +22,7 @@ PoS + ROOT + {l|m} + NUM + {-l|-m|-n|-r}
 |-------|-----|-----|
 | **PoS** | Ordinary slot for the derived word | |
 | **ROOT** | Open content host (`V(CV)+`) | |
-| **join** | Same letter as a [lexical compound](x-compounds.md#lexical-compounds): **-l** everyday host, **-m** abstract host | `abedelohohu` *bedroom* uses **-l** |
+| **join** | Same letter as a [lexical compound](x-compounds.md#lexical-compounds): **-l** everyday host, **-m** abstract host | `ebedalahaza` *bedroom* uses **-l** |
 | **NUM** | Number stem: same marker / digits / digitless-exp body as [numbers.md](numbers.md), without a role letter and without its own ending. Tables below use [shorthand](numbers.md#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …). Actual words are always spelled CV (`raba`, `roba`, `rawoba`, …): [writing style](numbers.md#writing-style-numeric-vs-spelled) | spoken stem starts with **`r`**, so you hear **`lr`** or **`mr`** |
 | **Ending** | Ordinary word ending on the **whole word**. Approximate, proper-designation, and resume use those host endings. A free number word or ordinary syntax still counts or labels outside this family. | |
 
@@ -41,7 +41,7 @@ You already use digitless number stems for unbounded plus, minus, last place, an
 | **`ROOTl+e`** | essence / absolute / pure type of ROOT | `zalavalrabal`: *essence of love* | **+e** = plus with no cap: nothing left to add |
 | **`ROOTl+e-`** | grain / seed / infinitesimal of ROOT | `zalavalrabul`: *grain of love* | **+e-** = that same plus, at the tiny end: a speck |
 | **`ROOTl-e`** | void of / absolute anti-ROOT | `zevehelrubal`: *void of fear* | **-e** = minus with no floor: none of the kind |
-| **`ROOTl-e-`** | **quasi-ROOT**: the shape of ROOT without treating it as fully real (English **`quasi-`**); **`ROOTl-e-1`** / **`ROOTl-e-2`** = [quasi-N](#quasi-n) | `zonogoleberelrubul`: *quasi-friend*; `zedolrubudul`: *quasi-pair* | **-e-** = imaginary amount: the outline, not the ledger |
+| **`ROOTl-e-`** | **quasi-ROOT**: the shape of ROOT without treating it as fully real (English **`quasi-`**); **`ROOTl-e-1`** / **`ROOTl-e-2`** = [quasi-N](#quasi-n) | `zunelebezalrubul`: *quasi-friend*; `zedolrubudul`: *quasi-pair* | **-e-** = imaginary amount: the outline, not the ledger |
 | **`ROOTl#e-`** | origin / prototype / onset-form of ROOT | `zalavalrebul`: *love in its beginning form* | **#e-** = start-place: the first rung |
 | **`ROOTl#e`** | telos / culmination / final form of ROOT | `zozolrebal`: *story’s final form* | **#e** = last place: where the kind finishes |
 | **`ROOTl+`** | poly- / multi-ROOT (unspecified >1) | `zehehalram`: *multi-faith* | **+** = more than one, how many unnamed |
@@ -54,20 +54,20 @@ You already use digitless number stems for unbounded plus, minus, last place, an
 
 English *quasi-* says something has the **shape or role** of a kind without counting as the real thing (*quasi-friend*, *quasi-official*). Spell that as **`ROOTl-e-`**: the kind’s outline, not a full claim that it is that kind. Change only the role letter to use it as a noun, verb, adjective, and so on.
 
-> `zahaben gonogoleberelrubul.`
+> `zahaben gunelebezalrubul.`
 >
-> z-Uhubun | g-friend-l-quasi
+> z-Ahaben | g-friend-l-quasi
 >
-> "Uhubun is a quasi-friend."
+> "Ahaben is a quasi-friend."
 
 | PoS | `…l-e-` | Examples |
 |-----|---------|----------|
-| **`/z/` `/d/` `/b/`** (noun) | a quasi-entity | `zonogoleberelrubul`: *a quasi-friend*; `debazelrubul`: *a quasi-commitment* |
-| **`/v/`** (verb) | to treat as quasi- / as-if that kind | `vonogoleberelrubul`: *to quasi-befriend* / treat as friend-shaped |
+| **`/z/` `/d/` `/b/`** (noun) | a quasi-entity | `zunelebezalrubul`: *a quasi-friend*; `debazelrubul`: *a quasi-commitment* |
+| **`/v/`** (verb) | to treat as quasi- / as-if that kind | `vunelebezalrubul`: *to quasi-befriend* / treat as friend-shaped |
 | **`/ɡ/`** (adjective) | *quasi-* (ascribed) | `gezevolrubul`: *quasi-official* |
 | **`/h/`** (adverb) | under quasi- framing | `hezevolrubul`: *quasi-officially* |
 | **`/w/`** (adjunct) | host graded as quasi- | `webazelrubul gebazel`: *quasi-commitment* |
-| **`/y/`** (interjection) | *Quasi-!* / *As if that kind!* | `yonogoleberelrubul` |
+| **`/y/`** (interjection) | *Quasi-!* / *As if that kind!* | `yunelebezalrubul` |
 
 **Compare with:** free **`grubul`** / **`vrubul`** / **`thrubul`** / **`yrubul`** / **`xrubul`** are the free *just short* amount, or number as verb / stance / interjection / discourse ([numbers.md § Just short](numbers.md#just-short)). **`ROOTl-e-`** is quasi-*kind*.
 
@@ -183,9 +183,9 @@ English *first-draft*, *secondary adventure*, *third-order problem* can name **w
 
 > `zalahen debeyulrewol varadal.`
 >
-> z-Ululon | d-pencil-l-1st | v-write
+> z-Alahen | d-pencil-l-1st | v-write
 >
-> "Ululon writes a first-draft."
+> "Alahen writes a first-draft."
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -278,8 +278,8 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *gold* | `ogodal` | |
 | *fire* | `avahel` | |
 | *factory* | `avagel` | |
@@ -298,12 +298,12 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 z-Azawan | d-gold-l-grain | v-hammer
 :::
 
-**2.** *Uhubun sees a primary factory.*
+**2.** *Ahaben sees a primary factory.*
 
 ::: details Show answer
 `zahaben davagelrawol vahahal.`
 
-z-Uhubun | d-factory-l-one | v-see
+z-Ahaben | d-factory-l-one | v-see
 :::
 
 **3.** *Azawan pours a quasi-gold.*
@@ -314,20 +314,20 @@ z-Uhubun | d-factory-l-one | v-see
 z-Azawan | d-gold-l-quasi | v-pour
 :::
 
-**4.** *Ululon pours a first-class gold.*
+**4.** *Alahen pours a first-class gold.*
 
 ::: details Show answer
 `zalahen dogodalrewol vorul.`
 
-z-Ululon | d-gold-l-1st | v-pour
+z-Alahen | d-gold-l-1st | v-pour
 :::
 
-**5.** *Ululon annihilates the gold-kind.*
+**5.** *Alahen annihilates the gold-kind.*
 
 ::: details Show answer
 `zalahen vogodalrazobal.`
 
-z-Ululon | v-gold-l-+-0e
+z-Alahen | v-gold-l-+-0e
 :::
 
 #### Agalan → English {#advanced-agalan-to-english}
@@ -336,9 +336,9 @@ z-Ululon | v-gold-l-+-0e
 
 ::: details Show answer
 
-z-Uhubun | d-gold-l-infinity | v-see
+z-Ahaben | d-gold-l-infinity | v-see
 
-*Uhubun sees the essence of gold.*
+*Ahaben sees the essence of gold.*
 :::
 
 **2.** `zazawan davahelrebul vahahal.`
@@ -354,27 +354,27 @@ z-Azawan | d-fire-l-origin | v-see
 
 ::: details Show answer
 
-z-Ululon | d-factory-l-three | v-see
+z-Alahen | d-factory-l-three | v-see
 
-*Ululon sees a three-part factory.*
+*Alahen sees a three-part factory.*
 :::
 
 **4.** `zalahen vavahelruzol.`
 
 ::: details Show answer
 
-z-Ululon | v-fire-l-minus-zero
+z-Alahen | v-fire-l-minus-zero
 
-*Ululon refuses to let the fire go to zero.*
+*Alahen refuses to let the fire go to zero.*
 :::
 
 **5.** `zalahen davahelrebal vahahal.`
 
 ::: details Show answer
 
-z-Ululon | d-fire-l-telos | v-see
+z-Alahen | d-fire-l-telos | v-see
 
-*Ululon sees fire in its final form.*
+*Alahen sees fire in its final form.*
 :::
 
 ## See also

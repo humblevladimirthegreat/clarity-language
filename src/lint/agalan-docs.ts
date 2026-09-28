@@ -15,7 +15,7 @@ import { classifyTokenBranch } from "../parse/tokens.js";
 import { parseWord, WordParseError } from "../parse/word.js";
 import { traceFragment, traceTemplate } from "./template-trace.js";
 import { forEachMarkdownCodeSpan, forEachMarkdownCodeToken, type MarkdownCodeSpan } from "../retie/tokens.js";
-import { isClarityRootShape } from "../word-converter.js";
+import { isClarityRootShape } from "../root-shape.js";
 
 export type AgalanLintKind = "parse" | "unknown-root";
 

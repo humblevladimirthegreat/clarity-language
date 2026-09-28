@@ -27,13 +27,13 @@ After you have already named a person or thing, the next sentence can point back
 
 **Compare with:** English *the dog that walked* is that same pair of sentences, then **-r** in whatever slot you need. Do not hang a *who / that / which* clause on the noun ([which person or thing](dependents.md#which-noun)).
 
-When that short stem would match the **wrong** recent word, use a **full-root resume**: the **entire root** + **-r**. Short **`elava`** matches both *sleep* (`ezeba`) and *big* (`elava`). After both have been used, short `vezer` would pick the more recent *big*; full `vezebar` picks *sleep*.
+When that short stem would match the **wrong** recent word, use a **full-root resume**: the **entire root** + **-r**. Short **`eze`** matches both *sleep* (`ezeba`) and *speechless* (`ezebo`). After both have been used, short `vezer` would pick the more recent *speechless*; full `vezebar` picks *sleep*.
 
-> `zalahen vezebal. zazawan gelavam. zahaben vezebar.`
+> `zalahen vezebal. zazawan gezebol. zahaben vezebar.`
 >
-> z-Ululon | v-sleep . z-Azawan | g-big . z-Uhubun | v-←sleep.full
+> z-Alahen | v-sleep . z-Azawan | g-speechless . z-Ahaben | v-←sleep.full
 >
-> "Ululon sleeps. Azawan is big. Uhubun does so."
+> "Alahen sleeps. Azawan is speechless. Ahaben does so."
 
 A **short** resume always needs an earlier word to match. A **full-root** resume can open the talk: with no earlier match, it means the one you both already know (*the dog*, the household's dog).
 
@@ -43,7 +43,7 @@ A **short** resume always needs an earlier word to match. A **full-root** resume
 >
 > "The dog walks." (the dog you both know)
 
-**Compare with:** short `zodor` with nothing before it points at nothing, so it is not a sentence.
+**Compare with:** a short resume with nothing before it points at nothing, so it is not a sentence.
 
 The antecedent can sit in the same sentence. A resume in the object slot that points back at the subject is English *herself* / *himself* / *themself* (a reflexive).
 
@@ -102,7 +102,7 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 | **`ohan`** | speaker and addressees together (`zohan` in subject slot) | *we* (you and I) | `ohal` *handshake* | 🤝: sharing the floor together |
 | **`anun`** | nonspecific individual (`zanun` in subject slot) | *someone* | `anul` *neutral* | 😐: not a particular person |
 
-**Compare with:** *I and my people* / *you all* / *Azawan and associates* use **-x** ([clusivity](plurality.md#clusivity)). Inclusive *you and I* on this page is **`oha`**. *Here* / *thedehu* and *this* / *that* use these same words as a landmark after a place hook ([deixis](hooks.md#deixis)).
+**Compare with:** *I and my people* / *you all* / *Azawan and associates* use **-x** ([clusivity](plurality.md#clusivity)). Inclusive *you and I* on this page is **`oha`**. *Here* / *there* and *this* / *that* use these same words as a landmark after a place hook ([deixis](hooks.md#deixis)).
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -115,8 +115,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
-| *Ululon* | `alahen` | | |
-| *Uhubun* | `ahaben` | | |
+| *Alahen* | `alahen` | | |
+| *Ahaben* | `ahaben` | | |
 | *cook* | `vugugal` | `ugugal` *cook* | 🧑‍🍳: the person at the stove |
 | *pour* | `vorul` | `orul` *pour* | 🫗: liquid onto a pan |
 | *cookie* | `ugugol` | | |
@@ -147,12 +147,12 @@ z-Azawan | v-pour . z-←Azawan | v-cook
 z-cook | v-pour . z-←cook | v-cook
 :::
 
-**3.** *Ululon cooks. Azawan sees a cookie. Uhubun does so.*
+**3.** *Alahen cooks. Azawan sees a cookie. Ahaben does so.*
 
 ::: details Show answer
 `zalahen vugugal. zazawan dugugol vahahal. zahaben vugugar.`
 
-z-Ululon | v-cook . z-Azawan | d-cookie | v-see . z-Uhubun | v-←cook.full
+z-Alahen | v-cook . z-Azawan | d-cookie | v-see . z-Ahaben | v-←cook.full
 :::
 
 **4.** *I see you.*
@@ -187,12 +187,12 @@ z-listener | v-scream
 z-Azawan | d-speaker | v-punch
 :::
 
-**8.** *Someone punches Uhubun.*
+**8.** *Someone punches Ahaben.*
 
 ::: details Show answer
 `zanun dahaben vabahel.`
 
-z-someone | d-Uhubun | v-punch
+z-someone | d-Ahaben | v-punch
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
@@ -201,36 +201,36 @@ z-someone | d-Uhubun | v-punch
 
 ::: details Show answer
 
-z-Ululon | v-cook . z-←Ululon | v-pour
+z-Alahen | v-cook . z-←Alahen | v-pour
 
-*Ululon cooks. He pours.*
+*Alahen cooks. He pours.*
 :::
 
 **2.** `zahaben vorul. zahar vugugal.`
 
 ::: details Show answer
 
-z-Uhubun | v-pour . z-←Uhubun | v-cook
+z-Ahaben | v-pour . z-←Ahaben | v-cook
 
-*Uhubun pours. She cooks.*
+*Ahaben pours. She cooks.*
 :::
 
 **3.** `zalahen danaval vahahal. zalar danar vahahal.`
 
 ::: details Show answer
 
-z-Ululon | d-knife | v-see . z-←Ululon | d-←knife | v-see
+z-Alahen | d-knife | v-see . z-←Alahen | d-←knife | v-see
 
-*Ululon sees a knife. He sees the knife.*
+*Alahen sees a knife. He sees the knife.*
 :::
 
 **4.** `zahaben vugugal. zalahen dugugol vahahal. zazawan vugugar.`
 
 ::: details Show answer
 
-z-Uhubun | v-cook . z-Ululon | d-cookie | v-see . z-Azawan | v-←cook.full
+z-Ahaben | v-cook . z-Alahen | d-cookie | v-see . z-Azawan | v-←cook.full
 
-*Uhubun cooks. Ululon sees a cookie. Azawan does so.*
+*Ahaben cooks. Alahen sees a cookie. Azawan does so.*
 :::
 
 **5.** `zazawan dehan vahahal.`
@@ -277,8 +277,8 @@ Beginner already used content **-r** in the same slot as the earlier word (*he s
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `/z/` … `-r` after `/z/` | same subject again | *he / she / it / they*; *that ovavo* |
-| `/d/` … `-r` after `/d/` | same object again | *him / her / it / them*; *that ovavo* |
+| `/z/` … `-r` after `/z/` | same subject again | *he / she / it / they*; *that one* |
+| `/d/` … `-r` after `/d/` | same object again | *him / her / it / them*; *that one* |
 | `/b/` … `-r` after `/b/` | same extra-noun argument | *him / her / it / them* as recipient, or as the relation’s argument |
 | `/v/` … `-r` after `/v/` | same action again | *do so* / *do that* |
 | `/ɡ/` … `-r` after `/ɡ/` | same property again | *such* / *that* / *so* |
@@ -292,11 +292,11 @@ For English *too* / *also*, resume the action. `/v/` **-r** is *the same action 
 
 > `zalahen vowogal. zazawan vowogar.`
 >
-> z-Ululon | v-walk . z-Azawan | v-←walk.full
+> z-Alahen | v-walk . z-Azawan | v-←walk.full
 >
-> "Ululon walks. Azawan does too."
+> "Alahen walks. Azawan does too."
 
-> `zazawan vahahal dagadal. zazawan vahahar dodogal.`
+> `zazawan vahahal dagadal. zazawan vahar dodogal.`
 >
 > z-Azawan | v-see | d-cat . z-Azawan | v-←see | d-dog
 >
@@ -310,9 +310,9 @@ English *going back to X* / *returning to that thread* names an earlier person o
 
 > `zazawan vowogal. zalahen varahal. xazar vezebal.`
 >
-> z-Azawan | v-walk . z-Ululon | v-run . x-←Azawan | v-sleep
+> z-Azawan | v-walk . z-Alahen | v-run . x-←Azawan | v-sleep
 >
-> "Azawan walks. Ululon runs. Going back to Azawan, Azawan sleeps."
+> "Azawan walks. Alahen runs. Going back to Azawan, Azawan sleeps."
 
 **Not the same job as:** *regarding X* / *as for X* uses `/h/` + `/b/` X ([adverbs](clause.md#adverbs-h)).
 
@@ -322,9 +322,9 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 
 > `zazawan vehahel. zalahen vazar.`
 >
-> z-Azawan | v-sit . z-Ululon | v-←Azawan
+> z-Azawan | v-sit . z-Alahen | v-←Azawan
 >
-> "Azawan sits. Ululon does the same with Azawan."
+> "Azawan sits. Alahen does the same with Azawan."
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -334,13 +334,13 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 | verb antecedent, `/h/` … `-r` | recast as manner | *by doing so* / *thereby* |
 | adjective antecedent, noun … `-r` | recast as entity | *the … one* / *that quality* |
 
-For English *ovavo* (*a blue ovavo*, *the red one*), write the unspecified **`dar`** *something* and resume the noun as a kind on `/ɡ/`, then add the new property. **`dodor`** would be the same dog; **`dar`** with **`godor`** is another thing of the dog kind.
+For English *one* (*a blue one*, *the red one*), write the unspecified **`dar`** *something* and resume the noun as a kind on `/ɡ/`, then add the new property. A resume on `/d/` would be the same dog; **`dar`** with a `/ɡ/` resume is another thing of the dog kind.
 
 > `zazawan dodogal geredal vahahal. zalahen dar godor gubuhal vahahal.`
 >
-> z-Azawan | [d-dog | g-red] | v-see . z-Ululon | [d-something | g-←dog] | g-blue | v-see
+> z-Azawan | [d-dog | g-red] | v-see . z-Alahen | [d-something | g-←dog] | g-blue | v-see
 >
-> "Azawan sees a red dog. Ululon sees a blue one."
+> "Azawan sees a red dog. Alahen sees a blue one."
 
 ### Each other {#reciprocal}
 
@@ -348,11 +348,11 @@ For *each other*, join the people in `/z/` and add **`hedom`** after the verb. T
 
 > `zazawan zalahen zal vahahal hedom.`
 >
-> [z-Azawan | z-Ululon | z-and] | v-see | h-reciprocity
+> [z-Azawan | z-Alahen | z-and] | v-see | h-reciprocity
 >
-> "Azawan and Ululon see each other."
+> "Azawan and Alahen see each other."
 
-With **-l**, **`hedol`** is strictly pairwise: every one of them does it to every other one. **-m** is the everyday *each other* / *ovavo another*, where it only has to go both ways in general.
+With **-l**, **`hedol`** is strictly pairwise: every one of them does it to every other one. **-m** is the everyday *each other* / *one another*, where it only has to go both ways in general.
 
 **Compare with:** **`thedom barl`** on `/th/` is *if and only if* ([dependents](dependents.md#dependent-clauses)). On `/h/` with no `/b/`, the same root is *each other*.
 
@@ -380,8 +380,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
-| *Ululon* | `alahen` | | |
-| *Uhubun* | `ahaben` | | |
+| *Alahen* | `alahen` | | |
+| *Ahaben* | `ahaben` | | |
 | *pour* | `vorul` | `orul` *pour* | 🫗: water onto soil |
 | *harvest* | `vebadem` | `ebadel` *paddy* | 🌾: bringing the crop in |
 | *flower* | `avavul` | | |
@@ -399,12 +399,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
-**1.** *Ululon pours. Azawan does so.*
+**1.** *Alahen pours. Azawan does so.*
 
 ::: details Show answer
 `zalahen vorul. zazawan vorur.`
 
-z-Ululon | v-pour . z-Azawan | v-←pour
+z-Alahen | v-pour . z-Azawan | v-←pour
 :::
 
 **2.** *A flower is red. A tomato is such.*
@@ -415,36 +415,36 @@ z-Ululon | v-pour . z-Azawan | v-←pour
 z-flower | g-red . z-tomato | g-←red
 :::
 
-**3.** *Ululon sees Azawan. Uhubun sees them.*
+**3.** *Alahen sees Azawan. Ahaben sees them.*
 
 ::: details Show answer
 `zalahen dazawan vahahal. zahaben dazar vahahal.`
 
-z-Ululon | d-Azawan | v-see . z-Uhubun | d-←Azawan | v-see
+z-Alahen | d-Azawan | v-see . z-Ahaben | d-←Azawan | v-see
 :::
 
-**4.** *Azawan pours. Ululon harvests. Going back to Azawan, they see a seedling.*
+**4.** *Azawan pours. Alahen harvests. Going back to Azawan, they see a seedling.*
 
 ::: details Show answer
 `zazawan vorul. zalahen vebadem. xazar dozal vahahal.`
 
-z-Azawan | v-pour . z-Ululon | v-harvest . x-←Azawan | d-seedling | v-see
+z-Azawan | v-pour . z-Alahen | v-harvest . x-←Azawan | d-seedling | v-see
 :::
 
-**5.** *Ululon pours like Azawan. Uhubun harvests that way.*
+**5.** *Alahen pours like Azawan. Ahaben harvests that way.*
 
 ::: details Show answer
 `zalahen hemum bazawan vorul. zahaben hemur vebadem.`
 
-z-Ululon | [h-like | b-Azawan] | v-pour . z-Uhubun | h-←like | v-harvest
+z-Alahen | [h-like | b-Azawan] | v-pour . z-Ahaben | h-←like | v-harvest
 :::
 
-**6.** *As for Uhubun, Ululon punches.*
+**6.** *As for Ahaben, Alahen punches.*
 
 ::: details Show answer
 `hahehom bahaben zalahen vabahel.`
 
-[h-topic | b-Uhubun] | z-Ululon | v-punch
+[h-topic | b-Ahaben] | z-Alahen | v-punch
 :::
 
 **7.** *We (you and I) harvest.*
@@ -469,9 +469,9 @@ z-Azawan-x | v-punch
 
 ::: details Show answer
 
-z-Azawan | v-pour . z-Ululon | v-←pour
+z-Azawan | v-pour . z-Alahen | v-←pour
 
-*Azawan pours. Ululon does so.*
+*Azawan pours. Alahen does so.*
 :::
 
 **2.** `zadedol geredal. zavavul gerer.`
@@ -487,27 +487,27 @@ z-tomato | g-red . z-flower | g-←red
 
 ::: details Show answer
 
-z-Azawan | d-Ululon | v-see . z-Uhubun | d-←Ululon | v-see
+z-Azawan | d-Alahen | v-see . z-Ahaben | d-←Alahen | v-see
 
-*Azawan sees Ululon. Uhubun sees him.*
+*Azawan sees Alahen. Ahaben sees him.*
 :::
 
 **4.** `zalahen vebadem. zazawan vorul. xalar vabahel.`
 
 ::: details Show answer
 
-z-Ululon | v-harvest . z-Azawan | v-pour . x-←Ululon | v-punch
+z-Alahen | v-harvest . z-Azawan | v-pour . x-←Alahen | v-punch
 
-*Ululon harvests. Azawan pours. Going back to Ululon, he punches.*
+*Alahen harvests. Azawan pours. Going back to Alahen, he punches.*
 :::
 
 **5.** `hahehom bazawan zahaben vebadem.`
 
 ::: details Show answer
 
-[h-topic | b-Azawan] | z-Uhubun | v-harvest
+[h-topic | b-Azawan] | z-Ahaben | v-harvest
 
-*As for Azawan, Uhubun harvests.*
+*As for Azawan, Ahaben harvests.*
 :::
 
 **6.** `zohan vezogel.`
@@ -532,9 +532,9 @@ z-listener-x | v-scream
 
 ::: details Show answer
 
-z-Ululon-x | v-fight
+z-Alahen-x | v-fight
 
-*Ululon and associates fight.*
+*Alahen and associates fight.*
 :::
 
 ## Advanced {#advanced}
@@ -553,7 +553,7 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `/z/` `/d/` `/b/` … `-r` | ordinary 3rd-person slot | *he / she / it / they*; *that (ovavo)* (`/b/` still follows the host relation) |
+| `/z/` `/d/` `/b/` … `-r` | ordinary 3rd-person slot | *he / she / it / they*; *that (one)* (`/b/` still follows the host relation) |
 | `/v/` … `-r` | the same action again, now involving that entity | *do the same to / with it* |
 | `/ɡ/` … `-r` | of that entity’s kind (not possession) | *of that kind* |
 | `/w/` … `-r` | degree or frame on a property of that entity | *that* degree / frame |
@@ -565,15 +565,15 @@ Examples:
 
 > `zazawan vamuyul. zalahen dazar vahahal.`
 >
-> z-Azawan | v-mute . z-Ululon | d-←Azawan | v-see
+> z-Azawan | v-mute . z-Alahen | d-←Azawan | v-see
 >
-> "Azawan mutes. Ululon sees Azawan."
+> "Azawan mutes. Alahen sees Azawan."
 
 > `zazawan demegul vamuyul. zalahen vemer.`
 >
-> z-Azawan | d-studio-mic | v-mute . z-Ululon | v-←studio-mic
+> z-Azawan | d-studio-mic | v-mute . z-Alahen | v-←studio-mic
 >
-> "Azawan mutes a studio mic. Ululon does the same to it."
+> "Azawan mutes a studio mic. Alahen does the same to it."
 
 > `zeredel gelavam. zemegul gerer.`
 >
@@ -589,9 +589,9 @@ Examples:
 
 > `zazawan veredem. zalahen hazar vamuyul.`
 >
-> z-Azawan | v-broadcast . z-Ululon | h-←Azawan | v-mute
+> z-Azawan | v-broadcast . z-Alahen | h-←Azawan | v-mute
 >
-> "Azawan broadcasts. Ululon mutes on that one's account."
+> "Azawan broadcasts. Alahen mutes on that one's account."
 
 > `zazawan vamuyul. yazar.`
 >
@@ -601,9 +601,9 @@ Examples:
 
 > `zazawan vamuyul. zalahen vabahel. xazar vezogel.`
 >
-> z-Azawan | v-mute . z-Ululon | v-punch . x-←Azawan | v-scream
+> z-Azawan | v-mute . z-Alahen | v-punch . x-←Azawan | v-scream
 >
-> "Azawan mutes. Ululon punches. Going back to Azawan, Azawan screams."
+> "Azawan mutes. Alahen punches. Going back to Azawan, Azawan screams."
 
 #### Antecedent was a verb (`/v/`)
 
@@ -627,9 +627,9 @@ Examples:
 
 > `zazawan vamuyul. zalahen vamur.`
 >
-> z-Azawan | v-mute . z-Ululon | v-←mute
+> z-Azawan | v-mute . z-Alahen | v-←mute
 >
-> "Azawan mutes. Ululon does so."
+> "Azawan mutes. Alahen does so."
 
 > `zazawan demegul vamuyul. zeredel gamuyur.`
 >
@@ -645,9 +645,9 @@ Examples:
 
 > `zazawan veredem. zalahen herer vamuyul.`
 >
-> z-Azawan | v-broadcast . z-Ululon | h-←broadcast | v-mute
+> z-Azawan | v-broadcast . z-Alahen | h-←broadcast | v-mute
 >
-> "Azawan broadcasts. By doing so, Ululon mutes."
+> "Azawan broadcasts. By doing so, Alahen mutes."
 
 > `zazawan vamuyul. yamur.`
 >
@@ -657,9 +657,9 @@ Examples:
 
 > `zazawan vamuyul. zalahen vabahel. xamur zahaben vezogel.`
 >
-> z-Azawan | v-mute . z-Ululon | v-punch . x-←mute | z-Uhubun | v-scream
+> z-Azawan | v-mute . z-Alahen | v-punch . x-←mute | z-Ahaben | v-scream
 >
-> "Azawan mutes. Ululon punches. Going back to the muting, Uhubun screams."
+> "Azawan mutes. Alahen punches. Going back to the muting, Ahaben screams."
 
 #### Antecedent was an adjective (`/ɡ/`)
 
@@ -683,9 +683,9 @@ Examples:
 
 > `zahaben geredal. zazawan verer.`
 >
-> z-Uhubun | g-red . z-Azawan | v-←red
+> z-Ahaben | g-red . z-Azawan | v-←red
 >
-> "Uhubun is red. Azawan does that."
+> "Ahaben is red. Azawan does that."
 
 > `zeredel geredal. zemegul gerer.`
 >
@@ -713,9 +713,9 @@ Examples:
 
 > `zeredel geredal. zalahen vabahel. xerer zazawan vezogel.`
 >
-> z-radio | g-red . z-Ululon | v-punch . x-←red | z-Azawan | v-scream
+> z-radio | g-red . z-Alahen | v-punch . x-←red | z-Azawan | v-scream
 >
-> "A radio is red. Ululon punches. Going back to the redness, Azawan screams."
+> "A radio is red. Alahen punches. Going back to the redness, Azawan screams."
 
 #### Antecedent was an adjective extra (`/w/`)
 
@@ -730,41 +730,41 @@ Examples:
 
 Examples:
 
-> `zeredel welavam geredal. zalahen delavar vahahal.`
+> `zeredel welavam geredal. zalahen delar vahahal.`
 >
-> z-radio | [w-very | g-red] . z-Ululon | d-←very | v-see
+> z-radio | [w-very | g-red] . z-Alahen | d-←very | v-see
 >
-> "A radio is very red. Ululon sees that degree."
+> "A radio is very red. Alahen sees that degree."
 
-> `zeredel welavam geredal. zemegul gelavar.`
+> `zeredel welavam geredal. zemegul gelar.`
 >
 > z-radio | [w-very | g-red] . z-studio-mic | g-←very
 >
 > "A radio is very red. A studio mic is that (very red) too."
 
-> `zeredel welavam geredal. zemegul welavar gelavam.`
+> `zeredel welavam geredal. zemegul welar gelavam.`
 >
 > z-radio | [w-very | g-red] . z-studio-mic | [w-←very | g-big]
 >
 > "A radio is very red. A studio mic is very big too."
 
-> `zeredel welavam geredal. zazawan helavar veredem.`
+> `zeredel welavam geredal. zazawan helar veredem.`
 >
 > z-radio | [w-very | g-red] . z-Azawan | h-←very | v-broadcast
 >
 > "A radio is very red. Azawan broadcasts to that degree."
 
-> `zeredel welavam geredal. yelavar.`
+> `zeredel welavam geredal. yelar.`
 >
 > z-radio | [w-very | g-red] . y-←very
 >
 > "A radio is very red. In that manner?!"
 
-> `zeredel welavam geredal. zalahen vabahel. xelavar zazawan vezogel.`
+> `zeredel welavam geredal. zalahen vabahel. xelar zazawan vezogel.`
 >
-> z-radio | [w-very | g-red] . z-Ululon | v-punch . x-←very | z-Azawan | v-scream
+> z-radio | [w-very | g-red] . z-Alahen | v-punch . x-←very | z-Azawan | v-scream
 >
-> "A radio is very red. Ululon punches. Going back to that degree, Azawan screams."
+> "A radio is very red. Alahen punches. Going back to that degree, Azawan screams."
 
 #### Antecedent was an adverb (`/h/`)
 
@@ -782,45 +782,45 @@ Examples:
 
 > `zalahen hemum bazawan vamuyul. zahaben demur vahahal.`
 >
-> z-Ululon | [h-like | b-Azawan] | v-mute . z-Uhubun | d-←like | v-see
+> z-Alahen | [h-like | b-Azawan] | v-mute . z-Ahaben | d-←like | v-see
 >
-> "Ululon mutes like Azawan. Uhubun sees that manner."
+> "Alahen mutes like Azawan. Ahaben sees that manner."
 
 > `zalahen hemum bazawan vamuyul. zahaben vemur.`
 >
-> z-Ululon | [h-like | b-Azawan] | v-mute . z-Uhubun | v-←like
+> z-Alahen | [h-like | b-Azawan] | v-mute . z-Ahaben | v-←like
 >
-> "Ululon mutes like Azawan. Uhubun does it that way."
+> "Alahen mutes like Azawan. Ahaben does it that way."
 
 > `zalahen hemum bazawan vamuyul. zemegul gemur.`
 >
-> z-Ululon | [h-like | b-Azawan] | v-mute . z-studio-mic | g-←like
+> z-Alahen | [h-like | b-Azawan] | v-mute . z-studio-mic | g-←like
 >
-> "Ululon mutes like Azawan. A studio mic is that way."
+> "Alahen mutes like Azawan. A studio mic is that way."
 
 > `zalahen hemum bazawan vamuyul. zeredel wemur gelavam.`
 >
-> z-Ululon | [h-like | b-Azawan] | v-mute . z-radio | [w-←like | g-big]
+> z-Alahen | [h-like | b-Azawan] | v-mute . z-radio | [w-←like | g-big]
 >
-> "Ululon mutes like Azawan. A radio is big in that way."
+> "Alahen mutes like Azawan. A radio is big in that way."
 
 > `zalahen hemum bazawan vamuyul. zahaben hemur veredem.`
 >
-> z-Ululon | [h-like | b-Azawan] | v-mute . z-Uhubun | h-←like | v-broadcast
+> z-Alahen | [h-like | b-Azawan] | v-mute . z-Ahaben | h-←like | v-broadcast
 >
-> "Ululon mutes like Azawan. Uhubun broadcasts that way."
+> "Alahen mutes like Azawan. Ahaben broadcasts that way."
 
 > `zalahen hemum bazawan vamuyul. yemur.`
 >
-> z-Ululon | [h-like | b-Azawan] | v-mute . y-←like
+> z-Alahen | [h-like | b-Azawan] | v-mute . y-←like
 >
-> "Ululon mutes like Azawan. Like that?!"
+> "Alahen mutes like Azawan. Like that?!"
 
 > `zalahen hemum bazawan vamuyul. zazawan vabahel. xemur zahaben vezogel.`
 >
-> z-Ululon | [h-like | b-Azawan] | v-mute . z-Azawan | v-punch . x-←like | z-Uhubun | v-scream
+> z-Alahen | [h-like | b-Azawan] | v-mute . z-Azawan | v-punch . x-←like | z-Ahaben | v-scream
 >
-> "Ululon mutes like Azawan. Azawan punches. Going back to that manner, Uhubun screams."
+> "Alahen mutes like Azawan. Azawan punches. Going back to that manner, Ahaben screams."
 
 #### Antecedent was `/y/` or `/x/`
 
@@ -840,15 +840,15 @@ Examples:
 
 > `zazawan vamuyul. zalahen vabahel. xazar vezogel.`
 >
-> z-Azawan | v-mute . z-Ululon | v-punch . x-←Azawan | v-scream
+> z-Azawan | v-mute . z-Alahen | v-punch . x-←Azawan | v-scream
 >
-> "Azawan mutes. Ululon punches. Going back to Azawan, Azawan screams."
+> "Azawan mutes. Alahen punches. Going back to Azawan, Azawan screams."
 
 > `yalahen. zalar vezogel.`
 >
-> y-Ululon . z-←Ululon | v-scream
+> y-Alahen . z-←Alahen | v-scream
 >
-> "Ululon! Ululon screams."
+> "Alahen! Alahen screams."
 
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
@@ -862,8 +862,8 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
-| *Ululon* | `alahen` | | |
-| *Uhubun* | `ahaben` | | |
+| *Alahen* | `alahen` | | |
+| *Ahaben* | `ahaben` | | |
 | *mute* | `vamuyul` | `amuyul` *mute* | 🔇: cutting the live sound |
 | *broadcast* | `veredem` | `eredel` *radio* | 📻: sending the show out |
 | *radio* | `eredel` | | |
@@ -875,28 +875,28 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 #### English → Agalan {#advanced-english-to-agalan}
 
-**1.** *Azawan mutes. Ululon does the same with them.*
+**1.** *Azawan mutes. Alahen does the same with them.*
 
 ::: details Show answer
 `zazawan vamuyul. zalahen vazar.`
 
-z-Azawan | v-mute . z-Ululon | v-←Azawan
+z-Azawan | v-mute . z-Alahen | v-←Azawan
 :::
 
-**2.** *Ululon broadcasts. That action is big.*
+**2.** *Alahen broadcasts. That action is big.*
 
 ::: details Show answer
 `zalahen veredem. zerer gelavam.`
 
-z-Ululon | v-broadcast . z-←broadcast | g-big
+z-Alahen | v-broadcast . z-←broadcast | g-big
 :::
 
-**3.** *Azawan broadcasts. By doing so, Ululon mutes.*
+**3.** *Azawan broadcasts. By doing so, Alahen mutes.*
 
 ::: details Show answer
 `zazawan veredem. zalahen herer vamuyul.`
 
-z-Azawan | v-broadcast . z-Ululon | h-←broadcast | v-mute
+z-Azawan | v-broadcast . z-Alahen | h-←broadcast | v-mute
 :::
 
 **4.** *A radio is red. The red one screams.*
@@ -907,12 +907,12 @@ z-Azawan | v-broadcast . z-Ululon | h-←broadcast | v-mute
 z-radio | g-red . z-←red | v-scream
 :::
 
-**5.** *Ululon punches. That action is big.*
+**5.** *Alahen punches. That action is big.*
 
 ::: details Show answer
 `zalahen vabahel. zabar gelavam.`
 
-z-Ululon | v-punch . z-←punch | g-big
+z-Alahen | v-punch . z-←punch | g-big
 :::
 
 #### Agalan → English {#advanced-agalan-to-english}
@@ -930,21 +930,21 @@ z-radio | g-big . z-studio-mic | g-←radio
 
 ::: details Show answer
 
-z-Ululon | v-punch . z-Azawan | h-←punch | v-mute
+z-Alahen | v-punch . z-Azawan | h-←punch | v-mute
 
-*Ululon punches. By doing so, Azawan mutes.*
+*Alahen punches. By doing so, Azawan mutes.*
 :::
 
 **3.** `zazawan demegul vamuyul. zalahen vemer.`
 
 ::: details Show answer
 
-z-Azawan | d-studio-mic | v-mute . z-Ululon | v-←studio-mic
+z-Azawan | d-studio-mic | v-mute . z-Alahen | v-←studio-mic
 
-*Azawan mutes a studio mic. Ululon does the same to it.*
+*Azawan mutes a studio mic. Alahen does the same to it.*
 :::
 
-**4.** `zeredel gelavam. zelavar vezogel.`
+**4.** `zeredel gelavam. zelar vezogel.`
 
 ::: details Show answer
 
@@ -957,9 +957,9 @@ z-radio | g-big . z-←big | v-scream
 
 ::: details Show answer
 
-z-Uhubun | g-red . z-Azawan | v-←red
+z-Ahaben | g-red . z-Azawan | v-←red
 
-*Uhubun is red. Azawan does that.*
+*Ahaben is red. Azawan does that.*
 :::
 
 ## See also

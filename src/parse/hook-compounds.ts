@@ -1,4 +1,4 @@
-import { isClarityRootShape } from "../word-converter.js";
+import { isClarityRootShape } from "../root-shape.js";
 
 import type { Ending, MorphWord } from "./types.js";
 

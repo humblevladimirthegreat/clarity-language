@@ -1,26 +1,26 @@
 /**
  * The learner's own Agalan name: one published root + **-n**, filling `SELF` slots
- * in grammar examples. Unset → the speaker special **`ugobon`**.
+ * in grammar examples. Unset → the speaker special **`eman`**.
  */
 import type { OverlayRow, PublishedRow } from "./lexicon-search.js";
 
 /** Root shown in `SELF` slots when the learner has not chosen a name. */
-export const DEFAULT_SELF_ROOT = "ugobo";
+export const DEFAULT_SELF_ROOT = "ema";
 
 /** Gloss English for the default (the speaker overlay's gloss). */
 const DEFAULT_SELF_GLOSS = "speaker";
 
 /** Discourse-role specials: with **-n** they already mean a role, not a person. */
 const ROLE_WORDS: Record<string, string> = {
-  ugobo: "whoever is speaking",
-  edone: "whoever is listening",
-  aha: "inclusive we",
-  enenu: "someone",
+  ema: "whoever is speaking",
+  eha: "whoever is listening",
+  oha: "inclusive we",
+  anu: "someone",
 };
 /** House-cast people: a learner of the same name would collide with them in examples. */
-const HOUSE_CAST: Record<string, string> = { azawa: "Azawan", ululo: "Ululon", uhubu: "Uhubun" };
+const HOUSE_CAST: Record<string, string> = { azawa: "Azawan", alahe: "Alahen", ahabe: "Ahaben" };
 /** The language's own name. */
-const LANGUAGE_ROOT = "agala";
+const LANGUAGE_ROOT = "agaza";
 
 /**
  * Hand-picked names the helper suggests at random (both senses read well as a name).
@@ -28,18 +28,18 @@ const LANGUAGE_ROOT = "agala";
  */
 export const SUGGESTED_ROOTS = [
   // feelings and character
-  "uguru", "uzumu", "alalu", "olove", "azada", "erelu", "ozede", "aba", "uhugu", "agade",
+  "egeva", "azaha", "alavo", "alava", "azuda", "ereva", "evege", "ebewa", "ahage", "egade",
   // animals
-  "agada", "odogo", "odere", "ubudu", "odove", "egaga", "owo", "ebede",
+  "agada", "odoga", "adehu", "ebedu", "adavu", "egaha", "alaho", "ebada",
   // nature and sky
-  "unowe", "ezede", "ere", "eneze", "adado", "oduna", "ulugu", "oro",
+  "azova", "oza", "edehu", "eneza", "edebe", "uhude", "aladu", "oroza",
   // objects and craft
-  "ogomo", "anogo", "alane", "abogo", "agego", "urude", "araha", "uzugo", "abadu", "agara",
+  "agabu", "aga", "alode", "ubuga", "egeho", "ebevu", "ahavo", "onoda", "ebuda", "aguga",
 ];
 
 export type LearnerNameOption = {
   root: string;
-  /** The **-n** citation (`ugurun`). */
+  /** The **-n** citation (`egevan`). */
   name: string;
   emoji: string;
   concrete: string;
@@ -116,7 +116,7 @@ export function hasSelfSlot(text: string): boolean {
 }
 
 /**
- * Fill `SELF` slots with a root: words get the root (`zSELFn` → `zugobon`),
+ * Fill `SELF` slots with a root: words get the root (`zSELFn` → `zeman`),
  * a free-standing `SELF` (gloss lines) gets the English name (`z-SELF` → `z-speaker` / `z-Ugurun`).
  */
 export function fillSelf(text: string, root: string = DEFAULT_SELF_ROOT): string {

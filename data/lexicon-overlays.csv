@@ -107,8 +107,8 @@ orum,th,🫗,emotion_locus,EXTERNAL,emotion EXTERNAL locus (charge toward others
 orum,w,🫗,emotion_locus,EXTERNAL,emotion EXTERNAL locus (charge toward others),pour directs liquid outward; pour is other-directed charge,interests.md#emotion-compose
 ogam,th,🕯️,emotion_locus,CIRCUM,emotion CIRCUM locus (ambient / situational field),candle light fills the room; awash is charge in the surrounding field,interests.md#emotion-compose
 ogam,w,🕯️,emotion_locus,CIRCUM,emotion CIRCUM locus (ambient / situational field),candle light fills the room; awash is charge in the surrounding field,interests.md#emotion-compose
-azem,th,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#when-there-is-no-single-verb-egera
-azem,w,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#when-there-is-no-single-verb-egera
+azem,th,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#when-there-is-no-single-verb-aze
+azem,w,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#when-there-is-no-single-verb-aze
 agul,th,⛅,universality,COMMON,universality COMMON warrant (usual / exceptions expected),weather is the usual climate; usual warrant expects exceptions,knowing.md#universality
 agul,w,⛅,universality,COMMON,universality COMMON warrant (usual / exceptions expected),weather is the usual climate; usual warrant expects exceptions,knowing.md#mood-on-one-adjective
 edal,th,💊,universality,UNCOUNTERED,universality UNCOUNTERED warrant (no counterexample found),pill remedies what ails; uncountered is no case comes to mind,knowing.md#universality
@@ -239,12 +239,12 @@ oger,th,🟢,deontic,PERMIT-tolerated,tacit permission (no one objected; nobody 
 erel,th,⛔,deontic,FORBID-disallowed,disallowed by a rule policy or formal ban,standing no-entry sign; the rule blocks the way,interests.md#permission
 erem,th,⛔,deontic,FORBID-forbidden,forbidden by a person (speaker by default or the /b/ forbidder),no-entry sign put up by someone; a person blocks the way,interests.md#permission
 erer,th,⛔,deontic,FORBID-frowned-on,tacitly disapproved (no one forbade it outright),no-entry sign half-raised; nobody said no but it is not welcome,interests.md#permission
-ogexerenel,th,🟢,deontic,CONSENT-contract,consent by binding agreement from the affected (the /b/ or else the actor); withdrawing it has terms,green light signed in advance by the one it happens to; they agreed on paper,interests.md#consent
-ogexerenem,th,🟢,deontic,CONSENT-given,consent given outright by the affected (the /b/ or else the actor); revocable any time,green light from the one it happens to; they said yes,interests.md#consent
-ogexerener,th,🟢,deontic,CONSENT-assumed,consent assumed or inferred from the affected (the /b/ or else the actor),green light guessed from the one it happens to; I think they're OK with it,interests.md#consent
-erexononel,th,⛔,deontic,CONSENT-opted-out,binding refusal by the affected (a settled opt-out),no-entry sign signed by the one it happens to; they opted out for good,interests.md#consent
-erexononem,th,⛔,deontic,CONSENT-refused,consent refused outright by the affected (withdraws any earlier revocable yes),no-entry sign from the one it happens to; they said no,interests.md#consent
-erexononer,th,⛔,deontic,CONSENT-unlikely,consent presumed absent from the affected (they probably don't want it),no-entry sign guessed from the one it happens to; they probably don't want it,interests.md#consent
+uxogel,th,🟢,deontic,CONSENT-contract,consent by binding agreement from the affected (the /b/ or else the actor); withdrawing it has terms,green light signed in advance by the one it happens to; they agreed on paper,interests.md#consent
+uxogem,th,🟢,deontic,CONSENT-given,consent given outright by the affected (the /b/ or else the actor); revocable any time,green light from the one it happens to; they said yes,interests.md#consent
+uxoger,th,🟢,deontic,CONSENT-assumed,consent assumed or inferred from the affected (the /b/ or else the actor),green light guessed from the one it happens to; I think they're OK with it,interests.md#consent
+uxerel,th,⛔,deontic,CONSENT-opted-out,binding refusal by the affected (a settled opt-out),no-entry sign signed by the one it happens to; they opted out for good,interests.md#consent
+uxerem,th,⛔,deontic,CONSENT-refused,consent refused outright by the affected (withdraws any earlier revocable yes),no-entry sign from the one it happens to; they said no,interests.md#consent
+uxerer,th,⛔,deontic,CONSENT-unlikely,consent presumed absent from the affected (they probably don't want it),no-entry sign guessed from the one it happens to; they probably don't want it,interests.md#consent
 ohol,h,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,knowing.md#phasal
 ohol,w,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,knowing.md#phasal
 ohom,h,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,knowing.md#phasal

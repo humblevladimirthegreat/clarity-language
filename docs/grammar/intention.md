@@ -31,15 +31,15 @@ On **`ama`**, **-l / -m / -r** say **how fully drawn** the intention is: a map t
 
 > `zalahen thamar vowogal.`
 >
-> z-Ululon | th-plan-sketch | v-walk
+> z-Alahen | th-plan-sketch | v-walk
 >
-> "Ululon is thinking of a walk." (a sketch is plenty here)
+> "Alahen is thinking of a walk." (a sketch is plenty here)
 
 > `zahaben thamal vowogal.`
 >
-> z-Uhubun | th-plan-atlas | v-walk
+> z-Ahaben | th-plan-atlas | v-walk
 >
-> "Uhubun is fully prepared to walk."
+> "Ahaben is fully prepared to walk."
 
 Saying *I will* in English can hide whether you have a direction, the steps, or backups too. Picking the ending makes that level of detail audible, so others know how firm the details are.
 
@@ -56,8 +56,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | *sit* | `vehahel` | `ehahel` *chair* |
 | *pawn* | `obohel` | |
 | *see* | `vahahal` | `ahahal` *eye* |
@@ -76,60 +76,60 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 z-Azawan | th-plan-sketch | v-sit
 :::
 
-**2.** *Ululon intends to see a pawn.*
+**2.** *Alahen intends to see a pawn.*
 
 ::: details Show answer
 `zalahen thamar dobohel vahahal.`
 
-z-Ululon | th-plan-sketch | d-pawn | v-see
+z-Alahen | th-plan-sketch | d-pawn | v-see
 :::
 
-**3.** *Azawan plans to tell Uhubun.*
+**3.** *Azawan plans to tell Ahaben.*
 
 ::: details Show answer
 `zazawan bahaben thamam vezebel.`
 
-z-Azawan | b-Uhubun | th-plan-itinerary | v-tell
+z-Azawan | b-Ahaben | th-plan-itinerary | v-tell
 :::
 
-**4.** *Uhubun is fully prepared to sit.*
+**4.** *Ahaben is fully prepared to sit.*
 
 ::: details Show answer
 `zahaben thamal vehahel.`
 
-z-Uhubun | th-plan-atlas | v-sit
+z-Ahaben | th-plan-atlas | v-sit
 :::
 
-**5.** *Uhubun plans to see Azawan.*
+**5.** *Ahaben plans to see Azawan.*
 
 ::: details Show answer
 `zahaben thamam dazawan vahahal.`
 
-z-Uhubun | th-plan-itinerary | d-Azawan | v-see
+z-Ahaben | th-plan-itinerary | d-Azawan | v-see
 :::
 
-**6.** *Ululon is fully prepared to punch Azawan.*
+**6.** *Alahen is fully prepared to punch Azawan.*
 
 ::: details Show answer
 `zalahen thamal dazawan vabahel.`
 
-z-Ululon | th-plan-atlas | d-Azawan | v-punch
+z-Alahen | th-plan-atlas | d-Azawan | v-punch
 :::
 
-**7.** *Ululon plans to scream.*
+**7.** *Alahen plans to scream.*
 
 ::: details Show answer
 `zalahen thamam vezogel.`
 
-z-Ululon | th-plan-itinerary | v-scream
+z-Alahen | th-plan-itinerary | v-scream
 :::
 
-**8.** *Ululon is fully prepared to fight.*
+**8.** *Alahen is fully prepared to fight.*
 
 ::: details Show answer
 `zalahen thamal vavadal.`
 
-z-Ululon | th-plan-atlas | v-fight
+z-Alahen | th-plan-atlas | v-fight
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
@@ -138,9 +138,9 @@ z-Ululon | th-plan-atlas | v-fight
 
 ::: details Show answer
 
-z-Ululon | th-plan-sketch | v-sit
+z-Alahen | th-plan-sketch | v-sit
 
-*Ululon intends to sit.*
+*Alahen intends to sit.*
 :::
 
 **2.** `zazawan thamar dobohel vahahal.`
@@ -156,45 +156,45 @@ z-Azawan | th-plan-sketch | d-pawn | v-see
 
 ::: details Show answer
 
-z-Uhubun | b-Azawan | th-plan-itinerary | v-tell
+z-Ahaben | b-Azawan | th-plan-itinerary | v-tell
 
-*Uhubun plans to tell Azawan.*
+*Ahaben plans to tell Azawan.*
 :::
 
 **4.** `zahaben thamar vehahel.`
 
 ::: details Show answer
 
-z-Uhubun | th-plan-sketch | v-sit
+z-Ahaben | th-plan-sketch | v-sit
 
-*Uhubun intends to sit.*
+*Ahaben intends to sit.*
 :::
 
 **5.** `zazawan bahaben thamar vezebel.`
 
 ::: details Show answer
 
-z-Azawan | b-Uhubun | th-plan-sketch | v-tell
+z-Azawan | b-Ahaben | th-plan-sketch | v-tell
 
-*Azawan intends to tell Uhubun.*
+*Azawan intends to tell Ahaben.*
 :::
 
 **6.** `zalahen thamam dobohel vahahal.`
 
 ::: details Show answer
 
-z-Ululon | th-plan-itinerary | d-pawn | v-see
+z-Alahen | th-plan-itinerary | d-pawn | v-see
 
-*Ululon plans to see a pawn.*
+*Alahen plans to see a pawn.*
 :::
 
 **7.** `zahaben thamal vezogel.`
 
 ::: details Show answer
 
-z-Uhubun | th-plan-atlas | v-scream
+z-Ahaben | th-plan-atlas | v-scream
 
-*Uhubun is fully prepared to scream.*
+*Ahaben is fully prepared to scream.*
 :::
 
 **8.** `zazawan thamam vavadal.`
@@ -238,9 +238,9 @@ The ending still belongs to that verb or adjective (**-l** concrete, **-m** abst
 
 > `zalahen vezehexam.`
 >
-> z-Ululon | v-expression-able
+> z-Alahen | v-expression-able
 >
-> "Ululon can express themself."
+> "Alahen can express themself."
 
 #### Can be (role + ability)
 <a id="role-ability"></a>
@@ -249,9 +249,9 @@ To say someone **can be** a doer, place, undergoer, or recipient, not that they 
 
 > `zalahen gaxaradaxam.`
 >
-> z-Ululon | g-agent-x-authorship-able
+> z-Alahen | g-agent-x-authorship-able
 >
-> "Ululon can be the author."
+> "Alahen can be the author."
 
 > `zazawan gaxedehoxul.`
 >
@@ -269,9 +269,9 @@ English *can't* does not say whether this is just for now, not yet, or never. Af
 
 > `zalahen vezehexel.`
 >
-> z-Ululon | v-sing-unable-temporary
+> z-Alahen | v-sing-unable-temporary
 >
-> "Ululon can't sing right now."
+> "Alahen can't sing right now."
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -282,9 +282,9 @@ English *can't* does not say whether this is just for now, not yet, or never. Af
 
 > `zahaben vezehexol.`
 >
-> z-Uhubun | v-sing-unable-modifiable
+> z-Ahaben | v-sing-unable-modifiable
 >
-> "Uhubun can't sing yet."
+> "Ahaben can't sing yet."
 
 > `zazawan varahaxul.`
 >
@@ -315,9 +315,9 @@ Ordinary content is still available (`zehul` *a checkmark*; `vehul` *to check / 
 
 > `zalahen thehum vezehel.`
 >
-> z-Ululon | th-DECISION-modifiable | v-sing
+> z-Alahen | th-DECISION-modifiable | v-sing
 >
-> "Ululon has decided to sing, and can still change that."
+> "Alahen has decided to sing, and can still change that."
 
 **Compare with PLAN:** [PLAN](#plan-predict) says how fully someone has planned a course of action. DECISION says how readily they may change their choice.
 
@@ -344,9 +344,9 @@ PLAN and DECISION endings run the same way: **-l** is the most settled, **-m** t
 
 > `zalahen thamar thehur vowogal.`
 >
-> z-Ululon | th-plan-sketch | th-DECISION-temporary | v-walk
+> z-Alahen | th-plan-sketch | th-DECISION-temporary | v-walk
 >
-> "Ululon is thinking of walking, and has decided only for now."
+> "Alahen is thinking of walking, and has decided only for now."
 
 ### Try {#try}
 <a id="attempt"></a>
@@ -374,15 +374,15 @@ On **`ede`**, **-l / -m / -r** say how far the attempt will go. **-n** is ordina
 
 > `zalahen theder vezehel.`
 >
-> z-Ululon | th-ATTEMPT-trial | v-sing
+> z-Alahen | th-ATTEMPT-trial | v-sing
 >
-> "Ululon gives singing a try."
+> "Alahen gives singing a try."
 
 > `zalahen thedel vowogal.`
 >
-> z-Ululon | th-ATTEMPT-committed | v-walk
+> z-Alahen | th-ATTEMPT-committed | v-walk
 >
-> "Ululon keeps trying to walk."
+> "Alahen keeps trying to walk."
 
 A trial run (**-r**) plans for failure: if it fails, that is what the probe was for. Use it when you want to lower the stakes, for yourself or for someone else.
 
@@ -428,9 +428,9 @@ English *will* can be a plan or a forecast. A plan uses [PLAN](#plan-predict) an
 
 > `zalahen thamam thanel bral vehahel.`
 >
-> z-Ululon | th-plan-itinerary | [th-INFERRED.strong | b-later] | v-sit
+> z-Alahen | th-plan-itinerary | [th-INFERRED.strong | b-later] | v-sit
 >
-> "Ululon plans to sit, and the clues strongly say it will happen."
+> "Alahen plans to sit, and the clues strongly say it will happen."
 
 **Compare with:** a channel with no offset is a claim about *this stretch* (**`thodem`** if you are observing it now; **`thevem`** if you remember observing it). Add **`bral`** when the claim is about a **later** event, not a guess about what is already so.
 
@@ -446,8 +446,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `alahen` | |
-| *Uhubun* | `ahaben` | |
+| *Alahen* | `alahen` | |
+| *Ahaben* | `ahaben` | |
 | **PLAN** (itinerary) | `thamam` | `amam` *plan-itinerary* |
 | **DECISION** (modifiable) | `thehum` | `ehul` *check* |
 | *attempt-committed* | `thedel` | `edel` *test-tube* |
@@ -468,36 +468,36 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
-**1.** *Ululon has decided to sit, and can still change that.*
+**1.** *Alahen has decided to sit, and can still change that.*
 
 ::: details Show answer
 `zalahen thehum vehahel.`
 
-z-Ululon | th-DECISION-modifiable | v-sit
+z-Alahen | th-DECISION-modifiable | v-sit
 :::
 
-**2.** *Azawan has decided to tell Uhubun, and can still change that.*
+**2.** *Azawan has decided to tell Ahaben, and can still change that.*
 
 ::: details Show answer
 `zazawan bahaben thehum vezebel.`
 
-z-Azawan | b-Uhubun | th-DECISION-modifiable | v-tell
+z-Azawan | b-Ahaben | th-DECISION-modifiable | v-tell
 :::
 
-**3.** *Uhubun has decided for now to write.*
+**3.** *Ahaben has decided for now to write.*
 
 ::: details Show answer
 `zahaben thehur varadal.`
 
-z-Uhubun | th-DECISION-temporary | v-write
+z-Ahaben | th-DECISION-temporary | v-write
 :::
 
-**4.** *Going by the usual pattern, Ululon will sit.*
+**4.** *Going by the usual pattern, Alahen will sit.*
 
 ::: details Show answer
 `zalahen thobam bral vehahel.`
 
-z-Ululon | [th-PATTERN | b-later] | v-sit
+z-Alahen | [th-PATTERN | b-later] | v-sit
 :::
 
 **5.** *Azawan plans to sit, and that choice is final.*
@@ -508,28 +508,28 @@ z-Ululon | [th-PATTERN | b-later] | v-sit
 z-Azawan | th-plan-itinerary | th-DECISION-irreversible | v-sit
 :::
 
-**6.** *Ululon has decided for now to see a clipboard.*
+**6.** *Alahen has decided for now to see a clipboard.*
 
 ::: details Show answer
 `zalahen thehur degabol vahahal.`
 
-z-Ululon | th-DECISION-temporary | d-clipboard | v-see
+z-Alahen | th-DECISION-temporary | d-clipboard | v-see
 :::
 
-**7.** *Ululon has decided for good to punch Azawan.*
+**7.** *Alahen has decided for good to punch Azawan.*
 
 ::: details Show answer
 `zalahen thehul dazawan vabahel.`
 
-z-Ululon | th-DECISION-irreversible | d-Azawan | v-punch
+z-Alahen | th-DECISION-irreversible | d-Azawan | v-punch
 :::
 
-**8.** *Ululon has decided for good to fight.*
+**8.** *Alahen has decided for good to fight.*
 
 ::: details Show answer
 `zalahen thehul vavadal.`
 
-z-Ululon | th-DECISION-irreversible | v-fight
+z-Alahen | th-DECISION-irreversible | v-fight
 :::
 
 **9.** *Azawan can climb.*
@@ -540,12 +540,12 @@ z-Ululon | th-DECISION-irreversible | v-fight
 z-Azawan | v-climb-able
 :::
 
-**10.** *Uhubun can't stand yet.*
+**10.** *Ahaben can't stand yet.*
 
 ::: details Show answer
 `zahaben vazadoxol.`
 
-z-Uhubun | v-stand-unable-modifiable
+z-Ahaben | v-stand-unable-modifiable
 :::
 
 **11.** *Azawan can't right now.* (the whole thing, not one verb)
@@ -567,9 +567,9 @@ z-Azawan | th-ATTEMPT-committed | v-climb
 **13.** *Azawan gives standing a try; failing that, Azawan sits.*
 
 ::: details Show answer
-`zazawan theder vazadol xon zazar vehahel.`
+`zazawan theder vazadol xon zazawar vehahel.`
 
-[z-Azawan | th-ATTEMPT-trial | v-stand | x-or-else | z-←Azawan | v-sit]
+[z-Azawan | th-ATTEMPT-trial | v-stand | x-or-else | z-←Azawan.full | v-sit]
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -587,9 +587,9 @@ z-Azawan | th-DECISION-modifiable | v-sit
 
 ::: details Show answer
 
-z-Ululon | th-DECISION-irreversible | v-write
+z-Alahen | th-DECISION-irreversible | v-write
 
-*Ululon has decided for good to write.*
+*Alahen has decided for good to write.*
 :::
 
 **3.** `thobam bral vezogel.`
@@ -605,9 +605,9 @@ z-Ululon | th-DECISION-irreversible | v-write
 
 ::: details Show answer
 
-z-Uhubun | th-DECISION-temporary | v-sit
+z-Ahaben | th-DECISION-temporary | v-sit
 
-*Uhubun has decided for now to sit.*
+*Ahaben has decided for now to sit.*
 :::
 
 **5.** `zazawan thehur debewul vahahal.`
@@ -623,36 +623,36 @@ z-Azawan | th-DECISION-temporary | d-pen | v-see
 
 ::: details Show answer
 
-z-Ululon | b-Uhubun | th-plan-itinerary | th-DECISION-irreversible | v-tell
+z-Alahen | b-Ahaben | th-plan-itinerary | th-DECISION-irreversible | v-tell
 
-*Ululon plans to tell Uhubun, and that choice is final.*
+*Alahen plans to tell Ahaben, and that choice is final.*
 :::
 
 **7.** `zalahen thehur dazawan vabahel.`
 
 ::: details Show answer
 
-z-Ululon | th-DECISION-temporary | d-Azawan | v-punch
+z-Alahen | th-DECISION-temporary | d-Azawan | v-punch
 
-*Ululon has decided for now to punch Azawan.*
+*Alahen has decided for now to punch Azawan.*
 :::
 
 **8.** `zahaben thehul vezogel.`
 
 ::: details Show answer
 
-z-Uhubun | th-DECISION-irreversible | v-scream
+z-Ahaben | th-DECISION-irreversible | v-scream
 
-*Uhubun has decided for good to scream.*
+*Ahaben has decided for good to scream.*
 :::
 
 **9.** `zalahen varahaxul.`
 
 ::: details Show answer
 
-z-Ululon | v-run-unable-irreversible
+z-Alahen | v-run-unable-irreversible
 
-*Ululon can never run.*
+*Alahen can never run.*
 :::
 
 **10.** `zazawan vagawol.`
@@ -669,9 +669,9 @@ z-Azawan | v-climb
 
 ::: details Show answer
 
-z-Ululon | th-ABIL-unable-irreversible
+z-Alahen | th-ABIL-unable-irreversible
 
-*Ululon can never do it.* (the whole thing, not one verb)
+*Alahen can never do it.* (the whole thing, not one verb)
 :::
 
 ## Advanced {#advanced}
@@ -683,9 +683,9 @@ z-Ululon | th-ABIL-unable-irreversible
 
 > `zalahen thamar vowogal henum b_#22,7.`
 >
-> z-Ululon | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
+> z-Alahen | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
 >
-> "As of 22 July, Ululon was going to walk."
+> "As of 22 July, Alahen was going to walk."
 
 > `thobam bral humum b_#22,7 verehel. xazawan thobam bral humur vowogal.`
 >
@@ -695,9 +695,9 @@ z-Ululon | th-ABIL-unable-irreversible
 
 > `zalahen thehum vowogal henum b_#22,7.`
 >
-> z-Ululon | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
+> z-Alahen | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 >
-> "As of 22 July, Ululon had decided to walk, and that pick is still revisable now."
+> "As of 22 July, Alahen had decided to walk, and that pick is still revisable now."
 
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
@@ -711,7 +711,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. PLAN an
 | English | Agalan |
 |---------|--------|
 | *Azawan* | `azawan` |
-| *Ululon* | `alahen` |
+| *Alahen* | `alahen` |
 | *walk* | `vowogal` |
 | *rain* | `verehel` |
 | *plan-sketch* | `thamar` |
@@ -722,12 +722,12 @@ Short drills for Advanced. Try each item before opening **Show answer**. PLAN an
 
 #### English → Agalan {#advanced-english-to-agalan}
 
-**1.** *As of 22 July, Ululon was going to walk.*
+**1.** *As of 22 July, Alahen was going to walk.*
 
 ::: details Show answer
 `zalahen thamar vowogal henum b_#22,7.`
 
-z-Ululon | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
+z-Alahen | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
 :::
 
 **2.** *Taking 22 July as now (a placeholder), it would rain, going by the pattern.*
@@ -738,12 +738,12 @@ z-Ululon | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
 [th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain
 :::
 
-**3.** *As of 22 July, Ululon had decided to walk, and that pick is still revisable now.*
+**3.** *As of 22 July, Alahen had decided to walk, and that pick is still revisable now.*
 
 ::: details Show answer
 `zalahen thehum vowogal henum b_#22,7.`
 
-z-Ululon | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
+z-Alahen | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 :::
 
 #### Agalan → English {#advanced-agalan-to-english}
@@ -761,18 +761,18 @@ z-Ululon | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 
 ::: details Show answer
 
-z-Ululon | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
+z-Alahen | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
 
-*As of 22 July, Ululon was going to walk.*
+*As of 22 July, Alahen was going to walk.*
 :::
 
 **3.** `zalahen thehum vowogal henum b_#22,7.`
 
 ::: details Show answer
 
-z-Ululon | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
+z-Alahen | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 
-*As of 22 July, Ululon had decided to walk, and that pick is still revisable now.*
+*As of 22 July, Alahen had decided to walk, and that pick is still revisable now.*
 :::
 
 ## See also
