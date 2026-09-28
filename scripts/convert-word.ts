@@ -19,6 +19,7 @@ import {
   serializeCompoundCsv,
   validateCompoundRows,
 } from "../src/lexicon-compounds.js";
+import { placePublishedRoots } from "../src/lexicon-place.js";
 import { isJoinOverlayKind, parseOverlayCsv } from "../src/lexicon-search.js";
 import { RETIE_MAP_RELATIVE_PATH, serializeRetieMap, type RetiePair } from "../src/retie/map.js";
 import {
@@ -106,6 +107,8 @@ function printUsage(): void {
        npm run convert-word -- --lexicon [--only LITERAL|EMOJI|ROOT]
 
 --lexicon rewrites the published/overlay/compound CSVs and dumps tmp/lexicon-retie-map.json.
+Eligible rows (overlay-backed, or the marked pronouns) take annealed three-letter roots.
+Every other row takes a five-letter root, frequent senses first, regret order on ties.
 --only limits --lexicon to matching published rows (repeatable or comma-separated).
 
 Examples:
@@ -153,7 +156,7 @@ function rowMatchesOnly(row: Record<string, string>, only: string[]): boolean {
   return only.some((filter) => filter === literal || filter === emoji || filter === root);
 }
 
-function convertLexicon(only: string[]): void {
+async function convertLexicon(only: string[]): Promise<void> {
   const { headers, rows } = parseCsv(readFileSync(publishedPath, "utf8"));
   const overlays = parseOverlayCsv(readFileSync(overlayPath, "utf8"));
   const compoundRows = parseCompoundCsv(readFileSync(compoundsPath, "utf8"));
@@ -187,38 +190,48 @@ function convertLexicon(only: string[]): void {
 
   const targets = only.length > 0 ? selected : rows;
   for (const row of targets) {
+    if (!(row.concrete ?? "").trim()) skipped += 1;
+  }
+  const placed = await placePublishedRoots(
+    targets.flatMap((row) => {
+      const concrete = (row.concrete ?? "").trim();
+      if (!concrete) return [];
+      return [{
+        emoji: (row.emoji ?? "").trim(),
+        concrete,
+        abstract: (row.abstract ?? "").trim(),
+        englishByPos: (row.english_by_pos ?? "").trim(),
+      }];
+    }),
+    overlays,
+    { blocked: used },
+  );
+  const byEmoji = new Map(placed.map((item) => [item.emoji, item]));
+  for (const row of targets) {
     const literal = (row.concrete ?? "").trim();
-    if (!literal) {
-      skipped += 1;
+    if (!literal) continue;
+    const previous = (row.clarity ?? "").trim();
+    const neu = byEmoji.get((row.emoji ?? "").trim())?.root;
+    if (!neu) {
+      failed += 1;
+      console.error(`no placement for ${literal}`);
       continue;
     }
-    const previous = (row.clarity ?? "").trim();
-    try {
-      const neu = toUniqueClarityWord(literal, used);
-      row.clarity = neu;
-      assigned.push(neu);
-      if (row.emoji) {
-        oldToNewByEmoji.set(row.emoji, { oldRoot: previous, newRoot: neu });
-      }
-      if (neu !== previous) {
-        changed += 1;
-        retiePairs.push({
-          emoji: (row.emoji ?? "").trim(),
-          literal,
-          oldRoot: previous,
-          newRoot: neu,
-        });
-        console.log(`CHG  ${literal} ${previous} -> ${neu}`);
-      } else {
-        kept += 1;
-        if (only.length > 0) {
-          console.log(`KEEP ${literal} ${neu}`);
-        }
-      }
-    } catch (err) {
-      failed += 1;
-      const message = err instanceof Error ? err.message : String(err);
-      console.error(message);
+    row.clarity = neu;
+    assigned.push(neu);
+    if (row.emoji) oldToNewByEmoji.set(row.emoji, { oldRoot: previous, newRoot: neu });
+    if (neu !== previous) {
+      changed += 1;
+      retiePairs.push({
+        emoji: (row.emoji ?? "").trim(),
+        literal,
+        oldRoot: previous,
+        newRoot: neu,
+      });
+      console.log(`CHG  ${literal} ${previous} -> ${neu}`);
+    } else {
+      kept += 1;
+      if (only.length > 0) console.log(`KEEP ${literal} ${neu}`);
     }
   }
 
@@ -301,10 +314,10 @@ function convertLexicon(only: string[]): void {
   }
 }
 
-function main(): void {
+async function main(): Promise<void> {
   const options = parseArgs(process.argv.slice(2));
   if (options.lexicon) {
-    convertLexicon(options.only);
+    await convertLexicon(options.only);
     return;
   }
   const root = options.unique
@@ -314,7 +327,7 @@ function main(): void {
 }
 
 try {
-  main();
+  await main();
 } catch (err) {
   const message = err instanceof Error ? err.message : String(err);
   console.error(message);
