@@ -261,24 +261,43 @@ z-fire | [w-autonomy-unmet-irreversible | g-stimulus]
 
 ### Emotion compose {#emotion-compose}
 
-When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: an [interest stance](#interests) on the situation, where the charge sits, and how it moves. All three ride on **one word**: the interest word keeps its stance and its ending letter, then adds a **locus vowel** and a **motion ending**. Put that word on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](#stimulus) **`gobom`** when the noun is not yours. You can then say the take without smuggling a single emotion word.
+When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: an [interest stance](#interests) on the situation, where the charge sits or what it points at, and how it moves. All three ride on **one word**: the interest word keeps its stance and its ending letter, then adds a **locus** (the vowels of a [hook](hooks.md#extra-noun)) and a **motion ending**. Put that word on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](#stimulus) **`gobom`** when the noun is not yours. You can then say the take without smuggling a single emotion word.
 
-> `zezebel wuduthurar gobom.`
+> `zezebel wuduthuraor gobom.`
 >
 > z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]
 >
-> "Anxious about the dialogue:" competence at stake for now; it fills the room; it surges.
+> "Anxious about the dialogue:" competence at stake for now; it hangs over the room; it surges.
 
-Build it from the plain interest word: `wuduthur` (competence, unmet, passing) + **`a`** (CIRCUM) + **-r** (SURGING) = `wuduthurar`. The old ending letter (**-r** here) stays in the middle of the word and keeps its meaning.
+Build it from the plain interest word: `wuduthur` (competence, unmet, passing) + **`ao`** (*over*: CIRCUM) + **-r** (SURGING) = `wuduthuraor`. The old ending letter (**-r** here) stays in the middle of the word and keeps its meaning.
 
-The locus vowel says where the charge sits. It follows the [vowel series](speech-moves.md#speech-act-beginner):
+The locus uses the hook vowels you already know. A **placement** locus says whose feeling it is and where it sits:
 
-| Locus vowel | Use | English | Cue |
-|-------------|-----|---------|-----|
-| **`o`** | INTERNAL | *held inside* | **o** ≈ *one*: just me |
-| **`e`** | EXTERNAL | *directed at other people* | **e** ≈ *order*: aimed at someone, like an order |
-| **`a`** | CIRCUM | *on the situation* (shared / ambient field) | **a** ≈ *add*: everyone and everything together |
-| **`u`** | UNPLACED | *I can't place where it comes from* | **u** ≈ *undo*: it sits nowhere yet |
+| Locus | Hook | Use | English |
+|-------|------|-----|---------|
+| **`a`** | *in* | INTERNAL | *mine, held inside* |
+| **`uo`** | *through* | CAUGHT | *passing through me, not mine* (picked up from the room or from someone) |
+| **`ae`** | *using* | ROLE | *felt in a capacity, not personally* (*as the reviewer*) |
+| **`ua`** | *out from among* | COLLECTIVE | *ours: the group's feeling, which I hold as one member* |
+| **`ao`** | *over* | CIRCUM | *the atmosphere of the situation* |
+| **`u`** | *from* | UNPLACED | *I can't place where it comes from* |
+
+A **direction** locus says what the charge points at:
+
+| Locus | Hook | Use | English |
+|-------|------|-----|---------|
+| **`o`** | *at* | AIMED | *aimed at someone* (*annoyed at*) |
+| **`oe`** | *toward* | REACHING | *reaching to change something* (*pressing for*) |
+| **`ue`** | *against* | RESISTING | *pushing back* (*objecting to*) |
+| **`e`** | *for* | ON-BEHALF | *felt for someone's sake* (*upset for*) |
+
+Name the landmark with a `/b/` word right after the feeling (after **`gobom`** when the feeling is on `/w/`): the target of a direction, or who it was caught from, the role, the group, or the situation. INTERNAL and UNPLACED take no `/b/`. A direction with no `/b/` points at the stimulus noun when there is one, otherwise at someone unnamed.
+
+> `zemehol wonathumol gobom balahen.`
+>
+> z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Alahen]
+>
+> "Resentful at Alahen about the memo, gone still."
 
 The motion ending says how the feeling moves. Affect is **water**:
 
@@ -294,15 +313,14 @@ The tail goes on met **`tha`**, motive **`tho`**, and unmet **`thu`** words. Pre
 
 | Agalan | English |
 |---------|---------|
-| `zezebel wuduthurar gobom` | *anxious about the dialogue* (competence at stake, temporary; fills the room; surging) |
-| `zozazom wonathumer gobom` | *resentful about the division* (unmet relatedness; aimed at them; surging) |
-| `zebeyum guduthamor` | *proud of the draft* (met competence; held inside; surging) |
-| `zemehol wonathumel gobom` | *resentful about the memo* (unmet relatedness; aimed at them; gone still) |
+| `zezebel wuduthuraor gobom` | *anxious about the dialogue* (competence at stake, temporary; hangs over the room; surging) |
+| `zozazom wonathumuar gobom` | *our resentment about the division* (unmet relatedness; the group's, and I share it; surging) |
+| `zebeyum guduthamar` | *proud of the draft* (met competence; held inside; surging) |
+| `zemehol wonathumem gobom bazawan` | *upset for Azawan about the memo* (unmet relatedness; on Azawan's behalf; flowing) |
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
 
-**Compare with:** *could be* uses [MAY](knowing.md#may) (`ovo`). This word is interest + locus + motion.
-
+**Compare with:** *could be* uses [MAY](knowing.md#may) (`ovo`). CAUGHT from a `/b/` says whose feeling it is; *because of* is a causal claim with [`geram`](causation.md#because). The stimulus says what the feeling is **about**; a direction `/b/` says what it is **aimed at**.
 
 ### Prescription (`the`): ought this act for this interest
 <a id="interest-force"></a>
@@ -722,9 +740,9 @@ z-Azawan | v-hush | [th-CONSENT-assumed | [b-Alahen | b-Ahaben | b-and]]
 **15.** *Resentful about the bell:* relatedness unmet; aimed at them; surging.
 
 ::: details Show answer
-`zebevol wonathumer gobom.`
+`zebevol wonathumor gobom.`
 
-z-bell | [w-relatedness-unmet-modifiable-EXTERNAL-SURGING | g-stimulus]
+z-bell | [w-relatedness-unmet-modifiable-AIMED-SURGING | g-stimulus]
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -837,7 +855,7 @@ z-Azawan | v-scream | [th-CONSENT-refused | b-Alahen]
 *Azawan screams, though Alahen said no to it.*
 :::
 
-**13.** `zehehal guduthamom.`
+**13.** `zehehal guduthamam.`
 
 ::: details Show answer
 

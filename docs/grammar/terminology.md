@@ -14,17 +14,19 @@ Closed labels for psychological moods, poles, and emotion-compose pieces. Mood w
 
 | Label | Gloss | Teach |
 |-------|-------|--------|
+| **AIMED** | Emotion locus: aimed at a target | [Interests](interests.md#emotion-compose) |
 | **ABIL** | Hostless *can* / *can’t* fallback **`eze`** | [Ability](intention.md#ability-fallback) |
 | **ACT** | Emotion-compose arousal (HIGH / MED / LOW) | [Interests](interests.md#emotion-compose) |
 | **AS-OF** | Whose-now pole: ledger **`ene`** / bookmark **`ume`** | [Relations](relations.md#as-of) |
 | **ALTHOUGH** | Clause-pole **`aze`** (*although* / NP *despite*) | [Dependents](dependents.md#dependent-clauses) |
 | **BECAUSE** | Clause-pole **`era`** (*because*) | [Causation](causation.md#because) |
 | **CAUSE** | Mechanism-framing mood **`ege`** | [Causation](causation.md#cause) |
-| **CIRCUM** | Emotion locus: charge on the situation | [Interests](interests.md#emotion-compose) |
+| **CAUGHT** | Emotion locus: feeling picked up from others | [Interests](interests.md#emotion-compose) |
+| **CIRCUM** | Emotion locus: the atmosphere of the situation | [Interests](interests.md#emotion-compose) |
+| **COLLECTIVE** | Emotion locus: the group's feeling, shared as a member | [Interests](interests.md#emotion-compose) |
 | **MAY** | Potential mood **`ovo`** (*could be*; I'll find out / default / who knows) | [Knowing](knowing.md#may) |
 | **COMMON** | Universality: usual, exceptions expected | [Knowing](knowing.md#universality) |
 | **DECISION** | Pick-firmness mood **`eha`** | [Intention](intention.md#decision) |
-| **EXTERNAL** | Emotion locus: charge at other people | [Interests](interests.md#emotion-compose) |
 | **FELT** | Evidential: gut / body knowing | [Knowing](knowing.md#evidentiality) |
 | **FORMAL** | Universality: definition / math / proof | [Knowing](knowing.md#universality) |
 | **FORMER** | Episode standing: not the climate claimed now **`une`** | [Knowing](knowing.md#former-climate) |
@@ -32,22 +34,27 @@ Closed labels for psychological moods, poles, and emotion-compose pieces. Mood w
 | **IF** | Clause-pole **`odo`** (one-way *if*) | [Causation](causation.md#if) |
 | **IFF** | Clause-pole **`ewu`** | [Causation](causation.md#iff) |
 | **INFERRED** | Evidential: reasoned from clues | [Knowing](knowing.md#evidentiality) |
-| **INTERNAL** | Emotion locus: charge held inside | [Interests](interests.md#emotion-compose) |
+| **INTERNAL** | Emotion locus: mine, held inside | [Interests](interests.md#emotion-compose) |
 | **LIVE** | Evidential: concurrent / in-view observation | [Knowing](knowing.md#live-vs-memory) |
-| **LOCUS** | Emotion-compose where the charge sits | [Interests](interests.md#emotion-compose) |
+| **LOCUS** | Emotion-compose hook vowels: where the charge sits or what it points at | [Interests](interests.md#emotion-compose) |
 | **NATURAL** | Universality: natural necessity | [Knowing](knowing.md#universality) |
 | **NOTIONAL** | As-if / pretense mood **`ove`** | [Knowing](knowing.md#notional) |
 | **ONLY-IF** | Clause-pole **`ebo`** (*only if* / *needs*) | [Causation](causation.md#only-if) |
+| **ON-BEHALF** | Emotion locus: felt for someone's sake | [Interests](interests.md#emotion-compose) |
 | **PATTERN** | Evidential: from regularity | [Knowing](knowing.md#evidentiality) |
 | **PLAN** | Intention-framing mood **`uma`** | [Intention](intention.md#plan-predict) |
+| **REACHING** | Emotion locus: reaching to change a target | [Interests](interests.md#emotion-compose) |
 | **RECORDED** | Evidential: documented / playback / scheduled | [Knowing](knowing.md#evidentiality) |
 | **RESIDUE** | Episode standing: outcome still on the current tally **`amo`** | [Knowing](knowing.md#residue) |
+| **RESISTING** | Emotion locus: pushing against a target | [Interests](interests.md#emotion-compose) |
+| **ROLE** | Emotion locus: felt in a capacity, not personally | [Interests](interests.md#emotion-compose) |
 | **RULE** | Universality: holds inside a named frame | [Knowing](knowing.md#universality) |
 | **SAME** | Identity copula **`oga`** | [Predication](predication.md#identity) |
 | **SO-THAT** | Clause-pole **`ago`** (*so that* / NP intended *for*) | [Dependents](dependents.md#so-that) |
 | **STORY** | Evidential: narrative / lore | [Knowing](knowing.md#evidentiality) |
 | **TOLD** | Evidential: hearsay | [Knowing](knowing.md#evidentiality) |
 | **UNCOUNTERED** | Universality: no counterexample comes to mind | [Knowing](knowing.md#universality) |
+| **UNPLACED** | Emotion locus: source can't be placed | [Interests](interests.md#emotion-compose) |
 | **WITNESSED** | Evidential: firsthand memory (reconstructive) | [Knowing](knowing.md#live-vs-memory) |
 
 **Compare with:** [quasi](#quasi) (`ROOTl-e-`) is not **NOTIONAL**.

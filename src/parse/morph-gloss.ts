@@ -291,8 +291,19 @@ const INTEREST_GRAIN: Record<string, Partial<Record<Ending, string>>> = {
   u: { l: "irreversible", m: "modifiable", r: "passing" },
 };
 
-/** Emotion tail (interests.md#emotion-compose): locus vowel, then motion ending. */
-const EMOTION_LOCUS: Record<string, string> = { o: "INTERNAL", e: "EXTERNAL", a: "CIRCUM", u: "UNPLACED" };
+/** Emotion tail (interests.md#emotion-compose): locus hook vowel(s), then motion ending. */
+const EMOTION_LOCUS: Record<string, string> = {
+  a: "INTERNAL",
+  uo: "CAUGHT",
+  ae: "ROLE",
+  ua: "COLLECTIVE",
+  ao: "CIRCUM",
+  u: "UNPLACED",
+  o: "AIMED",
+  oe: "REACHING",
+  ue: "RESISTING",
+  e: "ON-BEHALF",
+};
 const EMOTION_MOTION: Record<string, string> = { r: "SURGING", m: "FLOWING", l: "STILL" };
 
 const GREETING_STANCE: Record<string, string> = {

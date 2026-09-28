@@ -478,7 +478,7 @@ function tailLateral(word: MorphWord, tables: ClassifyTables): MorphWord | undef
   const family = word.family;
   if (family.kind !== "x" || family.xFamily !== "interest" || !family.horizon) return undefined;
   if (family.leftRoots.every((root) => tables.interestRoots.has(root))) return undefined;
-  if (family.leftRoots.length !== 1) return undefined;
+  if (family.leftRoots.length !== 1 || (family.locus?.length ?? 0) !== 1) return undefined;
   const anchor = `${family.stanceVowel}${family.horizon}${family.locus}`;
   return { ...word, family: { kind: "x", xFamily: "lateral", leftRoots: family.leftRoots, rightRoots: [anchor] } };
 }

@@ -79,8 +79,8 @@ export type MorphWordFamily =
       stanceVowel?: "a" | "e" | "o" | "u";
       /** Emotion compose: interest horizon letter moved mid-word (interests.md#emotion-compose). */
       horizon?: "l" | "m" | "r";
-      /** Emotion compose locus vowel (o internal / e external / a circum / u unplaced). */
-      locus?: "a" | "e" | "o" | "u";
+      /** Emotion compose locus: hook vowel(s) for placement or direction (interests.md#emotion-compose). */
+      locus?: "a" | "e" | "o" | "u" | "ao" | "ae" | "oe" | "ua" | "uo" | "ue";
       /** Nested number stem (numeric derivation). */
       numberStem?: NumberStem;
       /** Lexical join before a numeric stem (`l` everyday host, `m` abstract). */
