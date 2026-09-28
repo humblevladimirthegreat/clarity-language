@@ -88,6 +88,14 @@ Write a special adjective `gogal` after the first name, then an extra noun (`/b/
 >
 > "The guard is Azawan."
 
+With **no** `/b/` after it, `gogal` points back to the one already mentioned: *the same one again*. Put `gogal` after the thing.
+
+> `zalahen dubugal gogal varadal.`
+>
+> z-Alahen | [d-book | g-SAME] | v-write
+>
+> "Alahen writes the same book (as before)."
+
 **Compare with:** *Azawan is a dog* uses [kind / role](#classification) (`godogal`). Use **`SAME`** when two labels name one person. *A house like Azawan’s* is resemblance ([simile](relations.md#similative)), not one house under two names.
 
 ### Translation practice {#beginner-translation-practice}

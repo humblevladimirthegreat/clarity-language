@@ -668,6 +668,14 @@ The kind word after **`ua`** / **`uo`** takes no **-x**: *every cat* already cov
 
 With a plain verb, *every cat* acts one by one: **`zual gagadal vehahel.`** is *each cat sits*. For all of them acting together, put [collective **-x**](plurality.md) on the verb (`vehahelx`).
 
+To limit *every cat* to one place or group (*all the cats at the house*), add an extra-noun [hook](hooks.md#extra-noun) for the place right after the kind. With no hook, the cats are the ones the situation is about.
+
+> `zual gagadal ol bahazal vehahel.`
+>
+> [z-everything | g-cat] | [at | b-house] | v-sit
+>
+> "Every cat at the house sits."
+
 *No cat* is the same shape with **`u`**: **`zul`** plus the kind.
 
 > `zul gagadal vehahel.`
@@ -675,6 +683,22 @@ With a plain verb, *every cat* acts one by one: **`zual gagadal vehahel.`** is *
 > [z-no | g-cat] | v-sit
 >
 > "No cat sits."
+
+The same shape with no verb says there is **none** of that kind (*there is no …*), like a lone noun saying a thing [exists](predication.md#existence). Keep the order: `zodogal zul.` puts the dog before the join and means *not a dog*.
+
+> `zul godogal.`
+>
+> [z-no | g-dog]
+>
+> "There is no dog."
+
+[**`SAME`**](predication.md#identity) with no `/b/`, on a shared thing after a joined subject, compares each member with the others: *the same one* for all of them.
+
+> `zazawan zalahen zal dubugal gogal varadal.`
+>
+> [z-Azawan | z-Alahen | z-and] | [d-book | g-SAME] | v-write
+>
+> "Azawan and Alahen write the same book."
 
 For English *whoever* / *whatever*, the kind is a [role compound](roles.md#role-compounds): *every walker* is *whoever walks*. Use the agent compound (**`a`**) for *whoever*, and the undergoer compound (**`u`**) for *whatever*.
 
