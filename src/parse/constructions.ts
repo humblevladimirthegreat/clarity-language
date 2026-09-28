@@ -36,6 +36,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "leftEdge.W": { anchor: "hooks.md#hook-w", summary: "/w/ on a left-edge hook" },
   "leftEdge.Hook": { anchor: "hooks.md#discourse-hooks", summary: "discourse hook at the left edge" },
   "leftEdge.ForceEcho": { anchor: "speech-moves.md#emphatic-prohibition", summary: "yul yul emphatic prohibition" },
+  "leftEdge.ForceAnswer": { anchor: "questions.md#rhetorical", summary: "yal yol rhetorical question" },
   "leftEdge.Force": { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "speech-act word" },
 
   "bodyClause.Linker": { anchor: "dependents.md#continue-x", summary: "sentence linker before a clause" },
@@ -83,6 +84,8 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "npJoinClose.JoinZ": { anchor: "joins.md#and-lists-a", summary: "/z/ join fence" },
   "npJoinClose.JoinD": { anchor: "joins.md#and-lists-a", summary: "/d/ join fence" },
   "npJoinClose.JoinB": { anchor: "joins.md#and-lists-a", summary: "/b/ join fence" },
+  "npJoinClose.W": { anchor: "joins.md#respectively", summary: "respectively /w/ before a noun join word" },
+  "npJoinClose.factor": { anchor: "comparatives.md#factor", summary: "ratio number after an equative scale" },
   "npJoinClose.sharedAfterJoin": { anchor: "joins.md#right-close", summary: "shared word after a noun join" },
 
   "vpCoord.vpCoordPart": { anchor: "clause.md#who-acts-and-the-action", summary: "/v/ phrase parts" },
@@ -544,6 +547,8 @@ export const REJECTIONS = {
   asOfResumeBound: { anchor: "relations.md#as-of", summary: "an as-of resume (-r) takes no /b/" },
   hookResumeNoun: { anchor: "hooks.md#hook-resume", summary: "a resume hook (-r) points back and takes no /b/ noun" },
   asOfPerHost: { anchor: "relations.md#as-of", summary: "one /h/ host takes at most one as-of pair" },
+  joinDetail: { anchor: "joins.md#respectively", summary: "the only /w/ before a join word is respectively (wazagum), and it goes only there, on an and-list" },
+  respectivePartner: { anchor: "joins.md#respectively", summary: "a respectively list pairs with another and-list of the same length in its clause" },
 } satisfies Record<string, ConstructionEntry>;
 
 export type RejectionId = keyof typeof REJECTIONS;

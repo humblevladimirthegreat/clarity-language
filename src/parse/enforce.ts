@@ -15,6 +15,9 @@ import { REJECTIONS, type RejectionId } from "./constructions.js";
 import { SentenceParseError } from "./sentence-parser.js";
 import {
   Bang,
+  JoinB,
+  JoinD,
+  JoinZ,
   classifyTokenBranch,
   IslandEdge,
   isLexWordPayload,
@@ -152,6 +155,43 @@ export function enforceTokens(tokens: IToken[], tables: ClassifyTables): void {
     const payload = token.payload as TokenPayload | undefined;
     if (!payload || !isLexWordPayload(payload)) return;
     enforceWord(payload, tables);
+    enforceRespectivelyToken(payload, tokens[i + 1]);
+  });
+}
+
+function isRespectively(word: LexWord): boolean {
+  return word.overlay?.kind === "pairing";
+}
+
+/** `wazagum` sits only right before a `/z/` `/d/` `/b/` join word (joins.md § Respectively). */
+function enforceRespectivelyToken(word: LexWord, next: IToken | undefined): void {
+  if (!isRespectively(word)) return;
+  const beforeJoin = next && (next.tokenType === JoinZ || next.tokenType === JoinD || next.tokenType === JoinB);
+  if (!beforeJoin) throw new ConstructionError("joinDetail", word.raw);
+}
+
+/** A marked list is an and-list paired with another and-list of the same length (joins.md § Respectively). */
+function enforceRespectively(units: Unit[]): void {
+  const lists: { length: number; marked: boolean; raw: string }[] = [];
+  for (const unit of units) {
+    if (unit.kind !== "np" && unit.kind !== "vp") continue;
+    for (const part of unit.coord.parts) {
+      const joinModifiers = "joinModifiers" in part ? (part.joinModifiers ?? []) : [];
+      for (const w of joinModifiers) {
+        if (!isRespectively(w)) throw new ConstructionError("joinDetail", `${w.raw} ${part.join?.raw ?? ""}`.trim());
+      }
+      if (series(part.join) !== "a" || part.items.length < 2) {
+        if (joinModifiers.length > 0) throw new ConstructionError("joinDetail", `${joinModifiers[0]!.raw} ${part.join?.raw ?? ""}`.trim());
+        continue;
+      }
+      lists.push({ length: part.items.length, marked: joinModifiers.length > 0, raw: part.join!.raw });
+    }
+  }
+  lists.forEach((list, i) => {
+    if (!list.marked) return;
+    if (!lists.some((other, j) => j !== i && other.length === list.length)) {
+      throw new ConstructionError("respectivePartner", `wazagum ${list.raw}`);
+    }
   });
 }
 
@@ -409,6 +449,7 @@ function enforceVp(coord: VpCoord): void {
 /** Fences, scope islands, and as-of pairs (formerly the parser's post-build `validate*` pass). */
 function enforceStructure(units: Unit[]): void {
   enforceIslandEdges(units);
+  enforceRespectively(units);
   let hAsOf = 0;
   for (const unit of units) {
     if (unit.kind === "h") {

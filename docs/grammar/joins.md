@@ -515,6 +515,32 @@ Its main use is with one number. `zraval zoel` runs **up** from 5 (*5 or more*).
 
 **`eo`** is a phrase join only: `/z/` `/d/` `/b/` `/ɡ/`. (cue: **e** ≈ order + **o** ≈ one: the letters of **`oe`** in reverse)
 
+### Respectively (`wazagum`) {#respectively}
+
+Two *and*-lists in one clause do not say who goes with what. `zazawan zalahen zal vahahal dagadal dodogal dal.` could mean each of them saw both animals. When English says *respectively* (the first item goes with the first, the second with the second), put **`wazagum`** right before the join word of the second list.
+
+> `zazawan zalahen zal vahahal dagadal dodogal wazagum dal.`
+>
+> [z-Azawan | z-Alahen | z-and] | v-see | [d-cat | d-dog | w-respectively | d-and]
+>
+> "Azawan and Alahen saw a cat and a dog, respectively."
+
+Azawan saw the cat, and Alahen saw the dog. The lists pair up by position, so they must have the same number of items:
+
+> `zazawan zalahen zahaben zal vahahal dagadal dodogal debedul wazagum dal.`
+>
+> [z-Azawan | z-Alahen | z-Ahaben | z-and] | v-see | [d-cat | d-dog | d-bird | w-respectively | d-and]
+>
+> "Azawan, Alahen, and Ahaben saw a cat, a dog, and a bird, respectively."
+
+| Rule | Pattern |
+|------|---------|
+| Where | right before the `a` join word (`zal` / `dal` / `bal`, **-l** or **-m**) of the later list |
+| Partner | another `a` list in the same clause with the same number of items |
+| Only there | **`wazagum`** goes nowhere else, and no other `/w/` word goes before a join word |
+
+Without **`wazagum`**, who got which is left open. (cue: 🧦 *socks*: sort them into matched pairs)
+
 ### Full single-item and standalone inventories
 
 Beginner already used single-item *just X* and standalone *nothing* / *everything*. The tables below are the rest of those phrase-level readings. The series also works under `/v/`: [Join across roles](join-across-roles.md#vp-clause-forms). Clause `/x/` joins have standalone and stand-in readings but no single-item one ([clause joins](#clause-joins)).
@@ -736,6 +762,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vahahal` | `ahahal` *eye* |
 | *kiss* | `vegezal` | `egezal` *kiss* |
 | *punch* | `vabahel` | `abahel` *punch* |
+| *respectively* | `wazagum` | `azagul` *socks* |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -817,6 +844,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 `zazawan zalahen zahaben zeol vegezal.`
 
 [z-Azawan | z-Alahen | z-Ahaben | z-in-reverse-order] | v-kiss
+:::
+
+**11.** *Azawan and Alahen see the ring and the veil, respectively.*
+
+::: details Show answer
+`zazawan zalahen zal vahahal derehal devewal wazagum dal.`
+
+[z-Azawan | z-Alahen | z-and] | v-see | [d-ring | d-veil | w-respectively | d-and]
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}

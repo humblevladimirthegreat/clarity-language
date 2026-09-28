@@ -103,6 +103,27 @@ const ROWS: Row[] = [
     rejection: "asOfPerHost",
     valid: "zalahen thamom henem b_#22,7 vadebal.",
   },
+  {
+    invalid: "zazawan vahahal dagadal dodogal wazagum dal.",
+    rejection: "respectivePartner",
+    valid: "zazawan zalahen zal vahahal dagadal dodogal wazagum dal.",
+  },
+  {
+    invalid: "zazawan zalahen zahaben zal vahahal dagadal dodogal wazagum dal.",
+    rejection: "respectivePartner",
+    valid: "zazawan zalahen zahaben zal vahahal dagadal dodogal debedul wazagum dal.",
+  },
+  { invalid: "zazawan vahahal wazagum gazaham dagadal.", rejection: "joinDetail", valid: "zazawan vahahal gazaham dagadal." },
+  {
+    invalid: "zazawan zalahen zal vahahal dagadal dodogal welavam dal.",
+    rejection: "joinDetail",
+    valid: "zazawan zalahen zal vahahal dagadal dodogal dal.",
+  },
+  {
+    invalid: "zazawan zalahen zal vahahal dagadal dodogal wazagum dol.",
+    rejection: "joinDetail",
+    valid: "zazawan zalahen zal vahahal dagadal dodogal wazagum dal.",
+  },
   // Grammar-level: a second turn starts only after a period.
   { invalid: "yol yol vezevul.", rejection: undefined, valid: "yol. yol vezevul." },
 ];

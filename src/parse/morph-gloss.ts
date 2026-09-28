@@ -1022,7 +1022,7 @@ function rootAntecedent(antecedent: LexWord, binds: AnaphorBind[]): LexWord {
 
 function isFillAsk(word: LexWord, asks: AskRecord[]): boolean {
   return asks.some(
-    (ask) => ask.kind === "fillAsk" && ask.gaps.some((gap) => gap.raw === word.raw),
+    (ask) => (ask.kind === "fillAsk" || ask.kind === "rhetorical") && ask.gaps.some((gap) => gap.raw === word.raw),
   );
 }
 
@@ -1326,7 +1326,8 @@ function numberLabel(stem: NumberStem, pos: Pos | undefined): string {
     if (stem.marker === "#-") return `${ordinalEnglish(value)}-from-end`;
     if (stem.marker === "#") return ordinalEnglish(value);
     if (stem.marker === "+") return cardinalEnglish(value);
-    if (stem.marker === "-") return `minus-${cardinalEnglish(value)}`;
+    // `/h/` inverse is a partition (÷N, *half as*), not a negative (numbers.md § number as adverb).
+    if (stem.marker === "-") return pos === "h" ? `divided-by-${cardinalEnglish(value)}` : `minus-${cardinalEnglish(value)}`;
   }
 
   const body = stem.groups.map(formatNumberGroup).filter(Boolean).join(",");
@@ -1341,6 +1342,7 @@ function numberLabel(stem: NumberStem, pos: Pos | undefined): string {
   }
   if ((stem.marker === "+" || stem.marker === "ra") && !exp) return body;
   if ((stem.marker === "-" || stem.marker === "ru") && !exp) {
+    if (pos === "h") return body ? `divided-by-${body}` : "divided-by";
     return body ? `minus-${body}` : "minus";
   }
   return [String(stem.marker), exp, body].filter(Boolean).join("-");

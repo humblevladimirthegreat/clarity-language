@@ -271,6 +271,29 @@ A mark on a span colors all of it:
 - Before a span fence, the mark is **your** tone about the quote. Inside the fence, it is part of what is quoted (the original speaker's tone).
 - Speech adds no syllables: you voice the mark over its words.
 
+### Speech manner (*frankly* / *to be clear*) {#speech-manner}
+
+A tone mark changes only your voice. To **say** how you are speaking, use a stance word (`/th/`, [clause](clause.md#stance-th)) from an ordinary root. Like any stance word, it may sit anywhere in the sentence; the start is usual.
+
+| Agazan | English | Root |
+|--------|---------|------|
+| **`thagazam`** | *to be clear* / *to put it plainly* | clarity |
+| **`thaveham`** | *frankly* / *honestly* / *to tell the truth* | revelation |
+
+> `thagazam zazawan vowogal.`
+>
+> th-clarity | z-Azawan | v-walk
+>
+> "To be clear, Azawan walks."
+
+> `thaveham zalahen vezebal.`
+>
+> th-revelation | z-Alahen | v-sleep
+>
+> "Honestly, Alahen is sleeping."
+
+**Compare with:** the stance word describes your way of saying the claim, not the action. `/h/` on the same root (`hagazam`) would describe how the action itself is done.
+
 ### Number as interjection {#number-as-interjection}
 
 A number word in `/y/` is a call-out (*Three more!*, a score). It can sit with the other opening `/y/` words, before the act word, or stand alone as its own turn. Readings by marker: [numbers](numbers.md#number-as-interjection-by-marker).

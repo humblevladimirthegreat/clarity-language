@@ -575,6 +575,34 @@ A *yes/no* question can put a join ending on a **named** item instead of a fill-
 
 **Compare with:** *who* / *which* still uses join **-r** ([fill-ask](#fill-ask-r)).
 
+### Rhetorical question {#rhetorical}
+
+A **rhetorical question** is shaped like a question, but you are not waiting for a reply: you think the answer is obvious. Write statement **`yal`** right before **`yol`**. The statement word says you already hold the answer; the question word gives the body its question shape. The body is an ordinary yes/no question or fill-ask.
+
+> `yal yol zar vegehel.`
+>
+> y-statement | y-question | z-who | v-care
+>
+> "Who cares? (Nobody.)"
+
+> `yal yol zazawan vowogal.`
+>
+> y-statement | y-question | z-Azawan | v-walk
+>
+> "Doesn't Azawan walk? (Of course Azawan does.)"
+
+Soft **`yam yol`** muses rather than insists: you lean toward an answer but put it forward lightly, as if thinking aloud.
+
+> `yam yol zar vegehel.`
+>
+> y-soft-statement | y-question | z-who | v-care
+>
+> "Who really cares, though?"
+
+The listener may still reply, but no reply is owed. Only **`yal`** or **`yam`** stacks before the question word this way.
+
+**Compare with:** a [polar stance tag](#polar-stance) after the sentence (`…. yael.`) asks the listener to confirm. A rhetorical question asks for nothing.
+
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 

@@ -210,6 +210,8 @@ export type LeftEdge = {
   hookModifiers?: LexWord[];
   /** Emphatic repeat of **`yul`** before the act word. */
   forceEcho?: LexWord;
+  /** Rhetorical question: asserted **`yal`** / **`yam`** before the ask word. */
+  rhetoricalAnswer?: LexWord;
   force?: LexWord;
   impliedForce?: ImpliedForce;
 };
@@ -263,7 +265,9 @@ export type NpItem =
 
 export type NpCoord = {
   level: "z" | "d" | "b";
-  parts: { items: NpItem[]; join?: LexWord; shared: CoordShared[] }[];
+  /** `joinModifiers`: `/w/` words right before the join word (respectively `wazagum`). */
+  /** `factor`: digit `/h/` number after an equative's shared scale (*twice as … as*). */
+  parts: { items: NpItem[]; join?: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[]; factor?: LexWord }[];
 };
 
 export type VpCoord = {
@@ -377,7 +381,7 @@ export type AnaphorBind = {
   antecedent?: LexWord;
 };
 
-export type AskKind = "yesNo" | "fillAsk" | "none";
+export type AskKind = "yesNo" | "fillAsk" | "rhetorical" | "none";
 
 export type AskRecord = {
   utteranceIndex: number;

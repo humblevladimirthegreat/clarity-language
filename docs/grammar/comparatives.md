@@ -332,6 +332,26 @@ To say **how many more**, put the difference in `/b/` right after **`gral`**. A 
 >
 > "Azawan walks more often than Alahen."
 
+### Factor (*twice as … as*) {#factor}
+
+English *twice as big as* gives the **ratio** between the two heights. Use the [equative](#equatives) **`zael`** and its shared adjective, then a factor number (`/h/` + marker **`ra`**, [numbers](numbers.md#number-as-adverb-by-marker)) **right after** the adjective. The first name sits at that many times the second's height.
+
+> `zazawan zalahen zael gelavam hradul.`
+>
+> [z-Azawan | z-Alahen | z-equal-rank | g-big | h-two]
+>
+> "Azawan is twice as big as Alahen."
+
+Inverse marker **`ru`** divides: `hrudul` is *half as*.
+
+> `zalahen zazawan zael gelavam hrudul.`
+>
+> [z-Alahen | z-Azawan | z-equal-rank | g-big | h-divided-by-two]
+>
+> "Alahen is half as big as Azawan."
+
+English *three times bigger* usually means the same ratio: use **`zael`** with `hrarel`, not rank **`zel`**. After **`zel`**, a number `/h/` is not a factor; it is an ordinary *N times* on the clause. For a gap in units (*two meters taller*), put a measure noun on the scale instead of a factor.
+
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 

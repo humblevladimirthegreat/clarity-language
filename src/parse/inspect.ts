@@ -582,6 +582,7 @@ function walkNp(
       joins.push(part.join);
     }
     walkShared(cursor, part.shared, indices);
+    if (part.factor) pushIndex(indices, takeRaw(cursor, part.factor.raw));
   }
   if (triggers.length > 0) {
     constructions.push({
@@ -765,6 +766,7 @@ function walkUtterance(
   for (const mod of left.hookModifiers ?? []) takeRaw(cursor, mod.raw);
   if (left.hook) takeRaw(cursor, left.hook.raw);
   if (left.forceEcho) takeRaw(cursor, left.forceEcho.raw);
+  if (left.rhetoricalAnswer) takeRaw(cursor, left.rhetoricalAnswer.raw);
   if (left.force) takeRaw(cursor, left.force.raw);
   const sink: number[] = [];
   for (const body of utterance.bodies) {

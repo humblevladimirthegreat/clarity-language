@@ -125,7 +125,7 @@ function npItem(cur: Cursor, item: NpItem): GlossNode | undefined {
 /** Right-close fences nest: each later part wraps the fence before it. Joinless items stay flat. */
 function fences<T>(
   cur: Cursor,
-  parts: { items: T[]; join?: LexWord; shared: CoordShared[] }[],
+  parts: { items: T[]; join?: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[]; factor?: LexWord }[],
   item: (x: T) => GlossNode | undefined,
 ): GlossNode[] {
   let acc: GlossNode[] = [];
@@ -136,10 +136,12 @@ function fences<T>(
       acc = [...acc, ...items, ...sharedNodes].filter((n): n is GlossNode => n !== undefined);
       continue;
     }
+    const joinModifiers = (part.joinModifiers ?? []).map((w) => cur.take(w));
     const join = cur.take(part.join);
     const named = part.join.ending === "n" && join?.t === "leaf";
     if (named) join.named = true;
-    const node = group([...acc, ...items, join, ...sharedNodes], named ? "NAME" : undefined);
+    const factor = cur.take(part.factor);
+    const node = group([...acc, ...items, ...joinModifiers, join, ...sharedNodes, factor], named ? "NAME" : undefined);
     acc = node ? [node] : [];
   }
   return acc;
@@ -268,7 +270,7 @@ function utteranceNodes(cur: Cursor, utt: Utterance): GlossNode[] {
   }
   const hook = group([...(left.hookModifiers ?? []).map((m) => cur.take(m)), cur.take(left.hook)]);
   if (hook) out.push(hook);
-  for (const w of [left.forceEcho, left.force]) {
+  for (const w of [left.forceEcho, left.rhetoricalAnswer, left.force]) {
     const n = cur.take(w);
     if (n) out.push(n);
   }

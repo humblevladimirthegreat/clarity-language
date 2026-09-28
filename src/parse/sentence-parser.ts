@@ -225,6 +225,11 @@ class AgazanSentenceParser extends CstParser {
             GATE: () => this.julEchoAhead(),
             DEF: () => this.CONSUME4(Force, { LABEL: "ForceEcho" }),
           });
+          // Rhetorical question `yal yol …` / `yam yol …` (questions.md § rhetorical): asserted answer + ask.
+          this.OPTION4({
+            GATE: () => this.rhetoricalAhead(),
+            DEF: () => this.CONSUME5(Force, { LABEL: "ForceAnswer" }),
+          });
           this.CONSUME2(Force);
           // Asking tag `yol yael.` (questions.md § polar stance): force + polars with no body.
           this.MANY2({
@@ -241,6 +246,16 @@ class AgazanSentenceParser extends CstParser {
     const a = this.LA(1);
     const b = this.LA(2);
     return a.tokenType === Force && a.image === "yul" && b.tokenType === Force && b.image === "yul";
+  }
+
+  /** Rhetorical question: assert `yal` / `yam` then ask `yol` / `yom` at the left edge. */
+  private rhetoricalAhead(): boolean {
+    const a = this.LA(1);
+    const b = this.LA(2);
+    return (
+      a.tokenType === Force && (a.image === "yal" || a.image === "yam") &&
+      b.tokenType === Force && (b.image === "yol" || b.image === "yom")
+    );
   }
 
   /** Only polars remain before the period (the asking tag has no body). */
@@ -444,13 +459,13 @@ class AgazanSentenceParser extends CstParser {
       {
         ALT: () => {
           this.AT_LEAST_ONE({
-            GATE: () => isNpSlotLookahead(this, "z") && this.LA(1).tokenType !== JoinZ,
+            GATE: () => isNpSlotLookahead(this, "z") && this.LA(laAfterW(this)).tokenType !== JoinZ,
             DEF: () => {
               this.SUBRULE(this.npConjunct);
             },
           });
           this.OPTION({
-            GATE: () => this.LA(1).tokenType === JoinZ,
+            GATE: () => this.LA(laAfterW(this)).tokenType === JoinZ,
             DEF: () => {
               this.SUBRULE2(this.npJoinClose);
             },
@@ -471,13 +486,13 @@ class AgazanSentenceParser extends CstParser {
       {
         ALT: () => {
           this.AT_LEAST_ONE({
-            GATE: () => isNpSlotLookahead(this, "d") && this.LA(1).tokenType !== JoinD,
+            GATE: () => isNpSlotLookahead(this, "d") && this.LA(laAfterW(this)).tokenType !== JoinD,
             DEF: () => {
               this.SUBRULE(this.npConjunct);
             },
           });
           this.OPTION({
-            GATE: () => this.LA(1).tokenType === JoinD,
+            GATE: () => this.LA(laAfterW(this)).tokenType === JoinD,
             DEF: () => {
               this.SUBRULE2(this.npJoinClose);
             },
@@ -498,13 +513,13 @@ class AgazanSentenceParser extends CstParser {
       {
         ALT: () => {
           this.AT_LEAST_ONE({
-            GATE: () => isNpSlotLookahead(this, "b") && this.LA(1).tokenType !== JoinB,
+            GATE: () => isNpSlotLookahead(this, "b") && this.LA(laAfterW(this)).tokenType !== JoinB,
             DEF: () => {
               this.SUBRULE(this.npConjunct);
             },
           });
           this.OPTION({
-            GATE: () => this.LA(1).tokenType === JoinB,
+            GATE: () => this.LA(laAfterW(this)).tokenType === JoinB,
             DEF: () => {
               this.SUBRULE2(this.npJoinClose);
             },
@@ -519,6 +534,10 @@ class AgazanSentenceParser extends CstParser {
   });
 
   public npJoinClose = this.RULE("npJoinClose", () => {
+    // A `/w/` right before the join word details the list (respectively `wazagum`, joins.md § Respectively).
+    this.MANY(() => {
+      this.CONSUME(W);
+    });
     this.OR([
       { ALT: () => this.CONSUME(JoinZ) },
       { ALT: () => this.CONSUME(JoinD) },
@@ -529,7 +548,13 @@ class AgazanSentenceParser extends CstParser {
       GATE: () =>
         this.LA(laAfterW(this)).tokenType === G || (tokenIs(this.LA(laAfterW(this)), H) && SCALE_SERIES.has(joinSeries(this.LA(0)))),
       DEF: () => {
+        const series = joinSeries(this.LA(0));
         this.SUBRULE(this.sharedAfterJoin);
+        // Factor right after an equative's shared scale: `ae` + `h+2` = *twice as … as* (comparatives.md § factor).
+        this.OPTION2({
+          GATE: () => series === "ae" && factorAhead(this.LA(1)),
+          DEF: () => this.CONSUME(H, { LABEL: "factor" }),
+        });
       },
     });
   });
@@ -960,6 +985,15 @@ function childNodes(parent: CstNode, key: string): CstNode[] {
 }
 
 /** Hosted `/b/` continues as a join: zero or more further `/b/` words, then a `/b/` join word. */
+/** A digit `/h/` number with a `+` / `-` marker: the ratio after an equative scale. */
+function factorAhead(tok: IToken): boolean {
+  if (tok.tokenType !== H) return false;
+  const word = tok.payload as LexWord;
+  if (word.family.kind !== "number") return false;
+  const stem = word.family.stem;
+  return (stem.marker === "+" || stem.marker === "-") && stem.groups.length > 0;
+}
+
 function boundJoinAhead(parser: AgazanSentenceParser): boolean {
   let i = 1;
   while (parser.lookahead(i).tokenType === B) i++;
@@ -1047,7 +1081,7 @@ function partJoinClose(part: CstNode, rule: string): CstNode | undefined {
   return childNodes(part, rule)[0] ?? childNodes(part, "standaloneJoin")[0];
 }
 
-function joinFromClose(close: CstNode | undefined): { join?: LexWord; shared: CoordShared[] } {
+function joinFromClose(close: CstNode | undefined): { join?: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[]; factor?: LexWord } {
   if (!close) return { shared: [] };
   const joinTok =
     childToken(close, "JoinZ") ??
@@ -1058,9 +1092,13 @@ function joinFromClose(close: CstNode | undefined): { join?: LexWord; shared: Co
     childToken(close, "JoinH") ??
     childToken(close, "JoinX");
   const sharedCst = childNodes(close, "sharedAfterJoin")[0];
+  const modifiers = childTokens(close, "W").map(lexWordFromToken);
+  const factorTok = childToken(close, "factor");
   return {
     join: joinTok ? lexWordFromToken(joinTok) : undefined,
     shared: buildShared(sharedCst),
+    ...(factorTok ? { factor: lexWordFromToken(factorTok) } : {}),
+    ...(modifiers.length > 0 ? { joinModifiers: modifiers } : {}),
   };
 }
 
@@ -1090,9 +1128,9 @@ function buildNpCoord(cst: CstNode): NpCoord {
   const parts = npCoordParts(cst);
   const built = parts.map((part) => {
     const close = partJoinClose(part, "npJoinClose");
-    const { join, shared } = joinFromClose(close);
+    const { join, shared, joinModifiers, factor } = joinFromClose(close);
     const items = childNodes(part, "npConjunct").map(buildNpItem);
-    return { items, join, shared };
+    return { items, join, shared, ...(joinModifiers ? { joinModifiers } : {}), ...(factor ? { factor } : {}) };
   });
   const joinTok = built.find((part) => part.join)?.join;
   let level: NpCoord["level"] = "z";
@@ -1401,6 +1439,7 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
   const forceTok = childToken(cst, "Force");
   const force = forceTok ? lexWordFromToken(forceTok) : undefined;
   const echoTok = childToken(cst, "ForceEcho");
+  const answerTok = childToken(cst, "ForceAnswer");
   const impliedForce = force ? undefined : impliedForceFromPolars(polars) ?? "yal";
   const hookModifiers = childTokens(cst, "W").map(lexWordFromToken);
 
@@ -1410,6 +1449,7 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
     hook: hookTok ? lexWordFromToken(hookTok) : undefined,
     hookModifiers: hookModifiers.length > 0 ? hookModifiers : undefined,
     forceEcho: echoTok ? lexWordFromToken(echoTok) : undefined,
+    rhetoricalAnswer: answerTok ? lexWordFromToken(answerTok) : undefined,
     force,
     impliedForce,
   };

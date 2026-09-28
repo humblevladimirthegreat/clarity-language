@@ -455,11 +455,12 @@ function considerUtterance(ctx: Ctx, utterance: Utterance, utteranceIndex: numbe
   for (const mod of utterance.left.hookModifiers ?? []) considerWord(ctx, mod);
   if (utterance.left.force) considerWord(ctx, utterance.left.force);
   if (utterance.left.forceEcho) considerWord(ctx, utterance.left.forceEcho);
+  if (utterance.left.rhetoricalAnswer) considerWord(ctx, utterance.left.rhetoricalAnswer);
 
   for (const body of utterance.bodies) considerBody(ctx, body);
 
   let kind: AskKind = "none";
-  if (ctx.question) kind = ctx.gaps.length > 0 ? "fillAsk" : "yesNo";
+  if (ctx.question) kind = utterance.left.rhetoricalAnswer ? "rhetorical" : ctx.gaps.length > 0 ? "fillAsk" : "yesNo";
   ctx.asks.push({ utteranceIndex, kind, gaps: ctx.gaps });
 }
 
