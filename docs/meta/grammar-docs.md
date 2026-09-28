@@ -487,7 +487,7 @@ A morph line is compared only after the whole example parses. If it doesn't pars
 ### HTML comments
 <a id="html-comments"></a>
 
-VitePress does not render HTML comments. Use them for **editor-only** notes that must sit next to the grammar text — typically **why this spot is an exception** to a rule on this page (house cast, omit-`yal`, Compare-with quota, and so on). The learner never sees them; `build` markdown checks and `retie-docs` skip comment bodies.
+VitePress does not render HTML comments. Use them for **editor-only** notes that must sit next to the grammar text — typically **why this spot is an exception** to a rule on this page (house cast, omit-`yal`, Compare-with quota, and so on). The learner never sees them; `build` markdown checks skip comment bodies; `retie-docs` skips them too, except `<!-- gloss: … -->` morph lines, which follow their Agalan.
 
 ```markdown
 <!-- Exception to house-cast: this block teaches speaker/listener specials, so `zugobon` is the point. -->

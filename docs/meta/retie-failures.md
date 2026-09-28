@@ -131,7 +131,24 @@ A related case is bare short resumes in prose (`zodor`, `dodor`, `godor`). Each 
 
 ## Open question
 
-[language-name.md](language-name.md) now says the glasses root is `agaza`, while the language is still called **Agalan**. The retie respelled the root, but it cannot rename the language. The learner-name ban list now uses `agaza`. Decide whether the name should follow the root or the root should be restored.
+[language-name.md](language-name.md) now says the glasses root is `agaza`, while the language is still called **Agalan**. The retie respelled the root, but it cannot rename the language. The learner-name ban list now uses `agaza`. Decide whether the name should follow the root or the root should be restored. ANSWER: rename language to Agazan in docs.
+
+## Safeguards now in the tooling
+
+Replaying the fixed retie over the pre-retie docs brought the post-retie lint from roughly 960 findings to the handful in category 7, which need rewording by hand and now block `--write`.
+
+| # | Safeguard |
+|---|-----------|
+| 1 | The chain came from retieing `lexicon-compounds.csv` twice: once in `convert-word --lexicon`, again in `retie-docs`. Only `convert-word` reties it now, and it checks each compound part against its published row by emoji. `retie-docs` stamps the map file as applied and refuses to write it a second time. |
+| 2 | `convert-word` writes compound stem pairs into the map (`compounds`), and `retie-docs` reties them like roots. |
+| 3 | Prose is never retied word by word, emphasised or not. An emphasised multi-word run is retied only when it parses as an Agalan sentence or phrase. A lint-checked word in a line that is not a whole Agalan span is retied on its own, but never a common English word, and every change whose old spelling is an English word is listed for review. |
+| 4, 5 | Named-word names and quoted payloads (`“…”`, `["…"]`) follow their code in prose, word banks and `<!-- gloss: -->` comments, with name pairs from every page. Morph lines that matched the parser before the retie are regenerated after it. Editorial closes (`#]`, `#|]`) no longer hide a payload. |
+| 6 | A resume inside a span payload uses the parser's bind. An unbound resume follows the nearest earlier matching word, and a short resume stays short. A short resume that would bind another word after the retie is lengthened to a full-root resume. Any remaining bind change blocks `--write`. |
+| 7 | A full-root resume that no longer needs its full root is a warning. `retie-docs` lints changed grammar pages before writing (against a pre-retie baseline), so a bare short resume in prose that stops linting blocks `--write`. |
+| 8, 10 | String literals in `src/` (tests included), `scripts/` and the site are scanned. Test fixtures are retied. Other literals and root-table keys that still spell an old root are listed for review. `AGENTS.md` and `README.md` are retied (never `TODO.md`). A map whose old spellings the word grammar cannot read blocks `--write`. |
+| 9 | Overlay sense forms are rebuilt through the word grammar with their PoS. Heading ids spelled from Agalan move with it, and links and overlay `anchor` cells follow. |
+
+Leftovers from the last retie that these checks surface today: `AGENTS.md` still lists pre-retie roots throughout, `src/parse/constructions.ts` messages still spell `holalam` / `theberom` / `hezebam`, and the hand repair wrote `dezor` (pronouns.md) and `xezer` (hooks.md) where *Azawan again* is `dazar` / `xazar`.
 
 ## Checklist for the next retie
 

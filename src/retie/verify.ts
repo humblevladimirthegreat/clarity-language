@@ -10,7 +10,12 @@ import { parseCompoundCsv, retieCompoundRows } from "../lexicon-compounds.js";
 import { parseOverlayCsv, parsePublishedCsv } from "../lexicon-search.js";
 import { createClassifyTablesFromRows, type ClassifyTables } from "../parse/classify.js";
 import { parse } from "../parse/index.js";
+import { parseWord } from "../parse/word.js";
 
+import { letterPrefix } from "../parse/resolve.js";
+
+import { bindDrift, contentBinds, type ContentBind } from "./binds.js";
+import { contentStemRoots } from "./resume.js";
 import type { RetiedSpan } from "./markdown.js";
 
 export type RetieVerifyLevel = "blocking" | "warning" | "info";
@@ -146,6 +151,24 @@ export function verifyRetiedSpans(
       failures.push({ span, level: "blocking", detail: `parsed before the retie, not after: ${after.error}` });
       continue;
     }
+    const beforeBinds = contentBinds(span.before, tables) ?? [];
+    const afterBinds = contentBinds(span.after, tables) ?? [];
+    const drift = bindDrift(beforeBinds, afterBinds, map)[0];
+    if (drift) {
+      failures.push({
+        span,
+        level: "blocking",
+        detail: `resume ${drift.after.raw} binds ${drift.after.antecedent?.join("x") ?? "nothing"}, expected ${drift.expected.join("x")}`,
+      });
+      continue;
+    }
+    for (const lost of fullResumesNoLongerNeeded(beforeBinds, afterBinds, span.before, span.after)) {
+      failures.push({
+        span,
+        level: "warning",
+        detail: `full-root resume ${lost} no longer needs the full root: no other word shares its short stem, so the example may not show what it teaches`,
+      });
+    }
     if (before.shape.structure !== after.shape.structure) {
       const beforeLinks = anaphorRaws(before.value);
       const afterLinks = anaphorRaws(after.value);
@@ -180,4 +203,46 @@ export function verifyRetiedSpans(
     }
   }
   return failures;
+}
+
+/** Content roots of every word in a span (whitespace chunks that parse as words). */
+function spanRoots(text: string): string[] {
+  const roots: string[] = [];
+  for (const chunk of text.split(/\s+/)) {
+    const core = chunk.replace(/^[^a-z]+|[^a-z]+$/g, "");
+    if (!core) continue;
+    try {
+      const word = parseWord(core);
+      if (word.ending !== "r") roots.push(...contentStemRoots(word));
+    } catch {
+      // not a word
+    }
+  }
+  return roots;
+}
+
+/**
+ * Full-root resumes that needed the full root before the retie (another word shared the short stem)
+ * but not after. Examples that teach full-root resumes rely on that shared prefix.
+ */
+function fullResumesNoLongerNeeded(
+  before: readonly ContentBind[],
+  after: readonly ContentBind[],
+  beforeText: string,
+  afterText: string,
+): string[] {
+  const out: string[] = [];
+  const beforeRoots = spanRoots(beforeText);
+  const afterRoots = spanRoots(afterText);
+  const sharesCut = (roots: string[], root: string) =>
+    roots.some((other) => other !== root && letterPrefix(other) === letterPrefix(root));
+  for (let i = 0; i < Math.min(before.length, after.length); i++) {
+    const was = before[i]!;
+    const now = after[i]!;
+    const full = (b: ContentBind) =>
+      b.antecedent?.length === 1 && b.roots.join("") === b.antecedent[0] && letterPrefix(b.antecedent[0]!) !== b.antecedent[0];
+    if (!full(was) || !full(now)) continue;
+    if (sharesCut(beforeRoots, was.antecedent![0]!) && !sharesCut(afterRoots, now.antecedent![0]!)) out.push(now.raw);
+  }
+  return out;
 }

@@ -18,10 +18,13 @@ import {
   retieCompoundRows,
   serializeCompoundCsv,
   validateCompoundRows,
+  type CompoundRow,
+  type CompoundValidationError,
 } from "../src/lexicon-compounds.js";
 import { placePublishedRoots } from "../src/lexicon-place.js";
 import { isJoinOverlayKind, parseOverlayCsv } from "../src/lexicon-search.js";
 import { RETIE_MAP_RELATIVE_PATH, serializeRetieMap, type RetiePair } from "../src/retie/map.js";
+import { retieCore } from "../src/retie/rebuild.js";
 import {
   CLARITY_CONSONANTS,
   CLARITY_VOWELS,
@@ -133,17 +136,18 @@ function serializeCsv(headers: string[], rows: Record<string, string>[]): string
   return `${lines.join("\n")}\n`;
 }
 
-function retieSenseForm(senseForm: string, oldRoot: string, newRoot: string): string {
+/**
+ * Respell an overlay sense form through the word grammar, the same way the docs are retied:
+ * `uxerenel` (role vowel + `x` + root) keeps its role vowel and moves only the root.
+ * `null` when the form does not spell `oldRoot` where the parser finds it.
+ */
+function retieSenseForm(senseForm: string, pos: string, oldRoot: string, newRoot: string): string | null {
   if (!oldRoot || oldRoot === newRoot) {
     return senseForm;
   }
-  if (oldRoot.length >= 3 && senseForm.startsWith(oldRoot)) {
-    return newRoot + senseForm.slice(oldRoot.length);
-  }
-  const ending = senseForm.match(/[lmnr]$/)?.[0] ?? "";
-  const xAt = senseForm.indexOf("x");
-  const extra = xAt >= 0 ? senseForm.slice(xAt) : ending;
-  return extra.startsWith("x") ? newRoot + extra : newRoot + ending;
+  // Parsed with its PoS, as it is written in a sentence (a bare `uxerenel` is not a word).
+  const next = retieCore(`${pos}${senseForm}`, new Map([[oldRoot, newRoot]]));
+  return next?.startsWith(pos) ? next.slice(pos.length) : null;
 }
 
 function rowMatchesOnly(row: Record<string, string>, only: string[]): boolean {
@@ -154,6 +158,32 @@ function rowMatchesOnly(row: Record<string, string>, only: string[]): boolean {
   const emoji = (row.emoji ?? "").trim();
   const root = (row.clarity ?? "").trim();
   return only.some((filter) => filter === literal || filter === emoji || filter === root);
+}
+
+/**
+ * Compound parts that no longer name the same published row: each part's old root belonged to
+ * an emoji, and after the retie the part must be that emoji's new root (catches chained substitution).
+ */
+function compoundPartDrift(
+  before: CompoundRow[],
+  after: CompoundRow[],
+  emojiByOldRoot: ReadonlyMap<string, string>,
+  rows: Record<string, string>[],
+): CompoundValidationError[] {
+  const rootByEmoji = new Map(rows.map((row) => [(row.emoji ?? "").trim(), (row.clarity ?? "").trim()]));
+  const errors: CompoundValidationError[] = [];
+  before.forEach((row, i) => {
+    for (const field of ["left", "right"] as const) {
+      const emoji = emojiByOldRoot.get(row[field]);
+      if (!emoji) continue;
+      const expected = rootByEmoji.get(emoji);
+      const got = after[i]![field];
+      if (expected && got !== expected) {
+        errors.push({ row: i + 2, stem: after[i]!.stem, reason: `${field} ${row[field]} (${emoji}) became ${got}, expected ${expected}` });
+      }
+    }
+  });
+  return errors;
 }
 
 async function convertLexicon(only: string[]): Promise<void> {
@@ -180,6 +210,10 @@ async function convertLexicon(only: string[]): Promise<void> {
     }
   }
 
+  // Old root → emoji, taken before any row is respelled, to check compound parts afterwards.
+  const emojiByOldRoot = new Map(
+    rows.filter((row) => (row.clarity ?? "").trim()).map((row) => [(row.clarity ?? "").trim(), (row.emoji ?? "").trim()]),
+  );
   const assigned: string[] = [];
   const oldToNewByEmoji = new Map<string, { oldRoot: string; newRoot: string }>();
   const retiePairs: RetiePair[] = [];
@@ -236,6 +270,7 @@ async function convertLexicon(only: string[]): Promise<void> {
   }
 
   const overlaySenseBefore = overlays.map((overlay) => overlay.senseForm);
+  const overlayErrors: string[] = [];
   for (const overlay of overlays) {
     if (isJoinOverlayKind(overlay.kind)) {
       continue;
@@ -247,7 +282,15 @@ async function convertLexicon(only: string[]): Promise<void> {
     if (!mapped) {
       continue;
     }
-    overlay.senseForm = retieSenseForm(overlay.senseForm, mapped.oldRoot, mapped.newRoot);
+    const next = retieSenseForm(overlay.senseForm, overlay.pos, mapped.oldRoot, mapped.newRoot);
+    if (next == null) {
+      overlayErrors.push(`${overlay.senseForm} (${overlay.pos}): does not spell ${mapped.oldRoot}; respell it to ${mapped.newRoot} by hand`);
+      continue;
+    }
+    overlay.senseForm = next;
+  }
+  if (overlayErrors.length > 0) {
+    throw new Error(`Overlay sense forms the retie could not respell:\n${overlayErrors.join("\n")}`);
   }
   const overlaysChanged = overlays.some((overlay, index) => overlay.senseForm !== overlaySenseBefore[index]);
 
@@ -256,7 +299,10 @@ async function convertLexicon(only: string[]): Promise<void> {
   const publishedRoots = new Set(
     rows.map((row) => (row.clarity ?? "").trim()).filter(Boolean),
   );
-  const compoundErrors = validateCompoundRows(retiedCompounds.rows, publishedRoots);
+  const compoundErrors = [
+    ...validateCompoundRows(retiedCompounds.rows, publishedRoots),
+    ...compoundPartDrift(compoundRows, retiedCompounds.rows, emojiByOldRoot, rows),
+  ];
   if (compoundErrors.length > 0) {
     const detail = compoundErrors.map((e) => `row ${e.row ?? "?"} ${e.stem ?? ""}: ${e.reason}`).join("\n");
     throw new Error(`Invalid lexicon-compounds.csv after retie:\n${detail}`);
@@ -290,7 +336,11 @@ async function convertLexicon(only: string[]): Promise<void> {
   const tmpDir = join(rootDir, "tmp");
   mkdirSync(tmpDir, { recursive: true });
   const retieMapPath = join(rootDir, RETIE_MAP_RELATIVE_PATH);
-  writeFileSync(retieMapPath, serializeRetieMap(retiePairs));
+  const compoundStems = compoundRows.flatMap((row, i) => {
+    const newStem = retiedCompounds.rows[i]!.stem;
+    return newStem === row.stem ? [] : [{ emoji: row.emoji, oldStem: row.stem, newStem }];
+  });
+  writeFileSync(retieMapPath, serializeRetieMap(retiePairs, undefined, compoundStems));
 
   const dist = letterDistribution(assigned.length > 0 ? assigned : rows.map((r) => (r.clarity ?? "").trim()).filter(Boolean));
   console.log(`assigned: ${assigned.length}`);

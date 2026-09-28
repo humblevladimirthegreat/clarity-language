@@ -1,33 +1,42 @@
 /**
- * Retie Agalan tokens in docs/grammar/, docs/examples/, and lexicon-compounds.csv
- * from the map dumped by convert-word --lexicon.
+ * Retie Agalan in the docs, AGENTS.md / README.md, and source string literals
+ * from the map dumped by convert-word --lexicon (which already retied the lexicon CSVs).
  *
  * Run: npm run retie-docs
  *      npm run retie-docs -- --write
  *      npm run retie-docs -- --map tmp/lexicon-retie-map.json --write
  *
- * Only spans the doc lint reads as Agalan are rewritten (plus `*emphasised*` prose citations);
- * other hits are listed for review. A rewrite that stops parsing or moves an unmapped root
- * blocks `--write`. A new resume link is a warning. Other parse-tree changes are info.
+ * Only spans the doc lint reads as Agalan are rewritten (plus emphasised prose runs that parse
+ * as an Agalan sentence or phrase); other hits are listed for review. English copies follow
+ * their Agalan: named-word names, quoted payloads, morph lines, and heading anchors.
+ * A rewrite that stops parsing, moves an unmapped root, or rebinds a resume blocks `--write`,
+ * as does a map whose old spellings the word grammar cannot read or that was already applied.
  */
 import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { dirname, join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import {
-  parseCompoundCsv,
-  retieCompoundRows,
-  serializeCompoundCsv,
-} from "../src/lexicon-compounds.js";
+import { parseCompoundCsv, validateCompoundRows } from "../src/lexicon-compounds.js";
+import { ensureFrequencyFile, loadFrequencyRanks } from "../src/lexicon-place.js";
 import { fillSelf } from "../src/learner-name.js";
 import { ENGLISH_IN_CODE, lintAgalanMarkdown, lintAgalanSpans } from "../src/lint/agalan-docs.js";
 import { formatMorphGlossFinding, lintMorphGlossMarkdown } from "../src/lint/morph-gloss-docs.js";
+import { formatNumberSpeechFinding, lintNumberSpeechMarkdown } from "../src/lint/number-speech-docs.js";
 import { formatWordBankFinding, lintWordBankMarkdown } from "../src/lint/word-bank-docs.js";
+import type { ClassifyTables } from "../src/parse/classify.js";
 import { loadDefaultTables } from "../src/parse/index.js";
 import { parseWord } from "../src/parse/word.js";
-import { rewriteMarkdown } from "../src/retie/markdown.js";
-import { checkMapCollisions, parseRetieMapJson, RETIE_MAP_RELATIVE_PATH } from "../src/retie/map.js";
+import { headingIdRenames, relinkMarkdown, relinkOverlayAnchors, type AnchorRenames } from "../src/retie/anchors.js";
+import { mergeFollowPairs } from "../src/retie/follow.js";
+import { finishFollow, rewriteMarkdown, type RetieMarkdownResult } from "../src/retie/markdown.js";
+import {
+  checkMapCollisions,
+  parseRetieMapJson,
+  RETIE_MAP_RELATIVE_PATH,
+  unreadableOldRoots,
+} from "../src/retie/map.js";
 import { contentStemRoots } from "../src/retie/resume.js";
+import { rewriteSourceLiterals } from "../src/retie/source.js";
 import { forEachMarkdownCodeToken, lineNumberAt, peelChunk } from "../src/retie/tokens.js";
 import { bridgeTables, verifyRetiedSpans } from "../src/retie/verify.js";
 
@@ -37,7 +46,16 @@ const markdownDirs = [
   join(rootDir, "docs", "examples"),
   join(rootDir, "docs", "meta"),
 ];
+/** TODO.md is planning notes and is never retied. */
+const topLevelMarkdown = ["AGENTS.md", "README.md"].map((name) => join(rootDir, name));
 const compoundsPath = join(rootDir, "data", "lexicon-compounds.csv");
+const overlaysPath = join(rootDir, "data", "lexicon-overlays.csv");
+const grammarDir = join(rootDir, "docs", "grammar");
+/** Source whose string literals hold Agalan. The retie tool's own tests use their own maps. */
+const sourceDirs = [join(rootDir, "src"), join(rootDir, "scripts"), join(grammarDir, ".vitepress")];
+const SOURCE_SKIP = [join(rootDir, "src", "retie"), join(rootDir, "src", "generated"), join(rootDir, "scripts", "retie-docs.ts")];
+/** Frequency rank below which a word counts as common English for review. */
+const COMMON_ENGLISH_RANK = 30000;
 
 type CliOptions = {
   mapPath: string;
@@ -81,10 +99,31 @@ function parseArgs(argv: string[]): CliOptions {
 function printUsage(): void {
   console.error(`Usage: npm run retie-docs -- [--map PATH] [--write] [--force]
 
-Reads ${RETIE_MAP_RELATIVE_PATH} (from convert-word --lexicon) and reties
-Agalan tokens in docs/grammar/, docs/examples/, docs/meta/, and data/lexicon-compounds.csv.
-Default is a dry-run. --write refuses when a map collision or a before/after
-parse check fails, unless --force.`);
+Reads ${RETIE_MAP_RELATIVE_PATH} (from convert-word --lexicon) and reties Agalan in
+docs/grammar/, docs/examples/, docs/meta/, AGENTS.md, README.md, string literals
+under src/ (tests included), scripts/ and the grammar site, and overlay anchors.
+convert-word --lexicon already retied the lexicon CSVs; this only checks them.
+Default is a dry-run. --write refuses on a blocking finding (map collision, unreadable old
+spelling, map already applied, parse or resume-bind change), unless --force.`);
+}
+
+function listSource(dir: string): string[] {
+  if (!existsSync(dir) || SOURCE_SKIP.some((skip) => dir === skip)) {
+    return [];
+  }
+  const out: string[] = [];
+  for (const name of readdirSync(dir)) {
+    const full = join(dir, name);
+    if (name === "node_modules" || name === "cache" || name === "dist" || SOURCE_SKIP.includes(full)) {
+      continue;
+    }
+    if (statSync(full).isDirectory()) {
+      out.push(...listSource(full));
+    } else if (/\.(ts|mts|mjs|vue)$/.test(name) && !name.endsWith(".d.ts")) {
+      out.push(full);
+    }
+  }
+  return out.sort();
 }
 
 function listMarkdown(dir: string): string[] {
@@ -123,8 +162,7 @@ function rootsInUse(texts: string[]): Set<string> {
 }
 
 /** Doc-lint findings for one page (same checks as `npm run build`, minus site-wide ones). */
-function lintPage(rel: string, source: string): string[] {
-  const tables = loadDefaultTables();
+function lintPage(rel: string, source: string, tables: ClassifyTables): string[] {
   const text = fillSelf(source);
   const out: string[] = [];
   for (const issue of lintAgalanMarkdown(text, tables)) {
@@ -139,10 +177,50 @@ function lintPage(rel: string, source: string): string[] {
   for (const finding of lintWordBankMarkdown(source, tables)) {
     out.push(formatWordBankFinding(rel, finding));
   }
+  for (const finding of lintNumberSpeechMarkdown(text)) {
+    out.push(formatNumberSpeechFinding(rel, finding));
+  }
   return out;
 }
 
-function main(): void {
+/**
+ * Lint findings a retie adds to a grammar page: the page before the retie against a lexicon
+ * that still knows the old spellings, the page after against the new lexicon only.
+ * Findings are compared without line numbers, so moved lines are not new.
+ */
+function newLintFindings(rel: string, before: string, after: string, bridge: ClassifyTables, current: ClassifyTables): string[] {
+  const key = (finding: string) => finding.replace(/^[^\s]+:\d+\s+/, "").replace(/\s+/g, " ");
+  const baseline = new Map<string, number>();
+  for (const finding of lintPage(rel, before, bridge)) {
+    baseline.set(key(finding), (baseline.get(key(finding)) ?? 0) + 1);
+  }
+  return lintPage(rel, after, current).filter((finding) => {
+    const left = baseline.get(key(finding)) ?? 0;
+    if (left > 0) {
+      baseline.set(key(finding), left - 1);
+      return false;
+    }
+    return true;
+  });
+}
+
+async function commonEnglish(): Promise<Set<string>> {
+  try {
+    await ensureFrequencyFile();
+  } catch {
+    console.warn("English word list unavailable; English-word review limited to the doc lint's list.");
+    return new Set(ENGLISH_IN_CODE);
+  }
+  const words = new Set(ENGLISH_IN_CODE);
+  for (const [word, rank] of loadFrequencyRanks()) {
+    if (rank <= COMMON_ENGLISH_RANK) words.add(word);
+  }
+  return words;
+}
+
+type MapFileState = { appliedAt?: string };
+
+async function main(): Promise<void> {
   const options = parseArgs(process.argv.slice(2));
   if (!existsSync(options.mapPath)) {
     throw new Error(
@@ -150,35 +228,83 @@ function main(): void {
     );
   }
 
-  const map = parseRetieMapJson(readFileSync(options.mapPath, "utf8"));
+  const mapText = readFileSync(options.mapPath, "utf8");
+  const map = parseRetieMapJson(mapText);
+  const mapState = JSON.parse(mapText) as MapFileState;
   const tables = bridgeTables(map);
-  const files = markdownDirs.flatMap((dir) => listMarkdown(dir));
-  const sources = new Map(files.map((file) => [file, readFileSync(file, "utf8")]));
+  const english = await commonEnglish();
+  const markdownFiles = [...markdownDirs.flatMap((dir) => listMarkdown(dir)), ...topLevelMarkdown.filter(existsSync)];
+  const sources = new Map(markdownFiles.map((file) => [file, readFileSync(file, "utf8")]));
   let total = 0;
   let blocking = 0;
   let warnings = 0;
   let info = 0;
-  const written: { file: string; text: string }[] = [];
+  let reviewCount = 0;
+  const block = (line: string) => {
+    blocking += 1;
+    console.error(line);
+  };
+  const review = (line: string) => {
+    reviewCount += 1;
+    console.log(line);
+  };
 
-  const collisions = checkMapCollisions(map, {
+  // The map must be applied once: its new roots are often other rows' old roots.
+  if (mapState.appliedAt) {
+    block(`map  already applied at ${mapState.appliedAt}; a second retie would chain old → new → newer`);
+  }
+  // Old spellings the word grammar cannot read would be skipped silently.
+  for (const oldRoot of unreadableOldRoots(map, (word) => {
+    try {
+      parseWord(word);
+      return true;
+    } catch {
+      return false;
+    }
+  })) {
+    block(`map  old root ${oldRoot} is not a legal spelling now; do spelling-rule passes before convert-word --lexicon or after the retie`);
+  }
+  for (const collision of checkMapCollisions(map, {
     rootsInUse: rootsInUse([...sources.values()]),
     englishWords: ENGLISH_IN_CODE,
-  });
-  for (const collision of collisions) {
-    blocking += 1;
-    console.error(`collision  ${collision.newRoot}  ${collision.reason}`);
+  })) {
+    block(`collision  ${collision.newRoot}  ${collision.reason}`);
   }
 
-  let reviewCount = 0;
-  for (const file of files) {
+  // convert-word --lexicon retied the compound CSV once; retieing it again here would chain.
+  const publishedRoots = new Set(loadDefaultTables().published.keys());
+  for (const error of validateCompoundRows(parseCompoundCsv(readFileSync(compoundsPath, "utf8")), publishedRoots)) {
+    block(`${relative(rootDir, compoundsPath)}:${error.row ?? "?"}  ${error.stem ?? ""}  ${error.reason}`);
+  }
+
+  // Pass 1: code. Pass 2: English copies, with name pairs from every page
+  // (a house-cast name can sit in prose on a page with no code for it).
+  const firstPass = new Map<string, RetieMarkdownResult>();
+  for (const file of markdownFiles) {
+    firstPass.set(file, rewriteMarkdown(sources.get(file)!, map, tables, { deferFollow: true, english }));
+  }
+  const follow = mergeFollowPairs(...[...firstPass.values()].map((result) => result.followPairs));
+  const results = new Map<string, RetieMarkdownResult>();
+  for (const file of markdownFiles) {
+    results.set(file, finishFollow(sources.get(file)!, firstPass.get(file)!, follow, tables));
+  }
+
+  // Heading ids spelled from Agalan move with it; links and overlay anchors follow.
+  const renames: AnchorRenames = new Map();
+  for (const file of markdownFiles) {
+    const moved = headingIdRenames(sources.get(file)!, results.get(file)!.text);
+    if (moved.size > 0) renames.set(file, moved);
+  }
+
+  const written: { file: string; text: string }[] = [];
+  for (const file of markdownFiles) {
     const original = sources.get(file)!;
-    const { text, changes, reviews, spans } = rewriteMarkdown(original, map, tables);
+    const result = results.get(file)!;
     const rel = relative(rootDir, file);
-    for (const review of reviews) {
-      reviewCount += 1;
-      console.log(`${rel}:${lineNumberAt(original, review.index)}  review  \`${review.text}\`  (${review.reason})`);
+    for (const item of result.reviews) {
+      review(`${rel}:${lineNumberAt(original, item.index)}  review  \`${item.text}\`  (${item.reason})`);
     }
-    for (const failure of verifyRetiedSpans(spans, map, tables)) {
+    for (const failure of verifyRetiedSpans(result.spans, map, tables)) {
       const line = lineNumberAt(original, failure.span.index);
       const rendered = `${rel}:${line}  ${failure.level}  \`${failure.span.before}\` → \`${failure.span.after}\`  (${failure.detail})`;
       if (failure.level === "info") {
@@ -188,33 +314,75 @@ function main(): void {
         warnings += 1;
         console.warn(rendered);
       } else {
-        blocking += 1;
-        console.error(rendered);
+        block(rendered);
       }
     }
-    if (changes.length === 0) {
+    for (const change of result.changes) {
+      console.log(`${rel}:${lineNumberAt(original, change.index)}  ${change.from} → ${change.to}`);
+      if (english.has(change.from)) {
+        review(`${rel}:${lineNumberAt(original, change.index)}  review  ${change.from} is also an English word; check it was Agalan`);
+      }
+    }
+    for (const change of result.followChanges) {
+      console.log(`${rel}  english  ${change.from} → ${change.to}`);
+    }
+    for (const edit of result.reglossEdits) {
+      console.log(`${rel}:${edit.line + 1}  morph  ${edit.from} → ${edit.to}`);
+    }
+    const relinked = relinkMarkdown(result.text, file, renames);
+    for (const change of relinked.changes) {
+      console.log(`${rel}  anchor  ${change.from} → ${change.to}`);
+    }
+    const count = result.changes.length + result.followChanges.length + result.reglossEdits.length + relinked.changes.length;
+    if (count === 0) {
       continue;
     }
-    total += changes.length;
-    for (const change of changes) {
-      const line = lineNumberAt(original, change.index);
-      console.log(`${rel}:${line}  ${change.from} → ${change.to}`);
-    }
-    written.push({ file, text });
+    total += count;
+    written.push({ file, text: relinked.text });
   }
 
-  const compoundOriginal = readFileSync(compoundsPath, "utf8");
-  const { rows, changes: compoundChanges } = retieCompoundRows(parseCompoundCsv(compoundOriginal), map);
-  if (compoundChanges.length > 0) {
-    total += compoundChanges.length;
-    const rel = relative(rootDir, compoundsPath);
-    for (const change of compoundChanges) {
-      console.log(`${rel}:${change.row}  ${change.field} ${change.from} → ${change.to}`);
+  const overlayOriginal = readFileSync(overlaysPath, "utf8");
+  const overlayRelinked = relinkOverlayAnchors(overlayOriginal, grammarDir, renames);
+  for (const change of overlayRelinked.changes) {
+    console.log(`${relative(rootDir, overlaysPath)}  anchor  ${change.from} → ${change.to}`);
+  }
+  if (overlayRelinked.changes.length > 0) {
+    total += overlayRelinked.changes.length;
+    written.push({ file: overlaysPath, text: overlayRelinked.text });
+  }
+
+  // Source: root tables, sample fillers, test fixtures.
+  const currentRoots = publishedRoots;
+  for (const file of sourceDirs.flatMap((dir) => listSource(dir))) {
+    const original = readFileSync(file, "utf8");
+    const result = rewriteSourceLiterals(original, file, { map, tables, follow, english, currentRoots });
+    const rel = relative(rootDir, file);
+    for (const item of result.reviews) {
+      review(`${rel}:${lineNumberAt(original, item.index)}  review  ${item.reason}`);
+    }
+    for (const change of result.changes) {
+      console.log(`${rel}:${lineNumberAt(original, change.index)}  ${change.from} → ${change.to}`);
+    }
+    if (result.text !== original) {
+      total += result.changes.length;
+      written.push({ file, text: result.text });
     }
   }
 
-  const filesChanged = written.length + (compoundChanges.length > 0 ? 1 : 0);
-  const summary = `${total} reties in ${filesChanged} files; ${reviewCount} to review; ${warnings} warning; ${info} info; ${blocking} blocking`;
+  // Same checks `npm run build` makes on grammar pages, before anything is written.
+  const current = loadDefaultTables();
+  let lintCount = 0;
+  for (const { file, text } of written.filter(({ file }) => file.startsWith(`${grammarDir}/`) && file.endsWith(".md"))) {
+    for (const finding of newLintFindings(relative(rootDir, file), sources.get(file)!, text, tables, current)) {
+      lintCount += 1;
+      block(`lint  ${finding}`);
+    }
+  }
+  if (lintCount > 0) {
+    console.error(`${lintCount} lint finding(s) the retie would add to grammar pages (blocking).`);
+  }
+
+  const summary = `${total} reties in ${written.length} files; ${reviewCount} to review; ${warnings} warning; ${info} info; ${blocking} blocking`;
   if (!options.write) {
     console.log(`Dry-run: ${summary}. Pass --write to apply.`);
     return;
@@ -225,30 +393,15 @@ function main(): void {
   for (const { file, text } of written) {
     writeFileSync(file, text);
   }
-  if (compoundChanges.length > 0) {
-    writeFileSync(compoundsPath, serializeCompoundCsv(rows));
-  }
-  console.log(`Wrote ${summary}.`);
+  const stamped = { ...(JSON.parse(mapText) as object), appliedAt: new Date().toISOString() };
+  writeFileSync(options.mapPath, `${JSON.stringify(stamped, null, 2)}\n`);
+  console.log(`Wrote ${summary}. Stamped ${relative(rootDir, options.mapPath)} as applied.`);
 
-  // Same pages `npm run build` lints; docs/meta and docs/examples hold unlinted notes.
-  const grammarDir = join(rootDir, "docs", "grammar");
-  let lintCount = 0;
-  for (const { file, text } of written.filter(({ file }) => file.startsWith(`${grammarDir}/`))) {
-    for (const line of lintPage(relative(rootDir, file), text)) {
-      lintCount += 1;
-      console.error(line);
-    }
-  }
-  if (lintCount > 0) {
-    throw new Error(`Lint after retie: ${lintCount} issue(s) in changed grammar pages.`);
-  }
-  console.log("Lint after retie: changed grammar pages clean.");
+  console.log("Next: npm run build and npm test, then read the review list above.");
 }
 
-try {
-  main();
-} catch (err) {
+main().catch((err: unknown) => {
   const message = err instanceof Error ? err.message : String(err);
   console.error(message);
   process.exit(1);
-}
+});

@@ -9,9 +9,18 @@ export type RetiePair = {
   newRoot: string;
 };
 
+/** A lexical compound whose stem moved because a part root moved (`abedelohohu` → `abedelahaza`). */
+export type CompoundStemPair = {
+  emoji: string;
+  oldStem: string;
+  newStem: string;
+};
+
 export type RetieMapFile = {
   generatedAt: string;
   pairs: RetiePair[];
+  /** Compound stems, which docs spell as one opaque root, so they retie like roots. */
+  compounds?: CompoundStemPair[];
 };
 
 export function buildRootMap(pairs: RetiePair[]): Map<string, string> {
@@ -31,7 +40,11 @@ export function buildRootMap(pairs: RetiePair[]): Map<string, string> {
   return map;
 }
 
-export function serializeRetieMap(pairs: RetiePair[], generatedAt = new Date().toISOString()): string {
+export function serializeRetieMap(
+  pairs: RetiePair[],
+  generatedAt = new Date().toISOString(),
+  compounds: CompoundStemPair[] = [],
+): string {
   const changed = pairs.filter((p) => p.oldRoot && p.newRoot && p.oldRoot !== p.newRoot);
   const map = buildRootMap(changed);
   const unique: RetiePair[] = [];
@@ -48,7 +61,8 @@ export function serializeRetieMap(pairs: RetiePair[], generatedAt = new Date().t
       newRoot: map.get(pair.oldRoot) ?? pair.newRoot,
     });
   }
-  const body: RetieMapFile = { generatedAt, pairs: unique };
+  const moved = compounds.filter((c) => c.oldStem && c.newStem && c.oldStem !== c.newStem);
+  const body: RetieMapFile = { generatedAt, pairs: unique, ...(moved.length > 0 ? { compounds: moved } : {}) };
   return `${JSON.stringify(body, null, 2)}\n`;
 }
 
@@ -68,7 +82,26 @@ export function parseRetieMapJson(text: string): Map<string, string> {
       throw new Error("Retie map pairs need oldRoot and newRoot strings");
     }
   }
-  return buildRootMap(pairs);
+  const compounds = (parsed as RetieMapFile).compounds ?? [];
+  for (const pair of compounds) {
+    if (!pair || typeof pair.oldStem !== "string" || typeof pair.newStem !== "string") {
+      throw new Error("Retie map compounds need oldStem and newStem strings");
+    }
+  }
+  return buildRootMap([
+    ...pairs,
+    ...compounds.map((c) => ({ emoji: c.emoji, literal: "", oldRoot: c.oldStem, newRoot: c.newStem })),
+  ]);
+}
+
+/**
+ * Old spellings the current word grammar cannot read. The retie parses each old word, so a
+ * spelling-rule change made between building the map and the retie (`j` → `y`) hides every
+ * word that used it. Do such passes before `convert-word --lexicon` or after the retie.
+ */
+export function unreadableOldRoots(map: ReadonlyMap<string, string>, parses: (word: string) => boolean): string[] {
+  // A root takes an ending; a hook-compound stem (`awalalul`) already ends in one.
+  return [...map.keys()].filter((oldRoot) => !parses(`z${oldRoot}l`) && !parses(`z${oldRoot}`));
 }
 
 export type MapCollision = {

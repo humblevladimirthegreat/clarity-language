@@ -3,7 +3,16 @@ import { describe, it } from "node:test";
 
 import { loadDefaultTables } from "../parse/index.js";
 import { rewriteMarkdown } from "./markdown.js";
-import { buildRootMap, checkMapCollisions, parseRetieMapJson, serializeRetieMap, type RetiePair } from "./map.js";
+import { headingIdRenames, relinkMarkdown, relinkOverlayAnchors } from "./anchors.js";
+import {
+  buildRootMap,
+  checkMapCollisions,
+  parseRetieMapJson,
+  serializeRetieMap,
+  unreadableOldRoots,
+  type RetiePair,
+} from "./map.js";
+import { rewriteSourceLiterals, sourceLiterals } from "./source.js";
 import { rewriteParsedWord } from "./rebuild.js";
 import { parseWord } from "../parse/word.js";
 import { lineNumberAt, peelChunk, retieCore } from "./tokens.js";
@@ -222,7 +231,33 @@ describe("resume-aware markdown retie", () => {
       "`zululon velebel. zabogol gelem. zazawan veler.`",
       map,
     );
-    assert.equal(text, "`zululon velebel. zabogol gogogom. zazawan vogogor.`");
+    // `veler` is a short resume (a two-syllable root's cut is the whole root), so it stays short.
+    assert.equal(text, "`zululon velebel. zabogol gogogom. zazawan vogor.`");
+  });
+
+  it("keeps a two-syllable root's short resume short after the root lengthens", () => {
+    const map = mapOf(["eye", "ahaha"]);
+    const { text } = rewriteMarkdown("`zululon veyel. zazawan veyer.`", map);
+    assert.equal(text, "`zululon vahahal. zazawan vahar.`");
+  });
+
+  it("follows the parser bind into a writing-span payload", () => {
+    const map = mapOf(["aza", "ezuga"], ["azabe", "ozoge"]);
+    const { text } = rewriteMarkdown("`zazabel` then `zazawan th(zazar vawalal) vawalal.`", map);
+    assert.equal(text, "`zozogel` then `zazawan th(zazar vawalal) vawalal.`");
+  });
+
+  it("binds an unbound resume to the nearest earlier stem, not the longest", () => {
+    const map = mapOf(["aza", "ezuga"], ["azabebe", "ozogege"]);
+    const { text } = rewriteMarkdown("`zazabeben` and `zazawan` then `zazar`.", map);
+    assert.equal(text, "`zozogegen` and `zazawan` then `zazar`.");
+  });
+
+  it("lengthens a short resume that would bind another word after the retie", () => {
+    const map = mapOf(["adana", "azado"]);
+    const { text, reviews } = rewriteMarkdown("`zazawan vadanal xon zazar vuzunul.`", map);
+    assert.equal(text, "`zazawan vazadol xon zazawar vuzunul.`");
+    assert.match(reviews[0]!.reason, /full-root resume/);
   });
 
   it("keeps a compound-name short resume when the prefix root moves", () => {
@@ -251,17 +286,33 @@ describe("tone marks", () => {
 describe("classification-gated retie", () => {
   const map = mapOf(["azawa", "ululo"], ["obono", "abaga"]);
 
-  it("reties emphasised prose citations but only reports bare prose hits", () => {
-    const { text, reviews } = rewriteMarkdown("The obono in prose, and *azawa* cited.", map);
-    assert.equal(text, "The obono in prose, and *ululo* cited.");
-    assert.deepEqual(reviews.map((r) => r.text), ["obono"]);
-  });
-
-  it("leaves English-class spans and text-fence English alone", () => {
-    const input = "`obono is big` and\n```text\nthe obono is here\n```\n";
+  it("reports prose words, emphasised or not, without retieing them", () => {
+    const input = "The obono in prose, and *azawa* in italics.";
     const { text, reviews } = rewriteMarkdown(input, map);
     assert.equal(text, input);
+    assert.deepEqual(reviews.map((r) => r.text), ["obono", "*azawa*"]);
+  });
+
+  it("leaves English that fits the root shape alone", () => {
+    const english = mapOf(["one", "ovavo"], ["ere", "edehu"], ["eve", "evevu"], ["age", "ezego"]);
+    const input = "*one* and *here* / *there*, *bone*, *even though*, *over there*, *a bagel*.";
+    assert.equal(rewriteMarkdown(input, english).text, input);
+  });
+
+  it("reties only the lint-checked words of English-class spans and text-fence lines, for review", () => {
+    const input = "`obono is big` and\n```text\nthe obono is here\n```\n";
+    const { text, reviews } = rewriteMarkdown(input, map);
+    assert.equal(text, "`abaga is big` and\n```text\nthe abaga is here\n```\n");
     assert.equal(reviews.length, 2);
+    assert.match(reviews[0]!.reason, /word by word/);
+  });
+
+  it("leaves code English that is not a lint candidate", () => {
+    const input = "`the level is here`";
+    const { text } = rewriteMarkdown(input, mapOf(["eve", "ababa"], ["ere", "ododo"]), undefined, {
+      english: new Set(["the", "level", "is", "here"]),
+    });
+    assert.equal(text, input);
   });
 
   it("reties a text-fence line that reads as Agalan", () => {
@@ -269,10 +320,9 @@ describe("classification-gated retie", () => {
     assert.equal(text, "```text\nzululon vawalal.\n```\n");
   });
 
-  it("reports an unclassified span instead of rewriting it", () => {
-    const input = "`zazawan means swan`";
-    const { text, reviews } = rewriteMarkdown(input, map);
-    assert.equal(text, input);
+  it("reties the Agalan words of an unclassified span and reports it", () => {
+    const { text, reviews } = rewriteMarkdown("`zazawan means swan`", map);
+    assert.equal(text, "`zululon means swan`");
     assert.match(reviews[0]!.reason, /mixes/);
   });
 
@@ -378,5 +428,119 @@ describe("lineNumberAt", () => {
     assert.equal(lineNumberAt("a\nb\nc", 0), 1);
     assert.equal(lineNumberAt("a\nb\nc", 2), 2);
     assert.equal(lineNumberAt("a\nb\nc", 4), 3);
+  });
+});
+
+describe("English copies follow their Agalan", () => {
+  const map = mapOf(["ululo", "alahe"], ["odoga", "uzugo"]);
+
+  it("renames a named word in morph lines, free English and word banks", () => {
+    const input = "> `zululon vawalal.`\n>\n> z-Ululon | v-walk\n>\n> \"Ululon walks.\"\n\n| *Ululon* | `ululon` |\n";
+    const { text } = rewriteMarkdown(input, map);
+    assert.equal(text, "> `zalahen vawalal.`\n>\n> z-Alahen | v-walk\n>\n> \"Alahen walks.\"\n\n| *Alahen* | `alahen` |\n");
+  });
+
+  it("respells a quoted payload in the morph line and the English", () => {
+    const input = "> `z{odoga} gamazam.`\n>\n> z-MENTION[\"odoga\"] | g-small\n>\n> \"The word “odoga” is small.\"\n";
+    const { text } = rewriteMarkdown(input, map);
+    assert.match(text, /MENTION\["uzugo"\]/);
+    assert.match(text, /“uzugo”/);
+  });
+
+  it("does not touch names inside code or link targets", () => {
+    const input = "`zululon vawalal.` see [Ululon](pronouns.md#ululon)";
+    const { text } = rewriteMarkdown(input, map);
+    assert.equal(text, "`zalahen vawalal.` see [Alahen](pronouns.md#ululon)");
+  });
+});
+
+describe("editorial span close and template stems", () => {
+  it("reties a payload before an editorial close", () => {
+    const { text } = rewriteMarkdown("`zazawan d[azawam#] vawalal.` `zazawan d[azawam#|] vawalal.`", mapOf(["azawa", "ululo"]));
+    assert.equal(text, "`zululon d[ululom#] vawalal.` `zululon d[ululom#|] vawalal.`");
+  });
+
+  it("reties a template word cut before its ending", () => {
+    const { text } = rewriteMarkdown("(`gonogotha…`)", mapOf(["onogo", "une"]));
+    assert.equal(text, "(`gunetha…`)");
+  });
+});
+
+describe("heading anchors", () => {
+  it("renames a heading id spelled from Agalan and relinks it", () => {
+    const before = "### Ability (`egera`)\n";
+    const after = "### Ability (`aze`)\n";
+    const renames = headingIdRenames(before, after);
+    assert.deepEqual([...renames], [["ability-egera", "ability-aze"]]);
+    const page = "/docs/grammar/intention.md";
+    const all = new Map([[page, renames]]);
+    assert.equal(
+      relinkMarkdown("[x](intention.md#ability-egera) [y](#ability-egera)", "/docs/grammar/clause.md", all).text,
+      "[x](intention.md#ability-aze) [y](#ability-egera)",
+    );
+    assert.equal(
+      relinkOverlayAnchors("egeral,th,💪,mood,ABIL,x,y,intention.md#ability-egera\n", "/docs/grammar", all).text,
+      "egeral,th,💪,mood,ABIL,x,y,intention.md#ability-aze\n",
+    );
+  });
+
+  it("leaves pinned ids alone", () => {
+    assert.equal(headingIdRenames("### Ability (`egera`) {#ability}\n", "### Ability (`aze`) {#ability}\n").size, 0);
+  });
+});
+
+describe("source literals", () => {
+  const map = mapOf(["azawa", "ululo"], ["agala", "agaza"]);
+  const ctx = {
+    map,
+    tables: loadDefaultTables(),
+    follow: { names: new Map([["Azawan", "Ululon"]]), words: new Map() },
+    english: new Set(["one", "the"]),
+    currentRoots: new Set(["ululo", "agaza"]),
+  };
+
+  it("reties test fixtures and their expected names", () => {
+    const source = 'parse("zazawan vawalal.");\nassert.equal(gloss("zazawan"), "z-Azawan");\n';
+    const { text } = rewriteSourceLiterals(source, "x.test.ts", ctx);
+    assert.equal(text, 'parse("zululon vawalal.");\nassert.equal(gloss("zululon"), "z-Ululon");\n');
+  });
+
+  it("only reports one-word literals and root-table keys outside tests", () => {
+    const source = 'const LANGUAGE_ROOT = "agala";\nconst CAST = {\n  azawa: "x",\n};\n// "azawa" in a comment\n';
+    const { text, reviews } = rewriteSourceLiterals(source, "x.ts", ctx);
+    assert.equal(text, source);
+    assert.equal(reviews.length, 2);
+  });
+
+  it("finds literals past regex literals and apostrophes in comments", () => {
+    const source = "const re = /[\"']/; // it's\nconst s = 'zazawan vawalal.';\n";
+    assert.deepEqual(sourceLiterals(source).map((l) => l.body), ["zazawan vawalal."]);
+  });
+});
+
+describe("retie map file", () => {
+  it("adds compound stem pairs and flags old spellings the grammar cannot read", () => {
+    const json = serializeRetieMap(
+      [{ emoji: "🏠", literal: "house", oldRoot: "ohohu", newRoot: "ahaza" }],
+      "2026-01-01T00:00:00.000Z",
+      [{ emoji: "🛏️", oldStem: "abedelohohu", newStem: "abedelahaza" }],
+    );
+    const map = parseRetieMapJson(json);
+    assert.equal(map.get("abedelohohu"), "abedelahaza");
+    const parses = (word: string) => !word.includes("j");
+    assert.deepEqual(unreadableOldRoots(mapOf(["oja", "ogodu"], ["ohohu", "ahaza"]), parses), ["oja"]);
+  });
+});
+
+describe("resume binds after a retie", () => {
+  it("blocks a resume that would bind a different antecedent", () => {
+    const tables = bridgeTables(mapOf(["adana", "azado"]));
+    const failures = verifyRetiedSpans(
+      [{ before: "zazawan vadanal xon zazar vuzunul.", after: "zazawan vazadol xon zazar vuzunul.", index: 0, cls: "sentence" }],
+      mapOf(["adana", "azado"]),
+      tables,
+    );
+    assert.equal(failures[0]?.level, "blocking");
+    assert.match(failures[0]!.detail, /binds/);
   });
 });

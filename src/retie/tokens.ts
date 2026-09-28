@@ -5,7 +5,7 @@ import { loadDefaultTables, parse } from "../parse/index.js";
 import { parseWord } from "../parse/word.js";
 
 import { retieCore } from "./rebuild.js";
-import { antecedentStemRoots, contentStemRoots, type ResumeScope } from "./resume.js";
+import { antecedentStemRoots, contentStemRoots, type ResumeScope, type StemOccurrence } from "./resume.js";
 
 export { retieCore } from "./rebuild.js";
 
@@ -20,7 +20,8 @@ export type RewriteMarkdownResult = {
   changes: RetieChange[];
 };
 
-export type CoreRewrite = (core: string) => string | null;
+/** `index` is where the word starts in the page, when the caller knows it. */
+export type CoreRewrite = (core: string, index?: number) => string | null;
 
 const TRAILING_SENTENCE = new Set([".", "?", "!", ",", ":", ";", '"', "'", "`"]);
 
@@ -68,7 +69,7 @@ export function rewritePlainTokens(
     if (!core) {
       return chunk;
     }
-    const next = rewriteCore(core);
+    const next = rewriteCore(core, index + prefix.length);
     if (next == null || next === core) {
       return chunk;
     }
@@ -279,55 +280,53 @@ export function resumeRewrite(
   stems: ReadonlySet<string>,
   codeSpan?: string,
   tables?: ClassifyTables,
+  occurrences?: readonly StemOccurrence[],
 ): CoreRewrite {
   const boundByRaw = codeSpan ? contentResumeBinds(codeSpan, tables) : null;
   const seen = new Map<string, number>();
-  return (core) => {
-    let boundAntecedentRoots: string[] | undefined;
-    if (boundByRaw) {
-      const list = boundByRaw.get(core);
-      if (list && list.length > 0) {
-        const n = seen.get(core) ?? 0;
-        seen.set(core, n + 1);
-        boundAntecedentRoots = list[n];
-      }
-    }
+  const boundFor = (raw: string): string[] | undefined => {
+    const list = boundByRaw?.get(raw);
+    if (!list || list.length === 0) return undefined;
+    const n = seen.get(raw) ?? 0;
+    seen.set(raw, n + 1);
+    return list[n];
+  };
+  return (core, at) => {
+    const boundAntecedentRoots = boundFor(core);
     const scope: ResumeScope = boundAntecedentRoots
-      ? { stems, boundAntecedentRoots }
-      : { stems };
+      ? { stems, boundAntecedentRoots, boundFor, occurrences, at }
+      : { stems, boundFor, occurrences, at };
     return retieCore(core, map, scope);
   };
 }
 
 export function collectContentStems(input: string): Set<string> {
-  const stems = new Set<string>();
-  const addChunk = (chunk: string) => {
+  return new Set(collectStemOccurrences(input).map((o) => o.root));
+}
+
+/** Each non-resume content root on the page, with where its word starts, in page order. */
+export function collectStemOccurrences(input: string): StemOccurrence[] {
+  const out: StemOccurrence[] = [];
+  const addChunk = (chunk: string, index: number) => {
     const { core } = peelChunk(chunk);
     if (!core) {
       return chunk;
     }
     try {
       for (const root of antecedentStemRoots(parseWord(core))) {
-        stems.add(root);
+        out.push({ root, index });
       }
     } catch {
       // not an Agalan word
     }
     return chunk;
   };
-  transformMarkdown(
-    input,
-    0,
-    (text) => {
-      forEachPlainChunk(text, 0, addChunk);
-      return text;
-    },
-    (text) => {
-      forEachPlainChunk(text, 0, addChunk);
-      return text;
-    },
-  );
-  return stems;
+  const visit = (text: string, index: number) => {
+    forEachPlainChunk(text, index, addChunk);
+    return text;
+  };
+  transformMarkdown(input, 0, visit, visit);
+  return out;
 }
 
 /** `tables` should know the old roots (see `bridgeTables`), or binds to moved roots are lost. */

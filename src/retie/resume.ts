@@ -7,7 +7,18 @@ export type ResumeScope = {
   stems: ReadonlySet<string>;
   /** Antecedent roots from parser bind in this code span, when known. */
   boundAntecedentRoots?: readonly string[];
+  /**
+   * Parser bind for a resume nested in a writing-span payload (`th(zazar …)`), by its spelling.
+   * Each call consumes the next bind for that spelling, in text order.
+   */
+  boundFor?: (raw: string) => readonly string[] | undefined;
+  /** Content roots in page order, so an unbound resume follows the nearest earlier match. */
+  occurrences?: readonly StemOccurrence[];
+  /** Where the resume sits in the page. */
+  at?: number;
 };
+
+export type StemOccurrence = { root: string; index: number };
 
 type StemWord = {
   ending?: Ending;
@@ -40,10 +51,22 @@ export function contentStemRoots(word: StemWord): string[] {
 export function pickResumeAntecedent(
   pronounRoots: readonly string[],
   stems: ReadonlySet<string>,
+  near?: { occurrences: readonly StemOccurrence[]; at: number },
 ): string[] | null {
   const chosen: string[] = [];
   let foundLonger = false;
   for (const root of pronounRoots) {
+    // The nearest earlier word on the page that this short stem cuts, as a reader would bind it.
+    let nearest: StemOccurrence | undefined;
+    for (const o of near?.occurrences ?? []) {
+      if (o.index >= near!.at) break;
+      if (contentMatch(root, o.root) === "letter") nearest = o;
+    }
+    if (nearest) {
+      foundLonger = true;
+      chosen.push(nearest.root);
+      continue;
+    }
     const longer: string[] = [];
     for (const stem of stems) {
       if (contentMatch(root, stem) === "letter") {
@@ -72,13 +95,16 @@ export function mappedResumeRoots(
       antecedentRoots[index] ??
       root;
     const mapped = map.get(matched) ?? matched;
-    return contentMatch(root, matched) === "letter" ? letterPrefix(mapped) : mapped;
+    // Keep the resume's kind. A two-syllable root's short cut is the whole root (`eje` → `vejer`),
+    // so test the cut, not equality: the rebuilt short resume is cut from the new root.
+    return root === letterPrefix(matched) ? letterPrefix(mapped) : mapped;
   });
 }
 
 export function resumeAntecedentRoots(
   pronounRoots: readonly string[],
   scope: ResumeScope | undefined,
+  raw?: string,
 ): string[] | null {
   if (!scope) {
     return null;
@@ -86,7 +112,12 @@ export function resumeAntecedentRoots(
   if (scope.boundAntecedentRoots && scope.boundAntecedentRoots.length > 0) {
     return [...scope.boundAntecedentRoots];
   }
-  return pickResumeAntecedent(pronounRoots, scope.stems);
+  const bound = raw ? scope.boundFor?.(raw) : undefined;
+  if (bound && bound.length > 0) {
+    return [...bound];
+  }
+  const near = scope.occurrences && scope.at !== undefined ? { occurrences: scope.occurrences, at: scope.at } : undefined;
+  return pickResumeAntecedent(pronounRoots, scope.stems, near);
 }
 
 export function isContentResume(word: MorphWord): boolean {

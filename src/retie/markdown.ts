@@ -6,22 +6,30 @@
 import {
   classifyAgalanSpan,
   decodeEntities,
+  ENGLISH_IN_CODE,
   HTML_CODE_RE,
+  isAgalanLintCandidate,
   LINT_MARKER_RE,
   SPOKEN_OPAQUE_RE,
 } from "../lint/agalan-docs.js";
 import { fillSelf } from "../learner-name.js";
 import type { ClassifyTables } from "../parse/classify.js";
 import {
-  collectContentStems,
+  collectStemOccurrences,
   forEachPlainChunk,
   peelChunk,
   resumeRewrite,
   rewritePlainTokens,
   transformMarkdown,
   type CodeSpanMeta,
+  type CoreRewrite,
   type RetieChange,
 } from "./tokens.js";
+import { loadDefaultTables, parse } from "../parse/index.js";
+import { extractMorphPairs } from "../lint/morph-gloss-docs.js";
+import { morphPairsMatching, reglossMarkdown, type ReglossEdit } from "../regloss.js";
+import { lengthenCollidingResumes } from "./binds.js";
+import { followPairs, followProse, mergeFollowPairs, type FollowPairs } from "./follow.js";
 import { retieCore } from "./rebuild.js";
 
 export type RetieReview = {
@@ -44,6 +52,21 @@ export type RetieMarkdownResult = {
   changes: RetieChange[];
   reviews: RetieReview[];
   spans: RetiedSpan[];
+  /** English names and quoted payloads rewritten after their Agalan. */
+  followChanges: RetieChange[];
+  /** Name / payload pairs this page's code changes imply (for other pages that mention them). */
+  followPairs: FollowPairs;
+  /** Morph lines that matched the parser before the retie, regenerated after it. */
+  reglossEdits: ReglossEdit[];
+};
+
+export type RewriteOptions = {
+  /** Pairs from other pages (a house-cast name in prose where this page has no code for it). */
+  follow?: FollowPairs;
+  /** Common English words: never retied word by word inside a line that is not a whole Agalan span. */
+  english?: ReadonlySet<string>;
+  /** Leave names, quoted payloads and morph lines for the caller's `finishFollow` (after every page is read). */
+  deferFollow?: boolean;
 };
 
 const REWRITE_CLASSES = new Set(["sentence", "phrase", "word", "template"]);
@@ -53,11 +76,24 @@ export function rewriteMarkdown(
   input: string,
   map: ReadonlyMap<string, string>,
   tables?: ClassifyTables,
+  options: RewriteOptions = {},
 ): RetieMarkdownResult {
-  const stems = collectContentStems(input);
+  const occurrences = collectStemOccurrences(input);
+  const stems = new Set(occurrences.map((o) => o.root));
   const changes: RetieChange[] = [];
   const reviews: RetieReview[] = [];
   const spans: RetiedSpan[] = [];
+
+  const parseTables = tables ?? loadDefaultTables();
+  const english = options.english ?? ENGLISH_IN_CODE;
+  const parses = (text: string): boolean => {
+    try {
+      parse(text.trim(), parseTables);
+      return true;
+    } catch {
+      return false;
+    }
+  };
 
   const wouldChange = (text: string): boolean => {
     const probe: RetieChange[] = [];
@@ -66,7 +102,18 @@ export function rewriteMarkdown(
   };
 
   const rewriteAgalan = (text: string, index: number, cls: string): string => {
-    const rewrite = resumeRewrite(map, stems, text, tables);
+    const base = resumeRewrite(map, stems, text, tables, occurrences);
+    // A template or fragment can cut a word before its ending (`gonogotha…`): retie it with a filler ending.
+    const rewrite: CoreRewrite =
+      cls === "template" || cls === "marked-fragment"
+        ? (core, at) => {
+            const direct = base(core, at);
+            const cut = /^([a-z]+)(…?)$/.exec(core);
+            if (direct != null || !cut) return direct;
+            const filled = base(`${cut[1]}l`, at);
+            return filled?.endsWith("l") ? `${filled.slice(0, -1)}${cut[2]}` : null;
+          }
+        : base;
     let out = "";
     let at = 0;
     // A spoken opaque span's interior is foreign text, not Agalan words.
@@ -78,6 +125,14 @@ export function rewriteMarkdown(
       at = innerEnd;
     }
     out += rewritePlainTokens(text.slice(at), rewrite, index + at, changes);
+    if (out !== text && /[a-z]r\b/.test(out)) {
+      const fixed = lengthenCollidingResumes(text, out, map, parseTables);
+      for (const { from, to } of fixed.lengthened) {
+        changes.push({ from, to, index });
+        reviews.push({ text: to, index, reason: `short resume ${from} would bind another word after the retie; lengthened to a full-root resume` });
+      }
+      out = fixed.text;
+    }
     if (out !== text) {
       spans.push({ before: text, after: out, index, cls });
     }
@@ -94,16 +149,28 @@ export function rewriteMarkdown(
       return rewriteAgalan(text, index, cls);
     }
     if (wouldChange(text)) {
+      // The doc lint checks every word in code that looks like Agalan, whatever the line is,
+      // so those words must move with the lexicon. Other words stay; the line is reviewed.
+      const before = changes.length;
+      const out = rewritePlainTokens(
+        text,
+        (core, at) =>
+          isAgalanLintCandidate(core) && !english.has(core) ? retieCore(core, map, { stems, occurrences, at }) : null,
+        index,
+        changes,
+      );
       reviews.push({
         text,
         index,
-        reason:
+        reason: `${
           cls === "unclassified"
-            ? "mixes Agalan and other words; not retied"
+            ? "mixes Agalan and other words"
             : onlyReadsAsAgalan
-              ? "text-fence line with an old root; not retied"
-              : "reads as English but holds an old root; not retied",
+              ? "text-fence line that is not a whole Agalan span"
+              : "reads as English"
+        }; ${changes.length > before ? "retied word by word, check the English around it" : "holds an old root, not retied"}`,
       });
+      return out;
     }
     return text;
   };
@@ -129,7 +196,7 @@ export function rewriteMarkdown(
       const info = meta.info.split(/\s+/)[0] ?? "";
       if (info === "markdown" || info === "md") {
         // Example Markdown shown as source: retie it as a page of its own.
-        const inner = rewriteMarkdown(text, map, tables);
+        const inner = rewriteMarkdown(text, map, tables, options);
         for (const change of inner.changes) changes.push({ ...change, index: change.index + index });
         for (const review of inner.reviews) reviews.push({ ...review, index: review.index + index });
         for (const span of inner.spans) spans.push({ ...span, index: span.index + index });
@@ -147,15 +214,17 @@ export function rewriteMarkdown(
     return REWRITE_CLASSES.has(cls) ? rewriteAgalan(body, index, cls) : rewriteLine(body, index);
   };
 
-  /** Prose: an emphasised run that reads as Agalan (`*zazawan vawalal.*`) reties as a span. */
+  /** Prose: an emphasised multi-word run that parses as an Agalan sentence or phrase (`*zazawan vawalal.*`) reties as a span. */
   const proseTokens = (text: string, index: number): string => {
     let out = "";
     let at = 0;
     for (const match of text.matchAll(/(?<!\*)\*([^*\n]+)\*(?!\*)/g)) {
       const inner = match[1]!;
-      if (!/\s/.test(inner.trim())) continue; // one word: handled as a citation below
+      if (!/\s/.test(inner.trim())) continue; // one word: never retied (proseWords)
       const cls = classifyAgalanSpan(fillSelf(inner));
       if (cls !== "sentence" && cls !== "phrase") continue;
+      // Classification is by shape: *even though* and *over there* are phrase-shaped English.
+      if (!parses(fillSelf(inner))) continue;
       const innerStart = match.index! + 1;
       out += proseWords(text.slice(at, innerStart), index + at);
       out += rewriteAgalan(inner, index + innerStart, cls);
@@ -164,19 +233,25 @@ export function rewriteMarkdown(
     return out + proseWords(text.slice(at), index + at);
   };
 
-  /** Prose words: only emphasised citations (`*azawa*`) retie; other hits are reported. */
+  /**
+   * Prose words are never retied. A lone word cannot be told from English (*one*, *here*,
+   * *bone* all fit the root shape), and emphasis in prose is English glosses; Agalan in
+   * prose is in code. Hits are reported for review.
+   */
   const proseWords = (text: string, index: number): string =>
     forEachPlainChunk(text, index, (chunk, chunkIndex) => {
-      const { prefix, core, suffix } = peelChunk(chunk);
+      const { prefix, core } = peelChunk(chunk);
       if (!core) return chunk;
       const next = retieCore(core, map, { stems });
       if (next == null || next === core) return chunk;
-      if (!prefix.includes("*")) {
-        reviews.push({ text: chunk, index: chunkIndex, reason: "prose word matches an old root; not retied" });
-        return chunk;
-      }
-      changes.push({ from: core, to: next, index: chunkIndex + prefix.length });
-      return `${prefix}${next}${suffix}`;
+      reviews.push({
+        text: chunk,
+        index: chunkIndex,
+        reason: prefix.includes("*")
+          ? "emphasised prose word matches an old root; read as English, not retied"
+          : "prose word matches an old root; not retied",
+      });
+      return chunk;
     });
 
   // HTML `<code>` bodies can hold `[`, which the Markdown walk would read as a link start,
@@ -191,7 +266,35 @@ export function rewriteMarkdown(
     at = bodyStart + match[1]!.length;
   }
   text += transformMarkdown(input.slice(at), at, code, proseTokens);
-  return { text, changes, reviews, spans };
+
+  const pagePairs = followPairs(changes, parseTables);
+  const result = { text, changes, reviews, spans, followChanges: [], followPairs: pagePairs, reglossEdits: [] };
+  if (options.deferFollow) return result;
+  return finishFollow(input, result, options.follow ? mergeFollowPairs(pagePairs, options.follow) : pagePairs, parseTables);
+}
+
+/**
+ * English copies of changed spellings (names, quoted payloads), then morph lines that matched
+ * the parser before the retie. Run once per page: a second pass would chain name pairs.
+ */
+export function finishFollow(
+  input: string,
+  result: RetieMarkdownResult,
+  pairs: FollowPairs,
+  tables: ClassifyTables = loadDefaultTables(),
+): RetieMarkdownResult {
+  const followed = followProse(result.text, pairs);
+  let text = followed.text;
+  let reglossEdits: ReglossEdit[] = [];
+  if (result.changes.length > 0 || followed.changes.length > 0) {
+    const matchedBefore = morphPairsMatching(input, tables);
+    if (extractMorphPairs(text).length === matchedBefore.length) {
+      const regloss = reglossMarkdown(text, tables, (_pair, i) => matchedBefore[i] === true);
+      text = regloss.text;
+      reglossEdits = regloss.edits;
+    }
+  }
+  return { ...result, text, followChanges: followed.changes, reglossEdits };
 }
 
 /** Whether `index` falls inside a fenced block (odd number of fence lines before it). */

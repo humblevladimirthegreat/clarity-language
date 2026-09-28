@@ -134,7 +134,7 @@ function contentRootsAfterResume(
   scope: ResumeScope | undefined,
 ): string[] {
   if (isContentResume(word)) {
-    const antecedents = resumeAntecedentRoots(roots, scope);
+    const antecedents = resumeAntecedentRoots(roots, scope, word.raw);
     if (antecedents) {
       return mappedResumeRoots(roots, antecedents, map);
     }
@@ -178,9 +178,14 @@ function rewriteSpanPayload(
         end += 1;
       }
     }
-    const chunk = payload.slice(i, end);
-    const nested = scope ? { stems: scope.stems } : undefined;
-    out += retieCore(chunk, map, nested) ?? chunk;
+    let chunk = payload.slice(i, end);
+    // An editorial close (`#]`, `#|]`) leaves its `#` / `#|` at the end of the payload.
+    const editorial = /#\|?$/.exec(chunk)?.[0] ?? "";
+    chunk = chunk.slice(0, chunk.length - editorial.length);
+    const nested = scope
+      ? { stems: scope.stems, boundFor: scope.boundFor, occurrences: scope.occurrences, at: scope.at }
+      : undefined;
+    out += (retieCore(chunk, map, nested) ?? chunk) + editorial;
     i = end;
   }
   return out;
