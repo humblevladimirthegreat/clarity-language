@@ -25,7 +25,7 @@ export type Weights = {
 /** Tuned against tmp/echo-pron/ratings.csv (ρ 0.73 → 0.78): codas stay below onsets (editor), stronger decay, vowels halved. */
 export const WEIGHTS: Weights = { start: 3, stressOnset: 2, onset: 1, coda: 0.75, decay: 0.4, vStress: 0.5, vOther: 0.25 };
 
-/** A phoneme with its Agalan letter and its role in the metric. */
+/** A phoneme with its Agazan letter and its role in the metric. */
 type Seg = { letter: string; vowel: boolean; kind: "start" | "stressOnset" | "onset" | "coda" | "vStress" | "vOther" | "schwa" };
 
 /** Word-initial consonant clusters found at the start of ≥ 20 CMU words (drops loans such as *ts-*, *vl-*). */

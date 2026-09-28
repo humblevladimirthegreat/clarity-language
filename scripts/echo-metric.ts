@@ -26,11 +26,11 @@ if (import.meta.main) {
     .sort((a, b) => a.score - b.score);
   const csv = (rows: Record<string, string | number>[], cols: string[]) =>
     [cols.join(','), ...rows.map((r) => cols.map((c) => escapeCsvField(String(r[c] ?? ''))).join(','))].join('\n') + '\n';
-  writeFileSync(`${OUT}/metric.csv`, csv(scored.map((r) => ({ ...r, score: r.score.toFixed(3) })), ['emoji', 'concrete', 'root', 'agalan', 'score']));
+  writeFileSync(`${OUT}/metric.csv`, csv(scored.map((r) => ({ ...r, score: r.score.toFixed(3) })), ['emoji', 'concrete', 'root', 'agazan', 'score']));
 
   const mean = (xs: number[]) => xs.reduce((a, b) => a + b, 0) / (xs.length || 1);
   const band = (lo: number, hi: number) => scored.filter((r) => r.score >= lo && r.score < hi).length;
-  const line = (r: (typeof scored)[number]) => `| ${r.emoji} | ${r.concrete} | \`${r.root}\` | ${r.agalan} | ${r.score.toFixed(2)} |`;
+  const line = (r: (typeof scored)[number]) => `| ${r.emoji} | ${r.concrete} | \`${r.root}\` | ${r.agazan} | ${r.score.toFixed(2)} |`;
   const table = ['| | concrete | root | sounds | echo |', '|---|---|---|---|---|'];
   writeFileSync(`${OUT}/metric.md`, [
     '# Echo metric (pronunciation)', '',
@@ -51,7 +51,7 @@ if (import.meta.main) {
     const picked = new Set(scored.filter((r) => traps.includes(r.concrete)));
     for (let i = 0; picked.size < 50; i++) picked.add(scored[Math.round((i * 37) % scored.length)]);
     writeFileSync(RATINGS, csv([...picked].sort((a, b) => a.concrete.localeCompare(b.concrete))
-      .map((r) => ({ ...r, rating: '', note: '' })), ['emoji', 'concrete', 'root', 'agalan', 'rating', 'note']));
+      .map((r) => ({ ...r, rating: '', note: '' })), ['emoji', 'concrete', 'root', 'agazan', 'rating', 'note']));
     console.log(`drafted ${RATINGS}: fill rating 0–3 (0 = no echo, 3 = obvious echo)`);
   }
 

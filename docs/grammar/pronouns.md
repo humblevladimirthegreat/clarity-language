@@ -17,7 +17,7 @@ After you have already named a person or thing, the next sentence can point back
 >
 > "Azawan walks. Azawan sits." (resume from the name’s root prefix)
 
-**Compare with:** English often uses *the* for a kind already in the talk (*A dog walks. **The** dog sits.*). Agalan uses **-r** for that job, not a separate article.
+**Compare with:** English often uses *the* for a kind already in the talk (*A dog walks. **The** dog sits.*). Agazan uses **-r** for that job, not a separate article.
 
 > `zodogal vowogal. zodor vehahel.`
 >
@@ -97,7 +97,7 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 >
 > "Someone sleeps."
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`amun`** | speaker in this conversation (`zamun` in subject slot) | *I* | `amul` *microphone* | 🎤: the live voice of the person talking |
 | **`ohen`** | listener in this conversation (`zohen` / `dohen` in clause) | *you* | `ohel` *headphones* | 🎧: the one receiving the sound |
@@ -114,7 +114,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
+| English | Agazan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
 | *Alahen* | `alahen` | | |
@@ -131,7 +131,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *interlocutors* | `ohan` | `ohal` *handshake* | 🤝: sharing the floor together |
 | *someone* | `onun` | `onul` *neutral* | 😐: not a particular person |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *Azawan pours. They cook.*
 
@@ -197,7 +197,7 @@ z-Azawan | d-speaker | v-punch
 z-someone | d-Ahaben | v-punch
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zalahen vugugal. zalar vobohel.`
 
@@ -277,7 +277,7 @@ y-question | z-speaker | v-cook
 
 Beginner already used content **-r** in the same slot as the earlier word (*he sits*). Keep that letter match; English wording follows the slot.
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `/z/` … `-r` after `/z/` | same subject again | *he / she / it / they*; *that one* |
 | `/d/` … `-r` after `/d/` | same object again | *him / her / it / them*; *that one* |
@@ -328,7 +328,7 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 >
 > "Azawan sits. Alahen does the same with Azawan."
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | noun antecedent, `/v/` … `-r` | the same action again, now involving that entity | *do the same to / with it* |
 | noun antecedent, `/ɡ/` … `-r` | recast as kind | *of that kind* (not possession) |
@@ -379,7 +379,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
+| English | Agazan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
 | *Alahen* | `alahen` | | |
@@ -399,7 +399,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *interlocutors* | `ohan` | `ohal` *handshake* | 🤝: sharing the floor together |
 | *listener* | `ohen` | `ohel` *headphones* | 🎧: the one receiving the sound |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *Alahen pours. Azawan does so.*
 
@@ -465,7 +465,7 @@ z-interlocutors | v-harvest
 z-Azawan-x | v-punch
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zazawan vobohel. zalahen vobor.`
 

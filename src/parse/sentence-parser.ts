@@ -122,7 +122,7 @@ function isNumberToken(token: IToken): boolean {
   return token.tokenType === G && (word?.family.kind === "number" || word?.reading === "number");
 }
 
-function laAfterW(parser: AgelanSentenceParser, from = 1): number {
+function laAfterW(parser: AgazanSentenceParser, from = 1): number {
   let i = from;
   while (true) {
     const tok = parser.lookahead(i);
@@ -136,14 +136,14 @@ function laAfterW(parser: AgelanSentenceParser, from = 1): number {
   }
 }
 
-function isNpSlotLookahead(parser: AgelanSentenceParser, slot: NpSlot): boolean {
+function isNpSlotLookahead(parser: AgazanSentenceParser, slot: NpSlot): boolean {
   if (npSlot(parser.lookahead(1)) === slot) return true;
   if (isGlHead(parser.lookahead(1)) && npSlot(parser.lookahead(2)) === slot) return true;
   const i = laAfterW(parser);
   return isGlHead(parser.lookahead(i)) && npSlot(parser.lookahead(i + 1)) === slot;
 }
 
-class AgelanSentenceParser extends CstParser {
+class AgazanSentenceParser extends CstParser {
   public lookahead(index: number): IToken {
     return this.LA(index);
   }
@@ -767,7 +767,7 @@ class AgelanSentenceParser extends CstParser {
   });
 }
 
-const parserInstance = new AgelanSentenceParser();
+const parserInstance = new AgazanSentenceParser();
 let lastCst: CstNode | undefined;
 
 function punctFromToken(token: IToken): PunctKind {
@@ -960,7 +960,7 @@ function childNodes(parent: CstNode, key: string): CstNode[] {
 }
 
 /** Hosted `/b/` continues as a join: zero or more further `/b/` words, then a `/b/` join word. */
-function boundJoinAhead(parser: AgelanSentenceParser): boolean {
+function boundJoinAhead(parser: AgazanSentenceParser): boolean {
   let i = 1;
   while (parser.lookahead(i).tokenType === B) i++;
   return parser.lookahead(i).tokenType === JoinB;
@@ -1470,6 +1470,6 @@ export function parseSentenceTokensWithCst(tokens: IToken[]): { result: ParseRes
 }
 
 /** Grammar productions keyed by rule name (the sentence-layer construction inventory). */
-export function sentenceGrammar(): ReturnType<AgelanSentenceParser["getGAstProductions"]> {
+export function sentenceGrammar(): ReturnType<AgazanSentenceParser["getGAstProductions"]> {
   return parserInstance.getGAstProductions();
 }

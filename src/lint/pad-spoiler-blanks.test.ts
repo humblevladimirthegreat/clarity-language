@@ -18,7 +18,7 @@ z-Azawan | v-sit
     assert.match(out, /z-Azawan \| v-sit\n\n\*Azawan sits\.\*/);
   });
 
-  it("inserts blank between Agalan and morph in details", () => {
+  it("inserts blank between Agazan and morph in details", () => {
     const md = `### Translation practice
 
 ::: details Show answer

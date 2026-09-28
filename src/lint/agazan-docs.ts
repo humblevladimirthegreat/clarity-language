@@ -17,16 +17,16 @@ import { traceFragment, traceTemplate } from "./template-trace.js";
 import { forEachMarkdownCodeSpan, forEachMarkdownCodeToken, type MarkdownCodeSpan } from "../retie/tokens.js";
 import { isClarityRootShape } from "../root-shape.js";
 
-export type AgalanLintKind = "parse" | "unknown-root";
+export type AgazanLintKind = "parse" | "unknown-root";
 
-export type AgalanLintIssue = {
+export type AgazanLintIssue = {
   token: string;
   index: number;
-  kind: AgalanLintKind;
+  kind: AgazanLintKind;
   detail: string;
 };
 
-/** Letters, digits, and morph glyphs that can appear in a spelled Agalan word. */
+/** Letters, digits, and morph glyphs that can appear in a spelled Agazan word. */
 const WORD_CHAR_RE = /^[aeouhtwdjybgzmnvlrx0-9+\-#_.,=@~%±[\]{}()]+$/;
 
 const TEACHING_GLOSS_RE = /^(?:th|[zdbvgwhxy])-(?:[a-z@]+$|[<[{(])/;
@@ -34,7 +34,7 @@ const TEACHING_GLOSS_RE = /^(?:th|[zdbvgwhxy])-(?:[a-z@]+$|[<[{(])/;
 /** Mid-word x family fragments (`x`, `xa`, `ax`), not full words. */
 const X_FRAGMENT_RE = /^[aeou]?x[aeou]?$/;
 
-/** English that can appear in grammar backticks and also look Agalan-shaped. */
+/** English that can appear in grammar backticks and also look Agazan-shaped. */
 export const ENGLISH_IN_CODE = new Set([
   "are",
   "bare",
@@ -91,7 +91,7 @@ function prefixedBareRoot(core: string): string | null {
  * English in backticks (`and`, `would`, `dog`) does not match.
  */
 /** `j` standing where `y` would make a native word (`jal`, `agaja`). Payloads `<…>` keep their own spelling. */
-function nativeJIsAgalan(core: string): boolean {
+function nativeJIsAgazan(core: string): boolean {
   if (!withoutForeignPayloads(core).includes("j")) return false;
   const asY = core.replace(/<[^>]*>|j/g, (m) => (m === "j" ? "y" : m));
   try {
@@ -112,7 +112,7 @@ function looksLikeFullSpelledWord(core: string): boolean {
 }
 
 /** Full-word candidate: skip fragments, IPA, slash PoS, teaching glosses, placeholders. */
-export function isAgalanLintCandidate(core: string): boolean {
+export function isAgazanLintCandidate(core: string): boolean {
   if (!core) return false;
   if (core.includes("/")) return false;
   if (core.startsWith("-")) return false;
@@ -129,16 +129,16 @@ export function isAgalanLintCandidate(core: string): boolean {
   return true;
 }
 
-export function lintAgalanToken(
+export function lintAgazanToken(
   core: string,
   tables: ClassifyTables,
   known: ReadonlySet<string> = knownLexiconRoots(tables),
   resumeStems: ReadonlySet<string> = new Set(),
-): { kind: AgalanLintKind; detail: string } | null {
-  if (!isAgalanLintCandidate(core)) {
+): { kind: AgazanLintKind; detail: string } | null {
+  if (!isAgazanLintCandidate(core)) {
     return null;
   }
-  if (nativeJIsAgalan(core)) {
+  if (nativeJIsAgazan(core)) {
     return { kind: "parse", detail: "`j` is not a letter; write `y`" };
   }
 
@@ -182,9 +182,9 @@ export function lintAgalanToken(
   return null;
 }
 
-export function lintAgalanMarkdown(text: string, tables: ClassifyTables): AgalanLintIssue[] {
+export function lintAgazanMarkdown(text: string, tables: ClassifyTables): AgazanLintIssue[] {
   const known = knownLexiconRoots(tables);
-  const issues: AgalanLintIssue[] = [];
+  const issues: AgazanLintIssue[] = [];
 
   let currentBlock = -1;
   let resumeStems = new Set<string>();
@@ -198,7 +198,7 @@ export function lintAgalanMarkdown(text: string, tables: ClassifyTables): Agalan
     if (!core) {
       return;
     }
-    const hit = lintAgalanToken(core, tables, known, resumeStems);
+    const hit = lintAgazanToken(core, tables, known, resumeStems);
     collectResumeStems(core, known, resumeStems);
     if (!hit) {
       return;
@@ -218,7 +218,7 @@ export function lintAgalanMarkdown(text: string, tables: ClassifyTables): Agalan
     for (const chunk of match[1]!.matchAll(/\S+/g)) {
       const { prefix, core } = peelLintChunk(decodeEntities(chunk[0]));
       if (!core) continue;
-      const hit = lintAgalanToken(core, tables, known, htmlStems);
+      const hit = lintAgazanToken(core, tables, known, htmlStems);
       collectResumeStems(core, known, htmlStems);
       if (hit) issues.push({ token: core, index: base + chunk.index! + prefix.length, ...hit });
     }
@@ -233,7 +233,7 @@ function hasOverlay(word: Parameters<typeof classify>[0], tables: ClassifyTables
 
 /** Short-resume stems of known content roots in `core` ([pronouns.md](docs/grammar/pronouns.md)). */
 function collectResumeStems(core: string, known: ReadonlySet<string>, into: Set<string>): void {
-  if (!isAgalanLintCandidate(core)) return;
+  if (!isAgazanLintCandidate(core)) return;
   let word;
   try {
     word = parseWord(core);
@@ -246,22 +246,22 @@ function collectResumeStems(core: string, known: ReadonlySet<string>, into: Set<
 }
 
 /**
- * Whole-span checks ([grammar-docs.md § Marking Agalan](../../docs/meta/grammar-docs.md#marking-agalan)).
+ * Whole-span checks ([grammar-docs.md § Marking Agazan](../../docs/meta/grammar-docs.md#marking-agazan)).
  *
  * Every code span gets exactly one class, and no class skips silently:
- * - **sentence**: ends in `.` / `?` / `!` and starts with an Agalan word → must parse as a sentence.
- * - **phrase**: two or more words, all Agalan-shaped, no final mark → must parse (or be marked a fragment).
+ * - **sentence**: ends in `.` / `?` / `!` and starts with an Agazan word → must parse as a sentence.
+ * - **phrase**: two or more words, all Agazan-shaped, no final mark → must parse (or be marked a fragment).
  * - **template**: has `…` / `...` or an all-caps placeholder (`A am B`, `DIR th ANCHOR`) → slots are filled
  *   with sample words and it must parse ([template-trace.ts](template-trace.ts)).
- * - **word**: one word → the per-word lint ({@link lintAgalanMarkdown}) covers it.
- * - **english**: no Agalan-shaped word at all (placeholders alone, like `ROOT` or `NUM`, count as English).
+ * - **word**: one word → the per-word lint ({@link lintAgazanMarkdown}) covers it.
+ * - **english**: no Agazan-shaped word at all (placeholders alone, like `ROOT` or `NUM`, count as English).
  * - **marked-fragment**: `<!-- lint: fragment -->` right before the span → parsed with context supplied
  *   around it. `<!-- lint: skip -->` is not allowed.
- * Anything else (Agalan and non-Agalan words mixed, no final mark) is **unclassified** and fails.
- * Fenced blocks need an info string: `agalan` (each line is checked like a span) or `text` (notation,
- * not Agalan: a line that reads as an Agalan phrase or sentence fails).
+ * Anything else (Agazan and non-Agazan words mixed, no final mark) is **unclassified** and fails.
+ * Fenced blocks need an info string: `agazan` (each line is checked like a span) or `text` (notation,
+ * not Agazan: a line that reads as an Agazan phrase or sentence fails).
  */
-export type AgalanSpanClass =
+export type AgazanSpanClass =
   | "sentence"
   | "phrase"
   | "template"
@@ -270,26 +270,26 @@ export type AgalanSpanClass =
   | "marked-fragment"
   | "text-fence";
 
-export type AgalanSpanIssueKind =
+export type AgazanSpanIssueKind =
   | "sentence"
   | "phrase"
   | "template"
   | "fragment"
   | "unclassified"
   | "unmarked-fence"
-  | "agalan-in-text-fence"
+  | "agazan-in-text-fence"
   | "bad-marker";
 
-export type AgalanSpanIssue = {
+export type AgazanSpanIssue = {
   text: string;
   index: number;
-  kind: AgalanSpanIssueKind;
+  kind: AgazanSpanIssueKind;
   detail: string;
 };
 
-export type AgalanSpanStats = Record<AgalanSpanClass, number>;
+export type AgazanSpanStats = Record<AgazanSpanClass, number>;
 
-export function emptySpanStats(): AgalanSpanStats {
+export function emptySpanStats(): AgazanSpanStats {
   return {
     sentence: 0,
     phrase: 0,
@@ -314,24 +314,24 @@ function spanWords(text: string): string[] {
     .filter((core) => core && !SPAN_NEUTRAL.has(core));
 }
 
-/** Class of one span (or one line of an `agalan` fence), before parsing. */
-/** A spoken opaque span (`duxal … xuxul`): its interior is foreign, not Agalan words. */
+/** Class of one span (or one line of an `agazan` fence), before parsing. */
+/** A spoken opaque span (`duxal … xuxul`): its interior is foreign, not Agazan words. */
 export const SPOKEN_OPAQUE_RE = /(\b(?:th|[zdbvgwhxy])ux[ae][lmn]\s)[\s\S]*?(\sxuxu[lmr]\b)/g;
 
-export function classifyAgalanSpan(text: string): AgalanSpanClass | "unclassified" {
+export function classifyAgazanSpan(text: string): AgazanSpanClass | "unclassified" {
   const trimmed = text.trim().replace(SPOKEN_OPAQUE_RE, "$1$2");
   const words = spanWords(trimmed);
   if (words.length === 0) return "english";
-  const agalan = words.filter(isAgalanLintCandidate);
-  if (/[.?!]$/.test(trimmed) && isAgalanLintCandidate(words[0]!)) return "sentence";
+  const agazan = words.filter(isAgazanLintCandidate);
+  if (/[.?!]$/.test(trimmed) && isAgazanLintCandidate(words[0]!)) return "sentence";
   if (/…|\.\.\./.test(trimmed) || words.some((w) => PLACEHOLDER_RE.test(w))) {
-    // Placeholders alone (`ROOT`, `NUM`, `…`) name a slot, with no Agalan to trace.
+    // Placeholders alone (`ROOT`, `NUM`, `…`) name a slot, with no Agazan to trace.
     const rest = trimmed.replace(/…|\.\.\.|[A-Z][A-Z0-9₀-₉]*/g, "");
     return /[a-z]/.test(rest) ? "template" : "english";
   }
-  if (agalan.length === 0) return "english";
+  if (agazan.length === 0) return "english";
   if (words.length === 1) return "word";
-  if (agalan.length === words.length) return "phrase";
+  if (agazan.length === words.length) return "phrase";
   return "unclassified";
 }
 
@@ -352,17 +352,17 @@ function lintSpanText(
   text: string,
   index: number,
   tables: ClassifyTables,
-  stats: AgalanSpanStats,
-  issues: AgalanSpanIssue[],
+  stats: AgazanSpanStats,
+  issues: AgazanSpanIssue[],
   used?: ConstructionSink,
 ): void {
-  const cls = classifyAgalanSpan(text);
+  const cls = classifyAgazanSpan(text);
   if (cls === "unclassified") {
     issues.push({
       text,
       index,
       kind: "unclassified",
-      detail: "mixes Agalan and other words; fix it, or mark it <!-- lint: fragment -->",
+      detail: "mixes Agazan and other words; fix it, or mark it <!-- lint: fragment -->",
     });
     return;
   }
@@ -392,7 +392,7 @@ function lintTraced(
   index: number,
   kind: "template" | "fragment",
   trace: () => string[],
-  issues: AgalanSpanIssue[],
+  issues: AgazanSpanIssue[],
   used?: ConstructionSink,
 ): void {
   try {
@@ -411,7 +411,7 @@ export function decodeEntities(text: string): string {
 /** A single-word span exercises its word-level and slot constructions (`word.*`, `token.*`). */
 function addWordSpanConstructions(text: string, index: number, tables: ClassifyTables, used: ConstructionSink): void {
   const { core } = peelLintChunk(text.trim());
-  if (!isAgalanLintCandidate(core)) return;
+  if (!isAgazanLintCandidate(core)) return;
   try {
     const word = classify(parseWord(core), tables);
     used(`token.${classifyTokenBranch(word).branch}`, index);
@@ -421,20 +421,20 @@ function addWordSpanConstructions(text: string, index: number, tables: ClassifyT
   }
 }
 
-/** How {@link walkAgalanSpans} hands out a page's code spans. */
-export type AgalanSpanVisitor = {
-  /** Span text the lint checks as Agalan: inline spans, `agalan` fence lines, and `<code>` bodies. */
+/** How {@link walkAgazanSpans} hands out a page's code spans. */
+export type AgazanSpanVisitor = {
+  /** Span text the lint checks as Agazan: inline spans, `agazan` fence lines, and `<code>` bodies. */
   text: (text: string, index: number) => void;
   /** A span preceded by a `<!-- lint: … -->` marker (`marker` is the text after `lint:`, or undefined if malformed). */
   marked?: (span: MarkdownCodeSpan, marker: string | undefined) => void;
-  /** A fence with a non-`agalan` info string. */
+  /** A fence with a non-`agazan` info string. */
   otherFence?: (span: MarkdownCodeSpan) => void;
   /** A fence with no info string. */
   unmarkedFence?: (span: MarkdownCodeSpan) => void;
 };
 
 /** Walk a page's code spans the way the docs lint reads them. */
-export function walkAgalanSpans(text: string, visit: AgalanSpanVisitor): void {
+export function walkAgazanSpans(text: string, visit: AgazanSpanVisitor): void {
   forEachMarkdownCodeSpan(text, (span) => {
     if (span.marker?.startsWith("lint:")) {
       visit.marked?.(span, LINT_MARKER_RE.exec(span.marker)?.[1]);
@@ -442,7 +442,7 @@ export function walkAgalanSpans(text: string, visit: AgalanSpanVisitor): void {
     }
     if (span.kind === "fence") {
       const info = span.info.split(/\s+/)[0] ?? "";
-      if (info === "agalan") {
+      if (info === "agazan") {
         let offset = 0;
         for (const line of span.text.split("\n")) {
           if (line.trim()) visit.text(line, span.index + offset);
@@ -468,15 +468,15 @@ export function walkAgalanSpans(text: string, visit: AgalanSpanVisitor): void {
  * Lint code spans. When `used` is given, it receives the construction IDs
  * ([constructions.ts](../parse/constructions.ts)) the page's examples exercise.
  */
-export function lintAgalanSpans(
+export function lintAgazanSpans(
   text: string,
   tables: ClassifyTables,
-  stats: AgalanSpanStats = emptySpanStats(),
+  stats: AgazanSpanStats = emptySpanStats(),
   used?: ConstructionSink,
-): AgalanSpanIssue[] {
-  const issues: AgalanSpanIssue[] = [];
+): AgazanSpanIssue[] {
+  const issues: AgazanSpanIssue[] = [];
 
-  walkAgalanSpans(text, {
+  walkAgazanSpans(text, {
     text: (body, index) => lintSpanText(body, index, tables, stats, issues, used),
     marked: (span, marker) => {
       if (marker === "fragment") {
@@ -497,13 +497,13 @@ export function lintAgalanSpans(
       stats["text-fence"] += 1;
       let offset = 0;
       for (const line of span.text.split("\n")) {
-        const cls = line.trim() ? classifyAgalanSpan(line) : "english";
+        const cls = line.trim() ? classifyAgazanSpan(line) : "english";
         if (cls === "sentence" || cls === "phrase") {
           issues.push({
             text: line,
             index: span.index + offset,
-            kind: "agalan-in-text-fence",
-            detail: "reads as Agalan; put it in an ```agalan fence",
+            kind: "agazan-in-text-fence",
+            detail: "reads as Agazan; put it in an ```agazan fence",
           });
         }
         offset += line.length + 1;
@@ -514,7 +514,7 @@ export function lintAgalanSpans(
         text: span.text.split("\n")[0] ?? "",
         index: span.index,
         kind: "unmarked-fence",
-        detail: "fenced block needs an info string: ```agalan (checked) or ```text (not Agalan)",
+        detail: "fenced block needs an info string: ```agazan (checked) or ```text (not Agazan)",
       });
     },
   });
@@ -531,7 +531,7 @@ export type BareRootIssue = { text: string; index: number; root: string };
  */
 export function lintBareRoots(text: string, tables: ClassifyTables): BareRootIssue[] {
   const issues: BareRootIssue[] = [];
-  walkAgalanSpans(text, {
+  walkAgazanSpans(text, {
     text: (span, index) => {
       const m = /^(?:th|[zdbvgwhxy])?([aeou][a-z]+)$/.exec(span.trim());
       const root = m?.[1];

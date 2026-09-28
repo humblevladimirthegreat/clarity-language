@@ -6,7 +6,7 @@ import { toSpeechText } from "../tts/plan.js";
  * Pronunciation rows on the number pages (numbers.md, numbers-applied.md,
  * numeric-derivation.md — the last is spelled out, so it rarely needs rows).
  *
- * Every Agalan example line whose speech differs from its writing (shorthand
+ * Every Agazan example line whose speech differs from its writing (shorthand
  * number words) carries a `🔊 *spoken*` row directly underneath. Spoken →
  * written drills put the 🔊 row on the prompt instead. Tables with a written
  * column and a **Spoken** column start each spoken cell with `*spoken*`.
@@ -19,14 +19,14 @@ export const NUMBER_SPEECH_FILES = ["numbers.md", "numbers-applied.md", "numeric
 
 export type NumberSpeechFinding = {
   line: number;
-  agalan: string;
+  agazan: string;
   expected: string;
   documented: string | null;
 };
 
 const ITEM_START_RE = /^\*\*\d+\.\*\*\s*/;
 const SPEECH_ROW_RE = new RegExp(`^${SPEECH_MARK}\\s+\\*([^*]+)\\*`);
-const WRITTEN_COL_RE = /^(?:written|writing|preferred writing|agalan)$/i;
+const WRITTEN_COL_RE = /^(?:written|writing|preferred writing|agazan)$/i;
 const SPOKEN_COL_RE = /^(?:spoken|speech|pronunciation)$/i;
 
 function isNumberWord(word: MorphWord): boolean {
@@ -41,10 +41,10 @@ const BOUNDARY_TEXT: Record<string, string> = {
   bang: "!",
 };
 
-/** Spoken sentence for written Agalan: number shorthand spelled out, other words as written. */
-export function spokenForm(agalan: string): string {
+/** Spoken sentence for written Agazan: number shorthand spelled out, other words as written. */
+export function spokenForm(agazan: string): string {
   let out = "";
-  for (const token of toSpeechText(agalan)) {
+  for (const token of toSpeechText(agazan)) {
     if (token.kind === "boundary") {
       out += BOUNDARY_TEXT[token.tag] ?? "";
       continue;
@@ -55,8 +55,8 @@ export function spokenForm(agalan: string): string {
 }
 
 /** True when the line contains a number word whose speech differs from its writing. */
-export function needsSpeechRow(agalan: string): boolean {
-  return normalize(spokenForm(agalan)) !== normalize(agalan);
+export function needsSpeechRow(agazan: string): boolean {
+  return normalize(spokenForm(agazan)) !== normalize(agazan);
 }
 
 function normalize(text: string): string {
@@ -67,8 +67,8 @@ function stripQuote(line: string): string {
   return line.replace(/^[ \t]*>[ \t]?/, "").trim();
 }
 
-/** Backticked line that is a whole Agalan example (optionally an **N.** prompt). */
-function agalanOnLine(text: string): string | null {
+/** Backticked line that is a whole Agazan example (optionally an **N.** prompt). */
+function agazanOnLine(text: string): string | null {
   const body = text.replace(ITEM_START_RE, "");
   const m = body.match(/^`([^`]+)`\.?$/);
   if (!m) return null;
@@ -98,11 +98,11 @@ export function lintNumberSpeechMarkdown(markdown: string): NumberSpeechFinding[
   /** Answer lines already paired with a 🔊 prompt above them. */
   const paired = new Set<number>();
 
-  const check = (lineIndex: number, agalan: string, documented: string | null): void => {
-    const expected = spokenForm(agalan);
+  const check = (lineIndex: number, agazan: string, documented: string | null): void => {
+    const expected = spokenForm(agazan);
     if (documented != null && normalize(documented) === normalize(expected)) return;
-    if (documented == null && !needsSpeechRow(agalan)) return;
-    findings.push({ line: lineIndex + 1, agalan, expected, documented });
+    if (documented == null && !needsSpeechRow(agazan)) return;
+    findings.push({ line: lineIndex + 1, agazan, expected, documented });
   };
 
   for (let i = 0; i < lines.length; i++) {
@@ -114,15 +114,15 @@ export function lintNumberSpeechMarkdown(markdown: string): NumberSpeechFinding[
     if (inFence) continue;
     const text = stripQuote(raw);
 
-    // Spoken → written prompt: the 🔊 row comes first, the answer's Agalan follows.
+    // Spoken → written prompt: the 🔊 row comes first, the answer's Agazan follows.
     if (ITEM_START_RE.test(text) && speechOnLine(text) != null) {
       const documented = speechOnLine(text)!;
       for (let j = i + 1; j < lines.length; j++) {
         const next = stripQuote(lines[j]!);
         if (isBoundary(next)) break;
-        const agalan = agalanOnLine(next);
-        if (agalan != null) {
-          check(j, agalan, documented);
+        const agazan = agazanOnLine(next);
+        if (agazan != null) {
+          check(j, agazan, documented);
           paired.add(j);
           break;
         }
@@ -130,8 +130,8 @@ export function lintNumberSpeechMarkdown(markdown: string): NumberSpeechFinding[
       continue;
     }
 
-    const agalan = agalanOnLine(text);
-    if (agalan == null || paired.has(i)) continue;
+    const agazan = agazanOnLine(text);
+    if (agazan == null || paired.has(i)) continue;
 
     // The 🔊 row is the next non-blank line in the item (a details opener may sit between).
     let documented: string | null = null;
@@ -141,7 +141,7 @@ export function lintNumberSpeechMarkdown(markdown: string): NumberSpeechFinding[
       documented = speechOnLine(next);
       break;
     }
-    check(i, agalan, documented);
+    check(i, agazan, documented);
   }
 
   findings.push(...lintSpeechTables(lines));
@@ -187,13 +187,13 @@ function lintSpeechTables(lines: string[]): NumberSpeechFinding[] {
     while (i < lines.length && isTableRow(lines[i]!) && !isDividerRow(lines[i]!)) {
       if (writtenCol >= 0 && spokenCol >= 0) {
         const cells = splitRow(lines[i]!);
-        const agalan = singleNumberWord(cells[writtenCol] ?? "");
-        if (agalan != null) {
+        const agazan = singleNumberWord(cells[writtenCol] ?? "");
+        if (agazan != null) {
           const m = (cells[spokenCol] ?? "").match(/^\*([^*]+)\*/);
           const documented = m ? m[1]!.trim() : null;
-          const expected = spokenForm(agalan);
+          const expected = spokenForm(agazan);
           if (documented !== expected) {
-            findings.push({ line: i + 1, agalan, expected, documented });
+            findings.push({ line: i + 1, agazan, expected, documented });
           }
         }
       }
@@ -206,7 +206,7 @@ function lintSpeechTables(lines: string[]): NumberSpeechFinding[] {
 export function formatNumberSpeechFinding(relpath: string, finding: NumberSpeechFinding): string {
   const loc = `${relpath}:${finding.line}`;
   if (finding.documented == null) {
-    return `${loc}  missing pronunciation row  \`${finding.agalan}\`  (expected ${SPEECH_MARK} *${finding.expected}*)`;
+    return `${loc}  missing pronunciation row  \`${finding.agazan}\`  (expected ${SPEECH_MARK} *${finding.expected}*)`;
   }
-  return `${loc}  pronunciation mismatch  \`${finding.agalan}\`  documented *${finding.documented}*, expected *${finding.expected}*`;
+  return `${loc}  pronunciation mismatch  \`${finding.agazan}\`  documented *${finding.documented}*, expected *${finding.expected}*`;
 }

@@ -1,7 +1,7 @@
 {
   "name": "clarity-language",
   "version": "0.1.0",
-  "description": "Agalan tooling — lexicon helpers and agent-facing docs",
+  "description": "Agazan tooling — lexicon helpers and agent-facing docs",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -16,7 +16,7 @@
     "build": "node scripts/build.mjs",
     "dev": "vitepress dev docs/grammar",
     "typecheck": "tsc --noEmit",
-    "lint:agalan": "tsx scripts/lint-agalan-docs.ts",
+    "lint:agazan": "tsx scripts/lint-agazan-docs.ts",
     "docs:publish": "vitepress build docs/grammar && tsx scripts/publish-docs-extras.mjs",
     "docs:preview": "vitepress preview docs/grammar",
     "convert-word": "tsx scripts/convert-word.ts",

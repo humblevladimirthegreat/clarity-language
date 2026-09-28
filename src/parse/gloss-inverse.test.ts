@@ -4,7 +4,7 @@ import { join } from "node:path";
 import { describe, it } from "node:test";
 
 import { extractMorphPairs } from "../lint/morph-gloss-docs.js";
-import { buildGlossIndex, glossToAgalan } from "./gloss-inverse.js";
+import { buildGlossIndex, glossToAgazan } from "./gloss-inverse.js";
 import { loadDefaultTables } from "./index.js";
 import { morphGlossLine } from "./morph-gloss.js";
 
@@ -16,15 +16,15 @@ function docLines(dir: string, into: string[] = []): string[] {
     const path = join(dir, name);
     if (statSync(path).isDirectory()) docLines(path, into);
     else if (path.endsWith(".md")) {
-      for (const pair of extractMorphPairs(readFileSync(path, "utf8"))) into.push(pair.agalan);
+      for (const pair of extractMorphPairs(readFileSync(path, "utf8"))) into.push(pair.agazan);
     }
   }
   return into;
 }
 
 /** Whitespace-only differences (incl. padding inside written brackets) and a final period are not distinct forms. */
-function canonical(agalan: string): string {
-  return agalan
+function canonical(agazan: string): string {
+  return agazan
     .normalize("NFC")
     .trim()
     .replace(/\s+/g, " ")
@@ -36,13 +36,13 @@ function canonical(agalan: string): string {
 const lines = [...new Set(docLines("docs/grammar"))];
 const index = buildGlossIndex(tables, lines);
 
-function roundTrip(agalan: string): string {
-  return glossToAgalan(morphGlossLine(agalan, tables), tables, index);
+function roundTrip(agazan: string): string {
+  return glossToAgazan(morphGlossLine(agazan, tables), tables, index);
 }
 
-describe("glossToAgalan", () => {
+describe("glossToAgazan", () => {
   it("rebuilds each spec example exactly", () => {
-    for (const agalan of [
+    for (const agazan of [
       "dedehel on dagavel.",
       "zodogal gogal bazawan gubuhal.",
       "glogal bazawan zodogal gogal balahen.",
@@ -61,30 +61,30 @@ describe("glossToAgalan", () => {
       "zamunx vowogal.",
       "zazawan vahahol daxal zazar vowogal xuxul. dedehel on dagavel.",
     ]) {
-      assert.equal(canonical(roundTrip(agalan)), canonical(agalan), agalan);
+      assert.equal(canonical(roundTrip(agazan)), canonical(agazan), agazan);
     }
   });
 
   it("round-trips every morph-glossed example in docs/grammar", () => {
     const failures: string[] = [];
-    for (const agalan of lines) {
+    for (const agazan of lines) {
       let gloss: string;
       try {
-        gloss = morphGlossLine(agalan, tables);
+        gloss = morphGlossLine(agazan, tables);
       } catch {
-        continue; // Unknown words are reported by lint:agalan, not here.
+        continue; // Unknown words are reported by lint:agazan, not here.
       }
       try {
-        const back = glossToAgalan(gloss, tables, index);
-        if (canonical(back) !== canonical(agalan)) failures.push(`${agalan} → ${gloss} → ${back}`);
+        const back = glossToAgazan(gloss, tables, index);
+        if (canonical(back) !== canonical(agazan)) failures.push(`${agazan} → ${gloss} → ${back}`);
       } catch (error) {
-        failures.push(`${agalan} → ${gloss} → ${(error as Error).message}`);
+        failures.push(`${agazan} → ${gloss} → ${(error as Error).message}`);
       }
     }
     assert.deepEqual(failures, []);
   });
 
-  it("rejects a gloss no Agalan line produces", () => {
-    assert.throws(() => glossToAgalan("z-dog | v-not-a-real-sense", tables, index));
+  it("rejects a gloss no Agazan line produces", () => {
+    assert.throws(() => glossToAgazan("z-dog | v-not-a-real-sense", tables, index));
   });
 });

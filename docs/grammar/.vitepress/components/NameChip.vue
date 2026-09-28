@@ -3,7 +3,7 @@ import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { OPEN_NAME_HELPER_EVENT, useLearnerName } from '../composables/useLearnerName'
 import NameHelper from './NameHelper.vue'
 
-/** Nav-bar chip: the learner's Agalan name (or a prompt), opening the name helper. */
+/** Nav-bar chip: the learner's Agazan name (or a prompt), opening the name helper. */
 const { chosen } = useLearnerName()
 const open = ref(false)
 const root = ref<HTMLElement | null>(null)
@@ -42,13 +42,13 @@ onBeforeUnmount(() => {
       class="chip"
       :aria-expanded="open"
       aria-controls="name-chip-panel"
-      :title="chosen ? 'Your Agalan name' : 'Choose your Agalan name'"
+      :title="chosen ? 'Your Agazan name' : 'Choose your Agazan name'"
       @click="open = !open"
     >
-      <span v-if="chosen" class="agalan">{{ label }}</span>
+      <span v-if="chosen" class="agazan">{{ label }}</span>
       <span v-else>{{ label }}</span>
     </button>
-    <div v-if="open" id="name-chip-panel" class="panel" role="dialog" aria-label="Your Agalan name">
+    <div v-if="open" id="name-chip-panel" class="panel" role="dialog" aria-label="Your Agazan name">
       <NameHelper />
     </div>
   </div>
@@ -74,7 +74,7 @@ onBeforeUnmount(() => {
   white-space: nowrap;
 }
 
-.agalan {
+.agazan {
   font-family: var(--vp-font-family-mono);
 }
 

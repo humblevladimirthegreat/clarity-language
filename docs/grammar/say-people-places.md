@@ -8,7 +8,7 @@ Recipes for English *as for*, *whose*, *different from*, official titles, and po
 
 **Needs:** [Adverbs](clause.md#adverbs-h) · [Extra nouns](clause.md#extra-nouns)
 
-English *as for X* or *regarding X* names who or what the sentence is about, even when X is not the subject or object. In Agalan, put **`hahehom`** *topic* in `/h/` and X in a hosted `/b/` right after it: `hahehom bazawan` is *as for Azawan*. The rest of the sentence keeps its free order. (cue: #️⃣ *hash*: a hashtag marks what the post is about.)
+English *as for X* or *regarding X* names who or what the sentence is about, even when X is not the subject or object. In Agazan, put **`hahehom`** *topic* in `/h/` and X in a hosted `/b/` right after it: `hahehom bazawan` is *as for Azawan*. The rest of the sentence keeps its free order. (cue: #️⃣ *hash*: a hashtag marks what the post is about.)
 
 > `hahehom bazawan zalahen dagadal vahahal.`
 >
@@ -101,7 +101,7 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 >
 > "Ubugan announces." (office handle on first mention)
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `zubugan` | handle: one root + **-n** | default talk, including first mention |
 | `zubugaxalahen` | long title: phrasal proper (`ROOT x ROOT` … + **-n**) | full legal / ceremonial name of the same office |
@@ -132,7 +132,7 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 
 #### Antecedent was a noun (`/z/`, `/d/`, or `/b/`)
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `/z/` `/d/` `/b/` … `-r` | ordinary 3rd-person slot | *he / she / it / they*; *that (one)* (`/b/` still follows the host relation) |
 | `/v/` … `-r` | the same action again, now involving that entity | *do the same to / with it* |
@@ -188,7 +188,7 @@ Examples:
 
 #### Antecedent was a verb (`/v/`)
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `/z/` `/d/` `/b/` … `-r` | the doing as a noun | *that action / event / doing* (not the agent/place/patient/recipient; use [role compounds](roles.md#role-compounds)) |
 | `/v/` … `-r` | same action again | *do so* / *do that* |
@@ -244,7 +244,7 @@ Examples:
 
 #### Antecedent was an adjective (`/ɡ/`)
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `/z/` `/d/` `/b/` … `-r` | the property as an entity | *the … one*; *that quality*; *those who are …* |
 | `/v/` … `-r` | act characterized by the property | *be/do that* |
@@ -300,7 +300,7 @@ Examples:
 
 #### Antecedent was an adjective extra (`/w/`)
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `/z/` `/d/` `/b/` … `-r` | the degree / scale / criterion as a thing | *that degree / scale / criterion* |
 | `/ɡ/` … `-r` | host property under that frame again | that property |
@@ -349,7 +349,7 @@ Examples:
 
 #### Antecedent was an adverb (`/h/`)
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `/z/` `/d/` `/b/` … `-r` | the adjunct as a noun | *that time / place / manner / reason* |
 | `/v/` … `-r` | act under that occasion | that doing |
@@ -405,7 +405,7 @@ Examples:
 
 #### Antecedent was `/y/` or `/x/`
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | same class (`/y/` or `/x/`) … `-r` | repeat that vocative, interjection, or linker | same call or glue again |
 | `/x/` … `-r` from a content antecedent | discourse thread resume | *Going back to subject X* |
@@ -445,7 +445,7 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 >
 > "Azawan walks. Therefore Alahen runs."
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | **`ezadam`** (bare) | talk moves on | *progress*; discourse **`xezadam`** *therefore* |
 | **`ewezam`** (bare) | talk comes back | *return* |
@@ -462,7 +462,7 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 
 When a span-marker word or a fence glyph (`[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `=` / `|` / `#` / `^`) or a [tone mark](speech-moves.md#tone-marks) (`!` / `?`) must appear **as content**, wrap that token in **atomic opaque**. Writing and speech use the same vehicle. The outer span’s wording is the opaque **interior** (the wrapper is packaging, not extra cited words).
 
-```agalan
+```agazan
 d[ varadal d<]> ]
 d[ d<xuxul> ]
 d[ d<|> ]
@@ -471,7 +471,7 @@ d[ vezebel d<#> ]
 
 Speech for a fence **word**:
 
-```agalan
+```agazan
 daxal duxol xuxul xuxul
 ```
 
@@ -479,7 +479,7 @@ daxal duxol xuxul xuxul
 
 Writing opaque `d<…>` closes on the first `>`. If the blob **contains** `>`, use the spoken opaque (EDGE **a** + **`xuxul`**):
 
-```agalan
+```agazan
 duxal code > 1 xuxul
 ```
 
@@ -495,7 +495,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
+| English | Agazan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
 | *Alahen* | `alahen` | | |
@@ -509,7 +509,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *punch* | `vabahel` | | |
 | *scream* | `vezogel` | | |
 
-#### English → Agalan {#people-pointing-back-english-to-agalan}
+#### English → Agazan {#people-pointing-back-english-to-agazan}
 
 **1.** *Azawan mutes. Alahen does the same with them.*
 
@@ -551,7 +551,7 @@ z-radio | g-red . z-←red | v-scream
 z-Alahen | v-punch . z-←punch | g-big
 :::
 
-#### Agalan → English {#people-pointing-back-agalan-to-english}
+#### Agazan → English {#people-pointing-back-agazan-to-english}
 
 **1.** `zeredel gelavam. zemegul gerer.`
 
@@ -606,7 +606,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan |
+| English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
@@ -616,7 +616,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *tell* | `vezebel` |
 | *topic* | `hahehom` |
 
-#### English → Agalan {#people-as-for-english-to-agalan}
+#### English → Agazan {#people-as-for-english-to-agazan}
 
 **1.** *As for Azawan, Alahen sees a ticket.*
 
@@ -626,7 +626,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 [h-topic | b-Azawan] | z-Alahen | d-ticket | v-see
 :::
 
-#### Agalan → English {#people-as-for-agalan-to-english}
+#### Agazan → English {#people-as-for-agazan-to-english}
 
 **1.** `hahehom bahaben zazawan balahen vezebel.`
 
@@ -645,7 +645,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Ahaben* | `ahaben` | |
@@ -653,7 +653,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *diagnosis-hospital* (office full title) | `ezudexahazen` | |
 | *see* | `vahahal` | `ahahal` *eye* |
 
-#### English → Agalan {#people-handles-english-to-agalan}
+#### English → Agazan {#people-handles-english-to-agazan}
 
 **1.** *Ezuden sees Ahaben.* (office handle, first mention)
 
@@ -663,7 +663,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 z-Ezuden | v-see | d-Ahaben
 :::
 
-#### Agalan → English {#people-handles-agalan-to-english}
+#### Agazan → English {#people-handles-agazan-to-english}
 
 **1.** `zezudexahazen vahahal dazawan.`
 
@@ -681,7 +681,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan |
+| English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
@@ -689,7 +689,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *tell* | `vezebel` |
 | *write* | `varadal` |
 
-#### English → Agalan {#people-literal-english-to-agalan}
+#### English → Agazan {#people-literal-english-to-agazan}
 
 **1.** *Azawan said “write ]”.*
 
@@ -705,7 +705,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 z-Ahaben | d-OPAQUE.multi["code" | ">" | "1"] | v-tell
 :::
 
-#### Agalan → English {#people-literal-agalan-to-english}
+#### Agazan → English {#people-literal-agazan-to-english}
 
 **1.** `zazawan daxal duxol xuxul xuxul vezebel.`
 

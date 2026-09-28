@@ -44,6 +44,11 @@
       "from": "/grammar/interests.html",
       "to": "/grammar/sakes.html",
       "note": "Public URL after renaming interests.md to sakes.md."
+    },
+    {
+      "from": "/grammar/why-agelan.html",
+      "to": "/grammar/why-agazan.html",
+      "note": "Public URL after renaming why-agelan.md to why-agazan.md."
     }
   ]
 }

@@ -1,4 +1,4 @@
-# Saying it in Agalan
+# Saying it in Agazan
 
 These pages are recipes, not lessons. Each one shows how forms you already learned answer an English question, and links the grammar it needs. Read them in any order once the linked sections are familiar.
 
@@ -11,11 +11,11 @@ These pages are recipes, not lessons. Each one shows how forms you already learn
 
 ## One English word, many jobs {#many-jobs}
 
-English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agalan job, then open the section that teaches it.
+English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agazan job, then open the section that teaches it.
 
 ### *by*
 
-| English itch | Agalan job | Teach |
+| English itch | Agazan job | Teach |
 |--------------|------------|-------|
 | who does the action (*seen by Azawan*) | subject `/z/` (you may front the object) | [Who acts](clause.md#beginner), [word order](clause.md#word-order-emphasis) |
 | tool (*writes by / with a hammer*) | hook **`ael`** (*using*) + `/b/` | [Hooks](hooks.md#extra-noun) |
@@ -26,7 +26,7 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agalan 
 
 ### *for*
 
-| English itch | Agalan job | Teach |
+| English itch | Agazan job | Teach |
 |--------------|------------|-------|
 | recipient / addressee (*tells Alahen*) | unhosted `/b/` | [Extra nouns](clause.md#extra-nouns) |
 | swap (*a book for a hammer*) | **`hogem`** + `/b/` | [Exchange](relations.md#exchange) |
@@ -40,7 +40,7 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agalan 
 
 ### *about*
 
-| English itch | Agalan job | Teach |
+| English itch | Agazan job | Teach |
 |--------------|------------|-------|
 | regarding / as for (*about Azawan*) | **`hahehom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 | what was said (*tells that the dog runs*) | **stand-in** **`darl`** (often `/d/`) | [Dependent clauses](dependents.md#dependent-clauses) |
@@ -51,7 +51,7 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agalan 
 
 ### *as*
 
-| English itch | Agalan job | Teach |
+| English itch | Agazan job | Teach |
 |--------------|------------|-------|
 | kind / role (*Azawan as a dog*) | classification `/ɡ/` | [Kind / role](predication.md#classification) |
 | same one (*Alahen as Azawan*) | **`SAME`** + `/b/` | [Identity](predication.md#identity) |

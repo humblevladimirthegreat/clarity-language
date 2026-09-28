@@ -1,12 +1,12 @@
 /**
  * terminology.md staleness checks (docs/meta/grammar-docs.md): the SMALLCAPS label table
- * matches the labels morph lines print, each label's example shows it, every Agalan form on
+ * matches the labels morph lines print, each label's example shows it, every Agazan form on
  * the page appears on the page it links to, and every link anchor resolves.
  */
 import type { ClassifyTables } from "../parse/classify.js";
 import { MORPH_GLOSS_LABELS, morphGlossLine } from "../parse/morph-gloss.js";
 import { isClarityRootShape } from "../root-shape.js";
-import { classifyAgalanSpan, decodeEntities, walkAgalanSpans } from "./agalan-docs.js";
+import { classifyAgazanSpan, decodeEntities, walkAgazanSpans } from "./agazan-docs.js";
 import { grammarHeadings } from "./grammar-anchors.js";
 import { anchorLinks, pageSections } from "./learning-order.js";
 
@@ -124,7 +124,7 @@ export function lintTerminology(
       continue;
     }
     if (!row.example) {
-      findings.push({ index: row.index, detail: `${row.label}: the Example cell must be one Agalan code span` });
+      findings.push({ index: row.index, detail: `${row.label}: the Example cell must be one Agazan code span` });
       continue;
     }
     if (!teach.includes(row.example)) {
@@ -151,7 +151,7 @@ export function lintTerminology(
 
   const list = entries(markdown);
   const rowLines = new Set(rows.map((r) => r.index));
-  walkAgalanSpans(markdown, {
+  walkAgazanSpans(markdown, {
     text: (span, index) => {
       const trimmed = span.trim();
       const entry = entryAt(list, index);
@@ -166,7 +166,7 @@ export function lintTerminology(
         });
         return;
       }
-      const cls = classifyAgalanSpan(trimmed);
+      const cls = classifyAgazanSpan(trimmed);
       if (cls !== "word" && cls !== "phrase" && cls !== "sentence") return;
       if (!entry || entry.pages.size === 0) return;
       const escaped = trimmed.replace(/</g, "&lt;").replace(/>/g, "&gt;");

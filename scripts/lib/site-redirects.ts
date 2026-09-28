@@ -69,7 +69,7 @@ export function rootIndexHtml(): string {
   <head>
     <meta charset="utf-8" />
     <link rel="canonical" href="${GRAMMAR_HOME}" />
-    <title>Agalan Grammar</title>
+    <title>Agazan Grammar</title>
     <script>
       (function () {
         var p = location.pathname;
@@ -82,7 +82,7 @@ export function rootIndexHtml(): string {
     </script>
   </head>
   <body>
-    <p><a href="${GRAMMAR_HOME}">Agalan Grammar</a></p>
+    <p><a href="${GRAMMAR_HOME}">Agazan Grammar</a></p>
     <p>If you opened a specific page, it is not in the grammar.</p>
   </body>
 </html>

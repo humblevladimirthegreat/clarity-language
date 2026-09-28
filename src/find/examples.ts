@@ -1,11 +1,11 @@
-/** The parsed Agalan examples on a docs page, as the docs lint reads them. */
+/** The parsed Agazan examples on a docs page, as the docs lint reads them. */
 import { classify, type ClassifyTables } from "../parse/classify.js";
 import type { LexWord } from "../parse/types.js";
 import { wordConstructions } from "../parse/construction-trace.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import { parseWord } from "../parse/word.js";
 import { fillSelf } from "../learner-name.js";
-import { classifyAgalanSpan, isAgalanLintCandidate, peelLintChunk, walkAgalanSpans } from "../lint/agalan-docs.js";
+import { classifyAgazanSpan, isAgazanLintCandidate, peelLintChunk, walkAgazanSpans } from "../lint/agazan-docs.js";
 import { flattenWords, type FoundWord } from "./query.js";
 
 export type Example = {
@@ -27,7 +27,7 @@ function parseExample(text: string, cls: Example["cls"], tables: ClassifyTables)
   try {
     if (cls === "word") {
       const { core } = peelLintChunk(text.trim());
-      if (!isAgalanLintCandidate(core)) return null;
+      if (!isAgazanLintCandidate(core)) return null;
       const word = classify(parseWord(core), tables);
       return { words: [{ word, unit: "", position: 0 }], constructions: wordConstructions(word), boundResumes: new Set() };
     }
@@ -49,9 +49,9 @@ function parseExample(text: string, cls: Example["cls"], tables: ClassifyTables)
  */
 export function collectExamples(markdown: string, tables: ClassifyTables): Example[] {
   const examples: Example[] = [];
-  walkAgalanSpans(fillSelf(markdown), {
+  walkAgazanSpans(fillSelf(markdown), {
     text: (text, index) => {
-      const cls = classifyAgalanSpan(text);
+      const cls = classifyAgazanSpan(text);
       if (cls !== "sentence" && cls !== "phrase" && cls !== "word") return;
       const parsed = parseExample(text, cls, tables);
       if (parsed) examples.push({ text: text.trim(), index, cls, ...parsed });

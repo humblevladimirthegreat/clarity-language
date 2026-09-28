@@ -2,12 +2,12 @@ import { computed, onMounted, ref, shallowRef, type ShallowRef } from 'vue'
 import { DEFAULT_SELF_ROOT, eligibleNames, suggestedNames, type LearnerNameOption } from '@learner-name'
 
 /**
- * The learner's own Agalan name (a published root + -n), kept in this browser. Unset or no longer valid → the speaker special `eman` fills `SELF` slots.
+ * The learner's own Agazan name (a published root + -n), kept in this browser. Unset or no longer valid → the speaker special `eman` fills `SELF` slots.
  */
 
-const STORAGE_KEY = 'agalan.learnerName'
+const STORAGE_KEY = 'agazan.learnerName'
 /** Ask a nav chip (or anything else) to open the name helper. */
-export const OPEN_NAME_HELPER_EVENT = 'agalan:open-name-helper'
+export const OPEN_NAME_HELPER_EVENT = 'agazan:open-name-helper'
 
 const chosen = ref<string | null>(null)
 const eligible: ShallowRef<LearnerNameOption[]> = shallowRef([])

@@ -17,7 +17,7 @@ This is complementary to, not a replacement for, Tabler / Icons8 display ids. Ic
 1. Record which non-emoji Unicode pictograph sets **add kinds of picture** the current CSV does not already cover.
 2. Record **font** reality (Noto + OS tofu) so a UI can ship faces instead of assuming emoji fonts.
 3. Record how hard it is to **mix** those sets with each other and with color emoji in one sentence vs one word.
-4. Keep romanized Agalan as the phonological word; pictographs remain **seeds / speed-read display**, not letters inside `zugobon`.
+4. Keep romanized Agazan as the phonological word; pictographs remain **seeds / speed-read display**, not letters inside `zugobon`.
 
 ## Non-goals
 
@@ -25,7 +25,7 @@ This is complementary to, not a replacement for, Tabler / Icons8 display ids. Ic
 - Filling every unused VCVCV slot because a codepoint exists.
 - Using geometric shapes, block elements, ornamental dingbats, or legacy-computing mosaics as roots (poor mnemonics).
 - Encoding music **scores** (beams, combining stems) or Egyptian **layout engines** (cartouches, insertions) as lexicon glyphs.
-- Mixing historic scripts **inside** romanized Agalan orthography.
+- Mixing historic scripts **inside** romanized Agazan orthography.
 - Treating font/engineering cost as a reason to reject a set (end-user tofu and metric clash still matter).
 
 ## Current CSV coverage (sketch)
@@ -105,7 +105,7 @@ CSS can only approximate (`font-size` per span, `vertical-align`, a tall shared 
 
 Still valid UTF-8; fallback still per character. There is **no** ZWJ or ligature that fuses an alchemical sign with a hieroglyph. Combining marks stay in-script (musical stems do not attach to Phaistos; Egyptian insertion does not stack a retort). The result is a ransom strip unless each root is an inline **cell**.
 
-### Inside romanized Agalan
+### Inside romanized Agazan
 
 **Out of scope.** Roots stay unicase Latin (`agala`). Pictographs are seed/display, not letters after the PoS.
 

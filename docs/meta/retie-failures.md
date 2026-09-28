@@ -34,9 +34,9 @@ Seven of the eleven two-root compounds were wrong. The `stem` column was rebuilt
 
 **Prevention.** Build compound stem pairs (old stem → new stem) into the map from the compounds CSV before retieing the docs.
 
-## 3. English words rewritten as Agalan
+## 3. English words rewritten as Agazan
 
-**What broke.** The retie also rewrites emphasised prose (`*…*`) that reads as Agalan. Short English words that happen to fit the root shape `V(CV)+`, optionally after a role letter, were treated as roots.
+**What broke.** The retie also rewrites emphasised prose (`*…*`) that reads as Agazan. Short English words that happen to fit the root shape `V(CV)+`, optionally after a role letter, were treated as roots.
 
 | English | Became | Why it matched |
 |---------|--------|----------------|
@@ -51,13 +51,13 @@ About 40 places across grammar and meta pages were affected, in prose, table cel
 
 **How it surfaced.** Only the word-bank cases were caught (*wozobo*, *bezegol*). The prose cases lint cleanly and needed a manual diff of the retie commit.
 
-**Prevention.** Rewrite emphasised prose only when the whole run parses as an Agalan *sentence* or multi-word phrase, never a lone short word. Keep a stoplist of English words that fit the root shape. After a retie, list every changed word that appears in a common-English word list for review.
+**Prevention.** Rewrite emphasised prose only when the whole run parses as an Agazan *sentence* or multi-word phrase, never a lone short word. Keep a stoplist of English words that fit the root shape. After a retie, list every changed word that appears in a common-English word list for review.
 
-## 4. English names derived from Agalan spellings
+## 4. English names derived from Agazan spellings
 
 **What broke.** A named **-n** word glosses as its own spelling, capitalised (`zonodan` → *Onodan*). Those English names live in morph lines and free English, which the retie does not touch.
 
-- House cast: *Ululon* / *Uhubun* stayed while the Agalan became `zalahen` / `zahaben` (about 1,000 lines across 30 pages).
+- House cast: *Ululon* / *Uhubun* stayed while the Agazan became `zalahen` / `zahaben` (about 1,000 lines across 30 pages).
 - One-off names: *Uzugon*, *Edozen*, *Uruzen*, *Ozorun*, *Oduna*-x-*Alanen*, *Ogove*-x-*Adeda*-x-*Unuden*, and others.
 
 **How it surfaced.** Most of the 752 morph-gloss mismatches (`documented: z-Ululon`, `parser: z-Alahen`).
@@ -66,11 +66,11 @@ About 40 places across grammar and meta pages were affected, in prose, table cel
 
 ## 5. Quoted payloads in glosses
 
-**What broke.** Mention and cite interiors are quoted verbatim in morph lines (`z-MENTION["odogo"]`) and free English (*the word “uzugo”*). The Agalan inside `{…}` / `[…]` was retied, but the quoted copies were not. Opaque interiors were not retied at all (`d[abugum#]` stayed on the old *flaw* spelling).
+**What broke.** Mention and cite interiors are quoted verbatim in morph lines (`z-MENTION["odogo"]`) and free English (*the word “uzugo”*). The Agazan inside `{…}` / `[…]` was retied, but the quoted copies were not. Opaque interiors were not retied at all (`d[abugum#]` stayed on the old *flaw* spelling).
 
 **How it surfaced.** Morph-gloss mismatches in spans.md and glosses.md.
 
-**Prevention.** Retie quoted payloads in morph lines and quoted English alongside the span they copy. Treat a cite span's interior as Agalan unless it is fenced opaque.
+**Prevention.** Retie quoted payloads in morph lines and quoted English alongside the span they copy. Treat a cite span's interior as Agazan unless it is fenced opaque.
 
 ## 6. Resume forms respelled wrongly
 
@@ -104,7 +104,7 @@ A related case is bare short resumes in prose (`zodor`, `dodor`, `godor`). Each 
 | `classify.ts` | `ARROW_ROOTS` | landmark laterals glossed as label scope |
 | `learner-name.ts` | house cast, special pronouns, `DEFAULT_SELF_ROOT`, `LANGUAGE_ROOT`, suggested names | `SELF` slot filled with an unknown word; name suggestions pointed at dead roots |
 | `template-trace.ts` | sample fillers (`vawalal`, `gonogo`, `olozo`, `eweze`, …) | every template failed to parse |
-| `lint-agalan-docs.ts`, `retie/markdown.ts` | `SELF` fill `zugobon` | lint read the learner slot as unknown |
+| `lint-agazan-docs.ts`, `retie/markdown.ts` | `SELF` fill `zugobon` | lint read the learner slot as unknown |
 | `.vitepress` components | GlossViewer sample, NameHelper default | site showed unknown words |
 
 **How it surfaced.** Most of the remaining morph-gloss mismatches, the template failures, and site text found by grep.
@@ -117,7 +117,7 @@ A related case is bare short resumes in prose (`zodor`, `dodor`, `godor`). Each 
 
 **How it surfaced.** The docs' `thuxogem` read as an ordinary role compound (`th-patient-x-green`) instead of `CONSENT-given`. There was also a learning-order error for an unresolved anchor.
 
-**Prevention.** Parse each overlay `sense_form` with the word grammar and rebuild it through `retieCore`, the same way the docs are rewritten. Retie heading ids that contain Agalan, and every anchor that points at them, in the same pass.
+**Prevention.** Parse each overlay `sense_form` with the word grammar and rebuild it through `retieCore`, the same way the docs are rewritten. Retie heading ids that contain Agazan, and every anchor that points at them, in the same pass.
 
 ## 10. Test fixtures and the `j` → `y` pass
 
@@ -133,7 +133,7 @@ A related case is bare short resumes in prose (`zodor`, `dodor`, `godor`). Each 
 
 ## Open question
 
-[language-name.md](language-name.md) now says the glasses root is `agaza`, while the language is still called **Agalan**. The retie respelled the root, but it cannot rename the language. The learner-name ban list now uses `agaza`. Decide whether the name should follow the root or the root should be restored. ANSWER: rename language to Agazan in docs.
+[language-name.md](language-name.md) now says the glasses root is `agaza`, while the language is still called **Agazan**. The retie respelled the root, but it cannot rename the language. The learner-name ban list now uses `agaza`. Decide whether the name should follow the root or the root should be restored. ANSWER: rename language to Agazan in docs.
 
 ## Safeguards now in the tooling
 
@@ -143,12 +143,12 @@ Replaying the fixed retie over the pre-retie docs brought the post-retie lint fr
 |---|-----------|
 | 1 | The chain came from retieing `lexicon-compounds.csv` twice: once in `convert-word --lexicon`, again in `retie-docs`. Only `convert-word` reties it now, and it checks each compound part against its published row by emoji. `retie-docs` stamps the map file as applied and refuses to write it a second time. |
 | 2 | `convert-word` writes compound stem pairs into the map (`compounds`), and `retie-docs` reties them like roots. |
-| 3 | Prose is never retied word by word, emphasised or not. An emphasised multi-word run is retied only when it parses as an Agalan sentence or phrase. A lint-checked word in a line that is not a whole Agalan span is retied on its own, but never a common English word, and every change whose old spelling is an English word is listed for review. |
+| 3 | Prose is never retied word by word, emphasised or not. An emphasised multi-word run is retied only when it parses as an Agazan sentence or phrase. A lint-checked word in a line that is not a whole Agazan span is retied on its own, but never a common English word, and every change whose old spelling is an English word is listed for review. |
 | 4, 5 | Named-word names and quoted payloads (`“…”`, `["…"]`) follow their code in prose, word banks and `<!-- gloss: -->` comments, with name pairs from every page. Morph lines that matched the parser before the retie are regenerated after it. Editorial closes (`#]`, `#|]`) no longer hide a payload. |
 | 6 | A resume inside a span payload uses the parser's bind. An unbound resume follows the nearest earlier matching word, and a short resume stays short. A short resume that would bind another word after the retie is lengthened to a full-root resume. Any remaining bind change blocks `--write`. |
 | 7 | A full-root resume that no longer needs its full root is a warning. `retie-docs` lints changed grammar pages before writing (against a pre-retie baseline), so a bare short resume in prose that stops linting blocks `--write`. |
 | 8, 10 | String literals in `src/` (tests included), `scripts/` and the site are scanned. Test fixtures are retied. Other literals and root-table keys that still spell an old root are listed for review. `AGENTS.md` and `README.md` are retied (never `TODO.md`). A map whose old spellings the word grammar cannot read blocks `--write`. |
-| 9 | Overlay sense forms are rebuilt through the word grammar with their PoS. Heading ids spelled from Agalan move with it, and links and overlay `anchor` cells follow. |
+| 9 | Overlay sense forms are rebuilt through the word grammar with their PoS. Heading ids spelled from Agazan move with it, and links and overlay `anchor` cells follow. |
 
 Leftovers from the last retie that these checks surface today: `AGENTS.md` still lists pre-retie roots throughout, `src/parse/constructions.ts` messages still spell `holalam` / `theberom` / `hezebam`, and the hand repair wrote `dezor` (pronouns.md) and `xezer` (hooks.md) where *Azawan again* is `dazar` / `xazar`.
 

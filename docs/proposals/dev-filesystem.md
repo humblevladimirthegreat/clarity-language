@@ -24,7 +24,7 @@ The build has since been restructured without moving the workspace ([scripts/bui
 | `tsc` | 4.3 s |
 | pad spoiler blanks | 0.4 s |
 | lint sidebar | 5.8 s |
-| lint agalan | 8.3 s |
+| lint agazan | 8.3 s |
 | `npm test` | 13.2 s |
 | lint md balance | 14.5 s |
 | eslint | 18.0 s |
@@ -37,7 +37,7 @@ Occasionally the repo is also opened from Windows outside the devcontainer, just
 ## Option A: keep the repo on `C:\`, put `node_modules` on a Docker volume
 
 ```json
-"mounts": ["source=agalan-node-modules,target=${containerWorkspaceFolder}/node_modules,type=volume"],
+"mounts": ["source=agazan-node-modules,target=${containerWorkspaceFolder}/node_modules,type=volume"],
 "postCreateCommand": "npm ci"
 ```
 

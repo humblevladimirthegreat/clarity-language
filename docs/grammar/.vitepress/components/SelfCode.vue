@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 import { useLearnerName } from '../composables/useLearnerName'
 
-/** Agalan text with `SELF` slots: the learner's name, or the speaker special until one is chosen. */
+/** Agazan text with `SELF` slots: the learner's name, or the speaker special until one is chosen. */
 const props = withDefaults(defineProps<{ text: string; bare?: boolean }>(), { bare: false })
 
 const { root, chosen, openHelper } = useLearnerName()
@@ -18,7 +18,7 @@ const parts = computed(() => props.text.split(/SELF(?=[a-z])/))
         v-if="i > 0 && !chosen"
         type="button"
         class="self-slot self-unset"
-        title="Choose your Agalan name"
+        title="Choose your Agazan name"
         @click="openHelper"
       >{{ root }}</button><span
         v-else-if="i > 0"

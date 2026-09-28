@@ -327,7 +327,7 @@ function boundaryRaw(tag: BoundaryTag): string {
 export function skipLabel(reason: SkipReason): string {
   switch (reason) {
     case "foreign":
-      return "foreign surface — not Agalan phonology";
+      return "foreign surface — not Agazan phonology";
     case "writing":
       return "writing-only span";
     case "shorthand":

@@ -35,7 +35,7 @@ Ordinary `zomel` is still *a mirror*.
 
 **Compare with:** unhosted `/b/` is still the recipient. *In a house* is a [hook](hooks.md#extra-noun) (`al bahazal`). *Using* a tool is also a [hook](hooks.md#extra-noun). Two labels for **one** person is not this pair. *As happy as* names a shared height, not resemblance. *As if they walk* takes the walk off the real tally; here the walk stays real.
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`homem` / `gomem`** | resemblance to a model | *like* | `omel` *mirror* | 🪞: the image is of the model |
 
@@ -54,7 +54,7 @@ On a noun, the same root is **`gogem`** (`dubugal gogem bahavel` *a book for a h
 
 **Compare with:** unhosted `/b/` is still the recipient (*a book for Alahen* as who gets it). *Using* a tool is a [hook](hooks.md#extra-noun). *Like a duck* is [simile](#similative). *In a house* is a hook (`al`).
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hogem` / `gogem`** | consideration / countervalue | *in exchange for* | `ogel` *currency-exchange* | 💱: the arrows swap one side for the other |
 
@@ -73,7 +73,7 @@ A recipient may follow a finished pair: `zazawan hadem balahen bahaben vezebel` 
 
 **Compare with:** unhosted `/b/` is still who hears the telling. *Using* a tool is a [hook](hooks.md#extra-noun). *A book for a hammer* as a swap is [exchange](#exchange). *In a house* is a hook (`al`). *Exclusively for* is a [join-relation](join-across-roles.md#join-relations), not this pair.
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hadem` / `gadem`** | authorized agency | *on behalf of* | `adel` *id* | 🪪: the card stands as their face |
 
@@ -87,7 +87,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
+| English | Agazan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
 | *Alahen* | `alahen` | | |
@@ -103,7 +103,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *in-exchange-for* | `hogem` | `ogel` *currency-exchange* | 💱: the arrows swap one side for the other |
 | *on-behalf-of* | `hadem` | `adel` *id* | 🪪: the card stands as their face |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *Azawan walks like a duck.*
 
@@ -137,7 +137,7 @@ z-Azawan | [h-on-behalf-of | b-Alahen] | v-tell
 z-hammer | [g-like | b-Azawan]
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zahaben homem badagul vowogal.`
 
@@ -237,7 +237,7 @@ The `/b/` after the host is **one slot**. A join (`bal`) or a [plural](plurality
 
 Ordinary `zozal` is still *a sandwich*.
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hozam` / `gozam`** | figure in the layer of two landmarks | *between* | `ozal` *sandwich* | 🥪: the filling sits between two sides |
 
@@ -276,7 +276,7 @@ On an event, the same roots are `/h/` (`zazawan vageval huwam buwal` *Azawan cra
 
 Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in* hook (`al`), not `gaham`.
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`habom` / `gabom`** | constitutive piece | *part of* | `abol` *bone* | 🦴: the piece that holds the body’s shape |
 | **`haham` / `gaham`** | filling of a vessel | *contents of* | `ahal` *yar* | 🫙: the vessel named by what it stores |
@@ -305,7 +305,7 @@ English *'s* also names a social tie (*Azawan's friend*, *Azawan's boss*). Put t
 
 Any root whose abstract sense is a tie works this way (`gohoham` *partner of*, `gonam` *bound to*). To name the other side of the tie without repeating anyone, use the [role compound](roles.md#role-compounds) with **`o`**: after `zalahen gemezem bazawan`, `zoxemezer` is *the other party of that friendship* (Azawan).
 
-| Agalan | Use | English | Same root as |
+| Agazan | Use | English | Same root as |
 |--------|-----|---------|--------------|
 | **`gemezem`** + `/b/` | companion of `/b/` | *friend of* | `emezel` *Mrs Claus* |
 | **`gagawum`** + `/b/` | the one `/b/` answers to | *boss of* | `agawul` *crown* |
@@ -322,7 +322,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan |
+| English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
@@ -339,7 +339,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *wood* | `uwal` |
 | *material* | `guwam` |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *Azawan sits on a chair.*
 
@@ -381,7 +381,7 @@ z-Azawan | [out-of | b-house] | v-run | [in | b-train]
 z-Ahaben | v-sit | [on | [b-chair | [g-material | b-wood]]]
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zahaben vazadol ol bezedel.`
 
@@ -506,7 +506,7 @@ A finished inner clause does not stay open for a later matrix resume. Isolated `
 
 **Compare with:** [*after*](dependents.md#dependent-clauses) **`hulam`** and extra-noun **`ol`** *at* order or landmark events; they are not the books. [Causal *if*](causation.md#if) **`thodom`** is speaker-now opportunity, not English *if he had* (`humem`). [NOTIONAL](knowing.md#notional) is play, not a bookmark now. [Scope islands](joins.md#scope-islands-join) bound join scope; they do not persist *as-of*. Repeat the evidential and/or resume *as-of* on the next clause.
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`henem` / `genem` / `wenem`** | asserted whose-now | *as of* (dated ledger) | `enel` *ledger* | 📒: a dated line in the books |
 | **`humem` / `gumem` / `wumem`** | unasserted whose-now | *as of* (placeholder now) | `umel` *bookmark* | 🔖: hold the place without stamping |
@@ -521,7 +521,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The hos
 
 **Roots used here:**
 
-| English | Agalan |
+| English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
@@ -538,7 +538,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The hos
 | *as-of.bookmark* | `humem` |
 | *challenge* | `gamadam` |
 
-#### English → Agalan {#advanced-english-to-agalan}
+#### English → Agazan {#advanced-english-to-agazan}
 
 **1.** *As of 22 July, Alahen had still left.*
 
@@ -588,7 +588,7 @@ z-money | [g-as-of.ledger | b-_22,7]
 z-money | th-RESIDUE | [h-as-of.ledger | b-departure]
 :::
 
-#### Agalan → English {#advanced-agalan-to-english}
+#### Agazan → English {#advanced-agazan-to-english}
 
 **1.** `zalahen thamom henem b_#22,7 vadebal. xazawan thamom hener vowogal.`
 

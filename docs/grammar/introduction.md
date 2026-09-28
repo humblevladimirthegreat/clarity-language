@@ -1,12 +1,12 @@
-# Introduction to Agalan
+# Introduction to Agazan
 
-**Agalan** (`agaza` + proper **-n**) translates to English *clarity*.
+**Agazan** (`agaza` + proper **-n**) translates to English *clarity*.
 
 How these docs work, and what “good grammar design” means for this language.
 
 ## Purpose {#purpose}
 
-Agalan encodes psychological distinctions into vocabulary and grammar so ordinary speech can nudge **compassion → rationality → empowerment**. Purpose, limits, and a tour of those aims: [Why Agalan](why-agelan.md).
+Agazan encodes psychological distinctions into vocabulary and grammar so ordinary speech can nudge **compassion → rationality → empowerment**. Purpose, limits, and a tour of those aims: [Why Agazan](why-agazan.md).
 
 ## Grammar design {#grammar-design}
 
@@ -15,7 +15,7 @@ Two supporting goals sit beside the psychology:
 - **Unambiguous but usable:** so automatic tools can understand the language without making ordinary speech hard.
 - **Singable phonology:** syllable shape chosen to be easy to sing.
 
-Agalan keeps three kinds of clarity in ordinary speech.
+Agazan keeps three kinds of clarity in ordinary speech.
 
 ### Syntactic {#syntactic}
 
@@ -55,7 +55,7 @@ Inventory tables on grammar pages use these kinds of cell:
 
 | Column | What it is |
 |--------|------------|
-| **Agalan** | The word or letter you write. If **Same root as** is blank, this is the citation form of the word. The in-clause spelling (with its role letter) appears only when **Same root as** names the everyday kind. |
+| **Agazan** | The word or letter you write. If **Same root as** is blank, this is the citation form of the word. The in-clause spelling (with its role letter) appears only when **Same root as** names the everyday kind. |
 | **Use** | What that form **does** (subject, question, *because* as a clause glue). This is the rule. |
 | **English** | What you would **say**: the sense to produce or understand. Checkpoint people use the name (*Azawan*), not the virtue that formed the stem. |
 | **Same root as** | The everyday kind of that same root, written as a citation (**-l**), when this row’s English is not that citation’s lemma: the *brick* root when the row’s English is *because*; the *eye* root when the row’s English is *see*. Leave it blank when English already is the citation (a row whose English is *climb* for the *climb* root). Not every table has this column. |
@@ -69,11 +69,11 @@ Continue with [phonology.md](phonology.md#beginner) for letters and word edges, 
 
 These grammar pages, the lexicon, and the language materials are by **humblevladimirthegreat** and are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Software and tooling that accompany them are under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
-Reuse of particular grammatical ideas, lexicon entries, or a derived language is allowed. If you publish a derived language, a fork of the grammar, or a substantial adaptation, mention **Agalan** in the introduction (or equivalent front matter) as the source or inspiration.
+Reuse of particular grammatical ideas, lexicon entries, or a derived language is allowed. If you publish a derived language, a fork of the grammar, or a substantial adaptation, mention **Agazan** in the introduction (or equivalent front matter) as the source or inspiration.
 
-Do not present a fork, variant, or other project as the official Agalan project or as a drop-in substitute for these docs. Calling an unchanged copy of this language Agalan is fine. Calling a substantially different language Agalan as if it were this project is not. The licenses do not grant trademark rights and do not allow implying endorsement by the licensor.
+Do not present a fork, variant, or other project as the official Agazan project or as a drop-in substitute for these docs. Calling an unchanged copy of this language Agazan is fine. Calling a substantially different language Agazan as if it were this project is not. The licenses do not grant trademark rights and do not allow implying endorsement by the licensor.
 
-Suggested attribution: *Agalan by humblevladimirthegreat, licensed under CC BY 4.0.*
+Suggested attribution: *Agazan by humblevladimirthegreat, licensed under CC BY 4.0.*
 
 ## Acknowledgments {#acknowledgments}
 

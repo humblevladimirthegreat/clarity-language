@@ -1,6 +1,6 @@
 # Joins
 
-When English would pack several things that play the same role into one slot (*a dog and a cat*, *walks and runs*), Agalan writes those items in a row and then one join word after them. That last word is how you know the list has ended. We call that pattern a **right-close fence**: items, then the join. The join starts with the same role letter as the items (`z` for subjects, `v` for verbs, `x` for whole clauses).
+When English would pack several things that play the same role into one slot (*a dog and a cat*, *walks and runs*), Agazan writes those items in a row and then one join word after them. That last word is how you know the list has ended. We call that pattern a **right-close fence**: items, then the join. The join starts with the same role letter as the items (`z` for subjects, `v` for verbs, `x` for whole clauses).
 
 Sometimes you only care that the items belong together, with no ranking among them (*and*, *or*, *not*). We call that a **set**. Sometimes you care which item comes first (*X first*, *A before B*). We call that a **rank**.
 
@@ -84,7 +84,7 @@ When English would offer a menu and ask to *pick one*, or leave the pick *(optio
 
 The join still comes last when there is only one item, or none. How many items sit before it is the **arity**:
 
-| Arity | Agalan | Use | English |
+| Arity | Agazan | Use | English |
 |-------|--------|-----|---------|
 | **List** (2+) | `A B zam` | close a multi-item set | ordinary *and* / *or* |
 | **Single-item** (1) | `A zal` | that one item is the whole story | *just X* |
@@ -160,7 +160,7 @@ Write the items in that order, then a join with vowel **e**. The earlier item ou
 
 You can name a list without saying which member you mean (*someone* / *something* in it). Put ending **-r** on the join for that unspecified member. Use **-r** on single-vowel **a** / **o** / **e** / **u** only.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `zar` / `var` / `xar` | unspecified member of an add-set | *something* / *do something* / *something happened* | **a** ≈ add |
 | `zor` / `vor` / `xor` | unspecified member of a menu | *anything* / *do anything* | **o** ≈ one |
@@ -191,7 +191,7 @@ Write A and B, then `zar`: the join still ends both items, and **-r** means some
 
 ### Vowels and endings (recap) {#join-type-vowel-series}
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **a** | inventory join | *and* | **a** ≈ add |
 | **o** | exclusive choice | exclusive *or* | **o** ≈ one |
@@ -199,7 +199,7 @@ Write A and B, then `zar`: the join still ends both items, and **-r** means some
 | **ua** | universal; one listed item is the leftover | standalone *everything*; one item *everything but* | **u** ≈ undo, then **a** ≈ add |
 | **e** | rank among items | *A before B*; one item *only X matters* | **e** ≈ order |
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **-l** | the listed items are the only ones in play | (no extra words) | **l** ≈ locked list |
 | **-m** | other items may exist | *(and possibly more)*; empty: *as far as I know* | **m** ≈ maybe more |
@@ -211,7 +211,7 @@ The same vowels and endings work under `/d/` `/b/` (`dal`, `dam`, …), `/v/` (`
 
 Two or more items still take the same vowel and ending as the lists above. The table below is the readings when the join stands alone, or when only one item sits before it.
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `zal` / `zam` | standalone | *nothing* / *nobody* · *nothing, as far as I know* |
 | `zol` / `zom` | standalone | *no options* · *no pick, as far as I know* |
@@ -256,7 +256,7 @@ A clause join never sits on one clause alone. To deny or single out one clause, 
 
 A join word with no clause before it stands for a clause of its own: `xal.` *nothing happened*, `xar` *something happened*, `xur` *something else happened*, `xual` *everything happened*. You can use that stand-in as one item of a clause list:
 
-| Agalan | English |
+| Agazan | English |
 |--------|---------|
 | `zazawan vowogal xam xar.` | *Azawan walks, for one* (and something else happened too) |
 | `zazawan vowogal xol xal.` | *Azawan may walk* (Azawan walks, or nothing happens) |
@@ -274,7 +274,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -291,7 +291,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *scream* | `vezogel` | `ezogel` *scream* |
 | *lie* | `valahal` | `alahal` *lie* |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *bread and a tomato (and possibly more)*
 
@@ -357,7 +357,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 [z-Alahen | v-punch | x-and.open | z-Azawan | d-Ahaben | v-see]
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zagagul zam.`
 
@@ -453,7 +453,7 @@ When English would say two people are *as ADJ as* each other, write a **rank** j
 
 Beginner already used *everything but* (**`ua`**). Leading **u** on **o** and **e** completes that invert map.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **ua** | invert add | *everything but* the listed | **u** ≈ undo + **a** ≈ add |
 | **uo** | invert menu | *anything but* the listed (free choice outside) | **u** ≈ undo + **o** ≈ one |
@@ -521,7 +521,7 @@ Beginner already used single-item *just X* and standalone *nothing* / *everythin
 
 **Rank — single-item**
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | **…el** (`zel` / …) | closed rank of one | *only X matters* / *X, period*; + SHARED scale → superlative — [comparatives](comparatives.md) |
 | **…em** (`zem` / …) | open rank of one | *X first* / *mainly X*; + SHARED scale → open superlative |
@@ -539,7 +539,7 @@ Beginner already used single-item *just X* and standalone *nothing* / *everythin
 
 Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *there is no biggest*). Standalone **ue** says nothing is at the bottom (no least, no veto). Neither says why: a tie is **`ae`**, and *whichever is on top* is **`zer`**. Closed **-l** is a fact about the set; open **-m** is a shrug.
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | **…el** (`zel` / …) | closed empty rank | *no favorite* / *nobody's first*; + SHARED scale → *there is no biggest* |
 | **…em** (`zem` / …) | open empty rank | *no favorite, as far as I know*; + SHARED scale → *no biggest comes to mind* |
@@ -555,7 +555,7 @@ Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *ther
 
 **Set — single-item**
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | **…al** (`zal` / …) | closed add of one | *just X* / *only X* |
 | **…am** (`zam` / …) | open add of one | *X, for one* / *X (and possibly more)* |
@@ -578,7 +578,7 @@ Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *ther
 
 **Set — standalone**
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | **…al** (`zal` / …) | closed empty add | *nothing* / *nobody* |
 | **…am** (`zam` / …) | open empty add | *nothing, as far as I know* |
@@ -625,7 +625,7 @@ When English would deny a whole join, *not* applies to **each** item and the joi
 
 When English would say *every cat* rather than *everything but the cat*, write **`ua`** and put the kind as a shared adjective after the join (`zual gagadal`). Any nouns listed before that join are leftovers excluded from that kind. The same **`ua`** join covers both *every K* and *everything but X*.
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-------|---------|
 | standalone `zual` | empty invert-add | *everything* / *everyone* |
 | `zual` + SHARED `/ɡ/` | closed every-kind | *every K* (`zual gagadal` = *every cat*) |
@@ -707,7 +707,7 @@ SHARED material has to be able to describe what the join lists. After a noun joi
 
 When one list sits inside another (*(tea or coffee) and water*), write the inner items, then their join, then the outer item, then the outer join. Each join sits after only the stretch it closes. You nest by stacking right-close joins; a flat list still uses one join after every member. Clause joins group by position instead ([clause joins](#clause-joins)).
 
-| Pattern | Agalan | English |
+| Pattern | Agazan | English |
 |---------|--------|---------|
 | flat | `zedehel zagavel zowodel zol` | *tea or coffee or water* |
 | nested | `zedehel zagavel zol zowodel zal` | *(tea or coffee) and water* |
@@ -722,7 +722,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -737,7 +737,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *kiss* | `vegezal` | `egezal` *kiss* |
 | *punch* | `vabahel` | `abahel` *punch* |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *everything but wine and a flower*
 
@@ -819,7 +819,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-Azawan | z-Alahen | z-Ahaben | z-in-reverse-order] | v-kiss
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zavavul zual.`
 
@@ -908,7 +908,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 When same-role words sit next to a smaller list, wrap that stretch and its join in **`^ … ^`**. The join inside the island takes members only from between those marks. One island per clause; material outside needs its own outer join. An island holds at most one phrase and may close partway through it ([scope islands](spans.md#scope-islands)).
 
-| Agalan | English |
+| Agazan | English |
 |--------|---------|
 | `zazawan ^ zowodel zal ^ zam` | *Azawan and (just water)* |
 | `zazawan ^ zal ^ zam` | *Azawan and nothing* |
@@ -984,7 +984,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -994,7 +994,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *dove* | `adevel` | |
 | *seal* | `ezevom` | `ezevol` *seal* |
 
-#### English → Agalan {#advanced-english-to-agalan}
+#### English → Agazan {#advanced-english-to-agazan}
 
 **1.** *a page or a pen (the usual named menu)*
 
@@ -1036,7 +1036,7 @@ NAME[z-and]
 [z-Alahen | z-something-else]
 :::
 
-#### Agalan → English {#advanced-agalan-to-english}
+#### Agazan → English {#advanced-agazan-to-english}
 
 **1.** `zaen.`
 
@@ -1091,7 +1091,7 @@ Lookup grids that restate forms taught above; nothing here is new.
 
 Most other phrase joins need two or more items. These edge readings keep a defined sense at every arity, or mix two joins by nesting.
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | **…ul** / **…um** / **…un** | deny at every arity | standalone *no*; one item *not X*; multi *none of* |
 | **…ar** / **…or** / **…er** / **…ur** | unspecified member at every arity | [unspecified **-r**](#unspecified-member-r-phrase) |

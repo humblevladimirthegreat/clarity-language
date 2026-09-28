@@ -1,17 +1,17 @@
 /**
  * Retie a Markdown page, gated by the same span classes the doc lint uses
- * ([agalan-docs.ts](../lint/agalan-docs.ts)): only text that reads as Agalan is rewritten.
- * Anything that would change but is not clearly Agalan becomes a review item instead.
+ * ([agazan-docs.ts](../lint/agazan-docs.ts)): only text that reads as Agazan is rewritten.
+ * Anything that would change but is not clearly Agazan becomes a review item instead.
  */
 import {
-  classifyAgalanSpan,
+  classifyAgazanSpan,
   decodeEntities,
   ENGLISH_IN_CODE,
   HTML_CODE_RE,
-  isAgalanLintCandidate,
+  isAgazanLintCandidate,
   LINT_MARKER_RE,
   SPOKEN_OPAQUE_RE,
-} from "../lint/agalan-docs.js";
+} from "../lint/agazan-docs.js";
 import { fillSelf } from "../learner-name.js";
 import type { ClassifyTables } from "../parse/classify.js";
 import {
@@ -43,7 +43,7 @@ export type RetieReview = {
   reason: string;
 };
 
-/** One piece of Agalan code (rewritten or not), kept so the caller can parse before and after. */
+/** One piece of Agazan code (rewritten or not), kept so the caller can parse before and after. */
 export type RetiedSpan = {
   before: string;
   after: string;
@@ -57,7 +57,7 @@ export type RetieMarkdownResult = {
   changes: RetieChange[];
   reviews: RetieReview[];
   spans: RetiedSpan[];
-  /** English names and quoted payloads rewritten after their Agalan. */
+  /** English names and quoted payloads rewritten after their Agazan. */
   followChanges: RetieChange[];
   /** Name / payload pairs this page's code changes imply (for other pages that mention them). */
   followPairs: FollowPairs;
@@ -68,7 +68,7 @@ export type RetieMarkdownResult = {
 export type RewriteOptions = {
   /** Pairs from other pages (a house-cast name in prose where this page has no code for it). */
   follow?: FollowPairs;
-  /** Common English words: never retied word by word inside a line that is not a whole Agalan span. */
+  /** Common English words: never retied word by word inside a line that is not a whole Agazan span. */
   english?: ReadonlySet<string>;
   /** Leave names, quoted payloads and morph lines for the caller's `finishFollow` (after every page is read). */
   deferFollow?: boolean;
@@ -107,7 +107,7 @@ export function rewriteMarkdown(
     return probe.length > 0;
   };
 
-  const rewriteAgalan = (text: string, index: number, cls: string): string => {
+  const rewriteAgazan = (text: string, index: number, cls: string): string => {
     const stem = cls === "word" ? stemOfLineWords(input, index, text.trim(), map) : undefined;
     if (stem !== undefined) {
       if (stem.review) reviews.push({ text, index, reason: stem.review });
@@ -130,7 +130,7 @@ export function rewriteMarkdown(
         : base;
     let out = "";
     let at = 0;
-    // A spoken opaque span's interior is foreign text, not Agalan words.
+    // A spoken opaque span's interior is foreign text, not Agazan words.
     for (const match of text.matchAll(new RegExp(SPOKEN_OPAQUE_RE.source, "g"))) {
       const innerStart = match.index! + match[1]!.length;
       const innerEnd = match.index! + match[0].length - match[2]!.length;
@@ -153,22 +153,22 @@ export function rewriteMarkdown(
   };
 
   /** One inline span or one fence line, routed by its lint class. */
-  const rewriteLine = (text: string, index: number, onlyReadsAsAgalan = false): string => {
+  const rewriteLine = (text: string, index: number, onlyReadsAsAgazan = false): string => {
     if (!text.trim()) return text;
     // Classify with the learner-name slot filled, as the lint does (`zSELFn` → `zeman`).
-    const cls = classifyAgalanSpan(fillSelf(text));
-    const allowed = onlyReadsAsAgalan ? cls !== "template" && REWRITE_CLASSES.has(cls) : REWRITE_CLASSES.has(cls);
+    const cls = classifyAgazanSpan(fillSelf(text));
+    const allowed = onlyReadsAsAgazan ? cls !== "template" && REWRITE_CLASSES.has(cls) : REWRITE_CLASSES.has(cls);
     if (allowed) {
-      return rewriteAgalan(text, index, cls);
+      return rewriteAgazan(text, index, cls);
     }
     if (wouldChange(text)) {
-      // The doc lint checks every word in code that looks like Agalan, whatever the line is,
+      // The doc lint checks every word in code that looks like Agazan, whatever the line is,
       // so those words must move with the lexicon. Other words stay; the line is reviewed.
       const before = changes.length;
       const out = rewritePlainTokens(
         text,
         (core, at) =>
-          isAgalanLintCandidate(core) && !english.has(core) ? retieCore(core, map, { stems, occurrences, at }) : null,
+          isAgazanLintCandidate(core) && !english.has(core) ? retieCore(core, map, { stems, occurrences, at }) : null,
         index,
         changes,
       );
@@ -177,9 +177,9 @@ export function rewriteMarkdown(
         index,
         reason: `${
           cls === "unclassified"
-            ? "mixes Agalan and other words"
-            : onlyReadsAsAgalan
-              ? "text-fence line that is not a whole Agalan span"
+            ? "mixes Agazan and other words"
+            : onlyReadsAsAgazan
+              ? "text-fence line that is not a whole Agazan span"
               : "reads as English"
         }; ${changes.length > before ? "retied word by word, check the English around it" : "holds an old root, not retied"}`,
       });
@@ -203,7 +203,7 @@ export function rewriteMarkdown(
   const code = (text: string, index: number, meta: CodeSpanMeta): string => {
     const marker = meta.marker ? LINT_MARKER_RE.exec(meta.marker)?.[1] : undefined;
     if (marker === "fragment") {
-      return rewriteAgalan(text, index, "marked-fragment");
+      return rewriteAgazan(text, index, "marked-fragment");
     }
     if (meta.kind === "fence") {
       const info = meta.info.split(/\s+/)[0] ?? "";
@@ -215,32 +215,32 @@ export function rewriteMarkdown(
         for (const span of inner.spans) spans.push({ ...span, index: span.index + index });
         return inner.text;
       }
-      // Unmarked fences fail the lint anyway; treat them like `agalan` so the retie is not lost.
-      return eachLine(text, index, rewriteLine, info !== "" && info !== "agalan");
+      // Unmarked fences fail the lint anyway; treat them like `agazan` so the retie is not lost.
+      return eachLine(text, index, rewriteLine, info !== "" && info !== "agazan");
     }
     return rewriteLine(text, index);
   };
 
   /** An HTML `<code>` body (used where a span holds `<…>`, which Vue would read as a tag). */
   const htmlCode = (body: string, index: number): string => {
-    const cls = classifyAgalanSpan(fillSelf(decodeEntities(body)));
-    return REWRITE_CLASSES.has(cls) ? rewriteAgalan(body, index, cls) : rewriteLine(body, index);
+    const cls = classifyAgazanSpan(fillSelf(decodeEntities(body)));
+    return REWRITE_CLASSES.has(cls) ? rewriteAgazan(body, index, cls) : rewriteLine(body, index);
   };
 
-  /** Prose: an emphasised multi-word run that parses as an Agalan sentence or phrase (`*zazawan vawalal.*`) reties as a span. */
+  /** Prose: an emphasised multi-word run that parses as an Agazan sentence or phrase (`*zazawan vawalal.*`) reties as a span. */
   const proseTokens = (text: string, index: number): string => {
     let out = "";
     let at = 0;
     for (const match of text.matchAll(/(?<!\*)\*([^*\n]+)\*(?!\*)/g)) {
       const inner = match[1]!;
       if (!/\s/.test(inner.trim())) continue; // one word: never retied (proseWords)
-      const cls = classifyAgalanSpan(fillSelf(inner));
+      const cls = classifyAgazanSpan(fillSelf(inner));
       if (cls !== "sentence" && cls !== "phrase") continue;
       // Classification is by shape: *even though* and *over there* are phrase-shaped English.
       if (!parses(fillSelf(inner))) continue;
       const innerStart = match.index! + 1;
       out += proseWords(text.slice(at, innerStart), index + at);
-      out += rewriteAgalan(inner, index + innerStart, cls);
+      out += rewriteAgazan(inner, index + innerStart, cls);
       at = innerStart + inner.length;
     }
     return out + proseWords(text.slice(at), index + at);
@@ -248,7 +248,7 @@ export function rewriteMarkdown(
 
   /**
    * Prose words are never retied. A lone word cannot be told from English (*one*, *here*,
-   * *bone* all fit the root shape), and emphasis in prose is English glosses; Agalan in
+   * *bone* all fit the root shape), and emphasis in prose is English glosses; Agazan in
    * prose is in code. Hits are reported for review.
    */
   const proseWords = (text: string, index: number): string =>

@@ -18,7 +18,6 @@ Prosody
 -lint check that vocabulary is taught and used in translation exercises.
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -intentionally discourage speaker and listener person pronoun by making them five letters instead of three.
--remove unneeded tests
 
 final exam
 
@@ -29,9 +28,9 @@ save for near end of limit resets:
 -do a style pass in grammar-docs. Check for adherence to doc-style and otherwise ensure natural sounding explanations.
 
 save for end:
--finish English->Agalan cheat sheets, including tense
+-finish English->Agazan cheat sheets, including tense
 -do parser consistency pass. Does the parser completely and accurately encode all the meaning of the grammar?
--add Agalan->English cheat sheet
+-add Agazan->English cheat sheet
 -Cheat sheet for joins and hooks
 -join vowel decision tree in advanced vowel series.
 

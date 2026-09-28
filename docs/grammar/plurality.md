@@ -1,6 +1,6 @@
 # Plurality
 
-English *they* and *the Smiths* often mean a named person plus people around them, not a counted list. Agalan marks that **associative group** with optional **-x** after the [word ending](word-endings.md).
+English *they* and *the Smiths* often mean a named person plus people around them, not a counted list. Agazan marks that **associative group** with optional **-x** after the [word ending](word-endings.md).
 
 ## Beginner {#beginner}
 
@@ -48,7 +48,7 @@ An extra noun takes **-x** the same way. Here the recipient is Alahen and associ
 
 **Compare with:** English *cats* can mean a kind in general. **-lx** is a **set in this situation**.
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | **-lx** | indefinite group (a set in this situation), concrete | *some cats* (a set in this situation) |
 | **-mx** | indefinite group (a set in this situation), abstract | same grouping on a **-m** root |
@@ -104,7 +104,7 @@ The same roots take the role letter of the slot they fill. As a direct object th
 >
 > "Azawan sees us (you and I)."
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | **`amunx`** | speaker plus that person’s people (listener not assumed); `zamunx` as subject, `damunx` as object | *I and my people* (not you) |
 | **`ohenx`** | all current addressees; `zohenx` as subject, `dohenx` as object | *you all* |
@@ -123,7 +123,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan |
+| English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
@@ -143,7 +143,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *tell* | `vezebel` |
 | *interlocutors* | `ohan` |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *Azawan and associates sit.*
 
@@ -209,7 +209,7 @@ z-Alahen-x | d-Azawan | v-punch
 y-question | z-Azawan-x | v-scream
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zahabenx vehahel.`
 
@@ -288,7 +288,7 @@ y-question | z-Ahaben-x | v-scream
 ### Associate-set resolution
 <a id="associate-resolution"></a>
 
-English *Azawan and them* does not say who belongs. Agalan **-x** is the same: who counts is **open** unless you say. When the list matters, name the members with a [join](joins.md). When it does not, the listener guesses in this order: a group already named in the talk, then the obvious group in the scene (this meeting, this household).
+English *Azawan and them* does not say who belongs. Agazan **-x** is the same: who counts is **open** unless you say. When the list matters, name the members with a [join](joins.md). When it does not, the listener guesses in this order: a group already named in the talk, then the obvious group in the scene (this meeting, this household).
 
 > `zazawanx vowogal.`
 >
@@ -323,14 +323,14 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 >
 > "They (Azawan and associates) sing as one outing."
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | subject set + singular `/v/` | how they act is left open | *they walk* (together, separately, or don’t care) |
 | subject set + `/v/`…**-x** | collective: one shared act | *they walk as one outing* |
 | named person + `/v/`…**-x** | joint doing; unnamed others share the act | *Azawan sings jointly* (not a solo) |
 | group-kind singular (*the family*) + `/v/`…**-x** | the group acts as one unit | *the family walks as one unit* |
 
-| Agalan | English |
+| Agazan | English |
 |--------|---------|
 | `zazawanx vezehel` | *Azawan and associates sing* (together or each, or don’t care) |
 | `zazawanx vezehelx` | *they sing as one outing* |
@@ -352,14 +352,14 @@ English *the boxes are heavy* can mean each box or the pile. Put **-x** on the *
 >
 > "The file-boxes are heavy as a pile (but not individually)."
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | host set + singular `/ɡ/` | each member, or don’t care | *the boxes are heavy* |
 | host set + `/ɡ/`…**-x** | collective: the set as one pile | *heavy as a pile* |
 
 With a [phrase join](joins.md), SHARED singular scale under **`a`** is already **each member**; SHARED `/ɡ/`…**-x** is **collective**.
 
-| Agalan | English |
+| Agazan | English |
 |--------|---------|
 | `zavabal zudul zal garagam` | *the file-box and the toolbox are (each) heavy* |
 | `zavabal zudul zal garagamx` | *the file-box and the toolbox are heavy together* (collective SHARED) |
@@ -385,7 +385,7 @@ To call a group at the start of a turn, put **-x** on the vocative (`/y/`) after
 >
 > "Hey, cats!"
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | **-lx** | kind-based group address | *hey, kids* |
 | **-nx** | titled group | *Team Alpha* |
@@ -420,7 +420,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan |
+| English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
@@ -435,7 +435,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *punch* | `vabahel` |
 | *fight* | `vavadal` |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *Hey, you all!*
 
@@ -501,7 +501,7 @@ z-Alahen-x | v-sneak-x
 z-Alahen-x | d-Azawan | v-punch-x
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `yahabenx.`
 

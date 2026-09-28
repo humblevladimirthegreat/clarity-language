@@ -64,7 +64,7 @@ const jobs = [
   run("test", "npm", ["test", "--silent"], { buffer: true }),
   run("lint md balance", "node", ["scripts/lint-md-balance.mjs"], { buffer: true }),
   run("lint sidebar", bin("tsx"), ["scripts/lint-sidebar-pages.ts"], { buffer: true }),
-  run("lint agalan", bin("tsx"), ["scripts/lint-agalan-docs.ts"], { buffer: true }),
+  run("lint agazan", bin("tsx"), ["scripts/lint-agazan-docs.ts"], { buffer: true }),
   run("eslint", bin("eslint"), ["--cache", "--cache-location", "node_modules/.cache/eslint", "docs/grammar/.vitepress/components"], { buffer: true }),
   run("docs:publish", "npm", ["run", "-s", "docs:publish"], { buffer: true }),
 ];

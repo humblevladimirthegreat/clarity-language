@@ -4,7 +4,7 @@ Editors only. Handoff note from the expressiveness review (Phase 1, 2026-09-25) 
 
 ## Resolved (2026-09-25)
 
-The lint checked one word at a time, and the morph-gloss check dropped any example whose sentence parse failed. It now parses every example sentence and multi-word phrase as a whole. It reports a parse failure instead of skipping the gloss comparison, and it fails any code span it can't classify ([marking Agalan](grammar-docs.md#marking-agalan)). The docs the new checks flagged are fixed (questions.md *not* order, pronouns.md resume glosses, numeric-derivation `/w/` order, and others), along with two parser gaps (`v[…]` / `th(…)` outside noun slots, `xuxur xuxum`). Any documented form the parser rejects now fails `npm run build`, so the old "documented forms the parser rejects" list is covered.
+The lint checked one word at a time, and the morph-gloss check dropped any example whose sentence parse failed. It now parses every example sentence and multi-word phrase as a whole. It reports a parse failure instead of skipping the gloss comparison, and it fails any code span it can't classify ([marking Agazan](grammar-docs.md#marking-agazan)). The docs the new checks flagged are fixed (questions.md *not* order, pronouns.md resume glosses, numeric-derivation `/w/` order, and others), along with two parser gaps (`v[…]` / `th(…)` outside noun slots, `xuxur xuxum`). Any documented form the parser rejects now fails `npm run build`, so the old "documented forms the parser rejects" list is covered.
 
 ## Open: parser strictness
 

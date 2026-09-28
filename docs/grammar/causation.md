@@ -46,7 +46,7 @@ Ordinary content on the same root is still available (`zebol` *a paper-roll*).
 
 **Compare with:** *if* (`thodom` / `godom`) leaves other routes possible. *Only if* says the outcome needs this.
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thodom` / `godom`** | enough for the outcome; condition not asserted | *if* | `odol` *door* | 🚪: walk through only if it opens |
 | **`thebom` / `gebom`** | the outcome needs this; condition not asserted | *only if* / *needs* | `ebol` *paper-roll* | 🧻: without it the situation does not run |
@@ -61,7 +61,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. The out
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -81,7 +81,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. The out
 | *if* | `thodom` | `odol` *door* |
 | *only-if* | `thebom` | `ebol` *paper-roll* |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *A seedling grows if there is sun.*
 
@@ -147,7 +147,7 @@ z-Alahen | v-tell | [th-if | b-fire]
 z-Alahen | v-pour | [th-only-if | b-fire]
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zavavul godom bazahol.`
 
@@ -255,7 +255,7 @@ Several conditions can sit inside `/b/` as a [join](joins.md) (`thodom bagayol b
 
 Beginner used *if* and *only if* without asserting the condition. Pick the pole by **direction** and by whether you **assert** the condition as a world-fact. Clause poles take **-m**. The same roots on `/ɡ/` attach to a noun. Ordinary content still uses ordinary endings (`zeral` *a brick*; `zewum` *reciprocity*).
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thodom` / `godom`** | enough; condition not asserted | *if* | `odol` *door* | 🚪: walk through only if it opens |
 | **`theram` / `geram`** | enough; condition asserted as the reason | *because* | `eral` *brick* | 🧱: the cause is what the result sits on |
@@ -305,7 +305,7 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 >
 > "Azawan walks even if Alahen sleeps."
 
-| Agalan | English |
+| Agazan | English |
 |--------|---------|
 | **`thodom burl`** | *unless* |
 | **`hazem thodom barl`** | *even if* |
@@ -343,7 +343,7 @@ When a pole follows **`thegem`**, the `/b/` belongs to the pole, as above (`theg
 
 **Compare with:** *let* is [permission](sakes.md#permission), which puts the grantor in the same hosted `/b/` slot. *Get someone to* (ask, persuade) is tell + a *to* [stand-in](dependents.md#stand-in).
 
-| Agalan | English |
+| Agazan | English |
 |--------|---------|
 | **`thegem`** + `/b/` | *make* (causer in `/b/`) |
 
@@ -356,7 +356,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. A f
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -376,7 +376,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. A f
 | *CAUSE* | `thegem` | `egel` *gear* |
 | *that-clause* | `barl` | |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *Azawan sits if Ahaben sees.*
 
@@ -434,7 +434,7 @@ z-Azawan | v-sit | th-only-if | [th-because | b-that-clause] | z-Ahaben | v-see
 z-Alahen | v-run | th-CAUSE | [th-if | b-overwhelm]
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zahaben vehahel thodom barl zalahen vahahal.`
 

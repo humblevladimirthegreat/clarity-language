@@ -2,22 +2,22 @@
 
 **Status:** PROPOSED  
 **Related:** kept linguistic stages in `src/tts/` (parse → `toSpeech` → `toPhonemes`; see [Existing stages](#existing-stages)); inverse dictation is `learner-stt.md`; sung contours (same bank) in `diphone-singing.md`; phones from [phonology.md](../grammar/phonology.md)  
-**Design authority:** spoken forms and IPA stay in the grammar docs. This proposal covers the **`synthesize`** stage (a recorded Agalan diphone bank plus in-browser concatenation) and the site **Speak UI**. It does not change letters, phonotactics, or writing→speech maps. It is the only proposal needed to reimplement Speak; the earlier `learner-tts.md` (KittenTTS) is rejected and its still-relevant policy is folded in below.
+**Design authority:** spoken forms and IPA stay in the grammar docs. This proposal covers the **`synthesize`** stage (a recorded Agazan diphone bank plus in-browser concatenation) and the site **Speak UI**. It does not change letters, phonotactics, or writing→speech maps. It is the only proposal needed to reimplement Speak; the earlier `learner-tts.md` (KittenTTS) is rejected and its still-relevant policy is folded in below.
 
 ## Motivation
 
-Learners need to **hear** Agalan, not only read it. Native `speechSynthesis` on raw orthography fails: letter values differ from English (`x` = /ʒ/), stacked vowels are separate syllables, and preferred **writing** forms (number shorthand, span brackets) are not what speech uses.
+Learners need to **hear** Agazan, not only read it. Native `speechSynthesis` on raw orthography fails: letter values differ from English (`x` = /ʒ/), stacked vowels are separate syllables, and preferred **writing** forms (number shorthand, span brackets) are not what speech uses.
 
-A first attempt shipped KittenTTS (an English-trained neural vocoder with an IPA tokenizer) and was removed: output was unreliable, the build downloaded the model from HuggingFace (failing in restricted networks), and feeding Agalan G2P still imposed **English rhythm** (stress-timed shortening, pull toward schwa). Its workaround — lengthening non-final vowels with `ː` — was not Agalan phonology and has been dropped from `wordIpaPhones`.
+A first attempt shipped KittenTTS (an English-trained neural vocoder with an IPA tokenizer) and was removed: output was unreliable, the build downloaded the model from HuggingFace (failing in restricted networks), and feeding Agazan G2P still imposed **English rhythm** (stress-timed shortening, pull toward schwa). Its workaround — lengthening non-final vowels with `ː` — was not Agazan phonology and has been dropped from `wordIpaPhones`.
 
 Learners need to hear the [phonology](../grammar/phonology.md) table: four full vowels, stacked vowels as **two syllables**, monophthong **`o`**, `/ɦ/` and `/ɹ/` as specified. A diphone concatenator plays **those** takes, with **duration owned by the engine** (equal syllable timing), not by an English acoustic prior.
 
-There is **no** off-the-shelf IPA-universal diphone database. MBROLA / Festival banks are other languages (English `/oʊ/`, Spanish tap **r**, missing `/ɦ/`). Reusing them would repeat Kitten’s class of error. The bank is **one speaker, recorded for Agalan**.
+There is **no** off-the-shelf IPA-universal diphone database. MBROLA / Festival banks are other languages (English `/oʊ/`, Spanish tap **r**, missing `/ɦ/`). Reusing them would repeat Kitten’s class of error. The bank is **one speaker, recorded for Agazan**.
 
 ## Goals
 
 1. Provide the **native** synthesizer for docs Speak (Inspect / gloss Play; see [UI integration](#ui-integration)).
-2. Keep **`toSpeech` / `toPhonemes`** as the only Agalan-specific linguistic stages; `synthesize` consumes the phoneme plan (phones, syllable breaks, boundary tags).
+2. Keep **`toSpeech` / `toPhonemes`** as the only Agazan-specific linguistic stages; `synthesize` consumes the phoneme plan (phones, syllable breaks, boundary tags).
 3. Concatenate **diphones** (mid-phone to mid-phone), not CV islands spliced on vowel edges.
 4. **Own timing:** equal (or coda-weighted) ms per syllable; stretch the **steady vowel**, not the burst. G2P emits short vowels only.
 5. **Own pitch:** record near-monotone; impose F0 at synthesis (flat, then coarse drops at documented boundaries). Takes need not share exact Hertz.
@@ -26,12 +26,12 @@ There is **no** off-the-shelf IPA-universal diphone database. MBROLA / Festival 
 
 ## Non-goals
 
-- Neural Agalan voice training, Toucan / FastSpeech2, or fine-tunes on eSpeak.
+- Neural Agazan voice training, Toucan / FastSpeech2, or fine-tunes on eSpeak.
 - Studio naturalness, singing, or musical timing (phonology singability stays a **design** filter; Speak stays speech).
 - Unvoiced **style** allophones in v1 (`/k t p s f h/` etc.) — default **voiced** inventory only.
 - Reusing MBROLA/Festival diphone files as the shipped voice.
 - Changing [phonology.md](../grammar/phonology.md) to match a synthesizer.
-- Speaking opaque / foreign interiors as Agalan — see [Foreign and opaque](#foreign-and-opaque).
+- Speaking opaque / foreign interiors as Agazan — see [Foreign and opaque](#foreign-and-opaque).
 - Speaking parser recoveries or other material **not present in the written input** — see [Write-only surface](#write-only-surface).
 - Perfect discourse intonation beyond existing SpeechPlan pause / turn / continue tags.
 
@@ -63,7 +63,7 @@ PhonemePlan (existing)
 These are implemented in `src/tts/` and tested; `synthesize` consumes their output.
 
 ```text
-Agalan text → parse → toSpeech (SpeechPlan) → toPhonemes (PhonemePlan) → synthesize (this proposal)
+Agazan text → parse → toSpeech (SpeechPlan) → toPhonemes (PhonemePlan) → synthesize (this proposal)
 ```
 
 | Stage | Input | Output | Owns |
@@ -73,7 +73,7 @@ Agalan text → parse → toSpeech (SpeechPlan) → toPhonemes (PhonemePlan) →
 | **`toPhonemes`** (`plan.ts`, `phonemes.ts`) | Speech tokens | Per-word syllables + IPA (`ipa` dotted for display; `ipaPhonemes` undotted stream with boundary punctuation) | [phonology.md](../grammar/phonology.md) letter table only |
 | **`synthesize`** | Phoneme plan | Audio | This proposal |
 
-Public helpers: `previewSpeech(text)`, `previewPhonemes(text)`, `skipLabel(reason)` (exported via `src/tts/browser.ts`, aliased `@tts-browser` in the VitePress config). Inspect already shows `previewPhonemes(text).words[].ipa` as the **IPA:** line. **No lexicon lookup** drives pronunciation of native Agalan.
+Public helpers: `previewSpeech(text)`, `previewPhonemes(text)`, `skipLabel(reason)` (exported via `src/tts/browser.ts`, aliased `@tts-browser` in the VitePress config). Inspect already shows `previewPhonemes(text).words[].ipa` as the **IPA:** line. **No lexicon lookup** drives pronunciation of native Agazan.
 
 ### Speech normalization (`toSpeech`)
 
@@ -91,7 +91,7 @@ Skip reasons (`foreign`, `writing`, `shorthand`, `punct`, `error`) are surfaced 
 
 ### Foreign and opaque
 
-Never run Agalan G2P on opaque / foreign payloads (`d<sushi>`, `z<Sam>n`). The PoS…ending **shell** is Agalan; the interior is a **loan segment**. Today loan segments are skipped (`foreign`). Planned default: a brief browser `speechSynthesis` island in a `lang`-matched voice when available, else skip with a short pause and a tooltip (“foreign surface — not Agalan phonology”). Never substitute an Agalan unit or an English fallback for a missing native diphone.
+Never run Agazan G2P on opaque / foreign payloads (`d<sushi>`, `z<Sam>n`). The PoS…ending **shell** is Agazan; the interior is a **loan segment**. Today loan segments are skipped (`foreign`). Planned default: a brief browser `speechSynthesis` island in a `lang`-matched voice when available, else skip with a short pause and a tooltip (“foreign surface — not Agazan phonology”). Never substitute an Agazan unit or an English fallback for a missing native diphone.
 
 ### Write-only surface
 
@@ -103,10 +103,10 @@ The previous Speak UI was removed with Kitten; restore these surfaces when this 
 
 | Surface | Behavior |
 |---------|----------|
-| [Inspect](../grammar/inspect.md) paste box | **Speak Agalan** button beside the existing **IPA:** line; a “Will speak: … / Skipped: …” preview built from `PhonemePlan.words` + `skipped` |
+| [Inspect](../grammar/inspect.md) paste box | **Speak Agazan** button beside the existing **IPA:** line; a “Will speak: … / Skipped: …” preview built from `PhonemePlan.words` + `skipped` |
 | Inspect card (hover / pinned) | **Speak word** button on the selected word or range; keyboard **`s`** speaks the selection |
 | Name picker (`NameHelper.vue`) | **Say it** on the offered / chosen name (`<name>n.`) |
-| Grammar examples (later) | Play control on fenced `agalan` lines / exercise keys |
+| Grammar examples (later) | Play control on fenced `agazan` lines / exercise keys |
 | Errors | Show engine / load errors inline; skipped tokens listed, never voiced |
 
 Behavior notes carried from the Kitten implementation:
@@ -115,7 +115,7 @@ Behavior notes carried from the Kitten implementation:
 - Let the button paint its loading state (two animation frames) before heavy work starts.
 - Synthesize in a **Web Worker**; play via Web Audio on the main thread.
 - Lazy-load the bank on first Play; Inspect may prefetch on mount. Never autoplay.
-- Accessible names on every button (“Speak Agalan”, “Speak word”, “Say it”).
+- Accessible names on every button (“Speak Agazan”, “Speak word”, “Say it”).
 
 ## Diphone definition
 
@@ -198,7 +198,7 @@ No IMS-Toucan in the docs path (Python, large, approximate phones).
 |-------------|-----------------|
 | KittenTTS (shipped, then removed) | Unreliable; English reduction patched with `ː`; network model fetch broke builds |
 | eSpeak-NG WASM | Robotic, and its phone set approximates `/e̞/`, `/ɦ/`, `/ɹ/` |
-| Web Speech API only | Cannot hit Agalan phones; kept only for loan islands |
+| Web Speech API only | Cannot hit Agazan phones; kept only for loan islands |
 | Cloud neural TTS | Network, cost, privacy, weak conlang phone control |
 | Equal-syllable **CV** concat | Simpler record list; splices on the vowel edge |
 | Formant / Klatt | Exact targets possible; more robotic than recorded diphones |
@@ -213,7 +213,7 @@ No IMS-Toucan in the docs path (Python, large, approximate phones).
 - [ ] Hiatus (`yuon` = `/ju.on/`) is two syllables of comparable length.
 - [ ] Speak UI surfaces in [UI integration](#ui-integration) are restored and pass the Vue a11y lint.
 - [ ] Offline after first sprite load; no cloud.
-- [ ] Opaque interiors still do not use Agalan units (loan policy unchanged).
+- [ ] Opaque interiors still do not use Agazan units (loan policy unchanged).
 - [ ] Recording protocol (carrier, cut points, F0 note) is documented next to the bank (editor path under `docs/grammar/public/tts/` or `data/tts/`, not a grammar teaching page).
 
 ## Phased delivery

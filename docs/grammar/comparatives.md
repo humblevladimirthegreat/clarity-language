@@ -81,7 +81,7 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 >
 > "Azawan is about as bright as Alahen."
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | Rank **`e`** (`zel`) | rank on a shared quality | *more … than* / *the …-est* | **`e`** ≈ order |
 | Equality **`ae`** (`zael` / `zaem`) | same height on the quality | *as … as* / *about as … as* | **`ae`** ≈ add + order (they share a rank) |
@@ -94,7 +94,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -105,7 +105,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 | *intensity* | `ahegem` | `ahegel` *hockey* |
 | *ocean* | `wohahal` | `ohahal` *ocean* |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *Azawan is more agile than Alahen.*
 
@@ -163,7 +163,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 [z-Alahen | z-rank/more | g-intensity]
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zalahen zahaben zel gahagum.`
 
@@ -235,7 +235,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 
 Beginner already used two names plus **`zel`** (*more … than*) and one name (*the …-est*). The same shared-scale pattern also uses reverse rank **`ue`** (*less … than* / *the least*) and **zero** names.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |---------|-----|---------|-----|
 | **Multi (2+)** + shared scale under **`e` / `ue`** | comparative ladder | earlier above later (`e`); later above earlier under **`ue`** | **`e`** ≈ order; **`u`** ≈ undo |
 | **Single-item (1)** + shared scale under **`e` / `ue`** | superlative | *the …-est* / *the least …* under **`ue`** | one name is the extreme |
@@ -302,7 +302,7 @@ When English would say *more cats than dogs*, the ladder is **how many**, not a 
 >
 > "There are as many cats as dogs."
 
-The noun decides whether English says *many* or *much*: cats are counted, tea is measured. Agalan uses the same **`gral`** for both.
+The noun decides whether English says *many* or *much*: cats are counted, tea is measured. Agazan uses the same **`gral`** for both.
 
 Open **`gram`** ranks by a **rough impression** instead of a count: *it looks like more cats than dogs*. Use **`gral`** when you counted or measured, and **`gram`** when you are going by how it seems.
 
@@ -341,7 +341,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -353,7 +353,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 | *intensity* | `ahegem` | `ahegel` *hockey* |
 | *lift* | `veleval` | `eleval` *lift* |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *Azawan is less heavy than Alahen.*
 
@@ -403,7 +403,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 [z-Alahen | z-Azawan | z-rank/more | h-intensity] | v-lift
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zazawan zalahen zahaben zem garagam.`
 
@@ -486,7 +486,7 @@ Closed **-l** stands behind the ranking. Open **-m** (`zuem`) is soft *somewhat 
 
 Each bar is a hosted overlay: published root plus **-n** under `/z/` `/d/` `/b/`. Soft *somewhat worse than…* stays on the rank join (**`zuem`**), not on a second ending of the bar.
 
-| Agalan | Use | English | Same root as |
+| Agazan | Use | English | Same root as |
 |---------|-----|---------|----------------|
 | **`zeyen`** | named Average bar | *Average* (mean of the relevant population) | `eyel` *yin-yang* |
 | **`zahen`** | named Typical bar | *Typical* (usual / modal case) | `ahel` *hamster* |
@@ -501,7 +501,7 @@ Each bar is a hosted overlay: published root plus **-n** under `/z/` `/d/` `/b/`
 
 Single-item `zazawan zuel gamadam` is *the least challenging* in the group in play. **`zolon`** as the second name **names** the universal class as the bar. Standalone closed **`zual`** / stock **`zuan`** stay [join](joins.md#standalone-phrase) *everything / everyone* in other slots — not this overlay.
 
-| Agalan | Reading |
+| Agazan | Reading |
 |---------|---------|
 | `zamun zegun zuel gezehel` | I am worse at singing than Professional |
 | `zebeyum zeyen zuem gagazam` | soft: the draft is somewhat less clear than Average |
@@ -514,9 +514,9 @@ Single-item `zazawan zuel gamadam` is *the least challenging* in the group in pl
 
 ### Sake benchmarks (*enough* / *too*) {#sake-benchmarks}
 
-English *enough* and *too* compare against **what a sake requires**. Agalan names that bar like the others: the [sake root](sakes.md#sake-inventory) plus **-n**. The bar is the **speaker's** sake unless you say otherwise.
+English *enough* and *too* compare against **what a sake requires**. Agazan names that bar like the others: the [sake root](sakes.md#sake-inventory) plus **-n**. The bar is the **speaker's** sake unless you say otherwise.
 
-| Agalan | Use | English | Same root as |
+| Agazan | Use | English | Same root as |
 |---------|-----|---------|----------------|
 | **`zugen`** | sake bar, sake not named | *Some-sake* (what a sake requires) | `ugel` *egg* |
 | **`zuhon`** | survival sake bar | *what safety needs* | `uhol` *shield* |
@@ -565,7 +565,7 @@ To say **whose** need it is, put that person in `/b/` right after the shared sca
 
 ### Vague amounts (*many* / *few*) {#vague-amounts}
 
-English *many* and *few* compare against an unstated baseline. Agalan always names it: put a bar in the list and rank on [amount](#amount-scale). Pick the bar that you mean.
+English *many* and *few* compare against an unstated baseline. Agazan always names it: put a bar in the list and rank on [amount](#amount-scale). Pick the bar that you mean.
 
 > `zagadalx zahen zel gral.`
 >
@@ -603,7 +603,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -625,7 +625,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *Pleasure-sake* | `ozun` | `ozul` *strawberry* |
 | *artistry* | `ebudam` | `ebudal` *paintbrush* |
 
-#### English → Agalan {#advanced-english-to-agalan}
+#### English → Agazan {#advanced-english-to-agazan}
 
 **1.** *Azawan is worse at singing than Professional.*
 
@@ -691,7 +691,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 [z-Alahen | z-Relatedness-sake | z-rank/less | g-sing]
 :::
 
-#### Agalan → English {#advanced-agalan-to-english}
+#### Agazan → English {#advanced-agazan-to-english}
 
 **1.** `zamun zezon zuel gezehel.`
 

@@ -1,7 +1,7 @@
 # Proposal: reject-by-default parser with a doc-anchored construction registry
 
 **Status:** DONE 2026-09-25 (tooling, not a language change).  
-**Related:** [clause.md](../grammar/clause.md), [marking Agalan](../meta/grammar-docs.md#marking-agalan), [src/parse/](../../src/parse/), [scripts/lint-agalan-docs.ts](../../scripts/lint-agalan-docs.ts)  
+**Related:** [clause.md](../grammar/clause.md), [marking Agazan](../meta/grammar-docs.md#marking-agazan), [src/parse/](../../src/parse/), [scripts/lint-agazan-docs.ts](../../scripts/lint-agazan-docs.ts)  
 **Design authority:** none. The grammar docs decide what is legal. This proposal makes the parser prove it follows them.
 
 ## Motivation
@@ -10,9 +10,9 @@ The docs lint already fails the build when a documented example doesn't parse. N
 
 Finding these forms one at a time never tells us when we're done. Learners pay for this:
 
-- The gloss viewer, and later drills and the web UI, show a confident gloss for text that isn't Agalan. An invalid sentence gets no correction.
+- The gloss viewer, and later drills and the web UI, show a confident gloss for text that isn't Agazan. An invalid sentence gets no correction.
 - A doc typo that happens to land on an accepted but undefined form passes the build.
-- An accepted form with no documented reading can be read two ways, which undercuts Agalan's design goal of unambiguous syntax.
+- An accepted form with no documented reading can be read two ways, which undercuts Agazan's design goal of unambiguous syntax.
 
 The fix is to invert the default. The parser accepts only what a registered construction licenses, and every registered construction points to the doc section that defines it.
 
@@ -53,7 +53,7 @@ Rules:
 
 ## Part 2: two-way coverage check
 
-`parse()` can return the construction IDs a parse used. It reads them off the CST (rule names and labeled alternatives), the word-grammar trace, and the resolve binds. There's no separate tree walk. `lint-agalan-docs` then checks both directions:
+`parse()` can return the construction IDs a parse used. It reads them off the CST (rule names and labeled alternatives), the word-grammar trace, and the resolve binds. There's no separate tree walk. `lint-agazan-docs` then checks both directions:
 
 1. **Docs → grammar (mostly done already).** Every doc example parses.
 2. **Grammar → docs (new).** Every construction is used by at least one example on the page its anchor names. If no page exercises it, the docs never taught it, and the build fails. The fix is to add a teach example to that page, or to narrow or delete the production.
@@ -89,7 +89,7 @@ Checked on 2026-09-25 with `node scripts/parse.mjs`: the parser **accepted** eve
 
 ## Rollout
 
-1. **Registry, no enforcement.** *Done 2026-09-25.* The registry is in `src/parse/constructions.ts`, the tracing in `src/parse/construction-trace.ts` (`parse(…, { constructions: true })`, CLI `--constructions`), and the tests in `src/parse/constructions.test.ts`: every grammar production has an entry and every anchor resolves. Standalone joins and utterance bodies got `LABEL`s. `lint-agalan-docs` prints the coverage report. The first run found 176 constructions, 147 exercised by their anchor page and 29 not. Highlights:
+1. **Registry, no enforcement.** *Done 2026-09-25.* The registry is in `src/parse/constructions.ts`, the tracing in `src/parse/construction-trace.ts` (`parse(…, { constructions: true })`, CLI `--constructions`), and the tests in `src/parse/constructions.test.ts`: every grammar production has an entry and every anchor resolves. Standalone joins and utterance bodies got `LABEL`s. `lint-agazan-docs` prints the coverage report. The first run found 176 constructions, 147 exercised by their anchor page and 29 not. Highlights:
    - `?` / `!` sentence ends are used on no page.
    - Standalone `/h/` / clause joins and shared words after `/v/` / `/h/` / clause joins are used on no page.
    - `/d/` / `/b/` joins are never shown on joins.md.
@@ -105,7 +105,7 @@ Checked on 2026-09-25 with `node scripts/parse.mjs`: the parser **accepted** eve
    Still open:
    Reading IDs `reading.existence` (predication.md) and `reading.bareQuestion` (questions.md) put the new doc sections under the coverage check.
    Moved to step 3: the `validate*` checks in `sentence-parser.ts` (not user-visible; rejects the same inputs).
-3. **Enforce coverage.** *Done 2026-09-25.* Check 2 now fails `lint-agalan-docs` (and so the build): 166 constructions, all exercised by their anchor page.
+3. **Enforce coverage.** *Done 2026-09-25.* Check 2 now fails `lint-agazan-docs` (and so the build): 166 constructions, all exercised by their anchor page.
    - The parser's post-build `validate*` pass moved into `enforce.ts` as anchored rejections (`leftFence`, `emptyIsland`, `islandBinder`, `asOfIntroduceBound`, `asOfResumeBound`, `asOfPerHost`), each with an `invalid-forms` row. The empty-utterance check was dead (the grammar already needs one body) and was deleted. These stay post-parse, like the phase 2 rules: as gates, they would reroute input instead of refusing it (a left-fence `zam` would reparse as a standalone join).
    - Parser bug fixed: `/ɡ/` join fences and the word shared after them were dropped from the result (`zazawan godogol gul.` read as *Azawan is a dog*). They are now kept, as `/h/` fences already were.
    - Deleted: the standalone `/h/` join (plain `/h/` join forms are restrictors, and a stance join closes the stance words before it) and the unreachable `token.standInVerb` branch.

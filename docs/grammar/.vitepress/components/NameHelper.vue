@@ -4,7 +4,7 @@ import { withBase } from 'vitepress'
 import { DEFAULT_SELF_ROOT, type LearnerNameOption } from '@learner-name'
 import { useLearnerName } from '../composables/useLearnerName'
 
-/** Suggest a published root as the learner's Agalan name, or show the one they chose. */
+/** Suggest a published root as the learner's Agazan name, or show the one they chose. */
 const { chosen, eligible, suggested, set, clear, loadEligibleNames } = useLearnerName()
 
 const status = ref<'loading' | 'ready' | 'error'>('loading')
@@ -64,7 +64,7 @@ onMounted(async () => {
     <p v-if="status === 'error'" class="warn">Could not load the lexicon.</p>
     <template v-else-if="chosenOption && !changing">
       <p class="lead">
-        Your Agalan name is <code>{{ chosenOption.name }}</code>
+        Your Agazan name is <code>{{ chosenOption.name }}</code>
         <span class="senses">(<em>{{ chosenOption.concrete }}</em><template v-if="chosenOption.abstract"> / <em>{{ chosenOption.abstract }}</em></template>)</span>.
       </p>
       <div class="actions">
@@ -73,7 +73,7 @@ onMounted(async () => {
       </div>
     </template>
     <template v-else>
-      <p class="lead">Pick an Agalan name. Any published root becomes a name with <strong>-n</strong>.</p>
+      <p class="lead">Pick an Agazan name. Any published root becomes a name with <strong>-n</strong>.</p>
       <div v-if="current" class="card" aria-live="polite">
         <p class="name">
           <span class="emoji" aria-hidden="true">{{ current.emoji }}</span>

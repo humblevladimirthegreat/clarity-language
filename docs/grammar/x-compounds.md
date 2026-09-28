@@ -2,13 +2,13 @@
 <a id="x-compounds"></a>
 <a id="compound-parser"></a>
 
-Sometimes one Agalan word is two smaller meanings with **`x`** in the middle. The last letter (**-l** / **-m** / **-n** / **-r**) still marks the **whole** word. What sits left and right of that **`x`** tells you which kind of word it is.
+Sometimes one Agazan word is two smaller meanings with **`x`** in the middle. The last letter (**-l** / **-m** / **-n** / **-r**) still marks the **whole** word. What sits left and right of that **`x`** tells you which kind of word it is.
 
 ## Beginner {#beginner}
 
 ### Two roots, one word
 
-English often glues two ideas into one word (*peanut butter*) or one hyphenated name. In Agalan you write both dictionary roots in **one** word and put **`x`** between them. The first letter of the word is still the [role letter](clause.md#beginner) (subject, verb, and so on). The [ending](word-endings.md) belongs to the whole word, not to the piece before **`x`** alone. (cue: **x** ≈ plus: two pieces make one word)
+English often glues two ideas into one word (*peanut butter*) or one hyphenated name. In Agazan you write both dictionary roots in **one** word and put **`x`** between them. The first letter of the word is still the [role letter](clause.md#beginner) (subject, verb, and so on). The [ending](word-endings.md) belongs to the whole word, not to the piece before **`x`** alone. (cue: **x** ≈ plus: two pieces make one word)
 
 > `zebeyexabedel.`
 >
@@ -24,7 +24,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 >
 > "love in the crush sense"
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | full root **`x`** full root | two roots, one word | `zebeyexabedel` *peanut butter* | **x** ≈ plus |
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxedehol` *a teacher* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
@@ -38,7 +38,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 ### Words you look up, not build
 <a id="lexical-compounds"></a>
 
-English *bedroom*, *doorbell*, and *friend* feel like one word. Agalan lists those as **one dictionary word** too. You look the word up. You do not make it on the spot by putting **`x`** between *bed* and *house*.
+English *bedroom*, *doorbell*, and *friend* feel like one word. Agazan lists those as **one dictionary word** too. You look the word up. You do not make it on the spot by putting **`x`** between *bed* and *house*.
 
 Inside the dictionary spelling you can still see the two old roots, with a join letter instead of **`x`**. That letter is the [word ending](word-endings.md) of the **left** root: **-l** when that piece is the everyday kind, **-m** when it is the published abstract sense (named **-n** or resume **-r** if that left piece is a name or a resume). The last letter of the word is still the ending of the **whole** entry. In a sentence you add a role letter and that whole-word ending, the same way you do for *dog* or *hammer*.
 
@@ -48,7 +48,7 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 >
 > "a bedroom."
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `zebedalahazal` | bed **-l** house | bedroom | left piece everyday |
 | `zodolebevol` | door **-l** bell | doorbell | left piece everyday |
@@ -61,9 +61,9 @@ If the pairing is not in the dictionary, either glue with **`x`** (`zebeyexabede
 ### One thing or two?
 <a id="compound-vs-separate"></a>
 
-Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agalan words (and a [join](joins.md) if you need *and*). *Peanut butter* is one food, so one word. *Bedroom* is also one thing, but that spelling is already in the dictionary, so there is no **`x`**.
+Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agazan words (and a [join](joins.md) if you need *and*). *Peanut butter* is one food, so one word. *Bedroom* is also one thing, but that spelling is already in the dictionary, so there is no **`x`**.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | two words | two things, or a property already marked another way | `zahavel zerevol zam` *a hammer and a wrench*; `zodogal gubuhal` *a blue dog* (`/ɡ/`) | |
 | **`x`** in the middle | one thing; you can still hear both roots | `gagayaxalaval` *love in the crush sense*; `zebeyexabedel` *peanut butter*; `zazawaxalahen` (one person) | **x** ≈ plus |
@@ -83,7 +83,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -100,7 +100,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *see* | `vahahal` | `ahahal` *eye* |
 | *punch* | `abahel` | |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *a doorbell*
 
@@ -166,7 +166,7 @@ z-Azawan-x-Alahen
 z-Alahen | z-friend | v-punch
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zonalebezal.`
 
@@ -246,7 +246,7 @@ z-Azawan | z-friend | v-punch
 
 Beginner already used two roots glued with **`x`**, dictionary words with no **`x`**, and *a teacher*. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | one vowel **`x`** one vowel, then a span ending | [span fence](spans.md) open or close | `daxal` … `xuxul` | vowel **x** vowel |
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxedehol` *a teacher* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
@@ -261,7 +261,7 @@ A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`*
 
 ### Adding another piece {#ordinary-compound-order}
 
-When English stacks labels left to right (*crush* then *love*; a shop name with a third drink), Agalan keeps that order in **one** word. The **last** root is the kind. Each earlier root specifies it. The ending stays at the end of the whole word. Named lists (people, shops) use the same stack as a list of labels, not as kind-last packing.
+When English stacks labels left to right (*crush* then *love*; a shop name with a third drink), Agazan keeps that order in **one** word. The **last** root is the kind. Each earlier root specifies it. The ending stays at the end of the whole word. Named lists (people, shops) use the same stack as a list of labels, not as kind-last packing.
 
 > `gagayaxalaval.`
 >
@@ -367,7 +367,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *your name* | `SELFn` | |
 | *Azawan* | `azawan` | |
@@ -378,7 +378,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *scream* | `ezogel` | |
 | *punch* | `abahel` | |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *(Your name) — I’m here / we can stay.*
 
@@ -452,7 +452,7 @@ y-Alahen-passing | z-Ahaben | z-Azawan | v-punch
 SELF-presence . Alahen-ask
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `ahabexan.`
 

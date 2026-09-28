@@ -61,7 +61,7 @@ If the reply is just the fill, not a full sentence, write it as a [citation](wor
 >
 > "Azawan."
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **a** (`zar` · `var` · `xar`) | fill the add-inventory | *Who/what?* / *What happened?* | **a** ≈ add |
 | **u** (`zur` · `vur` · `xur`) | fill what remains | *Who else?* / *What else?* | **u** ≈ undo |
@@ -144,7 +144,7 @@ Write **`y`**, then two vowels, then **-l** (firm) or **-m** (softer).
 
 When a sentence body follows *yes*, write **`yael`** then the body. You do not also write the statement word **`yal`**.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`yael`** / soft **`yaem`** | match / receipt of a claim | *yes* / *true* · *I think so* | **a** ≈ add + **e** ≈ order (the claim lines up) |
 | **`yuel`** / soft **`yuem`** | mismatch | *no* / *false* · *I don’t think so* | **u** ≈ undo + **e** ≈ order (the claim does not line up) |
@@ -220,7 +220,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -235,7 +235,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *punch* | `vabahel` | |
 | *lie* | `valahal` | |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *Does Azawan sit?*
 
@@ -301,7 +301,7 @@ y-no
 y-sure
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `yom zahaben vahahal degehul.`
 
@@ -380,7 +380,7 @@ z-Alahen | v-lie . y-yes
 
 Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), and *sure* (**`yaol`**). The rest of the map is **reject this option** and **reject the question itself**. First vowel is the family (**`a`** accept, **`u`** undo); second vowel is what you answer (**`e`** the claim, **`o`** this option, **`a`** the question's own premise).
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`ae`** (`yael`) | match / receipt | *true* | **a** ≈ add + **e** ≈ order (judged in line) |
 | **`ao`** (`yaol`) | option uptake | *sure* | **a** ≈ add + **o** ≈ one |
@@ -486,7 +486,7 @@ To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in
 >
 > "When does Ahaben walk?"
 
-| Agalan | English (statement, bare) | English (under question, bare) |
+| Agazan | English (statement, bare) | English (under question, bare) |
 |--------|---------------------------|--------------------------------|
 | **`har`** / **`war`** | *sometimes* | *When?* / *In what case?* |
 
@@ -508,7 +508,7 @@ To ask *where?*, keep the [extra-noun hook](hooks.md#extra-noun) that says how t
 >
 > "What does the dog sleep in?"
 
-| Agalan | English |
+| Agazan | English |
 |--------|---------|
 | **`ol bar`** | *Where (at)?* |
 | **`al bar`** | *In what?* |
@@ -549,7 +549,7 @@ Answer with the hook and the landmark, as a [citation](word-endings.md#citation-
 >
 > "What does Azawan walk for?"
 
-| Agalan | English |
+| Agazan | English |
 |--------|---------|
 | **`theram bar`** | *Why?* (*because of what?*) |
 | **`hagom bar`** | *What for?* (*for what purpose?*) |
@@ -584,7 +584,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -597,7 +597,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *lie* | `valahal` | |
 | *sleep* | `ezebal` | |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *Didn’t Azawan tell?* Then confirm: *true, Azawan didn’t.*
 
@@ -664,7 +664,7 @@ y-question | z-Alahen | v-sleep | h-when
 !!y-refuse-option
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `yael vodul vul.`
 

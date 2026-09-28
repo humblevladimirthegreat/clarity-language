@@ -30,7 +30,7 @@ Spoken Play is then the boring special case of the same engine.
 - Studio Vocaloid expressivity (phoneme timing editors with dozens of flags) in v1.
 - Unvoiced style allophones as a singing feature (same voiced-only bank as diphone Speak v1).
 - Teaching English glosses as lyrics.
-- Opaque / foreign interiors as Agalan melody (same loan skip as Speak).
+- Opaque / foreign interiors as Agazan melody (same loan skip as Speak).
 
 ## Pipeline
 
@@ -86,7 +86,7 @@ type SingingPlan = {
 
 v1 UI for **one word:** X = syllables from `toPhonemes`; drag bar widths; draw or snap F0 on vowel bars; consonant slivers stay glued to the left of each nucleus (onset) and to the last bar (coda). Phrase mode concatenates words; pauses are rests.
 
-MIDI/MusicXML (later) maps lyric syllables to those bars. Lyrics must be Agalan speech-surface tokens, already expanded (`toSpeech`), not number shorthand.
+MIDI/MusicXML (later) maps lyric syllables to those bars. Lyrics must be Agazan speech-surface tokens, already expanded (`toSpeech`), not number shorthand.
 
 ## Pitch banks
 
@@ -127,7 +127,7 @@ No extra neural weights.
 
 | Alternative | Why not default |
 |-------------|-----------------|
-| Neural singer + Agalan text | English/multilingual prior; diphthongs on high notes |
+| Neural singer + Agazan text | English/multilingual prior; diphthongs on high notes |
 | MIDI karaoke on Kitten | Same Kitten timing/phone problems |
 | Separate sung recordings per song | Not a generator; no arbitrary grammar examples |
 | Formant singing (vocal tract model) | Exact F0; less like the human diphone voice |

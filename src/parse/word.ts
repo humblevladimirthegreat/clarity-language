@@ -13,7 +13,7 @@ export class WordParseError extends Error {
   }
 }
 
-/** Parse one Agelan word from surface text (Stage 1 Peggy grammar). */
+/** Parse one Agazan word from surface text (Stage 1 Peggy grammar). */
 export function parseWord(input: string): MorphWord {
   try {
     return peggyParse(input.trim()) as MorphWord;

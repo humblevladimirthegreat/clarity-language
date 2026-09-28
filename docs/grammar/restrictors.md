@@ -53,7 +53,7 @@ You can name *sometimes*, *anytime*, or *some other time* without listing a cont
 
 English *sometimes* is the usual match next to *never* / *always*. It still only says there is **some** unspecified occasion — the same job *something* has on a [join](joins.md) — not a separate “many times” count.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`har`** | unspecified member of the time inventory | *sometimes* / *at some time* | **-r** names a member |
 | **`hor`** | unspecified member of a one-choice time menu | *anytime* (any one particular time, whichever you pick) | **o** ≈ one |
@@ -125,7 +125,7 @@ The same restrictor vowels and endings can limit **only the host you are about t
 >
 > "Ahaben is happy at some other time."
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `/h/` | limits the clause | *when the verb claim counts* | **h** starts *how* / *when* / *where* |
 | `/w/` | same map on the next adjective | *never happy* | **w** ≈ with (stuck to that host) |
@@ -136,7 +136,7 @@ The same restrictor vowels and endings can limit **only the host you are about t
 
 Open **-m** leaves other occasions possible: *when raining, among other times*, not *only when*. Each listed piece is a simple adverb (or `/w/` adjective-limiter) content word; every piece and the restrictor share the same role letter. Bare open **`ham`** hedges *never* (*never, as far as you can tell*). (cue: **a** ≈ add; **ua** ≈ undo then add.)
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`hal` / `ham`** | listed times; empty list is *never* | *only when…* / *when…, among other occasions* · bare *never* / *never, as far as you can tell* | **a** ≈ add |
 | **`hual` / `huam`** | every time minus listed exceptions | *always except when…* · bare *always* / *always, as far as you can tell* | **u** ≈ undo then **a** ≈ add |
@@ -155,7 +155,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -169,7 +169,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *quietude* | `halahom` | `alahol` *owl* |
 | *punch* | `vabahel` | |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *Azawan swims only at night.*
 
@@ -235,7 +235,7 @@ z-Ahaben | v-swim | h-anytime
 z-Alahen | v-punch | d-Azawan | h-always
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zalahen vezewel hanadal hal.`
 
@@ -344,7 +344,7 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 
 #### Set / invert / inclusive
 
-| Agalan | Use | English (with occasions) | English (bare) | Cue |
+| Agazan | Use | English (with occasions) | English (bare) | Cue |
 |--------|-----|--------------------------|----------------|-----|
 | **`hal` / `ham`** | listed times; empty list is *never* | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *never, as far as you can tell* | **a** ≈ add |
 | **`hol` / `hom`** | one exclusive time menu | *either when A or when B (not both)*; **`hom`** also allows *or never* | | **o** ≈ one |
@@ -359,7 +359,7 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 
 Closed **`hel`** ranks **when** it matters. **`hal`** still means *only when* these times, with no priority among them.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`hel` / `hem`** | priority among occasions | *preferably when A ≻ when B…* (closed / open) | **e** ≈ order |
 | **`hael` / `haem`** | equal frequency among occasions | *as often as* / *equally when A and when B* | **a** ≈ add + **e** ≈ order |
@@ -375,7 +375,7 @@ Closed **`hel`** ranks **when** it matters. **`hal`** still means *only when* th
 
 Statement readings below. Asking *when*: [questions.md](questions.md#when).
 
-| Agalan | Use | English (with occasions) | English (bare) | Cue |
+| Agazan | Use | English (with occasions) | English (bare) | Cue |
 |--------|-----|--------------------------|----------------|-----|
 | **`har`** | unspecified member of the listed times | *sometimes among these* | *sometimes* | **-r** some member |
 | **`hor`** | unspecified member of a one-choice time menu | *anytime among these* | *anytime* | **o** ≈ one + **-r** |
@@ -396,7 +396,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -413,7 +413,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *fall* | `vadahel` | `adahel` *down* |
 | *that-clause* | `barl` | |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *Azawan climbs either when raining or at night, not both.*
 
@@ -479,7 +479,7 @@ z-Azawan | [w-rain | w-night | w-when-one | g-happy]
 z-Ahaben | v-scream | [th-if | b-that-clause] | z-Alahen | v-fall
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zalahen vagawol herehel hanadal hom.`
 

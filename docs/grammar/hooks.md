@@ -73,7 +73,7 @@ The left side can be a stand-in clause ([clause joins](joins.md#clause-joins)); 
 >
 > "Everything happened except that Azawan walked."
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **a** | add a member in the same slot | *including*: A, including B | **a** ≈ add |
 | **e** | offer a better wording | *rather*: A, or rather B | **e** ≈ order |
@@ -84,7 +84,7 @@ The left side can be a stand-in clause ([clause joins](joins.md#clause-joins)); 
 
 For every same-role hook you also choose how complete the right-hand side is. **-l** is the unmarked English (*including B*, *except B*, *instead*, *or rather*). **-m** means B is not the whole story: add *and maybe more*. When you are unsure, prefer **-m**.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **-l** (`al` / `el` / `ol` / `ul`) | B is the whole story you stand behind | unmarked (*including B*, *except B*, …) | **l** ≈ locked |
 | **-m** (`am` / `em` / `om` / `um`) | B is not the only one | *and maybe more* | **m** ≈ maybe more |
@@ -99,7 +99,7 @@ For every same-role hook you also choose how complete the right-hand side is. **
 
 Sometimes the thing you want to tweak is not a phrase inside this sentence, but **how this sentence attaches** to what you already said (the *glue*, or sentence-to-sentence connective). Put the same spellings at the **front** of this sentence: prior talk plays A's role, and this whole sentence is B. You get *Additionally*, *In other words*, *Instead*, or *Except* without a list join and without a continue-linker. (cue: same **a** / **o** / **e** / **u** map as in-clause.)
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `al …` | further committed point | *Additionally, …* | **a** ≈ add |
 | `el …` | rephrase prior | *In other words, …* | **e** ≈ order |
@@ -134,7 +134,7 @@ When the next word after the hook is `/b/`, and the word immediately before the 
 
 Simplex vowels (one vowel plus an ending):
 
-| Agalan | Name | Use | Cue |
+| Agazan | Name | Use | Cue |
 |--------|------|-----|-----|
 | **`al`** | **in** | containment | **a** ≈ add (into a volume) |
 | **`ol`** | **at** | coincidence with a point | **o** ≈ one (the one point) |
@@ -189,7 +189,7 @@ For *since* before a sentence, put **`barl`** after **`ul`** and the starting ev
 >
 > "Azawan has been walking since Alahen fell asleep."
 
-**Compare with:** *since* meaning *because* is **`theram barl`**. Agalan keeps the time reading and the cause reading apart.
+**Compare with:** *since* meaning *because* is **`theram barl`**. Agazan keeps the time reading and the cause reading apart.
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -199,7 +199,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -216,7 +216,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *pour* | `vobohel` | |
 | *sit* | `vehahel` | `ehahel` *chair* |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *The family, including Alahen.*
 
@@ -290,7 +290,7 @@ z-Azawan | v-cook | [for | b-family]
 d-wine | instead.open | d-beer
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zavahal am zahaben.`
 
@@ -485,7 +485,7 @@ To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`a
 
 Put a [standalone join](joins.md#standalone-phrase) in the `/b/` slot after a place hook. Outside a question, **`bar`** is an unspecified member (*somewhere*), the same way **`zar`** is *someone*. Under **`yol`**, it is the *where?* blank.
 
-| Agalan | English |
+| Agazan | English |
 |--------|---------|
 | **`ol bar`** | *somewhere* (under **`yol`**: *where?*) |
 | **`ol bur`** | *somewhere else* |
@@ -511,11 +511,11 @@ Several extra-noun hooks on one clause are several extras (*from* one landmark *
 ### Here and there, this and that {#deixis}
 <a id="here-there"></a>
 
-English *here*, *there*, *this*, and *that* point at things by distance. Agalan points from a **person in the conversation** instead: put a place hook before [speaker, listener, or interlocutors](pronouns.md#special-pronouns) in `/b/`. You always say whose *here* you mean, the same way [viewpoint laterals](roles.md#viewpoint-laterals) say whose *left*.
+English *here*, *there*, *this*, and *that* point at things by distance. Agazan points from a **person in the conversation** instead: put a place hook before [speaker, listener, or interlocutors](pronouns.md#special-pronouns) in `/b/`. You always say whose *here* you mean, the same way [viewpoint laterals](roles.md#viewpoint-laterals) say whose *left*.
 
 Names come first. When you know who is talking or listening, use their name as the landmark (`om bazawan` *near Azawan*). Speaker and listener are for when the conversation role is the point, or you have no name to use.
 
-| Agalan | Landmark | English |
+| Agazan | Landmark | English |
 |--------|----------|---------|
 | `om bamun` | near the speaker | *here*, *this* |
 | `om bohen` | near the listener | *there (by you)*, *that* |
@@ -542,7 +542,7 @@ Use `ol` in place of `om` for the exact spot (`ol bamun` *right where I am*).
 >
 > "Alahen sleeps over there."
 
-English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Agalan names the landmark with the plain motion verb **`vuvudel`** (*go*) and a path hook: **`oel`** (*toward*) for *come*, **`ul`** (*from*) for *go away*. `vuvudel` says nothing about how someone travels; use `vowogal` (*walk*) or `varahal` (*run*) only when the manner matters.
+English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Agazan names the landmark with the plain motion verb **`vuvudel`** (*go*) and a path hook: **`oel`** (*toward*) for *come*, **`ul`** (*from*) for *go away*. `vuvudel` says nothing about how someone travels; use `vowogal` (*walk*) or `varahal` (*run*) only when the manner matters.
 
 > `zazawan vuvudel oel bamun.`
 >
@@ -586,7 +586,7 @@ A hook with **-r** points back, the way [resume **-r**](pronouns.md#resume-r) do
 
 After the verb, a resume hook points back to a landmark already in play. You do not repeat the `/b/` word.
 
-| Agalan | Points back to | English |
+| Agazan | Points back to | English |
 |--------|----------------|---------|
 | `ar` | inside the place already named | *in there* / *in it* |
 | `or` | the place already named | *there* |
@@ -607,7 +607,7 @@ After the verb, a resume hook points back to a landmark already in play. You do 
 
 At the front of a sentence, a resume hook points back to an earlier stretch of talk, not just the last sentence.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `or …` | back to the main line after a side topic | *Anyway, …* | **o** ≈ one (the one main thread) |
 | `er …` | say an earlier point again | *As I said, …* | **e** ≈ order (the wording again) |
@@ -659,7 +659,7 @@ Same-role includes the **verb phrase**:
 
 Beginner already used a hook at the front of a default statement. Same spellings and vowel meanings, four places:
 
-| Placement | Agalan | Use |
+| Placement | Agazan | Use |
 |-----------|--------|-----|
 | Before a written turn marker | `HOOK yal BODY` | The written **`yal`** / **`yol`** / …, after any vocatives and interjections |
 | Before a default-statement body | `HOOK BODY` | Implied **`yal`** ([speech moves](speech-moves.md#speech-act)) |
@@ -725,7 +725,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -737,7 +737,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *write* | `varadal` | |
 | *tell* | `vezebel` | `ezebel` *speech* |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *The newspaper, including Azawan and maybe more, except Alahen.*
 
@@ -819,7 +819,7 @@ z-Azawan | v-write | [on | b-page] . z-Alahen | v-write | there
 anyway | z-Alahen | v-tell
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zunuzel am zahaben ul zazawan.`
 
@@ -954,7 +954,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
+| English | Agazan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
 | *Alahen* | `alahen` | | |
@@ -970,7 +970,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *ice* | `azahul` | | |
 | *anchor* | `agel` | | |
 
-#### English → Agalan {#advanced-english-to-agalan}
+#### English → Agazan {#advanced-english-to-agazan}
 
 **1.** *Azawan leaves a boat.*
 
@@ -1020,7 +1020,7 @@ z-Alahen | d-fog | v-traverse
 z-Azawan | d-fog | v-enter
 :::
 
-#### Agalan → English {#advanced-agalan-to-english}
+#### Agazan → English {#advanced-agazan-to-english}
 
 **1.** `davegal zalahen vowogalul.`
 

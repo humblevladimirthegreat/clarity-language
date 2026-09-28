@@ -4,7 +4,7 @@ import { readFileSync } from "node:fs";
 import { parse, SentenceParseError } from "./index.js";
 
 const USAGE = [
-  "Usage: node scripts/parse.mjs [--check-ambiguity] [--constructions] '<Agalan text>' ['<Agalan text>' ...]",
+  "Usage: node scripts/parse.mjs [--check-ambiguity] [--constructions] '<Agazan text>' ['<Agazan text>' ...]",
   "       node scripts/parse.mjs [--check-ambiguity] [--constructions] - < inputs.txt   (one input per line)",
 ].join("\n");
 

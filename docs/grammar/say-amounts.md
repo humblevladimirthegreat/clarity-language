@@ -90,7 +90,7 @@ For *two meters taller*, see [measured differentials](#measured-differentials). 
 
 **Needs:** [Percent](numbers-applied.md#percent-and-percentage-points) · [Associative `-x`](plurality.md#associative) · [Resume](pronouns.md#resume-r)
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `zagadalx g+25%` | percent grades the modified noun | *25% of the cats* |
 | `dudolx g+95%` | same, object slot | *95% of the tests* |
@@ -156,7 +156,7 @@ A bare `/z/` (or other freestanding) **`…yo`** percent with no named whole is 
 
 Fence **-r** on a number-range shape (still with SHARED continuum) names an **unspecified member of the range**.
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `z+3 z+5 zar guruham` | unspecified member of the inclusive band | *some value in [3, 5]* |
 | `z+3 ul z+5 zar guruham` | unspecified member of the exclusive-high band | *some value in [3, 5)* |
@@ -214,7 +214,7 @@ When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*)
 >
 > "Azawan names solution 2."
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`ehegom`** | numbered-alternative problem | *problem* (something to fit / solve) | `ehegol` *puzzle-piece* | 🧩: pieces must fit |
 | **`egehum`** | numbered-alternative solution | *solution* (what unlocks it) | `egehul` *key* | 🔑: opens what was locked |
@@ -238,7 +238,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -247,7 +247,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *exertion* | `elevam` | `eleval` *lift* |
 | *gram* | `ababam` | `ababal` *pound* |
 
-#### English → Agalan {#amounts-comparing-english-to-agalan}
+#### English → Agazan {#amounts-comparing-english-to-agazan}
 
 **1.** *Azawan and Ahaben are heavy.*
 
@@ -273,7 +273,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 [z-Azawan | z-Alahen | z-Ahaben | z-in-order | g-heavy]
 :::
 
-#### Agalan → English {#amounts-comparing-agalan-to-english}
+#### Agazan → English {#amounts-comparing-agazan-to-english}
 
 **1.** `zalahen zahaben zal gelevam.`
 
@@ -301,7 +301,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -309,7 +309,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *challenge* | `gamadam` | |
 | *as-of.ledger* | `wenem` | |
 
-#### English → Agalan {#amounts-snapshot-english-to-agalan}
+#### English → Agazan {#amounts-snapshot-english-to-agazan}
 
 **1.** *As of 22 July, Azawan is more challenging than Alahen.*
 
@@ -319,7 +319,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 [z-Azawan | z-Alahen | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 :::
 
-#### Agalan → English {#amounts-snapshot-agalan-to-english}
+#### Agazan → English {#amounts-snapshot-agazan-to-english}
 
 **1.** `zazawan zalahen zel wenem b_#22,7 gamadam.`
 

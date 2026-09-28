@@ -1,6 +1,6 @@
 # The clause
 
-How to read and write one Agalan **clause**: who does what, word shape, and default order.
+How to read and write one Agazan **clause**: who does what, word shape, and default order.
 
 ## Beginner {#beginner}
 
@@ -30,7 +30,7 @@ A name you already cite with **-n** (`azawan`) keeps **-n** in the sentence:
 
 The **direct object** is who or what the action is done to. Mark it with `/d/`. The usual order is **Subject – Direct Object – Verb**.
 
-Because the first letter already says each word’s role, you may move those three words without changing who did what. Put first the piece you want to highlight: the person or thing the sentence is “about,” or the new information. English often does that with stress; Agalan can do it with order.
+Because the first letter already says each word’s role, you may move those three words without changing who did what. Put first the piece you want to highlight: the person or thing the sentence is “about,” or the new information. English often does that with stress; Agazan can do it with order.
 
 > `zodogal dagadal vahahal.`
 >
@@ -120,7 +120,7 @@ A `/w/` word still goes before the host, so the host and its `/b/` stay side by 
 
 The role letters you have used so far:
 
-| Agalan | Use | Cue |
+| Agazan | Use | Cue |
 |--------|-----|-----|
 | `/z/` | subject (who acts) | **z** ≈ star (who the sentence is about) |
 | `/d/` | direct object (who is acted on) | **d** ≈ done to (sound of *acted on*) |
@@ -138,7 +138,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
+| English | Agazan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
 | *Alahen* | `alahen` | | |
@@ -157,7 +157,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *haste* | `hadehom` | `adehol` *dash* | 💨: a burst of speed |
 | *like* | `homem` | `omel` *mirror* | 🪞: the image is of the model |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *Azawan sits.*
 
@@ -207,7 +207,7 @@ z-Azawan | b-Alahen | v-tell
 z-Ahaben | th-doubt | v-sit
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zahaben vazadol.`
 
@@ -253,7 +253,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 ### Adjectives before the noun (`gl-`) {#left-bound-adjectives}
 
-English puts the adjective before the noun (*a blue dog*). Agalan can too: add **`l`** as the second letter (`/ɡ/` + **l** + root + ending), and that adjective describes the **next** noun instead of the one before it. This lets you choose the order for meter or emphasis, and it frees the spot after the noun for another adjective. (cue: **l** ≈ lean: the word leans toward the noun ahead.)
+English puts the adjective before the noun (*a blue dog*). Agazan can too: add **`l`** as the second letter (`/ɡ/` + **l** + root + ending), and that adjective describes the **next** noun instead of the one before it. This lets you choose the order for meter or emphasis, and it frees the spot after the noun for another adjective. (cue: **l** ≈ lean: the word leans toward the noun ahead.)
 
 > `glubuhal zodogal.`
 >
@@ -295,7 +295,7 @@ A verb can take several `/h/` or `/th/` units. Each plain word counts as one uni
 
 Beginner used **`welavam`** *very* before an adjective. The same `/w/` slot takes a few stock degree words, and each one works before an adverb as well as an adjective.
 
-| Agalan | English | Cue |
+| Agazan | English | Cue |
 |--------|---------|-----|
 | `welavam` | *very* | 🐘: big, as a degree |
 | `wohahal` | *extremely* / *overwhelmingly* | 🌊: an ocean of it |
@@ -328,7 +328,7 @@ Beginner used **`welavam`** *very* before an adjective. The same `/w/` slot take
 
 ### Leaving out who acts {#no-subject}
 
-English uses the passive (*The cat was seen*, *Mistakes were made*) to avoid naming who acted. Agalan simply leaves out the `/z/` word. The verb and its object stay the same, and the sentence says nothing about who did it.
+English uses the passive (*The cat was seen*, *Mistakes were made*) to avoid naming who acted. Agazan simply leaves out the `/z/` word. The verb and its object stay the same, and the sentence says nothing about who did it.
 
 > `dazawan vahahal.`
 >
@@ -346,7 +346,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan |
+| English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
@@ -365,7 +365,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *sleep* | `ezebal` |
 | *haste* | `hadehom` |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *A very red train stands.* (adjective before the noun)
 
@@ -415,7 +415,7 @@ z-Ahaben | b-Alahen | h-haste | v-tell
 d-Azawan | v-see
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `glubuhal zedehal vazadol.`
 
@@ -469,7 +469,7 @@ z-dog | [[w-very | h-like] | b-Azawan] | v-sleep
 
 Beginner showed that you may reorder the words of a clause, because the first letters already say who did what. The **first content word** is what you highlight: what the sentence is “about,” or the new information. Opening `/y/` words come before the clause itself and do not count.
 
-English usually keeps subject–verb–object order and uses extra wording, the passive, or spoken stress for that job. When you translate, keep the same highlight in English. Copy Agalan order into English only when that English is also a natural way to put that piece first (*Hastily, Azawan walks*). Keep a [stand-in](dependents.md#stand-in) `darl` / `barl` last in its slot, and move the other words around it.
+English usually keeps subject–verb–object order and uses extra wording, the passive, or spoken stress for that job. When you translate, keep the same highlight in English. Copy Agazan order into English only when that English is also a natural way to put that piece first (*Hastily, Azawan walks*). Keep a [stand-in](dependents.md#stand-in) `darl` / `barl` last in its slot, and move the other words around it.
 
 > `zazawan dagadal vahahal.`
 >
@@ -485,7 +485,7 @@ Same roles, object first:
 >
 > "It's a cat that Azawan sees."
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `zazawan dagadal vahahal.` | subject first | *Azawan sees a cat.* |
 | `&zazawan dagadal vahahal.` | subject, contrasted | *It was Azawan who saw the cat.* |
@@ -509,7 +509,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -526,7 +526,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *punch* | `vabahel` | `abahel` *punch* |
 | *haste* | `hadehom` | `adehol` *dash* |
 
-#### English → Agalan {#advanced-english-to-agalan}
+#### English → Agazan {#advanced-english-to-agazan}
 
 **1.** *Hastily, Azawan sees a balloon.*
 
@@ -576,7 +576,7 @@ d-drum | z-Alahen | v-punch
 v-punch | z-Alahen | d-Ahaben
 :::
 
-#### Agalan → English {#advanced-agalan-to-english}
+#### Agazan → English {#advanced-agazan-to-english}
 
 **1.** `dadawol zahaben vahahal.`
 

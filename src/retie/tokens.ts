@@ -321,7 +321,7 @@ export function collectStemOccurrences(input: string): StemOccurrence[] {
         out.push({ root, index });
       }
     } catch {
-      // not an Agalan word
+      // not an Agazan word
     }
     return chunk;
   };

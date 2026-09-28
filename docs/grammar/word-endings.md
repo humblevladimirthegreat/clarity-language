@@ -59,7 +59,7 @@ You can **say** a named citation with a period to greet someone or to say a simp
 
 The last letters you just used, on the same root `azawa`:
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `azawal` | first mention, everyday kind | *swan* | **l** ≈ concrete |
 | `azawam` | first mention, published abstract | *grace* | **m** ≈ abstract |
@@ -76,9 +76,9 @@ Short drills for Beginner. Try each item before opening **Show answer**. Choose 
 
 **Setting:** a classroom
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (**English** is what you produce; **Agazan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
-| English | Agalan | Same root as | Cue |
+| English | Agazan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *school* | `uzugul` | | |
 | *chair* | `ehahel` | | |
@@ -99,7 +99,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Choose 
 | *beauty* (as a name) | `ahaben` | | |
 | *your name* | `SELFn` | | from the name helper above |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *school* (citation)
 
@@ -173,7 +173,7 @@ Alahen
 SELF
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `ubugal`
 
@@ -263,7 +263,7 @@ Beginner used **-n** for a person’s or place’s name. You can also mark a **t
 
 The rest of the role map (same **-n**):
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `/z/` `/d/` `/b/` + **-n** | this named entity | person, place, titled work, unique referent (*Azawan*, *Paris*, *the Odyssey*; *book by* **[Rowling]**) |
 | `/v/` + **-n** | this named event, rite, or titled action | *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]** |
@@ -299,7 +299,7 @@ A short one-word name, or a compact multipart name with mid-word **`x`**, still 
 ### Phrasal proper names (mid-word `x`)
 <a id="phrasal-proper-names"></a>
 
-English often writes a given name plus family as two words. In Agalan a short multipart proper name (given + family, a compact place label, a shop name) is **one content word**: roots join left to right with mid-word **`x`** ([ordinary compound order](x-compounds.md#ordinary-compound-order)), and **-n** names the whole as one person or place. That one word fills one slot and is one resume target.
+English often writes a given name plus family as two words. In Agazan a short multipart proper name (given + family, a compact place label, a shop name) is **one content word**: roots join left to right with mid-word **`x`** ([ordinary compound order](x-compounds.md#ordinary-compound-order)), and **-n** names the whole as one person or place. That one word fills one slot and is one resume target.
 
 > `zuhudexaloden vowogal.`
 >
@@ -307,13 +307,13 @@ English often writes a given name plus family as two words. In Agalan a short mu
 >
 > "Uhudexaloden walks."
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `zuhudexaloden` | nativized multipart (roots + mid-word **`x`**) | *Uhudexaloden* (*wish*×*guidance*: one person) |
 | `duhudexaloden`, `buhudexaloden` | same name in other slots | one named place / person as object or argument |
 | `zagavexedehen`, `zagavexedehexowoden` | sense / shop label (two or more lexicon roots) | *Coffee-Tea*; *Coffee-Tea-Water* |
 
-A nativized loan (adapted Agalan root + ordinary ending) uses the same four last letters as any content word. A **lexical compound** is also one slot-filler: one stem, not mid-word **`x`** (`zebedalahazal` *bedroom*).
+A nativized loan (adapted Agazan root + ordinary ending) uses the same four last letters as any content word. A **lexical compound** is also one slot-filler: one stem, not mid-word **`x`** (`zebedalahazal` *bedroom*).
 
 **Compare with:** adjacent bare same-role words (`zuhuden zaloden`) are two people in a [join](joins.md).
 
@@ -322,7 +322,7 @@ A nativized loan (adapted Agalan root + ordinary ending) uses the same four last
 
 Beginner used **-n** as a name on cited roots and on content words. On `/x/`, the last letter follows the continue family:
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | linker + **-l** / **-m** | glue one finished sentence to the next | *but*, *therefore*, … |
 | other `/x/` root + **-n** | titled agenda / section label | thread shift (*let’s now talk about X*) |
@@ -343,7 +343,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -363,7 +363,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *Emergency* (titled event) | `vamaban` | `amabal` *ambulance* |
 | *Emergency* (named frame) | `hamaban` | `amabal` *ambulance* |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *Azawan sits according to Hospital* (the named frame).
 
@@ -413,7 +413,7 @@ z-Alahen | v-Azehen
 z-Alahen | v-Amaban
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zahaben vehahel hahazen.`
 

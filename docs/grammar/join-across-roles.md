@@ -9,7 +9,7 @@ The same join vowel series works across roles: `/v/` packages verb phrases, `/x/
 
 When English would walk through events in time (*and then*), put ending **-n** on a clause continue join (`/x/`). Narrative *and then* is **`xan`**. Like every clause join, it goes [between](joins.md#clause-joins) the clauses: `A xan B xan C` reads one step at a time. The clauses keep one speech act; this **-n** orders them rather than naming a person.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `xan` | sequence add | *and then…* | **a** ≈ add |
 | `xon` | sequence menu | *or maybe…*; after an [attempt](intention.md#try), *failing that…* | **o** ≈ one |
@@ -174,7 +174,7 @@ The `/x/` forms connect clauses and keep one speech act. Their `/v/` counterpart
 
 These are ordinary content verbs. Point back at a join-act you already used with a short resume or a full paraphrase. Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
 
-| Agalan | Use | English | Cue | Example |
+| Agazan | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
 | **`van`** | hold the object in the set | *includes / adds* | **a** ≈ add (hold / inventory) | `zazawan dalul van` |
 | **`von`** | lock the object as the sole pick | *chooses (as the one choice)* | **o** ≈ one (single pick) | `zazawan dedehel von` |
@@ -209,7 +209,7 @@ Content *including* needs that `/b/` (`gan b…`). A stock label uses a [mention
 
 For several members or an empty domain, put a [phrase join](joins.md) **inside** the `/b/` phrase (`gan bebeyel bagubem bal`), or use a [standalone](joins.md#standalone-phrase) `/b/` join as the only argument (`gan bar` = *including something*; `guan bal` = *excluding nothing* / stripped frame).
 
-| Agalan | Use | English | Cue | Example |
+| Agazan | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
 | **`gan` / `han`** | `/ɡ/` noun or `/h/` event toward `/b/` | *including / with* | **a** ≈ add (hold the extra member) | `zebeval gan bebeyel`; `zazawan han balahen vowogal` |
 | **`gon` / `hon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *exclusive for* (sole pick); `/h/` *exclusively for / as the one* | **o** ≈ one (lock that pick) | `zahodom gon bazawan`; `… hon bazawan vowogal` |
@@ -235,7 +235,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -249,7 +249,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *scream* | `vezogel` | |
 | *lie* | `alahal` | |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *Azawan includes the medal.*
 
@@ -315,7 +315,7 @@ z-Alahen | [v-run | v-punch | v-and.open]
 z-Alahen | [h-refusing | b-medal] | v-run
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zahaben dodovel van.`
 

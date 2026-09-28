@@ -12,7 +12,7 @@ Write the sake under `/ɡ/` when you talk about a **noun you keep** (how you fee
 
 Six published roots are the sakes you can name, and no other root takes the sake form. Pick one row. With mid-word **`th`** and a stance vowel, that root means the sake in the English column — not the everyday object in **Same root as**.
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`aba`** | autonomy sake | *autonomy* (choice, agency, self-direction) | `abal` *ballot* | 🗳️: voting is choosing for yourself |
 | **`udu`** | competence sake | *competence* (efficacy, skill, getting things to work) | `udul` *toolbox* | 🧰: the kit that gets things working |
@@ -36,7 +36,7 @@ When you want to say that a named belonging **serves** this sake (pays it off), 
 
 On a *serves* word, **-l / -m / -r** say **when the payoff lands**: lasting, unstated, or immediate. Neither end is better; a good day needs both. It uses the same scale as [unmet](#sake-changeability): **-l** lasts, **-r** passes. If you do not know, use **-m**.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…thal` | serves the sake over time | *lasting* | **-l** ≈ lasting |
 | `…tham` | serves the sake; time horizon unstated (soft default if unknown) | *serves* | **-m** ≈ open |
@@ -77,7 +77,7 @@ When you want to say a named belonging **detracts from** this sake, write that t
 
 That ending is **changeability**: how lasting that detriment is. If you do not know, use **-m**.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…thul` | the detriment is fixed as far as you can tell | *irreversible* | **-l** ≈ locked |
 | `…thum` | effort or circumstance may soften the detriment (soft default if unknown) | *modifiable* | **-m** ≈ open to change |
@@ -104,7 +104,7 @@ A sake word is a sake root with mid-word **`th`**, a stance vowel, and an ending
 
 **-n** is ordinary [proper](word-endings.md#proper-name--n). **-l / -m / -r** follow that stance’s table.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`tha`** | the belonging pays off this sake | *serves* / *met* | **a** ≈ add (the payoff is in) |
 | **`thu`** | the belonging subtracts from this sake | *detracts from* / *unmet* | **u** ≈ undo (the sake is taken down) |
@@ -128,7 +128,7 @@ When the noun is **not** yours (weather, a gathering, another person’s church)
 
 Ordinary `zobol` is still *emphasis*. Bare **`gobom`** with no `/w/` sake does not ascribe a sake. An episode (*this raining, this telling*) still uses `/th/` on the clause, possessed or not.
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`gobom`** | unowned noun as sake-target | *as stimulus* | `obol` *emphasis* | ☝️: you point at it rather than keep it |
 
@@ -140,7 +140,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *tent* | `ededul` | |
 | *backpack* | `abul` | |
@@ -155,7 +155,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *survival* | `uhol` | `uhol` *shield* |
 | *sake* | `ugel` | `ugel` *egg* |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *My tent serves survival in the long term.*
 
@@ -197,7 +197,7 @@ z-fire | [w-survival-unmet-irreversible | g-stimulus]
 z-flashlight | g-sake-met-lasting
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zededul gugethal.`
 
@@ -307,7 +307,7 @@ Surging and still are information, not verdicts. Strong but steady anger is flow
 
 The tail goes on met **`tha`**, motive **`tho`**, and unmet **`thu`** words. Prescription **`the`** is advice, not a feeling, so it takes no tail. A word with no tail (`wuduthur`) is an ordinary sake word.
 
-| Agalan | English |
+| Agazan | English |
 |---------|---------|
 | `zezebel wuduthuraor gobom` | *anxious about the dialogue* (competence at stake, temporary; hangs over the room; surging) |
 | `zozazom wonathumuar gobom` | *our resentment about the division* (unmet relatedness; the group's, and I share it; surging) |
@@ -338,7 +338,7 @@ That ending says why you think a move is welcome. Use **-l** when the person inv
 
 **Compare with:** [motive](#sake-preference) **`tho`** plus a [request](speech-moves.md#speech-act) **`yem`** when the speaker wants **their own** sake served. **`the`** is advice about the sake named on this word.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…thel` | the person invited this kind of move | *invited* | **-l** ≈ locked to their word |
 | `…them` | an unsolicited offer meant to serve the sake | *offered* | **-m** ≈ open offer |
@@ -385,7 +385,7 @@ English *have to* / *need to* / *doing this for…* often names a **motive**: wh
 
 A reason held **to keep a cost off** is a *so that … not* dependent ([so that](dependents.md#so-that), **`hagom burl`**), as with prescription.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…thol` | the situation pulls this motive | *circumstantial* | **-l** ≈ locked to the scene |
 | `…thom` | the agent’s own reason (soft default if unknown) | *internal* | **-m** ≈ open / from inside |
@@ -397,7 +397,7 @@ A reason the situation pulls is as legitimate as one from inside. The ending say
 
 Beginner already used *serves* and *detracts from*. Intermediate adds *ought this act for* and *doing for*. Pick the ending table that matches the stance vowel.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`tha`** | [time horizon](#time-horizon-endings-on-met) endings | *serves* / *met* | **a** ≈ add |
 | **`the`** | [invited / offered / trial](#sake-force) endings | *ought this act for this sake* | **e** ≈ order (instruct / ought) |
@@ -408,7 +408,7 @@ Beginner already used *serves* and *detracts from*. Intermediate adds *ought thi
 
 Beginner already attached `/ɡ/` after a noun and `/th/` on the clause for met and unmet. The rest of the map:
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `g…tha…` after a noun | praise: **your** noun serves the sake | *my gift (serves relatedness)* (`gonatha…`) |
 | `g…thu…` after a noun | criticism: **your** noun detracts from the sake | *my book (detracts from competence)* (`guduthu…`) |
@@ -430,7 +430,7 @@ On **`the`**, use **-l** for an invitation, **-m** for an offer, and **-r** for 
 
 ### Thanks and sorry {#thanks-sorry}
 
-Agalan has no set phrase for *thank you*. Say that what the other person did **met your sake**: a lone clause `/th/` met word is a whole sentence, and saying it to the one who acted is the thanks. Pick the sake that was actually served; the ending says how long the payoff lasts ([endings on met](#time-horizon-endings-on-met)). (cue: thanks = *that met my sake*)
+Agazan has no set phrase for *thank you*. Say that what the other person did **met your sake**: a lone clause `/th/` met word is a whole sentence, and saying it to the one who acted is the thanks. Pick the sake that was actually served; the ending says how long the payoff lasts ([endings on met](#time-horizon-endings-on-met)). (cue: thanks = *that met my sake*)
 
 > `thonatham.`
 >
@@ -444,7 +444,7 @@ Agalan has no set phrase for *thank you*. Say that what the other person did **m
 >
 > "That will keep helping me do it." — *thanks, that sets me up*
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `…thal` | the help lasts | *that will stay with me* |
 | `…tham` | the help, horizon unstated (default) | *thank you* |
@@ -458,7 +458,7 @@ Agalan has no set phrase for *thank you*. Say that what the other person did **m
 >
 > "That hurt your sense of connection." — *I'm sorry*
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `…thul bohen` | the harm is lasting | *I'm deeply sorry* |
 | `…thum bohen` | the harm can be softened (default) | *I'm sorry* |
@@ -470,9 +470,9 @@ The `/b/` can name anyone: `thonathum balahen.` owns a harm to Alahen, even when
 
 ### Hopefully and other attitudes {#speaker-attitude}
 
-English *hopefully*, *luckily*, and *sadly* say how **you**, the speaker, feel about the whole claim. In Agalan, put the content root for that feeling on `/th/` with **-m**. It is always the speaker's attitude, never the subject's. For the subject's manner (*Azawan walks hopefully*), use `/h/` (`hevegem`).
+English *hopefully*, *luckily*, and *sadly* say how **you**, the speaker, feel about the whole claim. In Agazan, put the content root for that feeling on `/th/` with **-m**. It is always the speaker's attitude, never the subject's. For the subject's manner (*Azawan walks hopefully*), use `/h/` (`hevegem`).
 
-| Agalan | Use | English | Same root as |
+| Agazan | Use | English | Same root as |
 |--------|-----|---------|--------------|
 | **`thevegem`** | you want it, and it is still open | *hopefully* | `evegel` *crossed-fingers* |
 | **`theledem`** | it went well by chance | *luckily* | `eledel` *ladybug* |
@@ -518,7 +518,7 @@ English *may* / *is allowed to* says a restriction is lifted. Put **`thegal`**, 
 
 The negatives use the root **`ere`** (⛔ *no entry*) with the same endings.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thegal`** | a rule, policy, or formal right allows it | *is allowed to* / *has the right to* | **-l** ≈ locked in (on paper) |
 | **`thegam`** | a person grants it (speaker, or the `/b/`) (default) | *may* / *I'm letting you* | **-m** ≈ a person's word |
@@ -575,7 +575,7 @@ The weaker endings stay weaker on purpose: **-m** is *I'll do it* (you can still
 
 The negatives **`thuxerel`** / **`thuxerem`** / **`thuxerer`** use the same endings. **-l** is a binding refusal: they opted out, and the matter is settled. **-m** means they said no. Any no withdraws an ordinary **-m** yes; only a **-l** agreement has terms for withdrawing. **-r** means they probably don't want it; with no `/b/`, it is *not letting yourself*.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thuxegal`** | a binding agreement; withdrawing it has terms | *by agreement* / *they signed on* | **-l** ≈ locked in (on paper) |
 | **`thuxegam`** | the affected said yes; they can take it back (default) | *they agreed* / *I let myself* | **-m** ≈ their word, still open |
@@ -597,7 +597,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -624,7 +624,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *forbidden* | `erel` | `erel` *no-entry* |
 | *always* | `hual` | |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *Azawan ought to tell to serve relatedness (offered).*
 
@@ -746,7 +746,7 @@ z-Azawan | v-hush | [th-CONSENT-assumed | [b-Alahen | b-Ahaben | b-and]]
 z-bell | [w-relatedness-unmet-modifiable-AIMED-SURGING | g-stimulus]
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zalahen vezebel thonather.`
 

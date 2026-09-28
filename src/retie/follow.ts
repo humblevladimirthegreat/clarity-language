@@ -1,10 +1,10 @@
 /**
- * English that copies an Agalan spelling follows the retie of that spelling:
+ * English that copies an Agazan spelling follows the retie of that spelling:
  * a named **-n** word's English name (`zululon` → *Ululon*) and a quoted payload
  * (`z{odoga}` → *the word “odoga”*, `z-MENTION["odoga"]`). Only prose is touched;
  * code was already retied.
  */
-import { ENGLISH_IN_CODE } from "../lint/agalan-docs.js";
+import { ENGLISH_IN_CODE } from "../lint/agazan-docs.js";
 import type { ClassifyTables } from "../parse/classify.js";
 import { morphGlossLine } from "../parse/morph-gloss.js";
 import { parseWord } from "../parse/word.js";
@@ -15,7 +15,7 @@ import type { RetieChange } from "./tokens.js";
 export type FollowPairs = {
   /** Capitalised English name → new name (`Ululon` → `Alahen`). */
   names: Map<string, string>;
-  /** Lowercase Agalan word → new spelling, for quoted payloads. */
+  /** Lowercase Agazan word → new spelling, for quoted payloads. */
   words: Map<string, string>;
 };
 

@@ -6,7 +6,7 @@
 
 ## Motivation
 
-Agalan already has an unambiguous spoken spelling: one [letter name](../grammar/phonology.md#letter-names) per glyph, pauses between names. There is no documented way to spell a **single word** when the listener cannot hear (noise, distance, mouth occupied, remaining quiet).
+Agazan already has an unambiguous spoken spelling: one [letter name](../grammar/phonology.md#letter-names) per glyph, pauses between names. There is no documented way to spell a **single word** when the listener cannot hear (noise, distance, mouth occupied, remaining quiet).
 
 A primitive channel should:
 
@@ -70,7 +70,7 @@ Same sequence as spoken spelling. Example citation `agada`:
 
 ***a ga a da a*** — five holds, pause (or slight drop) between them so **da** + **a** stay two signs.
 
-Content word: PoS letter, then root letters, then ending (**l / m / n / r**), then **x** if plural. One sign per letter. Foreign / opaque payloads stay letter-by-letter only when the interior is Latin-Agalan; other orthographies are out of scope (or stay unspelled).
+Content word: PoS letter, then root letters, then ending (**l / m / n / r**), then **x** if plural. One sign per letter. Foreign / opaque payloads stay letter-by-letter only when the interior is Latin-Agazan; other orthographies are out of scope (or stay unspelled).
 
 **Location (sketch):** STS habit is a small space near chin/cheek. Absorb with photos/video; consistency matters more than copying STS height exactly.
 

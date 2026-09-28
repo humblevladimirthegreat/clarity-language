@@ -1,14 +1,14 @@
 /**
- * Retie Agalan in the docs, AGENTS.md / README.md, and source string literals
+ * Retie Agazan in the docs, AGENTS.md / README.md, and source string literals
  * from the map dumped by convert-word --lexicon (which already retied the lexicon CSVs).
  *
  * Run: npm run retie-docs
  *      npm run retie-docs -- --write
  *      npm run retie-docs -- --map tmp/lexicon-retie-map.json --write
  *
- * Only spans the doc lint reads as Agalan are rewritten (plus emphasised prose runs that parse
- * as an Agalan sentence or phrase); other hits are listed for review. English copies follow
- * their Agalan: named-word names, quoted payloads, morph lines, and heading anchors.
+ * Only spans the doc lint reads as Agazan are rewritten (plus emphasised prose runs that parse
+ * as an Agazan sentence or phrase); other hits are listed for review. English copies follow
+ * their Agazan: named-word names, quoted payloads, morph lines, and heading anchors.
  * A rewrite that stops parsing, moves an unmapped root, rebinds a resume, or splits a
  * marked shared short cut blocks `--write`, as does a map whose old spellings the word
  * grammar cannot read or that was already applied.
@@ -21,7 +21,7 @@ import { CLOSED_ENTRIES } from "../src/closed-roots.js";
 import { parseCompoundCsv, validateCompoundRows } from "../src/lexicon-compounds.js";
 import { ensureFrequencyFile, loadFrequencyRanks } from "../src/lexicon-place.js";
 import { fillSelf } from "../src/learner-name.js";
-import { ENGLISH_IN_CODE, lintAgalanMarkdown, lintAgalanSpans } from "../src/lint/agalan-docs.js";
+import { ENGLISH_IN_CODE, lintAgazanMarkdown, lintAgazanSpans } from "../src/lint/agazan-docs.js";
 import { lintRetieFormat, sharedPrefixLosses } from "../src/lint/retie-format.js";
 import { formatMorphGlossFinding, lintMorphGlossMarkdown } from "../src/lint/morph-gloss-docs.js";
 import { formatNumberSpeechFinding, lintNumberSpeechMarkdown, NUMBER_SPEECH_FILES } from "../src/lint/number-speech-docs.js";
@@ -58,7 +58,7 @@ const RETIE_SKIP_RE = /^<!--\s*retie:\s*skip\s*-->\s*$/m;
 const compoundsPath = join(rootDir, "data", "lexicon-compounds.csv");
 const overlaysPath = join(rootDir, "data", "lexicon-overlays.csv");
 const grammarDir = join(rootDir, "docs", "grammar");
-/** Source whose string literals hold Agalan. The retie tool's own tests use their own maps. */
+/** Source whose string literals hold Agazan. The retie tool's own tests use their own maps. */
 const sourceDirs = [join(rootDir, "src"), join(rootDir, "scripts"), join(grammarDir, ".vitepress")];
 /** Skipped by the source scan. `closed-roots.ts` is resynced by emoji in `convert-word --lexicon`. */
 const SOURCE_SKIP = [
@@ -113,7 +113,7 @@ function parseArgs(argv: string[]): CliOptions {
 function printUsage(): void {
   console.error(`Usage: npm run retie-docs -- [--map PATH] [--write] [--force]
 
-Reads ${RETIE_MAP_RELATIVE_PATH} (from convert-word --lexicon) and reties Agalan in
+Reads ${RETIE_MAP_RELATIVE_PATH} (from convert-word --lexicon) and reties Agazan in
 docs/grammar/, docs/examples/, docs/meta/, AGENTS.md, README.md, string literals
 under src/ (tests included), scripts/ and the grammar site, and overlay anchors.
 convert-word --lexicon already retied the lexicon CSVs; this only checks them.
@@ -169,7 +169,7 @@ function rootsInUse(texts: string[]): Set<string> {
       try {
         for (const root of antecedentStemRoots(parseWord(core))) roots.add(root);
       } catch {
-        // not an Agalan word
+        // not an Agazan word
       }
     });
   }
@@ -239,10 +239,10 @@ function bareResumeDrift(
 function lintPage(rel: string, source: string, tables: ClassifyTables): string[] {
   const text = fillSelf(source);
   const out: string[] = [];
-  for (const issue of lintAgalanMarkdown(text, tables)) {
+  for (const issue of lintAgazanMarkdown(text, tables)) {
     out.push(`${rel}:${lineNumberAt(text, issue.index)}  \`${issue.token}\`  ${issue.kind}  (${issue.detail})`);
   }
-  for (const issue of lintAgalanSpans(text, tables)) {
+  for (const issue of lintAgazanSpans(text, tables)) {
     out.push(`${rel}:${lineNumberAt(text, issue.index)}  \`${issue.text}\`  ${issue.kind}  (${issue.detail})`);
   }
   for (const finding of lintMorphGlossMarkdown(text, tables).findings) {
@@ -401,7 +401,7 @@ async function main(): Promise<void> {
     }
   }
 
-  // Heading ids spelled from Agalan move with it; links and overlay anchors follow.
+  // Heading ids spelled from Agazan move with it; links and overlay anchors follow.
   const renames: AnchorRenames = new Map();
   for (const file of markdownFiles) {
     const moved = headingIdRenames(sources.get(file)!, results.get(file)!.text);
@@ -435,7 +435,7 @@ async function main(): Promise<void> {
     for (const change of result.changes) {
       console.log(`${rel}:${lineNumberAt(original, change.index)}  ${change.from} → ${change.to}`);
       if (english.has(change.from)) {
-        review(`${rel}:${lineNumberAt(original, change.index)}  review  ${change.from} is also an English word; check it was Agalan`);
+        review(`${rel}:${lineNumberAt(original, change.index)}  review  ${change.from} is also an English word; check it was Agazan`);
       }
     }
     for (const change of result.followChanges) {

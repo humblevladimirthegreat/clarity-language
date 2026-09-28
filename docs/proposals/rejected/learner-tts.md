@@ -1,20 +1,20 @@
 # Proposal: usable learner TTS (in-browser)
 
 **Status:** REJECTED — KittenTTS synthesis and the Speak UI were removed (unreliable output, build-time model download). Reimplementation is `diphone-tts.md`, which carries the kept stages, loan policy and UI notes. The engine-neutral code (`src/tts/`) remains.  
-**Related:** long-term TODO *text to speech*; depends on [parser-pipeline.md](../../meta/parser-pipeline.md) (**assumed shipped** — `parse(text)` → typed AST); inverse dictation (no Agalan speech training) is `learner-stt.md`  
+**Related:** long-term TODO *text to speech*; depends on [parser-pipeline.md](../../meta/parser-pipeline.md) (**assumed shipped** — `parse(text)` → typed AST); inverse dictation (no Agazan speech training) is `learner-stt.md`  
 **Design authority:** spoken forms stay in the grammar docs ([phonology.md](../../grammar/phonology.md), [spans.md](../../grammar/spans.md#writing-vs-speech), [numbers.md](../../grammar/numbers.md#writing-preferred-shorthand), [dependents.md](../../grammar/dependents.md#orthography-and-prosody-periods)). This proposal covers **tooling only**: writing → speech surface → audio.
 
 ## Motivation
 
-Learners need to **hear** Agalan, not only read it. Native `speechSynthesis` on raw orthography fails: letter values differ from English (`x` = /ʒ/), stacked vowels are separate syllables, and preferred **writing** forms (number shorthand, span brackets) are not what speech uses.
+Learners need to **hear** Agazan, not only read it. Native `speechSynthesis` on raw orthography fails: letter values differ from English (`x` = /ʒ/), stacked vowels are separate syllables, and preferred **writing** forms (number shorthand, span brackets) are not what speech uses.
 
 With a finished parser, most of the hard mapping is already structured in the AST. Usable learner TTS is then a thin **speech-normalization** pass plus a deterministic **grapheme→phoneme** table from phonology, rendered by an in-browser phoneme engine — not a custom neural voice.
 
-**“Usable” here means:** letter-accurate native words, correct expansion of writing-only forms, and coarse pause / pitch cues aligned with documented prosody. It does **not** mean studio-quality singing or a trained Agalan speaker model.
+**“Usable” here means:** letter-accurate native words, correct expansion of writing-only forms, and coarse pause / pitch cues aligned with documented prosody. It does **not** mean studio-quality singing or a trained Agazan speaker model.
 
 ## Goals
 
-1. Play **any parseable Agalan string** in the browser (docs examples, exercises, future UI).
+1. Play **any parseable Agazan string** in the browser (docs examples, exercises, future UI).
 2. Expand **writing → speech** from the AST (spans, free-number shorthand, writing atoms) before synthesis.
 3. Map speech-surface letters to **IPA / phonemes** exactly as [phonology.md](../../grammar/phonology.md) specifies (including syllable splits on stacked vowels and word-final **-x**).
 4. Ship **offline-capable** synthesis (WASM or equivalent) so docs work without a cloud TTS API.
@@ -23,18 +23,18 @@ With a finished parser, most of the hard mapping is already structured in the AS
 
 ## Non-goals
 
-- Custom / neural Agalan voice training.
+- Custom / neural Agazan voice training.
 - Singing mode, melody, or musical timing (phonology’s singability goals stay design filters; TTS stays speech).
 - Perfect intonation for every Intermediate/Advanced prosody note (islands, quote voice, soft **-m** shading) in v1 — only coarse cues (see [Prosody v1](#prosody-v1)).
-- Teaching English glosses aloud (TTS speaks **Agalan**, not free English).
-- Guessing pronunciation of **opaque / foreign** interiors (`d<sushi>`, `z<Sam>n`) as if they were Agalan — see [Foreign and opaque](#foreign-and-opaque).
+- Teaching English glosses aloud (TTS speaks **Agazan**, not free English).
+- Guessing pronunciation of **opaque / foreign** interiors (`d<sushi>`, `z<Sam>n`) as if they were Agazan — see [Foreign and opaque](#foreign-and-opaque).
 - Speaking parser recoveries or other material **not present in the written input** — see [Write-only surface](#write-only-surface).
 - Replacing the parser or inventing spoken forms not in the grammar docs.
 
 ## Pipeline
 
 ```text
-Agalan text (writing or speech surface)
+Agazan text (writing or speech surface)
         │
         ▼
 ┌──────────────────────┐
@@ -64,7 +64,7 @@ Agalan text (writing or speech surface)
 | **`toPhonemes`** | Speech tokens | Phoneme strings + syllable breaks | [phonology.md](../../grammar/phonology.md) letter table only |
 | **`synthesize`** | Phoneme plan | Audio | Third-party engine + thin adapter |
 
-**No lexicon lookup is required for pronunciation** of native Agalan (spelling shows the sound). Lexicon may still annotate UI (“play this example”) but does not drive G2P.
+**No lexicon lookup is required for pronunciation** of native Agazan (spelling shows the sound). Lexicon may still annotate UI (“play this example”) but does not drive G2P.
 
 ## Speech normalization (`toSpeech`)
 
@@ -90,18 +90,18 @@ Ordinary content words (`zugobon`), revisers (`al`), join closes, spoken span op
 
 | Form | TTS policy (v1) |
 |------|-----------------|
-| Nativized ordinary word | Speak as Agalan phonemes |
-| `PoS<…>ENDING` with foreign payload | Speak PoS…ENDING **shell** with Agalan phonemes; payload as a **loan segment** (see below) |
-| Opaque `PoS<…>` (no ending) | Speak open/close (if span-expanded) in Agalan; interior as loan segment |
+| Nativized ordinary word | Speak as Agazan phonemes |
+| `PoS<…>ENDING` with foreign payload | Speak PoS…ENDING **shell** with Agazan phonemes; payload as a **loan segment** (see below) |
+| Opaque `PoS<…>` (no ending) | Speak open/close (if span-expanded) in Agazan; interior as loan segment |
 | Atomic cite/mention interiors that are raw Latin letters | Loan segment |
 
-**Loan segment (v1):** do **not** run Agalan G2P on the interior. Options (pick one default; expose override later):
+**Loan segment (v1):** do **not** run Agazan G2P on the interior. Options (pick one default; expose override later):
 
-1. **Spell-letter mode** — Agalan letter names / one phoneme per Latin letter when the payload is plain ASCII (rough but deterministic).  
-2. **Skip + short beep / pause** — mark unreadable foreign audio; show tooltip “foreign surface — not Agalan phonology.”  
-3. **Browser `speechSynthesis` island** — briefly switch to an English (or `lang`-tagged) voice for the payload only, then resume Agalan engine.
+1. **Spell-letter mode** — Agazan letter names / one phoneme per Latin letter when the payload is plain ASCII (rough but deterministic).  
+2. **Skip + short beep / pause** — mark unreadable foreign audio; show tooltip “foreign surface — not Agazan phonology.”  
+3. **Browser `speechSynthesis` island** — briefly switch to an English (or `lang`-tagged) voice for the payload only, then resume Agazan engine.
 
-**Recommendation:** default **(3)** when `speechSynthesis` has a matching voice; else **(2)**. Never pretend opaque interiors are Agalan roots.
+**Recommendation:** default **(3)** when `speechSynthesis` has a matching voice; else **(2)**. Never pretend opaque interiors are Agazan roots.
 
 ### Write-only surface
 
@@ -142,7 +142,7 @@ Unvoiced allophones are **not** requested in v1 (voiced preferred).
 |--------|------|------|
 | **A — eSpeak-NG / espeakng WASM** (or fork) | Phoneme/IPA input; offline; small enough for docs; deterministic | Robotic; IPA dialect mapping needs a thin adapter |
 | **B — MeSpeak / speak.js lineage** | Proven in-browser pattern | Older voice quality; maintenance risk |
-| **C — Web Speech API only** | Zero bundle weight | Cannot reliably hit Agalan phones; rejected as sole engine |
+| **C — Web Speech API only** | Zero bundle weight | Cannot reliably hit Agazan phones; rejected as sole engine |
 | **D — Cloud neural TTS** | Natural | Network, cost, privacy; poor conlang phoneme control unless custom lexicon — rejected for v1 default |
 
 **Default: A.** Adapter converts `PhonemePlan` → engine phoneme string (X-SAMPA or engine-native) and calls WASM. Keep **C** only as the optional **loan-segment island** helper above.
@@ -187,12 +187,12 @@ CLI: `npm run speak -- "zugobon guzumum."` prints speech surface + phonemes and 
 
 | Surface | Behavior |
 |---------|----------|
-| **Gloss overlay** (Phase 1) | **Speak Agalan** and **Show IPA** on the paste box (IPA beside the spoken preview); **Speak word** / `s` on the inspect card. Lazy WASM. |
-| Grammar doc examples | Play control on fenced Agalan lines / exercise keys (Phase 5) |
+| **Gloss overlay** (Phase 1) | **Speak Agazan** and **Show IPA** on the paste box (IPA beside the spoken preview); **Speak word** / `s` on the inspect card. Lazy WASM. |
+| Grammar doc examples | Play control on fenced Agazan lines / exercise keys (Phase 5) |
 | Future web tools | Play selection or current sentence |
 | Errors | If a token is not a native speech-shaped word, skip it; do not invent audio |
 
-Accessibility: Play button has an accessible name (“Speak Agalan”); do not autoplay on page load.
+Accessibility: Play button has an accessible name (“Speak Agazan”); do not autoplay on page load.
 
 ## Testing
 
@@ -216,9 +216,9 @@ Expect the WASM voice pack to dwarf the TS glue; keep it out of the critical ren
 
 | Risk | Mitigation |
 |------|------------|
-| Engine IPA ≠ Agalan targets (`/e̞/`, `/ɹ/`, `/ɦ/`) | Document closest engine phones; prefer consistency over perfection; fixture the **requested** phones even if engine approximates |
+| Engine IPA ≠ Agazan targets (`/e̞/`, `/ɹ/`, `/ɦ/`) | Document closest engine phones; prefer consistency over perfection; fixture the **requested** phones even if engine approximates |
 | Writing↔speech drift from docs | Fixtures quoted from spans/numbers; no ad-hoc expansions |
-| Foreign interiors sound “Agalan” | Explicit loan policy; never run native G2P on opaque payloads |
+| Foreign interiors sound “Agazan” | Explicit loan policy; never run native G2P on opaque payloads |
 | Bundle too heavy for docs site | Lazy-load WASM; Play-button gate |
 | Prosody over-promised | v1 table is pause/reset only; no claim of natural discourse |
 | Parser AST shape churn | `toSpeech` depends on stable AST node kinds from parser-pipeline; version the SpeechPlan if needed |
@@ -230,7 +230,7 @@ Expect the WASM voice pack to dwarf the TS glue; keep it out of the critical ren
 | English-respelling + `speechSynthesis` only | Fast demo; wrong phones; fails on `x` / stacked vowels / shorthand |
 | Skip parser; regex replace brackets/numbers | Re-implements grammar; fights spans/nesting/numbers |
 | Cloud neural TTS | Cost, privacy, weak phoneme control for a conlang |
-| Full custom concatenative Agalan voice | High effort; defer until learner TTS proves demand |
+| Full custom concatenative Agazan voice | High effort; defer until learner TTS proves demand |
 | Speak orthography without span/number expansion | “Usable” fails on ordinary preferred writing |
 
 ## Acceptance criteria
@@ -238,14 +238,14 @@ Expect the WASM voice pack to dwarf the TS glue; keep it out of the critical ren
 - [x] `toSpeech` expands number shorthand and span writing forms to the spoken channel per grammar docs. (Phase 2)  
 - [x] `toPhonemes` matches the phonology letter table; stacked vowels are separate syllables; **-x** is /ʒ/. (Phase 1)  
 - [x] In-browser Play speaks a parseable example offline after first WASM load. (Phase 1 Gloss overlay)  
-- [x] Opaque/foreign interiors never use Agalan G2P; loan policy is documented and tested. (Phase 2 skips interiors; loan islands are Phase 4)  
+- [x] Opaque/foreign interiors never use Agazan G2P; loan policy is documented and tested. (Phase 2 skips interiors; loan islands are Phase 4)  
 - [x] Fixtures cover at least: plain clause, plural **-x**, compound mid-word **`x`**, free-number shorthand, multi-token cite with close, island boundaries, `?` / `/x/` continue. (Phase 3: island boundaries, `/x/` continue, soft **-m**, `/y/` turn)  
 - [x] `previewSpeech` available for pedagogy (“show what will be spoken”). (Phase 1 Gloss preview line + CLI)  
-- [x] No cloud TTS required for native Agalan audio.
+- [x] No cloud TTS required for native Agazan audio.
 
 ## Phased delivery
 
-1. **Phoneme core** — native words only (already speech-shaped strings) + WASM play. **v1 surface:** [Inspect](../../grammar/inspect.md) (**Speak Agalan** / **Speak word**).  
+1. **Phoneme core** — native words only (already speech-shaped strings) + WASM play. **v1 surface:** [Inspect](../../grammar/inspect.md) (**Speak Agazan** / **Speak word**).  
 2. **Normalizer** — numbers + spans + period/`?`/`!` pauses.  
 3. **Framing cues** — `/y/` vs `/x/`, soft **-m**, islands. **Done** (boundary tags + eSpeak mapping).  
 4. **Loan islands** — `speechSynthesis` (or skip) for `<>` payloads.  

@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Phased plan for a systematic suggestion pass over `docs/grammar/`, answering two questions:
 
-1. **Gaps** — Is there common English grammar that Agalan cannot express easily, and that is not intentionally discouraged?
+1. **Gaps** — Is there common English grammar that Agazan cannot express easily, and that is not intentionally discouraged?
 2. **Extensions** — Could existing grammar be extended into other forms (unused slots, other role letters, other endings, other vowels) with intuitive new readings?
 
 This is a **suggestion** pass: output is a findings ledger plus proposals, not direct edits to grammar pages. Accepted proposals are applied afterwards through the normal grammar-doc workflow ([grammar-docs](../meta/grammar-docs.md), [doc-style](../meta/doc-style.md)).
@@ -11,10 +11,10 @@ Status: `[x]` done · `[~]` partial · `[ ]` not started.
 
 ## Ground rules
 
-- **Intentionally discouraged ≠ gap.** Before logging a gap, check [why-agelan](../grammar/why-agelan.md) (limits, feature criteria) and the owning page for a deliberate omission (e.g. no general *to-be* `/v/`, no cause-arrow word, no metric prefixes, generics via joins not **-x**). If the omission is deliberate, log it once as **by design** with the citing section, and move on.
+- **Intentionally discouraged ≠ gap.** Before logging a gap, check [why-agazan](../grammar/why-agazan.md) (limits, feature criteria) and the owning page for a deliberate omission (e.g. no general *to-be* `/v/`, no cause-arrow word, no metric prefixes, generics via joins not **-x**). If the omission is deliberate, log it once as **by design** with the citing section, and move on.
 - **"Easily" means for the learner.** A gap exists when the only route is long, unnatural, ambiguous, or taught far later than English speakers need it. Dev effort (cross-reference churn, parser work) is not a cost — see `AGENTS.md`.
 - **Extensions must be intuitive.** A proposed reading should be guessable from the existing form's meaning (same vowel series, same role-letter semantics, same ending semantics). Reject extensions that merely fill a slot.
-- **Check before proposing.** Look up [unassigned-reserved](../meta/unassigned-reserved.md) (free forms), the lexicon CSVs, and [english.md](../grammar/english.md) (existing English → Agalan mappings) so a proposal neither collides with nor duplicates something already published.
+- **Check before proposing.** Look up [unassigned-reserved](../meta/unassigned-reserved.md) (free forms), the lexicon CSVs, and [english.md](../grammar/english.md) (existing English → Agazan mappings) so a proposal neither collides with nor duplicates something already published.
 - **No proposal-page links.** New design writeups go in `docs/proposals/` per [proposals](../meta/proposals.md); refer to them by filename in backticks.
 
 ## Findings ledger
@@ -25,7 +25,7 @@ All phases write to one ledger: [grammar-gaps.md](../meta/grammar-gaps.md) (refe
 |-------|---------|
 | ID | `G-nn` (gap) or `E-nn` (extension) |
 | English job / source form | e.g. *reflexive "herself"*; or `th+N` on `/h/` |
-| Current route | Best existing Agalan expression, with example, or *none* |
+| Current route | Best existing Agazan expression, with example, or *none* |
 | Verdict | **covered** · **awkward** · **missing** · **by design** · **extension candidate** |
 | Owning page | the `docs/grammar/` page that would own it |
 | Proposal | one-line suggestion, or `docs/proposals/<file>.md` |
@@ -34,13 +34,13 @@ All phases write to one ledger: [grammar-gaps.md](../meta/grammar-gaps.md) (refe
 ## Phase 0 — Setup
 
 - [x] Create `docs/meta/grammar-gaps.md` with the ledger table and a short header (editors only).
-- [x] Collect the **by design** list: skim [why-agelan](../grammar/why-agelan.md), [introduction](../grammar/introduction.md), and the removed consistency audit's Decisions (now under [grammar-gaps](../meta/grammar-gaps.md#by-design)) for deliberate omissions; seed ledger rows with verdict **by design**.
+- [x] Collect the **by design** list: skim [why-agazan](../grammar/why-agazan.md), [introduction](../grammar/introduction.md), and the removed consistency audit's Decisions (now under [grammar-gaps](../meta/grammar-gaps.md#by-design)) for deliberate omissions; seed ledger rows with verdict **by design**.
 - [x] Snapshot [unassigned-reserved](../meta/unassigned-reserved.md) as the free-slot inventory for Phase 3.
 - [x] Run `npm run build` to confirm a clean baseline.
 
 ## Phase 1 — English coverage checklist (gaps, top-down)
 
-Walk a standard English reference-grammar inventory and find the Agalan route for each item. One agent per group; each agent writes only its group's ledger rows. For each item, write the best Agalan sentence using published roots, run it through the parser, and record the verdict.
+Walk a standard English reference-grammar inventory and find the Agazan route for each item. One agent per group; each agent writes only its group's ledger rows. For each item, write the best Agazan sentence using published roots, run it through the parser, and record the verdict.
 
 | Status | Group | Items to check |
 |--------|-------|----------------|
@@ -59,13 +59,13 @@ Walk a standard English reference-grammar inventory and find the Agalan route fo
 
 ## Phase 2 — Real-text sampling (gaps, bottom-up)
 
-Checklists miss things that only surface in real use. Translate English sentences and texts into Agalan and log every point where the translator had to stop, paraphrase heavily, or guess.
+Checklists miss things that only surface in real use. Translate English sentences and texts into Agazan and log every point where the translator had to stop, paraphrase heavily, or guess.
 
 ### 2a — Standard syntax test corpus
 
-Use the [Conlang Syntax Test Cases](https://cofl.github.io/conlang/resources/mirror/conlang-syntax-test-cases.html) (218 sentences, graded from *The sun shines.* to multi-clause reported speech; curated from ~1200 sentences to remove syntactic duplicates) as a fixed, external sentence set. Sentences we did not write avoid picking examples Agalan already handles well, and a shared corpus makes results comparable with other conlangs.
+Use the [Conlang Syntax Test Cases](https://cofl.github.io/conlang/resources/mirror/conlang-syntax-test-cases.html) (218 sentences, graded from *The sun shines.* to multi-clause reported speech; curated from ~1200 sentences to remove syntactic duplicates) as a fixed, external sentence set. Sentences we did not write avoid picking examples Agazan already handles well, and a shared corpus makes results comparable with other conlangs.
 
-- [ ] Copy the list into `docs/meta/syntax-test-corpus.md` (numbered, source credited) as the working sheet; add an Agalan translation + parser check per sentence. Keep the original numbering so rows can cite `STC-nn`.
+- [ ] Copy the list into `docs/meta/syntax-test-corpus.md` (numbered, source credited) as the working sheet; add an Agazan translation + parser check per sentence. Keep the original numbering so rows can cite `STC-nn`.
 - [ ] Split into batches of ~30 (one agent per batch, in list order, since difficulty rises); each stopping point becomes a ledger row citing `STC-nn` (dedupe against Phase 1 IDs).
 - [ ] Keep the **by design** rule: a sentence whose English form is deliberately not mirrored (e.g. *is* copula, tense) is **covered** if the meaning has a natural route.
 
@@ -120,7 +120,7 @@ For each empty cell, record one of:
 
 - [ ] Apply each accepted proposal to its owning grammar page only (one agent per page), following [grammar-docs](../meta/grammar-docs.md) and [doc-style](../meta/doc-style.md).
 - [ ] Update lexicon / overlay CSVs and the parser where the proposal adds forms; add parser tests.
-- [ ] Update [english.md](../grammar/english.md) with new English → Agalan mappings.
+- [ ] Update [english.md](../grammar/english.md) with new English → Agazan mappings.
 - [ ] Remove used slots from [unassigned-reserved](../meta/unassigned-reserved.md).
 - [ ] Add each accepted and rejected decision to [grammar-gaps by design](../meta/grammar-gaps.md#by-design) so it is not re-raised.
 - [ ] Add translation checkpoints for new beginner / intermediate features per [drill-generation](../meta/drill-generation.md).

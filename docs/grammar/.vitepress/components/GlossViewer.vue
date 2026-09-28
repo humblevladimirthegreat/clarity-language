@@ -85,8 +85,8 @@ onBeforeUnmount(() => {
       v-model="text"
       rows="4"
       spellcheck="false"
-      placeholder="Paste Agalan…"
-      aria-label="Agalan text"
+      placeholder="Paste Agazan…"
+      aria-label="Agazan text"
       :disabled="status !== 'ready'"
     />
     <p v-if="ipaPreview" class="ipa" lang="und-Latn-fonipa">IPA: {{ ipaPreview }}</p>

@@ -1,19 +1,19 @@
 # Gloss guidelines
 
-How to write **glosses** in Agalan docs and examples. Design authority for morphology stays in the linked grammar pages; this page standardizes the **reading aid** only.
+How to write **glosses** in Agazan docs and examples. Design authority for morphology stays in the linked grammar pages; this page standardizes the **reading aid** only.
 
 ## Goals
 
-A gloss should answer: *what is each Agalan piece doing in the clause — in English labels?*
+A gloss should answer: *what is each Agazan piece doing in the clause — in English labels?*
 
 | Goal | Gloss does | Gloss does not |
 |------|------------|----------------|
-| Slot + sense | Show PoS letter and the **active English sense** | Quote Agalan phonology (`amu`, `azaha`, …), except [mention / opaque interiors](#span-interiors) |
+| Slot + sense | Show PoS letter and the **active English sense** | Quote Agazan phonology (`amu`, `azaha`, …), except [mention / opaque interiors](#span-interiors) |
 | Separate senses | Treat concrete / abstract / proper / overlay as **different English roots** | Chain etymology (`microphone→speaker`) |
 | Endings | Drop **-l** / **-m** / **-n** when they only pick which sense-root applies | Repeat those endings after a sense that already encodes them |
-| Structure | Keep mid-word `x` pieces, **-x**, and binding visible | Invent full English syntax for Agalan structure; copy writing glyphs (`@` / `~`) into the gloss |
+| Structure | Keep mid-word `x` pieces, **-x**, and binding visible | Invent full English syntax for Agazan structure; copy writing glyphs (`@` / `~`) into the gloss |
 | Binding | Point **-r** (and span anaphors) at the antecedent when known | Collapse to English *he* / *she* / *it* |
-| Underspecification | Keep vague Agalan vague (`someone`, bare joins) | Sharpen into a specific English claim |
+| Underspecification | Keep vague Agazan vague (`someone`, bare joins) | Sharpen into a specific English claim |
 | Separation | Stay word-aligned | Replace the free English line |
 
 **Free English** (quoted line / table “Gloss” in grammar pages) answers *what would you say naturally?* — idiomatic paraphrase, tone, and discourse flow. Do not merge free English into the morph gloss. Default free English is **loose** ([strict vs loose](#strict-vs-loose-free-english)).
@@ -22,8 +22,8 @@ A gloss should answer: *what is each Agalan piece doing in the clause — in Eng
 
 | Layer | Where | Form |
 |-------|--------|------|
-| **Morph gloss** | Dialogue turns, clause / phrase examples, teaching lines | Word-aligned pieces joined with spaced ` | `; one roman line (below). **Omit** when parser output is trivially redundant with in-block loose English ([when to skip](#example-block); `lint:agalan` enforces). |
-| **Free English (loose)** | Same places, under the morph gloss — **default** when only one free line | Natural paraphrase in `"double quotes"`; drop Agalan packaging English doesn’t mark |
+| **Morph gloss** | Dialogue turns, clause / phrase examples, teaching lines | Word-aligned pieces joined with spaced ` | `; one roman line (below). **Omit** when parser output is trivially redundant with in-block loose English ([when to skip](#example-block); `lint:agazan` enforces). |
+| **Free English (loose)** | Same places, under the morph gloss — **default** when only one free line | Natural paraphrase in `"double quotes"`; drop Agazan packaging English doesn’t mark |
 | **Free English (strict)** | Optional second quoted line (or alone when teaching packaging) | Keeps join packaging, value endings, evidential tags, cast letters, …; teaching dialogues may show **both** labeled `strict:` / `loose:` |
 | **Grammar-table gloss** | Inventory / contrast tables in grammar docs | Short free English in **English** (often *italic* in table cells); optional parenthetical notes — loose unless the row teaches packaging. **Cue** is not a gloss ([cues](grammar-docs.md#cues-columns)). |
 | **Lexicon fields** | `lexicon-published.csv` / overlays | Concrete / abstract / mnemonic / [role English](#role-english) / definition — **inputs** to morph glosses and lookup, not utterance glosses. Verb senses use the [uninflected lemma](#english-lemma). Concrete English in a **Cue** cell is still not the morph gloss. Morph does **not** take its english slot from role English. |
@@ -33,7 +33,7 @@ Grammar tables may keep a column named **Gloss** for free English. When a table 
 ## Example block layout
 <a id="example-block"></a>
 
-Worked examples in grammar pages use a **blockquote**, not a code fence (so Markdown can render). **Backticks mark Agalan only.**
+Worked examples in grammar pages use a **blockquote**, not a code fence (so Markdown can render). **Backticks mark Agazan only.**
 
 **When the morph line earns its place** (PoS letters, several words, mid-word **`x`**, binding, …):
 
@@ -53,7 +53,7 @@ Worked examples in grammar pages use a **blockquote**, not a code fence (so Mark
 > "swan"
 ```
 
-A **complex citation** still gets a gloss if the morph unpacks structure the quote does not. An `x`-compound name is one word in Agalan and one name in English; the gloss shows the pieces:
+A **complex citation** still gets a gloss if the morph unpacks structure the quote does not. An `x`-compound name is one word in Agazan and one name in English; the gloss shows the pieces:
 
 ```markdown
 > `uhudexaloden`
@@ -65,13 +65,13 @@ A **complex citation** still gets a gloss if the morph unpacks structure the quo
 
 | Line | Markup | Why |
 |------|--------|-----|
-| Surface | `` `agelan.` `` | Copyable Agalan; the only code span |
+| Surface | `` `agazan.` `` | Copyable Agazan; the only code span |
 | Morph | `z-dog | v-walk` | English labels; roman (no italics, no per-token backticks); spaced ` | ` between **words** |
 | Free English | `"A dog walks."` | Straight double quotes. Teaching notes stay **after** the quotes: `"Ahaben sings the Sing"` (that titled performance). |
 
 Do **not** prefix the gloss with `gloss:`.
 
-**Skip the morph line** when **`lint:agalan`** would treat it as redundant: single-segment parser morph whose English body matches the in-block loose line (same readable words, ignoring quotes and trailing `.?!`). That is a redundancy test, not “citation vs sentence.” Simple `azawal` / `"swan"` omits; `zazawan vowogal.` keeps `z-Azawan | v-walk` because that is not `"Azawan walks."`. Keep the line whenever it shows something the quote hides: role letters, several words, mid-word **`x`** pieces, binding, join jobs. No in-block loose line → omitting morph stays allowed.
+**Skip the morph line** when **`lint:agazan`** would treat it as redundant: single-segment parser morph whose English body matches the in-block loose line (same readable words, ignoring quotes and trailing `.?!`). That is a redundancy test, not “citation vs sentence.” Simple `azawal` / `"swan"` omits; `zazawan vowogal.` keeps `z-Azawan | v-walk` because that is not `"Azawan walks."`. Keep the line whenever it shows something the quote hides: role letters, several words, mid-word **`x`** pieces, binding, join jobs. No in-block loose line → omitting morph stays allowed.
 
 ### Word separator
 <a id="gloss-separator"></a>
@@ -85,15 +85,15 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 
 | Layer | Job |
 |-------|-----|
-| **Morph** | Keep Agalan structure (PoS, binding, join job, stance tags, …) |
+| **Morph** | Keep Agazan structure (PoS, binding, join job, stance tags, …) |
 | **Loose free** | Idiomatic English claim — default when a page shows one free line |
-| **Strict free** | Same claim with Agalan packaging spelled out in English — use alone for packaging lessons, or **with** loose in teaching dialogues (e.g. [rainy evening](../examples/rainy-evening-dialogue.md)) |
+| **Strict free** | Same claim with Agazan packaging spelled out in English — use alone for packaging lessons, or **with** loose in teaching dialogues (e.g. [rainy evening](../examples/rainy-evening-dialogue.md)) |
 
 **Loose** drops distinctions English doesn’t mark; morph already carries them. **Keep** in loose only what changes the English sentence (who / what / polarity / negation; force English can say; stance that changes the verb; comparative / causal / plan content when that is the point).
 
 ### Drop in loose
 
-| Agalan distinction | Loose free does |
+| Agazan distinction | Loose free does |
 |---------------------|-----------------|
 | Cast / short resumes (`zazar` + “(A)”) | Ordinary *I / you / he / she / they*, or a **name** once known |
 | Role metalanguage (`speaker`, `listener`, `interlocutors`) | *I / you / we* |
@@ -113,10 +113,10 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 - Force English can say (*please*, *don’t*, *I wonder*)
 - Stance that changes the verb (*can't* vs *ought not* vs unmet sake as content)
 - Comparatives / equatives / causation / plan when they are the point of the turn
-- Mention interiors as *the word “odoga”* / *the phrase “…”* (Agalan spelling, not the English lemma) — [span interiors](#span-interiors)
+- Mention interiors as *the word “odoga”* / *the phrase “…”* (Agazan spelling, not the English lemma) — [span interiors](#span-interiors)
 - Opaque interiors as the same blob (`kimchi`, `FBI`)
 
-### Example (same Agalan, three readings)
+### Example (same Agazan, three readings)
 
 > `yol daber dedehel dagavel dol von.`
 >
@@ -128,9 +128,9 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 
 ## Senses are separate roots
 
-Published strings share one phonological root, but **concrete**, **abstract**, and **proper / overlay** readings are **different gloss roots**. Gloss only the English sense that is active. Do **not** write the Agalan letters, and do **not** write **-l** / **-m** / **-n** when that ending only selected this sense.
+Published strings share one phonological root, but **concrete**, **abstract**, and **proper / overlay** readings are **different gloss roots**. Gloss only the English sense that is active. Do **not** write the Agazan letters, and do **not** write **-l** / **-m** / **-n** when that ending only selected this sense.
 
-| Agalan | Morph gloss | Not |
+| Agazan | Morph gloss | Not |
 |---------|-------------|-----|
 | `zamul` | `z-microphone` | `z-ugobo(microphone)-l`, `z-microphone-l` |
 | `zamum` | `z-speaker` | `z-ugobo(microphone→speaker)-m` |
@@ -141,9 +141,9 @@ Published strings share one phonological root, but **concrete**, **abstract**, a
 | `thunom` | `th-WITNESSED` | `h-uvuvu(fishing→WITNESSED)-m` |
 | `gahazam` | `g-home` | `g-ohohu(house→home)-m` |
 
-Same English label for `zamum` and `zamun` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agalan line and from [word-endings.md](../grammar/word-endings.md). The gloss’s job is the **sense**, not a second orthography.
+Same English label for `zamum` and `zamun` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agazan line and from [word-endings.md](../grammar/word-endings.md). The gloss’s job is the **sense**, not a second orthography.
 
-**Closed overlays** ([sense-form](../grammar/lexicon.md)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `MAY`, `SAME`, `plan`, `DECISION`, …). The Agalan letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `on` / …).
+**Closed overlays** ([sense-form](../grammar/lexicon.md)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `MAY`, `SAME`, `plan`, `DECISION`, …). The Agazan letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `on` / …).
 
 **Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zamun` / `zohen` / `zohan` / `zonun` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` — never emoji etymology. **Stand-ins** (`darl` / `dorl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
 
@@ -152,7 +152,7 @@ Same English label for `zamum` and `zamun` is fine: both are the *speaker* sense
 
 Morph uses the published **concrete** or **abstract** for that ending, unless `english_by_pos` lists a lemma for this role letter and sense ([role English](#role-english)). Do **not** invent a new English root just because the word is under `/v/`. Closed overlays, joins, hooks, speech-act vowels, and house names stay specials.
 
-| Agalan | Morph | Free English |
+| Agazan | Morph | Free English |
 |--------|--------|------------------------------|
 | `vahahal` | `v-see` | *sees* |
 | `vehahel` | `v-sit` | *sits* |
@@ -166,7 +166,7 @@ The checkpoint **English** column and the quoted line may say *see* / *sit* / *t
 ### Role English (lookup and morph)
 <a id="role-english"></a>
 
-Published rows may pack **role English** in `english_by_pos` when the usual English lemma for a role is not a transparent conversion of the **active** sense-root. This is not an overlay and not a second Agalan meaning.
+Published rows may pack **role English** in `english_by_pos` when the usual English lemma for a role is not a transparent conversion of the **active** sense-root. This is not an overlay and not a second Agazan meaning.
 
 Packed form: `v:see; m.v:intuit; m.h:inside`. Bare keys (`v:see`) are **concrete** mismatches only. `m.` keys are **abstract** mismatches only. Neither copies onto the other sense. Omit a piece when English already converts the sense lemma (`perception` as `/v/` → *perceive*).
 
@@ -181,7 +181,7 @@ Lexicon search indexes those lemmas. Morph uses the packed lemma for that role l
 ```
 
 - **PoS** — single letter matching the written prefix (`y` `z` `d` `b` `v` `g` `w` `h` `x`). Left-bound adjectives: `gl-…`.
-- **english** — short English label for the **active** sense (hyphens OK inside a label: `that-clause`, `or-exactly-one`). **Uninflected lemma** for verb senses ([english lemma](#english-lemma)). **No** Agalan root letters. **No** writing glyphs **`@`** / **`~`** (those mark **-n** / **-m** in Agalan spelling only: numbers, span fences).
+- **english** — short English label for the **active** sense (hyphens OK inside a label: `that-clause`, `or-exactly-one`). **Uninflected lemma** for verb senses ([english lemma](#english-lemma)). **No** Agazan root letters. **No** writing glyphs **`@`** / **`~`** (those mark **-n** / **-m** in Agazan spelling only: numbers, span fences).
 - **`-x-`** — mid-word compound / stance / role / span hinge; each piece is English (or a stable TAG).
 - **-l / -m / -n** — **omit**. They only choose which English sense-root is in play. Do not re-spell them as `-l` / `-m` / `-n` or as `@` / `~`.
 - **Names** — the english slot is the **English name** (`z-Azawan`, `z-Hamlet`, `z-Abogon`, `z-Uzuzu-x-Ogove`), not the virtue or kind that formed the stem, and not `z-grace@`.
@@ -189,14 +189,14 @@ Lexicon search indexes those lemmas. Morph uses the packed lemma for that role l
 - **Prefix-less** hooks: English only — `instead`, `rather`, `additionally`, `in`, `using` (no fake PoS).
 - **Specials / overlays / joins** — still the overlay or join job (`z-speaker`, `v-and`), never `@` because the word happens to end in **-n**.
 
-Separate **words** with spaced `|` (`z-dog | v-walk`). Group words into [phrase brackets](#phrase-brackets). One morph gloss line per Agalan line (or per turn). In an [example block](#example-block), leave that line **roman** (no italics, no backticks on pieces; tables may still put a morph cell in backticks). Mid-word **`x`** stays inside one piece (`wish-x-guidance`). See [word separator](#gloss-separator).
+Separate **words** with spaced `|` (`z-dog | v-walk`). Group words into [phrase brackets](#phrase-brackets). One morph gloss line per Agazan line (or per turn). In an [example block](#example-block), leave that line **roman** (no italics, no backticks on pieces; tables may still put a morph cell in backticks). Mid-word **`x`** stays inside one piece (`wish-x-guidance`). See [word separator](#gloss-separator).
 
 ### Phrase brackets
 <a id="phrase-brackets"></a>
 
 The morph line shows **phrase structure**: which words form one unit and what modifies what. Wrap any unit of **two or more words** that fills one slot in `[ … ]`. Inside a bracket, words still use ` | `. A single word never gets brackets. Roles at clause level stay flat and unbracketed, because they are sisters under the verb: subject `z`, theme `d`, verb `v`, plain `h` / `th`, unhosted recipient `b`, linkers and `/y/`.
 
-A dependent sits next to the word it modifies, in Agalan order. Nesting shows attachment:
+A dependent sits next to the word it modifies, in Agazan order. Nesting shows attachment:
 
 | Unit | Morph gloss |
 |------|-------------|
@@ -226,7 +226,7 @@ Written and spoken spans stay distinct: a written span label has no EDGE suffix,
 ### Round trip
 <a id="round-trip"></a>
 
-A morph line corresponds **one-to-one** with its Agalan. From the gloss alone you can rebuild the exact written words, so glosses must never merge two forms:
+A morph line corresponds **one-to-one** with its Agazan. From the gloss alone you can rebuild the exact written words, so glosses must never merge two forms:
 
 - **Every written word is glossed**, including a spoken **`yal`**. A `yal` that was left out is not added.
 - **Sentence marks.** When one line holds several sentences, the mark between them stands alone with spaces: `z-Azawan | v-walk . z-←Azawan | v-judge`. A line-final period is implicit. A [tone mark](../grammar/speech-moves.md#tone-marks) is copied as written: attached to the glossed word or span it colors (`!z-Azawan`), or standing alone with spaces for sentence scope (`! z-Azawan | v-walk`).
@@ -234,7 +234,7 @@ A morph line corresponds **one-to-one** with its Agalan. From the gloss alone yo
 - **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, `.full` on a [full-root resume](#anaphors-r), and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and a surface mark when a number word is not in its [preferred writing](../grammar/numbers.md#writing-style-numeric-vs-spelled): `.spelled` on a spelled-out word that prefers shorthand (`grawodul` → `g-twelve.spelled`; `g+12` → `g-twelve`), `.short` on shorthand that prefers spelling — no digit or one digit (`g+3` → `g-three.short`; `grarel` → `g-three`; `g+` → `g-more-than-one.short`).
 - **Ordinals use digits** (`gredul` → `g-2nd`, `gruedul` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.
 - **Span resumes** gloss by type: written `d[=]` → `d-←cite`, spoken `daxur` → `d-←cite.spoken`.
-- **Unknown words fail.** A content word the lexicon cannot gloss has no morph line: a root missing from the lexicon, or **-m** on a root with no abstract sense (unless a closed overlay defines that **-m** form). `lint:agalan` reports it.
+- **Unknown words fail.** A content word the lexicon cannot gloss has no morph line: a root missing from the lexicon, or **-m** on a root with no abstract sense (unless a closed overlay defines that **-m** form). `lint:agazan` reports it.
 - **Quoted pass-through.** Raw payloads (mention and opaque interiors, and a resume stem with no known antecedent) go in straight double quotes: `z-MENTION["odoga"]`. A `"` inside the payload is written `""`.
 
 ### When an ending still appears in the gloss
@@ -267,7 +267,7 @@ The lexicon **concrete** and **abstract** fields, overlay **definition** labels 
 | dance, run, walk, climb, swim | `dance`, `run`, `walk`, … | `dancing`, `running`, `walking`, … |
 | choose, think, sing | `choose`, `think`, `sing` | `choosing`, `thinks`, `sang` |
 
-Agalan does not mark English tense or progressive aspect on the root. Conjugation belongs only in **free English** (`"Azawan walks."`, `"they are dancing."`). Morph stays `v-walk` / `v-dance` even when the quote uses *walks* / *dancing*.
+Agazan does not mark English tense or progressive aspect on the root. Conjugation belongs only in **free English** (`"Azawan walks."`, `"they are dancing."`). Morph stays `v-walk` / `v-dance` even when the quote uses *walks* / *dancing*.
 
 **Keep *-ing*** only when that string is not a verb lemma — a kind English names that way (`hearing-aid`, `lightning`, `wedding`), a closed tag the grammar already froze, or when stripping it would collide with another published literal (`fishing` vs `fish`, `cooking` vs `cook`, `partying` vs `party`). Do not append *-ing* to mark “this row is used as `/v/`.”
 
@@ -282,7 +282,7 @@ The binder **is** the gloss root. No trailing `-r` (resume is already marked by 
 
 A [short resume](../grammar/pronouns.md#resume-r) (root cut after its 2nd vowel) is unmarked. A **full-root resume** (entire root + **-r**) adds `.full`. The antecedent's label names its root, and the suffix gives the cut, so the gloss rebuilds the exact word.
 
-| Case | Agalan | Morph gloss |
+| Case | Agazan | Morph gloss |
 |------|--------|-------------|
 | Short resume | `zazar` | `z-←Azawan` |
 | Full-root resume | `zazawar` | `z-←Azawan.full` |
@@ -299,7 +299,7 @@ Do not write `z-←microphone` for a speaker antecedent.
 
 Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#house-cast)). Morph gloss is the **English name**. Free English is that same name, not the virtue word and not *I* / *you*. Resume uses that name (`z-←Azawan`). The learner's own name slot glosses as a free-standing `SELF` (`z-SELF`); the site renders *speaker* or the chosen English name ([first person](grammar-docs.md#house-cast)). Do not write `z-grace@`, `g-happy~`, or `z-grace-proper`.
 
-| Agalan | Morph gloss | Free English | Resume |
+| Agazan | Morph gloss | Free English | Resume |
 |--------|-------------|--------------|--------|
 | `zazawan` | `z-Azawan` | *Azawan* | `zazar` → `z-←Azawan` |
 | `zalahen` | `z-Alahen` | *Alahen* | `zalar` → `z-←Alahen` |
@@ -309,7 +309,7 @@ Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#
 
 Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/sakes.md), keep the stance **and** the ending table (contact / prescription warrant / preference standing / changeability): `thuduthom` → `th-competence-motive-internal`, not `th-competence-th-motive`.
 
-| Family | Example Agalan | Morph gloss |
+| Family | Example Agazan | Morph gloss |
 |--------|-----------------|-------------|
 | Ordinary / name compound | `yabebuxazovan` | `y-Ubune-x-Unowen` |
 | Ordinary (three roots) | `zagavexedehexowoden` | `z-Ogove-x-Adeda-x-Unuden` |
@@ -319,14 +319,14 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 | Span open / close | `thexal` … `xuxul` | `th-ASIDE.multi[…]` ([labeled bracket](#phrase-brackets)) |
 | Number / enumeration | `xrebul` | `x-starting-with` |
 
-For **phrasal proper names**, gloss each piece (`y-Ubune-x-Unowen`, `z-Ogove-x-Adeda-x-Unuden`). Mid-word **`x`** stays visible as `-x-`. Do not put Agalan letters in the english slot, except [mention interiors](#span-interiors).
+For **phrasal proper names**, gloss each piece (`y-Ubune-x-Unowen`, `z-Ogove-x-Adeda-x-Unuden`). Mid-word **`x`** stays visible as `-x-`. Do not put Agazan letters in the english slot, except [mention interiors](#span-interiors).
 
 ### Mention and opaque interiors
 <a id="span-interiors"></a>
 
 **Mention** (`{…}` / spoken TYPE **o**) is a **word or phrase** as that spelling, not a quoted utterance and not the English lemma. The morph line **passes the interior through** in quotes inside a labeled bracket. Free English says *the word …* or *the phrase …* and keeps that spelling.
 
-| Kind | Agalan | Morph | Free English |
+| Kind | Agazan | Morph | Free English |
 |------|--------|-------|--------------|
 | Mention (one word) | `z{odoga}` | `z-MENTION["odoga"]` | *The word “odoga” is small.* |
 | Spoken mention | `zoxol odogal` | `z-MENTION.atomic["odogal"]` | same |
@@ -351,7 +351,7 @@ Speech/writing reports (*said “X,”* *sang “X,”* *don’t “halt”*) ar
 
 Bake join / hook **job** into the English label (including open vs closed when it matters). Do not re-attach sense-picking endings:
 
-| Agalan | Morph gloss |
+| Agazan | Morph gloss |
 |---------|-------------|
 | `zam` | `z-and.open` |
 | `zal` | `z-and` |
@@ -385,7 +385,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Single words
 
-| Agalan | Morph gloss | Free English (separate) |
+| Agazan | Morph gloss | Free English (separate) |
 |---------|-------------|-------------------------|
 | `azawan.` | `Azawan` | *Azawan.* (hello) |
 | `yalahexen` | `y-Alahen-minutes` | *Alahen — a few minutes.* |
@@ -469,28 +469,28 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 
 | Avoid | Why | Prefer |
 |-------|-----|--------|
-| `z-ugobo(speaker)-n` | Agalan letters + redundant ending | `z-speaker` |
+| `z-ugobo(speaker)-n` | Agazan letters + redundant ending | `z-speaker` |
 | `z-grace@` / `g-happy~` / `z-grace-proper` | Writing glyphs or the word *proper* in the gloss | `z-Azawan` / `g-happy` |
-| `zam` / `hal` / `am` as the whole morph | Agalan letters where the job belongs | `z-and.open` / `h-only-when` / `including.open` |
+| `zam` / `hal` / `am` as the whole morph | Agazan letters where the job belongs | `z-and.open` / `h-only-when` / `including.open` |
 | `z-microphone-l` | Ending already chose the literal root | `z-microphone` |
 | `z-microphone→speaker` | Etymology chain | `z-speaker` |
 | `v-see` for `vahahal` with no `v:see` cell | Invented PoS lemma | Fill `english_by_pos` first, then morph follows |
 | Morph line that is only idiomatic English | Confuses layers | Morph + separate quoted free line |
-| Morph gloss that matches the quoted English | Redundant; the quote already is the sense | Omit that line when `lint:agalan` agrees ([example block](#example-block)). Keep it when it unpacks **`x`**, PoS, several words, … |
-| `gloss:` + per-token backticks inside a code fence | Markdown renders raw; Agalan and gloss look the same | Blockquote; backticks on Agalan only |
+| Morph gloss that matches the quoted English | Redundant; the quote already is the sense | Omit that line when `lint:agazan` agrees ([example block](#example-block)). Keep it when it unpacks **`x`**, PoS, several words, … |
+| `gloss:` + per-token backticks inside a code fence | Markdown renders raw; Agazan and gloss look the same | Blockquote; backticks on Agazan only |
 | Loose free packed with cast letters / join footnotes / value endings | Duplicates morph; not “what you’d say” | Idiomatic claim; use **strict** free only for teaching |
-| English *he* / *she* inside morph for **-r** | Hides Agalan binding | `z-←Antecedent` |
+| English *he* / *she* inside morph for **-r** | Hides Agazan binding | `z-←Antecedent` |
 | New synonym every example for the same overlay | Unstable inventory | Fixed labels (`witnessed`, `MAY`, …) |
 
 ## Checklist
 
-1. English senses only — no Agalan root spellings, except [mention / opaque interiors](#span-interiors). Verb senses are the uninflected lemma (`dance`, not `dancing`).
+1. English senses only — no Agazan root spellings, except [mention / opaque interiors](#span-interiors). Verb senses are the uninflected lemma (`dance`, not `dancing`).
 2. No `→` etymology chains.
 3. No **-l** / **-m** / **-n**, and no **`@`** / **`~`**, when they only selected the sense-root. Named **-n** is the English name (`z-Azawan`), not `-n`, `@`, or `-proper`.
 4. Compounds / stance / role / span `x` pieces are always hyphenated segments (`y-Ubune-x-Unowen`). Do not fuse a name into one unsegmented English label.
 5. **-r** uses `←…` (no trailing `-r`), with `.full` on a full-root resume; **-x** stays as `-x`. Resume of a house name is `z-←Azawan`, not `z-r`. Fill-ask is `z-who`, not `z-ar`.
-6. Multi-word units are in [phrase brackets](#phrase-brackets), nested by attachment; packages use labeled brackets (`NAME[…]`, `CITE[…]`, `SCOPE[…]`). The line [round-trips](#round-trip) to the exact Agalan.
-7. Free English is on its own **quoted** line (or grammar-table Gloss column) — **loose** by default; **strict** only when teaching packaging. Example blocks follow [example block layout](#example-block) (blockquote; skip a morph line only when `lint:agalan` treats parser output as redundant with that loose line).
+6. Multi-word units are in [phrase brackets](#phrase-brackets), nested by attachment; packages use labeled brackets (`NAME[…]`, `CITE[…]`, `SCOPE[…]`). The line [round-trips](#round-trip) to the exact Agazan.
+7. Free English is on its own **quoted** line (or grammar-table Gloss column) — **loose** by default; **strict** only when teaching packaging. Example blocks follow [example block layout](#example-block) (blockquote; skip a morph line only when `lint:agazan` treats parser output as redundant with that loose line).
 
 ## See also
 

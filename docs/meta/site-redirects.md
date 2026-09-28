@@ -69,7 +69,7 @@ Current map (coordination → joins) plus 404:
 ]
 ```
 
-After save: `/grammar/coordination.html` (and `#…` on that file) should open Joins; `/grammar/no-such-page.html` should show **PAGE NOT FOUND**, not Why Agalan.
+After save: `/grammar/coordination.html` (and `#…` on that file) should open Joins; `/grammar/no-such-page.html` should show **PAGE NOT FOUND**, not Why Agazan.
 
 ## Inventory of old links
 
@@ -86,6 +86,7 @@ Put **every retired public path** in `pageMoves`, not only the latest rename. To
 | `/grammar/join-derived-forms.html` | `/grammar/join-across-roles.html` |
 | `/grammar/values.html` | `/grammar/sakes.html` |
 | `/grammar/interests.html` | `/grammar/sakes.html` |
+| `/grammar/why-agelan.html` | `/grammar/why-agazan.html` |
 
 When you find another circulating URL (Cool Features, Reddit, Discord), add a row in the same commit as the rename when you can; otherwise add the row as soon as you notice the miss.
 

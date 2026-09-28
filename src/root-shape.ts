@@ -1,12 +1,12 @@
 /**
- * Agalan root letter inventory and root shape, with no Node dependencies so the browser parser can use it.
+ * Agazan root letter inventory and root shape, with no Node dependencies so the browser parser can use it.
  */
 
-/** Agalan root vowels (phonology inventory). */
+/** Agazan root vowels (phonology inventory). */
 export const CLARITY_VOWELS = ["a", "e", "o", "u"] as const;
 
 /**
- * Agalan root consonants. The glide is `y`. Mid-word `x` is never a root letter.
+ * Agazan root consonants. The glide is `y`. Mid-word `x` is never a root letter.
  */
 export const CLARITY_CONSONANTS = [
   "b",

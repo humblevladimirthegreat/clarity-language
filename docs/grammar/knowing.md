@@ -23,7 +23,7 @@ The leaving or the blow is still the event named in the *could be*. Without the 
 
 On **`ovo`**, **-l / -m / -r** say what you are doing with that *could be* **this sentence**. None of them is the “correct” person: finding out, leaving it at *may*, and *who knows* are all lawful. **-n** is ordinary [proper](word-endings.md#proper-name--n).
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thovom`** | could be (default) | *may* / *could be* | `ovol` *thought* | 💭: balloon |
 | **`thovol`** | could be, and you are **seeking** | *may — I'll find out* / *let's find out* | `ovol` *thought* | 💭: balloon plus looking |
@@ -59,7 +59,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Write *
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -76,7 +76,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Write *
 | *scream* | `vezogel` | |
 | *fight* | `vavadal` | |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *Alahen may be seeing Ahaben.* (could be; default)
 
@@ -142,7 +142,7 @@ z-Alahen | th-MAY | v-fight
 y-question | z-Ahaben | th-MAY | v-scream
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zalahen thovom vezebel bahaben.`
 
@@ -220,7 +220,7 @@ z-Ahaben | th-MAY | v-cry
 <a id="evidential"></a>
 <a id="content-readings"></a>
 
-English often says *how you know* a claim (*I saw it*, *I heard*, *I figured*). Agalan keeps the ordinary content verb and adds a closed `/th/` mood word. That word is the **channel** the claim came through, so the same walk or sleep can sit under a live look, memory, a recording, a pattern of cases, clues, hearsay, a gut sense, or a tale. The channel roots stay ordinary content under other role letters (`vodul` *to attest*, `dovel` *a theater*); only the `/th/` word is the mood.
+English often says *how you know* a claim (*I saw it*, *I heard*, *I figured*). Agazan keeps the ordinary content verb and adds a closed `/th/` mood word. That word is the **channel** the claim came through, so the same walk or sleep can sit under a live look, memory, a recording, a pattern of cases, clues, hearsay, a gut sense, or a tale. The channel roots stay ordinary content under other role letters (`vodul` *to attest*, `dovel` *a theater*); only the `/th/` word is the mood.
 
 Verbs have **no past or future letter**. Some channels already locate the event because of how you know: **LIVE** is watching while the scene is still in view; **WITNESSED** is memory of watching; **RECORDED** is playback of a capture, or a schedule. There is no forecast word: a claim that something **will** happen is a channel plus the later offset **`bral`** ([forecasts](#forecast)), so a forecast always says how you know. [PLAN](intention.md#plan-predict) is intention, not a forecast. Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, or a [signed offset](#dated-channel) on the channel) when inference or hearsay needs a different time than this stretch.
 
@@ -238,7 +238,7 @@ Verbs have **no past or future letter**. Some channels already locate the event 
 
 **For *could be* (no channel), use:** [MAY](#may) (`ovo`). English *I think* as a **guess with a warrant** belongs in this inventory, or as a bare report. This inventory is *how you know a world-claim*.
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thodum`** | firsthand / concurrent channel | *live* / *from the scene* | `odul` *attest* | 👁️‍🗨️: seeing-and-saying while it is in view |
 | **`thunom`** | firsthand / reconstructive channel | *from memory* (past observation) | `unol` *fishing* | 🎣: you pull something back |
@@ -296,7 +296,7 @@ The ending on a channel says **how strong the evidence is**: how much the claim 
 
 ### Forecasts (`bral`) {#forecast}
 
-Agalan has no *will* word for the world. To say something **will** happen, use a channel and put the later offset **`bral`** right after it: a `/b/` number with a plus sign and no digits, meaning *some time after now*. The channel says what the forecast rests on, so a forecast cannot hide its warrant. For a hunch, the honest channel is FELT. The mirror **`brul`** is *some time before now*, for a past claim with no measured amount.
+Agazan has no *will* word for the world. To say something **will** happen, use a channel and put the later offset **`bral`** right after it: a `/b/` number with a plus sign and no digits, meaning *some time after now*. The channel says what the forecast rests on, so a forecast cannot hide its warrant. For a hunch, the honest channel is FELT. The mirror **`brul`** is *some time before now*, for a past claim with no measured amount.
 
 > `thabem bral verehel.`
 >
@@ -333,7 +333,7 @@ Agalan has no *will* word for the world. To say something **will** happen, use a
 >
 > "Azawan saw a boot — as I remember it."
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thodum`** | concurrent / in-view observation | *live* / *from the scene* | `odul` *attest* | 👁️‍🗨️: seeing-and-saying while it is in view |
 | **`thunom`** | reconstructive / recalled observation | *I remember* / *from memory* | `unol` *fishing* | 🎣: retrieval from the water |
@@ -344,7 +344,7 @@ Agalan has no *will* word for the world. To say something **will** happen, use a
 <a id="former-climate"></a>
 <a id="episode-standing"></a>
 
-English *has walked* and *used to walk* often smuggle **when** the event sits. Agalan already places events with [*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, [LIVE](#live-vs-memory) / [WITNESSED](#live-vs-memory), or a [forecast](#forecast). These two `/th/` moods do **not** locate time. They say how the episode **stands**: whether an outcome **still counts on the current tally**, or whether a usual pattern is **not the climate you are claiming now**. Stack them with a channel or a when-frame; do not use them as a past or present letter.
+English *has walked* and *used to walk* often smuggle **when** the event sits. Agazan already places events with [*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, [LIVE](#live-vs-memory) / [WITNESSED](#live-vs-memory), or a [forecast](#forecast). These two `/th/` moods do **not** locate time. They say how the episode **stands**: whether an outcome **still counts on the current tally**, or whether a usual pattern is **not the climate you are claiming now**. Stack them with a channel or a when-frame; do not use them as a past or present letter.
 
 **RESIDUE** (`amo`) marks leftover balance: the result is still on the books (an unpaid tab, a door that is still shut). Skipping it means you are not claiming current residue (archived, or a fresh event with nothing left to count). Ordinary `zamom` is still *debt*.
 
@@ -390,7 +390,7 @@ English *has walked* and *used to walk* often smuggle **when** the event sits. A
 
 **Compare with:** **`hual`** without **`thunem`** is *always* as the weather you stand behind now. PATTERN **`thabem`** is *how you know* (a trail of cases), not “this used to be my weather.” Do not write **`thunem`** immediately before **`hual`**: that slot is the restrictor’s occasion list (*always except when…*). Keep **`hual`** first (bare *always*), then **FORMER** after the verb, the way [COMMON](#universality) sits after **`hual`**. **`thunem`** is not a past tense: it is legal under LIVE and in a forecast.
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thamom`** | outcome still on the current tally | *still counts* / residue | `amom` *debt* | 💰: unpaid balance still on the books |
 | **`thunem`** | not the climate claimed now | *former climate* | `unem` *emptiness* | 🪹: the nesting season is over |
@@ -399,9 +399,9 @@ Prefer floating `/th/`. Use `/w/` only when the standing grades the `/ɡ/` adjec
 
 ### Already, still, not yet, no longer {#phasal}
 
-English *already*, *still*, *not yet*, and *no longer* do not place an event in time. Each compares what is true **now** with a change: has it come, or not? That is a question of standing, like RESIDUE, so Agalan uses four `/h/` words, not a tense. (cue: each root pictures the stage the change is at)
+English *already*, *still*, *not yet*, and *no longer* do not place an event in time. Each compares what is true **now** with a change: has it come, or not? That is a question of standing, like RESIDUE, so Agazan uses four `/h/` words, not a tense. (cue: each root pictures the stage the change is at)
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`huham`** | the change has happened | *already* | `uhal` *hatch* | 🐣: the chick is already out |
 | **`hagem`** | the state goes on | *still* | `agel` *anchor* | ⚓: the ship is held where it was |
@@ -428,7 +428,7 @@ English *already*, *still*, *not yet*, and *no longer* do not place an event in 
 
 The ending says how settled the current stage is, on the same strong-to-light scale as [DECISION](intention.md#decision-changeability). Use **-m** when it could change back, or when you do not know. Use **-l** when it is not expected to. Use **-r** when it holds only for now: it is likely to change back soon, or, on *not yet*, the change may never come.
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `huhal` | done, and it will stay done | *already, for good* |
 | `hagel` | goes on, with no end in sight | *still, and it will keep on* |
@@ -465,7 +465,7 @@ When only one `/ɡ/` adjective is still or no longer so, write the same word und
 <a id="notional"></a>
 <a id="notional-mood"></a>
 
-English sometimes frames the whole clause as play: *as if*, *for the sake of argument*, *this is only in the mind*. Agalan keeps the ordinary verb and adds the closed `/th/` word **`ove`**. That word takes the scene off the real tally, so you can tell a pretend walk without turning *walk* into a special pretend-verb. (cue: 🎭 *theater*: a stage mask; the real tally stays offstage)
+English sometimes frames the whole clause as play: *as if*, *for the sake of argument*, *this is only in the mind*. Agazan keeps the ordinary verb and adds the closed `/th/` word **`ove`**. That word takes the scene off the real tally, so you can tell a pretend walk without turning *walk* into a special pretend-verb. (cue: 🎭 *theater*: a stage mask; the real tally stays offstage)
 
 > `zazawan thovem vowogal.`
 >
@@ -482,7 +482,7 @@ English sometimes frames the whole clause as play: *as if*, *for the sake of arg
 
 You can rehearse an imagined scene to prepare for doing it, picture it without a special purpose, or just toy with a *what if*. **NOTIONAL** keeps the clause in that imagined frame; its ending says how much weight the frame carries. The endings follow [PLAN](intention.md#plan-predict) (atlas / itinerary / sketch): **-l** is the most committed to action, **-m** the default, and **-r** the lightest. **-n** is ordinary [proper](word-endings.md#proper-name--n).
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thovel`** | rehearse a possible scene to prepare for action | *let’s practice…* / *try acting as if…* | `ovel` *theater* | 🎭: practice a scene |
 | **`thovem`** | imagine a scene without a further purpose (default) | *imagine…* / *as if…* | `ovel` *theater* | 🎭: picture a scene |
@@ -511,7 +511,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Wri
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -543,7 +543,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Wri
 | *PATTERN.strong* | `thabel` | `abel` *paw-prints* |
 | *RECORDED.strong* | `therul` | `erul` *record* |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *Azawan tells Ahaben — live / from the scene.* (present observation)
 
@@ -649,7 +649,7 @@ z-Alahen | th-TOLD.weak | v-scream
 z-Azawan | [th-PATTERN.strong | b-later] | v-tell | b-Ahaben
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zazawan thahum vezebel bahaben.`
 
@@ -781,7 +781,7 @@ These `/th/` moods usually sit over the whole clause. When the *could be*, chann
 <a id="ago"></a>
 <a id="time-offset"></a>
 
-English *three hours ago* and *in three hours* count from now. Agalan counts from the channel instead: put a [measure phrase](numbers-applied.md#measure-phrases) in `/b/` immediately after the evidential. The amount is **signed**: **`-`** is earlier than now, **`+`** is later than now. The offset always dates the **event**, not the moment you learned about it. There is no bare *ago* word, so a dated claim always says how you know it.
+English *three hours ago* and *in three hours* count from now. Agazan counts from the channel instead: put a [measure phrase](numbers-applied.md#measure-phrases) in `/b/` immediately after the evidential. The amount is **signed**: **`-`** is earlier than now, **`+`** is later than now. The offset always dates the **event**, not the moment you learned about it. There is no bare *ago* word, so a dated claim always says how you know it.
 
 > `zazawan thunom bagazem grurel vowogal.`
 > z-Azawan | [th-WITNESSED | [b-hour | g-minus-three]] | v-walk
@@ -829,7 +829,7 @@ With an [as-of](relations.md#as-of) pair, the offset counts from that whose-now 
 
 #### Now and today {#now}
 
-Agalan has no short *now* word. Say *now* with an offset of **zero**: the event sits no time away from the moment you speak. The channel stays, so *now* still says how you know it.
+Agazan has no short *now* word. Say *now* with an offset of **zero**: the event sits no time away from the moment you speak. The channel stays, so *now* still says how you know it.
 
 > `zalahen thevem bagazem grazol vezebal.`
 > z-Alahen | [th-INFERRED | [b-hour | g-zero]] | v-sleep
@@ -858,7 +858,7 @@ English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** 
 
 The default *always* is *usually* (exceptions expected), not *must happen that way*, and not an ought. (cue: usual weather, not a law of nature.) Prefer floating `/th/`. Use **COMMON** (`thogol`) unless another row is the exceptionlessness you mean. **RULE** is complex `/th/` + `/b/` when you name the frame.
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thogol`** | COMMON (default climate) | *usually* (exceptions expected) | `ogol` *cloudy* | ⛅: usual sky still allows a shower |
 | **`thehol`** | UNCOUNTERED (search) | *as far as checked* (no counterexample comes to mind) | `ehol` *pill* | 💊: you take it to treat an ailment; the search found none |
@@ -870,7 +870,7 @@ The default *always* is *usually* (exceptions expected), not *must happen that w
 
 **For *I saw a pattern*, use:** [evidential](#evidentiality) **`abe`**. **`ogo`** is usual-weather universality; NATURAL **`alu`** stacks a separate evidential `/th/` for how you know.
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `… hual … thogol` | default universality | *always, usually* |
 | `… hual … thehol` | search found no counterexample | *always, as far as checked* |
@@ -888,7 +888,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Score l
 
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
+| English | Agazan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
 | *Alahen* | `alahen` | | |
@@ -918,7 +918,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Score l
 | *sleep* | `vezebal` | `ezebal` *sleep* | |
 | evidential *pattern* | `abem` | `abel` *paw-prints* | 🐾: a trail of what usually happens |
 
-#### English → Agalan {#advanced-english-to-agalan}
+#### English → Agazan {#advanced-english-to-agazan}
 
 **1.** *Alahen walks — and that blue is live, from the scene itself.*
 
@@ -976,7 +976,7 @@ z-Alahen | h-never | v-punch | [th-RULE | b-soccer]
 [z-everything.open | g-claim] | th-COMMON
 :::
 
-#### Agalan → English {#advanced-agalan-to-english}
+#### Agazan → English {#advanced-agazan-to-english}
 
 **1.** `zazawan wovom gubuhal vowogal.`
 

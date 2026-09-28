@@ -1,5 +1,5 @@
 /**
- * Convert English text to an Agalan root from its CMU pronunciation.
+ * Convert English text to an Agazan root from its CMU pronunciation.
  *
  * Run: npm run convert-word -- fishing
  *      npm run convert-word -- --unique fishing

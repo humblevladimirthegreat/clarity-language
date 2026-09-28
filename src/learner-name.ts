@@ -1,5 +1,5 @@
 /**
- * The learner's own Agalan name: one published root + **-n**, filling `SELF` slots
+ * The learner's own Agazan name: one published root + **-n**, filling `SELF` slots
  * in grammar examples. Unset → the speaker special (microphone + **-n**).
  */
 import { CLOSED, namedEnglish } from "./closed-roots.js";
@@ -111,7 +111,7 @@ export function selfGlossEnglish(root: string): string {
 
 /** `SELF` standing alone in a morph-gloss line (`z-SELF`, or a bare citation's `SELF`). */
 const GLOSS_SLOT_RE = /(?<![A-Za-z0-9])SELF(?![A-Za-z0-9])/g;
-/** `SELF` inside an Agalan word (`zSELFn`, `SELFn.`). */
+/** `SELF` inside an Agazan word (`zSELFn`, `SELFn.`). */
 const WORD_SLOT_RE = /SELF(?=[a-z])/g;
 
 /** True when the text has a `SELF` slot. */

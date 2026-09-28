@@ -1,6 +1,6 @@
 # Spans
 
-When you set wording apart from the rest of the sentence (a quote, a parenthetical, a loan surface), Agalan packages that chunk in a **span fence**. In writing you put a role letter, then a pair of brackets around the interior. That first letter is the chunk’s role in the outer sentence (subject, object, verb, or adverb).
+When you set wording apart from the rest of the sentence (a quote, a parenthetical, a loan surface), Agazan packages that chunk in a **span fence**. In writing you put a role letter, then a pair of brackets around the interior. That first letter is the chunk’s role in the outer sentence (subject, object, verb, or adverb).
 
 ## Beginner {#beginner}
 
@@ -19,7 +19,7 @@ Start with one quoted token as the object of *said*. A [greeting](word-endings.m
 >
 > "Azawan said “Azawan.”" (hello)
 
-The whole `d[azawan]` is the direct object (who or what is acted on). If the interior is Agalan words in a clause, those inner words still start with their own role letters.
+The whole `d[azawan]` is the direct object (who or what is acted on). If the interior is Agazan words in a clause, those inner words still start with their own role letters.
 
 ### Exact, paraphrase, proper
 <a id="when-required"></a>
@@ -28,7 +28,7 @@ You can mark how faithful the quote is. Put the mark **after** the role letter, 
 
 Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gist, not the exact words, write **`~`** (`d~[zazawan vezehel]`). When the chunk is the **work** that bears a **multi-word** title (the song, proverb, book — not the name-string), write **`@`** (`d@[onodan alahen]`). A one-word work or person is ordinary **-n** (`donodan`), not `d@[onodan]`, unless the role letter or the ending is **part of the title** you are packaging. **`@`** / spoken **-n** is on the **fence**; words inside keep their usual endings ([titled phrases](word-endings.md#titled-phrases)).
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | *(none)* | exact | verbatim wording | bare brackets already quote; extra ink would hedge |
 | **`~`** | paraphrase | the gist, not the exact words | **~** looks like “about / approximately” |
@@ -58,7 +58,7 @@ To point back at a prior span without repeating its interior, put **`=`** inside
 
 ### Mention (`{…}`)
 
-A **mention** holds a **word or phrase** as that spelling, not a quote of speech. Write the role letter, then curly braces around it. English says *the word …* or *the phrase …* and keeps the Agalan interior (`odoga`, not *dog*). To quote what someone said, use [cite](#writing).
+A **mention** holds a **word or phrase** as that spelling, not a quote of speech. Write the role letter, then curly braces around it. English says *the word …* or *the phrase …* and keeps the Agazan interior (`odoga`, not *dog*). To quote what someone said, use [cite](#writing).
 
 > `z{odoga} gamazam.`
 >
@@ -90,7 +90,7 @@ With **`@`**, mention is the **name** (the title-string you could rename), even 
 
 ### Opaque and loan words {#loans}
 
-**Opaque** holds a foreign, code, or raw surface that is not ordinary Agalan words. Write the role letter, then angle brackets around that blob. Do not put an extra letter after `>`. Faithfulness uses the same marks as cite: none / **`~`** / **`@`**, and resume uses **`=`** inside (`d<=>`).
+**Opaque** holds a foreign, code, or raw surface that is not ordinary Agazan words. Write the role letter, then angle brackets around that blob. Do not put an extra letter after `>`. Faithfulness uses the same marks as cite: none / **`~`** / **`@`**, and resume uses **`=`** inside (`d<=>`).
 
 > <code>zazawan d&lt;kimchi&gt; vahahal.</code>
 >
@@ -98,9 +98,9 @@ With **`@`**, mention is the **name** (the title-string you could rename), even 
 >
 > "Azawan saw kimchi." (opaque surface)
 
-Keep the source’s **casing** inside `<>` when that writing system uses case (<code>d&lt;NaCl&gt;</code>, <code>d@&lt;iPhone&gt;</code>). Native Agalan letters stay [lowercase](phonology.md#beginner). **`@`** is the proper mark when that blob is a titled name.
+Keep the source’s **casing** inside `<>` when that writing system uses case (<code>d&lt;NaCl&gt;</code>, <code>d@&lt;iPhone&gt;</code>). Native Agazan letters stay [lowercase](phonology.md#beginner). **`@`** is the proper mark when that blob is a titled name.
 
-When a published Agalan root already matches, write the ordinary word (`dagadal`, not a fence).
+When a published Agazan root already matches, write the ordinary word (`dagadal`, not a fence).
 
 Outside a clause, a foreign name or word is a prefix-less fence with the same marks: [citation forms](word-endings.md#citation-forms) (<code>@&lt;Sam&gt;</code>). A span in a sentence still takes a role letter, because it fills a sentence slot (<code>z@&lt;Sam&gt;</code>).
 
@@ -109,7 +109,7 @@ Outside a clause, a foreign name or word is a prefix-less fence with the same ma
 
 An **aside** is a parenthetical comment. Package it as a [stance](clause.md#stance-th) word: write **`th(`** … **`)`**. Round parentheses mark the side comment. The fence may sit anywhere a stance word may sit.
 
-The interior is ordinary Agalan: a fragment, or a clause body that keeps the **same speech act** as the outer sentence (the same statement, question, or command).
+The interior is ordinary Agazan: a fragment, or a clause body that keeps the **same speech act** as the outer sentence (the same statement, question, or command).
 
 > `zazawan vowogal th(hazaham).`
 >
@@ -139,14 +139,14 @@ The letter on the open is the role of the **entire span** in the outer sentence.
 >
 > "Don’t say “stop,” Alahen."
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `/d/` | object | *said / wrote / saw “…”* (`d[azawan]`, `d[=]`, <code>d&lt;kimchi&gt;</code>) | **d** ≈ done to |
 | `/z/` | subject | the word or phrase **is** the subject (`z{odoga}`) | **z** ≈ star (who it is about) |
 | `/v/` | verb | echo the act as wording (`v[vazadal]`) | **v** as in English *verb* |
 | `/th/` | stance | asides (`th(…)`) | **th** ≈ *think* (your side comment) |
 
-If the interior is Agalan words, those inner words still start with **their** role letters.
+If the interior is Agazan words, those inner words still start with **their** role letters.
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -156,7 +156,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
+| English | Agazan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
 | *Alahen* | `alahen` | | |
@@ -173,7 +173,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *kimchi* | <code>d&lt;kimchi&gt;</code> | | |
 | *Sam* | <code>@&lt;Sam&gt;</code> | | |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *Azawan said “Azawan.”* (hello)
 
@@ -245,7 +245,7 @@ y-question | z-Alahen | d-←cite | v-tell
 z-MENTION["zazawan vezehel"] | g-small
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** <code>zalahen d&lt;kimchi&gt; vahahal.</code>
 
@@ -351,12 +351,12 @@ Beginner writing already packages a quote, mention, aside, or blob in brackets. 
 
 Beginner already used square, round, curly, and angle brackets for cite, aside, mention, and opaque. Speech puts that choice in the vowel **before** `x`.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|------|---------|-----|
 | **a** | **cite** (`[` … `]`); clausal interiors: outer speaker does **not** assert | quoted wording | **a** ≈ add (hold cited words) |
 | **e** | **aside** (`th(` … `)`); `/th/` digression; outer speaker **does** assert; interior may be a fragment or a same-speech-act clause body | parenthetical | **e** ≈ else (an extra comment) |
 | **o** | **mention** (`{` … `}`); with **`@`** / **-n**, the **name** | the word or phrase; proper = the name-string | **o** ≈ one (one word or phrase as the object) |
-| **u** | **opaque** (`<` … `>`); interior is not native Agalan | foreign / code | **u** ≈ undo (not native Agalan) |
+| **u** | **opaque** (`<` … `>`); interior is not native Agazan | foreign / code | **u** ≈ undo (not native Agazan) |
 
 **Compare with:** a native office name uses ordinary **-n** (`zubugan`). Mention `{abogo}` is that **word**; opaque / loan is a **foreign** acronym’s surface (<code>z@&lt;FBI&gt;</code>).
 
@@ -370,7 +370,7 @@ A pair of brackets can wrap one token or many, run to the end of the clause, or 
 >
 > "Alahen said “Azawan sings.”"
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **a** | **multi-token open** — stays open until an explicit close (default) | `d[…]` … `]` (needs close) | **a** ≈ add (push more tokens) |
 | **e** | **clause-scoped** — ends before the next speech-act `/y/` or clause-level `/x/` join | `d[…` run to clause end (no close) | **e** ≈ order (this clause only) |
@@ -385,7 +385,7 @@ EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** tak
 
 Beginner already used a bare open, **`~`**, **`@`**, and **`[=]`**. Speech puts the same jobs on **-l** / **-m** / **-n** / **-r**.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|---------|---------|-----|
 | **-l** | **exact** — verbatim / precise surface | bare open (no `@` / `~`) | **-l** stand behind the wording |
 | **-m** | **paraphrase** — gist / non-verbatim rendering | **`~`** after the role letter (`d~[…]`) | **-m** leaves the hold open |
@@ -508,7 +508,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan |
+| English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
@@ -527,7 +527,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *possibility* | `hegewem` |
 | *FBI* | <code>d&lt;FBI&gt;</code> |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *Azawan said “Azawan.”* (spoken atomic cite)
 
@@ -609,7 +609,7 @@ z-MENTION.multi["alahen" | "vodul"] | g-small
 z-Ahaben | !SCOPE[h-possibility | d-lie] | v-see
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zazawan vezebel daxel azawan.`
 
@@ -713,7 +713,7 @@ You already close a multi-token span with **`xuxul`**, the spoken match for `]` 
 >
 > "Azawan said “Azawan…”" (hello, trailing off)
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`xuxul`** | close **one** span, whole | matching closer `]` / `}` / `)` / `>` | **-l** exact: the span closes whole |
 | **`xuxur`** | close **one** — **editorial** (wording kept as written: cut off, trail off, or defect noted) | `#]` / `#}` / `#)` / `#>` | **-r** resume: the wording stops short; resume may pick up |
@@ -746,7 +746,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan |
+| English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
@@ -755,7 +755,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *bug* | `abogam` |
 | *happy* | `hazaham` |
 
-#### English → Agalan {#advanced-english-to-agalan}
+#### English → Agazan {#advanced-english-to-agazan}
 
 **1.** *Ahaben said “bug.”* (complete close of one span)
 
@@ -781,7 +781,7 @@ z-Alahen | d-CITE.multi[flaw]# | v-tell
 z-Azawan | d-CITE.multi[th-ASIDE.atomic[h-happy] | flaw]| | v-tell
 :::
 
-#### Agalan → English {#advanced-agalan-to-english}
+#### Agazan → English {#advanced-agazan-to-english}
 
 **1.** `zazawan d[abogam#] vezebel.`
 

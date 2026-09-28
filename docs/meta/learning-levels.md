@@ -13,7 +13,7 @@ Ask in order. Prefer the **earlier** stage when a concept sits on a boundary and
 
 1. **Usable after one short explanation?**  
    Can someone use it in ordinary dialogue after roughly one paragraph and a couple of examples (and at most a second of thought once practiced)?  
-   If yes → **beginner** (or at least not advanced). Aligns with the language’s [easy-to-use feature criterion](../grammar/why-agelan.md#criterion-for-features).
+   If yes → **beginner** (or at least not advanced). Aligns with the language’s [easy-to-use feature criterion](../grammar/why-agazan.md#criterion-for-features).
 
 2. **Does it depend on another subsystem already being fluent?**  
    If the form only makes sense after joins, numbers, values, spans, etc. are already comfortable → at least **intermediate**.  
@@ -34,11 +34,11 @@ Ask in order. Prefer the **earlier** stage when a concept sits on a boundary and
 ## Cross-doc path
 <a id="cross-doc-path"></a>
 
-Read **`docs/grammar/`** only, in stage order. [why-agelan.md](../grammar/why-agelan.md) and [introduction.md](../grammar/introduction.md) are orientation (not stages).
+Read **`docs/grammar/`** only, in stage order. [why-agazan.md](../grammar/why-agazan.md) and [introduction.md](../grammar/introduction.md) are orientation (not stages).
 
 ### Beginner
 
-1. [why-agelan.md](../grammar/why-agelan.md) — psychological purpose, limits, feature criteria, benefit tour (not a learning stage)
+1. [why-agazan.md](../grammar/why-agazan.md) — psychological purpose, limits, feature criteria, benefit tour (not a learning stage)
 2. [introduction.md](../grammar/introduction.md) — name, grammar design, how to learn
 3. [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / word edges)
 4. [word-endings.md Beginner](../grammar/word-endings.md#beginner) (citation **-l** / **-m** / **-n**)
@@ -61,7 +61,7 @@ Read **`docs/grammar/`** only, in stage order. [why-agelan.md](../grammar/why-ag
 
 ### Recipe track (outside the stages) {#recipe-track}
 
-[english.md](../grammar/english.md) and the `say-*.md` pages (**Saying it in Agalan**) sit outside the stage order and off the reading-order sidebar group. Each recipe answers an English job with forms taught elsewhere and lists them on a **Needs:** line. Stage pages never link to the track ([recipe track](grammar-docs.md#recipe-track)).
+[english.md](../grammar/english.md) and the `say-*.md` pages (**Saying it in Agazan**) sit outside the stage order and off the reading-order sidebar group. Each recipe answers an English job with forms taught elsewhere and lists them on a **Needs:** line. Stage pages never link to the track ([recipe track](grammar-docs.md#recipe-track)).
 
 ### Intermediate then Advanced
 

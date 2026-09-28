@@ -1,23 +1,23 @@
 # Phonology and phonotactics
 <a id="phonology"></a>
 
-How to **sound out** Agalan. Each letter has one pronunciation. Syllables end with a consonant only at the end of the word (one rare number-word exception is under [Advanced](#singability-constraints)), so you know when words stop.
+How to **sound out** Agazan. Each letter has one pronunciation. Syllables end with a consonant only at the end of the word (one rare number-word exception is under [Advanced](#singability-constraints)), so you know when words stop.
 
 ## Beginner {#beginner}
 
 Pronounce each letter the same way every time. A **syllable** is one beat with one vowel. Spell the beats you actually say: a consonant starts a beat, and the last consonant of a content word is where that word ends.
 
-Write native Agalan in **lowercase**. Two vowel letters in a row are two syllables. Say each vowel as its own beat.
+Write native Agazan in **lowercase**. Two vowel letters in a row are two syllables. Say each vowel as its own beat.
 
 <!-- Sync: the IPA in the vowel and consonant tables must match LETTER_IPA in src/tts/phonemes.ts. Change both together. -->
 
 ### Vowels
 
-Agalan has four vowel letters. Unlike in English where the pronounced sound depends on the surrounding letters, the Agalan vowels are always pronounced the same.
+Agazan has four vowel letters. Unlike in English where the pronounced sound depends on the surrounding letters, the Agazan vowels are always pronounced the same.
 
 The cue words below are pronounced as in Standard American English.
 
-| Agalan | IPA | Cue |
+| Agazan | IPA | Cue |
 |--------|-----|-----|
 | `e` | /e̞/ <IpaPlay file="Mid_front_unrounded_vowel.ogg" label="e" /> | *bet* |
 | `u` | /u/ <IpaPlay file="Close_back_rounded_vowel.ogg" label="u" /> | *boot* (no glide, like Spanish *tú*) |
@@ -31,7 +31,7 @@ Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org
 A consonant starts a syllable. There is no distinction between voiced and unvoiced. Prefer the **voiced** version (with vocal cords buzzing) so you can hold a sung note. You may still use the unvoiced sound for style. 
 <!-- Consonant order: lips (b m w v), tongue tip (d n z l r), y (palatal, between tongue tip and back), back (g h, then th as the "other h"), then the English false friend (x). Canonical alphabet / letter-name recitation follows this table (vowels e u o a first). -->
 
-| Agalan | IPA | Cue | Unvoiced variant |
+| Agazan | IPA | Cue | Unvoiced variant |
 |--------|-----|-----|------------------|
 | `b` | /b/ <IpaPlay file="Voiced_bilabial_plosive.ogg" label="b" /> | *be* | /p/ <IpaPlay file="Voiceless_bilabial_plosive.ogg" label="unvoiced b" />, *pay* |
 | `m` | /m/ <IpaPlay file="Bilabial_nasal.ogg" label="m" /> | *me* | |
@@ -52,7 +52,7 @@ A consonant starts a syllable. There is no distinction between voiced and unvoic
 `x` sounds different than English. The rest are familiar. `y` is always a consonant, never a vowel.
 :::
 
-`th` is **one letter** written with two characters. Agalan has no `t`, so `th` never means `t` followed by `h`. At the start of a word it is the [stance](clause.md#stance-th) role letter. Inside a word it starts a syllable like any consonant (in [need](sakes.md) words, [label scope](predication.md#label-scope) words, and spoken [number groups](numbers.md#group-separator)); it never appears inside a dictionary root.
+`th` is **one letter** written with two characters. Agazan has no `t`, so `th` never means `t` followed by `h`. At the start of a word it is the [stance](clause.md#stance-th) role letter. Inside a word it starts a syllable like any consonant (in [need](sakes.md) words, [label scope](predication.md#label-scope) words, and spoken [number groups](numbers.md#group-separator)); it never appears inside a dictionary root.
 
 Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) by [Peter Isotalo](https://commons.wikimedia.org/wiki/User:Peter_Isotalo), except /ɹ/ by [Erutuon](https://commons.wikimedia.org/wiki/File:Alveolar_approximant.ogg).
 
@@ -73,7 +73,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-r`. Here is the full shape of that word, in order, written as one lowercase token (`zazawan`).
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | Role letter | first letter | role in the clause (subject, verb, …) |
 | Optional `l` after `/ɡ/` | adjective before the noun | `gl-` looks ahead to the next noun |
@@ -91,7 +91,7 @@ A syllable ends with a consonant only at the **end of the word**. In a fused ext
 
 ### Number-word exception {#number-word-exception}
 
-When English says *how many* or *which place*, Agalan writes a [number word](numbers.md). After the role letter, the spoken marker begins with `r`, which makes a cluster ordinary content never uses: a role letter directly followed by `r`. That cluster is how you hear “this is a number.” Content roots start with a vowel, so an `r` that starts a syllable right after a role letter is the number marker (`ra` / `ru` / `re` / `ro`; counting from the end uses written `#-`, spelled and spoken **rue** before the digits). Two vowels in a row stay two separate syllables.
+When English says *how many* or *which place*, Agazan writes a [number word](numbers.md). After the role letter, the spoken marker begins with `r`, which makes a cluster ordinary content never uses: a role letter directly followed by `r`. That cluster is how you hear “this is a number.” Content roots start with a vowel, so an `r` that starts a syllable right after a role letter is the number marker (`ra` / `ru` / `re` / `ro`; counting from the end uses written `#-`, spelled and spoken **rue** before the digits). Two vowels in a row stay two separate syllables.
 
 > `zagadalx grarel.`
 >
@@ -106,9 +106,9 @@ When English says *how many* or *which place*, Agalan writes a [number word](num
 ### Letter names {#letter-names}
 <a id="letter-names-and-digits"></a>
 
-When you **spell a word aloud** or **name a letter**, say the Agalan name for it. Pause between names so two names do not run into one syllable.
+When you **spell a word aloud** or **name a letter**, say the Agazan name for it. Pause between names so two names do not run into one syllable.
 
-| Agalan | Name | Cue |
+| Agazan | Name | Cue |
 |--------|------|-----|
 | `e` | `e` | *bet* |
 | `u` | `u` | *boot* |
@@ -137,7 +137,7 @@ In a clause, package the glyph as a [mention](spans.md) (`d{z}`: interior spoken
 
 Ten letters also begin a [digit syllable](numbers.md#counts). The letter name uses the **opposite** vowel (`a`↔`u`, `o`↔`e`), so naming the letter is not the same as counting.
 
-| Agalan | Digit syllable | Name | Cue |
+| Agazan | Digit syllable | Name | Cue |
 |--------|----------------|------|-----|
 | `w` | `wo` (1) | `we` | `o` ↔ `e` |
 | `d` | `du` (2) | `da` | `u` ↔ `a` |
@@ -156,7 +156,7 @@ Ten letters also begin a [digit syllable](numbers.md#counts). The letter name us
 
 These shape choices keep ordinary singing easier:
 
-| Constraint | Why it helps | How Agalan keeps it |
+| Constraint | Why it helps | How Agazan keeps it |
 |------------|--------------|---------------------|
 | Mostly mid-to-open vowels | Close vowels lose support on high notes, so they shrink a comfortable high range | Three mid-to-open vowels (/e̞ o̞ ä/) plus close /u/; no /i/ |
 | Vowels far apart | Singers open vowels on high notes; well-spaced vowels stay recognizable when they shift | Four of the five classical singing vowels: central /ä/, mid /e̞/ and /o̞/, and corner /u/, which keeps the **u** ≈ undo vowel (negation, prohibition) clearly apart from **a** and **o** |
@@ -173,7 +173,7 @@ On high notes, **u** may open toward [ʊ] (as in *book*); that is still **u**.
 
 Legal clusters: left-hanging `gl-`; number-word role letter + `r`; lexical join **-l** / **-m** plus number marker `r` on a [kind morph](numeric-derivation.md); word-final `-lx` / `-mx` / `-nx` / `-rx`; stand-in `-rl` / `-rm`. The lexical join before `r` is the only syllable-final consonant inside a word.
 
-Try a short Agalan line quickly at a high comfortable pitch:
+Try a short Agazan line quickly at a high comfortable pitch:
 
 `zazawan gazaham.`
 

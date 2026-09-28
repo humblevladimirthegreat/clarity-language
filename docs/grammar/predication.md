@@ -1,7 +1,7 @@
 # Predication (classification and identity)
 <a id="predication"></a>
 
-English *is* does two jobs that look alike. You can say someone **is a kind or role** (*Azawan is a dog*): they belong in that category. You can also say two names pick out **the same one** (*Alahen is Azawan*): one person under two labels, not a category. Agalan uses a different word pattern for each.
+English *is* does two jobs that look alike. You can say someone **is a kind or role** (*Azawan is a dog*): they belong in that category. You can also say two names pick out **the same one** (*Alahen is Azawan*): one person under two labels, not a category. Agazan uses a different word pattern for each.
 
 ## Beginner {#beginner}
 
@@ -98,7 +98,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan |
+| English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
@@ -114,7 +114,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *walk* | `vowogal` |
 | *run* | `varahal` |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *Azawan is a guard.*
 
@@ -180,7 +180,7 @@ z-police | [g-SAME | b-Ahaben]
 z-Alahen | [g-SAME | b-Azawan]
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zabazal vowogal.`
 
@@ -266,7 +266,7 @@ You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra c
 >
 > "Azawan is not a dog."
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `/w/` hedge before the classifying `/ɡ/` | soft / hedged class | *Azawan is something of a dog* / *a dog, sort of* |
 | `zazawan godogal hual` | characterizing / habitual | *Azawan is the dog type* |
@@ -286,12 +286,12 @@ You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra c
 
 Beginner already used closed **`gogal`** (*is the same as*). The other endings on that same adjective finish the map.
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | **-l** | stand behind the match (closed) | *is* (the same as) |
 | **-m** | leave the match open | *same for our purposes* / *basically* |
 
-| Agalan | English |
+| Agazan | English |
 |---------|---------|
 | `zalahen gogal bazawan` | *Alahen is (the same as) Azawan* |
 | `zalahen gogam bazawan` | *Alahen is basically Azawan* |
@@ -312,7 +312,7 @@ English *Alahen is angry* can mean one outburst or the kind of person Alahen is.
 
 A label with no scope vowel says nothing about how far it reaches. Use one when that reach matters, the way you would add *this time* or *tends to* in English.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`tha`** | this one occasion only | *angry this time*, *lied (this once)* | **a** ≈ add (one instance added) |
 | **`the`** | a pattern: a repeated tendency, not a fixed nature | *tends to be angry*, *often lies* | **e** ≈ order (a sequence of times) |
@@ -378,7 +378,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan |
+| English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
@@ -396,7 +396,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *lie* | `alahal` |
 | *strangeness* | `elehom` |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *Azawan is not a guard.*
 
@@ -494,7 +494,7 @@ z-guard | [v-lie-th-relative | b-Alahen]
 z-Ahaben | g-anxious-th-name-only
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zahaben gagadul gul.`
 

@@ -1,6 +1,6 @@
 # Missing examples (editors only)
 
-Constructions the parser accepts and the grammar treats as valid, but that no example on the teaching page exercises. The source is the coverage report `npm run lint:agalan` prints (check 2 in `parser-strictness.md`, a proposal). Each fix is a teach example on the named page, with a morph gloss and loose English per [grammar-docs](grammar-docs.md).
+Constructions the parser accepts and the grammar treats as valid, but that no example on the teaching page exercises. The source is the coverage report `npm run lint:agazan` prints (check 2 in `parser-strictness.md`, a proposal). Each fix is a teach example on the named page, with a morph gloss and loose English per [grammar-docs](grammar-docs.md).
 
 Snapshot: 2026-09-25, after phase 3. All 166 constructions are exercised by their anchor page, and the lint now fails the build when one is not, so the table below stays empty. Phase 3 filled or resolved every earlier row (see Rollout step 3 in `parser-strictness.md`).
 

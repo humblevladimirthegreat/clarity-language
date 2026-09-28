@@ -113,7 +113,7 @@ const ALLOWED_HTML_TAGS = new Set([
   "track",
   "ul",
   "video",
-  "AgelanInspect",
+  "AgazanInspect",
   "GlossOverlay",
   "GlossViewer",
   "InspectCard",

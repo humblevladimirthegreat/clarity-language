@@ -6,7 +6,7 @@
 
 ## Motivation
 
-English offices often have a **short name** (*FBI*) beside a long title. Agalan already has:
+English offices often have a **short name** (*FBI*) beside a long title. Agazan already has:
 
 - Long native titles: `ROOT x ROOT` … + **-n** (`zabogoxululon`).
 - Short names: ordinary proper names from the **published** lexicon (`zabogon`).

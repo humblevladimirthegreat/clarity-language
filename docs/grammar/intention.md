@@ -1,6 +1,6 @@
 # Intention {#intention}
 
-English *will* and *going to* can describe either **intention** (the course someone means to take) or a **forecast** (what someone thinks will happen later). Agalan marks intention with a `/th/` word before an ordinary verb. A forecast has no word of its own: it is a [channel](knowing.md#forecast) that says how you know, plus a later offset (taught later). The distinction lets you show whether you are describing someone's chosen course or making a claim about a future event.
+English *will* and *going to* can describe either **intention** (the course someone means to take) or a **forecast** (what someone thinks will happen later). Agazan marks intention with a `/th/` word before an ordinary verb. A forecast has no word of its own: it is a [channel](knowing.md#forecast) that says how you know, plus a later offset (taught later). The distinction lets you show whether you are describing someone's chosen course or making a claim about a future event.
 
 ## Beginner {#beginner}
 
@@ -23,7 +23,7 @@ Ordinary content stays available (`zumal` *a map*; `vumal` *to plan*). Leave PLA
 
 On **`uma`**, **-l / -m / -r** say **how fully drawn** the intention is: a map that already includes backups, steps filled in, or just the direction. That split shows **how much of the route is drawn**. No level is better: match the detail to the plan, and a sketch is often all a small or early plan needs. **-n** is ordinary [proper](word-endings.md#proper-name--n). When you are unsure how detailed the course is, use **`thumam`**: it claims a plan without saying how much is filled in.
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thumal`** | **atlas** | *is fully prepared to …* — hurdles are anticipated and prepared for | `umal` *plan-atlas* | **-l** ≈ locked in (detours already drawn) |
 | **`thumam`** | **itinerary** (soft default) | *plans to …* — steps laid out, or detail unstated | `umam` *plan-itinerary* | **-m** ≈ middle (the route, no backups) |
@@ -53,7 +53,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -66,7 +66,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *scream* | `vezogel` | |
 | *fight* | `vavadal` | |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *Azawan intends to sit.*
 
@@ -132,7 +132,7 @@ z-Alahen | th-plan-itinerary | v-scream
 z-Alahen | th-plan-atlas | v-fight
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zalahen thumar vehahel.`
 
@@ -211,7 +211,7 @@ z-Azawan | th-plan-itinerary | v-fight
 ### Ability and incapability {#ability}
 <a id="incapability"></a>
 
-English *can* and *can't* usually sit in front of the verb (*can sing*, *can't sing*). In Agalan you fold that meaning into the verb or adjective itself. After the root, write **`x`**, then a vowel that means *can* or *how they can't*, then the same [ending](word-endings.md) that word would have had without *can*.
+English *can* and *can't* usually sit in front of the verb (*can sing*, *can't sing*). In Agazan you fold that meaning into the verb or adjective itself. After the root, write **`x`**, then a vowel that means *can* or *how they can't*, then the same [ending](word-endings.md) that word would have had without *can*.
 
 #### Can (`xa`)
 <a id="can"></a>
@@ -273,7 +273,7 @@ English *can't* does not say whether this is just for now, not yet, or never. Af
 >
 > "Alahen can't sing right now."
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`xa`** | they can (this verb or quality) | *can* | **a** ≈ add (capability is in) |
 | **`xe`** | they can't, just for now (they usually can) | *can't right now* | **e** ≈ order (this moment's ranking) |
@@ -325,7 +325,7 @@ Ordinary content is still available (`zehal` *a checkmark*; `vehal` *to check / 
 
 On **`eha`**, **-l / -m / -r** match unmet [changeability](sakes.md#sake-changeability): irreversible / modifiable / temporary. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know how locked the pick is, use **-m**.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thehal`** | **irreversible** | *has decided for good to …* | **-l** hard / locked |
 | **`theham`** | **modifiable** (soft default if unknown) | *has decided to …, and can still change that* | **-m** open to change |
@@ -365,7 +365,7 @@ Ordinary content is still available (`zudol` *a test tube*).
 
 On **`udo`**, **-l / -m / -r** say how far the attempt will go. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know, use **-m**.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thudol`** | **committed** | *commits to trying …* / *keeps trying to …* until it works or is ruled out | **-l** the full run |
 | **`thudom`** | **unstated** (soft default) | *tries to …* | **-m** middle |
@@ -442,7 +442,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -465,7 +465,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *stand* | `vazadol` | |
 | *run* | `varahal` | |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *Alahen has decided to sit, and can still change that.*
 
@@ -571,7 +571,7 @@ z-Azawan | th-ATTEMPT-committed | v-climb
 [z-Azawan | th-ATTEMPT-trial | v-stand | x-or-else | z-←Azawan.full | v-sit]
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zazawan theham vehahel.`
 

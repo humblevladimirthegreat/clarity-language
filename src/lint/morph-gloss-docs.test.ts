@@ -22,7 +22,7 @@ function tablesOf(): ClassifyTables {
 
 const PRACTICE = `### Translation practice
 
-#### English → Agalan
+#### English → Agazan
 
 **1.** *Azawan sits.*
 
@@ -33,7 +33,7 @@ z-Azawan | v-sit
 
 :::
 
-#### Agalan → English
+#### Agazan → English
 
 **1.** \`zazawan vayul.\`
 
@@ -45,12 +45,12 @@ z-Azawan | v-sit
 `;
 
 describe("extractTranslationExercises", () => {
-  it("pairs spoiler and prompt Agalan with visible morph glosses", () => {
+  it("pairs spoiler and prompt Agazan with visible morph glosses", () => {
     const items = extractTranslationExercises(PRACTICE);
     assert.equal(items.length, 2);
-    assert.equal(items[0]!.agalan, "zazawan vayul.");
+    assert.equal(items[0]!.agazan, "zazawan vayul.");
     assert.equal(items[0]!.morph, "z-Azawan | v-sit");
-    assert.equal(items[1]!.agalan, "zazawan vayul.");
+    assert.equal(items[1]!.agazan, "zazawan vayul.");
     assert.equal(items[0]!.loose, "Azawan sits.");
     assert.equal(items[1]!.loose, "Azawan sits.");
   });
@@ -159,7 +159,7 @@ z-Azawan | v-sit
     const text = formatMorphGlossFinding("docs/grammar/clause.md", {
       kind: "mismatch",
       line: 10,
-      agalan: "zazawan vayul.",
+      agazan: "zazawan vayul.",
       documented: "z-Azawan | v-walk",
       parser: "z-Azawan | v-sit",
     });

@@ -1,6 +1,6 @@
 # Role compounds {#roles}
 
-When English would name a person or place from an event (*a teacher* from *teach*, *the one told*, *a sleep-place*), Agalan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [reference ending](word-endings.md). **`a`** is the doer, **`e`** is the place of the event, **`u`** is the one the event happens to, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
+When English would name a person or place from an event (*a teacher* from *teach*, *the one told*, *a sleep-place*), Agazan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [reference ending](word-endings.md). **`a`** is the doer, **`e`** is the place of the event, **`u`** is the one the event happens to, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
 
 The ending picks **kind** vs **this instance**. Non-resume (**-l** / **-m** / **-n**) is a lasting label: *a teacher*. Resume (**-r**) is the person or place of **that** latest matching event: *the one teaching*.
 
@@ -105,7 +105,7 @@ Some stems name a **relation** (who is bound to whom), not an action. The extra 
 
 **Compare with:** extra-noun *for* (`el` plus `/b/`) is the intended get, not the hearer.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…axROOT…` | names the doer of an event | *a teacher* / *the one teaching* | **a** ≈ add (add a doer) |
 | `…exROOT…` | names the place of an event | *a sleep-place* / *that scream-place* | **e** ≈ order (the scene the act is ordered in) |
@@ -166,7 +166,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -185,7 +185,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *run* | `arahal` | |
 | *bond* | `onam` | `onal` *knot* |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *A constructor sits.*
 
@@ -253,7 +253,7 @@ z-Azawan | v-tell . z-←tell | v-punch
 z-Azawan | [g-bond | b-Alahen] . z-←bond | v-fight
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zalahen dexezebal vahahal.`
 
@@ -357,7 +357,7 @@ Speaker and listener roots are the facing person when you mean *my left* / *your
 >
 > "You, walk left (your left)."
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | PoS | slot as usual (`/ɡ/` property, `/h/` path / manner, `/z/` `/d/` `/b/` side-region) | same slots as other content |
 | DIR | an arrow-rose root | *north* / *ahead*, … |
@@ -371,7 +371,7 @@ Speaker and listener roots are the facing person when you mean *my left* / *your
 
 The examples above already used *west* / body *left*. The rest of the rose is the same pattern: bare = compass; **`th`** + facing person = that point on their body map.
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`onoval`** | compass heading, or ahead on a face | *north* / *ahead* | ⬆️ *up-arrow*: map north, or ahead if facing is north |
 | **`azaval`** | compass heading, or back on a face | *south* / *back* | ⬇️ *down-arrow*: map south, or back if facing is north |
@@ -400,7 +400,7 @@ English *up* / *down* here follows the pull of gravity, not a face. Write **`aba
 >
 > "Up!"
 
-| Agalan | Use | English | Same root as | Cue |
+| Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`abahal`** | skyward, shared gravity frame | *up* | | ⏫: away from the pull |
 | **`adahel`** | toward the pull, shared gravity frame | *down* | | ⏬: toward the pull |
@@ -434,7 +434,7 @@ Gravity works the same way: bare **`adahe`** + `/b/` is *under* the landmark, an
 
 **Compare with:** locative *at* / *on* / *inside* name how the figure sits relative to the landmark ([locative relations](relations.md#locative-relations)), not a compass heading.
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | Bare DIR | compass / gravity | `gewezal` *west*; `gabahal` *up* |
 | **`DIR th ANCHOR`** | that point on **ANCHOR’s** facing rose | `gewezathohen` *listener-left* |
@@ -461,7 +461,7 @@ This is [label scope](predication.md#label-scope) **`tho`** on a direction: the 
 
 The landmark's front is where its design or current use faces (a house's front door, a car's windshield). A DIR + **`th`** + **`o`** word always takes a `/b/` landmark.
 
-| Agalan | English |
+| Agazan | English |
 |--------|---------|
 | `gazavathol bahazal` | *behind the house* (its own back) |
 | `gonovathol bahazal` | *in front of the house* |
@@ -473,14 +473,14 @@ The landmark's front is where its design or current use faces (a house's front d
 
 Write the ordinary [reference ending](word-endings.md) at the end of the whole compound. In a viewpoint lateral, the ending applies to the **viewpoint anchor**, not to DIR: **-l** / **-m** describe the anchor’s reference, **-n** names the anchor, and **-r** resumes it. A bare direction word still takes its ending on the direction itself.
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | **-l** | indefinite / kind viewpoint anchor or unmarked path | left of a viewpoint |
 | **-m** | soft / hedged viewpoint anchor | left of a hedged viewpoint |
 | **-n** | named viewpoint anchor | that named viewpoint’s left |
 | **-r** | resume the most recent matching viewpoint anchor in a **`DIR th ANCHOR`** compound, or the anchor alone when it is the latest match: ordinary [pronoun](pronouns.md) rules | that viewpoint’s left |
 
-| Agalan | English |
+| Agazan | English |
 |--------|---------|
 | `gewezal` | *west* (shared map) |
 | `gewezathazawan` | *Azawan’s left* |
@@ -498,7 +498,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -517,7 +517,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *listener* | `ohen` | `ohel` *headphones* |
 | *speaker* | `amun` | `amul` *microphone* |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *The boat on Azawan’s left.*
 
@@ -583,7 +583,7 @@ z-boat | g-west-th-speaker
 y-command | z-Alahen | v-walk | h-west
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zobodal gezadathazawan.`
 

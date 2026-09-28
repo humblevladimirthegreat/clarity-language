@@ -1,12 +1,12 @@
 /**
- * Retie Agalan held in source code: string literals in `src/` (tests included), `scripts/`
- * and the grammar site. Literals that read as Agalan are rewritten like a doc span; English
+ * Retie Agazan held in source code: string literals in `src/` (tests included), `scripts/`
+ * and the grammar site. Literals that read as Agazan are rewritten like a doc span; English
  * names that copy a named word follow it. Anything else that still spells an old root is
  * reported, so root tables (house cast, special pronouns, sample fillers) are not left stale.
  */
 import ts from "typescript";
 
-import { ENGLISH_IN_CODE, classifyAgalanSpan } from "../lint/agalan-docs.js";
+import { ENGLISH_IN_CODE, classifyAgazanSpan } from "../lint/agazan-docs.js";
 import { fillSelf } from "../learner-name.js";
 import { hasClosedOverlay, type ClassifyTables } from "../parse/classify.js";
 import { parseWord } from "../parse/word.js";
@@ -74,10 +74,10 @@ export type SourceRetieContext = {
 };
 
 /**
- * Identifiers that spell like an Agalan word but name tooling: the `agalan` fence info string,
- * `lint:agalan`, file names, storage keys. They follow the language's English name, not a root.
+ * Identifiers that spell like an Agazan word but name tooling: the `agazan` fence info string,
+ * `lint:agazan`, file names, storage keys. They follow the language's English name, not a root.
  */
-const SOURCE_IDENTIFIERS = new Set(["agalan"]);
+const SOURCE_IDENTIFIERS = new Set(["agazan"]);
 
 const NAME_RE = /(?<![A-Za-z])[A-Z][a-z]+(?![A-Za-z])/g;
 const OVERLAY_ID_RE = /^overlay\.([a-z]+)\.([a-z]+)$/;
@@ -122,13 +122,13 @@ function isEnglish(word: string, ctx: SourceRetieContext): boolean {
 /**
  * Which literals are rewritten: a sentence, phrase or template with no common English word,
  * or (in a test) one word with a role letter (`zazawan`). Any other one-word literal may be
- * a key or an English label (`"agalan"`, `"one"`), so it is only reported.
+ * a key or an English label (`"agazan"`, `"one"`), so it is only reported.
  */
 function rewritable(body: string, isTest: boolean, ctx: SourceRetieContext): boolean {
-  const cls = classifyAgalanSpan(fillSelf(body));
+  const cls = classifyAgazanSpan(fillSelf(body));
   if (!REWRITE_CLASSES.has(cls)) return false;
   // A lone letter is a role letter (`b_#22,7`, `g+3`), not the English word list's `b`.
-  // Hooks (`ol`, `al`) are closed Agalan forms even where the English list has them.
+  // Hooks (`ol`, `al`) are closed Agazan forms even where the English list has them.
   const words = (body.match(/(?<![A-Za-z])[a-z]+(?![A-Za-z])/g) ?? []).filter((word) => word.length > 1 && !isHook(word));
   if (words.some((word) => isEnglish(word, ctx))) return false;
   if (cls !== "word") return true;

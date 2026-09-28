@@ -11,12 +11,12 @@ export type SurfaceAtom =
 
 export type TokenPayload = LexWord | SurfaceAtom;
 
-export type AgelanTokenType = ReturnType<typeof createToken>;
+export type AgazanTokenType = ReturnType<typeof createToken>;
 
 /** Category matched by every token an atomic span may hold (all but island edges and sentence ends). */
 export const SpanAtom = createToken({ name: "SpanAtom", pattern: Lexer.NA });
 
-function wordToken(name: string, spanAtom = true): AgelanTokenType {
+function wordToken(name: string, spanAtom = true): AgazanTokenType {
   return createToken({ name, pattern: Lexer.NA, categories: spanAtom ? [SpanAtom] : [] });
 }
 
@@ -142,7 +142,7 @@ export type TokenBranch =
   | "content"
   | "citationFallback";
 
-export function classifyTokenBranch(word: LexWord): { type: AgelanTokenType; branch: TokenBranch } {
+export function classifyTokenBranch(word: LexWord): { type: AgazanTokenType; branch: TokenBranch } {
   const { family, pos, reading } = word;
 
   if (family.kind === "hook") return { type: Hook, branch: "hook" };
@@ -186,7 +186,7 @@ export function classifyTokenBranch(word: LexWord): { type: AgelanTokenType; bra
   return { type: Z, branch: "citationFallback" };
 }
 
-export function classifyToTokenType(word: LexWord): AgelanTokenType {
+export function classifyToTokenType(word: LexWord): AgazanTokenType {
   return classifyTokenBranch(word).type;
 }
 

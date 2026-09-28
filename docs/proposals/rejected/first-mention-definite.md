@@ -11,9 +11,9 @@ The leftover English habit is *the door*, *the cat* (ours), *the steering wheel*
 
 ## How existing grammar already does definiteness
 
-Agalan does not mark English articles. The real cut is **introduce** vs **resume** vs **name**, plus constructions that **assert** uniqueness. Listener inference from the scene does the rest.
+Agazan does not mark English articles. The real cut is **introduce** vs **resume** vs **name**, plus constructions that **assert** uniqueness. Listener inference from the scene does the rest.
 
-| English job | Agalan already |
+| English job | Agazan already |
 |-------------|----------------|
 | New instance of a kind (*a dog*, citation *dog*) | **`-l`** / **`-m`** ([word ending](../../grammar/word-endings.md)) |
 | Same stem again (*the dog* after *a dog*) | resume **`-r`** ([pronouns](../../grammar/pronouns.md#resume-r)); a second **`-l`** is a **new** instance |
@@ -32,7 +32,7 @@ Agalan does not mark English articles. The real cut is **introduce** vs **resume
 ## Why not add the ending anyway
 
 - **Introduce vs resume would become article choice.** Translators would put **`-rl`** wherever English has *the*, including every subsequent noun of a familiar kind. The designed definite is resume (the form points at a stem) or name (conventionally unique).
-- **Uniqueness as a presupposition fights existing nudges.** *The problem* / *the solution* as a unique given is what numbered alternatives are meant to keep plural ([why-agelan](../../grammar/why-agelan.md#empowerment)). Single-item and rank joins **assert** “only / top”; they do not smuggle it in an ending.
+- **Uniqueness as a presupposition fights existing nudges.** *The problem* / *the solution* as a unique given is what numbered alternatives are meant to keep plural ([why-agazan](../../grammar/why-agazan.md#empowerment)). Single-item and rank joins **assert** “only / top”; they do not smuggle it in an ending.
 - **`-r` already means “already in play.”** Teaching full-root **`-rl`** as “in play though never said” dilutes that cue for a job situation and **`-n`** already cover.
 - Associative **`-x`** would need **`-rlx` / `-rmx`** next to **`-lx`** (*some*) and **`-rx`** (resume the group), for no extra distinction **`-lx`** plus the scene does not already give.
 

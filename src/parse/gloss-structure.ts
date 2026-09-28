@@ -2,7 +2,7 @@
  * Phrase-bracket structure for morph glosses —
  * [docs/meta/glosses.md § Phrase brackets](../../docs/meta/glosses.md#phrase-brackets).
  *
- * Builds a tree over the flat word list of one Agalan line from the stage-3 AST.
+ * Builds a tree over the flat word list of one Agazan line from the stage-3 AST.
  * Leaves are word indexes; groups are `[ … ]` units, optionally labeled
  * (`NAME`, `CITE.multi`, `SCOPE`, …). Words the AST does not place in a unit
  * (vocatives, force, linkers, …) stay flat at clause level.

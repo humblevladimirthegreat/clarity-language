@@ -1,11 +1,10 @@
-# Why Agalan
-<a id="why-agelan"></a>
+# Why Agazan
 
 Psychological purpose, limits, feature criteria, and a tour of how those aims show up in the language.
 
 ## Purpose {#purpose}
 
-Agalan encodes psychological concepts and self-improvement techniques into vocabulary and grammar so that using the language nudges you toward better habits. For example, a single word for *can’t* can say whether the block is only temporary, may still change, or will not. That split keeps a hard moment from hardening into a fixed identity about who you are.
+Agazan encodes psychological concepts and self-improvement techniques into vocabulary and grammar so that using the language nudges you toward better habits. For example, a single word for *can’t* can say whether the block is only temporary, may still change, or will not. That split keeps a hard moment from hardening into a fixed identity about who you are.
 
 The design aims at three outcomes, in this order:
 
@@ -35,9 +34,9 @@ The motive or prescription behind an action can be named on the sake it serves i
 
 ## Limits {#limits}
 
-Agalan encodes psychological concepts and techniques, but it is **not therapy, counseling, or medical advice**, and it is not a substitute for professional care when you need it.
+Agazan encodes psychological concepts and techniques, but it is **not therapy, counseling, or medical advice**, and it is not a substitute for professional care when you need it.
 
-The design *aims* at compassion, rationality, and empowerment, and prefers research when it exists ([feature criteria](#criterion-for-features)). That is design intent, **not a claim** that speaking or studying Agalan has been shown to improve mental health or other outcomes.
+The design *aims* at compassion, rationality, and empowerment, and prefers research when it exists ([feature criteria](#criterion-for-features)). That is design intent, **not a claim** that speaking or studying Agazan has been shown to improve mental health or other outcomes.
 
 The language is currently in **beta**: grammar, lexicon, and these docs can change as the design settles.
 
@@ -45,7 +44,7 @@ The language is currently in **beta**: grammar, lexicon, and these docs can chan
 
 Unhelpful thoughts are often automatic: catastrophizing a small setback into “my life is ruined,” treating two options as the only ones, or labeling a feeling as *anger* without naming what sake is unmet. Healthier framings exist, but they are hard to reach in the moment.
 
-Agalan puts those framings into ordinary words and optional extra pieces on words. When you speak or think in the language, the helpful distinction is already sitting in the sentence shape.
+Agazan puts those framings into ordinary words and optional extra pieces on words. When you speak or think in the language, the helpful distinction is already sitting in the sentence shape.
 
 ## Criterion for features {#criterion-for-features}
 
@@ -69,7 +68,7 @@ How the aims show up in vocabulary and grammar. Each section names an English jo
 
 English often conflates *I want*, *I need*, *I should*, and *this is good for me*, so gratitude, motive, and ought blur together.
 
-Agalan’s [sakes](sakes.md) name a closed inventory of **sakes** (autonomy, competence, relatedness, pleasure, survival, or unspecified) and how you relate to them:
+Agazan’s [sakes](sakes.md) name a closed inventory of **sakes** (autonomy, competence, relatedness, pleasure, survival, or unspecified) and how you relate to them:
 
 | Stance | Job |
 |--------|-----|
@@ -84,7 +83,7 @@ Naming the sake and your stance toward it helps you notice gratitude, motive, an
 
 Opaque labels (*angry*, *anxious*, *proud*) hide which sake is in play and what to ask for.
 
-Agalan [composes emotion](sakes.md#emotion-compose) from a [value](sakes.md) (often unmet or met), plus activation (surge / stir / …), plus locus (where it shows).
+Agazan [composes emotion](sakes.md#emotion-compose) from a [value](sakes.md) (often unmet or met), plus activation (surge / stir / …), plus locus (where it shows).
 
 Composing emotion from sake + activation + locus helps you ask for what would actually help instead of stopping at the label.
 
@@ -131,7 +130,7 @@ Marking residue vs an archived episode helps rumination stay optional. Marking f
 
 English *will* smuggles plan and prediction together. It is easy to talk as if the future were already known (a certain prediction that fuels anxiety or overconfidence), while a pick often sounds more locked than it is.
 
-Agalan splits them: [PLAN](intention.md#plan-predict) for what you mean to do; a [forecast](knowing.md#forecast) for what the world will do; [DECISION](intention.md#decision) for how revisable a pick is. A forecast has no word of its own: it is an evidential channel plus a later offset, so every forecast says what it rests on, and its ending says how strong that evidence is.
+Agazan splits them: [PLAN](intention.md#plan-predict) for what you mean to do; a [forecast](knowing.md#forecast) for what the world will do; [DECISION](intention.md#decision) for how revisable a pick is. A forecast has no word of its own: it is an evidential channel plus a later offset, so every forecast says what it rests on, and its ending says how strong that evidence is.
 
 Splitting plan, prediction, and decision firmness helps you avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and a revisable pick as locked forever.
 
@@ -197,17 +196,17 @@ This section addresses common criticisms regarding the use of language to influe
 ### Can a language change how you think?
 <a id="sapir-whorf-hypothesis"></a>
 
-Some don’t believe it is possible for a language to influence the speaker’s thoughts (called the weak Sapir-Whorf Hypothesis). I make no claims here about whether it happens for natural languages, but for Agalan specifically, I give the following argument:
+Some don’t believe it is possible for a language to influence the speaker’s thoughts (called the weak Sapir-Whorf Hypothesis). I make no claims here about whether it happens for natural languages, but for Agazan specifically, I give the following argument:
 
 1. The way a concept is framed (phrased) affects how people think about it (a well-established phenomenon in [psychology](https://en.wikipedia.org/wiki/Framing_effect_\(psychology\)) and the [social sciences generally](https://en.wikipedia.org/wiki/Framing_\(social_sciences\)))
-2. Agalan’s vocabulary and grammar ensure particular frames for certain concepts (using the design laid out on this page and in the linked grammar docs).
-3. Therefore, Agalan influences how speakers think.
+2. Agazan’s vocabulary and grammar ensure particular frames for certain concepts (using the design laid out on this page and in the linked grammar docs).
+3. Therefore, Agazan influences how speakers think.
 
 ### Ethical considerations {#ethical-considerations}
 
 Some are reminded of Newspeak from 1984, where a totalitarian government alters the language to influence the populace into being more compliant. What makes Newspeak unethical is that the language is forced upon an unwitting populace.
 
-For Agalan and similar languages, as long as using the language is voluntary, and the speaker knows how the language influences their thoughts (and the language delivers on those promises), then it is morally good. Learning the language is comparable to enrolling in a self-help course to influence their thought patterns: clearly ethical if it influences the person in the healthy way they desire.
+For Agazan and similar languages, as long as using the language is voluntary, and the speaker knows how the language influences their thoughts (and the language delivers on those promises), then it is morally good. Learning the language is comparable to enrolling in a self-help course to influence their thought patterns: clearly ethical if it influences the person in the healthy way they desire.
 
 Language influences but does not determine thought. Speakers who wish to think or communicate in a way discouraged by the language are still capable of doing so (though the sentences will likely be longer).
 
@@ -221,4 +220,4 @@ Even if the language does lose its potency over a century, having a positive imp
 
 ## Next {#next}
 
-Continue with [introduction.md](introduction.md) for the name, grammar design, and how to learn these docs, then [phonology.md](phonology.md#beginner) for letters, [word-endings.md](word-endings.md#beginner) for citation endings, [clause.md](clause.md#beginner) for clause shape, [speech-moves.md](speech-moves.md#beginner) for turns, then [dependents.md](dependents.md#beginner). Community updates: [Agalan on Reddit](https://www.reddit.com/r/ClarityLanguage).
+Continue with [introduction.md](introduction.md) for the name, grammar design, and how to learn these docs, then [phonology.md](phonology.md#beginner) for letters, [word-endings.md](word-endings.md#beginner) for citation endings, [clause.md](clause.md#beginner) for clause shape, [speech-moves.md](speech-moves.md#beginner) for turns, then [dependents.md](dependents.md#beginner). Community updates: [Agazan on Reddit](https://www.reddit.com/r/ClarityLanguage).

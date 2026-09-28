@@ -1,6 +1,6 @@
 /**
  * Translation-practice **Roots used here** tables: English must be a
- * lexicon / overlay / morph sense for that Agalan spelling.
+ * lexicon / overlay / morph sense for that Agazan spelling.
  */
 import { classify, lexiconContentRoots, type ClassifyTables } from "../parse/classify.js";
 import { derivedHookGloss, hookCompoundFromMorph } from "../parse/hook-compounds.js";
@@ -14,9 +14,9 @@ import type { LexWord } from "../parse/types.js";
 
 export type WordBankFinding = {
   line: number;
-  agalan: string;
+  agazan: string;
   english: string;
-  column: "Agalan" | "Same root as";
+  column: "Agazan" | "Same root as";
   expected: string[];
   detail: string;
 };
@@ -35,12 +35,12 @@ export function lintWordBankMarkdown(
     if (!table) continue;
     for (const row of table.rows) {
       const line = lineNumberAt(text, lineIndexToCharIndex(text, row.lineIndex));
-      if (row.agalan && row.english) {
-        const hit = checkPair(row.agalan, row.english, tables, "Agalan");
+      if (row.agazan && row.english) {
+        const hit = checkPair(row.agazan, row.english, tables, "Agazan");
         if (hit) findings.push({ ...hit, line });
       }
-      if (row.sameAgalan && row.sameEnglish) {
-        const hit = checkPair(row.sameAgalan, row.sameEnglish, tables, "Same root as");
+      if (row.sameAgazan && row.sameEnglish) {
+        const hit = checkPair(row.sameAgazan, row.sameEnglish, tables, "Same root as");
         if (hit) findings.push({ ...hit, line });
       }
     }
@@ -49,19 +49,19 @@ export function lintWordBankMarkdown(
 }
 
 function checkPair(
-  agalan: string,
+  agazan: string,
   english: string,
   tables: ClassifyTables,
-  column: "Agalan" | "Same root as",
+  column: "Agazan" | "Same root as",
 ): Omit<WordBankFinding, "line"> | null {
-  const surface = decodeEntities(agalan).replace(/[.,!?]+$/, "");
+  const surface = decodeEntities(agazan).replace(/[.,!?]+$/, "");
   const got = normalizeEnglish(english);
   if (!got) return null;
 
   // The learner's own name (`SELFn`) is not a lexicon word; its English is *your name*.
   if (hasSelfSlot(surface)) {
     if (got === normalizeEnglish("your name")) return null;
-    return { agalan: surface, english, column, expected: ["your name"], detail: "SELF row English must be *your name*" };
+    return { agazan: surface, english, column, expected: ["your name"], detail: "SELF row English must be *your name*" };
   }
 
   let morph;
@@ -70,7 +70,7 @@ function checkPair(
   } catch (error) {
     if (error instanceof WordParseError) {
       return {
-        agalan: surface,
+        agazan: surface,
         english,
         column,
         expected: [],
@@ -84,7 +84,7 @@ function checkPair(
     const payload = foreignPayload(morph.family);
     if (payload && normalizeEnglish(payload) === got) return null;
     return {
-      agalan: surface,
+      agazan: surface,
       english,
       column,
       expected: payload ? [payload] : [],
@@ -95,7 +95,7 @@ function checkPair(
   const allowed = allowedSenses(morph, tables);
   if (allowed.all.has(got) || allowed.hostLemmas.has(got)) return null;
   return {
-    agalan: surface,
+    agazan: surface,
     english,
     column,
     expected: [...allowed.all].sort(),
@@ -233,9 +233,9 @@ function isPracticeBoundary(line: string): boolean {
 type BankRow = {
   lineIndex: number;
   english: string | null;
-  agalan: string | null;
+  agazan: string | null;
   sameEnglish: string | null;
-  sameAgalan: string | null;
+  sameAgazan: string | null;
 };
 
 function findRootsTable(
@@ -263,30 +263,30 @@ function findRootsTable(
 
   const header = splitRow(lines[headerIndex]!);
   const englishCol = header.findIndex((h) => /^english$/i.test(h));
-  const agalanCol = header.findIndex((h) => /^agalan$/i.test(h));
+  const agazanCol = header.findIndex((h) => /^agazan$/i.test(h));
   const sameCol = header.findIndex((h) => /^same root as$/i.test(h));
-  if (englishCol < 0 || agalanCol < 0) return null;
+  if (englishCol < 0 || agazanCol < 0) return null;
 
   let i = headerIndex + 1;
   if (i < end && isDividerRow(lines[i]!)) i += 1;
   const rows: BankRow[] = [];
   while (i < end && isTableRow(lines[i]!) && !isDividerRow(lines[i]!)) {
     const cells = splitRow(lines[i]!);
-    const same = sameCol >= 0 ? parseSameRoot(cells[sameCol] ?? "") : { agalan: null, english: null };
+    const same = sameCol >= 0 ? parseSameRoot(cells[sameCol] ?? "") : { agazan: null, english: null };
     rows.push({
       lineIndex: i,
       english: firstItalic(cells[englishCol] ?? ""),
-      agalan: firstAgalan(cells[agalanCol] ?? ""),
+      agazan: firstAgazan(cells[agazanCol] ?? ""),
       sameEnglish: same.english,
-      sameAgalan: same.agalan,
+      sameAgazan: same.agazan,
     });
     i += 1;
   }
   return { rows, caption, end: i };
 }
 
-function parseSameRoot(cell: string): { agalan: string | null; english: string | null } {
-  return { agalan: firstAgalan(cell), english: firstItalic(cell) };
+function parseSameRoot(cell: string): { agazan: string | null; english: string | null } {
+  return { agazan: firstAgazan(cell), english: firstItalic(cell) };
 }
 
 function firstItalic(cell: string): string | null {
@@ -294,7 +294,7 @@ function firstItalic(cell: string): string | null {
   return m ? m[1]!.trim() : null;
 }
 
-function firstAgalan(cell: string): string | null {
+function firstAgazan(cell: string): string | null {
   const code = cell.match(/`([^`]+)`/);
   if (code) return decodeEntities(code[1]!.trim());
   const html = cell.match(/<code>([^<]+)<\/code>/i);
@@ -340,7 +340,7 @@ export type WordBankUsageFinding = {
 
 /**
  * Word banks against their drills: every lexicon content root the drills use
- * (answer spoilers and Agalan prompts, under the `####` direction headings) has
+ * (answer spoilers and Agazan prompts, under the `####` direction headings) has
  * a **Roots used here** row, and every row is used. Roots match, not spellings
  * (`veyel` in the bank covers `zeyel`, a full-root resume, a role compound's
  * inner root). Overlay words need no row, but a row for one must be used.
@@ -403,11 +403,11 @@ export function lintWordBankUsage(text: string, tables: ClassifyTables): WordBan
 
     const banked = new Set<string>();
     for (const row of table.rows) {
-      if (!row.agalan) continue;
-      const roots = bankRoots(row.agalan, tables);
+      if (!row.agazan) continue;
+      const roots = bankRoots(row.agazan, tables);
       for (const root of roots) banked.add(root);
       if (roots.length > 0 && !roots.some((root) => used.has(root))) {
-        findings.push({ line: row.lineIndex + 1, kind: "unused", roots, surface: row.agalan });
+        findings.push({ line: row.lineIndex + 1, kind: "unused", roots, surface: row.agazan });
       }
     }
     for (const [root, use] of required) {
@@ -448,8 +448,8 @@ function vocabUses(word: LexWord, tables: ClassifyTables): { root: string; overl
     .map((root) => ({ root, overlay }));
 }
 
-function bankRoots(agalan: string, tables: ClassifyTables): string[] {
-  const surface = agalan.replace(/[.,!?]+$/, "");
+function bankRoots(agazan: string, tables: ClassifyTables): string[] {
+  const surface = agazan.replace(/[.,!?]+$/, "");
   try {
     const morph = parseWord(surface);
     if (isForeignPayload(morph.family)) return [];
@@ -477,7 +477,7 @@ export function formatWordBankFinding(relpath: string, finding: WordBankFinding)
     finding.expected.length > 0 ? finding.expected.map((s) => `*${s}*`).join(" / ") : "(none)";
   return [
     `${relpath}:${finding.line}  word-bank English mismatch (${finding.column})`,
-    `  agalan: \`${finding.agalan}\``,
+    `  agazan: \`${finding.agazan}\``,
     `  documented: *${finding.english}*`,
     `  lexicon:     ${expect}`,
     `  ${finding.detail}`,

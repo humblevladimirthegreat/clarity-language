@@ -52,7 +52,7 @@ When the turn is not a statement, put its `/y/` act word immediately before the 
 
 The vowel gives the act word its setting. The same four vowel cues appear in many small word families: **a** add / hold, **o** one / pick, **e** order / instruct, **u** undo / take back.
 
-| Agalan | Use | Cue |
+| Agazan | Use | Cue |
 |--------|-----|-----|
 | **yal** | statement (often omitted) | **a** ≈ add (hold the claim) |
 | **yol** | question: yes/no and fill-in ask | **o** ≈ one (pick from a menu) |
@@ -67,7 +67,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan |
+| English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Ahaben* | `ahaben` |
@@ -76,7 +76,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sneak* | `vezevul` |
 | *run* | `varahal` |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *Ahaben!* (calling Ahaben)
 
@@ -102,7 +102,7 @@ y-prohibition | v-sneak
 y-Azeban
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `yazawan.`
 
@@ -151,7 +151,7 @@ The act word is **`y` + vowel + ending**. The vowel sets the act (**a** statemen
 
 **Compare with:** [MAY](knowing.md#may) (`thovom`) marks the scene as *could be*. **`yam`** is still a statement; you put it forward without insisting the other person take it up.
 
-| Agalan | Use | Cue |
+| Agazan | Use | Cue |
 |--------|-----|-----|
 | **yal** | **statement**: claim or description | **a** add + **-l**: stand behind |
 | **yam** | **soft statement**: offered, not insisted (*for what it's worth*) | **a** add + **-m**: hold, but leave it open |
@@ -284,7 +284,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan |
+| English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
@@ -296,7 +296,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *tell* | `vezebel` |
 | *sneak* | `vezevul` |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *For what it's worth, Azawan sits.*
 
@@ -362,7 +362,7 @@ z-Azawan | v-see | &d-trumpet
 ?! | z-Ahaben | v-sneak
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `yam zazawan vehahel.`
 

@@ -1,5 +1,5 @@
 /**
- * Grapheme → phoneme for native Agalan spelling.
+ * Grapheme → phoneme for native Agazan spelling.
  * IPA targets are from docs/grammar/phonology.md.
  * Keep LETTER_IPA in sync with the vowel and consonant tables there:
  * a change to either must update the other (and the tests here).

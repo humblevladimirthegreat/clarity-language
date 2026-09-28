@@ -46,7 +46,7 @@ const BANK = `### Translation practice
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | \`azawan\` | |
 | *see* | \`veyel\` | \`eyel\` *eye* |
@@ -64,13 +64,13 @@ describe("lintWordBankMarkdown", () => {
 
 **Roots used here:**
 
-| English | Agalan |
+| English | Agazan |
 |---------|--------|
 | *see* | \`vayul\` |
 `;
     const findings = lintWordBankMarkdown(md, tables);
     assert.equal(findings.length, 1);
-    assert.equal(findings[0]!.agalan, "vayul");
+    assert.equal(findings[0]!.agazan, "vayul");
     assert.equal(findings[0]!.english, "see");
   });
 
@@ -79,7 +79,7 @@ describe("lintWordBankMarkdown", () => {
 
 **Roots used here:**
 
-| English | Agalan |
+| English | Agazan |
 |---------|--------|
 | *${english}* | \`SELFn\` |
 `;
@@ -91,7 +91,7 @@ describe("lintWordBankMarkdown", () => {
 describe("lintWordBankUsage", () => {
   const tables = loadDefaultTables();
   const bank = (rows: string[]) =>
-    ["| English | Agalan |", "|---------|--------|", ...rows.map((row) => `| ${row} |`)].join("\n");
+    ["| English | Agazan |", "|---------|--------|", ...rows.map((row) => `| ${row} |`)].join("\n");
   const page = (rows: string[], drills: string[], lead = "") => `### Translation practice
 
 Short drills. ${lead}
@@ -100,7 +100,7 @@ Short drills. ${lead}
 
 ${bank(rows)}
 
-#### English → Agalan
+#### English → Agazan
 
 ${drills.map((d, i) => `**${i + 1}.** *…*\n\n::: details Show answer\n\`${d}\`\n:::\n`).join("\n")}
 `;

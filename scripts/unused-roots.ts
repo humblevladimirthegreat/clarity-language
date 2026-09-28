@@ -1,5 +1,5 @@
 /**
- * Report legal 2- and 3-syllable Agelan roots not yet used in lexicon-published.csv.
+ * Report legal 2- and 3-syllable Agazan roots not yet used in lexicon-published.csv.
  *
  * Run: npm run unused-roots
  *      npm run unused-roots -- --syllables 2

@@ -85,7 +85,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 #### Rank: single-item (under question)
 
-| Agalan | English |
+| Agazan | English |
 |--------|---------|
 | **…em** | *Is X the top priority?* / *Prefer X?* (offer) |
 | **…el** | *Is X the only priority?* |
@@ -98,7 +98,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 #### Rank: standalone (under question)
 
-| Agalan | English |
+| Agazan | English |
 |--------|---------|
 | **…el** | *No favorite?* |
 | **…em** | *Easy-going?* / *Whichever?* |
@@ -114,7 +114,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 #### Set: single-item (under question)
 
-| Agalan | English |
+| Agazan | English |
 |--------|---------|
 | **…al** | *Just X?* / *Only X?* |
 | **…am** | *How about X?* / *Want X?* (offer) |
@@ -135,7 +135,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 #### Set: standalone (under question)
 
-| Agalan | English |
+| Agazan | English |
 |--------|---------|
 | **…al** | *Nothing?* / *Nobody?* |
 | **…am** | *Got nothing?* |
@@ -165,7 +165,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan |
+| English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
@@ -173,7 +173,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *trophy* | `odovel` |
 | *bell* | `ebevol` |
 
-#### English → Agalan {#questions-joins-english-to-agalan}
+#### English → Agazan {#questions-joins-english-to-agazan}
 
 **1.** *Is Azawan the only priority?*
 
@@ -215,7 +215,7 @@ y-question | z-equal-rank
 y-question | [z-trophy | z-and/or]
 :::
 
-#### Agalan → English {#questions-joins-agalan-to-english}
+#### Agazan → English {#questions-joins-agazan-to-english}
 
 **1.** `yael.` vs `yaol.`
 

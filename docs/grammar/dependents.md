@@ -63,7 +63,7 @@ These poles use **-m** because they take the abstract sense of the root, not the
 
 You can also say:
 
-| Agalan | English | Same root as | Cue |
+| Agazan | English | Same root as | Cue |
 |--------|---------|--------------|-----|
 | **`theram barl`** | *because* | `eral` *brick* | 🧱: the cause is what the result sits on |
 | **`thodom barl`** | *if* | `odol` *door* | 🚪: walk through only if it opens |
@@ -154,7 +154,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
+| English | Agazan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
 | *Alahen* | `alahen` | | |
@@ -175,7 +175,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *so-that* | `hagom` | `agol` *goal* | 🥅: you act so the shot counts |
 | *therefore* | `xezadam` | `ezadal` *east* | ➡️: the sun’s path, so the talk moves on |
 
-#### English → Agalan {#beginner-english-to-agalan}
+#### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *Azawan tells Alahen that Ahaben sits.*
 
@@ -225,7 +225,7 @@ z-Azawan | v-run | [h-so-that | b-that-clause] | z-Alahen | v-sit
 z-Azawan | v-stand | [h-although | b-that-clause] | z-Alahen | v-scream
 :::
 
-#### Agalan → English {#beginner-agalan-to-english}
+#### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zahaben vezogel. xezadam zalahen vavadal.`
 
@@ -299,7 +299,7 @@ A **period** closes the sentence body in writing, whatever the speech act. Speec
 
 These words glue one finished sentence to the next (one-way; default ending **-l** is closed). Beginner already used *therefore*.
 
-| English | Agalan | Same root as | Cue | Example |
+| English | Agazan | Same root as | Cue | Example |
 |---------|--------|--------------|-----|---------|
 | *therefore* | **`xezadam`** | `ezadal` *east* | ➡️: the sun’s path, so the talk moves on | `xezadam` |
 | *however* | **`xazel`** | `azel` *zebra* | 🦓: two stripes, still one animal | `xazel` |
@@ -382,7 +382,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan |
+| English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
@@ -400,7 +400,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *however* | `xazel` |
 | *meanwhile* | `xagagal` |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *Azawan sits. Next Alahen runs.*
 
@@ -418,7 +418,7 @@ z-Azawan | v-sit . x-next | z-Alahen | v-run
 z-Azawan | b-Alahen | v-tell | d-lest-clause | v-departure
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zahaben vehahel. xagagal zalahen dalagal vahahal.`
 
@@ -455,7 +455,7 @@ The stand-in vowel identifies the kind of sentence content, while the first lett
 
 Each content type has one lexicalized form; there is no closed / open pair here.
 
-| Agalan | Dependent content | English |
+| Agazan | Dependent content | English |
 |--------|-------------------|---------|
 | **`varn`** | statement-like (`a`) | *state…* |
 | **`vorn`** | question-like (`o`) | *question…* |

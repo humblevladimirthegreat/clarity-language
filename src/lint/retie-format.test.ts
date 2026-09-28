@@ -61,7 +61,7 @@ describe("lintRetieFormat", () => {
     assert.deepEqual(lintRetieFormat("Seeing is what an *eye* does.\n", glossed), []);
   });
 
-  it("rejects retie: skip and an italic Agalan word", () => {
+  it("rejects retie: skip and an italic Agazan word", () => {
     const markdown = "<!-- retie: skip -->\n\nSee *abaha* and *sleep* and *Azawan*.\n";
     const details = lintRetieFormat(markdown, tables).map((finding) => finding.detail);
     assert.equal(details.length, 2);

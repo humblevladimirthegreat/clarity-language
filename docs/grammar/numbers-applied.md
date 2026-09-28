@@ -76,7 +76,7 @@ English names **how much of a unit** (*two meters*, *three hours*). The unit is 
 
 Price *for five grams* keeps this same measure NP in `/b/` after [exchange](relations.md#exchange) **`hogem`**.
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `bezezem g+2` | extra noun (`/b/`) | *two meters* |
 | `zazadem g+3`, `dababam g+5` | subject / object / … | *three seconds*, *five grams* |
@@ -137,7 +137,7 @@ The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). A count on
 
 Join vowels (Beginner already used ranked **`e`** for people; a range uses **sequence** **`oe`** instead):
 
-| Agalan | Use | English | Cue |
+| Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`a`** | unordered filled interval; both ends in | *between 3 and 5* (`z+3 z+5 zal gadaham`) | **a** add |
 | **`oe`** | directed path; first → second (spoken order = path, either direction) | *from 3 to 5* (`z+3 z+5 zoel gadaham`); *from 5 to 3* (`z+5 z+3 zoel gadaham`) | **o** one + **e** order: one after another |
@@ -163,7 +163,7 @@ English *25% of the cats* names a **portion of a whole**. Close a **count** (`ra
 >
 > "25% of the cats."
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | **`yo`** | percent (portion of a whole) | everyday percent figure (`25` in `25%`); those digits ÷ 100 |
 | **`yu`** | percentage points (point-scale amount or delta) | point figure (`2` in `+2%*`); those digits ÷ 100 |
@@ -199,7 +199,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -216,7 +216,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 | *punch* | `vabahel` | `abahel` *punch* |
 | *scream* | `vezogel` | `ezogel` *scream* |
 
-#### English → Agalan {#intermediate-english-to-agalan}
+#### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *Azawan sees 555-123-4567.*
 
@@ -302,7 +302,7 @@ z-Alahen | [d-rock | g-five] | v-punch
 h-_22,7 | z-Ahaben | v-scream
 :::
 
-#### Agalan → English {#intermediate-agalan-to-english}
+#### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zabadul g_7.`
 
@@ -422,7 +422,7 @@ Sequence **`oe`** reads the line the other way: `X zoel` says the path **starts*
 >
 > "less than 5."
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | **`z+5 zel`** | strict less-than bound | *less than 5* (`< 5`) |
 | **`z+5 zem`** | open / approximate less-than | *less than ~5* |
@@ -448,7 +448,7 @@ Standalone **`e`** + **-r** = unspecified member of the *\< X* ray (`zraval zer`
 
 A [hook](hooks.md) **inside the range** marks an exclusive **upper** bound. Replace the second (high) conjunct with prefix-less **`ul`** + that number. SHARED continuum is required. The low endpoint stays inclusive.
 
-| Agalan | Use | English |
+| Agazan | Use | English |
 |--------|-----|---------|
 | `z+3 z+5 zal guruham` | inclusive both ends | *[3, 5]* |
 | `z+3 ul z+5 zal guruham` | exclusive high | *[3, 5)*: *3 up to but not including 5* |

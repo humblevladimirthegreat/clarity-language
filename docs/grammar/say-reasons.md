@@ -4,13 +4,13 @@ Recipes for English *because* / *if* / *would have*, habits, and *as of that dat
 
 ## Reasons and conditions {#reasons}
 
-### English → Agalan {#english-cues}
+### English → Agazan {#english-cues}
 
 **Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Continue](dependents.md#continue-x)
 
 Time and discourse dependents use the same **`barl`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a pole root.
 
-| English | Agalan |
+| English | Agazan |
 |---------|---------|
 | *although* / *while* / *until* / *before* / *after* | same pole + **`barl`** shape on adverb `/h/`, **-m** ([dependent clauses](dependents.md#dependent-clauses)): **`hazem`** / **`hehum`** / … |
 | *so that* / *in order to* | same shape: **`hagom`** ([so that](dependents.md#so-that)); NP intended get = **`hagom`** + `/b/` **noun** |
@@ -23,7 +23,7 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 
 **Needs:** [If](causation.md#if) · [Because](causation.md#only-because) · [MAY](knowing.md#may) · [*as-of*](relations.md#as-of) · [RESIDUE](knowing.md#residue) · [forecasts](knowing.md#forecast)
 
-English *because* and *if* can hide whether you **assert the dependent as a world fact**. Agalan puts that choice on the pole: **`theram`** asserts the condition as the reason the outcome rests on; **`thodom`** does not (the outcome is under that opportunity). *Only if* vs *only because* is the same factivity split on the necessary pole.
+English *because* and *if* can hide whether you **assert the dependent as a world fact**. Agazan puts that choice on the pole: **`theram`** asserts the condition as the reason the outcome rests on; **`thodom`** does not (the outcome is under that opportunity). *Only if* vs *only because* is the same factivity split on the necessary pole.
 
 > `zazawan vowogal theram berehel.`
 >
@@ -159,7 +159,7 @@ Short drills for these recipes. Try each item before opening **Show answer**. **
 
 **Roots used here:**
 
-| English | Agalan | Same root as |
+| English | Agazan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
@@ -180,7 +180,7 @@ Short drills for these recipes. Try each item before opening **Show answer**. **
 | *INFERRED* | `thevem` | `evel` *investigate* |
 | *as-of.bookmark* | `humem` | |
 
-#### English → Agalan {#reasons-causation-english-to-agalan}
+#### English → Agazan {#reasons-causation-english-to-agazan}
 
 **1.** *Alahen pours because Ahaben sees.* (the seeing is asserted)
 
@@ -230,7 +230,7 @@ z-Azawan | th-MAY | v-sit | [th-because | b-that-clause] | z-Alahen | v-pour
 z-test-tube | v-melt | th-RESIDUE | [th-INFERRED | b-later] | [h-as-of.bookmark | b-that-clause] | z-Alahen | v-pour
 :::
 
-#### Agalan → English {#reasons-causation-agalan-to-english}
+#### Agazan → English {#reasons-causation-agazan-to-english}
 
 **1.** `zazawan vobohel theram bavahel.`
 
@@ -294,7 +294,7 @@ Short drills for these recipes. Try each item before opening **Show answer**. PL
 
 **Roots used here:**
 
-| English | Agalan |
+| English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
@@ -306,7 +306,7 @@ Short drills for these recipes. Try each item before opening **Show answer**. PL
 | *as-of.bookmark* | `humem` |
 | *DECISION-modifiable* | `theham` |
 
-#### English → Agalan {#reasons-plans-english-to-agalan}
+#### English → Agazan {#reasons-plans-english-to-agazan}
 
 **1.** *As of 22 July, Alahen was going to walk.*
 
@@ -332,7 +332,7 @@ z-Alahen | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
 z-Alahen | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 :::
 
-#### Agalan → English {#reasons-plans-agalan-to-english}
+#### Agazan → English {#reasons-plans-agazan-to-english}
 
 **1.** `thabem bral humem b_#22,7 verehel. xazawan thabem bral humer vowogal.`
 
@@ -369,7 +369,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
+| English | Agazan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
 | *Alahen* | `alahen` | | |
@@ -381,7 +381,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *MAY* | `thovom` | | |
 | *as-of.ledger* | `henem` | | |
 
-#### English → Agalan {#reasons-knowing-english-to-agalan}
+#### English → Agazan {#reasons-knowing-english-to-agazan}
 
 **1.** *As of 22 July, Alahen’s leaving still counted.*
 
@@ -407,7 +407,7 @@ z-Azawan | th-LIVE | [h-as-of.ledger | b-_22,7] | v-walk
 z-Alahen | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 :::
 
-#### Agalan → English {#reasons-knowing-agalan-to-english}
+#### Agazan → English {#reasons-knowing-agazan-to-english}
 
 **1.** `zalahen thunom henem b_#22,7 thamom vadebal.`
 

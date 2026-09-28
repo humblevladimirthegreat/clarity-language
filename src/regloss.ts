@@ -2,7 +2,7 @@
  * Regenerate documented morph glosses from the parser emitter
  * ([glosses.md § Phrase brackets](../docs/meta/glosses.md#phrase-brackets)).
  * Covers blockquote lines, `Morph` table cells, and translation-exercise gloss lines —
- * the same pairs `lint:agalan` checks.
+ * the same pairs `lint:agazan` checks.
  */
 import { extractMorphPairs, type MorphPair } from "./lint/morph-gloss-docs.js";
 import type { ClassifyTables } from "./parse/classify.js";
@@ -16,7 +16,7 @@ export type ReglossEdit = { line: number; from: string; to: string };
 export type ReglossResult = {
   text: string;
   edits: ReglossEdit[];
-  /** Pairs whose documented line could not be found to replace (0-based line of the Agalan). */
+  /** Pairs whose documented line could not be found to replace (0-based line of the Agazan). */
   unplaced: ReglossEdit[];
 };
 
@@ -55,7 +55,7 @@ export function reglossMarkdown(
     if (!keep(pair, index)) return;
     let next: string;
     try {
-      next = morphGlossLine(pair.agalan, tables);
+      next = morphGlossLine(pair.agazan, tables);
     } catch {
       return;
     }
@@ -90,7 +90,7 @@ export function reglossMarkdown(
 export function morphPairsMatching(markdown: string, tables: ClassifyTables): boolean[] {
   return extractMorphPairs(markdown).map((pair) => {
     try {
-      return sepMorph(pair.morph) === morphGlossLine(pair.agalan, tables);
+      return sepMorph(pair.morph) === morphGlossLine(pair.agazan, tables);
     } catch {
       return false;
     }

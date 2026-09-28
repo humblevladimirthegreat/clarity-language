@@ -3,7 +3,7 @@
  * Grammar pages: [retie-safe writing](../../docs/meta/grammar-docs.md#retie-safe-writing).
  */
 import { grammarHeadings } from "./grammar-anchors.js";
-import { ENGLISH_IN_CODE } from "./agalan-docs.js";
+import { ENGLISH_IN_CODE } from "./agazan-docs.js";
 import { contentStemRoots } from "../retie/resume.js";
 import { hasClosedOverlay, type ClassifyTables } from "../parse/classify.js";
 import { letterPrefix } from "../parse/resolve.js";
@@ -18,7 +18,7 @@ const ENGLISH_WORDS = new WeakMap<ClassifyTables, Set<string>>();
 const SENSE_FORMS = new WeakMap<ClassifyTables, Set<string>>();
 
 /**
- * English words whose spelling is also Agalan, so learner italics stay English.
+ * English words whose spelling is also Agazan, so learner italics stay English.
  * A gloss already in the lexicon is collected from the rows; these are the ones
  * the lexicon never uses as an English headword.
  */
@@ -210,7 +210,7 @@ function italicFindings(markdown: string, tables: ClassifyTables): RetieFormatFi
       const index = match.index!;
       if (seen.has(index) || lexiconEnglishWords(tables).has(token) || !retieableSpelling(token, tables)) continue;
       seen.add(index);
-      out.push({ index, detail: `*${token}* is Agalan; put it in backticks` });
+      out.push({ index, detail: `*${token}* is Agazan; put it in backticks` });
     }
   }
   return out;

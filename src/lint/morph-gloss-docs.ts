@@ -11,7 +11,7 @@ import { lineNumberAt } from "../retie/tokens.js";
 import type { AmbiguityConflict } from "../parse/types.js";
 
 export type MorphPair = {
-  agalan: string;
+  agazan: string;
   morph: string;
   index: number;
   source: "blockquote" | "table" | "exercise";
@@ -20,7 +20,7 @@ export type MorphPair = {
 export type MorphMismatch = {
   kind: "mismatch";
   line: number;
-  agalan: string;
+  agazan: string;
   documented: string;
   parser: string;
 };
@@ -28,14 +28,14 @@ export type MorphMismatch = {
 export type MorphAmbiguity = {
   kind: "ambiguity";
   line: number;
-  agalan: string;
+  agazan: string;
   conflict: AmbiguityConflict;
 };
 
 export type MorphMissingGloss = {
   kind: "missing-gloss";
   line: number;
-  agalan: string;
+  agazan: string;
   scope: "teach" | "exercise";
 };
 
@@ -48,7 +48,7 @@ export type MorphCoverageGap = {
 export type MorphParseError = {
   kind: "parse-error";
   line: number;
-  agalan: string;
+  agazan: string;
   message: string;
 };
 
@@ -68,9 +68,9 @@ export function extractMorphPairs(markdown: string): MorphPair[] {
   const pairs: MorphPair[] = [];
   for (const block of extractExampleBlocks(markdown)) {
     pairs.push({
-      agalan: block.agalan,
+      agazan: block.agazan,
       morph: block.morph,
-      index: lineIndexToCharIndex(markdown, block.agalanIndex),
+      index: lineIndexToCharIndex(markdown, block.agazanIndex),
       source: "blockquote",
     });
   }
@@ -78,7 +78,7 @@ export function extractMorphPairs(markdown: string): MorphPair[] {
   for (const item of extractTranslationExercises(markdown)) {
     if (item.morph != null) {
       pairs.push({
-        agalan: item.agalan,
+        agazan: item.agazan,
         morph: item.morph,
         index: item.index,
         source: "exercise",
@@ -101,14 +101,14 @@ export type MorphGlossLintResult = {
 };
 
 function requireMorphForLoose(
-  agalan: string,
+  agazan: string,
   morph: string | null,
   loose: string | null,
   tables: ClassifyTables,
 ): boolean {
   if (loose == null) return false;
   if (morph != null) return false;
-  return !morphRedundantWithLoose(agalan, loose, tables);
+  return !morphRedundantWithLoose(agazan, loose, tables);
 }
 
 export function lintMorphGlossMarkdown(
@@ -125,16 +125,16 @@ export function lintMorphGlossMarkdown(
   for (const block of extractTeachBlocks(text)) {
     if (block.loose == null) continue;
     withLooseEnglish += 1;
-    const line = lineNumberAt(text, lineIndexToCharIndex(text, block.agalanIndex));
+    const line = lineNumberAt(text, lineIndexToCharIndex(text, block.agazanIndex));
     if (block.morph != null) {
       comparedWithLoose += 1;
-    } else if (morphRedundantWithLoose(block.agalan, block.loose, tables)) {
+    } else if (morphRedundantWithLoose(block.agazan, block.loose, tables)) {
       redundantOmitted += 1;
-    } else if (requireMorphForLoose(block.agalan, block.morph, block.loose, tables)) {
+    } else if (requireMorphForLoose(block.agazan, block.morph, block.loose, tables)) {
       findings.push({
         kind: "missing-gloss",
         line,
-        agalan: block.agalan,
+        agazan: block.agazan,
         scope: "teach",
       });
     }
@@ -146,13 +146,13 @@ export function lintMorphGlossMarkdown(
     const line = lineNumberAt(text, item.index);
     if (item.morph != null) {
       comparedWithLoose += 1;
-    } else if (morphRedundantWithLoose(item.agalan, item.loose, tables)) {
+    } else if (morphRedundantWithLoose(item.agazan, item.loose, tables)) {
       redundantOmitted += 1;
-    } else if (requireMorphForLoose(item.agalan, item.morph, item.loose, tables)) {
+    } else if (requireMorphForLoose(item.agazan, item.morph, item.loose, tables)) {
       findings.push({
         kind: "missing-gloss",
         line,
-        agalan: item.agalan,
+        agazan: item.agazan,
         scope: "exercise",
       });
     }
@@ -168,23 +168,23 @@ export function lintMorphGlossMarkdown(
 
   for (const pair of pairs) {
     const line = lineNumberAt(text, pair.index);
-    const compare = compareMorphGloss(pair.agalan, pair.morph, tables);
+    const compare = compareMorphGloss(pair.agazan, pair.morph, tables);
     if (compare.parseError) {
-      findings.push({ kind: "parse-error", line, agalan: pair.agalan, message: compare.parseError });
+      findings.push({ kind: "parse-error", line, agazan: pair.agazan, message: compare.parseError });
     } else if (!compare.ok) {
       findings.push({
         kind: "mismatch",
         line,
-        agalan: pair.agalan,
+        agazan: pair.agazan,
         documented: compare.expected,
         parser: compare.actual,
       });
     }
-    for (const conflict of collectAmbiguity(pair.agalan, tables)) {
+    for (const conflict of collectAmbiguity(pair.agazan, tables)) {
       findings.push({
         kind: "ambiguity",
         line,
-        agalan: pair.agalan,
+        agazan: pair.agazan,
         conflict,
       });
     }
@@ -199,7 +199,7 @@ export function lintMorphGlossMarkdown(
 }
 
 export type TranslationExercise = {
-  agalan: string;
+  agazan: string;
   morph: string | null;
   loose: string | null;
   index: number;
@@ -225,10 +225,10 @@ export function extractTranslationExercises(markdown: string): TranslationExerci
       const parsed = parseExerciseItem(itemLines);
       if (!parsed) continue;
       items.push({
-        agalan: parsed.agalan,
+        agazan: parsed.agazan,
         morph: parsed.morph,
         loose: parsed.loose,
-        index: lineIndexToCharIndex(markdown, itemStart + parsed.agalanLineOffset),
+        index: lineIndexToCharIndex(markdown, itemStart + parsed.agazanLineOffset),
       });
     }
   }
@@ -265,7 +265,7 @@ function isPracticeBoundary(line: string): boolean {
 
 function parseExerciseItem(
   itemLines: string[],
-): { agalan: string; morph: string | null; loose: string | null; agalanLineOffset: number } | null {
+): { agazan: string; morph: string | null; loose: string | null; agazanLineOffset: number } | null {
   const prompt = ITEM_START_RE.exec(itemLines[0] ?? "");
   const promptRest = prompt?.[2] ?? "";
   const promptCodes = codeSpans(promptRest);
@@ -274,20 +274,20 @@ function parseExerciseItem(
 
   if (promptCodes.length > 0) {
     return {
-      agalan: promptCodes.join(" "),
+      agazan: promptCodes.join(" "),
       morph,
       loose,
-      agalanLineOffset: 0,
+      agazanLineOffset: 0,
     };
   }
 
-  const fromDetails = detailsAgalan(itemLines);
+  const fromDetails = detailsAgazan(itemLines);
   if (!fromDetails) return null;
   return {
-    agalan: fromDetails.agalan,
+    agazan: fromDetails.agazan,
     morph,
     loose,
-    agalanLineOffset: fromDetails.lineOffset,
+    agazanLineOffset: fromDetails.lineOffset,
   };
 }
 
@@ -311,7 +311,7 @@ function extractExerciseLooseInDetails(itemLines: string[]): string | null {
   return null;
 }
 
-function extractExerciseMorph(itemLines: string[], agalanOnPrompt: boolean): string | null {
+function extractExerciseMorph(itemLines: string[], agazanOnPrompt: boolean): string | null {
   const body = itemLines.join("\n");
   const glossMatch = GLOSS_COMMENT_RE.exec(body);
   if (glossMatch) {
@@ -319,7 +319,7 @@ function extractExerciseMorph(itemLines: string[], agalanOnPrompt: boolean): str
   }
 
   let inDetails = false;
-  let agalanLineInDetails = -1;
+  let agazanLineInDetails = -1;
   for (let i = 0; i < itemLines.length; i++) {
     const trimmed = itemLines[i]!.trim();
     if (!inDetails) {
@@ -327,11 +327,11 @@ function extractExerciseMorph(itemLines: string[], agalanOnPrompt: boolean): str
       continue;
     }
     if (/^:::$/.test(trimmed)) break;
-    if (unwrapCode(trimmed) && agalanLineInDetails < 0) agalanLineInDetails = i;
+    if (unwrapCode(trimmed) && agazanLineInDetails < 0) agazanLineInDetails = i;
     const visibleMorph = visibleExerciseMorphLine(trimmed);
     if (!visibleMorph) continue;
-    if (agalanOnPrompt) return visibleMorph;
-    if (agalanLineInDetails >= 0 && i > agalanLineInDetails) {
+    if (agazanOnPrompt) return visibleMorph;
+    if (agazanLineInDetails >= 0 && i > agazanLineInDetails) {
       return visibleMorph;
     }
   }
@@ -348,7 +348,7 @@ function visibleExerciseMorphLine(trimmed: string): string | null {
   return null;
 }
 
-function detailsAgalan(itemLines: string[]): { agalan: string; lineOffset: number } | null {
+function detailsAgazan(itemLines: string[]): { agazan: string; lineOffset: number } | null {
   let inDetails = false;
   for (let i = 0; i < itemLines.length; i++) {
     const trimmed = itemLines[i]!.trim();
@@ -358,7 +358,7 @@ function detailsAgalan(itemLines: string[]): { agalan: string; lineOffset: numbe
     }
     if (/^:::/.test(trimmed)) break;
     const unwrapped = unwrapCode(trimmed);
-    if (unwrapped) return { agalan: unwrapped, lineOffset: i };
+    if (unwrapped) return { agazan: unwrapped, lineOffset: i };
   }
   return null;
 }
@@ -401,20 +401,20 @@ function extractMorphTables(markdown: string): MorphPair[] {
     if (i < lines.length && isDividerRow(lines[i]!)) i += 1;
 
     const morphCol = header.findIndex((h) => /^(morph(?:\s+gloss)?)$/i.test(h));
-    const agalanCol = header.findIndex((h) => /^(agalan|example)$/i.test(h));
-    const usable = morphCol >= 0 && agalanCol >= 0 && morphCol !== agalanCol;
+    const agazanCol = header.findIndex((h) => /^(agazan|example)$/i.test(h));
+    const usable = morphCol >= 0 && agazanCol >= 0 && morphCol !== agazanCol;
 
     while (i < lines.length && isTableRow(lines[i]!) && !isDividerRow(lines[i]!)) {
       if (usable) {
         const cells = splitRow(lines[i]!);
-        const agalanCell = cells[agalanCol] ?? "";
+        const agazanCell = cells[agazanCol] ?? "";
         const morphCell = cells[morphCol] ?? "";
-        if (!SKIP_CELL.test(agalanCell)) {
-          const agalan = unwrapCellAgalan(agalanCell);
+        if (!SKIP_CELL.test(agazanCell)) {
+          const agazan = unwrapCellAgazan(agazanCell);
           const morph = unwrapCellMorph(morphCell);
-          if (agalan && morph && looksLikeMorphLine(morph)) {
+          if (agazan && morph && looksLikeMorphLine(morph)) {
             pairs.push({
-              agalan,
+              agazan,
               morph,
               index: lineIndexToCharIndex(markdown, i),
               source: "table",
@@ -442,7 +442,7 @@ function splitRow(line: string): string[] {
   return t.split(/(?<!\\)\|/).map((cell) => cell.trim());
 }
 
-function unwrapCellAgalan(cell: string): string | null {
+function unwrapCellAgazan(cell: string): string | null {
   const codes = [...cell.matchAll(/`([^`]+)`/g)].map((m) => m[1]!);
   if (codes.length === 1) return codes[0]!;
   if (codes.length > 1) return codes.join(" ");
@@ -466,17 +466,17 @@ export function formatMorphGlossFinding(
   }
   if (finding.kind === "missing-gloss") {
     const label = finding.scope === "teach" ? "missing teach morph gloss" : "missing exercise morph gloss";
-    return `${loc}  ${label}  \`${finding.agalan}\``;
+    return `${loc}  ${label}  \`${finding.agazan}\``;
   }
   if (finding.kind === "coverage-gap") {
     return `${loc}  ${finding.message}`;
   }
   if (finding.kind === "parse-error") {
-    return `${loc}  sentence does not parse  \`${finding.agalan}\`  (${finding.message.split("\n")[0]})`;
+    return `${loc}  sentence does not parse  \`${finding.agazan}\`  (${finding.message.split("\n")[0]})`;
   }
   return [
     `${loc}  morph gloss mismatch`,
-    `  agalan: \`${finding.agalan}\``,
+    `  agazan: \`${finding.agazan}\``,
     `  documented: ${finding.documented}`,
     `  parser:     ${finding.parser}`,
   ].join("\n");

@@ -1,6 +1,6 @@
 # Grammar gaps and extensions ledger
 
-Editors only — not linked from grammar pages. Findings ledger for the expressiveness review (plan: `docs/proposals/expressiveness-review.md`). Lists English jobs Agalan handles awkwardly or not at all (**gaps**, `G-nn`) and unused forms with an intuitive reading (**extensions**, `E-nn`). Unused **forms** live in [unassigned-reserved](unassigned-reserved.md); this page tracks **jobs**.
+Editors only — not linked from grammar pages. Findings ledger for the expressiveness review (plan: `docs/proposals/expressiveness-review.md`). Lists English jobs Agazan handles awkwardly or not at all (**gaps**, `G-nn`) and unused forms with an intuitive reading (**extensions**, `E-nn`). Unused **forms** live in [unassigned-reserved](unassigned-reserved.md); this page tracks **jobs**.
 
 Grammar pages teach only settled readings. Do not drill open rows as if taught ([drill-generation](drill-generation.md)).
 
@@ -10,7 +10,7 @@ Grammar pages teach only settled readings. Do not drill open rows as if taught (
 |-------|---------|
 | ID | `G-nn` (gap), `E-nn` (extension), `D-nn` (by design) |
 | English job / source form | e.g. *reflexive "herself"*; or `th+N` on `/h/` |
-| Current route | Best existing Agalan expression, with example, or *none* |
+| Current route | Best existing Agazan expression, with example, or *none* |
 | Verdict | **covered** · **awkward** · **missing** · **by design** · **extension candidate** |
 | Owning page | the `docs/grammar/` page that would own it; an application-only resolution (no new form) goes on a `say-*.md` [recipe track](grammar-docs.md#recipe-track) page, not a stage |
 | Proposal | one-line suggestion, or `docs/proposals/<file>.md` |
@@ -113,7 +113,7 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
-| G-B01 | grammatical tense (past / present / future marking on the verb) | No tense letter, stated as a design choice: "Verbs have **no past or future letter**" ([knowing#evidentiality](../grammar/knowing.md#evidentiality)); "Neither word is a past tense" ([why-agelan](../grammar/why-agelan.md)); morph glosses never carry tense ([glosses](glosses.md), line ~270). Time comes from channel, *before* / *after*, clock, forecast (channel + `b+`) | by design | knowing.md | Add to the By design table as D-nn so it is not raised again | — |
+| G-B01 | grammatical tense (past / present / future marking on the verb) | No tense letter, stated as a design choice: "Verbs have **no past or future letter**" ([knowing#evidentiality](../grammar/knowing.md#evidentiality)); "Neither word is a past tense" ([why-agazan](../grammar/why-agazan.md)); morph glosses never carry tense ([glosses](glosses.md), line ~270). Time comes from channel, *before* / *after*, clock, forecast (channel + `b+`) | by design | knowing.md | Add to the By design table as D-nn so it is not raised again | — |
 | G-B02 | simple past (*Azawan walked*) | WITNESSED `zazawan thunom vowogal.`, or a when-frame (`hulam barl`, clock `/h/`) ([knowing#live-vs-memory](../grammar/knowing.md#live-vs-memory)) | covered | knowing.md | — | — |
 | G-B03 | past with no evidential claim (plain narration: *Yesterday Azawan walked*, told with no source) | channel or date: `thunom` / `themam` / `thazom` (*per the tale*, for narration), or a clock / date | by design | knowing.md | Neutral past is deliberately absent (see D-10). No *earlier* adverb and no bare *before now*: *before* / *after* always name a landmark | — |
 | G-B04 | perfect *has done* (result still relevant) | RESIDUE `zazawan thamom vowogal.` ([knowing#residue](../grammar/knowing.md#residue)) | covered | knowing.md | — | — |
@@ -133,7 +133,7 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 | G-B18 | *could* (past ability, *could swim as a child*) | `zazawan vezehexal thunem.` | covered | intention.md#can | — | — |
 | G-B19 | *may / might / could* (epistemic) | MAY `zazawan thovom vowogal.` ([knowing#may](../grammar/knowing.md#may)) | covered | knowing.md | — | — |
 | G-B20 | *may / can* (permission: *you may go*) | `zazawan vowogal thegam.` (granted) / `thegal` (rule allows) / `thegar` (tolerated); negatives `therem` / `therel` / `therer` — [values#permission](../grammar/sakes.md#permission) | covered | sakes.md | — | — |
-| G-B21 | *must* (obligation) | Firm command `yel`, or need-linked prescription `…thel`/`…them`/`…ther` ([values#sake-force](../grammar/sakes.md#sake-force)). By design, a bare *must* without a named sake is avoided ([why-agelan](../grammar/why-agelan.md)) | by design | sakes.md | — | — |
+| G-B21 | *must* (obligation) | Firm command `yel`, or need-linked prescription `…thel`/`…them`/`…ther` ([values#sake-force](../grammar/sakes.md#sake-force)). By design, a bare *must* without a named sake is avoided ([why-agazan](../grammar/why-agazan.md)) | by design | sakes.md | — | — |
 | G-B22 | *must* (epistemic: *must be home*) | Evidentials such as clue-based inference ([knowing#evidentiality](../grammar/knowing.md#evidentiality)) or a stance number `th+95` | covered | knowing.md | — | — |
 | G-B23 | *should / ought to* | `zazawan vezebel thonathem.` ([values#sake-force](../grammar/sakes.md#sake-force)); a forecast *should* uses a channel + `b+` ([knowing#forecast](../grammar/knowing.md#forecast)) | covered | sakes.md | — | — |
 | G-B24 | rules or norms not tied to a sake (*you should signal before turning*, *passengers must…*) | Prescription requires a named sake; a plain rule without one has only a command | awkward | sakes.md | Document which sake to pick for social or legal rules, or show `yel` with generic `onu` | P2 |
@@ -158,7 +158,7 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 **Notes**
 
 - Parser: all 27 test sentences parsed, including forms the docs do not teach: subjectless `dazawan vahahal.`, same-clause reflexive `zazawan vahahal dazar.`, and `zazawan vazadal dowogam.`. The parser accepts more than the pages teach, so these count as awkward or missing, not covered.
-- No tense by design: yes, it is stated. knowing.md#evidentiality says "Verbs have **no past or future letter**". knowing.md#residue says the RESIDUE / FORMER moods "do **not** locate time", and so does why-agelan.md ("Neither word is a past tense"). glosses.md (~line 270) says Agalan "does not mark English tense or progressive aspect". It is **not** in the ledger's By design table. Add it (G-B01).
+- No tense by design: yes, it is stated. knowing.md#evidentiality says "Verbs have **no past or future letter**". knowing.md#residue says the RESIDUE / FORMER moods "do **not** locate time", and so does why-agazan.md ("Neither word is a past tense"). glosses.md (~line 270) says Agazan "does not mark English tense or progressive aspect". It is **not** in the ledger's By design table. Add it (G-B01).
 - Aspect particles (*just / already / still / yet / anymore*) form the biggest gap cluster. RESIDUE and FORMER each cover only part of the ground. A single small aspect/expectation adverb series on the add / one / order / undo vowel pattern could fill most of G-B09 to G-B14.
 - Permission (G-B20, G-B33) filled 2026-09-26 in sakes.md#permission / #consent.
 - Parser speed: each `npm run parse` took about 25 s under load. The two runs that printed nothing were killed jobs (exit 144), not parse failures.
@@ -169,7 +169,7 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 |----|---------------------------|---------------|---------|-------------|----------|----------|
 | G-C01 | indefinite *a / an* (first mention) | bare first-mention **-l** / **-m**: `zodogal vowogal.` *A dog walks.* — [word-endings#first-mention-concrete-l](word-endings.md) | covered | word-endings.md | — | — |
 | G-C02 | *the* for an already-mentioned referent | resume **-r**: `zodogal vowogal. zodor vehahel.` — [pronouns#resume-r](pronouns.md#resume-r) | by design (D-03) | pronouns.md | — | — |
-| G-C03 | *the* for a unique / situational referent never mentioned (*the sun*, *the door*, *the kitchen*) | *the sun* = unique **-n** `zazahon vowogal.`; situational *the door* = plain **-l**: Agalan does not mark *the* vs *a*, so context supplies definiteness (decided 2026-09-26) | covered | word-endings.md | State the **-l** reading on word-endings.md if learners ask | — |
+| G-C03 | *the* for a unique / situational referent never mentioned (*the sun*, *the door*, *the kitchen*) | *the sun* = unique **-n** `zazahon vowogal.`; situational *the door* = plain **-l**: Agazan does not mark *the* vs *a*, so context supplies definiteness (decided 2026-09-26) | covered | word-endings.md | State the **-l** reading on word-endings.md if learners ask | — |
 | G-C04 | *some* + count noun (*some cats*) | indefinite group **-lx**: `zagadalx vehahel.` — [plurality#beginner](plurality.md#beginner) | covered | plurality.md | — | — |
 | G-C05 | *some* = a specific unknown one (*some person*) | join **-r**: `zebezal zar vowogal.` — [joins#unspecified-member-r-phrase](joins.md#unspecified-member-r-phrase) | covered | joins.md | — | — |
 | G-C06 | *some* + mass noun (*some bread / water*) | `g+` on a mass noun = non-zero amount: `zedehel g+ vehahel.` ([numbers#mass-some](../grammar/numbers.md#mass-some)) | covered | numbers.md | — | — |

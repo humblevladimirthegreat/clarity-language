@@ -8,20 +8,20 @@ Use this document for styling examples when producing more posts, and seeing wha
 
 Labeling a person from one behavior is a classic cognitive distortion, and it hides inside ordinary adjectives. "Alahen is angry" could mean one outburst or Alahen's whole personality, and listeners (including you, about yourself) tend to hear the second. Psychologists call the tendency to explain behavior by character instead of circumstance the [fundamental attribution error](https://en.wikipedia.org/wiki/Fundamental_attribution_error), and treating categories as fixed essences is [psychological essentialism](https://en.wikipedia.org/wiki/Essentialism#In_psychology).
 
-Agalan lets any label mark how far it reaches with a small infix (`th` + a vowel) before the word ending:
+Agazan lets any label mark how far it reaches with a small infix (`th` + a vowel) before the word ending:
 
 - **tha** — this one occasion: *ganegethal* "angry this time"
 - **the** — a pattern with exceptions: *valahathel* "tends to lie"
 - **tho** — true in one relationship: *gelehothom balahen* "a stranger to Alahen" (not a stranger in general)
 - **thu** — a name only, not an explanation: *ganagothul* "what gets called anxious"
 
-None of the four is a claim about someone's essence. The plain word stays neutral, so you aren't forced to mark every label, but when you want to say "he failed" without meaning "he's a failure," the grammar has a one-syllable way to do it. Bonus: the same **tho** form already gave Agalan *behind the house* (the house's own back), so the direction words turned out to be a special case of the same idea.
+None of the four is a claim about someone's essence. The plain word stays neutral, so you aren't forced to mark every label, but when you want to say "he failed" without meaning "he's a failure," the grammar has a one-syllable way to do it. Bonus: the same **tho** form already gave Agazan *behind the house* (the house's own back), so the direction words turned out to be a special case of the same idea.
 
 You can learn the forms here: [https://main.d2xds94zsgwptg.amplifyapp.com/grammar/predication.html\#label-scope](https://main.d2xds94zsgwptg.amplifyapp.com/grammar/predication.html#label-scope)
 
 ### Collective Verbs and Adjectives Use Plural
 
-English *they sang* doesn't say whether they sang together or each on their own, and *the boxes are heavy* doesn't say whether each box is heavy or just the whole pile. Agalan lets you mark the difference by putting the plural **-x** on the verb or adjective itself.
+English *they sang* doesn't say whether they sang together or each on their own, and *the boxes are heavy* doesn't say whether each box is heavy or just the whole pile. Agazan lets you mark the difference by putting the plural **-x** on the verb or adjective itself.
 
 On a noun, **-x** says *who* is in the group. On a verb or adjective, **-x** says the group does it or has it **as one unit**. Leave it off and it's left open (each one, together, or you don't care).
 
@@ -65,7 +65,7 @@ Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/plurality.html#ver
 
 ### *May* Says If You're Finding Out
 
-When we're unsure about something, we often just keep turning it over in our heads - *maybe he's mad at me, maybe he isn't* - which feels like figuring it out but never actually checks. Agalan makes you say whether you're going to find out.
+When we're unsure about something, we often just keep turning it over in our heads - *maybe he's mad at me, maybe he isn't* - which feels like figuring it out but never actually checks. Agazan makes you say whether you're going to find out.
 
 A possibility is marked with the stance word `ovo` (*may*), and its ending says what you're doing about it:
 
@@ -117,7 +117,7 @@ Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/x-compounds.html#c
 
 ### Pronouns Copy the Start of the Noun
 
-English pronouns are often ambiguous as to what the antecedent is, especially *it*. Agalan pronouns are built from an abbreviation of the antecedent, so the form itself tells you who or what you mean. There is no gender for pronouns, and not even animacy.
+English pronouns are often ambiguous as to what the antecedent is, especially *it*. Agazan pronouns are built from an abbreviation of the antecedent, so the form itself tells you who or what you mean. There is no gender for pronouns, and not even animacy.
 
 The first letter is the part of speech in this sentence (`z-` subject, `d-` object, …). After that you copy the antecedent through its second vowel and then end it with -r.
 
@@ -195,7 +195,7 @@ Full Docs and real examples: [https://main.d2xds94zsgwptg.amplifyapp.com/grammar
 
 ### Egocentric Directions Require Viewpoint
 
-The egocentric direction terms (left/right/ahead/behind) are ambiguous because they are relative to some reference point that is usually omitted. We have all had to say or at least heard “No, the other left\!” because of a mismatched viewpoint where you meant your left but the addressee assumed their left. Agalan fixes this by requiring the viewpoint.
+The egocentric direction terms (left/right/ahead/behind) are ambiguous because they are relative to some reference point that is usually omitted. We have all had to say or at least heard “No, the other left\!” because of a mismatched viewpoint where you meant your left but the addressee assumed their left. Agazan fixes this by requiring the viewpoint.
 
 There is no word that simply means “left.” Instead, you use the word for “west” compounded with the point of reference. west-you, west-me, west-John means your left, my left, and John’s left respectively. Ditto for all other compass directions. This removes ambiguity and will probably also improve people’s sense of direction \- if compass directions are the default you’ll likely get better at knowing which way is North (like the Guugu Yimithirr tribe whose language does not have left/right at all and they only use compass directions).
 

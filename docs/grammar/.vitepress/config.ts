@@ -12,9 +12,9 @@ const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
 const srcDir = fileURLToPath(new URL('../../../src', import.meta.url))
 
 export default defineConfig({
-  title: 'Agalan Grammar',
+  title: 'Agazan Grammar',
   description:
-    'Learner grammar for Agalan — compassion, rationality, and empowerment encoded in vocabulary and grammar.',
+    'Learner grammar for Agazan — compassion, rationality, and empowerment encoded in vocabulary and grammar.',
   base: '/grammar/',
   // Repo root `dist/grammar/` so Amplify can publish `dist/` and serve at /grammar/
   outDir: '../../dist/grammar',
@@ -46,13 +46,13 @@ export default defineConfig({
   },
   themeConfig: {
     nav: [
-      { text: 'Why Agalan', link: '/' },
+      { text: 'Why Agazan', link: '/' },
       { text: 'Introduction', link: '/introduction' },
       { text: 'Clause', link: '/clause' },
       { text: 'Lexicon', link: '/lexicon' },
       { text: 'Inspect', link: '/inspect' },
       { text: 'Terminology', link: '/terminology' },
-      { text: 'Saying it in Agalan', link: '/english' },
+      { text: 'Saying it in Agazan', link: '/english' },
     ],
     sidebar: [
       {
@@ -60,7 +60,7 @@ export default defineConfig({
         items: readingOrder,
       },
       {
-        text: 'Saying it in Agalan',
+        text: 'Saying it in Agazan',
         items: [
           { text: 'Overview', link: '/english' },
           { text: 'People, things and places', link: '/say-people-places' },

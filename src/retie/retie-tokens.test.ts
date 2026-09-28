@@ -56,7 +56,7 @@ describe("retieCore — English substrings stay", () => {
   });
 });
 
-describe("retieCore — Agalan tokens", () => {
+describe("retieCore — Agazan tokens", () => {
   it("rewrites overlay thuhunum and citation thodom from root fields", () => {
     const map = mapOf(["uhunu", "uvuvu"], ["odo", "adoro"]);
     assert.equal(retieCore("thuhunum", map), "thuvuvum");
@@ -316,12 +316,12 @@ describe("classification-gated retie", () => {
     assert.equal(text, input);
   });
 
-  it("reties a text-fence line that reads as Agalan", () => {
+  it("reties a text-fence line that reads as Agazan", () => {
     const { text } = rewriteMarkdown("```text\nzazawan vawalal.\n```\n", map);
     assert.equal(text, "```text\nzululon vawalal.\n```\n");
   });
 
-  it("reties the Agalan words of an unclassified span and reports it", () => {
+  it("reties the Agazan words of an unclassified span and reports it", () => {
     const { text, reviews } = rewriteMarkdown("`zazawan means swan`", map);
     assert.equal(text, "`zululon means swan`");
     assert.match(reviews[0]!.reason, /mixes/);
@@ -362,7 +362,7 @@ describe("classification-gated retie", () => {
     assert.equal(text, "```markdown\n> `zululon vawalal.`\n```\n");
   });
 
-  it("reties an emphasised Agalan sentence in prose", () => {
+  it("reties an emphasised Agazan sentence in prose", () => {
     const { text } = rewriteMarkdown("> 🔊 *zazawan vawalal.*", map);
     assert.equal(text, "> 🔊 *zululon vawalal.*");
   });
@@ -432,7 +432,7 @@ describe("lineNumberAt", () => {
   });
 });
 
-describe("English copies follow their Agalan", () => {
+describe("English copies follow their Agazan", () => {
   const map = mapOf(["ululo", "alahe"], ["odoga", "uzugo"]);
 
   it("renames a named word in morph lines, free English and word banks", () => {
@@ -468,7 +468,7 @@ describe("editorial span close and template stems", () => {
 });
 
 describe("heading anchors", () => {
-  it("renames a heading id spelled from Agalan and relinks it", () => {
+  it("renames a heading id spelled from Agazan and relinks it", () => {
     const before = "### Ability (`egera`)\n";
     const after = "### Ability (`aze`)\n";
     const renames = headingIdRenames(before, after);
@@ -590,7 +590,7 @@ describe("source literals (2026-09-28 fixes)", () => {
     currentRoots: new Set(["ululo", "ibibi"]),
   };
 
-  it("reads a lone role letter and a hook as Agalan, not English", () => {
+  it("reads a lone role letter and a hook as Agazan, not English", () => {
     const source = 'parse("zazawan vowogal ol b_#22,7.");\n';
     const { text } = rewriteSourceLiterals(source, "x.test.ts", ctx);
     assert.equal(text, 'parse("zululon vowogal ol b_#22,7.");\n');

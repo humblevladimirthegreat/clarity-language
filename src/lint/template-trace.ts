@@ -4,7 +4,7 @@ import { parseWithTables } from "../parse/parse-core.js";
 
 /**
  * Trace a template or fragment span ([learning-order-check](../../docs/meta/proposals.md)):
- * fill each slot with sample Agalan, parse, and keep only the constructions
+ * fill each slot with sample Agazan, parse, and keep only the constructions
  * every successful filling shares. What varies between fillings came from a filler,
  * so the intersection is what the template's own words exercise.
  *

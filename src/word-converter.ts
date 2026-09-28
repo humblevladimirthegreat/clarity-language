@@ -86,7 +86,7 @@ function remapConsonant(letter: string): string {
   return mapped;
 }
 
-/** Map English letters left to right; collapse runs of the same Agalan letter. */
+/** Map English letters left to right; collapse runs of the same Agazan letter. */
 export function mappedSourceLetters(input: string): string[] {
   const letters = normalizeInput(input);
   const out: string[] = [];
@@ -189,7 +189,7 @@ export function* clarityRootCandidates(input: string): Generator<string> {
 /** Syllable count for a V(CV)+ root (one syllable per vowel). */
 export function clarityRootSyllables(root: string): number {
   if (!isClarityRootShape(root)) {
-    throw new Error(`Not a legal Agalan root shape: ${root}`);
+    throw new Error(`Not a legal Agazan root shape: ${root}`);
   }
   return (root.length + 1) / 2;
 }
@@ -269,7 +269,7 @@ export function letterDistribution(roots: string[]): LetterDistribution {
 }
 
 /**
- * Best Agalan root for an English word, from its CMU pronunciation.
+ * Best Agazan root for an English word, from its CMU pronunciation.
  * Two syllables → VCV; three syllables → VCVCV.
  */
 export function toClarityWord(input: string, syllables: number): string {
@@ -279,13 +279,13 @@ export function toClarityWord(input: string, syllables: number): string {
   const cmu = lookupPronunciation(input);
   const best = (syllables === 2 ? shortRootCandidates(cmu) : longRootCandidates(cmu))[0];
   if (!best) {
-    throw new Error(`Could not build an Agalan root for "${input}"`);
+    throw new Error(`Could not build an Agazan root for "${input}"`);
   }
   return best;
 }
 
 /**
- * Assign a unique Agalan root: the best free pronunciation candidate
+ * Assign a unique Agazan root: the best free pronunciation candidate
  * (five-letter roots before three-letter ones).
  */
 export function toUniqueClarityWord(input: string, usedRoots: Set<string>): string {
@@ -297,6 +297,6 @@ export function toUniqueClarityWord(input: string, usedRoots: Set<string>): stri
   }
 
   throw new Error(
-    `Could not assign unique Agalan root for "${input}" within ${MAX_ROOT_LENGTH} letters`,
+    `Could not assign unique Agazan root for "${input}" within ${MAX_ROOT_LENGTH} letters`,
   );
 }

@@ -1,6 +1,6 @@
 # Grammar doc wording and voice
 
-Wording policies for editors writing learner-facing Agalan grammar pages under **`docs/grammar/`**. For what those pages should teach and how to organize the material, see [grammar-docs.md](grammar-docs.md). Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/`; this page is private editor guidance.
+Wording policies for editors writing learner-facing Agazan grammar pages under **`docs/grammar/`**. For what those pages should teach and how to organize the material, see [grammar-docs.md](grammar-docs.md). Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/`; this page is private editor guidance.
 
 ## Punctuation
 
@@ -8,12 +8,12 @@ Prefer commas, colons, parentheses, or separate sentences over em dashes.
 
 ## Voice and length
 
-- Address the learner in second person (“use **-r** when…”, “prefer names when…”). That *you* is English pedagogy — not Agalan **`ohe`**.
+- Address the learner in second person (“use **-r** when…”, “prefer names when…”). That *you* is English pedagogy — not Agazan **`ohe`**.
 - Teaching stages do not use maintainer *we* (“we now write…”) or author *I*. Author *I* is allowed only on signed non-teaching prose in this folder (acknowledgments; the purpose / limits essay), not on rule pages.
-- One idea per H2/H3. On a **new job**, the first paragraph should be one **complete** explanation: English job, Agalan shape, and what that lets the learner do ([explain before you slogan](#explain-before-you-slogan)). That is the same bar as the [easy-to-use feature criterion](../grammar/why-agelan.md#criterion-for-features) (roughly one paragraph plus a couple of examples), not a one-sentence aphorism. A later-stage H3 that only finishes a series may be a short pointer plus a table ([later-stage shape](grammar-docs.md#later-stage-shape)).
+- One idea per H2/H3. On a **new job**, the first paragraph should be one **complete** explanation: English job, Agazan shape, and what that lets the learner do ([explain before you slogan](#explain-before-you-slogan)). That is the same bar as the [easy-to-use feature criterion](../grammar/why-agazan.md#criterion-for-features) (roughly one paragraph plus a couple of examples), not a one-sentence aphorism. A later-stage H3 that only finishes a series may be a short pointer plus a table ([later-stage shape](grammar-docs.md#later-stage-shape)).
 - Prefer short paragraphs plus a table over a wall of prose.
-- Bold sparingly; put Agalan forms in backticks (`yal`, **-r**, `/ɡ/`), not italics. A heading that spells a content root pins an English `{#id}` ([retie-safe writing](grammar-docs.md#retie-safe-writing)).
-- Always call the language **Agalan**. Community / project URLs that still use a legacy host path are fine when they are the real link; do not “fix” them in learner prose.
+- Bold sparingly; put Agazan forms in backticks (`yal`, **-r**, `/ɡ/`), not italics. A heading that spells a content root pins an English `{#id}` ([retie-safe writing](grammar-docs.md#retie-safe-writing)).
+- Always call the language **Agazan**. Community / project URLs that still use a legacy host path are fine when they are the real link; do not “fix” them in learner prose.
 
 ## Explain before you slogan
 <a id="explain-before-you-slogan"></a>
@@ -23,7 +23,7 @@ Brevity means **no filler**, not **maximum claims per clause**. Conciseness must
 **Teach in this order inside the lead** (same as [Teach in this order](grammar-docs.md#teach-in-this-order), enforced inside the first paragraph):
 
 1. **English job** — what the learner is trying to say, in school-grammar English.
-2. **Agalan shape** — which letter, ending, or slot does that job, and where it sits.
+2. **Agazan shape** — which letter, ending, or slot does that job, and where it sits.
 3. **Consequence** — what they may now do that English does not (reordering, omitting a word, attaching a clause).
 4. **Cue last** — letter puns, emoji scenes, and [English pictures](#unpack-english-pictures) are **after the rule**, never the definition.
 
@@ -43,7 +43,7 @@ Do not merge (1)–(3) into a copula slogan (*X is Y*) or a packed imperative (*
 
 Do **not** pad with throat-clearing (“In this section we will…”, “It is important to note…”). Extra sentences must add **mechanism or consequence**, not warmth.
 
-Tables may stay telegraphic (**Agalan · Use · English · Same root as · Cue**). Running prose may not.
+Tables may stay telegraphic (**Agazan · Use · English · Same root as · Cue**). Running prose may not.
 
 ### Unpack English pictures
 <a id="unpack-english-pictures"></a>
@@ -60,7 +60,7 @@ Do **not** let the picture stand in for the contrast. Cover the image words: the
 
 **Test (cover the picture):** delete the metaphor nouns. Could they still restate the split? If not, unpack first.
 
-Allowed: published-root scenes in **Cue**; [conceptual metaphors](../grammar/why-agelan.md#conceptual-metaphors) after the job is named; one short `(cue: …)` after the plain rule.
+Allowed: published-root scenes in **Cue**; [conceptual metaphors](../grammar/why-agazan.md#conceptual-metaphors) after the job is named; one short `(cue: …)` after the plain rule.
 
 ### House shorthand needs a first-use gloss
 <a id="house-shorthand"></a>

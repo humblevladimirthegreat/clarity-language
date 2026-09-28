@@ -1,5 +1,5 @@
 /**
- * Morph gloss → Agalan ([glosses.md § Round trip](../../docs/meta/glosses.md#round-trip)).
+ * Morph gloss → Agazan ([glosses.md § Round trip](../../docs/meta/glosses.md#round-trip)).
  *
  * Leaves resolve through an index of glossed word forms (every published root
  * and compound under each role letter and ending, the closed join / hook
@@ -278,7 +278,7 @@ function assemble(nodes: Node[], index: GlossIndex, tables: ClassifyTables, name
     if (node.t === "leaf") {
       const quoted = unquote(node.text);
       const alts = quoted !== undefined ? [quoted] : leafCandidates(node.text, index, named);
-      if (alts.length === 0) throw new Error(`no Agalan form glosses as ${node.text}`);
+      if (alts.length === 0) throw new Error(`no Agazan form glosses as ${node.text}`);
       out.push({ alts });
       continue;
     }
@@ -369,10 +369,10 @@ function resolve(pieces: Piece[], tables: ClassifyTables, finish: (words: string
 }
 
 /**
- * Rebuild Agalan from a morph gloss line. Throws when no form sequence
+ * Rebuild Agazan from a morph gloss line. Throws when no form sequence
  * re-glosses to exactly this line (a non-invertible gloss).
  */
-export function glossToAgalan(gloss: string, tables: ClassifyTables, index: GlossIndex): string {
+export function glossToAgazan(gloss: string, tables: ClassifyTables, index: GlossIndex): string {
   const target = normalizeMorphLine(gloss);
   const pieces = assemble(new GlossReader(target).seq(false), index, tables);
   return resolve(pieces, tables, (w) => w, target)[0]!;

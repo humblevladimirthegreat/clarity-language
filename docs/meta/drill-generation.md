@@ -1,6 +1,6 @@
 # Generate translation drills
 
-Executable editor policy: add end-of-stage Eng ↔ Agalan checkpoints to learner grammar pages without using **morphology** the learner has not been taught. Checkpoint **content** roots follow the [setting](translation-exercises.md#checkpoint-setting).
+Executable editor policy: add end-of-stage Eng ↔ Agazan checkpoints to learner grammar pages without using **morphology** the learner has not been taught. Checkpoint **content** roots follow the [setting](translation-exercises.md#checkpoint-setting).
 
 **How to invoke.** Point here and name a grammar file (or one stage). No extra prompt is required:
 
@@ -90,7 +90,7 @@ Anchors:
 | Intermediate | `<a id="translation-practice-intermediate"></a>` |
 | Advanced | `<a id="translation-practice-advanced"></a>` |
 
-Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Next line: **Setting:** one place or occasion. Put **Roots used here** once as the English / Agalan table for **this setting** (house names + setting content), using that template’s caption (later banks do not repeat the How-to-learn column legend; **Same root as** warning only when that column is present). Learner **Agalan** cells are [citations](translation-exercises.md#template) by default (`odogal`, not a bank stem `odoga`), or the inflected form the row teaches (`vahahal` *see*). House-person **English** is *Azawan* / *Alahen* / *Ahaben*, not `*grace* (name **Azawan**)`. Pick a setting **not already named** in [settings](#settings) ([unique globally](translation-exercises.md#checkpoint-setting)); write the same phrase into this file’s cell when you replace. Teaching examples stay on the [example root bank](#root-bank); do not rewrite them to match the drill. Numbered items in each direction **climb in tension**.
+Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Next line: **Setting:** one place or occasion. Put **Roots used here** once as the English / Agazan table for **this setting** (house names + setting content), using that template’s caption (later banks do not repeat the How-to-learn column legend; **Same root as** warning only when that column is present). Learner **Agazan** cells are [citations](translation-exercises.md#template) by default (`odogal`, not a bank stem `odoga`), or the inflected form the row teaches (`vahahal` *see*). House-person **English** is *Azawan* / *Alahen* / *Ahaben*, not `*grace* (name **Azawan**)`. Pick a setting **not already named** in [settings](#settings) ([unique globally](translation-exercises.md#checkpoint-setting)); write the same phrase into this file’s cell when you replace. Teaching examples stay on the [example root bank](#root-bank); do not rewrite them to match the drill. Numbered items in each direction **climb in tension**.
 
 | Band kind | Items per direction |
 |-----------|---------------------|
@@ -98,7 +98,7 @@ Follow the [template](translation-exercises.md#template). Lead: *Short drills fo
 | Intermediate, productive | **6–8** |
 | Advanced, or a thin generate row | **4–6** |
 
-Both directions. Spoilers = Agalan or **loose** free English plus a visible morph line in the spoiler ([translation-exercises.md](translation-exercises.md#template)). Omit recoverable **`yal`**. House names in English prompts (*Azawan waits*). Test the decision this stage taught; package it in the setting, not as a clone of the walk/sleep teach line ([principles](translation-exercises.md#principles)).
+Both directions. Spoilers = Agazan or **loose** free English plus a visible morph line in the spoiler ([translation-exercises.md](translation-exercises.md#template)). Omit recoverable **`yal`**. House names in English prompts (*Azawan waits*). Test the decision this stage taught; package it in the setting, not as a clone of the walk/sleep teach line ([principles](translation-exercises.md#principles)).
 
 ### 6. Self-check, then lint
 
@@ -149,7 +149,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 
 | File | Band | Setting |
 |------|------|---------|
-| `why-agelan.md` | — | — |
+| `why-agazan.md` | — | — |
 | `introduction.md` | — | — |
 | `index.md` | — | — |
 | `lexicon.md` | — | — |
@@ -222,7 +222,7 @@ Default people: [house cast](grammar-docs.md#house-cast) — `zazawan` / `zalahe
 
 **This table is for worked examples** on grammar pages (and for morph leak checks when a teach line uses these stems). **Checkpoints do not default to it.** Checkpoint content comes from the [setting](translation-exercises.md#checkpoint-setting) plus house names.
 
-Tokens here are **stems for matching** (path allowlist / leak checks). Learner **Roots used here** cells on a checkpoint use [citations or the inflected form the row teaches](grammar-docs.md#citation-in-tables). Do not copy `(**-m**)` from this **Sense** column into learner **English**. Checkpoint **English** is the uninflected published lemma for that cell (literal, metaphor, or packed role English); inflected drill prompts (*running*) are fine. When English is not the citation kind, the Agalan cell is the in-clause word: *see* → `vahahal` / `` `ahahal` *eye* ``; *sit* → `vehahel` / `` `ehahel` *chair* ``; *tell* → `vezebel` / `` `ezebel` *speech* ``; *therefore* → `xezadam` / `` `ezadal` *east* ``; *however* → `xazel`; *although* → `hazem` (NP *despite* is the same `/h/` word + `/b/` noun); *so-that* → `hagom` (NP intended *for* is the same `/h/` word + `/b/` noun); *meanwhile* → `xagagal`; *haste* → `hadehom` / `` `adehol` *dash* ``; *quietude* → `halahom`; *volume* → `wagawam`; *topic* → `hahehol`. *because* / *inside* already list the `/h/` word (`theram`, `hegegam`). Do not inflect a row whose English is still the citation kind (`*dog*` stays `odogal`; *next clause* stays `odol`).
+Tokens here are **stems for matching** (path allowlist / leak checks). Learner **Roots used here** cells on a checkpoint use [citations or the inflected form the row teaches](grammar-docs.md#citation-in-tables). Do not copy `(**-m**)` from this **Sense** column into learner **English**. Checkpoint **English** is the uninflected published lemma for that cell (literal, metaphor, or packed role English); inflected drill prompts (*running*) are fine. When English is not the citation kind, the Agazan cell is the in-clause word: *see* → `vahahal` / `` `ahahal` *eye* ``; *sit* → `vehahel` / `` `ehahel` *chair* ``; *tell* → `vezebel` / `` `ezebel` *speech* ``; *therefore* → `xezadam` / `` `ezadal` *east* ``; *however* → `xazel`; *although* → `hazem` (NP *despite* is the same `/h/` word + `/b/` noun); *so-that* → `hagom` (NP intended *for* is the same `/h/` word + `/b/` noun); *meanwhile* → `xagagal`; *haste* → `hadehom` / `` `adehol` *dash* ``; *quietude* → `halahom`; *volume* → `wagawam`; *topic* → `hahehol`. *because* / *inside* already list the `/h/` word (`theram`, `hegegam`). Do not inflect a row whose English is still the citation kind (`*dog*` stays `odogal`; *next clause* stays `odol`).
 
 | Root | Sense in examples |
 |------|-------------------|
@@ -263,7 +263,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 
 | Path | File | Status | Introduces (test these) | Sibling OK / notes |
 |------|------|--------|-------------------------|--------------------|
-| — | `why-agelan.md` | skip | — | orientation |
+| — | `why-agazan.md` | skip | — | orientation |
 | — | `introduction.md` | skip | — | orientation |
 | 3 | `phonology.md` | skip | — | not translation |
 | 4 | `word-endings.md` | **exists** | Choose **-l** vs **-m** vs **-n** on a **citation** (prefix-less); named person vs kind vs metaphor; **greeting** named citation with period (`azawan.`) | No sentences with role letters. No **-r**. Pointers to **-x** / **`gl-`**: do **not** make those the item. No vocative `/y/` |

@@ -2,15 +2,15 @@
  * Echo metric, Step 2 (docs/proposals/echo-metric.md): pronunciation data.
  *
  * Looks up each published `concrete` label in the CMU Pronouncing Dictionary (first variant),
- * maps the phonemes to Agalan letters, and writes:
- *  - tmp/echo-pron/pron.csv: emoji, concrete, lookup word(s), CMU phonemes, Agalan sound string
+ * maps the phonemes to Agazan letters, and writes:
+ *  - tmp/echo-pron/pron.csv: emoji, concrete, lookup word(s), CMU phonemes, Agazan sound string
  *  - tmp/echo-pron/report.md: coverage, labels missing from CMU, hyphen-only mismatches
  * Downloads cmudict into tmp/ on first run. With --write, respells `concrete` labels whose only
  * difference from a CMU entry is a hyphen (hot-dog ↔ hotdog) in data/lexicon-published.csv.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { loadCmu } from '../src/cmu-dict.ts';
-import { toAgalan } from './echo-pronunciation-map.ts';
+import { toAgazan } from './echo-pronunciation-map.ts';
 
 const CMU_FILE = 'tmp/cmudict.dict';
 /** Pinned cmudict commit, so reruns give the same pronunciations. */
@@ -57,7 +57,7 @@ const lines = text.split('\n');
 const header = parseCsvLine(lines[0]);
 const iEmoji = header.indexOf('emoji'), iConcrete = header.indexOf('concrete');
 
-type Row = { emoji: string; label: string; lookup: string; phones: string; agalan: string; status: string };
+type Row = { emoji: string; label: string; lookup: string; phones: string; agazan: string; status: string };
 const rows: Row[] = [];
 const hyphenFixes: { line: number; from: string; to: string }[] = [];
 
@@ -95,8 +95,8 @@ for (let n = 1; n < lines.length; n++) {
       status = 'parts';
     }
   }
-  if (!phones) { rows.push({ emoji, label, lookup: '', phones: '', agalan: '', status: 'missing' }); continue; }
-  rows.push({ emoji, label, lookup, phones: phones.join(' '), agalan: toAgalan(phones), status });
+  if (!phones) { rows.push({ emoji, label, lookup: '', phones: '', agazan: '', status: 'missing' }); continue; }
+  rows.push({ emoji, label, lookup, phones: phones.join(' '), agazan: toAgazan(phones), status });
 }
 
 if (WRITE && hyphenFixes.length) {
@@ -110,8 +110,8 @@ if (WRITE && hyphenFixes.length) {
 
 mkdirSync(OUT, { recursive: true });
 const esc = (s: string) => (/[",]/.test(s) ? `"${s.replaceAll('"', '""')}"` : s);
-writeFileSync(`${OUT}/pron.csv`, ['emoji,concrete,lookup,cmu,agalan,status',
-  ...rows.map((r) => [r.emoji, r.label, r.lookup, r.phones, r.agalan, r.status].map(esc).join(','))].join('\n') + '\n');
+writeFileSync(`${OUT}/pron.csv`, ['emoji,concrete,lookup,cmu,agazan,status',
+  ...rows.map((r) => [r.emoji, r.label, r.lookup, r.phones, r.agazan, r.status].map(esc).join(','))].join('\n') + '\n');
 
 const count = (s: string) => rows.filter((r) => r.status === s).length;
 const missing = rows.filter((r) => r.status === 'missing');
@@ -122,7 +122,7 @@ writeFileSync(`${OUT}/report.md`, [
   `- hyphen-only fix${WRITE ? ' (applied)' : ' (run with --write)'}: ${count('hyphen-fix')}`,
   `- hyphenated, looked up by parts: ${count('parts')}`,
   `- missing: ${missing.length}`, '',
-  'Agalan string: capital = primary-stress vowel, `·` = unstressed AH0.', '',
+  'Agazan string: capital = primary-stress vowel, `·` = unstressed AH0.', '',
   '## Hyphen-only fixes', '', ...hyphenFixes.map((f) => `- ${f.from} → ${f.to}`), '',
   '## Hyphenated, looked up by parts', '', ...rows.filter((r) => r.status === 'parts').map((r) => `- ${r.emoji} ${r.label}`), '',
   '## Missing from CMU (find a label that is in CMU)', '', ...missing.map((r) => `- ${r.emoji} ${r.label}`), '',
