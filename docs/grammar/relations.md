@@ -4,78 +4,78 @@ How an extra noun completes a **relation** that still needs a root on `/h/` or `
 
 ## Beginner {#beginner}
 
-You already write a hosted pair for *like Azawan* (`hurorom bazawan`). The same shape names other English preposition jobs that keep a **root**: pick the relation root, then `/b/`. `/w/` that grades the relation sits immediately before the `/h/` or `/ɡ/` word.
+You already write a hosted pair for *like Azawan* (`hemum bazawan`). The same shape names other English preposition jobs that keep a **root**: pick the relation root, then `/b/`. `/w/` that grades the relation sits immediately before the `/h/` or `/ɡ/` word.
 
 <a id="similative"></a>
 <a id="like"></a>
 
-When English says something **resembles** a model (*walks like a duck*, *a house like Azawan’s*), keep the same hosted pair as on the [clause](clause.md#extra-nouns) page. The relation word is **`hurorom`**. Put the model in `/b/` right after it. Optional `/w/` sits immediately before the relation word. The event or thing stays real; only the match is to that model. (cue: 🪞 *mirror*: you see a reflection, not the same object twice)
+When English says something **resembles** a model (*walks like a duck*, *a house like Azawan’s*), keep the same hosted pair as on the [clause](clause.md#extra-nouns) page. The relation word is **`hemum`**. Put the model in `/b/` right after it. Optional `/w/` sits immediately before the relation word. The event or thing stays real; only the match is to that model. (cue: 🪞 *mirror*: you see a reflection, not the same object twice)
 
-> `zazawan hurorom budugul vawalal.`
+> `zazawan hemum badagul vowogal.`
 >
 > z-Azawan | [h-like | b-duck] | v-walk
 >
 > "Azawan walks like a duck."
 
-> `zazawan welem hurorom budugul vawalal.`
+> `zazawan welavam hemum badagul vowogal.`
 >
 > z-Azawan | [[w-very | h-like] | b-duck] | v-walk
 >
 > "Azawan walks very like a duck."
 
-On a noun, the same root is **`gurorom`**:
+On a noun, the same root is **`gemum`**:
 
-> `zohohul gurorom bazawan.`
+> `zahazal gemum bazawan.`
 >
 > z-house | [g-like | b-Azawan]
 >
 > "A house like Azawan’s."
 
-Ordinary `zurorol` is still *a mirror*.
+Ordinary `zemul` is still *a mirror*.
 
-**Compare with:** unhosted `/b/` is still the recipient. *In a house* is a [hook](hooks.md#extra-noun) (`al bohohul`). *Using* a tool is also a [hook](hooks.md#extra-noun). Two labels for **one** person is not this pair. *As happy as* names a shared height, not resemblance. *As if they walk* takes the walk off the real tally; here the walk stays real.
+**Compare with:** unhosted `/b/` is still the recipient. *In a house* is a [hook](hooks.md#extra-noun) (`al bahazal`). *Using* a tool is also a [hook](hooks.md#extra-noun). Two labels for **ovavo** person is not this pair. *As happy as* names a shared height, not resemblance. *As if they walk* takes the walk off the real tally; here the walk stays real.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hurorom` / `gurorom`** | resemblance to a model | *like* | `urorol` *mirror* | 🪞: the image is of the model |
+| **`hemum` / `gemum`** | resemblance to a model | *like* | `emul` *mirror* | 🪞: the image is of the model |
 
 ### Exchange (*for*) {#exchange}
 <a id="in-exchange-for"></a>
 
-When English names the **other side of a swap** (*a book for a hammer*), keep the same hosted pair as *like*. The relation word is **`huhanem`**. Put what is swapped against the theme in `/b/` right after it. That extra noun is the consideration, not who receives the theme. (cue: 💱 *currency-exchange*: the arrows swap one thing for another; `/b/` is the other side)
+When English names the **other side of a swap** (*a book for a hammer*), keep the same hosted pair as *like*. The relation word is **`hohem`**. Put what is swapped against the theme in `/b/` right after it. That extra noun is the consideration, not who receives the theme. (cue: 💱 *currency-exchange*: the arrows swap one thing for another; `/b/` is the other side)
 
-> `zazawan dabogol huhanem bahamel vuhanem.`
+> `zazawan dubugal hohem bahavel vohem.`
 >
 > z-Azawan | d-book | [h-in-exchange-for | b-hammer] | v-convertibility
 >
 > "Azawan trades a book for a hammer."
 
-On a noun, the same root is **`guhanem`** (`dabogol guhanem bahamel` *a book for a hammer*). Ordinary `zuhanel` is still *a currency exchange*. Ordinary `vuhanem` is still *to trade* (the convertibility act).
+On a noun, the same root is **`gohem`** (`dubugal gohem bahavel` *a book for a hammer*). Ordinary `zohel` is still *a currency exchange*. Ordinary `vohem` is still *to trade* (the convertibility act).
 
 **Compare with:** unhosted `/b/` is still the recipient (*a book for Ululon* as who gets it). *Using* a tool is a [hook](hooks.md#extra-noun). *Like a duck* is [simile](#similative). *In a house* is a hook (`al`).
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`huhanem` / `guhanem`** | consideration / countervalue | *in exchange for* | `uhanel` *currency-exchange* | 💱: the arrows swap one side for the other |
+| **`hohem` / `gohem`** | consideration / countervalue | *in exchange for* | `ohel` *currency-exchange* | 💱: the arrows swap one side for the other |
 
 ### Proxy (*on behalf of*) {#proxy}
 <a id="on-behalf-of"></a>
 
-When English says someone **acts as another person’s agent** (*tells on behalf of Ululon*), keep the same hosted pair as [*like*](#similative). The relation word is **`hudagam`**. Put that person in `/b/` right after it. The subject still does the act; `/b/` is whose agency they use, not who hears the telling. (cue: 🪪 *id*: the card stands as an authorized face; `/b/` is that person)
+When English says someone **acts as another person’s agent** (*tells on behalf of Ululon*), keep the same hosted pair as [*like*](#similative). The relation word is **`hadum`**. Put that person in `/b/` right after it. The subject still does the act; `/b/` is whose agency they use, not who hears the telling. (cue: 🪪 *id*: the card stands as an authorized face; `/b/` is that person)
 
-> `zazawan hudagam bululon vezehel.`
+> `zazawan hadum balahen vezebel.`
 >
 > z-Azawan | [h-on-behalf-of | b-Ululon] | v-tell
 >
 > "Azawan tells on behalf of Ululon."
 
-A recipient may follow a finished pair: `zazawan hudagam bululon buhubun vezehel` (*tells Uhubun on behalf of Ululon*). On a noun, the same root is **`gudagam`** (`dabogol gudagam bululon` *a book on behalf of Ululon*). Ordinary `zudagal` is still *an id*.
+A recipient may follow a finished pair: `zazawan hadum balahen bahaben vezebel` (*tells Uhubun on behalf of Ululon*). On a noun, the same root is **`gadum`** (`dubugal gadum balahen` *a book on behalf of Ululon*). Ordinary `zadul` is still *an id*.
 
 **Compare with:** unhosted `/b/` is still who hears the telling. *Using* a tool is a [hook](hooks.md#extra-noun). *A book for a hammer* as a swap is [exchange](#exchange). *In a house* is a hook (`al`). *Exclusively for* is a [join-relation](join-across-roles.md#join-relations), not this pair.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hudagam` / `gudagam`** | authorized agency | *on behalf of* | `udagal` *id* | 🪪: the card stands as their face |
+| **`hadum` / `gadum`** | authorized agency | *on behalf of* | `adul` *id* | 🪪: the card stands as their face |
 
 
 
@@ -90,25 +90,25 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *book* | `abogol` | | |
-| *hammer* | `ahamel` | | |
-| *duck* | `udugul` | | |
-| *money* | `onenol` | | |
-| *write* | `vuwurul` | `uwurul` *write* | ✍️: putting words on the page |
-| *walk* | `vawalal` | | |
-| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
-| *like* | `hurorom` | `urorol` *mirror* | 🪞: the image is of the model |
-| *in-exchange-for* | `huhanem` | `uhanel` *currency-exchange* | 💱: the arrows swap one side for the other |
-| *on-behalf-of* | `hudagam` | `udagal` *id* | 🪪: the card stands as their face |
+| *Ululon* | `alahen` | | |
+| *Uhubun* | `ahaben` | | |
+| *book* | `ubugal` | | |
+| *hammer* | `ahavel` | | |
+| *duck* | `adagul` | | |
+| *money* | `omol` | | |
+| *write* | `varadal` | `aradal` *write* | ✍️: putting words on the page |
+| *walk* | `vowogal` | | |
+| *tell* | `vezebel` | `ezebel` *speech* | 💬: saying it to someone |
+| *like* | `hemum` | `emul` *mirror* | 🪞: the image is of the model |
+| *in-exchange-for* | `hohem` | `ohel` *currency-exchange* | 💱: the arrows swap one side for the other |
+| *on-behalf-of* | `hadum` | `adul` *id* | 🪪: the card stands as their face |
 
 #### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Azawan walks like a duck.*
 
 ::: details Show answer
-`zazawan hurorom budugul vawalal.`
+`zazawan hemum badagul vowogal.`
 
 z-Azawan | [h-like | b-duck] | v-walk
 :::
@@ -116,7 +116,7 @@ z-Azawan | [h-like | b-duck] | v-walk
 **2.** *Azawan writes in exchange for money.*
 
 ::: details Show answer
-`zazawan vuwurul huhanem bonenol.`
+`zazawan varadal hohem bomol.`
 
 z-Azawan | v-write | [h-in-exchange-for | b-money]
 :::
@@ -124,7 +124,7 @@ z-Azawan | v-write | [h-in-exchange-for | b-money]
 **3.** *Azawan tells on behalf of Ululon.*
 
 ::: details Show answer
-`zazawan hudagam bululon vezehel.`
+`zazawan hadum balahen vezebel.`
 
 z-Azawan | [h-on-behalf-of | b-Ululon] | v-tell
 :::
@@ -132,14 +132,14 @@ z-Azawan | [h-on-behalf-of | b-Ululon] | v-tell
 **4.** *A hammer like Azawan’s.*
 
 ::: details Show answer
-`zahamel gurorom bazawan.`
+`zahavel gemum bazawan.`
 
 z-hammer | [g-like | b-Azawan]
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
 
-**1.** `zuhubun hurorom budugul vawalal.`
+**1.** `zahaben hemum badagul vowogal.`
 
 ::: details Show answer
 
@@ -148,7 +148,7 @@ z-Uhubun | [h-like | b-duck] | v-walk
 *Uhubun walks like a duck.*
 :::
 
-**2.** `zuhubun hudagam bazawan vuwurul.`
+**2.** `zahaben hadum bazawan varadal.`
 
 ::: details Show answer
 
@@ -157,7 +157,7 @@ z-Uhubun | [h-on-behalf-of | b-Azawan] | v-write
 *Uhubun writes on behalf of Azawan.*
 :::
 
-**3.** `zululon vuwurul huhanem bonenol.`
+**3.** `zalahen varadal hohem bomol.`
 
 ::: details Show answer
 
@@ -166,7 +166,7 @@ z-Ululon | v-write | [h-in-exchange-for | b-money]
 *Ululon writes in exchange for money.*
 :::
 
-**4.** `zazawan hudagam bululon buhubun vezehel.`
+**4.** `zazawan hadum balahen bahaben vezebel.`
 
 ::: details Show answer
 
@@ -176,7 +176,7 @@ z-Azawan | [h-on-behalf-of | b-Ululon] | b-Uhubun | v-tell
 :::
 
 
-**5.** `zabogol gurorom buhubun.`
+**5.** `zubugal gemum bahaben.`
 
 ::: details Show answer
 
@@ -191,19 +191,19 @@ z-book | [g-like | b-Uhubun]
 
 Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extra-noun hooks](hooks.md#extra-noun-intermediate). Several hooks on one clause are several extras (*from* one landmark *toward* another). Write the **source** first, then the **goal**.
 
-> `zazawan ul bazadol vawalal oel badadul.`
+> `zazawan ul bezedel vowogal oel bedehal.`
 >
 > z-Azawan | [from | b-station] | v-walk | [toward | b-train]
 >
 > "Azawan walks from a station toward a train."
 
-> `zazawan ul bohohul vawalal ol bazadol.`
+> `zazawan ul bahazal vowogal ol bezedel.`
 >
 > z-Azawan | [from | b-house] | v-walk | [at | b-station]
 >
 > "Azawan walks from a house to a station."
 
-> `zululon ual bohohul vurunul al badadul.`
+> `zalahen ual bahazal varahal al bedehal.`
 >
 > z-Ululon | [out-of | b-house] | v-run | [in | b-train]
 >
@@ -211,7 +211,7 @@ Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extr
 
 *The guard in a bank* uses the same hook on a noun, not a [*who*-clause](dependents.md#which-noun):
 
-> `zugugal al banabal vajul.`
+> `zagadul al babagul vehahel.`
 >
 > z-guard | [in | b-bank] | v-sit
 >
@@ -219,9 +219,9 @@ Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extr
 
 <a id="spatial-path"></a>
 
-*Between* still needs a **root**: the figure sits in the layer of **two** landmarks. Keep hosted **`hazanum`** (or **`gazanum`** on a noun) and put both landmarks as a [join](joins.md) in `/b/`. (cue: 🥪 *sandwich*: the filling sits between two sides)
+*Between* still needs a **root**: the figure sits in the layer of **two** landmarks. Keep hosted **`hazam`** (or **`gazam`** on a noun) and put both landmarks as a [join](joins.md) in `/b/`. (cue: 🥪 *sandwich*: the filling sits between two sides)
 
-> `zululon vajul hazanum badadul bazadol bal.`
+> `zalahen vehahel hazam bedehal bezedel bal.`
 >
 > z-Ululon | v-sit | [h-between | [b-train | b-station | b-and]]
 >
@@ -229,17 +229,17 @@ Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extr
 
 The `/b/` after the host is **one slot**. A join (`bal`) or a [plural](plurality.md) fills it whole; the landmarks do not need a slot each. The same holds on a noun:
 
-> `zazawan gazanum badadul bazadol bal vajul.`
+> `zazawan gazam bedehal bezedel bal vehahel.`
 >
 > [z-Azawan | [g-between | [b-train | b-station | b-and]]] | v-sit
 >
 > "Azawan, between a train and a station, sits."
 
-Ordinary `zazanul` is still *a sandwich*.
+Ordinary `zazal` is still *a sandwich*.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hazanum` / `gazanum`** | figure in the layer of two landmarks | *between* | `azanul` *sandwich* | 🥪: the filling sits between two sides |
+| **`hazam` / `gazam`** | figure in the layer of two landmarks | *between* | `azal` *sandwich* | 🥪: the filling sits between two sides |
 
 **Compare with:** unhosted `/b/` is still the recipient. Numeric *from 3 to 5* is a [range](numbers-applied.md#ranges). *Like* is [simile](#similative). *For a hammer* as a swap is [exchange](#exchange). *On behalf of Ululon* is [proxy](#proxy). English *of* that is not a place is [of relations](#of-relations).
 
@@ -248,42 +248,42 @@ Ordinary `zazanul` is still *a sandwich*.
 
 English *of* also names how one noun sits toward another (*a hand of Ululon*, *a teapot of tea*, *a house of wood*, *Ululon from the city*). Keep the same hosted pair as *like*: relation on `/ɡ/` (or `/h/` on the event), extra noun in `/b/` right after it. `/b/` is the *of*-complement (the whole, the filling, the stuff, or the origin), not a recipient. (cue: each root’s picture is in **Cue**)
 
-> `zazawan dahanal gobonem bululon vejel.`
+> `zazawan dahadal gobum balahen vahahal.`
 >
 > z-Azawan | [d-hand | [g-part-of | b-Ululon]] | v-see
 >
 > "Azawan sees a hand of Ululon."
 
-> `zazawan dedebol gajaram badedal vejel.`
+> `zazawan dedebul gaham bedehel vahahal.`
 >
 > z-Azawan | [d-teapot | [g-contents | b-tea]] | v-see
 >
 > "Azawan sees a teapot of tea."
 
-> `zazawan dohohul gowodom bowodol vejel.`
+> `zazawan dahazal guwom buwol vahahal.`
 >
 > z-Azawan | [d-house | [g-material | b-wood]] | v-see
 >
 > "Azawan sees a house of wood."
 
-> `zululon gugunom bolunel vawalal.`
+> `zalahen gagem bezagal vowogal.`
 >
 > [z-Ululon | [g-origin | b-skyline]] | v-walk
 >
 > "Ululon of the city walks."
 
-On an event, the same roots are `/h/` (`zazawan vagaral howodom bowodol` *Azawan crafts of wood*; `zululon vawalal hugunom bolunel` *Ululon walks, originating from the city*). The same roots stay ordinary pictures under other letters (`zobonel` *a bone*; `zajaral` *a jar*; `zowodol` *wood*; `zugunol` *a country*).
+On an event, the same roots are `/h/` (`zazawan vagugal huwom buwol` *Azawan crafts of wood*; `zalahen vowogal hagem bezagal` *Ululon walks, originating from the city*). The same roots stay ordinary pictures under other letters (`zobul` *a bovavo*; `zahal` *a jar*; `zuwol` *wood*; `zagel` *a country*).
 
-Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in* hook (`al`), not `gajaram`.
+Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in* hook (`al`), not `gaham`.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hobonem` / `gobonem`** | constitutive piece | *part of* | `obonel` *bone* | 🦴: the piece that holds the body’s shape |
-| **`hajaram` / `gajaram`** | filling of a vessel | *contents of* | `ajaral` *yar* | 🫙: the vessel named by what it stores |
-| **`howodom` / `gowodom`** | constitution | *made of* | `owodol` *wood* | 🪵: the stuff the thing is made of |
-| **`hugunom` / `gugunom`** | identity source / provenance | *from* (origin) | `ugunol` *country* | 🗾: a map of one country as where it comes from |
+| **`hobum` / `gobum`** | constitutive piece | *part of* | `obul` *bovavo* | 🦴: the piece that holds the body’s shape |
+| **`haham` / `gaham`** | filling of a vessel | *contents of* | `ahal` *yar* | 🫙: the vessel named by what it stores |
+| **`huwom` / `guwom`** | constitution | *made of* | `uwol` *wood* | 🪵: the stuff the thing is made of |
+| **`hagem` / `gagem`** | identity source / provenance | *from* (origin) | `agel` *country* | 🗾: a map of one country as where it comes from |
 
-**Compare with:** ownership is `goborum` + `/b/` ([joins](joins.md#scope-fence-p-join)). A [interests](interests.md) need on `/ɡ/` also means speaker possession. Place *in* is the hook `al`; path *from* is the hook `ul` ([locative relations](#locative-relations)). *A house like Azawan’s* is [simile](#similative) (`gurorom`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`guhanem`). Portion *of* a class is [percent](numbers-applied.md#percent-denominators). Associates are plural **-x**, not meronymy. Kind *origin* (`ROOTl#e-`) is [numeric derivation](numeric-derivation.md), not this token *from*.
+**Compare with:** ownership is `gegabem` + `/b/` ([joins](joins.md#scope-fence-p-join)). A [interests](interests.md) need on `/ɡ/` also means speaker possession. Place *in* is the hook `al`; path *from* is the hook `ul` ([locative relations](#locative-relations)). *A house like Azawan’s* is [simile](#similative) (`gemum`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`gohem`). Portion *of* a class is [percent](numbers-applied.md#percent-denominators). Associates are plural **-x**, not meronymy. Kind *origin* (`ROOTl#e-`) is [numeric derivation](numeric-derivation.md), not this token *from*.
 
 
 
@@ -291,27 +291,27 @@ Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in
 
 English *'s* also names a social tie (*Azawan's friend*, *Azawan's boss*). Put the root for the tie on `/ɡ/` with **-m** (the abstract sense), and put the other person in hosted `/b/` right after it, as with the *of* relations. `/b/` is the person the tie points to.
 
-> `zululon gamaram bazawan.`
+> `zalahen gemezem bazawan.`
 >
 > z-Ululon | [g-companionship | b-Azawan]
 >
 > "Ululon is Azawan's friend."
 
-> `zazawan dululon gowonom bazawan vejel.`
+> `zazawan dalahen gagawum bazawan vahahal.`
 >
 > z-Azawan | [d-Ululon | [g-leadership | b-Azawan]] | v-see
 >
 > "Azawan sees Ululon, Azawan's boss."
 
-Any root whose abstract sense is a tie works this way (`goholom` *partner of*, `gonogom` *bound to*). To name the other side of the tie without repeating anyone, use the [role compound](roles.md#role-compounds) with **`o`**: after `zululon gamaram bazawan`, `zoxamarar` is *the other party of that friendship* (Azawan).
+Any root whose abstract sense is a tie works this way (`gohoham` *partner of*, `gunem` *bound to*). To name the other side of the tie without repeating anyone, use the [role compound](roles.md#role-compounds) with **`o`**: after `zalahen gemezem bazawan`, `zoxemezer` is *the other party of that friendship* (Azawan).
 
 | Agalan | Use | English | Same root as |
 |--------|-----|---------|--------------|
-| **`gamaram`** + `/b/` | companion of `/b/` | *friend of* | `amaral` *Mrs Claus* |
-| **`gowonom`** + `/b/` | the one `/b/` answers to | *boss of* | `owonol` *crown* |
-| **`goholom`** + `/b/` | partner of `/b/` | *partner of* | `oholol` *holding hands* |
+| **`gemezem`** + `/b/` | companion of `/b/` | *friend of* | `emezel` *Mrs Claus* |
+| **`gagawum`** + `/b/` | the one `/b/` answers to | *boss of* | `agawul` *crown* |
+| **`gohoham`** + `/b/` | partner of `/b/` | *partner of* | `ohohal` *holding hands* |
 
-**Compare with:** kin uses generation numbers ([kin generations](numbers-applied.md#kin-generations)). Ownership is `goborum`. *Part of* is `gobonem`.
+**Compare with:** kin uses generation numbers ([kin generations](numbers-applied.md#kin-generations)). Ownership is `gegabem`. *Part of* is `gobum`.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -325,26 +325,26 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agalan |
 |---------|--------|
 | *Azawan* | `azawan` |
-| *Ululon* | `ululon` |
-| *Uhubun* | `uhubun` |
-| *train* | `adadul` |
-| *station* | `azadol` |
-| *chair* | `ajul` |
-| *house* | `ohohul` |
-| *sit* | `vajul` |
-| *stand* | `vadanal` |
-| *walk* | `vawalal` |
-| *run* | `vurunul` |
-| *between* | `hazanum` |
-| *wood* | `owodol` |
-| *material* | `gowodom` |
+| *Ululon* | `alahen` |
+| *Uhubun* | `ahaben` |
+| *train* | `edehal` |
+| *station* | `ezedel` |
+| *chair* | `ehahel` |
+| *house* | `ahazal` |
+| *sit* | `vehahel` |
+| *stand* | `vazadol` |
+| *walk* | `vowogal` |
+| *run* | `varahal` |
+| *between* | `hazam` |
+| *wood* | `uwol` |
+| *material* | `guwom` |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Azawan sits on a chair.*
 
 ::: details Show answer
-`zazawan vajul aol bajul.`
+`zazawan vehahel aol behahel.`
 
 z-Azawan | v-sit | [on | b-chair]
 :::
@@ -352,7 +352,7 @@ z-Azawan | v-sit | [on | b-chair]
 **2.** *Ululon walks from a station toward a train.*
 
 ::: details Show answer
-`zululon ul bazadol vawalal oel badadul.`
+`zalahen ul bezedel vowogal oel bedehal.`
 
 z-Ululon | [from | b-station] | v-walk | [toward | b-train]
 :::
@@ -360,7 +360,7 @@ z-Ululon | [from | b-station] | v-walk | [toward | b-train]
 **3.** *Uhubun sits between a train and a station.*
 
 ::: details Show answer
-`zuhubun vajul hazanum badadul bazadol bal.`
+`zahaben vehahel hazam bedehal bezedel bal.`
 
 z-Uhubun | v-sit | [h-between | [b-train | b-station | b-and]]
 :::
@@ -368,7 +368,7 @@ z-Uhubun | v-sit | [h-between | [b-train | b-station | b-and]]
 **4.** *Azawan runs out of a house into a train.*
 
 ::: details Show answer
-`zazawan ual bohohul vurunul al badadul.`
+`zazawan ual bahazal varahal al bedehal.`
 
 z-Azawan | [out-of | b-house] | v-run | [in | b-train]
 :::
@@ -376,14 +376,14 @@ z-Azawan | [out-of | b-house] | v-run | [in | b-train]
 **5.** *Uhubun sits on a chair made of wood.*
 
 ::: details Show answer
-`zuhubun vajul aol bajul gowodom bowodol.`
+`zahaben vehahel aol behahel guwom buwol.`
 
 z-Uhubun | v-sit | [on | [b-chair | [g-material | b-wood]]]
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
 
-**1.** `zuhubun vadanal ol bazadol.`
+**1.** `zahaben vazadol ol bezedel.`
 
 ::: details Show answer
 
@@ -392,7 +392,7 @@ z-Uhubun | v-stand | [at | b-station]
 *Uhubun stands at a station.*
 :::
 
-**2.** `zazawan vurunul ual badadul.`
+**2.** `zazawan varahal ual bedehal.`
 
 ::: details Show answer
 
@@ -401,7 +401,7 @@ z-Azawan | v-run | [out-of | b-train]
 *Azawan runs out of a train.*
 :::
 
-**3.** `zululon vawalal uol bazadol.`
+**3.** `zalahen vowogal uol bezedel.`
 
 ::: details Show answer
 
@@ -410,7 +410,7 @@ z-Ululon | v-walk | [through | b-station]
 *Ululon walks through a station.*
 :::
 
-**4.** `zululon ul bazadol vawalal ol badadul.`
+**4.** `zalahen ul bezedel vowogal ol bedehal.`
 
 ::: details Show answer
 
@@ -419,7 +419,7 @@ z-Ululon | [from | b-station] | v-walk | [at | b-train]
 *Ululon walks from a station to a train.*
 :::
 
-**5.** `zazawan gugunom bohohul vurunul.`
+**5.** `zazawan gagem bahazal varahal.`
 
 ::: details Show answer
 
@@ -436,81 +436,81 @@ z-Ululon | [from | b-station] | v-walk | [at | b-train]
 
 English *as of Friday*, *would*, *was going to*, and *if he had* mix **when the event sits** with **whose “now”** leftover, climate, plan, and forecast are scored against.
 
-Write a hosted pair for that second now. Asserted whose-now (a real dated line in the books) is **`helerem`**. Unasserted whose-now (a placeholder you are not claiming) is **`hobomam`**. Put the snapshot in `/b/` immediately after. The default with no pair is speech-now. (cue: 📒 *ledger* stamps a dated line; 🔖 *bookmark* holds the place without stamping)
+Write a hosted pair for that second now. Asserted whose-now (a real dated line in the books) is **`henum`**. Unasserted whose-now (a placeholder you are not claiming) is **`humum`**. Put the snapshot in `/b/` immediately after. The default with no pair is speech-now. (cue: 📒 *ledger* stamps a dated line; 🔖 *bookmark* holds the place without stamping)
 
-> `zululon thonenom helerem b_#22,7 vebarul.`
+> `zalahen thomom henum b_#22,7 vadebal.`
 >
 > z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 >
 > "As of 22 July, Ululon had still left."
 
-> `zazawan helerem b_#22,7 vajul al bohohul.`
+> `zazawan henum b_#22,7 vehahel al bahazal.`
 >
 > z-Azawan | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 >
 > "As of 22 July, Azawan is in a house." — the event is concurrent with that now
 
-A later `/x/` clause is a new host. To keep the same books, write the **same overlay** with **-r** and no `/b/` (`helerer` / `hobomar`). A new `/b/` replaces whose-now, including a switch of overlay. One host takes at most one *as-of* pair.
+A later `/x/` clause is a new host. To keep the same books, write the **same overlay** with **-r** and no `/b/` (`henur` / `humur`). A new `/b/` replaces whose-now, including a switch of overlay. One host takes at most one *as-of* pair.
 
-> `zululon thonenom helerem b_#22,7 vebarul. xazawan thonenom helerer vawalal.`
+> `zalahen thomom henum b_#22,7 vadebal. xazawan thomom henur vowogal.`
 >
 > z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | th-RESIDUE | h-as-of.ledger | v-walk
 >
 > "As of 22 July, Ululon had still left. Azawan had still walked — same books."
 
-`/h/` covers this clause. `/ɡ/` covers this noun (`gelerem` *the tab as of Friday*). `/w/` covers the `/ɡ/` adjective immediately after the pair (`welerem b_#22,7 gomonam`). `/h/`, `/ɡ/`, and `/w/` are different hosts, so a clause may carry a clause snapshot and an adjective snapshot at once. If the **verb** also scores against that now, the clause still needs `/h/` *as-of* (or resume).
+`/h/` covers this clause. `/ɡ/` covers this noun (`genum` *the tab as of Friday*). `/w/` covers the `/ɡ/` adjective immediately after the pair (`wenum b_#22,7 gamadam`). `/h/`, `/ɡ/`, and `/w/` are different hosts, so a clause may carry a clause snapshot and an adjective snapshot at once. If the **verb** also scores against that now, the clause still needs `/h/` *as-of* (or resume).
 
 `/b/` is a clock or date digit-string, an event noun, **`barl`** plus the next sentence (that sentence *is* whose-now; the pair stays last), or extra-noun **-r**. The *as-of* word already hosts the date: do not also write spare `h_#22,7` for the same snapshot. Bare `h_#…` stays event-when ([time](numbers-applied.md#time)). Clock / *before* / *after* may sit beside *as-of*.
 
-Do not put a bare person in `/b/` as “from Ululon’s now.” That is [proxy](#proxy) (`hudagam`). Prefer `helerem barl zululon vezehel`.
+Do not put a bare person in `/b/` as “from Ululon’s now.” That is [proxy](#proxy) (`hadum`). Prefer `henum barl zalahen vezebel`.
 
 Once whose-now is set, a [forecast](knowing.md#forecast) offset (`bral`) counts **after** that now, [PLAN](intention.md#plan-predict) is **from** that now, [RESIDUE](knowing.md#residue) leftover is on **that** tally, and [FORMER](knowing.md#former-climate) is not **that stretch’s** climate. A bare verb is **concurrent** with that now. [MAY](knowing.md#may), [DECISION](intention.md#decision), and [CAUSE](causation.md#cause) still evaluate from speech-now. Evidentials other than LIVE-at-snapshot are how *you* know at speech-now.
 
-> `zazawan zululon zel welerem b_#22,7 gomonam.`
+> `zazawan zalahen zel wenum b_#22,7 gamadam.`
 >
 > [z-Azawan | z-Ululon | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 >
 > "As of 22 July, Azawan is more challenging than Ululon." — `/w/` does not retarget the verb
 
-> `zonenol thonenom helerem bebarul.`
+> `zomol thomom henum badebal.`
 >
 > z-money | th-RESIDUE | [h-as-of.ledger | b-departure]
 >
 > "As of the leaving, the money still stood."
 
-> `zazawan helerem b_#22,7 hababam bebarul vajul al bohohul.`
+> `zazawan henum b_#22,7 habum badebal vehahel al bahazal.`
 >
 > z-Azawan | [h-as-of.ledger | b-_22,7] | [h-before | b-departure] | v-sit | [in | b-house]
 >
 > "As of 22 July, Azawan is in a house before the leaving." — books and event-when are different jobs
 
-> `zululon vawalal ol b_#22,7. xululon thonenom helerem b=_#22,7 vebarul.`
+> `zalahen vowogal ol b_#22,7. xalahen thomom henum b=_#22,7 vadebal.`
 >
 > z-Ululon | v-walk | [at | b-_22,7] . x-Ululon | th-RESIDUE | [h-as-of.ledger | b-←_22,7] | v-departure
 >
 > "Ululon walks on 22 July. As of that date, the leaving still stood."
 
-> `zululon thonenom vebarul helerem barl zululon vezehel.`
+> `zalahen thomom vadebal henum barl zalahen vezebel.`
 >
 > z-Ululon | th-RESIDUE | v-departure | [h-as-of.ledger | b-that-clause] | z-Ululon | v-tell
 >
 > "As of when Ululon told it, the departure still stood." — the telling sentence is whose-now, not leftover
 
-> `zululon thonenom helerem b_#22,7 vebarul. xazawan thabawam bral hobomam b_#23,7 vawalal.`
+> `zalahen thomom henum b_#22,7 vadebal. xazawan thobam bral humum b_#23,7 vowogal.`
 >
 > z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | [th-PATTERN | b-later] | [h-as-of.bookmark | b-_23,7] | v-walk
 >
 > "As of 22 July, Ululon had still left. From a 23 July placeholder, Azawan would walk, going by the pattern." — a new pair replaces whose-now
 
-A finished inner clause does not stay open for a later matrix resume. Isolated `helerer` parses; write it only after an introduce of that overlay.
+A finished inner clause does not stay open for a later matrix resume. Isolated `henur` parses; write it only after an introduce of that overlay.
 
-**Compare with:** [*after*](dependents.md#dependent-clauses) **`helabam`** and extra-noun **`ol`** *at* order or landmark events; they are not the books. [Causal *if*](causation.md#if) **`thadorom`** is speaker-now opportunity, not English *if he had* (`hobomam`). [NOTIONAL](knowing.md#notional) is play, not a bookmark now. [Scope islands](joins.md#scope-islands-join) bound join scope; they do not persist *as-of*. Repeat the evidential and/or resume *as-of* on the next clause.
+**Compare with:** [*after*](dependents.md#dependent-clauses) **`helam`** and extra-noun **`ol`** *at* order or landmark events; they are not the books. [Causal *if*](causation.md#if) **`thowem`** is speaker-now opportunity, not English *if he had* (`humum`). [NOTIONAL](knowing.md#notional) is play, not a bookmark now. [Scope islands](joins.md#scope-islands-join) bound join scope; they do not persist *as-of*. Repeat the evidential and/or resume *as-of* on the next clause.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`helerem` / `gelerem` / `welerem`** | asserted whose-now | *as of* (dated ledger) | `elerel` *ledger* | 📒: a dated line in the books |
-| **`hobomam` / `gobomam` / `wobomam`** | unasserted whose-now | *as of* (placeholder now) | `obomal` *bookmark* | 🔖: hold the place without stamping |
-| **`helerer` / `hobomar`** | resume that overlay | *same books* | same | **-r** restates the stem; no `/b/` |
+| **`henum` / `genum` / `wenum`** | asserted whose-now | *as of* (dated ledger) | `enul` *ledger* | 📒: a dated line in the books |
+| **`humum` / `gumum` / `wumum`** | unasserted whose-now | *as of* (placeholder now) | `umul` *bookmark* | 🔖: hold the place without stamping |
+| **`henur` / `humur`** | resume that overlay | *same books* | same | **-r** restates the stem; no `/b/` |
 
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
@@ -524,27 +524,27 @@ Short drills for Advanced. Try each item before opening **Show answer**. The hos
 | English | Agalan |
 |---------|--------|
 | *Azawan* | `azawan` |
-| *Ululon* | `ululon` |
-| *Uhubun* | `uhubun` |
-| *departure* | `vebarul` |
-| *sit* | `vajul` |
-| *walk* | `vawalal` |
-| *rain* | `vanunul` |
-| *house* | `ohohul` |
-| *money* | `onenol` |
-| *RESIDUE* | `thonenom` |
-| *PATTERN* | `thabawam` |
-| *as-of.ledger* | `helerem` |
-| *as-of.bookmark* | `hobomam` |
-| *challenge* | `gomonam` |
-| *tell* | `vezehel` |
+| *Ululon* | `alahen` |
+| *Uhubun* | `ahaben` |
+| *departure* | `vadebal` |
+| *sit* | `vehahel` |
+| *walk* | `vowogal` |
+| *rain* | `verehel` |
+| *house* | `ahazal` |
+| *money* | `omol` |
+| *RESIDUE* | `thomom` |
+| *PATTERN* | `thobam` |
+| *as-of.ledger* | `henum` |
+| *as-of.bookmark* | `humum` |
+| *challenge* | `gamadam` |
+| *tell* | `vezebel` |
 
 #### English → Agalan {#advanced-english-to-agalan}
 
 **1.** *As of 22 July, Ululon had still left.*
 
 ::: details Show answer
-`zululon thonenom helerem b_#22,7 vebarul.`
+`zalahen thomom henum b_#22,7 vadebal.`
 
 z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 :::
@@ -552,7 +552,7 @@ z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 **2.** *As of 22 July, Azawan sits in a house.*
 
 ::: details Show answer
-`zazawan helerem b_#22,7 vajul al bohohul.`
+`zazawan henum b_#22,7 vehahel al bahazal.`
 
 z-Azawan | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 :::
@@ -560,7 +560,7 @@ z-Azawan | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 **3.** *Taking 22 July as now (a placeholder), it would rain, going by the pattern.*
 
 ::: details Show answer
-`thabawam bral hobomam b_#22,7 vanunul.`
+`thobam bral humum b_#22,7 verehel.`
 
 [th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain
 :::
@@ -568,7 +568,7 @@ z-Azawan | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 **4.** *The money as of 22 July.*
 
 ::: details Show answer
-`zonenol gelerem b_#22,7.`
+`zomol genum b_#22,7.`
 
 z-money | [g-as-of.ledger | b-_22,7]
 :::
@@ -576,7 +576,7 @@ z-money | [g-as-of.ledger | b-_22,7]
 **5.** *As of 22 July, Azawan is more challenging than Ululon.*
 
 ::: details Show answer
-`zazawan zululon zel welerem b_#22,7 gomonam.`
+`zazawan zalahen zel wenum b_#22,7 gamadam.`
 
 [z-Azawan | z-Ululon | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 :::
@@ -584,14 +584,14 @@ z-money | [g-as-of.ledger | b-_22,7]
 **6.** *As of the leaving, the money still stood.*
 
 ::: details Show answer
-`zonenol thonenom helerem bebarul.`
+`zomol thomom henum badebal.`
 
 z-money | th-RESIDUE | [h-as-of.ledger | b-departure]
 :::
 
 #### Agalan → English {#advanced-agalan-to-english}
 
-**1.** `zululon thonenom helerem b_#22,7 vebarul. xazawan thonenom helerer vawalal.`
+**1.** `zalahen thomom henum b_#22,7 vadebal. xazawan thomom henur vowogal.`
 
 ::: details Show answer
 
@@ -600,7 +600,7 @@ z-Ululon | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | th
 *As of 22 July, Ululon had still left. Azawan had still walked — same books.*
 :::
 
-**2.** `zuhubun helerem b_#22,7 vajul al bohohul.`
+**2.** `zahaben henum b_#22,7 vehahel al bahazal.`
 
 ::: details Show answer
 
@@ -609,7 +609,7 @@ z-Uhubun | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 *As of 22 July, Uhubun sits in a house.*
 :::
 
-**3.** `thabawam bral hobomam b_#22,7 vanunul. xazawan thabawam bral hobomar vawalal.`
+**3.** `thobam bral humum b_#22,7 verehel. xazawan thobam bral humur vowogal.`
 
 ::: details Show answer
 
@@ -618,7 +618,7 @@ z-Uhubun | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 *Taking 22 July as now (a placeholder), it would rain, going by the pattern. Azawan would walk too, on the same placeholder.*
 :::
 
-**4.** `zohohul gelerem b_#23,7.`
+**4.** `zahazal genum b_#23,7.`
 
 ::: details Show answer
 
@@ -627,7 +627,7 @@ z-house | [g-as-of.ledger | b-_23,7]
 *The house as of 23 July.*
 :::
 
-**5.** `zululon zazawan zel welerem b_#23,7 gomonam.`
+**5.** `zalahen zazawan zel wenum b_#23,7 gamadam.`
 
 ::: details Show answer
 
@@ -636,7 +636,7 @@ z-house | [g-as-of.ledger | b-_23,7]
 *As of 23 July, Ululon is more challenging than Azawan.*
 :::
 
-**6.** `zohohul thonenom helerem bebarul.`
+**6.** `zahazal thomom henum badebal.`
 
 ::: details Show answer
 

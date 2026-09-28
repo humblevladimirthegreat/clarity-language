@@ -16,25 +16,25 @@ The join’s first letter matches the items: `zam` after two `/z/` nouns, `vam` 
 
 Ending **-l** is ordinary English with no extra words: these are the only items. Ending **-m** means other members may exist: add *(and possibly more)*. When unsure, prefer **-m**.
 
-> `zodogol zagadal zal.`
+> `zodogal zagadal zal.`
 >
 > [z-dog | z-cat | z-and]
 >
 > "a dog and a cat."
 
-> `zodogol zagadal zam.`
+> `zodogal zagadal zam.`
 >
 > [z-dog | z-cat | z-and.open]
 >
 > "a dog and a cat (and possibly more)."
 
-> `zazawan zululon zam.`
+> `zazawan zalahen zam.`
 >
 > [z-Azawan | z-Ululon | z-and.open]
 >
 > "Azawan and Ululon (and possibly more)."
 
-> `vawalal vurunul vam.`
+> `vowogal varahal vam.`
 >
 > [v-walk | v-run | v-and.open]
 >
@@ -50,13 +50,13 @@ Two full clauses are the one exception: the join that starts with `x` goes **bet
 
 Objects and extra nouns list the same way. Two `/d/` objects close with `dal`; two `/b/` recipients close with `bal`.
 
-> `zazawan dodogol dagadal dal vejel.`
+> `zazawan dodogal dagadal dal vahahal.`
 >
 > z-Azawan | [d-dog | d-cat | d-and] | v-see
 >
 > "Azawan sees a dog and a cat."
 
-> `zazawan bululon buhubun bal vezehel.`
+> `zazawan balahen bahaben bal vezebel.`
 >
 > z-Azawan | [b-Ululon | b-Uhubun | b-and] | v-tell
 >
@@ -67,13 +67,13 @@ Objects and extra nouns list the same way. Two `/d/` objects close with `dal`; t
 
 When English would offer a menu and ask to *pick one*, or leave the pick *(optional)*, use vowel **o**. Closed **-l** (`zol`) means pick one of the listed items. Open **-m** (`zom`) means the pick is optional. (cue: **o** ≈ one.)
 
-> `zadedal zogovel zol.`
+> `zedehel zagavel zol.`
 >
 > [z-tea | z-coffee | z-or-exactly-one]
 >
 > "tea or coffee (pick one)."
 
-> `zogovel zom.`
+> `zagavel zom.`
 >
 > [z-coffee | z-or.open]
 >
@@ -98,13 +98,13 @@ The join still comes last when there is only one item, or none. How many items s
 
 A standalone join fills its slot with no items. In the object slot, `dal` is *nothing*; in the extra-noun slot, `bal` is *nobody*.
 
-> `zazawan dal vejel.`
+> `zazawan dal vahahal.`
 >
 > z-Azawan | d-none | v-see
 >
 > "Azawan sees nothing."
 
-> `zazawan bal vezehel.`
+> `zazawan bal vezebel.`
 >
 > z-Azawan | b-none | v-tell
 >
@@ -114,7 +114,7 @@ A standalone join fills its slot with no items. In the object slot, `dal` is *no
 
 When English would deny the listed items, use vowel **u**. One item before `zul` is *not X*. Two items before `zul` is *neither A nor B*; more items is *none of these*. The join alone (`zul` / `zum`) is *no*. (cue: **u** ≈ undo.)
 
-> `gomonam gul.`
+> `gamadam gul.`
 >
 > [g-challenge | g-not]
 >
@@ -126,7 +126,7 @@ When English would deny the listed items, use vowel **u**. One item before `zul`
 >
 > "not Azawan."
 
-> `zadedal zogovel zul.`
+> `zedehel zagavel zul.`
 >
 > [z-tea | z-coffee | z-not]
 >
@@ -173,13 +173,13 @@ You can name a list without saying which member you mean (*someone* / *something
 >
 > "something" / "someone."
 
-> `zeberel zar.`
+> `zebezal zar.`
 >
 > [z-person | z-something]
 >
 > "some (unknown) person."
 
-> `zadedal zogovel zar.`
+> `zedehel zagavel zar.`
 >
 > [z-tea | z-coffee | z-something]
 >
@@ -232,13 +232,13 @@ Two or more items still take the same vowel and ending as the lists above. The t
 
 A clause is long, so a join that waits until the end would leave you holding two whole sentences before you learn how they relate. A clause join that starts with `x` therefore goes **between** the clauses: first clause, join, second clause. Every other join still closes its list on the right.
 
-> `zazawan vawalal xam zululon vurunul.`
+> `zazawan vowogal xam zalahen varahal.`
 >
 > [z-Azawan | v-walk | x-and.open | z-Ululon | v-run]
 >
 > "Azawan walks and Ululon runs (and possibly more)."
 
-> `zazawan vawalal xol zululon vurunul xol zuhubun velebel.`
+> `zazawan vowogal xol zalahen varahal xol zahaben vezebal.`
 >
 > [z-Azawan | v-walk | x-or-exactly-one | z-Ululon | v-run | x-or-exactly-one | z-Uhubun | v-sleep]
 >
@@ -246,21 +246,21 @@ A clause is long, so a join that waits until the end would leave you holding two
 
 Repeat the same join word and the list stays flat. Switch to a **different** join word and everything before it closes as one group: `A xol B xal C` is *(A or B) and C* ([clause forms](join-across-roles.md#vp-clause-forms)). The set joins **a** / **o** / **u** do not care about order, so you can put the group you want first. For a group on the right, end the sentence and start the next one with the join: the join then takes the **whole** next sentence.
 
-> `zazawan vawalal. xan zululon vurunul xol zuhubun velebel.`
+> `zazawan vowogal. xan zalahen varahal xol zahaben vezebal.`
 >
 > z-Azawan | v-walk . x-and-then | [z-Ululon | v-run | x-or-exactly-one | z-Uhubun | v-sleep]
 >
 > "Azawan walks. Then Ululon runs or Uhubun sleeps."
 
-A clause join never sits on one clause alone. To deny or single out one clause, put the join on the part you mean: **`vawalal vul`** *does not walk*, **`zazawan zal`** *only Azawan*.
+A clause join never sits on one clause alone. To deny or single out one clause, put the join on the part you mean: **`vowogal vul`** *does not walk*, **`zazawan zal`** *only Azawan*.
 
 A join word with no clause before it stands for a clause of its own: `xal.` *nothing happened*, `xar` *something happened*, `xur` *something else happened*, `xual` *everything happened*. You can use that stand-in as one item of a clause list:
 
 | Agalan | English |
 |--------|---------|
-| `zazawan vawalal xam xar.` | *Azawan walks, for one* (and something else happened too) |
-| `zazawan vawalal xol xal.` | *Azawan may walk* (Azawan walks, or nothing happens) |
-| `zazawan vawalal xel xur.` | *mainly, Azawan walks* (that outranks anything else) |
+| `zazawan vowogal xam xar.` | *Azawan walks, for one* (and something else happened too) |
+| `zazawan vowogal xol xal.` | *Azawan may walk* (Azawan walks, or nothing happens) |
+| `zazawan vowogal xel xur.` | *mainly, Azawan walks* (that outranks anything else) |
 
 For *everything happened except that A*, put the except [hook](hooks.md#except-ul) after the stand-in `xual`.
 
@@ -277,26 +277,26 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `ululon` | |
-| *Uhubun* | `uhubun` | |
-| *bread* | `ereral` | |
-| *tomato* | `odomal` | |
-| *mango* | `amanol` | |
-| *melon* | `emelol` | |
-| *grape* | `agabel` | |
-| *basket* | `azegel` | |
-| *cart* | `anahol` | |
-| *see* | `vejel` | `ejel` *eye* |
-| *punch* | `vubunul` | `ubunul` *punch* |
-| *scream* | `vazagal` | `azagal` *scream* |
-| *lie* | `vululel` | `ululel` *lie* |
+| *Ululon* | `alahen` | |
+| *Uhubun* | `ahaben` | |
+| *bread* | `ebewel` | |
+| *tomato* | `adedol` | |
+| *mango* | `amegol` | |
+| *melon* | `emevel` | |
+| *grape* | `egebal` | |
+| *basket* | `abezul` | |
+| *cart* | `agagul` | |
+| *see* | `vahahal` | `ahahal` *eye* |
+| *punch* | `vabahel` | `abahel` *punch* |
+| *scream* | `vezogel` | `ezogel` *scream* |
+| *lie* | `valahal` | `alahal` *lie* |
 
 #### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *bread and a tomato (and possibly more)*
 
 ::: details Show answer
-`zereral zodomal zam.`
+`zebewel zadedol zam.`
 
 [z-bread | z-tomato | z-and.open]
 :::
@@ -304,7 +304,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **2.** *a mango or a melon (pick one)*
 
 ::: details Show answer
-`zamanol zemelol zol.`
+`zamegol zemevel zol.`
 
 [z-mango | z-melon | z-or-exactly-one]
 :::
@@ -312,7 +312,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **3.** *just Uhubun*
 
 ::: details Show answer
-`zuhubun zal.`
+`zahaben zal.`
 
 [z-Uhubun | z-and]
 :::
@@ -320,7 +320,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **4.** *a grape (optional)*
 
 ::: details Show answer
-`zagabel zom.`
+`zegebal zom.`
 
 [z-grape | z-or.open]
 :::
@@ -328,7 +328,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **5.** *not the cart*
 
 ::: details Show answer
-`zanahol zul.`
+`zagagul zul.`
 
 [z-cart | z-not]
 :::
@@ -336,7 +336,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **6.** *something among bread and a tomato*
 
 ::: details Show answer
-`zereral zodomal zar.`
+`zebewel zadedol zar.`
 
 [z-bread | z-tomato | z-something]
 :::
@@ -352,14 +352,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **8.** *Ululon punches and Azawan sees Uhubun (and possibly more).*
 
 ::: details Show answer
-`zululon vubunul xam zazawan duhubun vejel.`
+`zalahen vabahel xam zazawan dahaben vahahal.`
 
 [z-Ululon | v-punch | x-and.open | z-Azawan | d-Uhubun | v-see]
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
 
-**1.** `zanahol zam.`
+**1.** `zagagul zam.`
 
 ::: details Show answer
 
@@ -377,7 +377,7 @@ z-everything-but
 *everything* / *everyone*
 :::
 
-**3.** `zazegel zar.`
+**3.** `zabezul zar.`
 
 ::: details Show answer
 
@@ -386,7 +386,7 @@ z-everything-but
 *some (unknown) basket*
 :::
 
-**4.** `zamanol zemelol zul.`
+**4.** `zamegol zemevel zul.`
 
 ::: details Show answer
 
@@ -395,7 +395,7 @@ z-everything-but
 *neither a mango nor a melon*
 :::
 
-**5.** `zuhubun zam.`
+**5.** `zahaben zam.`
 
 ::: details Show answer
 
@@ -404,7 +404,7 @@ z-everything-but
 *Uhubun, for one* / *Uhubun (and possibly more)*
 :::
 
-**6.** `zuhubun zel.`
+**6.** `zahaben zel.`
 
 ::: details Show answer
 
@@ -413,7 +413,7 @@ z-everything-but
 *only Uhubun matters* / *Uhubun first*
 :::
 
-**7.** `zululon dazegel vubunul xam zazawan vazagal.`
+**7.** `zalahen dabezul vabahel xam zazawan vezogel.`
 
 ::: details Show answer
 
@@ -422,7 +422,7 @@ z-everything-but
 *Ululon punches a basket and Azawan screams (and possibly more).*
 :::
 
-**8.** `zululon vazagal xam zazawan vululel.`
+**8.** `zalahen vezogel xam zazawan valahal.`
 
 ::: details Show answer
 
@@ -440,7 +440,7 @@ When English would say two people are *as ADJ as* each other, write a **rank** j
 
 **`ae`** is a tie: several names, then **`zael`** (or **`zaem`**), then the adjective. The order of the names does not matter in a tie.
 
-> `zazawan zululon zael gomonam.`
+> `zazawan zalahen zael gamadam.`
 >
 > [z-Azawan | z-Ululon | z-equal-rank | g-challenge]
 >
@@ -461,13 +461,13 @@ Beginner already used *everything but* (**`ua`**). Leading **u** on **o** and **
 
 Kind / domain for **ua** / **uo** is context or SHARED `/ɡ/` — [universals, domains, and generics](#universals-domains-generics). Optional is only **`…om`**. **-r** still attaches only to single-vowel **a** / **o** / **e** / **u**.
 
-> `zadedal zogovel zual.`
+> `zedehel zagavel zual.`
 >
 > [z-tea | z-coffee | z-everything-but]
 >
 > "everything but tea and coffee."
 
-> `zazawan zululon zuhubun zuel.`
+> `zazawan zalahen zahaben zuel.`
 >
 > [z-Azawan | z-Ululon | z-Uhubun | z-rank/less]
 >
@@ -480,7 +480,7 @@ Kind / domain for **ua** / **uo** is context or SHARED `/ɡ/` — [universals, d
 
 Rank **`e`** puts the first item at the **top** (*A matters more than B*). When English would instead say *A, then B* (an itinerary, a turn order, *from 3 to 5*), the first item is the **start**, not the winner. Write the items in that order and close with **`oe`**.
 
-> `zazawan zululon zuhubun zoel.`
+> `zazawan zalahen zahaben zoel.`
 >
 > [z-Azawan | z-Ululon | z-Uhubun | z-in-order]
 >
@@ -492,7 +492,7 @@ Rank **`e`** puts the first item at the **top** (*A matters more than B*). When 
 | Single-item | `X zoel` *start with X* / *from X on* | `X zoem` *maybe start with X* |
 | Standalone | `zoel` *in no particular order* / *any order* | `zoem` *not sure where to start* |
 
-A sequence does not say which item is better. With two number endpoints and a SHARED continuum it is a [range](numbers-applied.md#ranges) (`zrarel zraval zoel gumem` = *from 3 to 5*); a single number is an inclusive [ray](numbers-applied.md#numeric-thresholds) (`zraval zoel` = *5 or more*). With a SHARED quality it sorts the list from low to high: [comparatives](comparatives.md#sequence-scale). (cue: **o** ≈ one + **e** ≈ order — one after another)
+A sequence does not say which item is better. With two number endpoints and a SHARED continuum it is a [range](numbers-applied.md#ranges) (`zrarel zraval zoel gadaham` = *from 3 to 5*); a single number is an inclusive [ray](numbers-applied.md#numeric-thresholds) (`zraval zoel` = *5 or more*). With a SHARED quality it sorts the list from low to high: [comparatives](comparatives.md#sequence-scale). (cue: **o** ≈ one + **e** ≈ order — one after another)
 
 **Compare with:** clause *and then* between sentences is [sequence **`xan`**](join-across-roles.md#sequence). **`zoel`** orders nouns inside one slot.
 
@@ -500,7 +500,7 @@ A sequence does not say which item is better. With two number endpoints and a SH
 
 **`oe`** reads its list from the **start**. **`eo`** swaps the two letters and reads from the **end**: the last item listed comes first, as in a countdown.
 
-> `zazawan zululon zuhubun zeol.`
+> `zazawan zalahen zahaben zeol.`
 >
 > [z-Azawan | z-Ululon | z-Uhubun | z-in-reverse-order]
 >
@@ -607,13 +607,13 @@ When English would allow several listed items at once (*and/or*), stack **a** th
 
 When English would deny a whole join, *not* applies to **each** item and the join vowel **stays the same**. *Not (walk and run)* is still an *and* of two denials; *not (walk or run)* is still an *or* of two denials.
 
-> `vawalal vurunul val vul.`
+> `vowogal varahal val vul.`
 >
 > [[v-walk | v-run | v-and] | v-not]
 >
 > "not (walk and run): not walk, and not run."
 
-> `vawalal vurunul vol vul.`
+> `vowogal varahal vol vul.`
 >
 > [[v-walk | v-run | v-or-exactly-one] | v-not]
 >
@@ -640,11 +640,11 @@ When English would say *every cat* rather than *everything but the cat*, write *
 
 The kind word after **`ua`** / **`uo`** takes no **-x**: *every cat* already covers every member.
 
-With a plain verb, *every cat* acts one by one: **`zual gagadal vajul.`** is *each cat sits*. For all of them acting together, put [collective **-x**](plurality.md) on the verb (`vajulx`).
+With a plain verb, *every cat* acts one by one: **`zual gagadal vehahel.`** is *each cat sits*. For all of them acting together, put [collective **-x**](plurality.md) on the verb (`vehahelx`).
 
 *No cat* is the same shape with **`u`**: **`zul`** plus the kind.
 
-> `zul gagadal vajul.`
+> `zul gagadal vehahel.`
 >
 > [z-no | g-cat] | v-sit
 >
@@ -652,7 +652,7 @@ With a plain verb, *every cat* acts one by one: **`zual gagadal vajul.`** is *ea
 
 For English *whoever* / *whatever*, the kind is a [role compound](roles.md#role-compounds): *every walker* is *whoever walks*. Use the agent compound (**`a`**) for *whoever*, and the undergoer compound (**`u`**) for *whatever*.
 
-> `zual gaxawalal vuzunul.`
+> `zual gaxowogal vezehel.`
 >
 > [z-everything | g-agent-x-walk] | v-sing
 >
@@ -669,19 +669,19 @@ Strict / definitional generics use closed `zual` plus kind (and [FORMAL](knowing
 
 When an adjective or extra noun is meant for the **whole list** (*both challenging*, *Azawan's dog and cat*), write it **immediately after** the join. That material describes every member together. A modifier that belongs to one item only stays on that item (after its head, or `gl-` before it).
 
-> `zodogol zagadal zal gomonam.`
+> `zodogal zagadal zal gamadam.`
 >
 > [z-dog | z-cat | z-and | g-challenge]
 >
 > "(challenging dog) and (challenging cat)."
 
-> `zodogol zagadal zam goborum bazawan.`
+> `zodogal zagadal zam gegabem bazawan.`
 >
 > [z-dog | z-cat | z-and.open | [g-ownership | b-Azawan]]
 >
 > "Azawan's dog and cat (and possibly more)."
 
-**Compare with:** *part of* / *contents of* / *made of* / origin *from* use [of relations](relations.md#of-relations), not `oboru`. A [interests](interests.md) need on `/ɡ/` already means the speaker’s belonging (`golozothal` *my … serves competence*).
+**Compare with:** *part of* / *contents of* / *made of* / origin *from* use [of relations](relations.md#of-relations), not `egabe`. A [interests](interests.md) need on `/ɡ/` already means the speaker’s belonging (`gudathal` *my … serves competence*).
 
 | Join family | Use of SHARED `/ɡ/` |
 |-------------|----------------------|
@@ -697,7 +697,7 @@ Further matching-role heads belong *before* the join.
 
 SHARED material has to be able to describe what the join lists. After a noun join, a `/ɡ/` describes every noun, and an `/h/` is only a [scale](comparatives.md#manner-scale) after rank **`e`** / **`ue`**, equative **`ae`**, or sequence **`oe`**. After a verb join, only an `/h/` is SHARED. Nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item; the one exception is a range’s continuum after two number endpoints. Any other `/h/` after a join is an ordinary adverb on the verb:
 
-> `zazawan zululon zal hohogem vawalal.`
+> `zazawan zalahen zal hahegem vowogal.`
 >
 > [z-Azawan | z-Ululon | z-and] | h-intensity | v-walk
 >
@@ -709,9 +709,9 @@ When one list sits inside another (*(tea or coffee) and water*), write the inner
 
 | Pattern | Agalan | English |
 |---------|--------|---------|
-| flat | `zadedal zogovel zunudel zol` | *tea or coffee or water* |
-| nested | `zadedal zogovel zol zunudel zal` | *(tea or coffee) and water* |
-| nested adjectives | `garedel gumuzem gul gelem gal` | *(neither red nor small) and big* |
+| flat | `zedehel zagavel zowodel zol` | *tea or coffee or water* |
+| nested | `zedehel zagavel zol zowodel zal` | *(tea or coffee) and water* |
+| nested adjectives | `geredal gamazam gul gelavam gal` | *(neither red nor small) and big* |
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -725,24 +725,24 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `ululon` | |
-| *Uhubun* | `uhubun` | |
-| *wine* | `uwunel` | |
-| *flower* | `ovowel` | |
-| *ring* | `unurul` | |
-| *veil* | `evevul` | |
-| *tuxedo* | `uduzel` | |
-| *happy* | `uzumum` | `uzumul` *smile* |
-| *see* | `vejel` | `ejel` *eye* |
-| *kiss* | `vuguzul` | `uguzul` *kiss* |
-| *punch* | `vubunul` | `ubunul` *punch* |
+| *Ululon* | `alahen` | |
+| *Uhubun* | `ahaben` | |
+| *wine* | `awahel` | |
+| *flower* | `avavul` | |
+| *ring* | `erehal` | |
+| *veil* | `evewal` | |
+| *tuxedo* | `adozel` | |
+| *happy* | `azaham` | `azahal` *smile* |
+| *see* | `vahahal` | `ahahal` *eye* |
+| *kiss* | `vegezal` | `egezal` *kiss* |
+| *punch* | `vabahel` | `abahel` *punch* |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *everything but wine and a flower*
 
 ::: details Show answer
-`zuwunel zovowel zual.`
+`zawahel zavavul zual.`
 
 [z-wine | z-flower | z-everything-but]
 :::
@@ -750,7 +750,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **2.** *every ring*
 
 ::: details Show answer
-`zual gunurul.`
+`zual gerehal.`
 
 [z-everything | g-ring]
 :::
@@ -758,7 +758,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **3.** *(happy Azawan) and (happy Ululon)*
 
 ::: details Show answer
-`zazawan zululon zal guzumum.`
+`zazawan zalahen zal gazaham.`
 
 [z-Azawan | z-Ululon | z-and | g-happy]
 :::
@@ -766,7 +766,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **4.** *(wine or a flower) and a ring*
 
 ::: details Show answer
-`zuwunel zovowel zol zunurul zal.`
+`zawahel zavavul zol zerehal zal.`
 
 [[z-wine | z-flower | z-or-exactly-one] | z-ring | z-and]
 :::
@@ -774,7 +774,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **5.** *Azawan and Ululon see Uhubun.*
 
 ::: details Show answer
-`zazawan zululon zal duhubun vejel.`
+`zazawan zalahen zal dahaben vahahal.`
 
 [z-Azawan | z-Ululon | z-and] | d-Uhubun | v-see
 :::
@@ -782,7 +782,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **6.** *at least Uhubun*
 
 ::: details Show answer
-`zuhubun zaom.`
+`zahaben zaom.`
 
 [z-Uhubun | z-and/or.open]
 :::
@@ -790,7 +790,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **7.** *anything but the wine*
 
 ::: details Show answer
-`zuwunel zuol.`
+`zawahel zuol.`
 
 [z-wine | z-anything-but]
 :::
@@ -798,7 +798,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **8.** *Ululon last, period*
 
 ::: details Show answer
-`zululon zuel.`
+`zalahen zuel.`
 
 [z-Ululon | z-rank/less]
 :::
@@ -806,7 +806,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **9.** *Azawan kisses first, then Ululon.*
 
 ::: details Show answer
-`zazawan zululon zoel vuguzul.`
+`zazawan zalahen zoel vegezal.`
 
 [z-Azawan | z-Ululon | z-in-order] | v-kiss
 :::
@@ -814,14 +814,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **10.** *Uhubun kisses first, then Ululon, then Azawan.* (list Azawan first)
 
 ::: details Show answer
-`zazawan zululon zuhubun zeol vuguzul.`
+`zazawan zalahen zahaben zeol vegezal.`
 
 [z-Azawan | z-Ululon | z-Uhubun | z-in-reverse-order] | v-kiss
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
 
-**1.** `zovowel zual.`
+**1.** `zavavul zual.`
 
 ::: details Show answer
 
@@ -830,7 +830,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *everything but the flower*
 :::
 
-**2.** `zuam gunurul.`
+**2.** `zuam gerehal.`
 
 ::: details Show answer
 
@@ -839,7 +839,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *every ring, as far as I know*
 :::
 
-**3.** `zevevul zual.`
+**3.** `zevewal zual.`
 
 ::: details Show answer
 
@@ -848,7 +848,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *everything but the veil*
 :::
 
-**4.** `vuguzul vejel vam duhubun.`
+**4.** `vegezal vahahal vam dahaben.`
 
 ::: details Show answer
 
@@ -857,7 +857,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *kisses and sees Uhubun (and possibly more)*
 :::
 
-**5.** `vuguzul vubunul val vul.`
+**5.** `vegezal vabahel val vul.`
 
 ::: details Show answer
 
@@ -866,7 +866,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *not kiss, and not punch*
 :::
 
-**6.** `zuwunel zovowel zol.`
+**6.** `zawahel zavavul zol.`
 
 ::: details Show answer
 
@@ -875,7 +875,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *wine or a flower (pick one)*
 :::
 
-**7.** `zuwunel zovowel zunurul zel.`
+**7.** `zawahel zavavul zerehal zel.`
 
 ::: details Show answer
 
@@ -884,7 +884,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *wine first, then the flower, then the ring*
 :::
 
-**8.** `zuduzel zuom.`
+**8.** `zadozel zuom.`
 
 ::: details Show answer
 
@@ -893,7 +893,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *anything but the tuxedo (and possibly more)*
 :::
 
-**9.** `zuhubun zoel dunurul vejel.`
+**9.** `zahaben zoel derehal vahahal.`
 
 ::: details Show answer
 
@@ -910,11 +910,11 @@ When same-role words sit next to a smaller list, wrap that stretch and its join 
 
 | Agalan | English |
 |--------|---------|
-| `zazawan ^ zunudel zal ^ zam` | *Azawan and (just water)* |
+| `zazawan ^ zowodel zal ^ zam` | *Azawan and (just water)* |
 | `zazawan ^ zal ^ zam` | *Azawan and nothing* |
-| `^ zunudel zal ^` | *just water* alone in the slot |
+| `^ zowodel zal ^` | *just water* alone in the slot |
 
-> `zazawan ^ zunudel zal ^ zam.`
+> `zazawan ^ zowodel zal ^ zam.`
 >
 > [z-Azawan | SCOPE[z-drinking-water | z-and] | z-and.open]
 >
@@ -928,7 +928,7 @@ When same-role words sit next to a smaller list, wrap that stretch and its join 
 
 When a phrase list is an established bundle (*Stop–Drop–Roll*), end the join with **-n** under `/z/` `/d/` `/b/` `/w/`. That **-n** titles the package ([titled phrases](word-endings.md#titled-phrases)). Members keep their usual endings unless a member is itself a name.
 
-> `zereral zudel zan.`
+> `zebewel zabedel zan.`
 >
 > NAME[z-bread | z-butter | z-and]
 >
@@ -949,18 +949,18 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 | **…ar** / **…or** / **…er** / **…ur** | unspecified member at every arity | [unspecified **-r**](#unspecified-member-r-phrase) |
 | **…aen** / **…en** / **…an** standalone | stock empty rank / named empty | *it's a draw*; *no favorite* (stock); *null* / *void* |
 | **…ual** / **…uol** standalone | empty invert | *everything*; *anything (goes)* |
-| `zeberel` vs `zeberel zar` | content **-l** vs join **-r** | *a person* vs *some person, unknown who* |
+| `zebezal` vs `zebezal zar` | content **-l** vs join **-r** | *a person* vs *some person, unknown who* |
 | `A B C zor` vs `… zer` | menu vs rank unspecified | any of them is fine vs pick by ranking |
 | `A B zar` / `zur` / `zual` | among / leftover / invert | some one among; some one other than; *everything but* |
 | `A B zel` vs `A B zoel` | rank vs [sequence](#sequence-oe) | A matters more than B vs A, then B |
 
-> `zadedal zogovel zunudel zor.`
+> `zedehel zagavel zowodel zor.`
 >
 > [z-tea | z-coffee | z-drinking-water | z-anything]
 >
 > "any of tea, coffee, or water is fine (no order)."
 
-**For *except*, use:** hook **`ul`** / **`um`** — [hooks](hooks.md). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (pick one of a closed list, but the pick is optional: `zadedal zogovel zol zom`).
+**For *except*, use:** hook **`ul`** / **`um`** — [hooks](hooks.md). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (pick one of a closed list, but the pick is optional: `zedehel zagavel zol zom`).
 
 
 ### Allowed joins by PoS
@@ -992,7 +992,7 @@ These limits apply to every join.
 | Phrase **-r** | only **…ar** / **…or** / **…er** / **…ur** |
 | Verb+object packages | verb-phrase `/v/`; full sentences use `/x/` ([forms](join-across-roles.md)) |
 | Revising one item | in-clause *including* / *rather* / *instead* / *except* are [hooks](hooks.md) |
-| Several manners on `/h/` `/w/` | juxtaposition (`hadazal howol`) |
+| Several manners on `/h/` `/w/` | juxtaposition (`hadehol halahol`) |
 
 **Compare with:** prefix-less **`al`** / **`am`** / … are [hooks](hooks.md). Under `/h/` `/w/`, the unit is a [restrictor](restrictors.md), not sibling *and*.
 
@@ -1011,19 +1011,19 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `ululon` | |
-| *Uhubun* | `uhubun` | |
-| *page* | `ababel` | |
-| *pen* | `abenel` | |
-| *dove* | `odovel` | |
-| *seal* | `ezezam` | `ezezal` *seal* |
+| *Ululon* | `alahen` | |
+| *Uhubun* | `ahaben` | |
+| *page* | `abehel` | |
+| *pen* | `ebewul` | |
+| *dove* | `adavul` | |
+| *seal* | `ezevom` | `ezevol` *seal* |
 
 #### English → Agalan {#advanced-english-to-agalan}
 
 **1.** *a page or a pen (the usual named menu)*
 
 ::: details Show answer
-`zababel zabenel zon.`
+`zabehel zebewul zon.`
 
 NAME[z-page | z-pen | z-or-exactly-one]
 :::
@@ -1039,7 +1039,7 @@ NAME[z-and]
 **3.** *any of a dove, a page, or a pen is fine (no order)*
 
 ::: details Show answer
-`zodovel zababel zabenel zor.`
+`zadavul zabehel zebewul zor.`
 
 [z-dove | z-page | z-pen | z-anything]
 :::
@@ -1047,7 +1047,7 @@ NAME[z-and]
 **4.** *Azawan and (just Uhubun)*
 
 ::: details Show answer
-`zazawan ^ zuhubun zal ^ zam.`
+`zazawan ^ zahaben zal ^ zam.`
 
 [z-Azawan | SCOPE[z-Uhubun | z-and] | z-and.open]
 :::
@@ -1055,7 +1055,7 @@ NAME[z-and]
 **5.** *someone other than Ululon*
 
 ::: details Show answer
-`zululon zur.`
+`zalahen zur.`
 
 [z-Ululon | z-something-else]
 :::
@@ -1071,7 +1071,7 @@ NAME[z-equal-rank]
 *it's a draw* (stock)
 :::
 
-**2.** `zodovel zababel zabenel zer.`
+**2.** `zadavul zabehel zebewul zer.`
 
 ::: details Show answer
 
@@ -1098,7 +1098,7 @@ z-anything-but
 *anything (goes)*
 :::
 
-**5.** `zezezam zababel zur.`
+**5.** `zezevom zabehel zur.`
 
 ::: details Show answer
 

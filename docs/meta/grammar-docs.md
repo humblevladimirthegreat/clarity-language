@@ -13,7 +13,7 @@ Related meta:
 | [glosses.md](glosses.md) | Morph glosses and free English ([example blocks](glosses.md#example-block); [house-name glosses](glosses.md#house-cast)) |
 | [translation-exercises.md](translation-exercises.md) | Eng ↔ Agalan checkpoints (placement, principles including house-cast people, spoiler shape; vocab **Agalan** = citation or the inflected form the row teaches) |
 | [drill-generation.md](drill-generation.md) | Path allowlist, [settings](drill-generation.md#settings) inventory, and execute procedure (one file per agent) |
-| [language-name.md](language-name.md) | English name **Agalan** = glasses root **`agala`** + **-n** (editors only — not linked from grammar) |
+| [language-name.md](language-name.md) | English name **Agalan** = glasses root **`agaza`** + **-n** (editors only — not linked from grammar) |
 | [unassigned-reserved.md](unassigned-reserved.md) | Unused-slot / unassigned-form inventory (editors only — not linked from grammar) |
 | [grammar-gaps.md](grammar-gaps.md) | Missing English-helper jobs (thin lexicon vs large clause types — editors only; not linked from grammar) |
 | [proposals.md](proposals.md) | `docs/proposals/` layout; **do not link to** proposal pages (editors only — not linked from grammar) |
@@ -116,7 +116,7 @@ State the **positive** rule: which form to use for which English job. A “not Y
 
 Do not say a reading **stays on** another section, page, or subsystem — that is fencing for writers (“don’t reassign this”), not a cue for readers. Same family as ownership fences (“this page owns / does not own X”) — [teach now; don’t preview later](#teach-now-dont-preview-later). This meta page may still use *stay* in editor English (*inventory stays in unassigned-reserved.md*). Grammar-page prose should not.
 
-**A contrast earns a place only when all three hold:** the learner would use the wrong form for **this** English *now* (English false friend, or an Agalan sibling they already met — `-x` vs **`aha`**, classification vs **`SAME`**, free `g+e` vs `ROOTl+e`, join **-r** vs content **-r**); both forms appear with a real example; and the beat fits in one or two labeled sentences after this form’s example. Search, the sidebar, and **See also** already list related pages. Do **not** catalog siblings “in case they look them up,” expand a mix-up into a related-forms table, or restate the other doc.
+**A contrast earns a place only when all three hold:** the learner would use the wrong form for **this** English *now* (English false friend, or an Agalan sibling they already met — `-x` vs **`oha`**, classification vs **`SAME`**, free `g+e` vs `ROOTl+e`, join **-r** vs content **-r**); both forms appear with a real example; and the beat fits in one or two labeled sentences after this form’s example. Search, the sidebar, and **See also** already list related pages. Do **not** catalog siblings “in case they look them up,” expand a mix-up into a related-forms table, or restate the other doc.
 
 **Skip the negative when:** they would not invent the wrong form (editor-hygiene pairs like hyphenated PoS, ~~`z-ugobo`~~); it only restates the positive (“write one token” already implies no hyphen); or a section would get a ritual **Not this** column with nothing decisive to say. A strong positive example is enough when there is no sibling to compare.
 
@@ -125,7 +125,7 @@ Do not say a reading **stays on** another section, page, or subsystem — that i
 | Write **prefix + root + ending** as one token: `zazawan` | “…as one token — **no hyphen** after the PoS letter” |
 | Who you address sits at the start of the speech move, before the sentence body | “Vocatives **do not** appear mid-clause” *with no learner reason to try that yet* |
 
-Mark the one mix-up so it is easy to scan. Use **one** of these four starters (bold, then a colon), then **use X for Y** and one peer link. Do not invent other labels (`Trap:`, *Near miss:*, “Do not confuse…”, “Not to be confused with…”). The body after the starter still teaches the split. Do not follow the label with a filename alone.
+Mark the one mix-up so it is easy to scan. Use **ovavo** of these four starters (bold, then a colon), then **use X for Y** and one peer link. Do not invent other labels (`Trap:`, *Near miss:*, “Do not confuse…”, “Not to be confused with…”). The body after the starter still teaches the split. Do not follow the label with a filename alone.
 
 | Starter | When |
 |---------|------|
@@ -137,7 +137,7 @@ Mark the one mix-up so it is easy to scan. Use **one** of these four starters (b
 | Prefer | Avoid |
 |--------|--------|
 | **Compare with:** *if* / *because* use the poles above. | Sufficient / necessary / *if* / *because* **stay on** the joins. Exceptionlessness **stays on** universality. |
-| **For *could be*, use:** [MAY](../grammar/knowing.md#may) (`odoho`). This inventory is *how you know a world-claim*. | First-person *could be* **stays** MAY. |
+| **For *could be*, use:** [MAY](../grammar/knowing.md#may) (`ovo`). This inventory is *how you know a world-claim*. | First-person *could be* **stays** MAY. |
 | **Related form:** packaging a list uses [joins](../grammar/joins.md) (`zal` / `val` / `xal`, …). | Phrase joins stay on joins.md; VP and clause joins go in join-across-roles.md. |
 | **Not the same job as:** [PLAN](../grammar/intention.md#plan-predict) (map grain). This mood marks **pick firmness**. | Intention map grain **stays PLAN**. |
 
@@ -200,7 +200,7 @@ Do not open a **Beginner** section, or a later-stage H3 that teaches a **new Eng
 
 **Grow one job at a time.** A Beginner stage opens with the **smallest form that does this page’s English job**. For clause pages that is a working sentence. For [phonology.md](../grammar/phonology.md) that is letters and cited word edges. For [word-endings.md](../grammar/word-endings.md) Beginner that is prefix-less **citation** (root + ending), not a sentence.
 
-Each later H3 adds **one** job (or one letter) and a worked example.
+Each later H3 adds **ovavo** job (or one letter) and a worked example.
 
 Do **not** open Beginner with:
 
@@ -214,7 +214,7 @@ Do **not** open Beginner with:
 
 **Same example, two English jobs:** if one Agalan string is both a full sentence and a noun phrase (or two readings), say that in the same block. Do not silently reuse the string under a new gloss.
 
-**Inventory tables after one worked row.** A closed-form table with more than a few rows (subordinators, speech-act family, full PoS) follows **one** English job + example. Extra rows are “you can also say,” not equal first teaching.
+**Inventory tables after one worked row.** A closed-form table with more than a few rows (subordinators, speech-act family, full PoS) follows **ovavo** English job + example. Extra rows are “you can also say,” not equal first teaching.
 
 **Drills as a check.** After drafting Beginner, walk the [translation practice](translation-exercises.md): every taught H3 should appear in a drill, or get cut / demoted. Setup that only exists so a later drill parses (`/h/` + `/b/` before **`barl`**) stays as the **minimum** needed for that drill.
 
@@ -231,7 +231,7 @@ Do **not** rerun [Beginner stage shape](#beginner-stage-shape) on later stages. 
 
 | Kind | When | Shape |
 |------|------|--------|
-| **New English job** | A construction they could not say after Beginner (soft speech acts, adjective before the noun, nested **`barl`**) | Same lead order as Beginner: English job → Agalan shape → consequence, then **one** worked example, then the table or [Compare with](#compare-with). Cue last, not as the definition. Per-cell cues are optional. |
+| **New English job** | A construction they could not say after Beginner (soft speech acts, adjective before the noun, nested **`barl`**) | Same lead order as Beginner: English job → Agalan shape → consequence, then **ovavo** worked example, then the table or [Compare with](#compare-with). Cue last, not as the definition. Per-cell cues are optional. |
 | **Finish the series** | The rest of a map they already use (full join single-item/standalone, remaining linkers, period/speech rhythm) | One short pointer (“Beginner already used *therefore*”) plus the inventory table. Do not unpack every row as its own H3. |
 | **Rare / stylistic Advanced** | Edge, meter, singing, uncommon variants | Inventory plus one example or one preference sentence. Skip per-cell cues. |
 
@@ -257,10 +257,10 @@ Learner tables use these headers (omit a column when every cell would be empty o
 
 | Column | Binding? | Content |
 |--------|----------|---------|
-| **Agalan** | yes | The spelling (word, letter, or pattern). A **content word** is a [citation](#citation-in-tables) whenever **Same root as** is empty — not a role-marked copy of that citation, and not a bare stem. Inflected **Agalan** (role letter already on) only when **Same root as** is filled and the English needs that letter (`vejel` *see*). |
+| **Agalan** | yes | The spelling (word, letter, or pattern). A **content word** is a [citation](#citation-in-tables) whenever **Same root as** is empty — not a role-marked copy of that citation, and not a bare stem. Inflected **Agalan** (role letter already on) only when **Same root as** is filled and the English needs that letter (`vahahal` *see*). |
 | **Use** | yes | What the form **does** in the clause (subject, command, continue). Not a pun. |
 | **English** | yes | English the learner may **say or produce** (sense or free English). Not a pun, and not an ending tag (`(**-m**)`). |
-| **Same root as** | no | The everyday kind of that root as a [citation](../grammar/word-endings.md) (**-l**): `` `urugul` *brick* ``. Fill it only when this row’s **English** is not that citation’s lemma: a published abstract, a closed overlay, or packed role English that **differs** from the citation (`` `ejel` *eye* `` beside `vejel` *see*). If English already is the citation lemma (*climb*), leave **Same root as** empty and put the citation in **Agalan** (`ugumul`, not `vugumul`). That licenses the picture in **Cue**. Omit the column when every row is a letter, vowel-series, punctuation, or other non-lexicon cue. Empty cells are fine in a mixed drill bank. |
+| **Same root as** | no | The everyday kind of that root as a [citation](../grammar/word-endings.md) (**-l**): `` `abel` *brick* ``. Fill it only when this row’s **English** is not that citation’s lemma: a published abstract, a closed overlay, or packed role English that **differs** from the citation (`` `ahahal` *eye* `` beside `vahahal` *see*). If English already is the citation lemma (*climb*), leave **Same root as** empty and put the citation in **Agalan** (`agawol`, not `vagawol`). That licenses the picture in **Cue**. Omit the column when every row is a letter, vowel-series, punctuation, or other non-lexicon cue. Empty cells are fine in a mixed drill bank. |
 | **Cue** | no | Recall only: **why** the token maps. Cover this column: the rest must still be the language. ([rubric](#cue-rubric)) |
 
 **Use** and **Cue** must not be the same string. If they would be (`add` / *add*), unpack **Use** (*hold / inventory*) and keep the slogan in **Cue**.
@@ -278,7 +278,7 @@ A cue is a **bridge**: one reason the visible token (letter, vowel, emoji) maps 
 | **Bridge** | Hide the emoji, the *literal*, and the letter being punned. What remains still says *why* the token maps to this row. | 🧱 *brick* — leftover is the picture’s name |
 | **Not a caption** | Cue ≠ Unicode/CLDR name, ≠ **Agalan** spelled in English, ≠ `from *smile*` with no why | *doorway*, *zebra*, *timer* alone |
 | **Not the answer** | Cue is not a synonym of **English** / **Use** | *because* restated as *cause* / *foundation* as a second gloss cell |
-| **One hop** | Token → **one** reason → the row | `brick → foundation → because` as three English labels |
+| **One hop** | Token → **ovavo** reason → the row | `brick → foundation → because` as three English labels |
 | **Short** | One clause after the token | A second slogan system |
 
 Scene shape: `{emoji} *{literal}*: {why that evokes this row}` when there is no **Same root as** column. The *literal* is the lexicon **from**; the clause after the colon is the cue proper. When **Same root as** already names the citation and the *literal*, **Cue** is `{emoji}: {why}` — do not repeat *brick* in **Cue**.
@@ -292,9 +292,9 @@ Letter / series: `{letter} ≈ {sound or series slogan} ({why that maps})`. `**d
 | Kind | What it is | Where it goes |
 |------|-----------|----------------|
 | Letter / series | Pun on the spelling (`**d** ≈ done to`, **`a`** *add*) plus why it maps | **Cue** only. Never **Use** or **English**. Linker is **`≈`** (“sounds like”), never `=` or `→`. |
-| Scene | Published emoji + concrete that licenses **-m**, then why that scene evokes the sense | **English** = abstract sense (*happy*, *because*). **Same root as** = citation **-l** of that picture (`uzumul` *smile*). **Cue** = `emoji: why` (or `emoji *literal*: why` if the table has no **Same root as** column) |
+| Scene | Published emoji + concrete that licenses **-m**, then why that scene evokes the sense | **English** = abstract sense (*happy*, *because*). **Same root as** = citation **-l** of that picture (`azahal` *smile*). **Cue** = `emoji: why` (or `emoji *literal*: why` if the table has no **Same root as** column) |
 
-A lexicon path is a real **-l** / **-m** choice; the *concrete* English is still not what drills ask for. Write `*happy*` in **English** (no `(**-m**)` tag — the citation ending already marks abstract), `` `uzumul` *smile* `` in **Same root as**, and `😊: the face of *happy*` (or `from *smile*: the face of *happy*` when the table has no **Same root as** column) in **Cue** — never `smile → *happy*` as the only English. The same **Same root as** / **Cue** split applies when **English** is a role-marked use of the concrete (`*see*` / `vejel` / `` `ejel` *eye* `` / `👁️: seeing is what an eye does`).
+A lexicon path is a real **-l** / **-m** choice; the *concrete* English is still not what drills ask for. Write `*happy*` in **English** (no `(**-m**)` tag — the citation ending already marks abstract), `` `azahal` *smile* `` in **Same root as**, and `😊: the face of *happy*` (or `from *smile*: the face of *happy*` when the table has no **Same root as** column) in **Cue** — never `smile → *happy*` as the only English. The same **Same root as** / **Cue** split applies when **English** is a role-marked use of the concrete (`*see*` / `vahahal` / `` `ahahal` *eye* `` / `👁️: seeing is what an eye does`).
 
 Inline after the rule sentence: `(cue: …)`. Worked examples stay Agalan / morph / quoted free English ([example block](glosses.md#example-block)) — no cue line. Translation-practice spoilers add a visible morph line under the same rules ([translation-exercises.md](translation-exercises.md#principles)). The root bank may add **Same root as** and **Cue** beside **English · Agalan**.
 
@@ -303,13 +303,13 @@ Inline after the rule sentence: `(cue: …)`. Worked examples stay Agalan / morp
 
 A **scene** cue (`emoji *literal*: why`) is for remembering a published picture. State it only when that picture is doing **grammar** work, not when the page is merely using a dictionary metaphor.
 
-**State it** on a **closed overlay**: a fixed special reading under one part of speech (MAY, SAME, CAUSE, ABIL, plan / DECISION, evidentials, NOTIONAL, emotion ACT / LOCUS, clause-pole **`adoro`**, locatives, means, simile *like*, exchange *for*, proxy *on behalf of*, of-relations, special pronouns, universality moods, and the same class). The learner needs the scene to remember why *this* published root hosts that job. Put `(cue: …)` on the **rule sentence** (job, shape, consequence first), or in the inventory **Cue** column with **Same root as** naming the **-l** citation. One line that the same spelling is still ordinary content under other letters is fine.
+**State it** on a **closed overlay**: a fixed special reading under one part of speech (MAY, SAME, CAUSE, ABIL, plan / DECISION, evidentials, NOTIONAL, emotion ACT / LOCUS, clause-pole **`owe`**, locatives, means, simile *like*, exchange *for*, proxy *on behalf of*, of-relations, special pronouns, universality moods, and the same class). The learner needs the scene to remember why *this* published root hosts that job. Put `(cue: …)` on the **rule sentence** (job, shape, consequence first), or in the inventory **Cue** column with **Same root as** naming the **-l** citation. One line that the same spelling is still ordinary content under other letters is fine.
 
-**Do not state it** when the example is ordinary **lexicon abstract** (content **-m**): `welem` *size* / *very*, `hadazam` *hastily*. Do **not** add a following sentence of the form “**`adaza`** here is the published abstract *haste*. (cue: 💨 *dash*: …).” The morph gloss and quoted English already give the sense. **-m** as a system is taught on [word-endings.md](../grammar/word-endings.md#abstract-m); that page (and drill **Cue** cells) may show `from *swan*: the glide of *grace*` because the lesson *is* the abstract ending.
+**Do not state it** when the example is ordinary **lexicon abstract** (content **-m**): `welavam` *size* / *very*, `hadehom` *hastily*. Do **not** add a following sentence of the form “**`adeho`** here is the published abstract *haste*. (cue: 💨 *dash*: …).” The morph gloss and quoted English already give the sense. **-m** as a system is taught on [word-endings.md](../grammar/word-endings.md#abstract-m); that page (and drill **Cue** cells) may show `from *swan*: the glide of *grace*` because the lesson *is* the abstract ending.
 
 | Do | Don’t |
 |----|--------|
-| Overlay lead: **`odoho`** as MAY, then `(cue: 💭 *thought*: a balloon over the scene)` | After `hadazam vawalal`, a sentence that names the lexicon row and restates the dash cue |
+| Overlay lead: **`ovo`** as MAY, then `(cue: 💭 *thought*: a balloon over the scene)` | After `hadehom vowogal`, a sentence that names the lexicon row and restates the dash cue |
 | Overlay table **Cue** for SAME, ABIL, CAUSE, locatives, means, simile *like*, exchange *for*, proxy *on behalf of*, of-relations, … | A post-example etymology footnote on ordinary *haste* / *size* |
 | Cue last on the **rule**, before the first example | Cue as the paragraph *after* the worked examples |
 
@@ -334,31 +334,31 @@ Usual sources (prefer one; reuse the language’s own systems):
 | Minimal clause that shows *only* the new point | Kitchen-sink showcases in Beginner |
 | Everyday [example root bank](drill-generation.md#root-bank) verbs (*walk*, *sleep*, *see*) in **teach** lines | Using that same walk/sleep palette as the default **checkpoint** plot ([checkpoint setting](translation-exercises.md#checkpoint-setting) owns drills) |
 | Published roots when the gloss matches; `PoS` + **`~`/`@`** + `<…>` for donor spelling | Invented “lexicon-shaped” stems, a closed overlay with its own frozen spelling, or split/hyphenated PoS tokens in learner text |
-| Named [house people](#house-cast) when the clause needs a person | Default *I* / *you* (`zugobon` / `zedonen`) as dummy subjects |
+| Named [house people](#house-cast) when the clause needs a person | Default *I* / *you* (`zeman` / `zehan`) as dummy subjects |
 | Omit default **`yal`** when the page is not teaching the speech act | Leading every example with **`yal`** by habit |
-| Morph gloss + **loose** free English by default ([glosses.md](glosses.md)); packed role English when the lexicon lists it (`v-see` for `vejel`) | Merging free English into the morph gloss, or inventing a `/v/` lemma that is not in `english_by_pos` |
+| Morph gloss + **loose** free English by default ([glosses.md](glosses.md)); packed role English when the lexicon lists it (`v-see` for `vahahal`) | Merging free English into the morph gloss, or inventing a `/v/` lemma that is not in `english_by_pos` |
 | Strict free English only when teaching packaging | Strict-only Beginner pages |
 | A negative only when the mix-up is expected ([Compare with](#compare-with)) | Listing “no X” or a **Not this** column by habit |
 
 ### House people
 <a id="house-cast"></a>
 
-When an example needs a **person**, use these nativized names (published root + **-n**). Free English keeps *Azawan*, not *Grace* / *I* / *you*. Checkpoint **English** cells match that name (`*Azawan*`), not `*grace* (name **Azawan**)`. Sense-led *grace* (as a name) is only for [word-endings.md](../grammar/word-endings.md) Beginner citation drills. Do not cast abstract roots as participants (`yal zazawan godogol`, not “grace is more challenging than courage”). Keep abstract roots for the form being taught.
+When an example needs a **person**, use these nativized names (published root + **-n**). Free English keeps *Azawan*, not *Grace* / *I* / *you*. Checkpoint **English** cells match that name (`*Azawan*`), not `*grace* (name **Azawan**)`. Sense-led *grace* (as a name) is only for [word-endings.md](../grammar/word-endings.md) Beginner citation drills. Do not cast abstract roots as participants (`yal zazawan godogal`, not “grace is more challenging than courage”). Keep abstract roots for the form being taught.
 
 | Agalan | English | Root |
 |--------|---------|------|
 | `zazawan` | *Azawan* | `azawa` *grace* |
-| `zululon` | *Ululon* | `ululo` *courage* |
-| `zuhubun` | *Uhubun* | `uhubu` *beauty* |
+| `zalahen` | *Ululon* | `alahe` *courage* |
+| `zahaben` | *Uhubun* | `ahabe` *beauty* |
 
-**`ugobo` / `edone`** only when that page is teaching those specials, the point is the **discourse role** (name unavailable, address set, clusivity), or a closed construction is keyed to speaker/listener (performance **`zugobon`**, viewpoint *my left* when the anchor is the role). Inclusive *we* stays **`aha`**; nonspecific *someone* stays **`enenu`**. Named Mine is overlay **`zuroron`**, not the speaker pronoun. Foreign `PoS<…>n` names only when teaching loans or spans. Checkpoints: [translation-exercises.md](translation-exercises.md#principles). Morph / resume: [glosses.md](glosses.md#house-cast).
+**`ema` / `eha`** only when that page is teaching those specials, the point is the **discourse role** (name unavailable, address set, clusivity), or a closed construction is keyed to speaker/listener (performance **`zeman`**, viewpoint *my left* when the anchor is the role). Inclusive *we* stays **`oha`**; nonspecific *someone* stays **`anu`**. Named Mine is overlay **`zemun`**, not the speaker pronoun. Foreign `PoS<…>n` names only when teaching loans or spans. Checkpoints: [translation-exercises.md](translation-exercises.md#principles). Morph / resume: [glosses.md](glosses.md#house-cast).
 
-**The learner (first person).** When the speaker is the reader, write the name slot **`SELF`** in the Agalan (`zSELFn vawalal.`, greeting `SELFn.`) and a free-standing `SELF` in the morph line (`z-SELF | v-walk`). Free English is *I* / *me* / *my*. The site shows the name the learner chose in the name helper ([word-endings.md](../grammar/word-endings.md#named-n-beginner), nav chip), or **`ugobon`** / *speaker* until they choose. `build` checks the slot as **`ugobo`**. Do not make a house person “name himself” to mean *I*, and do not use a dummy **`zugobon`** where a name is the point. Pages teaching the speaker role itself keep **`ugobo`**. A **Roots used here** row for the slot is `*your name*` / `` `SELFn` ``. Available from word-endings Beginner onward.
+**The learner (first person).** When the speaker is the reader, write the name slot **`SELF`** in the Agalan (`zSELFn vowogal.`, greeting `SELFn.`) and a free-standing `SELF` in the morph line (`z-SELF | v-walk`). Free English is *I* / *me* / *my*. The site shows the name the learner chose in the name helper ([word-endings.md](../grammar/word-endings.md#named-n-beginner), nav chip), or **`eman`** / *speaker* until they choose. `build` checks the slot as **`ema`**. Do not make a house person “name himself” to mean *I*, and do not use a dummy **`zeman`** where a name is the point. Pages teaching the speaker role itself keep **`ema`**. A **Roots used here** row for the slot is `*your name*` / `` `SELFn` ``. Available from word-endings Beginner onward.
 
 Default example block ([layout](glosses.md#example-block)):
 
 ```markdown
-> `zazawan godogol.`
+> `zazawan godogal.`
 >
 > z-Azawan | g-dog
 >
@@ -382,27 +382,27 @@ Short Eng ↔ Agalan checkpoints: end of a page stage only — [translation-exer
 ### Citation in tables
 <a id="citation-in-tables"></a>
 
-Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odogo`, `uzumu`, `azawa`, `odoho`). A content-word **Agalan** cell is a spelling the learner could write **as a word**. If **Same root as** is empty, that spelling is always the [citation](../grammar/word-endings.md#citation-forms) (prefix-less root + ending): `ugumul` *climb*, not `vugumul`. The **inflected** form (role letter already on) is only for rows that also fill **Same root as**, when the English needs that letter (`vejel` *see*). **English** is the lexicon lemma for that spelling (published literal / metaphor / packed role English) — do not tag `(**-m**)` or `(**-l**)` there; the Agalan ending already carries that. **Same root as** stays the everyday **-l** citation of the picture (`urugul` *brick*; `ejel` *eye* when **Agalan** is `vejel`), not a stem, and that picture English is also the published lemma (`*correct*`, not a retired gloss). Checkpoint banks apply the same rule ([translation-exercises.md](translation-exercises.md#template)); `build` checks them.
+Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odoga`, `azaha`, `azawa`, `ovo`). A content-word **Agalan** cell is a spelling the learner could write **as a word**. If **Same root as** is empty, that spelling is always the [citation](../grammar/word-endings.md#citation-forms) (prefix-less root + ending): `agawol` *climb*, not `vagawol`. The **inflected** form (role letter already on) is only for rows that also fill **Same root as**, when the English needs that letter (`vahahal` *see*). **English** is the lexicon lemma for that spelling (published literal / metaphor / packed role English) — do not tag `(**-m**)` or `(**-l**)` there; the Agalan ending already carries that. **Same root as** stays the everyday **-l** citation of the picture (`abel` *brick*; `ahahal` *eye* when **Agalan** is `vahahal`), not a stem, and that picture English is also the published lemma (`*correct*`, not a retired gloss). Checkpoint banks apply the same rule ([translation-exercises.md](translation-exercises.md#template)); `build` checks them.
 
 | Publish | Example |
 |---------|---------|
-| Citation of this row’s sense | `odogol` *dog*; `uzumum` *happy*; `azawan` *Azawan*; `ezazal` *therefore* |
-| Inflected form the row teaches | `thodohom`, `themabam`, `xezazam`, `zaxuvugul`; drill-bank `vejel` *see* |
-| Special with its default ending | citation `ugobon` / `edonen` / `ahan` / `enenun`; in-clause `zugobon` when the slot is the point |
+| Citation of this row’s sense | `odogal` *dog*; `azaham` *happy*; `azawan` *Azawan*; `ezadal` *therefore* |
+| Inflected form the row teaches | `thovom`, `thamam`, `xezadam`, `zaxavadal`; drill-bank `vahahal` *see* |
+| Special with its default ending | citation `eman` / `ehan` / `ohan` / `anun`; in-clause `zeman` when the slot is the point |
 
-Do **not** call `odogo` a citation. Overlay / need / linker / mood inventories use the citation or the floating `/th/` (or `/x/`) word, not the stem (`alodol` or `thalodom`, not `alodo`; `odohol` or `thodohom`, not `odoho`). Combinability (`tha` / `the`, hold endings) belongs in a **pattern** column (`…thal`) or in extra inflected rows, not by stripping the ending.
+Do **not** call `odoga` a citation. Overlay / need / linker / mood inventories use the citation or the floating `/th/` (or `/x/`) word, not the stem (`abal` or `thabam`, not `aba`; `ovol` or `thovom`, not `ovo`). Combinability (`tha` / `the`, hold endings) belongs in a **pattern** column (`…thal`) or in extra inflected rows, not by stripping the ending.
 
 **Exceptions** (a stem or non-word is the right **Agalan** cell):
 
 | Exception | Why | Example |
 |-----------|-----|---------|
 | Not a content root | Letters, IPA, role letters, vowel-series cells, ending / stance slots, number formulas, shape templates | `/z/`; **`a`**; **`xa`**; `…xal`; `g+e`; `ROOTl+1`; “full root **`x`** full root” |
-| Inner piece of an **`x`** word | That piece has **no ending of its own**; a citation there invites a stranded inner suffix | Bank `uvugu` only if the cell is the event after **`ax`**; prefer the whole word `zaxuvugul` |
+| Inner piece of an **`x`** word | That piece has **no ending of its own**; a citation there invites a stranded inner suffix | Bank `avada` only if the cell is the event after **`ax`**; prefer the whole word `zaxavadal` |
 | Naming the constant while endings are the lesson | Prose may say “the same root `azawa`”; the **table** still lists citations | `azawal` / `azawam` / `azawan` in the ending table |
 | Editor matching keys | Lexicon CSVs, this page’s house-cast **Root** column, [example root bank](drill-generation.md#root-bank) token lists — not learner grammar tables | `data/lexicon-published.csv` stems |
-| Language-name composition | Showing **`agala`** + proper **-n** once, not as a vocab row | [introduction.md](../grammar/introduction.md) name gloss |
+| Language-name composition | Showing **`agaza`** + proper **-n** once, not as a vocab row | [introduction.md](../grammar/introduction.md) name gloss |
 
-Resume teaching may talk about a “root prefix” in running prose; the Agalan column is still `zazar` / `zodogor`, not `azawa` / `odogo`.
+Resume teaching may talk about a “root prefix” in running prose; the Agalan column is still `zazar` / `zodogar`, not `azawa` / `odoga`.
 
 **Test:** hide **Use** / **English**. Is the leftover a legal standalone Agalan word (or a letter / pattern / inner-`x` piece on the exception list)? If it is a published content sense with no ending, add the ending.
 

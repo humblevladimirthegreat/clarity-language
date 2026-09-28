@@ -10,10 +10,10 @@ Labeling a person from one behavior is a classic cognitive distortion, and it hi
 
 Agalan lets any label mark how far it reaches with a small infix (`th` + a vowel) before the word ending:
 
-- **tha** — this one occasion: *ganagathal* "angry this time"
-- **the** — a pattern with exceptions: *vululethel* "tends to lie"
-- **tho** — true in one relationship: *galulethom bululon* "a stranger to Ululon" (not a stranger in general)
-- **thu** — a name only, not an explanation: *ganuzuthul* "what gets called anxious"
+- **tha** — this one occasion: *ganegethal* "angry this time"
+- **the** — a pattern with exceptions: *valahathel* "tends to lie"
+- **tho** — true in one relationship: *gelehothom balahen* "a stranger to Ululon" (not a stranger in general)
+- **thu** — a name only, not an explanation: *ganagothul* "what gets called anxious"
 
 None of the four is a claim about someone's essence. The plain word stays neutral, so you aren't forced to mark every label, but when you want to say "he failed" without meaning "he's a failure," the grammar has a one-syllable way to do it. Bonus: the same **tho** form already gave Agalan *behind the house* (the house's own back), so the direction words turned out to be a special case of the same idea.
 
@@ -25,13 +25,13 @@ English *they sang* doesn't say whether they sang together or each on their own,
 
 On a noun, **-x** says *who* is in the group. On a verb or adjective, **-x** says the group does it or has it **as one unit**. Leave it off and it's left open (each one, together, or you don't care).
 
-> `zazawanx vuzunul.`
+> `zazawanx vezehel.`
 >
 > z-Azawan-x | v-sing
 >
 > "Azawan and friends sing." (together or separately - not saying)
 
-> `zazawanx vuzunulx.`
+> `zazawanx vezehelx.`
 >
 > z-Azawan-x | v-sing-x
 >
@@ -39,7 +39,7 @@ On a noun, **-x** says *who* is in the group. On a verb or adjective, **-x** say
 
 It works even with a single named person - the collective verb means others shared the act, even if they aren't named:
 
-> `zazawan vuzunulx.`
+> `zazawan vezehelx.`
 >
 > z-Azawan | v-sing-x
 >
@@ -47,13 +47,13 @@ It works even with a single named person - the collective verb means others shar
 
 Adjectives work the same way:
 
-> `zulebolx garogom.`
+> `zavabalx garagam.`
 >
 > z-file-box-x | g-heavy
 >
 > "The file-boxes are heavy." (each one, or don't care)
 
-> `zulebolx garogomx.`
+> `zavabalx garagamx.`
 >
 > z-file-box-x | g-heavy-x
 >
@@ -67,27 +67,27 @@ Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/plurality.html#ver
 
 When we're unsure about something, we often just keep turning it over in our heads - *maybe he's mad at me, maybe he isn't* - which feels like figuring it out but never actually checks. Agalan makes you say whether you're going to find out.
 
-A possibility is marked with the stance word `odoho` (*may*), and its ending says what you're doing about it:
+A possibility is marked with the stance word `ovo` (*may*), and its ending says what you're doing about it:
 
-* `thodohom` - *may* (just a possibility, the default)
-* `thodohol` - *may - I'll find out* / *let's find out*
-* `thodohor` - *may - who knows* (you're not checking, or can't)
+* `thovom` - *may* (just a possibility, the default)
+* `thovol` - *may - I'll find out* / *let's find out*
+* `thovor` - *may - who knows* (you're not checking, or can't)
 
 None of these is the "right" one. Letting something go with *who knows* is fine. The point is that you notice which one you're doing, so a worry you're never going to check gets called what it is.
 
-> `zululon thodohom vebarul duhubun.`
+> `zalahen thovom vadebal dahaben.`
 >
 > z-Ululon | th-may | v-leave | d-Uhubun
 >
 > "Ululon may be leaving Uhubun."
 
-> `zululon thodohol vubunul dazawan.`
+> `zalahen thovol vabahel dazawan.`
 >
 > z-Ululon | th-may-find-out | v-punch | d-Azawan
 >
 > "Ululon may be punching Azawan - I'll find out."
 
-> `zuhubun thodohor vogorol.`
+> `zahaben thovor vagahul.`
 >
 > z-Uhubun | th-may-who-knows | v-cry
 >
@@ -121,19 +121,19 @@ English pronouns are often ambiguous as to what the antecedent is, especially *i
 
 The first letter is the part of speech in this sentence (`z-` subject, `d-` object, …). After that you copy the antecedent through its second vowel and then end it with -r.
 
-> `zazawan dululon vumudul. zulur dazar vubunul.`
+> `zazawan dalahen vemedul. zalar dazar vabahel.`
 
 > z-Azawan | d-Ululon | v-middle-finger | z←Ululon | d←Azawan | v-punch
 
 > "Azawan flips off Ululon. He (Ululon) punches him (Azawan)."
 
-The pronoun `dazar` was derived from the first three letters of `azawan`, and the pronoun `zulur` was derived from the first three letters of `ululon`.
+The pronoun `dazar` was derived from the first three letters of `azawan`, and the pronoun `zalar` was derived from the first three letters of `alahen`.
 
 If two recent words would share the same short start, you copy the whole earlier word into the pronoun instead. There are over 200 possible three-letter combinations so this doesn't happen often. 
 
 If there are two of the same word, you use an adjective to differentiate them:
 
-> `zodogol gelulul vawalal. zodogol garedel vurunul. zodor gelulul vajul.`
+> `zodogal gubuhal vowogal. zodogal geredal varahal. zodor gubuhal vehahel.`
 
 > z-dog | g-blue | v-walk | z-dog | g-red | v-run | z←dog | g-blue | v-sit
 
@@ -423,7 +423,7 @@ Grammatical number in /r/ClarityLanguage is marked by a particle that goes in fr
 **yo\[number\]** \- at most \[number\]
 
 Generally if you specify the number, you just give the order of magnitude rather than a precise number.   
-**yaberem** \- at least 100 (hundreds)
+**yebehum** \- at least 100 (hundreds)
 
 ## **Habitual Tenses**
 
@@ -565,13 +565,13 @@ Labeling, or ascribing (usually negative) qualities to a person based on their b
 
 *huzedon*: (verb) introduce a universal statement with no known counterexamples (speaker is implied subject)
 
-*vadalol*: (direct object)  conversation
+*vabewalol*: (direct object)  conversation
 
 *relz*: (modifier) our (1st person plural posessive)
 
 *zunon*: (conjunction) the intersection of the class of objects before and after this conjunction
 
-*volonol*: (direct object) longness
+*vadadel*: (direct object) longness
 
 Literal: I can think of no examples where our conversations are long.
 

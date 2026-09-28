@@ -14,13 +14,13 @@ Soft **`yom`** is the same question setting, said more gently (wondering rather 
 
 When every person and action in the clause is already named, the expected reply is *yes* or *no*. (cue: **o** ≈ one: a menu you pick from.)
 
-> `yol zazawan vawalal.`
+> `yol zazawan vowogal.`
 >
 > y-question | z-Azawan | v-walk
 >
 > "Does Azawan walk?"
 
-> `yom zululon velebel.`
+> `yom zalahen vezebal.`
 >
 > y-soft-question | z-Ululon | v-sleep
 >
@@ -36,7 +36,7 @@ With no body at all, the question asks about what was just said: *Huh?* / *What?
 
 If the subject is *nobody* (`zal`) or the clause is *nothing happened* (`xal`), you are still asking *yes* or *no*, not *who*.
 
-> `yol zal vawalal.`
+> `yol zal vowogal.`
 >
 > y-question | z-none | v-walk
 >
@@ -49,7 +49,7 @@ Sometimes you do not want *yes* or *no*. You want the other person to **name** s
 
 Keep **`yol`** or **`yom`** at the start. In the slot you want filled, use a join word that ends in **-r** (`zar`, `var`, `xar`, …). That **-r** is the blank ([unspecified-member **-r**](joins.md#unspecified-member-r-phrase)). (cue: **-r** names this member; **a** ≈ add for *who/what*, **u** ≈ undo for *who/what else*.)
 
-> `yol zar vawalal.`
+> `yol zar vowogal.`
 >
 > y-question | z-who | v-walk
 >
@@ -66,13 +66,13 @@ If the reply is just the fill, not a full sentence, write it as a [citation](wor
 | **a** (`zar` · `var` · `xar`) | fill the add-inventory | *Who/what?* / *What happened?* | **a** ≈ add |
 | **u** (`zur` · `vur` · `xur`) | fill what remains | *Who else?* / *What else?* | **u** ≈ undo |
 
-> `yol zur velebel.`
+> `yol zur vezebal.`
 >
 > y-question | z-who-else | v-sleep
 >
 > "Who else sleeps?"
 
-> `ululon.`
+> `alahen.`
 >
 > "Ululon."
 
@@ -87,13 +87,13 @@ The act word **`yol`** / **`yom`** already makes the sentence a question, so the
 - **Yes/no question:** write a free-standing `?` right after the `/y/` words, so it colors the whole rest of the sentence.
 - **Fill-ask:** attach `?` to the front of each fill-ask word (the join **-r** blank), so the rise falls on what you want filled.
 
-> `yol ? zazawan vawalal.`
+> `yol ? zazawan vowogal.`
 >
 > y-question | ? | z-Azawan | v-walk
 >
 > "Does Azawan walk?"
 
-> `yol ?zar vawalal.`
+> `yol ?zar vowogal.`
 >
 > y-question | ?z-who | v-walk
 >
@@ -105,13 +105,13 @@ The sentence still ends in a period.
 
 If more than one slot has join **-r** in the same question, each of those **-r** words is a blank. The answer is expected to **fill all** of them, in the order you said them.
 
-> `yol zar vejel dar.`
+> `yol zar vahahal dar.`
 >
 > y-question | z-who | v-see | d-who
 >
 > "Who sees what?"
 
-> `azawan odogol.`
+> `azawan odogal.`
 >
 > Azawan | dog
 >
@@ -119,7 +119,7 @@ If more than one slot has join **-r** in the same question, each of those **-r**
 
 If only one slot is unknown, put join **-r** only there. Write the known thing as an ordinary word (`-l` / `-m`).
 
-> `yol zar vejel dodogol.`
+> `yol zar vahahal dodogal.`
 >
 > y-question | z-who | v-see | d-dog
 >
@@ -182,7 +182,7 @@ When a sentence body follows *yes*, write **`yael`** then the body. You do not a
 
 A *…, yes?* confirm tag is its own next turn: finish the statement with a period, then write **`yael.`**
 
-> `zazawan vawalal. yael.`
+> `zazawan vowogal. yael.`
 >
 > z-Azawan | v-walk . y-yes
 >
@@ -190,7 +190,7 @@ A *…, yes?* confirm tag is its own next turn: finish the statement with a peri
 
 That bare **`yael.`** confirms your own claim. To ask the listener to confirm (*…, right?*), put the question word before it: **`yol yael.`** Soft **`yom yael.`** is *…, isn't it?*
 
-> `zazawan vawalal. yol yael.`
+> `zazawan vowogal. yol yael.`
 >
 > z-Azawan | v-walk . y-question | y-yes
 >
@@ -204,7 +204,7 @@ That bare **`yael.`** confirms your own claim. To ask the listener to confirm (*
 
 When the **outer** sentence is a claim (*Azawan sees…*, *Azawan tells Ululon…*) and English would say *whether*, write [**`dorl`**](dependents.md#dependent-clauses) in the object slot. The outer act stays a statement; do not write **`yol`** on the whole stretch.
 
-> `zazawan vejel dorl zululon vawalal.`
+> `zazawan vahahal dorl zalahen vowogal.`
 >
 > z-Azawan | v-see | d-whether-clause | z-Ululon | v-walk
 >
@@ -223,25 +223,25 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `ululon` | |
-| *Uhubun* | `uhubun` | |
-| *umbrella* | `umubul` | |
-| *coat* | `ojal` | |
-| *key* | `agegol` | |
-| *purse* | `uburel` | |
-| *write* | `vuwurul` | |
-| *see* | `vejel` | `ejel` *eye* |
-| *sit* | `vajul` | `ajul` *chair* |
-| *tell* | `vezehel` | `ezehel` *speech* |
-| *punch* | `vubunul` | |
-| *lie* | `vululel` | |
+| *Ululon* | `alahen` | |
+| *Uhubun* | `ahaben` | |
+| *umbrella* | `amebel` | |
+| *coat* | `ogodul` | |
+| *key* | `egehol` | |
+| *purse* | `abezal` | |
+| *write* | `varadal` | |
+| *see* | `vahahal` | `ahahal` *eye* |
+| *sit* | `vehahel` | `ehahel` *chair* |
+| *tell* | `vezebel` | `ezebel` *speech* |
+| *punch* | `vabahel` | |
+| *lie* | `valahal` | |
 
 #### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Does Azawan sit?*
 
 ::: details Show answer
-`yol ? zazawan vajul.`
+`yol ? zazawan vehahel.`
 
 y-question | ? | z-Azawan | v-sit
 :::
@@ -249,7 +249,7 @@ y-question | ? | z-Azawan | v-sit
 **2.** *Who sees the umbrella?*
 
 ::: details Show answer
-`yol ?zar vejel dumubul.`
+`yol ?zar vahahal damebel.`
 
 y-question | ?z-who | v-see | d-umbrella
 :::
@@ -257,7 +257,7 @@ y-question | ?z-who | v-see | d-umbrella
 **3.** *Is Ululon writing, I wonder?*
 
 ::: details Show answer
-`yom zululon vuwurul.`
+`yom zalahen varadal.`
 
 y-soft-question | z-Ululon | v-write
 :::
@@ -265,7 +265,7 @@ y-soft-question | z-Ululon | v-write
 **4.** *Who sees what?*
 
 ::: details Show answer
-`yol zar vejel dar.`
+`yol zar vahahal dar.`
 
 y-question | z-who | v-see | d-who
 :::
@@ -273,7 +273,7 @@ y-question | z-who | v-see | d-who
 **5.** *Who else sees the coat?*
 
 ::: details Show answer
-`yol zur vejel dojal.`
+`yol zur vahahal dogodul.`
 
 y-question | z-who-else | v-see | d-coat
 :::
@@ -281,7 +281,7 @@ y-question | z-who-else | v-see | d-coat
 **6.** *Azawan tells Uhubun. Yes.* (confirm as a second turn)
 
 ::: details Show answer
-`zazawan vezehel buhubun. yael.`
+`zazawan vezebel bahaben. yael.`
 
 z-Azawan | v-tell | b-Uhubun . y-yes
 :::
@@ -304,7 +304,7 @@ y-sure
 
 #### Agalan → English {#beginner-agalan-to-english}
 
-**1.** `yom zuhubun vejel dagegol.`
+**1.** `yom zahaben vahahal degehol.`
 
 ::: details Show answer
 
@@ -313,7 +313,7 @@ y-soft-question | z-Uhubun | v-see | d-key
 *Is Uhubun seeing the key, I wonder?*
 :::
 
-**2.** `yol ?zar vuwurul.`
+**2.** `yol ?zar varadal.`
 
 ::: details Show answer
 
@@ -322,7 +322,7 @@ y-question | ?z-who | v-write
 *Who writes?*
 :::
 
-**3.** `yol zal vajul.`
+**3.** `yol zal vehahel.`
 
 ::: details Show answer
 
@@ -331,7 +331,7 @@ y-question | z-none | v-sit
 *Does nobody sit?*
 :::
 
-**4.** `yol zar vezehel dar.`
+**4.** `yol zar vezebel dar.`
 
 ::: details Show answer
 
@@ -349,7 +349,7 @@ y-yes-soft
 *I think so.* / *Yeah.*
 :::
 
-**6.** `ululon.`
+**6.** `alahen.`
 
 ::: details Show answer
 
@@ -357,7 +357,7 @@ Ululon
 *Ululon.* (just the fill)
 :::
 
-**7.** `yul vubunul.`
+**7.** `yul vabahel.`
 
 ::: details Show answer
 
@@ -366,7 +366,7 @@ y-prohibition | v-punch
 *Don’t punch.*
 :::
 
-**8.** `zululon vululel. yael.`
+**8.** `zalahen valahal. yael.`
 
 ::: details Show answer
 
@@ -391,7 +391,7 @@ Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), 
 
 **`yual`** answers a question that assumes something false. *Have you stopped lying?* has no honest *yes* or *no* if you never lied. **`yual.`** says so in one word, without accepting the frame.
 
-> `yol zazawan vawalal ul bohohul. yual.`
+> `yol zazawan vowogal ul bahazal. yual.`
 >
 > y-question | z-Azawan | v-walk | [from | b-house] . y-reject-frame
 >
@@ -411,7 +411,7 @@ Each stance takes three endings, on the same strong-to-light scale as elsewhere.
 
 **`yaer`** is the honest *oh*. English *oh* and *I see* often sound like agreement. **`yaer`** only says the news reached you. You can repeat the news after it:
 
-> `yaer zazawan vawalal.`
+> `yaer zazawan vowogal.`
 >
 > y-yes-fresh | z-Azawan | v-walk
 >
@@ -419,7 +419,7 @@ Each stance takes three endings, on the same strong-to-light scale as elsewhere.
 
 **`yuar`** declines to answer without saying *no*. Nobody should hear it as a denial.
 
-> `yol zululon velebel. yuar.`
+> `yol zalahen vezebal. yuar.`
 >
 > y-question | z-Ululon | v-sleep . y-reject-frame-fresh
 >
@@ -445,7 +445,7 @@ For a stronger stance, use the [tone mark](speech-moves.md#tone-marks) **`!!`**,
 | *Want this?* / offer | **`yaol`**, reject-this with **`yuol`** | **`yaom`**, reject-this with **`yuom`** |
 | Loaded question | **`yual`** | **`yuam`** |
 
-A stance word can stand alone (`yael.`), sit before a body (`yael zazawan vawalal.`), or come as a confirm tag in the next turn after `.`. After a stance-plus-body beat, keep going with **`/x/`**; write another polar word only when you take a new stance turn. In a solo run of thought, **`yuel`** can mark a correction, **`yaol`** the next step, **`yael`** a point you lock.
+A stance word can stand alone (`yael.`), sit before a body (`yael zazawan vowogal.`), or come as a confirm tag in the next turn after `.`. After a stance-plus-body beat, keep going with **`/x/`**; write another polar word only when you take a new stance turn. In a solo run of thought, **`yuel`** can mark a correction, **`yaol`** the next step, **`yael`** a point you lock.
 
 **Compare with:** *not* inside the clause uses **`zul`** / **`vul`**. Polar **`yuel`** / **`yuol`** answer a *yes* / *no* or an offer.
 
@@ -453,13 +453,13 @@ A stance word can stand alone (`yael.`), sit before a body (`yael zazawan vawala
 
 When the question already contains *not* (*Didn’t Azawan run?*), *yes* and *no* still say whether **that claim** matches. **`yael`** confirms the denial (*true: they didn’t*). **`yuel`** says the denial is false (*they did*). Restate the body after the stance word when you want the polarity said twice. Offer words (**`yaol`** / **`yuol`**) still answer *take this?*, not true/false.
 
-> `yol zazawan vurunul vul. yael.`
+> `yol zazawan varahal vul. yael.`
 >
 > y-question | z-Azawan | [v-run | v-not] . y-yes
 >
 > "Didn’t Azawan run? True, Azawan didn’t."
 
-> `yael vurunul vul.`
+> `yael varahal vul.`
 >
 > y-yes | [v-run | v-not]
 >
@@ -481,7 +481,7 @@ Bare **-r** in the queried slot is unbound *who* / *what*. Bare **`var`** / **`x
 
 To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in the question. Bare **`har`** is the *when* blank.
 
-> `yol zuhubun vawalal har.`
+> `yol zahaben vowogal har.`
 >
 > y-question | z-Uhubun | v-walk | h-when
 >
@@ -497,13 +497,13 @@ To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in
 
 To ask *where?*, keep the [extra-noun hook](hooks.md#extra-noun) that says how the place relates to the event, and put the blank **`bar`** in the `/b/` slot after it. The hook picks which *where* you mean.
 
-> `yol zuhubun vawalal ol bar.`
+> `yol zahaben vowogal ol bar.`
 >
 > y-question | z-Uhubun | v-walk | [at | b-who]
 >
 > "Where does Uhubun walk?"
 
-> `yol zodogol velebel al bar.`
+> `yol zodogal vezebal al bar.`
 >
 > y-question | z-dog | v-sleep | [in | b-who]
 >
@@ -518,15 +518,15 @@ To ask *where?*, keep the [extra-noun hook](hooks.md#extra-noun) that says how t
 | **`ol bor`** | *Anywhere?* |
 | **`ol bur`** | *Where else?* |
 
-Answer with the hook and the landmark, as a [citation](word-endings.md#citation-forms): `ol bohohul.` ("At the house.").
+Answer with the hook and the landmark, as a [citation](word-endings.md#citation-forms): `ol bahazal.` ("At the house.").
 
 **Compare with:** *when?* is **`har`** on `/h/`. Occasions are times or cases, so a place never goes there.
 
 ### How? {#how}
 
-*How?* works like *where?*: keep the word that says how the answer relates to the event, and put the blank **`bar`** after it. For manner (*in what way?*), use the similative [**`hurorom`**](relations.md) *like*.
+*How?* works like *where?*: keep the word that says how the answer relates to the event, and put the blank **`bar`** after it. For manner (*in what way?*), use the similative [**`hemum`**](relations.md) *like*.
 
-> `yol zazawan vawalal hurorom bar.`
+> `yol zazawan vowogal hemum bar.`
 >
 > y-question | z-Azawan | v-walk | h-like | b-who
 >
@@ -538,13 +538,13 @@ Answer with the hook and the landmark, as a [citation](word-endings.md#citation-
 
 *Why?* uses a [condition word](causation.md) with the blank **`bar`**. Pick the word for the kind of reason you want.
 
-> `yol zazawan vawalal thurugum bar.`
+> `yol zazawan vowogal thabem bar.`
 >
 > y-question | z-Azawan | v-walk | th-because | b-who
 >
 > "Why does Azawan walk?" (*because of what?*)
 
-> `yol zazawan vawalal holalam bar.`
+> `yol zazawan vowogal hagom bar.`
 >
 > y-question | z-Azawan | v-walk | h-so-that | b-who
 >
@@ -552,21 +552,21 @@ Answer with the hook and the landmark, as a [citation](word-endings.md#citation-
 
 | Agalan | English |
 |--------|---------|
-| **`thurugum bar`** | *Why?* (*because of what?*) |
-| **`holalam bar`** | *What for?* (*for what purpose?*) |
-| **`thadorom bar`** | *Under what condition?* / *In what case?* |
+| **`thabem bar`** | *Why?* (*because of what?*) |
+| **`hagom bar`** | *What for?* (*for what purpose?*) |
+| **`thowem bar`** | *Under what condition?* / *In what case?* |
 
 ### Echo questions {#echo}
 
 An echo question repeats what someone just said, because you doubt it or did not catch it (*You saw WHAT?*). Repeat the sentence under **`yol`**. Put the doubting [tone mark](speech-moves.md#tone-marks) **`?!`** on the blank or on the word you doubt.
 
-> `yol zedonen vejel ?!dar.`
+> `yol zehan vahahal ?!dar.`
 >
 > y-question | z-listener | v-see | ?!d-who
 >
 > "You saw WHAT?"
 
-> `yol ?!zazawan vawalal.`
+> `yol ?!zazawan vowogal.`
 >
 > y-question | ?!z-Azawan | v-walk
 >
@@ -576,7 +576,7 @@ An echo question repeats what someone just said, because you doubt it or did not
 
 To report a *who* / *what* question inside a claim (*Azawan asks who walks*), put the same blank you would use in a direct question inside [**`dorl`**](#embedded-whether).
 
-> `zazawan vezehel dorl zar vawalal.`
+> `zazawan vezebel dorl zar vowogal.`
 >
 > z-Azawan | v-tell | d-whether-clause | z-something | v-walk
 >
@@ -594,7 +594,7 @@ A *yes/no* question can put a join ending on a **named** item instead of a fill-
 >
 > "Just Azawan?"
 
-> `yol zuhubun zam.`
+> `yol zahaben zam.`
 >
 > y-question | [z-Uhubun | z-and.open]
 >
@@ -614,22 +614,22 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `ululon` | |
-| *Uhubun* | `uhubun` | |
-| *key* | `agegol` | |
-| *phone* | `onel` | |
-| *sit* | `vajul` | `ajul` *chair* |
-| *tell* | `vezehel` | `ezehel` *speech* |
-| *attest* | `vadezel` | |
-| *lie* | `vululel` | |
-| *punch* | `vubunul` | |
+| *Ululon* | `alahen` | |
+| *Uhubun* | `ahaben` | |
+| *key* | `egehol` | |
+| *phone* | `ovavol` | |
+| *sit* | `vehahel` | `ehahel` *chair* |
+| *tell* | `vezebel` | `ezebel` *speech* |
+| *attest* | `vodel` | |
+| *lie* | `valahal` | |
+| *punch* | `vabahel` | |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Didn’t Azawan tell?* Then confirm: *true, Azawan didn’t.*
 
 ::: details Show answer
-`yol zazawan vezehel vul.`
+`yol zazawan vezebel vul.`
 
 y-question | z-Azawan | [v-tell | v-not]
 `yael.`
@@ -638,7 +638,7 @@ y-question | z-Azawan | [v-tell | v-not]
 **2.** *When does Uhubun sit?*
 
 ::: details Show answer
-`yol zuhubun vajul har.`
+`yol zahaben vehahel har.`
 
 y-question | z-Uhubun | v-sit | h-when
 :::
@@ -646,7 +646,7 @@ y-question | z-Uhubun | v-sit | h-when
 **3.** *Which key?* (one unknown)
 
 ::: details Show answer
-`yol zagegol zar.`
+`yol zegehol zar.`
 
 y-question | [z-key | z-who]
 :::
@@ -654,7 +654,7 @@ y-question | [z-key | z-who]
 **4.** *Just Ululon?* (confirm the singleton)
 
 ::: details Show answer
-`yol zululon zal.`
+`yol zalahen zal.`
 
 y-question | [z-Ululon | z-and]
 :::
@@ -662,7 +662,7 @@ y-question | [z-Ululon | z-and]
 **5.** *How about Uhubun?* (offer)
 
 ::: details Show answer
-`yol zuhubun zam.`
+`yol zahaben zam.`
 
 y-question | [z-Uhubun | z-and.open]
 :::
@@ -678,7 +678,7 @@ y-refuse-option
 **7.** *When does Ululon sleep?*
 
 ::: details Show answer
-`yol zululon velebel har.`
+`yol zalahen vezebal har.`
 
 y-question | z-Ululon | v-sleep | h-when
 :::
@@ -693,7 +693,7 @@ y-question | z-Ululon | v-sleep | h-when
 
 #### Agalan → English {#intermediate-agalan-to-english}
 
-**1.** `yael vadezel vul.`
+**1.** `yael vodel vul.`
 
 ::: details Show answer
 
@@ -720,7 +720,7 @@ y-question | v-who
 *What did they do?*
 :::
 
-**4.** `yol donel dor.`
+**4.** `yol dovavol dor.`
 
 ::: details Show answer
 
@@ -746,7 +746,7 @@ y-refuse-option-soft
 *Not that.* (soft reject of this option)
 :::
 
-**7.** Reply to `yol zululon vululel vul.` (*Didn’t Ululon lie?*): `yuel vululel.`
+**7.** Reply to `yol zalahen valahal vul.` (*Didn’t Ululon lie?*): `yuel valahal.`
 
 ::: details Show answer
 
@@ -755,7 +755,7 @@ y-question | z-Ululon | [v-lie | v-not] . y-no | v-lie
 *Didn’t Ululon lie? — False: (Ululon) did lie.*
 :::
 
-**8.** `yol zar vezehel buhubun har.`
+**8.** `yol zar vezebel bahaben har.`
 
 ::: details Show answer
 
@@ -865,10 +865,10 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | English | Agalan |
 |---------|--------|
 | *Azawan* | `azawan` |
-| *Ululon* | `ululon` |
-| *Uhubun* | `uhubun` |
-| *trophy* | `odobol` |
-| *bell* | `obelel` |
+| *Ululon* | `alahen` |
+| *Uhubun* | `ahaben` |
+| *trophy* | `odovel` |
+| *bell* | `ebevol` |
 
 #### English → Agalan {#advanced-english-to-agalan}
 
@@ -883,7 +883,7 @@ y-question | [z-Azawan | z-rank/more]
 **2.** *Prefer Ululon?* / *Ululon first?* (rank offer)
 
 ::: details Show answer
-`yol zululon zem.`
+`yol zalahen zem.`
 
 y-question | [z-Ululon | z-rank/more.open]
 :::
@@ -891,7 +891,7 @@ y-question | [z-Ululon | z-rank/more.open]
 **3.** *Has to be Uhubun?*
 
 ::: details Show answer
-`yol zuhubun zol.`
+`yol zahaben zol.`
 
 y-question | [z-Uhubun | z-or-exactly-one]
 :::
@@ -907,7 +907,7 @@ y-question | z-equal-rank
 **5.** *Is the trophy enough?*
 
 ::: details Show answer
-`yol zodobol zaol.`
+`yol zodovel zaol.`
 
 y-question | [z-trophy | z-and/or]
 :::
@@ -930,7 +930,7 @@ y-no . y-refuse-option
 *no / false* (truth flip). *not that* (reject this option).
 :::
 
-**3.** `yol zobelel zual.`
+**3.** `yol zebevol zual.`
 
 ::: details Show answer
 
@@ -948,7 +948,7 @@ y-question | z-in-order
 *Any order?* / *In no particular order?*
 :::
 
-**5.** `yol zululon zuhubun zel.`
+**5.** `yol zalahen zahaben zel.`
 
 ::: details Show answer
 

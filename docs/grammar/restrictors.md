@@ -9,7 +9,7 @@ Use these words when you want to say **when** a claim counts: *only when raining
 
 A restrictor names the **occasions** (times or cases) in which the verb claim is true. Put those occasion words immediately **before** the restrictor, in the adverb slot (`/h/`); the restrictor sits last and closes the row from the right, the way a join closes a list. Closed **-l** means this is the full set of times you stand behind. (cue: **a** ≈ add, an inventory of times.)
 
-> `zazawan vawalal hanunul hal.`
+> `zazawan vowogal herehel hal.`
 >
 > z-Azawan | v-walk | h-rain | h-only-when
 >
@@ -17,7 +17,7 @@ A restrictor names the **occasions** (times or cases) in which the verb claim is
 
 With **no** occasion listed, the inventory is empty, so the claim never counts: bare **`hal`** is *never*. (cue: empty **a** ≈ add inventory plus closed **-l**.)
 
-> `zululon vawalal hal.`
+> `zalahen vowogal hal.`
 >
 > z-Ululon | v-walk | h-never
 >
@@ -25,7 +25,7 @@ With **no** occasion listed, the inventory is empty, so the claim never counts: 
 
 **Compare with:** two manner adverbs in a row with no restrictor still both apply (*quickly and quietly*). English *and* there just stacks descriptions on the same walk; it does not pick *when* the walk counts. A restrictor answers **when the verb claim counts**. Packaging members as one list still uses a [join](joins.md). English *the guard who sits* names which person ([which person or thing](dependents.md#which-noun)); it is not a restrictor.
 
-> `zazawan vawalal hadazam howom.`
+> `zazawan vowogal hadehom halahom.`
 >
 > z-Azawan | v-walk | h-haste | h-quietude
 >
@@ -35,13 +35,13 @@ With **no** occasion listed, the inventory is empty, so the claim never counts: 
 
 To say the verb claim counts at every time, or at every time except some listed ones, use **`hual`** (open **`huam`** if you want a hedge: *as far as you can tell*). Bare **`hual`** is *always*; with occasion words before it, those times are the exceptions (*always except when…*). (cue: **u** ≈ undo then **a** ≈ add.)
 
-> `zuhubun vuzunul hual.`
+> `zahaben vezehel hual.`
 >
 > z-Uhubun | v-sing | h-always
 >
 > "Uhubun always sings."
 
-> `zazawan vawalal hanunul hual.`
+> `zazawan vowogal herehel hual.`
 >
 > z-Azawan | v-walk | h-rain | h-always-except
 >
@@ -59,13 +59,13 @@ English *sometimes* is the usual match next to *never* / *always*. It still only
 | **`hor`** | unspecified member of a one-choice time menu | *anytime* (any one particular time, whichever you pick) | **o** ≈ one |
 | **`hur`** | unspecified leftover occasion | *some other time* | **u** ≈ undo |
 
-> `zululon vurunul har.`
+> `zalahen varahal har.`
 >
 > z-Ululon | v-run | h-sometimes
 >
 > "Ululon runs sometimes."
 
-> `zuhubun vawalal hor.`
+> `zahaben vowogal hor.`
 >
 > z-Uhubun | v-walk | h-anytime
 >
@@ -73,13 +73,13 @@ English *sometimes* is the usual match next to *never* / *always*. It still only
 
 **`hur`** names an occasion **outside** the times already in play: leftover, not the listed ones, and with nothing listed, leftover of the times already under discussion. Bare **`hur`** only says some leftover occasion exists (*at some other time*). It does not say the claim holds at leftover times in general.
 
-> `yol zuhubun vawalal hanunul.`
+> `yol zahaben vowogal herehel.`
 >
 > y-question | z-Uhubun | v-walk | h-rain
 >
 > "Does Uhubun walk when raining?"
 
-> `yuel. zuhubun vawalal hur.`
+> `yuel. zahaben vowogal hur.`
 >
 > y-no . z-Uhubun | v-walk | h-some-other-time
 >
@@ -89,37 +89,37 @@ English *sometimes* is the usual match next to *never* / *always*. It still only
 
 The same restrictor vowels and endings can limit **only the host you are about to write**, not the whole verb claim. Spell them with letter **`w`** instead of **`h`**. The host is the next adjective. Occasion words that belong to that host sit immediately before the restrictor and also take **`w`**. `/h/` still limits the clause.
 
-> `zazawan wal guzumum.`
+> `zazawan wal gazaham.`
 >
 > z-Azawan | [w-never | g-happy]
 >
 > "Azawan is never happy."
 
-> `zululon wual guzumum.`
+> `zalahen wual gazaham.`
 >
 > z-Ululon | [w-always | g-happy]
 >
 > "Ululon is always happy."
 
-> `zuhubun war guzumum.`
+> `zahaben war gazaham.`
 >
 > z-Uhubun | [w-sometimes | g-happy]
 >
 > "Uhubun is sometimes happy."
 
-> `zazawan wanunul wal guzumum.`
+> `zazawan werehel wal gazaham.`
 >
 > z-Azawan | [w-rain | w-only-when | g-happy]
 >
 > "Azawan is happy only when raining."
 
-> `zululon wor guzumum.`
+> `zalahen wor gazaham.`
 >
 > z-Ululon | [w-anytime | g-happy]
 >
 > "Ululon is happy anytime."
 
-> `zuhubun wur guzumum.`
+> `zahaben wur gazaham.`
 >
 > z-Uhubun | [w-some-other-time | g-happy]
 >
@@ -141,7 +141,7 @@ Open **-m** leaves other occasions possible: *when raining, among other times*, 
 | **`hal` / `ham`** | listed times; empty list is *never* | *only when…* / *when…, among other occasions* · bare *never* / *never, as far as you can tell* | **a** ≈ add |
 | **`hual` / `huam`** | every time minus listed exceptions | *always except when…* · bare *always* / *always, as far as you can tell* | **u** ≈ undo then **a** ≈ add |
 
-> `zazawan velebel hanunul hunugul ham.`
+> `zazawan vezebal herehel hanadal ham.`
 >
 > z-Azawan | v-sleep | h-rain | h-night | h-when.open
 >
@@ -158,23 +158,23 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `ululon` | |
-| *Uhubun* | `uhubun` | |
-| *swim* | `vuzuwul` | |
-| *happy* | `uzumum` | `uzumul` *smile* |
-| *rain* | `anunul` | |
-| *night* | `unugul` | |
-| *thunderstorm* | `unerol` | |
-| *haste* | `hadazam` | `adazal` *dash* |
-| *quietude* | `howom` | `owol` *owl* |
-| *punch* | `vubunul` | |
+| *Ululon* | `alahen` | |
+| *Uhubun* | `ahaben` | |
+| *swim* | `vezewel` | |
+| *happy* | `azaham` | `azahal` *smile* |
+| *rain* | `erehel` | |
+| *night* | `anadal` | |
+| *thunderstorm* | `avodel` | |
+| *haste* | `hadehom` | `adehol` *dash* |
+| *quietude* | `halahom` | `alahol` *owl* |
+| *punch* | `vabahel` | |
 
 #### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Azawan swims only at night.*
 
 ::: details Show answer
-`zazawan vuzuwul hunugul hal.`
+`zazawan vezewel hanadal hal.`
 
 z-Azawan | v-swim | h-night | h-only-when
 :::
@@ -182,7 +182,7 @@ z-Azawan | v-swim | h-night | h-only-when
 **2.** *Ululon never swims.*
 
 ::: details Show answer
-`zululon vuzuwul hal.`
+`zalahen vezewel hal.`
 
 z-Ululon | v-swim | h-never
 :::
@@ -190,7 +190,7 @@ z-Ululon | v-swim | h-never
 **3.** *Uhubun always swims.*
 
 ::: details Show answer
-`zuhubun vuzuwul hual.`
+`zahaben vezewel hual.`
 
 z-Uhubun | v-swim | h-always
 :::
@@ -198,7 +198,7 @@ z-Uhubun | v-swim | h-always
 **4.** *Azawan is never happy.*
 
 ::: details Show answer
-`zazawan wal guzumum.`
+`zazawan wal gazaham.`
 
 z-Azawan | [w-never | g-happy]
 :::
@@ -206,7 +206,7 @@ z-Azawan | [w-never | g-happy]
 **5.** *Ululon swims sometimes.*
 
 ::: details Show answer
-`zululon vuzuwul har.`
+`zalahen vezewel har.`
 
 z-Ululon | v-swim | h-sometimes
 :::
@@ -214,7 +214,7 @@ z-Ululon | v-swim | h-sometimes
 **6.** *Azawan swims quickly and quietly.*
 
 ::: details Show answer
-`zazawan vuzuwul hadazam howom.`
+`zazawan vezewel hadehom halahom.`
 
 z-Azawan | v-swim | h-haste | h-quietude
 :::
@@ -222,7 +222,7 @@ z-Azawan | v-swim | h-haste | h-quietude
 **7.** *Uhubun swims anytime.*
 
 ::: details Show answer
-`zuhubun vuzuwul hor.`
+`zahaben vezewel hor.`
 
 z-Uhubun | v-swim | h-anytime
 :::
@@ -230,14 +230,14 @@ z-Uhubun | v-swim | h-anytime
 **8.** *Ululon always punches Azawan.*
 
 ::: details Show answer
-`zululon vubunul dazawan hual.`
+`zalahen vabahel dazawan hual.`
 
 z-Ululon | v-punch | d-Azawan | h-always
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
 
-**1.** `zululon vuzuwul hunugul hal.`
+**1.** `zalahen vezewel hanadal hal.`
 
 ::: details Show answer
 
@@ -246,7 +246,7 @@ z-Ululon | v-swim | h-night | h-only-when
 *Ululon swims only at night.*
 :::
 
-**2.** `zazawan vuzuwul hal.`
+**2.** `zazawan vezewel hal.`
 
 ::: details Show answer
 
@@ -255,7 +255,7 @@ z-Azawan | v-swim | h-never
 *Azawan never swims.*
 :::
 
-**3.** `zululon wual guzumum.`
+**3.** `zalahen wual gazaham.`
 
 ::: details Show answer
 
@@ -264,7 +264,7 @@ z-Ululon | [w-always | g-happy]
 *Ululon is always happy.*
 :::
 
-**4.** `zuhubun vuzuwul hur.`
+**4.** `zahaben vezewel hur.`
 
 ::: details Show answer
 
@@ -273,7 +273,7 @@ z-Uhubun | v-swim | h-some-other-time
 *Uhubun swims at some other time.*
 :::
 
-**5.** `zazawan vuzuwul hanunul hunugul ham.`
+**5.** `zazawan vezewel herehel hanadal ham.`
 
 ::: details Show answer
 
@@ -282,7 +282,7 @@ z-Azawan | v-swim | h-rain | h-night | h-when.open
 *Azawan swims when raining and at night, among other times.*
 :::
 
-**6.** `zuhubun war guzumum.`
+**6.** `zahaben war gazaham.`
 
 ::: details Show answer
 
@@ -291,7 +291,7 @@ z-Uhubun | [w-sometimes | g-happy]
 *Uhubun is sometimes happy.*
 :::
 
-**7.** `zazawan vuzuwul hunerol hual.`
+**7.** `zazawan vezewel havodel hual.`
 
 ::: details Show answer
 
@@ -300,7 +300,7 @@ z-Azawan | v-swim | h-thunderstorm | h-always-except
 *Azawan always swims except during a thunderstorm.*
 :::
 
-**8.** `zululon vuzuwul hanunul hual.`
+**8.** `zalahen vezewel herehel hual.`
 
 ::: details Show answer
 
@@ -315,7 +315,7 @@ z-Ululon | v-swim | h-rain | h-always-except
 
 English *when* / *if* can name a **following sentence** (*if Azawan walks*). Write that as a pole word plus extra noun: `/h/` (*when*) or `/th/` (*if*) plus `/b/` [**`barl`**](dependents.md#dependent-clauses). The main sentence stops after **`barl`**; the next sentence is the content. Restrictors still list **phrase** times or cases immediately before the restrictor. Use a restrictor when the occasions are words in the adverb slot; use **`barl`** when the occasion is another full clause.
 
-> `zuhubun vuzunul thadorom barl zazawan vawalal.`
+> `zahaben vezehel thowem barl zazawan vowogal.`
 >
 > z-Uhubun | v-sing | [th-if | b-that-clause] | z-Azawan | v-walk
 >
@@ -323,20 +323,20 @@ English *when* / *if* can name a **following sentence** (*if Azawan walks*). Wri
 
 Each listed restrictor occasion is a simple `/h/` or `/w/` content word, or a complex unit (`/h/` plus `/b/`, or contiguous `/w/` material).
 
-**Compare with:** *only when raining* is a restrictor list (`hanunul hal`). *If Azawan walks* is the stand-in pattern above.
+**Compare with:** *only when raining* is a restrictor list (`herehel hal`). *If Azawan walks* is the stand-in pattern above.
 
 ### More occasions {#more-occasions}
 <a id="defined-core-full"></a>
 
 Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *sometimes* / *anytime* / *some other time* (`har` / `hor` / `hur`). The rest of the same vowel map names exclusive, inclusive, *not when*, ranked, and leftover readings. `/w/` uses that **same** map on the next adjective or prefix-less hook (`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`, and the rows below). One restrictor chain is one `/h/` unit (or one `/w/` stack immediately before its host).
 
-> `zazawan vawalal hanunul hunugul hol.`
+> `zazawan vowogal herehel hanadal hol.`
 >
 > z-Azawan | v-walk | h-rain | h-night | h-when-one
 >
 > "Azawan walks either when raining or at night (not both)."
 
-> `zululon velebel hanunul hozowol haol.`
+> `zalahen vezebal herehel huzul haol.`
 >
 > z-Ululon | v-sleep | h-rain | h-snow | h-when-any-of
 >
@@ -365,7 +365,7 @@ Closed **`hel`** ranks **when** it matters. **`hal`** still means *only when* th
 | **`hael` / `haem`** | equal frequency among occasions | *as often as* / *equally when A and when B* | **a** ≈ add + **e** ≈ order |
 | **`hoel` / `hoem`** | occasions in order | *first when A, then when B* (closed / open) | **o** ≈ one + **e** ≈ order |
 
-> `zazawan vawalal hamubum hozorem hel.`
+> `zazawan vowogal hamabam hagevem hel.`
 >
 > z-Azawan | v-walk | h-emergency | h-convenience | h-when-ranked
 >
@@ -381,7 +381,7 @@ Statement readings below. Asking *when*: [questions.md](questions.md#when).
 | **`hor`** | unspecified member of a one-choice time menu | *anytime among these* | *anytime* | **o** ≈ one + **-r** |
 | **`hur`** | unspecified leftover occasion | *some time other than these* | *some other time* | **u** ≈ undo + **-r** |
 
-> `zazawan wanunul wunugul wol guzumum.`
+> `zazawan werehel wanadal wol gazaham.`
 >
 > z-Azawan | [w-rain | w-night | w-when-one | g-happy]
 >
@@ -399,18 +399,18 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `ululon` | |
-| *Uhubun* | `uhubun` | |
-| *climb* | `vugumul` | |
-| *run* | `vurunul` | |
-| *happy* | `uzumum` | `uzumul` *smile* |
-| *rain* | `anunul` | |
-| *snow* | `ozowol` | |
-| *night* | `unugul` | |
-| *fog* | `avogol` | |
-| *ice* | `ujel` | |
-| *scream* | `vazagal` | |
-| *fall* | `vodowol` | `odowol` *down* |
+| *Ululon* | `alahen` | |
+| *Uhubun* | `ahaben` | |
+| *climb* | `vagawol` | |
+| *run* | `varahal` | |
+| *happy* | `azaham` | `azahal` *smile* |
+| *rain* | `erehel` | |
+| *snow* | `uzul` | |
+| *night* | `anadal` | |
+| *fog* | `avegal` | |
+| *ice* | `azahul` | |
+| *scream* | `vezogel` | |
+| *fall* | `vadahel` | `adahel` *down* |
 | *that-clause* | `barl` | |
 
 #### English → Agalan {#intermediate-english-to-agalan}
@@ -418,7 +418,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Azawan climbs either when raining or at night, not both.*
 
 ::: details Show answer
-`zazawan vugumul hanunul hunugul hol.`
+`zazawan vagawol herehel hanadal hol.`
 
 z-Azawan | v-climb | h-rain | h-night | h-when-one
 :::
@@ -426,7 +426,7 @@ z-Azawan | v-climb | h-rain | h-night | h-when-one
 **2.** *Ululon runs when raining and/or when snowing.*
 
 ::: details Show answer
-`zululon vurunul hanunul hozowol haol.`
+`zalahen varahal herehel huzul haol.`
 
 z-Ululon | v-run | h-rain | h-snow | h-when-any-of
 :::
@@ -434,7 +434,7 @@ z-Ululon | v-run | h-rain | h-snow | h-when-any-of
 **3.** *Uhubun does not climb when there is fog.*
 
 ::: details Show answer
-`zuhubun vugumul havogol hul.`
+`zahaben vagawol havegal hul.`
 
 z-Uhubun | v-climb | h-fog | h-not-when
 :::
@@ -442,7 +442,7 @@ z-Uhubun | v-climb | h-fog | h-not-when
 **4.** *Azawan climbs anytime except when snowing.*
 
 ::: details Show answer
-`zazawan vugumul hozowol huol.`
+`zazawan vagawol huzul huol.`
 
 z-Azawan | v-climb | h-snow | h-anytime-except
 :::
@@ -450,7 +450,7 @@ z-Azawan | v-climb | h-snow | h-anytime-except
 **5.** *Azawan climbs preferably when raining rather than when snowing.*
 
 ::: details Show answer
-`zazawan vugumul hanunul hozowol hel.`
+`zazawan vagawol herehel huzul hel.`
 
 z-Azawan | v-climb | h-rain | h-snow | h-when-ranked
 :::
@@ -458,7 +458,7 @@ z-Azawan | v-climb | h-rain | h-snow | h-when-ranked
 **6.** *Azawan climbs first when there is ice, then when there is fog.*
 
 ::: details Show answer
-`zazawan vugumul hujel havogol hoel.`
+`zazawan vagawol hazahul havegal hoel.`
 
 z-Azawan | v-climb | h-ice | h-fog | h-when-in-order
 :::
@@ -466,7 +466,7 @@ z-Azawan | v-climb | h-ice | h-fog | h-when-in-order
 **7.** *Azawan is happy either when raining or at night, not both.*
 
 ::: details Show answer
-`zazawan wanunul wunugul wol guzumum.`
+`zazawan werehel wanadal wol gazaham.`
 
 z-Azawan | [w-rain | w-night | w-when-one | g-happy]
 :::
@@ -474,14 +474,14 @@ z-Azawan | [w-rain | w-night | w-when-one | g-happy]
 **8.** *Uhubun screams if Ululon falls.*
 
 ::: details Show answer
-`zuhubun vazagal thadorom barl zululon vodowol.`
+`zahaben vezogel thowem barl zalahen vadahel.`
 
 z-Uhubun | v-scream | [th-if | b-that-clause] | z-Ululon | v-fall
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
 
-**1.** `zululon vugumul hanunul hunugul hom.`
+**1.** `zalahen vagawol herehel hanadal hom.`
 
 ::: details Show answer
 
@@ -490,7 +490,7 @@ z-Ululon | v-climb | h-rain | h-night | h-when-one.open
 *Ululon climbs either when raining or at night, or never.*
 :::
 
-**2.** `zululon vugumul hanunul hozowol hael.`
+**2.** `zalahen vagawol herehel huzul hael.`
 
 ::: details Show answer
 
@@ -499,7 +499,7 @@ z-Ululon | v-climb | h-rain | h-snow | h-equally-when
 *Ululon climbs as often when raining as when snowing.*
 :::
 
-**3.** `zazawan vugumul hujel hal.`
+**3.** `zazawan vagawol hazahul hal.`
 
 ::: details Show answer
 
@@ -508,7 +508,7 @@ z-Azawan | v-climb | h-ice | h-only-when
 *Azawan climbs only when there is ice.*
 :::
 
-**4.** `zululon vurunul hanunul hozowol har.`
+**4.** `zalahen varahal herehel huzul har.`
 
 ::: details Show answer
 
@@ -517,7 +517,7 @@ z-Ululon | v-run | h-rain | h-snow | h-sometimes
 *Ululon sometimes runs, on some occasion of rain or snow.*
 :::
 
-**5.** `zululon vurunul hunugul hur.`
+**5.** `zalahen varahal hanadal hur.`
 
 ::: details Show answer
 
@@ -526,7 +526,7 @@ z-Ululon | v-run | h-night | h-some-other-time
 *Ululon runs at some time other than night.*
 :::
 
-**6.** `zuhubun vugumul havogol hul.`
+**6.** `zahaben vagawol havegal hul.`
 
 ::: details Show answer
 
@@ -535,7 +535,7 @@ z-Uhubun | v-climb | h-fog | h-not-when
 *Uhubun does not climb when there is fog.*
 :::
 
-**7.** `zazawan vazagal thadorom barl zululon vodowol.`
+**7.** `zazawan vezogel thowem barl zalahen vadahel.`
 
 ::: details Show answer
 
@@ -544,7 +544,7 @@ z-Azawan | v-scream | [th-if | b-that-clause] | z-Ululon | v-fall
 *Azawan screams if Ululon falls.*
 :::
 
-**8.** `zululon wanunul wunugul wol guzumum.`
+**8.** `zalahen werehel wanadal wol gazaham.`
 
 ::: details Show answer
 

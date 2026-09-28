@@ -60,7 +60,7 @@ Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org
 
 A content word ends with a last consonant `-l` / `-m` / `-n`, or `-r`. That last consonant is the audible end of the word. Inside the word, consonants start syllables. They do not close a syllable in the middle.
 
-`azawan` = *a-za-wan*. `odogol` = *o-do-gol*.
+`azawan` = *a-za-wan*. `odogal` = *o-do-gol*.
 
 ## Intermediate {#intermediate}
 
@@ -85,7 +85,7 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Optional `-x` | [plural](plurality.md) after the suffix | word-final `-lx` / `-mx` / `-nx` / `-rx` (letter `x`) |
 | Stand-in **`-rl` / `-rm`** | [dependent clauses](dependents.md#dependent-clauses) | word-final coda `rl` / `rm` |
 
-A syllable ends with a consonant only at the **end of the word**. In a fused extra-noun [hook compound](hooks.md#hook-compounds), the cited **-l** / **-m** starts the hook's syllable, because the hook begins with a vowel. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zelulul`: prefix `z`, root `elulu`, ending `-l`). Spelling has one pronunciation path. Writing does not mark stress. Musical rhythm may still place emphasis.
+A syllable ends with a consonant only at the **end of the word**. In a fused extra-noun [hook compound](hooks.md#hook-compounds), the cited **-l** / **-m** starts the hook's syllable, because the hook begins with a vowel. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zubuhal`: prefix `z`, root `ubuha`, ending `-l`). Spelling has one pronunciation path. Writing does not mark stress. Musical rhythm may still place emphasis.
 
 **Related form:** word-initial `x` is the [continue](dependents.md#continue-x) prefix (discourse), not a compound seam.
 
@@ -99,7 +99,7 @@ When English says *how many* or *which place*, Agalan writes a [number word](num
 >
 > "Three cats."
 
-`grarel` is `g` + `ra` + digit `re` + `-l`. Each written comma is spoken as a [group separator](numbers.md#group-separator), **`th`** plus the marker’s vowel. Inside a content root, `r` still appears only after a vowel (`uruge`).
+`grarel` is `g` + `ra` + digit `re` + `-l`. Each written comma is spoken as a [group separator](numbers.md#group-separator), **`th`** plus the marker’s vowel. Inside a content root, `r` still appears only after a vowel (`ebade`).
 
 **Compare with:** ordinary endings on content words use [word ending](word-endings.md) senses. Number words reuse those same four letters with [number-specific endings](word-endings.md#number-word-exception).
 
@@ -124,7 +124,7 @@ When you **spell a word aloud** or **name a letter**, say the Agalan name for it
 | `l` | `lo` | *low* |
 | `r` | `ro` | *row* |
 | `y` | `ya` | *yacht* |
-| `g` | `ga` | *gaga* |
+| `g` | `ga` | *gagaya* |
 | `h` | `hu` | *who* |
 | `th` | `tha` | *that* |
 | `x` | `xe` | *shed* |
@@ -175,7 +175,7 @@ Legal clusters: left-hanging `gl-`; number-word role letter + `r`; lexical join 
 
 Try a short Agalan line quickly at a high comfortable pitch:
 
-`zazawan guzumum.`
+`zazawan gazaham.`
 
 / zä.zä.wän ɡu.zu.mum /
 

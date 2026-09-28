@@ -11,7 +11,7 @@ After you have already named a person or thing, the next sentence can point back
 
 **Short resume:** cut the root **up to and including its 2nd vowel**. Prefer this when it already picks the right antecedent.
 
-> `zazawan vawalal. zazar vajul.`
+> `zazawan vowogal. zazar vehahel.`
 >
 > z-Azawan | v-walk . z-←Azawan | v-sit
 >
@@ -19,7 +19,7 @@ After you have already named a person or thing, the next sentence can point back
 
 **Compare with:** English often uses *the* for a kind already in the talk (*A dog walks. **The** dog sits.*). Agalan uses **-r** for that job, not a separate article.
 
-> `zodogol vawalal. zodor vajul.`
+> `zodogal vowogal. zodor vehahel.`
 >
 > z-dog | v-walk . z-←dog | v-sit
 >
@@ -27,9 +27,9 @@ After you have already named a person or thing, the next sentence can point back
 
 **Compare with:** English *the dog that walked* is that same pair of sentences, then **-r** in whatever slot you need. Do not hang a *who / that / which* clause on the noun ([which person or thing](dependents.md#which-noun)).
 
-When that short stem would match the **wrong** recent word, use a **full-root resume**: the **entire root** + **-r**. Short **`ele`** matches both *sleep* (`elebe`) and *big* (`ele`). After both have been used, short `veler` would pick the more recent *big*; full `veleber` picks *sleep*.
+When that short stem would match the **wrong** recent word, use a **full-root resume**: the **entire root** + **-r**. Short **`elava`** matches both *sleep* (`ezeba`) and *big* (`elava`). After both have been used, short `vezer` would pick the more recent *big*; full `vezebar` picks *sleep*.
 
-> `zululon velebel. zazawan gelem. zuhubun veleber.`
+> `zalahen vezebal. zazawan gelavam. zahaben vezebar.`
 >
 > z-Ululon | v-sleep . z-Azawan | g-big . z-Uhubun | v-←sleep.full
 >
@@ -37,7 +37,7 @@ When that short stem would match the **wrong** recent word, use a **full-root re
 
 A **short** resume always needs an earlier word to match. A **full-root** resume can open the talk: with no earlier match, it means the one you both already know (*the dog*, the household's dog).
 
-> `zodogor vawalal.`
+> `zodogar vowogal.`
 >
 > z-←dog.full | v-walk
 >
@@ -47,7 +47,7 @@ A **short** resume always needs an earlier word to match. A **full-root** resume
 
 The antecedent can sit in the same sentence. A resume in the object slot that points back at the subject is English *herself* / *himself* / *themself* (a reflexive).
 
-> `zazawan vejel dazar.`
+> `zazawan vahahal dazar.`
 >
 > z-Azawan | v-see | d-←Azawan
 >
@@ -55,41 +55,41 @@ The antecedent can sit in the same sentence. A resume in the object slot that po
 
 ### Special pronouns {#special-pronouns}
 
-Most of the time you name people with a proper name (`zazawan`, `zululon`) and resume with **-r**. A few closed roots instead name **roles in this conversation**: who is speaking, who is being spoken to, you-and-I together, or a nonspecific *someone*. They take the usual role letter for the slot they fill in the clause (subject, object, and so on). Person roles default to **-n**.
+Most of the time you name people with a proper name (`zazawan`, `zalahen`) and resume with **-r**. A few closed roots instead name **roles in this conversation**: who is speaking, who is being spoken to, you-and-I together, or a nonspecific *someone*. They take the usual role letter for the slot they fill in the clause (subject, object, and so on). Person roles default to **-n**.
 
 When a proper name is available, prefer that name (and its **-r** resume), including for talking about yourself: [proper name](word-endings.md#proper-name--n).
 
-> `zSELFn vawalal.`
+> `zSELFn vowogal.`
 >
 > z-SELF | v-walk
 >
 > "I walk." You name yourself rather than saying *I*.
 
-Use **`ugobo`** (*speaker*) and **`edone`** (*listener*) when what matters is the conversation role, not a name.
+Use **`ema`** (*speaker*) and **`eha`** (*listener*) when what matters is the conversation role, not a name.
 
-> `zugobon dedonen vejel.`
+> `zeman dehan vahahal.`
 >
 > z-speaker | d-listener | v-see
 >
 > "I see you."
 
-> `zugobon vawalal.`
+> `zeman vowogal.`
 >
 > z-speaker | v-walk
 >
 > "I walk."
 
-English *we* can mean “you and I” or “I and my people, not you.” Inclusive *we* (you and I) uses **`aha`**: the speaker and the people being addressed, together (**interlocutors**).
+English *we* can mean “you and I” or “I and my people, not you.” Inclusive *we* (you and I) uses **`oha`**: the speaker and the people being addressed, together (**interlocutors**).
 
-> `zahan vawalal.`
+> `zohan vowogal.`
 >
 > z-interlocutors | v-walk
 >
 > "We (you and I) walk."
 
-**`enenu`** names a nonspecific **individual** (*someone*), not a particular person you have already named. Once that person is in the talk, resume them with content **-r**.
+**`anu`** names a nonspecific **individual** (*someone*), not a particular person you have already named. Once that person is in the talk, resume them with content **-r**.
 
-> `zenenun velebel.`
+> `zanun vezebal.`
 >
 > z-someone | v-sleep
 >
@@ -97,12 +97,12 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`ugobon`** | speaker in this conversation (`zugobon` in subject slot) | *I* | `ugobol` *microphone* | 🎤: the live voice of the person talking |
-| **`edonen`** | listener in this conversation (`zedonen` / `dedonen` in clause) | *you* | `edonel` *headphones* | 🎧: the one receiving the sound |
-| **`ahan`** | speaker and addressees together (`zahan` in subject slot) | *we* (you and I) | `ahal` *handshake* | 🤝: sharing the floor together |
-| **`enenun`** | nonspecific individual (`zenenun` in subject slot) | *someone* | `enenul` *neutral* | 😐: not a particular person |
+| **`eman`** | speaker in this conversation (`zeman` in subject slot) | *I* | `emal` *microphone* | 🎤: the live voice of the person talking |
+| **`ehan`** | listener in this conversation (`zehan` / `dehan` in clause) | *you* | `ehal` *headphones* | 🎧: the one receiving the sound |
+| **`ohan`** | speaker and addressees together (`zohan` in subject slot) | *we* (you and I) | `ohal` *handshake* | 🤝: sharing the floor together |
+| **`anun`** | nonspecific individual (`zanun` in subject slot) | *someone* | `anul` *neutral* | 😐: not a particular person |
 
-**Compare with:** *I and my people* / *you all* / *Azawan and associates* use **-x** ([clusivity](plurality.md#clusivity)). Inclusive *you and I* on this page is **`aha`**. *Here* / *there* and *this* / *that* use these same words as a landmark after a place hook ([deixis](hooks.md#deixis)).
+**Compare with:** *I and my people* / *you all* / *Azawan and associates* use **-x** ([clusivity](plurality.md#clusivity)). Inclusive *you and I* on this page is **`oha`**. *Here* / *thedehu* and *this* / *that* use these same words as a landmark after a place hook ([deixis](hooks.md#deixis)).
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -115,26 +115,26 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *cook* | `vogogol` | `ogogol` *cook* | 🧑‍🍳: the person at the stove |
-| *pour* | `vorurul` | `orurul` *pour* | 🫗: liquid onto a pan |
-| *cookie* | `ogogel` | | |
-| *knife* | `uguvel` | | |
-| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *scream* | `vazagal` | | |
-| *punch* | `vubunul` | | |
-| *speaker* | `ugobon` | `ugobol` *microphone* | 🎤: the live voice of the person talking |
-| *listener* | `edonen` | `edonel` *headphones* | 🎧: the one receiving the sound |
-| *interlocutors* | `ahan` | `ahal` *handshake* | 🤝: sharing the floor together |
-| *someone* | `enenun` | `enenul` *neutral* | 😐: not a particular person |
+| *Ululon* | `alahen` | | |
+| *Uhubun* | `ahaben` | | |
+| *cook* | `vugugal` | `ugugal` *cook* | 🧑‍🍳: the person at the stove |
+| *pour* | `vorul` | `orul` *pour* | 🫗: liquid onto a pan |
+| *cookie* | `ugugol` | | |
+| *knife* | `anaval` | | |
+| *see* | `vahahal` | `ahahal` *eye* | 👁️: seeing is what an eye does |
+| *scream* | `vezogel` | | |
+| *punch* | `vabahel` | | |
+| *speaker* | `eman` | `emal` *microphone* | 🎤: the live voice of the person talking |
+| *listener* | `ehan` | `ehal` *headphones* | 🎧: the one receiving the sound |
+| *interlocutors* | `ohan` | `ohal` *handshake* | 🤝: sharing the floor together |
+| *someone* | `anun` | `anul` *neutral* | 😐: not a particular person |
 
 #### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Azawan pours. They cook.*
 
 ::: details Show answer
-`zazawan vorurul. zazar vogogol.`
+`zazawan vorul. zazar vugugal.`
 
 z-Azawan | v-pour . z-←Azawan | v-cook
 :::
@@ -142,7 +142,7 @@ z-Azawan | v-pour . z-←Azawan | v-cook
 **2.** *A cook pours. The cook cooks.*
 
 ::: details Show answer
-`zogogol vorurul. zogor vogogol.`
+`zugugal vorul. zugur vugugal.`
 
 z-cook | v-pour . z-←cook | v-cook
 :::
@@ -150,7 +150,7 @@ z-cook | v-pour . z-←cook | v-cook
 **3.** *Ululon cooks. Azawan sees a cookie. Uhubun does so.*
 
 ::: details Show answer
-`zululon vogogol. zazawan dogogel vejel. zuhubun vogogor.`
+`zalahen vugugal. zazawan dugugol vahahal. zahaben vugugar.`
 
 z-Ululon | v-cook . z-Azawan | d-cookie | v-see . z-Uhubun | v-←cook.full
 :::
@@ -158,7 +158,7 @@ z-Ululon | v-cook . z-Azawan | d-cookie | v-see . z-Uhubun | v-←cook.full
 **4.** *I see you.*
 
 ::: details Show answer
-`zugobon dedonen vejel.`
+`zeman dehan vahahal.`
 
 z-speaker | d-listener | v-see
 :::
@@ -166,7 +166,7 @@ z-speaker | d-listener | v-see
 **5.** *We (you and I) cook.*
 
 ::: details Show answer
-`zahan vogogol.`
+`zohan vugugal.`
 
 z-interlocutors | v-cook
 :::
@@ -174,7 +174,7 @@ z-interlocutors | v-cook
 **6.** *You scream.*
 
 ::: details Show answer
-`zedonen vazagal.`
+`zehan vezogel.`
 
 z-listener | v-scream
 :::
@@ -182,7 +182,7 @@ z-listener | v-scream
 **7.** *Azawan punches me.*
 
 ::: details Show answer
-`zazawan dugobon vubunul.`
+`zazawan deman vabahel.`
 
 z-Azawan | d-speaker | v-punch
 :::
@@ -190,14 +190,14 @@ z-Azawan | d-speaker | v-punch
 **8.** *Someone punches Uhubun.*
 
 ::: details Show answer
-`zenenun duhubun vubunul.`
+`zanun dahaben vabahel.`
 
 z-someone | d-Uhubun | v-punch
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
 
-**1.** `zululon vogogol. zulur vorurul.`
+**1.** `zalahen vugugal. zalar vorul.`
 
 ::: details Show answer
 
@@ -206,7 +206,7 @@ z-Ululon | v-cook . z-←Ululon | v-pour
 *Ululon cooks. He pours.*
 :::
 
-**2.** `zuhubun vorurul. zuhur vogogol.`
+**2.** `zahaben vorul. zahar vugugal.`
 
 ::: details Show answer
 
@@ -215,7 +215,7 @@ z-Uhubun | v-pour . z-←Uhubun | v-cook
 *Uhubun pours. She cooks.*
 :::
 
-**3.** `zululon duguvel vejel. zulur dugur vejel.`
+**3.** `zalahen danaval vahahal. zalar danar vahahal.`
 
 ::: details Show answer
 
@@ -224,7 +224,7 @@ z-Ululon | d-knife | v-see . z-←Ululon | d-←knife | v-see
 *Ululon sees a knife. He sees the knife.*
 :::
 
-**4.** `zuhubun vogogol. zululon dogogel vejel. zazawan vogogor.`
+**4.** `zahaben vugugal. zalahen dugugol vahahal. zazawan vugugar.`
 
 ::: details Show answer
 
@@ -233,7 +233,7 @@ z-Uhubun | v-cook . z-Ululon | d-cookie | v-see . z-Azawan | v-←cook.full
 *Uhubun cooks. Ululon sees a cookie. Azawan does so.*
 :::
 
-**5.** `zazawan dedonen vejel.`
+**5.** `zazawan dehan vahahal.`
 
 ::: details Show answer
 
@@ -242,7 +242,7 @@ z-Azawan | d-listener | v-see
 *Azawan sees you.*
 :::
 
-**6.** `zahan vorurul.`
+**6.** `zohan vorul.`
 
 ::: details Show answer
 
@@ -251,7 +251,7 @@ z-interlocutors | v-pour
 *We (you and I) pour.*
 :::
 
-**7.** `zenenun vazagal.`
+**7.** `zanun vezogel.`
 
 ::: details Show answer
 
@@ -260,7 +260,7 @@ z-someone | v-scream
 *Someone screams.*
 :::
 
-**8.** `yol zugobon vogogol.`
+**8.** `yol zeman vugugal.`
 
 ::: details Show answer
 
@@ -277,8 +277,8 @@ Beginner already used content **-r** in the same slot as the earlier word (*he s
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `/z/` … `-r` after `/z/` | same subject again | *he / she / it / they*; *that one* |
-| `/d/` … `-r` after `/d/` | same object again | *him / her / it / them*; *that one* |
+| `/z/` … `-r` after `/z/` | same subject again | *he / she / it / they*; *that ovavo* |
+| `/d/` … `-r` after `/d/` | same object again | *him / her / it / them*; *that ovavo* |
 | `/b/` … `-r` after `/b/` | same extra-noun argument | *him / her / it / them* as recipient, or as the relation’s argument |
 | `/v/` … `-r` after `/v/` | same action again | *do so* / *do that* |
 | `/ɡ/` … `-r` after `/ɡ/` | same property again | *such* / *that* / *so* |
@@ -290,13 +290,13 @@ Beginner already used content **-r** in the same slot as the earlier word (*he s
 
 For English *too* / *also*, resume the action. `/v/` **-r** is *the same action again*, so a new subject with a resumed verb reads *does so too*. With the same subject, recast the verb with a new object: *does the same with the dog too*.
 
-> `zululon vawalal. zazawan vawalar.`
+> `zalahen vowogal. zazawan vowogar.`
 >
 > z-Ululon | v-walk . z-Azawan | v-←walk.full
 >
 > "Ululon walks. Azawan does too."
 
-> `zazawan vejel dagadal. zazawan vejer dodogol.`
+> `zazawan vahahal dagadal. zazawan vahahar dodogal.`
 >
 > z-Azawan | v-see | d-cat . z-Azawan | v-←see | d-dog
 >
@@ -308,7 +308,7 @@ For English *too* / *also*, resume the action. `/v/` **-r** is *the same action 
 
 English *going back to X* / *returning to that thread* names an earlier person or thing without making the next sentence *about* them. Use continue `/x/` plus the resume stem and **-r**. You can drop that word and the following claim is unchanged; it only points the listener at which earlier thread you mean.
 
-> `zazawan vawalal. zululon vurunul. xazar velebel.`
+> `zazawan vowogal. zalahen varahal. xazar vezebal.`
 >
 > z-Azawan | v-walk . z-Ululon | v-run . x-←Azawan | v-sleep
 >
@@ -320,7 +320,7 @@ English *going back to X* / *returning to that thread* names an earlier person o
 
 Sometimes you still mean that person or thing, but you need a **different** slot: the doing, the kind, the manner. Change only the first letter; keep the resume stem and **-r**. English then uses a longer phrase (*do the same with him*, *of that kind*) instead of *he* / *him*.
 
-> `zazawan vajul. zululon vazar.`
+> `zazawan vehahel. zalahen vazar.`
 >
 > z-Azawan | v-sit . z-Ululon | v-←Azawan
 >
@@ -334,9 +334,9 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 | verb antecedent, `/h/` … `-r` | recast as manner | *by doing so* / *thereby* |
 | adjective antecedent, noun … `-r` | recast as entity | *the … one* / *that quality* |
 
-For English *one* (*a blue one*, *the red one*), write the unspecified **`dar`** *something* and resume the noun as a kind on `/ɡ/`, then add the new property. **`dodor`** would be the same dog; **`dar`** with **`godor`** is another thing of the dog kind.
+For English *ovavo* (*a blue ovavo*, *the red one*), write the unspecified **`dar`** *something* and resume the noun as a kind on `/ɡ/`, then add the new property. **`dodor`** would be the same dog; **`dar`** with **`godor`** is another thing of the dog kind.
 
-> `zazawan dodogol garedel vejel. zululon dar godor gelulul vejel.`
+> `zazawan dodogal geredal vahahal. zalahen dar godor gubuhal vahahal.`
 >
 > z-Azawan | [d-dog | g-red] | v-see . z-Ululon | [d-something | g-←dog] | g-blue | v-see
 >
@@ -344,29 +344,29 @@ For English *one* (*a blue one*, *the red one*), write the unspecified **`dar`**
 
 ### Each other {#reciprocal}
 
-For *each other*, join the people in `/z/` and add **`hezazem`** after the verb. The root is **`ezaze`** *reciprocity*: each one does it to the others. Do not write a resume in `/d/` (`dazar` would just mean Azawan again).
+For *each other*, join the people in `/z/` and add **`hedom`** after the verb. The root is **`edo`** *reciprocity*: each one does it to the others. Do not write a resume in `/d/` (`dezor` would just mean Azawan again).
 
-> `zazawan zululon zal vejel hezazem.`
+> `zazawan zalahen zal vahahal hedom.`
 >
 > [z-Azawan | z-Ululon | z-and] | v-see | h-reciprocity
 >
 > "Azawan and Ululon see each other."
 
-With **-l**, **`hezazel`** is strictly pairwise: every one of them does it to every other one. **-m** is the everyday *each other* / *one another*, where it only has to go both ways in general.
+With **-l**, **`hedol`** is strictly pairwise: every one of them does it to every other one. **-m** is the everyday *each other* / *ovavo another*, where it only has to go both ways in general.
 
-**Compare with:** **`thezazem barl`** on `/th/` is *if and only if* ([dependents](dependents.md#dependent-clauses)). On `/h/` with no `/b/`, the same root is *each other*.
+**Compare with:** **`thedom barl`** on `/th/` is *if and only if* ([dependents](dependents.md#dependent-clauses)). On `/h/` with no `/b/`, the same root is *each other*.
 
 ### Addressing several people
 
-When you address several people at once, English *you* does not say how many. The listener root **`edone`** plus associative **-x** names everyone this turn addresses: the vocative cluster, plus anyone still held as addressee. One addressee stays singular **`edone`**; several take **`edone…x`**. Inclusive *shall we* stays **`aha`**. Soft **`zaham`** hedges whether you really share the act.
+When you address several people at once, English *you* does not say how many. The listener root **`eha`** plus associative **-x** names everyone this turn addresses: the vocative cluster, plus anyone still held as addressee. One addressee stays singular **`eha`**; several take **`edone…x`**. Inclusive *shall we* stays **`oha`**. Soft **`zoham`** hedges whether you really share the act.
 
-> `zedonenx vajul.`
+> `zehanx vehahel.`
 >
 > z-listener-x | v-sit
 >
 > "You all sit."
 
-**Compare with:** *you and I* is **`aha`**. *Azawan and associates* is name…**-x** ([plurality](plurality.md#associative)).
+**Compare with:** *you and I* is **`oha`**. *Azawan and associates* is name…**-x** ([plurality](plurality.md#associative)).
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -380,29 +380,29 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *pour* | `vorurul` | `orurul` *pour* | 🫗: water onto soil |
-| *harvest* | `vurugem` | `urugel` *paddy* | 🌾: bringing the crop in |
-| *flower* | `ovowel` | | |
-| *tomato* | `odomal` | | |
-| *seedling* | `ezedel` | | |
-| *red* | `aredel` | | |
-| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *like* | `hurorom` | `urorol` *mirror* | 🪞: the image is of the model |
-| *topic* | `hozam` | `ozal` *hash* | #️⃣: a heading mark |
-| *scream* | `vazagal` | | |
-| *punch* | `vubunul` | | |
-| *fight* | `vuvugul` | | |
-| *interlocutors* | `ahan` | `ahal` *handshake* | 🤝: sharing the floor together |
-| *listener* | `edonen` | `edonel` *headphones* | 🎧: the one receiving the sound |
+| *Ululon* | `alahen` | | |
+| *Uhubun* | `ahaben` | | |
+| *pour* | `vorul` | `orul` *pour* | 🫗: water onto soil |
+| *harvest* | `vebadem` | `ebadel` *paddy* | 🌾: bringing the crop in |
+| *flower* | `avavul` | | |
+| *tomato* | `adedol` | | |
+| *seedling* | `ozal` | | |
+| *red* | `eredal` | | |
+| *see* | `vahahal` | `ahahal` *eye* | 👁️: seeing is what an eye does |
+| *like* | `hemum` | `emul` *mirror* | 🪞: the image is of the model |
+| *topic* | `hahehom` | `ahehol` *hash* | #️⃣: a heading mark |
+| *scream* | `vezogel` | | |
+| *punch* | `vabahel` | | |
+| *fight* | `vavadal` | | |
+| *interlocutors* | `ohan` | `ohal` *handshake* | 🤝: sharing the floor together |
+| *listener* | `ehan` | `ehal` *headphones* | 🎧: the one receiving the sound |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Ululon pours. Azawan does so.*
 
 ::: details Show answer
-`zululon vorurul. zazawan vorur.`
+`zalahen vorul. zazawan vorur.`
 
 z-Ululon | v-pour . z-Azawan | v-←pour
 :::
@@ -410,7 +410,7 @@ z-Ululon | v-pour . z-Azawan | v-←pour
 **2.** *A flower is red. A tomato is such.*
 
 ::: details Show answer
-`zovowel garedel. zodomal garer.`
+`zavavul geredal. zadedol gerer.`
 
 z-flower | g-red . z-tomato | g-←red
 :::
@@ -418,7 +418,7 @@ z-flower | g-red . z-tomato | g-←red
 **3.** *Ululon sees Azawan. Uhubun sees them.*
 
 ::: details Show answer
-`zululon dazawan vejel. zuhubun dazar vejel.`
+`zalahen dazawan vahahal. zahaben dazar vahahal.`
 
 z-Ululon | d-Azawan | v-see . z-Uhubun | d-←Azawan | v-see
 :::
@@ -426,7 +426,7 @@ z-Ululon | d-Azawan | v-see . z-Uhubun | d-←Azawan | v-see
 **4.** *Azawan pours. Ululon harvests. Going back to Azawan, they see a seedling.*
 
 ::: details Show answer
-`zazawan vorurul. zululon vurugem. xazar dezedel vejel.`
+`zazawan vorul. zalahen vebadem. xazar dozal vahahal.`
 
 z-Azawan | v-pour . z-Ululon | v-harvest . x-←Azawan | d-seedling | v-see
 :::
@@ -434,7 +434,7 @@ z-Azawan | v-pour . z-Ululon | v-harvest . x-←Azawan | d-seedling | v-see
 **5.** *Ululon pours like Azawan. Uhubun harvests that way.*
 
 ::: details Show answer
-`zululon hurorom bazawan vorurul. zuhubun huror vurugem.`
+`zalahen hemum bazawan vorul. zahaben hemur vebadem.`
 
 z-Ululon | [h-like | b-Azawan] | v-pour . z-Uhubun | h-←like | v-harvest
 :::
@@ -442,7 +442,7 @@ z-Ululon | [h-like | b-Azawan] | v-pour . z-Uhubun | h-←like | v-harvest
 **6.** *As for Uhubun, Ululon punches.*
 
 ::: details Show answer
-`hozam buhubun zululon vubunul.`
+`hahehom bahaben zalahen vabahel.`
 
 [h-topic | b-Uhubun] | z-Ululon | v-punch
 :::
@@ -450,7 +450,7 @@ z-Ululon | [h-like | b-Azawan] | v-pour . z-Uhubun | h-←like | v-harvest
 **7.** *We (you and I) harvest.*
 
 ::: details Show answer
-`zahan vurugem.`
+`zohan vebadem.`
 
 z-interlocutors | v-harvest
 :::
@@ -458,14 +458,14 @@ z-interlocutors | v-harvest
 **8.** *Azawan and associates punch.*
 
 ::: details Show answer
-`zazawanx vubunul.`
+`zazawanx vabahel.`
 
 z-Azawan-x | v-punch
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
 
-**1.** `zazawan vorurul. zululon vorur.`
+**1.** `zazawan vorul. zalahen vorur.`
 
 ::: details Show answer
 
@@ -474,7 +474,7 @@ z-Azawan | v-pour . z-Ululon | v-←pour
 *Azawan pours. Ululon does so.*
 :::
 
-**2.** `zodomal garedel. zovowel garer.`
+**2.** `zadedol geredal. zavavul gerer.`
 
 ::: details Show answer
 
@@ -483,7 +483,7 @@ z-tomato | g-red . z-flower | g-←red
 *A tomato is red. A flower is such.*
 :::
 
-**3.** `zazawan dululon vejel. zuhubun dulur vejel.`
+**3.** `zazawan dalahen vahahal. zahaben dalar vahahal.`
 
 ::: details Show answer
 
@@ -492,7 +492,7 @@ z-Azawan | d-Ululon | v-see . z-Uhubun | d-←Ululon | v-see
 *Azawan sees Ululon. Uhubun sees him.*
 :::
 
-**4.** `zululon vurugem. zazawan vorurul. xulur vubunul.`
+**4.** `zalahen vebadem. zazawan vorul. xalar vabahel.`
 
 ::: details Show answer
 
@@ -501,7 +501,7 @@ z-Ululon | v-harvest . z-Azawan | v-pour . x-←Ululon | v-punch
 *Ululon harvests. Azawan pours. Going back to Ululon, he punches.*
 :::
 
-**5.** `hozam bazawan zuhubun vurugem.`
+**5.** `hahehom bazawan zahaben vebadem.`
 
 ::: details Show answer
 
@@ -510,7 +510,7 @@ z-Ululon | v-harvest . z-Azawan | v-pour . x-←Ululon | v-punch
 *As for Azawan, Uhubun harvests.*
 :::
 
-**6.** `zahan vazagal.`
+**6.** `zohan vezogel.`
 
 ::: details Show answer
 
@@ -519,7 +519,7 @@ z-interlocutors | v-scream
 *We (you and I) scream.*
 :::
 
-**7.** `zedonenx vazagal.`
+**7.** `zehanx vezogel.`
 
 ::: details Show answer
 
@@ -528,7 +528,7 @@ z-listener-x | v-scream
 *You all scream.*
 :::
 
-**8.** `zululonx vuvugul.`
+**8.** `zalahenx vavadal.`
 
 ::: details Show answer
 
@@ -543,7 +543,7 @@ z-Ululon-x | v-fight
 
 Intermediate already recast one referent into a new slot. Each table is an **antecedent** role; rows are the **pronoun** role. The mechanism is still one **-r**.
 
-> `zodogol vawalal. zawalar gelem.`
+> `zodogal vowogal. zowogar gelavam.`
 >
 > z-dog | v-walk . z-←walk.full | g-big
 >
@@ -553,7 +553,7 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `/z/` `/d/` `/b/` … `-r` | ordinary 3rd-person slot | *he / she / it / they*; *that (one)* (`/b/` still follows the host relation) |
+| `/z/` `/d/` `/b/` … `-r` | ordinary 3rd-person slot | *he / she / it / they*; *that (ovavo)* (`/b/` still follows the host relation) |
 | `/v/` … `-r` | the same action again, now involving that entity | *do the same to / with it* |
 | `/ɡ/` … `-r` | of that entity’s kind (not possession) | *of that kind* |
 | `/w/` … `-r` | degree or frame on a property of that entity | *that* degree / frame |
@@ -563,43 +563,43 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 
 Examples:
 
-> `zazawan vumudel. zululon dazar vejel.`
+> `zazawan vamuyul. zalahen dazar vahahal.`
 >
 > z-Azawan | v-mute . z-Ululon | d-←Azawan | v-see
 >
 > "Azawan mutes. Ululon sees Azawan."
 
-> `zazawan dudomul vumudel. zululon vudor.`
+> `zazawan demegul vamuyul. zalahen vemer.`
 >
 > z-Azawan | d-studio-mic | v-mute . z-Ululon | v-←studio-mic
 >
 > "Azawan mutes a studio mic. Ululon does the same to it."
 
-> `zaradul gelem. zudomul garar.`
+> `zeredel gelavam. zemegul gerer.`
 >
 > z-radio | g-big . z-studio-mic | g-←radio
 >
 > "A radio is big. A studio mic is of that kind."
 
-> `zaradul welem gelem. zudomul warar gelem.`
+> `zeredel welavam gelavam. zemegul werer gelavam.`
 >
 > z-radio | [w-very | g-big] . z-studio-mic | [w-←radio | g-big]
 >
 > "A radio is very big. A studio mic is that big too."
 
-> `zazawan varadum. zululon hazar vumudel.`
+> `zazawan veredem. zalahen hazar vamuyul.`
 >
 > z-Azawan | v-broadcast . z-Ululon | h-←Azawan | v-mute
 >
 > "Azawan broadcasts. Ululon mutes on that one's account."
 
-> `zazawan vumudel. yazar.`
+> `zazawan vamuyul. yazar.`
 >
 > z-Azawan | v-mute . y-←Azawan
 >
 > "Azawan mutes. Hey, Azawan!"
 
-> `zazawan vumudel. zululon vubunul. xazar vazagal.`
+> `zazawan vamuyul. zalahen vabahel. xazar vezogel.`
 >
 > z-Azawan | v-mute . z-Ululon | v-punch . x-←Azawan | v-scream
 >
@@ -619,43 +619,43 @@ Examples:
 
 Examples:
 
-> `zazawan vumudel. zumur gelem.`
+> `zazawan vamuyul. zamur gelavam.`
 >
 > z-Azawan | v-mute . z-←mute | g-big
 >
 > "Azawan mutes. That muting is big."
 
-> `zazawan vumudel. zululon vumur.`
+> `zazawan vamuyul. zalahen vamur.`
 >
 > z-Azawan | v-mute . z-Ululon | v-←mute
 >
 > "Azawan mutes. Ululon does so."
 
-> `zazawan dudomul vumudel. zaradul gumur.`
+> `zazawan demegul vamuyul. zeredel gamur.`
 >
 > z-Azawan | d-studio-mic | v-mute . z-radio | g-←mute
 >
 > "Azawan mutes a studio mic. A radio is such (muted too)."
 
-> `zazawan vumudel. zaradul wumur gelem.`
+> `zazawan vamuyul. zeredel wamur gelavam.`
 >
 > z-Azawan | v-mute . z-radio | [w-←mute | g-big]
 >
 > "Azawan mutes. A radio is big as far as muting goes."
 
-> `zazawan varadum. zululon harar vumudel.`
+> `zazawan veredem. zalahen herer vamuyul.`
 >
 > z-Azawan | v-broadcast . z-Ululon | h-←broadcast | v-mute
 >
 > "Azawan broadcasts. By doing so, Ululon mutes."
 
-> `zazawan vumudel. yumur.`
+> `zazawan vamuyul. yamur.`
 >
 > z-Azawan | v-mute . y-←mute
 >
 > "Azawan mutes. Azawan did that?!"
 
-> `zazawan vumudel. zululon vubunul. xumur zuhubun vazagal.`
+> `zazawan vamuyul. zalahen vabahel. xamur zahaben vezogel.`
 >
 > z-Azawan | v-mute . z-Ululon | v-punch . x-←mute | z-Uhubun | v-scream
 >
@@ -675,43 +675,43 @@ Examples:
 
 Examples:
 
-> `zaradul garedel. zarer vazagal.`
+> `zeredel geredal. zerer vezogel.`
 >
 > z-radio | g-red . z-←red | v-scream
 >
 > "A radio is red. The red one screams."
 
-> `zuhubun garedel. zazawan varer.`
+> `zahaben geredal. zazawan verer.`
 >
 > z-Uhubun | g-red . z-Azawan | v-←red
 >
 > "Uhubun is red. Azawan does that."
 
-> `zaradul garedel. zudomul garer.`
+> `zeredel geredal. zemegul gerer.`
 >
 > z-radio | g-red . z-studio-mic | g-←red
 >
 > "A radio is red. A studio mic is such."
 
-> `zaradul welem garedel. zudomul warer gelem.`
+> `zeredel welavam geredal. zemegul werer gelavam.`
 >
 > z-radio | [w-very | g-red] . z-studio-mic | [w-←red | g-big]
 >
 > "A radio is very red. A studio mic is big to that degree."
 
-> `zaradul garedel. zazawan harer varadum.`
+> `zeredel geredal. zazawan herer veredem.`
 >
 > z-radio | g-red . z-Azawan | h-←red | v-broadcast
 >
 > "A radio is red. Azawan broadcasts that way."
 
-> `zaradul garedel. yarer.`
+> `zeredel geredal. yerer.`
 >
 > z-radio | g-red . y-←red
 >
 > "A radio is red. It was that?!"
 
-> `zaradul garedel. zululon vubunul. xarer zazawan vazagal.`
+> `zeredel geredal. zalahen vabahel. xerer zazawan vezogel.`
 >
 > z-radio | g-red . z-Ululon | v-punch . x-←red | z-Azawan | v-scream
 >
@@ -730,37 +730,37 @@ Examples:
 
 Examples:
 
-> `zaradul welem garedel. zululon deler vejel.`
+> `zeredel welavam geredal. zalahen delavar vahahal.`
 >
 > z-radio | [w-very | g-red] . z-Ululon | d-←very | v-see
 >
 > "A radio is very red. Ululon sees that degree."
 
-> `zaradul welem garedel. zudomul geler.`
+> `zeredel welavam geredal. zemegul gelavar.`
 >
 > z-radio | [w-very | g-red] . z-studio-mic | g-←very
 >
 > "A radio is very red. A studio mic is that (very red) too."
 
-> `zaradul welem garedel. zudomul weler gelem.`
+> `zeredel welavam geredal. zemegul welavar gelavam.`
 >
 > z-radio | [w-very | g-red] . z-studio-mic | [w-←very | g-big]
 >
 > "A radio is very red. A studio mic is very big too."
 
-> `zaradul welem garedel. zazawan heler varadum.`
+> `zeredel welavam geredal. zazawan helavar veredem.`
 >
 > z-radio | [w-very | g-red] . z-Azawan | h-←very | v-broadcast
 >
 > "A radio is very red. Azawan broadcasts to that degree."
 
-> `zaradul welem garedel. yeler.`
+> `zeredel welavam geredal. yelavar.`
 >
 > z-radio | [w-very | g-red] . y-←very
 >
 > "A radio is very red. In that manner?!"
 
-> `zaradul welem garedel. zululon vubunul. xeler zazawan vazagal.`
+> `zeredel welavam geredal. zalahen vabahel. xelavar zazawan vezogel.`
 >
 > z-radio | [w-very | g-red] . z-Ululon | v-punch . x-←very | z-Azawan | v-scream
 >
@@ -780,43 +780,43 @@ Examples:
 
 Examples:
 
-> `zululon hurorom bazawan vumudel. zuhubun duror vejel.`
+> `zalahen hemum bazawan vamuyul. zahaben demur vahahal.`
 >
 > z-Ululon | [h-like | b-Azawan] | v-mute . z-Uhubun | d-←like | v-see
 >
 > "Ululon mutes like Azawan. Uhubun sees that manner."
 
-> `zululon hurorom bazawan vumudel. zuhubun vuror.`
+> `zalahen hemum bazawan vamuyul. zahaben vemur.`
 >
 > z-Ululon | [h-like | b-Azawan] | v-mute . z-Uhubun | v-←like
 >
 > "Ululon mutes like Azawan. Uhubun does it that way."
 
-> `zululon hurorom bazawan vumudel. zudomul guror.`
+> `zalahen hemum bazawan vamuyul. zemegul gemur.`
 >
 > z-Ululon | [h-like | b-Azawan] | v-mute . z-studio-mic | g-←like
 >
 > "Ululon mutes like Azawan. A studio mic is that way."
 
-> `zululon hurorom bazawan vumudel. zaradul wuror gelem.`
+> `zalahen hemum bazawan vamuyul. zeredel wemur gelavam.`
 >
 > z-Ululon | [h-like | b-Azawan] | v-mute . z-radio | [w-←like | g-big]
 >
 > "Ululon mutes like Azawan. A radio is big in that way."
 
-> `zululon hurorom bazawan vumudel. zuhubun huror varadum.`
+> `zalahen hemum bazawan vamuyul. zahaben hemur veredem.`
 >
 > z-Ululon | [h-like | b-Azawan] | v-mute . z-Uhubun | h-←like | v-broadcast
 >
 > "Ululon mutes like Azawan. Uhubun broadcasts that way."
 
-> `zululon hurorom bazawan vumudel. yuror.`
+> `zalahen hemum bazawan vamuyul. yemur.`
 >
 > z-Ululon | [h-like | b-Azawan] | v-mute . y-←like
 >
 > "Ululon mutes like Azawan. Like that?!"
 
-> `zululon hurorom bazawan vumudel. zazawan vubunul. xuror zuhubun vazagal.`
+> `zalahen hemum bazawan vamuyul. zazawan vabahel. xemur zahaben vezogel.`
 >
 > z-Ululon | [h-like | b-Azawan] | v-mute . z-Azawan | v-punch . x-←like | z-Uhubun | v-scream
 >
@@ -838,13 +838,13 @@ Examples:
 >
 > "Azawan! Azawan!"
 
-> `zazawan vumudel. zululon vubunul. xazar vazagal.`
+> `zazawan vamuyul. zalahen vabahel. xazar vezogel.`
 >
 > z-Azawan | v-mute . z-Ululon | v-punch . x-←Azawan | v-scream
 >
 > "Azawan mutes. Ululon punches. Going back to Azawan, Azawan screams."
 
-> `yululon. zulur vazagal.`
+> `yalahen. zalar vezogel.`
 >
 > y-Ululon . z-←Ululon | v-scream
 >
@@ -862,23 +862,23 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *mute* | `vumudel` | `umudel` *mute* | 🔇: cutting the live sound |
-| *broadcast* | `varadum` | `aradul` *radio* | 📻: sending the show out |
-| *radio* | `aradul` | | |
-| *studio mic* | `udomul` | | |
-| *red* | `aredel` | | |
-| *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
-| *punch* | `vubunul` | | |
-| *scream* | `vazagal` | | |
+| *Ululon* | `alahen` | | |
+| *Uhubun* | `ahaben` | | |
+| *mute* | `vamuyul` | `amuyul` *mute* | 🔇: cutting the live sound |
+| *broadcast* | `veredem` | `eredel` *radio* | 📻: sending the show out |
+| *radio* | `eredel` | | |
+| *studio mic* | `emegul` | | |
+| *red* | `eredal` | | |
+| *big* | `elavam` | `elaval` *elephant* | 🐘: the huge animal |
+| *punch* | `vabahel` | | |
+| *scream* | `vezogel` | | |
 
 #### English → Agalan {#advanced-english-to-agalan}
 
 **1.** *Azawan mutes. Ululon does the same with them.*
 
 ::: details Show answer
-`zazawan vumudel. zululon vazar.`
+`zazawan vamuyul. zalahen vazar.`
 
 z-Azawan | v-mute . z-Ululon | v-←Azawan
 :::
@@ -886,7 +886,7 @@ z-Azawan | v-mute . z-Ululon | v-←Azawan
 **2.** *Ululon broadcasts. That action is big.*
 
 ::: details Show answer
-`zululon varadum. zarar gelem.`
+`zalahen veredem. zerer gelavam.`
 
 z-Ululon | v-broadcast . z-←broadcast | g-big
 :::
@@ -894,7 +894,7 @@ z-Ululon | v-broadcast . z-←broadcast | g-big
 **3.** *Azawan broadcasts. By doing so, Ululon mutes.*
 
 ::: details Show answer
-`zazawan varadum. zululon harar vumudel.`
+`zazawan veredem. zalahen herer vamuyul.`
 
 z-Azawan | v-broadcast . z-Ululon | h-←broadcast | v-mute
 :::
@@ -902,7 +902,7 @@ z-Azawan | v-broadcast . z-Ululon | h-←broadcast | v-mute
 **4.** *A radio is red. The red one screams.*
 
 ::: details Show answer
-`zaradul garedel. zarer vazagal.`
+`zeredel geredal. zerer vezogel.`
 
 z-radio | g-red . z-←red | v-scream
 :::
@@ -910,14 +910,14 @@ z-radio | g-red . z-←red | v-scream
 **5.** *Ululon punches. That action is big.*
 
 ::: details Show answer
-`zululon vubunul. zubur gelem.`
+`zalahen vabahel. zabar gelavam.`
 
 z-Ululon | v-punch . z-←punch | g-big
 :::
 
 #### Agalan → English {#advanced-agalan-to-english}
 
-**1.** `zaradul gelem. zudomul garar.`
+**1.** `zeredel gelavam. zemegul gerer.`
 
 ::: details Show answer
 
@@ -926,7 +926,7 @@ z-radio | g-big . z-studio-mic | g-←radio
 *A radio is big. A studio mic is of that kind.*
 :::
 
-**2.** `zululon vubunul. zazawan hubur vumudel.`
+**2.** `zalahen vabahel. zazawan habar vamuyul.`
 
 ::: details Show answer
 
@@ -935,7 +935,7 @@ z-Ululon | v-punch . z-Azawan | h-←punch | v-mute
 *Ululon punches. By doing so, Azawan mutes.*
 :::
 
-**3.** `zazawan dudomul vumudel. zululon vudor.`
+**3.** `zazawan demegul vamuyul. zalahen vemer.`
 
 ::: details Show answer
 
@@ -944,7 +944,7 @@ z-Azawan | d-studio-mic | v-mute . z-Ululon | v-←studio-mic
 *Azawan mutes a studio mic. Ululon does the same to it.*
 :::
 
-**4.** `zaradul gelem. zeler vazagal.`
+**4.** `zeredel gelavam. zelavar vezogel.`
 
 ::: details Show answer
 
@@ -953,7 +953,7 @@ z-radio | g-big . z-←big | v-scream
 *A radio is big. The big one screams.*
 :::
 
-**5.** `zuhubun garedel. zazawan varer.`
+**5.** `zahaben geredal. zazawan verer.`
 
 ::: details Show answer
 

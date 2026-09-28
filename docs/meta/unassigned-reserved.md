@@ -119,7 +119,7 @@ Source: [predication.md](../grammar/predication.md)
 
 | Slot | Status |
 |------|--------|
-| **`gonunun`** / **`gonunur`** (SAME with **-n** / **-r**) | Undefined — only **-l** / **-m** are taught |
+| **`gugon`** / **`gugor`** (SAME with **-n** / **-r**) | Undefined — only **-l** / **-m** are taught |
 
 ## Spans
 
@@ -133,18 +133,18 @@ Source: [spans.md](../grammar/spans.md), [x-compounds.md](../grammar/x-compounds
 Source: [interests.md](../grammar/interests.md)
 
 - Whose-interest / care direction on prescription
-- Forced listener / third-person possessives on interest ascription (speaker `/ɡ/` default is [personal possession](../grammar/interests.md#personal-possession); unowned is **`gobobum`**)
+- Forced listener / third-person possessives on interest ascription (speaker `/ɡ/` default is [personal possession](../grammar/interests.md#personal-possession); unowned is **`gobem`**)
 
 ### Near-miss inventory (editor)
 
 | Job | Where taught |
 |-----|----------------|
 | Emotion compose | [interests.md § Emotion compose](../grammar/interests.md#emotion-compose) |
-| MAY | [knowing.md § MAY](../grammar/knowing.md#may) — **`odoho`** + find out / default / who knows |
-| NOTIONAL | [knowing.md § Notional](../grammar/knowing.md#notional) — **`adade`** |
-| RESIDUE / FORMER | [knowing.md § Residue](../grammar/knowing.md#residue) — **`oneno`** / **`emebe`** |
-| DECISION | [intention.md § Decision](../grammar/intention.md#decision) — **`ehege`** |
-| PLAN | [intention.md § Plan](../grammar/intention.md#plan-predict) — **`emaba`** |
+| MAY | [knowing.md § MAY](../grammar/knowing.md#may) — **`ovo`** + find out / default / who knows |
+| NOTIONAL | [knowing.md § Notional](../grammar/knowing.md#notional) — **`ave`** |
+| RESIDUE / FORMER | [knowing.md § Residue](../grammar/knowing.md#residue) — **`omo`** / **`ene`** |
+| DECISION | [intention.md § Decision](../grammar/intention.md#decision) — **`ehu`** |
+| PLAN | [intention.md § Plan](../grammar/intention.md#plan-predict) — **`ama`** |
 
 ## Phonology
 

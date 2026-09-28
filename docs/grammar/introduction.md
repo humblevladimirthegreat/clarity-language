@@ -1,6 +1,6 @@
 # Introduction to Agalan
 
-**Agalan** (`agala` + proper **-n**) translates to English *clarity*.
+**Agalan** (`agaza` + proper **-n**) translates to English *clarity*.
 
 How these docs work, and what “good grammar design” means for this language.
 

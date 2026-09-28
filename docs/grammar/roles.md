@@ -11,13 +11,13 @@ The ending picks **kind** vs **this instance**. Non-resume (**-l** / **-m** / **
 
 English *a teacher* names who teaches as a kind, from the same idea as *teach*. Write a person or thing letter (`/z/` `/d/` `/b/`), then **`a`**, then mid-word **`x`**, then the event root, then an ordinary [reference ending](word-endings.md). The result is one content word (a **role compound**) that you can use as a participant. (cue: **a** ≈ add (add a doer))
 
-> `zaxedegel vurunul.`
+> `zaxedehol varahal.`
 >
 > z-agent-x-teach | v-run
 >
 > "A teacher runs."
 
-The last letter is the ordinary [reference ending](word-endings.md): **-l** takes the stem’s everyday concrete sense, **-m** the published abstract. `zaxedegel` is *a teacher*; `zaxuvugul` is *a fighter*; `zaxuvugum` is *a struggler*. Non-resume names the **lexical** role. You do not need a prior teaching or fight in the talk.
+The last letter is the ordinary [reference ending](word-endings.md): **-l** takes the stem’s everyday concrete sense, **-m** the published abstract. `zaxedehol` is *a teacher*; `zaxavadal` is *a fighter*; `zaxavadam` is *a struggler*. Non-resume names the **lexical** role. You do not need a prior teaching or fight in the talk.
 
 **Compare with:** a teacher puts the role vowel **left** of **`x`**. Later, [ability](intention.md#ability) (*can teach*) puts a vowel **right** of **`x`**, and the two can combine.
 
@@ -25,17 +25,17 @@ The last letter is the ordinary [reference ending](word-endings.md): **-l** take
 
 Once the talk already has a matching event (*teaches*), **-r** on the same stem means **this** doer of that event (*the one teaching*), not the kind *teacher*.
 
-> `zazawan vedegel.`
-> `zaxedeger velebel.`
+> `zazawan vedehol.`
+> `zaxedehor vezebal.`
 >
 > z-Azawan | v-teach
 > z-←teach | v-sleep
 >
 > "Azawan teaches. The one teaching sleeps."
 
-A role compound can also continue a pronoun. Keep its role-compound shape, use the event’s short resume prefix, and end in **-r**. In `vajul` (*sit*), the root prefix through the second vowel is **`aju`**. So `zaxajur` is subject **`z`** + doer role compound **`ax`** + that event prefix **`aju`** + pronoun **`-r`**.
+A role compound can also continue a pronoun. Keep its role-compound shape, use the event’s short resume prefix, and end in **-r**. In `vehahel` (*sit*), the root prefix through the second vowel is **`ehahe`**. So `zaxehaher` is subject **`z`** + doer role compound **`ax`** + that event prefix **`ehahe`** + pronoun **`-r`**.
 
-> `zazawan vajul. zaxajur vawalal.`
+> `zazawan vehahel. zaxehaher vowogal.`
 >
 > z-Azawan | v-sit . z-←sit | v-walk
 >
@@ -45,8 +45,8 @@ A role compound can also continue a pronoun. Keep its role-compound shape, use t
 
 English *the one seen* or *the one fought* names the person the event happens to. Use the same compound shape as the doer, but write **`u`** in the vowel slot. (cue: **u** ≈ undo (the one it happens to)) Non-resume is that role as a kind; **-r** is **this** undergoer of the latest matching event.
 
-> `zazawan dagadal vejel.`
-> `zuxejer vurunul.`
+> `zazawan dagadal vahahal.`
+> `zuxahahar varahal.`
 >
 > z-Azawan | d-cat | v-see
 > z-←see | v-run
@@ -59,7 +59,7 @@ English *a sleep-place* names the spot an event sits in, from the same idea as *
 
 You can name that kind of place with no prior sleep in the talk:
 
-> `zazawan dexelebel vejel.`
+> `zazawan dexezebal vahahal.`
 >
 > z-Azawan | d-place-x-sleep | v-see
 >
@@ -67,36 +67,36 @@ You can name that kind of place with no prior sleep in the talk:
 
 Once the talk already has a matching event, **-r** means **this** scene of that event, not a kind of place. The next sentence is a new claim about the place (who sees it, who punches it), not a locative on the first verb.
 
-> `zululon vazagal.`
-> `zazawan dexazagar vejel.`
+> `zalahen vezogel.`
+> `zazawan dexezoger vahahal.`
 >
 > z-Ululon | v-scream
 > z-Azawan | d-←scream | v-see
 >
 > "Ululon screams. Azawan sees the scream-place."
 
-`zexogonul` is a construct-place (the **-l** sense of *construct*). A construction site as a listed kind, with no event, can stay `donugol`.
+`zexaguzal` is a construct-place (the **-l** sense of *construct*). A construction site as a listed kind, with no event, can stay `dagozal`.
 
-**Compare with:** `zaxogonul` is who constructs; `duxogonul` is what is constructed. *Constructs in a house* locates **that same** constructing: extra-noun [hook](hooks.md#extra-noun) **`al`** plus `/b/`. Do not write **`exROOT`** when a hook on that clause would do. *Writes with a hammer* is likewise an extra-noun hook plus `/b/`, not this vowel.
+**Compare with:** `zaxaguzal` is who constructs; `duxaguzal` is what is constructed. *Constructs in a house* locates **that same** constructing: extra-noun [hook](hooks.md#extra-noun) **`al`** plus `/b/`. Do not write **`exROOT`** when a hook on that clause would do. *Writes with a hammer* is likewise an extra-noun hook plus `/b/`, not this vowel.
 
 ### The extra `/b/` party (`o`)
 
 English *the one told* names who gets the telling. That person sits in unhosted `/b/` after the verb ([extra nouns](clause.md#extra-nouns)). To name them from the verb stem, write **`o`** in the vowel slot. That named party is the **recipient**. (cue: **o** ≈ one (that extra one))
 
-> `zazawan vezehel.`
-> `zoxezeher vurunul.`
+> `zazawan vezebel.`
+> `zoxezeber varahal.`
 >
 > z-Azawan | v-tell
 > z-←tell | v-run
 >
 > "Azawan tells. The one told runs."
 
-You can name that kind with no prior telling: `zoxezehel` is an addressee (the **-l** sense of *speech*).
+You can name that kind with no prior telling: `zoxezebel` is an addressee (the **-l** sense of *speech*).
 
 Some stems name a **relation** (who is bound to whom), not an action. The extra person of that relation sits in **hosted** `/b/` after the relation word. The same **`o`** names that person from the relation stem (*the other party of the bond*). That named party is the **reltum**.
 
-> `zazawan gonogom bululon.`
-> `zoxonogor vurunul.`
+> `zazawan gunem balahen.`
+> `zoxuner varahal.`
 >
 > z-Azawan | [g-bond | b-Ululon]
 > z-←bond | v-run
@@ -116,33 +116,33 @@ Non-resume is the **kind** (occupation, usual place, usual undergoer). **-r** lo
 
 ### The event itself
 
-If you put the event stem on a thing letter with no role vowel (`duvugul`), you name the fight itself. Use **`ax`**, **`ex`**, **`ux`**, or **`ox`** when you mean who fights, where the fight is, who is fought, or who is told.
+If you put the event stem on a thing letter with no role vowel (`davadal`), you name the fight itself. Use **`ax`**, **`ex`**, **`ux`**, or **`ox`** when you mean who fights, where the fight is, who is fought, or who is told.
 
-> `zazawan duvugul vejel.`
+> `zazawan davadal vahahal.`
 >
 > z-Azawan | d-fight | v-see
 >
 > "Azawan sees a fight."
 
-**Related form:** a verb’s own **-r** resumes that [event](pronouns.md) (`vuvugur` *that fighting*). Role **`ax`** / **`ux`** names the people.
+**Related form:** a verb’s own **-r** resumes that [event](pronouns.md) (`vavadar` *that fighting*). Role **`ax`** / **`ux`** names the people.
 
 ### Saying someone is a teacher
 
 To say someone **is a teacher**, put the same role stem on `/ɡ/`, as in [classification](predication.md#classification). Non-resume still names the kind: **-l** *teacher*, or on *fight* **-l** *fighter* / **-m** *struggler*. Resume on `/ɡ/` classifies them as **this** doer of the matching event (*is the one teaching*).
 
-> `zazawan gaxedegel.`
+> `zazawan gaxedehol.`
 >
 > z-Azawan | g-agent-x-teach
 >
 > "Azawan is a teacher."
 
-> `zazawan gaxuvugul.`
+> `zazawan gaxavadal.`
 >
 > z-Azawan | g-agent-x-fight
 >
 > "Azawan is a fighter."
 
-> `zazawan gaxuvugum.`
+> `zazawan gaxavadam.`
 >
 > z-Azawan | g-agent-x-struggle
 >
@@ -150,13 +150,13 @@ To say someone **is a teacher**, put the same role stem on `/ɡ/`, as in [classi
 
 The same adjective after another noun is English *fighter guard*: the host is classified as that role.
 
-> `zazawan dugugal gaxuvugul vejel.`
+> `zazawan dagadul gaxavadal vahahal.`
 >
 > z-Azawan | [d-guard | g-agent-x-fight] | v-see
 >
 > "Azawan sees a fighter guard."
 
-**Compare with:** ordinary `guvugul` is *fight* as a property. English *the guard who fought (that time)* with extra participants or a place is [two sentences](dependents.md#which-noun), not this kind word.
+**Compare with:** ordinary `gavadal` is *fight* as a property. English *the guard who fought (that time)* with extra participants or a place is [two sentences](dependents.md#which-noun), not this kind word.
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -169,27 +169,27 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `ululon` | |
-| *Uhubun* | `uhubun` | |
-| *construction* | `onugol` | |
-| *construct* | `ogonul` | |
-| *fabrication* | `ogonum` | `ogonul` *construct* |
-| *helmet* | `ehemel` | |
-| *see* | `vejel` | `ejel` *eye* |
-| *sit* | `vajul` | `ajul` *chair* |
-| *sleep* | `elebel` | |
-| *tell* | `vezehel` | `ezehel` *speech* |
-| *punch* | `ubunul` | |
-| *scream* | `azagal` | |
-| *fight* | `uvugul` | |
-| *bond* | `onogom` | `onogol` *knot* |
+| *Ululon* | `alahen` | |
+| *Uhubun* | `ahaben` | |
+| *construction* | `agozal` | |
+| *construct* | `aguzal` | |
+| *fabrication* | `aguzam` | `aguzal` *construct* |
+| *helmet* | `ehedul` | |
+| *see* | `vahahal` | `ahahal` *eye* |
+| *sit* | `vehahel` | `ehahel` *chair* |
+| *sleep* | `ezebal` | |
+| *tell* | `vezebel` | `ezebel` *speech* |
+| *punch* | `abahel` | |
+| *scream* | `ezogel` | |
+| *fight* | `avadal` | |
+| *bond* | `unem` | `unel` *knot* |
 
 #### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *A constructor sits.*
 
 ::: details Show answer
-`zaxogonul vajul.`
+`zaxaguzal vehahel.`
 
 z-agent-x-construct | v-sit
 :::
@@ -197,7 +197,7 @@ z-agent-x-construct | v-sit
 **2.** *Azawan constructs. The one constructing sees a helmet.*
 
 ::: details Show answer
-`zazawan vogonul. zaxogonur dehemel vejel.`
+`zazawan vaguzal. zaxaguzar dehedul vahahal.`
 
 z-Azawan | v-construct . z-←construct | d-helmet | v-see
 :::
@@ -205,7 +205,7 @@ z-Azawan | v-construct . z-←construct | d-helmet | v-see
 **3.** *Ululon screams. Azawan sees the scream-place.*
 
 ::: details Show answer
-`zululon vazagal. zazawan dexazagar vejel.`
+`zalahen vezogel. zazawan dexezoger vahahal.`
 
 z-Ululon | v-scream . z-Azawan | d-←scream | v-see
 :::
@@ -213,7 +213,7 @@ z-Ululon | v-scream . z-Azawan | d-←scream | v-see
 **4.** *Azawan sees Uhubun. The one seen sits.*
 
 ::: details Show answer
-`zazawan zuhubun vejel. zuxejer vajul.`
+`zazawan zahaben vahahal. zuxahahar vehahel.`
 
 z-Azawan | z-Uhubun | v-see . z-←see | v-sit
 :::
@@ -221,7 +221,7 @@ z-Azawan | z-Uhubun | v-see . z-←see | v-sit
 **5.** *Azawan is a fabricator.*
 
 ::: details Show answer
-`zazawan gaxogonum.`
+`zazawan gaxaguzam.`
 
 z-Azawan | g-agent-x-fabrication
 
@@ -231,7 +231,7 @@ z-Azawan | g-agent-x-fabrication
 **6.** *Azawan sees a construction site.*
 
 ::: details Show answer
-`zazawan donugol vejel.`
+`zazawan dagozal vahahal.`
 
 z-Azawan | d-construction | v-see
 :::
@@ -239,7 +239,7 @@ z-Azawan | d-construction | v-see
 **7.** *Azawan tells. The one told punches.*
 
 ::: details Show answer
-`zazawan vezehel. zoxezeher vubunul.`
+`zazawan vezebel. zoxezeber vabahel.`
 
 z-Azawan | v-tell . z-←tell | v-punch
 :::
@@ -247,14 +247,14 @@ z-Azawan | v-tell . z-←tell | v-punch
 **8.** *Azawan is bound to Ululon. That other party of the bond fights.*
 
 ::: details Show answer
-`zazawan gonogom bululon. zoxonogor vuvugul.`
+`zazawan gunem balahen. zoxuner vavadal.`
 
 z-Azawan | [g-bond | b-Ululon] . z-←bond | v-fight
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
 
-**1.** `zululon dexelebel vejel.`
+**1.** `zalahen dexezebal vahahal.`
 
 ::: details Show answer
 
@@ -263,7 +263,7 @@ z-Ululon | d-place-x-sleep | v-see
 *Ululon sees a sleep-place.*
 :::
 
-**2.** `zuhubun zazawan vejel. zuxejer vajul.`
+**2.** `zahaben zazawan vahahal. zuxahahar vehahel.`
 
 ::: details Show answer
 
@@ -272,7 +272,7 @@ z-Uhubun | z-Azawan | v-see . z-←see | v-sit
 *Uhubun sees Azawan. The one seen sits.*
 :::
 
-**3.** `zululon vogonul. zaxogonur dehemel vejel.`
+**3.** `zalahen vaguzal. zaxaguzar dehedul vahahal.`
 
 ::: details Show answer
 
@@ -281,7 +281,7 @@ z-Ululon | v-construct . z-←construct | d-helmet | v-see
 *Ululon constructs. The one constructing sees a helmet.*
 :::
 
-**4.** `zaxogonul vubunul.`
+**4.** `zaxaguzal vabahel.`
 
 ::: details Show answer
 
@@ -290,7 +290,7 @@ z-agent-x-construct | v-punch
 *A constructor punches.*
 :::
 
-**5.** `zululon donugol vejel.`
+**5.** `zalahen dagozal vahahal.`
 
 ::: details Show answer
 
@@ -299,7 +299,7 @@ z-Ululon | d-construction | v-see
 *Ululon sees a construction site.*
 :::
 
-**6.** `zazawan zululon vuvugul. zuxuvugur vazagal.`
+**6.** `zazawan zalahen vavadal. zuxavadar vezogel.`
 
 ::: details Show answer
 
@@ -308,7 +308,7 @@ z-Azawan | z-Ululon | v-fight . z-←fight | v-scream
 *Azawan fights Ululon. The one fought screams.*
 :::
 
-**7.** `zazawan vezehel. zoxezeher vurunul.`
+**7.** `zazawan vezebel. zoxezeber varahal.`
 
 ::: details Show answer
 
@@ -317,7 +317,7 @@ z-Azawan | v-tell . z-←tell | v-run
 *Azawan tells. The one told runs.*
 :::
 
-**8.** `zuhubun gonogom bululon. zoxonogor vubunul.`
+**8.** `zahaben gunem balahen. zoxuner vabahel.`
 
 ::: details Show answer
 
@@ -334,7 +334,7 @@ z-Uhubun | [g-bond | b-Ululon] . z-←bond | v-punch
 
 English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) or a side of a viewpoint (*Azawan’s left*, *the car’s left*). For the viewpoint reading, write the same arrow root, then mid-word **`th`**, then the thing whose facing counts as north, then an ordinary [reference ending](word-endings.md). A person’s front is the direction they face. For an object, use the front its design or current use makes forward; if that does not settle a front, establish the frame in context. You can then say *walk left* without meaning *walk west*.
 
-> `yel vawalal hewezethazawan.`
+> `yel vowogal hewezathazawan.`
 >
 > y-command | v-walk | h-west-th-Azawan
 >
@@ -342,7 +342,7 @@ English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) 
 
 Bare arrow words are compass points on a north-up map:
 
-> `yel vawalal hewezel.`
+> `yel vowogal hewezal.`
 >
 > y-command | v-walk | h-west
 >
@@ -350,7 +350,7 @@ Bare arrow words are compass points on a north-up map:
 
 Speaker and listener roots are the facing person when you mean *my left* / *your left*:
 
-> `yel zedonen vawalal hewezethedonen.`
+> `yel zehan vowogal hewezathehan.`
 >
 > y-command | z-listener | v-walk | h-west-th-listener
 >
@@ -361,10 +361,10 @@ Speaker and listener roots are the facing person when you mean *my left* / *your
 | PoS | slot as usual (`/ɡ/` property, `/h/` path / manner, `/z/` `/d/` `/b/` side-region) | same slots as other content |
 | DIR | an arrow-rose root | *north* / *ahead*, … |
 | **`th`** | joins DIR to the viewpoint | viewpoint after **`th`** (cue: **th** ≈ *think*, whose point of view) |
-| ANCHOR | what sets the facing frame: [special](pronouns.md#special-pronouns) **`ugobo`** / **`edone`** / **`aha`**, a person’s name, or a content **-r** of a person or oriented object | *Azawan’s left*, *your left*, *the car’s left* |
+| ANCHOR | what sets the facing frame: [special](pronouns.md#special-pronouns) **`ema`** / **`eha`** / **`oha`**, a person’s name, or a content **-r** of a person or oriented object | *Azawan’s left*, *your left*, *the car’s left* |
 | Ending | ordinary ending is written at the end of the whole compound; its reference is the viewpoint anchor, not the direction | viewpoint kind / hedge / name / resume |
 
-**Compare with:** naming a doer from an event puts a **vowel** left of **`x`** ([role compounds](#role-compounds): `zaxuvugul`). Viewpoint laterals put a **direction root** left of **`th`** and a facing person on the right.
+**Compare with:** naming a doer from an event puts a **vowel** left of **`x`** ([role compounds](#role-compounds): `zaxavadal`). Viewpoint laterals put a **direction root** left of **`th`** and a facing person on the right.
 
 ### Arrow rose (compass vs face)
 
@@ -372,28 +372,28 @@ The examples above already used *west* / body *left*. The rest of the rose is th
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`orohol`** | compass heading, or ahead on a face | *north* / *ahead* | ⬆️ *up-arrow*: map north, or ahead if facing is north |
-| **`ojul`** | compass heading, or back on a face | *south* / *back* | ⬇️ *down-arrow*: map south, or back if facing is north |
-| **`ezazal`** | compass heading, or right on a face | *east* / *right* | ➡️ *right-arrow*: the sun’s path east, or right of facing |
-| **`ewezel`** | compass heading, or left on a face | *west* / *left* | ⬅️ *left-arrow*: opposite east, or left of facing |
-| **`onorel`** | compass heading, or forward-right on a face | *northeast* / *forward-right* | ↗️ *northeast-arrow*: between north and east |
-| **`onohel`** | compass heading, or forward-left on a face | *northwest* / *forward-left* | ↖️ *northwest-arrow*: between north and west |
-| **`ozozul`** | compass heading, or back-right on a face | *southeast* / *back-right* | ↘️ *southeast-arrow*: between south and east |
-| **`ozohel`** | compass heading, or back-left on a face | *southwest* / *back-left* | ↙️ *southwest-arrow*: between south and west |
+| **`onoval`** | compass heading, or ahead on a face | *north* / *ahead* | ⬆️ *up-arrow*: map north, or ahead if facing is north |
+| **`azaval`** | compass heading, or back on a face | *south* / *back* | ⬇️ *down-arrow*: map south, or back if facing is north |
+| **`ezadal`** | compass heading, or right on a face | *east* / *right* | ➡️ *right-arrow*: the sun’s path east, or right of facing |
+| **`ewezal`** | compass heading, or left on a face | *west* / *left* | ⬅️ *left-arrow*: opposite east, or left of facing |
+| **`anovel`** | compass heading, or forward-right on a face | *northeast* / *forward-right* | ↗️ *northeast-arrow*: between north and east |
+| **`onovel`** | compass heading, or forward-left on a face | *northwest* / *forward-left* | ↖️ *northwest-arrow*: between north and west |
+| **`azovel`** | compass heading, or back-right on a face | *southeast* / *back-right* | ↘️ *southeast-arrow*: between south and east |
+| **`azawel`** | compass heading, or back-left on a face | *southwest* / *back-left* | ↙️ *southwest-arrow*: between south and west |
 
 Indoor headings may follow a local map (building north). Prefer a named viewpoint or listener frame when you mean a person’s body rose (`…thazawan`, `…thedonen`). For an object, use its design or current use to determine forward; establish the frame when that is ambiguous.
 
-### Gravity (`uba` / `odowo`)
+### Gravity (`abaha` / `adahe`)
 
-English *up* / *down* here follows the pull of gravity, not a face. Write **`uba`** (skyward) or **`odowo`** (toward the pull) as ordinary content words, with no **`th`** + facing person. Everyone shares that frame.
+English *up* / *down* here follows the pull of gravity, not a face. Write **`abaha`** (skyward) or **`adahe`** (toward the pull) as ordinary content words, with no **`th`** + facing person. Everyone shares that frame.
 
-> `yel vawalal hubal.`
+> `yel vowogal habahal.`
 >
 > y-command | v-walk | h-up
 >
 > "Walk up."
 
-> `yubal.`
+> `yabahal.`
 >
 > y-up
 >
@@ -401,31 +401,31 @@ English *up* / *down* here follows the pull of gravity, not a face. Write **`uba
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`ubal`** | skyward, shared gravity frame | *up* | | ⏫: away from the pull |
-| **`odowol`** | toward the pull, shared gravity frame | *down* | | ⏬: toward the pull |
-| **`everel`** | the vertical axis | *up–down axis* | | ↕️: the axis only |
+| **`abahal`** | skyward, shared gravity frame | *up* | | ⏫: away from the pull |
+| **`adahel`** | toward the pull, shared gravity frame | *down* | | ⏬: toward the pull |
+| **`evadel`** | the vertical axis | *up–down axis* | | ↕️: the axis only |
 
 ### Viewpoint vs landmark
 
 English *on Azawan’s left of the tree* needs both a facing person and a landmark. Put the facing person after **`th`**; put the tree, door, or wall in `/b/`. `/b/` is the landmark, not whose left.
 
-> `zabogol gewezethazawan berel.`
+> `zubugal gewezathazawan bedehul.`
 >
 > z-book | [g-west-th-Azawan | b-tree]
 >
 > "The book is on Azawan’s left of the tree."
 
-Bare compass + `/b/` is a region on that heading of the landmark (`gewezel berel` *west of the tree*).
+Bare compass + `/b/` is a region on that heading of the landmark (`gewezal bedehul` *west of the tree*).
 
-Gravity works the same way: bare **`odowo`** + `/b/` is *under* the landmark, and bare **`uba`** + `/b/` is *above* / *over* it.
+Gravity works the same way: bare **`adahe`** + `/b/` is *under* the landmark, and bare **`abaha`** + `/b/` is *above* / *over* it.
 
-> `zodogol velebel hodowol berel.`
+> `zodogal vezebal hadahel bedehul.`
 >
 > z-dog | v-sleep | [h-down | b-tree]
 >
 > "The dog sleeps under the tree."
 
-> `zabogol vajul gubal berel.`
+> `zubugal vehahel gabahal bedehul.`
 >
 > z-book | v-sit | [g-up | b-tree]
 >
@@ -435,22 +435,22 @@ Gravity works the same way: bare **`odowo`** + `/b/` is *under* the landmark, an
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| Bare DIR | compass / gravity | `gewezel` *west*; `gubal` *up* |
-| **`DIR th ANCHOR`** | that point on **ANCHOR’s** facing rose | `gewezethedonen` *listener-left* |
-| DIR + **`th`** + **`o`** + `/b/` | that point on the **landmark’s** own rose | `gojuthol bohohul` *behind the house* |
-| **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gewezethazawan berel` *on Azawan’s-left of the tree* |
+| Bare DIR | compass / gravity | `gewezal` *west*; `gabahal` *up* |
+| **`DIR th ANCHOR`** | that point on **ANCHOR’s** facing rose | `gewezathehan` *listener-left* |
+| DIR + **`th`** + **`o`** + `/b/` | that point on the **landmark’s** own rose | `gazavathol bahazal` *behind the house* |
+| **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gewezathazawan bedehul` *on Azawan’s-left of the tree* |
 
 ### The landmark's own front (DIR + `th` + `o`) {#landmark-facing}
 
 English *behind the house* means the house's own back, not a compass heading and not the speaker's back. Write the arrow root, then **`th`**, then **`o`** in place of a facing person, then the ending. Put the landmark in hosted `/b/` right after it. **`o`** is the same vowel that names the extra `/b/` party in [role compounds](#role-compounds): here, the `/b/` landmark is the one whose facing counts.
 
-> `zodogol vajul gojuthol bohohul.`
+> `zodogal vehahel gazavathol bahazal.`
 >
 > z-dog | v-sit | [g-south-th-landmark | b-house]
 >
 > "The dog sits behind the house."
 
-> `zazawan vawalal horohothol badorol.`
+> `zazawan vowogal honovathol bowel.`
 >
 > z-Azawan | v-walk | [h-north-th-landmark | b-door]
 >
@@ -462,11 +462,11 @@ The landmark's front is where its design or current use faces (a house's front d
 
 | Agalan | English |
 |--------|---------|
-| `gojuthol bohohul` | *behind the house* (its own back) |
-| `gorohothol bohohul` | *in front of the house* |
-| `gewezethol bohohul` | *on the house's left* |
-| `gewezethazawan bohohul` | *on Azawan's left of the house* |
-| `gewezel bohohul` | *west of the house* |
+| `gazavathol bahazal` | *behind the house* (its own back) |
+| `gonovathol bahazal` | *in front of the house* |
+| `gewezathol bahazal` | *on the house's left* |
+| `gewezathazawan bahazal` | *on Azawan's left of the house* |
+| `gewezal bahazal` | *west of the house* |
 
 ### Endings and resume
 
@@ -481,12 +481,12 @@ Write the ordinary [reference ending](word-endings.md) at the end of the whole c
 
 | Agalan | English |
 |--------|---------|
-| `gewezel` | *west* (shared map) |
-| `gewezethazawan` | *Azawan’s left* |
-| `gewezethedonen` | *your left* (listener facing) |
-| `gewezethugobon` | *my left* (speaker facing) |
-| `gewezethahan` | *our left* (shared facing) |
-| `gubal` / `hubal` | gravity *up* |
+| `gewezal` | *west* (shared map) |
+| `gewezathazawan` | *Azawan’s left* |
+| `gewezathehan` | *your left* (listener facing) |
+| `gewezatheman` | *my left* (speaker facing) |
+| `gewezathohan` | *our left* (shared facing) |
+| `gabahal` / `habahal` | gravity *up* |
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -500,28 +500,28 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `ululon` | |
-| *Uhubun* | `uhubun` | |
-| *boat* | `odadal` | |
-| *ship* | `uhul` | |
-| *life-buoy* | `uluvel` | |
-| *walk* | `awalal` | |
-| *north* / body *ahead* | `orohol` | |
-| *south* / body *back* | `ojul` | |
-| *west* / body *left* | `ewezel` | |
-| *east* / body *right* | `ezazal` | |
-| *northwest* / *forward-left* | `onohel` | |
-| *up* (gravity) | `ubal` | |
-| *down* (gravity) | `odowol` | |
-| *listener* | `edonen` | `edonel` *headphones* |
-| *speaker* | `ugobon` | `ugobol` *microphone* |
+| *Ululon* | `alahen` | |
+| *Uhubun* | `ahaben` | |
+| *boat* | `obodal` | |
+| *ship* | `ehebal` | |
+| *life-buoy* | `alavul` | |
+| *walk* | `owogal` | |
+| *north* / body *ahead* | `onoval` | |
+| *south* / body *back* | `azaval` | |
+| *west* / body *left* | `ewezal` | |
+| *east* / body *right* | `ezadal` | |
+| *northwest* / *forward-left* | `onovel` | |
+| *up* (gravity) | `abahal` | |
+| *down* (gravity) | `adahel` | |
+| *listener* | `ehan` | `ehal` *headphones* |
+| *speaker* | `eman` | `emal` *microphone* |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *The boat on Azawan’s left.*
 
 ::: details Show answer
-`zodadal gewezethazawan.`
+`zobodal gewezathazawan.`
 
 z-boat | g-west-th-Azawan
 :::
@@ -529,7 +529,7 @@ z-boat | g-west-th-Azawan
 **2.** *Walk north.*
 
 ::: details Show answer
-`yel vawalal horohol.`
+`yel vowogal honoval.`
 
 y-command | v-walk | h-north
 :::
@@ -537,7 +537,7 @@ y-command | v-walk | h-north
 **3.** *The ship on Ululon’s right.*
 
 ::: details Show answer
-`zuhul gezazathululon.`
+`zehebal gezadathalahen.`
 
 z-ship | g-east-th-Ululon
 :::
@@ -545,7 +545,7 @@ z-ship | g-east-th-Ululon
 **4.** *Walk down.*
 
 ::: details Show answer
-`yel vawalal hodowol.`
+`yel vowogal hadahel.`
 
 y-command | v-walk | h-down
 :::
@@ -553,7 +553,7 @@ y-command | v-walk | h-down
 **5.** *The life-buoy is on Azawan’s left of the boat.*
 
 ::: details Show answer
-`zuluvel gewezethazawan bodadal.`
+`zalavul gewezathazawan bobodal.`
 
 z-life-buoy | [g-west-th-Azawan | b-boat]
 :::
@@ -561,7 +561,7 @@ z-life-buoy | [g-west-th-Azawan | b-boat]
 **6.** *You, walk left (your left).*
 
 ::: details Show answer
-`yel zedonen vawalal hewezethedonen.`
+`yel zehan vowogal hewezathehan.`
 
 y-command | z-listener | v-walk | h-west-th-listener
 :::
@@ -569,7 +569,7 @@ y-command | z-listener | v-walk | h-west-th-listener
 **7.** *The boat on my left.*
 
 ::: details Show answer
-`zodadal gewezethugobon.`
+`zobodal gewezatheman.`
 
 z-boat | g-west-th-speaker
 :::
@@ -577,14 +577,14 @@ z-boat | g-west-th-speaker
 **8.** *Ululon, walk west.*
 
 ::: details Show answer
-`yel zululon vawalal hewezel.`
+`yel zalahen vowogal hewezal.`
 
 y-command | z-Ululon | v-walk | h-west
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
 
-**1.** `zodadal gezazathazawan.`
+**1.** `zobodal gezadathazawan.`
 
 ::: details Show answer
 
@@ -593,7 +593,7 @@ z-boat | g-east-th-Azawan
 *The boat on Azawan’s right.*
 :::
 
-**2.** `yel vawalal hewezel.`
+**2.** `yel vowogal hewezal.`
 
 ::: details Show answer
 
@@ -602,7 +602,7 @@ y-command | v-walk | h-west
 *Walk west.*
 :::
 
-**3.** `zuhul gojul.`
+**3.** `zehebal gazaval.`
 
 ::: details Show answer
 
@@ -611,7 +611,7 @@ z-ship | g-south
 *The ship to the south.*
 :::
 
-**4.** `yel vawalal hubal.`
+**4.** `yel vowogal habahal.`
 
 ::: details Show answer
 
@@ -620,7 +620,7 @@ y-command | v-walk | h-up
 *Walk up.*
 :::
 
-**5.** `zuluvel gewezethululon bodadal.`
+**5.** `zalavul gewezathalahen bobodal.`
 
 ::: details Show answer
 
@@ -629,7 +629,7 @@ z-life-buoy | [g-west-th-Ululon | b-boat]
 *The life-buoy is on Ululon’s left of the boat.*
 :::
 
-**6.** `yel zedonen vawalal hezazathedonen.`
+**6.** `yel zehan vowogal hezadathehan.`
 
 ::: details Show answer
 
@@ -638,7 +638,7 @@ y-command | z-listener | v-walk | h-east-th-listener
 *You, walk right (your right).*
 :::
 
-**7.** `zuhul gonohethuhubun.`
+**7.** `zehebal gonovethahaben.`
 
 ::: details Show answer
 
@@ -647,7 +647,7 @@ z-ship | g-northwest-th-Uhubun
 *The ship on Uhubun’s forward-left.*
 :::
 
-**8.** `yel zululon vawalal hodowol.`
+**8.** `yel zalahen vowogal hadahel.`
 
 ::: details Show answer
 
@@ -660,9 +660,9 @@ y-command | z-Ululon | v-walk | h-down
 
 ### Arrow roots as talk-moves
 
-When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root **bare** (no **`th`** + facing person). Generic heading is **`ogomo`** (*direction*). Facing-relative ahead / back still uses **`DIR th ANCHOR`**.
+When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root **bare** (no **`th`** + facing person). Generic heading is **`agabu`** (*direction*). Facing-relative ahead / back still uses **`DIR th ANCHOR`**.
 
-> `zazawan vawalal. xezazam zululon vurunul.`
+> `zazawan vowogal. xezadam zalahen varahal.`
 >
 > z-Azawan | v-walk . x-therefore | z-Ululon | v-run
 >
@@ -670,12 +670,12 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| **`ezazam`** (bare) | talk moves on | *progress*; discourse **`xezazam`** *therefore* |
-| **`ewezem`** (bare) | talk comes back | *return* |
-| **`ozohem`** (bare) | talk pulls back | *retreat* |
-| **`ogomol`** | heading in general | *compass* / *direction* |
+| **`ezadam`** (bare) | talk moves on | *progress*; discourse **`xezadam`** *therefore* |
+| **`ewezam`** (bare) | talk comes back | *return* |
+| **`azawem`** (bare) | talk pulls back | *retreat* |
+| **`agabul`** | heading in general | *compass* / *direction* |
 
-**For *therefore*, use:** the [linker](dependents.md#sentence-linkers) **`xezazam`**. Body *left* / *right* still needs **`DIR th ANCHOR`**.
+**For *therefore*, use:** the [linker](dependents.md#sentence-linkers) **`xezadam`**. Body *left* / *right* still needs **`DIR th ANCHOR`**.
 
 ## See also
 

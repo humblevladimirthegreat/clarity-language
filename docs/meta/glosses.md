@@ -8,7 +8,7 @@ A gloss should answer: *what is each Agalan piece doing in the clause — in Eng
 
 | Goal | Gloss does | Gloss does not |
 |------|------------|----------------|
-| Slot + sense | Show PoS letter and the **active English sense** | Quote Agalan phonology (`ugobo`, `uzumu`, …), except [mention / opaque interiors](#span-interiors) |
+| Slot + sense | Show PoS letter and the **active English sense** | Quote Agalan phonology (`ema`, `azaha`, …), except [mention / opaque interiors](#span-interiors) |
 | Separate senses | Treat concrete / abstract / proper / overlay as **different English roots** | Chain etymology (`microphone→speaker`) |
 | Endings | Drop **-l** / **-m** / **-n** when they only pick which sense-root applies | Repeat those endings after a sense that already encodes them |
 | Structure | Keep mid-word `x` pieces, **-x**, and binding visible | Invent full English syntax for Agalan structure; copy writing glyphs (`@` / `~`) into the gloss |
@@ -38,7 +38,7 @@ Worked examples in grammar pages use a **blockquote**, not a code fence (so Mark
 **When the morph line earns its place** (PoS letters, several words, mid-word **`x`**, binding, …):
 
 ```markdown
-> `zazawan godogol.`
+> `zazawan godogal.`
 >
 > z-Azawan | g-dog
 >
@@ -56,7 +56,7 @@ Worked examples in grammar pages use a **blockquote**, not a code fence (so Mark
 A **complex citation** still gets a gloss if the morph unpacks structure the quote does not. An `x`-compound name is one word in Agalan and one name in English; the gloss shows the pieces:
 
 ```markdown
-> `odunaxalanen`
+> `uhudexaloden`
 >
 > wish-x-guidance
 >
@@ -71,7 +71,7 @@ A **complex citation** still gets a gloss if the morph unpacks structure the quo
 
 Do **not** prefix the gloss with `gloss:`.
 
-**Skip the morph line** when **`lint:agalan`** would treat it as redundant: single-segment parser morph whose English body matches the in-block loose line (same readable words, ignoring quotes and trailing `.?!`). That is a redundancy test, not “citation vs sentence.” Simple `azawal` / `"swan"` omits; `zazawan vawalal.` keeps `z-Azawan | v-walk` because that is not `"Azawan walks."`. Keep the line whenever it shows something the quote hides: role letters, several words, mid-word **`x`** pieces, binding, join jobs. No in-block loose line → omitting morph stays allowed.
+**Skip the morph line** when **`lint:agalan`** would treat it as redundant: single-segment parser morph whose English body matches the in-block loose line (same readable words, ignoring quotes and trailing `.?!`). That is a redundancy test, not “citation vs sentence.” Simple `azawal` / `"swan"` omits; `zazawan vowogal.` keeps `z-Azawan | v-walk` because that is not `"Azawan walks."`. Keep the line whenever it shows something the quote hides: role letters, several words, mid-word **`x`** pieces, binding, join jobs. No in-block loose line → omitting morph stays allowed.
 
 ### Word separator
 <a id="gloss-separator"></a>
@@ -95,7 +95,7 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 
 | Agalan distinction | Loose free does |
 |---------------------|-----------------|
-| Cast / short resumes (`zuzur` + “(A)”) | Ordinary *I / you / he / she / they*, or a **name** once known |
+| Cast / short resumes (`zazar` + “(A)”) | Ordinary *I / you / he / she / they*, or a **name** once known |
 | Role metalanguage (`speaker`, `listener`, `interlocutors`) | *I / you / we* |
 | Join packaging (open `zam` vs closed `zal`, exclusive `dol`, fence shape) | Plain *and / or*; no “exactly one”, no open-list footnotes |
 | Sense-picking **-l / -m / -n** | Never (already omitted from morph when they only pick sense) |
@@ -118,7 +118,7 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 
 ### Example (same Agalan, three readings)
 
-> `yol dubur dadedal dogovel dol von.`
+> `yol dabur dedehel dagavel dol von.`
 >
 > y-question | [d-←Ubune-x-Unowen | d-tea | d-coffee | d-or-exactly-one] | v-choose
 >
@@ -132,20 +132,20 @@ Published strings share one phonological root, but **concrete**, **abstract**, a
 
 | Agalan | Morph gloss | Not |
 |---------|-------------|-----|
-| `zugobol` | `z-microphone` | `z-ugobo(microphone)-l`, `z-microphone-l` |
-| `zugobom` | `z-speaker` | `z-ugobo(microphone→speaker)-m` |
-| `zugobon` | `z-speaker` | `z-ugobo(speaker)-n`, `z-speaker-n` |
-| `guzumul` | `g-smile` | `g-uzumu(smile)-l` |
-| `guzumum` | `g-happy` | `g-uzumu(smile→happy)-m`, `g-happy-m` |
-| `huvuvul` | `h-fishing` | `h-uvuvu(fishing)-l` |
-| `thuvuvum` | `th-WITNESSED` | `h-uvuvu(fishing→WITNESSED)-m` |
-| `gohohum` | `g-home` | `g-ohohu(house→home)-m` |
+| `zemal` | `z-microphone` | `z-ugobo(microphone)-l`, `z-microphone-l` |
+| `zemam` | `z-speaker` | `z-ugobo(microphone→speaker)-m` |
+| `zeman` | `z-speaker` | `z-ugobo(speaker)-n`, `z-speaker-n` |
+| `gazahal` | `g-smile` | `g-uzumu(smile)-l` |
+| `gazaham` | `g-happy` | `g-uzumu(smile→happy)-m`, `g-happy-m` |
+| `hevel` | `h-fishing` | `h-uvuvu(fishing)-l` |
+| `thevem` | `th-WITNESSED` | `h-uvuvu(fishing→WITNESSED)-m` |
+| `gahazam` | `g-home` | `g-ohohu(house→home)-m` |
 
-Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agalan line and from [word-endings.md](../grammar/word-endings.md). The gloss’s job is the **sense**, not a second orthography.
+Same English label for `zemam` and `zeman` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agalan line and from [word-endings.md](../grammar/word-endings.md). The gloss’s job is the **sense**, not a second orthography.
 
 **Closed overlays** ([sense-form](../grammar/lexicon.md)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `MAY`, `SAME`, `plan`, `DECISION`, …). The Agalan letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `on` / …).
 
-**Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zugobon` / `zedonen` / `zahan` / `zenenun` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` — never emoji etymology. **Stand-ins** (`darl` / `dorl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
+**Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zeman` / `zehan` / `zohan` / `zanun` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` — never emoji etymology. **Stand-ins** (`darl` / `dorl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
 
 ### Ordinary lexicon plus packed role English
 <a id="no-lexicon-pos-specials"></a>
@@ -154,14 +154,14 @@ Morph uses the published **concrete** or **abstract** for that ending, unless `e
 
 | Agalan | Morph | Free English |
 |--------|--------|------------------------------|
-| `vejel` | `v-see` | *sees* |
-| `vajul` | `v-sit` | *sits* |
-| `vezehel` | `v-tell` | *tells* |
-| `al bohohul` | `in | b-house` | *in a house* |
-| `welem` | `w-very` | *very* |
-| `zejel` | `z-eye` | *the eye* (no packing on `/z/`) |
+| `vahahal` | `v-see` | *sees* |
+| `vehahel` | `v-sit` | *sits* |
+| `vezebel` | `v-tell` | *tells* |
+| `al bahazal` | `in | b-house` | *in a house* |
+| `welavam` | `w-very` | *very* |
+| `zahahal` | `z-eye` | *the eye* (no packing on `/z/`) |
 
-The checkpoint **English** column and the quoted line may say *see* / *sit* / *tell*. Packed **role English** makes the morph line match that lemma when `english_by_pos` lists it for this role and sense (`vejel` → `v-see`). Do not invent a lemma that is not in that cell.
+The checkpoint **English** column and the quoted line may say *see* / *sit* / *tell*. Packed **role English** makes the morph line match that lemma when `english_by_pos` lists it for this role and sense (`vahahal` → `v-see`). Do not invent a lemma that is not in that cell.
 
 ### Role English (lookup and morph)
 <a id="role-english"></a>
@@ -286,8 +286,8 @@ A [short resume](../grammar/pronouns.md#resume-r) (root cut after its 2nd vowel)
 |------|--------|-------------|
 | Short resume | `zazar` | `z-←Azawan` |
 | Full-root resume | `zazawar` | `z-←Azawan.full` |
-| Full-root resume of a content word | `veleber` | `v-←sleep.full` |
-| Compound name | `zubur` | `z-←Ubune-x-Unowen` |
+| Full-root resume of a content word | `vezebar` | `v-←sleep.full` |
+| Compound name | `zabur` | `z-←Ubune-x-Unowen` |
 | Resume of a prior content word | | `z-←someone` / `d-←tea` |
 | No antecedent, stem not in the lexicon | | `z-←"…"` (the stem itself) |
 | Fill-ask / unspecified member | `zar` | `z-who` / `z-something` (as the docs require for that form) |
@@ -302,20 +302,20 @@ Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#
 | Agalan | Morph gloss | Free English | Resume |
 |--------|-------------|--------------|--------|
 | `zazawan` | `z-Azawan` | *Azawan* | `zazar` → `z-←Azawan` |
-| `zululon` | `z-Ululon` | *Ululon* | `zulur` → `z-←Ululon` |
-| `zuhubun` | `z-Uhubun` | *Uhubun* | `zuhur` → `z-←Uhubun` |
+| `zalahen` | `z-Ululon` | *Ululon* | `zalar` → `z-←Ululon` |
+| `zahaben` | `z-Uhubun` | *Uhubun* | `zahar` → `z-←Uhubun` |
 
 ### Mid-word `x` families
 
-Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/interests.md), keep the stance **and** the ending table (contact / prescription warrant / preference standing / changeability): `tholozothom` → `th-competence-motive-internal`, not `th-competence-th-motive`.
+Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/interests.md), keep the stance **and** the ending table (contact / prescription warrant / preference standing / changeability): `thudathom` → `th-competence-motive-internal`, not `th-competence-th-motive`.
 
 | Family | Example Agalan | Morph gloss |
 |--------|-----------------|-------------|
-| Ordinary / name compound | `yubunexunowen` | `y-Ubune-x-Unowen` |
-| Ordinary (three roots) | `zogovexadedaxunuden` | `z-Ogove-x-Adeda-x-Unuden` |
-| Ability / values stance | `vawalaxel` | `v-walk-unable-temporary` |
-| Values stance on need | `tholozothom` | `th-competence-motive-internal` |
-| Role compound | `zaxuvugul` | `z-agent-x-fight` |
+| Ordinary / name compound | `yabubaxazovan` | `y-Ubune-x-Unowen` |
+| Ordinary (three roots) | `zagavexedehexowoden` | `z-Ogove-x-Adeda-x-Unuden` |
+| Ability / values stance | `vowogaxel` | `v-walk-unable-temporary` |
+| Values stance on need | `thudathom` | `th-competence-motive-internal` |
+| Role compound | `zaxavadal` | `z-agent-x-fight` |
 | Span open / close | `thexal` … `xuxul` | `th-ASIDE.multi[…]` ([labeled bracket](#phrase-brackets)) |
 | Number / enumeration | `xrebul` | `x-starting-with` |
 
@@ -328,20 +328,20 @@ For **phrasal proper names**, gloss each piece (`y-Ubune-x-Unowen`, `z-Ogove-x-A
 
 | Kind | Agalan | Morph | Free English |
 |------|--------|-------|--------------|
-| Mention (one word) | `z{odogo}` | `z-MENTION["odogo"]` | *The word “odogo” is small.* |
-| Spoken mention | `zoxol odogol` | `z-MENTION.atomic["odogol"]` | same |
-| Mention (phrase) | `z{zazawan vuzunul}` | `z-MENTION["zazawan vuzunul"]` | *The phrase “zazawan vuzunul” is small.* |
-| Mention **`@`** | `d@{uzugon}` | `d-NAME.MENTION["uzugon"]` | *the name “uzugon”* (the title-string, not the work) |
+| Mention (one word) | `z{odoga}` | `z-MENTION["odogo"]` | *The word “odogo” is small.* |
+| Spoken mention | `zoxol odogal` | `z-MENTION.atomic["odogol"]` | same |
+| Mention (phrase) | `z{zazawan vezehel}` | `z-MENTION["zazawan vuzunul"]` | *The phrase “zazawan vuzunul” is small.* |
+| Mention **`@`** | `d@{onodan}` | `d-NAME.MENTION["uzugon"]` | *the name “uzugon”* (the title-string, not the work) |
 | Opaque | `d<kimchi>` | `d-OPAQUE["kimchi"]` | The same blob |
 | Cite | `d[azawan]` | `d-CITE[Azawan]` | Translation of the **utterance** (*said “judge.”*) |
-| Spoken cite | `daxol ujudul` | `d-CITE.atomic[judge]` | same |
-| Cite **`@`** | `d@[uzugon ululon]` | `d-NAME.CITE[Uzugon \| Ululon]` | The **work** (*dislikes Uzugon Ululon*) |
+| Spoken cite | `daxol ahahol` | `d-CITE.atomic[judge]` | same |
+| Cite **`@`** | `d@[onodan alahen]` | `d-NAME.CITE[Uzugon \| Ululon]` | The **work** (*dislikes Uzugon Ululon*) |
 
 Words inside a cite or aside are glossed as usual. They sit in a new clause, so they keep their own role letters and brackets. Mention and opaque interiors are never glossed.
 
 Speech/writing reports (*said “X,”* *sang “X,”* *don’t “halt”*) are **cite**, even when English says *the word X*. Do not wrap that object in `{…}`. Sense-talk about a lexeme (*is a noun*, *is archaic*) is still mention; there is no extra “translate the lemma” rule — keep *the word/phrase “…”*.
 
-> `z{odogo} gumuzem.`
+> `z{odoga} gamazam.`
 >
 > z-MENTION["odogo"] | g-small
 >
@@ -388,36 +388,36 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | Agalan | Morph gloss | Free English (separate) |
 |---------|-------------|-------------------------|
 | `azawan.` | `Azawan` | *Azawan.* (hello) |
-| `yululoxen` | `y-Ululon-minutes` | *Ululon — a few minutes.* |
+| `yalahexen` | `y-Ululon-minutes` | *Ululon — a few minutes.* |
 | `yael` | `y-yes` | *Yes.* |
 | `yol` | `y-question` | *(yes/no or fill-ask)* |
-| `zugobol` | `z-microphone` | *a microphone* |
-| `zugobon` | `z-speaker` | *I* / *the speaker* |
-| `zedonen` | `z-listener` | *you* / *the listener* |
+| `zemal` | `z-microphone` | *a microphone* |
+| `zeman` | `z-speaker` | *I* / *the speaker* |
+| `zehan` | `z-listener` | *you* / *the listener* |
 | `zazawan` | `z-Azawan` | *Azawan* |
-| `zahan` | `z-interlocutors` | *we* (speaker ∪ address set) |
-| `zugobonx` | `z-speaker-x` | *I and associates* |
-| `zedonenx` | `z-listener-x` | *you-all* (address set) |
-| `guzumum` | `g-happy` | *happy* |
-| `thuvuvum` | `th-WITNESSED` | *per memory* |
-| `thadezem` | `th-LIVE` | *from the scene* |
-| `themabar` | `th-plan-sketch` | *as a sketch plan* |
-| `gonunul` | `g-SAME` | *identical to* (identity host) |
+| `zohan` | `z-interlocutors` | *we* (speaker ∪ address set) |
+| `zemanx` | `z-speaker-x` | *I and associates* |
+| `zehanx` | `z-listener-x` | *you-all* (address set) |
+| `gazaham` | `g-happy` | *happy* |
+| `thevem` | `th-WITNESSED` | *per memory* |
+| `thodem` | `th-LIVE` | *from the scene* |
+| `thamar` | `th-plan-sketch` | *as a sketch plan* |
+| `gugol` | `g-SAME` | *identical to* (identity host) |
 | `von` | `v-choose` | *chooses (exactly one)* |
 
 ### Dialogue turn (morph + loose free)
 
-> `yael zugobon zam zedonen zal guzumum.`
+> `yael zeman zam zehan zal gazaham.`
 >
 > y-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-happy]
 >
 > "Yes — you and I are happy."
 
-(Prefer **`zahan guzumum`** when the point is interlocutor *we*, not an explicit two-name census.)
+(Prefer **`zohan gazaham`** when the point is interlocutor *we*, not an explicit two-name census.)
 
 ### Metaphor vs overlay vs literal
 
-> `xezebal zubur thuvuvum zanunul.`
+> `xezel zabur thevem zerehel.`
 >
 > x-however | z-←Ubune-x-Unowen | th-WITNESSED | z-rain
 >
@@ -427,7 +427,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Ability + value motive
 
-> `yuel zugobon vawalaxel tholozothom.`
+> `yuel zeman vowogaxel thudathom.`
 >
 > y-no | z-speaker | v-walk-unable-temporary | th-competence-motive-internal
 >
@@ -435,7 +435,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Numbered alternative + unmet pleasure
 
-> `xrebul zuzebum grewol zugobonx thawerothur.`
+> `xrebul zehegom grewol zemanx thozethur.`
 >
 > x-starting-with | [z-problem | g-1st] | z-speaker-x | th-pleasure-unmet-passing
 >
@@ -443,7 +443,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Inclusive *we* (interlocutors)
 
-> `yael xezazam zahan themabar vawalal vul.`
+> `yael xezadam zohan thamar vowogal vul.`
 >
 > y-yes | x-therefore | z-interlocutors | th-plan-sketch | [v-walk | v-not]
 >
@@ -474,7 +474,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 | `zam` / `hal` / `am` as the whole morph | Agalan letters where the job belongs | `z-and.open` / `h-only-when` / `including.open` |
 | `z-microphone-l` | Ending already chose the literal root | `z-microphone` |
 | `z-microphone→speaker` | Etymology chain | `z-speaker` |
-| `v-see` for `vejel` with no `v:see` cell | Invented PoS lemma | Fill `english_by_pos` first, then morph follows |
+| `v-see` for `vahahal` with no `v:see` cell | Invented PoS lemma | Fill `english_by_pos` first, then morph follows |
 | Morph line that is only idiomatic English | Confuses layers | Morph + separate quoted free line |
 | Morph gloss that matches the quoted English | Redundant; the quote already is the sense | Omit that line when `lint:agalan` agrees ([example block](#example-block)). Keep it when it unpacks **`x`**, PoS, several words, … |
 | `gloss:` + per-token backticks inside a code fence | Markdown renders raw; Agalan and gloss look the same | Blockquote; backticks on Agalan only |

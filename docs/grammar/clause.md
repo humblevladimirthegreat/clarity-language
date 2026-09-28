@@ -4,15 +4,15 @@ How to read and write one Agalan **clause**: who does what, word shape, and defa
 
 ## Beginner {#beginner}
 
-You already write a [citation](word-endings.md): root + ending (`odogol`, `awalal`, `azawan`). In a **sentence**, put a **role letter** in front. That first letter says what the word is doing (who acts, the action, and so on). The root and ending stay the ones you already chose; only the first letter changes.
+You already write a [citation](word-endings.md): root + ending (`odogal`, `owogal`, `azawan`). In a **sentence**, put a **role letter** in front. That first letter says what the word is doing (who acts, the action, and so on). The root and ending stay the ones you already chose; only the first letter changes.
 
 ### Who acts and the action
 
-`/z/` marks the **subject** (who acts). `/v/` marks the **verb** (the action). Write **role letter + root + ending** as one word (`zodogol` from the citation `odogol`).
+`/z/` marks the **subject** (who acts). `/v/` marks the **verb** (the action). Write **role letter + root + ending** as one word (`zodogal` from the citation `odogal`).
 
 A period ends the statement. With only a subject and a verb, the order is **Subject – Verb**.
 
-> `zodogol vawalal.`
+> `zodogal vowogal.`
 >
 > z-dog | v-walk
 >
@@ -20,7 +20,7 @@ A period ends the statement. With only a subject and a verb, the order is **Subj
 
 A name you already cite with **-n** (`azawan`) keeps **-n** in the sentence:
 
-> `zazawan vawalal.`
+> `zazawan vowogal.`
 >
 > z-Azawan | v-walk
 >
@@ -32,7 +32,7 @@ The **direct object** is who or what the action is done to. Mark it with `/d/`. 
 
 Because the first letter already says each word’s role, you may move those three words without changing who did what. Put first the piece you want to highlight: the person or thing the sentence is “about,” or the new information. English often does that with stress; Agalan can do it with order.
 
-> `zodogol dagadal vejel.`
+> `zodogal dagadal vahahal.`
 >
 > z-dog | d-cat | v-see
 >
@@ -42,7 +42,7 @@ Because the first letter already says each word’s role, you may move those thr
 
 An **adjective** names a property of a noun (*blue*). Mark it with `/ɡ/` and put it right after the noun it describes. You can stack several adjectives after one noun.
 
-> `zodogol gelulul vawalal.`
+> `zodogal gubuhal vowogal.`
 >
 > [z-dog | g-blue] | v-walk
 >
@@ -52,7 +52,7 @@ An **adjective** names a property of a noun (*blue*). Mark it with `/ɡ/` and pu
 
 To say how strongly a property holds (*very* blue), add a word marked with `/w/` immediately before the adjective. The `/w/` word describes only the adjective right after it, not the noun.
 
-> `zodogol welem gelulul vawalal.`
+> `zodogal welavam gubuhal vowogal.`
 >
 > [z-dog | [w-very | g-blue]] | v-walk
 >
@@ -60,9 +60,9 @@ To say how strongly a property holds (*very* blue), add a word marked with `/w/`
 
 ### Adverbs (`/h/`) {#adverbs-h}
 
-An **adverb** says how, when, or where an action happens. Mark it with `/h/`. You may place it anywhere in the sentence, and several adverbs can sit next to each other (`hadazam howom` *hastily and quietly*).
+An **adverb** says how, when, or where an action happens. Mark it with `/h/`. You may place it anywhere in the sentence, and several adverbs can sit next to each other (`hadehom halahom` *hastily and quietly*).
 
-> `zodogol hadazam vawalal.`
+> `zodogal hadehom vowogal.`
 >
 > z-dog | h-haste | v-walk
 >
@@ -72,7 +72,7 @@ An **adverb** says how, when, or where an action happens. Mark it with `/h/`. Yo
 
 An adverb describes the action. A **stance** word describes how **you**, the speaker, stand toward the whole claim: how sure you are, how you know it, why it holds, or whether it is only imagined. Mark it with `/th/`. Like `/h/`, it may sit anywhere in the sentence. `th` counts as one letter ([phonology](phonology.md#consonants)).
 
-> `zodogol thuduhum vawalal.`
+> `zodogal thevegam vowogal.`
 >
 > z-dog | th-doubt | v-walk
 >
@@ -86,7 +86,7 @@ The adverb describes the walking. The stance word describes your claim about it.
 
 **Hosted: completing a relation.** Some words name a relation that needs another person or thing (*like …*). Put that word in `/ɡ/`, `/h/`, or `/th/`, then put the other noun in `/b/` right after it. That relation word is the `/b/` word’s **host**: a `/b/` right after a `/ɡ/`, `/h/`, or `/th/` word always completes that word. (cue: 🪞 *mirror*: the image is *like* the model.)
 
-> `hurorom bazawan`
+> `hemum bazawan`
 >
 > [h-like | b-Azawan]
 >
@@ -94,13 +94,13 @@ The adverb describes the walking. The stance word describes your claim about it.
 
 A `/w/` word still goes before the host, so the host and its `/b/` stay side by side.
 
-> `welem hurorom bazawan`
+> `welavam hemum bazawan`
 >
 > [[w-very | h-like] | b-Azawan]
 >
 > "very like Azawan"
 
-> `zodogol velebel hurorom bazawan.`
+> `zodogal vezebal hemum bazawan.`
 >
 > z-dog | v-sleep | [h-like | b-Azawan]
 >
@@ -108,13 +108,13 @@ A `/w/` word still goes before the host, so the host and its `/b/` stay side by 
 
 **Unhosted: who receives.** A `/b/` word anywhere else is the person who receives what the verb passes on: who gets the thing given, or who hears what is told. What is given or said is still `/d/`. A clause has at most one of these.
 
-> `zazawan bululon vezehel.`
+> `zazawan balahen vezebel.`
 >
 > z-Azawan | b-Ululon | v-tell
 >
 > "Azawan tells Ululon."
 
-**Compare with:** `hurorom bululon` is *like Ululon*, because a `/b/` right after `/h/` completes it. To add a person who receives, keep that `/b/` word away from a `/ɡ/`, `/h/`, or `/th/` word: `bululon hadazam`, or after a finished pair (`hurorom bazawan bululon`).
+**Compare with:** `hemum balahen` is *like Ululon*, because a `/b/` right after `/h/` completes it. To add a person who receives, keep that `/b/` word away from a `/ɡ/`, `/h/`, or `/th/` word: `balahen hadehom`, or after a finished pair (`hemum bazawan balahen`).
 
 ### Role letters {#role-letters}
 
@@ -141,28 +141,28 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *bank* | `anabal` | | |
-| *money* | `onenol` | | |
-| *angry* | `anagal` | | |
-| *happy* | `guzumum` | `uzumul` *smile* | 😊: the face of *happy* |
-| *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
-| *stand* | `vadanal` | `adanal` *stand* | 🧍: staying in place |
-| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
-| *write* | `vuwurul` | `uwurul` *write* | ✍️: putting words on the page |
-| *sneak* | `vazanal` | `azanal` *sneak* | 🥷: moving unseen |
-| *doubt* | `thuduhum` | `uduhul` *think* | 🤔: thinking it over shows doubt |
-| *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
-| *like* | `hurorom` | `urorol` *mirror* | 🪞: the image is of the model |
+| *Ululon* | `alahen` | | |
+| *Uhubun* | `ahaben` | | |
+| *bank* | `abagul` | | |
+| *money* | `omol` | | |
+| *angry* | `anegel` | | |
+| *happy* | `gazaham` | `azahal` *smile* | 😊: the face of *happy* |
+| *sit* | `vehahel` | `ehahel` *chair* | 🪑: taking a seat |
+| *stand* | `vazadol` | `azadol` *stand* | 🧍: staying in place |
+| *see* | `vahahal` | `ahahal` *eye* | 👁️: seeing is what an eye does |
+| *tell* | `vezebel` | `ezebel` *speech* | 💬: saying it to someone |
+| *write* | `varadal` | `aradal` *write* | ✍️: putting words on the page |
+| *sneak* | `vezevul` | `ezevul` *sneak* | 🥷: moving unseen |
+| *doubt* | `thevegam` | `evegal` *think* | 🤔: thinking it over shows doubt |
+| *haste* | `hadehom` | `adehol` *dash* | 💨: a burst of speed |
+| *like* | `hemum` | `emul` *mirror* | 🪞: the image is of the model |
 
 #### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Azawan sits.*
 
 ::: details Show answer
-`zazawan vajul.`
+`zazawan vehahel.`
 
 z-Azawan | v-sit
 :::
@@ -170,7 +170,7 @@ z-Azawan | v-sit
 **2.** *Uhubun sees Azawan.*
 
 ::: details Show answer
-`zuhubun dazawan vejel.`
+`zahaben dazawan vahahal.`
 
 z-Uhubun | d-Azawan | v-see
 :::
@@ -178,7 +178,7 @@ z-Uhubun | d-Azawan | v-see
 **3.** *A very angry Ululon stands.*
 
 ::: details Show answer
-`zululon welem ganagal vadanal.`
+`zalahen welavam ganegel vazadol.`
 
 [z-Ululon | [w-very | g-angry]] | v-stand
 :::
@@ -186,7 +186,7 @@ z-Uhubun | d-Azawan | v-see
 **4.** *Azawan writes hastily.*
 
 ::: details Show answer
-`zazawan vuwurul hadazam.`
+`zazawan varadal hadehom.`
 
 z-Azawan | v-write | h-haste
 :::
@@ -194,7 +194,7 @@ z-Azawan | v-write | h-haste
 **5.** *Azawan tells Ululon.*
 
 ::: details Show answer
-`zazawan bululon vezehel.`
+`zazawan balahen vezebel.`
 
 z-Azawan | b-Ululon | v-tell
 :::
@@ -202,14 +202,14 @@ z-Azawan | b-Ululon | v-tell
 **6.** *I doubt that Uhubun is sitting.*
 
 ::: details Show answer
-`zuhubun thuduhum vajul.`
+`zahaben thevegam vehahel.`
 
 z-Uhubun | th-doubt | v-sit
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
 
-**1.** `zuhubun vadanal.`
+**1.** `zahaben vazadol.`
 
 ::: details Show answer
 
@@ -218,7 +218,7 @@ z-Uhubun | v-stand
 *Uhubun stands.*
 :::
 
-**2.** `zazawan duhubun vejel.`
+**2.** `zazawan dahaben vahahal.`
 
 ::: details Show answer
 
@@ -227,7 +227,7 @@ z-Azawan | d-Uhubun | v-see
 *Azawan sees Uhubun.*
 :::
 
-**3.** `zuhubun guzumum donenol vejel.`
+**3.** `zahaben gazaham domol vahahal.`
 
 ::: details Show answer
 
@@ -236,7 +236,7 @@ z-Azawan | d-Uhubun | v-see
 *Happy Uhubun sees money.*
 :::
 
-**4.** `zululon vazanal hurorom bazawan.`
+**4.** `zalahen vezevul hemum bazawan.`
 
 ::: details Show answer
 
@@ -255,19 +255,19 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 English puts the adjective before the noun (*a blue dog*). Agalan can too: add **`l`** as the second letter (`/ɡ/` + **l** + root + ending), and that adjective describes the **next** noun instead of the one before it. This lets you choose the order for meter or emphasis, and it frees the spot after the noun for another adjective. (cue: **l** ≈ lean: the word leans toward the noun ahead.)
 
-> `glelulul zodogol.`
+> `glubuhal zodogal.`
 >
 > [gl-blue | z-dog]
 >
 > "a blue dog"
 
-A `/b/` word still follows that adjective, and a `/w/` word still sits immediately before it (`welem glelulul zodogol` = *a very blue dog*). This extra **`l`** goes only on adjectives (`/ɡ/`).
+A `/b/` word still follows that adjective, and a `/w/` word still sits immediately before it (`welavam glubuhal zodogal` = *a very blue dog*). This extra **`l`** goes only on adjectives (`/ɡ/`).
 
-### As for (`hozam`) {#as-for}
+### As for (`hahehom`) {#as-for}
 
-English *as for X* or *regarding X* names who or what the sentence is about, even when X is not the subject or object. In Agalan, put **`hozam`** *topic* in `/h/` and X in a hosted `/b/` right after it: `hozam bazawan` is *as for Azawan*. The rest of the sentence keeps its free order. (cue: #️⃣ *hash*: a hashtag marks what the post is about.)
+English *as for X* or *regarding X* names who or what the sentence is about, even when X is not the subject or object. In Agalan, put **`hahehom`** *topic* in `/h/` and X in a hosted `/b/` right after it: `hahehom bazawan` is *as for Azawan*. The rest of the sentence keeps its free order. (cue: #️⃣ *hash*: a hashtag marks what the post is about.)
 
-> `hozam bazawan zululon dagadal vejel.`
+> `hahehom bazawan zalahen dagadal vahahal.`
 >
 > [h-topic | b-Azawan] | z-Ululon | d-cat | v-see
 >
@@ -275,15 +275,15 @@ English *as for X* or *regarding X* names who or what the sentence is about, eve
 
 ### Complex chaining {#complex-chaining}
 
-A relation adjective with its hosted `/b/` (*the same as Azawan*, **`gonunul`** + `/b/`) works as one unit after a noun. You can keep chaining: a plain adjective after that pair describes the **extra noun**, not the first noun, and a `/w/` word that grades the relation sits immediately before the `/ɡ/` word. (cue: 🪙 *coin*: two faces of one thing.)
+A relation adjective with its hosted `/b/` (*the same as Azawan*, **`gugol`** + `/b/`) works as one unit after a noun. You can keep chaining: a plain adjective after that pair describes the **extra noun**, not the first noun, and a `/w/` word that grades the relation sits immediately before the `/ɡ/` word. (cue: 🪙 *coin*: two faces of one thing.)
 
-> `zodogol welem gonunul bazawan.`
+> `zodogal welavam gugol bazawan.`
 >
 > z-dog | [[w-very | g-SAME] | b-Azawan]
 >
 > "a dog the very same as Azawan"
 
-> `zodogol gonunul bazawan gelulul.`
+> `zodogal gugol bazawan gubuhal.`
 >
 > z-dog | [g-SAME | [b-Azawan | g-blue]]
 >
@@ -291,7 +291,7 @@ A relation adjective with its hosted `/b/` (*the same as Azawan*, **`gonunul`** 
 
 Because a second relation after the pair would attach to the extra noun, you cannot put two relation adjectives **after** the same first noun. To keep both on that noun in one clause, put one [before the noun](#left-bound-adjectives) with **`gl-`**; its `/b/` still follows it. Otherwise use [another sentence](dependents.md#which-noun).
 
-> `glonunul bazawan zodogol gonunul bululon.`
+> `glugol bazawan zodogal gugol balahen.`
 >
 > [[gl-SAME | b-Azawan] | z-dog] | [g-SAME | b-Ululon]
 >
@@ -303,34 +303,34 @@ A verb can take several `/h/` or `/th/` units. Each plain word counts as one uni
 
 ### How much: degree words on `/w/` {#degree-w}
 
-Beginner used **`welem`** *very* before an adjective. The same `/w/` slot takes a few stock degree words, and each one works before an adverb as well as an adjective.
+Beginner used **`welavam`** *very* before an adjective. The same `/w/` slot takes a few stock degree words, and each one works before an adverb as well as an adjective.
 
 | Agalan | English | Cue |
 |--------|---------|-----|
-| `welem` | *very* | 🐘: big, as a degree |
-| `wogegal` | *extremely* / *overwhelmingly* | 🌊: an ocean of it |
-| `wumuzem` | *slightly* / *a bit* | 🐁: small, as a degree |
-| `wegerum` | *quite* / *fairly* | 🔉: medium volume, not loud or soft |
+| `welavam` | *very* | 🐘: big, as a degree |
+| `wohul` | *extremely* / *overwhelmingly* | 🌊: an ocean of it |
+| `wamazam` | *slightly* / *a bit* | 🐁: small, as a degree |
+| `wadeham` | *quite* / *fairly* | 🔉: medium volume, not loud or soft |
 
-> `zodogol welem hadazam vawalal.`
+> `zodogal welavam hadehom vowogal.`
 >
 > z-dog | [w-very | h-haste] | v-walk
 >
 > "A dog walks very hastily."
 
-> `zodogol wogegal gelulul vawalal.`
+> `zodogal wohul gubuhal vowogal.`
 >
 > [z-dog | [w-ocean | g-blue]] | v-walk
 >
 > "An extremely blue dog walks."
 
-> `zodogol wumuzem gelulul vawalal.`
+> `zodogal wamazam gubuhal vowogal.`
 >
 > [z-dog | [w-small | g-blue]] | v-walk
 >
 > "A slightly blue dog walks."
 
-> `zodogol wegerum gelulul vawalal.`
+> `zodogal wadeham gubuhal vowogal.`
 >
 > [z-dog | [w-quite | g-blue]] | v-walk
 >
@@ -340,13 +340,13 @@ Beginner used **`welem`** *very* before an adjective. The same `/w/` slot takes 
 
 English uses the passive (*The cat was seen*, *Mistakes were made*) to avoid naming who acted. Agalan simply leaves out the `/z/` word. The verb and its object stay the same, and the sentence says nothing about who did it.
 
-> `dazawan vejel.`
+> `dazawan vahahal.`
 >
 > d-Azawan | v-see
 >
 > "Azawan was seen."
 
-**Compare with:** [`zenenun`](pronouns.md#special-pronouns) *someone* says that somebody did it, without saying who. With no subject at all, the sentence does not mention a doer.
+**Compare with:** [`zanun`](pronouns.md#special-pronouns) *someone* says that somebody did it, without saying who. With no subject at all, the sentence does not mention a doer.
 
 ### Translation practice {#intermediate-translation-practice}
 
@@ -359,26 +359,26 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agalan |
 |---------|--------|
 | *Azawan* | `azawan` |
-| *Ululon* | `ululon` |
-| *Uhubun* | `uhubun` |
-| *ticket* | `ugedel` |
-| *blue* | `elulul` |
-| *red* | `aredel` |
-| *same* | `gonunul` |
-| *sit* | `vajul` |
-| *stand* | `vadanal` |
-| *see* | `vejel` |
-| *tell* | `vezehel` |
-| *very* | `welem` |
-| *topic* | `hozam` |
-| *train* | `adadul` |
+| *Ululon* | `alahen` |
+| *Uhubun* | `ahaben` |
+| *ticket* | `edegal` |
+| *blue* | `ubuhal` |
+| *red* | `eredal` |
+| *same* | `gugol` |
+| *sit* | `vehahel` |
+| *stand* | `vazadol` |
+| *see* | `vahahal` |
+| *tell* | `vezebel` |
+| *very* | `welavam` |
+| *topic* | `hahehom` |
+| *train* | `edehal` |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *A very red train stands.* (adjective before the noun)
 
 ::: details Show answer
-`welem glaredel zadadul vadanal.`
+`welavam gleredal zedehal vazadol.`
 
 [[w-very | gl-red] | z-train] | v-stand
 :::
@@ -386,7 +386,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **2.** *Azawan the same as blue Uhubun stands.*
 
 ::: details Show answer
-`zazawan gonunul buhubun gelulul vadanal.`
+`zazawan gugol bahaben gubuhal vazadol.`
 
 [z-Azawan | [g-SAME | [b-Uhubun | g-blue]]] | v-stand
 :::
@@ -394,7 +394,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **3.** *As for Azawan, Ululon sees a ticket.*
 
 ::: details Show answer
-`hozam bazawan zululon dugedel vejel.`
+`hahehom bazawan zalahen dedegal vahahal.`
 
 [h-topic | b-Azawan] | z-Ululon | d-ticket | v-see
 :::
@@ -402,7 +402,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **4.** *A very blue train sits.*
 
 ::: details Show answer
-`zadadul welem gelulul vajul.`
+`zedehal welavam gubuhal vehahel.`
 
 [z-train | [w-very | g-blue]] | v-sit
 :::
@@ -410,7 +410,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **5.** *A red train sees a blue ticket.*
 
 ::: details Show answer
-`zadadul garedel gelulul dugedel vejel.`
+`zedehal geredal gubuhal dedegal vahahal.`
 
 [z-train | g-red | g-blue] | d-ticket | v-see
 :::
@@ -418,7 +418,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **6.** *Uhubun tells Ululon hastily.*
 
 ::: details Show answer
-`zuhubun bululon hadazam vezehel.`
+`zahaben balahen hadehom vezebel.`
 
 z-Uhubun | b-Ululon | h-haste | v-tell
 :::
@@ -426,14 +426,14 @@ z-Uhubun | b-Ululon | h-haste | v-tell
 **7.** *Azawan was seen.*
 
 ::: details Show answer
-`dazawan vejel.`
+`dazawan vahahal.`
 
 d-Azawan | v-see
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
 
-**1.** `glelulul zadadul vadanal.`
+**1.** `glubuhal zedehal vazadol.`
 
 ::: details Show answer
 
@@ -442,7 +442,7 @@ d-Azawan | v-see
 *A blue train stands.*
 :::
 
-**2.** `zuhubun gonunul bululon garedel vadanal.`
+**2.** `zahaben gugol balahen geredal vazadol.`
 
 ::: details Show answer
 
@@ -451,7 +451,7 @@ d-Azawan | v-see
 *Uhubun the same as red Ululon stands.*
 :::
 
-**3.** `dugedel vejel.`
+**3.** `dedegal vahahal.`
 
 ::: details Show answer
 
@@ -460,7 +460,7 @@ d-ticket | v-see
 *A ticket was seen.*
 :::
 
-**4.** `zodogol welem hurorom bazawan velebel.`
+**4.** `zodogal welavam hemum bazawan vezebal.`
 
 ::: details Show answer
 
@@ -469,7 +469,7 @@ z-dog | [[w-very | h-like] | b-Azawan] | v-sleep
 *A dog sleeps very like Azawan.*
 :::
 
-**5.** `zadadul welem garedel vajul.`
+**5.** `zedehal welavam geredal vehahel.`
 
 ::: details Show answer
 
@@ -478,7 +478,7 @@ z-dog | [[w-very | h-like] | b-Azawan] | v-sleep
 *A very red train sits.*
 :::
 
-**6.** `hozam buhubun zazawan bululon vezehel.`
+**6.** `hahehom bahaben zazawan balahen vezebel.`
 
 ::: details Show answer
 
@@ -495,7 +495,7 @@ Beginner showed that you may reorder the words of a clause, because the first le
 
 English usually keeps subject–verb–object order and uses extra wording, the passive, or spoken stress for that job. When you translate, keep the same highlight in English. Copy Agalan order into English only when that English is also a natural way to put that piece first (*Hastily, Azawan walks*). Keep a [stand-in](dependents.md#stand-in) `darl` / `barl` last in its slot, and move the other words around it.
 
-> `zazawan dagadal vejel.`
+> `zazawan dagadal vahahal.`
 >
 > z-Azawan | d-cat | v-see
 >
@@ -503,7 +503,7 @@ English usually keeps subject–verb–object order and uses extra wording, the 
 
 Same roles, object first:
 
-> `dagadal zazawan vejel.`
+> `dagadal zazawan vahahal.`
 >
 > d-cat | z-Azawan | v-see
 >
@@ -511,11 +511,11 @@ Same roles, object first:
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `zazawan dagadal vejel.` | subject first | *Azawan sees a cat.* |
-| `&zazawan dagadal vejel.` | subject, contrasted | *It was Azawan who saw the cat.* |
-| `dagadal zazawan vejel.` | object first | *It's a cat that Azawan sees.* |
-| `vejel zazawan dagadal.` | verb first | *What Azawan does is see a cat.* |
-| `hadazam zazawan vawalal.` | adverb first | *Hastily, Azawan walks.* |
+| `zazawan dagadal vahahal.` | subject first | *Azawan sees a cat.* |
+| `&zazawan dagadal vahahal.` | subject, contrasted | *It was Azawan who saw the cat.* |
+| `dagadal zazawan vahahal.` | object first | *It's a cat that Azawan sees.* |
+| `vahahal zazawan dagadal.` | verb first | *What Azawan does is see a cat.* |
+| `hadehom zazawan vowogal.` | adverb first | *Hastily, Azawan walks.* |
 
 Object-first English *It's a cat that Azawan sees* (or *A cat is what Azawan sees*) still names Azawan as the one who sees. *A cat is seen* hides who sees unless you add *by Azawan*. Use the longer English when you only want to highlight the object.
 
@@ -538,26 +538,26 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `ululon` | |
-| *Uhubun* | `uhubun` | |
-| *balloon* | `abalol` | |
-| *trumpet* | `udubel` | |
-| *drum* | `urumul` | |
-| *mask* | `amazal` | |
-| *package* | `agegel` | |
-| *see* | `vejel` | `ejel` *eye* |
-| *tell* | `vezehel` | `ezehel` *speech* |
-| *sit* | `vajul` | `ajul` *chair* |
-| *sneak* | `vazanal` | `azanal` *sneak* |
-| *punch* | `vubunul` | `ubunul` *punch* |
-| *haste* | `hadazam` | `adazal` *dash* |
+| *Ululon* | `alahen` | |
+| *Uhubun* | `ahaben` | |
+| *balloon* | `abevul` | |
+| *trumpet* | `adawol` | |
+| *drum* | `adavol` | |
+| *mask* | `amazol` | |
+| *package* | `abegol` | |
+| *see* | `vahahal` | `ahahal` *eye* |
+| *tell* | `vezebel` | `ezebel` *speech* |
+| *sit* | `vehahel` | `ehahel` *chair* |
+| *sneak* | `vezevul` | `ezevul` *sneak* |
+| *punch* | `vabahel` | `abahel` *punch* |
+| *haste* | `hadehom` | `adehol` *dash* |
 
 #### English → Agalan {#advanced-english-to-agalan}
 
 **1.** *Hastily, Azawan sees a balloon.*
 
 ::: details Show answer
-`hadazam zazawan dabalol vejel.`
+`hadehom zazawan dabevul vahahal.`
 
 h-haste | z-Azawan | d-balloon | v-see
 :::
@@ -565,7 +565,7 @@ h-haste | z-Azawan | d-balloon | v-see
 **2.** *It's a balloon that Uhubun sees.*
 
 ::: details Show answer
-`dabalol zuhubun vejel.`
+`dabevul zahaben vahahal.`
 
 d-balloon | z-Uhubun | v-see
 :::
@@ -573,7 +573,7 @@ d-balloon | z-Uhubun | v-see
 **3.** *What Azawan does is tell Ululon.*
 
 ::: details Show answer
-`vezehel zazawan bululon.`
+`vezebel zazawan balahen.`
 
 v-tell | z-Azawan | b-Ululon
 :::
@@ -581,7 +581,7 @@ v-tell | z-Azawan | b-Ululon
 **4.** *Hastily, Ululon sneaks.*
 
 ::: details Show answer
-`hadazam zululon vazanal.`
+`hadehom zalahen vezevul.`
 
 h-haste | z-Ululon | v-sneak
 :::
@@ -589,7 +589,7 @@ h-haste | z-Ululon | v-sneak
 **5.** *It's a drum that Ululon punches.*
 
 ::: details Show answer
-`durumul zululon vubunul.`
+`dadavol zalahen vabahel.`
 
 d-drum | z-Ululon | v-punch
 :::
@@ -597,14 +597,14 @@ d-drum | z-Ululon | v-punch
 **6.** *What Ululon does is punch Uhubun.*
 
 ::: details Show answer
-`vubunul zululon duhubun.`
+`vabahel zalahen dahaben.`
 
 v-punch | z-Ululon | d-Uhubun
 :::
 
 #### Agalan → English {#advanced-agalan-to-english}
 
-**1.** `dudubel zuhubun vejel.`
+**1.** `dadawol zahaben vahahal.`
 
 ::: details Show answer
 
@@ -613,7 +613,7 @@ d-trumpet | z-Uhubun | v-see
 *It's a trumpet that Uhubun sees.*
 :::
 
-**2.** `hadazam zuhubun vajul.`
+**2.** `hadehom zahaben vehahel.`
 
 ::: details Show answer
 
@@ -622,7 +622,7 @@ h-haste | z-Uhubun | v-sit
 *Hastily, Uhubun sits.*
 :::
 
-**3.** `vezehel zululon buhubun.`
+**3.** `vezebel zalahen bahaben.`
 
 ::: details Show answer
 
@@ -631,7 +631,7 @@ v-tell | z-Ululon | b-Uhubun
 *What Ululon does is tell Uhubun.*
 :::
 
-**4.** `dagegel zululon vejel.`
+**4.** `dabegol zalahen vahahal.`
 
 ::: details Show answer
 
@@ -640,7 +640,7 @@ d-package | z-Ululon | v-see
 *It's a package that Ululon sees.*
 :::
 
-**5.** `damazal zululon vubunul.`
+**5.** `damazol zalahen vabahel.`
 
 ::: details Show answer
 
@@ -649,7 +649,7 @@ d-mask | z-Ululon | v-punch
 *It's a mask that Ululon punches.*
 :::
 
-**6.** `duhubun zululon hadazam vubunul.`
+**6.** `dahaben zalahen hadehom vabahel.`
 
 ::: details Show answer
 

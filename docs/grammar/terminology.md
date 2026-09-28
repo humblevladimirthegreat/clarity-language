@@ -14,37 +14,37 @@ Closed labels for psychological moods, poles, and emotion-compose pieces. Mood w
 
 | Label | Gloss | Teach |
 |-------|-------|--------|
-| **ABIL** | Hostless *can* / *can’t* fallback **`egera`** | [Ability](intention.md#ability-fallback) |
+| **ABIL** | Hostless *can* / *can’t* fallback **`aze`** | [Ability](intention.md#ability-fallback) |
 | **ACT** | Emotion-compose arousal (HIGH / MED / LOW) | [Interests](interests.md#emotion-compose) |
-| **AS-OF** | Whose-now pole: ledger **`elere`** / bookmark **`oboma`** | [Relations](relations.md#as-of) |
-| **ALTHOUGH** | Clause-pole **`ezeba`** (*although* / NP *despite*) | [Dependents](dependents.md#dependent-clauses) |
-| **BECAUSE** | Clause-pole **`urugu`** (*because*) | [Causation](causation.md#because) |
-| **CAUSE** | Mechanism-framing mood **`egega`** | [Causation](causation.md#cause) |
+| **AS-OF** | Whose-now pole: ledger **`enu`** / bookmark **`umu`** | [Relations](relations.md#as-of) |
+| **ALTHOUGH** | Clause-pole **`eze`** (*although* / NP *despite*) | [Dependents](dependents.md#dependent-clauses) |
+| **BECAUSE** | Clause-pole **`abe`** (*because*) | [Causation](causation.md#because) |
+| **CAUSE** | Mechanism-framing mood **`ege`** | [Causation](causation.md#cause) |
 | **CIRCUM** | Emotion locus: charge on the situation | [Interests](interests.md#emotion-compose) |
-| **MAY** | Potential mood **`odoho`** (*could be*; I'll find out / default / who knows) | [Knowing](knowing.md#may) |
+| **MAY** | Potential mood **`ovo`** (*could be*; I'll find out / default / who knows) | [Knowing](knowing.md#may) |
 | **COMMON** | Universality: usual, exceptions expected | [Knowing](knowing.md#universality) |
-| **DECISION** | Pick-firmness mood **`ehege`** | [Intention](intention.md#decision) |
+| **DECISION** | Pick-firmness mood **`ehu`** | [Intention](intention.md#decision) |
 | **EXTERNAL** | Emotion locus: charge at other people | [Interests](interests.md#emotion-compose) |
 | **FELT** | Evidential: gut / body knowing | [Knowing](knowing.md#evidentiality) |
 | **FORMAL** | Universality: definition / math / proof | [Knowing](knowing.md#universality) |
-| **FORMER** | Episode standing: not the climate claimed now **`emebe`** | [Knowing](knowing.md#former-climate) |
+| **FORMER** | Episode standing: not the climate claimed now **`ene`** | [Knowing](knowing.md#former-climate) |
 | **HIGH** / **MED** / **LOW** | Emotion ACT roots | [Interests](interests.md#emotion-compose) |
-| **IF** | Clause-pole **`adoro`** (one-way *if*) | [Causation](causation.md#if) |
-| **IFF** | Clause-pole **`ezaze`** | [Causation](causation.md#iff) |
+| **IF** | Clause-pole **`owe`** (one-way *if*) | [Causation](causation.md#if) |
+| **IFF** | Clause-pole **`edo`** | [Causation](causation.md#iff) |
 | **INFERRED** | Evidential: reasoned from clues | [Knowing](knowing.md#evidentiality) |
 | **INTERNAL** | Emotion locus: charge held inside | [Interests](interests.md#emotion-compose) |
 | **LIVE** | Evidential: concurrent / in-view observation | [Knowing](knowing.md#live-vs-memory) |
 | **LOCUS** | Emotion-compose where the charge sits | [Interests](interests.md#emotion-compose) |
 | **NATURAL** | Universality: natural necessity | [Knowing](knowing.md#universality) |
-| **NOTIONAL** | As-if / pretense mood **`adade`** | [Knowing](knowing.md#notional) |
-| **ONLY-IF** | Clause-pole **`ebero`** (*only if* / *needs*) | [Causation](causation.md#only-if) |
+| **NOTIONAL** | As-if / pretense mood **`ave`** | [Knowing](knowing.md#notional) |
+| **ONLY-IF** | Clause-pole **`oro`** (*only if* / *needs*) | [Causation](causation.md#only-if) |
 | **PATTERN** | Evidential: from regularity | [Knowing](knowing.md#evidentiality) |
-| **PLAN** | Intention-framing mood **`emaba`** | [Intention](intention.md#plan-predict) |
+| **PLAN** | Intention-framing mood **`ama`** | [Intention](intention.md#plan-predict) |
 | **RECORDED** | Evidential: documented / playback / scheduled | [Knowing](knowing.md#evidentiality) |
-| **RESIDUE** | Episode standing: outcome still on the current tally **`oneno`** | [Knowing](knowing.md#residue) |
+| **RESIDUE** | Episode standing: outcome still on the current tally **`omo`** | [Knowing](knowing.md#residue) |
 | **RULE** | Universality: holds inside a named frame | [Knowing](knowing.md#universality) |
-| **SAME** | Identity copula **`onunu`** | [Predication](predication.md#identity) |
-| **SO-THAT** | Clause-pole **`olala`** (*so that* / NP intended *for*) | [Dependents](dependents.md#so-that) |
+| **SAME** | Identity copula **`ugo`** | [Predication](predication.md#identity) |
+| **SO-THAT** | Clause-pole **`ago`** (*so that* / NP intended *for*) | [Dependents](dependents.md#so-that) |
 | **STORY** | Evidential: narrative / lore | [Knowing](knowing.md#evidentiality) |
 | **TOLD** | Evidential: hearsay | [Knowing](knowing.md#evidentiality) |
 | **UNCOUNTERED** | Universality: no counterexample comes to mind | [Knowing](knowing.md#universality) |
@@ -135,7 +135,7 @@ How many items sit before a join: **list** (2+), **single-item** (1), **standalo
 
 ### As-for
 
-Complex `/h/` + `/b/` (**`hozam`**) *as for X*.
+Complex `/h/` + `/b/` (**`hahehom`**) *as for X*.
 
 [Clause](clause.md#as-for)
 
@@ -208,7 +208,7 @@ Kind / role as predicative `/ɡ/` (no *to-be* verb).
 
 ### Clause pole / NP pole
 
-Condition vs outcome as NPs vs full sentences after **`barl`**. **Clause pole** is the causation reading. Concession **`ezeba`** uses the same NP vs clause split (*despite Ululon* vs *although Ululon walks*). Intended outcome **`olala`** uses it too (*for a money-bag* vs *so that Ululon sits*).
+Condition vs outcome as NPs vs full sentences after **`barl`**. **Clause pole** is the causation reading. Concession **`eze`** uses the same NP vs clause split (*despite Ululon* vs *although Ululon walks*). Intended outcome **`ago`** uses it too (*for a money-bag* vs *so that Ululon sits*).
 
 [Causation](causation.md)
 
@@ -276,7 +276,7 @@ A full sentence that fills a [stand-in](#stand-in) slot (`darl` / `barl` / `dorl
 
 [Dependents](dependents.md#dependent-clauses)
 
-**Compare with:** English *the dog that runs* (which dog) is [which person or thing](dependents.md#which-noun), not a stand-in. Intended outcome *so that* is [**`holalam`**](dependents.md#so-that) plus **`barl`** or a noun `/b/`.
+**Compare with:** English *the dog that runs* (which dog) is [which person or thing](dependents.md#which-noun), not a stand-in. Intended outcome *so that* is [**`hagom`**](dependents.md#so-that) plus **`barl`** or a noun `/b/`.
 
 ### Digitless
 
@@ -368,19 +368,19 @@ Extra-noun [hook](hooks.md#extra-noun) **`ael`** plus implement `/b/` (*using / 
 
 ### Simile (*like*)
 
-Hosted **`hurorom`** / **`gurorom`** plus model `/b/` (*like* a duck / *like* Azawan’s). Not **`SAME`**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
+Hosted **`hemum`** / **`gemum`** plus model `/b/` (*like* a duck / *like* Azawan’s). Not **`SAME`**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
 
 [Relations](relations.md#similative)
 
 ### Exchange (*for*)
 
-Hosted **`huhanem`** / **`guhanem`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not interests motive **`tho`**, not intended-outcome **`olala`**.
+Hosted **`hohem`** / **`gohem`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not interests motive **`tho`**, not intended-outcome **`ago`**.
 
 [Relations](relations.md#exchange)
 
 ### Proxy (*on behalf of*)
 
-Hosted **`hudagam`** / **`gudagam`** plus principal `/b/` (*on behalf of* Ululon). Not hook *instead*, not recipient `/b/`.
+Hosted **`hadum`** / **`gadum`** plus principal `/b/` (*on behalf of* Ululon). Not hook *instead*, not recipient `/b/`.
 
 [Relations](relations.md#proxy)
 
@@ -513,7 +513,7 @@ Interest stances **`tha` / `thu`** (Beginner); **`the`** / **`tho`** (Intermedia
 
 [Interests](interests.md)
 
-**Compare with:** [as-for](#as-for) is **`hozam`**, not a interest stance.
+**Compare with:** [as-for](#as-for) is **`hahehom`**, not a interest stance.
 
 ### Named handle
 
@@ -547,7 +547,7 @@ Number problem / solution / goal candidates with free ordinals.
 
 [Numbers in use](numbers-applied.md#numbered-alternatives)
 
-**Compare with:** clause *so that* is [**`holalam`**](dependents.md#so-that), not the goal noun **`olalal`**.
+**Compare with:** clause *so that* is [**`hagom`**](dependents.md#so-that), not the goal noun **`agol`**.
 
 ### Numeric derivation / quasi
 
@@ -573,7 +573,7 @@ FIELD × KIND with mid-word **`x`**; closed stem with join letter and no `x`.
 
 [x-compounds](x-compounds.md)
 
-**Compare with:** a [hook compound](hooks.md#hook-compounds) is a citation plus an extra-noun hook (`awalalul` *leave*), still with no **`x`**.
+**Compare with:** a [hook compound](hooks.md#hook-compounds) is a citation plus an extra-noun hook (`owogalul` *leave*), still with no **`x`**.
 
 ### Overlay / sense-form
 
@@ -676,7 +676,7 @@ Word-initial job letter.
 
 ### So that / event purpose
 
-Clause-pole **`olala`**: intended outcome of the host (*so that Ululon sits*; NP *for a money-bag*). Not locative *toward*, not interest **`tho`**, not discourse *therefore*.
+Clause-pole **`ago`**: intended outcome of the host (*so that Ululon sits*; NP *for a money-bag*). Not locative *toward*, not interest **`tho`**, not discourse *therefore*.
 
 [Dependents](dependents.md#so-that)
 
@@ -714,11 +714,11 @@ Short word in a role slot (`darl` / `barl` / `dorl` / `derl` / `durl`, open **`-
 
 [Dependents](dependents.md#stand-in)
 
-**Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause poles](#clause-pole-np-pole) (`thurugum`, `thadorom`) name the relation; the stand-in fills `/b/`.
+**Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause poles](#clause-pole-np-pole) (`thabem`, `thowem`) name the relation; the stand-in fills `/b/`.
 
 ### Special pronoun
 
-**`ugobo` / `edone` / `aha` / `enenu`**.
+**`ema` / `eha` / `oha` / `anu`**.
 
 [Pronouns](pronouns.md#special-pronouns)
 
@@ -781,7 +781,7 @@ Mood how-exceptionless (COMMON … RULE).
 
 ### Interests
 
-Interest + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`gobobum`** + `/w/` need.
+Interest + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`gobem`** + `/w/` need.
 
 [Interests](interests.md)
 

@@ -102,7 +102,7 @@ This is where join-act vs soft clause **-n**, mood vs manner, value vs ability, 
 ### Closed forms follow the lexicon
 <a id="closed-forms-follow-lexicon"></a>
 
-Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, emotion ACT/LOCUS, clause poles, locatives, means, similative *like*, exchange *for*, proxy *on behalf of*, of-relations, judgment benchmarks, …) are **the published root** for that host (emoji / English literal) plus the overlay ending. When you **add** a closed overlay, pick an existing published row and spell that root plus ending (`uroro` + **-n** → **`uroron`**). Do **not** freeze a private spelling, do **not** coin a new lexicon word just to host the overlay, and do **not** put a productive stem (numeric derivation, role, values) in `sense_form`. If conversion reassigns *fishing*, witnessed **`thuvuvum`** moves with **`uvuvu`**. If conversion reassigns *attest*, live **`thadezem`** moves with **`adeze`**.
+Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, emotion ACT/LOCUS, clause poles, locatives, means, similative *like*, exchange *for*, proxy *on behalf of*, of-relations, judgment benchmarks, …) are **the published root** for that host (emoji / English literal) plus the overlay ending. When you **add** a closed overlay, pick an existing published row and spell that root plus ending (`emu` + **-n** → **`emun`**). Do **not** freeze a private spelling, do **not** coin a new lexicon word just to host the overlay, and do **not** put a productive stem (numeric derivation, role, values) in `sense_form`. If conversion reassigns *fishing*, witnessed **`thevem`** moves with **`eve`**. If conversion reassigns *attest*, live **`thodem`** moves with **`ode`**.
 
 **Exception:** join-act / join-relation sense-forms (`an` / `on` / `aon` / …) and other **vowel-series** morphology (join fences, restrictor cores) are keyed by **`a` / `o` / `e` / `u`**, not by a lexicon row — those spellings stay. Do **not** add a hosted overlay whose `sense_form` is a join stem (`uan`, `an`, …) unless it is this vowel-series family.
 
@@ -114,33 +114,33 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, emotion ACT
 | `kind` | `LexReading` | Inventory |
 |--------|--------------------|-----------|
 | `interest` | `interest` (on `x`+vowel hosts only) | six interests + unspecified; bare spelling is ordinary content |
-| `ability` | `ability` | hostless **`egera`** |
+| `ability` | `ability` | hostless **`aze`** |
 | `join_act` | `joinAct` | vowel-series `/v/` **`an`** / **`on`** / … |
 | `join_relation` | `joinRelation` | same stems on `/g/` `/h/` |
 | `evidential` | `mood` | LIVE / WITNESSED / … |
-| `residue` | `mood` | RESIDUE **`oneno`** |
-| `former_climate` | `mood` | FORMER **`emebe`** |
-| `phasal` | `mood` | *already* **`ahaga`** / *still* **`anogo`** / *not yet* **`ezede`** / *no longer* **`uwulu`** |
+| `residue` | `mood` | RESIDUE **`omo`** |
+| `former_climate` | `mood` | FORMER **`ene`** |
+| `phasal` | `mood` | *already* **`oho`** / *still* **`aga`** / *not yet* **`oza`** / *no longer* **`ewe`** |
 | `may` | `mood` | MAY hold map (find out / default / who knows) |
 | `notional` | `mood` | NOTIONAL hold map |
 | `plan` | `mood` | map-resolution endings |
-| `predict` | `mood` | **`elezo`** |
+| `predict` | `mood` | **`edazo`** |
 | `decision` | `mood` | DECISION changeability |
-| `attempt` | `mood` | ATTEMPT commitment (**`ezube`**) |
-| `cause` | `mood` | CAUSE **`egega`** |
+| `attempt` | `mood` | ATTEMPT commitment (**`ede`**) |
+| `cause` | `mood` | CAUSE **`ege`** |
 | `clause_pole` | `mood` | *if* / *only-if* / *iff* / *because* / *so-that* / *as-of* / … |
 | `universality` | `mood` | COMMON / FORMAL / … |
 | `emotion_act` | `mood` | HIGH / MED / LOW |
 | `emotion_locus` | `mood` | INTERNAL / EXTERNAL / CIRCUM |
-| `identity` | `mood` | SAME **`onunu`** |
+| `identity` | `mood` | SAME **`ugo`** |
 | `benchmark` | `mood` | Average / Typical / Mine / Social / Professional / Everyone |
 | `locative` | `locative` | *between* |
-| `means` | `means` | *using* **`ahana`** |
-| `similative` | `similative` | *like* **`uroro`** |
+| `means` | `means` | *using* **`ahada`** |
+| `similative` | `similative` | *like* **`emu`** |
 | `of_relation` | `ofRelation` | *part of* / *contents* / *material* / *origin* |
-| `exchange` | `exchange` | *in-exchange-for* **`uhane`** |
-| `proxy` | `proxy` | *on-behalf-of* **`udaga`** |
-| `stimulus` | `stimulus` | need about an unowned noun **`obobu`** |
+| `exchange` | `exchange` | *in-exchange-for* **`ohe`** |
+| `proxy` | `proxy` | *on-behalf-of* **`adu`** |
+| `stimulus` | `stimulus` | need about an unowned noun **`obe`** |
 
 Later splits of `mood` (token class, gloss tag) can follow this column without new English regexes. Special pronouns stay published + gloss, not this table, until they need a parse fork.
 

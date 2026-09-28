@@ -26,7 +26,7 @@ Sometimes the meaning you want is the published **abstract** sense for that root
 
 **Compare with:** the everyday picture of the same root uses **-l** (`azawal` *swan*). *Grace* is the published abstract of `azawa`, so the citation is **-m**. (cue: from *swan*: the glide of *grace*)
 
-Nationality words are an **exception**: the people/quality sits on **-m** even though you can meet a Japanese person (`gajabam`). That is still the published second sense of the place root, not a name (**-n**).
+Nationality words are an **exception**: the people/quality sits on **-m** even though you can meet a Japanese person (`gahebam`). That is still the published second sense of the place root, not a name (**-n**).
 
 ### Named (`-n`)
 <a id="named-n-beginner"></a>
@@ -80,23 +80,23 @@ Short drills for Beginner. Try each item before opening **Show answer**. Choose 
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *school* | `ahalal` | | |
-| *chair* | `ajul` | | |
-| *pencil* | `ebegul` | | |
-| *draft* | `ebegum` | `ebegul` *pencil* | ✏️: marks you can still erase |
-| *book* | `abogol` | | |
-| *knowledge* | `abogom` | `abogol` *book* | 📖: what a book holds |
-| *magnify* | `aguvol` | | |
-| *scrutiny* | `aguvom` | `aguvol` *magnify* | 🔍: close examination |
-| *bell* | `obelel` | | |
-| *alert* | `obelem` | `obelel` *bell* | 🔔: warning attention |
-| *projector* | `ojegol` | | |
-| *bar-chart* | `araral` | | |
-| *analysis* | `araram` | `araral` *bar-chart* | 📊: examining the quantities |
+| *school* | `uzugul` | | |
+| *chair* | `ehahel` | | |
+| *pencil* | `ebeyul` | | |
+| *draft* | `ebeyum` | `ebeyul` *pencil* | ✏️: marks you can still erase |
+| *book* | `ubugal` | | |
+| *knowledge* | `ubugam` | `ubugal` *book* | 📖: what a book holds |
+| *magnify* | `amegal` | | |
+| *scrutiny* | `amegam` | `amegal` *magnify* | 🔍: close examination |
+| *bell* | `ebevol` | | |
+| *alert* | `ebevom` | `ebevol` *bell* | 🔔: warning attention |
+| *projector* | `ebuhel` | | |
+| *bar-chart* | `abohal` | | |
+| *analysis* | `aboham` | `abohal` *bar-chart* | 📊: examining the quantities |
 | *grace* | `azawam` | `azawal` *swan* | 🦢: the glide of *grace* |
 | *grace* (as a name) | `azawan` | | |
-| *courage* (as a name) | `ululon` | | |
-| *beauty* (as a name) | `uhubun` | | |
+| *courage* (as a name) | `alahen` | | |
+| *beauty* (as a name) | `ahaben` | | |
 | *your name* | `SELFn` | | from the name helper above |
 
 #### English → Agalan {#beginner-english-to-agalan}
@@ -104,7 +104,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Choose 
 **1.** *school* (citation)
 
 ::: details Show answer
-`ahalal`
+`uzugul`
 
 school
 :::
@@ -112,7 +112,7 @@ school
 **2.** *chair* (citation)
 
 ::: details Show answer
-`ajul`
+`ehahel`
 
 chair
 :::
@@ -120,7 +120,7 @@ chair
 **3.** *pencil* (citation)
 
 ::: details Show answer
-`ebegul`
+`ebeyul`
 
 pencil
 :::
@@ -128,7 +128,7 @@ pencil
 **4.** *draft* (citation)
 
 ::: details Show answer
-`ebegum`
+`ebeyum`
 
 draft
 :::
@@ -136,7 +136,7 @@ draft
 **5.** *knowledge* (citation)
 
 ::: details Show answer
-`abogom`
+`ubugam`
 
 knowledge
 :::
@@ -144,7 +144,7 @@ knowledge
 **6.** *scrutiny* (citation)
 
 ::: details Show answer
-`aguvom`
+`amegam`
 
 scrutiny
 :::
@@ -152,7 +152,7 @@ scrutiny
 **7.** *beauty*, as a name (citation)
 
 ::: details Show answer
-`uhubun`
+`ahaben`
 
 Uhubun
 :::
@@ -160,7 +160,7 @@ Uhubun
 **8.** *Hello — the speaker is Ululon.*
 
 ::: details Show answer
-`ululon.`
+`alahen.`
 
 Ululon
 :::
@@ -175,7 +175,7 @@ SELF
 
 #### Agalan → English {#beginner-agalan-to-english}
 
-**1.** `abogol`
+**1.** `ubugal`
 
 ::: details Show answer
 
@@ -184,7 +184,7 @@ book
 *book*
 :::
 
-**2.** `obelel`
+**2.** `ebevol`
 
 ::: details Show answer
 
@@ -193,7 +193,7 @@ bell
 *bell*
 :::
 
-**3.** `ojegol`
+**3.** `ebuhel`
 
 ::: details Show answer
 
@@ -202,7 +202,7 @@ projector
 *projector*
 :::
 
-**4.** `obelem`
+**4.** `ebevom`
 
 ::: details Show answer
 
@@ -211,7 +211,7 @@ alert
 *alert*
 :::
 
-**5.** `araram`
+**5.** `aboham`
 
 ::: details Show answer
 
@@ -229,7 +229,7 @@ grace
 *grace*
 :::
 
-**7.** `ululon`
+**7.** `alahen`
 
 ::: details Show answer
 
@@ -255,7 +255,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 Beginner used **-n** for a person’s or place’s name. You can also mark a **title, proper label, or conventionally unique name** on any role letter: a named race as the verb, a named style as the adjective, a named standard as the adverb. The first letter still says the clause job; **-n** says you mean **that** titled instance, not a generic kind.
 
-> `zuhubun vuzunun.`
+> `zahaben vezehen.`
 >
 > z-Uhubun | v-Uzunun
 >
@@ -270,7 +270,7 @@ The rest of the role map (same **-n**):
 | `/ɡ/` + **-n** | this named style, tradition, brand, or category | **[Art Deco]** furniture, **[Buddhist]** monastery, **[iOS]** app |
 | `/w/` + **-n** | named scale, grade, or criterion on the following adjective | *spicy* **[Scoville]**, *large* **[King-size]** |
 | `/h/` + **-n** | named standard, channel, or official frame | *according to* **[GAAP]**, *in* **[Q3]** as the named quarter  |
-| `/y/` vocative + **-n** | address this named person, place, or title | `yululon`; titled group (*Team Alpha*) |
+| `/y/` vocative + **-n** | address this named person, place, or title | `yalahen`; titled group (*Team Alpha*) |
 | `/y/` interjection + **-n** | named formula or conventional call | **[Amen]**, branded catchphrases |
 
 **Another exception:** a [stand-in](dependents.md#stand-in-roles) with **-rn** (single vowel) or **-n** (stacked vowel) names a sentence-content category, such as a statement, question, command, or prohibition. On `/v/`, these endings give the corresponding lexicalized response verbs, such as *state*, *confirm*, or *decline*.
@@ -282,7 +282,7 @@ The rest of the role map (same **-n**):
 
 A store, title, or handle can be several words. Put **-n** on the **hook**, **join**, or **span** that packages them. That letter names the whole phrase. Each inner word keeps its own ending: a kind stays **-l**, an abstract stays **-m**, a resume stays **-r**, and a person or place that is itself a name still takes **-n**.
 
-> `dadedal on dogovel.`
+> `dedehel on dagavel.`
 >
 > NAME[d-tea | instead | d-coffee]
 >
@@ -301,7 +301,7 @@ A short one-word name, or a compact multipart name with mid-word **`x`**, still 
 
 English often writes a given name plus family as two words. In Agalan a short multipart proper name (given + family, a compact place label, a shop name) is **one content word**: roots join left to right with mid-word **`x`** ([ordinary compound order](x-compounds.md#ordinary-compound-order)), and **-n** names the whole as one person or place. That one word fills one slot and is one resume target.
 
-> `zodunaxalanen vawalal.`
+> `zuhudexaloden vowogal.`
 >
 > z-Oduna-x-Alanen | v-walk
 >
@@ -309,19 +309,19 @@ English often writes a given name plus family as two words. In Agalan a short mu
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `zodunaxalanen` | nativized multipart (roots + mid-word **`x`**) | *Odunaxalanen* (*wish*×*guidance*: one person) |
-| `dodunaxalanen`, `bodunaxalanen` | same name in other slots | one named place / person as object or argument |
-| `zogovexadedan`, `zogovexadedaxunuden` | sense / shop label (two or more lexicon roots) | *Coffee-Tea*; *Coffee-Tea-Water* |
+| `zuhudexaloden` | nativized multipart (roots + mid-word **`x`**) | *Odunaxalanen* (*wish*×*guidance*: one person) |
+| `duhudexaloden`, `buhudexaloden` | same name in other slots | one named place / person as object or argument |
+| `zagavexedehen`, `zagavexedehexowoden` | sense / shop label (two or more lexicon roots) | *Coffee-Tea*; *Coffee-Tea-Water* |
 
 A nativized loan (adapted Agalan root + ordinary ending) uses the same four last letters as any content word. A **lexical compound** is also one slot-filler: one stem, not mid-word **`x`** (`zabedelohohul` *bedroom*).
 
-**Compare with:** adjacent bare same-role words (`zodunan zalanen`) are two people in a [join](joins.md).
+**Compare with:** adjacent bare same-role words (`zuhuden zaloden`) are two people in a [join](joins.md).
 
 ### Named handles {#named-handles}
 
 A long official title (bureau, act, titled group) may have a **handle**: one published root plus **-n**, used like any proper name, including on first mention. The long form is the same office spelled as a phrasal proper (`ROOT x ROOT` … + **-n**).
 
-> `zabogon vezehel.`
+> `zubugan vezebel.`
 >
 > z-Abogon | v-tell
 >
@@ -329,18 +329,18 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `zabogon` | handle: one root + **-n** | default talk, including first mention |
-| `zabogoxululon` | long title: phrasal proper (`ROOT x ROOT` … + **-n**) | full legal / ceremonial name of the same office |
+| `zubugan` | handle: one root + **-n** | default talk, including first mention |
+| `zubugaxalahen` | long title: phrasal proper (`ROOT x ROOT` … + **-n**) | full legal / ceremonial name of the same office |
 
-> `zabogoxululon.`
+> `zubugaxalahen.`
 >
 > z-Abogo-x-Ululon
 >
 > "Book-Courage" (full title of that office)
 
-Resume the handle like any name. If a short letter-pronoun (through the 2nd vowel) would pick the wrong earlier word, use the **full root** + **-r** (`zabogor`).
+Resume the handle like any name. If a short letter-pronoun (through the 2nd vowel) would pick the wrong earlier word, use the **full root** + **-r** (`zubugar`).
 
-**Compare with:** a [mention](spans.md#loans) packages the **word** (`z{abogo}` = *the word “abogo”*). A foreign letter-name is a loan or opaque span (<code>z@&lt;FBI&gt;</code>).
+**Compare with:** a [mention](spans.md#loans) packages the **word** (`z{ubuga}` = *the word “abogo”*). A foreign letter-name is a loan or opaque span (<code>z@&lt;FBI&gt;</code>).
 
 ### Continue (`/x/`): overview
 <a id="continue-x"></a>
@@ -371,31 +371,31 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `ululon` | |
-| *Uhubun* | `uhubun` | |
-| *Edozen* (office handle) | `edozen` | |
-| *hospital-bed* (ward name) | `ohozoxabeden` | |
-| *diagnosis-hospital* (office full title) | `edozexohozon` | |
-| *bed* | `abedel` | |
-| *sit* | `vajul` | `ajul` *chair* |
-| *see* | `vejel` | `ejel` *eye* |
-| *write* | `vuwurul` | `uwurul` *write* |
-| *run* | `vurunul` | `urunul` *run* |
-| *Hospital* (named frame) | `hohozon` | `ohozol` *hospital* |
+| *Ululon* | `alahen` | |
+| *Uhubun* | `ahaben` | |
+| *Edozen* (office handle) | `ezuden` | |
+| *hospital-bed* (ward name) | `ahazexebedan` | |
+| *diagnosis-hospital* (office full title) | `ezudexahazen` | |
+| *bed* | `ebedal` | |
+| *sit* | `vehahel` | `ehahel` *chair* |
+| *see* | `vahahal` | `ahahal` *eye* |
+| *write* | `varadal` | `aradal` *write* |
+| *run* | `varahal` | `arahal` *run* |
+| *Hospital* (named frame) | `hahazen` | `ahazel` *hospital* |
 | *Azawan* (brand) | `gazawan` | `azawan` *Azawan* |
-| *Uhubun* (brand) | `guhubun` | `uhubun` *Uhubun* |
-| *Temperature* (named standard) | `hedehen` | `edehel` *thermometer* |
-| *Sleep* (titled rest) | `veleben` | `elebel` *sleep* |
-| *Intrusion* (titled action) | `vozorun` | `ozorul` *syringe* |
-| *Emergency* (titled event) | `vamubun` | `amubul` *ambulance* |
-| *Emergency* (named frame) | `hamubun` | `amubul` *ambulance* |
+| *Uhubun* (brand) | `gahaben` | `ahaben` *Uhubun* |
+| *Temperature* (named standard) | `heveden` | `evedel` *thermometer* |
+| *Sleep* (titled rest) | `vezeban` | `ezebal` *sleep* |
+| *Intrusion* (titled action) | `vazehen` | `azehel` *syringe* |
+| *Emergency* (titled event) | `vamaban` | `amabal` *ambulance* |
+| *Emergency* (named frame) | `hamaban` | `amabal` *ambulance* |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Azawan sits according to Hospital* (the named frame).
 
 ::: details Show answer
-`zazawan vajul hohozon.`
+`zazawan vehahel hahazen.`
 
 z-Azawan | v-sit | h-Ohozon
 :::
@@ -403,7 +403,7 @@ z-Azawan | v-sit | h-Ohozon
 **2.** *The bed is an Azawan* (the brand).
 
 ::: details Show answer
-`zabedel gazawan.`
+`zebedal gazawan.`
 
 z-bed | g-Azawan
 :::
@@ -411,7 +411,7 @@ z-bed | g-Azawan
 **3.** *Uhubun observes Sleep* (the ward’s titled rest hour).
 
 ::: details Show answer
-`zuhubun veleben.`
+`zahaben vezeban.`
 
 z-Uhubun | v-Eleben
 :::
@@ -419,7 +419,7 @@ z-Uhubun | v-Eleben
 **4.** *Azawan sees Hospital-Bed.* (the ward’s phrasal name)
 
 ::: details Show answer
-`zazawan vejel dohozoxabeden.`
+`zazawan vahahal dahazexebedan.`
 
 z-Azawan | v-see | d-Ohozo-x-Abeden
 :::
@@ -427,7 +427,7 @@ z-Azawan | v-see | d-Ohozo-x-Abeden
 **5.** *Edozen sees Uhubun.* (office handle, first mention)
 
 ::: details Show answer
-`zedozen vejel duhubun.`
+`zezuden vahahal dahaben.`
 
 z-Edozen | v-see | d-Uhubun
 :::
@@ -435,7 +435,7 @@ z-Edozen | v-see | d-Uhubun
 **6.** *Ululon performs Intrusion* (that titled procedure).
 
 ::: details Show answer
-`zululon vozorun.`
+`zalahen vazehen.`
 
 z-Ululon | v-Ozorun
 :::
@@ -443,14 +443,14 @@ z-Ululon | v-Ozorun
 **7.** *Ululon performs Emergency* (that titled drill).
 
 ::: details Show answer
-`zululon vamubun.`
+`zalahen vamaban.`
 
 z-Ululon | v-Amubun
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
 
-**1.** `zuhubun vajul hohozon.`
+**1.** `zahaben vehahel hahazen.`
 
 ::: details Show answer
 
@@ -458,7 +458,7 @@ z-Uhubun | v-sit | h-Ohozon
 *Uhubun sits according to Hospital* (the named frame).
 :::
 
-**2.** `zazawan vuwurul hedehen.`
+**2.** `zazawan varadal heveden.`
 
 ::: details Show answer
 
@@ -466,7 +466,7 @@ z-Azawan | v-write | h-Edehen
 *Azawan writes according to Temperature* (the named standard).
 :::
 
-**3.** `zabedel guhubun.`
+**3.** `zebedal gahaben.`
 
 ::: details Show answer
 
@@ -474,7 +474,7 @@ z-bed | g-Uhubun
 *The bed is an Uhubun* (the brand).
 :::
 
-**4.** `zohozoxabeden vuwurul.`
+**4.** `zahazexebedan varadal.`
 
 ::: details Show answer
 
@@ -483,7 +483,7 @@ z-Ohozo-x-Abeden | v-write
 *Hospital-Bed writes.* (the ward, as an office)
 :::
 
-**5.** `zuhubun vozorun.`
+**5.** `zahaben vazehen.`
 
 ::: details Show answer
 
@@ -491,7 +491,7 @@ z-Uhubun | v-Ozorun
 *Uhubun performs Intrusion* (that titled procedure).
 :::
 
-**6.** `zedozexohozon vejel dazawan.`
+**6.** `zezudexahazen vahahal dazawan.`
 
 ::: details Show answer
 
@@ -499,7 +499,7 @@ z-Edoze-x-Ohozon | v-see | d-Azawan
 *Diagnosis-Hospital sees Azawan.* (that office’s full title)
 :::
 
-**7.** `zululon vurunul hamubun.`
+**7.** `zalahen varahal hamaban.`
 
 ::: details Show answer
 
@@ -510,7 +510,7 @@ z-Ululon | v-run | h-Amubun
 
 ## See also
 
-- [pronouns.md](pronouns.md): resume **-r**; special **`ugobo`** / **`edone`** / **`aha`** / **`enenu`**
+- [pronouns.md](pronouns.md): resume **-r**; special **`ema`** / **`eha`** / **`oha`** / **`anu`**
 - [plurality.md](plurality.md): **-x** after the ending
 - [clause.md](clause.md): role letters; adding a first letter to a citation
 - [spans.md](spans.md#loans): mention / opaque when the **form** or a foreign acronym is the point

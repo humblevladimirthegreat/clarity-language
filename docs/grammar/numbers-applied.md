@@ -10,9 +10,9 @@ Put a number word on a **label**, a **clock or date**, a **unit amount**, a **fr
 
 English needs a **code**: a phone, room, channel, or serial, not a counted amount. Write that with digit-string marker **`ro`** (written **`_`**). Leave exponents off, and group digits in threes when they are present. You can then drop the code into whatever slot the clause needs (`/d/` `/b/` `/ɡ/`).
 
-> `zazawan d_555,123,4567 vejel.`
+> `zazawan d_555,123,4567 vahahal.`
 >
-> 🔊 *zazawan drovavavathowodurethomovagulel vejel.*
+> 🔊 *zazawan drovavavathowodurethomovagulel vahahal.*
 >
 > z-Azawan | d-_555,123,4567 | v-see
 >
@@ -28,9 +28,9 @@ For a code as a when-frame, use a host relation + `/b/` (`/h/` *on* + `b_7` *cha
 
 English names a **clock time** or a **calendar date**. Both reuse digit-string grammar as bare `/h/`. Clock takes marker **`ro`** (spoken **`hro`**, written `h_…`). Date takes calendar-ordinal **`oe`** (spoken **`hroe`**, written `h_#…`). Fields are read by position, so the word already says which number is the hour or the month.
 
-> `h_15,30 zazawan vawalal.`
+> `h_15,30 zazawan vowogal.`
 >
-> 🔊 *hrowovathorezol zazawan vawalal.*
+> 🔊 *hrowovathorezol zazawan vowogal.*
 >
 > h-_15,30 | z-Azawan | v-walk
 >
@@ -48,9 +48,9 @@ Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedu
 
 For *from … to* with clock times, put each time in `/b/` after the hooks **`ul`** *from* and **`oel`** *toward* ([extra nouns](hooks.md#extra-noun-intermediate)). As with any two extras, keep a non-`/b/` word, such as the verb, between them.
 
-> `zazawan ul b_9 vawalal oel b_17.`
+> `zazawan ul b_9 vowogal oel b_17.`
 >
-> 🔊 *zazawan ul bronal vawalal oel browolel.*
+> 🔊 *zazawan ul bronal vowogal oel browolel.*
 >
 > z-Azawan | [from | b-_9] | v-walk | [toward | b-_17]
 >
@@ -69,18 +69,18 @@ Calendar decade labels such as *the ’90s* name a group of years, not a bare or
 
 English names **how much of a unit** (*two meters*, *three hours*). The unit is a lexicon noun whose **published abstract** is that SI or everyday unit name; the amount is an ordinary `/ɡ/` scalar on that unit. Use those unit lemmas in speech, not Latin abbreviations (`m`, `kg`, `s`). Introduce the unit sense with **-m** ([abstract](word-endings.md#abstract-m)); resume with **-r** when the unit phrase is already on the table.
 
-> `zazawan bedurem gradul vawalal.`
+> `zazawan bezezem gradul vowogal.`
 > z-Azawan | [b-meter | g-two] | v-walk
 >
 > "Azawan walks two meters."
 
-Price *for five grams* keeps this same measure NP in `/b/` after [exchange](relations.md#exchange) **`huhanem`**.
+Price *for five grams* keeps this same measure NP in `/b/` after [exchange](relations.md#exchange) **`hohem`**.
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `bedurem g+2` | extra noun (`/b/`) | *two meters* |
-| `zozobam g+3`, `dobonom g+5` | subject / object / … | *three seconds*, *five grams* |
-| `gedurem g+2` on a host | modifier on a noun | rare; prefer unit as `/b/` or a freestanding noun phrase |
+| `bezezem g+2` | extra noun (`/b/`) | *two meters* |
+| `zazadem g+3`, `dabayum g+5` | subject / object / … | *three seconds*, *five grams* |
+| `gezezem g+2` on a host | modifier on a noun | rare; prefer unit as `/b/` or a freestanding noun phrase |
 
 Same endings and fuzzy **-m** habits as other number words on the amount (`gradum` ≈ *about two*). The **unit** takes ordinary word endings.
 
@@ -90,41 +90,41 @@ Base and everyday units (each row is a **unit metaphor**; the literal picture st
 
 | SI / everyday unit | Unit root (metaphor) | Example | Literal on same root | Cue |
 |--------------------|----------------------|---------|----------------------|-----|
-| meter | `edure` *meter* | `bedurem g+2` | `edurel` *set-square* | 📐: exact length |
-| gram | `obono` *gram* | `bobonom g+5` | `obonol` *pound* (banknote) | 💷: standard mass |
-| second | `ozoba` *second* | `bozobam g+3` | `ozobal` *stopwatch* | ⏱️: short tick |
-| liter | `abolo` *liter* | `babolom g+1` | `abolol` *pool* | 🎱: liquid volume |
-| ampere | `abega` *ampere* | `babegam g+2` | `abegal` *cable-car* | 🚠: current along a line |
-| kelvin | `uje` *kelvin* | `bujem g+300` | `ujel` *ice* | 🧊: thermodynamic temperature |
-| mole | `ugozo` *mole* | `bugozom g+1` | `ugozol` *microscope* | 🔬: amount of substance |
-| candela | `uluhu` *candela* | `buluhum g+100` | `uluhul` *lightbulb* | 💡: luminous intensity |
-| hour (civil duration) | `ohora` *hour* | `bohoram g+3` | `ohoral` *hourglass* | ⏳: civil hour block |
-| day | `unuze` *day* | `bunuzem g+2` | `unuzel` *sunrise* | 🌅: sunrise to sunrise |
-| week | `alena` *week* | `balenam g+1` | `alenal` *calendar* | 📅: one row of the calendar page |
-| month | `amono` *month* | `bamonom g+6` | `amonol` *moon* | 🌙: one lunar cycle |
-| year | `urewo` *year* | `burewom g+10` | `urewol` *fireworks* | 🎆: fireworks greet each new year |
-| heat grade (not kelvin) | `edehe` *temperature* | `bedehem g+37` | `edehel` *thermometer* | 🌡️: how hot or cold |
+| meter | `ezeze` *meter* | `bezezem g+2` | `ezezel` *set-square* | 📐: exact length |
+| gram | `abayu` *gram* | `babayum g+5` | `abayul` *pound* (banknote) | 💷: standard mass |
+| second | `azade` *second* | `bazadem g+3` | `azadel` *stopwatch* | ⏱️: short tick |
+| liter | `ubuhe` *liter* | `bubuhem g+1` | `ubuhel` *pool* | 🎱: liquid volume |
+| ampere | `agodo` *ampere* | `bagodom g+2` | `agodol` *cable-car* | 🚠: current along a line |
+| kelvin | `azahu` *kelvin* | `bazahum g+300` | `azahul` *ice* | 🧊: thermodynamic temperature |
+| mole | `amaga` *mole* | `bamagam g+1` | `amagal` *microscope* | 🔬: amount of substance |
+| candela | `aloda` *candela* | `balodam g+100` | `alodal` *lightbulb* | 💡: luminous intensity |
+| hour (civil duration) | `agaze` *hour* | `bagazem g+3` | `agazel` *hourglass* | ⏳: civil hour block |
+| day | `azaza` *day* | `bazazam g+2` | `azazal` *sunrise* | 🌅: sunrise to sunrise |
+| week | `agade` *week* | `bagadem g+1` | `agadel` *calendar* | 📅: one row of the calendar page |
+| month | `umuha` *month* | `bumuham g+6` | `umuhal` *moon* | 🌙: one lunar cycle |
+| year | `avawe` *year* | `bavawem g+10` | `avawel` *fireworks* | 🎆: fireworks greet each new year |
+| heat grade (not kelvin) | `evede` *temperature* | `bevedem g+37` | `evedel` *thermometer* | 🌡️: how hot or cold |
 
-Related **quantity** words (*heavy*, *flow*, *time* as continuum, …) stay on their own roots (`arogom` *heavy*, `gumem` *duration*, …); they are not SI measure nouns.
+Related **quantity** words (*heavy*, *flow*, *time* as continuum, …) stay on their own roots (`aragam` *heavy*, `gadaham` *duration*, …); they are not SI measure nouns.
 
-`bohoram grarel` ≈ *three hours*.
+`bagazem grarel` ≈ *three hours*.
 
 #### Scale the amount
 <a id="no-metric-prefixes"></a>
 <a id="metric-prefixes"></a>
 
-Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / an exact count): `bedurem g+5400` or `bedurem g+5.4e3`; `bobonom g+70e3`.
+Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / an exact count): `bezezem g+5400` or `bezezem g+5.4e3`; `babayum g+70e3`.
 
 **For *kilometers* / *milligrams*, use:** that scaled amount on the base unit. There is no *kilo-* / *milli-* / *mega-* stem.
 
 **Measured differentials** (*two meters taller*) put that measure noun phrase as the **single `/b/`** on the SHARED scale adjective of a [comparative](comparatives.md#measured-differentials):
 
-> `zazawan zululon zel godowem bedurem gradul.`
+> `zazawan zalahen zel gadavam bezezem gradul.`
 > [z-Azawan | z-Ululon | z-rank/more | [g-height | b-meter]] | g-two
 >
 > "Azawan is two meters taller than Ululon."
 
-Vague degree uses `/w/` on the scale (`zel wogegal godowem …`) with no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
+Vague degree uses `/w/` on the scale (`zel wohul gadavam …`) with no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
 
 ### Ranges {#ranges}
 <a id="number-ranges"></a>
@@ -134,7 +134,7 @@ Vague degree uses `/w/` on the scale (`zel wogegal godowem …`) with no unit. D
 
 English *from 3 to 5* / *between 3 and 5* names a **band on a line**. Write two number endpoints inside a [phrase fence](joins.md), then a **SHARED continuum** `/ɡ/` that names the line (time, price, measure, …). That `/ɡ/` is the same SHARED slot [comparatives](comparatives.md) use; here it names a **dimension / quantity continuum**, not a ranking of people. The continuum is what makes the fence a range.
 
-> `zrarel zraval zoel gumem.`
+> `zrarel zraval zoel gadaham.`
 > [z-three | z-five | z-in-order | g-duration]
 >
 > "from 3 to 5 in time."
@@ -143,11 +143,11 @@ All three pieces:
 
 1. Exactly **two** endpoints of the **same kind** of number word (both scalar, both ordinal, or both digit-string / time).
 2. Join **`a`** / **`oe`** / **`ua`** (or **`ar`**; stacked **`oe`** / **`ua`** take no **-r**).
-3. A **SHARED continuum** `/ɡ/` immediately after the join (a lexicon line, or stock **`gurulem`** when the line is pure numeric or already clear).
+3. A **SHARED continuum** `/ɡ/` immediately after the join (a lexicon line, or stock **`guruham`** when the line is pure numeric or already clear).
 
 The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). A count on a noun is a `/ɡ/` number, so a counted range closes with `gal`:
 
-> `zodogol grarel graval gal gurulem vawalal.`
+> `zodogal grarel graval gal guruham vowogal.`
 > [z-dog | [g-three | g-five | g-and | g-measurement]] | v-walk
 >
 > "Between 3 and 5 dogs walk."
@@ -156,17 +156,17 @@ Join vowels (Beginner already used ranked **`e`** for people; a range uses **seq
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`a`** | unordered filled interval; both ends in | *between 3 and 5* (`z+3 z+5 zal gumem`) | **a** add |
-| **`oe`** | directed path; first → second (spoken order = path, either direction) | *from 3 to 5* (`z+3 z+5 zoel gumem`); *from 5 to 3* (`z+5 z+3 zoel gumem`) | **o** one + **e** order: one after another |
-| **`ua`** | complement on the line | *outside 3–5* (`z+3 z+5 zual gumem`) | **u** undo + **a** add |
+| **`a`** | unordered filled interval; both ends in | *between 3 and 5* (`z+3 z+5 zal gadaham`) | **a** add |
+| **`oe`** | directed path; first → second (spoken order = path, either direction) | *from 3 to 5* (`z+3 z+5 zoel gadaham`); *from 5 to 3* (`z+5 z+3 zoel gadaham`) | **o** one + **e** order: one after another |
+| **`ua`** | complement on the line | *outside 3–5* (`z+3 z+5 zual gadaham`) | **u** undo + **a** add |
 
-**Compare with:** `zazawan zululon zel gomonam` (*Azawan is more challenging than Ululon*) ranks **people** on a scale. `zrarel zraval zoel gumem` is a **band** on a continuum. Rank **`e`** puts the first item at the **top**; sequence **`oe`** puts it at the **start**. Place *from a station to a train* is two [locative](relations.md#spatial-path) `/h/` + `/b/` units, not this fence.
+**Compare with:** `zazawan zalahen zel gamadam` (*Azawan is more challenging than Ululon*) ranks **people** on a scale. `zrarel zraval zoel gadaham` is a **band** on a continuum. Rank **`e`** puts the first item at the **top**; sequence **`oe`** puts it at the **start**. Place *from a station to a train* is two [locative](relations.md#spatial-path) `/h/` + `/b/` units, not this fence.
 
 **Not the same job as:** bare **`zrarel zraval zel`** (*prefer 3 over 5*). Without the SHARED continuum, two number conjuncts are an ordinary join.
 
 Menu **`o`** / **`ao`** lists discrete values (*3 or 5* / *3 and/or 5*). Equative **`ae`** with numbers is *equal* / *approximately equal* (`zraval zraval zael` / `zrarel zraval zaem`). Three or more number conjuncts under **`a`** are an ordinary list (`zrawol zrarel zralel zal` = *1, 3, and 7*), even with SHARED. Single-item **`zrarel zal`** is *just 3*, not a ray.
 
-Clock / date ranges: SHARED continuum **`gumem`** (or a host relation + `/b/`) with digit-string endpoints (`b_15,00 b_16,00 boel gumem`). Circumstance **`hal`** is a [restrictor](restrictors.md).
+Clock / date ranges: SHARED continuum **`gadaham`** (or a host relation + `/b/`) with digit-string endpoints (`b_15,00 b_16,00 boel gadaham`). Circumstance **`hal`** is a [restrictor](restrictors.md).
 
 ### Percent and percentage points {#percent-and-percentage-points}
 
@@ -198,12 +198,12 @@ In [preferred writing](numbers.md#writing-preferred-shorthand): **`%`** → spee
 | Agalan | Use | English |
 |--------|-----|---------|
 | `zagadalx g+25%` | percent grades the modified noun | *25% of the cats* |
-| `dezubelx g+95%` | same, object slot | *95% of the tests* |
-| `beberelx g+5%` under a host relation | same, `/b/` | *5% of the people* |
+| `dedelx g+95%` | same, object slot | *95% of the tests* |
+| `bebezalx g+5%` under a host relation | same, `/b/` | *5% of the people* |
 
 For a count out of a group already named (*three of them*), resume the group and give the count.
 
-> `zagadalx vajul. zagarx grarel vurunul.`
+> `zagadalx vehahel. zagarx grarel varahal.`
 > z-cat-x | v-sit . [z-←cat-x-x | g-three] | v-run
 >
 > "The cats sit. Three of them run."
@@ -216,25 +216,25 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 English *half of the cats* / *a third of the tea* splits the whole into N parts. Put **`g-N`** right after the noun: the **`ru`** marker divides, as `/h/` **`h-N`** does. A whole number of 2 or more names one part in N.
 
-> `zagadalx grudul vajul.`
+> `zagadalx grudul vehahel.`
 > [z-cat-x | g-half-of] | v-sit
 >
 > "Half of the cats sit."
 
-> `zadedal grurel vajul.`
+> `zedehel grurel vehahel.`
 > [z-tea | g-third-of] | v-sit
 >
 > "A third of the tea sits there."
 
-**`g-N`** is a fraction only right after a plain noun. After a [measure](#measure-phrases) unit, a minus number is still a negative amount (`bedurem grudul` *minus 2 meters*).
+**`g-N`** is a fraction only right after a plain noun. After a [measure](#measure-phrases) unit, a minus number is still a negative amount (`bezezem grudul` *minus 2 meters*).
 
 #### *Most* {#most}
 
 *Most of the cats* means *more than half*. Write **`g+50%`** and close it as a greater-than [threshold](#numeric-thresholds) with **`guel`**.
 
-> `zagadalx g+50% guel vajul.`
+> `zagadalx g+50% guel vehahel.`
 >
-> 🔊 *zagadalx gravazoyol guel vajul.*
+> 🔊 *zagadalx gravazoyol guel vehahel.*
 >
 > [z-cat-x | [g-50yo | g-rank/less]] | v-sit
 >
@@ -246,24 +246,24 @@ English *half of the cats* / *a third of the tea* splits the whole into N parts.
 
 When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](numbers.md) (`g#N`) — not a closed overlay. *Problem* and *solution* take the published **-m** senses; *goal* is already the **-l** literal. Prefer at least **`grewol`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
 
-> `zazawan zagegom gredul vezehel.`
+> `zazawan zegehom gredul vezebel.`
 > z-Azawan | [z-solution | g-2nd] | v-tell
 >
 > "Azawan names solution 2."
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`uzebum`** | numbered-alternative problem | *problem* (something to fit / solve) | `uzebul` *puzzle-piece* | 🧩: pieces must fit |
-| **`agegom`** | numbered-alternative solution | *solution* (what unlocks it) | `agegol` *key* | 🔑: opens what was locked |
-| **`olalal`** | numbered-alternative goal | *goal* (net you aim at) | | 🥅: the net you shoot for |
+| **`ehegom`** | numbered-alternative problem | *problem* (something to fit / solve) | `ehegol` *puzzle-piece* | 🧩: pieces must fit |
+| **`egehom`** | numbered-alternative solution | *solution* (what unlocks it) | `egehol` *key* | 🔑: opens what was locked |
+| **`agol`** | numbered-alternative goal | *goal* (net you aim at) | | 🥅: the net you shoot for |
 | free **`g#N`** | rank in **this** numbered-alternative series | *candidate N* | | `#` = ordinal place |
 | soft **`g~#N`** | tentative ranking | *maybe candidate N* | | **-m** leaves the order open |
 
-**Recipe:** `zuzebum grewol` / `zagegom gredul` / `zolalal grewol`
+**Recipe:** `zehegom grewol` / `zegehom gredul` / `zagol grewol`
 
-Unnumbered `zuzebum` is just *a problem*, not a candidate in a set — write **`g#N`** when brainstorming. `-l` on the first two roots is still the picture (`zuzebul` *a puzzle piece*; `zagegol` *a key*; `vagegol` *to unlock*). Reframing the **same** situation is different wording of one frame, not a second digit.
+Unnumbered `zehegom` is just *a problem*, not a candidate in a set — write **`g#N`** when brainstorming. `-l` on the first two roots is still the picture (`zehegol` *a puzzle piece*; `zegehol` *a key*; `vegehol` *to unlock*). Reframing the **same** situation is different wording of one frame, not a second digit.
 
-**Compare with:** discourse *point N:* uses free **`x#N`** ([number as discourse](numbers.md#number-as-discourse-marker-by-marker)), a continue. Numbered alternatives are problem / solution / goal nouns plus **`g#N`**. Clause *so that* is [**`holalam`**](dependents.md#so-that), not **`olalal`**.
+**Compare with:** discourse *point N:* uses free **`x#N`** ([number as discourse](numbers.md#number-as-discourse-marker-by-marker)), a continue. Numbered alternatives are problem / solution / goal nouns plus **`g#N`**. Clause *so that* is [**`hagom`**](dependents.md#so-that), not **`agol`**.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -277,28 +277,28 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
-| *Ululon* | `ululon` | |
-| *Uhubun* | `uhubun` | |
-| *pill* | `abulul` | |
-| *baby-bottle* | `abobol` | |
-| *rock* | `arogol` | |
-| *spoon* | `ozobol` | |
-| *meter* | `edurem` | `edurel` *set-square* |
-| *gram* | `obonom` | `obonol` *pound* |
-| *time* | `umel` | |
-| *walk* | `vawalal` | `awalal` *walk* |
-| *see* | `vejel` | `ejel` *eye* |
-| *punch* | `vubunul` | `ubunul` *punch* |
-| *scream* | `vazagal` | `azagal` *scream* |
+| *Ululon* | `alahen` | |
+| *Uhubun* | `ahaben` | |
+| *pill* | `edal` | |
+| *baby-bottle* | `ebel` | |
+| *rock* | `aragal` | |
+| *spoon* | `uzubul` | |
+| *meter* | `ezezem` | `ezezel` *set-square* |
+| *gram* | `abayum` | `abayul` *pound* |
+| *time* | `adahal` | |
+| *walk* | `vowogal` | `owogal` *walk* |
+| *see* | `vahahal` | `ahahal` *eye* |
+| *punch* | `vabahel` | `abahel` *punch* |
+| *scream* | `vezogel` | `ezogel` *scream* |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Azawan sees 555-123-4567.*
 
 ::: details Show answer
-`zazawan d_555,123,4567 vejel.`
+`zazawan d_555,123,4567 vahahal.`
 
-🔊 *zazawan drovavavathowodurethomovagulel vejel.*
+🔊 *zazawan drovavavathowodurethomovagulel vahahal.*
 
 z-Azawan | d-_555,123,4567 | v-see
 :::
@@ -306,9 +306,9 @@ z-Azawan | d-_555,123,4567 | v-see
 **2.** *At 15:30 Azawan sees Uhubun.*
 
 ::: details Show answer
-`h_15,30 zazawan duhubun vejel.`
+`h_15,30 zazawan dahaben vahahal.`
 
-🔊 *hrowovathorezol zazawan duhubun vejel.*
+🔊 *hrowovathorezol zazawan dahaben vahahal.*
 
 h-_15,30 | z-Azawan | d-Uhubun | v-see
 :::
@@ -316,9 +316,9 @@ h-_15,30 | z-Azawan | d-Uhubun | v-see
 **3.** *25% of the pills.*
 
 ::: details Show answer
-`zabululx g+25%.`
+`zedalx g+25%.`
 
-🔊 *zabululx graduvayol.*
+🔊 *zedalx graduvayol.*
 
 z-pill-x | g-25yo
 :::
@@ -326,7 +326,7 @@ z-pill-x | g-25yo
 **4.** *Azawan walks two meters.*
 
 ::: details Show answer
-`zazawan bedurem gradul vawalal.`
+`zazawan bezezem gradul vowogal.`
 
 z-Azawan | [b-meter | g-two] | v-walk
 :::
@@ -334,7 +334,7 @@ z-Azawan | [b-meter | g-two] | v-walk
 **5.** *From 3 to 5 in time.*
 
 ::: details Show answer
-`zrarel zraval zoel gumem.`
+`zrarel zraval zoel gadaham.`
 
 [z-three | z-five | z-in-order | g-duration]
 :::
@@ -342,9 +342,9 @@ z-Azawan | [b-meter | g-two] | v-walk
 **6.** *Ululon sees 911.*
 
 ::: details Show answer
-`zululon d_911 vejel.`
+`zalahen d_911 vahahal.`
 
-🔊 *zululon dronawowol vejel.*
+🔊 *zalahen dronawowol vahahal.*
 
 z-Ululon | d-_911 | v-see
 :::
@@ -352,7 +352,7 @@ z-Ululon | d-_911 | v-see
 **7.** *Ululon punches five rocks.*
 
 ::: details Show answer
-`zululon darogol graval vubunul.`
+`zalahen daragal graval vabahel.`
 
 z-Ululon | [d-rock | g-five] | v-punch
 :::
@@ -360,9 +360,9 @@ z-Ululon | [d-rock | g-five] | v-punch
 **8.** *From 15 to 16 in time.*
 
 ::: details Show answer
-`z+15 z+16 zoel gumem.`
+`z+15 z+16 zoel gadaham.`
 
-🔊 *zrawoval zrawogul zoel gumem.*
+🔊 *zrawoval zrawogul zoel gadaham.*
 
 [z-15 | z-16 | z-in-order | g-duration]
 :::
@@ -370,108 +370,108 @@ z-Ululon | [d-rock | g-five] | v-punch
 **9.** *On 22 July, Uhubun screams.*
 
 ::: details Show answer
-`h_#22,7 zuhubun vazagal.`
+`h_#22,7 zahaben vezogel.`
 
-🔊 *hroedudutholel zuhubun vazagal.*
+🔊 *hroedudutholel zahaben vezogel.*
 
 h-_22,7 | z-Uhubun | v-scream
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
 
-**1.** `zabobol g_7.`
+**1.** `zebel g_7.`
 
 ::: details Show answer
 
-🔊 *zabobol grolel.*
+🔊 *zebel grolel.*
 
 z-baby-bottle | g-_7
 
 *Bottle 7.*
 :::
 
-**2.** `h_09,00 zuhubun vejel.`
+**2.** `h_09,00 zahaben vahahal.`
 
 ::: details Show answer
 
-🔊 *hrozonathozozol zuhubun vejel.*
+🔊 *hrozonathozozol zahaben vahahal.*
 
 h-_09,00 | z-Uhubun | v-see
 
 *At 09:00 Uhubun sees.*
 :::
 
-**3.** `zabobolx g+50%.`
+**3.** `zebelx g+50%.`
 
 ::: details Show answer
 
-🔊 *zabobolx gravazoyol.*
+🔊 *zebelx gravazoyol.*
 
 z-baby-bottle-x | g-50yo
 
 *50% of the bottles.*
 :::
 
-**4.** `zazawan dozobol grawol vejel.`
+**4.** `zazawan duzubul grawol vahahal.`
 
 ::: details Show answer
 
-🔊 *zazawan dozobol grawol vejel.*
+🔊 *zazawan duzubul grawol vahahal.*
 
 z-Azawan | [d-spoon | g-one] | v-see
 
 *Azawan sees one spoon.*
 :::
 
-**5.** `zrawol zrarel zal gumem.`
+**5.** `zrawol zrarel zal gadaham.`
 
 ::: details Show answer
 
-🔊 *zrawol zrarel zal gumem.*
+🔊 *zrawol zrarel zal gadaham.*
 
 [z-one | z-three | z-and | g-duration]
 
 *Between 1 and 3 in time.*
 :::
 
-**6.** `zululon d_000 vejel.`
+**6.** `zalahen d_000 vahahal.`
 
 ::: details Show answer
 
-🔊 *zululon drozozozol vejel.*
+🔊 *zalahen drozozozol vahahal.*
 
 z-Ululon | d-_000 | v-see
 
 *Ululon sees 000.*
 :::
 
-**7.** `h~_23,59 zululon vazagal.`
+**7.** `h~_23,59 zalahen vezogel.`
 
 ::: details Show answer
 
-🔊 *hrodurethovanam zululon vazagal.*
+🔊 *hrodurethovanam zalahen vezogel.*
 
 h-_23,59.about | z-Ululon | v-scream
 
 *Around 23:59 Ululon screams.*
 :::
 
-**8.** `z+10 z+20 zual gurulem.`
+**8.** `z+10 z+20 zual guruham.`
 
 ::: details Show answer
 
-🔊 *zrawozol zraduzol zual gurulem.*
+🔊 *zrawozol zraduzol zual guruham.*
 
 [z-ten | z-20 | z-everything-but | g-measurement]
 
 *Outside 10–20.*
 :::
 
-**9.** `h_#1,4 zululon vawalal.`
+**9.** `h_#1,4 zalahen vowogal.`
 
 ::: details Show answer
 
-🔊 *hroewothomol zululon vawalal.*
+🔊 *hroewothomol zalahen vowogal.*
 
 h-_1,4 | z-Ululon | v-walk
 
@@ -483,33 +483,33 @@ h-_1,4 | z-Ululon | v-walk
 ### Date as books vs event-when
 <a id="as-of-vs-clock"></a>
 
-Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftover, climate, plan, and forecast score against is [*as-of*](relations.md#as-of) (`helerem` / `hobomam` plus `/b/`). Put the date on that pole (`helerem b_#22,7`); do not also write spare `h_#22,7` for the same snapshot. Clock / *before* / *after* may sit beside *as-of*: books vs event-when are different jobs.
+Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftover, climate, plan, and forecast score against is [*as-of*](relations.md#as-of) (`henum` / `humum` plus `/b/`). Put the date on that pole (`henum b_#22,7`); do not also write spare `h_#22,7` for the same snapshot. Clock / *before* / *after* may sit beside *as-of*: books vs event-when are different jobs.
 
 ### Named standards and derived units
 <a id="unit-short-form"></a>
 
-Everyday measure uses the **unit metaphor** on the stock roots above (`bedurem gradul`). When you cite the **conventional SI name** as a titled standard (*the meter*, *the pascal*), use **-n** on that unit root ([named handles](word-endings.md#named-n-beginner)). Resume a prior unit phrase with **-r** on the same root (`bedurer gradul` after `bedurem gradul` is on the table).
+Everyday measure uses the **unit metaphor** on the stock roots above (`bezezem gradul`). When you cite the **conventional SI name** as a titled standard (*the meter*, *the pascal*), use **-n** on that unit root ([named handles](word-endings.md#named-n-beginner)). Resume a prior unit phrase with **-r** on the same root (`bezezer gradul` after `bezezem gradul` is on the table).
 
 **Common derived (optional)** — unit metaphor on a dedicated root; related **quantity** stays on the original row:
 
 | Unit | Unit root (metaphor) | Example | Quantity (unchanged) |
 |------|----------------------|---------|----------------------|
-| newton | `urenu` *newton* | `burenum g+10` | `ubunu` *force* |
-| pascal | `aleme` *pascal* | `balemem g+101325` | `abama` *pressure* |
-| joule | `unu` *joule* | `bunum g+500` | `adero` *energy* |
-| watt | `odore` *watt* | `bodorem g+60` | `obodu` *power* |
-| hertz | `azale` *hertz* | `bazalem g+50` | `urumu` *rhythm* |
-| ohm | `unudu` *ohm* | `bunudum g+100` | `onugo` *blockage* |
-| coulomb | `azare` *coulomb* | `bazarem g+2` | `uruhu` *charge* |
-| radian | `ubane` *radian* | `bubanem g+1` | `erelo` *cycle* |
+| newton | `avava` *newton* | `bavavam g+10` | `abahe` *force* |
+| pascal | `edaze` *pascal* | `bedazem g+101325` | `agabe` *pressure* |
+| joule | `azaho` *joule* | `bazahom g+500` | `abado` *energy* |
+| watt | `omoda` *watt* | `bomodam g+60` | `abage` *power* |
+| hertz | `azuba` *hertz* | `bazubam g+50` | `adavo` *rhythm* |
+| ohm | `obodo` *ohm* | `bobodom g+100` | `agoza` *blockage* |
+| coulomb | `azoba` *coulomb* | `bazobam g+2` | `araze` *charge* |
+| radian | `adawe` *radian* | `badawem g+1` | `eredu` *cycle* |
 
-**Related form:** normative *my standard* **`zuroron`** vs performance **`zugobon`** ([comparatives](comparatives.md#judgment-benchmarks)) is a judgment bar, not a unit. General **`ROOTl+1`** (*primary / singleton of a kind*) is [numeric derivation](numeric-derivation.md#scalar-digit-morphs), not an SI alias.
+**Related form:** normative *my standard* **`zemun`** vs performance **`zeman`** ([comparatives](comparatives.md#judgment-benchmarks)) is a judgment bar, not a unit. General **`ROOTl+1`** (*primary / singleton of a kind*) is [numeric derivation](numeric-derivation.md#scalar-digit-morphs), not an SI alias.
 
 ### Thresholds (single-item ranked)
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
-English *less than 5* / *greater than 5* is a **bound**, not a two-endpoint band. When the **only** member of a [rank join](joins.md#rank-joins) fence (**`e`** / **`ue`** / **`oe`** / **`eo`**, and their open / named twins) is a compatible number word, that number is an extremum on the line. SHARED continuum is optional: absent = implicit numeric line; present = that named line (`zraval zel gumem` = *time \< 5*). Special values such as +∞ use [digitless exponents](numbers.md#digitless-exponents) inside the number word (`grabal`).
+English *less than 5* / *greater than 5* is a **bound**, not a two-endpoint band. When the **only** member of a [rank join](joins.md#rank-joins) fence (**`e`** / **`ue`** / **`oe`** / **`eo`**, and their open / named twins) is a compatible number word, that number is an extremum on the line. SHARED continuum is optional: absent = implicit numeric line; present = that named line (`zraval zel gadaham` = *time \< 5*). Special values such as +∞ use [digitless exponents](numbers.md#digitless-exponents) inside the number word (`grabal`).
 
 Why **`e`** gives *less than*: `X zel` says X is first / greatest, so everything else on the line is less than X. Likewise `X zuel` says X is last / least, so everything else is greater than X.
 
@@ -542,7 +542,7 @@ Rank bounds (**`e`** / **`ue`**) are **strict** (`<` / `>`). The sequence rays a
 
 Standalone **`e`** + **-r** = unspecified member of the *\< X* ray (`zraval zer` → *some/whatever value \< 5*; under question → *which value \< 5?*). **`ue`** takes no **-r** (stacked forms never do: [joins](joins.md#unspecified-member-r-phrase)).
 
-**Compare with:** `zrarel zraval zoel gumem` (*from 3 to 5 in time*) is a two-endpoint range; `zrarel zraval zel` is preference; `zazawan zel` (a person) is *only Azawan matters* / [superlative-with-scale](comparatives.md). A **single-item number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
+**Compare with:** `zrarel zraval zoel gadaham` (*from 3 to 5 in time*) is a two-endpoint range; `zrarel zraval zel` is preference; `zazawan zel` (a person) is *only Azawan matters* / [superlative-with-scale](comparatives.md). A **single-item number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
 
 ### Half-open (exclude the high end only) {#half-open-exclude-the-high-end-only}
 
@@ -550,9 +550,9 @@ A [hook](hooks.md) **inside the range** marks an exclusive **upper** bound. Repl
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `z+3 z+5 zal gurulem` | inclusive both ends | *[3, 5]* |
-| `z+3 ul z+5 zal gurulem` | exclusive high | *[3, 5)*: *3 up to but not including 5* |
-| `z+3 ul z+5 zel gurulem` | directed exclusive high | *from 3 up to but not including 5* |
+| `z+3 z+5 zal guruham` | inclusive both ends | *[3, 5]* |
+| `z+3 ul z+5 zal guruham` | exclusive high | *[3, 5)*: *3 up to but not including 5* |
+| `z+3 ul z+5 zel guruham` | directed exclusive high | *from 3 up to but not including 5* |
 
 Open **`um`** on the high end = soft / non-exhaustive exclusion of that bound. Other revision vowels (**`al`** / **`el`** / **`ol`**) are ordinary hooks, not range-bound markers.
 
@@ -565,13 +565,13 @@ Fence **-r** on a number-range shape (still with SHARED continuum) names an **un
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `z+3 z+5 zar gurulem` | unspecified member of the inclusive band | *some value in [3, 5]* |
-| `z+3 ul z+5 zar gurulem` | unspecified member of the exclusive-high band | *some value in [3, 5)* |
-| `z+3 z+5 zor gurulem` | free-choice | *any value in [3, 5]* |
-| `z+3 z+5 zer gurulem` | whatever-by-rank | *whatever-by-rank in [3, 5]* |
-| `z+3 z+5 zur gurulem` | other-than the range | *some value other than (in) [3, 5]* |
+| `z+3 z+5 zar guruham` | unspecified member of the inclusive band | *some value in [3, 5]* |
+| `z+3 ul z+5 zar guruham` | unspecified member of the exclusive-high band | *some value in [3, 5)* |
+| `z+3 z+5 zor guruham` | free-choice | *any value in [3, 5]* |
+| `z+3 z+5 zer guruham` | whatever-by-rank | *whatever-by-rank in [3, 5]* |
+| `z+3 z+5 zur guruham` | other-than the range | *some value other than (in) [3, 5]* |
 
-Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which value in 3–5?*). Same under `/d/` `/b/` `/ɡ/` as the slot needs (`grarel graval gal gumem` = modifier *times 3–5*; `d+10 ul d+20 dar gurulem` = object *some value in [10, 20)*).
+Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which value in 3–5?*). Same under `/d/` `/b/` `/ɡ/` as the slot needs (`grarel graval gal gadaham` = modifier *times 3–5*; `d+10 ul d+20 dar guruham` = object *some value in [10, 20)*).
 
 **Not the same job as:** content-word resume **-r**, and discrete *something among two listed values*.
 
@@ -581,7 +581,7 @@ Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which val
 
 **For *+50% relative to baseline*, use:** a multiplicative `/h/` factor (**`h+1.5`**, …) or ordinary *relative-to* wording.
 
-When the whole is not the modified head, use a complex `/ɡ/` or `/h/` [of relation](relations.md#of-relations) (`gobonem` *part of*) + `/b/` whole, with the percent elsewhere in the clause as needed. Numbers take no `/w/` and no open arguments.
+When the whole is not the modified head, use a complex `/ɡ/` or `/h/` [of relation](relations.md#of-relations) (`gobum` *part of*) + `/b/` whole, with the percent elsewhere in the clause as needed. Numbers take no `/w/` and no open arguments.
 
 **`…yu`** point amounts, factor change (`/h/` **`h+…`**), *top / bottom N%* rank bands, and *N% done* take their “whole” from context or a separately named class.
 
@@ -629,22 +629,22 @@ Generations form a **tree**, like an outline. A cohort is only the members **und
 
 The mantissa is **birth order** within that cohort: **`g#1e0`** is the eldest sibling, **`g#-1e0`** the youngest. To say whose family it is, put the anchor person in `/b/` right after the number. (cue: the number says how far up or down the tree; `/b/` says from whom)
 
-> `zululon grebazol bazawan vawalal.`
+> `zalahen grebazol bazawan vowogal.`
 > [z-Ululon | [g-#-e0 | b-Azawan]] | v-walk
 >
 > "Ululon, Azawan's sibling, walks."
 
-> `zululon g#1e0 bazawan vawalal.`
+> `zalahen g#1e0 bazawan vowogal.`
 >
-> 🔊 *zululon grebazoyawol bazawan vawalal.*
+> 🔊 *zalahen grebazoyawol bazawan vowogal.*
 >
 > [z-Ululon | [g-#-1e0 | b-Azawan]] | v-walk
 >
 > "Ululon, Azawan's eldest sibling, walks."
 
-> `zuguhul g#2e1 bazawan vawalal.`
+> `zahadel g#2e1 bazawan vowogal.`
 >
-> 🔊 *zuguhul grebawoyadul bazawan vawalal.*
+> 🔊 *zahadel grebawoyadul bazawan vowogal.*
 >
 > [z-child | [g-#-2e1 | b-Azawan]] | v-walk
 >
@@ -652,9 +652,9 @@ The mantissa is **birth order** within that cohort: **`g#1e0`** is the eldest si
 
 For a side branch, nest a second anchor: first step to the relative, then from there. *Aunt or uncle* is a sibling of a parent.
 
-> `zululon grebazol beberel g#1e-1 bazawan vawalal.`
+> `zalahen grebazol bebezal g#1e-1 bazawan vowogal.`
 >
-> 🔊 *zululon grebazol beberel grebuwoyawol bazawan vawalal.*
+> 🔊 *zalahen grebazol bebezal grebuwoyawol bazawan vowogal.*
 >
 > [z-Ululon | [g-#-e0 | [b-person | [g-#-1e-1 | b-Azawan]]]] | v-walk
 >

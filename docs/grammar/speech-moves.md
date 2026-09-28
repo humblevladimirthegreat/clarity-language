@@ -14,26 +14,26 @@ At the start of a turn, write its act word immediately before the body (subject,
 
 To call someone into the turn, put `/y/` before their name, which ends in **-n**. The call can be the whole turn or come before a clause.
 
-> `yululon.`
+> `yalahen.`
 >
 > y-Ululon
 >
 > "Ululon!" (calling Ululon)
 
-**Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`SELFn.`). Calling Ululon uses `/y/`; saying Ululon walks uses `/z/` (`zazawan vawalal`).
+**Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`SELFn.`). Calling Ululon uses `/y/`; saying Ululon walks uses `/z/` (`zazawan vowogal`).
 
 ### Interjections: conventional calls
 <a id="interjections"></a>
 
 An **interjection** is a short call that stands on its own, such as a reaction or exclamation. Write the reaction under `/y/` and end it in **-n** to name the call:
 
-> `yuruzen.`
+> `yazeban.`
 >
 > y-Uruzen
 >
 > "Surprise!"
 
-A person’s name under `/y/` calls that person (`yululon`); an interjection gives the reaction itself as the call.
+A person’s name under `/y/` calls that person (`yalahen`); an interjection gives the reaction itself as the call.
 
 Here **-n** names the conventional call *Surprise!*, not a person.
 
@@ -44,7 +44,7 @@ Each turn has one **speech act**: whether you are stating, asking, commanding, o
 
 When the turn is not a statement, put its `/y/` act word immediately before the body:
 
-> `yel vawalal.`
+> `yel vowogal.`
 >
 > y-command | v-walk
 >
@@ -70,18 +70,18 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agalan |
 |---------|--------|
 | *Azawan* | `azawan` |
-| *Uhubun* | `uhubun` |
-| *surprise* | `uruzel` |
-| *sit* | `vajul` |
-| *sneak* | `vazanal` |
-| *run* | `vurunul` |
+| *Uhubun* | `ahaben` |
+| *surprise* | `azebal` |
+| *sit* | `vehahel` |
+| *sneak* | `vezevul` |
+| *run* | `varahal` |
 
 #### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *Uhubun!* (calling Uhubun)
 
 ::: details Show answer
-`yuhubun.`
+`yahaben.`
 
 y-Uhubun
 :::
@@ -89,7 +89,7 @@ y-Uhubun
 **2.** *Don’t sneak.*
 
 ::: details Show answer
-`yul vazanal.`
+`yul vezevul.`
 
 y-prohibition | v-sneak
 :::
@@ -97,7 +97,7 @@ y-prohibition | v-sneak
 **3.** *Surprise!* (as a call)
 
 ::: details Show answer
-`yuruzen.`
+`yazeban.`
 
 y-Uruzen
 :::
@@ -113,7 +113,7 @@ y-Azawan
 *Azawan!* (calling Azawan)
 :::
 
-**2.** `yol zazawan vajul.`
+**2.** `yol zazawan vehahel.`
 
 ::: details Show answer
 
@@ -122,7 +122,7 @@ y-question | z-Azawan | v-sit
 *Does Azawan sit?*
 :::
 
-**3.** `yel vurunul.`
+**3.** `yel varahal.`
 
 ::: details Show answer
 
@@ -143,13 +143,13 @@ You already write whether a turn is a statement, question, command, or prohibiti
 
 The act word is **`y` + vowel + ending**. The vowel sets the act (**a** statement, **o** question, **e** command, **u** prohibition). **-l** stands behind the act; **-m** leaves it open (soft / offered). Write the act word when the setting is not a default statement. A period still lets you omit **`yal`**.
 
-> `yam zazawan vawalal.`
+> `yam zazawan vowogal.`
 >
 > y-soft-statement | z-Azawan | v-walk
 >
 > "For what it's worth, Azawan walks."
 
-**Compare with:** [MAY](knowing.md#may) (`thodohom`) marks the scene as *could be*. **`yam`** is still a statement; you put it forward without insisting the other person take it up.
+**Compare with:** [MAY](knowing.md#may) (`thovom`) marks the scene as *could be*. **`yam`** is still a statement; you put it forward without insisting the other person take it up.
 
 | Agalan | Use | Cue |
 |--------|-----|-----|
@@ -162,15 +162,15 @@ The act word is **`y` + vowel + ending**. The vowel sets the act (**a** statemen
 | **yul** | **prohibition**: *don’t…* (firm) | **u** undo + **-l**: take the action back |
 | **yum** | **soft prohibition**: *please don’t…* / *I’d rather you not…* | **u** undo + **-m**: prefer they don’t |
 
-For *let's*, make a soft request with inclusive *we*, **`aha`** ([special pronouns](pronouns.md#special-pronouns)), as the subject. *Let's not* is the soft prohibition.
+For *let's*, make a soft request with inclusive *we*, **`oha`** ([special pronouns](pronouns.md#special-pronouns)), as the subject. *Let's not* is the soft prohibition.
 
-> `yem zahan vawalal.`
+> `yem zohan vowogal.`
 >
 > y-request | z-interlocutors | v-walk
 >
 > "Let's walk."
 
-> `yum zahan velebel.`
+> `yum zohan vezebal.`
 >
 > y-soft-prohibition | z-interlocutors | v-sleep
 >
@@ -182,7 +182,7 @@ A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/y/` w
 
 When a missed *don't* would be dangerous, say **`yul`** twice among the opening `/y/` words. The repeat makes the prohibition louder; it never cancels it. Repeat only the opening act word: a `yul` after the body starts a new turn instead of adding emphasis.
 
-> `yul yul vazanal.`
+> `yul yul vezevul.`
 >
 > y-prohibition | y-prohibition | v-sneak
 >
@@ -210,19 +210,19 @@ Write the mark **before** what it colors, so you see the tone before you say the
 | Attached to a [span](spans.md): `!d[ … ]` | the span |
 | Standing alone, then a space: `! zazawan …` | the rest of the sentence, up to the period |
 
-> `zazawan vejel ?dodogol.`
+> `zazawan vahahal ?dodogal.`
 >
 > z-Azawan | v-see | ?d-dog
 >
 > "Azawan saw a dog (?)." (unsure about just *dog*).
 
-> `! zazawan vawalal.`
+> `! zazawan vowogal.`
 >
 > ! | z-Azawan | v-walk
 >
 > "Azawan walks!"
 
-> `zazawan vejel &dodogol.`
+> `zazawan vahahal &dodogal.`
 >
 > z-Azawan | v-see | &d-dog
 >
@@ -230,25 +230,25 @@ Write the mark **before** what it colors, so you see the tone before you say the
 
 The other marks work the same way:
 
-> `zazawan !!vawalal.`
+> `zazawan !!vowogal.`
 >
 > z-Azawan | !!v-walk
 >
 > "Azawan *walks*!!"
 
-> `?! zululon vejel dodogol.`
+> `?! zalahen vahahal dodogal.`
 >
 > ?! | z-Ululon | v-see | d-dog
 >
 > "Ululon saw a dog?!"
 
-> `% zazawan vawalal.`
+> `% zazawan vowogal.`
 >
 > % | z-Azawan | v-walk
 >
 > "Azawan walks." (joking)
 
-> `;zululon vejel dodogol.`
+> `;zalahen vahahal dodogal.`
 >
 > ;z-Ululon | v-see | d-dog
 >
@@ -256,7 +256,7 @@ The other marks work the same way:
 
 A mark on a span colors all of it:
 
-> `zazawan ?d[azawan] vezehel.`
+> `zazawan ?d[azawan] vezebel.`
 >
 > z-Azawan | ?d-CITE[Azawan] | v-tell
 >
@@ -287,21 +287,21 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agalan |
 |---------|--------|
 | *Azawan* | `azawan` |
-| *Ululon* | `ululon` |
-| *Uhubun* | `uhubun` |
-| *trumpet* | `udubel` |
-| *sit* | `vajul` |
-| *stand* | `vadanal` |
-| *see* | `vejel` |
-| *tell* | `vezehel` |
-| *sneak* | `vazanal` |
+| *Ululon* | `alahen` |
+| *Uhubun* | `ahaben` |
+| *trumpet* | `adawol` |
+| *sit* | `vehahel` |
+| *stand* | `vazadol` |
+| *see* | `vahahal` |
+| *tell* | `vezebel` |
+| *sneak* | `vezevul` |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *For what it's worth, Azawan sits.*
 
 ::: details Show answer
-`yam zazawan vajul.`
+`yam zazawan vehahel.`
 
 y-soft-statement | z-Azawan | v-sit
 :::
@@ -309,7 +309,7 @@ y-soft-statement | z-Azawan | v-sit
 **2.** *Does Uhubun see a trumpet, perhaps?*
 
 ::: details Show answer
-`yom zuhubun dudubel vejel.`
+`yom zahaben dadawol vahahal.`
 
 y-soft-question | z-Uhubun | d-trumpet | v-see
 :::
@@ -317,7 +317,7 @@ y-soft-question | z-Uhubun | d-trumpet | v-see
 **3.** *Please stand.*
 
 ::: details Show answer
-`yem vadanal.`
+`yem vazadol.`
 
 y-request | v-stand
 :::
@@ -325,7 +325,7 @@ y-request | v-stand
 **4.** *Please don’t sneak.*
 
 ::: details Show answer
-`yum vazanal.`
+`yum vezevul.`
 
 y-soft-prohibition | v-sneak
 :::
@@ -333,7 +333,7 @@ y-soft-prohibition | v-sneak
 **5.** *For what it's worth, Ululon sees a trumpet.*
 
 ::: details Show answer
-`yam zululon dudubel vejel.`
+`yam zalahen dadawol vahahal.`
 
 y-soft-statement | z-Ululon | d-trumpet | v-see
 :::
@@ -341,7 +341,7 @@ y-soft-statement | z-Ululon | d-trumpet | v-see
 **6.** *Please tell Uhubun.*
 
 ::: details Show answer
-`yem buhubun vezehel.`
+`yem bahaben vezebel.`
 
 y-request | b-Uhubun | v-tell
 :::
@@ -349,7 +349,7 @@ y-request | b-Uhubun | v-tell
 **7.** *Azawan sees a trumpet (a trumpet, not something else).*
 
 ::: details Show answer
-`zazawan vejel &dudubel.`
+`zazawan vahahal &dadawol.`
 
 z-Azawan | v-see | &d-trumpet
 :::
@@ -357,14 +357,14 @@ z-Azawan | v-see | &d-trumpet
 **8.** *Uhubun sneaks?!*
 
 ::: details Show answer
-`?! zuhubun vazanal.`
+`?! zahaben vezevul.`
 
 ?! | z-Uhubun | v-sneak
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
 
-**1.** `yam zazawan vajul.`
+**1.** `yam zazawan vehahel.`
 
 ::: details Show answer
 
@@ -373,7 +373,7 @@ y-soft-statement | z-Azawan | v-sit
 *For what it's worth, Azawan sits.*
 :::
 
-**2.** `yom zuhubun dudubel vejel.`
+**2.** `yom zahaben dadawol vahahal.`
 
 ::: details Show answer
 
@@ -382,7 +382,7 @@ y-soft-question | z-Uhubun | d-trumpet | v-see
 *Does Uhubun see a trumpet, perhaps?*
 :::
 
-**3.** `yem vadanal.`
+**3.** `yem vazadol.`
 
 ::: details Show answer
 
@@ -391,7 +391,7 @@ y-request | v-stand
 *Please stand.*
 :::
 
-**4.** `yum vazanal.`
+**4.** `yum vezevul.`
 
 ::: details Show answer
 
@@ -400,7 +400,7 @@ y-soft-prohibition | v-sneak
 *Please don’t sneak.*
 :::
 
-**5.** `yam zululon dudubel vejel.`
+**5.** `yam zalahen dadawol vahahal.`
 
 ::: details Show answer
 
@@ -409,7 +409,7 @@ y-soft-statement | z-Ululon | d-trumpet | v-see
 *For what it's worth, Ululon sees a trumpet.*
 :::
 
-**6.** `yem buhubun vezehel.`
+**6.** `yem bahaben vezebel.`
 
 ::: details Show answer
 
@@ -418,7 +418,7 @@ y-request | b-Uhubun | v-tell
 *Please tell Uhubun.*
 :::
 
-**7.** `% zululon vazanal.`
+**7.** `% zalahen vezevul.`
 
 ::: details Show answer
 
@@ -427,7 +427,7 @@ y-request | b-Uhubun | v-tell
 *Ululon sneaks.* (joking)
 :::
 
-**8.** `yem !vadanal.`
+**8.** `yem !vazadol.`
 
 ::: details Show answer
 
