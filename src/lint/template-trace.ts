@@ -37,8 +37,8 @@ const LEADING_FILLERS = [
 const TRAILING_FILLERS = ["", "l", "n", "m", "r", "2", "2l", "2n", `${SWAN}l`, `${SWAN}n`, `${WALK}l`, "a", "ul"];
 const NUMBER_FILLERS = ["2", "3", "2l", "3l", "2n", "3n"];
 const ROOT_FILLERS = [SWAN, WALK];
-/** Interest roots, for interest patterns (`g…tha…`). */
-const INTEREST_FILLERS = [CLOSED.knot, CLOSED.toolbox];
+/** Sake roots, for sake patterns (`g…tha…`). */
+const SAKE_FILLERS = [CLOSED.knot, CLOSED.toolbox];
 
 type Slot = { start: number; end: number; options: string[] };
 
@@ -54,7 +54,7 @@ function slotOptions(text: string, start: number, end: number): string[] {
   if (name === "ROOT") return ROOT_FILLERS;
   if (name === "DIR") return [CLOSED.west, CLOSED.north];
   if (name === "ANCHOR") return [CLOSED.headphones, SWAN];
-  if (before && after) return ["", ...ROOT_FILLERS, ...INTEREST_FILLERS, "a", "x", "l"];
+  if (before && after) return ["", ...ROOT_FILLERS, ...SAKE_FILLERS, "a", "x", "l"];
   return after ? LEADING_FILLERS : TRAILING_FILLERS;
 }
 

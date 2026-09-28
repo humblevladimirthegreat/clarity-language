@@ -13,7 +13,7 @@ The design aims at three outcomes, in this order:
 
 Support self-acceptance and acceptance of others, and make judgments visible when they arise.
 
-Praise can name the interest a person’s work actually served instead of stopping at a vague *good*. A flash of anger or anxiety can be said as an unmet interest plus its activation and where it sits, so the charge has an audible target rather than a blank label. And *can’t* comes in kinds: temporary, modifiable, or irreversible. A block never has to read as who someone is.
+Praise can name the sake a person’s work actually served instead of stopping at a vague *good*. A flash of anger or anxiety can be said as an unmet sake plus its activation and where it sits, so the charge has an audible target rather than a blank label. And *can’t* comes in kinds: temporary, modifiable, or irreversible. A block never has to read as who someone is.
 
 ### Rationality {#rationality}
 
@@ -29,7 +29,7 @@ Habitual *always* is the usual pattern (exceptions expected), not something that
 
 Support authentic choice by making reasons for action visible.
 
-The motive or prescription behind an action can be named on the interest it serves instead of conflating it into a bare *should*. Candidates can be numbered so *the problem* and *the solution* stay plural and revisable, and the same situation can be reworded rather than recounted as a second candidate. A decision can mark how revisable it is, a plan can stay separate from a forecast, and a ranking can name the bar it is measured against.
+The motive or prescription behind an action can be named on the sake it serves instead of conflating it into a bare *should*. Candidates can be numbered so *the problem* and *the solution* stay plural and revisable, and the same situation can be reworded rather than recounted as a second candidate. A decision can mark how revisable it is, a plan can stay separate from a forecast, and a ranking can name the bar it is measured against.
 
 **Why this order.** Rationality is hard without compassion first: lack of self-acceptance fuels motivated reasoning, so truth-seeking turns into defense. Empowerment without rationality is foolish; without compassion it is antisocial; without both it is dangerous. So the stack is compassion → rationality → empowerment.
 
@@ -43,7 +43,7 @@ The language is currently in **beta**: grammar, lexicon, and these docs can chan
 
 ## Why language can help {#why-language-can-help}
 
-Unhelpful thoughts are often automatic: catastrophizing a small setback into “my life is ruined,” treating two options as the only ones, or labeling a feeling as *anger* without naming what interest is unmet. Healthier framings exist, but they are hard to reach in the moment.
+Unhelpful thoughts are often automatic: catastrophizing a small setback into “my life is ruined,” treating two options as the only ones, or labeling a feeling as *anger* without naming what sake is unmet. Healthier framings exist, but they are hard to reach in the moment.
 
 Agalan puts those framings into ordinary words and optional extra pieces on words. When you speak or think in the language, the helpful distinction is already sitting in the sentence shape.
 
@@ -65,28 +65,28 @@ Psychological features fit these criteria:
 
 How the aims show up in vocabulary and grammar. Each section names an English job and one picture; the linked pages teach the forms.
 
-### Interests, gratitude, and oughts {#interests-gratitude-and-oughts}
+### Sakes, gratitude, and oughts {#sakes-gratitude-and-oughts}
 
 English often conflates *I want*, *I need*, *I should*, and *this is good for me*, so gratitude, motive, and ought blur together.
 
-Agalan’s [interests](interests.md) name a closed inventory of **interests** (autonomy, competence, relatedness, pleasure, survival, or unspecified) and how you relate to them:
+Agalan’s [sakes](sakes.md) name a closed inventory of **sakes** (autonomy, competence, relatedness, pleasure, survival, or unspecified) and how you relate to them:
 
 | Stance | Job |
 |--------|-----|
-| Met | This serves the interest, including whether the payoff lasts or is only for now (gratitude / savoring) — an adjective on the noun, or `/th/` on the event |
-| Motive | Acting *for* this interest, including where the reason stands |
-| Prescription | Deontic on the host act for this interest — ending marks the move's warrant or aim (**invited / offered / trial**) |
-| Unmet | Costs the interest, including how changeable that is |
+| Met | This serves the sake, including whether the payoff lasts or is only for now (gratitude / savoring) — an adjective on the noun, or `/th/` on the event |
+| Motive | Acting *for* this sake, including where the reason stands |
+| Prescription | Deontic on the host act for this sake — ending marks the move's warrant or aim (**invited / offered / trial**) |
+| Unmet | Costs the sake, including how changeable that is |
 
-Naming the interest and your stance toward it helps you notice gratitude, motive, and oughts instead of conflating them into vague *want* / *should* / *good*. An interest on `/ɡ/` is a belonging (so *my X serves competence* is one adjective); an unowned stimulus uses the interest on `/w/` immediately before **`gobom`**.
+Naming the sake and your stance toward it helps you notice gratitude, motive, and oughts instead of conflating them into vague *want* / *should* / *good*. A sake on `/ɡ/` is a belonging (so *my X serves competence* is one adjective); an unowned stimulus uses the sake on `/w/` immediately before **`gobom`**.
 
 ### Emotions as composition {#emotions-as-composition}
 
-Opaque labels (*angry*, *anxious*, *proud*) hide which interest is in play and what to ask for.
+Opaque labels (*angry*, *anxious*, *proud*) hide which sake is in play and what to ask for.
 
-Agalan [composes emotion](interests.md#emotion-compose) from a [value](interests.md) (often unmet or met), plus activation (surge / stir / …), plus locus (where it shows).
+Agalan [composes emotion](sakes.md#emotion-compose) from a [value](sakes.md) (often unmet or met), plus activation (surge / stir / …), plus locus (where it shows).
 
-Composing emotion from interest + activation + locus helps you ask for what would actually help instead of stopping at the label.
+Composing emotion from sake + activation + locus helps you ask for what would actually help instead of stopping at the label.
 
 ### How far a label reaches {#how-far-a-label-reaches}
 
@@ -151,7 +151,7 @@ Saying whether a list is open or closed helps you notice false dichotomies, and 
 
 Everyday English *because* / *leads to* / *have to* blur sufficient vs necessary, world-reason vs speaker-grounds, and wish vs natural law.
 
-[Causation](causation.md) keeps those forks on two-place poles: *if* / *only if* / *because* / *iff*, on `/th/` for an event and `/ɡ/` for a noun. Intended *so that* is a separate pole (**`hagom`**, [so that](dependents.md#so-that)): the host is aimed at that outcome, which is not asserted like *because*, and is not a [need-motive](interests.md#interest-preference) (`tho`). When the “rule” is really an ought (*hard work should earn promotion*), use [interests](interests.md) [prescription](interests.md#interest-force) (**`the`**) on the act — not a causation pole.
+[Causation](causation.md) keeps those forks on two-place poles: *if* / *only if* / *because* / *iff*, on `/th/` for an event and `/ɡ/` for a noun. Intended *so that* is a separate pole (**`hagom`**, [so that](dependents.md#so-that)): the host is aimed at that outcome, which is not asserted like *because*, and is not a [need-motive](sakes.md#sake-preference) (`tho`). When the “rule” is really an ought (*hard work should earn promotion*), use [sakes](sakes.md) [prescription](sakes.md#sake-force) (**`the`**) on the act — not a causation pole.
 
 Keeping those forks apart helps you stop treating wishes and habits as if the world must obey them.
 
@@ -186,7 +186,7 @@ Published roots keep an **abstract** sense beside the **concrete** picture, so t
 * [Usual as weather](knowing.md#universality): a habitual *always* is a climate report; [uncountered](knowing.md#universality) is clear sky (*no counterexample comes to mind*), a search, not a proof.
 * [*As if* as theater](knowing.md#notional): a stage mask frames play; the real tally stays **offstage**.
 * [Mechanism as gears](causation.md#cause): naming the gear train marks *how it meshes*.
-* [Affect as water](interests.md#emotion-compose): tide (arousal) plus vessel / pour / ambient field (locus) instead of an opaque emotion label that hides the interest.
+* [Affect as water](sakes.md#emotion-compose): tide (arousal) plus vessel / pour / ambient field (locus) instead of an opaque emotion label that hides the sake.
 
 Conceptual metaphors help you reach and remember the healthier frame by tying it to a concrete analogy that already encodes the bias you are trying to catch.
 

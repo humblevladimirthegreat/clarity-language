@@ -512,44 +512,44 @@ Single-item `zazawan zuel gamadam` is *the least challenging* in the group in pl
 | `zamun zolon zuel gamadam` | I am less challenging than Everyone |
 | `zamun zalahen zuel gezehel` | I am less skilled at singing than **Alahen** (ordinary person comparee) |
 
-### Interest benchmarks (*enough* / *too*) {#interest-benchmarks}
+### Sake benchmarks (*enough* / *too*) {#sake-benchmarks}
 
-English *enough* and *too* compare against **what an interest requires**. Agalan names that bar like the others: the [interest root](interests.md#interest-inventory) plus **-n**. The bar is the **speaker's** interest unless you say otherwise.
+English *enough* and *too* compare against **what a sake requires**. Agalan names that bar like the others: the [sake root](sakes.md#sake-inventory) plus **-n**. The bar is the **speaker's** sake unless you say otherwise.
 
 | Agalan | Use | English | Same root as |
 |---------|-----|---------|----------------|
-| **`zugen`** | interest bar, interest not named | *Some-interest* (what an interest requires) | `ugel` *egg* |
-| **`zuhon`** | survival interest bar | *what safety needs* | `uhol` *shield* |
-| **`zonan`** | relatedness interest bar | *what connection needs* | `onal` *knot* |
-| **`zudun`** | competence interest bar | *what getting it done needs* | `udul` *toolbox* |
-| **`zaban`** | autonomy interest bar | *what choice needs* | `abal` *ballot* |
-| **`zozun`** | pleasure interest bar | *what enjoyment needs* | `ozul` *strawberry* |
+| **`zugen`** | sake bar, sake not named | *Some-sake* (what a sake requires) | `ugel` *egg* |
+| **`zuhon`** | survival sake bar | *what safety needs* | `uhol` *shield* |
+| **`zonan`** | relatedness sake bar | *what connection needs* | `onal` *knot* |
+| **`zudun`** | competence sake bar | *what getting it done needs* | `udul` *toolbox* |
+| **`zaban`** | autonomy sake bar | *what choice needs* | `abal` *ballot* |
+| **`zozun`** | pleasure sake bar | *what enjoyment needs* | `ozul` *strawberry* |
 
-Tie **`ae`** against a interest bar is *enough*. Rank **`e`** is *too much*, and **`ue`** is *not enough*.
+Tie **`ae`** against a sake bar is *enough*. Rank **`e`** is *too much*, and **`ue`** is *not enough*.
 
 > `zedehel zugen zael gral.`
 >
-> [z-tea | z-Some-interest | z-equal-rank | g-amount]
+> [z-tea | z-Some-sake | z-equal-rank | g-amount]
 >
 > "There is enough tea."
 
 > `zedehel zugen zel gral.`
 >
-> [z-tea | z-Some-interest | z-rank/more | g-amount]
+> [z-tea | z-Some-sake | z-rank/more | g-amount]
 >
 > "There is too much tea."
 
 > `zedehel zugen zuel gral.`
 >
-> [z-tea | z-Some-interest | z-rank/less | g-amount]
+> [z-tea | z-Some-sake | z-rank/less | g-amount]
 >
 > "There is not enough tea."
 
-With a quality as the scale, the same pattern gives *too ADJ* and *ADJ enough*. A specific interest bar says which interest sets the limit.
+With a quality as the scale, the same pattern gives *too ADJ* and *ADJ enough*. A specific sake bar says which sake sets the limit.
 
 > `zedehel zuhon zel gahadol.`
 >
-> [z-tea | z-Survival-interest | z-rank/more | g-hot]
+> [z-tea | z-Survival-sake | z-rank/more | g-hot]
 >
 > "The tea is too hot to be safe."
 
@@ -557,11 +557,11 @@ To say **whose** need it is, put that person in `/b/` right after the shared sca
 
 > `zedehel zugen zael gral balahen.`
 >
-> [z-tea | z-Some-interest | z-equal-rank | [g-amount | b-Alahen]]
+> [z-tea | z-Some-sake | z-equal-rank | [g-amount | b-Alahen]]
 >
 > "There is enough tea for Alahen."
 
-**Compare with:** **`zomen`** (*my standard*) is what the speaker **prefers**. **`zugen`** is what the interest **requires**. `zedehel zomen zel gral` is *more tea than I like*, and `zedehel zugen zel gral` is *more tea than is needed*.
+**Compare with:** **`zomen`** (*my standard*) is what the speaker **prefers**. **`zugen`** is what the sake **requires**. `zedehel zomen zel gral` is *more tea than I like*, and `zedehel zugen zel gral` is *more tea than is needed*.
 
 ### Vague amounts (*many* / *few*) {#vague-amounts}
 
@@ -590,7 +590,7 @@ English *many* and *few* compare against an unstated baseline. Agalan always nam
 | *many* / *few* (for here) | **`zahen`** *Typical* |
 | *a lot* / *not many* (on average) | **`zeyen`** *Average* |
 | *too many* / *too few* (to my taste) | **`zomen`** *my standard* |
-| *too much* / *enough* / *not enough* | **`zugen`** or a specific interest bar |
+| *too much* / *enough* / *not enough* | **`zugen`** or a specific sake bar |
 
 The bar is never dropped. A single-item `zagadalx zel gral` already means *the most cats* (a [superlative](#superlatives)).
 
@@ -617,12 +617,12 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *Social* | `ezon` | `ezol` *silhouettes* |
 | *my standard* | `omen` | `omel` *mirror* |
 | *speaker* | `amun` | |
-| *Some-interest* | `ugen` | `ugel` *egg* |
-| *Survival-interest* | `uhon` | `uhol` *shield* |
-| *Relatedness-interest* | `onan` | `onal` *knot* |
-| *Competence-interest* | `udun` | `udul` *toolbox* |
-| *Autonomy-interest* | `aban` | `abal` *ballot* |
-| *Pleasure-interest* | `ozun` | `ozul` *strawberry* |
+| *Some-sake* | `ugen` | `ugel` *egg* |
+| *Survival-sake* | `uhon` | `uhol` *shield* |
+| *Relatedness-sake* | `onan` | `onal` *knot* |
+| *Competence-sake* | `udun` | `udul` *toolbox* |
+| *Autonomy-sake* | `aban` | `abal` *ballot* |
+| *Pleasure-sake* | `ozun` | `ozul` *strawberry* |
 | *artistry* | `ebudam` | `ebudal` *paintbrush* |
 
 #### English → Agalan {#advanced-english-to-agalan}
@@ -672,7 +672,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 ::: details Show answer
 `zazawan zugen zael gebudam.`
 
-[z-Azawan | z-Some-interest | z-equal-rank | g-artistry]
+[z-Azawan | z-Some-sake | z-equal-rank | g-artistry]
 :::
 
 **7.** *Ahaben is too showy to be safe.*
@@ -680,7 +680,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 ::: details Show answer
 `zahaben zuhon zel gahudom.`
 
-[z-Ahaben | z-Survival-interest | z-rank/more | g-showmanship]
+[z-Ahaben | z-Survival-sake | z-rank/more | g-showmanship]
 :::
 
 **8.** *Alahen sings less than connection needs.*
@@ -688,7 +688,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 ::: details Show answer
 `zalahen zonan zuel gezehel.`
 
-[z-Alahen | z-Relatedness-interest | z-rank/less | g-sing]
+[z-Alahen | z-Relatedness-sake | z-rank/less | g-sing]
 :::
 
 #### Agalan → English {#advanced-agalan-to-english}
@@ -742,7 +742,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 
 ::: details Show answer
 
-[z-Azawan | z-Competence-interest | z-equal-rank | g-sing]
+[z-Azawan | z-Competence-sake | z-equal-rank | g-sing]
 
 *Azawan sings well enough to get the job done.*
 :::
@@ -751,7 +751,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 
 ::: details Show answer
 
-[z-Ahaben | z-Autonomy-interest | z-rank/more | g-showmanship]
+[z-Ahaben | z-Autonomy-sake | z-rank/more | g-showmanship]
 
 *Ahaben is showier than free choice needs.*
 :::
@@ -760,7 +760,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 
 ::: details Show answer
 
-[z-Alahen | z-Pleasure-interest | z-rank/less | g-artistry]
+[z-Alahen | z-Pleasure-sake | z-rank/less | g-artistry]
 
 *Alahen has less artistry than enjoyment needs.*
 :::

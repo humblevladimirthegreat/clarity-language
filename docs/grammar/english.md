@@ -32,9 +32,9 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agalan 
 | swap (*a book for a hammer*) | **`hogem`** + `/b/` | [Exchange](relations.md#exchange) |
 | intended get (*works for a money-bag*) | hook **`el`** + `/b/` | [Hooks](hooks.md#extra-noun) |
 | intended outcome (*practices for a race*) | **`hagom`** + `/b/` | [So that](dependents.md#so-that) |
-| interest as reason (*walks for relatedness*) | interest **`tho`** on `/th/` | [Motive](interests.md#interest-preference) |
-| noun’s purpose (*my gift for relatedness*) | interest **`tho`** on `/ɡ/` | [Motive](interests.md#interest-preference) |
-| *my* belonging + interest (*my tent serves survival*) | interest **`tha` / `thu`** on `/ɡ/` | [Interests](interests.md#personal-possession) |
+| sake as reason (*walks for relatedness*) | sake **`tho`** on `/th/` | [Motive](sakes.md#sake-preference) |
+| noun’s purpose (*my gift for relatedness*) | sake **`tho`** on `/ɡ/` | [Motive](sakes.md#sake-preference) |
+| *my* belonging + sake (*my tent serves survival*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](sakes.md#personal-possession) |
 | duration (*for three hours*) | measure phrase | [Measure phrases](numbers-applied.md#measure-phrases) |
 | topic (*as for Azawan*) | **`hahehom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 

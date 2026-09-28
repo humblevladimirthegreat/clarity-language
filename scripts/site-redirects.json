@@ -37,8 +37,13 @@
     },
     {
       "from": "/grammar/values.html",
-      "to": "/grammar/interests.html",
-      "note": "Public URL after renaming values.md to interests.md."
+      "to": "/grammar/sakes.html",
+      "note": "Public URL after renaming values.md through interests.md to sakes.md."
+    },
+    {
+      "from": "/grammar/interests.html",
+      "to": "/grammar/sakes.html",
+      "note": "Public URL after renaming interests.md to sakes.md."
     }
   ]
 }

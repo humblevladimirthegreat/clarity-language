@@ -19,7 +19,6 @@ Prosody
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -intentionally discourage speaker and listener person pronoun by making them five letters instead of three.
 -remove unneeded tests
--rename interests to something metaphorical (soulfood?)
 
 final exam
 

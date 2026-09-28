@@ -553,7 +553,7 @@ describe("retie fixes (2026-09-28 overlay demotion)", () => {
     assert.equal(text, "`zemazol` then `zalahen thibibir vadebal.`");
   });
 
-  it("keeps an emotion tail when the interest root moves", () => {
+  it("keeps an emotion tail when the sake root moves", () => {
     assert.equal(rewriteParsedWord(parseWord("wonathumer"), mapOf(["ona", "ibibi"])), "wibibithumer");
   });
 

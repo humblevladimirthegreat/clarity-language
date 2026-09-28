@@ -21,7 +21,7 @@ export type ResumeScope = {
    * under the old spellings: only its root moves; it is not rebuilt as a resume.
    */
   isOverlay?: (word: MorphWord) => boolean;
-  /** The shape the classifier reads under the old spellings (a lateral the word grammar saw as an interest). */
+  /** The shape the classifier reads under the old spellings (a lateral the word grammar saw as a sake). */
   reshape?: (word: MorphWord) => MorphWord;
 };
 

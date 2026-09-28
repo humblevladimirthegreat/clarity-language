@@ -113,7 +113,7 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause pole
 
 | `kind` | `LexReading` | Inventory |
 |--------|--------------------|-----------|
-| `interest` | `interest` (on `x`+vowel hosts only) | six interests + unspecified; bare spelling is ordinary content |
+| `sake` | `sake` (on `x`+vowel hosts only) | six sakes + unspecified; bare spelling is ordinary content |
 | `ability` | `ability` | hostless **`eze`** |
 | `join_act` | `joinAct` | vowel-series `/v/` **`an`** / **`on`** / … |
 | `join_relation` | `joinRelation` | same stems on `/g/` `/h/` |

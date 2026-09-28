@@ -7,8 +7,8 @@ import { glossLabels, lintTerminology } from "./terminology-docs.js";
 
 const tables = loadDefaultTables();
 
-const INTERESTS = [
-  "# Interests",
+const SAKES = [
+  "# Sakes",
   "",
   "### Emotion compose {#emotion-compose}",
   "",
@@ -20,11 +20,11 @@ function terminology(rows: string[], body = ""): string {
 }
 
 function lint(markdown: string, labels: string[]) {
-  const pages = new Map([["interests.md", INTERESTS], ["terminology.md", markdown]]);
-  return lintTerminology(markdown, pages, tables, new Set(labels), new Map([["interests.md", "Interests"]])).map((f) => f.detail);
+  const pages = new Map([["sakes.md", SAKES], ["terminology.md", markdown]]);
+  return lintTerminology(markdown, pages, tables, new Set(labels), new Map([["sakes.md", "Sakes"]])).map((f) => f.detail);
 }
 
-const INTERNAL = "| **INTERNAL** | held inside | `guduthamar` | [Interests](interests.md#emotion-compose) |";
+const INTERNAL = "| **INTERNAL** | held inside | `guduthamar` | [Sakes](sakes.md#emotion-compose) |";
 
 describe("lintTerminology", () => {
   it("passes a current row", () => {
@@ -41,14 +41,14 @@ describe("lintTerminology", () => {
   });
 
   it("flags a row whose example lacks the label or is not on the page", () => {
-    const wrong = "| **CIRCUM** | atmosphere | `guduthamar` | [Interests](interests.md#emotion-compose) |";
+    const wrong = "| **CIRCUM** | atmosphere | `guduthamar` | [Sakes](sakes.md#emotion-compose) |";
     assert.match(lint(terminology([wrong]), ["CIRCUM"]).join("\n"), /without CIRCUM/);
-    const missing = "| **CIRCUM** | atmosphere | `wuduthuraol` | [Interests](interests.md#emotion-compose) |";
-    assert.match(lint(terminology([missing]), ["CIRCUM"]).join("\n"), /does not appear on interests\.md/);
+    const missing = "| **CIRCUM** | atmosphere | `wuduthuraol` | [Sakes](sakes.md#emotion-compose) |";
+    assert.match(lint(terminology([missing]), ["CIRCUM"]).join("\n"), /does not appear on sakes\.md/);
   });
 
   it("flags a row no morph line prints and the page never uses", () => {
-    const stale = "| **ACT** | arousal | `guduthamar` | [Interests](interests.md#emotion-compose) |";
+    const stale = "| **ACT** | arousal | `guduthamar` | [Sakes](sakes.md#emotion-compose) |";
     assert.match(lint(terminology([stale]), []).join("\n"), /drop the row/);
   });
 
@@ -58,13 +58,13 @@ describe("lintTerminology", () => {
       "",
       "Say `wonathumer` with **ACT**; the root `ezebe`.",
       "",
-      "[Feelings](interests.md#nowhere)",
+      "[Feelings](sakes.md#nowhere)",
     ].join("\n");
     const out = lint(terminology([INTERNAL], body), ["INTERNAL"]).join("\n");
     assert.match(out, /`wonathumer` does not appear/);
     assert.match(out, /\*\*ACT\*\*/);
     assert.match(out, /bare root `ezebe`/);
-    assert.match(out, /interests\.md#nowhere is not an anchor/);
+    assert.match(out, /sakes\.md#nowhere is not an anchor/);
     assert.match(out, /link text "Feelings"/);
   });
 });

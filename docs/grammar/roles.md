@@ -333,7 +333,7 @@ z-Ahaben | [g-bond | b-Alahen] . z-←bond | v-punch
 <a id="spatial-laterals"></a>
 <a id="my-left-your-left"></a>
 
-English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) or a side of a viewpoint (*Azawan’s left*, *the car’s left*). For the viewpoint reading, write the same arrow root, then mid-word **`th`**, then the thing whose facing counts as north, then an ordinary [reference ending](word-endings.md). A person’s front is the direction they face. For an object, use the front its design or current use makes forward; if that does not settle a front, establish the frame in context. You can then say *walk left* without meaning *walk west*. The six [interest](interests.md) roots are never a direction: after one of them, **`th`** starts an interest word, even when a root-shaped piece follows ([emotion compose](interests.md#emotion-compose)).
+English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) or a side of a viewpoint (*Azawan’s left*, *the car’s left*). For the viewpoint reading, write the same arrow root, then mid-word **`th`**, then the thing whose facing counts as north, then an ordinary [reference ending](word-endings.md). A person’s front is the direction they face. For an object, use the front its design or current use makes forward; if that does not settle a front, establish the frame in context. You can then say *walk left* without meaning *walk west*. The six [sake](sakes.md) roots are never a direction: after one of them, **`th`** starts a sake word, even when a root-shaped piece follows ([emotion compose](sakes.md#emotion-compose)).
 
 > `yel vowogal hewezathazawan.`
 >

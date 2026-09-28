@@ -263,7 +263,7 @@ Pick one evidential **root** for how you know.
 >
 > "Alahen writes — so they say."
 
-**Compare with:** seeing as an action uses ordinary **`vahahal`**. **`thodum`** is *how you know* (the walk is in view now), not the verb *see*. Fear or hope uses [emotion compose](interests.md#emotion-compose). **`thahum`** is a way of *knowing*, not that stack. **`themam`** is someone said so about the claim; hearing a door as an action is ordinary `/v/`.
+**Compare with:** seeing as an action uses ordinary **`vahahal`**. **`thodum`** is *how you know* (the walk is in view now), not the verb *see*. Fear or hope uses [emotion compose](sakes.md#emotion-compose). **`thahum`** is a way of *knowing*, not that stack. **`themam`** is someone said so about the claim; hearing a door as an action is ordinary `/v/`.
 
 **Related form:** to deny only the channel (*it happened, but I did not see it*), close the evidential with a [stance join](join-across-roles.md#stance-joins) (taught later). Two channels you cannot choose between use the same kind of join.
 
@@ -1043,8 +1043,8 @@ z-Azawan | h-never | v-sit | [th-RULE | b-soccer]
 
 ## See also
 
-- Interest ascription: [interests.md](interests.md)
-- Emotion compose: [interests.md](interests.md#emotion-compose)
+- Sake ascription: [sakes.md](sakes.md)
+- Emotion compose: [sakes.md](sakes.md#emotion-compose)
 - Plan vs forecast: [intention.md](intention.md#plan-predict)
 - Clock / date / when-frames: [numbers-applied.md](numbers-applied.md#time)
 - Habitual *always*: [restrictors.md](restrictors.md)

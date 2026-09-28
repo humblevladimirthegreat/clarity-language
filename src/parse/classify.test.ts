@@ -37,9 +37,9 @@ function expectReading(text: string, reading: LexReading) {
 }
 
 describe("classify", () => {
-  it("emotion tail on an interest root; same shape on another root is a viewpoint lateral", () => {
+  it("emotion tail on a sake root; same shape on another root is a viewpoint lateral", () => {
     const fused = classifyText("guduthamol");
-    assert.equal(fused.family.kind === "x" && fused.family.xFamily, "interest");
+    assert.equal(fused.family.kind === "x" && fused.family.xFamily, "sake");
     const lateral = classifyText("gewezethamol");
     assert.deepEqual(lateral.family, { kind: "x", xFamily: "lateral", leftRoots: ["eweze"], rightRoots: ["amo"] });
   });
@@ -112,7 +112,7 @@ describe("classify", () => {
     expectReading("g+3", "number");
   });
 
-  it("ability on non-interest host compound", () => {
+  it("ability on non-sake host compound", () => {
     expectReading("vahawaxel", "ability");
   });
 
@@ -123,9 +123,9 @@ describe("classify", () => {
     expectReading("ahabexun", "greeting");
   });
 
-  it("interest on interest host compounds; bare interest root is ordinary", () => {
-    expectReading("thabathal", "interest");
-    expectReading("gonathal", "interest");
+  it("sake on sake host compounds; bare sake root is ordinary", () => {
+    expectReading("thabathal", "sake");
+    expectReading("gonathal", "sake");
     expectReading("hozul", "ordinary");
   });
 

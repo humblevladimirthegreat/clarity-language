@@ -120,8 +120,8 @@ function indexRows(rows: PlaceRow[], overlays: OverlayRow[], pron: Map<string, s
     const item = byEmoji.get(overlay.emoji);
     if (!item) continue;
     const judgment = overlay.kind === "benchmark" && JUDGMENT.has(overlay.emoji);
-    const interest = overlay.kind === "benchmark" && !judgment;
-    const sub = judgment ? "/judgment" : interest ? "/interest" : "";
+    const sake = overlay.kind === "benchmark" && !judgment;
+    const sub = judgment ? "/judgment" : sake ? "/sake" : "";
     item.groups.add(`kind:${overlay.pos}/${overlay.kind}${sub}`);
     item.groups.add(`pos:${overlay.pos}`);
   }
@@ -172,8 +172,8 @@ export function annealShortRoots(
     for (let b = a + 1; b < items.length; b++) {
       const shared = [...items[a]!.groups].filter((group) => items[b]!.groups.has(group));
       const bench =
-        [...items[a]!.groups].some((group) => /benchmark\/(judgment|interest)/.test(group)) &&
-        [...items[b]!.groups].some((group) => /benchmark\/(judgment|interest)/.test(group)) &&
+        [...items[a]!.groups].some((group) => /benchmark\/(judgment|sake)/.test(group)) &&
+        [...items[b]!.groups].some((group) => /benchmark\/(judgment|sake)/.test(group)) &&
         [...items[a]!.groups].some((group) => group.endsWith("judgment")) !==
           [...items[b]!.groups].some((group) => group.endsWith("judgment"));
       const pair: PairRule = {

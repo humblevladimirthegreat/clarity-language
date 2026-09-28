@@ -51,7 +51,7 @@ export type NumberStem = {
   digitlessExp?: string;
 };
 
-export type XFamily = "span" | "role" | "interest" | "scope" | "lateral" | "ability" | "numeric" | "compound";
+export type XFamily = "span" | "role" | "sake" | "scope" | "lateral" | "ability" | "numeric" | "compound";
 
 export type SpanCloseFlavor = "complete" | "editorial" | "closeAll";
 
@@ -77,9 +77,9 @@ export type MorphWordFamily =
       roleVowel?: "a" | "e" | "u" | "o";
       /** Values / label-scope / ability stance vowel (also role + ability on `/ɡ/`). */
       stanceVowel?: "a" | "e" | "o" | "u";
-      /** Emotion compose: interest horizon letter moved mid-word (interests.md#emotion-compose). */
+      /** Emotion compose: sake horizon letter moved mid-word (sakes.md#emotion-compose). */
       horizon?: "l" | "m" | "r";
-      /** Emotion compose locus: hook vowel(s) for placement or direction (interests.md#emotion-compose). */
+      /** Emotion compose locus: hook vowel(s) for placement or direction (sakes.md#emotion-compose). */
       locus?: "a" | "e" | "o" | "u" | "ao" | "ae" | "oe" | "ua" | "uo" | "ue";
       /** Nested number stem (numeric derivation). */
       numberStem?: NumberStem;
@@ -123,7 +123,7 @@ export type MorphWord = {
 /** Stage-2 lexicon reading (tables + thin PoS/ending branches). */
 export type LexReading =
   | "ordinary"
-  | "interest"
+  | "sake"
   | "ability"
   | "greeting"
   | "restrictor"
@@ -163,7 +163,7 @@ export type RootGloss = {
  */
 export type LexWord = MorphWord & {
   overlay?: LexOverlay;
-  /** Interest / hostless-ability row whose host this `x` interest or ability word spells (`thonogothem`). */
+  /** Sake / hostless-ability row whose host this `x` sake or ability word spells (`thonogothem`). */
   hostOverlay?: LexOverlay;
   rootGloss?: RootGloss;
   reading: LexReading;

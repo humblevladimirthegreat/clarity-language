@@ -22,11 +22,11 @@ describe("placement", () => {
     senseForm: "alodom",
     pos: "th",
     emoji: "🗳️",
-    kind: "interest",
+    kind: "sake",
     gloss: "autonomy",
     definition: "",
     mnemonic: "",
-    anchor: "interests.md#x",
+    anchor: "sakes.md#x",
   };
 
   it("gives overlay rows three letters and other rows five, with glasses first", () => {

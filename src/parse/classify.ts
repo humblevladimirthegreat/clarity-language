@@ -18,20 +18,20 @@ import {
 import type { LexOverlay, LexReading, LexWord, MorphWord } from "./types.js";
 import { CLOSED } from "../closed-roots.js";
 
-function interestRootsFromOverlays(overlays: Iterable<OverlayRow>): Set<string> {
+function sakeRootsFromOverlays(overlays: Iterable<OverlayRow>): Set<string> {
   const roots = new Set<string>();
   for (const overlay of overlays) {
-    if (overlay.kind === "interest") {
+    if (overlay.kind === "sake") {
       roots.add(senseFormRoot(overlay.senseForm));
     }
   }
   return roots;
 }
 
-function interestGlossFromOverlays(overlays: Iterable<OverlayRow>): Map<string, string> {
+function sakeGlossFromOverlays(overlays: Iterable<OverlayRow>): Map<string, string> {
   const gloss = new Map<string, string>();
   for (const overlay of overlays) {
-    if (overlay.kind !== "interest") continue;
+    if (overlay.kind !== "sake") continue;
     const root = senseFormRoot(overlay.senseForm);
     if (!gloss.has(root)) gloss.set(root, overlay.gloss);
   }
@@ -47,8 +47,8 @@ function hostlessAbilityRootFromOverlays(overlays: Iterable<OverlayRow>): string
   return null;
 }
 
-/** Closed interest hosts — filled from overlay `kind` at table load. */
-export const INTEREST_ROOTS = new Set<string>();
+/** Closed sake hosts — filled from overlay `kind` at table load. */
+export const SAKE_ROOTS = new Set<string>();
 
 /** Defined restrictor core spellings under `/h/` / `/w/` (not `-n`). */
 const RESTRICTOR_CORE = new Set<string>([
@@ -82,8 +82,8 @@ export type ClassifyTables = {
   overlays: Map<string, OverlayRow>;
   published: Map<string, PublishedRow>;
   compounds: Map<string, CompoundRow>;
-  interestRoots: Set<string>;
-  interestGloss: Map<string, string>;
+  sakeRoots: Set<string>;
+  sakeGloss: Map<string, string>;
   hostlessAbilityRoot: string | null;
 };
 
@@ -137,7 +137,7 @@ function overlayReading(overlay: OverlayRow): LexReading {
   if (overlay.kind === "join_act") return "joinAct";
   if (overlay.kind === "join_relation") return "joinRelation";
   if (overlay.kind === "ability") return "ability";
-  if (overlay.kind === "interest") return "interest";
+  if (overlay.kind === "sake") return "sake";
   if (overlay.kind === "locative") return "locative";
   if (overlay.kind === "similative") return "similative";
   if (overlay.kind === "of_relation") return "ofRelation";
@@ -385,14 +385,14 @@ function finishTables(
   compounds: Map<string, CompoundRow>,
 ): ClassifyTables {
   const overlayList = [...overlays.values()];
-  const interestRoots = interestRootsFromOverlays(overlayList);
-  const interestGloss = interestGlossFromOverlays(overlayList);
+  const sakeRoots = sakeRootsFromOverlays(overlayList);
+  const sakeGloss = sakeGlossFromOverlays(overlayList);
   const hostlessAbilityRoot = hostlessAbilityRootFromOverlays(overlayList);
-  INTEREST_ROOTS.clear();
-  for (const root of interestRoots) {
-    INTEREST_ROOTS.add(root);
+  SAKE_ROOTS.clear();
+  for (const root of sakeRoots) {
+    SAKE_ROOTS.add(root);
   }
-  return { overlays, published, compounds, interestRoots, interestGloss, hostlessAbilityRoot };
+  return { overlays, published, compounds, sakeRoots, sakeGloss, hostlessAbilityRoot };
 }
 
 export function createClassifyTables(
@@ -435,11 +435,11 @@ export function createClassifyTablesFromRows(
   return finishTables(published, overlays, compoundsFromRows(compoundRows));
 }
 
-/** Interest and hostless-ability rows register `x` hosts; the interest / ability word on that host uses the row. */
+/** Sake and hostless-ability rows register `x` hosts; the sake / ability word on that host uses the row. */
 function hostOverlay(word: MorphWord, tables: ClassifyTables): { hostOverlay?: LexOverlay } {
   const host = word.family.kind === "x" ? word.family.leftRoots[0] : undefined;
   const row = host && word.pos ? tables.overlays.get(overlayKey(word.pos, `${host}m`)) : undefined;
-  return row && (row.kind === "interest" || row.kind === "ability") ? { hostOverlay: overlayFromRow(row) } : {};
+  return row && (row.kind === "sake" || row.kind === "ability") ? { hostOverlay: overlayFromRow(row) } : {};
 }
 
 /** Arrow-rose roots (roles.md#arrow-rose-compass-vs-face); `DIR th o` on these is a landmark lateral. */
@@ -454,30 +454,30 @@ export const ARROW_ROOTS = new Set([
   CLOSED.northwest,
 ]);
 
-/** `DIR th o` parses as an interest shape; on an arrow root it is the landmark's own facing. */
+/** `DIR th o` parses as a sake shape; on an arrow root it is the landmark's own facing. */
 function landmarkLateral(word: MorphWord): MorphWord | undefined {
   const family = word.family;
-  if (family.kind !== "x" || family.xFamily !== "interest" || family.stanceVowel !== "o" || family.horizon) return undefined;
+  if (family.kind !== "x" || family.xFamily !== "sake" || family.stanceVowel !== "o" || family.horizon) return undefined;
   if (family.leftRoots.length !== 1 || !ARROW_ROOTS.has(family.leftRoots[0]!)) return undefined;
   return { ...word, family: { kind: "x", xFamily: "lateral", leftRoots: family.leftRoots, rightRoots: [], landmark: true } };
 }
 
-/** `ROOT th V` on any root outside the six interests is label scope (predication.md#label-scope). */
+/** `ROOT th V` on any root outside the six sakes is label scope (predication.md#label-scope). */
 function labelScope(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {
   const family = word.family;
-  if (family.kind !== "x" || family.xFamily !== "interest") return undefined;
-  if (family.leftRoots.every((root) => tables.interestRoots.has(root))) return undefined;
+  if (family.kind !== "x" || family.xFamily !== "sake") return undefined;
+  if (family.leftRoots.every((root) => tables.sakeRoots.has(root))) return undefined;
   return { ...word, family: { ...family, xFamily: "scope" } };
 }
 
 /**
- * `ROOT th V C V` + ending: the emotion tail on an interest root (interests.md#emotion-compose);
+ * `ROOT th V C V` + ending: the emotion tail on a sake root (sakes.md#emotion-compose);
  * on any other root the same letters are a viewpoint lateral `DIR th ANCHOR` (roles.md#viewpoint-laterals).
  */
 function tailLateral(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {
   const family = word.family;
-  if (family.kind !== "x" || family.xFamily !== "interest" || !family.horizon) return undefined;
-  if (family.leftRoots.every((root) => tables.interestRoots.has(root))) return undefined;
+  if (family.kind !== "x" || family.xFamily !== "sake" || !family.horizon) return undefined;
+  if (family.leftRoots.every((root) => tables.sakeRoots.has(root))) return undefined;
   if (family.leftRoots.length !== 1 || (family.locus?.length ?? 0) !== 1) return undefined;
   const anchor = `${family.stanceVowel}${family.horizon}${family.locus}`;
   return { ...word, family: { kind: "x", xFamily: "lateral", leftRoots: family.leftRoots, rightRoots: [anchor] } };
@@ -485,7 +485,7 @@ function tailLateral(word: MorphWord, tables: ClassifyTables): MorphWord | undef
 
 /**
  * The word shape `classify` reads, before lexicon lookup: a lateral, landmark lateral or label scope
- * where the word grammar alone saw an interest shape (`gewezatheman` = *west* `th` *speaker*).
+ * where the word grammar alone saw a sake shape (`gewezatheman` = *west* `th` *speaker*).
  */
 export function classifiedShape(word: MorphWord, tables: ClassifyTables): MorphWord {
   return tailLateral(word, tables) ?? landmarkLateral(word) ?? labelScope(word, tables) ?? word;
@@ -503,8 +503,8 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
 
   if (senseForm && pos) {
     const overlayRow = tables.overlays.get(overlayKey(pos, senseForm));
-    // Interest overlays register hosts for `x`+vowel interest words; the bare spelling is ordinary.
-    if (overlayRow && overlayRow.kind !== "interest") {
+    // Sake overlays register hosts for `x`+vowel sake words; the bare spelling is ordinary.
+    if (overlayRow && overlayRow.kind !== "sake") {
       return {
         ...word,
         overlay: overlayFromRow(overlayRow),
@@ -519,8 +519,8 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
     return { ...word, reading: "number" };
   }
 
-  if (family.kind === "x" && family.xFamily === "interest") {
-    return { ...word, ...hostOverlay(word, tables), reading: "interest" };
+  if (family.kind === "x" && family.xFamily === "sake") {
+    return { ...word, ...hostOverlay(word, tables), reading: "sake" };
   }
 
   if (family.kind === "x" && family.xFamily === "ability") {
@@ -652,7 +652,7 @@ export type ClassifyHit = {
   source:
     | "overlay"
     | "number"
-    | "interest"
+    | "sake"
     | "ability"
     | "restrictor"
     | "standIn"
@@ -671,7 +671,7 @@ export function classifyHits(word: MorphWord, tables: ClassifyTables): ClassifyH
 
   if (senseForm && pos) {
     const overlayRow = tables.overlays.get(overlayKey(pos, senseForm));
-    if (overlayRow && overlayRow.kind !== "interest") {
+    if (overlayRow && overlayRow.kind !== "sake") {
       hits.push({ source: "overlay", reading: overlayReading(overlayRow) });
     }
   }
@@ -682,8 +682,8 @@ export function classifyHits(word: MorphWord, tables: ClassifyTables): ClassifyH
     hits.push({ source: "number", reading: "number" });
   }
 
-  if (family.kind === "x" && family.xFamily === "interest" && family.leftRoots.every((root) => tables.interestRoots.has(root))) {
-    hits.push({ source: "interest", reading: "interest" });
+  if (family.kind === "x" && family.xFamily === "sake" && family.leftRoots.every((root) => tables.sakeRoots.has(root))) {
+    hits.push({ source: "sake", reading: "sake" });
   }
 
   if (family.kind === "x" && family.xFamily === "ability") {

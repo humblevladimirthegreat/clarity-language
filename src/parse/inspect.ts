@@ -362,8 +362,8 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
 export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   const family = word.family;
 
-  if (family.kind === "x" && family.xFamily === "interest") {
-    return { line: "interests (interest + th)", href: "interests.html" };
+  if (family.kind === "x" && family.xFamily === "sake") {
+    return { line: "sakes (sake + th)", href: "sakes.html" };
   }
   if (family.kind === "x" && family.xFamily === "lateral" && family.landmark) {
     return { line: "landmark lateral (the /b/ landmark's own facing)", href: "roles.html#landmark-facing" };
@@ -375,7 +375,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     if (word.reading === "greeting") {
       return { line: "greeting bid, not ability", href: "x-compounds.html#conversation-length" };
     }
-    return { line: "ability, not interests", href: "intention.html#ability" };
+    return { line: "ability, not sakes", href: "intention.html#ability" };
   }
   if (family.kind === "x" && family.xFamily === "role") {
     return { line: "role compound", href: "roles.html#role-compounds" };
@@ -439,12 +439,12 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     return { line: "proxy", href: "relations.html#proxy" };
   }
   if (word.reading === "stimulus") {
-    return { line: "interest stimulus", href: "interests.html#stimulus" };
+    return { line: "sake stimulus", href: "sakes.html#stimulus" };
   }
   if (word.reading === "joinAct" || word.reading === "joinRelation") {
     return { line: "join-series form", href: "join-across-roles.html" };
   }
-  if (word.ending === "r" && word.reading !== "interest" && word.reading !== "ability" && word.reading !== "greeting") {
+  if (word.ending === "r" && word.reading !== "sake" && word.reading !== "ability" && word.reading !== "greeting") {
     return { line: "anaphor", href: "pronouns.html" };
   }
   if (word.plural) {

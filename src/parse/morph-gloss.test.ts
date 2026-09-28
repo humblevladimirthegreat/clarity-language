@@ -317,7 +317,7 @@ describe("compareMorphGloss", () => {
     );
   });
 
-  it("ordinary -l on an interest host root uses literal sense, not interest overlay", () => {
+  it("ordinary -l on a sake host root uses literal sense, not sake overlay", () => {
     expectLine("zazawan gonal balahen", "z-Azawan | [g-knot | b-Alahen]");
   });
 

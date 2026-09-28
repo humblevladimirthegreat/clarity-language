@@ -341,7 +341,7 @@ English *Azawan makes Alahen tell* has a causer and a causee. Keep the causee as
 
 When a pole follows **`thegem`**, the `/b/` belongs to the pole, as above (`thegem theram bavahel` *because of fire, as mechanism*).
 
-**Compare with:** *let* is [permission](interests.md#permission), which puts the grantor in the same hosted `/b/` slot. *Get someone to* (ask, persuade) is tell + a *to* [stand-in](dependents.md#stand-in).
+**Compare with:** *let* is [permission](sakes.md#permission), which puts the grantor in the same hosted `/b/` slot. *Get someone to* (ask, persuade) is tell + a *to* [stand-in](dependents.md#stand-in).
 
 | Agalan | English |
 |--------|---------|

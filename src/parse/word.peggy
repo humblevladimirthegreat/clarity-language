@@ -612,15 +612,15 @@ RoleCompound
       };
     }
 
-// Interests: interest root + `th` + stance vowel (interests.md); optional emotion
-// tail = horizon letter + locus hook vowel(s), then the motion ending (interests.md#emotion-compose).
-// On a non-interest host the tailed shape is a viewpoint lateral (classify.ts).
+// Sakes: sake root + `th` + stance vowel (sakes.md); optional emotion
+// tail = horizon letter + locus hook vowel(s), then the motion ending (sakes.md#emotion-compose).
+// On a non-sake host the tailed shape is a viewpoint lateral (classify.ts).
 ValueCompound
   = host:CompoundHost "th" stanceV:[aeou] tail:(h:[lmr] l:("ao" / "ae" / "oe" / "ua" / "uo" / "ue" / [aeou]) { return [h, l]; })? ending:Ending plural:PluralSuffix? WordEnd {
       return {
         ending,
         plural: !!plural,
-        family: xFamily("interest", {
+        family: xFamily("sake", {
           leftRoots: host,
           stanceVowel: stanceV,
           ...(tail ? { horizon: tail[0], locus: tail[1] } : {}),

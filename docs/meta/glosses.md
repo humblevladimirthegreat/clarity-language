@@ -99,7 +99,7 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 | Role metalanguage (`speaker`, `listener`, `interlocutors`) | *I / you / we* |
 | Join packaging (open `zam` vs closed `zal`, exclusive `dol`, fence shape) | Plain *and / or*; no “exactly one”, no open-list footnotes |
 | Sense-picking **-l / -m / -n** | Never (already omitted from morph when they only pick sense) |
-| Values **time horizon / standing / invitation / changeability** | Keep only what changes English (*can't* vs unmet interest as content); drop “(motive, soft standing)”, … Prescription **`the`**: loose free keeps the warrant when it is the point (*invited* / *offered* / *worth a try*) — not *must* / *should* / *could* as a force grade |
+| Values **time horizon / standing / invitation / changeability** | Keep only what changes English (*can't* vs unmet sake as content); drop “(motive, soft standing)”, … Prescription **`the`**: loose free keeps the warrant when it is the point (*invited* / *offered* / *worth a try*) — not *must* / *should* / *could* as a force grade |
 | Emotion compose (locus / motion tail) | Ordinary emotion English (*we're glad*), not “pleasure met · internal” |
 | Evidential / universality **tags** | Fold in only if English wants it (*I hear…*, *usually*); else omit |
 | Span fence labels | Quotes / parentheses; no “Cite:” / “aside:” |
@@ -111,7 +111,7 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 
 - Who / what / polarity / negation
 - Force English can say (*please*, *don’t*, *I wonder*)
-- Stance that changes the verb (*can't* vs *ought not* vs unmet interest as content)
+- Stance that changes the verb (*can't* vs *ought not* vs unmet sake as content)
 - Comparatives / equatives / causation / plan when they are the point of the turn
 - Mention interiors as *the word “odoga”* / *the phrase “…”* (Agalan spelling, not the English lemma) — [span interiors](#span-interiors)
 - Opaque interiors as the same blob (`kimchi`, `FBI`)
@@ -307,7 +307,7 @@ Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#
 
 ### Mid-word `x` families
 
-Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/interests.md), keep the stance **and** the ending table (contact / prescription warrant / preference standing / changeability): `thuduthom` → `th-competence-motive-internal`, not `th-competence-th-motive`.
+Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/sakes.md), keep the stance **and** the ending table (contact / prescription warrant / preference standing / changeability): `thuduthom` → `th-competence-motive-internal`, not `th-competence-th-motive`.
 
 | Family | Example Agalan | Morph gloss |
 |--------|-----------------|-------------|
@@ -500,4 +500,4 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 - [pronouns.md](../grammar/pronouns.md) — **-r** and special pronouns
 - [x-compounds.md](../grammar/x-compounds.md) — mid-word `x` families
 - [clause.md](../grammar/clause.md#role-letters) — role letters in a sentence
-- [interests.md](../grammar/interests.md) — need stances and endings (morph keeps them; loose free usually drops channel / standing / force / changeability)
+- [sakes.md](../grammar/sakes.md) — need stances and endings (morph keeps them; loose free usually drops channel / standing / force / changeability)

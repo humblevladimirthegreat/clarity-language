@@ -276,7 +276,7 @@ const SCOPE_VOWEL: Record<string, string> = {
   u: "name-only",
 };
 
-const INTEREST_STANCE: Record<string, string> = {
+const SAKE_STANCE: Record<string, string> = {
   a: "met",
   e: "ought",
   o: "motive",
@@ -284,14 +284,14 @@ const INTEREST_STANCE: Record<string, string> = {
 };
 
 /** Ending grain on values (time horizon / prescription warrant / preference / changeability). */
-const INTEREST_GRAIN: Record<string, Partial<Record<Ending, string>>> = {
+const SAKE_GRAIN: Record<string, Partial<Record<Ending, string>>> = {
   a: { l: "lasting", m: "any-term", r: "immediate" },
   e: { l: "invited", m: "offered", r: "trial" },
   o: { l: "circumstantial", m: "internal", r: "provisional" },
   u: { l: "irreversible", m: "modifiable", r: "passing" },
 };
 
-/** Emotion tail (interests.md#emotion-compose): locus hook vowel(s), then motion ending. */
+/** Emotion tail (sakes.md#emotion-compose): locus hook vowel(s), then motion ending. */
 const EMOTION_LOCUS: Record<string, string> = {
   a: "INTERNAL",
   uo: "CAUGHT",
@@ -410,7 +410,7 @@ export function senseLabel(
     return body;
   }
   const hinge =
-    word.family.kind === "x" && (word.family.xFamily === "interest" || word.family.xFamily === "scope" || word.family.xFamily === "lateral")
+    word.family.kind === "x" && (word.family.xFamily === "sake" || word.family.xFamily === "scope" || word.family.xFamily === "lateral")
       ? "-th-"
       : "-x-";
   const body = sensePieces(word, tables, ctx).join(hinge);
@@ -1039,7 +1039,7 @@ function sensePieces(
   const family = word.family;
   const resume =
     word.ending === "r" &&
-    word.reading !== "interest" &&
+    word.reading !== "sake" &&
     word.reading !== "ability" &&
     family.kind !== "joinMarker";
   if (resume) {
@@ -1399,14 +1399,14 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
     return [role, ...host];
   }
 
-  if (family.xFamily === "interest" || family.xFamily === "ability") {
+  if (family.xFamily === "sake" || family.xFamily === "ability") {
     const hostRoot = family.leftRoots[0] ?? "host";
     const host =
       tables.hostlessAbilityRoot && hostRoot === tables.hostlessAbilityRoot
         ? "ABIL"
         : rootSense(hostRoot, word.ending, tables, {
             named: word.reading === "greeting" || word.ending === "n",
-            interest: word.reading === "interest",
+            sake: word.reading === "sake",
             pos: word.pos,
           });
     // Ability / greeting bids: one hyphenated english slot (`walking-unable-temporary`,
@@ -1415,12 +1415,12 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
       const stance = GREETING_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "greeting";
       return [`${host}-${stance}`];
     }
-    if (word.reading === "interest") {
-      const stance = INTEREST_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "stance";
+    if (word.reading === "sake") {
+      const stance = SAKE_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "stance";
       const horizon = family.horizon ?? word.ending;
       const grain =
         family.stanceVowel && horizon
-          ? INTEREST_GRAIN[family.stanceVowel]?.[horizon]
+          ? SAKE_GRAIN[family.stanceVowel]?.[horizon]
           : undefined;
       if (family.horizon) {
         const locus = EMOTION_LOCUS[family.locus ?? ""];
@@ -1511,7 +1511,7 @@ function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): st
   if (roots.length === 1) {
     return rootSense(roots[0]!, word.ending, tables, {
       named: word.ending === "n",
-      interest: word.reading === "interest",
+      sake: word.reading === "sake",
       pos: word.pos,
     });
   }
@@ -1519,7 +1519,7 @@ function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): st
     .map((root) =>
       rootSense(root, word.ending, tables, {
         named: word.ending === "n",
-        interest: word.reading === "interest",
+        sake: word.reading === "sake",
         pos: word.pos,
       }),
     )
@@ -1547,7 +1547,7 @@ function rootSense(
   opts: {
     named?: boolean;
     nameLast?: boolean;
-    interest?: boolean;
+    sake?: boolean;
     citationEtymology?: boolean;
     pos?: Pos;
   } = {},
@@ -1557,7 +1557,7 @@ function rootSense(
     return hyphenEnglish(row?.abstract || row?.concrete || root);
   }
 
-  if (opts.interest && tables.interestGloss.has(root)) return tables.interestGloss.get(root)!;
+  if (opts.sake && tables.sakeGloss.has(root)) return tables.sakeGloss.get(root)!;
 
   const compound = tables.compounds.get(root);
   if (compound && ending !== "n" && !opts.named) {
@@ -1578,8 +1578,8 @@ function rootSense(
     if (opts.named) return titleAgalanName(root, opts.nameLast !== false);
   }
 
-  if (tables.interestGloss.has(root) && opts.interest) {
-    return tables.interestGloss.get(root)!;
+  if (tables.sakeGloss.has(root) && opts.sake) {
+    return tables.sakeGloss.get(root)!;
   }
 
   const row = tables.published.get(root);

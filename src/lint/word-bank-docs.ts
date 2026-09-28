@@ -176,7 +176,7 @@ function addOverlay(
   }
   const host = senseFormRoot(overlayForm);
   if (!roots.includes(host)) return;
-  if (kind === "interest") {
+  if (kind === "sake") {
     add(into, gloss);
     return;
   }

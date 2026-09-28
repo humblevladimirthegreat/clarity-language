@@ -28,7 +28,7 @@ export type PublishedRow = {
 };
 
 export const OVERLAY_KINDS = [
-  "interest",
+  "sake",
   "ability",
   "join_act",
   "join_relation",

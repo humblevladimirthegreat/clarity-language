@@ -165,7 +165,7 @@ type FamilyKind = MorphWordFamily["kind"];
 export const WORD_FAMILY_CONSTRUCTIONS: Record<FamilyKind, ConstructionEntry> = {
   content: { anchor: "phonology.md#word-edges", summary: "content word" },
   number: { anchor: "numbers.md#counts", summary: "number word" },
-  x: { anchor: "interests.md#time-horizon-endings-on-met", summary: "mid-word x compound" },
+  x: { anchor: "sakes.md#time-horizon-endings-on-met", summary: "mid-word x compound" },
   spanClose: { anchor: "spans.md#shape", summary: "span close" },
   hook: { anchor: "hooks.md#beginner", summary: "hook" },
   hookCompound: { anchor: "hooks.md#hook-compounds", summary: "fused extra-noun hook compound" },
@@ -177,7 +177,7 @@ export const WORD_FAMILY_CONSTRUCTIONS: Record<FamilyKind, ConstructionEntry> = 
 export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
   span: { anchor: "spans.md#shape", summary: "span open" },
   role: { anchor: "roles.md#role-compounds", summary: "role compound" },
-  interest: { anchor: "interests.md#time-horizon-endings-on-met", summary: "interest word" },
+  sake: { anchor: "sakes.md#time-horizon-endings-on-met", summary: "sake word" },
   scope: { anchor: "predication.md#label-scope", summary: "label scope" },
   lateral: { anchor: "roles.md#viewpoint-laterals", summary: "viewpoint lateral" },
   ability: { anchor: "x-compounds.md#conversation-length", summary: "ability compound" },
@@ -200,7 +200,7 @@ type OverlayOnlyReading =
 /** Non-overlay readings (an overlay word traces `overlay.*`, not `word.reading.*`). */
 export const WORD_READING_CONSTRUCTIONS: Record<Exclude<LexReading, OverlayOnlyReading>, ConstructionEntry> = {
   ordinary: { anchor: "phonology.md#word-edges", summary: "ordinary content reading" },
-  interest: { anchor: "interests.md#time-horizon-endings-on-met", summary: "interest reading" },
+  sake: { anchor: "sakes.md#time-horizon-endings-on-met", summary: "sake reading" },
   ability: { anchor: "intention.md#ability", summary: "ability reading" },
   greeting: { anchor: "x-compounds.md#conversation-length", summary: "conversation-length bid" },
   restrictor: { anchor: "restrictors.md#beginner", summary: "restrictor" },
@@ -311,25 +311,25 @@ const SCOPE_FEATURE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "vowel.u": { anchor: "predication.md#scope-name-only", summary: "name only thu" },
 };
 
-/** Interests: each stance vowel, and the endings on it (interests.md). */
-export const INTEREST_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vowel}.${"l" | "m" | "r"}` | "emotion", ConstructionEntry> = {
-  "stance.a": { anchor: "interests.md#time-horizon-endings-on-met", summary: "met tha" },
-  "stance.u": { anchor: "interests.md#unmet-thu-detracts-from-the-interest", summary: "unmet thu" },
-  "stance.e": { anchor: "interests.md#prescription-the-ought-this-act-for-this-interest", summary: "prescription the" },
-  "stance.o": { anchor: "interests.md#motive-tho-preference-standing", summary: "motive tho" },
-  "ending.a.l": { anchor: "interests.md#time-horizon-endings-on-met", summary: "met time horizon -l" },
-  "ending.a.m": { anchor: "interests.md#time-horizon-endings-on-met", summary: "met time horizon -m" },
-  "ending.a.r": { anchor: "interests.md#time-horizon-endings-on-met", summary: "met time horizon -r" },
-  "ending.u.l": { anchor: "interests.md#unmet-thu-detracts-from-the-interest", summary: "unmet -l" },
-  "ending.u.m": { anchor: "interests.md#unmet-thu-detracts-from-the-interest", summary: "unmet -m" },
-  "ending.u.r": { anchor: "interests.md#unmet-thu-detracts-from-the-interest", summary: "unmet -r" },
-  "ending.e.l": { anchor: "interests.md#prescription-the-ought-this-act-for-this-interest", summary: "invited prescription" },
-  "ending.e.m": { anchor: "interests.md#prescription-the-ought-this-act-for-this-interest", summary: "offered prescription" },
-  "ending.e.r": { anchor: "interests.md#prescription-the-ought-this-act-for-this-interest", summary: "trial prescription" },
-  "ending.o.l": { anchor: "interests.md#motive-tho-preference-standing", summary: "motive standing -l" },
-  "ending.o.m": { anchor: "interests.md#motive-tho-preference-standing", summary: "motive standing -m" },
-  "ending.o.r": { anchor: "interests.md#motive-tho-preference-standing", summary: "motive standing -r" },
-  "emotion": { anchor: "interests.md#emotion-compose", summary: "emotion tail (locus vowel + motion ending)" },
+/** Sakes: each stance vowel, and the endings on it (sakes.md). */
+export const SAKE_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vowel}.${"l" | "m" | "r"}` | "emotion", ConstructionEntry> = {
+  "stance.a": { anchor: "sakes.md#time-horizon-endings-on-met", summary: "met tha" },
+  "stance.u": { anchor: "sakes.md#unmet-thu-detracts-from-the-sake", summary: "unmet thu" },
+  "stance.e": { anchor: "sakes.md#prescription-the-ought-this-act-for-this-sake", summary: "prescription the" },
+  "stance.o": { anchor: "sakes.md#motive-tho-preference-standing", summary: "motive tho" },
+  "ending.a.l": { anchor: "sakes.md#time-horizon-endings-on-met", summary: "met time horizon -l" },
+  "ending.a.m": { anchor: "sakes.md#time-horizon-endings-on-met", summary: "met time horizon -m" },
+  "ending.a.r": { anchor: "sakes.md#time-horizon-endings-on-met", summary: "met time horizon -r" },
+  "ending.u.l": { anchor: "sakes.md#unmet-thu-detracts-from-the-sake", summary: "unmet -l" },
+  "ending.u.m": { anchor: "sakes.md#unmet-thu-detracts-from-the-sake", summary: "unmet -m" },
+  "ending.u.r": { anchor: "sakes.md#unmet-thu-detracts-from-the-sake", summary: "unmet -r" },
+  "ending.e.l": { anchor: "sakes.md#prescription-the-ought-this-act-for-this-sake", summary: "invited prescription" },
+  "ending.e.m": { anchor: "sakes.md#prescription-the-ought-this-act-for-this-sake", summary: "offered prescription" },
+  "ending.e.r": { anchor: "sakes.md#prescription-the-ought-this-act-for-this-sake", summary: "trial prescription" },
+  "ending.o.l": { anchor: "sakes.md#motive-tho-preference-standing", summary: "motive standing -l" },
+  "ending.o.m": { anchor: "sakes.md#motive-tho-preference-standing", summary: "motive standing -m" },
+  "ending.o.r": { anchor: "sakes.md#motive-tho-preference-standing", summary: "motive standing -r" },
+  "emotion": { anchor: "sakes.md#emotion-compose", summary: "emotion tail (locus vowel + motion ending)" },
 };
 
 /** Join fence series vowel (joins.md, comparatives.md). */
@@ -487,7 +487,7 @@ export const CONSTRUCTIONS: ReadonlyMap<string, ConstructionEntry> = new Map([
   ...prefixed("reading", READING_CONSTRUCTIONS),
   ...prefixed("tone", TONE_CONSTRUCTIONS),
   ...prefixed("number", NUMBER_FEATURE_CONSTRUCTIONS),
-  ...prefixed("interest", INTEREST_FEATURE_CONSTRUCTIONS),
+  ...prefixed("sake", SAKE_FEATURE_CONSTRUCTIONS),
   ...prefixed("scope", SCOPE_FEATURE_CONSTRUCTIONS),
   ...prefixed("join", JOIN_SERIES_CONSTRUCTIONS),
   ...prefixed("force", FORCE_CONSTRUCTIONS),
@@ -520,8 +520,8 @@ export const REJECTIONS = {
   toneTarget: { anchor: "speech-moves.md#tone-marks", summary: "a tone mark goes before a word, an island open ^, or a span" },
   linkerMidSentence: { anchor: "dependents.md#sentence-linkers", summary: "a sentence linker comes only at the start of a sentence" },
   pluralOnPos: { anchor: "plurality.md#beginner", summary: "-x is unused on /w/, /h/, /th/, and /x/" },
-  interestSlot: { anchor: "interests.md#beginner", summary: "an interest form goes on /ɡ/, /th/, or /w/ only" },
-  emotionTail: { anchor: "interests.md#emotion-compose", summary: "the emotion tail goes on tha / tho / thu and ends in -r / -m / -l" },
+  sakeSlot: { anchor: "sakes.md#beginner", summary: "a sake form goes on /ɡ/, /th/, or /w/ only" },
+  emotionTail: { anchor: "sakes.md#emotion-compose", summary: "the emotion tail goes on tha / tho / thu and ends in -r / -m / -l" },
   labelScopeSlot: { anchor: "predication.md#label-scope", summary: "label scope goes on /ɡ/, /z/, /d/, /b/, /v/, or /h/ only" },
   labelScopeArrow: { anchor: "roles.md#landmark-facing", summary: "on a direction root the th seam takes only o (the landmark's own facing)" },
   pluralKindAfterUniversal: { anchor: "joins.md#universals-domains-generics", summary: "the kind word after ua / uo takes no -x" },

@@ -14,7 +14,7 @@ export {
   joinFenceGloss,
   knownLexiconRoots,
   lexiconContentRoots,
-  INTEREST_ROOTS,
+  SAKE_ROOTS,
   unknownLexiconContentRoots,
 } from "./classify.js";
 export { parseSentenceTokens, SentenceParseError } from "./sentence-parser.js";

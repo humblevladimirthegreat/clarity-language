@@ -33,7 +33,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 
 **Not the same job as:** a word that **starts** with **`x`** [keeps the same speech move going](dependents.md#continue-x). That **`x`** is not this glue in the middle.
 
-**Not the same job as:** mid-word **`th`**. The [stance](clause.md#stance-th) letter joins pieces when the second piece is **your view** rather than more of the same thing: an interest and how it stands ([interests](interests.md): `guduthal`), a label and how far it reaches ([label scope](predication.md#label-scope), such as *angry this time*), or a direction and whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals), such as *Azawan’s left*). **`x`** adds; **`th`** says from where you see it. (cue: **th** ≈ *think*)
+**Not the same job as:** mid-word **`th`**. The [stance](clause.md#stance-th) letter joins pieces when the second piece is **your view** rather than more of the same thing: a sake and how it stands ([sakes](sakes.md): `guduthal`), a label and how far it reaches ([label scope](predication.md#label-scope), such as *angry this time*), or a direction and whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals), such as *Azawan’s left*). **`x`** adds; **`th`** says from where you see it. (cue: **th** ≈ *think*)
 
 ### Words you look up, not build
 <a id="lexical-compounds"></a>
@@ -253,7 +253,7 @@ Beginner already used two roots glued with **`x`**, dictionary words with no **`
 | name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | [conversation length](#conversation-length) | *Azawan — I have time* | vowel on the name |
 | longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [ability](intention.md#ability) | *can’t sing right now* | extra vowel after the host |
 | full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zebeyexabedel`; `zuhudexaloden` ([multipart names](word-endings.md#phrasal-proper-names)) | **x** ≈ plus |
-| interest root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [interests](interests.md) | `guduthal` | **th** ≈ *think* (your view of the interest) |
+| sake root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [sakes](sakes.md) | `guduthal` | **th** ≈ *think* (your view of the sake) |
 | other root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [label scope](predication.md#label-scope) | *angry this time* | **th** ≈ *think* (your view of how far the label reaches) |
 | direction root **`th`** facing person | [viewpoint lateral](roles.md#viewpoint-laterals) | `gewezathazawan` *Azawan’s left* | **th** ≈ *think* (whose point of view) |
 
@@ -282,7 +282,7 @@ When English stacks labels left to right (*crush* then *love*; a shop name with 
 ### Which family is this?
 <a id="decision-order"></a>
 
-Use the table above. If the word has a mid-word **`th`**, it is an [interests](interests.md) word (one of the six interest roots, then a vowel, with an optional [emotion tail](interests.md#emotion-compose)), a [label scope](predication.md#label-scope) word (any other root, then a vowel), or a [viewpoint lateral](roles.md#viewpoint-laterals) (a root follows **`th`**). The root before **`th`** decides: after one of the six interest roots, letters that look like a root are always the emotion tail (`guduthamol`), never a lateral. Otherwise read both sides of the first **`x`** in this order:
+Use the table above. If the word has a mid-word **`th`**, it is an [sakes](sakes.md) word (one of the six sake roots, then a vowel, with an optional [emotion tail](sakes.md#emotion-compose)), a [label scope](predication.md#label-scope) word (any other root, then a vowel), or a [viewpoint lateral](roles.md#viewpoint-laterals) (a root follows **`th`**). The root before **`th`** decides: after one of the six sake roots, letters that look like a root are always the emotion tail (`guduthamol`), never a lateral. Otherwise read both sides of the first **`x`** in this order:
 
 - The whole word is a span close such as **`xuxul`** → a **span** is closing.
 - After the role letter: one vowel, **`x`**, one vowel, then a span ending → a **span** is opening ([spans](spans.md)).
@@ -334,7 +334,7 @@ At arrival, the other person can answer with their own bid. The **lesser** bid s
 >
 > "Alahen — one slot." (the talk lasts for one ask)
 
-**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [need](interests.md) takes **`th`** + vowel instead (`guduthal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**.
+**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [need](sakes.md) takes **`th`** + vowel instead (`guduthal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**.
 
 **Compare with:** a plain named citation with a period is the basic hello (`SELFn.`). The bid says how much conversation the person is open to.
 
@@ -534,6 +534,6 @@ Azawan-presence . Alahen-minutes
 
 - **`x`** at the start of a word (keep going): [dependents.md](dependents.md#continue-x)
 - How **`x`** sits in the word shape: [phonology.md](phonology.md#phonotactics)
-- [intention.md#ability](intention.md#ability) / [interests.md](interests.md) / [roles.md](roles.md) / [numeric-derivation.md](numeric-derivation.md)
+- [intention.md#ability](intention.md#ability) / [sakes.md](sakes.md) / [roles.md](roles.md) / [numeric-derivation.md](numeric-derivation.md)
 - Conversation length: [name **`x`** vowel](#conversation-length); bare hello: [word-endings.md](word-endings.md#greeting)
 - Extra-noun fuse on a citation: [hooks.md](hooks.md#hook-compounds)

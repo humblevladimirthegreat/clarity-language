@@ -69,11 +69,11 @@ function featureConstructions(word: LexWord): string[] {
   if (family.kind === "x") {
     const ids: string[] = [];
     if (family.numberStem) ids.push(...numberFeatures(family.numberStem));
-    if (family.xFamily === "interest" && family.stanceVowel) {
-      ids.push(`interest.stance.${family.stanceVowel}`);
+    if (family.xFamily === "sake" && family.stanceVowel) {
+      ids.push(`sake.stance.${family.stanceVowel}`);
       const horizon = family.horizon ?? word.ending;
-      if (horizon === "l" || horizon === "m" || horizon === "r") ids.push(`interest.ending.${family.stanceVowel}.${horizon}`);
-      if (family.horizon) ids.push("interest.emotion");
+      if (horizon === "l" || horizon === "m" || horizon === "r") ids.push(`sake.ending.${family.stanceVowel}.${horizon}`);
+      if (family.horizon) ids.push("sake.emotion");
     }
     if (family.xFamily === "scope" && family.stanceVowel) ids.push(`scope.vowel.${family.stanceVowel}`);
     if (family.xFamily === "span") {

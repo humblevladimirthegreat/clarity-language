@@ -164,7 +164,7 @@ Leftovers from the last retie that these checks surface today: `AGENTS.md` still
 
 ## Second retie: overlay demotion (2026-09-28)
 
-Six emotion overlays were demoted to ordinary roots (🌊 🪼 🌨️ 🍼 🫗 🕯️), so `convert-word --lexicon` gave them five-letter roots. That cascaded into 138 changed roots, including interest, TOLD, CONSENT and house-adjacent spellings. The first dry run blocked on 65 findings. Every cause below was fixed in the tooling, then the retie was reverted and reapplied from clean docs.
+Six emotion overlays were demoted to ordinary roots (🌊 🪼 🌨️ 🍼 🫗 🕯️), so `convert-word --lexicon` gave them five-letter roots. That cascaded into 138 changed roots, including sake, TOLD, CONSENT and house-adjacent spellings. The first dry run blocked on 65 findings. Every cause below was fixed in the tooling, then the retie was reverted and reapplied from clean docs.
 
 | Cause | Example | Fix |
 |-------|---------|-----|

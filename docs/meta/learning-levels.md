@@ -53,9 +53,9 @@ Read **`docs/grammar/`** only, in stage order. [why-agelan.md](../grammar/why-ag
 13. [relations.md Beginner](../grammar/relations.md#beginner)
 14. [spans.md](../grammar/spans.md#beginner)
 15. [numbers.md](../grammar/numbers.md#beginner) · [comparatives.md](../grammar/comparatives.md#beginner) · [causation.md](../grammar/causation.md#beginner)
-16. [interests.md](../grammar/interests.md#beginner) · [intention.md](../grammar/intention.md#beginner) · [knowing.md](../grammar/knowing.md#beginner) · [roles.md](../grammar/roles.md#beginner) · [x-compounds.md](../grammar/x-compounds.md#beginner) · [intention.md](../grammar/intention.md#beginner)
+16. [sakes.md](../grammar/sakes.md#beginner) · [intention.md](../grammar/intention.md#beginner) · [knowing.md](../grammar/knowing.md#beginner) · [roles.md](../grammar/roles.md#beginner) · [x-compounds.md](../grammar/x-compounds.md#beginner) · [intention.md](../grammar/intention.md#beginner)
 
-[join-across-roles.md](../grammar/join-across-roles.md) starts at Intermediate (no Beginner slot). Emotion compose is an Intermediate section in [interests.md](../grammar/interests.md#emotion-compose); universality is Advanced in [knowing.md](../grammar/knowing.md#universality). [intention.md](../grammar/intention.md) **DECISION** is Intermediate; plan / predict is Beginner. [numbers-applied.md](../grammar/numbers-applied.md) starts at Intermediate (depends on numbers). [numeric-derivation.md](../grammar/numeric-derivation.md) is Advanced-only.
+[join-across-roles.md](../grammar/join-across-roles.md) starts at Intermediate (no Beginner slot). Emotion compose is an Intermediate section in [sakes.md](../grammar/sakes.md#emotion-compose); universality is Advanced in [knowing.md](../grammar/knowing.md#universality). [intention.md](../grammar/intention.md) **DECISION** is Intermediate; plan / predict is Beginner. [numbers-applied.md](../grammar/numbers-applied.md) starts at Intermediate (depends on numbers). [numeric-derivation.md](../grammar/numeric-derivation.md) is Advanced-only.
 
 [causation.md](../grammar/causation.md), [intention.md](../grammar/intention.md), [pronouns.md](../grammar/pronouns.md), [questions.md](../grammar/questions.md) and [roles.md](../grammar/roles.md) have no Advanced stage: their former Advanced sections were applications and live on the recipe track.
 

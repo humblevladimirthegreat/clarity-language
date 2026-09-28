@@ -681,7 +681,7 @@ When an adjective or extra noun is meant for the **whole list** (*both challengi
 >
 > "Azawan's dog and cat (and possibly more)."
 
-**Compare with:** *part of* / *contents of* / *made of* / origin *from* use [of relations](relations.md#of-relations), not `egabe`. A [interests](interests.md) need on `/ɡ/` already means the speaker’s belonging (`guduthal` *my … serves competence*).
+**Compare with:** *part of* / *contents of* / *made of* / origin *from* use [of relations](relations.md#of-relations), not `egabe`. A [sakes](sakes.md) need on `/ɡ/` already means the speaker’s belonging (`guduthal` *my … serves competence*).
 
 | Join family | Use of SHARED `/ɡ/` |
 |-------------|----------------------|

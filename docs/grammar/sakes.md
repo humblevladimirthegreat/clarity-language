@@ -1,46 +1,46 @@
-# Interests (`/ɡ/` / `/th/` / `/w/`)
-<a id="interests"></a>
-<a id="interest-ascription"></a>
+# Sakes (`/ɡ/` / `/th/` / `/w/`)
+<a id="sakes"></a>
+<a id="sake-ascription"></a>
 
-An **interest** is something that is good for a person, a psychological payoff you can name (autonomy, competence, relatedness, pleasure, survival, or an unspecified interest). It means *what is in your interest*, not curiosity, and an unmet interest is a cost to name, not a lack in you. At **Beginner**, a **stance** is how you stand toward that interest on a **noun**: it **serves** the interest or **detracts from** it. **Intermediate** adds **prescription** on the clause (deontic: the agent **ought to** do this act for this interest) and **motive** (*doing for* the interest).
+A **sake** is something that is good for a person, a psychological payoff you can name (autonomy, competence, relatedness, pleasure, survival, or an unspecified sake). It means *for your sake*, not curiosity, and an unmet sake is a cost to name, not a lack in you. At **Beginner**, a **stance** is how you stand toward that sake on a **noun**: it **serves** the sake or **detracts from** it. **Intermediate** adds **prescription** on the clause (deontic: the agent **ought to** do this act for this sake) and **motive** (*doing for* the sake).
 
 ## Beginner {#beginner}
 
-Write the interest under `/ɡ/` when you talk about a **noun you keep** (how you feel about that belonging). Write it under `/th/` when you talk about the **clause**. When the noun is not yours, [personal possession](#personal-possession) shows how to point at it instead.
+Write the sake under `/ɡ/` when you talk about a **noun you keep** (how you feel about that belonging). Write it under `/th/` when you talk about the **clause**. When the noun is not yours, [personal possession](#personal-possession) shows how to point at it instead.
 
-### Interest inventory {#interest-inventory}
+### Sake inventory {#sake-inventory}
 
-Six published roots are the interests you can name, and no other root takes the interest form. Pick one row. With mid-word **`th`** and a stance vowel, that root means the interest in the English column — not the everyday object in **Same root as**.
+Six published roots are the sakes you can name, and no other root takes the sake form. Pick one row. With mid-word **`th`** and a stance vowel, that root means the sake in the English column — not the everyday object in **Same root as**.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`aba`** | autonomy interest | *autonomy* (choice, agency, self-direction) | `abal` *ballot* | 🗳️: voting is choosing for yourself |
-| **`udu`** | competence interest | *competence* (efficacy, skill, getting things to work) | `udul` *toolbox* | 🧰: the kit that gets things working |
-| **`ona`** | relatedness interest | *relatedness* (connection, belonging, care) | `onal` *knot* | 🪢: ties people together |
-| **`ozu`** | pleasure interest | *pleasure* (enjoyment, comfort, aesthetic payoff) | `ozul` *strawberry* | 🍓: sweetness you enjoy |
-| **`uho`** | survival interest | *survival* (safety, health, material sufficiency) | `uhol` *shield* | 🛡️: what keeps you safe |
-| **`uge`** | an interest without picking among the five | *unspecified interest* | `ugel` *egg* | 🥚: not yet a specific kind |
+| **`aba`** | autonomy sake | *autonomy* (choice, agency, self-direction) | `abal` *ballot* | 🗳️: voting is choosing for yourself |
+| **`udu`** | competence sake | *competence* (efficacy, skill, getting things to work) | `udul` *toolbox* | 🧰: the kit that gets things working |
+| **`ona`** | relatedness sake | *relatedness* (connection, belonging, care) | `onal` *knot* | 🪢: ties people together |
+| **`ozu`** | pleasure sake | *pleasure* (enjoyment, comfort, aesthetic payoff) | `ozul` *strawberry* | 🍓: sweetness you enjoy |
+| **`uho`** | survival sake | *survival* (safety, health, material sufficiency) | `uhol` *shield* | 🛡️: what keeps you safe |
+| **`uge`** | a sake without picking among the five | *unspecified sake* | `ugel` *egg* | 🥚: not yet a specific kind |
 
-**Compare with:** `zabal` is a *ballot*. `gabal` is ballot-like. Under `/ɡ/` with **`tha`** / **`thu`**, **`aba`** is the *autonomy* interest.
+**Compare with:** `zabal` is a *ballot*. `gabal` is ballot-like. Under `/ɡ/` with **`tha`** / **`thu`**, **`aba`** is the *autonomy* sake.
 
-**Compare with:** *when* / *always* / *never* on `/h/` is a [restrictor](restrictors.md). This page names a **interest**.
+**Compare with:** *when* / *always* / *never* on `/h/` is a [restrictor](restrictors.md). This page names a **sake**.
 
-### Met (`tha`): serves the interest
+### Met (`tha`): serves the sake
 
-When you want to say that a named belonging **serves** this interest (pays it off), write that thing as a noun, then a `/ɡ/` word: interest root, mid-word **`th`**, **`a`**, then an ending. That adjective is about the noun. The ending says the payoff's **time horizon**: whether the payoff lasts or arrives right away.
+When you want to say that a named belonging **serves** this sake (pays it off), write that thing as a noun, then a `/ɡ/` word: sake root, mid-word **`th`**, **`a`**, then an ending. That adjective is about the noun. The ending says the payoff's **time horizon**: whether the payoff lasts or arrives right away.
 
-**Not the same job as:** [ability](intention.md#ability) (*can sing*, taught later). Ability glues an activity to its vowel with **`x`**. Interest words glue a **interest** with **`th`**, and **`tha`** means *serves this interest*.
+**Not the same job as:** [ability](intention.md#ability) (*can sing*, taught later). Ability glues an activity to its vowel with **`x`**. Sake words glue a **sake** with **`th`**, and **`tha`** means *serves this sake*.
 
 ### Time horizon (endings on met) {#time-horizon-endings-on-met}
-<a id="interest-contact"></a>
+<a id="sake-contact"></a>
 
-On a *serves* word, **-l / -m / -r** say **when the payoff lands**: lasting, unstated, or immediate. Neither end is better; a good day needs both. It uses the same scale as [unmet](#interest-changeability): **-l** lasts, **-r** passes. If you do not know, use **-m**.
+On a *serves* word, **-l / -m / -r** say **when the payoff lands**: lasting, unstated, or immediate. Neither end is better; a good day needs both. It uses the same scale as [unmet](#sake-changeability): **-l** lasts, **-r** passes. If you do not know, use **-m**.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…thal` | serves the interest over time | *lasting* | **-l** ≈ lasting |
-| `…tham` | serves the interest; time horizon unstated (soft default if unknown) | *serves* | **-m** ≈ open |
-| `…thar` | serves the interest right away | *immediate* | **-r** ≈ in the moment |
+| `…thal` | serves the sake over time | *lasting* | **-l** ≈ lasting |
+| `…tham` | serves the sake; time horizon unstated (soft default if unknown) | *serves* | **-m** ≈ open |
+| `…thar` | serves the sake right away | *immediate* | **-r** ≈ in the moment |
 
 > `zebezol gonathal.`
 >
@@ -68,12 +68,12 @@ An immediate payoff is often exactly what is needed:
 >
 > "My strawberry is a pleasure right now."
 
-**Compare with:** [unmet](#interest-changeability) uses the same scale for a cost.
+**Compare with:** [unmet](#sake-changeability) uses the same scale for a cost.
 
-### Unmet (`thu`): detracts from the interest
-<a id="interest-changeability"></a>
+### Unmet (`thu`): detracts from the sake
+<a id="sake-changeability"></a>
 
-When you want to say a named belonging **detracts from** this interest, write that thing as a noun, then a `/ɡ/` word: interest root, mid-word **`th`**, **`u`**, then an ending.
+When you want to say a named belonging **detracts from** this sake, write that thing as a noun, then a `/ɡ/` word: sake root, mid-word **`th`**, **`u`**, then an ending.
 
 That ending is **changeability**: how lasting that detriment is. If you do not know, use **-m**.
 
@@ -98,27 +98,27 @@ One noun can carry both a **`tha`** word and a **`thu`** word, and the pairing r
 > "My book is a slog for now, but it builds lasting competence."
 
 ### Word shape {#word-shape}
-<a id="interest-stake"></a>
+<a id="sake-stake"></a>
 
-A interest word is a interest root with mid-word **`th`**, a stance vowel, and an ending. `/ɡ/` talks about a **noun you keep**; `/th/` talks about the **clause**. An unowned noun uses a [stimulus](#stimulus) word, with the same interest word on `/w/` immediately before it.
+A sake word is a sake root with mid-word **`th`**, a stance vowel, and an ending. `/ɡ/` talks about a **noun you keep**; `/th/` talks about the **clause**. An unowned noun uses a [stimulus](#stimulus) word, with the same sake word on `/w/` immediately before it.
 
 **-n** is ordinary [proper](word-endings.md#proper-name--n). **-l / -m / -r** follow that stance’s table.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`tha`** | the belonging pays off this interest | *serves* / *met* | **a** ≈ add (the payoff is in) |
-| **`thu`** | the belonging subtracts from this interest | *detracts from* / *unmet* | **u** ≈ undo (the interest is taken down) |
+| **`tha`** | the belonging pays off this sake | *serves* / *met* | **a** ≈ add (the payoff is in) |
+| **`thu`** | the belonging subtracts from this sake | *detracts from* / *unmet* | **u** ≈ undo (the sake is taken down) |
 
-**Intermediate** adds **`the`** (*ought this act for this interest*) and **`tho`** (*doing for this interest*). See [prescription](#interest-force) and [motive](#interest-preference).
+**Intermediate** adds **`the`** (*ought this act for this sake*) and **`tho`** (*doing for this sake*). See [prescription](#sake-force) and [motive](#sake-preference).
 
-A word with no **`th`** is not a interest word: `gabal` is still ballot-like; `hozul` is still strawberry as an adverb.
+A word with no **`th`** is not a sake word: `gabal` is still ballot-like; `hozul` is still strawberry as an adverb.
 
 ### Personal possession {#personal-possession}
 <a id="stimulus"></a>
 
-An interest on `/ɡ/` means the noun is **yours** (speaker possession) and the interest is how you stand toward that belonging. That shortcut puts gratitude and unmet on the things you already name as *my X*, so the stance is cheap to say. Ownership without an interest is still `gegabem` plus `/b/` ([joins](joins.md#scope-fence-p-join)). Someone else’s thing uses that pair, not a bare `/ɡ/` need.
+A sake on `/ɡ/` means the noun is **yours** (speaker possession) and the sake is how you stand toward that belonging. That shortcut puts gratitude and unmet on the things you already name as *my X*, so the stance is cheap to say. Ownership without a sake is still `gegabem` plus `/b/` ([joins](joins.md#scope-fence-p-join)). Someone else’s thing uses that pair, not a bare `/ɡ/` need.
 
-When the noun is **not** yours (weather, a gathering, another person’s church), write the interest on `/w/` immediately before **`gobom`**. `/w/` here is the same met / unmet word you already use on `/ɡ/`; it details the stimulus adjective. (cue: ☝️ *point*: you point at the thing; you do not hold it)
+When the noun is **not** yours (weather, a gathering, another person’s church), write the sake on `/w/` immediately before **`gobom`**. `/w/` here is the same met / unmet word you already use on `/ɡ/`; it details the stimulus adjective. (cue: ☝️ *point*: you point at the thing; you do not hold it)
 
 > `zabezum wabathur gobom.`
 >
@@ -126,11 +126,11 @@ When the noun is **not** yours (weather, a gathering, another person’s church)
 >
 > "The gathering detracts from autonomy right now (passing)."
 
-Ordinary `zobol` is still *emphasis*. Bare **`gobom`** with no `/w/` interest does not ascribe an interest. An episode (*this raining, this telling*) still uses `/th/` on the clause, possessed or not.
+Ordinary `zobol` is still *emphasis*. Bare **`gobom`** with no `/w/` sake does not ascribe a sake. An episode (*this raining, this telling*) still uses `/th/` on the clause, possessed or not.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`gobom`** | unowned noun as interest-target | *as stimulus* | `obol` *emphasis* | ☝️: you point at it rather than keep it |
+| **`gobom`** | unowned noun as sake-target | *as stimulus* | `obol` *emphasis* | ☝️: you point at it rather than keep it |
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -153,7 +153,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *competence* | `udul` | `udul` *toolbox* |
 | *relatedness* | `onal` | `onal` *knot* |
 | *survival* | `uhol` | `uhol` *shield* |
-| *interest* | `ugel` | `ugel` *egg* |
+| *sake* | `ugel` | `ugel` *egg* |
 
 #### English → Agalan {#beginner-english-to-agalan}
 
@@ -189,12 +189,12 @@ z-wind | [w-relatedness-unmet-passing | g-stimulus]
 z-fire | [w-survival-unmet-irreversible | g-stimulus]
 :::
 
-**5.** *My flashlight serves an unspecified interest in the long term.*
+**5.** *My flashlight serves an unspecified sake in the long term.*
 
 ::: details Show answer
 `zavehal gugethal.`
 
-z-flashlight | g-interest-met-lasting
+z-flashlight | g-sake-met-lasting
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
@@ -203,9 +203,9 @@ z-flashlight | g-interest-met-lasting
 
 ::: details Show answer
 
-z-tent | g-interest-met-lasting
+z-tent | g-sake-met-lasting
 
-*My tent serves an unspecified interest in the long term.*
+*My tent serves an unspecified sake in the long term.*
 :::
 
 **2.** `zavehal guduthal.`
@@ -257,7 +257,7 @@ z-fire | [w-autonomy-unmet-irreversible | g-stimulus]
 
 ### Emotion compose {#emotion-compose}
 
-When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: an [interest stance](#interests) on the situation, where the charge sits or what it points at, and how it moves. All three ride on **one word**: the interest word keeps its stance and its ending letter, then adds a **locus** (the vowels of a [hook](hooks.md#extra-noun)) and a **motion ending**. Put that word on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](#stimulus) **`gobom`** when the noun is not yours. You can then say the take without smuggling a single emotion word.
+When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: an [sake stance](#sakes) on the situation, where the charge sits or what it points at, and how it moves. All three ride on **one word**: the sake word keeps its stance and its ending letter, then adds a **locus** (the vowels of a [hook](hooks.md#extra-noun)) and a **motion ending**. Put that word on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](#stimulus) **`gobom`** when the noun is not yours. You can then say the take without smuggling a single emotion word.
 
 > `zezebel wuduthuraor gobom.`
 >
@@ -265,7 +265,7 @@ When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgme
 >
 > "Anxious about the dialogue:" competence at stake for now; it hangs over the room; it surges.
 
-Build it from the plain interest word: `wuduthur` (competence, unmet, passing) + **`ao`** (*over*: CIRCUM) + **-r** (SURGING) = `wuduthuraor`. The old ending letter (**-r** here) stays in the middle of the word and keeps its meaning.
+Build it from the plain sake word: `wuduthur` (competence, unmet, passing) + **`ao`** (*over*: CIRCUM) + **-r** (SURGING) = `wuduthuraor`. The old ending letter (**-r** here) stays in the middle of the word and keeps its meaning.
 
 The locus uses the hook vowels you already know. A **placement** locus says whose feeling it is and where it sits:
 
@@ -305,7 +305,7 @@ The motion ending says how the feeling moves. Affect is **water**:
 
 Surging and still are information, not verdicts. Strong but steady anger is flowing; so is calm contentment. Surging can be a cue to ground; still can be a cue to rest, or to re-engage gently.
 
-The tail goes on met **`tha`**, motive **`tho`**, and unmet **`thu`** words. Prescription **`the`** is advice, not a feeling, so it takes no tail. A word with no tail (`wuduthur`) is an ordinary interest word.
+The tail goes on met **`tha`**, motive **`tho`**, and unmet **`thu`** words. Prescription **`the`** is advice, not a feeling, so it takes no tail. A word with no tail (`wuduthur`) is an ordinary sake word.
 
 | Agalan | English |
 |---------|---------|
@@ -323,26 +323,26 @@ Raw feeling (contacting a sensation without judgment) may go unlabeled. Full com
 
 **Compare with:** *could be* uses [MAY](knowing.md#may) (`ovo`). CAUGHT from a `/b/` says whose feeling it is; *because of* is a causal claim with [`geram`](causation.md#because). The stimulus says what the feeling is **about**; a direction `/b/` says what it is **aimed at**.
 
-### Prescription (`the`): ought this act for this interest
-<a id="interest-force"></a>
+### Prescription (`the`): ought this act for this sake
+<a id="sake-force"></a>
 
-When English puts *should* / *ought to* on the **doing** for a named interest (*Ahaben ought to sing to serve survival*), put `/th/` on the clause: interest root, mid-word **`th`**, **`e`**, then an ending. The **host verb** names the act that ought to count toward the interest. Prescription **`the`** gives the clause **deontic** force: you are stating obligation, not reporting that the act is already happening.
+When English puts *should* / *ought to* on the **doing** for a named sake (*Ahaben ought to sing to serve survival*), put `/th/` on the clause: sake root, mid-word **`th`**, **`e`**, then an ending. The **host verb** names the act that ought to count toward the sake. Prescription **`the`** gives the clause **deontic** force: you are stating obligation, not reporting that the act is already happening.
 
-That ending says why you think a move is welcome. Use **-l** when the person invited this move, explicitly or through a clear standing invitation. Use **-m** for an unsolicited offer meant to serve the interest. Use **-r** for a trial: the move is worth trying to see whether it serves the interest, not a settled recommendation. These endings describe the move's warrant and aim, not whether it succeeds. How firmly you put the act on the addressee stays on `/y/` (**`yel`** / **`yem`**, **`yal`** / **`yam`**). If no such warrant applies, drop **`the`**.
+That ending says why you think a move is welcome. Use **-l** when the person invited this move, explicitly or through a clear standing invitation. Use **-m** for an unsolicited offer meant to serve the sake. Use **-r** for a trial: the move is worth trying to see whether it serves the sake, not a settled recommendation. These endings describe the move's warrant and aim, not whether it succeeds. How firmly you put the act on the addressee stays on `/y/` (**`yel`** / **`yem`**, **`yal`** / **`yam`**). If no such warrant applies, drop **`the`**.
 
 **Unlike** [MAY](knowing.md#may) (`thovom`): the host verb stays ordinary content there and the event is still *could be*. With **`the`**, the same host verb is the **ought-to** act, not a simultaneous performance claim.
 
-**Compare with:** [command](speech-moves.md#speech-act-beginner) **`yel`** instructs an act outright without naming the interest or why a move is wanted. **`the`** is interest-linked deontic: *ought to advance this interest*, with that warrant on the ending.
+**Compare with:** [command](speech-moves.md#speech-act-beginner) **`yel`** instructs an act outright without naming the sake or why a move is wanted. **`the`** is sake-linked deontic: *ought to advance this sake*, with that warrant on the ending.
 
-**Compare with:** a [forecast](knowing.md#forecast) (a channel plus `bral`) when English *should* is really a **forecast** about what will pay off the interest, or when you want both *is doing* and a norm on that doing — not prescription deontic. For a plain performance report, drop **`the`** and assert the verb alone.
+**Compare with:** a [forecast](knowing.md#forecast) (a channel plus `bral`) when English *should* is really a **forecast** about what will pay off the sake, or when you want both *is doing* and a norm on that doing — not prescription deontic. For a plain performance report, drop **`the`** and assert the verb alone.
 
-**Compare with:** [motive](#interest-preference) **`tho`** plus a [request](speech-moves.md#speech-act) **`yem`** when the speaker wants **their own** interest served. **`the`** is advice about the interest named on this word.
+**Compare with:** [motive](#sake-preference) **`tho`** plus a [request](speech-moves.md#speech-act) **`yem`** when the speaker wants **their own** sake served. **`the`** is advice about the sake named on this word.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…thel` | the person invited this kind of move | *invited* | **-l** ≈ locked to their word |
-| `…them` | an unsolicited offer meant to serve the interest | *offered* | **-m** ≈ open offer |
-| `…ther` | a move worth trying, to see whether it serves the interest | *worth a try* | **-r** ≈ for now (a trial run) |
+| `…them` | an unsolicited offer meant to serve the sake | *offered* | **-m** ≈ open offer |
+| `…ther` | a move worth trying, to see whether it serves the sake | *worth a try* | **-r** ≈ for now (a trial run) |
 
 > `zazawan vezebel thonathem.`
 >
@@ -362,7 +362,7 @@ That ending says why you think a move is welcome. Use **-l** when the person inv
 >
 > "Alahen ought to try bowing to serve relatedness (worth a try)."
 
-A move meant to **prevent** harm to the interest is a *so that … not* dependent ([so that](dependents.md#so-that)): **`hagom`** + **`burl`**, then the outcome to keep off.
+A move meant to **prevent** harm to the sake is a *so that … not* dependent ([so that](dependents.md#so-that)): **`hagom`** + **`burl`**, then the outcome to keep off.
 
 > `zalahen vabayel thonathem hagom burl zazawan vadebal.`
 >
@@ -371,9 +371,9 @@ A move meant to **prevent** harm to the interest is a *so that … not* dependen
 > "Alahen ought to bow for relatedness, so that Azawan does not leave."
 
 ### Motive (`tho`): preference standing
-<a id="interest-preference"></a>
+<a id="sake-preference"></a>
 
-English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the interest root, mid-word **`th`**, **`o`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or is only a working reason for now. If you do not know the standing, use **-m**. **-n** is ordinary [proper](word-endings.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…thom`** plus **`hual`**).
+English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the sake root, mid-word **`th`**, **`o`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or is only a working reason for now. If you do not know the standing, use **-m**. **-n** is ordinary [proper](word-endings.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…thom`** plus **`hual`**).
 
 > `zazawan vezebel thonathom.`
 >
@@ -381,7 +381,7 @@ English *have to* / *need to* / *doing this for…* often names a **motive**: wh
 >
 > "Azawan tells for relatedness (internal reason)."
 
-**Not the same job as:** prescription **`the`** (*this act ought* to serve this interest). **`tho`** describes *doing for this interest*. On `/ɡ/`, the same stance is **your** noun’s purpose (*my gift for relatedness*). *Walks so that Alahen sits* is an intended **event** ([so that](dependents.md#so-that), **`hagom`**), not an interest. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`hogem`). *Tells on behalf of Alahen* is [proxy](relations.md#proxy) (`hadem`).
+**Not the same job as:** prescription **`the`** (*this act ought* to serve this sake). **`tho`** describes *doing for this sake*. On `/ɡ/`, the same stance is **your** noun’s purpose (*my gift for relatedness*). *Walks so that Alahen sits* is an intended **event** ([so that](dependents.md#so-that), **`hagom`**), not a sake. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`hogem`). *Tells on behalf of Alahen* is [proxy](relations.md#proxy) (`hadem`).
 
 A reason held **to keep a cost off** is a *so that … not* dependent ([so that](dependents.md#so-that), **`hagom burl`**), as with prescription.
 
@@ -400,9 +400,9 @@ Beginner already used *serves* and *detracts from*. Intermediate adds *ought thi
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`tha`** | [time horizon](#time-horizon-endings-on-met) endings | *serves* / *met* | **a** ≈ add |
-| **`the`** | [invited / offered / trial](#interest-force) endings | *ought this act for this interest* | **e** ≈ order (instruct / ought) |
-| **`tho`** | [preference standing](#interest-preference) endings | *doing for this interest* | **o** ≈ one (one interest as the reason) |
-| **`thu`** | [changeability](#interest-changeability) endings | *detracts from* / *unmet* | **u** ≈ undo |
+| **`the`** | [invited / offered / trial](#sake-force) endings | *ought this act for this sake* | **e** ≈ order (instruct / ought) |
+| **`tho`** | [preference standing](#sake-preference) endings | *doing for this sake* | **o** ≈ one (one sake as the reason) |
+| **`thu`** | [changeability](#sake-changeability) endings | *detracts from* / *unmet* | **u** ≈ undo |
 
 ### Attachment sites
 
@@ -410,17 +410,17 @@ Beginner already attached `/ɡ/` after a noun and `/th/` on the clause for met a
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `g…tha…` after a noun | praise: **your** noun serves the interest | *my gift (serves relatedness)* (`gonatha…`) |
-| `g…thu…` after a noun | criticism: **your** noun detracts from the interest | *my book (detracts from competence)* (`guduthu…`) |
-| `g…tho…` after a noun | **your** noun’s purpose is this interest | *my gift for relatedness* (`gonatho…`) |
-| `/w/` interest + `gobom` | the same stances on a noun that is **not** yours | *the gathering (detracts from autonomy)* (`wabathu… gobom`) |
-| `gl-` + interest word | the same adjective before the **belonging** | `glonathal zebezol` |
-| `th…tha…` on the clause | the event serves the interest | *tells: competence is met* (`thudutha…`) |
-| `th…the…` on the clause | deontic prescription | *ought … for this interest* (`thonathe…`); ending = [invited / offered / trial](#interest-force) |
+| `g…tha…` after a noun | praise: **your** noun serves the sake | *my gift (serves relatedness)* (`gonatha…`) |
+| `g…thu…` after a noun | criticism: **your** noun detracts from the sake | *my book (detracts from competence)* (`guduthu…`) |
+| `g…tho…` after a noun | **your** noun’s purpose is this sake | *my gift for relatedness* (`gonatho…`) |
+| `/w/` sake + `gobom` | the same stances on a noun that is **not** yours | *the gathering (detracts from autonomy)* (`wabathu… gobom`) |
+| `gl-` + sake word | the same adjective before the **belonging** | `glonathal zebezol` |
+| `th…tha…` on the clause | the event serves the sake | *tells: competence is met* (`thudutha…`) |
+| `th…the…` on the clause | deontic prescription | *ought … for this sake* (`thonathe…`); ending = [invited / offered / trial](#sake-force) |
 | `th…tho…` on the clause | motive | *Azawan … (for relatedness)* (`thonatho…`) |
-| `/w/` before an interest `/ɡ/` | extra detail on that adjective | *very relatedness-serving* |
+| `/w/` before a sake `/ɡ/` | extra detail on that adjective | *very relatedness-serving* |
 
-On **`the`**, use **-l** for an invitation, **-m** for an offer, and **-r** for a trial. Prefer **-m** on **`thu` / `tho`** when that table’s dimension is unclear. Several interests are several `/ɡ/` or `/th/` words (`guduthal gonathal`), not stacked `th`-additions on one interest. The **host** noun or verb carries concrete vs abstract sense. `/w/` before a **interest** `/ɡ/` grades that adjective; `/w/` immediately before **`gobom`** is the interest.
+On **`the`**, use **-l** for an invitation, **-m** for an offer, and **-r** for a trial. Prefer **-m** on **`thu` / `tho`** when that table’s dimension is unclear. Several sakes are several `/ɡ/` or `/th/` words (`guduthal gonathal`), not stacked `th`-additions on one sake. The **host** noun or verb carries concrete vs abstract sense. `/w/` before a **sake** `/ɡ/` grades that adjective; `/w/` immediately before **`gobom`** is the sake.
 
 > `zazawan vezebel thuduthal thonathom.`
 >
@@ -430,7 +430,7 @@ On **`the`**, use **-l** for an invitation, **-m** for an offer, and **-r** for 
 
 ### Thanks and sorry {#thanks-sorry}
 
-Agalan has no set phrase for *thank you*. Say that what the other person did **met your interest**: a lone clause `/th/` met word is a whole sentence, and saying it to the one who acted is the thanks. Pick the interest that was actually served; the ending says how long the payoff lasts ([endings on met](#time-horizon-endings-on-met)). (cue: thanks = *that met my interest*)
+Agalan has no set phrase for *thank you*. Say that what the other person did **met your sake**: a lone clause `/th/` met word is a whole sentence, and saying it to the one who acted is the thanks. Pick the sake that was actually served; the ending says how long the payoff lasts ([endings on met](#time-horizon-endings-on-met)). (cue: thanks = *that met my sake*)
 
 > `thonatham.`
 >
@@ -450,7 +450,7 @@ Agalan has no set phrase for *thank you*. Say that what the other person did **m
 | `…tham` | the help, horizon unstated (default) | *thank you* |
 | `…thar` | the help landed right when needed | *thanks, that got me through* |
 
-*Sorry* is about **their** interest, not yours. A lone unmet word would say *my* interest went unmet, so name whose interest in `/b/` right after it. The ending is the same [changeability](#interest-changeability) as on any unmet word, so it says how serious the harm is. (cue: sorry = *that detracted from your interest*)
+*Sorry* is about **their** sake, not yours. A lone unmet word would say *my* sake went unmet, so name whose sake in `/b/` right after it. The ending is the same [changeability](#sake-changeability) as on any unmet word, so it says how serious the harm is. (cue: sorry = *that detracted from your sake*)
 
 > `thonathum bohen.`
 >
@@ -466,7 +466,7 @@ Agalan has no set phrase for *thank you*. Say that what the other person did **m
 
 The `/b/` can name anyone: `thonathum balahen.` owns a harm to Alahen, even when you are telling someone else.
 
-**Compare with:** a met word with a `/b/` person (`thonatham balahen.`) says the act met **Alahen's** interest: *Alahen appreciated it*, not your thanks.
+**Compare with:** a met word with a `/b/` person (`thonatham balahen.`) says the act met **Alahen's** sake: *Alahen appreciated it*, not your thanks.
 
 ### Hopefully and other attitudes {#speaker-attitude}
 
@@ -529,7 +529,7 @@ The negatives use the root **`ere`** (⛔ *no entry*) with the same endings.
 
 To **ask** for permission, put the clause under [ask](questions.md#question): `yom zSELFn vehahel thegam.` (*May I sit?*). Grant it with [**`yaol.`**](questions.md#polar-stance) (*go ahead*).
 
-**Compare with:** [prescription](#interest-force) **`the`** says the act *ought* to serve an interest; permission only says the act is *allowed*. [Ability](intention.md#incapability) says someone *can* do it; permission says whether they *may*.
+**Compare with:** [prescription](#sake-force) **`the`** says the act *ought* to serve a sake; permission only says the act is *allowed*. [Ability](intention.md#incapability) says someone *can* do it; permission says whether they *may*.
 
 ### Consent (`thuxegal` / `thuxegam` / `thuxegar`) {#consent}
 

@@ -131,7 +131,7 @@ Path items joined with `·` are **co-located**, not ordered. Do **not** recycle 
 | 8 | `pronouns.md` · `plurality.md` |
 | 12 | `hooks.md` · `restrictors.md` |
 | 15 | `numbers.md` · `numbers-applied.md` · `comparatives.md` · `causation.md` |
-| 16 | `interests.md` · `intention.md` · `knowing.md` · `roles.md` · `x-compounds.md` |
+| 16 | `sakes.md` · `intention.md` · `knowing.md` · `roles.md` · `x-compounds.md` |
 
 Later path numbers **may** recycle both siblings (e.g. joins Beginner may use pronouns **and** plurality Beginner).
 
@@ -196,9 +196,9 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `causation.md` | Beginner | a greenhouse |
 | `causation.md` | Intermediate | a dam control room |
 | `say-reasons.md` | Reasons and conditions | a chemistry lab |
-| `interests.md` | Beginner | a shelter tent |
-| `interests.md` | Intermediate | a monastery |
-| `interests.md` | Advanced | unset |
+| `sakes.md` | Beginner | a shelter tent |
+| `sakes.md` | Intermediate | a monastery |
+| `sakes.md` | Advanced | unset |
 | `intention.md` | Beginner | a climbing wall |
 | `intention.md` | Intermediate | a locked vault |
 | `knowing.md` | Beginner | a café patio |
@@ -282,8 +282,8 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 15 | `numbers.md` | **exists** | spelled counts (**`grarel`**) and ordinals (**`gredul`**) with the digit syllables; digitless **`gral`** (*more than one*); no shorthand (Intermediate) with **-x** on the noun | No `/v/` `/h/` `/y/` `/x/` number uses, exponents, ranges, percent, measures (later). **-x** from plurality is recycle |
 | 15 | `comparatives.md` | **exists** | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; single-item superlative; equative **`ae`** | **Needs:** joins Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
 | 15 | `causation.md` | **exists** | Two-place poles: outcome host + `/b/` condition; `/th/` event vs `/ɡ/` noun; *if* **`odo`** vs *only if* **`ebo`**; no cause-arrow word | **Needs:** core extra nouns + dependents **`darl`**. *Because* / **`IFF`** / **CAUSE** are Intermediate — do not use |
-| 16 | `interests.md` | **exists** | Six needs; `/ɡ/` on a belonging vs `/th/` on the clause; **`tha`** met + contact **-l / -m / -r**; **`thu`** unmet changeability; unowned **`gobom`** + `/w/` need | **Not** prescription **`the`** or motive **`tho`** (Intermediate). Not ability (non-interest + `x` vowel). Not MAY. Not bare need-as-topic |
-| 16 | `intention.md` | **exists** | PLAN and host ability contrasts: **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (interest roots). Not role compounds (vowel *left* of `x`). Not conversation length (named citation or `/y/`) |
+| 16 | `sakes.md` | **exists** | Six needs; `/ɡ/` on a belonging vs `/th/` on the clause; **`tha`** met + contact **-l / -m / -r**; **`thu`** unmet changeability; unowned **`gobom`** + `/w/` need | **Not** prescription **`the`** or motive **`tho`** (Intermediate). Not ability (non-sake + `x` vowel). Not MAY. Not bare need-as-topic |
+| 16 | `intention.md` | **exists** | PLAN and host ability contrasts: **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (sake roots). Not role compounds (vowel *left* of `x`). Not conversation length (named citation or `/y/`) |
 | 16 | `knowing.md` | **exists** | **MAY** **`ovo`** + 2a holds (**`thovom`** default; **-l** find out; **-r** who knows) | Not evidentiality / NOTIONAL (Intermediate). Not **`yom`** (core Intermediate) unless you only recycle **`yol`** from core/questions Beginner |
 | 16 | `roles.md` | **exists** | Role compounds **`a`/`e`/`u`/`o` x ROOT`** (agent / place / patient / recipient; **`o`** = reltum on a relation); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
 | 16 | `x-compounds.md` | **exists** | Productive **`x`** vs two words vs dictionary compound; look up listed stems (`ebedalahaza` / `onalebeza`); do not coin them. Live **`x`** from parts (not a pre-joined bank row) | Not parser-family inventory as drills; not coining new dictionary compounds. Greeting bid is Intermediate |
@@ -327,8 +327,8 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 15 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zeyen`, `zahen`, **`zomen`** Mine vs performance **`zamun`**, **`zolon`** Everyone, …) | **`amu`** allowed on performance items |
 | 15 | `causation.md` | Intermediate | **exists** | Following-sentence **`barl`**; **`era`** *because* / **`ewu`** *iff*; asserted necessary **`thebom theram`**; **CAUSE** **`ege`** **-m** | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
 | 15 | `causation.md` | Advanced | — | no Advanced stage | |
-| 16 | `interests.md` | Intermediate | **exists** | Prescription **`the`** + force; motive **`tho`** + preference standing; which ending table; attachment sites | |
-| 16 | `interests.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
+| 16 | `sakes.md` | Intermediate | **exists** | Prescription **`the`** + force; motive **`tho`** + preference standing; which ending table; attachment sites | |
+| 16 | `sakes.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
 | 16 | `knowing.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`ove`** + play holds; **RESIDUE** / **FORMER**; MAY vs nearby jobs | |
 | 16 | `knowing.md` | Advanced | **exists** | Mood on one adjective; dated channel; universality (`ogo` / `eho` / …) | One checkpoint for the whole stage |
 | 16 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR th ANCHOR`**; bare arrow roots = compass; gravity **`abaha`/`adahe`**; name/listener anchor | Prefer `…thazawan` over silent speaker default. **`ohe`/`amu`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
@@ -337,7 +337,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 17 | `join-across-roles.md` | Intermediate | **exists** | Verb-phrase and clause joins (`vam`, `xam`, sequence `xan`); join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 17) |
 | 17 | `intention.md` | Intermediate | **exists** | **DECISION** **`eha`** changeability; forecast = evidential + `bral` vs PLAN; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
 | 17 | `intention.md` | Advanced | — | no Advanced stage | |
-| 17 | `interests.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value) | Recycle values Beginner. |
+| 17 | `sakes.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value) | Recycle values Beginner. |
 | 18 | `numeric-derivation.md` | Advanced | **exists** | `ROOT l NUM` as the stage teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
 
 ## Leak index
@@ -369,18 +369,18 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | SHARED scale comparatives | `comparatives.md` Beginner |
 | Causal poles *if* / *only if* (`thodom` / `thebom`) | `causation.md` Beginner |
 | **CAUSE** **`ege`** / **`thegem`** | `causation.md` Intermediate |
-| Value **`tha`/`thu`** on **interest** roots | `interests.md` Beginner |
+| Value **`tha`/`thu`** on **sake** roots | `sakes.md` Beginner |
 | Ability **`xa`/`xe`/`xo`/`xu`** on **non-need** hosts | `intention.md` Beginner |
 | **MAY** **`thovom`** | `knowing.md` Beginner |
 | Role **`ax`/`ux`/`ox` ROOT** | `roles.md` Beginner |
-| Prescription **`the`** / motive **`tho`** (values) | `interests.md` Intermediate |
+| Prescription **`the`** / motive **`tho`** (values) | `sakes.md` Intermediate |
 | Evidentiality / NOTIONAL / RESIDUE / FORMER | `knowing.md` Intermediate |
 | Viewpoint laterals | `roles.md` Intermediate |
 | Measure phrases / ranges / percent | `numbers-applied.md` Intermediate |
 | Join-act **`van`** / join-relation **`gan`** | `join-across-roles.md` Intermediate |
 | **PLAN** | `intention.md` Beginner |
 | **DECISION** | `intention.md` Intermediate |
-| Emotion compose | `interests.md` Intermediate |
+| Emotion compose | `sakes.md` Intermediate |
 | Numbered alternatives | `numbers-applied.md` Intermediate |
 | Judgment **Mine** **`zomen`** | `comparatives.md` Advanced |
 | `ROOT l NUM` derivation | `numeric-derivation.md` Advanced |

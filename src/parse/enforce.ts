@@ -56,7 +56,7 @@ export class ConstructionError extends SentenceParseError {
 }
 
 const NO_PLURAL_POS = new Set(["w", "h", "th", "x"]);
-const INTEREST_POS = new Set(["g", "th", "w"]);
+const SAKE_POS = new Set(["g", "th", "w"]);
 /** Label scope goes on content slots (predication.md#label-scope). */
 const SCOPE_POS = new Set(["g", "z", "d", "b", "v", "h"]);
 const RANK_SERIES = new Set(["e", "oe", "eo", "ue", "ae"]);
@@ -163,8 +163,8 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   if (family.kind === "joinMarker" && family.series === "eo" && !(word.pos && PHRASE_POS.has(word.pos))) {
     throw new ConstructionError("reversedSequenceSlot", word.raw);
   }
-  if (family.kind === "x" && family.xFamily === "interest") {
-    if (word.pos && !INTEREST_POS.has(word.pos)) throw new ConstructionError("interestSlot", word.raw);
+  if (family.kind === "x" && family.xFamily === "sake") {
+    if (word.pos && !SAKE_POS.has(word.pos)) throw new ConstructionError("sakeSlot", word.raw);
     if (family.horizon && (family.stanceVowel === "e" || word.ending === "n")) {
       throw new ConstructionError("emotionTail", word.raw);
     }

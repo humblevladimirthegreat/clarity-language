@@ -15,49 +15,49 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | Label | Gloss | Example | Teach |
 |-------|-------|---------|-------|
 | **ABIL** | Hostless *can* / *can’t* (no single verb) | `thezexel` | [Intention](intention.md#ability-fallback) |
-| **AIMED** | Emotion locus: aimed at a target | `wonathumol` | [Interests](interests.md#emotion-compose) |
+| **AIMED** | Emotion locus: aimed at a target | `wonathumol` | [Sakes](sakes.md#emotion-compose) |
 | **ASIDE** | Span TYPE **e**: an aside | `th(hazaham)` | [Spans](spans.md#asides) |
 | **ATTEMPT** | Try mood: committed / unstated / trial run | `thudom` | [Intention](intention.md#try) |
-| **CAUGHT** | Emotion locus: picked up from others, not mine | `wonathumuom` | [Interests](interests.md#emotion-compose) |
+| **CAUGHT** | Emotion locus: picked up from others, not mine | `wonathumuom` | [Sakes](sakes.md#emotion-compose) |
 | **CAUSE** | Mechanism-framing mood (*make X do*) | `thegem` | [Causation](causation.md#cause) |
-| **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuduthuraor` | [Interests](interests.md#emotion-compose) |
+| **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuduthuraor` | [Sakes](sakes.md#emotion-compose) |
 | **CITE** | Span TYPE **a**: a citation | `d[azawan]` | [Spans](spans.md#shape) |
-| **COLLECTIVE** | Emotion locus: the group's feeling, shared as a member | `wonathumuar` | [Interests](interests.md#emotion-compose) |
+| **COLLECTIVE** | Emotion locus: the group's feeling, shared as a member | `wonathumuar` | [Sakes](sakes.md#emotion-compose) |
 | **COMMON** | Universality: usual, exceptions expected | `thogol` | [Knowing](knowing.md#universality) |
-| **CONSENT** | Consent of the affected party | `thuxegam` | [Interests](interests.md#consent) |
+| **CONSENT** | Consent of the affected party | `thuxegam` | [Sakes](sakes.md#consent) |
 | **DECISION** | Pick-firmness mood | `theham` | [Intention](intention.md#decision) |
 | **FELT** | Evidential: gut / body knowing | `thahum` | [Knowing](knowing.md#evidentiality) |
-| **FLOWING** | Emotion motion: a current you can ride | `wonathumem` | [Interests](interests.md#emotion-compose) |
-| **FORBID** | Permission, negative | `therel` | [Interests](interests.md#permission) |
+| **FLOWING** | Emotion motion: a current you can ride | `wonathumem` | [Sakes](sakes.md#emotion-compose) |
+| **FORBID** | Permission, negative | `therel` | [Sakes](sakes.md#permission) |
 | **FORMAL** | Universality: definition / math / proof | `thazal` | [Knowing](knowing.md#universality) |
 | **FORMER** | Episode standing: not the climate claimed now | `thunem` | [Knowing](knowing.md#residue) |
 | **INFERRED** | Evidential: reasoned from clues | `thevem` | [Knowing](knowing.md#evidentiality) |
-| **INTERNAL** | Emotion locus: mine, held inside | `guduthamar` | [Interests](interests.md#emotion-compose) |
+| **INTERNAL** | Emotion locus: mine, held inside | `guduthamar` | [Sakes](sakes.md#emotion-compose) |
 | **LIVE** | Evidential: concurrent / in-view observation | `thodum` | [Knowing](knowing.md#evidentiality) |
 | **MAY** | Potential mood (*could be*; find out / default / who knows) | `thovom` | [Knowing](knowing.md#may) |
 | **MENTION** | Span TYPE **o**: a mention | `z{odoga}` | [Spans](spans.md#shape) |
 | **NAME** | A package titled with **-n** | `zebewel zabedel zan.` | [Joins](joins.md#named-list) |
 | **NATURAL** | Universality: natural necessity | `thalul` | [Knowing](knowing.md#universality) |
 | **NOTIONAL** | As-if / pretense mood | `thovem` | [Knowing](knowing.md#notional) |
-| **ON-BEHALF** | Emotion locus: felt for someone's sake | `wonathumem` | [Interests](interests.md#emotion-compose) |
+| **ON-BEHALF** | Emotion locus: felt for someone's sake | `wonathumem` | [Sakes](sakes.md#emotion-compose) |
 | **OPAQUE** | Span TYPE **u**: foreign or opaque writing | <code>d&lt;kimchi&gt;</code> | [Spans](spans.md#loans) |
 | **PATTERN** | Evidential: from regularity | `thabem` | [Knowing](knowing.md#evidentiality) |
-| **PERMIT** | Permission, positive | `thegal` | [Interests](interests.md#permission) |
+| **PERMIT** | Permission, positive | `thegal` | [Sakes](sakes.md#permission) |
 | **PLAN** | Intention-framing mood | `thumam` | [Intention](intention.md#plan-predict) |
-| **REACHING** | Emotion locus: reaching to change a target | `wonathumoer` | [Interests](interests.md#emotion-compose) |
+| **REACHING** | Emotion locus: reaching to change a target | `wonathumoer` | [Sakes](sakes.md#emotion-compose) |
 | **RECORDED** | Evidential: documented / playback / scheduled | `therum` | [Knowing](knowing.md#evidentiality) |
 | **RESIDUE** | Episode standing: outcome still on the current tally | `thamom` | [Knowing](knowing.md#residue) |
-| **RESISTING** | Emotion locus: pushing against a target | `wonathumuer` | [Interests](interests.md#emotion-compose) |
-| **ROLE** | Emotion locus: felt in a capacity, not personally | `wonathumael` | [Interests](interests.md#emotion-compose) |
+| **RESISTING** | Emotion locus: pushing against a target | `wonathumuer` | [Sakes](sakes.md#emotion-compose) |
+| **ROLE** | Emotion locus: felt in a capacity, not personally | `wonathumael` | [Sakes](sakes.md#emotion-compose) |
 | **RULE** | Universality: holds inside a named frame | `thebel` | [Knowing](knowing.md#universality) |
 | **SAME** | Identity copula | `gogal` | [Predication](predication.md#identity) |
 | **SCOPE** | Scope island `^ … ^` | `^ hegewem zodogal geredal ^` | [Spans](spans.md#scope-islands) |
-| **STILL** | Emotion motion: muted, faint, numb | `wonathumol` | [Interests](interests.md#emotion-compose) |
+| **STILL** | Emotion motion: muted, faint, numb | `wonathumol` | [Sakes](sakes.md#emotion-compose) |
 | **STORY** | Evidential: narrative / lore | `thazom` | [Knowing](knowing.md#evidentiality) |
-| **SURGING** | Emotion motion: big, spiking, in waves | `wuduthuraor` | [Interests](interests.md#emotion-compose) |
+| **SURGING** | Emotion motion: big, spiking, in waves | `wuduthuraor` | [Sakes](sakes.md#emotion-compose) |
 | **TOLD** | Evidential: hearsay | `themam` | [Knowing](knowing.md#evidentiality) |
 | **UNCOUNTERED** | Universality: no counterexample comes to mind | `thehol` | [Knowing](knowing.md#universality) |
-| **UNPLACED** | Emotion locus: can't place where it comes from | `wuduthurul` | [Interests](interests.md#emotion-compose) |
+| **UNPLACED** | Emotion locus: can't place where it comes from | `wuduthurul` | [Sakes](sakes.md#emotion-compose) |
 | **WITNESSED** | Evidential: firsthand memory (reconstructive) | `thunom` | [Knowing](knowing.md#evidentiality) |
 
 **Compare with:** [quasi](#quasi) (`ROOTl-e-`) is not **NOTIONAL**.
@@ -115,7 +115,7 @@ Detail on the following adjective, not the whole clause.
 
 [Clause](clause.md)
 
-**Compare with:** a [restrictor](#restrictor) says when the host applies. Default `/w/` on interests is [interests](#interests).
+**Compare with:** a [restrictor](#restrictor) says when the host applies. Default `/w/` on sakes is [sakes](#sakes).
 
 ### Adverb
 
@@ -149,7 +149,7 @@ Complex `/h/` + `/b/` (**`hahehom`**) *as for X*.
 
 [People, things and places](say-people-places.md#as-for)
 
-**Compare with:** interest [met](#met-unmet-motive-prescription-interests) / unmet on `/ɡ/` is how an interest stands toward a noun, not *as for*.
+**Compare with:** sake [met](#met-unmet-motive-prescription-sakes) / unmet on `/ɡ/` is how a sake stands toward a noun, not *as for*.
 
 ### Aside
 
@@ -192,15 +192,15 @@ Clause content after the left-edge `/y/` cluster.
 <a id="wording-general-history"></a>
 <a id="bound-endorse-invite"></a>
 
-Prescription endings on interest **`the`**: why a move is welcome. **-l** invited, **-m** offered to serve the interest, **-r** a trial, worth trying to see whether it serves the interest.
+Prescription endings on sake **`the`**: why a move is welcome. **-l** invited, **-m** offered to serve the sake, **-r** a trial, worth trying to see whether it serves the sake.
 
-[Interests](interests.md#interest-force)
+[Sakes](sakes.md#sake-force)
 
 ### Changeability
 
 Endings on unmet **`thu`**, **DECISION**, and ability *can’t*.
 
-[Interests](interests.md#interest-changeability), [Intention](intention.md#decision)
+[Sakes](sakes.md#sake-changeability), [Intention](intention.md#decision)
 
 ### Citation / prefix-less citation
 
@@ -384,7 +384,7 @@ Hosted **`homem`** / **`gomem`** plus model `/b/` (*like* a duck / *like* Azawan
 
 ### Exchange (*for*)
 
-Hosted **`hogem`** / **`gogem`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not interests motive **`tho`**, not intended-outcome [**`hagom`**](dependents.md#so-that).
+Hosted **`hogem`** / **`gogem`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not sakes motive **`tho`**, not intended-outcome [**`hagom`**](dependents.md#so-that).
 
 [Relations](relations.md#exchange)
 
@@ -445,9 +445,9 @@ A named citation is a hello (`azawan.`). Add mid-word **`x`** plus **`a`** / **`
 
 ### Host
 
-Content root an interest `th`-stance, an ability `x`-stance, or a numeric-derivation join attaches to.
+Content root a sake `th`-stance, an ability `x`-stance, or a numeric-derivation join attaches to.
 
-[Intention](intention.md#ability), [interests](interests.md), [numeric derivation](numeric-derivation.md)
+[Intention](intention.md#ability), [sakes](sakes.md), [numeric derivation](numeric-derivation.md)
 
 **Compare with:** a measure [unit](#measure-phrase-unit) is not a host. Classification names the classified noun, not a host.
 
@@ -517,13 +517,13 @@ Amount + lexicon unit noun (published abstract = unit name).
 
 [Numbers in use](numbers-applied.md#measure-phrases)
 
-### Met / unmet / motive / prescription (interests)
+### Met / unmet / motive / prescription (sakes)
 
-Interest stances **`tha` / `thu`** (Beginner); **`the`** / **`tho`** (Intermediate prescription / motive). Prescription **`the`** on the clause is deontic on the host act (*ought to … for this interest*), not a performance report with a separate norm tag. The ending marks whether the move is [invited, offered, or protective](#asked-typical-history), not how firmly you address them.
+Sake stances **`tha` / `thu`** (Beginner); **`the`** / **`tho`** (Intermediate prescription / motive). Prescription **`the`** on the clause is deontic on the host act (*ought to … for this sake*), not a performance report with a separate norm tag. The ending marks whether the move is [invited, offered, or protective](#asked-typical-history), not how firmly you address them.
 
-[Interests](interests.md)
+[Sakes](sakes.md)
 
-**Compare with:** [as-for](#as-for) is **`hahehom`**, not a interest stance.
+**Compare with:** [as-for](#as-for) is **`hahehom`**, not a sake stance.
 
 ### Named handle
 
@@ -539,11 +539,11 @@ Phrase join **-n**.
 
 **Compare with:** a [titled phrase](#titled-phrase) can use that join **-n** while members keep ordinary endings.
 
-### Interest inventory
+### Sake inventory
 
-Six closed psychological interests under `/ɡ/` `/th/` `/w/`.
+Six closed psychological sakes under `/ɡ/` `/th/` `/w/`.
 
-[Interests](interests.md#interest-inventory)
+[Sakes](sakes.md#sake-inventory)
 
 ### Number as verb / adverb / interjection / discourse
 
@@ -603,7 +603,7 @@ Closed `/y/` particles **`yael` / `yuel` / …**.
 
 Motive **`tho`** endings.
 
-[Interests](interests.md#interest-preference)
+[Sakes](sakes.md#sake-preference)
 
 ### Prominence
 
@@ -686,7 +686,7 @@ Word-initial job letter.
 
 ### So that / event purpose
 
-Clause-pole **`hagom`**: intended outcome of the host (*so that Alahen sits*; NP *for a money-bag*). Not locative *toward*, not interest **`tho`**, not discourse *therefore*.
+Clause-pole **`hagom`**: intended outcome of the host (*so that Alahen sits*; NP *for a money-bag*). Not locative *toward*, not sake **`tho`**, not discourse *therefore*.
 
 [Dependents](dependents.md#so-that)
 
@@ -738,7 +738,7 @@ Utterance setting: statement / question / command / prohibition.
 
 [Speech moves](speech-moves.md#speech-act)
 
-**Compare with:** interest **prescription warrant** is [invited / offered / trial](#asked-typical-history), not speech act. Polar [stance](#polar-stance) is a left-edge particle.
+**Compare with:** sake **prescription warrant** is [invited / offered / trial](#asked-typical-history), not speech act. Polar [stance](#polar-stance) is a left-edge particle.
 
 ### Sufficient / necessary
 
@@ -749,9 +749,9 @@ Utterance setting: statement / question / command / prohibition.
 ### Time horizon
 <a id="contact--contact-channel"></a>
 
-Met-interest **`tha`** endings: **-l** lasting, **-m** unstated (default), **-r** immediate. Neither end is better.
+Met-sake **`tha`** endings: **-l** lasting, **-m** unstated (default), **-r** immediate. Neither end is better.
 
-[Interests](interests.md#time-horizon-endings-on-met)
+[Sakes](sakes.md#time-horizon-endings-on-met)
 
 ### Titled phrase
 
@@ -789,11 +789,11 @@ Mood how-exceptionless (COMMON … RULE).
 
 [Knowing](knowing.md#universality)
 
-### Interests
+### Sakes
 
-Interest + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`gobom`** + `/w/` need.
+Sake + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`gobom`** + `/w/` need.
 
-[Interests](interests.md)
+[Sakes](sakes.md)
 
 ### Viewpoint laterals
 

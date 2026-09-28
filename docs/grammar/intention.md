@@ -292,7 +292,7 @@ English *can't* does not say whether this is just for now, not yet, or never. Af
 >
 > "Azawan can never run."
 
-**Compare with:** a [interests](interests.md) word joins a **interest** root with **`th`**, not **`x`**: **`tha` / `thu`** is met / unmet interest (`thuduthum` *competence unmet*). **`xa` / `xu`** after a verb or quality is can / can't.
+**Compare with:** a [sakes](sakes.md) word joins a **sake** root with **`th`**, not **`x`**: **`tha` / `thu`** is met / unmet sake (`thuduthum` *competence unmet*). **`xa` / `xu`** after a verb or quality is can / can't.
 
 ### When there is no single verb (`eze`) {#ability-fallback}
 
@@ -323,7 +323,7 @@ Ordinary content is still available (`zehal` *a checkmark*; `vehal` *to check / 
 #### Endings — changeability
 <a id="decision-changeability"></a>
 
-On **`eha`**, **-l / -m / -r** match unmet [changeability](interests.md#interest-changeability): irreversible / modifiable / temporary. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know how locked the pick is, use **-m**.
+On **`eha`**, **-l / -m / -r** match unmet [changeability](sakes.md#sake-changeability): irreversible / modifiable / temporary. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know how locked the pick is, use **-m**.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -677,4 +677,4 @@ z-Alahen | th-ABIL-unable-irreversible
 
 - How you know a forecast: [knowing.md](knowing.md#evidentiality)
 - Choosing as an act: [join-across-roles.md](join-across-roles.md#join-act-verbs)
-- Autonomy as an interest: [interests.md](interests.md#interest-inventory)
+- Autonomy as a sake: [sakes.md](sakes.md#sake-inventory)
