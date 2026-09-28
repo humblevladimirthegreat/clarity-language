@@ -631,15 +631,15 @@ Examples:
 >
 > "Azawan mutes. Ululon does so."
 
-> `zazawan demegul vamuyul. zeredel gamur.`
+> `zazawan demegul vamuyul. zeredel gamuyur.`
 >
-> z-Azawan | d-studio-mic | v-mute . z-radio | g-←mute
+> z-Azawan | d-studio-mic | v-mute . z-radio | g-←mute.full
 >
 > "Azawan mutes a studio mic. A radio is such (muted too)."
 
-> `zazawan vamuyul. zeredel wamur gelavam.`
+> `zazawan vamuyul. zeredel wamuyur gelavam.`
 >
-> z-Azawan | v-mute . z-radio | [w-←mute | g-big]
+> z-Azawan | v-mute . z-radio | [w-←mute.full | g-big]
 >
 > "Azawan mutes. A radio is big as far as muting goes."
 
