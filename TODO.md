@@ -19,19 +19,22 @@ Prosody
 -Rare learning band
 -lint check that vocabulary is taught and used in translation exercises.
 -reconsider how to make emotions shorter (lexical compounds)
+-consider Promoting common non-nouns and compound-word parts to be two syllables. 
 
 final exam
 
+save for near end of limit resets:
+-try to fill in remaining abstract lexicon in published-lexicon. use for useful english words, don't fill just to fill, ok to leave blank
+-ensure lexicon consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed.
+-mass lexical compound adding
+
+
 save for cursor:
--consider moving overlay forms to the top of lexicon so they get preferential retying. Actually, only overlay forms should be two syllables. Prefer words unlikely to be referred to (such as non-nouns) for two syllables to avoid ambiguity with continues.
 -finish English->Agalan cheat sheets, including tense
 -do parser consistency pass. Does the parser completely and accurately encode all the meaning of the grammar?
 -add Agalan->English cheat sheet
 -Cheat sheet for joins and hooks
 -join vowel decision tree in advanced vowel series.
--suggest words to fill in remaining abstract lexicon. use for useful english words, don't fill just to fill.
--ensure lexicon consistency - are there conflicts with special forms, or do some words mean the same as another?
--mass lexical compound adding
 
 Dictionary entries (open lexicon / concepts — not the closed list above):
 -habits: triggered
