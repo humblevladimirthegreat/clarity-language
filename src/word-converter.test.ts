@@ -8,36 +8,36 @@ import {
   toUniqueClarityWord,
 } from "./word-converter.js";
 
-describe("order-preserving conversion", () => {
-  it("maps coffee to ogove (C-O-F-E order, leading echo o)", () => {
+describe("spelling map", () => {
+  it("maps coffee letters in order", () => {
     assert.deepEqual(mappedSourceLetters("coffee"), ["g", "o", "v", "e"]);
-    assert.equal(toClarityWord("coffee", 3), "ogove");
+  });
+});
+
+describe("pronunciation conversion", () => {
+  it("builds knife from its consonants, skipping the silent k", () => {
+    const root = toClarityWord("knife", 3);
+    assert.equal(root.length, 5);
+    assert.equal(root[1], "n");
+    assert.equal(root[3], "v");
+    assert.equal(root.includes("g"), false);
   });
 
-  it("maps tea to ededa", () => {
-    assert.equal(toClarityWord("tea", 3), "ededa");
+  it("maps coffee (K AA1 F IY0) to agave", () => {
+    assert.equal(toClarityWord("coffee", 3), "agave");
   });
 
-  it("maps dog to odogo", () => {
-    assert.equal(toClarityWord("dog", 3), "odogo");
+  it("returns a three-letter root for two syllables", () => {
+    const root = toClarityWord("coffee", 2);
+    assert.equal(root.length, 3);
+    assert.equal(root[1], "g");
   });
 
-  it("maps apple to abele (V between b/l echoes closer e)", () => {
-    assert.equal(toClarityWord("apple", 3), "abele");
-  });
-
-  it("maps water by dropping the right edge to fit five letters", () => {
-    assert.equal(toClarityWord("water", 3), "awade");
-  });
-
-  it("compresses coffee to two syllables by dropping from the right", () => {
-    assert.equal(toClarityWord("coffee", 2), "ogo");
-  });
-
-  it("assigns unique roots without reordering the first pick", () => {
+  it("assigns the next free candidate when the best root is taken", () => {
     const used = new Set<string>();
-    assert.equal(toUniqueClarityWord("coffee", used), "ogove");
-    assert.notEqual(toUniqueClarityWord("coffee", used), "ogove");
+    const first = toUniqueClarityWord("coffee", used);
+    assert.equal(first, toClarityWord("coffee", 3));
+    assert.notEqual(toUniqueClarityWord("coffee", used), first);
   });
 });
 

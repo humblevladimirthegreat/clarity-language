@@ -18,6 +18,7 @@ Prosody
 -grammar simplification pass: could we remove special overlay forms and re-use existing grammar? 
 -Rare learning band
 -lint check that vocabulary is taught and used in translation exercises.
+-reconsider how to make emotions shorter (compound words?)
 
 final exam
 

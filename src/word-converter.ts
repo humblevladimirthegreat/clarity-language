@@ -1,3 +1,7 @@
+import { lookupPronunciation } from "./cmu-dict.ts";
+import { echo } from "./echo-metric.ts";
+import { PHONEME_MAP } from "./pronunciation-map.ts";
+
 const VOWEL_LETTERS = new Set(["a", "e", "i", "o", "u", "y"]);
 
 const VOWEL_REMAP: Record<string, string> = {
@@ -47,10 +51,13 @@ const DIGIT_TO_LETTER: Record<string, string> = {
 
 const MAX_ROOT_LENGTH = 5;
 
-/** Agelan root vowels (phonology inventory). */
+/** Agalan root vowels (phonology inventory). */
 export const CLARITY_VOWELS = ["a", "e", "o", "u"] as const;
 
-/** Agelan root onset consonants (phonology inventory; mid-word `x` is never a root letter). */
+/**
+ * Agalan root consonants. `j` stays so published roots still pass the shape check;
+ * new roots spell the glide `y` (j-to-y.md). Mid-word `x` is never a root letter.
+ */
 export const CLARITY_CONSONANTS = [
   "b",
   "d",
@@ -62,11 +69,15 @@ export const CLARITY_CONSONANTS = [
   "h",
   "w",
   "j",
+  "y",
   "l",
   "r",
 ] as const;
 
-const VOWEL_SET = new Set<string>(CLARITY_VOWELS);
+/** Consonants the pronunciation generator may write. The glide is `y`, not `j`. */
+const GENERATED_CONSONANTS = ["b", "d", "g", "h", "y", "l", "m", "n", "r", "v", "w", "z"] as const;
+const SECOND_CONSONANT_BAN = new Set(["l", "m", "n", "r"]);
+const STOPS = new Set(["b", "d", "g"]);
 
 function normalizeInput(input: string): string {
   const expanded = input
@@ -95,11 +106,7 @@ function remapConsonant(letter: string): string {
   return mapped;
 }
 
-function isVowel(ch: string): boolean {
-  return VOWEL_SET.has(ch);
-}
-
-/** Map English letters left to right; collapse runs of the same Agelan letter. */
+/** Map English letters left to right; collapse runs of the same Agalan letter. */
 export function mappedSourceLetters(input: string): string[] {
   const letters = normalizeInput(input);
   const out: string[] = [];
@@ -113,313 +120,90 @@ export function mappedSourceLetters(input: string): string[] {
   return out;
 }
 
-function nearestMatch(
-  tokens: string[],
-  insertAt: number,
-  pred: (ch: string) => boolean,
-  fallback: string,
-): string {
-  let best: string | null = null;
-  let bestScore = Infinity;
-  for (let j = 0; j < tokens.length; j++) {
-    const ch = tokens[j]!;
-    if (!pred(ch)) {
-      continue;
-    }
-    const dist = j >= insertAt ? j - insertAt : insertAt - j;
-    const score = dist + (j >= insertAt ? -0.5 : 0);
-    if (score < bestScore) {
-      bestScore = score;
-      best = ch;
-    }
-  }
-  return best ?? fallback;
+function phonemeWords(cmu: string): string[][] {
+  return cmu.split("|").map((word) => word.trim().split(/\s+/).filter(Boolean));
 }
 
-type Repair = {
-  word: string;
-  fillerAt: boolean[];
-};
+function isConsonantPhone(phone: string): boolean {
+  return !/\d$/.test(phone);
+}
 
-function repair(tokens: string[]): Repair {
-  if (tokens.length === 0) {
-    return { word: "", fillerAt: [] };
-  }
+function letterOf(phone: string): string {
+  const letter = PHONEME_MAP[phone.replace(/\d$/, "")];
+  if (!letter) throw new Error(`unmapped phoneme ${phone}`);
+  return letter;
+}
 
-  const parts: string[] = [];
-  const fillerAt: boolean[] = [];
+function stopCount(root: string): number {
+  return [...root].filter((letter) => STOPS.has(letter)).length;
+}
 
-  const append = (ch: string, filler: boolean): void => {
-    parts.push(ch);
-    fillerAt.push(filler);
-  };
+/** Rank by the pronunciation metric, then fewer stops, then alphabetical order. */
+function rankRoots(roots: string[], cmu: string): string[] {
+  return roots
+    .map((root) => [root, echo(root, cmu)] as const)
+    .sort((a, b) => b[1] - a[1] || stopCount(a[0]) - stopCount(b[0]) || a[0].localeCompare(b[0]))
+    .map(([root]) => root);
+}
 
-  for (let i = 0; i < tokens.length; i++) {
-    const ch = tokens[i]!;
-    if (parts.length === 0) {
-      if (!isVowel(ch)) {
-        append(nearestMatch(tokens, i, isVowel, "a"), true);
-      }
-      append(ch, false);
-      continue;
-    }
-    const last = parts[parts.length - 1]!;
-    if (isVowel(last) === isVowel(ch)) {
-      if (isVowel(ch)) {
-        append(nearestMatch(tokens, i, (c) => !isVowel(c), "j"), true);
-      } else {
-        append(nearestMatch(tokens, i, isVowel, "a"), true);
+/**
+ * Five-letter roots for a CMU pronunciation (`|` between words).
+ * First consonant: the first consonant of the label, or of any of its words.
+ * Second consonant: any letter except l/m/n/r, and a stop only when the English word has it.
+ * Vowels: every combination. Ranked by the pronunciation metric.
+ */
+export function longRootCandidates(cmu: string): string[] {
+  const words = phonemeWords(cmu);
+  const phones = words.flat();
+  const english = new Set(phones.filter(isConsonantPhone).map(letterOf));
+  const firsts = new Set(
+    words
+      .map((word) => word.find(isConsonantPhone))
+      .filter((phone): phone is string => !!phone)
+      .map(letterOf),
+  );
+  const c1s = firsts.size > 0 ? [...firsts] : [...GENERATED_CONSONANTS];
+  const c2s = GENERATED_CONSONANTS.filter((consonant) => !SECOND_CONSONANT_BAN.has(consonant) && (!STOPS.has(consonant) || english.has(consonant)));
+  const roots: string[] = [];
+  for (const c1 of c1s) {
+    for (const c2 of c2s) {
+      for (const a of CLARITY_VOWELS) {
+        for (const b of CLARITY_VOWELS) {
+          for (const c of CLARITY_VOWELS) {
+            roots.push(a + c1 + b + c2 + c);
+          }
+        }
       }
     }
-    append(ch, false);
   }
-
-  if (!isVowel(parts[parts.length - 1]!)) {
-    append(nearestMatch(tokens, tokens.length, isVowel, "a"), true);
-  }
-
-  return { word: parts.join(""), fillerAt };
+  return rankRoots(roots, cmu);
 }
 
-function firstVowel(tokens: string[]): string {
-  return tokens.find(isVowel) ?? nearestMatch(tokens, 0, isVowel, "a");
-}
-
-function fitTokens(tokens: string[], maxLetters: number): string {
-  if (maxLetters < 1) {
-    return "";
-  }
-  if (maxLetters === 1) {
-    return firstVowel(tokens);
-  }
-
-  let kept = [...tokens];
-  while (kept.length > 0) {
-    const word = repair(kept).word;
-    if (word.length <= maxLetters) {
-      return word;
-    }
-    kept.pop();
-  }
-  return firstVowel(tokens);
-}
-
-function padToSyllables(word: string, tokens: string[], syllables: number): string {
-  let root = word;
-  const v = firstVowel(tokens);
-  const c = tokens.find((ch) => !isVowel(ch)) ?? "j";
-  while (clarityRootSyllables(root) < syllables && root.length + 2 <= MAX_ROOT_LENGTH) {
-    root += c + v;
-  }
-  return root;
-}
-
-function tokenSubsequences(tokens: string[]): string[][] {
-  const n = tokens.length;
-  if (n === 0) {
-    return [];
-  }
-  if (n > 16) {
-    const out: string[][] = [];
-    for (let len = n; len >= 1; len--) {
-      out.push(tokens.slice(0, len));
-    }
-    for (let i = 0; i < n; i++) {
-      out.push(tokens.filter((_, j) => j !== i));
-    }
-    return out;
-  }
-
-  const out: string[][] = [];
-  const total = 1 << n;
-  for (let mask = 1; mask < total; mask++) {
-    const sub: string[] = [];
-    for (let i = 0; i < n; i++) {
-      if (mask & (1 << i)) {
-        sub.push(tokens[i]!);
+/** Every three-letter root, ranked by the pronunciation metric against `cmu`. */
+export function shortRootCandidates(cmu: string): string[] {
+  const roots: string[] = [];
+  for (const consonant of GENERATED_CONSONANTS) {
+    for (const a of CLARITY_VOWELS) {
+      for (const b of CLARITY_VOWELS) {
+        roots.push(a + consonant + b);
       }
     }
-    out.push(sub);
   }
-  return out;
+  return rankRoots(roots, cmu);
 }
 
-function subsequenceKey(tokens: string[], source: string[]): string {
-  let i = 0;
-  const indices: number[] = [];
-  for (const ch of tokens) {
-    while (i < source.length && source[i] !== ch) {
-      i++;
-    }
-    indices.push(i < source.length ? i : source.length);
-    i++;
-  }
-  return `${tokens.length}:${indices.join(",")}`;
-}
-
-function collectOrderPreservingCandidates(tokens: string[]): string[] {
-  const seen = new Set<string>();
-  const out: string[] = [];
-  const push = (word: string): void => {
-    if (!isClarityRootShape(word) || word.length > MAX_ROOT_LENGTH || seen.has(word)) {
-      return;
-    }
-    seen.add(word);
-    out.push(word);
-  };
-
-  push(fitTokens(tokens, MAX_ROOT_LENGTH));
-  push(fitTokens(tokens, 3));
-
-  const scored: Array<{ word: string; kept: number; length: number; key: string }> = [];
-  for (const sub of tokenSubsequences(tokens)) {
-    const word = repair(sub).word;
-    if (!isClarityRootShape(word) || word.length > MAX_ROOT_LENGTH) {
-      continue;
-    }
-    scored.push({
-      word,
-      kept: sub.length,
-      length: word.length,
-      key: subsequenceKey(sub, tokens),
-    });
-  }
-  scored.sort((a, b) => b.kept - a.kept || a.length - b.length || a.key.localeCompare(b.key));
-  for (const item of scored) {
-    push(item.word);
-  }
-
-  return out;
-}
-
-function collectFillerVariants(tokens: string[]): string[] {
-  const seen = new Set<string>();
-  const out: string[] = [];
-  const { word, fillerAt } = repair(tokens);
-  const push = (next: string): void => {
-    if (!isClarityRootShape(next) || next.length > MAX_ROOT_LENGTH || seen.has(next)) {
-      return;
-    }
-    seen.add(next);
-    out.push(next);
-  };
-  push(word);
-
-  const sourceConsonants = [...new Set(tokens.filter((ch) => !isVowel(ch)))];
-  if (!sourceConsonants.includes("j")) {
-    sourceConsonants.push("j");
-  }
-
-  for (let i = 0; i < fillerAt.length; i++) {
-    if (!fillerAt[i]) {
-      continue;
-    }
-    const current = word[i]!;
-    const alphabet = isVowel(current) ? CLARITY_VOWELS : sourceConsonants;
-    for (const ch of alphabet) {
-      if (ch === current) {
-        continue;
-      }
-      push(word.slice(0, i) + ch + word.slice(i + 1));
-    }
-  }
-
-  return out;
-}
-
-function collectHyphenSegmentCandidates(input: string): string[] {
-  const segments = input
-    .toLowerCase()
-    .split("-")
-    .map((segment) => segment.replace(/[^a-z0-9]/g, ""))
-    .filter((segment) => segment.length > 0);
-
-  if (segments.length <= 1) {
-    return [];
-  }
-
-  const seen = new Set<string>();
-  const out: string[] = [];
-  for (const segment of segments) {
-    let tokens: string[];
-    try {
-      tokens = mappedSourceLetters(segment);
-    } catch {
-      continue;
-    }
-    for (const word of collectOrderPreservingCandidates(tokens)) {
-      if (seen.has(word)) {
-        continue;
-      }
-      seen.add(word);
-      out.push(word);
-    }
-  }
-  return out;
-}
-
-function collectHashFallbackCandidates(input: string): string[] {
-  let hash = 0;
-  for (let i = 0; i < input.length; i++) {
-    hash = (Math.imul(31, hash) + input.charCodeAt(i)) >>> 0;
-  }
-
-  const seen = new Set<string>();
-  const out: string[] = [];
-
-  for (let attempt = 0; attempt < 500; attempt++) {
-    const h = (hash + Math.imul(attempt, 997)) >>> 0;
-
-    for (const syllables of [2, 3]) {
-      let word = CLARITY_VOWELS[h % CLARITY_VOWELS.length]!;
-      for (let syllable = 1; syllable < syllables; syllable++) {
-        const shift = syllable * 4;
-        word +=
-          CLARITY_CONSONANTS[(h >>> shift) % CLARITY_CONSONANTS.length]! +
-          CLARITY_VOWELS[(h >>> (shift + 2)) % CLARITY_VOWELS.length]!;
-      }
-
-      if (word.length > MAX_ROOT_LENGTH || seen.has(word)) {
-        continue;
-      }
-      seen.add(word);
-      out.push(word);
-    }
-  }
-
-  return out;
-}
-
+/**
+ * Pronunciation-ranked roots for an English word: five-letter candidates first, then three-letter.
+ * Looks the word up in CMU. No spelling fallback.
+ */
 export function* clarityRootCandidates(input: string): Generator<string> {
-  const tokens = mappedSourceLetters(input);
+  const cmu = lookupPronunciation(input);
   const seen = new Set<string>();
-
-  const push = (word: string): string | null => {
-    if (!isClarityRootShape(word) || word.length > MAX_ROOT_LENGTH || seen.has(word)) {
-      return null;
-    }
-    seen.add(word);
-    return word;
-  };
-
-  const yieldWords = function* (words: string[], minLetters = 3): Generator<string> {
-    for (const word of words) {
-      if (word.length < minLetters) {
-        continue;
-      }
-      const pushed = push(word);
-      if (pushed) {
-        yield pushed;
-      }
-    }
-  };
-
-  yield* yieldWords(collectOrderPreservingCandidates(tokens));
-  yield* yieldWords(collectFillerVariants(tokens));
-  yield* yieldWords(collectHyphenSegmentCandidates(input));
-  yield* yieldWords(collectOrderPreservingCandidates([...tokens].reverse()));
-  yield* yieldWords(collectHashFallbackCandidates(input));
-  yield* yieldWords(collectOrderPreservingCandidates(tokens), 1);
+  for (const root of [...longRootCandidates(cmu), ...shortRootCandidates(cmu)]) {
+    if (root.length > MAX_ROOT_LENGTH || seen.has(root)) continue;
+    seen.add(root);
+    yield root;
+  }
 }
 
 /**
@@ -445,7 +229,7 @@ export function isClarityRootShape(root: string): boolean {
 /** Syllable count for a V(CV)+ root (one syllable per vowel). */
 export function clarityRootSyllables(root: string): number {
   if (!isClarityRootShape(root)) {
-    throw new Error(`Not a legal Agelan root shape: ${root}`);
+    throw new Error(`Not a legal Agalan root shape: ${root}`);
   }
   return (root.length + 1) / 2;
 }
@@ -525,23 +309,24 @@ export function letterDistribution(roots: string[]): LetterDistribution {
 }
 
 /**
- * Convert an alphabetical string into an Agelan-compatible root of form V(CV)+.
- * Source letters stay in English order; fillers only repair V(CV)+ shape.
+ * Best Agalan root for an English word, from its CMU pronunciation.
+ * Two syllables → VCV; three syllables → VCVCV.
  */
 export function toClarityWord(input: string, syllables: number): string {
-  if (syllables < 1) {
-    throw new Error("Syllable count must be at least 1");
+  if (syllables !== 2 && syllables !== 3) {
+    throw new Error("Syllable count must be 2 or 3");
   }
-
-  const tokens = mappedSourceLetters(input);
-  const maxLetters = Math.min(MAX_ROOT_LENGTH, syllables * 2 - 1);
-  const fitted = fitTokens(tokens, maxLetters);
-  return padToSyllables(fitted, tokens, Math.min(syllables, 3));
+  const cmu = lookupPronunciation(input);
+  const best = (syllables === 2 ? shortRootCandidates(cmu) : longRootCandidates(cmu))[0];
+  if (!best) {
+    throw new Error(`Could not build an Agalan root for "${input}"`);
+  }
+  return best;
 }
 
 /**
- * Assign a unique Agelan root using tiered collision resolution.
- * Order-preserving fits first, then filler variants, hyphen segments, reverse, hash.
+ * Assign a unique Agalan root: the best free pronunciation candidate
+ * (five-letter roots before three-letter ones).
  */
 export function toUniqueClarityWord(input: string, usedRoots: Set<string>): string {
   for (const candidate of clarityRootCandidates(input)) {
@@ -552,6 +337,6 @@ export function toUniqueClarityWord(input: string, usedRoots: Set<string>): stri
   }
 
   throw new Error(
-    `Could not assign unique Agelan root for "${input}" within ${MAX_ROOT_LENGTH} letters`,
+    `Could not assign unique Agalan root for "${input}" within ${MAX_ROOT_LENGTH} letters`,
   );
 }

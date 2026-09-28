@@ -1,6 +1,6 @@
 # Proposal: pronunciation-based English echo
 
-**Status:** Step 1 APPLIED (2026-09-28): 115 `concrete` labels renamed in place (no `echo_word` column); Step 2 APPLIED (2026-09-28): CMU lookup + phoneme map; Step 3 APPLIED (2026-09-28): pronunciation metric, tuned on agent-drafted, editor-accepted ratings; Step 4 APPLIED to the dry run (2026-09-28): phoneme-built candidates ranked by the metric.  
+**Status:** Step 1 APPLIED (2026-09-28): 115 `concrete` labels renamed in place (no `echo_word` column); Step 2 APPLIED (2026-09-28): CMU lookup + phoneme map; Step 3 APPLIED (2026-09-28): pronunciation metric, tuned on agent-drafted, editor-accepted ratings; Step 4 APPLIED (2026-09-28): the converter builds candidates from phonemes and ranks them with the metric. The published lexicon is not rewritten yet.  
 **Related:** `lexicon-revamp.md` (its dry run introduced the first echo metric), [data/lexicon-published.csv](../../data/lexicon-published.csv), [scripts/prototype-lexicon-revamp.ts](../../scripts/prototype-lexicon-revamp.ts), [src/word-converter.ts](../../src/word-converter.ts)
 
 ## Motivation
@@ -83,13 +83,13 @@ A root (V C V or V C V C V) is scored by its **best in-order alignment** with th
 
 **Checked by ear:** `--sample` drafted 50 roots in `tmp/echo-pron/ratings.csv` (evenly spread by score, plus spelling traps: *knife*, *knot*, *laugh*, *ghost*, *phone*, *wrench*, *hippopotamus*). An agent rated them 0–3 without seeing the scores, and the editor accepted the ratings. `--tune` grid-searches the weights for rank agreement (Spearman ρ). The first weights (syllable-final 0.5, decay 0.6, vowels 1 / 0.5) scored ρ 0.73. The grid preferred syllable-final consonants equal to onsets (ρ 0.80). The editor ruled that out, since a syllable-final consonant is heard less clearly, so the search keeps them below 1. With that limit, the weights above score 0.78. Many settings land within 0.01 of that, so the onset weights stay as first proposed. The two changes are a stronger decay and vowels counting half.
 
-**Dry run (2026-09-28):** mean echo of today's roots is 0.63 by pronunciation vs 0.78 by spelling. The spelling metric overrated roots that match silent or merged letters. With `--pron-echo`, the dry run lowers long-root echo (0.62 → 0.55), because the generator still builds long roots from spelling. Short roots, which the metric places, rise from 0.66 to 0.84. Step 4 targets the long-root drop.
+**Dry run (2026-09-28):** mean echo of today's roots is 0.63 by pronunciation vs 0.78 by spelling. The spelling metric overrated roots that match silent or merged letters. With `--pron-echo`, the dry run lowers long-root echo (0.62 → 0.55), because the generator still builds long roots from spelling. Short roots, which the metric places, rise from 0.66 to 0.84. Step 4, which rebuilds the long roots from the phonemes, raises their mean from 0.62 to 0.89.
 
 ## Step 4: use it in the generator
 
-**Status:** APPLIED to the dry run only (2026-09-28): with `--pron-echo`, [scripts/prototype-lexicon-revamp.ts](../../scripts/prototype-lexicon-revamp.ts) builds long-root candidates from the phonemes. `src/word-converter.ts` and published roots are unchanged.
+**Status:** APPLIED to the converter (2026-09-28): [src/word-converter.ts](../../src/word-converter.ts) builds roots from CMU phonemes and ranks them with the metric. `convert-word` and `convert-word --lexicon` use it, so `--lexicon` writes `tmp/lexicon-retie-map.json` from those spellings. Published roots are not rewritten yet. Dry-run result (`tmp/lexicon-revamp/report.md`, same candidate function): long-root mean echo **0.623 → 0.891** (median 0.706 → 0.905; roots under 0.4: 333 → 1 of 1,278). Short roots stay at the Step 3 placement, **0.661 → 0.836**. All roots **0.625 → 0.888**. Checks are all zero. Consonant mix (current → dry run, share of consonants): stops 34.8% → 44.1%, fricatives 20.8% → 35.6%, glides 5.2% → 7.5%, `l m n r` 39.3% → 12.8% (the second-consonant ban keeps `l m n r` out of the second slot, so the remaining share is first consonants).
 
-- **Replace, not add:** under `--pron-echo` the converter's spelling candidates are not used for long roots.
+- **Replace, not add:** `src/word-converter.ts` no longer builds candidates from spelling. A word missing from CMU is an error.
 - **Candidates:** the first consonant is the label's first consonant (for a multi-word label, the first consonant of any of its words). The second consonant may be any letter except `l` / `m` / `n` / `r` (the second-consonant ban). It may be a stop only if the English word has that stop, so filler stops never appear. All vowels are tried; vowels follow the phoneme map, so stressed AH gives `a`.
 - **Ranking:** by the metric. Ties go to fewer stops, then alphabetical order. When the stressed onset is banned, the next-best onset by score wins. The converter-era rule that preferred a non-stop second consonant over an English stop no longer applies. The metric decides.
 - **Collisions:** placement is unchanged (priority, then regret). Each row takes its best-scoring free candidate.
@@ -100,4 +100,3 @@ A root (V C V or V C V C V) is scored by its **best in-order alignment** with th
 
 - Which modifier-variant rows keep separate roots? That is a meaning decision, not an echo one.
 - For countries, is the distinctive word always the right echo (*samoa* vs *american*)?
-- Should the phoneme generator replace the converter in `src/word-converter.ts` (and so in `convert-word --lexicon`)?
