@@ -612,15 +612,18 @@ RoleCompound
       };
     }
 
-// Interests: interest root + `th` + stance vowel (interests.md).
+// Interests: interest root + `th` + stance vowel (interests.md); optional emotion
+// tail = horizon letter + locus vowel, then the motion ending (interests.md#emotion-compose).
+// On a non-interest host the tailed shape is a viewpoint lateral (classify.ts).
 ValueCompound
-  = host:CompoundHost "th" stanceV:[aeou] ending:Ending plural:PluralSuffix? WordEnd {
+  = host:CompoundHost "th" stanceV:[aeou] tail:(h:[lmr] l:[aeou] { return [h, l]; })? ending:Ending plural:PluralSuffix? WordEnd {
       return {
         ending,
         plural: !!plural,
         family: xFamily("interest", {
           leftRoots: host,
           stanceVowel: stanceV,
+          ...(tail ? { horizon: tail[0], locus: tail[1] } : {}),
         }),
       };
     }

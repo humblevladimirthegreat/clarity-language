@@ -261,45 +261,47 @@ z-fire | [w-autonomy-unmet-irreversible | g-stimulus]
 
 ### Emotion compose {#emotion-compose}
 
-When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: an [interest stance](#interests) on the situation, how activated the charge is, and where you put it. Put the value on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](#stimulus) **`gobem`** when the noun is not yours, then **one ACT** and **one LOCUS** as `/th/` (or `/w/` immediately before that adjective). You can then say the take without smuggling a single emotion word.
+When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: an [interest stance](#interests) on the situation, where the charge sits, and how it moves. All three ride on **one word**: the interest word keeps its stance and its ending letter, then adds a **locus vowel** and a **motion ending**. Put that word on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](#stimulus) **`gobem`** when the noun is not yours. You can then say the take without smuggling a single emotion word.
 
-> `zezebel wudathur gobem thohum thogam.`
+> `zezebel wudathurar gobem.`
 >
-> [z-speech | [w-competence-unmet-passing | g-stimulus]] | th-HIGH | th-CIRCUM
+> z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]
 >
-> "Anxious about the dialogue:" competence at stake for now; surge; room awash.
+> "Anxious about the dialogue:" competence at stake for now; it fills the room; it surges.
 
-Affect is **water**. **ACT** is tide dynamics (how much / how fast). **LOCUS** is vessel, transfer, or ambient field (where the water sits).
+Build it from the plain interest word: `wudathur` (competence, unmet, passing) + **`a`** (CIRCUM) + **-r** (SURGING) = `wudathurar`. The old ending letter (**-r** here) stays in the middle of the word and keeps its meaning.
 
-| Agalan | Use | English | Same root as | Cue |
-|--------|-----|---------|--------------|-----|
-| **`thohum`** | HIGH arousal | *surge / overwhelm* | `ohul` *ocean* | 🌊: water in surge |
-| **`thevum`** | MED arousal | *flow / drift* | `evul` *jellyfish* | 🪼: drifts with the current |
-| **`thuzum`** | LOW arousal | *stillness / slack* | `uzul` *snow* | 🌨️: the landscape goes quiet |
-| **`thebem`** | INTERNAL locus | *held inside* | `ebel` *baby-bottle* | 🍼: liquid stays in the vessel |
-| **`thorum`** | EXTERNAL locus | *directed at other people* | `orul` *pour* | 🫗: liquid goes onto someone else |
-| **`thogam`** | CIRCUM locus | *on the situation* (shared / ambient field) | `ogal` *candle* | 🕯️: light fills the room |
+The locus vowel says where the charge sits. It follows the [vowel series](speech-moves.md#speech-act-beginner):
 
-Under `/z/` or `/v/` the ordinary noun or verb uses the published literal ending (`zohul` *an ocean*; `vorul` *to pour*). The compose reading is the floating `/th/` (or `/w/`) **overlay** on **-m**.
+| Locus vowel | Use | English | Cue |
+|-------------|-----|---------|-----|
+| **`o`** | INTERNAL | *held inside* | **o** ≈ *one*: just me |
+| **`e`** | EXTERNAL | *directed at other people* | **e** ≈ *order*: aimed at someone, like an order |
+| **`a`** | CIRCUM | *on the situation* (shared / ambient field) | **a** ≈ *add*: everyone and everything together |
+| **`u`** | UNPLACED | *I can't place where it comes from* | **u** ≈ *undo*: it sits nowhere yet |
 
-**EXTERNAL** is one root (`oru`). Scale the transfer with ACT. INTERNAL and CIRCUM combine the same way; CIRCUM is a shared field.
+The motion ending says how the feeling moves. Affect is **water**:
 
-| Agalan | Use | English | Same root as | Cue |
-|--------|-----|---------|--------------|-----|
-| **`thohum`** + **`thorum`** | HIGH × EXTERNAL | *poured / surged onto them* | `ohul` *ocean* · `orul` *pour* | 🌊 onto 🫗: surge directed at them |
-| **`thevum`** + **`thorum`** | MED × EXTERNAL | *flowing toward them* | `evul` *jellyfish* · `orul` *pour* | 🪼 toward 🫗: drift aimed at them |
-| **`thuzum`** + **`thorum`** | LOW × EXTERNAL | *pooling at them* | `uzul` *snow* · `orul` *pour* | 🌨️ at 🫗: slack water settled at their locus |
+| Motion ending | Use | English | Cue |
+|---------------|-----|---------|-----|
+| **-r** | SURGING | big, spiking, swinging, in waves | **-r** ≈ *right now*: a wave |
+| **-m** | FLOWING | clear and moving at a pace you can ride, calm or strong | **-m** ≈ the ordinary case: a current |
+| **-l** | STILL | muted, faint, numb, frozen | **-l** ≈ *locked*: still water |
+
+Surging and still are information, not verdicts. Strong but steady anger is flowing; so is calm contentment. Surging can be a cue to ground; still can be a cue to rest, or to re-engage gently.
+
+The tail goes on met **`tha`**, motive **`tho`**, and unmet **`thu`** words. Prescription **`the`** is advice, not a feeling, so it takes no tail. A word with no tail (`wudathur`) is an ordinary interest word.
 
 | Agalan | English |
 |---------|---------|
-| `zezebel wudathur gobem thohum thogam` | *anxious about the dialogue* (competence at stake, temporary; surge; room awash) |
-| `zozazom wunethum gobem thohum thorum` | *resentful about the division* (unmet relatedness; surge poured onto them) |
-| `zebeyum gudatham thohum thebem` | *proud of the draft* (met competence; surge bottled) |
-| `zemehol wunethum gobem thuzum thorum` | *resentful about the memo* (unmet relatedness; stillness pooling at them) |
+| `zezebel wudathurar gobem` | *anxious about the dialogue* (competence at stake, temporary; fills the room; surging) |
+| `zozazom wunethumer gobem` | *resentful about the division* (unmet relatedness; aimed at them; surging) |
+| `zebeyum gudathamor` | *proud of the draft* (met competence; held inside; surging) |
+| `zemehol wunethumel gobem` | *resentful about the memo* (unmet relatedness; aimed at them; gone still) |
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
 
-**Compare with:** *could be* uses [MAY](knowing.md#may) (`ovo`). This stack is interest + activation + locus.
+**Compare with:** *could be* uses [MAY](knowing.md#may) (`ovo`). This word is interest + locus + motion.
 
 
 ### Prescription (`the`): ought this act for this interest
@@ -602,8 +604,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *permission* | `ogel` | `ogel` *green* |
 | *forbidden* | `erel` | `erel` *no-entry* |
 | *always* | `hual` | |
-| *HIGH* | `thohum` | `ohul` *ocean* |
-| *EXTERNAL* | `thorum` | `orul` *pour* |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
@@ -719,12 +719,12 @@ z-Azawan | v-kneel | [th-PERMIT-granted | b-Ahaben]
 z-Azawan | v-hush | [th-CONSENT-assumed | [b-Alahen | b-Ahaben | b-and]]
 :::
 
-**15.** *Resentful about the bell:* relatedness unmet; surge poured onto them.
+**15.** *Resentful about the bell:* relatedness unmet; aimed at them; surging.
 
 ::: details Show answer
-`zebevol wunethum gobem thohum thorum.`
+`zebevol wunethumer gobem.`
 
-[z-bell | [w-relatedness-unmet-modifiable | g-stimulus]] | th-HIGH | th-EXTERNAL
+z-bell | [w-relatedness-unmet-modifiable-EXTERNAL-SURGING | g-stimulus]
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
@@ -837,13 +837,13 @@ z-Azawan | v-scream | [th-CONSENT-refused | b-Alahen]
 *Azawan screams, though Alahen said no to it.*
 :::
 
-**13.** `zehehal gudatham thuzum thebem.`
+**13.** `zehehal gudathamom.`
 
 ::: details Show answer
 
-[z-church | g-competence-met-any-term] | th-LOW | th-INTERNAL
+z-church | g-competence-met-any-term-INTERNAL-FLOWING
 
-*Quietly proud of my church:* competence met; stillness held inside.
+*Quietly proud of my church:* competence met; held inside; flowing.
 :::
 
 ## See also

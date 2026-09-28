@@ -165,6 +165,9 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   }
   if (family.kind === "x" && family.xFamily === "interest") {
     if (word.pos && !INTEREST_POS.has(word.pos)) throw new ConstructionError("interestSlot", word.raw);
+    if (family.horizon && (family.stanceVowel === "e" || word.ending === "n")) {
+      throw new ConstructionError("emotionTail", word.raw);
+    }
   }
   if (family.kind === "x" && family.xFamily === "scope") {
     if (word.pos && !SCOPE_POS.has(word.pos)) throw new ConstructionError("labelScopeSlot", word.raw);

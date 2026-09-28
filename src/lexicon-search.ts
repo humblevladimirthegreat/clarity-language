@@ -45,8 +45,6 @@ export const OVERLAY_KINDS = [
   "cause",
   "clause_pole",
   "universality",
-  "emotion_act",
-  "emotion_locus",
   "identity",
   "benchmark",
   "locative",

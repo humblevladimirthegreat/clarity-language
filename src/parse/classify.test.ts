@@ -37,6 +37,13 @@ function expectReading(text: string, reading: LexReading) {
 }
 
 describe("classify", () => {
+  it("emotion tail on an interest root; same shape on another root is a viewpoint lateral", () => {
+    const fused = classifyText("gudathamol");
+    assert.equal(fused.family.kind === "x" && fused.family.xFamily, "interest");
+    const lateral = classifyText("gewezethamol");
+    assert.deepEqual(lateral.family, { kind: "x", xFamily: "lateral", leftRoots: ["eweze"], rightRoots: ["amo"] });
+  });
+
   it("overlay mood on published-shaped live evidential", () => {
     const sense = [...tables.overlays.values()].find(
       (o) => o.pos === "th" && /live evidential/i.test(o.definition),

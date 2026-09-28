@@ -389,7 +389,9 @@ describe("compareMorphGloss", () => {
   it("values bake stance and ending grain", () => {
     expectLine("zebezol gunethal", "z-present | g-relatedness-met-lasting");
     expectLine("zabezum wabathur gobem", "z-gathering | [w-autonomy-unmet-passing | g-stimulus]");
-    expectLine("thohum thogam", "th-HIGH | th-CIRCUM");
+    expectLine("zezebel wudathurar gobem", "z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]");
+    expectLine("zebeyum gudathamor", "z-draft | g-competence-met-any-term-INTERNAL-SURGING");
+    expectLine("gunethalum", "g-relatedness-met-lasting-UNPLACED-FLOWING");
   });
 
   it("span interiors: cite and aside gloss English; mention passes through", () => {

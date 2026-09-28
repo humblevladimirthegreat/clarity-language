@@ -312,7 +312,7 @@ const SCOPE_FEATURE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
 };
 
 /** Interests: each stance vowel, and the endings on it (interests.md). */
-export const INTEREST_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vowel}.${"l" | "m" | "r"}`, ConstructionEntry> = {
+export const INTEREST_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vowel}.${"l" | "m" | "r"}` | "emotion", ConstructionEntry> = {
   "stance.a": { anchor: "interests.md#time-horizon-endings-on-met", summary: "met tha" },
   "stance.u": { anchor: "interests.md#unmet-thu-detracts-from-the-interest", summary: "unmet thu" },
   "stance.e": { anchor: "interests.md#prescription-the-ought-this-act-for-this-interest", summary: "prescription the" },
@@ -329,6 +329,7 @@ export const INTEREST_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.
   "ending.o.l": { anchor: "interests.md#motive-tho-preference-standing", summary: "motive standing -l" },
   "ending.o.m": { anchor: "interests.md#motive-tho-preference-standing", summary: "motive standing -m" },
   "ending.o.r": { anchor: "interests.md#motive-tho-preference-standing", summary: "motive standing -r" },
+  "emotion": { anchor: "interests.md#emotion-compose", summary: "emotion tail (locus vowel + motion ending)" },
 };
 
 /** Join fence series vowel (joins.md, comparatives.md). */
@@ -520,6 +521,7 @@ export const REJECTIONS = {
   linkerMidSentence: { anchor: "dependents.md#sentence-linkers", summary: "a sentence linker comes only at the start of a sentence" },
   pluralOnPos: { anchor: "plurality.md#beginner", summary: "-x is unused on /w/, /h/, /th/, and /x/" },
   interestSlot: { anchor: "interests.md#beginner", summary: "an interest form goes on /ɡ/, /th/, or /w/ only" },
+  emotionTail: { anchor: "interests.md#emotion-compose", summary: "the emotion tail goes on tha / tho / thu and ends in -r / -m / -l" },
   labelScopeSlot: { anchor: "predication.md#label-scope", summary: "label scope goes on /ɡ/, /z/, /d/, /b/, /v/, or /h/ only" },
   labelScopeArrow: { anchor: "roles.md#landmark-facing", summary: "on a direction root the th seam takes only o (the landmark's own facing)" },
   pluralKindAfterUniversal: { anchor: "joins.md#universals-domains-generics", summary: "the kind word after ua / uo takes no -x" },

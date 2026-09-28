@@ -292,6 +292,10 @@ const INTEREST_GRAIN: Record<string, Partial<Record<Ending, string>>> = {
   u: { l: "irreversible", m: "modifiable", r: "passing" },
 };
 
+/** Emotion tail (interests.md#emotion-compose): locus vowel, then motion ending. */
+const EMOTION_LOCUS: Record<string, string> = { o: "INTERNAL", e: "EXTERNAL", a: "CIRCUM", u: "UNPLACED" };
+const EMOTION_MOTION: Record<string, string> = { r: "SURGING", m: "FLOWING", l: "STILL" };
+
 const GREETING_STANCE: Record<string, string> = {
   a: "presence",
   o: "ask",
@@ -1403,10 +1407,16 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
     }
     if (word.reading === "interest") {
       const stance = INTEREST_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "stance";
+      const horizon = family.horizon ?? word.ending;
       const grain =
-        family.stanceVowel && word.ending
-          ? INTEREST_GRAIN[family.stanceVowel]?.[word.ending]
+        family.stanceVowel && horizon
+          ? INTEREST_GRAIN[family.stanceVowel]?.[horizon]
           : undefined;
+      if (family.horizon) {
+        const locus = EMOTION_LOCUS[family.locus ?? ""];
+        const motion = EMOTION_MOTION[word.ending ?? ""] ?? word.ending;
+        return [[host, stance, grain, locus, motion].filter(Boolean).join("-")];
+      }
       return grain ? [`${host}-${stance}-${grain}`] : [host, stance];
     }
     const stance = ABILITY_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "ability";

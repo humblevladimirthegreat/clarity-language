@@ -446,7 +446,7 @@ export const ARROW_ROOTS = new Set(["onova", "anove", "ezada", "azove", "azava",
 /** `DIR th o` parses as an interest shape; on an arrow root it is the landmark's own facing. */
 function landmarkLateral(word: MorphWord): MorphWord | undefined {
   const family = word.family;
-  if (family.kind !== "x" || family.xFamily !== "interest" || family.stanceVowel !== "o") return undefined;
+  if (family.kind !== "x" || family.xFamily !== "interest" || family.stanceVowel !== "o" || family.horizon) return undefined;
   if (family.leftRoots.length !== 1 || !ARROW_ROOTS.has(family.leftRoots[0]!)) return undefined;
   return { ...word, family: { kind: "x", xFamily: "lateral", leftRoots: family.leftRoots, rightRoots: [], landmark: true } };
 }
@@ -459,7 +459,22 @@ function labelScope(word: MorphWord, tables: ClassifyTables): MorphWord | undefi
   return { ...word, family: { ...family, xFamily: "scope" } };
 }
 
+/**
+ * `ROOT th V C V` + ending: the emotion tail on an interest root (interests.md#emotion-compose);
+ * on any other root the same letters are a viewpoint lateral `DIR th ANCHOR` (roles.md#viewpoint-laterals).
+ */
+function tailLateral(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {
+  const family = word.family;
+  if (family.kind !== "x" || family.xFamily !== "interest" || !family.horizon) return undefined;
+  if (family.leftRoots.every((root) => tables.interestRoots.has(root))) return undefined;
+  if (family.leftRoots.length !== 1) return undefined;
+  const anchor = `${family.stanceVowel}${family.horizon}${family.locus}`;
+  return { ...word, family: { kind: "x", xFamily: "lateral", leftRoots: family.leftRoots, rightRoots: [anchor] } };
+}
+
 export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
+  const tailed = tailLateral(word, tables);
+  if (tailed) return classify(tailed, tables);
   const lateral = landmarkLateral(word);
   if (lateral) return classify(lateral, tables);
   const scope = labelScope(word, tables);

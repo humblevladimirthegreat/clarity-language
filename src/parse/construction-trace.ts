@@ -71,7 +71,9 @@ function featureConstructions(word: LexWord): string[] {
     if (family.numberStem) ids.push(...numberFeatures(family.numberStem));
     if (family.xFamily === "interest" && family.stanceVowel) {
       ids.push(`interest.stance.${family.stanceVowel}`);
-      if (word.ending === "l" || word.ending === "m" || word.ending === "r") ids.push(`interest.ending.${family.stanceVowel}.${word.ending}`);
+      const horizon = family.horizon ?? word.ending;
+      if (horizon === "l" || horizon === "m" || horizon === "r") ids.push(`interest.ending.${family.stanceVowel}.${horizon}`);
+      if (family.horizon) ids.push("interest.emotion");
     }
     if (family.xFamily === "scope" && family.stanceVowel) ids.push(`scope.vowel.${family.stanceVowel}`);
     if (family.xFamily === "span") {

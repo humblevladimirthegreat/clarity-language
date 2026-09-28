@@ -77,6 +77,10 @@ export type MorphWordFamily =
       roleVowel?: "a" | "e" | "u" | "o";
       /** Values / label-scope / ability stance vowel (also role + ability on `/ɡ/`). */
       stanceVowel?: "a" | "e" | "o" | "u";
+      /** Emotion compose: interest horizon letter moved mid-word (interests.md#emotion-compose). */
+      horizon?: "l" | "m" | "r";
+      /** Emotion compose locus vowel (o internal / e external / a circum / u unplaced). */
+      locus?: "a" | "e" | "o" | "u";
       /** Nested number stem (numeric derivation). */
       numberStem?: NumberStem;
       /** Lexical join before a numeric stem (`l` everyday host, `m` abstract). */

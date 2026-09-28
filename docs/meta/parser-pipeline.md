@@ -102,7 +102,7 @@ This is where join-act vs soft clause **-n**, mood vs manner, value vs ability, 
 ### Closed forms follow the lexicon
 <a id="closed-forms-follow-lexicon"></a>
 
-Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, emotion ACT/LOCUS, clause poles, locatives, means, similative *like*, exchange *for*, proxy *on behalf of*, of-relations, judgment benchmarks, …) are **the published root** for that host (emoji / English literal) plus the overlay ending. When you **add** a closed overlay, pick an existing published row and spell that root plus ending (`emu` + **-n** → **`emun`**). Do **not** freeze a private spelling, do **not** coin a new lexicon word just to host the overlay, and do **not** put a productive stem (numeric derivation, role, values) in `sense_form`. If conversion reassigns *fishing*, witnessed **`thevem`** moves with **`eve`**. If conversion reassigns *attest*, live **`thodem`** moves with **`ode`**.
+Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause poles, locatives, means, similative *like*, exchange *for*, proxy *on behalf of*, of-relations, judgment benchmarks, …) are **the published root** for that host (emoji / English literal) plus the overlay ending. When you **add** a closed overlay, pick an existing published row and spell that root plus ending (`emu` + **-n** → **`emun`**). Do **not** freeze a private spelling, do **not** coin a new lexicon word just to host the overlay, and do **not** put a productive stem (numeric derivation, role, values) in `sense_form`. If conversion reassigns *fishing*, witnessed **`thevem`** moves with **`eve`**. If conversion reassigns *attest*, live **`thodem`** moves with **`ode`**.
 
 **Exception:** join-act / join-relation sense-forms (`an` / `on` / `aon` / …) and other **vowel-series** morphology (join fences, restrictor cores) are keyed by **`a` / `o` / `e` / `u`**, not by a lexicon row — those spellings stay. Do **not** add a hosted overlay whose `sense_form` is a join stem (`uan`, `an`, …) unless it is this vowel-series family.
 
@@ -130,8 +130,6 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, emotion ACT
 | `cause` | `mood` | CAUSE **`ege`** |
 | `clause_pole` | `mood` | *if* / *only-if* / *iff* / *because* / *so-that* / *as-of* / … |
 | `universality` | `mood` | COMMON / FORMAL / … |
-| `emotion_act` | `mood` | HIGH / MED / LOW |
-| `emotion_locus` | `mood` | INTERNAL / EXTERNAL / CIRCUM |
 | `identity` | `mood` | SAME **`ugo`** |
 | `benchmark` | `mood` | Average / Typical / Mine / Social / Professional / Everyone |
 | `locative` | `locative` | *between* |

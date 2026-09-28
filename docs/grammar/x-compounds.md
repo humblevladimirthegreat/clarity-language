@@ -282,7 +282,7 @@ When English stacks labels left to right (*crush* then *love*; a shop name with 
 ### Which family is this?
 <a id="decision-order"></a>
 
-Use the table above. If the word has a mid-word **`th`**, it is an [interests](interests.md) word (one of the six interest roots, then a vowel), a [label scope](predication.md#label-scope) word (any other root, then a vowel), or a [viewpoint lateral](roles.md#viewpoint-laterals) (a root follows **`th`**). Otherwise read both sides of the first **`x`** in this order:
+Use the table above. If the word has a mid-word **`th`**, it is an [interests](interests.md) word (one of the six interest roots, then a vowel, with an optional [emotion tail](interests.md#emotion-compose)), a [label scope](predication.md#label-scope) word (any other root, then a vowel), or a [viewpoint lateral](roles.md#viewpoint-laterals) (a root follows **`th`**). The root before **`th`** decides: after one of the six interest roots, letters that look like a root are always the emotion tail (`gudathamol`), never a lateral. Otherwise read both sides of the first **`x`** in this order:
 
 - The whole word is a span close such as **`xuxul`** → a **span** is closing.
 - After the role letter: one vowel, **`x`**, one vowel, then a span ending → a **span** is opening ([spans](spans.md)).
