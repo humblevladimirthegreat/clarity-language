@@ -96,6 +96,14 @@ The join still comes last when there is only one item, or none. How many items s
 >
 > "just Azawan."
 
+Single-item **-l** also covers English *just* in the sense *merely*: the one item is all there is, with nothing more to it.
+
+> `zazawan dagadal dal vahahal.`
+>
+> z-Azawan | [d-cat | d-and] | v-see
+>
+> "Azawan sees just a cat." — only a cat, nothing more
+
 A standalone join fills its slot with no items. In the object slot, `dal` is *nothing*; in the extra-noun slot, `bal` is *nobody*.
 
 > `zazawan dal vahahal.`

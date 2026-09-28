@@ -461,6 +461,22 @@ When only one `/ɡ/` adjective is still or no longer so, write the same word und
 
 **Compare with:** RESIDUE **`thamom`** says a finished outcome **still counts** on the tally, not that the act goes on. FORMER **`thunem`** retires a usual **pattern**; **`hewem`** says any state or act has stopped.
 
+#### Ever / never {#ever-never}
+
+English *has ever* / *has never* asks whether something happened at least once, at no particular time. Use *already* **`huham`** with *sometimes* **`har`** ([restrictors](restrictors.md)): the change has come, on some unnamed occasion. For *has never*, use bare **`hal`** (*never*).
+
+> `zazawan huham vezewel har.`
+>
+> z-Azawan | h-already | v-swim | h-sometimes
+>
+> "Azawan has swum at some point."
+
+> `zazawan vezewel hal.`
+>
+> z-Azawan | v-swim | h-never
+>
+> "Azawan has never swum."
+
 ### Notional (as-if framing)
 <a id="notional"></a>
 <a id="notional-mood"></a>

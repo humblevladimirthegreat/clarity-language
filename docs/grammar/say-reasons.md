@@ -53,6 +53,26 @@ English *If he'd left, the door would still be locked* is not this pole. Write b
 
 **Compare with:** [NOTIONAL](knowing.md#notional) is play (*as if*), not a bookmark now.
 
+### Remote and unreal conditions {#remote-unreal}
+
+**Needs:** [If](causation.md#if) · [Dependent clauses](dependents.md#dependent-clauses) · [stance numbers](numbers.md#number-as-stance-by-marker) · [NOTIONAL](knowing.md#notional)
+
+English *If Alahen swam, Azawan would walk* (past-tense *if*) says the condition is a long shot. Keep the open pole **`thodom barl`** and put *unlikely* **`thrul`** inside the dependent clause.
+
+> `zazawan vowogal thodom barl zalahen thrul vezewel.`
+>
+> z-Azawan | v-walk | [th-if | b-that-clause] | z-Alahen | th-unlikely | v-swim
+>
+> "If Alahen swam, Azawan would walk." — Alahen swimming is unlikely
+
+When the condition is known to be false (*If Alahen had left…*), keep the bookmark recipe from [factivity](#factivity) and add *suppose* **`thover`** inside the dependent. That marks the departure as imagined, not something that happened.
+
+> `zodol galagel thamom thevem bral humem barl zalahen thover vadebal.`
+>
+> [z-door | g-locked] | th-RESIDUE | [th-INFERRED | b-later] | [h-as-of.bookmark | b-that-clause] | z-Alahen | th-NOTIONAL-suppose | v-departure
+>
+> "If Alahen had left, the door would still be locked." — Alahen did not leave
+
 #### Epistemic *because* (no twin root)
 <a id="epistemic-because"></a>
 

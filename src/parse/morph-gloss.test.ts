@@ -135,6 +135,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("am", "additionally.open");
     expectLine("al", "additionally");
     expectLine("el", "in.other.words");
+    expectLine("ael", "in.fact");
     expectLine("ul", "except");
     expectLine("zazawan vezebal al bahazal.", "z-Azawan | v-sleep | [in | b-house]");
     expectLine("zodogalx al zagadal.", "z-dog-x | including | z-cat");

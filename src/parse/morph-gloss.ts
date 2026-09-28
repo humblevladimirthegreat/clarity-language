@@ -177,6 +177,8 @@ const HOOK_JOB: Record<string, string> = {
   an: "additionally.named",
   el: "in.other.words",
   em: "in.other.words.open",
+  ael: "in.fact",
+  aem: "in.fact.open",
   ol: "instead",
   om: "instead.open",
   ul: "except",

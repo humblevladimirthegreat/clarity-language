@@ -167,6 +167,14 @@ To ask *where?*, put the fill-ask blank **`bar`** after the hook (`ol bar` *wher
 >
 > "Azawan cooks for a family."
 
+When `/b/` is a person or group, **`el`** names who the act is meant to benefit: *cooks for Alahen* is the same *for*. The intended get is whatever the act brings them.
+
+> `zazawan vugugal el balahen.`
+>
+> z-Azawan | v-cook | [for | b-Alahen]
+>
+> "Azawan cooks for Alahen."
+
 **-l** is the exact extra. Frame **-m** waits for Intermediate, with the rest of the extra-noun grid.
 
 **Compare with:** *Additionally, Azawan walks* is a fronted hook whose next word is **not** `/b/` (`al zazawan vowogal`). *Like a duck* is still a hosted [simile](relations.md#similative). *Tells on behalf of Alahen* is [proxy](relations.md#proxy). Naming the **place of an event** as its own noun (*a sleep-place*, *that scream-place*) is a [role compound](roles.md#role-compounds) with vowel **`e`**, not this hook on the same clause.
@@ -480,6 +488,14 @@ To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`a
 > y-question | z-Azawan | d-book | [using | b-who] | v-write
 >
 > "How does Azawan write the book?"
+
+At the front of a sentence (no `/b/` after it), stacked **`ael`** is a discourse hook: **ae** ≈ add, ranked upward. **`ael …`** opens a sentence: **`ael …`** adds a point that goes further than what came before, like English *In fact, …* / *What's more, …*.
+
+> `ael zalahen vezebal.`
+>
+> in.fact | z-Alahen | v-sleep
+>
+> "In fact, Alahen sleeps."
 
 ### Somewhere, nowhere, everywhere {#place-indefinites}
 

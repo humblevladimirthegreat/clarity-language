@@ -53,6 +53,8 @@ You can **say** a named citation with a period to greet someone or to say a simp
 >
 > Your name, said as hello or goodbye.
 
+The greeting names **you**, not the person you greet, so it works the same for a stranger whose name you don't know and for a whole room: `SELFn.` said to a group is *hi, all*.
+
 **Compare with:** the same citation in a list or heading has no period and is not a greeting or goodbye.
 
 ### The three endings
