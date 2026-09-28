@@ -44,7 +44,8 @@ export function retieCore(
     }
   }
   try {
-    return rewriteParsedWord(parseWord(core), map, scope);
+    const parsed = parseWord(core);
+    return rewriteParsedWord(scope?.reshape?.(parsed) ?? parsed, map, scope);
   } catch {
     return null;
   }
@@ -133,7 +134,7 @@ function contentRootsAfterResume(
   map: ReadonlyMap<string, string>,
   scope: ResumeScope | undefined,
 ): string[] {
-  if (isContentResume(word)) {
+  if (isContentResume(word) && !scope?.isOverlay?.(word)) {
     const antecedents = resumeAntecedentRoots(roots, scope, word.raw);
     if (antecedents) {
       return mappedResumeRoots(roots, antecedents, map);
@@ -183,7 +184,7 @@ function rewriteSpanPayload(
     const editorial = /#\|?$/.exec(chunk)?.[0] ?? "";
     chunk = chunk.slice(0, chunk.length - editorial.length);
     const nested = scope
-      ? { stems: scope.stems, boundFor: scope.boundFor, occurrences: scope.occurrences, at: scope.at }
+      ? { stems: scope.stems, boundFor: scope.boundFor, occurrences: scope.occurrences, at: scope.at, isOverlay: scope.isOverlay, reshape: scope.reshape }
       : undefined;
     out += (retieCore(chunk, map, nested) ?? chunk) + editorial;
     i = end;
@@ -207,54 +208,23 @@ function rebuildX(
   left: string[],
   right: string[] | undefined,
 ): string | null {
-  const prefix = posPrefix(word);
-  const tail = endingAndPlural(word);
-  switch (family.xFamily) {
-    case "span":
-      return null;
-    case "role": {
-      const host = right?.[0] ?? "";
-      if (!family.roleVowel || !host) {
-        return null;
-      }
-      const ability = family.stanceVowel ? `x${family.stanceVowel}` : "";
-      return `${prefix}${family.roleVowel}x${host}${ability}${tail}`;
-    }
-    case "interest":
-    case "ability": {
-      if (!family.stanceVowel || left.length === 0) {
-        return null;
-      }
-      const hinge = family.xFamily === "interest" ? "th" : "x";
-      return `${prefix}${left.join("x")}${hinge}${family.stanceVowel}${tail}`;
-    }
-    case "lateral": {
-      const rightParts = right ?? [];
-      if (left.length !== 1 || rightParts.length === 0) {
-        return null;
-      }
-      return `${prefix}${left[0]}th${rightParts.join("x")}${tail}`;
-    }
-    case "numeric": {
-      const oldHost = family.leftRoots[0] ?? "";
-      const newHost = left[0] ?? "";
-      if (!oldHost || !newHost) {
-        return null;
-      }
-      const afterPrefix = word.raw.slice(prefix.length);
-      if (!afterPrefix.startsWith(oldHost)) {
-        return null;
-      }
-      return `${prefix}${newHost}${afterPrefix.slice(oldHost.length)}`;
-    }
-    case "compound": {
-      const rightParts = right ?? [];
-      if (left.length === 0 || rightParts.length === 0) {
-        return null;
-      }
-      return `${prefix}${left.join("x")}x${rightParts.join("x")}${tail}`;
-    }
-    default:
-      return null;
+  if (family.xFamily === "span") {
+    return null;
   }
+  // Swap each moved root in place, in order, so everything else in the word (role / stance /
+  // locus vowels, emotion horizon, landmark `o`, number stem, ending) stays exactly as written.
+  const prefix = posPrefix(word);
+  const oldRoots = [...family.leftRoots, ...(family.rightRoots ?? [])];
+  const newRoots = [...left, ...(right ?? [])];
+  let rest = word.raw.slice(prefix.length);
+  let out = "";
+  for (let i = 0; i < oldRoots.length; i++) {
+    const at = rest.indexOf(oldRoots[i]!);
+    if (at < 0) {
+      return null;
+    }
+    out += rest.slice(0, at) + newRoots[i]!;
+    rest = rest.slice(at + oldRoots[i]!.length);
+  }
+  return `${prefix}${out}${rest}`;
 }

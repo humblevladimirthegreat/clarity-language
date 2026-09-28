@@ -10,3 +10,4 @@ docs/grammar/.vitepress/dist
 tmp/
 docs/grammar/.vitepress/.temp/
 *.tsbuildinfo
+.eslintcache

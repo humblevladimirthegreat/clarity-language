@@ -46,7 +46,7 @@ When English would say *the most challenging*, you are still ranking, but you na
 
 English *much more* / *slightly more* adds **how large the gap is**, without giving a number. Write that extra detail as `/w/` immediately before the same shared adjective.
 
-> `zazawan zalahen zel wohul gamadam.`
+> `zazawan zalahen zel wohahal gamadam.`
 >
 > [z-Azawan | z-Alahen | z-rank/more | [w-ocean | g-challenge]]
 >
@@ -71,11 +71,11 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 >
 > "Alahen is as happy as Ahaben."
 
-**Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zazawan gamadam` *Azawan is challenging*. Use **`ae`** when two people share a height on the quality. *Walks like a duck* is resemblance ([simile](relations.md#similative) `hemum`), not a shared score on a named scale.
+**Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zazawan gamadam` *Azawan is challenging*. Use **`ae`** when two people share a height on the quality. *Walks like a duck* is resemblance ([simile](relations.md#similative) `homem`), not a shared score on a named scale.
 
 **Compare with:** English *both are challenging* is an *and*-list plus a shared adjective (`zazawan zalahen zal gamadam`): each has the quality. That is not a ranking and not a matching height. Use **`ae`** only for *as … as*.
 
-> `zazawan zalahen zaem gabadul.`
+> `zazawan zalahen zaem gabawel.`
 >
 > [z-Azawan | z-Alahen | z-equal-rank.open | g-bright]
 >
@@ -103,7 +103,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 | *haste* | `adehom` | `adehol` *dash* |
 | *agility* | `ahagum` | `ahagul` *field hockey* |
 | *intensity* | `ahegem` | `ahegel` *hockey* |
-| *ocean* | `wohul` | `ohul` *ocean* |
+| *ocean* | `wohahal` | `ohahal` *ocean* |
 
 #### English → Agalan {#beginner-english-to-agalan}
 
@@ -142,7 +142,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 **5.** *Alahen is much more intense than Azawan.*
 
 ::: details Show answer
-`zalahen zazawan zel wohul gahegem.`
+`zalahen zazawan zel wohahal gahegem.`
 
 [z-Alahen | z-Azawan | z-rank/more | [w-ocean | g-intensity]]
 :::
@@ -201,7 +201,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 *Ahaben is about as intense as Azawan.*
 :::
 
-**5.** `zahaben zalahen zel wohul gahagum.`
+**5.** `zahaben zalahen zel wohahal gahagum.`
 
 ::: details Show answer
 
@@ -371,18 +371,18 @@ Equality **`ae`** with a shared scale needs **two or more** names. **`ae`** with
 
 English *two meters taller* still ranks two people on one quality, and it also names **how large the gap is**. Keep the rank join and the shared scale adjective. After that adjective, write a **measure noun** (`/b/`): that noun is the **unit** (published abstract = SI name), and `/ɡ/` on the unit is the **amount** ([measure phrases](numbers-applied.md#measure-phrases)).
 
-> `zazawan zalahen zel gadavam bezezem gradul.`
+> `zazawan zalahen zel gadavem bezezem gradul.`
 >
 > [z-Azawan | z-Alahen | z-rank/more | [g-height | b-meter]] | g-two
 >
 > "Azawan is two meters taller than Alahen."
 
-**Related form:** vague *much* / *slightly* is shared `/w/` immediately before the scale adjective (`wohul`), not a counted `/b/`.
+**Related form:** vague *much* / *slightly* is shared `/w/` immediately before the scale adjective (`wohahal`), not a counted `/b/`.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. Full arity (**`ue`** / standalone / **`zer`**), sorted **`oe`**, distributive **`zal`**, a counted measure gap vs vague **`wohul`**, and manner **`/h/`** right after the join.
+Short drills for Intermediate. Try each item before opening **Show answer**. Full arity (**`ue`** / standalone / **`zer`**), sorted **`oe`**, distributive **`zal`**, a counted measure gap vs vague **`wohahal`**, and manner **`/h/`** right after the join.
 
 **Setting:** a weighing room
 
@@ -396,8 +396,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 | *heavy* | `aragam` | `aragal` *rock* |
 | *exertion* | `elevam` | `eleval` *lift* |
 | *big* | `elavam` | `elaval` *elephant* |
-| *gram* | `abayum` | `abayul` *pound* |
-| *ocean* | `wohul` | `ohul` *ocean* |
+| *gram* | `ababam` | `ababal` *pound* |
+| *ocean* | `wohahal` | `ohahal` *ocean* |
 | *intensity* | `ahegem` | `ahegel` *hockey* |
 | *lift* | `veleval` | `eleval` *lift* |
 
@@ -438,7 +438,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 **5.** *Alahen is two grams heavier than Azawan.*
 
 ::: details Show answer
-`zalahen zazawan zel garagam babayum gradul.`
+`zalahen zazawan zel garagam bababam gradul.`
 
 [z-Alahen | z-Azawan | z-rank/more | [g-heavy | b-gram]] | g-two
 :::
@@ -513,7 +513,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 *Alahen and Ahaben are exerted.*
 :::
 
-**5.** `zazawan zalahen zel garagam babayum graval.`
+**5.** `zazawan zalahen zel garagam bababam graval.`
 
 ::: details Show answer
 
@@ -522,7 +522,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 *Azawan is five grams heavier than Alahen.*
 :::
 
-**6.** `zahaben zazawan zel wohul gelevam.`
+**6.** `zahaben zazawan zel wohahal gelevam.`
 
 ::: details Show answer
 
@@ -565,7 +565,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 
 To score the shared adjective as of a dated now, write [*as-of*](relations.md#as-of) on `/w/` immediately before that `/ɡ/` word, with `/b/` between them. That snapshot does not retarget the verb; the clause still needs `/h/` *as-of* if the event also scores against that now.
 
-> `zazawan zalahen zel wenum b_#22,7 gamadam.`
+> `zazawan zalahen zel wenem b_#22,7 gamadam.`
 >
 > [z-Azawan | z-Alahen | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 >
@@ -577,7 +577,7 @@ To score the shared adjective as of a dated now, write [*as-of*](relations.md#as
 
 English *worse than Average* (or *Typical*, *Professional*, *my bar*) ranks someone against a **named standard**, not against another person you already introduced. Use reverse rank **`ue`** on a positive or neutral scale: the judged name first, the named bar second (**-n**), then the shared adjective. The judged name sits **below** that bar.
 
-> `zazawan zolan zuel gezehel.`
+> `zazawan zegun zuel gezehel.`
 >
 > [z-Azawan | z-Professional | z-rank/less | g-sing]
 >
@@ -589,29 +589,29 @@ Each bar is a hosted overlay: published root plus **-n** under `/z/` `/d/` `/b/`
 
 | Agalan | Use | English | Same root as |
 |---------|-----|---------|----------------|
-| **`zayen`** | named Average bar | *Average* (mean of the relevant population) | `ayel` *yin-yang* |
-| **`zahun`** | named Typical bar | *Typical* (usual / modal case) | `ahul` *hamster* |
-| **`zemun`** | speaker’s **normative** bar | *my standard* | `emul` *mirror* |
+| **`zeyen`** | named Average bar | *Average* (mean of the relevant population) | `eyel` *yin-yang* |
+| **`zahen`** | named Typical bar | *Typical* (usual / modal case) | `ahel` *hamster* |
+| **`zomen`** | speaker’s **normative** bar | *my standard* | `omel` *mirror* |
 | **`zezon`** | named peer bar | *Social* (in-group) | `ezol` *silhouettes* |
-| **`zolan`** | named expert bar | *Professional* (role standard) | `olal` *lab coat* |
-| **`zogon`** | named universal class | *Everyone* | `ogol` *globe* |
+| **`zegun`** | named expert bar | *Professional* (role standard) | `egul` *lab coat* |
+| **`zolon`** | named universal class | *Everyone* | `olol` *globe* |
 
 <a id="mine-vs-speaker"></a>
 
-**`zeman`** is where the speaker sits on the scale (current skill). **`zemun`** is the bar the speaker applies. Ordinary people as bars are ordinary **-n** names (`zalahen`). *Walks like a duck* is [simile](relations.md#similative) (`hemum`), not this *my standard* bar.
+**`zamun`** is where the speaker sits on the scale (current skill). **`zomen`** is the bar the speaker applies. Ordinary people as bars are ordinary **-n** names (`zalahen`). *Walks like a duck* is [simile](relations.md#similative) (`homem`), not this *my standard* bar.
 
-Single-item `zazawan zuel gamadam` is *the least challenging* in the group in play. **`zogon`** as the second name **names** the universal class as the bar. Standalone closed **`zual`** / stock **`zuan`** stay [join](joins.md#standalone-phrase) *everything / everyone* in other slots — not this overlay.
+Single-item `zazawan zuel gamadam` is *the least challenging* in the group in play. **`zolon`** as the second name **names** the universal class as the bar. Standalone closed **`zual`** / stock **`zuan`** stay [join](joins.md#standalone-phrase) *everything / everyone* in other slots — not this overlay.
 
 | Agalan | Reading |
 |---------|---------|
-| `zeman zolan zuel gezehel` | I am worse at singing than Professional |
-| `zebeyum zayen zuem gagazam` | soft: the draft is somewhat less clear than Average |
-| `zazawan zemun zuel gazaham` | Azawan is less happy than **my personal standard** |
-| `zazawan zeman zuel gezehel` | Azawan is less skilled at singing than **I am** (performance) |
-| `zeman zezon zuel gamadam` | I am less challenging than Social |
-| `zeman zahun zuel gamadam` | I am less challenging than Typical |
-| `zeman zogon zuel gamadam` | I am less challenging than Everyone |
-| `zeman zalahen zuel gezehel` | I am less skilled at singing than **Alahen** (ordinary person comparee) |
+| `zamun zegun zuel gezehel` | I am worse at singing than Professional |
+| `zebeyum zeyen zuem gagazam` | soft: the draft is somewhat less clear than Average |
+| `zazawan zomen zuel gazaham` | Azawan is less happy than **my personal standard** |
+| `zazawan zamun zuel gezehel` | Azawan is less skilled at singing than **I am** (performance) |
+| `zamun zezon zuel gamadam` | I am less challenging than Social |
+| `zamun zahen zuel gamadam` | I am less challenging than Typical |
+| `zamun zolon zuel gamadam` | I am less challenging than Everyone |
+| `zamun zalahen zuel gezehel` | I am less skilled at singing than **Alahen** (ordinary person comparee) |
 
 ### Interest benchmarks (*enough* / *too*) {#interest-benchmarks}
 
@@ -619,28 +619,28 @@ English *enough* and *too* compare against **what an interest requires**. Agalan
 
 | Agalan | Use | English | Same root as |
 |---------|-----|---------|----------------|
-| **`zegan`** | interest bar, interest not named | *Some-interest* (what an interest requires) | `egal` *egg* |
-| **`zehen`** | survival interest bar | *what safety needs* | `ehel` *shield* |
-| **`zunen`** | relatedness interest bar | *what connection needs* | `unel` *knot* |
-| **`zudan`** | competence interest bar | *what getting it done needs* | `udal` *toolbox* |
+| **`zugen`** | interest bar, interest not named | *Some-interest* (what an interest requires) | `ugel` *egg* |
+| **`zuhon`** | survival interest bar | *what safety needs* | `uhol` *shield* |
+| **`zonan`** | relatedness interest bar | *what connection needs* | `onal` *knot* |
+| **`zudun`** | competence interest bar | *what getting it done needs* | `udul` *toolbox* |
 | **`zaban`** | autonomy interest bar | *what choice needs* | `abal` *ballot* |
-| **`zozen`** | pleasure interest bar | *what enjoyment needs* | `ozel` *strawberry* |
+| **`zozun`** | pleasure interest bar | *what enjoyment needs* | `ozul` *strawberry* |
 
 Tie **`ae`** against a interest bar is *enough*. Rank **`e`** is *too much*, and **`ue`** is *not enough*.
 
-> `zedehel zegan zael gral.`
+> `zedehel zugen zael gral.`
 >
 > [z-tea | z-Some-interest | z-equal-rank | g-amount]
 >
 > "There is enough tea."
 
-> `zedehel zegan zel gral.`
+> `zedehel zugen zel gral.`
 >
 > [z-tea | z-Some-interest | z-rank/more | g-amount]
 >
 > "There is too much tea."
 
-> `zedehel zegan zuel gral.`
+> `zedehel zugen zuel gral.`
 >
 > [z-tea | z-Some-interest | z-rank/less | g-amount]
 >
@@ -648,7 +648,7 @@ Tie **`ae`** against a interest bar is *enough*. Rank **`e`** is *too much*, and
 
 With a quality as the scale, the same pattern gives *too ADJ* and *ADJ enough*. A specific interest bar says which interest sets the limit.
 
-> `zedehel zehen zel gahadol.`
+> `zedehel zuhon zel gahadol.`
 >
 > [z-tea | z-Survival-interest | z-rank/more | g-hot]
 >
@@ -656,31 +656,31 @@ With a quality as the scale, the same pattern gives *too ADJ* and *ADJ enough*. 
 
 To say **whose** need it is, put that person in `/b/` right after the shared scale.
 
-> `zedehel zegan zael gral balahen.`
+> `zedehel zugen zael gral balahen.`
 >
 > [z-tea | z-Some-interest | z-equal-rank | [g-amount | b-Alahen]]
 >
 > "There is enough tea for Alahen."
 
-**Compare with:** **`zemun`** (*my standard*) is what the speaker **prefers**. **`zegan`** is what the interest **requires**. `zedehel zemun zel gral` is *more tea than I like*, and `zedehel zegan zel gral` is *more tea than is needed*.
+**Compare with:** **`zomen`** (*my standard*) is what the speaker **prefers**. **`zugen`** is what the interest **requires**. `zedehel zomen zel gral` is *more tea than I like*, and `zedehel zugen zel gral` is *more tea than is needed*.
 
 ### Vague amounts (*many* / *few*) {#vague-amounts}
 
 English *many* and *few* compare against an unstated baseline. Agalan always names it: put a bar in the list and rank on [amount](#amount-scale). Pick the bar that you mean.
 
-> `zagadalx zahun zel gral.`
+> `zagadalx zahen zel gral.`
 >
 > [z-cat-x | z-Typical | z-rank/more | g-amount]
 >
 > "There are many cats (more than usual)."
 
-> `zagadalx zahun zuel gral.`
+> `zagadalx zahen zuel gral.`
 >
 > [z-cat-x | z-Typical | z-rank/less | g-amount]
 >
 > "There are few cats (fewer than usual)."
 
-> `zagadalx zemun zel gram.`
+> `zagadalx zomen zel gram.`
 >
 > [z-cat-x | z-my-standard | z-rank/more | g-amount.about]
 >
@@ -688,17 +688,17 @@ English *many* and *few* compare against an unstated baseline. Agalan always nam
 
 | English | Bar |
 |---------|-----|
-| *many* / *few* (for here) | **`zahun`** *Typical* |
-| *a lot* / *not many* (on average) | **`zayen`** *Average* |
-| *too many* / *too few* (to my taste) | **`zemun`** *my standard* |
-| *too much* / *enough* / *not enough* | **`zegan`** or a specific interest bar |
+| *many* / *few* (for here) | **`zahen`** *Typical* |
+| *a lot* / *not many* (on average) | **`zeyen`** *Average* |
+| *too many* / *too few* (to my taste) | **`zomen`** *my standard* |
+| *too much* / *enough* / *not enough* | **`zugen`** or a specific interest bar |
 
 The bar is never dropped. A single-item `zagadalx zel gral` already means *the most cats* (a [superlative](#superlatives)).
 
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**. The *than*-conjunct is the named bar; **`zeman`** is performance, **`zemun`** is *my standard*.
+Short drills for Advanced. Try each item before opening **Show answer**. The *than*-conjunct is the named bar; **`zamun`** is performance, **`zomen`** is *my standard*.
 
 **Setting:** a talent contest
 
@@ -712,21 +712,21 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *sing* | `ezehel` | |
 | *artistry* | `ebudam` | `ebudal` *paintbrush* |
 | *showmanship* | `ahudom` | `ahudol` *hotdog* |
-| *Average* | `ayen` | `ayel` *yin-yang* |
-| *Typical* | `ahun` | `ahul` *hamster* |
-| *Professional* | `olan` | `olal` *lab coat* |
+| *Average* | `eyen` | `eyel` *yin-yang* |
+| *Typical* | `ahen` | `ahel` *hamster* |
+| *Professional* | `egun` | `egul` *lab coat* |
 | *Social* | `ezon` | `ezol` *silhouettes* |
-| *my standard* | `emun` | `emul` *mirror* |
-| *speaker* | `eman` | |
-| *Everyone* | `ogon` | `ogol` *globe* |
+| *my standard* | `omen` | `omel` *mirror* |
+| *speaker* | `amun` | |
+| *Everyone* | `olon` | `olol` *globe* |
 | *challenge* | `gamadam` | |
-| *as-of.ledger* | `wenum` | |
-| *Some-interest* | `egan` | `egal` *egg* |
-| *Survival-interest* | `ehen` | `ehel` *shield* |
-| *Relatedness-interest* | `unen` | `unel` *knot* |
-| *Competence-interest* | `udan` | `udal` *toolbox* |
+| *as-of.ledger* | `wenem` | |
+| *Some-interest* | `ugen` | `ugel` *egg* |
+| *Survival-interest* | `uhon` | `uhol` *shield* |
+| *Relatedness-interest* | `onan` | `onal` *knot* |
+| *Competence-interest* | `udun` | `udul` *toolbox* |
 | *Autonomy-interest* | `aban` | `abal` *ballot* |
-| *Pleasure-interest* | `ozen` | `ozel` *strawberry* |
+| *Pleasure-interest* | `ozun` | `ozul` *strawberry* |
 | *artistry* | `ebudam` | `ebudal` *paintbrush* |
 
 #### English → Agalan {#advanced-english-to-agalan}
@@ -734,7 +734,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 **1.** *Azawan is worse at singing than Professional.*
 
 ::: details Show answer
-`zazawan zolan zuel gezehel.`
+`zazawan zegun zuel gezehel.`
 
 [z-Azawan | z-Professional | z-rank/less | g-sing]
 :::
@@ -742,7 +742,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 **2.** *Azawan is less skilled at singing than I am.*
 
 ::: details Show answer
-`zazawan zeman zuel gezehel.`
+`zazawan zamun zuel gezehel.`
 
 [z-Azawan | z-speaker | z-rank/less | g-sing]
 :::
@@ -750,7 +750,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 **3.** *Alahen is less artistic than Typical.*
 
 ::: details Show answer
-`zalahen zahun zuel gebudam.`
+`zalahen zahen zuel gebudam.`
 
 [z-Alahen | z-Typical | z-rank/less | g-artistry]
 :::
@@ -758,7 +758,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 **4.** *I am less showy than my standard.*
 
 ::: details Show answer
-`zeman zemun zuel gahudom.`
+`zamun zomen zuel gahudom.`
 
 [z-speaker | z-my-standard | z-rank/less | g-showmanship]
 :::
@@ -766,7 +766,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 **5.** *Alahen is somewhat worse at singing than Average.*
 
 ::: details Show answer
-`zalahen zayen zuem gezehel.`
+`zalahen zeyen zuem gezehel.`
 
 [z-Alahen | z-Average | z-rank/less.open | g-sing]
 :::
@@ -774,7 +774,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 **6.** *As of 22 July, Azawan is more challenging than Alahen.*
 
 ::: details Show answer
-`zazawan zalahen zel wenum b_#22,7 gamadam.`
+`zazawan zalahen zel wenem b_#22,7 gamadam.`
 
 [z-Azawan | z-Alahen | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 :::
@@ -782,7 +782,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 **7.** *Azawan has enough artistry (as much as is needed).*
 
 ::: details Show answer
-`zazawan zegan zael gebudam.`
+`zazawan zugen zael gebudam.`
 
 [z-Azawan | z-Some-interest | z-equal-rank | g-artistry]
 :::
@@ -790,7 +790,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 **8.** *Ahaben is too showy to be safe.*
 
 ::: details Show answer
-`zahaben zehen zel gahudom.`
+`zahaben zuhon zel gahudom.`
 
 [z-Ahaben | z-Survival-interest | z-rank/more | g-showmanship]
 :::
@@ -798,14 +798,14 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 **9.** *Alahen sings less than connection needs.*
 
 ::: details Show answer
-`zalahen zunen zuel gezehel.`
+`zalahen zonan zuel gezehel.`
 
 [z-Alahen | z-Relatedness-interest | z-rank/less | g-sing]
 :::
 
 #### Agalan → English {#advanced-agalan-to-english}
 
-**1.** `zeman zezon zuel gezehel.`
+**1.** `zamun zezon zuel gezehel.`
 
 ::: details Show answer
 
@@ -814,7 +814,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 *I am worse at singing than Social.*
 :::
 
-**2.** `zeman zalahen zuel gahudom.`
+**2.** `zamun zalahen zuel gahudom.`
 
 ::: details Show answer
 
@@ -823,7 +823,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 *I am less showy than Alahen.*
 :::
 
-**3.** `zazawan zemun zuem gebudam.`
+**3.** `zazawan zomen zuem gebudam.`
 
 ::: details Show answer
 
@@ -832,7 +832,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 *Azawan is somewhat less artistic than my standard.*
 :::
 
-**4.** `zahaben zolan zuel gezehel.`
+**4.** `zahaben zegun zuel gezehel.`
 
 ::: details Show answer
 
@@ -841,7 +841,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 *Ahaben is worse at singing than Professional.*
 :::
 
-**5.** `zazawan zayen zuem gahudom.`
+**5.** `zazawan zeyen zuem gahudom.`
 
 ::: details Show answer
 
@@ -850,7 +850,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 *Azawan is somewhat less showy than Average.*
 :::
 
-**6.** `zazawan zalahen zel wenum b_#22,7 gamadam.`
+**6.** `zazawan zalahen zel wenem b_#22,7 gamadam.`
 
 ::: details Show answer
 
@@ -859,7 +859,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 *As of 22 July, Azawan is more challenging than Alahen.*
 :::
 
-**7.** `zazawan zudan zael gezehel.`
+**7.** `zazawan zudun zael gezehel.`
 
 ::: details Show answer
 
@@ -877,7 +877,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 *Ahaben is showier than free choice needs.*
 :::
 
-**9.** `zalahen zozen zuel gebudam.`
+**9.** `zalahen zozun zuel gebudam.`
 
 ::: details Show answer
 

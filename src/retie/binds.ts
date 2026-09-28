@@ -7,6 +7,7 @@ import { parse } from "../parse/index.js";
 import { letterPrefix } from "../parse/resolve.js";
 
 import { contentStemRoots } from "./resume.js";
+import { asRetieTables, type RetieTables } from "./tables.js";
 
 export type ContentBind = {
   /** Resume spelling as written (`zazar`). */
@@ -104,14 +105,15 @@ export function lengthenCollidingResumes(
   beforeText: string,
   afterText: string,
   map: ReadonlyMap<string, string>,
-  tables: ClassifyTables,
+  tables: ClassifyTables | RetieTables,
 ): { text: string; lengthened: { from: string; to: string }[] } {
-  const before = contentBinds(beforeText, tables);
+  const { old, current } = asRetieTables(tables);
+  const before = contentBinds(beforeText, old);
   let text = afterText;
   const lengthened: { from: string; to: string }[] = [];
   if (!before) return { text, lengthened };
   for (let attempt = 0; attempt < 8; attempt++) {
-    const after = contentBinds(text, tables);
+    const after = contentBinds(text, current);
     if (!after || after.length !== before.length) break;
     const drift = bindDrift(before, after, map).find(
       (d) => d.after.roots.length === 1 && d.expected.length === 1 && d.after.roots[0] === letterPrefix(d.expected[0]!),
@@ -122,7 +124,7 @@ export function lengthenCollidingResumes(
     const full = fullResumeSpelling(word, drift.after.roots[0]!, drift.expected[0]!);
     const next = full ? replaceNthWord(text, drift.after.raw, nth, full) : null;
     if (!full || !next) break;
-    const check = contentBinds(next, tables);
+    const check = contentBinds(next, current);
     if (!check || bindDrift(before, check, map).some((d) => d.index === drift.index)) break;
     lengthened.push({ from: drift.after.raw, to: full });
     text = next;

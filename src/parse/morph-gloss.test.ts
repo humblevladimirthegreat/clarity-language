@@ -44,13 +44,13 @@ describe("morphGlossLine — clause joins go between clauses", () => {
   });
   it("glosses a resume of a resume as the original referent", () => {
     expectLine(
-      "zazawan thamal vowogal xon zazar vezehel xon zazar vezebal.",
+      "zazawan thumal vowogal xon zazar vezehel xon zazar vezebal.",
       "[z-Azawan | th-plan-atlas | v-walk | x-or-else | z-←Azawan | v-sing | x-or-else | z-←Azawan | v-sleep]",
     );
   });
   it("glosses the sequence fallback after an attempt", () => {
     expectLine(
-      "zazawan theder vowogal xon zazar vezehel.",
+      "zazawan thudor vowogal xon zazar vezehel.",
       "[z-Azawan | th-ATTEMPT-trial | v-walk | x-or-else | z-←Azawan | v-sing]",
     );
   });
@@ -79,13 +79,13 @@ describe("morphGlossLine — SHARED only where it can describe the join", () => 
 
 describe("morphGlossLine — glosses.md single words", () => {
   it("senses-are-separate-roots table", () => {
-    expectLine("zemal", "z-microphone");
-    expectLine("zemam", "z-performance");
-    expectLine("zeman", "z-speaker");
+    expectLine("zamul", "z-microphone");
+    expectLine("zamum", "z-performance");
+    expectLine("zamun", "z-speaker");
     expectLine("gazahal", "g-smile");
     expectLine("gazaham", "g-happy");
-    expectLine("hevel", "h-fishing");
-    expectLine("thevem", "th-WITNESSED");
+    expectLine("hunol", "h-fishing");
+    expectLine("thunom", "th-WITNESSED");
     expectLine("gahazam", "g-home");
   });
 
@@ -100,10 +100,10 @@ describe("morphGlossLine — glosses.md single words", () => {
 
   it("mid-word x families", () => {
     expectLine("uhudexaloden", "wish-x-guidance");
-    expectLine("yabubaxazovan", "y-Abuba-x-Azovan");
+    expectLine("yabebuxazovan", "y-Abebu-x-Azovan");
     expectLine("zuzuhexagavexedehen", "z-Uzuhe-x-Agave-x-Edehen");
     expectLine("vowogaxel", "v-walk-unable-temporary");
-    expectLine("thudathem", "th-competence-ought-offered");
+    expectLine("thuduthem", "th-competence-ought-offered");
     expectLine("zaxezeber", "z-agent-x-speech");
     expectLine("zaxavadal", "z-agent-x-fight");
     expectLine("zaxavadam", "z-agent-x-struggle");
@@ -140,8 +140,8 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zodogalx al zagadal.", "z-dog-x | including | z-cat");
     expectLine("zazawan ul bezedel vowogal oel bedehal.", "z-Azawan | [from | b-station] | v-walk | [toward | b-train]");
     expectLine("zazawan vezebal welavam al bahazal.", "z-Azawan | v-sleep | [[w-very | in] | b-house]");
-    expectLine("zebedelx wal ul zazavol.", "z-plate-x | [w-never | except] | z-salad");
-    expectLine("zazawan welavam hemum badagul vowogal.", "z-Azawan | [[w-very | h-like] | b-duck] | v-walk");
+    expectLine("zebedelx wal ul zazavul.", "z-plate-x | [w-never | except] | z-salad");
+    expectLine("zazawan welavam homem badagul vowogal.", "z-Azawan | [[w-very | h-like] | b-duck] | v-walk");
     expectLine("hal", "h-never");
     expectLine("har", "h-sometimes");
     expectLine("yol zahaben vowogal har.", "y-question | z-Ahaben | v-walk | h-when");
@@ -170,15 +170,15 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("yalahexen", "y-Alahen-minutes");
     expectLine("yael", "y-yes");
     expectLine("yol", "y-question");
-    expectLine("zehan", "z-listener");
+    expectLine("zohen", "z-listener");
     expectLine("zohan", "z-interlocutors");
-    expectLine("zemanx", "z-speaker-x");
-    expectLine("zehanx", "z-listener-x");
-    expectLine("thodem", "th-LIVE");
-    expectLine("thomom", "th-RESIDUE");
-    expectLine("thenem", "th-FORMER");
-    expectLine("thamar", "th-plan-sketch");
-    expectLine("gugol", "g-SAME");
+    expectLine("zamunx", "z-speaker-x");
+    expectLine("zohenx", "z-listener-x");
+    expectLine("thodum", "th-LIVE");
+    expectLine("thamom", "th-RESIDUE");
+    expectLine("thunem", "th-FORMER");
+    expectLine("thumar", "th-plan-sketch");
+    expectLine("gogal", "g-SAME");
   });
 
   it("fill-ask zar is z-who", () => {
@@ -191,7 +191,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("derl", "d-to-clause");
     expectLine("durl", "d-lest-clause");
     expectLine("darm", "d-that-clause.open");
-    expectLine("thazexel", "th-ABIL-unable-temporary");
+    expectLine("thezexel", "th-ABIL-unable-temporary");
   });
 
   it("lexicon senses use packed role English when present", () => {
@@ -203,13 +203,13 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("gelavam", "g-big");
     expectLine("al bahazal", "in | b-house");
     expectLine("ael bahavel", "using | b-hammer");
-    expectLine("hemum", "h-like");
-    expectLine("gemum", "g-like");
-    expectLine("gobum", "g-part-of");
+    expectLine("homem", "h-like");
+    expectLine("gomem", "g-like");
+    expectLine("gabom", "g-part-of");
     expectLine("gaham", "g-contents");
-    expectLine("guwom", "g-material");
-    expectLine("gagem", "g-origin");
-    expectLine("hazam", "h-between");
+    expectLine("guwam", "g-material");
+    expectLine("gagum", "g-origin");
+    expectLine("hozam", "h-between");
     expectLine("zahahal", "z-eye");
     expectLine("hahehol", "h-hash");
     expectLine("yam", "y-soft-statement");
@@ -223,39 +223,39 @@ describe("morphGlossLine — glosses.md single words", () => {
 describe("morphGlossLine — glosses.md dialogue turns", () => {
   it("inclusive census turn", () => {
     expectLine(
-      "yael zeman zam zehan zal gazaham.",
+      "yael zamun zam zohen zal gazaham.",
       "y-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-happy]",
     );
   });
 
   it("ability + value motive", () => {
     expectLine(
-      "yuel zeman vowogaxel thudathom.",
+      "yuel zamun vowogaxel thuduthom.",
       "y-no | z-speaker | v-walk-unable-temporary | th-competence-motive-internal",
     );
   });
 
   it("numbered alternative + unmet pleasure", () => {
     expectLine(
-      "xrebul zehegom grewol zemanx thozethur.",
+      "xrebul zehegom grewol zamunx thozuthur.",
       "x-starting-with | [z-problem | g-1st] | z-speaker-x | th-pleasure-unmet-passing",
     );
   });
 
   it("literal key is not ideation solution", () => {
-    expectLine("zegehol wazexel.", "z-key | w-ABIL-unable-temporary");
+    expectLine("zegehul wezexel.", "z-key | w-ABIL-unable-temporary");
   });
 
   it("inclusive we", () => {
     expectLine(
-      "yael xezadam zohan thamar vowogal vul.",
+      "yael xezadam zohan thumar vowogal vul.",
       "y-yes | x-therefore | z-interlocutors | th-plan-sketch | [v-walk | v-not]",
     );
   });
 
   it("resume with in-text antecedent", () => {
     expectLine(
-      "yuhudexazovan. xezel zuhur thevem zerehel.",
+      "yuhudexazovan. xazel zuhur thunom zerehel.",
       "y-Uhude-x-Azovan . x-however | z-←Uhude-x-Azovan | th-WITNESSED | z-rain",
     );
   });
@@ -280,7 +280,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("fails a sense mismatch with expected/actual", () => {
-    const result = compareMorphGloss("zeman", "z-microphone", tables);
+    const result = compareMorphGloss("zamun", "z-microphone", tables);
     assert.equal(result.ok, false);
     assert.equal(result.expected, "z-microphone");
     assert.equal(result.actual, "z-speaker");
@@ -318,7 +318,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("ordinary -l on an interest host root uses literal sense, not interest overlay", () => {
-    expectLine("zazawan gunel balahen", "z-Azawan | [g-knot | b-Alahen]");
+    expectLine("zazawan gonal balahen", "z-Azawan | [g-knot | b-Alahen]");
   });
 
   it("morphRedundantWithLoose allows single-word citation skips", () => {
@@ -374,7 +374,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("round-trips the yael census example block", () => {
-    const md = `> \`yael zeman zam zehan zal gazaham.\`
+    const md = `> \`yael zamun zam zohen zal gazaham.\`
 >
 > y-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-happy]
 >
@@ -387,11 +387,11 @@ describe("compareMorphGloss", () => {
   });
 
   it("values bake stance and ending grain", () => {
-    expectLine("zebezol gunethal", "z-present | g-relatedness-met-lasting");
-    expectLine("zabezum wabathur gobem", "z-gathering | [w-autonomy-unmet-passing | g-stimulus]");
-    expectLine("zezebel wudathurar gobem", "z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]");
-    expectLine("zebeyum gudathamor", "z-draft | g-competence-met-any-term-INTERNAL-SURGING");
-    expectLine("gunethalum", "g-relatedness-met-lasting-UNPLACED-FLOWING");
+    expectLine("zebezol gonathal", "z-present | g-relatedness-met-lasting");
+    expectLine("zabezum wabathur gobom", "z-gathering | [w-autonomy-unmet-passing | g-stimulus]");
+    expectLine("zezebel wuduthurar gobom", "z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]");
+    expectLine("zebeyum guduthamor", "z-draft | g-competence-met-any-term-INTERNAL-SURGING");
+    expectLine("gonathalum", "g-relatedness-met-lasting-UNPLACED-FLOWING");
   });
 
   it("span interiors: cite and aside gloss English; mention passes through", () => {
@@ -423,7 +423,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("quasi numeric derivation is English", () => {
-    expectLine("zahaben gunelebezalrubul", "z-Ahaben | g-friend-l-quasi");
+    expectLine("zahaben gonalebezalrubul", "z-Ahaben | g-friend-l-quasi");
   });
 
   it("abstract numeric join is -m in the gloss", () => {
@@ -451,8 +451,8 @@ describe("morphGlossLine — extra fixtures", () => {
 describe("morphGlossLine — th stance letter", () => {
   it("glosses stance moods, /w/ on th, and th poles with stand-ins", () => {
     expectLine("thovom zazawan vehahel.", "th-MAY | z-Azawan | v-sit");
-    expectLine("zazawan wazaham thodem vahahal ahahalul.", "z-Azawan | [w-happy | th-LIVE] | v-see | eye-leave");
-    expectLine("thabem barl zazawan vehahel.", "[th-because | b-that-clause] | z-Azawan | v-sit");
+    expectLine("zazawan wazaham thodum vahahal ahahalul.", "z-Azawan | [w-happy | th-LIVE] | v-see | eye-leave");
+    expectLine("theram barl zazawan vehahel.", "[th-because | b-that-clause] | z-Azawan | v-sit");
     expectLine("thexal zazawan vehahel xuxul.", "th-ASIDE.multi[z-Azawan | v-sit]");
   });
 
@@ -463,8 +463,8 @@ describe("morphGlossLine — th stance letter", () => {
 
 describe("morphGlossLine — stance joins and emphatic prohibition", () => {
   it("glosses /th/ join fences", () => {
-    expectLine("zazawan vowogal thevem thul.", "z-Azawan | v-walk | th-WITNESSED | th-not");
-    expectLine("zazawan vowogal thabem balahen thul.", "z-Azawan | v-walk | [th-because | b-Alahen] | th-not");
+    expectLine("zazawan vowogal thunom thul.", "z-Azawan | v-walk | th-WITNESSED | th-not");
+    expectLine("zazawan vowogal theram balahen thul.", "z-Azawan | v-walk | [th-because | b-Alahen] | th-not");
   });
 
   it("glosses yul yul", () => {

@@ -8,12 +8,13 @@ import {
   DEFAULT_SELF_ROOT,
   eligibleNames,
   nameBanReason,
-  SUGGESTED_ROOTS,
+  SUGGESTED_EMOJI,
   suggestedNames,
   fillSelf,
   hasSelfSlot,
   selfGlossEnglish,
 } from "./learner-name.js";
+import { CLOSED } from "./closed-roots.js";
 import { parseOverlayCsv, parsePublishedCsv } from "./lexicon-search.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -29,11 +30,14 @@ describe("eligibleNames", () => {
 
   it("bans only confusing names, with a reason", () => {
     const reason = (root: string) => nameBanReason(rows.find((row) => row.clarity === root)!, overlays);
-    for (const root of ["ema", "eha", "oha", "anu", "azawa", "alahe", "ahabe", "agaza", "ehu", "ovo"]) {
+    const roles = [CLOSED.microphone, CLOSED.headphones, CLOSED.handshake, CLOSED.neutral];
+    const cast = [CLOSED.swan, CLOSED.lion, CLOSED.hibiscus];
+    // `eha` (DECISION ✅) and `ovo` (MAY 💭) + **-n** are grammar words.
+    for (const root of [...roles, ...cast, CLOSED.glasses, "eha", "ovo"]) {
       assert.equal(eligibleRoots.has(root), false, root);
       assert.ok(reason(root), root);
     }
-    assert.match(reason("alahe")!, /Alahen/);
+    assert.match(reason(CLOSED.lion)!, /Alahen/);
     const flag = rows.find((row) => /[\u{1F1E6}-\u{1F1FF}]/u.test(row.emoji))!;
     assert.match(nameBanReason(flag, overlays)!, /country/);
   });
@@ -42,7 +46,7 @@ describe("eligibleNames", () => {
 describe("suggestedNames", () => {
   it("offers all hand-picked names, each allowed and with both senses", () => {
     const suggested = suggestedNames(rows);
-    assert.equal(suggested.length, SUGGESTED_ROOTS.length);
+    assert.equal(suggested.length, SUGGESTED_EMOJI.length);
     for (const option of suggested) {
       assert.ok(eligibleRoots.has(option.root), option.root);
       assert.ok(option.concrete && option.abstract, option.root);
@@ -53,9 +57,9 @@ describe("suggestedNames", () => {
 
 describe("fillSelf", () => {
   it("fills words with the default speaker root", () => {
-    assert.equal(fillSelf("zSELFn vowogal."), "zeman vowogal.");
-    assert.equal(fillSelf("SELFn."), "eman.");
-    assert.equal(DEFAULT_SELF_ROOT, "ema");
+    assert.equal(DEFAULT_SELF_ROOT, CLOSED.microphone);
+    assert.equal(fillSelf("zSELFn vowogal."), `z${CLOSED.microphone}n vowogal.`);
+    assert.equal(fillSelf("SELFn."), `${CLOSED.microphone}n.`);
   });
 
   it("fills gloss slots with the gloss English", () => {

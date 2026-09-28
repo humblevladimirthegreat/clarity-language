@@ -145,7 +145,7 @@ describe("inspectText", () => {
     assert.equal(interest.why?.line, "interests (interest + th)");
     assert.equal(interest.why?.href, "interests.html");
 
-    const role = inspectText("zaxuzul", tables).tokens[0];
+    const role = inspectText("zaxozezol", tables).tokens[0];
     assert.equal(role?.kind, "word");
     if (role?.kind !== "word") return;
     assert.equal(role.why?.line, "role compound");
@@ -155,7 +155,7 @@ describe("inspectText", () => {
 
 describe("inspectText — phrase brackets", () => {
   it("marks bracket opens and closes on word tokens", () => {
-    const shown = inspectText("yael zeman zam zehan zal gazaham.", tables)
+    const shown = inspectText("yael zamun zam zohen zal gazaham.", tables)
       .tokens.filter((token) => token.kind === "word")
       .map((token) =>
         token.kind === "word"
@@ -163,7 +163,7 @@ describe("inspectText — phrase brackets", () => {
           : "",
       )
       .join(" ");
-    assert.equal(shown, "yael [[zeman zam] zehan zal gazaham]");
+    assert.equal(shown, "yael [[zamun zam] zohen zal gazaham]");
   });
 
   it("labels a spoken span on its open word", () => {

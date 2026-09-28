@@ -1,40 +1,44 @@
 /**
  * The learner's own Agalan name: one published root + **-n**, filling `SELF` slots
- * in grammar examples. Unset → the speaker special **`eman`**.
+ * in grammar examples. Unset → the speaker special (microphone + **-n**).
  */
+import { CLOSED, namedEnglish } from "./closed-roots.js";
 import type { OverlayRow, PublishedRow } from "./lexicon-search.js";
 
-/** Root shown in `SELF` slots when the learner has not chosen a name. */
-export const DEFAULT_SELF_ROOT = "ema";
+/** Root shown in `SELF` slots when the learner has not chosen a name (the speaker special). */
+export const DEFAULT_SELF_ROOT = CLOSED.microphone;
 
 /** Gloss English for the default (the speaker overlay's gloss). */
 const DEFAULT_SELF_GLOSS = "speaker";
 
 /** Discourse-role specials: with **-n** they already mean a role, not a person. */
 const ROLE_WORDS: Record<string, string> = {
-  ema: "whoever is speaking",
-  eha: "whoever is listening",
-  oha: "inclusive we",
-  anu: "someone",
+  [CLOSED.microphone]: "whoever is speaking",
+  [CLOSED.headphones]: "whoever is listening",
+  [CLOSED.handshake]: "inclusive we",
+  [CLOSED.neutral]: "someone",
 };
 /** House-cast people: a learner of the same name would collide with them in examples. */
-const HOUSE_CAST: Record<string, string> = { azawa: "Azawan", alahe: "Alahen", ahabe: "Ahaben" };
+const HOUSE_CAST: Record<string, string> = Object.fromEntries(
+  [CLOSED.swan, CLOSED.lion, CLOSED.hibiscus].map((root) => [root, namedEnglish(root)]),
+);
 /** The language's own name. */
-const LANGUAGE_ROOT = "agaza";
+const LANGUAGE_ROOT = CLOSED.glasses;
 
 /**
- * Hand-picked names the helper suggests at random (both senses read well as a name).
- * The lexicon's "Use as my name" allows any root that is not {@link nameBanReason banned}.
+ * Hand-picked names the helper suggests at random (both senses read well as a name), by emoji
+ * so they follow a lexicon retie. The lexicon's "Use as my name" allows any root that is not
+ * {@link nameBanReason banned}.
  */
-export const SUGGESTED_ROOTS = [
+export const SUGGESTED_EMOJI = [
   // feelings and character
-  "egeva", "azaha", "alavo", "alava", "azuda", "ereva", "evege", "ebewa", "ahage", "egade",
+  "😀", "😊", "😂", "🥰", "🤩", "😌", "🤞", "🙏", "🫂", "🤸",
   // animals
-  "agada", "odoga", "adehu", "ebedu", "adavu", "egaha", "alaho", "ebada",
+  "🐈", "🐕", "🦦", "🐦", "🕊️", "🦅", "🦉", "🪲",
   // nature and sky
-  "azova", "oza", "edehu", "eneza", "edebe", "uhude", "aladu", "oroza",
+  "🌻", "🌱", "🌳", "🪺", "🌄", "🌠", "⚡", "🌹",
   // objects and craft
-  "agabu", "aga", "alode", "ubuga", "egeho", "ebevu", "ahavo", "onoda", "ebuda", "aguga",
+  "🧭", "⚓", "🏮", "📖", "🔑", "🌉", "🪉", "🎵", "🖌️", "🧑‍🎨",
 ];
 
 export type LearnerNameOption = {
@@ -89,11 +93,11 @@ export function eligibleNames(rows: PublishedRow[], overlays: OverlayRow[] = [])
   return out;
 }
 
-/** The helper's suggestions ({@link SUGGESTED_ROOTS}), in list order. */
+/** The helper's suggestions ({@link SUGGESTED_EMOJI}), in list order. */
 export function suggestedNames(rows: PublishedRow[]): LearnerNameOption[] {
-  const byRoot = new Map(rows.map((row) => [row.clarity, row]));
-  return SUGGESTED_ROOTS.flatMap((root) => {
-    const row = byRoot.get(root);
+  const byEmoji = new Map(rows.map((row) => [row.emoji, row]));
+  return SUGGESTED_EMOJI.flatMap((emoji) => {
+    const row = byEmoji.get(emoji);
     return row ? [toOption(row)] : [];
   });
 }

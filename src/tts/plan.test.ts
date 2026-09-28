@@ -63,13 +63,13 @@ describe("previewSpeech", () => {
   });
 
   it("adds xContinue before discourse linker after period", () => {
-    const plan = previewSpeech("zazawan vawalal. xamalal zululon vurunul.");
+    const plan = previewSpeech("zazawan vawalal. xumalal zululon vurunul.");
     const tags = boundaryTags(plan);
     assert.ok(tags.includes("period"));
     assert.ok(tags.includes("xContinue"));
     assert.equal(tags.includes("yTurn"), false);
     const xIdx = plan.tokens.findIndex((t) => t.kind === "boundary" && t.tag === "xContinue");
-    const linkerIdx = plan.tokens.findIndex((t) => t.kind === "word" && t.raw === "xamalal");
+    const linkerIdx = plan.tokens.findIndex((t) => t.kind === "word" && t.raw === "xumalal");
     assert.ok(xIdx >= 0 && linkerIdx > xIdx);
   });
 
@@ -119,12 +119,12 @@ describe("previewSpeech", () => {
 
 describe("previewPhonemes", () => {
   it("builds IPA for a plain clause", () => {
-    const plan = previewPhonemes("zazawan guzumum.");
+    const plan = previewPhonemes("zazawan gozezomum.");
     assert.deepEqual(
       plan.words.map((w) => w.ipa),
-      ["zä.zä.wän", "ɡu.zu.mum"],
+      ["zä.zä.wän", "ɡo̞.ze̞.zo̞.mum"],
     );
-    assert.equal(plan.ipaPhonemes, "zäzäwän ɡuzumum.");
+    assert.equal(plan.ipaPhonemes, "zäzäwän ɡo̞ze̞zo̞mum.");
   });
 
   it("builds a word-spaced IPA phoneme stream", () => {
@@ -140,7 +140,7 @@ describe("previewPhonemes", () => {
   });
 
   it("uses comma dip before discourse linker", () => {
-    const plan = previewPhonemes("zazawan vawalal. xamalal zululon vurunul.");
+    const plan = previewPhonemes("zazawan vawalal. xumalal zululon vurunul.");
     assert.match(plan.ipaPhonemes, /\.,/);
   });
 

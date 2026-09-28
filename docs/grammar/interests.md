@@ -15,11 +15,11 @@ Six published roots are the interests you can name, and no other root takes the 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`aba`** | autonomy interest | *autonomy* (choice, agency, self-direction) | `abal` *ballot* | 🗳️: voting is choosing for yourself |
-| **`uda`** | competence interest | *competence* (efficacy, skill, getting things to work) | `udal` *toolbox* | 🧰: the kit that gets things working |
-| **`une`** | relatedness interest | *relatedness* (connection, belonging, care) | `unel` *knot* | 🪢: ties people together |
-| **`oze`** | pleasure interest | *pleasure* (enjoyment, comfort, aesthetic payoff) | `ozel` *strawberry* | 🍓: sweetness you enjoy |
-| **`ehe`** | survival interest | *survival* (safety, health, material sufficiency) | `ehel` *shield* | 🛡️: what keeps you safe |
-| **`ega`** | an interest without picking among the five | *unspecified interest* | `egal` *egg* | 🥚: not yet a specific kind |
+| **`udu`** | competence interest | *competence* (efficacy, skill, getting things to work) | `udul` *toolbox* | 🧰: the kit that gets things working |
+| **`ona`** | relatedness interest | *relatedness* (connection, belonging, care) | `onal` *knot* | 🪢: ties people together |
+| **`ozu`** | pleasure interest | *pleasure* (enjoyment, comfort, aesthetic payoff) | `ozul` *strawberry* | 🍓: sweetness you enjoy |
+| **`uho`** | survival interest | *survival* (safety, health, material sufficiency) | `uhol` *shield* | 🛡️: what keeps you safe |
+| **`uge`** | an interest without picking among the five | *unspecified interest* | `ugel` *egg* | 🥚: not yet a specific kind |
 
 **Compare with:** `zabal` is a *ballot*. `gabal` is ballot-like. Under `/ɡ/` with **`tha`** / **`thu`**, **`aba`** is the *autonomy* interest.
 
@@ -42,19 +42,19 @@ On a *serves* word, **-l / -m / -r** say **when the payoff lands**: lasting, uns
 | `…tham` | serves the interest; time horizon unstated (soft default if unknown) | *serves* | **-m** ≈ open |
 | `…thar` | serves the interest right away | *immediate* | **-r** ≈ in the moment |
 
-> `zebezol gunethal.`
+> `zebezol gonathal.`
 >
 > z-present | g-relatedness-met-lasting
 >
 > "My gift serves relatedness in the long term."
 
-> `zahazal gudatham.`
+> `zahazal gudutham.`
 >
 > z-house | g-competence-met-any-term
 >
 > "My house serves competence."
 
-> `zubugal gudathar.`
+> `zubugal guduthar.`
 >
 > z-book | g-competence-met-immediate
 >
@@ -62,7 +62,7 @@ On a *serves* word, **-l / -m / -r** say **when the payoff lands**: lasting, uns
 
 An immediate payoff is often exactly what is needed:
 
-> `zozel gozethar.`
+> `zozul gozuthar.`
 >
 > z-strawberry | g-pleasure-met-immediate
 >
@@ -83,7 +83,7 @@ That ending is **changeability**: how lasting that detriment is. If you do not k
 | `…thum` | effort or circumstance may soften the detriment (soft default if unknown) | *modifiable* | **-m** ≈ open to change |
 | `…thur` | the detriment has no lasting impact | *passing* | **-r** ≈ in the moment |
 
-> `zubugal gudathum.`
+> `zubugal guduthum.`
 >
 > z-book | g-competence-unmet-modifiable
 >
@@ -91,7 +91,7 @@ That ending is **changeability**: how lasting that detriment is. If you do not k
 
 One noun can carry both a **`tha`** word and a **`thu`** word, and the pairing runs either way: *good now, costly later* (an immediate **`tha`** word and a lasting **`thu`** word), or *costly now, good later*:
 
-> `zubugal gozethur gudathal.`
+> `zubugal gozuthur guduthal.`
 >
 > [z-book | g-pleasure-unmet-passing | g-competence-met-lasting]
 >
@@ -111,26 +111,26 @@ A interest word is a interest root with mid-word **`th`**, a stance vowel, and a
 
 **Intermediate** adds **`the`** (*ought this act for this interest*) and **`tho`** (*doing for this interest*). See [prescription](#interest-force) and [motive](#interest-preference).
 
-A word with no **`th`** is not a interest word: `gabal` is still ballot-like; `hozel` is still strawberry as an adverb.
+A word with no **`th`** is not a interest word: `gabal` is still ballot-like; `hozul` is still strawberry as an adverb.
 
 ### Personal possession {#personal-possession}
 <a id="stimulus"></a>
 
 An interest on `/ɡ/` means the noun is **yours** (speaker possession) and the interest is how you stand toward that belonging. That shortcut puts gratitude and unmet on the things you already name as *my X*, so the stance is cheap to say. Ownership without an interest is still `gegabem` plus `/b/` ([joins](joins.md#scope-fence-p-join)). Someone else’s thing uses that pair, not a bare `/ɡ/` need.
 
-When the noun is **not** yours (weather, a gathering, another person’s church), write the interest on `/w/` immediately before **`gobem`**. `/w/` here is the same met / unmet word you already use on `/ɡ/`; it details the stimulus adjective. (cue: ☝️ *point*: you point at the thing; you do not hold it)
+When the noun is **not** yours (weather, a gathering, another person’s church), write the interest on `/w/` immediately before **`gobom`**. `/w/` here is the same met / unmet word you already use on `/ɡ/`; it details the stimulus adjective. (cue: ☝️ *point*: you point at the thing; you do not hold it)
 
-> `zabezum wabathur gobem.`
+> `zabezum wabathur gobom.`
 >
 > z-gathering | [w-autonomy-unmet-passing | g-stimulus]
 >
 > "The gathering detracts from autonomy right now (passing)."
 
-Ordinary `zobel` is still *emphasis*. Bare **`gobem`** with no `/w/` interest does not ascribe an interest. An episode (*this raining, this telling*) still uses `/th/` on the clause, possessed or not.
+Ordinary `zobol` is still *emphasis*. Bare **`gobom`** with no `/w/` interest does not ascribe an interest. An episode (*this raining, this telling*) still uses `/th/` on the clause, possessed or not.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`gobem`** | unowned noun as interest-target | *as stimulus* | `obel` *emphasis* | ☝️: you point at it rather than keep it |
+| **`gobom`** | unowned noun as interest-target | *as stimulus* | `obol` *emphasis* | ☝️: you point at it rather than keep it |
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -151,20 +151,20 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *rain* | `erehel` | |
 | *wind* | `ewedul` | |
 | *fire* | `avahel` | |
-| *stimulus* | `gobem` | `obel` *emphasis* |
+| *stimulus* | `gobom` | `obol` *emphasis* |
 | *autonomy* | `abal` | `abal` *ballot* |
-| *competence* | `udal` | `udal` *toolbox* |
-| *relatedness* | `unel` | `unel` *knot* |
-| *pleasure* | `ozel` | `ozel` *strawberry* |
-| *survival* | `ehel` | `ehel` *shield* |
-| *interest* | `egal` | `egal` *egg* |
+| *competence* | `udul` | `udul` *toolbox* |
+| *relatedness* | `onal` | `onal` *knot* |
+| *pleasure* | `ozul` | `ozul` *strawberry* |
+| *survival* | `uhol` | `uhol` *shield* |
+| *interest* | `ugel` | `ugel` *egg* |
 
 #### English → Agalan {#beginner-english-to-agalan}
 
 **1.** *My tent serves survival in the long term.*
 
 ::: details Show answer
-`zededul gehethal.`
+`zededul guhothal.`
 
 z-tent | g-survival-met-lasting
 :::
@@ -172,7 +172,7 @@ z-tent | g-survival-met-lasting
 **2.** *My backpack serves competence.*
 
 ::: details Show answer
-`zabul gudatham.`
+`zabul gudutham.`
 
 z-backpack | g-competence-met-any-term
 :::
@@ -180,7 +180,7 @@ z-backpack | g-competence-met-any-term
 **3.** *The wind detracts from relatedness right now (passing).*
 
 ::: details Show answer
-`zewedul wunethur gobem.`
+`zewedul wonathur gobom.`
 
 z-wind | [w-relatedness-unmet-passing | g-stimulus]
 :::
@@ -188,7 +188,7 @@ z-wind | [w-relatedness-unmet-passing | g-stimulus]
 **4.** *The fire detracts from survival (irreversible).*
 
 ::: details Show answer
-`zavahel wehethul gobem.`
+`zavahel wuhothul gobom.`
 
 z-fire | [w-survival-unmet-irreversible | g-stimulus]
 :::
@@ -196,14 +196,14 @@ z-fire | [w-survival-unmet-irreversible | g-stimulus]
 **5.** *My flashlight serves an unspecified interest in the long term.*
 
 ::: details Show answer
-`zavehal gegathal.`
+`zavehal gugethal.`
 
 z-flashlight | g-interest-met-lasting
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
 
-**1.** `zededul gegathal.`
+**1.** `zededul gugethal.`
 
 ::: details Show answer
 
@@ -212,7 +212,7 @@ z-tent | g-interest-met-lasting
 *My tent serves an unspecified interest in the long term.*
 :::
 
-**2.** `zavehal gudathal.`
+**2.** `zavehal guduthal.`
 
 ::: details Show answer
 
@@ -221,7 +221,7 @@ z-flashlight | g-competence-met-lasting
 *My flashlight serves competence in the long term.*
 :::
 
-**3.** `zerehel wabathum gobem.`
+**3.** `zerehel wabathum gobom.`
 
 ::: details Show answer
 
@@ -230,7 +230,7 @@ z-rain | [w-autonomy-unmet-modifiable | g-stimulus]
 *The rain detracts from autonomy (modifiable).*
 :::
 
-**4.** `zededul gehethar.`
+**4.** `zededul guhothar.`
 
 ::: details Show answer
 
@@ -239,7 +239,7 @@ z-tent | g-survival-met-immediate
 *My tent serves survival right now.*
 :::
 
-**5.** `zabul gudathul.`
+**5.** `zabul guduthul.`
 
 ::: details Show answer
 
@@ -248,7 +248,7 @@ z-backpack | g-competence-unmet-irreversible
 *My backpack detracts from competence (irreversible).*
 :::
 
-**6.** `zavahel wabathul gobem.`
+**6.** `zavahel wabathul gobom.`
 
 ::: details Show answer
 
@@ -261,15 +261,15 @@ z-fire | [w-autonomy-unmet-irreversible | g-stimulus]
 
 ### Emotion compose {#emotion-compose}
 
-When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: an [interest stance](#interests) on the situation, where the charge sits, and how it moves. All three ride on **one word**: the interest word keeps its stance and its ending letter, then adds a **locus vowel** and a **motion ending**. Put that word on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](#stimulus) **`gobem`** when the noun is not yours. You can then say the take without smuggling a single emotion word.
+When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: an [interest stance](#interests) on the situation, where the charge sits, and how it moves. All three ride on **one word**: the interest word keeps its stance and its ending letter, then adds a **locus vowel** and a **motion ending**. Put that word on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](#stimulus) **`gobom`** when the noun is not yours. You can then say the take without smuggling a single emotion word.
 
-> `zezebel wudathurar gobem.`
+> `zezebel wuduthurar gobom.`
 >
 > z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]
 >
 > "Anxious about the dialogue:" competence at stake for now; it fills the room; it surges.
 
-Build it from the plain interest word: `wudathur` (competence, unmet, passing) + **`a`** (CIRCUM) + **-r** (SURGING) = `wudathurar`. The old ending letter (**-r** here) stays in the middle of the word and keeps its meaning.
+Build it from the plain interest word: `wuduthur` (competence, unmet, passing) + **`a`** (CIRCUM) + **-r** (SURGING) = `wuduthurar`. The old ending letter (**-r** here) stays in the middle of the word and keeps its meaning.
 
 The locus vowel says where the charge sits. It follows the [vowel series](speech-moves.md#speech-act-beginner):
 
@@ -290,14 +290,14 @@ The motion ending says how the feeling moves. Affect is **water**:
 
 Surging and still are information, not verdicts. Strong but steady anger is flowing; so is calm contentment. Surging can be a cue to ground; still can be a cue to rest, or to re-engage gently.
 
-The tail goes on met **`tha`**, motive **`tho`**, and unmet **`thu`** words. Prescription **`the`** is advice, not a feeling, so it takes no tail. A word with no tail (`wudathur`) is an ordinary interest word.
+The tail goes on met **`tha`**, motive **`tho`**, and unmet **`thu`** words. Prescription **`the`** is advice, not a feeling, so it takes no tail. A word with no tail (`wuduthur`) is an ordinary interest word.
 
 | Agalan | English |
 |---------|---------|
-| `zezebel wudathurar gobem` | *anxious about the dialogue* (competence at stake, temporary; fills the room; surging) |
-| `zozazom wunethumer gobem` | *resentful about the division* (unmet relatedness; aimed at them; surging) |
-| `zebeyum gudathamor` | *proud of the draft* (met competence; held inside; surging) |
-| `zemehol wunethumel gobem` | *resentful about the memo* (unmet relatedness; aimed at them; gone still) |
+| `zezebel wuduthurar gobom` | *anxious about the dialogue* (competence at stake, temporary; fills the room; surging) |
+| `zozazom wonathumer gobom` | *resentful about the division* (unmet relatedness; aimed at them; surging) |
+| `zebeyum guduthamor` | *proud of the draft* (met competence; held inside; surging) |
+| `zemehol wonathumel gobom` | *resentful about the memo* (unmet relatedness; aimed at them; gone still) |
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
 
@@ -325,19 +325,19 @@ That ending says why you think a move is welcome. Use **-l** when the person inv
 | `…them` | an unsolicited offer meant to serve the interest | *offered* | **-m** ≈ open offer |
 | `…ther` | a move worth trying, to see whether it serves the interest | *worth a try* | **-r** ≈ for now (a trial run) |
 
-> `zazawan vezebel thunethem.`
+> `zazawan vezebel thonathem.`
 >
 > z-Azawan | v-tell | th-relatedness-ought-offered
 >
 > "Azawan ought to tell to serve relatedness (offered)."
 
-> `zahaben vezehel thehethel.`
+> `zahaben vezehel thuhothel.`
 >
 > z-Ahaben | v-sing | th-survival-ought-invited
 >
 > "Ahaben ought to sing to serve survival (Ahaben asked for a move)."
 
-> `zalahen vabayal thunether.`
+> `zalahen vabayel thonather.`
 >
 > z-Alahen | v-bow | th-relatedness-ought-trial
 >
@@ -345,7 +345,7 @@ That ending says why you think a move is welcome. Use **-l** when the person inv
 
 A move meant to **prevent** harm to the interest is a *so that … not* dependent ([so that](dependents.md#so-that)): **`hagom`** + **`burl`**, then the outcome to keep off.
 
-> `zalahen vabayal thunethem hagom burl zazawan vadebal.`
+> `zalahen vabayel thonathem hagom burl zazawan vadebal.`
 >
 > z-Alahen | v-bow | th-relatedness-ought-offered | [h-so-that | b-lest-clause] | z-Azawan | v-departure
 >
@@ -356,13 +356,13 @@ A move meant to **prevent** harm to the interest is a *so that … not* dependen
 
 English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the interest root, mid-word **`th`**, **`o`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or is only a working reason for now. If you do not know the standing, use **-m**. **-n** is ordinary [proper](word-endings.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…thom`** plus **`hual`**).
 
-> `zazawan vezebel thunethom.`
+> `zazawan vezebel thonathom.`
 >
 > z-Azawan | v-tell | th-relatedness-motive-internal
 >
 > "Azawan tells for relatedness (internal reason)."
 
-**Not the same job as:** prescription **`the`** (*this act ought* to serve this interest). **`tho`** describes *doing for this interest*. On `/ɡ/`, the same stance is **your** noun’s purpose (*my gift for relatedness*). *Walks so that Alahen sits* is an intended **event** ([so that](dependents.md#so-that), **`hagom`**), not an interest. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`hohem`). *Tells on behalf of Alahen* is [proxy](relations.md#proxy) (`hadum`).
+**Not the same job as:** prescription **`the`** (*this act ought* to serve this interest). **`tho`** describes *doing for this interest*. On `/ɡ/`, the same stance is **your** noun’s purpose (*my gift for relatedness*). *Walks so that Alahen sits* is an intended **event** ([so that](dependents.md#so-that), **`hagom`**), not an interest. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`hogem`). *Tells on behalf of Alahen* is [proxy](relations.md#proxy) (`hadem`).
 
 A reason held **to keep a cost off** is a *so that … not* dependent ([so that](dependents.md#so-that), **`hagom burl`**), as with prescription.
 
@@ -391,19 +391,19 @@ Beginner already attached `/ɡ/` after a noun and `/th/` on the clause for met a
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `g…tha…` after a noun | praise: **your** noun serves the interest | *my gift (serves relatedness)* (`gunetha…`) |
-| `g…thu…` after a noun | criticism: **your** noun detracts from the interest | *my book (detracts from competence)* (`gudathu…`) |
-| `g…tho…` after a noun | **your** noun’s purpose is this interest | *my gift for relatedness* (`gunetho…`) |
-| `/w/` interest + `gobem` | the same stances on a noun that is **not** yours | *the gathering (detracts from autonomy)* (`wabathu… gobem`) |
-| `gl-` + interest word | the same adjective before the **belonging** | `glunethal zebezol` |
-| `th…tha…` on the clause | the event serves the interest | *tells: competence is met* (`thudatha…`) |
-| `th…the…` on the clause | deontic prescription | *ought … for this interest* (`thunethe…`); ending = [invited / offered / trial](#interest-force) |
-| `th…tho…` on the clause | motive | *Azawan … (for relatedness)* (`thunetho…`) |
+| `g…tha…` after a noun | praise: **your** noun serves the interest | *my gift (serves relatedness)* (`gonatha…`) |
+| `g…thu…` after a noun | criticism: **your** noun detracts from the interest | *my book (detracts from competence)* (`guduthu…`) |
+| `g…tho…` after a noun | **your** noun’s purpose is this interest | *my gift for relatedness* (`gonatho…`) |
+| `/w/` interest + `gobom` | the same stances on a noun that is **not** yours | *the gathering (detracts from autonomy)* (`wabathu… gobom`) |
+| `gl-` + interest word | the same adjective before the **belonging** | `glonathal zebezol` |
+| `th…tha…` on the clause | the event serves the interest | *tells: competence is met* (`thudutha…`) |
+| `th…the…` on the clause | deontic prescription | *ought … for this interest* (`thonathe…`); ending = [invited / offered / trial](#interest-force) |
+| `th…tho…` on the clause | motive | *Azawan … (for relatedness)* (`thonatho…`) |
 | `/w/` before an interest `/ɡ/` | extra detail on that adjective | *very relatedness-serving* |
 
-On **`the`**, use **-l** for an invitation, **-m** for an offer, and **-r** for a trial. Prefer **-m** on **`thu` / `tho`** when that table’s dimension is unclear. Several interests are several `/ɡ/` or `/th/` words (`gudathal gunethal`), not stacked `th`-additions on one interest. The **host** noun or verb carries concrete vs abstract sense. `/w/` before a **interest** `/ɡ/` grades that adjective; `/w/` immediately before **`gobem`** is the interest.
+On **`the`**, use **-l** for an invitation, **-m** for an offer, and **-r** for a trial. Prefer **-m** on **`thu` / `tho`** when that table’s dimension is unclear. Several interests are several `/ɡ/` or `/th/` words (`guduthal gonathal`), not stacked `th`-additions on one interest. The **host** noun or verb carries concrete vs abstract sense. `/w/` before a **interest** `/ɡ/` grades that adjective; `/w/` immediately before **`gobom`** is the interest.
 
-> `zazawan vezebel thudathal thunethom.`
+> `zazawan vezebel thuduthal thonathom.`
 >
 > z-Azawan | v-tell | th-competence-met-lasting | th-relatedness-motive-internal
 >
@@ -413,13 +413,13 @@ On **`the`**, use **-l** for an invitation, **-m** for an offer, and **-r** for 
 
 Agalan has no set phrase for *thank you*. Say that what the other person did **met your interest**: a lone clause `/th/` met word is a whole sentence, and saying it to the one who acted is the thanks. Pick the interest that was actually served; the ending says how long the payoff lasts ([endings on met](#time-horizon-endings-on-met)). (cue: thanks = *that met my interest*)
 
-> `thunetham.`
+> `thonatham.`
 >
 > th-relatedness-met-any-term
 >
 > "That meant a lot to me." — *thank you*
 
-> `thudathal.`
+> `thuduthal.`
 >
 > th-competence-met-lasting
 >
@@ -433,7 +433,7 @@ Agalan has no set phrase for *thank you*. Say that what the other person did **m
 
 *Sorry* is about **their** interest, not yours. A lone unmet word would say *my* interest went unmet, so name whose interest in `/b/` right after it. The ending is the same [changeability](#interest-changeability) as on any unmet word, so it says how serious the harm is. (cue: sorry = *that detracted from your interest*)
 
-> `thunethum behan.`
+> `thonathum bohen.`
 >
 > [th-relatedness-unmet-modifiable | b-listener]
 >
@@ -441,13 +441,13 @@ Agalan has no set phrase for *thank you*. Say that what the other person did **m
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `…thul behan` | the harm is lasting | *I'm deeply sorry* |
-| `…thum behan` | the harm can be softened (default) | *I'm sorry* |
-| `…thur behan` | the harm is passing | *my bad* |
+| `…thul bohen` | the harm is lasting | *I'm deeply sorry* |
+| `…thum bohen` | the harm can be softened (default) | *I'm sorry* |
+| `…thur bohen` | the harm is passing | *my bad* |
 
-The `/b/` can name anyone: `thunethum balahen.` owns a harm to Alahen, even when you are telling someone else.
+The `/b/` can name anyone: `thonathum balahen.` owns a harm to Alahen, even when you are telling someone else.
 
-**Compare with:** a met word with a `/b/` person (`thunetham balahen.`) says the act met **Alahen's** interest: *Alahen appreciated it*, not your thanks.
+**Compare with:** a met word with a `/b/` person (`thonatham balahen.`) says the act met **Alahen's** interest: *Alahen appreciated it*, not your thanks.
 
 ### Hopefully and other attitudes {#speaker-attitude}
 
@@ -469,29 +469,29 @@ Hope is not a way of **knowing**, so it cannot hold up a forecast by itself. To 
 
 **Compare with:** a hunch with no evidence is FELT ([evidentiality](knowing.md#evidentiality)). **`thevegem`** says you want the outcome; FELT says your gut expects it.
 
-### Permission (`thogel` / `thogem` / `thoger`) {#permission}
+### Permission (`thegal` / `thegam` / `thegar`) {#permission}
 
-English *may* / *is allowed to* says a restriction is lifted. Put **`thogel`**, **`thogem`**, or **`thoger`** on the clause: stance **`th`** on the root **`oge`** (🟢 *green circle*). The ending says **how formally the restriction is lifted**, on the same strong-to-light scale as the other stance endings. Use **-l** when a rule, policy, or formal right allows it. Use **-m** when a person grants it; that person is the speaker unless a hosted `/b/` names someone else. Use **-r** when no one granted it but no one objected either. If you do not know, use **-m**.
+English *may* / *is allowed to* says a restriction is lifted. Put **`thegal`**, **`thegam`**, or **`thegar`** on the clause: stance **`th`** on the root **`ega`** (🟢 *green circle*). The ending says **how formally the restriction is lifted**, on the same strong-to-light scale as the other stance endings. Use **-l** when a rule, policy, or formal right allows it. Use **-m** when a person grants it; that person is the speaker unless a hosted `/b/` names someone else. Use **-r** when no one granted it but no one objected either. If you do not know, use **-m**.
 
-> `zazawan vowogal thogem.`
+> `zazawan vowogal thegam.`
 >
 > z-Azawan | v-walk | th-PERMIT-granted
 >
 > "Azawan may walk (I'm allowing it)."
 
-> `zazawan vowogal thogem balahen.`
+> `zazawan vowogal thegam balahen.`
 >
 > z-Azawan | v-walk | [th-PERMIT-granted | b-Alahen]
 >
 > "Alahen lets Azawan walk."
 
-> `zahaben vehahel thogel.`
+> `zahaben vehahel thegal.`
 >
 > z-Ahaben | v-sit | th-PERMIT-allowed
 >
 > "Ahaben is allowed to sit (the rules allow it)."
 
-> `zalahen vezebal thoger.`
+> `zalahen vezebal thegar.`
 >
 > z-Alahen | v-sleep | th-PERMIT-tolerated
 >
@@ -501,52 +501,52 @@ The negatives use the root **`ere`** (⛔ *no entry*) with the same endings.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thogel`** | a rule, policy, or formal right allows it | *is allowed to* / *has the right to* | **-l** ≈ locked in (on paper) |
-| **`thogem`** | a person grants it (speaker, or the `/b/`) (default) | *may* / *I'm letting you* | **-m** ≈ a person's word |
-| **`thoger`** | tolerated: no one granted it, no one objected | *no one's stopping it* | **-r** ≈ light (no word given) |
+| **`thegal`** | a rule, policy, or formal right allows it | *is allowed to* / *has the right to* | **-l** ≈ locked in (on paper) |
+| **`thegam`** | a person grants it (speaker, or the `/b/`) (default) | *may* / *I'm letting you* | **-m** ≈ a person's word |
+| **`thegar`** | tolerated: no one granted it, no one objected | *no one's stopping it* | **-r** ≈ light (no word given) |
 | **`therel`** | a rule, policy, or formal ban forbids it | *is not allowed to* | **-l** ≈ locked in (on paper) |
 | **`therem`** | a person forbids it | *may not* / *I won't let you* | **-m** ≈ a person's word |
 | **`therer`** | frowned on: no one forbade it, but it is not welcome | *people won't like it* | **-r** ≈ light (no word given) |
 
-To **ask** for permission, put the clause under [ask](questions.md#question): `yom zSELFn vehahel thogem.` (*May I sit?*). Grant it with [**`yaol.`**](questions.md#polar-stance) (*go ahead*).
+To **ask** for permission, put the clause under [ask](questions.md#question): `yom zSELFn vehahel thegam.` (*May I sit?*). Grant it with [**`yaol.`**](questions.md#polar-stance) (*go ahead*).
 
 **Compare with:** [prescription](#interest-force) **`the`** says the act *ought* to serve an interest; permission only says the act is *allowed*. [Ability](intention.md#incapability) says someone *can* do it; permission says whether they *may*.
 
-### Consent (`thuxogel` / `thuxogem` / `thuxoger`) {#consent}
+### Consent (`thuxegal` / `thuxegam` / `thuxegar`) {#consent}
 
-Consent is permission from **the one the act happens to**: their body, their things, their time. Put **`thuxogel`**, **`thuxogem`**, or **`thuxoger`** on the clause: stance **`th`**, then role vowel **`u`** (the one it happens to), mid-word **`x`**, and the root **`oge`**. The hosted `/b/` names who consents. That slot holds one noun; when several people are affected, fill it with a [plural](plurality.md) or a [join](joins.md). The actor's own consent is always implied, so **with no `/b/` the only person affected is the actor**, and the clause reads as *letting yourself*.
+Consent is permission from **the one the act happens to**: their body, their things, their time. Put **`thuxegal`**, **`thuxegam`**, or **`thuxegar`** on the clause: stance **`th`**, then role vowel **`u`** (the one it happens to), mid-word **`x`**, and the root **`ega`**. The hosted `/b/` names who consents. That slot holds one noun; when several people are affected, fill it with a [plural](plurality.md) or a [join](joins.md). The actor's own consent is always implied, so **with no `/b/` the only person affected is the actor**, and the clause reads as *letting yourself*.
 
 The ending says **how binding the yes is**, on the same scale as [permission](#permission). Use **-l** for a binding agreement: they signed on in advance, and withdrawing has terms. Use **-m** when they said yes; they can take it back at any time. Use **-r** when you are assuming or inferring it and no one said yes. If you know they said yes but not how binding it is, use **-m**.
 
-> `zazawan vezebel thuxogem bahaben.`
+> `zazawan vezebel thuxegam bahaben.`
 >
 > z-Azawan | v-tell | [th-CONSENT-given | b-Ahaben]
 >
 > "Azawan tells, and Ahaben said yes to it."
 
-> `zazawan vezebel thuxogel bahaben.`
+> `zazawan vezebel thuxegal bahaben.`
 >
 > z-Azawan | v-tell | [th-CONSENT-contract | b-Ahaben]
 >
 > "Azawan tells, as Ahaben agreed to in advance."
 
-> `zazawan vezebel thuxoger bahaben balahen bal.`
+> `zazawan vezebel thuxegar bahaben balahen bal.`
 >
 > z-Azawan | v-tell | [th-CONSENT-assumed | [b-Ahaben | b-Alahen | b-and]]
 >
 > "Azawan tells, assuming Ahaben and Alahen are OK with it."
 
-> `zalahen vezebal thuxogem.`
+> `zalahen vezebal thuxegam.`
 >
 > z-Alahen | v-sleep | th-CONSENT-given
 >
 > "Alahen lets themself sleep."
 
-**-r** is allowed but visibly weaker. Choosing it makes *I assumed* part of the sentence instead of hiding it inside *they were fine with it*. On yourself, **-r** is half-hearted: `zSELFn vehahel thuxoger.` is *I suppose I'm OK with sitting*. **-l** on yourself is a vow: `zSELFn vehahel thuxogel.` is *I've committed myself to sitting*.
+**-r** is allowed but visibly weaker. Choosing it makes *I assumed* part of the sentence instead of hiding it inside *they were fine with it*. On yourself, **-r** is half-hearted: `zSELFn vehahel thuxegar.` is *I suppose I'm OK with sitting*. **-l** on yourself is a vow: `zSELFn vehahel thuxegal.` is *I've committed myself to sitting*.
 
-**Promise:** a vow said to someone is a promise. The listener is the one you promise by default: `zSELFn vowogal thuxogel.`, said to someone, is *I promise (you) to walk*. To name a different person as the one you promise, add the *for* hook ([extra noun](hooks.md#extra-noun)).
+**Promise:** a vow said to someone is a promise. The listener is the one you promise by default: `zSELFn vowogal thuxegal.`, said to someone, is *I promise (you) to walk*. To name a different person as the one you promise, add the *for* hook ([extra noun](hooks.md#extra-noun)).
 
-> `zSELFn vowogal thuxogel el bahaben.`
+> `zSELFn vowogal thuxegal el bahaben.`
 >
 > z-SELF | v-walk | th-CONSENT-contract | [for | b-Ahaben]
 >
@@ -558,16 +558,16 @@ The negatives **`thuxerel`** / **`thuxerem`** / **`thuxerer`** use the same endi
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thuxogel`** | a binding agreement; withdrawing it has terms | *by agreement* / *they signed on* | **-l** ≈ locked in (on paper) |
-| **`thuxogem`** | the affected said yes; they can take it back (default) | *they agreed* / *I let myself* | **-m** ≈ their word, still open |
-| **`thuxoger`** | consent assumed or inferred | *I think they're OK with it* | **-r** ≈ light (no word given) |
+| **`thuxegal`** | a binding agreement; withdrawing it has terms | *by agreement* / *they signed on* | **-l** ≈ locked in (on paper) |
+| **`thuxegam`** | the affected said yes; they can take it back (default) | *they agreed* / *I let myself* | **-m** ≈ their word, still open |
+| **`thuxegar`** | consent assumed or inferred | *I think they're OK with it* | **-r** ≈ light (no word given) |
 | **`thuxerel`** | a binding refusal | *they opted out* | **-l** ≈ locked in (on paper) |
 | **`thuxerem`** | the affected said no | *they refused* | **-m** ≈ their word |
 | **`thuxerer`** | consent presumed absent | *they probably don't want it* / *I won't let myself* | **-r** ≈ light (no word given) |
 
-To check in, ask: `yom zazawan vezebel thuxogem.` (*Are you still OK with this?*).
+To check in, ask: `yom zazawan vezebel thuxegam.` (*Are you still OK with this?*).
 
-**Compare with:** permission **`thogem`** can come from anyone with the standing to grant it: `zazawan vezebel thogem balahen.` means Alahen allowed it, which is not the same as the listener agreeing. `zSELFn vehahel thogem.` is *I'm allowed to sit* (someone let me); `zSELFn vehahel thuxogem.` is *I let myself sit*.
+**Compare with:** permission **`thegam`** can come from anyone with the standing to grant it: `zazawan vezebel thegam balahen.` means Alahen allowed it, which is not the same as the listener agreeing. `zSELFn vehahel thegam.` is *I'm allowed to sit* (someone let me); `zSELFn vehahel thuxegam.` is *I let myself sit*.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -585,23 +585,23 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahaben* | `ahaben` | |
 | *church* | `ehehal` | |
 | *rosary* | `orozol` | |
-| *candle* | `ogal` | |
+| *candle* | `agegal` | |
 | *bell* | `ebevol` | |
 | *ownership* | `egabem` | `egabel` *copyright* |
-| *stimulus* | `gobem` | `obel` *emphasis* |
+| *stimulus* | `gobom` | `obol` *emphasis* |
 | *pray* | `vebewal` | `ebewal` *pray* |
 | *kneel* | `venehal` | `enehal` *kneel* |
 | *hush* | `vahehal` | `ahehal` *hush* |
-| *bow* | `vabayal` | `abayal` *bow* |
+| *bow* | `vabayel` | `abayel` *bow* |
 | *scream* | `vezogel` | `ezogel` *scream* |
 | *tell* | `vezebel` | `ezebel` *speech* |
 | *sleep* | `vezebal` | `ezebal` *sleep* |
 | *autonomy* | `abal` | `abal` *ballot* |
-| *competence* | `udal` | `udal` *toolbox* |
-| *relatedness* | `unel` | `unel` *knot* |
-| *pleasure* | `ozel` | `ozel` *strawberry* |
-| *survival* | `ehel` | `ehel` *shield* |
-| *permission* | `ogel` | `ogel` *green* |
+| *competence* | `udul` | `udul` *toolbox* |
+| *relatedness* | `onal` | `onal` *knot* |
+| *pleasure* | `ozul` | `ozul` *strawberry* |
+| *survival* | `uhol` | `uhol` *shield* |
+| *permission* | `egal` | `egal` *green* |
 | *forbidden* | `erel` | `erel` *no-entry* |
 | *always* | `hual` | |
 
@@ -610,7 +610,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Azawan ought to tell to serve relatedness (offered).*
 
 ::: details Show answer
-`zazawan vezebel thunethem.`
+`zazawan vezebel thonathem.`
 
 z-Azawan | v-tell | th-relatedness-ought-offered
 :::
@@ -618,7 +618,7 @@ z-Azawan | v-tell | th-relatedness-ought-offered
 **2.** *Ahaben ought to sleep to serve pleasure (offered).*
 
 ::: details Show answer
-`zahaben vezebal thozethem.`
+`zahaben vezebal thozuthem.`
 
 z-Ahaben | v-sleep | th-pleasure-ought-offered
 :::
@@ -626,7 +626,7 @@ z-Ahaben | v-sleep | th-pleasure-ought-offered
 **3.** *Alahen ought to scream to serve survival (Alahen asked for a move).*
 
 ::: details Show answer
-`zalahen vezogel thehethel.`
+`zalahen vezogel thuhothel.`
 
 z-Alahen | v-scream | th-survival-ought-invited
 :::
@@ -634,7 +634,7 @@ z-Alahen | v-scream | th-survival-ought-invited
 **4.** *Ahaben ought to try bowing for relatedness (worth a try).*
 
 ::: details Show answer
-`zahaben vabayal thunether.`
+`zahaben vabayel thonather.`
 
 z-Ahaben | v-bow | th-relatedness-ought-trial
 :::
@@ -642,7 +642,7 @@ z-Ahaben | v-bow | th-relatedness-ought-trial
 **5.** *Azawan prays for relatedness (internal reason).*
 
 ::: details Show answer
-`zazawan vebewal thunethom.`
+`zazawan vebewal thonathom.`
 
 z-Azawan | v-pray | th-relatedness-motive-internal
 :::
@@ -650,7 +650,7 @@ z-Azawan | v-pray | th-relatedness-motive-internal
 **6.** *Alahen kneels for relatedness (the situation pulls it).*
 
 ::: details Show answer
-`zalahen venehal thunethol.`
+`zalahen venehal thonathol.`
 
 z-Alahen | v-kneel | th-relatedness-motive-circumstantial
 :::
@@ -658,7 +658,7 @@ z-Alahen | v-kneel | th-relatedness-motive-circumstantial
 **7.** *Ahaben hushes for relatedness (internal motive, as usual).*
 
 ::: details Show answer
-`zahaben vahehal thunethom hual.`
+`zahaben vahehal thonathom hual.`
 
 z-Ahaben | v-hush | th-relatedness-motive-internal | h-always-except
 :::
@@ -666,7 +666,7 @@ z-Ahaben | v-hush | th-relatedness-motive-internal | h-always-except
 **8.** *Azawan bows for relatedness (a reason for now).*
 
 ::: details Show answer
-`zazawan vabayal thunethor.`
+`zazawan vabayel thonathor.`
 
 z-Azawan | v-bow | th-relatedness-motive-provisional
 :::
@@ -674,7 +674,7 @@ z-Azawan | v-bow | th-relatedness-motive-provisional
 **9.** *Alahen prays for competence (internal reason).*
 
 ::: details Show answer
-`zalahen vebewal thudathom.`
+`zalahen vebewal thuduthom.`
 
 z-Alahen | v-pray | th-competence-motive-internal
 :::
@@ -682,7 +682,7 @@ z-Alahen | v-pray | th-competence-motive-internal
 **10.** *Azawan’s church serves relatedness in the long term.*
 
 ::: details Show answer
-`glegabem bazawan zehehal wunethal gobem.`
+`glegabem bazawan zehehal wonathal gobom.`
 
 [[gl-ownership | b-Azawan] | z-church] | [w-relatedness-met-lasting | g-stimulus]
 :::
@@ -690,7 +690,7 @@ z-Alahen | v-pray | th-competence-motive-internal
 **11.** *Azawan prays: it serves competence in the long term, and relatedness is the internal motive.*
 
 ::: details Show answer
-`zazawan vebewal thudathal thunethom.`
+`zazawan vebewal thuduthal thonathom.`
 
 z-Azawan | v-pray | th-competence-met-lasting | th-relatedness-motive-internal
 :::
@@ -698,7 +698,7 @@ z-Azawan | v-pray | th-competence-met-lasting | th-relatedness-motive-internal
 **12.** *Alahen ought to scream to serve survival (Alahen asked for a move); relatedness is the circumstantial motive.*
 
 ::: details Show answer
-`zalahen vezogel thehethel thunethol.`
+`zalahen vezogel thuhothel thonathol.`
 
 z-Alahen | v-scream | th-survival-ought-invited | th-relatedness-motive-circumstantial
 :::
@@ -706,7 +706,7 @@ z-Alahen | v-scream | th-survival-ought-invited | th-relatedness-motive-circumst
 **13.** *Ahaben lets Azawan kneel.*
 
 ::: details Show answer
-`zazawan venehal thogem bahaben.`
+`zazawan venehal thegam bahaben.`
 
 z-Azawan | v-kneel | [th-PERMIT-granted | b-Ahaben]
 :::
@@ -714,7 +714,7 @@ z-Azawan | v-kneel | [th-PERMIT-granted | b-Ahaben]
 **14.** *Azawan hushes, assuming Alahen and Ahaben are OK with it.*
 
 ::: details Show answer
-`zazawan vahehal thuxoger balahen bahaben bal.`
+`zazawan vahehal thuxegar balahen bahaben bal.`
 
 z-Azawan | v-hush | [th-CONSENT-assumed | [b-Alahen | b-Ahaben | b-and]]
 :::
@@ -722,14 +722,14 @@ z-Azawan | v-hush | [th-CONSENT-assumed | [b-Alahen | b-Ahaben | b-and]]
 **15.** *Resentful about the bell:* relatedness unmet; aimed at them; surging.
 
 ::: details Show answer
-`zebevol wunethumer gobem.`
+`zebevol wonathumer gobom.`
 
 z-bell | [w-relatedness-unmet-modifiable-EXTERNAL-SURGING | g-stimulus]
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
 
-**1.** `zalahen vezebel thunether.`
+**1.** `zalahen vezebel thonather.`
 
 ::: details Show answer
 
@@ -738,7 +738,7 @@ z-Alahen | v-tell | th-relatedness-ought-trial
 *Alahen ought to try telling for relatedness (worth a try).*
 :::
 
-**2.** `zahaben vezogel thehether.`
+**2.** `zahaben vezogel thuhother.`
 
 ::: details Show answer
 
@@ -747,7 +747,7 @@ z-Ahaben | v-scream | th-survival-ought-trial
 *Ahaben ought to try screaming for survival (worth a try).*
 :::
 
-**3.** `zalahen vebewal thudathol.`
+**3.** `zalahen vebewal thuduthol.`
 
 ::: details Show answer
 
@@ -756,7 +756,7 @@ z-Alahen | v-pray | th-competence-motive-circumstantial
 *Alahen prays for competence (circumstantial motive).*
 :::
 
-**4.** `zahaben venehal thunethom.`
+**4.** `zahaben venehal thonathom.`
 
 ::: details Show answer
 
@@ -765,7 +765,7 @@ z-Ahaben | v-kneel | th-relatedness-motive-internal
 *Ahaben kneels for relatedness (internal reason).*
 :::
 
-**5.** `zazawan vahehal thunethor.`
+**5.** `zazawan vahehal thonathor.`
 
 ::: details Show answer
 
@@ -774,7 +774,7 @@ z-Azawan | v-hush | th-relatedness-motive-provisional
 *Azawan hushes for relatedness (a reason for now).*
 :::
 
-**6.** `zorozol gozethar.`
+**6.** `zorozol gozuthar.`
 
 ::: details Show answer
 
@@ -783,7 +783,7 @@ z-rosary | g-pleasure-met-immediate
 *My rosary is a pleasure right now.*
 :::
 
-**7.** `zogal wabathum gobem.`
+**7.** `zagegal wabathum gobom.`
 
 ::: details Show answer
 
@@ -792,7 +792,7 @@ z-candle | [w-autonomy-unmet-modifiable | g-stimulus]
 *The candle detracts from autonomy (modifiable).*
 :::
 
-**8.** `zebevol wunethum gobem.`
+**8.** `zebevol wonathum gobom.`
 
 ::: details Show answer
 
@@ -801,7 +801,7 @@ z-bell | [w-relatedness-unmet-modifiable | g-stimulus]
 *The bell detracts from relatedness (modifiable).*
 :::
 
-**9.** `zalahen vezogel thehethom hual.`
+**9.** `zalahen vezogel thuhothom hual.`
 
 ::: details Show answer
 
@@ -819,7 +819,7 @@ z-Alahen | v-pray | th-FORBID-disallowed
 *Alahen is not allowed to pray (the rules forbid it).*
 :::
 
-**11.** `zahaben vezebal thuxogem.`
+**11.** `zahaben vezebal thuxegam.`
 
 ::: details Show answer
 
@@ -837,7 +837,7 @@ z-Azawan | v-scream | [th-CONSENT-refused | b-Alahen]
 *Azawan screams, though Alahen said no to it.*
 :::
 
-**13.** `zehehal gudathamom.`
+**13.** `zehehal guduthamom.`
 
 ::: details Show answer
 

@@ -33,7 +33,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 
 **Not the same job as:** a word that **starts** with **`x`** [keeps the same speech move going](dependents.md#continue-x). That **`x`** is not this glue in the middle.
 
-**Not the same job as:** mid-word **`th`**. The [stance](clause.md#stance-th) letter joins pieces when the second piece is **your view** rather than more of the same thing: an interest and how it stands ([interests](interests.md): `gudathal`), a label and how far it reaches ([label scope](predication.md#label-scope), such as *angry this time*), or a direction and whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals), such as *Azawan’s left*). **`x`** adds; **`th`** says from where you see it. (cue: **th** ≈ *think*)
+**Not the same job as:** mid-word **`th`**. The [stance](clause.md#stance-th) letter joins pieces when the second piece is **your view** rather than more of the same thing: an interest and how it stands ([interests](interests.md): `guduthal`), a label and how far it reaches ([label scope](predication.md#label-scope), such as *angry this time*), or a direction and whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals), such as *Azawan’s left*). **`x`** adds; **`th`** says from where you see it. (cue: **th** ≈ *think*)
 
 ### Words you look up, not build
 <a id="lexical-compounds"></a>
@@ -51,8 +51,8 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `zebedalahazal` | bed **-l** house | bedroom | left piece everyday |
-| `zowelebevol` | door **-l** bell | doorbell | left piece everyday |
-| `zunelebezal` | bond **-l** person | friend | left piece everyday |
+| `zodolebevol` | door **-l** bell | doorbell | left piece everyday |
+| `zonalebezal` | bond **-l** person | friend | left piece everyday |
 | `zerehelogodul` | rain **-l** coat | raincoat | left piece everyday |
 | `…m…` | left root in its [abstract](word-endings.md#abstract-m) sense | same two roots, join **-m** | **m** ≈ meaning |
 
@@ -88,15 +88,15 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
-| *doorbell* | `zowelebevol` | |
+| *doorbell* | `zodolebevol` | |
 | *raincoat* | `zerehelogodul` | |
 | *greenhouse* | `zavavulahazal` | |
-| *friend* | `zunelebezal` | |
+| *friend* | `zonalebezal` | |
 | *hammer* | `ahavel` | |
 | *wrench* | `erevol` | |
 | *axe* | `agezol` | |
 | *saw* | `ozazol` | |
-| *wood* | `uwol` | |
+| *wood* | `uwal` | |
 | *see* | `vahahal` | `ahahal` *eye* |
 | *punch* | `abahel` | |
 
@@ -105,7 +105,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *a doorbell*
 
 ::: details Show answer
-`zowelebevol.`
+`zodolebevol.`
 
 z-doorbell
 :::
@@ -121,7 +121,7 @@ z-doorbell
 **3.** *a wood saw*
 
 ::: details Show answer
-`zozazoxuwol.`
+`zozazoxuwal.`
 
 z-saw-x-wood
 :::
@@ -161,14 +161,14 @@ z-Azawan-x-Alahen
 **8.** *Alahen punches a friend.*
 
 ::: details Show answer
-`zalahen zunelebezal vabahel.`
+`zalahen zonalebezal vabahel.`
 
 z-Alahen | z-friend | v-punch
 :::
 
 #### Agalan → English {#beginner-agalan-to-english}
 
-**1.** `zunelebezal.`
+**1.** `zonalebezal.`
 
 ::: details Show answer
 
@@ -177,7 +177,7 @@ z-friend
 *a friend*
 :::
 
-**2.** `zahaben dowelebevol vahahal.`
+**2.** `zahaben dodolebevol vahahal.`
 
 ::: details Show answer
 
@@ -195,7 +195,7 @@ z-Ahaben | d-doorbell | v-see
 *a hammer and an axe*
 :::
 
-**4.** `zozazoxuwol.`
+**4.** `zozazoxuwal.`
 
 ::: details Show answer
 
@@ -213,7 +213,7 @@ z-Ahaben | d-raincoat | v-see
 *Ahaben sees a raincoat.*
 :::
 
-**6.** `zunelebezal dahavel vahahal.`
+**6.** `zonalebezal dahavel vahahal.`
 
 ::: details Show answer
 
@@ -231,7 +231,7 @@ z-Alahen | d-axe | v-see
 *Alahen sees an axe.*
 :::
 
-**8.** `zazawan zunelebezal vabahel.`
+**8.** `zazawan zonalebezal vabahel.`
 
 ::: details Show answer
 
@@ -253,7 +253,7 @@ Beginner already used two roots glued with **`x`**, dictionary words with no **`
 | name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | [conversation length](#conversation-length) | *Azawan — I have time* | vowel on the name |
 | longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [ability](intention.md#ability) | *can’t sing right now* | extra vowel after the host |
 | full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zebeyexabedel`; `zuhudexaloden` ([multipart names](word-endings.md#phrasal-proper-names)) | **x** ≈ plus |
-| interest root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [interests](interests.md) | `gudathal` | **th** ≈ *think* (your view of the interest) |
+| interest root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [interests](interests.md) | `guduthal` | **th** ≈ *think* (your view of the interest) |
 | other root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [label scope](predication.md#label-scope) | *angry this time* | **th** ≈ *think* (your view of how far the label reaches) |
 | direction root **`th`** facing person | [viewpoint lateral](roles.md#viewpoint-laterals) | `gewezathazawan` *Azawan’s left* | **th** ≈ *think* (whose point of view) |
 
@@ -282,7 +282,7 @@ When English stacks labels left to right (*crush* then *love*; a shop name with 
 ### Which family is this?
 <a id="decision-order"></a>
 
-Use the table above. If the word has a mid-word **`th`**, it is an [interests](interests.md) word (one of the six interest roots, then a vowel, with an optional [emotion tail](interests.md#emotion-compose)), a [label scope](predication.md#label-scope) word (any other root, then a vowel), or a [viewpoint lateral](roles.md#viewpoint-laterals) (a root follows **`th`**). The root before **`th`** decides: after one of the six interest roots, letters that look like a root are always the emotion tail (`gudathamol`), never a lateral. Otherwise read both sides of the first **`x`** in this order:
+Use the table above. If the word has a mid-word **`th`**, it is an [interests](interests.md) word (one of the six interest roots, then a vowel, with an optional [emotion tail](interests.md#emotion-compose)), a [label scope](predication.md#label-scope) word (any other root, then a vowel), or a [viewpoint lateral](roles.md#viewpoint-laterals) (a root follows **`th`**). The root before **`th`** decides: after one of the six interest roots, letters that look like a root are always the emotion tail (`guduthamol`), never a lateral. Otherwise read both sides of the first **`x`** in this order:
 
 - The whole word is a span close such as **`xuxul`** → a **span** is closing.
 - After the role letter: one vowel, **`x`**, one vowel, then a span ending → a **span** is opening ([spans](spans.md)).
@@ -334,7 +334,7 @@ At arrival, the other person can answer with their own bid. The **lesser** bid s
 >
 > "Alahen — one slot." (the talk lasts for one ask)
 
-**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [need](interests.md) takes **`th`** + vowel instead (`gudathal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**.
+**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [need](interests.md) takes **`th`** + vowel instead (`guduthal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**.
 
 **Compare with:** a plain named citation with a period is the basic hello (`SELFn.`). The bid says how much conversation the person is open to.
 
@@ -373,7 +373,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
-| *doorbell* | `zowelebevol` | |
+| *doorbell* | `zodolebevol` | |
 | *see* | `vahahal` | `ahahal` *eye* |
 | *scream* | `ezogel` | |
 | *punch* | `abahel` | |
@@ -513,7 +513,7 @@ Azawan
 *Azawan.* (hello — the speaker is Azawan)
 :::
 
-**8.** `yazawaxen zahaben dowelebevol vahahal.`
+**8.** `yazawaxen zahaben dodolebevol vahahal.`
 
 ::: details Show answer
 

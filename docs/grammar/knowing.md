@@ -223,13 +223,13 @@ English often says *how you know* a claim (*I saw it*, *I heard*, *I figured*). 
 
 Verbs have **no past or future letter**. Some channels already locate the event because of how you know: **LIVE** is watching while the scene is still in view; **WITNESSED** is memory of watching; **RECORDED** is playback of a capture, or a schedule. There is no forecast word: a claim that something **will** happen is a channel plus the later offset **`bral`** ([forecasts](#forecast)), so a forecast always says how you know. [PLAN](intention.md#plan-predict) is intention, not a forecast. Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, or a [signed offset](#dated-channel) on the channel) when inference or hearsay needs a different time than this stretch.
 
-> `zazawan thodem vowogal.`
+> `zazawan thodum vowogal.`
 >
 > z-Azawan | th-LIVE | v-walk
 >
 > "Azawan walks — live / from the scene."
 
-> `zazawan thevem vowogal.`
+> `zazawan thunom vowogal.`
 >
 > z-Azawan | th-WITNESSED | v-walk
 >
@@ -239,30 +239,30 @@ Verbs have **no past or future letter**. Some channels already locate the event 
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`thodem`** | firsthand / concurrent channel | *live* / *from the scene* | `odel` *attest* | 👁️‍🗨️: seeing-and-saying while it is in view |
-| **`thevem`** | firsthand / reconstructive channel | *from memory* (past observation) | `evel` *fishing* | 🎣: you pull something back |
-| **`thugum`** | documented / captured / scheduled channel | *on record* / *playback* / *scheduled* | `ugul` *record* | ⏺️: what was saved plays back |
-| **`thobam`** | regularity / similar cases | *from the pattern* | `obal` *paw-prints* | 🐾: cases left behind |
-| **`thanem`** | reasoned from clues | *inferred* | `anel` *investigate* | 🕵️: you work the clues |
-| **`theram`** | someone said so | *so they say* / hearsay | `eral` *ear* | 👂: you heard it told |
-| **`thahom`** | gut / body knowing | *felt* | `ahol` *heart* | ❤️: knowing in the body |
-| **`thozom`** | narrative / lore / anecdotal framing | *per the tale* | `ozol` *scroll* | 📜: a story you tell |
+| **`thodum`** | firsthand / concurrent channel | *live* / *from the scene* | `odul` *attest* | 👁️‍🗨️: seeing-and-saying while it is in view |
+| **`thunom`** | firsthand / reconstructive channel | *from memory* (past observation) | `unol` *fishing* | 🎣: you pull something back |
+| **`therum`** | documented / captured / scheduled channel | *on record* / *playback* / *scheduled* | `erul` *record* | ⏺️: what was saved plays back |
+| **`thabem`** | regularity / similar cases | *from the pattern* | `abel` *paw-prints* | 🐾: cases left behind |
+| **`thevem`** | reasoned from clues | *inferred* | `evel` *investigate* | 🕵️: you work the clues |
+| **`themam`** | someone said so | *so they say* / hearsay | `emal` *ear* | 👂: you heard it told |
+| **`thahum`** | gut / body knowing | *felt* | `ahul` *heart* | ❤️: knowing in the body |
+| **`thazom`** | narrative / lore / anecdotal framing | *per the tale* | `azol` *scroll* | 📜: a story you tell |
 
 Pick one evidential **root** for how you know.
 
-> `zalahen thugum vezebal.`
+> `zalahen therum vezebal.`
 >
 > z-Alahen | th-RECORDED | v-sleep
 >
 > "Alahen sleeps — on record."
 
-> `zalahen theram varadal.`
+> `zalahen themam varadal.`
 >
 > z-Alahen | th-TOLD | v-write
 >
 > "Alahen writes — so they say."
 
-**Compare with:** seeing as an action uses ordinary **`vahahal`**. **`thodem`** is *how you know* (the walk is in view now), not the verb *see*. Fear or hope uses [emotion compose](interests.md#emotion-compose). **`thahom`** is a way of *knowing*, not that stack. **`theram`** is someone said so about the claim; hearing a door as an action is ordinary `/v/`.
+**Compare with:** seeing as an action uses ordinary **`vahahal`**. **`thodum`** is *how you know* (the walk is in view now), not the verb *see*. Fear or hope uses [emotion compose](interests.md#emotion-compose). **`thahum`** is a way of *knowing*, not that stack. **`themam`** is someone said so about the claim; hearing a door as an action is ordinary `/v/`.
 
 **Related form:** to deny only the channel (*it happened, but I did not see it*), close the evidential with a [stance join](join-across-roles.md#stance-joins) (taught later). Two channels you cannot choose between use the same kind of join.
 
@@ -272,22 +272,22 @@ The ending on a channel says **how strong the evidence is**: how much the claim 
 
 | Channel | **-l** strong | **-m** (default) | **-r** weak |
 |---------|---------------|------------------|-------------|
-| LIVE | `thodel` a clear, full view | `thodem` | `thoder` a glimpse |
-| WITNESSED | `thevel` a vivid memory | `thevem` | `thever` a hazy memory |
-| RECORDED | `thugul` an authoritative record or official schedule | `thugum` | `thugur` an unofficial or partial record |
-| PATTERN | `thobal` a well-established pattern | `thobam` | `thobar` a few cases |
-| INFERRED | `thanel` strong clues | `thanem` | `thaner` a weak clue |
-| TOLD | `theral` a reliable source | `theram` | `therar` a rumor |
-| FELT | `thahol` a strong gut sense | `thahom` | `thahor` a faint hunch |
-| TALE | `thozol` established lore | `thozom` | `thozor` a loose anecdote |
+| LIVE | `thodul` a clear, full view | `thodum` | `thodur` a glimpse |
+| WITNESSED | `thunol` a vivid memory | `thunom` | `thunor` a hazy memory |
+| RECORDED | `therul` an authoritative record or official schedule | `therum` | `therur` an unofficial or partial record |
+| PATTERN | `thabel` a well-established pattern | `thabem` | `thaber` a few cases |
+| INFERRED | `thevel` strong clues | `thevem` | `thever` a weak clue |
+| TOLD | `themal` a reliable source | `themam` | `themar` a rumor |
+| FELT | `thahul` a strong gut sense | `thahum` | `thahur` a faint hunch |
+| TALE | `thazol` established lore | `thazom` | `thazor` a loose anecdote |
 
-> `zalahen therar vadebal.`
+> `zalahen themar vadebal.`
 >
 > z-Alahen | th-TOLD.weak | v-departure
 >
 > "Rumor has it Alahen left."
 
-> `zazawan thevel vowogal.`
+> `zazawan thunol vowogal.`
 >
 > z-Azawan | th-WITNESSED.strong | v-walk
 >
@@ -297,25 +297,25 @@ The ending on a channel says **how strong the evidence is**: how much the claim 
 
 Agalan has no *will* word for the world. To say something **will** happen, use a channel and put the later offset **`bral`** right after it: a `/b/` number with a plus sign and no digits, meaning *some time after now*. The channel says what the forecast rests on, so a forecast cannot hide its warrant. For a hunch, the honest channel is FELT. The mirror **`brul`** is *some time before now*, for a past claim with no measured amount.
 
-> `thobam bral verehel.`
+> `thabem bral verehel.`
 >
 > [th-PATTERN | b-later] | v-rain
 >
 > "It will rain (going by the pattern)."
 
-> `zalahen thahor bral vadebal.`
+> `zalahen thahur bral vadebal.`
 >
 > z-Alahen | [th-FELT.weak | b-later] | v-departure
 >
 > "I have a faint hunch Alahen will leave."
 
-> `zazawan thugul bral vezebel.`
+> `zazawan therul bral vezebel.`
 >
 > z-Azawan | [th-RECORDED.strong | b-later] | v-tell
 >
 > "Azawan is officially scheduled to speak."
 
-**Compare with:** [PLAN](intention.md#plan-predict) (`thamam`) says what someone **intends** to do; it needs no channel. A forecast is a claim about the world. To say **how much** later (*in three hours*), replace `bral` with a measured [dated channel](#dated-channel) (Advanced). *Could be* with no warrant is [MAY](#may), not a forecast.
+**Compare with:** [PLAN](intention.md#plan-predict) (`thumam`) says what someone **intends** to do; it needs no channel. A forecast is a claim about the world. To say **how much** later (*in three hours*), replace `bral` with a measured [dated channel](#dated-channel) (Advanced). *Could be* with no warrant is [MAY](#may), not a forecast.
 
 ### Live vs memory {#live-vs-memory}
 <a id="memory-record"></a>
@@ -323,13 +323,13 @@ Agalan has no *will* word for the world. To say something **will** happen, use a
 <a id="record-past"></a>
 <a id="live"></a>
 
-**`thodem`** is **watching now**: you still have access to the scene. **`thevem`** is **remembered watching**: you pull the episode back, and it may not be what you hoped. Do not stack the two. English *I witnessed* for a remembered event is **`thevem`**, not **LIVE**.
+**`thodum`** is **watching now**: you still have access to the scene. **`thunom`** is **remembered watching**: you pull the episode back, and it may not be what you hoped. Do not stack the two. English *I witnessed* for a remembered event is **`thunom`**, not **LIVE**.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`thodem`** | concurrent / in-view observation | *live* / *from the scene* | `odel` *attest* | 👁️‍🗨️: seeing-and-saying while it is in view |
-| **`thevem`** | reconstructive / recalled observation | *I remember* / *from memory* | `evel` *fishing* | 🎣: retrieval from the water |
-| **`thugum`** | documented / captured past | *on record* / *according to…* | `ugul` *record* | ⏺️: playback archive |
+| **`thodum`** | concurrent / in-view observation | *live* / *from the scene* | `odul` *attest* | 👁️‍🗨️: seeing-and-saying while it is in view |
+| **`thunom`** | reconstructive / recalled observation | *I remember* / *from memory* | `unol` *fishing* | 🎣: retrieval from the water |
+| **`therum`** | documented / captured past | *on record* / *according to…* | `erul` *record* | ⏺️: playback archive |
 
 ### Residue and former climate
 <a id="residue"></a>
@@ -338,54 +338,54 @@ Agalan has no *will* word for the world. To say something **will** happen, use a
 
 English *has walked* and *used to walk* often smuggle **when** the event sits. Agalan already places events with [*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, [LIVE](#live-vs-memory) / [WITNESSED](#live-vs-memory), or a [forecast](#forecast). These two `/th/` moods do **not** locate time. They say how the episode **stands**: whether an outcome **still counts on the current tally**, or whether a usual pattern is **not the climate you are claiming now**. Stack them with a channel or a when-frame; do not use them as a past or present letter.
 
-**RESIDUE** (`omo`) marks leftover balance: the result is still on the books (an unpaid tab, a door that is still shut). Skipping it means you are not claiming current residue (archived, or a fresh event with nothing left to count). Ordinary `zomom` is still *debt*.
+**RESIDUE** (`amo`) marks leftover balance: the result is still on the books (an unpaid tab, a door that is still shut). Skipping it means you are not claiming current residue (archived, or a fresh event with nothing left to count). Ordinary `zamom` is still *debt*.
 
-> `zalahen thomom vadebal.`
+> `zalahen thamom vadebal.`
 >
 > z-Alahen | th-RESIDUE | v-departure
 >
 > "Alahen’s leaving still counts." — the outcome remains on the tally
 
-> `zalahen thevem thomom vadebal.`
+> `zalahen thunom thamom vadebal.`
 >
 > z-Alahen | th-WITNESSED | th-RESIDUE | v-departure
 >
 > "Alahen’s leaving still counts — from memory."
 
-> `zalahen thodem thomom vadebal.`
+> `zalahen thodum thamom vadebal.`
 >
 > z-Alahen | th-LIVE | th-RESIDUE | v-departure
 >
 > "Alahen’s leaving still counts — live / from the scene." (the leftover is in view)
 
-**Compare with:** [*after*](dependents.md#dependent-clauses) (`helam bowel`) orders two events. **`thomom`** does not say the leaving was earlier; it says the **outcome still counts**. [LIVE](#live-vs-memory) is how you know, not leftover balance. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
+**Compare with:** [*after*](dependents.md#dependent-clauses) (`hulam bodol`) orders two events. **`thamom`** does not say the leaving was earlier; it says the **outcome still counts**. [LIVE](#live-vs-memory) is how you know, not leftover balance. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
 
-**FORMER** (`ene`) marks **former climate**: this verb-claim is usual weather that you are **not** giving as today’s report. [Always](restrictors.md) **`hual`** is still the current climate (exceptions listed). [COMMON](#universality) (Advanced) is how exceptionless that current weather is. Ordinary `zenem` is still *emptiness*.
+**FORMER** (`une`) marks **former climate**: this verb-claim is usual weather that you are **not** giving as today’s report. [Always](restrictors.md) **`hual`** is still the current climate (exceptions listed). [COMMON](#universality) (Advanced) is how exceptionless that current weather is. Ordinary `zunem` is still *emptiness*.
 
-> `zazawan hual vezebel thenem.`
+> `zazawan hual vezebel thunem.`
 >
 > z-Azawan | h-always | v-tell | th-FORMER
 >
 > "Azawan always tells — a former pattern, not today's."
 
-> `zazawan hual vezebel thenem thodem.`
+> `zazawan hual vezebel thunem thodum.`
 >
 > z-Azawan | h-always | v-tell | th-FORMER | th-LIVE
 >
 > "Azawan always tells — a former pattern, not today's; seen live." (the scene is in view, and the pattern is still not today's)
 
-> `zazawan hual vezebel thenem thobam bral.`
+> `zazawan hual vezebel thunem thabem bral.`
 >
 > z-Azawan | h-always | v-tell | th-FORMER | [th-PATTERN | b-later]
 >
 > "Azawan always tells — a pattern that will be former by then (forecast from the pattern)."
 
-**Compare with:** **`hual`** without **`thenem`** is *always* as the weather you stand behind now. PATTERN **`thobam`** is *how you know* (a trail of cases), not “this used to be my weather.” Do not write **`thenem`** immediately before **`hual`**: that slot is the restrictor’s occasion list (*always except when…*). Keep **`hual`** first (bare *always*), then **FORMER** after the verb, the way [COMMON](#universality) sits after **`hual`**. **`thenem`** is not a past tense: it is legal under LIVE and in a forecast.
+**Compare with:** **`hual`** without **`thunem`** is *always* as the weather you stand behind now. PATTERN **`thabem`** is *how you know* (a trail of cases), not “this used to be my weather.” Do not write **`thunem`** immediately before **`hual`**: that slot is the restrictor’s occasion list (*always except when…*). Keep **`hual`** first (bare *always*), then **FORMER** after the verb, the way [COMMON](#universality) sits after **`hual`**. **`thunem`** is not a past tense: it is legal under LIVE and in a forecast.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`thomom`** | outcome still on the current tally | *still counts* / residue | `omom` *debt* | 💰: unpaid balance still on the books |
-| **`thenem`** | not the climate claimed now | *former climate* | `enem` *emptiness* | 🪹: the nesting season is over |
+| **`thamom`** | outcome still on the current tally | *still counts* / residue | `amom` *debt* | 💰: unpaid balance still on the books |
+| **`thunem`** | not the climate claimed now | *former climate* | `unem` *emptiness* | 🪹: the nesting season is over |
 
 Prefer floating `/th/`. Use `/w/` only when the standing grades the `/ɡ/` adjective it sits immediately before. The overlay ending stays **-m**.
 
@@ -395,18 +395,18 @@ English *already*, *still*, *not yet*, and *no longer* do not place an event in 
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hohom`** | the change has happened | *already* | `ohol` *hatch* | 🐣: the chick is already out |
-| **`hagam`** | the state goes on | *still* | `agal` *anchor* | ⚓: the ship is held where it was |
-| **`hozam`** | the change is expected but has not come | *not yet* | `ozal` *seedling* | 🌱: not grown yet |
+| **`huham`** | the change has happened | *already* | `uhal` *hatch* | 🐣: the chick is already out |
+| **`hagem`** | the state goes on | *still* | `agel` *anchor* | ⚓: the ship is held where it was |
+| **`hezum`** | the change is expected but has not come | *not yet* | `ezul` *seedling* | 🌱: not grown yet |
 | **`hewem`** | the state has stopped | *no longer* / *not anymore* | `ewel` *wilt* | 🥀: no longer fresh |
 
-> `zazawan hagam vowogal.`
+> `zazawan hagem vowogal.`
 >
 > z-Azawan | h-still | v-walk
 >
 > "Azawan is still walking."
 
-> `zazawan hozam vowogal.`
+> `zazawan hezum vowogal.`
 >
 > z-Azawan | h-not-yet | v-walk
 >
@@ -422,16 +422,16 @@ The ending says how settled the current stage is, on the same strong-to-light sc
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `hohol` | done, and it will stay done | *already, for good* |
-| `hagal` | goes on, with no end in sight | *still, and it will keep on* |
-| `hozal` | not yet, but it is sure to come | *not yet, but it will* |
+| `huhal` | done, and it will stay done | *already, for good* |
+| `hagel` | goes on, with no end in sight | *still, and it will keep on* |
+| `hezul` | not yet, but it is sure to come | *not yet, but it will* |
 | `hewel` | stopped, and it will not come back | *never again* |
-| `hohor` | done, but likely to come undone | *already, for now* |
-| `hagar` | goes on, but about to end | *still, for now* |
-| `hozar` | not yet, and it may never come | *not yet, maybe never* |
+| `huhar` | done, but likely to come undone | *already, for now* |
+| `hager` | goes on, but about to end | *still, for now* |
+| `hezur` | not yet, and it may never come | *not yet, maybe never* |
 | `hewer` | stopped for now; expected to resume | *paused* / *not for now* |
 
-> `zalahen hohol vadebal.`
+> `zalahen huhal vadebal.`
 >
 > z-Alahen | h-already.lasting | v-departure
 >
@@ -445,27 +445,27 @@ The ending says how settled the current stage is, on the same strong-to-light sc
 
 When only one `/ɡ/` adjective is still or no longer so, write the same word under `/w/` immediately before that adjective.
 
-> `zazawan dagadal wagam gubuhal vahahal.`
+> `zazawan dagadal wagem gubuhal vahahal.`
 >
 > z-Azawan | [d-cat | [w-still | g-blue]] | v-see
 >
 > "Azawan sees a cat that is still blue."
 
-**Compare with:** RESIDUE **`thomom`** says a finished outcome **still counts** on the tally, not that the act goes on. FORMER **`thenem`** retires a usual **pattern**; **`hewem`** says any state or act has stopped.
+**Compare with:** RESIDUE **`thamom`** says a finished outcome **still counts** on the tally, not that the act goes on. FORMER **`thunem`** retires a usual **pattern**; **`hewem`** says any state or act has stopped.
 
 ### Notional (as-if framing)
 <a id="notional"></a>
 <a id="notional-mood"></a>
 
-English sometimes frames the whole clause as play: *as if*, *for the sake of argument*, *this is only in the mind*. Agalan keeps the ordinary verb and adds the closed `/th/` word **`ave`**. That word takes the scene off the real tally, so you can tell a pretend walk without turning *walk* into a special pretend-verb. (cue: 🎭 *theater*: a stage mask; the real tally stays offstage)
+English sometimes frames the whole clause as play: *as if*, *for the sake of argument*, *this is only in the mind*. Agalan keeps the ordinary verb and adds the closed `/th/` word **`ove`**. That word takes the scene off the real tally, so you can tell a pretend walk without turning *walk* into a special pretend-verb. (cue: 🎭 *theater*: a stage mask; the real tally stays offstage)
 
-> `zazawan thavem vowogal.`
+> `zazawan thovem vowogal.`
 >
 > z-Azawan | th-NOTIONAL | v-walk
 >
 > "As if Azawan walks." — notional framing held lightly (default)
 
-**For *could be*, use:** [MAY](#may). *As if* play is this section. *Walks like a duck* keeps the walk on the real tally ([simile](relations.md#similative) `hemum`); only the manner matches the model. *Tells on behalf of Alahen* stays on the real tally ([proxy](relations.md#proxy) `hadum`); Azawan is still the teller.
+**For *could be*, use:** [MAY](#may). *As if* play is this section. *Walks like a duck* keeps the walk on the real tally ([simile](relations.md#similative) `homem`); only the manner matches the model. *Tells on behalf of Alahen* stays on the real tally ([proxy](relations.md#proxy) `hadem`); Azawan is still the teller.
 
 **Related form:** a percent likelihood on the claim is the [stance number](numbers.md#number-as-stance-by-marker) **`th+N`**.
 
@@ -476,19 +476,19 @@ You can rehearse an imagined scene to prepare for doing it, picture it without a
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`thavel`** | rehearse a possible scene to prepare for action | *let’s practice…* / *try acting as if…* | `avel` *theater* | 🎭: practice a scene |
-| **`thavem`** | imagine a scene without a further purpose (default) | *imagine…* / *as if…* | `avel` *theater* | 🎭: picture a scene |
-| **`thaver`** | toy with a possibility or assumption, for now | *suppose…* / *what if…?* | `avel` *theater* | 🎭: try on a mask for a moment |
+| **`thovel`** | rehearse a possible scene to prepare for action | *let’s practice…* / *try acting as if…* | `ovel` *theater* | 🎭: practice a scene |
+| **`thovem`** | imagine a scene without a further purpose (default) | *imagine…* / *as if…* | `ovel` *theater* | 🎭: picture a scene |
+| **`thover`** | toy with a possibility or assumption, for now | *suppose…* / *what if…?* | `ovel` *theater* | 🎭: try on a mask for a moment |
 
-When you are not sure, use **`thavem`**.
+When you are not sure, use **`thovem`**.
 
-> `zahaben thavel vezehel.`
+> `zahaben thovel vezehel.`
 >
 > z-Ahaben | th-NOTIONAL-rehearse | v-sing
 >
 > "Ahaben practices singing." — rehearsing the imagined scene
 
-> `zazawan thaver varadal.`
+> `zazawan thover varadal.`
 >
 > z-Azawan | th-NOTIONAL-suppose | v-write
 >
@@ -518,28 +518,28 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Wri
 | *punch* | `vabahel` | |
 | *scream* | `vezogel` | |
 | *MAY* | `thovom` | `ovol` *thought* |
-| *live* / *from the scene* | `thodem` | `odel` *attest* |
-| *WITNESSED* | `thevem` | `evel` *fishing* |
-| *RECORDED* | `thugum` | `ugul` *record* |
-| *PATTERN* | `thobam` | `obal` *paw-prints* |
-| *inferred* | `thanem` | `anel` *investigate* |
-| *TOLD* | `theram` | `eral` *ear* |
-| *felt* | `thahom` | `ahol` *heart* |
-| *STORY* | `thozom` | `ozol` *scroll* |
-| *NOTIONAL* | `thavem` | `avel` *theater* |
-| *RESIDUE* | `thomom` | `omom` *debt* |
-| *FORMER* | `thenem` | `enem` *emptiness* |
+| *live* / *from the scene* | `thodum` | `odul` *attest* |
+| *WITNESSED* | `thunom` | `unol` *fishing* |
+| *RECORDED* | `therum` | `erul` *record* |
+| *PATTERN* | `thabem` | `abel` *paw-prints* |
+| *inferred* | `thevem` | `evel` *investigate* |
+| *TOLD* | `themam` | `emal` *ear* |
+| *felt* | `thahum` | `ahul` *heart* |
+| *STORY* | `thazom` | `azol` *scroll* |
+| *NOTIONAL* | `thovem` | `ovel` *theater* |
+| *RESIDUE* | `thamom` | `amom` *debt* |
+| *FORMER* | `thunem` | `unem` *emptiness* |
 | *always* | `hual` | |
-| *TOLD.weak* | `therar` | `eral` *ear* |
-| *PATTERN.strong* | `thobal` | `obal` *paw-prints* |
-| *RECORDED.strong* | `thugul` | `ugul` *record* |
+| *TOLD.weak* | `themar` | `emal` *ear* |
+| *PATTERN.strong* | `thabel` | `abel` *paw-prints* |
+| *RECORDED.strong* | `therul` | `erul` *record* |
 
 #### English → Agalan {#intermediate-english-to-agalan}
 
 **1.** *Azawan tells Ahaben — live / from the scene.* (present observation)
 
 ::: details Show answer
-`zazawan thodem vezebel bahaben.`
+`zazawan thodum vezebel bahaben.`
 
 z-Azawan | th-LIVE | v-tell | b-Ahaben
 :::
@@ -547,7 +547,7 @@ z-Azawan | th-LIVE | v-tell | b-Ahaben
 **2.** *Alahen sees a camera — from memory* (past observation).
 
 ::: details Show answer
-`zalahen thevem vahahal dagahol.`
+`zalahen thunom vahahal dagahol.`
 
 z-Alahen | th-WITNESSED | v-see | d-camera
 :::
@@ -555,7 +555,7 @@ z-Alahen | th-WITNESSED | v-see | d-camera
 **3.** *Ahaben tells Azawan — on record.*
 
 ::: details Show answer
-`zahaben thugum vezebel bazawan.`
+`zahaben therum vezebel bazawan.`
 
 z-Ahaben | th-RECORDED | v-tell | b-Azawan
 :::
@@ -563,7 +563,7 @@ z-Ahaben | th-RECORDED | v-tell | b-Azawan
 **4.** *Azawan sees a newspaper — from the pattern of cases.*
 
 ::: details Show answer
-`zazawan thobam vahahal dunuzel.`
+`zazawan thabem vahahal dunuzel.`
 
 z-Azawan | th-PATTERN | v-see | d-newspaper
 :::
@@ -571,7 +571,7 @@ z-Azawan | th-PATTERN | v-see | d-newspaper
 **5.** *Alahen mutes — so they say.* (hearsay)
 
 ::: details Show answer
-`zalahen theram vamuyul.`
+`zalahen themam vamuyul.`
 
 z-Alahen | th-TOLD | v-mute
 :::
@@ -579,7 +579,7 @@ z-Alahen | th-TOLD | v-mute
 **6.** *Alahen punches Azawan — inferred from clues.*
 
 ::: details Show answer
-`zalahen thanem vabahel dazawan.`
+`zalahen thevem vabahel dazawan.`
 
 z-Alahen | th-INFERRED | v-punch | d-Azawan
 :::
@@ -587,7 +587,7 @@ z-Alahen | th-INFERRED | v-punch | d-Azawan
 **7.** *As if Azawan tells Ahaben.* (soft pretensive frame)
 
 ::: details Show answer
-`zazawan thavem vezebel bahaben.`
+`zazawan thovem vezebel bahaben.`
 
 z-Azawan | th-NOTIONAL | v-tell | b-Ahaben
 :::
@@ -595,7 +595,7 @@ z-Azawan | th-NOTIONAL | v-tell | b-Ahaben
 **8.** *Imagine Alahen screaming.* (no special purpose)
 
 ::: details Show answer
-`zalahen thavem vezogel.`
+`zalahen thovem vezogel.`
 
 z-Alahen | th-NOTIONAL | v-scream
 :::
@@ -603,7 +603,7 @@ z-Alahen | th-NOTIONAL | v-scream
 **9.** *Azawan tells Ahaben — live; the telling still counts.*
 
 ::: details Show answer
-`zazawan thodem thomom vezebel bahaben.`
+`zazawan thodum thamom vezebel bahaben.`
 
 z-Azawan | th-LIVE | th-RESIDUE | v-tell | b-Ahaben
 :::
@@ -611,7 +611,7 @@ z-Azawan | th-LIVE | th-RESIDUE | v-tell | b-Ahaben
 **10.** *Alahen always tells — a former pattern, not today's; seen live.*
 
 ::: details Show answer
-`zalahen hual vezebel thenem thodem.`
+`zalahen hual vezebel thunem thodum.`
 
 z-Alahen | h-always | v-tell | th-FORMER | th-LIVE
 :::
@@ -619,7 +619,7 @@ z-Alahen | h-always | v-tell | th-FORMER | th-LIVE
 **11.** *Ahaben still screams — seen live.*
 
 ::: details Show answer
-`zahaben thodem hagam vezogel.`
+`zahaben thodum hagem vezogel.`
 
 z-Ahaben | th-LIVE | h-still | v-scream
 :::
@@ -627,7 +627,7 @@ z-Ahaben | th-LIVE | h-still | v-scream
 **12.** *Alahen screams — rumor has it.*
 
 ::: details Show answer
-`zalahen therar vezogel.`
+`zalahen themar vezogel.`
 
 z-Alahen | th-TOLD.weak | v-scream
 :::
@@ -635,14 +635,14 @@ z-Alahen | th-TOLD.weak | v-scream
 **13.** *Going by a well-established pattern, Azawan will tell Ahaben.*
 
 ::: details Show answer
-`zazawan thobal bral vezebel bahaben.`
+`zazawan thabel bral vezebel bahaben.`
 
 z-Azawan | [th-PATTERN.strong | b-later] | v-tell | b-Ahaben
 :::
 
 #### Agalan → English {#intermediate-agalan-to-english}
 
-**1.** `zazawan thahom vezebel bahaben.`
+**1.** `zazawan thahum vezebel bahaben.`
 
 ::: details Show answer
 
@@ -651,7 +651,7 @@ z-Azawan | th-FELT | v-tell | b-Ahaben
 *Azawan tells Ahaben — felt / gut-known.*
 :::
 
-**2.** `zalahen thozom vahahal deredel.`
+**2.** `zalahen thazom vahahal deredel.`
 
 ::: details Show answer
 
@@ -660,7 +660,7 @@ z-Alahen | th-STORY | v-see | d-radio
 *Alahen sees a radio — per the tale.*
 :::
 
-**3.** `zahaben thanem vamuyul.`
+**3.** `zahaben thevem vamuyul.`
 
 ::: details Show answer
 
@@ -669,7 +669,7 @@ z-Ahaben | th-INFERRED | v-mute
 *Ahaben mutes — inferred from clues.*
 :::
 
-**4.** `zahaben thavel vezehel.`
+**4.** `zahaben thovel vezehel.`
 
 ::: details Show answer
 
@@ -678,7 +678,7 @@ z-Ahaben | th-NOTIONAL-rehearse | v-sing
 *Ahaben practices singing.*
 :::
 
-**5.** `zalahen thugum vahahal dagahol.`
+**5.** `zalahen therum vahahal dagahol.`
 
 ::: details Show answer
 
@@ -687,7 +687,7 @@ z-Alahen | th-RECORDED | v-see | d-camera
 *Alahen sees a camera — on record.*
 :::
 
-**6.** `zahaben thevem vezebel.`
+**6.** `zahaben thunom vezebel.`
 
 ::: details Show answer
 
@@ -696,7 +696,7 @@ z-Ahaben | th-WITNESSED | v-tell
 *Ahaben tells — from memory (a past observation).*
 :::
 
-**7.** `zalahen thodem vabahel dazawan.`
+**7.** `zalahen thodum vabahel dazawan.`
 
 ::: details Show answer
 
@@ -713,7 +713,7 @@ z-Ahaben | th-MAY | v-scream
 *Ahaben may be screaming.* (*could be* — not how you know a world-claim)
 :::
 
-**9.** `zahaben thevem thomom vezebel bazawan.`
+**9.** `zahaben thunom thamom vezebel bazawan.`
 
 ::: details Show answer
 
@@ -722,7 +722,7 @@ z-Ahaben | th-WITNESSED | th-RESIDUE | v-tell | b-Azawan
 *Ahaben tells Azawan — from memory; the telling still counts.*
 :::
 
-**10.** `zazawan hual vezebel thenem.`
+**10.** `zazawan hual vezebel thunem.`
 
 ::: details Show answer
 
@@ -731,7 +731,7 @@ z-Azawan | h-always | v-tell | th-FORMER
 *Azawan always tells — a former pattern, not today's.*
 :::
 
-**11.** `zalahen hozal vadebal.`
+**11.** `zalahen hezul vadebal.`
 
 ::: details Show answer
 
@@ -740,7 +740,7 @@ z-Alahen | h-not-yet.lasting | v-departure
 *Alahen hasn't left yet, but will.*
 :::
 
-**12.** `zahaben thugul bral vezebel.`
+**12.** `zahaben therul bral vezebel.`
 
 ::: details Show answer
 
@@ -756,13 +756,13 @@ z-Ahaben | [th-RECORDED.strong | b-later] | v-tell
 
 These `/th/` moods usually sit over the whole clause. When the *could be*, channel, residue / former climate, or as-if frame applies only to the `/ɡ/` adjective it sits immediately before, write the same mood under `/w/` instead.
 
-> `zazawan wevem gubuhal vowogal.`
+> `zazawan wunom gubuhal vowogal.`
 >
 > [z-Azawan | [w-WITNESSED | g-blue]] | v-walk
 >
 > "Azawan walks — and that blue is from memory."
 
-> `zazawan wodem gubuhal vowogal.`
+> `zazawan wodum gubuhal vowogal.`
 >
 > [z-Azawan | [w-LIVE | g-blue]] | v-walk
 >
@@ -775,18 +775,18 @@ The same published roots stay ordinary content under other role letters. The clo
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `zevel` | noun | *a memory* |
-| `zodel` | noun | *an attestation* |
-| `vodel` | verb | *to attest* |
-| `vugul` | verb | *to record* |
-| `zerar` | resume noun | *that ear* |
-| `zozol` | noun | *a scroll* |
-| `zavel` | noun | *a theater* |
-| `vavem` | verb | *to pretend* |
-| `zomom` | noun | *debt* |
-| `zenem` | noun | *emptiness* |
+| `zunol` | noun | *a memory* |
+| `zodul` | noun | *an attestation* |
+| `vodul` | verb | *to attest* |
+| `verul` | verb | *to record* |
+| `zemar` | resume noun | *that ear* |
+| `zazol` | noun | *a scroll* |
+| `zovel` | noun | *a theater* |
+| `vovem` | verb | *to pretend* |
+| `zamom` | noun | *debt* |
+| `zunem` | noun | *emptiness* |
 
-> `zazawan vahahal davel.`
+> `zazawan vahahal dovel.`
 >
 > z-Azawan | v-see | d-theater
 >
@@ -794,9 +794,9 @@ The same published roots stay ordinary content under other role letters. The clo
 
 ### Reconstructive catch {#reconstructive-catch}
 
-**`eve`** is reconstructive: you pull something back, and it may not be what you hoped (a fishing line can come up with a boot). Memory can be wrong, so **`thevem`** marks the claim as recalled, not as checked now.
+**`uno`** is reconstructive: you pull something back, and it may not be what you hoped (a fishing line can come up with a boot). Memory can be wrong, so **`thunom`** marks the claim as recalled, not as checked now.
 
-> `zazawan thevem vahahal dubudal.`
+> `zazawan thunom vahahal dubudal.`
 >
 > z-Azawan | th-WITNESSED | v-see | d-boot
 >
@@ -805,35 +805,35 @@ The same published roots stay ordinary content under other role letters. The clo
 ### Residue against a snapshot
 <a id="as-of-standing"></a>
 
-[RESIDUE](#residue) and [FORMER](#former-climate) without a hosted pair score against **today’s** books. To score them against a dated now, add [*as-of*](relations.md#as-of). LIVE plus *as-of* puts the camera in that snapshot. WITNESSED plus *as-of* is memory of a scene whose internal now is the snapshot. Write **`thevem`** again on the next memory clause; resume the books with **`henur`**. [MAY](#may) still evaluates from speech-now.
+[RESIDUE](#residue) and [FORMER](#former-climate) without a hosted pair score against **today’s** books. To score them against a dated now, add [*as-of*](relations.md#as-of). LIVE plus *as-of* puts the camera in that snapshot. WITNESSED plus *as-of* is memory of a scene whose internal now is the snapshot. Write **`thunom`** again on the next memory clause; resume the books with **`hener`**. [MAY](#may) still evaluates from speech-now.
 
-> `zalahen thomom henum b_#22,7 vadebal.`
+> `zalahen thamom henem b_#22,7 vadebal.`
 >
 > z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 >
 > "As of 22 July, Alahen’s leaving still counted."
 
-> `zazawan thodem henum b_#22,7 vowogal.`
+> `zazawan thodum henem b_#22,7 vowogal.`
 >
 > z-Azawan | th-LIVE | [h-as-of.ledger | b-_22,7] | v-walk
 >
 > "Azawan is walking — we're there on 22 July."
 
-> `zalahen thevem henum b_#22,7 thomom vadebal. xazawan thevem henur vowogal.`
+> `zalahen thunom henem b_#22,7 thamom vadebal. xazawan thunom hener vowogal.`
 >
 > z-Alahen | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure . x-Azawan | th-WITNESSED | h-as-of.ledger | v-walk
 >
 > "I remember: as of 22 July, Alahen's leaving still counted. Azawan was walking — also from memory, against the same books."
 
-> `zazawan hual vezebel thenem henum b_#22,7.`
+> `zazawan hual vezebel thunem henem b_#22,7.`
 >
 > z-Azawan | h-always | v-tell | th-FORMER | [h-as-of.ledger | b-_22,7]
 >
 > "As of 22 July, Azawan's always telling was already a former pattern."
 
-[NOTIONAL](#notional) may stack with *as-of* (*as if, from Friday’s books*). Serious English *if he had* stays bookmark `humum`, not play.
+[NOTIONAL](#notional) may stack with *as-of* (*as if, from Friday’s books*). Serious English *if he had* stays bookmark `humem`, not play.
 
-> `zalahen thavem henum b_#22,7 vadebal.`
+> `zalahen thovem henem b_#22,7 vadebal.`
 >
 > z-Alahen | th-NOTIONAL | [h-as-of.ledger | b-_22,7] | v-departure
 >
@@ -845,12 +845,12 @@ The same published roots stay ordinary content under other role letters. The clo
 
 English *three hours ago* and *in three hours* count from now. Agalan counts from the channel instead: put a [measure phrase](numbers-applied.md#measure-phrases) in `/b/` immediately after the evidential. The amount is **signed**: **`-`** is earlier than now, **`+`** is later than now. The offset always dates the **event**, not the moment you learned about it. There is no bare *ago* word, so a dated claim always says how you know it.
 
-> `zazawan thevem bagazem grurel vowogal.`
+> `zazawan thunom bagazem grurel vowogal.`
 > z-Azawan | [th-WITNESSED | [b-hour | g-minus-three]] | v-walk
 >
 > "I saw Azawan walk three hours ago."
 
-> `zalahen theram bagazem grarel vadebal.`
+> `zalahen themam bagazem grarel vadebal.`
 > z-Alahen | [th-TOLD | [b-hour | g-three]] | v-departure
 >
 > "I hear Alahen leaves in three hours."
@@ -859,28 +859,28 @@ Some channels only point one way:
 
 | Channel | Sign | Why |
 |---------|------|-----|
-| **`thevem`** WITNESSED | **`-`** only | you already observed it |
-| **`thodem`** LIVE | no offset | the scene is in view now |
-| **`thugum`** RECORDED | **`-`** or **`+`** | **`-`**: captured then; **`+`**: scheduled for then |
-| **`thobam`** PATTERN | **`-`** or **`+`** | **`-`**: it happened then, if the pattern held; **`+`**: it will, if the pattern holds |
-| **`thanem`** INFERRED, **`theram`** TOLD, **`thahom`** FELT, **`thozom`** TALE | **`-`** or **`+`** | the channel does not fix the time |
-| [PLAN](intention.md#plan-predict) **`thamam`** | **`+`** only | the intended act is later |
+| **`thunom`** WITNESSED | **`-`** only | you already observed it |
+| **`thodum`** LIVE | no offset | the scene is in view now |
+| **`therum`** RECORDED | **`-`** or **`+`** | **`-`**: captured then; **`+`**: scheduled for then |
+| **`thabem`** PATTERN | **`-`** or **`+`** | **`-`**: it happened then, if the pattern held; **`+`**: it will, if the pattern holds |
+| **`thevem`** INFERRED, **`themam`** TOLD, **`thahum`** FELT, **`thazom`** TALE | **`-`** or **`+`** | the channel does not fix the time |
+| [PLAN](intention.md#plan-predict) **`thumam`** | **`+`** only | the intended act is later |
 
-The wrong sign on a one-way word (**`thevem`** with **`+`**, **`thamam`** with **`-`**) is not a sentence.
+The wrong sign on a one-way word (**`thunom`** with **`+`**, **`thumam`** with **`-`**) is not a sentence.
 
 For *just* and *about to*, use the [just-short](numbers.md#just-short) amount with no unit: **`brubul`** is *a hair before now*, **`brabul`** is *a hair after now*.
 
-> `zazawan thevem brubul vowogal.`
+> `zazawan thunom brubul vowogal.`
 > z-Azawan | [th-WITNESSED | b---e-] | v-walk
 >
 > "I just saw Azawan walk."
 
-> `thanem brabul verehel.`
+> `thevem brabul verehel.`
 > [th-INFERRED | b-+-e-] | v-rain
 >
 > "It is about to rain (from the clouds)."
 
-> `zalahen thobam bagazem grurel vezebal.`
+> `zalahen thabem bagazem grurel vezebal.`
 > z-Alahen | [th-PATTERN | [b-hour | g-minus-three]] | v-sleep
 >
 > "Going by the pattern, Alahen slept three hours ago."
@@ -893,53 +893,53 @@ With an [as-of](relations.md#as-of) pair, the offset counts from that whose-now 
 
 Agalan has no short *now* word. Say *now* with an offset of **zero**: the event sits no time away from the moment you speak. The channel stays, so *now* still says how you know it.
 
-> `zalahen thanem bagazem grazol vezebal.`
+> `zalahen thevem bagazem grazol vezebal.`
 > z-Alahen | [th-INFERRED | [b-hour | g-zero]] | v-sleep
 >
 > "Alahen must be asleep right now."
 
 The unit sets how wide *now* is. Zero hours is *right now*; zero [days](numbers-applied.md#stock-units) is *today*.
 
-> `zazawan theram bazazam grazol vezehel.`
+> `zazawan themam bazazam grazol vezehel.`
 > z-Azawan | [th-TOLD | [b-day | g-zero]] | v-sing
 >
 > "I hear Azawan sings today."
 
-Use zero on a channel that takes either sign. **LIVE** `thodem` already means *now in view*, so it needs no offset. **WITNESSED** takes **`-`** only and PLAN takes **`+`** only, so zero is not a sentence on them.
+Use zero on a channel that takes either sign. **LIVE** `thodum` already means *now in view*, so it needs no offset. **WITNESSED** takes **`-`** only and PLAN takes **`+`** only, so zero is not a sentence on them.
 
 ### Universality {#universality}
 <a id="universality-mood"></a>
 
 English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Keep *who / when* on the [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / …). Write exceptionlessness as a closed `/th/` mood root (optional `/w/` immediately before a `/ɡ/`). You can then pair *always* with *usually*, *by definition*, and the rest without changing the domain fence.
 
-> `zazawan hual vowogal thagul.`
+> `zazawan hual vowogal thogol.`
 >
 > z-Azawan | h-always | v-walk | th-COMMON
 >
 > "Azawan always walks, usually."
 
-The default *always* is *usually* (exceptions expected), not *must happen that way*, and not an ought. (cue: usual weather, not a law of nature.) Prefer floating `/th/`. Use **COMMON** (`thagul`) unless another row is the exceptionlessness you mean. **RULE** is complex `/th/` + `/b/` when you name the frame.
+The default *always* is *usually* (exceptions expected), not *must happen that way*, and not an ought. (cue: usual weather, not a law of nature.) Prefer floating `/th/`. Use **COMMON** (`thogol`) unless another row is the exceptionlessness you mean. **RULE** is complex `/th/` + `/b/` when you name the frame.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`thagul`** | COMMON (default climate) | *usually* (exceptions expected) | `agul` *cloudy* | ⛅: usual sky still allows a shower |
-| **`thedal`** | UNCOUNTERED (search) | *as far as checked* (no counterexample comes to mind) | `edal` *pill* | 💊: you take it to treat an ailment; the search found none |
-| **`thezul`** | FORMAL | *by definition* / math / proof | `ezul` *star* | ⭐: a charted constellation does not wander |
-| **`thalol`** | NATURAL | *by natural necessity* (unsupported objects fall) | `alol` *apple* | 🍎: it falls because the world works that way |
-| **`thubel`** | RULE | *under a named frame* (`thubel bazogel`) | `ubel` *pepper* | 🌶️: heat that applies in that dish |
+| **`thogol`** | COMMON (default climate) | *usually* (exceptions expected) | `ogol` *cloudy* | ⛅: usual sky still allows a shower |
+| **`thehol`** | UNCOUNTERED (search) | *as far as checked* (no counterexample comes to mind) | `ehol` *pill* | 💊: you take it to treat an ailment; the search found none |
+| **`thazal`** | FORMAL | *by definition* / math / proof | `azal` *star* | ⭐: a charted constellation does not wander |
+| **`thalul`** | NATURAL | *by natural necessity* (unsupported objects fall) | `alul` *apple* | 🍎: it falls because the world works that way |
+| **`thebel`** | RULE | *under a named frame* (`thebel bazogel`) | `ebel` *pepper* | 🌶️: heat that applies in that dish |
 
-**Compare with:** *who / when* uses [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory. Usual weather you are **not** claiming now is [FORMER](#former-climate) (`thenem`), not COMMON.
+**Compare with:** *who / when* uses [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory. Usual weather you are **not** claiming now is [FORMER](#former-climate) (`thunem`), not COMMON.
 
-**For *I saw a pattern*, use:** [evidential](#evidentiality) **`oba`**. **`agu`** is usual-weather universality; NATURAL **`alo`** stacks a separate evidential `/th/` for how you know.
+**For *I saw a pattern*, use:** [evidential](#evidentiality) **`abe`**. **`ogo`** is usual-weather universality; NATURAL **`alu`** stacks a separate evidential `/th/` for how you know.
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `… hual … thagul` | default universality | *always, usually* |
-| `… hual … thedal` | search found no counterexample | *always, as far as checked* |
-| `zual gaxedehol vedehol thezul` | definition / proof | *every teacher teaches, by definition* |
-| `… hual … thalol` + evidential `/th/` | nature plus how you know | *always, by natural necessity* (e.g. `thobam`) |
-| `… hal … thubel bazogel` | named frame | *never, under soccer rules* |
-| `zuam gagadal … thagul` | open domain + usual universality | *every cat that comes to mind, usually* |
+| `… hual … thogol` | default universality | *always, usually* |
+| `… hual … thehol` | search found no counterexample | *always, as far as checked* |
+| `zual gaxedehol vedehol thazal` | definition / proof | *every teacher teaches, by definition* |
+| `… hual … thalul` + evidential `/th/` | nature plus how you know | *always, by natural necessity* (e.g. `thabem`) |
+| `… hal … thebel bazogel` | named frame | *never, under soccer rules* |
+| `zuam gagadal … thogol` | open domain + usual universality | *every cat that comes to mind, usually* |
 
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
@@ -957,17 +957,17 @@ Short drills for Advanced. Try each item before opening **Show answer**. Score l
 | *Ahaben* | `ahaben` | | |
 | *departure* | `vadebal` | | |
 | *walk* | `vowogal` | | |
-| *RESIDUE* | `thomom` | | |
-| *WITNESSED* | `thevem` | | |
-| *LIVE* | `thodem` | | |
+| *RESIDUE* | `thamom` | | |
+| *WITNESSED* | `thunom` | | |
+| *LIVE* | `thodum` | | |
 | *MAY* | `thovom` | | |
-| *as-of.ledger* | `henum` | | |
+| *as-of.ledger* | `henem` | | |
 | *blue* | `ubuhal` | | |
-| *COMMON* | `thagul` | `agul` *cloudy* | ⛅: usual sky still allows a shower |
-| *UNCOUNTERED* | `thedal` | `edal` *pill* | 💊: you take it to treat an ailment; the search found none |
-| *FORMAL* | `thezul` | `ezul` *star* | ⭐: a charted constellation does not wander |
-| *NATURAL* | `thalol` | `alol` *apple* | 🍎: it falls because the world works that way |
-| *RULE* | `thubel` | `ubel` *pepper* | 🌶️: heat that applies in that dish |
+| *COMMON* | `thogol` | `ogol` *cloudy* | ⛅: usual sky still allows a shower |
+| *UNCOUNTERED* | `thehol` | `ehol` *pill* | 💊: you take it to treat an ailment; the search found none |
+| *FORMAL* | `thazal` | `azal` *star* | ⭐: a charted constellation does not wander |
+| *NATURAL* | `thalul` | `alul` *apple* | 🍎: it falls because the world works that way |
+| *RULE* | `thebel` | `ebel` *pepper* | 🌶️: heat that applies in that dish |
 | *always* | `hual` | | |
 | *never* | `hal` | | |
 | *write* | `varadal` | | |
@@ -984,14 +984,14 @@ Short drills for Advanced. Try each item before opening **Show answer**. Score l
 | *soccer* | `azogel` | | |
 | *cat* | `agadal` | | |
 | *sleep* | `vezebal` | `ezebal` *sleep* | |
-| evidential *pattern* | `obam` | `obal` *paw-prints* | 🐾: a trail of what usually happens |
+| evidential *pattern* | `abem` | `abel` *paw-prints* | 🐾: a trail of what usually happens |
 
 #### English → Agalan {#advanced-english-to-agalan}
 
 **1.** *As of 22 July, Alahen’s leaving still counted.*
 
 ::: details Show answer
-`zalahen thomom henum b_#22,7 vadebal.`
+`zalahen thamom henem b_#22,7 vadebal.`
 
 z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 :::
@@ -999,7 +999,7 @@ z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 **2.** *Azawan is walking — we're there on 22 July.*
 
 ::: details Show answer
-`zazawan thodem henum b_#22,7 vowogal.`
+`zazawan thodum henem b_#22,7 vowogal.`
 
 z-Azawan | th-LIVE | [h-as-of.ledger | b-_22,7] | v-walk
 :::
@@ -1007,7 +1007,7 @@ z-Azawan | th-LIVE | [h-as-of.ledger | b-_22,7] | v-walk
 **3.** *As of 22 July, Alahen's leaving may still have counted.*
 
 ::: details Show answer
-`zalahen thovom thomom henum b_#22,7 vadebal.`
+`zalahen thovom thamom henem b_#22,7 vadebal.`
 
 z-Alahen | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 :::
@@ -1015,7 +1015,7 @@ z-Alahen | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 **4.** *Alahen walks — and that blue is live, from the scene itself.*
 
 ::: details Show answer
-`zalahen wodem gubuhal vowogal.`
+`zalahen wodum gubuhal vowogal.`
 
 [z-Alahen | [w-LIVE | g-blue]] | v-walk
 :::
@@ -1023,7 +1023,7 @@ z-Alahen | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 **5.** *Alahen always writes, usually.*
 
 ::: details Show answer
-`zalahen hual varadal thagul.`
+`zalahen hual varadal thogol.`
 
 z-Alahen | h-always | v-write | th-COMMON
 :::
@@ -1031,7 +1031,7 @@ z-Alahen | h-always | v-write | th-COMMON
 **6.** *Azawan always sits, as far as checked.*
 
 ::: details Show answer
-`zazawan hual vehahel thedal.`
+`zazawan hual vehahel thehol.`
 
 z-Azawan | h-always | v-sit | th-UNCOUNTERED
 :::
@@ -1039,7 +1039,7 @@ z-Azawan | h-always | v-sit | th-UNCOUNTERED
 **7.** *Every teacher teaches, by definition.*
 
 ::: details Show answer
-`zual gaxedehol vedehol thezul.`
+`zual gaxedehol vedehol thazal.`
 
 [z-everything | g-agent-x-teach] | v-teach | th-FORMAL
 :::
@@ -1047,7 +1047,7 @@ z-Azawan | h-always | v-sit | th-UNCOUNTERED
 **8.** *Every cat sleeps, by natural necessity* (plus a trail of cases).
 
 ::: details Show answer
-`zual gagadal vezebal thalol thobam.`
+`zual gagadal vezebal thalul thabem.`
 
 [z-everything | g-cat] | v-sleep | th-NATURAL | th-PATTERN
 :::
@@ -1055,7 +1055,7 @@ z-Azawan | h-always | v-sit | th-UNCOUNTERED
 **9.** *Alahen never punches, under soccer rules.*
 
 ::: details Show answer
-`zalahen hal vabahel thubel bazogel.`
+`zalahen hal vabahel thebel bazogel.`
 
 z-Alahen | h-never | v-punch | [th-RULE | b-soccer]
 :::
@@ -1063,14 +1063,14 @@ z-Alahen | h-never | v-punch | [th-RULE | b-soccer]
 **10.** *Every claim that comes to mind, usually.*
 
 ::: details Show answer
-`zuam gededem thagul.`
+`zuam gededem thogol.`
 
 [z-everything.open | g-claim] | th-COMMON
 :::
 
 #### Agalan → English {#advanced-agalan-to-english}
 
-**1.** `zalahen thevem henum b_#22,7 thomom vadebal.`
+**1.** `zalahen thunom henem b_#22,7 thamom vadebal.`
 
 ::: details Show answer
 
@@ -1079,7 +1079,7 @@ z-Alahen | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure
 *I remember: as of 22 July, Alahen's leaving still counted.*
 :::
 
-**2.** `zalahen thevem henum b_#22,7 thomom vadebal. xazawan thevem henur vowogal.`
+**2.** `zalahen thunom henem b_#22,7 thamom vadebal. xazawan thunom hener vowogal.`
 
 ::: details Show answer
 
@@ -1088,7 +1088,7 @@ z-Alahen | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure 
 *I remember: as of 22 July, Alahen's leaving still counted. Azawan was walking — also from memory, against the same books.*
 :::
 
-**3.** `zalahen thovom thomom henum b_#22,7 vadebal.`
+**3.** `zalahen thovom thamom henem b_#22,7 vadebal.`
 
 ::: details Show answer
 
@@ -1106,7 +1106,7 @@ z-Alahen | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 *Azawan walks — and that may be blue.* (only the color is open)
 :::
 
-**5.** `zazawan hual vehahel thagul.`
+**5.** `zazawan hual vehahel thogol.`
 
 ::: details Show answer
 
@@ -1115,7 +1115,7 @@ z-Azawan | h-always | v-sit | th-COMMON
 *Azawan always sits, usually.*
 :::
 
-**6.** `zalahen hual varadal thedal.`
+**6.** `zalahen hual varadal thehol.`
 
 ::: details Show answer
 
@@ -1124,7 +1124,7 @@ z-Alahen | h-always | v-write | th-UNCOUNTERED
 *Alahen always writes, as far as checked.*
 :::
 
-**7.** `zual gaxavadal vavadal thezul.`
+**7.** `zual gaxavadal vavadal thazal.`
 
 ::: details Show answer
 
@@ -1133,7 +1133,7 @@ z-Alahen | h-always | v-write | th-UNCOUNTERED
 *Every fighter fights, by definition.*
 :::
 
-**8.** `zual gagadal vevegal thalol thobam.`
+**8.** `zual gagadal vevegal thalul thabem.`
 
 ::: details Show answer
 
@@ -1142,7 +1142,7 @@ z-Alahen | h-always | v-write | th-UNCOUNTERED
 *Every cat thinks, by natural necessity* (plus a trail of cases).
 :::
 
-**9.** `zazawan hal vehahel thubel bazogel.`
+**9.** `zazawan hal vehahel thebel bazogel.`
 
 ::: details Show answer
 
@@ -1151,7 +1151,7 @@ z-Azawan | h-never | v-sit | [th-RULE | b-soccer]
 *Azawan never sits, under soccer rules.*
 :::
 
-**10.** `zuam gerazem thagul.`
+**10.** `zuam gerazem thogol.`
 
 ::: details Show answer
 

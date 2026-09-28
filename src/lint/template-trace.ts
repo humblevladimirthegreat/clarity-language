@@ -1,3 +1,4 @@
+import { CLOSED } from "../closed-roots.js";
 import type { ClassifyTables } from "../parse/classify.js";
 import { parseWithTables } from "../parse/parse-core.js";
 
@@ -17,23 +18,27 @@ const SLOT_RE = /…|\.\.\.|[A-Z][A-Z0-9₀-₉]*/g;
 /** A character that continues a word (so a slot next to it is part of that word). */
 const WORD_CHAR_RE = /[a-z0-9#+_~@=±-]/;
 
-const WORD_FILLERS = ["zazawan", "vowogal", "gazawal", "bazawan", "zazawan vowogal", "dazawan", "hazawal", "wazawal"];
+const SWAN = CLOSED.swan;
+const WALK = CLOSED.walk;
+const WORD_FILLERS = [
+  `z${SWAN}n`, `v${WALK}l`, `g${SWAN}l`, `b${SWAN}n`, `z${SWAN}n v${WALK}l`, `d${SWAN}n`, `h${SWAN}l`, `w${SWAN}l`,
+];
 const NAMED_FILLERS: Record<string, string[]> = {
   HOOK: ["al", "am", "ul", "ol", "el", "aol"],
-  BODY: ["zazawan vowogal", "vowogal"],
+  BODY: [`z${SWAN}n v${WALK}l`, `v${WALK}l`],
   LINKER: ["xal", "xol"],
   JOIN: ["zal", "zol", "zel"],
 };
 const LEADING_FILLERS = [
   "z", "d", "v", "g", "b", "h", "w", "x", "y", "th",
-  "zazawa", "vowoga", "gazawa", "gune", "guda", "thune", "waba",
+  `z${SWAN}`, `v${WALK}`, `g${SWAN}`, `g${CLOSED.knot}`, `g${CLOSED.toolbox}`, `th${CLOSED.knot}`, `w${CLOSED.ballot}`,
   "g+", "g+2", "g~+", "g#", "grawozozo",
 ];
-const TRAILING_FILLERS = ["", "l", "n", "m", "r", "2", "2l", "2n", "azawal", "azawan", "owogal", "a", "ul"];
+const TRAILING_FILLERS = ["", "l", "n", "m", "r", "2", "2l", "2n", `${SWAN}l`, `${SWAN}n`, `${WALK}l`, "a", "ul"];
 const NUMBER_FILLERS = ["2", "3", "2l", "3l", "2n", "3n"];
-const ROOT_FILLERS = ["azawa", "owoga"];
+const ROOT_FILLERS = [SWAN, WALK];
 /** Interest roots, for interest patterns (`g…tha…`). */
-const INTEREST_FILLERS = ["une", "uda"];
+const INTEREST_FILLERS = [CLOSED.knot, CLOSED.toolbox];
 
 type Slot = { start: number; end: number; options: string[] };
 
@@ -47,8 +52,8 @@ function slotOptions(text: string, start: number, end: number): string[] {
   }
   if (name === "N") return NUMBER_FILLERS;
   if (name === "ROOT") return ROOT_FILLERS;
-  if (name === "DIR") return ["eweza", "onova"];
-  if (name === "ANCHOR") return ["eha", "azawa"];
+  if (name === "DIR") return [CLOSED.west, CLOSED.north];
+  if (name === "ANCHOR") return [CLOSED.headphones, SWAN];
   if (before && after) return ["", ...ROOT_FILLERS, ...INTEREST_FILLERS, "a", "x", "l"];
   return after ? LEADING_FILLERS : TRAILING_FILLERS;
 }

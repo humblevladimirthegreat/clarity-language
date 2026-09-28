@@ -9,6 +9,7 @@ import type { ClassifyTables } from "../parse/classify.js";
 import { morphGlossLine } from "../parse/morph-gloss.js";
 import { parseWord } from "../parse/word.js";
 
+import { asRetieTables, type RetieTables } from "./tables.js";
 import type { RetieChange } from "./tokens.js";
 
 export type FollowPairs = {
@@ -28,8 +29,9 @@ function gloss(text: string, tables: ClassifyTables): string | null {
   }
 }
 
-/** Pairs implied by a page's code changes. `tables` must know the old and new spellings. */
-export function followPairs(changes: readonly RetieChange[], tables: ClassifyTables): FollowPairs {
+/** Pairs implied by a page's code changes (old spellings gloss against `old`, new against `current`). */
+export function followPairs(changes: readonly RetieChange[], tables: ClassifyTables | RetieTables): FollowPairs {
+  const { old, current } = asRetieTables(tables);
   const names = new Map<string, string>();
   const words = new Map<string, string>();
   const conflicts = new Set<string>();
@@ -53,8 +55,8 @@ export function followPairs(changes: readonly RetieChange[], tables: ClassifyTab
     }
     // Named words gloss as their own capitalised spelling; pair the names in the two glosses.
     if (!/n\b|n[x\]})>]/.test(change.from)) continue;
-    let before: string[] = gloss(change.from, tables)?.match(NAME_RE) ?? [];
-    let after: string[] = gloss(change.to, tables)?.match(NAME_RE) ?? [];
+    let before: string[] = gloss(change.from, old)?.match(NAME_RE) ?? [];
+    let after: string[] = gloss(change.to, current)?.match(NAME_RE) ?? [];
     if (before.length === 0 || before.length !== after.length) {
       // No lexicon for one side: a one-root named word's name is its capitalised spelling.
       before = plainName(change.from);

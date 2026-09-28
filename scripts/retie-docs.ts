@@ -13,18 +13,19 @@
  * as does a map whose old spellings the word grammar cannot read or that was already applied.
  */
 import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
-import { dirname, join, relative } from "node:path";
+import { basename, dirname, join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { CLOSED_ENTRIES } from "../src/closed-roots.js";
 import { parseCompoundCsv, validateCompoundRows } from "../src/lexicon-compounds.js";
 import { ensureFrequencyFile, loadFrequencyRanks } from "../src/lexicon-place.js";
 import { fillSelf } from "../src/learner-name.js";
 import { ENGLISH_IN_CODE, lintAgalanMarkdown, lintAgalanSpans } from "../src/lint/agalan-docs.js";
 import { formatMorphGlossFinding, lintMorphGlossMarkdown } from "../src/lint/morph-gloss-docs.js";
-import { formatNumberSpeechFinding, lintNumberSpeechMarkdown } from "../src/lint/number-speech-docs.js";
+import { formatNumberSpeechFinding, lintNumberSpeechMarkdown, NUMBER_SPEECH_FILES } from "../src/lint/number-speech-docs.js";
 import { formatWordBankFinding, lintWordBankMarkdown } from "../src/lint/word-bank-docs.js";
-import type { ClassifyTables } from "../src/parse/classify.js";
-import { loadDefaultTables } from "../src/parse/index.js";
+import { hasClosedOverlay, type ClassifyTables } from "../src/parse/classify.js";
+import { loadDefaultTables, morphGlossLine } from "../src/parse/index.js";
 import { parseWord } from "../src/parse/word.js";
 import { headingIdRenames, relinkMarkdown, relinkOverlayAnchors, type AnchorRenames } from "../src/retie/anchors.js";
 import { mergeFollowPairs } from "../src/retie/follow.js";
@@ -35,10 +36,12 @@ import {
   RETIE_MAP_RELATIVE_PATH,
   unreadableOldRoots,
 } from "../src/retie/map.js";
-import { contentStemRoots } from "../src/retie/resume.js";
+import { retieCore } from "../src/retie/rebuild.js";
+import { antecedentStemRoots } from "../src/retie/resume.js";
 import { rewriteSourceLiterals } from "../src/retie/source.js";
 import { forEachMarkdownCodeToken, lineNumberAt, peelChunk } from "../src/retie/tokens.js";
-import { bridgeTables, verifyRetiedSpans } from "../src/retie/verify.js";
+import { lexiconConverted, retieTables, type RetieTables } from "../src/retie/tables.js";
+import { verifyRetiedSpans } from "../src/retie/verify.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
 const markdownDirs = [
@@ -48,12 +51,21 @@ const markdownDirs = [
 ];
 /** TODO.md is planning notes and is never retied. */
 const topLevelMarkdown = ["AGENTS.md", "README.md"].map((name) => join(rootDir, name));
+/** Page-level opt-out for records of past spellings (the marker on a line of its own, not quoted in prose). */
+const RETIE_SKIP_RE = /^<!--\s*retie:\s*skip\s*-->\s*$/m;
 const compoundsPath = join(rootDir, "data", "lexicon-compounds.csv");
 const overlaysPath = join(rootDir, "data", "lexicon-overlays.csv");
 const grammarDir = join(rootDir, "docs", "grammar");
 /** Source whose string literals hold Agalan. The retie tool's own tests use their own maps. */
 const sourceDirs = [join(rootDir, "src"), join(rootDir, "scripts"), join(grammarDir, ".vitepress")];
-const SOURCE_SKIP = [join(rootDir, "src", "retie"), join(rootDir, "src", "generated"), join(rootDir, "scripts", "retie-docs.ts")];
+/** Skipped by the source scan. `closed-roots.ts` is resynced by emoji in `convert-word --lexicon`. */
+const SOURCE_SKIP = [
+  join(rootDir, "src", "retie"),
+  join(rootDir, "src", "generated"),
+  join(rootDir, "scripts", "retie-docs.ts"),
+  join(rootDir, "src", "closed-roots.ts"),
+  join(rootDir, "src", "closed-roots.test.ts"),
+];
 /** Frequency rank below which a word counts as common English for review. */
 const COMMON_ENGLISH_RANK = 30000;
 
@@ -146,19 +158,79 @@ function listMarkdown(dir: string): string[] {
 }
 
 /** Content roots spelled in code across the docs, for the collision check. */
+/** Content roots of non-resume words in the docs. */
 function rootsInUse(texts: string[]): Set<string> {
   const roots = new Set<string>();
   for (const text of texts) {
     forEachMarkdownCodeToken(text, ({ chunk }) => {
       const { core } = peelChunk(chunk);
       try {
-        for (const root of contentStemRoots(parseWord(core))) roots.add(root);
+        for (const root of antecedentStemRoots(parseWord(core))) roots.add(root);
       } catch {
         // not an Agalan word
       }
     });
   }
   return roots;
+}
+
+/**
+ * Bare short resumes (a code span that is just the word, as in prose) whose reading the retie changed:
+ * with no earlier word to bind, a resume reads as its stem's root, and the retie may have made that
+ * stem another row's root (`zodor` ←dog became ←door). A resume inside a sentence is covered by the
+ * per-span bind check. Code spans pair up by position: the retie never adds or removes one.
+ */
+function bareResumeDrift(
+  before: string,
+  after: string,
+  map: ReadonlyMap<string, string>,
+  tables: RetieTables,
+  english: ReadonlySet<string>,
+): { index: number; from: string; to: string; was: string; reads: string; keep?: string }[] {
+  const bare = (text: string) => {
+    const tokens: { chunk: string; index: number; block: number }[] = [];
+    forEachMarkdownCodeToken(text, (token) => tokens.push(token));
+    const perBlock = new Map<number, number>();
+    for (const token of tokens) perBlock.set(token.block, (perBlock.get(token.block) ?? 0) + 1);
+    return new Map(tokens.filter((token) => perBlock.get(token.block) === 1).map((token) => [token.block, token]));
+  };
+  const gloss = (core: string, t: ClassifyTables) => {
+    try {
+      return morphGlossLine(`${core}.`, t);
+    } catch {
+      return "(does not parse)";
+    }
+  };
+  const beforeBare = bare(before);
+  const out: { index: number; from: string; to: string; was: string; reads: string; keep?: string }[] = [];
+  for (const [block, token] of bare(after)) {
+    const { core } = peelChunk(token.chunk);
+    const previous = beforeBare.get(block);
+    const from = previous ? peelChunk(previous.chunk).core : "";
+    if (!core || !from || english.has(core) || ENGLISH_IN_CODE.has(core)) continue;
+    try {
+      const word = parseWord(core);
+      if (word.ending !== "r" || word.family.kind !== "content" || hasClosedOverlay(word, tables.current)) continue;
+    } catch {
+      continue;
+    }
+    const was = gloss(from, tables.old);
+    const reads = gloss(core, tables.current);
+    if (was === reads) continue;
+    // The spelling that keeps the old reading when that reading was the stem's own root (`zerar` ←ear → `zemar`).
+    let keep: string | undefined;
+    try {
+      const old = parseWord(from);
+      if (old.family.kind === "content" && old.family.roots.every((root) => tables.old.published.has(root))) {
+        const next = retieCore(from, map, { stems: new Set(), boundAntecedentRoots: old.family.roots });
+        if (next && next !== core && gloss(next, tables.current) === was) keep = next;
+      }
+    } catch {
+      // keep stays undefined
+    }
+    out.push({ index: token.index, from, to: core, was, reads, keep });
+  }
+  return out;
 }
 
 /** Doc-lint findings for one page (same checks as `npm run build`, minus site-wide ones). */
@@ -177,21 +249,24 @@ function lintPage(rel: string, source: string, tables: ClassifyTables): string[]
   for (const finding of lintWordBankMarkdown(source, tables)) {
     out.push(formatWordBankFinding(rel, finding));
   }
-  for (const finding of lintNumberSpeechMarkdown(text)) {
-    out.push(formatNumberSpeechFinding(rel, finding));
+  // The build checks pronunciation rows on the number pages only.
+  if (NUMBER_SPEECH_FILES.includes(basename(rel))) {
+    for (const finding of lintNumberSpeechMarkdown(text)) {
+      out.push(formatNumberSpeechFinding(rel, finding));
+    }
   }
   return out;
 }
 
 /**
- * Lint findings a retie adds to a grammar page: the page before the retie against a lexicon
- * that still knows the old spellings, the page after against the new lexicon only.
+ * Lint findings a retie adds to a grammar page: the page before the retie against the old
+ * lexicon, the page after against the current one.
  * Findings are compared without line numbers, so moved lines are not new.
  */
-function newLintFindings(rel: string, before: string, after: string, bridge: ClassifyTables, current: ClassifyTables): string[] {
+function newLintFindings(rel: string, before: string, after: string, old: ClassifyTables, current: ClassifyTables): string[] {
   const key = (finding: string) => finding.replace(/^[^\s]+:\d+\s+/, "").replace(/\s+/g, " ");
   const baseline = new Map<string, number>();
-  for (const finding of lintPage(rel, before, bridge)) {
+  for (const finding of lintPage(rel, before, old)) {
     baseline.set(key(finding), (baseline.get(key(finding)) ?? 0) + 1);
   }
   return lintPage(rel, after, current).filter((finding) => {
@@ -231,9 +306,17 @@ async function main(): Promise<void> {
   const mapText = readFileSync(options.mapPath, "utf8");
   const map = parseRetieMapJson(mapText);
   const mapState = JSON.parse(mapText) as MapFileState;
-  const tables = bridgeTables(map);
+  // Pre-retie text reads against the old lexicon, retied text against the current one.
+  const tables = retieTables(map);
   const english = await commonEnglish();
-  const markdownFiles = [...markdownDirs.flatMap((dir) => listMarkdown(dir)), ...topLevelMarkdown.filter(existsSync)];
+  // A dated log of past spellings (`<!-- retie: skip -->`) keeps them: retieing it would rewrite history.
+  const markdownFiles = [...markdownDirs.flatMap((dir) => listMarkdown(dir)), ...topLevelMarkdown.filter(existsSync)].filter(
+    (file) => {
+      if (!RETIE_SKIP_RE.test(readFileSync(file, "utf8"))) return true;
+      console.log(`${relative(rootDir, file)}  skipped (retie: skip)`);
+      return false;
+    },
+  );
   const sources = new Map(markdownFiles.map((file) => [file, readFileSync(file, "utf8")]));
   let total = 0;
   let blocking = 0;
@@ -277,6 +360,20 @@ async function main(): Promise<void> {
     block(`${relative(rootDir, compoundsPath)}:${error.row ?? "?"}  ${error.stem ?? ""}  ${error.reason}`);
   }
 
+  if (!lexiconConverted(publishedRoots, map)) {
+    block("data/lexicon-published.csv still spells the old roots (run convert-word --lexicon first)");
+  }
+
+  // Closed roots named in code must already follow the lexicon (convert-word --lexicon resyncs them),
+  // or the lint below glosses house names, pronouns and linkers from stale spellings.
+  const rootByEmoji = new Map([...loadDefaultTables().published.values()].map((row) => [row.emoji, row.clarity]));
+  for (const entry of CLOSED_ENTRIES) {
+    const published = rootByEmoji.get(entry.emoji);
+    if (published !== entry.root) {
+      block(`src/closed-roots.ts  ${entry.name} ${entry.emoji} spells ${entry.root}, lexicon has ${published ?? "no row"} (run convert-word --lexicon)`);
+    }
+  }
+
   // Pass 1: code. Pass 2: English copies, with name pairs from every page
   // (a house-cast name can sit in prose on a page with no code for it).
   const firstPass = new Map<string, RetieMarkdownResult>();
@@ -287,6 +384,16 @@ async function main(): Promise<void> {
   const results = new Map<string, RetieMarkdownResult>();
   for (const file of markdownFiles) {
     results.set(file, finishFollow(sources.get(file)!, firstPass.get(file)!, follow, tables));
+  }
+
+  // A bare short resume in prose reads as its stem's root; the retie can change which root that is.
+  for (const [file, result] of results) {
+    for (const drift of bareResumeDrift(sources.get(file)!, result.text, map, tables, english)) {
+      warnings += 1;
+      console.warn(
+        `${relative(rootDir, file)}:${lineNumberAt(result.text, drift.index)}  warning  bare resume \`${drift.from}\` → \`${drift.to}\` read ${drift.was}, now reads ${drift.reads}; check the prose around it${drift.keep ? ` (\`${drift.keep}\` keeps ${drift.was})` : ""}`,
+      );
+    }
   }
 
   // Heading ids spelled from Agalan move with it; links and overlay anchors follow.
@@ -355,7 +462,7 @@ async function main(): Promise<void> {
   const currentRoots = publishedRoots;
   for (const file of sourceDirs.flatMap((dir) => listSource(dir))) {
     const original = readFileSync(file, "utf8");
-    const result = rewriteSourceLiterals(original, file, { map, tables, follow, english, currentRoots });
+    const result = rewriteSourceLiterals(original, file, { map, tables: tables.old, follow, english, currentRoots });
     const rel = relative(rootDir, file);
     for (const item of result.reviews) {
       review(`${rel}:${lineNumberAt(original, item.index)}  review  ${item.reason}`);
@@ -370,10 +477,10 @@ async function main(): Promise<void> {
   }
 
   // Same checks `npm run build` makes on grammar pages, before anything is written.
-  const current = loadDefaultTables();
+  const current = tables.current;
   let lintCount = 0;
   for (const { file, text } of written.filter(({ file }) => file.startsWith(`${grammarDir}/`) && file.endsWith(".md"))) {
-    for (const finding of newLintFindings(relative(rootDir, file), sources.get(file)!, text, tables, current)) {
+    for (const finding of newLintFindings(relative(rootDir, file), sources.get(file)!, text, tables.old, current)) {
       lintCount += 1;
       block(`lint  ${finding}`);
     }

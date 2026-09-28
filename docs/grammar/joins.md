@@ -681,7 +681,7 @@ When an adjective or extra noun is meant for the **whole list** (*both challengi
 >
 > "Azawan's dog and cat (and possibly more)."
 
-**Compare with:** *part of* / *contents of* / *made of* / origin *from* use [of relations](relations.md#of-relations), not `egabe`. A [interests](interests.md) need on `/ɡ/` already means the speaker’s belonging (`gudathal` *my … serves competence*).
+**Compare with:** *part of* / *contents of* / *made of* / origin *from* use [of relations](relations.md#of-relations), not `egabe`. A [interests](interests.md) need on `/ɡ/` already means the speaker’s belonging (`guduthal` *my … serves competence*).
 
 | Join family | Use of SHARED `/ɡ/` |
 |-------------|----------------------|
@@ -1015,7 +1015,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Ahaben* | `ahaben` | |
 | *page* | `abehel` | |
 | *pen* | `ebewul` | |
-| *dove* | `adavul` | |
+| *dove* | `adevel` | |
 | *seal* | `ezevom` | `ezevol` *seal* |
 
 #### English → Agalan {#advanced-english-to-agalan}
@@ -1039,7 +1039,7 @@ NAME[z-and]
 **3.** *any of a dove, a page, or a pen is fine (no order)*
 
 ::: details Show answer
-`zadavul zabehel zebewul zor.`
+`zadevel zabehel zebewul zor.`
 
 [z-dove | z-page | z-pen | z-anything]
 :::
@@ -1071,7 +1071,7 @@ NAME[z-equal-rank]
 *it's a draw* (stock)
 :::
 
-**2.** `zadavul zabehel zebewul zer.`
+**2.** `zadevel zabehel zebewul zer.`
 
 ::: details Show answer
 

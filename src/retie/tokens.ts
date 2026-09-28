@@ -1,6 +1,7 @@
 import { peelWordChunk } from "../parse/peel.js";
 import { writingSpanEnd } from "../parse/span-scan.js";
-import type { ClassifyTables } from "../parse/classify.js";
+import { classifiedShape, hasClosedOverlay, type ClassifyTables } from "../parse/classify.js";
+import type { MorphWord } from "../parse/types.js";
 import { loadDefaultTables, parse } from "../parse/index.js";
 import { parseWord } from "../parse/word.js";
 
@@ -291,11 +292,14 @@ export function resumeRewrite(
     seen.set(raw, n + 1);
     return list[n];
   };
+  // `tables` knows the old spellings, so an overlay -r (`therar` TOLD.weak) is told from a resume.
+  const isOverlay = tables ? (word: MorphWord) => hasClosedOverlay(word, tables) : undefined;
+  const reshape = tables ? (word: MorphWord) => classifiedShape(word, tables) : undefined;
   return (core, at) => {
     const boundAntecedentRoots = boundFor(core);
     const scope: ResumeScope = boundAntecedentRoots
-      ? { stems, boundAntecedentRoots, boundFor, occurrences, at }
-      : { stems, boundFor, occurrences, at };
+      ? { stems, boundAntecedentRoots, boundFor, occurrences, at, isOverlay, reshape }
+      : { stems, boundFor, occurrences, at, isOverlay, reshape };
     return retieCore(core, map, scope);
   };
 }

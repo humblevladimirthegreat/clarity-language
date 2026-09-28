@@ -31,6 +31,11 @@ import { morphPairsMatching, reglossMarkdown, type ReglossEdit } from "../reglos
 import { lengthenCollidingResumes } from "./binds.js";
 import { followPairs, followProse, mergeFollowPairs, type FollowPairs } from "./follow.js";
 import { retieCore } from "./rebuild.js";
+import { contentStemRoots } from "./resume.js";
+import { isClarityRootShape } from "../root-shape.js";
+import { letterPrefix } from "../parse/resolve.js";
+import { parseWord } from "../parse/word.js";
+import { asRetieTables, type RetieTables } from "./tables.js";
 
 export type RetieReview = {
   text: string;
@@ -38,7 +43,7 @@ export type RetieReview = {
   reason: string;
 };
 
-/** One rewritten piece of code, kept so the caller can parse before and after. */
+/** One piece of Agalan code (rewritten or not), kept so the caller can parse before and after. */
 export type RetiedSpan = {
   before: string;
   after: string;
@@ -71,11 +76,11 @@ export type RewriteOptions = {
 
 const REWRITE_CLASSES = new Set(["sentence", "phrase", "word", "template"]);
 
-/** Pass `tables` from `bridgeTables(map)` when the lexicon CSVs may already hold the new roots. */
+/** Pass `tables` from `retieTables(map)`: pre-retie text is read against `old`, retied text against `current`. */
 export function rewriteMarkdown(
   input: string,
   map: ReadonlyMap<string, string>,
-  tables?: ClassifyTables,
+  tables?: ClassifyTables | RetieTables,
   options: RewriteOptions = {},
 ): RetieMarkdownResult {
   const occurrences = collectStemOccurrences(input);
@@ -84,7 +89,8 @@ export function rewriteMarkdown(
   const reviews: RetieReview[] = [];
   const spans: RetiedSpan[] = [];
 
-  const parseTables = tables ?? loadDefaultTables();
+  const pair = asRetieTables(tables ?? loadDefaultTables());
+  const parseTables = pair.old;
   const english = options.english ?? ENGLISH_IN_CODE;
   const parses = (text: string): boolean => {
     try {
@@ -102,7 +108,15 @@ export function rewriteMarkdown(
   };
 
   const rewriteAgalan = (text: string, index: number, cls: string): string => {
-    const base = resumeRewrite(map, stems, text, tables, occurrences);
+    const stem = cls === "word" ? stemOfLineWords(input, index, text.trim(), map) : undefined;
+    if (stem !== undefined) {
+      if (stem.review) reviews.push({ text, index, reason: stem.review });
+      if (stem.to === undefined || stem.to === text.trim()) return text;
+      changes.push({ from: text.trim(), to: stem.to, index });
+      spans.push({ before: text, after: stem.to, index, cls });
+      return stem.to;
+    }
+    const base = resumeRewrite(map, stems, text, parseTables, occurrences);
     // A template or fragment can cut a word before its ending (`gonogotha…`): retie it with a filler ending.
     const rewrite: CoreRewrite =
       cls === "template" || cls === "marked-fragment"
@@ -126,16 +140,15 @@ export function rewriteMarkdown(
     }
     out += rewritePlainTokens(text.slice(at), rewrite, index + at, changes);
     if (out !== text && /[a-z]r\b/.test(out)) {
-      const fixed = lengthenCollidingResumes(text, out, map, parseTables);
+      const fixed = lengthenCollidingResumes(text, out, map, pair);
       for (const { from, to } of fixed.lengthened) {
         changes.push({ from, to, index });
         reviews.push({ text: to, index, reason: `short resume ${from} would bind another word after the retie; lengthened to a full-root resume` });
       }
       out = fixed.text;
     }
-    if (out !== text) {
-      spans.push({ before: text, after: out, index, cls });
-    }
+    // Unchanged spans are kept too: verify checks that none still holds a moved root.
+    spans.push({ before: text, after: out, index, cls });
     return out;
   };
 
@@ -196,7 +209,7 @@ export function rewriteMarkdown(
       const info = meta.info.split(/\s+/)[0] ?? "";
       if (info === "markdown" || info === "md") {
         // Example Markdown shown as source: retie it as a page of its own.
-        const inner = rewriteMarkdown(text, map, tables, options);
+        const inner = rewriteMarkdown(text, map, pair, options);
         for (const change of inner.changes) changes.push({ ...change, index: change.index + index });
         for (const review of inner.reviews) reviews.push({ ...review, index: review.index + index });
         for (const span of inner.spans) spans.push({ ...span, index: span.index + index });
@@ -267,10 +280,10 @@ export function rewriteMarkdown(
   }
   text += transformMarkdown(input.slice(at), at, code, proseTokens);
 
-  const pagePairs = followPairs(changes, parseTables);
+  const pagePairs = followPairs(changes, pair);
   const result = { text, changes, reviews, spans, followChanges: [], followPairs: pagePairs, reglossEdits: [] };
   if (options.deferFollow) return result;
-  return finishFollow(input, result, options.follow ? mergeFollowPairs(pagePairs, options.follow) : pagePairs, parseTables);
+  return finishFollow(input, result, options.follow ? mergeFollowPairs(pagePairs, options.follow) : pagePairs, pair);
 }
 
 /**
@@ -281,20 +294,60 @@ export function finishFollow(
   input: string,
   result: RetieMarkdownResult,
   pairs: FollowPairs,
-  tables: ClassifyTables = loadDefaultTables(),
+  tables: ClassifyTables | RetieTables = loadDefaultTables(),
 ): RetieMarkdownResult {
+  const { old, current } = asRetieTables(tables);
   const followed = followProse(result.text, pairs);
   let text = followed.text;
   let reglossEdits: ReglossEdit[] = [];
   if (result.changes.length > 0 || followed.changes.length > 0) {
-    const matchedBefore = morphPairsMatching(input, tables);
+    const matchedBefore = morphPairsMatching(input, old);
     if (extractMorphPairs(text).length === matchedBefore.length) {
-      const regloss = reglossMarkdown(text, tables, (_pair, i) => matchedBefore[i] === true);
+      const regloss = reglossMarkdown(text, current, (_pair, i) => matchedBefore[i] === true);
       text = regloss.text;
       reglossEdits = regloss.edits;
     }
   }
   return { ...result, text, followChanges: followed.changes, reglossEdits };
+}
+
+/**
+ * A lone bare root on a line whose code also has longer roots it is the short cut of
+ * (“short `eze` matches *sleep* `ezeba` and *speechless* `ezebo`”) names that shared stem, not the
+ * root it happens to spell: it is recut from those roots' new spellings. `undefined` when the span
+ * is not such a stem; `to` is missing (with a review) when the longer roots now cut differently.
+ */
+function stemOfLineWords(
+  input: string,
+  index: number,
+  core: string,
+  map: ReadonlyMap<string, string>,
+): { to?: string; review?: string } | undefined {
+  if (!isClarityRootShape(core)) return undefined;
+  const lineStart = input.lastIndexOf("\n", index - 1) + 1;
+  const lineEnd = input.indexOf("\n", index);
+  const line = input.slice(lineStart, lineEnd < 0 ? input.length : lineEnd);
+  const longer = new Set<string>();
+  for (const span of line.matchAll(/`([^`]+)`/g)) {
+    for (const token of span[1]!.split(/\s+/)) {
+      const { core: word } = peelChunk(token);
+      if (!word || word === core) continue;
+      let roots: string[] = [];
+      if (isClarityRootShape(word)) roots = [word];
+      else {
+        try {
+          roots = contentStemRoots(parseWord(word));
+        } catch {
+          roots = [];
+        }
+      }
+      for (const root of roots) if (root !== core && letterPrefix(root) === core) longer.add(root);
+    }
+  }
+  if (longer.size === 0) return undefined;
+  const cuts = new Set([...longer].map((root) => letterPrefix(map.get(root) ?? root)));
+  if (cuts.size === 1) return { to: [...cuts][0]! };
+  return { review: `stem ${core} is the short cut of ${[...longer].join(", ")} on this line, which now cut differently (${[...cuts].join(" / ")}); respell by hand` };
 }
 
 /** Whether `index` falls inside a fenced block (odd number of fence lines before it). */

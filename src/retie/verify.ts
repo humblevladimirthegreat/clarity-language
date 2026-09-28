@@ -2,13 +2,7 @@
  * Before/after check for a retie: a rewritten sentence or phrase must parse the same way,
  * with only mapped roots changed.
  */
-import { readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
-
-import { parseCompoundCsv, retieCompoundRows } from "../lexicon-compounds.js";
-import { parseOverlayCsv, parsePublishedCsv } from "../lexicon-search.js";
-import { createClassifyTablesFromRows, type ClassifyTables } from "../parse/classify.js";
+import type { ClassifyTables } from "../parse/classify.js";
 import { parse } from "../parse/index.js";
 import { parseWord } from "../parse/word.js";
 
@@ -17,13 +11,14 @@ import { letterPrefix } from "../parse/resolve.js";
 import { bindDrift, contentBinds, type ContentBind } from "./binds.js";
 import { contentStemRoots } from "./resume.js";
 import type { RetiedSpan } from "./markdown.js";
+import { asRetieTables, type RetieTables } from "./tables.js";
 
 export type RetieVerifyLevel = "blocking" | "warning" | "info";
 
 export type RetieVerifyFailure = {
   span: RetiedSpan;
   detail: string;
-  /** `warning` is a new resume link. `info` is any other tree change. Neither blocks. */
+  /** `warning` is a new resume link (does not block). Any other tree change blocks. */
   level: RetieVerifyLevel;
 };
 
@@ -55,6 +50,9 @@ function shapeOf(value: unknown): Shape {
   const structure = JSON.stringify(value, function (this: Record<string, unknown>, key, v: unknown) {
     if (key === "family") ending = this.ending;
     if (SPELLING_KEYS.has(key)) return undefined;
+    // A two-syllable root's short cut is the whole root, so its short resume matched "fullRoot";
+    // recut from a longer new root it matches "letter". Same resume kind, not a tree change.
+    if (key === "match" && v === "fullRoot" && isOwnShortCut(this)) return "letter";
     if (ROOT_KEYS.has(key) && (Array.isArray(v) || typeof v === "string")) {
       const list = typeof v === "string" ? [v] : (v as string[]);
       for (const root of list) {
@@ -66,6 +64,11 @@ function shapeOf(value: unknown): Shape {
     return v;
   });
   return { structure, roots, resume };
+}
+
+function isOwnShortCut(anaphor: Record<string, unknown>): boolean {
+  const roots = (anaphor.pronoun as { family?: { roots?: string[] } } | undefined)?.family?.roots;
+  return Array.isArray(roots) && roots.length > 0 && roots.every((root) => letterPrefix(root) === root);
 }
 
 function tryParse(text: string, tables: ClassifyTables): { shape: Shape; value: unknown } | { error: string } {
@@ -95,64 +98,32 @@ function resumeRespelled(before: string, after: string | undefined, map: Readonl
 /** Whole-parse classes; words, templates and fragments are covered by the lint afterwards. */
 const CHECKED = new Set(["sentence", "phrase"]);
 
-/**
- * Lexicon tables that know every root under both its old and its new spelling,
- * so the before and after text classify the same way whether or not
- * `convert-word --lexicon` has already rewritten the CSVs.
- */
-export function bridgeTables(map: ReadonlyMap<string, string>, rootDir = defaultRootDir()): ClassifyTables {
-  const data = (name: string) => readFileSync(join(rootDir, "data", name), "utf8");
-  const published = parsePublishedCsv(data("lexicon-published.csv"));
-  const overlays = parseOverlayCsv(data("lexicon-overlays.csv"));
-  const compounds = parseCompoundCsv(data("lexicon-compounds.csv"));
-  const reverse = new Map([...map].map(([oldRoot, newRoot]) => [newRoot, oldRoot]));
-
-  const roots = new Set(published.map((row) => row.clarity));
-  const senseForms = new Set(overlays.map((row) => `${row.pos} ${row.senseForm}`));
-  const extraPublished = [];
-  const extraOverlays = [];
-  for (const pairs of [map, reverse]) {
-    for (const [from, to] of pairs) {
-      const row = published.find((r) => r.clarity === from);
-      if (row && !roots.has(to)) extraPublished.push({ ...row, clarity: to });
-      for (const overlay of overlays) {
-        if (!overlay.senseForm.startsWith(from)) continue;
-        const senseForm = to + overlay.senseForm.slice(from.length);
-        if (!senseForms.has(`${overlay.pos} ${senseForm}`)) extraOverlays.push({ ...overlay, senseForm });
-      }
-    }
-  }
-  const extraCompounds = [map, reverse].flatMap((pairs) =>
-    retieCompoundRows(compounds, pairs).rows.filter((row, i) => row.stem !== compounds[i]!.stem),
-  );
-  return createClassifyTablesFromRows(
-    [...published, ...extraPublished],
-    [...overlays, ...extraOverlays],
-    [...compounds, ...extraCompounds],
-  );
-}
-
-function defaultRootDir(): string {
-  return join(dirname(fileURLToPath(import.meta.url)), "..", "..");
-}
-
 export function verifyRetiedSpans(
   spans: readonly RetiedSpan[],
   map: ReadonlyMap<string, string>,
-  tables: ClassifyTables,
+  tables: ClassifyTables | RetieTables,
 ): RetieVerifyFailure[] {
+  const { old, current } = asRetieTables(tables);
   const failures: RetieVerifyFailure[] = [];
   for (const span of spans) {
     if (!CHECKED.has(span.cls)) continue;
-    const before = tryParse(span.before, tables);
+    const before = tryParse(span.before, old);
     if ("error" in before) continue; // already broken before the retie; the lint reports it
-    const after = tryParse(span.after, tables);
+    if (span.after === span.before) {
+      // Left as is: fine unless the old reading holds a moved root (not a resume stem, which follows its antecedent).
+      const stale = before.shape.roots.find((root, i) => !before.shape.resume[i] && map.has(root) && map.get(root) !== root);
+      if (stale) {
+        failures.push({ span, level: "blocking", detail: `left unretied, but it reads root ${stale} (now ${map.get(stale)})` });
+      }
+      continue;
+    }
+    const after = tryParse(span.after, current);
     if ("error" in after) {
       failures.push({ span, level: "blocking", detail: `parsed before the retie, not after: ${after.error}` });
       continue;
     }
-    const beforeBinds = contentBinds(span.before, tables) ?? [];
-    const afterBinds = contentBinds(span.after, tables) ?? [];
+    const beforeBinds = contentBinds(span.before, old) ?? [];
+    const afterBinds = contentBinds(span.after, current) ?? [];
     const drift = bindDrift(beforeBinds, afterBinds, map)[0];
     if (drift) {
       failures.push({
@@ -179,7 +150,9 @@ export function verifyRetiedSpans(
           detail: `resume link appeared (${beforeLinks.length} → ${afterLinks.length}: ${afterLinks.join(", ")}); the example may need a different antecedent`,
         });
       } else {
-        failures.push({ span, level: "info", detail: "parse structure changed" });
+        // With exact old / current lexicons, only mapped roots should differ: any other tree
+        // change is a word the retie rebuilt wrong (a dropped emotion tail, a new lateral).
+        failures.push({ span, level: "blocking", detail: "parse structure changed beyond the mapped roots" });
       }
       continue;
     }

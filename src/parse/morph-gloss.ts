@@ -28,6 +28,7 @@
 
 import { classify, type ClassifyTables } from "./classify.js";
 import type { PublishedRow } from "../lexicon-search.js";
+import { CLOSED, namedEnglish } from "../closed-roots.js";
 import {
   buildGlossTree,
   renderGlossNodes,
@@ -54,18 +55,11 @@ import type {
   ResolveInfo,
 } from "./types.js";
 
-const HOUSE_CAST: Record<string, string> = {
-  azawa: "Azawan",
-  alahe: "Alahen",
-  ahabe: "Ahaben",
-};
+const HOUSE_CAST_ROOTS = [CLOSED.swan, CLOSED.lion, CLOSED.hibiscus];
 
-/** House-cast short resume stems (`zazar`). */
-const HOUSE_CAST_SHORT: Record<string, string> = {
-  aza: "Azawan",
-  ala: "Alahen",
-  aha: "Ahaben",
-};
+const HOUSE_CAST: Record<string, string> = Object.fromEntries(
+  HOUSE_CAST_ROOTS.map((root) => [root, namedEnglish(root)]),
+);
 
 /** Number writing mark → form suffix (glosses.md § Round trip). */
 const NUMBER_MARK_SUFFIX: Record<string, string> = { "~": ".about", "@": ".named", "=": ".again" };
@@ -100,6 +94,11 @@ export function shortResumeStem(root: string): string {
   return root;
 }
 
+/** House-cast short resume stems (`zazar`). */
+const HOUSE_CAST_SHORT: Record<string, string> = Object.fromEntries(
+  HOUSE_CAST_ROOTS.map((root) => [shortResumeStem(root), namedEnglish(root)]),
+);
+
 /** Full-root resume: the stem is the whole antecedent root and longer than the short cut. */
 function isFullRootResume(word: LexWord, antecedent: LexWord): boolean {
   if (word.family.kind !== "content" || antecedent.family.kind !== "content") return false;
@@ -109,19 +108,19 @@ function isFullRootResume(word: LexWord, antecedent: LexWord): boolean {
 }
 
 const SPECIAL_PRONOUN: Record<string, string> = {
-  ema: "speaker",
-  eha: "listener",
-  oha: "interlocutors",
-  anu: "someone",
+  [CLOSED.microphone]: "speaker",
+  [CLOSED.headphones]: "listener",
+  [CLOSED.handshake]: "interlocutors",
+  [CLOSED.neutral]: "someone",
 };
 
-/** `/x/` linkers keyed by root + ending (`xezadam` *therefore*, `xezel` *however*). */
+/** `/x/` linkers keyed by root + ending (*therefore* = east **-m**, *however* = zebra **-l**). */
 const LINKER_ENGLISH: Record<string, string> = {
-  ezadam: "therefore",
-  ezel: "however",
-  agagal: "meanwhile",
-  evavel: "next",
-  agozal: "but",
+  [`${CLOSED.east}m`]: "therefore",
+  [`${CLOSED.zebra}l`]: "however",
+  [`${CLOSED.clock}l`]: "meanwhile",
+  [`${CLOSED.film}l`]: "next",
+  [`${CLOSED.construction}l`]: "but",
 };
 
 const JOIN_JOB: Record<string, string> = {
@@ -1497,7 +1496,7 @@ function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): st
   if (word.pos === "x" && roots.length === 1 && LINKER_ENGLISH[roots[0]! + word.ending]) {
     return LINKER_ENGLISH[roots[0]! + word.ending]!;
   }
-  if (word.pos === "y" && word.ending === "l" && roots.length === 1 && roots[0] === "eweva") return "greeting";
+  if (word.pos === "y" && word.ending === "l" && roots.length === 1 && roots[0] === CLOSED.wave) return "greeting";
   if (roots.length === 1) {
     return rootSense(roots[0]!, word.ending, tables, {
       named: word.ending === "n",
@@ -1558,7 +1557,7 @@ function rootSense(
     if (lemma) return hyphenEnglish(lemma);
   }
 
-  if (root === "ema" && ending !== "m") {
+  if (root === CLOSED.microphone && ending !== "m") {
     return ending === "l" ? "microphone" : "speaker";
   }
 

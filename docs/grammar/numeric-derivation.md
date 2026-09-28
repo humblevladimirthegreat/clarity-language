@@ -41,11 +41,11 @@ You already use digitless number stems for unbounded plus, minus, last place, an
 | **`ROOTl+e`** | essence / absolute / pure type of ROOT | `zalavalrabal`: *essence of love* | **+e** = plus with no cap: nothing left to add |
 | **`ROOTl+e-`** | grain / seed / infinitesimal of ROOT | `zalavalrabul`: *grain of love* | **+e-** = that same plus, at the tiny end: a speck |
 | **`ROOTl-e`** | void of / absolute anti-ROOT | `zevehelrubal`: *void of fear* | **-e** = minus with no floor: none of the kind |
-| **`ROOTl-e-`** | **quasi-ROOT**: the shape of ROOT without treating it as fully real (English **`quasi-`**); **`ROOTl-e-1`** / **`ROOTl-e-2`** = [quasi-N](#quasi-n) | `zunelebezalrubul`: *quasi-friend*; `zedolrubudul`: *quasi-pair* | **-e-** = imaginary amount: the outline, not the ledger |
+| **`ROOTl-e-`** | **quasi-ROOT**: the shape of ROOT without treating it as fully real (English **`quasi-`**); **`ROOTl-e-1`** / **`ROOTl-e-2`** = [quasi-N](#quasi-n) | `zonalebezalrubul`: *quasi-friend*; `zewulrubudul`: *quasi-pair* | **-e-** = imaginary amount: the outline, not the ledger |
 | **`ROOTl#e-`** | origin / prototype / onset-form of ROOT | `zalavalrebul`: *love in its beginning form* | **#e-** = start-place: the first rung |
-| **`ROOTl#e`** | telos / culmination / final form of ROOT | `zozolrebal`: *story’s final form* | **#e** = last place: where the kind finishes |
+| **`ROOTl#e`** | telos / culmination / final form of ROOT | `zazolrebal`: *story’s final form* | **#e** = last place: where the kind finishes |
 | **`ROOTl+`** | poly- / multi-ROOT (unspecified >1) | `zehehalram`: *multi-faith* | **+** = more than one, how many unnamed |
-| **`ROOTl-`** | de- / un- / deficit-ROOT | `vozolrul`: *to de-tale* | **-** = take that structure away |
+| **`ROOTl-`** | de- / un- / deficit-ROOT | `vazolrul`: *to de-tale* | **-** = take that structure away |
 
 ### Quasi-ROOT (`-e-` / `-e-1` / `-e-2`)
 <a id="quasi"></a>
@@ -54,7 +54,7 @@ You already use digitless number stems for unbounded plus, minus, last place, an
 
 English *quasi-* says something has the **shape or role** of a kind without counting as the real thing (*quasi-friend*, *quasi-official*). Spell that as **`ROOTl-e-`**: the kind’s outline, not a full claim that it is that kind. Change only the role letter to use it as a noun, verb, adjective, and so on.
 
-> `zahaben gunelebezalrubul.`
+> `zahaben gonalebezalrubul.`
 >
 > z-Ahaben | g-friend-l-quasi
 >
@@ -62,12 +62,12 @@ English *quasi-* says something has the **shape or role** of a kind without coun
 
 | PoS | `…l-e-` | Examples |
 |-----|---------|----------|
-| **`/z/` `/d/` `/b/`** (noun) | a quasi-entity | `zunelebezalrubul`: *a quasi-friend*; `debazelrubul`: *a quasi-commitment* |
-| **`/v/`** (verb) | to treat as quasi- / as-if that kind | `vunelebezalrubul`: *to quasi-befriend* / treat as friend-shaped |
+| **`/z/` `/d/` `/b/`** (noun) | a quasi-entity | `zonalebezalrubul`: *a quasi-friend*; `debazelrubul`: *a quasi-commitment* |
+| **`/v/`** (verb) | to treat as quasi- / as-if that kind | `vonalebezalrubul`: *to quasi-befriend* / treat as friend-shaped |
 | **`/ɡ/`** (adjective) | *quasi-* (ascribed) | `gezevolrubul`: *quasi-official* |
 | **`/h/`** (adverb) | under quasi- framing | `hezevolrubul`: *quasi-officially* |
 | **`/w/`** (adjunct) | host graded as quasi- | `webazelrubul gebazel`: *quasi-commitment* |
-| **`/y/`** (interjection) | *Quasi-!* / *As if that kind!* | `yunelebezalrubul` |
+| **`/y/`** (interjection) | *Quasi-!* / *As if that kind!* | `yonalebezalrubul` |
 
 **Compare with:** free **`grubul`** / **`vrubul`** / **`thrubul`** / **`yrubul`** / **`xrubul`** are the free *just short* amount, or number as verb / stance / interjection / discourse ([numbers.md § Just short](numbers.md#just-short)). **`ROOTl-e-`** is quasi-*kind*.
 
@@ -78,7 +78,7 @@ When you need *quasi-* plus a **part-count** (as-if one, as-if a pair), add the 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`ROOTl-e-1`** | quasi-unit / as-if singleton: unit-shaped without being a real one (twin **`ROOTl+1`**) | `zadehalrubuwol`: *a quasi-single voice* / as-if primary voice | **-e-** outline + **1** = as-if one |
-| **`ROOTl-e-2`** | quasi-dual / imaginary duality: pair/mutual *as if*, not real reciprocity (twin **`ROOTl+2`**) | `gebewulrubudul`: *quasi-mutual commitment*; `zedolrubudul`: *quasi-pair / as-if partnership* | **-e-** outline + **2** = as-if a pair |
+| **`ROOTl-e-2`** | quasi-dual / imaginary duality: pair/mutual *as if*, not real reciprocity (twin **`ROOTl+2`**) | `gebewulrubudul`: *quasi-mutual commitment*; `zewulrubudul`: *quasi-pair / as-if partnership* | **-e-** outline + **2** = as-if a pair |
 
 | Agalan | Use |
 |--------|-----|
@@ -105,11 +105,11 @@ English *a pair of…*, *three-part…*, *primary…* can name **how many parts 
 |--------|-----|---------|------|-------------------|-----|
 | **`ROOTl+1`** | unit / primary / singleton | `zadehalrawol`: *a single / primary voice*; SI measure nouns use published unit metaphors instead ([measure phrases](numbers-applied.md#measure-phrases)) | `zadehalruwol` | *an indistinct / non-singular voice* | **1** = one piece |
 | **`ROOTl+2`** | dual / mutual / reciprocal / pair | `gebewulradul`: *mutual commitment* | `gebewulrudul` | *one-sided commitment* | **2** = two sides |
-| **`ROOTl+3`** | triad / triplet / 3-part / ternary | `zezebelrarel`: *a three-part dialogue* | `zagogalrurel` | *non-tripartite institution* | **3** = three parts |
+| **`ROOTl+3`** | triad / triplet / 3-part / ternary | `zezebelrarel`: *a three-part dialogue* | `zagugalrurel` | *non-tripartite institution* | **3** = three parts |
 | **`ROOTl+4`** | quad / 4-part / square / frame | `zahaholramol`: *a four-part / framed judgment* | `zemehalrumol` | *an unframed message* | **4** = four sides of a frame |
-| **`ROOTl+5`** | hand / pentad / agency-set | `zudalraval`: *a handy / five-fold toolkit* | `zamalruval` | *a plan without practical grasp* | **5** = fingers of a hand |
+| **`ROOTl+5`** | hand / pentad / agency-set | `zudulraval`: *a handy / five-fold toolkit* | `zumalruval` | *a plan without practical grasp* | **5** = fingers of a hand |
 | **`ROOTl+6`** | hex / 6-part / honeycomb / pack | `zavagelragul`: *a hexagonal / six-pack product* | `zahodolrugul` | *an unpacked team* | **6** = honeycomb / six-pack |
-| **`ROOTl+7`** | heptad / week-cycle / complete series | `zezegolralem`: *a seven-fold / week-cycle ritual* | `zezegolrulem` | *a broken-cycle ritual* | **7** = days that close a week |
+| **`ROOTl+7`** | heptad / week-cycle / complete series | `zezegulralem`: *a seven-fold / week-cycle ritual* | `zezegulrulem` | *a broken-cycle ritual* | **7** = days that close a week |
 | **`ROOTl+8`** | octet / 8-part / doubled-quad | `zagozalrahal`: *an octet / eight-part blockage* | `zagozalruhal` | *a non-octet blockage* | **8** = two frames (4+4) |
 | **`ROOTl+9`** | ennead / near-full / almost-ten | `zonodalranal`: *a nine-part / near-full choir* | `zonodalrunal` | *a far-from-full choir* | **9** = one short of ten |
 | **`ROOTl+0`** | null / reset / emptied | `vodovelrazol`: *to zero-score / null the score* | `godovelruzol` | *a score that won’t null* / *stubborn residual score* (**anti-null**) | **0** = empty count |
@@ -123,11 +123,11 @@ English *a pair of…*, *three-part…*, *primary…* can name **how many parts 
 
 | PoS | `…l+0` | `…l-0` | Examples |
 |-----|--------|--------|----------|
-| **`/z/` `/d/` `/b/`** (noun) | emptied / wiped instance | entity that won’t zero / stubborn residue | `zomolrazol`: *a wiped debt*; `zomolruzol`: *a debt that won’t zero*; `develruzol`: *that memory that won’t blank*; `bodovelruzol`: non-null residue as argument |
+| **`/z/` `/d/` `/b/`** (noun) | emptied / wiped instance | entity that won’t zero / stubborn residue | `zamolrazol`: *a wiped debt*; `zamolruzol`: *a debt that won’t zero*; `dunolruzol`: *that memory that won’t blank*; `bodovelruzol`: non-null residue as argument |
 | **`/v/`** (verb) | act of nulling / resetting | act that refuses null / keeps residual | `vodovelrazol`: *to null the score*; `vodovelruzol`: *to anti-null / refuse to zero the score*; `vazewelrazol`: *to zero effort*; `vazewelruzol`: *to leave effort unzeroable* |
 | **`/ɡ/`** (adjective) | null / reset (ascribed) | non-emptyable / residual (ascribed) | `godovelrazol`: *null / reset*; `godovelruzol`: *won’t-null / residual*; `gevegelruzom`: *hope that won’t go to zero* (vs `gevegelrubam` *void of hope*) |
 | **`/h/`** (adverb) | clause framed as reset / zeroed | clause framed as irreducible residue | `hazewelrazom`: *with effort zeroed*; `hazewelruzom`: *with irreducible effort* / *despite any zeroing* |
-| **`/w/`** (adjunct) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `womolrazol gomol`: *debt (ascribed) zeroed*; `womolruzol gomol`: *debt whose balance is anti-null* |
+| **`/w/`** (adjunct) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `wamolrazol gamol`: *debt (ascribed) zeroed*; `wamolruzol gamol`: *debt whose balance is anti-null* |
 | **`/y/`** (interjection) | discourse *Zero it!* / *Null!* | discourse *Won’t zero!* / *Residue stands!* | `yodovelrazol`; `yodovelruzol` |
 
 **Related form:** a stronger wipe of the kind is [total null](#zero-exponent-derivation) **`ROOTl+0e`**. Hostless *annihilate* is free **`vrazobal`**.
@@ -141,12 +141,12 @@ The same zero×exponent stems as free [zero × exponent](numbers.md#zero-exponen
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`ROOTl+0e`** | total null / absolute wipe of the kind | `vodovelrazobal`: *annihilate the score* (kind); `zomolrazobal`: *a totally wiped debt-kind* | **0** empty × **e** unbounded = wipe with no leftover scale |
+| **`ROOTl+0e`** | total null / absolute wipe of the kind | `vodovelrazobal`: *annihilate the score* (kind); `zamolrazobal`: *a totally wiped debt-kind* | **0** empty × **e** unbounded = wipe with no leftover scale |
 | **`ROOTl+0e-`** | sterile / null grain of ROOT | `zevegelrazobum`: *sterile hope*; `zerehulrazobul`: *registration with no seed* | **0e-** = empty at the tiny end: no seed |
 | **`ROOTl+0e-1`** | engineering null at order of magnitude −1 of ROOT: kind wiped at scale 10⁻¹ | `zehegolrabuwoyazol`: *deci-null problem*; `vodovelrabuwoyazol`: *null the score at deci scale* | **0e-1** = empty at the tenths band |
-| **`ROOTl-0e`** | absolute residue of ROOT | `zomolruzobal`: *debt as absolute residue*; `vazewelruzobal`: *leave effort as absolute residue* | **-0e** = the minus of total wipe: residue that will not go |
-| **`ROOTl-0e-`** | micro-residue of ROOT | `zevelruzobul`: *memory as micro-residue* | **-0e-** = residue at the tiny end |
-| **`ROOTl-0e-1`** | engineering residue at order of magnitude −1 of ROOT | `zomolrubuwoyazol`: *debt as deci-scale residue* | **-0e-1** = residue at the tenths band |
+| **`ROOTl-0e`** | absolute residue of ROOT | `zamolruzobal`: *debt as absolute residue*; `vazewelruzobal`: *leave effort as absolute residue* | **-0e** = the minus of total wipe: residue that will not go |
+| **`ROOTl-0e-`** | micro-residue of ROOT | `zunolruzobul`: *memory as micro-residue* | **-0e-** = residue at the tiny end |
+| **`ROOTl-0e-1`** | engineering residue at order of magnitude −1 of ROOT | `zamolrubuwoyazol`: *debt as deci-scale residue* | **-0e-1** = residue at the tenths band |
 
 The **host ending** marks soft / named / resume.
 
@@ -158,11 +158,11 @@ On free numbers, **`±0e-1`** is scalar anatomy; on ROOT the same stems are kind
 
 | PoS | `…l+0e` | Examples |
 |-----|---------|----------|
-| **`/z/` `/d/` `/b/`** | totally wiped / annihilated kind | `zomolrazobal` |
+| **`/z/` `/d/` `/b/`** | totally wiped / annihilated kind | `zamolrazobal` |
 | **`/v/`** | annihilate that kind | `vodovelrazobal` |
 | **`/ɡ/`** | ascribed total-null | `gevegelrazobam` |
 | **`/h/`** | clause framed as total wipe | `hazewelrazobam` |
-| **`/w/`** | host graded toward total null | `womolrazobal gomol` |
+| **`/w/`** | host graded toward total null | `wamolrazobal gamol` |
 | **`/y/`** | *Annihilate that kind!* | `yodovelrazobal` |
 
 **`-0e` / `-0e-` / `±0e-1`** inherit the same role-letter framing (absolute residue / micro-residue / engineering null·residue at order of magnitude −1). Free twins: **`vrazobal`** *annihilate*; **`grazobal`** absolute-zero amount; **`g+0e-1`** / **`g-0e-1`** engineering null / residue: [numbers.md § Zero × exponent](numbers.md#zero-exponent).
@@ -284,7 +284,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *fire* | `avahel` | |
 | *factory* | `avagel` | |
 | *hammer* | `vahavel` | `ahavel` *hammer* |
-| *pour* | `vorul` | `orul` *pour* |
+| *pour* | `vobohel` | `obohel` *pour* |
 | *see* | `vahahal` | `ahahal` *eye* |
 | *melt* | `vemehul` | `emehul` *melt* |
 
@@ -309,7 +309,7 @@ z-Ahaben | d-factory-l-one | v-see
 **3.** *Azawan pours a quasi-gold.*
 
 ::: details Show answer
-`zazawan dogodalrubul vorul.`
+`zazawan dogodalrubul vobohel.`
 
 z-Azawan | d-gold-l-quasi | v-pour
 :::
@@ -317,7 +317,7 @@ z-Azawan | d-gold-l-quasi | v-pour
 **4.** *Alahen pours a first-class gold.*
 
 ::: details Show answer
-`zalahen dogodalrewol vorul.`
+`zalahen dogodalrewol vobohel.`
 
 z-Alahen | d-gold-l-1st | v-pour
 :::

@@ -37,7 +37,7 @@ The `/x/` forms are clause joins; **-n** under `/v/`, `/ɡ/`, and `/h/` makes jo
 | **oe** | `voel` / `xoel` / `thoel` | `voem` / `xoem` / `thoem` | — |
 | **ue** | `vuel` / `xuel` / `thuel` | `vuem` / `xuem` / `thuem` | — |
 
-Each verb-phrase item is a verb plus its own object material. When every item is a bare verb, a `/d/` immediately after the join is SHARED over all verbs: `vahahal valol vam dalol` → *sees and tempts an apple*.
+Each verb-phrase item is a verb plus its own object material. When every item is a bare verb, a `/d/` immediately after the join is SHARED over all verbs: `vahahal valul vam dalul` → *sees and tempts an apple*.
 
 An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, covers every item. `/h/` inside an item covers that verb phrase only.
 
@@ -85,13 +85,13 @@ A clause join with no clause before it is the standalone reading, like `zal` *no
 
 When English would deny or weigh **how you stand** toward a claim (*not because…*, *either I saw it or I was told*), close the [stance](clause.md#stance-th) words with a `/th/` join. The claim itself is untouched; the join works only on the stance words before it. (cue: same vowels as every other join.)
 
-> `zazawan vowogal thabem berehel thul.`
+> `zazawan vowogal theram berehel thul.`
 >
 > z-Azawan | v-walk | [th-because | b-rain] | th-not
 >
 > "Azawan walks, but not because of the rain."
 
-> `zazawan vowogal thevem theram thol.`
+> `zazawan vowogal thunom themam thol.`
 >
 > z-Azawan | v-walk | th-WITNESSED | th-TOLD | th-or-exactly-one
 >
@@ -153,7 +153,7 @@ Under a question, a standalone **-r** stance join is a [fill-ask](questions.md#f
 
 When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*), write that move as a verb: first letter **`v`**, the same join vowel you already use on lists, and ending **-n** (`van`, `von`, …). The object is one `/d/` phrase: one thing, or a group packed with a [phrase join](joins.md). You can now name the act itself instead of only packing a list. On these verbs, **-n** is join content, not a [proper name](word-endings.md#proper-name--n). Put ordinary noun **-x** on the object when the group is associative; verb **-x** is [collective](plurality.md#verbs-v).
 
-> `zazawan dalol van.`
+> `zazawan dalul van.`
 >
 > z-Azawan | d-apple | v-includes
 >
@@ -176,7 +176,7 @@ These are ordinary content verbs. Point back at a join-act you already used with
 
 | Agalan | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
-| **`van`** | hold the object in the set | *includes / adds* | **a** ≈ add (hold / inventory) | `zazawan dalol van` |
+| **`van`** | hold the object in the set | *includes / adds* | **a** ≈ add (hold / inventory) | `zazawan dalul van` |
 | **`von`** | lock the object as the sole pick | *chooses (as the one choice)* | **o** ≈ one (single pick) | `zazawan dedehel von` |
 | **`vaon`** | admit the object; more may follow | *picks (more picks may follow)* | **ao** ≈ add + one (open pick) | `zazawan dagubem vaon` |
 | **`vun`** | reject the object | *denies / refuses* | **u** ≈ undo (take that member back) | `zazawan dalahal vun` |
@@ -201,7 +201,7 @@ When a noun or event is *framed* toward something (*cake with peanuts*, *walk wi
 
 Content *including* needs that `/b/` (`gan b…`). A stock label uses a [mention](spans.md) span.
 
-**Compare with:** *writes with a hammer* is an extra-noun [hook](hooks.md#extra-noun) (`ael` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Alahen* is [proxy](relations.md#proxy) (`hadum`), not **`hon`** *exclusively for*. **`uel`** is *against* that party, not **`hun`** *refusing*.
+**Compare with:** *writes with a hammer* is an extra-noun [hook](hooks.md#extra-noun) (`ael` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Alahen* is [proxy](relations.md#proxy) (`hadem`), not **`hon`** *exclusively for*. **`uel`** is *against* that party, not **`hun`** *refusing*.
 
 **Not the same job as:** adjective [joins](joins.md) (`gal` / `gam` / `gar`). Join-relations take **-n** toward one `/b/`.
 
@@ -224,7 +224,7 @@ For several members or an empty domain, put a [phrase join](joins.md) **inside**
 
 *Anti-* vs *without*: `gun bemedol` vs `guan bemedol`. *Without X* vs *anything but X*: `guan bebeyel` vs `guon bebeyel`. Sole pick vs among options: `gon bazawan` vs `gaon bazawan`. Workaround as top priority vs workaround as first step: `gen berevom` vs `goen berevom`.
 
-**Compare with:** *a house like Azawan’s* / *walks like a duck* is resemblance ([simile](relations.md#similative) `gemum` / `hemum`), not **`gaen` / `haen`** *on a par with* / *equating*.
+**Compare with:** *a house like Azawan’s* / *walks like a duck* is resemblance ([simile](relations.md#similative) `gomem` / `homem`), not **`gaen` / `haen`** *on a par with* / *equating*.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>

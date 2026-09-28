@@ -1,5 +1,7 @@
 # Retie failures (lexicon revamp, 2026-09-28)
 
+<!-- retie: skip -->
+
 Editor notes. What went wrong when the revamped lexicon was retied into the repo (commit `0233521` *executed the retie*, then `ed2b9f9` *fully removed j*), grouped by cause. Each category lists what broke, an example, how it surfaced, and what would stop it happening next time.
 
 Before the repair, `npm run build` failed with 752 morph-gloss issues, 136 word-bank issues, 61 unknown-word issues, 7 unparseable sentences / templates, 7 learning-order issues, 101 failing tests, and a broken `docs:publish`.
@@ -159,3 +161,25 @@ Leftovers from the last retie that these checks surface today: `AGENTS.md` still
 5. Review every changed word that is also an English word.
 6. Recheck examples that depend on two roots sharing a prefix.
 7. Run `npm run build` and compare issue counts with the pre-retie baseline.
+
+## Second retie: overlay demotion (2026-09-28)
+
+Six emotion overlays were demoted to ordinary roots (🌊 🪼 🌨️ 🍼 🫗 🕯️), so `convert-word --lexicon` gave them five-letter roots. That cascaded into 138 changed roots, including interest, TOLD, CONSENT and house-adjacent spellings. The first dry run blocked on 65 findings. Every cause below was fixed in the tooling, then the retie was reverted and reapplied from clean docs.
+
+| Cause | Example | Fix |
+|-------|---------|-----|
+| Closed roots in code keyed by spelling; the scan skipped a spelling another row had since taken | `SPECIAL_PRONOUN` still said `ema` (now *ear*), so `eman` glossed *Eman*, not *speaker* | `src/closed-roots.ts` names each closed root by emoji; `convert-word` resyncs it; a test checks it; a moved spelling is reported even when reused |
+| Overlay **-r** treated as a resume | `therar` (TOLD.weak) bound to a page stem and stayed; `hagar` likewise | The resume rebuild skips words the old lexicon reads as overlays |
+| x-word rebuilt from parsed fields, dropping any it did not list | `wunethumer` → `wonathur` (emotion tail lost) | Moved roots are spliced into the raw word in place |
+| Word grammar and classifier disagree on a shape | `gewezatheman` (*west* `th` *speaker*) parsed as an emotion tail, so its anchor was never retied | The retie rebuilds the shape `classify` reads |
+| One lexicon holding old and new spellings together | Cycle `oza` → `ezu`, `aza` → `oza`, `ezu` → `aza` invented `azar` as *not-yet*; 38 spurious "structure changed" | Exact old and current lexicons (`src/retie/tables.ts`); a tree change is now blocking |
+| Unchanged spans never verified | `gewezatheman` left as is with no finding | Verify flags an unchanged span that still reads a moved root |
+| Pronunciation-row check run on every page | 42 false blockers | Scoped to the number pages, as in the build |
+| New root equals a resume stem (`odo` / `zodor`) blocked as a collision | 3 false blockers | Only bare resumes whose reading changed are warned, with the spelling that keeps the old reading |
+| Lone bare stem retied as the root it spells | “Short `eze` matches `ezeba` and `ezebo`” became `aze` | A lone stem that cuts longer roots on its line is recut from them |
+| Source literals skipped or unreported | `b` and `ol` counted as English; `[[zeman` not tokenized; escaped template literals ignored | Role letters and hooks are not English; partial and escaped literals are reviewed |
+| This log retied | Its historical spellings would be rewritten | A line `<!-- retie: skip -->` opts a page out |
+
+Hand fixes the warnings led to: `xezer` → `xazar` (hooks.md, grammar-gaps.md) and `dezor` → `dazar` (pronouns.md), the last retie's leftovers; `zerar` → `zemar` *that ear* (knowing.md). The test updates were single-root literals and IPA expectations.
+
+Still to check by hand: `zodor` in grammar-gaps.md (G-C09) now reads ←*door* when bare; `zabur` → `zaber` in glosses.md's compound-name row, whose English names were already stale.

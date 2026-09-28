@@ -65,7 +65,7 @@ describe("toPhonemeWord", () => {
 
   it("matches the phonology try-it line", () => {
     assert.equal(toPhonemeWord("zazawan").ipa, "zä.zä.wän");
-    assert.equal(toPhonemeWord("guzumum").ipa, "ɡu.zu.mum");
+    assert.equal(toPhonemeWord("gozezomum").ipa, "ɡo̞.ze̞.zo̞.mum");
   });
 });
 

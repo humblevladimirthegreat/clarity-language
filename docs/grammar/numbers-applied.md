@@ -74,12 +74,12 @@ English names **how much of a unit** (*two meters*, *three hours*). The unit is 
 >
 > "Azawan walks two meters."
 
-Price *for five grams* keeps this same measure NP in `/b/` after [exchange](relations.md#exchange) **`hohem`**.
+Price *for five grams* keeps this same measure NP in `/b/` after [exchange](relations.md#exchange) **`hogem`**.
 
 | Agalan | Use | English |
 |--------|-----|---------|
 | `bezezem g+2` | extra noun (`/b/`) | *two meters* |
-| `zazadem g+3`, `dabayum g+5` | subject / object / … | *three seconds*, *five grams* |
+| `zazadem g+3`, `dababam g+5` | subject / object / … | *three seconds*, *five grams* |
 | `gezezem g+2` on a host | modifier on a noun | rare; prefer unit as `/b/` or a freestanding noun phrase |
 
 Same endings and fuzzy **-m** habits as other number words on the amount (`gradum` ≈ *about two*). The **unit** takes ordinary word endings.
@@ -91,7 +91,7 @@ Base and everyday units (each row is a **unit metaphor**; the literal picture st
 | SI / everyday unit | Unit root (metaphor) | Example | Literal on same root | Cue |
 |--------------------|----------------------|---------|----------------------|-----|
 | meter | `ezeze` *meter* | `bezezem g+2` | `ezezel` *set-square* | 📐: exact length |
-| gram | `abayu` *gram* | `babayum g+5` | `abayul` *pound* (banknote) | 💷: standard mass |
+| gram | `ababa` *gram* | `bababam g+5` | `ababal` *pound* (banknote) | 💷: standard mass |
 | second | `azade` *second* | `bazadem g+3` | `azadel` *stopwatch* | ⏱️: short tick |
 | liter | `ubuhe` *liter* | `bubuhem g+1` | `ubuhel` *pool* | 🎱: liquid volume |
 | ampere | `agodo` *ampere* | `bagodom g+2` | `agodol` *cable-car* | 🚠: current along a line |
@@ -113,18 +113,18 @@ Related **quantity** words (*heavy*, *flow*, *time* as continuum, …) stay on t
 <a id="no-metric-prefixes"></a>
 <a id="metric-prefixes"></a>
 
-Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / an exact count): `bezezem g+5400` or `bezezem g+5.4e3`; `babayum g+70e3`.
+Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / an exact count): `bezezem g+5400` or `bezezem g+5.4e3`; `bababam g+70e3`.
 
 **For *kilometers* / *milligrams*, use:** that scaled amount on the base unit. There is no *kilo-* / *milli-* / *mega-* stem.
 
 **Measured differentials** (*two meters taller*) put that measure noun phrase as the **single `/b/`** on the SHARED scale adjective of a [comparative](comparatives.md#measured-differentials):
 
-> `zazawan zalahen zel gadavam bezezem gradul.`
+> `zazawan zalahen zel gadavem bezezem gradul.`
 > [z-Azawan | z-Alahen | z-rank/more | [g-height | b-meter]] | g-two
 >
 > "Azawan is two meters taller than Alahen."
 
-Vague degree uses `/w/` on the scale (`zel wohul gadavam …`) with no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
+Vague degree uses `/w/` on the scale (`zel wohahal gadavem …`) with no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
 
 ### Ranges {#ranges}
 <a id="number-ranges"></a>
@@ -198,7 +198,7 @@ In [preferred writing](numbers.md#writing-preferred-shorthand): **`%`** → spee
 | Agalan | Use | English |
 |--------|-----|---------|
 | `zagadalx g+25%` | percent grades the modified noun | *25% of the cats* |
-| `dedelx g+95%` | same, object slot | *95% of the tests* |
+| `dudolx g+95%` | same, object slot | *95% of the tests* |
 | `bebezalx g+5%` under a host relation | same, `/b/` | *5% of the people* |
 
 For a count out of a group already named (*three of them*), resume the group and give the count.
@@ -246,7 +246,7 @@ English *half of the cats* / *a third of the tea* splits the whole into N parts.
 
 When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](numbers.md) (`g#N`) — not a closed overlay. *Problem* and *solution* take the published **-m** senses; *goal* is already the **-l** literal. Prefer at least **`grewol`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
 
-> `zazawan zegehom gredul vezebel.`
+> `zazawan zegehum gredul vezebel.`
 > z-Azawan | [z-solution | g-2nd] | v-tell
 >
 > "Azawan names solution 2."
@@ -254,14 +254,14 @@ When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*)
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`ehegom`** | numbered-alternative problem | *problem* (something to fit / solve) | `ehegol` *puzzle-piece* | 🧩: pieces must fit |
-| **`egehom`** | numbered-alternative solution | *solution* (what unlocks it) | `egehol` *key* | 🔑: opens what was locked |
+| **`egehum`** | numbered-alternative solution | *solution* (what unlocks it) | `egehul` *key* | 🔑: opens what was locked |
 | **`agol`** | numbered-alternative goal | *goal* (net you aim at) | | 🥅: the net you shoot for |
 | free **`g#N`** | rank in **this** numbered-alternative series | *candidate N* | | `#` = ordinal place |
 | soft **`g~#N`** | tentative ranking | *maybe candidate N* | | **-m** leaves the order open |
 
-**Recipe:** `zehegom grewol` / `zegehom gredul` / `zagol grewol`
+**Recipe:** `zehegom grewol` / `zegehum gredul` / `zagol grewol`
 
-Unnumbered `zehegom` is just *a problem*, not a candidate in a set — write **`g#N`** when brainstorming. `-l` on the first two roots is still the picture (`zehegol` *a puzzle piece*; `zegehol` *a key*; `vegehol` *to unlock*). Reframing the **same** situation is different wording of one frame, not a second digit.
+Unnumbered `zehegom` is just *a problem*, not a candidate in a set — write **`g#N`** when brainstorming. `-l` on the first two roots is still the picture (`zehegol` *a puzzle piece*; `zegehul` *a key*; `vegehul` *to unlock*). Reframing the **same** situation is different wording of one frame, not a second digit.
 
 **Compare with:** discourse *point N:* uses free **`x#N`** ([number as discourse](numbers.md#number-as-discourse-marker-by-marker)), a continue. Numbered alternatives are problem / solution / goal nouns plus **`g#N`**. Clause *so that* is [**`hagom`**](dependents.md#so-that), not **`agol`**.
 
@@ -279,12 +279,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
-| *pill* | `edal` | |
-| *baby-bottle* | `ebel` | |
+| *pill* | `ehol` | |
+| *baby-bottle* | `abadul` | |
 | *rock* | `aragal` | |
 | *spoon* | `uzubul` | |
 | *meter* | `ezezem` | `ezezel` *set-square* |
-| *gram* | `abayum` | `abayul` *pound* |
+| *gram* | `ababam` | `ababal` *pound* |
 | *time* | `adahal` | |
 | *walk* | `vowogal` | `owogal` *walk* |
 | *see* | `vahahal` | `ahahal` *eye* |
@@ -316,9 +316,9 @@ h-_15,30 | z-Azawan | d-Ahaben | v-see
 **3.** *25% of the pills.*
 
 ::: details Show answer
-`zedalx g+25%.`
+`zeholx g+25%.`
 
-🔊 *zedalx graduvayol.*
+🔊 *zeholx graduvayol.*
 
 z-pill-x | g-25yo
 :::
@@ -379,11 +379,11 @@ h-_22,7 | z-Ahaben | v-scream
 
 #### Agalan → English {#intermediate-agalan-to-english}
 
-**1.** `zebel g_7.`
+**1.** `zabadul g_7.`
 
 ::: details Show answer
 
-🔊 *zebel grolel.*
+🔊 *zabadul grolel.*
 
 z-baby-bottle | g-_7
 
@@ -401,11 +401,11 @@ h-_09,00 | z-Ahaben | v-see
 *At 09:00 Ahaben sees.*
 :::
 
-**3.** `zebelx g+50%.`
+**3.** `zabadulx g+50%.`
 
 ::: details Show answer
 
-🔊 *zebelx gravazoyol.*
+🔊 *zabadulx gravazoyol.*
 
 z-baby-bottle-x | g-50yo
 
@@ -483,7 +483,7 @@ h-_1,4 | z-Alahen | v-walk
 ### Date as books vs event-when
 <a id="as-of-vs-clock"></a>
 
-Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftover, climate, plan, and forecast score against is [*as-of*](relations.md#as-of) (`henum` / `humum` plus `/b/`). Put the date on that pole (`henum b_#22,7`); do not also write spare `h_#22,7` for the same snapshot. Clock / *before* / *after* may sit beside *as-of*: books vs event-when are different jobs.
+Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftover, climate, plan, and forecast score against is [*as-of*](relations.md#as-of) (`henem` / `humem` plus `/b/`). Put the date on that pole (`henem b_#22,7`); do not also write spare `h_#22,7` for the same snapshot. Clock / *before* / *after* may sit beside *as-of*: books vs event-when are different jobs.
 
 ### Named standards and derived units
 <a id="unit-short-form"></a>
@@ -503,7 +503,7 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bezezem g
 | coulomb | `azoba` *coulomb* | `bazobam g+2` | `araze` *charge* |
 | radian | `adawe` *radian* | `badawem g+1` | `eredu` *cycle* |
 
-**Related form:** normative *my standard* **`zemun`** vs performance **`zeman`** ([comparatives](comparatives.md#judgment-benchmarks)) is a judgment bar, not a unit. General **`ROOTl+1`** (*primary / singleton of a kind*) is [numeric derivation](numeric-derivation.md#scalar-digit-morphs), not an SI alias.
+**Related form:** normative *my standard* **`zomen`** vs performance **`zamun`** ([comparatives](comparatives.md#judgment-benchmarks)) is a judgment bar, not a unit. General **`ROOTl+1`** (*primary / singleton of a kind*) is [numeric derivation](numeric-derivation.md#scalar-digit-morphs), not an SI alias.
 
 ### Thresholds (single-item ranked)
 <a id="numeric-thresholds"></a>
@@ -581,7 +581,7 @@ Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which val
 
 **For *+50% relative to baseline*, use:** a multiplicative `/h/` factor (**`h+1.5`**, …) or ordinary *relative-to* wording.
 
-When the whole is not the modified head, use a complex `/ɡ/` or `/h/` [of relation](relations.md#of-relations) (`gobum` *part of*) + `/b/` whole, with the percent elsewhere in the clause as needed. Numbers take no `/w/` and no open arguments.
+When the whole is not the modified head, use a complex `/ɡ/` or `/h/` [of relation](relations.md#of-relations) (`gabom` *part of*) + `/b/` whole, with the percent elsewhere in the clause as needed. Numbers take no `/w/` and no open arguments.
 
 **`…yu`** point amounts, factor change (`/h/` **`h+…`**), *top / bottom N%* rank bands, and *N% done* take their “whole” from context or a separately named class.
 

@@ -60,13 +60,13 @@ An extra noun takes **-x** the same way. Here the recipient is Alahen and associ
 
 English *we* and *you* do not say whether the listener is in the group. That split is **clusivity**. On the speaker and listener roots, **-x** still adds associates, but the reading follows the conversation role: speaker plus that person’s people, or everyone you are talking to. The **address set** is everyone you are talking to right now (all current addressees, no speaker). Inclusive *you and I* stays **`oha`** ([special pronouns](pronouns.md#special-pronouns)), with no **-x**.
 
-> `zehanx vowogal.`
+> `zohenx vowogal.`
 >
 > z-listener-x | v-walk
 >
 > "You all (the addressees) walk."
 
-> `zemanx vehahel.`
+> `zamunx vehahel.`
 >
 > z-speaker-x | v-sit
 >
@@ -84,15 +84,15 @@ English *we* and *you* do not say whether the listener is in the group. That spl
 >
 > "We (you and I) walk."
 
-The same roots take the role letter of the slot they fill. As a direct object they are **`demanx`**, **`dehanx`**, **`dohan`**:
+The same roots take the role letter of the slot they fill. As a direct object they are **`damunx`**, **`dohenx`**, **`dohan`**:
 
-> `zazawan demanx vahahal.`
+> `zazawan damunx vahahal.`
 >
 > z-Azawan | d-speaker-x | v-see
 >
 > "Azawan sees speaker and associates (not you)."
 
-> `zazawan dehanx vahahal.`
+> `zazawan dohenx vahahal.`
 >
 > z-Azawan | d-listener-x | v-see
 >
@@ -106,14 +106,14 @@ The same roots take the role letter of the slot they fill. As a direct object th
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| **`emanx`** | speaker plus that person’s people (listener not assumed); `zemanx` as subject, `demanx` as object | *I and my people* (not you) |
-| **`ehanx`** | all current addressees; `zehanx` as subject, `dehanx` as object | *you all* |
+| **`amunx`** | speaker plus that person’s people (listener not assumed); `zamunx` as subject, `damunx` as object | *I and my people* (not you) |
+| **`ohenx`** | all current addressees; `zohenx` as subject, `dohenx` as object | *you all* |
 | **`ohan`** | already the interlocutor set (no **-x**); `zohan` as subject, `dohan` as object | *we* (you and I) |
 | name **-nx** / resume **-rx** | that person plus associates | *X and associates* |
 
-**Compare with:** inclusive *we* uses **`oha`** (`zohan`), not **`emanx`**.
+**Compare with:** inclusive *we* uses **`oha`** (`zohan`), not **`amunx`**.
 
-**Not the same job as:** *you and yours* uses a **name**…**-x** (`zalahenx`). **`ehanx`** is the [address set](#person-role-x) only.
+**Not the same job as:** *you and yours* uses a **name**…**-x** (`zalahenx`). **`ohenx`** is the [address set](#person-role-x) only.
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -130,12 +130,12 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Ahaben* | `ahaben` |
 | *ant* | `anadol` |
 | *basket* | `abezul` |
-| *sandwich* | `azal` |
+| *sandwich* | `ozal` |
 | *wine* | `awahel` |
 | *knife* | `anaval` |
 | *sit* | `vehahel` |
 | *see* | `vahahal` |
-| *pour* | `vorul` |
+| *pour* | `vobohel` |
 | *sneak* | `vezevul` |
 | *punch* | `vabahel` |
 | *scream* | `vezogel` |
@@ -180,7 +180,7 @@ z-Alahen-x | d-Ahaben | v-see
 **5.** *They (Azawan and associates) pour wine.* (Azawan already mentioned)
 
 ::: details Show answer
-`zazawarx dawahel vorul.`
+`zazawarx dawahel vobohel.`
 
 z-←Azawan.full-x | d-wine | v-pour
 :::
@@ -220,7 +220,7 @@ z-Ahaben-x | v-sit
 *Ahaben and associates sit.*
 :::
 
-**2.** `zazawanx dazal vahahal.`
+**2.** `zazawanx dozal vahahal.`
 
 ::: details Show answer
 
@@ -298,7 +298,7 @@ English *Azawan and them* does not say who belongs. Agalan **-x** is the same: w
 
 If the wrong reading would matter, say so. Use **`oha`** or a join for *you and I*. For *not you*, use speaker **-x**, or subtract the listener with the *except* [hook](hooks.md) **`ul`**:
 
-> `zazawanx ul zehan vowogal.`
+> `zazawanx ul zohen vowogal.`
 >
 > z-Azawan-x | except | z-listener | v-walk
 >
@@ -311,7 +311,7 @@ If the wrong reading would matter, say so. Use **`oha`** or a join for *you and 
 | Institutional frame | this meeting, this household | the scene’s default group |
 | Open | no further cue | the listener may or may not be in the set |
 
-For the **address set** (`ehanx`), count everyone called in this turn’s vocatives, plus anyone still being addressed from before.
+For the **address set** (`ohenx`), count everyone called in this turn’s vocatives, plus anyone still being addressed from before.
 
 ### Verbs (`/v/`) — collective {#verbs-v}
 
@@ -361,8 +361,8 @@ With a [phrase join](joins.md), SHARED singular scale under **`a`** is already *
 
 | Agalan | English |
 |--------|---------|
-| `zavabal zudal zal garagam` | *the file-box and the toolbox are (each) heavy* |
-| `zavabal zudal zal garagamx` | *the file-box and the toolbox are heavy together* (collective SHARED) |
+| `zavabal zudul zal garagam` | *the file-box and the toolbox are (each) heavy* |
+| `zavabal zudul zal garagamx` | *the file-box and the toolbox are heavy together* (collective SHARED) |
 | `zavahal gagegem` | *the family is vast* (group-level size) |
 | `zavabalx garagam` | *the file-boxes are heavy* (members / plain) |
 | `zavabalx garagamx` | *the file-boxes are heavy collectively* |
@@ -390,7 +390,7 @@ To call a group at the start of a turn, put **-x** on the vocative (`/y/`) after
 | **-lx** | kind-based group address | *hey, kids* |
 | **-nx** | titled group | *Team Alpha* |
 | **-rx** | prior addressee and associates | *hey, you (that one) and associates* |
-| **`yehanx`** | current addressees, no name | *hey, you all* |
+| **`yohenx`** | current addressees, no name | *hey, you all* |
 
 **For *everyone*, use:** [universals](joins.md#universals-domains-generics) (`…ual`).
 
@@ -425,7 +425,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
-| *listener* | `ehan` |
+| *listener* | `ohen` |
 | *sheet-music* | `umuyul` |
 | *bell* | `ebevol` |
 | *heavy* | `aragam` |
@@ -441,7 +441,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Hey, you all!*
 
 ::: details Show answer
-`yehanx.`
+`yohenx.`
 
 y-listener-x
 :::

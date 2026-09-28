@@ -61,8 +61,8 @@ describe("construction registry", () => {
       ["yol.", "reading.bareQuestion"],
       ["zazawan vowogal thovom.", "overlay.ovom.th"],
       // An interest or ability word uses the interest / hostless-ability row of its host.
-      ["zazawan vowogal thunethem.", "overlay.unem.th"],
-      ["zazawan thazexel.", "overlay.azem.th"],
+      ["zazawan vowogal thonathem.", "overlay.onam.th"],
+      ["zazawan thezexel.", "overlay.ezem.th"],
       // Per-form features of families taught across sections.
       ["zazawan zalahen zal vowogal.", "join.a"],
       ["yol zazawan vowogal.", "force.o"],

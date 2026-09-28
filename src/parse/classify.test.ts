@@ -38,7 +38,7 @@ function expectReading(text: string, reading: LexReading) {
 
 describe("classify", () => {
   it("emotion tail on an interest root; same shape on another root is a viewpoint lateral", () => {
-    const fused = classifyText("gudathamol");
+    const fused = classifyText("guduthamol");
     assert.equal(fused.family.kind === "x" && fused.family.xFamily, "interest");
     const lateral = classifyText("gewezethamol");
     assert.deepEqual(lateral.family, { kind: "x", xFamily: "lateral", leftRoots: ["eweze"], rightRoots: ["amo"] });
@@ -75,10 +75,10 @@ describe("classify", () => {
   });
 
   it("overlay mood on residue and former-climate", () => {
-    const residue = expectReading("thomom", "mood");
+    const residue = expectReading("thamom", "mood");
     assert.equal(residue.overlay?.kind, "residue");
     assert.equal(residue.overlay?.gloss, "RESIDUE");
-    const former = expectReading("thenem", "mood");
+    const former = expectReading("thunem", "mood");
     assert.equal(former.overlay?.kind, "former_climate");
     assert.equal(former.overlay?.gloss, "FORMER");
   });
@@ -125,18 +125,18 @@ describe("classify", () => {
 
   it("interest on interest host compounds; bare interest root is ordinary", () => {
     expectReading("thabathal", "interest");
-    expectReading("gunethal", "interest");
-    expectReading("hozel", "ordinary");
+    expectReading("gonathal", "interest");
+    expectReading("hozul", "ordinary");
   });
 
   it("hostless ability overlay", () => {
-    const word = expectReading("thazem", "ability");
+    const word = expectReading("thezem", "ability");
     assert.ok(word.overlay);
-    assert.equal(word.overlay!.senseForm, "azem");
+    assert.equal(word.overlay!.senseForm, "ezem");
   });
 
   it("between locative overlay remains; other place talk is ordinary on those roots", () => {
-    const between = expectReading("gazam", "locative");
+    const between = expectReading("gozam", "locative");
     assert.equal(between.overlay!.gloss, "between");
     const pin = expectReading("zubuhul", "ordinary");
     assert.equal(pin.overlay, undefined);
@@ -144,30 +144,30 @@ describe("classify", () => {
   });
 
   it("of-relation overlays on /h/ /ɡ/ and ordinary pictures on other letters", () => {
-    const part = expectReading("gobum", "ofRelation");
+    const part = expectReading("gabom", "ofRelation");
     assert.ok(part.overlay);
     assert.equal(part.overlay!.kind, "of_relation");
     assert.equal(part.overlay!.gloss, "part-of");
     const contents = expectReading("haham", "ofRelation");
     assert.equal(contents.overlay!.gloss, "contents");
-    const material = expectReading("guwom", "ofRelation");
+    const material = expectReading("guwam", "ofRelation");
     assert.equal(material.overlay!.gloss, "material");
-    const origin = expectReading("gagem", "ofRelation");
+    const origin = expectReading("gagum", "ofRelation");
     assert.equal(origin.overlay!.gloss, "origin");
-    const bone = expectReading("zobul", "ordinary");
+    const bone = expectReading("zabol", "ordinary");
     assert.equal(bone.overlay, undefined);
   });
 
   it("similative overlay on /h/ /ɡ/ and ordinary mirror on other letters", () => {
-    const like = expectReading("hemum", "similative");
+    const like = expectReading("homem", "similative");
     assert.ok(like.overlay);
     assert.equal(like.overlay!.kind, "similative");
     assert.equal(like.overlay!.gloss, "like");
-    const adj = expectReading("gemum", "similative");
+    const adj = expectReading("gomem", "similative");
     assert.equal(adj.overlay!.gloss, "like");
-    const mirror = expectReading("zemul", "ordinary");
+    const mirror = expectReading("zomel", "ordinary");
     assert.equal(mirror.overlay, undefined);
-    const mine = expectReading("zemun", "mood");
+    const mine = expectReading("zomen", "mood");
     assert.equal(mine.overlay!.kind, "benchmark");
   });
 
@@ -181,46 +181,46 @@ describe("classify", () => {
   });
 
   it("exchange overlay on /h/ /ɡ/ and ordinary booth on other letters", () => {
-    const forPrice = expectReading("hohem", "exchange");
+    const forPrice = expectReading("hogem", "exchange");
     assert.ok(forPrice.overlay);
     assert.equal(forPrice.overlay!.kind, "exchange");
     assert.equal(forPrice.overlay!.gloss, "in-exchange-for");
-    const adj = expectReading("gohem", "exchange");
+    const adj = expectReading("gogem", "exchange");
     assert.equal(adj.overlay!.gloss, "in-exchange-for");
-    const booth = expectReading("zohel", "ordinary");
+    const booth = expectReading("zogel", "ordinary");
     assert.equal(booth.overlay, undefined);
-    const verb = expectReading("vohem", "ordinary");
+    const verb = expectReading("vogem", "ordinary");
     assert.equal(verb.overlay, undefined);
   });
 
   it("proxy overlay on /h/ /ɡ/ and ordinary id on other letters", () => {
-    const behalf = expectReading("hadum", "proxy");
+    const behalf = expectReading("hadem", "proxy");
     assert.ok(behalf.overlay);
     assert.equal(behalf.overlay!.kind, "proxy");
     assert.equal(behalf.overlay!.gloss, "on-behalf-of");
-    const adj = expectReading("gadum", "proxy");
+    const adj = expectReading("gadem", "proxy");
     assert.equal(adj.overlay!.gloss, "on-behalf-of");
-    const card = expectReading("zadul", "ordinary");
+    const card = expectReading("zadel", "ordinary");
     assert.equal(card.overlay, undefined);
   });
 
   it("stimulus overlay on /ɡ/; ordinary point on other letters", () => {
-    const stim = expectReading("gobem", "stimulus");
+    const stim = expectReading("gobom", "stimulus");
     assert.ok(stim.overlay);
     assert.equal(stim.overlay!.kind, "stimulus");
     assert.equal(stim.overlay!.gloss, "stimulus");
-    const emphasis = expectReading("zobel", "ordinary");
+    const emphasis = expectReading("zobol", "ordinary");
     assert.equal(emphasis.overlay, undefined);
   });
 
   it("hosted judgment bars Mine and Everyone", () => {
-    const mine = expectReading("zemun", "mood");
+    const mine = expectReading("zomen", "mood");
     assert.ok(mine.overlay);
     assert.equal(mine.overlay!.kind, "benchmark");
     assert.equal(mine.overlay!.gloss, "my-standard");
-    const everyone = expectReading("zogon", "mood");
+    const everyone = expectReading("zolon", "mood");
     assert.ok(everyone.overlay);
-    assert.equal(everyone.overlay!.senseForm, "ogon");
+    assert.equal(everyone.overlay!.senseForm, "olon");
   });
 
   it("stock join zuan is a join, not Everyone", () => {
@@ -234,7 +234,7 @@ describe("classify", () => {
   });
 
   it("published ordinary on speaker pronoun", () => {
-    const word = expectReading("zeman", "ordinary");
+    const word = expectReading("zamun", "ordinary");
     assert.ok(word.rootGloss);
   });
 
@@ -247,7 +247,7 @@ describe("classify", () => {
   });
 
   it("lexical compound beats accidental published substring match", () => {
-    const word = expectReading("zunelebezan", "ordinary");
+    const word = expectReading("zonalebezan", "ordinary");
     assert.equal(word.lexicalCompound, true);
     assert.equal(word.rootGloss?.concrete, "friend");
   });
@@ -311,12 +311,12 @@ describe("classify", () => {
   });
 
   it("as-of ledger and bookmark overlays on /h/ /ɡ/ /w/, including resume", () => {
-    for (const form of ["henum", "genum", "wenum", "henur", "genur", "wenur"]) {
+    for (const form of ["henem", "genem", "wenem", "hener", "gener", "wener"]) {
       const word = expectReading(form, "mood");
       assert.equal(word.overlay?.kind, "clause_pole");
       assert.equal(word.overlay?.gloss, "as-of.ledger");
     }
-    for (const form of ["humum", "gumum", "wumum", "humur", "gumur", "wumur"]) {
+    for (const form of ["humem", "gumem", "wumem", "humer", "gumer", "wumer"]) {
       const word = expectReading(form, "mood");
       assert.equal(word.overlay?.kind, "clause_pole");
       assert.equal(word.overlay?.gloss, "as-of.bookmark");

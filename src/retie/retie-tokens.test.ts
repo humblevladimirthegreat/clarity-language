@@ -16,7 +16,8 @@ import { rewriteSourceLiterals, sourceLiterals } from "./source.js";
 import { rewriteParsedWord } from "./rebuild.js";
 import { parseWord } from "../parse/word.js";
 import { lineNumberAt, peelChunk, retieCore } from "./tokens.js";
-import { bridgeTables, verifyRetiedSpans } from "./verify.js";
+import { retieTables as bridgeTables } from "./tables.js";
+import { verifyRetiedSpans } from "./verify.js";
 
 function mapOf(...pairs: [string, string][]): Map<string, string> {
   return new Map(pairs);
@@ -396,12 +397,12 @@ describe("verifyRetiedSpans", () => {
     assert.match(failures[0]!.detail, /owoga/);
   });
 
-  it("reports a tree change with no new resume link as info", () => {
+  it("blocks a tree change with no new resume link", () => {
     const moved = mapOf(["obo", "azava"]);
     const spans = [{ before: "goyuthol bohohul.", after: "gazavathol bohohul.", index: 0, cls: "sentence" }];
     const failures = verifyRetiedSpans(spans, moved, bridgeTables(moved));
     assert.equal(failures.length, 1);
-    assert.equal(failures[0]!.level, "info");
+    assert.equal(failures[0]!.level, "blocking");
   });
 
   it("catches a rewrite that stops parsing", () => {
@@ -542,5 +543,68 @@ describe("resume binds after a retie", () => {
     );
     assert.equal(failures[0]?.level, "blocking");
     assert.match(failures[0]!.detail, /binds/);
+  });
+});
+
+describe("retie fixes (2026-09-28 overlay demotion)", () => {
+  it("moves an overlay -r with its root instead of binding it as a resume", () => {
+    // `themar` is TOLD.weak; `emazo` on the page shares its short cut but is not its antecedent.
+    const { text } = rewriteMarkdown("`zemazol` then `zalahen themar vadebal.`", mapOf(["ema", "ibibi"]));
+    assert.equal(text, "`zemazol` then `zalahen thibibir vadebal.`");
+  });
+
+  it("keeps an emotion tail when the interest root moves", () => {
+    assert.equal(rewriteParsedWord(parseWord("wonathumer"), mapOf(["ona", "ibibi"])), "wibibithumer");
+  });
+
+  it("reties a viewpoint lateral the word grammar reads as an emotion shape", () => {
+    const { text } = rewriteMarkdown("`zobodal gewezathamun.`", mapOf(["amu", "ibibi"]));
+    assert.equal(text, "`zobodal gewezathibibin.`");
+  });
+
+  it("blocks a span left unretied that still reads a moved root", () => {
+    const span = { before: "zobodal gewezathamun.", after: "zobodal gewezathamun.", index: 0, cls: "sentence" };
+    const failures = verifyRetiedSpans([span], mapOf(["amu", "ibibi"]), loadDefaultTables());
+    assert.equal(failures[0]?.level, "blocking");
+    assert.match(failures[0]!.detail, /left unretied/);
+  });
+
+  it("recuts a lone stem from the words it cuts on its line, not as the root it spells", () => {
+    const line = "Short `eze` matches *sleep* (`ezeba`) and *speechless* (`ezebo`).";
+    assert.equal(rewriteMarkdown(line, mapOf(["eze", "ibi"])).text, line);
+    assert.equal(
+      rewriteMarkdown(line, mapOf(["ezeba", "ovoba"], ["ezebo", "ovobo"])).text,
+      "Short `ovo` matches *sleep* (`ovoba`) and *speechless* (`ovobo`).",
+    );
+  });
+});
+
+describe("source literals (2026-09-28 fixes)", () => {
+  const map = mapOf(["azawa", "ululo"], ["ema", "ibibi"]);
+  const ctx = {
+    map,
+    tables: loadDefaultTables(),
+    follow: { names: new Map(), words: new Map() },
+    // The English frequency list has single letters and some hooks.
+    english: new Set(["b", "ol", "the"]),
+    currentRoots: new Set(["ululo", "ibibi"]),
+  };
+
+  it("reads a lone role letter and a hook as Agalan, not English", () => {
+    const source = 'parse("zazawan vowogal ol b_#22,7.");\n';
+    const { text } = rewriteSourceLiterals(source, "x.test.ts", ctx);
+    assert.equal(text, 'parse("zululon vowogal ol b_#22,7.");\n');
+  });
+
+  it("moves an overlay construction id with its sense form", () => {
+    const { text } = rewriteSourceLiterals('expect("overlay.emam.th");\n', "x.test.ts", ctx);
+    assert.equal(text, 'expect("overlay.ibibim.th");\n');
+  });
+
+  it("reports an escaped literal and a word the tokenizer could not reach", () => {
+    const escaped = rewriteSourceLiterals('const md = "> \\`zazawan vowogal.\\`";\n', "x.test.ts", ctx);
+    assert.equal(escaped.reviews.length, 1);
+    const partial = rewriteSourceLiterals('expect("yael [[zazawan zam] zazawan zal]");\n', "x.test.ts", ctx);
+    assert.ok(partial.reviews.some((review) => /azawa/.test(review.reason)));
   });
 });

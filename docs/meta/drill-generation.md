@@ -76,7 +76,7 @@ If you cannot certify a token, drop the item. Do not guess from English. Do not 
 
 - Any **morph** whose [first-taught](#leak-index) checkpoint is **later** than this one
 - Same-slot **sibling** Introduces ([slots](#slots))
-- Dummy *I* / *you* (`zeman` / `zehan`) unless this page is teaching those specials. First person *I* as the learner is fine through the **`SELF`** name slot from word-endings Beginner on ([first person](grammar-docs.md#house-cast))
+- Dummy *I* / *you* (`zamun` / `zohen`) unless this page is teaching those specials. First person *I* as the learner is fine through the **`SELF`** name slot from word-endings Beginner on ([first person](grammar-docs.md#house-cast))
 - Foreign `PoS<…>ENDING` unless this stage is teaching loans / spans
 - Intermediate / Advanced speech-act twins (`yam` / `yom` / `yem` / `yum`), **`gl-`**, sentence linkers, nested **`barl`**, unless recycle includes **core Intermediate**
 
@@ -222,7 +222,7 @@ Default people: [house cast](grammar-docs.md#house-cast) — `zazawan` / `zalahe
 
 **This table is for worked examples** on grammar pages (and for morph leak checks when a teach line uses these stems). **Checkpoints do not default to it.** Checkpoint content comes from the [setting](translation-exercises.md#checkpoint-setting) plus house names.
 
-Tokens here are **stems for matching** (path allowlist / leak checks). Learner **Roots used here** cells on a checkpoint use [citations or the inflected form the row teaches](grammar-docs.md#citation-in-tables). Do not copy `(**-m**)` from this **Sense** column into learner **English**. Checkpoint **English** is the uninflected published lemma for that cell (literal, metaphor, or packed role English); inflected drill prompts (*running*) are fine. When English is not the citation kind, the Agalan cell is the in-clause word: *see* → `vahahal` / `` `ahahal` *eye* ``; *sit* → `vehahel` / `` `ehahel` *chair* ``; *tell* → `vezebel` / `` `ezebel` *speech* ``; *therefore* → `xezadam` / `` `ezadal` *east* ``; *however* → `xezel`; *although* → `hezem` (NP *despite* is the same `/h/` word + `/b/` noun); *so-that* → `hagom` (NP intended *for* is the same `/h/` word + `/b/` noun); *meanwhile* → `xagagal`; *haste* → `hadehom` / `` `adehol` *dash* ``; *quietude* → `halahom`; *volume* → `wagawam`; *topic* → `hahehol`. *because* / *inside* already list the `/h/` word (`thabem`, `hegegam`). Do not inflect a row whose English is still the citation kind (`*dog*` stays `odogal`; *next clause* stays `owel`).
+Tokens here are **stems for matching** (path allowlist / leak checks). Learner **Roots used here** cells on a checkpoint use [citations or the inflected form the row teaches](grammar-docs.md#citation-in-tables). Do not copy `(**-m**)` from this **Sense** column into learner **English**. Checkpoint **English** is the uninflected published lemma for that cell (literal, metaphor, or packed role English); inflected drill prompts (*running*) are fine. When English is not the citation kind, the Agalan cell is the in-clause word: *see* → `vahahal` / `` `ahahal` *eye* ``; *sit* → `vehahel` / `` `ehahel` *chair* ``; *tell* → `vezebel` / `` `ezebel` *speech* ``; *therefore* → `xezadam` / `` `ezadal` *east* ``; *however* → `xazel`; *although* → `hazem` (NP *despite* is the same `/h/` word + `/b/` noun); *so-that* → `hagom` (NP intended *for* is the same `/h/` word + `/b/` noun); *meanwhile* → `xagagal`; *haste* → `hadehom` / `` `adehol` *dash* ``; *quietude* → `halahom`; *volume* → `wagawam`; *topic* → `hahehol`. *because* / *inside* already list the `/h/` word (`theram`, `hegegam`). Do not inflect a row whose English is still the citation kind (`*dog*` stays `odogal`; *next clause* stays `odol`).
 
 | Root | Sense in examples |
 |------|-------------------|
@@ -246,10 +246,10 @@ Tokens here are **stems for matching** (path allowlist / leak checks). Learner *
 | `ehahe` | *sit* (`vehahel`; citation *chair*) |
 | `adeho` | *haste* (`hadehom`; citation *dash*) |
 | `darl` | *that-clause* |
-| `abe` | *because* (**-m** on `/th/` `/ɡ/`) |
-| `oro` | *only if* (**-m** on `/th/` `/ɡ/`) |
+| `era` | *because* (**-m** on `/th/` `/ɡ/`) |
+| `ebo` | *only if* (**-m** on `/th/` `/ɡ/`) |
 
-A teach line may add roots that already appear in that stage’s worked examples (e.g. `alo` *apple*, `edehe` *tea*, `agave` *coffee`, `omonu` *challenging*, `onunu` **SAME**). Checkpoint tables list **setting** roots instead, even when a teach line used *walk*.
+A teach line may add roots that already appear in that stage’s worked examples (e.g. `alu` *apple*, `edehe` *tea*, `agave` *coffee`, `omonu` *challenging*, `onunu` **SAME**). Checkpoint tables list **setting** roots instead, even when a teach line used *walk*.
 
 ## Allowlist
 <a id="allowlist"></a>
@@ -269,11 +269,11 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 4 | `word-endings.md` | **exists** | Choose **-l** vs **-m** vs **-n** on a **citation** (prefix-less); named person vs kind vs metaphor; **greeting** named citation with period (`azawan.`) | No sentences with role letters. No **-r**. Pointers to **-x** / **`gl-`**: do **not** make those the item. No vocative `/y/` |
 | 5 | `clause.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; hosted `/ɡ|h/`+`/b/` (*like*); unhosted `/b/` recipient/addressee; house names; **-l** / **-m** / **-n** as used in examples | Do not use **`gl-`**, **`darl`**, `/x/`, nested **`barl`**, letter **-r** mechanism, **-x**, joins. Greeting citations are word-endings. No conversation-length **`x`** vowel |
 | 6 | `speech-moves.md` | **exists** | Turn start; call a person; conventional interjection; statement / question / command / prohibition; omit recoverable **`yal`** | Recycle clause bodies and house names; no hooks, polar stance, soft forms, or numbers |
-| 7 | `dependents.md` | **exists** | Two-sentence *who / that / which*; **`darl` last**; adverbial subordinators (`thabem` / `thowem` / `thedom` / `hezem` / `hahem` / `hodam` / `habum` / `helam` / `hagom` **`barl`**; *despite* = **`hezem`** + `/b/` noun); `/x/` continue vs `/y/` turn; `/x/` linker may start the next written sentence after `.` | Do not use nested **`barl`**, letter **-r** mechanism. Recycle speech-moves **`yol`/`yel`/`yul`** |
-| 13 | `relations.md` | **exists** | Hosted pair for simile **`hemum`**, exchange **`hohem`**, proxy **`hadum`** | Recycle clause hosted `/b/` and hooks extra-noun. No *between*, no of-relations, no **`barl`**. Not **`hahadam`** |
-| 8 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`ema` / `eha` / `oha` / `anu`** (when the *role* is the point); inclusive *we* **`oha`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
-| 8 | `plurality.md` | **exists** | Associative **-x** (`-lx` / `-nx` / `-rx`); not agreement; person-role **-x** (address set vs name…**-x**) | **`oha`** as the *not this* for inclusive *we*. **`ema`/`eha`** only on person-role items |
-| 9 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zodogal`; identity **`gugol` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`azave` / `uzuba`) OK if already taught in this stage |
+| 7 | `dependents.md` | **exists** | Two-sentence *who / that / which*; **`darl` last**; adverbial subordinators (`theram` / `thodom` / `thewum` / `hazem` / `hehum` / `hodam` / `habum` / `hulam` / `hagom` **`barl`**; *despite* = **`hazem`** + `/b/` noun); `/x/` continue vs `/y/` turn; `/x/` linker may start the next written sentence after `.` | Do not use nested **`barl`**, letter **-r** mechanism. Recycle speech-moves **`yol`/`yel`/`yul`** |
+| 13 | `relations.md` | **exists** | Hosted pair for simile **`homem`**, exchange **`hogem`**, proxy **`hadem`** | Recycle clause hosted `/b/` and hooks extra-noun. No *between*, no of-relations, no **`barl`**. Not **`hahadam`** |
+| 8 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`amu` / `ohe` / `oha` / `onu`** (when the *role* is the point); inclusive *we* **`oha`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
+| 8 | `plurality.md` | **exists** | Associative **-x** (`-lx` / `-nx` / `-rx`); not agreement; person-role **-x** (address set vs name…**-x**) | **`oha`** as the *not this* for inclusive *we*. **`amu`/`ohe`** only on person-role items |
+| 9 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zodogal`; identity **`gogal` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`azavo` / `uzuba`) OK if already taught in this stage |
 | 10 | `joins.md` | **exists** | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / single-item / standalone starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask) | No hooks, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
 | 11 | `questions.md` | **exists** | **`yol`/`yom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`yael` / `yuel` / `yaol`** vs **`yul`** vs join **`zul`** | **`yom`** is taught here as soft *ask* — allowed on this page even though full speech-act twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
 | 12 | `hooks.md` | **exists** | Prefix-less **hooks** (**`al`/`am`/`ol`/`ul`/`el`**); in-clause `A HOOK B`; discourse **`al`** *additionally*; extra-noun **`al`/`ol`/`ul`/`el`** + `/b/` (**in** / **at** / **from** / **for**) | Not a join (`zam` vs `am`). Not stacked extra-noun (`aol` / `ael`). Not **`xrebul` / `xrebal`**
@@ -281,13 +281,13 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 14 | `spans.md` | **exists** | Writing fences `[ ]` `{ }` `( )` `< >`; **`~`/`@`**; resume `d[=]`; PoS = outer slot; **aside** = `th(…)`; interior fragment or same-speech-act clause; when a span is required vs nativized word | `<>` loans **allowed** (this stage teaches them). Prefer atomic one-token cites |
 | 15 | `numbers.md` | **exists** | spelled counts (**`grarel`**) and ordinals (**`gredul`**) with the digit syllables; digitless **`gral`** (*more than one*); no shorthand (Intermediate) with **-x** on the noun | No `/v/` `/h/` `/y/` `/x/` number uses, exponents, ranges, percent, measures (later). **-x** from plurality is recycle |
 | 15 | `comparatives.md` | **exists** | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; single-item superlative; equative **`ae`** | **Needs:** joins Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
-| 15 | `causation.md` | **exists** | Two-place poles: outcome host + `/b/` condition; `/th/` event vs `/ɡ/` noun; *if* **`owe`** vs *only if* **`oro`**; no cause-arrow word | **Needs:** core extra nouns + dependents **`darl`**. *Because* / **`IFF`** / **CAUSE** are Intermediate — do not use |
-| 16 | `interests.md` | **exists** | Six needs; `/ɡ/` on a belonging vs `/th/` on the clause; **`tha`** met + contact **-l / -m / -r**; **`thu`** unmet changeability; unowned **`gobem`** + `/w/` need | **Not** prescription **`the`** or motive **`tho`** (Intermediate). Not ability (non-interest + `x` vowel). Not MAY. Not bare need-as-topic |
+| 15 | `causation.md` | **exists** | Two-place poles: outcome host + `/b/` condition; `/th/` event vs `/ɡ/` noun; *if* **`odo`** vs *only if* **`ebo`**; no cause-arrow word | **Needs:** core extra nouns + dependents **`darl`**. *Because* / **`IFF`** / **CAUSE** are Intermediate — do not use |
+| 16 | `interests.md` | **exists** | Six needs; `/ɡ/` on a belonging vs `/th/` on the clause; **`tha`** met + contact **-l / -m / -r**; **`thu`** unmet changeability; unowned **`gobom`** + `/w/` need | **Not** prescription **`the`** or motive **`tho`** (Intermediate). Not ability (non-interest + `x` vowel). Not MAY. Not bare need-as-topic |
 | 16 | `intention.md` | **exists** | PLAN and host ability contrasts: **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (interest roots). Not role compounds (vowel *left* of `x`). Not conversation length (named citation or `/y/`) |
 | 16 | `knowing.md` | **exists** | **MAY** **`ovo`** + 2a holds (**`thovom`** default; **-l** find out; **-r** who knows) | Not evidentiality / NOTIONAL (Intermediate). Not **`yom`** (core Intermediate) unless you only recycle **`yol`** from core/questions Beginner |
 | 16 | `roles.md` | **exists** | Role compounds **`a`/`e`/`u`/`o` x ROOT`** (agent / place / patient / recipient; **`o`** = reltum on a relation); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
-| 16 | `x-compounds.md` | **exists** | Productive **`x`** vs two words vs dictionary compound; look up listed stems (`ebedalahaza` / `unelebeza`); do not coin them. Live **`x`** from parts (not a pre-joined bank row) | Not parser-family inventory as drills; not coining new dictionary compounds. Greeting bid is Intermediate |
-| 16 | `intention.md` | **exists** | **PLAN** **`ama`** map-resolution endings | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling MAY / values unused unless the page contrast needs them |
+| 16 | `x-compounds.md` | **exists** | Productive **`x`** vs two words vs dictionary compound; look up listed stems (`ebedalahaza` / `onalebeza`); do not coin them. Live **`x`** from parts (not a pre-joined bank row) | Not parser-family inventory as drills; not coining new dictionary compounds. Greeting bid is Intermediate |
+| 16 | `intention.md` | **exists** | **PLAN** **`uma`** map-resolution endings | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling MAY / values unused unless the page contrast needs them |
 
 ### Intermediate then Advanced
 <a id="allowlist-later"></a>
@@ -299,9 +299,9 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 5 | `clause.md` | Intermediate | **exists** | **`gl-`**; adverb topic `/h/`+`/b/`; complex chaining | |
 | 5 | `clause.md` | Advanced | **exists** | Leftmost content-word prominence; English cleft / *what*-cleft / fronted adverb | 4–6 items. Weak-pause cues are recognition, not the drill |
 | 6 | `speech-moves.md` | Intermediate | **exists** | **`yam`/`yom`/`yem`/`yum`**; opening hooks before an act word; number-as-interjection pointer only if the stage’s examples already show it | Do not require numbers Intermediate readings |
-| 7 | `dependents.md` | Intermediate | **exists** | `/x/` linkers (`xezadam`, `xezel`, …); nested **`barl`**; stand-in vowels; which-noun with resume | Recycle Beginner **`darl`/`barl`** |
-| 13 | `relations.md` | Intermediate | **exists** | *between* **`hazam`**; of-relations (`gobum`, `gaham`, `guwom`, `gagem`); recycle extra-noun hooks for other place talk | *Between* recycles joins Beginner `/b/` join |
-| 13 | `relations.md` | Advanced | **exists** | Hosted *as-of* **`henum` / `humum`**; `/h/` `/ɡ/` `/w/`; resume **-r**; date in `/b/` | Recycle RESIDUE, forecast, calendar `b_#…`. Not persist hooks |
+| 7 | `dependents.md` | Intermediate | **exists** | `/x/` linkers (`xezadam`, `xazel`, …); nested **`barl`**; stand-in vowels; which-noun with resume | Recycle Beginner **`darl`/`barl`** |
+| 13 | `relations.md` | Intermediate | **exists** | *between* **`hozam`**; of-relations (`gabom`, `gaham`, `guwam`, `gagum`); recycle extra-noun hooks for other place talk | *Between* recycles joins Beginner `/b/` join |
+| 13 | `relations.md` | Advanced | **exists** | Hosted *as-of* **`henem` / `humem`**; `/h/` `/ɡ/` `/w/`; resume **-r**; date in `/b/` | Recycle RESIDUE, forecast, calendar `b_#…`. Not persist hooks |
 | 4 | `word-endings.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; [titled phrases](../grammar/word-endings.md#titled-phrases) (hook / join / span **-n**, inner **-l** / **-m**); office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
 | 4 | `word-endings.md` | Advanced | skip | — | no Advanced stage |
 | 9 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`oha`** vs name join vs name…**-x** | |
@@ -324,21 +324,21 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 15 | `numbers-applied.md` | Intermediate | **exists** | Digit-string labels; clock / calendar time; percent vs points; measure phrases; ranges — as taught in this stage | One topic per item. 4–8 items |
 | 15 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the stage’s teach examples** — not unassigned cells | 4–6 items |
 | 15 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; manner `/h/` immediately after the join; distributive **`a`** + SHARED `/ɡ/`; measured differentials | Measured items **Sibling OK:** numbers Intermediate **measure phrases** only |
-| 15 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zayen`, `zahun`, **`zemun`** Mine vs performance **`zeman`**, **`zogon`** Everyone, …); `/w/` *as-of* on a shared scale | **`ema`** allowed on performance items. Recycle relations Advanced *as-of* |
-| 15 | `causation.md` | Intermediate | **exists** | Following-sentence **`barl`**; **`abe`** *because* / **`edo`** *iff*; asserted necessary **`thorom thabem`**; **CAUSE** **`ege`** **-m** | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
-| 15 | `causation.md` | Advanced | **exists** | Factivity; `thowem` vs bookmark *as-of* `humum`; evidential / CAUSE / habit stacks as taught in this stage | MAY/evidentiality and relations Advanced *as-of* are recycle |
+| 15 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zeyen`, `zahen`, **`zomen`** Mine vs performance **`zamun`**, **`zolon`** Everyone, …); `/w/` *as-of* on a shared scale | **`amu`** allowed on performance items. Recycle relations Advanced *as-of* |
+| 15 | `causation.md` | Intermediate | **exists** | Following-sentence **`barl`**; **`era`** *because* / **`ewu`** *iff*; asserted necessary **`thebom theram`**; **CAUSE** **`ege`** **-m** | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
+| 15 | `causation.md` | Advanced | **exists** | Factivity; `thodom` vs bookmark *as-of* `humem`; evidential / CAUSE / habit stacks as taught in this stage | MAY/evidentiality and relations Advanced *as-of* are recycle |
 | 16 | `interests.md` | Intermediate | **exists** | Prescription **`the`** + force; motive **`tho`** + preference standing; which ending table; attachment sites | |
 | 16 | `interests.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
-| 16 | `knowing.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`ave`** + play holds; **RESIDUE** / **FORMER**; MAY vs nearby jobs | |
-| 16 | `knowing.md` | Advanced | **exists** | RESIDUE / FORMER / LIVE / WITNESSED against *as-of*; MAY unshifted; mood on one adjective; universality (`agu` / `eda` / …) | Recycle relations Advanced. One checkpoint for the whole stage |
-| 16 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR th ANCHOR`**; bare arrow roots = compass; gravity **`abaha`/`adahe`**; name/listener anchor | Prefer `…thazawan` over silent speaker default. **`eha`/`ema`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
+| 16 | `knowing.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`ove`** + play holds; **RESIDUE** / **FORMER**; MAY vs nearby jobs | |
+| 16 | `knowing.md` | Advanced | **exists** | RESIDUE / FORMER / LIVE / WITNESSED against *as-of*; MAY unshifted; mood on one adjective; universality (`ogo` / `eho` / …) | Recycle relations Advanced. One checkpoint for the whole stage |
+| 16 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR th ANCHOR`**; bare arrow roots = compass; gravity **`abaha`/`adahe`**; name/listener anchor | Prefer `…thazawan` over silent speaker default. **`ohe`/`amu`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
 | 16 | `x-compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *a few minutes* / passing) | Recycle [greeting](../grammar/word-endings.md#greeting) and [vocative](../grammar/speech-moves.md#vocative). Not ability (`vezehexel`). Not values |
 | 16 | `roles.md` | Advanced | — | no Advanced stage | |
 | 17 | `join-across-roles.md` | Intermediate | **exists** | Verb-phrase and clause joins (`vam`, `xam`, sequence `xan`); join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 17) |
-| 17 | `intention.md` | Intermediate | **exists** | **DECISION** **`ehu`** changeability; forecast = evidential + `bral` vs PLAN; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
+| 17 | `intention.md` | Intermediate | **exists** | **DECISION** **`eha`** changeability; forecast = evidential + `bral` vs PLAN; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
 | 17 | `intention.md` | Advanced | **exists** | PLAN / forecast against *as-of*; DECISION speech-now | Recycle relations Advanced |
 | 17 | `interests.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value) | Recycle values Beginner. |
-| 17 | `numbers-applied.md` | Intermediate | **exists** | Numbered alternatives `ehegom`/`egehom`/`agol` + `g#N` | Recycle numbers Beginner. |
+| 17 | `numbers-applied.md` | Intermediate | **exists** | Numbered alternatives `ehegom`/`egehum`/`agol` + `g#N` | Recycle numbers Beginner. |
 | 18 | `numeric-derivation.md` | Advanced | **exists** | `ROOT l NUM` as the stage teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
 
 ## Leak index
@@ -350,17 +350,17 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 |------|----------------|
 | House names, SVO, omit **`yal`**, **`yol`/`yel`/`yul`**, vocative (`yalahen`) | `clause.md` Beginner |
 | Means / simile / exchange / proxy hosted pairs | `relations.md` Beginner |
-| **`darl`**, *because* **`thabem barl`**, `/x/` linker after `.` | `dependents.md` Beginner |
+| **`darl`**, *because* **`theram barl`**, `/x/` linker after `.` | `dependents.md` Beginner |
 | Named citation greeting (`azawan.`) | `word-endings.md` Beginner |
 | Conversation-length bid **`…xan` / `…xon` / `…xen` / `…xun`** on a citation or vocative | `x-compounds.md` Intermediate |
 | **`gl-`**, **`yam`/`yom`/`yem`/`yum`** as a *speech-act* system | `clause.md` Intermediate |
-| Locative relations; of-relations (`gobum` / `gaham` / `guwom` / `gagem`) | `relations.md` Intermediate |
-| Hosted *as-of* (`henum` / `humum`) | `relations.md` Advanced |
+| Locative relations; of-relations (`gabom` / `gaham` / `guwam` / `gagum`) | `relations.md` Intermediate |
+| Hosted *as-of* (`henem` / `humem`) | `relations.md` Advanced |
 | Remaining `/x/` linkers, nested **`barl`**, stand-in vowels | `dependents.md` Intermediate |
 | **-l** / **-m** / **-n** as a *choice* on a citation | `word-endings.md` Beginner |
-| Letter/full-root **-r** algorithm; **`ema`/`eha`/`oha`/`anu`** | `pronouns.md` Beginner |
+| Letter/full-root **-r** algorithm; **`amu`/`ohe`/`oha`/`onu`** | `pronouns.md` Beginner |
 | Associative **-x** | `plurality.md` Beginner |
-| **SAME** `gugol` | `predication.md` Beginner |
+| **SAME** `gogal` | `predication.md` Beginner |
 | Phrase joins, **`zal`/`zam`/`zel`**, negation **`u`** | `joins.md` Beginner |
 | Fill-ask join **-r** (`zar` / `var` / `xar`); polar **`yuel`/`yaol`** as the *system* | `questions.md` Beginner |
 | Extra-noun hook compounds (`owogalul`) | `hooks.md` Advanced |
@@ -368,7 +368,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Span brackets / `<>` | `spans.md` Beginner |
 | spelled counts / ordinals / `gral` (no shorthand) | `numbers.md` Beginner |
 | SHARED scale comparatives | `comparatives.md` Beginner |
-| Causal poles *if* / *only if* (`thowem` / `thorom`) | `causation.md` Beginner |
+| Causal poles *if* / *only if* (`thodom` / `thebom`) | `causation.md` Beginner |
 | **CAUSE** **`ege`** / **`thegem`** | `causation.md` Intermediate |
 | Value **`tha`/`thu`** on **interest** roots | `interests.md` Beginner |
 | Ability **`xa`/`xe`/`xo`/`xu`** on **non-need** hosts | `intention.md` Beginner |
@@ -383,7 +383,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | **DECISION** | `intention.md` Intermediate |
 | Emotion compose | `interests.md` Intermediate |
 | Numbered alternatives | `numbers-applied.md` Intermediate |
-| Judgment **Mine** **`zemun`** | `comparatives.md` Advanced |
+| Judgment **Mine** **`zomen`** | `comparatives.md` Advanced |
 | `ROOT l NUM` derivation | `numeric-derivation.md` Advanced |
 | Universality overlays | `knowing.md` Advanced |
 
@@ -399,7 +399,7 @@ For each spoiler token family:
 1. **Morph** tokens: **Introduces**, **Recycle**, or this stage’s examples. Content tokens: house names, published setting roots in **Roots used here**, or this stage’s examples. Else **fail**. Missing from the [example root bank](#root-bank) is **not** a fail for checkpoint content.
 2. Check [leak index](#leak-index) for **morphology**: first-taught later than this checkpoint → **fail**. Content roots are not leak-indexed.
 3. Same-slot sibling novelty not in **Sibling OK** → **fail**.
-4. English *I* / *you* as dummy people → **fail** (unless this stage teaches **`ema`/`eha`**). *I* written with the **`SELF`** slot is not a dummy.
+4. English *I* / *you* as dummy people → **fail** (unless this stage teaches **`amu`/`ohe`**). *I* written with the **`SELF`** slot is not a dummy.
 5. Most items test **this** stage’s decision, not a prior quiz → else rewrite.
 6. Missing morph in a translation item, or morph that only repeats loose English when it should have been omitted → **fail**.
 7. Unassigned cells from [unassigned-reserved.md](unassigned-reserved.md) → **fail**.

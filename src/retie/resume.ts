@@ -16,6 +16,13 @@ export type ResumeScope = {
   occurrences?: readonly StemOccurrence[];
   /** Where the resume sits in the page. */
   at?: number;
+  /**
+   * True when an **-r** word is a closed overlay (evidence-strength weak, hold, changeability)
+   * under the old spellings: only its root moves; it is not rebuilt as a resume.
+   */
+  isOverlay?: (word: MorphWord) => boolean;
+  /** The shape the classifier reads under the old spellings (a lateral the word grammar saw as an interest). */
+  reshape?: (word: MorphWord) => MorphWord;
 };
 
 export type StemOccurrence = { root: string; index: number };

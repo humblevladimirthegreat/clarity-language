@@ -127,7 +127,7 @@ A one-word manner with nothing to package is a plain adverb: `zazawan vowogal ha
 
 **For *because* / *if*, use:** [**`barl`**](dependents.md#dependent-clauses) dependents, not an aside.
 
-**Compare with:** a second name for the same person uses [identity](predication.md#identity) (`gugo` + `/b/`), not an aside.
+**Compare with:** a second name for the same person uses [identity](predication.md#identity) (`goga` + `/b/`), not an aside.
 
 ### Outer slot {#pos}
 
@@ -515,7 +515,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahaben* | `ahaben` |
 | *tell* | `vezebel` |
 | *see* | `vahahal` |
-| *attest* | `vodel` |
+| *attest* | `vodul` |
 | *lie* (verb) | `valahal` |
 | *lie* (noun) | `alahal` |
 | *scream* | `vezogel` |
@@ -539,7 +539,7 @@ z-Azawan | d-CITE.atomic[Azawan] | v-tell
 **2.** *Alahen said “Azawan attests.”* (spoken multi-token cite)
 
 ::: details Show answer
-`zalahen daxal zazawan vodel xuxul vezebel.`
+`zalahen daxal zazawan vodul xuxul vezebel.`
 
 z-Alahen | d-CITE.multi[z-Azawan | v-attest] | v-tell
 :::
@@ -592,12 +592,12 @@ z-Azawan | SCOPE[h-possibility | d-lie] | v-see
 [z-Alahen | SCOPE[z-Azawan | z-and] | z-and.open] | v-punch
 :::
 
-**9.** *The phrase “alahen vodel” is small.* (spoken multi-token mention)
+**9.** *The phrase “alahen vodul” is small.* (spoken multi-token mention)
 
 ::: details Show answer
-`zoxal alahen vodel xuxul gamazam.`
+`zoxal alahen vodul xuxul gamazam.`
 
-z-MENTION.multi["alahen" | "vodel"] | g-small
+z-MENTION.multi["alahen" | "vodul"] | g-small
 :::
 
 **10.** *Ahaben saw, as a possibility, the lie!* (strong feeling on that chunk)
@@ -619,7 +619,7 @@ z-Azawan | v-tell | d-CITE.clause[Azawan]
 *Azawan said “Azawan.”* (hello; the cite runs to the clause end, so the verb comes first)
 :::
 
-**2.** `zazawan daxam zazawan vodel xuxul vezebel.`
+**2.** `zazawan daxam zazawan vodul xuxul vezebel.`
 
 ::: details Show answer
 

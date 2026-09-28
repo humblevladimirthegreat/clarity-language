@@ -16,6 +16,7 @@ import {
   hookCompoundFromMorph,
 } from "./hook-compounds.js";
 import type { LexOverlay, LexReading, LexWord, MorphWord } from "./types.js";
+import { CLOSED } from "../closed-roots.js";
 
 function interestRootsFromOverlays(overlays: Iterable<OverlayRow>): Set<string> {
   const roots = new Set<string>();
@@ -126,7 +127,8 @@ function overlaySenseForm(word: MorphWord): string | null {
   return null;
 }
 
-function hasClosedOverlay(word: MorphWord, tables: ClassifyTables): boolean {
+/** True when the word is a closed overlay sense form for its PoS (`therar` TOLD.weak, not a resume). */
+export function hasClosedOverlay(word: MorphWord, tables: ClassifyTables): boolean {
   const senseForm = overlaySenseForm(word);
   return Boolean(senseForm && word.pos && tables.overlays.has(overlayKey(word.pos, senseForm)));
 }
@@ -441,7 +443,16 @@ function hostOverlay(word: MorphWord, tables: ClassifyTables): { hostOverlay?: L
 }
 
 /** Arrow-rose roots (roles.md#arrow-rose-compass-vs-face); `DIR th o` on these is a landmark lateral. */
-export const ARROW_ROOTS = new Set(["onova", "anove", "ezada", "azove", "azava", "azawe", "eweza", "onove"]);
+export const ARROW_ROOTS = new Set([
+  CLOSED.north,
+  CLOSED.northeast,
+  CLOSED.east,
+  CLOSED.southeast,
+  CLOSED.south,
+  CLOSED.southwest,
+  CLOSED.west,
+  CLOSED.northwest,
+]);
 
 /** `DIR th o` parses as an interest shape; on an arrow root it is the landmark's own facing. */
 function landmarkLateral(word: MorphWord): MorphWord | undefined {
@@ -470,6 +481,14 @@ function tailLateral(word: MorphWord, tables: ClassifyTables): MorphWord | undef
   if (family.leftRoots.length !== 1) return undefined;
   const anchor = `${family.stanceVowel}${family.horizon}${family.locus}`;
   return { ...word, family: { kind: "x", xFamily: "lateral", leftRoots: family.leftRoots, rightRoots: [anchor] } };
+}
+
+/**
+ * The word shape `classify` reads, before lexicon lookup: a lateral, landmark lateral or label scope
+ * where the word grammar alone saw an interest shape (`gewezatheman` = *west* `th` *speaker*).
+ */
+export function classifiedShape(word: MorphWord, tables: ClassifyTables): MorphWord {
+  return tailLateral(word, tables) ?? landmarkLateral(word) ?? labelScope(word, tables) ?? word;
 }
 
 export function classify(word: MorphWord, tables: ClassifyTables): LexWord {

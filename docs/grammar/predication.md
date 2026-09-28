@@ -74,15 +74,15 @@ An object (`/d/`) needs a verb, so a noun plus a `/d/` word with no verb is not 
 
 When two names pick out **the same person or thing** (*Alahen is Azawan*), you are not putting Alahen in a kind. You are saying the two labels match: they are one individual.
 
-Write a special adjective `gugol` after the first name, then an extra noun (`/b/`) for the other label. Keep `gugol` and that `/b/` word **next to each other**. That pair is **identity**. The adjective’s English name is **`SAME`**; its root is **`ugo`**. (cue: 🪙 *coin*: two faces, one substance)
+Write a special adjective `gogal` after the first name, then an extra noun (`/b/`) for the other label. Keep `gogal` and that `/b/` word **next to each other**. That pair is **identity**. The adjective’s English name is **`SAME`**; its root is **`oga`**. (cue: 🪙 *coin*: two faces, one substance)
 
-> `zalahen gugol bazawan.`
+> `zalahen gogal bazawan.`
 >
 > z-Alahen | [g-SAME | b-Azawan]
 >
 > "Alahen is (the same person as) Azawan."
 
-> `zagadul gugol bazawan.`
+> `zagadul gogal bazawan.`
 >
 > z-guard | [g-SAME | b-Azawan]
 >
@@ -111,7 +111,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *red* | `eredal` |
 | *Japanese* | `ahebam` |
 | *challenge* | `amadam` |
-| **SAME** | `ugol` |
+| **SAME** | `ogal` |
 | *walk* | `vowogal` |
 | *run* | `varahal` |
 
@@ -160,7 +160,7 @@ z-Alahen | g-police
 **6.** *The guard is Azawan.*
 
 ::: details Show answer
-`zagadul gugol bazawan.`
+`zagadul gogal bazawan.`
 
 z-guard | [g-SAME | b-Azawan]
 :::
@@ -168,7 +168,7 @@ z-guard | [g-SAME | b-Azawan]
 **7.** *The police officer is Ahaben.*
 
 ::: details Show answer
-`zabazal gugol bahaben.`
+`zabazal gogal bahaben.`
 
 z-police | [g-SAME | b-Ahaben]
 :::
@@ -176,7 +176,7 @@ z-police | [g-SAME | b-Ahaben]
 **8.** *Alahen is Azawan.*
 
 ::: details Show answer
-`zalahen gugol bazawan.`
+`zalahen gogal bazawan.`
 
 z-Alahen | [g-SAME | b-Azawan]
 :::
@@ -210,7 +210,7 @@ z-page | g-red
 *The page is red.*
 :::
 
-**4.** `zagadul gugol balahen.`
+**4.** `zagadul gogal balahen.`
 
 ::: details Show answer
 
@@ -219,7 +219,7 @@ z-guard | [g-SAME | b-Alahen]
 *The guard is Alahen.*
 :::
 
-**5.** `zabazal gugol bazawan.`
+**5.** `zabazal gogal bazawan.`
 
 ::: details Show answer
 
@@ -237,7 +237,7 @@ z-guard | v-run
 *A guard runs.*
 :::
 
-**7.** `yol zalahen gugol bahaben.`
+**7.** `yol zalahen gogal bahaben.`
 
 ::: details Show answer
 
@@ -246,7 +246,7 @@ y-question | z-Alahen | [g-SAME | b-Ahaben]
 *Is Alahen Ahaben?*
 :::
 
-**8.** `zahaben gugol bazawan.`
+**8.** `zahaben gogal bazawan.`
 
 ::: details Show answer
 
@@ -285,9 +285,9 @@ You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra c
 
 ### Different from {#different}
 
-For *unlike* / *different from*, use the [similative](relations.md#similative) **`gemum`** with the model in `/b/`, then close it with a negating join **`gul`**. The match to the model is denied.
+For *unlike* / *different from*, use the [similative](relations.md#similative) **`gomem`** with the model in `/b/`, then close it with a negating join **`gul`**. The match to the model is denied.
 
-> `zazawan gemum balahen gul.`
+> `zazawan gomem balahen gul.`
 >
 > z-Azawan | [[g-like | b-Alahen] | g-not]
 >
@@ -295,7 +295,7 @@ For *unlike* / *different from*, use the [similative](relations.md#similative) *
 
 ### **SAME** endings
 
-Beginner already used closed **`gugol`** (*is the same as*). The other endings on that same adjective finish the map.
+Beginner already used closed **`gogal`** (*is the same as*). The other endings on that same adjective finish the map.
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -304,12 +304,12 @@ Beginner already used closed **`gugol`** (*is the same as*). The other endings o
 
 | Agalan | English |
 |---------|---------|
-| `zalahen gugol bazawan` | *Alahen is (the same as) Azawan* |
-| `zalahen gugom bazawan` | *Alahen is basically Azawan* |
-| `zalahen gugol bazawan gul` | *Alahen is not (identical to) Azawan* |
-| `zebezal gugol bazawan` | inside a noun phrase: *the person who is Azawan* |
+| `zalahen gogal bazawan` | *Alahen is (the same as) Azawan* |
+| `zalahen gogam bazawan` | *Alahen is basically Azawan* |
+| `zalahen gogal bazawan gul` | *Alahen is not (identical to) Azawan* |
+| `zebezal gogal bazawan` | inside a noun phrase: *the person who is Azawan* |
 
-**Compare with:** ordinary *coin* as a noun is `zugol`. Identity is **`gugol`** / **`gugom`** plus a following `/b/` label, kept next to each other.
+**Compare with:** ordinary *coin* as a noun is `zogal`. Identity is **`gogal`** / **`gogam`** plus a following `/b/` label, kept next to each other.
 
 ### Label scope {#label-scope}
 
@@ -395,12 +395,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
 | *guard* | `agadul` |
-| *craft* | `agugal` |
+| *craft* | `ageval` |
 | *person* | `ebezal` |
 | *frame* | `evevol` |
 | *palette* | `abudol` |
 | *red* | `eredal` |
-| **SAME** | `ugol` |
+| **SAME** | `ogal` |
 | *see* | `vahahal` |
 | *angry* | `anegel` |
 | *anxious* | `anagol` |
@@ -420,7 +420,7 @@ z-Azawan | [g-guard | g-not]
 **2.** *Alahen is the craft type.*
 
 ::: details Show answer
-`zalahen gagugal hual.`
+`zalahen gageval hual.`
 
 [z-Alahen | g-craft] | h-always
 :::
@@ -428,7 +428,7 @@ z-Azawan | [g-guard | g-not]
 **3.** *The guard is Azawan.*
 
 ::: details Show answer
-`zagadul gugol bazawan.`
+`zagadul gogal bazawan.`
 
 z-guard | [g-SAME | b-Azawan]
 :::
@@ -436,7 +436,7 @@ z-guard | [g-SAME | b-Azawan]
 **4.** *Alahen is basically Azawan.*
 
 ::: details Show answer
-`zalahen gugom bazawan.`
+`zalahen gogam bazawan.`
 
 z-Alahen | [g-same | b-Azawan]
 :::
@@ -444,7 +444,7 @@ z-Alahen | [g-same | b-Azawan]
 **5.** *The person who is Ahaben sees a palette.*
 
 ::: details Show answer
-`zebezal gugol bahaben dabudol vahahal.`
+`zebezal gogal bahaben dabudol vahahal.`
 
 [z-person | [g-SAME | b-Ahaben]] | d-palette | v-see
 :::
@@ -452,7 +452,7 @@ z-Alahen | [g-same | b-Azawan]
 **6.** *The guard is basically Ahaben.*
 
 ::: details Show answer
-`zagadul gugom bahaben.`
+`zagadul gogam bahaben.`
 
 z-guard | [g-same | b-Ahaben]
 :::
@@ -460,7 +460,7 @@ z-guard | [g-same | b-Ahaben]
 **7.** *The person who is Azawan sees a frame.*
 
 ::: details Show answer
-`zebezal gugol bazawan devevol vahahal.`
+`zebezal gogal bazawan devevol vahahal.`
 
 [z-person | [g-SAME | b-Azawan]] | d-frame | v-see
 :::
@@ -468,7 +468,7 @@ z-guard | [g-same | b-Ahaben]
 **8.** *The guard is not (identical to) Ahaben.*
 
 ::: details Show answer
-`zagadul gugol bahaben gul.`
+`zagadul gogal bahaben gul.`
 
 z-guard | [[g-SAME | b-Ahaben] | g-not]
 :::
@@ -516,7 +516,7 @@ z-Ahaben | [g-guard | g-not]
 *Ahaben is not a guard.*
 :::
 
-**2.** `zazawan gagugal hual.`
+**2.** `zazawan gageval hual.`
 
 ::: details Show answer
 
@@ -525,7 +525,7 @@ z-Ahaben | [g-guard | g-not]
 *Azawan is the craft type.*
 :::
 
-**3.** `zagadul gugom bazawan.`
+**3.** `zagadul gogam bazawan.`
 
 ::: details Show answer
 
@@ -534,7 +534,7 @@ z-guard | [g-same | b-Azawan]
 *The guard is basically Azawan.*
 :::
 
-**4.** `zebezal gugol bazawan dabudol vahahal.`
+**4.** `zebezal gogal bazawan dabudol vahahal.`
 
 ::: details Show answer
 
@@ -543,7 +543,7 @@ z-guard | [g-same | b-Azawan]
 *The person who is Azawan sees a palette.*
 :::
 
-**5.** `zalahen gugol bahaben gul.`
+**5.** `zalahen gogal bahaben gul.`
 
 ::: details Show answer
 
@@ -570,7 +570,7 @@ z-frame | g-red
 *The frame is red.*
 :::
 
-**8.** `zalahen gagugal gul.`
+**8.** `zalahen gageval gul.`
 
 ::: details Show answer
 

@@ -8,7 +8,7 @@ Prefer commas, colons, parentheses, or separate sentences over em dashes.
 
 ## Voice and length
 
-- Address the learner in second person (“use **-r** when…”, “prefer names when…”). That *you* is English pedagogy — not Agalan **`eha`**.
+- Address the learner in second person (“use **-r** when…”, “prefer names when…”). That *you* is English pedagogy — not Agalan **`ohe`**.
 - Teaching stages do not use maintainer *we* (“we now write…”) or author *I*. Author *I* is allowed only on signed non-teaching prose in this folder (acknowledgments; the purpose / limits essay), not on rule pages.
 - One idea per H2/H3. On a **new job**, the first paragraph should be one **complete** explanation: English job, Agalan shape, and what that lets the learner do ([explain before you slogan](#explain-before-you-slogan)). That is the same bar as the [easy-to-use feature criterion](../grammar/why-agelan.md#criterion-for-features) (roughly one paragraph plus a couple of examples), not a one-sentence aphorism. A later-stage H3 that only finishes a series may be a short pointer plus a table ([later-stage shape](grammar-docs.md#later-stage-shape)).
 - Prefer short paragraphs plus a table over a wall of prose.

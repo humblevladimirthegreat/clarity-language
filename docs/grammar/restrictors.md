@@ -315,7 +315,7 @@ z-Alahen | v-swim | h-rain | h-always-except
 
 English *when* / *if* can name a **following sentence** (*if Azawan walks*). Write that as a pole word plus extra noun: `/h/` (*when*) or `/th/` (*if*) plus `/b/` [**`barl`**](dependents.md#dependent-clauses). The main sentence stops after **`barl`**; the next sentence is the content. Restrictors still list **phrase** times or cases immediately before the restrictor. Use a restrictor when the occasions are words in the adverb slot; use **`barl`** when the occasion is another full clause.
 
-> `zahaben vezehel thowem barl zazawan vowogal.`
+> `zahaben vezehel thodom barl zazawan vowogal.`
 >
 > z-Ahaben | v-sing | [th-if | b-that-clause] | z-Azawan | v-walk
 >
@@ -336,7 +336,7 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 >
 > "Azawan walks either when raining or at night (not both)."
 
-> `zalahen vezebal herehel huzul haol.`
+> `zalahen vezebal herehel hozezol haol.`
 >
 > z-Alahen | v-sleep | h-rain | h-snow | h-when-any-of
 >
@@ -405,7 +405,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *run* | `varahal` | |
 | *happy* | `azaham` | `azahal` *smile* |
 | *rain* | `erehel` | |
-| *snow* | `uzul` | |
+| *snow* | `ozezol` | |
 | *night* | `anadal` | |
 | *fog* | `avegal` | |
 | *ice* | `azahul` | |
@@ -426,7 +426,7 @@ z-Azawan | v-climb | h-rain | h-night | h-when-one
 **2.** *Alahen runs when raining and/or when snowing.*
 
 ::: details Show answer
-`zalahen varahal herehel huzul haol.`
+`zalahen varahal herehel hozezol haol.`
 
 z-Alahen | v-run | h-rain | h-snow | h-when-any-of
 :::
@@ -442,7 +442,7 @@ z-Ahaben | v-climb | h-fog | h-not-when
 **4.** *Azawan climbs anytime except when snowing.*
 
 ::: details Show answer
-`zazawan vagawol huzul huol.`
+`zazawan vagawol hozezol huol.`
 
 z-Azawan | v-climb | h-snow | h-anytime-except
 :::
@@ -450,7 +450,7 @@ z-Azawan | v-climb | h-snow | h-anytime-except
 **5.** *Azawan climbs preferably when raining rather than when snowing.*
 
 ::: details Show answer
-`zazawan vagawol herehel huzul hel.`
+`zazawan vagawol herehel hozezol hel.`
 
 z-Azawan | v-climb | h-rain | h-snow | h-when-ranked
 :::
@@ -474,7 +474,7 @@ z-Azawan | [w-rain | w-night | w-when-one | g-happy]
 **8.** *Ahaben screams if Alahen falls.*
 
 ::: details Show answer
-`zahaben vezogel thowem barl zalahen vadahel.`
+`zahaben vezogel thodom barl zalahen vadahel.`
 
 z-Ahaben | v-scream | [th-if | b-that-clause] | z-Alahen | v-fall
 :::
@@ -490,7 +490,7 @@ z-Alahen | v-climb | h-rain | h-night | h-when-one.open
 *Alahen climbs either when raining or at night, or never.*
 :::
 
-**2.** `zalahen vagawol herehel huzul hael.`
+**2.** `zalahen vagawol herehel hozezol hael.`
 
 ::: details Show answer
 
@@ -508,7 +508,7 @@ z-Azawan | v-climb | h-ice | h-only-when
 *Azawan climbs only when there is ice.*
 :::
 
-**4.** `zalahen varahal herehel huzul har.`
+**4.** `zalahen varahal herehel hozezol har.`
 
 ::: details Show answer
 
@@ -535,7 +535,7 @@ z-Ahaben | v-climb | h-fog | h-not-when
 *Ahaben does not climb when there is fog.*
 :::
 
-**7.** `zazawan vezogel thowem barl zalahen vadahel.`
+**7.** `zazawan vezogel thodom barl zalahen vadahel.`
 
 ::: details Show answer
 

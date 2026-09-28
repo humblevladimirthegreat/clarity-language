@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import { withBase } from 'vitepress'
-import type { LearnerNameOption } from '@learner-name'
+import { DEFAULT_SELF_ROOT, type LearnerNameOption } from '@learner-name'
 import { useLearnerName } from '../composables/useLearnerName'
 
 /** Suggest a published root as the learner's Agalan name, or show the one they chose. */
@@ -16,6 +16,7 @@ const shown = new Set<string>()
 const current = computed(() => history.value[at.value] ?? null)
 const chosenOption = computed(() => eligible.value.find((option) => option.root === chosen.value) ?? null)
 const lexiconHref = withBase('/lexicon.html')
+const defaultName = `${DEFAULT_SELF_ROOT}n`
 
 function another(): void {
   if (at.value < history.value.length - 1) {
@@ -93,7 +94,7 @@ onMounted(async () => {
       </div>
       <p class="note">
         Or <a :href="lexiconHref">pick your own in the lexicon</a> (<strong>Use as my name</strong> on a row).
-        Until you choose, examples marked as yours use <code>eman</code>, the word for whoever is speaking.
+        Until you choose, examples marked as yours use <code>{{ defaultName }}</code>, the word for whoever is speaking.
       </p>
     </template>
   </div>

@@ -86,7 +86,7 @@ The adverb describes the walking. The stance word describes your claim about it.
 
 **Hosted: completing a relation.** Some words name a relation that needs another person or thing (*like …*). Put that word in `/ɡ/`, `/h/`, or `/th/`, then put the other noun in `/b/` right after it. That relation word is the `/b/` word’s **host**: a `/b/` right after a `/ɡ/`, `/h/`, or `/th/` word always completes that word. (cue: 🪞 *mirror*: the image is *like* the model.)
 
-> `hemum bazawan`
+> `homem bazawan`
 >
 > [h-like | b-Azawan]
 >
@@ -94,13 +94,13 @@ The adverb describes the walking. The stance word describes your claim about it.
 
 A `/w/` word still goes before the host, so the host and its `/b/` stay side by side.
 
-> `welavam hemum bazawan`
+> `welavam homem bazawan`
 >
 > [[w-very | h-like] | b-Azawan]
 >
 > "very like Azawan"
 
-> `zodogal vezebal hemum bazawan.`
+> `zodogal vezebal homem bazawan.`
 >
 > z-dog | v-sleep | [h-like | b-Azawan]
 >
@@ -114,7 +114,7 @@ A `/w/` word still goes before the host, so the host and its `/b/` stay side by 
 >
 > "Azawan tells Alahen."
 
-**Compare with:** `hemum balahen` is *like Alahen*, because a `/b/` right after `/h/` completes it. To add a person who receives, keep that `/b/` word away from a `/ɡ/`, `/h/`, or `/th/` word: `balahen hadehom`, or after a finished pair (`hemum bazawan balahen`).
+**Compare with:** `homem balahen` is *like Alahen*, because a `/b/` right after `/h/` completes it. To add a person who receives, keep that `/b/` word away from a `/ɡ/`, `/h/`, or `/th/` word: `balahen hadehom`, or after a finished pair (`homem bazawan balahen`).
 
 ### Role letters {#role-letters}
 
@@ -144,7 +144,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Alahen* | `alahen` | | |
 | *Ahaben* | `ahaben` | | |
 | *bank* | `abagul` | | |
-| *money* | `omol` | | |
+| *money* | `amol` | | |
 | *angry* | `anegel` | | |
 | *happy* | `gazaham` | `azahal` *smile* | 😊: the face of *happy* |
 | *sit* | `vehahel` | `ehahel` *chair* | 🪑: taking a seat |
@@ -155,7 +155,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sneak* | `vezevul` | `ezevul` *sneak* | 🥷: moving unseen |
 | *doubt* | `thevegam` | `evegal` *think* | 🤔: thinking it over shows doubt |
 | *haste* | `hadehom` | `adehol` *dash* | 💨: a burst of speed |
-| *like* | `hemum` | `emul` *mirror* | 🪞: the image is of the model |
+| *like* | `homem` | `omel` *mirror* | 🪞: the image is of the model |
 
 #### English → Agalan {#beginner-english-to-agalan}
 
@@ -227,7 +227,7 @@ z-Azawan | d-Ahaben | v-see
 *Azawan sees Ahaben.*
 :::
 
-**3.** `zahaben gazaham domol vahahal.`
+**3.** `zahaben gazaham damol vahahal.`
 
 ::: details Show answer
 
@@ -236,7 +236,7 @@ z-Azawan | d-Ahaben | v-see
 *Happy Ahaben sees money.*
 :::
 
-**4.** `zalahen vezevul hemum bazawan.`
+**4.** `zalahen vezevul homem bazawan.`
 
 ::: details Show answer
 
@@ -275,15 +275,15 @@ English *as for X* or *regarding X* names who or what the sentence is about, eve
 
 ### Complex chaining {#complex-chaining}
 
-A relation adjective with its hosted `/b/` (*the same as Azawan*, **`gugol`** + `/b/`) works as one unit after a noun. You can keep chaining: a plain adjective after that pair describes the **extra noun**, not the first noun, and a `/w/` word that grades the relation sits immediately before the `/ɡ/` word. (cue: 🪙 *coin*: two faces of one thing.)
+A relation adjective with its hosted `/b/` (*the same as Azawan*, **`gogal`** + `/b/`) works as one unit after a noun. You can keep chaining: a plain adjective after that pair describes the **extra noun**, not the first noun, and a `/w/` word that grades the relation sits immediately before the `/ɡ/` word. (cue: 🪙 *coin*: two faces of one thing.)
 
-> `zodogal welavam gugol bazawan.`
+> `zodogal welavam gogal bazawan.`
 >
 > z-dog | [[w-very | g-SAME] | b-Azawan]
 >
 > "a dog the very same as Azawan"
 
-> `zodogal gugol bazawan gubuhal.`
+> `zodogal gogal bazawan gubuhal.`
 >
 > z-dog | [g-SAME | [b-Azawan | g-blue]]
 >
@@ -291,7 +291,7 @@ A relation adjective with its hosted `/b/` (*the same as Azawan*, **`gugol`** + 
 
 Because a second relation after the pair would attach to the extra noun, you cannot put two relation adjectives **after** the same first noun. To keep both on that noun in one clause, put one [before the noun](#left-bound-adjectives) with **`gl-`**; its `/b/` still follows it. Otherwise use [another sentence](dependents.md#which-noun).
 
-> `glugol bazawan zodogal gugol balahen.`
+> `glogal bazawan zodogal gogal balahen.`
 >
 > [[gl-SAME | b-Azawan] | z-dog] | [g-SAME | b-Alahen]
 >
@@ -308,7 +308,7 @@ Beginner used **`welavam`** *very* before an adjective. The same `/w/` slot take
 | Agalan | English | Cue |
 |--------|---------|-----|
 | `welavam` | *very* | 🐘: big, as a degree |
-| `wohul` | *extremely* / *overwhelmingly* | 🌊: an ocean of it |
+| `wohahal` | *extremely* / *overwhelmingly* | 🌊: an ocean of it |
 | `wamazam` | *slightly* / *a bit* | 🐁: small, as a degree |
 | `wadeham` | *quite* / *fairly* | 🔉: medium volume, not loud or soft |
 
@@ -318,7 +318,7 @@ Beginner used **`welavam`** *very* before an adjective. The same `/w/` slot take
 >
 > "A dog walks very hastily."
 
-> `zodogal wohul gubuhal vowogal.`
+> `zodogal wohahal gubuhal vowogal.`
 >
 > [z-dog | [w-ocean | g-blue]] | v-walk
 >
@@ -346,7 +346,7 @@ English uses the passive (*The cat was seen*, *Mistakes were made*) to avoid nam
 >
 > "Azawan was seen."
 
-**Compare with:** [`zanun`](pronouns.md#special-pronouns) *someone* says that somebody did it, without saying who. With no subject at all, the sentence does not mention a doer.
+**Compare with:** [`zonun`](pronouns.md#special-pronouns) *someone* says that somebody did it, without saying who. With no subject at all, the sentence does not mention a doer.
 
 ### Translation practice {#intermediate-translation-practice}
 
@@ -364,7 +364,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *ticket* | `edegal` |
 | *blue* | `ubuhal` |
 | *red* | `eredal` |
-| *same* | `gugol` |
+| *same* | `gogal` |
 | *sit* | `vehahel` |
 | *stand* | `vazadol` |
 | *see* | `vahahal` |
@@ -386,7 +386,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **2.** *Azawan the same as blue Ahaben stands.*
 
 ::: details Show answer
-`zazawan gugol bahaben gubuhal vazadol.`
+`zazawan gogal bahaben gubuhal vazadol.`
 
 [z-Azawan | [g-SAME | [b-Ahaben | g-blue]]] | v-stand
 :::
@@ -442,7 +442,7 @@ d-Azawan | v-see
 *A blue train stands.*
 :::
 
-**2.** `zahaben gugol balahen geredal vazadol.`
+**2.** `zahaben gogal balahen geredal vazadol.`
 
 ::: details Show answer
 
@@ -460,7 +460,7 @@ d-ticket | v-see
 *A ticket was seen.*
 :::
 
-**4.** `zodogal welavam hemum bazawan vezebal.`
+**4.** `zodogal welavam homem bazawan vezebal.`
 
 ::: details Show answer
 

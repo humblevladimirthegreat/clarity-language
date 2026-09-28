@@ -17,13 +17,13 @@ Checked against the parser and written up with a doc basis for each form in the 
 - `zual gagadalx`
 - `zel gelavam h+2`, `zel h+ vowogal`
 - clauses with no verb (`zodogal.`, `zalahen dagadal.`, `zodogal om babagul.`) — existential vs gapping readings would compete
-- `hezadam barl`, `thezem barl`, `hezem thowem barl`
-- `thowem burl` (docs say only `hagom` takes `burl`)
-- `xezel` mid-clause (taught only after a period)
+- `hezadam barl`, `thazem barl`, `hazem thodom barl`
+- `thodom burl` (docs say only `hagom` takes `burl`)
+- `xazel` mid-clause (taught only after a period)
 - **-r** with no earlier word to point back to (`hogaber`)
 - `g+r` (glosses as *more than one*)
 - bare `yol.`, bare `yom.`, `yelaval`
-- values on `/y/` (`yunetham`), `thebewum`, `gogem`, `habedum`
+- values on `/y/` (`yonatham`), `thebewum`, `gegam`, `habedum`
 
 **Performance:** `npm run parse` takes about 30 s per call. Agents batch-checked via a script importing `src/parse/index.js`.
 

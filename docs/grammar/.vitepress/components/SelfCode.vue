@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 import { useLearnerName } from '../composables/useLearnerName'
 
-/** Agalan text with `SELF` slots: the learner's name, or `eman` until one is chosen. */
+/** Agalan text with `SELF` slots: the learner's name, or the speaker special until one is chosen. */
 const props = withDefaults(defineProps<{ text: string; bare?: boolean }>(), { bare: false })
 
 const { root, chosen, openHelper } = useLearnerName()

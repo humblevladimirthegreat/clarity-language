@@ -227,7 +227,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Ahaben* | `ahaben` | |
 | *umbrella* | `amebel` | |
 | *coat* | `ogodul` | |
-| *key* | `egehol` | |
+| *key* | `egehul` | |
 | *purse* | `abezal` | |
 | *write* | `varadal` | |
 | *see* | `vahahal` | `ahahal` *eye* |
@@ -304,7 +304,7 @@ y-sure
 
 #### Agalan → English {#beginner-agalan-to-english}
 
-**1.** `yom zahaben vahahal degehol.`
+**1.** `yom zahaben vahahal degehul.`
 
 ::: details Show answer
 
@@ -524,9 +524,9 @@ Answer with the hook and the landmark, as a [citation](word-endings.md#citation-
 
 ### How? {#how}
 
-*How?* works like *where?*: keep the word that says how the answer relates to the event, and put the blank **`bar`** after it. For manner (*in what way?*), use the similative [**`hemum`**](relations.md) *like*.
+*How?* works like *where?*: keep the word that says how the answer relates to the event, and put the blank **`bar`** after it. For manner (*in what way?*), use the similative [**`homem`**](relations.md) *like*.
 
-> `yol zazawan vowogal hemum bar.`
+> `yol zazawan vowogal homem bar.`
 >
 > y-question | z-Azawan | v-walk | h-like | b-who
 >
@@ -538,7 +538,7 @@ Answer with the hook and the landmark, as a [citation](word-endings.md#citation-
 
 *Why?* uses a [condition word](causation.md) with the blank **`bar`**. Pick the word for the kind of reason you want.
 
-> `yol zazawan vowogal thabem bar.`
+> `yol zazawan vowogal theram bar.`
 >
 > y-question | z-Azawan | v-walk | th-because | b-who
 >
@@ -552,15 +552,15 @@ Answer with the hook and the landmark, as a [citation](word-endings.md#citation-
 
 | Agalan | English |
 |--------|---------|
-| **`thabem bar`** | *Why?* (*because of what?*) |
+| **`theram bar`** | *Why?* (*because of what?*) |
 | **`hagom bar`** | *What for?* (*for what purpose?*) |
-| **`thowem bar`** | *Under what condition?* / *In what case?* |
+| **`thodom bar`** | *Under what condition?* / *In what case?* |
 
 ### Echo questions {#echo}
 
 An echo question repeats what someone just said, because you doubt it or did not catch it (*You saw WHAT?*). Repeat the sentence under **`yol`**. Put the doubting [tone mark](speech-moves.md#tone-marks) **`?!`** on the blank or on the word you doubt.
 
-> `yol zehan vahahal ?!dar.`
+> `yol zohen vahahal ?!dar.`
 >
 > y-question | z-listener | v-see | ?!d-who
 >
@@ -616,11 +616,11 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
-| *key* | `egehol` | |
+| *key* | `egehul` | |
 | *phone* | `ovavol` | |
 | *sit* | `vehahel` | `ehahel` *chair* |
 | *tell* | `vezebel` | `ezebel` *speech* |
-| *attest* | `vodel` | |
+| *attest* | `vodul` | |
 | *lie* | `valahal` | |
 | *punch* | `vabahel` | |
 
@@ -646,7 +646,7 @@ y-question | z-Ahaben | v-sit | h-when
 **3.** *Which key?* (one unknown)
 
 ::: details Show answer
-`yol zegehol zar.`
+`yol zegehul zar.`
 
 y-question | [z-key | z-who]
 :::
@@ -693,7 +693,7 @@ y-question | z-Alahen | v-sleep | h-when
 
 #### Agalan → English {#intermediate-agalan-to-english}
 
-**1.** `yael vodel vul.`
+**1.** `yael vodul vul.`
 
 ::: details Show answer
 

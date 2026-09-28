@@ -53,7 +53,7 @@ English *whether* is that same object slot, with vowel **`o`**: **`dorl`**. The 
 
 The pole's role letter follows the clause page. *Because*, *if*, *only if*, and *if and only if* are your [stance](clause.md#stance-th) on why the claim holds, so they take `/th/`. *Although*, *while*, *until*, *before*, *after*, and *so that* place the event, so they stay adverbs on `/h/`.
 
-> `zazawan vezehel thabem barl zalahen vowogal.`
+> `zazawan vezehel theram barl zalahen vowogal.`
 >
 > z-Azawan | v-sing | [th-because | b-that-clause] | z-Alahen | v-walk
 >
@@ -65,42 +65,42 @@ You can also say:
 
 | Agalan | English | Same root as | Cue |
 |--------|---------|--------------|-----|
-| **`thabem barl`** | *because* | `abel` *brick* | 🧱: the cause is what the result sits on |
-| **`thowem barl`** | *if* | `owel` *door* | 🚪: walk through only if it opens |
-| **`thorom barl`** | *only if* | `orol` *paper-roll* | 🧻: without it the situation does not run |
-| **`thedom barl`** | *if and only if* | `edol` *east-west* | ↔️: each side only with the other |
-| **`hezem barl`** | *although* / *even though* | `ezel` *zebra* | 🦓: two stripes, still one animal |
-| **`hahem barl`** | *while* (at the same time) | `ahel` *gemini* | ♊: two things at once |
+| **`theram barl`** | *because* | `eral` *brick* | 🧱: the cause is what the result sits on |
+| **`thodom barl`** | *if* | `odol` *door* | 🚪: walk through only if it opens |
+| **`thebom barl`** | *only if* | `ebol` *paper-roll* | 🧻: without it the situation does not run |
+| **`thewum barl`** | *if and only if* | `ewul` *east-west* | ↔️: each side only with the other |
+| **`hazem barl`** | *although* / *even though* | `azel` *zebra* | 🦓: two stripes, still one animal |
+| **`hehum barl`** | *while* (at the same time) | `ehul` *gemini* | ♊: two things at once |
 | **`hodam barl`** | *until* | `odal` *timer* | ⏲️: stop when it rings |
 | **`habum barl`** | *before* | `abul` *backpack* | 🎒: packed first |
-| **`helam barl`** | *after* | `elal` *hourglass* | ⌛: sand already through |
+| **`hulam barl`** | *after* | `ulal` *hourglass* | ⌛: sand already through |
 | **`hagom barl`** | *so that* / *in order to* | `agol` *goal* | 🥅: you act so the shot counts |
 
-When English puts a **noun** after *despite* (*despite Alahen*), keep the same **`hezem`** pole and put that noun in `/b/` instead of **`barl`**. The obstacle is given, as with *although*. Do not write a second concession word. The *although* pole sits on `/h/` (or `/ɡ/` on a noun), never on `/th/`. On a noun host the same pole is **`gezem`**. (cue: 🦓 *zebra*: two stripes, still one animal)
+When English puts a **noun** after *despite* (*despite Alahen*), keep the same **`hazem`** pole and put that noun in `/b/` instead of **`barl`**. The obstacle is given, as with *although*. Do not write a second concession word. The *although* pole sits on `/h/` (or `/ɡ/` on a noun), never on `/th/`. On a noun host the same pole is **`gazem`**. (cue: 🦓 *zebra*: two stripes, still one animal)
 
-> `zazawan vowogal hezem balahen.`
+> `zazawan vowogal hazem balahen.`
 >
 > z-Azawan | v-walk | [h-although | b-Alahen]
 >
 > "Azawan walks despite Alahen."
 
-Ordinary `zezel` is still *a zebra*.
+Ordinary `zazel` is still *a zebra*.
 
-The time poles take a noun the same way. Put the event or period in `/b/` right after **`hahem`** *during*, **`habum`** *before*, **`helam`** *after*, or **`hodam`** *until*.
+The time poles take a noun the same way. Put the event or period in `/b/` right after **`hehum`** *during*, **`habum`** *before*, **`hulam`** *after*, or **`hodam`** *until*.
 
-> `zazawan vowogal hahem bavodel.`
+> `zazawan vowogal hehum bavodel.`
 >
 > z-Azawan | v-walk | [h-while | b-thunderstorm]
 >
 > "Azawan walks during the thunderstorm."
 
-> `zazawan vehahel helam bavodel.`
+> `zazawan vehahel hulam bavodel.`
 >
 > z-Azawan | v-sit | [h-after | b-thunderstorm]
 >
 > "Azawan sits after the thunderstorm."
 
-For *since* (from a starting point up to now), see [the *from* hook on a time](hooks.md#since). *Since* meaning *because* is **`thabem barl`**.
+For *since* (from a starting point up to now), see [the *from* hook on a time](hooks.md#since). *Since* meaning *because* is **`theram barl`**.
 
 <a id="so-that"></a>
 <a id="event-purpose"></a>
@@ -123,7 +123,7 @@ When English *to* drops the sitter, keep inner `/z/`:
 
 Ordinary `zagol` is still *a goal* (the net).
 
-**Compare with:** *although Alahen walks* is **`hezem barl`** plus the next sentence. Discourse *however* and *therefore* are sentence linkers after a finished claim ([continue](#continue-x)), not *although* or *so that*. *Whether Alahen walks* is **`dorl`**, not **`thowem`** (*if* is a condition, not polar ignorance). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. Acting *for relatedness* is a [interest motive](interests.md#interest-preference) on the interest, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange). *Works for a money-bag* (something you want to get) is an extra-noun [hook](hooks.md#extra-noun); use **`hagom`** when *for* names a result you aim at (*practices for a race*). 
+**Compare with:** *although Alahen walks* is **`hazem barl`** plus the next sentence. Discourse *however* and *therefore* are sentence linkers after a finished claim ([continue](#continue-x)), not *although* or *so that*. *Whether Alahen walks* is **`dorl`**, not **`thodom`** (*if* is a condition, not polar ignorance). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. Acting *for relatedness* is a [interest motive](interests.md#interest-preference) on the interest, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange). *Works for a money-bag* (something you want to get) is an extra-noun [hook](hooks.md#extra-noun); use **`hagom`** when *for* names a result you aim at (*practices for a race*). 
 
 The verb has no past or future letter. *Before* / *after* / *while* / *until* place this event relative to the next sentence. Leftover **result** and **former climate** are standing moods, not time ([RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate)).
 
@@ -170,8 +170,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *fight* | `vavadal` | | |
 | *run* | `varahal` | `arahal` *run* | 🏃: leaving at speed |
 | *that-clause* | `darl` | | |
-| *because* | `thabem` | `abel` *brick* | 🧱: the cause is what the result sits on |
-| *although* | `hezem` | `ezel` *zebra* | 🦓: two stripes, still one animal |
+| *because* | `theram` | `eral` *brick* | 🧱: the cause is what the result sits on |
+| *although* | `hazem` | `azel` *zebra* | 🦓: two stripes, still one animal |
 | *so-that* | `hagom` | `agol` *goal* | 🥅: you act so the shot counts |
 | *therefore* | `xezadam` | `ezadal` *east* | ➡️: the sun’s path, so the talk moves on |
 
@@ -188,7 +188,7 @@ z-Azawan | b-Alahen | v-tell | d-that-clause | z-Ahaben | v-sit
 **2.** *Azawan runs because Alahen punches a guard.*
 
 ::: details Show answer
-`zazawan varahal thabem barl zalahen dagadul vabahel.`
+`zazawan varahal theram barl zalahen dagadul vabahel.`
 
 z-Azawan | v-run | [th-because | b-that-clause] | z-Alahen | d-guard | v-punch
 :::
@@ -196,7 +196,7 @@ z-Azawan | v-run | [th-because | b-that-clause] | z-Alahen | d-guard | v-punch
 **3.** *Azawan writes despite a guard.*
 
 ::: details Show answer
-`zazawan varadal hezem bagadul.`
+`zazawan varadal hazem bagadul.`
 
 z-Azawan | v-write | [h-although | b-guard]
 :::
@@ -220,7 +220,7 @@ z-Azawan | v-run | [h-so-that | b-that-clause] | z-Alahen | v-sit
 **6.** *Azawan stands although Alahen screams.*
 
 ::: details Show answer
-`zazawan vazadol hezem barl zalahen vezogel.`
+`zazawan vazadol hazem barl zalahen vezogel.`
 
 z-Azawan | v-stand | [h-although | b-that-clause] | z-Alahen | v-scream
 :::
@@ -236,7 +236,7 @@ z-Ahaben | v-scream . x-therefore | z-Alahen | v-fight
 *Ahaben screams. Therefore Alahen fights.*
 :::
 
-**2.** `zalahen vavadal hezem bagadul.`
+**2.** `zalahen vavadal hazem bagadul.`
 
 ::: details Show answer
 
@@ -263,7 +263,7 @@ z-Alahen | v-run | [h-so-that | b-that-clause] | z-Azawan | v-sit
 *Alahen runs so that Azawan sits.*
 :::
 
-**5.** `zahaben vehahel thabem barl zazawan dagadul vahahal.`
+**5.** `zahaben vehahel theram barl zazawan dagadul vahahal.`
 
 ::: details Show answer
 
@@ -346,14 +346,14 @@ These words glue one finished sentence to the next (one-way; default ending **-l
 | English | Agalan | Same root as | Cue | Example |
 |---------|--------|--------------|-----|---------|
 | *therefore* | **`xezadam`** | `ezadal` *east* | ➡️: the sun’s path, so the talk moves on | `xezadam` |
-| *however* | **`xezel`** | `ezel` *zebra* | 🦓: two stripes, still one animal | `xezel` |
+| *however* | **`xazel`** | `azel` *zebra* | 🦓: two stripes, still one animal | `xazel` |
 | *meanwhile* | **`xagagal`** | `agagal` *mantel-clock* | 🕰️: time passing beside the last claim | `xagagal` |
 | *next* | **`xevavel`** | `evavel` *film* | 🎞️: the following frame | `xevavel` |
 | *but* | **`xagozal`** | `agozal` *construction* | 🚧: the expected path is blocked | `xagozal` |
 
 *therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Those same roots keep their ordinary content readings under other role letters.
 
-**Compare with:** *although* / *while* attach a dependent after **`barl`** (`hezem barl`, `hahem barl` — [dependent clauses](#dependent-clauses)). *Despite Alahen* is the same pole with a noun in `/b/` (`hezem balahen`). *So that Alahen sits* is **`hagom barl`**. Discourse **`xezel`** / **`xagagal`** / **`xezadam`** glue a finished sentence to the next one.
+**Compare with:** *although* / *while* attach a dependent after **`barl`** (`hazem barl`, `hehum barl` — [dependent clauses](#dependent-clauses)). *Despite Alahen* is the same pole with a noun in `/b/` (`hazem balahen`). *So that Alahen sits* is **`hagom barl`**. Discourse **`xazel`** / **`xagagal`** / **`xezadam`** glue a finished sentence to the next one.
 
 ### Stand-in vowels (`-rl` / `-rm`) {#stand-in}
 <a id="clause-member"></a>
@@ -375,7 +375,7 @@ The corresponding `/y/` turn makes an assertion, asks a question, gives a comman
 
 The missing subject is then that `/b/`. It is never the listener and never the outer `/z/`. In every other case, write the inner `/z/`: after **`darl`** / **`dorl`**, after any pole (**`barl`** / **`burl`**), and when the outer sentence has no unhosted `/b/` (*wants to sit*, *tries to sit*). When the doer is someone other than that `/b/`, write them too, using resume **-r** if the name would repeat.
 
-After a pole, the dependent is **`barl`** (or **`barm`** for gist): *because* / *if* / *although* / *so that* all use it. There are two exceptions, both with **`burl`**: purpose-not **`hagom burl`** (*so that … not*) and **`thowem burl`** (*unless*). Do not put this family on `/x/` (clause *and* stays `xal` / `xan`).
+After a pole, the dependent is **`barl`** (or **`barm`** for gist): *because* / *if* / *although* / *so that* all use it. There are two exceptions, both with **`burl`**: purpose-not **`hagom burl`** (*so that … not*) and **`thodom burl`** (*unless*). Do not put this family on `/x/` (clause *and* stays `xal` / `xan`).
 
 > `zazawan balahen vezebel derl vehahel.`
 >
@@ -407,9 +407,9 @@ When *so that* aims at keeping an outcome off, keep **`hagom`** and type `/b/` w
 >
 > "Azawan walks so as not to sit."
 
-English *unless* is *if … not*: keep the *if* pole **`thowem`** and type `/b/` with **`burl`**. The following sentence is the condition that must **not** hold.
+English *unless* is *if … not*: keep the *if* pole **`thodom`** and type `/b/` with **`burl`**. The following sentence is the condition that must **not** hold.
 
-> `zazawan vowogal thowem burl zalahen vezebal.`
+> `zazawan vowogal thodom burl zalahen vezebal.`
 >
 > z-Azawan | v-walk | [th-if | b-lest-clause] | z-Alahen | v-sleep
 >
@@ -441,7 +441,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *to-clause* | `derl` |
 | *lest-clause* | `durl` |
 | *next* | `xevavel` |
-| *however* | `xezel` |
+| *however* | `xazel` |
 | *meanwhile* | `xagagal` |
 
 #### English → Agalan {#intermediate-english-to-agalan}
@@ -473,7 +473,7 @@ z-Ahaben | v-sit . x-meanwhile | z-Alahen | d-luggage | v-see
 *Ahaben sits. Meanwhile Alahen sees luggage.*
 :::
 
-**2.** `zalahen vezevul. xezel zazawan varahal.`
+**2.** `zalahen vezevul. xazel zazawan varahal.`
 
 ::: details Show answer
 
@@ -539,7 +539,7 @@ The sentence after one of these verbs has its own subject when the chosen conten
 
 Each clause has at most one **stand-in** at the end of the main sentence. The sentence after it may itself end in **`barl`**, so a further sentence hangs to the **right**.
 
-> `zazawan gazaham thabem barl zalahen vowogal thabem barl zahaben vezebal.`
+> `zazawan gazaham theram barl zalahen vowogal theram barl zahaben vezebal.`
 >
 > [z-Azawan | g-happy] | [th-because | b-that-clause] | z-Alahen | v-walk | th-because | b-that-clause | z-Ahaben | v-sleep
 >

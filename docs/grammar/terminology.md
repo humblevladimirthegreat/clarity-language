@@ -14,36 +14,36 @@ Closed labels for psychological moods, poles, and emotion-compose pieces. Mood w
 
 | Label | Gloss | Teach |
 |-------|-------|--------|
-| **ABIL** | Hostless *can* / *can’t* fallback **`aze`** | [Ability](intention.md#ability-fallback) |
+| **ABIL** | Hostless *can* / *can’t* fallback **`eze`** | [Ability](intention.md#ability-fallback) |
 | **ACT** | Emotion-compose arousal (HIGH / MED / LOW) | [Interests](interests.md#emotion-compose) |
-| **AS-OF** | Whose-now pole: ledger **`enu`** / bookmark **`umu`** | [Relations](relations.md#as-of) |
-| **ALTHOUGH** | Clause-pole **`eze`** (*although* / NP *despite*) | [Dependents](dependents.md#dependent-clauses) |
-| **BECAUSE** | Clause-pole **`abe`** (*because*) | [Causation](causation.md#because) |
+| **AS-OF** | Whose-now pole: ledger **`ene`** / bookmark **`ume`** | [Relations](relations.md#as-of) |
+| **ALTHOUGH** | Clause-pole **`aze`** (*although* / NP *despite*) | [Dependents](dependents.md#dependent-clauses) |
+| **BECAUSE** | Clause-pole **`era`** (*because*) | [Causation](causation.md#because) |
 | **CAUSE** | Mechanism-framing mood **`ege`** | [Causation](causation.md#cause) |
 | **CIRCUM** | Emotion locus: charge on the situation | [Interests](interests.md#emotion-compose) |
 | **MAY** | Potential mood **`ovo`** (*could be*; I'll find out / default / who knows) | [Knowing](knowing.md#may) |
 | **COMMON** | Universality: usual, exceptions expected | [Knowing](knowing.md#universality) |
-| **DECISION** | Pick-firmness mood **`ehu`** | [Intention](intention.md#decision) |
+| **DECISION** | Pick-firmness mood **`eha`** | [Intention](intention.md#decision) |
 | **EXTERNAL** | Emotion locus: charge at other people | [Interests](interests.md#emotion-compose) |
 | **FELT** | Evidential: gut / body knowing | [Knowing](knowing.md#evidentiality) |
 | **FORMAL** | Universality: definition / math / proof | [Knowing](knowing.md#universality) |
-| **FORMER** | Episode standing: not the climate claimed now **`ene`** | [Knowing](knowing.md#former-climate) |
+| **FORMER** | Episode standing: not the climate claimed now **`une`** | [Knowing](knowing.md#former-climate) |
 | **HIGH** / **MED** / **LOW** | Emotion ACT roots | [Interests](interests.md#emotion-compose) |
-| **IF** | Clause-pole **`owe`** (one-way *if*) | [Causation](causation.md#if) |
-| **IFF** | Clause-pole **`edo`** | [Causation](causation.md#iff) |
+| **IF** | Clause-pole **`odo`** (one-way *if*) | [Causation](causation.md#if) |
+| **IFF** | Clause-pole **`ewu`** | [Causation](causation.md#iff) |
 | **INFERRED** | Evidential: reasoned from clues | [Knowing](knowing.md#evidentiality) |
 | **INTERNAL** | Emotion locus: charge held inside | [Interests](interests.md#emotion-compose) |
 | **LIVE** | Evidential: concurrent / in-view observation | [Knowing](knowing.md#live-vs-memory) |
 | **LOCUS** | Emotion-compose where the charge sits | [Interests](interests.md#emotion-compose) |
 | **NATURAL** | Universality: natural necessity | [Knowing](knowing.md#universality) |
-| **NOTIONAL** | As-if / pretense mood **`ave`** | [Knowing](knowing.md#notional) |
-| **ONLY-IF** | Clause-pole **`oro`** (*only if* / *needs*) | [Causation](causation.md#only-if) |
+| **NOTIONAL** | As-if / pretense mood **`ove`** | [Knowing](knowing.md#notional) |
+| **ONLY-IF** | Clause-pole **`ebo`** (*only if* / *needs*) | [Causation](causation.md#only-if) |
 | **PATTERN** | Evidential: from regularity | [Knowing](knowing.md#evidentiality) |
-| **PLAN** | Intention-framing mood **`ama`** | [Intention](intention.md#plan-predict) |
+| **PLAN** | Intention-framing mood **`uma`** | [Intention](intention.md#plan-predict) |
 | **RECORDED** | Evidential: documented / playback / scheduled | [Knowing](knowing.md#evidentiality) |
-| **RESIDUE** | Episode standing: outcome still on the current tally **`omo`** | [Knowing](knowing.md#residue) |
+| **RESIDUE** | Episode standing: outcome still on the current tally **`amo`** | [Knowing](knowing.md#residue) |
 | **RULE** | Universality: holds inside a named frame | [Knowing](knowing.md#universality) |
-| **SAME** | Identity copula **`ugo`** | [Predication](predication.md#identity) |
+| **SAME** | Identity copula **`oga`** | [Predication](predication.md#identity) |
 | **SO-THAT** | Clause-pole **`ago`** (*so that* / NP intended *for*) | [Dependents](dependents.md#so-that) |
 | **STORY** | Evidential: narrative / lore | [Knowing](knowing.md#evidentiality) |
 | **TOLD** | Evidential: hearsay | [Knowing](knowing.md#evidentiality) |
@@ -208,7 +208,7 @@ Kind / role as predicative `/ɡ/` (no *to-be* verb).
 
 ### Clause pole / NP pole
 
-Condition vs outcome as NPs vs full sentences after **`barl`**. **Clause pole** is the causation reading. Concession **`eze`** uses the same NP vs clause split (*despite Alahen* vs *although Alahen walks*). Intended outcome **`ago`** uses it too (*for a money-bag* vs *so that Alahen sits*).
+Condition vs outcome as NPs vs full sentences after **`barl`**. **Clause pole** is the causation reading. Concession **`aze`** uses the same NP vs clause split (*despite Alahen* vs *although Alahen walks*). Intended outcome **`ago`** uses it too (*for a money-bag* vs *so that Alahen sits*).
 
 [Causation](causation.md)
 
@@ -368,19 +368,19 @@ Extra-noun [hook](hooks.md#extra-noun) **`ael`** plus implement `/b/` (*using / 
 
 ### Simile (*like*)
 
-Hosted **`hemum`** / **`gemum`** plus model `/b/` (*like* a duck / *like* Azawan’s). Not **`SAME`**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
+Hosted **`homem`** / **`gomem`** plus model `/b/` (*like* a duck / *like* Azawan’s). Not **`SAME`**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
 
 [Relations](relations.md#similative)
 
 ### Exchange (*for*)
 
-Hosted **`hohem`** / **`gohem`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not interests motive **`tho`**, not intended-outcome **`ago`**.
+Hosted **`hogem`** / **`gogem`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not interests motive **`tho`**, not intended-outcome **`ago`**.
 
 [Relations](relations.md#exchange)
 
 ### Proxy (*on behalf of*)
 
-Hosted **`hadum`** / **`gadum`** plus principal `/b/` (*on behalf of* Alahen). Not hook *instead*, not recipient `/b/`.
+Hosted **`hadem`** / **`gadem`** plus principal `/b/` (*on behalf of* Alahen). Not hook *instead*, not recipient `/b/`.
 
 [Relations](relations.md#proxy)
 
@@ -714,11 +714,11 @@ Short word in a role slot (`darl` / `barl` / `dorl` / `derl` / `durl`, open **`-
 
 [Dependents](dependents.md#stand-in)
 
-**Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause poles](#clause-pole-np-pole) (`thabem`, `thowem`) name the relation; the stand-in fills `/b/`.
+**Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause poles](#clause-pole-np-pole) (`theram`, `thodom`) name the relation; the stand-in fills `/b/`.
 
 ### Special pronoun
 
-**`ema` / `eha` / `oha` / `anu`**.
+**`amu` / `ohe` / `oha` / `onu`**.
 
 [Pronouns](pronouns.md#special-pronouns)
 
@@ -781,7 +781,7 @@ Mood how-exceptionless (COMMON … RULE).
 
 ### Interests
 
-Interest + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`gobem`** + `/w/` need.
+Interest + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`gobom`** + `/w/` need.
 
 [Interests](interests.md)
 

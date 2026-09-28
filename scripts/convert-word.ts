@@ -21,6 +21,7 @@ import {
   type CompoundRow,
   type CompoundValidationError,
 } from "../src/lexicon-compounds.js";
+import { resyncClosedRootsSource } from "../src/closed-roots.js";
 import { placePublishedRoots } from "../src/lexicon-place.js";
 import { isJoinOverlayKind, parseOverlayCsv } from "../src/lexicon-search.js";
 import { RETIE_MAP_RELATIVE_PATH, serializeRetieMap, type RetiePair } from "../src/retie/map.js";
@@ -37,6 +38,7 @@ const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
 const publishedPath = join(rootDir, "data", "lexicon-published.csv");
 const overlayPath = join(rootDir, "data", "lexicon-overlays.csv");
 const compoundsPath = join(rootDir, "data", "lexicon-compounds.csv");
+const closedRootsPath = join(rootDir, "src", "closed-roots.ts");
 
 const OVERLAY_HEADERS = ["sense_form", "pos", "emoji", "kind", "gloss", "definition", "mnemonic", "anchor"];
 
@@ -308,6 +310,16 @@ async function convertLexicon(only: string[]): Promise<void> {
     throw new Error(`Invalid lexicon-compounds.csv after retie:\n${detail}`);
   }
 
+  // Closed roots named in code follow their emoji's new spelling (src/closed-roots.ts).
+  const closedSource = readFileSync(closedRootsPath, "utf8");
+  const closed = resyncClosedRootsSource(
+    closedSource,
+    new Map(rows.map((row) => [(row.emoji ?? "").trim(), (row.clarity ?? "").trim()])),
+  );
+  if (closed.missing.length > 0) {
+    throw new Error(`src/closed-roots.ts names emoji with no published row: ${closed.missing.join(" ")}`);
+  }
+
   if (changed > 0) {
     writeFileSync(publishedPath, serializeCsv(headers, rows));
   }
@@ -332,6 +344,9 @@ async function convertLexicon(only: string[]): Promise<void> {
   if (retiedCompounds.changes.length > 0) {
     writeFileSync(compoundsPath, serializeCompoundCsv(retiedCompounds.rows));
   }
+  if (closed.changes.length > 0) {
+    writeFileSync(closedRootsPath, closed.text);
+  }
 
   const tmpDir = join(rootDir, "tmp");
   mkdirSync(tmpDir, { recursive: true });
@@ -349,6 +364,7 @@ async function convertLexicon(only: string[]): Promise<void> {
   console.log(`roots kept: ${kept}`);
   console.log(`roots changed: ${changed}`);
   console.log(`compound fields retied: ${retiedCompounds.changes.length}`);
+  console.log(`closed roots in code respelled: ${closed.changes.map((c) => `${c.emoji} ${c.from} -> ${c.to}`).join(", ") || "none"}`);
   console.log(`retie map: ${RETIE_MAP_RELATIVE_PATH}`);
   if (assigned.length > 0) {
     console.log("");

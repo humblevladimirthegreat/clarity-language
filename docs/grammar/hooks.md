@@ -155,7 +155,7 @@ To ask *where?*, put the fill-ask blank **`bar`** after the hook (`ol bar` *wher
 >
 > "Alahen sits at a plate."
 
-> `zazawan dawahel vorul ul bedebul.`
+> `zazawan dawahel vobohel ul bedebul.`
 >
 > z-Azawan | d-wine | v-pour | [from | b-teapot]
 >
@@ -173,7 +173,7 @@ To ask *where?*, put the fill-ask blank **`bar`** after the hook (`ol bar` *wher
 
 ### Since (`ul` on a time) {#since}
 
-For *since* (from a starting point, and still true now), use **`ul`** *from* with a time instead of a place: *from the thunderstorm on*. [**`helam`**](dependents.md#dependent-clauses) *after* only places the event later. **`ul`** says it has run from that point until now. (cue: **u** ≈ undo: leave the starting point behind)
+For *since* (from a starting point, and still true now), use **`ul`** *from* with a time instead of a place: *from the thunderstorm on*. [**`hulam`**](dependents.md#dependent-clauses) *after* only places the event later. **`ul`** says it has run from that point until now. (cue: **u** ≈ undo: leave the starting point behind)
 
 > `zazawan vehahel ul bavodel.`
 >
@@ -189,7 +189,7 @@ For *since* before a sentence, put **`barl`** after **`ul`** and the starting ev
 >
 > "Azawan has been walking since Alahen fell asleep."
 
-**Compare with:** *since* meaning *because* is **`thabem barl`**. Agalan keeps the time reading and the cause reading apart.
+**Compare with:** *since* meaning *because* is **`theram barl`**. Agalan keeps the time reading and the cause reading apart.
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -205,7 +205,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
 | *plate* | `ebedel` | |
-| *salad* | `azavol` | |
+| *salad* | `azavul` | |
 | *family* | `avahal` | |
 | *teapot* | `edebul` | |
 | *wine* | `awahel` | |
@@ -213,7 +213,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *red* | `eredal` | |
 | *blue* | `ubuhal` | |
 | *cook* | `vugugal` | |
-| *pour* | `vorul` | |
+| *pour* | `vobohel` | |
 | *sit* | `vehahel` | `ehahel` *chair* |
 
 #### English → Agalan {#beginner-english-to-agalan}
@@ -253,7 +253,7 @@ additionally | z-Azawan | v-cook
 **5.** *A plate and a salad.*
 
 ::: details Show answer
-`zebedel zazavol zam.`
+`zebedel zazavul zam.`
 
 [z-plate | z-salad | z-and.open]
 :::
@@ -328,7 +328,7 @@ additionally | z-Alahen | v-cook
 *Additionally, Alahen cooks.*
 :::
 
-**5.** `el zalahen vorul dawahel.`
+**5.** `el zalahen vobohel dawahel.`
 
 ::: details Show answer
 
@@ -346,7 +346,7 @@ except | z-Azawan | v-sit
 *Except, Azawan sits.*
 :::
 
-**7.** `zazavol al bebedel.`
+**7.** `zazavul al bebedel.`
 
 ::: details Show answer
 
@@ -355,7 +355,7 @@ z-salad | [in | b-plate]
 *The salad in a plate.*
 :::
 
-**8.** `zalahen dawahel vorul ul bedebul.`
+**8.** `zalahen dawahel vobohel ul bedebul.`
 
 ::: details Show answer
 
@@ -455,7 +455,7 @@ Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). S
 > "Azawan fights against a guard."
 
 
-> `zazawan varadal em bomol.`
+> `zazawan varadal em bamol.`
 >
 > z-Azawan | v-write | [with-in-mind | b-money]
 >
@@ -517,20 +517,20 @@ Names come first. When you know who is talking or listening, use their name as t
 
 | Agalan | Landmark | English |
 |--------|----------|---------|
-| `om beman` | near the speaker | *here*, *this* |
-| `om behan` | near the listener | *there (by you)*, *that* |
+| `om bamun` | near the speaker | *here*, *this* |
+| `om bohen` | near the listener | *there (by you)*, *that* |
 | `om bohan` | near both of you | *here (with us)* |
 | `um bohan` | away from both of you | *over there*, *yonder* |
 
-Use `ol` in place of `om` for the exact spot (`ol beman` *right where I am*).
+Use `ol` in place of `om` for the exact spot (`ol bamun` *right where I am*).
 
-> `zodogal om beman vehahel.`
+> `zodogal om bamun vehahel.`
 >
 > z-dog | [near | b-speaker] | v-sit
 >
 > "This dog sits here by me."
 
-> `zazawan dubugal om behan vahahal.`
+> `zazawan dubugal om bohen vahahal.`
 >
 > z-Azawan | d-book | [near | b-listener] | v-see
 >
@@ -544,19 +544,19 @@ Use `ol` in place of `om` for the exact spot (`ol beman` *right where I am*).
 
 English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Agalan names the landmark with the plain motion verb **`vuvudel`** (*go*) and a path hook: **`oel`** (*toward*) for *come*, **`ul`** (*from*) for *go away*. `vuvudel` says nothing about how someone travels; use `vowogal` (*walk*) or `varahal` (*run*) only when the manner matters.
 
-> `zazawan vuvudel oel beman.`
+> `zazawan vuvudel oel bamun.`
 >
 > z-Azawan | v-go | [toward | b-speaker]
 >
 > "Azawan comes over to me."
 
-> `zalahen vuvudel oel behan.`
+> `zalahen vuvudel oel bohen.`
 >
 > z-Alahen | v-go | [toward | b-listener]
 >
 > "Alahen is coming to you."
 
-> `zazawan vuvudel ul beman.`
+> `zazawan vuvudel ul bamun.`
 >
 > z-Azawan | v-go | [from | b-speaker]
 >
@@ -564,19 +564,19 @@ English *come* and *go* also point from a person, but they hide which one: *I'm 
 
 With an object, `vuvudel` moves something else: `zazawan vuvudel dehahel.` *Azawan moves the chair.* When the mover goes along with the thing, use **`valagal`** (*carry*). The same hooks then give English *bring* and *take*:
 
-> `zazawan valagal dabegol oel beman.`
+> `zazawan valagal dabegol oel bamun.`
 >
 > z-Azawan | v-carry | d-package | [toward | b-speaker]
 >
 > "Azawan brings me the package."
 
-> `zazawan valagal dabegol ul beman.`
+> `zazawan valagal dabegol ul bamun.`
 >
 > z-Azawan | v-carry | d-package | [from | b-speaker]
 >
 > "Azawan takes the package away."
 
-In reported speech, the speaker is still whoever says the whole sentence. After *that* (`darl`, see [dependents](dependents.md#stand-in)), `om beman` is near the person talking now. Inside a quoted [cite span](spans.md), the quoted person is the speaker, as in English direct quotes.
+In reported speech, the speaker is still whoever says the whole sentence. After *that* (`darl`, see [dependents](dependents.md#stand-in)), `om bamun` is near the person talking now. Inside a quoted [cite span](spans.md), the quoted person is the speaker, as in English direct quotes.
 
 **Compare with:** *that dog* for a dog already named is [resume **-r**](pronouns.md#resume-r) (`zodogar`), not a place. *Where?* is `ol bar` ([Where?](questions.md#where)). *There* for a place already named is a [resume hook](#hook-resume).
 
@@ -626,7 +626,7 @@ At the front of a sentence, a resume hook points back to an earlier stretch of t
 >
 > "Never mind that: Alahen sleeps."
 
-**Compare with:** `ol …` *Instead* replaces the last claim. `or …` *Anyway* leaves the side topic standing and returns to the main one. To go back to a **person or thing** rather than a line of talk, use a [thread resume](pronouns.md#going-back-to-a-thread) (`xezer`).
+**Compare with:** `ol …` *Instead* replaces the last claim. `or …` *Anyway* leaves the side topic standing and returns to the main one. To go back to a **person or thing** rather than a line of talk, use a [thread resume](pronouns.md#going-back-to-a-thread) (`xazar`).
 
 ### Parallel chains {#parallel-chains}
 
@@ -968,7 +968,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *boat* | `obodal` | | |
 | *fog* | `avegal` | | |
 | *ice* | `azahul` | | |
-| *anchor* | `agal` | | |
+| *anchor* | `agel` | | |
 
 #### English → Agalan {#advanced-english-to-agalan}
 
@@ -1031,7 +1031,7 @@ d-fog | z-Alahen | v-leave
 *Alahen leaves fog.*
 :::
 
-**2.** `zazawan dagal vowogaloel.`
+**2.** `zazawan dagel vowogaloel.`
 
 ::: details Show answer
 

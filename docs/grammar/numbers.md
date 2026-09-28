@@ -85,10 +85,10 @@ Short drills for Beginner. Try each item before opening **Show answer**. Count w
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
 | *baguette* | `ubogel` | |
-| *croissant* | `ogazal` | |
+| *croissant* | `ugazal` | |
 | *cookie* | `ugugol` | |
 | *bread* | `ebewel` | |
-| *pie* | `abawul` | |
+| *pie* | `abayal` | |
 | *doughnut* | `ododel` | |
 | *bagel* | `ebagol` | |
 | *fire* | `avahel` | |
@@ -108,7 +108,7 @@ z-baguette-x | g-two
 **2.** *The third croissant.*
 
 ::: details Show answer
-`zogazal grerel.`
+`zugazal grerel.`
 
 z-croissant | g-3rd
 :::
@@ -132,7 +132,7 @@ z-Azawan | [d-bread-x | g-three] | v-see
 **5.** *Alahen smells the second pie.*
 
 ::: details Show answer
-`zalahen dabawul gredul vonozal.`
+`zalahen dabayal gredul vonozal.`
 
 z-Alahen | [d-pie | g-2nd] | v-smell
 :::
@@ -163,7 +163,7 @@ z-Alahen | [d-fire | g-1st] | v-see
 
 #### Agalan → English {#beginner-agalan-to-english}
 
-**1.** `zogazalx gradul.`
+**1.** `zugazalx gradul.`
 
 ::: details Show answer
 
@@ -199,7 +199,7 @@ z-Ahaben | [d-cookie-x | g-three] | v-see
 *Ahaben sees three cookies.*
 :::
 
-**5.** `zazawan dabawulx gral vahahal.`
+**5.** `zazawan dabayalx gral vahahal.`
 
 ::: details Show answer
 
@@ -1040,7 +1040,7 @@ Same under `/z/` `/d/` `/b/` (`zrabal` = +∞ as subject; `drebul` = start-place
 
 **Just short (`grubul`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅**), no mantissa. It mirrors **`grabul`** (a hair over zero): **`grubul`** is a hair **under** — the smallest shortfall. Against a target it reads *almost*; as a [signed time offset](knowing.md#dated-channel) it reads *just before* (`brubul` *just now*), and **`brabul`** reads *just after* (*any moment now*).
 
-**Compare with:** *as if* uses spelled mood **`ave`** ([knowing.md § Notional](knowing.md#notional), e.g. `thavem`). Free **`grubul`** / **`xrubul`** / **`thrubul`** / **`vrubul`** / **`hrubul`** / **`yrubul`** are the amount, discourse *just before that:*, stance *virtually*, verb *nudge down*, adverb *almost*, and cheer *so close!* on the number grid.
+**Compare with:** *as if* uses spelled mood **`ove`** ([knowing.md § Notional](knowing.md#notional), e.g. `thovem`). Free **`grubul`** / **`xrubul`** / **`thrubul`** / **`vrubul`** / **`hrubul`** / **`yrubul`** are the amount, discourse *just before that:*, stance *virtually*, verb *nudge down*, adverb *almost*, and cheer *so close!* on the number grid.
 
 **Endings** (no-mantissa specials):
 
@@ -1428,7 +1428,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Digitle
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
-| *star* | `ezul` | |
+| *star* | `azal` | |
 | *telescope* | `edazol` | |
 | *see* | `vahahal` | `ahahal` *eye* |
 
@@ -1437,7 +1437,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Digitle
 **1.** *Stars — infinitely many.*
 
 ::: details Show answer
-`zezulx grabal.`
+`zazalx grabal.`
 
 z-star-x | g-plus-infinity
 :::
@@ -1485,7 +1485,7 @@ x-starting-with | z-Ahaben | v-see
 **7.** *Azawan sees the penultimate star.*
 
 ::: details Show answer
-`zazawan dezul gruedul vahahal.`
+`zazawan dazal gruedul vahahal.`
 
 z-Azawan | [d-star | g-2nd-from-end] | v-see
 :::
@@ -1493,18 +1493,18 @@ z-Azawan | [d-star | g-2nd-from-end] | v-see
 **8.** *Alahen sees three stars, give or take one.*
 
 ::: details Show answer
-`zalahen dezulx grarel gruawol vahahal.`
+`zalahen dazalx grarel gruawol vahahal.`
 
 z-Alahen | [d-star-x | g-three | g-plus-minus-1] | v-see
 :::
 
 #### Agalan → English {#advanced-agalan-to-english}
 
-**1.** `zezulx grabam.`
+**1.** `zazalx grabam.`
 
 ::: details Show answer
 
-🔊 *zezulx grabam.*
+🔊 *zazalx grabam.*
 
 z-star-x | g-plus-infinity.about
 
@@ -1533,11 +1533,11 @@ x-starting-with | z-Alahen | v-see
 *Starting with: Alahen sees.*
 :::
 
-**4.** `zezul grewobal.`
+**4.** `zazal grewobal.`
 
 ::: details Show answer
 
-🔊 *zezul grewobal.*
+🔊 *zazal grewobal.*
 
 z-star | g-#-1e
 

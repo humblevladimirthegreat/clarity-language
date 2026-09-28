@@ -78,7 +78,7 @@ Agalan’s [interests](interests.md) name a closed inventory of **interests** (a
 | Prescription | Deontic on the host act for this interest — ending marks the move's warrant or aim (**invited / offered / trial**) |
 | Unmet | Costs the interest, including how changeable that is |
 
-Naming the interest and your stance toward it helps you notice gratitude, motive, and oughts instead of conflating them into vague *want* / *should* / *good*. An interest on `/ɡ/` is a belonging (so *my X serves competence* is one adjective); an unowned stimulus uses the interest on `/w/` immediately before **`gobem`**.
+Naming the interest and your stance toward it helps you notice gratitude, motive, and oughts instead of conflating them into vague *want* / *should* / *good*. An interest on `/ɡ/` is a belonging (so *my X serves competence* is one adjective); an unowned stimulus uses the interest on `/w/` immediately before **`gobom`**.
 
 ### Emotions as composition {#emotions-as-composition}
 
