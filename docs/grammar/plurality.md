@@ -315,7 +315,7 @@ For the **address set** (`ohenx`), count everyone called in this turn’s vocati
 
 ### Verbs (`/v/`) — collective {#verbs-v}
 
-English *they walk* does not say whether it was one shared outing. Put **-x** on the **verb** (after its ending) when the event is **one shared act**. A set subject with a singular verb leaves together vs separately open. Noun **-x** still names **who**; verb **-x** names **how** the doing is structured.
+English *they walk* does not say whether it was one shared outing. Put **-x** on the **verb** (after its ending) when the event is **one shared act**. A set subject with a singular verb leaves together vs separately open, except for a counted object (below). Noun **-x** still names **who**; verb **-x** names **how** the doing is structured.
 
 > `zazawanx vezehelx.`
 >
@@ -336,6 +336,20 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 | `zazawanx vezehelx` | *they sing as one outing* |
 | `zazawan vezehelx` | *Azawan sings jointly* (not a solo) |
 | `zavahal vowogalx` | *the family walks as one unit* |
+
+**Counts with a set subject:** when a set subject has a counted object, a singular verb gives the count to **each member** (*apiece*). Verb **-x** makes the count the **total** for the shared act.
+
+> `zazawan zalahen zal vahahal dagadalx grarel.`
+>
+> [z-Azawan | z-Alahen | z-and] | v-see | [d-cat-x | g-three]
+>
+> "Azawan and Alahen each see three cats."
+
+> `zazawan zalahen zal vahahalx dagadalx grarel.`
+>
+> [z-Azawan | z-Alahen | z-and] | v-see-x | [d-cat-x | g-three]
+>
+> "Azawan and Alahen see three cats between them."
 
 **-rx** on `/v/` resumes a prior **collective** verb (*still as one shared act*).
 

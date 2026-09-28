@@ -332,6 +332,26 @@ To say **how many more**, put the difference in `/b/` right after **`gral`**. A 
 >
 > "Azawan walks more often than Alahen."
 
+### Covarying clauses (*the more …, the more …*) {#covarying}
+
+English *the more Azawan walks, the more Alahen sleeps* says two amounts rise together. Put digitless **`hral`** (*more than once*) or another amount word in each clause, and join the clauses with **`xael`**. As with the [frequency scale](#frequency-scale), the equal-rank join turns each amount into a scale and says the two scales move in step.
+
+> `zazawan hral vowogal xael zalahen hral vezebal.`
+>
+> [z-Azawan | h-more-than-one | v-walk | x-equal-rank | z-Alahen | h-more-than-one | v-sleep]
+>
+> "The more Azawan walks, the more Alahen sleeps."
+
+For *the more …, the less …*, use **`xuel`**: when the first scale rises, the second falls.
+
+> `zazawan hral vowogal xuel zalahen hral vezebal.`
+>
+> [z-Azawan | h-more-than-one | v-walk | x-rank/less | z-Alahen | h-more-than-one | v-sleep]
+>
+> "The more Azawan walks, the less Alahen sleeps."
+
+**Compare with:** **`xael`** / **`xuel`** state only that the two go together, not which one causes the other. To say the first causes the second, use a [causation](causation.md) pole.
+
 ### Factor (*twice as … as*) {#factor}
 
 English *twice as big as* gives the **ratio** between the two heights. Use the [equative](#equatives) **`zael`** and its shared adjective, then a factor number (`/h/` + marker **`ra`**, [numbers](numbers.md#number-as-adverb-by-marker)) **right after** the adjective. The first name sits at that many times the second's height.

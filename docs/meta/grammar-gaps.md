@@ -115,7 +115,6 @@ No open rows.
 | G-C02 | *the* for an already-mentioned referent | resume **-r**: `zodogal vowogal. zodor vehahel.` — [pronouns#resume-r](pronouns.md#resume-r) | by design (D-03) | pronouns.md | — | — |
 | G-C29 | double genitive (*a friend of Azawan's*) | depends on G-C28; for things `dubugal gegabem bazawan` (*a book of Azawan's*) = same as *'s*, fine | awkward | relations.md | Resolved by G-C28 | P2 |
 | G-C30 | stacked possessives (*Azawan's dog's owner*) | chained hosts parse (`zodogal gegabem bazawan gegabem balahen`) but attachment of the second `gegabem` is not taught | awkward | joins.md / relations.md | Teach chaining order of stacked of-relations | P3 |
-| G-C32 | partitive portion of a mass (*a piece of bread*, *a slice*, *a bit of*) | none; `gabom` = constitutive part, not an arbitrary portion; measure phrases need a unit | missing | relations.md | Portion *of* relation (piece severed from a whole) beside `gabom` | P2 |
 | G-C38 | generic reference (*Cats sit. / A cat is an animal.*) | `zual gagadal` (strict) / `zuam gagadal` (soft) — [joins#universals-domains-generics](joins.md#universals-domains-generics); habitual `hual` | by design (D-06) | joins.md | — | — |
 
 **Notes**
@@ -132,7 +131,6 @@ No open rows.
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
 | G-D12 | *so ADJ that …* (degree + result) | `welavam` + next-sentence linker (*therefore* `xezadam`, [dependents](dependents.md#continue-x)) — two sentences, degree-result link lost | awkward | dependents.md | Teach the two-sentence route explicitly, or a `/w/` *to-that-degree* word pointing at the next sentence | P2 |
-| G-D16 | correlative *the more …, the more …* | none; you could chain two sentences with *because*, but the covariation is lost | missing | comparatives.md | Rank join `e` on `/x/` linking two scale claims (a *co-rank* reading) | P2 |
 | G-D20 | *just* = *merely* (*it's just a cat*) | `zal` single item gives *only*, but not the "no more than / small" judgment | awkward | joins.md | Teach `zal` + `wamazam`, or say that `zal` covers both | P3 |
 
 **Notes**
@@ -180,8 +178,6 @@ No open rows.
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
 | G-G17 | reciprocal *similar to each other* / *they look alike* | no reciprocal route for similative (`/b/` needs a model) | awkward | relations.md | Allow similative over a set subject with resume/set `/b/` for *alike*; coordinate with group B reciprocal row | P2 |
-| G-G25 | ratios / rates *one in three*, *3 to 1*, *per hour* | *one in N* = fraction `g-N` after the noun (`zagadalx grurel vehahel.`) — say-amounts.md#one-in-n; *every Nth* via `h-N`; no per-unit rate (*per hour*) or ratio (*3 to 1*) | missing | numbers-applied.md | Per-unit rates need a new attachment (measure `/b/` + inverse amount); ratio *N to M* undecided | P2 |
-| G-G27 | distributive *apiece* / *each* with a count (*they each got three*; *three apples apiece*) | singular verb leaves collective vs distributive open ([plurality#verbs-v](plurality.md#verbs-v)); no marker for per-member count | missing | plurality.md | Add a distributive counterpart to verb **-x** collective (e.g. marked count scope *per member*), or teach `h-` / set-join `a` distributive reading on the count | P2 |
 
 **Notes**
 

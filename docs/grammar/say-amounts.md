@@ -135,6 +135,20 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 **Compare with:** `/h/` **`h-3`** is *every third time*: it counts repeats of the event, not members of a group.
 
+### *Per hour* and *3 to 1* {#per-unit}
+
+**Needs:** [Number as adverb](numbers.md#number-as-adverb-by-marker) · [Measure phrases](numbers-applied.md#measure-phrases) · [Factor](comparatives.md#factor)
+
+*Three times an hour* is a count per unit. Write the count, then the divider **`hruwol`** (*÷1*), then the unit as `/b/` right after it. The divider hosts the unit, so the `/b/` is structural, not a recipient.
+
+> `zazawan vowogal hrarel hruwol bagazem.`
+>
+> z-Azawan | v-walk | h-three | [h-divided-by-one | b-hour]
+>
+> "Azawan walks three times an hour."
+
+A ratio (*three cats to one dog*) is a [factor](comparatives.md#factor) on the equative amount scale: `zagadalx zodogalx zael gral hrarel` is *three times as many cats as dogs*.
+
 ### Percent points, factors, and other wholes
 
 **Needs:** [Percent](numbers-applied.md#percent-and-percentage-points) · [Number as adverb](numbers.md#number-as-adverb-by-marker) · [Of relations](relations.md#of-relations)

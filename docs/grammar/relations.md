@@ -274,6 +274,14 @@ English *of* also names how one noun sits toward another (*a hand of Alahen*, *a
 
 On an event, the same roots are `/h/` (`zazawan vageval huwam buwal` *Azawan crafts of wood*; `zalahen vowogal hagum bezagal` *Alahen walks, originating from the city*). The same roots stay ordinary pictures under other letters (`zabol` *a bone*; `zahal` *a jar*; `zuwal` *wood*; `zagul` *a country*).
 
+For *a piece of* a mass, put the substance first and `gozazom` right after it. With no `/b/`, the whole it was cut from is left open.
+
+> `zazawan debewel gozazom vahahal.`
+>
+> z-Azawan | [d-bread | g-division] | v-see
+>
+> "Azawan sees a piece of bread."
+
 Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in* hook (`al`), not `gaham`.
 
 | Agazan | Use | English | Same root as | Cue |
@@ -282,8 +290,9 @@ Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in
 | **`haham` / `gaham`** | filling of a vessel | *contents of* | `ahal` *yar* | 🫙: the vessel named by what it stores |
 | **`huwam` / `guwam`** | constitution | *made of* | `uwal` *wood* | 🪵: the stuff the thing is made of |
 | **`hagum` / `gagum`** | identity source / provenance | *from* (origin) | `agul` *country* | 🗾: a map of one country as where it comes from |
+| **`hozazom` / `gozazom`** | portion cut from a whole | *a piece of* / *a slice of* | `ozazol` *saw* | 🪚: the saw cuts a piece off |
 
-**Compare with:** ownership is `gegabem` + `/b/` ([joins](joins.md#scope-fence-p-join)). A [sakes](sakes.md) need on `/ɡ/` also means speaker possession. Place *in* is the hook `al`; path *from* is the hook `ul` ([locative relations](#locative-relations)). *A house like Azawan’s* is [simile](#similative) (`gomem`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`gogem`). Portion *of* a class is [percent](numbers-applied.md#percent-and-percentage-points). Associates are plural **-x**, not meronymy. Kind *origin* (`ROOTl#e-`) is [numeric derivation](numeric-derivation.md), not this token *from*.
+**Compare with:** ownership is `gegabem` + `/b/` ([joins](joins.md#scope-fence-p-join)). A [sakes](sakes.md) need on `/ɡ/` also means speaker possession. Place *in* is the hook `al`; path *from* is the hook `ul` ([locative relations](#locative-relations)). *A house like Azawan’s* is [simile](#similative) (`gomem`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`gogem`). A piece cut from a whole is `gozazom`: `gabom` is a part that belongs to the thing's structure (a bone of the body), `gozazom` is a piece taken off it (a slice of bread). Portion *of* a class is [percent](numbers-applied.md#percent-and-percentage-points). Associates are plural **-x**, not meronymy. Kind *origin* (`ROOTl#e-`) is [numeric derivation](numeric-derivation.md), not this token *from*.
 
 
 
