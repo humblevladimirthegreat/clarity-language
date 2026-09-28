@@ -54,7 +54,7 @@ const ROWS: Row[] = [
   { invalid: "zazawan zel h+2 vowogal.", rejection: "rankJoinNumberManner", valid: "zazawan zalahen zel h+ vowogal." },
   { invalid: "heol vowogal.", rejection: "reversedSequenceSlot", valid: "zagadalx g+5 geol vehahel." },
   {
-    invalid: "zazawan vowogal hezadam barl zalahen vezebal.",
+    invalid: "zazawan vowogal hodogom barl zalahen vezebal.",
     rejection: "standInHost",
     valid: "zazawan vowogal hazem barl zalahen vezebal.",
   },

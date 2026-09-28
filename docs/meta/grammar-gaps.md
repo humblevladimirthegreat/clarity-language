@@ -76,6 +76,7 @@ Completed 2026-09-25: 294 rows across groups A–J (160 covered, 80 awkward, 49 
 - **Subordinators:** done 2026-09-26: *unless* (G-E09), reported wh-questions (G-E32), asking tag (G-A18). Done 2026-09-27: temporal *since* = `ul` *from* on a time (G-E15, G-J13).
 - **Discourse / attitude:** done 2026-09-27: *hopefully / luckily / sadly* = content root on `/th/` (G-D23, G-D25); *oh* = polar **-r** `yaer` (G-H15); *anyway* = resume hook `or` (G-H20); polar `ua` now rejects the question's premise, strength via `!!`.
 - **Readings:** Done 2026-09-28: *has ever / never* `huham … har` / `hal` (G-B05), *merely* = single-item `zal` (G-D20), remote *if* = `thrul` inside `thodom barl` and unreal *if* = `thover` inside the bookmark dependent (G-E37, G-E38), *alike* = hostless similative over a joined subject (G-G17), greeting names the speaker so *hi all* is `SELFn.` (G-H02), discourse `ael` *in fact* (G-H27), `el` + person = beneficiary (G-J26).
+- **Lexicon-only fills:** Done 2026-09-28: `/h/` *kind of* `habedum` (G-H18) and *again* `herebem` (G-B16) in clause.md#degree-w; result pole `hezadam barl` *so … that* (G-E34, G-D12) in dependents.md#result-pole; `xevavel` also opens a topic, *so, …* (G-H25).
 - **Others:** Done 2026-09-27: social *'s* (G-C28), one-clause causative *make* (G-B32), *behind / in front of* (G-J05). Done 2026-09-26: *under / above* (G-J03–04), pro-form *one* (G-F16). Done 2026-09-27: reciprocal *each other* `hewum` (G-B39).
 
 ### A. Clause types
@@ -97,7 +98,6 @@ No open rows.
 | G-B01 | grammatical tense (past / present / future marking on the verb) | No tense letter, stated as a design choice: "Verbs have **no past or future letter**" ([knowing#evidentiality](../grammar/knowing.md#evidentiality)); "Neither word is a past tense" ([why-agazan](../grammar/why-agazan.md)); morph glosses never carry tense ([glosses](glosses.md), line ~270). Time comes from channel, *before* / *after*, clock, forecast (channel + `b+`) | by design | knowing.md | Add to the By design table as D-nn so it is not raised again | — |
 | G-B03 | past with no evidential claim (plain narration: *Yesterday Azawan walked*, told with no source) | channel or date: `thunom` / `themam` / `thazom` (*per the tale*, for narration), or a clock / date | by design | knowing.md | Neutral past is deliberately absent (see D-10). No *earlier* adverb and no bare *before now*: *before* / *after* always name a landmark | — |
 | G-B15 | *begin / stop / finish* doing (phase verbs) | Content roots only: `vazadal` *stop* + object `dowogam` (`zazawan vazadal dowogam.` parses); `eveha` *terminus*; nothing for *start*. Using an action noun as the object is not taught | awkward | clause.md | Teach event-noun objects for phase verbs and give *start* a root | P2 |
-| G-B16 | *again* / repeat | `/v/` + **-r** on a noun (settled: *do the same action again*); content `vegezol` *repeat* as a co-verb (`zazawan vegezol vowogal.` parses, not taught) | awkward | pronouns.md | Teach *again* as an `/h/` on `erebe` (`hegezom`) with the verb | P2 |
 | G-B21 | *must* (obligation) | Firm command `yel`, or need-linked prescription `…thel`/`…them`/`…ther` ([values#sake-force](../grammar/sakes.md#sake-force)). By design, a bare *must* without a named sake is avoided ([why-agazan](../grammar/why-agazan.md)) | by design | sakes.md | — | — |
 
 **Notes**
@@ -130,7 +130,6 @@ No open rows.
 
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
-| G-D12 | *so ADJ that …* (degree + result) | `welavam` + next-sentence linker (*therefore* `xezadam`, [dependents](dependents.md#continue-x)) — two sentences, degree-result link lost | awkward | dependents.md | Teach the two-sentence route explicitly, or a `/w/` *to-that-degree* word pointing at the next sentence | P2 |
 
 **Notes**
 
@@ -145,7 +144,6 @@ No open rows.
 |----|---------------------------|---------------|---------|-------------|----------|----------|
 | G-E16 | *once* / *as soon as* | `hulam barl …` (*after*); immediacy unmarked | awkward | dependents.md | Immediate-after: `/w/` detail on `hulam` (e.g. haste root `wadehom hulam barl`) or teach `hulam` + `hal` | P2 |
 | G-E23 | *when* relative (*the day when …*) | two sentences + time `/h/`; no pattern taught for resuming a time | awkward | dependents.md | Teach resume on a time noun in `/h/` (or `har`-style restrictor) as the *when*-relative pair | P3 |
-| G-E34 | result *so … that* / *such … that* (*so tired that he slept*) | two sentences + `xezadam` (*therefore*): `zazawan vowogal. xezadam zalahen vehahel.`; degree→result link not expressible in one clause | awkward | dependents.md | Result pole on `/h/` from the *therefore* root: `hezadam barl` (outcome follows; parses, unassigned) | P2 |
 
 **Notes**
 
@@ -186,8 +184,6 @@ No open rows.
 
 | ID | English job / source form | Current route | Verdict | Owning page | Proposal | Priority |
 |----|---------------------------|---------------|---------|-------------|----------|----------|
-| G-H18 | hedge on a verb (*kind of walked*) | `zazawan vowogal habedum.` parses but only `/w/` hedge is taught | awkward | clause.md | teach `/h/` **`abedu`** (-m) as verb-degree hedge alongside `/w/` | P2 |
-| G-H25 | *so* (topic launch / *so, what happened?*) | none; `xevavel` *next* partial | awkward | dependents.md / hooks.md | pair with G-H20 (`or` / `ar` resume hooks) or note `xevavel` as *so, next* | P3 |
 
 **Notes**
 

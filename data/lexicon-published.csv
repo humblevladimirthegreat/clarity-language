@@ -856,7 +856,7 @@ emoji,concrete,clarity,abstract,mnemonic,english_by_pos
 📅,calendar,agade,week,a calendar page reads a week across each row; week is the seven-day unit,
 🗒️,notepad,onode,,,
 📇,index-card,enade,lookup,card index sorts; lookup is the unobservable find-operation,
-📈,uptrend,abedu,degree,an uptrend marks more on the scale; degree is vague how-much,
+📈,uptrend,abedu,degree,an uptrend marks more on the scale; degree is vague how-much,m.h:kind-of
 📉,downtrend,adado,loss,the chart falls; loss is having less than before,
 📊,bar-chart,aboha,analysis,bar chart compares quantities; analysis is examining data,
 📋,clipboard,egabo,accountability,clipboard tracks tasks to do; accountability is answerable tracking,
@@ -1006,7 +1006,7 @@ emoji,concrete,clarity,abstract,mnemonic,english_by_pos
 ♓,pisces,obaze,empathy,pisces flows with others feelings; empathy is feeling with another,
 ⛎,ophiuchus,ovega,,,
 🔀,shuffle,aheva,randomness,shuffle mixes order unpredictably; randomness is without fixed order,
-🔁,repeat,erebe,repetition,repeat plays the same again; repetition is doing again,
+🔁,repeat,erebe,repetition,repeat plays the same again; repetition is doing again,m.h:again
 🔂,repeat-one,arebe,,,
 ▶️,play,ebeha,commencement,play button begins the action; start is setting in motion,
 ⏩,fast-forward,avazo,,,

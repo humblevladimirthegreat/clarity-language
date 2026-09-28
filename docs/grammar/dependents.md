@@ -309,6 +309,30 @@ These words glue one finished sentence to the next (one-way; default ending **-l
 
 *therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Those same roots keep their ordinary content readings under other role letters.
 
+**`xevavel`** also opens a new topic, like English *so, …* at the start of a turn: the talk moves to the next frame.
+
+> `zodogal vowogal. xevavel zazawan varahal.`
+>
+> z-dog | v-walk . x-next | z-Azawan | v-run
+>
+> "The dog walks. So, Azawan runs."
+
+### Result (*so … that*) {#result-pole}
+
+*Therefore* needs two sentences. To tie the result to the degree in one sentence (*so tired that he sleeps*), put the pole **`hezadam`** after the degree and the result after **`barl`**. The pole uses the same root as *therefore*. Unlike **`hagom`** *so that*, the result really happened.
+
+> `zazawan welavam gadadal hezadam barl zazar vezebal.`
+>
+> [z-Azawan | [w-very | g-tired]] | [h-so-result | b-that-clause] | z-←Azawan | v-sleep
+>
+> "Azawan is so tired that they sleep."
+
+> `zazawan welavam hadehom vowogal hezadam barl zalahen vehahel.`
+>
+> z-Azawan | [w-very | h-haste] | v-walk | [h-so-result | b-that-clause] | z-Alahen | v-sit
+>
+> "Azawan walks so hastily that Alahen sits."
+
 **Compare with:** *although* / *while* attach a dependent after **`barl`** (`hazem barl`, `hehum barl` — [dependent clauses](#dependent-clauses)). *Despite Alahen* is the same pole with a noun in `/b/` (`hazem balahen`). *So that Alahen sits* is **`hagom barl`**. Discourse **`xazel`** / **`xagagal`** / **`xezadam`** glue a finished sentence to the next one.
 
 ### Stand-in vowels (`-rl` / `-rm`) {#stand-in}
@@ -423,6 +447,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *run* | `varahal` |
 | *sneak* | `vezevul` |
 | *tell* | `vezebel` |
+| *very* | `welavam` |
+| *haste* | `hadehom` |
 | *to-clause* | `derl` |
 | *lest-clause* | `durl` |
 | *that-same-claim* | `darth` |
@@ -483,6 +509,15 @@ z-Alahen | v-sneak . x-however | z-Azawan | v-run
 z-Alahen | b-Azawan | v-tell | d-to-clause | v-sit
 
 *Alahen tells Azawan to sit.*
+:::
+
+**4.** `zahaben welavam hadehom varahal hezadam barl zalahen vehahel.`
+
+::: details Show answer
+
+z-Ahaben | [w-very | h-haste] | v-run | [h-so-result | b-that-clause] | z-Alahen | v-sit
+
+*Ahaben runs so hastily that Alahen sits.*
 :::
 
 ## Advanced {#advanced}

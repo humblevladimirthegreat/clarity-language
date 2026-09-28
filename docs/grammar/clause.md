@@ -326,6 +326,25 @@ Beginner used **`welavam`** *very* before an adjective. The same `/w/` slot take
 >
 > "A fairly blue dog walks."
 
+Two stock adverbs work on `/h/` directly on the verb. Use **`habedum`** *kind of* / *sort of* to hedge the action itself, and **`herebem`** for *again*.
+
+| Agazan | English | Cue |
+|--------|---------|-----|
+| `habedum` | *kind of* / *sort of* | 📈: some degree, not a full one |
+| `herebem` | *again* | 🔁: the same thing once more |
+
+> `zazawan habedum vowogal.`
+>
+> z-Azawan | h-kind-of | v-walk
+>
+> "Azawan kind of walks."
+
+> `zodogal herebem varahal.`
+>
+> z-dog | h-again | v-run
+>
+> "The dog runs again."
+
 ### Leaving out who acts {#no-subject}
 
 English uses the passive (*The cat was seen*, *Mistakes were made*) to avoid naming who acted. Agazan simply leaves out the `/z/` word. The verb and its object stay the same, and the sentence says nothing about who did it.
