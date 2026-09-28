@@ -10,52 +10,55 @@ SMALLCAPS tags and series names as the lessons print them.
 
 ### Mood tags
 
-Closed labels for psychological moods, poles, and emotion-compose pieces. Mood words are [stance](#stance) `/th/`, not ordinary [adverb](#adverb) `/h/`. Poles also take `/ɡ/` on a noun host; **SAME** is `/ɡ/`, and the *as-of* pair is `/h/`.
+SMALLCAPS labels as morph lines print them: psychological moods, evidentials, emotion-compose pieces, and span / island / name groups. Mood words are [stance](#stance) `/th/`, not ordinary [adverb](#adverb) `/h/`. Each example is a form from the teaching page.
 
-| Label | Gloss | Teach |
-|-------|-------|--------|
-| **AIMED** | Emotion locus: aimed at a target | [Interests](interests.md#emotion-compose) |
-| **ABIL** | Hostless *can* / *can’t* fallback **`eze`** | [Ability](intention.md#ability-fallback) |
-| **ACT** | Emotion-compose arousal (HIGH / MED / LOW) | [Interests](interests.md#emotion-compose) |
-| **AS-OF** | Whose-now pole: ledger **`ene`** / bookmark **`ume`** | [Relations](relations.md#as-of) |
-| **ALTHOUGH** | Clause-pole **`aze`** (*although* / NP *despite*) | [Dependents](dependents.md#dependent-clauses) |
-| **BECAUSE** | Clause-pole **`era`** (*because*) | [Causation](causation.md#because) |
-| **CAUSE** | Mechanism-framing mood **`ege`** | [Causation](causation.md#cause) |
-| **CAUGHT** | Emotion locus: feeling picked up from others | [Interests](interests.md#emotion-compose) |
-| **CIRCUM** | Emotion locus: the atmosphere of the situation | [Interests](interests.md#emotion-compose) |
-| **COLLECTIVE** | Emotion locus: the group's feeling, shared as a member | [Interests](interests.md#emotion-compose) |
-| **MAY** | Potential mood **`ovo`** (*could be*; I'll find out / default / who knows) | [Knowing](knowing.md#may) |
-| **COMMON** | Universality: usual, exceptions expected | [Knowing](knowing.md#universality) |
-| **DECISION** | Pick-firmness mood **`eha`** | [Intention](intention.md#decision) |
-| **FELT** | Evidential: gut / body knowing | [Knowing](knowing.md#evidentiality) |
-| **FORMAL** | Universality: definition / math / proof | [Knowing](knowing.md#universality) |
-| **FORMER** | Episode standing: not the climate claimed now **`une`** | [Knowing](knowing.md#former-climate) |
-| **HIGH** / **MED** / **LOW** | Emotion ACT roots | [Interests](interests.md#emotion-compose) |
-| **IF** | Clause-pole **`odo`** (one-way *if*) | [Causation](causation.md#if) |
-| **IFF** | Clause-pole **`ewu`** | [Causation](causation.md#iff) |
-| **INFERRED** | Evidential: reasoned from clues | [Knowing](knowing.md#evidentiality) |
-| **INTERNAL** | Emotion locus: mine, held inside | [Interests](interests.md#emotion-compose) |
-| **LIVE** | Evidential: concurrent / in-view observation | [Knowing](knowing.md#live-vs-memory) |
-| **LOCUS** | Emotion-compose hook vowels: where the charge sits or what it points at | [Interests](interests.md#emotion-compose) |
-| **NATURAL** | Universality: natural necessity | [Knowing](knowing.md#universality) |
-| **NOTIONAL** | As-if / pretense mood **`ove`** | [Knowing](knowing.md#notional) |
-| **ONLY-IF** | Clause-pole **`ebo`** (*only if* / *needs*) | [Causation](causation.md#only-if) |
-| **ON-BEHALF** | Emotion locus: felt for someone's sake | [Interests](interests.md#emotion-compose) |
-| **PATTERN** | Evidential: from regularity | [Knowing](knowing.md#evidentiality) |
-| **PLAN** | Intention-framing mood **`uma`** | [Intention](intention.md#plan-predict) |
-| **REACHING** | Emotion locus: reaching to change a target | [Interests](interests.md#emotion-compose) |
-| **RECORDED** | Evidential: documented / playback / scheduled | [Knowing](knowing.md#evidentiality) |
-| **RESIDUE** | Episode standing: outcome still on the current tally **`amo`** | [Knowing](knowing.md#residue) |
-| **RESISTING** | Emotion locus: pushing against a target | [Interests](interests.md#emotion-compose) |
-| **ROLE** | Emotion locus: felt in a capacity, not personally | [Interests](interests.md#emotion-compose) |
-| **RULE** | Universality: holds inside a named frame | [Knowing](knowing.md#universality) |
-| **SAME** | Identity copula **`oga`** | [Predication](predication.md#identity) |
-| **SO-THAT** | Clause-pole **`ago`** (*so that* / NP intended *for*) | [Dependents](dependents.md#so-that) |
-| **STORY** | Evidential: narrative / lore | [Knowing](knowing.md#evidentiality) |
-| **TOLD** | Evidential: hearsay | [Knowing](knowing.md#evidentiality) |
-| **UNCOUNTERED** | Universality: no counterexample comes to mind | [Knowing](knowing.md#universality) |
-| **UNPLACED** | Emotion locus: source can't be placed | [Interests](interests.md#emotion-compose) |
-| **WITNESSED** | Evidential: firsthand memory (reconstructive) | [Knowing](knowing.md#live-vs-memory) |
+| Label | Gloss | Example | Teach |
+|-------|-------|---------|-------|
+| **ABIL** | Hostless *can* / *can’t* (no single verb) | `thezexel` | [Intention](intention.md#ability-fallback) |
+| **AIMED** | Emotion locus: aimed at a target | `wonathumol` | [Interests](interests.md#emotion-compose) |
+| **ASIDE** | Span TYPE **e**: an aside | `th(hazaham)` | [Spans](spans.md#asides) |
+| **ATTEMPT** | Try mood: committed / unstated / trial run | `thudom` | [Intention](intention.md#try) |
+| **CAUGHT** | Emotion locus: picked up from others, not mine | `wonathumuom` | [Interests](interests.md#emotion-compose) |
+| **CAUSE** | Mechanism-framing mood (*make X do*) | `thegem` | [Causation](causation.md#cause) |
+| **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuduthuraor` | [Interests](interests.md#emotion-compose) |
+| **CITE** | Span TYPE **a**: a citation | `d[azawan]` | [Spans](spans.md#shape) |
+| **COLLECTIVE** | Emotion locus: the group's feeling, shared as a member | `wonathumuar` | [Interests](interests.md#emotion-compose) |
+| **COMMON** | Universality: usual, exceptions expected | `thogol` | [Knowing](knowing.md#universality) |
+| **CONSENT** | Consent of the affected party | `thuxegam` | [Interests](interests.md#consent) |
+| **DECISION** | Pick-firmness mood | `theham` | [Intention](intention.md#decision) |
+| **FELT** | Evidential: gut / body knowing | `thahum` | [Knowing](knowing.md#evidentiality) |
+| **FLOWING** | Emotion motion: a current you can ride | `wonathumem` | [Interests](interests.md#emotion-compose) |
+| **FORBID** | Permission, negative | `therel` | [Interests](interests.md#permission) |
+| **FORMAL** | Universality: definition / math / proof | `thazal` | [Knowing](knowing.md#universality) |
+| **FORMER** | Episode standing: not the climate claimed now | `thunem` | [Knowing](knowing.md#residue) |
+| **INFERRED** | Evidential: reasoned from clues | `thevem` | [Knowing](knowing.md#evidentiality) |
+| **INTERNAL** | Emotion locus: mine, held inside | `guduthamar` | [Interests](interests.md#emotion-compose) |
+| **LIVE** | Evidential: concurrent / in-view observation | `thodum` | [Knowing](knowing.md#evidentiality) |
+| **MAY** | Potential mood (*could be*; find out / default / who knows) | `thovom` | [Knowing](knowing.md#may) |
+| **MENTION** | Span TYPE **o**: a mention | `z{odoga}` | [Spans](spans.md#shape) |
+| **NAME** | A package titled with **-n** | `zebewel zabedel zan.` | [Joins](joins.md#named-list) |
+| **NATURAL** | Universality: natural necessity | `thalul` | [Knowing](knowing.md#universality) |
+| **NOTIONAL** | As-if / pretense mood | `thovem` | [Knowing](knowing.md#notional) |
+| **ON-BEHALF** | Emotion locus: felt for someone's sake | `wonathumem` | [Interests](interests.md#emotion-compose) |
+| **OPAQUE** | Span TYPE **u**: foreign or opaque writing | <code>d&lt;kimchi&gt;</code> | [Spans](spans.md#loans) |
+| **PATTERN** | Evidential: from regularity | `thabem` | [Knowing](knowing.md#evidentiality) |
+| **PERMIT** | Permission, positive | `thegal` | [Interests](interests.md#permission) |
+| **PLAN** | Intention-framing mood | `thumam` | [Intention](intention.md#plan-predict) |
+| **REACHING** | Emotion locus: reaching to change a target | `wonathumoer` | [Interests](interests.md#emotion-compose) |
+| **RECORDED** | Evidential: documented / playback / scheduled | `therum` | [Knowing](knowing.md#evidentiality) |
+| **RESIDUE** | Episode standing: outcome still on the current tally | `thamom` | [Knowing](knowing.md#residue) |
+| **RESISTING** | Emotion locus: pushing against a target | `wonathumuer` | [Interests](interests.md#emotion-compose) |
+| **ROLE** | Emotion locus: felt in a capacity, not personally | `wonathumael` | [Interests](interests.md#emotion-compose) |
+| **RULE** | Universality: holds inside a named frame | `thebel` | [Knowing](knowing.md#universality) |
+| **SAME** | Identity copula | `gogal` | [Predication](predication.md#identity) |
+| **SCOPE** | Scope island `^ … ^` | `^ hegewem zodogal geredal ^` | [Spans](spans.md#scope-islands) |
+| **STILL** | Emotion motion: muted, faint, numb | `wonathumol` | [Interests](interests.md#emotion-compose) |
+| **STORY** | Evidential: narrative / lore | `thazom` | [Knowing](knowing.md#evidentiality) |
+| **SURGING** | Emotion motion: big, spiking, in waves | `wuduthuraor` | [Interests](interests.md#emotion-compose) |
+| **TOLD** | Evidential: hearsay | `themam` | [Knowing](knowing.md#evidentiality) |
+| **UNCOUNTERED** | Universality: no counterexample comes to mind | `thehol` | [Knowing](knowing.md#universality) |
+| **UNPLACED** | Emotion locus: can't place where it comes from | `wuduthurul` | [Interests](interests.md#emotion-compose) |
+| **WITNESSED** | Evidential: firsthand memory (reconstructive) | `thunom` | [Knowing](knowing.md#evidentiality) |
 
 **Compare with:** [quasi](#quasi) (`ROOTl-e-`) is not **NOTIONAL**.
 
@@ -90,7 +93,7 @@ From [numbers](numbers.md#marker-vowel-referential-identity): **scalar** (`+` / 
 
 Hosted *can* / *can’t* (`xa` / `xe` / `xo` / `xu`) and hostless **ABIL**.
 
-[Ability](intention.md#ability)
+[Intention](intention.md#ability)
 
 ### Act word
 
@@ -144,7 +147,7 @@ How many items sit before a join: **list** (2+), **single-item** (1), **standalo
 
 Complex `/h/` + `/b/` (**`hahehom`**) *as for X*.
 
-[Clause](say-people-places.md#as-for)
+[People, things and places](say-people-places.md#as-for)
 
 **Compare with:** interest [met](#met-unmet-motive-prescription-interests) / unmet on `/ɡ/` is how an interest stands toward a noun, not *as for*.
 
@@ -215,9 +218,9 @@ Kind / role as predicative `/ɡ/` (no *to-be* verb).
 
 ### Clause pole / NP pole
 
-Condition vs outcome as NPs vs full sentences after **`barl`**. **Clause pole** is the causation reading. Concession **`aze`** uses the same NP vs clause split (*despite Alahen* vs *although Alahen walks*). Intended outcome **`ago`** uses it too (*for a money-bag* vs *so that Alahen sits*).
+Condition vs outcome as NPs vs full sentences after **`barl`**. **Clause pole** is the causation reading. Concession **`hazem`** uses the same NP vs clause split (*despite Alahen* vs *although Alahen walks*). Intended outcome **`hagom`** uses it too (*for a money-bag* vs *so that Alahen sits*).
 
-[Causation](causation.md)
+[Causation](causation.md), [dependents](dependents.md#dependent-clauses)
 
 ### Clusivity
 
@@ -303,7 +306,7 @@ Advanced free-number specials (`+e`, `-e-`, `+0e`, …). **Just short** is free 
 
 Set **`a`** + singular SHARED = *both/each are ADJ*.
 
-[Comparatives](say-amounts.md#distributive-both)
+[Amounts, sizes and time](say-amounts.md#distributive-both)
 
 ### Domain / generic / *every K*
 
@@ -327,9 +330,9 @@ Final **-l / -m / -n / -r** (plus optional **-x**). **Word endings** names the c
 
 ### Epistemic *because*
 
-Reason for the *could be* (**MAY**), not world **BECAUSE**.
+Reason for the *could be* (**MAY**), not a *because* about the world (`theram`).
 
-[Causation](say-reasons.md#epistemic-because)
+[Reasons, knowledge and plans](say-reasons.md#epistemic-because)
 
 ### Equative
 
@@ -381,7 +384,7 @@ Hosted **`homem`** / **`gomem`** plus model `/b/` (*like* a duck / *like* Azawan
 
 ### Exchange (*for*)
 
-Hosted **`hogem`** / **`gogem`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not interests motive **`tho`**, not intended-outcome **`ago`**.
+Hosted **`hogem`** / **`gogem`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not interests motive **`tho`**, not intended-outcome [**`hagom`**](dependents.md#so-that).
 
 [Relations](relations.md#exchange)
 
@@ -399,9 +402,9 @@ Hosted `/h/` or `/ɡ/` plus `/b/` for English *of* that is not ownership or a pl
 
 ### Factivity
 
-Whether **IF** vs **BECAUSE** treats the dependent as asserted.
+Whether *if* vs *because* treats the dependent as asserted.
 
-[Causation](say-reasons.md#factivity)
+[Reasons, knowledge and plans](say-reasons.md#factivity)
 
 ### Fill-ask / fill-all
 
@@ -444,7 +447,7 @@ A named citation is a hello (`azawan.`). Add mid-word **`x`** plus **`a`** / **`
 
 Content root an interest `th`-stance, an ability `x`-stance, or a numeric-derivation join attaches to.
 
-[Ability](intention.md#ability), [interests](interests.md), [numeric derivation](numeric-derivation.md)
+[Intention](intention.md#ability), [interests](interests.md), [numeric derivation](numeric-derivation.md)
 
 **Compare with:** a measure [unit](#measure-phrase-unit) is not a host. Classification names the classified noun, not a host.
 
@@ -512,7 +515,7 @@ Content endings **-l / -m / -n / -r**.
 
 Amount + lexicon unit noun (published abstract = unit name).
 
-[Numbers applied](numbers-applied.md#measure-phrases)
+[Numbers in use](numbers-applied.md#measure-phrases)
 
 ### Met / unmet / motive / prescription (interests)
 
@@ -526,7 +529,7 @@ Interest stances **`tha` / `thu`** (Beginner); **`the`** / **`tho`** (Intermedia
 
 Short **-n** label for a long title.
 
-[Word endings](say-people-places.md#named-handles)
+[People, things and places](say-people-places.md#named-handles)
 
 ### Named list
 
@@ -552,7 +555,7 @@ Number word under `/v/` `/h/` `/th/` `/y/` `/x/`.
 
 Number problem / solution / goal candidates with free ordinals.
 
-[Numbers in use](say-amounts.md#numbered-alternatives)
+[Amounts, sizes and time](say-amounts.md#numbered-alternatives)
 
 **Compare with:** clause *so that* is [**`hagom`**](dependents.md#so-that), not the goal noun **`agol`**.
 
@@ -606,7 +609,7 @@ Motive **`tho`** endings.
 
 Word-order highlighting (not join arity).
 
-[Clause](clause.md#word-order-emphasis), [as-for](say-people-places.md#as-for)
+[Clause](clause.md#word-order-emphasis), [people, things and places](say-people-places.md#as-for)
 
 ### Quasi
 
@@ -618,7 +621,7 @@ Derivation `ROOTl-e-` (and quasi-N).
 
 Numeric from–to; clock/date from–to.
 
-[Numbers applied](numbers-applied.md#ranges), [time](numbers-applied.md#time)
+[Numbers in use](numbers-applied.md#ranges), [time](numbers-applied.md#time)
 
 ### Rank join / set join / SHARED
 
@@ -659,7 +662,7 @@ Prefix-less *including / rather / instead / except*, discourse glue, extra-noun 
 
 `a/e/u/o x ROOT` ( **`o`** is also reltum on a relation stem).
 
-[Roles](roles.md#role-compounds)
+[Role compounds](roles.md#role-compounds)
 
 **Compare with:** *sitting guard* / *teacher* is this stem on `/ɡ/` with a non-resume ending ([which noun, with resume and kinds](say-people-places.md#which-noun-intermediate)). Resume **-r** is *the one teaching* (this instance), not the kind.
 
@@ -683,7 +686,7 @@ Word-initial job letter.
 
 ### So that / event purpose
 
-Clause-pole **`ago`**: intended outcome of the host (*so that Alahen sits*; NP *for a money-bag*). Not locative *toward*, not interest **`tho`**, not discourse *therefore*.
+Clause-pole **`hagom`**: intended outcome of the host (*so that Alahen sits*; NP *for a money-bag*). Not locative *toward*, not interest **`tho`**, not discourse *therefore*.
 
 [Dependents](dependents.md#so-that)
 
@@ -697,7 +700,7 @@ Clause join **-n** (`xan` *and then*).
 
 After-join `/ɡ/` (quality / continuum) or manner `/h/`: comparatives vs ranges.
 
-[Comparatives](comparatives.md), [numbers applied](numbers-applied.md#ranges)
+[Comparatives](comparatives.md), [numbers in use](numbers-applied.md#ranges)
 
 ### Span / span open
 
@@ -760,7 +763,7 @@ A proper-name phrase whose **-n** sits on the hook, join, or span; inner words k
 
 Single-item rank with a number = bound on a line.
 
-[Numbers applied](numbers-applied.md)
+[Numbers in use](numbers-applied.md)
 
 ### Turn (`/y/`)
 
@@ -796,7 +799,7 @@ Interest + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`gobom`** + 
 
 DIR × ANCHOR; the anchor sets the facing frame (person or oriented object); the ending refers to the anchor, not DIR.
 
-[Roles](roles.md#viewpoint-laterals)
+[Role compounds](roles.md#viewpoint-laterals)
 
 ### Vocative
 

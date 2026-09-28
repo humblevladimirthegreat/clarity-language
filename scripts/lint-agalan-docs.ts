@@ -52,6 +52,7 @@ import {
   withinSection,
 } from "../src/lint/learning-order.js";
 import { duplicateIds } from "../src/lint/grammar-anchors.js";
+import { glossLabels, lintTerminology, TERMINOLOGY_PAGE } from "../src/lint/terminology-docs.js";
 import { lintRetieFormat } from "../src/lint/retie-format.js";
 import { constructionFamilies, drillCoverage, drillSkips, duplicateDrills } from "../src/lint/drill-coverage.js";
 import { CONSTRUCTIONS as STATIC_CONSTRUCTIONS, constructionRegistry } from "../src/parse/constructions.js";
@@ -397,6 +398,21 @@ function main(): void {
     }
   }
 
+  let terminologyCount = 0;
+  const terminology = pageMarkdown.get(TERMINOLOGY_PAGE);
+  if (terminology !== undefined) {
+    const names = new Map<string, string>();
+    for (const [page, md] of pageMarkdown) {
+      const h1 = /^# (.+)$/m.exec(md)?.[1];
+      if (h1) names.set(page, h1.replace(/\s*\{#[^}]+\}\s*$/, "").trim());
+    }
+    for (const item of readingOrder) names.set(sidebarPage(item.link), item.text);
+    for (const finding of lintTerminology(terminology, pageMarkdown, tables, glossLabels(tables.overlays.values()), names)) {
+      terminologyCount += 1;
+      console.error(`docs/grammar/${TERMINOLOGY_PAGE}:${lineNumberAt(terminology, finding.index)}  terminology  (${finding.detail})`);
+    }
+  }
+
   let coverageCount = 0;
   let orderCount = 0;
   let drillCount = 0;
@@ -422,6 +438,9 @@ function main(): void {
     console.error(
       `\n${retieFormatCount} retie-format issue(s). Pin an English heading id, put Agalan in backticks, or fix the shared-prefix mark (docs/meta/grammar-docs.md).`,
     );
+  }
+  if (terminologyCount > 0) {
+    console.error(`\n${terminologyCount} terminology.md issue(s). Update the entry to match its teaching page.`);
   }
   if (morphCount > 0) {
     console.log(`\n${morphCount} morph-gloss issue(s).`);
@@ -452,6 +471,7 @@ function main(): void {
     duplicateIdCount +
     retieFormatCount +
     morphCount +
+    terminologyCount +
     bankCount +
     speechCount +
     coverageCount +

@@ -1639,3 +1639,18 @@ function numberSurfaceSuffix(raw: string, stem: NumberStem, ctx: MorphGlossConte
   if (spelled) return short ? ".spelled" : "";
   return short ? "" : ".short";
 }
+
+/**
+ * SMALLCAPS labels the morph line prints from its own tables (overlay glosses add the
+ * rest). terminology.md must list each one (src/lint/terminology-docs.ts).
+ */
+export const MORPH_GLOSS_LABELS: readonly string[] = [
+  ...new Set([
+    ...Object.values(EMOTION_LOCUS),
+    ...Object.values(EMOTION_MOTION),
+    ...Object.values(WRITTEN_SPAN),
+    "ABIL",
+    "SCOPE",
+    "NAME",
+  ]),
+];

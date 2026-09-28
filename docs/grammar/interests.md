@@ -317,6 +317,11 @@ The tail goes on met **`tha`**, motive **`tho`**, and unmet **`thu`** words. Pre
 | `zozazom wonathumuar gobom` | *our resentment about the division* (unmet relatedness; the group's, and I share it; surging) |
 | `zebeyum guduthamar` | *proud of the draft* (met competence; held inside; surging) |
 | `zemehol wonathumem gobom bazawan` | *upset for Azawan about the memo* (unmet relatedness; on Azawan's behalf; flowing) |
+| `zezebel wonathumuom gobom balahen` | *irritated about the dialogue, caught from Alahen* (unmet relatedness; not mine, picked up from Alahen; flowing) |
+| `zezebel wonathumael gobom` | *displeased with the dialogue as my job, not personally* (unmet relatedness; in my role; still) |
+| `zemehol wonathumoer gobom` | *unhappy with the memo and pressing to change it* (unmet relatedness; reaching toward the memo; surging) |
+| `zemehol wonathumuer gobom` | *objecting to the memo* (unmet relatedness; pushing against the memo; surging) |
+| `zezebel wuduthurul gobom` | *uneasy about the dialogue, and I can't say why* (competence at stake, temporary; unplaced; still) |
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
 

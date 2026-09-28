@@ -1,0 +1,70 @@
+import assert from "node:assert/strict";
+import { describe, it } from "node:test";
+
+import { loadDefaultTables } from "../parse/index.js";
+
+import { glossLabels, lintTerminology } from "./terminology-docs.js";
+
+const tables = loadDefaultTables();
+
+const INTERESTS = [
+  "# Interests",
+  "",
+  "### Emotion compose {#emotion-compose}",
+  "",
+  "`zebeyum guduthamar` and `wuduthuraor`.",
+].join("\n");
+
+function terminology(rows: string[], body = ""): string {
+  return ["# Terminology", "", "### Mood tags", "", "| Label | Gloss | Example | Teach |", "|---|---|---|---|", ...rows, "", body].join("\n");
+}
+
+function lint(markdown: string, labels: string[]) {
+  const pages = new Map([["interests.md", INTERESTS], ["terminology.md", markdown]]);
+  return lintTerminology(markdown, pages, tables, new Set(labels), new Map([["interests.md", "Interests"]])).map((f) => f.detail);
+}
+
+const INTERNAL = "| **INTERNAL** | held inside | `guduthamar` | [Interests](interests.md#emotion-compose) |";
+
+describe("lintTerminology", () => {
+  it("passes a current row", () => {
+    assert.deepEqual(lint(terminology([INTERNAL]), ["INTERNAL"]), []);
+  });
+
+  it("collects overlay and glosser labels", () => {
+    const labels = glossLabels(tables.overlays.values());
+    for (const label of ["WITNESSED", "PERMIT", "INTERNAL", "SURGING", "CITE"]) assert.ok(labels.has(label), label);
+  });
+
+  it("flags a printed label with no row", () => {
+    assert.match(lint(terminology([INTERNAL]), ["INTERNAL", "CIRCUM"]).join("\n"), /print CIRCUM/);
+  });
+
+  it("flags a row whose example lacks the label or is not on the page", () => {
+    const wrong = "| **CIRCUM** | atmosphere | `guduthamar` | [Interests](interests.md#emotion-compose) |";
+    assert.match(lint(terminology([wrong]), ["CIRCUM"]).join("\n"), /without CIRCUM/);
+    const missing = "| **CIRCUM** | atmosphere | `wuduthuraol` | [Interests](interests.md#emotion-compose) |";
+    assert.match(lint(terminology([missing]), ["CIRCUM"]).join("\n"), /does not appear on interests\.md/);
+  });
+
+  it("flags a row no morph line prints and the page never uses", () => {
+    const stale = "| **ACT** | arousal | `guduthamar` | [Interests](interests.md#emotion-compose) |";
+    assert.match(lint(terminology([stale]), []).join("\n"), /drop the row/);
+  });
+
+  it("flags stale forms, bare roots, anchors and link names in entries", () => {
+    const body = [
+      "### Emotion",
+      "",
+      "Say `wonathumer` with **ACT**; the root `ezebe`.",
+      "",
+      "[Feelings](interests.md#nowhere)",
+    ].join("\n");
+    const out = lint(terminology([INTERNAL], body), ["INTERNAL"]).join("\n");
+    assert.match(out, /`wonathumer` does not appear/);
+    assert.match(out, /\*\*ACT\*\*/);
+    assert.match(out, /bare root `ezebe`/);
+    assert.match(out, /interests\.md#nowhere is not an anchor/);
+    assert.match(out, /link text "Feelings"/);
+  });
+});
