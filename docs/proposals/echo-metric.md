@@ -1,7 +1,7 @@
 # Proposal: pronunciation-based English echo
 
 **Status:** Step 1 APPLIED (2026-09-28): 115 `concrete` labels renamed in place (no `echo_word` column); Step 2 APPLIED (2026-09-28): CMU lookup + phoneme map; Step 3 APPLIED (2026-09-28): pronunciation metric, tuned on agent-drafted, editor-accepted ratings; Step 4 APPLIED (2026-09-28): the converter builds candidates from phonemes and ranks them with the metric. The published lexicon is not rewritten yet.  
-**Related:** `lexicon-revamp.md` (its dry run introduced the first echo metric), [data/lexicon-published.csv](../../data/lexicon-published.csv), [scripts/prototype-lexicon-revamp.ts](../../scripts/prototype-lexicon-revamp.ts), [src/word-converter.ts](../../src/word-converter.ts)
+**Related:** `lexicon-revamp.md` (its dry run introduced the first echo metric), [data/lexicon-published.csv](../../data/lexicon-published.csv), [src/lexicon-place.ts](../../src/lexicon-place.ts), [src/word-converter.ts](../../src/word-converter.ts)
 
 ## Motivation
 
@@ -37,7 +37,7 @@ Renaming `concrete` affects docs: translation **Roots used here** lines must mat
 
 Use the **CMU Pronouncing Dictionary** (about 134,000 words, including many names; permissive licence; one text file, downloaded to `tmp/` like the frequency list — no new library). Each word is a phoneme string with a stress mark on each vowel: *smile* = `S M AY1 L`, *hippopotamus* = `HH IH2 P AH0 P AA1 T AH0 M AH0 S` (`1` = primary stress, `2` = secondary, `0` = unstressed).
 
-**Status:** APPLIED (2026-09-28) as [scripts/echo-pronunciation.ts](../../scripts/echo-pronunciation.ts) → `tmp/echo-pron/pron.csv` + `report.md`.
+**Status:** APPLIED (2026-09-28). Pronunciations are `tmp/echo-pron/pron.csv` (the one-off builder script was removed after the table was written).
 
 - **Build temporarily ignored:** while this work only edits the lexicon, `npm run build` is not run and its doc failures (glosses and **Roots used here** lines that still use old labels) are expected. Docs are retied in one pass once the lexicon settles.
 - **Variant:** score the **first** CMU pronunciation, except where the script's `VARIANTS` picks the right sense (*tear* = *teer*, *wind* = air, *id* / *un* / *us* = letters, *st* = *saint*, *record* = noun). The CMU download is pinned to cmudict commit `7479086`.
@@ -67,7 +67,7 @@ Use the **CMU Pronouncing Dictionary** (about 134,000 words, including many name
 
 ## Step 3: a better metric
 
-**Status:** APPLIED (2026-09-28) as [scripts/echo-metric.ts](../../scripts/echo-metric.ts) → `tmp/echo-pron/metric.csv` + `metric.md`. The phoneme map moved to [scripts/echo-pronunciation-map.ts](../../scripts/echo-pronunciation-map.ts), and `pron.csv` now marks word breaks with `|`. The lexicon dry run uses the metric with `--pron-echo`.
+**Status:** APPLIED (2026-09-28) as [src/echo-metric.ts](../../src/echo-metric.ts). `pron.csv` marks word breaks with `|`. Placement uses this metric.
 
 Echo is always scored against the **concrete** sense: the root is built from it, and the concrete label is what a learner hooks the root onto. Rows whose abstract sense is the main use (`agala` is mostly *clarity*) are no exception.
 

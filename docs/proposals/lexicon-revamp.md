@@ -1,7 +1,7 @@
 # Proposal: lexicon revamp — confusion-aware root spelling
 
 **Status:** PROPOSED — prototype only (2026-09-27); nothing under `data/` or `docs/grammar/` has changed. Revised: 3-letter roots are generated only for overlay-backed and explicitly marked rows, under provable per-group distance floors; pins are optional overrides. Dry run (2026-09-28) of the whole lexicon: see [Dry run findings](#dry-run-findings); it changes several rules below.  
-**Related:** `j-to-y.md` (this revamp is its Phase 4 batch), [data/lexicon-published.csv](../../data/lexicon-published.csv), [data/lexicon-overlays.csv](../../data/lexicon-overlays.csv), [phonology.md](../grammar/phonology.md#phonotactics), [scripts/prototype-semantic-roots.ts](../../scripts/prototype-semantic-roots.ts), [scripts/prototype-lexicon-revamp.ts](../../scripts/prototype-lexicon-revamp.ts), [src/word-converter.ts](../../src/word-converter.ts)
+**Related:** `j-to-y.md` (this revamp is its Phase 4 batch), [data/lexicon-published.csv](../../data/lexicon-published.csv), [data/lexicon-overlays.csv](../../data/lexicon-overlays.csv), [phonology.md](../grammar/phonology.md#phonotactics), [src/lexicon-place.ts](../../src/lexicon-place.ts), [src/word-converter.ts](../../src/word-converter.ts)
 
 ## Motivation
 
@@ -202,7 +202,7 @@ The generator's consonant inventory uses `y`, not `j`. Collision checks run on t
 
 ## Prototype results
 
-`node scripts/prototype-semantic-roots.ts --spread` writes `tmp/semantic-roots-spread.csv` (old → new per root) and a report. Figures cover the 1,079 roots in the scheme, excluding flags and `agala`. They were measured **before** the short-root revision and under an earlier distance that scored some letter pairs as half a letter, so the thresholds below don't map exactly onto the current rules: the prototype still lets any current VCV try length 3 before growing to 5, and has no grammatical groups.
+The earlier domain-letter prototype (`prototype-semantic-roots.ts`, removed) wrote `tmp/semantic-roots-spread.csv` (old → new per root) and a report. Figures cover the 1,079 roots in the scheme, excluding flags and `agala`. They were measured **before** the short-root revision and under an earlier distance that scored some letter pairs as half a letter, so the thresholds below don't map exactly onto the current rules: the prototype still lets any current VCV try length 3 before growing to 5, and has no grammatical groups.
 
 | Close pairs | Now | Option A | Option B |
 |------------------|-----|----------|----------|
@@ -217,7 +217,7 @@ Other modes: the default run is option A. `--strict-domain` (option A, plus no o
 
 ## Dry run findings
 
-`node scripts/prototype-lexicon-revamp.ts` respells the whole current lexicon under this proposal and writes `tmp/lexicon-revamp/`: new `lexicon-published.csv` (with `short` / `pinned` / `slot` / `priority` columns), `lexicon-overlays.csv` (with `subkind`), `lexicon-compounds.csv`, an empty `reserved-roots.csv`, `root-changes.csv` (old → new per root, with the reason) and `report.md` (budget, checks, every short-root group with its closest pair, letter statistics). Nothing under `data/` changes. It was tuned over several runs; what those runs taught:
+The dry-run script (`prototype-lexicon-revamp.ts`, removed) respelled the lexicon into `tmp/lexicon-revamp/`: new `lexicon-published.csv` (with `short` / `pinned` / `slot` / `priority` columns), `lexicon-overlays.csv` (with `subkind`), `lexicon-compounds.csv`, an empty `reserved-roots.csv`, `root-changes.csv` (old → new per root, with the reason) and `report.md` (budget, checks, every short-root group with its closest pair, letter statistics). Nothing under `data/` changes. It was tuned over several runs; what those runs taught:
 
 ### Regenerate from English, don't respell
 
