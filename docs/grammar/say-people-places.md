@@ -61,6 +61,32 @@ English uses the same *who* clause for two jobs. When it picks out **which** one
 
 **Compare with:** ordinary `gehahel` is *chair* / *position* as a property, not *sitting*. [Restrictors](restrictors.md) say when a **claim** counts (*never*, *only when raining*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the **same** first noun still need another sentence ([complex chaining](clause.md#complex-chaining)).
 
+### Stacked owners (*Azawan's dog's bone*) {#stacked-owners}
+
+**Needs:** [Ownership](joins.md#scope-fence-p-join) · [Sequence `oe`](joins.md#sequence-oe)
+
+When English stacks possessives, keep one **`gegabem`** and list every owner in its `/b/`, closed by the sequence join **`boel`**. Put the **nearest** owner first: the first `/b/` owns the host, and each later `/b/` owns the one before it.
+
+> `zabol gegabem bodogal bazawan boel.`
+>
+> z-bone | [g-ownership | [b-dog | b-Azawan | b-in-order]]
+>
+> "Azawan's dog's bone."
+
+**Compare with:** a set join in the same slot (`bodogal bazawan bal`) says both own the bone directly. Only the sequence says *owned by the dog, which Azawan owns*.
+
+### *The day when …* {#day-when}
+
+**Needs:** [Adverbs](clause.md#adverbs-h) · [Resume](pronouns.md#resume-r)
+
+English *the day when* / *the place where* is two sentences. Name the time or place first, then resume it with **-r** in `/h/` in the next sentence: *on that day*.
+
+> `zalahen vahahal dazazam. zazawan vowogal hazazar.`
+>
+> z-Alahen | v-see | d-day . z-Azawan | v-walk | h-←day.full
+>
+> "Alahen sees the day when Azawan walks."
+
 ### Different from {#different}
 
 **Needs:** [Similative](relations.md#similative) · [Negation `u`](joins.md#negation-u)

@@ -78,18 +78,29 @@ describe("resolve — content anaphors (pronouns.md)", () => {
     assert.equal(anaphors[0]!.antecedent, undefined);
   });
 
+  it("binds a short ability resume and keeps the ability (intention.md#ability)", () => {
+    const { anaphors } = resolveOf("zazawan vowogaxal. zugobon vowoxar.");
+    assert.equal(anaphors[0]!.pronoun.raw, "vowoxar");
+    assert.equal(anaphors[0]!.match, "letter");
+    assert.equal(anaphors[0]!.antecedent?.raw, "vowogaxal");
+  });
+
+  it("binds a short ability resume whose stem spells eze to the verb", () => {
+    const { anaphors } = resolveOf("zazawan vezehexal. zugobon vezexar.");
+    assert.equal(anaphors[0]!.match, "letter");
+    assert.equal(anaphors[0]!.antecedent?.raw, "vezehexal");
+  });
+
   it("does not bind statement zar as a content anaphor", () => {
     const { anaphors, asks } = resolveOf("zar vawalal.");
     assert.equal(anaphors.length, 0);
     assert.equal(asks[0]!.kind, "none");
   });
 
-  it("does not bind value-channel -r as an anaphor", () => {
-    const { anaphors } = resolveOf("zazawan halorodoxar.");
-    assert.equal(
-      anaphors.filter((a) => a.pronoun.raw === "halorodoxar").length,
-      0,
-    );
+  it("leaves an opening full-root ability resume unresolved", () => {
+    const { anaphors } = resolveOf("zazawan vowogaxar.");
+    assert.equal(anaphors[0]!.pronoun.raw, "vowogaxar");
+    assert.equal(anaphors[0]!.antecedent, undefined);
   });
 });
 

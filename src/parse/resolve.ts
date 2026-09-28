@@ -92,6 +92,8 @@ function contentRoots(word: LexWord): string[] {
     return [...family.leftRoots, ...(family.rightRoots ?? [])];
   }
   if (family.kind === "x" && family.xFamily === "numeric") return family.leftRoots;
+  // Ability host (`vezehexal`): a resume keeps the *can* ([intention.md](docs/grammar/intention.md#incapability)).
+  if (family.kind === "x" && family.xFamily === "ability") return family.leftRoots;
   return [];
 }
 
@@ -180,7 +182,7 @@ function isRoleAnaphor(word: LexWord): boolean {
 
 function isContentAnaphor(word: LexWord): boolean {
   if (word.ending !== "r") return false;
-  if (word.reading === "sake" || word.reading === "ability") return false;
+  if (word.reading === "sake") return false;
   if (word.reading === "restrictor" || word.reading === "mood") return false;
   if (word.family.kind === "joinMarker") return false;
   if (word.family.kind === "hook" || word.family.kind === "spanClose") return false;

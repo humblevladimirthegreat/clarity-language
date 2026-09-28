@@ -242,6 +242,14 @@ The ending still belongs to that verb or adjective (**-l** concrete, **-m** abst
 >
 > "Alahen can express themself."
 
+For English *so can I* / *can too*, [resume](pronouns.md#resume-r) the verb and keep the **`x`** and vowel: the short stem, then **`x`**, the vowel, and **-r**. A plain resume would drop the *can*.
+
+> `zazawan vowogaxal. zalahen vowoxar.`
+>
+> z-Azawan | v-walk-able . z-Alahen | v-←walk-able
+>
+> "Azawan can walk, and so can Alahen."
+
 #### Can be (role + ability)
 <a id="role-ability"></a>
 

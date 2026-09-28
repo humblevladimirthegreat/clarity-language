@@ -100,10 +100,20 @@ const HOUSE_CAST_SHORT: Record<string, string> = Object.fromEntries(
 );
 
 /** Full-root resume: the stem is the whole antecedent root and longer than the short cut. */
+/** Resume roots: a content word's roots, or an ability word's host. */
+function resumeRoots(word: LexWord): string[] | undefined {
+  const family = word.family;
+  if (family.kind === "content") return family.roots;
+  if (family.kind === "x" && family.xFamily === "ability") return family.leftRoots;
+  return undefined;
+}
+
 function isFullRootResume(word: LexWord, antecedent: LexWord): boolean {
-  if (word.family.kind !== "content" || antecedent.family.kind !== "content") return false;
-  const stem = word.family.roots.join("");
-  const root = antecedent.family.roots.join("");
+  const stemRoots = resumeRoots(word);
+  const antecedentRoots = resumeRoots(antecedent);
+  if (!stemRoots || !antecedentRoots) return false;
+  const stem = stemRoots.join("");
+  const root = antecedentRoots.join("");
   return stem === root && shortResumeStem(root) !== root;
 }
 
@@ -1082,7 +1092,7 @@ function sensePieces(
         `${numberLabel(family.stem, word.pos)}${numberMarkSuffix(word, ctx)}${numberSurfaceSuffix(word.raw, family.stem, ctx)}`,
       ];
     case "x":
-      return xPieces(word, tables);
+      return xPieces(word, tables, ctx.antecedent);
     case "writingSpan":
       return [writingSpanLabel(word, tables, ctx)];
     case "foreign":
@@ -1385,7 +1395,7 @@ function ordinalEnglish(n: number): string {
   return `${n}${suffix}`;
 }
 
-function xPieces(word: LexWord, tables: ClassifyTables): string[] {
+function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): string[] {
   const family = word.family;
   if (family.kind !== "x") return [];
 
@@ -1444,6 +1454,16 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
       return grain ? [`${host}-${stance}-${grain}`] : [host, stance];
     }
     const stance = ABILITY_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "ability";
+    // Ability resume (`vowoxar`): the resumed host keeps the ability (intention.md#ability).
+    if (word.ending === "r" && antecedent) {
+      const antecedentFamily = antecedent.family;
+      const resumed =
+        antecedentFamily.kind === "x" && antecedentFamily.xFamily === "ability"
+          ? rootSense(antecedentFamily.leftRoots[0] ?? "host", antecedent.ending, tables, { pos: antecedent.pos })
+          : senseLabel(antecedent, tables, {});
+      const full = isFullRootResume(word, antecedent) ? ".full" : "";
+      return [`←${resumed}${full}-${stance}`];
+    }
     return [`${host}-${stance}`];
   }
 
