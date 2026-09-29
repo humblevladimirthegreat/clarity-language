@@ -94,6 +94,7 @@ Base and everyday units (each row is a **unit metaphor**; the literal picture st
 | meter | `ezeze` *meter* | `bezezem g+2` | `ezezel` *set-square* | 📐: exact length |
 | gram | `ababa` *gram* | `bababam g+5` | `ababal` *pound* (banknote) | 💷: standard mass |
 | second | `azade` *second* | `bazadem g+3` | `azadel` *stopwatch* | ⏱️: short tick |
+| minute | `umunu` *minute* | `bumunum g+5` | `umunul` *three-o'clock* | 🕒: the hand steps one minute at a time |
 | liter | `ubuhe` *liter* | `bubuhem g+1` | `ubuhel` *pool* | 🎱: liquid volume |
 | ampere | `agodo` *ampere* | `bagodom g+2` | `agodol` *cable-car* | 🚠: current along a line |
 | kelvin | `azahu` *kelvin* | `bazahum g+300` | `azahul` *ice* | 🧊: thermodynamic temperature |
