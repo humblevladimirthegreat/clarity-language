@@ -19,6 +19,12 @@ Editors only — not linked from grammar pages. Deliberate omissions and settled
 | D-11 | single-item clause join (`A xul` *not the case that A*, `A xal` *only A happened*) | clause `/x/` joins go between clauses only; deny / focus on the verb or noun (`vowogal vul`, `zazawan zal`); stand-in items (`A xol xal` *optionally A*, `A xam xar`, `A xel xur`, `xual ul A`) — [joins#clause-joins](../grammar/joins.md#clause-joins) | by design | joins.md | — | — |
 | D-12 | bare *must* (obligation with no named sake) | firm command `yel`, or sake prescription `…thel` / `…them` / `…ther` ([sakes#sake-force](../grammar/sakes.md#sake-force)) | by design | sakes.md | — | — |
 
+## Settled decisions on stance time and emotional blame
+
+- Every stance (`/th/` word, sake on `/ɡ/` / `/w/`, emotion compose) is the speaker's at speech-now. A stance is dated only with the `/th/` *as-of* pair (`thenem` / `thumem` + `/b/`, resume `-r`), which moves every stance in the clause, MAY / DECISION / CAUSE included. `/h/` *as-of* still moves only the event's books.
+- In an emotion-compose clause, a channel + offset after `gobom` dates the **stimulus**; the feeling stays now. No separate stimulus-timing words.
+- AIMED (direction locus `o`) is where the charge goes, never blame. Cause = because pole; fault = pole ending (`theral` fault / `theram` plain cause / `therar` share). Guidance: the pole's `/b/` is an act (`barl` + clause) or a thing, not a bare person. Not parser-enforced: a named `/b/` can be a named event or place.
+
 ## Settled decisions from the dated-channel review
 
 - The offset after a channel dates the **event**, not when the speaker learned of it.

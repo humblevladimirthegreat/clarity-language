@@ -104,6 +104,12 @@ const ROWS: Row[] = [
     valid: "zalahen thamom henem b_#22,7 vadebal.",
   },
   {
+    invalid: "zalahen thenem b_#22,7 thumem b_#3 thovom vadebal.",
+    rejection: "asOfPerHost",
+    valid: "zalahen thenem b_#22,7 thovom henem b_#3 vadebal.",
+  },
+  { invalid: "zalahen thenem thovom vadebal.", rejection: "asOfIntroduceBound", valid: "zalahen thenem b_#22,7 thovom vadebal." },
+  {
     invalid: "zazawan vahahal dagadal dodogal wazagum dal.",
     rejection: "respectivePartner",
     valid: "zazawan zalahen zal vahahal dagadal dodogal wazagum dal.",

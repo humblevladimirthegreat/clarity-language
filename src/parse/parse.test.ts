@@ -365,6 +365,19 @@ describe("parse — as-of poles", () => {
     assert.equal(h.unit.bound?.raw, "b_#22,7");
   });
 
+  it("parses stance as-of on /th/ beside a clause as-of on /h/", () => {
+    const units = parseText("zalahen thenem b_#22,7 thovom henem b_#22,7 vadebal.").utterances[0]!.bodies[0]!.clause.units;
+    const th = units.find((u) => u.kind === "h" && u.unit.word.raw === "thenem");
+    assert.ok(th && th.kind === "h");
+    assert.equal(th.unit.word.overlay?.gloss, "as-of.ledger");
+    assert.equal(th.unit.bound?.raw, "b_#22,7");
+  });
+
+  it("parses a fault pole hosting a stand-in, stacked after only-if", () => {
+    parseText("zazawan vowogal thebom theral barl zalahen vezebel.");
+    parseText("zemehol wonathumol gobom balahen thovom theral barl zalahen vezebel.");
+  });
+
   it("parses as-of resume without /b/", () => {
     const result = parseText("zazawan hener vowogal.");
     const h = result.utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "h");

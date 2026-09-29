@@ -500,7 +500,7 @@ A later `/x/` clause is a new host. To keep the same books, write the **same ove
 
 Do not put a bare person in `/b/` as “from Alahen’s now.” That is [proxy](#proxy) (`hadem`). Prefer `henem barl zalahen vezebel`.
 
-Once whose-now is set, a [forecast](knowing.md#forecast) offset (`bral`) counts **after** that now, [PLAN](intention.md#plan-predict) is **from** that now, [RESIDUE](knowing.md#residue) leftover is on **that** tally, and [FORMER](knowing.md#former-climate) is not **that stretch’s** climate. A bare verb is **concurrent** with that now. [MAY](knowing.md#may), [DECISION](intention.md#decision), and [CAUSE](causation.md#cause) still evaluate from speech-now. Evidentials other than LIVE-at-snapshot are how *you* know at speech-now.
+Once whose-now is set, a [forecast](knowing.md#forecast) offset (`bral`) counts **after** that now, [PLAN](intention.md#plan-predict) is **from** that now, [RESIDUE](knowing.md#residue) leftover is on **that** tally, and [FORMER](knowing.md#former-climate) is not **that stretch’s** climate. A bare verb is **concurrent** with that now. [MAY](knowing.md#may), [DECISION](intention.md#decision), [CAUSE](causation.md#cause), and every other stance still evaluate from speech-now; to move them too, use [stance as-of](#stance-as-of). Evidentials other than LIVE-at-snapshot are how *you* know at speech-now.
 
 > `zazawan zalahen zel wenem b_#22,7 gamadam.`
 >
@@ -548,6 +548,50 @@ A finished inner clause does not stay open for a later matrix resume. Isolated `
 | **`humem` / `gumem` / `wumem`** | unasserted whose-now | *as of* (placeholder now) | `umel` *bookmark* | 🔖: hold the place without stamping |
 | **`hener` / `humer`** | resume that overlay | *same books* | same | **-r** restates the stem; no `/b/` |
 
+### Stance as-of {#stance-as-of}
+
+A stance is yours at speech-now: `thovom` is how unsure you are **as you speak**, and a sake or feeling word is how you stand **now**. English *I was sure then*, *back then it stung*, and *I'd be relieved* date the stance itself. Put the same *as-of* pair on `/th/`: **`thenem`** for a real now, **`thumem`** for a now you are not claiming, then the snapshot in `/b/`. Every stance word in the clause, including MAY, DECISION, CAUSE, sakes, and feelings, then reads from that now.
+
+> `zalahen thenem b_#22,7 thovom vadebal.`
+>
+> z-Alahen | [th-as-of.ledger | b-_22,7] | th-MAY | v-departure
+>
+> "On 22 July, I thought Alahen might leave." — the doubt was then; nothing is said about now
+
+> `zalahen thovom vadebal.`
+>
+> z-Alahen | th-MAY | v-departure
+>
+> "Maybe Alahen left." — the doubt is now
+
+`/th/` *as-of* moves only the stances. `/h/` *as-of* moves the event's books. A clause may carry one of each, so a past stance can sit next to a past event:
+
+> `zalahen thenem b_#22,7 thovom henem b_#22,7 vadebal.`
+>
+> z-Alahen | [th-as-of.ledger | b-_22,7] | th-MAY | [h-as-of.ledger | b-_22,7] | v-departure
+>
+> "On 22 July, I thought Alahen might have left by then."
+
+With **`thumem`**, the stance is one you would hold, not one you held:
+
+> `zalahen thovom vadebal thumem barl zazawan vezebel.`
+>
+> z-Alahen | th-MAY | v-departure | [th-as-of.bookmark | b-that-clause] | z-Azawan | v-tell
+>
+> "Once Azawan told, I'd think Alahen might leave." — a placeholder now for the doubt
+
+Resume works as on `/h/`: **`thener`** / **`thumer`** with no `/b/` on the next `/x/` clause keeps the same stance-now.
+
+Changing your mind is then a change of now, not a contradiction: *I was fairly sure on the 22nd* (`thenem`) and *I'm unsure now* (no pair) are both true.
+
+**Compare with:** an evidential is how you know **at speech-now**, even under `/th/` *as-of*. *I remember feeling it* is a remembering channel (`thunom`) plus `thenem`.
+
+| Agazan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`thenem`** | stances as of a real now | *I thought / I felt (then)* | 📒: a dated line |
+| **`thumem`** | stances as of a now you are not claiming | *I would think / I'd feel* | 🔖: a held place |
+| **`thener` / `thumer`** | resume that stance-now | *still as I saw it then* | **-r** restates |
+
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
@@ -572,6 +616,8 @@ Short drills for Advanced. Try each item before opening **Show answer**. The hos
 | *PATTERN* | `thabem` |
 | *as-of.ledger* | `henem` |
 | *as-of.bookmark* | `humem` |
+| *as-of.ledger* | `thenem` |
+| *MAY* | `thovom` |
 | *challenge* | `gamadam` |
 
 #### English → Agazan {#advanced-english-to-agazan}
@@ -622,6 +668,14 @@ z-money | [g-as-of.ledger | b-_22,7]
 `zamol thamom henem badebal.`
 
 z-money | th-RESIDUE | [h-as-of.ledger | b-departure]
+:::
+
+**7.** *On 22 July, I thought it might rain.* (the doubt was then)
+
+::: details Show answer
+`thenem b_#22,7 thovom verehel.`
+
+[th-as-of.ledger | b-_22,7] | th-MAY | v-rain
 :::
 
 #### Agazan → English {#advanced-agazan-to-english}
@@ -678,6 +732,15 @@ z-house | [g-as-of.ledger | b-_23,7]
 z-house | th-RESIDUE | [h-as-of.ledger | b-departure]
 
 *As of the leaving, the house still stood.*
+:::
+
+**7.** `zazawan thovom vowogal thenem badebal.`
+
+::: details Show answer
+
+z-Azawan | th-MAY | v-walk | [th-as-of.ledger | b-departure]
+
+*At the leaving, I thought Azawan might walk.*
 :::
 
 

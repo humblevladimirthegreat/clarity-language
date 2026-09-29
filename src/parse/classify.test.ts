@@ -310,17 +310,23 @@ describe("classify", () => {
     assert.equal(word.overlay, undefined);
   });
 
-  it("as-of ledger and bookmark overlays on /h/ /ɡ/ /w/, including resume", () => {
-    for (const form of ["henem", "genem", "wenem", "hener", "gener", "wener"]) {
+  it("as-of ledger and bookmark overlays on /h/ /ɡ/ /w/ /th/, including resume", () => {
+    for (const form of ["henem", "genem", "wenem", "thenem", "hener", "gener", "wener", "thener"]) {
       const word = expectReading(form, "mood");
       assert.equal(word.overlay?.kind, "clause_pole");
       assert.equal(word.overlay?.gloss, "as-of.ledger");
     }
-    for (const form of ["humem", "gumem", "wumem", "humer", "gumer", "wumer"]) {
+    for (const form of ["humem", "gumem", "wumem", "thumem", "humer", "gumer", "wumer", "thumer"]) {
       const word = expectReading(form, "mood");
       assert.equal(word.overlay?.kind, "clause_pole");
       assert.equal(word.overlay?.gloss, "as-of.bookmark");
     }
+  });
+
+  it("because pole fault scale on /th/", () => {
+    assert.equal(expectReading("theral", "mood").overlay?.gloss, "because.fault");
+    assert.equal(expectReading("theram", "mood").overlay?.gloss, "because");
+    assert.equal(expectReading("therar", "mood").overlay?.gloss, "because.share");
   });
 });
 

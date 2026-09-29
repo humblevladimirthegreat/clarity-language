@@ -149,6 +149,8 @@ odom,g,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one w
 ewum,th,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,dependents.md#dependent-clauses
 ewum,g,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,causation.md#only-because
 eram,th,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),brick stacks as foundation; foundation is because-reason under claim,dependents.md#dependent-clauses
+eral,th,🧱,clause_pole,because.fault,BECAUSE clause pole with fault (the reason broke a norm),brick stacks as foundation; -l locks the blame on a broken norm,causation.md#fault
+erar,th,🧱,clause_pole,because.share,BECAUSE clause pole with a share (the reason contributed among others),brick stacks as foundation; -r is one brick among several,causation.md#fault
 eram,g,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),brick stacks as foundation; foundation is because-reason under claim,causation.md#only-because
 ebom,th,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,dependents.md#dependent-clauses
 ebom,g,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,causation.md#only-if
@@ -165,15 +167,19 @@ ezadam,h,➡️,clause_pole,so-result,SO-THAT-RESULT clause pole (outcome that f
 enem,h,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#as-of
 enem,g,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#as-of
 enem,w,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#as-of
+enem,th,📒,clause_pole,as-of.ledger,AS-OF stance pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#stance-as-of
 ener,h,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#as-of
 ener,g,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#as-of
 ener,w,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#as-of
+ener,th,📒,clause_pole,as-of.ledger,AS-OF stance pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#stance-as-of
 umem,h,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#as-of
 umem,g,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#as-of
 umem,w,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#as-of
+umem,th,🔖,clause_pole,as-of.bookmark,AS-OF stance pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#stance-as-of
 umer,h,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#as-of
 umer,g,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#as-of
 umer,w,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#as-of
+umer,th,🔖,clause_pole,as-of.bookmark,AS-OF stance pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#stance-as-of
 egem,th,⚙️,cause,CAUSE,CAUSE mood (mechanism framing); a hosted /b/ with no pole is the causer (make),gear drives mechanism; mechanism frames how the link works,causation.md#cause
 egem,w,⚙️,cause,CAUSE,CAUSE mood (mechanism framing),gear drives mechanism; mechanism frames how the link works,causation.md#cause
 an,v,,join_act,includes,join-act includes or adds object,set join a+n as verb; includes adds this object to the set,join-across-roles.md#join-act-verbs

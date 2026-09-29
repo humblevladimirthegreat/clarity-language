@@ -252,7 +252,7 @@ function enforceHostedStandIn(units: Unit[], index: number, unit: HUnit): void {
   }
   const prev = units[index - 1];
   if (prev?.kind === "h" && !prev.unit.bound && isPole(prev.unit.word)) {
-    const stack = `${prev.unit.word.overlay!.gloss} ${host.overlay!.gloss}`;
+    const stack = `${prev.unit.word.overlay!.gloss} ${host.overlay!.gloss.replace(/^because\..*/, "because")}`;
     if (stack !== "only-if because" && stack !== "although if") {
       throw new ConstructionError("poleStack", `${prev.unit.word.raw} ${host.raw}`);
     }
@@ -451,10 +451,14 @@ function enforceStructure(units: Unit[]): void {
   enforceIslandEdges(units);
   enforceRespectively(units);
   let hAsOf = 0;
+  let thAsOf = 0;
   for (const unit of units) {
     if (unit.kind === "h") {
       enforceAsOfWord(unit.unit.word, unit.unit.bound);
-      if (isAsOfOverlay(unit.unit.word)) hAsOf += 1;
+      if (isAsOfOverlay(unit.unit.word)) {
+        if (unit.unit.word.pos === "th") thAsOf += 1;
+        else hAsOf += 1;
+      }
     }
     if (unit.kind === "predicate") enforceGPackageAsOf(unit.adj);
     if (unit.kind === "gCoord") enforceGCoord(unit.coord);
@@ -468,5 +472,5 @@ function enforceStructure(units: Unit[]): void {
       clauseCoordClauses(unit.coord).forEach((clause) => enforceStructure(clause.units));
     }
   }
-  if (hAsOf > 1) throw new ConstructionError("asOfPerHost", "two as-of pairs");
+  if (hAsOf > 1 || thAsOf > 1) throw new ConstructionError("asOfPerHost", "two as-of pairs");
 }

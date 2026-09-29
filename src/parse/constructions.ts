@@ -556,7 +556,7 @@ export const REJECTIONS = {
   asOfIntroduceBound: { anchor: "relations.md#as-of", summary: "an as-of word introduces its bound with a /b/ word" },
   asOfResumeBound: { anchor: "relations.md#as-of", summary: "an as-of resume (-r) takes no /b/" },
   hookResumeNoun: { anchor: "hooks.md#hook-resume", summary: "a resume hook (-r) points back and takes no /b/ noun" },
-  asOfPerHost: { anchor: "relations.md#as-of", summary: "one /h/ host takes at most one as-of pair" },
+  asOfPerHost: { anchor: "relations.md#as-of", summary: "a clause takes at most one /h/ and one /th/ as-of pair" },
   joinDetail: { anchor: "joins.md#respectively", summary: "the only /w/ before a join word is respectively (wazagum), and it goes only there, on an and-list" },
   respectivePartner: { anchor: "joins.md#respectively", summary: "a respectively list pairs with another and-list of the same length in its clause" },
 } satisfies Record<string, ConstructionEntry>;

@@ -321,7 +321,7 @@ The tail goes on met **`tha`**, motive **`tho`**, and unmet **`thu`** words. Pre
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
 
-**Compare with:** *could be* uses [MAY](knowing.md#may) (`ovo`). CAUGHT from a `/b/` says whose feeling it is; *because of* is a causal claim with [`geram`](causation.md#because). The stimulus says what the feeling is **about**; a direction `/b/` says what it is **aimed at**.
+**Compare with:** *could be* uses [MAY](knowing.md#may) (`thovom`). CAUGHT from a `/b/` says whose feeling it is; *because of* is a causal claim with the because pole. The stimulus says what the feeling is **about**; a direction `/b/` says what it is **aimed at**; the because pole says what **caused** it.
 
 ### Prescription (`the`): ought this act for this sake
 <a id="sake-force"></a>

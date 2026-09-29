@@ -80,6 +80,8 @@ An adverb describes the action. A **stance** word describes how **you**, the spe
 
 The adverb describes the walking. The stance word describes your claim about it.
 
+A stance is yours **now**, as you speak. To give a stance you held at another time (*I was sure then*), see [stance as-of](relations.md#stance-as-of).
+
 ### Extra nouns (`/b/`) {#extra-nouns}
 
 `/b/` marks an **extra noun**: a person or thing beyond the subject and direct object. It has two jobs. You tell them apart by the word **immediately before** the `/b/` word.

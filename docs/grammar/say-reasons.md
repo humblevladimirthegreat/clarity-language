@@ -1,6 +1,6 @@
 # Reasons, knowledge and plans
 
-Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* doing, and *as of that date*. Every form here is taught on a grammar page; each recipe links what it needs.
+Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* doing, *as of that date*, and when or why a feeling happens. Every form here is taught on a grammar page; each recipe links what it needs.
 
 ## Reasons and conditions {#reasons}
 
@@ -196,6 +196,93 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 > z-Alahen | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 >
 > "As of 22 July, Alahen had decided to walk, and that pick is still revisable now."
+
+## Feelings: when and why {#feelings}
+
+### When the stimulus happens {#emotion-stimulus-time}
+
+**Needs:** [Emotion compose](sakes.md#emotion-compose) · [forecasts](knowing.md#forecast) · [evidentiality](knowing.md#evidentiality) · [evidence strength](knowing.md#evidence-strength) · [RESIDUE](knowing.md#residue) · [NOTIONAL](knowing.md#notional)
+
+
+A feeling word is how you feel **now**. The stimulus can sit anywhere in time. To place it, write a channel and an offset right after **`gobom`**, as for any [forecast](knowing.md#forecast) or [dated claim](knowing.md#dated-channel): the offset dates the stimulus, and the channel says how you know it.
+
+> `zezebel wuduthuraor gobom therul bral.`
+>
+> [z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-RECORDED.strong | b-later]
+>
+> "Anxious about the dialogue that's scheduled to come."
+
+> `zezebel wuduthuraor gobom thahur bral.`
+>
+> [z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-FELT.weak | b-later]
+>
+> "Anxious about a dialogue I only have a hunch is coming."
+
+> `zezebel wonathumol gobom thunom brul.`
+>
+> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | [th-WITNESSED | b-earlier]
+>
+> "Stung by the dialogue, which is over; I was there."
+
+Other shapes use forms you already have:
+
+| Stimulus | Write | English |
+|----------|-------|---------|
+| coming | channel + `bral` | *dreading*, *hoping* |
+| over | channel + `brul` | *regretting*, *relieved*, *grieving* |
+| over, still counting | [RESIDUE](knowing.md#residue) `thamom` | *still stung, though it's done* |
+| recurring | [always](restrictors.md) `hual` | *dreading every dialogue* |
+| did not happen | [NOTIONAL](knowing.md#notional) | *relieved about what didn't happen* |
+
+How the stimulus is known matters. A scheduled dialogue (`therul`) and a hunch (`thahur`) can feel the same; the grammar asks which one it is.
+
+### Feeling then {#emotion-feeling-time}
+
+**Needs:** [Emotion compose](sakes.md#emotion-compose) · [stance as-of](relations.md#stance-as-of) · [evidentiality](knowing.md#evidentiality)
+
+
+To say you **felt** it at another time, date the feeling itself with [stance as-of](relations.md#stance-as-of): **`thenem`** plus the time or event in `/b/`, after the stimulus. Add a remembering channel for *I remember feeling it*.
+
+> `zezebel wonathumol gobom thenem bezebel.`
+>
+> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | [th-as-of.ledger | b-speech]
+>
+> "The dialogue stung me at the time." — nothing is said about now
+
+> `zezebel wonathumol gobom thunom thenem bezebel.`
+>
+> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | th-WITNESSED | [th-as-of.ledger | b-speech]
+>
+> "I remember the dialogue stinging at the time."
+
+With no pair, the feeling is now. Keeping *it hurt then* apart from *it hurts now* lets you say that a feeling has passed.
+
+### Cause is not target {#emotion-blame}
+
+**Needs:** [Emotion compose](sakes.md#emotion-compose) · [Because](causation.md#only-because) · [Fault](causation.md#fault) · [MAY](knowing.md#may)
+
+
+A direction locus says where the charge **goes**. It does not say who **caused** it. Name the cause with the [because pole](causation.md#because) after the feeling, and name its [fault](causation.md#fault) only when you mean it. The target and the cause may differ.
+
+> `zezebel wonathumom gobom bazawan theram berehel.`
+>
+> [z-speech | [[w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | b-Azawan]] | [th-because | b-rain]
+>
+> "Irritated at Azawan about the dialogue, but the rain caused it."
+
+> `zemehol wonathumol gobom balahen theram barl zalahen vezebel.`
+>
+> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Alahen]] | [th-because | b-that-clause] | z-Alahen | v-tell
+>
+> "Resentful at Alahen about the memo, because Alahen told."
+
+> `zemehol wonathumol gobom balahen thovom theral barl zalahen vezebel.`
+>
+> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Alahen]] | th-MAY | [th-because.fault | b-that-clause] | z-Alahen | v-tell
+>
+> "Resentful at Alahen about the memo; maybe Alahen was wrong to tell."
+
+Put an **act** after the pole (`barl zalahen vezebel`), not the person. A feeling can be aimed at Alahen; blame goes on what Alahen did.
 
 ## Practice {#practice}
 
@@ -482,4 +569,65 @@ z-Alahen | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure 
 z-Alahen | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 
 *As of 22 July, Alahen's leaving may still have counted.*
+:::
+
+### Feelings: when and why {#reasons-feelings-practice}
+
+Short drills for these recipes. A channel and offset after **`gobom`** date the stimulus. **`thenem`** dates the feeling. The because pole names the cause; **`theral`** says someone was wrong.
+
+**Setting:** a harbor office
+
+**Roots used here:**
+
+| English | Agazan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Alahen* | `alahen` | |
+| *speech* | `ezebel` | |
+| *memo* | `emehol` | |
+| *tell* | `vezebel` | `ezebel` *speech* |
+| *rain* | `verehel` | |
+| *stimulus* | `gobom` | |
+| *RECORDED.strong* | `therul` | |
+| *WITNESSED* | `thunom` | |
+| *as-of.ledger* | `thenem` | |
+| *because* | `theram` | `eral` *brick* |
+| *because.fault* | `theral` | `eral` *brick* |
+
+#### English → Agazan {#reasons-feelings-english-to-agazan}
+
+**1.** *Anxious about the dialogue, which is scheduled.* (competence at stake for now; hangs over the room; surging)
+
+::: details Show answer
+`zezebel wuduthuraor gobom therul bral.`
+
+[z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-RECORDED.strong | b-later]
+:::
+
+**2.** *Irritated at Azawan about the memo, but the rain caused it.* (unmet relatedness, modifiable; aimed; flowing)
+
+::: details Show answer
+`zemehol wonathumom gobom bazawan theram berehel.`
+
+[z-memo | [[w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | b-Azawan]] | [th-because | b-rain]
+:::
+
+#### Agazan → English {#reasons-feelings-agazan-to-english}
+
+**1.** `zemehol wonathumol gobom thenem bezebel.`
+
+::: details Show answer
+
+[z-memo | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | [th-as-of.ledger | b-speech]
+
+*The memo stung me at the time of the dialogue.*
+:::
+
+**2.** `zezebel wonathumol gobom balahen theral barl zalahen vezebel.`
+
+::: details Show answer
+
+[z-speech | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Alahen]] | [th-because.fault | b-that-clause] | z-Alahen | v-tell
+
+*Resentful at Alahen about the dialogue; Alahen was wrong to tell.*
 :::

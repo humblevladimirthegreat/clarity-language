@@ -310,6 +310,38 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 | **`thodom burl`** | *unless* |
 | **`hazem thodom barl`** | *even if* |
 
+### Fault {#fault}
+
+*Because* names what made the outcome happen. It does not say anyone did wrong. When you mean *it was their fault*, change the ending on the because pole. **-m** stays plain cause. **-l** says the reason broke a norm. **-r** says it was one share among other causes.
+
+| Agazan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`theral`** | the reason broke a norm | *it's their fault* / *to blame* | **-l** ≈ locked on a broken rule |
+| **`theram`** | the reason made it happen; no fault claimed | *because* | **-m** ≈ the ordinary case |
+| **`therar`** | the reason is one share among others | *partly because* / *played a part* | **-r** ≈ one brick of several |
+
+> `zazawan vadebal theral barl zalahen vezebel.`
+>
+> z-Azawan | v-departure | [th-because.fault | b-that-clause] | z-Alahen | v-tell
+>
+> "Azawan left, and it's on Alahen's telling: that telling was wrong."
+
+> `zazawan vadebal theram barl zalahen vezebel.`
+>
+> z-Azawan | v-departure | [th-because | b-that-clause] | z-Alahen | v-tell
+>
+> "Azawan left because Alahen told." — a cause, and no one is blamed
+
+> `zazawan vadebal therar berehel.`
+>
+> z-Azawan | v-departure | [th-because.share | b-rain]
+>
+> "The rain is part of why Azawan left."
+
+Put the **act** in `/b/`, not the person: `barl zalahen vezebel` (*Alahen's telling*), never `balahen`. Fault then lands on what someone did, and it leaves room for *Alahen did a wrong thing* without *Alahen is bad*. A thing or circumstance (`berehel`) is fine, because it has no one to blame.
+
+Fault is still a claim. You can hedge it with [MAY](knowing.md#may) right before the pole (`thovom theral barl …`), or pair **`thebom`** with it for *only because of that fault*.
+
 ### CAUSE {#cause}
 <a id="cause-mood"></a>
 
@@ -350,7 +382,7 @@ When a pole follows **`thegem`**, the `/b/` belongs to the pole, as above (`theg
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. A following sentence hangs after **`barl`**. *Because* asserts the condition. *Iff* is both ways. *Only because* stacks **`thebom theram`**. **CAUSE** is **`thegem`**.
+Short drills for Intermediate. Try each item before opening **Show answer**. A following sentence hangs after **`barl`**. *Because* asserts the condition. *Iff* is both ways. *Only because* stacks **`thebom theram`**. Fault is **`theral`**; a share is **`therar`**. **CAUSE** is **`thegem`**.
 
 **Setting:** a dam control room
 
@@ -373,6 +405,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. A f
 | *only-if* | `thebom` | `ebol` *paper-roll* |
 | *iff* | `thewum` | `ewul` *east-west* |
 | *because* | `theram` | `eral` *brick* |
+| *because.fault* | `theral` | `eral` *brick* |
+| *because.share* | `therar` | `eral` *brick* |
 | *CAUSE* | `thegem` | `egel` *gear* |
 | *that-clause* | `barl` | |
 
@@ -432,6 +466,14 @@ z-Azawan | v-sit | th-only-if | [th-because | b-that-clause] | z-Ahaben | v-see
 `zalahen varahal thegem thodom bohaham.`
 
 z-Alahen | v-run | th-CAUSE | [th-if | b-overwhelm]
+:::
+
+**8.** *Ahaben runs, and it's Azawan's fault: Azawan was wrong to pour.*
+
+::: details Show answer
+`zahaben varahal theral barl zazawan vobohel.`
+
+z-Ahaben | v-run | [th-because.fault | b-that-clause] | z-Azawan | v-pour
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
@@ -497,6 +539,15 @@ z-Ahaben | v-tell | th-only-if | [th-because | b-that-clause] | z-Alahen | v-pou
 z-Alahen | v-pour | th-CAUSE | [th-if | b-overwhelm]
 
 *Alahen pours if the surge hits (as mechanism).*
+:::
+
+**8.** `zazawan vehahel therar bagabem.`
+
+::: details Show answer
+
+z-Azawan | v-sit | [th-because.share | b-pressure]
+
+*The pressure is part of why Azawan sits.*
 :::
 
 ## See also

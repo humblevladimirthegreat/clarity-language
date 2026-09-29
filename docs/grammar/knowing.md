@@ -316,6 +316,8 @@ Agazan has no *will* word for the world. To say something **will** happen, use a
 >
 > "Azawan is officially scheduled to speak."
 
+On a [feeling](sakes.md#emotion-compose) (a sake word with a locus and a motion ending, before **`gobom`**), the channel and offset date the **stimulus**. The feeling itself stays now; to date a stance, use [stance as-of](relations.md#stance-as-of).
+
 **Compare with:** [PLAN](intention.md#plan-predict) (`thumam`) says what someone **intends** to do; it needs no channel. A forecast is a claim about the world. To say **how much** later (*in three hours*), replace `bral` with a measured [dated channel](#dated-channel) (Advanced). *Could be* with no warrant is [MAY](#may), not a forecast.
 
 ### Live vs memory {#live-vs-memory}
