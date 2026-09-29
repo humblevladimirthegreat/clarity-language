@@ -701,6 +701,7 @@ function walkUnit(
       if (unit.unit.bound) pushIndex(into, takeRaw(cursor, unit.unit.bound.raw));
       for (const w of boundJoinWords(unit.unit.boundJoin)) pushIndex(into, takeRaw(cursor, w.raw));
       if (unit.unit.boundAmount) pushIndex(into, takeRaw(cursor, unit.unit.boundAmount.raw));
+      for (const adj of unit.unit.boundAdjs ?? []) walkGPackage(cursor, adj, into);
       break;
     case "linker":
     case "writingSpan":

@@ -251,6 +251,8 @@ export type HUnit = {
   boundJoin?: BoundJoin;
   /** Number word on the hosted `/b/` (measure amount, e.g. a signed time offset). */
   boundAmount?: LexWord;
+  /** Adjectives on the hosted `/b/` landmark of an `/h/` host. */
+  boundAdjs?: GPackage[];
 };
 
 export type CoordShared = GPackage | HUnit | LexWord;

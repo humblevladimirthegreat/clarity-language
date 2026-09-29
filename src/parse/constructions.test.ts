@@ -80,6 +80,8 @@ describe("construction registry", () => {
       const ids = parse(input, undefined, { constructions: true }).constructions ?? [];
       assert.ok(!ids.includes("reading.existence"), `${input} → ${ids.join(" ")}`);
     }
+    const both = parse("zazawan zalahen zal gamadam.", undefined, { constructions: true }).constructions ?? [];
+    assert.ok(!both.includes("reading.existence"), both.join(" "));
     const ids = parse("zagadal em bamegun.", undefined, { constructions: true }).constructions ?? [];
     assert.ok(ids.includes("reading.existence"), ids.join(" "));
   });

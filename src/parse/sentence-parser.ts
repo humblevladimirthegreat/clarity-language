@@ -161,10 +161,7 @@ class AgazanSentenceParser extends CstParser {
   public utterance = this.RULE("utterance", () => {
     this.OR([
       {
-        GATE: () => {
-          if (tokenIs(this.LA(1), Polar, Vocative, Force, Hook)) return true;
-          return this.LA(laAfterW(this)).tokenType === Hook;
-        },
+        GATE: () => tokenIs(this.LA(1), Polar, Vocative, Force) || this.discourseHookAhead(),
         ALT: () => {
           this.SUBRULE(this.leftEdge);
           this.OPTION(() => {
@@ -190,11 +187,13 @@ class AgazanSentenceParser extends CstParser {
     this.OR([
       {
         ALT: () => {
-          this.AT_LEAST_ONE(() => {
-            this.OR2([
+          this.AT_LEAST_ONE({
+            GATE: () => tokenIs(this.LA(1), Vocative, Polar) || this.discourseHookAhead(),
+            DEF: () => this.OR2([
               { ALT: () => this.CONSUME(Vocative) },
               { ALT: () => this.CONSUME(Polar) },
               {
+                GATE: () => this.discourseHookAhead(),
                 ALT: () => {
                   this.MANY(() => {
                     this.CONSUME(W);
@@ -202,7 +201,7 @@ class AgazanSentenceParser extends CstParser {
                   this.CONSUME(Hook);
                 },
               },
-            ]);
+            ]),
           });
           this.OPTION(() => {
             this.OPTION2({
@@ -234,6 +233,12 @@ class AgazanSentenceParser extends CstParser {
       },
     ]);
   });
+
+  /** A hook (after any `/w/`) that glues the sentence to prior talk: `/b/` right after it makes it an extra-noun hook instead (hooks.md § Extra noun). */
+  private discourseHookAhead(): boolean {
+    const at = laAfterW(this);
+    return this.LA(at).tokenType === Hook && !tokenIs(this.LA(at + 1), B, JoinB);
+  }
 
   /** Emphatic prohibition: `yul yul` at the left edge (speech-moves.md § Emphatic prohibition). */
   private julEchoAhead(): boolean {
@@ -687,12 +692,35 @@ class AgazanSentenceParser extends CstParser {
               },
               DEF: () => this.CONSUME(G),
             });
+            // Adjectives on a noun landmark after an `/h/` host describe that landmark, as after a hook
+            // (clause.md § complex chaining). A `/th/` host's `/b/` is an offset or source, so a later `/ɡ/` stays the predicate.
+            let landmark = false;
+            this.MANY2({
+              GATE: () => (landmark ||= this.hostedLandmarkAdjAhead()) && this.plainAdjAhead(),
+              DEF: () => this.SUBRULE(this.gPackage),
+            });
           },
         },
         { ALT: () => this.CONSUME(Odo) },
       ]);
     });
   });
+
+  private plainAdjAhead(): boolean {
+    const next = this.LA(laAfterW(this));
+    return next.tokenType === G && !(next.payload as LexWord).gl;
+  }
+
+  /** A plain `/ɡ/` right after an `/h/` host's content `/b/` (or its amount). */
+  private hostedLandmarkAdjAhead(): boolean {
+    let i = 0;
+    if (this.LA(i).tokenType === G) i -= 1;
+    const bound = this.LA(i).payload as LexWord | undefined;
+    if (this.LA(i).tokenType !== B || !bound || bound.family.kind === "number" || bound.family.kind === "joinMarker") return false;
+    while (this.LA(i).tokenType === B || this.LA(i).tokenType === JoinB) i -= 1;
+    const host = this.LA(i).payload as LexWord | undefined;
+    return this.LA(i).tokenType === H && host?.pos === "h";
+  }
 
   public hookUnit = this.RULE("hookUnit", () => {
     this.MANY(() => {
@@ -1171,6 +1199,7 @@ function buildHUnit(cst: CstNode): HUnit {
     bound: bound ? lexWordFromToken(bound) : undefined,
     boundJoin: buildBoundJoin(cst),
     boundAmount: childToken(cst, "G") ? lexWordFromToken(childToken(cst, "G")!) : undefined,
+    boundAdjs: bound ? nestOnExtraNoun(childNodes(cst, "gPackage").map(buildGPackage)) : undefined,
   };
 }
 

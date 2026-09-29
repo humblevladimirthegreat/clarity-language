@@ -281,6 +281,14 @@ A relation adjective with its hosted `/b/` (*the same as Azawan*, **`gogal`** + 
 >
 > "a dog the same as blue Azawan"
 
+The same holds after an `/h/` host: an adjective after its `/b/` describes that extra noun.
+
+> `zodogal vezebal homem bazawan gubuhal.`
+>
+> z-dog | v-sleep | [h-like | [b-Azawan | g-blue]]
+>
+> "A dog sleeps like blue Azawan."
+
 Because a second relation after the pair would attach to the extra noun, you cannot put two relation adjectives **after** the same first noun. To keep both on that noun in one clause, put one [before the noun](#left-bound-adjectives) with **`gl-`**; its `/b/` still follows it. Otherwise use [another sentence](dependents.md#which-noun).
 
 > `glogal bazawan zodogal gogal balahen.`

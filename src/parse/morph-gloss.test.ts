@@ -214,8 +214,8 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("vadebal", "v-departure");
     expectLine("welavam", "w-very");
     expectLine("gelavam", "g-big");
-    expectLine("al bahazal", "in | b-house");
-    expectLine("ael bahavel", "using | b-hammer");
+    expectLine("al bahazal", "[in | b-house]");
+    expectLine("ael bahavel", "[using | b-hammer]");
     expectLine("homem", "h-like");
     expectLine("gomem", "g-like");
     expectLine("gabom", "g-part-of");

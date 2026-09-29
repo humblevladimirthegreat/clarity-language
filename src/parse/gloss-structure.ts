@@ -94,8 +94,9 @@ function gPackage(cur: Cursor, pack: GPackage): GlossNode | undefined {
 function hUnit(cur: Cursor, unit: HUnit): GlossNode | undefined {
   const host = group([...unit.modifiers.map((m) => cur.take(m)), cur.take(unit.word)]);
   const bound = boundSlot(cur, unit.bound, unit.boundJoin);
-  if (!unit.boundAmount) return group([host, bound]);
-  return group([host, group([bound, cur.take(unit.boundAmount)])]);
+  const adjs = (unit.boundAdjs ?? []).map((adj) => gPackage(cur, adj));
+  if (!unit.boundAmount && adjs.length === 0) return group([host, bound]);
+  return group([host, group([bound, cur.take(unit.boundAmount), ...adjs])]);
 }
 
 /** One hosted `/b/` slot: a single noun, or a join's members plus its join word. */

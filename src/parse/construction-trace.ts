@@ -174,8 +174,12 @@ function isExistence(clause: Clause): boolean {
   const heads = first.coord.parts.flatMap((part) =>
     part.items.flatMap((item) => (item.kind === "package" ? [item.package] : [])),
   );
+  // A shared /ɡ/ after a join (`zazawan zalahen zal gamadam` *both are challenging*) describes every member.
+  const sharedG = first.coord.parts.some((part) => part.join && part.shared.some((item) => !("raw" in item) && item.word.pos === "g"));
   const described =
-    rest.some((unit) => unit.kind === "predicate" || unit.kind === "gCoord") || heads.some((pkg) => pkg.adjs.length > 0);
+    sharedG ||
+    rest.some((unit) => unit.kind === "predicate" || unit.kind === "gCoord") ||
+    heads.some((pkg) => pkg.adjs.length > 0);
   // A name, a resume, or a noun anchored by used-by `em` + `/b/` is known, so a /ɡ/ word is a property claim.
   const anchored = rest.some((unit, i) => {
     const next = rest[i + 1];

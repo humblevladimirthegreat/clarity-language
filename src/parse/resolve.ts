@@ -336,6 +336,7 @@ function considerHUnit(ctx: Ctx, unit: HUnit): void {
   if (unit.bound) considerWord(ctx, unit.bound);
   for (const w of unit.boundJoin?.members ?? []) considerWord(ctx, w);
   if (unit.boundAmount) considerWord(ctx, unit.boundAmount);
+  for (const adj of unit.boundAdjs ?? []) considerGPackage(ctx, adj);
 }
 
 function considerNpPackage(ctx: Ctx, pkg: NpPackage): void {

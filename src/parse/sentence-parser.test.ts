@@ -79,6 +79,22 @@ describe("sentence-parser synthetic", () => {
     assert.deepEqual(sharedOf("zazawan zalahen zal bral vevahal."), []);
   });
 
+  it("reads a sentence-initial hook with /b/ after it as an extra-noun hook", () => {
+    const utt = parseSentenceTokens(tokens("ol bahazal zazawan vowogal.")).utterances[0]!;
+    assert.equal(utt.left.hook, undefined);
+    assert.equal(utt.bodies[0]!.clause.units[0]!.kind, "hook");
+    const vocative = parseSentenceTokens(tokens("yazawan ol bahazal zalahen vowogal.")).utterances[0]!;
+    assert.equal(vocative.left.hook, undefined);
+    assert.equal(parseSentenceTokens(tokens("al zazawan vowogal.")).utterances[0]!.left.hook?.raw, "al");
+  });
+
+  it("puts a /ɡ/ after an /h/ host's /b/ on that landmark, but not after a /th/ offset", () => {
+    const last = (text: string) => parseSentenceTokens(tokens(text)).utterances[0]!.bodies[0]!.clause.units.at(-1)!;
+    const like = last("zazawan vowogal homem bazawan gubuhal.");
+    assert.equal(like.kind === "h" ? like.unit.boundAdjs?.[0]?.word.raw : undefined, "gubuhal");
+    assert.equal(last("zazawan thabem bral gamadam.").kind, "predicate");
+  });
+
   it("keeps a stance join fence after /th/ words", () => {
     const units = parseSentenceTokens(tokens("zazawan vawalal thuvuvum thul.")).utterances[0]!.bodies[0]!.clause.units;
     const raws = units.flatMap((u) => (u.kind === "h" ? [u.unit.word.raw] : []));

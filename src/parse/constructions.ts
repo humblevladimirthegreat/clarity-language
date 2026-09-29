@@ -116,6 +116,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "hUnitRule.B": { anchor: "clause.md#extra-nouns", summary: "hosted /b/ after /h/" },
   "hUnitRule.G": { anchor: "knowing.md#dated-channel", summary: "amount on a hosted /b/ (signed offset)" },
   "hUnitRule.Odo": { anchor: "dependents.md#dependent-clauses", summary: "stand-in hosted on /h/" },
+  "hUnitRule.gPackage": { anchor: "clause.md#complex-chaining", summary: "adjective on the landmark after an /h/ host" },
   "hookUnit.W": { anchor: "hooks.md#hook-w", summary: "/w/ on an in-clause hook" },
   "hookUnit.Hook": { anchor: "hooks.md#including-am-al", summary: "in-clause hook" },
 
