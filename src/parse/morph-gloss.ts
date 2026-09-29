@@ -230,7 +230,7 @@ const HOOK_EXTRA_NOUN: Record<string, string> = {
   um: "away-from",
   un: "from.named",
   el: "for",
-  em: "of",
+  em: "used-by",
   en: "for.named",
   aol: "on",
   aom: "over",

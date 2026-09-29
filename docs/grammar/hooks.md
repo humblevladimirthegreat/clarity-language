@@ -438,7 +438,7 @@ Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). S
 | **`ul`** | *from* | **`um`** | *away from* | **u** ≈ undo (leave); **-m** that origin as the setting |
 | **`ual`** | *out of* | **`uam`** | *out from among* | **ua** ≈ leave a volume; **-m** that volume as the setting |
 | **`uol`** | *through* | **`uom`** | *by way of* | **uo** ≈ leave via one path; **-m** that path as the setting |
-| **`el`** | *for* | **`em`** | *of* / *'s* | **e** ≈ order (aim the act); **-m** the one aimed at, as the frame the noun belongs in |
+| **`el`** | *for* | **`em`** | *used by* (*B's*) | **e** ≈ order (aim the act); **-m** the get has reached B and is in B's use |
 | **`ael`** | *using* | **`aem`** | *by* | **ae** ≈ add an ordered means; **-m** the channel |
 | **`uel`** | *against* | **`uem`** | *contrary to* | **ue** ≈ undo aimed at; **-m** the opposing frame |
 
@@ -484,29 +484,41 @@ To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`a
 
 ### Whose (`em`) {#genitive}
 
-English *Azawan's dog* or *the dog of Azawan* says the dog goes with Azawan, without saying how. Put **`em`** right after the noun and the person in `/b/`. `em` does not say whether Azawan owns it, looks after it, or just walks it every day. (cue: **`el`** is *for B*, a get meant to reach B; **`em`** says the noun already sits in B's frame)
+English *Azawan's dog* often means the dog is in Azawan's **use**: Azawan keeps it, walks it, feeds it. Put **`em`** right after the noun and the user in `/b/`. `em` says B uses the thing or has access to it. It does not say who owns it. (cue: **`el`** is *for B*, a get meant to reach B; **`em`** says it already reached B and is in B's use)
 
 > `zodogal em bazawan varahal.`
 >
-> z-dog | [of | b-Azawan] | v-run
+> z-dog | [used-by | b-Azawan] | v-run
 >
 > "Azawan's dog runs."
 
 > `zazawan dahazal em balahen vahahal.`
 >
-> z-Azawan | d-house | [of | b-Alahen] | v-see
+> z-Azawan | d-house | [used-by | b-Alahen] | v-see
 >
-> "Azawan sees Alahen's house."
+> "Azawan sees Alahen's house." (the house Alahen lives in)
 
 For *my* and *your*, put the [speaker or listener](pronouns.md#special-pronouns) in `/b/`: `em bamegun` is *my*, `em behodon` is *your*.
 
 > `zodogal em bamegun vezebal.`
 >
-> z-dog | [of | b-speaker] | v-sleep
+> z-dog | [used-by | b-speaker] | v-sleep
 >
 > "My dog sleeps."
 
-**Compare with:** when *'s* means a particular tie, name it: legal ownership is `gegabem`, and *part of*, *made of*, *friend of* and the rest are [relations](relations.md#of-relations). *For Azawan* is `el`. A [sake](sakes.md) on `/ɡ/` also marks the noun as yours, together with how it serves you.
+Things B uses include places B lives or sits, tools and rides B uses, ideas B works with, and B's turn or time. Other kinds of *'s* each have their own word:
+
+| English *'s* | Use |
+|--------------|-----|
+| legal ownership (*the dog Azawan owns*) | `gegabem` + `/b/` |
+| a person tied to B (*Azawan's friend*, *boss*, *patient*) | a tie on `/ɡ/` ([relations](relations.md#social-relations)) |
+| part of B (*Azawan's hand*), what B is made of or comes from | [of relations](relations.md#of-relations) |
+| a feeling B has (*Azawan's anger*) | [emotion compose](sakes.md#emotion-compose) |
+| something B made (*the book Azawan wrote*) | a [role compound](roles.md#role-compounds) |
+
+**`em`** never takes a person on the left: a person is not something someone uses. It never names a feeling or trait either, which stays something B has, not something B is made of.
+
+**Compare with:** *for Azawan* is `el`. A [sake](sakes.md) on `/ɡ/` also marks the noun as yours, together with how it serves you.
 
 ### Opening a sentence with stacked hooks {#stacked-discourse}
 
@@ -915,7 +927,7 @@ anyway | z-Alahen | v-tell
 ::: details Show answer
 `zazawan dabehel em balahen varadal.`
 
-z-Azawan | d-page | [of | b-Alahen] | v-write
+z-Azawan | d-page | [used-by | b-Alahen] | v-write
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
@@ -1039,7 +1051,7 @@ The left ending is part of the stem, so two different left roots stay distinct o
 | **`ul` / `um`** | *from* / *away from* | *leave* | *recede* | `owogalul` / `owogalum` |
 | **`ual` / `uam`** | *out of* / *out from among* | *exit* | *pick out* | `owogalual` / `owogaluam` |
 | **`uol` / `uom`** | *through* / *by way of* | *traverse* | *relay* | `owogaluol` / `owogaluom` |
-| **`el` / `em`** | *for* / *of* | *serve* | *belong to* | `owogalel` / `owogalem` |
+| **`el` / `em`** | *for* / *used by* | *serve* | *have in use* | `owogalel` / `owogalem` |
 | **`ael` / `aem`** | *using* / *by* | *wield* | *channel* | `owogalael` / `owogalaem` |
 | **`uel` / `uem`** | *against* / *contrary to* | *oppose* | *defy* | `owogaluel` / `owogaluem` |
 

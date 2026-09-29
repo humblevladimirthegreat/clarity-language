@@ -47,7 +47,7 @@ For English *whose*, resume the person after the [whose hook **`em`**](hooks.md#
 
 > `zagadul vehahel. zodogal em bagar varahal.`
 >
-> z-guard | v-sit . z-dog | [of | b-←guard] | v-run
+> z-guard | v-sit . z-dog | [used-by | b-←guard] | v-run
 >
 > "A guard sits. The guard's dog runs." (*The guard whose dog runs sits.*)
 
@@ -65,15 +65,15 @@ English uses the same *who* clause for two jobs. When it picks out **which** one
 
 **Needs:** [Whose (`em`)](hooks.md#genitive) · [Sequence `oe`](joins.md#sequence-oe)
 
-When English stacks possessives, keep one **`em`** and list every owner in its `/b/`, closed by the sequence join **`boel`**. Put the **nearest** owner first: the first `/b/` has the host, and each later `/b/` has the one before it.
+When English stacks possessives, keep one **`em`** and list every owner in its `/b/`, closed by the sequence join **`boel`**. Put the **nearest** owner first: the first `/b/` uses the host, and each later `/b/` keeps the one before it.
 
 > `zabol em bodogal bazawan boel.`
 >
-> z-bone | [of | [b-dog | b-Azawan | b-in-order]]
+> z-bone | [used-by | [b-dog | b-Azawan | b-in-order]]
 >
 > "Azawan's dog's bone."
 
-**Compare with:** a set join in the same slot (`bodogal bazawan bal`) says the bone is both of theirs directly. Only the sequence says *the dog's, and the dog is Azawan's*.
+**Compare with:** a set join in the same slot (`bodogal bazawan bal`) says both use the bone directly. Only the sequence says *the dog's bone, and Azawan's dog*.
 
 ### *The day when …* {#day-when}
 

@@ -63,6 +63,7 @@ Closed words (joins, hooks, join-act verbs, emotion loci) stack two of the serie
 
 ## Genitive and other free hook slots
 
-- Extra-noun **`em`** is the loose genitive (*B's*, tie unsaid). It replaced *with … in mind*, which `el` *for* and `hegulam` + `/b/` already covered. `gegabem` stays for legal ownership: a single genitive that asserts ownership would push speakers to call people and places owned. Fused `em` = *belong to*.
+- Extra-noun **`em`** is the use / access genitive (*B's* = in B's use; says nothing about title). It replaced *with … in mind*, which `el` *for* and `hegulam` + `/b/` already covered. It is not a catch-all: ownership is `gegabem`, people take a tie (care = `gahazum`), parts / material / origin are of-relations, feelings are emotion compose, made things are role compounds. People are never `em` or `gegabem`; feelings and traits are never `em` or `gabom`. Fused `em` = *have in use*.
+- No `el` / `em` / `er` possession series by time horizon (`rejected/el-em-er-possession.md`).
 - Discourse **`aol …`** / **`aom …`** = *For example* (an instance of the prior claim; `al …` is a sibling point).
 - Considered and left unassigned: stacked point-back **-r** (`aor` *on it*; a hook + resumed `/b/` already says it), same-role `aol` *namely* (`el` or an aside covers it), discourse *Alternatively* (a sentence-initial `xom` / `xaom` join) and *Apart from that* (`al …` / `ur …`). Same-role `ao` / `uo` / `ae` and discourse `oe` / `ua` / `uo` / `ue` have no pressing job.

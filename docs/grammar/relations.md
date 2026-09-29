@@ -346,6 +346,15 @@ Any root whose abstract sense is a tie works this way (`gohoham` *partner of*, `
 | **`gemezem`** + `/b/` | companion of `/b/` | *friend of* | `emezel` *Mrs Claus* |
 | **`gagawum`** + `/b/` | the one `/b/` answers to | *boss of* | `agawul` *crown* |
 | **`gohoham`** + `/b/` | partner of `/b/` | *partner of* | `ohohal` *holding hands* |
+| **`gahazum`** + `/b/` | the one `/b/` looks after | *in the care of* (*Azawan's patient*, *team*) | `ahazul` *house plant* |
+
+A tie of care (*Azawan's patient*, *Azawan's team*) is **`gahazum`**: `/b/` looks after the person. It says Azawan is responsible for them, not that Azawan owns or uses them. (cue: 🪴 a house plant needs someone to tend it)
+
+> `zalahen gahazum bazawan.`
+>
+> z-Alahen | [g-tending | b-Azawan]
+>
+> "Alahen is in Azawan's care."
 
 **Compare with:** kin uses generation numbers ([kin generations](numbers-applied.md#kin-generations)). Plain *Azawan's*, with the tie left unsaid, is the hook [`em`](hooks.md#genitive). Ownership is `gegabem`. *Part of* is `gabom`.
 
