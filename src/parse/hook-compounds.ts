@@ -47,7 +47,7 @@ export const HOOK_DERIVED_GLOSS: Record<ExtraNounHook, string> = {
   uol: "traverse",
   uom: "relay",
   el: "serve",
-  em: "keep-in-view",
+  em: "belong-to",
   ael: "wield",
   aem: "channel",
   uel: "oppose",

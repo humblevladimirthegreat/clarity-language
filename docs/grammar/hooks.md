@@ -438,7 +438,7 @@ Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). S
 | **`ul`** | *from* | **`um`** | *away from* | **u** ≈ undo (leave); **-m** that origin as the setting |
 | **`ual`** | *out of* | **`uam`** | *out from among* | **ua** ≈ leave a volume; **-m** that volume as the setting |
 | **`uol`** | *through* | **`uom`** | *by way of* | **uo** ≈ leave via one path; **-m** that path as the setting |
-| **`el`** | *for* | **`em`** | *with in mind* | **e** ≈ order (aim the act); **-m** the aim as a frame |
+| **`el`** | *for* | **`em`** | *of* / *'s* | **e** ≈ order (aim the act); **-m** the one aimed at, as the frame the noun belongs in |
 | **`ael`** | *using* | **`aem`** | *by* | **ae** ≈ add an ordered means; **-m** the channel |
 | **`uel`** | *against* | **`uem`** | *contrary to* | **ue** ≈ undo aimed at; **-m** the opposing frame |
 
@@ -462,13 +462,6 @@ Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). S
 >
 > "Azawan fights against a guard."
 
-
-> `zazawan varadal em bamol.`
->
-> z-Azawan | v-write | [with-in-mind | b-money]
->
-> "Azawan writes with money in mind."
-
 > `zazawan vezebel aem bagahol.`
 >
 > z-Azawan | v-tell | [by | b-camera]
@@ -489,6 +482,34 @@ To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`a
 >
 > "How does Azawan write the book?"
 
+### Whose (`em`) {#genitive}
+
+English *Azawan's dog* or *the dog of Azawan* says the dog goes with Azawan, without saying how. Put **`em`** right after the noun and the person in `/b/`. `em` does not say whether Azawan owns it, looks after it, or just walks it every day. (cue: **`el`** is *for B*, a get meant to reach B; **`em`** says the noun already sits in B's frame)
+
+> `zodogal em bazawan varahal.`
+>
+> z-dog | [of | b-Azawan] | v-run
+>
+> "Azawan's dog runs."
+
+> `zazawan dahazal em balahen vahahal.`
+>
+> z-Azawan | d-house | [of | b-Alahen] | v-see
+>
+> "Azawan sees Alahen's house."
+
+For *my* and *your*, put the [speaker or listener](pronouns.md#special-pronouns) in `/b/`: `em bamegun` is *my*, `em behodon` is *your*.
+
+> `zodogal em bamegun vezebal.`
+>
+> z-dog | [of | b-speaker] | v-sleep
+>
+> "My dog sleeps."
+
+**Compare with:** when *'s* means a particular tie, name it: legal ownership is `gegabem`, and *part of*, *made of*, *friend of* and the rest are [relations](relations.md#of-relations). *For Azawan* is `el`. A [sake](sakes.md) on `/ɡ/` also marks the noun as yours, together with how it serves you.
+
+### Opening a sentence with stacked hooks {#stacked-discourse}
+
 At the front of a sentence (no `/b/` after it), stacked **`ael`** is a discourse hook: **ae** ≈ add, ranked upward. **`ael …`** opens a sentence: **`ael …`** adds a point that goes further than what came before, like English *In fact, …* / *What's more, …*.
 
 > `ael zalahen vezebal.`
@@ -496,6 +517,16 @@ At the front of a sentence (no `/b/` after it), stacked **`ael`** is a discourse
 > in.fact | z-Alahen | v-sleep
 >
 > "In fact, Alahen sleeps."
+
+Stacked **`aol …`** says this sentence is one case of what you just said, like English *For example, …*. (cue: **ao** ≈ add one: a single sample) With **-m**, `aom …` adds *among others*.
+
+> `zavahal vowogal. aol zalahen vowogal.`
+>
+> z-family | v-walk . for.example | z-Alahen | v-walk
+>
+> "The family walks. For example, Alahen walks."
+
+**Compare with:** `al …` *Additionally* adds a separate point next to the last one; `aol …` gives an instance of it. Inside a clause, *such as* is `am` (*including, and maybe more*).
 
 ### Somewhere, nowhere, everywhere {#place-indefinites}
 
@@ -879,6 +910,14 @@ z-Azawan | v-write | [on | b-page] . z-Alahen | v-write | there
 anyway | z-Alahen | v-tell
 :::
 
+**11.** *Azawan writes Alahen's page.*
+
+::: details Show answer
+`zazawan dabehel em balahen varadal.`
+
+z-Azawan | d-page | [of | b-Alahen] | v-write
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zunuzel am zahaben ul zazawan.`
@@ -953,6 +992,15 @@ z-Azawan | v-write | [on | b-page]
 *Azawan writes on a page.*
 :::
 
+**9.** `zunuzel vezebel. aol zahaben vezebel.`
+
+::: details Show answer
+
+z-newspaper | v-tell . for.example | z-Ahaben | v-tell
+
+*The newspaper tells. For example, Ahaben tells.*
+:::
+
 ## Advanced {#advanced}
 
 ### Hook compounds (cite + extra-noun hook) {#hook-compounds}
@@ -991,7 +1039,7 @@ The left ending is part of the stem, so two different left roots stay distinct o
 | **`ul` / `um`** | *from* / *away from* | *leave* | *recede* | `owogalul` / `owogalum` |
 | **`ual` / `uam`** | *out of* / *out from among* | *exit* | *pick out* | `owogalual` / `owogaluam` |
 | **`uol` / `uom`** | *through* / *by way of* | *traverse* | *relay* | `owogaluol` / `owogaluom` |
-| **`el` / `em`** | *for* / *with in mind* | *serve* | *keep in view* | `owogalel` / `owogalem` |
+| **`el` / `em`** | *for* / *of* | *serve* | *belong to* | `owogalel` / `owogalem` |
 | **`ael` / `aem`** | *using* / *by* | *wield* | *channel* | `owogalael` / `owogalaem` |
 | **`uel` / `uem`** | *against* / *contrary to* | *oppose* | *defy* | `owogaluel` / `owogaluem` |
 

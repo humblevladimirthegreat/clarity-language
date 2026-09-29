@@ -60,3 +60,9 @@ Closed words (joins, hooks, join-act verbs, emotion loci) stack two of the serie
 - Ranges use hooks, not joins. Rank and sequence joins (`e` / `ue` / `oe`) with a number have no threshold reading, and there is no SHARED continuum word; don't restore either.
 - `oel` stays although `al` already spans numbers: for other nouns, *A, including B* depends on whether A names a group, which the syntax cannot see.
 - Scope islands do not bind hooks. Whole-span scope comes from `/w/` before the hook or from the host noun.
+
+## Genitive and other free hook slots
+
+- Extra-noun **`em`** is the loose genitive (*B's*, tie unsaid). It replaced *with … in mind*, which `el` *for* and `hegulam` + `/b/` already covered. `gegabem` stays for legal ownership: a single genitive that asserts ownership would push speakers to call people and places owned. Fused `em` = *belong to*.
+- Discourse **`aol …`** / **`aom …`** = *For example* (an instance of the prior claim; `al …` is a sibling point).
+- Considered and left unassigned: stacked point-back **-r** (`aor` *on it*; a hook + resumed `/b/` already says it), same-role `aol` *namely* (`el` or an aside covers it), discourse *Alternatively* (a sentence-initial `xom` / `xaom` join) and *Apart from that* (`al …` / `ur …`). Same-role `ao` / `uo` / `ae` and discourse `oe` / `ua` / `uo` / `ue` have no pressing job.

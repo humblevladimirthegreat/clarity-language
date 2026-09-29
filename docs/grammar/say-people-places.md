@@ -43,11 +43,11 @@ A place, tool, or *of*-relation on the noun is still an extra-noun [hook](hooks.
 >
 > "Azawan sees a sitting guard."
 
-For English *whose*, resume the person inside the ownership relation [**`gegabem`**](relations.md) in the second sentence.
+For English *whose*, resume the person after the [whose hook **`em`**](hooks.md#genitive) in the second sentence. Use **`gegabem`** instead when the point is that the guard legally owns it.
 
-> `zagadul vehahel. zodogal gegabem bagar varahal.`
+> `zagadul vehahel. zodogal em bagar varahal.`
 >
-> z-guard | v-sit . [z-dog | [g-ownership | b-←guard]] | v-run
+> z-guard | v-sit . z-dog | [of | b-←guard] | v-run
 >
 > "A guard sits. The guard's dog runs." (*The guard whose dog runs sits.*)
 
@@ -63,17 +63,17 @@ English uses the same *who* clause for two jobs. When it picks out **which** one
 
 ### Stacked owners (*Azawan's dog's bone*) {#stacked-owners}
 
-**Needs:** [Ownership](joins.md#scope-fence-p-join) · [Sequence `oe`](joins.md#sequence-oe)
+**Needs:** [Whose (`em`)](hooks.md#genitive) · [Sequence `oe`](joins.md#sequence-oe)
 
-When English stacks possessives, keep one **`gegabem`** and list every owner in its `/b/`, closed by the sequence join **`boel`**. Put the **nearest** owner first: the first `/b/` owns the host, and each later `/b/` owns the one before it.
+When English stacks possessives, keep one **`em`** and list every owner in its `/b/`, closed by the sequence join **`boel`**. Put the **nearest** owner first: the first `/b/` has the host, and each later `/b/` has the one before it.
 
-> `zabol gegabem bodogal bazawan boel.`
+> `zabol em bodogal bazawan boel.`
 >
-> z-bone | [g-ownership | [b-dog | b-Azawan | b-in-order]]
+> z-bone | [of | [b-dog | b-Azawan | b-in-order]]
 >
 > "Azawan's dog's bone."
 
-**Compare with:** a set join in the same slot (`bodogal bazawan bal`) says both own the bone directly. Only the sequence says *owned by the dog, which Azawan owns*.
+**Compare with:** a set join in the same slot (`bodogal bazawan bal`) says the bone is both of theirs directly. Only the sequence says *the dog's, and the dog is Azawan's*.
 
 ### *The day when …* {#day-when}
 

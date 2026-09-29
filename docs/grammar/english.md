@@ -38,6 +38,17 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agazan 
 | duration (*for three hours*) | measure phrase | [Measure phrases](numbers-applied.md#measure-phrases) |
 | topic (*as for Azawan*) | **`hahehom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 
+### *'s* / *of* {#of}
+
+| English itch | Agazan job | Teach |
+|--------------|------------|-------|
+| goes with, tie unsaid (*Azawan's dog*, *my house*) | hook **`em`** + `/b/` | [Whose](hooks.md#genitive) |
+| legal ownership (*the dog Azawan owns*) | **`gegabem`** + `/b/` | [Of relations](relations.md#of-relations) |
+| social tie (*Azawan's friend*) | tie root on `/ɡ/` **-m** + `/b/` | [Social relations](relations.md#social-relations) |
+| part / contents / material (*a hand of Alahen*, *a teapot of tea*) | **`gabom`** / **`gaham`** / **`guwam`** + `/b/` | [Of relations](relations.md#of-relations) |
+| origin (*Alahen of the city*) | **`gagum`** + `/b/` | [Of relations](relations.md#of-relations) |
+| *my* belonging + sake (*my tent serves survival*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](sakes.md#personal-possession) |
+
 ### *about*
 
 | English itch | Agazan job | Teach |
