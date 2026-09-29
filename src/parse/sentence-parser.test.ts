@@ -95,6 +95,24 @@ describe("sentence-parser synthetic", () => {
     assert.equal(last("zazawan thabem bral gamadam.").kind, "predicate");
   });
 
+  it("lets a kin number on an /h/ host's landmark host its own /b/, but keeps a count as the amount", () => {
+    const last = (text: string) => parseSentenceTokens(tokens(text)).utterances[0]!.bodies[0]!.clause.units.at(-1)!;
+    const kin = last("zazawan vowogal han bebezal grebuwol behodon.");
+    assert.equal(kin.kind === "h" ? kin.unit.boundAmount : "not h", undefined);
+    assert.equal(kin.kind === "h" ? kin.unit.boundAdjs?.[0]?.bound?.raw : undefined, "behodon");
+    const offset = last("zazawan vowogal hulam bazazam grawol.");
+    assert.equal(offset.kind === "h" ? offset.unit.boundAmount?.raw : undefined, "grawol");
+  });
+
+  it("puts a /ɡ/ after a SHARED relation's /b/ on that landmark", () => {
+    const shared = parseSentenceTokens(tokens("zodogal zagadal zal gabom bahazar gamazam.")).utterances[0]!.bodies[0]!.clause.units;
+    assert.equal(shared.length, 1);
+    const unit = shared[0]!;
+    const part = unit.kind === "np" ? unit.coord.parts.find((p) => p.join) : undefined;
+    const pair = part?.shared[0];
+    assert.equal(pair && "boundAdjs" in pair ? pair.boundAdjs?.[0]?.word.raw : undefined, "gamazam");
+  });
+
   it("keeps a stance join fence after /th/ words", () => {
     const units = parseSentenceTokens(tokens("zazawan vawalal thuvuvum thul.")).utterances[0]!.bodies[0]!.clause.units;
     const raws = units.flatMap((u) => (u.kind === "h" ? [u.unit.word.raw] : []));

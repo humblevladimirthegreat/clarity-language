@@ -730,6 +730,14 @@ When an adjective or extra noun is meant for the **whole list** (*both challengi
 >
 > "Azawan's dog and cat (and possibly more)."
 
+A plain `/ɡ/` after that SHARED pair describes its `/b/`, as in [complex chaining](clause.md#complex-chaining).
+
+> `zodogal zagadal zam gegabem bazawan gubuhal.`
+>
+> [z-dog | z-cat | z-and.open | [g-ownership | [b-Azawan | g-blue]]]
+>
+> "Blue Azawan's dog and cat (and possibly more)."
+
 **Compare with:** *part of* / *contents of* / *made of* / origin *from* use [of relations](relations.md#of-relations), not `egabe`. A [sakes](sakes.md) need on `/ɡ/` already means the speaker’s belonging (`guduthal` *my … serves competence*).
 
 | Join family | Use of SHARED `/ɡ/` |

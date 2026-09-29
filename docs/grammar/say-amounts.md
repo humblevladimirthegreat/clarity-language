@@ -51,7 +51,7 @@ English *two meters taller* still ranks two people on one quality, and it also n
 
 > `zazawan zalahen zel gadavem bezezem gradul.`
 >
-> [z-Azawan | z-Alahen | z-rank/more | [g-height | b-meter]] | g-two
+> [z-Azawan | z-Alahen | z-rank/more | [g-height | [b-meter | g-two]]]
 >
 > "Azawan is two meters taller than Alahen."
 

@@ -14,7 +14,6 @@ Prosody
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 
 final exam
--simplify the parser: can grammatical rules be combined?
 save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.
 -review published-lexicon for psychology - are there any abstract roots that are prone to cognitive biases that would benefit from special attention such as carefully choosing the concrete
@@ -23,6 +22,7 @@ save for near end of limit resets:
 -vocab bank and exercise revamp: introduce new vocabulary, follow standards for language teaching
 
 save for end:
+-simplify the parser: can grammatical rules be combined?
 -finish English->Agazan cheat sheets, including tense
 -do parser consistency pass. Does the parser completely and accurately encode all the meaning of the grammar?
 -add Agazan->English cheat sheet

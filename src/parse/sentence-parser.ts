@@ -55,7 +55,7 @@ import type {
   VpCoord,
   BoundJoin,
 } from "./types.js";
-import type { LexWord } from "./types.js";
+import type { LexWord, NumberMarker } from "./types.js";
 
 export class SentenceParseError extends Error {
   readonly parserErrors: unknown[];
@@ -685,10 +685,12 @@ class AgazanSentenceParser extends CstParser {
             this.CONSUME(B);
             this.OPTION3({ GATE: () => boundJoinAhead(this), DEF: () => this.SUBRULE(this.boundJoinTail) });
             // A number word right after the hosted /b/ is its amount (measure phrase, e.g. a signed offset).
+            // An ordinal (a place, or a kin generation) is an adjective on the landmark instead, free to host its own /b/.
             this.OPTION2({
               GATE: () => {
                 const la = this.LA(1);
-                return la.tokenType === G && (la.payload as LexWord).family.kind === "number";
+                const family = (la.payload as LexWord | undefined)?.family;
+                return la.tokenType === G && family?.kind === "number" && !isOrdinalMarker(family.stem.marker);
               },
               DEF: () => this.CONSUME(G),
             });
@@ -720,6 +722,12 @@ class AgazanSentenceParser extends CstParser {
     while (this.LA(i).tokenType === B || this.LA(i).tokenType === JoinB) i -= 1;
     const host = this.LA(i).payload as LexWord | undefined;
     return this.LA(i).tokenType === H && host?.pos === "h";
+  }
+
+  /** A plain `/ɡ/` right after a SHARED relation's content `/b/`. */
+  private sharedLandmarkAdjAhead(): boolean {
+    const bound = this.LA(0).payload as LexWord | undefined;
+    return this.LA(0).tokenType === B && !!bound && bound.family.kind !== "number" && bound.family.kind !== "joinMarker";
   }
 
   public hookUnit = this.RULE("hookUnit", () => {
@@ -800,7 +808,18 @@ class AgazanSentenceParser extends CstParser {
 
   public sharedAfterJoin = this.RULE("sharedAfterJoin", () => {
     this.OR([
-      { GATE: () => this.LA(laAfterW(this)).tokenType === G, ALT: () => this.SUBRULE(this.gPackage) },
+      {
+        GATE: () => this.LA(laAfterW(this)).tokenType === G,
+        ALT: () => {
+          this.SUBRULE(this.gPackage);
+          // A plain /ɡ/ after a SHARED relation's hosted /b/ describes that landmark (clause.md § complex chaining).
+          let landmark = false;
+          this.MANY({
+            GATE: () => (landmark ||= this.sharedLandmarkAdjAhead()) && this.plainAdjAhead(),
+            DEF: () => this.SUBRULE2(this.gPackage),
+          });
+        },
+      },
       { GATE: () => tokenIs(this.LA(laAfterW(this)), H), ALT: () => this.SUBRULE(this.hUnitRule) },
       { GATE: () => timeScaleAhead(this.LA(1)), ALT: () => this.CONSUME(B, { LABEL: "timeScale" }) },
     ]);
@@ -1018,6 +1037,11 @@ function factorAhead(tok: IToken): boolean {
   return (stem.marker === "+" || stem.marker === "-") && stem.groups.length > 0;
 }
 
+/** A place in a series (`#` from the start, `#-` from the end), including kin generations. */
+function isOrdinalMarker(marker: NumberMarker): boolean {
+  return marker === "#" || marker === "re" || marker === "#-" || marker === "rue";
+}
+
 function boundJoinAhead(parser: AgazanSentenceParser): boolean {
   let i = 1;
   while (parser.lookahead(i).tokenType === B) i++;
@@ -1093,8 +1117,8 @@ function buildNpPackage(cst: CstNode): NpPackage {
 
 function buildShared(cst: CstNode | undefined): CoordShared[] {
   if (!cst) return [];
-  const g = childNodes(cst, "gPackage")[0];
-  if (g) return [buildGPackage(g)];
+  const g = childNodes(cst, "gPackage");
+  if (g.length > 0) return nestOnExtraNoun(g.map(buildGPackage));
   const h = childNodes(cst, "hUnitRule")[0];
   if (h) return [buildHUnit(h)];
   const time = childToken(cst, "timeScale");
