@@ -21,15 +21,15 @@ The leaving or the blow is still the event named in the *could be*. Without the 
 ### Hold endings (MAY)
 <a id="may-hold"></a>
 
-On **`ovo`**, **-l / -m / -r** say what you are doing with that *could be* **this sentence**. None of them is the “correct” person: finding out, leaving it at *may*, and *who knows* are all lawful. **-n** is ordinary [proper](word-endings.md#proper-name--n).
+On **`ovo`**, **-l / -m / -r** say how much you are following up on that *could be* **this sentence**, on the same strong-to-light scale as [ATTEMPT](intention.md#try): **-l** is the most committed, **-m** the default, and **-r** the lightest. None of them is the “correct” person: settling it, leaving it at *may*, and letting it pass are all lawful. **-n** is ordinary [proper](word-endings.md#proper-name--n).
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`thovom`** | could be (default) | *may* / *could be* | `ovol` *thought* | 💭: balloon |
-| **`thovol`** | could be, and you are **seeking** | *may — I'll find out* / *let's find out* | `ovol` *thought* | 💭: balloon plus looking |
-| **`thovor`** | could be, and you are **not seeking** (including if you never know) | *may — who knows* | `ovol` *thought* | 💭: balloon with a shrug |
+| **`thovol`** | could be, and you are **committed to settling it** | *may — I'll find out* / *let's find out* | `ovol` *thought* | 💭: balloon plus a magnifying glass (**-l** the full run) |
+| **`thovom`** | could be (default; follow-up unstated) | *may* / *could be* | `ovol` *thought* | 💭: balloon (**-m** middle) |
+| **`thovor`** | could be, as a **passing thought** you are not pursuing right now | *may — who knows* | `ovol` *thought* | 💭: balloon drifting off (**-r** light, this moment only) |
 
-When you are not sure, use **`thovom`**. That is not wiser than finding out (**-l**) or *who knows* (**-r**); it is the grammar of *could be* without those stances.
+When you are not sure, use **`thovom`**. That is not wiser than settling it (**-l**) or letting it pass (**-r**); it is the grammar of *could be* without those stances.
 
 > `zalahen thovol vabahel dazawan.`
 >

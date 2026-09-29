@@ -9,7 +9,6 @@ use [skip-cd] for amplify to not deploy.
 # TODO
 
 Prosody
--suggest realignment of MAY ending table for consistency but still have similar readings
 -change compassion to kindness
 -remove & as punctuation?
 -confirm we still have chats after rebuild
