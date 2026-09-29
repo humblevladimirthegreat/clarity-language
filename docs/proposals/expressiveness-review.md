@@ -65,15 +65,15 @@ Checklists miss things that only surface in real use. Translate English sentence
 
 Use the [Conlang Syntax Test Cases](https://cofl.github.io/conlang/resources/mirror/conlang-syntax-test-cases.html) (218 sentences, graded from *The sun shines.* to multi-clause reported speech; curated from ~1200 sentences to remove syntactic duplicates) as a fixed, external sentence set. Sentences we did not write avoid picking examples Agazan already handles well, and a shared corpus makes results comparable with other conlangs.
 
-- [~] Copy the list into `docs/meta/syntax-test-corpus.md` (numbered, source credited) as the working sheet; add an Agazan translation + parser check per sentence. Keep the original numbering so rows can cite `STC-nn`. *(List copied; STC-1–190 translated; findings in `docs/meta/syntax-test-results.md`.)*
-- [ ] Split into batches of ~30 (one agent per batch, in list order, since difficulty rises); each stopping point becomes a ledger row citing `STC-nn` (dedupe against Phase 1 IDs).
-- [ ] Keep the **by design** rule: a sentence whose English form is deliberately not mirrored (e.g. *is* copula, tense) is **covered** if the meaning has a natural route.
+- [x] Copy the list into `docs/meta/syntax-test-corpus.md` (numbered, source credited) as the working sheet; add an Agazan translation + parser check per sentence. Keep the original numbering so rows can cite `STC-nn`. *(List copied; all 218 translated; findings in `docs/meta/syntax-test-results.md`: G-01–G-23 and L-01–L-12 ruled.)*
+- [x] Split into batches of ~30 (one agent per batch, in list order, since difficulty rises); each stopping point becomes a ledger row citing `STC-nn` (dedupe against Phase 1 IDs).
+- [x] Keep the **by design** rule: a sentence whose English form is deliberately not mirrored (e.g. *is* copula, tense) is **covered** if the meaning has a natural route.
 
 The corpus covers core syntax only — its register is dated narrative, with few questions, almost no discourse markers, hedges, or speech acts, and nothing on the psychological themes. Phase 2b fills those.
 
 ### 2b — Register samples
 
-- [ ] Pick ~8 short samples (≈150 words each) across registers: casual chat, text message thread, how-to instructions, news paragraph, story narration, argument / opinion, a support conversation (compassion theme), a decision memo (empowerment / rationality theme).
+- [x] Pick ~8 short samples (≈150 words each) across registers: casual chat, text message thread, how-to instructions, news paragraph, story narration, argument / opinion, a support conversation (compassion theme), a decision memo (empowerment / rationality theme).
 - [ ] One agent per sample translates with the published lexicon and parser; each stopping point becomes a ledger row (dedupe against Phase 1 IDs).
 - [ ] Also log **lexicon-only** gaps separately (missing roots, not grammar) and hand them to the TODO lexicon items rather than this ledger.
 

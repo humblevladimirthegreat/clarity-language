@@ -818,7 +818,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos
 📷,camera,agaho,,,
 📹,camcorder,agago,recording,camcorder tapes moving scenes; recording is preserving over time,
 📼,videocassette,evude,,,
-🔍,magnify,amega,scrutiny,magnifier enlarges small detail; scrutiny is close examination,
+🔍,magnify,amega,scrutiny,magnifier enlarges small detail; scrutiny is close examination,v:find
 🕯️,candle,agega,awash,candle light fills the room; awash is charge in the surrounding field,
 💡,lightbulb,aloda,candela,lightbulb sets luminous intensity; candela is the SI luminous-intensity unit,
 🔦,flashlight,aveha,revelation,flashlight reveals what was dark; revelation is making known,
@@ -842,7 +842,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos
 💶,euro,uyeyu,,,
 💷,pound,ababa,gram,banknote stands for a standard mass chunk; gram is the SI mass unit,
 💸,spend,azebe,waste,money flies away with wings; waste is losing what you had,
-💳,credit-card,agavo,credit,card borrows now and pays later; credit is trust to pay later,
+💳,credit-card,agavo,credit,card borrows now and pays later; credit is trust to pay later,v:lend
 🧾,receipt,eraze,proof,receipt proves the transaction; proof is evidence of fact,
 ✉️,envelope,enava,,,
 📧,email,emeha,message,email sends words instantly; message is communicated content,

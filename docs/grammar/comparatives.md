@@ -256,6 +256,8 @@ A standalone ladder says only that nothing is on top. It does not say why (a tie
 
 **Compare with:** ranking names with no shared adjective is ordinary preference (who comes first as an alternative). Add the shared `/ɡ/` when you mean *more ADJ than*.
 
+English *not as challenging as* and *no more challenging than* both say the first name does not reach the second, and Agazan reads them as **`zuel`**: `zalahen zazawan zuel gamadam` is *Alahen is not as challenging as Azawan*. What English only implies (that neither is challenging) is not said. For a firm tie, use [`zael`](#equatives).
+
 ### Manner scale (`/h/`) {#manner-scale}
 
 When English would say *Alahen walks more intensely than Azawan*, the ladder is **how** they walk, not a quality of the people. Keep the same rank join. Write a manner adverb (`/h/`) **immediately after** it, then the verb. The first name sits higher on that manner.

@@ -72,6 +72,7 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agazan 
 | same time (*as Alahen walks*) | **`hehum barl`** | [Dependent clauses](dependents.md#dependent-clauses) |
 | reason / since (*as Alahen walks*) | **`theram barl`** | [Because](causation.md#because) |
 | equal degree (*as sleepy as*) | equative **`ae`** | [Equatives](comparatives.md#equatives) |
+| falls short (*not as sleepy as*) | reverse rank **`ue`** | [Reverse rank](comparatives.md#intermediate) |
 | topic (*as for Azawan*) | **`hahehom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 | resemblance (*walks as / like a duck*) | **`homem`** + `/b/` | [Simile](relations.md#similative) |
 | pretense (*as if they walk*) | **NOTIONAL** | [Notional](knowing.md#notional) |
