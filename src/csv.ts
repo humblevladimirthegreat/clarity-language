@@ -5,6 +5,15 @@ export function escapeCsvField(value: string): string {
   return value;
 }
 
+/** Header row plus one line per row, `\n`-terminated; missing fields are empty. */
+export function serializeCsv(headers: readonly string[], rows: readonly Record<string, unknown>[]): string {
+  const lines = [
+    headers.join(","),
+    ...rows.map((row) => headers.map((h) => escapeCsvField(String(row[h] ?? ""))).join(",")),
+  ];
+  return `${lines.join("\n")}\n`;
+}
+
 export function parseCsv(content: string): { headers: string[]; rows: Record<string, string>[] } {
   const lines = content.split(/\r?\n/).filter((line) => line.length > 0);
   if (lines.length === 0) {
@@ -23,7 +32,7 @@ export function parseCsv(content: string): { headers: string[]; rows: Record<str
   return { headers, rows };
 }
 
-function parseCsvLine(line: string): string[] {
+export function parseCsvLine(line: string): string[] {
   const fields: string[] = [];
   let current = "";
   let inQuotes = false;

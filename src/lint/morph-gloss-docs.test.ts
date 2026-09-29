@@ -13,8 +13,8 @@ import {
 function tablesOf(): ClassifyTables {
   return createClassifyTablesFromRows(
     [
-      { emoji: "", concrete: "swan", abstract: "grace", clarity: "azawa", mnemonic: "", englishByPos: "", posEnglish: emptyPosEnglish() },
-      { emoji: "", concrete: "chair", abstract: "", clarity: "ayu", mnemonic: "", englishByPos: "v:sit", posEnglish: parseEnglishByPos("v:sit", { concrete: "chair" }) },
+      { emoji: "", concrete: "swan", abstract: "grace", root: "azawa", mnemonic: "", englishByPos: "", posEnglish: emptyPosEnglish() },
+      { emoji: "", concrete: "chair", abstract: "", root: "ayu", mnemonic: "", englishByPos: "v:sit", posEnglish: parseEnglishByPos("v:sit", { concrete: "chair" }) },
     ],
     [],
   );

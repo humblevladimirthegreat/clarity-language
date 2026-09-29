@@ -6,8 +6,7 @@
  *      npm run lint:lexicon -- --json
  */
 import { readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
 
 import {
   validatePublishedSenseSeparation,
@@ -16,9 +15,9 @@ import {
 import { parsePublishedCsv } from "../src/lexicon-search.js";
 import { glossCollisions } from "../src/parse/gloss-inverse.js";
 import { loadDefaultTables } from "../src/parse/index.js";
+import { dataPath } from "../src/repo-paths.js";
 
-const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
-const publishedPath = join(rootDir, "data", "lexicon-published.csv");
+const publishedPath = dataPath("lexicon-published.csv");
 
 function parseArgs(argv: string[]): { json: boolean } {
   let json = false;

@@ -1,23 +1,16 @@
 #!/usr/bin/env node
-// Full build: generate the word parser (only when word.peggy changed), compile,
+// Full build: generate the word parser (only when word.peggy changed), typecheck,
 // pad exercise spoilers (rewrites docs, so it runs before anything reads them),
 // then run tests, doc lints, eslint and the VitePress build in parallel.
 // Each parallel job's output is buffered and printed when it finishes.
 import { spawn } from "node:child_process";
-import { copyFileSync, mkdirSync, statSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { mtime } from "./lib/run-bundled.mjs";
+
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const bin = (name) => join(root, "node_modules", ".bin", name);
-
-function mtime(path) {
-  try {
-    return statSync(path).mtimeMs;
-  } catch {
-    return 0;
-  }
-}
 
 function run(label, cmd, args, { buffer = false } = {}) {
   const start = Date.now();
@@ -53,15 +46,12 @@ if (mtime(generated) < mtime(grammar)) {
 }
 
 await step("tsc", bin("tsc"), []);
-mkdirSync(join(root, "dist", "generated"), { recursive: true });
-for (const f of ["word-parser.js", "word-parser.d.ts"]) {
-  copyFileSync(join(root, "src", "generated", f), join(root, "dist", "generated", f));
-}
 
 await step("pad spoiler blanks", bin("tsx"), ["scripts/pad-exercise-spoiler-blanks.ts"]);
 
 const jobs = [
   run("test", "npm", ["test", "--silent"], { buffer: true }),
+  run("tsc vitepress", bin("tsc"), ["-p", "docs/grammar/.vitepress"], { buffer: true }),
   run("lint md balance", "node", ["scripts/lint-md-balance.mjs"], { buffer: true }),
   run("lint sidebar", bin("tsx"), ["scripts/lint-sidebar-pages.ts"], { buffer: true }),
   run("lint agazan", bin("tsx"), ["scripts/lint-agazan-docs.ts"], { buffer: true }),

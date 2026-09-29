@@ -1,16 +1,8 @@
 {
-  "name": "clarity-language",
+  "name": "agazan",
   "version": "0.1.0",
   "description": "Agazan tooling — lexicon helpers and agent-facing docs",
   "type": "module",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
-    }
-  },
   "scripts": {
     "generate:word": "peggy --format es --dts --allowed-start-rules start,words,probe_spanClose,probe_writingSpan,probe_freeNumber,probe_hook,probe_prefixedWord,probe_citation,probe_prefixedX,probe_prefixedPlain,probe_prefixedJoin -o src/generated/word-parser.js src/parse/word.peggy",
     "build": "node scripts/build.mjs",
@@ -21,17 +13,16 @@
     "docs:preview": "vitepress preview docs/grammar",
     "convert-word": "tsx scripts/convert-word.ts",
     "retie-docs": "tsx scripts/retie-docs.ts",
+    "regloss-docs": "tsx scripts/regloss-docs.ts",
     "metaphor-assign": "tsx scripts/phase5-metaphor-assign.ts",
     "metaphor-assign-test": "tsx scripts/lib/metaphor-assign-data.test.ts && tsx scripts/lib/llm-client.test.ts",
     "lexicon-search": "tsx scripts/lexicon-search.ts",
     "check-compounds": "tsx scripts/check-compound-uniqueness.ts",
     "lint:lexicon": "tsx scripts/lint-lexicon-published.ts",
     "unused-roots": "tsx scripts/unused-roots.ts",
-    "build:lexicon-web": "esbuild src/lexicon-search.ts --bundle --format=esm --outfile=web/lib/lexicon-search.js --platform=browser",
     "test": "tsx --test src/*.test.ts src/**/*.test.ts docs/grammar/.vitepress/components/*.test.ts docs/grammar/.vitepress/lib/*.test.ts scripts/lib/*.test.ts",
     "parse": "node scripts/parse.mjs",
-    "find": "node scripts/find.mjs",
-    "web": "npm run build:lexicon-web && npx --yes serve . -p 4173 -o /web/"
+    "find": "node scripts/find.mjs"
   },
   "engines": {
     "node": ">=24"
@@ -53,7 +44,6 @@
     "eslint": "^10.9.1",
     "eslint-plugin-vue": "^10.10.0",
     "eslint-plugin-vuejs-accessibility": "^2.6.0",
-    "fflate": "^0.8.2",
     "globals": "^17.12.0",
     "happy-dom": "^20.11.1",
     "peggy": "^5.1.0",

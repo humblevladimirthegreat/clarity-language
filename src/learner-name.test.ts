@@ -29,7 +29,7 @@ describe("eligibleNames", () => {
   });
 
   it("bans only confusing names, with a reason", () => {
-    const reason = (root: string) => nameBanReason(rows.find((row) => row.clarity === root)!, overlays);
+    const reason = (root: string) => nameBanReason(rows.find((row) => row.root === root)!, overlays);
     const roles = [CLOSED.microphone, CLOSED.headphones, CLOSED.handshake, CLOSED.neutral];
     const cast = [CLOSED.swan, CLOSED.lion, CLOSED.hibiscus];
     // `eha` (DECISION ✅) and `ovo` (MAY 💭) + **-n** are grammar words.

@@ -16,14 +16,14 @@ import {
 } from "./agazan-docs.js";
 
 function tablesOf(opts?: {
-  published?: Array<{ clarity: string; concrete?: string; abstract?: string }>;
+  published?: Array<{ root: string; concrete?: string; abstract?: string }>;
 }): ClassifyTables {
   return createClassifyTablesFromRows(
-    (opts?.published ?? [{ clarity: "azawa", concrete: "dog" }]).map((row) => ({
+    (opts?.published ?? [{ root: "azawa", concrete: "dog" }]).map((row) => ({
       emoji: "",
-      concrete: row.concrete ?? row.clarity,
+      concrete: row.concrete ?? row.root,
       abstract: row.abstract ?? "",
-      clarity: row.clarity,
+      root: row.root,
       mnemonic: "",
       englishByPos: "",
       posEnglish: emptyPosEnglish(),
@@ -71,10 +71,10 @@ describe("peelLintChunk", () => {
 describe("lintAgazanToken", () => {
   const tables = tablesOf({
     published: [
-      { clarity: "azawa", concrete: "dog" },
-      { clarity: "uzumu", concrete: "smile", abstract: "happy" },
-      { clarity: "egera", concrete: "ability" },
-      { clarity: "ululo", concrete: "courage" },
+      { root: "azawa", concrete: "dog" },
+      { root: "uzumu", concrete: "smile", abstract: "happy" },
+      { root: "egera", concrete: "ability" },
+      { root: "ululo", concrete: "courage" },
     ],
   });
 
@@ -123,7 +123,7 @@ describe("lintAgazanToken", () => {
 
 describe("lintAgazanMarkdown", () => {
   const tables = tablesOf({
-    published: [{ clarity: "azawa", concrete: "dog" }],
+    published: [{ root: "azawa", concrete: "dog" }],
   });
 
   it("checks backticks and fences, not prose", () => {
@@ -146,9 +146,9 @@ describe("lintAgazanMarkdown", () => {
 
   it("accepts a short resume only after its antecedent in the same block", () => {
     const tables = tablesOf({ published: [
-        { clarity: "orugu", concrete: "pour" },
-        { clarity: "azawa", concrete: "grace" },
-        { clarity: "ululo", concrete: "wave" },
+        { root: "orugu", concrete: "pour" },
+        { root: "azawa", concrete: "grace" },
+        { root: "ululo", concrete: "wave" },
       ], });
     const text = "`zazawan vorugul. zululon vorur.` then `vorur`";
     const issues = lintAgazanMarkdown(text, tables);

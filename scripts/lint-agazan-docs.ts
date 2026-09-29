@@ -16,9 +16,8 @@
  * Run: npm run lint:agazan
  *      npm run lint:agazan -- [paths...] [--check-ambiguity] [--order-report]
  */
-import { readdirSync, readFileSync, statSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import { basename, dirname, join, relative, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
 
 import { emptySpanStats, lintAgazanMarkdown, lintAgazanSpans, lintBareRoots } from "../src/lint/agazan-docs.js";
 import {
@@ -42,25 +41,32 @@ import {
   NUMBER_SPEECH_FILES,
 } from "../src/lint/number-speech-docs.js";
 import {
-  anchorLinks,
   formatSection,
   learningOrder,
   pageSections,
-  resolveAnchor,
   sectionAt,
   sidebarPage,
   type LearningOrder,
   type PageSections,
-  type Section,
-  withinSection,
 } from "../src/lint/learning-order.js";
+import { constructionCoverageGaps, constructionHomes, learningOrderFindings } from "../src/lint/construction-order.js";
 import { duplicateIds } from "../src/lint/grammar-anchors.js";
 import { glossLabels, lintTerminology, TERMINOLOGY_PAGE } from "../src/lint/terminology-docs.js";
 import { lintRetieFormat } from "../src/lint/retie-format.js";
-import { constructionFamilies, drillCoverage, drillSkips, duplicateDrills } from "../src/lint/drill-coverage.js";
+import {
+  constructionFamilies,
+  drillCoverage,
+  drillSkips,
+  duplicateDrills,
+  type ConstructionUse,
+} from "../src/lint/drill-coverage.js";
 import { CONSTRUCTIONS as STATIC_CONSTRUCTIONS, constructionRegistry } from "../src/parse/constructions.js";
 import { readingOrder } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { loadDefaultTables } from "../src/parse/index.js";
+import { lineNumberAt } from "../src/retie/tokens.js";
+import { fillSelf } from "../src/learner-name.js";
+import { listMarkdown } from "../src/markdown-files.js";
+import { REPO_ROOT, readData } from "../src/repo-paths.js";
 
 /**
  * Static registry plus one `overlay.*` entry per closed overlay row. The
@@ -68,27 +74,7 @@ import { loadDefaultTables } from "../src/parse/index.js";
  * the static registry.
  */
 const CONSTRUCTIONS = constructionRegistry(loadDefaultTables().overlays.values());
-import { lineNumberAt } from "../src/retie/tokens.js";
-import { fillSelf } from "../src/learner-name.js";
-
-const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
-const grammarDir = join(rootDir, "docs", "grammar");
-
-function listGrammarMarkdown(dir: string): string[] {
-  const out: string[] = [];
-  for (const name of readdirSync(dir)) {
-    if (name === ".vitepress" || name === "public") {
-      continue;
-    }
-    const full = join(dir, name);
-    if (statSync(full).isDirectory()) {
-      out.push(...listGrammarMarkdown(full));
-    } else if (name.endsWith(".md")) {
-      out.push(full);
-    }
-  }
-  return out.sort();
-}
+const grammarDir = join(REPO_ROOT, "docs", "grammar");
 
 function parseCli(argv: string[]): { paths: string[]; orderReport: boolean } {
   const paths: string[] = [];
@@ -123,28 +109,15 @@ Families not practiced in their page band's translation drill fail.`);
 }
 
 function resolveTargets(paths: string[]): string[] {
-  if (paths.length === 0) {
-    return listGrammarMarkdown(grammarDir);
-  }
-  const out: string[] = [];
-  for (const arg of paths) {
-    const full = resolve(arg);
-    const info = statSync(full);
-    if (info.isDirectory()) {
-      out.push(...listGrammarMarkdown(full));
-    } else {
-      out.push(full);
-    }
-  }
-  return out;
+  return paths.length === 0 ? listMarkdown(grammarDir) : paths.flatMap((arg) => listMarkdown(resolve(arg)));
 }
 
 function lintOverlayHosts(): number {
   const published = parsePublishedCsv(
-    readFileSync(join(rootDir, "data", "lexicon-published.csv"), "utf8"),
+    readData("lexicon-published.csv"),
   );
   const overlays = parseOverlayCsv(
-    readFileSync(join(rootDir, "data", "lexicon-overlays.csv"), "utf8"),
+    readData("lexicon-overlays.csv"),
   );
   const errors = validateOverlayPublishedHosts(overlays, published);
   if (errors.length === 0) {
@@ -157,94 +130,34 @@ function lintOverlayHosts(): number {
   return errors.length;
 }
 
-type ConstructionUse = { id: string; section: Section };
-
-
-/**
- * Check 2 of docs/proposals/parser-strictness.md: every construction is used by
- * an example on the page its anchor names. Returns the number of gaps.
- */
+/** Prints construction-coverage gaps; returns their number. */
 function checkConstructionCoverage(uses: readonly ConstructionUse[]): number {
-  const unexercised: string[] = [];
-  for (const [id, entry] of STATIC_CONSTRUCTIONS) {
-    const page = entry.anchor.split("#")[0]!;
-    if (uses.some((u) => u.id === id && u.section.page === page)) continue;
-    const elsewhere = [...new Set(uses.filter((u) => u.id === id).map((u) => u.section.page))];
-    const where = elsewhere.length > 0 ? `used on ${elsewhere.join(", ")}` : "used on no page";
-    unexercised.push(`  ${id}  →  ${entry.anchor}  (${where}; ${entry.summary})`);
-  }
-  if (unexercised.length === 0) return 0;
+  const gaps = constructionCoverageGaps(STATIC_CONSTRUCTIONS, uses);
+  if (gaps.length === 0) return 0;
   console.error(
-    `\n${unexercised.length} construction(s) not exercised by their anchor page. ` +
+    `\n${gaps.length} construction(s) not exercised by their anchor page. ` +
       "Add a teach example on that page, or narrow or delete the production:",
   );
-  for (const line of unexercised) console.error(line);
-  return unexercised.length;
+  for (const gap of gaps) {
+    const where = gap.usedOn.length > 0 ? `used on ${gap.usedOn.join(", ")}` : "used on no page";
+    console.error(`  ${gap.id}  →  ${gap.anchor}  (${where}; ${gap.summary})`);
+  }
+  return gaps.length;
 }
 
 /**
- * Learning order: uses that reach past the current section. Fails on a use before
- * its home, a family not taught at home, a home anchor that does not resolve to a
- * banded heading, and a use outside every band; those findings always print.
- * Forward links are report-only (a link is how a page says "covered later");
- * `--order-report` lists them. Returns the number of failing findings.
+ * Prints learning-order findings: failing ones always, forward links only with
+ * `--order-report`. Returns the number of failing findings.
  */
-function reportLearningOrder(order: LearningOrder, allUses: readonly ConstructionUse[], full: boolean): number {
-  // Pages off the sidebar and `## See also` sections are not checked.
-  const checked = (s: Section) => order.readingOrder.includes(s.page) && !s.ignored;
-  const uses = allUses.filter((u) => checked(u.section));
-  const homes = new Map<string, Section | undefined>();
-  for (const [id, entry] of CONSTRUCTIONS) homes.set(id, resolveAnchor(order, entry.anchor));
-
-  const unresolved = [...homes].filter(([, h]) => !h).map(([id]) => `  ${id}  →  ${CONSTRUCTIONS.get(id)!.anchor}`);
-  const unbandedHomes = [...homes].filter(([, h]) => h && h.position === undefined).map(([id, h]) => `  ${id}  →  ${formatSection(h!)}`);
-
-  // Taught at home, per family: a family is the constructions that share a home
-  // section and a first ID segment (`overlay`, `value`, `span`, …), usually the
-  // rows of one table. A representative example covers the family, so it passes
-  // when some span in the home heading's subtree traces any member. Parser
-  // productions (`sentence`, `token`, `word`, `reading`, `resolve`) are one
-  // family: they name the same lesson at different parse levels.
-  const families = constructionFamilies(homes);
-  const notAtHome: string[] = [];
-  for (const { home, ids } of families) {
-    if (uses.some((u) => ids.includes(u.id) && withinSection(home, u.section))) continue;
-    const elsewhere = [...new Set(uses.filter((u) => ids.includes(u.id)).map((u) => formatSection(u.section)))];
-    const where = elsewhere.length > 0 ? `used in ${elsewhere.slice(0, 3).join(", ")}${elsewhere.length > 3 ? ", …" : ""}` : "used nowhere";
-    notAtHome.push(`  ${ids.join(", ")}  →  ${formatSection(home)}  (${where})`);
-  }
-
-  const forward = new Map<string, { home: Section; sections: Set<string> }>();
-  const unbandedUses = new Map<string, number>();
-  for (const u of uses) {
-    const home = homes.get(u.id);
-    if (!home || home.position === undefined) continue;
-    if (u.section.position === undefined) {
-      const key = formatSection(u.section);
-      unbandedUses.set(key, (unbandedUses.get(key) ?? 0) + 1);
-      continue;
-    }
-    if (home.position <= u.section.position) continue;
-    let f = forward.get(u.id);
-    if (!f) forward.set(u.id, (f = { home, sections: new Set() }));
-    f.sections.add(formatSection(u.section));
-  }
-
-  const links: string[] = [];
-  for (const ps of order.pages.values()) {
-    if (!order.readingOrder.includes(ps.page)) continue;
-    const markdown = pageMarkdown.get(ps.page)!;
-    for (const link of anchorLinks(ps.page, markdown)) {
-      const from = sectionAt(ps.sections, link.index);
-      const to = resolveAnchor(order, `${link.page}#${link.anchor}`);
-      if (from.ignored || from.position === undefined || to?.position === undefined || to.position <= from.position) continue;
-      links.push(`  ${ps.page}:${lineNumberAt(markdown, link.index)}  ${formatSection(from)}  →  ${formatSection(to)}`);
-    }
-  }
-
+function reportLearningOrder(order: LearningOrder, uses: readonly ConstructionUse[], full: boolean): number {
+  const { unresolved, unbandedHomes, notAtHome, unbandedUses, forward, links, failures } = learningOrderFindings(
+    order,
+    CONSTRUCTIONS,
+    uses,
+    pageMarkdown,
+  );
   const forwardUses = [...forward.values()].reduce((n, f) => n + f.sections.size, 0);
   const unbandedCount = [...unbandedUses.values()].reduce((n, c) => n + c, 0);
-  const failures = forward.size + notAtHome.length + unresolved.length + unbandedHomes.length + unbandedCount;
   console.log(
     `\nLearning order: ${forward.size} construction(s) used before their home section ` +
       `(${forwardUses} section use(s)); ${links.length} forward link(s); ` +
@@ -255,15 +168,18 @@ function reportLearningOrder(order: LearningOrder, allUses: readonly Constructio
   );
   if (unresolved.length > 0) {
     console.log("\nHome anchors that do not resolve:");
-    for (const line of unresolved) console.log(line);
+    for (const line of unresolved) console.log(`  ${line}`);
   }
   if (unbandedHomes.length > 0) {
     console.log("\nHome anchors outside every band:");
-    for (const line of unbandedHomes) console.log(line);
+    for (const line of unbandedHomes) console.log(`  ${line}`);
   }
   if (notAtHome.length > 0) {
     console.log("\nConstruction families not taught in their home section (no member traced there):");
-    for (const line of notAtHome) console.log(line);
+    for (const { ids, home, usedIn } of notAtHome) {
+      const where = usedIn.length > 0 ? `used in ${usedIn.slice(0, 3).join(", ")}${usedIn.length > 3 ? ", …" : ""}` : "used nowhere";
+      console.log(`  ${ids.join(", ")}  →  ${formatSection(home)}  (${where})`);
+    }
   }
   if (unbandedUses.size > 0) {
     console.log("\nUses outside every band (section: construction uses):");
@@ -279,7 +195,7 @@ function reportLearningOrder(order: LearningOrder, allUses: readonly Constructio
   }
   if (full && links.length > 0) {
     console.log("\nForward links (report only):");
-    for (const line of links) console.log(line);
+    for (const line of links) console.log(`  ${line}`);
   }
   return failures;
 }
@@ -290,9 +206,8 @@ function reportLearningOrder(order: LearningOrder, allUses: readonly Constructio
  * print. Returns the number of findings.
  */
 function reportDrillCoverage(order: LearningOrder, uses: readonly ConstructionUse[]): number {
-  const homes = new Map<string, Section | undefined>();
-  for (const [id, entry] of CONSTRUCTIONS) homes.set(id, resolveAnchor(order, entry.anchor));
-  const skips = drillSkips(readFileSync(join(rootDir, "docs", "meta", "drill-generation.md"), "utf8"));
+  const homes = constructionHomes(order, CONSTRUCTIONS);
+  const skips = drillSkips(readFileSync(join(REPO_ROOT, "docs", "meta", "drill-generation.md"), "utf8"));
   const checked = uses.filter((u) => !u.section.ignored);
   const { missing, uncovered, covered } = drillCoverage(order, constructionFamilies(homes), checked, skips);
   console.log(
@@ -345,7 +260,7 @@ function main(): void {
     const source = readFileSync(file, "utf8");
     // `SELF` slots are checked as the unset default (`zeman`, `z-speaker`); no newlines change.
     const original = fillSelf(source);
-    const rel = relative(rootDir, file);
+    const rel = relative(REPO_ROOT, file);
     const issues = lintAgazanMarkdown(original, tables);
     for (const issue of issues) {
       count += 1;

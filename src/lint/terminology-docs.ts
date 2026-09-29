@@ -5,7 +5,7 @@
  */
 import type { ClassifyTables } from "../parse/classify.js";
 import { MORPH_GLOSS_LABELS, morphGlossLine } from "../parse/morph-gloss.js";
-import { isClarityRootShape } from "../root-shape.js";
+import { isAgazanRootShape } from "../root-shape.js";
 import { classifyAgazanSpan, decodeEntities, walkAgazanSpans } from "./agazan-docs.js";
 import { grammarHeadings } from "./grammar-anchors.js";
 import { anchorLinks, pageSections } from "./learning-order.js";
@@ -157,7 +157,7 @@ export function lintTerminology(
       const entry = entryAt(list, index);
       if (entry && rowLines.has(entry.index)) return; // label rows: checked above
       const pagesLinked = entry ? [...entry.pages] : [];
-      if (/^[a-z]{3,}$/.test(trimmed) && isClarityRootShape(trimmed)) {
+      if (/^[a-z]{3,}$/.test(trimmed) && isAgazanRootShape(trimmed)) {
         // A bare root is current only if a page it links cites that root too.
         if (pagesLinked.some((p) => text(p).includes(`\`${trimmed}\``))) return;
         findings.push({

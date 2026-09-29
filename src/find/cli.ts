@@ -10,10 +10,11 @@
  * matches adjacent words. Several flags must all match. Paths default to
  * docs/grammar and docs/examples.
  */
-import { readdirSync, readFileSync, statSync } from "node:fs";
-import { join, relative } from "node:path";
+import { readFileSync } from "node:fs";
+import { relative } from "node:path";
 
 import { loadDefaultTables } from "../parse/index.js";
+import { listMarkdown } from "../markdown-files.js";
 import { collectExamples, type Example } from "./examples.js";
 import { matchesTerm, matchSequence, parseTerm, type Term } from "./query.js";
 
@@ -51,13 +52,6 @@ for (let i = 0; i < args.length; i++) {
 }
 if (queries.length === 0) usage("give at least one --word, --seq, or --construction");
 
-function markdownFiles(path: string): string[] {
-  if (!statSync(path).isDirectory()) return [path];
-  return readdirSync(path, { withFileTypes: true })
-    .filter((e) => !e.name.startsWith("."))
-    .flatMap((e) => (e.isDirectory() ? markdownFiles(join(path, e.name)) : e.name.endsWith(".md") ? [join(path, e.name)] : []));
-}
-
 /** Indexes of the words a query highlights, or null when it does not match. */
 function matchQuery(example: Example, query: Query): number[] | null {
   switch (query.kind) {
@@ -93,7 +87,7 @@ function highlight(example: Example, hits: Set<number>): string {
 const tables = loadDefaultTables();
 const results: { file: string; line: number; text: string; shown: string }[] = [];
 for (const root of paths.length ? paths : ["docs/grammar", "docs/examples"]) {
-  for (const file of markdownFiles(root)) {
+  for (const file of listMarkdown(root)) {
     const markdown = readFileSync(file, "utf8");
     for (const example of collectExamples(markdown, tables)) {
       const matches = queries.map((q) => matchQuery(example, q));

@@ -3,15 +3,14 @@
  * The CLI lives in scripts/echo-metric.ts.
  */
 import { existsSync, readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
 
 import { parseCsv } from "./csv.ts";
 import { CMU_PATH } from "./cmu-dict.ts";
 import { PHONEME_MAP } from "./pronunciation-map.ts";
+import { REPO_ROOT } from "./repo-paths.ts";
 
-const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
-const PRON = join(rootDir, "tmp", "echo-pron", "pron.csv");
+const PRON = join(REPO_ROOT, "tmp", "echo-pron", "pron.csv");
 
 export type Weights = {
   /** First consonant of the word. */ start: number;

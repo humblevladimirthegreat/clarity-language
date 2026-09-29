@@ -59,7 +59,7 @@ const FLAG_RE = /[\u{1F1E6}-\u{1F1FF}]/u;
  * confusing (read as something other than a person) are banned, not ones that are merely unflattering.
  */
 export function nameBanReason(row: PublishedRow, overlays: OverlayRow[] = []): string | null {
-  const root = row.clarity;
+  const root = row.root;
   const name = `${root}n`;
   if (ROLE_WORDS[root]) return `${name} already means ${ROLE_WORDS[root]}, not a person.`;
   if (HOUSE_CAST[root]) return `${HOUSE_CAST[root]} is a character in the examples; your name would clash with theirs.`;
@@ -72,8 +72,8 @@ export function nameBanReason(row: PublishedRow, overlays: OverlayRow[] = []): s
 
 function toOption(row: PublishedRow): LearnerNameOption {
   return {
-    root: row.clarity,
-    name: `${row.clarity}n`,
+    root: row.root,
+    name: `${row.root}n`,
     emoji: row.emoji,
     concrete: row.concrete,
     abstract: row.abstract,
@@ -86,8 +86,8 @@ export function eligibleNames(rows: PublishedRow[], overlays: OverlayRow[] = [])
   const seen = new Set<string>();
   const out: LearnerNameOption[] = [];
   for (const row of rows) {
-    if (!row.clarity || seen.has(row.clarity) || nameBanReason(row, overlays)) continue;
-    seen.add(row.clarity);
+    if (!row.root || seen.has(row.root) || nameBanReason(row, overlays)) continue;
+    seen.add(row.root);
     out.push(toOption(row));
   }
   return out;

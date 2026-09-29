@@ -220,7 +220,7 @@ Canonical types: [`src/parse/types.ts`](../../src/parse/types.ts).
 
 In-browser use is a **goal** (CLI and web share one pipeline). Peggy is **pre-generated**; do **not** call `peggy.generate()` in the page. Chevrotain ships browser ESM.
 
-A production **parse** bundle is **not wired yet** (`build:lexicon-web` only bundles lexicon search). Expected page cost once shipped: Chevrotain (~31 KB gzip) + generated morph parser (~5–40 KB gzip) + classify/AST/resolve glue → on the order of **~40–80 KB gzip** before lexicon data.
+The docs site bundles the parser and lexicon search through Vite (`@parse-browser` / `@tts-browser` aliases in the VitePress config); there is no separate standalone page bundle. Expected parser page cost: Chevrotain (~31 KB gzip) + generated morph parser (~5–40 KB gzip) + classify/AST/resolve glue → on the order of **~40–80 KB gzip** before lexicon data.
 
 ## What is shipped vs leftover
 

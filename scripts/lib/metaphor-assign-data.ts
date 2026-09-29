@@ -1,16 +1,15 @@
 import { readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
 
 import { parseCsv } from "../../src/csv.js";
 import { concreteAbstractCollide } from "../../src/lexicon-published-lint.js";
+import { REPO_ROOT, dataPath } from "../../src/repo-paths.js";
 
-const rootDir = join(dirname(fileURLToPath(import.meta.url)), "../..");
 
 export type PublishedRow = {
   emoji: string;
   literal: string;
-  clarity: string;
+  root: string;
   abstract: string;
   mnemonic: string;
   group: string;
@@ -25,7 +24,7 @@ export type Pass1Pick = {
 
 export type PoolEntry = Pass1Pick & {
   literal: string;
-  clarity: string;
+  root: string;
   subgroup: string;
   group: string;
 };
@@ -34,7 +33,7 @@ export type Pass2Candidate = {
   rank: number;
   emoji: string;
   literal: string;
-  clarity: string;
+  root: string;
   subgroup: string;
   mnemonic: string;
   teachability: number;
@@ -93,11 +92,11 @@ export function isValidLemma(lemma: string): boolean {
 }
 
 export function stagingPathForLemma(lemma: string): string {
-  return join(rootDir, "data", "phase5-assign", `${slugLemma(lemma)}.json`);
+  return join(REPO_ROOT, "data", "phase5-assign", `${slugLemma(lemma)}.json`);
 }
 
 export function publishedPath(): string {
-  return join(rootDir, "data", "lexicon-published.csv");
+  return dataPath("lexicon-published.csv");
 }
 
 export function loadPublishedRows(): PublishedRow[] {
@@ -106,7 +105,7 @@ export function loadPublishedRows(): PublishedRow[] {
   return rows.map((row) => ({
     emoji: row.emoji ?? "",
     literal: (row.concrete ?? "").trim(),
-    clarity: (row.clarity ?? "").trim(),
+    root: (row.root ?? "").trim(),
     abstract: (row.abstract ?? "").trim(),
     mnemonic: (row.mnemonic ?? "").trim(),
     group: "",
@@ -199,7 +198,7 @@ export function mergePass1Picks(
     pool.push({
       ...pick,
       literal: row.literal,
-      clarity: row.clarity,
+      root: row.root,
       subgroup: row.subgroup,
       group: row.group,
     });
@@ -388,7 +387,7 @@ export function enrichPass2Candidates(
         rank: c.rank,
         emoji: row.emoji,
         literal: row.literal,
-        clarity: row.clarity,
+        root: row.root,
         subgroup: row.subgroup,
         mnemonic: (c.mnemonic ?? "").trim(),
         teachability: Number(c.teachability),

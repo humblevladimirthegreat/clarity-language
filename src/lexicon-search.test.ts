@@ -124,14 +124,14 @@ describe("searchLexicon", () => {
     assert.ok(hit.matchFields.includes("abstract"));
   });
 
-  it("finds a published row by its clarity root", () => {
+  it("finds a published row by its root", () => {
     const smile = rows.find((r) => r.concrete === "smile");
     assert.ok(smile);
-    const results = searchLexicon(index, rows, smile.clarity, { limit: 10, overlays, overlayIndex });
-    assert.ok(results.some((r) => r.clarity === smile.clarity));
+    const results = searchLexicon(index, rows, smile.root, { limit: 10, overlays, overlayIndex });
+    assert.ok(results.some((r) => r.root === smile.root));
     const top = results[0];
-    assert.equal(top?.clarity, smile.clarity);
-    assert.ok(top?.matchFields.includes("clarity"));
+    assert.equal(top?.root, smile.root);
+    assert.ok(top?.matchFields.includes("root"));
   });
 
   it("finds live evidential overlay on the attest row", () => {
@@ -140,8 +140,8 @@ describe("searchLexicon", () => {
     const live = overlays.find((row) => /live evidential/i.test(row.definition) && row.pos === "th");
     assert.ok(live);
     const results = searchLexicon(index, rows, live.senseForm, { limit: 10, overlays, overlayIndex });
-    const hit = results.find((r) => r.clarity === attest.clarity);
-    assert.ok(hit, `expected attest/${attest.clarity} for ${live.senseForm} query`);
+    const hit = results.find((r) => r.root === attest.root);
+    assert.ok(hit, `expected attest/${attest.root} for ${live.senseForm} query`);
     assert.ok(hit.overlays.some((o) => o.senseForm === live.senseForm && o.pos === "th"));
   });
 
@@ -153,8 +153,8 @@ describe("searchLexicon", () => {
     );
     assert.ok(witnessed);
     const results = searchLexicon(index, rows, witnessed.senseForm, { limit: 10, overlays, overlayIndex });
-    const hit = results.find((r) => r.clarity === fishing.clarity);
-    assert.ok(hit, `expected fishing/${fishing.clarity} for ${witnessed.senseForm} query`);
+    const hit = results.find((r) => r.root === fishing.root);
+    assert.ok(hit, `expected fishing/${fishing.root} for ${witnessed.senseForm} query`);
     assert.ok(hit.overlays.some((o) => o.senseForm === witnessed.senseForm && o.pos === "th"));
   });
 
@@ -171,7 +171,7 @@ describe("searchLexicon", () => {
       (r) => r.overlayOnly && r.overlays[0]?.senseForm === "an" && r.overlays[0]?.pos === "v",
     );
     assert.ok(hit, "expected overlay-only an+v for van query");
-    assert.equal(hit.clarity, "an");
+    assert.equal(hit.root, "an");
     assert.match(hit.concrete, /includes/i);
     assert.ok(hit.mnemonic.length > 0);
   });
@@ -186,7 +186,7 @@ describe("searchLexicon", () => {
       (r) => r.overlayOnly && r.overlays[0]?.senseForm === "an" && r.overlays[0]?.pos === "g",
     );
     assert.ok(gan);
-    assert.equal(gan.clarity, "an");
+    assert.equal(gan.root, "an");
   });
 
   it("finds evidential via spelled overlay word", () => {
@@ -198,8 +198,8 @@ describe("searchLexicon", () => {
     assert.ok(witnessed);
     const spelled = `h${witnessed.senseForm}`;
     const results = searchLexicon(index, rows, spelled, { limit: 10, overlays, overlayIndex });
-    const hit = results.find((r) => r.clarity === fishing.clarity);
-    assert.ok(hit, `expected fishing/${fishing.clarity} for ${spelled} query`);
+    const hit = results.find((r) => r.root === fishing.root);
+    assert.ok(hit, `expected fishing/${fishing.root} for ${spelled} query`);
     assert.ok(hit.overlays.some((o) => o.senseForm === witnessed.senseForm && o.pos === "th"));
   });
 

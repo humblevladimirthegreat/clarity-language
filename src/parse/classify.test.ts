@@ -69,7 +69,7 @@ describe("classify", () => {
   it("published ordinary on literal fishing manner", () => {
     const fishing = [...tables.published.values()].find((r) => r.concrete === "fishing");
     assert.ok(fishing);
-    const word = expectReading(`h${fishing.clarity}l`, "ordinary");
+    const word = expectReading(`h${fishing.root}l`, "ordinary");
     assert.ok(word.rootGloss?.concrete);
     assert.equal(word.overlay, undefined);
   });
@@ -291,13 +291,13 @@ describe("classify", () => {
 
   it("ordinary compound glosses both roots", () => {
     const sushi = tables.published.get(
-      [...tables.published.values()].find((r) => r.concrete === "sushi")?.clarity ?? "",
+      [...tables.published.values()].find((r) => r.concrete === "sushi")?.root ?? "",
     );
     const coffee = tables.published.get(
-      [...tables.published.values()].find((r) => r.concrete === "coffee")?.clarity ?? "",
+      [...tables.published.values()].find((r) => r.concrete === "coffee")?.root ?? "",
     );
     assert.ok(sushi && coffee);
-    const word = expectReading(`z${sushi.clarity}x${coffee.clarity}n`, "ordinary");
+    const word = expectReading(`z${sushi.root}x${coffee.root}n`, "ordinary");
     assert.equal(word.family.kind, "x");
     if (word.family.kind !== "x") return;
     assert.equal(word.family.xFamily, "compound");

@@ -55,8 +55,10 @@ export function enhanceRootsTables(root: ParentNode): () => void {
 function enhanceOne(table: HTMLTableElement): (() => void) | undefined {
   const heads = headerCells(table)
   const original = bodyRows(table)
-  const parent = original[0]?.parentElement
-  if (!heads.length || !parent) return undefined
+  const maybeParent = original[0]?.parentElement
+  if (!heads.length || !maybeParent) return undefined
+  // Narrowed once here; the hoisted applySort below would not see a narrowed `maybeParent`.
+  const parent: HTMLElement = maybeParent
 
   const labels = headerLabels(table)
   const sortable = sortableColumnIndexes(labels)
@@ -109,12 +111,13 @@ function enhanceOne(table: HTMLTableElement): (() => void) | undefined {
       }
     }
 
+    const column = sortIndex
     const ordered =
-      sortIndex === null || direction === null
+      column === null || direction === null
         ? original
         : [...original].sort((a, b) => {
-            const left = cellSortKey(a.children[sortIndex]?.textContent ?? '')
-            const right = cellSortKey(b.children[sortIndex]?.textContent ?? '')
+            const left = cellSortKey(a.children[column]?.textContent ?? '')
+            const right = cellSortKey(b.children[column]?.textContent ?? '')
             const cmp = left.localeCompare(right, 'en')
             return direction === 'asc' ? cmp : -cmp
           })

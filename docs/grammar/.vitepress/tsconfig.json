@@ -1,0 +1,19 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": ["node", "vite/client"],
+    "tsBuildInfoFile": "../../../node_modules/.cache/tsc-vitepress.tsbuildinfo",
+    "paths": {
+      "@data/*": ["../../../data/*"],
+      "@lexicon-search": ["../../../src/lexicon-search.ts"],
+      "@learner-name": ["../../../src/learner-name.ts"],
+      "@parse-browser": ["../../../src/parse/browser.ts"],
+      "@tts-browser": ["../../../src/tts/browser.ts"]
+    }
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["cache", "dist", ".temp"]
+}

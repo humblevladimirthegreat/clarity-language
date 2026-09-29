@@ -1,10 +1,7 @@
-import { readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
-
 import { createClassifyTables, type ClassifyTables } from "./classify.js";
 import { parseWithTables } from "./parse-core.js";
 import type { ParseOptions, ParseResult } from "./types.js";
+import { readData } from "../repo-paths.js";
 
 export {
   classify,
@@ -57,11 +54,10 @@ let defaultTables: ClassifyTables | null = null;
 
 export function loadDefaultTables(): ClassifyTables {
   if (defaultTables) return defaultTables;
-  const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
   defaultTables = createClassifyTables(
-    readFileSync(join(rootDir, "data", "lexicon-published.csv"), "utf8"),
-    readFileSync(join(rootDir, "data", "lexicon-overlays.csv"), "utf8"),
-    readFileSync(join(rootDir, "data", "lexicon-compounds.csv"), "utf8"),
+    readData("lexicon-published.csv"),
+    readData("lexicon-overlays.csv"),
+    readData("lexicon-compounds.csv"),
   );
   return defaultTables;
 }

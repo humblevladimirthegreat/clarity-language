@@ -6,8 +6,7 @@
  *      npm run lexicon-search -- --json uze
  */
 import { readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
 
 import {
   createCompoundIndex,
@@ -19,11 +18,11 @@ import {
   searchLexicon,
   type LexiconSearchResult,
 } from "../src/lexicon-search.js";
+import { dataPath } from "../src/repo-paths.js";
 
-const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
-const publishedPath = join(rootDir, "data", "lexicon-published.csv");
-const overlayPath = join(rootDir, "data", "lexicon-overlays.csv");
-const compoundsPath = join(rootDir, "data", "lexicon-compounds.csv");
+const publishedPath = dataPath("lexicon-published.csv");
+const overlayPath = dataPath("lexicon-overlays.csv");
+const compoundsPath = dataPath("lexicon-compounds.csv");
 
 type CliOptions = {
   query: string;
@@ -83,11 +82,11 @@ function formatOverlayList(result: LexiconSearchResult): string {
 }
 
 function formatTable(results: LexiconSearchResult[]): void {
-  const headers = ["emoji", "concrete", "clarity", "abstract", "role English", "overlays", "score"];
+  const headers = ["emoji", "concrete", "root", "abstract", "role English", "overlays", "score"];
   const rows = results.map((r) => [
     r.emoji || "—",
     r.concrete || (r.overlayOnly ? "(overlay)" : r.compoundOnly ? "(compound)" : "—"),
-    r.clarity,
+    r.root,
     r.abstract || "—",
     r.englishByPos || "—",
     formatOverlayList(r),

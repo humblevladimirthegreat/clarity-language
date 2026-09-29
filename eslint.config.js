@@ -8,7 +8,7 @@ const componentFiles = ['docs/grammar/.vitepress/components/**/*.vue']
 
 export default [
   {
-    ignores: ['dist/**', 'node_modules/**', 'web/lib/**'],
+    ignores: ['dist/**', 'node_modules/**'],
   },
   ...pluginVue.configs['flat/essential'].map((config) => ({
     ...config,

@@ -2,7 +2,7 @@ import { hookCompoundFromMorph } from "../parse/hook-compounds.js";
 import { parseWord } from "../parse/word.js";
 import { writingSpanEnd } from "../parse/span-scan.js";
 import type { MorphWord, MorphWordFamily, WritingBracket } from "../parse/types.js";
-import { isClarityRootShape } from "../root-shape.js";
+import { isAgazanRootShape } from "../root-shape.js";
 import {
   isContentResume,
   mappedResumeRoots,
@@ -31,14 +31,14 @@ export function retieCore(
     return null;
   }
   const bare = map.get(core);
-  if (bare && isClarityRootShape(core)) {
+  if (bare && isAgazanRootShape(core)) {
     return bare === core ? null : bare;
   }
   const posLen = core.startsWith("th") ? 2 : POS_LETTERS.includes(core[0]!) ? 1 : 0;
   if (core.length >= 3 + posLen && posLen > 0) {
     const rest = core.slice(posLen);
     const mappedRest = map.get(rest);
-    if (mappedRest && isClarityRootShape(rest) && rest.length >= 3) {
+    if (mappedRest && isAgazanRootShape(rest) && rest.length >= 3) {
       const next = `${core.slice(0, posLen)}${mappedRest}`;
       return next === core ? null : next;
     }

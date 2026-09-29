@@ -8,12 +8,12 @@
  * words (`azar` read as *not-yet*), and old and new text classified differently.
  */
 import { readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
 
 import { parseCompoundCsv, retieCompoundRows, type CompoundRow } from "../lexicon-compounds.js";
 import { parseOverlayCsv, parsePublishedCsv, type OverlayRow, type PublishedRow } from "../lexicon-search.js";
 import { createClassifyTablesFromRows, type ClassifyTables } from "../parse/classify.js";
+import { REPO_ROOT } from "../repo-paths.js";
 
 import { retieCore } from "./rebuild.js";
 
@@ -28,9 +28,9 @@ type Rows = { published: PublishedRow[]; overlays: OverlayRow[]; compounds: Comp
 
 /** Rows with every root moved through `map` in one simultaneous pass (never chained). */
 function shiftRows(rows: Rows, map: ReadonlyMap<string, string>): Rows {
-  const rootByEmoji = new Map(rows.published.map((row) => [row.emoji, row.clarity]));
+  const rootByEmoji = new Map(rows.published.map((row) => [row.emoji, row.root]));
   return {
-    published: rows.published.map((row) => ({ ...row, clarity: map.get(row.clarity) ?? row.clarity })),
+    published: rows.published.map((row) => ({ ...row, root: map.get(row.root) ?? row.root })),
     overlays: rows.overlays.map((row) => ({ ...row, senseForm: shiftSenseForm(row, rootByEmoji, map) })),
     compounds: retieCompoundRows(rows.compounds, map).rows,
   };
@@ -67,14 +67,14 @@ export function lexiconConverted(roots: ReadonlySet<string>, map: ReadonlyMap<st
 }
 
 /** Old and current lexicons for `map`, from the CSVs under `rootDir/data` in either state. */
-export function retieTables(map: ReadonlyMap<string, string>, rootDir = defaultRootDir()): RetieTables {
+export function retieTables(map: ReadonlyMap<string, string>, rootDir = REPO_ROOT): RetieTables {
   const data = (name: string) => readFileSync(join(rootDir, "data", name), "utf8");
   const rows: Rows = {
     published: parsePublishedCsv(data("lexicon-published.csv")),
     overlays: parseOverlayCsv(data("lexicon-overlays.csv")),
     compounds: parseCompoundCsv(data("lexicon-compounds.csv")),
   };
-  const roots = new Set(rows.published.map((row) => row.clarity));
+  const roots = new Set(rows.published.map((row) => row.root));
   if (lexiconConverted(roots, map)) {
     const reverse = new Map([...map].map(([oldRoot, newRoot]) => [newRoot, oldRoot]));
     return { old: tablesOf(shiftRows(rows, reverse)), current: tablesOf(rows) };
@@ -82,6 +82,3 @@ export function retieTables(map: ReadonlyMap<string, string>, rootDir = defaultR
   return { old: tablesOf(rows), current: tablesOf(shiftRows(rows, map)) };
 }
 
-function defaultRootDir(): string {
-  return join(dirname(fileURLToPath(import.meta.url)), "..", "..");
-}

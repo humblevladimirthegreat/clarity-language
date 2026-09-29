@@ -415,7 +415,7 @@ export function createClassifyTables(
 
   const published = new Map<string, PublishedRow>();
   for (const row of publishedRows) {
-    if (row.clarity) published.set(row.clarity, row);
+    if (row.root) published.set(row.root, row);
   }
 
   const overlays = new Map<string, OverlayRow>();
@@ -433,7 +433,7 @@ export function createClassifyTablesFromRows(
 ): ClassifyTables {
   const published = new Map<string, PublishedRow>();
   for (const row of publishedRows) {
-    if (row.clarity) published.set(row.clarity, row);
+    if (row.root) published.set(row.root, row);
   }
 
   const overlays = new Map<string, OverlayRow>();

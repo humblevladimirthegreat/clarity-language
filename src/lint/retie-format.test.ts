@@ -8,11 +8,11 @@ import { lintRetieFormat, sharedPrefixLosses, shortCutLost } from "./retie-forma
 
 function tablesOf(roots: string[]): ClassifyTables {
   return createClassifyTablesFromRows(
-    roots.map((clarity) => ({
+    roots.map((root) => ({
       emoji: "",
       concrete: "gloss",
       abstract: "",
-      clarity,
+      root,
       mnemonic: "",
       englishByPos: "",
       posEnglish: emptyPosEnglish(),
@@ -50,7 +50,7 @@ describe("lintRetieFormat", () => {
           emoji: "",
           concrete: "eye",
           abstract: "",
-          clarity: "eye",
+          root: "eye",
           mnemonic: "",
           englishByPos: "",
           posEnglish: emptyPosEnglish(),

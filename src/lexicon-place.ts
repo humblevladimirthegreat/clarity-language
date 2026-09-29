@@ -6,14 +6,13 @@
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
 
 import { echo, loadPron } from "./echo-metric.ts";
 import { isJoinOverlayKind, type OverlayRow } from "./lexicon-search.ts";
 import { longRootCandidates } from "./word-converter.ts";
+import { REPO_ROOT } from "./repo-paths.ts";
 
-const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
-const FREQ_FILE = join(rootDir, "tmp", "en_50k.txt");
+const FREQ_FILE = join(REPO_ROOT, "tmp", "en_50k.txt");
 const FREQ_URL = "https://raw.githubusercontent.com/hermitdave/FrequencyWords/master/content/2018/en/en_50k.txt";
 const UNLISTED = 50001;
 const V = ["a", "e", "o", "u"];

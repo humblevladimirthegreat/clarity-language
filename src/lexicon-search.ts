@@ -20,7 +20,7 @@ export type PosEnglishMap = {
 export type PublishedRow = {
   emoji: string;
   concrete: string;
-  clarity: string;
+  root: string;
   abstract: string;
   mnemonic: string;
   englishByPos: string;
@@ -106,7 +106,8 @@ type OverlayIndexedDoc = {
   senseForm: string;
   pos: string;
   emoji: string;
-  root: string;
+  /** Published root the sense form is hosted on. */
+  hostRoot: string;
   kind: string;
   gloss: string;
   definition: string;
@@ -118,7 +119,7 @@ export { parseCompoundCsv, type CompoundRow } from "./lexicon-compounds.js";
 const PUBLISHED_HEADERS = [
   "emoji",
   "concrete",
-  "clarity",
+  "root",
   "abstract",
   "mnemonic",
   "english_by_pos",
@@ -140,7 +141,7 @@ const POS_PREFIXES = new Set(["z", "d", "b", "g", "v", "w", "h", "th", "y", "x"]
 const SEARCH_FIELDS = [
   "concrete",
   "concreteTokens",
-  "clarity",
+  "root",
   "abstract",
   "mnemonic",
   "posEnglishLemmas",
@@ -148,7 +149,7 @@ const SEARCH_FIELDS = [
 const COMPOUND_SEARCH_FIELDS = ["concrete", "concreteTokens", "stem", "abstract", "mnemonic"] as const;
 const OVERLAY_SEARCH_FIELDS = [
   "senseForm",
-  "root",
+  "hostRoot",
   "pos",
   "kind",
   "gloss",
@@ -159,7 +160,7 @@ const OVERLAY_SEARCH_FIELDS = [
 const FIELD_BOOSTS: Record<(typeof SEARCH_FIELDS)[number], number> = {
   concrete: 2,
   abstract: 2,
-  clarity: 1.5,
+  root: 1.5,
   concreteTokens: 1.5,
   posEnglishLemmas: 1.8,
   mnemonic: 1,
@@ -175,7 +176,7 @@ const COMPOUND_FIELD_BOOSTS: Record<(typeof COMPOUND_SEARCH_FIELDS)[number], num
 
 const OVERLAY_FIELD_BOOSTS: Record<(typeof OVERLAY_SEARCH_FIELDS)[number], number> = {
   senseForm: 2,
-  root: 1.5,
+  hostRoot: 1.5,
   gloss: 2,
   definition: 2,
   kind: 1.5,
@@ -206,14 +207,14 @@ const EMOJI_QUERY_RE = /\p{Extended_Pictographic}/u;
 const MATCH_FIELD_LABELS: Record<string, string> = {
   concrete: "concrete",
   concreteTokens: "concrete",
-  clarity: "clarity",
+  root: "root",
   abstract: "abstract",
   mnemonic: "mnemonic",
   posEnglishLemmas: "english_by_pos",
   englishByPos: "english_by_pos",
   emoji: "emoji",
   senseForm: "sense_form",
-  root: "sense_form",
+  hostRoot: "sense_form",
   pos: "pos",
   kind: "kind",
   gloss: "gloss",
@@ -234,19 +235,6 @@ export function posEnglishLemmaList(map: PosEnglishMap): string[] {
     if (met) lemmas.push(met);
   }
   return lemmas;
-}
-
-export function formatEnglishByPos(map: PosEnglishMap): string {
-  const pieces: string[] = [];
-  for (const letter of ROLE_LETTERS) {
-    const lit = map.concrete[letter];
-    if (lit) pieces.push(`${letter}:${lit}`);
-  }
-  for (const letter of ROLE_LETTERS) {
-    const met = map.abstract[letter];
-    if (met) pieces.push(`m.${letter}:${met}`);
-  }
-  return pieces.join("; ");
 }
 
 /**
@@ -330,7 +318,7 @@ export function parsePublishedCsv(text: string): PublishedRow[] {
     return {
       emoji: row.emoji ?? "",
       concrete,
-      clarity: row.clarity ?? "",
+      root: row.root ?? "",
       abstract,
       mnemonic: row.mnemonic ?? "",
       englishByPos,
@@ -338,20 +326,6 @@ export function parsePublishedCsv(text: string): PublishedRow[] {
     };
   });
 }
-
-/** Join-act / join-relation sense-forms are vowel-series, not hosted on a published root. */
-export const JOIN_SENSE_FORMS = new Set([
-  "an",
-  "on",
-  "aon",
-  "un",
-  "uan",
-  "uon",
-  "en",
-  "aen",
-  "oen",
-  "uen",
-]);
 
 export type OverlayHostError = {
   row?: number;
@@ -419,7 +393,7 @@ export function validateOverlayPublishedHosts(
       continue;
     }
 
-    const root = host.clarity.trim();
+    const root = host.root.trim();
     if (!root) {
       errors.push({
         row: rowNum,
@@ -563,8 +537,8 @@ export function attachOverlays(rows: PublishedRow[], overlays: OverlayRow[]): Ma
     }
 
     const keys: Array<[string, string]> = [
-      [`${row.clarity}\0l`, "l"],
-      ...(row.abstract ? [[`${row.clarity}\0m`, "m"] as [string, string]] : []),
+      [`${row.root}\0l`, "l"],
+      ...(row.abstract ? [[`${row.root}\0m`, "m"] as [string, string]] : []),
     ];
 
     for (const [key] of keys) {
@@ -611,7 +585,7 @@ export function createLexiconIndex(rows: PublishedRow[]): MiniSearch<IndexedDoc>
     emoji: row.emoji,
     concrete: row.concrete.toLowerCase(),
     concreteTokens: tokenizeConcrete(row.concrete),
-    clarity: row.clarity.toLowerCase(),
+    root: row.root.toLowerCase(),
     abstract: row.abstract.toLowerCase(),
     mnemonic: row.mnemonic.toLowerCase(),
     englishByPos: row.englishByPos,
@@ -621,7 +595,7 @@ export function createLexiconIndex(rows: PublishedRow[]): MiniSearch<IndexedDoc>
 
   const index = new MiniSearch<IndexedDoc>({
     fields: [...SEARCH_FIELDS],
-    storeFields: ["emoji", "concrete", "clarity", "abstract", "mnemonic", "englishByPos"],
+    storeFields: ["emoji", "concrete", "root", "abstract", "mnemonic", "englishByPos"],
     searchOptions: SEARCH_OPTIONS,
   });
 
@@ -635,7 +609,7 @@ export function createOverlayIndex(overlays: OverlayRow[]): MiniSearch<OverlayIn
     senseForm: overlay.senseForm.toLowerCase(),
     pos: overlay.pos.toLowerCase(),
     emoji: overlay.emoji,
-    root: senseFormRoot(overlay.senseForm).toLowerCase(),
+    hostRoot: senseFormRoot(overlay.senseForm).toLowerCase(),
     kind: overlay.kind,
     gloss: overlay.gloss.toLowerCase(),
     definition: overlay.definition.toLowerCase(),
@@ -644,7 +618,7 @@ export function createOverlayIndex(overlays: OverlayRow[]): MiniSearch<OverlayIn
 
   const index = new MiniSearch<OverlayIndexedDoc>({
     fields: [...OVERLAY_SEARCH_FIELDS],
-    storeFields: ["senseForm", "pos", "emoji", "root", "kind", "gloss", "definition", "mnemonic"],
+    storeFields: ["senseForm", "pos", "emoji", "hostRoot", "kind", "gloss", "definition", "mnemonic"],
     searchOptions: OVERLAY_SEARCH_OPTIONS,
   });
 
@@ -689,9 +663,9 @@ function exactMatchBoost(row: PublishedRow, query: string): { boost: number; fie
     boost += 100;
     fields.push("concrete");
   }
-  if (row.clarity.toLowerCase() === q) {
+  if (row.root.toLowerCase() === q) {
     boost += 100;
-    fields.push("clarity");
+    fields.push("root");
   }
   if (row.abstract.toLowerCase() === q) {
     boost += 100;
@@ -769,7 +743,7 @@ function overlayOnlyResult(overlay: OverlayRow, score: number, matchFields: stri
   return {
     emoji: overlay.emoji,
     concrete: overlay.definition,
-    clarity: overlay.senseForm,
+    root: overlay.senseForm,
     abstract: "",
     mnemonic: overlay.mnemonic,
     englishByPos: "",
@@ -814,7 +788,7 @@ function compoundResultFromRow(
   return {
     emoji: row.emoji,
     concrete: row.concrete,
-    clarity: row.stem,
+    root: row.stem,
     abstract: row.abstract,
     mnemonic: row.mnemonic,
     englishByPos: "",
@@ -958,8 +932,8 @@ export function searchLexicon(
         const publishedIndex = rows.findIndex(
           (row) =>
             row.emoji === overlay.emoji ||
-            row.clarity === senseFormRoot(overlay.senseForm) ||
-            `${row.clarity}${senseFormEnding(overlay.senseForm) ?? ""}` === overlay.senseForm,
+            row.root === senseFormRoot(overlay.senseForm) ||
+            `${row.root}${senseFormEnding(overlay.senseForm) ?? ""}` === overlay.senseForm,
         );
 
         if (publishedIndex >= 0) {

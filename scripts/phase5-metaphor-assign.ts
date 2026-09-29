@@ -9,8 +9,7 @@
  * Env: LM_STUDIO_BASE_URL, LM_STUDIO_MODEL, OPENAI_API_KEY
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
 
 import { escapeCsvField, parseCsv } from "../src/csv.js";
 import {
@@ -47,10 +46,10 @@ import {
   pass2UserPrompt,
 } from "./lib/metaphor-assign-prompts.js";
 import { loadProjectEnv } from "./lib/load-env.js";
+import { REPO_ROOT, dataPath } from "../src/repo-paths.js";
 
-const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
-loadProjectEnv(rootDir);
-const assignDir = join(rootDir, "data", "phase5-assign");
+loadProjectEnv(REPO_ROOT);
+const assignDir = dataPath("phase5-assign");
 
 type CliArgs = {
   command: "propose" | "review" | "apply" | "ping";
@@ -301,7 +300,7 @@ function cmdApply(lemma: string, dryRun: boolean): void {
 
   const content = readFileSync(publishedPath(), "utf8");
   const { rows } = parseCsv(content);
-  const fieldnames = ["emoji", "concrete", "clarity", "abstract", "mnemonic", "english_by_pos"];
+  const fieldnames = ["emoji", "concrete", "root", "abstract", "mnemonic", "english_by_pos"];
   const published = loadPublishedRows();
   const validation = validateApply(staging, published);
 

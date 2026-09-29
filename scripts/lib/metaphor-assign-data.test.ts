@@ -18,7 +18,7 @@ function row(emoji: string, literal: string, abstract = ""): PublishedRow {
   return {
     emoji,
     literal,
-    clarity: "xxx",
+    root: "xxx",
     abstract,
     mnemonic: abstract ? "cue" : "REVIEW",
     group: "G",
@@ -79,7 +79,7 @@ const staging: StagingFile = {
         rank: 1,
         emoji: "😅",
         literal: "nervous-laugh",
-        clarity: "eno",
+        root: "eno",
         subgroup: "face-smiling",
         mnemonic: "tension breaks into relief",
         teachability: 4,

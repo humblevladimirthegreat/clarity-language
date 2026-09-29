@@ -30,7 +30,7 @@ export function pass1UserPrompt(
       ? `Already-used metaphors (do not propose rows for a different sense of these): ${usedMetaphors.slice(0, 100).join(", ")}${usedMetaphors.length > 100 ? ", ..." : ""}`
       : "No metaphors assigned yet.";
 
-  const tsv = ["emoji\tliteral\tclarity\tsubgroup", ...chunkRows.map(rowToTsv)].join("\n");
+  const tsv = ["emoji\tliteral\troot\tsubgroup", ...chunkRows.map(rowToTsv)].join("\n");
 
   return `Target metaphor lemma: ${lemma}
 
@@ -82,7 +82,7 @@ export function pass2UserPrompt(
           .join("\n")
       : "(no examples)";
 
-  const tsv = ["emoji\tliteral\tclarity\tsubgroup\tpass1_score", ...pool.map(poolToTsv)].join(
+  const tsv = ["emoji\tliteral\troot\tsubgroup\tpass1_score", ...pool.map(poolToTsv)].join(
     "\n",
   );
 
@@ -102,11 +102,11 @@ Return exactly ${targetCount} ranked candidates with mnemonics using abstract="$
 }
 
 function rowToTsv(row: PublishedRow): string {
-  return `${row.emoji}\t${row.concrete}\t${row.clarity}\t${row.subgroup}`;
+  return `${row.emoji}\t${row.literal}\t${row.root}\t${row.subgroup}`;
 }
 
 function poolToTsv(row: PoolEntry): string {
-  return `${row.emoji}\t${row.concrete}\t${row.clarity}\t${row.subgroup}\t${row.score}`;
+  return `${row.emoji}\t${row.literal}\t${row.root}\t${row.subgroup}\t${row.score}`;
 }
 
 export function parsePass1Response(value: unknown): Pass1Pick[] {

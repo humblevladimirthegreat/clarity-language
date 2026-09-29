@@ -2,7 +2,7 @@
  * A heading that spells Agazan (`### Ability (`egera`)`) gets a slug from that spelling, so a
  * retie renames its id. Links to the old id, on any page, and overlay `anchor` cells follow.
  */
-import { dirname, relative, resolve } from "node:path";
+import { dirname, resolve } from "node:path";
 
 import { grammarHeadings } from "../lint/grammar-anchors.js";
 
@@ -55,8 +55,4 @@ export function relinkOverlayAnchors(
     return `${page}#${next}`;
   });
   return { text, changes };
-}
-
-export function describeRename(root: string, page: string, from: string, to: string): string {
-  return `${relative(root, page)}#${from} → #${to}`;
 }

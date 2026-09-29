@@ -21,7 +21,6 @@ final exam
 save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by overlay-roots.
 -mass lexical compound adding
--refactor codebase, remove unneeded code
 -do a style pass in grammar-docs. Check for adherence to doc-style and otherwise ensure natural sounding explanations.
 
 save for end:
@@ -64,3 +63,5 @@ setback responses:
 -defusion
 -distancing
 
+git stats:
+echo "Commits: $(git rev-list --count main)" && git log main --numstat --format= | awk '$1!="-"{a+=$1;d+=$2} END{print "Added: "a"\nDeleted: "d"\nTotal changed: "a+d"\nCurrent lines (A-D): "a-d}'

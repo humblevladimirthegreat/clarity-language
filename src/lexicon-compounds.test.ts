@@ -15,7 +15,7 @@ import { parsePublishedCsv } from "./lexicon-search.js";
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
 const publishedRoots = new Set(
   parsePublishedCsv(readFileSync(join(rootDir, "data", "lexicon-published.csv"), "utf8"))
-    .map((row) => row.clarity)
+    .map((row) => row.root)
     .filter(Boolean),
 );
 

@@ -1,9 +1,9 @@
 import { lookupPronunciation } from "./cmu-dict.ts";
 import { echo } from "./echo-metric.ts";
 import { PHONEME_MAP } from "./pronunciation-map.ts";
-import { CLARITY_CONSONANTS, CLARITY_VOWELS, isClarityRootShape } from "./root-shape.ts";
+import { AGAZAN_CONSONANTS, AGAZAN_VOWELS, isAgazanRootShape } from "./root-shape.ts";
 
-export { CLARITY_CONSONANTS, CLARITY_VOWELS, isClarityRootShape };
+export { AGAZAN_CONSONANTS, AGAZAN_VOWELS, isAgazanRootShape };
 
 const VOWEL_LETTERS = new Set(["a", "e", "i", "o", "u", "y"]);
 
@@ -147,9 +147,9 @@ export function longRootCandidates(cmu: string): string[] {
   const roots: string[] = [];
   for (const c1 of c1s) {
     for (const c2 of c2s) {
-      for (const a of CLARITY_VOWELS) {
-        for (const b of CLARITY_VOWELS) {
-          for (const c of CLARITY_VOWELS) {
+      for (const a of AGAZAN_VOWELS) {
+        for (const b of AGAZAN_VOWELS) {
+          for (const c of AGAZAN_VOWELS) {
             roots.push(a + c1 + b + c2 + c);
           }
         }
@@ -163,8 +163,8 @@ export function longRootCandidates(cmu: string): string[] {
 export function shortRootCandidates(cmu: string): string[] {
   const roots: string[] = [];
   for (const consonant of GENERATED_CONSONANTS) {
-    for (const a of CLARITY_VOWELS) {
-      for (const b of CLARITY_VOWELS) {
+    for (const a of AGAZAN_VOWELS) {
+      for (const b of AGAZAN_VOWELS) {
         roots.push(a + consonant + b);
       }
     }
@@ -176,7 +176,7 @@ export function shortRootCandidates(cmu: string): string[] {
  * Pronunciation-ranked roots for an English word: five-letter candidates first, then three-letter.
  * Looks the word up in CMU. No spelling fallback.
  */
-export function* clarityRootCandidates(input: string): Generator<string> {
+export function* agazanRootCandidates(input: string): Generator<string> {
   const cmu = lookupPronunciation(input);
   const seen = new Set<string>();
   for (const root of [...longRootCandidates(cmu), ...shortRootCandidates(cmu)]) {
@@ -186,18 +186,10 @@ export function* clarityRootCandidates(input: string): Generator<string> {
   }
 }
 
-/** Syllable count for a V(CV)+ root (one syllable per vowel). */
-export function clarityRootSyllables(root: string): number {
-  if (!isClarityRootShape(root)) {
-    throw new Error(`Not a legal Agazan root shape: ${root}`);
-  }
-  return (root.length + 1) / 2;
-}
-
 /**
  * Enumerate every legal ordinary root with the given syllable count (VCV, VCVCV, …).
  */
-export function allClarityRoots(syllables: number): string[] {
+export function allAgazanRoots(syllables: number): string[] {
   if (!Number.isInteger(syllables) || syllables < 1) {
     throw new Error("Syllable count must be a positive integer");
   }
@@ -210,13 +202,13 @@ export function allClarityRoots(syllables: number): string[] {
       return;
     }
     if (prefix.length === 0) {
-      for (const v of CLARITY_VOWELS) {
+      for (const v of AGAZAN_VOWELS) {
         walk(v, syllablesLeft - 1);
       }
       return;
     }
-    for (const c of CLARITY_CONSONANTS) {
-      for (const v of CLARITY_VOWELS) {
+    for (const c of AGAZAN_CONSONANTS) {
+      for (const v of AGAZAN_VOWELS) {
         walk(prefix + c + v, syllablesLeft - 1);
       }
     }
@@ -227,8 +219,8 @@ export function allClarityRoots(syllables: number): string[] {
 }
 
 export type LetterDistribution = {
-  vowels: Record<(typeof CLARITY_VOWELS)[number], number>;
-  consonants: Record<(typeof CLARITY_CONSONANTS)[number], number>;
+  vowels: Record<(typeof AGAZAN_VOWELS)[number], number>;
+  consonants: Record<(typeof AGAZAN_CONSONANTS)[number], number>;
   vowelTokens: number;
   consonantTokens: number;
   letters: number;
@@ -237,27 +229,27 @@ export type LetterDistribution = {
 
 /** Count inventory letters in V(CV)+ roots (every occurrence; skip malformed). */
 export function letterDistribution(roots: string[]): LetterDistribution {
-  const vowels = Object.fromEntries(CLARITY_VOWELS.map((v) => [v, 0])) as LetterDistribution["vowels"];
-  const consonants = Object.fromEntries(CLARITY_CONSONANTS.map((c) => [c, 0])) as LetterDistribution["consonants"];
+  const vowels = Object.fromEntries(AGAZAN_VOWELS.map((v) => [v, 0])) as LetterDistribution["vowels"];
+  const consonants = Object.fromEntries(AGAZAN_CONSONANTS.map((c) => [c, 0])) as LetterDistribution["consonants"];
   let skipped = 0;
 
   for (const root of roots) {
-    if (!isClarityRootShape(root)) {
+    if (!isAgazanRootShape(root)) {
       skipped += 1;
       continue;
     }
     for (let i = 0; i < root.length; i++) {
       const ch = root[i]!;
       if (i % 2 === 0) {
-        vowels[ch as (typeof CLARITY_VOWELS)[number]] += 1;
+        vowels[ch as (typeof AGAZAN_VOWELS)[number]] += 1;
       } else {
-        consonants[ch as (typeof CLARITY_CONSONANTS)[number]] += 1;
+        consonants[ch as (typeof AGAZAN_CONSONANTS)[number]] += 1;
       }
     }
   }
 
-  const vowelTokens = CLARITY_VOWELS.reduce((n, v) => n + vowels[v], 0);
-  const consonantTokens = CLARITY_CONSONANTS.reduce((n, c) => n + consonants[c], 0);
+  const vowelTokens = AGAZAN_VOWELS.reduce((n, v) => n + vowels[v], 0);
+  const consonantTokens = AGAZAN_CONSONANTS.reduce((n, c) => n + consonants[c], 0);
   return {
     vowels,
     consonants,
@@ -272,7 +264,7 @@ export function letterDistribution(roots: string[]): LetterDistribution {
  * Best Agazan root for an English word, from its CMU pronunciation.
  * Two syllables → VCV; three syllables → VCVCV.
  */
-export function toClarityWord(input: string, syllables: number): string {
+export function toAgazanWord(input: string, syllables: number): string {
   if (syllables !== 2 && syllables !== 3) {
     throw new Error("Syllable count must be 2 or 3");
   }
@@ -288,8 +280,8 @@ export function toClarityWord(input: string, syllables: number): string {
  * Assign a unique Agazan root: the best free pronunciation candidate
  * (five-letter roots before three-letter ones).
  */
-export function toUniqueClarityWord(input: string, usedRoots: Set<string>): string {
-  for (const candidate of clarityRootCandidates(input)) {
+export function toUniqueAgazanWord(input: string, usedRoots: Set<string>): string {
+  for (const candidate of agazanRootCandidates(input)) {
     if (!usedRoots.has(candidate)) {
       usedRoots.add(candidate);
       return candidate;

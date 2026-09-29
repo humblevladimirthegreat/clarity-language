@@ -6,9 +6,9 @@
  * Dry-run by default; `--write` saves. Covers blockquote lines, `Morph` table
  * cells, and translation-exercise gloss lines — the same pairs `lint:agazan` checks.
  */
-import { readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { readFileSync, writeFileSync } from "node:fs";
 import { loadDefaultTables } from "../src/parse/index.js";
+import { listMarkdown } from "../src/markdown-files.js";
 import { reglossMarkdown } from "../src/regloss.js";
 
 const write = process.argv.includes("--write");
@@ -16,20 +16,10 @@ const write = process.argv.includes("--write");
 const roots = ["docs/grammar", "docs/examples"];
 const tables = loadDefaultTables();
 
-function markdownFiles(dir: string, into: string[] = []): string[] {
-  for (const name of readdirSync(dir)) {
-    if (name.startsWith(".") || name === "node_modules") continue;
-    const path = join(dir, name);
-    if (statSync(path).isDirectory()) markdownFiles(path, into);
-    else if (path.endsWith(".md")) into.push(path);
-  }
-  return into;
-}
-
 let changed = 0;
 let unplaced = 0;
 for (const root of roots) {
-  for (const file of markdownFiles(root)) {
+  for (const file of listMarkdown(root)) {
     const result = reglossMarkdown(readFileSync(file, "utf8"), tables);
     for (const edit of result.edits) {
       if (!write) console.log(`${file}:${edit.line + 1}\n  - ${edit.from}\n  + ${edit.to}`);

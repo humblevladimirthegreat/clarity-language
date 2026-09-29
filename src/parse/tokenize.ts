@@ -142,9 +142,4 @@ export function punctToken(punct: PunctKind, offset = 0): IToken {
   return surfaceAtomToToken(atom, offset);
 }
 
-export function islandEdgeToken(offset = 0): IToken {
-  const atom: SurfaceAtom = { kind: "islandEdge" };
-  return surfaceAtomToToken(atom, offset);
-}
-
 export type { TokenPayload };

@@ -21,10 +21,10 @@ describe('site-redirects', () => {
     const coord = rules.findIndex((r) => r.source === '/grammar/coordination.html')
     const catchAll = rules.findIndex((r) => r.source === '/<*>' && r.status === '404')
     assert.ok(coord >= 0)
-    assert.equal(rules[coord].status, '301')
-    assert.equal(rules[coord].target, '/grammar/joins.html')
+    assert.equal(rules[coord]!.status, '301')
+    assert.equal(rules[coord]!.target, '/grammar/joins.html')
     assert.ok(catchAll > coord)
-    assert.equal(rules[catchAll].target, '/grammar/404.html')
+    assert.equal(rules[catchAll]!.target, '/grammar/404.html')
   })
 
   it('keeps hash and query on move stubs', () => {

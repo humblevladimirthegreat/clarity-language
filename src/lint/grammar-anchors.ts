@@ -72,7 +72,3 @@ export function duplicateIds(markdown: string): string[] {
   for (const a of anchorTags(markdown)) counts.set(a.id, (counts.get(a.id) ?? 0) + 1);
   return [...counts].filter(([, n]) => n > 1).map(([id]) => id);
 }
-
-export function grammarAnchors(markdown: string): Set<string> {
-  return new Set([...grammarHeadings(markdown).map((h) => h.id), ...anchorTags(markdown).map((a) => a.id)]);
-}

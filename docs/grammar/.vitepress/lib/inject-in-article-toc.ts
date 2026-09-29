@@ -12,9 +12,9 @@ export function injectInArticleToc(md: MarkdownIt): void {
 
     let h1Close = -1
     for (let i = 0; i < tokens.length; i++) {
-      if (tokens[i].type !== 'heading_open' || tokens[i].tag !== 'h1') continue
+      if (tokens[i]!.type !== 'heading_open' || tokens[i]!.tag !== 'h1') continue
       for (let j = i + 1; j < tokens.length; j++) {
-        if (tokens[j].type === 'heading_close' && tokens[j].tag === 'h1') {
+        if (tokens[j]!.type === 'heading_close' && tokens[j]!.tag === 'h1') {
           h1Close = j
           break
         }
@@ -24,7 +24,7 @@ export function injectInArticleToc(md: MarkdownIt): void {
     if (h1Close < 0) return
 
     let insertAt = h1Close + 1
-    while (insertAt < tokens.length && tokens[insertAt].type !== 'heading_open') {
+    while (insertAt < tokens.length && tokens[insertAt]!.type !== 'heading_open') {
       insertAt++
     }
     if (insertAt >= tokens.length) return

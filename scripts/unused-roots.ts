@@ -7,14 +7,12 @@
  *      npm run unused-roots -- --json
  */
 import { readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
 
 import { parseCsv } from "../src/csv.js";
-import { allClarityRoots, isClarityRootShape } from "../src/word-converter.js";
+import { allAgazanRoots, isAgazanRootShape } from "../src/word-converter.js";
+import { dataPath } from "../src/repo-paths.js";
 
-const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
-const publishedPath = join(rootDir, "data", "lexicon-published.csv");
+const publishedPath = dataPath("lexicon-published.csv");
 
 type SyllableBand = 2 | 3;
 
@@ -86,11 +84,11 @@ function loadUsedRoots(path: string): Set<string> {
   const used = new Set<string>();
 
   for (const row of rows) {
-    const root = (row.clarity ?? "").trim().toLowerCase();
+    const root = (row.root ?? "").trim().toLowerCase();
     if (!root) {
       continue;
     }
-    if (!isClarityRootShape(root)) {
+    if (!isAgazanRootShape(root)) {
       console.warn(`Skipping non-V(CV)+ published root: ${root}`);
       continue;
     }
@@ -101,7 +99,7 @@ function loadUsedRoots(path: string): Set<string> {
 }
 
 function reportBand(syllables: SyllableBand, used: Set<string>): BandReport {
-  const inventory = allClarityRoots(syllables);
+  const inventory = allAgazanRoots(syllables);
   const unused = inventory.filter((root) => !used.has(root));
   return {
     syllables,

@@ -35,7 +35,7 @@ function banReason(row: PublishedRow): string | null {
 }
 
 function useAsName(row: PublishedRow): void {
-  if (!banReason(row)) void learner.set(row.clarity)
+  if (!banReason(row)) void learner.set(row.root)
 }
 
 const results = computed(() => {
@@ -98,7 +98,7 @@ onUnmounted(() => {
       <input
         id="lexicon-filter"
         type="search"
-        placeholder="Search literal, metaphor, role English, clarity, mnemonic…"
+        placeholder="Search literal, metaphor, role English, root, mnemonic…"
         autocomplete="off"
         aria-label="Search lexicon"
         :disabled="status !== 'ready'"
@@ -126,7 +126,7 @@ onUnmounted(() => {
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(row, i) in results" :key="`${row.clarity}-${i}`">
+          <tr v-for="(row, i) in results" :key="`${row.root}-${i}`">
             <td class="emoji">{{ row.emoji || '—' }}</td>
             <td class="literal">
               {{ concreteLabel(row) }}
@@ -134,16 +134,16 @@ onUnmounted(() => {
                 matched: {{ row.matchFields.join(', ') }}
               </span>
             </td>
-            <td class="clarity">
-              {{ row.clarity }}
-              <span v-if="learner.chosen.value === row.clarity" class="my-name">✓ your name</span>
+            <td class="root">
+              {{ row.root }}
+              <span v-if="learner.chosen.value === row.root" class="my-name">✓ your name</span>
               <button
                 v-else
                 type="button"
                 class="use-name"
                 :aria-disabled="banReason(row) ? 'true' : undefined"
-                :title="banReason(row) ?? `Use ${row.clarity}n as my name`"
-                :aria-label="banReason(row) ? `Can't use ${row.clarity}n as a name: ${banReason(row)}` : `Use ${row.clarity}n as my name`"
+                :title="banReason(row) ?? `Use ${row.root}n as my name`"
+                :aria-label="banReason(row) ? `Can't use ${row.root}n as a name: ${banReason(row)}` : `Use ${row.root}n as my name`"
                 @click="useAsName(row)"
               >
                 Use as my name
@@ -307,7 +307,7 @@ tbody tr:hover {
   width: 3.5rem;
 }
 
-.clarity {
+.root {
   font-family: var(--vp-font-family-mono);
   font-weight: 500;
   letter-spacing: 0.02em;

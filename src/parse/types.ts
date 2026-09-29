@@ -190,16 +190,6 @@ export type LexWord = MorphWord & {
 
 export type ImpliedForce = "yal" | "yam";
 
-export type ClauseForce =
-  | "yal"
-  | "yam"
-  | "yol"
-  | "yom"
-  | "yel"
-  | "yem"
-  | "yul"
-  | "yum";
-
 export type PunctKind = "period" | "qmark" | "bang";
 
 /** Left-edge cluster before a clause body. */

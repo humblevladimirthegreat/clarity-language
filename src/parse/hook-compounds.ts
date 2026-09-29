@@ -1,6 +1,6 @@
-import { isClarityRootShape } from "../root-shape.js";
+import { isAgazanRootShape } from "../root-shape.js";
 
-import type { Ending, MorphWord } from "./types.js";
+import type { MorphWord } from "./types.js";
 
 /** Extra-noun hook spellings (stacked vowels before simplex). */
 export const EXTRA_NOUN_HOOKS = [
@@ -81,7 +81,7 @@ export function parseHookCompoundCite(cite: string): HookCompoundParts | null {
     const leftEnding = leftCite.at(-1);
     if (leftEnding !== "l" && leftEnding !== "m") continue;
     const leftRoot = leftCite.slice(0, -1);
-    if (!isClarityRootShape(leftRoot) || leftRoot.length < 3) continue;
+    if (!isAgazanRootShape(leftRoot) || leftRoot.length < 3) continue;
     return { leftRoot, leftEnding, hook, stem: `${leftRoot}${leftEnding}${hook}` };
   }
   return null;
@@ -103,13 +103,4 @@ export function hookCompoundFromMorph(word: MorphWord): HookCompoundParts | null
   if (ending !== "l" && ending !== "m") return null;
   const root = word.family.roots[0]!;
   return parseHookCompoundCite(root + ending);
-}
-
-export function isListedHookCompoundStem(
-  ending: Ending | undefined,
-  root: string,
-): string | null {
-  if (ending !== "l" && ending !== "m") return null;
-  const parts = parseHookCompoundCite(root + ending);
-  return parts?.stem ?? null;
 }

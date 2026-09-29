@@ -11,3 +11,4 @@ tmp/
 docs/grammar/.vitepress/.temp/
 *.tsbuildinfo
 .eslintcache
+__pycache__/

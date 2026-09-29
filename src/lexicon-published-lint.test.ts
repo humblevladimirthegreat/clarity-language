@@ -51,7 +51,7 @@ describe("concreteAbstractCollide", () => {
         {
           emoji: "x",
           concrete: "passion",
-          clarity: "atest",
+          root: "atest",
           abstract: "",
           mnemonic: "",
           englishByPos: "",

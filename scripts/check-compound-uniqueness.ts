@@ -5,8 +5,6 @@
  *      npm run check-compounds -- --json
  */
 import { readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
 
 import {
   parseCompoundCsv,
@@ -14,10 +12,10 @@ import {
   type CompoundValidationError,
 } from "../src/lexicon-compounds.js";
 import { parsePublishedCsv } from "../src/lexicon-search.js";
+import { dataPath } from "../src/repo-paths.js";
 
-const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
-const publishedPath = join(rootDir, "data", "lexicon-published.csv");
-const compoundsPath = join(rootDir, "data", "lexicon-compounds.csv");
+const publishedPath = dataPath("lexicon-published.csv");
+const compoundsPath = dataPath("lexicon-compounds.csv");
 
 function parseArgs(argv: string[]): { json: boolean } {
   let json = false;
@@ -39,7 +37,7 @@ function main(): void {
   const { json } = parseArgs(process.argv.slice(2));
   const publishedRoots = new Set(
     parsePublishedCsv(readFileSync(publishedPath, "utf8"))
-      .map((row) => row.clarity.trim())
+      .map((row) => row.root.trim())
       .filter(Boolean),
   );
   const compounds = parseCompoundCsv(readFileSync(compoundsPath, "utf8"));

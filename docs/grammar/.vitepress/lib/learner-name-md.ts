@@ -1,6 +1,6 @@
 import type MarkdownIt from 'markdown-it'
 import type StateCore from 'markdown-it/lib/rules_core/state_core.mjs'
-import { hasSelfSlot } from '../../../../src/learner-name'
+import { hasSelfSlot } from '../../../../src/learner-name.ts'
 
 /**
  * `SELF` slots (the learner's own name) in grammar Markdown:
@@ -12,14 +12,14 @@ import { hasSelfSlot } from '../../../../src/learner-name'
 export function learnerNameSlots(md: MarkdownIt): void {
   const codeInline = md.renderer.rules.code_inline
   md.renderer.rules.code_inline = (tokens, idx, options, env, self) => {
-    const content = tokens[idx].content
+    const content = tokens[idx]!.content
     if (!hasSelfSlot(content)) return codeInline!(tokens, idx, options, env, self)
     return `<SelfCode text="${escapeAttr(content)}" />`
   }
 
   const fence = md.renderer.rules.fence
   md.renderer.rules.fence = (tokens, idx, options, env, self) => {
-    const token = tokens[idx]
+    const token = tokens[idx]!
     if (token.info.trim() !== 'agazan' || !hasSelfSlot(token.content)) {
       return fence!(tokens, idx, options, env, self)
     }

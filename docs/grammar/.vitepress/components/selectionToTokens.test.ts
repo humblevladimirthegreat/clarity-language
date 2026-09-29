@@ -11,9 +11,9 @@ import {
   tokenIndexFromElement,
 } from './selectionToTokens.js'
 
-function fixture(): { window: Window; root: HTMLElement; english: HTMLElement } {
-  const window = new Window()
-  const document = window.document
+function fixture(): { document: Document; root: HTMLElement; english: HTMLElement } {
+  // happy-dom implements the DOM; its own types differ from lib.dom's, so view it through lib.dom.
+  const document = new Window().document as unknown as Document
   const root = document.createElement('div')
   root.innerHTML = `
     <p class="stream">
@@ -26,7 +26,7 @@ function fixture(): { window: Window; root: HTMLElement; english: HTMLElement } 
   const english = document.createElement('p')
   english.textContent = 'English prose should be ignored.'
   document.body.append(root, english)
-  return { window, root, english }
+  return { document, root, english }
 }
 
 describe('tokenIndexFromElement', () => {
@@ -46,11 +46,11 @@ describe('tokenIndexFromElement', () => {
 
 describe('selectionToTokenRange', () => {
   it('maps a multi-token highlight inside the overlay', () => {
-    const { window, root } = fixture()
+    const { document, root } = fixture()
     const first = root.querySelector(`[${TOKEN_INDEX_ATTR}="0"]`)!.firstChild!
     const last = root.querySelector(`[${TOKEN_INDEX_ATTR}="2"]`)!.firstChild!
-    const selection = window.document.getSelection()!
-    const range = window.document.createRange()
+    const selection = document.getSelection()!
+    const range = document.createRange()
     range.setStart(first, 0)
     range.setEnd(last, 5)
     selection.removeAllRanges()
@@ -60,11 +60,11 @@ describe('selectionToTokenRange', () => {
   })
 
   it('ignores selections anchored in English prose', () => {
-    const { window, root, english } = fixture()
+    const { document, root, english } = fixture()
     const prose = english.firstChild!
     const token = root.querySelector(`[${TOKEN_INDEX_ATTR}="0"]`)!.firstChild!
-    const selection = window.document.getSelection()!
-    const range = window.document.createRange()
+    const selection = document.getSelection()!
+    const range = document.createRange()
     range.setStart(prose, 0)
     range.setEnd(token, 3)
     selection.removeAllRanges()
@@ -74,10 +74,10 @@ describe('selectionToTokenRange', () => {
   })
 
   it('returns null for collapsed selections', () => {
-    const { window, root } = fixture()
+    const { document, root } = fixture()
     const token = root.querySelector(`[${TOKEN_INDEX_ATTR}="0"]`)!.firstChild!
-    const selection = window.document.getSelection()!
-    const range = window.document.createRange()
+    const selection = document.getSelection()!
+    const range = document.createRange()
     range.setStart(token, 1)
     range.collapse(true)
     selection.removeAllRanges()

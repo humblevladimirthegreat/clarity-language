@@ -9,7 +9,7 @@ import { parsePublishedCsv } from "./lexicon-search.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const rows = parsePublishedCsv(readFileSync(join(root, "data", "lexicon-published.csv"), "utf8"));
-const rootByEmoji = new Map(rows.map((row) => [row.emoji, row.clarity]));
+const rootByEmoji = new Map(rows.map((row) => [row.emoji, row.root]));
 
 describe("closed roots", () => {
   it("spell each emoji's published root (run `npm run convert-word -- --lexicon` to resync)", () => {

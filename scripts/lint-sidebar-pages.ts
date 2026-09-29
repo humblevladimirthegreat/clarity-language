@@ -13,7 +13,7 @@ type SidebarItem = {
 function pagePath(link: string): string | undefined {
   // External URLs and in-page anchors do not name a docs page.
   if (/^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(link)) return;
-  const pathname = link.split(/[?#]/, 1)[0];
+  const pathname = link.split(/[?#]/, 1)[0]!;
   const relativePath = pathname.replace(/^\//, "");
   return resolve(grammarDir, relativePath);
 }

@@ -1,6 +1,6 @@
 import { escapeCsvField, parseCsv } from "./csv.js";
 import { isExtraNounHook } from "./parse/hook-compounds.js";
-import { isClarityRootShape } from "./root-shape.js";
+import { isAgazanRootShape } from "./root-shape.js";
 
 export const COMPOUND_HEADERS = [
   "emoji",
@@ -80,7 +80,7 @@ const JOIN_LETTERS = new Set<string>(["l", "m", "n", "r"]);
 
 /** Content roots are `V(CV)+` and not a bare single vowel (join / reviser shape). */
 export function isCompoundMemberRoot(root: string): boolean {
-  return isClarityRootShape(root) && root.length >= 3;
+  return isAgazanRootShape(root) && root.length >= 3;
 }
 
 export type CompoundSplit = { left: string; join: CompoundJoin; right: string };
@@ -231,15 +231,4 @@ export function validateCompoundRows(
   }
 
   return errors;
-}
-
-export function assertValidCompoundRows(
-  rows: CompoundRow[],
-  publishedRoots: ReadonlySet<string>,
-): void {
-  const errors = validateCompoundRows(rows, publishedRoots);
-  if (errors.length > 0) {
-    const detail = errors.map((e) => `row ${e.row ?? "?"} ${e.stem ?? ""}: ${e.reason}`).join("\n");
-    throw new Error(`Invalid lexicon-compounds.csv:\n${detail}`);
-  }
 }

@@ -32,7 +32,7 @@ import { lengthenCollidingResumes } from "./binds.js";
 import { followPairs, followProse, mergeFollowPairs, type FollowPairs } from "./follow.js";
 import { retieCore } from "./rebuild.js";
 import { contentStemRoots } from "./resume.js";
-import { isClarityRootShape } from "../root-shape.js";
+import { isAgazanRootShape } from "../root-shape.js";
 import { letterPrefix } from "../parse/resolve.js";
 import { parseWord } from "../parse/word.js";
 import { asRetieTables, type RetieTables } from "./tables.js";
@@ -323,7 +323,7 @@ function stemOfLineWords(
   core: string,
   map: ReadonlyMap<string, string>,
 ): { to?: string; review?: string } | undefined {
-  if (!isClarityRootShape(core)) return undefined;
+  if (!isAgazanRootShape(core)) return undefined;
   const lineStart = input.lastIndexOf("\n", index - 1) + 1;
   const lineEnd = input.indexOf("\n", index);
   const line = input.slice(lineStart, lineEnd < 0 ? input.length : lineEnd);
@@ -333,7 +333,7 @@ function stemOfLineWords(
       const { core: word } = peelChunk(token);
       if (!word || word === core) continue;
       let roots: string[] = [];
-      if (isClarityRootShape(word)) roots = [word];
+      if (isAgazanRootShape(word)) roots = [word];
       else {
         try {
           roots = contentStemRoots(parseWord(word));

@@ -15,7 +15,7 @@ import { classifyTokenBranch } from "../parse/tokens.js";
 import { parseWord, WordParseError } from "../parse/word.js";
 import { traceFragment, traceTemplate } from "./template-trace.js";
 import { forEachMarkdownCodeSpan, forEachMarkdownCodeToken, type MarkdownCodeSpan } from "../retie/tokens.js";
-import { isClarityRootShape } from "../root-shape.js";
+import { isAgazanRootShape } from "../root-shape.js";
 
 export type AgazanLintKind = "parse" | "unknown-root";
 
@@ -82,7 +82,7 @@ function prefixedBareRoot(core: string): string | null {
   const posLen = core.startsWith("th") ? 2 : POS.includes(core[0]!) ? 1 : 0;
   if (posLen === 0) return null;
   const rest = core.slice(posLen);
-  if (isClarityRootShape(rest) && rest.length >= 3) return rest;
+  if (isAgazanRootShape(rest) && rest.length >= 3) return rest;
   return null;
 }
 
@@ -98,7 +98,7 @@ function nativeJIsAgazan(core: string): boolean {
     parseWord(asY);
     return true;
   } catch {
-    return looksLikeFullSpelledWord(asY) || isClarityRootShape(asY);
+    return looksLikeFullSpelledWord(asY) || isAgazanRootShape(asY);
   }
 }
 
@@ -142,7 +142,7 @@ export function lintAgazanToken(
     return { kind: "parse", detail: "`j` is not a letter; write `y`" };
   }
 
-  if (isClarityRootShape(core) && core.length >= 3) {
+  if (isAgazanRootShape(core) && core.length >= 3) {
     if (!known.has(core)) {
       return { kind: "unknown-root", detail: `not in the lexicon: ${core}` };
     }
@@ -535,7 +535,7 @@ export function lintBareRoots(text: string, tables: ClassifyTables): BareRootIss
     text: (span, index) => {
       const m = /^(?:th|[zdbvgwhxy])?([aeou][a-z]+)$/.exec(span.trim());
       const root = m?.[1];
-      if (!root || !isClarityRootShape(root)) return;
+      if (!root || !isAgazanRootShape(root)) return;
       if (tables.published.has(root) || tables.compounds.has(root)) return;
       issues.push({ text: span.trim(), index, root });
     },

@@ -1,9 +1,9 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
-import { buildStampIso, formatBuildStampEt } from './lib/build-stamp'
-import { injectInArticleToc } from './lib/inject-in-article-toc'
-import { learnerNameSlots } from './lib/learner-name-md'
-import { readingOrder } from './lib/reading-order'
+import { buildStampIso, formatBuildStampEt } from './lib/build-stamp.ts'
+import { injectInArticleToc } from './lib/inject-in-article-toc.ts'
+import { learnerNameSlots } from './lib/learner-name-md.ts'
+import { readingOrder } from './lib/reading-order.ts'
 
 const buildAt = new Date()
 

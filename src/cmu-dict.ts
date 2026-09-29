@@ -3,10 +3,11 @@
  * The file is tmp/cmudict.dict (pinned download in scripts/echo-pronunciation.ts).
  */
 import { existsSync, readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
 
-export const CMU_PATH = join(dirname(fileURLToPath(import.meta.url)), "..", "tmp", "cmudict.dict");
+import { REPO_ROOT } from "./repo-paths.ts";
+
+export const CMU_PATH = join(REPO_ROOT, "tmp", "cmudict.dict");
 
 /**
  * CMU variant to use when the first pronunciation is the wrong sense

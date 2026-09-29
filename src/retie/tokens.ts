@@ -16,11 +16,6 @@ export type RetieChange = {
   index: number;
 };
 
-export type RewriteMarkdownResult = {
-  text: string;
-  changes: RetieChange[];
-};
-
 /** `index` is where the word starts in the page, when the caller knows it. */
 export type CoreRewrite = (core: string, index?: number) => string | null;
 
@@ -302,10 +297,6 @@ export function resumeRewrite(
       : { stems, boundFor, occurrences, at, isOverlay, reshape };
     return retieCore(core, map, scope);
   };
-}
-
-export function collectContentStems(input: string): Set<string> {
-  return new Set(collectStemOccurrences(input).map((o) => o.root));
 }
 
 /** Each non-resume content root on the page, with where its word starts, in page order. */

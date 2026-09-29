@@ -10,7 +10,8 @@
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { loadCmu } from '../src/cmu-dict.ts';
-import { toAgazan } from './echo-pronunciation-map.ts';
+import { parseCsvLine, serializeCsv } from '../src/csv.ts';
+import { toAgazan } from '../src/pronunciation-map.ts';
 
 const CMU_FILE = 'tmp/cmudict.dict';
 /** Pinned cmudict commit, so reruns give the same pronunciations. */
@@ -29,20 +30,6 @@ if (!existsSync(CMU_FILE)) {
 /** Chosen variant per word, plus overrides for labels CMU lacks. See src/cmu-dict.ts. */
 const cmu = loadCmu();
 
-function parseCsvLine(line: string): string[] {
-  const out: string[] = [];
-  let cur = '', q = false;
-  for (let i = 0; i < line.length; i++) {
-    const c = line[i];
-    if (q) {
-      if (c === '"' && line[i + 1] === '"') { cur += '"'; i++; } else if (c === '"') q = false; else cur += c;
-    } else if (c === '"') q = true;
-    else if (c === ',') { out.push(cur); cur = ''; } else cur += c;
-  }
-  out.push(cur);
-  return out;
-}
-
 /** Common English words (tmp/en_50k.txt from prototype-lexicon-revamp.ts) guard re-hyphenation against loans. */
 const common = new Set(readFileSync('tmp/en_50k.txt', 'utf8').split('\n').map((l) => l.split(' ')[0]));
 
@@ -54,7 +41,7 @@ const NOT_COMPOUNDS = new Set(['tamale', 'singlet', 'pinata', 'mahjong']);
 
 const text = readFileSync(LEXICON, 'utf8');
 const lines = text.split('\n');
-const header = parseCsvLine(lines[0]);
+const header = parseCsvLine(lines[0]!);
 const iEmoji = header.indexOf('emoji'), iConcrete = header.indexOf('concrete');
 
 type Row = { emoji: string; label: string; lookup: string; phones: string; agazan: string; status: string };
@@ -62,28 +49,29 @@ const rows: Row[] = [];
 const hyphenFixes: { line: number; from: string; to: string }[] = [];
 
 for (let n = 1; n < lines.length; n++) {
-  if (!lines[n].trim()) continue;
-  const cols = parseCsvLine(lines[n]);
-  const emoji = cols[iEmoji], label = cols[iConcrete].toLowerCase();
+  const csvLine = lines[n]!;
+  if (!csvLine.trim()) continue;
+  const cols = parseCsvLine(csvLine);
+  const emoji = cols[iEmoji]!, concrete = cols[iConcrete]!, label = concrete.toLowerCase();
   let lookup = label, phones = cmu.get(label), status = 'exact';
   if (!phones) {
     // Hyphen-only difference: CMU has the joined spelling.
     const joined = label.replaceAll('-', '');
     const alt = joined !== label && cmu.has(joined) && !KEEP_HYPHEN.has(label) ? joined : undefined;
     if (alt) {
-      hyphenFixes.push({ line: n, from: cols[iConcrete], to: alt });
+      hyphenFixes.push({ line: n, from: concrete, to: alt });
       lookup = alt; phones = cmu.get(alt); status = 'hyphen-fix';
     }
   }
   if (!phones && !label.includes('-') && !NOT_COMPOUNDS.has(label)) {
     // Joined label missing from CMU: re-hyphenate when it splits into two common CMU words.
     const splits = [...Array(label.length).keys()].slice(3, -2)
-      .map((i) => [label.slice(0, i), label.slice(i)])
+      .map((i): [string, string] => [label.slice(0, i), label.slice(i)])
       .filter(([a, b]) => cmu.has(a) && cmu.has(b) && common.has(a) && common.has(b));
     if (splits.length) {
-      const [a, b] = splits.sort((x, y) => Math.min(y[0].length, y[1].length) - Math.min(x[0].length, x[1].length))[0];
+      const [a, b] = splits.sort((x, y) => Math.min(y[0].length, y[1].length) - Math.min(x[0].length, x[1].length))[0]!;
       const to = `${a}-${b}`;
-      hyphenFixes.push({ line: n, from: cols[iConcrete], to });
+      hyphenFixes.push({ line: n, from: concrete, to });
       lookup = `${a} ${b}`; phones = [...cmu.get(a)!, '|', ...cmu.get(b)!]; status = 'hyphen-fix';
     }
   }
@@ -101,17 +89,16 @@ for (let n = 1; n < lines.length; n++) {
 
 if (WRITE && hyphenFixes.length) {
   for (const f of hyphenFixes) {
-    const cols = parseCsvLine(lines[f.line]);
-    if (cols[iConcrete] !== f.from) throw new Error(`line ${f.line} changed`);
-    lines[f.line] = lines[f.line].replace(`,${f.from},`, `,${f.to},`);
+    const csvLine = lines[f.line]!;
+    if (parseCsvLine(csvLine)[iConcrete] !== f.from) throw new Error(`line ${f.line} changed`);
+    lines[f.line] = csvLine.replace(`,${f.from},`, `,${f.to},`);
   }
   writeFileSync(LEXICON, lines.join('\n'));
 }
 
 mkdirSync(OUT, { recursive: true });
-const esc = (s: string) => (/[",]/.test(s) ? `"${s.replaceAll('"', '""')}"` : s);
-writeFileSync(`${OUT}/pron.csv`, ['emoji,concrete,lookup,cmu,agazan,status',
-  ...rows.map((r) => [r.emoji, r.label, r.lookup, r.phones, r.agazan, r.status].map(esc).join(','))].join('\n') + '\n');
+writeFileSync(`${OUT}/pron.csv`, serializeCsv(['emoji', 'concrete', 'lookup', 'cmu', 'agazan', 'status'],
+  rows.map((r) => ({ ...r, concrete: r.label, cmu: r.phones }))));
 
 const count = (s: string) => rows.filter((r) => r.status === s).length;
 const missing = rows.filter((r) => r.status === 'missing');
