@@ -295,26 +295,26 @@ const SAKE_STANCE: Record<string, string> = {
   u: "unmet",
 };
 
-/** Ending grain on values (time horizon / prescription warrant / preference / changeability). */
+/** Ending grain on values (time horizon / prescription warrant / time horizon / changeability). */
 const SAKE_GRAIN: Record<string, Partial<Record<Ending, string>>> = {
   a: { l: "lasting", m: "any-term", r: "immediate" },
   e: { l: "invited", m: "offered", r: "trial" },
-  o: { l: "circumstantial", m: "internal", r: "provisional" },
+  o: { l: "lasting", m: "any-term", r: "immediate" },
   u: { l: "irreversible", m: "modifiable", r: "passing" },
 };
 
 /** Emotion tail (sakes.md#emotion-compose): locus hook vowel(s), then motion ending. */
 const EMOTION_LOCUS: Record<string, string> = {
   a: "INTERNAL",
-  uo: "CAUGHT",
-  ae: "ROLE",
-  ua: "COLLECTIVE",
   ao: "CIRCUM",
-  u: "UNPLACED",
+  uo: "UNPLACED",
   o: "AIMED",
-  oe: "REACHING",
+  oe: "SEEKING",
   ue: "RESISTING",
   e: "ON-BEHALF",
+  u: "AWAY",
+  ua: "COLLAPSE",
+  ae: "FAWN",
 };
 const EMOTION_MOTION: Record<string, string> = { r: "SURGING", m: "FLOWING", l: "STILL" };
 

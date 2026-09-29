@@ -83,9 +83,9 @@ Naming the sake and your stance toward it helps you notice gratitude, motive, an
 
 Opaque labels (*angry*, *anxious*, *proud*) hide which sake is in play and what to ask for.
 
-Agazan [composes emotion](sakes.md#emotion-compose) from a [value](sakes.md) (often unmet or met), plus activation (surge / stir / …), plus locus (where it shows).
+Agazan [composes emotion](sakes.md#emotion-compose) from a [sake](sakes.md) stance (often unmet or met), plus a locus (where the feeling sits, or what it points at), plus motion (surging / flowing / still).
 
-Composing emotion from sake + activation + locus helps you ask for what would actually help instead of stopping at the label.
+Composing emotion from sake + locus + motion helps you ask for what would actually help instead of stopping at the label.
 
 ### How far a label reaches {#how-far-a-label-reaches}
 
@@ -185,7 +185,7 @@ Published roots keep an **abstract** sense beside the **concrete** picture, so t
 * [Usual as weather](knowing.md#universality): a habitual *always* is a climate report; [uncountered](knowing.md#universality) is clear sky (*no counterexample comes to mind*), a search, not a proof.
 * [*As if* as theater](knowing.md#notional): a stage mask frames play; the real tally stays **offstage**.
 * [Mechanism as gears](causation.md#cause): naming the gear train marks *how it meshes*.
-* [Affect as water](sakes.md#emotion-compose): tide (arousal) plus vessel / pour / ambient field (locus) instead of an opaque emotion label that hides the sake.
+* [Affect as water](sakes.md#emotion-compose): surging / flowing / still water (motion) plus where the charge sits or points (locus) instead of an opaque emotion label that hides the sake.
 
 Conceptual metaphors help you reach and remember the healthier frame by tying it to a concrete analogy that already encodes the bias you are trying to catch.
 

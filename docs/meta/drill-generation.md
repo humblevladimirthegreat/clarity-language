@@ -327,7 +327,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 15 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zeyen`, `zahen`, **`zomen`** Mine vs performance **`zamun`**, **`zolon`** Everyone, …) | **`amu`** allowed on performance items |
 | 15 | `causation.md` | Intermediate | **exists** | Following-sentence **`barl`**; **`era`** *because* / **`ewu`** *iff*; asserted necessary **`thebom theram`**; **CAUSE** **`ege`** **-m** | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
 | 15 | `causation.md` | Advanced | — | no Advanced stage | |
-| 16 | `sakes.md` | Intermediate | **exists** | Prescription **`the`** + force; motive **`tho`** + preference standing; which ending table; attachment sites | |
+| 16 | `sakes.md` | Intermediate | **exists** | Prescription **`the`** + force; motive **`tho`** + time horizon; which ending table; attachment sites | |
 | 16 | `sakes.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
 | 16 | `knowing.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`ove`** + play holds; **RESIDUE** / **FORMER**; MAY vs nearby jobs | |
 | 16 | `knowing.md` | Advanced | **exists** | Mood on one adjective; dated channel; universality (`ogo` / `eho` / …) | One checkpoint for the whole stage |

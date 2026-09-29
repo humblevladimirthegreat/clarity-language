@@ -18,14 +18,15 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **AIMED** | Emotion locus: aimed at a target | `wonathumol` | [Sakes](sakes.md#emotion-compose) |
 | **ASIDE** | Span TYPE **e**: an aside | `th(hazaham)` | [Spans](spans.md#asides) |
 | **ATTEMPT** | Try mood: committed / unstated / trial run | `thudom` | [Intention](intention.md#try) |
-| **CAUGHT** | Emotion locus: picked up from others, not mine | `wonathumuom` | [Sakes](sakes.md#emotion-compose) |
+| **AWAY** | Emotion locus: moving off from a target | `wonathumum` | [Sakes](sakes.md#emotion-compose) |
 | **CAUSE** | Mechanism-framing mood (*make X do*) | `thegem` | [Causation](causation.md#cause) |
 | **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuduthuraor` | [Sakes](sakes.md#emotion-compose) |
 | **CITE** | Span TYPE **a**: a citation | `d[azawan]` | [Spans](spans.md#shape) |
-| **COLLECTIVE** | Emotion locus: the group's feeling, shared as a member | `wonathumuar` | [Sakes](sakes.md#emotion-compose) |
+| **COLLAPSE** | Emotion locus: out of fight, giving up | `wonathumual` | [Sakes](sakes.md#emotion-compose) |
 | **COMMON** | Universality: usual, exceptions expected | `thogol` | [Knowing](knowing.md#universality) |
 | **CONSENT** | Consent of the affected party | `thuxegam` | [Sakes](sakes.md#consent) |
 | **DECISION** | Pick-firmness mood | `theham` | [Intention](intention.md#decision) |
+| **FAWN** | Emotion locus: placating a target | `wonathumaem` | [Sakes](sakes.md#emotion-compose) |
 | **FELT** | Evidential: gut / body knowing | `thahum` | [Knowing](knowing.md#evidentiality) |
 | **FLOWING** | Emotion motion: a current you can ride | `wonathumem` | [Sakes](sakes.md#emotion-compose) |
 | **FORBID** | Permission, negative | `therel` | [Sakes](sakes.md#permission) |
@@ -44,21 +45,20 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **PATTERN** | Evidential: from regularity | `thabem` | [Knowing](knowing.md#evidentiality) |
 | **PERMIT** | Permission, positive | `thegal` | [Sakes](sakes.md#permission) |
 | **PLAN** | Intention-framing mood | `thumam` | [Intention](intention.md#plan-predict) |
-| **REACHING** | Emotion locus: reaching to change a target | `wonathumoer` | [Sakes](sakes.md#emotion-compose) |
 | **RECORDED** | Evidential: documented / playback / scheduled | `therum` | [Knowing](knowing.md#evidentiality) |
 | **REQUIRE** | Requirement (*must*) without a sake | `themehol` | [Sakes](sakes.md#requirement) |
 | **RESIDUE** | Episode standing: outcome still on the current tally | `thamom` | [Knowing](knowing.md#residue) |
 | **RESISTING** | Emotion locus: pushing against a target | `wonathumuer` | [Sakes](sakes.md#emotion-compose) |
-| **ROLE** | Emotion locus: felt in a capacity, not personally | `wonathumael` | [Sakes](sakes.md#emotion-compose) |
 | **RULE** | Universality: holds inside a named frame | `thebel` | [Knowing](knowing.md#universality) |
 | **SAME** | Identity copula | `gogal` | [Predication](predication.md#identity) |
 | **SCOPE** | Scope island `^ … ^` | `^ hegewem zodogal geredal ^` | [Spans](spans.md#scope-islands) |
-| **STILL** | Emotion motion: muted, faint, numb | `wonathumol` | [Sakes](sakes.md#emotion-compose) |
+| **SEEKING** | Emotion locus: turning to someone for comfort | `wonathumoem` | [Sakes](sakes.md#emotion-compose) |
+| **STILL** | Emotion motion: muted, faint, numb, frozen | `wonathumol` | [Sakes](sakes.md#emotion-compose) |
 | **STORY** | Evidential: narrative / lore | `thazom` | [Knowing](knowing.md#evidentiality) |
 | **SURGING** | Emotion motion: big, spiking, in waves | `wuduthuraor` | [Sakes](sakes.md#emotion-compose) |
 | **TOLD** | Evidential: hearsay | `themam` | [Knowing](knowing.md#evidentiality) |
 | **UNCOUNTERED** | Universality: no counterexample comes to mind | `thehol` | [Knowing](knowing.md#universality) |
-| **UNPLACED** | Emotion locus: can't place where it comes from | `wuduthurul` | [Sakes](sakes.md#emotion-compose) |
+| **UNPLACED** | Emotion locus: can't place where it comes from | `wuduthuruol` | [Sakes](sakes.md#emotion-compose) |
 | **WITNESSED** | Evidential: firsthand memory (reconstructive) | `thunom` | [Knowing](knowing.md#evidentiality) |
 
 **Compare with:** [quasi](#quasi) (`ROOTl-e-`) is not **NOTIONAL**.

@@ -307,14 +307,14 @@ Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#
 
 ### Mid-word `x` families
 
-Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/sakes.md), keep the stance **and** the ending table (contact / prescription warrant / preference standing / changeability): `thuduthom` → `th-competence-motive-internal`, not `th-competence-th-motive`.
+Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/sakes.md), keep the stance **and** the ending table (contact / prescription warrant / time horizon / changeability): `thuduthom` → `th-competence-motive-any-term`, not `th-competence-th-motive`.
 
 | Family | Example Agazan | Morph gloss |
 |--------|-----------------|-------------|
 | Ordinary / name compound | `yabebuxazovan` | `y-Ubune-x-Unowen` |
 | Ordinary (three roots) | `zagavexedehexowoden` | `z-Ogove-x-Adeda-x-Unuden` |
 | Ability / values stance | `vowogaxel` | `v-walk-unable-temporary` |
-| Values stance on need | `thuduthom` | `th-competence-motive-internal` |
+| Values stance on need | `thuduthom` | `th-competence-motive-any-term` |
 | Role compound | `zaxavadal` | `z-agent-x-fight` |
 | Span open / close | `thexal` … `xuxul` | `th-ASIDE.multi[…]` ([labeled bracket](#phrase-brackets)) |
 | Number / enumeration | `xrebul` | `x-starting-with` |
@@ -429,7 +429,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 > `yuel zamun vowogaxel thuduthom.`
 >
-> y-no | z-speaker | v-walk-unable-temporary | th-competence-motive-internal
+> y-no | z-speaker | v-walk-unable-temporary | th-competence-motive-any-term
 >
 > "No — I can't walk right now."
 

@@ -267,27 +267,29 @@ When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgme
 
 Build it from the plain sake word: `wuduthur` (competence, unmet, passing) + **`ao`** (*over*: CIRCUM) + **-r** (SURGING) = `wuduthuraor`. The old ending letter (**-r** here) stays in the middle of the word and keeps its meaning.
 
-The locus uses the hook vowels you already know. A **placement** locus says whose feeling it is and where it sits:
+The locus uses the hook vowels you already know. A **placement** locus says where the feeling sits:
 
 | Locus | Hook | Use | English |
 |-------|------|-----|---------|
 | **`a`** | *in* | INTERNAL | *mine, held inside* |
-| **`uo`** | *through* | CAUGHT | *passing through me, not mine* (picked up from the room or from someone) |
-| **`ae`** | *using* | ROLE | *felt in a capacity, not personally* (*as the reviewer*) |
-| **`ua`** | *out from among* | COLLECTIVE | *ours: the group's feeling, which I hold as one member* |
 | **`ao`** | *over* | CIRCUM | *the atmosphere of the situation* |
-| **`u`** | *from* | UNPLACED | *I can't place where it comes from* |
+| **`uo`** | *through* | UNPLACED | *I can't place where it comes from* (no single source) |
 
 A **direction** locus says what the charge points at:
 
 | Locus | Hook | Use | English |
 |-------|------|-----|---------|
-| **`o`** | *at* | AIMED | *aimed at someone* (*annoyed at*) |
-| **`oe`** | *toward* | REACHING | *reaching to change something* (*pressing for*) |
-| **`ue`** | *against* | RESISTING | *pushing back* (*objecting to*) |
+| **`o`** | *at* | AIMED | *the charge lands on a target* (*annoyed at*, *grateful to*, *pressing for*) |
+| **`oe`** | *toward* | SEEKING | *turning to someone for comfort or safety* |
+| **`ue`** | *against* | RESISTING | *pushing back* (*objecting to*, fighting) |
 | **`e`** | *for* | ON-BEHALF | *felt for someone's sake* (*upset for*) |
+| **`u`** | *from* | AWAY | *moving off* (*avoiding*, fleeing, disengaging, hiding) |
+| **`ua`** | *out of* | COLLAPSE | *out of fight: giving up* (*defeated by*) |
+| **`ae`** | *using* | FAWN | *using yourself to placate* (*appeasing*) |
 
-Name the landmark with a `/b/` word right after the feeling (after **`gobom`** when the feeling is on `/w/`): the target of a direction, or who it was caught from, the role, the group, or the situation. INTERNAL and UNPLACED take no `/b/`. A direction with no `/b/` points at the stimulus noun when there is one, otherwise at someone unnamed.
+A direction names the **dominant** pull when feelings mix; use two feeling words for two pulls. AIMED lands on a party or a goal; RESISTING opposes an outcome or a demand. ON-BEHALF is your own feeling about someone else's stake; FAWN is placating someone for your own safety.
+
+Name the landmark with a `/b/` word right after the feeling (after **`gobom`** when the feeling is on `/w/`): the target of a direction, or the situation for CIRCUM. INTERNAL and UNPLACED take no `/b/`. A direction with no `/b/` points at the stimulus noun when there is one, otherwise at someone unnamed.
 
 > `zemehol wonathumol gobom balahen.`
 >
@@ -303,25 +305,25 @@ The motion ending says how the feeling moves. Affect is **water**:
 | **-m** | FLOWING | clear and moving at a pace you can ride, calm or strong | **-m** ≈ the ordinary case: a current |
 | **-l** | STILL | muted, faint, numb, frozen | **-l** ≈ *locked*: still water |
 
-Surging and still are information, not verdicts. Strong but steady anger is flowing; so is calm contentment. Surging can be a cue to ground; still can be a cue to rest, or to re-engage gently.
+Surging and still are information, not verdicts. Strong but steady anger is flowing; so is calm contentment. Surging can be a cue to ground; still can be a cue to rest, or to re-engage gently. Freezing is STILL: AWAY with **-l** is *frozen, wanting out*.
 
 The tail goes on met **`tha`**, motive **`tho`**, and unmet **`thu`** words. Prescription **`the`** is advice, not a feeling, so it takes no tail. A word with no tail (`wuduthur`) is an ordinary sake word.
 
 | Agazan | English |
 |---------|---------|
 | `zezebel wuduthuraor gobom` | *anxious about the dialogue* (competence at stake, temporary; hangs over the room; surging) |
-| `zozazom wonathumuar gobom` | *our resentment about the division* (unmet relatedness; the group's, and I share it; surging) |
+| `zozazom wonathumual gobom` | *given up over the division* (unmet relatedness; out of fight; still) |
 | `zebeyum guduthamar` | *proud of the draft* (met competence; held inside; surging) |
 | `zemehol wonathumem gobom bazawan` | *upset for Azawan about the memo* (unmet relatedness; on Azawan's behalf; flowing) |
-| `zezebel wonathumuom gobom balahen` | *irritated about the dialogue, caught from Alahen* (unmet relatedness; not mine, picked up from Alahen; flowing) |
-| `zezebel wonathumael gobom` | *displeased with the dialogue as my job, not personally* (unmet relatedness; in my role; still) |
-| `zemehol wonathumoer gobom` | *unhappy with the memo and pressing to change it* (unmet relatedness; reaching toward the memo; surging) |
+| `zezebel wonathumum gobom balahen` | *avoiding Alahen over the dialogue* (unmet relatedness; moving off from Alahen; flowing) |
+| `zezebel wonathumaem gobom balahen` | *placating Alahen about the dialogue* (unmet relatedness; appeasing Alahen; flowing) |
+| `zemehol wonathumoem gobom bazawan` | *upset about the memo and turning to Azawan for comfort* (unmet relatedness; seeking Azawan; flowing) |
 | `zemehol wonathumuer gobom` | *objecting to the memo* (unmet relatedness; pushing against the memo; surging) |
-| `zezebel wuduthurul gobom` | *uneasy about the dialogue, and I can't say why* (competence at stake, temporary; unplaced; still) |
+| `zezebel wuduthuruol gobom` | *uneasy about the dialogue, and I can't say why* (competence at stake, temporary; unplaced; still) |
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
 
-**Compare with:** *could be* uses [MAY](knowing.md#may) (`thovom`). CAUGHT from a `/b/` says whose feeling it is; *because of* is a causal claim with the because pole. The stimulus says what the feeling is **about**; a direction `/b/` says what it is **aimed at**; the because pole says what **caused** it.
+**Compare with:** *could be* uses [MAY](knowing.md#may) (`thovom`). *Because of* is a causal claim with the because pole. The stimulus says what the feeling is **about**; a direction `/b/` says what it is **aimed at**; the because pole says what **caused** it.
 
 ### Prescription (`the`): ought this act for this sake
 <a id="sake-force"></a>
@@ -370,16 +372,16 @@ A move meant to **prevent** harm to the sake is a *so that … not* dependent ([
 >
 > "Alahen ought to bow for relatedness, so that Azawan does not leave."
 
-### Motive (`tho`): preference standing
+### Motive (`tho`): time horizon
 <a id="sake-preference"></a>
 
-English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the sake root, mid-word **`th`**, **`o`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or is only a working reason for now. If you do not know the standing, use **-m**. **-n** is ordinary [proper](word-endings.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…thom`** plus **`hual`**).
+English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the sake root, mid-word **`th`**, **`o`**, then an ending. That ending is the **time horizon**, on the same scale as [met](#time-horizon-endings-on-met): whether the act serves the sake over time or right away. If you do not know, use **-m**. **-n** is ordinary [proper](word-endings.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…thom`** plus **`hual`**).
 
 > `zazawan vezebel thonathom.`
 >
-> z-Azawan | v-tell | th-relatedness-motive-internal
+> z-Azawan | v-tell | th-relatedness-motive-any-term
 >
-> "Azawan tells for relatedness (internal reason)."
+> "Azawan tells for relatedness."
 
 **Not the same job as:** prescription **`the`** (*this act ought* to serve this sake). **`tho`** describes *doing for this sake*. On `/ɡ/`, the same stance is **your** noun’s purpose (*my gift for relatedness*). *Walks so that Alahen sits* is an intended **event** ([so that](dependents.md#so-that), **`hagom`**), not a sake. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`hogem`). *Tells on behalf of Alahen* is [proxy](relations.md#proxy) (`hadem`).
 
@@ -387,11 +389,11 @@ A reason held **to keep a cost off** is a *so that … not* dependent ([so that]
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…thol` | the situation pulls this motive | *circumstantial* | **-l** ≈ locked to the scene |
-| `…thom` | the agent’s own reason (soft default if unknown) | *internal* | **-m** ≈ open / from inside |
-| `…thor` | a working reason for now; it may change | *for now* / *provisional* | **-r** ≈ for now |
+| `…thol` | does this for the sake over time | *lasting* | **-l** ≈ lasting |
+| `…thom` | does this for the sake; time horizon unstated (soft default if unknown) | *for* | **-m** ≈ open |
+| `…thor` | does this for the sake right away | *immediate* | **-r** ≈ in the moment |
 
-A reason the situation pulls is as legitimate as one from inside. The ending says where the reason comes from, not how good it is.
+Neither end is better; a good day needs both, and doing something for a payoff right now is often exactly what is needed. When the **situation** is what pulls the reason, say so with the [because pole](causation.md) and the situation as `/b/`.
 
 ### Which ending table?
 
@@ -401,7 +403,7 @@ Beginner already used *serves* and *detracts from*. Intermediate adds *ought thi
 |--------|-----|---------|-----|
 | **`tha`** | [time horizon](#time-horizon-endings-on-met) endings | *serves* / *met* | **a** ≈ add |
 | **`the`** | [invited / offered / trial](#sake-force) endings | *ought this act for this sake* | **e** ≈ order (instruct / ought) |
-| **`tho`** | [preference standing](#sake-preference) endings | *doing for this sake* | **o** ≈ one (one sake as the reason) |
+| **`tho`** | [time horizon](#sake-preference) endings | *doing for this sake* | **o** ≈ one (one sake as the reason) |
 | **`thu`** | [changeability](#sake-changeability) endings | *detracts from* / *unmet* | **u** ≈ undo |
 
 ### Attachment sites
@@ -424,9 +426,9 @@ On **`the`**, use **-l** for an invitation, **-m** for an offer, and **-r** for 
 
 > `zazawan vezebel thuduthal thonathom.`
 >
-> z-Azawan | v-tell | th-competence-met-lasting | th-relatedness-motive-internal
+> z-Azawan | v-tell | th-competence-met-lasting | th-relatedness-motive-any-term
 >
-> "Azawan tells: it serves competence in the long term, and relatedness is the internal motive."
+> "Azawan tells: it serves competence in the long term, and relatedness is the motive."
 
 ### Thanks and sorry {#thanks-sorry}
 
@@ -688,44 +690,44 @@ z-Alahen | v-scream | th-survival-ought-invited
 z-Ahaben | v-bow | th-relatedness-ought-trial
 :::
 
-**5.** *Azawan prays for relatedness (internal reason).*
+**5.** *Azawan prays for relatedness (horizon unstated).*
 
 ::: details Show answer
 `zazawan vebewal thonathom.`
 
-z-Azawan | v-pray | th-relatedness-motive-internal
+z-Azawan | v-pray | th-relatedness-motive-any-term
 :::
 
-**6.** *Alahen kneels for relatedness (the situation pulls it).*
+**6.** *Alahen kneels for relatedness (over time).*
 
 ::: details Show answer
 `zalahen venehal thonathol.`
 
-z-Alahen | v-kneel | th-relatedness-motive-circumstantial
+z-Alahen | v-kneel | th-relatedness-motive-lasting
 :::
 
-**7.** *Ahaben hushes for relatedness (internal motive, as usual).*
+**7.** *Ahaben hushes for relatedness (as usual).*
 
 ::: details Show answer
 `zahaben vahehal thonathom hual.`
 
-z-Ahaben | v-hush | th-relatedness-motive-internal | h-always-except
+z-Ahaben | v-hush | th-relatedness-motive-any-term | h-always-except
 :::
 
-**8.** *Azawan bows for relatedness (a reason for now).*
+**8.** *Azawan bows for relatedness (right now).*
 
 ::: details Show answer
 `zazawan vabayel thonathor.`
 
-z-Azawan | v-bow | th-relatedness-motive-provisional
+z-Azawan | v-bow | th-relatedness-motive-immediate
 :::
 
-**9.** *Alahen prays for competence (internal reason).*
+**9.** *Alahen prays for competence (horizon unstated).*
 
 ::: details Show answer
 `zalahen vebewal thuduthom.`
 
-z-Alahen | v-pray | th-competence-motive-internal
+z-Alahen | v-pray | th-competence-motive-any-term
 :::
 
 **10.** *Azawan’s church serves relatedness in the long term.*
@@ -736,20 +738,20 @@ z-Alahen | v-pray | th-competence-motive-internal
 [[gl-ownership | b-Azawan] | z-church] | [w-relatedness-met-lasting | g-stimulus]
 :::
 
-**11.** *Azawan prays: it serves competence in the long term, and relatedness is the internal motive.*
+**11.** *Azawan prays: it serves competence in the long term, and relatedness is the motive.*
 
 ::: details Show answer
 `zazawan vebewal thuduthal thonathom.`
 
-z-Azawan | v-pray | th-competence-met-lasting | th-relatedness-motive-internal
+z-Azawan | v-pray | th-competence-met-lasting | th-relatedness-motive-any-term
 :::
 
-**12.** *Alahen ought to scream to serve survival (Alahen asked for a move); relatedness is the circumstantial motive.*
+**12.** *Alahen ought to scream to serve survival (Alahen asked for a move); relatedness is the motive, over time.*
 
 ::: details Show answer
 `zalahen vezogel thuhothel thonathol.`
 
-z-Alahen | v-scream | th-survival-ought-invited | th-relatedness-motive-circumstantial
+z-Alahen | v-scream | th-survival-ought-invited | th-relatedness-motive-lasting
 :::
 
 **13.** *Ahaben lets Azawan kneel.*
@@ -800,27 +802,27 @@ z-Ahaben | v-scream | th-survival-ought-trial
 
 ::: details Show answer
 
-z-Alahen | v-pray | th-competence-motive-circumstantial
+z-Alahen | v-pray | th-competence-motive-lasting
 
-*Alahen prays for competence (circumstantial motive).*
+*Alahen prays for competence (over time).*
 :::
 
 **4.** `zahaben venehal thonathom.`
 
 ::: details Show answer
 
-z-Ahaben | v-kneel | th-relatedness-motive-internal
+z-Ahaben | v-kneel | th-relatedness-motive-any-term
 
-*Ahaben kneels for relatedness (internal reason).*
+*Ahaben kneels for relatedness (horizon unstated).*
 :::
 
 **5.** `zazawan vahehal thonathor.`
 
 ::: details Show answer
 
-z-Azawan | v-hush | th-relatedness-motive-provisional
+z-Azawan | v-hush | th-relatedness-motive-immediate
 
-*Azawan hushes for relatedness (a reason for now).*
+*Azawan hushes for relatedness (right now).*
 :::
 
 **6.** `zorozol gozuthar.`
@@ -854,9 +856,9 @@ z-bell | [w-relatedness-unmet-modifiable | g-stimulus]
 
 ::: details Show answer
 
-z-Alahen | v-scream | th-survival-motive-internal | h-always-except
+z-Alahen | v-scream | th-survival-motive-any-term | h-always-except
 
-*Alahen screams for survival (internal motive, as usual).*
+*Alahen screams for survival (as usual).*
 :::
 
 **10.** `zalahen vebewal therel.`

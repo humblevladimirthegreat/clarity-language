@@ -9,8 +9,8 @@ use [skip-cd] for amplify to not deploy.
 # TODO
 
 Prosody
--change compassion to kindness
 -remove & as punctuation?
+-fix disrepancies in agents.md
 -confirm we still have chats after rebuild
 -consider removing some emotion words from lexicon
 -expressiveness review

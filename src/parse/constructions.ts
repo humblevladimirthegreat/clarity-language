@@ -321,7 +321,7 @@ export const SAKE_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vo
   "stance.a": { anchor: "sakes.md#time-horizon-endings-on-met", summary: "met tha" },
   "stance.u": { anchor: "sakes.md#unmet-thu-detracts-from-the-sake", summary: "unmet thu" },
   "stance.e": { anchor: "sakes.md#prescription-the-ought-this-act-for-this-sake", summary: "prescription the" },
-  "stance.o": { anchor: "sakes.md#motive-tho-preference-standing", summary: "motive tho" },
+  "stance.o": { anchor: "sakes.md#motive-tho-time-horizon", summary: "motive tho" },
   "ending.a.l": { anchor: "sakes.md#time-horizon-endings-on-met", summary: "met time horizon -l" },
   "ending.a.m": { anchor: "sakes.md#time-horizon-endings-on-met", summary: "met time horizon -m" },
   "ending.a.r": { anchor: "sakes.md#time-horizon-endings-on-met", summary: "met time horizon -r" },
@@ -331,9 +331,9 @@ export const SAKE_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vo
   "ending.e.l": { anchor: "sakes.md#prescription-the-ought-this-act-for-this-sake", summary: "invited prescription" },
   "ending.e.m": { anchor: "sakes.md#prescription-the-ought-this-act-for-this-sake", summary: "offered prescription" },
   "ending.e.r": { anchor: "sakes.md#prescription-the-ought-this-act-for-this-sake", summary: "trial prescription" },
-  "ending.o.l": { anchor: "sakes.md#motive-tho-preference-standing", summary: "motive standing -l" },
-  "ending.o.m": { anchor: "sakes.md#motive-tho-preference-standing", summary: "motive standing -m" },
-  "ending.o.r": { anchor: "sakes.md#motive-tho-preference-standing", summary: "motive standing -r" },
+  "ending.o.l": { anchor: "sakes.md#motive-tho-time-horizon", summary: "motive standing -l" },
+  "ending.o.m": { anchor: "sakes.md#motive-tho-time-horizon", summary: "motive standing -m" },
+  "ending.o.r": { anchor: "sakes.md#motive-tho-time-horizon", summary: "motive standing -r" },
   "emotion": { anchor: "sakes.md#emotion-compose", summary: "emotion tail (locus vowel + motion ending)" },
 };
 

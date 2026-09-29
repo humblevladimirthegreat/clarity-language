@@ -232,7 +232,7 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
   it("ability + value motive", () => {
     expectLine(
       "yuel zamun vowogaxel thuduthom.",
-      "y-no | z-speaker | v-walk-unable-temporary | th-competence-motive-internal",
+      "y-no | z-speaker | v-walk-unable-temporary | th-competence-motive-any-term",
     );
   });
 
@@ -393,7 +393,7 @@ describe("compareMorphGloss", () => {
     expectLine("zezebel wuduthuraor gobom", "z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]");
     expectLine("zebeyum guduthamar", "z-draft | g-competence-met-any-term-INTERNAL-SURGING");
     expectLine("zemehol wonathumuer gobom", "z-memo | [w-relatedness-unmet-modifiable-RESISTING-SURGING | g-stimulus]");
-    expectLine("gonathalum", "g-relatedness-met-lasting-UNPLACED-FLOWING");
+    expectLine("gonathaluom", "g-relatedness-met-lasting-UNPLACED-FLOWING");
   });
 
   it("span interiors: cite and aside gloss English; mention passes through", () => {
