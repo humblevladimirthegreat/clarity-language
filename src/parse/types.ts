@@ -396,7 +396,6 @@ export type SharedRole =
   | "collective"
   | "scale"
   | "equative"
-  | "continuum"
   | "kind"
   | "ordinary";
 

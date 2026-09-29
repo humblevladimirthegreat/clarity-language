@@ -113,43 +113,45 @@ Related **quantity** words (*heavy*, *flow*, *time* as continuum, …) stay on t
 <a id="number-ranges"></a>
 <a id="numeric-ranges"></a>
 <a id="from-to"></a>
-<a id="shared-continuum"></a>
 
-English *from 3 to 5* / *between 3 and 5* names a **band on a line**. Write two number endpoints inside a [phrase fence](joins.md), then a **SHARED continuum** `/ɡ/` that names the line (time, price, measure, …). That `/ɡ/` is the same SHARED slot [comparatives](comparatives.md) use; here it names a **dimension / quantity continuum**, not a ranking of people. The continuum is what makes the fence a range.
+English *from 3 to 5* / *3 through 5* names a **band on a line**. Write the two endpoints with the [hook](hooks.md) **`al`** between them: `A al B`. No join word closes it, and no extra word names the line.
 
-> `zrarel zraval zoel gadaham.`
-> [z-three | z-five | z-in-order | g-duration]
+> `zrarel al zraval.`
+> z-three | through | z-five
 >
-> "from 3 to 5 in time."
+> "From 3 to 5."
 
-All three pieces:
+Between two numbers, *3, including 5* has nothing to include into, so **`al`** reads as *through*: the band from A reaching and including B. This reading needs both endpoints to be the **same kind** of number (both amounts, both ranks, or both labels / times), each with digits. A number with no digits keeps the ordinary hook (`zral al zraval` = *some number of them, including 5*), and so do mixed kinds.
 
-1. Exactly **two** endpoints of the **same kind** of number word (both scalar, both ordinal, or both digit-string / time).
-2. Join **`a`** / **`oe`** / **`ua`** (or **`ar`**; stacked **`oe`** / **`ua`** take no **-r**).
-3. A **SHARED continuum** `/ɡ/` immediately after the join (a lexicon line, or stock **`guruham`** when the line is pure numeric or already clear).
+To count a range of things, put the endpoints on the counted noun, the same way one count sits on it. The noun names the line:
 
-The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). A count on a noun is a `/ɡ/` number, so a counted range closes with `gal`:
-
-> `zodogal grarel graval gal guruham vowogal.`
-> [z-dog | [g-three | g-five | g-and | g-measurement]] | v-walk
+> `zodogal grarel al graval vowogal.`
+> [z-dog | g-three] | through | g-five | v-walk
 >
-> "Between 3 and 5 dogs walk."
+> "Three to five dogs walk."
 
-Join vowels (Beginner already used ranked **`e`** for people; a range uses **sequence** **`oe`** instead):
+> `zagazem grarel al graval.`
+> [z-hour | g-three] | through | g-five
+>
+> "Three to five hours."
 
-| Agazan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`a`** | unordered filled interval; both ends in | *between 3 and 5* (`z+3 z+5 zal gadaham`) | **a** add |
-| **`oe`** | directed path; first → second (spoken order = path, either direction) | *from 3 to 5* (`z+3 z+5 zoel gadaham`); *from 5 to 3* (`z+5 z+3 zoel gadaham`) | **o** one + **e** order: one after another |
-| **`ua`** | complement on the line | *outside 3–5* (`z+3 z+5 zual gadaham`) | **u** undo + **a** add |
+Something after **B** describes **B** alone, and something on the host noun describes the whole range. To grade the range itself, put `/w/` immediately before the hook ([detail on the hook](hooks.md#hook-w)).
 
-**Compare with:** `zazawan zalahen zel gamadam` (*Azawan is more challenging than Alahen*) ranks **people** on a scale. `zrarel zraval zoel gadaham` is a **band** on a continuum. Rank **`e`** puts the first item at the **top**; sequence **`oe`** puts it at the **start**. Place *from a station to a train* is two [locative](relations.md#spatial-path) `/h/` + `/b/` units, not this fence.
+**Exclude an end with `ul`.** *3, except 5* reads as the band that stops short of 5: the hook excludes the endpoint **after** it. The endpoints are a path in spoken order, so to exclude the low end, say it second.
 
-**Not the same job as:** bare **`zrarel zraval zel`** (*prefer 3 over 5*). Without the SHARED continuum, two number conjuncts are an ordinary join.
+| Agazan | Use | English |
+|--------|-----|---------|
+| `zrarel al zraval` | both ends in | *3 to 5* (`[3, 5]`) |
+| `zrarel ul zraval` | 5 left out | *3 up to but not including 5* (`[3, 5)`) |
+| `zraval ul zrarel` | 3 left out | *more than 3, up to 5* (`(3, 5]`) |
+| `zrarel am zraval` | soft ends | *roughly 3 to 5* |
+| `zrarel um zraval` | soft exclusion | *3 up to about 5, not quite 5* |
+| `zrarel ual zraval` | both ends out | *strictly between 3 and 5* (`(3, 5)`) |
+| `zrarel uel zraval` | outside the band | *below 3 or above 5* |
 
-Menu **`o`** / **`ao`** lists discrete values (*3 or 5* / *3 and/or 5*). Equative **`ae`** with numbers is *equal* / *approximately equal* (`zraval zraval zael` / `zrarel zraval zaem`). Three or more number conjuncts under **`a`** are an ordinary list (`zrawol zrarel zralel zal` = *1, 3, and 7*), even with SHARED. Single-item **`zrarel zal`** is *just 3*, not a ray.
+**`ual`** and **`uel`** are the [span hooks](hooks.md#spans), which also work on lines that are not numbers. An endpoint can still be fuzzy on its own (`zrarel al zravam` = *3 to about 5*).
 
-Clock / date ranges: SHARED continuum **`gadaham`** (or a host relation + `/b/`) with digit-string endpoints (`b_15,00 b_16,00 boel gadaham`). Circumstance **`hal`** is a [restrictor](restrictors.md).
+**Compare with:** `zrarel zraval zoel` is *3, then 5*: two values in order, not a band. `zrarel zraval zal` is *3 and 5*. `zazawan zalahen zel gamadam` ranks **people** on a scale. Place *from a station to a train* is two [locative](relations.md#spatial-path) `/h/` + `/b/` units, not this hook.
 
 ### Percent and percentage points {#percent-and-percentage-points}
 
@@ -209,8 +211,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 | *rock* | `aragal` | |
 | *spoon* | `uzubul` | |
 | *meter* | `ezezem` | `ezezel` *set-square* |
-| *time* | `adahal` | |
-| *measurement* | `uruham` | |
+| *hour* | `agazem` | `agazel` *hourglass* |
 | *walk* | `vowogal` | `owogal` *walk* |
 | *see* | `vahahal` | `ahahal` *eye* |
 | *punch* | `vabahel` | `abahel` *punch* |
@@ -256,12 +257,12 @@ z-pill-x | g-25yo
 z-Azawan | [b-meter | g-two] | v-walk
 :::
 
-**5.** *From 3 to 5 in time.*
+**5.** *Three to five hours.*
 
 ::: details Show answer
-`zrarel zraval zoel gadaham.`
+`zagazem grarel al graval.`
 
-[z-three | z-five | z-in-order | g-duration]
+[z-hour | g-three] | through | g-five
 :::
 
 **6.** *Alahen sees 911.*
@@ -282,14 +283,14 @@ z-Alahen | d-_911 | v-see
 z-Alahen | [d-rock | g-five] | v-punch
 :::
 
-**8.** *From 15 to 16 in time.*
+**8.** *From 15 to 16.*
 
 ::: details Show answer
-`z+15 z+16 zoel gadaham.`
+`z+15 al z+16.`
 
-🔊 *zrawoval zrawogul zoel gadaham.*
+🔊 *zrawoval al zrawogul.*
 
-[z-15 | z-16 | z-in-order | g-duration]
+z-15 | through | z-16
 :::
 
 **9.** *On 22 July, Ahaben screams.*
@@ -348,15 +349,13 @@ z-Azawan | [d-spoon | g-one] | v-see
 *Azawan sees one spoon.*
 :::
 
-**5.** `zrawol zrarel zal gadaham.`
+**5.** `zrawol al zrarel.`
 
 ::: details Show answer
 
-🔊 *zrawol zrarel zal gadaham.*
+z-one | through | z-three
 
-[z-one | z-three | z-and | g-duration]
-
-*Between 1 and 3 in time.*
+*From 1 to 3.*
 :::
 
 **6.** `zalahen d_000 vahahal.`
@@ -381,13 +380,13 @@ h-_23,59.about | z-Alahen | v-scream
 *Around 23:59 Alahen screams.*
 :::
 
-**8.** `z+10 z+20 zual guruham.`
+**8.** `z+10 uel z+20.`
 
 ::: details Show answer
 
-🔊 *zrawozol zraduzol zual guruham.*
+🔊 *zrawozol uel zraduzol.*
 
-[z-ten | z-20 | z-everything-but | g-measurement]
+z-ten | outside | z-20
 
 *Outside 10–20.*
 :::
@@ -405,58 +404,63 @@ h-_1,4 | z-Alahen | v-walk
 
 ## Advanced {#advanced}
 
-### Thresholds (single-item ranked)
+### Rays {#rays}
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
-English *less than 5* / *greater than 5* is a **bound**, not a two-endpoint band. When the **only** member of a [rank join](joins.md#rank-joins) fence (**`e`** / **`ue`** / **`oe`** / **`eo`**, and their open / named twins) is a compatible number word, that number is an extremum on the line. SHARED continuum is optional: absent = implicit numeric line; present = that named line (`zraval zel gadaham` = *time \< 5*). Special values such as +∞ use [digitless exponents](numbers.md#digitless-exponents) inside the number word (`grabal`).
+English *5 or more* / *less than 5* is a **ray**: a band with only one end. Write it as a [range](#ranges) whose other end is infinity: **`zrabal`** (+∞) or **`zrubal`** (−∞), the [digitless exponents](numbers.md#digitless-exponents). The same **`al`** / **`ul`** rules apply, so the hook excludes the endpoint after it.
 
-Why **`e`** gives *less than*: `X zel` says X is first / greatest, so everything else on the line is less than X. Likewise `X zuel` says X is last / least, so everything else is greater than X.
-
-Sequence **`oe`** reads the line the other way: `X zoel` says the path **starts** at X, so it is *from X on*. A path includes its starting point (like a [range](#ranges)), so this ray is **inclusive**: `zraval zoel` is *5 or more*.
-
-[Reversed sequence **`eo`**](joins.md#reversed-sequence-eo) runs the same path **down**: `zraval zeol` starts at 5 and goes toward the low end, so it is *5 or fewer* / *at most 5*, again inclusive.
-
-> `zraval zel.`
-> [z-five | z-rank/more]
+> `zraval al zrabal.`
+> z-five | through | z-plus-infinity
 >
-> "less than 5."
+> "5 or more."
+
+> `zrubal ul zraval.`
+> z-minus-infinity | through-excluding | z-five
+>
+> "Less than 5."
 
 | Agazan | Use | English |
 |--------|-----|---------|
-| **`z+5 zel`** | strict less-than bound | *less than 5* (`< 5`) |
-| **`z+5 zem`** | open / approximate less-than | *less than ~5* |
-| **`z+5 zuel`** | strict greater-than bound | *greater than 5* (`> 5`) |
-| **`z+5 zuem`** | open / approximate greater-than | *greater than ~5* |
-| **`z+5 zoel`** | inclusive ray from 5 | *5 or more* / *from 5 on* (`≥ 5`) |
-| **`z+5 zoem`** | open ray from about 5 | *from about 5 on* |
-| **`z+5 zeol`** | inclusive ray down from 5 | *5 or fewer* / *at most 5* (`≤ 5`) |
-| **`z+5 zeom`** | open ray down from about 5 | *up to about 5* |
-| **`z+5 zen`** | named unspecified extremum | *under-fives*-style label |
-| **`z+5 zaen`** | named equal-to band | *equal-to-5* / tie label |
-| **`z+5 zuen`** | named floor band | conventional *greater-than* label |
+| **`zraval al zrabal`** | 5 up to +∞ | *5 or more* (`≥ 5`) |
+| **`zrabal ul zraval`** | +∞ down to 5, 5 left out | *more than 5* (`> 5`) |
+| **`zrubal al zraval`** | −∞ up to 5 | *5 or less* / *at most 5* (`≤ 5`) |
+| **`zrubal ul zraval`** | −∞ up to 5, 5 left out | *less than 5* (`< 5`) |
+| **`zraval am zrabal`** | soft | *about 5 or more* |
 
-Same under `/d/` `/b/` `/ɡ/` (`graval gel` = modifier *\<5*; `d+10 duel` = object *\>10*). **`ae`** single-item with a number is an ordinary tie of one. Boolean single-item (**`zal`** / **`zol`** / …) is *just this value*. Single-item **`zral zel`** (zero-group) is ordinary single-item on plural/unspecified amount; +∞ is **`zrabal`** / **`grabal`**.
+For counts, −∞ reads as *no lower limit*: `zagadalx grubal al graval` is *up to five cats*.
 
-Rank bounds (**`e`** / **`ue`**) are **strict** (`<` / `>`). The sequence rays are **inclusive**: **`oe`** is `≥`, **`eo`** is `≤`.
+Ranks take the first and last place as ends. **`grebal`** is the last place and **`grebul`** the first, so `zredul al zrebal` is *2nd through last*.
 
-Standalone **`e`** + **-r** = unspecified member of the *\< X* ray (`zraval zer` → *some/whatever value \< 5*; under question → *which value \< 5?*). **`ue`** takes no **-r** (stacked forms never do: [joins](joins.md#unspecified-member-r-phrase)).
+Rank joins no longer set bounds: `zraval zel` is *only 5 matters*, and `zraval zoel` is *start with 5*.
 
-**Compare with:** `zrarel zraval zoel gadaham` (*from 3 to 5 in time*) is a two-endpoint range; `zrarel zraval zel` is preference; `zazawan zel` (a person) is *only Azawan matters* / [superlative-with-scale](comparatives.md). A **single-item number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
+### Named and unknown ranges {#named-ranges}
+<a id="half-open-exclude-the-high-end-only"></a>
 
-### Half-open (exclude the high end only) {#half-open-exclude-the-high-end-only}
-
-A [hook](hooks.md) **inside the range** marks an exclusive **upper** bound. Replace the second (high) conjunct with prefix-less **`ul`** + that number. SHARED continuum is required. The low endpoint stays inclusive.
+The range hook takes the other hook endings too.
 
 | Agazan | Use | English |
 |--------|-----|---------|
-| `z+3 z+5 zal guruham` | inclusive both ends | *[3, 5]* |
-| `z+3 ul z+5 zal guruham` | exclusive high | *[3, 5)*: *3 up to but not including 5* |
-| `z+3 ul z+5 zel guruham` | directed exclusive high | *from 3 up to but not including 5* |
+| `z+13 an z+19` | **-n**: a named band | *the teens* |
+| `zrarel ar zraval` | **-r**: some value in the band | *some value from 3 to 5* |
+| `zrarel ur zraval` | **-r**: some value in the band, 5 left out | *some value from 3 up to 5* |
 
-Open **`um`** on the high end = soft / non-exhaustive exclusion of that bound. Other revision vowels (**`al`** / **`el`** / **`ol`**) are ordinary hooks, not range-bound markers.
+> `z+13 an z+19.`
+>
+> 🔊 *zraworel an zrawonal.*
+>
+> NAME[z-13 | through | z-19]
+>
+> "The teens."
 
-Fence **-l** / **-m** / **-n** keep ordinary closed / open / named senses on the range (*exactly this band* / *around this band* / *the teens*-style label). Endpoint [number endings](numbers.md#number-endings) still apply (**-m** ≈ fuzzy that bound).
+With **-r**, the hook stands in for one value you are not naming. Under a [question](questions.md#fill-ask-r) it asks for that value, as `zar` asks *who?*:
+
+> `zazawan dagadalx grarel ar graval vahahal.`
+> z-Azawan | [d-cat-x | g-three] | some.through | g-five | v-see
+>
+> "Azawan sees some number of cats from 3 to 5."
+
+The [span hooks](hooks.md#spans) take **-r** the same way: `zrarel uar zraval` is *some value strictly between 3 and 5*, and `zrarel uer zraval` *some value outside 3–5*.
 
 ### Ordinal generation — digitful exponent on **`#`** / **`#-`**
 <a id="ordinal-generation"></a>
@@ -536,5 +540,5 @@ For a side branch, nest a second anchor: first step to the relative, then from t
 
 - Number-word anatomy (markers, endings, exponents): [numbers.md](numbers.md)
 - Kind morphs (`ROOTlNUM`): [numeric-derivation.md](numeric-derivation.md)
-- Phrase fences behind ranges: [joins.md](joins.md)
+- Hooks behind ranges: [hooks.md](hooks.md#spans)
 - Measured differentials on comparative scales: [comparatives.md](comparatives.md)

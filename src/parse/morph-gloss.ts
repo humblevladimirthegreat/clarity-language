@@ -143,7 +143,6 @@ const JOIN_JOB: Record<string, string> = {
   e: "rank/more",
   ae: "equal-rank",
   oe: "in-order",
-  eo: "in-reverse-order",
   ue: "rank/less",
 };
 
@@ -376,6 +375,8 @@ export type MorphGlossContext = {
   fillAsk?: boolean;
   discourseHook?: boolean;
   extraNounHook?: boolean;
+  /** In-clause hook between two span endpoints (hooks.md § Spans). */
+  spanHook?: boolean;
   restrictorListed?: boolean;
   /** Spoken mention interior (TYPE **o**): gloss the surface, not the lemma. */
   passThrough?: boolean;
@@ -579,7 +580,7 @@ export function quotePayload(payload: string): string {
 const WRITTEN_SPAN: Record<string, string> = { "[": "CITE", "{": "MENTION", "(": "ASIDE", "<": "OPAQUE" };
 
 /** One leaf of the morph line; written spans render as a labeled bracket. */
-const AMOUNT_SCALE_SERIES = new Set(["e", "ue", "ae", "oe", "eo"]);
+const AMOUNT_SCALE_SERIES = new Set(["e", "ue", "ae", "oe"]);
 
 /** Digitless `g+` / `h+` immediately after a rank join ([comparatives § Amount scale](../../docs/grammar/comparatives.md#amount-scale)). */
 function isAmountScale(word: LexWord, prev: LexWord | undefined): boolean {
@@ -989,6 +990,7 @@ function contextFor(
     while (words[i]?.pos === "w") i -= 1;
     const prev = words[i];
     ctx.extraNounHook = next?.pos === "b" && prev?.pos !== "b";
+    if (!ctx.extraNounHook && !ctx.discourseHook && isSpanHook(word, prev, next)) ctx.spanHook = true;
     // `A xam al B`: a hook right after a clause join opens that conjunct (glue). After a stand-in
     // clause (`xual ul …`, nothing clause-like before it) the hook is same-role instead.
     const isXJoin = (w: LexWord | undefined) => w?.pos === "x" && w.family.kind === "joinMarker";
@@ -1106,7 +1108,72 @@ function sensePieces(
   }
 }
 
+const SPAN_ENDPOINT_KIND: Record<string, string> = {
+  "+": "scalar",
+  "-": "scalar",
+  ra: "scalar",
+  ru: "scalar",
+  "#": "rank",
+  "#-": "rank",
+  re: "rank",
+  rue: "rank",
+  _: "label",
+  ro: "label",
+  roe: "label",
+  "#_": "label",
+  ruo: "label",
+};
+
+/** Span endpoint kind: a number with digits, ±∞, or a first / last place (numbers-applied.md § Ranges). */
+function spanEndpointKind(word: LexWord | undefined): string | undefined {
+  if (word?.family.kind !== "number") return undefined;
+  const { stem } = word.family;
+  const kind = SPAN_ENDPOINT_KIND[stem.marker];
+  if (!kind) return undefined;
+  if (stem.groups.length > 0 && !stem.digitlessExp) return kind;
+  if (stem.groups.length === 0 && stem.digitlessExp === "e") return kind;
+  if (stem.groups.length === 0 && stem.digitlessExp === "e-" && kind === "rank") return kind;
+  return undefined;
+}
+
+/**
+ * Span hook (hooks.md § Spans): `al` / `ul` between two same-kind number endpoints,
+ * or a stacked `oe` / `ua` / `ue` hook between two same-role words.
+ */
+export function isSpanHook(word: LexWord, prev: LexWord | undefined, next: LexWord | undefined): boolean {
+  if (word.family.kind !== "hook" || !prev || !next || prev.pos !== next.pos) return false;
+  const vowels = word.family.form.slice(0, -1);
+  if (vowels === "oe" || vowels === "ua" || vowels === "ue") return true;
+  if (vowels !== "a" && vowels !== "u") return false;
+  const kind = spanEndpointKind(prev);
+  return kind !== undefined && kind === spanEndpointKind(next);
+}
+
+const HOOK_SPAN: Record<string, string> = {
+  al: "through",
+  am: "through.approx",
+  an: "through.named",
+  ar: "some.through",
+  ul: "through-excluding",
+  um: "through-excluding.approx",
+  un: "through-excluding.named",
+  ur: "some.through-excluding",
+  oel: "through",
+  oem: "through.approx",
+  oen: "through.named",
+  ual: "strictly-between",
+  uam: "strictly-between.approx",
+  uan: "strictly-between.named",
+  uel: "outside",
+  uem: "outside.approx",
+  uen: "outside.named",
+  oer: "some.through",
+  uar: "some.strictly-between",
+  uer: "some.outside",
+};
+
 function hookLabel(form: string, ctx: MorphGlossContext): string {
+  if (ctx.spanHook) return HOOK_SPAN[form] ?? form;
   // A resume hook (-r) takes no /b/: mid-clause it points back to the landmark (hooks.md § point back).
   if (form.endsWith("r") && !ctx.discourseHook) return HOOK_EXTRA_NOUN[form] ?? form;
   if (ctx.extraNounHook) return HOOK_EXTRA_NOUN[form] ?? form;
@@ -1323,6 +1390,7 @@ function numberLabel(stem: NumberStem, pos: Pos | undefined): string {
       return pos === "x" ? "finally" : "last-place";
     }
     if (stem.marker === "+" && exp === "e") return "plus-infinity";
+    if (stem.marker === "-" && exp === "e") return "minus-infinity";
   }
 
   if (stem.groups.length === 0 && !exp) {

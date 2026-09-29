@@ -72,8 +72,20 @@ describe("morphGlossLine — SHARED only where it can describe the join", () => 
   it("leaves an /h/ after a /ɡ/ join on the verb", () => {
     expectLine("zodogal geredal gamazam gal hahegem vowogal.", "[z-dog | [g-red | g-small | g-and]] | h-intensity | v-walk");
   });
-  it("keeps a range continuum after two number endpoints", () => {
-    expectLine("zodogal grarel graval gal guruham vowogal.", "[z-dog | [g-three | g-five | g-and | g-measurement]] | v-walk");
+  it("reads al / ul between number endpoints as a span", () => {
+    expectLine("zodogal grarel al graval vowogal.", "[z-dog | g-three] | through | g-five | v-walk");
+    expectLine("zrabal ul zraval.", "z-plus-infinity | through-excluding | z-five");
+    expectLine("zrarel ar zraval.", "z-three | some.through | z-five");
+  });
+  it("keeps al literal when an endpoint has no digits or the kinds differ", () => {
+    expectLine("zral al zraval.", "z-more-than-one | including | z-five");
+    expectLine("zrarel al zredul.", "z-three | including | z-2nd");
+  });
+  it("reads stacked in-clause hooks as spans on any line", () => {
+    expectLine("zadahel oel zadahel.", "z-down | through | z-down");
+    expectLine("zrarel ual zraval.", "z-three | strictly-between | z-five");
+    expectLine("zrarel uel zraval.", "z-three | outside | z-five");
+    expectLine("zazawan uar zahaben vezebal.", "z-Azawan | some.strictly-between | z-Ahaben | v-sleep");
   });
 });
 

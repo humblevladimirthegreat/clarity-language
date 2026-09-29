@@ -410,9 +410,6 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     if (sharedRole === "scale" || sharedRole === "equative") {
       return { line: `rank join ${family.series}`, href: "comparatives.html" };
     }
-    if (sharedRole === "continuum") {
-      return { line: `continuum join ${family.series}`, href: "numbers.html#ranges" };
-    }
     return { line: `join ${family.series}`, href: "joins.html" };
   }
   if (family.kind === "hook") {
@@ -498,7 +495,6 @@ function joinLabel(joins: LexWord[], shared: Map<string, SharedRole>): string {
   const role = first ? shared.get(first.raw) : undefined;
   if (role === "scale") return `rank join ${series}`;
   if (role === "equative") return `equative join ${series}`;
-  if (role === "continuum") return `continuum join ${series}`;
   if (role === "distribute") return `distribute join ${series}`;
   return `join ${series}`;
 }

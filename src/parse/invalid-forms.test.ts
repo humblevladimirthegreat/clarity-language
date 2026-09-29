@@ -51,8 +51,8 @@ const ROWS: Row[] = [
   { invalid: "zazawan gewezathal.", rejection: "labelScopeArrow", valid: "zazawan gewezathol bahazal." },
   { invalid: "zodogal vehahel gazavathol.", rejection: "landmarkLateralBound", valid: "zodogal vehahel gazavathol bahazal." },
   { invalid: "zual gagadalx.", rejection: "pluralKindAfterUniversal", valid: "zual gagadal." },
+  { invalid: "zazawan vowogal oer.", rejection: "stackedHookResume", valid: "zrarel oer zraval." },
   { invalid: "zazawan zel h+2 vowogal.", rejection: "rankJoinNumberManner", valid: "zazawan zalahen zel h+ vowogal." },
-  { invalid: "heol vowogal.", rejection: "reversedSequenceSlot", valid: "zagadalx g+5 geol vehahel." },
   {
     invalid: "zazawan vowogal hodogom barl zalahen vezebal.",
     rejection: "standInHost",

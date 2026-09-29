@@ -17,12 +17,13 @@ import { parseWords } from "./word.js";
 
 const POS = ["z", "d", "b", "v", "g", "w", "h", "th", "x", "y"] as const;
 const ENDINGS = ["l", "m", "n"] as const;
-const SERIES = ["a", "o", "e", "u", "ae", "ao", "oe", "eo", "ue", "ua", "uo"];
+const SERIES = ["a", "o", "e", "u", "ae", "ao", "oe", "ue", "ua", "uo"];
 const JOIN_ENDINGS = ["l", "m", "n", "r", "rl", "rm", "rn", "rth"];
 const CONTEXTS: MorphGlossContext[] = [
   {},
   { extraNounHook: true },
   { discourseHook: true },
+  { spanHook: true },
   { restrictorListed: true },
   { fillAsk: true },
   { dependentVerb: true },

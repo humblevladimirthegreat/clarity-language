@@ -684,7 +684,7 @@ Both writings name the **same word**. Choose the surface by one test: **how many
 | [Numeric derivation](numeric-derivation.md#numeric-derivation) / kind morph | **spelled CV** (required) | shorthand after a root does not form a word |
 | Inventory tables | **shorthand** | patterns are easy to scan |
 
-**Side by side:** number words next to each other (a range, a list of values) share one writing. If any of them needs shorthand, write them all in shorthand: `z+3 z+12 zoel gadaham`, not `zrarel z+12 zoel gadaham`.
+**Side by side:** number words next to each other (a range, a list of values) share one writing. If any of them needs shorthand, write them all in shorthand: `z+3 al z+12`, not `zrarel al z+12`.
 
 Speech and writing drills that teach the shorthand itself still show one-digit shorthand.
 

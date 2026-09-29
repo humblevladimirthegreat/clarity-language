@@ -1,6 +1,8 @@
 # Design decisions
 
-Editors only — not linked from grammar pages. Deliberate omissions and settled readings. Do not re-raise these as gaps or inconsistencies; an English job that only these forms would serve is **covered** when the meaning has a natural route.
+Editors only — not linked from grammar pages. This page records design decisions a reader **cannot see** in the grammar docs: deliberate omissions (forms the language chooses not to have), readings settled between two plausible options, and the reason behind a choice that would otherwise look like a gap. Grammar pages present only the current language, so anything they already teach does not belong here; add an entry only when the decision leaves no trace on a teaching page.
+
+Do not re-raise these as gaps or inconsistencies. An English job that only an omitted form would serve is **covered** when the meaning has a natural route.
 
 ## By design
 
@@ -19,27 +21,41 @@ Editors only — not linked from grammar pages. Deliberate omissions and settled
 | D-11 | single-item clause join (`A xul` *not the case that A*, `A xal` *only A happened*) | clause `/x/` joins go between clauses only; deny / focus on the verb or noun (`vowogal vul`, `zazawan zal`); stand-in items (`A xol xal` *optionally A*, `A xam xar`, `A xel xur`, `xual ul A`) — [joins#clause-joins](../grammar/joins.md#clause-joins) | by design | joins.md | — | — |
 | D-12 | bare *must* (obligation with no named sake) | firm command `yel`, or sake prescription `…thel` / `…them` / `…ther` ([sakes#sake-force](../grammar/sakes.md#sake-force)) | by design | sakes.md | — | — |
 
-## Settled decisions on stance time and emotional blame
+## Stance time and emotional blame
 
-- Every stance (`/th/` word, sake on `/ɡ/` / `/w/`, emotion compose) is the speaker's at speech-now. A stance is dated only with the `/th/` *as-of* pair (`thenem` / `thumem` + `/b/`, resume `-r`), which moves every stance in the clause, MAY / DECISION / CAUSE included. `/h/` *as-of* still moves only the event's books.
-- In an emotion-compose clause, a channel + offset after `gobom` dates the **stimulus**; the feeling stays now. No separate stimulus-timing words.
-- AIMED (direction locus `o`) is where the charge goes, never blame. Cause = because pole; fault = pole ending (`theral` fault / `theram` plain cause / `therar` share). Guidance: the pole's `/b/` is an act (`barl` + clause) or a thing, not a bare person. Not parser-enforced: a named `/b/` can be a named event or place.
+- No separate stimulus-timing words: a channel + offset in an emotion-compose clause dates the stimulus, and the `/th/` *as-of* pair dates the stance.
+- AIMED (direction locus `o`) never carries blame; fault lives only on the because-pole ending.
+- The because-pole `/b/` should be an act or a thing, not a bare person. This is guidance, not parser-enforced: a named `/b/` can be a named event or place.
 
-## Settled decisions from the dated-channel review
+## Dated channels
 
-- The offset after a channel dates the **event**, not when the speaker learned of it.
-- A hosted `/b/` after an evidential is read by its filler: a time measure = offset; a person or other noun = source (*per Alahen*, not yet taught).
-- `g-e-` means *just short* (was *imaginary*); *as if* stays on NOTIONAL `ove`.
+- A hosted `/b/` after an evidential is read by its filler: a time measure = offset; a person or other noun = source (*per Alahen*). The source reading is settled but not yet taught.
+- No number form means *imaginary*: *as if* belongs to NOTIONAL `ove`, not to a digitless number.
 
-## Settled decisions carried from the consistency audit
+## Consistency audit
 
-Settled during the consistency audit:
-
-- Hosted `/b/` right after any `/ɡ/`, `/h/`, or `/th/` word is structural; a recipient there is a speaker error.
+- Hosted `/b/` right after any `/ɡ/`, `/h/`, or `/th/` word is structural; a recipient there is a speaker error, not a second reading.
 - `r` + vowel overlap in numbers is accepted.
 - Word edges before vowel-initial words are not fixed.
 - Hook compounds have no mid-word coda.
-- Sentences end in `.`, never `?` or `!`.
-- Short resumes are preferred when unambiguous.
-- `/ɡ/` + **-r** on a noun means *of that kind*.
-- `/v/` + **-r** on a noun means *do the same action again, now involving that entity*.
+
+## Stacked vowels
+
+Closed words (joins, hooks, join-act verbs, emotion loci) stack two of the series vowels (**a** add / **o** one / **e** order / **u** undo), each its own syllable. The six standard stacks:
+
+| Stack | Cue |
+|-------|-----|
+| `ao` | add + one |
+| `ua` | undo + add |
+| `uo` | undo + one |
+| `ae` | add + order |
+| `oe` | one + order |
+| `ue` | undo + order |
+
+- **No exceptions.** No other vowel pairs (`eo`, `oa`, `ea`, …) and no three-vowel stacks are permitted: a reversed or extra pair is too easy to confuse by ear with its standard twin (`eo` vs `oe`). The former reversed-sequence join `eo` was removed for this reason; *at most N* is a [ray](../grammar/numbers-applied.md#rays).
+
+## Ranges, rays, and span hooks
+
+- Ranges use hooks, not joins. Rank and sequence joins (`e` / `ue` / `oe`) with a number have no threshold reading, and there is no SHARED continuum word; don't restore either.
+- `oel` stays although `al` already spans numbers: for other nouns, *A, including B* depends on whether A names a group, which the syntax cannot see.
+- Scope islands do not bind hooks. Whole-span scope comes from `/w/` before the hook or from the host noun.

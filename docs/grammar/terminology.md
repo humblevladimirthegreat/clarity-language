@@ -618,15 +618,21 @@ Derivation `ROOTl-e-` (and quasi-N).
 
 [Numeric derivation](numeric-derivation.md#quasi)
 
-### Range / clock/date range
+### Range / ray
 
-Numeric from–to; clock/date from–to.
+Numeric from–to with a hook between the ends (`al` / `ul`); a ray has ±∞ as one end.
 
-[Numbers in use](numbers-applied.md#ranges), [time](numbers-applied.md#time)
+[Numbers in use](numbers-applied.md#ranges), [rays](numbers-applied.md#rays)
+
+### Span hook
+
+Stacked hook between same-role words on an ordered line: `oel` *through*, `ual` *strictly between*, `uel` *outside*.
+
+[Hooks](hooks.md#spans)
 
 ### Rank join / set join / SHARED
 
-Material after the join closer; **SHARED scale** vs **SHARED continuum**.
+Material after the join closer; **SHARED scale**.
 
 [Joins](joins.md), [comparatives](comparatives.md)
 
@@ -697,11 +703,11 @@ Clause join **-n** (`xan` *and then*).
 
 [Join across roles](join-across-roles.md#sequence)
 
-### SHARED scale / SHARED continuum
+### SHARED scale
 
-After-join `/ɡ/` (quality / continuum) or manner `/h/`: comparatives vs ranges.
+After-join `/ɡ/` (quality) or manner `/h/` in comparatives.
 
-[Comparatives](comparatives.md), [numbers in use](numbers-applied.md#ranges)
+[Comparatives](comparatives.md)
 
 ### Span / span open
 
@@ -709,7 +715,7 @@ Typed cite / aside / mention / opaque fences; spoken opening word.
 
 [Spans](spans.md)
 
-**Compare with:** numeric from–to is a [range](#range-clock-date-range), not a span.
+**Compare with:** numeric from–to is a [range](#range-ray), not a span.
 
 ### Stance
 

@@ -104,7 +104,6 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
     summary: "/ɡ/ join closing the adjective on the noun before it",
   },
   "gJoinClose.JoinG": { anchor: "joins.md#and-lists-a", summary: "/ɡ/ join fence" },
-  "gJoinClose.sharedAfterJoin": { anchor: "numbers-applied.md#ranges", summary: "continuum /ɡ/ after a join of number endpoints" },
 
   "hCoord.hCoordPart": { anchor: "clause.md#adverbs-h", summary: "/h/ phrase parts" },
   "hCoordPart.hUnitRule": { anchor: "clause.md#adverbs-h", summary: "adverb or stance word" },
@@ -338,7 +337,7 @@ export const SAKE_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vo
 };
 
 /** Join fence series vowel (joins.md, comparatives.md). */
-export type JoinSeries = "a" | "o" | "ao" | "u" | "ua" | "uo" | "e" | "ae" | "oe" | "eo" | "ue";
+export type JoinSeries = "a" | "o" | "ao" | "u" | "ua" | "uo" | "e" | "ae" | "oe" | "ue";
 
 export const JOIN_SERIES_CONSTRUCTIONS: Record<JoinSeries, ConstructionEntry> = {
   a: { anchor: "joins.md#and-lists-a", summary: "and" },
@@ -350,7 +349,6 @@ export const JOIN_SERIES_CONSTRUCTIONS: Record<JoinSeries, ConstructionEntry> = 
   e: { anchor: "joins.md#rank-e", summary: "rank" },
   ae: { anchor: "comparatives.md#equatives-ae-shared-scale", summary: "equal rank" },
   oe: { anchor: "joins.md#sequence-oe", summary: "sequence (first = start)" },
-  eo: { anchor: "joins.md#reversed-sequence-eo", summary: "reversed sequence (first = end)" },
   ue: { anchor: "joins.md#invert-ua-uo-ue", summary: "rank reversal" },
 };
 
@@ -370,7 +368,7 @@ export const POLAR_CONSTRUCTIONS = {
 } satisfies Record<string, ConstructionEntry>;
 
 /** Polar series → {@link POLAR_CONSTRUCTIONS} key. */
-export const POLAR_GROUP: Record<Exclude<JoinSeries, Vowel | "eo">, keyof typeof POLAR_CONSTRUCTIONS> = {
+export const POLAR_GROUP: Record<Exclude<JoinSeries, Vowel>, keyof typeof POLAR_CONSTRUCTIONS> = {
   ae: "starter",
   ue: "starter",
   ao: "starter",
@@ -389,7 +387,7 @@ export const RESTRICTOR_CONSTRUCTIONS = {
 } satisfies Record<string, ConstructionEntry>;
 
 /** Restrictor series → {@link RESTRICTOR_CONSTRUCTIONS} key. */
-export const RESTRICTOR_GROUP: Record<Exclude<JoinSeries, "eo">, keyof typeof RESTRICTOR_CONSTRUCTIONS> = {
+export const RESTRICTOR_GROUP: Record<JoinSeries, keyof typeof RESTRICTOR_CONSTRUCTIONS> = {
   a: "onlyWhen",
   ua: "always",
   u: "sometimes",
@@ -538,8 +536,8 @@ export const REJECTIONS = {
   labelScopeSlot: { anchor: "predication.md#label-scope", summary: "label scope goes on /ɡ/, /z/, /d/, /b/, /v/, or /h/ only" },
   labelScopeArrow: { anchor: "roles.md#landmark-facing", summary: "on a direction root the th seam takes only o (the landmark's own facing)" },
   pluralKindAfterUniversal: { anchor: "joins.md#universals-domains-generics", summary: "the kind word after ua / uo takes no -x" },
+  stackedHookResume: { anchor: "hooks.md#spans", summary: "stacked hook -r (oer / uar / uer) needs same-role words on both sides" },
   rankJoinNumberManner: { anchor: "comparatives.md#manner-scale", summary: "the /h/ after a rank join is a manner word; the only number there is digitless h+ (how often)" },
-  reversedSequenceSlot: { anchor: "joins.md#reversed-sequence-eo", summary: "eo is a phrase join only (/z/ /d/ /b/ /ɡ/)" },
   standInHost: { anchor: "dependents.md#dependent-clauses", summary: "a hosted stand-in is barl after a listed pole" },
   standInHostUndo: { anchor: "dependents.md#stand-in", summary: "burl follows only the so-that pole holalam or the if pole thadorom" },
   poleStack: { anchor: "causation.md#only-because", summary: "pole stacks are theberom thurugum and hezebam thadorom" },

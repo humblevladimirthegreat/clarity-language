@@ -109,15 +109,15 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 ### *Most* {#most}
 
-**Needs:** [Percent](numbers-applied.md#percent-and-percentage-points) · [Thresholds](numbers-applied.md#numeric-thresholds)
+**Needs:** [Percent](numbers-applied.md#percent-and-percentage-points) · [Ranges](numbers-applied.md#ranges)
 
-*Most of the cats* means *more than half*. Write **`g+50%`** and close it as a greater-than [threshold](numbers-applied.md#numeric-thresholds) with **`guel`**.
+*Most of the cats* means *more than half*: the band from all of them down to half, with half left out. Write **`g+100%`**, then **`ul`**, then **`g+50%`**. The hook excludes the endpoint after it.
 
-> `zagadalx g+50% guel vehahel.`
+> `zagadalx g+100% ul g+50% vehahel.`
 >
-> 🔊 *zagadalx gravazoyol guel vehahel.*
+> 🔊 *zagadalx grawozozoyol ul gravazoyol vehahel.*
 >
-> [z-cat-x | [g-50yo | g-rank/less]] | v-sit
+> [z-cat-x | g-100yo] | through-excluding | g-50yo | v-sit
 >
 > "Most of the cats sit."
 
@@ -166,21 +166,20 @@ A bare `/z/` (or other freestanding) **`…yo`** percent with no named whole is 
 ### Unspecified value in the range (**-r**)
 <a id="unspecified-value-in-the-range--r"></a>
 
-**Needs:** [Ranges](numbers-applied.md#ranges) · [Unspecified member](joins.md#unspecified-member-r)
+**Needs:** [Ranges](numbers-applied.md#ranges) · [Named and unknown ranges](numbers-applied.md#named-ranges)
 
-Fence **-r** on a number-range shape (still with SHARED continuum) names an **unspecified member of the range**.
+A range hook with **-r** names **one value in the band** without saying which.
 
 | Agazan | Use | English |
 |--------|-----|---------|
-| `z+3 z+5 zar guruham` | unspecified member of the inclusive band | *some value in [3, 5]* |
-| `z+3 ul z+5 zar guruham` | unspecified member of the exclusive-high band | *some value in [3, 5)* |
-| `z+3 z+5 zor guruham` | free-choice | *any value in [3, 5]* |
-| `z+3 z+5 zer guruham` | whatever-by-rank | *whatever-by-rank in [3, 5]* |
-| `z+3 z+5 zur guruham` | other-than the range | *some value other than (in) [3, 5]* |
+| `z+3 ar z+5` | some value in the inclusive band | *some value from 3 to 5* |
+| `z+3 ur z+5` | some value in the band, 5 left out | *some value from 3 up to 5* |
+| `zraval ar zrabal` | some value on the ray | *some value of 5 or more* |
+| `z+3 uer z+5` | some value outside the band | *some value below 3 or above 5* |
 
-Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which value in 3–5?*). Same under `/d/` `/b/` `/ɡ/` as the slot needs (`grarel graval gal gadaham` = modifier *times 3–5*; `d+10 ul d+20 dar guruham` = object *some value in [10, 20)*).
+Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which value from 3 to 5?*). The same shape works under `/d/` `/b/` `/ɡ/` as the slot needs (`d+10 ur d+20` = object *some value from 10 up to 20*).
 
-**Not the same job as:** content-word resume **-r**, and discrete *something among two listed values*.
+**Not the same job as:** the resume hooks `ar` / `ur` with nothing on the right (*in there* / *from there*), and discrete *something among two listed values* (`zrarel zraval zar`).
 
 ## Units and dates {#units-dates}
 

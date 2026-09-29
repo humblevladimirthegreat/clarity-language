@@ -598,7 +598,7 @@ In reported speech, the speaker is still whoever says the whole sentence. After 
 
 ### Point back (`or` / `ar` / `ur` / `er`) {#hook-resume}
 
-A hook with **-r** points back, the way [resume **-r**](pronouns.md#resume-r) does on a noun. It takes no noun to its right. Only the plain vowels take **-r**: `ar`, `er`, `or`, `ur`.
+A hook with **-r** points back, the way [resume **-r**](pronouns.md#resume-r) does on a noun. It takes no noun to its right. Only the plain vowels point back: `ar`, `er`, `or`, `ur`. (A [span hook](#spans) with **-r** has words on both sides and means something else.)
 
 After the verb, a resume hook points back to a landmark already in play. You do not repeat the `/b/` word.
 
@@ -731,6 +731,50 @@ Extra-noun: `/b/` still sits immediately after the hook. A later `/ɡ/` still de
 > "A dog sleeps, never in a house."
 
 Discourse glue uses the same window: `welavam al zazawan vowogal` is *Additionally, very much so, Azawan walks.* After the hook, next `/b/` still means extra-noun, not glue.
+
+### Spans (`oel` / `ual` / `uel`) {#spans}
+
+When the items sit on a line with an order (people in a queue, days, chapters, numbers), English *A through B* names a **span**: A, B, and everything between. Put a stacked hook between two words in the same role: `A HOOK B`. Between same-role words these hooks name only spans; with `/b/` on the right and no `/b/` on the left, they stay [extra-noun hooks](#extra-noun) (*toward*, *out of*, *against*).
+
+> `zazawan oel zahaben vowogal.`
+>
+> z-Azawan | through | z-Ahaben | v-walk
+>
+> "Everyone from Azawan through Ahaben walks."
+
+| Agazan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`oel`** | A, B, and everything between | *A through B* | **oe** ≈ one after another, in order |
+| **`ual`** | only what lies between | *strictly between A and B* | **ua** ≈ take away both ends |
+| **`uel`** | only what lies outside | *outside A–B* | **ue** ≈ undo the ordered stretch |
+
+The endpoints are a path in spoken order. Endings work as on other hooks: **-m** makes the ends soft (*roughly A through B*), and **-n** names the span as a whole. **-r** stands in for one member you are not naming, and under a [question](questions.md#fill-ask-r) it asks which one:
+
+> `zazawan uar zahaben vezebal.`
+>
+> z-Azawan | some.strictly-between | z-Ahaben | v-sleep
+>
+> "Someone between Azawan and Ahaben sleeps."
+
+A span **-r** always has a word on each side; with nothing on the right, `ar` / `ur` still [point back](#hook-resume). Stacked hooks take **-r** only in a span.
+
+> `zazawan ual zahaben vezebal.`
+>
+> z-Azawan | strictly-between | z-Ahaben | v-sleep
+>
+> "Everyone between Azawan and Ahaben sleeps."
+
+Between two numbers with digits, plain **`al`** and **`ul`** also make a span, because *3, including 5* has nothing to include into: [ranges](numbers-applied.md#ranges).
+
+Scope stays flat. Something right after B describes B alone. `/w/` immediately before the hook grades the span itself:
+
+> `zazawan wazebam oel zahaben vowogal.`
+>
+> z-Azawan | [w-amazement | through] | z-Ahaben | v-walk
+>
+> "Amazingly, everyone from Azawan through Ahaben walks."
+
+**Compare with:** `zazawan zahaben zal` is *Azawan and Ahaben*, the two ends only. `zazawan zahaben zoel` is *Azawan, then Ahaben*, an order with nothing between. Spatial *between a train and a station* is a [relation](relations.md#spatial-path), not a span.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>

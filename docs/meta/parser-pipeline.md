@@ -64,7 +64,7 @@ Agazan text
 ┌──────────────────────────────────────┐
 │  resolve() — discourse sidecar       │
 │  -r anaphors, fill-ask vs yes/no     │
-│  SHARED /ɡ/ or /h/ scale vs continuum  │
+│  SHARED /ɡ/ or /h/ scale vs ordinary   │
 └──────────────────────────────────────┘
     │
     ▼
@@ -167,11 +167,11 @@ Recovery is off. Illegal left fences and binderless islands throw `SentenceParse
 | Number **-r** / `g=+` | Most recent number with the same marker identity ([numbers.md](../grammar/numbers.md#number-endings)) |
 | Role **-r** | This instance of the matching event’s role (doer / place / undergoer / extra `/b/` party); most recent verb / event noun / relation / role compound with that ROOT. Non-resume is the lexical kind (*teacher* vs *the one teaching*) ([roles.md](../grammar/roles.md)) |
 | Join **-r** under `yol` / `yom` | Fill-ask gaps in spoken order; none → yes/no ([questions.md](../grammar/questions.md)) |
-| SHARED `/ɡ/` or `/h/` after a join | `scale` / `equative` / `distribute` / `collective` / `continuum` / `kind` / `ordinary` from join series + conjunct kinds (`/h/` is manner scale under rank / `ae`) |
+| SHARED `/ɡ/` or `/h/` after a join | `scale` / `equative` / `distribute` / `collective` / `kind` / `ordinary` from join series + conjunct kinds (`/h/` is manner scale under rank / `ae`) |
 
 Skipped as anaphors: join **-r** (ask / unspecified-member), restrictors, values / ability ending channels. Dangling resumes are recorded with no `antecedent` — they do not fail the parse.
 
-SHARED classification is **structural** (join vowel + whether conjuncts are number words). The lexicon CSV has no gradable / continuum column yet.
+SHARED classification is **structural** (join vowel + conjunct kinds). The lexicon CSV has no gradable column yet. Number ranges are hooks, not joins: the span reading (`isSpanHook`) is decided in the morph gloss from the endpoint number kinds.
 
 ## Custom code budget
 
@@ -236,7 +236,7 @@ A production **parse** bundle is **not wired yet** (`build:lexicon-web` only bun
 **Not yet**
 
 - Browser bundle of the parse pipeline.
-- Lexicon column for gradable / continuum adjectives (SHARED `scale` vs ordinary `/ɡ/` is join-driven for now).
+- Lexicon column for gradable adjectives (SHARED `scale` vs ordinary `/ɡ/` is join-driven for now).
 - Speech span anaphors (`daxur`) as NP-slot tokens — Chevrotain still treats all spoken span opens as fence openers; writing `d[=]` resolves.
 - Join-arity inventory checks beyond fence shape.
 - Multi-turn discourse outside one `parse(text)` call.

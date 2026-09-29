@@ -62,8 +62,7 @@ const NO_PLURAL_POS = new Set(["w", "h", "th", "x"]);
 const SAKE_POS = new Set(["g", "th", "w"]);
 /** Label scope goes on content slots (predication.md#label-scope). */
 const SCOPE_POS = new Set(["g", "z", "d", "b", "v", "h"]);
-const RANK_SERIES = new Set(["e", "oe", "eo", "ue", "ae"]);
-const PHRASE_POS = new Set(["z", "d", "b", "g"]);
+const RANK_SERIES = new Set(["e", "oe", "ue", "ae"]);
 const KIND_SERIES = new Set(["ua", "uo"]);
 
 function series(word: LexWord | undefined): string | undefined {
@@ -156,7 +155,23 @@ export function enforceTokens(tokens: IToken[], tables: ClassifyTables): void {
     if (!payload || !isLexWordPayload(payload)) return;
     enforceWord(payload, tables);
     enforceRespectivelyToken(payload, tokens[i + 1]);
+    enforceStackedHookR(payload, tokens, i);
   });
+}
+
+function tokenWord(token: IToken | undefined): LexWord | undefined {
+  const payload = token?.payload as TokenPayload | undefined;
+  return payload && isLexWordPayload(payload) ? payload : undefined;
+}
+
+/** Stacked hook **-r** (`oer` / `uar` / `uer`) is only a span member between same-role words (hooks.md § Spans). */
+function enforceStackedHookR(word: LexWord, tokens: IToken[], i: number): void {
+  if (word.family.kind !== "hook" || word.ending !== "r" || word.family.form.length < 3) return;
+  let j = i - 1;
+  while (tokenWord(tokens[j])?.pos === "w") j -= 1;
+  const prev = tokenWord(tokens[j]);
+  const next = tokenWord(tokens[i + 1]);
+  if (!prev?.pos || prev.pos !== next?.pos) throw new ConstructionError("stackedHookResume", word.raw);
 }
 
 function isRespectively(word: LexWord): boolean {
@@ -200,9 +215,6 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
     throw new ConstructionError("pluralOnPos", word.raw);
   }
   const family = word.family;
-  if (family.kind === "joinMarker" && family.series === "eo" && !(word.pos && PHRASE_POS.has(word.pos))) {
-    throw new ConstructionError("reversedSequenceSlot", word.raw);
-  }
   if (family.kind === "x" && family.xFamily === "sake") {
     if (word.pos && !SAKE_POS.has(word.pos)) throw new ConstructionError("sakeSlot", word.raw);
     if (family.horizon && (family.stanceVowel === "e" || word.ending === "n")) {

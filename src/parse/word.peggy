@@ -528,7 +528,7 @@ PoslessNumberStem
       return stem;
     }
 
-// ── Hooks (prefix-less; ending required; -r only on a simplex vowel; no -x) ────────────────────────
+// ── Hooks (prefix-less; ending required; -r on a simplex vowel or a span hook; no -x) ────────────────────────
 
 hook
   = form:HookForm WordEnd {
@@ -540,7 +540,7 @@ hook
 
 HookForm
   = ("ao" / "ae" / "oe" / "ua" / "uo" / "ue" / [aeou]) [lmn] { return text(); }
-  / [aeou] "r" { return text(); }
+  / ("oe" / "ua" / "ue" / [aeou]) "r" { return text(); }
 
 // ── Prefixed words (PoS + body) ─────────────────────────────────────────────
 
@@ -742,7 +742,7 @@ StandInCoda
   = "rl" / "rm" / "rn" / "rth"
 
 JoinSeries
-  = "ao" / "ua" / "uo" / "ae" / "oe" / "eo" / "ue" / "a" / "e" / "o" / "u"
+  = "ao" / "ua" / "uo" / "ae" / "oe" / "ue" / "a" / "e" / "o" / "u"
 
 // ── Plain content / foreign ─────────────────────────────────────────────────
 

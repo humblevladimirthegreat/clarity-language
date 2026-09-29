@@ -301,8 +301,11 @@ describe("parse — /ɡ/ join fences", () => {
     assert.deepEqual(gCoordOf("zazawan godogal gul."), [{ items: ["godogal"], join: "gul", shared: [] }]);
   });
 
-  it("keeps the join and shared word after /ɡ/ items (g+3 g+5 gal gadaham)", () => {
-    assert.deepEqual(gCoordOf("g+3 g+5 gal gadaham."), [{ items: ["g+3", "g+5"], join: "gal", shared: ["gadaham"] }]);
+  it("starts a new /ɡ/ part after a closed /ɡ/ join (g+3 g+5 gal gadaham)", () => {
+    assert.deepEqual(gCoordOf("g+3 g+5 gal gadaham."), [
+      { items: ["g+3", "g+5"], join: "gal", shared: [] },
+      { items: ["gadaham"], join: undefined, shared: [] },
+    ]);
   });
 
   it("keeps an attributive list with an island on the noun", () => {

@@ -10,9 +10,8 @@ use [skip-cd] for amplify to not deploy.
 
 Prosody
 -remove & as punctuation?
--fix disrepancies in agents.md
 -confirm we still have chats after rebuild
--consider removing some emotion words from lexicon
+-consider removing happy/sad from lexicon after determining how to talk about other people's stances
 -expressiveness review
 -grammar simplification pass: could we remove special overlay forms and re-use existing grammar? 
 -consider Promoting common non-nouns and compound-word parts to be three letter. 

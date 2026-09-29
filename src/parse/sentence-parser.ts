@@ -110,16 +110,10 @@ function isAsOfWToken(token: IToken): boolean {
 }
 
 const SCALE_SERIES = new Set(["e", "ue", "ae", "oe"]);
-const RANGE_SERIES = new Set(["a", "oe", "ua"]);
 
 function joinSeries(token: IToken): string {
   const family = (token.payload as LexWord | undefined)?.family;
   return family?.kind === "joinMarker" ? family.series : "";
-}
-
-function isNumberToken(token: IToken): boolean {
-  const word = token.payload as LexWord | undefined;
-  return token.tokenType === G && (word?.family.kind === "number" || word?.reading === "number");
 }
 
 function laAfterW(parser: AgazanSentenceParser, from = 1): number {
@@ -630,22 +624,9 @@ class AgazanSentenceParser extends CstParser {
   });
 
   public gJoinClose = this.RULE("gJoinClose", () => {
+    // Nothing modifies a list of adjectives: a following /ɡ/ is its own unit.
     this.CONSUME(JoinG);
-    // Nothing modifies a list of adjectives; the one SHARED /ɡ/ here is a range's continuum (numbers-applied.md § Ranges).
-    this.OPTION({
-      GATE: () => this.LA(laAfterW(this)).tokenType === G && this.rangeJoinBehind(),
-      DEF: () => {
-        this.SUBRULE(this.sharedAfterJoin);
-      },
-    });
   });
-
-  /** The join just consumed closes two number endpoints with `a` / `oe` / `ua`. */
-  private rangeJoinBehind(): boolean {
-    return (
-      RANGE_SERIES.has(joinSeries(this.LA(0))) && isNumberToken(this.LA(-1)) && isNumberToken(this.LA(-2))
-    );
-  }
 
   public hCoord = this.RULE("hCoord", () => {
     this.AT_LEAST_ONE(() => {

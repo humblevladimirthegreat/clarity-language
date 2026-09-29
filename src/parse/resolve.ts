@@ -26,8 +26,7 @@ import type {
 
 const VOWELS = new Set(["a", "e", "o", "u"]);
 
-const CONTINUUM_SERIES = new Set(["a", "oe", "eo"]);
-const SCALE_SERIES = new Set(["e", "oe", "eo", "ue"]);
+const SCALE_SERIES = new Set(["e", "oe", "ue"]);
 const KIND_SERIES = new Set(["ua", "uo"]);
 const ROLE_FRAME_POS = new Set(["z", "d", "b", "v", "g", "h", "th"]);
 
@@ -140,7 +139,6 @@ function isHUnit(shared: CoordShared): shared is HUnit {
 
 function classifySharedRole(join: LexWord, numberCount: number, shared: GPackage | HUnit): SharedRole {
   const series = join.family.kind === "joinMarker" ? join.family.series : "";
-  if (isGPackage(shared) && numberCount >= 2 && CONTINUUM_SERIES.has(series)) return "continuum";
   if (SCALE_SERIES.has(series)) return "scale";
   if (series === "ae") return "equative";
   if (KIND_SERIES.has(series)) return "kind";

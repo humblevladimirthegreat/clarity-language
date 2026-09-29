@@ -500,28 +500,9 @@ Rank **`e`** puts the first item at the **top** (*A matters more than B*). When 
 | Single-item | `X zoel` *start with X* / *from X on* | `X zoem` *maybe start with X* |
 | Standalone | `zoel` *in no particular order* / *any order* | `zoem` *not sure where to start* |
 
-A sequence does not say which item is better. With two number endpoints and a SHARED continuum it is a [range](numbers-applied.md#ranges) (`zrarel zraval zoel gadaham` = *from 3 to 5*); a single number is an inclusive [ray](numbers-applied.md#numeric-thresholds) (`zraval zoel` = *5 or more*). With a SHARED quality it sorts the list from low to high. (cue: **o** ≈ one + **e** ≈ order — one after another)
+A sequence does not say which item is better. With a SHARED quality it sorts the list from low to high. Two numbers in a sequence are two values in order (`zrarel zraval zoel` = *3, then 5*); a band from 3 to 5 is a [range](numbers-applied.md#ranges) (`zrarel al zraval`). (cue: **o** ≈ one + **e** ≈ order — one after another)
 
 **Compare with:** clause *and then* between sentences is [sequence **`xan`**](join-across-roles.md#sequence). **`zoel`** orders nouns inside one slot.
-
-### Reversed sequence (**`eo`**) {#reversed-sequence-eo}
-
-**`oe`** reads its list from the **start**. **`eo`** swaps the two letters and reads from the **end**: the last item listed comes first, as in a countdown.
-
-> `zazawan zalahen zahaben zeol.`
->
-> [z-Azawan | z-Alahen | z-Ahaben | z-in-reverse-order]
->
-> "Ahaben, then Alahen, then Azawan."
-
-Its main use is with one number. `zraval zoel` runs **up** from 5 (*5 or more*). `zraval zeol` runs **down** from 5 (*5 or fewer*): an inclusive [ray](numbers-applied.md#numeric-thresholds) the other way.
-
-| Arity | Closed **-l** | Open **-m** |
-|-------|---------------|-------------|
-| Multi (2+) | `A B zeol` *B, then A* | `A B zeom` *roughly B, then A* |
-| Single-item | `X zeol` *up to X* / *X or less* | `X zeom` *up to about X* |
-
-**`eo`** is a phrase join only: `/z/` `/d/` `/b/` `/ɡ/`. (cue: **e** ≈ order + **o** ≈ one: the letters of **`oe`** in reverse)
 
 ### Respectively (`wazagum`) {#respectively}
 
@@ -749,11 +730,10 @@ When an adjective or extra noun is meant for the **whole list** (*both challengi
 | **e** / **ue** on NP | [comparison scale](comparatives.md) (`/ɡ/` or `/h/`) |
 | **oe** on NP | sorted low to high (`/ɡ/` or `/h/`) |
 | **ua** / **uo** | kind / domain for universals |
-| **a** / **oe** / **ua** + two number endpoints | [range](numbers-applied.md#ranges) with continuum `/ɡ/` |
 
 Further matching-role heads belong *before* the join.
 
-SHARED material has to be able to describe what the join lists. After a noun join, a `/ɡ/` describes every noun, and an `/h/` is only a [scale](comparatives.md#manner-scale) after rank **`e`** / **`ue`**, equative **`ae`**, or sequence **`oe`**. After a verb join, only an `/h/` is SHARED. Nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item; the one exception is a range’s continuum after two number endpoints. Any other `/h/` after a join is an ordinary adverb on the verb:
+SHARED material has to be able to describe what the join lists. After a noun join, a `/ɡ/` describes every noun, and an `/h/` is only a [scale](comparatives.md#manner-scale) after rank **`e`** / **`ue`**, equative **`ae`**, or sequence **`oe`**. After a verb join, only an `/h/` is SHARED. Nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item. Any other `/h/` after a join is an ordinary adverb on the verb:
 
 > `zazawan zalahen zal hahegem vowogal.`
 >
@@ -870,12 +850,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-Azawan | z-Alahen | z-in-order] | v-kiss
 :::
 
-**10.** *Ahaben kisses first, then Alahen, then Azawan.* (list Azawan first)
+**10.** *Ahaben kisses first, then Alahen, then Azawan.*
 
 ::: details Show answer
-`zazawan zalahen zahaben zeol vegezal.`
+`zahaben zalahen zazawan zoel vegezal.`
 
-[z-Azawan | z-Alahen | z-Ahaben | z-in-reverse-order] | v-kiss
+[z-Ahaben | z-Alahen | z-Azawan | z-in-order] | v-kiss
 :::
 
 **11.** *Azawan and Alahen see the ring and the veil, respectively.*

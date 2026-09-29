@@ -807,7 +807,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 
 ## See also
 
-- Fence shape, single-item / standalone, SHARED scale / continuum: [joins.md](joins.md)
+- Fence shape, single-item / standalone, SHARED scale: [joins.md](joins.md)
 - Manner adverbs: [clause.md](clause.md#adverbs-h)
 - Kind and identity (*is a dog*, *is Azawan*): [predication.md](predication.md)
 - Measure NPs: [numbers-applied.md](numbers-applied.md#measure-phrases)

@@ -387,7 +387,7 @@ For *red books*, put **-x** on the **noun**; keep color and trait singular on `/
 
 **Related form:** who is in the set uses **-x** on the noun.
 
-**Compare with:** a scale or continuum in [comparatives](comparatives.md) and [ranges](numbers-applied.md#ranges) is one line, so that adjective is singular.
+**Compare with:** a scale in [comparatives](comparatives.md) is one line, so that adjective is singular.
 
 ### Vocatives (`/y/`)
 

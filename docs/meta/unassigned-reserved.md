@@ -105,6 +105,13 @@ Source: [join-across-roles.md](../grammar/join-across-roles.md#stance-joins)
 - **`/th/`…-n** — reserved; no join-relation or sequence reading
 - Rank series (`thel` / `thael` / `thoel` / `thuel`) on stance words — spellings in the table, no worked reading yet
 
+## Hooks — in-clause
+
+Source: [hooks.md](../grammar/hooks.md#spans)
+
+- In-clause **`aol`** / **`ael`** / **`uol`** between same-role words — no reading (extra-noun and discourse uses unaffected)
+- Stacked hook **-r** outside a span (no same-role word on both sides) — not permitted
+
 ## Role compounds
 
 Source: [roles.md](../grammar/roles.md), [x-compounds.md](../grammar/x-compounds.md)
