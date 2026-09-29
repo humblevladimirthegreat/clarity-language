@@ -598,7 +598,7 @@ SpanOpen
 
 // Optional ability tail (`x` + stance vowel) on `/ɡ/` only: *fit to be* that role (intention.md § Ability).
 RoleCompound
-  = roleV:("a" / "e" / "u" / "o") "x" root:ContentRoot ability:("x" v:[aeou] { return v; })? ending:Ending plural:PluralSuffix? WordEnd {
+  = roleV:("ae" / "ao" / "oe" / "ua" / "ue" / "uo" / "a" / "e" / "u" / "o") "x" root:ContentRoot ability:("x" v:[aeou] { return v; })? ending:Ending plural:PluralSuffix? WordEnd {
       const fields = {
         leftRoots: [],
         roleVowel: roleV,

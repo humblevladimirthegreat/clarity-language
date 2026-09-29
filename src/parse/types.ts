@@ -1,5 +1,8 @@
 import type { OverlayKind } from "../lexicon-search.js";
 
+/** Role compound vowel (roles.md): simplex or stacked. */
+export type RoleVowel = "a" | "e" | "u" | "o" | "ae" | "ao" | "oe" | "ua" | "ue" | "uo";
+
 /** Part-of-speech prefix letters (role stamps). */
 export type Pos = "z" | "d" | "b" | "v" | "g" | "w" | "h" | "th" | "x" | "y";
 
@@ -74,7 +77,7 @@ export type MorphWordFamily =
       /** Span EDGE vowel (span open). */
       edgeVowel?: "a" | "e" | "o" | "u";
       /** Role vowel (role compound). */
-      roleVowel?: "a" | "e" | "u" | "o";
+      roleVowel?: RoleVowel;
       /** Values / label-scope / ability stance vowel (also role + ability on `/ɡ/`). */
       stanceVowel?: "a" | "e" | "o" | "u";
       /** Emotion compose: sake horizon letter moved mid-word (sakes.md#emotion-compose). */
@@ -366,8 +369,8 @@ export type AnaphorBind = {
   match?: ContentMatch;
   /** Span TYPE vowel (cite / aside / mention / opaque). */
   typeVowel?: "a" | "e" | "o" | "u";
-  /** Role compound vowel (agent / place / patient / recipient). */
-  roleVowel?: "a" | "e" | "u" | "o";
+  /** Role compound vowel (roles.md#role-compounds). */
+  roleVowel?: RoleVowel;
   /** Absent when no prior match. */
   antecedent?: LexWord;
 };

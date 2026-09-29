@@ -119,7 +119,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zaxezeber", "z-agent-x-speech");
     expectLine("zaxavadal", "z-agent-x-fight");
     expectLine("zaxavadam", "z-agent-x-struggle");
-    expectLine("zexezebal", "z-place-x-sleep");
+    expectLine("zexezebal", "z-scene-x-sleep");
     expectLine("zoxezebel", "z-recipient-x-speech");
     expectLine("thexal", "th-ASIDE.multi[]");
     expectLine("xuxul", "x-span-close");

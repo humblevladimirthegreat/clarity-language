@@ -67,3 +67,8 @@ Closed words (joins, hooks, join-act verbs, emotion loci) stack two of the serie
 - No `el` / `em` / `er` possession series by time horizon (`rejected/el-em-er-possession.md`).
 - Discourse **`aol …`** / **`aom …`** = *For example* (an instance of the prior claim; `al …` is a sibling point).
 - Considered and left unassigned: stacked point-back **-r** (`aor` *on it*; a hook + resumed `/b/` already says it), same-role `aol` *namely* (`el` or an aside covers it), discourse *Alternatively* (a sentence-initial `xom` / `xaom` join) and *Apart from that* (`al …` / `ur …`). Same-role `ao` / `uo` / `ae` and discourse `oe` / `ua` / `uo` / `ue` have no pressing job.
+
+## Role compound vowels
+
+- Role vowel **`e`** is the **scene** (place or time) of an event, not place only.
+- Stacked role vowels: **`ae`** instrument, **`oe`** goal, **`ua`** source, **`uo`** path, each echoing its extra-noun hook (`ael` / `oel` / `ual` / `uol`). **`ao`** = result (a made thing, apart from the changed undergoer `u`), **`ue`** = the one who bears the event's cost (apart from the acted-on `u`). Rejected for these stacks: co-agent (rare as a kind; join-relation *with* covers it), opponent (usually `u`), beneficiary (overlaps recipient `o`; *for* is the hook `el`).

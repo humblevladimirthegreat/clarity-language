@@ -16,7 +16,7 @@
 import { overlayConstructionId } from "./construction-trace.js";
 import type { TokenBranch } from "./tokens.js";
 import type { ExtraNounHook } from "./hook-compounds.js";
-import type { AnaphorKind, Ending, LexReading, MorphWordFamily, Pos, SpanCloseFlavor, XFamily } from "./types.js";
+import type { AnaphorKind, Ending, LexReading, MorphWordFamily, Pos, RoleVowel, SpanCloseFlavor, XFamily } from "./types.js";
 
 export type ConstructionEntry = { anchor: string; summary: string };
 
@@ -471,11 +471,17 @@ export const SPAN_FEATURE_CONSTRUCTIONS: Record<
 };
 
 /** Role compounds: role vowel and the -r instance (roles.md). */
-export const ROLE_FEATURE_CONSTRUCTIONS: Record<`vowel.${Vowel}` | "instance", ConstructionEntry> = {
+export const ROLE_FEATURE_CONSTRUCTIONS: Record<`vowel.${RoleVowel}` | "instance", ConstructionEntry> = {
   "vowel.a": { anchor: "roles.md#role-compounds", summary: "agent a" },
   "vowel.u": { anchor: "roles.md#the-undergoer-u", summary: "patient u" },
-  "vowel.e": { anchor: "roles.md#the-place-e", summary: "place e" },
+  "vowel.e": { anchor: "roles.md#the-scene-e", summary: "scene e" },
   "vowel.o": { anchor: "roles.md#the-extra-b-party-o", summary: "recipient o" },
+  "vowel.ae": { anchor: "roles.md#instrument", summary: "instrument ae" },
+  "vowel.oe": { anchor: "roles.md#goal-source-path", summary: "goal oe" },
+  "vowel.ua": { anchor: "roles.md#goal-source-path", summary: "source ua" },
+  "vowel.uo": { anchor: "roles.md#goal-source-path", summary: "path uo" },
+  "vowel.ao": { anchor: "roles.md#result", summary: "result ao" },
+  "vowel.ue": { anchor: "roles.md#bearer", summary: "cost-bearer ue" },
   instance: { anchor: "roles.md#this-instance-r", summary: "-r this instance" },
 };
 

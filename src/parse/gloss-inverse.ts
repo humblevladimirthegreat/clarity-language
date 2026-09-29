@@ -11,7 +11,7 @@
 
 import type { ClassifyTables } from "./classify.js";
 import { classify } from "./classify.js";
-import { morphGlossFor, morphGlossLine, morphGlossWords, normalizeMorphLine, shortResumeStem } from "./morph-gloss.js";
+import { ROLE_VOWEL, morphGlossFor, morphGlossLine, morphGlossWords, normalizeMorphLine, shortResumeStem } from "./morph-gloss.js";
 import type { MorphGlossContext } from "./morph-gloss.js";
 import { parseWords } from "./word.js";
 
@@ -210,6 +210,10 @@ function unquote(text: string): string | undefined {
 
 // ── Leaf candidates ─────────────────────────────────────────────────────────
 
+const ROLE_BY_LABEL: Record<string, string> = Object.fromEntries(
+  Object.entries(ROLE_VOWEL).map(([vowel, label]) => [label, vowel]),
+);
+
 function nameRoot(label: string): string | undefined {
   if (!/^[A-Z]/.test(label)) return undefined;
   const joined = label.toLowerCase().split("-x-").join("x");
@@ -243,13 +247,20 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
     let body = resume[2]!;
     const full = body.endsWith(".full");
     if (full) body = body.slice(0, -".full".length);
+    // Role-compound resume: `←instrument-x-write` → `aex` + resumed stem + **-r**.
+    let roleVowel = "";
+    const role = body.match(/^([a-z]+)-x-(.+)$/);
+    if (role && ROLE_BY_LABEL[role[1]!] !== undefined) {
+      roleVowel = `${ROLE_BY_LABEL[role[1]!]}x`;
+      body = role[2]!;
+    }
     const quoted = unquote(body);
     const roots = quoted !== undefined ? [quoted] : [...(index.roots.get(body) ?? [])];
     const name = nameRoot(body);
     if (name) roots.push(name);
     for (const root of roots) {
       const stem = full || quoted !== undefined ? root : shortResumeStem(root);
-      out.add(`${pos}${stem}r${suffix}`);
+      out.add(`${pos}${roleVowel}${stem}r${suffix}`);
     }
   }
 

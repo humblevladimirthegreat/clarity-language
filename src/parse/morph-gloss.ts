@@ -326,11 +326,17 @@ const GREETING_STANCE: Record<string, string> = {
   u: "passing",
 };
 
-const ROLE_VOWEL: Record<string, string> = {
+export const ROLE_VOWEL: Record<string, string> = {
   a: "agent",
-  e: "place",
+  e: "scene",
   u: "patient",
   o: "recipient",
+  ae: "instrument",
+  oe: "goal",
+  ua: "source",
+  uo: "path",
+  ao: "result",
+  ue: "bearer",
 };
 
 const SPAN_TYPE: Record<string, string> = {
@@ -1061,6 +1067,11 @@ function sensePieces(
   if (resume) {
     if (ctx.antecedent) {
       const full = isFullRootResume(word, ctx.antecedent) ? ".full" : "";
+      // A role-compound resume keeps its role, so doer / undergoer / tool of one event stay apart (glosses.md § Round trip).
+      if (family.kind === "x" && family.xFamily === "role" && !word.overlay) {
+        const role = ROLE_VOWEL[family.roleVowel ?? ""] ?? "role";
+        return [`←${role}`, `${senseLabel(ctx.antecedent, tables, {})}${full}`];
+      }
       return [`←${senseLabel(ctx.antecedent, tables, {})}${full}`];
     }
     if (family.kind === "content") {

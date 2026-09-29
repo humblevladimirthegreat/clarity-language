@@ -261,7 +261,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos
 🐕,dog,odoga,loyalty,a dog shows loyalty,
 🐺,wolf,uwuva,predation,wolf at the door,
 🦊,fox,avagu,cunning,sly as a fox,
-🦝,raccoon,aregu,,,
+🦝,raccoon,aregu,theft,the masked raccoon takes what is not its own; theft is taking without consent,m.v:steal
 🐈,cat,agada,curiosity,curiosity killed the cat,
 🦁,lion,alahe,courage,brave as a lion,
 🐅,tiger,adege,ferocity,fight like a tiger,
@@ -1085,7 +1085,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos
 🏳️,parley,abayo,surrender,white flag means surrender,
 🏳️‍🌈,homosexual,ohoze,pride,rainbow flag shows pride,
 🏳️‍⚧️,transgender-flag,aduhe,,,
-🏴‍☠️,pirate,abeba,plunder,pirate flag means piracy; plunder is the unobservable taking-as-kind,
+🏴‍☠️,robbery,abeba,exploitation,the pirate flag signals open robbery; exploitation is taking through power without visible force,v:rob; m.v:exploit
 🇦🇨,ascension-island,azeho,,,
 🇦🇩,andorra,anodo,andorran,andorra people are andorran,
 🇦🇪,uae,uyuha,emirati,uae people are emirati,

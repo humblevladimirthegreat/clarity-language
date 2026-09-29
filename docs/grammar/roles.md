@@ -1,6 +1,6 @@
 # Role compounds {#roles}
 
-When English would name a person or place from an event (*a teacher* from *teach*, *the one told*, *a sleep-place*), Agazan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [reference ending](word-endings.md). **`a`** is the doer, **`e`** is the place of the event, **`u`** is the one the event happens to, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
+When English would name a person, place or time from an event (*a teacher* from *teach*, *the one told*, *a bedroom*, *bedtime*), Agazan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [reference ending](word-endings.md). **`a`** is the doer, **`e`** is the scene of the event (where or when), **`u`** is the one the event happens to, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
 
 The ending picks **kind** vs **this instance**. Non-resume (**-l** / **-m** / **-n**) is a lasting label: *a teacher*. Resume (**-r**) is the person or place of **that** latest matching event: *the one teaching*.
 
@@ -37,7 +37,7 @@ A role compound can also continue a pronoun. Keep its role-compound shape, use t
 
 > `zazawan vehahel. zaxehaher vowogal.`
 >
-> z-Azawan | v-sit . z-←sit | v-walk
+> z-Azawan | v-sit . z-←agent-x-sit | v-walk
 >
 > "Azawan sits. The one sitting walks."
 
@@ -53,19 +53,22 @@ English *the one seen* or *the one fought* names the person the event happens to
 >
 > "Azawan sees a cat. The one seen runs."
 
-### The place (`e`)
+### The scene (`e`)
+<a id="the-place-e"></a>
 
-English *a sleep-place* names the spot an event sits in, from the same idea as *sleep*. Use the same compound shape as the doer, but write **`e`** in the vowel slot. That named thing is the **place of the event**: the scene, not the sleeper. (cue: **e** ≈ order (the scene the act is ordered in))
+English *a sleep-place* or *bedtime* names where or when an event happens, from the same idea as *sleep*. Use the same compound shape as the doer, but write **`e`** in the vowel slot. That named thing is the **scene of the event**: its place or its time, not the sleeper. (cue: **e** ≈ order (the scene the act is ordered in))
 
-You can name that kind of place with no prior sleep in the talk:
+You can name that kind of scene with no prior sleep in the talk:
 
 > `zazawan dexezebal vahahal.`
 >
-> z-Azawan | d-place-x-sleep | v-see
+> z-Azawan | d-scene-x-sleep | v-see
 >
 > "Azawan sees a sleep-place."
 
-Once the talk already has a matching event, **-r** means **this** scene of that event, not a kind of place. The next sentence is a new claim about the place (who sees it, who punches it), not a locative on the first verb.
+The same word can be a time. In `/h/`, `hexezebal` is *at bedtime*.
+
+Once the talk already has a matching event, **-r** means **this** scene of that event (where or when it happened), not a kind of scene. The next sentence is a new claim about the place (who sees it, who punches it), not a locative on the first verb.
 
 > `zalahen vezogel.`
 > `zazawan dexezoger vahahal.`
@@ -77,7 +80,7 @@ Once the talk already has a matching event, **-r** means **this** scene of that 
 
 `zexaguzal` is a construct-place (the **-l** sense of *construct*). A construction site as a listed kind, with no event, can stay `dagozal`.
 
-**Compare with:** `zaxaguzal` is who constructs; `duxaguzal` is what is constructed. *Constructs in a house* locates **that same** constructing: extra-noun [hook](hooks.md#extra-noun) **`al`** plus `/b/`. Do not write **`exROOT`** when a hook on that clause would do. *Writes with a hammer* is likewise an extra-noun hook plus `/b/`, not this vowel.
+**Compare with:** `zaxaguzal` is who constructs; `duxaguzal` is what is constructed. *Constructs in a house* locates **that same** constructing: extra-noun [hook](hooks.md#extra-noun) **`al`** plus `/b/`. Do not write **`exROOT`** when a hook on that clause would do. *Writes with a hammer* is likewise an extra-noun hook plus `/b/`, not this vowel. To name the tool itself as a kind, see [instruments](#instrument).
 
 ### The extra `/b/` party (`o`)
 
@@ -108,15 +111,15 @@ Some stems name a **relation** (who is bound to whom), not an action. The extra 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…axROOT…` | names the doer of an event | *a teacher* / *the one teaching* | **a** ≈ add (add a doer) |
-| `…exROOT…` | names the place of an event | *a sleep-place* / *that scream-place* | **e** ≈ order (the scene the act is ordered in) |
+| `…exROOT…` | names the scene (place or time) of an event | *a sleep-place*, *bedtime* / *that scream-place* | **e** ≈ order (the scene the act is ordered in) |
 | `…uxROOT…` | names the undergoer of an event | *someone seen* (kind) / *the one seen* (this seeing) | **u** ≈ undo (the one it happens to) |
 | `…oxROOT…` | names the extra `/b/` party | *an addressee* / *the one told* | **o** ≈ one (that extra one) |
 
-Non-resume is the **kind** (occupation, usual place, usual undergoer). **-r** looks back to the latest verb, event noun, or relation with that stem (including a stem already inside a role compound) and names **this instance**. The vowel still picks which part you mean: doer, place, undergoer, or extra `/b/` party.
+Non-resume is the **kind** (occupation, usual scene, usual undergoer). **-r** looks back to the latest verb, event noun, or relation with that stem (including a stem already inside a role compound) and names **this instance**. The vowel still picks which part you mean: doer, scene, undergoer, or extra `/b/` party.
 
 ### The event itself
 
-If you put the event stem on a thing letter with no role vowel (`davadal`), you name the fight itself. Use **`ax`**, **`ex`**, **`ux`**, or **`ox`** when you mean who fights, where the fight is, who is fought, or who is told.
+If you put the event stem on a thing letter with no role vowel (`davadal`), you name the fight itself. Use **`ax`**, **`ex`**, **`ux`**, or **`ox`** when you mean who fights, where or when the fight is, who is fought, or who is told.
 
 > `zazawan davadal vahahal.`
 >
@@ -200,7 +203,7 @@ z-agent-x-construct | v-sit
 ::: details Show answer
 `zazawan vaguzal. zaxaguzar dehedul vahahal.`
 
-z-Azawan | v-construct . z-←construct | d-helmet | v-see
+z-Azawan | v-construct . z-←agent-x-construct | d-helmet | v-see
 :::
 
 **3.** *Alahen screams. Azawan sees the scream-place.*
@@ -208,7 +211,7 @@ z-Azawan | v-construct . z-←construct | d-helmet | v-see
 ::: details Show answer
 `zalahen vezogel. zazawan dexezoger vahahal.`
 
-z-Alahen | v-scream . z-Azawan | d-←scream | v-see
+z-Alahen | v-scream . z-Azawan | d-←scene-x-scream | v-see
 :::
 
 **4.** *Azawan sees Ahaben. The one seen sits.*
@@ -216,7 +219,7 @@ z-Alahen | v-scream . z-Azawan | d-←scream | v-see
 ::: details Show answer
 `zazawan zahaben vahahal. zuxahahar vehahel.`
 
-z-Azawan | z-Ahaben | v-see . z-←see | v-sit
+z-Azawan | z-Ahaben | v-see . z-←patient-x-see | v-sit
 :::
 
 **5.** *Azawan is a fabricator.*
@@ -242,7 +245,7 @@ z-Azawan | d-construction | v-see
 ::: details Show answer
 `zazawan vezebel. zoxezeber vabahel.`
 
-z-Azawan | v-tell . z-←tell | v-punch
+z-Azawan | v-tell . z-←recipient-x-tell | v-punch
 :::
 
 **8.** *Azawan is bound to Alahen. That other party of the bond fights.*
@@ -250,7 +253,7 @@ z-Azawan | v-tell . z-←tell | v-punch
 ::: details Show answer
 `zazawan gonam balahen. zoxonar vavadal.`
 
-z-Azawan | [g-bond | b-Alahen] . z-←bond | v-fight
+z-Azawan | [g-bond | b-Alahen] . z-←recipient-x-bond | v-fight
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
@@ -259,7 +262,7 @@ z-Azawan | [g-bond | b-Alahen] . z-←bond | v-fight
 
 ::: details Show answer
 
-z-Alahen | d-place-x-sleep | v-see
+z-Alahen | d-scene-x-sleep | v-see
 
 *Alahen sees a sleep-place.*
 :::
@@ -268,7 +271,7 @@ z-Alahen | d-place-x-sleep | v-see
 
 ::: details Show answer
 
-z-Ahaben | z-Azawan | v-see . z-←see | v-sit
+z-Ahaben | z-Azawan | v-see . z-←patient-x-see | v-sit
 
 *Ahaben sees Azawan. The one seen sits.*
 :::
@@ -277,7 +280,7 @@ z-Ahaben | z-Azawan | v-see . z-←see | v-sit
 
 ::: details Show answer
 
-z-Alahen | v-construct . z-←construct | d-helmet | v-see
+z-Alahen | v-construct . z-←agent-x-construct | d-helmet | v-see
 
 *Alahen constructs. The one constructing sees a helmet.*
 :::
@@ -304,7 +307,7 @@ z-Alahen | d-construction | v-see
 
 ::: details Show answer
 
-z-Azawan | z-Alahen | v-fight . z-←fight | v-scream
+z-Azawan | z-Alahen | v-fight . z-←patient-x-fight | v-scream
 
 *Azawan fights Alahen. The one fought screams.*
 :::
@@ -313,7 +316,7 @@ z-Azawan | z-Alahen | v-fight . z-←fight | v-scream
 
 ::: details Show answer
 
-z-Azawan | v-tell . z-←tell | v-run
+z-Azawan | v-tell . z-←recipient-x-tell | v-run
 
 *Azawan tells. The one told runs.*
 :::
@@ -322,12 +325,104 @@ z-Azawan | v-tell . z-←tell | v-run
 
 ::: details Show answer
 
-z-Ahaben | [g-bond | b-Alahen] . z-←bond | v-punch
+z-Ahaben | [g-bond | b-Alahen] . z-←recipient-x-bond | v-punch
 
 *Ahaben is bound to Alahen. That other party of the bond punches.*
 :::
 
 ## Intermediate {#intermediate}
+
+### Instrument (`ae`) {#instrument}
+
+Beginner already used four role vowels. Stacked vowels name six more parts of an event, the same way.
+
+English *a writing tool* or *an opener* names the thing an event is done **with**. Write **`ae`** in the vowel slot. (cue: **ae** is the same pair as the hook **`ael`** *using*)
+
+> `zazawan daexaradal vahahal.`
+>
+> z-Azawan | d-instrument-x-write | v-see
+>
+> "Azawan sees a writing tool."
+
+With **-r**, it is the tool used in **that** event.
+
+> `zazawan vavadal. zalahen daexavadar vahahal.`
+>
+> z-Azawan | v-fight . z-Alahen | d-←instrument-x-fight | v-see
+>
+> "Azawan fights. Alahen sees what Azawan fought with."
+
+**Compare with:** *writes with a pen* on the same clause is still the hook **`ael`** plus `/b/`. The compound names the tool as its own noun.
+
+### Goal, source, path (`oe` / `ua` / `uo`) {#goal-source-path}
+
+A movement has three more parts: where it heads, where it comes out of, and the way it goes. Each uses the stacked vowel of the matching [extra-noun hook](hooks.md#extra-noun-intermediate).
+
+| Agazan | Names | English | Cue |
+|--------|-------|---------|-----|
+| `…oexROOT…` | the **goal** of the event | *a destination* (from *go*), *a target* | **oe**, as in **`oel`** *toward* |
+| `…uaxROOT…` | the **source** it comes out of | *a spring* (from *pour*), *a quarry* | **ua**, as in **`ual`** *out of* |
+| `…uoxROOT…` | the **path** it goes by | *a walkway* (from *walk*), *a route* | **uo**, as in **`uol`** *through* |
+
+> `zazawan doexuvudel vahahal.`
+>
+> z-Azawan | d-goal-x-footprints | v-see
+>
+> "Azawan sees a destination."
+
+> `zalahen duoxowogal vahahal.`
+>
+> z-Alahen | d-path-x-walk | v-see
+>
+> "Alahen sees a walkway."
+
+> `zazawan dawahel vobohel. zalahen duaxoboher vahahal.`
+>
+> z-Azawan | d-wine | v-pour . z-Alahen | d-←source-x-pour | v-see
+>
+> "Azawan pours wine. Alahen sees where it was poured from."
+
+**Compare with:** the scene **`e`** is where the whole event happens. A goal, source or path is one end or the route of a movement. *Walks toward the station* on the same clause is the hook **`oel`** plus `/b/`.
+
+### Result (`ao`) {#result}
+
+English *a building* or *a dish* names the thing an event **makes**: it did not exist before. Write **`ao`** in the vowel slot. (cue: **ao** ≈ add one: one new thing in the world)
+
+> `zazawan daoxaguzal vahahal.`
+>
+> z-Azawan | d-result-x-construct | v-see
+>
+> "Azawan sees a building."
+
+With **-r**, it is what **that** event made.
+
+> `zalahen vaguzal. zazawan daoxaguzar vahahal.`
+>
+> z-Alahen | v-construct . z-Azawan | d-←result-x-construct | v-see
+>
+> "Alahen builds. Azawan sees what Alahen built."
+
+**Compare with:** the undergoer **`u`** is a thing the event changes, which was already there. The result **`ao`** is a thing the event brings into being.
+
+### The one who pays (`ue`) {#bearer}
+
+Some events cost someone who is not the one acted on. When a wallet is stolen, the wallet is what the stealing acts on, but its owner is the one who loses. Write **`ue`** in the vowel slot to name that person: the one the event goes **against**. (cue: **ue**, as in the hook **`uel`** *against*)
+
+> `zuexaregum varahal.`
+>
+> z-bearer-x-theft | v-run
+>
+> "A theft victim runs."
+
+With **-r**, it is the one who pays for **that** event.
+
+> `zazawan varegum. zuexaregur vezogel.`
+>
+> z-Azawan | v-steal . z-←bearer-x-steal | v-scream
+>
+> "Azawan steals. The one stolen from screams."
+
+**Compare with:** the undergoer **`u`** is what the event acts on; the recipient **`o`** is who it is told or given to. **`ue`** is whoever bears its cost, whether or not they were acted on.
 
 ### Viewpoint laterals (`DIR` × anchor) {#viewpoint-laterals}
 <a id="spatial-laterals"></a>
@@ -507,6 +602,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *ship* | `ehebal` | |
 | *life-buoy* | `alavul` | |
 | *walk* | `owogal` | |
+| *go* | `vuvudel` | |
+| *fight* | `vavadal` | |
+| *pour* | `vobohel` | |
+| *construct* | `vaguzal` | |
+| *steal* | `varegum` | |
+| *see* | `vahahal` | `ahahal` *eye* |
 | *north* / body *ahead* | `onoval` | |
 | *south* / body *back* | `azaval` | |
 | *west* / body *left* | `ewezal` | |
@@ -583,6 +684,30 @@ z-boat | g-west-th-speaker
 y-command | z-Alahen | v-walk | h-west
 :::
 
+**9.** *Azawan sees a walkway.*
+
+::: details Show answer
+`zazawan duoxowogal vahahal.`
+
+z-Azawan | d-path-x-walk | v-see
+:::
+
+**10.** *Alahen fights. Azawan sees what Alahen fought with.*
+
+::: details Show answer
+`zalahen vavadal. zazawan daexavadar vahahal.`
+
+z-Alahen | v-fight . z-Azawan | d-←instrument-x-fight | v-see
+:::
+
+**11.** *Ahaben builds. Alahen sees what Ahaben built.*
+
+::: details Show answer
+`zahaben vaguzal. zalahen daoxaguzar vahahal.`
+
+z-Ahaben | v-construct . z-Alahen | d-←result-x-construct | v-see
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zobodal gezadathazawan.`
@@ -655,6 +780,33 @@ z-ship | g-northwest-th-Ahaben
 y-command | z-Alahen | v-walk | h-down
 
 *Alahen, walk down.*
+:::
+
+**8.** `zalahen doexuvudel vahahal.`
+
+::: details Show answer
+
+z-Alahen | d-goal-x-footprints | v-see
+
+*Alahen sees a destination.*
+:::
+
+**9.** `zazawan vobohel. zalahen duaxoboher vahahal.`
+
+::: details Show answer
+
+z-Azawan | v-pour . z-Alahen | d-←source-x-pour | v-see
+
+*Azawan pours. Alahen sees where it was poured from.*
+:::
+
+**10.** `zalahen varegum. zazawan duexaregur vahahal.`
+
+::: details Show answer
+
+z-Alahen | v-steal . z-Azawan | d-←bearer-x-steal | v-see
+
+*Alahen steals. Azawan sees the one stolen from.*
 :::
 
 ## See also

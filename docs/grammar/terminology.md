@@ -373,7 +373,7 @@ Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; frame **-m**
 
 ### Means
 
-Extra-noun [hook](hooks.md#extra-noun) **`ael`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*, not role **`exROOT`** (that names the **place** of an event).
+Extra-noun [hook](hooks.md#extra-noun) **`ael`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*. To name the tool as its own noun, use the instrument role compound **`aexROOT`**.
 
 [Hooks](hooks.md#extra-noun-intermediate)
 

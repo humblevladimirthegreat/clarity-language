@@ -107,7 +107,7 @@ English *what* in *Alahen sees what Azawan writes* names the thing an event happ
 
 > `zazawan varadal. zalahen vahahal duxaradar.`
 >
-> z-Azawan | v-write . z-Alahen | v-see | d-←write
+> z-Azawan | v-write . z-Alahen | v-see | d-←patient-x-write
 >
 > "Alahen sees what Azawan writes."
 
