@@ -10,7 +10,6 @@ import type { IToken } from "chevrotain";
 
 import type { ClassifyTables } from "./classify.js";
 import { ARROW_ROOTS, isAsOfOverlay, isStandIn } from "./classify.js";
-import { letterPrefix } from "./resolve.js";
 import { REJECTIONS, type RejectionId } from "./constructions.js";
 import { SentenceParseError } from "./sentence-parser.js";
 import {
@@ -321,12 +320,12 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
 }
 
 /**
- * A full-root resume is a published root longer than its short cut. A root that
- * ends at its 2nd vowel is spelled the same as a short resume, so it reads short.
+ * With no antecedent, a published root is a full-root resume, including a root that ends at its
+ * 2nd vowel (`azo`, `ogo`). An unbound short resume is never a sentence, so the readings never compete.
  */
 function isFullRootResume(word: LexWord, tables: ClassifyTables): boolean {
   if (word.family.kind !== "content") return true;
-  return word.family.roots.every((root) => tables.published.has(root) && letterPrefix(root) !== root);
+  return word.family.roots.every((root) => tables.published.has(root));
 }
 
 function islandHasBinder(island: IslandUnit): boolean {

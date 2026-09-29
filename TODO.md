@@ -9,6 +9,7 @@ use [skip-cd] for amplify to not deploy.
 # TODO
 
 Prosody
+g17, g19
 -confirm we still have chats after rebuild
 -expressiveness review
 -consider Promoting common non-nouns and compound-word parts to be three letter. 

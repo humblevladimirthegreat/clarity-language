@@ -1106,7 +1106,7 @@ function sensePieces(
         const stem = family.roots.join("");
         const body = contentBody(word, family.roots, tables);
         if (body === stem) return [`←${quotePayload(stem)}`];
-        return [`←${body}${shortResumeStem(stem) !== stem ? ".full" : ""}`];
+        return [`←${body}.full`];
       }
     }
   }

@@ -761,7 +761,21 @@ class AgazanSentenceParser extends CstParser {
         this.SUBRULE2(this.gPackage);
       },
     });
+    // A hook + `/b/` right before a noun join word belongs to the item before it (joins.md § SHARED after the join).
+    this.OPTION2({
+      GATE: () => this.itemHookAhead(),
+      DEF: () => {
+        this.CONSUME(Hook, { LABEL: "itemHook" });
+        this.CONSUME2(B, { LABEL: "itemHookBound" });
+      },
+    });
   });
+
+  private itemHookAhead(): boolean {
+    if (this.LA(1).tokenType !== Hook || this.LA(2).tokenType !== B) return false;
+    const next = this.LA(laAfterW(this, 3));
+    return next.tokenType === JoinZ || next.tokenType === JoinD || next.tokenType === JoinB;
+  }
 
   public asOfWPair = this.RULE("asOfWPair", () => {
     this.CONSUME(W);
@@ -1108,10 +1122,17 @@ function buildNpPackage(cst: CstNode): NpPackage {
     childToken(cst, "B") ??
     childToken(cst, "Odo") ??
     childToken(cst, "WritingSpan")!;
+  // A hook + `/b/` before the join word rides on the item as a hosted pair, like a `/ɡ/` with its own `/b/`.
+  const itemHook = childToken(cst, "itemHook");
+  const itemHookBound = childToken(cst, "itemHookBound");
+  const hookPair: GPackage[] =
+    itemHook && itemHookBound
+      ? [{ word: lexWordFromToken(itemHook), modifiers: [], bound: lexWordFromToken(itemHookBound) }]
+      : [];
   return {
     glAdj,
     head: lexWordFromToken(headTok),
-    adjs: trailingAdjs,
+    adjs: [...trailingAdjs, ...hookPair],
   };
 }
 

@@ -834,6 +834,13 @@ Some channels only point one way:
 
 The wrong sign on a one-way word (**`thunom`** with **`+`**, **`thumam`** with **`-`**) is not a sentence.
 
+A [time pole](dependents.md#dependent-clauses) needs no channel. A signed measure in the `/b/` of **`hodam`** *until*, **`hodal`** *by*, **`habum`** *before*, **`hulam`** *after*, or **`hehum`** *during* counts from now, the same way. A command or a plan can therefore name a day without saying how anyone knows.
+
+> `yel zehodon vaheham hodam bazazam grawol.`
+> y-command | z-listener | v-confidentiality | [h-until | [b-day | g-one]]
+>
+> "Keep the secret until tomorrow."
+
 For *just* and *about to*, use the [just-short](numbers.md#just-short) amount with no unit: **`brubul`** is *a hair before now*, **`brabul`** is *a hair after now*.
 
 > `zazawan thunom brubul vowogal.`

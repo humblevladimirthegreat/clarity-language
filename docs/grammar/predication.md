@@ -290,6 +290,17 @@ You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra c
 
 **Related form:** *not a dog* uses [negation **u**](joins.md#negation-u) (`gul`).
 
+### Commands to be ADJ {#command-property}
+A command can ask for a state as well as an act. Put the [command word](speech-moves.md#speech-act-beginner) **`yel`** before a `/ɡ/` word with no verb: the listener is the unstated subject, and the pair reads *be ADJ!*, as a [verbless statement](#classification-property) does.
+
+> `yel geyayem.`
+>
+> y-command | g-caution
+>
+> "Be careful!"
+
+Name the listener to address one person (`yel zehodon geyayem`), or use the verb root for the doing (`yel veyayem`, *take care*). **`yul`** turns the same pair into *don’t be ADJ*.
+
 ### **SAME** endings
 
 Beginner already used closed **`gogal`** (*is the same as*). The other endings on that same adjective finish the map.

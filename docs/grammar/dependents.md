@@ -449,7 +449,7 @@ Other role letters work the same way as the forward stand-in: **`barth`** after 
 
 ### Time poles on a noun {#time-pole-on-noun}
 
-To place a **thing** in time rather than the event (*the walk after the thunderstorm*), put the [time pole](#dependent-clauses) on `/ɡ/` right after that noun: **`gehum`** *during*, **`gabum`** *before*, **`gulam`** *after*, **`godam`** *until*, **`godal`** *by*. The `/b/` after it is the event or period, as with the `/h/` pole.
+To place a **thing** in time rather than the event (*the walk after the thunderstorm*), put the [time pole](#dependent-clauses) on `/ɡ/` right after that noun: **`gehum`** *during*, **`gabum`** *before*, **`gulam`** *after*, **`godam`** *until*, **`godal`** *by*. The `/b/` after it is the event or period, as with the `/h/` pole, or a signed [count from now](knowing.md#dated-channel) (`gabum bazazam grawol` *before tomorrow*).
 
 > `zalahen dowogal gulam bavodel vahahal.`
 >

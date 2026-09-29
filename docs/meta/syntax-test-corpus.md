@@ -79,37 +79,37 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 | 57 | Have the neighbors gone away for the winter? | `yol ? zaxahazamx om bohan thamom vuvudelum hehum bagayum.` | y-question \| ? \| z-agent-x-home-x \| [near \| b-interlocutors] \| th-RESIDUE \| v-go-recede \| [h-while \| b-winter] | covered |
 | 58 | Does the robin sing in the rain? | `yol ? zuam geredaxebedul vezehel am berehel.` | y-question \| [? \| z-everything.open \| g-red-x-bird] \| v-sing \| [amid \| b-rain] | covered |
 | 59 | Are you going with us to the concert? | `yol ? zehodon han bamegunx vuvudel oel bexezehel.` | y-question \| ? \| z-listener \| [h-including \| b-speaker-x] \| v-go \| [toward \| b-scene-x-sing] | covered |
-| 60 | Have you ever travelled in the jungle? | `yol ? zehodon huham vehebam am bedehulx har.` | y-question \| ? \| z-listener \| h-already \| v-voyage \| [amid \| b-tree-x] \| h-when | awkward (L-07) |
+| 60 | Have you ever travelled in the jungle? | `yol ? zehodon huham vehebam am babahuxedehulx har.` | y-question \| ? \| z-listener \| h-already \| v-voyage \| [amid \| b-palm-x-tree-x] \| h-when | covered |
 | 61 | We sailed down the river for several miles. | `zamegunx thunom bezezem grabarem vehebal uol bowodel.` | z-speaker-x \| [th-WITNESSED \| [b-meter \| g-+-e3.about]] \| v-ship \| [through \| b-drinking-water] | covered |
-| 62 | Everybody knows about hunting. | `zuam vubugam hahehom buwuvam.` | z-everything.open \| v-knowledge \| [h-topic \| b-predation] | awkward (L-07) |
+| 62 | Everybody knows about hunting. | `zuam vubugam hahehom buwuvam.` | z-everything.open \| v-knowledge \| [h-topic \| b-predation] | covered |
 | 63 | On a Sunny morning after the solstice we started for the mountains. | `ol bedebem gazahol hulam bazahoxazadal zamegunx thunom damadalx vuvudeloel.` | [at \| [b-dawn \| g-sun]] \| [h-after \| b-sun-x-stop] \| z-speaker-x \| th-WITNESSED \| d-mountain-x \| v-go-head-for | covered |
 | 64 | Tom laughed at the monkey's tricks. | `zamagel vedevam. zazawan thunom valavol ol bedevar.` | z-monkey \| v-mischief . z-Azawan \| th-WITNESSED \| v-laugh \| [at \| b-←mischief.full] | covered |
-| 65 | An old man with a walking stick stood beside the fence. | `zoladal gan begehol thunom vazadol om bagozam.` | [z-old-man \| [g-including \| b-cane]] \| th-WITNESSED \| v-stand \| [near \| b-blockage] | awkward (L-07) |
+| 65 | An old man with a walking stick stood beside the fence. | `zoladal gan begehol thunom vazadol om buwalagozal.` | [z-old-man \| [g-including \| b-cane]] \| th-WITNESSED \| v-stand \| [near \| b-fence] | covered |
 | 66 | The squirrel's nest was hidden by drooping boughs. | `denezal em bahebul thunom zedehuxabolx gadahel vohahem.` | d-nest \| [used-by \| b-chipmunk] \| th-WITNESSED \| [z-tree-x-bone-x \| g-down] \| v-concealment | covered |
 | 67 | The little seeds waited patiently under the snow for the warm spring sun. | `glamazam zezulx hadahel bozezol thunom halawem vabazem dazahol wamazam gahadol gehum bahazom.` | [gl-small \| z-seedling-x] \| [h-down \| b-snow] \| th-WITNESSED \| h-composure \| v-wait \| [d-sun \| [w-small \| g-hot] \| [g-while \| b-spring]] | covered |
-| 68 | Many little girls with wreaths of flowers on their heads danced around the bonfire. | `zegehalx gamazam gan bagawulx guwam bavavulx zahen zel gral thunom vadazel hegozem bavahel.` | [[z-girl-x \| g-small \| [g-including \| [b-crown-x \| [g-material \| b-flower-x]]]] \| z-Typical \| z-rank/more \| g-amount] \| th-WITNESSED \| v-dance \| [h-around \| b-fire] | awkward (L-06, L-07) |
-| 69 | The cover of the basket fell to the floor. | `zabahal gabom babezul thunom vadahel.` | [z-up \| [g-part-of \| b-basket]] \| th-WITNESSED \| v-fall | awkward (L-06, L-07) |
+| 68 | Many little girls with wreaths of flowers on their heads danced around the bonfire. | `zegehalx gamazam gan bavavulagawulx zahen zel gral thunom vadazel hegozem bavahel.` | [[z-girl-x \| g-small \| [g-including \| b-wreath-x]] \| z-Typical \| z-rank/more \| g-amount] \| th-WITNESSED \| v-dance \| [h-around \| b-fire] | covered |
+| 69 | The cover of the basket fell to the floor. | `zabahal gabom babezul thunom vadahel oel bahazalagudul.` | [z-up \| [g-part-of \| b-basket]] \| th-WITNESSED \| v-fall \| [toward \| b-floor] | covered |
 | 70 | The first boy in the line stopped at the entrance. | `zobohal grewol thunom vazadal ol bodol.` | [z-boy \| g-1st] \| th-WITNESSED \| v-stop \| [at \| b-door] | covered |
 | 71 | On the top of the hill in a little hut lived a wise old woman. | `aol bamadal thazom al bahedel gamazam vahazam zoladel geladem.` | [on \| b-mountain] \| th-STORY \| [in \| [b-hut \| g-small]] \| v-home \| [z-old-woman \| g-wisdom] | covered |
-| 72 | During our residence in the country we often walked in the pastures. | `zamegunx zahen zel hral thunom vowogal am begezulx hehum barl zamegunx vahazam am bagudom.` | [z-speaker-x \| z-Typical \| z-rank/more \| h-how-often] \| th-WITNESSED \| v-walk \| [amid \| b-greens-x] \| [h-while \| b-that-clause] \| z-speaker-x \| v-home \| [amid \| b-rural] | awkward (L-07) |
+| 72 | During our residence in the country we often walked in the pastures. | `zamegunx zahen zel hral thunom vowogal am bevewulx hehum barl zamegunx vahazam am bagudom.` | [z-speaker-x \| z-Typical \| z-rank/more \| h-how-often] \| th-WITNESSED \| v-walk \| [amid \| b-field-x] \| [h-while \| b-that-clause] \| z-speaker-x \| v-home \| [amid \| b-rural] | covered |
 | 73 | When will your guests from the city arrive? | `yol har glagum bezagam zebezalx gabebum behodon thevem bral vevahal.` | y-question \| h-when \| [[gl-origin \| b-urban] \| z-person-x \| [g-hospitality \| b-listener]] \| [th-INFERRED \| b-later] \| v-arrival | covered |
-| 74 | Near the mouth of the river, its course turns sharply towards the East. | `om bamaval gabom bowodel zowor hanavam vagabum oel bezadal.` | [near \| [b-mouth \| [g-part-of \| b-drinking-water]]] \| z-←drinking-water \| h-severity \| v-direction \| [toward \| b-east] | awkward (L-07) |
+| 74 | Near the mouth of the river, its course turns sharply towards the East. | `om bamaval gabom bowodel zowor hanavam varevem oel bezadal.` | [near \| [b-mouth \| [g-part-of \| b-drinking-water]]] \| z-←drinking-water \| h-severity \| v-turn \| [toward \| b-east] | covered |
 | 75 | Between the two lofty mountains lay a fertile valley. | `hozam bamadalx gradul gadavem zadahel gamahum.` | [h-between \| [b-mountain-x \| g-two \| g-height]] \| [z-down \| g-proliferation] | covered |
-| 76 | Among the wheat grew tall red poppies. | `am bebadel thunom vezum zavavulx gadavem geredal.` | [amid \| b-paddy] \| th-WITNESSED \| v-growth \| [z-flower-x \| g-height \| g-red] | awkward (L-07) |
-| 77 | The strong roots of the oak trees were torn from the ground. | `dedehuxuvudalx gabezem thunom habahem vahegom ual bolol.` | [d-tree-x-foot-x \| g-strength] \| th-WITNESSED \| h-force \| v-removal \| [out-of \| b-globe] | awkward (L-06) |
+| 76 | Among the wheat grew tall red poppies. | `am bebadel thunom vezum zavavulx gadavem geredal.` | [amid \| b-grain] \| th-WITNESSED \| v-growth \| [z-flower-x \| g-height \| g-red] | covered |
+| 77 | The strong roots of the oak trees were torn from the ground. | `dedehuxuvudalx gabezem gabom behazaledehulx thunom habahem vahegom ual bagudul.` | [d-tree-x-foot-x \| g-strength \| [g-part-of \| b-oak-x]] \| th-WITNESSED \| h-force \| v-removal \| [out-of \| b-ground] | covered |
 | 78 | The sun looked down through the branches upon the children at play. | `zazahor thunom hadahel uol bedehuxabolx vazahem ol bahadelx gaxebogam.` | z-←sun.full \| th-WITNESSED \| h-down \| [through \| b-tree-x-bone-x] \| v-look \| [at \| [b-child-x \| g-agent-x-recreation]] | covered |
-| 79 | The west wind blew across my face like a friendly caress. | `zewedul gewezal thunom vewedul hebevum bamegun homem bahagel gazaham.` | [z-wind \| g-west] \| th-WITNESSED \| v-wind \| [h-across \| b-speaker] \| [h-like \| [b-hug \| g-goodwill]] | awkward (L-06) |
-| 80 | The spool of thread rolled across the floor. | `zayahol thunom vewawel hebevum bahazal.` | z-yarn \| th-WITNESSED \| v-wheel \| [h-across \| b-house] | awkward (L-06) |
+| 79 | The west wind blew across my face like a friendly caress. | `zewedul gewezal thunom vewedul hebevum bavezal em bamegun homem bahagel gazaham.` | [z-wind \| g-west] \| th-WITNESSED \| v-wind \| [h-across \| b-face] \| [used-by \| b-speaker] \| [h-like \| [b-hug \| g-goodwill]] | covered |
+| 80 | The spool of thread rolled across the floor. | `zayahol thunom vewawel hebevum bahazalagudul.` | z-yarn \| th-WITNESSED \| v-wheel \| [h-across \| b-floor] | covered |
 | 81 | A box of growing plants stood in the Window. | `zabegol gaham bahazulx gaxezum thunom vazadol al bewedol.` | [z-package \| [g-contents \| [b-house-plant-x \| g-agent-x-growth]]] \| th-WITNESSED \| v-stand \| [in \| b-window] | covered |
 | 82 | I am very happy. | `welavam thozuthamam.` | [w-very \| th-pleasure-met-any-term-INTERNAL-FLOWING] | covered |
 | 83 | These oranges are juicy. | `zodaherx guhuzal om bamegun.` | [z-←tangerine.full-x \| g-juice] \| [near \| b-speaker] | covered |
 | 84 | Sea water is salty. | `zual gohahaxowodel gozodal thogol.` | [z-everything \| g-ocean-x-drinking-water] \| g-salt \| th-COMMON | covered |
 | 85 | The streets are full of people. | `zebezalx zahen zel gral al borodalx.` | [z-person-x \| z-Typical \| z-rank/more \| g-amount] \| [in \| b-road-x] | covered |
-| 86 | Sugar tastes sweet. | `zual gagedel gozum thabem.` | [z-everything \| g-candy] \| g-sweetness \| th-PATTERN | awkward (L-07) |
+| 86 | Sugar tastes sweet. | `zual gagedem gozum thabem.` | [z-everything \| g-sugar] \| g-sweetness \| th-PATTERN | covered |
 | 87 | The fire feels hot. | `zavaher gahadol thodum.` | [z-←fire.full \| g-hot] \| th-LIVE | covered |
 | 88 | The little girl seemed lonely. | `thonathumam thevemegehar.` | th-relatedness-unmet-modifiable-INTERNAL-FLOWING \| th-INFERRED-←girl.full | by design (G-01) |
 | 89 | The little boy's father had once been a sailor. | `glemehel zebezal gaxehebal grebuwol bobohal gamazam thunem.` | [gl-male \| z-person \| g-agent-x-ship \| [g-#-e-1 \| [b-boy \| g-small]]] \| th-FORMER | covered |
-| 90 | I have lost my blanket. | `zSELFn thamom dogodul em bamegun vadadom.` | z-SELF \| th-RESIDUE \| d-coat \| [used-by \| b-speaker] \| v-loss | awkward (L-07) |
+| 90 | I have lost my blanket. | `zSELFn thamom dayahom em bamegun vadadom.` | z-SELF \| th-RESIDUE \| d-blanket \| [used-by \| b-speaker] \| v-loss | covered |
 | 91 | A robin has built his nest in the apple tree. | `zeredaxebedul thamom denezal vaguzal al baluxedehul.` | z-red-x-bird \| th-RESIDUE \| d-nest \| v-construct \| [in \| b-apple-x-tree] | covered |
 | 92 | At noon we ate our lunch by the roadside. | `h_12 zamegunx thunom debedol em bamegunx vagudel om bexuvudel.` | h-_12 \| z-speaker-x \| th-WITNESSED \| d-bento \| [used-by \| b-speaker-x] \| v-eat \| [near \| b-scene-x-footprints] | covered |
 | 93 | Mr. Jones made a knife for his little boy. | `zahaben thunom danaval vameval el bobohal gamazam grebawol bahar.` | z-Ahaben \| th-WITNESSED \| d-knife \| v-manufacture \| [for \| [b-boy \| g-small \| [g-#-e1 \| b-←Ahaben]]] | covered |
@@ -121,21 +121,21 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 | 99 | Are you waiting for me? | `yol ? zehodon damegun vabazem.` | y-question \| ? \| z-listener \| d-speaker \| v-wait | covered |
 | 100 | Is this the first kitten of the litter? | `yol ? zebebexagadar g#1e0 om bamegun.` | y-question \| [? \| z-baby-x-cat \| g-#-1e0] \| [near \| b-speaker] | covered |
 | 101 | Are these shoes too big for you? | `yol ? zuhahurx zugen zel gelavam behodon.` | y-question \| [? \| z-←dress-shoe.full-x \| z-Some-sake \| z-rank/more \| [g-big \| b-listener]] | covered |
-| 102 | How wide is the River? | `yol zowoder wrar gelavam.` | y-question \| z-←drinking-water.full \| [w-how-many \| g-big] | awkward (L-08) |
+| 102 | How wide is the River? | `yol zowoder wrar gagodem.` | y-question \| z-←drinking-water.full \| [w-how-many \| g-width] | covered |
 | 103 | Listen. | `yel vemam.` | y-command \| v-listening | covered |
 | 104 | Sit here by me. | `yel vehahel om bamegun.` | y-command \| v-sit \| [near \| b-speaker] | covered |
-| 105 | Keep this secret until tomorrow. | `yel darth vaheham hodam bazazam grawol.` | y-command \| d-that-same-claim \| v-confidentiality \| [h-until \| [b-day \| g-one]] | awkward (G-15) |
+| 105 | Keep this secret until tomorrow. | `yel darth vaheham hodam bazazam grawol.` | y-command \| d-that-same-claim \| v-confidentiality \| [h-until \| [b-day \| g-one]] | covered |
 | 106 | Come with us. | `yel han bamegunx vuvudel.` | y-command \| [h-including \| b-speaker-x] \| v-go | covered |
 | 107 | Bring your friends with you. | `yel han bebezalx gemezem behodon vuvudel oel bamegun.` | y-command \| [h-including \| [b-person-x \| [g-companionship \| b-listener]]] \| v-go \| [toward \| b-speaker] | covered |
-| 108 | Be careful. | `yel veyayem.` | y-command \| v-caution | awkward (G-16) |
-| 109 | Have some tea. | `yem dedehel gral vagudel.` | y-request \| [d-tea \| g-more-than-one] \| v-eat | awkward (L-08) |
-| 110 | Pip and his dog were great friends. | `zodogal em bazawan. zazar zodor zal welavam gemezem thunom.` | z-dog \| [used-by \| b-Azawan] . [z-←Azawan \| z-←dog \| z-and \| [w-very \| g-companionship]] \| th-WITNESSED | awkward (G-17, G-18) |
+| 108 | Be careful. | `yel geyayem.` | y-command \| g-caution | covered |
+| 109 | Have some tea. | `yem dedehel gral vozodel.` | y-request \| [d-tea \| g-more-than-one] \| v-drink | covered |
+| 110 | Pip and his dog were great friends. | `zazawan zodogal em bazar zal welavam gemezem thunom.` | [z-Azawan \| [z-dog \| [used-by \| b-←Azawan]] \| z-and \| [w-very \| g-companionship]] \| th-WITNESSED | awkward (G-17) |
 | 111 | John and Elizabeth are brother and sister. | `zazawan gemehel zalahen geveval zal grebazol.` | [[z-Azawan \| g-male] \| [z-Alahen \| g-female] \| z-and \| g-#-e0] | awkward (G-17) |
 | 112 | You and I will go together. | `zohan thumam vuvudelx.` | z-interlocutors \| th-plan-itinerary \| v-go-x | covered |
-| 113 | They opened all the doors and windows. | `zebezalx thunom dual godol vanagal xal zebezarx dual gewedol vanagal.` | [z-person-x \| th-WITNESSED \| [d-everything \| g-door] \| v-unlocked \| x-and \| z-←person-x.full-x \| [d-everything \| g-window] \| v-unlocked] | awkward (L-08) |
+| 113 | They opened all the doors and windows. | `zebezalx thunom dual godol vodol xal zebezarx dual gewedol vodol.` | [z-person-x \| th-WITNESSED \| [d-everything \| g-door] \| v-open \| x-and \| z-←person-x.full-x \| [d-everything \| g-window] \| v-open] | covered |
 | 114 | He is small, but strong. | `zazawan gamazam. xagozal zazar gabezem.` | z-Azawan \| g-small . x-but \| z-←Azawan \| g-strength | covered |
-| 115 | Is this tree an oak or a maple? | `yol zedehur gehazal gemebal ?gar.` | y-question \| z-←tree.full \| [g-chestnut \| g-maple \| ?g-who] | awkward (L-08) |
-| 116 | Does the sky look blue or gray? | `yol zabahar gubuhal gagayol ?gar thodum.` | y-question \| [z-←up.full \| [g-blue \| g-cloud \| ?g-something]] \| th-LIVE | awkward (L-08) |
+| 115 | Is this tree an oak or a maple? | `yol zedehur gehazaledehul gemebal ?gar.` | y-question \| z-←tree.full \| [g-oak \| g-maple \| ?g-who] | covered |
+| 116 | Does the sky look blue or gray? | `yol zagayom gubuhal gegagel ?gar thodum.` | y-question \| [z-sky \| [g-blue \| g-gray \| ?g-something]] \| th-LIVE | covered |
 | 117 | Come with your father or mother. | `yel han bebezal grebuwol behodon vuvudel oel bamegun.` | y-command \| [h-including \| [b-person \| [g-#-e-1 \| b-listener]]] \| v-go \| [toward \| b-speaker] | covered |
 | 118 | I am tired, but very happy. | `zSELFn gadadal. xagozal welavam thozuthamam.` | z-SELF \| g-tired . x-but \| [w-very \| th-pleasure-met-any-term-INTERNAL-FLOWING] | covered |
 | 119 | He played a tune on his wonderful flute. | `zazawan thunom duduhal vamegum ael buvudul gazebam em bazar.` | z-Azawan \| th-WITNESSED \| d-tune \| v-performance \| [using \| [b-flute \| g-amazement]] \| [used-by \| b-←Azawan] | covered |
@@ -144,16 +144,16 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 | 122 | The first part of the story is very interesting. | `zebeger welavam gagadam gabom bazom.` | [z-←begin.full \| [w-very \| g-curiosity] \| [g-part-of \| b-tale]] | covered |
 | 123 | The crow dropped some pebbles into the pitcher and raised the water to the brim. | `zabagoxebedul thunom daragalx gamazam vadahel al bamevel xan zabar dowoder vabahal oel babahal gabom bamever.` | [z-black-x-bird \| th-WITNESSED \| [d-rock-x \| g-small] \| v-fall \| [in \| b-amphora] \| x-and-then \| z-←black-x-bird \| d-←drinking-water.full \| v-up \| [toward \| [b-up \| [g-part-of \| b-←amphora.full]]]] | covered |
 | 124 | The baby clapped her hands and laughed in glee. | `zebeber thunom vagebul valavol val hegevam.` | z-←baby.full \| th-WITNESSED \| [v-clap \| v-laugh \| v-and \| h-delight] | covered |
-| 125 | Stop your game and be quiet. | `yel hewem vebogam xal vezebom.` | y-command \| [h-no-longer \| v-play \| x-and \| v-silence] | covered |
+| 125 | Stop your game and be quiet. | `yel hewem vebogam xal gezebom.` | y-command \| [h-no-longer \| v-play \| x-and \| g-silence] | covered |
 | 126 | The sound of the drums grew louder and louder. | `zadehal gagum badavolx thunom hagawam vabedul.` | [z-audio \| [g-origin \| b-drum-x]] \| th-WITNESSED \| h-volume \| v-uptrend | covered |
-| 127 | Do you like summer or winter better? | `yol zehodon dazahol dagayum ?der valavam.` | y-question \| z-listener \| [d-sun \| d-winter \| ?d-which-rank] \| v-cherished | awkward (L-08) |
+| 127 | Do you like summer or winter better? | `yol zehodon dazagem dagayum ?der valavam.` | y-question \| z-listener \| [d-summer \| d-winter \| ?d-which-rank] \| v-cherished | covered |
 | 128 | That boy will have a wonderful trip. | `zobohar thevem bral vehebam hazebam.` | z-←boy.full \| [th-INFERRED \| b-later] \| v-voyage \| h-amazement | covered |
 | 129 | They popped corn, and then sat around the fire and ate it. | `zebezalx thunom dababol vugugel xan zebezarx vehahel hegozem bavahel xan zebezarx dababor vagudel.` | [z-person-x \| th-WITNESSED \| d-popcorn \| v-cooking \| x-and-then \| z-←person-x.full-x \| v-sit \| [h-around \| b-fire] \| x-and-then \| z-←person-x.full-x \| d-←popcorn.full \| v-eat] | covered |
 | 130 | They won the first two games, but lost the last one. | `zebezalx thunom dazedemx g#1 al g#2 vevegol. xagozal zebezarx dazedem g#-1 vadadom.` | z-person-x \| th-WITNESSED \| [d-contest-x \| g-1st.short] \| through \| g-2nd.short \| v-victory . x-but \| z-←person-x.full-x \| [d-contest \| g-1st-from-end.short] \| v-loss | covered |
 | 131 | Take this note, carry it to your mother; and wait for an answer. | `yel demeham om bamegun valagal oel bebezal geveval grebuwol behodon xal vabazem dezebem.` | y-command \| [d-message \| [near \| b-speaker] \| v-carry \| [toward \| [b-person \| g-female \| [g-#-e-1 \| b-listener]]] \| x-and \| v-wait \| d-discourse] | covered |
 | 132 | I awoke early, dressed hastily, and went down to breakfast. | `zSELFn zahen zuel bral thunom vabahal xan zSELFn hadehom vedezal xan zSELFn vuvudel hadahel oel bebedol gedebem.` | [[z-SELF \| z-Typical \| z-rank/less \| b-later] \| th-WITNESSED \| v-up \| x-and-then \| z-SELF \| h-haste \| v-dress \| x-and-then \| z-SELF \| v-go \| h-down \| [toward \| [b-bento \| g-dawn]]] | covered |
 | 133 | Aha! I have caught you! | `!yaladun. zSELFn thamom dehodon vamazel.` | !y-Aladun . z-SELF \| th-RESIDUE \| d-listener \| v-mousetrap | covered |
-| 134 | This string is too short! | `! zevedur om bamegun zugen zuel guruham.` | ! \| z-←thread.full \| [near \| b-speaker] \| [z-Some-sake \| z-rank/less \| g-measurement] | awkward (L-08) |
+| 134 | This string is too short! | `! zevedur om bamegun zugen zuel geregam.` | ! \| z-←thread.full \| [near \| b-speaker] \| [z-Some-sake \| z-rank/less \| g-length] | covered |
 | 135 | Oh, dear! the wind has blown my hat away! | `!yewedan. zewedur thamom dazehal em bamegun vewedulum.` | !y-Ewedan . z-←wind.full \| th-RESIDUE \| d-sun-hat \| [used-by \| b-speaker] \| v-wind-recede | covered |
 | 136 | Alas! that news is sad indeed! | `!yagahun. zunuzer wonathumam gobom.` | !y-Agahun . z-←newspaper.full \| [w-relatedness-unmet-modifiable-INTERNAL-FLOWING \| g-stimulus] | covered |
 | 137 | Whew! that cold wind freezes my nose! | `!yuvuyun. zewedur gogodel donozal gabom bamegun vazahul.` | !y-Uvuyun . [z-←wind.full \| g-cold] \| [d-nose \| [g-part-of \| b-speaker]] \| v-ice | covered |
@@ -161,9 +161,9 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 | 139 | They heard the warning too late. | `zebezalx zugen zel bral thunom dowawol vemal.` | [z-person-x \| z-Some-sake \| z-rank/more \| b-later] \| th-WITNESSED \| d-warning \| v-hear | covered |
 | 140 | We are a brave people, and love our country. | `zamegunx galahem xal zamegunx dagul em bamegunx valaval.` | [z-speaker-x \| g-courage \| x-and \| z-speaker-x \| d-country \| [used-by \| b-speaker-x] \| v-love] | covered |
 | 141 | All the children came except Mary. | `zual gahadel ul zalahen thunom vevahal.` | [z-everything \| g-child] \| except \| z-Alahen \| th-WITNESSED \| v-arrival | covered |
-| 142 | Jack seized a handful of pebbles and threw them into the lake. | `zahaben thunom dahadal gaham baragalx gamazam vevedol xan zahaber daragarx vabobel al bowodel.` | [z-Ahaben \| th-WITNESSED \| [d-hand \| [g-contents \| [b-rock-x \| g-small]]] \| v-fist \| x-and-then \| z-←Ahaben.full \| d-←rock-x.full-x \| v-propel \| [in \| b-drinking-water]] | awkward (L-08) |
+| 142 | Jack seized a handful of pebbles and threw them into the lake. | `zahaben thunom dahadal gaham baragalx gamazam vevedol xan zahaber daragarx vubuvel al bagevom.` | [z-Ahaben \| th-WITNESSED \| [d-hand \| [g-contents \| [b-rock-x \| g-small]]] \| v-fist \| x-and-then \| z-←Ahaben.full \| d-←rock-x.full-x \| v-throw \| [in \| b-lake]] | covered |
 | 143 | This cottage stood on a low hill, at some distance from the village. | `zagudor thazom vazadol aol bamadal gamazam um bahedem.` | z-←cottage.full \| th-STORY \| v-stand \| [on \| [b-mountain \| g-small]] \| [away-from \| b-locality] | covered |
-| 144 | On a fine summer evening, the two old people were sitting outside the door of their cottage. | `ol badazol gahabem gehum bazahol zebezalx gradul goladam thazom vehahel ol bodol gabom bagudol em bebezarx.` | [at \| [b-dusk \| g-beauty \| [g-while \| b-sun]]] \| [z-person-x \| g-two \| g-elderhood] \| th-STORY \| v-sit \| [at \| [b-door \| [g-part-of \| b-cottage]]] \| [used-by \| b-←person-x.full-x] | awkward (L-08) |
+| 144 | On a fine summer evening, the two old people were sitting outside the door of their cottage. | `ol badazol gahabem gehum bazagem zebezalx gradul goladam thazom vehahel ol bodol gabom bagudol em bebezarx.` | [at \| [b-dusk \| g-beauty \| [g-while \| b-summer]]] \| [z-person-x \| g-two \| g-elderhood] \| th-STORY \| v-sit \| [at \| [b-door \| [g-part-of \| b-cottage]]] \| [used-by \| b-←person-x.full-x] | covered |
 | 145 | Our bird's name is Jacko. | `zebedul em bamegunx. zebedur gogal bahaben.` | z-bird \| [used-by \| b-speaker-x] . z-←bird.full \| [g-SAME \| b-Ahaben] | covered |
 | 146 | The river knows the way to the sea. | `zowoder dorodal oel bohahal vubugam.` | z-←drinking-water.full \| d-road \| [toward \| b-ocean] \| v-knowledge | covered |
 | 147 | The boat sails away, like a bird on the wing. | `zobodar thodum vobodalum homem bebedul gaxewehal.` | z-←boat.full \| th-LIVE \| v-boat-recede \| [h-like \| [b-bird \| g-agent-x-wing]] | covered |
@@ -198,39 +198,41 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 - **STC-57, *neighbors*:** agent compound on *home* (`zaxahazamx`) + *near us*. *Gone away* keeps RESIDUE (they are still away). *Winter* is the *gloves* abstract (`bagayum`).
 - **STC-58, 91, *robin*:** compound *red* `x` *bird* (`eredaxebedu`); the habit question is an open universal `zuam`.
 - **STC-59, *concert*:** scene compound on *sing* (`bexezehel`, a sing-event). *With us* (not the listener) is `han bamegunx`. **STC-63, 72, 92:** narrative *we* that leaves the listener out is `zamegunx`, not `zohan`.
-- **STC-60, *ever*:** `huham … har`. *Travel* is `vehebam` (*voyage*).
+- **STC-60, *ever*:** `huham … har`. *Travel* is `vehebam` (*voyage*). *Jungle* is the compound *palm* `x` *tree* (`babahuxedehulx`).
 - **STC-61, *several miles*:** metric, not miles: `bezezem grabarem` (*thousands of meters*, about). *Down* the river is dropped.
-- **STC-62, *knows*:** the *book* abstract as a verb (`vubugam`); *about* is `hahehom`. *Everybody* is open `zuam` (as far as I know).
+- **STC-62, *knows*:** the *book* abstract as a verb (`vubugam`); *about* is `hahehom`. *Everybody* is open `zuam` (as far as I know). *Hunting* stays *predation* (`buwuvam`); the verb *hunt* is `varehel`, role English on *archery*.
 - **STC-63, *solstice*:** compound *sun* `x` *stop* (`bazahoxazadal`). *Started for* is the hook compound *go* + *toward* (`vuvudeloel`).
 - **STC-63, 71, 74, 76:** fronted place phrases (`aol bamadal …`, `am bebadel …`) now parse as extra-noun hooks (parser fix; see results).
 - **STC-64, *the monkey's tricks*:** two sentences, then an event resume (`bedevar`), the recipe for an act as someone's (say-people-places.md § someone's act).
 - **STC-66, *was hidden by*:** object first, then the hider as subject. *Boughs* is *tree* `x` *bone* (`zedehuxabolx`).
 - **STC-67, *spring sun*:** the time pole on the noun, `gehum bahazom` (*during spring*).
-- **STC-68, *wreaths … on their heads*:** *crowns made of flowers* (`bagawulx guwam bavavulx`) keeps the picture without *head*.
+- **STC-68, *wreaths … on their heads*:** *wreath* is the compound `bavavulagawulx`. *On their heads* is dropped: a hook + `/b/` after the wreath (`aol behadalx`) would split the *many* rank from its noun. *Head* is `behadal`.
 - **STC-70, *in the line*:** dropped; the ordinal already says the order.
 - **STC-71, *lived*:** TALE `thazom`, since this is story narration.
 - **STC-73, *your guests*:** people cannot take `em`, so *guests* is the *hospitality* tie (`gabebum behodon`); *from the city* goes before the noun with `gl-`, since two relation adjectives cannot follow one noun.
-- **STC-74, *sharply*:** `hanavam` (*severity*, the knife abstract). *Course turns* is `vagabum` (*direction*).
+- **STC-74, *sharply*:** `hanavam` (*severity*, the knife abstract). *Course turns* is `varevem` (*turn*, the abstract on *refresh*).
 - **STC-75, 76, 78, 79:** an `/h/`-hosted `/b/` now keeps its adjectives (`hozam bamadalx gradul gadavem`, `homem bamezal gazaham`; parser fix).
 - **STC-82, 94, *happy*:** emotion compose, pleasure met, INTERNAL, FLOWING (`thozuthamam`). Someone else's feeling takes a holder (STC-88 `thevemegehar`, STC-94 `thodumebezarx`); a holder can be a full-root resume, and a group takes **-x** (*those people*).
 - **STC-83, *these oranges*:** full-root resume (the ones we both see) plus *near me*; a new noun would read as *there are juicy oranges here*.
 - **STC-84, *sea water is salty*:** `zual` + kind + `/ɡ/` is a property of every member; COMMON (`thogol`) says *as a rule*.
 - **STC-85, *full of people*:** approximated as *many people in the streets* (Typical bar). *Streets* is *road* (`borodalx`).
-- **STC-86, 87, *tastes / feels*:** the sense is the channel: LIVE for a present touch, PATTERN for a general taste. *Sugar* is *candy*.
+- **STC-86, 87, *tastes / feels*:** the sense is the channel: LIVE for a present touch, PATTERN for a general taste. *Sugar* is the *candy* abstract (`gagedem`).
 - **STC-89, *had once been*:** FORMER `thunem`. The predicate *sailor* sits between the noun and the kin relation, so it describes the father, not the boy.
 - **STC-95, *Monday*:** *first weekday* (`zelagam grewol`, counting from Monday) under LIVE for *today*.
+- **STC-65, 69, 72, 76, 77, 79, 80, 144, new words:** *fence* `buwalagozal`, *floor* `bahazalagudul`, *field* `bevewulx`, *wheat* `bebadel` (*grain*), *oak* `behazaledehulx`, *ground* `bagudul`, *face* `bavezal`, *summer* `bazagem`.
 - **STC-72, 79, 96, new rows:** *country* is `bagudom` (*rural*), *caress* is *hug* (`bahagel`), *leaves* is `galevel`.
 - **STC-98, a polite request:** English *Will you … for me?* is a request, so it takes soft request `yem`; *for me* is proxy `hadem`.
 - **STC-100, *first of the litter*:** eldest sibling `g#1e0`.
 - **STC-101, 115, *these shoes* / *this tree*:** full-root resume only. `om bamegun` before a rank join or a fill-ask list would make the next `/ɡ/` words describe the speaker (the landmark). *Too big for you* is the Some-sake bar with the listener as whose need (`gelavam behodon`).
-- **STC-102, *how wide*:** `wrar` on *big*, since there is no width word.
-- **STC-103–108, commands:** *listen* is the *ear* abstract as a verb (`vemam`), not *hear* (`vemal`). *Keep this secret* is *keep confidential* (`vaheham`, the *hush* abstract) with `darth` for *this*. *Come* / *bring … with you* is `vuvudel` + `han` (company); with a place, `oel bamegun`.
-- **STC-109, *have some tea*:** an offer, so soft request `yem`; `gral` on a mass noun is *some*. The verb is *eat* for want of *drink*.
-- **STC-110, 111, *friends* / *brother and sister*:** the tie or kin word is SHARED after the join with no `/b/`, so *of each other* is only implied (G-17). *His dog* moves to its own sentence (G-18).
+- **STC-102, *how wide*:** `wrar` on *width* (`gagodem`, the *accordion* abstract).
+- **STC-103–108, commands:** *listen* is the *ear* abstract as a verb (`vemam`), not *hear* (`vemal`). *Keep this secret* is *keep confidential* (`vaheham`, the *hush* abstract) with `darth` for *this*; *until tomorrow* is a signed day count in the pole's `/b/` (`hodam bazazam grawol`), counted from now. *Be careful* is `yel geyayem`, a command with only a `/ɡ/` body. *Come* / *bring … with you* is `vuvudel` + `han` (company); with a place, `oel bamegun`.
+- **STC-90, *blanket*:** the *yarn* abstract (`dayahom`). **STC-134, *too short*:** less *length* (`geregam`, the *railcar* abstract). **STC-142, *threw … lake*:** `vubuvel` (role English on *boomerang*) and `bagevom` (the *canoe* abstract).
+- **STC-109, *have some tea*:** an offer, so soft request `yem`; `gral` on a mass noun is *some*. The verb is `vozodel` (*drink*, role English on *soda*).
+- **STC-110, 111, *friends* / *brother and sister*:** the tie or kin word is SHARED after the join with no `/b/`, so *of each other* is only implied (G-17). *His dog* is a hook + `/b/` right before the join word (`zodogal em bazar zal`, G-18).
 - **STC-112, *go together*:** PLAN plus collective **-x** on the verb.
-- **STC-113, *all the doors and windows*:** two *every K* clauses, since a kind join after `dual` does not read as one kind. *Open* is *unlock* (`vanagal`).
+- **STC-113, *all the doors and windows*:** two *every K* clauses, since a kind join after `dual` does not read as one kind. *Open* is `vodol` (role English on *door*).
 - **STC-114, 118, 130, 148, *but*:** the linker `xagozal` starts a second sentence. *Small but strong*, *tired but happy*: the first claim sets an expectation the second blocks.
-- **STC-116, *the sky … look*:** *the up* (`zabahar`) for *sky* and *cloud-colored* (`gagayol`) for *gray*; *look* is LIVE, as *feels* was in STC-87. The choice is a fill-ask over the two colors (`?gar`).
+- **STC-116, *the sky … look*:** *sky* (`zagayom`, the *cloud* abstract) and *gray* (`gegagel`); *look* is LIVE, as *feels* was in STC-87. The choice is a fill-ask over the two colors (`?gar`).
 - **STC-117, 131, 150, kin:** *father or mother* is the parent layer with no mantissa (`grebuwol`, one member). *Uncle* is a male sibling of a parent. *Mother* is `geveval` before the kin number.
 - **STC-119, *played a tune on*:** *perform* (`vamegum`) with the flute as a tool (`ael`); `em bazar` follows the flute's adjective, as in hooks.md § Whose.
 - **STC-120, *toward the end of August*:** *near 31 August* (`om b_#31,8`). *The days grow much shorter* is *much less duration than usual* on PATTERN.
@@ -238,9 +240,9 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 - **STC-122, *the first part of the story*:** *the beginning* (`zebeger`, a full-root resume), with *interesting* (*curiosity*) before the relation so it describes the beginning, not the story.
 - **STC-123, *crow*, *pitcher*, *brim*:** *black* `x` *bird*, *amphora*, *the top part of it*. *Dropped* is *fall* with an object.
 - **STC-124, *in glee*:** SHARED `/h/` after a verb join covers both verbs. The manner is observable, so no holder is needed.
-- **STC-125, *stop … and be quiet*:** *no longer play* (`hewem vebogam`), then the *silence* verb (`vezebom`) in a clause join under the same command.
+- **STC-125, *stop … and be quiet*:** *no longer play* (`hewem vebogam`), then *be quiet* as a `/ɡ/`-only command clause (`gezebom`) in a clause join under the same command.
 - **STC-126, *louder and louder*:** *rose in volume* (`hagawam vabedul`, the uptrend verb).
-- **STC-127, *better*:** `?der` asks which ranks first.
+- **STC-127, *better*:** `?der` asks which ranks first. *Summer* is the *ice-cream* abstract (`dazagem`).
 - **STC-128, 139:** *will* is INFERRED + `bral`; *too late* is `zugen zel bral`.
 - **STC-129, 132, 142:** a string of acts by one subject is `xan` with a resumed subject, since verb-join items cannot carry their own objects (G-19).
 - **STC-133–137, interjections:** `/y/` + **-n** on the matching root: *aha* is *insight* (`yaladun`), *oh dear* is *worried* (`yewedan`), *alas* is *cry* (`yagahun`), *whew* is *phew* (`yuvuyun`). *Indeed* and the English *!* are the `!` tone mark.

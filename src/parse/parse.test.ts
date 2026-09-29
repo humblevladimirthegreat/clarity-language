@@ -499,3 +499,12 @@ describe("parse — spans.md written fences and closes", () => {
     assert.throws(() => parseText("zalahen daxal abogam xuxul xuxum vezebel."), SentenceParseError);
   });
 });
+
+describe("parse — pronouns.md full-root resume", () => {
+  it("reads an opening resume of a root that ends at its 2nd vowel as the full root", () => {
+    for (const text of ["zalahen vahahal dazor.", "zodor vowogal."]) {
+      assert.doesNotThrow(() => parseText(text), text);
+    }
+    assert.throws(() => parseText("zagar vowogal."), SentenceParseError);
+  });
+});

@@ -45,7 +45,15 @@ A **short** resume always needs an earlier word to match. A **full-root** resume
 >
 > "The dog walks." (the dog you both know)
 
-**Compare with:** a short resume with nothing before it points at nothing, so it is not a sentence.
+A root that ends at its 2nd vowel (`azo` *scroll*, `ogo` *cloudy*) is spelled the same short and full. With no earlier match, it is the full-root resume.
+
+> `zalahen vahahal dazor.`
+>
+> z-Alahen | v-see | d-←scroll.full
+>
+> "Alahen sees the scroll." (the scroll you both know)
+
+**Compare with:** a short resume of a longer root, with nothing before it, points at nothing, so it is not a sentence.
 
 The antecedent can sit in the same sentence. A resume in the object slot that points back at the subject is English *herself* / *himself* / *themself* (a reflexive).
 
@@ -385,7 +393,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Alahen* | `alahen` | | |
 | *Ahaben* | `ahaben` | | |
 | *pour* | `vobohel` | `obohel` *pour* | 🫗: water onto soil |
-| *harvest* | `vebadem` | `ebadel` *paddy* | 🌾: bringing the crop in |
+| *harvest* | `vebadem` | `ebadel` *grain* | 🌾: bringing the crop in |
 | *flower* | `avavul` | | |
 | *tomato* | `adedol` | | |
 | *seedling* | `ezul` | | |

@@ -205,6 +205,21 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bezezem g
 
 **Related form:** normative *my standard* **`zomen`** vs performance **`zamegun`** ([comparatives](comparatives.md#judgment-benchmarks)) is a judgment bar, not a unit. General **`ROOTl+1`** (*primary / singleton of a kind*) is [numeric derivation](numeric-derivation.md#scalar-digit-morphs), not an SI alias.
 
+### *Until tomorrow*, *by tomorrow* {#pole-from-now}
+<a id="until-tomorrow"></a>
+
+**Needs:** [Time poles](dependents.md#dependent-clauses) · [Signed count from now](knowing.md#dated-channel) · [Dated channel](knowing.md#dated-channel)
+
+English *until tomorrow*, *by tomorrow*, and *before next week* count from today. A command or a plan has no channel to count from, so the time pole takes the count itself: a signed measure in its `/b/` runs from now.
+
+> `yel zehodon vaheham hodam bazazam grawol.`
+>
+> y-command | z-listener | v-confidentiality | [h-until | [b-day | g-one]]
+>
+> "Keep the secret until tomorrow."
+
+Use **`hodam`** for *until*, **`hodal`** for *by*, **`habum`** for *before*, and **`hulam`** for *after*. A negative count runs back from now.
+
 ### Date as books vs event-when
 <a id="as-of-vs-clock"></a>
 

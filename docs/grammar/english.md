@@ -21,6 +21,7 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agazan 
 | tool (*writes by / with a hammer*) | hook **`ael`** (*using*) + `/b/` | [Hooks](hooks.md#extra-noun) |
 | place (*by the station*) | hook **`om`** (*near*) + `/b/` (or **`ol`** *at*) | [Hooks](hooks.md#extra-noun) |
 | deadline (*by 15:30*, *by the storm*) | **`hodal`** + `/b/` (or **`hodal barl`** + sentence) | [By a deadline](dependents.md#by-deadline) |
+| deadline a day away (*by tomorrow*) | **`hodal`** + a signed count in `/b/` | [Count from now](knowing.md#dated-channel) |
 | manner (*by walking hastily*) | ordinary adverb `/h/`, no `/b/` | [Adverbs](clause.md#adverbs-h) |
 | origin (*Alahen from the city*) | **`hagum` / `gagum`** + `/b/` | [Of relations](relations.md#of-relations) |
 

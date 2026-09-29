@@ -121,6 +121,8 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "hookUnit.Hook": { anchor: "hooks.md#including-am-al", summary: "in-clause hook" },
 
   "npPackage.gPackage": { anchor: "clause.md#adjectives-ɡ", summary: "adjective on a noun (gl- before, /ɡ/ after)" },
+  "npPackage.itemHook": { anchor: "joins.md#shared-after-the-join", summary: "hook on one join item, before the join word" },
+  "npPackage.itemHookBound": { anchor: "joins.md#shared-after-the-join", summary: "/b/ of a hook on one join item" },
   "npPackage.Z": { anchor: "word-endings.md#greeting", summary: "/z/ noun" },
   "npPackage.D": { anchor: "clause.md#direct-object-d", summary: "/d/ noun" },
   "npPackage.B": { anchor: "clause.md#extra-nouns", summary: "/b/ noun" },

@@ -724,6 +724,16 @@ When an adjective or extra noun is meant for the **whole list** (*both challengi
 >
 > "(challenging dog) and (challenging cat)."
 
+A hook belongs to one item the same way. Put the hook and its `/b/` right after that item, before the join word: **`em`** plus a resume gives *Azawan and his dog*.
+
+> `zazawan zodogal em bazar zal vowogal.`
+>
+> [z-Azawan | [z-dog | [used-by | b-←Azawan]] | z-and] | v-walk
+>
+> "Azawan and his dog walk."
+
+Only the item just before the join word takes a hook this way. A hook anywhere else in the clause stays an extra noun of the clause.
+
 > `zodogal zagadal zam gegabem bazawan.`
 >
 > [z-dog | z-cat | z-and.open | [g-ownership | b-Azawan]]

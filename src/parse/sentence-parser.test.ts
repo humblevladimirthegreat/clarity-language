@@ -113,6 +113,35 @@ describe("sentence-parser synthetic", () => {
     assert.equal(pair && "boundAdjs" in pair ? pair.boundAdjs?.[0]?.word.raw : undefined, "gamazam");
   });
 
+  it("puts a hook + /b/ before a join word on the item before it", () => {
+    const units = parseSentenceTokens(tokens("zazawan zodogal em bazar zal vowogal.")).utterances[0]!.bodies[0]!.clause.units;
+    assert.equal(units.length, 2);
+    const np = units[0]!;
+    const items = np.kind === "np" ? np.coord.parts[0]!.items : [];
+    assert.equal(items.length, 2);
+    const dog = items[1]!;
+    const hook = dog.kind === "package" ? dog.package.adjs[0] : undefined;
+    assert.equal(hook?.word.raw, "em");
+    assert.equal(hook?.bound?.raw, "bazar");
+  });
+
+  it("keeps a hook that is not right before a join word on the clause", () => {
+    const units = parseSentenceTokens(tokens("zodogal em bazawan zagadal zal vowogal.")).utterances[0]!.bodies[0]!.clause.units;
+    assert.equal(units[1]!.kind, "hook");
+  });
+
+  it("reads a signed measure on a time pole with no channel", () => {
+    const units = parseSentenceTokens(tokens("yel zehodon vaheham hodam bazazam grawol.")).utterances[0]!.bodies[0]!.clause.units;
+    const pole = units.at(-1)!;
+    assert.equal(pole.kind === "h" ? pole.unit.word.raw : undefined, "hodam");
+    assert.equal(pole.kind === "h" ? pole.unit.boundAmount?.raw : undefined, "grawol");
+  });
+
+  it("reads a command with only a /ɡ/ body", () => {
+    const units = parseSentenceTokens(tokens("yel geyayem.")).utterances[0]!.bodies[0]!.clause.units;
+    assert.deepEqual(units.map((u) => u.kind), ["predicate"]);
+  });
+
   it("keeps a stance join fence after /th/ words", () => {
     const units = parseSentenceTokens(tokens("zazawan vawalal thuvuvum thul.")).utterances[0]!.bodies[0]!.clause.units;
     const raws = units.flatMap((u) => (u.kind === "h" ? [u.unit.word.raw] : []));
