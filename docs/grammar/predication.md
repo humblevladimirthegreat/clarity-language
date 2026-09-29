@@ -60,7 +60,7 @@ The same holds with a `/ɡ/` word after the noun, when the noun is a new common 
 >
 > "There is a big dog."
 
-With a name or a resumed noun, the listener already knows the thing, so the `/ɡ/` word is a [property](#classification-property): `zazawan gamadam.` is *Azawan is challenging*, and `zodogar gelavam.` is *The dog is big*.
+With a name or a resumed noun, the listener already knows the thing, so the `/ɡ/` word is a [property](#classification-property): `zazawan gamadam.` is *Azawan is challenging*, and `zodogar gelavam.` is *The dog is big*. Later, a noun marked as [someone's](hooks.md#genitive) counts as known too, so *my dog is big* is a property claim as well.
 
 Later, an extra-noun [hook](hooks.md#extra-noun) after the noun can say **where** the thing is.
 

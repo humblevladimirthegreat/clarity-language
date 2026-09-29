@@ -836,6 +836,13 @@ For *just* and *about to*, use the [just-short](numbers.md#just-short) amount wi
 >
 > "It is about to rain (from the clouds)."
 
+For *soon*, soften that hair with open **-m**: **`brabum`** is *a short while after now*. It is later than *about to* (`brabul`) but still close, unlike open-ended *later* (`bral`).
+
+> `thevem brabum verehel.`
+> [th-INFERRED | b-+-e-.about] | v-rain
+>
+> "It will rain soon (from the clouds)."
+
 > `zalahen thabem bagazem grurel vezebal.`
 > z-Alahen | [th-PATTERN | [b-hour | g-minus-three]] | v-sleep
 >

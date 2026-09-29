@@ -506,6 +506,24 @@ For *my* and *your*, put the [speaker or listener](pronouns.md#special-pronouns)
 >
 > "My dog sleeps."
 
+To describe the thing, put its `/ɡ/` word **between** the noun and **`em`**. The adjective stays on the noun, and `em` still attaches to the noun. A `/ɡ/` word **after** the `/b/` describes B instead ([complex chaining](clause.md#complex-chaining)).
+
+> `zodogal gelavam em bamegun vezebal.`
+>
+> [z-dog | g-big] | [used-by | b-speaker] | v-sleep
+>
+> "My big dog sleeps."
+
+With no verb, the same order is a sentence. A noun marked with `em` is one the listener can pick out, so the `/ɡ/` word is a [property](predication.md#classification-property), not *there is …*.
+
+> `zodogal gelavam em bamegun.`
+>
+> [z-dog | g-big] | [used-by | b-speaker]
+>
+> "My dog is big."
+
+**Compare with:** `zodogal gelavam.` is *There is a big dog* ([existence](predication.md#existence)): a new noun with no `em` introduces the thing. `zodogal em bamegun gelavam` puts *big* on the speaker, not the dog. `zodogal em bamegun.` alone says your dog is here (*there's my dog*).
+
 Things B uses include places B lives or sits, tools and rides B uses, ideas B works with, and B's turn or time. Other kinds of *'s* each have their own word:
 
 | English *'s* | Use |
@@ -837,6 +855,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *page* | `abehel` | |
 | *camera* | `agahol` | |
 | *radio* | `eredel` | |
+| *red* | `eredal` | |
 | *write* | `varadal` | |
 | *tell* | `vezebel` | `ezebel` *speech* |
 
@@ -930,6 +949,14 @@ anyway | z-Alahen | v-tell
 z-Azawan | d-page | [used-by | b-Alahen] | v-write
 :::
 
+**12.** *Alahen's camera is red.*
+
+::: details Show answer
+`zagahol geredal em balahen.`
+
+[z-camera | g-red] | [used-by | b-Alahen]
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zunuzel am zahaben ul zazawan.`
@@ -1011,6 +1038,15 @@ z-Azawan | v-write | [on | b-page]
 z-newspaper | v-tell . for.example | z-Ahaben | v-tell
 
 *The newspaper tells. For example, Ahaben tells.*
+:::
+
+**10.** `zunuzel geredal em bazawan.`
+
+::: details Show answer
+
+[z-newspaper | g-red] | [used-by | b-Azawan]
+
+*Azawan's newspaper is red.*
 :::
 
 ## Advanced {#advanced}

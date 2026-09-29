@@ -103,6 +103,20 @@ A one-off episode and a standing pattern use the same poles. Add extra words for
 
 **Compare with:** *always* / *every* / *never* as exceptionlessness uses [universality](knowing.md#universality). **CAUSE** is **`thegem`**.
 
+### Hoping something will happen {#hope-forecast}
+
+**Needs:** [Hopefully](sakes.md#speaker-attitude) · [forecasts](knowing.md#forecast) · [evidentiality](knowing.md#evidentiality) · [soon](knowing.md#dated-channel)
+
+English *I hope X will happen* is two claims: you want it, and you expect it. **`thevegem`** gives the wanting. The *will* is a [forecast](knowing.md#forecast), so it needs a channel plus **`bral`** (or **`brabum`** for *soon*). If nothing backs it but your gut, the honest channel is FELT: faint **`thahur`** for a slim hope, **`thahum`** for an ordinary one.
+
+> `thevegem thahur brabum hewem verehel.`
+>
+> th-hope | [th-FELT.weak | b-+-e-.about] | h-no-longer | v-rain
+>
+> "I hope the rain stops soon."
+
+**Compare with:** **`thevegem`** with no channel and no offset is hope about now: `zazawan thevegem vowogal.` is *Hopefully Azawan walks.*
+
 ## Starting and stopping {#phase-verbs}
 
 **Needs:** [objects `/d/`](clause.md#beginner), [word endings](word-endings.md).

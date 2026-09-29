@@ -16,7 +16,8 @@ Prosody
 final exam
 
 save for near end of limit resets:
--review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by overlay-roots.
+-review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.
+-review published-lexicon for psychology - are there any abstract roots that are prone to cognitive biases that would benefit from special attention such as carefully choosing the concrete
 -mass lexical compound adding
 -do a style pass in grammar-docs. Check for adherence to doc-style and otherwise ensure natural sounding explanations.
 -vocab bank and exercise revamp: introduce new vocabulary, follow standards for language teaching

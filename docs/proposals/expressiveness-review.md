@@ -65,7 +65,7 @@ Checklists miss things that only surface in real use. Translate English sentence
 
 Use the [Conlang Syntax Test Cases](https://cofl.github.io/conlang/resources/mirror/conlang-syntax-test-cases.html) (218 sentences, graded from *The sun shines.* to multi-clause reported speech; curated from ~1200 sentences to remove syntactic duplicates) as a fixed, external sentence set. Sentences we did not write avoid picking examples Agazan already handles well, and a shared corpus makes results comparable with other conlangs.
 
-- [ ] Copy the list into `docs/meta/syntax-test-corpus.md` (numbered, source credited) as the working sheet; add an Agazan translation + parser check per sentence. Keep the original numbering so rows can cite `STC-nn`.
+- [~] Copy the list into `docs/meta/syntax-test-corpus.md` (numbered, source credited) as the working sheet; add an Agazan translation + parser check per sentence. Keep the original numbering so rows can cite `STC-nn`. *(List copied; STC-1–50 translated; findings in `docs/meta/syntax-test-results.md`.)*
 - [ ] Split into batches of ~30 (one agent per batch, in list order, since difficulty rises); each stopping point becomes a ledger row citing `STC-nn` (dedupe against Phase 1 IDs).
 - [ ] Keep the **by design** rule: a sentence whose English form is deliberately not mirrored (e.g. *is* copula, tense) is **covered** if the meaning has a natural route.
 
@@ -134,7 +134,7 @@ For each empty cell, record one of:
 |-------|--------|------|
 | 0 — Setup | [x] | 2026-09-25 |
 | 1 — English coverage checklist | [x] | 2026-09-25 |
-| 2 — Real-text sampling | [ ] | |
+| 2 — Real-text sampling | [~] | 2026-09-29 |
 | 3 — Extension sweep | [ ] | |
 | 4 — Triage and proposals | [ ] | |
 | 5 — Apply | [ ] | |

@@ -167,7 +167,7 @@ function isGreeting(clause: Clause): boolean {
   return !head.pos && head.ending === "n" && adjs.length === 0 && !glAdj;
 }
 
-/** Existence: no `/v/`, a new `/z/` noun first, then only `/ɡ/`, hooks, or `/b/` (predication.md § existence). */
+/** Existence: no `/v/`, a new `/z/` noun first , then only `/ɡ/`, hooks, or `/b/` (predication.md § existence). */
 function isExistence(clause: Clause): boolean {
   const [first, ...rest] = clause.units;
   if (first?.kind !== "np" || first.coord.level !== "z") return false;
@@ -176,8 +176,12 @@ function isExistence(clause: Clause): boolean {
   );
   const described =
     rest.some((unit) => unit.kind === "predicate" || unit.kind === "gCoord") || heads.some((pkg) => pkg.adjs.length > 0);
-  // A name or resume with a /ɡ/ word is a property claim, not existence.
-  const known = heads.some((pkg) => pkg.head.ending === "n" || pkg.head.ending === "r");
+  // A name, a resume, or a noun anchored by used-by `em` + `/b/` is known, so a /ɡ/ word is a property claim.
+  const anchored = rest.some((unit, i) => {
+    const next = rest[i + 1];
+    return unit.kind === "hook" && unit.word.raw === "em" && next?.kind === "np" && next.coord.level === "b";
+  });
+  const known = anchored || heads.some((pkg) => pkg.head.ending === "n" || pkg.head.ending === "r");
   if (described && known) return false;
   return rest.every(
     (unit) => unit.kind === "predicate" || unit.kind === "gCoord" || unit.kind === "hook" || (unit.kind === "np" && unit.coord.level === "b"),

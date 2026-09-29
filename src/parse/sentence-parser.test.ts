@@ -69,6 +69,16 @@ describe("sentence-parser synthetic", () => {
     assert.equal(factorOf("zazawan zalahen zael gelavam hral."), undefined);
   });
 
+  it("takes digitless bral as a shared time scale after a rank join only", () => {
+    const sharedOf = (text: string) => {
+      const unit = parseSentenceTokens(tokens(text)).utterances[0]!.bodies[0]!.clause.units[0]!;
+      const part = unit.kind === "np" ? unit.coord.parts.find((p) => p.join) : undefined;
+      return part?.shared.map((item) => ("word" in item ? item.word.raw : item.raw));
+    };
+    assert.deepEqual(sharedOf("zazawan zalahen zel bral vevahal."), ["bral"]);
+    assert.deepEqual(sharedOf("zazawan zalahen zal bral vevahal."), []);
+  });
+
   it("keeps a stance join fence after /th/ words", () => {
     const units = parseSentenceTokens(tokens("zazawan vawalal thuvuvum thul.")).utterances[0]!.bodies[0]!.clause.units;
     const raws = units.flatMap((u) => (u.kind === "h" ? [u.unit.word.raw] : []));

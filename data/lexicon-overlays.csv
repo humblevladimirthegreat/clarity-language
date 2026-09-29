@@ -113,6 +113,9 @@ eyen,b,☯️,benchmark,Average,judgment benchmark Average (population mean),yin
 ahen,z,🐹,benchmark,Typical,judgment benchmark Typical (modal / usual case),hamster on a wheel of routine; routine is the typical standard,comparatives.md#judgment-benchmarks-worse-than
 ahen,d,🐹,benchmark,Typical,judgment benchmark Typical (modal / usual case),hamster on a wheel of routine; routine is the typical standard,comparatives.md#judgment-benchmarks-worse-than
 ahen,b,🐹,benchmark,Typical,judgment benchmark Typical (modal / usual case),hamster on a wheel of routine; routine is the typical standard,comparatives.md#judgment-benchmarks-worse-than
+ereben,z,🔁,benchmark,Usual,judgment benchmark Usual (the ranked item's own usual level),repeat plays the same again; the usual is what you do again and again,comparatives.md#judgment-benchmarks-worse-than
+ereben,d,🔁,benchmark,Usual,judgment benchmark Usual (the ranked item's own usual level),repeat plays the same again; the usual is what you do again and again,comparatives.md#judgment-benchmarks-worse-than
+ereben,b,🔁,benchmark,Usual,judgment benchmark Usual (the ranked item's own usual level),repeat plays the same again; the usual is what you do again and again,comparatives.md#judgment-benchmarks-worse-than
 omen,z,🪞,benchmark,my-standard,judgment benchmark my standard (speaker normative standard),mirror shows a reflection; that reflection is the bar I apply,comparatives.md#judgment-benchmarks-worse-than
 omen,d,🪞,benchmark,my-standard,judgment benchmark my standard (speaker normative standard),mirror shows a reflection; that reflection is the bar I apply,comparatives.md#judgment-benchmarks-worse-than
 omen,b,🪞,benchmark,my-standard,judgment benchmark my standard (speaker normative standard),mirror shows a reflection; that reflection is the bar I apply,comparatives.md#judgment-benchmarks-worse-than
@@ -216,6 +219,8 @@ ozam,h,🥪,locative,between,locative between (two landmarks),sandwich sits in t
 ozam,g,🥪,locative,between,locative between (two landmarks),sandwich sits in the layer between sides; between takes a join of two landmarks,relations.md#locative-relations
 ebevum,h,🌉,locative,across,locative across (edge to far edge of one landmark),bridge spans the gap; across is reaching from one side to the other,relations.md#locative-relations
 ebevum,g,🌉,locative,across,locative across (edge to far edge of one landmark),bridge spans the gap; across is reaching from one side to the other,relations.md#locative-relations
+egozem,h,🎠,locative,around,locative around (figure on all sides of one landmark),carousel horses ride on all sides of the center pole; around is surrounding one landmark,relations.md#locative-relations
+egozem,g,🎠,locative,around,locative around (figure on all sides of one landmark),carousel horses ride on all sides of the center pole; around is surrounding one landmark,relations.md#locative-relations
 omem,h,🪞,similative,like,similative like (manner resemblance),mirror shows a reflection; like is resembling the model in /b/,clause.md#extra-nouns
 omem,g,🪞,similative,like,similative like (type resemblance),mirror shows a reflection; like is a counterpart of the model in /b/,relations.md#beginner
 ogem,h,💱,exchange,in-exchange-for,exchange in-exchange-for (consideration / countervalue),currency arrows swap one for another; in-exchange-for is the other side of the swap in /b/,relations.md#exchange

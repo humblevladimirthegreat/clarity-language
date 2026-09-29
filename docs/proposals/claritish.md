@@ -1,7 +1,7 @@
 # Proposal: Claritish (Agazan drop-ins for English)
 
 **Status:** PROPOSED  
-**Related:** TODO *formalize claritish*; earlier journaling Claritish in [cool-features.md](../meta/cool-features.md#introducing-claritish---modified-english-for-journaling)  
+
 **Design authority:** remains [`docs/grammar/`](../grammar/introduction.md). Claritish adds no forms. Each drop-in is an existing Agazan word, spelled exactly as the grammar page that teaches it spells it.
 
 ## Motivation

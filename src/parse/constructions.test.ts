@@ -75,6 +75,15 @@ describe("construction registry", () => {
     }
   });
 
+  it("reads a used-by noun with /ɡ/ as a property, not existence", () => {
+    for (const input of ["zagadal gabagol em bamegun.", "zodogar gelavam."]) {
+      const ids = parse(input, undefined, { constructions: true }).constructions ?? [];
+      assert.ok(!ids.includes("reading.existence"), `${input} → ${ids.join(" ")}`);
+    }
+    const ids = parse("zagadal em bamegun.", undefined, { constructions: true }).constructions ?? [];
+    assert.ok(ids.includes("reading.existence"), ids.join(" "));
+  });
+
   it("stays off by default", () => {
     assert.equal(parse("zazawan vowogal.").constructions, undefined);
   });

@@ -332,6 +332,22 @@ To say **how many more**, put the difference in `/b/` right after **`gral`**. A 
 >
 > "Azawan walks more often than Alahen."
 
+### Time scale (`bral`) {#time-scale}
+
+*Arrives earlier than* ranks **when** something happens. Write digitless **`bral`** (*later*) in the same manner slot. Rank **`e`** is *later than*, and **`ue`** is *earlier than*.
+
+> `zazawan zalahen zel bral vevahal.`
+>
+> [z-Azawan | z-Alahen | z-rank/more | b-later] | v-arrival
+>
+> "Azawan arrives later than Alahen."
+
+> `zazawan zalahen zuel bral vevahal.`
+>
+> [z-Azawan | z-Alahen | z-rank/less | b-later] | v-arrival
+>
+> "Azawan arrives earlier than Alahen."
+
 ### Covarying clauses (*the more …, the more …*) {#covarying}
 
 English *the more Azawan walks, the more Alahen sleeps* says two amounts rise together. Put digitless **`hral`** (*more than once*) or another amount word in each clause, and join the clauses with **`xael`**. As with the [frequency scale](#frequency-scale), the equal-rank join turns each amount into a scale and says the two scales move in step.
@@ -534,10 +550,11 @@ Each bar is a hosted overlay: published root plus **-n** under `/z/` `/d/` `/b/`
 | **`zezon`** | named peer bar | *Social* (in-group) | `ezol` *silhouettes* |
 | **`zegun`** | named expert bar | *Professional* (role standard) | `egul` *lab coat* |
 | **`zolon`** | named universal class | *Everyone* | `olol` *globe* |
+| **`zereben`** | the ranked item's **own** usual level | *Usual* (than it usually is or does) | `erebel` *repeat* |
 
 <a id="mine-vs-speaker"></a>
 
-**`zamegun`** is where the speaker sits on the scale (current skill). **`zomen`** is the bar the speaker applies. Ordinary people as bars are ordinary **-n** names (`zalahen`). *Walks like a duck* is [simile](relations.md#similative) (`homem`), not this *my standard* bar.
+**`zamegun`** is where the speaker sits on the scale (current skill). **`zomen`** is the bar the speaker applies. **`zereben`** is the ranked item measured against **itself**: *more slowly than usual*, *neater than you usually write*. **`zahen`** is the usual case for everyone. Ordinary people as bars are ordinary **-n** names (`zalahen`). *Walks like a duck* is [simile](relations.md#similative) (`homem`), not this *my standard* bar.
 
 Single-item `zazawan zuel gamadam` is *the least challenging* in the group in play. **`zolon`** as the second name **names** the universal class as the bar. Standalone closed **`zual`** / stock **`zuan`** stay [join](joins.md#standalone-phrase) *everything / everyone* in other slots — not this overlay.
 
@@ -550,6 +567,7 @@ Single-item `zazawan zuel gamadam` is *the least challenging* in the group in pl
 | `zamegun zezon zuel gamadam` | I am less challenging than Social |
 | `zamegun zahen zuel gamadam` | I am less challenging than Typical |
 | `zamegun zolon zuel gamadam` | I am less challenging than Everyone |
+| `zazawan zereben zel gamadam` | Azawan is more challenging than **usual** (than Azawan usually is) |
 | `zamegun zalahen zuel gezehel` | I am less skilled at singing than **Alahen** (ordinary person comparee) |
 
 ### Sake benchmarks (*enough* / *too*) {#sake-benchmarks}
@@ -625,12 +643,38 @@ English *many* and *few* compare against an unstated baseline. Agazan always nam
 >
 > "It feels like too many cats to me."
 
+How often and how early work the same way: put a bar in the list and use the [frequency scale](#frequency-scale) (`hral`) or the [time scale](#time-scale) (`bral`).
+
+> `zazawan zahen zel hral vowogal.`
+>
+> [z-Azawan | z-Typical | z-rank/more | h-how-often] | v-walk
+>
+> "Azawan often walks."
+
+> `zazawan zugen zuel bral vevahal.`
+>
+> [z-Azawan | z-Some-sake | z-rank/less | b-later] | v-arrival
+>
+> "Azawan arrives too early."
+
+To compare someone with their own habit (*eat more slowly*), use the **`zereben`** *Usual* bar.
+
+> `zohan zereben zel hezehom vagudel.`
+>
+> [z-interlocutors | z-Usual | z-rank/more | h-slow] | v-eat
+>
+> "We eat more slowly than usual."
+
 | English | Bar |
 |---------|-----|
 | *many* / *few* (for here) | **`zahen`** *Typical* |
 | *a lot* / *not many* (on average) | **`zeyen`** *Average* |
 | *too many* / *too few* (to my taste) | **`zomen`** *my standard* |
 | *too much* / *enough* / *not enough* | **`zugen`** or a specific sake bar |
+| *often* / *rarely* | **`zahen`** with **`hral`** (`zel` / `zuel`) |
+| *late* / *early* | **`zahen`** with **`bral`** (`zel` / `zuel`) |
+| *too late* / *too soon* | **`zugen`** with **`bral`** (`zel` / `zuel`) |
+| *than usual* (the same person or thing) | **`zereben`** *Usual* |
 
 The bar is never dropped. A single-item `zagadalx zel gral` already means *the most cats* (a [superlative](#superlatives)).
 

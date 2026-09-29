@@ -537,10 +537,11 @@ class AgazanSentenceParser extends CstParser {
       { ALT: () => this.CONSUME(JoinD) },
       { ALT: () => this.CONSUME(JoinB) },
     ]);
-    // SHARED /ɡ/ describes every noun; SHARED /h/ is only a scale, after a rank / equative / sequence join.
+    // SHARED /ɡ/ describes every noun; SHARED /h/ or digitless `bral` is only a scale, after a rank / equative / sequence join.
     this.OPTION({
       GATE: () =>
-        this.LA(laAfterW(this)).tokenType === G || (tokenIs(this.LA(laAfterW(this)), H) && SCALE_SERIES.has(joinSeries(this.LA(0)))),
+        this.LA(laAfterW(this)).tokenType === G ||
+        ((tokenIs(this.LA(laAfterW(this)), H) || timeScaleAhead(this.LA(1))) && SCALE_SERIES.has(joinSeries(this.LA(0)))),
       DEF: () => {
         const series = joinSeries(this.LA(0));
         this.SUBRULE(this.sharedAfterJoin);
@@ -773,6 +774,7 @@ class AgazanSentenceParser extends CstParser {
     this.OR([
       { GATE: () => this.LA(laAfterW(this)).tokenType === G, ALT: () => this.SUBRULE(this.gPackage) },
       { GATE: () => tokenIs(this.LA(laAfterW(this)), H), ALT: () => this.SUBRULE(this.hUnitRule) },
+      { GATE: () => timeScaleAhead(this.LA(1)), ALT: () => this.CONSUME(B, { LABEL: "timeScale" }) },
     ]);
   });
 }
@@ -971,6 +973,15 @@ function childNodes(parent: CstNode, key: string): CstNode[] {
 
 /** Hosted `/b/` continues as a join: zero or more further `/b/` words, then a `/b/` join word. */
 /** A digit `/h/` number with a `+` / `-` marker: the ratio after an equative scale. */
+/** Digitless `bral` after a rank join ranks by how late (comparatives.md#time-scale). */
+function timeScaleAhead(tok: IToken): boolean {
+  if (tok.tokenType !== B) return false;
+  const word = tok.payload as LexWord;
+  if (word.family.kind !== "number") return false;
+  const stem = word.family.stem;
+  return stem.marker === "+" && stem.groups.length === 0 && !stem.digitlessExp;
+}
+
 function factorAhead(tok: IToken): boolean {
   if (tok.tokenType !== H) return false;
   const word = tok.payload as LexWord;
@@ -1058,6 +1069,8 @@ function buildShared(cst: CstNode | undefined): CoordShared[] {
   if (g) return [buildGPackage(g)];
   const h = childNodes(cst, "hUnitRule")[0];
   if (h) return [buildHUnit(h)];
+  const time = childToken(cst, "timeScale");
+  if (time) return [lexWordFromToken(time)];
   return [];
 }
 

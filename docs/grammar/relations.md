@@ -263,10 +263,21 @@ Ordinary `zozal` is still *a sandwich*.
 
 On a noun it is **`gebevum`**: *Azawan, across the station, sits.* Ordinary `zebevul` is still *a bridge*.
 
+*Around* needs a root too: the figure is on **all sides** of one landmark, like a ring. Use hosted **`hegozem`** (or **`gegozem`** on a noun) with the landmark in `/b/`. (cue: 🎠 *carousel*: the horses ride on all sides of the center pole)
+
+> `zagadalx vehahel hegozem bedehal.`
+>
+> z-cat-x | v-sit | [h-around | b-train]
+>
+> "Cats sit around a train."
+
+Ordinary `zegozel` is still *a carousel*. **`om`** *near* says only that the figure is close, not that it surrounds the landmark.
+
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hozam` / `gozam`** | figure in the layer of two landmarks | *between* | `ozal` *sandwich* | 🥪: the filling sits between two sides |
 | **`hebevum` / `gebevum`** | path from one edge of the landmark to the far edge | *across* | `ebevul` *bridge* | 🌉: a bridge spans the gap |
+| **`hegozem` / `gegozem`** | figure on all sides of one landmark | *around* | `egozel` *carousel* | 🎠: the horses ride on all sides of the pole |
 
 **Compare with:** unhosted `/b/` is still the recipient. Numeric *from 3 to 5* is a [range](numbers-applied.md#ranges). *Like* is [simile](#similative). *For a hammer* as a swap is [exchange](#exchange). *On behalf of Alahen* is [proxy](#proxy). English *of* that is not a place is [of relations](#of-relations).
 
@@ -381,6 +392,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *walk* | `vowogal` |
 | *run* | `varahal` |
 | *between* | `hozam` |
+| *around* | `hegozem` |
 | *wood* | `uwal` |
 | *material* | `guwam` |
 
@@ -424,6 +436,14 @@ z-Azawan | [out-of | b-house] | v-run | [in | b-train]
 `zahaben vehahel aol behahel guwam buwal.`
 
 z-Ahaben | v-sit | [on | [b-chair | [g-material | b-wood]]]
+:::
+
+**6.** *Alahen walks around a station.*
+
+::: details Show answer
+`zalahen vowogal hegozem bezedel.`
+
+z-Alahen | v-walk | [h-around | b-station]
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}

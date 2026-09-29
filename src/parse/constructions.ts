@@ -139,6 +139,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
 
   "sharedAfterJoin.gPackage": { anchor: "joins.md#right-close", summary: "shared /ɡ/ after a join" },
   "sharedAfterJoin.hUnitRule": { anchor: "comparatives.md#manner-scale", summary: "shared /h/ after a join" },
+  "sharedAfterJoin.timeScale": { anchor: "comparatives.md#time-scale", summary: "digitless bral after a rank join: how late" },
 };
 
 /** Which slot a word may fill (`classifyTokenBranch`). */
