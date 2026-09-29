@@ -316,6 +316,16 @@ Agazan has no *will* word for the world. To say something **will** happen, use a
 >
 > "Azawan is officially scheduled to speak."
 
+<a id="forecast-question"></a>
+
+In a [question](questions.md#question), the channel asks for the **listener's** warrant: *going by the pattern you see, will it rain?* The listener answers with that channel or names a different one. Pick the channel you expect them to have: INFERRED (`thevem`) when they would work it out from clues, RECORDED (`therum`) when there is a schedule.
+
+> `yol thabem bral verehel.`
+>
+> y-question | [th-PATTERN | b-later] | v-rain
+>
+> "Will it rain, going by the pattern?"
+
 On a [feeling](sakes.md#emotion-compose) (a sake word with a locus and a motion ending, before **`gobom`**), the channel and offset date the **stimulus**. The feeling itself stays now; to date a stance, use [stance as-of](relations.md#stance-as-of).
 
 **Compare with:** [PLAN](intention.md#plan-predict) (`thumam`) says what someone **intends** to do; it needs no channel. A forecast is a claim about the world. To say **how much** later (*in three hours*), replace `bral` with a measured [dated channel](#dated-channel) (Advanced). *Could be* with no warrant is [MAY](#may), not a forecast.
@@ -913,6 +923,26 @@ The seam letter keeps its meaning: [evidence strength](#evidence-strength) on a 
 >
 > "Rumor has it Azawan thinks Alahen left."
 
+The holder word ends the way a noun for that person would. **-n** is a name. **-r** [resumes](pronouns.md#resume-r) someone already named, which is English *he* / *she* / *they*. Add [associative **-x**](plurality.md#associative) after the ending for the person and their associates. A kind of person on **-lx** is some people of that kind.
+
+> `zazawan vowogal. zalahen thevemazawar vadebal.`
+>
+> z-Azawan | v-walk . z-Alahen | th-INFERRED-←Azawan.full | v-departure
+>
+> "Azawan walks. I gather they think Alahen left."
+
+> `zalahen thevemazawanx vadebal.`
+>
+> z-Alahen | th-INFERRED-Azawan-x | v-departure
+>
+> "I gather Azawan and co. think Alahen left."
+
+> `zalahen thevemebezalx vadebal.`
+>
+> z-Alahen | th-INFERRED-person-x | v-departure
+>
+> "I gather some people think Alahen left."
+
 **The seam word is yours; the rest of the clause is the holder's.** The host says how **you** stand toward the attribution: you inferred it, heard it, guess it, or are imagining it. You claim nothing about whether the holder is right, and nothing about your own view. Everything else in the clause, wherever it sits, is the holder's:
 
 | In the clause | With no holder | With a holder |
@@ -984,6 +1014,7 @@ The default *always* is *usually* (exceptions expected), not *must happen that w
 | `… hual … thalul` + evidential `/th/` | nature plus how you know | *always, by natural necessity* (e.g. `thabem`) |
 | `… hal … thebel bazogel` | named frame | *never, under soccer rules* |
 | `zuam gagadal … thogol` | open domain + usual universality | *every cat that comes to mind, usually* |
+| `zual gavahel gahadol thogol` | [property of every member](joins.md#universals-domains-generics) + usual universality | *fire is hot, as a rule* |
 
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>

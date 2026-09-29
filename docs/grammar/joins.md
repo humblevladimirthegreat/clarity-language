@@ -681,6 +681,16 @@ The same shape with no verb says there is **none** of that kind (*there is no �
 >
 > "There is no dog."
 
+With **`zual`** / **`zuam`**, a further `/ɡ/` after the kind is a [property](predication.md#classification-property) of every member: *every K is ADJ*. The listener can already pick out *every fire*, so the clause does not say *there is …*.
+
+> `zual gavahel gahadol.`
+>
+> [z-everything | g-fire] | g-hot
+>
+> "Every fire is hot."
+
+With **`zul`** the two readings say the same thing: `zul godogal gabagol.` is both *no dog is black* and *there is no black dog*.
+
 [**`SAME`**](predication.md#identity) with no `/b/`, on a shared thing after a joined subject, compares each member with the others: *the same one* for all of them.
 
 > `zazawan zalahen zal dubugal gogal varadal.`

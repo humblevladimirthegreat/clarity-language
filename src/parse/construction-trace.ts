@@ -174,8 +174,17 @@ function isExistence(clause: Clause): boolean {
   const heads = first.coord.parts.flatMap((part) =>
     part.items.flatMap((item) => (item.kind === "package" ? [item.package] : [])),
   );
+  // `zual` / `zuam` + kind (*every K*) is known; its shared /ɡ/ is the kind, so a further /ɡ/ is the property (joins.md § universals).
+  const universal = first.coord.parts.some(
+    (part) =>
+      part.items.length === 0 &&
+      part.join?.family.kind === "joinMarker" &&
+      part.join.family.series === "ua" &&
+      (part.join.ending === "l" || part.join.ending === "m"),
+  );
   // A shared /ɡ/ after a join (`zazawan zalahen zal gamadam` *both are challenging*) describes every member.
-  const sharedG = first.coord.parts.some((part) => part.join && part.shared.some((item) => !("raw" in item) && item.word.pos === "g"));
+  const sharedG =
+    !universal && first.coord.parts.some((part) => part.join && part.shared.some((item) => !("raw" in item) && item.word.pos === "g"));
   const described =
     sharedG ||
     rest.some((unit) => unit.kind === "predicate" || unit.kind === "gCoord") ||
@@ -185,7 +194,7 @@ function isExistence(clause: Clause): boolean {
     const next = rest[i + 1];
     return unit.kind === "hook" && unit.word.raw === "em" && next?.kind === "np" && next.coord.level === "b";
   });
-  const known = anchored || heads.some((pkg) => pkg.head.ending === "n" || pkg.head.ending === "r");
+  const known = universal || anchored || heads.some((pkg) => pkg.head.ending === "n" || pkg.head.ending === "r");
   if (described && known) return false;
   return rest.every(
     (unit) => unit.kind === "predicate" || unit.kind === "gCoord" || unit.kind === "hook" || (unit.kind === "np" && unit.coord.level === "b"),

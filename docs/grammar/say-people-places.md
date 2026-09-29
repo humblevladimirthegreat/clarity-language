@@ -115,6 +115,26 @@ Keep the two verbs different. **-r** points at the latest matching event, so `za
 
 **Compare with:** `dar` is *something* (a new, unnamed thing), not the thing from an event already said.
 
+### *Someone's act* (*Azawan's walk*) {#someones-act}
+
+**Needs:** [Which person or thing](dependents.md#which-noun) · [Resume](pronouns.md#resume-r) · [Of relations](relations.md#of-relations)
+
+English *'s* on an act (*Azawan's walk*, *the monkey's tricks*) names who did it. **`em`** is for things in someone's use, and an act is not one. Say the act as its own sentence first, then resume its verb root with **-r** in the next sentence: *that walk*.
+
+> `zazawan vowogal. zalahen dowogar vahahal.`
+>
+> z-Azawan | v-walk . z-Alahen | d-←walk.full | v-see
+>
+> "Alahen sees Azawan's walk."
+
+When the thing only comes **from** B (*the sound of the drums*), use origin **`gagum`** + `/b/` instead.
+
+> `zalahen dadehal gagum badavolx vemal.`
+>
+> z-Alahen | [d-audio | [g-origin | b-drum-x]] | v-hear
+>
+> "Alahen hears the sound of the drums."
+
 ### Named handles {#named-handles}
 
 **Needs:** [Proper name `-n`](word-endings.md#proper-name--n) · [Phrasal proper names](word-endings.md#phrasal-proper-names)

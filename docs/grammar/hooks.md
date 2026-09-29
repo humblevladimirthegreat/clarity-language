@@ -130,7 +130,7 @@ Use the same **`ol …`** for *actually* when you correct what someone expected:
 
 ### Extra noun (`/b/` after the hook) {#extra-noun}
 
-When the next word after the hook is `/b/`, and the word immediately before the hook is **not** `/b/`, the hook names how that extra noun sits toward the clause (or toward the noun already in play). This is not the [recipient](clause.md#extra-nouns) (`zazawan balahen vezebel` *tells Alahen*), and it is not same-role *including* (`bazawan al balahen`). (cue: `/b/` on the right of the hook, none on the left)
+When the next word after the hook is `/b/`, the hook names how that extra noun sits toward the clause (or toward the noun already in play). This is not the [recipient](clause.md#extra-nouns) (`zazawan balahen vezebel` *tells Alahen*). Right after a recipient, the hook is same-role *including* instead (`bazawan al balahen`). (cue: `/b/` on the right of the hook, no recipient on the left)
 
 Simplex vowels (one vowel plus an ending):
 
@@ -425,7 +425,17 @@ Hook **-n** is only when the hook **titles** a proper-name phrase ([**-n**](word
 ### Extra noun: stacked vowels and loose **-m**
 <a id="extra-noun-intermediate"></a>
 
-Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). Stacked vowels name the rest of the everyday extras. Same trigger: `/b/` is immediately after the hook, and the word immediately to the left of the hook (skipping `/w/`) is **not** `/b/` (so `bazawan al balahen` stays *including*). Two extras need a non-`/b/` word between the first landmark and the next hook — the verb can sit there (`ul bezedel vowogal oel bedehal`).
+Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). Stacked vowels name the rest of the everyday extras. Same trigger: `/b/` is immediately after the hook, and the word immediately to the left of the hook (skipping `/w/`) is **not** a recipient `/b/` (so `bazawan al balahen` is *including*).
+
+A hook + `/b/` right after a **landmark** (the `/b/` of another extra, or of a host such as a [locative relation](relations.md#locative-relations)) describes that landmark: *the village near me*.
+
+> `zazawan vowogal al bahedem om bamegun.`
+>
+> z-Azawan | v-walk | [in | b-locality] | [near | b-speaker]
+>
+> "Azawan walks in the village near me."
+
+For two extras on the clause, put a non-`/b/` word between the first landmark and the next hook; the verb can sit there (`ul bezedel vowogal oel bedehal`).
 
 **-m** names a **frame extra**, not a second copy of the same extra: the landmark is a setting, not the exact contact, source, tool, or opponent.
 

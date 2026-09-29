@@ -431,7 +431,8 @@ export function senseLabel(
     return body;
   }
   if (word.family.kind === "x" && word.family.xFamily === "holder") {
-    return sensePieces(word, tables, ctx).join("-");
+    const body = sensePieces(word, tables, ctx).join("-");
+    return word.plural ? `${body}-x` : body;
   }
   const hinge =
     word.family.kind === "x" && (word.family.xFamily === "sake" || word.family.xFamily === "scope" || word.family.xFamily === "lateral")
@@ -728,7 +729,7 @@ export function morphRedundantWithLoose(
 }
 
 const MORPH_TOKEN_RE =
-  /^(?:(?:th|[zdbvgwhxy])l?-)?←*[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]*(?:-x-[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]+)*(?:-x)?$|^[<>^]$|^\^-start$|^\^-end$/;
+  /^(?:(?:th|[zdbvgwhxy])l?-)?(?:[A-Z][A-Za-z.]*-(?=←))?←*[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]*(?:-x-[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]+)*(?:-x)?$|^[<>^]$|^\^-start$|^\^-end$/;
 
 export function looksLikeMorphLine(line: string): boolean {
   const trimmed = line.trim();
@@ -1000,7 +1001,7 @@ function contextFor(
     let i = index - 1;
     while (words[i]?.pos === "w") i -= 1;
     const prev = words[i];
-    ctx.extraNounHook = next?.pos === "b" && prev?.pos !== "b";
+    ctx.extraNounHook = next?.pos === "b" && (prev?.pos !== "b" || (isHostedLandmark(words, i) && !isSpanHook(word, prev, next)));
     if (!ctx.extraNounHook && !ctx.discourseHook && isSpanHook(word, prev, next)) ctx.spanHook = true;
     // `A xam al B`: a hook right after a clause join opens that conjunct (glue). After a stand-in
     // clause (`xual ul …`, nothing clause-like before it) the hook is same-role instead.
@@ -1013,6 +1014,22 @@ function contextFor(
     ctx.restrictorListed = Boolean(prev && (prev.pos === "h" || prev.pos === "th" || prev.pos === "w"));
   }
   return ctx;
+}
+
+/**
+ * The `/b/` phrase ending at `bIndex` is a landmark: the `/b/` of an extra-noun hook or of an `/h/` / `/ɡ/` host.
+ * A hook + `/b/` after it describes that landmark (hooks.md § extra noun); after a recipient it is same-role.
+ */
+function isHostedLandmark(words: LexWord[], bIndex: number): boolean {
+  let j = bIndex - 1;
+  while (j >= 0 && (words[j]!.pos === "b" || words[j]!.pos === "w")) j -= 1;
+  const host = words[j];
+  if (!host) return false;
+  if (host.pos === "h" || host.pos === "g") return true;
+  if (host.family.kind !== "hook") return false;
+  let k = j - 1;
+  while (words[k]?.pos === "w") k -= 1;
+  return words[k]?.pos !== "b" || isHostedLandmark(words, k);
 }
 
 function bindFor(
@@ -1064,6 +1081,7 @@ function sensePieces(
   const family = word.family;
   const resume =
     word.ending === "r" &&
+    !(family.kind === "x" && family.xFamily === "holder") &&
     word.reading !== "sake" &&
     word.reading !== "ability" &&
     family.kind !== "joinMarker";
@@ -1566,6 +1584,11 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
 
   if (family.xFamily === "holder") {
     const host = tables.overlays.get(overlayKey("th", `${family.leftRoots[0]}${family.grade ?? "m"}`))?.gloss ?? family.leftRoots[0]!;
+    // Holder -r resumes the person whose view it is (knowing.md#holder).
+    if (word.ending === "r") {
+      const resumed: LexWord = { ...word, overlay: undefined, family: { kind: "content", roots: family.rightRoots ?? [] } };
+      return [host, ...sensePieces(resumed, tables, { antecedent })];
+    }
     const holder = (family.rightRoots ?? []).map((root, i, all) =>
       rootSense(root, word.ending, tables, {
         named: word.ending === "n",

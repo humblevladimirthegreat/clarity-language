@@ -211,7 +211,9 @@ function enforceRespectively(units: Unit[]): void {
 }
 
 function enforceWord(word: LexWord, tables: ClassifyTables): void {
-  if (word.plural && word.pos && NO_PLURAL_POS.has(word.pos)) {
+  // A holder names people, so it takes -x like any noun (`thodumazawanx`, knowing.md#holder).
+  const holder = word.family.kind === "x" && word.family.xFamily === "holder";
+  if (word.plural && word.pos && NO_PLURAL_POS.has(word.pos) && !holder) {
     throw new ConstructionError("pluralOnPos", word.raw);
   }
   const family = word.family;

@@ -429,6 +429,20 @@ describe("compareMorphGloss", () => {
     expectLine("zalahen thovemazawan vadebal", "z-Alahen | th-NOTIONAL-Azawan | v-departure");
   });
 
+  it("a holder takes resume -r and associative -x like any noun", () => {
+    expectLine(
+      "zazawan vadebal. zalahen thevemazawar vehahel.",
+      "z-Azawan | v-departure . z-Alahen | th-INFERRED-←Azawan.full | v-sit",
+    );
+    expectLine("zalahen thevemazawanx vadebal", "z-Alahen | th-INFERRED-Azawan-x | v-departure");
+  });
+
+  it("a hook + /b/ after a landmark describes that landmark; after a recipient it is same-role", () => {
+    expectLine("zehodon al bahedem om bamegun vuhal", "z-listener | [in | b-locality] | [near | b-speaker] | v-hatch");
+    expectLine("zazawan vadazel hegozem bavahel om bamegun", "z-Azawan | v-dance | [h-around | b-fire] | [near | b-speaker]");
+    expectLine("zazawan balahen al bahaben vezebel", "z-Azawan | b-Alahen | including | b-Ahaben | v-tell");
+  });
+
   it("label scope glosses its seam vowel", () => {
     expectLine("zalahen ganegethal", "z-Alahen | g-angry-th-once");
     expectLine("zazawan valahathel", "z-Azawan | v-lie-th-pattern");

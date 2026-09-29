@@ -75,10 +75,14 @@ describe("construction registry", () => {
     }
   });
 
-  it("reads a used-by noun with /ɡ/ as a property, not existence", () => {
+  it("reads a used-by noun, a join of names, or every + kind with /ɡ/ as a property, not existence", () => {
     for (const input of ["zagadal gabagol em bamegun.", "zodogar gelavam."]) {
       const ids = parse(input, undefined, { constructions: true }).constructions ?? [];
       assert.ok(!ids.includes("reading.existence"), `${input} → ${ids.join(" ")}`);
+    }
+    for (const input of ["zual gohahaxowodel gozodal.", "zuam gagadal gozodal."]) {
+      const every = parse(input, undefined, { constructions: true }).constructions ?? [];
+      assert.ok(!every.includes("reading.existence"), `${input} → ${every.join(" ")}`);
     }
     const both = parse("zazawan zalahen zal gamadam.", undefined, { constructions: true }).constructions ?? [];
     assert.ok(!both.includes("reading.existence"), both.join(" "));

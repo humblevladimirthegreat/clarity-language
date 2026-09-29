@@ -228,6 +228,8 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
 
   if (named) for (const form of index.forms.get(`${core}.named`) ?? []) out.add(form + suffix);
   for (const form of index.forms.get(core) ?? []) out.add(form + suffix);
+  // A form indexed with its -x already on (a holder from a doc line, `thevemebezalx`).
+  if (plural) for (const form of index.forms.get(text) ?? []) out.add(form);
 
   const spanResume = core.match(/^((?:th|gl|[zdbvgwhxy])-)?←(cite|aside|mention|opaque)(\.spoken)?$/);
   if (spanResume) {

@@ -160,10 +160,15 @@ ebom,g,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet
 azem,h,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#dependent-clauses
 azem,g,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#dependent-clauses
 ehum,h,♊,clause_pole,while,WHILE clause pole (concurrent),gemini twins mirror two sides; duality is while both sides at once,dependents.md#dependent-clauses
+ehum,g,♊,clause_pole,while,WHILE clause pole (concurrent),gemini twins mirror two sides; duality is while both sides at once,dependents.md#time-pole-on-noun
 odam,h,⏲️,clause_pole,until,UNTIL clause pole (endpoint bound),timer counts down to zero; deadline is until the endpoint,dependents.md#dependent-clauses
+odam,g,⏲️,clause_pole,until,UNTIL clause pole (endpoint bound),timer counts down to zero; deadline is until the endpoint,dependents.md#time-pole-on-noun
 odal,h,⏲️,clause_pole,by,BY clause pole (deadline: done at or before the endpoint),timer rings at zero; -l is the hard cutoff the event must beat,dependents.md#dependent-clauses
+odal,g,⏲️,clause_pole,by,BY clause pole (deadline: done at or before the endpoint),timer rings at zero; -l is the hard cutoff the event must beat,dependents.md#time-pole-on-noun
 abum,h,🎒,clause_pole,before,BEFORE clause pole (ahead-of),backpack holds what you need ahead; preparation is before the event,dependents.md#dependent-clauses
+abum,g,🎒,clause_pole,before,BEFORE clause pole (ahead-of),backpack holds what you need ahead; preparation is before the event,dependents.md#time-pole-on-noun
 ulam,h,⌛,clause_pole,after,AFTER clause pole (just-after),hourglass just emptied; recency is after the prior edge,dependents.md#dependent-clauses
+ulam,g,⌛,clause_pole,after,AFTER clause pole (just-after),hourglass just emptied; recency is after the prior edge,dependents.md#time-pole-on-noun
 agom,h,🥅,clause_pole,so-that,SO-THAT clause pole (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#dependent-clauses
 agom,g,🥅,clause_pole,so-that,SO-THAT clause pole (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#dependent-clauses
 ezadam,h,➡️,clause_pole,so-result,SO-THAT-RESULT clause pole (outcome that follows from the host),east is the way things move on; the dependent is what the host led to,dependents.md#result-pole

@@ -178,6 +178,12 @@ function isRoleAnaphor(word: LexWord): boolean {
   return word.family.kind === "x" && word.family.xFamily === "role" && word.ending === "r";
 }
 
+/** A holder's own **-r** resumes the person whose view it is (`thevemazawar`, knowing.md#holder). */
+function holderRoots(word: LexWord): string[] {
+  const family = word.family;
+  return family.kind === "x" && family.xFamily === "holder" ? (family.rightRoots ?? []) : [];
+}
+
 function isContentAnaphor(word: LexWord): boolean {
   if (word.ending !== "r") return false;
   if (word.reading === "sake") return false;
@@ -185,7 +191,7 @@ function isContentAnaphor(word: LexWord): boolean {
   if (word.family.kind === "joinMarker") return false;
   if (word.family.kind === "hook" || word.family.kind === "spanClose") return false;
   if (isSpanAnaphor(word) || isNumberAnaphor(word) || isRoleAnaphor(word)) return false;
-  return contentRoots(word).length > 0;
+  return contentRoots(word).length > 0 || holderRoots(word).length > 0;
 }
 
 function bindLatest(antecedents: Antecedent[], pred: (item: Antecedent) => boolean): LexWord | undefined {
@@ -197,7 +203,8 @@ function bindLatest(antecedents: Antecedent[], pred: (item: Antecedent) => boole
 }
 
 function bindContent(ctx: Ctx, pronoun: LexWord): void {
-  const roots = contentRoots(pronoun);
+  const holder = holderRoots(pronoun);
+  const roots = holder.length > 0 ? holder : contentRoots(pronoun);
   let match: ContentMatch | undefined;
   const antecedent = bindLatest(ctx.antecedents, (item) => {
     if (item.kind !== "content") return false;

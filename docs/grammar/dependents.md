@@ -51,7 +51,7 @@ English *whether* is that same object slot, with vowel **`o`**: **`dorl`**. The 
 
 *Because* / *if* and similar use a pole word + `/b/` **`barl`**. Keep that pair together, **last in the main sentence** (**`barl`** last). The abstract ending on the pole word is always **-m**.
 
-The pole's role letter follows the clause page. *Because*, *if*, *only if*, and *if and only if* are your [stance](clause.md#stance-th) on why the claim holds, so they take `/th/`. *Although*, *while*, *until*, *before*, *after*, and *so that* place the event, so they stay adverbs on `/h/`.
+The pole's role letter follows the clause page. *Because*, *if*, *only if*, and *if and only if* are your [stance](clause.md#stance-th) on why the claim holds, so they take `/th/`. *Although*, *while*, *until*, *before*, *after*, and *so that* place the event, so they are adverbs on `/h/`.
 
 > `zazawan vezehel theram barl zalahen vowogal.`
 >
@@ -447,6 +447,18 @@ The content can be anything a sentence says: a verbless sentence, a denied event
 
 Other role letters work the same way as the forward stand-in: **`barth`** after a pole (*because of that*), **`zarth`** as the subject.
 
+### Time poles on a noun {#time-pole-on-noun}
+
+To place a **thing** in time rather than the event (*the walk after the thunderstorm*), put the [time pole](#dependent-clauses) on `/ɡ/` right after that noun: **`gehum`** *during*, **`gabum`** *before*, **`gulam`** *after*, **`godam`** *until*, **`godal`** *by*. The `/b/` after it is the event or period, as with the `/h/` pole.
+
+> `zalahen dowogal gulam bavodel vahahal.`
+>
+> z-Alahen | [d-walk | [g-after | b-thunderstorm]] | v-see
+>
+> "Alahen sees the walk after the thunderstorm."
+
+Ordinary `zabul` is still *a backpack*.
+
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
@@ -470,6 +482,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *tell* | `vezebel` |
 | *very* | `welavam` |
 | *haste* | `hadehom` |
+| *before* (on a noun) | `gabum` |
 | *to-clause* | `derl` |
 | *lest-clause* | `durl` |
 | *that-same-claim* | `darth` |
@@ -501,6 +514,14 @@ z-Azawan | b-Alahen | v-tell | d-lest-clause | v-departure
 `zalahen varahal. zahaben vezebel darth.`
 
 z-Alahen | v-run . z-Ahaben | v-tell | d-that-same-claim
+:::
+
+**4.** *Ahaben sees the luggage before the departure.*
+
+::: details Show answer
+`zahaben dalagal gabum badebal vahahal.`
+
+z-Ahaben | [d-luggage | [g-before | b-departure]] | v-see
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}

@@ -233,9 +233,12 @@ function clauseNodes(cur: Cursor, clause: Clause): GlossNode[] {
   const units = clause.units;
   const nodes = units.map((u) => unitNodes(cur, u));
   const out: GlossNode[] = [];
+  /** Units that are a landmark: an extra-noun hook's `/b/`, or an `/h/` unit with its hosted `/b/` (hooks.md § extra noun). */
+  const landmarks = new Set<number>();
   for (let k = 0; k < units.length; k++) {
     const unit = units[k]!;
     const here = nodes[k]!;
+    if (unit.kind === "h" && unit.unit.bound) landmarks.add(k);
     if (isHookUnit(unit) && unit.word.ending === "n" && out.length > 0 && nodes[k + 1]?.length) {
       const prev = out.pop()!;
       for (const n of here) if (n.t === "leaf") n.named = true;
@@ -245,10 +248,11 @@ function clauseNodes(cur: Cursor, clause: Clause): GlossNode[] {
     }
     const next = units[k + 1];
     const prevUnit = units[k - 1];
-    const prevIsB = prevUnit?.kind === "np" && prevUnit.coord.level === "b";
+    const prevIsB = prevUnit?.kind === "np" && prevUnit.coord.level === "b" && !landmarks.has(k - 1);
     if (isHookUnit(unit) && next?.kind === "np" && next.coord.level === "b" && !prevIsB) {
       const node = group([...here, ...nodes[k + 1]!]);
       if (node) out.push(node);
+      landmarks.add(k + 1);
       k += 1;
       continue;
     }

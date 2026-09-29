@@ -40,6 +40,7 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 - Hosts are recognized by spelling: a `/th/` word that begins with a closed host root, then `l` / `m` / `r`, then a vowel, is a holder. This is safe only while no published root begins with a host root + `l` / `m` / `r` + vowel; a new root of that shape must be respelled, not given a special case.
 - Holder and source are different jobs: the holder is whose view the clause is (`themamazawan`: I hear it is Azawan's view); a person in hosted `/b/` after an evidential is where you heard it (`themam balahen`: per Alahen). Both can appear on one word.
 - Only knowing, guessing, and imagining hosts (the eight channels, MAY, NOTIONAL). DECISION, PLAN, CAUSE, sakes, and universality never host a holder; inside a holder clause they are the holder's.
+- The holder word ends like a noun for that person: **-n** name, **-r** resume, **-lx** some people of a kind, with associative **-x** after any of them (`thodumazawanx`). A group is a holder only this way; there is no generic holder without a warrant.
 - One clause, one holder, whole-clause scope regardless of position. A stance on someone's stance nests: yours in the main sentence, theirs in a dependent.
 - `/w/` after a stance word is not reserved: it grades whatever it sits before (a `/ɡ/` or an `/h/`). The parser used to reject `th w g` because the `/h/`-unit loop took any `/w/` as the start of another `/h/` unit; that was a bug, not a rule.
 

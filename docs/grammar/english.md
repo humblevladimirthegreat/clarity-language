@@ -4,7 +4,7 @@ These pages are recipes, not lessons. Each one shows how forms you already learn
 
 | Page | For English like |
 |------|------------------|
-| [People, things and places](say-people-places.md) | *as for X*, *whose*, *different from*, office titles, *do the same to it* |
+| [People, things and places](say-people-places.md) | *as for X*, *whose*, *someone's act*, *different from*, office titles, *do the same to it* |
 | [Amounts, sizes and time](say-amounts.md) | *from least to most*, *both are*, *two meters taller*, *most of*, *25% of*, units, dates |
 | [Reasons, knowledge and plans](say-reasons.md) | *because* vs *if*, *would have*, habits, *start / stop doing*, *as of 22 July*, *dreading* / *I felt then* / *it's their fault* |
 | [Asking and answering](say-questions.md) | *You saw WHAT?*, *asks who*, *Just X?* / *How about X?*, *What a big dog!*, *by the way* |
@@ -47,7 +47,8 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agazan 
 | legal ownership (*the dog Azawan owns*) | **`gegabem`** + `/b/` | [Of relations](relations.md#of-relations) |
 | social tie (*Azawan's friend*) | tie root on `/ɡ/` **-m** + `/b/` | [Social relations](relations.md#social-relations) |
 | part / contents / material (*a hand of Alahen*, *a teapot of tea*) | **`gabom`** / **`gaham`** / **`guwam`** + `/b/` | [Of relations](relations.md#of-relations) |
-| origin (*Alahen of the city*) | **`gagum`** + `/b/` | [Of relations](relations.md#of-relations) |
+| origin (*Alahen of the city*, *the sound of the drums*) | **`gagum`** + `/b/` | [Of relations](relations.md#of-relations) |
+| someone's act (*Azawan's walk*, *the monkey's tricks*) | the act as a sentence, then its verb root in **-r** | [Someone's act](say-people-places.md#someones-act) |
 | *my* belonging + sake (*my tent serves survival*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](sakes.md#personal-possession) |
 
 ### *about*
