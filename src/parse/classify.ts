@@ -87,7 +87,7 @@ export type ClassifyTables = {
   hostlessAbilityRoot: string | null;
 };
 
-function overlayKey(pos: string, senseForm: string): string {
+export function overlayKey(pos: string, senseForm: string): string {
   return `${pos}\0${senseForm}`;
 }
 
@@ -492,17 +492,45 @@ function tailLateral(word: MorphWord, tables: ClassifyTables): MorphWord | undef
   return { ...word, family: { kind: "x", xFamily: "lateral", leftRoots: family.leftRoots, rightRoots: [anchor] } };
 }
 
+/** Overlay kinds whose `/th/` word can take a holder after its grade letter (knowing.md#holder). */
+const HOLDER_HOST_KINDS = new Set(["evidential", "may", "notional"]);
+
+/**
+ * `HOST GRADE NAME` on `/th/`: an evidential, MAY or NOTIONAL root, its own **-l / -m / -r** as the seam,
+ * then whose view the clause reports (`thevemazawan`). The word grammar sees one long content root.
+ */
+function holderSeam(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {
+  const family = word.family;
+  if (word.pos !== "th" || family.kind !== "content" || family.roots.length !== 1) return undefined;
+  const root = family.roots[0]!;
+  if (tables.published.has(root)) return undefined;
+  for (let cut = 1; cut < root.length - 2; cut++) {
+    const host = root.slice(0, cut);
+    const grade = root[cut];
+    const holder = root.slice(cut + 1);
+    if (grade !== "l" && grade !== "m" && grade !== "r") continue;
+    if (!/^[aeou]/.test(holder)) continue;
+    const row = tables.overlays.get(overlayKey("th", `${host}${grade}`));
+    if (!row || !HOLDER_HOST_KINDS.has(row.kind)) continue;
+    return { ...word, family: { kind: "x", xFamily: "holder", leftRoots: [host], rightRoots: [holder], grade } };
+  }
+  return undefined;
+}
+
 /**
  * The word shape `classify` reads, before lexicon lookup: a lateral, landmark lateral or label scope
  * where the word grammar alone saw a sake shape (`gewezatheman` = *west* `th` *speaker*).
  */
 export function classifiedShape(word: MorphWord, tables: ClassifyTables): MorphWord {
-  return tailLateral(word, tables) ?? landmarkLateral(word) ?? labelScope(word, tables) ?? word;
+  const shaped = tailLateral(word, tables) ?? landmarkLateral(word) ?? labelScope(word, tables) ?? word;
+  return holderSeam(shaped, tables) ?? shaped;
 }
 
 export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
   const tailed = tailLateral(word, tables);
   if (tailed) return classify(tailed, tables);
+  const holder = holderSeam(word, tables);
+  if (holder) return classify(holder, tables);
   const lateral = landmarkLateral(word);
   if (lateral) return classify(lateral, tables);
   const scope = labelScope(word, tables);

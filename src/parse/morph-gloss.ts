@@ -26,7 +26,7 @@
  * | ordinary lexicon (`vejel`, `vajul`, …) | packed `english_by_pos` when present for this role + sense, else literal / metaphor | [glosses.md](../../docs/meta/glosses.md#role-english) |
  */
 
-import { classify, type ClassifyTables } from "./classify.js";
+import { classify, overlayKey, type ClassifyTables } from "./classify.js";
 import type { PublishedRow } from "../lexicon-search.js";
 import { CLOSED, namedEnglish } from "../closed-roots.js";
 import {
@@ -429,6 +429,9 @@ export function senseLabel(
     const body = sensePieces(word, tables, ctx).join(`-${word.family.join ?? "l"}-`);
     if (word.plural) return body ? `${body}-x` : "-x";
     return body;
+  }
+  if (word.family.kind === "x" && word.family.xFamily === "holder") {
+    return sensePieces(word, tables, ctx).join("-");
   }
   const hinge =
     word.family.kind === "x" && (word.family.xFamily === "sake" || word.family.xFamily === "scope" || word.family.xFamily === "lateral")
@@ -1559,6 +1562,18 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
     );
     const num = family.numberStem ? numericKindLabel(family.numberStem, word.pos) : "num";
     return [...host, num];
+  }
+
+  if (family.xFamily === "holder") {
+    const host = tables.overlays.get(overlayKey("th", `${family.leftRoots[0]}${family.grade ?? "m"}`))?.gloss ?? family.leftRoots[0]!;
+    const holder = (family.rightRoots ?? []).map((root, i, all) =>
+      rootSense(root, word.ending, tables, {
+        named: word.ending === "n",
+        nameLast: word.ending === "n" && i === all.length - 1,
+        pos: word.pos,
+      }),
+    );
+    return [host, holder.join("-x-")];
   }
 
   if (family.xFamily === "lateral") {

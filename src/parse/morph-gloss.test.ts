@@ -422,6 +422,13 @@ describe("compareMorphGloss", () => {
     expectLine("yel vowogal hewezathazawan", "y-command | v-walk | h-west-th-Azawan");
   });
 
+  it("a holder seam glosses its host overlay and the holder", () => {
+    expectLine("zalahen thevemazawan vadebal", "z-Alahen | th-INFERRED-Azawan | v-departure");
+    expectLine("zalahen themarazawan vadebal", "z-Alahen | th-TOLD.weak-Azawan | v-departure");
+    expectLine("zalahen thovolazawan vadebal", "z-Alahen | th-MAY-find-out-Azawan | v-departure");
+    expectLine("zalahen thovemazawan vadebal", "z-Alahen | th-NOTIONAL-Azawan | v-departure");
+  });
+
   it("label scope glosses its seam vowel", () => {
     expectLine("zalahen ganegethal", "z-Alahen | g-angry-th-once");
     expectLine("zazawan valahathel", "z-Azawan | v-lie-th-pattern");

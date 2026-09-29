@@ -182,6 +182,7 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
   sake: { anchor: "sakes.md#time-horizon-endings-on-met", summary: "sake word" },
   scope: { anchor: "predication.md#label-scope", summary: "label scope" },
   lateral: { anchor: "roles.md#viewpoint-laterals", summary: "viewpoint lateral" },
+  holder: { anchor: "knowing.md#holder", summary: "holder seam" },
   ability: { anchor: "x-compounds.md#conversation-length", summary: "ability compound" },
   numeric: { anchor: "numeric-derivation.md#numeric-derivation", summary: "numeric derivation" },
   compound: { anchor: "x-compounds.md#two-roots-one-word", summary: "ordinary x compound" },

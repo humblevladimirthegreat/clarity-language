@@ -11,9 +11,7 @@ use [skip-cd] for amplify to not deploy.
 Prosody
 -remove & as punctuation?
 -confirm we still have chats after rebuild
--consider removing happy/sad from lexicon after determining how to talk about other people's stances
 -expressiveness review
--grammar simplification pass: could we remove special overlay forms and re-use existing grammar? Stacked hooks might be able to do some of the possessive/genitive readings
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 
 final exam

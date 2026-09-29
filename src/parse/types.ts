@@ -54,7 +54,7 @@ export type NumberStem = {
   digitlessExp?: string;
 };
 
-export type XFamily = "span" | "role" | "sake" | "scope" | "lateral" | "ability" | "numeric" | "compound";
+export type XFamily = "span" | "role" | "sake" | "scope" | "lateral" | "holder" | "ability" | "numeric" | "compound";
 
 export type SpanCloseFlavor = "complete" | "editorial" | "closeAll";
 
@@ -88,6 +88,8 @@ export type MorphWordFamily =
       numberStem?: NumberStem;
       /** Lexical join before a numeric stem (`l` everyday host, `m` abstract). */
       join?: "l" | "m";
+      /** Holder seam: the host's own grade letter before the holder (knowing.md#holder). */
+      grade?: "l" | "m" | "r";
     }
   | { kind: "spanClose"; flavor: SpanCloseFlavor }
   | { kind: "hook"; form: string }

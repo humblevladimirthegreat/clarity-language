@@ -287,7 +287,7 @@ A **direction** locus says what the charge points at:
 | **`ua`** | *out of* | COLLAPSE | *out of fight: giving up* (*defeated by*) |
 | **`ae`** | *using* | FAWN | *using yourself to placate* (*appeasing*) |
 
-A direction names the **dominant** pull when feelings mix; use two feeling words for two pulls. AIMED lands on a party or a goal; RESISTING opposes an outcome or a demand. ON-BEHALF is your own feeling about someone else's stake; FAWN is placating someone for your own safety.
+A direction names the **dominant** pull when feelings mix; use two feeling words for two pulls. AIMED lands on a party or a goal; RESISTING opposes an outcome or a demand. ON-BEHALF is your own feeling about someone else's stake (their own feeling needs a [holder](knowing.md#holder)); FAWN is placating someone for your own safety.
 
 Name the landmark with a `/b/` word right after the feeling (after **`gobom`** when the feeling is on `/w/`): the target of a direction, or the situation for CIRCUM. INTERNAL and UNPLACED take no `/b/`. A direction with no `/b/` points at the stimulus noun when there is one, otherwise at someone unnamed.
 

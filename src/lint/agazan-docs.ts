@@ -1,4 +1,5 @@
 import {
+  classifiedShape,
   classify,
   knownLexiconRoots,
   lexiconContentRoots,
@@ -159,7 +160,7 @@ export function lintAgazanToken(
 
   let word;
   try {
-    word = parseWord(core);
+    word = classifiedShape(parseWord(core), tables);
   } catch (error) {
     if (!looksLikeFullSpelledWord(core)) {
       return null;

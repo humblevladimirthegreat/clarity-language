@@ -593,7 +593,7 @@ Resume works as on `/h/`: **`thener`** / **`thumer`** with no `/b/` on the next 
 
 Changing your mind is then a change of now, not a contradiction: *I was fairly sure on the 22nd* (`thenem`) and *I'm unsure now* (no pair) are both true.
 
-**Compare with:** an evidential is how you know **at speech-now**, even under `/th/` *as-of*. *I remember feeling it* is a remembering channel (`thunom`) plus `thenem`.
+**Compare with:** an evidential is how you know **at speech-now**, even under `/th/` *as-of*. Someone else's stance takes a [holder](knowing.md#holder); with one, `thenem` dates **their** stance. *I remember feeling it* is a remembering channel (`thunom`) plus `thenem`.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|

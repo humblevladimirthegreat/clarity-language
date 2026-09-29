@@ -444,6 +444,14 @@ A named citation is a hello (`azawan.`). Add mid-word **`x`** plus **`a`** / **`
 
 [Knowing](knowing.md#may-hold)
 
+### Holder
+
+Whose view a clause reports. The name is fused onto an evidential, **MAY**, or **NOTIONAL** after that word's own ending letter (`thevemazawan`). The fused word is the speaker's warrant; every other stance in the clause is the holder's.
+
+[Knowing](knowing.md#holder)
+
+**Compare with:** a person in hosted `/b/` after an evidential is the source you heard it from, not the holder. The ON-BEHALF locus is your own feeling about someone else's stake.
+
 ### Host
 
 Content root a sake `th`-stance, an ability `x`-stance, or a numeric-derivation join attaches to.

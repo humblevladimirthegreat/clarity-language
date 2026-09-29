@@ -629,8 +629,12 @@ class AgazanSentenceParser extends CstParser {
   });
 
   public hCoord = this.RULE("hCoord", () => {
-    this.AT_LEAST_ONE(() => {
-      this.SUBRULE(this.hCoordPart);
+    // A `/w/` after a `/th/` or `/h/` word grades whatever it sits before; it opens another part only before `/h/`.
+    this.AT_LEAST_ONE({
+      GATE: () => isStanceJoin(this.LA(1)) || this.LA(laAfterW(this)).tokenType === H,
+      DEF: () => {
+        this.SUBRULE(this.hCoordPart);
+      },
     });
   });
 

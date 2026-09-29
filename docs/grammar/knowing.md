@@ -863,6 +863,87 @@ The unit sets how wide *now* is. Zero hours is *right now*; zero [days](numbers-
 
 Use zero on a channel that takes either sign. **LIVE** `thodum` already means *now in view*, so it needs no offset. **WITNESSED** takes **`-`** only and PLAN takes **`+`** only, so zero is not a sentence on them.
 
+### Whose view (holder) {#holder}
+<a id="holder-seam"></a>
+
+English *Azawan thinks…*, *she's upset*, and *he doubts it* say what is in someone else's mind as if you could see it. Agazan only lets you name whose view a clause is when you also say how you know it. Glue the person onto an evidential, [MAY](#may), or [NOTIONAL](#notional): keep the host's own ending letter (**-l**, **-m**, or **-r**) and write the holder's name straight after it, so that letter becomes the seam. The holder cannot be written any other way, so there is no holder without a warrant. (cue: the name hangs off the way you know it)
+
+> `zalahen thevemazawan vadebal.`
+>
+> z-Alahen | th-INFERRED-Azawan | v-departure
+>
+> "I gather Azawan thinks Alahen left."
+
+> `zalahen themamazawan vadebal.`
+>
+> z-Alahen | th-TOLD-Azawan | v-departure
+>
+> "I hear Azawan thinks Alahen left."
+
+> `zalahen thovomazawan vadebal.`
+>
+> z-Alahen | th-MAY-Azawan | v-departure
+>
+> "Maybe Azawan thinks Alahen left." — a guess about Azawan's view, marked as a guess
+
+> `zalahen thovemazawan vadebal.`
+>
+> z-Alahen | th-NOTIONAL-Azawan | v-departure
+>
+> "Imagine it as Azawan sees it: Alahen left." — taking Azawan's point of view on purpose
+
+The seam letter keeps its meaning: [evidence strength](#evidence-strength) on a channel, the [hold](#may-hold) on MAY or NOTIONAL. The name keeps its own **-n** at the end. **-n** is never a seam.
+
+> `zalahen thevelazawan vadebal.`
+>
+> z-Alahen | th-INFERRED.strong-Azawan | v-departure
+>
+> "Strong clues say Azawan thinks Alahen left."
+
+> `zalahen themarazawan vadebal.`
+>
+> z-Alahen | th-TOLD.weak-Azawan | v-departure
+>
+> "Rumor has it Azawan thinks Alahen left."
+
+**The seam word is yours; the rest of the clause is the holder's.** The host says how **you** stand toward the attribution: you inferred it, heard it, guess it, or are imagining it. You claim nothing about whether the holder is right, and nothing about your own view. Everything else in the clause, wherever it sits, is the holder's:
+
+| In the clause | With no holder | With a holder |
+|---------------|----------------|---------------|
+| The event | you assert it | what the holder takes to be so; you do not assert it |
+| MAY, CAUSE poles, DECISION, prescription | yours | the holder's |
+| [Sake](sakes.md) words and [emotion compose](sakes.md#emotion-compose), with their endings | your stake and feeling | the holder's stake and feeling |
+| A `/ɡ/` sake's *my* reading ([personal possession](sakes.md#personal-possession)) | your belonging | the holder's belonging |
+| Another evidential | how you know | how the holder knows |
+
+> `zemehol wonathumol gobom balahen thevemazawan.`
+>
+> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Alahen]] | th-INFERRED-Azawan
+>
+> "I gather Azawan resents Alahen about the memo, gone still." — the stake, the aim, and the stillness are Azawan's
+
+> `zalahen thevemazawan thodum vadebal.`
+>
+> z-Alahen | th-INFERRED-Azawan | th-LIVE | v-departure
+>
+> "I gather Azawan saw Alahen leave." — LIVE is how Azawan knows
+
+Pronouns and speech moves stay yours: **`SELF`** is still you, and the sentence is still your turn. The stance is the holder's **now**; to date it, add [stance as-of](relations.md#stance-as-of) (`thenem`), which then dates **their** stance. An evidential host keeps its hosted `/b/`, so `themamazawan bral` is *I hear Azawan expects it*.
+
+**One clause, one holder.** The holder covers its clause and any dependent sentence inside it; a new `/x/` sentence is yours again unless it has its own seam word. A dependent with its own seam word switches holder for that sentence only. That is how you take a stance on someone else's stance: your stance in the main sentence, theirs in a dependent.
+
+> `wonathum gobom zarl zalahen wonathum gobom thevemazawan.`
+>
+> [w-relatedness-unmet-modifiable | g-stimulus] | z-that-clause | [z-Alahen | [w-relatedness-unmet-modifiable | g-stimulus]] | th-INFERRED-Azawan
+>
+> "It sits badly with me that, as I gather, Alahen sits badly with Azawan."
+
+The first sake word has no holder, so it is yours. The second is Azawan's.
+
+Only the eight channels, MAY, and NOTIONAL take a holder: they are the ways you can have access to someone else's view. When they told you in their own words, a [cite](spans.md#writing) keeps their wording instead.
+
+**Compare with:** being upset **for** Azawan is your own feeling about Azawan's stake (the ON-BEHALF locus in [emotion compose](sakes.md#emotion-compose)); with a holder the feeling is Azawan's. *On behalf of* Azawan is [proxy](relations.md#proxy) (`hadem`). A [dictionary compound](x-compounds.md#lexical-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
+
 ### Universality {#universality}
 <a id="universality-mood"></a>
 
@@ -900,7 +981,7 @@ The default *always* is *usually* (exceptions expected), not *must happen that w
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**. Score leftover against the ledger; repeat the channel. The later items keep the domain fence and add how exceptionless the claim is.
+Short drills for Advanced. Try each item before opening **Show answer**. Score leftover against the ledger; repeat the channel. The middle items keep the domain fence and add how exceptionless the claim is. The last items name a holder: fuse the name onto the host's ending letter.
 
 **Setting:** a film archive
 
@@ -935,6 +1016,12 @@ Short drills for Advanced. Try each item before opening **Show answer**. Score l
 | *cat* | `agadal` | | |
 | *sleep* | `vezebal` | `ezebal` *sleep* | |
 | evidential *pattern* | `abem` | `abel` *paw-prints* | 🐾: a trail of what usually happens |
+| *departure* | `vadebal` | | |
+| *INFERRED* | `thevem` | `evel` *investigate* | |
+| *INFERRED.strong* | `thevel` | `evel` *investigate* | |
+| *TOLD* | `themam` | `emal` *ear* | |
+| *TOLD.weak* | `themar` | `emal` *ear* | |
+| *NOTIONAL* | `thovem` | `ovel` *theater* | |
 
 #### English → Agazan {#advanced-english-to-agazan}
 
@@ -992,6 +1079,30 @@ z-Alahen | h-never | v-punch | [th-RULE | b-soccer]
 `zuam gededem thogol.`
 
 [z-everything.open | g-claim] | th-COMMON
+:::
+
+**8.** *I gather Azawan thinks Alahen left.*
+
+::: details Show answer
+`zalahen thevemazawan vadebal.`
+
+z-Alahen | th-INFERRED-Azawan | v-departure
+:::
+
+**9.** *Rumor has it Alahen thinks Azawan sleeps.*
+
+::: details Show answer
+`zazawan themaralahen vezebal.`
+
+z-Azawan | th-TOLD.weak-Alahen | v-sleep
+:::
+
+**10.** *Maybe Alahen thinks Azawan might write.* (the second *might* is Alahen's)
+
+::: details Show answer
+`zazawan thovomalahen thovom varadal.`
+
+z-Azawan | th-MAY-Alahen | th-MAY | v-write
 :::
 
 #### Agazan → English {#advanced-agazan-to-english}
@@ -1059,6 +1170,33 @@ z-Azawan | h-never | v-sit | [th-RULE | b-soccer]
 *Every proof that comes to mind, usually.*
 :::
 
+**8.** `zalahen thevelazawan vowogal.`
+
+::: details Show answer
+
+z-Alahen | th-INFERRED.strong-Azawan | v-walk
+
+*Strong clues say Azawan thinks Alahen walks.*
+:::
+
+**9.** `zazawan thovemalahen vehahel.`
+
+::: details Show answer
+
+z-Azawan | th-NOTIONAL-Alahen | v-sit
+
+*Imagine it as Alahen sees it: Azawan sits.*
+:::
+
+**10.** `zazawan themamalahen thodum vowogal.`
+
+::: details Show answer
+
+z-Azawan | th-TOLD-Alahen | th-LIVE | v-walk
+
+*I hear Alahen saw Azawan walk.* (LIVE is how Alahen knows)
+:::
+
 ## See also
 
 - Sake ascription: [sakes.md](sakes.md)
@@ -1067,3 +1205,4 @@ z-Azawan | h-never | v-sit | [th-RULE | b-soccer]
 - Clock / date / when-frames: [numbers-applied.md](numbers-applied.md#time)
 - Habitual *always*: [restrictors.md](restrictors.md)
 - Usual-climate universality: [Universality](#universality)
+- Someone else's view: [Whose view (holder)](#holder)
