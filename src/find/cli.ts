@@ -3,12 +3,17 @@
  *
  *   node scripts/find.mjs --word role=v,ending=r
  *   node scripts/find.mjs --seq role=w role=g docs/grammar/clause.md
+ *   node scripts/find.mjs --word 'raw=.*em,family=hook'
+ *   node scripts/find.mjs --seq family=hook,raw=em 'role!=[zdb]' role=b
  *   node scripts/find.mjs --construction 'overlay.egega*' --count
+ *   node scripts/find.mjs --construction '/^sentence\.hUnitRule\./'
  *
- * Terms are `key=value[,key=value]` with keys role / ending / root / family /
- * overlay / unit / raw (a regex). `--seq` takes terms until the next flag and
- * matches adjacent words. Several flags must all match. Paths default to
- * docs/grammar and docs/examples.
+ * Terms are `key=regex[,key=regex]` with keys role / ending / root / family /
+ * overlay / unit / raw. Each regex must match the whole field (`raw=em` is the
+ * word `em`, `raw=.*em` any word ending in `em`); `key!=regex` negates. `--seq`
+ * takes terms until the next flag and matches adjacent words. `--construction`
+ * takes an exact ID, a `prefix*`, or a `/regex/`. Several flags must all match.
+ * Paths default to docs/grammar and docs/examples.
  */
 import { readFileSync } from "node:fs";
 import { relative } from "node:path";
@@ -16,16 +21,40 @@ import { relative } from "node:path";
 import { loadDefaultTables } from "../parse/index.js";
 import { listMarkdown } from "../markdown-files.js";
 import { collectExamples, type Example } from "./examples.js";
-import { matchesTerm, matchSequence, parseTerm, type Term } from "./query.js";
+import { matchesTerm, matchSequence, parseTerm as parseTermStrict, type Term } from "./query.js";
 
 type Query =
   | { kind: "word"; term: Term }
   | { kind: "seq"; terms: Term[] }
-  | { kind: "construction"; pattern: string };
+  | { kind: "construction"; test: (id: string) => boolean };
 
-function usage(message: string): never {
-  console.error(`${message}\nusage: find.mjs [--word TERM] [--seq TERM TERM…] [--construction ID|prefix*] [--json|--count] [paths…]`);
-  process.exit(2);
+/** `--construction` pattern: `/regex/` (unanchored), `prefix*`, or an exact ID. */
+function constructionTest(pattern: string): (id: string) => boolean {
+  const regex = /^\/(.+)\/$/s.exec(pattern);
+  if (regex) {
+    let re: RegExp;
+    try {
+      re = new RegExp(regex[1]!, "u");
+    } catch (error) {
+      usage(`bad --construction regex: ${(error as Error).message}`);
+    }
+    return (id) => re.test(id);
+  }
+  if (pattern.endsWith("*")) return (id) => id.startsWith(pattern.slice(0, -1));
+  return (id) => id === pattern;
+}
+
+function usage(message: string, code = 2): never {
+  console.error(`${message}\nusage: find.mjs [--word TERM] [--seq TERM TERM…] [--construction ID|prefix*|/regex/] [--json|--count] [paths…]\n  TERM is key=regex[,key!=regex…]; keys: role ending root family overlay unit raw; each regex matches the whole value`);
+  process.exit(code);
+}
+
+function parseTerm(text: string): Term {
+  try {
+    return parseTermStrict(text);
+  } catch (error) {
+    usage((error as Error).message);
+  }
 }
 
 const queries: Query[] = [];
@@ -44,9 +73,10 @@ for (let i = 0; i < args.length; i++) {
     queries.push({ kind: "seq", terms });
   } else if (arg === "--construction") {
     if (!args[i + 1]) usage("--construction needs an ID");
-    queries.push({ kind: "construction", pattern: args[++i]! });
+    queries.push({ kind: "construction", test: constructionTest(args[++i]!) });
   } else if (arg === "--json") output = "json";
   else if (arg === "--count") output = "count";
+  else if (arg === "--help" || arg === "-h") usage("Search docs examples by parse.", 0);
   else if (arg.startsWith("--")) usage(`unknown flag ${arg}`);
   else paths.push(arg);
 }
@@ -68,11 +98,8 @@ function matchQuery(example: Example, query: Query): number[] | null {
         return placed.slice(from, from + query.terms.length).map((w) => example.words.indexOf(w));
       });
     }
-    case "construction": {
-      const p = query.pattern;
-      const ok = example.constructions.some((id) => (p.endsWith("*") ? id.startsWith(p.slice(0, -1)) : id === p));
-      return ok ? [] : null;
-    }
+    case "construction":
+      return example.constructions.some(query.test) ? [] : null;
   }
 }
 

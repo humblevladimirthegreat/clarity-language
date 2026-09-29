@@ -544,7 +544,7 @@ Things B uses include places B lives or sits, tools and rides B uses, ideas B wo
 | a feeling B has (*Azawan's anger*) | [emotion compose](sakes.md#emotion-compose) |
 | something B made (*the book Azawan wrote*) | a [role compound](roles.md#role-compounds) |
 
-**`em`** never takes a person on the left: a person is not something someone uses. It never names a feeling or trait either, which stays something B has, not something B is made of.
+**`em`** always needs a noun on its left: it belongs to the nearest noun before it (after that noun's `/ɡ/` words). After a verb or at the start of a sentence there is no thing for B to use, so `em` + `/b/` is not a sentence there. For someone's act (*Azawan's walk*), say the act as its own sentence, then [point back to it](dependents.md#which-noun). **`em`** never takes a person on the left: a person is not something someone uses. It never names a feeling or trait either, which stays something B has, not something B is made of.
 
 **Compare with:** *for Azawan* is `el`. A [sake](sakes.md) on `/ɡ/` also marks the noun as yours, together with how it serves you.
 

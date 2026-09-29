@@ -15,17 +15,33 @@ export type FoundWord = {
 
 const TERM_KEYS = ["role", "ending", "root", "family", "overlay", "unit", "raw"] as const;
 export type TermKey = (typeof TERM_KEYS)[number];
-export type Term = { key: TermKey; value: string }[];
+/** One `key=regex` (or negated `key!=regex`) condition; the regex must match a whole field value. */
+export type Condition = { key: TermKey; value: string; negate: boolean; pattern: RegExp };
+export type Term = Condition[];
 
-/** Parse `role=v,ending=r` into its conditions. */
+/** A comma that starts the next `key=` / `key!=` condition (a regex may hold other commas, e.g. `{2,3}`). */
+const CONDITION_SPLIT = new RegExp(`,(?=(?:${TERM_KEYS.join("|")})!?=)`);
+
+/**
+ * Parse `role=v,ending=r` into its conditions. Each value is a regular expression
+ * matched against the whole field (`raw=em` is exactly `em`; `raw=.*em` ends in `em`).
+ * `key!=value` matches words where no value of that field matches.
+ */
 export function parseTerm(text: string): Term {
-  return text.split(",").map((part) => {
-    const eq = part.indexOf("=");
-    const key = part.slice(0, eq) as TermKey;
-    if (eq < 1 || !TERM_KEYS.includes(key)) {
-      throw new Error(`bad term "${part}": expected key=value with key one of ${TERM_KEYS.join(", ")}`);
+  return text.split(CONDITION_SPLIT).map((part) => {
+    const m = /^([a-z]+)(!?)=(.*)$/s.exec(part);
+    const key = m?.[1] as TermKey | undefined;
+    if (!m || !key || !TERM_KEYS.includes(key)) {
+      throw new Error(`bad term "${part}": expected key=regex or key!=regex with key one of ${TERM_KEYS.join(", ")}`);
     }
-    return { key, value: part.slice(eq + 1) };
+    const value = m[3]!;
+    let pattern: RegExp;
+    try {
+      pattern = new RegExp(`^(?:${value})$`, "u");
+    } catch (error) {
+      throw new Error(`bad regex in "${part}": ${(error as Error).message}`);
+    }
+    return { key, value, negate: m[2] === "!", pattern };
   });
 }
 
@@ -72,28 +88,38 @@ export function flattenWords(result: unknown, chunks: string[]): FoundWord[] {
   return found.sort((a, b) => a.position - b.position);
 }
 
-function matchesCondition(item: FoundWord, key: TermKey, value: string): boolean {
+/** The values a condition's regex is tested against (a word may have several roots or overlays). */
+function fieldValues(item: FoundWord, key: TermKey): string[] {
   const { word } = item;
+  const { family } = word;
   switch (key) {
     case "role":
-      return (word.pos ?? "") === value;
+      return [word.pos ?? ""];
     case "ending":
-      return (word.ending ?? "") === value;
+      return [word.ending ?? ""];
     case "root":
-      return "roots" in word.family && (word.family.roots as string[]).includes(value);
+      if (family.kind === "content") return family.roots;
+      if (family.kind === "x") return [...family.leftRoots, ...(family.rightRoots ?? [])];
+      if (family.kind === "hookCompound") return [family.leftRoot];
+      return [];
     case "family":
-      return word.family.kind === value || ("xFamily" in word.family && word.family.xFamily === value);
+      return family.kind === "x" ? [family.kind, family.xFamily] : [family.kind];
     case "overlay":
-      return word.overlay?.senseForm === value || word.hostOverlay?.senseForm === value;
+      return [word.overlay?.senseForm, word.hostOverlay?.senseForm].filter((form): form is string => Boolean(form));
     case "unit":
-      return item.unit === value;
+      return [item.unit];
     case "raw":
-      return new RegExp(value).test(word.raw);
+      return [word.raw];
   }
 }
 
+function matchesCondition(item: FoundWord, condition: Condition): boolean {
+  const hit = fieldValues(item, condition.key).some((value) => condition.pattern.test(value));
+  return condition.negate ? !hit : hit;
+}
+
 export function matchesTerm(item: FoundWord, term: Term): boolean {
-  return term.every(({ key, value }) => matchesCondition(item, key, value));
+  return term.every((condition) => matchesCondition(item, condition));
 }
 
 /** Start indexes (into `words`) where the terms match consecutive surface words. */

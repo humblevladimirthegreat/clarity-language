@@ -2,7 +2,10 @@
 
 Editors only — not linked from grammar pages. Working sheet for Phase 2b of the expressiveness review (`docs/proposals/expressiveness-review.md`).
 
-Eight English samples (≈150 words each) in registers the [syntax test corpus](syntax-test-corpus.md) does not cover. Cite rows as `RS-n` (sample) or `RS-n.m` (sentence or turn *m* within it). Translate with the published grammar and lexicon; sort each blocker the same way as the corpus ([When a sentence will not translate as is](syntax-test-corpus.md#when-a-sentence-will-not-translate-as-is)): parser miss, grammar gap, missing vocabulary. Log grammar gaps in the ledger, lexicon-only gaps as `L-nn` rows for the TODO lexicon items.
+Eight English samples (≈150 words each) in registers the [syntax test corpus](syntax-test-corpus.md) does not cover. Cite rows as `RS-n` (sample) or `RS-n.m` (sentence or turn *m* within it). This file holds the English only. Translate with the published grammar and lexicon.
+
+- **Translations** go in `docs/proposals/expressiveness-review.md`, not here.
+- **Identified gaps** go in `docs/meta/register-results.md`, not here. Sort each blocker the same way as the corpus ([When a sentence will not translate as is](syntax-test-corpus.md#when-a-sentence-will-not-translate-as-is)): parser miss, grammar gap, missing vocabulary. Log lexicon-only gaps there as `L-nn` rows for the TODO lexicon items.
 
 The English is original to this file. Sentences are numbered so a translation can go line by line. Names are placeholders (Mara, Jun, Ines, Tomas, Dr. Okafor); use the house cast where a name is needed in Agazan ([house cast](grammar-docs.md#house-cast)) and translate the meaning, not the spelling. A sentence whose English form is deliberately not mirrored (copula, tense, articles) is **covered** if the meaning has a natural route.
 

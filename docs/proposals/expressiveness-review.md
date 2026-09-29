@@ -5,7 +5,7 @@ Editors only — not linked from grammar pages. Phased plan for a systematic sug
 1. **Gaps** — Is there common English grammar that Agazan cannot express easily, and that is not intentionally discouraged?
 2. **Extensions** — Could existing grammar be extended into other forms (unused slots, other role letters, other endings, other vowels) with intuitive new readings?
 
-This is a **suggestion** pass: output is a findings ledger plus proposals, not direct edits to grammar pages. Accepted proposals are applied afterwards through the normal grammar-doc workflow ([grammar-docs](../meta/grammar-docs.md), [doc-style](../meta/doc-style.md)).
+This is a **suggestion** pass for Phases 1 and 3: output is a findings ledger plus proposals, not direct edits to grammar pages. Accepted proposals are applied afterwards through the normal grammar-doc workflow ([grammar-docs](../meta/grammar-docs.md), [doc-style](../meta/doc-style.md)).
 
 Status: `[x]` done · `[~]` partial · `[ ]` not started.
 
@@ -19,7 +19,7 @@ Status: `[x]` done · `[~]` partial · `[ ]` not started.
 
 ## Findings ledger
 
-All phases write to one ledger: [grammar-gaps.md](../meta/grammar-gaps.md) (referenced by `AGENTS.md`, grammar-docs, drill-generation, and unassigned-reserved). Each row:
+Phases 1 and 3 write to one ledger and are triaged at the end (Phase 4). Phase 2 does not collate: each real-text sample is fixed as it is translated (see [Phase 2 process](#phase-2-process)). Settled **by design** decisions live in [design-decisions](../meta/design-decisions.md). Each row:
 
 | Field | Content |
 |-------|---------|
@@ -59,6 +59,16 @@ Walk a standard English reference-grammar inventory and find the Agazan route fo
 
 ## Phase 2 — Real-text sampling (gaps, bottom-up)
 
+### Phase 2 process {#phase-2-process}
+
+Phase 2 resolves as it goes; nothing waits for Phase 4. Each batch of sentences or samples is translated, then every stopping point is handled in the same pass:
+
+- **Parser miss** (the docs already imply the reading): fix the parser, add a test, and list the fix in the results file.
+- **Missing vocabulary:** add the lexicon row or role English, and record it as an `L-nn` row.
+- **Grammar gap:** log a `G-nn` row with the current route and a recommendation. The language owner rules on it, and the fix is applied straight away: taught on the owning grammar page, listed in [english.md](../grammar/english.md) where it is a new English job, and marked **done** in the row. A **by design** ruling goes into [design-decisions](../meta/design-decisions.md) instead.
+
+The results file ([syntax-test-results](../meta/syntax-test-results.md), and the register-sample equivalent) is therefore a record of what was found and how it was settled, not a backlog. Once a phase-2 row is ruled, it needs no further triage, and Phase 4 covers only Phase 1 and Phase 3 rows plus any Phase 2 row still open.
+
 Checklists miss things that only surface in real use. Translate English sentences and texts into Agazan and log every point where the translator had to stop, paraphrase heavily, or guess.
 
 ### 2a — Standard syntax test corpus
@@ -74,10 +84,52 @@ The corpus covers core syntax only — its register is dated narrative, with few
 ### 2b — Register samples
 
 - [x] Pick ~8 short samples (≈150 words each) across registers: casual chat, text message thread, how-to instructions, news paragraph, story narration, argument / opinion, a support conversation (compassion theme), a decision memo (empowerment / rationality theme).
-- [ ] One agent per sample translates with the published lexicon and parser; each stopping point becomes a ledger row (dedupe against Phase 1 IDs).
+- [x] The eight English samples are in `docs/meta/register-samples.md`. Record each translation in this file; log identified gaps in `docs/meta/register-results.md`.
+- [ ] One agent per sample translates with the published lexicon and parser; each stopping point is handled by the [Phase 2 process](#phase-2-process) (dedupe against Phase 1 IDs and earlier results rows).
 - [ ] Also log **lexicon-only** gaps separately (missing roots, not grammar) and hand them to the TODO lexicon items rather than this ledger.
 
-**Exit:** corpus and samples translated; new rows added; each row's verdict set.
+#### RS-1 — Casual chat {#rs-1}
+
+Translated with the house cast for the two friends' *I* / *you* as the speaker and listener pronouns (the turn's role is the point). Every line was checked with `node scripts/parse.mjs`. Gaps are in [register-results](../meta/register-results.md); *awkward* rows cite the `G-nn` or `L-nn` there.
+
+| RS-1 | English | Agazan | Morph gloss | Verdict |
+|------|---------|--------|-------------|---------|
+| 1.1a | Hey, | `yalahen.` | y-Alahen | covered |
+| 1.1b | you made it! | `! zehodon thunom vevahal.` | ! \| z-listener \| th-WITNESSED \| v-arrival | covered |
+| 1.1c | I wasn't sure you'd come. | `zamegun thunom vevegam dorl zehodon vuvudel oel bamegun.` | z-speaker \| th-WITNESSED \| v-doubt \| d-whether-clause \| z-listener \| v-go \| [toward \| b-speaker] | covered |
+| 1.2a | Yeah, | `yael.` | y-yes | covered |
+| 1.2b | sorry | `yabayen.` | y-Abayen | covered |
+| 1.2c | I'm late. | `zamegun zugen zel bral thodum vevahal.` | [z-speaker \| z-Some-sake \| z-rank/more \| b-later] \| th-LIVE \| v-arrival | awkward (G-01) |
+| 1.2d | The bus was kind of a mess. | `zabazul thunom habedum gazabom.` | z-bus \| th-WITNESSED \| h-kind-of \| g-disorder | covered |
+| 1.3a | Oh no. | `yewedan.` | y-Ewedan | covered |
+| 1.3b | Was it the same driver as last time? | `yol zaxuvudel gogal bazaxuvudel thunom.` | y-question \| [z-agent-x-go \| g-SAME \| b-agent-x-go] \| th-WITNESSED | awkward (G-02) |
+| 1.4a | I think so, | `yaem.` | y-yes-soft | covered |
+| 1.4b | but I'm not sure. | `xagozal zamegun vevegam.` | x-but \| z-speaker \| v-doubt | covered |
+| 1.4c | Anyway, I'm here now. | `xevavel zamegun thodum vevahal.` | x-next \| z-speaker \| th-LIVE \| v-arrival | awkward (G-03) |
+| 1.5a | Good. | `yazahan.` | y-Azahan | covered |
+| 1.5b | So, do you want to get coffee first, or just walk? | `yom xevavel zehodon hogodam vozodel dagavel xol zehodon vowogal.` | y-soft-question \| x-next \| z-listener \| h-first \| v-drink \| d-coffee \| x-or \| z-listener \| v-walk | awkward (G-04) |
+| 1.6a | Honestly, coffee sounds great. | `thaveham zamegun vuhudem dagavel.` | th-frankly \| z-speaker \| v-wish \| d-coffee | covered |
+| 1.6b | I haven't eaten anything yet. | `zamegun hezul vagudel.` | z-speaker \| h-not-yet \| v-eat | covered |
+| 1.7a | Nothing at all? | `yol zehodon vagudel dal.` | y-question \| z-listener \| v-eat \| d-nothing | covered |
+| 1.7b | You should have said something. | `zehodon thunom vezebel vul. zehodon thugethem vezebel.` | z-listener \| th-WITNESSED \| [v-tell \| v-not] . z-listener \| th-sake-ought-offered \| v-tell | awkward (G-05) |
+| 1.7c | There's a bakery around the corner. | `zahazal gebewel om bamegun.` | [z-house \| g-bread] \| [near \| b-speaker] | stand-in (L-01, L-02) |
+| 1.8a | Right, | `yael.` | y-yes | covered |
+| 1.8b | but I didn't want to keep you waiting. | `xagozal zamegun thunom vuhudem durl zehodon vabazem.` | x-but \| z-speaker \| th-WITNESSED \| v-wish \| d-lest-clause \| z-listener \| v-wait | covered |
+| 1.9a | You're ridiculous. | `; zehodon gahezem.` | ; \| z-listener \| g-foolishness | covered |
+| 1.9b | Come on, my treat. | `yem zohan vuvudel. zamegun thumam vamol.` | y-request \| z-interlocutors \| v-go . z-speaker \| th-plan-itinerary \| v-money | stand-in (L-03) |
+| 1.10a | Really? | `?!yaer.` | ?!y-yes-fresh | covered |
+| 1.10b | Thanks. | `yebewan.` | y-Ebewan | covered |
+| 1.10c | Next one's on me, okay? | `zamegun thumam bral vamol. yol yaom.` | z-speaker \| th-plan-itinerary \| b-later \| v-money . y-question \| y-okay | stand-in (L-03) |
+| 1.11a | Deal. | `yaol.` | y-sure | covered |
+| 1.11b | By the way, did you ever hear back about that job? | `yol xevavel zehodon thunom vemal dezebem hahehom bebevel om behodon.` | y-question \| x-next \| z-listener \| th-WITNESSED \| v-hear \| d-discourse \| [as-for \| [b-briefcase \| [near \| b-listener]]] | awkward (G-06), stand-in (L-04) |
+| 1.12a | Not yet. | `yuor.` | y-not-now | covered |
+| 1.12b | Maybe next week, if they're quick. | `zamegun thovom vemal dezebem hehum bagadem grawol thodom barl zebezalx gavazol.` | z-speaker \| th-MAY \| v-hear \| d-discourse \| [h-while \| [b-week \| g-one]] \| [th-if \| b-that-clause] \| z-person-x \| g-fast | covered |
+| 1.12c | Fingers crossed. | `yevegen.` | y-Evegen | covered |
+| 1.13 | They'd be lucky to have you, you know. | `; zebezalx thovem geledel thodom bezehodon.` | ; \| z-person-x \| th-NOTIONAL \| g-luck \| [th-if \| b-listener] | awkward (L-04) |
+| 1.14a | Stop it. | `yel vazadal.` | y-command \| v-stop | covered |
+| 1.14b | You're making me blush. | `zamegun thodum vabohel thegem bezehodon.` | z-speaker \| th-LIVE \| v-blush \| [th-CAUSE \| b-listener] | covered |
+
+**Exit:** corpus and samples translated; every stopping point ruled and applied or recorded as by design.
 
 ## Phase 3 — Extension sweep (existing grammar, new readings)
 
@@ -109,7 +161,7 @@ For each empty cell, record one of:
 
 ## Phase 4 — Triage and proposals
 
-- [ ] Merge duplicates; link gaps to extensions that close them (preferring extensions over new forms).
+- [ ] Merge duplicates (Phase 1 and Phase 3 rows, plus any open Phase 2 row); link gaps to extensions that close them (preferring extensions over new forms).
 - [ ] Rank by priority, then by how many ledger rows one proposal closes.
 - [ ] For each P1 item and any multi-row extension, write a short proposal in `docs/proposals/` (current route, proposed form, examples with morph glosses, interaction with existing forms, learning level per [learning-levels](../meta/learning-levels.md)).
 - [ ] Present proposals to the language owner in batches with a recommendation each; record decisions (accepted / rejected / by design) in the ledger.
@@ -122,7 +174,7 @@ For each empty cell, record one of:
 - [ ] Update lexicon / overlay CSVs and the parser where the proposal adds forms; add parser tests.
 - [ ] Update [english.md](../grammar/english.md) with new English → Agazan mappings.
 - [ ] Remove used slots from [unassigned-reserved](../meta/unassigned-reserved.md).
-- [ ] Add each accepted and rejected decision to [grammar-gaps by design](../meta/grammar-gaps.md#by-design) so it is not re-raised.
+- [ ] Add each accepted and rejected decision to [design-decisions](../meta/design-decisions.md) so it is not re-raised.
 - [ ] Add translation checkpoints for new beginner / intermediate features per [drill-generation](../meta/drill-generation.md).
 - [ ] Run `npm run build` and `npm test`.
 

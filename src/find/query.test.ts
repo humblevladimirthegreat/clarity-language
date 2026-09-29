@@ -15,13 +15,48 @@ function sentence(text: string) {
 
 describe("parseTerm", () => {
   it("reads comma-separated conditions", () => {
-    assert.deepEqual(parseTerm("role=v,ending=r"), [
-      { key: "role", value: "v" },
-      { key: "ending", value: "r" },
-    ]);
+    assert.deepEqual(
+      parseTerm("role=v,ending!=r").map(({ key, value, negate }) => ({ key, value, negate })),
+      [
+        { key: "role", value: "v", negate: false },
+        { key: "ending", value: "r", negate: true },
+      ],
+    );
   });
-  it("rejects unknown keys", () => {
+  it("keeps commas inside a regex", () => {
+    assert.deepEqual(
+      parseTerm("raw=z[a-z]{2,4}l,role=z").map(({ key, value }) => [key, value]),
+      [
+        ["raw", "z[a-z]{2,4}l"],
+        ["role", "z"],
+      ],
+    );
+  });
+  it("rejects unknown keys and bad regexes", () => {
     assert.throws(() => parseTerm("colour=red"), /bad term/);
+    assert.throws(() => parseTerm("raw=("), /bad regex/);
+  });
+});
+
+describe("regex conditions", () => {
+  const { words } = sentence("zazawan vowogal al bahedem om bamegun.");
+  const raws = (term: string) => words.filter((w) => matchesTerm(w, parseTerm(term))).map((w) => w.word.raw);
+
+  it("match the whole value", () => {
+    assert.deepEqual(raws("raw=om"), ["om"]);
+    assert.deepEqual(raws("raw=.*em"), ["bahedem"]);
+  });
+  it("take alternations and classes on any key", () => {
+    assert.deepEqual(raws("family=hook,raw=al|om"), ["al", "om"]);
+    assert.deepEqual(raws("role=[zv]"), ["zazawan", "vowogal"]);
+  });
+  it("negate with !=", () => {
+    assert.deepEqual(raws("role=b,raw!=.*n"), ["bahedem"]);
+  });
+  it("match roots inside mid-word x compounds", () => {
+    const [word] = sentence("zebeyexabedel.").words;
+    assert.ok(matchesTerm(word!, parseTerm("root=abede")));
+    assert.ok(matchesTerm(word!, parseTerm("family=compound,root=ebeye")));
   });
 });
 
