@@ -78,7 +78,7 @@ describe("parse — clause.md beginner", () => {
   });
 
   it("parses yol question", () => {
-    const result = parseText("yol zamun vowogal.");
+    const result = parseText("yol zamegun vowogal.");
     assert.ok(result.utterances[0]!.left.force);
     assert.equal(result.utterances[0]!.left.force!.raw, "yol");
   });
@@ -101,7 +101,7 @@ describe("parse — clause.md beginner", () => {
   });
 
   it("parses polar plus body", () => {
-    const result = parseText("yael zamun vowogal.");
+    const result = parseText("yael zamegun vowogal.");
     assert.equal(result.utterances[0]!.left.polars[0]?.raw, "yael");
     assert.equal(result.utterances[0]!.bodies[0]!.clause.units.length, 2);
   });
@@ -242,8 +242,8 @@ describe("parse — spans", () => {
 });
 
 describe("parse — SVO slots", () => {
-  it("parses zar damun vozezol as subject, object, verb (roles.md)", () => {
-    const result = parseText("zar damun vozezol.");
+  it("parses zar damegun vozezol as subject, object, verb (roles.md)", () => {
+    const result = parseText("zar damegun vozezol.");
     const units = result.utterances[0]!.bodies[0]!.clause.units;
     assert.equal(units.length, 3);
     assert.equal(units[0]!.kind, "np");
@@ -256,7 +256,7 @@ describe("parse — SVO slots", () => {
     const obj = units[1]!.coord.parts[0]!.items[0];
     assert.equal(obj?.kind, "package");
     if (obj?.kind !== "package") return;
-    assert.equal(obj.package.head.raw, "damun");
+    assert.equal(obj.package.head.raw, "damegun");
   });
 });
 

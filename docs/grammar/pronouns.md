@@ -67,15 +67,15 @@ When a proper name is available, prefer that name (and its **-r** resume), inclu
 >
 > "I walk." You name yourself rather than saying *I*.
 
-Use **`amu`** (*speaker*) and **`ohe`** (*listener*) when what matters is the conversation role, not a name.
+Use **`amegu`** (*speaker*) and **`ehodo`** (*listener*) when what matters is the conversation role, not a name. Both are five letters on purpose, so naming yourself and the other person stays the easier habit.
 
-> `zamun dohen vahahal.`
+> `zamegun dehodon vahahal.`
 >
 > z-speaker | d-listener | v-see
 >
 > "I see you."
 
-> `zamun vowogal.`
+> `zamegun vowogal.`
 >
 > z-speaker | v-walk
 >
@@ -99,8 +99,8 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`amun`** | speaker in this conversation (`zamun` in subject slot) | *I* | `amul` *microphone* | 🎤: the live voice of the person talking |
-| **`ohen`** | listener in this conversation (`zohen` / `dohen` in clause) | *you* | `ohel` *headphones* | 🎧: the one receiving the sound |
+| **`amegun`** | speaker in this conversation (`zamegun` in subject slot) | *I* | `amegul` *microphone* | 🎤: the live voice of the person talking |
+| **`ehodon`** | listener in this conversation (`zehodon` / `dehodon` in clause) | *you* | `ehodol` *headphones* | 🎧: the one receiving the sound |
 | **`ohan`** | speaker and addressees together (`zohan` in subject slot) | *we* (you and I) | `ohal` *handshake* | 🤝: sharing the floor together |
 | **`onun`** | nonspecific individual (`zonun` in subject slot) | *someone* | `onul` *neutral* | 😐: not a particular person |
 
@@ -126,8 +126,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *see* | `vahahal` | `ahahal` *eye* | 👁️: seeing is what an eye does |
 | *scream* | `vezogel` | | |
 | *punch* | `vabahel` | | |
-| *speaker* | `amun` | `amul` *microphone* | 🎤: the live voice of the person talking |
-| *listener* | `ohen` | `ohel` *headphones* | 🎧: the one receiving the sound |
+| *speaker* | `amegun` | `amegul` *microphone* | 🎤: the live voice of the person talking |
+| *listener* | `ehodon` | `ehodol` *headphones* | 🎧: the one receiving the sound |
 | *interlocutors* | `ohan` | `ohal` *handshake* | 🤝: sharing the floor together |
 | *someone* | `onun` | `onul` *neutral* | 😐: not a particular person |
 
@@ -160,7 +160,7 @@ z-Alahen | v-cook . z-Azawan | d-cookie | v-see . z-Ahaben | v-←cook.full
 **4.** *I see you.*
 
 ::: details Show answer
-`zamun dohen vahahal.`
+`zamegun dehodon vahahal.`
 
 z-speaker | d-listener | v-see
 :::
@@ -176,7 +176,7 @@ z-interlocutors | v-cook
 **6.** *You scream.*
 
 ::: details Show answer
-`zohen vezogel.`
+`zehodon vezogel.`
 
 z-listener | v-scream
 :::
@@ -184,7 +184,7 @@ z-listener | v-scream
 **7.** *Azawan punches me.*
 
 ::: details Show answer
-`zazawan damun vabahel.`
+`zazawan damegun vabahel.`
 
 z-Azawan | d-speaker | v-punch
 :::
@@ -235,7 +235,7 @@ z-Ahaben | v-cook . z-Alahen | d-cookie | v-see . z-Azawan | v-←cook.full
 *Ahaben cooks. Alahen sees a cookie. Azawan does so.*
 :::
 
-**5.** `zazawan dohen vahahal.`
+**5.** `zazawan dehodon vahahal.`
 
 ::: details Show answer
 
@@ -262,7 +262,7 @@ z-someone | v-scream
 *Someone screams.*
 :::
 
-**8.** `yol zamun vugugal.`
+**8.** `yol zamegun vugugal.`
 
 ::: details Show answer
 
@@ -360,9 +360,9 @@ With **-l**, **`hewul`** is strictly pairwise: every one of them does it to ever
 
 ### Addressing several people
 
-When you address several people at once, English *you* does not say how many. The listener root **`ohe`** plus associative **-x** names everyone this turn addresses: the vocative cluster, plus anyone still held as addressee. One addressee stays singular **`ohe`**; several take **`edone…x`**. Inclusive *shall we* stays **`oha`**. Soft **`zoham`** hedges whether you really share the act.
+When you address several people at once, English *you* does not say how many. The listener root **`ehodo`** plus associative **-x** names everyone this turn addresses: the vocative cluster, plus anyone still held as addressee. One addressee stays singular **`ehodo`**; several take **`edone…x`**. Inclusive *shall we* stays **`oha`**. Soft **`zoham`** hedges whether you really share the act.
 
-> `zohenx vehahel.`
+> `zehodonx vehahel.`
 >
 > z-listener-x | v-sit
 >
@@ -397,7 +397,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *punch* | `vabahel` | | |
 | *fight* | `vavadal` | | |
 | *interlocutors* | `ohan` | `ohal` *handshake* | 🤝: sharing the floor together |
-| *listener* | `ohen` | `ohel` *headphones* | 🎧: the one receiving the sound |
+| *listener* | `ehodon` | `ehodol` *headphones* | 🎧: the one receiving the sound |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -521,7 +521,7 @@ z-interlocutors | v-scream
 *We (you and I) scream.*
 :::
 
-**7.** `zohenx vezogel.`
+**7.** `zehodonx vezogel.`
 
 ::: details Show answer
 

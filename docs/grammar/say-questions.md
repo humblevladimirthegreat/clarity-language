@@ -10,7 +10,7 @@ Recipes for English question shapes beyond plain *yes/no* and *who / what*. Ever
 
 An echo question repeats what someone just said, because you doubt it or did not catch it (*You saw WHAT?*). Repeat the sentence under **`yol`**. Put the doubting [tone mark](speech-moves.md#tone-marks) **`?!`** on the blank or on the word you doubt.
 
-> `yol zohen vahahal ?!dar.`
+> `yol zehodon vahahal ?!dar.`
 >
 > y-question | z-listener | v-see | ?!d-who
 >

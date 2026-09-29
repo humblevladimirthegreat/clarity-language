@@ -203,7 +203,7 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bezezem g
 | coulomb | `azoba` *coulomb* | `bazobam g+2` | `araze` *charge* |
 | radian | `adawe` *radian* | `badawem g+1` | `eredu` *cycle* |
 
-**Related form:** normative *my standard* **`zomen`** vs performance **`zamun`** ([comparatives](comparatives.md#judgment-benchmarks)) is a judgment bar, not a unit. General **`ROOTl+1`** (*primary / singleton of a kind*) is [numeric derivation](numeric-derivation.md#scalar-digit-morphs), not an SI alias.
+**Related form:** normative *my standard* **`zomen`** vs performance **`zamegun`** ([comparatives](comparatives.md#judgment-benchmarks)) is a judgment bar, not a unit. General **`ROOTl+1`** (*primary / singleton of a kind*) is [numeric derivation](numeric-derivation.md#scalar-digit-morphs), not an SI alias.
 
 ### Date as books vs event-when
 <a id="as-of-vs-clock"></a>

@@ -58,7 +58,7 @@ describe("glossToAgazan", () => {
       "z{odoga} gamazam.",
       "zagadalx grarel.",
       "zagadalx grarel.",
-      "zamunx vowogal.",
+      "zamegunx vowogal.",
       "zazawan vahahol daxal zazar vowogal xuxul. dedehel on dagavel.",
     ]) {
       assert.equal(canonical(roundTrip(agazan)), canonical(agazan), agazan);

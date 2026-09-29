@@ -27,14 +27,14 @@ describe("parseTerm", () => {
 
 describe("example words", () => {
   it("lists words in surface order with their unit", () => {
-    const { words } = sentence("zazawan vuvudel oel bamun.");
+    const { words } = sentence("zazawan vuvudel oel bamegun.");
     assert.deepEqual(
       words.map((w) => [w.word.raw, w.unit]),
       [
         ["zazawan", "np"],
         ["vuvudel", "vp"],
         ["oel", "hook"],
-        ["bamun", "np"],
+        ["bamegun", "np"],
       ],
     );
   });
@@ -75,7 +75,7 @@ describe("learner name slot", () => {
   it("parses SELF examples with the default learner root", () => {
     assert.deepEqual(
       collectExamples("`yom zSELFn vehahel thegam.`", tables).map((e) => e.text),
-      ["yom zamun vehahel thegam."],
+      ["yom zamegun vehahel thegam."],
     );
   });
 });

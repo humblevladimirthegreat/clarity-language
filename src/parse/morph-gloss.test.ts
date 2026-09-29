@@ -91,9 +91,9 @@ describe("morphGlossLine — SHARED only where it can describe the join", () => 
 
 describe("morphGlossLine — glosses.md single words", () => {
   it("senses-are-separate-roots table", () => {
-    expectLine("zamul", "z-microphone");
-    expectLine("zamum", "z-performance");
-    expectLine("zamun", "z-speaker");
+    expectLine("zamegul", "z-microphone");
+    expectLine("zamegum", "z-performance");
+    expectLine("zamegun", "z-speaker");
     expectLine("gazahal", "g-smile");
     expectLine("gazaham", "g-happy");
     expectLine("hunol", "h-fishing");
@@ -183,10 +183,10 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("yalahexen", "y-Alahen-minutes");
     expectLine("yael", "y-yes");
     expectLine("yol", "y-question");
-    expectLine("zohen", "z-listener");
+    expectLine("zehodon", "z-listener");
     expectLine("zohan", "z-interlocutors");
-    expectLine("zamunx", "z-speaker-x");
-    expectLine("zohenx", "z-listener-x");
+    expectLine("zamegunx", "z-speaker-x");
+    expectLine("zehodonx", "z-listener-x");
     expectLine("thodum", "th-LIVE");
     expectLine("thamom", "th-RESIDUE");
     expectLine("thunem", "th-FORMER");
@@ -236,21 +236,21 @@ describe("morphGlossLine — glosses.md single words", () => {
 describe("morphGlossLine — glosses.md dialogue turns", () => {
   it("inclusive census turn", () => {
     expectLine(
-      "yael zamun zam zohen zal gazaham.",
+      "yael zamegun zam zehodon zal gazaham.",
       "y-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-happy]",
     );
   });
 
   it("ability + value motive", () => {
     expectLine(
-      "yuel zamun vowogaxel thuduthom.",
+      "yuel zamegun vowogaxel thuduthom.",
       "y-no | z-speaker | v-walk-unable-temporary | th-competence-motive-any-term",
     );
   });
 
   it("numbered alternative + unmet pleasure", () => {
     expectLine(
-      "xrebul zehegom grewol zamunx thozuthur.",
+      "xrebul zehegom grewol zamegunx thozuthur.",
       "x-starting-with | [z-problem | g-1st] | z-speaker-x | th-pleasure-unmet-passing",
     );
   });
@@ -293,7 +293,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("fails a sense mismatch with expected/actual", () => {
-    const result = compareMorphGloss("zamun", "z-microphone", tables);
+    const result = compareMorphGloss("zamegun", "z-microphone", tables);
     assert.equal(result.ok, false);
     assert.equal(result.expected, "z-microphone");
     assert.equal(result.actual, "z-speaker");
@@ -387,7 +387,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("round-trips the yael census example block", () => {
-    const md = `> \`yael zamun zam zohen zal gazaham.\`
+    const md = `> \`yael zamegun zam zehodon zal gazaham.\`
 >
 > y-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-happy]
 >

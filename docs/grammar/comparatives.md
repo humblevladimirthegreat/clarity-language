@@ -537,20 +537,20 @@ Each bar is a hosted overlay: published root plus **-n** under `/z/` `/d/` `/b/`
 
 <a id="mine-vs-speaker"></a>
 
-**`zamun`** is where the speaker sits on the scale (current skill). **`zomen`** is the bar the speaker applies. Ordinary people as bars are ordinary **-n** names (`zalahen`). *Walks like a duck* is [simile](relations.md#similative) (`homem`), not this *my standard* bar.
+**`zamegun`** is where the speaker sits on the scale (current skill). **`zomen`** is the bar the speaker applies. Ordinary people as bars are ordinary **-n** names (`zalahen`). *Walks like a duck* is [simile](relations.md#similative) (`homem`), not this *my standard* bar.
 
 Single-item `zazawan zuel gamadam` is *the least challenging* in the group in play. **`zolon`** as the second name **names** the universal class as the bar. Standalone closed **`zual`** / stock **`zuan`** stay [join](joins.md#standalone-phrase) *everything / everyone* in other slots — not this overlay.
 
 | Agazan | Reading |
 |---------|---------|
-| `zamun zegun zuel gezehel` | I am worse at singing than Professional |
+| `zamegun zegun zuel gezehel` | I am worse at singing than Professional |
 | `zebeyum zeyen zuem gagazam` | soft: the draft is somewhat less clear than Average |
 | `zazawan zomen zuel gazaham` | Azawan is less happy than **my personal standard** |
-| `zazawan zamun zuel gezehel` | Azawan is less skilled at singing than **I am** (performance) |
-| `zamun zezon zuel gamadam` | I am less challenging than Social |
-| `zamun zahen zuel gamadam` | I am less challenging than Typical |
-| `zamun zolon zuel gamadam` | I am less challenging than Everyone |
-| `zamun zalahen zuel gezehel` | I am less skilled at singing than **Alahen** (ordinary person comparee) |
+| `zazawan zamegun zuel gezehel` | Azawan is less skilled at singing than **I am** (performance) |
+| `zamegun zezon zuel gamadam` | I am less challenging than Social |
+| `zamegun zahen zuel gamadam` | I am less challenging than Typical |
+| `zamegun zolon zuel gamadam` | I am less challenging than Everyone |
+| `zamegun zalahen zuel gezehel` | I am less skilled at singing than **Alahen** (ordinary person comparee) |
 
 ### Sake benchmarks (*enough* / *too*) {#sake-benchmarks}
 
@@ -637,7 +637,7 @@ The bar is never dropped. A single-item `zagadalx zel gral` already means *the m
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**. The *than*-conjunct is the named bar; **`zamun`** is performance, **`zomen`** is *my standard*.
+Short drills for Advanced. Try each item before opening **Show answer**. The *than*-conjunct is the named bar; **`zamegun`** is performance, **`zomen`** is *my standard*.
 
 **Setting:** a talent contest
 
@@ -656,7 +656,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *Professional* | `egun` | `egul` *lab coat* |
 | *Social* | `ezon` | `ezol` *silhouettes* |
 | *my standard* | `omen` | `omel` *mirror* |
-| *speaker* | `amun` | |
+| *speaker* | `amegun` | |
 | *Some-sake* | `ugen` | `ugel` *egg* |
 | *Survival-sake* | `uhon` | `uhol` *shield* |
 | *Relatedness-sake* | `onan` | `onal` *knot* |
@@ -678,7 +678,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 **2.** *Azawan is less skilled at singing than I am.*
 
 ::: details Show answer
-`zazawan zamun zuel gezehel.`
+`zazawan zamegun zuel gezehel.`
 
 [z-Azawan | z-speaker | z-rank/less | g-sing]
 :::
@@ -694,7 +694,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 **4.** *I am less showy than my standard.*
 
 ::: details Show answer
-`zamun zomen zuel gahudom.`
+`zamegun zomen zuel gahudom.`
 
 [z-speaker | z-my-standard | z-rank/less | g-showmanship]
 :::
@@ -733,7 +733,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 
 #### Agazan → English {#advanced-agazan-to-english}
 
-**1.** `zamun zezon zuel gezehel.`
+**1.** `zamegun zezon zuel gezehel.`
 
 ::: details Show answer
 
@@ -742,7 +742,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 *I am worse at singing than Social.*
 :::
 
-**2.** `zamun zalahen zuel gahudom.`
+**2.** `zamegun zalahen zuel gahudom.`
 
 ::: details Show answer
 

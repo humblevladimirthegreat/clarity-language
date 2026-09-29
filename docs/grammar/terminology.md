@@ -735,7 +735,7 @@ Short word in a role slot (`darl` / `barl` / `dorl` / `derl` / `durl`, open **`-
 
 ### Special pronoun
 
-**`amu` / `ohe` / `oha` / `onu`**.
+**`amegu` / `ehodo` / `oha` / `onu`**.
 
 [Pronouns](pronouns.md#special-pronouns)
 

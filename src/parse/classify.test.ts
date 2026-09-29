@@ -234,7 +234,7 @@ describe("classify", () => {
   });
 
   it("published ordinary on speaker pronoun", () => {
-    const word = expectReading("zamun", "ordinary");
+    const word = expectReading("zamegun", "ordinary");
     assert.ok(word.rootGloss);
   });
 

@@ -454,7 +454,7 @@ Agazan has no set phrase for *thank you*. Say that what the other person did **m
 
 *Sorry* is about **their** sake, not yours. A lone unmet word would say *my* sake went unmet, so name whose sake in `/b/` right after it. The ending is the same [changeability](#sake-changeability) as on any unmet word, so it says how serious the harm is. (cue: sorry = *that detracted from your sake*)
 
-> `thonathum bohen.`
+> `thonathum behodon.`
 >
 > [th-relatedness-unmet-modifiable | b-listener]
 >
@@ -462,9 +462,9 @@ Agazan has no set phrase for *thank you*. Say that what the other person did **m
 
 | Agazan | Use | English |
 |--------|-----|---------|
-| `…thul bohen` | the harm is lasting | *I'm deeply sorry* |
-| `…thum bohen` | the harm can be softened (default) | *I'm sorry* |
-| `…thur bohen` | the harm is passing | *my bad* |
+| `…thul behodon` | the harm is lasting | *I'm deeply sorry* |
+| `…thum behodon` | the harm can be softened (default) | *I'm sorry* |
+| `…thur behodon` | the harm is passing | *my bad* |
 
 The `/b/` can name anyone: `thonathum balahen.` owns a harm to Alahen, even when you are telling someone else.
 

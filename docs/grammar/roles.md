@@ -351,7 +351,7 @@ Bare arrow words are compass points on a north-up map:
 
 Speaker and listener roots are the facing person when you mean *my left* / *your left*:
 
-> `yel zohen vowogal hewezathohen.`
+> `yel zehodon vowogal hewezathehodon.`
 >
 > y-command | z-listener | v-walk | h-west-th-listener
 >
@@ -362,7 +362,7 @@ Speaker and listener roots are the facing person when you mean *my left* / *your
 | PoS | slot as usual (`/ɡ/` property, `/h/` path / manner, `/z/` `/d/` `/b/` side-region) | same slots as other content |
 | DIR | an arrow-rose root | *north* / *ahead*, … |
 | **`th`** | joins DIR to the viewpoint | viewpoint after **`th`** (cue: **th** ≈ *think*, whose point of view) |
-| ANCHOR | what sets the facing frame: [special](pronouns.md#special-pronouns) **`amu`** / **`ohe`** / **`oha`**, a person’s name, or a content **-r** of a person or oriented object | *Azawan’s left*, *your left*, *the car’s left* |
+| ANCHOR | what sets the facing frame: [special](pronouns.md#special-pronouns) **`amegu`** / **`ehodo`** / **`oha`**, a person’s name, or a content **-r** of a person or oriented object | *Azawan’s left*, *your left*, *the car’s left* |
 | Ending | ordinary ending is written at the end of the whole compound; its reference is the viewpoint anchor, not the direction | viewpoint kind / hedge / name / resume |
 
 **Compare with:** naming a doer from an event puts a **vowel** left of **`x`** ([role compounds](#role-compounds): `zaxavadal`). Viewpoint laterals put a **direction root** left of **`th`** and a facing person on the right.
@@ -437,7 +437,7 @@ Gravity works the same way: bare **`adahe`** + `/b/` is *under* the landmark, an
 | Agazan | Use | English |
 |--------|-----|---------|
 | Bare DIR | compass / gravity | `gewezal` *west*; `gabahal` *up* |
-| **`DIR th ANCHOR`** | that point on **ANCHOR’s** facing rose | `gewezathohen` *listener-left* |
+| **`DIR th ANCHOR`** | that point on **ANCHOR’s** facing rose | `gewezathehodon` *listener-left* |
 | DIR + **`th`** + **`o`** + `/b/` | that point on the **landmark’s** own rose | `gazavathol bahazal` *behind the house* |
 | **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gewezathazawan bedehul` *on Azawan’s-left of the tree* |
 
@@ -484,8 +484,8 @@ Write the ordinary [reference ending](word-endings.md) at the end of the whole c
 |--------|---------|
 | `gewezal` | *west* (shared map) |
 | `gewezathazawan` | *Azawan’s left* |
-| `gewezathohen` | *your left* (listener facing) |
-| `gewezathamun` | *my left* (speaker facing) |
+| `gewezathehodon` | *your left* (listener facing) |
+| `gewezathamegun` | *my left* (speaker facing) |
 | `gewezathohan` | *our left* (shared facing) |
 | `gabahal` / `habahal` | gravity *up* |
 
@@ -514,8 +514,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *northwest* / *forward-left* | `onovel` | |
 | *up* (gravity) | `abahal` | |
 | *down* (gravity) | `adahel` | |
-| *listener* | `ohen` | `ohel` *headphones* |
-| *speaker* | `amun` | `amul` *microphone* |
+| *listener* | `ehodon` | `ehodol` *headphones* |
+| *speaker* | `amegun` | `amegul` *microphone* |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -562,7 +562,7 @@ z-life-buoy | [g-west-th-Azawan | b-boat]
 **6.** *You, walk left (your left).*
 
 ::: details Show answer
-`yel zohen vowogal hewezathohen.`
+`yel zehodon vowogal hewezathehodon.`
 
 y-command | z-listener | v-walk | h-west-th-listener
 :::
@@ -570,7 +570,7 @@ y-command | z-listener | v-walk | h-west-th-listener
 **7.** *The boat on my left.*
 
 ::: details Show answer
-`zobodal gewezathamun.`
+`zobodal gewezathamegun.`
 
 z-boat | g-west-th-speaker
 :::
@@ -630,7 +630,7 @@ z-life-buoy | [g-west-th-Alahen | b-boat]
 *The life-buoy is on Alahen’s left of the boat.*
 :::
 
-**6.** `yel zohen vowogal hezadathohen.`
+**6.** `yel zehodon vowogal hezadathehodon.`
 
 ::: details Show answer
 

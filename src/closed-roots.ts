@@ -17,8 +17,8 @@ const CLOSED_ROWS = {
   lion: { emoji: "🦁", root: "alahe" },
   hibiscus: { emoji: "🌺", root: "ahabe" },
   // discourse-role specials (**-n**)
-  microphone: { emoji: "🎤", root: "amu" },
-  headphones: { emoji: "🎧", root: "ohe" },
+  microphone: { emoji: "🎤", root: "amegu" },
+  headphones: { emoji: "🎧", root: "ehodo" },
   handshake: { emoji: "🤝", root: "oha" },
   neutral: { emoji: "😐", root: "onu" },
   // the language's own name

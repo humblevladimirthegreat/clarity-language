@@ -252,3 +252,9 @@ A short final page, not a lesson. It ends Claritish and is the only place that l
 3. **`bohen` in Lesson 5.** Is one set-phrase noun acceptable, or should sorry wait for the full language?
 4. **Where it lives.** It could be a separate site section outside the stage order, like the recipe track. Should [Why Agazan](../grammar/why-agazan.md) link to Lesson 1 as the easy entry point?
 5. **Journaling.** Should the earlier journaling Claritish become the practice for Lessons 5 and 9?
+
+REVISION NOTES:
+-remove sections about numbers
+-use hyphen or space to separate suffixes
+-greetings should treat x*n as a suffix to their usual greeting (hi-xen)
+-don't have -l vs -m endings if it only distinguishes concrete vs abstract roots (I don't think that's the case anywhere here though)

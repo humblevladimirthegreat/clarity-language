@@ -334,7 +334,7 @@ Usual sources (prefer one; reuse the language’s own systems):
 | Minimal clause that shows *only* the new point | Kitchen-sink showcases in Beginner |
 | Everyday [example root bank](drill-generation.md#root-bank) verbs (*walk*, *sleep*, *see*) in **teach** lines | Using that same walk/sleep palette as the default **checkpoint** plot ([checkpoint setting](translation-exercises.md#checkpoint-setting) owns drills) |
 | Published roots when the gloss matches; `PoS` + **`~`/`@`** + `<…>` for donor spelling | Invented “lexicon-shaped” stems, a closed overlay with its own frozen spelling, or split/hyphenated PoS tokens in learner text |
-| Named [house people](#house-cast) when the clause needs a person | Default *I* / *you* (`zamun` / `zohen`) as dummy subjects |
+| Named [house people](#house-cast) when the clause needs a person | Default *I* / *you* (`zamegun` / `zehodon`) as dummy subjects |
 | Omit default **`yal`** when the page is not teaching the speech act | Leading every example with **`yal`** by habit |
 | Morph gloss + **loose** free English by default ([glosses.md](glosses.md)); packed role English when the lexicon lists it (`v-see` for `vahahal`) | Merging free English into the morph gloss, or inventing a `/v/` lemma that is not in `english_by_pos` |
 | Strict free English only when teaching packaging | Strict-only Beginner pages |
@@ -351,9 +351,9 @@ When an example needs a **person**, use these nativized names (published root + 
 | `zalahen` | *Alahen* | `alahe` *courage* |
 | `zahaben` | *Ahaben* | `ahabe` *beauty* |
 
-**`amu` / `ohe`** only when that page is teaching those specials, the point is the **discourse role** (name unavailable, address set, clusivity), or a closed construction is keyed to speaker/listener (performance **`zamun`**, viewpoint *my left* when the anchor is the role). Inclusive *we* stays **`oha`**; nonspecific *someone* stays **`onu`**. Named Mine is overlay **`zomen`**, not the speaker pronoun. Foreign `PoS<…>n` names only when teaching loans or spans. Checkpoints: [translation-exercises.md](translation-exercises.md#principles). Morph / resume: [glosses.md](glosses.md#house-cast).
+**`amegu` / `ehodo`** only when that page is teaching those specials, the point is the **discourse role** (name unavailable, address set, clusivity), or a closed construction is keyed to speaker/listener (performance **`zamegun`**, viewpoint *my left* when the anchor is the role). Inclusive *we* stays **`oha`**; nonspecific *someone* stays **`onu`**. Named Mine is overlay **`zomen`**, not the speaker pronoun. Foreign `PoS<…>n` names only when teaching loans or spans. Checkpoints: [translation-exercises.md](translation-exercises.md#principles). Morph / resume: [glosses.md](glosses.md#house-cast).
 
-**The learner (first person).** When the speaker is the reader, write the name slot **`SELF`** in the Agazan (`zSELFn vowogal.`, greeting `SELFn.`) and a free-standing `SELF` in the morph line (`z-SELF | v-walk`). Free English is *I* / *me* / *my*. The site shows the name the learner chose in the name helper ([word-endings.md](../grammar/word-endings.md#named-n-beginner), nav chip), or **`amun`** / *speaker* until they choose. `build` checks the slot as **`amu`**. Do not make a house person “name himself” to mean *I*, and do not use a dummy **`zamun`** where a name is the point. Pages teaching the speaker role itself keep **`amu`**. A **Roots used here** row for the slot is `*your name*` / `` `SELFn` ``. Available from word-endings Beginner onward.
+**The learner (first person).** When the speaker is the reader, write the name slot **`SELF`** in the Agazan (`zSELFn vowogal.`, greeting `SELFn.`) and a free-standing `SELF` in the morph line (`z-SELF | v-walk`). Free English is *I* / *me* / *my*. The site shows the name the learner chose in the name helper ([word-endings.md](../grammar/word-endings.md#named-n-beginner), nav chip), or **`amegun`** / *speaker* until they choose. `build` checks the slot as **`amegu`**. Do not make a house person “name himself” to mean *I*, and do not use a dummy **`zamegun`** where a name is the point. Pages teaching the speaker role itself keep **`amegu`**. A **Roots used here** row for the slot is `*your name*` / `` `SELFn` ``. Available from word-endings Beginner onward.
 
 Default example block ([layout](glosses.md#example-block)):
 
@@ -388,7 +388,7 @@ Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odog
 |---------|---------|
 | Citation of this row’s sense | `odogal` *dog*; `azaham` *happy*; `azawan` *Azawan*; `ezadal` *therefore* |
 | Inflected form the row teaches | `thovom`, `thumam`, `xezadam`, `zaxavadal`; drill-bank `vahahal` *see* |
-| Special with its default ending | citation `amun` / `ohen` / `ohan` / `onun`; in-clause `zamun` when the slot is the point |
+| Special with its default ending | citation `amegun` / `ehodon` / `ohan` / `onun`; in-clause `zamegun` when the slot is the point |
 
 Do **not** call `odoga` a citation. Overlay / need / linker / mood inventories use the citation or the floating `/th/` (or `/x/`) word, not the stem (`abal` or `thabam`, not `aba`; `ovol` or `thovom`, not `ovo`). Combinability (`tha` / `the`, hold endings) belongs in a **pattern** column (`…thal`) or in extra inflected rows, not by stripping the ending.
 

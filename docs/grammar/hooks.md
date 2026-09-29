@@ -533,20 +533,20 @@ Names come first. When you know who is talking or listening, use their name as t
 
 | Agazan | Landmark | English |
 |--------|----------|---------|
-| `om bamun` | near the speaker | *here*, *this* |
-| `om bohen` | near the listener | *there (by you)*, *that* |
+| `om bamegun` | near the speaker | *here*, *this* |
+| `om behodon` | near the listener | *there (by you)*, *that* |
 | `om bohan` | near both of you | *here (with us)* |
 | `um bohan` | away from both of you | *over there*, *yonder* |
 
-Use `ol` in place of `om` for the exact spot (`ol bamun` *right where I am*).
+Use `ol` in place of `om` for the exact spot (`ol bamegun` *right where I am*).
 
-> `zodogal om bamun vehahel.`
+> `zodogal om bamegun vehahel.`
 >
 > z-dog | [near | b-speaker] | v-sit
 >
 > "This dog sits here by me."
 
-> `zazawan dubugal om bohen vahahal.`
+> `zazawan dubugal om behodon vahahal.`
 >
 > z-Azawan | d-book | [near | b-listener] | v-see
 >
@@ -560,19 +560,19 @@ Use `ol` in place of `om` for the exact spot (`ol bamun` *right where I am*).
 
 English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Agazan names the landmark with the plain motion verb **`vuvudel`** (*go*) and a path hook: **`oel`** (*toward*) for *come*, **`ul`** (*from*) for *go away*. `vuvudel` says nothing about how someone travels; use `vowogal` (*walk*) or `varahal` (*run*) only when the manner matters.
 
-> `zazawan vuvudel oel bamun.`
+> `zazawan vuvudel oel bamegun.`
 >
 > z-Azawan | v-go | [toward | b-speaker]
 >
 > "Azawan comes over to me."
 
-> `zalahen vuvudel oel bohen.`
+> `zalahen vuvudel oel behodon.`
 >
 > z-Alahen | v-go | [toward | b-listener]
 >
 > "Alahen is coming to you."
 
-> `zazawan vuvudel ul bamun.`
+> `zazawan vuvudel ul bamegun.`
 >
 > z-Azawan | v-go | [from | b-speaker]
 >
@@ -580,19 +580,19 @@ English *come* and *go* also point from a person, but they hide which one: *I'm 
 
 With an object, `vuvudel` moves something else: `zazawan vuvudel dehahel.` *Azawan moves the chair.* When the mover goes along with the thing, use **`valagal`** (*carry*). The same hooks then give English *bring* and *take*:
 
-> `zazawan valagal dabegol oel bamun.`
+> `zazawan valagal dabegol oel bamegun.`
 >
 > z-Azawan | v-carry | d-package | [toward | b-speaker]
 >
 > "Azawan brings me the package."
 
-> `zazawan valagal dabegol ul bamun.`
+> `zazawan valagal dabegol ul bamegun.`
 >
 > z-Azawan | v-carry | d-package | [from | b-speaker]
 >
 > "Azawan takes the package away."
 
-In reported speech, the speaker is still whoever says the whole sentence. After *that* (`darl`, see [dependents](dependents.md#stand-in)), `om bamun` is near the person talking now. Inside a quoted [cite span](spans.md), the quoted person is the speaker, as in English direct quotes.
+In reported speech, the speaker is still whoever says the whole sentence. After *that* (`darl`, see [dependents](dependents.md#stand-in)), `om bamegun` is near the person talking now. Inside a quoted [cite span](spans.md), the quoted person is the speaker, as in English direct quotes.
 
 **Compare with:** *that dog* for a dog already named is [resume **-r**](pronouns.md#resume-r) (`zodogar`), not a place. *Where?* is `ol bar` ([Where?](questions.md#where)). *There* for a place already named is a [resume hook](#hook-resume).
 
