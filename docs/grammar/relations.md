@@ -33,7 +33,7 @@ On a noun, the same root is **`gomem`**:
 
 Ordinary `zomel` is still *a mirror*.
 
-With no `/b/`, the model is the other members of a joined subject: each one resembles the others. That is English *alike* / *similar to each other*.
+With no `/b/` after a joined subject, the model is the other members: each one resembles the others. That is English *alike* / *similar to each other*. Every hosted relation follows this rule ([social ties](#social-relations), [kin](numbers-applied.md#kin-generations)).
 
 > `zazawan zalahen zal gomem.`
 >
@@ -349,6 +349,14 @@ English *'s* also names a social tie (*Azawan's friend*, *Azawan's boss*). Put t
 > z-Azawan | [d-Alahen | [g-leadership | b-Azawan]] | v-see
 >
 > "Azawan sees Alahen, Azawan's boss."
+
+With no `/b/` after a joined subject, the tie points at the other members, as with `gomem` ([similative](#similative)). The other party is left out.
+
+> `zazawan zalahen zal gemezem.`
+>
+> [z-Azawan | z-Alahen | z-and | g-companionship]
+>
+> "Azawan and Alahen are friends."
 
 Any root whose abstract sense is a tie works this way (`gohoham` *partner of*, `gonam` *bound to*). To name the other side of the tie without repeating anyone, use the [role compound](roles.md#role-compounds) with **`o`**: after `zalahen gemezem bazawan`, `zoxemezer` is *the other party of that friendship* (Azawan).
 

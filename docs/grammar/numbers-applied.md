@@ -509,6 +509,14 @@ The mantissa is **birth order** within that cohort: **`g#1e0`** is the eldest si
 >
 > "Alahen, Azawan's sibling, walks."
 
+With no `/b/` after a joined subject, each member is a sibling of the others.
+
+> `zazawan zalahen zal grebazol.`
+>
+> [z-Azawan | z-Alahen | z-and | g-#-e0]
+>
+> "Azawan and Alahen are siblings."
+
 > `zalahen g#1e0 bazawan vowogal.`
 >
 > 🔊 *zalahen grebazoyawol bazawan vowogal.*

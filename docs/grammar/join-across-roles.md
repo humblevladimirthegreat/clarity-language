@@ -37,9 +37,16 @@ The `/x/` forms are clause joins; **-n** under `/v/`, `/ɡ/`, and `/h/` makes jo
 | **oe** | `voel` / `xoel` / `thoel` | `voem` / `xoem` / `thoem` | — |
 | **ue** | `vuel` / `xuel` / `thuel` | `vuem` / `xuem` / `thuem` | — |
 
-Each verb-phrase item is a verb plus its own object material. When every item is a bare verb, a `/d/` immediately after the join is SHARED over all verbs: `vahahal valul vam dalul` → *sees and tempts an apple*.
+Each verb-phrase item is a verb plus its own object material, and an item runs up to and including its verb: words before a verb belong to that verb. In `vowogal hadehom varahal val`, *hastily* is on *run*, not *walk*. When every item is a bare verb, a `/d/` immediately after the join is SHARED over all verbs: `vahahal valul vam dalul` → *sees and tempts an apple*.
 
 An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, covers every item. `/h/` inside an item covers that verb phrase only.
+
+> `zazawan dababol vugugel vehahel hegozem bavahel val.`
+>
+> z-Azawan | d-popcorn | v-cooking | v-sit | [h-around | b-fire] | v-none
+>
+> "Azawan cooked popcorn and sat around the fire."
+
 
 > `zazawan vowogal varahal val hahegem.`
 >
