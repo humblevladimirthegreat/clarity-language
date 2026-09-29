@@ -156,7 +156,7 @@ describe("parse — joins.md", () => {
 
 describe("parse — stand-in dependents", () => {
   it("parses theram barl dependent", () => {
-    const result = parseText("zazawan gazaham theram barl zalahen vowogal.");
+    const result = parseText("zazawan gezebul theram barl zalahen vowogal.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
     assert.equal(clause.dependent!.orodo.raw, "barl");
@@ -489,7 +489,7 @@ describe("parse — stage 4 resolve", () => {
 
 describe("parse — spans.md written fences and closes", () => {
   it("puts a written span in its PoS slot, not only an NP head", () => {
-    for (const text of ["zazawan vowogal th(hazaham).", "yul zalahen v[vazadal].", "zalahen vezebel th(zazawan vezehel)."]) {
+    for (const text of ["zazawan vowogal th(hagawal).", "yul zalahen v[vazadal].", "zalahen vezebel th(zazawan vezehel)."]) {
       assert.doesNotThrow(() => parseText(text), text);
     }
   });

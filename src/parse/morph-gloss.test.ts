@@ -94,8 +94,8 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zamegul", "z-microphone");
     expectLine("zamegum", "z-performance");
     expectLine("zamegun", "z-speaker");
-    expectLine("gazahal", "g-smile");
-    expectLine("gazaham", "g-happy");
+    expectLine("gagawal", "g-quiet");
+    expectLine("gagawam", "g-volume");
     expectLine("hunol", "h-fishing");
     expectLine("thunom", "th-WITNESSED");
     expectLine("gahazam", "g-home");
@@ -236,8 +236,8 @@ describe("morphGlossLine — glosses.md single words", () => {
 describe("morphGlossLine — glosses.md dialogue turns", () => {
   it("inclusive census turn", () => {
     expectLine(
-      "yael zamegun zam zehodon zal gazaham.",
-      "y-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-happy]",
+      "yael zamegun zam zehodon zal gezebul.",
+      "y-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-sleepy]",
     );
   });
 
@@ -387,11 +387,11 @@ describe("compareMorphGloss", () => {
   });
 
   it("round-trips the yael census example block", () => {
-    const md = `> \`yael zamegun zam zehodon zal gazaham.\`
+    const md = `> \`yael zamegun zam zehodon zal gezebul.\`
 >
-> y-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-happy]
+> y-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-sleepy]
 >
-> "Yes — you and I are happy."
+> "Yes — you and I are sleepy."
 `;
     const [pair] = extractExampleBlocks(md);
     assert.ok(pair);
@@ -409,7 +409,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("span interiors: cite and aside gloss English; mention passes through", () => {
-    expectLine("zazawan vowogal th(hazaham)", "z-Azawan | v-walk | th-ASIDE[h-happy]");
+    expectLine("zazawan vowogal th(hagawal)", "z-Azawan | v-walk | th-ASIDE[h-quiet]");
     expectLine("yul zalahen v[vazadal]", "y-prohibition | z-Alahen | v-CITE[v-stop]");
     expectLine(
       "zazawan vowogal th(zalahen vezebal)",
@@ -472,7 +472,7 @@ describe("morphGlossLine — extra fixtures", () => {
 describe("morphGlossLine — th stance letter", () => {
   it("glosses stance moods, /w/ on th, and th poles with stand-ins", () => {
     expectLine("thovom zazawan vehahel.", "th-MAY | z-Azawan | v-sit");
-    expectLine("zazawan wazaham thodum vahahal ahahalul.", "z-Azawan | [w-happy | th-LIVE] | v-see | eye-leave");
+    expectLine("zazawan wezebul thodum vahahal ahahalul.", "z-Azawan | [w-sleepy | th-LIVE] | v-see | eye-leave");
     expectLine("theram barl zazawan vehahel.", "[th-because | b-that-clause] | z-Azawan | v-sit");
     expectLine("thexal zazawan vehahel xuxul.", "th-ASIDE.multi[z-Azawan | v-sit]");
   });

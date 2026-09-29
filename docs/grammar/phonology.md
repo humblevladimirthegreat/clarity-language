@@ -176,9 +176,9 @@ Legal clusters: left-hanging `gl-`; number-word role letter + `r`; lexical join 
 
 Try a short Agazan line quickly at a high comfortable pitch:
 
-`zazawan gazaham.`
+`zazawan gamadam.`
 
-/ zä.zä.wän ɡu.zu.mum /
+/ zä.zä.wän ɡä.mä.däm /
 
 A line that piles closed vowels, clusters, and mid-word stops is harder to sustain even when it is only a little harder to speak:
 

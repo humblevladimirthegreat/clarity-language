@@ -117,10 +117,10 @@ describe("searchLexicon", () => {
     assert.ok(down.map((r) => r.concrete).includes("thumbs-down"));
   });
 
-  it('finds abstract "happy" on smile', () => {
-    const results = searchLexicon(index, rows, "happy", { limit: 20, overlays, overlayIndex });
+  it('finds abstract "goodwill" on smile', () => {
+    const results = searchLexicon(index, rows, "goodwill", { limit: 20, overlays, overlayIndex });
     const hit = results.find((r) => r.concrete === "smile");
-    assert.ok(hit, "expected smile among happy results");
+    assert.ok(hit, "expected smile among goodwill results");
     assert.ok(hit.matchFields.includes("abstract"));
   });
 

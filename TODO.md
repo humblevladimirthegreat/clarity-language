@@ -9,7 +9,6 @@ use [skip-cd] for amplify to not deploy.
 # TODO
 
 Prosody
--remove & as punctuation?
 -confirm we still have chats after rebuild
 -expressiveness review
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
@@ -20,6 +19,7 @@ save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by overlay-roots.
 -mass lexical compound adding
 -do a style pass in grammar-docs. Check for adherence to doc-style and otherwise ensure natural sounding explanations.
+-vocab bank and exercise revamp: introduce new vocabulary, follow standards for language teaching
 
 save for end:
 -finish English->Agazan cheat sheets, including tense

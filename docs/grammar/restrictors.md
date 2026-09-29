@@ -89,46 +89,46 @@ English *sometimes* is the usual match next to *never* / *always*. It still only
 
 The same restrictor vowels and endings can limit **only the host you are about to write**, not the whole verb claim. Spell them with letter **`w`** instead of **`h`**. The host is the next adjective. Occasion words that belong to that host sit immediately before the restrictor and also take **`w`**. `/h/` still limits the clause.
 
-> `zazawan wal gazaham.`
+> `zazawan wal gezebul.`
 >
-> z-Azawan | [w-never | g-happy]
+> z-Azawan | [w-never | g-sleepy]
 >
-> "Azawan is never happy."
+> "Azawan is never sleepy."
 
-> `zalahen wual gazaham.`
+> `zalahen wual gezebul.`
 >
-> z-Alahen | [w-always | g-happy]
+> z-Alahen | [w-always | g-sleepy]
 >
-> "Alahen is always happy."
+> "Alahen is always sleepy."
 
-> `zahaben war gazaham.`
+> `zahaben war gezebul.`
 >
-> z-Ahaben | [w-sometimes | g-happy]
+> z-Ahaben | [w-sometimes | g-sleepy]
 >
-> "Ahaben is sometimes happy."
+> "Ahaben is sometimes sleepy."
 
-> `zazawan werehel wal gazaham.`
+> `zazawan werehel wal gezebul.`
 >
-> z-Azawan | [w-rain | w-only-when | g-happy]
+> z-Azawan | [w-rain | w-only-when | g-sleepy]
 >
-> "Azawan is happy only when raining."
+> "Azawan is sleepy only when raining."
 
-> `zalahen wor gazaham.`
+> `zalahen wor gezebul.`
 >
-> z-Alahen | [w-anytime | g-happy]
+> z-Alahen | [w-anytime | g-sleepy]
 >
-> "Alahen is happy anytime."
+> "Alahen is sleepy anytime."
 
-> `zahaben wur gazaham.`
+> `zahaben wur gezebul.`
 >
-> z-Ahaben | [w-some-other-time | g-happy]
+> z-Ahaben | [w-some-other-time | g-sleepy]
 >
-> "Ahaben is happy at some other time."
+> "Ahaben is sleepy at some other time."
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `/h/` | limits the clause | *when the verb claim counts* | **h** starts *how* / *when* / *where* |
-| `/w/` | same map on the next adjective | *never happy* | **w** ≈ with (stuck to that host) |
+| `/w/` | same map on the next adjective | *never sleepy* | **w** ≈ with (stuck to that host) |
 
 **Compare with:** extra detail on an adjective is still ordinary `/w/` from [clause](clause.md#adjective-detail-w). A restrictor on `/w/` answers **when that adjective counts**.
 
@@ -161,7 +161,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
 | *swim* | `vezewel` | |
-| *happy* | `azaham` | `azahal` *smile* |
+| *sleepy* | `ezebul` | |
 | *rain* | `erehel` | |
 | *night* | `anadal` | |
 | *thunderstorm* | `avodel` | |
@@ -195,12 +195,12 @@ z-Alahen | v-swim | h-never
 z-Ahaben | v-swim | h-always
 :::
 
-**4.** *Azawan is never happy.*
+**4.** *Azawan is never sleepy.*
 
 ::: details Show answer
-`zazawan wal gazaham.`
+`zazawan wal gezebul.`
 
-z-Azawan | [w-never | g-happy]
+z-Azawan | [w-never | g-sleepy]
 :::
 
 **5.** *Alahen swims sometimes.*
@@ -255,13 +255,13 @@ z-Azawan | v-swim | h-never
 *Azawan never swims.*
 :::
 
-**3.** `zalahen wual gazaham.`
+**3.** `zalahen wual gezebul.`
 
 ::: details Show answer
 
-z-Alahen | [w-always | g-happy]
+z-Alahen | [w-always | g-sleepy]
 
-*Alahen is always happy.*
+*Alahen is always sleepy.*
 :::
 
 **4.** `zahaben vezewel hur.`
@@ -282,13 +282,13 @@ z-Azawan | v-swim | h-rain | h-night | h-when.open
 *Azawan swims when raining and at night, among other times.*
 :::
 
-**6.** `zahaben war gazaham.`
+**6.** `zahaben war gezebul.`
 
 ::: details Show answer
 
-z-Ahaben | [w-sometimes | g-happy]
+z-Ahaben | [w-sometimes | g-sleepy]
 
-*Ahaben is sometimes happy.*
+*Ahaben is sometimes sleepy.*
 :::
 
 **7.** `zazawan vezewel havodel hual.`
@@ -381,11 +381,11 @@ Statement readings below. Asking *when*: [questions.md](questions.md#when).
 | **`hor`** | unspecified member of a one-choice time menu | *anytime among these* | *anytime* | **o** ≈ one + **-r** |
 | **`hur`** | unspecified leftover occasion | *some time other than these* | *some other time* | **u** ≈ undo + **-r** |
 
-> `zazawan werehel wanadal wol gazaham.`
+> `zazawan werehel wanadal wol gezebul.`
 >
-> z-Azawan | [w-rain | w-night | w-when-one | g-happy]
+> z-Azawan | [w-rain | w-night | w-when-one | g-sleepy]
 >
-> "Azawan is happy either when raining or at night (not both)."
+> "Azawan is sleepy either when raining or at night (not both)."
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -403,7 +403,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahaben* | `ahaben` | |
 | *climb* | `vagawol` | |
 | *run* | `varahal` | |
-| *happy* | `azaham` | `azahal` *smile* |
+| *sleepy* | `ezebul` | |
 | *rain* | `erehel` | |
 | *snow* | `ozezol` | |
 | *night* | `anadal` | |
@@ -463,12 +463,12 @@ z-Azawan | v-climb | h-rain | h-snow | h-when-ranked
 z-Azawan | v-climb | h-ice | h-fog | h-when-in-order
 :::
 
-**7.** *Azawan is happy either when raining or at night, not both.*
+**7.** *Azawan is sleepy either when raining or at night, not both.*
 
 ::: details Show answer
-`zazawan werehel wanadal wol gazaham.`
+`zazawan werehel wanadal wol gezebul.`
 
-z-Azawan | [w-rain | w-night | w-when-one | g-happy]
+z-Azawan | [w-rain | w-night | w-when-one | g-sleepy]
 :::
 
 **8.** *Ahaben screams if Alahen falls.*
@@ -544,13 +544,13 @@ z-Azawan | v-scream | [th-if | b-that-clause] | z-Alahen | v-fall
 *Azawan screams if Alahen falls.*
 :::
 
-**8.** `zalahen werehel wanadal wol gazaham.`
+**8.** `zalahen werehel wanadal wol gezebul.`
 
 ::: details Show answer
 
-z-Alahen | [w-rain | w-night | w-when-one | g-happy]
+z-Alahen | [w-rain | w-night | w-when-one | g-sleepy]
 
-*Alahen is happy either when raining or at night, not both.*
+*Alahen is sleepy either when raining or at night, not both.*
 :::
 
 ## See also

@@ -35,11 +35,11 @@ When English would say *the most challenging*, you are still ranking, but you na
 >
 > "Azawan is the most challenging (of all)."
 
-> `zahaben zel gazaham.`
+> `zahaben zel gezebul.`
 >
-> [z-Ahaben | z-rank/more | g-happy]
+> [z-Ahaben | z-rank/more | g-sleepy]
 >
-> "Ahaben is the happiest (of all)."
+> "Ahaben is the sleepiest (of all)."
 
 ### Degree (*much* / *slightly*)
 <a id="degree"></a>
@@ -65,11 +65,11 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 >
 > "Azawan is as challenging as Alahen."
 
-> `zalahen zahaben zael gazaham.`
+> `zalahen zahaben zael gezebul.`
 >
-> [z-Alahen | z-Ahaben | z-equal-rank | g-happy]
+> [z-Alahen | z-Ahaben | z-equal-rank | g-sleepy]
 >
-> "Alahen is as happy as Ahaben."
+> "Alahen is as sleepy as Ahaben."
 
 **Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zazawan gamadam` *Azawan is challenging*. Use **`ae`** when two people share a height on the quality. *Walks like a duck* is resemblance ([simile](relations.md#similative) `homem`), not a shared score on a named scale.
 
@@ -545,7 +545,7 @@ Single-item `zazawan zuel gamadam` is *the least challenging* in the group in pl
 |---------|---------|
 | `zamegun zegun zuel gezehel` | I am worse at singing than Professional |
 | `zebeyum zeyen zuem gagazam` | soft: the draft is somewhat less clear than Average |
-| `zazawan zomen zuel gazaham` | Azawan is less happy than **my personal standard** |
+| `zazawan zomen zuel gezebul` | Azawan is less sleepy than **my personal standard** |
 | `zazawan zamegun zuel gezehel` | Azawan is less skilled at singing than **I am** (performance) |
 | `zamegun zezon zuel gamadam` | I am less challenging than Social |
 | `zamegun zahen zuel gamadam` | I am less challenging than Typical |

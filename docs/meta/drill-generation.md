@@ -235,7 +235,7 @@ Tokens here are **stems for matching** (path allowlist / leak checks). Learner *
 | `ubuha` | *blue* |
 | `ereda` | *red* |
 | `elava` | *size* / *big* |
-| `azaha` | smile → *happy* (**-m**) |
+| `agawa` | quiet → *volume* (**-m**) |
 | `owoga` | *walk* |
 | `araha` | *run* |
 | `ezeba` | *sleep* |

@@ -111,11 +111,11 @@ An **aside** is a parenthetical comment. Package it as a [stance](clause.md#stan
 
 The interior is ordinary Agazan: a fragment, or a clause body that keeps the **same speech act** as the outer sentence (the same statement, question, or command).
 
-> `zazawan vowogal th(hazaham).`
+> `zazawan vowogal th(hagawal).`
 >
-> z-Azawan | v-walk | th-ASIDE[h-happy]
+> z-Azawan | v-walk | th-ASIDE[h-quiet]
 >
-> "Azawan walks (happily)."
+> "Azawan walks (quietly)."
 
 > `zazawan vowogal th(zalahen vezebal).`
 >
@@ -123,7 +123,7 @@ The interior is ordinary Agazan: a fragment, or a clause body that keeps the **s
 >
 > "Azawan walks (Alahen sleeps)."
 
-A one-word manner with nothing to package is a plain adverb: `zazawan vowogal hazaham.`
+A one-word manner with nothing to package is a plain adverb: `zazawan vowogal hagawal.`
 
 **For *because* / *if*, use:** [**`barl`**](dependents.md#dependent-clauses) dependents, not an aside.
 
@@ -169,7 +169,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Onodan* | `onodan` | | |
 | *melody* | `onodal` | | |
 | *small* | `gamazam` | `amazal` *mouse* | 🐁: a mouse is little |
-| *happy* | `hazaham` | | |
+| *quiet* | `agawal` | | |
 | *kimchi* | <code>d&lt;kimchi&gt;</code> | | |
 | *Sam* | <code>@&lt;Sam&gt;</code> | | |
 
@@ -213,12 +213,12 @@ z-MENTION["onoda"] | g-small
 z-Ahaben | d-Onodan | v-sing
 :::
 
-**6.** *Azawan sings (happily).*
+**6.** *Azawan sings (quietly).*
 
 ::: details Show answer
-`zazawan vezehel th(hazaham).`
+`zazawan vezehel th(hagawal).`
 
-z-Azawan | v-sing | th-ASIDE[h-happy]
+z-Azawan | v-sing | th-ASIDE[h-quiet]
 :::
 
 **7.** *Don’t say “stop,” Alahen.*
@@ -413,7 +413,7 @@ Beginner brackets map to these spoken opens and closes.
 | `d@[…]` | `daxan` … `xuxul` | proper multi-token cite; also spelling of hedged proper |
 | `d{…}` / `d~{…}` / `d@{…}` | `doxal` / `doxam` / `doxan` … `xuxul` | mention |
 | `th(…)` / `th~(…)` / `th@(…)` | `thexal` / `thexam` / `thexan` … `xuxul` | aside (open PoS is `/th/`) |
-| `th(hazaham)` | `thexol hazaham` | atomic aside |
+| `th(hagawal)` | `thexol hagawal` | atomic aside |
 | `th(=)` | `thexur` | aside resume |
 | `d<…>` / `d~<…>` / `d@<…>` | `duxal` / `duxam` / `duxan` … `xuxul` | opaque |
 | `d[azawan]` | `daxol azawan` | atomic (EDGE **o**) |
@@ -428,11 +428,11 @@ The close does not repeat PoS, TYPE, EDGE, or open fidelity. Explicit close for 
 
 When one packaged chunk sits inside another (a quote that contains a parenthetical, or a cite wrapping a mention), each typed fence nests. A multi-token open starts a layer; **`xuxul`** closes the innermost layer. Atomic opens and resumes do not start a new layer. **`@`** / **`~`** apply only to the immediately following open.
 
-> `zazawan d[ th(hazaham) azawan ] vezebel.`
+> `zazawan d[ th(hagawal) azawan ] vezebel.`
 >
-> z-Azawan | d-CITE[th-ASIDE[h-happy] | Azawan] | v-tell
+> z-Azawan | d-CITE[th-ASIDE[h-quiet] | Azawan] | v-tell
 >
-> "Azawan said “Azawan” (happily)." (hello)
+> "Azawan said “Azawan” (quietly)." (hello)
 
 The same nest works as `d[ z{…} ]` or `d~[ d<…> ]`.
 
@@ -523,7 +523,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *punch* | `vabahel` |
 | *Judge* | `ahahon` |
 | *small* | `gamazam` |
-| *happy* | `hazaham` |
+| *quiet* | `agawal` |
 | *possibility* | `hegewem` |
 | *FBI* | <code>d&lt;FBI&gt;</code> |
 
@@ -569,12 +569,12 @@ z-Azawan | d-CITE.empty[] | v-tell
 z-Alahen | d-OPAQUE.atomic["FBI"] | v-see
 :::
 
-**6.** *Azawan said “Azawan” (happily).* (cite nesting an aside)
+**6.** *Azawan said “Azawan” (quietly).* (cite nesting an aside)
 
 ::: details Show answer
-`zazawan d[ th(hazaham) azawan ] vezebel.`
+`zazawan d[ th(hagawal) azawan ] vezebel.`
 
-z-Azawan | d-CITE[th-ASIDE[h-happy] | Azawan] | v-tell
+z-Azawan | d-CITE[th-ASIDE[h-quiet] | Azawan] | v-tell
 :::
 
 **7.** *Azawan saw, as a possibility, the lie.* (*possibility* targets that chunk)
@@ -647,13 +647,13 @@ z-Ahaben | d-NAME.MENTION.atomic["ahahon"] | v-tell
 *Ahaben said the name “Ujudun.”*
 :::
 
-**5.** `zazawan vezehel thexol hazaham.`
+**5.** `zazawan vezehel thexol hagawal.`
 
 ::: details Show answer
 
-z-Azawan | v-sing | th-ASIDE.atomic[h-happy]
+z-Azawan | v-sing | th-ASIDE.atomic[h-quiet]
 
-*Azawan sings (happily).*
+*Azawan sings (quietly).*
 :::
 
 **6.** `zoxol ahahol gamazam.`
@@ -753,7 +753,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Ahaben* | `ahaben` |
 | *tell* | `vezebel` |
 | *bug* | `abogam` |
-| *happy* | `hazaham` |
+| *quiet* | `agawal` |
 
 #### English → Agazan {#advanced-english-to-agazan}
 
@@ -773,12 +773,12 @@ z-Ahaben | d-CITE.multi[flaw] | v-tell
 z-Alahen | d-CITE.multi[flaw]# | v-tell
 :::
 
-**3.** *Azawan said “bug” (happily), then close every open span at once.*
+**3.** *Azawan said “bug” (quietly), then close every open span at once.*
 
 ::: details Show answer
-`zazawan daxal thexol hazaham abogam xuxum vezebel.`
+`zazawan daxal thexol hagawal abogam xuxum vezebel.`
 
-z-Azawan | d-CITE.multi[th-ASIDE.atomic[h-happy] | flaw]| | v-tell
+z-Azawan | d-CITE.multi[th-ASIDE.atomic[h-quiet] | flaw]| | v-tell
 :::
 
 #### Agazan → English {#advanced-agazan-to-english}

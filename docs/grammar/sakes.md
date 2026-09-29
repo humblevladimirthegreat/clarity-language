@@ -472,13 +472,13 @@ The `/b/` can name anyone: `thonathum balahen.` owns a harm to Alahen, even when
 
 ### Hopefully and other attitudes {#speaker-attitude}
 
-English *hopefully*, *luckily*, and *sadly* say how **you**, the speaker, feel about the whole claim. In Agazan, put the content root for that feeling on `/th/` with **-m**. It is always the speaker's attitude, never the subject's. For the subject's manner (*Azawan walks hopefully*), use `/h/` (`hevegem`).
+English *hopefully*, *luckily*, and *worryingly* say how **you**, the speaker, feel about the whole claim. In Agazan, put the content root for that feeling on `/th/` with **-m**. It is always the speaker's attitude, never the subject's. For the subject's manner (*Azawan walks hopefully*), use `/h/` (`hevegem`).
 
 | Agazan | Use | English | Same root as |
 |--------|-----|---------|--------------|
 | **`thevegem`** | you want it, and it is still open | *hopefully* | `evegel` *crossed-fingers* |
 | **`theledem`** | it went well by chance | *luckily* | `eledel` *ladybug* |
-| **`thavawom`** | it saddens you | *sadly* | `avawol` *frown* |
+| **`thewedam`** | it concerns you | *worryingly* | `ewedal` *worried* |
 
 > `zazawan thevegem vowogal.`
 >

@@ -8,7 +8,7 @@ A gloss should answer: *what is each Agazan piece doing in the clause — in Eng
 
 | Goal | Gloss does | Gloss does not |
 |------|------------|----------------|
-| Slot + sense | Show PoS letter and the **active English sense** | Quote Agazan phonology (`amegu`, `azaha`, …), except [mention / opaque interiors](#span-interiors) |
+| Slot + sense | Show PoS letter and the **active English sense** | Quote Agazan phonology (`amegu`, `agawa`, …), except [mention / opaque interiors](#span-interiors) |
 | Separate senses | Treat concrete / abstract / proper / overlay as **different English roots** | Chain etymology (`microphone→speaker`) |
 | Endings | Drop **-l** / **-m** / **-n** when they only pick which sense-root applies | Repeat those endings after a sense that already encodes them |
 | Structure | Keep mid-word `x` pieces, **-x**, and binding visible | Invent full English syntax for Agazan structure; copy writing glyphs (`@` / `~`) into the gloss |
@@ -135,8 +135,8 @@ Published strings share one phonological root, but **concrete**, **abstract**, a
 | `zamegul` | `z-microphone` | `z-ugobo(microphone)-l`, `z-microphone-l` |
 | `zamegum` | `z-speaker` | `z-ugobo(microphone→speaker)-m` |
 | `zamegun` | `z-speaker` | `z-ugobo(speaker)-n`, `z-speaker-n` |
-| `gazahal` | `g-smile` | `g-uzumu(smile)-l` |
-| `gazaham` | `g-happy` | `g-uzumu(smile→happy)-m`, `g-happy-m` |
+| `gagawal` | `g-quiet` | `g-uzumu(quiet)-l` |
+| `gagawam` | `g-volume` | `g-uzumu(quiet→volume)-m`, `g-volume-m` |
 | `hunol` | `h-fishing` | `h-uvuvu(fishing)-l` |
 | `thunom` | `th-WITNESSED` | `h-uvuvu(fishing→WITNESSED)-m` |
 | `gahazam` | `g-home` | `g-ohohu(house→home)-m` |
@@ -208,7 +208,7 @@ A dependent sits next to the word it modifies, in Agazan order. Nesting shows at
 | Adjective on the extra noun | `[z-dog \| [g-SAME \| [b-Azawan \| g-tall]]]` |
 | Join fence (join last) | `[d-tea \| d-coffee \| d-or]` |
 | Nested fences | `[[d-tea \| d-coffee \| d-or] \| d-water \| d-and]` |
-| Shared `/ɡ/` after a join | `[z-Azawan \| z-Alahen \| z-and \| g-happy]` |
+| Shared `/ɡ/` after a join | `[z-Azawan \| z-Alahen \| z-and \| g-sleepy]` |
 
 A **labeled bracket** `LABEL[ … ]` marks a package. The label is uppercase English with no glyphs. When the package has a role letter, it is the prefix: `d-CITE[…]`.
 
@@ -248,7 +248,7 @@ Only when it is **not** already baked into the English sense-root:
 | `(←…)` binding for **-r** | Resume is not a lexicon sense; see below |
 | Rare teaching callouts | If you must contrast two same-sense forms that differ only by ending, prefer distinct English labels (`and.open` / `and`, `y-question` / `y-soft-question`) over re-attaching `-m` / `-l` or `~` |
 
-Do **not** write `-l` / `-m` / `-n`, **`@`**, or **`~`** after a sense. Named **-n** uses the English name (`z-Azawan`), not `-n` / `-proper` / `@`. Abstract **-m** uses the abstract word (`g-happy`), not `happy~`.
+Do **not** write `-l` / `-m` / `-n`, **`@`**, or **`~`** after a sense. Named **-n** uses the English name (`z-Azawan`), not `-n` / `-proper` / `@`. Abstract **-m** uses the abstract word (`g-volume`), not `volume~`.
 
 ### Sense labels
 
@@ -298,7 +298,7 @@ Do not write `z-←microphone` for a speaker antecedent.
 ### House-cast given names
 <a id="house-cast"></a>
 
-Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#house-cast)). Morph gloss is the **English name**. Free English is that same name, not the virtue word and not *I* / *you*. Resume uses that name (`z-←Azawan`). The learner's own name slot glosses as a free-standing `SELF` (`z-SELF`); the site renders *speaker* or the chosen English name ([first person](grammar-docs.md#house-cast)). Do not write `z-grace@`, `g-happy~`, or `z-grace-proper`.
+Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#house-cast)). Morph gloss is the **English name**. Free English is that same name, not the virtue word and not *I* / *you*. Resume uses that name (`z-←Azawan`). The learner's own name slot glosses as a free-standing `SELF` (`z-SELF`); the site renders *speaker* or the chosen English name ([first person](grammar-docs.md#house-cast)). Do not write `z-grace@`, `g-volume~`, or `z-grace-proper`.
 
 | Agazan | Morph gloss | Free English | Resume |
 |--------|-------------|--------------|--------|
@@ -399,7 +399,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `zohan` | `z-interlocutors` | *we* (speaker ∪ address set) |
 | `zamegunx` | `z-speaker-x` | *I and associates* |
 | `zehodonx` | `z-listener-x` | *you-all* (address set) |
-| `gazaham` | `g-happy` | *happy* |
+| `gezebul` | `g-sleepy` | *sleepy* |
 | `thunom` | `th-WITNESSED` | *per memory* |
 | `thodum` | `th-LIVE` | *from the scene* |
 | `thumar` | `th-plan-sketch` | *as a sketch plan* |
@@ -408,13 +408,13 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Dialogue turn (morph + loose free)
 
-> `yael zamegun zam zehodon zal gazaham.`
+> `yael zamegun zam zehodon zal gezebul.`
 >
-> y-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-happy]
+> y-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-sleepy]
 >
-> "Yes — you and I are happy."
+> "Yes — you and I are sleepy."
 
-(Prefer **`zohan gazaham`** when the point is interlocutor *we*, not an explicit two-name census.)
+(Prefer **`zohan gezebul`** when the point is interlocutor *we*, not an explicit two-name census.)
 
 ### Metaphor vs overlay vs literal
 
@@ -471,7 +471,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 | Avoid | Why | Prefer |
 |-------|-----|--------|
 | `z-ugobo(speaker)-n` | Agazan letters + redundant ending | `z-speaker` |
-| `z-grace@` / `g-happy~` / `z-grace-proper` | Writing glyphs or the word *proper* in the gloss | `z-Azawan` / `g-happy` |
+| `z-grace@` / `g-volume~` / `z-grace-proper` | Writing glyphs or the word *proper* in the gloss | `z-Azawan` / `g-sleepy` |
 | `zam` / `hal` / `am` as the whole morph | Agazan letters where the job belongs | `z-and.open` / `h-only-when` / `including.open` |
 | `z-microphone-l` | Ending already chose the literal root | `z-microphone` |
 | `z-microphone→speaker` | Etymology chain | `z-speaker` |

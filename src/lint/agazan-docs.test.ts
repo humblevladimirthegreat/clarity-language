@@ -72,7 +72,7 @@ describe("lintAgazanToken", () => {
   const tables = tablesOf({
     published: [
       { root: "azawa", concrete: "dog" },
-      { root: "uzumu", concrete: "smile", abstract: "happy" },
+      { root: "uzumu", concrete: "quiet", abstract: "volume" },
       { root: "egera", concrete: "ability" },
       { root: "ululo", concrete: "courage" },
     ],

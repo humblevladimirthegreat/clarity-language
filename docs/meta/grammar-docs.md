@@ -276,7 +276,7 @@ A cue is a **bridge**: one reason the visible token (letter, vowel, emoji) maps 
 |------|------|------|
 | **Cover** | Hide **Cue**. **Agazan** + **Use** / **English** (and **Same root as**, when present) still teach the language. | The pun is the only definition |
 | **Bridge** | Hide the emoji, the *literal*, and the letter being punned. What remains still says *why* the token maps to this row. | 🧱 *brick* — leftover is the picture’s name |
-| **Not a caption** | Cue ≠ Unicode/CLDR name, ≠ **Agazan** spelled in English, ≠ `from *smile*` with no why | *doorway*, *zebra*, *timer* alone |
+| **Not a caption** | Cue ≠ Unicode/CLDR name, ≠ **Agazan** spelled in English, ≠ `from *quiet*` with no why | *doorway*, *zebra*, *timer* alone |
 | **Not the answer** | Cue is not a synonym of **English** / **Use** | *because* restated as *cause* / *foundation* as a second gloss cell |
 | **One hop** | Token → **one** reason → the row | `brick → foundation → because` as three English labels |
 | **Short** | One clause after the token | A second slogan system |
@@ -285,16 +285,16 @@ Scene shape: `{emoji} *{literal}*: {why that evokes this row}` when there is no 
 
 Letter / series: `{letter} ≈ {sound or series slogan} ({why that maps})`. `**d** ≈ done to` passes because *done to* is a **sound** bridge to *acted on*, not a caption of `d`. `**v** ≈ verb` fails unless the leftover explains the coincidence (*the English word for the job*).
 
-`from *smile*` with no why fails the bridge test. Prefer `from *smile*: the face of *happy*`, or omit **Cue** when **-m** plus **English** is enough.
+`from *quiet*` with no why fails the bridge test. Prefer `from *quiet*: volume is sound turned up or down`, or omit **Cue** when **-m** plus **English** is enough.
 
 ### Two kinds of cue
 
 | Kind | What it is | Where it goes |
 |------|-----------|----------------|
 | Letter / series | Pun on the spelling (`**d** ≈ done to`, **`a`** *add*) plus why it maps | **Cue** only. Never **Use** or **English**. Linker is **`≈`** (“sounds like”), never `=` or `→`. |
-| Scene | Published emoji + concrete that licenses **-m**, then why that scene evokes the sense | **English** = abstract sense (*happy*, *because*). **Same root as** = citation **-l** of that picture (`azahal` *smile*). **Cue** = `emoji: why` (or `emoji *literal*: why` if the table has no **Same root as** column) |
+| Scene | Published emoji + concrete that licenses **-m**, then why that scene evokes the sense | **English** = abstract sense (*volume*, *because*). **Same root as** = citation **-l** of that picture (`agawal` *quiet*). **Cue** = `emoji: why` (or `emoji *literal*: why` if the table has no **Same root as** column) |
 
-A lexicon path is a real **-l** / **-m** choice; the *concrete* English is still not what drills ask for. Write `*happy*` in **English** (no `(**-m**)` tag — the citation ending already marks abstract), `` `azahal` *smile* `` in **Same root as**, and `😊: the face of *happy*` (or `from *smile*: the face of *happy*` when the table has no **Same root as** column) in **Cue** — never `smile → *happy*` as the only English. The same **Same root as** / **Cue** split applies when **English** is a role-marked use of the concrete (`*see*` / `vahahal` / `` `ahahal` *eye* `` / `👁️: seeing is what an eye does`).
+A lexicon path is a real **-l** / **-m** choice; the *concrete* English is still not what drills ask for. Write `*volume*` in **English** (no `(**-m**)` tag — the citation ending already marks abstract), `` `agawal` *quiet* `` in **Same root as**, and `🔈: volume is sound turned up or down` (or `from *quiet*: volume is sound turned up or down` when the table has no **Same root as** column) in **Cue** — never `quiet → *volume*` as the only English. The same **Same root as** / **Cue** split applies when **English** is a role-marked use of the concrete (`*see*` / `vahahal` / `` `ahahal` *eye* `` / `👁️: seeing is what an eye does`).
 
 Inline after the rule sentence: `(cue: …)`. Worked examples stay Agazan / morph / quoted free English ([example block](glosses.md#example-block)) — no cue line. Translation-practice spoilers add a visible morph line under the same rules ([translation-exercises.md](translation-exercises.md#principles)). The root bank may add **Same root as** and **Cue** beside **English · Agazan**.
 
@@ -382,11 +382,11 @@ Short Eng ↔ Agazan checkpoints: end of a page stage only — [translation-exer
 ### Citation in tables
 <a id="citation-in-tables"></a>
 
-Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odoga`, `azaha`, `azawa`, `ovo`). A content-word **Agazan** cell is a spelling the learner could write **as a word**. If **Same root as** is empty, that spelling is always the [citation](../grammar/word-endings.md#citation-forms) (prefix-less root + ending): `agawol` *climb*, not `vagawol`. The **inflected** form (role letter already on) is only for rows that also fill **Same root as**, when the English needs that letter (`vahahal` *see*). **English** is the lexicon lemma for that spelling (published literal / metaphor / packed role English) — do not tag `(**-m**)` or `(**-l**)` there; the Agazan ending already carries that. **Same root as** stays the everyday **-l** citation of the picture (`eral` *brick*; `ahahal` *eye* when **Agazan** is `vahahal`), not a stem, and that picture English is also the published lemma (`*correct*`, not a retired gloss). Checkpoint banks apply the same rule ([translation-exercises.md](translation-exercises.md#template)); `build` checks them.
+Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odoga`, `agawa`, `azawa`, `ovo`). A content-word **Agazan** cell is a spelling the learner could write **as a word**. If **Same root as** is empty, that spelling is always the [citation](../grammar/word-endings.md#citation-forms) (prefix-less root + ending): `agawol` *climb*, not `vagawol`. The **inflected** form (role letter already on) is only for rows that also fill **Same root as**, when the English needs that letter (`vahahal` *see*). **English** is the lexicon lemma for that spelling (published literal / metaphor / packed role English) — do not tag `(**-m**)` or `(**-l**)` there; the Agazan ending already carries that. **Same root as** stays the everyday **-l** citation of the picture (`eral` *brick*; `ahahal` *eye* when **Agazan** is `vahahal`), not a stem, and that picture English is also the published lemma (`*correct*`, not a retired gloss). Checkpoint banks apply the same rule ([translation-exercises.md](translation-exercises.md#template)); `build` checks them.
 
 | Publish | Example |
 |---------|---------|
-| Citation of this row’s sense | `odogal` *dog*; `azaham` *happy*; `azawan` *Azawan*; `ezadal` *therefore* |
+| Citation of this row’s sense | `odogal` *dog*; `agawam` *volume*; `azawan` *Azawan*; `ezadal` *therefore* |
 | Inflected form the row teaches | `thovom`, `thumam`, `xezadam`, `zaxavadal`; drill-bank `vahahal` *see* |
 | Special with its default ending | citation `amegun` / `ehodon` / `ohan` / `onun`; in-clause `zamegun` when the slot is the point |
 

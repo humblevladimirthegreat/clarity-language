@@ -35,11 +35,11 @@ A HOOK B
 
 You already named a wording (A), and you want English *or rather B*: a better reading of the **same** slot, not a second member and not a swap. Keep `A HOOK B` and use vowel **e**. You keep A's slot and replace the wording. (cue: **e** ≈ order.)
 
-> `zazawan gazaham el gerevam.`
+> `zazawan gadadal el gezebul.`
 >
-> [z-Azawan | g-happy] | rather | g-calm
+> [z-Azawan | g-tired] | rather | g-sleepy
 >
-> "Azawan is happy, or rather, calm."
+> "Azawan is tired, or rather, sleepy."
 
 ### Instead (`ol`)
 <a id="instead"></a>

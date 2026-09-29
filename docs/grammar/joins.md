@@ -770,7 +770,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *ring* | `erehal` | |
 | *veil* | `evewal` | |
 | *tuxedo* | `adozel` | |
-| *happy* | `azaham` | `azahal` *smile* |
+| *sleepy* | `ezebul` | |
 | *see* | `vahahal` | `ahahal` *eye* |
 | *kiss* | `vegezal` | `egezal` *kiss* |
 | *punch* | `vabahel` | `abahel` *punch* |
@@ -794,12 +794,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-everything | g-ring]
 :::
 
-**3.** *(happy Azawan) and (happy Alahen)*
+**3.** *(sleepy Azawan) and (sleepy Alahen)*
 
 ::: details Show answer
-`zazawan zalahen zal gazaham.`
+`zazawan zalahen zal gezebul.`
 
-[z-Azawan | z-Alahen | z-and | g-happy]
+[z-Azawan | z-Alahen | z-and | g-sleepy]
 :::
 
 **4.** *(wine or a flower) and a ring*

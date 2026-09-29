@@ -148,7 +148,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *money* | `amol` | | |
 | *angry* | `anegel` | | |
 | *very* | `welavam` | | |
-| *happy* | `gazaham` | `azahal` *smile* | 😊: the face of *happy* |
+| *sleepy* | `ezebul` | | |
 | *sit* | `vehahel` | `ehahel` *chair* | 🪑: taking a seat |
 | *stand* | `vazadol` | `azadol` *stand* | 🧍: staying in place |
 | *see* | `vahahal` | `ahahal` *eye* | 👁️: seeing is what an eye does |
@@ -229,13 +229,13 @@ z-Azawan | d-Ahaben | v-see
 *Azawan sees Ahaben.*
 :::
 
-**3.** `zahaben gazaham damol vahahal.`
+**3.** `zahaben gezebul damol vahahal.`
 
 ::: details Show answer
 
-[z-Ahaben | g-happy] | d-money | v-see
+[z-Ahaben | g-sleepy] | d-money | v-see
 
-*Happy Ahaben sees money.*
+*Sleepy Ahaben sees money.*
 :::
 
 **4.** `zalahen vezevul homem bazawan.`

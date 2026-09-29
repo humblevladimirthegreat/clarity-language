@@ -16,7 +16,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 |-------|-------|---------|-------|
 | **ABIL** | Hostless *can* / *can’t* (no single verb) | `thezexel` | [Intention](intention.md#ability-fallback) |
 | **AIMED** | Emotion locus: aimed at a target | `wonathumol` | [Sakes](sakes.md#emotion-compose) |
-| **ASIDE** | Span TYPE **e**: an aside | `th(hazaham)` | [Spans](spans.md#asides) |
+| **ASIDE** | Span TYPE **e**: an aside | `th(hagawal)` | [Spans](spans.md#asides) |
 | **ATTEMPT** | Try mood: committed / unstated / trial run | `thudom` | [Intention](intention.md#try) |
 | **AWAY** | Emotion locus: moving off from a target | `wonathumum` | [Sakes](sakes.md#emotion-compose) |
 | **CAUSE** | Mechanism-framing mood (*make X do*) | `thegem` | [Causation](causation.md#cause) |

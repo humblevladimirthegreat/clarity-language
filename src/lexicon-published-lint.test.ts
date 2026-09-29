@@ -34,7 +34,7 @@ describe("englishCitationForms", () => {
 describe("concreteAbstractCollide", () => {
   it("allows distinct literal and metaphor", () => {
     assert.equal(concreteAbstractCollide("glasses", "clarity"), null);
-    assert.equal(concreteAbstractCollide("smile", "happy"), null);
+    assert.equal(concreteAbstractCollide("quiet", "volume"), null);
     assert.equal(concreteAbstractCollide("playground", "play"), null);
   });
 

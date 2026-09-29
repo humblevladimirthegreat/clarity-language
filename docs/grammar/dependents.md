@@ -589,8 +589,8 @@ The sentence after one of these verbs has its own subject when the chosen conten
 
 Each clause has at most one **stand-in** at the end of the main sentence. The sentence after it may itself end in **`barl`**, so a further sentence hangs to the **right**.
 
-> `zazawan gazaham theram barl zalahen vowogal theram barl zahaben vezebal.`
+> `zazawan gezebul theram barl zalahen vowogal theram barl zahaben vezebal.`
 >
-> [z-Azawan | g-happy] | [th-because | b-that-clause] | z-Alahen | v-walk | th-because | b-that-clause | z-Ahaben | v-sleep
+> [z-Azawan | g-sleepy] | [th-because | b-that-clause] | z-Alahen | v-walk | th-because | b-that-clause | z-Ahaben | v-sleep
 >
-> "Azawan is happy because Alahen walks because Ahaben sleeps."
+> "Azawan is sleepy because Alahen walks because Ahaben sleeps."

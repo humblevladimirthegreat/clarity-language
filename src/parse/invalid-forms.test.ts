@@ -119,7 +119,7 @@ const ROWS: Row[] = [
     rejection: "respectivePartner",
     valid: "zazawan zalahen zahaben zal vahahal dagadal dodogal debedul wazagum dal.",
   },
-  { invalid: "zazawan vahahal wazagum gazaham dagadal.", rejection: "joinDetail", valid: "zazawan vahahal gazaham dagadal." },
+  { invalid: "zazawan vahahal wazagum gezebul dagadal.", rejection: "joinDetail", valid: "zazawan vahahal gezebul dagadal." },
   {
     invalid: "zazawan zalahen zal vahahal dagadal dodogal welavam dal.",
     rejection: "joinDetail",
