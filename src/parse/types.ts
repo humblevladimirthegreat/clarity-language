@@ -224,6 +224,8 @@ export type Hosted = {
   amount?: LexWord;
   /** Plain adjectives after the hosted pair describe the landmark, not the host's noun. */
   adjs?: GPackage[];
+  /** `barl` after an evidential's offset: the next sentence is the grounds (knowing.md#evidence-clause). */
+  grounds?: LexWord;
 };
 
 export type GPackage = {

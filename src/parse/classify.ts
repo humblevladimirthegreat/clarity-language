@@ -425,6 +425,22 @@ function hostOverlay(word: MorphWord, tables: ClassifyTables): { hostOverlay?: L
   return row && (row.kind === "sake" || row.kind === "ability") ? { hostOverlay: overlayFromRow(row) } : {};
 }
 
+/** Channels whose hosted `/b/` may be a clause: the grounds, by inference or by pattern (knowing.md#evidence-clause). */
+const GROUNDS_CHANNELS = new Set(["INFERRED", "PATTERN"]);
+
+/** An INFERRED or PATTERN `/th/` channel, with or without a holder seam (`thevem`, `thabelazawan`). */
+export function isGroundsChannel(word: LexWord, tables: ClassifyTables): boolean {
+  if (word.pos !== "th") return false;
+  const family = word.family;
+  const row =
+    family.kind === "x" && family.xFamily === "holder"
+      ? tables.overlays.get(overlayKey("th", `${family.leftRoots[0]}${family.grade}`))
+      : word.overlay
+        ? { kind: word.overlay.kind, gloss: word.overlay.gloss }
+        : undefined;
+  return row?.kind === "evidential" && GROUNDS_CHANNELS.has(row.gloss.split(".")[0]!);
+}
+
 /** Arrow-rose roots (roles.md#arrow-rose-compass-vs-face); `DIR th o` on these is a landmark lateral. */
 export const ARROW_ROOTS = new Set([
   CLOSED.north,

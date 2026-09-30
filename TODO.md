@@ -23,7 +23,6 @@ save for near end of limit resets:
 -vocab bank and exercise revamp: introduce new vocabulary, follow standards for language teaching
 
 save for end:
--simplify the parser: can grammatical rules be combined?
 -finish English->Agazan cheat sheets, including tense
 -do parser consistency pass. Does the parser completely and accurately encode all the meaning of the grammar?
 -add Agazan->English cheat sheet

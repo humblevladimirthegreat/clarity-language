@@ -9,7 +9,7 @@
 import type { IToken } from "chevrotain";
 
 import type { ClassifyTables } from "./classify.js";
-import { ARROW_ROOTS, isAsOfOverlay, isStandIn } from "./classify.js";
+import { ARROW_ROOTS, isAsOfOverlay, isGroundsChannel, isStandIn } from "./classify.js";
 import { REJECTIONS, type RejectionId } from "./constructions.js";
 import { SentenceParseError } from "./sentence-parser.js";
 import {
@@ -230,11 +230,21 @@ function enforceShared(join: LexWord | undefined, shared: CoordShared[]): void {
   }
 }
 
-function enforceHostedStandIn(units: Unit[], index: number, unit: HUnit): void {
-  const bound = unit.hosted!.bound;
+function enforceHostedStandIn(units: Unit[], index: number, unit: HUnit, tables: ClassifyTables): void {
+  const hosted = unit.hosted!;
   const host = unit.word;
-  if (!isPole(host)) throw new ConstructionError("standInHost", `${host.raw} ${bound.raw}`);
+  const bound = hosted.grounds ?? hosted.bound;
   const s = series(bound);
+  if (isGroundsChannel(host, tables)) {
+    // Evidence clause (knowing.md#evidence-clause): `barl`, alone or after the offset; never a pole stack.
+    if (bound.pos !== "b" || s !== "a") throw new ConstructionError("standInHost", `${host.raw} ${bound.raw}`);
+    const prev = units[index - 1];
+    if (prev?.kind === "h" && !prev.unit.hosted && isPole(prev.unit.word)) {
+      throw new ConstructionError("poleStack", `${prev.unit.word.raw} ${host.raw}`);
+    }
+    return;
+  }
+  if (hosted.grounds || !isPole(host)) throw new ConstructionError("standInHost", `${host.raw} ${bound.raw}`);
   const undoHost = host.overlay!.gloss === "so-that" || host.overlay!.gloss === "if";
   if (bound.pos !== "b" || !(s === "a" || (s === "u" && undoHost))) {
     throw new ConstructionError(s === "u" ? "standInHostUndo" : "standInHost", `${host.raw} ${bound.raw}`);
@@ -259,13 +269,16 @@ function enforceVerbless(units: Unit[]): void {
 }
 
 /** Checks over one unit list (a clause body or an island): hosts, stand-ins, hooks, as-of counts, edges. */
-function enforceUnitList(units: Unit[]): void {
+function enforceUnitList(units: Unit[], tables: ClassifyTables): void {
   enforceIslandEdges(units);
   enforceRespectively(units);
   let hAsOf = 0;
   let thAsOf = 0;
   units.forEach((unit, i) => {
-    if (unit.kind === "h" && unit.unit.hosted && isStandIn(unit.unit.hosted.bound)) enforceHostedStandIn(units, i, unit.unit);
+    const hosted = unit.kind === "h" ? unit.unit.hosted : undefined;
+    if (unit.kind === "h" && hosted && (isStandIn(hosted.bound) || (hosted.grounds && isStandIn(hosted.grounds)))) {
+      enforceHostedStandIn(units, i, unit.unit, tables);
+    }
     if (unit.kind === "h" && isAsOfOverlay(unit.unit.word)) {
       if (unit.unit.word.pos === "th") thAsOf += 1;
       else hAsOf += 1;
@@ -280,7 +293,7 @@ function enforceUnitList(units: Unit[]): void {
 }
 
 /** The AST checks as one handler set over the walk ([ast-walk.ts](./ast-walk.ts)). */
-function structureVisitor(): Visitor {
+function structureVisitor(tables: ClassifyTables): Visitor {
   return {
     // *Respectively* (`wazagum`) sits only right before a `/z/` `/d/` `/b/` join word (joins.md § Respectively).
     word(word, slot) {
@@ -296,10 +309,10 @@ function structureVisitor(): Visitor {
           enforceVerbless(node.body.clause.units);
           return;
         case "clause":
-          enforceUnitList(node.clause.units);
+          enforceUnitList(node.clause.units, tables);
           return;
         case "island":
-          enforceIsland(node.island);
+          enforceIsland(node.island, tables);
           return;
         case "np":
         case "g":
@@ -330,7 +343,7 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
       throw new ConstructionError("forcePair", `${left.leadForce.raw} ${left.force?.raw ?? ""}`.trim());
     }
   }
-  visitResult(result, structureVisitor());
+  visitResult(result, structureVisitor(tables));
   for (const bind of result.resolve?.anaphors ?? []) {
     if (bind.antecedent) continue;
     if (bind.kind === "number") throw new ConstructionError("numberResumeUnbound", bind.pronoun.raw);
@@ -374,13 +387,13 @@ function islandSlot(unit: Unit): string | undefined {
   return undefined;
 }
 
-function enforceIsland(island: IslandUnit): void {
+function enforceIsland(island: IslandUnit, tables: ClassifyTables): void {
   if (island.units.length === 0) throw new ConstructionError("emptyIsland", "^ ^");
   if (!islandHasBinder(island)) throw new ConstructionError("islandBinder", "^ … ^");
   const slots = new Set(island.units.map(islandSlot).filter((slot) => slot !== undefined));
   if (slots.size === 0) throw new ConstructionError("islandSlotRole", "^ … ^");
   if (slots.size > 1) throw new ConstructionError("islandOneSlot", `^ … ^ (${[...slots].join(" + ")})`);
-  enforceUnitList(island.units);
+  enforceUnitList(island.units, tables);
 }
 
 /** A host with no `/b/` of its own, cut off by an island edge from the `/b/` on the other side. */

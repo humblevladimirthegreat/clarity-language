@@ -163,6 +163,23 @@ describe("parse — stand-in dependents", () => {
     assert.equal(clause.dependent!.clause.units.length, 2);
   });
 
+  it("parses an evidence clause: an inferred or pattern channel hosts barl", () => {
+    for (const text of ["zodol vehahel thevem barl zazawan vowogal.", "zodol vehahel thabel barl zazawan vowogal."]) {
+      const clause = parseText(text).utterances[0]!.bodies[0]!.clause;
+      assert.equal(clause.dependent?.orodo.raw, "barl", text);
+      assert.equal(clause.dependent!.clause.units.length, 2, text);
+    }
+  });
+
+  it("parses barl after a channel's offset as its grounds, not a recipient", () => {
+    const clause = parseText("zodol galagel thabel bral barl zalahen vadebal.").utterances[0]!.bodies[0]!.clause;
+    const host = clause.units.find((unit) => unit.kind === "h");
+    assert.ok(host && host.kind === "h");
+    assert.equal(host.unit.hosted?.bound.raw, "bral");
+    assert.equal(host.unit.hosted?.grounds?.raw, "barl");
+    assert.equal(clause.dependent?.orodo.raw, "barl");
+  });
+
   it("parses hagom barl purpose dependent", () => {
     const result = parseText("zazawan vowogal hagom barl zalahen vehahel.");
     const clause = result.utterances[0]!.bodies[0]!.clause;

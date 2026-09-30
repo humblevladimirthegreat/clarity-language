@@ -84,6 +84,11 @@ const ROWS: Row[] = [
     valid: "zazawan vowogal hazem thodom barl zalahen vezebal.",
   },
   { invalid: "yol yael zazawan vowogal.", rejection: undefined, valid: "yol yael." },
+  { invalid: "zazawan vowogal thodum barl zalahen vezebal.", rejection: "standInHost", valid: "zazawan vowogal thevem barl zalahen vezebal." },
+  { invalid: "zazawan vowogal themam barl zalahen vezebal.", rejection: "standInHost", valid: "zazawan vowogal thabem barl zalahen vezebal." },
+  { invalid: "zazawan vowogal thevem burl zalahen vezebal.", rejection: "standInHost", valid: "zazawan vowogal thevel barl zalahen vezebal." },
+  { invalid: "zazawan vowogal theram thevem barl zalahen vezebal.", rejection: "poleStack", valid: "zazawan vowogal thevem theram barl zalahen vezebal." },
+  { invalid: "zazawan vowogal thunom bral barl zalahen vezebal.", rejection: "standInHost", valid: "zazawan vowogal thabel bral barl zalahen vezebal." },
   {
     invalid: "zazawan vowogal theram hazem barl zalahen vezebal.",
     rejection: "poleStack",

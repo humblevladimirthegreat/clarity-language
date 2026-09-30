@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Findings from translating the syntax test corpus ([syntax-test-corpus](syntax-test-corpus.md)) for Phase 2a of the expressiveness review (`docs/proposals/expressiveness-review.md`). Each row is a point where the translator had to stop, paraphrase heavily, or settle for an approximation. Rows cite `STC-nn`.
 
-Progress: STC-1–218 translated. G-01–G-23 and L-01–L-12 are ruled.
+Progress: STC-1–218 translated. G-01–G-24 and L-01–L-12 are ruled.
 
 Fields follow the old ledger: **Verdict** is **awkward** · **missing** · **by design?** (needs a ruling). **Priority** is **P1** common everyday English · **P2** common in writing · **P3** niche. `G-nn` is a grammar gap and `L-nn` is lexicon only.
 
@@ -33,6 +33,7 @@ Fields follow the old ledger: **Verdict** is **awkward** · **missing** · **by 
 | G-21 | 152 (also ahead: 212) | *minute* | The stock units list had second, hour, day, and week but no minute. Resolved: new stock unit `umunu` *minute* (🕒), `bumunum g+5` (numbers-applied.md § stock units). See L-10. | done | numbers-applied.md | — | P2 |
 | G-22 | 169, 174, 176 | intensive *-self* as *unaided* (*she made it herself*, *do it yourself*, *sit by yourself*) | Resolved: the single-item closed **-l** join is *just* (joins.md), so `zegehal gamazam zal` is *only the girl* and `yel zehodon zal` is *you, and only you*. It also says *alone*. Contrastive `&` stays *it was she who*. The *even* sense (*the queen herself came*) has no sentence in the corpus yet, so it is not logged. | done | joins.md | — | P2 |
 | G-23 | 203 | a plain denial of a verbless comparative (*no wiser than we*, *not taller than her brother*) | No taught form negates a rank join: a `gul` after the shared adjective parses as a separate *no*. Resolved: reverse rank `zuel` is the reading for *not as … as* and *no more … than* (`zalahen zazawan zuel gamadam` *Alahen is not as challenging as Azawan*), taught in comparatives.md § Intermediate and listed in english.md. The English implication that neither is wise is not said; `zael` stays the firm tie. | done | comparatives.md | — | P3 |
+| G-24 | — (parser review) | grounds for a claim (*it rained, judging by the wet street*; *it will rain, going by the sky*) | Epistemic *because* had no twin root: MAY on the claim plus a separate sentence, or `theram barl`, which asserts a world-cause. `thevem bazawan` took a noun source but `thevem barl` was rejected, and `thabem bral barl` parsed with `barl` as a stray recipient. | Resolved: INFERRED (`thevem`) and PATTERN (`thabem`) take `barl` as their `/b/`, alone or after an offset (`thabel bral barl`); the next sentence is the grounds, asserted, graded by the channel ending, and the holder's under a holder seam. Other channels keep a noun source and reject `barl`; a pole before the channel is a pole stack, the channel first is fine. Taught in knowing.md § evidence clause, recipe in say-reasons.md § epistemic *because*. Parser: `Hosted.grounds`, `isGroundsChannel`, `enforceHostedStandIn`. | done | knowing.md | — | P2 |
 
 ## Lexicon
 

@@ -32,7 +32,7 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 
 ## Dated channels
 
-- A hosted `/b/` after an evidential is read by its filler: a time measure = offset; a person or other noun = source (*per Alahen*). The source reading is settled but not yet taught.
+- A hosted `/b/` after an evidential is read by its filler: a time measure = offset; a person or other noun = source (*per Alahen*). The source reading is settled but not yet taught. A clause as the grounds is the separate [evidence clause](../grammar/knowing.md#evidence-clause): only INFERRED and PATTERN take `barl`, and other channels keep a noun source.
 - No number form means *imaginary*: *as if* belongs to NOTIONAL `ove`, not to a digitless number.
 
 ## Holders (whose view)

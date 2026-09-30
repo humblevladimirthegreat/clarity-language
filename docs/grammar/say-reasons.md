@@ -15,6 +15,7 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 | *although* / *while* / *until* / *before* / *after* | same pole + **`barl`** shape on adverb `/h/`, **-m** ([dependent clauses](dependents.md#dependent-clauses)): **`hazem`** / **`hehum`** / … |
 | *so that* / *in order to* | same shape: **`hagom`** ([so that](dependents.md#so-that)); NP intended get = **`hagom`** + `/b/` **noun** |
 | *despite* (NP) | same **`hazem`** (or **`gazem`**) + `/b/` **noun**, not a second pole |
+| *judging by* / *going by* / *given that* (grounds) | inferring or pattern channel + **`barl`**: **`thevem barl`** / **`thabem barl`** ([evidence clause](knowing.md#evidence-clause)) |
 | *therefore* (discourse) | **`xezadam`** ([continue](dependents.md#continue-x)) |
 | *however* / *meanwhile* (discourse) | **`xazel`** / **`xagagal`** |
 
@@ -73,10 +74,17 @@ When the condition is known to be false (*If Alahen had left…*), keep the book
 >
 > "If Alahen had left, the door would still be locked." — Alahen did not leave
 
-#### Epistemic *because* (no twin root)
-<a id="epistemic-because"></a>
+#### Epistemic *because* {#epistemic-because}
 
-English often uses *because* for **speaker grounds** (*they may be leaving because Q*) without treating Q as a world-fact that grounds P. Put [MAY](knowing.md#may) (`thovom`, …) on the main sentence for the *could be*. Add **`theram barl`** only when Q is also asserted as a world-foundation.
+English often uses *because* for **speaker grounds** (*it rained, because the street is wet*): Q is how you know P, not what made P happen. Put the inferring or pattern channel on the main sentence and hang the grounds on it with **`barl`** ([evidence clause](knowing.md#evidence-clause)). The channel's ending grades the grounds.
+
+> `verehel thevel barl zagayol gegagel.`
+>
+> v-rain | [th-INFERRED.strong | b-that-clause] | [z-cloud | g-gray]
+>
+> "It is raining, judging by the gray clouds."
+
+Use **`theram barl`** only when Q is also asserted as a world-foundation, what made P happen. For a soft *could be* with no grounds stated, put [MAY](knowing.md#may) (`thovom`, …) on the main sentence.
 
 > `zalahen thovom vadebal dahaben.`
 >
@@ -84,9 +92,9 @@ English often uses *because* for **speaker grounds** (*they may be leaving becau
 >
 > "Alahen may be leaving Ahaben."
 
-**For *could be*, use:** [MAY](knowing.md#may) (`ovo`). **`theram`** is world-reason under the claim.
+**For *could be*, use:** [MAY](knowing.md#may) (`ovo`). **`theram`** is world-reason under the claim; **`thevem`** / **`thabem`** + **`barl`** is the grounds you go by.
 
-**Related form:** *P, since / given that Q* (Q already shared) still uses **`theram barl`**; soften with evidential `/th/` if the warrant is tentative.
+**Related form:** *P, since / given that Q* (Q already shared) uses **`theram barl`** when Q is the reason P holds in the world, and **`thevem barl`** when Q is only your grounds.
 
 ### Stacks (evidentiality, CAUSE, habit)
 <a id="stacks"></a>

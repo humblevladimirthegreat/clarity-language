@@ -6,7 +6,7 @@ These pages are recipes, not lessons. Each one shows how forms you already learn
 |------|------------------|
 | [People, things and places](say-people-places.md) | *as for X*, *whose*, *someone's act*, *different from*, office titles, *do the same to it* |
 | [Amounts, sizes and time](say-amounts.md) | *from least to most*, *both are*, *two meters taller*, *most of*, *25% of*, units, dates |
-| [Reasons, knowledge and plans](say-reasons.md) | *because* vs *if*, *would have*, habits, *start / stop doing*, *as of 22 July*, *dreading* / *I felt then* / *it's their fault* |
+| [Reasons, knowledge and plans](say-reasons.md) | *because* vs *if*, *judging by*, *would have*, habits, *start / stop doing*, *as of 22 July*, *dreading* / *I felt then* / *it's their fault* |
 | [Asking and answering](say-questions.md) | *You saw WHAT?*, *asks who*, *Just X?* / *How about X?*, *What a big dog!*, *by the way* |
 
 ## One English word, many jobs {#many-jobs}
@@ -71,6 +71,7 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agazan 
 | same one (*Alahen as Azawan*) | **`SAME`** + `/b/` | [Identity](predication.md#identity) |
 | same time (*as Alahen walks*) | **`hehum barl`** | [Dependent clauses](dependents.md#dependent-clauses) |
 | reason / since (*as Alahen walks*) | **`theram barl`** | [Because](causation.md#because) |
+| grounds (*as the sky is gray, it will rain*) | **`thevem barl`** / **`thabem barl`** | [Evidence clause](knowing.md#evidence-clause) |
 | equal degree (*as sleepy as*) | equative **`ae`** | [Equatives](comparatives.md#equatives) |
 | falls short (*not as sleepy as*) | reverse rank **`ue`** | [Reverse rank](comparatives.md#intermediate) |
 | topic (*as for Azawan*) | **`hahehom`** + `/b/` | [As-for](say-people-places.md#as-for) |

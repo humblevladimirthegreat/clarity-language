@@ -49,6 +49,7 @@ export type WordSlot =
   | "boundMember"
   | "boundJoinClose"
   | "boundAmount"
+  | "boundGrounds"
   | "hostedBound"
   | "item"
   | "joinModifier"
@@ -210,6 +211,7 @@ function visitHosted(hosted: Hosted | undefined, v: Visitor): void {
   for (const member of hosted.boundJoin?.members ?? []) v.word?.(member, "boundMember");
   if (hosted.boundJoin) v.word?.(hosted.boundJoin.join, "boundJoinClose");
   if (hosted.amount) v.word?.(hosted.amount, "boundAmount");
+  if (hosted.grounds) v.word?.(hosted.grounds, "boundGrounds");
   for (const adj of hosted.adjs ?? []) visitGPackage(adj, v);
 }
 

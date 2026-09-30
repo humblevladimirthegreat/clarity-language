@@ -605,6 +605,14 @@ class AgazanSentenceParser extends CstParser {
             const bound = this.CONSUME(B);
             // A `/th/` host's `/b/` is an offset or source, so a later `/ɡ/` stays the predicate.
             this.hostedTail(bound, () => (host.payload as LexWord | undefined)?.pos === "h");
+            // A `/th/` channel's offset, then `barl`: the next sentence is the grounds (knowing.md#evidence-clause).
+            this.OPTION7({
+              GATE: () =>
+                (host.payload as LexWord | undefined)?.pos === "th" &&
+                (bound.payload as LexWord | undefined)?.family.kind === "number" &&
+                this.LA(1).tokenType === Odo,
+              DEF: () => this.CONSUME1(Odo),
+            });
           },
         },
         { ALT: () => this.CONSUME(Odo) },
@@ -771,10 +779,16 @@ function npPackages(coord: NpCoord): NpPackage[] {
   );
 }
 
+/** The stand-in a host's hosted slot holds: its `/b/`, or the grounds `barl` after an offset. */
+function hostedStandIn(hosted: Hosted): LexWord | undefined {
+  const stand = hosted.grounds ?? hosted.bound;
+  return isStandIn(stand) ? stand : undefined;
+}
+
 /** The forward stand-in a unit holds (a noun's head, or an `/h/` host's hosted `/b/`): the slot the next sentence fills. */
 function standInIn(unit: Unit): LexWord | undefined {
   if (unit.kind === "np") return npPackages(unit.coord).find((pkg) => isStandIn(pkg.head))?.head;
-  if (unit.kind === "h" && unit.unit.hosted && isStandIn(unit.unit.hosted.bound)) return unit.unit.hosted.bound;
+  if (unit.kind === "h" && unit.unit.hosted) return hostedStandIn(unit.unit.hosted);
   return undefined;
 }
 
@@ -974,7 +988,7 @@ function buildAsOfPair(cst: CstNode): { word: LexWord; bound?: LexWord } {
 }
 
 /** The hosted `/b/` slot a host rule parsed (its `/b/`, join, amount and landmark adjectives), or `undefined` with no `/b/`. */
-function buildHosted(cst: CstNode, bound: IToken | undefined, amount: IToken | undefined): Hosted | undefined {
+function buildHosted(cst: CstNode, bound: IToken | undefined, amount: IToken | undefined, grounds?: IToken): Hosted | undefined {
   if (!bound) return undefined;
   const adjs = childNodes(cst, "gPackage").map(buildGPackage);
   const boundJoin = buildBoundJoin(cst);
@@ -983,6 +997,7 @@ function buildHosted(cst: CstNode, bound: IToken | undefined, amount: IToken | u
     ...(boundJoin ? { boundJoin } : {}),
     ...(amount ? { amount: lexWordFromToken(amount) } : {}),
     ...(adjs.length > 0 ? { adjs } : {}),
+    ...(grounds ? { grounds: lexWordFromToken(grounds) } : {}),
   };
 }
 
@@ -1131,7 +1146,8 @@ function buildVpCoord(cst: CstNode): VpCoord {
 
 function buildHUnit(cst: CstNode): HUnit {
   const h = childToken(cst, "H")!;
-  const hosted = buildHosted(cst, childToken(cst, "B") ?? childToken(cst, "Odo"), childToken(cst, "G"));
+  const boundTok = childToken(cst, "B");
+  const hosted = buildHosted(cst, boundTok ?? childToken(cst, "Odo"), childToken(cst, "G"), boundTok ? childToken(cst, "Odo") : undefined);
   return {
     word: lexWordFromToken(h),
     modifiers: childTokens(cst, "W").map(lexWordFromToken),

@@ -330,6 +330,56 @@ On a [feeling](sakes.md#emotion-compose) (a sake word with a locus and a motion 
 
 **Compare with:** [PLAN](intention.md#plan-predict) (`thumam`) says what someone **intends** to do; it needs no channel. A forecast is a claim about the world. To say **how much** later (*in three hours*), replace `bral` with a measured [dated channel](#dated-channel) (Advanced). *Could be* with no warrant is [MAY](#may), not a forecast.
 
+### Evidence clause (`barl`) {#evidence-clause}
+
+English *judging by*, *going by*, and *given that* name the **grounds** for a claim: the fact that tells you it holds. Two channels reason from grounds: INFERRED (`thevem`, from clues) and PATTERN (`thabem`, from cases that repeat). Either one takes **`barl`** as its `/b/`. The main sentence stops after `barl`, and the next sentence is the grounds ([dependent clauses](dependents.md#dependent-clauses)). You state the claim, the strength of your grounds, and the grounds themselves in one sentence.
+
+> `zalahen vabahel thevem barl zazawan vezogel.`
+>
+> z-Alahen | v-punch | [th-INFERRED | b-that-clause] | z-Azawan | v-scream
+>
+> "Alahen punched, judging by the fact that Azawan is screaming."
+
+The grounds are what you go by, so the claim comes first in your mind and the grounds second. That is the reverse of cause. In [`theram barl`](causation.md#only-because) the clause after `barl` is what brought the claim about; here it is only how you know the claim.
+
+> `zazawan vezogel theram barl zalahen vabahel.`
+>
+> z-Azawan | v-scream | [th-because | b-that-clause] | z-Alahen | v-punch
+>
+> "Azawan screams because Alahen punches."
+
+| You say | The clause after `barl` is | Form |
+|---------|----------------------------|------|
+| what made it happen | the cause | `theram barl` |
+| what has to hold for it to happen | the condition | `thodom barl` / `thebom barl` / `thewum barl` |
+| how you know it happened | your grounds | `thevem barl` / `thabem barl` |
+
+The ending on the channel grades the grounds ([evidence strength](#evidence-strength)): **-l** for strong clues or a well-established pattern, **-m** by default, **-r** for a weak clue or a few cases. A strong inference is as close as Agazan gets to *it follows that*.
+
+> `verehel thevel barl zagayol gegagel.`
+>
+> v-rain | [th-INFERRED.strong | b-that-clause] | [z-cloud | g-gray]
+>
+> "It is raining, judging by the gray clouds (strong clues)."
+
+For a **forecast**, keep the [offset](#forecast) and put `barl` after it. The pattern is what you go by, and the grounds clause says what you see now.
+
+> `verehel thabel bral barl zagayol gegagel.`
+>
+> v-rain | [th-PATTERN.strong | [b-later | b-that-clause]] | [z-cloud | g-gray]
+>
+> "It will rain, going by the well-established pattern, given the gray clouds."
+
+You assert the grounds, the way you assert a cause. If you are not sure of them, say so inside the grounds clause with its own channel:
+
+> `zalahen vabahel thevem barl zazawan thodum vezogel.`
+>
+> z-Alahen | v-punch | [th-INFERRED | b-that-clause] | z-Azawan | th-LIVE | v-scream
+>
+> "Alahen punched, judging by the fact that Azawan is screaming (I am watching)."
+
+**Compare with:** the other channels keep a noun in `/b/` as their source (`thevem bazawan` *per Azawan*), and none of them takes `barl`. A cause or condition word may not come before the channel. Put the channel first (`thevem theram barl`) to say both that you inferred it and that it was caused. *Could be* with no grounds is [MAY](#may).
+
 ### Live vs memory {#live-vs-memory}
 <a id="memory-record"></a>
 <a id="memory"></a>
@@ -570,6 +620,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Wri
 | *TOLD.weak* | `themar` | `emal` *ear* |
 | *PATTERN.strong* | `thabel` | `abel` *paw-prints* |
 | *RECORDED.strong* | `therul` | `erul` *record* |
+| *rain* | `verehel` | `erehel` *rain* |
+| *cloud* | `zagayol` | `agayol` *cloud* |
+| *gray* | `gegagel` | `egagel` *gray* |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -675,6 +728,22 @@ z-Alahen | th-TOLD.weak | v-scream
 `zazawan thabel bral vezebel bahaben.`
 
 z-Azawan | [th-PATTERN.strong | b-later] | v-tell | b-Ahaben
+:::
+
+**14.** *Alahen punched, judging by the fact that Azawan screams.*
+
+::: details Show answer
+`zalahen vabahel thevem barl zazawan vezogel.`
+
+z-Alahen | v-punch | [th-INFERRED | b-that-clause] | z-Azawan | v-scream
+:::
+
+**15.** *Azawan screams because Alahen punches.*
+
+::: details Show answer
+`zazawan vezogel theram barl zalahen vabahel.`
+
+z-Azawan | v-scream | [th-because | b-that-clause] | z-Alahen | v-punch
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
@@ -784,6 +853,15 @@ z-Alahen | h-not-yet.lasting | v-departure
 z-Ahaben | [th-RECORDED.strong | b-later] | v-tell
 
 *Ahaben is officially scheduled to speak.*
+:::
+
+**13.** `verehel thabel bral barl zagayol gegagel.`
+
+::: details Show answer
+
+v-rain | [th-PATTERN.strong | [b-later | b-that-clause]] | [z-cloud | g-gray]
+
+*It will rain, going by the well-established pattern, given the gray clouds.*
 :::
 
 ## Advanced {#advanced}
@@ -959,6 +1037,7 @@ The holder word ends the way a noun for that person would. **-n** is a name. **-
 | [Sake](sakes.md) words and [emotion compose](sakes.md#emotion-compose), with their endings | your stake and feeling | the holder's stake and feeling |
 | A `/ɡ/` sake's *my* reading ([personal possession](sakes.md#personal-possession)) | your belonging | the holder's belonging |
 | Another evidential | how you know | how the holder knows |
+| The grounds after an inferring or pattern host's [`barl`](#evidence-clause) | grounds you assert | the holder's grounds; you do not assert them |
 
 > `zemehol wonathumol gobom balahen thevemazawan.`
 >

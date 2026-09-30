@@ -99,13 +99,13 @@ Translated with the house cast for the two friends' *I* / *you* as the speaker a
 | 1.1c | I wasn't sure you'd come. | `zamegun thunom vevegam dorl zehodon vuvudel oel bamegun.` | z-speaker \| th-WITNESSED \| v-doubt \| d-whether-clause \| z-listener \| v-go \| [toward \| b-speaker] | covered |
 | 1.2a | Yeah, | `yael.` | y-yes | covered |
 | 1.2b | sorry | `yabayen.` | y-Abayen | covered |
-| 1.2c | I'm late. | `zamegun zugen zel bral thodum vevahal.` | [z-speaker \| z-Some-sake \| z-rank/more \| b-later] \| th-LIVE \| v-arrival | awkward (G-01) |
+| 1.2c | I'm late. | `zamegun thodum vevahal hulam barl zohan thumam vevahal.` | z-speaker \| th-LIVE \| v-arrival \| [h-after \| b-that-clause] \| z-interlocutors \| th-plan-itinerary \| v-arrival | covered (G-01) |
 | 1.2d | The bus was kind of a mess. | `zabazul thunom habedum gazabom.` | z-bus \| th-WITNESSED \| h-kind-of \| g-disorder | covered |
 | 1.3a | Oh no. | `yewedan.` | y-Ewedan | covered |
-| 1.3b | Was it the same driver as last time? | `yol zaxuvudel gogal bazaxuvudel thunom.` | y-question \| [z-agent-x-go \| g-SAME \| b-agent-x-go] \| th-WITNESSED | awkward (G-02) |
+| 1.3b | Was it the same driver as last time? | `yol zaxuvudel gogal bazaxuvudel gruedul.` | y-question \| [z-agent-x-go \| g-SAME \| [b-agent-x-go \| g-2nd-from-end]] | covered (G-02) |
 | 1.4a | I think so, | `yaem.` | y-yes-soft | covered |
 | 1.4b | but I'm not sure. | `xagozal zamegun vevegam.` | x-but \| z-speaker \| v-doubt | covered |
-| 1.4c | Anyway, I'm here now. | `xevavel zamegun thodum vevahal.` | x-next \| z-speaker \| th-LIVE \| v-arrival | awkward (G-03) |
+| 1.4c | Anyway, I'm here now. | `or zamegun thodum vevahal.` | anyway \| z-speaker \| th-LIVE \| v-arrival | covered (G-03) |
 | 1.5a | Good. | `yazahan.` | y-Azahan | covered |
 | 1.5b | So, do you want to get coffee first, or just walk? | `yom xevavel zehodon hogodam vozodel dagavel xol zehodon vowogal.` | y-soft-question \| x-next \| z-listener \| h-first \| v-drink \| d-coffee \| x-or \| z-listener \| v-walk | awkward (G-04) |
 | 1.6a | Honestly, coffee sounds great. | `thaveham zamegun vuhudem dagavel.` | th-frankly \| z-speaker \| v-wish \| d-coffee | covered |
