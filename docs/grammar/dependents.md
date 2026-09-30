@@ -327,6 +327,7 @@ These words glue one finished sentence to the next (one-way; default ending **-l
 | *meanwhile* | **`xagagal`** | `agagal` *mantel-clock* | 🕰️: time passing beside the last claim | `xagagal` |
 | *next* | **`xevavel`** | `evavel` *film* | 🎞️: the following frame | `xevavel` |
 | *but* | **`xagozal`** | `agozal` *construction* | 🚧: the expected path is blocked | `xagozal` |
+| *by the way* | **`xavazel`** | `avazel` *accessory* | 🍟: a side dish, not the main course | `xavazel` |
 
 *therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Those same roots keep their ordinary content readings under other role letters.
 
@@ -337,6 +338,22 @@ These words glue one finished sentence to the next (one-way; default ending **-l
 > z-dog | v-walk . x-next | z-Azawan | v-run
 >
 > "The dog walks. So, Azawan runs."
+
+**`xavazel`** opens a side topic, like English *by the way, …*. To come back to the main line afterwards, use the resume hook [`or …`](hooks.md#hook-resume) *anyway*.
+
+In a new turn with its own act word, the act word comes first and the linker starts the body:
+
+> `yom xevavel zehodon vowogal.`
+>
+> y-soft-question | x-next | z-listener | v-walk
+>
+> "So, do you want to walk?"
+
+> `yol xavazel zehodon vemal.`
+>
+> y-question | x-by-the-way | z-listener | v-hear
+>
+> "By the way, did you hear?"
 
 ### Result (*so … that*) {#result-pole}
 

@@ -30,6 +30,7 @@ const CLOSED_ROWS = {
   clock: { emoji: "🕰️", root: "agaga" },
   film: { emoji: "🎞️", root: "evave" },
   construction: { emoji: "🚧", root: "agoza" },
+  fries: { emoji: "🍟", root: "avaze" },
   // compass arrows (east is also *therefore*)
   north: { emoji: "⬆️", root: "onova" },
   northeast: { emoji: "↗️", root: "anove" },

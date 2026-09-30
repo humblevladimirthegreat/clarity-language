@@ -123,6 +123,7 @@ const LINKER_ENGLISH: Record<string, string> = {
   [`${CLOSED.clock}l`]: "meanwhile",
   [`${CLOSED.film}l`]: "next",
   [`${CLOSED.construction}l`]: "but",
+  [`${CLOSED.fries}l`]: "by-the-way",
 };
 
 /** Standalone readings ([joins.md § Beginner forms](../../docs/grammar/joins.md#beginner-forms)). */

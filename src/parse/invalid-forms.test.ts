@@ -88,7 +88,7 @@ const ROWS: Row[] = [
   { invalid: "zazawan vowogal themam barl zalahen vezebal.", rejection: "standInHost", valid: "zazawan vowogal thabem barl zalahen vezebal." },
   { invalid: "zazawan vowogal thevem burl zalahen vezebal.", rejection: "standInHost", valid: "zazawan vowogal thevel barl zalahen vezebal." },
   { invalid: "zazawan vowogal theram thevem barl zalahen vezebal.", rejection: "poleStack", valid: "zazawan vowogal thevem theram barl zalahen vezebal." },
-  { invalid: "zazawan vowogal thunom bral barl zalahen vezebal.", rejection: "standInHost", valid: "zazawan vowogal thabel bral barl zalahen vezebal." },
+  { invalid: "zazawan vowogal thunom brul barl zalahen vezebal.", rejection: "standInHost", valid: "zazawan vowogal thabel bral barl zalahen vezebal." },
   {
     invalid: "zazawan vowogal theram hazem barl zalahen vezebal.",
     rejection: "poleStack",
@@ -108,6 +108,13 @@ const ROWS: Row[] = [
   { invalid: "zalahen gogal ^ bazawan balahen bal ^.", rejection: "islandSlotRole", valid: "zalahen gogal bazawan." },
   { invalid: "zazawan henem vowogal.", rejection: "asOfIntroduceBound", valid: "zazawan henem b_#22,7 vowogal." },
   { invalid: "zazawan hener b_#22,7 vowogal.", rejection: "asOfResumeBound", valid: "zazawan hener vowogal." },
+  { invalid: "zazawan henem brul vowogal.", rejection: "asOfOffset", valid: "zehodon thenem brul thugethem vezebel." },
+  { invalid: "zazawan zalahen zel wenem brul gamadam.", rejection: "asOfOffset", valid: "zazawan zalahen zel wenem b_#22,7 gamadam." },
+  { invalid: "zazawan thunom brarel vowogal.", rejection: "channelOffsetSign", valid: "zazawan thunom bagazem grurel vowogal." },
+  { invalid: "zazawan thodum brul vowogal.", rejection: "channelOffsetSign", valid: "zalahen thevem bagazem grazol vezebal." },
+  { invalid: "zalahen thumam brul vowogal.", rejection: "channelOffsetSign", valid: "zalahen thumam bral vowogal." },
+  { invalid: "zazawan vowogal habum bazazam grurel.", rejection: "poleOffsetWarrant", valid: "yel zehodon vaheham hodam bazazam grawol." },
+  { invalid: "zazawan vowogal hodam bazazam grawol.", rejection: "poleOffsetWarrant", valid: "zazawan thumam vowogal hodam bazazam grawol." },
   {
     invalid: "zalahen thamom henem b_#22,7 humem b_#3 vadebal.",
     rejection: "asOfPerHost",

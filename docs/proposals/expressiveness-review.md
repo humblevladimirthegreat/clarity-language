@@ -111,17 +111,17 @@ Translated with the house cast for the two friends' *I* / *you* as the speaker a
 | 1.6a | Honestly, coffee sounds great. | `thaveham zamegun vuhudem dagavel.` | th-frankly \| z-speaker \| v-wish \| d-coffee | covered |
 | 1.6b | I haven't eaten anything yet. | `zamegun hezul vagudel.` | z-speaker \| h-not-yet \| v-eat | covered |
 | 1.7a | Nothing at all? | `yol zehodon vagudel dal.` | y-question \| z-listener \| v-eat \| d-nothing | covered |
-| 1.7b | You should have said something. | `zehodon thunom vezebel vul. zehodon thugethem vezebel.` | z-listener \| th-WITNESSED \| [v-tell \| v-not] . z-listener \| th-sake-ought-offered \| v-tell | awkward (G-05) |
-| 1.7c | There's a bakery around the corner. | `zahazal gebewel om bamegun.` | [z-house \| g-bread] \| [near \| b-speaker] | stand-in (L-01, L-02) |
+| 1.7b | You should have said something. | `zehodon thenem brul thugethem vezebel. zehodon vezebel vul.` | z-listener \| [th-as-of.ledger \| b-earlier] \| th-sake-ought-offered \| v-tell . z-listener \| [v-tell \| v-not] | covered (G-05) |
+| 1.7c | There's a bakery around the corner. | `zozodoxebewel om bamegun.` | z-market-x-bread \| [near \| b-speaker] | stand-in (L-02) |
 | 1.8a | Right, | `yael.` | y-yes | covered |
 | 1.8b | but I didn't want to keep you waiting. | `xagozal zamegun thunom vuhudem durl zehodon vabazem.` | x-but \| z-speaker \| th-WITNESSED \| v-wish \| d-lest-clause \| z-listener \| v-wait | covered |
 | 1.9a | You're ridiculous. | `; zehodon gahezem.` | ; \| z-listener \| g-foolishness | covered |
-| 1.9b | Come on, my treat. | `yem zohan vuvudel. zamegun thumam vamol.` | y-request \| z-interlocutors \| v-go . z-speaker \| th-plan-itinerary \| v-money | stand-in (L-03) |
+| 1.9b | Come on, my treat. | `yem zohan vuvudel. zamegun thumam vamol.` | y-request \| z-interlocutors \| v-go . z-speaker \| th-plan-itinerary \| v-pay | done (L-03) |
 | 1.10a | Really? | `?!yaer.` | ?!y-yes-fresh | covered |
 | 1.10b | Thanks. | `yebewan.` | y-Ebewan | covered |
 | 1.10c | Next one's on me, okay? | `zamegun thumam bral vamol. yol yaom.` | z-speaker \| th-plan-itinerary \| b-later \| v-money . y-question \| y-okay | stand-in (L-03) |
 | 1.11a | Deal. | `yaol.` | y-sure | covered |
-| 1.11b | By the way, did you ever hear back about that job? | `yol xevavel zehodon thunom vemal dezebem hahehom bebevel om behodon.` | y-question \| x-next \| z-listener \| th-WITNESSED \| v-hear \| d-discourse \| [as-for \| [b-briefcase \| [near \| b-listener]]] | awkward (G-06), stand-in (L-04) |
+| 1.11b | By the way, did you ever hear back about that job? | `yol xavazel zehodon thunom vemal dezebem hahehom bebevel om behodon.` | y-question \| x-by-the-way \| z-listener \| th-WITNESSED \| v-hear \| d-discourse \| [as-for \| [b-job \| [near \| b-listener]]] | done (G-06, L-04) |
 | 1.12a | Not yet. | `yuor.` | y-not-now | covered |
 | 1.12b | Maybe next week, if they're quick. | `zamegun thovom vemal dezebem hehum bagadem grawol thodom barl zebezalx gavazol.` | z-speaker \| th-MAY \| v-hear \| d-discourse \| [h-while \| [b-week \| g-one]] \| [th-if \| b-that-clause] \| z-person-x \| g-fast | covered |
 | 1.12c | Fingers crossed. | `yevegen.` | y-Evegen | covered |

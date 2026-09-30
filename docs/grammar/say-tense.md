@@ -225,7 +225,7 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 
 ### Must, have to, should {#must-should}
 
-**Needs:** [Requirement](sakes.md#requirement) · [Prescription](sakes.md#sake-force) · [Motive](sakes.md#sake-preference) · [Speech act](speech-moves.md#speech-act)
+**Needs:** [Requirement](sakes.md#requirement) · [Prescription](sakes.md#sake-force) · [Motive](sakes.md#sake-preference) · [Speech act](speech-moves.md#speech-act) · [Stance as-of](relations.md#stance-as-of)
 
 English *must* and *should* differ in what stands behind the demand. Choose the source.
 
@@ -236,6 +236,7 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 | *is supposed to* | custom expects it | **`themehor`** |
 | *do it!* | you tell the listener now | command **`yel`** |
 | *should*, *ought to* | it serves a named sake | sake + **`the`** |
+| *should have*, *ought to have* | the ought held at a past moment | stance as-of **`thenem`** + sake + **`the`** |
 | *has to* (for a reason) | why they do it | sake + **`tho`** |
 | *should* (it will pay off) | a forecast | channel + **`bral`** |
 | *mustn't* | you forbid it now | prohibition **`yul`** |
@@ -251,6 +252,14 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 > z-Azawan | v-tell | th-relatedness-ought-offered
 >
 > "Azawan should tell, to serve relatedness (offered)."
+
+For *should have*, date the ought with [stance as-of](relations.md#stance-as-of) **`thenem`**; **`thenem brul`** is *back then*. The ought then reads from that past moment. English also implies the act did not happen; if that matters, say it in its own sentence.
+
+> `zehodon thenem brul thugethem vezebel. zehodon vezebel vul.`
+>
+> z-listener | [th-as-of.ledger | b-earlier] | th-sake-ought-offered | v-tell . z-listener | [v-tell | v-not]
+>
+> "You should have told. You did not tell."
 
 **Compare with:** requirement reports a demand, which may be someone else's; **`yel`** is you telling the listener.
 

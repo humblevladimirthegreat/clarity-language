@@ -533,7 +533,7 @@ A later `/x/` clause is a new host. To keep the same books, write the **same ove
 
 `/h/` covers this clause. `/ɡ/` covers this noun (`genem` *the tab as of Friday*). `/w/` covers the `/ɡ/` adjective immediately after the pair (`wenem b_#22,7 gamadam`). `/h/`, `/ɡ/`, and `/w/` are different hosts, so a clause may carry a clause snapshot and an adjective snapshot at once. If the **verb** also scores against that now, the clause still needs `/h/` *as-of* (or resume).
 
-`/b/` is a clock or date digit-string, an event noun, **`barl`** plus the next sentence (that sentence *is* whose-now; the pair stays last), or extra-noun **-r**. The *as-of* word already hosts the date: do not also write spare `h_#22,7` for the same snapshot. Bare `h_#…` stays event-when ([time](numbers-applied.md#time)). Clock / *before* / *after* may sit beside *as-of*.
+`/b/` is a clock or date digit-string, an event noun, **`barl`** plus the next sentence (that sentence *is* whose-now; the pair stays last), or extra-noun **-r**. It is never a signed offset such as *three hours ago*: that would date the event with no warrant, so an undated past event needs a [dated channel](knowing.md#dated-channel). The *as-of* word already hosts the date: do not also write spare `h_#22,7` for the same snapshot. Bare `h_#…` stays event-when ([time](numbers-applied.md#time)). Clock / *before* / *after* may sit beside *as-of*.
 
 Do not put a bare person in `/b/` as “from Alahen’s now.” That is [proxy](#proxy) (`hadem`). Prefer `henem barl zalahen vezebel`.
 
@@ -618,6 +618,14 @@ With **`thumem`**, the stance is one you would hold, not one you held:
 > "Once Azawan told, I'd think Alahen might leave." — a placeholder now for the doubt
 
 Resume works as on `/h/`: **`thener`** / **`thumer`** with no `/b/` on the next `/x/` clause keeps the same stance-now.
+
+Unlike the event pair, stance *as-of* also takes a signed [offset](knowing.md#dated-channel) from speech-now in its `/b/`, because it dates only your stance, not the event. Digitless **`brul`** is *back then*, with no amount claimed:
+
+> `zalahen thenem brul thovom vadebal.`
+>
+> z-Alahen | [th-as-of.ledger | b-earlier] | th-MAY | v-departure
+>
+> "Back then, I thought Alahen might leave."
 
 Changing your mind is then a change of now, not a contradiction: *I was fairly sure on the 22nd* (`thenem`) and *I'm unsure now* (no pair) are both true.
 

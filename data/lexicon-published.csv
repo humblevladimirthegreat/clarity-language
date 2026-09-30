@@ -835,7 +835,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos
 🔖,bookmark,ume,reminder,bookmark marks a reminder,
 🏷️,label,aleba,classification,label gives classification,
 🪙,coin,oga,same,coin has two faces of one thing; same is two labels for one referent,
-💰,money,amo,debt,money bag holds what is owed; debt is an unpaid balance,
+💰,money,amo,debt,money bag holds what is owed; debt is an unpaid balance,v:pay
 🪎,treasure,edahe,riches,treasure is riches,
 💴,yen,eyeha,,,
 💵,dollar,adahu,cost,a dollar pays the price; cost is what something takes from you,
@@ -857,7 +857,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos
 🖌️,paintbrush,ebuda,artistry,brush paints with flowing strokes; artistry is skilled creative work,
 🖍️,crayon,egewu,boldness,crayon marks with thick color; boldness is strong visible stroke,
 📝,memo,emeho,policy,memo records a standing decision; policy is a standing rule,
-💼,briefcase,ebeve,business,briefcase carries work affairs; business is commercial affairs,
+💼,briefcase,ebeve,business,briefcase carries work affairs; business is commercial affairs,z:job
 📁,folder,ovode,,,
 🗂️,divider,edava,,,
 📅,calendar,agade,week,a calendar page reads a week across each row; week is the seven-day unit,

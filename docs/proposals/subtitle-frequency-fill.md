@@ -113,8 +113,26 @@ New roots follow the existing path: pick an emoji seed, write `concrete` / `abst
 - **Two-syllable slots:** frequency does not earn a shorter root. New roots are placed as usual.
 - **No good emoji:** flagged for human review, not seeded loosely.
 - **Flashcards:** out of scope.
+- **N:** 3000 lemmas.
 - **Part of speech:** untagged lemmas, with a sense split during triage (see [Part of speech](#part-of-speech)).
 
-## Open questions
+## Coverage results (first run, 2026-09-30)
 
-- **N.** 3000 is a guess. Coverage per extra 1000 lemmas can be plotted after the first run to pick a stopping point.
+`npx tsx scripts/frequency-coverage.ts` over the top 3000 lemmas. Output goes to `tmp/frequency-coverage.csv`. Not triaged yet.
+
+| Tag | Count | Meaning |
+|-----|-------|---------|
+| `root` | 612 | Matches a published concrete, abstract, or `english_by_pos` sense |
+| `compound` | 14 | Matches a compound sense |
+| `overlay` | 42 | Matches an overlay gloss |
+| `grammar` | 93 | A gloss or table row in `docs/grammar/` is exactly this word |
+| `mention` | 557 | A gloss or table row mentions the word among other English. Weak: needs a look |
+| `example` | 43 | Only appears in example or practice English |
+| `stop` | 6 | Function word dropped by find-english (*the*, *a*, *of*) |
+| `gap` | 1633 | No hit |
+
+Things the triage should expect:
+
+- `mention` includes pronouns and frequent verbs that a table row happens to contain (*take*, *make*, *give*). Some are real grammar cover. Many are gaps.
+- `gap` includes subtitle noise the script doesn't filter: sound tags (*sighs*, *laughs*, *chuckles*), fillers (*uh*, *um*, *hmm*), names (*john*, *jack*), titles (*mr*, *sir*), and profanity.
+- Words that end in *-er*, *-est* or *-ly* stay separate lemmas (*bigger*, *really*), because stripping those endings folded real words together (*butter* → *but*).

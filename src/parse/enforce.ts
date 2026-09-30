@@ -268,6 +268,56 @@ function enforceVerbless(units: Unit[]): void {
   if (has("z") && has("d") && !hasVerb(units)) throw new ConstructionError("objectNeedsVerb", "/z/ and /d/ with no /v/");
 }
 
+/** `+` / `-` of a signed offset in a hosted `/b/` (digitless `brul`, or a measure amount); zero has no sign. */
+function offsetSign(bound: LexWord | undefined, amount?: LexWord): "+" | "-" | undefined {
+  const number = [bound, amount].find((w) => w?.family.kind === "number");
+  if (!number || number.family.kind !== "number") return undefined;
+  const { marker, groups } = number.family.stem;
+  if (groups.length > 0 && groups.every((g) => /^(0+|(zo)+)$/.test(g.mantissa ?? "") && !g.exponentDigits)) return undefined;
+  if (marker === "+" || marker === "ra") return "+";
+  if (marker === "-" || marker === "ru") return "-";
+  return undefined;
+}
+
+const TIME_POLES = new Set(["until", "by", "before", "after", "while"]);
+
+function isTimePole(word: LexWord): boolean {
+  return word.pos === "h" && word.overlay?.kind === "clause_pole" && TIME_POLES.has(word.overlay.gloss);
+}
+
+/** A `/th/` channel or PLAN: what licenses an offset from now (design-decisions D-10). */
+function isWarrant(word: LexWord): boolean {
+  return word.pos === "th" && (word.overlay?.kind === "evidential" || word.overlay?.kind === "plan");
+}
+
+/** Offsets from now (D-10): channel sign, stance-only as-of offsets, and time poles that need a warrant. */
+function enforceOffsets(units: Unit[], directive: boolean): void {
+  let warranted = directive;
+  const poles: HUnit[] = [];
+  for (const unit of units) {
+    if (unit.kind !== "h") continue;
+    const { word, hosted } = unit.unit;
+    const sign = offsetSign(hosted?.bound, hosted?.amount);
+    if (isWarrant(word)) warranted = true;
+    if (!sign) continue;
+    const detail = `${word.raw} ${hosted!.bound.raw}${hosted!.amount ? ` ${hosted!.amount.raw}` : ""}`;
+    if (isAsOfOverlay(word) && word.pos !== "th") throw new ConstructionError("asOfOffset", detail);
+    if (word.pos === "th" && word.overlay) {
+      const base = word.overlay.gloss.split(".")[0];
+      const wrong =
+        (word.overlay.kind === "evidential" && base === "WITNESSED" && sign !== "-") ||
+        (word.overlay.kind === "evidential" && base === "LIVE") ||
+        (word.overlay.kind === "plan" && sign !== "+");
+      if (wrong) throw new ConstructionError("channelOffsetSign", detail);
+    }
+    if (isTimePole(word)) poles.push(unit.unit);
+  }
+  if (!warranted && poles.length > 0) {
+    const pole = poles[0]!;
+    throw new ConstructionError("poleOffsetWarrant", `${pole.word.raw} ${pole.hosted!.bound.raw}`);
+  }
+}
+
 /** Checks over one unit list (a clause body or an island): hosts, stand-ins, hooks, as-of counts, edges. */
 function enforceUnitList(units: Unit[], tables: ClassifyTables): void {
   enforceIslandEdges(units);
@@ -321,7 +371,10 @@ function structureVisitor(tables: ClassifyTables): Visitor {
           return;
         case "gPackage":
           enforceAsOfWord(node.pkg.word, node.pkg.hosted?.bound);
-          if (node.pkg.asOf) enforceAsOfWord(node.pkg.asOf.word, node.pkg.asOf.bound);
+          if (node.pkg.asOf) {
+            enforceAsOfWord(node.pkg.asOf.word, node.pkg.asOf.bound);
+            if (offsetSign(node.pkg.asOf.bound)) throw new ConstructionError("asOfOffset", `${node.pkg.asOf.word.raw} ${node.pkg.asOf.bound!.raw}`);
+          }
           return;
         case "hUnit":
           enforceAsOfWord(node.unit.word, node.unit.hosted?.bound);
@@ -338,7 +391,10 @@ function structureVisitor(tables: ClassifyTables): Visitor {
 
 /** Clause- and discourse-level checks on a parsed and resolved result. */
 export function enforceResult(result: ParseResult, tables: ClassifyTables): void {
-  for (const { left } of result.utterances) {
+  for (const { left, bodies } of result.utterances) {
+    // Command / request (e) and prohibition (u) act words may name a time without a channel.
+    const directive = /^y[eu]/.test(left.force?.raw ?? "");
+    for (const body of bodies) enforceOffsets(body.clause.units, directive);
     if (left.leadForce && !forcePairKind(left.leadForce, left.force)) {
       throw new ConstructionError("forcePair", `${left.leadForce.raw} ${left.force?.raw ?? ""}`.trim());
     }
