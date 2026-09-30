@@ -35,8 +35,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "leftEdge.Polar": { anchor: "questions.md#polar-stance", summary: "polar stance turn" },
   "leftEdge.W": { anchor: "hooks.md#hook-w", summary: "/w/ on a left-edge hook" },
   "leftEdge.Hook": { anchor: "hooks.md#discourse-hooks", summary: "discourse hook at the left edge" },
-  "leftEdge.ForceEcho": { anchor: "speech-moves.md#emphatic-prohibition", summary: "yul yul emphatic prohibition" },
-  "leftEdge.ForceAnswer": { anchor: "questions.md#rhetorical", summary: "yal yol rhetorical question" },
+  "leftEdge.LeadForce": { anchor: "speech-moves.md#emphatic-prohibition", summary: "act word leading another: yul yul emphatic prohibition, yal yol rhetorical question" },
   "leftEdge.Force": { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "speech-act word" },
 
   "bodyClause.Linker": { anchor: "dependents.md#continue-x", summary: "sentence linker before a clause" },
@@ -121,8 +120,8 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "hookUnit.Hook": { anchor: "hooks.md#including-am-al", summary: "in-clause hook" },
 
   "npPackage.gPackage": { anchor: "clause.md#adjectives-ɡ", summary: "adjective on a noun (gl- before, /ɡ/ after)" },
-  "npPackage.itemHook": { anchor: "joins.md#shared-after-the-join", summary: "hook on one join item, before the join word" },
-  "npPackage.itemHookBound": { anchor: "joins.md#shared-after-the-join", summary: "/b/ of a hook on one join item" },
+  "npPackage.itemHook": { anchor: "joins.md#right-close", summary: "hook on one join item, before the join word" },
+  "npPackage.itemHookBound": { anchor: "joins.md#right-close", summary: "/b/ of a hook on one join item" },
   "npPackage.Z": { anchor: "word-endings.md#greeting", summary: "/z/ noun" },
   "npPackage.D": { anchor: "clause.md#direct-object-d", summary: "/d/ noun" },
   "npPackage.B": { anchor: "clause.md#extra-nouns", summary: "/b/ noun" },
@@ -138,11 +137,12 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "gPackage.W": { anchor: "clause.md#adjective-detail-w", summary: "/w/ detail on an adjective" },
   "gPackage.asOfWPair": { anchor: "relations.md#as-of", summary: "as-of pair before an adjective" },
   "gPackage.G": { anchor: "clause.md#adjectives-ɡ", summary: "/ɡ/ adjective" },
+  "gPackage.gPackage": { anchor: "clause.md#complex-chaining", summary: "adjective on the landmark after a /ɡ/ host" },
   "gPackage.B": { anchor: "predication.md#identity-same", summary: "hosted /b/ after /ɡ/" },
 
   "sharedAfterJoin.gPackage": { anchor: "joins.md#right-close", summary: "shared /ɡ/ after a join" },
   "sharedAfterJoin.hUnitRule": { anchor: "comparatives.md#manner-scale", summary: "shared /h/ after a join" },
-  "sharedAfterJoin.timeScale": { anchor: "comparatives.md#time-scale", summary: "digitless bral after a rank join: how late" },
+  "sharedAfterJoin.scale": { anchor: "comparatives.md#time-scale", summary: "digitless bral after a rank join: how late" },
 };
 
 /** Which slot a word may fill (`classifyTokenBranch`). */
@@ -194,13 +194,7 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
 
 /** Readings only a closed overlay produces; those words trace `overlay.*` instead. */
 type OverlayOnlyReading =
-  | "mood"
-  | "locative"
-  | "similative"
-  | "ofRelation"
-  | "exchange"
-  | "proxy"
-  | "stimulus"
+  | "overlay"
   | "joinAct"
   | "joinRelation";
 
@@ -256,6 +250,8 @@ export const RESOLVE_CONSTRUCTIONS: Record<Exclude<`${AnaphorKind}.${"bound" | "
 /** Readings of a whole utterance or clause shape (`reading.*`, [construction-trace.ts](./construction-trace.ts)). */
 export const READING_CONSTRUCTIONS = {
   existence: { anchor: "predication.md#existence", summary: "verbless /z/ clause: there is …" },
+  emphaticProhibition: { anchor: "speech-moves.md#emphatic-prohibition", summary: "yul yul: a louder prohibition" },
+  rhetoricalQuestion: { anchor: "questions.md#rhetorical", summary: "yal yol / yam yol: a question with an obvious answer" },
   bareQuestion: { anchor: "questions.md#question", summary: "yol. / yom. with no body: Huh? / Hm?" },
   greeting: { anchor: "word-endings.md#greeting", summary: "a named citation said alone: hello / goodbye" },
 } satisfies Record<string, ConstructionEntry>;
@@ -537,6 +533,8 @@ export function constructionRegistry(overlays: Iterable<OverlayEntrySource>): Ma
  * anchor is the section that states the rule, so an error sends the reader there.
  */
 export const REJECTIONS = {
+  genitiveHost: { anchor: "hooks.md#genitive", summary: "`em` + `/b/` follows the noun B uses" },
+  forcePair: { anchor: "speech-moves.md#emphatic-prohibition", summary: "only `yul yul` and `yal yol` / `yam yol` stack two act words" },
   sentenceEndMark: { anchor: "speech-moves.md#tone-marks", summary: "a sentence ends in `.`; `?` / `!` are tone-mark prefixes" },
   toneStack: { anchor: "speech-moves.md#tone-marks", summary: "only ! !! ? ?! % & ; are tone marks; other stacks are not" },
   toneTarget: { anchor: "speech-moves.md#tone-marks", summary: "a tone mark goes before a word, an island open ^, or a span" },

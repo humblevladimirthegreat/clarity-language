@@ -58,19 +58,15 @@ export function closeSuffix(close: LexWord | undefined): string {
 
 class Cursor {
   used: boolean[];
-  constructor(private words: LexWord[]) {
+  constructor(words: LexWord[]) {
     this.used = words.map(() => false);
   }
+  /** Leaf for a word the AST places, keyed by its word position. */
   take(word: LexWord | undefined): GlossNode | undefined {
-    if (!word) return undefined;
-    for (let i = 0; i < this.words.length; i++) {
-      if (this.used[i]) continue;
-      if (this.words[i]!.raw === word.raw) {
-        this.used[i] = true;
-        return { t: "leaf", i };
-      }
-    }
-    return undefined;
+    const i = word?.at;
+    if (i === undefined || i >= this.used.length || this.used[i]) return undefined;
+    this.used[i] = true;
+    return { t: "leaf", i };
   }
 }
 
@@ -86,17 +82,17 @@ function gPackage(cur: Cursor, pack: GPackage): GlossNode | undefined {
   const mods = pack.modifiers.map((m) => cur.take(m));
   const asOf = pack.asOf ? group([cur.take(pack.asOf.word), cur.take(pack.asOf.bound)]) : undefined;
   const host = group([...mods, asOf, cur.take(pack.word)]);
-  if (!pack.bound) return host;
-  const bound = boundSlot(cur, pack.bound, pack.boundJoin);
-  return group([host, group([bound, ...(pack.boundAdjs ?? []).map((adj) => gPackage(cur, adj))])]);
+  if (!pack.hosted) return host;
+  const bound = boundSlot(cur, pack.hosted.bound, pack.hosted.boundJoin);
+  return group([host, group([bound, cur.take(pack.hosted.amount), ...(pack.hosted.adjs ?? []).map((adj) => gPackage(cur, adj))])]);
 }
 
 function hUnit(cur: Cursor, unit: HUnit): GlossNode | undefined {
   const host = group([...unit.modifiers.map((m) => cur.take(m)), cur.take(unit.word)]);
-  const bound = boundSlot(cur, unit.bound, unit.boundJoin);
-  const adjs = (unit.boundAdjs ?? []).map((adj) => gPackage(cur, adj));
-  if (!unit.boundAmount && adjs.length === 0) return group([host, bound]);
-  return group([host, group([bound, cur.take(unit.boundAmount), ...adjs])]);
+  const bound = boundSlot(cur, unit.hosted?.bound, unit.hosted?.boundJoin);
+  const adjs = (unit.hosted?.adjs ?? []).map((adj) => gPackage(cur, adj));
+  if (!unit.hosted?.amount && adjs.length === 0) return group([host, bound]);
+  return group([host, group([bound, cur.take(unit.hosted?.amount), ...adjs])]);
 }
 
 /** One hosted `/b/` slot: a single noun, or a join's members plus its join word. */
@@ -107,8 +103,7 @@ function boundSlot(cur: Cursor, bound: LexWord | undefined, join: BoundJoin | un
 }
 
 function shared(cur: Cursor, item: CoordShared): GlossNode | undefined {
-  if ("raw" in item) return cur.take(item);
-  return item.word.pos === "h" ? hUnit(cur, item as HUnit) : gPackage(cur, item as GPackage);
+  return item.word.pos === "g" ? gPackage(cur, item as GPackage) : hUnit(cur, item as HUnit);
 }
 
 function npPackage(cur: Cursor, pack: NpPackage): GlossNode | undefined {
@@ -188,8 +183,8 @@ function unitNodes(cur: Cursor, unit: Unit): GlossNode[] {
       return np(cur, unit.coord);
     case "vp":
       return fences(cur, unit.coord.parts, (w) => {
-        const hosted = unit.coord.parts.flatMap((p) => p.hosted ?? []).find((h) => h.verb.raw === w.raw);
-        return hosted ? group([cur.take(w), cur.take(hosted.bound)]) : cur.take(w);
+        const hosted = unit.coord.parts.flatMap((p) => p.hostedVerbs ?? []).find((h) => h.verb.raw === w.raw);
+        return hosted ? group([cur.take(w), cur.take(hosted.hosted.bound)]) : cur.take(w);
       });
     case "gCoord":
       return gCoordNodes(cur, unit.coord);
@@ -228,39 +223,66 @@ function isHookUnit(unit: Unit | undefined): unit is Extract<Unit, { kind: "hook
   return unit?.kind === "hook";
 }
 
+/** What the last emitted node stands for, so a following pair on its left lands inside the right bracket. */
+type NodeKind = "plain" | "landmark";
+
+/**
+ * A hook + `/b/` pair that describes what is on its left goes inside that bracket: a noun's own (`[z-dog | g-big | [used-by | b-speaker]]`),
+ * or, after a landmark (a hook pair or a hosted host), inside the landmark's `/b/` (`[in | [b-village | [near | b-speaker]]]`).
+ */
+function attachLeft(out: GlossNode[], kinds: NodeKind[], pair: GlossNode): void {
+  const last = out.pop()!;
+  const kind = kinds.pop()!;
+  const within = (node: GlossNode): GlossNode =>
+    node.t === "group" && !node.label ? { ...node, kids: [...node.kids, pair] } : { t: "group", kids: [node, pair] };
+  if (kind === "landmark" && last.t === "group" && !last.label && last.kids.length > 1) {
+    const landmark = last.kids[last.kids.length - 1]!;
+    out.push({ ...last, kids: [...last.kids.slice(0, -1), within(landmark)] });
+  } else {
+    out.push(within(last));
+  }
+  kinds.push(kind);
+}
+
 /** Clause units, with hook packages: extra noun `[in | b-house]`, named hook `NAME[a | on | b]`. */
 function clauseNodes(cur: Cursor, clause: Clause): GlossNode[] {
   const units = clause.units;
   const nodes = units.map((u) => unitNodes(cur, u));
   const out: GlossNode[] = [];
-  /** Units that are a landmark: an extra-noun hook's `/b/`, or an `/h/` unit with its hosted `/b/` (hooks.md § extra noun). */
-  const landmarks = new Set<number>();
+  const kinds: NodeKind[] = [];
+  const push = (node: GlossNode, kind: NodeKind = "plain"): void => {
+    out.push(node);
+    kinds.push(kind);
+  };
   for (let k = 0; k < units.length; k++) {
     const unit = units[k]!;
     const here = nodes[k]!;
-    if (unit.kind === "h" && unit.unit.bound) landmarks.add(k);
     if (isHookUnit(unit) && unit.word.ending === "n" && out.length > 0 && nodes[k + 1]?.length) {
       const prev = out.pop()!;
+      kinds.pop();
       for (const n of here) if (n.t === "leaf") n.named = true;
-      out.push({ t: "group", label: "NAME", kids: [prev, ...here, ...nodes[k + 1]!] });
+      push({ t: "group", label: "NAME", kids: [prev, ...here, ...nodes[k + 1]!] });
       k += 1;
       continue;
     }
     const next = units[k + 1];
-    const prevUnit = units[k - 1];
-    const prevIsB = prevUnit?.kind === "np" && prevUnit.coord.level === "b" && !landmarks.has(k - 1);
-    if (isHookUnit(unit) && next?.kind === "np" && next.coord.level === "b" && !prevIsB) {
+    const pairs = unit.kind === "hook" && (unit.job === "extraNoun" || unit.job === "genitive" || unit.job === "resume");
+    if (isHookUnit(unit) && pairs && next?.kind === "np" && next.coord.level === "b") {
       const node = group([...here, ...nodes[k + 1]!]);
-      if (node) out.push(node);
-      landmarks.add(k + 1);
+      if (node) {
+        if (unit.onLeft && out.length > 0) attachLeft(out, kinds, node);
+        else push(node, "landmark");
+      }
       k += 1;
       continue;
     }
-    out.push(...here);
+    // An `/h/` or `/ɡ/` host with its hosted `/b/` is a landmark for a pair that follows.
+    const hosted = (unit.kind === "h" && unit.unit.hosted) || (unit.kind === "predicate" && unit.adj.hosted);
+    here.forEach((node, i) => push(node, hosted && i === here.length - 1 ? "landmark" : "plain"));
   }
   if (clause.dependent) {
     const orodo = cur.take(clause.dependent.orodo);
-    if (orodo) out.push(orodo);
+    if (orodo) push(orodo);
     out.push(...clauseNodes(cur, clause.dependent.clause));
   }
   return out;
@@ -275,7 +297,7 @@ function utteranceNodes(cur: Cursor, utt: Utterance): GlossNode[] {
   }
   const hook = group([...(left.hookModifiers ?? []).map((m) => cur.take(m)), cur.take(left.hook)]);
   if (hook) out.push(hook);
-  for (const w of [left.forceEcho, left.rhetoricalAnswer, left.force]) {
+  for (const w of [left.leadForce, left.force]) {
     const n = cur.take(w);
     if (n) out.push(n);
   }

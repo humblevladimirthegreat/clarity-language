@@ -26,7 +26,10 @@
  * | ordinary lexicon (`vejel`, `vajul`, …) | packed `english_by_pos` when present for this role + sense, else literal / metaphor | [glosses.md](../../docs/meta/glosses.md#role-english) |
  */
 
-import { classify, overlayKey, type ClassifyTables } from "./classify.js";
+import { isScaleShared, visitResult } from "./ast-walk.js";
+import { hookJobsByPosition, type HookJob } from "./hook-jobs.js";
+import { JOIN_SERIES, resumeCut } from "./series.js";
+import { classifyAll, overlayKey, type ClassifyTables } from "./classify.js";
 import type { PublishedRow } from "../lexicon-search.js";
 import { CLOSED, namedEnglish } from "../closed-roots.js";
 import {
@@ -80,19 +83,8 @@ function numberMarkSuffix(word: LexWord, ctx: MorphGlossContext): string {
   return NUMBER_MARK_SUFFIX[word.family.writingEndingMark ?? SPELLED_ENDING_MARK[word.ending ?? ""] ?? ""] ?? "";
 }
 
-const VOWEL_RE = /[aeiou]/;
-
 /** Short resume cut: root up to and including its 2nd vowel (pronouns.md § Resume). */
-export function shortResumeStem(root: string): string {
-  let seen = 0;
-  for (let i = 0; i < root.length; i++) {
-    if (VOWEL_RE.test(root[i]!)) {
-      seen += 1;
-      if (seen === 2) return root.slice(0, i + 1);
-    }
-  }
-  return root;
-}
+export const shortResumeStem = resumeCut;
 
 /** House-cast short resume stems (`zazar`). */
 const HOUSE_CAST_SHORT: Record<string, string> = Object.fromEntries(
@@ -131,19 +123,6 @@ const LINKER_ENGLISH: Record<string, string> = {
   [`${CLOSED.clock}l`]: "meanwhile",
   [`${CLOSED.film}l`]: "next",
   [`${CLOSED.construction}l`]: "but",
-};
-
-const JOIN_JOB: Record<string, string> = {
-  a: "and",
-  o: "or-exactly-one",
-  ao: "and/or",
-  u: "not",
-  ua: "everything-but",
-  uo: "anything-but",
-  e: "rank/more",
-  ae: "equal-rank",
-  oe: "in-order",
-  ue: "rank/less",
 };
 
 /** Standalone readings ([joins.md § Beginner forms](../../docs/grammar/joins.md#beginner-forms)). */
@@ -381,10 +360,8 @@ export class UnknownWordError extends Error {
 export type MorphGlossContext = {
   antecedent?: LexWord;
   fillAsk?: boolean;
-  discourseHook?: boolean;
-  extraNounHook?: boolean;
-  /** In-clause hook between two span endpoints (hooks.md § Spans). */
-  spanHook?: boolean;
+  /** The job the parser gave this hook (hooks.md); absent when the line does not parse. */
+  hookJob?: HookJob;
   restrictorListed?: boolean;
   /** Spoken mention interior (TYPE **o**): gloss the surface, not the lemma. */
   passThrough?: boolean;
@@ -393,7 +370,7 @@ export type MorphGlossContext = {
   /** Join closing no items (shared `/ɡ/` allowed): `zal` *none*, `zual` *everything*. */
   standaloneJoin?: boolean;
   /** Digitless `g+` / `h+` right after a rank join: the amount / frequency scale. */
-  amountScale?: boolean;  /** `/ɡ/` `g-N` right after a plain noun: *1/N of* that noun. */
+  scale?: boolean;  /** `/ɡ/` `g-N` right after a plain noun: *1/N of* that noun. */
   fraction?: boolean;
   /** Number word beside another number that needs shorthand: the whole run prefers shorthand. */
   shorthandRun?: boolean;
@@ -592,15 +569,20 @@ export function quotePayload(payload: string): string {
 const WRITTEN_SPAN: Record<string, string> = { "[": "CITE", "{": "MENTION", "(": "ASIDE", "<": "OPAQUE" };
 
 /** One leaf of the morph line; written spans render as a labeled bracket. */
-const AMOUNT_SCALE_SERIES = new Set(["e", "ue", "ae", "oe"]);
-
-/** Digitless `g+` / `h+` immediately after a rank join ([comparatives § Amount scale](../../docs/grammar/comparatives.md#amount-scale)). */
-function isAmountScale(word: LexWord, prev: LexWord | undefined): boolean {
-  const family = word.family;
-  if (family.kind !== "number" || (word.pos !== "g" && word.pos !== "h")) return false;
-  if (family.stem.marker !== "+" || family.stem.groups.length > 0 || family.stem.digitlessExp) return false;
-  return prev?.family.kind === "joinMarker" && prev.reading === "join" && AMOUNT_SCALE_SERIES.has(prev.family.series);
+/** Word indexes of scale numbers: a digitless `+` right after a rank join ([comparatives § Amount scale](../../docs/grammar/comparatives.md#amount-scale)). */
+function scaleIndexes(parsed: ParseResult | undefined): Set<number> {
+  const out = new Set<number>();
+  if (!parsed) return out;
+  visitResult(parsed, {
+    enter(node) {
+      if (node.kind === "shared" && isScaleShared(node.item) && node.item.word.at !== undefined) out.add(node.item.word.at);
+    },
+  });
+  return out;
 }
+
+/** What each PoS's scale number ranks: how many, how often, how late. */
+const SCALE_GLOSS: Record<string, string> = { g: "amount", h: "how-often", b: "later" };
 
 const FRACTION_NAMES: Record<number, string> = { 2: "half", 3: "third", 4: "quarter" };
 
@@ -623,9 +605,9 @@ function fractionGloss(word: LexWord): string {
 function wordGloss(word: LexWord, tables: ClassifyTables, ctx: MorphGlossContext): string {
   if (ctx.passThrough) return quotePayload(word.raw);
   if (ctx.fraction) return fractionGloss(word);
-  if (ctx.amountScale && word.family.kind === "number") {
+  if (ctx.scale && word.family.kind === "number" && word.pos && SCALE_GLOSS[word.pos]) {
     const about = word.family.writingEndingMark === "~" || word.ending === "m" ? ".about" : "";
-    return `${word.pos}-${word.pos === "h" ? "how-often" : "amount"}${about}`;
+    return `${word.pos}-${SCALE_GLOSS[word.pos]}${about}`;
   }
   const family = word.family;
   if (family.kind !== "writingSpan" || family.anaphor) return morphGlossFor(word, tables, ctx);
@@ -858,7 +840,7 @@ function analyzeLine(
   options: MorphGlossOptions = {},
 ): { words: LexWord[]; ctxByIndex: MorphGlossContext[]; parsed?: ParseResult } {
   const morphWords = parseWords(text);
-  const words = morphWords.map((word) => classify(word, tables));
+  const words = classifyAll(morphWords, tables);
 
   let parsed: ParseResult | undefined;
   try {
@@ -868,33 +850,25 @@ function analyzeLine(
     parsed = undefined;
   }
 
-  const dependentVerbCounts = new Map<string, number>();
+  const dependentVerbIndexes = new Set<number>();
   const collectClause = (clause: ParseResult["utterances"][number]["bodies"][number]["clause"]): void => {
     const dependent = clause.dependent;
     if (!dependent) return;
-    if (dependent.orodo.pos === "v") {
-      dependentVerbCounts.set(dependent.orodo.raw, (dependentVerbCounts.get(dependent.orodo.raw) ?? 0) + 1);
-    }
+    if (dependent.orodo.pos === "v" && dependent.orodo.at !== undefined) dependentVerbIndexes.add(dependent.orodo.at);
     collectClause(dependent.clause);
   };
   parsed?.utterances.forEach((utterance) => utterance.bodies.forEach((body) => collectClause(body.clause)));
-  const dependentVerbIndexes = new Set<number>();
-  words.forEach((word, index) => {
-    const remaining = dependentVerbCounts.get(word.raw) ?? 0;
-    if (remaining > 0 && word.pos === "v") {
-      dependentVerbIndexes.add(index);
-      dependentVerbCounts.set(word.raw, remaining - 1);
-    }
-  });
 
   // A lone join word is a form citation (`zam` = z-and.open), not a standalone join.
   const citation = words.length === 1;
   const standaloneIndexes = citation ? new Set<number>() : standaloneJoinIndexes(words, parsed);
+  const scaleWords = scaleIndexes(parsed);
+  const hookJobs = parsed ? hookJobsByPosition(parsed) : new Map<number, HookJob>();
   const passThrough = mentionPassThroughFlags(words);
   const ctxByIndex = words.map((word, index) => {
-    const ctx = contextFor(word, index, words, parsed?.resolve, parsed, passThrough[index], dependentVerbIndexes.has(index));
+    const ctx = contextFor(word, index, words, parsed?.resolve, hookJobs, passThrough[index], dependentVerbIndexes.has(index));
     if (standaloneIndexes.has(index)) ctx.standaloneJoin = true;
-    if (isAmountScale(word, words[index - 1])) ctx.amountScale = true;
+    if (scaleWords.has(index)) ctx.scale = true;
     if (isFraction(word, words[index - 1])) ctx.fraction = true;
     return ctx;
   });
@@ -902,45 +876,21 @@ function analyzeLine(
   return { words, ctxByIndex, parsed };
 }
 
-/** Word indexes of join closes whose coord part has no items (surface order per raw form). */
+/** Word indexes of join closes whose coord part has no items. */
 function standaloneJoinIndexes(words: LexWord[], parsed: ParseResult | undefined): Set<number> {
   const out = new Set<number>();
   if (!parsed) return out;
-  // Every join close in tree order, flagged standalone or not, queued per raw form.
-  const queues = new Map<string, boolean[]>();
-  // A part with no items after an earlier part closes over that part (`vawalal vurunul val vul`), so only a first part can stand alone.
-  const walk = (node: unknown, firstPart = true): void => {
-    if (Array.isArray(node)) return node.forEach((child) => walk(child));
-    if (!node || typeof node !== "object") return;
-    const obj = node as Record<string, unknown>;
-    const join = obj.join as { raw?: string } | undefined;
-    // Clause chain: only a lone link with no clause on either side stands alone (`xal.` / stand-in `xal`).
-    if (Array.isArray(obj.links)) {
-      const links = obj.links as { join: { raw: string }; clause?: unknown }[];
-      if (obj.first) walk(obj.first);
-      links.forEach((link) => {
-        const queue = queues.get(link.join.raw) ?? [];
-        queue.push(!obj.first && links.length === 1 && !link.clause);
-        queues.set(link.join.raw, queue);
-        if (link.clause) walk(link.clause);
-      });
-      return;
-    }
-    if (Array.isArray(obj.items) && join && typeof join.raw === "string") {
-      const queue = queues.get(join.raw) ?? [];
-      queue.push(firstPart && obj.items.length === 0);
-      queues.set(join.raw, queue);
-    }
-    for (const [key, value] of Object.entries(obj)) {
-      if (key === "parts" && Array.isArray(value)) value.forEach((part, i) => walk(part, i === 0));
-      else walk(value);
-    }
-  };
-  walk(parsed.utterances);
-  words.forEach((word, index) => {
-    if (word.family.kind !== "joinMarker" || word.reading !== "join") return;
-    const queue = queues.get(word.raw);
-    if (queue?.shift()) out.add(index);
+  visitResult(parsed, {
+    join(join, site) {
+      // Clause chain: only a lone link with no clause on either side stands alone (`xal.` / stand-in `xal`).
+      // A part with no items after an earlier part closes over that part (`vawalal vurunul val vul`), so only a first part can stand alone.
+      const standalone =
+        site.kind === "clauseCoord"
+          ? !site.coord.first && site.coord.links.length === 1 && !site.coord.links[site.index]!.clause
+          : site.index === 0 && site.coord.parts[0]!.items.length === 0;
+      const word = join.at === undefined ? undefined : words[join.at];
+      if (standalone && word && word.family.kind === "joinMarker" && word.reading === "join") out.add(join.at!);
+    },
   });
   return out;
 }
@@ -983,7 +933,7 @@ function contextFor(
   index: number,
   words: LexWord[],
   resolve: ResolveInfo | undefined,
-  parsed: ParseResult | undefined,
+  hookJobs: Map<number, HookJob>,
   passThrough?: boolean,
   dependentVerb = false,
 ): MorphGlossContext {
@@ -991,24 +941,11 @@ function contextFor(
   if (dependentVerb) ctx.dependentVerb = true;
   if (passThrough) ctx.passThrough = true;
   if (resolve) {
-    const bind = bindFor(word, index, words, resolve.anaphors);
+    const bind = bindFor(word, resolve.anaphors);
     if (bind?.antecedent) ctx.antecedent = rootAntecedent(bind.antecedent, resolve.anaphors);
     ctx.fillAsk = isFillAsk(word, resolve.asks);
   }
-  if (parsed) ctx.discourseHook = isLeftEdgeHook(word, parsed);
-  if (word.family.kind === "hook") {
-    const next = words[index + 1];
-    let i = index - 1;
-    while (words[i]?.pos === "w") i -= 1;
-    const prev = words[i];
-    ctx.extraNounHook = next?.pos === "b" && (prev?.pos !== "b" || (isHostedLandmark(words, i) && !isSpanHook(word, prev, next)));
-    if (!ctx.extraNounHook && !ctx.discourseHook && isSpanHook(word, prev, next)) ctx.spanHook = true;
-    // `A xam al B`: a hook right after a clause join opens that conjunct (glue). After a stand-in
-    // clause (`xual ul …`, nothing clause-like before it) the hook is same-role instead.
-    const isXJoin = (w: LexWord | undefined) => w?.pos === "x" && w.family.kind === "joinMarker";
-    const beforePrev = words[i - 1];
-    if (isXJoin(prev) && beforePrev && !isXJoin(beforePrev)) ctx.discourseHook = true;
-  }
+  if (word.family.kind === "hook") ctx.hookJob = hookJobs.get(word.at ?? -1);
   if (word.reading === "restrictor") {
     const prev = words[index - 1];
     ctx.restrictorListed = Boolean(prev && (prev.pos === "h" || prev.pos === "th" || prev.pos === "w"));
@@ -1016,37 +953,9 @@ function contextFor(
   return ctx;
 }
 
-/**
- * The `/b/` phrase ending at `bIndex` is a landmark: the `/b/` of an extra-noun hook or of an `/h/` / `/ɡ/` host.
- * A hook + `/b/` after it describes that landmark (hooks.md § extra noun); after a recipient it is same-role.
- */
-function isHostedLandmark(words: LexWord[], bIndex: number): boolean {
-  let j = bIndex - 1;
-  while (j >= 0 && (words[j]!.pos === "b" || words[j]!.pos === "w")) j -= 1;
-  const host = words[j];
-  if (!host) return false;
-  if (host.pos === "h" || host.pos === "g") return true;
-  if (host.family.kind !== "hook") return false;
-  let k = j - 1;
-  while (words[k]?.pos === "w") k -= 1;
-  return words[k]?.pos !== "b" || isHostedLandmark(words, k);
-}
-
-function bindFor(
-  word: LexWord,
-  index: number,
-  words: LexWord[],
-  binds: AnaphorBind[],
-): AnaphorBind | undefined {
-  if (word.ending !== "r" || word.family.kind === "joinMarker") return undefined;
-  const seen = words.slice(0, index).filter((w) => w.raw === word.raw && w.ending === "r").length;
-  let n = 0;
-  for (const bind of binds) {
-    if (bind.pronoun.raw !== word.raw) continue;
-    if (n === seen) return bind;
-    n += 1;
-  }
-  return undefined;
+function bindFor(word: LexWord, binds: AnaphorBind[]): AnaphorBind | undefined {
+  if (word.ending !== "r" || word.family.kind === "joinMarker" || word.at === undefined) return undefined;
+  return binds.find((bind) => bind.pronoun.at === word.at);
 }
 
 /** A resume of a resume (`zazar … zazar`) glosses the original referent, not `←←`. */
@@ -1063,14 +972,10 @@ function rootAntecedent(antecedent: LexWord, binds: AnaphorBind[]): LexWord {
 }
 
 function isFillAsk(word: LexWord, asks: AskRecord[]): boolean {
+  if (word.at === undefined) return false;
   return asks.some(
-    (ask) => (ask.kind === "fillAsk" || ask.kind === "rhetorical") && ask.gaps.some((gap) => gap.raw === word.raw),
+    (ask) => (ask.kind === "fillAsk" || ask.kind === "rhetorical") && ask.gaps.some((gap) => gap.at === word.at),
   );
-}
-
-function isLeftEdgeHook(word: LexWord, parsed: ParseResult): boolean {
-  if (word.family.kind !== "hook") return false;
-  return parsed.utterances.some((utt) => utt.left.hook?.raw === word.raw);
 }
 
 function sensePieces(
@@ -1142,47 +1047,6 @@ function sensePieces(
   }
 }
 
-const SPAN_ENDPOINT_KIND: Record<string, string> = {
-  "+": "scalar",
-  "-": "scalar",
-  ra: "scalar",
-  ru: "scalar",
-  "#": "rank",
-  "#-": "rank",
-  re: "rank",
-  rue: "rank",
-  _: "label",
-  ro: "label",
-  roe: "label",
-  "#_": "label",
-  ruo: "label",
-};
-
-/** Span endpoint kind: a number with digits, ±∞, or a first / last place (numbers-applied.md § Ranges). */
-function spanEndpointKind(word: LexWord | undefined): string | undefined {
-  if (word?.family.kind !== "number") return undefined;
-  const { stem } = word.family;
-  const kind = SPAN_ENDPOINT_KIND[stem.marker];
-  if (!kind) return undefined;
-  if (stem.groups.length > 0 && !stem.digitlessExp) return kind;
-  if (stem.groups.length === 0 && stem.digitlessExp === "e") return kind;
-  if (stem.groups.length === 0 && stem.digitlessExp === "e-" && kind === "rank") return kind;
-  return undefined;
-}
-
-/**
- * Span hook (hooks.md § Spans): `al` / `ul` between two same-kind number endpoints,
- * or a stacked `oe` / `ua` / `ue` hook between two same-role words.
- */
-export function isSpanHook(word: LexWord, prev: LexWord | undefined, next: LexWord | undefined): boolean {
-  if (word.family.kind !== "hook" || !prev || !next || prev.pos !== next.pos) return false;
-  const vowels = word.family.form.slice(0, -1);
-  if (vowels === "oe" || vowels === "ua" || vowels === "ue") return true;
-  if (vowels !== "a" && vowels !== "u") return false;
-  const kind = spanEndpointKind(prev);
-  return kind !== undefined && kind === spanEndpointKind(next);
-}
-
 const HOOK_SPAN: Record<string, string> = {
   al: "through",
   am: "through.approx",
@@ -1207,12 +1071,18 @@ const HOOK_SPAN: Record<string, string> = {
 };
 
 function hookLabel(form: string, ctx: MorphGlossContext): string {
-  if (ctx.spanHook) return HOOK_SPAN[form] ?? form;
-  // A resume hook (-r) takes no /b/: mid-clause it points back to the landmark (hooks.md § point back).
-  if (form.endsWith("r") && !ctx.discourseHook) return HOOK_EXTRA_NOUN[form] ?? form;
-  if (ctx.extraNounHook) return HOOK_EXTRA_NOUN[form] ?? form;
-  if (ctx.discourseHook) return HOOK_JOB[form] ?? form;
-  return HOOK_IN_CLAUSE[form] ?? HOOK_JOB[form] ?? form;
+  switch (ctx.hookJob) {
+    case "span":
+      return HOOK_SPAN[form] ?? form;
+    case "resume":
+    case "extraNoun":
+    case "genitive":
+      return HOOK_EXTRA_NOUN[form] ?? form;
+    case "discourse":
+      return HOOK_JOB[form] ?? form;
+    default:
+      return HOOK_IN_CLAUSE[form] ?? HOOK_JOB[form] ?? form;
+  }
 }
 
 function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
@@ -1325,7 +1195,7 @@ function fenceJoinLabel(
 
   // Open **o** leaves the pick optional, so it is no longer *exactly one*.
   if (series === "o" && ending === "m") return "or.open";
-  const job = (ctx.standaloneJoin ? JOIN_JOB_STANDALONE[series] : undefined) ?? JOIN_JOB[series] ?? series;
+  const job = (ctx.standaloneJoin ? JOIN_JOB_STANDALONE[series] : undefined) ?? JOIN_SERIES[series]?.job ?? series;
   if (ending === "m") return `${job}.open`;
   if (ending === "n") return `${job}.named`;
   return job;

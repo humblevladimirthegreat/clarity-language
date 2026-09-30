@@ -1,6 +1,6 @@
 # Proposal: parser rule consolidation
 
-**Status:** PROPOSED. Editors only.  
+**Status:** IMPLEMENTED (with the deviations under [Implementation notes](#implementation-notes)). Editors only.  
 **Scope:** parser code under [`src/parse/`](../../src/parse/) only. The set of Agazan sentences the parser accepts and rejects does not change, and the grammar docs do not change.  
 **Allowed to change:** AST shapes, internal readings, construction IDs, and a few morph-gloss brackets. Each item says which ones.  
 **Design authority:** [`docs/grammar/`](../grammar/introduction.md). The parser implements the docs ([parser pipeline](../meta/parser-pipeline.md)).
@@ -235,3 +235,17 @@ For every item:
 - Grammar changes, including new rulings on G-07 (see A3) or G-19.
 - Performance (see `parser-optimization.md`).
 - The Peggy word grammar. Its alternation order mirrors [x-compounds decision order](../grammar/x-compounds.md#decision-order) on purpose, and no duplicate rules were found there. The only reshaping is the classify step in B3.
+
+## Implementation notes {#implementation-notes}
+
+Everything above is done except B9, which stayed an audit. Where the code differs from the text above:
+
+- **A1.** A scale is the ordinary `/ɡ/` / `/h/` shape tagged `kind: "scale"` (a hosted `/b/` can follow it, so it cannot be a bare word); `bral` is one `/h/`-shaped unit. The `sharedAfterJoin.scale` ID stays anchored at the time-scale section, the only place it traces. `resolve` now also records a shared-role for scale items it used to skip (`bral`).
+- **A2.** One `Hosted` type and one `hostedTail` production, called by `/ɡ/` and `/h/` hosts. `VpCoord.hosted` became `hostedVerbs`, and the item hook (G-18) keeps its own `itemHook` labels. Plain adjectives after a hosted pair nest as landmark adjectives everywhere except inside a joined `/ɡ/` list (`gPackage` takes a `landmark` argument), which keeps predicate lists as they were. A count after a `/ɡ/` host's `/b/` is now `hosted.amount`. Per-host construction IDs (`hUnitRule.B`, `gPackage.B`, …) are unchanged, and `gPackage.gPackage` is new.
+- **A3.** The parser records `job` on each hook unit (`hook-jobs.ts`); `onLeft` marks a pair that describes the noun or landmark on its left. The gloss reads both. The `em` ruling is implemented as decided: `genitive` job, nested gloss, `isExistence` reads it, and `genitiveHost` rejects a stray `em` + `/b/`. A bare `em bamegun` with nothing else stays a citation of the form (hooks.md § whose cites *my* and *your* that way). A hook + `/b/` right after a landmark (G-08) nests inside that landmark's bracket in the gloss.
+- **A4.** Also accepted now: a rhetorical pair after a vocative (`yal yol` after a turn cluster), which the two old gates did not reach. `yol yol`-style mistakes are rejected by `forcePair` in `enforce`, not by the grammar.
+- **B2.** `gloss-structure.ts` stays a fold (it builds structure) but reads the same `job` fields. `construction-trace.ts` had no full walker to port. Resolve now reads `/ɡ/` lists inside a joined adjective list, so a fill-ask gap there (`yol zagayom gubuhal gegagel ?gar thodum.`) is found; it was silently missed before.
+- **B4.** `mood` was already the name for every other overlay row, so it is now `overlay` too. Overlay `-r` words of the six former kinds are no longer read as resumes.
+- **B6.** The three list rules are one `npCoord` / `npCoordPart` with a level argument, but the construction trace still names them per level (`zCoord.zCoordPart`, …): the learning-order check needs the per-section anchors.
+- **B8.** The grammar owns utterance splitting; error positions now come from one parse.
+- **B9 audit.** Each rewrite pass was switched off in turn. `mergeIslandJoins` breaks the join-scope-island test; `mergeAdjLists` changes 27 corpus parses; the `disambiguateClause` adjective-list case breaks the `godogal gul` test; its trailing-fence case breaks 218 corpus parses. None became unnecessary after A2 and B6.

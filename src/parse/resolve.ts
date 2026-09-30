@@ -6,11 +6,8 @@ import type {
   Clause,
   ContentMatch,
   CoordShared,
-  GPackage,
-  HUnit,
   IslandUnit,
   LexWord,
-  NpCoord,
   NpPackage,
   NumberMarker,
   ParseResult,
@@ -23,11 +20,9 @@ import type {
   VpCoord,
   WritingBracket,
 } from "./types.js";
+import { isDigitless, isRhetorical, KIND_SERIES, resumeCut, SCALE_SERIES } from "./series.js";
+import { isSharedGPackage, SKIP_CONTENT, visitResult, type Visitor } from "./ast-walk.js";
 
-const VOWELS = new Set(["a", "e", "o", "u"]);
-
-const SCALE_SERIES = new Set(["e", "oe", "ue"]);
-const KIND_SERIES = new Set(["ua", "uo"]);
 const ROLE_FRAME_POS = new Set(["z", "d", "b", "v", "g", "h", "th"]);
 
 type SpanType = "a" | "e" | "o" | "u";
@@ -48,16 +43,7 @@ type Ctx = {
 };
 
 /** Letter-pronoun stem: cut through the 2nd vowel ([pronouns.md](docs/grammar/pronouns.md)). */
-export function letterPrefix(root: string): string {
-  let seen = 0;
-  for (let i = 0; i < root.length; i++) {
-    if (VOWELS.has(root[i]!)) {
-      seen++;
-      if (seen === 2) return root.slice(0, i + 1);
-    }
-  }
-  return root;
-}
+export const letterPrefix = resumeCut;
 
 /** Writing / speech number markers that share referential identity. */
 export function numberMarkerIdentity(marker: NumberMarker): string {
@@ -129,33 +115,13 @@ function isJoinGap(word: LexWord): boolean {
   return word.reading === "join" || word.reading === "restrictor";
 }
 
-function isGPackage(shared: CoordShared): shared is GPackage {
-  return typeof shared === "object" && "word" in shared && shared.word.pos === "g";
-}
-
-function isHUnit(shared: CoordShared): shared is HUnit {
-  return typeof shared === "object" && "word" in shared && (shared.word.pos === "h" || shared.word.pos === "th");
-}
-
-function classifySharedRole(join: LexWord, numberCount: number, shared: GPackage | HUnit): SharedRole {
+function classifySharedRole(join: LexWord, shared: CoordShared): SharedRole {
   const series = join.family.kind === "joinMarker" ? join.family.series : "";
   if (SCALE_SERIES.has(series)) return "scale";
   if (series === "ae") return "equative";
   if (KIND_SERIES.has(series)) return "kind";
-  if (series === "a") return isGPackage(shared) && shared.word.plural ? "collective" : "distribute";
+  if (series === "a") return isSharedGPackage(shared) && shared.word.plural ? "collective" : "distribute";
   return "ordinary";
-}
-
-function isNumberHead(word: LexWord): boolean {
-  return word.family.kind === "number" || word.reading === "number";
-}
-
-function numberConjunctCount(coord: NpCoord, partIndex: number): number {
-  const part = coord.parts[partIndex];
-  if (!part) return 0;
-  return part.items.filter(
-    (item) => item.kind === "package" && isNumberHead(item.package.head),
-  ).length;
 }
 
 function isSpanAnaphor(word: LexWord): boolean {
@@ -167,7 +133,7 @@ function isSpanAnaphor(word: LexWord): boolean {
 /** Digitless number **-r** (`g=+`): *some number*, or a fill-ask blank under question — not a resume (numbers.md#digitless). */
 export function isDigitlessNumberBlank(word: LexWord): boolean {
   const family = word.family;
-  return family.kind === "number" && word.ending === "r" && family.stem.groups.length === 0 && !family.stem.digitlessExp;
+  return family.kind === "number" && word.ending === "r" && isDigitless(family.stem);
 }
 
 function isNumberAnaphor(word: LexWord): boolean {
@@ -187,7 +153,7 @@ function holderRoots(word: LexWord): string[] {
 function isContentAnaphor(word: LexWord): boolean {
   if (word.ending !== "r") return false;
   if (word.reading === "sake") return false;
-  if (word.reading === "restrictor" || word.reading === "mood") return false;
+  if (word.reading === "restrictor" || word.reading === "overlay") return false;
   if (word.family.kind === "joinMarker") return false;
   if (word.family.kind === "hook" || word.family.kind === "spanClose") return false;
   if (isSpanAnaphor(word) || isNumberAnaphor(word) || isRoleAnaphor(word)) return false;
@@ -296,183 +262,45 @@ function considerWord(ctx: Ctx, word: LexWord): void {
   harvest(ctx, word);
 }
 
-function considerJoin(
-  ctx: Ctx,
-  join: LexWord,
-  shared: CoordShared[],
-  numberCount: number,
-): void {
-  if (ctx.question && isJoinGap(join)) ctx.gaps.push(join);
-  for (const item of shared) {
-    if (isGPackage(item)) {
-      considerGPackage(ctx, item);
-      ctx.shared.push({
-        join,
-        role: classifySharedRole(join, numberCount, item),
-        shared: item,
-      });
-      continue;
-    }
-    if (isHUnit(item)) {
-      considerHUnit(ctx, item);
-      ctx.shared.push({
-        join,
-        role: classifySharedRole(join, numberCount, item),
-        shared: item,
-      });
-    }
-  }
-}
-
-function considerGPackage(ctx: Ctx, pkg: GPackage): void {
-  // Surface order: `/w/` details (and an as-of pair) precede the `/ɡ/` head.
-  for (const mod of pkg.modifiers) considerWord(ctx, mod);
-  if (pkg.asOf) {
-    considerWord(ctx, pkg.asOf.word);
-    if (pkg.asOf.bound) considerWord(ctx, pkg.asOf.bound);
-  }
-  considerWord(ctx, pkg.word);
-  if (pkg.bound) considerWord(ctx, pkg.bound);
-  for (const w of pkg.boundJoin?.members ?? []) considerWord(ctx, w);
-  for (const adj of pkg.boundAdjs ?? []) considerGPackage(ctx, adj);
-}
-
-function considerHUnit(ctx: Ctx, unit: HUnit): void {
-  for (const mod of unit.modifiers) considerWord(ctx, mod);
-  considerWord(ctx, unit.word);
-  if (unit.bound) considerWord(ctx, unit.bound);
-  for (const w of unit.boundJoin?.members ?? []) considerWord(ctx, w);
-  if (unit.boundAmount) considerWord(ctx, unit.boundAmount);
-  for (const adj of unit.boundAdjs ?? []) considerGPackage(ctx, adj);
-}
-
-function considerNpPackage(ctx: Ctx, pkg: NpPackage): void {
-  if (pkg.glAdj) considerGPackage(ctx, pkg.glAdj);
-  considerWord(ctx, pkg.head);
-  for (const adj of pkg.adjs) considerGPackage(ctx, adj);
-}
-
-function considerIsland(ctx: Ctx, island: IslandUnit): void {
-  for (const unit of island.units) considerUnit(ctx, unit);
-}
-
-function considerNpCoord(ctx: Ctx, coord: NpCoord): void {
-  coord.parts.forEach((part, index) => {
-    for (const item of part.items) {
-      if (item.kind === "package") considerNpPackage(ctx, item.package);
-      else considerIsland(ctx, item.island);
-    }
-    if (part.join) {
-      considerJoin(ctx, part.join, part.shared, numberConjunctCount(coord, index));
-    } else {
-      for (const shared of part.shared) {
-        if (isGPackage(shared)) considerGPackage(ctx, shared);
-        else if (isHUnit(shared)) considerHUnit(ctx, shared);
+/** Resolve as a handler set over the AST walk ([ast-walk.ts](./ast-walk.ts)). */
+function resolveVisitor(ctx: Ctx): Visitor {
+  // Inside an opaque `u` span nothing is read as a word (spans.md).
+  let opaque = 0;
+  return {
+    word(word, slot) {
+      if (opaque > 0 || slot === "boundJoinClose" || slot === "joinModifier" || slot === "factor") return;
+      considerWord(ctx, word);
+    },
+    join(join, site) {
+      if (opaque > 0) return;
+      if (ctx.question && isJoinGap(join)) ctx.gaps.push(join);
+    },
+    enter(node) {
+      if (node.kind === "span" && spanTypeOf(node.span.open) === "u") {
+        opaque += 1;
+        return SKIP_CONTENT;
       }
-    }
-  });
-}
-
-function considerVpCoord(ctx: Ctx, coord: VpCoord): void {
-  for (const part of coord.parts) {
-    for (const item of part.items) considerWord(ctx, item);
-    for (const hosted of part.hosted ?? []) considerWord(ctx, hosted.bound);
-    if (part.join) considerJoin(ctx, part.join, part.shared, 0);
-    else {
-      for (const shared of part.shared) {
-        if (isGPackage(shared)) considerGPackage(ctx, shared);
-        else if (isHUnit(shared)) considerHUnit(ctx, shared);
+      if (node.kind === "utterance") {
+        ctx.question = isQuestionForce(node.utterance.left.force);
+        ctx.gaps = [];
       }
-    }
-  }
-}
-
-function considerSpan(ctx: Ctx, span: SpanUnit): void {
-  const opaque = spanTypeOf(span.open) === "u";
-  considerWord(ctx, span.open);
-  if (!opaque) {
-    for (const clause of span.content) considerClause(ctx, clause);
-    if (span.atom) considerWord(ctx, span.atom);
-  }
-}
-
-function considerUnit(ctx: Ctx, unit: Unit): void {
-  switch (unit.kind) {
-    case "np":
-      considerNpCoord(ctx, unit.coord);
-      return;
-    case "vp":
-      considerVpCoord(ctx, unit.coord);
-      return;
-    case "predicate":
-      considerGPackage(ctx, unit.adj);
-      return;
-    case "gCoord":
-      for (const part of unit.coord.parts) {
-        for (const item of part.items) {
-          if (item.kind === "adj") considerGPackage(ctx, item.adj);
-          else considerIsland(ctx, item.island);
-        }
-        if (part.join && ctx.question && isJoinGap(part.join)) ctx.gaps.push(part.join);
+    },
+    exit(node) {
+      if (node.kind === "span" && spanTypeOf(node.span.open) === "u") opaque -= 1;
+      if (node.kind === "shared" && node.join && opaque === 0) {
+        ctx.shared.push({ join: node.join, role: classifySharedRole(node.join, node.item), shared: node.item });
       }
-      return;
-    case "h":
-      considerHUnit(ctx, unit.unit);
-      return;
-    case "linker":
-    case "writingSpan":
-      considerWord(ctx, unit.word);
-      return;
-    case "hook":
-      considerWord(ctx, unit.word);
-      for (const mod of unit.modifiers) considerWord(ctx, mod);
-      return;
-    case "span":
-      considerSpan(ctx, unit.span);
-      return;
-    case "island":
-      considerIsland(ctx, unit.island);
-      return;
-    case "clauseCoord":
-      if (unit.coord.first) considerClause(ctx, unit.coord.first);
-      for (const link of unit.coord.links) {
-        if (ctx.question && isJoinGap(link.join)) ctx.gaps.push(link.join);
-        if (link.clause) considerClause(ctx, link.clause);
+      if (node.kind === "utterance") {
+        const { left } = node.utterance;
+        let kind: AskKind = "none";
+        if (ctx.question) kind = isRhetorical(left.leadForce, left.force) ? "rhetorical" : ctx.gaps.length > 0 ? "fillAsk" : "yesNo";
+        ctx.asks.push({ utteranceIndex: node.index, kind, gaps: ctx.gaps });
       }
-      return;
-  }
+    },
+  };
 }
 
-function considerClause(ctx: Ctx, clause: Clause): void {
-  for (const unit of clause.units) considerUnit(ctx, unit);
-  if (clause.dependent) considerClause(ctx, clause.dependent.clause);
-}
-
-function considerBody(ctx: Ctx, body: BodyClause): void {
-  if (body.linker) considerWord(ctx, body.linker);
-  considerClause(ctx, body.clause);
-}
-
-function considerUtterance(ctx: Ctx, utterance: Utterance, utteranceIndex: number): void {
-  ctx.question = isQuestionForce(utterance.left.force);
-  ctx.gaps = [];
-
-  for (const vocative of utterance.left.vocatives) considerWord(ctx, vocative);
-  for (const polar of utterance.left.polars) considerWord(ctx, polar);
-  if (utterance.left.hook) considerWord(ctx, utterance.left.hook);
-  for (const mod of utterance.left.hookModifiers ?? []) considerWord(ctx, mod);
-  if (utterance.left.force) considerWord(ctx, utterance.left.force);
-  if (utterance.left.forceEcho) considerWord(ctx, utterance.left.forceEcho);
-  if (utterance.left.rhetoricalAnswer) considerWord(ctx, utterance.left.rhetoricalAnswer);
-
-  for (const body of utterance.bodies) considerBody(ctx, body);
-
-  let kind: AskKind = "none";
-  if (ctx.question) kind = utterance.left.rhetoricalAnswer ? "rhetorical" : ctx.gaps.length > 0 ? "fillAsk" : "yesNo";
-  ctx.asks.push({ utteranceIndex, kind, gaps: ctx.gaps });
-}
-
-function buildResolve(utterances: Utterance[]): ResolveInfo {
+function buildResolve(result: ParseResult): ResolveInfo {
   const ctx: Ctx = {
     antecedents: [],
     anaphors: [],
@@ -481,7 +309,7 @@ function buildResolve(utterances: Utterance[]): ResolveInfo {
     gaps: [],
     question: false,
   };
-  utterances.forEach((utterance, index) => considerUtterance(ctx, utterance, index));
+  visitResult(result, resolveVisitor(ctx));
   return {
     anaphors: ctx.anaphors,
     asks: ctx.asks,
@@ -493,6 +321,6 @@ function buildResolve(utterances: Utterance[]): ResolveInfo {
 export function resolve(result: ParseResult): ParseResult {
   return {
     utterances: result.utterances,
-    resolve: buildResolve(result.utterances),
+    resolve: buildResolve(result),
   };
 }

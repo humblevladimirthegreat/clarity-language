@@ -42,7 +42,7 @@ describe("inspectText", () => {
     const token = result.tokens[0];
     assert.equal(token?.kind, "word");
     if (token?.kind !== "word") return;
-    assert.equal(token.word.reading, "mood");
+    assert.equal(token.word.reading, "overlay");
     assert.equal(token.gloss, "WITNESSED");
   });
 

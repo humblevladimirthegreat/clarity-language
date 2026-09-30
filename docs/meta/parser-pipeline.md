@@ -196,6 +196,9 @@ src/
     classify.ts                  # Stage 2
     tokenize.ts / tokens.ts      # peel .?!^ ; LexWord → IToken
     sentence-parser.ts           # Stage 3 Chevrotain
+    hook-jobs.ts                 # each hook's job, decided once after Stage 3
+    ast-walk.ts                  # the one AST visitor (resolve, enforce, inspect are handler sets)
+    series.ts                    # join-series, scale and number helpers shared across stages
     resolve.ts                   # Stage 4
     index.ts                     # parse(text)
     types.ts                     # MorphWord / LexWord / AST / ResolveInfo

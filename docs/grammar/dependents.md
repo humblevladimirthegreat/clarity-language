@@ -612,6 +612,6 @@ Each clause has at most one **stand-in** at the end of the main sentence. The se
 
 > `zazawan gezebul theram barl zalahen vowogal theram barl zahaben vezebal.`
 >
-> [z-Azawan | g-sleepy] | [th-because | b-that-clause] | z-Alahen | v-walk | th-because | b-that-clause | z-Ahaben | v-sleep
+> [z-Azawan | g-sleepy] | [th-because | b-that-clause] | z-Alahen | v-walk | [th-because | b-that-clause] | z-Ahaben | v-sleep
 >
 > "Azawan is sleepy because Alahen walks because Ahaben sleeps."

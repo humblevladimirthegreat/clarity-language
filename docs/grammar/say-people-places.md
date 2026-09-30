@@ -47,7 +47,7 @@ For English *whose*, resume the person after the [whose hook **`em`**](hooks.md#
 
 > `zagadul vehahel. zodogal em bagar varahal.`
 >
-> z-guard | v-sit . z-dog | [used-by | b-←guard] | v-run
+> z-guard | v-sit . [z-dog | [used-by | b-←guard]] | v-run
 >
 > "A guard sits. The guard's dog runs." (*The guard whose dog runs sits.*)
 
@@ -69,7 +69,7 @@ When English stacks possessives, keep one **`em`** and list every owner in its `
 
 > `zabol em bodogal bazawan boel.`
 >
-> z-bone | [used-by | [b-dog | b-Azawan | b-in-order]]
+> [z-bone | [used-by | [b-dog | b-Azawan | b-in-order]]]
 >
 > "Azawan's dog's bone."
 

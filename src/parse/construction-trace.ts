@@ -2,6 +2,7 @@ import type { CstElement, CstNode, IToken } from "chevrotain";
 
 import { classifyTokenBranch, isLexWordPayload, type TokenPayload } from "./tokens.js";
 import { POLAR_GROUP, RESTRICTOR_GROUP, type JoinSeries } from "./constructions.js";
+import { forcePairKind, isDigitless } from "./series.js";
 import { numberMarkerIdentity } from "./resolve.js";
 import type { Clause, LexWord, NumberStem, ParseResult, ResolveInfo } from "./types.js";
 
@@ -42,7 +43,7 @@ function digitlessExpClass(stem: NumberStem, exp: string): string {
 /** `number.*` features of one stem (numbers.md lessons). */
 function numberFeatures(stem: NumberStem): string[] {
   const ids = [`number.marker.${numberMarkerIdentity(stem.marker)}`];
-  if (stem.groups.length === 0 && !stem.digitlessExp) ids.push("number.digitless");
+  if (isDigitless(stem)) ids.push("number.digitless");
   if (stem.groups.length > 1) ids.push("number.groups");
   if (stem.calendarOrdinal) ids.push("number.calendar");
   if (stem.digitlessExp) ids.push(`number.exp.${digitlessExpClass(stem, stem.digitlessExp)}`);
@@ -118,12 +119,24 @@ function addToken(token: IToken, out: Set<string>): void {
   for (const id of wordConstructions(payload)) out.add(id);
 }
 
+const NP_LEVELS = ["z", "d", "b"] as const;
+
+/** A noun-phrase list is one rule at three levels; its trace names carry the level (`zCoord.zCoordPart`), because each level is taught in its own section. */
+function levelName(name: string, level: string | undefined): string {
+  if (!level) return name;
+  if (name === "npCoord") return `${level}Coord`;
+  if (name === "npCoordPart") return `${level}CoordPart`;
+  return name;
+}
+
 /** Collect `sentence.*` / `token.*` / `word.*` IDs from one sentence CST. */
-export function addCstConstructions(node: CstNode, out: Set<string>): void {
+export function addCstConstructions(node: CstNode, out: Set<string>, level?: string): void {
   for (const [key, elements] of Object.entries(node.children)) {
-    out.add(`sentence.${node.name}.${key}`);
+    out.add(`sentence.${levelName(node.name, level)}.${levelName(key, level)}`);
+    // `unit` labels its noun-phrase list by level (`zCoord` / `dCoord` / `bCoord`).
+    const childLevel = node.name === "unit" && /^[zdb]Coord$/.test(key) ? key[0] : level;
     for (const element of elements) {
-      if (isCstNode(element)) addCstConstructions(element, out);
+      if (isCstNode(element)) addCstConstructions(element, out, childLevel);
       else addToken(element, out);
     }
   }
@@ -144,11 +157,16 @@ export function sentenceGrammarKeys(grammar: Record<string, { definition: unknow
   const walk = (rule: string, defs: GastNode[]): void => {
     for (const def of defs) {
       const kind = def.constructor.name;
+      const add = (key: string): void => {
+        if (rule === "npCoord" || rule === "npCoordPart") {
+          for (const level of NP_LEVELS) keys.add(`sentence.${levelName(rule, level)}.${levelName(key, level)}`);
+        } else keys.add(`sentence.${rule}.${key}`);
+      };
       if (kind === "NonTerminal") {
-        keys.add(`sentence.${rule}.${def.label ?? def.nonTerminalName}`);
+        add(def.label ?? def.nonTerminalName!);
         continue; // its definition is the referenced rule, walked on its own
       }
-      if (kind === "Terminal") keys.add(`sentence.${rule}.${def.label ?? def.terminalType!.name}`);
+      if (kind === "Terminal") add(def.label ?? def.terminalType!.name);
       if (def.definition) walk(rule, def.definition);
     }
   };
@@ -184,16 +202,15 @@ function isExistence(clause: Clause): boolean {
   );
   // A shared /ɡ/ after a join (`zazawan zalahen zal gamadam` *both are challenging*) describes every member.
   const sharedG =
-    !universal && first.coord.parts.some((part) => part.join && part.shared.some((item) => !("raw" in item) && item.word.pos === "g"));
+    !universal && first.coord.parts.some((part) => part.join && part.shared.some((item) => item.word.pos === "g"));
   const described =
     sharedG ||
     rest.some((unit) => unit.kind === "predicate" || unit.kind === "gCoord") ||
     heads.some((pkg) => pkg.adjs.length > 0);
   // A name, a resume, or a noun anchored by used-by `em` + `/b/` is known, so a /ɡ/ word is a property claim.
-  const anchored = rest.some((unit, i) => {
-    const next = rest[i + 1];
-    return unit.kind === "hook" && unit.word.raw === "em" && next?.kind === "np" && next.coord.level === "b";
-  });
+  // The `em` pair anchors the first noun only when it sits right after it (past the noun's own adjectives).
+  const afterAdjs = rest.find((unit) => unit.kind !== "predicate" && unit.kind !== "gCoord");
+  const anchored = afterAdjs?.kind === "hook" && afterAdjs.job === "genitive";
   const known = universal || anchored || heads.some((pkg) => pkg.head.ending === "n" || pkg.head.ending === "r");
   if (described && known) return false;
   return rest.every(
@@ -206,6 +223,9 @@ export function addReadingConstructions(result: ParseResult, out: Set<string>): 
   for (const utterance of result.utterances) {
     const force = utterance.left.force?.raw;
     if (utterance.bodies.length === 0 && (force === "yol" || force === "yom")) out.add("reading.bareQuestion");
+    const pair = forcePairKind(utterance.left.leadForce, utterance.left.force);
+    if (pair === "emphatic") out.add("reading.emphaticProhibition");
+    if (pair === "rhetorical") out.add("reading.rhetoricalQuestion");
     for (const body of utterance.bodies) {
       if (isGreeting(body.clause)) out.add("reading.greeting");
       else if (isExistence(body.clause)) out.add("reading.existence");

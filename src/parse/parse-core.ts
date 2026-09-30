@@ -7,42 +7,7 @@ import { resolve } from "./resolve.js";
 import { addCstConstructions, addReadingConstructions, addResolveConstructions } from "./construction-trace.js";
 import { parseSentenceTokensWithCst } from "./sentence-parser.js";
 import { tokenizeUtterance } from "./tokenize.js";
-import { Bang, Force, Period, Polar, QMark, Hook, Vocative } from "./tokens.js";
 import type { ParseOptions, ParseResult } from "./types.js";
-
-function isLeftEdgeStart(token: IToken): boolean {
-  return (
-    token.tokenType === Polar ||
-    token.tokenType === Force ||
-    token.tokenType === Vocative ||
-    token.tokenType === Hook
-  );
-}
-
-function splitUtteranceGroups(tokens: IToken[]): IToken[][] {
-  const groups: IToken[][] = [];
-  let current: IToken[] = [];
-
-  for (let i = 0; i < tokens.length; i++) {
-    const tok = tokens[i]!;
-    current.push(tok);
-
-    const isBoundary =
-      tok.tokenType === Period ||
-      tok.tokenType === QMark ||
-      tok.tokenType === Bang;
-    if (!isBoundary) continue;
-
-    const next = tokens[i + 1];
-    if (next && isLeftEdgeStart(next)) {
-      groups.push(current);
-      current = [];
-    }
-  }
-
-  if (current.length > 0) groups.push(current);
-  return groups.length > 0 ? groups : [[]];
-}
 
 /** End-to-end parse with caller-supplied lexicon tables (browser-safe). */
 export function parseWithTables(
@@ -53,15 +18,14 @@ export function parseWithTables(
   const toned = enforceTones(tokenizeUtterance(text, tables));
   const tokens = toned.tokens;
   enforceTokens(tokens, tables);
-  const groups = splitUtteranceGroups(tokens);
 
   const constructions = options.constructions ? new Set<string>(toned.constructions) : undefined;
-  const utterances = groups.flatMap((group) => {
-    if (group.length === 0) return [];
-    const { result, cst } = parseSentenceTokensWithCst(group);
+  let utterances: ParseResult["utterances"] = [];
+  if (tokens.length > 0) {
+    const { result, cst } = parseSentenceTokensWithCst(tokens);
     if (constructions) addCstConstructions(cst, constructions);
-    return result.utterances;
-  });
+    utterances = result.utterances;
+  }
 
   let result = resolve({ utterances });
   enforceResult(result, tables);

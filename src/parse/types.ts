@@ -132,13 +132,8 @@ export type LexReading =
   | "ability"
   | "greeting"
   | "restrictor"
-  | "mood"
-  | "locative"
-  | "similative"
-  | "ofRelation"
-  | "exchange"
-  | "proxy"
-  | "stimulus"
+  /** Any closed overlay row that is not a join-series form, sake or ability; read `word.overlay.kind`. */
+  | "overlay"
   | "join"
   | "standIn"
   | "standInNamed"
@@ -168,6 +163,8 @@ export type RootGloss = {
  * Stage-2 classified word (morph structure + lexicon readings).
  */
 export type LexWord = MorphWord & {
+  /** Position among the words of the parsed text (surface order). Set by `classifyAll`. */
+  at?: number;
   overlay?: LexOverlay;
   /** Sake / hostless-ability row whose host this `x` sake or ability word spells (`thonogothem`). */
   hostOverlay?: LexOverlay;
@@ -193,6 +190,8 @@ export type LexWord = MorphWord & {
 
 // ── Stage 3 sentence AST ────────────────────────────────────────────────────
 
+import type { HookJob } from "./hook-jobs.js";
+
 export type ImpliedForce = "yal" | "yam";
 
 export type PunctKind = "period" | "qmark" | "bang";
@@ -204,10 +203,8 @@ export type LeftEdge = {
   hook?: LexWord;
   /** `/w/` immediately before a left-edge hook. */
   hookModifiers?: LexWord[];
-  /** Emphatic repeat of **`yul`** before the act word. */
-  forceEcho?: LexWord;
-  /** Rhetorical question: asserted **`yal`** / **`yam`** before the ask word. */
-  rhetoricalAnswer?: LexWord;
+  /** Act word leading `force`: an emphatic **`yul`** repeat, or the asserted **`yal`** / **`yam`** of a rhetorical question ([FORCE_PAIRS](./series.ts)). */
+  leadForce?: LexWord;
   force?: LexWord;
   impliedForce?: ImpliedForce;
 };
@@ -215,12 +212,23 @@ export type LeftEdge = {
 /** The hosted `/b/` slot filled by a join: later members and the closing `/b/` join word. */
 export type BoundJoin = { members: LexWord[]; join: LexWord };
 
+/**
+ * The hosted `/b/` slot of a host word (`/ɡ/`, `/h/`, a `tho` verb, a hook on a join item):
+ * the `/b/` itself, a join filling the slot, a measure amount, and the adjectives that describe
+ * the landmark (clause.md § Complex chaining).
+ */
+export type Hosted = {
+  bound: LexWord;
+  boundJoin?: BoundJoin;
+  /** Number word right after the hosted `/b/` (measure amount, e.g. a signed time offset). */
+  amount?: LexWord;
+  /** Plain adjectives after the hosted pair describe the landmark, not the host's noun. */
+  adjs?: GPackage[];
+};
+
 export type GPackage = {
   word: LexWord;
-  bound?: LexWord;
-  boundJoin?: BoundJoin;
-  /** Adjectives after the hosted pair describe the extra noun (clause.md § Complex chaining). */
-  boundAdjs?: GPackage[];
+  hosted?: Hosted;
   modifiers: LexWord[];
   /** `/w/` *as-of* pair immediately before this `/ɡ/` adjective. */
   asOf?: { word: LexWord; bound?: LexWord };
@@ -247,15 +255,17 @@ export type GCoord = {
 export type HUnit = {
   word: LexWord;
   modifiers: LexWord[];
-  bound?: LexWord;
-  boundJoin?: BoundJoin;
-  /** Number word on the hosted `/b/` (measure amount, e.g. a signed time offset). */
-  boundAmount?: LexWord;
-  /** Adjectives on the hosted `/b/` landmark of an `/h/` host. */
-  boundAdjs?: GPackage[];
+  hosted?: Hosted;
 };
 
-export type CoordShared = GPackage | HUnit | LexWord;
+/**
+ * A digitless `+` number right after a rank join: the scale of the comparison, and what it ranks by
+ * its PoS: how many `/ɡ/`, how often `/h/`, how late `/b/` (comparatives.md § amount / frequency / time scale).
+ * The ordinary `/ɡ/` or `/h/` shape, tagged; a `/b/` scale has no hosted slot.
+ */
+export type ScaleShared = (GPackage | HUnit) & { kind: "scale" };
+
+export type CoordShared = GPackage | HUnit | ScaleShared;
 
 export type NpItem =
   | { kind: "package"; package: NpPackage }
@@ -274,7 +284,7 @@ export type VpCoord = {
     join?: LexWord;
     shared: CoordShared[];
     /** Hosted `/b/` right after a label-scope `tho` verb (predication.md#label-scope). */
-    hosted?: { verb: LexWord; bound: LexWord }[];
+    hostedVerbs?: { verb: LexWord; hosted: Hosted }[];
   }[];
 };
 
@@ -312,7 +322,7 @@ export type Unit =
   | { kind: "predicate"; adj: GPackage }
   | { kind: "h"; unit: HUnit }
   | { kind: "linker"; word: LexWord }
-  | { kind: "hook"; word: LexWord; modifiers: LexWord[] }
+  | { kind: "hook"; word: LexWord; modifiers: LexWord[]; job?: HookJob; /** Its `/b/` pair describes the noun or landmark on its left, not the clause. */ onLeft?: true }
   | { kind: "span"; span: SpanUnit }
   | { kind: "writingSpan"; word: LexWord }
   | { kind: "island"; island: IslandUnit }
@@ -399,7 +409,7 @@ export type SharedRole =
 export type SharedRecord = {
   join: LexWord;
   role: SharedRole;
-  shared: GPackage | HUnit;
+  shared: GPackage | HUnit | ScaleShared;
 };
 
 export type ResolveInfo = {

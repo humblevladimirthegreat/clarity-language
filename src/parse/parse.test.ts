@@ -267,7 +267,7 @@ describe("parse — hosted /w/ before /b/", () => {
     const h = units.find((u) => u.kind === "h");
     assert.ok(h && h.kind === "h");
     assert.equal(h.unit.modifiers[0]?.raw, "welavam");
-    assert.equal(h.unit.bound?.raw, "badagul");
+    assert.equal(h.unit.hosted?.bound.raw, "badagul");
   });
 
   it("parses extra-noun hook with restrictor /w/ left of the hook", () => {
@@ -346,16 +346,16 @@ describe("parse — illegal fences", () => {
     assert.ok(np.kind === "np" && np.coord.parts[0]!.items[0]!.kind === "package");
     const pkg = np.coord.parts[0]!.items[0]!.package;
     assert.equal(pkg.adjs.length, 1);
-    assert.equal(pkg.adjs[0]!.bound?.raw, "bazawan");
-    assert.equal(pkg.adjs[0]!.boundAdjs?.[0]?.word.raw, "gubuhal");
+    assert.equal(pkg.adjs[0]!.hosted?.bound.raw, "bazawan");
+    assert.equal(pkg.adjs[0]!.hosted?.adjs?.[0]?.word.raw, "gubuhal");
   });
 
   it("attaches a number word after a hosted /b/ on /th/ as its amount (signed offset)", () => {
     const result = parseText("zazawan thunom bagazem g-3 vowogal.");
     const unit = result.utterances[0]!.bodies[0]!.clause.units[1]!;
     assert.ok(unit.kind === "h");
-    assert.equal(unit.unit.bound?.raw, "bagazem");
-    assert.equal(unit.unit.boundAmount?.raw, "g-3");
+    assert.equal(unit.unit.hosted?.bound.raw, "bagazem");
+    assert.equal(unit.unit.hosted?.amount?.raw, "g-3");
   });
 });
 
@@ -365,7 +365,7 @@ describe("parse — as-of poles", () => {
     const h = result.utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "henem");
     assert.ok(h && h.kind === "h");
     assert.equal(h.unit.word.overlay?.gloss, "as-of.ledger");
-    assert.equal(h.unit.bound?.raw, "b_#22,7");
+    assert.equal(h.unit.hosted?.bound.raw, "b_#22,7");
   });
 
   it("parses stance as-of on /th/ beside a clause as-of on /h/", () => {
@@ -373,7 +373,7 @@ describe("parse — as-of poles", () => {
     const th = units.find((u) => u.kind === "h" && u.unit.word.raw === "thenem");
     assert.ok(th && th.kind === "h");
     assert.equal(th.unit.word.overlay?.gloss, "as-of.ledger");
-    assert.equal(th.unit.bound?.raw, "b_#22,7");
+    assert.equal(th.unit.hosted?.bound.raw, "b_#22,7");
   });
 
   it("parses a fault pole hosting a stand-in, stacked after only-if", () => {
@@ -386,7 +386,7 @@ describe("parse — as-of poles", () => {
     const h = result.utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "h");
     assert.ok(h && h.kind === "h");
     assert.equal(h.unit.word.raw, "hener");
-    assert.equal(h.unit.bound, undefined);
+    assert.equal(h.unit.hosted, undefined);
   });
 
   it("rejects as-of resume plus /b/", () => {
@@ -404,7 +404,7 @@ describe("parse — as-of poles", () => {
     const np = units.find((u) => u.kind === "np");
     if (pred?.kind === "predicate") {
       assert.equal(pred.adj.word.raw, "genem");
-      assert.equal(pred.adj.bound?.raw, "b_#22,7");
+      assert.equal(pred.adj.hosted?.bound.raw, "b_#22,7");
       return;
     }
     assert.ok(np && np.kind === "np");
@@ -413,7 +413,7 @@ describe("parse — as-of poles", () => {
     if (item?.kind !== "package") return;
     const g = item.package.adjs[0];
     assert.equal(g?.word.raw, "genem");
-    assert.equal(g?.bound?.raw, "b_#22,7");
+    assert.equal(g?.hosted?.bound.raw, "b_#22,7");
   });
 
   it("parses /w/ as-of before a shared adjective", () => {
@@ -433,7 +433,7 @@ describe("parse — as-of poles", () => {
     assert.ok(clause.dependent);
     const h = clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "humem");
     assert.ok(h && h.kind === "h");
-    assert.equal(h.unit.bound?.raw, "barl");
+    assert.equal(h.unit.hosted?.bound.raw, "barl");
   });
 
   it("parses channel plus residue plus as-of", () => {
@@ -453,14 +453,14 @@ describe("parse — as-of poles", () => {
     const result = parseText("zamol thamom henem badebam.");
     const h = result.utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "henem");
     assert.ok(h && h.kind === "h");
-    assert.equal(h.unit.bound?.raw, "badebam");
+    assert.equal(h.unit.hosted?.bound.raw, "badebam");
   });
 
   it("parses extra-noun resume in as-of /b/", () => {
     const result = parseText("zalahen vowogal ol b_#22,7. xalahen thamom henem b=_#22,7 vadebam.");
     const second = result.utterances[0]!.bodies[1]!.clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "henem");
     assert.ok(second && second.kind === "h");
-    assert.equal(second.unit.bound?.raw, "b=_#22,7");
+    assert.equal(second.unit.hosted?.bound.raw, "b=_#22,7");
   });
 
   it("parses /w/ as-of resume immediately before the adjective", () => {

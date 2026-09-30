@@ -26,6 +26,11 @@ const tables = createClassifyTables(
 type Row = { invalid: string; rejection: RejectionId | undefined; valid: string };
 
 const ROWS: Row[] = [
+  { invalid: "yel yol zazawan vowogal.", rejection: "forcePair", valid: "yal yol zazawan vowogal." },
+  { invalid: "yal yal zazawan vowogal.", rejection: "forcePair", valid: "yal zazawan vowogal." },
+  { invalid: "zazawan vowogal em bamegun.", rejection: "genitiveHost", valid: "zazawan vowogal bazar em bamegun." },
+  { invalid: "zazawan vowogal thodom em bamegun.", rejection: "genitiveHost", valid: "zazawan zodogal em bamegun vowogal." },
+  { invalid: "em bamegun vowogal.", rejection: "genitiveHost", valid: "zazawan vowogal." },
   { invalid: "zazawan vowogal?", rejection: "sentenceEndMark", valid: "zazawan vowogal." },
   { invalid: "yel vahawal!", rejection: "sentenceEndMark", valid: "yel vahawal." },
   { invalid: "zazawan !?vowogal.", rejection: "toneStack", valid: "zazawan ?!vowogal." },
@@ -130,8 +135,8 @@ const ROWS: Row[] = [
     rejection: "joinDetail",
     valid: "zazawan zalahen zal vahahal dagadal dodogal wazagum dal.",
   },
-  // Grammar-level: a second turn starts only after a period.
-  { invalid: "yol yol vezevul.", rejection: undefined, valid: "yol. yol vezevul." },
+  // A second turn starts only after a period; only the legal force pairs stack.
+  { invalid: "yol yol vezevul.", rejection: "forcePair", valid: "yol. yol vezevul." },
 ];
 
 describe("invalid forms", () => {

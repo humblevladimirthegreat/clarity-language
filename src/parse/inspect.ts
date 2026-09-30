@@ -1,29 +1,18 @@
 import { classify, type ClassifyTables } from "./classify.js";
 import { morphGlossBrackets, senseLabel } from "./morph-gloss.js";
 import type { WordBrackets } from "./gloss-structure.js";
+import { visitResult, type Visitor } from "./ast-walk.js";
 import { parseWithTables } from "./parse-core.js";
 import { SentenceParseError } from "./sentence-parser.js";
 import type {
   AnaphorBind,
-  Clause,
-  CoordShared,
   Ending,
-  GCoord,
-  GPackage,
-  IslandUnit,
   LexWord,
   MorphWordFamily,
-  NpCoord,
-  NpItem,
   ParseResult,
   PunctKind,
   SharedRecord,
   SharedRole,
-  SpanUnit,
-  Unit,
-  Utterance,
-  VpCoord,
-  BoundJoin,
 } from "./types.js";
 import { parseWord, WordParseError } from "./word.js";
 
@@ -421,30 +410,18 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   if (family.kind === "number" || word.reading === "number") {
     return { line: "number stem", href: "numbers.html" };
   }
-  if (word.reading === "mood") {
+  if (word.reading === "overlay") {
     const kind = word.overlay?.kind;
+    if (kind === "locative") return { line: "locative relation", href: "relations.html#locative-relations" };
+    if (kind === "of_relation") return { line: "of relation", href: "relations.html#of-relations" };
+    if (kind === "similative") return { line: "simile", href: "relations.html#similative" };
+    if (kind === "exchange") return { line: "exchange", href: "relations.html#exchange" };
+    if (kind === "proxy") return { line: "proxy", href: "relations.html#proxy" };
+    if (kind === "stimulus") return { line: "sake stimulus", href: "sakes.html#stimulus" };
     if (kind === "plan" || kind === "predict" || kind === "decision" || kind === "attempt") {
       return { line: "closed mood", href: "intention.html" };
     }
     return { line: "closed mood", href: "knowing.html" };
-  }
-  if (word.reading === "locative") {
-    return { line: "locative relation", href: "relations.html#locative-relations" };
-  }
-  if (word.reading === "ofRelation") {
-    return { line: "of relation", href: "relations.html#of-relations" };
-  }
-  if (word.reading === "similative") {
-    return { line: "simile", href: "relations.html#similative" };
-  }
-  if (word.reading === "exchange") {
-    return { line: "exchange", href: "relations.html#exchange" };
-  }
-  if (word.reading === "proxy") {
-    return { line: "proxy", href: "relations.html#proxy" };
-  }
-  if (word.reading === "stimulus") {
-    return { line: "sake stimulus", href: "sakes.html#stimulus" };
   }
   if (word.reading === "joinAct" || word.reading === "joinRelation") {
     return { line: "join-series form", href: "join-across-roles.html" };
@@ -462,19 +439,24 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
 type Cursor = {
   tokens: InspectToken[];
   used: boolean[];
+  /** Word position (`LexWord.at`) to token index. */
+  byAt: Map<number, number>;
 };
 
-function takeRaw(cursor: Cursor, raw: string): number | undefined {
-  for (let i = 0; i < cursor.tokens.length; i++) {
-    if (cursor.used[i]) continue;
-    const token = cursor.tokens[i]!;
-    if (token.kind === "punct") continue;
-    if (token.raw === raw) {
-      cursor.used[i] = true;
-      return i;
-    }
-  }
-  return undefined;
+function makeCursor(tokens: InspectToken[]): Cursor {
+  const byAt = new Map<number, number>();
+  tokens.forEach((token, i) => {
+    if (token.kind === "word" && token.word.at !== undefined) byAt.set(token.word.at, i);
+  });
+  return { tokens, used: tokens.map(() => false), byAt };
+}
+
+function takeWord(cursor: Cursor, word: LexWord): number | undefined {
+  if (word.at === undefined) return undefined;
+  const i = cursor.byAt.get(word.at);
+  if (i === undefined || cursor.used[i]) return undefined;
+  cursor.used[i] = true;
+  return i;
 }
 
 function takeCaret(cursor: Cursor): number | undefined {
@@ -502,302 +484,85 @@ function joinLabel(joins: LexWord[], shared: Map<string, SharedRole>): string {
   return `join ${series}`;
 }
 
-function boundJoinWords(join: BoundJoin | undefined): LexWord[] {
-  return join ? [...join.members, join.join] : [];
-}
+type ConstructionFrame = { indices: number[]; triggers: number[]; joins: LexWord[]; open?: number; close?: number };
 
-function walkGPackage(cursor: Cursor, pack: GPackage, into: number[]) {
-  for (const mod of pack.modifiers) pushIndex(into, takeRaw(cursor, mod.raw));
-  if (pack.asOf) {
-    pushIndex(into, takeRaw(cursor, pack.asOf.word.raw));
-    if (pack.asOf.bound) pushIndex(into, takeRaw(cursor, pack.asOf.bound.raw));
-  }
-  pushIndex(into, takeRaw(cursor, pack.word.raw));
-  if (pack.bound) pushIndex(into, takeRaw(cursor, pack.bound.raw));
-  for (const w of boundJoinWords(pack.boundJoin)) pushIndex(into, takeRaw(cursor, w.raw));
-  for (const adj of pack.boundAdjs ?? []) walkGPackage(cursor, adj, into);
-}
-
-function walkShared(cursor: Cursor, shared: CoordShared[], into: number[]) {
-  for (const item of shared) {
-    if ("modifiers" in item) walkGPackage(cursor, item, into);
-    else pushIndex(into, takeRaw(cursor, item.raw));
-  }
-}
-
-function walkNpItem(cursor: Cursor, item: NpItem, constructions: InspectConstruction[], into: number[]) {
-  if (item.kind === "package") {
-    const pack = item.package;
-    if (pack.glAdj) walkGPackage(cursor, pack.glAdj, into);
-    pushIndex(into, takeRaw(cursor, pack.head.raw));
-    if (pack.adjCoord) walkGCoord(cursor, pack.adjCoord, constructions, new Map(), into);
-    else for (const adj of pack.adjs) walkGPackage(cursor, adj, into);
-    return;
-  }
-  walkIsland(cursor, item.island, constructions, into);
-}
-
-/** A joined `/ɡ/` list in surface order, recorded as one join construction like a noun list. */
-function walkGCoord(
+/** Join / span / island constructions as a handler set over the AST walk ([ast-walk.ts](./ast-walk.ts)). */
+function constructionVisitor(
   cursor: Cursor,
-  coord: GCoord,
   constructions: InspectConstruction[],
   sharedRoles: Map<string, SharedRole>,
-  into: number[],
-) {
-  const indices: number[] = [];
-  const triggers: number[] = [];
-  const joins: LexWord[] = [];
-  for (const part of coord.parts) {
-    for (const item of part.items) {
-      if (item.kind === "adj") walkGPackage(cursor, item.adj, indices);
-      else walkIsland(cursor, item.island, constructions, indices);
-    }
-    if (part.join) {
-      const idx = takeRaw(cursor, part.join.raw);
-      pushIndex(indices, idx);
-      pushIndex(triggers, idx);
-      joins.push(part.join);
-    }
-    walkShared(cursor, part.shared, indices);
-  }
-  if (triggers.length > 0) {
-    constructions.push({ kind: "join", label: joinLabel(joins, sharedRoles), tokenIndices: indices, triggerIndices: triggers });
-  }
-  into.push(...indices);
-}
-
-function walkNp(
-  cursor: Cursor,
-  coord: NpCoord,
-  constructions: InspectConstruction[],
-  sharedRoles: Map<string, SharedRole>,
-  into: number[],
-) {
-  const indices: number[] = [];
-  const triggers: number[] = [];
-  const joins: LexWord[] = [];
-  for (const part of coord.parts) {
-    for (const item of part.items) walkNpItem(cursor, item, constructions, indices);
-    if (part.join) {
-      const idx = takeRaw(cursor, part.join.raw);
-      pushIndex(indices, idx);
-      pushIndex(triggers, idx);
-      joins.push(part.join);
-    }
-    walkShared(cursor, part.shared, indices);
-    if (part.factor) pushIndex(indices, takeRaw(cursor, part.factor.raw));
-  }
-  if (triggers.length > 0) {
-    constructions.push({
-      kind: "join",
-      label: joinLabel(joins, sharedRoles),
-      tokenIndices: indices,
-      triggerIndices: triggers,
-    });
-  }
-  into.push(...indices);
-}
-
-function walkVp(
-  cursor: Cursor,
-  coord: VpCoord,
-  constructions: InspectConstruction[],
-  sharedRoles: Map<string, SharedRole>,
-  into: number[],
-) {
-  const indices: number[] = [];
-  const triggers: number[] = [];
-  const joins: LexWord[] = [];
-  for (const part of coord.parts) {
-    for (const item of part.items) pushIndex(indices, takeRaw(cursor, item.raw));
-    if (part.join) {
-      const idx = takeRaw(cursor, part.join.raw);
-      pushIndex(indices, idx);
-      pushIndex(triggers, idx);
-      joins.push(part.join);
-    }
-    walkShared(cursor, part.shared, indices);
-  }
-  if (triggers.length > 0) {
-    constructions.push({
-      kind: "join",
-      label: joinLabel(joins, sharedRoles),
-      tokenIndices: indices,
-      triggerIndices: triggers,
-    });
-  }
-  into.push(...indices);
-}
-
-function walkSpan(
-  cursor: Cursor,
-  span: SpanUnit,
-  constructions: InspectConstruction[],
-  sharedRoles: Map<string, SharedRole>,
-  into: number[],
-) {
-  const indices: number[] = [];
-  const open = takeRaw(cursor, span.open.raw);
-  pushIndex(indices, open);
-  for (const clause of span.content) walkClause(cursor, clause, constructions, sharedRoles, indices);
-  if (span.atom) pushIndex(indices, takeRaw(cursor, span.atom.raw));
-  const close = span.close ? takeRaw(cursor, span.close.raw) : undefined;
-  pushIndex(indices, close);
-  constructions.push({
-    kind: "span",
-    label: "span fence",
-    tokenIndices: indices,
-    triggerIndices: [open, close].filter((i): i is number => i !== undefined),
-  });
-  into.push(...indices);
-}
-
-function walkIsland(
-  cursor: Cursor,
-  island: IslandUnit,
-  constructions: InspectConstruction[],
-  into: number[],
-  sharedRoles: Map<string, SharedRole> = new Map(),
-) {
-  const indices: number[] = [];
-  const start = takeCaret(cursor);
-  pushIndex(indices, start);
-  for (const unit of island.units) walkUnit(cursor, unit, constructions, sharedRoles, indices);
-  const end = takeCaret(cursor);
-  pushIndex(indices, end);
-  constructions.push({
-    kind: "island",
-    label: "adjunct island",
-    tokenIndices: indices,
-    triggerIndices: [start, end].filter((i): i is number => i !== undefined),
-  });
-  into.push(...indices);
-}
-
-function walkUnit(
-  cursor: Cursor,
-  unit: Unit,
-  constructions: InspectConstruction[],
-  sharedRoles: Map<string, SharedRole>,
-  into: number[],
-) {
-  switch (unit.kind) {
-    case "np":
-      walkNp(cursor, unit.coord, constructions, sharedRoles, into);
-      break;
-    case "vp":
-      walkVp(cursor, unit.coord, constructions, sharedRoles, into);
-      break;
-    case "predicate":
-      walkGPackage(cursor, unit.adj, into);
-      break;
-    case "gCoord":
-      walkGCoord(cursor, unit.coord, constructions, sharedRoles, into);
-      break;
-    case "h":
-      for (const mod of unit.unit.modifiers) pushIndex(into, takeRaw(cursor, mod.raw));
-      pushIndex(into, takeRaw(cursor, unit.unit.word.raw));
-      if (unit.unit.bound) pushIndex(into, takeRaw(cursor, unit.unit.bound.raw));
-      for (const w of boundJoinWords(unit.unit.boundJoin)) pushIndex(into, takeRaw(cursor, w.raw));
-      if (unit.unit.boundAmount) pushIndex(into, takeRaw(cursor, unit.unit.boundAmount.raw));
-      for (const adj of unit.unit.boundAdjs ?? []) walkGPackage(cursor, adj, into);
-      break;
-    case "linker":
-    case "writingSpan":
-      pushIndex(into, takeRaw(cursor, unit.word.raw));
-      break;
-    case "hook":
-      for (const mod of unit.modifiers) pushIndex(into, takeRaw(cursor, mod.raw));
-      pushIndex(into, takeRaw(cursor, unit.word.raw));
-      break;
-    case "span":
-      walkSpan(cursor, unit.span, constructions, sharedRoles, into);
-      break;
-    case "island":
-      walkIsland(cursor, unit.island, constructions, into, sharedRoles);
-      break;
-    case "clauseCoord": {
-      const indices: number[] = [];
-      const triggers: number[] = [];
-      const joins: LexWord[] = [];
-      if (unit.coord.first) walkClause(cursor, unit.coord.first, constructions, sharedRoles, indices);
-      for (const link of unit.coord.links) {
-        const idx = takeRaw(cursor, link.join.raw);
-        pushIndex(indices, idx);
-        pushIndex(triggers, idx);
-        joins.push(link.join);
-        if (link.clause) walkClause(cursor, link.clause, constructions, sharedRoles, indices);
+): Visitor {
+  const newFrame = (): ConstructionFrame => ({ indices: [], triggers: [], joins: [] });
+  const stack: ConstructionFrame[] = [newFrame()];
+  const top = () => stack[stack.length - 1]!;
+  const close = (): ConstructionFrame => {
+    const frame = stack.pop()!;
+    top().indices.push(...frame.indices);
+    return frame;
+  };
+  return {
+    word(word, slot) {
+      const idx = takeWord(cursor, word);
+      pushIndex(top().indices, idx);
+      if (slot === "spanOpen") top().open = idx;
+      if (slot === "spanClose") top().close = idx;
+    },
+    join(join) {
+      const idx = takeWord(cursor, join);
+      pushIndex(top().indices, idx);
+      pushIndex(top().triggers, idx);
+      top().joins.push(join);
+    },
+    enter(node) {
+      if (node.kind === "np" || node.kind === "g" || node.kind === "vp" || node.kind === "clauseCoord" || node.kind === "span") {
+        stack.push(newFrame());
       }
-      if (triggers.length > 0) {
+      if (node.kind === "island") {
+        stack.push(newFrame());
+        const start = takeCaret(cursor);
+        pushIndex(top().indices, start);
+        top().open = start;
+      }
+    },
+    exit(node) {
+      if (node.kind === "np" || node.kind === "g" || node.kind === "vp" || node.kind === "clauseCoord") {
+        const frame = close();
+        if (frame.triggers.length > 0) {
+          constructions.push({
+            kind: "join",
+            label: joinLabel(frame.joins, sharedRoles),
+            tokenIndices: frame.indices,
+            triggerIndices: frame.triggers,
+          });
+        }
+      } else if (node.kind === "span") {
+        const frame = close();
         constructions.push({
-          kind: "join",
-          label: joinLabel(joins, sharedRoles),
-          tokenIndices: indices,
-          triggerIndices: triggers,
+          kind: "span",
+          label: "span fence",
+          tokenIndices: frame.indices,
+          triggerIndices: [frame.open, frame.close].filter((i): i is number => i !== undefined),
+        });
+      } else if (node.kind === "island") {
+        const end = takeCaret(cursor);
+        pushIndex(top().indices, end);
+        top().close = end;
+        const frame = close();
+        constructions.push({
+          kind: "island",
+          label: "adjunct island",
+          tokenIndices: frame.indices,
+          triggerIndices: [frame.open, frame.close].filter((i): i is number => i !== undefined),
         });
       }
-      into.push(...indices);
-      break;
-    }
-    default:
-      break;
-  }
+    },
+  };
 }
 
-function walkClause(
-  cursor: Cursor,
-  clause: Clause,
-  constructions: InspectConstruction[],
-  sharedRoles: Map<string, SharedRole>,
-  into: number[],
-) {
-  for (const unit of clause.units) walkUnit(cursor, unit, constructions, sharedRoles, into);
-  if (clause.dependent) {
-    pushIndex(into, takeRaw(cursor, clause.dependent.orodo.raw));
-    walkClause(cursor, clause.dependent.clause, constructions, sharedRoles, into);
-  }
-}
-
-function walkUtterance(
-  cursor: Cursor,
-  utterance: Utterance,
-  constructions: InspectConstruction[],
-  sharedRoles: Map<string, SharedRole>,
-) {
-  const left = utterance.left;
-  for (const voc of left.vocatives) takeRaw(cursor, voc.raw);
-  for (const polar of left.polars) takeRaw(cursor, polar.raw);
-  for (const mod of left.hookModifiers ?? []) takeRaw(cursor, mod.raw);
-  if (left.hook) takeRaw(cursor, left.hook.raw);
-  if (left.forceEcho) takeRaw(cursor, left.forceEcho.raw);
-  if (left.rhetoricalAnswer) takeRaw(cursor, left.rhetoricalAnswer.raw);
-  if (left.force) takeRaw(cursor, left.force.raw);
-  const sink: number[] = [];
-  for (const body of utterance.bodies) {
-    if (body.linker) takeRaw(cursor, body.linker.raw);
-    walkClause(cursor, body.clause, constructions, sharedRoles, sink);
-  }
-}
-
-function findWordIndex(tokens: InspectToken[], raw: string, before?: number): number | undefined {
-  let found: number | undefined;
-  const limit = before ?? tokens.length;
-  for (let i = 0; i < limit; i++) {
-    const token = tokens[i]!;
-    if (token.kind === "word" && token.raw === raw) found = i;
-  }
-  return found;
-}
-
-function findPronounIndex(tokens: InspectToken[], bind: AnaphorBind): number | undefined {
-  for (let i = 0; i < tokens.length; i++) {
-    const token = tokens[i]!;
-    if (token.kind === "word" && token.raw === bind.pronoun.raw && token.word.ending === "r") {
-      return i;
-    }
-  }
-  return undefined;
+function findWordIndex(tokens: InspectToken[], word: LexWord): number | undefined {
+  if (word.at === undefined) return undefined;
+  const i = tokens.findIndex((token) => token.kind === "word" && token.word.at === word.at);
+  return i < 0 ? undefined : i;
 }
 
 function addRelated(token: InspectWordToken, item: InspectRelated) {
@@ -814,7 +579,7 @@ function attachRelated(
   anaphors: AnaphorBind[],
 ) {
   for (const bind of anaphors) {
-    const pronounIdx = findPronounIndex(tokens, bind);
+    const pronounIdx = findWordIndex(tokens, bind.pronoun);
     if (pronounIdx === undefined) continue;
     const token = tokens[pronounIdx];
     if (token?.kind !== "word") continue;
@@ -822,7 +587,7 @@ function attachRelated(
       addRelated(token, { label: "no prior match", raw: "—", tokenIndex: pronounIdx });
       continue;
     }
-    const antIdx = findWordIndex(tokens, bind.antecedent.raw, pronounIdx);
+    const antIdx = findWordIndex(tokens, bind.antecedent);
     if (antIdx === undefined) continue;
     addRelated(token, { label: "antecedent", raw: bind.antecedent.raw, tokenIndex: antIdx });
     const ant = tokens[antIdx];
@@ -879,10 +644,7 @@ function constructionsFromParse(
   const constructions: InspectConstruction[] = [];
   const sharedRoles = new Map<string, SharedRole>();
   for (const rec of parsed.resolve?.shared ?? []) sharedRoles.set(rec.join.raw, rec.role);
-  const cursor: Cursor = { tokens, used: tokens.map(() => false) };
-  for (const utterance of parsed.utterances) {
-    walkUtterance(cursor, utterance, constructions, sharedRoles);
-  }
+  visitResult(parsed, constructionVisitor(makeCursor(tokens), constructions, sharedRoles));
   return constructions;
 }
 
@@ -892,6 +654,7 @@ export function inspectText(text: string, tables: ClassifyTables): InspectResult
   const re = /\S+/g;
   let match: RegExpExecArray | null;
   let allWordsOk = true;
+  let wordCount = 0;
 
   while ((match = re.exec(text)) !== null) {
     const chunk = match[0]!;
@@ -910,7 +673,8 @@ export function inspectText(text: string, tables: ClassifyTables): InspectResult
       const start = chunkStart;
       const end = chunkStart + wordText.length;
       try {
-        const word = classify(parseWord(wordText), tables);
+        const word = { ...classify(parseWord(wordText), tables), at: wordCount };
+        wordCount += 1;
         tokens.push({
           kind: "word",
           raw: word.raw,

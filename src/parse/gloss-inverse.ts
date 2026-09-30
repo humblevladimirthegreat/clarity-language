@@ -21,9 +21,9 @@ const SERIES = ["a", "o", "e", "u", "ae", "ao", "oe", "ue", "ua", "uo"];
 const JOIN_ENDINGS = ["l", "m", "n", "r", "rl", "rm", "rn", "rth"];
 const CONTEXTS: MorphGlossContext[] = [
   {},
-  { extraNounHook: true },
-  { discourseHook: true },
-  { spanHook: true },
+  { hookJob: "extraNoun" },
+  { hookJob: "discourse" },
+  { hookJob: "span" },
   { restrictorListed: true },
   { fillAsk: true },
   { dependentVerb: true },

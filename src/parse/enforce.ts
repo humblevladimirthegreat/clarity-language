@@ -14,9 +14,6 @@ import { REJECTIONS, type RejectionId } from "./constructions.js";
 import { SentenceParseError } from "./sentence-parser.js";
 import {
   Bang,
-  JoinB,
-  JoinD,
-  JoinZ,
   classifyTokenBranch,
   IslandEdge,
   isLexWordPayload,
@@ -29,6 +26,8 @@ import {
   type TokenPayload,
 } from "./tokens.js";
 import { tokenMatcher } from "chevrotain";
+import { isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, type Visitor } from "./ast-walk.js";
+import { forcePairKind, KIND_SERIES, RANK_SERIES } from "./series.js";
 import type {
   Clause,
   ClauseCoord,
@@ -61,8 +60,6 @@ const NO_PLURAL_POS = new Set(["w", "h", "th", "x"]);
 const SAKE_POS = new Set(["g", "th", "w"]);
 /** Label scope goes on content slots (predication.md#label-scope). */
 const SCOPE_POS = new Set(["g", "z", "d", "b", "v", "h"]);
-const RANK_SERIES = new Set(["e", "oe", "ue", "ae"]);
-const KIND_SERIES = new Set(["ua", "uo"]);
 
 function series(word: LexWord | undefined): string | undefined {
   return word?.family.kind === "joinMarker" ? word.family.series : undefined;
@@ -153,7 +150,6 @@ export function enforceTokens(tokens: IToken[], tables: ClassifyTables): void {
     const payload = token.payload as TokenPayload | undefined;
     if (!payload || !isLexWordPayload(payload)) return;
     enforceWord(payload, tables);
-    enforceRespectivelyToken(payload, tokens[i + 1]);
     enforceStackedHookR(payload, tokens, i);
   });
 }
@@ -175,13 +171,6 @@ function enforceStackedHookR(word: LexWord, tokens: IToken[], i: number): void {
 
 function isRespectively(word: LexWord): boolean {
   return word.overlay?.kind === "pairing";
-}
-
-/** `wazagum` sits only right before a `/z/` `/d/` `/b/` join word (joins.md § Respectively). */
-function enforceRespectivelyToken(word: LexWord, next: IToken | undefined): void {
-  if (!isRespectively(word)) return;
-  const beforeJoin = next && (next.tokenType === JoinZ || next.tokenType === JoinD || next.tokenType === JoinB);
-  if (!beforeJoin) throw new ConstructionError("joinDetail", word.raw);
 }
 
 /** A marked list is an and-list paired with another and-list of the same length (joins.md § Respectively). */
@@ -228,34 +217,21 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   }
 }
 
-function isGPackage(item: CoordShared): item is GPackage {
-  return "word" in item && (item as GPackage).word.pos === "g";
-}
-
-function isHUnit(item: CoordShared): item is HUnit {
-  return "word" in item && ((item as HUnit).word.pos === "h" || (item as HUnit).word.pos === "th");
-}
-
-/** Digitless `h+` / `h~+` after a rank join ranks by how often (comparatives.md#frequency-scale). */
-function isFrequencyScale(word: LexWord): boolean {
-  return word.family.kind === "number" && word.family.stem.marker === "+" && word.family.stem.groups.length === 0 && !word.family.stem.digitlessExp;
-}
-
 function enforceShared(join: LexWord | undefined, shared: CoordShared[]): void {
   const s = series(join);
   if (!s) return;
   for (const item of shared) {
-    if (KIND_SERIES.has(s) && isGPackage(item) && item.word.plural) {
+    if (KIND_SERIES.has(s) && isSharedGPackage(item) && item.word.plural) {
       throw new ConstructionError("pluralKindAfterUniversal", `${join!.raw} ${item.word.raw}`);
     }
-    if (RANK_SERIES.has(s) && isHUnit(item) && item.word.family.kind === "number" && !isFrequencyScale(item.word)) {
+    if (RANK_SERIES.has(s) && isSharedHUnit(item) && !isScaleShared(item) && item.word.family.kind === "number") {
       throw new ConstructionError("rankJoinNumberManner", `${join!.raw} ${item.word.raw}`);
     }
   }
 }
 
 function enforceHostedStandIn(units: Unit[], index: number, unit: HUnit): void {
-  const bound = unit.bound!;
+  const bound = unit.hosted!.bound;
   const host = unit.word;
   if (!isPole(host)) throw new ConstructionError("standInHost", `${host.raw} ${bound.raw}`);
   const s = series(bound);
@@ -264,7 +240,7 @@ function enforceHostedStandIn(units: Unit[], index: number, unit: HUnit): void {
     throw new ConstructionError(s === "u" ? "standInHostUndo" : "standInHost", `${host.raw} ${bound.raw}`);
   }
   const prev = units[index - 1];
-  if (prev?.kind === "h" && !prev.unit.bound && isPole(prev.unit.word)) {
+  if (prev?.kind === "h" && !prev.unit.hosted && isPole(prev.unit.word)) {
     const stack = `${prev.unit.word.overlay!.gloss} ${host.overlay!.gloss.replace(/^because\..*/, "because")}`;
     if (stack !== "only-if because" && stack !== "although if") {
       throw new ConstructionError("poleStack", `${prev.unit.word.raw} ${host.raw}`);
@@ -282,34 +258,79 @@ function enforceVerbless(units: Unit[]): void {
   if (has("z") && has("d") && !hasVerb(units)) throw new ConstructionError("objectNeedsVerb", "/z/ and /d/ with no /v/");
 }
 
-function enforceClause(clause: Clause): void {
-  const { units } = clause;
+/** Checks over one unit list (a clause body or an island): hosts, stand-ins, hooks, as-of counts, edges. */
+function enforceUnitList(units: Unit[]): void {
+  enforceIslandEdges(units);
+  enforceRespectively(units);
+  let hAsOf = 0;
+  let thAsOf = 0;
   units.forEach((unit, i) => {
-    if (unit.kind === "h" && unit.unit.bound && isStandIn(unit.unit.bound)) enforceHostedStandIn(units, i, unit.unit);
-    if (unit.kind === "np" || unit.kind === "vp") {
-      for (const part of unit.coord.parts) enforceShared(part.join, part.shared);
+    if (unit.kind === "h" && unit.unit.hosted && isStandIn(unit.unit.hosted.bound)) enforceHostedStandIn(units, i, unit.unit);
+    if (unit.kind === "h" && isAsOfOverlay(unit.unit.word)) {
+      if (unit.unit.word.pos === "th") thAsOf += 1;
+      else hAsOf += 1;
     }
+    if (unit.kind === "hook" && unit.job === "stray") throw new ConstructionError("genitiveHost", unit.word.raw);
     if (unit.kind === "hook" && unit.word.ending === "r") {
       const next = units[i + 1];
       if (next?.kind === "np" && next.coord.level === "b") throw new ConstructionError("hookResumeNoun", unit.word.raw);
     }
-    if (unit.kind === "island") enforceClause({ units: unit.island.units });
-    if (unit.kind === "span") unit.span.content.forEach(enforceClause);
-    if (unit.kind === "clauseCoord") clauseCoordClauses(unit.coord).forEach(enforceClause);
   });
-  if (clause.dependent) enforceClause(clause.dependent.clause);
+  if (hAsOf > 1 || thAsOf > 1) throw new ConstructionError("asOfPerHost", "two as-of pairs");
+}
+
+/** The AST checks as one handler set over the walk ([ast-walk.ts](./ast-walk.ts)). */
+function structureVisitor(): Visitor {
+  return {
+    // *Respectively* (`wazagum`) sits only right before a `/z/` `/d/` `/b/` join word (joins.md § Respectively).
+    word(word, slot) {
+      if (isRespectively(word) && slot !== "joinModifier") throw new ConstructionError("joinDetail", word.raw);
+    },
+    join(join, site) {
+      if (site.kind === "np") enforceShared(join, site.coord.parts[site.index]!.shared);
+      if (site.kind === "vp") enforceShared(join, site.coord.parts[site.index]!.shared);
+    },
+    enter(node) {
+      switch (node.kind) {
+        case "body":
+          enforceVerbless(node.body.clause.units);
+          return;
+        case "clause":
+          enforceUnitList(node.clause.units);
+          return;
+        case "island":
+          enforceIsland(node.island);
+          return;
+        case "np":
+        case "g":
+        case "vp":
+          enforceLeadingFence(node.coord.parts as { items: unknown[]; join?: LexWord }[], (part) => part.items.length === 0);
+          return;
+        case "gPackage":
+          enforceAsOfWord(node.pkg.word, node.pkg.hosted?.bound);
+          if (node.pkg.asOf) enforceAsOfWord(node.pkg.asOf.word, node.pkg.asOf.bound);
+          return;
+        case "hUnit":
+          enforceAsOfWord(node.unit.word, node.unit.hosted?.bound);
+          return;
+        case "clauseCoord": {
+          const last = node.coord.links.at(-1);
+          if (node.coord.first && last && !last.clause) throw new ConstructionError("clauseSingleItem", last.join.raw);
+          return;
+        }
+      }
+    },
+  };
 }
 
 /** Clause- and discourse-level checks on a parsed and resolved result. */
 export function enforceResult(result: ParseResult, tables: ClassifyTables): void {
-  for (const utterance of result.utterances) {
-    for (const body of utterance.bodies) {
-      enforceStructure(body.clause.units);
-      if (body.clause.dependent) enforceStructure(body.clause.dependent.clause.units);
-      enforceClause(body.clause);
-      enforceVerbless(body.clause.units);
+  for (const { left } of result.utterances) {
+    if (left.leadForce && !forcePairKind(left.leadForce, left.force)) {
+      throw new ConstructionError("forcePair", `${left.leadForce.raw} ${left.force?.raw ?? ""}`.trim());
     }
   }
+  visitResult(result, structureVisitor());
   for (const bind of result.resolve?.anaphors ?? []) {
     if (bind.antecedent) continue;
     if (bind.kind === "number") throw new ConstructionError("numberResumeUnbound", bind.pronoun.raw);
@@ -359,19 +380,19 @@ function enforceIsland(island: IslandUnit): void {
   const slots = new Set(island.units.map(islandSlot).filter((slot) => slot !== undefined));
   if (slots.size === 0) throw new ConstructionError("islandSlotRole", "^ … ^");
   if (slots.size > 1) throw new ConstructionError("islandOneSlot", `^ … ^ (${[...slots].join(" + ")})`);
-  enforceStructure(island.units);
+  enforceUnitList(island.units);
 }
 
 /** A host with no `/b/` of its own, cut off by an island edge from the `/b/` on the other side. */
 function isOpenHost(unit: Unit | undefined): boolean {
-  if (unit?.kind === "predicate") return !unit.adj.bound && unit.adj.word.family.kind !== "joinMarker";
-  if (unit?.kind === "h") return !unit.unit.bound && unit.unit.word.family.kind !== "joinMarker";
+  if (unit?.kind === "predicate") return !unit.adj.hosted && unit.adj.word.family.kind !== "joinMarker";
+  if (unit?.kind === "h") return !unit.unit.hosted && unit.unit.word.family.kind !== "joinMarker";
   // A noun's trailing adjective hosts a following `/b/` too (`zululon gonunul bazawan`).
   if (unit?.kind === "np") {
     const last = unit.coord.parts.at(-1);
     const item = last && !last.join ? last.items.at(-1) : undefined;
     const adj = item?.kind === "package" ? item.package.adjs.at(-1) : undefined;
-    return Boolean(adj && !adj.bound && adj.word.family.kind !== "joinMarker");
+    return Boolean(adj && !adj.hosted && adj.word.family.kind !== "joinMarker");
   }
   return false;
 }
@@ -390,13 +411,6 @@ function enforceIslandEdges(units: Unit[]): void {
   });
 }
 
-/** `A zam B zal` is legal nesting (`[[A zam] B zal]`); a join before any conjunct is a left fence (joins.md § Right-close fence). */
-function clauseCoordClauses(coord: ClauseCoord): Clause[] {
-  const out = coord.first ? [coord.first] : [];
-  for (const link of coord.links) if (link.clause) out.push(link.clause);
-  return out;
-}
-
 function enforceLeadingFence<T extends { join?: LexWord }>(parts: T[], isEmpty: (part: T) => boolean): void {
   const first = parts[0];
   if (parts.length >= 2 && first && isEmpty(first) && first.join) {
@@ -409,81 +423,4 @@ function enforceAsOfWord(word: LexWord, bound: LexWord | undefined): void {
   if (!isAsOfOverlay(word)) return;
   if (word.ending === "r" && bound) throw new ConstructionError("asOfResumeBound", `${word.raw} ${bound.raw}`);
   if (word.ending !== "r" && !bound) throw new ConstructionError("asOfIntroduceBound", word.raw);
-}
-
-function enforceGPackageAsOf(pkg: GPackage): void {
-  enforceAsOfWord(pkg.word, pkg.bound);
-  if (pkg.asOf) enforceAsOfWord(pkg.asOf.word, pkg.asOf.bound);
-  for (const adj of pkg.boundAdjs ?? []) enforceGPackageAsOf(adj);
-}
-
-function enforceSharedAsOf(shared: CoordShared[]): void {
-  for (const item of shared) {
-    if ("modifiers" in item && "word" in item && !("unit" in item)) {
-      enforceGPackageAsOf(item as GPackage);
-    } else if ("word" in item && "modifiers" in item) {
-      const h = item as HUnit;
-      enforceAsOfWord(h.word, h.bound);
-    }
-  }
-}
-
-function enforceNp(coord: NpCoord): void {
-  enforceLeadingFence(coord.parts, (part) => part.items.length === 0);
-  for (const part of coord.parts) {
-    for (const item of part.items) {
-      if (item.kind === "package") {
-        if (item.package.glAdj) enforceGPackageAsOf(item.package.glAdj);
-        for (const adj of item.package.adjs) enforceGPackageAsOf(adj);
-        if (item.package.adjCoord) enforceGCoord(item.package.adjCoord);
-      }
-      if (item.kind === "island") enforceIsland(item.island);
-    }
-    enforceSharedAsOf(part.shared);
-  }
-}
-
-function enforceGCoord(coord: GCoord): void {
-  enforceLeadingFence(coord.parts, (part) => part.items.length === 0);
-  for (const part of coord.parts) {
-    for (const item of part.items) {
-      if (item.kind === "adj") enforceGPackageAsOf(item.adj);
-      else enforceIsland(item.island);
-    }
-    enforceSharedAsOf(part.shared);
-  }
-}
-
-function enforceVp(coord: VpCoord): void {
-  enforceLeadingFence(coord.parts, (part) => part.items.length === 0);
-  for (const part of coord.parts) enforceSharedAsOf(part.shared);
-}
-
-/** Fences, scope islands, and as-of pairs (formerly the parser's post-build `validate*` pass). */
-function enforceStructure(units: Unit[]): void {
-  enforceIslandEdges(units);
-  enforceRespectively(units);
-  let hAsOf = 0;
-  let thAsOf = 0;
-  for (const unit of units) {
-    if (unit.kind === "h") {
-      enforceAsOfWord(unit.unit.word, unit.unit.bound);
-      if (isAsOfOverlay(unit.unit.word)) {
-        if (unit.unit.word.pos === "th") thAsOf += 1;
-        else hAsOf += 1;
-      }
-    }
-    if (unit.kind === "predicate") enforceGPackageAsOf(unit.adj);
-    if (unit.kind === "gCoord") enforceGCoord(unit.coord);
-    if (unit.kind === "np") enforceNp(unit.coord);
-    if (unit.kind === "vp") enforceVp(unit.coord);
-    if (unit.kind === "island") enforceIsland(unit.island);
-    if (unit.kind === "span") unit.span.content.forEach((clause) => enforceStructure(clause.units));
-    if (unit.kind === "clauseCoord") {
-      const last = unit.coord.links.at(-1);
-      if (unit.coord.first && last && !last.clause) throw new ConstructionError("clauseSingleItem", last.join.raw);
-      clauseCoordClauses(unit.coord).forEach((clause) => enforceStructure(clause.units));
-    }
-  }
-  if (hAsOf > 1 || thAsOf > 1) throw new ConstructionError("asOfPerHost", "two as-of pairs");
 }

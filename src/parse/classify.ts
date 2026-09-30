@@ -17,6 +17,7 @@ import {
 } from "./hook-compounds.js";
 import type { LexOverlay, LexReading, LexWord, MorphWord } from "./types.js";
 import { CLOSED } from "../closed-roots.js";
+import { JOIN_SERIES, resumeCut } from "./series.js";
 
 function sakeRootsFromOverlays(overlays: Iterable<OverlayRow>): Set<string> {
   const roots = new Set<string>();
@@ -138,13 +139,7 @@ function overlayReading(overlay: OverlayRow): LexReading {
   if (overlay.kind === "join_relation") return "joinRelation";
   if (overlay.kind === "ability") return "ability";
   if (overlay.kind === "sake") return "sake";
-  if (overlay.kind === "locative") return "locative";
-  if (overlay.kind === "similative") return "similative";
-  if (overlay.kind === "of_relation") return "ofRelation";
-  if (overlay.kind === "exchange") return "exchange";
-  if (overlay.kind === "proxy") return "proxy";
-  if (overlay.kind === "stimulus") return "stimulus";
-  return "mood";
+  return "overlay";
 }
 
 export function isAsOfOverlay(word: { overlay?: { kind: string; gloss: string } }): boolean {
@@ -160,20 +155,6 @@ function isRestrictor(word: MorphWord): boolean {
   return RESTRICTOR_CORE.has(family.series + ending);
 }
 
-/** Join series English jobs — [joins.md](docs/grammar/joins.md) beginner set/rank tables. */
-const JOIN_SERIES_GLOSS: Record<string, string> = {
-  a: "and",
-  o: "exclusive or",
-  ao: "and/or",
-  u: "not / none of",
-  ua: "everything but",
-  uo: "anything but",
-  e: "rank",
-  ae: "equal rank",
-  oe: "sequence",
-  ue: "rank reversal",
-};
-
 const JOIN_ENDING_GLOSS: Record<string, string> = {
   l: "closed",
   m: "open",
@@ -187,42 +168,41 @@ const NAMED_STAND_IN_SERIES = new Set(["a", "o", "e", "u", "ae", "ue", "ao", "uo
 
 /** Fence-join gloss (not restrictors, join-acts, or `/y/` force/polar). */
 export function joinFenceGloss(series: string, ending: string | undefined): string {
-  const job = JOIN_SERIES_GLOSS[series] ?? `join ${series}`;
+  const job = JOIN_SERIES[series]?.english ?? `join ${series}`;
   const close = ending ? JOIN_ENDING_GLOSS[ending] : undefined;
   return close ? `${job} (${close})` : job;
 }
 
-/** Stand-in (`darl` / `barl` / …): slot filled by the following sentence — not a join fence. */
-export function isStandIn(word: MorphWord): boolean {
-  if (word.family.kind !== "joinMarker") return false;
-  if (word.pos === "x" || word.pos === "y" || word.pos === "v" || !word.pos) return false;
-  const series = word.family.series;
-  if (series !== "a" && series !== "o" && series !== "e" && series !== "u") return false;
-  return word.ending === "rl" || word.ending === "rm";
-}
+export type StandInKind = "forward" | "back" | "named";
 
-/** Backward stand-in (`darth` / `durth` / …): that same content, already said. */
-export function isBackStandIn(word: MorphWord): boolean {
-  if (word.family.kind !== "joinMarker") return false;
-  if (word.pos === "x" || word.pos === "y" || word.pos === "v" || !word.pos) return false;
-  const series = word.family.series;
-  if (series !== "a" && series !== "o" && series !== "e" && series !== "u") return false;
-  return word.ending === "rth";
-}
+const STAND_IN_SERIES = new Set(["a", "o", "e", "u"]);
 
-/** Lexicalized content names: one-vowel `-rn`, or stacked-vowel `-n`. */
-export function isNamedStandIn(word: MorphWord): boolean {
-  if (word.family.kind !== "joinMarker") return false;
-  if (word.pos === "x" || word.pos === "y" || !word.pos) return false;
+/**
+ * Which stand-in a word is, if any: forward (`darl` / `barl` / …, the slot the next sentence fills),
+ * back (`darth` / `durth` / …, that same content already said), or a lexicalized name
+ * (one-vowel `-rn`, or stacked-vowel verb `-n`).
+ */
+export function standInKind(word: MorphWord): StandInKind | undefined {
+  if (word.family.kind !== "joinMarker") return undefined;
+  if (word.pos === "x" || word.pos === "y" || !word.pos) return undefined;
   const { series } = word.family;
-  if (!NAMED_STAND_IN_SERIES.has(series)) return false;
-  return (series.length === 1 && word.ending === "rn") || (word.pos === "v" && series.length > 1 && word.ending === "n");
+  if (word.pos !== "v" && STAND_IN_SERIES.has(series)) {
+    if (word.ending === "rl" || word.ending === "rm") return "forward";
+    if (word.ending === "rth") return "back";
+  }
+  if (!NAMED_STAND_IN_SERIES.has(series)) return undefined;
+  const named = (series.length === 1 && word.ending === "rn") || (word.pos === "v" && series.length > 1 && word.ending === "n");
+  return named ? "named" : undefined;
 }
+
+export const isStandIn = (word: MorphWord): boolean => standInKind(word) === "forward";
+export const isBackStandIn = (word: MorphWord): boolean => standInKind(word) === "back";
+export const isNamedStandIn = (word: MorphWord): boolean => standInKind(word) === "named";
 
 function isFenceJoin(word: MorphWord): boolean {
   if (word.family.kind !== "joinMarker") return false;
   if (!word.pos || word.pos === "y") return false;
-  if (isStandIn(word) || isNamedStandIn(word) || isBackStandIn(word)) return false;
+  if (standInKind(word)) return false;
   return !isRestrictor(word);
 }
 
@@ -297,13 +277,7 @@ function publishedShortResumeStems(tables: ClassifyTables): Set<string> {
   if (!stems) {
     stems = new Set();
     for (const root of tables.published.keys()) {
-      let vowels = 0;
-      for (let i = 0; i < root.length; i++) {
-        if ("aeiou".includes(root[i]!) && ++vowels === 2) {
-          stems.add(root.slice(0, i + 1));
-          break;
-        }
-      }
+      stems.add(resumeCut(root));
     }
     shortResumeStemCache.set(tables, stems);
   }
@@ -526,117 +500,128 @@ export function classifiedShape(word: MorphWord, tables: ClassifyTables): MorphW
   return holderSeam(shaped, tables) ?? shaped;
 }
 
-export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
-  const tailed = tailLateral(word, tables);
-  if (tailed) return classify(tailed, tables);
-  const holder = holderSeam(word, tables);
-  if (holder) return classify(holder, tables);
-  const lateral = landmarkLateral(word);
-  if (lateral) return classify(lateral, tables);
-  const scope = labelScope(word, tables);
-  if (scope) return classify(scope, tables);
-  const senseForm = overlaySenseForm(word);
-  const pos = word.pos;
+/** One reading a word can take. `match` builds the classified word, or returns `undefined` when the rule does not apply. */
+type ClassifyRule = {
+  source: ClassifyHit["source"] | ((word: LexWord) => ClassifyHit["source"]);
+  match: (word: MorphWord, tables: ClassifyTables) => LexWord | undefined;
+};
 
-  if (senseForm && pos) {
-    const overlayRow = tables.overlays.get(overlayKey(pos, senseForm));
-    // Sake overlays register hosts for `x`+vowel sake words; the bare spelling is ordinary.
-    if (overlayRow && overlayRow.kind !== "sake") {
+/** A single content root or hook-compound shape: the words a compound lemma or hook compound can read. */
+function hookCompoundCandidate(word: MorphWord): boolean {
+  return word.family.kind === "hookCompound" || (word.family.kind === "content" && word.family.roots.length === 1);
+}
+
+/**
+ * Every reading rule, in priority order. `classify` takes the first that matches;
+ * `classifyHits` reports every match (the ambiguity checker).
+ */
+const CLASSIFY_RULES: ClassifyRule[] = [
+  {
+    source: "overlay",
+    match(word, tables) {
+      const senseForm = overlaySenseForm(word);
+      if (!senseForm || !word.pos) return undefined;
+      const row = tables.overlays.get(overlayKey(word.pos, senseForm));
+      // Sake overlays register hosts for `x`+vowel sake words; the bare spelling is ordinary.
+      if (!row || row.kind === "sake") return undefined;
+      return { ...word, overlay: overlayFromRow(row), reading: overlayReading(row) };
+    },
+  },
+  {
+    source: "number",
+    match: (word) =>
+      word.family.kind === "number" || (word.family.kind === "x" && word.family.xFamily === "numeric")
+        ? { ...word, reading: "number" }
+        : undefined,
+  },
+  {
+    source: "sake",
+    match: (word, tables) =>
+      word.family.kind === "x" && word.family.xFamily === "sake" ? { ...word, ...hostOverlay(word, tables), reading: "sake" } : undefined,
+  },
+  {
+    source: "ability",
+    match(word, tables) {
+      if (word.family.kind !== "x" || word.family.xFamily !== "ability") return undefined;
+      if (word.ending === "n" && (!word.pos || word.pos === "y")) return { ...word, reading: "greeting" };
+      return { ...word, ...hostOverlay(word, tables), reading: "ability" };
+    },
+  },
+  { source: "restrictor", match: (word) => (isRestrictor(word) ? { ...word, reading: "restrictor" } : undefined) },
+  { source: "standIn", match: (word) => (isStandIn(word) ? { ...word, reading: "standIn" } : undefined) },
+  {
+    source: "standInNamed",
+    match: (word, tables) => (isNamedStandIn(word) && !hasClosedOverlay(word, tables) ? { ...word, reading: "standInNamed" } : undefined),
+  },
+  { source: "standInBack", match: (word) => (isBackStandIn(word) ? { ...word, reading: "standInBack" } : undefined) },
+  {
+    source: "join",
+    match: (word) =>
+      isFenceJoin(word) && word.family.kind === "joinMarker"
+        ? { ...word, reading: "join", rootGloss: { concrete: joinFenceGloss(word.family.series, word.ending) } }
+        : undefined,
+  },
+  {
+    source: "compoundLemma",
+    match(word, tables) {
+      const family = word.family;
+      const row = family.kind === "content" && family.roots.length === 1 ? tables.compounds.get(family.roots[0]!) : undefined;
+      if (!row) return undefined;
       return {
         ...word,
-        overlay: overlayFromRow(overlayRow),
-        reading: overlayReading(overlayRow),
-      };
-    }
-  }
-
-  const family = word.family;
-
-  if (family.kind === "number" || (family.kind === "x" && family.xFamily === "numeric")) {
-    return { ...word, reading: "number" };
-  }
-
-  if (family.kind === "x" && family.xFamily === "sake") {
-    return { ...word, ...hostOverlay(word, tables), reading: "sake" };
-  }
-
-  if (family.kind === "x" && family.xFamily === "ability") {
-    if (word.ending === "n" && (!word.pos || word.pos === "y")) {
-      return { ...word, reading: "greeting" };
-    }
-    return { ...word, ...hostOverlay(word, tables), reading: "ability" };
-  }
-
-  if (isRestrictor(word)) {
-    return { ...word, reading: "restrictor" };
-  }
-
-  if (isStandIn(word) && word.family.kind === "joinMarker") {
-    return { ...word, reading: "standIn" };
-  }
-
-  if (isNamedStandIn(word) && !hasClosedOverlay(word, tables)) {
-    return { ...word, reading: "standInNamed" };
-  }
-
-  if (isBackStandIn(word)) {
-    return { ...word, reading: "standInBack" };
-  }
-
-  if (isFenceJoin(word) && word.family.kind === "joinMarker") {
-    return {
-      ...word,
-      reading: "join",
-      rootGloss: { concrete: joinFenceGloss(word.family.series, word.ending) },
-    };
-  }
-
-  if (family.kind === "hookCompound") {
-    const hooked = classifyHookCompound(word, tables);
-    if (hooked) return hooked;
-  }
-
-  if (family.kind === "content" && family.roots.length === 1) {
-    const compoundRow = tables.compounds.get(family.roots[0]!);
-    if (compoundRow) {
-      return {
-        ...word,
-        rootGloss: compoundLemmaGloss(compoundRow),
+        rootGloss: compoundLemmaGloss(row),
         reading: missingAbstractSense(word, tables) ? "unknown" : "ordinary",
         lexicalCompound: true,
       };
-    }
-    const hooked = classifyHookCompound(word, tables);
-    if (hooked) return hooked;
-  }
+    },
+  },
+  {
+    source: (word) => (word.lexicalCompound ? "compoundLemma" : "published"),
+    match: (word, tables) => (hookCompoundCandidate(word) ? classifyHookCompound(word, tables) : undefined),
+  },
+  {
+    source: "published",
+    match(word, tables) {
+      // A hook compound already read its left root; it is not a second published reading.
+      if (hookCompoundCandidate(word) && classifyHookCompound(word, tables)) return undefined;
+      const roots = lexiconContentRoots(word, knownLexiconRoots(tables));
+      const published = publishedGlossForRoots(tables, roots);
+      if (!published) return undefined;
+      return {
+        ...word,
+        rootGloss: published.gloss,
+        reading: published.allFound && !missingAbstractSense(word, tables) ? "ordinary" : "unknown",
+      };
+    },
+  },
+  {
+    source: "foreign",
+    match: (word) => (word.family.kind === "foreign" || word.family.kind === "writingSpan" ? { ...word, reading: "unknown" } : undefined),
+  },
+];
 
+/** A word no rule reads: a short resume of a published root, an unlisted root, or a plain word. */
+function classifyUnlisted(word: MorphWord, tables: ClassifyTables): LexWord {
+  const family = word.family;
   const roots = lexiconContentRoots(word, knownLexiconRoots(tables));
-  const published = publishedGlossForRoots(tables, roots);
-  if (published) {
-    return {
-      ...word,
-      rootGloss: published.gloss,
-      reading: published.allFound && !missingAbstractSense(word, tables) ? "ordinary" : "unknown",
-    };
-  }
-
-  if (family.kind === "foreign" || family.kind === "writingSpan") {
-    return { ...word, reading: "unknown" };
-  }
-
   // A short resume (`zodor`) cuts a published root; it reads as that root, not as an unknown word.
   if (word.ending === "r" && family.kind === "content" && roots.length === 1 && publishedShortResumeStems(tables).has(roots[0]!)) {
     return { ...word, reading: "ordinary" };
   }
-
   if (roots.length > 0) {
     const potentialCompounds = potentialCompoundsFor(word, tables);
-    return potentialCompounds
-      ? { ...word, reading: "unknown", potentialCompounds }
-      : { ...word, reading: "unknown" };
+    return potentialCompounds ? { ...word, reading: "unknown", potentialCompounds } : { ...word, reading: "unknown" };
   }
-
   return { ...word, reading: "ordinary" };
+}
+
+export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
+  const shaped = classifiedShape(word, tables);
+  for (const rule of CLASSIFY_RULES) {
+    const read = rule.match(shaped, tables);
+    if (read) return read;
+  }
+  return classifyUnlisted(shaped, tables);
 }
 
 /** Candidate lexical-compound splits for an unknown single content root. */
@@ -685,7 +670,7 @@ export function missingAbstractSense(word: MorphWord, tables: ClassifyTables): s
 }
 
 export function classifyAll(words: MorphWord[], tables: ClassifyTables): LexWord[] {
-  return words.map((word) => classify(word, tables));
+  return words.map((word, at) => ({ ...classify(word, tables), at }));
 }
 
 /** Independent classify sources that apply (ignores first-match short-circuit). */
@@ -707,80 +692,11 @@ export type ClassifyHit = {
 };
 
 export function classifyHits(word: MorphWord, tables: ClassifyTables): ClassifyHit[] {
+  const shaped = classifiedShape(word, tables);
   const hits: ClassifyHit[] = [];
-  const senseForm = overlaySenseForm(word);
-  const pos = word.pos;
-
-  if (senseForm && pos) {
-    const overlayRow = tables.overlays.get(overlayKey(pos, senseForm));
-    if (overlayRow && overlayRow.kind !== "sake") {
-      hits.push({ source: "overlay", reading: overlayReading(overlayRow) });
-    }
+  for (const rule of CLASSIFY_RULES) {
+    const read = rule.match(shaped, tables);
+    if (read) hits.push({ source: typeof rule.source === "function" ? rule.source(read) : rule.source, reading: read.reading });
   }
-
-  const family = word.family;
-
-  if (family.kind === "number" || (family.kind === "x" && family.xFamily === "numeric")) {
-    hits.push({ source: "number", reading: "number" });
-  }
-
-  if (family.kind === "x" && family.xFamily === "sake" && family.leftRoots.every((root) => tables.sakeRoots.has(root))) {
-    hits.push({ source: "sake", reading: "sake" });
-  }
-
-  if (family.kind === "x" && family.xFamily === "ability") {
-    hits.push({
-      source: "ability",
-      reading: word.ending === "n" && (!word.pos || word.pos === "y") ? "greeting" : "ability",
-    });
-  }
-
-  if (isRestrictor(word)) {
-    hits.push({ source: "restrictor", reading: "restrictor" });
-  }
-
-  if (isStandIn(word)) {
-    hits.push({ source: "standIn", reading: "standIn" });
-  }
-
-  if (isNamedStandIn(word) && !hasClosedOverlay(word, tables)) {
-    hits.push({ source: "standInNamed", reading: "standInNamed" });
-  }
-
-  if (isBackStandIn(word)) {
-    hits.push({ source: "standInBack", reading: "standInBack" });
-  }
-
-  if (isFenceJoin(word) && word.family.kind === "joinMarker") {
-    hits.push({ source: "join", reading: "join" });
-  }
-
-  let skipPublished = false;
-  if (family.kind === "hookCompound" || (family.kind === "content" && family.roots.length === 1)) {
-    if (family.kind === "content" && tables.compounds.get(family.roots[0]!)) {
-      hits.push({ source: "compoundLemma", reading: "ordinary" });
-    }
-    const hooked = classifyHookCompound(word, tables);
-    if (hooked) {
-      hits.push({
-        source: hooked.lexicalCompound ? "compoundLemma" : "published",
-        reading: "ordinary",
-      });
-      skipPublished = true;
-    }
-  }
-
-  if (!skipPublished) {
-    const roots = lexiconContentRoots(word, knownLexiconRoots(tables));
-    const published = publishedGlossForRoots(tables, roots);
-    if (published) {
-      hits.push({ source: "published", reading: published.allFound ? "ordinary" : "unknown" });
-    }
-  }
-
-  if (family.kind === "foreign" || family.kind === "writingSpan") {
-    hits.push({ source: "foreign", reading: "unknown" });
-  }
-
   return hits;
 }

@@ -431,7 +431,7 @@ A hook + `/b/` right after a **landmark** (the `/b/` of another extra, or of a h
 
 > `zazawan vowogal al bahedem om bamegun.`
 >
-> z-Azawan | v-walk | [in | b-locality] | [near | b-speaker]
+> z-Azawan | v-walk | [in | [b-locality | [near | b-speaker]]]
 >
 > "Azawan walks in the village near me."
 
@@ -498,13 +498,13 @@ English *Azawan's dog* often means the dog is in Azawan's **use**: Azawan keeps 
 
 > `zodogal em bazawan varahal.`
 >
-> z-dog | [used-by | b-Azawan] | v-run
+> [z-dog | [used-by | b-Azawan]] | v-run
 >
 > "Azawan's dog runs."
 
 > `zazawan dahazal em balahen vahahal.`
 >
-> z-Azawan | d-house | [used-by | b-Alahen] | v-see
+> z-Azawan | [d-house | [used-by | b-Alahen]] | v-see
 >
 > "Azawan sees Alahen's house." (the house Alahen lives in)
 
@@ -512,7 +512,7 @@ For *my* and *your*, put the [speaker or listener](pronouns.md#special-pronouns)
 
 > `zodogal em bamegun vezebal.`
 >
-> z-dog | [used-by | b-speaker] | v-sleep
+> [z-dog | [used-by | b-speaker]] | v-sleep
 >
 > "My dog sleeps."
 
@@ -520,7 +520,7 @@ To describe the thing, put its `/ɡ/` word **between** the noun and **`em`**. Th
 
 > `zodogal gelavam em bamegun vezebal.`
 >
-> [z-dog | g-big] | [used-by | b-speaker] | v-sleep
+> [z-dog | g-big | [used-by | b-speaker]] | v-sleep
 >
 > "My big dog sleeps."
 
@@ -528,7 +528,7 @@ With no verb, the same order is a sentence. A noun marked with `em` is one the l
 
 > `zodogal gelavam em bamegun.`
 >
-> [z-dog | g-big] | [used-by | b-speaker]
+> [z-dog | g-big | [used-by | b-speaker]]
 >
 > "My dog is big."
 
@@ -956,7 +956,7 @@ anyway | z-Alahen | v-tell
 ::: details Show answer
 `zazawan dabehel em balahen varadal.`
 
-z-Azawan | d-page | [used-by | b-Alahen] | v-write
+z-Azawan | [d-page | [used-by | b-Alahen]] | v-write
 :::
 
 **12.** *Alahen's camera is red.*
@@ -964,7 +964,7 @@ z-Azawan | d-page | [used-by | b-Alahen] | v-write
 ::: details Show answer
 `zagahol geredal em balahen.`
 
-[z-camera | g-red] | [used-by | b-Alahen]
+[z-camera | g-red | [used-by | b-Alahen]]
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
@@ -1054,7 +1054,7 @@ z-newspaper | v-tell . for.example | z-Ahaben | v-tell
 
 ::: details Show answer
 
-[z-newspaper | g-red] | [used-by | b-Azawan]
+[z-newspaper | g-red | [used-by | b-Azawan]]
 
 *Azawan's newspaper is red.*
 :::

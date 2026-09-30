@@ -438,9 +438,16 @@ describe("compareMorphGloss", () => {
   });
 
   it("a hook + /b/ after a landmark describes that landmark; after a recipient it is same-role", () => {
-    expectLine("zehodon al bahedem om bamegun vuhal", "z-listener | [in | b-locality] | [near | b-speaker] | v-hatch");
-    expectLine("zazawan vadazel hegozem bavahel om bamegun", "z-Azawan | v-dance | [h-around | b-fire] | [near | b-speaker]");
+    expectLine("zehodon al bahedem om bamegun vuhal", "z-listener | [in | [b-locality | [near | b-speaker]]] | v-hatch");
+    expectLine("zazawan vadazel hegozem bavahel om bamegun", "z-Azawan | v-dance | [h-around | [b-fire | [near | b-speaker]]]");
     expectLine("zazawan balahen al bahaben vezebel", "z-Azawan | b-Alahen | including | b-Ahaben | v-tell");
+  });
+
+  it("em + /b/ goes inside the bracket of the noun on its left", () => {
+    expectLine("zodogal gelavam em bamegun", "[z-dog | g-big | [used-by | b-speaker]]");
+    expectLine("zodogal em bamegun gelavam", "[z-dog | [used-by | [b-speaker | g-big]]]");
+    expectLine("zodogal gelavam al bahedem em bamegun", "[z-dog | g-big] | [in | [b-locality | [used-by | b-speaker]]]");
+    expectLine("zazawan balahen em bamegun vezebel", "z-Azawan | b-Alahen | rather.open | b-speaker | v-tell");
   });
 
   it("label scope glosses its seam vowel", () => {
@@ -526,5 +533,13 @@ describe("morphGlossLine — standalone joins", () => {
     expectLine("zazawan vahahal dal.", "z-Azawan | v-see | d-none");
     expectLine("zazawan zual vowogal.", "[z-Azawan | z-everything-but] | v-walk");
     expectLine("zazawan zalahen zal vowogal.", "[z-Azawan | z-Alahen | z-and] | v-walk");
+  });
+});
+
+describe("morphGlossLine — word position, not spelling", () => {
+  it("does not read an in-clause hook as discourse because an earlier sentence opened with the same spelling", () => {
+    const line = morphGlossLine("al zazawan vowogal. zazawan al zalahen zal vowogal.", tables);
+    const second = line.split(" . ")[1] ?? "";
+    assert.ok(!second.includes("additionally"), line);
   });
 });

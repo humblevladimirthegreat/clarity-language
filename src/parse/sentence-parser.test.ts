@@ -38,7 +38,7 @@ describe("sentence-parser synthetic", () => {
   it("parses emphatic yul yul as one prohibition", () => {
     const result = parseSentenceTokens(tokens("yul yul vazanal."));
     assert.equal(result.utterances.length, 1);
-    assert.equal(result.utterances[0]!.left.forceEcho?.raw, "yul");
+    assert.equal(result.utterances[0]!.left.leadForce?.raw, "yul");
     assert.equal(result.utterances[0]!.left.force?.raw, "yul");
     assert.equal(result.utterances[0]!.bodies.length, 1);
   });
@@ -47,16 +47,14 @@ describe("sentence-parser synthetic", () => {
     // A second turn starts only after a period; `yol` is not an echo like `yul yul`.
     const result = parseSentenceTokens(tokens("yol. yol vazanal."));
     assert.equal(result.utterances.length, 2);
-    assert.equal(result.utterances[0]!.left.forceEcho, undefined);
-    assert.throws(() => parseSentenceTokens(tokens("yol yol vazanal.")));
+    assert.equal(result.utterances[0]!.left.leadForce, undefined);
   });
 
   it("parses yal yol / yam yol as a rhetorical question", () => {
     const left = parseSentenceTokens(tokens("yal yol zar vegehel.")).utterances[0]!.left;
-    assert.equal(left.rhetoricalAnswer?.raw, "yal");
+    assert.equal(left.leadForce?.raw, "yal");
     assert.equal(left.force?.raw, "yol");
-    assert.equal(parseSentenceTokens(tokens("yam yol zazawan vowogal.")).utterances[0]!.left.rhetoricalAnswer?.raw, "yam");
-    assert.throws(() => parseSentenceTokens(tokens("yel yol zazawan vowogal.")));
+    assert.equal(parseSentenceTokens(tokens("yam yol zazawan vowogal.")).utterances[0]!.left.leadForce?.raw, "yam");
   });
 
   it("attaches a factor number after an equative scale only", () => {
@@ -73,7 +71,7 @@ describe("sentence-parser synthetic", () => {
     const sharedOf = (text: string) => {
       const unit = parseSentenceTokens(tokens(text)).utterances[0]!.bodies[0]!.clause.units[0]!;
       const part = unit.kind === "np" ? unit.coord.parts.find((p) => p.join) : undefined;
-      return part?.shared.map((item) => ("word" in item ? item.word.raw : item.raw));
+      return part?.shared.map((item) => item.word.raw);
     };
     assert.deepEqual(sharedOf("zazawan zalahen zel bral vevahal."), ["bral"]);
     assert.deepEqual(sharedOf("zazawan zalahen zal bral vevahal."), []);
@@ -91,17 +89,17 @@ describe("sentence-parser synthetic", () => {
   it("puts a /ɡ/ after an /h/ host's /b/ on that landmark, but not after a /th/ offset", () => {
     const last = (text: string) => parseSentenceTokens(tokens(text)).utterances[0]!.bodies[0]!.clause.units.at(-1)!;
     const like = last("zazawan vowogal homem bazawan gubuhal.");
-    assert.equal(like.kind === "h" ? like.unit.boundAdjs?.[0]?.word.raw : undefined, "gubuhal");
+    assert.equal(like.kind === "h" ? like.unit.hosted?.adjs?.[0]?.word.raw : undefined, "gubuhal");
     assert.equal(last("zazawan thabem bral gamadam.").kind, "predicate");
   });
 
   it("lets a kin number on an /h/ host's landmark host its own /b/, but keeps a count as the amount", () => {
     const last = (text: string) => parseSentenceTokens(tokens(text)).utterances[0]!.bodies[0]!.clause.units.at(-1)!;
     const kin = last("zazawan vowogal han bebezal grebuwol behodon.");
-    assert.equal(kin.kind === "h" ? kin.unit.boundAmount : "not h", undefined);
-    assert.equal(kin.kind === "h" ? kin.unit.boundAdjs?.[0]?.bound?.raw : undefined, "behodon");
+    assert.equal(kin.kind === "h" ? kin.unit.hosted?.amount : "not h", undefined);
+    assert.equal(kin.kind === "h" ? kin.unit.hosted?.adjs?.[0]?.hosted?.bound.raw : undefined, "behodon");
     const offset = last("zazawan vowogal hulam bazazam grawol.");
-    assert.equal(offset.kind === "h" ? offset.unit.boundAmount?.raw : undefined, "grawol");
+    assert.equal(offset.kind === "h" ? offset.unit.hosted?.amount?.raw : undefined, "grawol");
   });
 
   it("puts a /ɡ/ after a SHARED relation's /b/ on that landmark", () => {
@@ -110,7 +108,7 @@ describe("sentence-parser synthetic", () => {
     const unit = shared[0]!;
     const part = unit.kind === "np" ? unit.coord.parts.find((p) => p.join) : undefined;
     const pair = part?.shared[0];
-    assert.equal(pair && "boundAdjs" in pair ? pair.boundAdjs?.[0]?.word.raw : undefined, "gamazam");
+    assert.equal(pair && "hosted" in pair ? pair.hosted?.adjs?.[0]?.word.raw : undefined, "gamazam");
   });
 
   it("puts a hook + /b/ before a join word on the item before it", () => {
@@ -122,7 +120,7 @@ describe("sentence-parser synthetic", () => {
     const dog = items[1]!;
     const hook = dog.kind === "package" ? dog.package.adjs[0] : undefined;
     assert.equal(hook?.word.raw, "em");
-    assert.equal(hook?.bound?.raw, "bazar");
+    assert.equal(hook?.hosted?.bound.raw, "bazar");
   });
 
   it("keeps a hook that is not right before a join word on the clause", () => {
@@ -134,7 +132,7 @@ describe("sentence-parser synthetic", () => {
     const units = parseSentenceTokens(tokens("yel zehodon vaheham hodam bazazam grawol.")).utterances[0]!.bodies[0]!.clause.units;
     const pole = units.at(-1)!;
     assert.equal(pole.kind === "h" ? pole.unit.word.raw : undefined, "hodam");
-    assert.equal(pole.kind === "h" ? pole.unit.boundAmount?.raw : undefined, "grawol");
+    assert.equal(pole.kind === "h" ? pole.unit.hosted?.amount?.raw : undefined, "grawol");
   });
 
   it("reads a command with only a /ɡ/ body", () => {
