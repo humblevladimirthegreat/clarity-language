@@ -15,7 +15,7 @@
  * takes an exact ID, a `prefix*`, or a `/regex/`. Several flags must all match.
  * Paths default to docs/grammar and docs/examples.
  */
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { relative } from "node:path";
 
 import { loadDefaultTables } from "../parse/index.js";
@@ -113,7 +113,7 @@ function highlight(example: Example, hits: Set<number>): string {
 
 const tables = loadDefaultTables();
 const results: { file: string; line: number; text: string; shown: string }[] = [];
-for (const root of paths.length ? paths : ["docs/grammar", "docs/examples"]) {
+for (const root of paths.length ? paths : ["docs/grammar", "docs/examples"].filter((dir) => existsSync(dir))) {
   for (const file of listMarkdown(root)) {
     const markdown = readFileSync(file, "utf8");
     for (const example of collectExamples(markdown, tables)) {

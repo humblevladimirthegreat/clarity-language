@@ -54,7 +54,7 @@ for (let i = 0; i < args.length; i++) {
 }
 if (phrases.length === 0) usage("give at least one English phrase");
 
-const roots = paths.length ? paths : ["docs/grammar", ...(includeExamples ? ["docs/examples"] : [])];
+const roots = paths.length ? paths : ["docs/grammar", ...(includeExamples ? ["docs/examples"] : [])].filter((dir) => existsSync(dir));
 const tables = loadDefaultTables();
 const entries = roots.flatMap((root) =>
   listMarkdown(root).flatMap((file) => collectEnglishEntries(readFileSync(file, "utf8"), relative(process.cwd(), file), tables)),

@@ -11,7 +11,7 @@
   "containerEnv": {
     "LM_STUDIO_BASE_URL": "http://host.docker.internal:1234/v1"
   },
-  "postCreateCommand": "sudo chown -R node:node /home/node/.claude && npm install",
+  "postCreateCommand": "sudo chown -R node:node /home/node/.claude && npm install && node scripts/echo-pronunciation.ts",
   "customizations": {
     "vscode": {
       "extensions": [
