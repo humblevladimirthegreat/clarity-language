@@ -257,14 +257,21 @@ export function lexiconContentRoots(
   }
 }
 
+const knownRootsCache = new WeakMap<ClassifyTables, ReadonlySet<string>>();
+
 /** Published lemmas, lexical-compound stems, and overlay host roots. */
-export function knownLexiconRoots(tables: ClassifyTables): Set<string> {
-  const known = new Set<string>(tables.published.keys());
-  for (const stem of tables.compounds.keys()) {
-    known.add(stem);
-  }
-  for (const row of tables.overlays.values()) {
-    known.add(senseFormRoot(row.senseForm));
+export function knownLexiconRoots(tables: ClassifyTables): ReadonlySet<string> {
+  let known = knownRootsCache.get(tables);
+  if (!known) {
+    const roots = new Set<string>(tables.published.keys());
+    for (const stem of tables.compounds.keys()) {
+      roots.add(stem);
+    }
+    for (const row of tables.overlays.values()) {
+      roots.add(senseFormRoot(row.senseForm));
+    }
+    knownRootsCache.set(tables, roots);
+    known = roots;
   }
   return known;
 }
