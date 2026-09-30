@@ -155,10 +155,21 @@ export async function checkLlmHealth(
   }
 }
 
+export type ChatOptions = {
+  temperature: number;
+  maxTokens?: number;
+  /** Fixed sampling seed for reproducible runs (LM Studio honors it). */
+  seed?: number;
+  /** OpenAI-style `response_format` (e.g. `json_schema`) for structured output. */
+  responseFormat?: Record<string, unknown>;
+  /** LM Studio reasoning control: "none" skips the thinking trace (about 6x faster); omit for the model default. */
+  reasoningEffort?: "none" | "low" | "medium" | "high";
+};
+
 export async function chatCompletion(
   config: LlmClientConfig,
   messages: ChatMessage[],
-  options: { temperature: number; maxTokens?: number },
+  options: ChatOptions,
 ): Promise<string> {
   const body: Record<string, unknown> = {
     model: config.model,
@@ -167,6 +178,9 @@ export async function chatCompletion(
     max_tokens: options.maxTokens ?? 4096,
     enable_thinking: false,
   };
+  if (options.seed !== undefined) body.seed = options.seed;
+  if (options.responseFormat) body.response_format = options.responseFormat;
+  if (options.reasoningEffort) body.reasoning_effort = options.reasoningEffort;
 
   const response = await fetch(`${config.baseUrl}/chat/completions`, {
     method: "POST",
@@ -213,7 +227,7 @@ export function extractJsonPayload(text: string): string {
 export async function chatCompletionJson<T>(
   config: LlmClientConfig,
   messages: ChatMessage[],
-  options: { temperature: number; maxTokens?: number },
+  options: ChatOptions,
   parse: (value: unknown) => T,
 ): Promise<T> {
   let lastError: Error | undefined;
@@ -236,4 +250,41 @@ export async function chatCompletionJson<T>(
     }
   }
   throw new Error(`Failed to parse LLM JSON after retry: ${lastError?.message ?? "unknown"}`);
+}
+
+type EmbeddingsResponse = {
+  data?: Array<{ index?: number; embedding?: number[] }>;
+};
+
+/** Embed `inputs` with an embedding model loaded in LM Studio; vectors come back in input order. */
+export async function embedTexts(
+  config: Pick<LlmClientConfig, "baseUrl" | "apiKey" | "requestTimeoutMs">,
+  model: string,
+  inputs: string[],
+  batchSize = 64,
+): Promise<number[][]> {
+  const vectors: number[][] = [];
+  for (let i = 0; i < inputs.length; i += batchSize) {
+    const batch = inputs.slice(i, i + batchSize);
+    const response = await fetch(`${config.baseUrl}/embeddings`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${config.apiKey}`,
+      },
+      body: JSON.stringify({ model, input: batch }),
+      signal: AbortSignal.timeout(config.requestTimeoutMs),
+    });
+    if (!response.ok) {
+      const bodyText = await response.text();
+      throw new Error(`Embeddings request failed (${response.status}): ${bodyText.slice(0, 300)}`);
+    }
+    const data = (await response.json()) as EmbeddingsResponse;
+    const sorted = [...(data.data ?? [])].sort((a, b) => (a.index ?? 0) - (b.index ?? 0));
+    if (sorted.length !== batch.length || sorted.some((d) => !d.embedding)) {
+      throw new Error("Embeddings response did not match the request");
+    }
+    for (const d of sorted) vectors.push(d.embedding!);
+  }
+  return vectors;
 }

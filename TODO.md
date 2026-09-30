@@ -12,7 +12,7 @@ Prosody
 -confirm we still have chats after rebuild
 -expressiveness review
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
-
+-for countries, swap demonym as concrete and country as abstract
 final exam
 save for near end of limit resets:
 -lexicon fill in based on subtitles dataset frequency

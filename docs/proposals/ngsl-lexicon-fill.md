@@ -203,6 +203,107 @@ The coverage check only reads `docs/grammar/`. Editor notes in `docs/meta/` (`sy
 - **The script needs no change.** Decisions already in the triage file survive a `--candidates` rerun, so settled words are not reopened. Only a fresh triage file would lose them.
 - **Decided *give*.** The editor kept 🎁 *present* (`ebezo`). No 🫴 root was ever added, so nothing is undone. *get*, *receive*, *provide*, *supply*, *contribute*, *earn*, *income* and *borrow* read the `o` role of *present*.
 
+## Handoff: how to continue the grammar cues {#handoff}
+
+Read this section first when asked to "proceed with the next batch". It holds everything the earlier sessions learned. The state is in the triage CSV `note` column; this section is the procedure.
+
+### Status (after batch 11)
+
+- Rows with `fix = Grammar`: 589. **221 have no note yet.** A row is done when its `note` starts with `Applied:`, `Partial:` or `Gap:`. List the rest with the snippet under [Listing the open rows](#handoff-list).
+- Batches 1–11 are done, all in the recipe track (`english.md` and the `say-*.md` pages), and committed (batch 11 and earlier; the last commit was `continued triage`). Commit only when the user asks.
+- Sections added in batches 6–11: `say-reasons.md` `#stance-adverbs`, `#reason-purpose-guilty`, `#cause-verbs`, `#sake-words`, `#wrong-ugly`; `say-people-places.md` `#give-get`, `#role-title-address`, `#words-about-words`; `say-amounts.md` `#group-words`; `english.md` `#noun-adjectives`; `say-questions.md` `#ask-words`, `#offer-words`, `#reply-words`. Grep the page before adding a cue: a section may already hold it.
+- Baseline checks: `npm run build` ok, `npm test` 705 of 705.
+
+### Working rules (from the user; they win over a triage row)
+
+- **One target page per batch. Stop after each batch and wait for the user's go-ahead.** Do the work yourself; subagents only as read-only checkers.
+- Read `AGENTS.md` first, then `docs/meta/grammar-docs.md` (recipe track, present-the-current-language-only, retie-safe writing), `doc-style.md`, `glosses.md`, `design-decisions.md`, `docs/meta/syntax-test-results.md`.
+- **Recipe track only.** Stage pages never link to it. The only stage-page edits allowed are a one-sentence teaching edit that ships with a parser or lexicon change, or that teaches a form the recipe relies on.
+- Never trust a form or meaning from memory or from the triage `proposal` text. Open the owning doc. **Do not add grammar.** If a cue cannot be said with a taught form, write `Gap:` with the reason. Bare evaluatives are not roots (see Earlier rulings); route them to a met or unmet sake, a rank against a bar, or a content root.
+- Earlier rulings win over the triage row: give is `ebezo`; need = `vebom`; seem = `thevemehodon`; travel = `vehebam`; happy = emotion compose; prepare / ready = `vabum`; mother = `geveval` before the kin number; warm = quite hot; opposite = `honovathohan`; indeed = the `!` tone mark; long = `hadaham`; ever = `huham … har`.
+- Examples: no leading assertion turn when omissible; the learner name slot is `SELF`; native text is unicase lowercase, `th` is one letter, there is no `t`. Italic English that is also a valid Agazan word fails the retie check (write it plain). Names in glosses are capitalised by the parser (`b-Ahodon-x`).
+- Commits: only when asked. Append `[skip-cd]` and the session's Co-Authored-By line. If a Bash call fails on the permission classifier, retry up to 5 times with exponential backoff (1, 5, 25, 125, 625 s), then stop and tell the user.
+- **Decline candidates:** log `Decline:` in the triage note and list them in the wrap-up; do not resolve them. The `design-decisions.md` Decline entry is a separate small item the user will request. Candidates: *total*, *density*, *variation*, *distinction*, *tendency*, *actual*, *real*, *reality*, *available*, *qualify*, *enable*, *cope*, *deserve*, *entitle*, *survive*, *modern*, *contemporary*, *abroad*, *overseas*, *cent*, *relative*, *relatively*, *largely*, *primarily*, *ultimately*, *briefly*, *closely*, *effectively*, *extensive*, *various*, *frequent*, *regular*.
+- **Out of scope (mention in the wrap-up only):** *corner* needs a new root and emoji; *sex* is a Human review; imperial units need abstract senses; locative overlays (*middle*, *central*, *bottom*, *external*, *beyond*, *throughout*, *apart*, *lean*, *parallel*) need roots and emoji; roles with no root (*colleague*, *owner*, *sponsor*, *host*, *candidate*, *buyer*, *customer*, *consumer*, *officer*, *secretary*, *minister*, *editor*, *artist*, *passenger*, *staff*, *personnel*, *shareholder*, *historian*, *user*).
+
+### Workflow per batch
+
+1. List the open rows for the theme (below). Run `node scripts/find-english.mjs '<phrase>'` for each cue first. If a taught section already covers it, add only a cue row, not a new recipe.
+2. Open the owning doc and find the taught form. Look up every root in `data/lexicon-published.csv` (`grep -E ",root,"`): check the concrete and abstract senses and the aliases before you choose **-l** or **-m**.
+3. Test each form (see [Checking a form](#handoff-check)).
+4. Edit the target page. Copy the shape of the earlier sections: an H3 with an English `{#id}`, a **Needs:** line, a short lead that names the English job, the Agazan shape and the consequence, a table, one or two worked examples with a morph gloss, and **Compare with:** only when a real sibling exists. A lead that says an English word hides several jobs, then a table split by job, worked every time.
+5. Run `npm run build`; on a `morph gloss mismatch` copy the parser's gloss into the doc. Then `npm test`.
+6. Write the triage notes and add a "Batch N done" sentence to the Remaining work list. Use `Applied: <page>#<anchor> (<form>).`, `Partial: …` or `Gap: <reason>.`, `Decline: <reason>.`
+7. Stop. Report what was added, which cues were already covered, the gaps, and any decision needed. Do not start the next batch.
+
+### Checking a form {#handoff-check}
+
+`node scripts/parse.mjs --check-lexicon '<sentence>'` prints `not in the lexicon: X` to stderr and exits 1 when a word is unlisted. A plain parse accepts any well-formed root, so it proves nothing about the lexicon, and **passing it does not prove a root means what you want**. Two earlier slips passed the check: `gahabal` (*handbag*, not beauty `gahabel`) and `zevebel` (*fingerprint*, not `zezebel` *speech*). Always confirm the root in the lexicon, and let the build's morph-gloss comparison catch the rest. The check cannot handle cite or mention spans (`d[…]`, `z{…}`); run those through plain `node scripts/parse.mjs` and let `npm run build` validate them.
+
+A wrapper that prints OK / FAIL for each sentence (put it in the session scratchpad):
+
+```bash
+#!/bin/bash
+cd /workspaces/clarity-language
+for s in "$@"; do
+  out=$(node scripts/parse.mjs --check-lexicon "$s" 2>&1 >/dev/null | grep -v '^\s*at ' | head -3)
+  if [ -z "$out" ]; then echo "OK   $s"; else echo "FAIL $s :: $out" | cut -c1-300; fi
+done
+```
+
+Form rules that recur:
+
+- Citation = root + ending (`azewe` → `azewel` / `azewem`). **-l** is the concrete sense, **-m** the abstract sense. The noun letter goes in front (`zebehem`); a verb or adjective root that lacks an `english_by_pos` entry usually takes the sense you need on **-l** or **-m**, so read the row.
+- Doer nouns are `z` + `ax` + root + **-l**; recipient `ox`, undergoer `ux`, scene `ex`. Role compounds accept a listed compound stem.
+- Causation: `thegem` + `/b/` causer after the event (`zalahen vazagal thegem bazawan.`). Fault is `theral` / `therar` on the because pole with an **act** in `/b/`.
+- Sakes: `tha` met, `thu` unmet, `tho` motive, `the` prescription; sake roots `aba` `udu` `ona` `ozu` `uho` `uge`. On a noun of yours the sake word is on `/ɡ/` (`gudutham`); on another noun it is on `/w/` before `gobom`. Emotion compose adds a locus and a motion ending (`wonathumar`).
+- Noun-root adjectives: the root on `/ɡ/` (`gogodal`). Of-relations are `gabom` / `gaham` / `guwam` / `gagum`.
+- Degree words are on `/w/`; manner adverbs are `h` + root + **-m**; frequency is `hual` / `huam` / `har`. Offsets with a time pole need a command, plan or channel around them. Night (`anada`) is not a unit.
+- Stance words: evidentials `thodu-` `thunu-` `theru-` `thabe-` `theve-` `thema-` `thahu-` `thazo-` with **-l / -m / -r** for evidence strength; MAY `thovo-`; NOTIONAL `thove-`; speaker attitude `thevegem` / `theledem` / `thewedam`.
+- Speech acts: `yal` `yam` `yol` `yom` `yel` `yem` `yul` `yum`; polar `yael` / `yaem` / `yuel` / `yuem` / `yaol` / `yaom`.
+
+### Writing the triage notes
+
+The file has quoted commas. Parse it with a real CSV reader, round-trip it first (read, write, compare the bytes), then rewrite only the `note` column of the rows you touched. A minimal script:
+
+```python
+import csv, io
+p = 'docs/proposals/ngsl-lexicon-triage.csv'
+raw = open(p, newline='').read()
+rd = list(csv.reader(io.StringIO(raw)))
+assert io.StringIO() is not None
+hdr = rd[0]; ni = hdr.index('note'); li = hdr.index('lemma'); fi = hdr.index('fix')
+notes = {'lemma': 'Applied: page.md#anchor (form).'}
+for r in rd[1:]:
+    if r[li] in notes and r[fi] == 'Grammar':
+        r[ni] = notes[r[li]]
+out = io.StringIO(); csv.writer(out, lineterminator='\n').writerows(rd)
+open(p, 'w', newline='').write(out.getvalue())
+```
+
+### Listing the open rows {#handoff-list}
+
+```python
+import csv
+rows = list(csv.DictReader(open('docs/proposals/ngsl-lexicon-triage.csv')))
+open_rows = [r for r in rows if r['fix'] == 'Grammar'
+             and not r['note'].startswith(('Applied:', 'Partial:', 'Gap:', 'Decline:'))]
+print(len(open_rows))
+for r in open_rows:
+    print(r['rank'], r['lemma'], '|', r['proposal'], '|', r['note'])
+```
+
+### Remaining themes (221 open rows)
+
+Starting lists, not verdicts. Re-list the open rows to confirm; some lemmas belong in a different theme once you read the proposal. Split a theme into two batches when it runs past about 30 rows or spans two target pages.
+
+1. **Stance and degree adverbs (about 34):** just, also, off, during, perhaps, especially, due, particularly, simply, thus, alone, immediately, directly, otherwise, overall, basically, necessarily, increasingly, widely, merely, personally, aside, deeply, hence, initially, badly, versus, automatically, consequently, whilst, mere, regardless, wherever, firstly. Likely targets: `say-amounts.md` (degree, manner), `say-reasons.md` (*thus*, *hence*, *consequently* are discourse glue; see `#english-cues`), `english.md`. *Widely* and *deeply* are Decline candidates. *During* only needs a cue in the `#english-cues` row for `hehum`; *just* and *also* are restrictors and standalone phrases (`joins.md#standalone-phrase`, `restrictors.md`).
+2. **Evaluative and "of a kind" adjectives (about 58):** public, whole, political, general, full, major, special, main, particular, single, complete, personal, financial, international, significant, popular, specific, unclear, favorite, independent, appropriate, effective, extra, expensive, straight, responsible, cheap, physical, entire, busy, critical, obvious, relevant, practical, native, ideal, weak, latter, immediate, emotional, proud, unemployment, thick, honest, secondary, false, apparent, remarkable, agricultural, confident, rough, dependent, universal, comprehensive, absolute, remote, distant, experimental. Routes: noun-root adjective (`english.md#noun-adjectives`), sake or rank against a bar (`say-reasons.md#sake-words`), negation (`gul`), emotion compose (*proud*), or a Decline (*effective*, *extensive*-like). *Obvious* and *apparent* may point back to `say-reasons.md#stance-adverbs`.
+3. **Verbs of thinking, relating and changing (about 56):** mean, show, become, happen, involve, create, describe, join, explain, realize, exist, apply, compare, forget, represent, fit, occur, lack, depend, recognize, suffer, fill, match, associate, refer, encourage, define, prefer, replace, shoot, count, admit, ride, hang, display, reveal, excite, convince, belong, consist, distinguish, inspire, assist, consult, behave, criticize, attribute, characterize, constitute, correspond, disagree, exceed, undergo, allege, stimulate, comprise. Routes: causation (`#cause-verbs` pattern), join-act verbs (`join-across-roles.md`), `x` compounds, knowing and evidence, sakes. *Mean*, *show* and *become* are split rows; read the proposal for each sense.
+4. **Abstract nouns and sense-split words (about 73):** way, last, case, experience, deal, figure, event, condition, reduce, patient, piece, feature, factor, campaign, character, function, size, behavior, population, environment, contract, series, board, method, operation, instance, style, reference, application, income, everybody, object, scene, context, principle, truth, mistake, introduction, requirement, circumstance, reaction, contribution, desire, murder, definition, comparison, absence, emotion, incident, assumption, premise, acquisition, representation, mood, phenomenon, satisfaction, furniture, bid, mode, intervention, efficiency, poverty, gender, preference, regret, weakness, friendship, abortion, species, motivation, cluster, fragment, holder. Routes: a role compound, a sake, "say it as a sentence, then point back" (`dependents.md#which-noun`), or a cue row on an existing section. Several are sense splits that need a cue row per sense.
+
+Expect about 8 batches. The user may ask to start with theme 1.
+
 ## Remaining work
 
 1. **Write the grammar cues** (589 rows). *Batch 1 done (11 rows):* the nine targeted cues plus *somebody* and *furthermore*, in `english.md` (`#everyday-words`: place / path, *some-* / *any-*, greetings) and `say-reasons.md#english-cues`; `till` also in `say-amounts.md#pole-from-now`. Each row's triage note starts `Applied:`. *Batch 2 done (35 rows):* place, path and motion words in `english.md` (`#place-path`, `#motion`): 24 applied, 11 logged `Gap:` (*external*, *beyond*, *throughout*, *apart*, *abroad*, *overseas*, *middle*, *central*, *bottom*, *lean*, *parallel*). *Batch 3 done (104 rows):* `say-people-places.md` gained `#agent-nouns` (34 verified doer stems), `#kin-words`, `#buy-sell`, `#other-different` and `#reflexive`; *thing* / *stuff* went into `english.md#some-any`. A role compound on a compound root (*reader*, *driver*, *poet*, *historian*, *investor*, *user*) fails to parse after `x`, so those are `Gap:`. Several triage stems named roots that do not exist (`arezo`, `eboga` spelled `ebogo`, `ebuda` for artist), so each stem was rebuilt from the lexicon. *Batch 4 done (94 rows):* `say-amounts.md` gained `#degree-manner` (`#degree-words`, `#manner-words`, `#frequency-words`, `#quantity-words`). *Quickly* is a `Gap:` because `avazo` has no abstract sense (editor: add *speed*). *Batch 5 done (47 rows):* `say-tense.md` gained `#time-words` and `#ability-words`. A triage note that read `thuhul` as *continue* was wrong (it is *want, lasting*); *continue* is `hagem`. *Gap fixes applied:* 26 gaps closed. Role compounds now take a listed compound stem (`src/parse/classify.ts`, roles.md; *reader*, *driver*, *poet*, *investor*, *employee*, *employer*); `avazo` gained abstract *speed*; `ahadu` gained `m.w:completely` and `wahadum` joined the stock degree words (clause.md); `brubum` (*recently*) is taught in knowing.md. *Tonight* and *forever* use composed forms, not the first suggestion (night has no unit abstract). Remaining gaps are the locative overlays, roles with no root, and Decline candidates. Next batches go one target page at a time. *Batch 6 done (10 rows):* `say-reasons.md` gained `#stance-adverbs` (*obviously*, *apparently*, *presumably*, *guess*, *assume*, *unfortunately*) and `#reason-purpose-guilty` (*reason*, *purpose*, *justify*, *guilty*). *Batch 7 done (16 rows):* `say-reasons.md` gained `#sake-words` (*important*, *useful*, *helpful*, *suitable*, *benefit*, *advantage*, *satisfy*, *upset*), `#wrong-ugly` and `#cause-verbs` (*kill*, *feed*, *remove*, *prevent*, *persuade*, *introduce*). *Introduce* is `velehal` (learn) with `thegem`; *more important than* is a rank on the lasting met sake. *Batch 11 done (19 rows):* `say-questions.md` gained `#ask-words`, `#offer-words` and `#reply-words` (*ask*, *interview*, *conversation*, *chat*, *dialog*, *offer*, *suggest*, *propose*, *recommend*, *advice*, *suggestion*, *proposal*, *invite*, *welcome*, *hello*, *sir*, *yeah*, *quote*, *mention*); *sir* is `Partial:`. *Batch 10 done (14 rows):* `say-amounts.md#group-words` (*group*, *crowd*, *bunch*, *pair*, *member*, *list*, *range*); `say-people-places.md` `#role-title-address` (*role*, *title*, *address*) and `#words-about-words` (*sentence*, *phrase*); *verb* and *noun* are `Gap:`. *Batch 9 done (8 rows):* `english.md#noun-adjectives` (*golden*, *wooden*, *royal*, *solar*, *musical*, *biological*, *institutional*, *structural*). *Batch 8 done (10 rows):* `say-people-places.md` gained `#give-get` (*get*, *receive*, *provide*, *earn*, *borrow*, *owe*, *distribute*, *contribute*, *acquire*, *supplier*). into `english.md` and the `say-*.md` pages (recipe track only; stage pages never link to it). Nine cues had no `find-english` hit and now have targets: *whereas*, *moreover*, *nevertheless*, *onto* (`aol`), *till*, *anybody*, *somehow* (`homem bor`), *via*, *hi*. Doer-noun stems need checking against `roles.md` (some vowels fail after `x`, for example `zaxovel`).

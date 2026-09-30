@@ -16,6 +16,7 @@
     "regloss-docs": "tsx scripts/regloss-docs.ts",
     "metaphor-assign": "tsx scripts/phase5-metaphor-assign.ts",
     "metaphor-assign-test": "tsx scripts/lib/metaphor-assign-data.test.ts && tsx scripts/lib/llm-client.test.ts",
+    "lexicon-review": "tsx scripts/lexicon-review.ts",
     "lexicon-search": "tsx scripts/lexicon-search.ts",
     "check-compounds": "tsx scripts/check-compound-uniqueness.ts",
     "lint:lexicon": "tsx scripts/lint-lexicon-published.ts",
