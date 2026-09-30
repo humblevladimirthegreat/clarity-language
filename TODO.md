@@ -31,10 +31,6 @@ save for end:
 -Cheat sheet for joins and hooks
 -join vowel decision tree in advanced vowel series.
 
-Recipe entries (from register sample RS-1; find-english should then hit them):
--*late* / *early* against a plan (`hulam barl` + PLAN) in say-tense.md or say-amounts.md
--*last time* = the penultimate occasion (`gruedul`) in say-amounts.md
-
 Dictionary entries (open lexicon / concepts — not the closed list above):
 -habits: triggered
 -unconditional self acceptance
