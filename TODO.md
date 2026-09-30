@@ -13,9 +13,6 @@ Prosody
 -expressiveness review
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -add English synonyms row to lexicon, allow find-english to use it.
--allow oe on numbers
--english-find optimization
-
 
 final exam
 save for near end of limit resets:

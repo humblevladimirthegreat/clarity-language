@@ -938,6 +938,13 @@ For *soon*, soften that hair with open **-m**: **`brabum`** is *a short while af
 >
 > "It will rain soon (from the clouds)."
 
+The mirror, **`brubum`**, is *a short while before now*: *recently*.
+
+> `zazawan thunom brubum vowogal.`
+> z-Azawan | [th-WITNESSED | b---e-.about] | v-walk
+>
+> "I saw Azawan walk recently."
+
 > `zalahen thabem bagazem grurel vezebal.`
 > z-Alahen | [th-PATTERN | [b-hour | g-minus-three]] | v-sleep
 >

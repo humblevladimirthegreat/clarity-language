@@ -19,6 +19,8 @@ English *a teacher* names who teaches as a kind, from the same idea as *teach*. 
 
 The last letter is the ordinary [reference ending](word-endings.md): **-l** takes the stem’s everyday concrete sense, **-m** the published abstract. `zaxedehol` is *a teacher*; `zaxavadal` is *a fighter*; `zaxavadam` is *a struggler*. Non-resume names the **lexical** role. You do not need a prior teaching or fight in the talk.
 
+When the event is a conventional compound, the role compound takes the whole stem: `zaxubugalahahal` is *a reader*, from `ubugalahahal` *read*.
+
 **Compare with:** a teacher puts the role vowel **left** of **`x`**. Later, [ability](intention.md#ability) (*can teach*) puts a vowel **right** of **`x`**, and the two can combine.
 
 ### This instance (`-r`)

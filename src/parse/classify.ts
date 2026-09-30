@@ -302,6 +302,7 @@ export function unknownLexiconContentRoots(
 function publishedGlossForRoots(
   tables: ClassifyTables,
   roots: string[],
+  compoundStems = false,
 ): { gloss: { concrete?: string; abstract?: string }; allFound: boolean } | undefined {
   if (roots.length === 0) return undefined;
   const literals: string[] = [];
@@ -311,7 +312,15 @@ function publishedGlossForRoots(
   for (const root of roots) {
     const row = tables.published.get(root);
     if (!row) {
-      allFound = false;
+      // A listed compound stem fills a root slot too (`zaxubugalahahal`, a role compound on `read`).
+      const compound = compoundStems ? tables.compounds.get(root) : undefined;
+      if (!compound) {
+        allFound = false;
+        continue;
+      }
+      any = true;
+      literals.push(compound.concrete || root);
+      if (compound.abstract) abstracts.push(compound.abstract);
       continue;
     }
     any = true;
@@ -608,7 +617,8 @@ const CLASSIFY_RULES: ClassifyRule[] = [
       // A hook compound already read its left root; it is not a second published reading.
       if (hookCompoundCandidate(word) && classifyHookCompound(word, tables)) return undefined;
       const roots = lexiconContentRoots(word, knownLexiconRoots(tables));
-      const published = publishedGlossForRoots(tables, roots);
+      // A plain content word on a compound stem is a compound lemma (read above); only an `x` word fills a slot with one.
+      const published = publishedGlossForRoots(tables, roots, word.family.kind === "x");
       if (!published) return undefined;
       return {
         ...word,

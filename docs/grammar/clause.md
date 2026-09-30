@@ -311,6 +311,7 @@ Beginner used **`welavam`** *very* before an adjective. The same `/w/` slot take
 | `wohahal` | *extremely* / *overwhelmingly* | 🌊: an ocean of it |
 | `wamazam` | *slightly* / *a bit* | 🐁: small, as a degree |
 | `wadeham` | *quite* / *fairly* | 🔉: medium volume, not loud or soft |
+| `wahadum` | *completely* / *totally* / *entirely* / *fully* | 💯: a hundred is the whole |
 
 > `zodogal welavam hadehom vowogal.`
 >

@@ -6,18 +6,21 @@ Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* do
 
 ### English → Agazan {#english-cues}
 
-**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Continue](dependents.md#continue-x)
+**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Continue](dependents.md#continue-x) · [Stacked discourse hooks](hooks.md#stacked-discourse)
 
 Time and discourse dependents use the same **`barl`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a pole root.
 
 | English | Agazan |
 |---------|---------|
-| *although* / *while* / *until* / *before* / *after* | same pole + **`barl`** shape on adverb `/h/`, **-m** ([dependent clauses](dependents.md#dependent-clauses)): **`hazem`** / **`hehum`** / … |
+| *although* / *while* / *until* / *till* / *before* / *after* | same pole + **`barl`** shape on adverb `/h/`, **-m** ([dependent clauses](dependents.md#dependent-clauses)): **`hazem`** / **`hehum`** / **`hodam`** / … |
 | *so that* / *in order to* | same shape: **`hagom`** ([so that](dependents.md#so-that)); NP intended get = **`hagom`** + `/b/` **noun** |
 | *despite* (NP) | same **`hazem`** (or **`gazem`**) + `/b/` **noun**, not a second pole |
 | *judging by* / *going by* / *given that* (grounds) | inferring or pattern channel + **`barl`**: **`thevem barl`** / **`thabem barl`** ([evidence clause](knowing.md#evidence-clause)) |
 | *therefore* (discourse) | **`xezadam`** ([continue](dependents.md#continue-x)) |
 | *however* / *meanwhile* (discourse) | **`xazel`** / **`xagagal`** |
+| *nevertheless* / *nonetheless* (discourse) | **`xazel`** after the finished claim; inside one sentence, **`hazem barl`** |
+| *whereas* (two claims set against each other) | **`xazel`** before the second claim, or **`hazem barl`** inside one sentence |
+| *moreover* / *furthermore* (discourse) | **`ael …`** opens the sentence that goes further; **`al …`** adds a separate point ([stacked discourse hooks](hooks.md#stacked-discourse)) |
 
 ### Factivity (`if` vs `because`)
 <a id="factivity"></a>

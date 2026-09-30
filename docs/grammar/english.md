@@ -79,3 +79,46 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agazan 
 | resemblance (*walks as / like a duck*) | **`homem`** + `/b/` | [Simile](relations.md#similative) |
 | pretense (*as if they walk*) | **NOTIONAL** | [Notional](knowing.md#notional) |
 | dated books (*as of Friday*) | **`henem` / `humem`** + `/b/` | [*As-of*](relations.md#as-of) |
+
+## Everyday words {#everyday-words}
+
+One English word, one row: the form that says it and the section that teaches it.
+
+### Place and path {#place-path}
+
+| English itch | Agazan job | Teach |
+|--------------|------------|-------|
+| *in* / *into* / *inside* / *within* (*runs into a train*, *sits inside the house*) | hook **`al`** + `/b/`; the verb says whether anything moves | [Locative relations](relations.md#locative-relations) |
+| *on* / *onto* / *upon* (*sits on a chair*, *climbs onto the table*) | hook **`aol`** + `/b/`; the verb says whether anything moves | [Hooks](hooks.md#extra-noun) |
+| *beside* / *next to* / *nearby* (*sleeps near me*) | hook **`om`** + `/b/` | [Hooks](hooks.md#extra-noun), [here and there](hooks.md#deixis) |
+| *under* / *below* / *beneath* (*sleeps under the tree*) | gravity down **`hadahel`** (on a noun, **`gadahel`**) + `/b/` | [Gravity](roles.md#gravity) |
+| *above* / *upper* (*the book above the tree*) | gravity up **`habahal`** (on a noun, **`gabahal`**) + `/b/` | [Gravity](roles.md#gravity) |
+| *left side* / *right side* / *behind* / *in front of* (*behind the house*) | a direction with **`th`** + **`o`** + `/b/` landmark, such as `gazavathol bahazal` | [Landmark's own front](roles.md#landmark-facing) |
+| *with* / *alongside* / *along with* (*runs with Alahen*) | **`han`** + `/b/` | [Join-relations](join-across-roles.md#join-relations) |
+| *without* / *apart from* (*walks apart from the house*) | **`huan`** + `/b/` | [Join-relations](join-across-roles.md#join-relations) |
+| *via* / *by way of* / *through* / *along* (*goes via the station*, *walks along the road*) | hook **`uol`** + `/b/` (**`uom`** for a setting) | [Hooks](hooks.md#extra-noun) |
+| *somewhere* / *nowhere* / *everywhere* / *elsewhere* | **`ol bar`** / **`ol bal`** / **`ol bual`** / **`ol bur`** | [Somewhere, nowhere, everywhere](hooks.md#place-indefinites) |
+
+### Coming, going and following {#motion}
+
+| English itch | Agazan job | Teach |
+|--------------|------------|-------|
+| *come* (*is coming to you*) | motion verb `vuvudel` + hook **`oel`** + `/b/` for the person it heads to | [Here and there](hooks.md#deixis) |
+| *bring* / *take* (*brings me the package*) | `valagal` (*carry*) + object + **`oel`** (toward) or **`ul`** (away from) | [Here and there](hooks.md#deixis) |
+| *arrive* / *reach* (*has arrived at the house*) | **`huham`** (*already*) + `vuvudel` + **`oel`** + `/b/` | [Already, still, not yet](knowing.md#phasal) |
+| *approach* / *head for* | `vuvudel` + **`oel`** + `/b/` (no **`huham`**: still on the way) | [Locative relations](relations.md#locative-relations) |
+| *follow* (*walks behind Alahen*) | manner direction **`hazavathol`** + `/b/` for whoever leads | [Landmark's own front](roles.md#landmark-facing) |
+
+### *some-* and *any-* words {#some-any}
+
+| English itch | Agazan job | Teach |
+|--------------|------------|-------|
+| *something* / *someone* / *thing* / *stuff* (unnamed) | **`zar`**; with a kind, `zebezal zar` | [Unspecified member](joins.md#unspecified-member-r-phrase) |
+| *anything* / *anyone* / *anybody* | **`zor`**; with a kind, `zebezal zor` | [Unspecified member](joins.md#unspecified-member-r-phrase) |
+| *somehow* / *in some way* | **`homem bor`** (*like* some unspecified one) | [Simile](relations.md#similative), [unspecified member](joins.md#unspecified-member-r-phrase) |
+
+### Greetings {#greetings}
+
+| English itch | Agazan job | Teach |
+|--------------|------------|-------|
+| *hi* / *hello* / *goodbye* | your own name said with a period: `SELFn.` | [Greeting](word-endings.md#greeting) |

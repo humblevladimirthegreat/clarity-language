@@ -164,6 +164,43 @@ English *will* is three different claims.
 
 **Compare with:** a forecast always names how you know, so *it will rain* has no bare form. For *I hope it will*, see [hoping](say-reasons.md#hope-forecast).
 
+### Everyday time words {#time-words}
+
+**Needs:** [Dated channel](knowing.md#dated-channel) · [Now and today](knowing.md#now) · [RESIDUE and FORMER](knowing.md#residue) · [Already, still, not yet](knowing.md#phasal) · [Forecasts](knowing.md#forecast) · [Dependent clauses](dependents.md#dependent-clauses)
+
+English time words (*today*, *previously*, *continue*) mostly ride on the same channels and offsets as tense. Each row says which one.
+
+| English | Agazan |
+|---------|--------|
+| *today* / *now* | a channel with an offset of zero: `thevem bazazam grazol` (zero days); with `bagazem` it is *right now* |
+| *yesterday* / *tomorrow* | a channel with one day back or ahead: `bazazam gruwol` / `bazazam grawol` |
+| *tonight* | today plus *at night*: `thevem bazazam grazol` and **`hehum banadal`** |
+| *recently* / *recent* | a channel + **`brubum`** (*a short while before now*; **`brubul`** is *just now*) |
+| *forever* / *permanent* | a measure phrase with an unbounded amount: `bavawem grabal` (for `permanent`, add **`hagem`**) |
+| *eventually* | **`xrebal`** opens the last point (*Finally, …*) |
+| *whenever* | **`hehum bual`** + the occasion as a quality: `hehum bual gerehel` |
+| *currently* / *nowadays* / *at present* | LIVE **`thodum`** when it is in view; otherwise the bare verb, which reports this stretch |
+| *previously* / *formerly* / *originally* / *once* (*once walked*) | FORMER **`thunem`** |
+| *past* / *in the past* | FORMER **`thunem`**, or a channel with a `-` offset |
+| *future* / *in the future* | a channel + **`bral`** |
+| *once* (*one time*) | `h+1` before the verb |
+| ever (*Have you walked at all?*) | **`huham`** + **`har`** under **`yol`**: `yol zehodon huham vowogal har` |
+| *continue* / *keep doing* | **`hagem`** (*still*) |
+| *subsequently* / *after* | **`hulam`** + `/b/`: `hulam balahen` |
+| *prior to* | **`habum`** + `/b/`: `habum balahen` |
+
+> `zazawan thevem bazazam grazol vowogal.`
+>
+> z-Azawan | [th-INFERRED | [b-day | g-zero]] | v-walk
+>
+> "Azawan must be walking today."
+
+> `yol zehodon huham vowogal har.`
+>
+> y-question | z-listener | h-already | v-walk | h-when
+>
+> "Have you ever walked?"
+
 ### Used to and would (habit) {#used-to}
 
 **Needs:** [FORMER](knowing.md#former-climate) · [Always](restrictors.md) · [If](causation.md#if)
@@ -222,6 +259,37 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 > "Would you walk?"
 
 **Compare with:** ability says someone **can**; permission says whether they **may**; MAY says it **could be**.
+
+### Ability, possibility and permission words {#ability-words}
+
+**Needs:** [Ability](intention.md#ability) · [Can be](intention.md#role-ability) · [MAY](knowing.md#may) · [Permission](sakes.md#permission) · [Forecasts](knowing.md#forecast) · [Requirement](sakes.md#requirement)
+
+English adjectives and verbs built on *can* and *may* take the same forms as the modals.
+
+| English | Agazan |
+|---------|--------|
+| *capable* / *ability* / *capability* | the verb or quality with **`xa`**: `zazawan gezehexal` (*able to sing*); with no single verb, **`thezexal`** |
+| *afford* (*can pay*) | `zazawan vamoxal dubugal` |
+| *visible* / *invisible* | the undergoer with ability: `zodogal guxahahaxal` / `zodogal guxahahaxul` |
+| *blind* | `zazawan gahahaxul` (*can never see*) |
+| *possible* / *potentially* | MAY **`thovom`** |
+| *acceptable* / *privilege* | permission **`thegal`** |
+| *expect* / *anticipate* | a forecast: a channel + **`bral`**; when custom expects it, **`themehor`** |
+| *shall* | PLAN **`thumam`** |
+| *have to* | **`themehom`** |
+| *do* / *does* / *did* (helper: *Do you walk?*) | no word: the verb under **`yol`** |
+
+> `zodogal guxahahaxal.`
+>
+> z-dog | g-patient-x-eye-able
+>
+> "The dog is visible."
+
+> `yol zehodon vowogal.`
+>
+> y-question | z-listener | v-walk
+>
+> "Do you walk?"
 
 ### Must, have to, should {#must-should}
 

@@ -181,6 +181,117 @@ Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which val
 
 **Not the same job as:** the resume hooks `ar` / `ur` with nothing on the right (*in there* / *from there*), and discrete *something among two listed values* (`zrarel zraval zar`).
 
+## Degree, manner and frequency words {#degree-manner}
+
+### How much: *very*, *slightly*, *barely* {#degree-words}
+
+**Needs:** [Degree](clause.md#degree-w) · [Number as verb and adverb](numbers.md#special-number-as-verb-and-adverb) · [Number as stance](numbers.md#special-number-as-stance)
+
+English degree words (*really*, *quite*, *barely*) say how far a quality or an action goes. Agazan has stock degree words for the adjective or adverb that follows them, and a pair for *barely* and *almost*. A claim you are sure of takes the stance number `th+e`.
+
+| English | Agazan |
+|---------|--------|
+| *very* / *really* / *highly* / *truly* | `welavam` before the adjective or adverb |
+| *extremely* / *greatly* / *dramatically* / *significantly* / *considerably* | `wohahal` |
+| *slightly* / *somewhat* | `wamazam` |
+| *completely* / *totally* / *entirely* / *fully* / *altogether* | `wahadum` |
+| *quite* / *fairly* / *pretty* / *reasonably* | `wadeham` |
+| *huge* | `wohahal gelavam` (*extremely big*) |
+| *barely* / *hardly* | `hrabul` on the verb, `wrabul` before an adjective |
+| *almost* | `hrubul` on the verb, `wrubul` before an adjective |
+| *definitely* / *absolutely* / *certainly* | stance number `th+e` |
+
+> `zodogal wadeham gubuhal vowogal.`
+>
+> [z-dog | [w-quite | g-blue]] | v-walk
+>
+> "A fairly blue dog walks."
+
+> `zazawan hrabul vehahel.`
+>
+> z-Azawan | h-+-e- | v-sit
+>
+> "Azawan barely sits."
+
+### How: *carefully*, *properly*, *gently* {#manner-words}
+
+**Needs:** [Adverbs `/h/`](clause.md#adverbs-h) · [Manner scale](comparatives.md#manner-scale)
+
+English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the abstract ending **-m**, as in `hadehom` *hastily*.
+
+| English | Agazan |
+|---------|--------|
+| *quickly* | `havazom` |
+| *carefully* | `heyayem` |
+| *gently* | `hegehem` |
+| *properly* | `hegegam` |
+| *seriously* | `hezadem` |
+| *surprisingly* / *suddenly* | `hazebam` |
+| *successfully* | `hamedam` |
+| *strongly* | `habezem` |
+| *heavily* | `haragam` |
+| *perfectly* | `hahadum` |
+| *significantly* (*matters a lot*) | `hegazam` |
+| *gradually* / *slowly* | `hezehom` |
+| *easily* (*with less effort than usual*) | `zahen zuel hazewem` before the verb |
+
+> `zazawan heyayem vowogal.`
+>
+> z-Azawan | h-caution | v-walk
+>
+> "Azawan walks carefully."
+
+The easy / hard pair on a quality ranks effort against a bar ([vague amounts](comparatives.md#vague-amounts)): `zubugal zahen zuel gazewem` is *the book is easy* (less effort than typical), and `zel` in place of `zuel` is *hard*.
+
+### How often {#frequency-words}
+
+**Needs:** [Always](restrictors.md#always-hual) · [Sometimes](restrictors.md#sometimes--anytime--some-other-time) · [Frequency scale](comparatives.md#frequency-scale)
+
+English *always*, *usually*, *often* and *sometimes* sit on a scale from every time to some time. Agazan uses the restrictor for the ends and the frequency scale for *often*. For *every day*, hang a unit on `hehum` *while* with `bual` (*everything*).
+
+| English | Agazan |
+|---------|--------|
+| *always* / *constantly* | `hual` |
+| *usually* / *normally* / *generally* / *regularly* (*as a rule*) | `huam` |
+| *often* / *frequently* | `zahen zel hral` before the verb |
+| *sometimes* / *occasionally* | `har` |
+| *daily* | `hehum bual gazazam` |
+| *weekly* | `hehum bual gagadem` |
+| *monthly* | `hehum bual gumuham` |
+| *annually* | `hehum bual gavawem` |
+
+> `zazawan hehum bual gazazam vowogal.`
+>
+> z-Azawan | h-while | [b-everything | g-day] | v-walk
+>
+> "Azawan walks daily."
+
+### How many and how big {#quantity-words}
+
+**Needs:** [Vague amounts](comparatives.md#vague-amounts) · [Sake benchmarks](comparatives.md#sake-benchmarks) · [Measure phrases](numbers-applied.md#measure-phrases) · [Rays](numbers-applied.md#rays) · [Fractions](numbers-applied.md#fractions)
+
+| English | Agazan |
+|---------|--------|
+| *numerous* / *considerable* (*many cats*) | `zagadalx zahen zel gral` |
+| *enough* / *sufficient* / *adequate* | `zagadalx zugen zael gral` |
+| *too many* / *excess* | `zagadalx zugen zel gral` |
+| *quantity* (*how many*) | the amount scale `gral` |
+| *normal* / *standard* (*normally big*) | the bar `zahen` with `zael`: `zodogal zahen zael gelavam` |
+| *ordinary* / *medium* / *average* | the bar `zeyen` with `zael` |
+| *several* | approximate number: `zagadalx gram` (*about five cats*) |
+| *multiple* (*more than one*) | a ray: `zagadalx g+2 al zrabal` |
+| *minority* (*fewer than half*) | `zagadalx g+0% ul g+50%` |
+| *exactly* / *precisely* (*exactly five*) | the plain number `g+5`; `gram` is *about five* |
+| *literally* (*word for word*) | an exact quote: bare brackets, no `~` ([exact, paraphrase, proper](spans.md#when-required)) |
+| *a dozen* | `zugelx g+12` |
+| *a quarter of the cats* | `zagadalx g-4` (or `g+25%`) |
+| *twice* / *double* (two times) | `h+2` before the verb |
+| *ratio* (*three cats to one dog*) | `zagadalx zodogalx zael gral hrarel` ([factor](comparatives.md#factor)) |
+| *at least 5* / *at most 5* (*minimum* / *maximum*) | `zraval al zrabal` / `zrubal al zraval` |
+| *decade* / *century* | `bavawem g+10` / `bavawem g+100` |
+| *unit* | the measure phrase: `bezezem g+2` |
+| *estimate* (*I put it at 40*) | stance number `th+40` |
+
 ## Units and dates {#units-dates}
 
 ### Named standards and derived units
@@ -210,7 +321,7 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bezezem g
 
 **Needs:** [Time poles](dependents.md#dependent-clauses) · [Signed count from now](knowing.md#dated-channel) · [Dated channel](knowing.md#dated-channel)
 
-English *until tomorrow*, *by tomorrow*, and *before next week* count from today. A command or a plan has no channel to count from, so the time pole takes the count itself: a signed measure in its `/b/` runs from now.
+English *until tomorrow* (also *till tomorrow*), *by tomorrow*, and *before next week* count from today. A command or a plan has no channel to count from, so the time pole takes the count itself: a signed measure in its `/b/` runs from now.
 
 > `yel zehodon vaheham hodam bazazam grawol.`
 >
@@ -218,7 +329,7 @@ English *until tomorrow*, *by tomorrow*, and *before next week* count from today
 >
 > "Keep the secret until tomorrow."
 
-Use **`hodam`** for *until*, **`hodal`** for *by*, **`habum`** for *before*, and **`hulam`** for *after*. A negative count runs back from now.
+Use **`hodam`** for *until* / *till*, **`hodal`** for *by*, **`habum`** for *before*, and **`hulam`** for *after*. A negative count runs back from now.
 
 ### Date as books vs event-when
 <a id="as-of-vs-clock"></a>

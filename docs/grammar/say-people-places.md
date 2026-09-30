@@ -162,7 +162,156 @@ Resume the handle like any name. If a short letter-pronoun (through the 2nd vowe
 
 **Compare with:** a [mention](spans.md#loans) packages the **word** (`z{ubuga}` = *the word “abogo”*). A foreign letter-name is a loan or opaque span (<code>z@&lt;FBI&gt;</code>).
 
+### Who does it: *student*, *singer*, *manager* {#agent-nouns}
+
+**Needs:** [Role compounds (the doer)](roles.md#role-compounds) · [Saying someone is a teacher](roles.md#saying-someone-is-a-teacher)
+
+English names a person by what they do (*a singer*, *a manager*). Agazan builds that noun from the event root: person letter, **`a`**, **`x`**, the root, then **-l**. `zaxezehel` is *a singer* from `ezehel` *sing*, and on `/ɡ/` (`gaxezehel`) it says someone is one. Only roots whose everyday sense is the event work this way, so one stem often covers several English jobs.
+
+> `zaxelehal varadal.`
+>
+> z-agent-x-learn | v-write
+>
+> "A student writes."
+
+| Agazan | English | Same root as |
+|--------|---------|--------------|
+| `zaxelehal` | *student* / *pupil* | `elehal` *learn* |
+| `zaxedehol` | *teacher* / *professor* / *coach* | `edehol` *teach* |
+| `zaxarezel` | *researcher* | `arezel` *research* |
+| `zaxubugalahahal` | *reader* | `ubugalahahal` *read* |
+| `zaxagahalanabal` | *driver* | `agahalanabal` *drive* |
+| `zaxumuyulezebel` | *poet* | `umuyulezebel` *poetry* |
+| `zaxamolezul` | *investor* | `amolezul` *investment* |
+| `zaxamolameval` | *employee* | `amolameval` *employment* |
+| `zuexamolameval` | *employer* (the one who bears the cost) | `amolameval` *employment* |
+| `zaxohal` | *participant* | `ohal` *handshake* |
+| `zaxagawul` | *leader* / *chairman* / *president* | `agawul` *crown* |
+| `zaxagabul` | *director* | `agabul` *compass* |
+| `zaxadedel` | *manager* / *executive* / *operator* | `adedel` *administrate* |
+| `zaxalodel` | *adviser* / *consultant* | `alodel` *lantern* |
+| `zaxabal` | *voter* | `abal` *ballot* |
+| `zaxahahol` | *critic* | `ahahol` *judge* |
+| `zaxameval` | *maker* / *producer* / *manufacturer* | `ameval` *manufacture* |
+| `zaxunuzel` | *reporter* / *journalist* | `unuzel` *newspaper* |
+| `zaxaradal` | *writer* | `aradal` *write* |
+| `zaxabohal` | *analyst* | `abohal` *bar-chart* |
+| `zaxageval` | *designer* | `ageval` *craft* |
+| `zaxaguzal` | *engineer* | `aguzal` *construct* |
+| `zaxehol` | *doctor* | `ehol` *pill* |
+| `zaxezehel` | *singer* | `ezehel` *sing* |
+| `zaxumuyul` | *musician* | `umuyul` *sheet-music* |
+| `zaxovel` | *actor* | `ovel` *theater* |
+| `zaxebogal` | *player* | `ebogal` *playground* |
+| `zaxozobol` | *athlete* | `ozobol` *sport* |
+| `zaxowobol` | *competitor* | `owobol` *water-polo* |
+| `zaxevegol` | *winner* | `evegol` *victory* |
+| `zaxagaval` | *supporter* | `agaval` *crutch* |
+| `zaxalaval` | *lover* | `alaval` *love* |
+| `zaxebedel` | *servant* / *server* / *assistant* | `ebedel` *plate* |
+| `zaxazewel` | *worker* | `azewel` *sweat* |
+| `zaxogel` | *dealer* | `ogel` *currency-exchange* |
+| `zaxemagel` | *immigrant* | `emagel` *immigration* |
+| `zaxemal` | *audience* (those who hear) | `emal` *ear* |
+| `zaxogehel` | *terrorist* | `ogehel` *ogre* |
+| `zaxehebam` | *tourist* | `ehebal` *ship* |
+| `zaxahazam` | *neighbor* (add `om bamegun` for *near me*) | `ahazal` *house* |
+
+The one acted on uses **`u`** instead: `zuxenehel` is *a victim* (the one harmed). A plural audience or staff takes plural **-x** (`zaxemalx`).
+
+**Compare with:** for *boss* or *chief*, the tie form names whom they lead: `zalahen gagawum bazawan` is *Alahen is Azawan's boss* ([social relations](relations.md#social-relations)).
+
+### Kin words {#kin-words}
+
+**Needs:** [Kin](numbers-applied.md#kin-generations) · [Adjectives `/ɡ/`](clause.md#adjectives-ɡ)
+
+English *brother*, *sister*, *aunt*, *grandmother* name one layer of the family tree and a sex. Agazan says the layer with the kin number and the sex with **`gemehel`** *male* or **`geveval`** *female*, after `zebezal` *person*. Put the person the tie is from in `/b/` right after the number.
+
+> `zebezal geveval grebazol bazawan.`
+>
+> [z-person | g-female | [g-#-e0 | b-Azawan]]
+>
+> "Azawan's sister."
+
+| English | Agazan |
+|---------|--------|
+| *brother* | `zebezal gemehel grebazol bazawan` |
+| *sister* | `zebezal geveval grebazol bazawan` |
+| *aunt* (a sister of a parent) | `zebezal geveval grebazol bebezal grebuwol bazawan` |
+| *grandmother* (a parent of a parent) | `zebezal geveval grebuwol bebezal grebuwol bazawan` |
+| *generation* | the kin number itself: `grebuwol` parents, `grebazol` siblings, `grebawol` children |
+
+For *uncle* and *grandfather*, use `gemehel` for `geveval`.
+
+### Buying and selling {#buy-sell}
+
+**Needs:** [Exchange](relations.md#exchange)
+
+English *buy* and *sell* are two views of one swap. Agazan has one trading verb, `vogem`, and **`hogem`** names what is given in return. Put what changes hands in `/d/` and what it is swapped for in `/b/`. Money in `/d/` and the goods in `/b/` is *buy*; the goods in `/d/` and money in `/b/` is *sell*.
+
+> `zazawan damol hogem bubugal vogem.`
+>
+> z-Azawan | d-money | [h-in-exchange-for | b-book] | v-convertibility
+>
+> "Azawan buys a book."
+
+> `zazawan dubugal hogem bamol vogem.`
+>
+> z-Azawan | d-book | [h-in-exchange-for | b-money] | v-convertibility
+>
+> "Azawan sells a book."
+
+*Sale*, *purchase* and *trade* name the same swap as a noun; say it as the sentence, then [point back](dependents.md#which-noun) to it.
+
+### Other, another, different {#other-different}
+
+**Needs:** [Unspecified member](joins.md#unspecified-member-r-phrase) · [Similative](relations.md#similative) · [Different from](#different)
+
+English *another dog* and *the other one* name something outside the ones already in play. Put **`zur`** (*something else*) after the kind: `zodogal zur` is *another dog*. Resemblance is the similative: `gomem` + `/b/` is *similar to*, and `homem` is *similarly*. Denying it with **`gul`** (or **`hul`** on an adverb) gives *different* and *differently*.
+
+> `zazawan vahahal dodogal dur.`
+>
+> z-Azawan | v-see | [d-dog | d-something-else]
+>
+> "Azawan sees another dog."
+
+| English | Agazan |
+|---------|--------|
+| *similar* (*similar to Alahen*) | `gomem balahen` |
+| *similarly* (*walks like Alahen*) | `homem balahen` |
+| *different* (*different from Alahen*) | `gomem balahen gul` |
+| *differently* | `homem balahen hul` |
+| *differ* (*Azawan and Alahen differ*) | `zazawan zalahen zal gomem gul` |
+
+For *how much* they differ, use a [measured differential](say-amounts.md#measured-differentials).
+
 ## Pointing back across roles {#pointing-back}
+
+### *Himself*, *herself*, *themselves* {#reflexive}
+
+**Needs:** [Resume](pronouns.md#resume-r)
+
+English *himself*, *herself*, *itself* and *themself* say the object is the same one as the subject. Put the subject's resume (**-r**) in `/d/`. Agazan does not mark sex or number in the resume, so one form covers all of them. With plural **-x** on the subject and the resume it is *themselves*, and with the inclusive *we* (`zohan`) it is *ourselves*.
+
+> `zazawan vahahal dazar.`
+>
+> z-Azawan | v-see | d-←Azawan
+>
+> "Azawan sees themself."
+
+> `zodogalx vahahal dodogarx.`
+>
+> z-dog-x | v-see | d-←dog-x.full-x
+>
+> "The dogs see themselves."
+
+> `zohan vahahal dohar.`
+>
+> z-interlocutors | v-see | d-←interlocutors
+>
+> "We see ourselves."
+
+**Compare with:** for *each other*, join the people and put `hewum` after the verb ([pronouns](pronouns.md#resume-r)).
 
 ### Cross-role inventory {#cross-role-inventory}
 

@@ -16,6 +16,16 @@ describe("unknownWords", () => {
     assert.deepEqual(unknownWords(parse("zebedalahazal vowogal.")), []);
   });
 
+  it("does not report a role compound on a listed compound stem", () => {
+    assert.deepEqual(unknownWords(parse("zaxubugalahahal varadal.")), []);
+  });
+
+  it("still reports a role compound on an unlisted compound stem", () => {
+    const words = unknownWords(parse("zaxagulahazal varadal."));
+    assert.equal(words.length, 1);
+    assert.equal(words[0]!.raw, "zaxagulahazal");
+  });
+
   it("reports a nonsense root with no split", () => {
     const words = unknownWords(parse("zabababal vowogal."));
     assert.equal(words.length, 1);
