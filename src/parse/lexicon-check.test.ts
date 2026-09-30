@@ -6,10 +6,10 @@ import { unknownWords } from "./lexicon-check.js";
 
 describe("unknownWords", () => {
   it("reports a stem that parses but is not a lexicon word, with its compound split", () => {
-    const words = unknownWords(parse("zagulagugal vowogal."));
+    const words = unknownWords(parse("zagulahazal vowogal."));
     assert.equal(words.length, 1);
-    assert.equal(words[0]!.raw, "zagulagugal");
-    assert.deepEqual(words[0]!.maybeCompound, ["agu+l+aguga"]);
+    assert.equal(words[0]!.raw, "zagulahazal");
+    assert.deepEqual(words[0]!.maybeCompound, ["agu+l+ahaza"]);
   });
 
   it("does not report a listed compound stem or a published root", () => {

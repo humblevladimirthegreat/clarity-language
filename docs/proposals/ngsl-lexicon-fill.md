@@ -159,10 +159,10 @@ All 1925 rows have a `fix`. First 789 rows by hand, the rest by six parallel pas
 
 | Fix | Rows |
 |-----|------|
-| Synonym | 1097 |
-| Grammar | 591 |
-| Compound | 142 |
-| Covered | 58 |
+| Synonym | 1090 |
+| Grammar | 589 |
+| Compound | 141 |
+| Covered | 68 |
 | New abstract sense | 18 |
 | Decline | 13 |
 | New root | 5 |
@@ -170,7 +170,7 @@ All 1925 rows have a `fix`. First 789 rows by hand, the rest by six parallel pas
 
 ### Earlier rulings
 
-The coverage check only reads `docs/grammar/`. Editor notes in `docs/meta/` (`syntax-test-results.md`, `register-results.md`) had already settled many of these words: *wide* (abstract width on `agode`), *narrow* and *short* (the comparative *less*), *village* (`ahede` locality), *father* (kin number plus *male*), *table* (`exagude`), *river* (`owode`), *branch* / *root* / *valley* (`x` compounds), *concert* and *hall* (scene compounds), *soldier* (*guard*), *give* (*present*), and about fifty more. Those 58 rows are now `Covered` with the ruling quoted. The triage had proposed conflicting readings for them before this was noticed.
+The coverage check only reads `docs/grammar/`. Editor notes in `docs/meta/` (`syntax-test-results.md`, `register-results.md`) had already settled many of these words: *wide* (abstract width on `agode`), *narrow* and *short* (the comparative *less*), *village* (`ahede` locality), *father* (kin number plus *male*), *table* (`exagude`), *river* (`owode`), *branch* / *root* / *valley* (`x` compounds), *concert* and *hall* (scene compounds), *soldier* (*guard*), *give* (*present*), and about fifty more. Those rows are now `Covered` with the ruling quoted. The triage had proposed conflicting readings for them before this was noticed.
 
 ### Applied
 
@@ -182,14 +182,30 @@ The coverage check only reads `docs/grammar/`. Editor notes in `docs/meta/` (`sy
 - New abstract senses with mnemonics: life, body, mile, softness, sexuality, fruit, circle, metal, swing, neck, toy, burial, clothing, tail, skin, stomach, iron, plastic.
 - *deep* was dropped as a new root: `anaya` (🧅) already has the abstract *depth*, and the new row failed `lint:lexicon`.
 
+### Aliases populated (2026-09-30)
+
+- `english_aliases` now holds 1093 cues on 496 published rows, taken from 1087 of the 1090 Synonym rows. A first pass wrote the 880 rows whose proposal named one root. The other 207 were picked by hand: where a proposal offered two roots the first-listed or most general sense won (*believe* → `egeho` trust, *song* → `uduha`, *bag* → `ahaba`, *college* / *university* → `omobo`). Split rows took the sense an English speaker searching that word most likely means (*take* → `alaga` carry, *close* → `alage` shut, *beat* → `odove` win). *steel* → `ahave` (iron) and *ally* → `emeze` (companionship). `lint:lexicon`, `npm test` and `npm run build` pass. The triage note on each applied row starts `Applied: english_aliases on ROOT`.
+- **Held, 3 rows:** *set* (no single root), *far* (a distance-hook recipe) and *bias* (left to bias-awareness content). Their triage notes start `Held:`.
+- Aliases are for search, so a wrong pick costs a stray search hit, not a wrong meaning. Other senses of a split lemma still need their own cue on the right root; add them when a search shows the gap.
+
+### Compounds added (2026-09-30)
+
+- `lexicon-compounds.csv` gained 125 rows (36 → 160 lines). Each row is left + join + right. The join is **-l** when the left piece is its everyday sense and **-m** when it is the abstract sense (35 rows, such as `agazamezebe` *explanation*). Mnemonics follow one shape, "LEFT specifying RIGHT is …". `npm run check-compounds` (factorization, duplicate stems and glosses, stems that are already roots), `lint:lexicon`, `npm test` and `npm run build` pass.
+- **Merged, 9 lemmas:** lemmas that shared a stem took one row (*invest* with *investment*, *negotiate* with *negotiation*, *evolve*, *summarize*, *jail* with *prison*, *troop* with *army*, *democratic*, *presidential* as *president*). *carbon* became the abstract sense of *coal*.
+- **Not applied, 8 lemmas:** *mom*, *dad*, *husband*, *visitor*, *guest* and *historic* are settled by earlier rulings (*mother*, *father*, *wife*, *guests*, *history*). *racial* stays with the `ezo` / `avaha` cues. *politician* needs a role compound on *government*, since its left side is itself a compound.
+- `src/parse/lexicon-check.test.ts` used *government* (`agulaguga`) as its example of an unlisted compound. It is listed now, so the test uses `agulahazal` (*country house*) instead.
+- The weak ones flagged earlier (*god*, *leather*, *paragraph*, *grammar*, *veteran*, *alcohol*, *philosophy*, *legislation*, *cup*) are in. Templated mnemonics are serviceable, but give those a second look.
+
+### Reconciled rulings (2026-09-30)
+
+- **Other editor notes checked.** `translation-exercises.md`, `drill-generation.md`, `glosses.md`, `grammar-docs.md`, `doc-style.md`, `design-decisions.md` and `cool-features.md` only use the triage words as editor English, so they hold no rulings. `syntax-test-corpus.md` does. Its per-sentence notes settled *need* (`ebo` necessity, `vebom`), *seem* (holder seam), *travel* (`eheba` voyage), *happy* (emotion compose), *prepare* and *ready* (`abu`, `vabum`), *mother* (`eveva` before the kin number), *warm* (*quite hot*), *opposite* (`honovathohan`) and *indeed* (`!` tone mark). Those 10 rows are `Covered`. *long* (`adaha` duration, `hadaham`) and *ever* (`huham … har`) keep their fix but cite the ruling. Stale *wide* / *deep* new-root leftovers in *widely*, *deeply* and *extensive* are corrected.
+- **The script needs no change.** Decisions already in the triage file survive a `--candidates` rerun, so settled words are not reopened. Only a fresh triage file would lose them.
+- **Decided *give*.** The editor kept 🎁 *present* (`ebezo`). No 🫴 root was ever added, so nothing is undone. *get*, *receive*, *provide*, *supply*, *contribute*, *earn*, *income* and *borrow* read the `o` role of *present*.
+
 ## Remaining work
 
-1. **Check the other editor notes for rulings.** `translation-exercises.md`, `drill-generation.md`, `syntax-test-corpus.md`, `glosses.md` and `design-decisions.md` mention some triage words. Only the two results files were reconciled. Extend `scripts/frequency-coverage.ts` to read them so a rerun does not reopen settled words.
-2. **Decide *give*.** The earlier ruling reads *give* as 🎁 *present* (`ebezo`). The triage approved a new 🫴 root without seeing it. Confirm one; the *get*, *receive*, *provide*, *supply*, *contribute*, *earn*, *income* and *borrow* rows depend on it.
-3. **Populate `english_aliases`** from the Synonym rows. Each proposal reads "Add X to ROOT"; drop the part-of-speech prefix, keep one root per row, skip cues that repeat a sense, and skip any row that is now `Covered`. Many picks are low confidence; review before writing.
-4. **Add the compounds** (142 rows, stems shared by near-synonyms such as *visitor* / *guest*). Each needs a real mnemonic and a concrete that differs from every published sense. Validate with `npm run check-compounds` and `node scripts/parse.mjs --check-lexicon`. The weakest: *formula*-style calculation compounds, *philosophy*, *legislation*, *cup*, *leather*, *carbon*, *paragraph*, *grammar*, *veteran*, *racial*, *god*, *alcohol*.
-5. **Write the grammar cues** (591 rows) into `english.md` and the `say-*.md` pages (recipe track only; stage pages never link to it). Nine cues had no `find-english` hit and now have targets: *whereas*, *moreover*, *nevertheless*, *onto* (`aol`), *till*, *anybody*, *somehow* (`homem bor`), *via*, *hi*. Doer-noun stems need checking against `roles.md` (some vowels fail after `x`, for example `zaxovel`).
-6. **Open items.** *corner* needs a new root (register ruling L-02) and an emoji. *sex* is a Human review: the topic stays, gendered pairs are allowed, decide whether a neutral root is also wanted. Units: *foot* (`uvuda`), *pound* and other imperial units still need abstract senses.
-7. **Log the Decline rule** in [`design-decisions.md`](../meta/design-decisions.md): bare evaluatives (*good*, *bad*, *nice*, *great*, *wonderful*, *excellent*, *quality*, *lovely*, *terrible*, *awful*, *horrible*, *fantastic*, *brilliant*) are not roots; the routes are listed above.
-8. **Run `npm run lint:lexicon`, `npm run build` and `npm test`** after each batch of applied rows.
+1. **Write the grammar cues** (589 rows) into `english.md` and the `say-*.md` pages (recipe track only; stage pages never link to it). Nine cues had no `find-english` hit and now have targets: *whereas*, *moreover*, *nevertheless*, *onto* (`aol`), *till*, *anybody*, *somehow* (`homem bor`), *via*, *hi*. Doer-noun stems need checking against `roles.md` (some vowels fail after `x`, for example `zaxovel`).
+2. **Open items.** *corner* needs a new root (register ruling L-02) and an emoji. *sex* is a Human review: the topic stays, gendered pairs are allowed, decide whether a neutral root is also wanted. Units: *foot* (`uvuda`), *pound* and other imperial units still need abstract senses.
+3. **Log the Decline rule** in [`design-decisions.md`](../meta/design-decisions.md): bare evaluatives (*good*, *bad*, *nice*, *great*, *wonderful*, *excellent*, *quality*, *lovely*, *terrible*, *awful*, *horrible*, *fantastic*, *brilliant*) are not roots; the routes are listed above.
+4. **Run `npm run lint:lexicon`, `npm run build` and `npm test`** after each batch of applied rows.
 
