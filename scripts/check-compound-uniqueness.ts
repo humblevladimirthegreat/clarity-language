@@ -40,8 +40,12 @@ function main(): void {
       .map((row) => row.root.trim())
       .filter(Boolean),
   );
+  const published = parsePublishedCsv(readFileSync(publishedPath, "utf8"));
+  const publishedSenses = new Set(
+    published.flatMap((row) => [row.concrete, row.abstract]).map((s) => s.trim().toLowerCase()).filter(Boolean),
+  );
   const compounds = parseCompoundCsv(readFileSync(compoundsPath, "utf8"));
-  const errors: CompoundValidationError[] = validateCompoundRows(compounds, publishedRoots);
+  const errors: CompoundValidationError[] = validateCompoundRows(compounds, publishedRoots, publishedSenses);
 
   if (json) {
     console.log(JSON.stringify({ ok: errors.length === 0, count: compounds.length, errors }, null, 2));

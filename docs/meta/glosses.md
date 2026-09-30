@@ -172,6 +172,13 @@ Packed form: `v:see; m.v:intuit; m.h:inside`. Bare keys (`v:see`) are **concrete
 
 Lexicon search indexes those lemmas. Morph uses the packed lemma for that role letter and ending (`v-see`, `w-very`); other roles still use the sense-root (`z-eye`).
 
+### Search aliases (`english_aliases`)
+<a id="english-aliases"></a>
+
+`english_aliases` is a separate column of **search-only** English cues, `;`-separated and lowercase (`say; speak`). Lexicon search indexes them, so a learner who types *speak* finds the root glossed *tell*. They never reach a morph gloss, they carry no part of speech, and they do not claim a second meaning.
+
+Do not use `english_by_pos` for this. That column is role English: one lemma per role letter per sense, used in glosses (`v-see`). A cue that repeats the concrete or abstract sense, repeats another cue on the row, or is empty is an error in the loader.
+
 ## Morph gloss format
 
 ### Word shape

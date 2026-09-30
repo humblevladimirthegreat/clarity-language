@@ -97,7 +97,8 @@ Work top rank first, about 200 gaps per batch. Each gap gets one fix:
 | Fix | When | Where it lands |
 |-----|------|----------------|
 | **Grammar** | Agazan says it with a construction, not a word | Recipe in `say-*.md` if no page already teaches that English cue |
-| **Synonym** | An existing root already means it; the gloss just used another English word | Add the word to `english_by_pos` or the recipe track so `find-english` hits it |
+| **Covered** | An earlier editor ruling already settled it (see [Earlier rulings](#earlier-rulings)) | Nothing new; add the ruling's reading to the recipe track if `find-english` misses it |
+| **Synonym** | An existing root already means it; the gloss just used another English word | Add the word to that root's `english_aliases` (search only; not `english_by_pos`, which is role English for morph glosses) |
 | **Compound** | Two published roots combine clearly | `lexicon-compounds.csv` |
 | **New abstract sense** | A published root's picture fits, and its `abstract` cell is empty | Fill that row's `abstract` and `mnemonic` |
 | **New root** | None of the above, and a fitting emoji exists | New emoji-seeded row (propose the emoji) |
@@ -108,14 +109,14 @@ A lemma with two unrelated senses (*mean*, *kind*, *like*) is split into one row
 
 ### 5. Apply approved rows
 
-Recipes, `english_by_pos` additions, compounds, and new abstract senses are edited directly. New roots follow the existing path: emoji seed, `concrete` / `abstract` / `mnemonic`, `npm run convert-word -- --lexicon --only <concrete>`, then `npm run lint:lexicon`, `npm run build`, and `npm test`. New roots take normal placement. NGSL rank does **not** earn a two-syllable slot.
+Recipes, `english_aliases` entries, compounds, and new abstract senses are edited directly. New roots follow the existing path: emoji seed, `concrete` / `abstract` / `mnemonic`, `npm run convert-word -- --lexicon --only <concrete>`, then `npm run lint:lexicon`, `npm run build`, and `npm test`. New roots take normal placement. NGSL rank does **not** earn a two-syllable slot.
 
 ## Output
 
 - `scripts/frequency-coverage.ts` — the coverage check (`--gaps-only`, `--json`, `--candidates`).
 - `tmp/frequency-coverage.csv` — generated, not committed: `rank, lemma, per_million, tag, hit`.
 - `docs/proposals/ngsl-lexicon-mentions.csv` — step 2 verdicts.
-- `docs/proposals/ngsl-lexicon-triage.csv` — one row per gap (or gap sense): `rank, lemma, sense, stage, candidates, grammar_leads, fix, proposal, note`. Steps 3–4 fill it.
+- `docs/proposals/ngsl-lexicon-triage.csv` — one row per gap lemma: `rank, lemma, sense, stage, candidates, grammar_leads, fix, proposal, note`. Steps 3–4 fill it. Senses are described in `proposal` instead of split into rows, because a search alias does not need a sense.
 
 ## Settled
 
@@ -123,6 +124,11 @@ Recipes, `english_by_pos` additions, compounds, and new abstract senses are edit
 - **Part of speech:** untagged lemmas, with a sense split during triage.
 - **Two-syllable slots:** rank does not earn a shorter root. New roots are placed as usual.
 - **No good emoji:** flagged for human review, not seeded loosely.
+- **Synonyms are search aliases:** a new `english_aliases` column in `lexicon-published.csv` (search-only, no part of speech). `english_by_pos` stays role English. Sense splits are not needed for aliases.
+- **Compounds have no emoji column.** `lexicon-compounds.csv` is `stem, left, join, right, concrete, abstract, mnemonic`.
+- **Imperial units are allowed.** Units are abstract senses on an existing root (*mile* on `ubuda`).
+- **Gendered kin pairs are allowed.**
+- **Evaluatives are Declined as bare roots.** *good*, *bad*, *nice*, *great*, *wonderful*, *excellent*, *quality* and their near neighbours route to met / unmet sakes, ranks against a bar, or a specific content root.
 - **Flashcards:** out of scope.
 
 ## Coverage results (2026-09-30, after steps 1–3)
@@ -146,3 +152,44 @@ The triage file has 1925 rows (gap + example):
 | Neither | 594 | Very likely real lexical gaps (*government*, *student*, *food*, *sell*, *war*, *happy*, *explain*) — straight to triage |
 
 A few "neither" rows are grammar the leads miss (reflexives such as *himself*, *themselves*). Triage has not started.
+
+## Triage results (2026-09-30, after the full pass)
+
+All 1925 rows have a `fix`. First 789 rows by hand, the rest by six parallel passes from a written rubric, then two review passes.
+
+| Fix | Rows |
+|-----|------|
+| Synonym | 1097 |
+| Grammar | 591 |
+| Compound | 142 |
+| Covered | 58 |
+| New abstract sense | 18 |
+| Decline | 13 |
+| New root | 5 |
+| Human review | 1 |
+
+### Earlier rulings
+
+The coverage check only reads `docs/grammar/`. Editor notes in `docs/meta/` (`syntax-test-results.md`, `register-results.md`) had already settled many of these words: *wide* (abstract width on `agode`), *narrow* and *short* (the comparative *less*), *village* (`ahede` locality), *father* (kin number plus *male*), *table* (`exagude`), *river* (`owode`), *branch* / *root* / *valley* (`x` compounds), *concert* and *hall* (scene compounds), *soldier* (*guard*), *give* (*present*), and about fifty more. Those 58 rows are now `Covered` with the ruling quoted. The triage had proposed conflicting readings for them before this was noticed.
+
+### Applied
+
+- `lexicon-published.csv` has the new `english_aliases` column (empty), loaded and indexed by `src/lexicon-search.ts`, with tests.
+- `lexicon-compounds.csv` lost its `emoji` column (code, data, tests).
+- `node scripts/parse.mjs --check-lexicon` lists words the lexicon does not know. The earlier "parses" checks on proposed compound stems proved nothing, because the parser reads any well-formed root.
+- `validateCompoundRows` now also rejects a missing mnemonic, a repeated root, and a gloss that duplicates a published sense or another compound.
+- New roots: 🆕 `unuhe` (novelty), 🏘️ `ahezo` (town), 🤏 `eboho` (inch), 🏚️ `ahezu` (ruin).
+- New abstract senses with mnemonics: life, body, mile, softness, sexuality, fruit, circle, metal, swing, neck, toy, burial, clothing, tail, skin, stomach, iron, plastic.
+- *deep* was dropped as a new root: `anaya` (🧅) already has the abstract *depth*, and the new row failed `lint:lexicon`.
+
+## Remaining work
+
+1. **Check the other editor notes for rulings.** `translation-exercises.md`, `drill-generation.md`, `syntax-test-corpus.md`, `glosses.md` and `design-decisions.md` mention some triage words. Only the two results files were reconciled. Extend `scripts/frequency-coverage.ts` to read them so a rerun does not reopen settled words.
+2. **Decide *give*.** The earlier ruling reads *give* as 🎁 *present* (`ebezo`). The triage approved a new 🫴 root without seeing it. Confirm one; the *get*, *receive*, *provide*, *supply*, *contribute*, *earn*, *income* and *borrow* rows depend on it.
+3. **Populate `english_aliases`** from the Synonym rows. Each proposal reads "Add X to ROOT"; drop the part-of-speech prefix, keep one root per row, skip cues that repeat a sense, and skip any row that is now `Covered`. Many picks are low confidence; review before writing.
+4. **Add the compounds** (142 rows, stems shared by near-synonyms such as *visitor* / *guest*). Each needs a real mnemonic and a concrete that differs from every published sense. Validate with `npm run check-compounds` and `node scripts/parse.mjs --check-lexicon`. The weakest: *formula*-style calculation compounds, *philosophy*, *legislation*, *cup*, *leather*, *carbon*, *paragraph*, *grammar*, *veteran*, *racial*, *god*, *alcohol*.
+5. **Write the grammar cues** (591 rows) into `english.md` and the `say-*.md` pages (recipe track only; stage pages never link to it). Nine cues had no `find-english` hit and now have targets: *whereas*, *moreover*, *nevertheless*, *onto* (`aol`), *till*, *anybody*, *somehow* (`homem bor`), *via*, *hi*. Doer-noun stems need checking against `roles.md` (some vowels fail after `x`, for example `zaxovel`).
+6. **Open items.** *corner* needs a new root (register ruling L-02) and an emoji. *sex* is a Human review: the topic stays, gendered pairs are allowed, decide whether a neutral root is also wanted. Units: *foot* (`uvuda`), *pound* and other imperial units still need abstract senses.
+7. **Log the Decline rule** in [`design-decisions.md`](../meta/design-decisions.md): bare evaluatives (*good*, *bad*, *nice*, *great*, *wonderful*, *excellent*, *quality*, *lovely*, *terrible*, *awful*, *horrible*, *fantastic*, *brilliant*) are not roots; the routes are listed above.
+8. **Run `npm run lint:lexicon`, `npm run build` and `npm test`** after each batch of applied rows.
+

@@ -11,7 +11,8 @@ export type RetiePair = {
 
 /** A lexical compound whose stem moved because a part root moved (`abedelohohu` → `abedelahaza`). */
 export type CompoundStemPair = {
-  emoji: string;
+  /** Compound rows have no emoji; kept empty for the shared pair shape. */
+  emoji?: string;
   oldStem: string;
   newStem: string;
 };
@@ -90,7 +91,7 @@ export function parseRetieMapJson(text: string): Map<string, string> {
   }
   return buildRootMap([
     ...pairs,
-    ...compounds.map((c) => ({ emoji: c.emoji, literal: "", oldRoot: c.oldStem, newRoot: c.newStem })),
+    ...compounds.map((c) => ({ emoji: c.emoji ?? "", literal: "", oldRoot: c.oldStem, newRoot: c.newStem })),
   ]);
 }
 

@@ -8,6 +8,7 @@ import {
   attachOverlays,
   createLexiconIndex,
   createOverlayIndex,
+  parseEnglishAliases,
   parseEnglishByPos,
   parseOverlayCsv,
   parsePublishedCsv,
@@ -64,6 +65,30 @@ describe("parseEnglishByPos", () => {
 
   it("rejects m. when there is no abstract sense", () => {
     assert.throws(() => parseEnglishByPos("m.v:intuit", { concrete: "hand" }));
+  });
+});
+
+describe("parseEnglishAliases", () => {
+  it("reads ;-separated search cues", () => {
+    assert.deepEqual(parseEnglishAliases("say; speak"), ["say", "speak"]);
+    assert.deepEqual(parseEnglishAliases(""), []);
+  });
+
+  it("rejects a cue that repeats the concrete or abstract sense, duplicates, and empty pieces", () => {
+    assert.throws(() => parseEnglishAliases("tell", { concrete: "tell" }), /repeats the concrete or abstract/);
+    assert.throws(() => parseEnglishAliases("say; say"), /duplicate/);
+    assert.throws(() => parseEnglishAliases("say;;speak"), /empty piece/);
+    assert.throws(() => parseEnglishAliases("v:say"), /bad english_aliases/);
+  });
+
+  it("makes search find a root by an alias without touching its role English", () => {
+    const rows = parsePublishedCsv(readFileSync(publishedPath, "utf8"));
+    const index = createLexiconIndex([
+      { ...rows[0]!, concrete: "tell", abstract: "", englishAliases: ["say", "speak"] },
+    ]);
+    const hits = searchLexicon(index, [{ ...rows[0]!, concrete: "tell", abstract: "", englishAliases: ["say", "speak"] }], "speak");
+    assert.equal(hits.length, 1);
+    assert.ok(hits[0]!.matchFields.includes("english_aliases"));
   });
 });
 

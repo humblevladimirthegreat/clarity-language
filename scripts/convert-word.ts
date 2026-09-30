@@ -292,7 +292,7 @@ async function convertLexicon(only: string[]): Promise<void> {
   const retieMapPath = join(REPO_ROOT, RETIE_MAP_RELATIVE_PATH);
   const compoundStems = compoundRows.flatMap((row, i) => {
     const newStem = retiedCompounds.rows[i]!.stem;
-    return newStem === row.stem ? [] : [{ emoji: row.emoji, oldStem: row.stem, newStem }];
+    return newStem === row.stem ? [] : [{ oldStem: row.stem, newStem }];
   });
   writeFileSync(retieMapPath, serializeRetieMap(retiePairs, undefined, compoundStems));
 

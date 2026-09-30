@@ -3,7 +3,6 @@ import { isExtraNounHook } from "./parse/hook-compounds.js";
 import { isAgazanRootShape } from "./root-shape.js";
 
 export const COMPOUND_HEADERS = [
-  "emoji",
   "stem",
   "left",
   "join",
@@ -16,7 +15,6 @@ export const COMPOUND_HEADERS = [
 export type CompoundJoin = "l" | "m" | "n" | "r";
 
 export type CompoundRow = {
-  emoji: string;
   stem: string;
   left: string;
   join: CompoundJoin;
@@ -110,7 +108,6 @@ export function parseCompoundCsv(text: string): CompoundRow[] {
   }
 
   return rows.map((row) => ({
-    emoji: row.emoji ?? "",
     stem: row.stem ?? "",
     left: row.left ?? "",
     join: (row.join ?? "") as CompoundJoin,
@@ -139,12 +136,18 @@ export function factorizationsForStem(
   return hits;
 }
 
+/**
+ * `publishedSenses` (lowercase concrete and abstract glosses of the published rows) lets the check
+ * catch a compound that only repeats a word the lexicon already has.
+ */
 export function validateCompoundRows(
   rows: CompoundRow[],
   publishedRoots: ReadonlySet<string>,
+  publishedSenses: ReadonlySet<string> = new Set(),
 ): CompoundValidationError[] {
   const errors: CompoundValidationError[] = [];
   const seenStems = new Set<string>();
+  const seenSenses = new Map<string, string>();
 
   for (let index = 0; index < rows.length; index++) {
     const row = rows[index]!;
@@ -225,8 +228,28 @@ export function validateCompoundRows(
       }
     }
 
+    if (left && left === right) {
+      errors.push({ row: rowNum, stem, reason: `left and right are the same root (${left})` });
+    }
+
     if (!row.concrete.trim()) {
       errors.push({ row: rowNum, stem, reason: "missing literal gloss" });
+    }
+    if (!row.mnemonic.trim()) {
+      errors.push({ row: rowNum, stem, reason: "missing mnemonic" });
+    }
+
+    for (const sense of [row.concrete, row.abstract]) {
+      const key = sense.trim().toLowerCase();
+      if (!key) continue;
+      if (publishedSenses.has(key)) {
+        errors.push({ row: rowNum, stem, reason: `gloss "${key}" is already a published sense` });
+      }
+      const earlier = seenSenses.get(key);
+      if (earlier && earlier !== stem) {
+        errors.push({ row: rowNum, stem, reason: `gloss "${key}" is already the sense of ${earlier}` });
+      }
+      seenSenses.set(key, stem);
     }
   }
 

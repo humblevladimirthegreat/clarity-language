@@ -25,6 +25,8 @@ export type PublishedRow = {
   mnemonic: string;
   englishByPos: string;
   posEnglish: PosEnglishMap;
+  /** Search-only English cues (`english_aliases`); never used for morph glosses. */
+  englishAliases?: string[];
 };
 
 export const OVERLAY_KINDS = [
@@ -90,11 +92,11 @@ type IndexedDoc = PublishedRow & {
   id: number;
   concreteTokens: string;
   posEnglishLemmas: string;
+  englishAliasesText: string;
 };
 
 type CompoundIndexedDoc = {
   id: number;
-  emoji: string;
   stem: string;
   concrete: string;
   concreteTokens: string;
@@ -124,6 +126,7 @@ const PUBLISHED_HEADERS = [
   "abstract",
   "mnemonic",
   "english_by_pos",
+  "english_aliases",
 ] as const;
 const OVERLAY_HEADERS = [
   "sense_form",
@@ -146,6 +149,7 @@ const SEARCH_FIELDS = [
   "abstract",
   "mnemonic",
   "posEnglishLemmas",
+  "englishAliasesText",
 ] as const;
 const COMPOUND_SEARCH_FIELDS = ["concrete", "concreteTokens", "stem", "abstract", "mnemonic"] as const;
 const OVERLAY_SEARCH_FIELDS = [
@@ -164,6 +168,7 @@ const FIELD_BOOSTS: Record<(typeof SEARCH_FIELDS)[number], number> = {
   root: 1.5,
   concreteTokens: 1.5,
   posEnglishLemmas: 1.8,
+  englishAliasesText: 1.6,
   mnemonic: 1,
 };
 
@@ -213,6 +218,8 @@ const MATCH_FIELD_LABELS: Record<string, string> = {
   mnemonic: "mnemonic",
   posEnglishLemmas: "english_by_pos",
   englishByPos: "english_by_pos",
+  englishAliasesText: "english_aliases",
+  englishAliases: "english_aliases",
   emoji: "emoji",
   senseForm: "sense_form",
   hostRoot: "sense_form",
@@ -305,6 +312,40 @@ export function parseEnglishByPos(
   return map;
 }
 
+const ENGLISH_ALIAS_RE = /^[a-z][a-z' -]*$/;
+
+/**
+ * Search-only English cues, `;`-separated (`say; speak`). They help lexicon search find a root
+ * by an English word the gloss does not use. They never change a morph gloss, so they carry no
+ * part of speech, and a cue that repeats the concrete or abstract sense is redundant.
+ */
+export function parseEnglishAliases(
+  raw: string,
+  opts?: { concrete?: string; abstract?: string; label?: string },
+): string[] {
+  const packed = raw.trim();
+  if (!packed) return [];
+  const label = opts?.label ? `${opts.label}: ` : "";
+  const concrete = (opts?.concrete ?? "").trim().toLowerCase();
+  const abstract = (opts?.abstract ?? "").trim().toLowerCase();
+  const seen = new Set<string>();
+  const aliases: string[] = [];
+  for (const chunk of packed.split(";")) {
+    const alias = chunk.trim();
+    if (!alias) throw new Error(`${label}empty piece in english_aliases`);
+    if (!ENGLISH_ALIAS_RE.test(alias)) {
+      throw new Error(`${label}bad english_aliases piece "${alias}" (lowercase English words only)`);
+    }
+    if (alias === concrete || alias === abstract) {
+      throw new Error(`${label}english_aliases "${alias}" repeats the concrete or abstract sense`);
+    }
+    if (seen.has(alias)) throw new Error(`${label}duplicate english_aliases "${alias}"`);
+    seen.add(alias);
+    aliases.push(alias);
+  }
+  return aliases;
+}
+
 export function parsePublishedCsv(text: string): PublishedRow[] {
   const { headers, rows } = parseCsv(text);
   if (headers.join(",") !== PUBLISHED_HEADERS.join(",")) {
@@ -324,6 +365,7 @@ export function parsePublishedCsv(text: string): PublishedRow[] {
       mnemonic: row.mnemonic ?? "",
       englishByPos,
       posEnglish: parseEnglishByPos(englishByPos, { concrete, abstract, label }),
+      englishAliases: parseEnglishAliases(row.english_aliases ?? "", { concrete, abstract, label }),
     };
   });
 }
@@ -562,7 +604,6 @@ export function attachOverlays(rows: PublishedRow[], overlays: OverlayRow[]): Ma
 export function createCompoundIndex(rows: CompoundRow[]): MiniSearch<CompoundIndexedDoc> {
   const docs: CompoundIndexedDoc[] = rows.map((row, id) => ({
     id,
-    emoji: row.emoji,
     stem: row.stem.toLowerCase(),
     concrete: row.concrete.toLowerCase(),
     concreteTokens: tokenizeConcrete(row.concrete),
@@ -572,7 +613,7 @@ export function createCompoundIndex(rows: CompoundRow[]): MiniSearch<CompoundInd
 
   const index = new MiniSearch<CompoundIndexedDoc>({
     fields: [...COMPOUND_SEARCH_FIELDS],
-    storeFields: ["emoji", "stem", "concrete", "abstract", "mnemonic"],
+    storeFields: ["stem", "concrete", "abstract", "mnemonic"],
     searchOptions: COMPOUND_SEARCH_OPTIONS,
   });
 
@@ -592,11 +633,12 @@ export function createLexiconIndex(rows: PublishedRow[]): MiniSearch<IndexedDoc>
     englishByPos: row.englishByPos,
     posEnglish: row.posEnglish,
     posEnglishLemmas: posEnglishLemmaList(row.posEnglish).join(" "),
+    englishAliasesText: (row.englishAliases ?? []).join(" "),
   }));
 
   const index = new MiniSearch<IndexedDoc>({
     fields: [...SEARCH_FIELDS],
-    storeFields: ["emoji", "concrete", "root", "abstract", "mnemonic", "englishByPos"],
+    storeFields: ["emoji", "concrete", "root", "abstract", "mnemonic", "englishByPos", "englishAliases"],
     searchOptions: SEARCH_OPTIONS,
   });
 
@@ -680,6 +722,10 @@ function exactMatchBoost(row: PublishedRow, query: string): { boost: number; fie
     boost += 90;
     fields.push("english_by_pos");
   }
+  if ((row.englishAliases ?? []).some((alias) => alias === q)) {
+    boost += 80;
+    fields.push("english_aliases");
+  }
 
   return { boost, fields };
 }
@@ -749,6 +795,7 @@ function overlayOnlyResult(overlay: OverlayRow, score: number, matchFields: stri
     mnemonic: overlay.mnemonic,
     englishByPos: "",
     posEnglish: emptyPosEnglish(),
+    englishAliases: [],
     score,
     matchFields,
     overlays: [overlay],
@@ -787,13 +834,14 @@ function compoundResultFromRow(
   matchFields: string[],
 ): LexiconSearchResult {
   return {
-    emoji: row.emoji,
+    emoji: "",
     concrete: row.concrete,
     root: row.stem,
     abstract: row.abstract,
     mnemonic: row.mnemonic,
     englishByPos: "",
     posEnglish: emptyPosEnglish(),
+    englishAliases: [],
     score,
     matchFields,
     overlays: [],

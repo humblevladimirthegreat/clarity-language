@@ -1,36 +1,36 @@
-emoji,stem,left,join,right,concrete,abstract,mnemonic
-🛏️,ebedalahaza,ebeda,l,ahaza,bedroom,sanctum,bed specifying house is the sleeping room; sanctum is a guarded inner place
-🚿,abevalahaza,abeva,l,ahaza,bathroom,,bath specifying house is the washing room
-🧥,erehelogodu,erehe,l,ogodu,raincoat,,rain specifying coat is weather-shell clothing
-📗,uzugulubuga,uzugu,l,ubuga,textbook,canon,school specifying book is the assigned text; canon is the set text treated as given
-📓,aradalubuga,arada,l,ubuga,writing-book,,writing specifying book is for notes
-🚒,avahelahaza,avahe,l,ahaza,firehouse,,fire specifying house is the station that answers fire
-🪴,avavulahaza,avavu,l,ahaza,greenhouse,forcing,flower specifying house grows plants under glass; forcing is heat-driven growth you cannot see as a room
-🫂,onalebeza,ona,l,ebeza,friend,allegiance,bond specifying person is a friend; allegiance is the unobservable sidedness
-👨‍👩‍👧,ahadelebeza,ahade,l,ebeza,parent,,child specifying person is a parent
-🔔,odolebevo,odo,l,ebevo,doorbell,,door specifying bell is the call at the threshold
-🏫,ahadeluzugu,ahade,l,uzugu,kindergarten,,child specifying school is early-years school
-🏠,ahazalagudu,ahaza,l,agudu,floor,,house specifying ground is the floor
-🪵,uwalagoza,uwa,l,agoza,fence,,wood specifying blockage is a fence
-💮,avavulagawu,avavu,l,agawu,wreath,,flower specifying crown is a wreath
-🌰,ehazaledehu,ehaza,l,edehu,oak,,chestnut specifying tree is the oak
-🚶,owogalal,owoga,l,al,enter,,walk cited -l plus in is enter
-🚶,owogalam,owoga,l,am,mill-amid,,walk cited -l plus amid is mill-amid
-🚶,owogalaol,owoga,l,aol,mount,,walk cited -l plus on is mount
-🚶,owogalaom,owoga,l,aom,cover,,walk cited -l plus over is cover
-🚶,owogalol,owoga,l,ol,attend,,walk cited -l plus at is attend
-🚶,owogalom,owoga,l,om,adjoin,,walk cited -l plus near is adjoin
-🚶,owogaloel,owoga,l,oel,head-for,,walk cited -l plus toward is head-for
-🚶,owogaloem,owoga,l,oem,orient,,walk cited -l plus in-the-direction-of is orient
-🚶,owogalul,owoga,l,ul,leave,,walk cited -l plus from is leave
-🚶,owogalum,owoga,l,um,recede,,walk cited -l plus away-from is recede
-🚶,owogalual,owoga,l,ual,exit,,walk cited -l plus out-of is exit
-🚶,owogaluam,owoga,l,uam,pick-out,,walk cited -l plus out-from-among is pick-out
-🚶,owogaluol,owoga,l,uol,traverse,,walk cited -l plus through is traverse
-🚶,owogaluom,owoga,l,uom,relay,,walk cited -l plus by-way-of is relay
-🚶,owogalel,owoga,l,el,serve,,walk cited -l plus for is serve
-🚶,owogalem,owoga,l,em,have-in-use,,walk cited -l plus used-by is have-in-use
-🚶,owogalael,owoga,l,ael,wield,,walk cited -l plus using is wield
-🚶,owogalaem,owoga,l,aem,channel,,walk cited -l plus by is channel
-🚶,owogaluel,owoga,l,uel,oppose,,walk cited -l plus against is oppose
-🚶,owogaluem,owoga,l,uem,defy,,walk cited -l plus contrary-to is defy
+stem,left,join,right,concrete,abstract,mnemonic
+ebedalahaza,ebeda,l,ahaza,bedroom,sanctum,bed specifying house is the sleeping room; sanctum is a guarded inner place
+abevalahaza,abeva,l,ahaza,bathroom,,bath specifying house is the washing room
+erehelogodu,erehe,l,ogodu,raincoat,,rain specifying coat is weather-shell clothing
+uzugulubuga,uzugu,l,ubuga,textbook,canon,school specifying book is the assigned text; canon is the set text treated as given
+aradalubuga,arada,l,ubuga,writing-book,,writing specifying book is for notes
+avahelahaza,avahe,l,ahaza,firehouse,,fire specifying house is the station that answers fire
+avavulahaza,avavu,l,ahaza,greenhouse,forcing,flower specifying house grows plants under glass; forcing is heat-driven growth you cannot see as a room
+onalebeza,ona,l,ebeza,friend,allegiance,bond specifying person is a friend; allegiance is the unobservable sidedness
+ahadelebeza,ahade,l,ebeza,parent,,child specifying person is a parent
+odolebevo,odo,l,ebevo,doorbell,,door specifying bell is the call at the threshold
+ahadeluzugu,ahade,l,uzugu,kindergarten,,child specifying school is early-years school
+ahazalagudu,ahaza,l,agudu,floor,,house specifying ground is the floor
+uwalagoza,uwa,l,agoza,fence,,wood specifying blockage is a fence
+avavulagawu,avavu,l,agawu,wreath,,flower specifying crown is a wreath
+ehazaledehu,ehaza,l,edehu,oak,,chestnut specifying tree is the oak
+owogalal,owoga,l,al,enter,,walk cited -l plus in is enter
+owogalam,owoga,l,am,mill-amid,,walk cited -l plus amid is mill-amid
+owogalaol,owoga,l,aol,mount,,walk cited -l plus on is mount
+owogalaom,owoga,l,aom,cover,,walk cited -l plus over is cover
+owogalol,owoga,l,ol,attend,,walk cited -l plus at is attend
+owogalom,owoga,l,om,adjoin,,walk cited -l plus near is adjoin
+owogaloel,owoga,l,oel,head-for,,walk cited -l plus toward is head-for
+owogaloem,owoga,l,oem,orient,,walk cited -l plus in-the-direction-of is orient
+owogalul,owoga,l,ul,leave,,walk cited -l plus from is leave
+owogalum,owoga,l,um,recede,,walk cited -l plus away-from is recede
+owogalual,owoga,l,ual,exit,,walk cited -l plus out-of is exit
+owogaluam,owoga,l,uam,pick-out,,walk cited -l plus out-from-among is pick-out
+owogaluol,owoga,l,uol,traverse,,walk cited -l plus through is traverse
+owogaluom,owoga,l,uom,relay,,walk cited -l plus by-way-of is relay
+owogalel,owoga,l,el,serve,,walk cited -l plus for is serve
+owogalem,owoga,l,em,have-in-use,,walk cited -l plus used-by is have-in-use
+owogalael,owoga,l,ael,wield,,walk cited -l plus using is wield
+owogalaem,owoga,l,aem,channel,,walk cited -l plus by is channel
+owogaluel,owoga,l,uel,oppose,,walk cited -l plus against is oppose
+owogaluem,owoga,l,uem,defy,,walk cited -l plus contrary-to is defy

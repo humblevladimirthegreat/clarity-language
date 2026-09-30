@@ -32,14 +32,13 @@ describe("lexicon-compounds", () => {
     const errors = validateCompoundRows(
       [
         {
-          emoji: "",
           stem,
           left: stem.slice(0, 3),
           join: "l",
           right: "abede",
           concrete: "bad",
           abstract: "",
-          mnemonic: "",
+          mnemonic: "note",
         },
       ],
       publishedRoots,
@@ -52,14 +51,13 @@ describe("lexicon-compounds", () => {
     const errors = validateCompoundRows(
       [
         {
-          emoji: "",
           stem: "unululuhu",
           left: "unu",
           join: "l",
           right: "uluhu",
           concrete: "sunlight",
           abstract: "",
-          mnemonic: "",
+          mnemonic: "note",
         },
       ],
       published,
@@ -73,14 +71,13 @@ describe("lexicon-compounds", () => {
     const errors = validateCompoundRows(
       [
         {
-          emoji: "",
           stem: "owogalul",
           left: "owoga",
           join: "l",
           right: "ul",
           concrete: "leave",
           abstract: "",
-          mnemonic: "",
+          mnemonic: "note",
         },
       ],
       publishedRoots,
@@ -92,14 +89,13 @@ describe("lexicon-compounds", () => {
     const { rows } = retieCompoundRows(
       [
         {
-          emoji: "",
           stem: "awalalul",
           left: "awala",
           join: "l",
           right: "ul",
           concrete: "leave",
           abstract: "",
-          mnemonic: "",
+          mnemonic: "note",
         },
       ],
       new Map([["ul", "ogogo"]]),
@@ -112,14 +108,13 @@ describe("lexicon-compounds", () => {
     const { rows, changes } = retieCompoundRows(
       [
         {
-          emoji: "🛏️",
           stem: "ebedalahaza",
           left: "abede",
           join: "l",
           right: "ohohu",
           concrete: "bedroom",
           abstract: "",
-          mnemonic: "",
+          mnemonic: "note",
         },
       ],
       new Map([["ohohu", "ahaha"]]),
@@ -128,5 +123,23 @@ describe("lexicon-compounds", () => {
     assert.equal(rows[0]?.left, "abede");
     assert.equal(rows[0]?.right, "ahaha");
     assert.equal(changes.some((c) => c.field === "stem" && c.to === "abedelahaha"), true);
+  });
+
+  it("rejects a compound with no mnemonic, a repeated root, or a gloss the lexicon already has", () => {
+    const [a, b] = [...publishedRoots];
+    const row = {
+      stem: `${a}l${b}`,
+      left: a!,
+      join: "l" as const,
+      right: b!,
+      concrete: "bedroom",
+      abstract: "",
+      mnemonic: "",
+    };
+    const reasons = validateCompoundRows([row], publishedRoots, new Set(["bedroom"])).map((e) => e.reason);
+    assert.ok(reasons.includes("missing mnemonic"));
+    assert.ok(reasons.some((r) => r.includes("already a published sense")));
+    const same = validateCompoundRows([{ ...row, stem: `${a}l${a}`, right: a!, mnemonic: "m" }], publishedRoots);
+    assert.ok(same.some((e) => e.reason.includes("same root")));
   });
 });
