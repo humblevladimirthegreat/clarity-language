@@ -22,6 +22,144 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 | *whereas* (two claims set against each other) | **`xazel`** before the second claim, or **`hazem barl`** inside one sentence |
 | *moreover* / *furthermore* (discourse) | **`ael …`** opens the sentence that goes further; **`al …`** adds a separate point ([stacked discourse hooks](hooks.md#stacked-discourse)) |
 
+### Obviously, apparently, guess, assume {#stance-adverbs}
+
+**Needs:** [Evidence strength](knowing.md#evidence-strength) · [MAY](knowing.md#may) · [Hold endings (NOTIONAL)](knowing.md#hold-endings-notional) · [Hopefully and other attitudes](sakes.md#speaker-attitude) · [Unmet](sakes.md#sake-changeability)
+
+English adverbs like *obviously*, *apparently* and *presumably* say **how you know** a claim. Agazan has no word for each one. It puts a channel on the clause as a `/th/` word, and the ending grades the evidence: **-l** solid, **-m** ordinary, **-r** thin. *Guess* and *assume* are not channels: a guess is a *could be* (MAY), and an assumption is toying with a premise (NOTIONAL). *Unfortunately* says how **you** feel about the claim, so it is an attitude word.
+
+| English | Agazan | Reading |
+|---------|--------|---------|
+| *obviously* (it is in plain view) | `thodul` | LIVE, a clear full view |
+| *obviously* (the clues are strong) | `thevel` | INFERRED, strong clues |
+| *apparently* / *it seems* (from clues) | `thevem` | INFERRED, ordinary |
+| *apparently* (so they say) | `themam` | TOLD |
+| *apparently* (a glimpse) | `thodur` | LIVE, a glimpse |
+| *presumably* (by the usual pattern) | `thabem` | PATTERN |
+| *presumably* (a weak clue) | `thever` | INFERRED, thin |
+| *guess* / *I guess* | `thovom` | MAY, could be |
+| *guess* (a passing thought) | `thovor` | MAY, who knows |
+| *guess* (a gut hunch) | `thahur` | FELT, faint |
+| *assume* / *suppose* | `thover` | NOTIONAL, toy with it for now |
+| *unfortunately* | `thugethum` | unspecified sake, unmet, can be softened |
+| *unfortunately* (and it is final) | `thugethul` | unspecified sake, unmet, irreversible |
+
+> `zazawan thevel vowogal.`
+>
+> z-Azawan | th-INFERRED.strong | v-walk
+>
+> "Obviously Azawan walks."
+
+> `zalahen thovom vadebal.`
+>
+> z-Alahen | th-MAY | v-departure
+>
+> "I guess Alahen is leaving."
+
+> `zazawan thover vowogal.`
+>
+> z-Azawan | th-NOTIONAL-suppose | v-walk
+>
+> "Assume Azawan walks."
+
+> `zazawan thugethum vadebal.`
+>
+> z-Azawan | th-sake-unmet-modifiable | v-departure
+>
+> "Unfortunately, Azawan is leaving."
+
+**Compare with:** *hopefully* and *worryingly* are the other speaker attitudes ([hopefully](sakes.md#speaker-attitude)). *Assuming that Q, P* keeps the condition open: P with **`thodom barl`** ([if](causation.md#if)).
+
+### Reason, purpose, guilty {#reason-purpose-guilty}
+
+**Needs:** [Because](causation.md#only-because) · [Fault](causation.md#fault) · [Motive](sakes.md#sake-preference) · [Prescription](sakes.md#sake-force) · [Attachment sites](sakes.md#attachment-sites) · [So that](dependents.md#so-that) · [Why?](questions.md#why) · [Emotion compose](sakes.md#emotion-compose)
+
+English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each split the same way. Name which one you mean: what **made it happen** (the because pole), what the speaker is **doing it for** (a motive, on a sake), or the **faculty** of thinking (the abstract sense of `ebehe`).
+
+| English | Agazan | Reading |
+|---------|--------|---------|
+| *the reason it happened* | `theram` + `/b/` | the because pole |
+| *my reason* / *justify (give your reasons)* | `…thom` on a sake (`thonathom`) | motive: doing it for that sake |
+| *justified* (the act is warranted) | `…them` on a sake (`thonathem`) | prescription: the act ought to serve that sake |
+| *the faculty of reason* | `zebehem` | *intellect* |
+| *purpose* (the outcome aimed at) | `hagom` + `/b/` | *so that* |
+| *purpose* (what my noun is for) | `g…tho…` after the noun (`gonathom`) | the noun's purpose is this sake |
+| *What is the purpose?* | `hagom bar` | *What for?* |
+| *guilty* / *to blame* | `theral` + `/b/` | the because pole, the reason broke a norm |
+| *guilty* (the feeling) | `wonathumam gobom` | emotion compose: unmet relatedness, held inside, flowing |
+
+> `zazawan vadebal theram berehel.`
+>
+> z-Azawan | v-departure | [th-because | b-rain]
+>
+> "The reason Azawan left is the rain."
+
+> `zazawan vezebel thonathom.`
+>
+> z-Azawan | v-tell | th-relatedness-motive-any-term
+>
+> "Azawan's reason for telling is relatedness." — he justifies it as care for the tie
+
+> `zazawan vowogal hagom barl zalahen vehahel.`
+>
+> z-Azawan | v-walk | [h-so-that | b-that-clause] | z-Alahen | v-sit
+>
+> "Azawan walks so that Alahen sits." — the purpose of the walk
+
+> `zazawan vadebal theral barl zalahen vezebel.`
+>
+> z-Azawan | v-departure | [th-because.fault | b-that-clause] | z-Alahen | v-tell
+>
+> "Alahen is to blame for Azawan's leaving." — the telling broke a norm
+
+> `zemehol wonathumam gobom.`
+>
+> z-memo | [w-relatedness-unmet-modifiable-INTERNAL-FLOWING | g-stimulus]
+>
+> "Guilty about the memo." — a cost to a tie, held inside, moving at a pace you can ride
+
+Put the **act** in `/b/` after a fault pole, not the person ([fault](causation.md#fault)). *Guilty* is then *the wrong rests on that act*, and it leaves room for *Alahen did a wrong thing* without *Alahen is bad*.
+
+**Compare with:** owning a harm to someone else (*I'm sorry*) is [thanks and sorry](sakes.md#thanks-sorry), not a guilt feeling.
+
+### Kill, feed, remove, prevent, persuade, introduce {#cause-verbs}
+
+**Needs:** [Make someone do it](causation.md#make) · [Decision](intention.md#decision) · [So that](dependents.md#so-that) · [Goal, source, path](roles.md#goal-source-path)
+
+English has a separate verb for *make someone do X* in many common cases: *kill* is *make die*, *feed* is *make eat*. Agazan has one way to say all of them. Keep the ordinary verb for what happens, let the one it happens to be the subject, and put the one who makes it happen in `/b/` right after **`thegem`** ([make](causation.md#make)). Change only the verb root.
+
+| English | Agazan | Reading |
+|---------|--------|---------|
+| *kill* | `zalahen vazagal thegem bazawan.` | Alahen dies, Azawan makes it happen |
+| *feed* | `zalahen vagudal thegem bazawan.` | Alahen eats, Azawan makes it happen |
+| *feed* (a child, nurture) | `zalahen vevedal dazawan.` | the nurturing root, no `thegem` |
+| *remove* | `zubugal vadebal ual zexagudel thegem bazawan.` | the book leaves the table, Azawan makes it happen |
+| *discard* | `zubugal veledol thegem bazawan.` | the book is disposed of |
+| *prevent* (make it not happen) | `zalahen vadebal vul thegem bazawan.` | Alahen does not leave, Azawan makes that so |
+| *prevent* (act so that it will not) | `zazawan vowogal hagom burl zalahen vadebal.` | Azawan walks so that Alahen does not leave |
+| *persuade* | `zalahen theham vowogal thegem bazawan.` | Alahen decides to walk, Azawan makes that happen |
+| *introduce* | `zalahen velehal dazawan thegem bahaben.` | Alahen learns Azawan, Ahaben makes it happen: *make learned* |
+
+> `zalahen vazagal thegem bazawan.`
+>
+> z-Alahen | v-skull | [th-CAUSE | b-Azawan]
+>
+> "Azawan kills Alahen."
+
+> `zalahen theham vowogal thegem bazawan.`
+>
+> z-Alahen | th-DECISION-modifiable | v-walk | [th-CAUSE | b-Azawan]
+>
+> "Azawan persuades Alahen to walk." — Alahen has decided, and can still change that
+
+> `zazawan vowogal hagom burl zalahen vadebal.`
+>
+> z-Azawan | v-walk | [h-so-that | b-lest-clause] | z-Alahen | v-departure
+>
+> "Azawan walks so that Alahen does not leave."
+
+**Compare with:** *get someone to* by asking is tell plus a *to* [stand-in](dependents.md#stand-in), not **`thegem`**. **`thegem`** says the causer made it happen. Persuading puts the decision mood on the one persuaded, so a later change of mind stays possible.
+
 ### Factivity (`if` vs `because`)
 <a id="factivity"></a>
 
@@ -127,6 +265,94 @@ English *I hope X will happen* is two claims: you want it, and you expect it. **
 > "I hope the rain stops soon."
 
 **Compare with:** **`thevegem`** with no channel and no offset is hope about now: `zazawan thevegem vowogal.` is *Hopefully Azawan walks.*
+
+## Judging and helping {#judging}
+
+### Important, useful, helpful, benefit, satisfy, upset {#sake-words}
+
+**Needs:** [Sake inventory](sakes.md#sake-inventory) · [Met](sakes.md#time-horizon-endings-on-met) · [Emotion compose](sakes.md#emotion-compose) · [Thanks and sorry](sakes.md#thanks-sorry) · [Sake benchmarks](comparatives.md#sake-benchmarks)
+
+English *useful*, *helpful*, *important* and *benefit* judge a thing by what it does for someone. Agazan names the someone's **sake** (autonomy, competence, relatedness, pleasure, survival). A met word says the thing serves that sake, and its ending says how long the payoff lasts. On a noun that is yours, the sake word sits on `/ɡ/`. On another noun, put it on `/w/` before **`gobom`**. Put a person in `/b/` for whose sake it is.
+
+| English | Agazan | Reading |
+|---------|--------|---------|
+| *useful* / *helpful* (for getting things done) | `gudutham` | competence, met |
+| *important* (it matters for the long run) | `wonathal gobom` | relatedness, met, lasting |
+| *benefit* / *benefits Alahen* | `thonatham balahen` | the act met Alahen's sake |
+| *advantage* (a lead over someone) | `zel` with the scale | rank against the other |
+| *satisfy* (you) | `thonatham behodon` | the act met your sake |
+| *satisfy* (a requirement) | `zugen zael` + scale | tie against the sake bar: *enough* |
+| *suitable* (for a need) | `gudutham` or `zugen zael` | met, or enough for the need |
+| *more important than* | `zel` between the nouns, then `gonathal` | rank on the lasting met sake |
+| *upset* | `wonathumar gobom` | relatedness, unmet, held inside, surging |
+| *upset for someone* | `wonathumem gobom` + `/b/` | unmet relatedness on their behalf |
+
+> `zubugal gudutham.`
+>
+> z-book | g-competence-met-any-term
+>
+> "My book is useful." — it helps me get things done
+
+> `zemehol wonathal gobom.`
+>
+> z-memo | [w-relatedness-met-lasting | g-stimulus]
+>
+> "The memo is important." — it serves the tie for the long run
+
+> `zazawan vowogal thonatham balahen.`
+>
+> z-Azawan | v-walk | [th-relatedness-met-any-term | b-Alahen]
+>
+> "Azawan's walking benefits Alahen."
+
+> `zemehol zezebel zel gonathal.`
+>
+> [z-memo | z-speech | z-rank/more | g-relatedness-met-lasting]
+>
+> "The memo is more important than the talk." — it serves the tie more for the long run
+
+> `zazawan zalahen zel gezehel.`
+>
+> [z-Azawan | z-Alahen | z-rank/more | g-sing]
+>
+> "Azawan has the advantage over Alahen at singing."
+
+> `zemehol wonathumar gobom.`
+>
+> z-memo | [w-relatedness-unmet-modifiable-INTERNAL-SURGING | g-stimulus]
+>
+> "Upset about the memo."
+
+**Compare with:** *too* and *enough* use [sake benchmarks](comparatives.md#sake-benchmarks). Bare *good* and *nice* have no root; they go the same way, to a met sake.
+
+### Wrong, ugly {#wrong-ugly}
+
+**Needs:** [Fault](causation.md#fault) · [Judgment benchmarks](comparatives.md#judgment-benchmarks) · [Negation](joins.md#negation-u) · [Unmet](sakes.md#sake-changeability)
+
+English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrect** (not matching), **morally wrong** (someone broke a norm), or **bad for someone** (a sake unmet). *Ugly* is **not beautiful**, **less beautiful than a bar**, or **unpleasant to me**.
+
+| English | Agazan | Reading |
+|---------|--------|---------|
+| *wrong* (incorrect) | `gegegal gul` | not correct, closed with **`gul`** |
+| *wrong* (morally) | `theral barl` + the act | fault on the act ([fault](causation.md#fault)) |
+| *wrong* (bad for someone) | `thonathum balahen` | the act detracted from Alahen's sake |
+| *ugly* (not beautiful) | `gahabel gul` | not beautiful |
+| *ugly* (below a bar) | `zomen zuel gahabel` | less beautiful than my standard |
+| *ugly* (unpleasant to me) | `gozuthum` | my noun detracts from pleasure |
+
+> `zezebel gegegal gul.`
+>
+> z-speech | [g-correct | g-not]
+>
+> "The telling is wrong."
+
+> `zahaben zomen zuel gahabel.`
+>
+> [z-Ahaben | z-my-standard | z-rank/less | g-hibiscus]
+>
+> "Ahaben is uglier than my standard."
+
+**Compare with:** *bad*, *terrible* and the other bare evaluatives have no root; they route to an unmet sake, a rank against a bar, or a specific content root.
 
 ## Starting and stopping {#phase-verbs}
 

@@ -294,6 +294,46 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 
 ## Units and dates {#units-dates}
 
+### Group, crowd, bunch, pair, list, range, member {#group-words}
+
+**Needs:** [Associative group](plurality.md#associative) · [Vague amounts](comparatives.md#vague-amounts) · [Unspecified member](joins.md#unspecified-member-r) · [Ranges](numbers-applied.md#ranges) · [Of relations](relations.md#of-relations)
+
+English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). Agazan has no noun for the set itself. It marks the kind as a **group in this situation** with **-x** after the ending (**-lx** for everyday things), and a number or a vague amount says how big. A set of people, flowers or cats is the kind plus **-x**, not a separate word.
+
+| English | Agazan | Reading |
+|---------|--------|---------|
+| *group* / *bunch* | `zodogalx` | some dogs, as a set here |
+| *crowd* | `zebezalx zahen zel gral` | people, more than usual |
+| *pair* (two of a kind) | `zodogalx g+2` | two dogs |
+| *couple* (two people who are together) | `zagabal` | the everyday sense of `agaba` |
+| *titled group* (the group named Ahodon) | `zahodonx` | named, **-nx** |
+| *member* (of a group) | `gabom` + `/b/` group | part of the group |
+| *member* (unspecified, of a menu or list) | `zor` | anything among the listed |
+| *list* (*a list of cats and dogs*) | `zagadal zodogal zal` | an and-list |
+| *list* (written) | `zegabol` | *clipboard* |
+| *range* (of numbers) | `zrarel al zraval` | the band from 3 to 5 |
+| *range* (of things: how far it reaches) | `zagum` | *scope*, the abstract sense of `agu` |
+
+> `zodogalx vowogal.`
+>
+> z-dog-x | v-walk
+>
+> "A group of dogs walks."
+
+> `zebezalx zahen zel gral.`
+>
+> [z-person-x | z-Typical | z-rank/more | g-amount]
+>
+> "There is a crowd." — more people than the usual amount
+
+> `zazawan gabom bahodonx vowogal.`
+>
+> [z-Azawan | [g-part-of | b-Ahodon-x]] | v-walk
+>
+> "Azawan, a member of the group Ahodon, walks."
+
+**Compare with:** a named group needs its own name (**-nx**). *A few* or *several* is an approximate number ([how many](#quantity-words)).
+
 ### Named standards and derived units
 <a id="unit-short-form"></a>
 

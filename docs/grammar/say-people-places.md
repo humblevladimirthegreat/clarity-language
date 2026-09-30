@@ -263,6 +263,53 @@ English *buy* and *sell* are two views of one swap. Agazan has one trading verb,
 
 *Sale*, *purchase* and *trade* name the same swap as a noun; say it as the sentence, then [point back](dependents.md#which-noun) to it.
 
+### Give, get, lend, earn, owe {#give-get}
+
+**Needs:** [The extra `/b/` party (`o`)](roles.md#role-compounds) · [Extra noun (`el`, `em`)](hooks.md#extra-noun) · [Exchange](relations.md#exchange) · [Coordinated lists](joins.md#respectively) · [Fault](causation.md#fault)
+
+English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several views of one handing-over. Agazan keeps the giving verb `vebezol` (*present*) and moves the view by where you put people. The thing sits in `/d/`, and the one who gets it sits in unhosted `/b/` after the verb ([recipient](clause.md#extra-nouns)). To name the parties from the verb itself, use the [role compounds](roles.md#role-compounds): **`zaxebezol`** is the giver (*supplier*, *provider*) and **`zoxebezol`** is the recipient (*receiver*). **-r** (`zoxebezor`) is *this* recipient of the latest giving. *Lend* and *borrow* work the same way on `vagavol` (*credit*, with the *lend* sense): the borrower is the recipient.
+
+| English | Agazan | Reading |
+|---------|--------|---------|
+| *give* / *provide* / *contribute* | `zazawan dubugal vebezol balahen.` | the book goes to Alahen |
+| *get* / *receive* / *acquire* (a thing handed over) | the same sentence | the receiver is the `/b/` |
+| *giver* / *supplier* / *provider* | `zaxebezol` | doer of the giving |
+| *receiver* | `zoxebezol` | the one given to |
+| *lend* / *borrow* | `zazawan dubugal vagavol balahen.` | the book is lent to Alahen |
+| *borrower* | `zoxagavol` | the one lent to |
+| *distribute* | `zazawan dubugal vebezol balahen bahaben bal.` | the book goes to each of them |
+| *earn* | `zazawan varadal hogem bamol.` | write in exchange for money |
+| *owe* | `zazawan gamom balahen.` | in debt to Alahen |
+| *get* (go after something) | `zazawan vowogal el bubugal.` | walk for the book |
+| *contribute money* | `zazawan damol vebezol el bavahal.` | give money for a family's sake |
+| *contribute to* (be part of the cause) | `…therar barl …` | one share among several causes |
+
+> `zazawan dubugal vebezol balahen.`
+>
+> z-Azawan | d-book | v-present | b-Alahen
+>
+> "Azawan gives Alahen a book." — Alahen gets it
+
+> `zazawan varadal hogem bamol.`
+>
+> z-Azawan | v-write | [h-in-exchange-for | b-money]
+>
+> "Azawan earns money by writing."
+
+> `zazawan gamom balahen.`
+>
+> z-Azawan | [g-debt | b-Alahen]
+>
+> "Azawan owes Alahen."
+
+> `zazawan dubugal vebezol balahen bahaben bal.`
+>
+> z-Azawan | d-book | v-present | [b-Alahen | b-Ahaben | b-and]
+>
+> "Azawan gives a book to Alahen and Ahaben."
+
+**Compare with:** *buy* and *sell* are the [swap](#buy-sell). *For* as a *get meant to reach B* is the hook `el`, and `em` says it has already reached B and is in B's use.
+
 ### Other, another, different {#other-different}
 
 **Needs:** [Unspecified member](joins.md#unspecified-member-r-phrase) · [Similative](relations.md#similative) · [Different from](#different)
@@ -679,6 +726,47 @@ duxal code > 1 xuxul
 ```
 
 **For *ordinals*, use:** [number words](numbers.md) with `#`. Inside a span, `#` is an editorial closer only when it sits immediately before `]` / `}` / `)` / `>` / `|`. `|` is close-all.
+
+### Role, title, address {#role-title-address}
+
+**Needs:** [Role compounds](roles.md#role-compounds) · [Kind / role](predication.md#classification) · [Cite](spans.md#writing) · [Call someone](speech-moves.md#vocative) · [Vocatives](plurality.md#vocatives-y)
+
+These three English nouns each hide two jobs. *Role* is the function someone plays. Say it as a kind on `/ɡ/`, or as the doer of the event with a role compound. *Title* is either the name of a work or a claim to own something. *Address* is either speaking to someone or a speech.
+
+| English | Agazan | Reading |
+|---------|--------|---------|
+| *role* (the function someone plays) | `zalahen gaxedehol.` | the role-compound kind on `/ɡ/` |
+| *title* (the name of a work) | `d@[onodan alahen]` | cite with **`@`** |
+| *title* (a claim to own) | `zegabem` | *ownership*, the abstract sense of `egabe` |
+| *address* (speak to someone) | `yalahen.` | call them with `/y/` + their name |
+| *address* (speak to a group) | `yebezalx.` | `/y/` + **-lx** |
+| *address* (a speech) | `vezebel` | the telling itself |
+
+> `zalahen gaxedehol.`
+>
+> z-Alahen | g-agent-x-teach
+>
+> "Alahen is a teacher." — that is his role
+
+**Compare with:** a street address is an ordinary named place (**-n**), with no separate form.
+
+### Sentence, phrase, word {#words-about-words}
+
+**Needs:** [Mention](spans.md#mention)
+
+To talk about a word, a phrase or a whole sentence as a thing in itself, hold it in a mention: the role letter, then curly braces. English *the word …*, *the phrase …* and *the sentence …* all use the same frame. The braces hold the Agazan interior, and the role letter still says what the mention does in the clause.
+
+> `z{odoga} gamazam.`
+>
+> z-MENTION["odoga"] | g-small
+>
+> "The word “odoga” is small."
+
+> `z{zalahen vezebel} gamazam.`
+>
+> z-MENTION["zalahen vezebel"] | g-small
+>
+> "The sentence “zalahen vezebel” is small."
 
 ## Practice {#practice}
 

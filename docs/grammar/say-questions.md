@@ -189,6 +189,81 @@ Under question, the rest of the single-item and standalone join map is confirm /
 | **…or** | *Anything?* (fill-ask) |
 | **…ur** | *What else?* (fill-ask) |
 
+## Speech acts in everyday talk {#speech-acts}
+
+### Ask, interview, conversation {#ask-words}
+
+**Needs:** [Ask](questions.md#question) · [Reported questions](#reported-questions) · [Speech act: firm and soft](speech-moves.md#speech-act) · [Conversation length](x-compounds.md#conversation-length) · [Call someone](speech-moves.md#vocative)
+
+English *ask* is three jobs. You can put a question to someone, ask them for something, or report that a question was asked. A question is the act word **`yol`**. A request is **`yem`**. A reported question hangs on the telling ([reported questions](#reported-questions)). A conversation has no verb of its own: it is *speech*, with the abstract sense for the social practice.
+
+| English | Agazan | Reading |
+|---------|--------|---------|
+| *ask* (a question) | `yol zazawan vowogal.` | question |
+| *ask* (for something, *could you*) | `yem zehodon vowogal.` | request |
+| *ask* (report) | `zazawan vezebel dorl zar vowogal.` | telling + whether-clause |
+| *ask* (one question, as a bid for time) | `alahexon.` | one slot |
+| *interview* | `yalahen.` then a run of `yol` questions | call, then ask |
+| *conversation* / *chat* / *dialog* | `zezebem` | *discourse* |
+
+### Offer, suggest, recommend, invite {#offer-words}
+
+**Needs:** [Speech act: firm and soft](speech-moves.md#speech-act) · [Prescription](sakes.md#sake-force) · [Permission](sakes.md#permission) · [Which noun](dependents.md#which-noun)
+
+English *offer*, *suggest*, *propose*, *recommend* and *advise* all put something forward that the other person may take or leave. Agazan picks how firmly. A soft act word (**-m**) leaves the choice open. A soft request with *we* proposes a joint act. A prescription **`the`** on a sake says the act ought to serve it, and its ending says whether the person invited it (**-l**) or you are offering it unasked (**-m**).
+
+| English | Agazan | Reading |
+|---------|--------|---------|
+| *offer* (a thing) | `yom` + a giving | soft question: *would you like…?* |
+| *suggest* / *propose* (a joint act) | `yem zohan vowogal.` | soft request with *we* |
+| *suggest* (a view) | `yam` | soft statement: *for what it's worth* |
+| *recommend* / *advise* (unasked) | `thonathem` | prescription, offered |
+| *recommend* (you asked for it) | `thonathel` | prescription, invited |
+| *advice* / *suggestion* / *proposal* | the suggestion as a sentence, then point back | [which noun](dependents.md#which-noun) |
+| *invite* / *welcome* (someone) | `vabebum` | *hospitality* |
+| *welcome* (you may) | `thegam` | permission granted |
+
+> `yem zohan vowogal.`
+>
+> y-request | z-interlocutors | v-walk
+>
+> "Let's walk." — a suggestion
+
+> `zehodon vowogal thonathem.`
+>
+> z-listener | v-walk | th-relatedness-ought-offered
+>
+> "You should walk; I recommend it." — unasked advice
+
+> `zazawan vabebum dalahen.`
+>
+> z-Azawan | v-hospitality | d-Alahen
+>
+> "Azawan invites Alahen."
+
+### Hello, sir, yeah, quote, mention {#reply-words}
+
+**Needs:** [Greeting](word-endings.md#greeting) · [Polar stance](questions.md#polar-stance) · [Cite](spans.md#writing) · [Mention](spans.md#mention) · [Asides](spans.md#asides)
+
+| English | Agazan | Reading |
+|---------|--------|---------|
+| *hello* / *hi* | `SELFn.` | your own name, said with a period |
+| *sir* / *madam* | `yalahen.` | call them by name |
+| *yeah* / *yep* | `yaem.` / `yael.` | yes, soft / firm |
+| *nope* / *nah* | `yuel.` / `yuem.` | no, firm / soft |
+| *yeah, sure* | `yaol.` | take up the offer |
+| *quote* (the exact words) | `d[zalahen vezebel]` | cite |
+| *quote* (the gist) | `d~[zalahen vezebel]` | paraphrase cite |
+| *mention* (a word) | `z{odoga}` | mention span |
+| *mention* (in passing) | `th(…)` | aside |
+| *mention* (acknowledge someone) | `veweval` | *acknowledgment* |
+
+> `zazawan d[zalahen vezebel] vezebel.`
+>
+> z-Azawan | d-CITE[z-Alahen | v-tell] | v-tell
+>
+> "Azawan said “Alahen tells.”"
+
 ## Practice {#practice}
 
 ### Offers and confirmations {#questions-joins-practice}

@@ -117,6 +117,27 @@ One English word, one row: the form that says it and the section that teaches it
 | *anything* / *anyone* / *anybody* | **`zor`**; with a kind, `zebezal zor` | [Unspecified member](joins.md#unspecified-member-r-phrase) |
 | *somehow* / *in some way* | **`homem bor`** (*like* some unspecified one) | [Simile](relations.md#similative), [unspecified member](joins.md#unspecified-member-r-phrase) |
 
+### Adjectives made from a noun (*golden*, *royal*, *solar*) {#noun-adjectives}
+
+English often makes an adjective from a noun by adding an ending (*gold* → *golden*, *sun* → *solar*). Agazan needs no ending for that. Put the noun's root on `/ɡ/` ([adjectives](clause.md#adjectives-ɡ)): the adjective means *of that kind*. The ending picks the sense: **-l** is the everyday thing, **-m** is the abstract quality. Use **-l** for stuff you can touch (*gold*, *sun*) and **-m** for a quality or field (*royalty*, *life*, *institution*). For *made of*, the [of-relation](relations.md#of-relations) with the stuff in `/b/` says it outright.
+
+| English itch | Agazan job | Teach |
+|--------------|------------|-------|
+| *golden* | `gogodal` (made of gold: `guwam bogodal`) | [Adjectives](clause.md#adjectives-ɡ), [of relations](relations.md#of-relations) |
+| *wooden* | `guwal` (made of wood: `guwam buwal`) | [Of relations](relations.md#of-relations) |
+| *royal* | `gebebum` (*royalty*) | [Adjectives](clause.md#adjectives-ɡ) |
+| *solar* | `gazahol` (of the sun) | [Adjectives](clause.md#adjectives-ɡ) |
+| *musical* | `gumuyum` (*composition*) | [Adjectives](clause.md#adjectives-ɡ) |
+| *biological* | `gahodem` (of life) | [Adjectives](clause.md#adjectives-ɡ) |
+| *institutional* | `gagugam` (*institution*) | [Adjectives](clause.md#adjectives-ɡ) |
+| *structural* | `gabom` (a piece of the structure; add the whole in `/b/`) | [Of relations](relations.md#of-relations) |
+
+> `zazawan dahazal gogodal vahahal.`
+>
+> z-Azawan | [d-house | g-gold] | v-see
+>
+> "Azawan sees a golden house."
+
 ### Greetings {#greetings}
 
 | English itch | Agazan job | Teach |
