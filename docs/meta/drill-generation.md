@@ -179,6 +179,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `questions.md` | Beginner | a lost-and-found |
 | `questions.md` | Intermediate | a detective interview |
 | `say-questions.md` | Offers and confirmations | a quiz show |
+| `say-tense.md` | Tense and modals | a train station |
 | `hooks.md` | Beginner | a restaurant pass |
 | `hooks.md` | Intermediate | a newsroom |
 | `hooks.md` | Advanced | a ferry slip |

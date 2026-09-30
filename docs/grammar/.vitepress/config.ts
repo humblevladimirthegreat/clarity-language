@@ -67,6 +67,7 @@ export default defineConfig({
           { text: 'Amounts, sizes and time', link: '/say-amounts' },
           { text: 'Reasons, knowledge and plans', link: '/say-reasons' },
           { text: 'Asking and answering', link: '/say-questions' },
+          { text: 'Tense and modals', link: '/say-tense' },
         ],
       },
       {

@@ -8,6 +8,7 @@ These pages are recipes, not lessons. Each one shows how forms you already learn
 | [Amounts, sizes and time](say-amounts.md) | *from least to most*, *both are*, *two meters taller*, *most of*, *25% of*, units, dates |
 | [Reasons, knowledge and plans](say-reasons.md) | *because* vs *if*, *judging by*, *would have*, habits, *start / stop doing*, *as of 22 July*, *dreading* / *I felt then* / *it's their fault* |
 | [Asking and answering](say-questions.md) | *You saw WHAT?*, *asks who*, *Just X?* / *How about X?*, *What a big dog!*, *by the way* |
+| [Tense and modals](say-tense.md) | *walked*, *has walked*, *is walking*, *will walk*, *used to*, *can*, *may*, *must*, *should* |
 
 ## One English word, many jobs {#many-jobs}
 

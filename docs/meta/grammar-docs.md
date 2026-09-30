@@ -432,7 +432,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 
 ## Recipe track {#recipe-track}
 
-**Saying it in Agazan** ([english.md](../grammar/english.md) plus `say-people-places.md`, `say-amounts.md`, `say-reasons.md`, `say-questions.md`) holds **applications**: sections that teach no new form but show how taught forms answer an English job. The track is outside the stage order.
+**Saying it in Agazan** ([english.md](../grammar/english.md) plus `say-people-places.md`, `say-amounts.md`, `say-reasons.md`, `say-questions.md`, `say-tense.md`) holds **applications**: sections that teach no new form but show how taught forms answer an English job. The track is outside the stage order.
 
 **Test before adding a section to a stage page** (especially when closing a [grammar gap](grammar-gaps.md)):
 
