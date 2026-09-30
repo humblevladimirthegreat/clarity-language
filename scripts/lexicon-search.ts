@@ -82,7 +82,7 @@ function formatOverlayList(result: LexiconSearchResult): string {
 }
 
 function formatTable(results: LexiconSearchResult[]): void {
-  const headers = ["emoji", "concrete", "root", "abstract", "role English", "overlays", "score"];
+  const headers = ["emoji", "concrete", "root", "abstract", "role English", "overlays", "synonyms", "score"];
   const rows = results.map((r) => [
     r.emoji || "—",
     r.concrete || (r.overlayOnly ? "(overlay)" : r.compoundOnly ? "(compound)" : "—"),
@@ -90,6 +90,7 @@ function formatTable(results: LexiconSearchResult[]): void {
     r.abstract || "—",
     r.englishByPos || "—",
     formatOverlayList(r),
+    r.englishAliases?.length ? r.englishAliases.join("; ") : "—",
     r.score.toFixed(2),
   ]);
 

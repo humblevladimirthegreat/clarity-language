@@ -6,17 +6,20 @@
  *   node scripts/find-english.mjs 'should have' --json
  *
  * Indexes example English, per-word glosses, table rows with an Agazan and an
- * English column, and translation practice (src/find/english.ts). Hits are
- * grouped by section, best first. Paths default to docs/grammar;
+ * English column, and translation practice (src/find/english.ts), plus the
+ * English cues of published roots (senses and `english_aliases` synonyms;
+ * `--kind root`). Hits are grouped by section, best first. Paths default to docs/grammar;
  * --include-examples adds docs/examples.
  */
 import { existsSync, readFileSync } from "node:fs";
 import { relative } from "node:path";
 
 import { loadDefaultTables } from "../parse/index.js";
+import { parsePublishedCsv } from "../lexicon-search.js";
+import { dataPath } from "../repo-paths.js";
 import { listMarkdown } from "../markdown-files.js";
 import { BANDS, type Band } from "../lint/learning-order.js";
-import { collectEnglishEntries, ENTRY_KINDS, plainText, searchEnglish, type EntryKind, type SectionHit } from "../find/english.js";
+import { collectEnglishEntries, collectRootEntries, ENTRY_KINDS, plainText, searchEnglish, type EntryKind, type SectionHit } from "../find/english.js";
 
 function usage(message: string, code = 2): never {
   console.error(`${message}\nusage: find-english.mjs <phrase> [<phrase>…] [--json|--count] [--stage ${BANDS.join("|")}] [--kind ${ENTRY_KINDS.join("|")}] [--include-examples] [--limit N] [paths…]`);
@@ -60,6 +63,8 @@ const entries = roots.flatMap((root) =>
   listMarkdown(root).flatMap((file) => collectEnglishEntries(readFileSync(file, "utf8"), relative(process.cwd(), file), tables)),
 );
 
+if (paths.length === 0) entries.push(...collectRootEntries(parsePublishedCsv(readFileSync(dataPath("lexicon-published.csv"), "utf8"))));
+
 const results = phrases.map((phrase) => ({ phrase, sections: searchEnglish(entries, phrase, { stage, kind }).slice(0, limit) }));
 
 function stageName(band: Band | undefined): string {
@@ -71,7 +76,7 @@ function printSection(section: SectionHit): void {
   console.log(`${section.page} § ${section.title || "(top)"}${anchor}  ${stageName(section.band)}`.trimEnd());
   for (const { entry, via } of section.hits) {
     const english = entry.kind === "example" || entry.kind === "practice" ? `"${plainText(entry.english)}"` : plainText(entry.english);
-    const note = via ? `   (via synonym: ${via})` : "";
+    const note = via ? `   (via synonym: ${via})` : entry.alias ? "   (lexicon synonym)" : "";
     console.log(`  ${entry.kind.padEnd(8)} \`${entry.form}\`   ${english}${note}   :${entry.line}`);
   }
 }

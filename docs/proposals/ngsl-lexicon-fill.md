@@ -60,6 +60,7 @@ Steps 1–3 are mechanical, and an agent can run them without review. Step 4 nee
 | Check | Source | Tag |
 |-------|--------|-----|
 | Concrete or abstract sense matches the lemma or one of its forms | `lexicon-published.csv` `concrete`, `abstract`, `english_by_pos` | `root` |
+| Search alias (`english_aliases` synonym) | `lexicon-published.csv` `english_aliases` | `alias` |
 | Compound sense | `lexicon-compounds.csv` `concrete`, `abstract` | `compound` |
 | Overlay gloss | `lexicon-overlays.csv` | `overlay` |
 | Function word find-english drops | find-english stop list | `stop` |

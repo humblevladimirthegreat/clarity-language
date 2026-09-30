@@ -4,7 +4,9 @@ import { describe, it } from "node:test";
 
 import { loadDefaultTables } from "../parse/index.js";
 import { listMarkdown } from "../markdown-files.js";
-import { collectEnglishEntries, searchEnglish, tokens } from "./english.js";
+import { parsePublishedCsv } from "../lexicon-search.js";
+import { dataPath } from "../repo-paths.js";
+import { collectEnglishEntries, collectRootEntries, searchEnglish, tokens } from "./english.js";
 
 const tables = loadDefaultTables();
 
@@ -108,4 +110,27 @@ describe("taught cues in docs/grammar", () => {
       );
     });
   }
+});
+
+describe("collectRootEntries", () => {
+  const csv = "emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases\n😀,grin,egeva,delight,m,v:smile,glad; joy\n";
+  const entries = collectRootEntries(parsePublishedCsv(csv));
+
+  it("indexes senses, per-PoS lemmas and aliases under the owning root", () => {
+    assert.deepEqual(entries.map((e) => e.english), ["grin", "delight", "smile", "glad", "joy"]);
+    assert.ok(entries.every((e) => e.kind === "root" && e.form === "egeva"));
+    assert.deepEqual(entries.filter((e) => e.alias).map((e) => e.english), ["glad", "joy"]);
+  });
+
+  it("finds a root by alias, ranked just below a sense match", () => {
+    const [alias] = searchEnglish(entries, "glad", { kind: "root" });
+    assert.equal(alias!.hits[0]!.entry.form, "egeva");
+    const [sense] = searchEnglish(entries, "grin", { kind: "root" });
+    assert.ok(sense!.hits[0]!.score > alias!.hits[0]!.score);
+  });
+
+  it("covers the real lexicon aliases", () => {
+    const real = collectRootEntries(parsePublishedCsv(readFileSync(dataPath("lexicon-published.csv"), "utf8")));
+    assert.ok(real.some((e) => e.alias));
+  });
 });

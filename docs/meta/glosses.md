@@ -177,6 +177,8 @@ Lexicon search indexes those lemmas. Morph uses the packed lemma for that role l
 
 `english_aliases` is a separate column of **search-only** English cues, `;`-separated and lowercase (`say; speak`). Lexicon search indexes them, so a learner who types *speak* finds the root glossed *tell*. They never reach a morph gloss, they carry no part of speech, and they do not claim a second meaning.
 
+Aliases are consulted by the lexicon search page and `npm run lexicon-search` (shown as *synonyms*), by `find-english` (`--kind root`, marked as a lexicon synonym), and by `frequency-coverage.ts` (tag `alias`, separate from a real `root` sense match).
+
 Do not use `english_by_pos` for this. That column is role English: one lemma per role letter per sense, used in glosses (`v-see`). A cue that repeats the concrete or abstract sense, repeats another cue on the row, or is empty is an error in the loader.
 
 ## Morph gloss format

@@ -98,7 +98,7 @@ onUnmounted(() => {
       <input
         id="lexicon-filter"
         type="search"
-        placeholder="Search literal, metaphor, role English, root, mnemonic…"
+        placeholder="Search literal, metaphor, role English, synonym, root, mnemonic…"
         autocomplete="off"
         aria-label="Search lexicon"
         :disabled="status !== 'ready'"
@@ -132,6 +132,9 @@ onUnmounted(() => {
               {{ concreteLabel(row) }}
               <span v-if="row.matchFields.length" class="match-fields">
                 matched: {{ row.matchFields.join(', ') }}
+              </span>
+              <span v-if="row.matchFields.includes('english_aliases') && row.englishAliases?.length" class="match-fields">
+                also: {{ row.englishAliases.join('; ') }}
               </span>
             </td>
             <td class="root">

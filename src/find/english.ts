@@ -11,8 +11,9 @@ import { extractTeachBlocks, morphGlossWords } from "../parse/morph-gloss.js";
 import { extractTranslationExercises } from "../lint/morph-gloss-docs.js";
 import { pageSections, sectionAt, type Band } from "../lint/learning-order.js";
 import { fillSelf } from "../learner-name.js";
+import { posEnglishLemmaList, type PublishedRow } from "../lexicon-search.js";
 
-export const ENTRY_KINDS = ["gloss", "example", "table", "practice"] as const;
+export const ENTRY_KINDS = ["gloss", "example", "table", "practice", "root"] as const;
 export type EntryKind = (typeof ENTRY_KINDS)[number];
 
 export type EnglishEntry = {
@@ -29,7 +30,37 @@ export type EnglishEntry = {
   band?: Band;
   /** Search tokens of `english`. */
   tokens: string[];
+  /** Root entries only: the cue is a search-only `english_aliases` synonym, not a sense. */
+  alias?: boolean;
 };
+
+/** Page label for entries that come from the published lexicon, not a grammar page. */
+export const LEXICON_PAGE = "data/lexicon-published.csv";
+
+/**
+ * One entry per English cue of each published root: concrete, abstract, per-PoS
+ * lemmas, and `english_aliases` synonyms (flagged `alias`). Each root is its own section.
+ */
+export function collectRootEntries(rows: readonly PublishedRow[]): EnglishEntry[] {
+  const entries: EnglishEntry[] = [];
+  rows.forEach((row, i) => {
+    const title = `${row.emoji} ${row.root}`.trim();
+    const cues: { english: string; alias: boolean }[] = [
+      { english: row.concrete, alias: false },
+      { english: row.abstract, alias: false },
+      ...posEnglishLemmaList(row.posEnglish).map((english) => ({ english, alias: false })),
+      ...(row.englishAliases ?? []).map((english) => ({ english, alias: true })),
+    ];
+    const seen = new Set<string>();
+    for (const { english, alias } of cues) {
+      const toks = tokens(english);
+      if (toks.length === 0 || seen.has(english)) continue;
+      seen.add(english);
+      entries.push({ english, form: row.root, kind: "root", page: LEXICON_PAGE, line: i + 2, slug: row.root, title, tokens: toks, ...(alias ? { alias } : {}) });
+    }
+  });
+  return entries;
+}
 
 /**
  * Cues the docs word differently. Keep it short: each group must name the
@@ -231,7 +262,7 @@ export function searchEnglish(entries: readonly EnglishEntry[], phrase: string, 
     if (options.kind && entry.kind !== options.kind) continue;
     let best: EntryHit | undefined;
     for (const { query, via } of queries) {
-      const score = scoreEntry(entry, query) * (via ? 0.9 : 1);
+      const score = scoreEntry(entry, query) * (via ? 0.9 : 1) * (entry.alias ? 0.95 : 1);
       if (score > 0 && (!best || score > best.score)) best = { entry, score, via };
     }
     if (!best) continue;

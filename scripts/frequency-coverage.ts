@@ -9,6 +9,7 @@
  *
  * Tags, first hit wins:
  *   root      published concrete / abstract / english_by_pos sense
+ *   alias     published english_aliases synonym (search-only; not a sense match)
  *   compound  lexicon-compounds.csv concrete / abstract
  *   overlay   lexicon-overlays.csv gloss
  *   grammar   a gloss or table row in docs/grammar is exactly this word
@@ -94,6 +95,9 @@ const rootIdx = senseIndex(
     ...posEnglishLemmaList(r.posEnglish).map((l) => [l, `${r.root} ${r.emoji} ${l}`] as [string, string]),
   ]),
 );
+const aliasIdx = senseIndex(
+  published.flatMap((r) => (r.englishAliases ?? []).map((a) => [a, `${r.root} ${r.emoji} ${a}`] as [string, string])),
+);
 const compounds = parseCompoundCsv(readFileSync(dataPath("lexicon-compounds.csv"), "utf8"));
 const compoundIdx = senseIndex(
   compounds.flatMap((r) => [[r.concrete, `${r.stem} ${r.concrete}`], [r.abstract, `${r.stem} ${r.abstract}`]] as [string, string][]),
@@ -111,7 +115,7 @@ type Row = { rank: number; lemma: string; per_million: number; tag: string; hit:
 const rows: Row[] = lemmas.map((l) => {
   const base = { rank: l.rank, lemma: l.lemma, per_million: l.perMillion };
   const words = [l.lemma, ...l.forms];
-  for (const [tag, idx] of [["root", rootIdx], ["compound", compoundIdx], ["overlay", overlayIdx]] as const) {
+  for (const [tag, idx] of [["root", rootIdx], ["alias", aliasIdx], ["compound", compoundIdx], ["overlay", overlayIdx]] as const) {
     const hit = words.map((w) => idx.get(w)).find(Boolean);
     if (hit) return { ...base, tag, hit };
   }
@@ -160,7 +164,7 @@ function loadWordNetSynonyms(): Map<string, Set<string>> {
 function candidates(l: Lemma, synonyms: Map<string, Set<string>>): string {
   const syn = synonyms.get(l.lemma) ?? new Set<string>();
   const hits: string[] = [];
-  for (const [sense, label] of rootIdx) if (syn.has(sense) && !hits.includes(label)) hits.push(`${label} (${sense})`);
+  for (const [sense, label] of [...rootIdx, ...aliasIdx]) if (syn.has(sense) && !hits.includes(label)) hits.push(`${label} (${sense})`);
   return hits.slice(0, 8).join("; ");
 }
 

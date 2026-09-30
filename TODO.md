@@ -12,7 +12,6 @@ Prosody
 -confirm we still have chats after rebuild
 -expressiveness review
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
--add English synonyms row to lexicon, allow find-english to use it.
 
 final exam
 save for near end of limit resets:
