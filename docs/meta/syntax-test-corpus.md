@@ -14,6 +14,12 @@ Translate with published grammar and lexicon. When a sentence cannot be said, so
 | **Grammar gap**: no taught form says it, or the docs leave the reading undecided | Do not invent or apply new grammar. Log a `G-nn` row in [syntax-test-results](syntax-test-results.md) with the current route, a recommendation, and a priority. The language owner decides it explicitly. Translate with the best existing route meanwhile, and mark the row **awkward (G-nn)**. |
 | **Missing vocabulary**: the grammar works, but no root fits | Generate the vocabulary: add a lexicon row, or role English on an existing row (`npm run lint:lexicon`, then `npm run build`). Record it as an `L-nn` row. Use a stand-in only until the row exists. |
 
+Before logging a grammar gap:
+
+1. Run `node scripts/find-english.mjs '<phrase>'` on the English and on one or two rewordings.
+2. Try the recurring fixes: a resume hook (`or` / `er` / `ar` / `ur`), counting from the end (`gruedul`), the discourse hooks (`ael` / `aol`), and a time pole plus PLAN.
+3. Record the phrases you tried in the gap row.
+
 Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is the reader-as-speaker slot ([house cast](grammar-docs.md#house-cast)).
 
 ## Translations

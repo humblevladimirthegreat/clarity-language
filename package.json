@@ -22,7 +22,8 @@
     "unused-roots": "tsx scripts/unused-roots.ts",
     "test": "tsx --test src/*.test.ts src/**/*.test.ts docs/grammar/.vitepress/components/*.test.ts docs/grammar/.vitepress/lib/*.test.ts scripts/lib/*.test.ts",
     "parse": "node scripts/parse.mjs",
-    "find": "node scripts/find.mjs"
+    "find": "node scripts/find.mjs",
+    "find-english": "node scripts/find-english.mjs"
   },
   "engines": {
     "node": ">=24"
