@@ -386,7 +386,7 @@ After a pole, the dependent is **`barl`** (or **`barm`** for gist): *because* / 
 
 The person told is unhosted `/b/`, so **`derl vehahel`** can leave out its subject: the sitter is Alahen. The outer sentence stays a statement. With no unhosted `/b/`, write the sitter:
 
-> `zazawan vuhudem derl zazawan vehahel.`
+> `zazawan vuhum derl zazawan vehahel.`
 >
 > z-Azawan | v-wish | d-to-clause | z-Azawan | v-sit
 >
@@ -437,7 +437,7 @@ The vowel still types the content, and the word stands for the most recent conte
 >
 > "Alahen sits. Azawan says so."
 
-> `zazawan balahen vezebel durl vehahel. zalahen vuhudem durth.`
+> `zazawan balahen vezebel durl vehahel. zalahen vuhum durth.`
 >
 > z-Azawan | b-Alahen | v-tell | d-lest-clause | v-sit . z-Alahen | v-wish | d-that-same-prohibition
 >

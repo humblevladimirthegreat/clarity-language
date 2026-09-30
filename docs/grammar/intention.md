@@ -422,6 +422,51 @@ A [PLAN](#plan-predict) atlas (**`thumal`**) already includes backups. Chain the
 
 **Compare with:** [ability](#ability) says whether someone **can** do something; an attempt makes no claim either way. [PLAN](#plan-predict) is intention before acting; an attempt is acting with the outcome open. Unordered *or* is **`xol`** ([clause joins](joins.md#clause-joins)): no first choice and no backup.
 
+### Want {#want}
+<a id="desire"></a>
+
+To say that someone **wants** to do something, put **`thuhu`** before the ordinary verb. The mood says the wanting is theirs. It does not say the act happens, and it does not say they mean to do it. The ending says how long the wanting lasts. (Cue: 🌠 A shooting star is where you make a wish.)
+
+> `zazawan thuhum vowogal.`
+>
+> z-Azawan | th-WANT-unstated | v-walk
+>
+> "Azawan wants to walk."
+
+For a wanted person or thing, use the verb that would get it (*see*, *take*) and keep the object in `/d/`.
+
+> `zalahen thuhum vahahal dazawan.`
+>
+> z-Alahen | th-WANT-unstated | v-see | d-Azawan
+>
+> "Alahen wants to see Azawan."
+
+#### Endings: lastingness {#want-endings}
+
+On **`uhu`**, **-l / -m / -r** say how long the wanting lasts. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know, use **-m**.
+
+| Agazan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`thuhul`** | a want that keeps coming back | *really wants to …* / *has long wanted to …* | **-l** ≈ locked in (a steady star) |
+| **`thuhum`** | duration unstated (soft default) | *wants to …* | **-m** ≈ open |
+| **`thuhur`** | a want that will pass | *feels like …* / *has a whim to …* | **-r** ≈ right now (a streak) |
+
+> `zalahen thuhur vezehel.`
+>
+> z-Alahen | th-WANT-passing | v-sing
+>
+> "Alahen feels like singing." (a whim)
+
+A want, a [plan](#plan-predict), and a [decision](#decision) are three different steps, so they stack in that order:
+
+> `zazawan thuhul thumam vowogal.`
+>
+> z-Azawan | th-WANT-lasting | th-plan-itinerary | v-walk
+>
+> "Azawan has long wanted to walk, and plans to."
+
+**Compare with:** [hopefully](sakes.md#speaker-attitude) (`thevegem`) is **your** attitude toward a whole claim; **`thuhum`** is the subject's own wanting. [Motive](sakes.md#sake-preference) says which sake the act serves, not that it is wanted. In [emotion compose](sakes.md#emotion-compose), SEEKING is a feeling turning toward someone for comfort, not a plain want.
+
 ### Plan or forecast
 <a id="predict-evidentiality"></a>
 
@@ -459,9 +504,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | **DECISION** (modifiable) | `theham` | `ehal` *check* |
 | *attempt-committed* | `thudol` | `udol` *test-tube* |
 | *attempt-trial* | `thudor` | `udol` *test-tube* |
+| *want-unstated* | `thuhum` | `uhul` *shooting-star* |
+| *want-lasting* | `thuhul` | `uhul` *shooting-star* |
 | *sit* | `vehahel` | `ehahel` *chair* |
 | *tell* | `vezebel` | `ezebel` *speech* |
 | *write* | `varadal` | |
+| *sing* | `vezehel` | |
 | *see* | `vahahal` | `ahahal` *eye* |
 | *clipboard* | `egabol` | |
 | *pen* | `ebewul` | |
@@ -579,6 +627,22 @@ z-Azawan | th-ATTEMPT-committed | v-climb
 [z-Azawan | th-ATTEMPT-trial | v-stand | x-or-else | z-←Azawan.full | v-sit]
 :::
 
+**14.** *Alahen wants to see Azawan.*
+
+::: details Show answer
+`zalahen thuhum vahahal dazawan.`
+
+z-Alahen | th-WANT-unstated | v-see | d-Azawan
+:::
+
+**15.** *Azawan has long wanted to sit, and plans to.*
+
+::: details Show answer
+`zazawan thuhul thumam vehahel.`
+
+z-Azawan | th-WANT-lasting | th-plan-itinerary | v-sit
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zazawan theham vehahel.`
@@ -679,6 +743,15 @@ z-Azawan | v-climb
 z-Alahen | th-ABIL-unable-irreversible
 
 *Alahen can never do it.* (the whole thing, not one verb)
+:::
+
+**12.** `zalahen thuhur vezehel.`
+
+::: details Show answer
+
+z-Alahen | th-WANT-passing | v-sing
+
+*Alahen feels like singing.*
 :::
 
 ## See also

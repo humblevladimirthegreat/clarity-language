@@ -111,7 +111,7 @@ describe("morphGlossLine — glosses.md single words", () => {
   });
 
   it("mid-word x families", () => {
-    expectLine("uhudexaloden", "wish-x-guidance");
+    expectLine("uhuxaloden", "wish-x-guidance");
     expectLine("yabebuxazovan", "y-Abebu-x-Azovan");
     expectLine("zuzuhexagavexedehen", "z-Uzuhe-x-Agave-x-Edehen");
     expectLine("vowogaxel", "v-walk-unable-temporary");
@@ -268,8 +268,8 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
   it("resume with in-text antecedent", () => {
     expectLine(
-      "yuhudexazovan. xazel zuhur thunom zerehel.",
-      "y-Uhude-x-Azovan . x-however | z-←Uhude-x-Azovan | th-WITNESSED | z-rain",
+      "yuhuxazovan. xazel zuhur thunom zerehel.",
+      "y-Uhu-x-Azovan . x-however | z-←Uhu-x-Azovan | th-WITNESSED | z-rain",
     );
   });
 });

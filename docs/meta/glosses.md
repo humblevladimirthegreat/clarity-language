@@ -56,7 +56,7 @@ Worked examples in grammar pages use a **blockquote**, not a code fence (so Mark
 A **complex citation** still gets a gloss if the morph unpacks structure the quote does not. An `x`-compound name is one word in Agazan and one name in English; the gloss shows the pieces:
 
 ```markdown
-> `uhudexaloden`
+> `uhuxaloden`
 >
 > wish-x-guidance
 >

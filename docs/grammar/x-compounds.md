@@ -252,7 +252,7 @@ Beginner already used two roots glued with **`x`**, dictionary words with no **`
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxedehol` *a teacher* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
 | name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | [conversation length](#conversation-length) | *Azawan — I have time* | vowel on the name |
 | longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [ability](intention.md#ability) | *can’t sing right now* | extra vowel after the host |
-| full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zebeyexabedel`; `zuhudexaloden` ([multipart names](word-endings.md#phrasal-proper-names)) | **x** ≈ plus |
+| full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zebeyexabedel`; `zuhuxaloden` ([multipart names](word-endings.md#phrasal-proper-names)) | **x** ≈ plus |
 | sake root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [sakes](sakes.md) | `guduthal` | **th** ≈ *think* (your view of the sake) |
 | other root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [label scope](predication.md#label-scope) | *angry this time* | **th** ≈ *think* (your view of how far the label reaches) |
 | direction root **`th`** facing person | [viewpoint lateral](roles.md#viewpoint-laterals) | `gewezathazawan` *Azawan’s left* | **th** ≈ *think* (whose point of view) |

@@ -59,6 +59,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **TOLD** | Evidential: hearsay | `themam` | [Knowing](knowing.md#evidentiality) |
 | **UNCOUNTERED** | Universality: no counterexample comes to mind | `thehol` | [Knowing](knowing.md#universality) |
 | **UNPLACED** | Emotion locus: can't place where it comes from | `wuduthuruol` | [Sakes](sakes.md#emotion-compose) |
+| **WANT** | Desire mood: lasting / unstated / passing | `thuhum` | [Intention](intention.md#want) |
 | **WITNESSED** | Evidential: firsthand memory (reconstructive) | `thunom` | [Knowing](knowing.md#evidentiality) |
 
 **Compare with:** [quasi](#quasi) (`ROOTl-e-`) is not **NOTIONAL**.

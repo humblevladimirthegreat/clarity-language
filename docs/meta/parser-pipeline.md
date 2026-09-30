@@ -127,6 +127,7 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause pole
 | `predict` | `mood` | **`edazo`** |
 | `decision` | `mood` | DECISION changeability |
 | `attempt` | `mood` | ATTEMPT commitment (**`udo`**) |
+| `want` | `mood` | WANT lastingness |
 | `cause` | `mood` | CAUSE **`ege`** |
 | `clause_pole` | `mood` | *if* / *only-if* / *iff* / *because* / *so-that* / *as-of* / … |
 | `universality` | `mood` | COMMON / FORMAL / … |

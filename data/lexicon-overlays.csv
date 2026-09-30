@@ -288,4 +288,12 @@ udon,th,🧪,attempt,ATTEMPT,attempt mood proper (this attempt-word names a part
 udon,w,🧪,attempt,ATTEMPT,attempt mood proper (this attempt-word names a particular object),test tube tries a sample; -n is ordinary proper not a commitment,intention.md#try
 udor,th,🧪,attempt,ATTEMPT-trial,attempt mood trial run (low-stakes probe; failing is useful data),test tube tries a small sample; a trial run is a probe whose failure still teaches,intention.md#try
 udor,w,🧪,attempt,ATTEMPT-trial,attempt mood trial run (low-stakes probe; failing is useful data),test tube tries a small sample; a trial run is a probe whose failure still teaches,intention.md#try
+uhul,th,🌠,want,WANT-lasting,want mood lasting (a wish that keeps returning),shooting star grants a wish; a lasting want is a wish that keeps coming back,intention.md#want
+uhul,w,🌠,want,WANT-lasting,want mood lasting (a wish that keeps returning),shooting star grants a wish; a lasting want is a wish that keeps coming back,intention.md#want
+uhum,th,🌠,want,WANT-unstated,want mood (duration unstated),wishing on a star; a want is wishing for a thing or an act,intention.md#want
+uhum,w,🌠,want,WANT-unstated,want mood (duration unstated),wishing on a star; a want is wishing for a thing or an act,intention.md#want
+uhun,th,🌠,want,WANT,want mood proper (this want-word names a particular object),shooting star grants a wish; -n is ordinary proper not a duration,intention.md#want
+uhun,w,🌠,want,WANT,want mood proper (this want-word names a particular object),shooting star grants a wish; -n is ordinary proper not a duration,intention.md#want
+uhur,th,🌠,want,WANT-passing,want mood passing (a whim that fades),shooting star streaks past; a passing want fades quickly,intention.md#want
+uhur,w,🌠,want,WANT-passing,want mood passing (a whim that fades),shooting star streaks past; a passing want fades quickly,intention.md#want
 azagum,w,🧦,pairing,respectively,respective pairing (item N of one list goes with item N of the other),socks sort into matched pairs; respectively matches each item to its partner,joins.md#respectively

@@ -303,21 +303,21 @@ A short one-word name, or a compact multipart name with mid-word **`x`**, still 
 
 English often writes a given name plus family as two words. In Agazan a short multipart proper name (given + family, a compact place label, a shop name) is **one content word**: roots join left to right with mid-word **`x`** ([ordinary compound order](x-compounds.md#ordinary-compound-order)), and **-n** names the whole as one person or place. That one word fills one slot and is one resume target.
 
-> `zuhudexaloden vowogal.`
+> `zuhuxaloden vowogal.`
 >
-> z-Uhude-x-Aloden | v-walk
+> z-Uhu-x-Aloden | v-walk
 >
 > "Uhudexaloden walks."
 
 | Agazan | Use | English |
 |--------|-----|---------|
-| `zuhudexaloden` | nativized multipart (roots + mid-word **`x`**) | *Uhudexaloden* (*wish*×*guidance*: one person) |
-| `duhudexaloden`, `buhudexaloden` | same name in other slots | one named place / person as object or argument |
+| `zuhuxaloden` | nativized multipart (roots + mid-word **`x`**) | *Uhudexaloden* (*wish*×*guidance*: one person) |
+| `duhuxaloden`, `buhuxaloden` | same name in other slots | one named place / person as object or argument |
 | `zagavexedehen`, `zagavexedehexowoden` | sense / shop label (two or more lexicon roots) | *Coffee-Tea*; *Coffee-Tea-Water* |
 
 A nativized loan (adapted Agazan root + ordinary ending) uses the same four last letters as any content word. A **lexical compound** is also one slot-filler: one stem, not mid-word **`x`** (`zebedalahazal` *bedroom*).
 
-**Compare with:** adjacent bare same-role words (`zuhuden zaloden`) are two people in a [join](joins.md).
+**Compare with:** adjacent bare same-role words (`zuhun zaloden`) are two people in a [join](joins.md).
 
 ### Continue (`/x/`): overview
 <a id="continue-x"></a>

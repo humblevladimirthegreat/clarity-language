@@ -256,21 +256,28 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 
 ### Will, want, try, let's {#will-want}
 
-**Needs:** [Plan](intention.md#plan-predict) · [Try](intention.md#try) · [Hopefully](sakes.md#speaker-attitude) · [Speech act](speech-moves.md#speech-act)
+**Needs:** [Plan](intention.md#plan-predict) · [Want](intention.md#want) · [Try](intention.md#try) · [Hopefully](sakes.md#speaker-attitude) · [Speech act](speech-moves.md#speech-act)
 
 | English | Agazan |
 |---------|--------|
 | *will* (willing) | PLAN **`thumam`**, or consent **`thuxegam`** (*I'll do it*, you can back out) |
-| *would like to*, *thinking of* | PLAN sketch **`thumar`** |
+| *wants to*, *feels like* | WANT **`thuhum`** (**`thuhul`** lasting, **`thuhur`** passing) |
+| *thinking of* | PLAN sketch **`thumar`** |
 | *hopefully* | **`thevegem`** |
 | *tries to* | **`thudom`** |
 | *let's* | request **`yem`** with **`oha`** as subject |
+
+> `zalahen thuhum vowogal.`
+>
+> z-Alahen | th-WANT-unstated | v-walk
+>
+> "Alahen wants to walk."
 
 > `zalahen thumar vowogal.`
 >
 > z-Alahen | th-plan-sketch | v-walk
 >
-> "Alahen would like to walk (a sketch is plenty)."
+> "Alahen is thinking of a walk (a sketch is plenty)."
 
 > `zalahen thudor vezehel.`
 >

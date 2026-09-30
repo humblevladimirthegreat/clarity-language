@@ -418,7 +418,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     if (kind === "exchange") return { line: "exchange", href: "relations.html#exchange" };
     if (kind === "proxy") return { line: "proxy", href: "relations.html#proxy" };
     if (kind === "stimulus") return { line: "sake stimulus", href: "sakes.html#stimulus" };
-    if (kind === "plan" || kind === "predict" || kind === "decision" || kind === "attempt") {
+    if (kind === "plan" || kind === "predict" || kind === "decision" || kind === "attempt" || kind === "want") {
       return { line: "closed mood", href: "intention.html" };
     }
     return { line: "closed mood", href: "knowing.html" };
