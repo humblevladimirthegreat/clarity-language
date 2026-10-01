@@ -34,11 +34,20 @@ export type LexiconData = {
   compounds: ReturnType<typeof parseCompoundCsv>;
 };
 
+/** Flag emoji (a regional-indicator pair): countries and territories, which the review never judges. */
+export function isCountryRow(row: Pick<PublishedRow, "emoji">): boolean {
+  return /[\u{1F1E6}-\u{1F1FF}]{2}/u.test(row.emoji);
+}
+
 export function loadLexiconData(): LexiconData {
+  const all = parsePublishedCsv(readFileSync(dataPath("lexicon-published.csv"), "utf8"));
+  const countryRoots = new Set(all.filter(isCountryRow).map((r) => r.root));
   return {
-    published: parsePublishedCsv(readFileSync(dataPath("lexicon-published.csv"), "utf8")),
+    published: all.filter((r) => !isCountryRow(r)),
     overlays: parseOverlayCsv(readFileSync(dataPath("lexicon-overlays.csv"), "utf8")),
-    compounds: parseCompoundCsv(readFileSync(dataPath("lexicon-compounds.csv"), "utf8")),
+    compounds: parseCompoundCsv(readFileSync(dataPath("lexicon-compounds.csv"), "utf8")).filter(
+      (c) => !countryRoots.has(c.left) && !countryRoots.has(c.right),
+    ),
   };
 }
 

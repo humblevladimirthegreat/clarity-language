@@ -504,6 +504,98 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 >
 > "Azawan cuts the book."
 
+### Contribution, acquisition, murder, comparison and other act nouns {#act-nouns}
+
+**Needs:** [The event itself](roles.md#the-event-itself) · [Role compounds](roles.md#role-compounds) · [Someone's act](#someones-act) · [Fault](causation.md#fault) · [Label scope](predication.md#label-scope) · [Proxy](relations.md#proxy) · [Exchange](relations.md#exchange)
+
+English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *comparison*). Agazan has no separate noun for them. Put the verb stem on a thing letter with no role vowel to name the act itself, put **`ux`** in the vowel slot to name the thing the act happens to, or say the act as a sentence and resume it with **-r**. A wrongness or a pattern is the pole or label on the act, not a different noun.
+
+| English | Agazan | Reading |
+|---------|--------|---------|
+| *contribution* / *acquisition* (the act) | `zebezol` | a giving, seen as a whole |
+| *contribution* (what is given) / *acquisition* (what is got) | `zuxebezol` | the thing the giving happens to |
+| *that contribution* / *that acquisition* | `debezor` / `duxebezor` | the latest giving, or what it passed on |
+| *contribution* (a share in a cause) | `therar barl` | one share among several causes |
+| *representation* (acting for someone) | `zazawan gadem balahen` | Azawan, on behalf of Alahen |
+| *reaction* / *response* | `zegehum` | the answer to what unlocked it |
+| *react to* | `zazawan derehel vegehum.` | answers the rain |
+| *murder* (a wrongful killing) | `zalahen vazagal theral barl zazawan vezogul.` | a death, and the fault is Azawan's shooting |
+| *comparison* / *contrast* (setting two against each other) | `zazem` | contrast |
+| *compare A with B* | `zazawan dalahen vazem bahaben.` | sets Alahen against Ahaben |
+| *preference* (the one preferred) | `zalavalogodal` | the one loved first |
+| *tendency* (a pattern) | `zalahathel` | a lying that repeats |
+| *tends to* | `zazawan valahathel.` | lies, as a pattern |
+| *introduction* (the act) | `zalahen velehal dazawan thegem bahaben.` | Alahen learns Azawan, Ahaben makes it happen |
+| *introduction* (opening of a text) | `zogodal gabom bubugal` | the first part of a book |
+| *unemployment* | `zazawan zamolameval gul.` | not in paid production |
+
+> `zalahen dubugal vebezol bazawan. zazawan debezor vahahal.`
+>
+> z-Alahen | d-book | v-present | b-Azawan . z-Azawan | d-←present.full | v-see
+>
+> "Alahen gave Azawan a book. Azawan sees that gift."
+
+> `zazawan derehel vegehum.`
+>
+> z-Azawan | d-rain | v-solution
+>
+> "Azawan reacts to the rain."
+
+> `zalahen vazagal theral barl zazawan vezogul.`
+>
+> z-Alahen | v-skull | [th-because.fault | b-that-clause] | z-Azawan | v-squirt-gun
+>
+> "Azawan murdered Alahen."
+
+> `zazawan dalahen vazem bahaben.`
+>
+> z-Azawan | d-Alahen | v-contrast | b-Ahaben
+>
+> "Azawan compares Alahen with Ahaben."
+
+**Compare with:** a ranking (*Azawan is more challenging than Alahen*) is the [rank join](comparatives.md#comparatives), not **`vazem`**, which only sets two things side by side. *Acquisition* as a company buying another is [buy](#buy-sell). *Preference* as a general taste is a [sake](sakes.md#sake-preference); **`zalavalogodal`** names the one chosen. *Tendency* is the [pattern label](predication.md#label-scope) (`the`) on the root, so *tends to lie* and *a tendency to lie* differ only in the word's slot.
+
+### Fair, keep, public, ride, admit and other leftover senses {#leftover-senses}
+
+**Needs:** [Word endings](word-endings.md#abstract-m) · [Join-relations](join-across-roles.md#join-relations) · [Hooks](hooks.md#extra-noun) · [Starting and stopping](say-reasons.md#phase-verbs)
+
+Some English words have a second or third sense that a published root already carries as a synonym. Look the sense up first; most of these need no new word, only the right ending (**-m** for the abstract sense) or the right host.
+
+| English | Agazan | Reading |
+|---------|--------|---------|
+| *just* / *fair* (even-handed) | `zazawan gelabam.` | fair |
+| *last* (final) | `zazawan gogovem.` | final |
+| *apply* / *application* (a request) | `zazawan dubugal vebeyam.` | pleads for the object |
+| *keep* / *retain* (an object) | `zazawan dubugal verum.` | preserves the book |
+| *experience* (skill) | `zudum` | readiness |
+| *side* (position, location) | `zehahem` | a position |
+| *address* (a location) | `zehahem` | where it is |
+| *public* (open to everyone) | `zahazal gaon bual.` | a house open to all |
+| *character* (a trait) | `zevebem` | identity, personality |
+| *special* (dear to one person) | `zazawan galavam.` | cherished |
+| *fit* (healthy) | `zazawan gabavem.` | in health |
+| *fit* (suits) | `gudutham` | a met need ([sake words](say-reasons.md#sake-words)) |
+| *match* (a contest) | `zazedem` | a contest |
+| *ride* (a horse, a bike) | `zazawan vehebam ael bohozal.` | travels using the horse |
+| *admit* (acknowledge a fault) | `zazawan dahabal vewevam.` | acknowledges the harm |
+| *directly* (without a go-between) | `gagabum` | straight |
+| *set off* / *start* | `vebeham` | [starts](say-reasons.md#phase-verbs) |
+| *turn off* / *stop* | `vazadal` | [stops](say-reasons.md#phase-verbs) |
+
+> `zazawan dubugal verum.`
+>
+> z-Azawan | d-book | v-preservation
+>
+> "Azawan keeps the book."
+
+> `zazawan vehebam ael bohozal.`
+>
+> z-Azawan | v-voyage | [using | b-horse]
+>
+> "Azawan rides the horse."
+
+**Compare with:** *ride* as a bus trip is `vabazul` ([sense nouns](#sense-nouns)). *Special* as *unusual* is a rank above the bar ([bar words](say-amounts.md#bar-words)). *Fair* in *a fair price* is `gelabam`, and *fairly* as *quite* is `wadeham`.
+
 ### Other, another, different {#other-different}
 
 **Needs:** [Unspecified member](joins.md#unspecified-member-r-phrase) · [Similative](relations.md#similative) · [Different from](#different)

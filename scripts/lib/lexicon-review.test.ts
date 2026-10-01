@@ -24,7 +24,7 @@ import {
 } from "./lexicon-review-report.js";
 import { runCheck, selectSubjects } from "./lexicon-review-runner.js";
 import { aggregate, cacheKeyFor, ReviewStore } from "./lexicon-review-store.js";
-import { rowSubjects, type LexiconData } from "./lexicon-review-subjects.js";
+import { isCountryRow, loadLexiconData, rowSubjects, type LexiconData } from "./lexicon-review-subjects.js";
 import type { ReviewRecord, Subject } from "./lexicon-review-types.js";
 
 function published(emoji: string, root: string, concrete: string, abstract = "", aliases: string[] = []): PublishedRow {
@@ -318,4 +318,10 @@ test("a lone pass near the boundary stays missing; modelTag separates reasoning 
   assert.equal(aggregate(leap, [rec(5), undefined]).status, "ok");
   assert.equal(modelTag("q", "none"), "q@none");
   assert.equal(modelTag("q", "default"), "q");
+});
+
+test("country and territory flag rows are excluded from loaded lexicon data", () => {
+  assert.equal(isCountryRow({ emoji: "🇦🇲" }), true);
+  assert.equal(isCountryRow({ emoji: "⚙️" }), false);
+  assert.ok(!loadLexiconData().published.some(isCountryRow));
 });

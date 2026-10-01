@@ -12,3 +12,6 @@ docs/grammar/.vitepress/.temp/
 *.tsbuildinfo
 .eslintcache
 __pycache__/
+
+data/lexicon-review/*.jsonl
+!data/lexicon-review/gold.jsonl

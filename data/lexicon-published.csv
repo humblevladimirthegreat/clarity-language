@@ -63,7 +63,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 ☹️,frown,avawo,disfavor,a frown shows disfavor; disfavor is the unobservable judgment against,,complaint
 😮,surprise,azeba,amazement,surprise shows amazement,,sudden; amaze
 😳,blush,abohe,embarrassment,blush shows embarrassment,,embarrass; ashamed
-🥺,plead,ebeya,appeal,pleading eyes appeal,,charm
+🥺,plead,ebeya,appeal,pleading eyes appeal,,charm; request
 🥹,touched,adadu,,,,
 😨,fear,evehe,threat-appraisal,fear means dread; threat-appraisal is the unobservable reading of danger,,afraid; scare; frighten
 😰,anxious,anago,apprehension,anxious means anxiety; apprehension is the unobservable expected harm,,nervous; anxiety
@@ -944,7 +944,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🧯,extinguisher,ogeze,containment,extinguisher stops spreading fire; containment is holding in bounds,,contain
 🛒,cart,agagu,consumption,cart fills with goods to buy; consumption is taking things in,,expenditure
 🚬,cigarette,ezuge,habit,cigarette is repeated addictive draw; habit is repeated hard-to-break act,,smoke
-⚰️,coffin,ogove,end,coffin holds the deceased; end is final conclusion,,conclusion
+⚰️,coffin,ogove,end,coffin holds the deceased; end is final conclusion,,conclusion; final
 🪦,headstone,ehado,burial,a headstone marks a grave; burial is laying the dead in the ground,,
 ⚱️,urn,enaho,remembrance,urn holds ashes of the dead; remembrance is keeping in memory,,
 🧿,nazar,anaza,superstition,the charm wards off the evil eye; superstition is belief in unproven magic,,

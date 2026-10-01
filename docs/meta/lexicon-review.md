@@ -1,6 +1,6 @@
 # Lexicon review (local LLM)
 
-Systematic review of the published lexicon, compounds and overlay collisions with a local model in LM Studio. The model never sees Agazan: each check is one atomic English question about a concrete / abstract / mnemonic tuple or a word pair. Output is a **triage queue for a human**; nothing here edits the lexicon CSVs.
+Systematic review of the published lexicon, compounds and overlay collisions with a local model in LM Studio. The model never sees Agazan: each check is one atomic English question about a concrete / abstract / mnemonic tuple or a word pair. Output is a **triage queue for a human**; nothing here edits the lexicon CSVs. Flag-emoji rows (countries and territories) are excluded from every check, and compounds built on them too.
 
 Code: `scripts/lexicon-review.ts` and `scripts/lib/lexicon-review-*.ts`. Results land in `data/lexicon-review/` (`<check>.jsonl`, `pairs.jsonl`, `gold.jsonl`, `triage.csv`).
 
