@@ -470,7 +470,7 @@ The vowel still types the content, and the word stands for the most recent conte
 
 The content can be anything a sentence says: a verbless sentence, a denied event, or several sentences chained with `/x/`. A [resume](pronouns.md#resume-r) **-r** picks up one word; **`-rth`** picks up what was said.
 
-Other role letters work the same way as the forward stand-in: **`barth`** after a pole (*because of that*), **`zarth`** as the subject.
+Other role letters work the same way as the forward stand-in: **`barth`** after a pole (*because of that*) or after [*like*](relations.md#similative) **`humum`** (*like that*), **`zarth`** as the subject.
 
 ### Time poles on a noun {#time-pole-on-noun}
 

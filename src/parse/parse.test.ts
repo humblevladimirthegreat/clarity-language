@@ -171,6 +171,12 @@ describe("parse — stand-in dependents", () => {
     }
   });
 
+  it("parses like (humum) hosting barl: the model of the simile is an event", () => {
+    const clause = parseText("zewedul vuvudel humum barl zahadal vuvudel.").utterances[0]!.bodies[0]!.clause;
+    assert.equal(clause.dependent?.orodo.raw, "barl");
+    assert.throws(() => parseText("zewedul vuvudel humum burl zahadal vuvudel."));
+  });
+
   it("parses barl after a channel's offset as its grounds, not a recipient", () => {
     const clause = parseText("zoyel galagal thobal bral barl zalahen vedabal.").utterances[0]!.bodies[0]!.clause;
     const host = clause.units.find((unit) => unit.kind === "h");

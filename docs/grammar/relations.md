@@ -31,6 +31,14 @@ On a noun, the same root is **`gumum`**:
 >
 > "A house like Azawan’s."
 
+When the model is an event (*walks the way a duck swims*), put [**`barl`**](dependents.md#dependent-clauses) after **`humum`** and say that event as the next sentence. Keep the pair last, as with *because*. The model event is a picture, not a claim, so it is not asserted.
+
+> `zazawan vowogal humum barl zadagul vezewel.`
+>
+> z-Azawan | v-walk | [h-like | b-that-clause] | z-duck | v-swim
+>
+> "Azawan walks the way a duck swims."
+
 Ordinary `zumul` is still *a mirror*.
 
 With no `/b/` after a joined subject, the model is the other members: each one resembles the others. That is English *alike* / *similar to each other*. Every hosted relation follows this rule ([social ties](#social-relations), [kin](numbers-applied.md#kin-generations)).

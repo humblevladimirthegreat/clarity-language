@@ -635,12 +635,18 @@ class AgazanSentenceParser extends CstParser {
       },
     });
     // A number word right after the hosted /b/ is its amount (measure phrase, e.g. a signed offset).
-    // An ordinal (a place, or a kin generation) is an adjective on the landmark instead, free to host its own /b/.
+    // An ordinal (a place, or a kin generation) or a label (a year, `bavawem g_1962`) is an adjective on
+    // the landmark instead, free to host its own /b/.
     this.OPTION6({
       GATE: () => {
         const la = this.LA(1);
         const family = (la.payload as LexWord | undefined)?.family;
-        return la.tokenType === G && family?.kind === "number" && !isOrdinalMarker(family.stem.marker);
+        return (
+          la.tokenType === G &&
+          family?.kind === "number" &&
+          !isOrdinalMarker(family.stem.marker) &&
+          !isLabelMarker(family.stem.marker)
+        );
       },
       DEF: () => this.CONSUME5(G),
     });
@@ -955,6 +961,10 @@ function factorAhead(tok: IToken): boolean {
 /** A place in a series (`#` from the start, `#-` from the end), including kin generations. */
 function isOrdinalMarker(marker: NumberMarker): boolean {
   return marker === "#" || marker === "re" || marker === "#-" || marker === "rue";
+}
+
+function isLabelMarker(marker: NumberMarker): boolean {
+  return marker === "_" || marker === "ro" || marker === "#_" || marker === "roe";
 }
 
 function boundJoinAhead(parser: AgazanSentenceParser): boolean {

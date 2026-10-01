@@ -244,6 +244,8 @@ function enforceHostedStandIn(units: Unit[], index: number, unit: HUnit, tables:
     }
     return;
   }
+  // A simile's model may be an event: `humum barl` + the next sentence (relations.md#similative).
+  if (!hosted.grounds && host.overlay?.kind === "similative" && bound.pos === "b" && s === "a") return;
   if (hosted.grounds || !isPole(host)) throw new ConstructionError("standInHost", `${host.raw} ${bound.raw}`);
   const undoHost = host.overlay!.gloss === "so-that" || host.overlay!.gloss === "if";
   if (bound.pos !== "b" || !(s === "a" || (s === "u" && undoHost))) {

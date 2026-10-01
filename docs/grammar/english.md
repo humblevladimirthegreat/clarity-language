@@ -79,6 +79,7 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agazan 
 | most that can be done (*as fast as possible*, *as small as you can*) | **`zawon`** + tie **`ae`** | [Best effort](comparatives.md#best-effort) |
 | topic (*as for Azawan*) | **`hahehom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 | resemblance (*walks as / like a duck*) | **`humum`** + `/b/` | [Simile](relations.md#similative) |
+| resemblance to an event (*walks the way a duck swims*, *as a hand moves through hair*) | **`humum barl`** + the event | [Simile](relations.md#similative) |
 | pretense (*as if they walk*) | **NOTIONAL** | [Notional](knowing.md#notional) |
 | dated books (*as of Friday*) | **`huhum` / `huram`** + `/b/` | [*As-of*](relations.md#as-of) |
 

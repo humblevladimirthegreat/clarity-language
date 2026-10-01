@@ -18,6 +18,7 @@ An English tense bundles up to three questions: **when** the event sits, **how y
 | *walked* | it is on record | RECORDED **`therem`** plus a `-` [offset](knowing.md#dated-channel) |
 | *walked* | going by clues or cases | INFERRED **`thunem`** / PATTERN **`thobam`** plus a `-` offset |
 | *walked* | they told you | TOLD **`thewam`** plus a `-` offset |
+| *walked* (telling a story) | it is a tale | TALE **`thozem`** on the first sentence; bare verbs after it go on telling the tale ([evidentiality](knowing.md#evidentiality)) |
 | *walked yesterday* / *three hours ago* | a measured time back | channel + signed amount ([dated channel](knowing.md#dated-channel)) |
 | *has walked* | the outcome still counts | RESIDUE **`thamom`** |
 | *has already walked* | the change has come | **`hoham`** |
@@ -191,6 +192,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 | *continue* / *keep doing* | **`hagem`** (*still*) |
 | *subsequently* / *after* | **`henum`** + `/b/`: `henum balahen` |
 | *prior to* | **`habam`** + `/b/`: `habam balahen` |
+| *in March* / *in 1962* / *on the 12th* | **`huwem`** + a month or year in `/b/` (`huwem bumuham grerel`, `huwem bavawem g_1962`); a day alone is `h_#12` ([time](numbers-applied.md#time)) |
 
 > `zazawan thunem bazazam grazol vowogal.`
 >

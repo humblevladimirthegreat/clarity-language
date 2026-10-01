@@ -31,4 +31,14 @@ describe("unknownWords", () => {
     assert.equal(words.length, 1);
     assert.deepEqual(words[0]!.maybeCompound, []);
   });
+
+  it("skips an opaque span", () => {
+    assert.deepEqual(unknownWords(parse("zazawan d<kimchi> vahahal.")), []);
+  });
+
+  it("checks the words inside a cite, not the cite as a whole", () => {
+    assert.deepEqual(unknownWords(parse("zazawan d[zalahen vezehel. zahaben vowogal.] vezebel.")), []);
+    const words = unknownWords(parse("zazawan d[zabababal vowogal] vezebel."));
+    assert.deepEqual(words.map((word) => word.raw), ["zabababal"]);
+  });
 });

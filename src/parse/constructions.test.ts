@@ -90,6 +90,12 @@ describe("construction registry", () => {
     assert.ok(ids.includes("reading.existence"), ids.join(" "));
   });
 
+  it("reads a label after a hosted /b/ as an adjective on the landmark, not an offset amount", () => {
+    const ids = parse("zazawan vowogal huwem bavawem g_1962.", undefined, { constructions: true }).constructions ?? [];
+    assert.ok(!ids.includes("sentence.hUnitRule.G"), ids.join(" "));
+    assert.ok(ids.includes("sentence.gPackage.G"), ids.join(" "));
+  });
+
   it("stays off by default", () => {
     assert.equal(parse("zazawan vowogal.").constructions, undefined);
   });

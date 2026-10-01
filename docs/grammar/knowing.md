@@ -263,6 +263,14 @@ Pick one evidential **root** for how you know.
 >
 > "Alahen writes — so they say."
 
+A **tale** sets its own now. Once a sentence frames the passage with TALE (`thozem`), later sentences in the same turn with no channel go on telling the tale, in the tale's now, until another channel or a new turn. A quote inside the tale keeps its speaker's own now.
+
+> `zazawan thozem vowogal. zazawan vehahel.`
+>
+> z-Azawan | th-STORY | v-walk . z-Azawan | v-sit
+>
+> "Azawan walked, so the tale goes. Azawan sat."
+
 **Compare with:** seeing as an action uses ordinary **`vahahal`**. **`thodom`** is *how you know* (the walk is in view now), not the verb *see*. Fear or hope uses [emotion compose](sakes.md#emotion-compose). **`thahom`** is a way of *knowing*, not that stack. **`thewam`** is someone said so about the claim; hearing a door as an action is ordinary `/v/`.
 
 **Related form:** to deny only the channel (*it happened, but I did not see it*), close the evidential with a [stance join](join-across-roles.md#stance-joins) (taught later). Two channels you cannot choose between use the same kind of join.

@@ -41,9 +41,24 @@ Clock and date together:
 | Job | How |
 |-----|-----|
 | **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left to right; commas are writing only: hour, minute, optional seconds (`h_15,30`, `h_15,30,00`). Digitless `h_` = *at some (unspecified) clock time*. |
-| **Calendar date** | Digit-string **`_`** with **`oe`** (spoken **`roe`**, written `h_#…`). Fields: **day, month, optional year** (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as **one digit group** (`2026` is one group). Digitless `h_#` covers an unspecified date. An explicit *date* host + `/b/` is optional when you want to name the relation. |
+| **Calendar date** | Digit-string **`_`** with **`oe`** (spoken **`roe`**, written `h_#…`). Fields: **day, month, optional year** (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as **one digit group** (`2026` is one group). Digitless `h_#` covers an unspecified date. A date may stop after the day (`h_#12`, *on the 12th*); context gives the month. An explicit *date* host + `/b/` is optional when you want to name the relation. |
 | **Day of the week** | Ordinal on **`elaga`** *weekday*, counting from Monday: `zelagam grewol` is *Monday*, `zelagam grelel` is *Sunday* (the seventh). |
+| **Month or year alone** | A month is an ordinal on **`umuha`** *month*, counting from January, the same way as weekdays: `zumuham grerel` is *March*. A year is a label on **`avawe`** *year*: `zavawem g_1962` is *1962*. To place an event in one, put it in `/b/` after **`huwem`** *during*: `huwem bumuham grerel` (*in March*), `huwem bavawem g_1962` (*in 1962*). |
 | **When-frame** | Ordinary lexicon `/h/` (*until*, *before*, recency), clock/date above, a signed [offset on the channel](knowing.md#dated-channel) (*three hours ago* / *in three hours*) or on a [time pole](knowing.md#dated-channel) (*until tomorrow*), or a closed mood whose **job** locates time ([LIVE](knowing.md#live-vs-memory) / [WITNESSED](knowing.md#live-vs-memory), or a channel plus `b+` for a [forecast](knowing.md#forecast)). [RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate) do **not** locate time. There is no past/future ending. A numeric payload (*3 days* on a unit) is relation + scalar + unit. |
+
+> `zazawan vowogal huwem bumuham grerel.`
+>
+> z-Azawan | v-walk | [h-while | [b-month | g-3rd]]
+>
+> "Azawan walks in March."
+
+> `zazawan vowogal huwem bavawem g_1962.`
+>
+> 🔊 *zazawan vowogal huwem bavawem growonagudul.*
+>
+> z-Azawan | v-walk | [h-while | [b-year | g-_1962]]
+>
+> "Azawan walks in 1962."
 
 Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** resume a prior clock or date with its digits; digitless `hror` asks *when?* / *what time?* in a question ([digitless](numbers.md#digitless)). Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
 
