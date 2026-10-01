@@ -472,7 +472,7 @@ English *has walked* and *used to walk* often smuggle **when** the event sits. A
 
 **Compare with:** [*after*](dependents.md#dependent-clauses) (`henum boyel`) orders two events. **`thamom`** does not say the leaving was earlier; it says the **outcome still counts**. [LIVE](#live-vs-memory) is how you know, not leftover balance. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
 
-**FORMER** (`eno`) marks **former climate**: this verb-claim is usual weather that you are **not** giving as today’s report. [Always](restrictors.md) **`hual`** is still the current climate (exceptions listed). [COMMON](#universality) (Advanced) is how exceptionless that current weather is. Ordinary `zenom` is still *emptiness*.
+**FORMER** (`eno`) marks **former climate**: this verb-claim is usual weather that you are **not** giving as today’s report. [Always](restrictors.md) **`hual`** is still the current climate (exceptions listed), and open **`huam`** is *usually*. Ordinary `zenom` is still *emptiness*.
 
 > `zazawan hual vezebel thenom.`
 >
@@ -492,7 +492,7 @@ English *has walked* and *used to walk* often smuggle **when** the event sits. A
 >
 > "Azawan always tells — a pattern that will be former by then (forecast from the pattern)."
 
-**Compare with:** **`hual`** without **`thenom`** is *always* as the weather you stand behind now. PATTERN **`thobam`** is *how you know* (a trail of cases), not “this used to be my weather.” Do not write **`thenom`** immediately before **`hual`**: that slot is the restrictor’s occasion list (*always except when…*). Keep **`hual`** first (bare *always*), then **FORMER** after the verb, the way [COMMON](#universality) sits after **`hual`**. **`thenom`** is not a past tense: it is legal under LIVE and in a forecast.
+**Compare with:** **`hual`** without **`thenom`** is *always* as the weather you stand behind now. PATTERN **`thobam`** is *how you know* (a trail of cases), not “this used to be my weather.” Do not write **`thenom`** immediately before **`hual`**: that slot is the restrictor’s occasion list (*always except when…*). Keep **`hual`** first (bare *always*), then **FORMER** after the verb, the way a channel does on a [general claim](#universality). **`thenom`** is not a past tense: it is legal under LIVE and in a forecast.
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -1226,45 +1226,73 @@ Only the eight channels, MAY, and NOTIONAL take a holder: they are the ways you 
 
 **Compare with:** being upset **for** Azawan is your own feeling about Azawan's stake (the ON-BEHALF locus in [emotion compose](sakes.md#emotion-compose)); with a holder the feeling is Azawan's. *On behalf of* Azawan is [proxy](relations.md#proxy) (`hadem`). A [dictionary compound](x-compounds.md#lexical-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
 
-### Universality {#universality}
+### Channels on a generalization {#universality}
 <a id="universality-mood"></a>
+<a id="generalization"></a>
 
-English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Keep *who / when* on the [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / …). Write exceptionlessness as a closed `/th/` mood root (optional `/w/` immediately before a `/ɡ/`). You can then pair *always* with *usually*, *by definition*, and the rest without changing the domain fence.
+English *always*, *usually*, *every*, and *never* make a general claim. The [universal fences](joins.md#universals-domains-generics) (`zual` / `zuam`) and the [restrictors](restrictors.md) (`hual` / `huam` / `hal`) already say **who** or **when** the claim covers, and their ending says how many exceptions it allows: closed **-l** allows none, and open **-m** allows some that are not listed (*usually*, *as a rule*). No other word is needed for the claim itself.
 
-> `zazawan hual vowogal thagal.`
+> `zazawan huam vowogal.`
 >
-> z-Azawan | h-always | v-walk | th-COMMON
+> z-Azawan | h-always.open | v-walk
 >
-> "Azawan always walks, usually."
+> "Azawan usually walks."
 
-The default *always* is *usually* (exceptions expected), not *must happen that way*, and not an ought. (cue: usual weather, not a law of nature.) Prefer floating `/th/`. Use **COMMON** (`thagal`) unless another row is the exceptionlessness you mean. **RULE** is complex `/th/` + `/b/` when you name the frame.
+To say **how you know** the general claim, add a [channel](#evidentiality). On a clause with a universal fence or restrictor, the channel is your warrant for the whole generalization, not for one case, and its [ending](#evidence-strength) says how much backs it.
 
-| Agazan | Use | English | Same root as | Cue |
-|--------|-----|---------|--------------|-----|
-| **`thagal`** | COMMON (default climate) | *usually* (exceptions expected) | `agal` *cloudy* | ⛅: usual sky still allows a shower |
-| **`theyul`** | UNCOUNTERED (search) | *as far as checked* (no counterexample comes to mind) | `eyul` *pill* | 💊: you take it to treat an ailment; the search found none |
-| **`thozal`** | FORMAL | *by definition* / math / proof | `ozal` *star* | ⭐: a charted constellation does not wander |
-| **`thalul`** | NATURAL | *by natural necessity* (unsupported objects fall) | `alul` *apple* | 🍎: it falls because the world works that way |
-| **`thubel`** | RULE | *under a named frame* (`thubel bazagul`) | `ubel` *pepper* | 🌶️: heat that applies in that dish |
+> `zazawan hual vowogal thobar.`
+>
+> z-Azawan | h-always | v-walk | th-PATTERN.weak
+>
+> "Azawan always walks, from the few cases I have seen."
 
-**Compare with:** *who / when* uses [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory. Usual weather you are **not** claiming now is [FORMER](#former-climate) (`thenom`), not COMMON.
+> `zual gaxedehol vedehol thunel.`
+>
+> [z-everything | g-agent-x-teach] | v-teach | th-INFERRED.strong
+>
+> "Every teacher teaches; it follows."
 
-**For *I saw a pattern*, use:** [evidential](#evidentiality) **`oba`**. **`aga`** is usual-weather universality; NATURAL **`alu`** stacks a separate evidential `/th/` for how you know.
+> `zalahen hal vabahel therel bazagul.`
+>
+> z-Alahen | h-never | v-punch | [th-RECORDED.strong | b-soccer]
+>
+> "Alahen never punches, per the soccer rules."
 
-| Agazan | Use | English |
-|--------|-----|---------|
-| `… hual … thagal` | default universality | *always, usually* |
-| `… hual … theyul` | search found no counterexample | *always, as far as checked* |
-| `zual gaxedehol vedehol thozal` | definition / proof | *every teacher teaches, by definition* |
-| `… hual … thalul` + evidential `/th/` | nature plus how you know | *always, by natural necessity* (e.g. `thobam`) |
-| `… hal … thubel bazagul` | named frame | *never, under soccer rules* |
-| `zuam gagadul … thagal` | open domain + usual universality | *every cat that comes to mind, usually* |
-| `zual gavahel gahadul thagal` | [property of every member](joins.md#universals-domains-generics) + usual universality | *fire is hot, as a rule* |
+The fence says how far the claim reaches, and the channel says what it rests on. Keep the two apart: *always, as far as I have checked* is closed **`hual`** with a weak channel, because you claim no exceptions on thin evidence. Open **`huam`** says exceptions happen.
+
+| English | Fence or restrictor | Channel | Example |
+|---------|---------------------|---------|---------|
+| *usually*, *as a rule* | `huam` / `zuam` | any, or none | `zazawan huam vowogal.` |
+| *always, as far as I have checked* | `hual` / `zual` | a weak channel | `zazawan hual vowogal thobar.` |
+| *it follows that every …* | `zual` | INFERRED.strong `thunel` | `zual gaxedehol vedehol thunel.` |
+| *by definition* | `zual` + `thedam barl` | none | `zual gebezal gaxedehol thedam barl zebezar vedehol.` |
+| *under the rules of …* | `hal` / `hual` | RECORDED with the rules in `/b/` | `zalahen hal vabahel therel bazagul.` |
+| *cats are sleepy* (in general) | `zuam` + kind | any, or none | `zuam gagadul gezebul thobam.` |
+
+A [cause or condition](causation.md) on a general claim says how things work. It holds for **each** member or occasion, the same way the verb does. Inside the sentence after **`barl`**, resume the kind with **-r** (`zagar`) to mean *that same one*: each cat, in turn.
+
+> `zual gagadul vezebal thegem thoyem barl zagar gezebul.`
+>
+> [z-everything | g-cat] | v-sleep | th-CAUSE | [th-if | b-that-clause] | [z-←cat | g-sleepy]
+>
+> "Every cat sleeps when it is sleepy; that is how it works."
+
+A **definition** works both ways: whatever has the property is that kind, and every member of the kind has it. Write it on a closed fence with **`thedam`** (*if and only if*, from [causation](causation.md#only-because)). The grounds sentence is the defining property. A definition needs no channel, because it is a decision about a word, not a report about the world.
+
+> `zual gebezal gaxedehol thedam barl zebezar vedehol.`
+>
+> [z-everything | g-person] | g-agent-x-teach | [th-iff | b-that-clause] | z-←person.full | v-teach
+>
+> "A person is a teacher if and only if they teach (by definition)."
+
+The channel stays on the main sentence and covers the whole generalization. Put it before the pole, as with the [evidence clause](#evidence-clause): `zual gagadul vezebal thobal thoyem barl …` is *going by a well-established pattern, every cat sleeps when …*.
+
+**Compare with:** a general claim you are **not** giving as today's report is [FORMER](#former-climate) (`thenom`). *Every cat must sleep* as a rule someone sets is [REQUIRE](sakes.md#requirement) (`thumem`), not a law of how things work. *Maybe every cat sleeps* is [MAY](#may) on the same clause.
 
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**. Score leftover against the ledger; repeat the channel. The middle items keep the domain fence and add how exceptionless the claim is. The last items name a holder: fuse the name onto the host's ending letter.
+Short drills for Advanced. Try each item before opening **Show answer**. Score leftover against the ledger; repeat the channel. The middle items make a general claim: the fence or restrictor says how far it reaches, and a channel says what it rests on. The last items name a holder: fuse the name onto the host's ending letter.
 
 **Setting:** a film archive
 
@@ -1278,11 +1306,6 @@ Short drills for Advanced. Try each item before opening **Show answer**. Score l
 | *LIVE* | `thodom` | | |
 | *MAY* | `thovum` | | |
 | *blue* | `ubuhel` | | |
-| *COMMON* | `thagal` | `agal` *cloudy* | ⛅: usual sky still allows a shower |
-| *UNCOUNTERED* | `theyul` | `eyul` *pill* | 💊: you take it to treat an ailment; the search found none |
-| *FORMAL* | `thozal` | `ozal` *star* | ⭐: a charted constellation does not wander |
-| *NATURAL* | `thalul` | `alul` *apple* | 🍎: it falls because the world works that way |
-| *RULE* | `thubel` | `ubel` *pepper* | 🌶️: heat that applies in that dish |
 | *always* | `hual` | | |
 | *never* | `hal` | | |
 | *write* | `varadal` | | |
@@ -1293,12 +1316,17 @@ Short drills for Advanced. Try each item before opening **Show answer**. Score l
 | *agent-fight* | `gaxavadal` | `avadal` *fight* | |
 | *teach* | `vedehol` | | |
 | *fight* | `vavadal` | | |
-| *claim* | `ededem` | `ededel` *trademark* | |
-| *proof* | `erazem` | `erazel` *receipt* | |
 | *soccer* | `azagul` | | |
 | *cat* | `agadul` | | |
 | *sleep* | `vezebal` | `ezebal` *sleep* | |
-| evidential *pattern* | `obam` | `obal` *paw-prints* | 🐾: a trail of what usually happens |
+| *sleepy* | `gezebul` | | |
+| *PATTERN* | `thobam` | `obal` *paw-prints* | |
+| *PATTERN.strong* | `thobal` | `obal` *paw-prints* | |
+| *PATTERN.weak* | `thobar` | `obal` *paw-prints* | |
+| *RECORDED.strong* | `therel` | `erel` *record* | |
+| *CAUSE* | `thegem` | | |
+| *if* | `thoyem` | `oyel` *door* | |
+| *that-clause* | `barl` | | |
 | *departure* | `vedabal` | | |
 | *INFERRED* | `thunem` | `unel` *investigate* | |
 | *INFERRED.strong* | `thunel` | `unel` *investigate* | |
@@ -1316,52 +1344,52 @@ Short drills for Advanced. Try each item before opening **Show answer**. Score l
 [z-Alahen | [w-LIVE | g-blue]] | v-walk
 :::
 
-**2.** *Alahen always writes, usually.*
+**2.** *Alahen usually writes.*
 
 ::: details Show answer
-`zalahen hual varadal thagal.`
+`zalahen huam varadal.`
 
-z-Alahen | h-always | v-write | th-COMMON
+z-Alahen | h-always.open | v-write
 :::
 
-**3.** *Azawan always sits, as far as checked.*
+**3.** *Azawan always sits, from the few cases I have seen.*
 
 ::: details Show answer
-`zazawan hual vehahel theyul.`
+`zazawan hual vehahel thobar.`
 
-z-Azawan | h-always | v-sit | th-UNCOUNTERED
+z-Azawan | h-always | v-sit | th-PATTERN.weak
 :::
 
-**4.** *Every teacher teaches, by definition.*
+**4.** *Every teacher teaches; it follows.*
 
 ::: details Show answer
-`zual gaxedehol vedehol thozal.`
+`zual gaxedehol vedehol thunel.`
 
-[z-everything | g-agent-x-teach] | v-teach | th-FORMAL
+[z-everything | g-agent-x-teach] | v-teach | th-INFERRED.strong
 :::
 
-**5.** *Every cat sleeps, by natural necessity* (plus a trail of cases).
+**5.** *Every cat sleeps when it is sleepy; that is how it works.*
 
 ::: details Show answer
-`zual gagadul vezebal thalul thobam.`
+`zual gagadul vezebal thegem thoyem barl zagar gezebul.`
 
-[z-everything | g-cat] | v-sleep | th-NATURAL | th-PATTERN
+[z-everything | g-cat] | v-sleep | th-CAUSE | [th-if | b-that-clause] | [z-←cat | g-sleepy]
 :::
 
-**6.** *Alahen never punches, under soccer rules.*
+**6.** *Alahen never punches, per the soccer rules.*
 
 ::: details Show answer
-`zalahen hal vabahel thubel bazagul.`
+`zalahen hal vabahel therel bazagul.`
 
-z-Alahen | h-never | v-punch | [th-RULE | b-soccer]
+z-Alahen | h-never | v-punch | [th-RECORDED.strong | b-soccer]
 :::
 
-**7.** *Every claim that comes to mind, usually.*
+**7.** *Cats sleep, as a rule, going by the pattern.*
 
 ::: details Show answer
-`zuam gededem thagal.`
+`zuam gagadul vezebal thobam.`
 
-[z-everything.open | g-claim] | th-COMMON
+[z-everything.open | g-cat] | v-sleep | th-PATTERN
 :::
 
 **8.** *I gather Azawan thinks Alahen left.*
@@ -1399,58 +1427,58 @@ z-Azawan | th-MAY-Alahen | th-MAY | v-write
 *Azawan walks — and that may be blue.* (only the color is open)
 :::
 
-**2.** `zazawan hual vehahel thagal.`
+**2.** `zazawan huam vehahel.`
 
 ::: details Show answer
 
-z-Azawan | h-always | v-sit | th-COMMON
+z-Azawan | h-always.open | v-sit
 
-*Azawan always sits, usually.*
+*Azawan usually sits.*
 :::
 
-**3.** `zalahen hual varadal theyul.`
+**3.** `zalahen hual varadal thobar.`
 
 ::: details Show answer
 
-z-Alahen | h-always | v-write | th-UNCOUNTERED
+z-Alahen | h-always | v-write | th-PATTERN.weak
 
-*Alahen always writes, as far as checked.*
+*Alahen always writes, from the few cases I have seen.*
 :::
 
-**4.** `zual gaxavadal vavadal thozal.`
+**4.** `zual gaxavadal vavadal thunel.`
 
 ::: details Show answer
 
-[z-everything | g-agent-x-fight] | v-fight | th-FORMAL
+[z-everything | g-agent-x-fight] | v-fight | th-INFERRED.strong
 
-*Every fighter fights, by definition.*
+*Every fighter fights; it follows.*
 :::
 
-**5.** `zual gagadul vevegal thalul thobam.`
+**5.** `zual gagadul vevegal thegem thoyem barl zagar gezebul.`
 
 ::: details Show answer
 
-[z-everything | g-cat] | v-think | th-NATURAL | th-PATTERN
+[z-everything | g-cat] | v-think | th-CAUSE | [th-if | b-that-clause] | [z-←cat | g-sleepy]
 
-*Every cat thinks, by natural necessity* (plus a trail of cases).
+*Every cat thinks when it is sleepy; that is how it works.*
 :::
 
-**6.** `zazawan hal vehahel thubel bazagul.`
+**6.** `zazawan hal vehahel therel bazagul.`
 
 ::: details Show answer
 
-z-Azawan | h-never | v-sit | [th-RULE | b-soccer]
+z-Azawan | h-never | v-sit | [th-RECORDED.strong | b-soccer]
 
-*Azawan never sits, under soccer rules.*
+*Azawan never sits, per the soccer rules.*
 :::
 
-**7.** `zuam gerazem thagal.`
+**7.** `zuam gagadul gezebul thobal.`
 
 ::: details Show answer
 
-[z-everything.open | g-proof] | th-COMMON
+[z-everything.open | g-cat] | g-sleepy | th-PATTERN.strong
 
-*Every proof that comes to mind, usually.*
+*Cats are sleepy, as a rule, going by a well-established pattern.*
 :::
 
 **8.** `zalahen thunelazawan vowogal.`
@@ -1487,5 +1515,5 @@ z-Azawan | th-TOLD-Alahen | th-LIVE | v-walk
 - Plan vs forecast: [intention.md](intention.md#plan-predict)
 - Clock / date / when-frames: [numbers-applied.md](numbers-applied.md#time)
 - Habitual *always*: [restrictors.md](restrictors.md)
-- Usual-climate universality: [Universality](#universality)
+- General claims and their warrant: [Channels on a generalization](#universality)
 - Someone else's view: [Whose view (holder)](#holder)

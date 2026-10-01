@@ -463,7 +463,7 @@ const BAR_OVERLAY_KINDS = new Set(["evidential", "former_climate", "notional", "
 /**
  * A `/th/` word that can be a rank fence's bar: a met sake word, an ability word, a channel, FORMER, NOTIONAL,
  * PLAN, permission, requirement, consent, a holder on one of those, or a speaker attitude (an ordinary content
- * root on `/th/`). Poles, MAY, MIRATIVE, DECISION, universality, and the deontic noes set no value.
+ * root on `/th/`). Poles, MAY, MIRATIVE, DECISION, and the deontic noes set no value.
  */
 export function isBarStance(word: LexWord, tables: ClassifyTables): boolean {
   if (word.pos !== "th") return false;
@@ -486,7 +486,7 @@ const FRAME_OVERLAY_KINDS = new Set(["evidential", "plan", "decision", "want", "
 /**
  * A `/th/` word that can be the frame of `uem` *contrary to*: a channel (or a holder on one), PLAN, DECISION, WANT,
  * a ban, a requirement, a refusal, or a speaker attitude (an ordinary content root on `/th/`). Sakes, permission and
- * consent given, poles, MAY, NOTIONAL, MIRATIVE, RESIDUE, FORMER, CAUSE, ATTEMPT, ability, and universality say
+ * consent given, poles, MAY, NOTIONAL, MIRATIVE, RESIDUE, FORMER, CAUSE, ATTEMPT, and ability say
  * nothing an event can contradict.
  */
 export function isFrameStance(word: LexWord, tables: ClassifyTables): boolean {

@@ -136,7 +136,7 @@ Mark the one mix-up so it is easy to scan. Use **one** of these four starters (b
 
 | Prefer | Avoid |
 |--------|--------|
-| **Compare with:** *if* / *because* use the poles above. | Sufficient / necessary / *if* / *because* **stay on** the joins. Exceptionlessness **stays on** universality. |
+| **Compare with:** *if* / *because* use the poles above. | Sufficient / necessary / *if* / *because* **stay on** the joins. Exceptionlessness **stays on** the fence. |
 | **For *could be*, use:** [MAY](../grammar/knowing.md#may) (`ovu`). This inventory is *how you know a world-claim*. | First-person *could be* **stays** MAY. |
 | **Related form:** packaging a list uses [joins](../grammar/joins.md) (`zal` / `val` / `xal`, …). | Phrase joins stay on joins.md; VP and clause joins go in join-across-roles.md. |
 | **Not the same job as:** [PLAN](../grammar/intention.md#plan-predict) (map grain). This mood marks **pick firmness**. | Intention map grain **stays PLAN**. |
@@ -303,7 +303,7 @@ Inline after the rule sentence: `(cue: …)`. Worked examples stay Agazan / morp
 
 A **scene** cue (`emoji *literal*: why`) is for remembering a published picture. State it only when that picture is doing **grammar** work, not when the page is merely using a dictionary metaphor.
 
-**State it** on a **closed overlay**: a fixed special reading under one part of speech (MAY, SAME, CAUSE, ABIL, plan / DECISION, evidentials, NOTIONAL, clause-pole **`oye`**, locatives, means, simile *like*, exchange *for*, proxy *on behalf of*, of-relations, special pronouns, universality moods, and the same class). The learner needs the scene to remember why *this* published root hosts that job. Put `(cue: …)` on the **rule sentence** (job, shape, consequence first), or in the inventory **Cue** column with **Same root as** naming the **-l** citation. One line that the same spelling is still ordinary content under other letters is fine.
+**State it** on a **closed overlay**: a fixed special reading under one part of speech (MAY, SAME, CAUSE, ABIL, plan / DECISION, evidentials, NOTIONAL, clause-pole **`oye`**, locatives, means, simile *like*, exchange *for*, proxy *on behalf of*, of-relations, special pronouns, and the same class). The learner needs the scene to remember why *this* published root hosts that job. Put `(cue: …)` on the **rule sentence** (job, shape, consequence first), or in the inventory **Cue** column with **Same root as** naming the **-l** citation. One line that the same spelling is still ordinary content under other letters is fine.
 
 **Do not state it** when the example is ordinary **lexicon abstract** (content **-m**): `welavam` *size* / *very*, `hadehum` *hastily*. Do **not** add a following sentence of the form “**`adehu`** here is the published abstract *haste*. (cue: 💨 *dash*: …).” The morph gloss and quoted English already give the sense. **-m** as a system is taught on [word-endings.md](../grammar/word-endings.md#abstract-m); that page (and drill **Cue** cells) may show `from *swan*: the glide of *grace*` because the lesson *is* the abstract ending.
 

@@ -47,7 +47,6 @@ export const OVERLAY_KINDS = [
   "want",
   "cause",
   "clause_pole",
-  "universality",
   "identity",
   "locative",
   "pairing",

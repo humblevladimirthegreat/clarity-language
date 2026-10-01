@@ -130,7 +130,6 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause pole
 | `want` | `mood` | WANT lastingness |
 | `cause` | `mood` | CAUSE **`ege`** |
 | `clause_pole` | `mood` | *if* / *only-if* / *iff* / *because* / *so-that* / *as-of* / … |
-| `universality` | `mood` | COMMON / FORMAL / … |
 | `identity` | `mood` | SAME **`ugo`** |
 | `locative` | `locative` | *between* |
 | `means` | `means` | *using* **`ahada`** |

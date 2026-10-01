@@ -182,7 +182,7 @@ Published roots keep an **abstract** sense beside the **concrete** picture, so t
 * [Live look as attesting](knowing.md#live-vs-memory): eye-in-speech while the scene is still in view.
 * [Residue as unpaid debt](knowing.md#residue): leftover balance still on the books; not a past tense.
 * [Former climate as an empty nest](knowing.md#former-climate): the nesting season is over; not *used to* as past.
-* [Usual as weather](knowing.md#universality): a habitual *always* is a climate report; [uncountered](knowing.md#universality) is clear sky (*no counterexample comes to mind*), a search, not a proof.
+* [A pattern as paw-prints](knowing.md#universality): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
 * [*As if* as theater](knowing.md#notional): a stage mask frames play; the real tally stays **offstage**.
 * [Mechanism as gears](causation.md#cause): naming the gear train marks *how it meshes*.
 * [Affect as water](sakes.md#emotion-compose): surging / flowing / still water (motion) plus where the charge sits or points (locus) instead of an opaque emotion label that hides the sake.

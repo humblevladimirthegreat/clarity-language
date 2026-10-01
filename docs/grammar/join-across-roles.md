@@ -66,13 +66,13 @@ Sequence **`oe`** keeps its [phrase meaning](joins.md#sequence-oe) in both roles
 
 **Compare with:** clause **`xan`** ([sequence](#sequence)) tells what happened next, one step at a time. **`xoel`** makes the order part of the claim (a recipe, directions): `A xoel B xoel C` says these steps go in this order.
 
-A clause join with no clause before it is the standalone reading, like `zal` *nothing*: `xal` is *nothing happened*, and `xam` hedges it.
+A clause join with no clause before it is the standalone reading, like `zal` *nothing*: `xal` is *nothing happened*, and `xam` is *hardly anything happened*.
 
 > `xam.`
 >
 > x-and.open
 >
-> "Nothing happened, as far as I know."
+> "Hardly anything happened."
 
 `/x/` keeps the **same speech act**. Later clauses inherit the opener and omit `/y/` (including recoverable **`yal`**).
 

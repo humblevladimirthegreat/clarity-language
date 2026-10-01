@@ -30,7 +30,7 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 
 ### Obviously, apparently, perhaps, guess, assume {#stance-adverbs}
 
-**Needs:** [Evidence strength](knowing.md#evidence-strength) · [MAY](knowing.md#may) · [Hold endings (NOTIONAL)](knowing.md#hold-endings-notional) · [Hopefully and other attitudes](sakes.md#speaker-attitude) · [Unmet](sakes.md#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](spans.md#asides) · [Universality](knowing.md#universality) · [CAUSE](causation.md#cause) · [Every bar](comparatives.md#stance-bars)
+**Needs:** [Evidence strength](knowing.md#evidence-strength) · [MAY](knowing.md#may) · [Hold endings (NOTIONAL)](knowing.md#hold-endings-notional) · [Hopefully and other attitudes](sakes.md#speaker-attitude) · [Unmet](sakes.md#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](spans.md#asides) · [CAUSE](causation.md#cause) · [Every bar](comparatives.md#stance-bars)
 
 English adverbs like *obviously*, *apparently* and *presumably* say **how you know** a claim. Agazan has no word for each one. It puts a channel on the clause as a `/th/` word, and the ending grades the evidence: **-l** solid, **-m** ordinary, **-r** thin. *Guess* and *assume* are not channels: a guess is a *could be* (MAY), and an assumption is toying with a premise (NOTIONAL). *Unfortunately* says how **you** feel about the claim, so it is an attitude word.
 
@@ -49,7 +49,7 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 | *assume* / *suppose* | `thavor` | NOTIONAL, toy with it for now |
 | *personally* / *in my view* | `hahehom bamagon` | topic: as for me |
 | *by the way* / *aside* (in passing) | `th( … )` | aside fence, any place a stance word may sit |
-| *necessarily* / *of necessity* | `thalul` | NATURAL, by natural necessity |
+| *necessarily* / *it follows* | `thunel` | INFERRED, strong clues |
 | *basically* / *fundamentally* | `hadawam` | manner adverb on *fundamental* |
 | *overall* / *on the whole* | `hahehom bual` | as for everything |
 | *automatically* / *by itself* | `zubugal vowogal thegem bubugar.` | CAUSE, with the doer resumed as its own cause |
@@ -340,7 +340,7 @@ A one-off episode and a standing pattern use the same poles. Add extra words for
 >
 > "Rain comes if there are clouds, as a standing pattern."
 
-**Compare with:** *always* / *every* / *never* as exceptionlessness uses [universality](knowing.md#universality). **CAUSE** is **`thegem`**.
+**Compare with:** to say how you know a general claim, put a channel on it ([channels on a generalization](knowing.md#universality)). **CAUSE** is **`thegem`**.
 
 ### Hoping something will happen {#hope-forecast}
 
@@ -450,9 +450,9 @@ English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrec
 
 ### Clear, honest, false, general, proud {#trait-words}
 
-**Needs:** [Negation](joins.md#negation-u) · [Universality](knowing.md#universality) · [Universals, domains and generics](joins.md#universals-domains-generics) · [Fault](causation.md#fault) · [Emotion compose](sakes.md#emotion-compose) · [Number as stance](numbers.md#special-number-as-stance)
+**Needs:** [Negation](joins.md#negation-u) · [Universals, domains and generics](joins.md#universals-domains-generics) · [Fault](causation.md#fault) · [Emotion compose](sakes.md#emotion-compose) · [Number as stance](numbers.md#special-number-as-stance)
 
-Many English adjectives are the plain opposite of something that has a root (*unclear*, *honest*, *false*). Agazan says the positive root and closes it with **`gul`** (*not*). Others claim how far something holds (*general*, *universal*, *absolute*). That is universality, written as a `/th/` word. A few are a feeling (*proud*), which is an emotion compose, so the sake and the stimulus are named.
+Many English adjectives are the plain opposite of something that has a root (*unclear*, *honest*, *false*). Agazan says the positive root and closes it with **`gul`** (*not*). Others claim how far something holds (*general*, *universal*, *absolute*). That is the universal fence: closed for no exceptions, open for *as a rule*. A few are a feeling (*proud*), which is an emotion compose, so the sake and the stimulus are named.
 
 | English | Agazan | Reading |
 |---------|--------|---------|
@@ -461,8 +461,8 @@ Many English adjectives are the plain opposite of something that has a root (*un
 | *false* / *untrue* | `gegegal gul` | not correct |
 | *responsible* (to blame) | `thevel barl` + the act | fault on the act ([fault](causation.md#fault)) |
 | *responsible* (in charge) | `gabazem` | of authority |
-| *general* / *generally true* | `… thagal` | COMMON, usually |
-| *universal* / *absolute* / *without exception* | `… thozal` or `… thalul` | FORMAL, or by natural necessity |
+| *general* / *generally true* | `zuam` with the kind | every member, as a rule |
+| *universal* / *absolute* / *without exception* | `zual` with the kind | every member, no exceptions |
 | *comprehensive* / *covers everything* | `zual` with the scope | every member, nothing left out |
 | *sure* / *confident* (I am) | stance number `th+e` | certain, no exceptions |
 | *proud* (of something) | `wulothamam gobum` after the thing | competence met, held inside, flowing |
@@ -473,9 +473,9 @@ Many English adjectives are the plain opposite of something that has a root (*un
 >
 > "The book is unclear."
 
-> `zual gavahel gahadul thagal.`
+> `zuam gavahel gahadul.`
 >
-> [z-everything | g-fire] | g-hot | th-COMMON
+> [z-everything.open | g-fire] | g-hot
 >
 > "Fire is hot, as a rule."
 

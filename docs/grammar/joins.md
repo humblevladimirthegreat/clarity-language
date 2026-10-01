@@ -88,7 +88,7 @@ The join still comes last when there is only one item, or none. How many items s
 |-------|--------|-----|---------|
 | **List** (2+) | `A B zam` | close a multi-item set | ordinary *and* / *or* |
 | **Single-item** (1) | `A zal` | that one item is the whole story | *just X* |
-| **Standalone** (0) | `zam` | the join alone | *nothing, as far as I know* |
+| **Standalone** (0) | `zam` | the join alone | *hardly anything* |
 
 > `zazawan zal.`
 >
@@ -210,7 +210,7 @@ Write A and B, then `zar`: the join still ends both items, and **-r** means some
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **-l** | the listed items are the only ones in play | (no extra words) | **l** ≈ locked list |
-| **-m** | other items may exist | *(and possibly more)*; empty: *as far as I know* | **m** ≈ maybe more |
+| **-m** | other items may exist | *(and possibly more)*; empty add: *hardly anything*; empty *everything*: *just about everything* | **m** ≈ maybe more |
 | **-r** | unspecified member of the join | *someone* / *something* in the list | **r** ≈ member you have not named |
 
 The same vowels and endings work under `/d/` `/b/` (`dal`, `dam`, …), `/v/` (`val`, `vam`, …), `/ɡ/` (`gal`, `gul`, …), and `/x/` (`xal`, `xam`, …). Match the join’s first letter to the items.
@@ -221,10 +221,10 @@ Two or more items still take the same vowel and ending as the lists above. The t
 
 | Agazan | Use | English |
 |--------|-----|---------|
-| `zal` / `zam` | standalone | *nothing* / *nobody* · *nothing, as far as I know* |
+| `zal` / `zam` | standalone | *nothing* / *nobody* · *hardly anything* / *hardly anyone* |
 | `zol` / `zom` | standalone | *no options* · *no pick, as far as I know* |
 | `zul` / `zum` | standalone | *no* · *no, as far as I know* |
-| `zual` / `zuam` | standalone | *everything* / *everyone* · *everything, as far as I know* |
+| `zual` / `zuam` | standalone | *everything* / *everyone* · *just about everything* / *just about everyone* |
 | `zal` + NP | single-item | *just X* / *only X* |
 | `zam` + NP | single-item | *X, for one* / *X (and possibly more)* |
 | `zol` + NP | single-item | *the only option is X* |
@@ -596,17 +596,17 @@ Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *ther
 | Agazan | Use | English |
 |--------|-----|---------|
 | **…al** (`zal` / …) | closed empty add | *nothing* / *nobody* |
-| **…am** (`zam` / …) | open empty add | *nothing, as far as I know* |
+| **…am** (`zam` / …) | open empty add | *hardly anything* / *hardly anyone* |
 | **…an** (`zan` / …) | named empty add | *null* / *void* (with items, **-n** instead names the bundle — [named phrase](#named-list)) |
 | **…ol** (`zol` / …) | closed empty menu | *no options* / *we're stuck* |
 | **…om** (`zom` / …) | open empty menu | *no pick, as far as I know* |
 | **…ual** (`zual` / …) | closed empty invert-add | *everything* / *everyone* |
-| **…uam** (`zuam` / …) | open empty invert-add | *everything, as far as I know* |
+| **…uam** (`zuam` / …) | open empty invert-add | *just about everything* / *just about everyone* |
 | **…uan** (`zuan` / …) | stock empty invert-add | *everyone* / *everything* (stock) |
 | **…uol** (`zuol` / …) | closed empty invert-menu | *anything (goes)* |
 | **…uom** (`zuom` / …) | open empty invert-menu | *anything offered* |
 | **…aol** (`zaol` / …) | closed empty inclusive | *all set* / *nothing more needed* |
-| **…aom** (`zaom` / …) | open empty inclusive | *nothing needed, as far as I know* |
+| **…aom** (`zaom` / …) | open empty inclusive | *hardly anything more needed* |
 | **…ul** (`zul` / …) | closed empty deny | *no* |
 | **…um** (`zum` / …) | open empty deny | *no, as far as I know* |
 | **…un** (`zun` / …) | stock empty deny | *No* (stock) |
@@ -644,7 +644,7 @@ When English would say *every cat* rather than *everything but the cat*, write *
 |--------|-------|---------|
 | standalone `zual` | empty invert-add | *everything* / *everyone* |
 | `zual` + SHARED `/ɡ/` | closed every-kind | *every K* (`zual gagadul` = *every cat*) |
-| `zuam` + SHARED `/ɡ/` | open every-kind | *every K, as far as I know* |
+| `zuam` + SHARED `/ɡ/` | open every-kind | *just about every K*, *K in general* (exceptions not listed) |
 | single-item `zual X` (no SHARED) | leftover only | *everything but X* |
 
 > `zual gagadul.`
@@ -689,6 +689,22 @@ With **`zual`** / **`zuam`**, a further `/ɡ/` after the kind is a [property](pr
 >
 > "Every fire is hot."
 
+Open **`zuam`** makes the same claim about the kind but allows exceptions you do not list. It is the everyday general claim (*cats are sleepy*, though some cat may not be). A resumed noun is one cat already in the talk.
+
+> `zuam gagadul gezebul.`
+>
+> [z-everything.open | g-cat] | g-sleepy
+>
+> "Cats are sleepy."
+
+> `zagadul vowogal. zagar gezebul.`
+>
+> z-cat | v-walk . z-←cat | g-sleepy
+>
+> "A cat walks. The cat is sleepy."
+
+In the sentence after a [`barl`](dependents.md#dependent-clauses) on a general claim, a resume of the kind means **the same member**, one at a time: `zual gagadul vezebal thoyem barl zagar gezebul.` is *every cat sleeps if it is sleepy*, each cat with its own sleepiness.
+
 With **`zul`** the two readings say the same thing: `zul godogal gabagol.` is both *no dog is black* and *there is no black dog*.
 
 [**`SAME`**](predication.md#identity) with no `/b/`, on a shared thing after a joined subject, compares each member with the others: *the same one* for all of them.
@@ -707,7 +723,7 @@ For English *whoever* / *whatever*, the kind is a [role compound](roles.md#role-
 >
 > "Whoever walks sings."
 
-Strict / definitional generics use closed `zual` plus kind (and [FORMAL](knowing.md#universality) when needed). Soft / epistemic generics use open `zuam` plus kind. Free-choice *any cat will do* uses `zor`.
+Use closed `zual` plus kind when the claim allows no exceptions, and open `zuam` plus kind when it holds as a rule. To say how you know a general claim (*by definition*, *going by the pattern*, *per the rules*), add a [channel](knowing.md#universality). Free-choice *any cat will do* uses `zor`.
 
 **For *always*, use:** bare habitual **`hual`** — [restrictors](restrictors.md).
 
@@ -911,7 +927,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 [z-everything.open | g-ring]
 
-*every ring, as far as I know*
+*just about every ring*
 :::
 
 **3.** `zevewal zual.`

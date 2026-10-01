@@ -728,7 +728,7 @@ An INFERRED or PATTERN bar can also take [`barl`](knowing.md#evidence-clause): t
 >
 > "The book is even less clear than I feared."
 
-Only these stances set a value. A [cause or condition pole](causation.md), [MAY](knowing.md#may), [MIRATIVE](knowing.md#mirative), [DECISION](intention.md#decision), and [universality](knowing.md#universality) do not, so none of them is a bar.
+Only these stances set a value. A [cause or condition pole](causation.md), [MAY](knowing.md#may), [MIRATIVE](knowing.md#mirative), and [DECISION](intention.md#decision) do not, so none of them is a bar.
 
 ### Vague amounts (*many* / *few*) {#vague-amounts}
 

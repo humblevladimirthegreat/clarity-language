@@ -257,6 +257,8 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | *usually* / *normally* / *generally* / *regularly* (*as a rule*) | `huam` |
 | *often* / *frequently* | `thobam zel hral` before the verb |
 | *sometimes* / *occasionally* | `har` |
+| *hardly ever* / *almost never* | `ham` |
+| *never* | `hal` |
 | *daily* | `huwem bual gazazam` |
 | *weekly* | `huwem bual gagadam` |
 | *monthly* | `huwem bual gumuham` |

@@ -72,7 +72,7 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 | Best-effort | the limit of what can be done is ability | ABIL `thezexal` (tie = *as … as possible*) |
 | the nine sake bars | a met sake word already names the sake, and its ending adds the payoff horizon | the met sake word: `thegatham`, `thoyutham`, … |
 
-- Stances that set no value are not bars: clause poles, MAY, MIRATIVE, DECISION, universality, ATTEMPT, WANT, RESIDUE, CAUSE, and the deontic noes (FORBID, refused consent). The parser rejects them (`barKind`), and a second comparee next to a bar, noun or bar (`barCount`).
+- Stances that set no value are not bars: clause poles, MAY, MIRATIVE, DECISION, ATTEMPT, WANT, RESIDUE, CAUSE, and the deontic noes (FORBID, refused consent). The parser rejects them (`barKind`), and a second comparee next to a bar, noun or bar (`barCount`).
 - A bar sits right before the join word, after the one ranked item (and after that item's own hook + `/b/`, as before a join word). A stance word after the fence is the claim's stance. With a bar and no ranked item, the stance word stays outside the fence.
 - A holder seam on a bar names whose expectation it is; inside the fence the seam covers only the bar, not the ranking.
 - A bar's `barl` ends its sentence at the fence: noun parts after the scale start the grounds sentence.
@@ -93,7 +93,7 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 | MAY, NOTIONAL | no | a possibility or an imagined scene is held by no one as true; *contrary to what I imagined* is FELT |
 | RESIDUE, FORMER | no | a balance still on the books or a climate already over is nothing an event goes against; *unlike before* is a PATTERN frame |
 | sake words (met, unmet, prescription, motive, emotion compose) | no | *against Alahen's interest* is an unmet sake word on the clause (`thegathum balahen`), which already says it |
-| clause poles, CAUSE, ATTEMPT, ability, universality, stance numbers | no | relations, mechanisms, or the act's own trying; *against the rule* is FORBID / REQUIRE, not a RULE warrant |
+| clause poles, CAUSE, ATTEMPT, ability, stance numbers | no | relations, mechanisms, or the act's own trying; *against the rule* is FORBID / REQUIRE |
 
 - **No hook + `barl` except `ul`** (`hookStandIn`). *Contrary to* an event is `hezom barl`; *against a stance* is `uem` + the stance. No job turned up that needs `uem barl`.
 - **In-clause hooks pair same-role words** (`hookSameRole`): the word just before the hook and the word just after it share a role letter, as [Including](../grammar/hooks.md#including-am-al) states. The `xual ul …` stand-in clause is exempt. Turning the check on caught two recipe slips (a ray with mixed `g` / `z` ends, and `ual` + `/z/` for a `/b/` landmark).
@@ -123,10 +123,26 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 - The seam is the host's own **-l / -m / -r**, so strength and holds survive. A `th` seam (`thunethazawan`) was rejected because it drops the grade; a consonant + `th` cluster (`thevemthazawan`) is illegal mid-word. **-n** is never a seam.
 - Hosts are recognized by spelling: a `/th/` word that begins with a closed host root, then `l` / `m` / `r`, then a vowel, is a holder. This is safe only while no published root begins with a host root + `l` / `m` / `r` + vowel; a new root of that shape must be respelled, not given a special case.
 - Holder and source are different jobs: the holder is whose view the clause is (`thewamazawan`: I hear it is Azawan's view); a person in hosted `/b/` after an evidential is where you heard it (`thewam balahen`: per Alahen). Both can appear on one word.
-- Only knowing, guessing, and imagining hosts (the eight channels, MAY, NOTIONAL). DECISION, PLAN, CAUSE, sakes, and universality never host a holder; inside a holder clause they are the holder's.
+- Only knowing, guessing, and imagining hosts (the eight channels, MAY, NOTIONAL). DECISION, PLAN, CAUSE, and sakes never host a holder; inside a holder clause they are the holder's.
 - The holder word ends like a noun for that person: **-n** name, **-r** resume, **-lx** some people of a kind, with associative **-x** after any of them (`thodomazawanx`). A group is a holder only this way; there is no generic holder without a warrant.
 - One clause, one holder, whole-clause scope regardless of position. A stance on someone's stance nests: yours in the main sentence, theirs in a dependent.
 - `/w/` after a stance word is not reserved: it grades whatever it sits before (a `/ɡ/` or an `/h/`). The parser used to reject `th w g` because the `/h/`-unit loop took any `/w/` as the start of another `/h/` unit; that was a bug, not a rule.
+
+## General claims
+
+- **No universality moods.** COMMON, UNCOUNTERED, FORMAL, NATURAL, and RULE (`aga` / `eyu` / `oza` / `alu` / `ube` on `/th/`) duplicated two things the language already says. How far a claim reaches and whether it allows exceptions is the universal fence or restrictor: closed **-l** none, open **-m** some not listed (`huam` *usually*, `ham` *hardly ever*, `zuam` + kind *K in general*). What the claim rests on is a channel ([knowing](../grammar/knowing.md#universality)), which already has strength endings, holders, `barl` grounds, bars, and `uem` frames.
+
+| Old | Say instead |
+|-----|-------------|
+| COMMON | open fence (`huam`, `zuam` + kind), plus any channel |
+| UNCOUNTERED | closed fence plus a weak channel (`hual … thobar`): no exceptions claimed, thin evidence |
+| FORMAL | INFERRED.strong `thunel` (*it follows*); a definition is a closed fence + `thedam barl` with the defining property, and no channel ([knowing](../grammar/knowing.md#universality)) |
+| NATURAL | CAUSE + `thoyem barl` on a closed fence: a sufficient condition and its mechanism |
+| RULE | RECORDED.strong with the rules as the `/b/` source (`therel bazagul`); a norm someone sets is REQUIRE / FORBID |
+
+- **The fence is about the world, the channel about your evidence.** Open **-m** on a fence says exceptions happen; it is not a hedge on what you know. *Always, as far as I can tell* is closed `hual` with a weak channel. The same holds for the empty open forms that count: `zam` *hardly anything*, `zuam` *just about everything*, `zaom` *hardly anything more needed*, `xam` *hardly anything happened*. Empty open deny, menu, and rank (`zum`, `zom`, `zem`) are not amounts and keep *as far as I know*.
+- **A channel on a fenced clause warrants the whole generalization**, not one case. A cause or condition pole on it holds for **each** member or occasion, as the verb does. A cause of the regularity itself would be a claim about the kind (see the kind-level row in `TODO.md`).
+- **A resume of the kind inside the `barl` sentence is the same member, one at a time** (`zual gagadul vezebal thoyem barl zagar gezebul.` *every cat sleeps if it is sleepy*). The parser reads the resume as an ordinary `-r`; the bound reading is semantic.
 
 ## Consistency audit
 

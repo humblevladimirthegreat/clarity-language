@@ -106,16 +106,6 @@ avol,th,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing
 avol,w,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,knowing.md#mood-on-one-adjective
 ezem,th,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#ability-fallback
 ezem,w,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#ability-fallback
-agal,th,⛅,universality,COMMON,universality COMMON warrant (usual / exceptions expected),weather is the usual climate; usual warrant expects exceptions,knowing.md#universality
-agal,w,⛅,universality,COMMON,universality COMMON warrant (usual / exceptions expected),weather is the usual climate; usual warrant expects exceptions,knowing.md#mood-on-one-adjective
-eyul,th,💊,universality,UNCOUNTERED,universality UNCOUNTERED warrant (no counterexample found),pill remedies what ails; uncountered is no case comes to mind,knowing.md#universality
-eyul,w,💊,universality,UNCOUNTERED,universality UNCOUNTERED warrant (no counterexample found),pill remedies what ails; uncountered is no case comes to mind,knowing.md#mood-on-one-adjective
-ozal,th,⭐,universality,FORMAL,universality FORMAL warrant (definition / proof),star chart fixes constellations; formal is proof-level exceptionlessness,knowing.md#universality
-ozal,w,⭐,universality,FORMAL,universality FORMAL warrant (definition / proof),star chart fixes constellations; formal is proof-level exceptionlessness,knowing.md#mood-on-one-adjective
-alul,th,🍎,universality,NATURAL,universality NATURAL warrant (natural necessity),apple falls by nature; natural is necessity in the world,knowing.md#universality
-alul,w,🍎,universality,NATURAL,universality NATURAL warrant (natural necessity),apple falls by nature; natural is necessity in the world,knowing.md#mood-on-one-adjective
-ubel,th,🌶️,universality,RULE,universality RULE warrant (holds inside named frame),board game has its rules; rule-frame scopes exceptionlessness,knowing.md#universality
-ubel,w,🌶️,universality,RULE,universality RULE warrant (holds inside named frame),board game has its rules; rule-frame scopes exceptionlessness,knowing.md#mood-on-one-adjective
 ugol,g,🪙,identity,SAME,SAME identity (identical-to / same-as),coin has two faces one substance; same is one referent two labels,predication.md#identity-same
 oyem,th,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,dependents.md#dependent-clauses
 oyem,g,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,causation.md#if

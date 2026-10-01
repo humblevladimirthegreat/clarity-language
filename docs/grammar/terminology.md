@@ -23,14 +23,12 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **CIRCUM** | Emotion locus: the atmosphere of the situation | `wulothuraor` | [Sakes](sakes.md#emotion-compose) |
 | **CITE** | Span TYPE **a**: a citation | `d[azawan]` | [Spans](spans.md#shape) |
 | **COLLAPSE** | Emotion locus: out of fight, giving up | `wanathumual` | [Sakes](sakes.md#emotion-compose) |
-| **COMMON** | Universality: usual, exceptions expected | `thagal` | [Knowing](knowing.md#universality) |
 | **CONSENT** | Consent of the affected party | `thuxegom` | [Sakes](sakes.md#consent) |
 | **DECISION** | Pick-firmness mood | `thehum` | [Intention](intention.md#decision) |
 | **FAWN** | Emotion locus: placating a target | `wanathumaem` | [Sakes](sakes.md#emotion-compose) |
 | **FELT** | Evidential: gut / body knowing | `thahom` | [Knowing](knowing.md#evidentiality) |
 | **FLOWING** | Emotion motion: steady, a current you can ride | `wanathumem` | [Sakes](sakes.md#emotion-compose) |
 | **FORBID** | Permission, negative | `thedel` | [Sakes](sakes.md#permission) |
-| **FORMAL** | Universality: definition / math / proof | `thozal` | [Knowing](knowing.md#universality) |
 | **FORMER** | Episode standing: not the climate claimed now | `thenom` | [Knowing](knowing.md#residue) |
 | **INFERRED** | Evidential: reasoned from clues | `thunem` | [Knowing](knowing.md#evidentiality) |
 | **INTERNAL** | Emotion locus: mine, held inside | `gulothamar` | [Sakes](sakes.md#emotion-compose) |
@@ -39,7 +37,6 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **MENTION** | Span TYPE **o**: a mention | `z{odoga}` | [Spans](spans.md#shape) |
 | **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `thezum` | [Knowing](knowing.md#mirative) |
 | **NAME** | A package titled with **-n** | `zebevul zabodel zan.` | [Joins](joins.md#named-list) |
-| **NATURAL** | Universality: natural necessity | `thalul` | [Knowing](knowing.md#universality) |
 | **NOTIONAL** | As-if / pretense mood | `thavom` | [Knowing](knowing.md#notional) |
 | **ON-BEHALF** | Emotion locus: felt for someone's sake | `wanathumem` | [Sakes](sakes.md#emotion-compose) |
 | **OPAQUE** | Span TYPE **u**: foreign or opaque writing | <code>d&lt;kimchi&gt;</code> | [Spans](spans.md#loans) |
@@ -50,7 +47,6 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **REQUIRE** | Requirement (*must*) without a sake | `thumel` | [Sakes](sakes.md#requirement) |
 | **RESIDUE** | Episode standing: outcome still on the current tally | `thamom` | [Knowing](knowing.md#residue) |
 | **RESISTING** | Emotion locus: pushing against a target | `wanathumuer` | [Sakes](sakes.md#emotion-compose) |
-| **RULE** | Universality: holds inside a named frame | `thubel` | [Knowing](knowing.md#universality) |
 | **SAME** | Identity copula | `gugol` | [Predication](predication.md#identity) |
 | **SCOPE** | Scope island `^ … ^` | `^ hegewem zodogal geredal ^` | [Spans](spans.md#scope-islands) |
 | **SEEKING** | Emotion locus: turning to someone for comfort | `wanathumoem` | [Sakes](sakes.md#emotion-compose) |
@@ -58,7 +54,6 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **STORY** | Evidential: narrative / lore | `thozem` | [Knowing](knowing.md#evidentiality) |
 | **SURGING** | Emotion motion: in waves or spikes | `wulothuraor` | [Sakes](sakes.md#emotion-compose) |
 | **TOLD** | Evidential: hearsay | `thewam` | [Knowing](knowing.md#evidentiality) |
-| **UNCOUNTERED** | Universality: no counterexample comes to mind | `theyul` | [Knowing](knowing.md#universality) |
 | **UNPLACED** | Emotion locus: can't place where it comes from | `wulothuruom` | [Sakes](sakes.md#emotion-compose) |
 | **WANT** | Desire mood: lasting / unstated / passing | `thohum` | [Intention](intention.md#want) |
 | **WITNESSED** | Evidential: firsthand memory (reconstructive) | `thevom` | [Knowing](knowing.md#evidentiality) |
@@ -323,7 +318,7 @@ SHARED kind plus invert / standalone joins.
 
 [Joins](joins.md#universals-domains-generics)
 
-**Compare with:** [universality](#universality) is the exceptionlessness mood.
+Closed **-l** allows no exceptions; open **-m** holds as a rule. A channel on the clause says how you know the general claim.
 
 ### Empty-allowed
 
@@ -800,9 +795,9 @@ Join / restrictor **-r** (*something* / *sometimes*); fill-ask under question.
 
 [Joins](joins.md#unspecified-member-r-phrase)
 
-### Universality
+### Channel on a generalization
 
-Mood how-exceptionless (COMMON … RULE).
+A channel on a clause with a universal fence or restrictor: how you know the general claim.
 
 [Knowing](knowing.md#universality)
 
