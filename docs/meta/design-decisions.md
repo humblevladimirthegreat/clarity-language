@@ -86,7 +86,7 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 |------|--------|-----|
 | FORBID (`ede`), REQUIRE (`ume`), refused CONSENT (`uxede`) | yes | a norm or a person's no; *against the rules* / *against orders* / *against their will* |
 | PERMIT (`ego`), given CONSENT (`uxego`) | no | they only lift a restriction, so an act cannot go against them; going beyond what was allowed is a ban or a refusal frame |
-| PLAN, DECISION, WANT (all endings, **-n** included) | yes | an intention or a wish. Owner is the subject, as on the clause; a hosted `/b/` person names someone else's (this `/b/` is new to the frame: on the clause these moods take only a dated offset) |
+| PLAN, DECISION, WANT (all endings, **-n** included) | yes | an intention or a wish. Owner is the subject, or the hosted `/b/` person, as on the clause |
 | speaker attitude (content root on `/th/`) | yes | the attitude's object is what you hoped or feared. An attitude with no content of its own (*luckily* `theledem`) makes no sensible frame; the parser does not police root meaning, and pages teach only hope |
 | all eight channels, with or without a holder | yes | a report or an expectation; LIVE is *contrary to appearances* |
 | MIRATIVE | no | it already says *against expectation*; pairing it with `uem` doubles the contrast |
@@ -98,6 +98,12 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 - **No hook + `barl` except `ul`** (`hookStandIn`). *Contrary to* an event is `hezom barl`; *against a stance* is `uem` + the stance. No job turned up that needs `uem barl`.
 - **In-clause hooks pair same-role words** (`hookSameRole`): the word just before the hook and the word just after it share a role letter, as [Including](../grammar/hooks.md#including-am-al) states. The `xual ul …` stand-in clause is exempt. Turning the check on caught two recipe slips (a ray with mixed `g` / `z` ends, and `ual` + `/z/` for a `/b/` landmark).
 - **No stance-only dependent** (`dependentStanceOnly`). The sentence after a stand-in needs a noun or a verb; a lone sake word (feeling, thanks, sorry) is the exception, since it is a whole sentence about the speaker. `hezom barl thedel` added nothing over `uem thedel`.
+
+## Whose want, plan, or decision
+
+- On WANT, PLAN, and DECISION, a hosted `/b/` person is whose want, plan, or decision it is; with none, it is the subject's ([intention](../grammar/intention.md#whose-intention)). Same rule as deontic **-m**: on a stance a person holds, `/b/` names that person. It reads the same inside a `uem` frame.
+- **One slot.** PLAN's hosted `/b/` also holds a later offset (`thamam bral`). A plan with both an owner and a date keeps the person there and puts the date on a time pole (`huwem bral`), which the pole-offset rule already licenses for a plan clause. Rejected: a holder seam (`thamamalahen`: the seam means access to someone's view and hands them the whole clause), a person + time join in the slot (two kinds in one slot), and a second hosted slot (new machinery for a case the pole covers).
+- **DECISION + `/b/` stays apart from REQUIRE + `/b/`.** `thehum balahen` is Alahen's choice about how things go, with no demand on the subject; `thumem balahen` puts a demand on the subject. Each happens without the other (a coach picks a lineup; someone relays an order they did not decide).
 
 ## Vocatives and interjections
 

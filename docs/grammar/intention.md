@@ -495,6 +495,38 @@ After the hook **`uem`**, a want is what the event goes against ([contrary to a 
 
 **Compare with:** [hopefully](sakes.md#speaker-attitude) (`thevegem`) is **your** attitude toward a whole claim; **`thohum`** is the subject's own wanting. [Motive](sakes.md#sake-preference) says which sake the act serves, not that it is wanted. In [emotion compose](sakes.md#emotion-compose), SEEKING is a feeling turning toward someone for comfort, not a plain want.
 
+### Someone else's want, plan, or decision {#whose-intention}
+
+English *Alahen wants Azawan to walk*, *Alahen plans for Azawan to walk*, and *Alahen has decided that Azawan walks* give the wanting, planning, or deciding to someone other than the one who acts. Put that person in `/b/` right after the mood word, the same way a person who [allows](sakes.md#permission) or [demands](sakes.md#requirement) something sits after that word. With no `/b/`, the want, plan, or decision is the subject's own. Either way, the clause does not say the act happens.
+
+> `zazawan thohum balahen vowogal.`
+>
+> z-Azawan | [th-WANT-unstated | b-Alahen] | v-walk
+>
+> "Alahen wants Azawan to walk."
+
+> `zazawan thamam balahen vowogal.`
+>
+> z-Azawan | [th-plan-itinerary | b-Alahen] | v-walk
+>
+> "Alahen plans for Azawan to walk."
+
+> `zazawan thehum balahen vowogal.`
+>
+> z-Azawan | [th-DECISION-modifiable | b-Alahen] | v-walk
+>
+> "Alahen has decided that Azawan walks, and can still change that."
+
+A plan has one `/b/` slot. It holds either whose plan it is or how much later the act comes (`thamam bral`). When you need both, keep the person there and put the time on **`huwem`** *during*:
+
+> `zazawan thamam balahen vowogal huwem bral.`
+>
+> z-Azawan | [th-plan-itinerary | b-Alahen] | v-walk | [h-while | b-later]
+>
+> "Alahen plans for Azawan to walk later."
+
+**Compare with:** [requirement](sakes.md#requirement) `zazawan vowogal thumem balahen.` (*Alahen makes Azawan walk*) puts a demand on Azawan, who now owes the walk. **`thehum balahen`** says only that Alahen chose how things go, the way a coach decides who plays, with nothing asked of Azawan. Keeping someone else's want apart from the subject's own is the difference between *Azawan wants to walk* and *Azawan is walking because Alahen wants it*.
+
 ### Plan or forecast
 <a id="predict-evidentiality"></a>
 
@@ -671,6 +703,22 @@ z-Alahen | th-WANT-unstated | v-see | d-Azawan
 z-Azawan | th-WANT-lasting | th-plan-itinerary | v-sit
 :::
 
+**16.** *Alahen wants Ahaben to sing.*
+
+::: details Show answer
+`zahaben thohum balahen vezehel.`
+
+z-Ahaben | [th-WANT-unstated | b-Alahen] | v-sing
+:::
+
+**17.** *Azawan plans for Alahen to write.*
+
+::: details Show answer
+`zalahen thamam bazawan varadal.`
+
+z-Alahen | [th-plan-itinerary | b-Azawan] | v-write
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zazawan thehum vehahel.`
@@ -780,6 +828,15 @@ z-Alahen | th-ABIL-unable-irreversible
 z-Alahen | th-WANT-passing | v-sing
 
 *Alahen feels like singing.*
+:::
+
+**13.** `zazawan thehum bahaben vazadol.`
+
+::: details Show answer
+
+z-Azawan | [th-DECISION-modifiable | b-Ahaben] | v-stand
+
+*Ahaben has decided that Azawan stands, and can still change that.*
 :::
 
 ## See also

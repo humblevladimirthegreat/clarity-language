@@ -683,3 +683,22 @@ describe("parse — contrary to a stance (uem + /th/)", () => {
     assert.equal(hook.frame, undefined);
   });
 });
+
+describe("parse — whose want, plan, or decision (hosted /b/)", () => {
+  const hUnits = (text: string) =>
+    parseText(text).utterances[0]!.bodies[0]!.clause.units.flatMap((unit) => (unit.kind === "h" ? [unit.unit] : []));
+
+  it("hosts the person on WANT, PLAN, and DECISION", () => {
+    for (const text of ["zazawan thohum balahen vowogal.", "zazawan thamam balahen vowogal.", "zazawan thehum balahen vowogal."]) {
+      const [mood] = hUnits(text);
+      assert.equal(mood?.hosted?.bound.raw, "balahen", text);
+    }
+  });
+
+  it("moves a plan's date to a time pole when the plan has an owner", () => {
+    const [plan, pole] = hUnits("zazawan thamam balahen vowogal huwem bral.");
+    assert.equal(plan?.hosted?.bound.raw, "balahen");
+    assert.equal(pole?.word.raw, "huwem");
+    assert.equal(pole?.hosted?.bound.raw, "bral");
+  });
+});
