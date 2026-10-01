@@ -324,7 +324,7 @@ SHARED kind plus invert / standalone joins.
 
 [Joins](joins.md#universals-domains-generics)
 
-Closed **-l** allows no exceptions; open **-m** holds as a rule. A channel on the clause says how you know the general claim.
+Closed **-l** allows no exceptions; open **-m** leaves the exceptions open (*as far as I know*, *as a rule*). A channel on the clause says how you know the general claim.
 
 ### Empty-allowed
 

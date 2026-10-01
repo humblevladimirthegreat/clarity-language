@@ -33,7 +33,7 @@ With **no** occasion listed, the inventory is empty, so the claim never counts: 
 
 ### Always (`hual`)
 
-To say the verb claim counts at every time, or at every time except some listed ones, use **`hual`**. Open **`huam`** allows exceptions you do not list: *usually*, *as a rule*. Bare **`hual`** is *always*; with occasion words before it, those times are the exceptions (*always except when…*). (cue: **u** ≈ undo then **a** ≈ add.)
+To say the verb claim counts at every time, or at every time except some listed ones, use **`hual`**. Open **`huam`** leaves the exceptions open, as **-m** leaves any list open: *always, as far as I know*. English usually says that as *usually* or *as a rule*. Bare **`hual`** is *always*; with occasion words before it, those times are the exceptions (*always except when…*). (cue: **u** ≈ undo then **a** ≈ add.)
 
 > `zahaben vezehel hual.`
 >
@@ -140,12 +140,12 @@ The same restrictor vowels and endings can limit **only the host you are about t
 
 ### Listed occasions (open)
 
-Open **-m** leaves other occasions possible: *when raining, among other times*, not *only when*. Each listed piece is a simple adverb (or `/w/` adjective-limiter) content word; every piece and the restrictor share the same role letter. Bare open **`ham`** is *never* with exceptions you do not list: *hardly ever*. (cue: **a** ≈ add; **ua** ≈ undo then add.)
+Open **-m** leaves other occasions possible: *when raining, among other times*, not *only when*. Each listed piece is a simple adverb (or `/w/` adjective-limiter) content word; every piece and the restrictor share the same role letter. Bare open **`ham`** leaves the occasions open: *never, as far as I know*. (cue: **a** ≈ add; **ua** ≈ undo then add.)
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`hal` / `ham`** | listed times; empty list is *never* | *only when…* / *when…, among other occasions* · bare *never* / *hardly ever* | **a** ≈ add |
-| **`hual` / `huam`** | every time minus listed exceptions | *always except when…* · bare *always* / *usually* | **u** ≈ undo then **a** ≈ add |
+| **`hal` / `ham`** | listed times; empty list is *never* | *only when…* / *when…, among other occasions* · bare *never* / *never, as far as I know* | **a** ≈ add |
+| **`hual` / `huam`** | every time minus listed exceptions | *always except when…* · bare *always* / *usually* (*always, as far as I know*) | **u** ≈ undo then **a** ≈ add |
 
 > `zazawan vezebal herehel hanadal ham.`
 >
@@ -352,11 +352,11 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 
 | Agazan | Use | English (with occasions) | English (bare) | Cue |
 |--------|-----|--------------------------|----------------|-----|
-| **`hal` / `ham`** | listed times; empty list is *never* | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *hardly ever* | **a** ≈ add |
+| **`hal` / `ham`** | listed times; empty list is *never* | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *never, as far as I know* | **a** ≈ add |
 | **`hol` / `hom`** | one exclusive time menu | *either when A or when B (not both)*; **`hom`** also allows *or never* | | **o** ≈ one |
 | **`haol` / `haom`** | any of the listed times suffices | *when A and/or when B* | | **a** ≈ add + **o** ≈ one |
 | **`hul` / `hum`** | invert the listed times | *not when…* / *not when…, for one* | | **u** ≈ undo |
-| **`hual` / `huam`** | every time minus listed exceptions | *always except when…* | ***always*** / *usually* | **u** ≈ undo then **a** ≈ add |
+| **`hual` / `huam`** | every time minus listed exceptions | *always except when…* | ***always*** / *usually* (*always, as far as I know*) | **u** ≈ undo then **a** ≈ add |
 | **`huol` / `huom`** | any leftover time minus listed exceptions | *anytime except when…* | | **u** ≈ undo + **o** ≈ one |
 
 **Compare with:** **`hur`** is some leftover occasion (*some other time*). **`huol`** is leftover times in general (*anytime except when…*).

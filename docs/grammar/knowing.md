@@ -1230,7 +1230,7 @@ Only the eight channels, MAY, and NOTIONAL take a holder: they are the ways you 
 <a id="universality-mood"></a>
 <a id="generalization"></a>
 
-English *always*, *usually*, *every*, and *never* make a general claim. The [universal fences](joins.md#universals-domains-generics) (`zual` / `zuam`) and the [restrictors](restrictors.md) (`hual` / `huam` / `hal`) already say **who** or **when** the claim covers, and their ending says how many exceptions it allows: closed **-l** allows none, and open **-m** allows some that are not listed (*usually*, *as a rule*). No other word is needed for the claim itself.
+English *always*, *usually*, *every*, and *never* make a general claim. The [universal fences](joins.md#universals-domains-generics) (`zual` / `zuam`) and the [restrictors](restrictors.md) (`hual` / `huam` / `hal`) already say **who** or **when** the claim covers, and their ending says how many exceptions it allows: closed **-l** allows none, and open **-m** leaves them open, as on any list (*usually*, *as a rule*). No other word is needed for the claim itself.
 
 > `zazawan huam vowogal.`
 >
@@ -1258,7 +1258,7 @@ To say **how you know** the general claim, add a [channel](#evidentiality). On a
 >
 > "Alahen never punches, per the soccer rules."
 
-The fence says how far the claim reaches, and the channel says what it rests on. Keep the two apart: *always, as far as I have checked* is closed **`hual`** with a weak channel, because you claim no exceptions on thin evidence. Open **`huam`** says exceptions happen.
+The fence says how far the claim reaches, and the channel says what it rests on. Keep the two apart: *always, as far as I have checked* is closed **`hual`** with a weak channel, because you claim no exceptions on thin evidence. Open **`huam`** does not claim that: it leaves the exceptions open.
 
 | English | Fence or restrictor | Channel | Example |
 |---------|---------------------|---------|---------|
