@@ -335,7 +335,7 @@ English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several vie
 
 ### Join, belong, comprise, replace, represent, prefer, involve, agree {#relating-verbs}
 
-**Needs:** [Join-act verbs](join-across-roles.md#join-act-verbs) · [Join-relations](join-across-roles.md#join-relations) · [Of relations](relations.md#of-relations) · [Whose](hooks.md#genitive) · [Exchange](relations.md#exchange) · [Proxy](relations.md#proxy) · [Simile](relations.md#similative)
+**Needs:** [Rank joins](joins.md#rank-joins) · [Join-act verbs](join-across-roles.md#join-act-verbs) · [Join-relations](join-across-roles.md#join-relations) · [Of relations](relations.md#of-relations) · [Whose](hooks.md#genitive) · [Exchange](relations.md#exchange) · [Proxy](relations.md#proxy) · [Simile](relations.md#similative)
 
 Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer*) say how two things **stand to each other** more than what anyone does. Agazan writes that stance as a hosted relation word with the other thing in `/b/`, or as a join-act verb when someone really acts on a thing. Pick the relation, and keep the ordinary verb for the activity.
 
@@ -350,6 +350,7 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 | *replace* / *substitute* | `zazawan dubugal hehem bahavol vehem.` | swaps one for the other |
 | *represent* (act for) | `zazawan hadem balahen vezebel.` | tells on behalf of Alahen |
 | *prefer* | `zazawan dubugal ven.` | ranks the object first |
+| *would rather X than Y* / *prefer doing X to Y* | `zazawan vowogal varahal vel.` | walking outranks running |
 | *lack* / *miss* (a need) | `zazawan volum.` | needs |
 | *fill* / *complete* | `zazawan dubugal vahahom.` | makes complete |
 | *recognize* / *acknowledge* | `zazawan dalahen vewevam.` | acknowledges Alahen |
@@ -376,7 +377,13 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 >
 > "Azawan prefers the book."
 
-**Compare with:** *belong to* as legal ownership is `gegabem` ([of relations](relations.md#of-relations)). *Represent* as *stand for* a symbol is not proxy, and has no recipe here.
+> `zazawan vowogal varahal vel.`
+>
+> z-Azawan | [v-walk | v-run | v-rank/more]
+>
+> "Azawan would rather walk than run."
+
+**Compare with:** *or rather* (correcting what you just said) is the revision hook [`el`](hooks.md#rather-el), not a preference. *Belong to* as legal ownership is `gegabem` ([of relations](relations.md#of-relations)). *Represent* as *stand for* a symbol is not proxy, and has no recipe here.
 
 ### Piece, species, gender, patient, function, size, way {#thing-nouns}
 

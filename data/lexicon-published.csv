@@ -260,7 +260,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🐒,monkey,amage,mimicry,monkey see monkey do,,copy
 🦍,gorilla,egewa,dominance,800-pound gorilla dominates,,dominate
 🦧,orangutan,orada,,,,
-🐕,dog,odoga,loyalty,a dog shows loyalty,,faithfully; faithful
+🐕,dog,odoga,loyalty,a dog shows loyalty,v:bark,faithfully; faithful
 🐺,wolf,uwuva,predation,wolf at the door,,
 🦊,fox,avagu,cunning,sly as a fox,,
 🦝,raccoon,aragu,theft,the masked raccoon takes what is not its own; theft is taking without consent,m.v:steal,
@@ -394,7 +394,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🍉,watermelon,owoda,refreshment,watermelon is cold juicy water on a hot day,,
 🍊,tangerine,adehe,skin,a tangerine peel is its outer covering; skin is the outer covering of a body,,
 🍋,lemon,elehu,defect,a lemon is a bad deal,,
-🍋‍🟩,lime,alahu,zest,lime adds zest and tang,,
+🍋‍🟩,lime,alahu,zest,lime adds zest and tang,g:sour,tart; tangy
 🍌,banana,abayo,madness,to go bananas is to lose your head,,
 🍍,pineapple,abuba,hospitality,pineapple welcomes with hospitality,,invitation; invite
 🥭,mango,amego,exoticism,mango tastes of the exotic,,
@@ -429,7 +429,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🍞,bread,ebevu,staple,bread and butter is staple,,
 🥐,croissant,ogaza,,,,
 🥖,baguette,uboge,,,,
-🫓,flat-bread,avabe,simplicity,flatbread is simple fare,,plain
+🫓,flat-bread,avabe,simplicity,flatbread is simple fare,g:bland,plain
 🥨,pretzel,ebadu,complexity,a pretzel is knotted and twisted back on itself,,complex; complicate
 🥯,bagel,ebago,,,,
 🥞,pancake,abogu,flattening,pancake flattens under pressure,,flat; thin; panel; smooth
@@ -489,7 +489,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🍯,honey,ahahe,endearment,honey is a sweet endearment,,
 🍼,baby-bottle,abadu,inhibition,bottle holds liquid inside; bottle is held-in charge,,bottle
 🥛,milk,emega,,,,
-☕,coffee,agave,alertness,coffee fuels alertness,,
+☕,coffee,agave,alertness,coffee fuels alertness,g:bitter,
 🫖,teapot,edebu,ceremony,teapot pours with ceremony,,
 🍵,tea,edehe,,,,
 🍶,sake,ezegu,ritual,sake toast is ritual,,
@@ -752,7 +752,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 👟,sneaker,uzege,activity,sneaker is built for movement; activity is active motion,,action; active
 🥾,boot,ubuda,mile,a boot is made for long walking; a mile is a long walking distance,,
 🥿,loafer,olove,,,,
-👠,heel,ehewu,,,,
+👠,high-heel,ehewu,,,,
 🩰,ballet-shoe,uhehu,,,,
 🪮,hair-pick,ehebe,,,,hair
 👑,crown,agaye,leadership,crown marks who rules; leadership is being the one others answer to,,lead

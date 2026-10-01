@@ -266,17 +266,19 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 
 **Compare with:** a sake word names the sake that is met, so pick the one you mean: relatedness, competence, pleasure ([sakes](sakes.md#sake-inventory)). A noun that says what someone did is a [free relative](say-people-places.md#free-relative-what).
 
-### Biased, wishful thinking {#biased}
+### Biased, wishful thinking, overconfident {#biased}
 
-**Needs:** [Motive](sakes.md#sake-preference) · [Want](intention.md#want) · [MAY](knowing.md#may) · [Speech manner](speech-moves.md#speech-manner)
+**Needs:** [Motive](sakes.md#sake-preference) · [Want](intention.md#want) · [MAY](knowing.md#may) · [Speech manner](speech-moves.md#speech-manner) · [Every bar](comparatives.md#stance-bars)
 
-English *biased* says a view may be bent by what the holder wants from it. Agazan says that outright: put a [motive](sakes.md#sake-preference) on the thinking, so the view is held *for a stake*. Name the sake when you know which one, or use the unspecified sake **`ega`**. *Wishful thinking* and *I'd like to believe* are a want on the thinking itself.
+English *biased* says a view may be bent by what the holder wants from it. Agazan says that outright: put a [motive](sakes.md#sake-preference) on the thinking, so the view is held *for a stake*. Name the sake when you know which one, or use the unspecified sake **`ega`**. *Wishful thinking* and *I'd like to believe* are a want on the thinking itself. *Overconfident* ranks your trust against what the clues warrant: an INFERRED [bar](comparatives.md#stance-bars) on *trust*.
 
 | English | Agazan | Reading |
 |---------|--------|---------|
 | *I may be biased* | `zamagon thovum vevegal thegathom.` | I may think this for a stake of my own |
 | *biased* (someone else) | `zazawan vevegal thegathom.` | Azawan thinks it for a stake |
 | *I'd like to believe* / *wishful thinking* | `zamagon thohum vevegal darl zalahen vowogal.` | I want to think that Alahen walks |
+| *overconfident* | `zamagon thunem zel gegehom.` | surer than the clues warrant |
+| *underconfident* | `zazawan thunem zuel gegehom.` | less sure than the clues warrant |
 | *to be honest*, before owning a bias | `thaveham` | [speech manner](speech-moves.md#speech-manner) |
 
 > `thaveham zamagon thovum vevegal thegathom.`
@@ -284,6 +286,12 @@ English *biased* says a view may be bent by what the holder wants from it. Agaza
 > th-revelation | z-speaker | th-MAY | v-think | th-sake-motive-any-term
 >
 > "To be honest, I may be biased."
+
+> `zamagon thunem zel gegehom.`
+>
+> [z-speaker | th-INFERRED | z-rank/more | g-trust]
+>
+> "I'm overconfident."
 
 **Compare with:** *I think* as a guess is [MAY](knowing.md#may) on the claim. The motive says why the view is held, not how sure you are.
 

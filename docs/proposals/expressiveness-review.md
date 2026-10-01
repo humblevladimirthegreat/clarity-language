@@ -84,15 +84,15 @@ The corpus covers core syntax only — its register is dated narrative, with few
 ### 2b — Register samples
 
 - [x] Pick ~8 short samples (≈150 words each) across registers: casual chat, text message thread, how-to instructions, news paragraph, story narration, argument / opinion, a support conversation (compassion theme), a decision memo (empowerment / rationality theme).
-- [x] The eight English samples are in `docs/meta/register-samples.md`. Record each translation in this file; log identified gaps in `docs/meta/register-results.md`.
+- [x] The eight English samples are recorded line by line in the translation tables below. Identified gaps were logged in `docs/meta/register-results.md` (G-01–G-26, L-01–L-17). The file was deleted once every row was ruled and its rulings were taught on the owning grammar pages; the `G-nn` / `L-nn` IDs cited below refer to it (see git history).
 - [x] One agent per sample translates with the published lexicon and parser; each stopping point is handled by the [Phase 2 process](#phase-2-process) (dedupe against Phase 1 IDs and earlier results rows).
-- [ ] Also log **lexicon-only** gaps separately (missing roots, not grammar) and hand them to the TODO lexicon items rather than this ledger.
+- [x] Also log **lexicon-only** gaps separately (missing roots, not grammar) and hand them to the TODO lexicon items rather than this ledger. *(Logged as L-01–L-17; all done.)*
 
 The translation tables are a record, not live examples. `retie-docs` does not cover this file, so later respellings may have broken sentences in earlier samples (they no longer parse, or use an old spelling). That is tolerated: earlier rows are not re-checked or updated.
 
 #### RS-1 — Casual chat {#rs-1}
 
-Translated with the house cast for the two friends' *I* / *you* as the speaker and listener pronouns (the turn's role is the point). Every line was checked with `node scripts/parse.mjs`. Gaps are in [register-results](../meta/register-results.md); *awkward* rows cite the `G-nn` or `L-nn` there.
+Translated with the house cast for the two friends' *I* / *you* as the speaker and listener pronouns (the turn's role is the point). Every line was checked with `node scripts/parse.mjs`. Gaps are in `register-results.md`; *awkward* rows cite the `G-nn` or `L-nn` there.
 
 | RS-1 | English | Agazan | Morph gloss | Verdict |
 |------|---------|--------|-------------|---------|
@@ -133,7 +133,7 @@ Translated with the house cast for the two friends' *I* / *you* as the speaker a
 
 #### RS-2 — Text message thread {#rs-2}
 
-Translated with the house cast for the third parties (Priya is `zahaben`). *I* / *you* / *we* are the speaker, listener and interlocutor pronouns, because the turn's role is the point. Emoji and *lol* / *haha* are written as tone marks or interjections, and message-level sign-offs as the speaker's own name ([greetings](../grammar/word-endings.md#greeting)). Every line was checked with `node scripts/parse.mjs`. Gaps are in [register-results](../meta/register-results.md); *awkward* and *stand-in* rows cite the `G-nn` or `L-nn` there.
+Translated with the house cast for the third parties (Priya is `zahaben`). *I* / *you* / *we* are the speaker, listener and interlocutor pronouns, because the turn's role is the point. Emoji and *lol* / *haha* are written as tone marks or interjections, and message-level sign-offs as the speaker's own name ([greetings](../grammar/word-endings.md#greeting)). Every line was checked with `node scripts/parse.mjs`. Gaps are in `register-results.md`; *awkward* and *stand-in* rows cite the `G-nn` or `L-nn` there.
 
 | RS-2 | English | Agazan | Morph gloss | Verdict |
 |------|---------|--------|-------------|---------|
@@ -168,7 +168,7 @@ Translated with the house cast for the third parties (Priya is `zahaben`). *I* /
 
 #### RS-3 — How-to instructions {#rs-3}
 
-Each step is a command (`yel`) with no subject, so the listener is the cook. Steps are kept as separate turns, and a *because* that English puts in its own sentence becomes a plain statement after the command. A word the step already named comes back as a full-root resume (`danayar`, `zuzudur`). The table uses the spellings after the October 2026 respell. Every line was checked with `node scripts/parse.mjs --check-lexicon --check-ambiguity`. Gaps are in [register-results](../meta/register-results.md); *awkward*, *stand-in* and *by design?* rows cite the `G-nn` or `L-nn` there.
+Each step is a command (`yel`) with no subject, so the listener is the cook. Steps are kept as separate turns, and a *because* that English puts in its own sentence becomes a plain statement after the command. A word the step already named comes back as a full-root resume (`danayar`, `zuzudur`). The table uses the spellings after the October 2026 respell. Every line was checked with `node scripts/parse.mjs --check-lexicon --check-ambiguity`. Gaps are in `register-results.md`; *awkward*, *stand-in* and *by design?* rows cite the `G-nn` or `L-nn` there.
 
 | RS-3 | English | Agazan | Morph gloss | Verdict |
 |------|---------|--------|-------------|---------|
@@ -197,7 +197,7 @@ Notes on the covered rows. Measures that English names by a vessel (*two tablesp
 
 #### RS-4 — News paragraph {#rs-4}
 
-Translated with the house cast for the council member (Dr. Okafor is `zalahen`; the title is dropped). The writer is the speaker, so each reported fact carries the channel the paper has for it: RECORDED (`therel` for the official record of the vote and the report) or TOLD with the officials as source (`thewal baxagedumx`). Each *who* / *which* clause is its own sentence ([which noun](../grammar/dependents.md#which-noun)), each passive leaves out the subject ([leaving out who acts](../grammar/clause.md#no-subject)), and *X said* is the cite or **`darl`**. The attribution in 4.5a comes before the two quotes, so the quotes can follow it. Street and bridge names stay an opaque name (`b@<harbor street>`). Every line was checked with `node scripts/parse.mjs --check-lexicon --check-ambiguity`. Gaps are in [register-results](../meta/register-results.md); *stand-in* rows cite the `G-nn` or `L-nn` there.
+Translated with the house cast for the council member (Dr. Okafor is `zalahen`; the title is dropped). The writer is the speaker, so each reported fact carries the channel the paper has for it: RECORDED (`therel` for the official record of the vote and the report) or TOLD with the officials as source (`thewal baxagedumx`). Each *who* / *which* clause is its own sentence ([which noun](../grammar/dependents.md#which-noun)), each passive leaves out the subject ([leaving out who acts](../grammar/clause.md#no-subject)), and *X said* is the cite or **`darl`**. The attribution in 4.5a comes before the two quotes, so the quotes can follow it. Street and bridge names stay an opaque name (`b@<harbor street>`). Every line was checked with `node scripts/parse.mjs --check-lexicon --check-ambiguity`. Gaps are in `register-results.md`; *stand-in* rows cite the `G-nn` or `L-nn` there.
 
 | RS-4 | English | Agazan | Morph gloss | Verdict |
 |------|---------|--------|-------------|---------|
@@ -226,7 +226,7 @@ Notes on the covered rows. *Voted 7 to 2* is the vote (`vahul derl …`, the cou
 
 #### RS-5 — Story narration {#rs-5}
 
-Translated with the house cast for Nadia (`zahaben`, then the resume `zahaber`). The first sentence carries the TALE channel (`thozem`), and the rest of the narration uses bare verbs, which go on telling the tale (G-11, [evidentiality](../grammar/knowing.md#evidentiality)). Quoted speech is a cite with the speaking verb (`d[…] vezebel`, `valadul` *call*, `vagawalezebel` *whisper*), and inside the quotes *I* / *you* are the speaker and listener pronouns. Each *which* clause is its own sentence. Every line was checked with `node scripts/parse.mjs --check-lexicon --check-ambiguity`. Gaps are in [register-results](../meta/register-results.md); *awkward* and *stand-in* rows cite the `G-nn` or `L-nn` there.
+Translated with the house cast for Nadia (`zahaben`, then the resume `zahaber`). The first sentence carries the TALE channel (`thozem`), and the rest of the narration uses bare verbs, which go on telling the tale (G-11, [evidentiality](../grammar/knowing.md#evidentiality)). Quoted speech is a cite with the speaking verb (`d[…] vezebel`, `valadul` *call*, `vagawalezebel` *whisper*), and inside the quotes *I* / *you* are the speaker and listener pronouns. Each *which* clause is its own sentence. Every line was checked with `node scripts/parse.mjs --check-lexicon --check-ambiguity`. Gaps are in `register-results.md`; *awkward* and *stand-in* rows cite the `G-nn` or `L-nn` there.
 
 | RS-5 | English | Agazan | Morph gloss | Verdict |
 |------|---------|--------|-------------|---------|
@@ -259,7 +259,7 @@ Notes on the covered rows. *When she reached the top, the sun had already set* i
 
 #### RS-6 — Argument / opinion {#rs-6}
 
-The op-ed writer is the speaker (`zamagon`; *we* is `zamagonx`). Each *which* / *that* clause is its own sentence. *Company* / *firm* is *business* (`ebeve` -m), *workers* are `axawolx` as in RS-4, *the idea* is `ovu` -m, and *trial* / *test* is `udu`. A claim about companies or people in general uses the open fence (`zuam`), since **-x** is associative. Every line was checked with `node scripts/parse.mjs --check-lexicon --check-ambiguity`, and each bar fence was checked in the parse tree. Gaps are in [register-results](../meta/register-results.md); *done* and *covered* rows cite the `G-nn` or `L-nn` there.
+The op-ed writer is the speaker (`zamagon`; *we* is `zamagonx`). Each *which* / *that* clause is its own sentence. *Company* / *firm* is *business* (`ebeve` -m), *workers* are `axawolx` as in RS-4, *the idea* is `ovu` -m, and *trial* / *test* is `udu`. A claim about companies or people in general uses the open fence (`zuam`), since **-x** is associative. Every line was checked with `node scripts/parse.mjs --check-lexicon --check-ambiguity`, and each bar fence was checked in the parse tree. Gaps are in `register-results.md`; *done* and *covered* rows cite the `G-nn` or `L-nn` there.
 
 | RS-6 | English | Agazan | Morph gloss | Verdict |
 |------|---------|--------|-------------|---------|
@@ -289,7 +289,7 @@ Notes on the covered rows. *Many people* is *more people than usual* (`thobam ze
 
 #### RS-7 — Support conversation {#rs-7}
 
-Mara is the speaker (`zamagon`) and Ines the listener (`zehodon`) in each line's own turn, as in RS-1. Mara's sister is `zebezal geveval grebazol bamagon` (kin words, say-people-places.md), resumed as `zebezar`. Neither speaker can assert the other's feelings, so a feeling that belongs to the other person carries a holder seam on the channel that gives access to it (knowing.md § whose view): `thunemehodon` (*I gather you …*), `thewamehodon` (*you tell me you …*), `thunelebezar` (*I could tell she …*). Every line was checked with `node scripts/parse.mjs --check-lexicon --check-ambiguity`. Gaps are in [register-results](../meta/register-results.md); *stand-in* and *awkward* rows cite the `G-nn` there.
+Mara is the speaker (`zamagon`) and Ines the listener (`zehodon`) in each line's own turn, as in RS-1. Mara's sister is `zebezal geveval grebazol bamagon` (kin words, say-people-places.md), resumed as `zebezar`. Neither speaker can assert the other's feelings, so a feeling that belongs to the other person carries a holder seam on the channel that gives access to it (knowing.md § whose view): `thunemehodon` (*I gather you …*), `thewamehodon` (*you tell me you …*), `thunelebezar` (*I could tell she …*). Every line was checked with `node scripts/parse.mjs --check-lexicon --check-ambiguity`. Gaps are in `register-results.md`; *stand-in* and *awkward* rows cite the `G-nn` there.
 
 | RS-7 | English | Agazan | Morph gloss | Verdict |
 |------|---------|--------|-------------|---------|
@@ -325,7 +325,7 @@ Notes on the covered rows. *I don't even know why* is the UNPLACED locus (`uo`, 
 
 #### RS-8 — Decision memo {#rs-8}
 
-The team lead is the speaker (`zamagon`). The memo's *we* is the lead and the team together (`zahan`), and *you* is the team (`zehodonx`). Vendor A is `azawan` and Vendor B is `alahen` (house cast). The header is a call to the team plus the question the memo answers. Every line was checked with `node scripts/parse.mjs --check-lexicon --check-ambiguity`. Gaps are in [register-results](../meta/register-results.md); rows that cite a `G-nn` or `L-nn` point there.
+The team lead is the speaker (`zamagon`). The memo's *we* is the lead and the team together (`zahan`), and *you* is the team (`zehodonx`). Vendor A is `azawan` and Vendor B is `alahen` (house cast). The header is a call to the team plus the question the memo answers. Every line was checked with `node scripts/parse.mjs --check-lexicon --check-ambiguity`. Gaps are in `register-results.md`; rows that cite a `G-nn` or `L-nn` point there.
 
 | RS-8 | English | Agazan | Morph gloss | Verdict |
 |------|---------|--------|-------------|---------|

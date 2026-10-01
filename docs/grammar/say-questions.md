@@ -235,18 +235,27 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 ### Ask, interview, conversation {#ask-words}
 
-**Needs:** [Ask](questions.md#question) · [Reported questions](#reported-questions) · [Speech act: firm and soft](speech-moves.md#speech-act) · [Conversation length](x-compounds.md#conversation-length) · [Call someone](speech-moves.md#vocative)
+**Needs:** [Ask](questions.md#question) · [Reported questions](#reported-questions) · [Stand-in vowels](dependents.md#stand-in) · [Speech act: firm and soft](speech-moves.md#speech-act) · [Conversation length](x-compounds.md#conversation-length) · [Call someone](speech-moves.md#vocative)
 
-English *ask* is three jobs. You can put a question to someone, ask them for something, or report that a question was asked. A question is the act word **`yol`**. A request is **`yem`**. A reported question hangs on the telling ([reported questions](#reported-questions)). A conversation has no verb of its own: it is *speech*, with the abstract sense for the social practice.
+English *ask* is four jobs. You can put a question to someone, ask them for something, ask them to do something, or report that a question was asked. A question is the act word **`yol`**. A request is **`yem`**. A reported question hangs on the telling ([reported questions](#reported-questions)). *Ask* or *tell someone to do* something is a telling with the to-clause stand-in **`derl`**, and the person told is unhosted `/b/`; *not to* is **`durl`**. English picks *ask* or *tell* for politeness, which Agazan carries on the act word, not the verb. A conversation has no verb of its own: it is *speech*, with the abstract sense for the social practice.
 
 | English | Agazan | Reading |
 |---------|--------|---------|
 | *ask* (a question) | `yol zazawan vowogal.` | question |
 | *ask* (for something, *could you*) | `yem zehodon vowogal.` | request |
 | *ask* (report) | `zazawan vezebel dorl zar vowogal.` | telling + whether-clause |
+| *ask* / *tell someone to* | `zazawan balahen vezebel derl vehahel.` | telling + to-clause |
+| *ask* / *tell someone not to* | `zazawan balahen vezebel durl varahal.` | telling + lest-clause |
+| *please ask her to* | `yem zehodon balahen vezebel derl vehahel.` | request: tell Alahen to sit |
 | *ask* (one question, as a bid for time) | `alahexon.` | one slot |
 | *interview* | `yalahen.` then a run of `yol` questions | call, then ask |
 | *conversation* / *chat* / *dialog* | `zezebem` | *discourse* |
+
+> `yem zehodon balahen vezebel derl vehahel.`
+>
+> y-request | z-listener | b-Alahen | v-tell | d-to-clause | v-sit
+>
+> "Please ask Alahen to sit."
 
 ### Offer, suggest, recommend, invite {#offer-words}
 
