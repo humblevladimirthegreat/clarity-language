@@ -85,7 +85,7 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 
 ### Reason, purpose, guilty {#reason-purpose-guilty}
 
-**Needs:** [Because](causation.md#only-because) · [Fault](causation.md#fault) · [Motive](sakes.md#sake-preference) · [Prescription](sakes.md#sake-force) · [Attachment sites](sakes.md#attachment-sites) · [So that](dependents.md#so-that) · [Why?](questions.md#why) · [Emotion compose](sakes.md#emotion-compose)
+**Needs:** [Because](causation.md#only-because) · [Fault](causation.md#fault) · [Motive](sakes.md#sake-preference) · [Prescription](sakes.md#sake-force) · [Attachment sites](sakes.md#attachment-sites) · [So that](dependents.md#so-that) · [Why?](questions.md#why) · [Emotion compose](sakes.md#emotion-compose) · [Feeling with no object](sakes.md#feeling-no-object)
 
 English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each split the same way. Name which one you mean: what **made it happen** (the because pole), what the speaker is **doing it for** (a motive, on a sake), or the **faculty** of thinking (the abstract sense of `ebeha`).
 
@@ -99,7 +99,9 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 | *purpose* (what my noun is for) | `g…tho…` after the noun (`ganathom`) | the noun's purpose is this sake |
 | *What is the purpose?* | `hogom bar` | *What for?* |
 | *guilty* / *to blame* | `thevel` + `/b/` | the because pole, the reason broke a norm |
-| *guilty* (the feeling) | `wanathumam gobum` | emotion compose: unmet relatedness, held inside, flowing |
+| *guilty* (the feeling) | a feeling word + **`thevel barl`** + your own act | the feeling, caused by your act, which broke a norm |
+| *hurt* / *upset* (no fault named) | a feeling word + **`thevem barl`** + what happened | the feeling and its cause, with no one at fault |
+| *ashamed* / *embarrassed* | `gabohem` | the embarrassment root as a property |
 
 > `zazawan vedabal thevem berehel.`
 >
@@ -125,11 +127,19 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 >
 > "Alahen is to blame for Azawan's leaving." — the telling broke a norm
 
-> `zumel wanathumam gobum.`
+> `thanathumam thevel barl zSELFn vezebel.`
 >
-> z-memo | [w-relatedness-unmet-modifiable-INTERNAL-FLOWING | g-stimulus]
+> th-relatedness-unmet-modifiable-INTERNAL-FLOWING | [th-because.fault | b-that-clause] | z-SELF | v-tell
 >
-> "Guilty about the memo." — a cost to a tie, held inside, moving at a pace you can ride
+> "I feel guilty for telling." — a cost to a tie, held inside, and my telling broke a norm
+
+What makes the feeling guilt is the fault pole on **your own** act. The feeling word alone says only that a tie is under strain, the same word as *hurt*. With the because pole and someone else's act, the same feeling is *hurt*:
+
+> `thanathumar thevem barl zalahen vezebel.`
+>
+> th-relatedness-unmet-modifiable-INTERNAL-SURGING | [th-because | b-that-clause] | z-Alahen | v-tell
+>
+> "I'm hurt that Alahen told."
 
 Put the **act** in `/b/` after a fault pole, not the person ([fault](causation.md#fault)). *Guilty* is then *the wrong rests on that act*, and it leaves room for *Alahen did a wrong thing* without *Alahen is bad*.
 

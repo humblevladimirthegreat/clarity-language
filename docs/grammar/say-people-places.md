@@ -117,7 +117,7 @@ Keep the two verbs different. **-r** points at the latest matching event, so `za
 
 ### *Someone's act* (*Azawan's walk*) {#someones-act}
 
-**Needs:** [Which person or thing](dependents.md#which-noun) · [Resume](pronouns.md#resume-r) · [Of relations](relations.md#of-relations)
+**Needs:** [Which person or thing](dependents.md#which-noun) · [Resume](pronouns.md#resume-r) · [Of relations](relations.md#of-relations) · [Negation](joins.md#negation-u)
 
 English *'s* on an act (*Azawan's walk*, *the monkey's tricks*) names who did it. **`em`** is for things in someone's use, and an act is not one. Say the act as its own sentence first, then resume its verb root with **-r** in the next sentence: *that walk*.
 
@@ -126,6 +126,14 @@ English *'s* on an act (*Azawan's walk*, *the monkey's tricks*) names who did it
 > z-Azawan | v-walk . z-Alahen | d-←walk.full | v-see
 >
 > "Alahen sees Azawan's walk."
+
+When the act was denied (`vul`), the resume points at the act **as denied**: the not-doing. That is how English *the forgetting* or *the failure to call* comes back after *did not remember* or *did not call*.
+
+> `zazawan dalahen vevom vul. zevor gabeyom.`
+>
+> z-Azawan | d-Alahen | [v-memory | v-not] . z-←memory | g-mishap
+>
+> "Azawan didn't remember Alahen. The forgetting was a mishap."
 
 When the thing only comes **from** B (*the sound of the drums*), use origin **`gagum`** + `/b/` instead.
 

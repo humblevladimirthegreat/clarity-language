@@ -64,6 +64,28 @@ English *well…* warns that the answer is not the plain *yes* the question hope
 
 **Compare with:** **`yuel`** says the claim is false. **`yuam`** says the question does not quite fit, and the body says what happened instead.
 
+### *It sounds like…*, *I hear that you…* {#reflecting}
+
+**Needs:** [Whose view](knowing.md#holder) · [Evidentiality](knowing.md#evidentiality) · [Feeling with no object](sakes.md#feeling-no-object) · [Emotion compose](sakes.md#emotion-compose)
+
+English *it sounds like you're anxious* and *I hear that you're upset* give the speaker's feeling back to them. You cannot state someone else's feeling outright, so name the listener as the holder on INFERRED (**`thunem`**): you worked it out from what they said.
+
+> `thulothuruor thunemehodon.`
+>
+> th-competence-unmet-passing-UNPLACED-SURGING | th-INFERRED-listener
+>
+> "It sounds like you're anxious."
+
+To say the feeling **makes sense**, put your own stance in the main sentence and theirs in a dependent, with what the feeling is about:
+
+> `wadotham gobum zarl zezebel wanathumam gobum thunemehodon.`
+>
+> [w-understanding-met-any-term | g-stimulus] | z-that-clause | [z-speech | [w-relatedness-unmet-modifiable-INTERNAL-FLOWING | g-stimulus]] | th-INFERRED-listener
+>
+> "It makes sense to me that the talk weighs on you."
+
+**Compare with:** TOLD (**`thewamehodon`**) says they told you so in as many words. *I hear that* in a reflection is your reading of them, not hearsay.
+
 ### *Admittedly*, *granted* before a *but* {#admittedly}
 
 **Needs:** [Polar stance](questions.md#polar-stance) · [Sentence linkers](dependents.md#sentence-linkers)

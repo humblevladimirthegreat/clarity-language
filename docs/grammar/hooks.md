@@ -536,7 +536,15 @@ With no verb, the same order is a sentence. A noun marked with `em` is one the l
 
 **Compare with:** `zodogal gelavam.` is *There is a big dog* ([existence](predication.md#existence)): a new noun with no `em` introduces the thing. `zodogal em bamagon gelavam` puts *big* on the speaker, not the dog. `zodogal em bamagon.` alone says your dog is here (*there's my dog*).
 
-Things B uses include places B lives or sits, tools and rides B uses, ideas B works with, and B's turn or time. Other kinds of *'s* each have their own word:
+Things B uses include places B lives or sits, tools and rides B uses, ideas B works with, and B's turn, time, or occasion: *Azawan's birthday* is the day that is Azawan's to have.
+
+> `zebeval em bazawan.`
+>
+> [z-birthday | [used-by | b-Azawan]]
+>
+> "It's Azawan's birthday."
+
+Other kinds of *'s* each have their own word:
 
 | English *'s* | Use |
 |--------------|-----|

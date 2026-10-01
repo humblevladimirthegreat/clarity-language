@@ -298,7 +298,7 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 
 ### Must, have to, should {#must-should}
 
-**Needs:** [Requirement](sakes.md#requirement) · [Prescription](sakes.md#sake-force) · [Motive](sakes.md#sake-preference) · [Speech act](speech-moves.md#speech-act) · [Stance as-of](relations.md#stance-as-of)
+**Needs:** [Requirement](sakes.md#requirement) · [Prescription](sakes.md#sake-force) · [Motive](sakes.md#sake-preference) · [Permission](sakes.md#permission) · [Speech act](speech-moves.md#speech-act) · [Stance as-of](relations.md#stance-as-of)
 
 English *must* and *should* differ in what stands behind the demand. Choose the source.
 
@@ -313,6 +313,7 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 | *has to* (for a reason) | why they do it | sake + **`tho`** |
 | *should* (it will pay off) | a forecast | channel + **`bral`** |
 | *mustn't* | you forbid it now | prohibition **`yul`** |
+| *don't have to*, *needn't* | not doing it is allowed | permission **`thegom`** (**`thegol`** when a rule allows it) before the act + **`vul`** |
 
 > `zazawan vowogal thumel.`
 >
@@ -334,7 +335,15 @@ For *should have*, date the ought with [stance as-of](relations.md#stance-as-of)
 >
 > "You should have told. You did not tell."
 
-**Compare with:** requirement reports a demand, which may be someone else's; **`yel`** is you telling the listener.
+*Don't have to* lifts a demand: skipping the act is allowed. Put permission before the verb and deny the act.
+
+> `zazawan thegom vowogal vul.`
+>
+> z-Azawan | th-PERMIT-granted | [v-walk | v-not]
+>
+> "Azawan doesn't have to walk." — not walking is allowed
+
+**Compare with:** requirement reports a demand, which may be someone else's; **`yel`** is you telling the listener. Requirement with a denied act (`zazawan thumem vowogal vul`) is *Azawan is required not to walk*, which is *mustn't*, not *doesn't have to*.
 
 ### Will, want, try, let's {#will-want}
 

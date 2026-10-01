@@ -18,7 +18,8 @@ Before logging a grammar gap:
 
 1. Run `node scripts/find-english.mjs '<phrase>'` on the English and on one or two rewordings.
 2. Try the recurring fixes: a resume hook (`or` / `er` / `ar` / `ur`), counting from the end (`gruedul`), the discourse hooks (`ael` / `aol`), and a time pole plus PLAN.
-3. Record the phrases you tried in the gap row.
+3. If the English puts a feeling, belief, want or other stance on **someone other than the speaker** (*she was hurt*, *he thinks*, *it makes sense that you feel*), it is almost never a gap. This has been logged as one several times. Name that person as the holder on the channel, MAY or NOTIONAL word that gives you access to their view (`thunemazawan`, `thewamehodon`, `thunelebezar`: [whose view](../grammar/knowing.md#holder)). For a stance **on** their stance, put your stance in the main sentence and theirs in a dependent with its own holder seam word, naming what their feeling is about (`wadotham gobum zarl zevor wanathumam gobum thunemehodon`).
+4. Record the phrases you tried in the gap row.
 
 Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is the reader-as-speaker slot ([house cast](grammar-docs.md#house-cast)).
 
