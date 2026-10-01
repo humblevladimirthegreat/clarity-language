@@ -215,16 +215,19 @@ English degree words (*really*, *quite*, *barely*) say how far a quality or an a
 
 ### How: *carefully*, *properly*, *gently*, *hard to* {#manner-words}
 
-**Needs:** [Adverbs `/h/`](clause.md#adverbs-h) · [Manner scale](comparatives.md#manner-scale) · [Can](intention.md#can)
+**Needs:** [Adverbs `/h/`](clause.md#adverbs-h) · [Manner scale](comparatives.md#manner-scale) · [Every bar](comparatives.md#stance-bars) · [Can](intention.md#can)
 
-English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the abstract ending **-m**, as in `hadehum` *hastily*.
+English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the abstract ending **-m**, as in `hadehum` *hastily*. When the quality is the root's everyday sense and the abstract sense is something else, use **-l**: `egega` is *correct* and its abstract sense is *inclusion*, so *properly* is `hegegal`.
 
 | English | Agazan |
 |---------|--------|
 | *quickly* | `havazom` |
 | *carefully* | `heyayem` |
 | *gently* | `hegehem` |
-| *properly* | `hegegam` |
+| *properly* / *correctly* | `hegegal` |
+| *properly* (*up to standard*) | the doer, then `thumel zael hegegal` (as correctly as the rules require) |
+| *precisely* / *accurately* | `hubuzam` |
+| *neatly* / *in an orderly way* | `hebedom` |
 | *seriously* | `hezedom` |
 | *surprisingly* / *suddenly* | `hezum` |
 | *successfully* | `hamedam` |
@@ -253,6 +256,14 @@ The easy / hard pair on a quality ranks effort against a bar ([vague amounts](co
 > [z-Azawan | th-PATTERN | z-rank/more | h-effort] | d-book | v-write-able
 >
 > "The book is hard for Azawan to write."
+
+*Properly* in the sense of *up to standard* names the standard as a bar ([every bar](comparatives.md#stance-bars)): REQUIRE **`thumel`** is the rule, and a tie meets it. Use **`thumer`** for what is customary.
+
+> `zazawan thumel zael hegegal varadal.`
+>
+> [z-Azawan | th-REQUIRE-rule | z-equal-rank | h-correct] | v-write
+>
+> "Azawan writes properly (as correctly as the rules require)."
 
 ### How often {#frequency-words}
 

@@ -64,6 +64,11 @@ function matchesForce(word: LexWord | undefined, shape: ForceShape): boolean {
   );
 }
 
+/** Which pair a leading act word opens, read from the lead alone (enforce rejects a lead with the wrong partner). */
+export function leadForceKind(lead: LexWord | undefined): "emphatic" | "rhetorical" | undefined {
+  return FORCE_PAIRS.find((pair) => matchesForce(lead, pair.lead))?.kind;
+}
+
 /** Which legal pair `lead` + `force` forms, if any. */
 export function forcePairKind(lead: LexWord | undefined, force: LexWord | undefined): "emphatic" | "rhetorical" | undefined {
   return FORCE_PAIRS.find((pair) => matchesForce(lead, pair.lead) && matchesForce(force, pair.force))?.kind;

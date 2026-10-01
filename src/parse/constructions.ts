@@ -37,7 +37,8 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "leftEdge.Polar": { anchor: "questions.md#polar-stance", summary: "polar stance turn" },
   "leftEdge.W": { anchor: "hooks.md#hook-w", summary: "/w/ on a left-edge hook" },
   "leftEdge.Hook": { anchor: "hooks.md#discourse-hooks", summary: "discourse hook at the left edge" },
-  "leftEdge.LeadForce": { anchor: "speech-moves.md#emphatic-prohibition", summary: "act word leading another: yul yul emphatic prohibition, yal yol rhetorical question" },
+  "leftEdge.ForceEcho": { anchor: "speech-moves.md#emphatic-prohibition", summary: "yul yul emphatic prohibition" },
+  "leftEdge.ForceAnswer": { anchor: "questions.md#rhetorical", summary: "yal yol rhetorical question" },
   "leftEdge.Force": { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "speech-act word" },
 
   "bodyClause.Linker": { anchor: "dependents.md#continue-x", summary: "sentence linker before a clause" },
@@ -254,12 +255,12 @@ export const RESOLVE_CONSTRUCTIONS: Record<Exclude<`${AnaphorKind}.${"bound" | "
   "role.unbound": { anchor: "roles.md#role-compounds", summary: "role -r with no earlier match" },
 };
 
-/** Readings of a whole utterance or clause shape (`reading.*`, [construction-trace.ts](./construction-trace.ts)). */
+/** Readings of a whole utterance or clause shape, or of a shared scale (`reading.*`, [construction-trace.ts](./construction-trace.ts)). */
 export const READING_CONSTRUCTIONS = {
   existence: { anchor: "predication.md#existence", summary: "verbless /z/ clause: there is …" },
   kind: { anchor: "joins.md#kind-reference", summary: "zuan + kind: the kind itself, not its members" },
-  emphaticProhibition: { anchor: "speech-moves.md#emphatic-prohibition", summary: "yul yul: a louder prohibition" },
-  rhetoricalQuestion: { anchor: "questions.md#rhetorical", summary: "yal yol / yam yol: a question with an obvious answer" },
+  amountScale: { anchor: "comparatives.md#amount-scale", summary: "digitless gral after a rank join: how many" },
+  frequencyScale: { anchor: "comparatives.md#frequency-scale", summary: "digitless hral after a rank join: how often" },
   bareQuestion: { anchor: "questions.md#question", summary: "yol. / yom. with no body: Huh? / Hm?" },
   greeting: { anchor: "word-endings.md#greeting", summary: "a named citation said alone: hello / goodbye" },
 } satisfies Record<string, ConstructionEntry>;

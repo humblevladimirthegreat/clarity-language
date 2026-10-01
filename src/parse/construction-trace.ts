@@ -2,8 +2,8 @@ import type { CstElement, CstNode, IToken } from "chevrotain";
 
 import { classifyTokenBranch, isLexWordPayload, type TokenPayload } from "./tokens.js";
 import { POLAR_GROUP, RESTRICTOR_GROUP, type JoinSeries } from "./constructions.js";
-import { forcePairKind, isDigitless } from "./series.js";
-import { isKindReference, visitResult } from "./ast-walk.js";
+import { isDigitless, leadForceKind } from "./series.js";
+import { isKindReference, isScaleShared, visitResult } from "./ast-walk.js";
 import { numberMarkerIdentity } from "./resolve.js";
 import type { Clause, LexWord, NumberStem, ParseResult, ResolveInfo } from "./types.js";
 
@@ -130,10 +130,25 @@ function levelName(name: string, level: string | undefined): string {
   return name;
 }
 
+/** A leading act word is one grammar label for two lessons; its trace name carries the pair (`ForceEcho` / `ForceAnswer`). */
+const LEAD_FORCE_NAMES = { emphatic: "ForceEcho", rhetorical: "ForceAnswer" } as const;
+
+function leadForceName(token: CstElement): string | undefined {
+  if (isCstNode(token)) return undefined;
+  const payload = token.payload as TokenPayload | undefined;
+  const kind = payload && isLexWordPayload(payload) ? leadForceKind(payload) : undefined;
+  return kind && LEAD_FORCE_NAMES[kind];
+}
+
 /** Collect `sentence.*` / `token.*` / `word.*` IDs from one sentence CST. */
 export function addCstConstructions(node: CstNode, out: Set<string>, level?: string): void {
   for (const [key, elements] of Object.entries(node.children)) {
-    out.add(`sentence.${levelName(node.name, level)}.${levelName(key, level)}`);
+    if (node.name === "leftEdge" && key === "LeadForce") {
+      for (const element of elements) {
+        const name = leadForceName(element);
+        if (name) out.add(`sentence.leftEdge.${name}`);
+      }
+    } else out.add(`sentence.${levelName(node.name, level)}.${levelName(key, level)}`);
     // `unit` labels its noun-phrase list by level (`zCoord` / `dCoord` / `bCoord`).
     const childLevel = node.name === "unit" && /^[zdb]Coord$/.test(key) ? key[0] : level;
     for (const element of elements) {
@@ -161,6 +176,8 @@ export function sentenceGrammarKeys(grammar: Record<string, { definition: unknow
       const add = (key: string): void => {
         if (rule === "npCoord" || rule === "npCoordPart") {
           for (const level of NP_LEVELS) keys.add(`sentence.${levelName(rule, level)}.${levelName(key, level)}`);
+        } else if (rule === "leftEdge" && key === "LeadForce") {
+          for (const name of Object.values(LEAD_FORCE_NAMES)) keys.add(`sentence.leftEdge.${name}`);
         } else keys.add(`sentence.${rule}.${key}`);
       };
       if (kind === "NonTerminal") {
@@ -220,14 +237,11 @@ function isExistence(clause: Clause): boolean {
   );
 }
 
-/** Collect `reading.*` IDs from utterance and clause shapes. */
+/** Collect `reading.*` IDs from utterance and clause shapes and shared scales. */
 export function addReadingConstructions(result: ParseResult, out: Set<string>): void {
   for (const utterance of result.utterances) {
     const force = utterance.left.force?.raw;
     if (utterance.bodies.length === 0 && (force === "yol" || force === "yom")) out.add("reading.bareQuestion");
-    const pair = forcePairKind(utterance.left.leadForce, utterance.left.force);
-    if (pair === "emphatic") out.add("reading.emphaticProhibition");
-    if (pair === "rhetorical") out.add("reading.rhetoricalQuestion");
     for (const body of utterance.bodies) {
       if (isGreeting(body.clause)) out.add("reading.greeting");
       else if (isExistence(body.clause)) out.add("reading.existence");
@@ -236,6 +250,12 @@ export function addReadingConstructions(result: ParseResult, out: Set<string>): 
   visitResult(result, {
     join(_join, site) {
       if (site.kind === "np" && isKindReference(site.coord.parts[site.index]!)) out.add("reading.kind");
+    },
+    // A `gral` / `hral` scale parses as an ordinary shared `/ɡ/` / `/h/`; `bral` has its own grammar label (`sharedAfterJoin.scale`).
+    enter(node) {
+      if (node.kind !== "shared" || !isScaleShared(node.item)) return;
+      if (node.item.word.pos === "g") out.add("reading.amountScale");
+      if (node.item.word.pos === "h") out.add("reading.frequencyScale");
     },
   });
 }

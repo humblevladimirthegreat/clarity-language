@@ -456,7 +456,7 @@ English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrec
 | *wrong* (incorrect) | `gegegal gul` | not correct, closed with **`gul`** |
 | *wrong* (morally) | `thevel barl` + the act | fault on the act ([fault](causation.md#fault)) |
 | *wrong* (bad for someone) | `thanathum balahen` | the act detracted from Alahen's sake |
-| *badly* (manner) | `hegegam hul` | not *properly* ([manner words](say-amounts.md#manner-words)) |
+| *badly* (manner) | the doer, then `thobam zuel hegegal` | less correctly than usual ([manner words](say-amounts.md#manner-words)) |
 | *ugly* (not beautiful) | `gahabel gul` | not beautiful |
 | *ugly* (below a bar) | `thevegem zuel gahabel` | less beautiful than I hoped |
 | *ugly* (unpleasant to me) | `gozothum` | my noun detracts from pleasure |
