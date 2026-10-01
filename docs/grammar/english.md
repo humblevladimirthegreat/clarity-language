@@ -36,7 +36,7 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agazan 
 | intended outcome (*practices for a race*) | **`hagom`** + `/b/` | [So that](dependents.md#so-that) |
 | sake as reason (*walks for relatedness*) | sake **`tho`** on `/th/` | [Motive](sakes.md#sake-preference) |
 | noun’s purpose (*my gift for relatedness*) | sake **`tho`** on `/ɡ/` | [Motive](sakes.md#sake-preference) |
-| *my* belonging + sake (*my tent serves survival*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](sakes.md#personal-possession) |
+| *my* belonging + sake (*my tent serves health*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](sakes.md#personal-possession) |
 | duration (*for three hours*) | measure phrase | [Measure phrases](numbers-applied.md#measure-phrases) |
 | topic (*as for Azawan*) | **`hahehom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 
@@ -52,7 +52,7 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agazan 
 | origin (*Alahen of the city*, *the sound of the drums*) | **`gagum`** + `/b/` | [Of relations](relations.md#of-relations) |
 | someone's act (*Azawan's walk*, *the monkey's tricks*) | the act as a sentence, then its verb root in **-r** | [Someone's act](say-people-places.md#someones-act) |
 | *personal* / *private* (*a personal matter*) | hook **`em`** + the owner: `em bamegun` | [Whose](hooks.md#genitive) |
-| *my* belonging + sake (*my tent serves survival*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](sakes.md#personal-possession) |
+| *my* belonging + sake (*my tent serves health*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](sakes.md#personal-possession) |
 
 ### *about*
 
@@ -105,7 +105,7 @@ One English word, one row: the form that says it and the section that teaches it
 | *abroad* (*in another country*) | **`ol bagul bur`** (the kind *country*, then *some other one*) | [Somewhere, nowhere, everywhere](hooks.md#place-indefinites) |
 | *overseas* (*across the water*) | **`ebevum`** *across* + the water: `hebevum bohahal` | [Locative relations](relations.md#locative-relations) |
 | *bottom* (the low part of a thing) | `zadahel gabom bahazal` (a down part of the house) | [Of relations](relations.md#of-relations) |
-| *parallel* (*parallel to Alahen*) | the direction, then *like*: `gagabum gomem balahen` | [Simile](relations.md#similative) |
+| *parallel* (*parallel to Alahen*) | the direction, then *like*: `gagam gomem balahen` | [Simile](relations.md#similative) |
 | *lean* / *tilt* | `vadahel hrubul` (*almost falls*) | [Already, still, not yet](knowing.md#phasal) |
 | *corner* / *around the corner* | `zadodal` (the corner); `ol badodal` *at the corner*; `hegozem badodal` *around the corner* | [Locative relations](relations.md#locative-relations) |
 | *beyond* / *farther than* | rank on distance: `zahazal zel gazedom` (farther than the house) | [Bar words](say-amounts.md#bar-words) |

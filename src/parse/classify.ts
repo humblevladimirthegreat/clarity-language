@@ -477,7 +477,7 @@ function landmarkLateral(word: MorphWord): MorphWord | undefined {
   return { ...word, family: { kind: "x", xFamily: "lateral", leftRoots: family.leftRoots, rightRoots: [], landmark: true } };
 }
 
-/** `ROOT th V` on any root outside the six sakes is label scope (predication.md#label-scope). */
+/** `ROOT th V` on any root outside the eight sake roots is label scope (predication.md#label-scope). */
 function labelScope(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {
   const family = word.family;
   if (family.kind !== "x" || family.xFamily !== "sake") return undefined;

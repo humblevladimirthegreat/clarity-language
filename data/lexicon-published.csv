@@ -417,7 +417,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🫑,bell-pepper,abebe,,,,
 🥒,cucumber,aguyu,,,,
 🥬,greens,egezu,vitality,leafy greens fuel vitality,,vital; vegetable
-🥦,broccoli,abave,health,eat broccoli for health,,healthy; welfare
+🥦,broccoli,oba,health,eat broccoli for health,,healthy; welfare
 🧄,garlic,agego,,,,
 🧅,onion,anaya,depth,onion has layers of depth,,
 🥜,peanut,ebeye,triviality,work for peanuts is trivial pay,,
@@ -516,7 +516,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🌐,globe,olo,connected,a globe links every place; connected means linked together,,global; world; earth
 🗺️,map,uma,plan,a map charts a route; a plan charts a course,,agenda; design; project
 🗾,country,agu,scope,a map of one country; scope is the area the picture includes,,national; region; nation; extent; regional; zone; territory; area
-🧭,compass,agabu,direction,a compass points the way; direction is where you're headed,,direct; guide
+🧭,compass,aga,direction,a compass points the way; direction is where you're headed,,direct; guide
 ⛰️,mountain,amada,challenge,mountains are hard to climb; a challenge is hard to face,,pile; heap
 🛘,landslide,alaze,breakdown,landslide is sudden collapse; breakdown is the unobservable failure of a system,,crash; collapse; crack
 🌋,volcano,avege,eruption,a volcano bursts outward; eruption is bursting emotion,,burst
@@ -658,7 +658,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🎐,chime,ahawo,,,,
 🧧,red-envelope,eredo,blessing,red envelope carries good wishes; blessing is wished well-being,,
 🎀,ribbon,erebu,embellishment,ribbon adorns; embellishment is the unobservable extra,,belt
-🎁,present,ebezo,generosity,a present is given to another; generosity is giving freely,,gift; submit; charity
+🎁,present,ure,generosity,a present is given to another; generosity is giving freely,,gift; submit; charity
 🎗️,awareness,aweza,solidarity,the ribbon is worn for a cause; solidarity is standing with others,,aware
 🎟️,admission-tickets,adegu,admission,ticket grants entry inside; admission is being let in,,entry
 🎫,ticket,edega,,,,
@@ -887,7 +887,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 💣,bomb,abava,catastrophe,a bomb wrecks everything; catastrophe is disaster,,disaster; crisis
 🪃,boomerang,ubuve,,,v:throw,cast
 🏹,archery,arehe,aim,archery sends an arrow to a target; aim is directing toward target,v:hunt,focus
-🛡️,shield,uho,defense,shield blocks incoming blows; defense is guarding against harm,,defend
+🛡️,shield,eheyo,defense,shield blocks incoming blows; defense is guarding against harm,,defend
 🪚,saw,ozazo,division,saw cuts material apart; division is splitting into parts,,section; sector; chapter; department; district
 🔧,wrench,erevo,workaround,wrench turns past a stuck bolt; workaround is an improvised bypass,,
 🪛,screwdriver,azugu,assembly,screwdriver joins parts together; assembly is putting together,,

@@ -400,7 +400,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("values bake stance and ending grain", () => {
-    expectLine("zebezol gonathal", "z-present | g-relatedness-met-lasting");
+    expectLine("zurel gonathal", "z-present | g-relatedness-met-lasting");
     expectLine("zabezum wabathur gobom", "z-gathering | [w-autonomy-unmet-passing | g-stimulus]");
     expectLine("zezebel wuduthuraor gobom", "z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]");
     expectLine("zebeyum guduthamar", "z-draft | g-competence-met-any-term-INTERNAL-SURGING");

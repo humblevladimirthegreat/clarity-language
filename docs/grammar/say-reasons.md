@@ -361,18 +361,21 @@ English *I hope X will happen* is two claims: you want it, and you expect it. **
 
 **Needs:** [Sake inventory](sakes.md#sake-inventory) · [Met](sakes.md#time-horizon-endings-on-met) · [Emotion compose](sakes.md#emotion-compose) · [Thanks and sorry](sakes.md#thanks-sorry) · [Sake benchmarks](comparatives.md#sake-benchmarks)
 
-English *useful*, *helpful*, *important* and *benefit* judge a thing by what it does for someone. Agazan names the someone's **sake** (autonomy, competence, relatedness, pleasure, survival). A met word says the thing serves that sake, and its ending says how long the payoff lasts. On a noun that is yours, the sake word sits on `/ɡ/`. On another noun, put it on `/w/` before **`gobom`**. Put a person in `/b/` for whose sake it is.
+English *useful*, *helpful*, *important* and *benefit* judge a thing by what it does for someone. Agazan names the someone's **sake** (autonomy, competence, purpose, relatedness, beneficence, pleasure, health). A met word says the thing serves that sake, and its ending says how long the payoff lasts. On a noun that is yours, the sake word sits on `/ɡ/`. On another noun, put it on `/w/` before **`gobom`**. Put a person in `/b/` for whose sake it is.
 
 | English | Agazan | Reading |
 |---------|--------|---------|
 | *useful* / *helpful* / *practical* / *relevant* (for getting things done) | `gudutham` | competence, met |
-| *important* / *critical* / *crucial* (it matters for the long run) | `wonathal gobom` | relatedness, met, lasting |
+| *important* / *critical* / *crucial* (it matters for the long run) | `wagathal gobom` | purpose, met, lasting |
+| *meaningful* / *worthwhile* | `wagatham gobom` | purpose, met |
+| *pointless* / *futile* | `wagathum gobom` | purpose, unmet |
+| *glad to help* / *rewarding to give* | `thuretham.` | the act met your beneficence |
 | *benefit* / *benefits Alahen* | `thonatham balahen` | the act met Alahen's sake |
 | *advantage* (a lead over someone) | `zel` with the scale | rank against the other |
 | *satisfy* (you) | `thonatham behodon` | the act met your sake |
 | *satisfy* (a requirement) | `zugen zael` + scale | tie against the sake bar: *enough* |
 | *suitable* / *appropriate* (for a need) | `gudutham` or `zugen zael` | met, or enough for the need |
-| *more important than* | `zel` between the nouns, then `gonathal` | rank on the lasting met sake |
+| *more important than* | `zel` between the nouns, then `gagathal` | rank on the lasting met sake |
 | *upset* | `wonathumar gobom` | relatedness, unmet, held inside, surging |
 | *upset for someone* | `wonathumem gobom` + `/b/` | unmet relatedness on their behalf |
 
@@ -382,11 +385,11 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 >
 > "My book is useful." — it helps me get things done
 
-> `zemehol wonathal gobom.`
+> `zemehol wagathal gobom.`
 >
-> z-memo | [w-relatedness-met-lasting | g-stimulus]
+> z-memo | [w-purpose-met-lasting | g-stimulus]
 >
-> "The memo is important." — it serves the tie for the long run
+> "The memo is important." — it matters for the long run
 
 > `zazawan vowogal thonatham balahen.`
 >
@@ -394,11 +397,11 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 >
 > "Azawan's walking benefits Alahen."
 
-> `zemehol zezebel zel gonathal.`
+> `zemehol zezebel zel gagathal.`
 >
-> [z-memo | z-speech | z-rank/more | g-relatedness-met-lasting]
+> [z-memo | z-speech | z-rank/more | g-purpose-met-lasting]
 >
-> "The memo is more important than the talk." — it serves the tie more for the long run
+> "The memo is more important than the talk." — it matters more for the long run
 
 > `zazawan zalahen zel gezehel.`
 >

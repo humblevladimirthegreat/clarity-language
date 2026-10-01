@@ -579,11 +579,13 @@ English *enough* and *too* compare against **what a sake requires**. Agazan name
 | Agazan | Use | English | Same root as |
 |---------|-----|---------|----------------|
 | **`zugen`** | sake bar, sake not named | *Some-sake* (what a sake requires) | `ugel` *egg* |
-| **`zuhon`** | survival sake bar | *what safety needs* | `uhol` *shield* |
+| **`zoban`** | health sake bar | *what staying well needs* | `obal` *broccoli* |
 | **`zonan`** | relatedness sake bar | *what connection needs* | `onal` *knot* |
 | **`zudun`** | competence sake bar | *what getting it done needs* | `udul` *toolbox* |
 | **`zaban`** | autonomy sake bar | *what choice needs* | `abal` *ballot* |
 | **`zozun`** | pleasure sake bar | *what enjoyment needs* | `ozul` *strawberry* |
+| **`zagan`** | purpose sake bar | *what mattering needs* | `agal` *compass* |
+| **`zuren`** | beneficence sake bar | *what helping needs* | `urel` *present* |
 
 Tie **`ae`** against a sake bar is *enough*. Rank **`e`** is *too much*, and **`ue`** is *not enough*.
 
@@ -607,9 +609,9 @@ Tie **`ae`** against a sake bar is *enough*. Rank **`e`** is *too much*, and **`
 
 With a quality as the scale, the same pattern gives *too ADJ* and *ADJ enough*. A specific sake bar says which sake sets the limit.
 
-> `zedehel zuhon zel gahadol.`
+> `zedehel zoban zel gahadol.`
 >
-> [z-tea | z-Survival-sake | z-rank/more | g-hot]
+> [z-tea | z-Health-sake | z-rank/more | g-hot]
 >
 > "The tea is too hot to be safe."
 
@@ -704,7 +706,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *my standard* | `omen` | `omel` *mirror* |
 | *speaker* | `amegun` | |
 | *Some-sake* | `ugen` | `ugel` *egg* |
-| *Survival-sake* | `uhon` | `uhol` *shield* |
+| *Health-sake* | `oban` | `obal` *broccoli* |
 | *Relatedness-sake* | `onan` | `onal` *knot* |
 | *Competence-sake* | `udun` | `udul` *toolbox* |
 | *Autonomy-sake* | `aban` | `abal` *ballot* |
@@ -764,9 +766,9 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 **7.** *Ahaben is too showy to be safe.*
 
 ::: details Show answer
-`zahaben zuhon zel gahudom.`
+`zahaben zoban zel gahudom.`
 
-[z-Ahaben | z-Survival-sake | z-rank/more | g-showmanship]
+[z-Ahaben | z-Health-sake | z-rank/more | g-showmanship]
 :::
 
 **8.** *Alahen sings less than connection needs.*

@@ -316,7 +316,7 @@ English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an 
 | *shallow* | `zahen zuel gebegam` |
 | *thick* | `gabogol gul` (not flat) |
 | *remarkable* / *special* (unusual) / *outstanding* | `zahen zel` + the quality that stands out: `zahen zel gelavam` |
-| *major* / *significant* (matters more than usual) | `zahen zel gonathal` ([important](say-reasons.md#sake-words)) |
+| *major* / *significant* (matters more than usual) | `zahen zel gagathal` ([important](say-reasons.md#sake-words)) |
 
 > `zubugal zahen zel gadahum.`
 >

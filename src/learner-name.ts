@@ -38,7 +38,7 @@ export const SUGGESTED_EMOJI = [
   // nature and sky
   "🌻", "🌱", "🌳", "🪺", "🌄", "🌊", "⚡", "🌹",
   // objects and craft
-  "🧭", "⚓", "🏮", "📖", "🔑", "🌉", "🪉", "🎵", "🖌️", "🧑‍🎨",
+  "⚓", "🏮", "📖", "🔑", "🌉", "🪉", "🎵", "🖌️", "🧑‍🎨",
 ];
 
 export type LearnerNameOption = {

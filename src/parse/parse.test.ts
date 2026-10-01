@@ -522,6 +522,6 @@ describe("parse — pronouns.md full-root resume", () => {
     for (const text of ["zalahen vahahal dazor.", "zodor vowogal."]) {
       assert.doesNotThrow(() => parseText(text), text);
     }
-    assert.throws(() => parseText("zagar vowogal."), SentenceParseError);
+    assert.throws(() => parseText("zadar vowogal."), SentenceParseError);
   });
 });
