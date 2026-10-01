@@ -213,9 +213,9 @@ English degree words (*really*, *quite*, *barely*) say how far a quality or an a
 >
 > "Azawan barely sits."
 
-### How: *carefully*, *properly*, *gently* {#manner-words}
+### How: *carefully*, *properly*, *gently*, *hard to* {#manner-words}
 
-**Needs:** [Adverbs `/h/`](clause.md#adverbs-h) · [Manner scale](comparatives.md#manner-scale)
+**Needs:** [Adverbs `/h/`](clause.md#adverbs-h) · [Manner scale](comparatives.md#manner-scale) · [Can](intention.md#can)
 
 English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the abstract ending **-m**, as in `hadehum` *hastily*.
 
@@ -236,6 +236,7 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 | *widely* / *broadly* | `horodam` |
 | *deeply* | `hebegem` |
 | *easily* (*with less effort than usual*) | `thobam zuel hawom` before the verb |
+| *hard to* / *easy to* + a verb (*hard to ignore*) | the doer, then `thobam zel hawom` / `thobam zuel hawom`, and the verb with *can* (`-xal`) |
 
 > `zazawan heyayem vowogal.`
 >
@@ -244,6 +245,14 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 > "Azawan walks carefully."
 
 The easy / hard pair on a quality ranks effort against a bar ([vague amounts](comparatives.md#vague-amounts)): `zubugal thobam zuel gawom` is *the book is easy* (less effort than usual), and `zel` in place of `zuel` is *hard*.
+
+*Hard to* + a verb puts the same effort scale on whoever would do it: they can, but only with more effort than usual. Write the doer as the ranked item, the bar, the rank word and **`hawom`**, then the verb with [*can*](intention.md#can) **`xa`**.
+
+> `zazawan thobam zel hawom dubugal varadaxal.`
+>
+> [z-Azawan | th-PATTERN | z-rank/more | h-effort] | d-book | v-write-able
+>
+> "The book is hard for Azawan to write."
 
 ### How often {#frequency-words}
 

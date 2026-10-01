@@ -163,14 +163,19 @@ function isFrameHookAhead(parser: AgazanSentenceParser, at: number): boolean {
 function rankBarAhead(parser: AgazanSentenceParser, level: NpSlot, from = 1): boolean {
   let i = laAfterW(parser, from);
   if (!isStanceWord(parser.lookahead(i))) return false;
+  // After the bar's `/b/`, a plain adjective describes that noun (*than tired learners*, clause.md § complex chaining).
+  let bound = false;
   for (; ; i++) {
     const tok = parser.lookahead(i);
     if (tok.tokenType === NP_JOIN[level]) {
       const ending = (tok.payload as LexWord | undefined)?.ending;
       return BAR_SERIES.has(joinSeries(tok)) && (ending === "l" || ending === "m");
     }
-    const number = (tok.payload as LexWord | undefined)?.family?.kind === "number";
-    if (!(isStanceWord(tok) || tokenIs(tok, W, B, JoinB, Odo) || (tok.tokenType === G && number))) return false;
+    const payload = tok.payload as LexWord | undefined;
+    const number = payload?.family?.kind === "number";
+    const landmarkAdj = bound && tok.tokenType === G && !payload?.gl;
+    if (!(isStanceWord(tok) || tokenIs(tok, W, B, JoinB, Odo) || (tok.tokenType === G && number) || landmarkAdj)) return false;
+    if (tok.tokenType === B) bound = true;
   }
 }
 
@@ -458,14 +463,28 @@ class AgazanSentenceParser extends CstParser {
   });
 
   /** A noun-phrase list at level `/z/` `/d/` or `/b/` (the same shape at each level; only the slot letter differs). */
+  /** The last join word this list closed, so a bar can rank a closed universal fence as its item. */
+  private lastNpJoin: IToken | undefined;
+
   public npCoord = this.RULE("npCoord", (level: NpSlot = "z") => {
+    this.ACTION(() => {
+      this.lastNpJoin = undefined;
+    });
     this.AT_LEAST_ONE({
-      GATE: () => isNpSlotLookahead(this, level),
+      GATE: () => isNpSlotLookahead(this, level) || this.universalFenceBarAhead(level),
       DEF: () => {
         this.SUBRULE(this.npCoordPart, { ARGS: [level] });
       },
     });
   });
+
+  /**
+   * A bar right after a closed `ua` fence (`zuam gagadul thobam zel …`): the whole fence is the one ranked item,
+   * nested by right-close (comparatives.md § every bar, joins.md § fence nesting).
+   */
+  private universalFenceBarAhead(level: NpSlot): boolean {
+    return this.lastNpJoin !== undefined && joinSeries(this.lastNpJoin) === "ua" && rankBarAhead(this, level);
+  }
 
   public npCoordPart = this.RULE("npCoordPart", (level: NpSlot = "z") => {
     this.OR([
@@ -473,6 +492,15 @@ class AgazanSentenceParser extends CstParser {
         GATE: () => this.LA(1).tokenType === NP_JOIN[level],
         ALT: () => {
           this.SUBRULE(this.npJoinClose, { LABEL: "standaloneJoin" });
+        },
+      },
+      {
+        GATE: () => !isNpSlotLookahead(this, level) && this.universalFenceBarAhead(level),
+        ALT: () => {
+          this.AT_LEAST_ONE2(() => {
+            this.SUBRULE2(this.hUnitRule, { LABEL: "bar", ARGS: [true] });
+          });
+          this.SUBRULE3(this.npJoinClose);
         },
       },
       {
@@ -487,7 +515,7 @@ class AgazanSentenceParser extends CstParser {
           this.MANY({
             GATE: () => rankBarAhead(this, level),
             DEF: () => {
-              this.SUBRULE(this.hUnitRule, { LABEL: "bar" });
+              this.SUBRULE(this.hUnitRule, { LABEL: "bar", ARGS: [true] });
             },
           });
           this.OPTION({
@@ -510,11 +538,14 @@ class AgazanSentenceParser extends CstParser {
     this.MANY(() => {
       this.CONSUME(W);
     });
-    this.OR([
+    const join = this.OR([
       { ALT: () => this.CONSUME(JoinZ) },
       { ALT: () => this.CONSUME(JoinD) },
       { ALT: () => this.CONSUME(JoinB) },
     ]);
+    this.ACTION(() => {
+      this.lastNpJoin = join;
+    });
     // SHARED /ɡ/ describes every noun; SHARED /h/ or digitless `bral` is only a scale, after a rank / equative / sequence join.
     this.OPTION({
       GATE: () =>
@@ -646,7 +677,7 @@ class AgazanSentenceParser extends CstParser {
     this.CONSUME(JoinH);
   });
 
-  public hUnitRule = this.RULE("hUnitRule", () => {
+  public hUnitRule = this.RULE("hUnitRule", (bar = false) => {
     this.MANY(() => {
       this.CONSUME(W);
     });
@@ -657,7 +688,8 @@ class AgazanSentenceParser extends CstParser {
           ALT: () => {
             const bound = this.CONSUME(B);
             // A `/th/` host's `/b/` is an offset or source, so a later `/ɡ/` stays the predicate.
-            this.hostedTail(bound, () => (host.payload as LexWord | undefined)?.pos === "h");
+            // Inside a bar fence no predicate can come before the join, so it describes the `/b/` noun.
+            this.hostedTail(bound, () => bar || (host.payload as LexWord | undefined)?.pos === "h");
             // A `/th/` channel's offset, then `barl`: the next sentence is the grounds (knowing.md#evidence-clause).
             this.OPTION7({
               GATE: () =>

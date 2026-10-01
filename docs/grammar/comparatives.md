@@ -690,6 +690,30 @@ The bar's `/b/` works as it does on the clause. On TOLD it is the source, and on
 >
 > "Azawan sings well for a learner."
 
+An adjective after that `/b/` describes it, as after any [host](clause.md#complex-chaining), so it narrows the population.
+
+> `zazawan thobam baxelehalx gezebul zel gezehel.`
+>
+> [z-Azawan | [th-PATTERN | [b-agent-x-learn-x | g-sleepy]] | z-rank/more | g-sing]
+>
+> "Azawan sings well for a sleepy learner."
+
+The ranked item can be a whole kind. Write the [universal fence](joins.md#universals-domains-generics) first, then the bar: the closed fence is the one item, the way an inner list sits inside an outer one ([fence nesting](joins.md#fence-nesting)). Open **`zuam`** is *people of that kind, as a rule*.
+
+> `zuam gaxadadal thobam zel hral vabogam.`
+>
+> [[z-everything.open | g-agent-x-tired] | th-PATTERN | z-rank/more | h-how-often] | v-flaw
+>
+> "Tired people make mistakes more often than usual."
+
+To rank one kind against another, keep one kind as the item and put the other in the PATTERN bar's `/b/`.
+
+> `zuam gaxenaham thobam bebezalx gadadam zel hamedam vawol.`
+>
+> [[z-everything.open | g-agent-x-rest] | [th-PATTERN | [b-person-x | g-burnout]] | z-rank/more | h-achievement] | v-sweat
+>
+> "Rested people work more successfully than exhausted people."
+
 An INFERRED or PATTERN bar can also take [`barl`](knowing.md#evidence-clause): the next sentence is the grounds you worked the bar out from.
 
 **Ability.** The ability word [`eze`](intention.md#ability-fallback) as the bar is the limit of **what can be done**. A tie against **`thezexal`** is *as … as possible*. The ability vowel says how fixed that limit is, so rank **`zel`** against **`thezexel`** is *more than can be done for now*, and against **`thezexul`** *more than could ever be done*.

@@ -75,6 +75,7 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 - Stances that set no value are not bars: clause poles, MAY, MIRATIVE, DECISION, ATTEMPT, WANT, RESIDUE, CAUSE, and the deontic noes (FORBID, refused consent). The parser rejects them (`barKind`), and a second comparee next to a bar, noun or bar (`barCount`).
 - A bar sits right before the join word, after the one ranked item (and after that item's own hook + `/b/`, as before a join word). A stance word after the fence is the claim's stance. With a bar and no ranked item, the stance word stays outside the fence.
 - A holder seam on a bar names whose expectation it is; inside the fence the seam covers only the bar, not the ranking.
+- A closed `ua` fence (`zual` / `zuam` / `zuan` + kind) right before a bar is the one ranked item, nested by right-close: `zuam gaxadadal thobam zel hral` *tired people err more often than usual*. Kind against kind is not two fenced items (a second `…uan` after items is a named bundle); the other kind goes in the PATTERN bar's `/b/` (`thobam bebezalx gadadam`). Other fences (`zul` + kind) do not rank this way. An adjective after a bar's `/b/` describes that noun, as after any host.
 - A bar's `barl` ends its sentence at the fence: noun parts after the scale start the grounds sentence.
 
 ## Contrary to a stance (`uem` + `/th/`)

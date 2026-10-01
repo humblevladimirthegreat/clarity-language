@@ -64,6 +64,26 @@ English *well…* warns that the answer is not the plain *yes* the question hope
 
 **Compare with:** **`yuel`** says the claim is false. **`yuam`** says the question does not quite fit, and the body says what happened instead.
 
+### *Admittedly*, *granted* before a *but* {#admittedly}
+
+**Needs:** [Polar stance](questions.md#polar-stance) · [Sentence linkers](dependents.md#sentence-linkers)
+
+English *admittedly*, *granted* and *that's true, but* concede a point before pushing back. Open with **`yael`** (*true*): before a body it concedes that body, and alone it concedes what was just said. Then push back with **`xagezal`** (*but*).
+
+> `yael zazawan vowogal. xagezal zalahen vehahel.`
+>
+> y-yes | z-Azawan | v-walk . x-but | z-Alahen | v-sit
+>
+> "Admittedly, Azawan walks. But Alahen sits."
+
+> `zazawan vowogal. yael. xagezal zalahen vehahel.`
+>
+> z-Azawan | v-walk . y-yes . x-but | z-Alahen | v-sit
+>
+> "Azawan walks." "That's true, but Alahen sits."
+
+**Compare with:** *even so* after the concession is *despite that*, **`hezom barth`** ([pointing back](dependents.md#stand-in-back)). **`yaem`** (*I think so*) agrees only softly.
+
 ## Exclamations and side remarks {#reactions}
 
 ### *What a big dog!* {#exclamations}

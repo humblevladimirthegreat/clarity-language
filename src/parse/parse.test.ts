@@ -580,6 +580,30 @@ describe("parse — comparatives.md bars", () => {
     assert.equal(dated?.hosted?.amount?.raw, "gruwol");
   });
 
+  it("ranks a closed universal fence against the bar after it", () => {
+    for (const text of ["zuam gaxadadal thobam zel hral vabogam.", "zuan gaxadadal thobam zel hral vabogam.", "zual gagadul thobam zel gezebul."]) {
+      const units = parseText(text).utterances[0]!.bodies[0]!.clause.units;
+      const np = units[0]!;
+      assert.ok(np.kind === "np", text);
+      const [fence, ranked] = np.kind === "np" ? np.coord.parts : [];
+      assert.equal(fence?.join?.family.kind === "joinMarker" && fence.join.family.series, "ua", text);
+      assert.deepEqual(ranked?.items.map((i) => (i.kind === "bar" ? i.bar.word.raw : i.kind)), ["thobam"], text);
+      assert.ok(!units.some((u) => u.kind === "h"), text);
+    }
+    // Only the `ua` fences rank as one item; `zul` + kind keeps the bar out.
+    const units = parseText("zul gagadul thobam zel gezebul.").utterances[0]!.bodies[0]!.clause.units;
+    assert.ok(units.some((u) => u.kind === "h" && u.unit.word.raw === "thobam"));
+  });
+
+  it("reads an adjective after a bar's hosted /b/ as describing that noun, inside the fence", () => {
+    const bar = barOf("zazawan thobam baxelehalx gezebul zel gezehel.");
+    assert.equal(bar?.hosted?.bound.raw, "baxelehalx");
+    assert.deepEqual(bar?.hosted?.adjs?.map((a) => a.word.raw), ["gezebul"]);
+    // On the clause, a channel's source keeps a later /ɡ/ as the predicate.
+    const units = parseText("zazawan thewam balahen gezebul.").utterances[0]!.bodies[0]!.clause.units;
+    assert.ok(units.some((u) => u.kind === "h" && !u.unit.hosted?.adjs));
+  });
+
   it("keeps the ranked item's hook + /b/ before its bar inside the fence", () => {
     const part = fence("zubugal om bamagon thamam zel garagam.")!;
     assert.deepEqual(part.items.map((i) => i.kind), ["package", "bar"]);

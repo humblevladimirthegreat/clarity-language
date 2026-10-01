@@ -18,7 +18,6 @@ Prosody
 -finish register-samples.md
 
 save for near end of limit resets:
--lexicon fill in based on subtitles dataset frequency
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.
 -review published-lexicon for psychology - are there any abstract roots that are prone to cognitive biases that would benefit from special attention such as carefully choosing the concrete
 -mass lexical compound adding

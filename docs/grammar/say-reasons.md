@@ -179,9 +179,9 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 
 **Compare with:** *get someone to* by asking is tell plus a *to* [stand-in](dependents.md#stand-in), not **`thegem`**. **`thegem`** says the causer made it happen. Persuading puts the decision mood on the one persuaded, so a later change of mind stays possible.
 
-### Mean, explain, realize, forget, become {#mind-verbs}
+### Know, mean, explain, realize, forget, become {#mind-verbs}
 
-**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Because](causation.md#only-because) · [Already, still, not yet](knowing.md#phasal) · [Existence](predication.md#existence) · [As for](say-people-places.md#as-for) · [Start and stop](#phase-verbs) · [Comparatives](comparatives.md#comparatives-e)
+**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Embedded whether](questions.md#embedded-whether) · [Because](causation.md#only-because) · [Already, still, not yet](knowing.md#phasal) · [Can](intention.md#can) · [Existence](predication.md#existence) · [As for](say-people-places.md#as-for) · [Start and stop](#phase-verbs) · [Comparatives](comparatives.md#comparatives-e)
 
 English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mostly sit on a few plain moves: tell, know, remember, and whether the change has come. Agazan keeps those roots and adds the phasal word for the change, so *realize* is *already know* and *forget* is *no longer remember*. *Mean* in the sense of *signify* is the compound `ezebelovu` (*meaning*, speech that carries a thought).
 
@@ -192,6 +192,11 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 | *define* | `zazawan dezebelovul hahehom bodogal vezebel.` | tells the meaning, about the dog |
 | *explain* | `zazawan balahen vezebel darl zalahen vowogal thevem barl zodogal varahal.` | tells Alahen that the walk has the run as its reason |
 | *describe* | `zazawan hahehom bodogal balahen vezebel.` | tells Alahen about the dog |
+| *know* (that) | `zazawan vubugam darl zodogal varahal.` | knows that the dog runs; to say how *you* know it, use a [channel](knowing.md#evidentiality) |
+| *know whether* / *know which* | `zazawan vubugam dorl zodogal varahal.` | knows whether the dog runs; a blank inside asks *which* (`dor`) |
+| *find out* | `zazawan vamagal dorl zodogal varahal.` | finds whether the dog runs |
+| *know someone* | `zazawan hoham dalahen vahahal har.` | has met Alahen at some point ([ever](knowing.md#ever-never)) |
+| *know how to* | `zazawan vezehexal.` | can sing ([can](intention.md#can)) |
 | *realize* / *notice* | `zazawan hoham vubugam darl zodogal varahal.` | already knows that the dog runs |
 | *forget* | `zazawan dalahen vevom hewem.` | no longer remembers Alahen |
 | *become* | `zazawan vabedom dezebul.` | starts being sleepy |
@@ -217,7 +222,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 
 ### Condition, factor, requirement, motivation, satisfaction, truth {#reason-nouns}
 
-**Needs:** [If](causation.md#if) · [Only because](causation.md#only-because) · [Fault](causation.md#fault) · [Requirement](sakes.md#requirement) · [Motive](sakes.md#sake-preference) · [Met](sakes.md#time-horizon-endings-on-met) · [Thanks and sorry](sakes.md#thanks-sorry) · [Intention](intention.md#plan-predict) · [Speech manner](speech-moves.md#speech-manner) · [Evidentiality](knowing.md#evidentiality)
+**Needs:** [If](causation.md#if) · [Only because](causation.md#only-because) · [Fault](causation.md#fault) · [Requirement](sakes.md#requirement) · [Motive](sakes.md#sake-preference) · [Met](sakes.md#time-horizon-endings-on-met) · [Thanks and sorry](sakes.md#thanks-sorry) · [Intention](intention.md#plan-predict) · [Speech manner](speech-moves.md#speech-manner) · [Evidentiality](knowing.md#evidentiality) · [Enough and too](sakes.md#sake-bars)
 
 English turns reasons and feelings into nouns (*condition*, *motivation*, *satisfaction*, *truth*). Agazan has no noun for most of them. It keeps the stance word on the clause, so the noun becomes a short claim about how you stand: a condition is the pole word, a motive is a sake, a requirement is a demand, a truth is how you vouch for it.
 
@@ -227,6 +232,7 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 | *factor* (one cause among several) | `thever barl` | a share of the fault or cause |
 | *circumstance* / *context* | a dependent after `barl` (`huwem barl`, `thevem barl`) | the situation as a clause |
 | *requirement* / *demand* | `thumel` / `thumem` / `thumer` | rule, person, or expectation |
+| *necessary* / *unnecessary* | `thumel` on the act; *more than needed* is the sake bar `thegatham zel` | required by a rule; past what the need asks |
 | *motivation* / *motive* | `zazawan vowogal thanathom.` | does it for relatedness |
 | *satisfaction* / *pleasure* | `thozotham.` | pleasure, met |
 | *desire* / *wish* | `zazawan thohum vowogal.` | wants to walk |
@@ -249,6 +255,27 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 > "That was a pleasure."
 
 **Compare with:** a sake word names the sake that is met, so pick the one you mean: relatedness, competence, pleasure ([sakes](sakes.md#sake-inventory)). A noun that says what someone did is a [free relative](say-people-places.md#free-relative-what).
+
+### Biased, wishful thinking {#biased}
+
+**Needs:** [Motive](sakes.md#sake-preference) · [Want](intention.md#want) · [MAY](knowing.md#may) · [Speech manner](speech-moves.md#speech-manner)
+
+English *biased* says a view may be bent by what the holder wants from it. Agazan says that outright: put a [motive](sakes.md#sake-preference) on the thinking, so the view is held *for a stake*. Name the sake when you know which one, or use the unspecified sake **`ega`**. *Wishful thinking* and *I'd like to believe* are a want on the thinking itself.
+
+| English | Agazan | Reading |
+|---------|--------|---------|
+| *I may be biased* | `zamagon thovum vevegal thegathom.` | I may think this for a stake of my own |
+| *biased* (someone else) | `zazawan vevegal thegathom.` | Azawan thinks it for a stake |
+| *I'd like to believe* / *wishful thinking* | `zamagon thohum vevegal darl zalahen vowogal.` | I want to think that Alahen walks |
+| *to be honest*, before owning a bias | `thaveham` | [speech manner](speech-moves.md#speech-manner) |
+
+> `thaveham zamagon thovum vevegal thegathom.`
+>
+> th-revelation | z-speaker | th-MAY | v-think | th-sake-motive-any-term
+>
+> "To be honest, I may be biased."
+
+**Compare with:** *I think* as a guess is [MAY](knowing.md#may) on the claim. The motive says why the view is held, not how sure you are.
 
 ### Factivity (`if` vs `because`)
 <a id="factivity"></a>

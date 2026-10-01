@@ -475,7 +475,9 @@ function structureVisitor(tables: ClassifyTables): Visitor {
           return;
         case "np":
           enforceBars(node.coord, tables);
-          enforceLeadingFence(node.coord.parts as { items: unknown[]; join?: LexWord }[], (part) => part.items.length === 0);
+          if (!rankedUniversalFence(node.coord)) {
+            enforceLeadingFence(node.coord.parts as { items: unknown[]; join?: LexWord }[], (part) => part.items.length === 0);
+          }
           return;
         case "g":
         case "vp":
@@ -590,6 +592,19 @@ function enforceIslandEdges(units: Unit[]): void {
     if (isOpenHost(units[i - 1]) && isBPhrase(inner[0])) throw new ConstructionError("islandSlotRole", "host ^ /b/");
     if (isOpenHost(inner.at(-1)) && isBPhrase(units[i + 1])) throw new ConstructionError("islandSlotRole", "host ^ /b/");
   });
+}
+
+/** `zuam gagadul thobam zel …`: a closed `ua` fence is the one item ranked against the bar after it (comparatives.md#stance-bars). */
+function rankedUniversalFence(coord: NpCoord): boolean {
+  const [fence, bar] = coord.parts;
+  return (
+    coord.parts.length === 2 &&
+    fence!.items.length === 0 &&
+    fence!.join?.family.kind === "joinMarker" &&
+    fence!.join.family.series === "ua" &&
+    bar!.items.length > 0 &&
+    bar!.items.every((item) => item.kind === "bar")
+  );
 }
 
 function enforceLeadingFence<T extends { join?: LexWord }>(parts: T[], isEmpty: (part: T) => boolean): void {
