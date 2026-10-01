@@ -106,6 +106,10 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 - **One slot.** PLAN's hosted `/b/` also holds a later offset (`thamam bral`). A plan with both an owner and a date keeps the person there and puts the date on a time pole (`huwem bral`), which the pole-offset rule already licenses for a plan clause. Rejected: a holder seam (`thamamalahen`: the seam means access to someone's view and hands them the whole clause), a person + time join in the slot (two kinds in one slot), and a second hosted slot (new machinery for a case the pole covers).
 - **DECISION + `/b/` stays apart from REQUIRE + `/b/`.** `thehum balahen` is Alahen's choice about how things go, with no demand on the subject; `thumem balahen` puts a demand on the subject. Each happens without the other (a coach picks a lineup; someone relays an order they did not decide).
 
+## Stand-in dependents
+
+- **A dependent runs to the end of the written sentence.** Clause joins after a forward stand-in (`darl`, `dorl`, `derl`, `durl`, `barl`, a verbal stand-in) stay inside the dependent, so `dorl P xol Q` is *whether P or Q* ([dependents](../grammar/dependents.md#stand-in)). Rejected: the join closing everything before it, main clause included, which left *whether P or Q* with different subjects no route but asking the question and pointing back with `dorth`. A clause joined to the main sentence starts its own sentence with the join, the existing rule for a group on the right.
+
 ## Vocatives and interjections
 
 - The ending decides the `/y/` job: **-n** calls someone (a name, or a kind used as a title: `yagavon`); **-l** / **-m** are interjections in their ordinary lexical sense (`yezul`, `yezum`). **-r** resumes either, read through its antecedent. There is no *named formula* interjection on **-n**.

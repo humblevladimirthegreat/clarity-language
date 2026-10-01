@@ -189,6 +189,20 @@ describe("parse — stand-in dependents", () => {
     assert.throws(() => parseText("zewedul vuvudel humum burl zahadal vuvudel."));
   });
 
+  it("keeps clause joins after a stand-in inside its dependent", () => {
+    const clause = parseText("zazawan vubugam dorl zalahen vowogal xol zahaben varahal.").utterances[0]!.bodies[0]!.clause;
+    assert.equal(clause.units.some((unit) => unit.kind === "clauseCoord"), false);
+    const dep = clause.dependent;
+    assert.equal(dep?.orodo.raw, "dorl");
+    const coord = dep?.clause.units[0];
+    assert.ok(coord && coord.kind === "clauseCoord");
+    assert.equal(coord.coord.links.length, 1);
+    assert.equal(coord.coord.links[0]!.join.raw, "xol");
+    const nested = parseText("zazawan vezehel thevem barl zalahen vowogal thevem barl zahaben vezebal xal zazawan varahal.").utterances[0]!.bodies[0]!.clause;
+    const inner = nested.dependent?.clause.units[0];
+    assert.ok(inner && inner.kind === "clauseCoord");
+  });
+
   it("parses barl after a channel's offset as its grounds, not a recipient", () => {
     const clause = parseText("zoyel galagal thobal bral barl zalahen vedabal.").utterances[0]!.bodies[0]!.clause;
     const host = clause.units.find((unit) => unit.kind === "h");

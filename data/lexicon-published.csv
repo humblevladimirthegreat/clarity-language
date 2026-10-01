@@ -340,7 +340,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🐙,octopus,ageda,reach,octopus reaches in every direction,,stretch; extension
 🐚,shell,eheho,,,,
 🪸,coral,ogohe,,,,
-🪼,jellyfish,eheve,flow,jellyfish drifts with the current; flow is mid motion of water,,current; stream; period
+🪼,jellyfish,eheve,flow,jellyfish drifts with the current; flow is mid motion of water,m.v:drift,current; stream; period
 🦀,crab,aguga,friction,feeling crabby today; friction is small grievances rubbing,,
 🦞,lobster,alabe,luxury,lobster dinner is luxury,,
 🦐,shrimp,ehebo,insignificance,shrimp is small fry,,
@@ -518,7 +518,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🗾,country,agu,scope,a map of one country; scope is the area the picture includes,,national; region; nation; extent; regional; zone; territory; area
 🧭,compass,ame,direction,a compass points the way; direction is where you're headed,,direct; guide
 ⛰️,mountain,amada,challenge,mountains are hard to climb; a challenge is hard to face,,pile; heap
-🛘,landslide,alaze,breakdown,landslide is sudden collapse; breakdown is the unobservable failure of a system,,crash; collapse; crack
+🛘,landslide,alaze,breakdown,landslide is sudden collapse; breakdown is the unobservable failure of a system,,crash; collapse; crack; outage
 🌋,volcano,avoge,eruption,a volcano bursts outward; eruption is bursting emotion,,burst
 🏕️,camp,agabo,,,,
 🏖️,beach,abeha,weekend,beach marks the off-work stretch; weekend is the leisure days,,coast; shore; holiday
@@ -663,7 +663,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🎟️,admission-tickets,adegu,admission,ticket grants entry inside; admission is being let in,,entry
 🎫,ticket,edega,,,,
 🎖️,honor,aneha,prestige,a medal is worn for all to admire,,famous
-🏆,trophy,odove,score,trophy marks the final tally; score is the counted result,,grade; prize; champion; beat
+🏆,trophy,odove,score,trophy marks the final tally; score is the counted result,,grade; prize; champion; beat; rating
 🏅,medal,ameda,achievement,medal marks accomplished feat; achievement is reaching a goal,,success; achieve; successful; award; fulfill; accomplish
 🥇,gold,ogoda,first,gold medal marks top place; first is leading all others,,primary; priority; prime
 🥈,silver,ezeve,runner-up,silver medal marks runner-up; second is next after first,,

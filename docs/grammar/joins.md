@@ -252,7 +252,7 @@ A clause is long, so a join that waits until the end would leave you holding two
 >
 > "Azawan walks, or Alahen runs, or Ahaben sleeps: exactly one of the three."
 
-Repeat the same join word and the list stays flat. Switch to a **different** join word and everything before it closes as one group: `A xol B xal C` is *(A or B) and C* ([clause forms](join-across-roles.md#vp-clause-forms)). The set joins **a** / **o** / **u** do not care about order, so you can put the group you want first. For a group on the right, end the sentence and start the next one with the join: the join then takes the **whole** next sentence.
+Repeat the same join word and the list stays flat. Switch to a **different** join word and everything before it closes as one group: `A xol B xal C` is *(A or B) and C* ([clause forms](join-across-roles.md#vp-clause-forms)). The set joins **a** / **o** / **u** do not care about order, so you can put the group you want first. For a group on the right, end the sentence and start the next one with the join: the join then takes the **whole** next sentence. After a stand-in such as **`dorl`** or **`barl`**, every clause joined in the same sentence belongs to the dependent ([stand-ins](dependents.md#stand-in)), so a clause for the main sentence also starts a new sentence.
 
 > `zazawan vowogal. xan zalahen varahal xol zahaben vezebal.`
 >

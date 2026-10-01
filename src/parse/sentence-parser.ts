@@ -51,6 +51,7 @@ import type {
   NpCoord,
   NpItem,
   NpPackage,
+  OdoDependent,
   ParseResult,
   PunctKind,
   SpanUnit,
@@ -1514,10 +1515,25 @@ function buildClauseItem(cst: CstNode): Clause {
   return { ...rest, units: [standIn, ...rest.units] };
 }
 
-function buildClause(cst: CstNode): Clause {
-  const items = childNodes(cst, "clauseItem").map(buildClauseItem);
-  const joins = childTokens(cst, "midJoin").map(lexWordFromToken);
+/** The innermost forward dependent a clause opens: its stand-in's sentence, or that sentence's own. */
+function innermostDependent(clause: Clause | undefined): OdoDependent | undefined {
+  let dep = clause?.dependent;
+  while (dep?.clause.dependent) dep = dep.clause.dependent;
+  return dep;
+}
+
+/**
+ * Join clause items. The sentence after a forward stand-in runs to the end of the written sentence,
+ * so clause joins after it stay inside that dependent (dependents.md#dependent-clauses).
+ */
+function joinClauseItems(items: (Clause | undefined)[], joins: LexWord[]): Clause {
   if (joins.length === 0) return items[0]!;
+  const at = items.findIndex((item, i) => i < joins.length && innermostDependent(item));
+  if (at >= 0) {
+    const dep = innermostDependent(items[at])!;
+    dep.clause = joinClauseItems([dep.clause, ...items.slice(at + 1)], joins.slice(at));
+    return joinClauseItems(items.slice(0, at + 1), joins.slice(0, at));
+  }
   return {
     units: [
       {
@@ -1526,6 +1542,12 @@ function buildClause(cst: CstNode): Clause {
       },
     ],
   };
+}
+
+function buildClause(cst: CstNode): Clause {
+  const items = childNodes(cst, "clauseItem").map(buildClauseItem);
+  const joins = childTokens(cst, "midJoin").map(lexWordFromToken);
+  return joinClauseItems(items, joins);
 }
 
 function impliedForceFromPolars(polars: LexWord[]): ImpliedForce | undefined {

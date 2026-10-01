@@ -443,6 +443,16 @@ English *unless* is *if … not*: keep the *if* pole **`thoyem`** and type `/b/`
 >
 > "Azawan walks unless Alahen sleeps."
 
+The sentence after a stand-in runs to the end of the written sentence, so a [clause join](joins.md#clause-joins) inside it stays in the dependent. *Whether Alahen walks or Ahaben runs* is **`dorl`**, then both clauses with **`xol`** between them.
+
+> `zazawan vahahal dorl zalahen vowogal xol zahaben varahal.`
+>
+> z-Azawan | v-see | d-whether-clause | [z-Alahen | v-walk | x-or-exactly-one | z-Ahaben | v-run]
+>
+> "Azawan sees whether Alahen walks or Ahaben runs."
+
+To join another clause to the main sentence instead, end the sentence and start the next one with the join.
+
 **Compare with:** *tells that Alahen sits* is **`darl`**. *Tells Alahen to sit* is **`derl`**. *Walks so that Azawan sits* is **`hogom barl`**.
 
 ### Pointing back (`-rth`) {#stand-in-back}

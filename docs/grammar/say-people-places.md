@@ -202,6 +202,7 @@ English names a person by what they do (*a singer*, *a manager*). Agazan builds 
 | `zaxahahul` | *critic* | `ahahul` *judge* |
 | `zaxameval` | *maker* / *producer* / *manufacturer* | `ameval` *manufacture* |
 | `zaxunuzel` | *reporter* / *journalist* | `unuzel` *newspaper* |
+| `zaxodol` | *witness* / *reference* (one who vouches) | `odol` *attest* |
 | `zaxaradal` | *writer* | `aradal` *write* |
 | `zaxabohal` | *analyst* | `abohal` *bar-chart* |
 | `zaxageval` | *designer* | `ageval` *craft* |
