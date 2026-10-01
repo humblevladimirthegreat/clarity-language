@@ -129,6 +129,41 @@ Translated with the house cast for the two friends' *I* / *you* as the speaker a
 | 1.14a | Stop it. | `yel vazadal.` | y-command \| v-stop | covered |
 | 1.14b | You're making me blush. | `zamegun thodum vabohel thegem bezehodon.` | z-speaker \| th-LIVE \| v-blush \| [th-CAUSE \| b-listener] | covered |
 
+#### RS-2 — Text message thread {#rs-2}
+
+Translated with the house cast for the third parties (Priya is `zahaben`). *I* / *you* / *we* are the speaker, listener and interlocutor pronouns, because the turn's role is the point. Emoji and *lol* / *haha* are written as tone marks or interjections, and message-level sign-offs as the speaker's own name ([greetings](../grammar/word-endings.md#greeting)). Every line was checked with `node scripts/parse.mjs`. Gaps are in [register-results](../meta/register-results.md); *awkward* and *stand-in* rows cite the `G-nn` or `L-nn` there.
+
+| RS-2 | English | Agazan | Morph gloss | Verdict |
+|------|---------|--------|-------------|---------|
+| 2.1a | morning! | `yedebem.` | y-dawn | covered |
+| 2.1b | are we still on for saturday? | `yol zohan thumam hagem vagudel hehum belagam gregul.` | y-question \| z-interlocutors \| th-plan-itinerary \| h-still \| v-eat \| [h-while \| [b-weekday \| g-6th]] | covered |
+| 2.2a | yes!! | `!!yael.` | !!y-yes | covered |
+| 2.2b | 7:30 at the place on Pine St, right? | `zohan thumam vagudel h_19,30 om bagudelahazal. zagudelahazal om b<pine st>. yol yael.` | z-interlocutors \| th-plan-itinerary \| v-eat \| h-_19,30 \| [near \| b-restaurant] . z-restaurant \| [near \| b-opaque] . y-question \| y-yes | covered |
+| 2.3a | that's the one | `yael.` | y-yes | covered |
+| 2.3b | i booked a table for four | `zamegun thunom vababul debezarx gramol.` | z-speaker \| th-WITNESSED \| v-reserve \| d-person-x \| g-four | stand-in (L-05) |
+| 2.4a | four? | `?! debezarx gramol.` | ?! \| d-person-x \| g-four | covered |
+| 2.4b | who else is coming | `yol zur vuvudel.` | y-question \| z-who-else \| v-go | covered |
+| 2.5a | Priya said she might bring her brother | `zahaben themam thovom valagal dezebal gemehel grebazol bahaben.` | z-Ahaben \| th-HEARSAY \| th-MAY \| v-bring \| [d-person \| g-brother-of-ranked \| [b-Ahaben]] | covered |
+| 2.5b | not sure yet | `zamegun thodum hagem vevegam.` | z-speaker \| th-LIVE \| h-still \| v-doubt | covered |
+| 2.6a | cool cool | `yaol. yaol.` | y-sure . y-sure | covered |
+| 2.6b | can you ask her to confirm by thursday? | `yem zehodon vezebel oel bahaben. yem zahaben vaen hodal belagam gremol.` | y-request \| z-listener \| v-tell \| [toward \| b-Ahaben] . y-request \| z-Ahaben \| v-confirm \| [h-by \| [b-weekday \| g-4th]] | awkward (G-07) |
+| 2.6c | they'll want a final number | `yem zahaben vaen hodal belagam gremol theram barl zagudelahazal thabem bral vuhum danabel gogovel.` | (as 2.6b) \| [th-because \| b-that-clause] \| z-restaurant \| [th-PATTERN \| b-later] \| v-wish \| d-numbers \| g-final | covered |
+| 2.7 | will do | `zamegun thumam vezebel oel bahaben.` | z-speaker \| th-plan-itinerary \| v-tell \| [toward \| b-Ahaben] | covered |
+| 2.8a | sorry just seeing this | `yabayen. zamegun thunom brubul vahahal dezebem.` | y-Abayen . z-speaker \| th-WITNESSED \| h-just-before-now \| v-see \| d-discourse | covered |
+| 2.8b | i can come but i'll be 15 min late, work thing | `zamegun vuvudexal. xagozal zamegun thumam vevahal h_19,45 theram bebevel.` | z-speaker \| v-go-able . x-but \| z-speaker \| th-plan-itinerary \| v-arrival \| h-_19,45 \| [th-because \| b-job] | covered (G-01) |
+| 2.9a | no worries | `; yaol.` | ; \| y-sure | covered |
+| 2.9b | we'll order drinks and wait 🙂 | `; zohan thumam vebedol dozodel. zohan thumam vabazel.` | ; \| z-interlocutors \| th-plan-itinerary \| v-order \| d-drink . z-interlocutors \| th-plan-itinerary \| v-wait | covered |
+| 2.10a | you're the best | `; zehodon zel gazahal.` | ; \| z-listener \| rank/more \| g-good | covered |
+| 2.10b | should i bring anything? | `yol zamegun thugethem valagal dor.` | y-question \| z-speaker \| th-sake-ought-offered \| v-bring \| d-anything | covered |
+| 2.11a | just yourself | `zehodon zal.` | z-listener \| z-only | covered |
+| 2.11b | and maybe an appetite lol | `% al zehodon thovom vuhum dagudel.` | % \| also \| z-listener \| th-MAY \| v-wish \| d-food | covered |
+| 2.12a | haha | `yalavom.` | y-laugh | covered |
+| 2.12b | always | `zamegun hual vuhum dagudel.` | z-speaker \| h-always \| v-wish \| d-food | covered |
+| 2.13a | ok gotta run, meeting starting | `yaol. ameguxen. zagadelohal thodum vebegel.` | y-sure . speaker-x-leaving-soon . z-appointment \| th-LIVE \| v-begin | covered |
+| 2.13b | talk later! | `! zohan thabem bral vezebel.` | ! \| z-interlocutors \| [th-PATTERN \| b-later] \| v-talk | covered |
+| 2.14a | bye!! | `!! amegun.` | !! \| greeting | covered |
+| 2.14b | see you both saturday ❤️ | `; zamegun thabem bral dehodonx vahahal hehum belagam gregul.` | ; \| z-speaker \| [th-PATTERN \| b-later] \| v-see \| d-listener-x \| [h-while \| [b-weekday \| g-6th]] | covered |
+
 **Exit:** corpus and samples translated; every stopping point ruled and applied or recorded as by design.
 
 ## Phase 3 — Extension sweep (existing grammar, new readings)

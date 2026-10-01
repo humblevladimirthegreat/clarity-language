@@ -1,0 +1,13 @@
+emoji,root,field,current,proposed,confidence_reason,notes
+🤔,evega,mnemonic,think shows doubt,,borderline: 'think shows doubt' is thin; thinking implies doubt only loosely,maybe 'a furrowed think-face wonders if it is true'
+🤬,egeze,mnemonic,cursing shows profanity,cursing spews foul words,gold-borderline: 'cursing shows profanity' is near-circular,single best fix unclear; current wording is arguably acceptable
+👅,adava,mnemonic,tongue wields eloquence,the tongue shapes fluent speech,gold-borderline: 'tongue wields eloquence' is vague,several equally good fixes
+🦹,uzege,mnemonic,scheming embodies villainy,a schemer plots harm in secret,gold-borderline: 'scheming embodies villainy' is thin,held to low confidence
+🧙,agehe,mnemonic,conjuring wields magic,a conjurer calls up wonders by spell,gold-borderline: 'conjuring wields magic',held to low confidence
+🧛,avabo,mnemonic,vampire practices parasitism,a vampire survives by feeding on others,gold-borderline: 'vampire practices parasitism',held to low confidence
+👥,ezo,mnemonic,busts form community,a row of silhouettes is a neighborhood of people,gold-borderline: 'busts form community' is vague,several equally good fixes
+🦛,ehoba,mnemonic,hippo is sheer bulk,a hippo's body is a huge heavy mass,'hippo is sheer bulk' restates the pair; fix is marginal,held to low confidence
+🐋,ewehe,mnemonic,whale-sized magnitude,a whale is the largest animal,gold-borderline: 'whale-sized magnitude' is circular,held to low confidence
+🧁,agube,mnemonic,cupcake is a sweet course; coda is the unobservable closing role,a cupcake is the sweet last bite that ends a meal,gold-borderline: mnemonic explains abstract but the cupcake→coda leap is weak,may be a leap problem; fix changes meaning slightly
+🍴,agude,mnemonic,cutlery enables provision,cutlery lets food be served to others,gold-borderline: 'cutlery enables provision' is vague,several equally good fixes
+🛫,adeba,mnemonic,plane lifting off leaves the ground; departure is setting out,a departing plane leaves those on the ground behind,mnemonic explains 'departure' but not 'abandonment'; link to the abstract is missing,may be a leap problem (departure vs abandonment); fix leans on meaning
