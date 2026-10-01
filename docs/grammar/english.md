@@ -105,7 +105,7 @@ One English word, one row: the form that says it and the section that teaches it
 | *abroad* (*in another country*) | **`ol bagul bur`** (the kind *country*, then *some other one*) | [Somewhere, nowhere, everywhere](hooks.md#place-indefinites) |
 | *overseas* (*across the water*) | **`ebevum`** *across* + the water: `hebevum bohahal` | [Locative relations](relations.md#locative-relations) |
 | *bottom* (the low part of a thing) | `zadahel gabom bahazal` (a down part of the house) | [Of relations](relations.md#of-relations) |
-| *parallel* (*parallel to Alahen*) | the direction, then *like*: `gagam gomem balahen` | [Simile](relations.md#similative) |
+| *parallel* (*parallel to Alahen*) | the direction, then *like*: `gamum gomem balahen` | [Simile](relations.md#similative) |
 | *lean* / *tilt* | `vadahel hrubul` (*almost falls*) | [Already, still, not yet](knowing.md#phasal) |
 | *corner* / *around the corner* | `zadodal` (the corner); `ol badodal` *at the corner*; `hegozem badodal` *around the corner* | [Locative relations](relations.md#locative-relations) |
 | *beyond* / *farther than* | rank on distance: `zahazal zel gazedom` (farther than the house) | [Bar words](say-amounts.md#bar-words) |

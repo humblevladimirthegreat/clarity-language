@@ -579,13 +579,13 @@ English *enough* and *too* compare against **what a sake requires**. Agazan name
 | Agazan | Use | English | Same root as |
 |---------|-----|---------|----------------|
 | **`zugen`** | sake bar, sake not named | *Some-sake* (what a sake requires) | `ugel` *egg* |
-| **`zoban`** | health sake bar | *what staying well needs* | `obal` *broccoli* |
+| **`zelan`** | health sake bar | *what staying well needs* | `elal` *broccoli* |
 | **`zonan`** | relatedness sake bar | *what connection needs* | `onal` *knot* |
 | **`zudun`** | competence sake bar | *what getting it done needs* | `udul` *toolbox* |
 | **`zaban`** | autonomy sake bar | *what choice needs* | `abal` *ballot* |
 | **`zozun`** | pleasure sake bar | *what enjoyment needs* | `ozul` *strawberry* |
-| **`zagan`** | purpose sake bar | *what mattering needs* | `agal` *compass* |
-| **`zuren`** | beneficence sake bar | *what helping needs* | `urel` *present* |
+| **`zamun`** | purpose sake bar | *what mattering needs* | `amul` *compass* |
+| **`zuron`** | beneficence sake bar | *what helping needs* | `urol` *present* |
 
 Tie **`ae`** against a sake bar is *enough*. Rank **`e`** is *too much*, and **`ue`** is *not enough*.
 
@@ -609,7 +609,7 @@ Tie **`ae`** against a sake bar is *enough*. Rank **`e`** is *too much*, and **`
 
 With a quality as the scale, the same pattern gives *too ADJ* and *ADJ enough*. A specific sake bar says which sake sets the limit.
 
-> `zedehel zoban zel gahadol.`
+> `zedehel zelan zel gahadol.`
 >
 > [z-tea | z-Health-sake | z-rank/more | g-hot]
 >
@@ -706,7 +706,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *my standard* | `omen` | `omel` *mirror* |
 | *speaker* | `amegun` | |
 | *Some-sake* | `ugen` | `ugel` *egg* |
-| *Health-sake* | `oban` | `obal` *broccoli* |
+| *Health-sake* | `elan` | `elal` *broccoli* |
 | *Relatedness-sake* | `onan` | `onal` *knot* |
 | *Competence-sake* | `udun` | `udul` *toolbox* |
 | *Autonomy-sake* | `aban` | `abal` *ballot* |
@@ -766,7 +766,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 **7.** *Ahaben is too showy to be safe.*
 
 ::: details Show answer
-`zahaben zoban zel gahudom.`
+`zahaben zelan zel gahudom.`
 
 [z-Ahaben | z-Health-sake | z-rank/more | g-showmanship]
 :::

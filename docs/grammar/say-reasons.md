@@ -366,16 +366,16 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 | English | Agazan | Reading |
 |---------|--------|---------|
 | *useful* / *helpful* / *practical* / *relevant* (for getting things done) | `gudutham` | competence, met |
-| *important* / *critical* / *crucial* (it matters for the long run) | `wagathal gobom` | purpose, met, lasting |
-| *meaningful* / *worthwhile* | `wagatham gobom` | purpose, met |
-| *pointless* / *futile* | `wagathum gobom` | purpose, unmet |
-| *glad to help* / *rewarding to give* | `thuretham.` | the act met your beneficence |
+| *important* / *critical* / *crucial* (it matters for the long run) | `wamuthal gobom` | purpose, met, lasting |
+| *meaningful* / *worthwhile* | `wamutham gobom` | purpose, met |
+| *pointless* / *futile* | `wamuthum gobom` | purpose, unmet |
+| *glad to help* / *rewarding to give* | `thurotham.` | the act met your beneficence |
 | *benefit* / *benefits Alahen* | `thonatham balahen` | the act met Alahen's sake |
 | *advantage* (a lead over someone) | `zel` with the scale | rank against the other |
 | *satisfy* (you) | `thonatham behodon` | the act met your sake |
 | *satisfy* (a requirement) | `zugen zael` + scale | tie against the sake bar: *enough* |
 | *suitable* / *appropriate* (for a need) | `gudutham` or `zugen zael` | met, or enough for the need |
-| *more important than* | `zel` between the nouns, then `gagathal` | rank on the lasting met sake |
+| *more important than* | `zel` between the nouns, then `gamuthal` | rank on the lasting met sake |
 | *upset* | `wonathumar gobom` | relatedness, unmet, held inside, surging |
 | *upset for someone* | `wonathumem gobom` + `/b/` | unmet relatedness on their behalf |
 
@@ -385,7 +385,7 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 >
 > "My book is useful." — it helps me get things done
 
-> `zemehol wagathal gobom.`
+> `zemehol wamuthal gobom.`
 >
 > z-memo | [w-purpose-met-lasting | g-stimulus]
 >
@@ -397,7 +397,7 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 >
 > "Azawan's walking benefits Alahen."
 
-> `zemehol zezebel zel gagathal.`
+> `zemehol zezebel zel gamuthal.`
 >
 > [z-memo | z-speech | z-rank/more | g-purpose-met-lasting]
 >

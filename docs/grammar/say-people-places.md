@@ -187,7 +187,7 @@ English names a person by what they do (*a singer*, *a manager*). Agazan builds 
 | `zuexamolameval` | *employer* (the one who bears the cost) | `amolameval` *employment* |
 | `zaxohal` | *participant* | `ohal` *handshake* |
 | `zaxagawul` | *leader* / *chairman* / *president* | `agawul` *crown* |
-| `zaxagal` | *director* | `agal` *compass* |
+| `zaxamul` | *director* | `amul` *compass* |
 | `zaxadedel` | *manager* / *executive* / *operator* | `adedel` *administrate* |
 | `zaxalodel` | *adviser* / *consultant* | `alodel` *lantern* |
 | `zaxabal` | *voter* | `abal` *ballot* |
@@ -281,24 +281,24 @@ English *buy* and *sell* are two views of one swap. Agazan has one trading verb,
 
 **Needs:** [The extra `/b/` party (`o`)](roles.md#role-compounds) · [Extra noun (`el`, `em`)](hooks.md#extra-noun) · [Exchange](relations.md#exchange) · [Coordinated lists](joins.md#respectively) · [Fault](causation.md#fault)
 
-English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several views of one handing-over. Agazan keeps the giving verb `vurel` (*present*) and moves the view by where you put people. The thing sits in `/d/`, and the one who gets it sits in unhosted `/b/` after the verb ([recipient](clause.md#extra-nouns)). To name the parties from the verb itself, use the [role compounds](roles.md#role-compounds): **`zaxurel`** is the giver (*supplier*, *provider*) and **`zoxurel`** is the recipient (*receiver*). **-r** (`zoxurer`) is *this* recipient of the latest giving. *Lend* and *borrow* work the same way on `vagavol` (*credit*, with the *lend* sense): the borrower is the recipient.
+English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several views of one handing-over. Agazan keeps the giving verb `vurol` (*present*) and moves the view by where you put people. The thing sits in `/d/`, and the one who gets it sits in unhosted `/b/` after the verb ([recipient](clause.md#extra-nouns)). To name the parties from the verb itself, use the [role compounds](roles.md#role-compounds): **`zaxurol`** is the giver (*supplier*, *provider*) and **`zoxurol`** is the recipient (*receiver*). **-r** (`zoxuror`) is *this* recipient of the latest giving. *Lend* and *borrow* work the same way on `vagavol` (*credit*, with the *lend* sense): the borrower is the recipient.
 
 | English | Agazan | Reading |
 |---------|--------|---------|
-| *give* / *provide* / *contribute* | `zazawan dubugal vurel balahen.` | the book goes to Alahen |
+| *give* / *provide* / *contribute* | `zazawan dubugal vurol balahen.` | the book goes to Alahen |
 | *get* / *receive* / *acquire* (a thing handed over) | the same sentence | the receiver is the `/b/` |
-| *giver* / *supplier* / *provider* | `zaxurel` | doer of the giving |
-| *receiver* | `zoxurel` | the one given to |
+| *giver* / *supplier* / *provider* | `zaxurol` | doer of the giving |
+| *receiver* | `zoxurol` | the one given to |
 | *lend* / *borrow* | `zazawan dubugal vagavol balahen.` | the book is lent to Alahen |
 | *borrower* | `zoxagavol` | the one lent to |
-| *distribute* | `zazawan dubugal vurel balahen bahaben bal.` | the book goes to each of them |
+| *distribute* | `zazawan dubugal vurol balahen bahaben bal.` | the book goes to each of them |
 | *earn* | `zazawan varadal hogem bamol.` | write in exchange for money |
 | *owe* | `zazawan gamom balahen.` | in debt to Alahen |
 | *get* (go after something) | `zazawan vowogal el bubugal.` | walk for the book |
-| *contribute money* | `zazawan damol vurel el bavahal.` | give money for a family's sake |
+| *contribute money* | `zazawan damol vurol el bavahal.` | give money for a family's sake |
 | *contribute to* (be part of the cause) | `…therar barl …` | one share among several causes |
 
-> `zazawan dubugal vurel balahen.`
+> `zazawan dubugal vurol balahen.`
 >
 > z-Azawan | d-book | v-present | b-Alahen
 >
@@ -316,7 +316,7 @@ English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several vie
 >
 > "Azawan owes Alahen."
 
-> `zazawan dubugal vurel balahen bahaben bal.`
+> `zazawan dubugal vurol balahen bahaben bal.`
 >
 > z-Azawan | d-book | v-present | [b-Alahen | b-Ahaben | b-and]
 >
@@ -422,7 +422,7 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *case* (container) | `zabegol` | a package |
 | *deal* / *bargain* (a swap) | `zazawan dubugal hogem bamol vogem.` | trades a book for money |
 | *deal* (*a great deal*) | `zahen zel gral` | more than the usual amount |
-| *bid* / *offer* (a price) | `zazawan damol vurel hogem bubugal.` | offers money in exchange for the book |
+| *bid* / *offer* (a price) | `zazawan damol vurol hogem bubugal.` | offers money in exchange for the book |
 | *contract* (agreement) | `thuxegal` on the clause | CONSENT, binding |
 | *figure out* / *find out* | `zazawan dubugal vamegal.` | finds the object |
 | *figure* (shape) | `zevevol` | a frame |
@@ -451,9 +451,9 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *popular* | `galavalehobal` | loved by the many |
 | *user* | `zaxahadal` | doer with the hand |
 | *abortion* | `zebegologovel` | a pregnancy ended |
-| *available* | `goxurexal` | can be the recipient of a gift |
+| *available* | `goxuroxal` | can be the recipient of a gift |
 | *independent* | `gebom geram balahen gul` | does not depend on Alahen |
-| *straight* (direct) | `gagam` | direction |
+| *straight* (direct) | `gamum` | direction |
 | *hang* | `zazawan dalahen vageladahel.` | holds Alahen from above |
 | *editor* | `zaxebeyulerabel` | doer of the editing |
 | *closely* | `zazawan vahahal hazedom hul.` | looks, not at a distance |
@@ -492,7 +492,7 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *rough* (approximate) | `gram` | about five |
 | *rough* (texture) | `gabogol gul` | not smooth |
 
-> `zazawan damol vurel hogem bubugal.`
+> `zazawan damol vurol hogem bubugal.`
 >
 > z-Azawan | d-money | v-present | [h-in-exchange-for | b-book]
 >
@@ -512,9 +512,9 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 
 | English | Agazan | Reading |
 |---------|--------|---------|
-| *contribution* / *acquisition* (the act) | `zurel` | a giving, seen as a whole |
-| *contribution* (what is given) / *acquisition* (what is got) | `zuxurel` | the thing the giving happens to |
-| *that contribution* / *that acquisition* | `durer` / `duxurer` | the latest giving, or what it passed on |
+| *contribution* / *acquisition* (the act) | `zurol` | a giving, seen as a whole |
+| *contribution* (what is given) / *acquisition* (what is got) | `zuxurol` | the thing the giving happens to |
+| *that contribution* / *that acquisition* | `duror` / `duxuror` | the latest giving, or what it passed on |
 | *contribution* (a share in a cause) | `therar barl` | one share among several causes |
 | *representation* (acting for someone) | `zazawan gadem balahen` | Azawan, on behalf of Alahen |
 | *reaction* / *response* | `zegehum` | the answer to what unlocked it |
@@ -529,7 +529,7 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 | *introduction* (opening of a text) | `zogodal gabom bubugal` | the first part of a book |
 | *unemployment* | `zazawan zamolameval gul.` | not in paid production |
 
-> `zalahen dubugal vurel bazawan. zazawan durer vahahal.`
+> `zalahen dubugal vurol bazawan. zazawan duror vahahal.`
 >
 > z-Alahen | d-book | v-present | b-Azawan . z-Azawan | d-←present | v-see
 >
@@ -573,12 +573,12 @@ Some English words have a second or third sense that a published root already ca
 | *public* (open to everyone) | `zahazal gaon bual.` | a house open to all |
 | *character* (a trait) | `zevebem` | identity, personality |
 | *special* (dear to one person) | `zazawan galavam.` | cherished |
-| *fit* (healthy) | `zazawan gobam.` | in health |
+| *fit* (healthy) | `zazawan gelam.` | in health |
 | *fit* (suits) | `gudutham` | a met need ([sake words](say-reasons.md#sake-words)) |
 | *match* (a contest) | `zazedem` | a contest |
 | *ride* (a horse, a bike) | `zazawan vehebam ael bohozal.` | travels using the horse |
 | *admit* (acknowledge a fault) | `zazawan dahabal vewevam.` | acknowledges the harm |
-| *directly* (without a go-between) | `gagam` | straight |
+| *directly* (without a go-between) | `gamum` | straight |
 | *set off* / *start* | `vebeham` | [starts](say-reasons.md#phase-verbs) |
 | *turn off* / *stop* | `vazadal` | [stops](say-reasons.md#phase-verbs) |
 
@@ -965,7 +965,7 @@ Examples:
 
 **Needs:** [Arrow rose](roles.md#arrow-rose) · [Sentence linkers](dependents.md#sentence-linkers)
 
-When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root **bare** (no **`th`** + facing person). Generic heading is **`aga`** (*direction*). Facing-relative ahead / back still uses **`DIR th ANCHOR`**.
+When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root **bare** (no **`th`** + facing person). Generic heading is **`amu`** (*direction*). Facing-relative ahead / back still uses **`DIR th ANCHOR`**.
 
 > `zazawan vowogal. xezadam zalahen varahal.`
 >
@@ -978,7 +978,7 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 | **`ezadam`** (bare) | talk moves on | *progress*; discourse **`xezadam`** *therefore* |
 | **`ewezam`** (bare) | talk comes back | *return* |
 | **`azawem`** (bare) | talk pulls back | *retreat* |
-| **`agal`** | heading in general | *compass* / *direction* |
+| **`amul`** | heading in general | *compass* / *direction* |
 
 **For *therefore*, use:** the [linker](dependents.md#sentence-linkers) **`xezadam`**. Body *left* / *right* still needs **`DIR th ANCHOR`**.
 

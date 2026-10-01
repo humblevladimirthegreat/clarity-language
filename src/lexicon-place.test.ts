@@ -54,6 +54,18 @@ describe("placement", () => {
     assert.equal(grin.root.length, 5);
     assert.notEqual(ballot.root, grin.root);
   });
+
+  it("keeps a new root two letters and a consonant away from a kept root in the same overlay group", async () => {
+    const compass: OverlayRow = { ...overlay, senseForm: "alodam", emoji: "🧭", gloss: "purpose" };
+    const placed = await placePublishedRoots(
+      [{ emoji: "🧭", concrete: "compass", abstract: "direction", englishByPos: "" }],
+      [overlay, compass],
+      { blocked: ["aba"], kept: [{ emoji: "🗳️", root: "aba" }], annealRestarts: 1, annealSteps: 20_000 },
+    );
+    const root = placed[0]!.root;
+    assert.ok([...root].filter((letter, i) => letter !== "aba"[i]).length >= 2, root);
+    assert.notEqual(root[1], "b", root);
+  });
 });
 
 describe("regret order", () => {

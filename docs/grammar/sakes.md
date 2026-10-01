@@ -16,11 +16,11 @@ Eight published roots are the sakes you can name, and no other root takes the sa
 |--------|-----|---------|--------------|-----|
 | **`aba`** | autonomy sake | *autonomy* (choice, agency, self-direction) | `abal` *ballot* | 🗳️: voting is choosing for yourself |
 | **`udu`** | competence sake | *competence* (efficacy, skill, getting things to work) | `udul` *toolbox* | 🧰: the kit that gets things working |
-| **`aga`** | purpose sake | *purpose* (meaning, direction, an aim that matters) | `agal` *compass* | 🧭: a heading worth following |
+| **`amu`** | purpose sake | *purpose* (meaning, direction, an aim that matters) | `amul` *compass* | 🧭: a heading worth following |
 | **`ona`** | relatedness sake | *relatedness* (connection, belonging, care) | `onal` *knot* | 🪢: ties people together |
-| **`ure`** | beneficence sake | *beneficence* (making someone better off) | `urel` *present* | 🎁: a gift leaves someone better off |
+| **`uro`** | beneficence sake | *beneficence* (making someone better off) | `urol` *present* | 🎁: a gift leaves someone better off |
 | **`ozu`** | pleasure sake | *pleasure* (enjoyment, comfort, aesthetic payoff) | `ozul` *strawberry* | 🍓: sweetness you enjoy |
-| **`oba`** | health sake | *health* (bodily wellbeing, safety, rest) | `obal` *broccoli* | 🥦: eat your greens to stay well |
+| **`ela`** | health sake | *health* (bodily wellbeing, safety, rest) | `elal` *broccoli* | 🥦: eat your greens to stay well |
 | **`uge`** | a sake without picking among the seven | *unspecified sake* | `ugel` *egg* | 🥚: not yet a specific kind |
 
 **Compare with:** `zabal` is a *ballot*. `gabal` is ballot-like. Under `/ɡ/` with **`tha`** / **`thu`**, **`aba`** is the *autonomy* sake.
@@ -66,7 +66,7 @@ On a *serves* word, **-l / -m / -r** say **when the payoff lands**: lasting, uns
 | `…tham` | serves the sake; time horizon unstated (soft default if unknown) | *serves* | **-m** ≈ open |
 | `…thar` | serves the sake right away | *immediate* | **-r** ≈ in the moment |
 
-> `zurel gonathal.`
+> `zurol gonathal.`
 >
 > z-present | g-relatedness-met-lasting
 >
@@ -175,10 +175,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *stimulus* | `gobom` | `obol` *emphasis* |
 | *autonomy* | `abal` | `abal` *ballot* |
 | *competence* | `udul` | `udul` *toolbox* |
-| *purpose* | `agal` | `agal` *compass* |
+| *purpose* | `amul` | `amul` *compass* |
 | *relatedness* | `onal` | `onal` *knot* |
-| *beneficence* | `urel` | `urel` *present* |
-| *health* | `obal` | `obal` *broccoli* |
+| *beneficence* | `urol` | `urol` *present* |
+| *health* | `elal` | `elal` *broccoli* |
 | *sake* | `ugel` | `ugel` *egg* |
 
 #### English → Agazan {#beginner-english-to-agazan}
@@ -186,7 +186,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *My tent serves health in the long term.*
 
 ::: details Show answer
-`zededul gobathal.`
+`zededul gelathal.`
 
 z-tent | g-health-met-lasting
 :::
@@ -210,7 +210,7 @@ z-wind | [w-relatedness-unmet-passing | g-stimulus]
 **4.** *The fire detracts from health (irreversible).*
 
 ::: details Show answer
-`zavahel wobathul gobom.`
+`zavahel welathul gobom.`
 
 z-fire | [w-health-unmet-irreversible | g-stimulus]
 :::
@@ -226,7 +226,7 @@ z-flashlight | g-sake-met-lasting
 **6.** *My tent serves beneficence in the long term.*
 
 ::: details Show answer
-`zededul gurethal.`
+`zededul gurothal.`
 
 z-tent | g-beneficence-met-lasting
 :::
@@ -260,7 +260,7 @@ z-rain | [w-autonomy-unmet-modifiable | g-stimulus]
 *The rain detracts from autonomy (modifiable).*
 :::
 
-**4.** `zededul gobathar.`
+**4.** `zededul gelathar.`
 
 ::: details Show answer
 
@@ -287,7 +287,7 @@ z-fire | [w-autonomy-unmet-irreversible | g-stimulus]
 *The fire detracts from autonomy (irreversible).*
 :::
 
-**7.** `zavehal gagathar.`
+**7.** `zavehal gamuthar.`
 
 ::: details Show answer
 
@@ -362,8 +362,8 @@ The tail goes on met **`tha`**, motive **`tho`**, and unmet **`thu`** words. Pre
 | `zezebel wonathumaem gobom balahen` | *placating Alahen about the dialogue* (unmet relatedness; appeasing Alahen; flowing) |
 | `zemehol wonathumoem gobom bazawan` | *upset about the memo and turning to Azawan for comfort* (unmet relatedness; seeking Azawan; flowing) |
 | `zemehol wonathumuer gobom` | *objecting to the memo* (unmet relatedness; pushing against the memo; surging) |
-| `zezebel wagathumal gobom` | *the dialogue feels pointless* (unmet purpose; held inside; still) |
-| `zebeyum gurethamam` | *glad my draft helped* (met beneficence; held inside; flowing) |
+| `zezebel wamuthumal gobom` | *the dialogue feels pointless* (unmet purpose; held inside; still) |
+| `zebeyum gurothamam` | *glad my draft helped* (met beneficence; held inside; flowing) |
 | `zezebel wuduthuruol gobom` | *uneasy about the dialogue, and I can't say why* (competence at stake, temporary; unplaced; still) |
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
@@ -397,7 +397,7 @@ That ending says why you think a move is welcome. Use **-l** when the person inv
 >
 > "Azawan ought to tell to serve relatedness (offered)."
 
-> `zahaben vezehel thobathel.`
+> `zahaben vezehel thelathel.`
 >
 > z-Ahaben | v-sing | th-health-ought-invited
 >
@@ -461,7 +461,7 @@ Beginner already attached `/ɡ/` after a noun and `/th/` on the clause for met a
 | `g…thu…` after a noun | criticism: **your** noun detracts from the sake | *my book (detracts from competence)* (`guduthu…`) |
 | `g…tho…` after a noun | **your** noun’s purpose is this sake | *my gift for relatedness* (`gonatho…`) |
 | `/w/` sake + `gobom` | the same stances on a noun that is **not** yours | *the gathering (detracts from autonomy)* (`wabathu… gobom`) |
-| `gl-` + sake word | the same adjective before the **belonging** | `glonathal zurel` |
+| `gl-` + sake word | the same adjective before the **belonging** | `glonathal zurol` |
 | `th…tha…` on the clause | the event serves the sake | *tells: competence is met* (`thudutha…`) |
 | `th…the…` on the clause | deontic prescription | *ought … for this sake* (`thonathe…`); ending = [invited / offered / trial](#sake-force) |
 | `th…tho…` on the clause | motive | *Azawan … (for relatedness)* (`thonatho…`) |
@@ -694,11 +694,11 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *sleep* | `vezebal` | `ezebal` *sleep* |
 | *autonomy* | `abal` | `abal` *ballot* |
 | *competence* | `udul` | `udul` *toolbox* |
-| *purpose* | `agal` | `agal` *compass* |
+| *purpose* | `amul` | `amul` *compass* |
 | *relatedness* | `onal` | `onal` *knot* |
-| *beneficence* | `urel` | `urel` *present* |
+| *beneficence* | `urol` | `urol` *present* |
 | *pleasure* | `ozul` | `ozul` *strawberry* |
-| *health* | `obal` | `obal` *broccoli* |
+| *health* | `elal` | `elal` *broccoli* |
 | *permission* | `egal` | `egal` *green* |
 | *forbidden* | `erel` | `erel` *no-entry* |
 | *always* | `hual` | |
@@ -724,7 +724,7 @@ z-Ahaben | v-sleep | th-pleasure-ought-offered
 **3.** *Alahen ought to scream to serve health (Alahen asked for a move).*
 
 ::: details Show answer
-`zalahen vezogel thobathel.`
+`zalahen vezogel thelathel.`
 
 z-Alahen | v-scream | th-health-ought-invited
 :::
@@ -796,7 +796,7 @@ z-Azawan | v-pray | th-competence-met-lasting | th-relatedness-motive-any-term
 **12.** *Alahen ought to scream to serve health (Alahen asked for a move); relatedness is the motive, over time.*
 
 ::: details Show answer
-`zalahen vezogel thobathel thonathol.`
+`zalahen vezogel thelathel thonathol.`
 
 z-Alahen | v-scream | th-health-ought-invited | th-relatedness-motive-lasting
 :::
@@ -828,7 +828,7 @@ z-bell | [w-relatedness-unmet-modifiable-AIMED-SURGING | g-stimulus]
 **16.** *Alahen prays for purpose (over time).*
 
 ::: details Show answer
-`zalahen vebewal thagathol.`
+`zalahen vebewal thamuthol.`
 
 z-Alahen | v-pray | th-purpose-motive-lasting
 :::
@@ -836,7 +836,7 @@ z-Alahen | v-pray | th-purpose-motive-lasting
 **17.** *Azawan ought to tell to serve beneficence (offered).*
 
 ::: details Show answer
-`zazawan vezebel thurethem.`
+`zazawan vezebel thurothem.`
 
 z-Azawan | v-tell | th-beneficence-ought-offered
 :::
@@ -852,7 +852,7 @@ z-Alahen | v-tell | th-relatedness-ought-trial
 *Alahen ought to try telling for relatedness (worth a try).*
 :::
 
-**2.** `zahaben vezogel thobather.`
+**2.** `zahaben vezogel thelather.`
 
 ::: details Show answer
 
@@ -915,7 +915,7 @@ z-bell | [w-relatedness-unmet-modifiable | g-stimulus]
 *The bell detracts from relatedness (modifiable).*
 :::
 
-**9.** `zalahen vezogel thobathom hual.`
+**9.** `zalahen vezogel thelathom hual.`
 
 ::: details Show answer
 
@@ -987,7 +987,7 @@ z-Alahen | v-bow | th-REQUIRE-expected
 *Alahen is supposed to bow.*
 :::
 
-**17.** `zalahen vahehal thurethor.`
+**17.** `zalahen vahehal thurothor.`
 
 ::: details Show answer
 
@@ -996,7 +996,7 @@ z-Alahen | v-hush | th-beneficence-motive-immediate
 *Alahen hushes for beneficence (right now).*
 :::
 
-**18.** `zebevol wagathum gobom.`
+**18.** `zebevol wamuthum gobom.`
 
 ::: details Show answer
 

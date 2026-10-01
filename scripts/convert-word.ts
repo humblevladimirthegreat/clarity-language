@@ -179,7 +179,12 @@ async function convertLexicon(only: string[]): Promise<void> {
       }];
     }),
     overlays,
-    { blocked: used },
+    {
+      blocked: used,
+      kept: rows
+        .filter((row) => !rowMatchesOnly(row, only) && (row.root ?? "").trim())
+        .map((row) => ({ emoji: (row.emoji ?? "").trim(), root: (row.root ?? "").trim() })),
+    },
   );
   const byEmoji = new Map(placed.map((item) => [item.emoji, item]));
   for (const row of targets) {

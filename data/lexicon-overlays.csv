@@ -3,16 +3,16 @@ abam,th,🗳️,sake,autonomy,autonomy sake (choice / agency),ballot records cho
 abam,w,🗳️,sake,autonomy,autonomy sake (choice / agency),ballot records choice; choice is agency and self-direction,sakes.md#personal-possession
 udum,th,🧰,sake,competence,competence sake (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill,sakes.md#prescription-the-ought-this-act-for-this-sake
 udum,w,🧰,sake,competence,competence sake (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill,sakes.md#personal-possession
-agam,th,🧭,sake,purpose,purpose sake (direction / meaning),compass gives a heading; direction is an aim that matters,sakes.md#prescription-the-ought-this-act-for-this-sake
-agam,w,🧭,sake,purpose,purpose sake (direction / meaning),compass gives a heading; direction is an aim that matters,sakes.md#personal-possession
+amum,th,🧭,sake,purpose,purpose sake (direction / meaning),compass gives a heading; direction is an aim that matters,sakes.md#prescription-the-ought-this-act-for-this-sake
+amum,w,🧭,sake,purpose,purpose sake (direction / meaning),compass gives a heading; direction is an aim that matters,sakes.md#personal-possession
 onam,th,🪢,sake,relatedness,relatedness sake (bond / belonging),knot ties two ends; bond is connection and care,sakes.md#prescription-the-ought-this-act-for-this-sake
 onam,w,🪢,sake,relatedness,relatedness sake (bond / belonging),knot ties two ends; bond is connection and care,sakes.md#personal-possession
-urem,th,🎁,sake,beneficence,beneficence sake (making someone better off),a present leaves someone better off; giving pays off the giver,sakes.md#prescription-the-ought-this-act-for-this-sake
-urem,w,🎁,sake,beneficence,beneficence sake (making someone better off),a present leaves someone better off; giving pays off the giver,sakes.md#personal-possession
+urom,th,🎁,sake,beneficence,beneficence sake (making someone better off),a present leaves someone better off; giving pays off the giver,sakes.md#prescription-the-ought-this-act-for-this-sake
+urom,w,🎁,sake,beneficence,beneficence sake (making someone better off),a present leaves someone better off; giving pays off the giver,sakes.md#personal-possession
 ozum,th,🍓,sake,pleasure,pleasure sake (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,sakes.md#prescription-the-ought-this-act-for-this-sake
 ozum,w,🍓,sake,pleasure,pleasure sake (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,sakes.md#personal-possession
-obam,th,🥦,sake,health,health sake (bodily wellbeing / safety),broccoli keeps you well; health is a body that is well and safe,sakes.md#prescription-the-ought-this-act-for-this-sake
-obam,w,🥦,sake,health,health sake (bodily wellbeing / safety),broccoli keeps you well; health is a body that is well and safe,sakes.md#personal-possession
+elam,th,🥦,sake,health,health sake (bodily wellbeing / safety),broccoli keeps you well; health is a body that is well and safe,sakes.md#prescription-the-ought-this-act-for-this-sake
+elam,w,🥦,sake,health,health sake (bodily wellbeing / safety),broccoli keeps you well; health is a body that is well and safe,sakes.md#personal-possession
 ugem,th,🥚,sake,sake,unspecified sake (potential),egg holds unrealized life; potential names a sake without picking which,sakes.md#prescription-the-ought-this-act-for-this-sake
 ugem,w,🥚,sake,sake,unspecified sake (potential),egg holds unrealized life; potential names a sake without picking which,sakes.md#personal-possession
 unom,th,🎣,evidential,WITNESSED,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidentiality
@@ -135,21 +135,21 @@ olon,b,🌐,benchmark,Everyone,judgment benchmark Everyone (universal reference 
 ugen,z,🥚,benchmark,Some-sake,judgment benchmark Some-sake (what the speaker's sake requires; sake unspecified),egg holds what a sake requires to grow; the sake is the bar,comparatives.md#sake-benchmarks
 ugen,d,🥚,benchmark,Some-sake,judgment benchmark Some-sake (what the speaker's sake requires; sake unspecified),egg holds what a sake requires to grow; the sake is the bar,comparatives.md#sake-benchmarks
 ugen,b,🥚,benchmark,Some-sake,judgment benchmark Some-sake (what the speaker's sake requires; sake unspecified),egg holds what a sake requires to grow; the sake is the bar,comparatives.md#sake-benchmarks
-oban,z,🥦,benchmark,Health-sake,judgment benchmark what the health sake requires (wellbeing / safety),broccoli keeps you well; staying well sets the bar,comparatives.md#sake-benchmarks
-oban,d,🥦,benchmark,Health-sake,judgment benchmark what the health sake requires (wellbeing / safety),broccoli keeps you well; staying well sets the bar,comparatives.md#sake-benchmarks
-oban,b,🥦,benchmark,Health-sake,judgment benchmark what the health sake requires (wellbeing / safety),broccoli keeps you well; staying well sets the bar,comparatives.md#sake-benchmarks
+elan,z,🥦,benchmark,Health-sake,judgment benchmark what the health sake requires (wellbeing / safety),broccoli keeps you well; staying well sets the bar,comparatives.md#sake-benchmarks
+elan,d,🥦,benchmark,Health-sake,judgment benchmark what the health sake requires (wellbeing / safety),broccoli keeps you well; staying well sets the bar,comparatives.md#sake-benchmarks
+elan,b,🥦,benchmark,Health-sake,judgment benchmark what the health sake requires (wellbeing / safety),broccoli keeps you well; staying well sets the bar,comparatives.md#sake-benchmarks
 onan,z,🪢,benchmark,Relatedness-sake,judgment benchmark what the relatedness sake requires (connection),knot ties people together; connection sets the bar,comparatives.md#sake-benchmarks
 onan,d,🪢,benchmark,Relatedness-sake,judgment benchmark what the relatedness sake requires (connection),knot ties people together; connection sets the bar,comparatives.md#sake-benchmarks
 onan,b,🪢,benchmark,Relatedness-sake,judgment benchmark what the relatedness sake requires (connection),knot ties people together; connection sets the bar,comparatives.md#sake-benchmarks
-uren,z,🎁,benchmark,Beneficence-sake,judgment benchmark what the beneficence sake requires (someone better off),a present helps someone; their being better off sets the bar,comparatives.md#sake-benchmarks
-uren,d,🎁,benchmark,Beneficence-sake,judgment benchmark what the beneficence sake requires (someone better off),a present helps someone; their being better off sets the bar,comparatives.md#sake-benchmarks
-uren,b,🎁,benchmark,Beneficence-sake,judgment benchmark what the beneficence sake requires (someone better off),a present helps someone; their being better off sets the bar,comparatives.md#sake-benchmarks
+uron,z,🎁,benchmark,Beneficence-sake,judgment benchmark what the beneficence sake requires (someone better off),a present helps someone; their being better off sets the bar,comparatives.md#sake-benchmarks
+uron,d,🎁,benchmark,Beneficence-sake,judgment benchmark what the beneficence sake requires (someone better off),a present helps someone; their being better off sets the bar,comparatives.md#sake-benchmarks
+uron,b,🎁,benchmark,Beneficence-sake,judgment benchmark what the beneficence sake requires (someone better off),a present helps someone; their being better off sets the bar,comparatives.md#sake-benchmarks
 udun,z,🧰,benchmark,Competence-sake,judgment benchmark what the competence sake requires (getting it to work),toolbox gets the job done; working sets the bar,comparatives.md#sake-benchmarks
 udun,d,🧰,benchmark,Competence-sake,judgment benchmark what the competence sake requires (getting it to work),toolbox gets the job done; working sets the bar,comparatives.md#sake-benchmarks
 udun,b,🧰,benchmark,Competence-sake,judgment benchmark what the competence sake requires (getting it to work),toolbox gets the job done; working sets the bar,comparatives.md#sake-benchmarks
-agan,z,🧭,benchmark,Purpose-sake,judgment benchmark what the purpose sake requires (an aim that matters),compass sets a heading; mattering sets the bar,comparatives.md#sake-benchmarks
-agan,d,🧭,benchmark,Purpose-sake,judgment benchmark what the purpose sake requires (an aim that matters),compass sets a heading; mattering sets the bar,comparatives.md#sake-benchmarks
-agan,b,🧭,benchmark,Purpose-sake,judgment benchmark what the purpose sake requires (an aim that matters),compass sets a heading; mattering sets the bar,comparatives.md#sake-benchmarks
+amun,z,🧭,benchmark,Purpose-sake,judgment benchmark what the purpose sake requires (an aim that matters),compass sets a heading; mattering sets the bar,comparatives.md#sake-benchmarks
+amun,d,🧭,benchmark,Purpose-sake,judgment benchmark what the purpose sake requires (an aim that matters),compass sets a heading; mattering sets the bar,comparatives.md#sake-benchmarks
+amun,b,🧭,benchmark,Purpose-sake,judgment benchmark what the purpose sake requires (an aim that matters),compass sets a heading; mattering sets the bar,comparatives.md#sake-benchmarks
 aban,z,🗳️,benchmark,Autonomy-sake,judgment benchmark what the autonomy sake requires (choice),ballot is choosing for yourself; choice sets the bar,comparatives.md#sake-benchmarks
 aban,d,🗳️,benchmark,Autonomy-sake,judgment benchmark what the autonomy sake requires (choice),ballot is choosing for yourself; choice sets the bar,comparatives.md#sake-benchmarks
 aban,b,🗳️,benchmark,Autonomy-sake,judgment benchmark what the autonomy sake requires (choice),ballot is choosing for yourself; choice sets the bar,comparatives.md#sake-benchmarks

@@ -28,6 +28,9 @@ const FORCE_LONG = new Set(["🎤", "🎧"]);
 const PRIORITY_OVERRIDES: Record<string, number> = { "👓": 0 };
 const JUDGMENT = new Set(["☯️", "🐹", "🪞", "👥", "🥼", "🌐"]);
 
+/** A root that stays put this run, with its overlay groups, so new short roots keep their spacing from it. */
+export type FixedRoot = { root: string; groups: Set<string> };
+
 export type PlaceRow = {
   emoji: string;
   concrete: string;
@@ -100,6 +103,22 @@ type Indexed = {
   cmu: string;
 };
 
+/** Overlay groups per emoji: `kind:` (one overlay kind on one PoS) and `pos:` (one PoS). Join overlays have none. */
+export function overlayGroups(overlays: OverlayRow[]): Map<string, Set<string>> {
+  const groups = new Map<string, Set<string>>();
+  for (const overlay of overlays) {
+    if (isJoinOverlayKind(overlay.kind) || !overlay.emoji) continue;
+    const judgment = overlay.kind === "benchmark" && JUDGMENT.has(overlay.emoji);
+    const sake = overlay.kind === "benchmark" && !judgment;
+    const sub = judgment ? "/judgment" : sake ? "/sake" : "";
+    const set = groups.get(overlay.emoji) ?? new Set<string>();
+    set.add(`kind:${overlay.pos}/${overlay.kind}${sub}`);
+    set.add(`pos:${overlay.pos}`);
+    groups.set(overlay.emoji, set);
+  }
+  return groups;
+}
+
 function indexRows(rows: PlaceRow[], overlays: OverlayRow[], pron: Map<string, string>, freqRank: Map<string, number>): Indexed[] {
   const byEmoji = new Map<string, Indexed>();
   const indexed: Indexed[] = rows.map((row, index) => {
@@ -116,15 +135,9 @@ function indexRows(rows: PlaceRow[], overlays: OverlayRow[], pron: Map<string, s
     if (row.emoji) byEmoji.set(row.emoji, item);
     return item;
   });
-  for (const overlay of overlays) {
-    if (isJoinOverlayKind(overlay.kind) || !overlay.emoji) continue;
-    const item = byEmoji.get(overlay.emoji);
-    if (!item) continue;
-    const judgment = overlay.kind === "benchmark" && JUDGMENT.has(overlay.emoji);
-    const sake = overlay.kind === "benchmark" && !judgment;
-    const sub = judgment ? "/judgment" : sake ? "/sake" : "";
-    item.groups.add(`kind:${overlay.pos}/${overlay.kind}${sub}`);
-    item.groups.add(`pos:${overlay.pos}`);
+  for (const [emoji, groups] of overlayGroups(overlays)) {
+    const item = byEmoji.get(emoji);
+    if (item) for (const group of groups) item.groups.add(group);
   }
   for (const item of indexed) {
     const slot = MARKED[item.row.emoji];
@@ -134,9 +147,26 @@ function indexRows(rows: PlaceRow[], overlays: OverlayRow[], pron: Map<string, s
   return indexed;
 }
 
-type PairRule = { a: number; b: number; kind: boolean; bench: boolean; pos: boolean };
+type GroupRule = { kind: boolean; bench: boolean; pos: boolean };
+type PairRule = GroupRule & { a: number; b: number };
 
-function pairHard(pair: PairRule, x: string, y: string): number {
+/**
+ * Spacing two short roots owe each other. Same overlay group (`kind`): no single-letter
+ * difference and a different consonant. Sake vs judgment benchmark (`bench`): no single-letter
+ * difference and a different first two letters. Same PoS (`pos`): not identical.
+ */
+function groupRule(a: Set<string>, b: Set<string>): GroupRule {
+  const shared = [...a].filter((group) => b.has(group));
+  const benchOf = (groups: Set<string>) => [...groups].some((group) => /benchmark\/(judgment|sake)/.test(group));
+  const judgmentOf = (groups: Set<string>) => [...groups].some((group) => group.endsWith("judgment"));
+  return {
+    bench: benchOf(a) && benchOf(b) && judgmentOf(a) !== judgmentOf(b),
+    kind: shared.some((group) => group.startsWith("kind:")),
+    pos: shared.some((group) => group.startsWith("pos:")),
+  };
+}
+
+function pairHard(pair: GroupRule, x: string, y: string): number {
   let violations = 0;
   const distance = ham(x, y);
   if (distance === 0) violations++;
@@ -152,7 +182,7 @@ function pairHard(pair: PairRule, x: string, y: string): number {
 export function annealShortRoots(
   items: Indexed[],
   blocked: Set<string>,
-  options: { restarts?: number; steps?: number } = {},
+  options: { restarts?: number; steps?: number; fixed?: FixedRoot[] } = {},
 ): Map<Indexed, string> {
   if (items.length === 0) return new Map();
   const restarts = options.restarts ?? 6;
@@ -168,22 +198,22 @@ export function annealShortRoots(
     for (const form of pool) costs.set(form, ECHO_W * echoScale(item) * 4.5 * (1 - echo(form, item.cmu)));
     return costs;
   });
+  // Roots kept from earlier runs: spacing against them is fixed per form, so it folds into each row's own cost.
+  const fixedRules = items.map((item) =>
+    (options.fixed ?? []).flatMap((fixed) => {
+      const rule = groupRule(item.groups, fixed.groups);
+      return rule.kind || rule.bench ? [{ fixed, rule }] : [];
+    }),
+  );
+  const fixedHard = (i: number, form: string) =>
+    fixedRules[i]!.reduce((sum, { fixed, rule }) => sum + pairHard(rule, form, fixed.root), 0);
+  for (let i = 0; i < items.length; i++) {
+    for (const [form, cost] of unary[i]!) unary[i]!.set(form, cost + 1000 * fixedHard(i, form));
+  }
   const pairs: PairRule[] = [];
   for (let a = 0; a < items.length; a++) {
     for (let b = a + 1; b < items.length; b++) {
-      const shared = [...items[a]!.groups].filter((group) => items[b]!.groups.has(group));
-      const bench =
-        [...items[a]!.groups].some((group) => /benchmark\/(judgment|sake)/.test(group)) &&
-        [...items[b]!.groups].some((group) => /benchmark\/(judgment|sake)/.test(group)) &&
-        [...items[a]!.groups].some((group) => group.endsWith("judgment")) !==
-          [...items[b]!.groups].some((group) => group.endsWith("judgment"));
-      const pair: PairRule = {
-        a,
-        b,
-        bench,
-        kind: shared.some((group) => group.startsWith("kind:")),
-        pos: shared.some((group) => group.startsWith("pos:")),
-      };
+      const pair: PairRule = { a, b, ...groupRule(items[a]!.groups, items[b]!.groups) };
       if (pair.kind || pair.bench || pair.pos) pairs.push(pair);
     }
   }
@@ -230,6 +260,15 @@ export function annealShortRoots(
       best = [...assign];
     }
     for (let i = 0; i < items.length; i++) assign[i] = best[i]!;
+  }
+  const broken = [
+    ...pairs.filter((pair) => pairHard(pair, best[pair.a]!, best[pair.b]!) > 0).map((pair) => `${best[pair.a]} ~ ${best[pair.b]}`),
+    ...items.flatMap((_, i) =>
+      fixedRules[i]!.filter(({ fixed, rule }) => pairHard(rule, best[i]!, fixed.root) > 0).map(({ fixed }) => `${best[i]} ~ ${fixed.root} (kept)`),
+    ),
+  ];
+  if (broken.length > 0) {
+    throw new Error(`short roots too close within an overlay group: ${broken.join(", ")}`);
   }
   const seen = new Set<string>();
   const placed = new Map<Indexed, string>();
@@ -299,6 +338,8 @@ export async function placePublishedRoots(
   options: {
     skip?: Set<string>;
     blocked?: Iterable<string>;
+    /** Rows not being placed (emoji → current root); short ones constrain the anneal by overlay group. */
+    kept?: Iterable<{ emoji: string; root: string }>;
     annealRestarts?: number;
     annealSteps?: number;
   } = {},
@@ -313,10 +354,15 @@ export async function placePublishedRoots(
     if (isJoinOverlayKind(overlay.kind) && overlay.senseForm) taken.add(overlay.senseForm);
   }
   const targets = indexed.filter((item) => item.row.concrete.trim() && !skip.has(item.row.emoji) && !skip.has(item.row.concrete));
+  const groupsByEmoji = overlayGroups(overlays);
+  const fixed: FixedRoot[] = [...(options.kept ?? [])].flatMap(({ emoji, root }) => {
+    const groups = groupsByEmoji.get(emoji);
+    return root.length === 3 && groups ? [{ root, groups }] : [];
+  });
   const short = annealShortRoots(
     targets.filter((item) => item.eligible),
     taken,
-    { restarts: options.annealRestarts, steps: options.annealSteps },
+    { restarts: options.annealRestarts, steps: options.annealSteps, fixed },
   );
   for (const root of short.values()) taken.add(root);
   const long = placeLongRoots(targets.filter((item) => !item.eligible), taken);
