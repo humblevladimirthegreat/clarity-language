@@ -203,6 +203,8 @@ export type LeftEdge = {
   /** Reactions: `/y/` words in -l / -m (numbers included) and unnamed spans (`y<…>`). */
   interjections: LexWord[];
   polars: LexWord[];
+  /** Spoken `/y/` spans: **-n** / **-r** calls (vocative), **-l** / **-m** reactions (interjection) (spans.md#y-spans). */
+  spans?: { job: "vocative" | "interjection"; span: SpanUnit }[];
   hook?: LexWord;
   /** `/w/` immediately before a left-edge hook. */
   hookModifiers?: LexWord[];
@@ -274,7 +276,9 @@ export type CoordShared = GPackage | HUnit | ScaleShared;
 
 export type NpItem =
   | { kind: "package"; package: NpPackage }
-  | { kind: "island"; island: IslandUnit };
+  | { kind: "island"; island: IslandUnit }
+  /** A `/th/` stance word as the comparee of a rank fence: the bar (comparatives.md § bars). */
+  | { kind: "bar"; bar: HUnit };
 
 export type NpCoord = {
   level: "z" | "d" | "b";

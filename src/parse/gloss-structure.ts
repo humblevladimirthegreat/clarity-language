@@ -115,6 +115,7 @@ function npPackage(cur: Cursor, pack: NpPackage): GlossNode | undefined {
 
 function npItem(cur: Cursor, item: NpItem): GlossNode | undefined {
   if (item.kind === "package") return npPackage(cur, item.package);
+  if (item.kind === "bar") return hUnit(cur, item.bar);
   return island(cur, item.island);
 }
 
@@ -291,8 +292,12 @@ function clauseNodes(cur: Cursor, clause: Clause): GlossNode[] {
 function utteranceNodes(cur: Cursor, utt: Utterance): GlossNode[] {
   const out: GlossNode[] = [];
   const left = utt.left;
-  for (const w of [...left.vocatives, ...left.interjections, ...left.polars].sort((a, b) => (a.at ?? 0) - (b.at ?? 0))) {
-    const n = cur.take(w);
+  const edge: ({ at: number; word: LexWord } | { at: number; span: SpanUnit })[] = [
+    ...[...left.vocatives, ...left.interjections, ...left.polars].map((word) => ({ at: word.at ?? 0, word })),
+    ...(left.spans ?? []).map(({ span: s }) => ({ at: s.open.at ?? 0, span: s })),
+  ];
+  for (const item of edge.sort((a, b) => a.at - b.at)) {
+    const n = "word" in item ? cur.take(item.word) : span(cur, item.span);
     if (n) out.push(n);
   }
   const hook = group([...(left.hookModifiers ?? []).map((m) => cur.take(m)), cur.take(left.hook)]);

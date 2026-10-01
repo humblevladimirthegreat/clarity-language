@@ -96,7 +96,7 @@ describe("taught cues in docs/grammar", () => {
   const all = listMarkdown("docs/grammar").flatMap((file) => collectEnglishEntries(readFileSync(file, "utf8"), file, tables));
   const cases: { phrase: string; page: string; slug?: string; forms: string[] }[] = [
     { phrase: "anyway", page: "hooks.md", slug: "hook-resume", forms: ["or"] },
-    { phrase: "late", page: "comparatives.md", slug: "vague-amounts", forms: ["zehon / bral / zel / zuel"] },
+    { phrase: "late", page: "comparatives.md", slug: "vague-amounts", forms: ["thobam / zel / zuel / bral"] },
     { phrase: "last time", page: "numbers.md", forms: ["gruedul", "g#-2", "h#-2"] },
   ];
   for (const { phrase, page, slug, forms } of cases) {

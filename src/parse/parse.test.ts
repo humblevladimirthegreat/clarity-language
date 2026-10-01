@@ -543,3 +543,90 @@ describe("parse — pronouns.md full-root resume", () => {
     assert.throws(() => parseText("zadar vowogal."), SentenceParseError);
   });
 });
+
+describe("parse — comparatives.md bars", () => {
+  const fence = (text: string) => {
+    const unit = parseText(text).utterances[0]!.bodies[0]!.clause.units[0]!;
+    assert.equal(unit.kind, "np");
+    return unit.kind === "np" ? unit.coord.parts[0]! : undefined;
+  };
+  const barOf = (text: string) => {
+    const item = fence(text)!.items.find((i) => i.kind === "bar");
+    return item?.kind === "bar" ? item.bar : undefined;
+  };
+
+  it("takes one /th/ stance word before a rank join as the fence's bar", () => {
+    for (const [text, raw] of [
+      ["zazawan thobam zel gezebul.", "thobam"],
+      ["zazawan thamam zel bral vevahal.", "thamam"],
+      ["zedehel thegatham zael gral.", "thegatham"],
+      ["zubugal thodom zuem garagam.", "thodom"],
+      ["zalahen thezexal zael hadehum vowogal.", "thezexal"],
+      ["zahazal thumel zael gabezem.", "thumel"],
+      ["zubugal thevegem zel gagazam.", "thevegem"],
+      ["zazawan thahomalahen zel gezebul.", "thahomalahen"],
+    ] as const) {
+      assert.equal(barOf(text)?.word.raw, raw, text);
+    }
+    const units = parseText("zazawan dozolx thamam del gral vagadel.").utterances[0]!.bodies[0]!.clause.units;
+    const object = units.find((u) => u.kind === "np" && u.coord.level === "d");
+    assert.ok(object?.kind === "np" && object.coord.parts[0]!.items.some((i) => i.kind === "bar" && i.bar.word.raw === "thamam"));
+  });
+
+  it("keeps a bar's hosted /b/ and dated offset inside the fence", () => {
+    assert.equal(barOf("zubugal thewam balahen zuel gagazam.")?.hosted?.bound.raw, "balahen");
+    const dated = barOf("zazawan thevom bazazam gruwol zel gezebul.");
+    assert.equal(dated?.hosted?.bound.raw, "bazazam");
+    assert.equal(dated?.hosted?.amount?.raw, "gruwol");
+  });
+
+  it("keeps the ranked item's hook + /b/ before its bar inside the fence", () => {
+    const part = fence("zubugal om bamagon thamam zel garagam.")!;
+    assert.deepEqual(part.items.map((i) => i.kind), ["package", "bar"]);
+    assert.equal(part.items[0]!.kind === "package" && part.items[0]!.package.adjs[0]?.hosted?.bound.raw, "bamagon");
+  });
+
+  it("reads a stance word outside the fence on the claim", () => {
+    const units = parseText("zazawan zel gezebul thobam.").utterances[0]!.bodies[0]!.clause.units;
+    assert.deepEqual(units.map((u) => u.kind), ["np", "h"]);
+    assert.ok(units[0]!.kind === "np" && units[0]!.coord.parts[0]!.items.every((i) => i.kind === "package"));
+  });
+
+  it("ends the sentence at a bar's barl: the next words are the grounds", () => {
+    const clause = parseText("zazawan thunem barl zel gezebul zalahen vezugel.").utterances[0]!.bodies[0]!.clause;
+    assert.equal(clause.units.length, 1);
+    assert.deepEqual(clause.dependent?.clause.units.map((u) => u.kind), ["np", "vp"]);
+  });
+});
+
+describe("parse — spans.md /y/ spans", () => {
+  it("puts a spoken /y/ span at the left edge, before the act word", () => {
+    const left = parseText("yuxan sam xuxul yol zazawan vowogal.").utterances[0]!.left;
+    assert.equal(left.force?.raw, "yol");
+    assert.deepEqual(left.spans?.map((s) => [s.job, s.span.open.raw]), [["vocative", "yuxan"]]);
+  });
+
+  it("reads a spoken /y/ span by its ending: -n calls, -l / -m react", () => {
+    const job = (text: string) => parseText(text).utterances[0]!.left.spans?.[0]?.job;
+    assert.equal(job("yuxan sam xuxul zazawan vowogal."), "vocative");
+    assert.equal(job("yaxon azawan yol zalahen vowogal."), "vocative");
+    assert.equal(job("yuxam amen xuxul."), "interjection");
+    assert.equal(job("yuxal amen xuxul."), "interjection");
+  });
+
+  it("opens a new turn with a /y/ span after a sentence end", () => {
+    const result = parseText("zazawan vowogal. yuxan sam xuxul yol zalahen vowogal.");
+    assert.equal(result.utterances.length, 2);
+    assert.equal(result.utterances[1]!.left.spans?.[0]?.span.open.raw, "yuxan");
+  });
+
+  it("takes a sentence linker after a spoken /y/ span, as after a written one", () => {
+    for (const text of ["y@<Sam> xezol zazawan vowogal.", "yuxan sam xuxul xezol zazawan vowogal.", "yuxon sam xezol zazawan vowogal."]) {
+      assert.equal(parseText(text).utterances[0]!.bodies[0]!.linker?.raw, "xezol", text);
+    }
+  });
+
+  it("puts a written /y/ cite at the left edge too", () => {
+    assert.deepEqual(parseText("y[azawan] yol zalahen vowogal.").utterances[0]!.left.interjections.map((w) => w.raw), ["y[azawan]"]);
+  });
+});

@@ -6,14 +6,14 @@
  * Dry-run by default; `--write` saves. Covers blockquote lines, `Morph` table
  * cells, and translation-exercise gloss lines — the same pairs `lint:agazan` checks.
  */
-import { readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { loadDefaultTables } from "../src/parse/index.js";
 import { listMarkdown } from "../src/markdown-files.js";
 import { reglossMarkdown } from "../src/regloss.js";
 
 const write = process.argv.includes("--write");
 // docs/meta examples omit antecedents on purpose; bracket those by hand.
-const roots = ["docs/grammar", "docs/examples"];
+const roots = ["docs/grammar", "docs/examples"].filter((root) => existsSync(root));
 const tables = loadDefaultTables();
 
 let changed = 0;

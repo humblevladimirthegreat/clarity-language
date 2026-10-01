@@ -102,7 +102,7 @@ This is where join-act vs soft clause **-n**, mood vs manner, value vs ability, 
 ### Closed forms follow the lexicon
 <a id="closed-forms-follow-lexicon"></a>
 
-Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause poles, locatives, means, similative *like*, exchange *for*, proxy *on behalf of*, of-relations, judgment benchmarks, …) are **the published root** for that host (emoji / English literal) plus the overlay ending. When you **add** a closed overlay, pick an existing published row and spell that root plus ending (`umu` + **-n** → **`umun`**). Do **not** freeze a private spelling, do **not** coin a new lexicon word just to host the overlay, and do **not** put a productive stem (numeric derivation, role, values) in `sense_form`. If conversion reassigns *fishing*, witnessed **`thevom`** moves with **`evo`**. If conversion reassigns *attest*, live **`thodom`** moves with **`odo`**.
+Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause poles, locatives, means, similative *like*, exchange *for*, proxy *on behalf of*, of-relations, …) are **the published root** for that host (emoji / English literal) plus the overlay ending. When you **add** a closed overlay, pick an existing published row and spell that root plus ending (`ovu` + **-m** → **`ovum`**). Do **not** freeze a private spelling, do **not** coin a new lexicon word just to host the overlay, and do **not** put a productive stem (numeric derivation, role, values) in `sense_form`. If conversion reassigns *fishing*, witnessed **`thevom`** moves with **`evo`**. If conversion reassigns *attest*, live **`thodom`** moves with **`odo`**.
 
 **Exception:** join-act / join-relation sense-forms (`an` / `on` / `aon` / …) and other **vowel-series** morphology (join fences, restrictor cores) are keyed by **`a` / `o` / `e` / `u`**, not by a lexicon row — those spellings stay. Do **not** add a hosted overlay whose `sense_form` is a join stem (`uan`, `an`, …) unless it is this vowel-series family.
 
@@ -132,7 +132,6 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause pole
 | `clause_pole` | `mood` | *if* / *only-if* / *iff* / *because* / *so-that* / *as-of* / … |
 | `universality` | `mood` | COMMON / FORMAL / … |
 | `identity` | `mood` | SAME **`ugo`** |
-| `benchmark` | `mood` | Average / Typical / Mine / Social / Professional / Everyone |
 | `locative` | `locative` | *between* |
 | `means` | `means` | *using* **`ahada`** |
 | `similative` | `similative` | *like* **`umu`** |
@@ -150,8 +149,8 @@ Adapter: [`src/parse/tokens.ts`](../../src/parse/tokens.ts) / [`src/parse/tokeni
 
 Owns:
 
-- Utterance framing ([speech-moves.md](../grammar/speech-moves.md) — `/y/` turns, omissible default assertoric; [dependents.md](../grammar/dependents.md) — `/x/` continue)
-- Right-close joins at phrase / VP / clause level (illegal left fence)
+- Utterance framing ([speech-moves.md](../grammar/speech-moves.md) — `/y/` turns, including a whole spoken `/y/` span (open … close) at the left edge ([spans.md](../grammar/spans.md#y-spoken-spans)), omissible default assertoric; [dependents.md](../grammar/dependents.md) — `/x/` continue)
+- Right-close joins at phrase / VP / clause level (illegal left fence); a `/th/` stance word right before a rank join (`e` / `ue` / `ae`, **-l** / **-m**) is that fence's bar, an `NpItem` of kind `bar` ([comparatives.md](../grammar/comparatives.md#bars))
 - Span open…close nesting; adjunct islands **`^ … ^`**
 - Complex `/ɡ|h/` + `/b/`; `/w/` + `/b/` only for *as-of* overlays; floating `/h/` as adjuncts
 - Matrix-final **stand-in** (`darl` / `barl`) + contiguous dependent

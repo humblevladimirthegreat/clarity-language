@@ -168,7 +168,7 @@ Marking the opening that way helps you consent to the talk without treating a wa
 
 Work talk often freezes on *the* problem / *the* solution, or ranks against an invisible yardstick.
 
-Prefer numbered alternatives (ordinary nouns plus an [ordinal](numbers.md#ordinals), like *solution 2*) so candidates stay plural and revisable. Reframe the same situation with softer wording rather than inventing a second candidate. Scalar *worse than…* can name closed [judgment benchmarks](comparatives.md#judgment-benchmarks) (Average, Typical, Mine, …) so the bar you are using stays audible, including when the bar is only your own standard.
+Prefer numbered alternatives (ordinary nouns plus an [ordinal](numbers.md#ordinals), like *solution 2*) so candidates stay plural and revisable. Reframe the same situation with softer wording rather than inventing a second candidate. Scalar *worse than…* names its [bar](comparatives.md#bars) (*than usual*, *than I expected*, *than you demand*) so the standard you are using stays audible, including when the bar is only your own expectation.
 
 Numbering candidates, paraphrasing, and naming the judgment bar help you keep choice and standards revisable instead of freezing on a single frame or a hidden bar.
 

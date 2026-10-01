@@ -29,7 +29,7 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 
 ### Obviously, apparently, perhaps, guess, assume {#stance-adverbs}
 
-**Needs:** [Evidence strength](knowing.md#evidence-strength) · [MAY](knowing.md#may) · [Hold endings (NOTIONAL)](knowing.md#hold-endings-notional) · [Hopefully and other attitudes](sakes.md#speaker-attitude) · [Unmet](sakes.md#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](spans.md#asides) · [Universality](knowing.md#universality) · [CAUSE](causation.md#cause) · [Judgment benchmarks](comparatives.md#judgment-benchmarks)
+**Needs:** [Evidence strength](knowing.md#evidence-strength) · [MAY](knowing.md#may) · [Hold endings (NOTIONAL)](knowing.md#hold-endings-notional) · [Hopefully and other attitudes](sakes.md#speaker-attitude) · [Unmet](sakes.md#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](spans.md#asides) · [Universality](knowing.md#universality) · [CAUSE](causation.md#cause) · [Every bar](comparatives.md#stance-bars)
 
 English adverbs like *obviously*, *apparently* and *presumably* say **how you know** a claim. Agazan has no word for each one. It puts a channel on the clause as a `/th/` word, and the ending grades the evidence: **-l** solid, **-m** ordinary, **-r** thin. *Guess* and *assume* are not channels: a guess is a *could be* (MAY), and an assumption is toying with a premise (NOTIONAL). *Unfortunately* says how **you** feel about the claim, so it is an attitude word.
 
@@ -52,7 +52,7 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 | *basically* / *fundamentally* | `hadawam` | manner adverb on *fundamental* |
 | *overall* / *on the whole* | `hahehom bual` | as for everything |
 | *automatically* / *by itself* | `zubugal vowogal thegem bubugar.` | CAUSE, with the doer resumed as its own cause |
-| *increasingly* / *more and more* | `zehon zel` + the quality | more than it usually is |
+| *increasingly* / *more and more* | `thenom zel` + the quality | more than it used to be |
 | *unfortunately* | `thegathum` | unspecified sake, unmet, can be softened |
 | *unfortunately* (and it is final) | `thegathul` | unspecified sake, unmet, irreversible |
 
@@ -359,7 +359,7 @@ English *I hope X will happen* is two claims: you want it, and you expect it. **
 
 ### Important, useful, helpful, benefit, satisfy, upset {#sake-words}
 
-**Needs:** [Sake inventory](sakes.md#sake-inventory) · [Met](sakes.md#time-horizon-endings-on-met) · [Emotion compose](sakes.md#emotion-compose) · [Thanks and sorry](sakes.md#thanks-sorry) · [Sake benchmarks](comparatives.md#sake-benchmarks)
+**Needs:** [Sake inventory](sakes.md#sake-inventory) · [Met](sakes.md#time-horizon-endings-on-met) · [Emotion compose](sakes.md#emotion-compose) · [Thanks and sorry](sakes.md#thanks-sorry) · [Bars](comparatives.md#bars)
 
 English *useful*, *helpful*, *important* and *benefit* judge a thing by what it does for someone. Agazan names the someone's **sake** (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical). A met word says the thing serves that sake, and its ending says how long the payoff lasts. On a noun that is yours, the sake word sits on `/ɡ/`. On another noun, put it on `/w/` before **`gobum`**. Put a person in `/b/` for whose sake it is.
 
@@ -373,8 +373,8 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 | *benefit* / *benefits Alahen* | `thanatham balahen` | the act met Alahen's sake |
 | *advantage* (a lead over someone) | `zel` with the scale | rank against the other |
 | *satisfy* (you) | `thanatham behodon` | the act met your sake |
-| *satisfy* (a requirement) | `zegan zael` + scale | tie against the sake bar: *enough* |
-| *suitable* / *appropriate* (for a need) | `gulotham` or `zegan zael` | met, or enough for the need |
+| *satisfy* (a requirement) | `thumel zael` + scale | tie against the rule: it meets the requirement |
+| *suitable* / *appropriate* (for a need) | `gulotham` or `thegatham zael` | met, or enough for the need |
 | *more important than* | `zel` between the nouns, then `gamethal` | rank on the lasting met sake |
 | *upset* | `wanathumar gobum` | relatedness, unmet, held inside, surging |
 | *upset for someone* | `wanathumem gobum` + `/b/` | unmet relatedness on their behalf |
@@ -415,11 +415,11 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 >
 > "Upset about the memo."
 
-**Compare with:** *too* and *enough* use [sake benchmarks](comparatives.md#sake-benchmarks). Bare *good* and *nice* have no root; they go the same way, to a met sake.
+**Compare with:** *too* and *enough* rank against a [sake bar](comparatives.md#bars). Bare *good* and *nice* have no root; they go the same way, to a met sake.
 
 ### Wrong, ugly {#wrong-ugly}
 
-**Needs:** [Fault](causation.md#fault) · [Judgment benchmarks](comparatives.md#judgment-benchmarks) · [Negation](joins.md#negation-u) · [Unmet](sakes.md#sake-changeability)
+**Needs:** [Fault](causation.md#fault) · [Every bar](comparatives.md#stance-bars) · [Negation](joins.md#negation-u) · [Unmet](sakes.md#sake-changeability)
 
 English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrect** (not matching), **morally wrong** (someone broke a norm), or **bad for someone** (a sake unmet). *Ugly* is **not beautiful**, **less beautiful than a bar**, or **unpleasant to me**.
 
@@ -430,7 +430,7 @@ English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrec
 | *wrong* (bad for someone) | `thanathum balahen` | the act detracted from Alahen's sake |
 | *badly* (manner) | `hegegam hul` | not *properly* ([manner words](say-amounts.md#manner-words)) |
 | *ugly* (not beautiful) | `gahabel gul` | not beautiful |
-| *ugly* (below a bar) | `zumun zuel gahabel` | less beautiful than my standard |
+| *ugly* (below a bar) | `thevegem zuel gahabel` | less beautiful than I hoped |
 | *ugly* (unpleasant to me) | `gozothum` | my noun detracts from pleasure |
 
 > `zezebel gegegal gul.`
@@ -439,11 +439,11 @@ English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrec
 >
 > "The telling is wrong."
 
-> `zahaben zumun zuel gahabel.`
+> `zahaben thevegem zuel gahabel.`
 >
-> [z-Ahaben | z-my-standard | z-rank/less | g-hibiscus]
+> [z-Ahaben | th-hope | z-rank/less | g-hibiscus]
 >
-> "Ahaben is uglier than my standard."
+> "Ahaben is less beautiful than I hoped."
 
 **Compare with:** *bad*, *terrible* and the other bare evaluatives have no root; they route to an unmet sake, a rank against a bar, or a specific content root.
 

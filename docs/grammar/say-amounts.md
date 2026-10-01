@@ -235,7 +235,7 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 | *gradually* / *slowly* | `hezehom` |
 | *widely* / *broadly* | `horodam` |
 | *deeply* | `hebegem` |
-| *easily* (*with less effort than usual*) | `zehon zuel hawom` before the verb |
+| *easily* (*with less effort than usual*) | `thobam zuel hawom` before the verb |
 
 > `zazawan heyayem vowogal.`
 >
@@ -243,7 +243,7 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 >
 > "Azawan walks carefully."
 
-The easy / hard pair on a quality ranks effort against a bar ([vague amounts](comparatives.md#vague-amounts)): `zubugal zehon zuel gawom` is *the book is easy* (less effort than typical), and `zel` in place of `zuel` is *hard*.
+The easy / hard pair on a quality ranks effort against a bar ([vague amounts](comparatives.md#vague-amounts)): `zubugal thobam zuel gawom` is *the book is easy* (less effort than usual), and `zel` in place of `zuel` is *hard*.
 
 ### How often {#frequency-words}
 
@@ -255,7 +255,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 |---------|--------|
 | *always* / *constantly* | `hual` |
 | *usually* / *normally* / *generally* / *regularly* (*as a rule*) | `huam` |
-| *often* / *frequently* | `zehon zel hral` before the verb |
+| *often* / *frequently* | `thobam zel hral` before the verb |
 | *sometimes* / *occasionally* | `har` |
 | *daily* | `huwem bual gazazam` |
 | *weekly* | `huwem bual gagadam` |
@@ -270,16 +270,15 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 
 ### How many and how big {#quantity-words}
 
-**Needs:** [Vague amounts](comparatives.md#vague-amounts) · [Sake benchmarks](comparatives.md#sake-benchmarks) · [Measure phrases](numbers-applied.md#measure-phrases) · [Rays](numbers-applied.md#rays) · [Fractions](numbers-applied.md#fractions)
+**Needs:** [Vague amounts](comparatives.md#vague-amounts) · [Bars](comparatives.md#bars) · [Measure phrases](numbers-applied.md#measure-phrases) · [Rays](numbers-applied.md#rays) · [Fractions](numbers-applied.md#fractions)
 
 | English | Agazan |
 |---------|--------|
-| *numerous* / *considerable* (*many cats*) | `zagadulx zehon zel gral` |
-| *enough* / *sufficient* / *adequate* / *full* (as much as is needed) | `zagadulx zegan zael gral` |
-| *too many* / *excess* / *extra* / *spare* (more than needed) | `zagadulx zegan zel gral` |
+| *numerous* / *considerable* (*many cats*) | `zagadulx thobam zel gral` |
+| *enough* / *sufficient* / *adequate* / *full* (as much as is needed) | `zagadulx thegatham zael gral` |
+| *too many* / *excess* / *extra* / *spare* (more than needed) | `zagadulx thegatham zel gral` |
 | *quantity* (*how many*) | the amount scale `gral` |
-| *normal* / *standard* (*normally big*) | the bar `zehon` with `zael`: `zodogal zehon zael gelavam` |
-| *ordinary* / *medium* / *average* | the bar `zuyen` with `zael` |
+| *normal* / *standard* / *ordinary* / *medium* / *average* (*normally big*) | the PATTERN bar with `zael`: `zodogal thobam zael gelavam` |
 | *single* (*just one*) | the plain number `g+1` |
 | *secondary* / *second* | the rank `g#2` |
 | *whole* / *entire* / *complete* / *total* / *ideal* (nothing lacking) | `gahahom` (*perfection*) |
@@ -299,38 +298,38 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 
 ### Expensive, cheap, weak, remarkable {#bar-words}
 
-**Needs:** [Vague amounts](comparatives.md#vague-amounts) · [Judgment benchmarks](comparatives.md#judgment-benchmarks) · [Adjectives](clause.md#adjectives-ɡ) · [Important](say-reasons.md#sake-words)
+**Needs:** [Vague amounts](comparatives.md#vague-amounts) · [Every bar](comparatives.md#stance-bars) · [Adjectives](clause.md#adjectives-ɡ) · [Important](say-reasons.md#sake-words)
 
-English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an unstated usual. Agazan always states the bar. Write the typical bar **`zehon`**, then the rank word (**`zel`** for *more than*, **`zuel`** for *less than*), then the quality as an adjective. The quality is the root that names what is measured, in its abstract sense (**-m**): cost, strength, effort.
+English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an unstated usual. Agazan always states the bar. Write the PATTERN bar **`thobam`** (*than usual*), then the rank word (**`zel`** for *more than*, **`zuel`** for *less than*), then the quality as an adjective. The quality is the root that names what is measured, in its abstract sense (**-m**): cost, strength, effort.
 
 | English | Agazan |
 |---------|--------|
-| *expensive* / *costly* / *pricey* | `zehon zel gadahum` (costs more than usual) |
-| *cheap* / *inexpensive* | `zehon zuel gadahum` |
-| *weak* / *feeble* / *frail* | `zehon zuel gabezem` (less strength than usual) |
-| *busy* / *hard-working* | `zehon zel gawom` (more effort than usual) |
-| *far* / *distant* / *remote* | `zehon zel gazedam` (farther than usual) |
-| *wide* / *broad* | `zehon zel gorodam` |
-| *narrow* | `zehon zuel gorodam` |
-| *deep* | `zehon zel gebegem` |
-| *shallow* | `zehon zuel gebegem` |
+| *expensive* / *costly* / *pricey* | `thobam zel gadahum` (costs more than usual) |
+| *cheap* / *inexpensive* | `thobam zuel gadahum` |
+| *weak* / *feeble* / *frail* | `thobam zuel gabezem` (less strength than usual) |
+| *busy* / *hard-working* | `thobam zel gawom` (more effort than usual) |
+| *far* / *distant* / *remote* | `thobam zel gazedam` (farther than usual) |
+| *wide* / *broad* | `thobam zel gorodam` |
+| *narrow* | `thobam zuel gorodam` |
+| *deep* | `thobam zel gebegem` |
+| *shallow* | `thobam zuel gebegem` |
 | *thick* | `gabogul gul` (not flat) |
-| *remarkable* / *special* (unusual) / *outstanding* | `zehon zel` + the quality that stands out: `zehon zel gelavam` |
-| *major* / *significant* (matters more than usual) | `zehon zel gamethal` ([important](say-reasons.md#sake-words)) |
+| *remarkable* / *special* (unusual) / *outstanding* | `thobam zel` + the quality that stands out: `thobam zel gelavam` |
+| *major* / *significant* (matters more than usual) | `thobam zel gamethal` ([important](say-reasons.md#sake-words)) |
 
-> `zubugal zehon zel gadahum.`
+> `zubugal thobam zel gadahum.`
 >
-> [z-book | z-Typical | z-rank/more | g-cost]
+> [z-book | th-PATTERN | z-rank/more | g-cost]
 >
 > "The book is expensive."
 
-> `zazawan zehon zuel gabezem.`
+> `zazawan thobam zuel gabezem.`
 >
-> [z-Azawan | z-Typical | z-rank/less | g-strength]
+> [z-Azawan | th-PATTERN | z-rank/less | g-strength]
 >
 > "Azawan is weak."
 
-**Compare with:** a bar you do not share with everyone is **`zumun`** (*my standard*), and a bar set by what a need requires is **`zegan`** ([sake benchmarks](comparatives.md#sake-benchmarks)). *Too expensive* is `zegan zel gadahum`. Bare *good* and *bad* have no root ([wrong, ugly](say-reasons.md#wrong-ugly)).
+**Compare with:** any stance that sets a value can be the bar ([every bar](comparatives.md#stance-bars)). *More expensive than I expected* is FELT, `thahom zel gadahum`, and *too expensive* is a sake bar, `thegatham zel gadahum`. Bare *good* and *bad* have no root ([wrong, ugly](say-reasons.md#wrong-ugly)).
 
 ### Just, only, also, especially {#focus-words}
 
@@ -378,7 +377,7 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 | English | Agazan | Reading |
 |---------|--------|---------|
 | *group* / *bunch* | `zodogalx` | some dogs, as a set here |
-| *crowd* | `zebezalx zehon zel gral` | people, more than usual |
+| *crowd* | `zebezalx thobam zel gral` | people, more than usual |
 | *pair* (two of a kind) | `zodogalx g+2` | two dogs |
 | *couple* (two people who are together) | `zagabal` | the everyday sense of `agaba` |
 | *titled group* (the group named Ahodon) | `zahodonx` | named, **-nx** |
@@ -395,9 +394,9 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 >
 > "A group of dogs walks."
 
-> `zebezalx zehon zel gral.`
+> `zebezalx thobam zel gral.`
 >
-> [z-person-x | z-Typical | z-rank/more | g-amount]
+> [z-person-x | th-PATTERN | z-rank/more | g-amount]
 >
 > "There is a crowd." — more people than the usual amount
 
@@ -429,7 +428,7 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bezezem g
 | coulomb | `azoba` *coulomb* | `bazobam g+2` | `araze` *charge* |
 | radian | `adawe` *radian* | `badawem g+1` | `eredu` *cycle* |
 
-**Related form:** normative *my standard* **`zumun`** vs performance **`zamagon`** ([comparatives](comparatives.md#judgment-benchmarks)) is a judgment bar, not a unit. General **`ROOTl+1`** (*primary / singleton of a kind*) is [numeric derivation](numeric-derivation.md#scalar-digit-morphs), not an SI alias.
+**Related form:** general **`ROOTl+1`** (*primary / singleton of a kind*) is [numeric derivation](numeric-derivation.md#scalar-digit-morphs), not an SI alias.
 
 ### *Until tomorrow*, *by tomorrow* {#pole-from-now}
 <a id="until-tomorrow"></a>
@@ -559,7 +558,6 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
-| *Typical* | `ehon` | `ehol` *hamster* |
 | *challenge* | `gamadam` | |
 | *as-of.ledger* | `wuhum` | |
 

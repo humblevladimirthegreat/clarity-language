@@ -27,7 +27,6 @@ const MARKED: Record<string, string> = { "🤝": "pronoun", "😐": "pronoun", "
 const FORCE_LONG = new Set(["🎤", "🎧"]);
 /** Lower number is placed earlier. Glasses outranks every frequency rank. */
 const PRIORITY_OVERRIDES: Record<string, number> = { "👓": 0 };
-const JUDGMENT = new Set(["☯️", "🐹", "🪞", "👥", "🥼", "🌐", "💦"]);
 
 /** A root that stays put this run, with its overlay groups, so new short roots keep their spacing from it. */
 export type FixedRoot = { root: string; groups: Set<string> };
@@ -109,11 +108,8 @@ export function overlayGroups(overlays: OverlayRow[]): Map<string, Set<string>> 
   const groups = new Map<string, Set<string>>();
   for (const overlay of overlays) {
     if (isJoinOverlayKind(overlay.kind) || !overlay.emoji) continue;
-    const judgment = overlay.kind === "benchmark" && JUDGMENT.has(overlay.emoji);
-    const sake = overlay.kind === "benchmark" && !judgment;
-    const sub = judgment ? "/judgment" : sake ? "/sake" : "";
     const set = groups.get(overlay.emoji) ?? new Set<string>();
-    set.add(`kind:${overlay.pos}/${overlay.kind}${sub}`);
+    set.add(`kind:${overlay.pos}/${overlay.kind}`);
     set.add(`pos:${overlay.pos}`);
     groups.set(overlay.emoji, set);
   }
@@ -148,21 +144,16 @@ function indexRows(rows: PlaceRow[], overlays: OverlayRow[], pron: Map<string, s
   return indexed;
 }
 
-type GroupRule = { kind: boolean; bench: boolean; pos: boolean };
+type GroupRule = { kind: boolean; pos: boolean };
 type PairRule = GroupRule & { a: number; b: number };
 
 /**
  * Spacing two short roots owe each other. Same overlay group (`kind`): no single-letter
- * difference and a different consonant. Sake vs judgment benchmark (`bench`): a different first
- * two letters, and a single-letter difference only when that letter is the consonant. Same PoS
- * (`pos`): not identical.
+ * difference and a different consonant. Same PoS (`pos`): not identical.
  */
 function groupRule(a: Set<string>, b: Set<string>): GroupRule {
   const shared = [...a].filter((group) => b.has(group));
-  const benchOf = (groups: Set<string>) => [...groups].some((group) => /benchmark\/(judgment|sake)/.test(group));
-  const judgmentOf = (groups: Set<string>) => [...groups].some((group) => group.endsWith("judgment"));
   return {
-    bench: benchOf(a) && benchOf(b) && judgmentOf(a) !== judgmentOf(b),
     kind: shared.some((group) => group.startsWith("kind:")),
     pos: shared.some((group) => group.startsWith("pos:")),
   };
@@ -173,7 +164,6 @@ function pairHard(pair: GroupRule, x: string, y: string): number {
   const distance = ham(x, y);
   if (distance === 0) violations++;
   if (pair.kind && (distance < 2 || x[1] === y[1])) violations++;
-  if (pair.bench && (x.slice(0, 2) === y.slice(0, 2) || (distance === 1 && x[1] === y[1]))) violations++;
   return violations;
 }
 
@@ -204,7 +194,7 @@ export function annealShortRoots(
   const fixedRules = items.map((item) =>
     (options.fixed ?? []).flatMap((fixed) => {
       const rule = groupRule(item.groups, fixed.groups);
-      return rule.kind || rule.bench ? [{ fixed, rule }] : [];
+      return rule.kind ? [{ fixed, rule }] : [];
     }),
   );
   const fixedHard = (i: number, form: string) =>
@@ -216,7 +206,7 @@ export function annealShortRoots(
   for (let a = 0; a < items.length; a++) {
     for (let b = a + 1; b < items.length; b++) {
       const pair: PairRule = { a, b, ...groupRule(items[a]!.groups, items[b]!.groups) };
-      if (pair.kind || pair.bench || pair.pos) pairs.push(pair);
+      if (pair.kind || pair.pos) pairs.push(pair);
     }
   }
   const byVar: PairRule[][] = items.map(() => []);

@@ -104,7 +104,9 @@ When a published Agazan root already matches, write the ordinary word (`dagadul`
 
 Outside a clause, a foreign name or word is a prefix-less fence with the same marks: [citation forms](word-endings.md#citation-forms) (<code>@&lt;Sam&gt;</code>). A span in a sentence still takes a role letter, because it fills a sentence slot (<code>z@&lt;Sam&gt;</code>).
 
-Under `/y/`, the **`@`** mark decides the job, as **-n** does on a native word: a named span calls that person (<code>y@&lt;Sam&gt;</code>, *Sam!*), and a span without **`@`** is a foreign [interjection](speech-moves.md#interjections) (<code>y&lt;Amen&gt;</code>, *Amen!*).
+### Calls and reactions (`/y/`) {#y-spans}
+
+Under `/y/`, a span calls someone or reacts, so only an opaque `<…>` or a cite `[…]` goes there, and it opens the turn, before the act word. The **`@`** mark decides the job, as **-n** does on a native word: a named span calls that person (<code>y@&lt;Sam&gt;</code>, *Sam!*), and a span without **`@`** is a foreign [interjection](speech-moves.md#interjections) (<code>y&lt;Amen&gt;</code>, *Amen!*). A mention `{…}` talks about a word and an aside `(…)` comments on the sentence, so neither one calls or reacts: there is no `/y/` mention or aside.
 
 ### Asides (`th(…)`)
 <a id="asides"></a>
@@ -403,6 +405,22 @@ Hedged proper (`@~`) is written **`d@[…]`** only (spoken as the **proper** ope
 > z-Azawan | d-CITE.multi[z-Alahen | v-run] | v-tell . z-Ahaben | d-←cite-x-multi | v-tell
 >
 > "Azawan says, 'Alahen runs.' Ahaben says that too."
+
+### Spoken calls and reactions (`/y/`) {#y-spoken-spans}
+
+A spoken span under `/y/` opens the turn the same way a written one does, and its ending does the job of the written mark: **-n** (`@`) calls, and **-l** / **-m** (no mark / `~`) react. Only TYPE **u** (opaque) and **a** (cite) go under `/y/`.
+
+> `yuxan sam xuxul yol zazawan vowogal.`
+>
+> y-NAME.OPAQUE.multi["sam"] | y-question | z-Azawan | v-walk
+>
+> "Sam, does Azawan walk?"
+
+> `yuxam amen xuxul.`
+>
+> y-OPAQUE.multi.about["amen"]
+>
+> "Amen, roughly."
 
 ### Writing ↔ speech map
 

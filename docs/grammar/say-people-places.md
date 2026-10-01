@@ -421,7 +421,7 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *case* (lawsuit) | `zahahulehegol` | a problem put before a judge |
 | *case* (container) | `zabegol` | a package |
 | *deal* / *bargain* (a swap) | `zazawan dubugal hehem bamol vehem.` | trades a book for money |
-| *deal* (*a great deal*) | `zehon zel gral` | more than the usual amount |
+| *deal* (*a great deal*) | `thobam zel gral` | more than the usual amount |
 | *bid* / *offer* (a price) | `zazawan damol vebel hehem bubugal.` | offers money in exchange for the book |
 | *contract* (agreement) | `thuxegol` on the clause | CONSENT, binding |
 | *figure out* / *find out* | `zazawan dubugal vamagal.` | finds the object |

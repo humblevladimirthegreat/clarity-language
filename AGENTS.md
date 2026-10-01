@@ -29,7 +29,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `restrictors.md` | `/h/` / `/w/` restrictors, habitual. |
 | `joins.md` | Phrase and clause joins, fences, set vs rank, arity, negation distribution. |
 | `join-across-roles.md` | Joins across roles, join-act verbs, join-relations. |
-| `comparatives.md` | Comparatives, superlatives, equatives, manner scale, judgment benchmarks. |
+| `comparatives.md` | Comparatives, superlatives, equatives, manner scale, stance bars. |
 | `predication.md` | Classification, identity, label scope. |
 | `causation.md` | Causation / condition poles, fault, CAUSE mood. |
 | `sakes.md` | Sakes, emotion compose, permission, consent. |

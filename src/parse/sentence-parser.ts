@@ -35,7 +35,7 @@ import {
 } from "./tokens.js";
 import { isAsOfOverlay, isNamedStandIn, isStandIn } from "./classify.js";
 import { assignHookJobs } from "./hook-jobs.js";
-import { isScaleStem, RANK_SERIES } from "./series.js";
+import { BAR_SERIES, isScaleStem, RANK_SERIES } from "./series.js";
 import type {
   BodyClause,
   Clause,
@@ -136,6 +136,34 @@ function laAfterW(parser: AgazanSentenceParser, from = 1): number {
 /** The join token that closes a list at each noun-phrase level. */
 const NP_JOIN = { z: JoinZ, d: JoinD, b: JoinB } as const;
 
+/** A spoken span open under `/y/` (`yuxan` … `xuxul`): a call or a reaction at the left edge. */
+function isYSpanOpen(token: IToken): boolean {
+  return token.tokenType === SpanOpen && (token.payload as LexWord | undefined)?.pos === "y";
+}
+
+function isStanceWord(token: IToken): boolean {
+  return token.tokenType === H && (token.payload as LexWord | undefined)?.pos === "th";
+}
+
+/**
+ * A `/th/` stance word right before a closed or open rank join of this level (`zel` / `zuel` / `zael`, -l or -m)
+ * is that fence's bar (comparatives.md § bars). Its hosted tail (`/b/`, a `/b/` join, an offset amount, `barl`)
+ * may sit between; so may a second stance word, which enforce rejects.
+ */
+function rankBarAhead(parser: AgazanSentenceParser, level: NpSlot, from = 1): boolean {
+  let i = laAfterW(parser, from);
+  if (!isStanceWord(parser.lookahead(i))) return false;
+  for (; ; i++) {
+    const tok = parser.lookahead(i);
+    if (tok.tokenType === NP_JOIN[level]) {
+      const ending = (tok.payload as LexWord | undefined)?.ending;
+      return BAR_SERIES.has(joinSeries(tok)) && (ending === "l" || ending === "m");
+    }
+    const number = (tok.payload as LexWord | undefined)?.family?.kind === "number";
+    if (!(isStanceWord(tok) || tokenIs(tok, W, B, JoinB, Odo) || (tok.tokenType === G && number))) return false;
+  }
+}
+
 function isNpSlotLookahead(parser: AgazanSentenceParser, slot: NpSlot): boolean {
   if (npSlot(parser.lookahead(1)) === slot) return true;
   if (isGlHead(parser.lookahead(1)) && npSlot(parser.lookahead(2)) === slot) return true;
@@ -167,7 +195,7 @@ class AgazanSentenceParser extends CstParser {
   public utterance = this.RULE("utterance", () => {
     this.OR([
       {
-        GATE: () => tokenIs(this.LA(1), Polar, Vocative, Interjection, Force) || this.discourseHookAhead(),
+        GATE: () => tokenIs(this.LA(1), Polar, Vocative, Interjection, Force) || this.discourseHookAhead() || isYSpanOpen(this.LA(1)),
         ALT: () => {
           this.SUBRULE(this.leftEdge);
           this.OPTION(() => {
@@ -185,7 +213,7 @@ class AgazanSentenceParser extends CstParser {
       this.CONSUME(Period);
       // After a sentence end, a turn word or hook opens a new utterance instead (the document loop takes it).
       this.OPTION2({
-        GATE: () => !tokenIs(this.LA(1), Polar, Force, Vocative, Interjection, Hook),
+        GATE: () => !tokenIs(this.LA(1), Polar, Force, Vocative, Interjection, Hook) && !isYSpanOpen(this.LA(1)),
         DEF: () => this.SUBRULE3(this.bodyClause, { LABEL: "nextBody" }),
       });
     });
@@ -196,10 +224,12 @@ class AgazanSentenceParser extends CstParser {
       {
         ALT: () => {
           this.AT_LEAST_ONE({
-            GATE: () => tokenIs(this.LA(1), Vocative, Interjection, Polar) || this.discourseHookAhead(),
+            GATE: () => tokenIs(this.LA(1), Vocative, Interjection, Polar) || this.discourseHookAhead() || isYSpanOpen(this.LA(1)),
             DEF: () => this.OR2([
               { ALT: () => this.CONSUME(Vocative) },
               { ALT: () => this.CONSUME(Interjection) },
+              // A spoken `/y/` span (open … close) calls or reacts, like a written `y@<…>` / `y<…>` (spans.md#y-spans).
+              { GATE: () => isYSpanOpen(this.LA(1)), ALT: () => this.SUBRULE(this.spanUnit, { LABEL: "ySpan" }) },
               { ALT: () => this.CONSUME(Polar) },
               {
                 GATE: () => this.discourseHookAhead(),
@@ -322,7 +352,8 @@ class AgazanSentenceParser extends CstParser {
   public unit = this.RULE("unit", () => {
     this.OR([
       { GATE: () => this.LA(1).tokenType === IslandEdge, ALT: () => this.SUBRULE(this.islandUnit) },
-      { GATE: () => this.LA(1).tokenType === SpanOpen, ALT: () => this.SUBRULE(this.spanUnit) },
+      // A `/y/` span opens a turn (left edge); inside a clause there is no `/y/` slot.
+      { GATE: () => this.LA(1).tokenType === SpanOpen && !isYSpanOpen(this.LA(1)), ALT: () => this.SUBRULE(this.spanUnit) },
       {
         GATE: () => isNpSlotLookahead(this, "z"),
         ALT: () => this.SUBRULE(this.npCoord, { ARGS: ["z"], LABEL: "zCoord" }),
@@ -437,6 +468,13 @@ class AgazanSentenceParser extends CstParser {
             GATE: () => isNpSlotLookahead(this, level) && this.LA(laAfterW(this)).tokenType !== NP_JOIN[level],
             DEF: () => {
               this.SUBRULE(this.npConjunct);
+            },
+          });
+          // A stance word before a rank join is the comparee: the bar (comparatives.md § bars).
+          this.MANY({
+            GATE: () => rankBarAhead(this, level),
+            DEF: () => {
+              this.SUBRULE(this.hUnitRule, { LABEL: "bar" });
             },
           });
           this.OPTION({
@@ -697,7 +735,7 @@ class AgazanSentenceParser extends CstParser {
         this.SUBRULE2(this.gPackage);
       },
     });
-    // A hook + `/b/` right before a noun join word belongs to the item before it (joins.md § SHARED after the join).
+    // A hook + `/b/` right before a noun join word, or before a rank fence's bar, belongs to the item before it (joins.md § SHARED after the join).
     this.OPTION2({
       GATE: () => this.itemHookAhead(),
       DEF: () => {
@@ -710,7 +748,9 @@ class AgazanSentenceParser extends CstParser {
   private itemHookAhead(): boolean {
     if (this.LA(1).tokenType !== Hook || this.LA(2).tokenType !== B) return false;
     const next = this.LA(laAfterW(this, 3));
-    return next.tokenType === JoinZ || next.tokenType === JoinD || next.tokenType === JoinB;
+    if (next.tokenType === JoinZ || next.tokenType === JoinD || next.tokenType === JoinB) return true;
+    // …or right before the fence's bar (comparatives.md § bars).
+    return (["z", "d", "b"] as const).some((level) => rankBarAhead(this, level, 3));
   }
 
   public asOfWPair = this.RULE("asOfWPair", () => {
@@ -793,11 +833,31 @@ function hostedStandIn(hosted: Hosted): LexWord | undefined {
   return isStandIn(stand) ? stand : undefined;
 }
 
-/** The forward stand-in a unit holds (a noun's head, or an `/h/` host's hosted `/b/`): the slot the next sentence fills. */
+/** The forward stand-in a unit holds (a noun's head, or an `/h/` host's or a bar's hosted `/b/`): the slot the next sentence fills. */
 function standInIn(unit: Unit): LexWord | undefined {
-  if (unit.kind === "np") return npPackages(unit.coord).find((pkg) => isStandIn(pkg.head))?.head;
+  if (unit.kind === "np") {
+    const head = npPackages(unit.coord).find((pkg) => isStandIn(pkg.head))?.head;
+    if (head) return head;
+    for (const part of unit.coord.parts) {
+      for (const item of part.items) if (item.kind === "bar" && item.bar.hosted) return hostedStandIn(item.bar.hosted);
+    }
+    return undefined;
+  }
   if (unit.kind === "h" && unit.unit.hosted) return hostedStandIn(unit.unit.hosted);
   return undefined;
+}
+
+/**
+ * A bar's `barl` ends its sentence at the fence (comparatives.md#bars): noun parts the grammar ran on
+ * past the fence's scale start the next sentence, so they move to a unit of their own.
+ */
+function splitAfterBarStandIn(units: Unit[], index: number): void {
+  const unit = units[index];
+  if (unit?.kind !== "np") return;
+  const at = unit.coord.parts.findIndex((part) => part.items.some((item) => item.kind === "bar" && item.bar.hosted && hostedStandIn(item.bar.hosted)));
+  if (at < 0 || at === unit.coord.parts.length - 1) return;
+  const rest = unit.coord.parts.slice(at + 1);
+  units.splice(index, 1, { kind: "np", coord: { ...unit.coord, parts: unit.coord.parts.slice(0, at + 1) } }, { kind: "np", coord: { ...unit.coord, parts: rest } });
 }
 
 /** Split a clause after unit `index`, whose stand-in `orodo` is filled by the units that follow. */
@@ -935,6 +995,7 @@ function finalizeClause(units: Unit[]): Clause {
 
   const orodoIdx = resolved.findIndex((unit) => standInIn(unit));
   if (orodoIdx < 0) return { units: resolved };
+  splitAfterBarStandIn(resolved, orodoIdx);
   return splitAtStandIn(resolved, orodoIdx, standInIn(resolved[orodoIdx]!)!);
 }
 
@@ -1121,7 +1182,10 @@ function buildNpCoord(cst: CstNode): NpCoord {
   const built = parts.map((part) => {
     const close = partJoinClose(part, "npJoinClose");
     const { join, shared, joinModifiers, factor } = joinFromClose(close);
-    const items = childNodes(part, "npConjunct").map(buildNpItem);
+    const items: NpItem[] = [
+      ...childNodes(part, "npConjunct").map(buildNpItem),
+      ...childNodes(part, "bar").map((bar): NpItem => ({ kind: "bar", bar: buildHUnit(bar) })),
+    ];
     return { items, join, shared, ...(joinModifiers ? { joinModifiers } : {}), ...(factor ? { factor } : {}) };
   });
   const joinTok = built.find((part) => part.join)?.join;
@@ -1432,11 +1496,16 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
   const leadTok = childToken(cst, "LeadForce");
   const impliedForce = force ? undefined : impliedForceFromPolars(polars) ?? "yal";
   const hookModifiers = childTokens(cst, "W").map(lexWordFromToken);
+  const spans = childNodes(cst, "ySpan").map(buildSpan).map((span) => ({
+    job: span.open.ending === "l" || span.open.ending === "m" ? ("interjection" as const) : ("vocative" as const),
+    span,
+  }));
 
   return {
     vocatives,
     interjections,
     polars,
+    ...(spans.length > 0 ? { spans } : {}),
     hook: hookTok ? lexWordFromToken(hookTok) : undefined,
     hookModifiers: hookModifiers.length > 0 ? hookModifiers : undefined,
     leadForce: leadTok ? lexWordFromToken(leadTok) : undefined,

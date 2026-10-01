@@ -9,7 +9,7 @@
 import type { IToken } from "chevrotain";
 
 import type { ClassifyTables } from "./classify.js";
-import { ARROW_ROOTS, isAsOfOverlay, isGroundsChannel, isStandIn } from "./classify.js";
+import { ARROW_ROOTS, isAsOfOverlay, isBarStance, isGroundsChannel, isStandIn } from "./classify.js";
 import { REJECTIONS, type RejectionId } from "./constructions.js";
 import { SentenceParseError } from "./sentence-parser.js";
 import {
@@ -21,6 +21,7 @@ import {
   Period,
   QMark,
   SpanAtom,
+  SpanClose,
   SpanOpen,
   Tone,
   type TokenPayload,
@@ -145,7 +146,8 @@ export function enforceTokens(tokens: IToken[], tables: ClassifyTables): void {
         branch === "yVocative" ||
         branch === "yInterjection" ||
         branch === "greeting" ||
-        branch === "hook";
+        branch === "hook" ||
+        endsYSpan(tokens, i - 1);
       if (!opensBody) throw new ConstructionError("linkerMidSentence", token.image);
     }
     const payload = token.payload as TokenPayload | undefined;
@@ -153,6 +155,20 @@ export function enforceTokens(tokens: IToken[], tables: ClassifyTables): void {
     enforceWord(payload, tables);
     enforceStackedHookR(payload, tokens, i);
   });
+}
+
+/** Token `j` ends a spoken `/y/` span at the left edge: its close, or an atomic open's one word (spans.md#y-spoken-spans). */
+function endsYSpan(tokens: IToken[], j: number): boolean {
+  const open = (k: number) => {
+    const word = tokens[k]?.tokenType === SpanOpen ? tokenWord(tokens[k]) : undefined;
+    return word?.pos === "y" && word.family.kind === "x" ? word.family : undefined;
+  };
+  if (open(j - 1)?.edgeVowel === "o") return true;
+  if (tokens[j]?.tokenType !== SpanClose) return false;
+  for (let k = j - 1; k >= 0; k--) {
+    if (tokens[k]!.tokenType === SpanOpen) return open(k)?.edgeVowel === "a";
+  }
+  return false;
 }
 
 function tokenWord(token: IToken | undefined): LexWord | undefined {
@@ -209,6 +225,13 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
     throw new ConstructionError("pluralInterjection", word.raw);
   }
   const family = word.family;
+  // Under `/y/` only an opaque or cite span calls or reacts (spans.md#y-spans).
+  if (word.pos === "y") {
+    const mentionOrAside =
+      (family.kind === "writingSpan" && (family.bracket === "{" || family.bracket === "(")) ||
+      (family.kind === "x" && family.xFamily === "span" && (family.typeVowel === "o" || family.typeVowel === "e"));
+    if (mentionOrAside) throw new ConstructionError("ySpanType", word.raw);
+  }
   if (family.kind === "x" && family.xFamily === "sake") {
     if (word.pos && !SAKE_POS.has(word.pos)) throw new ConstructionError("sakeSlot", word.raw);
     if (family.horizon && (family.stanceVowel === "e" || word.ending === "n")) {
@@ -296,6 +319,18 @@ function isWarrant(word: LexWord): boolean {
   return word.pos === "th" && (word.overlay?.kind === "evidential" || word.overlay?.kind === "plan");
 }
 
+/** WITNESSED takes only an earlier offset, LIVE none, and PLAN only a later one (knowing.md#dated-channel). */
+function enforceChannelSign(word: LexWord, hosted: HUnit["hosted"]): void {
+  const sign = offsetSign(hosted?.bound, hosted?.amount);
+  if (!sign || word.pos !== "th" || !word.overlay) return;
+  const base = word.overlay.gloss.split(".")[0];
+  const wrong =
+    (word.overlay.kind === "evidential" && base === "WITNESSED" && sign !== "-") ||
+    (word.overlay.kind === "evidential" && base === "LIVE") ||
+    (word.overlay.kind === "plan" && sign !== "+");
+  if (wrong) throw new ConstructionError("channelOffsetSign", `${word.raw} ${hosted!.bound.raw}${hosted!.amount ? ` ${hosted!.amount.raw}` : ""}`);
+}
+
 /** Offsets from now (D-10): channel sign, stance-only as-of offsets, and time poles that need a warrant. */
 function enforceOffsets(units: Unit[], directive: boolean): void {
   let warranted = directive;
@@ -308,19 +343,30 @@ function enforceOffsets(units: Unit[], directive: boolean): void {
     if (!sign) continue;
     const detail = `${word.raw} ${hosted!.bound.raw}${hosted!.amount ? ` ${hosted!.amount.raw}` : ""}`;
     if (isAsOfOverlay(word) && word.pos !== "th") throw new ConstructionError("asOfOffset", detail);
-    if (word.pos === "th" && word.overlay) {
-      const base = word.overlay.gloss.split(".")[0];
-      const wrong =
-        (word.overlay.kind === "evidential" && base === "WITNESSED" && sign !== "-") ||
-        (word.overlay.kind === "evidential" && base === "LIVE") ||
-        (word.overlay.kind === "plan" && sign !== "+");
-      if (wrong) throw new ConstructionError("channelOffsetSign", detail);
-    }
+    enforceChannelSign(word, hosted);
     if (isTimePole(word)) poles.push(unit.unit);
   }
   if (!warranted && poles.length > 0) {
     const pole = poles[0]!;
     throw new ConstructionError("poleOffsetWarrant", `${pole.word.raw} ${pole.hosted!.bound.raw}`);
+  }
+}
+
+/** A rank fence's bar: one value-setting stance, ranked against one item (comparatives.md#bars). */
+function enforceBars(coord: NpCoord, tables: ClassifyTables): void {
+  for (const part of coord.parts) {
+    const bars = part.items.flatMap((item) => (item.kind === "bar" ? [item.bar] : []));
+    if (bars.length === 0) continue;
+    for (const bar of bars) {
+      if (!isBarStance(bar.word, tables)) throw new ConstructionError("barKind", `${bar.word.raw} ${part.join?.raw ?? ""}`.trim());
+      enforceChannelSign(bar.word, bar.hosted);
+      if (bar.hosted && (isStandIn(bar.hosted.bound) || (bar.hosted.grounds && isStandIn(bar.hosted.grounds)))) {
+        enforceHostedStandIn([], 0, bar, tables);
+      }
+    }
+    if (bars.length > 1 || part.items.length - bars.length > 1) {
+      throw new ConstructionError("barCount", `${bars.map((bar) => bar.word.raw).join(" ")} ${part.join?.raw ?? ""}`.trim());
+    }
   }
 }
 
@@ -371,6 +417,9 @@ function structureVisitor(tables: ClassifyTables): Visitor {
           enforceIsland(node.island, tables);
           return;
         case "np":
+          enforceBars(node.coord, tables);
+          enforceLeadingFence(node.coord.parts as { items: unknown[]; join?: LexWord }[], (part) => part.items.length === 0);
+          return;
         case "g":
         case "vp":
           enforceLeadingFence(node.coord.parts as { items: unknown[]; join?: LexWord }[], (part) => part.items.length === 0);

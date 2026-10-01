@@ -713,6 +713,68 @@ To check in, ask: `yom zazawan vezebel thuxegom.` (*Are you still OK with this?*
 
 **Compare with:** permission **`thegom`** can come from anyone with the standing to grant it: `zazawan vezebel thegom balahen.` means Alahen allowed it, which is not the same as the listener agreeing. `zSELFn vehahel thegom.` is *I'm allowed to sit* (someone let me); `zSELFn vehahel thuxegom.` is *I let myself sit*.
 
+### Enough and too (sake bars) {#sake-bars}
+
+English *enough* and *too much* compare an amount with **what a need requires**. A met sake word on `/th/`, written as the [bar](comparatives.md#bars) right before a rank join, is what that sake needs. The equal-rank join **`zael`** is *enough*. Rank **`zel`** is *too much*, and **`zuel`** is *not enough*. Use the unspecified sake **`ega`** when you do not name which sake.
+
+> `zedehel thegatham zael gral.`
+>
+> [z-tea | th-sake-met-any-term | z-equal-rank | g-amount]
+>
+> "There is enough tea."
+
+> `zedehel thegatham zel gral.`
+>
+> [z-tea | th-sake-met-any-term | z-rank/more | g-amount]
+>
+> "There is too much tea."
+
+> `zedehel thegatham zuel gral.`
+>
+> [z-tea | th-sake-met-any-term | z-rank/less | g-amount]
+>
+> "There is not enough tea."
+
+The bar keeps its [time-horizon ending](#time-horizon-endings-on-met), which now says **how long the payoff has to last**: **`thegathal`** is *enough to last*, and **`thegathar`** is *enough for now*.
+
+> `zedehel thegathar zael gral.`
+>
+> [z-tea | th-sake-met-immediate | z-equal-rank | g-amount]
+>
+> "There is enough tea for now."
+
+Name a sake to say which need sets the limit. With a quality as the scale, the same pattern gives *too ADJ* and *ADJ enough*. To say **whose** stake it is, put that person in `/b/` right after the bar.
+
+> `zedehel thoyutham zel gahadul.`
+>
+> [z-tea | th-physical-met-any-term | z-rank/more | g-hot]
+>
+> "The tea is too hot to be safe."
+
+> `zedehel thoyutham balahen zel gahadul.`
+>
+> [z-tea | [th-physical-met-any-term | b-Alahen] | z-rank/more | g-hot]
+>
+> "The tea is too hot for Alahen's health."
+
+On the [time scale](comparatives.md#time-scale), a sake bar is *too late* and *too early*:
+
+> `zazawan thegatham zuel bral vevahal.`
+>
+> [z-Azawan | th-sake-met-any-term | z-rank/less | b-later] | v-arrival
+>
+> "Azawan arrives too early."
+
+| Agazan | Use | English |
+|--------|-----|---------|
+| met sake bar + **`zael`** | reaches what the sake needs | *enough* / *ADJ enough* |
+| met sake bar + **`zel`** | past what the sake needs | *too much* / *too ADJ* / *too late* |
+| met sake bar + **`zuel`** | short of what the sake needs | *not enough* / *too early* |
+| bar ending **-l** / **-m** / **-r** | how long the payoff has to last | *enough to last* / *enough* / *enough for now* |
+| `/b/` right after the bar | whose stake | *too hot for Alahen* |
+
+**Compare with:** the same met word after the fence is about the whole claim: `zedehel zel gahadul thoyutham` is *the tea is the hottest, and that serves my health*.
+
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
@@ -747,6 +809,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *beneficence* | `ebel` | `ebel` *present* |
 | *pleasure* | `ozol` | `ozol` *strawberry* |
 | *physical* | `oyul` | `oyul` *lungs* |
+| *sake* | `egal` | `egal` *egg* |
 | *permission* | `egol` | `egol` *green* |
 | *forbidden* | `edel` | `edel` *no-entry* |
 | *always* | `hual` | |
@@ -887,6 +950,14 @@ z-Alahen | v-pray | th-purpose-motive-lasting
 `zazawan vezebel thebethem.`
 
 z-Azawan | v-tell | th-beneficence-ought-offered
+:::
+
+**18.** *Alahen prays too often to stay healthy.*
+
+::: details Show answer
+`zalahen thoyutham zel hral vebevol.`
+
+[z-Alahen | th-physical-met-any-term | z-rank/more | h-how-often] | v-pray
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
@@ -1051,6 +1122,15 @@ z-Alahen | v-hush | th-beneficence-motive-immediate
 z-bell | [w-purpose-unmet-modifiable | g-stimulus]
 
 *The bell detracts from purpose (modifiable).*
+:::
+
+**19.** `zagogalx thegatham zael gral.`
+
+::: details Show answer
+
+[z-candle-x | th-sake-met-any-term | z-equal-rank | g-amount]
+
+*There are enough candles.*
 :::
 
 ## See also

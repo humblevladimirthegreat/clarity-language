@@ -324,11 +324,11 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 15 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; digitless; number as verb / adverb / interjection / discourse as taught in this stage; **one of** measure / range / percent / time if you can keep the item to that decision (those topics live in **`numbers-applied.md`**) | Do not dump the whole Intermediate. 6–8 items |
 | 15 | `numbers-applied.md` | Intermediate | **exists** | Digit-string labels; clock / calendar time; percent vs points; measure phrases; ranges — as taught in this stage | One topic per item. 4–8 items |
 | 15 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the stage’s teach examples** — not unassigned cells | 4–6 items |
-| 15 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; manner `/h/` immediately after the join | |
-| 15 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zuyen`, `zehon`, **`zumun`** Mine vs performance **`zamagon`**, **`zogen`** Everyone, …) | **`amago`** allowed on performance items |
+| 15 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; manner `/h/` immediately after the join; PLAN bar right before the join | |
+| 15 | `comparatives.md` | Advanced | **exists** | Stance bars (channels, FORMER, ABIL, REQUIRE, attitudes); bar inside vs stance after the fence | |
 | 15 | `causation.md` | Intermediate | **exists** | Following-sentence **`barl`**; **`eve`** *because* / **`eda`** *iff*; asserted necessary **`tholum thevem`**; **CAUSE** **`ege`** **-m** | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
 | 15 | `causation.md` | Advanced | — | no Advanced stage | |
-| 16 | `sakes.md` | Intermediate | **exists** | Prescription **`the`** + force; motive **`tho`** + time horizon; which ending table; attachment sites | |
+| 16 | `sakes.md` | Intermediate | **exists** | Prescription **`the`** + force; motive **`tho`** + time horizon; which ending table; attachment sites; sake bars (*enough* / *too*) | |
 | 16 | `sakes.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
 | 16 | `knowing.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`avo`** + play holds; **RESIDUE** / **FORMER**; MAY vs nearby jobs | |
 | 16 | `knowing.md` | Advanced | **exists** | Mood on one adjective; dated channel; universality (`aga` / `eyu` / …) | One checkpoint for the whole stage |
@@ -383,7 +383,9 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | **DECISION** | `intention.md` Intermediate |
 | Emotion compose | `sakes.md` Intermediate |
 | Numbered alternatives | `numbers-applied.md` Intermediate |
-| Judgment **Mine** **`zumun`** | `comparatives.md` Advanced |
+| PLAN bar (`thamam zel`) | `comparatives.md` Intermediate |
+| Sake bars (`thegatham zael`) | `sakes.md` Intermediate |
+| Channel, FORMER, ABIL, REQUIRE, attitude bars | `comparatives.md` Advanced |
 | `ROOT l NUM` derivation | `numeric-derivation.md` Advanced |
 | Universality overlays | `knowing.md` Advanced |
 

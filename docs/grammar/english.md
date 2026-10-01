@@ -76,7 +76,7 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agazan 
 | grounds (*as the sky is gray, it will rain*) | **`thunem barl`** / **`thobam barl`** | [Evidence clause](knowing.md#evidence-clause) |
 | equal degree (*as sleepy as*) | equative **`ae`** | [Equatives](comparatives.md#equatives) |
 | falls short (*not as sleepy as*) | reverse rank **`ue`** | [Reverse rank](comparatives.md#intermediate) |
-| most that can be done (*as fast as possible*, *as small as you can*) | **`zawon`** + tie **`ae`** | [Best effort](comparatives.md#best-effort) |
+| most that can be done (*as fast as possible*, *as small as you can*) | ABIL bar **`thezexal`** + tie **`ae`** | [Every bar](comparatives.md#stance-bars) |
 | topic (*as for Azawan*) | **`hahehom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 | resemblance (*walks as / like a duck*) | **`humum`** + `/b/` | [Simile](relations.md#similative) |
 | resemblance to an event (*walks the way a duck swims*, *as a hand moves through hair*) | **`humum barl`** + the event | [Simile](relations.md#similative) |

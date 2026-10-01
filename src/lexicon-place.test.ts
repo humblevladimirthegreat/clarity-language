@@ -66,31 +66,6 @@ describe("placement", () => {
     assert.ok([...root].filter((letter, i) => letter !== "aba"[i]).length >= 2, root);
     assert.notEqual(root[1], "b", root);
   });
-
-  it("lets a sake benchmark sit one consonant away from a judgment benchmark, but not one vowel away", async () => {
-    const bench = (emoji: string, senseForm: string): OverlayRow => ({ ...overlay, senseForm, pos: "z", emoji, kind: "benchmark", gloss: "bar" });
-    const letters = "abcdefghijklmnopqrstuvwxyz";
-    const blocked = [...letters].flatMap((a) => [...letters].flatMap((b) => [...letters].map((c) => a + b + c)));
-    const placed = await placePublishedRoots(
-      [{ emoji: "💡", concrete: "lightbulb", abstract: "understanding", englishByPos: "" }],
-      [bench("🐹", "aban"), bench("💡", "alodan")],
-      {
-        blocked: blocked.filter((form) => form !== "aga" && form !== "eba"),
-        kept: [{ emoji: "🐹", root: "aba" }],
-        annealRestarts: 1,
-        annealSteps: 2_000,
-      },
-    );
-    assert.equal(placed[0]!.root, "aga");
-    await assert.rejects(
-      placePublishedRoots(
-        [{ emoji: "💡", concrete: "lightbulb", abstract: "understanding", englishByPos: "" }],
-        [bench("🐹", "aban"), bench("💡", "alodan")],
-        { blocked: blocked.filter((form) => form !== "eba"), kept: [{ emoji: "🐹", root: "aba" }], annealRestarts: 1, annealSteps: 2_000 },
-      ),
-      /too close/,
-    );
-  });
 });
 
 describe("regret order", () => {

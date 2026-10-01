@@ -173,8 +173,6 @@ describe("classify", () => {
     assert.equal(adj.overlay!.gloss, "like");
     const mirror = expectReading("zumul", "ordinary");
     assert.equal(mirror.overlay, undefined);
-    const mine = expectOverlay("zumun");
-    assert.equal(mine.overlay!.kind, "benchmark");
   });
 
   it("hand root is ordinary without a means overlay", () => {
@@ -219,14 +217,11 @@ describe("classify", () => {
     assert.equal(emphasis.overlay, undefined);
   });
 
-  it("hosted judgment bars Mine and Everyone", () => {
-    const mine = expectOverlay("zumun");
-    assert.ok(mine.overlay);
-    assert.equal(mine.overlay!.kind, "benchmark");
-    assert.equal(mine.overlay!.gloss, "my-standard");
-    const everyone = expectOverlay("zogen");
-    assert.ok(everyone.overlay);
-    assert.equal(everyone.overlay!.senseForm, "ogen");
+  it("a root plus -n under /z/ is an ordinary name, not a named bar", () => {
+    for (const raw of ["zumun", "zogen", "zehon"]) {
+      const word = expectReading(raw, "ordinary");
+      assert.equal(word.overlay, undefined);
+    }
   });
 
   it("stock join zuan is a join, not Everyone", () => {

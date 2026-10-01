@@ -22,7 +22,7 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 | D-13 | short *I* / *you* pronouns | *speaker* **`amago`** / *listener* **`ehodo`** are five-letter on purpose (`FORCE_LONG` in `src/lexicon-place.ts`), so names or a dropped subject are the easier choice; inclusive *we* **`aha`** stays short | by design | pronouns.md | — | — |
 | D-14 | *I hope X will happen* as a forecast | hope is not evidence, so a forecast still needs a channel: `thevegem thahor brabum …` ([say-reasons](../grammar/say-reasons.md#hope-forecast), [sakes](../grammar/sakes.md#speaker-attitude)) | by design | sakes.md, say-reasons.md | — | — |
 | D-15 | an act as someone's (*the monkey's tricks*, *the sound of the drums*) | the act is its own sentence, then resumed, the same pattern as *who / that / which* ([dependents](../grammar/dependents.md#which-noun), [say-people-places](../grammar/say-people-places.md)); something that only comes from B is origin `gagum` + `/b/`; `em` never takes an act | by design | dependents.md, say-people-places.md | — | — |
-| D-16 | bare evaluatives (*good*, *bad*, *nice*, *great*, *wonderful*, *excellent*, *lovely*, *terrible*, *awful*, *horrible*, *fantastic*, *brilliant*, *quality*) as roots | no root. Say whose need it serves (met / unmet sake), rank against a named bar, or name the specific quality ([say-reasons](../grammar/say-reasons.md#sake-words), [comparatives](../grammar/comparatives.md#judgment-benchmarks)) | by design | sakes.md, comparatives.md | — | — |
+| D-16 | bare evaluatives (*good*, *bad*, *nice*, *great*, *wonderful*, *excellent*, *lovely*, *terrible*, *awful*, *horrible*, *fantastic*, *brilliant*, *quality*) as roots | no root. Say whose need it serves (met / unmet sake), rank against a stated bar, or name the specific quality ([say-reasons](../grammar/say-reasons.md#sake-words), [comparatives](../grammar/comparatives.md#stance-bars)) | by design | sakes.md, comparatives.md | — | — |
 | D-17 | *the latter* / *the former* (the second / first of two just named) | resume **-r** points at the most recent matching word, so it is the latter; for the earlier one, name it again | by design | pronouns.md | — | — |
 
 ## Bare evaluatives
@@ -34,7 +34,7 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 |------------|-------|
 | serves someone's need (*good for me*, *useful*) | met sake `…tham` / `…thal` / `…thar`, with the person in `/b/` for someone else's sake |
 | harms a need (*bad for*, *wrong for*) | unmet sake `…thum` / `…thul` / `…thur` |
-| better or worse than a standard (*good at*, *poor*) | rank `zel` / `zuel` against a named bar: `zehon`, `zuyen`, `zumun`, `zegan`, or a sake bar |
+| better or worse than a standard (*good at*, *poor*) | rank `zel` / `zuel` against a `/th/` bar: PATTERN `thobam` (*than usual*), FELT `thahom` (*than expected*), REQUIRE `thumem` (*than I demand*), or a met sake bar |
 | a particular quality (*lovely*, *terrible*, *brilliant*) | the content root for that quality: delight, love, beauty, anguish, kindness, intelligence, shine |
 | intensity (*great*, *wonderful*, *awful*) | a degree word (`welavam`, `wohahal`) or an exclamation on the specific root |
 
@@ -57,15 +57,31 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 - Understanding is its own sake, not part of competence: boredom with an easy task is competence met and understanding unmet, and the two call for different help. Novelty for its own sake stays under pleasure.
 - Surprise is not a sake. It is the MIRATIVE (`thezum`), a closed `/th/` mood separate from the eight channels: it says nothing about how you know, stacks with a channel, and takes no holder seam (a holder elsewhere in the clause makes it the holder's).
 
-## Benchmarks
+## Bars
 
-- *Usual* is not its own bar: Typical (`zehon`) covers it. With one ranked item, Typical is that item's own usual level (*more slowly than usual*).
-- Placement spacing between a sake benchmark and a judgment benchmark: a different first two letters, and a single-letter difference only when that letter is the consonant (`src/lexicon-place.ts`).
+- A rank fence (`zel` / `zuel` / `zael`, and their **-m** forms) takes, as its comparee, either a noun or exactly **one `/th/` stance word that sets a value**: a met sake, a channel, FORMER, NOTIONAL, PLAN, ABIL, REQUIRE, PERMIT, CONSENT, or a speaker attitude. Each keeps its own ending table, hosted `/b/`, holder seam, dated offset, and `barl` ([comparatives](../grammar/comparatives.md#bars)).
+- **No named -n bars.** A closed list of standards (root + **-n** under `/z/` `/d/` `/b/`) duplicated what the stance words already say, hid *how you know* the standard, and needed a placement rule to keep sake bars apart from judgment bars. Each old bar maps onto a stance:
+
+| Old bar | Why it went | Say instead |
+|---------|-------------|-------------|
+| Typical | the usual case is a pattern of cases | PATTERN `thobam`, no `/b/` (the item's own usual level, or the usual case here) |
+| Average | a population's usual level; mean vs mode was never audible | PATTERN with the population in `/b/` |
+| Social / Professional | a peer or expert population, or their rule | PATTERN with that population in `/b/`; or REQUIRE `thumer` (custom) / `thumel` (rule) |
+| Everyone | a single-item superlative already ranks against the whole group in play | a superlative, or PATTERN with the class in `/b/` |
+| my standard | the speaker's normative bar is a demand or a hope | REQUIRE `thumem` (no `/b/`: the speaker's demand), or the attitude `thevegem` |
+| Best-effort | the limit of what can be done is ability | ABIL `thezexal` (tie = *as … as possible*) |
+| the nine sake bars | a met sake word already names the sake, and its ending adds the payoff horizon | the met sake word: `thegatham`, `thoyutham`, … |
+
+- Stances that set no value are not bars: clause poles, MAY, MIRATIVE, DECISION, universality, ATTEMPT, WANT, RESIDUE, CAUSE, and the deontic noes (FORBID, refused consent). The parser rejects them (`barKind`), and a second comparee next to a bar, noun or bar (`barCount`).
+- A bar sits right before the join word, after the one ranked item (and after that item's own hook + `/b/`, as before a join word). A stance word after the fence is the claim's stance. With a bar and no ranked item, the stance word stays outside the fence.
+- A holder seam on a bar names whose expectation it is; inside the fence the seam covers only the bar, not the ranking.
+- A bar's `barl` ends its sentence at the fence: noun parts after the scale start the grounds sentence.
 
 ## Vocatives and interjections
 
 - The ending decides the `/y/` job: **-n** calls someone (a name, or a kind used as a title: `yagavon`); **-l** / **-m** are interjections in their ordinary lexical sense (`yezul`, `yezum`). **-r** resumes either, read through its antecedent. There is no *named formula* interjection on **-n**.
-- Spans under `/y/` follow the same split: `y@<…>` calls (the **`@`** mark is the span's **-n**); `y<…>` / `y~<…>` is a foreign interjection.
+- Spans under `/y/` follow the same split: `y@<…>` calls (the **`@`** mark is the span's **-n**); `y<…>` / `y~<…>` is a foreign interjection. Spoken opens do the same by ending (**-n** / **-r** call, **-l** / **-m** react), and land in the same left-edge slot, before the act word.
+- Only opaque `<…>` and cite `[…]` (spoken TYPE **u** / **a**) go under `/y/`. A mention `{…}` talks about a word and an aside `(…)` comments on the sentence, so neither calls nor reacts (`ySpanType`). A `/y/` span inside a clause body is not a sentence, written or spoken.
 - **-x** on `/y/` goes only on a call (**-nx** / **-rx**); an interjection addresses no one.
 
 ## Dated channels

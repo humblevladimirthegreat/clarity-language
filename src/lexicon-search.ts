@@ -49,7 +49,6 @@ export const OVERLAY_KINDS = [
   "clause_pole",
   "universality",
   "identity",
-  "benchmark",
   "locative",
   "pairing",
   "similative",

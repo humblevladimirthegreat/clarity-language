@@ -390,10 +390,59 @@ Inverse marker **`ru`** divides: `hrudul` is *half as*.
 
 English *three times bigger* usually means the same ratio: use **`zael`** with `hrarel`, not rank **`zel`**. After **`zel`**, a number `/h/` is not a factor; it is an ordinary *N times* on the clause. For a gap in units (*two meters taller*), put a measure noun on the scale instead of a factor.
 
+### Comparing against a stance (bars) {#bars}
+
+English *more than planned* and *later than planned* rank one thing against a **value a stance sets**, not against another person: the plan sets how much and when. In the comparee slot, right before the rank join, write that `/th/` stance word instead of a second name. That word is the **bar**. The join closes everything before it, so the bar is inside the comparison: it says what you rank against, not what you mean for the whole claim.
+
+> `zazawan thamam zel bral vevahal.`
+>
+> [z-Azawan | th-plan-itinerary | z-rank/more | b-later] | v-arrival
+>
+> "Azawan arrives later than planned."
+
+The same stance word **after** the fence keeps its ordinary reading on the whole claim. With one ranked name, the fence is then a [superlative](#superlatives):
+
+> `zazawan zel bral vevahal thamam.`
+>
+> [z-Azawan | z-rank/more | b-later] | v-arrival | th-plan-itinerary
+>
+> "Azawan plans to arrive last."
+
+A bar fence ranks **one** item against **one** bar: with a bar, there is no second name and no second bar. Any of the rank joins works (**`zel`**, **`zuel`**, **`zael`**, and their open **-m** forms), and the bar keeps its own ending. The fence can rank an object or an extra noun the same way:
+
+> `zazawan dozolx thamam del gral vagadel.`
+>
+> z-Azawan | [d-strawberry-x | th-plan-itinerary | d-rank/more | g-amount] | v-eat
+>
+> "Azawan eats more strawberries than planned."
+
+> `zazawan balahen thamam bel hral vezebel.`
+>
+> z-Azawan | [b-Alahen | th-plan-itinerary | b-rank/more | h-how-often] | v-tell
+>
+> "Azawan tells Alahen more often than planned."
+
+A [hook](hooks.md) and its `/b/` on the ranked item go right before the bar, the way they go right before a join word:
+
+> `zubugal om bamagon thamam zel garagam.`
+>
+> [[z-book | [near | b-speaker]] | th-plan-itinerary | z-rank/more | g-heavy]
+>
+> "This book is heavier than planned."
+
+| Agazan | Use | English |
+|--------|-----|---------|
+| name + bar + **`zel`** | above the bar | *more than planned* / *later than planned* |
+| name + bar + **`zuel`** | below the bar | *less than planned* / *earlier than planned* |
+| name + bar + **`zael`** | at the bar | *as planned* |
+| bar after the fence | a stance on the whole claim | *plans to be the most …* |
+
+**Compare with:** a name in the comparee slot is someone you rank against (`zazawan zalahen zel gezebul` *Azawan is sleepier than Alahen*). A stance word there is the value that stance sets.
+
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. Full arity (**`ue`** / standalone / **`zer`**), sorted **`oe`**, distributive **`zal`**, a counted measure gap vs vague **`wohahal`**, and manner **`/h/`** right after the join.
+Short drills for Intermediate. Try each item before opening **Show answer**. Full arity (**`ue`** / standalone / **`zer`**), manner **`/h/`** right after the join, and a plan bar right before it.
 
 **Setting:** a weighing room
 
@@ -410,6 +459,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 | *ocean* | `wohahal` | `ohahal` *ocean* |
 | *intensity* | `ahegem` | `ahegel` *hockey* |
 | *lift* | `veleval` | `eleval` *lift* |
+| *plan* | `amam` | `amal` *plan-atlas* |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -459,6 +509,22 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 `zalahen zazawan zel hahegem veleval.`
 
 [z-Alahen | z-Azawan | z-rank/more | h-intensity] | v-lift
+:::
+
+**7.** *Azawan is heavier than planned.*
+
+::: details Show answer
+`zazawan thamam zel garagam.`
+
+[z-Azawan | th-plan-itinerary | z-rank/more | g-heavy]
+:::
+
+**8.** *Ahaben is lighter than planned.*
+
+::: details Show answer
+`zahaben thamam zuel garagam.`
+
+[z-Ahaben | th-plan-itinerary | z-rank/less | g-heavy]
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
@@ -526,194 +592,177 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 *Alahen lifts the most intensely.*
 :::
 
+**8.** `zazawan thamam zael gelevam.`
+
+::: details Show answer
+
+[z-Azawan | th-plan-itinerary | z-equal-rank | g-exertion]
+
+*Azawan is as exerted as planned.*
+:::
+
+**9.** `zalahen thamam zuel hral veleval.`
+
+::: details Show answer
+
+[z-Alahen | th-plan-itinerary | z-rank/less | h-how-often] | v-lift
+
+*Alahen lifts less often than planned.*
+:::
+
 ## Advanced {#advanced}
 
-### Judgment benchmarks (worse than…)
-<a id="judgment-benchmarks"></a>
+### Every bar {#stance-bars}
 <a id="worse-than"></a>
+<a id="best-effort"></a>
 
-English *worse than Average* (or *Typical*, *Professional*, *my bar*) ranks someone against a **named standard**, not against another person you already introduced. Use reverse rank **`ue`** on a positive or neutral scale: the judged name first, the named bar second (**-n**), then the shared adjective. The judged name sits **below** that bar.
+Intermediate ranked against a plan, and [sake bars](sakes.md#sake-bars) rank against what a sake needs. Any stance that **sets a value** can be the [bar](#bars), and each keeps its own endings and meaning. A channel sets **what you expected by that channel**: what you saw, remember, were told, or worked out. So *than usual*, *than I remember*, and *than advertised* are each one channel in the comparee slot.
 
-> `zazawan zolan zuel gezehel.`
+> `zazawan thobam zel gezebul.`
 >
-> [z-Azawan | z-Professional | z-rank/less | g-sing]
+> [z-Azawan | th-PATTERN | z-rank/more | g-sleepy]
 >
-> "Azawan is worse at singing than Professional."
+> "Azawan is sleepier than usual."
 
-Closed **-l** stands behind the ranking. Open **-m** (`zuem`) is soft *somewhat worse than…*. Prefer **`ue`** plus a positive scale for English-style *worse than*; forward **`e`** fits when the scale is already cost- or harm-oriented. The same fence works under `/d/` or `/b/` when the ranked group fills that slot.
-
-Each bar is a hosted overlay: published root plus **-n** under `/z/` `/d/` `/b/`. Soft *somewhat worse than…* stays on the rank join (**`zuem`**), not on a second ending of the bar.
-
-| Agazan | Use | English | Same root as |
-|---------|-----|---------|----------------|
-| **`zuyen`** | named Average bar | *Average* (mean of the relevant population) | `uyel` *yin-yang* |
-| **`zehon`** | named Typical bar | *Typical* (the usual or modal case; with one ranked item, that item's own usual level) | `ehol` *hamster* |
-| **`zumun`** | speaker’s **normative** bar | *my standard* | `umul` *mirror* |
-| **`zuzan`** | named peer bar | *Social* (in-group) | `uzal` *silhouettes* |
-| **`zolan`** | named expert bar | *Professional* (role standard) | `olal` *lab coat* |
-| **`zogen`** | named universal class | *Everyone* | `ogel` *globe* |
-
-<a id="mine-vs-speaker"></a>
-
-**`zamagon`** is where the speaker sits on the scale (current skill). **`zumun`** is the bar the speaker applies. **`zehon`** is the usual case: for the group in play, or, when the ranked item is one person or thing, that item's own usual level (*more slowly than usual*, *neater than you usually write*). Ordinary people as bars are ordinary **-n** names (`zalahen`). *Walks like a duck* is [simile](relations.md#similative) (`humum`), not this *my standard* bar.
-
-Single-item `zazawan zuel gamadam` is *the least challenging* in the group in play. **`zogen`** as the second name **names** the universal class as the bar. Standalone closed **`zual`** / stock **`zuan`** stay [join](joins.md#standalone-phrase) *everything / everyone* in other slots — not this overlay.
-
-| Agazan | Reading |
-|---------|---------|
-| `zamagon zolan zuel gezehel` | I am worse at singing than Professional |
-| `zebeyom zuyen zuem gagazam` | soft: the draft is somewhat less clear than Average |
-| `zazawan zumun zuel gezebul` | Azawan is less sleepy than **my personal standard** |
-| `zazawan zamagon zuel gezehel` | Azawan is less skilled at singing than **I am** (performance) |
-| `zamagon zuzan zuel gamadam` | I am less challenging than Social |
-| `zamagon zehon zuel gamadam` | I am less challenging than Typical |
-| `zamagon zogen zuel gamadam` | I am less challenging than Everyone |
-| `zazawan zehon zel gamadam` | Azawan is more challenging than **usual** (than Azawan usually is) |
-| `zamagon zalahen zuel gezehel` | I am less skilled at singing than **Alahen** (ordinary person comparee) |
-
-### Sake benchmarks (*enough* / *too*) {#sake-benchmarks}
-
-English *enough* and *too* compare against **what a sake requires**. Agazan names that bar like the others: the [sake root](sakes.md#sake-inventory) plus **-n**. The bar is the **speaker's** sake unless you say otherwise.
-
-| Agazan | Use | English | Same root as |
-|---------|-----|---------|----------------|
-| **`zegan`** | sake bar, sake not named | *Some-sake* (what a sake requires) | `egal` *egg* |
-| **`zoyun`** | physical sake bar | *what staying well needs* | `oyul` *lungs* |
-| **`zanan`** | relatedness sake bar | *what connection needs* | `anal` *knot* |
-| **`zulon`** | competence sake bar | *what getting it done needs* | `ulol` *toolbox* |
-| **`zadon`** | understanding sake bar | *what making sense needs* | `adol` *lightbulb* |
-| **`zahun`** | autonomy sake bar | *what choice needs* | `ahul` *ballot* |
-| **`zozon`** | pleasure sake bar | *what enjoyment needs* | `ozol` *strawberry* |
-| **`zamen`** | purpose sake bar | *what mattering needs* | `amel` *compass* |
-| **`zeben`** | beneficence sake bar | *what helping needs* | `ebel` *present* |
-
-Tie **`ae`** against a sake bar is *enough*. Rank **`e`** is *too much*, and **`ue`** is *not enough*.
-
-> `zedehel zegan zael gral.`
+> `zazawan zel gezebul thobam.`
 >
-> [z-tea | z-Some-sake | z-equal-rank | g-amount]
+> [z-Azawan | z-rank/more | g-sleepy] | th-PATTERN
 >
-> "There is enough tea."
+> "Azawan is the sleepiest, going by the pattern."
 
-> `zedehel zegan zel gral.`
+| Bar | Ranks against | English |
+|-----|---------------|---------|
+| met sake `thegatham`, `thoyutham`, … ([sake bars](sakes.md#sake-bars)) | what that sake needs | *enough* / *too much* / *not enough* |
+| LIVE `thodom` | how it looks | *than it looks* |
+| WITNESSED `thevom` | how you remember it | *than I remember* / *than last time* |
+| RECORDED `therem` | the record or the schedule | *than scheduled* / *than on paper* |
+| PATTERN `thobam` | the trail of cases | *than usual* / *normal* |
+| INFERRED `thunem` | what was worked out | *than calculated* / *than it should be* |
+| TOLD `thewam` | what was said | *than advertised* / *than they said* |
+| FELT `thahom` | your gut expectation | *than I expected* |
+| STORY `thozem` | the tales | *than the stories say* |
+| FORMER `thenom` | how it used to be | *than it used to be* / *increasingly* |
+| NOTIONAL `thavom` | the imagined case | *than imagined* / *than in theory* |
+| PLAN `thamam` | the plan | *than planned* |
+| ABIL `thezexal` | what can be done | *as … as possible* |
+| REQUIRE `thumel` / `thumem` / `thumer` | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* |
+| PERMIT `thegol` / `thegom` / `thegor` | the rule, the grant, or what is tolerated | *over the limit* / *more than they allow* / *than tolerated* |
+| CONSENT `thuxegom` | the agreed terms | *more than agreed* |
+| speaker attitude (`thevegem`, `thewedam`) | the case you hoped for or feared | *than hoped* / *than feared* |
+
+The bar's ending keeps its own job: on a channel it is [evidence strength](knowing.md#evidence-strength) (`thobal` *than it reliably is*, `thobar` *than the few cases so far*).
+
+> `zazawan thevom zel gelavam.`
 >
-> [z-tea | z-Some-sake | z-rank/more | g-amount]
+> [z-Azawan | th-WITNESSED | z-rank/more | g-big]
 >
-> "There is too much tea."
+> "Azawan is bigger than I remember."
 
-> `zedehel zegan zuel gral.`
+> `zubugal thewam zuel gagazam.`
 >
-> [z-tea | z-Some-sake | z-rank/less | g-amount]
+> [z-book | th-TOLD | z-rank/less | g-clarity]
 >
-> "There is not enough tea."
+> "The book is less clear than advertised."
 
-With a quality as the scale, the same pattern gives *too ADJ* and *ADJ enough*. A specific sake bar says which sake sets the limit.
-
-> `zedehel zoyun zel gahadul.`
+> `zazawan thahom zel gezebul.`
 >
-> [z-tea | z-Physical-sake | z-rank/more | g-hot]
+> [z-Azawan | th-FELT | z-rank/more | g-sleepy]
 >
-> "The tea is too hot to be safe."
+> "Azawan is sleepier than I expected."
 
-To say **whose** need it is, put that person in `/b/` right after the shared scale.
-
-> `zedehel zegan zael gral balahen.`
+> `zazawan thenom zel gezebul.`
 >
-> [z-tea | z-Some-sake | z-equal-rank | [g-amount | b-Alahen]]
+> [z-Azawan | th-FORMER | z-rank/more | g-sleepy]
 >
-> "There is enough tea for Alahen."
+> "Azawan is sleepier than they used to be."
 
-**Compare with:** **`zumun`** (*my standard*) is what the speaker **prefers**. **`zegan`** is what the sake **requires**. `zedehel zumun zel gral` is *more tea than I like*, and `zedehel zegan zel gral` is *more tea than is needed*.
+The bar's `/b/` works as it does on the clause. On TOLD it is the source, and on REQUIRE, PERMIT, and CONSENT it is the person who demands, grants, or agrees. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
 
-### Best effort (*as … as possible*) {#best-effort}
-
-English *as fast as possible* and *as small as you can* compare against **the most that effort can reach**. Agazan names that bar like the others: **`zawon`** *Best-effort*, the root of `awol` *sweat* plus **-n**. (cue: 💦 *sweat*: full effort shows)
-
-Tie **`ae`** against **`zawon`** says it reaches that bar: *as ADJ as possible*. Reverse rank **`ue`** says it falls short: *less ADJ than it could be*.
-
-> `zalahen zawon zael hadehum vowogal.`
+> `zubugal thewam balahen zuel gagazam.`
 >
-> [z-Alahen | z-Best-effort | z-equal-rank | h-haste] | v-walk
+> [z-book | [th-TOLD | b-Alahen] | z-rank/less | g-clarity]
+>
+> "The book is less clear than Alahen said."
+
+> `zazawan thobam baxelehalx zel gezehel.`
+>
+> [z-Azawan | [th-PATTERN | b-agent-x-learn-x] | z-rank/more | g-sing]
+>
+> "Azawan sings well for a learner."
+
+An INFERRED or PATTERN bar can also take [`barl`](knowing.md#evidence-clause): the next sentence is the grounds you worked the bar out from.
+
+**Ability.** The ability word [`eze`](intention.md#ability-fallback) as the bar is the limit of **what can be done**. A tie against **`thezexal`** is *as … as possible*. The ability vowel says how fixed that limit is, so rank **`zel`** against **`thezexel`** is *more than can be done for now*, and against **`thezexul`** *more than could ever be done*.
+
+> `zalahen thezexal zael hadehum vowogal.`
+>
+> [z-Alahen | th-ABIL-able | z-equal-rank | h-haste] | v-walk
 >
 > "Alahen walks as hastily as possible."
 
-> `zebeyom zawon zuel gagazam.`
->
-> [z-draft | z-Best-effort | z-rank/less | g-clarity]
->
-> "The draft is less clear than it could be."
+**Rules and permission.** REQUIRE as the bar is the demand; a tie meets it. PERMIT is the limit; rank **`zel`** goes over it.
 
-With no `/b/`, the bar is the best that can be done in the situation. To say **whose** effort, put that person in `/b/` right after the shared scale, as with the sake bars.
-
-> `zebeyom zawon zael gagazam bamagon.`
+> `zahazal thumel zael gabezem.`
 >
-> [z-draft | z-Best-effort | z-equal-rank | [g-clarity | b-speaker]]
+> [z-house | th-REQUIRE-rule | z-equal-rank | g-strength]
 >
-> "The draft is as clear as I can make it."
+> "The house is as strong as the rules require (up to code)."
 
-**Compare with:** **`zegan`** is what a sake **requires**, so a tie against it is *enough*. **`zawon`** is what effort can **reach**, so a tie against it is *as much as possible*. **`zumun`** is what the speaker **prefers**.
+> `zedehel thegol zel gral.`
+>
+> [z-tea | th-PERMIT-allowed | z-rank/more | g-amount]
+>
+> "There is more tea than the rules allow."
+
+**Hopes and fears.** A speaker-attitude word as the bar is the case you hoped for or feared.
+
+> `zubugal thevegem zel gagazam.`
+>
+> [z-book | th-hope | z-rank/more | g-clarity]
+>
+> "The book is clearer than I hoped."
+
+> `zubugal thewedam zuel gagazam.`
+>
+> [z-book | th-concern | z-rank/less | g-clarity]
+>
+> "The book is even less clear than I feared."
+
+Only these stances set a value. A [cause or condition pole](causation.md), [MAY](knowing.md#may), [MIRATIVE](knowing.md#mirative), [DECISION](intention.md#decision), and [universality](knowing.md#universality) do not, so none of them is a bar.
 
 ### Vague amounts (*many* / *few*) {#vague-amounts}
 
-English *many* and *few* compare against an unstated baseline. Agazan always names it: put a bar in the list and rank on [amount](#amount-scale). Pick the bar that you mean.
+English *many*, *few*, *often*, and *late* rank against an unstated baseline, and *too much*, *too late*, and *as fast as possible* against an unstated need or limit. Agazan always names the bar: put it in the fence and rank on [amount](#amount-scale), the [frequency scale](#frequency-scale), or the [time scale](#time-scale).
 
-> `zagadulx zehon zel gral.`
+> `zagadulx thobam zel gral.`
 >
-> [z-cat-x | z-Typical | z-rank/more | g-amount]
+> [z-cat-x | th-PATTERN | z-rank/more | g-amount]
 >
 > "There are many cats (more than usual)."
 
-> `zagadulx zehon zuel gral.`
+> `zazawan thobam zel hral vowogal.`
 >
-> [z-cat-x | z-Typical | z-rank/less | g-amount]
->
-> "There are few cats (fewer than usual)."
-
-> `zagadulx zumun zel gram.`
->
-> [z-cat-x | z-my-standard | z-rank/more | g-amount.about]
->
-> "It feels like too many cats to me."
-
-How often and how early work the same way: put a bar in the list and use the [frequency scale](#frequency-scale) (`hral`) or the [time scale](#time-scale) (`bral`).
-
-> `zazawan zehon zel hral vowogal.`
->
-> [z-Azawan | z-Typical | z-rank/more | h-how-often] | v-walk
+> [z-Azawan | th-PATTERN | z-rank/more | h-how-often] | v-walk
 >
 > "Azawan often walks."
 
-> `zazawan zegan zuel bral vevahal.`
->
-> [z-Azawan | z-Some-sake | z-rank/less | b-later] | v-arrival
->
-> "Azawan arrives too early."
-
-To compare someone with their own habit (*eat more slowly*), use the **`zehon`** *Typical* bar: with one ranked item, Typical is that item's own usual level.
-
-> `zahan zehon zel hezehom vagadel.`
->
-> [z-interlocutors | z-Typical | z-rank/more | h-slow] | v-eat
->
-> "We eat more slowly than usual."
-
-| English | Bar |
-|---------|-----|
-| *many* / *few* (for here) | **`zehon`** *Typical* |
-| *a lot* / *not many* (on average) | **`zuyen`** *Average* |
-| *too many* / *too few* (to my taste) | **`zumun`** *my standard* |
-| *too much* / *enough* / *not enough* | **`zegan`** or a specific sake bar |
-| *often* / *rarely* | **`zehon`** with **`hral`** (`zel` / `zuel`) |
-| *late* / *early* | **`zehon`** with **`bral`** (`zel` / `zuel`) |
-| *too late* / *too soon* | **`zegan`** with **`bral`** (`zel` / `zuel`) |
-| *than usual* (the same person or thing) | **`zehon`** *Typical* |
+| English | Bar and rank |
+|---------|--------------|
+| *many* / *few* | PATTERN **`thobam`**, `zel` / `zuel` with `gral` |
+| *often* / *rarely* | PATTERN **`thobam`**, `zel` / `zuel` with `hral` |
+| *late* / *early* | PATTERN **`thobam`**, `zel` / `zuel` with `bral` |
+| *than usual* (the same person or thing) | PATTERN **`thobam`** with no `/b/` |
+| *too much* / *enough* / *not enough* | a met sake bar (`thegatham`), `zel` / `zael` / `zuel` |
+| *too late* / *too soon* | a met sake bar (`thegatham`), `zel` / `zuel` with `bral` |
+| *as … as possible* | ABIL **`thezexal`**, `zael` |
+| *more and more* / *increasingly* | FORMER **`thenom`**, `zel` |
 
 The bar is never dropped. A single-item `zagadulx zel gral` already means *the most cats* (a [superlative](#superlatives)).
 
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**. The *than*-conjunct is the named bar; **`zamagon`** is performance, **`zumun`** is *my standard*.
+Short drills for Advanced. Try each item before opening **Show answer**. The bar is the `/th/` word right before the rank join; the same word after the fence is about the whole claim.
 
 **Setting:** a talent contest
 
@@ -727,167 +776,127 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *sing* | `ezehel` | |
 | *artistry* | `ebudam` | `ebudal` *paintbrush* |
 | *showmanship* | `ahudom` | `ahudol` *hotdog* |
-| *Average* | `uyen` | `uyel` *yin-yang* |
-| *Typical* | `ehon` | `ehol` *hamster* |
-| *Professional* | `olan` | `olal` *lab coat* |
-| *Social* | `uzan` | `uzal` *silhouettes* |
-| *my standard* | `umun` | `umul` *mirror* |
-| *speaker* | `amagon` | |
-| *Some-sake* | `egan` | `egal` *egg* |
-| *Physical-sake* | `oyun` | `oyul` *lungs* |
-| *Relatedness-sake* | `anan` | `anal` *knot* |
-| *Competence-sake* | `ulon` | `ulol` *toolbox* |
-| *Autonomy-sake* | `ahun` | `ahul` *ballot* |
-| *Pleasure-sake* | `ozon` | `ozol` *strawberry* |
-| *Best-effort* | `awon` | `awol` *sweat* |
-| *artistry* | `ebudam` | `ebudal` *paintbrush* |
+| *pattern* | `obam` | `obal` *paw-prints* |
+| *memory* | `evom` | `evol` *fishing* |
+| *hearsay* | `ewam` | `ewal` *ear* |
+| *felt* | `ahom` | `ahol` *heart* |
+| *former* | `enom` | `enol` *empty-nest* |
+| *hope* | `evegem` | `evegel` *crossed-fingers* |
+| *capacity* | `ezem` | `ezel` *cereal* |
+| *policy* | `umem` | `umel` *memo* |
 
 #### English → Agazan {#advanced-english-to-agazan}
 
-**1.** *Azawan is worse at singing than Professional.*
+**1.** *Azawan sings better than usual.*
 
 ::: details Show answer
-`zazawan zolan zuel gezehel.`
+`zazawan thobam zel gezehel.`
 
-[z-Azawan | z-Professional | z-rank/less | g-sing]
+[z-Azawan | th-PATTERN | z-rank/more | g-sing]
 :::
 
-**2.** *Azawan is less skilled at singing than I am.*
+**2.** *Alahen is less artistic than I remember.*
 
 ::: details Show answer
-`zazawan zamagon zuel gezehel.`
+`zalahen thevom zuel gebudam.`
 
-[z-Azawan | z-speaker | z-rank/less | g-sing]
+[z-Alahen | th-WITNESSED | z-rank/less | g-artistry]
 :::
 
-**3.** *Alahen is less artistic than Typical.*
+**3.** *Ahaben is showier than advertised.*
 
 ::: details Show answer
-`zalahen zehon zuel gebudam.`
+`zahaben thewam zel gahudom.`
 
-[z-Alahen | z-Typical | z-rank/less | g-artistry]
+[z-Ahaben | th-TOLD | z-rank/more | g-showmanship]
 :::
 
-**4.** *I am less showy than my standard.*
+**4.** *Azawan is as showy as possible.*
 
 ::: details Show answer
-`zamagon zumun zuel gahudom.`
+`zazawan thezexal zael gahudom.`
 
-[z-speaker | z-my-standard | z-rank/less | g-showmanship]
+[z-Azawan | th-ABIL-able | z-equal-rank | g-showmanship]
 :::
 
-**5.** *Alahen is somewhat worse at singing than Average.*
+**5.** *Alahen sings more often than Ahaben said.*
 
 ::: details Show answer
-`zalahen zuyen zuem gezehel.`
+`zalahen thewam bahaben zel hral vezehel.`
 
-[z-Alahen | z-Average | z-rank/less.open | g-sing]
+[z-Alahen | [th-TOLD | b-Ahaben] | z-rank/more | h-how-often] | v-sing
 :::
 
-**6.** *Azawan has enough artistry (as much as is needed).*
+**6.** *Ahaben is more artistic than they used to be.*
 
 ::: details Show answer
-`zazawan zegan zael gebudam.`
+`zahaben thenom zel gebudam.`
 
-[z-Azawan | z-Some-sake | z-equal-rank | g-artistry]
+[z-Ahaben | th-FORMER | z-rank/more | g-artistry]
 :::
 
-**7.** *Ahaben is too showy to be safe.*
+**7.** *Azawan is the showiest, so they say.*
 
 ::: details Show answer
-`zahaben zoyun zel gahudom.`
+`zazawan zel gahudom thewam.`
 
-[z-Ahaben | z-Physical-sake | z-rank/more | g-showmanship]
-:::
-
-**8.** *Alahen sings less than connection needs.*
-
-::: details Show answer
-`zalahen zanan zuel gezehel.`
-
-[z-Alahen | z-Relatedness-sake | z-rank/less | g-sing]
-:::
-
-**9.** *Azawan is as showy as possible.*
-
-::: details Show answer
-`zazawan zawon zael gahudom.`
-
-[z-Azawan | z-Best-effort | z-equal-rank | g-showmanship]
+[z-Azawan | z-rank/more | g-showmanship] | th-TOLD
 :::
 
 #### Agazan → English {#advanced-agazan-to-english}
 
-**1.** `zamagon zuzan zuel gezehel.`
+**1.** `zalahen thahom zel gezehel.`
 
 ::: details Show answer
 
-[z-speaker | z-Social | z-rank/less | g-sing]
+[z-Alahen | th-FELT | z-rank/more | g-sing]
 
-*I am worse at singing than Social.*
+*Alahen sings better than I expected.*
 :::
 
-**2.** `zamagon zalahen zuel gahudom.`
+**2.** `zazawan thevegem zuel gebudam.`
 
 ::: details Show answer
 
-[z-speaker | z-Alahen | z-rank/less | g-showmanship]
+[z-Azawan | th-hope | z-rank/less | g-artistry]
 
-*I am less showy than Alahen.*
+*Azawan is less artistic than I hoped.*
 :::
 
-**3.** `zazawan zumun zuem gebudam.`
+**3.** `zahaben thobam zuel hral vezehel.`
 
 ::: details Show answer
 
-[z-Azawan | z-my-standard | z-rank/less.open | g-artistry]
+[z-Ahaben | th-PATTERN | z-rank/less | h-how-often] | v-sing
 
-*Azawan is somewhat less artistic than my standard.*
+*Ahaben rarely sings.*
 :::
 
-**4.** `zahaben zolan zuel gezehel.`
+**4.** `zalahen thumem zael gahudom.`
 
 ::: details Show answer
 
-[z-Ahaben | z-Professional | z-rank/less | g-sing]
+[z-Alahen | th-REQUIRE-demanded | z-equal-rank | g-showmanship]
 
-*Ahaben is worse at singing than Professional.*
+*Alahen is as showy as I demand.*
 :::
 
-**5.** `zazawan zuyen zuem gahudom.`
+**5.** `zazawan zel gebudam thobam.`
 
 ::: details Show answer
 
-[z-Azawan | z-Average | z-rank/less.open | g-showmanship]
+[z-Azawan | z-rank/more | g-artistry] | th-PATTERN
 
-*Azawan is somewhat less showy than Average.*
+*Azawan is the most artistic, going by the pattern.*
 :::
 
-**6.** `zazawan zulon zael gezehel.`
+**6.** `zahaben thezexal zael gezehel.`
 
 ::: details Show answer
 
-[z-Azawan | z-Competence-sake | z-equal-rank | g-sing]
+[z-Ahaben | th-ABIL-able | z-equal-rank | g-sing]
 
-*Azawan sings well enough to get the job done.*
-:::
-
-**7.** `zahaben zahun zel gahudom.`
-
-::: details Show answer
-
-[z-Ahaben | z-Autonomy-sake | z-rank/more | g-showmanship]
-
-*Ahaben is showier than free choice needs.*
-:::
-
-**8.** `zalahen zozon zuel gebudam.`
-
-::: details Show answer
-
-[z-Alahen | z-Pleasure-sake | z-rank/less | g-artistry]
-
-*Alahen has less artistry than enjoyment needs.*
+*Ahaben sings as well as possible.*
 :::
 
 ## See also

@@ -622,6 +622,37 @@ When you are not sure, use **`thavom`**.
 >
 > "Suppose Azawan writes." — toying with an assumption
 
+### Channels as comparison bars {#channel-bars}
+
+A channel can also be the [bar](comparatives.md#bars) of a rank join: written right before **`zel`** / **`zuel`** / **`zael`**, it is **what you expected by that channel**, not how you know the claim. The same word after the fence goes back to being the claim's channel.
+
+> `zazawan thobam zel gezebul.`
+>
+> [z-Azawan | th-PATTERN | z-rank/more | g-sleepy]
+>
+> "Azawan is sleepier than usual."
+
+> `zazawan zel gezebul thobam.`
+>
+> [z-Azawan | z-rank/more | g-sleepy] | th-PATTERN
+>
+> "Azawan is the sleepiest, going by the pattern."
+
+| Channel as the bar | Ranks against | English |
+|--------------------|---------------|---------|
+| LIVE `thodom` | how it looks | *than it looks* |
+| WITNESSED `thevom` | how you remember it | *than I remember* |
+| RECORDED `therem` | the record or the schedule | *than scheduled* |
+| PATTERN `thobam` | the trail of cases | *than usual* |
+| INFERRED `thunem` | what was worked out | *than calculated* |
+| TOLD `thewam` | what was said | *than advertised* |
+| FELT `thahom` | your gut expectation | *than I expected* |
+| STORY `thozem` | the tales | *than the stories say* |
+| FORMER `thenom` | how it used to be | *than it used to be* |
+| NOTIONAL `thavom` | the imagined case | *than imagined* |
+
+MAY and MIRATIVE set no value, so neither is a bar.
+
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
@@ -1001,6 +1032,14 @@ The mirror, **`brubum`**, is *a short while before now*: *recently*.
 >
 > "Going by the pattern, Alahen slept three hours ago."
 
+A channel used as a comparison [bar](comparatives.md#bars) takes the same offset, which dates the bar: WITNESSED with a day before is *than yesterday*.
+
+> `zazawan thevom bazazam gruwol zel gezebul.`
+>
+> [z-Azawan | [th-WITNESSED | [b-day | g-minus-one]] | z-rank/more | g-sleepy]
+>
+> "Azawan is sleepier than yesterday."
+
 With an [as-of](relations.md#as-of) pair, the offset counts from that whose-now instead of speech-now.
 
 **Compare with:** an absolute clock or date (`h_#22,7`) dates the event without a channel. [RESIDUE](#residue) and [FORMER](#former-climate) do not locate time, so they take no offset.
@@ -1096,6 +1135,7 @@ The holder word ends the way a noun for that person would. **-n** is a name. **-
 | A `/ɡ/` sake's *my* reading ([personal possession](sakes.md#personal-possession)) | your belonging | the holder's belonging |
 | Another evidential | how you know | how the holder knows |
 | The grounds after an inferring or pattern host's [`barl`](#evidence-clause) | grounds you assert | the holder's grounds; you do not assert them |
+| A comparison [bar](comparatives.md#bars) | your expectation | the holder's expectation |
 
 > `zumel wanathumol gobum balahen thunemazawan.`
 >
@@ -1114,6 +1154,14 @@ The holder word ends the way a noun for that person would. **-n** is a name. **-
 > z-Alahen | th-MIRATIVE | th-INFERRED-Azawan | v-departure
 >
 > "I gather Alahen's leaving surprised Azawan." — the surprise is Azawan's
+
+A holder on a comparison bar names **whose expectation** you rank against. Inside the fence the seam covers only the bar: the ranking itself is still your claim.
+
+> `zazawan thahomalahen zel gezebul.`
+>
+> [z-Azawan | th-FELT-Alahen | z-rank/more | g-sleepy]
+>
+> "Azawan is sleepier than Alahen expected."
 
 A [feeling with no object](sakes.md#feeling-no-object) works the same way: the holder makes it someone else's feeling.
 

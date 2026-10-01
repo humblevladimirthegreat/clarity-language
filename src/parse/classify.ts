@@ -457,6 +457,38 @@ export function isGroundsChannel(word: LexWord, tables: ClassifyTables): boolean
   return row?.kind === "evidential" && GROUNDS_CHANNELS.has(row.gloss.split(".")[0]!);
 }
 
+/** Closed `/th/` kinds a rank fence takes as its bar: each sets a value to rank against (comparatives.md#bars). */
+const BAR_OVERLAY_KINDS = new Set(["evidential", "former_climate", "notional", "plan", "ability", "deontic"]);
+
+/**
+ * A `/th/` word that can be a rank fence's bar: a met sake word, an ability word, a channel, FORMER, NOTIONAL,
+ * PLAN, permission, requirement, consent, a holder on one of those, or a speaker attitude (an ordinary content
+ * root on `/th/`). Poles, MAY, MIRATIVE, DECISION, universality, and the deontic noes set no value.
+ */
+export function isBarStance(word: LexWord, tables: ClassifyTables): boolean {
+  if (word.pos !== "th") return false;
+  const family = word.family;
+  if (word.reading === "sake") return family.kind === "x" && family.stanceVowel === "a" && !family.horizon;
+  if (word.reading === "ability") return true;
+  const row =
+    family.kind === "x" && family.xFamily === "holder"
+      ? tables.overlays.get(overlayKey("th", `${family.leftRoots[0]}${family.grade}`))
+      : word.overlay
+        ? tables.overlays.get(overlayKey("th", word.overlay.senseForm))
+        : undefined;
+  if (row) return BAR_OVERLAY_KINDS.has(row.kind) && !isDeonticNo(row, tables);
+  return word.reading === "ordinary" && family.kind === "content";
+}
+
+/** A forbid or consent-refused row: it shares the FORBID rows' emoji (sakes.md#permission). */
+function isDeonticNo(row: OverlayRow, tables: ClassifyTables): boolean {
+  if (row.kind !== "deontic") return false;
+  for (const other of tables.overlays.values()) {
+    if (other.kind === "deontic" && other.gloss.startsWith("FORBID") && other.emoji === row.emoji) return true;
+  }
+  return false;
+}
+
 /** Arrow-rose roots (roles.md#arrow-rose-compass-vs-face); `DIR th o` on these is a landmark lateral. */
 export const ARROW_ROOTS = new Set([
   CLOSED.north,

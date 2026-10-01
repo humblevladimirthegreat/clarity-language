@@ -122,6 +122,7 @@ export function visitUtterance(utterance: Utterance, index: number, v: Visitor):
   w(left.vocatives, "vocative");
   w(left.interjections, "interjection");
   w(left.polars, "polar");
+  for (const { span } of left.spans ?? []) visitSpan(span, v);
   w(left.hook, "hook");
   w(left.hookModifiers, "hookModifier");
   w(left.leadForce, "leadForce");
@@ -251,6 +252,7 @@ function visitNpPackage(pkg: NpPackage, v: Visitor): void {
 
 function visitNpItem(item: NpItem, v: Visitor): void {
   if (item.kind === "package") visitNpPackage(item.package, v);
+  else if (item.kind === "bar") visitHUnit(item.bar, v);
   else visitIsland(item.island, v);
 }
 

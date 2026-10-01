@@ -178,6 +178,12 @@ Digitless exponent naming a magnitude band (`grabazol`, `grabarel`).
 
 [Numbers](numbers.md#bare-oom-bands)
 
+### Bar
+
+A `/th/` stance word in the comparee slot of a rank join: the value you rank against (*than planned*, *enough*, *than usual*).
+
+[Comparatives](comparatives.md#bars)
+
 ### Binder
 
 Inside a scope island: scope-taking `/h/` or `/th/` and/or a join.
@@ -485,12 +491,6 @@ Right-close list closer; **conjunct** = listed item.
 Content `/v/` or `/ɡ/` `/h/` + join vowel + **-n**.
 
 [Join across roles](join-across-roles.md)
-
-### Judgment benchmark
-
-Advanced *worse than…* bars.
-
-[Comparatives](comparatives.md#judgment-benchmarks)
 
 ### Left-bound adjective
 

@@ -20,6 +20,8 @@ export const JOIN_SERIES: Record<string, { english: string; job: string }> = {
 
 /** Series whose shared item ranks (`e` / `ue` / `oe`) or equates (`ae`). */
 export const RANK_SERIES = new Set(["e", "oe", "ue", "ae"]);
+/** Rank fences whose comparee may be a `/th/` stance bar: `e` more, `ue` less, `ae` equal (comparatives.md § bars). */
+export const BAR_SERIES = new Set(["e", "ue", "ae"]);
 /** The rank series that order rather than equate (`ae` is the equative). */
 export const SCALE_SERIES = new Set(["e", "oe", "ue"]);
 export const KIND_SERIES = new Set(["ua", "uo"]);

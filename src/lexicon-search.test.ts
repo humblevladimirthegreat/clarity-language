@@ -183,13 +183,6 @@ describe("searchLexicon", () => {
     assert.ok(hit.overlays.some((o) => o.senseForm === witnessed.senseForm && o.pos === "th"));
   });
 
-  it("attaches benchmark overlays to published roots", () => {
-    const yin = rows.findIndex((r) => r.concrete === "yin-yang");
-    assert.ok(yin >= 0);
-    const rowOverlays = attached.get(yin) ?? [];
-    assert.ok(rowOverlays.some((o) => o.kind === "benchmark" && o.pos === "z"));
-  });
-
   it("finds join-act overlay van without a published row", () => {
     const results = searchLexicon(index, rows, "van", { limit: 10, overlays, overlayIndex });
     const hit = results.find(
