@@ -312,6 +312,12 @@ Set **`a`** + singular SHARED = *both/each are ADJ*.
 
 [Amounts, sizes and time](say-amounts.md#distributive-both)
 
+### Kind reference
+
+`zuan` plus a SHARED kind: the kind itself as one individual, not its members (*the dodo is extinct*).
+
+[Joins](joins.md#kind-reference)
+
 ### Domain / generic / *every K*
 
 SHARED kind plus invert / standalone joins.

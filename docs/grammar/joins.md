@@ -602,7 +602,7 @@ Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *ther
 | **…om** (`zom` / …) | open empty menu | *no pick, as far as I know* |
 | **…ual** (`zual` / …) | closed empty invert-add | *everything* / *everyone* |
 | **…uam** (`zuam` / …) | open empty invert-add | *just about everything* / *just about everyone* |
-| **…uan** (`zuan` / …) | stock empty invert-add | *everyone* / *everything* (stock) |
+| **…uan** (`zuan` / …) | stock empty invert-add | *everyone* / *everything* (stock); + SHARED kind → [the kind itself](#kind-reference) |
 | **…uol** (`zuol` / …) | closed empty invert-menu | *anything (goes)* |
 | **…uom** (`zuom` / …) | open empty invert-menu | *anything offered* |
 | **…aol** (`zaol` / …) | closed empty inclusive | *all set* / *nothing more needed* |
@@ -645,6 +645,7 @@ When English would say *every cat* rather than *everything but the cat*, write *
 | standalone `zual` | empty invert-add | *everything* / *everyone* |
 | `zual` + SHARED `/ɡ/` | closed every-kind | *every K* (`zual gagadul` = *every cat*) |
 | `zuam` + SHARED `/ɡ/` | open every-kind | *just about every K*, *K in general* (exceptions not listed) |
+| `zuan` + SHARED `/ɡ/` | the [kind itself](#kind-reference) | *the K* as a species |
 | single-item `zual X` (no SHARED) | leftover only | *everything but X* |
 
 > `zual gagadul.`
@@ -728,6 +729,41 @@ Use closed `zual` plus kind when the claim allows no exceptions, and open `zuam`
 **For *always*, use:** bare habitual **`hual`** — [restrictors](restrictors.md).
 
 **Not the same job as:** plural **-x** ([plurality](plurality.md)) names an anchor and associates, not *every K*.
+
+#### The kind itself (`zuan`) {#kind-reference}
+
+English *the dodo is extinct* and *someone invented the megaphone* are not about any one dodo or megaphone, or about every one. They are about the **kind**: the one thing that lasts while its members come and go. Write **`zuan`** and put the kind as a shared adjective after it (`zuan gododul`). The **-n** names the kind the way it names a person: one individual, not a set of members.
+
+> `zuan gododul gododum.`
+>
+> [z-the-kind | g-dodo] | g-obsolescence
+>
+> "The dodo is extinct."
+
+> `zar duan gemegol vobogam.`
+>
+> z-something | [d-the-kind | g-megaphone] | v-innovation
+>
+> "Someone invented the megaphone."
+
+The kind is one individual, so its verb and adjectives stay singular, and the kind word takes no **-x**. The kind is a known thing, so a further `/ɡ/` is a property claim, not *there is …*.
+
+To choose, ask whether the claim would stay true if every member were replaced. If it would, the claim is about the kind. *The wolf is rare* is about the kind: no single wolf is rare. *Wolves are sleepy* is about the members, so it takes `zuam`.
+
+> `zuan guwuval guyugom.`
+>
+> [z-the-kind | g-wolf] | g-rarity
+>
+> "The wolf is rare."
+
+| Agazan | Covers | English |
+|--------|--------|---------|
+| `zual gagadul` | each cat in this situation, no exceptions | *every cat* |
+| `zuam gagadul` | the members, as a rule | *cats in general* |
+| `zuan gagadul` | the kind itself, one individual | *the cat* (as a species) |
+| `zual gagadul` + `/v/`…**-x** | all the members in one shared act | *all the cats together* |
+
+A [cause or condition](causation.md) on a `zuan` clause is about the kind, not each member: why the kind is the way it is.
 
 ### SHARED after the join
 <a id="scope-fence-p-join"></a>

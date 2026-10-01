@@ -257,6 +257,7 @@ export const RESOLVE_CONSTRUCTIONS: Record<Exclude<`${AnaphorKind}.${"bound" | "
 /** Readings of a whole utterance or clause shape (`reading.*`, [construction-trace.ts](./construction-trace.ts)). */
 export const READING_CONSTRUCTIONS = {
   existence: { anchor: "predication.md#existence", summary: "verbless /z/ clause: there is …" },
+  kind: { anchor: "joins.md#kind-reference", summary: "zuan + kind: the kind itself, not its members" },
   emphaticProhibition: { anchor: "speech-moves.md#emphatic-prohibition", summary: "yul yul: a louder prohibition" },
   rhetoricalQuestion: { anchor: "questions.md#rhetorical", summary: "yal yol / yam yol: a question with an obvious answer" },
   bareQuestion: { anchor: "questions.md#question", summary: "yol. / yom. with no body: Huh? / Hm?" },

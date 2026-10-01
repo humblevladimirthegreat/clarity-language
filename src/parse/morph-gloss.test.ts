@@ -538,6 +538,13 @@ describe("morphGlossLine — standalone joins", () => {
   });
 });
 
+describe("morphGlossLine — kind reference", () => {
+  it("zuan + shared kind reads the kind itself", () => {
+    expectLine("zuan gagadul gezebul.", "[z-the-kind | g-cat] | g-sleepy");
+    expectLine("zazawan duan gagadul vahahal.", "z-Azawan | [d-the-kind | g-cat] | v-see");
+  });
+});
+
 describe("morphGlossLine — word position, not spelling", () => {
   it("does not read an in-clause hook as discourse because an earlier sentence opened with the same spelling", () => {
     const line = morphGlossLine("al zazawan vowogal. zazawan al zalahen zal vowogal.", tables);

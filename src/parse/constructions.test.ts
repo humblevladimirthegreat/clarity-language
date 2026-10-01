@@ -59,6 +59,7 @@ describe("construction registry", () => {
       ["zazawan vowogal.", "sentence.vpCoordPart.V"],
       ["zodogal gelavam.", "reading.existence"],
       ["zodogal om babagul.", "reading.existence"],
+      ["zuan gagadul gezebul.", "reading.kind"],
       ["yol.", "reading.bareQuestion"],
       ["zazawan vowogal thovum.", "overlay.ovum.th"],
       // A sake or ability word uses the sake / hostless-ability row of its host.
@@ -81,7 +82,7 @@ describe("construction registry", () => {
       const ids = parse(input, undefined, { constructions: true }).constructions ?? [];
       assert.ok(!ids.includes("reading.existence"), `${input} → ${ids.join(" ")}`);
     }
-    for (const input of ["zual gohahaxowodel gozodel.", "zuam gagadul gozodel."]) {
+    for (const input of ["zual gohahaxowodel gozodel.", "zuam gagadul gozodel.", "zuan gagadul gozodel."]) {
       const every = parse(input, undefined, { constructions: true }).constructions ?? [];
       assert.ok(!every.includes("reading.existence"), `${input} → ${every.join(" ")}`);
     }

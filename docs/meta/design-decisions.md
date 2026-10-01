@@ -13,7 +13,7 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 | D-03 | article *the* for an already-mentioned kind | resume **-r** | by design | pronouns.md | — | — |
 | D-04 | single *cause* arrow word (*X causes Y*) | two-place poles **`oye`** / **`olu`** / **`eve`** / **`eda`**; **CAUSE** mood | by design | causation.md | — | — |
 | D-05 | metric prefixes (*kilo-*, *milli-*) and unit abbreviations | scaled amount on the base unit | by design | numbers-applied.md | — | — |
-| D-06 | generic plural / *every K* via plural marking | universals joins (`zual gagadul`), habitual **`hual`**; **-x** is associative | by design | plurality.md, joins.md | — | — |
+| D-06 | generic plural / *every K* via plural marking | universals joins (`zual gagadul`), the kind itself (`zuan gagadul`), habitual **`hual`**; **-x** is associative | by design | plurality.md, joins.md | — | — |
 | D-07 | written capitals for names | named **-n** / **`@`**; native text is unicase | by design | phonology.md, word-endings.md | — | — |
 | D-08 | sentence-final `?` / `!` carrying force | act word carries force; tone marks are prosody only; sentences end in `.` | by design | speech-moves.md | — | — |
 | D-09 | *attacker*-style agent-noun lexicon | role compounds **`a` / `e` / `u` / `o` x ROOT** | by design | roles.md | — | — |
@@ -141,7 +141,8 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 | RULE | RECORDED.strong with the rules as the `/b/` source (`therel bazagul`); a norm someone sets is REQUIRE / FORBID |
 
 - **The fence is about the world, the channel about your evidence.** Open **-m** on a fence says exceptions happen; it is not a hedge on what you know. *Always, as far as I can tell* is closed `hual` with a weak channel. The same holds for the empty open forms that count: `zam` *hardly anything*, `zuam` *just about everything*, `zaom` *hardly anything more needed*, `xam` *hardly anything happened*. Empty open deny, menu, and rank (`zum`, `zom`, `zem`) are not amounts and keep *as far as I know*.
-- **A channel on a fenced clause warrants the whole generalization**, not one case. A cause or condition pole on it holds for **each** member or occasion, as the verb does. A cause of the regularity itself would be a claim about the kind (see the kind-level row in `TODO.md`).
+- **A channel on a fenced clause warrants the whole generalization**, not one case. A cause or condition pole on it holds for **each** member or occasion, as the verb does. A cause of the regularity itself is a claim about the kind, so it goes on a `zuan` + kind clause.
+- **The kind itself is `zuan` + SHARED kind**, not a new fence. The join series is closed, and standalone `zuan` + SHARED `/ɡ/` was the only unread spelling in the `ua` family. **-n** fits: it names one individual, as on a person or a titled bundle. Rejected: `zalebam` + kind (the label or category, not the lineage: *the cat category was domesticated* is wrong), **-n** on the kind root (`zagadun` is a creature named Cat), **-nx** (a named team), and recipes alone (*domesticated*, *invented*, *evolved* do not reduce to claims about members). With items before it, `…uan` stays a named bundle.
 - **A resume of the kind inside the `barl` sentence is the same member, one at a time** (`zual gagadul vezebal thoyem barl zagar gezebul.` *every cat sleeps if it is sleepy*). The parser reads the resume as an ordinary `-r`; the bound reading is semantic.
 
 ## Consistency audit

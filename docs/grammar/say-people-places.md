@@ -379,7 +379,8 @@ English makes nouns for a part, a kind, a role, and a manner. Agazan has no sepa
 |---------|--------|---------|
 | *piece* / *fragment* / *feature* | `zahavol gobom bahazal.` | a part of the whole |
 | *cluster* / *bunch* | the kind with **-x**: `zodogalx` | a set here ([group words](say-amounts.md#group-words)) |
-| *species* / *kind* | `zalebam` | classification |
+| *species* / *kind* (the category) | `zalebam` | classification |
+| *the dodo* / *the wolf* (the species itself) | `zuan gododul` | [the kind itself](joins.md#kind-reference) |
 | *gender* / *sex* (the category) | `zevevam zemehem zam.` | the open pair female, male |
 | *sex* (the act) | `zelebum` | sexuality |
 | *patient* (being treated) | `zuxehewol` | the one who undergoes healing |

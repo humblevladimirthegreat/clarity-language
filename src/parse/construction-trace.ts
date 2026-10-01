@@ -3,6 +3,7 @@ import type { CstElement, CstNode, IToken } from "chevrotain";
 import { classifyTokenBranch, isLexWordPayload, type TokenPayload } from "./tokens.js";
 import { POLAR_GROUP, RESTRICTOR_GROUP, type JoinSeries } from "./constructions.js";
 import { forcePairKind, isDigitless } from "./series.js";
+import { isKindReference, visitResult } from "./ast-walk.js";
 import { numberMarkerIdentity } from "./resolve.js";
 import type { Clause, LexWord, NumberStem, ParseResult, ResolveInfo } from "./types.js";
 
@@ -192,13 +193,14 @@ function isExistence(clause: Clause): boolean {
   const heads = first.coord.parts.flatMap((part) =>
     part.items.flatMap((item) => (item.kind === "package" ? [item.package] : [])),
   );
-  // `zual` / `zuam` + kind (*every K*) is known; its shared /ɡ/ is the kind, so a further /ɡ/ is the property (joins.md § universals).
+  // `zual` / `zuam` + kind (*every K*) and kind reference `zuan` + kind are known; the shared /ɡ/ is the kind, so a further /ɡ/ is the property (joins.md § universals).
   const universal = first.coord.parts.some(
     (part) =>
-      part.items.length === 0 &&
-      part.join?.family.kind === "joinMarker" &&
-      part.join.family.series === "ua" &&
-      (part.join.ending === "l" || part.join.ending === "m"),
+      (part.items.length === 0 &&
+        part.join?.family.kind === "joinMarker" &&
+        part.join.family.series === "ua" &&
+        (part.join.ending === "l" || part.join.ending === "m")) ||
+      isKindReference(part),
   );
   // A shared /ɡ/ after a join (`zazawan zalahen zal gamadam` *both are challenging*) describes every member.
   const sharedG =
@@ -231,4 +233,9 @@ export function addReadingConstructions(result: ParseResult, out: Set<string>): 
       else if (isExistence(body.clause)) out.add("reading.existence");
     }
   }
+  visitResult(result, {
+    join(_join, site) {
+      if (site.kind === "np" && isKindReference(site.coord.parts[site.index]!)) out.add("reading.kind");
+    },
+  });
 }

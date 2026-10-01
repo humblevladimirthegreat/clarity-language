@@ -28,6 +28,7 @@ const CONTEXTS: MorphGlossContext[] = [
   { fillAsk: true },
   { dependentVerb: true },
   { standaloneJoin: true },
+  { kindReference: true },
 ];
 
 const TYPE_VOWEL: Record<string, string> = { CITE: "a", ASIDE: "e", MENTION: "o", OPAQUE: "u" };

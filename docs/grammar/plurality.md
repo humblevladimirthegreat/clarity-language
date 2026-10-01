@@ -422,7 +422,7 @@ Beginner already used **-x** on nouns and person-role specials. The rest of the 
 
 **Related form:** a count uses a [number](numbers.md) on `/ɡ/` (digitless **`gral`** = more than one; `grarel` = three). **-x** and a count can combine (`zagadulx grarel`).
 
-**For *every K*, use:** [universals](joins.md#universals-domains-generics) (`zual gagadul`; habitual **`hual`**).
+**For *every K*, use:** [universals](joins.md#universals-domains-generics) (`zual gagadul`; habitual **`hual`**). For the kind itself (*the dodo is extinct*), use [`zuan`](joins.md#kind-reference).
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>

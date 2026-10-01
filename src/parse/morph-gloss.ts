@@ -26,7 +26,7 @@
  * | ordinary lexicon (`vejel`, `vajul`, …) | packed `english_by_pos` when present for this role + sense, else literal / metaphor | [glosses.md](../../docs/meta/glosses.md#role-english) |
  */
 
-import { isScaleShared, visitResult } from "./ast-walk.js";
+import { isKindReference, isScaleShared, visitResult } from "./ast-walk.js";
 import { hookJobsByPosition, type HookJob } from "./hook-jobs.js";
 import { JOIN_SERIES, resumeCut } from "./series.js";
 import { classifyAll, overlayKey, type ClassifyTables } from "./classify.js";
@@ -370,6 +370,8 @@ export type MorphGlossContext = {
   dependentVerb?: boolean;
   /** Join closing no items (shared `/ɡ/` allowed): `zal` *none*, `zual` *everything*. */
   standaloneJoin?: boolean;
+  /** Standalone `zuan` + the kind on shared `/ɡ/`: the kind itself. */
+  kindReference?: boolean;
   /** Digitless `g+` / `h+` right after a rank join: the amount / frequency scale. */
   scale?: boolean;  /** `/ɡ/` `g-N` right after a plain noun: *1/N of* that noun. */
   fraction?: boolean;
@@ -863,12 +865,14 @@ function analyzeLine(
   // A lone join word is a form citation (`zam` = z-and.open), not a standalone join.
   const citation = words.length === 1;
   const standaloneIndexes = citation ? new Set<number>() : standaloneJoinIndexes(words, parsed);
+  const kindIndexes = citation ? new Set<number>() : kindReferenceIndexes(parsed);
   const scaleWords = scaleIndexes(parsed);
   const hookJobs = parsed ? hookJobsByPosition(parsed) : new Map<number, HookJob>();
   const passThrough = mentionPassThroughFlags(words);
   const ctxByIndex = words.map((word, index) => {
     const ctx = contextFor(word, index, words, parsed?.resolve, hookJobs, passThrough[index], dependentVerbIndexes.has(index));
     if (standaloneIndexes.has(index)) ctx.standaloneJoin = true;
+    if (kindIndexes.has(index)) ctx.kindReference = true;
     if (scaleWords.has(index)) ctx.scale = true;
     if (isFraction(word, words[index - 1])) ctx.fraction = true;
     return ctx;
@@ -891,6 +895,18 @@ function standaloneJoinIndexes(words: LexWord[], parsed: ParseResult | undefined
           : site.index === 0 && site.coord.parts[0]!.items.length === 0;
       const word = join.at === undefined ? undefined : words[join.at];
       if (standalone && word && word.family.kind === "joinMarker" && word.reading === "join") out.add(join.at!);
+    },
+  });
+  return out;
+}
+
+/** Word indexes of kind-reference joins (`zuan` + kind). */
+function kindReferenceIndexes(parsed: ParseResult | undefined): Set<number> {
+  const out = new Set<number>();
+  if (!parsed) return out;
+  visitResult(parsed, {
+    join(join, site) {
+      if (site.kind === "np" && join.at !== undefined && isKindReference(site.coord.parts[site.index]!)) out.add(join.at);
     },
   });
   return out;
@@ -1195,6 +1211,7 @@ function fenceJoinLabel(
     if (sequence[series]) return sequence[series];
   }
 
+  if (ctx.kindReference && series === "ua" && ending === "n") return "the-kind";
   // Open **o** leaves the pick optional, so it is no longer *exactly one*.
   if (series === "o" && ending === "m") return "or.open";
   const job = (ctx.standaloneJoin ? JOIN_JOB_STANDALONE[series] : undefined) ?? JOIN_SERIES[series]?.job ?? series;

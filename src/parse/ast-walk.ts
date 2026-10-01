@@ -105,6 +105,18 @@ export function isSharedGPackage(item: CoordShared): item is GPackage {
   return item.word.pos === "g";
 }
 
+/** Kind reference: standalone `zuan` + the kind on shared `/ɡ/` names the kind itself (joins.md § kind reference). */
+export function isKindReference(part: NpCoord["parts"][number]): boolean {
+  const join = part.join;
+  return (
+    part.items.length === 0 &&
+    join?.family.kind === "joinMarker" &&
+    join.family.series === "ua" &&
+    join.ending === "n" &&
+    part.shared.some(isSharedGPackage)
+  );
+}
+
 /** A shared `/h/` or `/th/` unit. */
 export function isSharedHUnit(item: CoordShared): item is HUnit {
   return item.word.pos === "h" || item.word.pos === "th";

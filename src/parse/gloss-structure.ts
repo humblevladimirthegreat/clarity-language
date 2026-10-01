@@ -8,6 +8,7 @@
  * (vocatives, force, linkers, …) stay flat at clause level.
  */
 
+import { isKindReference } from "./ast-walk.js";
 import type {
   Clause,
   CoordShared,
@@ -124,6 +125,8 @@ function fences<T>(
   cur: Cursor,
   parts: { items: T[]; join?: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[]; factor?: LexWord }[],
   item: (x: T) => GlossNode | undefined,
+  /** Kind reference (`zuan` + kind) is not a named package; only a noun list can hold one. */
+  isKind: (part: (typeof parts)[number]) => boolean = () => false,
 ): GlossNode[] {
   let acc: GlossNode[] = [];
   for (const part of parts) {
@@ -135,7 +138,7 @@ function fences<T>(
     }
     const joinModifiers = (part.joinModifiers ?? []).map((w) => cur.take(w));
     const join = cur.take(part.join);
-    const named = part.join.ending === "n" && join?.t === "leaf";
+    const named = part.join.ending === "n" && join?.t === "leaf" && !isKind(part);
     if (named) join.named = true;
     const factor = cur.take(part.factor);
     const node = group([...acc, ...items, ...joinModifiers, join, ...sharedNodes, factor], named ? "NAME" : undefined);
@@ -149,7 +152,7 @@ function gCoordNodes(cur: Cursor, coord: GCoord): GlossNode[] {
 }
 
 function np(cur: Cursor, coord: NpCoord): GlossNode[] {
-  return fences(cur, coord.parts, (item) => npItem(cur, item));
+  return fences(cur, coord.parts, (item) => npItem(cur, item), isKindReference);
 }
 
 function span(cur: Cursor, s: SpanUnit): GlossNode | undefined {
