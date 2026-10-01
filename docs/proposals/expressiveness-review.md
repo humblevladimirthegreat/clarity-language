@@ -140,14 +140,14 @@ Translated with the house cast for the third parties (Priya is `zahaben`). *I* /
 | 2.2a | yes!! | `!!yael.` | !!y-yes | covered |
 | 2.2b | 7:30 at the place on Pine St, right? | `zohan thumam vagudel h_19,30 om bagudelahazal. zagudelahazal om b<pine st>. yol yael.` | z-interlocutors \| th-plan-itinerary \| v-eat \| h-_19,30 \| [near \| b-restaurant] . z-restaurant \| [near \| b-opaque] . y-question \| y-yes | covered |
 | 2.3a | that's the one | `yael.` | y-yes | covered |
-| 2.3b | i booked a table for four | `zamegun thunom vababul debezarx gramol.` | z-speaker \| th-WITNESSED \| v-reserve \| d-person-x \| g-four | stand-in (L-05) |
+| 2.3b | i booked a table for four | `zamegun thunom vababul debedelagudel el bebezarx gramol.` | z-speaker \| th-WITNESSED \| v-reserve \| d-table \| [for \| [b-person-x \| g-four]] | done (L-05) |
 | 2.4a | four? | `?! debezarx gramol.` | ?! \| d-person-x \| g-four | covered |
 | 2.4b | who else is coming | `yol zur vuvudel.` | y-question \| z-who-else \| v-go | covered |
 | 2.5a | Priya said she might bring her brother | `zahaben themam thovom valagal dezebal gemehel grebazol bahaben.` | z-Ahaben \| th-HEARSAY \| th-MAY \| v-bring \| [d-person \| g-brother-of-ranked \| [b-Ahaben]] | covered |
 | 2.5b | not sure yet | `zamegun thodum hagem vevegam.` | z-speaker \| th-LIVE \| h-still \| v-doubt | covered |
 | 2.6a | cool cool | `yaol. yaol.` | y-sure . y-sure | covered |
-| 2.6b | can you ask her to confirm by thursday? | `yem zehodon vezebel oel bahaben. yem zahaben vaen hodal belagam gremol.` | y-request \| z-listener \| v-tell \| [toward \| b-Ahaben] . y-request \| z-Ahaben \| v-confirm \| [h-by \| [b-weekday \| g-4th]] | awkward (G-07) |
-| 2.6c | they'll want a final number | `yem zahaben vaen hodal belagam gremol theram barl zagudelahazal thabem bral vuhum danabel gogovel.` | (as 2.6b) \| [th-because \| b-that-clause] \| z-restaurant \| [th-PATTERN \| b-later] \| v-wish \| d-numbers \| g-final | covered |
+| 2.6b | can you ask her to confirm by thursday? | `yem zehodon bahaben vezebel derl vaen hodal belagam gremol.` | y-request \| z-listener \| b-Ahaben \| v-tell \| d-to-clause \| [v-confirm \| [h-by \| [b-weekday \| g-4th]]] | covered (G-07) |
+| 2.6c | they'll want a final number | `yem zehodon bahaben vezebel derl vaen hodal belagam gremol theram barl zagudelahazal thabem bral vuhum danabel gogovel.` | (as 2.6b) \| [th-because \| b-that-clause] \| z-restaurant \| [th-PATTERN \| b-later] \| v-wish \| d-numbers \| g-final | covered |
 | 2.7 | will do | `zamegun thumam vezebel oel bahaben.` | z-speaker \| th-plan-itinerary \| v-tell \| [toward \| b-Ahaben] | covered |
 | 2.8a | sorry just seeing this | `yabayen. zamegun thunom brubul vahahal dezebem.` | y-Abayen . z-speaker \| th-WITNESSED \| h-just-before-now \| v-see \| d-discourse | covered |
 | 2.8b | i can come but i'll be 15 min late, work thing | `zamegun vuvudexal. xagozal zamegun thumam vevahal h_19,45 theram bebevel.` | z-speaker \| v-go-able . x-but \| z-speaker \| th-plan-itinerary \| v-arrival \| h-_19,45 \| [th-because \| b-job] | covered (G-01) |
@@ -163,6 +163,35 @@ Translated with the house cast for the third parties (Priya is `zahaben`). *I* /
 | 2.13b | talk later! | `! zohan thabem bral vezebel.` | ! \| z-interlocutors \| [th-PATTERN \| b-later] \| v-talk | covered |
 | 2.14a | bye!! | `!! amegun.` | !! \| greeting | covered |
 | 2.14b | see you both saturday ❤️ | `; zamegun thabem bral dehodonx vahahal hehum belagam gregul.` | ; \| z-speaker \| [th-PATTERN \| b-later] \| v-see \| d-listener-x \| [h-while \| [b-weekday \| g-6th]] | covered |
+
+#### RS-3 — How-to instructions {#rs-3}
+
+Each step is a command (`yel`) with no subject, so the listener is the cook. Steps are kept as separate turns, and a *because* that English puts in its own sentence becomes a plain statement after the command. A word the step already named comes back as a full-root resume (`danayar`, `zuzudur`). Every line was checked with `node scripts/parse.mjs --check-lexicon --check-ambiguity`. Gaps are in [register-results](../meta/register-results.md); *awkward*, *stand-in* and *by design?* rows cite the `G-nn` or `L-nn` there.
+
+| RS-3 | English | Agazan | Morph gloss | Verdict |
+|------|---------|--------|-------------|---------|
+| 3.1 | Before you start, wash your hands and clear a space on the counter. | `yel vabeval dahadalx xal vubuval dawazem aol bebedelagudel habum barl zehodon vebegel.` | y-command \| v-wash \| d-hand-x \| x-and \| v-clear \| d-blank \| [on \| b-table] \| [h-before \| b-that-clause] \| z-listener \| v-begin | stand-in (L-06) |
+| 3.2a | Chop one onion and three cloves of garlic. | `yel vanaval danayal grawol dagegol gozazom grarel dal.` | y-command \| v-cut \| [d-onion \| g-one] \| [d-garlic \| g-division \| g-three] \| d-and | covered |
+| 3.2b | Cut them as small as you can, | `yel vanavar hagom barl zozazor zel gamazal.` | y-command \| v-←cut.full \| [h-so-that \| b-that-clause] \| [z-←division.full \| z-rank/more \| g-small] | awkward (G-08) |
+| 3.2c | because they cook faster that way. | `zozazor gamazal zahen zel havazom vugugel.` | [z-←division.full \| g-small \| z-Typical \| z-rank/more \| h-quickly] \| v-cook | covered |
+| 3.3a | Heat two tablespoons of oil in a wide pan over medium heat. | `yel vebem duzubul gradul gaham bababul al bozegal gorodam ael bebem beyen bael gahadol.` | y-command \| v-heat \| [d-spoon \| g-two \| [g-contents \| b-oil]] \| [in \| [b-skillet \| g-wide]] \| [using \| [b-heat \| b-Average \| b-equal-rank \| g-hot]] | covered |
+| 3.3b | When the oil shimmers, add the onion. | `yel vabavol danayar wadehom hulam barl zababur vabawel.` | y-command \| v-add \| d-←onion.full \| [[w-haste \| h-after] \| b-that-clause] \| z-←oil.full \| v-shine | covered |
+| 3.4a | Stir often. | `yel zahen zel hral vagogel.` | y-command \| [z-Typical \| z-rank/more \| h-how-often] \| v-stir | covered |
+| 3.4b | If the onion browns too quickly, lower the heat. | `yel vadahem debem thodom barl zanayar zugen zel havazom vabawal.` | y-command \| v-decrease \| d-heat \| [th-if \| b-that-clause] \| [z-←onion.full \| z-Some-sake \| z-rank/more \| h-quickly] \| v-brown | by design? (G-09) |
+| 3.5a | After about five minutes, add the garlic and cook for one more minute. | `yel hulam bumunum gravam vabavol dagegor xal vugugel bumunum grawol.` | y-command \| [h-after \| [b-minute \| g-five.about]] \| v-add \| d-←garlic.full \| x-and \| v-cook \| [b-minute \| g-one] | covered |
+| 3.5b | Do not let it burn; | `yul dagegor vavahel.` | y-prohibition \| d-←garlic.full \| v-burn | covered |
+| 3.5c | burnt garlic tastes bitter. | `zagegol gavahel gazahal gul.` | [z-garlic \| g-burn \| g-good \| g-not] | stand-in (L-07) |
+| 3.6a | Pour in one large can of crushed tomatoes and half a cup of water. | `yel vobohel dedewel grawol gelaval gaham badedolx gagabel dedehelezel grudul gaham bowodel dal al bozegar.` | y-command \| v-pour \| [d-tin \| g-one \| g-big \| [g-contents \| [b-tomato-x \| g-pressed]]] \| [d-cup \| g-half-of \| [g-contents \| b-water]] \| d-and \| [in \| b-←skillet.full] | covered |
+| 3.6b | Add a pinch of salt. | `yel vabavol debohol gaham bozodal.` | y-command \| v-add \| [d-pinch \| [g-contents \| b-salt]] | covered |
+| 3.7 | Let the sauce simmer, uncovered, for twenty to thirty minutes, until it thickens. | `yel vuzudum duzudul bumunum g+20 al g+30 huan bagebal hodam barl zuzudur gehobalagodel.` | y-command \| v-simmer \| d-stew \| [b-minute \| g-twenty] \| through \| g-thirty \| [without \| b-cap] \| [h-until \| b-that-clause] \| z-←stew.full \| g-density | stand-in (L-08, L-09) |
+| 3.8a | Taste it. | `yel vadavalahahal duzudur.` | y-command \| v-taste \| d-←stew.full | covered |
+| 3.8b | If it is too sharp, add a small spoonful of sugar. | `yel vabavol duzubul gamazal gaham bagedem thodom barl zuzudur zugen zel ganaval.` | y-command \| v-add \| [d-spoon \| g-small \| [g-contents \| b-sugar]] \| [th-if \| b-that-clause] \| [z-←stew.full \| z-Some-sake \| z-rank/more \| g-sharp] | stand-in (L-07, G-09) |
+| 3.8c | If it is bland, add more salt. | `yel vabavol dozodal herebem thodom barl zuzudur zugen zuel gozodal.` | y-command \| v-add \| d-salt \| h-again \| [th-if \| b-that-clause] \| [z-←stew.full \| z-Some-sake \| z-rank/less \| g-salt] | stand-in (L-07, G-09) |
+| 3.9a | Be careful when you stir: | `yel geyayem hehum barl zehodon vagogel.` | y-command \| g-caution \| [h-while \| b-that-clause] \| z-listener \| v-stir | covered |
+| 3.9b | hot sauce can splash. | `zadabalx gahadol thovom vagugel ul bozegar.` | [z-droplet-x \| g-hot] \| th-MAY \| v-jump \| [from \| b-←skillet.full] | covered |
+| 3.10 | Serve immediately, or let it cool and store it in the fridge for up to four days. | `yel vowogalel duzudur hodal brabul xol vaham duzudur bazazam grazol al gramol ol bar gogodel hulam barl zuzudur vogodel.` | y-command \| v-serve \| d-←stew.full \| [h-by \| b-just-after-now] \| x-or \| v-store \| d-←stew.full \| [b-day \| g-zero] \| through \| g-four \| [at \| [b-somewhere \| g-cold]] \| [h-after \| b-that-clause] \| z-←stew.full \| v-cold | stand-in (L-10) |
+
+Notes on the covered rows. Measures that English names by a vessel (*two tablespoons*, *half a cup*, *a pinch*) use the vessel with its contents (`gaham`), as English does; only the stock units (minutes, days) are measure phrases. *Medium heat* is heat at the Average bar (`beyen bael gahadol`). *Shimmers* is *shines*, *thickens* is *is dense* (`ehobalagode`), *crushed* is *pressed* (`gagabel`), and *splash* is *hot drops may jump out of the pan*. *Let it cool and store it* is reordered as *store it after it cools*. *Up to four days* is the band *zero to four days*. *Serve* is the hook compound `vowogalel`.
 
 **Exit:** corpus and samples translated; every stopping point ruled and applied or recorded as by design.
 
