@@ -175,7 +175,7 @@ function isRespectively(word: LexWord): boolean {
 
 /** A marked list is an and-list paired with another and-list of the same length (joins.md § Respectively). */
 function enforceRespectively(units: Unit[]): void {
-  const lists: { length: number; marked: boolean; raw: string }[] = [];
+  const lists: { length: number; marker?: string; raw: string }[] = [];
   for (const unit of units) {
     if (unit.kind !== "np" && unit.kind !== "vp") continue;
     for (const part of unit.coord.parts) {
@@ -187,13 +187,13 @@ function enforceRespectively(units: Unit[]): void {
         if (joinModifiers.length > 0) throw new ConstructionError("joinDetail", `${joinModifiers[0]!.raw} ${part.join?.raw ?? ""}`.trim());
         continue;
       }
-      lists.push({ length: part.items.length, marked: joinModifiers.length > 0, raw: part.join!.raw });
+      lists.push({ length: part.items.length, marker: joinModifiers[0]?.raw, raw: part.join!.raw });
     }
   }
   lists.forEach((list, i) => {
-    if (!list.marked) return;
+    if (!list.marker) return;
     if (!lists.some((other, j) => j !== i && other.length === list.length)) {
-      throw new ConstructionError("respectivePartner", `wazagum ${list.raw}`);
+      throw new ConstructionError("respectivePartner", `${list.marker} ${list.raw}`);
     }
   });
 }
@@ -345,7 +345,7 @@ function enforceUnitList(units: Unit[], tables: ClassifyTables): void {
 /** The AST checks as one handler set over the walk ([ast-walk.ts](./ast-walk.ts)). */
 function structureVisitor(tables: ClassifyTables): Visitor {
   return {
-    // *Respectively* (`wazagum`) sits only right before a `/z/` `/d/` `/b/` join word (joins.md § Respectively).
+    // *Respectively* (`wazem`) sits only right before a `/z/` `/d/` `/b/` join word (joins.md § Respectively).
     word(word, slot) {
       if (isRespectively(word) && slot !== "joinModifier") throw new ConstructionError("joinDetail", word.raw);
     },

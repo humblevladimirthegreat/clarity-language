@@ -96,6 +96,29 @@ export function bareResumeDrift(
   return out;
 }
 
+/**
+ * Respell bare resumes the retie left as they were although their reading moved (`bodor` ←door
+ * now reads ←attest): the spelling that keeps the old reading (`boyer`) is the right one, since an
+ * unchanged spelling followed nothing. Drifts the retie did respell, or with no such spelling, stay
+ * for review.
+ */
+export function applyResumeKeeps(after: string, drifts: readonly BareResumeDrift[]): { text: string; applied: BareResumeDrift[]; left: BareResumeDrift[] } {
+  const applied: BareResumeDrift[] = [];
+  const left: BareResumeDrift[] = [];
+  let text = after;
+  // From the end, so earlier indexes stay valid.
+  for (const drift of [...drifts].sort((a, b) => b.index - a.index)) {
+    const at = drift.keep && drift.from === drift.to ? text.indexOf(drift.to, drift.index) : -1;
+    if (at < 0 || at > drift.index + 4) {
+      left.push(drift);
+      continue;
+    }
+    text = text.slice(0, at) + drift.keep! + text.slice(at + drift.to.length);
+    applied.push(drift);
+  }
+  return { text, applied: applied.reverse(), left: left.reverse() };
+}
+
 /** Doc-lint findings for one page (same checks as `npm run build`, minus site-wide ones). */
 export function lintPage(rel: string, source: string, tables: ClassifyTables): string[] {
   const text = fillSelf(source);

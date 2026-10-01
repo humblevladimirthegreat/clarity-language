@@ -14,45 +14,7 @@ export type RetieFormatFinding = {
   detail: string;
 };
 
-const ENGLISH_WORDS = new WeakMap<ClassifyTables, Set<string>>();
 const SENSE_FORMS = new WeakMap<ClassifyTables, Set<string>>();
-
-/**
- * English words whose spelling is also Agazan, so learner italics stay English.
- * A gloss already in the lexicon is collected from the rows; these are the ones
- * the lexicon never uses as an English headword.
- */
-const ITALIC_ENGLISH = ["ago", "even"];
-
-/** English headwords in the lexicon (glosses, definitions, mnemonics). Italics of these stay English. */
-function lexiconEnglishWords(tables: ClassifyTables): Set<string> {
-  let words = ENGLISH_WORDS.get(tables);
-  if (words) return words;
-  words = new Set([...ENGLISH_IN_CODE, ...ITALIC_ENGLISH]);
-  const add = (text: string) => {
-    for (const word of text.toLowerCase().split(/[^a-z]+/)) {
-      if (word) words!.add(word);
-    }
-  };
-  for (const row of tables.published.values()) {
-    add(row.concrete);
-    add(row.abstract);
-    add(row.mnemonic);
-    add(row.englishByPos);
-  }
-  for (const row of tables.overlays.values()) {
-    add(row.gloss);
-    add(row.definition);
-    add(row.mnemonic);
-  }
-  for (const row of tables.compounds.values()) {
-    add(row.concrete);
-    add(row.abstract);
-    add(row.mnemonic);
-  }
-  ENGLISH_WORDS.set(tables, words);
-  return words;
-}
 
 function senseForms(tables: ClassifyTables): Set<string> {
   let forms = SENSE_FORMS.get(tables);
@@ -177,14 +139,6 @@ function regionThroughBlockquote(markdown: string, commentEnd: number): string |
   return started ? rest.slice(0, end) : null;
 }
 
-function maskNonProse(markdown: string): string {
-  const mask = (chunk: string) => " ".repeat(chunk.length);
-  return markdown
-    .replace(/```[\s\S]*?```/g, mask)
-    .replace(/<!--[\s\S]*?-->/g, mask)
-    .replace(/`[^`\n]*`/g, mask);
-}
-
 function headingFindings(markdown: string, tables: ClassifyTables): RetieFormatFinding[] {
   const out: RetieFormatFinding[] = [];
   for (const heading of grammarHeadings(markdown)) {
@@ -196,22 +150,6 @@ function headingFindings(markdown: string, tables: ClassifyTables): RetieFormatF
       index: heading.offset,
       detail: `heading id \`${heading.id}\` is spelled from \`${token}\`; pin an English {#id}`,
     });
-  }
-  return out;
-}
-
-function italicFindings(markdown: string, tables: ClassifyTables): RetieFormatFinding[] {
-  const masked = maskNonProse(markdown);
-  const out: RetieFormatFinding[] = [];
-  const seen = new Set<number>();
-  for (const re of [/\*\*([a-z]+)\*\*/g, /(?<!\*)\*([a-z]+)\*(?!\*)/g]) {
-    for (const match of masked.matchAll(re)) {
-      const token = match[1]!;
-      const index = match.index!;
-      if (seen.has(index) || lexiconEnglishWords(tables).has(token) || !retieableSpelling(token, tables)) continue;
-      seen.add(index);
-      out.push({ index, detail: `*${token}* is Agazan; put it in backticks` });
-    }
   }
   return out;
 }
@@ -243,7 +181,6 @@ export function lintRetieFormat(markdown: string, tables: ClassifyTables): Retie
     });
   }
   out.push(...headingFindings(markdown, tables));
-  out.push(...italicFindings(markdown, tables));
   out.push(...sharedPrefixFindings(markdown, tables));
   return out;
 }

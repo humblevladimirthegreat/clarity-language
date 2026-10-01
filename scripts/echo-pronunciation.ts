@@ -1,118 +1,16 @@
 /**
  * Echo metric, Step 2 (docs/proposals/echo-metric.md): pronunciation data.
+ * The work is in src/echo-pronunciation.ts; convert-word --lexicon also rebuilds it when a label is new.
  *
- * Looks up each published `concrete` label in the CMU Pronouncing Dictionary (first variant),
- * maps the phonemes to Agazan letters, and writes:
- *  - tmp/echo-pron/pron.csv: emoji, concrete, lookup word(s), CMU phonemes, Agazan sound string
- *  - tmp/echo-pron/report.md: coverage, labels missing from CMU, hyphen-only mismatches
- * Downloads cmudict into tmp/ on first run. With --write, respells `concrete` labels whose only
- * difference from a CMU entry is a hyphen (hot-dog ↔ hotdog) in data/lexicon-published.csv.
+ * Run: npx tsx scripts/echo-pronunciation.ts [--write]
+ * With --write, respells `concrete` labels whose only difference from a CMU entry is a hyphen
+ * (hot-dog ↔ hotdog) in data/lexicon-published.csv.
  */
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { loadCmu } from '../src/cmu-dict.ts';
-import { parseCsvLine, serializeCsv } from '../src/csv.ts';
-import { toAgazan } from '../src/pronunciation-map.ts';
+import { relative } from 'node:path';
+import { buildPronunciationCache } from '../src/echo-pronunciation.ts';
+import { REPO_ROOT } from '../src/repo-paths.ts';
 
-const CMU_FILE = 'tmp/cmudict.dict';
-/** Pinned cmudict commit, so reruns give the same pronunciations. */
-const CMU_URL = 'https://raw.githubusercontent.com/cmusphinx/cmudict/74790861f652b15e4ac49015a90074ad62a27690/cmudict.dict';
-const LEXICON = 'data/lexicon-published.csv';
-const OUT = 'tmp/echo-pron';
-const WRITE = process.argv.includes('--write');
-
-if (!existsSync(CMU_FILE)) {
-  mkdirSync('tmp', { recursive: true });
-  const res = await fetch(CMU_URL);
-  if (!res.ok) throw new Error(`fetch ${CMU_URL}: ${res.status}`);
-  writeFileSync(CMU_FILE, await res.text());
-}
-
-/** Chosen variant per word, plus overrides for labels CMU lacks. See src/cmu-dict.ts. */
-const cmu = loadCmu();
-
-/** Common English words (tmp/en_50k.txt from prototype-lexicon-revamp.ts) guard re-hyphenation against loans. */
-const common = new Set(readFileSync('tmp/en_50k.txt', 'utf8').split('\n').map((l) => l.split(' ')[0]));
-
-/** Hyphenated labels kept although CMU has the joined spelling, because the two-word form is more common. */
-const KEEP_HYPHEN = new Set(['old-man']);
-
-/** Single words that happen to split into two English words (tam + ale). */
-const NOT_COMPOUNDS = new Set(['tamale', 'singlet', 'pinata', 'mahjong']);
-
-const text = readFileSync(LEXICON, 'utf8');
-const lines = text.split('\n');
-const header = parseCsvLine(lines[0]!);
-const iEmoji = header.indexOf('emoji'), iConcrete = header.indexOf('concrete');
-
-type Row = { emoji: string; label: string; lookup: string; phones: string; agazan: string; status: string };
-const rows: Row[] = [];
-const hyphenFixes: { line: number; from: string; to: string }[] = [];
-
-for (let n = 1; n < lines.length; n++) {
-  const csvLine = lines[n]!;
-  if (!csvLine.trim()) continue;
-  const cols = parseCsvLine(csvLine);
-  const emoji = cols[iEmoji]!, concrete = cols[iConcrete]!, label = concrete.toLowerCase();
-  let lookup = label, phones = cmu.get(label), status = 'exact';
-  if (!phones) {
-    // Hyphen-only difference: CMU has the joined spelling.
-    const joined = label.replaceAll('-', '');
-    const alt = joined !== label && cmu.has(joined) && !KEEP_HYPHEN.has(label) ? joined : undefined;
-    if (alt) {
-      hyphenFixes.push({ line: n, from: concrete, to: alt });
-      lookup = alt; phones = cmu.get(alt); status = 'hyphen-fix';
-    }
-  }
-  if (!phones && !label.includes('-') && !NOT_COMPOUNDS.has(label)) {
-    // Joined label missing from CMU: re-hyphenate when it splits into two common CMU words.
-    const splits = [...Array(label.length).keys()].slice(3, -2)
-      .map((i): [string, string] => [label.slice(0, i), label.slice(i)])
-      .filter(([a, b]) => cmu.has(a) && cmu.has(b) && common.has(a) && common.has(b));
-    if (splits.length) {
-      const [a, b] = splits.sort((x, y) => Math.min(y[0].length, y[1].length) - Math.min(x[0].length, x[1].length))[0]!;
-      const to = `${a}-${b}`;
-      hyphenFixes.push({ line: n, from: concrete, to });
-      lookup = `${a} ${b}`; phones = [...cmu.get(a)!, '|', ...cmu.get(b)!]; status = 'hyphen-fix';
-    }
-  }
-  if (!phones && label.includes('-')) {
-    const parts = label.split('-');
-    if (parts.every((p) => cmu.has(p))) {
-      lookup = parts.join(' ');
-      phones = parts.flatMap((p, i) => [...(i ? ['|'] : []), ...cmu.get(p)!]);
-      status = 'parts';
-    }
-  }
-  if (!phones) { rows.push({ emoji, label, lookup: '', phones: '', agazan: '', status: 'missing' }); continue; }
-  rows.push({ emoji, label, lookup, phones: phones.join(' '), agazan: toAgazan(phones), status });
-}
-
-if (WRITE && hyphenFixes.length) {
-  for (const f of hyphenFixes) {
-    const csvLine = lines[f.line]!;
-    if (parseCsvLine(csvLine)[iConcrete] !== f.from) throw new Error(`line ${f.line} changed`);
-    lines[f.line] = csvLine.replace(`,${f.from},`, `,${f.to},`);
-  }
-  writeFileSync(LEXICON, lines.join('\n'));
-}
-
-mkdirSync(OUT, { recursive: true });
-writeFileSync(`${OUT}/pron.csv`, serializeCsv(['emoji', 'concrete', 'lookup', 'cmu', 'agazan', 'status'],
-  rows.map((r) => ({ ...r, concrete: r.label, cmu: r.phones }))));
-
-const count = (s: string) => rows.filter((r) => r.status === s).length;
-const missing = rows.filter((r) => r.status === 'missing');
-writeFileSync(`${OUT}/report.md`, [
-  '# Echo pronunciation coverage', '',
-  `CMU entries (first variant): ${cmu.size}. Labels: ${rows.length}.`, '',
-  `- exact: ${count('exact')}`,
-  `- hyphen-only fix${WRITE ? ' (applied)' : ' (run with --write)'}: ${count('hyphen-fix')}`,
-  `- hyphenated, looked up by parts: ${count('parts')}`,
-  `- missing: ${missing.length}`, '',
-  'Agazan string: capital = primary-stress vowel, `·` = unstressed AH0.', '',
-  '## Hyphen-only fixes', '', ...hyphenFixes.map((f) => `- ${f.from} → ${f.to}`), '',
-  '## Hyphenated, looked up by parts', '', ...rows.filter((r) => r.status === 'parts').map((r) => `- ${r.emoji} ${r.label}`), '',
-  '## Missing from CMU (find a label that is in CMU)', '', ...missing.map((r) => `- ${r.emoji} ${r.label}`), '',
-].join('\n'));
-
-console.log(`exact ${count('exact')}, hyphen-fix ${count('hyphen-fix')}, parts ${count('parts')}, missing ${missing.length} → ${OUT}/report.md`);
+const report = await buildPronunciationCache({ write: process.argv.includes('--write') });
+console.log(
+  `exact ${report.exact}, hyphen-fix ${report.hyphenFix}, parts ${report.parts}, missing ${report.missing.length} → ${relative(REPO_ROOT, report.reportPath)}`,
+);

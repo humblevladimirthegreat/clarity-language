@@ -616,7 +616,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 ⌚,watch,awaha,punctuality,watch tracks the exact moment; punctuality is being on time,,observe
 ⏰,alarm-clock,elaga,weekday,alarm clock starts each morning of the week; a weekday is a day of the week,,
 ⏱️,stopwatch,azade,second,stopwatch ticks off short intervals; second is the SI time unit,,moment
-🕒,three-oclock,avega,minute,the clock hand steps on one minute at a time; minute is sixty seconds,,
+🕒,minute-hand,avega,minute,the clock hand steps on one minute at a time; minute is sixty seconds,,
 ⏲️,timer,oma,deadline,timer counts down to zero; deadline is the moment time runs out,,
 🕰️,clock,agaga,passage,a clock marks hours passing; passage is time going by,,transition; pass; era
 🕐,time,adaha,duration,clock face marks duration,,session

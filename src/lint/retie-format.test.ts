@@ -42,31 +42,16 @@ describe("lintRetieFormat", () => {
     assert.deepEqual(lintRetieFormat(markdown, tables), []);
   });
 
-  it("keeps italic English that also spells a root", () => {
-    assert.deepEqual(lintRetieFormat("There is no bare *ago* word, *even* so.\n", tablesOf(["ago", "eve"])), []);
-    const glossed = createClassifyTablesFromRows(
-      [
-        {
-          emoji: "",
-          concrete: "eye",
-          abstract: "",
-          root: "eye",
-          mnemonic: "",
-          englishByPos: "",
-          posEnglish: emptyPosEnglish(),
-        },
-      ],
-      [],
-    );
-    assert.deepEqual(lintRetieFormat("Seeing is what an *eye* does.\n", glossed), []);
+  it("leaves italic prose alone, even a word that spells Agazan", () => {
+    // Italics are English by policy; a root placement can make one spell Agazan (*buyer*: b + uye + r).
+    assert.deepEqual(lintRetieFormat("A *buyer* pays; *abaha* is italic.\n", tablesOf(["uye", "abaha"])), []);
   });
 
-  it("rejects retie: skip and an italic Agazan word", () => {
-    const markdown = "<!-- retie: skip -->\n\nSee *abaha* and *sleep* and *Azawan*.\n";
+  it("rejects retie: skip", () => {
+    const markdown = "<!-- retie: skip -->\n\nSee `abaha`.\n";
     const details = lintRetieFormat(markdown, tables).map((finding) => finding.detail);
-    assert.equal(details.length, 2);
+    assert.equal(details.length, 1);
     assert.match(details[0]!, /retie: skip/);
-    assert.match(details[1]!, /\*abaha\*/);
   });
 
   it("accepts a shared-prefix example whose roots share a short cut", () => {

@@ -15,6 +15,7 @@ import {
 import { rewriteSourceLiterals, sourceLiterals } from "./source.js";
 import { rewriteParsedWord } from "./rebuild.js";
 import { parseWord } from "../parse/word.js";
+import { letterPrefix } from "../parse/resolve.js";
 import { lineNumberAt, peelChunk, retieCore } from "./tokens.js";
 import { retieTables as bridgeTables } from "./tables.js";
 import { verifyRetiedSpans } from "./verify.js";
@@ -548,9 +549,15 @@ describe("resume binds after a retie", () => {
 
 describe("retie fixes (2026-09-28 overlay demotion)", () => {
   it("moves an overlay -r with its root instead of binding it as a resume", () => {
-    // `thewar` is TOLD.weak; `ewawe` on the page shares its short cut but is not its antecedent.
-    const { text } = rewriteMarkdown("`zewawel` then `zalahen thewar vedabal.`", mapOf(["ewa", "ibibi"]));
-    assert.equal(text, "`zewawel` then `zalahen thibibir vedabal.`");
+    // TOLD.weak (`th…r`) next to a five-letter root sharing its short cut, which is not its antecedent.
+    // Both come from the lexicon, so a regeneration that respells them keeps this test meaningful.
+    const tables = loadDefaultTables();
+    const told = [...tables.overlays.values()].find((row) => row.gloss === "TOLD.weak" && row.pos === "th")!;
+    const root = told.senseForm.slice(0, -1);
+    const cousin = [...tables.published.keys()].find((other) => other.length === 5 && other.startsWith(letterPrefix(root)))!;
+    assert.ok(cousin, `a five-letter root starting ${letterPrefix(root)}`);
+    const { text } = rewriteMarkdown(`\`z${cousin}l\` then \`zalahen th${root}r vedabal.\``, mapOf([root, "ibibi"]));
+    assert.equal(text, `\`z${cousin}l\` then \`zalahen thibibir vedabal.\``);
   });
 
   it("keeps an emotion tail when the sake root moves", () => {
@@ -601,10 +608,147 @@ describe("source literals (2026-09-28 fixes)", () => {
     assert.equal(text, 'expect("overlay.ibibim.th");\n');
   });
 
-  it("reports an escaped literal and a word the tokenizer could not reach", () => {
-    const escaped = rewriteSourceLiterals('const md = "> \\`zazawan vowogal.\\`";\n', "x.test.ts", ctx);
-    assert.equal(escaped.reviews.length, 1);
+  it("reties an escaped literal around its escapes, and reports a word the tokenizer could not reach", () => {
+    const escaped = rewriteSourceLiterals('const md = "> \\`zazawan vowogal.\\`\\n>\\n> \\"Azawan walks.\\"";\n', "x.test.ts", ctx);
+    assert.equal(escaped.text, 'const md = "> \\`zululon vowogal.\\`\\n>\\n> \\"Ululon walks.\\"";\n');
+    assert.equal(escaped.reviews.length, 0);
     const partial = rewriteSourceLiterals('expect("yael [[zazawan zam] zazawan zal]");\n', "x.test.ts", ctx);
     assert.ok(partial.reviews.some((review) => /azawa/.test(review.reason)));
+  });
+});
+
+describe("retie — inline code that holds a fence marker", () => {
+  it("does not open a fence mid-line, so later italics stay English", () => {
+    const page =
+      "Fenced blocks need an info string: ` ```agazan ` to check each line, or ` ```text ` for notation.\n\n" +
+      "Italics are English, even a word whose letters spell a root (*eye*).\n";
+    const { text, changes } = rewriteMarkdown(page, mapOf(["eye", "uye"]));
+    assert.deepEqual(changes, []);
+    assert.equal(text, page);
+  });
+
+  it("still reties a real fence and a double-backtick span", () => {
+    const page = "```agazan\nzazawan vowogal.\n```\n\nSay ``zazawan`` here.\n";
+    const { text } = rewriteMarkdown(page, mapOf(["azawa", "ezewe"]));
+    assert.equal(text, "```agazan\nzezewen vowogal.\n```\n\nSay ``zezewen`` here.\n");
+  });
+
+  it("walks a double-backtick span that quotes Markdown as Markdown", () => {
+    const page = "Write `` `ahahal` *eye* `` in the table.\n";
+    const { text } = rewriteMarkdown(page, mapOf(["eye", "uye"], ["ahaha", "ohoho"]));
+    assert.equal(text, "Write `` `ohohol` *eye* `` in the table.\n");
+  });
+});
+
+describe("retie — review noise", () => {
+  it("does not report a common English prose word that matches an old root", () => {
+    const english = new Set(["there", "here"]);
+    const { reviews } = rewriteMarkdown("Over *there* and here, `zazawan` walks.\n", mapOf(["ere", "ule"], ["azawa", "ezewe"]), undefined, { english });
+    assert.deepEqual(reviews, []);
+  });
+});
+
+describe("retie — resumes in spans with the learner-name slot", () => {
+  it("binds a resume in a sentence that holds SELF", () => {
+    // Without the parse bind, the page-level guess picks the unmoved `azoba` and leaves `zazor` stale.
+    const page = "`zazobal` stays.\n\n`zSELFn vowogal dazomx. zazor vehahel.`\n";
+    const { text } = rewriteMarkdown(page, mapOf(["azo", "oze"]));
+    assert.equal(text, "`zazobal` stays.\n\n`zSELFn vowogal dozemx. zozer vehahel.`\n");
+  });
+});
+
+describe("source literals — one spelling per file", () => {
+  const ctxOf = (map: Map<string, string>) => ({
+    map,
+    tables: loadDefaultTables(),
+    follow: { names: new Map(), words: new Map() },
+    english: new Set(["one", "the", "unused", "root", "use", "here"]),
+    currentRoots: new Set<string>(),
+  });
+  const file = 'parse("zazawan zodogal em bazar zal vowogal.");\nassert.equal(bound, "bazar");\n';
+
+  it("gives a lone resume the spelling its sentence gave it", () => {
+    const { text } = rewriteSourceLiterals(file, "x.test.ts", ctxOf(mapOf(["azawa", "ululo"], ["aza", "ozo"])));
+    assert.equal(text, 'parse("zululon zodogal em bulur zal vowogal.");\nassert.equal(bound, "bulur");\n');
+  });
+
+  it("undoes a lone resume's rewrite when its sentence kept it", () => {
+    const { text } = rewriteSourceLiterals(file, "x.test.ts", ctxOf(mapOf(["aza", "ozo"])));
+    assert.equal(text, file);
+  });
+
+  it("carries a word change into a literal the pass could not read", () => {
+    const source = 'segment("?! zazawan !!veyel ?^ hal ^.");\nexpect({ text: "veyel" });\n';
+    const { text } = rewriteSourceLiterals(source, "x.test.ts", ctxOf(mapOf(["eye", "uye"])));
+    assert.equal(text, 'segment("?! zazawan !!vuyel ?^ hal ^.");\nexpect({ text: "vuyel" });\n');
+  });
+});
+
+describe("source literals — tests that read the real lexicon", () => {
+  const ctx = {
+    map: mapOf(["abede", "abode"], ["ovo", "ovu"], ["eha", "ehu"]),
+    tables: loadDefaultTables(),
+    follow: { names: new Map(), words: new Map() },
+    english: new Set(["unused", "root", "use", "here"]),
+    currentRoots: new Set<string>(),
+  };
+  const body = 'term("root=abede");\nkinds("unused ovo");\nmd("Use `theha` here.");\n';
+
+  it("respells bare roots, roots beside English, and seams", () => {
+    const { text } = rewriteSourceLiterals(`const t = loadDefaultTables();\n${body}`, "x.test.ts", ctx);
+    assert.equal(text, 'const t = loadDefaultTables();\nterm("root=abode");\nkinds("unused ovu");\nmd("Use `thehu` here.");\n');
+  });
+
+  it("only reports them in a test with its own tables", () => {
+    const { text, reviews } = rewriteSourceLiterals(body, "x.test.ts", ctx);
+    assert.equal(text, body.replace("`theha`", "`thehu`"));
+    assert.equal(reviews.length, 2);
+  });
+});
+
+describe("retie — the SELF slot", () => {
+  it("does not block a span whose only moved root is the speaker root filled in for SELF", () => {
+    const tables = loadDefaultTables();
+    const speaker = [...tables.published.values()].find((row) => row.emoji === "🎤")!.root;
+    // Before the retie the speaker row was spelled `ululo`.
+    const map = mapOf(["ululo", speaker]);
+    const failures = verifyRetiedSpans([{ before: "zSELFn vowogal.", after: "zSELFn vowogal.", index: 0, cls: "sentence" }], map, bridgeTables(map));
+    assert.deepEqual(failures, []);
+  });
+});
+
+describe("source literals — fixtures, patterns and names", () => {
+  const ctx = {
+    map: mapOf(["eye", "uye"], ["agada", "agadu"], ["egeva", "egevo"]),
+    tables: loadDefaultTables(),
+    follow: { names: new Map(), words: new Map() },
+    english: new Set(["see", "does", "not", "appear"]),
+    currentRoots: new Set<string>(),
+  };
+
+  it("leaves words on a root the test defines as its own fixture", () => {
+    const source = 'const row = { root: "eye" };\nlint("| *see* | `veyel` |");\n';
+    assert.equal(rewriteSourceLiterals(source, "x.test.ts", ctx).text, source);
+  });
+
+  it("reties Agazan quoted in a regex literal", () => {
+    const source = 'lint("`zagadal` is here");\nassert.match(out, /`zagadal` does not appear/);\n';
+    assert.equal(
+      rewriteSourceLiterals(source, "x.test.ts", ctx).text,
+      'lint("`zagadul` is here");\nassert.match(out, /`zagadul` does not appear/);\n',
+    );
+  });
+
+  it("carries a moved root's English name to other literals in the file", () => {
+    const source = 'gloss("zegevan vowogal.");\nassert.equal(out, "z-Egevan | v-walk");\n';
+    assert.equal(rewriteSourceLiterals(source, "x.test.ts", ctx).text, 'gloss("zegevon vowogal.");\nassert.equal(out, "z-Egevon | v-walk");\n');
+  });
+
+  it("follows a cite's word into a lone literal (the cite's change carries its bracket)", () => {
+    const source = 'preview("d[zadagal zagadal]");\nassert.deepEqual(spoken, ["daxal", "zadagal", "zagadal", "xuxul"]);\n';
+    assert.equal(
+      rewriteSourceLiterals(source, "x.test.ts", ctx).text,
+      'preview("d[zadagal zagadul]");\nassert.deepEqual(spoken, ["daxal", "zadagal", "zagadul", "xuxul"]);\n',
+    );
   });
 });

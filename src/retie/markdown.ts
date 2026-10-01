@@ -240,7 +240,9 @@ export function rewriteMarkdown(
       if (!parses(fillSelf(inner))) continue;
       const innerStart = match.index! + 1;
       out += proseWords(text.slice(at, innerStart), index + at);
+      const before = changes.length;
       out += rewriteAgazan(inner, index + innerStart, cls);
+      for (const change of changes.slice(before)) change.prose = true;
       at = innerStart + inner.length;
     }
     return out + proseWords(text.slice(at), index + at);
@@ -249,12 +251,12 @@ export function rewriteMarkdown(
   /**
    * Prose words are never retied. A lone word cannot be told from English (*one*, *here*,
    * *bone* all fit the root shape), and emphasis in prose is English glosses; Agazan in
-   * prose is in code. Hits are reported for review.
+   * prose is in code. Hits are reported for review, except common English words (*there*, *over*).
    */
   const proseWords = (text: string, index: number): string =>
     forEachPlainChunk(text, index, (chunk, chunkIndex) => {
       const { prefix, core } = peelChunk(chunk);
-      if (!core) return chunk;
+      if (!core || english.has(core.toLowerCase())) return chunk;
       const next = retieCore(core, map, { stems });
       if (next == null || next === core) return chunk;
       reviews.push({

@@ -3,6 +3,7 @@
  * with only mapped roots changed.
  */
 import type { ClassifyTables } from "../parse/classify.js";
+import { ConstructionError } from "../parse/enforce.js";
 import { parse } from "../parse/index.js";
 import { parseWord } from "../parse/word.js";
 
@@ -11,7 +12,7 @@ import { letterPrefix } from "../parse/resolve.js";
 import { bindDrift, contentBinds, type ContentBind } from "./binds.js";
 import { contentStemRoots } from "./resume.js";
 import type { RetiedSpan } from "./markdown.js";
-import { asRetieTables, type RetieTables } from "./tables.js";
+import { asRetieTables, fillSelfFor, selfRootIn, type RetieTables } from "./tables.js";
 
 export type RetieVerifyLevel = "blocking" | "warning" | "info";
 
@@ -71,13 +72,23 @@ function isOwnShortCut(anaphor: Record<string, unknown>): boolean {
   return Array.isArray(roots) && roots.length > 0 && roots.every((root) => letterPrefix(root) === root);
 }
 
-function tryParse(text: string, tables: ClassifyTables): { shape: Shape; value: unknown } | { error: string } {
+function tryParse(
+  text: string,
+  tables: ClassifyTables,
+): { shape: Shape; value: unknown } | { error: string; rejection?: string } {
   try {
-    const value = parse(text.trim(), tables);
+    const value = parse(fillSelfFor(text, tables).trim(), tables);
     return { shape: shapeOf(value), value };
   } catch (error) {
-    return { error: (error instanceof Error ? error.message : String(error)).split("\n")[0]! };
+    const rejection = error instanceof ConstructionError ? error.rejection : undefined;
+    return { error: (error instanceof Error ? error.message : String(error)).split("\n")[0]!, rejection };
   }
+}
+
+/** A content resume the parser read with no antecedent in the span (it fell back to its stem's lexicon root). */
+function hasUnboundResume(value: unknown): boolean {
+  const anaphors = (value as { resolve?: { anaphors?: { kind?: string; antecedent?: unknown }[] } }).resolve?.anaphors ?? [];
+  return anaphors.some((anaphor) => anaphor.kind === "content" && !anaphor.antecedent);
 }
 
 /** Pronouns the resolve pass bound as resumes. */
@@ -110,8 +121,12 @@ export function verifyRetiedSpans(
     const before = tryParse(span.before, old);
     if ("error" in before) continue; // already broken before the retie; the lint reports it
     if (span.after === span.before) {
-      // Left as is: fine unless the old reading holds a moved root (not a resume stem, which follows its antecedent).
-      const stale = before.shape.roots.find((root, i) => !before.shape.resume[i] && map.has(root) && map.get(root) !== root);
+      // Left as is: fine unless the old reading holds a moved root (not a resume stem, which follows its antecedent,
+      // nor the speaker root filled in for `SELF`, which the site fills from the current lexicon).
+      const self = span.before.includes("SELF") ? selfRootIn(old) : undefined;
+      const stale = before.shape.roots.find(
+        (root, i) => !before.shape.resume[i] && root !== self && map.has(root) && map.get(root) !== root,
+      );
       if (stale) {
         failures.push({ span, level: "blocking", detail: `left unretied, but it reads root ${stale} (now ${map.get(stale)})` });
       }
@@ -119,7 +134,16 @@ export function verifyRetiedSpans(
     }
     const after = tryParse(span.after, current);
     if ("error" in after) {
-      failures.push({ span, level: "blocking", detail: `parsed before the retie, not after: ${after.error}` });
+      // A fragment whose resume had no antecedent before either (it cites a word from elsewhere):
+      // the respelling follows that word, and the old reading only parsed by matching a lexicon root.
+      const unbound = after.rejection === "shortResumeUnbound" && hasUnboundResume(before.value);
+      failures.push({
+        span,
+        level: unbound ? "warning" : "blocking",
+        detail: unbound
+          ? `resume with no antecedent in the span no longer matches a lexicon root: ${after.error}`
+          : `parsed before the retie, not after: ${after.error}`,
+      });
       continue;
     }
     const beforeBinds = contentBinds(span.before, old) ?? [];

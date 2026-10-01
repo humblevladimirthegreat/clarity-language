@@ -38,7 +38,7 @@ import { lineNumberAt } from "../src/retie/tokens.js";
 import { lexiconConverted, retieTables } from "../src/retie/tables.js";
 import { verifyRetiedSpans } from "../src/retie/verify.js";
 import { REPO_ROOT, dataPath } from "../src/repo-paths.js";
-import { bareResumeDrift, newLintFindings, rootsInUse } from "../src/retie/drift.js";
+import { applyResumeKeeps, bareResumeDrift, newLintFindings, rootsInUse } from "../src/retie/drift.js";
 
 const markdownDirs = [
   join(REPO_ROOT, "docs", "grammar"),
@@ -242,8 +242,18 @@ async function main(): Promise<void> {
   }
 
   // A bare short resume in prose reads as its stem's root; the retie can change which root that is.
+  // One the retie left unchanged takes the spelling that keeps its reading; the rest are warned.
   for (const [file, result] of results) {
-    for (const drift of bareResumeDrift(sources.get(file)!, result.text, map, tables, english)) {
+    const drifts = bareResumeDrift(sources.get(file)!, result.text, map, tables, english);
+    const kept = applyResumeKeeps(result.text, drifts);
+    if (kept.applied.length > 0) {
+      results.set(file, {
+        ...result,
+        text: kept.text,
+        changes: [...result.changes, ...kept.applied.map((drift) => ({ from: drift.to, to: drift.keep!, index: drift.index }))],
+      });
+    }
+    for (const drift of kept.left) {
       warnings += 1;
       console.warn(
         `${relative(REPO_ROOT, file)}:${lineNumberAt(result.text, drift.index)}  warning  bare resume \`${drift.from}\` → \`${drift.to}\` read ${drift.was}, now reads ${drift.reads}; check the prose around it${drift.keep ? ` (\`${drift.keep}\` keeps ${drift.was})` : ""}`,
@@ -284,7 +294,8 @@ async function main(): Promise<void> {
     }
     for (const change of result.changes) {
       console.log(`${rel}:${lineNumberAt(original, change.index)}  ${change.from} → ${change.to}`);
-      if (english.has(change.from)) {
+      // Code spans are Agazan by policy; only an emphasised prose run can hold English.
+      if (change.prose && english.has(change.from)) {
         review(`${rel}:${lineNumberAt(original, change.index)}  review  ${change.from} is also an English word; check it was Agazan`);
       }
     }

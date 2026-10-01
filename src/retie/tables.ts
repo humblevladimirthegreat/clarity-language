@@ -10,6 +10,8 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
+import { CLOSED_ENTRIES } from "../closed-roots.js";
+import { DEFAULT_SELF_ROOT, fillSelf } from "../learner-name.js";
 import { parseCompoundCsv, retieCompoundRows, type CompoundRow } from "../lexicon-compounds.js";
 import { parseOverlayCsv, parsePublishedCsv, type OverlayRow, type PublishedRow } from "../lexicon-search.js";
 import { createClassifyTablesFromRows, type ClassifyTables } from "../parse/classify.js";
@@ -18,6 +20,27 @@ import { REPO_ROOT } from "../repo-paths.js";
 import { retieCore } from "./rebuild.js";
 
 export type RetieTables = { old: ClassifyTables; current: ClassifyTables };
+
+const SELF_ROOTS = new WeakMap<ClassifyTables, string>();
+const SPEAKER_EMOJI = CLOSED_ENTRIES.find((entry) => entry.name === "microphone")!.emoji;
+
+/**
+ * Fill the learner-name slot (`zSELFn`) as the lint does, with the speaker root as `tables` spell it:
+ * old tables hold the old spelling, so pre-retie text must not be read with the new one.
+ */
+export function fillSelfFor(text: string, tables: ClassifyTables): string {
+  return fillSelf(text, selfRootIn(tables));
+}
+
+/** The speaker root as `tables` spell it: what `SELF` stands for when text is read against them. */
+export function selfRootIn(tables: ClassifyTables): string {
+  let root = SELF_ROOTS.get(tables);
+  if (root === undefined) {
+    root = [...tables.published.values()].find((row) => row.emoji === SPEAKER_EMOJI)?.root ?? DEFAULT_SELF_ROOT;
+    SELF_ROOTS.set(tables, root);
+  }
+  return root;
+}
 
 /** A single table stands for both sides (tests, or a lexicon the map does not touch). */
 export function asRetieTables(tables: ClassifyTables | RetieTables): RetieTables {

@@ -4,6 +4,7 @@ import { classifiedShape, hasClosedOverlay, type ClassifyTables } from "../parse
 import type { MorphWord } from "../parse/types.js";
 import { loadDefaultTables, parse } from "../parse/index.js";
 import { parseWord } from "../parse/word.js";
+import { fillSelfFor } from "./tables.js";
 
 import { retieCore } from "./rebuild.js";
 import { antecedentStemRoots, contentStemRoots, type ResumeScope, type StemOccurrence } from "./resume.js";
@@ -14,6 +15,8 @@ export type RetieChange = {
   from: string;
   to: string;
   index: number;
+  /** Rewritten from an emphasised prose run, not a code span (only there can English be mistaken for Agazan). */
+  prose?: boolean;
 };
 
 /** `index` is where the word starts in the page, when the caller knows it. */
@@ -115,7 +118,9 @@ export function transformMarkdown(
       continue;
     }
 
-    if (input.startsWith("```", i) || input.startsWith("~~~", i)) {
+    // A fence opens only at the start of a line (after indentation or `>` quote markers);
+    // mid-line ``` is inline code (`` ` ```text ` `` names the info string in prose).
+    if ((input.startsWith("```", i) || input.startsWith("~~~", i)) && atLineStart(input, i)) {
       const fence = input.slice(i, i + 3);
       const openLineEnd = input.indexOf("\n", i);
       const fenceMeta: CodeSpanMeta = {
@@ -143,20 +148,23 @@ export function transformMarkdown(
     }
 
     if (input[i] === "`") {
-      const close = input.indexOf("`", i + 1);
-      if (close < 0 || input.slice(i + 1, close).includes("\n")) {
-        out += "`";
-        i += 1;
+      // CommonMark: a run of n backticks opens a span that only a run of exactly n closes.
+      const run = backtickRun(input, i);
+      const close = closingBacktickRun(input, i + run, run);
+      if (close < 0 || input.slice(i + run, close).includes("\n")) {
+        out += input.slice(i, i + run);
+        i += run;
         continue;
       }
-      out += "`";
-      out += transformCode(input.slice(i + 1, close), baseIndex + i + 1, {
-        kind: "inline",
-        info: "",
-        marker: markerAt(i),
-      });
-      out += "`";
-      i = close + 1;
+      out += input.slice(i, i + run);
+      const body = input.slice(i + run, close);
+      // A longer run that holds backticks quotes Markdown source (`` `ahahal` *eye* ``): walk it as Markdown.
+      out +=
+        run > 1 && body.includes("`")
+          ? transformMarkdown(body, baseIndex + i + run, transformCode, transformProse)
+          : transformCode(body, baseIndex + i + run, { kind: "inline", info: "", marker: markerAt(i) });
+      out += input.slice(close, close + run);
+      i = close + run;
       continue;
     }
 
@@ -259,6 +267,29 @@ function parseInlineLink(
   };
 }
 
+/** Only indentation and blockquote markers sit between the line start and `at`. */
+function atLineStart(input: string, at: number): boolean {
+  const lineStart = input.lastIndexOf("\n", at - 1) + 1;
+  return /^[\s>]*$/.test(input.slice(lineStart, at));
+}
+
+function backtickRun(input: string, at: number): number {
+  let end = at;
+  while (input[end] === "`") end += 1;
+  return end - at;
+}
+
+/** Start of the next run of exactly `length` backticks at or after `from`, or -1. */
+function closingBacktickRun(input: string, from: number, length: number): number {
+  let at = input.indexOf("`", from);
+  while (at >= 0) {
+    const run = backtickRun(input, at);
+    if (run === length) return at;
+    at = input.indexOf("`", at + run);
+  }
+  return -1;
+}
+
 function nextMarkup(input: string, from: number): number {
   const keys = ["```", "~~~", "<!--", "`", "![", "["] as const;
   let next = input.length;
@@ -327,7 +358,8 @@ export function collectStemOccurrences(input: string): StemOccurrence[] {
 /** `tables` should know the old roots (see `bridgeTables`), or binds to moved roots are lost. */
 function contentResumeBinds(span: string, tables = loadDefaultTables()): Map<string, string[][]> | null {
   try {
-    const resolved = parse(span, tables).resolve;
+    // Fill the learner-name slot as the lint does, or a span with `zSELFn` never parses and its binds are lost.
+    const resolved = parse(fillSelfFor(span, tables), tables).resolve;
     if (!resolved) {
       return null;
     }

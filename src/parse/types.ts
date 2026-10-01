@@ -275,7 +275,7 @@ export type NpItem =
 
 export type NpCoord = {
   level: "z" | "d" | "b";
-  /** `joinModifiers`: `/w/` words right before the join word (respectively `wazagum`). */
+  /** `joinModifiers`: `/w/` words right before the join word (respectively `wazem`). */
   /** `factor`: digit `/h/` number after an equative's shared scale (*twice as … as*). */
   parts: { items: NpItem[]; join?: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[]; factor?: LexWord }[];
 };

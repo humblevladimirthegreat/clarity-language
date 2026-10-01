@@ -453,7 +453,7 @@ class AgazanSentenceParser extends CstParser {
   });
 
   public npJoinClose = this.RULE("npJoinClose", () => {
-    // A `/w/` right before the join word details the list (respectively `wazagum`, joins.md § Respectively).
+    // A `/w/` right before the join word details the list (respectively `wazem`, joins.md § Respectively).
     this.MANY(() => {
       this.CONSUME(W);
     });

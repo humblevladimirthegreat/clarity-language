@@ -7,7 +7,7 @@ import { parse } from "../parse/index.js";
 import { letterPrefix } from "../parse/resolve.js";
 
 import { contentStemRoots } from "./resume.js";
-import { asRetieTables, type RetieTables } from "./tables.js";
+import { asRetieTables, fillSelfFor, type RetieTables } from "./tables.js";
 
 export type ContentBind = {
   /** Resume spelling as written (`zazar`). */
@@ -22,7 +22,8 @@ export type ContentBind = {
 export function contentBinds(text: string, tables: ClassifyTables): ContentBind[] | null {
   let resolved;
   try {
-    resolved = parse(text.trim(), tables).resolve;
+    // The learner-name slot is filled as the lint fills it, or a span with `zSELFn` never parses.
+    resolved = parse(fillSelfFor(text, tables).trim(), tables).resolve;
   } catch {
     return null;
   }

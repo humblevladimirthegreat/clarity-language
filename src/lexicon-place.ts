@@ -8,6 +8,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 
 import { echo, loadPron } from "./echo-metric.ts";
+import { buildPronunciationCache } from "./echo-pronunciation.ts";
 import { isJoinOverlayKind, type OverlayRow } from "./lexicon-search.ts";
 import { longRootCandidates } from "./word-converter.ts";
 import { REPO_ROOT } from "./repo-paths.ts";
@@ -123,7 +124,7 @@ function indexRows(rows: PlaceRow[], overlays: OverlayRow[], pron: Map<string, s
   const byEmoji = new Map<string, Indexed>();
   const indexed: Indexed[] = rows.map((row, index) => {
     const cmu = pron.get(row.concrete);
-    if (!cmu) throw new Error(`no pronunciation for ${row.concrete}: rerun scripts/echo-pronunciation.ts`);
+    if (!cmu) throw new Error(`no pronunciation for ${row.concrete}: add it to CMU_OVERRIDES in src/cmu-dict.ts or relabel the row`);
     const item: Indexed = {
       row,
       index,
@@ -328,6 +329,23 @@ function placeLongRoots(items: Indexed[], taken: Set<string>): Map<Indexed, stri
   return placed;
 }
 
+/** The pronunciation cache, rebuilt once when it is missing or lacks a label (a new or relabelled row). */
+async function pronunciationsFor(rows: PlaceRow[]): Promise<Map<string, string>> {
+  const covers = (pron: Map<string, string>) => rows.every((row) => !row.concrete.trim() || pron.has(row.concrete));
+  try {
+    const pron = loadPron();
+    if (covers(pron)) return pron;
+  } catch {
+    // no cache yet
+  }
+  const report = await buildPronunciationCache();
+  if (report.missing.length > 0) {
+    const labels = report.missing.map((row) => `${row.emoji} ${row.label}`).join(", ");
+    throw new Error(`no pronunciation for ${labels}: add each to CMU_OVERRIDES in src/cmu-dict.ts or relabel the row`);
+  }
+  return loadPron();
+}
+
 /**
  * Place every row that has a concrete label.
  * `skip` rows keep their current root and block that spelling.
@@ -345,7 +363,7 @@ export async function placePublishedRoots(
   } = {},
 ): Promise<Placement[]> {
   await ensureFrequencyFile();
-  const pron = loadPron();
+  const pron = await pronunciationsFor(rows);
   const freqRank = loadFrequencyRanks();
   const indexed = indexRows(rows, overlays, pron, freqRank);
   const skip = options.skip ?? new Set<string>();

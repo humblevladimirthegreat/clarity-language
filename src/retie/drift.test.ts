@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
 import { loadDefaultTables } from "../parse/index.js";
-import { bareResumeDrift, lintPage, newLintFindings, rootsInUse } from "./drift.js";
+import { applyResumeKeeps, bareResumeDrift, lintPage, newLintFindings, rootsInUse } from "./drift.js";
 import { retieTables } from "./tables.js";
 
 const tables = loadDefaultTables();
@@ -49,5 +49,17 @@ describe("bareResumeDrift", () => {
   it("finds nothing when the page is unchanged", () => {
     const rt = retieTables(new Map());
     assert.deepEqual(bareResumeDrift("See `zazar`.", "See `zazar`.", new Map(), rt, new Set()), []);
+  });
+});
+
+describe("applyResumeKeeps", () => {
+  it("respells a bare resume the retie left unchanged, and leaves one it respelled for review", () => {
+    const after = "`bodor` binds the door; `zabur` names it.\n";
+    const left = { index: after.indexOf("zabur"), from: "zaber", to: "zabur", was: "z-←paw-prints.full", reads: 'z-←"abu"', keep: "zobar" };
+    const unchanged = { index: after.indexOf("bodor"), from: "bodor", to: "bodor", was: "b-←door.full", reads: "b-←attest.full", keep: "boyer" };
+    const result = applyResumeKeeps(after, [left, unchanged]);
+    assert.equal(result.text, "`boyer` binds the door; `zabur` names it.\n");
+    assert.deepEqual(result.applied, [unchanged]);
+    assert.deepEqual(result.left, [left]);
   });
 });

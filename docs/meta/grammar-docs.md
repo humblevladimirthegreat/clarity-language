@@ -518,7 +518,7 @@ Do **not** use `<!--@include: …-->` for notes — that is a VitePress include.
 
 A lexicon retie rewrites Agazan it can see as a word. Write so each spelling has one place to move.
 
-- Agazan in prose is one backtick span: a whole word, or a whole sentence or phrase. Italics are English (*sleep*, *one*, *Azawan*), including an English word whose letters are also a root (*age*). A cite interior that is Agazan is that span. When prose names the two parts of a compound, each part is its own span; the whole stem stays one span when that word is what the example parses.
+- Agazan in prose is one backtick span: a whole word, or a whole sentence or phrase. Italics are English (*sleep*, *one*, *Azawan*), even when the letters happen to spell an Agazan word. A retie never rewrites italics, so Agazan in italics goes stale. A cite interior that is Agazan is that span. When prose names the two parts of a compound, each part is its own span; the whole stem stays one span when that word is what the example parses.
 - A heading whose backtick form is a published root, a compound stem, or an overlay sense form gets an explicit English `{#id}` that does not contain that spelling (`### Gravity (`abaha` / `adahe`) {#gravity}`). Closed letters and hooks (`a`, `hal`, `am`) may stay in the auto slug. Recipe headings follow the same rule.
 - An example whose point is two roots sharing a short cut is marked `<!-- retie: shared-prefix -->` immediately before that prose and its example. The marked roots have to share a cut. `<!-- retie: skip -->` is only for a page that records past spellings, never a page under `docs/grammar/`.
 - Code names a closed root by emoji in [`src/closed-roots.ts`](../../src/closed-roots.ts), not by a string spelling.
