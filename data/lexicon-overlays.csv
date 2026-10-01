@@ -11,8 +11,8 @@ ebem,th,🎁,sake,beneficence,beneficence sake (making someone better off),a pre
 ebem,w,🎁,sake,beneficence,beneficence sake (making someone better off),a present leaves someone better off; giving pays off the giver,sakes.md#personal-possession
 ozom,th,🍓,sake,pleasure,pleasure sake (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,sakes.md#prescription-the-ought-this-act-for-this-sake
 ozom,w,🍓,sake,pleasure,pleasure sake (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,sakes.md#personal-possession
-orum,th,🥦,sake,health,health sake (bodily wellbeing / safety),broccoli keeps you well; health is a body that is well and safe,sakes.md#prescription-the-ought-this-act-for-this-sake
-orum,w,🥦,sake,health,health sake (bodily wellbeing / safety),broccoli keeps you well; health is a body that is well and safe,sakes.md#personal-possession
+oyum,th,🫁,sake,physical,physical sake (body / health / safety / shelter),lungs keep you breathing; the physical sake is a body that is fed and housed and well and safe,sakes.md#prescription-the-ought-this-act-for-this-sake
+oyum,w,🫁,sake,physical,physical sake (body / health / safety / shelter),lungs keep you breathing; the physical sake is a body that is fed and housed and well and safe,sakes.md#personal-possession
 egam,th,🥚,sake,sake,unspecified sake (potential),egg holds unrealized life; potential names a sake without picking which,sakes.md#prescription-the-ought-this-act-for-this-sake
 egam,w,🥚,sake,sake,unspecified sake (potential),egg holds unrealized life; potential names a sake without picking which,sakes.md#personal-possession
 evom,th,🎣,evidential,WITNESSED,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidentiality
@@ -138,9 +138,9 @@ awon,b,💦,benchmark,Best-effort,judgment benchmark Best-effort (the most that 
 egan,z,🥚,benchmark,Some-sake,judgment benchmark Some-sake (what the speaker's sake requires; sake unspecified),egg holds what a sake requires to grow; the sake is the bar,comparatives.md#sake-benchmarks
 egan,d,🥚,benchmark,Some-sake,judgment benchmark Some-sake (what the speaker's sake requires; sake unspecified),egg holds what a sake requires to grow; the sake is the bar,comparatives.md#sake-benchmarks
 egan,b,🥚,benchmark,Some-sake,judgment benchmark Some-sake (what the speaker's sake requires; sake unspecified),egg holds what a sake requires to grow; the sake is the bar,comparatives.md#sake-benchmarks
-orun,z,🥦,benchmark,Health-sake,judgment benchmark what the health sake requires (wellbeing / safety),broccoli keeps you well; staying well sets the bar,comparatives.md#sake-benchmarks
-orun,d,🥦,benchmark,Health-sake,judgment benchmark what the health sake requires (wellbeing / safety),broccoli keeps you well; staying well sets the bar,comparatives.md#sake-benchmarks
-orun,b,🥦,benchmark,Health-sake,judgment benchmark what the health sake requires (wellbeing / safety),broccoli keeps you well; staying well sets the bar,comparatives.md#sake-benchmarks
+oyun,z,🫁,benchmark,Physical-sake,judgment benchmark what the physical sake requires (body / health / safety),lungs keep you breathing; breathing easy sets the bar,comparatives.md#sake-benchmarks
+oyun,d,🫁,benchmark,Physical-sake,judgment benchmark what the physical sake requires (body / health / safety),lungs keep you breathing; breathing easy sets the bar,comparatives.md#sake-benchmarks
+oyun,b,🫁,benchmark,Physical-sake,judgment benchmark what the physical sake requires (body / health / safety),lungs keep you breathing; breathing easy sets the bar,comparatives.md#sake-benchmarks
 anan,z,🪢,benchmark,Relatedness-sake,judgment benchmark what the relatedness sake requires (connection),knot ties people together; connection sets the bar,comparatives.md#sake-benchmarks
 anan,d,🪢,benchmark,Relatedness-sake,judgment benchmark what the relatedness sake requires (connection),knot ties people together; connection sets the bar,comparatives.md#sake-benchmarks
 anan,b,🪢,benchmark,Relatedness-sake,judgment benchmark what the relatedness sake requires (connection),knot ties people together; connection sets the bar,comparatives.md#sake-benchmarks

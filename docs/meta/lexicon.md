@@ -1,0 +1,44 @@
+# Lexicon editing
+
+Editors only. How root spellings are made and changed in the lexicon CSVs. What each CSV owns is in the `AGENTS.md` routing table; overlay kinds are in [parser pipeline](parser-pipeline.md#overlay-kinds).
+
+## Root spellings come from `convert-word`
+
+Never make up a root spelling by hand, whether for a new row, a respelling, or a shorter root for a row that gains an overlay. Generate it with:
+
+```
+npm run convert-word -- --lexicon --only LITERAL
+```
+
+`--only` takes a concrete literal, emoji, or root (repeatable or comma-separated) and limits the run to those published rows; every other row keeps its root. Without `--only`, `--lexicon` re-places the whole lexicon.
+
+A hand-picked spelling bypasses the checks that placement runs. Placement:
+
+- derives the root from the English pronunciation (CMU dictionary), so it sounds like its cue
+- skips roots already held by other rows and stems used in [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv)
+- picks the root's length from the row's role (below)
+- rewrites the overlay and compound rows that spell the old root, and writes `tmp/lexicon-retie-map.json` for `retie-docs`
+
+`npm run convert-word -- <english>` (no `--lexicon`) only prints a candidate. Use it to explore, not as a source for a hand edit.
+
+## Root length
+
+- **Three letters:** rows backed by an overlay, plus the marked pronouns. These are annealed so short roots stay apart from each other.
+- **Five letters:** every other row, frequent senses first.
+- **Forced long:** `FORCE_LONG` in [`src/lexicon-place.ts`](../../src/lexicon-place.ts) keeps the *speaker* / *listener* pronoun rows at five letters on purpose ([D-13](design-decisions.md)).
+
+So a row that gains its first overlay needs a `convert-word --only` run to get a three-letter root. A row that loses its last overlay keeps its short root until the next full `--lexicon` run, which may lengthen it.
+
+## Respelling a row
+
+After `convert-word`, run the retie procedure in `AGENTS.md` (`retie-docs` dry run, then `--write`, then build and test). A retie changes the spelling of the same sense everywhere, and code never spells a root as a string literal; use [`src/closed-roots.ts`](../../src/closed-roots.ts).
+
+## Moving an overlay to another row
+
+Moving a sense (an overlay) from one published row to another is a **replacement**, not a retie. `retie-docs` follows a row's own respelling, so it never moves forms from the old row's root to the new one.
+
+1. In [`lexicon-overlays.csv`](../../data/lexicon-overlays.csv), change each moved row's `emoji` to the target row and its `sense_form` to spell the target row's **current** root. Update `gloss`, `definition` and `mnemonic` to match.
+2. Run `npm run convert-word -- --lexicon --only <target>`. If the target now needs a three-letter root, this respells it and rewrites the overlay `sense_form`s to match.
+3. Run `retie-docs` for the target's respelling, as for any respelling.
+4. By hand, replace every doc use of the **old** root in the moved sense with the new root, and fix the morph glosses and English wording. Leave uses of the old row's ordinary sense alone. Check with `node scripts/find.mjs` or grep for the old sense forms.
+5. `npm run build` and `npm test`.

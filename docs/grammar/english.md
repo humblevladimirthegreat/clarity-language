@@ -36,7 +36,7 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agazan 
 | intended outcome (*practices for a race*) | **`hogom`** + `/b/` | [So that](dependents.md#so-that) |
 | sake as reason (*walks for relatedness*) | sake **`tho`** on `/th/` | [Motive](sakes.md#sake-preference) |
 | noun’s purpose (*my gift for relatedness*) | sake **`tho`** on `/ɡ/` | [Motive](sakes.md#sake-preference) |
-| *my* belonging + sake (*my tent serves health*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](sakes.md#personal-possession) |
+| *my* belonging + sake (*my tent serves the physical sake*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](sakes.md#personal-possession) |
 | duration (*for three hours*) | measure phrase | [Measure phrases](numbers-applied.md#measure-phrases) |
 | topic (*as for Azawan*) | **`hahehom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 
@@ -52,7 +52,7 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agazan 
 | origin (*Alahen of the city*, *the sound of the drums*) | **`gagum`** + `/b/` | [Of relations](relations.md#of-relations) |
 | someone's act (*Azawan's walk*, *the monkey's tricks*) | the act as a sentence, then its verb root in **-r** | [Someone's act](say-people-places.md#someones-act) |
 | *personal* / *private* (*a personal matter*) | hook **`em`** + the owner: `em bamagon` | [Whose](hooks.md#genitive) |
-| *my* belonging + sake (*my tent serves health*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](sakes.md#personal-possession) |
+| *my* belonging + sake (*my tent serves the physical sake*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](sakes.md#personal-possession) |
 
 ### *about*
 

@@ -579,7 +579,7 @@ English *enough* and *too* compare against **what a sake requires**. Agazan name
 | Agazan | Use | English | Same root as |
 |---------|-----|---------|----------------|
 | **`zegan`** | sake bar, sake not named | *Some-sake* (what a sake requires) | `egal` *egg* |
-| **`zorun`** | health sake bar | *what staying well needs* | `orul` *broccoli* |
+| **`zoyun`** | physical sake bar | *what staying well needs* | `oyul` *lungs* |
 | **`zanan`** | relatedness sake bar | *what connection needs* | `anal` *knot* |
 | **`zulon`** | competence sake bar | *what getting it done needs* | `ulol` *toolbox* |
 | **`zahun`** | autonomy sake bar | *what choice needs* | `ahul` *ballot* |
@@ -609,9 +609,9 @@ Tie **`ae`** against a sake bar is *enough*. Rank **`e`** is *too much*, and **`
 
 With a quality as the scale, the same pattern gives *too ADJ* and *ADJ enough*. A specific sake bar says which sake sets the limit.
 
-> `zedehel zorun zel gahadul.`
+> `zedehel zoyun zel gahadul.`
 >
-> [z-tea | z-Health-sake | z-rank/more | g-hot]
+> [z-tea | z-Physical-sake | z-rank/more | g-hot]
 >
 > "The tea is too hot to be safe."
 
@@ -734,7 +734,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *my standard* | `umun` | `umul` *mirror* |
 | *speaker* | `amagon` | |
 | *Some-sake* | `egan` | `egal` *egg* |
-| *Health-sake* | `orun` | `orul` *broccoli* |
+| *Physical-sake* | `oyun` | `oyul` *lungs* |
 | *Relatedness-sake* | `anan` | `anal` *knot* |
 | *Competence-sake* | `ulon` | `ulol` *toolbox* |
 | *Autonomy-sake* | `ahun` | `ahul` *ballot* |
@@ -795,9 +795,9 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 **7.** *Ahaben is too showy to be safe.*
 
 ::: details Show answer
-`zahaben zorun zel gahudom.`
+`zahaben zoyun zel gahudom.`
 
-[z-Ahaben | z-Health-sake | z-rank/more | g-showmanship]
+[z-Ahaben | z-Physical-sake | z-rank/more | g-showmanship]
 :::
 
 **8.** *Alahen sings less than connection needs.*

@@ -361,7 +361,7 @@ English *I hope X will happen* is two claims: you want it, and you expect it. **
 
 **Needs:** [Sake inventory](sakes.md#sake-inventory) · [Met](sakes.md#time-horizon-endings-on-met) · [Emotion compose](sakes.md#emotion-compose) · [Thanks and sorry](sakes.md#thanks-sorry) · [Sake benchmarks](comparatives.md#sake-benchmarks)
 
-English *useful*, *helpful*, *important* and *benefit* judge a thing by what it does for someone. Agazan names the someone's **sake** (autonomy, competence, purpose, relatedness, beneficence, pleasure, health). A met word says the thing serves that sake, and its ending says how long the payoff lasts. On a noun that is yours, the sake word sits on `/ɡ/`. On another noun, put it on `/w/` before **`gobum`**. Put a person in `/b/` for whose sake it is.
+English *useful*, *helpful*, *important* and *benefit* judge a thing by what it does for someone. Agazan names the someone's **sake** (autonomy, competence, purpose, relatedness, beneficence, pleasure, physical). A met word says the thing serves that sake, and its ending says how long the payoff lasts. On a noun that is yours, the sake word sits on `/ɡ/`. On another noun, put it on `/w/` before **`gobum`**. Put a person in `/b/` for whose sake it is.
 
 | English | Agazan | Reading |
 |---------|--------|---------|

@@ -2,7 +2,7 @@
 <a id="sakes"></a>
 <a id="sake-ascription"></a>
 
-A **sake** is something that is good for a person, a psychological payoff you can name (autonomy, competence, purpose, relatedness, beneficence, pleasure, health, or an unspecified sake). It means *for your sake*, not curiosity, and an unmet sake is a cost to name, not a lack in you. At **Beginner**, a **stance** is how you stand toward that sake on a **noun**: it **serves** the sake or **detracts from** it. **Intermediate** adds **prescription** on the clause (deontic: the agent **ought to** do this act for this sake) and **motive** (*doing for* the sake).
+A **sake** is something that is good for a person, a psychological payoff you can name (autonomy, competence, purpose, relatedness, beneficence, pleasure, physical, or an unspecified sake). It means *for your sake*, not curiosity, and an unmet sake is a cost to name, not a lack in you. At **Beginner**, a **stance** is how you stand toward that sake on a **noun**: it **serves** the sake or **detracts from** it. **Intermediate** adds **prescription** on the clause (deontic: the agent **ought to** do this act for this sake) and **motive** (*doing for* the sake).
 
 ## Beginner {#beginner}
 
@@ -20,7 +20,7 @@ Eight published roots are the sakes you can name, and no other root takes the sa
 | **`ana`** | relatedness sake | *relatedness* (connection, belonging, care) | `anal` *knot* | 🪢: ties people together |
 | **`ebe`** | beneficence sake | *beneficence* (making someone better off) | `ebel` *present* | 🎁: a gift leaves someone better off |
 | **`ozo`** | pleasure sake | *pleasure* (enjoyment, comfort, aesthetic payoff) | `ozol` *strawberry* | 🍓: sweetness you enjoy |
-| **`oru`** | health sake | *health* (bodily wellbeing, safety, rest) | `orul` *broccoli* | 🥦: eat your greens to stay well |
+| **`oyu`** | physical sake | *physical* (health, exercise, food, sleep, shelter, safety from harm) | `oyul` *lungs* | 🫁: breathing easy means the body is well |
 | **`ega`** | a sake without picking among the seven | *unspecified sake* | `egal` *egg* | 🥚: not yet a specific kind |
 
 **Compare with:** `zahul` is a *ballot*. `gahul` is ballot-like. Under `/ɡ/` with **`tha`** / **`thu`**, **`ahu`** is the *autonomy* sake.
@@ -39,7 +39,7 @@ Each sake answers a different question about what pays off. Ask the question, th
 | relatedness | *We're connected.* |
 | beneficence | *Someone is better off because of me.* |
 | pleasure | *It feels good.* |
-| health | *My body is well and safe.* |
+| physical | *My body is cared for and safe.* |
 
 **Compare with:** competence is how **well** it goes; purpose is whether it is **worth doing**. A failed try at something that matters still serves purpose, and it detracts from competence. Mastering a pointless puzzle serves competence, not purpose.
 
@@ -178,17 +178,17 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *purpose* | `amel` | `amel` *compass* |
 | *relatedness* | `anal` | `anal` *knot* |
 | *beneficence* | `ebel` | `ebel` *present* |
-| *health* | `orul` | `orul` *broccoli* |
+| *physical* | `oyul` | `oyul` *lungs* |
 | *sake* | `egal` | `egal` *egg* |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *My tent serves health in the long term.*
+**1.** *My tent serves the physical sake in the long term.*
 
 ::: details Show answer
-`zededul goruthal.`
+`zededul goyuthal.`
 
-z-tent | g-health-met-lasting
+z-tent | g-physical-met-lasting
 :::
 
 **2.** *My backpack serves competence.*
@@ -207,12 +207,12 @@ z-backpack | g-competence-met-any-term
 z-wind | [w-relatedness-unmet-passing | g-stimulus]
 :::
 
-**4.** *The fire detracts from health (irreversible).*
+**4.** *The fire detracts from the physical sake (irreversible).*
 
 ::: details Show answer
-`zavahel woruthul gobum.`
+`zavahel woyuthul gobum.`
 
-z-fire | [w-health-unmet-irreversible | g-stimulus]
+z-fire | [w-physical-unmet-irreversible | g-stimulus]
 :::
 
 **5.** *My flashlight serves an unspecified sake in the long term.*
@@ -260,13 +260,13 @@ z-rain | [w-autonomy-unmet-modifiable | g-stimulus]
 *The rain detracts from autonomy (modifiable).*
 :::
 
-**4.** `zededul goruthar.`
+**4.** `zededul goyuthar.`
 
 ::: details Show answer
 
-z-tent | g-health-met-immediate
+z-tent | g-physical-met-immediate
 
-*My tent serves health right now.*
+*My tent serves the physical sake right now.*
 :::
 
 **5.** `zabal gulothul.`
@@ -373,7 +373,7 @@ Raw feeling (contacting a sensation without judgment) may go unlabeled. Full com
 ### Prescription (`the`): ought this act for this sake
 <a id="sake-force"></a>
 
-When English puts *should* / *ought to* on the **doing** for a named sake (*Ahaben ought to sing to serve health*), put `/th/` on the clause: sake root, mid-word **`th`**, **`e`**, then an ending. The **host verb** names the act that ought to count toward the sake. Prescription **`the`** gives the clause **deontic** force: you are stating obligation, not reporting that the act is already happening.
+When English puts *should* / *ought to* on the **doing** for a named sake (*Ahaben ought to sing to serve the physical sake*), put `/th/` on the clause: sake root, mid-word **`th`**, **`e`**, then an ending. The **host verb** names the act that ought to count toward the sake. Prescription **`the`** gives the clause **deontic** force: you are stating obligation, not reporting that the act is already happening.
 
 That ending says why you think a move is welcome. Use **-l** when the person invited this move, explicitly or through a clear standing invitation. Use **-m** for an unsolicited offer meant to serve the sake. Use **-r** for a trial: the move is worth trying to see whether it serves the sake, not a settled recommendation. These endings describe the move's warrant and aim, not whether it succeeds. How firmly you put the act on the addressee stays on `/y/` (**`yel`** / **`yem`**, **`yal`** / **`yam`**). If no such warrant applies, drop **`the`**.
 
@@ -397,11 +397,11 @@ That ending says why you think a move is welcome. Use **-l** when the person inv
 >
 > "Azawan ought to tell to serve relatedness (offered)."
 
-> `zahaben vezehel thoruthel.`
+> `zahaben vezehel thoyuthel.`
 >
-> z-Ahaben | v-sing | th-health-ought-invited
+> z-Ahaben | v-sing | th-physical-ought-invited
 >
-> "Ahaben ought to sing to serve health (Ahaben asked for a move)."
+> "Ahaben ought to sing to serve the physical sake (Ahaben asked for a move)."
 
 > `zalahen vabayal thanather.`
 >
@@ -698,7 +698,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *relatedness* | `anal` | `anal` *knot* |
 | *beneficence* | `ebel` | `ebel` *present* |
 | *pleasure* | `ozol` | `ozol` *strawberry* |
-| *health* | `orul` | `orul` *broccoli* |
+| *physical* | `oyul` | `oyul` *lungs* |
 | *permission* | `egol` | `egol` *green* |
 | *forbidden* | `edel` | `edel` *no-entry* |
 | *always* | `hual` | |
@@ -721,12 +721,12 @@ z-Azawan | v-tell | th-relatedness-ought-offered
 z-Ahaben | v-sleep | th-pleasure-ought-offered
 :::
 
-**3.** *Alahen ought to scream to serve health (Alahen asked for a move).*
+**3.** *Alahen ought to scream to serve the physical sake (Alahen asked for a move).*
 
 ::: details Show answer
-`zalahen vezugel thoruthel.`
+`zalahen vezugel thoyuthel.`
 
-z-Alahen | v-scream | th-health-ought-invited
+z-Alahen | v-scream | th-physical-ought-invited
 :::
 
 **4.** *Ahaben ought to try bowing for relatedness (worth a try).*
@@ -793,12 +793,12 @@ z-Alahen | v-pray | th-competence-motive-any-term
 z-Azawan | v-pray | th-competence-met-lasting | th-relatedness-motive-any-term
 :::
 
-**12.** *Alahen ought to scream to serve health (Alahen asked for a move); relatedness is the motive, over time.*
+**12.** *Alahen ought to scream to serve the physical sake (Alahen asked for a move); relatedness is the motive, over time.*
 
 ::: details Show answer
-`zalahen vezugel thoruthel thanathol.`
+`zalahen vezugel thoyuthel thanathol.`
 
-z-Alahen | v-scream | th-health-ought-invited | th-relatedness-motive-lasting
+z-Alahen | v-scream | th-physical-ought-invited | th-relatedness-motive-lasting
 :::
 
 **13.** *Ahaben lets Azawan kneel.*
@@ -852,13 +852,13 @@ z-Alahen | v-tell | th-relatedness-ought-trial
 *Alahen ought to try telling for relatedness (worth a try).*
 :::
 
-**2.** `zahaben vezugel thoruther.`
+**2.** `zahaben vezugel thoyuther.`
 
 ::: details Show answer
 
-z-Ahaben | v-scream | th-health-ought-trial
+z-Ahaben | v-scream | th-physical-ought-trial
 
-*Ahaben ought to try screaming for health (worth a try).*
+*Ahaben ought to try screaming for the physical sake (worth a try).*
 :::
 
 **3.** `zalahen vebevol thulothol.`
@@ -915,13 +915,13 @@ z-bell | [w-relatedness-unmet-modifiable | g-stimulus]
 *The bell detracts from relatedness (modifiable).*
 :::
 
-**9.** `zalahen vezugel thoruthom hual.`
+**9.** `zalahen vezugel thoyuthom hual.`
 
 ::: details Show answer
 
-z-Alahen | v-scream | th-health-motive-any-term | h-always-except
+z-Alahen | v-scream | th-physical-motive-any-term | h-always-except
 
-*Alahen screams for health (as usual).*
+*Alahen screams for the physical sake (as usual).*
 :::
 
 **10.** `zalahen vebevol thedel.`
