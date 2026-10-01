@@ -13,7 +13,8 @@ Prosody
 -expressiveness review
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -for countries, swap demonym as concrete and country as abstract
-final exam
+-final exam
+
 save for near end of limit resets:
 -lexicon fill in based on subtitles dataset frequency
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.

@@ -257,7 +257,7 @@ z-fire | [w-autonomy-unmet-irreversible | g-stimulus]
 
 ### Emotion compose {#emotion-compose}
 
-When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: an [sake stance](#sakes) on the situation, where the charge sits or what it points at, and how it moves. All three ride on **one word**: the sake word keeps its stance and its ending letter, then adds a **locus** (the vowels of a [hook](hooks.md#extra-noun)) and a **motion ending**. Put that word on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](#stimulus) **`gobom`** when the noun is not yours. You can then say the take without smuggling a single emotion word.
+When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: an [sake stance](#sakes) on the situation, where the charge sits or what it points at, and how it moves. All three ride on **one word**: the sake word keeps its stance and its ending letter, then adds a **locus** (the vowels of a [hook](hooks.md#extra-noun)) and a **motion ending**. Put that word on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](#stimulus) **`gobom`** when the noun is not yours. You can then say the take without smuggling a single emotion word. For the bare noun *emotion*, with no judgment to explain, the compound `zahulohahal` (the water of the heart) names it.
 
 > `zezebel wuduthuraor gobom.`
 >

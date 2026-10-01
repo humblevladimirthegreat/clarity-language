@@ -177,14 +177,17 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 | *tonight* | today plus *at night*: `thevem bazazam grazol` and **`hehum banadal`** |
 | *recently* / *recent* | a channel + **`brubum`** (*a short while before now*; **`brubul`** is *just now*) |
 | *forever* / *permanent* | a measure phrase with an unbounded amount: `bavawem grabal` (for `permanent`, add **`hagem`**) |
-| *eventually* | **`xrebal`** opens the last point (*Finally, …*) |
+| *eventually* / *ultimately* | **`xrebal`** opens the last point (*Finally, …*) |
 | *whenever* | **`hehum bual`** + the occasion as a quality: `hehum bual gerehel` |
-| *currently* / *nowadays* / *at present* | LIVE **`thodum`** when it is in view; otherwise the bare verb, which reports this stretch |
+| *currently* / *nowadays* / *at present* / *modern* / *contemporary* | LIVE **`thodum`** when it is in view; otherwise the bare verb, which reports this stretch |
 | *previously* / *formerly* / *originally* / *once* (*once walked*) | FORMER **`thunem`** |
 | *past* / *in the past* | FORMER **`thunem`**, or a channel with a `-` offset |
 | *future* / *in the future* | a channel + **`bral`** |
 | *once* (*one time*) | `h+1` before the verb |
 | ever (*Have you walked at all?*) | **`huham`** + **`har`** under **`yol`**: `yol zehodon huham vowogal har` |
+| *during* (*during the storm*) | **`hehum`** + `/b/`: `hehum bavodel` |
+| *immediately* / *immediate* / *right away* / *at once* (*about to*) | a channel + **`brabul`** (*a hair after now*) |
+| *initially* / *at first* / *firstly* | **`hogodam`** (*first*, as a manner adverb) |
 | *continue* / *keep doing* | **`hagem`** (*still*) |
 | *subsequently* / *after* | **`hulam`** + `/b/`: `hulam balahen` |
 | *prior to* | **`habum`** + `/b/`: `habum balahen` |

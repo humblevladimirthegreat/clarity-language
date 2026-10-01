@@ -136,7 +136,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🦾,prosthetic-arm,obave,augmentation,mechanical arm gives augmentation,,
 🦿,prosthetic-leg,elego,,,,
 🦵,leg,elega,,,,
-🦶,foot,uvuda,,,,
+🦶,foot,uvuda,foot-length,a foot is about as long as a foot; foot-length is the length unit,,
 👂,ear,ema,listening,ear enables listening,v:hear,
 🦻,hearing-aid,edaho,,,,
 👃,nose,onoza,intuition,nose leads intuition,v:smell; m.v:intuit,sensitive; sense; impression
@@ -148,7 +148,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 👁️,eye,ahaha,perception,eye enables perception,v:see,perceive; visual
 👅,tongue,adava,eloquence,tongue wields eloquence,,
 👄,mouth,amava,,,,
-🫦,lip-bite,elebu,sexuality,a lip-bite signals desire; sexuality is physical attraction,,bite
+🫦,lip-bite,elebu,sexuality,a lip-bite signals desire; sexuality is physical attraction,,bite; sex
 👶,baby,ebebe,innocence,baby embodies innocence,,infant; innocent
 🧒,child,ahade,youth,child means youth,,young; childhood; kid; teenager; adolescent
 👦,boy,oboha,boyhood,boy is boyhood,,son
@@ -563,7 +563,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🌆,dusk,adazo,closure,dusk ends the day; closure is bringing something to an end,,settlement
 🌇,sunset,azazo,,,,
 🌉,bridge,ebevu,span,a bridge spans the gap; span is reaching across,,
-🛣️,road,oroda,,,,street; path; route
+🛣️,road,oroda,wide,a road is made broad enough for many; wide is broad across,,broad; extensive
 ♨️,springs,ezobe,rejuvenation,hot springs restore the body; rejuvenation restores energy,,
 🎠,carousel,egoze,,,,
 🛝,playground,eboga,recreation,playground invites play; recreation is the unobservable leisure-kind,m.v:play,
@@ -606,7 +606,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 💺,seat,ezeda,passive,seat holds you while others move; passive is not acting yourself,,
 🚁,helicopter,ehege,,,,
 🚠,gondola,agodo,ampere,a gondola runs along a cable like current; ampere is the SI current unit,,
-🛰️,satellite,azedo,,,,
+🛰️,satellite,azedo,distance,a satellite hangs far overhead; distance is how far away something is,,far; distant; remote; faraway
 🚀,rocket,arage,launch,rocket blasts into the sky; launch is a bold start,,establish
 🛸,ufo,uyuvo,,,,
 🛎️,bellhop,eboha,,,,
@@ -745,7 +745,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 👛,purse,abeza,savings,purse holds small valuables; savings is kept resources,,
 👜,handbag,ahaba,responsibility,handbag carries needs; responsibility is the unobservable bearing,,duty; obligation; liability; bag
 👝,clutch,agoha,,,,
-🛍️,shopping-bag,ahabo,,,,
+🛍️,shopping-bag,ahabo,pound-mass,a shopping bag is weighed by the pound; pound-mass is the mass unit,,
 🎒,backpack,abu,preparation,backpack holds what you need ahead; preparation is readying beforehand,,pack
 🩴,sandal,azaye,,,,
 👞,dress-shoe,uhahu,,,,
@@ -881,7 +881,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🔑,key,egehu,solution,key opens what was locked; solution is what unlocks the problem,,reply; respond; solve; response; resolve; resolution
 🔨,hammer,ahave,iron,a hammer is forged iron; iron is the hard forged metal,,steel
 🪓,axe,agezo,severance,axe cuts through wood; severance is cutting apart,,cut; break
-⛏️,pick,ebega,,,,
+⛏️,pick,ebega,deep,a pick digs far below the surface; deep is far below,,
 🗡️,dagger,aduge,,,,weapon
 ⚔️,duel,uduhe,conflict,a duel is battle; conflict is forceful opposition,,attack; opposition; dispute; war; argue
 💣,bomb,abava,catastrophe,a bomb wrecks everything; catastrophe is disaster,,disaster; crisis
@@ -1088,7 +1088,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 ⬛,black-square,ezage,,,,square
 ⬜,white-square,awaze,blank,white square is open empty block; blank is without mark yet,,space
 🔺,triangle,adawe,radian,triangle marks an angle wedge; radian is the SI plane-angle unit,,angle
-🔻,down-triangle,adoda,,,,
+🔻,down-triangle,adoda,corner,a triangle ends in a point; a corner is where two edges meet,,vertex
 🔘,option,abehu,selection,radio button marks one chosen; selection is picking one option,,button; select; filter
 🏁,finish-line,eveha,terminus,checkered flag marks finish,,term
 🚩,sport,ozobo,alarm,red flag raises warning,,

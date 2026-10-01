@@ -6,41 +6,53 @@ Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* do
 
 ### English → Agazan {#english-cues}
 
-**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Continue](dependents.md#continue-x) · [Stacked discourse hooks](hooks.md#stacked-discourse)
+**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Continue](dependents.md#continue-x) · [Stacked discourse hooks](hooks.md#stacked-discourse) · [Because](causation.md#only-because) · [Point back](hooks.md#hook-resume) · [Clause sequence](join-across-roles.md#clause-sequence)
 
 Time and discourse dependents use the same **`barl`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a pole root.
 
 | English | Agazan |
 |---------|---------|
-| *although* / *while* / *until* / *till* / *before* / *after* | same pole + **`barl`** shape on adverb `/h/`, **-m** ([dependent clauses](dependents.md#dependent-clauses)): **`hazem`** / **`hehum`** / **`hodam`** / … |
+| *although* / *while* / *whilst* / *until* / *till* / *before* / *after* | same pole + **`barl`** shape on adverb `/h/`, **-m** ([dependent clauses](dependents.md#dependent-clauses)): **`hazem`** / **`hehum`** / **`hodam`** / … |
 | *so that* / *in order to* | same shape: **`hagom`** ([so that](dependents.md#so-that)); NP intended get = **`hagom`** + `/b/` **noun** |
 | *despite* (NP) | same **`hazem`** (or **`gazem`**) + `/b/` **noun**, not a second pole |
 | *judging by* / *going by* / *given that* (grounds) | inferring or pattern channel + **`barl`**: **`thevem barl`** / **`thabem barl`** ([evidence clause](knowing.md#evidence-clause)) |
-| *therefore* (discourse) | **`xezadam`** ([continue](dependents.md#continue-x)) |
+| *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xezadam`** ([continue](dependents.md#continue-x)) |
+| *thus* (*in this way*) | the same adverb again: `/h/` with **-r** ([how English approximates -r](pronouns.md#how-english-approximates-r)) |
+| *due to* / *owing to* / *because of* (NP) | **`theram`** + `/b/` **noun** (`theram berehel`) |
 | *however* / *meanwhile* (discourse) | **`xazel`** / **`xagagal`** |
+| *regardless of* (NP) | same **`hazem`** + `/b/` **noun** as *despite* |
+| *anyway* / *anyhow* (back to the main line) | the resume hook **`or …`** ([point back](hooks.md#hook-resume)) |
+| *otherwise* / *or else* (failing that) | **`xon`** between the clauses ([clause sequence](join-across-roles.md#clause-sequence)) |
 | *nevertheless* / *nonetheless* (discourse) | **`xazel`** after the finished claim; inside one sentence, **`hazem barl`** |
 | *whereas* (two claims set against each other) | **`xazel`** before the second claim, or **`hazem barl`** inside one sentence |
 | *moreover* / *furthermore* (discourse) | **`ael …`** opens the sentence that goes further; **`al …`** adds a separate point ([stacked discourse hooks](hooks.md#stacked-discourse)) |
 
-### Obviously, apparently, guess, assume {#stance-adverbs}
+### Obviously, apparently, perhaps, guess, assume {#stance-adverbs}
 
-**Needs:** [Evidence strength](knowing.md#evidence-strength) · [MAY](knowing.md#may) · [Hold endings (NOTIONAL)](knowing.md#hold-endings-notional) · [Hopefully and other attitudes](sakes.md#speaker-attitude) · [Unmet](sakes.md#sake-changeability)
+**Needs:** [Evidence strength](knowing.md#evidence-strength) · [MAY](knowing.md#may) · [Hold endings (NOTIONAL)](knowing.md#hold-endings-notional) · [Hopefully and other attitudes](sakes.md#speaker-attitude) · [Unmet](sakes.md#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](spans.md#asides) · [Universality](knowing.md#universality) · [CAUSE](causation.md#cause) · [Judgment benchmarks](comparatives.md#judgment-benchmarks)
 
 English adverbs like *obviously*, *apparently* and *presumably* say **how you know** a claim. Agazan has no word for each one. It puts a channel on the clause as a `/th/` word, and the ending grades the evidence: **-l** solid, **-m** ordinary, **-r** thin. *Guess* and *assume* are not channels: a guess is a *could be* (MAY), and an assumption is toying with a premise (NOTIONAL). *Unfortunately* says how **you** feel about the claim, so it is an attitude word.
 
 | English | Agazan | Reading |
 |---------|--------|---------|
-| *obviously* (it is in plain view) | `thodul` | LIVE, a clear full view |
+| *obviously* / *obvious* (it is in plain view) | `thodul` | LIVE, a clear full view |
 | *obviously* (the clues are strong) | `thevel` | INFERRED, strong clues |
-| *apparently* / *it seems* (from clues) | `thevem` | INFERRED, ordinary |
+| *apparently* / *apparent* / *it seems* (from clues) | `thevem` | INFERRED, ordinary |
 | *apparently* (so they say) | `themam` | TOLD |
 | *apparently* (a glimpse) | `thodur` | LIVE, a glimpse |
 | *presumably* (by the usual pattern) | `thabem` | PATTERN |
 | *presumably* (a weak clue) | `thever` | INFERRED, thin |
-| *guess* / *I guess* | `thovom` | MAY, could be |
+| *guess* / *I guess* / *perhaps* / *maybe* / *possibly* | `thovom` | MAY, could be |
 | *guess* (a passing thought) | `thovor` | MAY, who knows |
 | *guess* (a gut hunch) | `thahur` | FELT, faint |
 | *assume* / *suppose* | `thover` | NOTIONAL, toy with it for now |
+| *personally* / *in my view* | `hahehom bamegun` | topic: as for me |
+| *by the way* / *aside* (in passing) | `th( … )` | aside fence, any place a stance word may sit |
+| *necessarily* / *of necessity* | `thalul` | NATURAL, by natural necessity |
+| *basically* / *fundamentally* | `hadawam` | manner adverb on *fundamental* |
+| *overall* / *on the whole* | `hahehom bual` | as for everything |
+| *automatically* / *by itself* | `zubugal vowogal thegem bubugar.` | CAUSE, with the doer resumed as its own cause |
+| *increasingly* / *more and more* | `zereben zel` + the quality | more than it was |
 | *unfortunately* | `thugethum` | unspecified sake, unmet, can be softened |
 | *unfortunately* (and it is final) | `thugethul` | unspecified sake, unmet, irreversible |
 
@@ -122,7 +134,7 @@ Put the **act** in `/b/` after a fault pole, not the person ([fault](causation.m
 
 **Compare with:** owning a harm to someone else (*I'm sorry*) is [thanks and sorry](sakes.md#thanks-sorry), not a guilt feeling.
 
-### Kill, feed, remove, prevent, persuade, introduce {#cause-verbs}
+### Kill, feed, remove, prevent, persuade, introduce, show, create, excite {#cause-verbs}
 
 **Needs:** [Make someone do it](causation.md#make) · [Decision](intention.md#decision) · [So that](dependents.md#so-that) · [Goal, source, path](roles.md#goal-source-path)
 
@@ -139,6 +151,12 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 | *prevent* (act so that it will not) | `zazawan vowogal hagom burl zalahen vadebal.` | Azawan walks so that Alahen does not leave |
 | *persuade* | `zalahen theham vowogal thegem bazawan.` | Alahen decides to walk, Azawan makes that happen |
 | *introduce* | `zalahen velehal dazawan thegem bahaben.` | Alahen learns Azawan, Ahaben makes it happen: *make learned* |
+| *show* / *display* / *reveal* | `zalahen dodogal vahahal thegem bazawan.` | Alahen sees the dog, Azawan makes it happen |
+| *create* (bring into being) | `zodogal thegem bazawan.` | the dog exists, Azawan makes it happen |
+| *create* (make by work) | `zazawan dodogal vamevel.` | the production root |
+| *excite* / *thrill* | `zalahen vegeval thegem bazawan.` | Alahen is delighted, Azawan makes it happen |
+| *encourage* / *inspire* / *motivate* | `zalahen thuhum vowogal thegem bazawan.` | Alahen wants to walk, Azawan makes that happen |
+| *convince* (of a claim) | `zalahen vegehol dazawan thegem bahaben.` | Alahen trusts Azawan, Ahaben makes it happen |
 
 > `zalahen vazagal thegem bazawan.`
 >
@@ -159,6 +177,77 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 > "Azawan walks so that Alahen does not leave."
 
 **Compare with:** *get someone to* by asking is tell plus a *to* [stand-in](dependents.md#stand-in), not **`thegem`**. **`thegem`** says the causer made it happen. Persuading puts the decision mood on the one persuaded, so a later change of mind stays possible.
+
+### Mean, explain, realize, forget, become {#mind-verbs}
+
+**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Because](causation.md#only-because) · [Already, still, not yet](knowing.md#phasal) · [Existence](predication.md#existence) · [As for](say-people-places.md#as-for) · [Start and stop](#phase-verbs) · [Comparatives](comparatives.md#comparatives-e)
+
+English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mostly sit on a few plain moves: tell, know, remember, and whether the change has come. Agazan keeps those roots and adds the phasal word for the change, so *realize* is *already know* and *forget* is *no longer remember*. *Mean* in the sense of *signify* is the compound `ezebelovo` (*meaning*, speech that carries a thought).
+
+| English | Agazan | Reading |
+|---------|--------|---------|
+| *mean* (signify) | `zezebel dodogal vezebelovol.` | the word carries the meaning *dog* |
+| *mean* (intend) | `zazawan thumam vowogal.` | plans to walk ([intention](intention.md#plan-predict)) |
+| *define* | `zazawan dezebelovol hahehom bodogal vezebel.` | tells the meaning, about the dog |
+| *explain* | `zazawan balahen vezebel darl zalahen vowogal theram barl zodogal varahal.` | tells Alahen that the walk has the run as its reason |
+| *describe* | `zazawan hahehom bodogal balahen vezebel.` | tells Alahen about the dog |
+| *realize* / *notice* | `zazawan huham vubugam darl zodogal varahal.` | already knows that the dog runs |
+| *forget* | `zazawan dalahen vunom hewem.` | no longer remembers Alahen |
+| *become* | `zazawan vebeham dezebul.` | starts being sleepy |
+| *exist* | `zodogal.` | a lone noun: *there is a dog* |
+| *happen* / *occur* | the event's own verb: `verehel.` | no helper word |
+| *depend on* | `zazawan vowogal thebom theram berehel.` | only because of rain |
+| *allege* / *claim* | `themam` on the clause | TOLD: so they say |
+| *compare* / *exceed* | `zazawan zalahen zel gelavam.` | rank on a shared scale ([comparatives](comparatives.md#comparatives-e)) |
+
+> `zazawan huham vubugam darl zodogal varahal.`
+>
+> z-Azawan | h-already | v-knowledge | d-that-clause | z-dog | v-run
+>
+> "Azawan realizes that the dog runs."
+
+> `zazawan dalahen vunom hewem.`
+>
+> z-Azawan | d-Alahen | v-memory | h-no-longer
+>
+> "Azawan forgets Alahen."
+
+**Compare with:** *explain* with no reason is just tell (**`vezebel`**). *Make something real* is [create](#cause-verbs).
+
+### Condition, factor, requirement, motivation, satisfaction, truth {#reason-nouns}
+
+**Needs:** [If](causation.md#if) · [Only because](causation.md#only-because) · [Fault](causation.md#fault) · [Requirement](sakes.md#requirement) · [Motive](sakes.md#sake-preference) · [Met](sakes.md#time-horizon-endings-on-met) · [Thanks and sorry](sakes.md#thanks-sorry) · [Intention](intention.md#plan-predict) · [Speech manner](speech-moves.md#speech-manner) · [Evidentiality](knowing.md#evidentiality)
+
+English turns reasons and feelings into nouns (*condition*, *motivation*, *satisfaction*, *truth*). Agazan has no noun for most of them. It keeps the stance word on the clause, so the noun becomes a short claim about how you stand: a condition is the pole word, a motive is a sake, a requirement is a demand, a truth is how you vouch for it.
+
+| English | Agazan | Reading |
+|---------|--------|---------|
+| *condition* (*on the condition that*) | `thodom barl` / `thebom barl` | if / only if |
+| *factor* (one cause among several) | `therar barl` | a share of the fault or cause |
+| *circumstance* / *context* | a dependent after `barl` (`hehum barl`, `theram barl`) | the situation as a clause |
+| *requirement* / *demand* | `themehol` / `themehom` / `themehor` | rule, person, or expectation |
+| *motivation* / *motive* | `zazawan vowogal thonathom.` | does it for relatedness |
+| *satisfaction* / *pleasure* | `thozutham.` | pleasure, met |
+| *desire* / *wish* | `zazawan thuhum vowogal.` | wants to walk |
+| *regret* (for the harm) | `thonathum behodon.` | unmet relatedness, yours |
+| *mistake* / *error* | `gegegal gul` or `theral barl` | not correct, or at fault |
+| *assumption* / *premise* | `thover` | NOTIONAL, toy with it |
+| *truth* / *to tell the truth* | `thaveham` | revelation |
+| *experience* (first-hand) | `thunom` | WITNESSED, remembered as seen |
+
+> `zazawan vowogal thonathom.`
+>
+> z-Azawan | v-walk | th-relatedness-motive-any-term
+>
+> "Azawan walks for relatedness." — that is the motive
+
+> `thozutham.`
+>
+> th-pleasure-met-any-term
+>
+> "That was a pleasure."
+
+**Compare with:** a sake word names the sake that is met, so pick the one you mean: relatedness, competence, pleasure ([sakes](sakes.md#sake-inventory)). A noun that says what someone did is a [free relative](say-people-places.md#free-relative-what).
 
 ### Factivity (`if` vs `because`)
 <a id="factivity"></a>
@@ -276,13 +365,13 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 
 | English | Agazan | Reading |
 |---------|--------|---------|
-| *useful* / *helpful* (for getting things done) | `gudutham` | competence, met |
-| *important* (it matters for the long run) | `wonathal gobom` | relatedness, met, lasting |
+| *useful* / *helpful* / *practical* / *relevant* (for getting things done) | `gudutham` | competence, met |
+| *important* / *critical* / *crucial* (it matters for the long run) | `wonathal gobom` | relatedness, met, lasting |
 | *benefit* / *benefits Alahen* | `thonatham balahen` | the act met Alahen's sake |
 | *advantage* (a lead over someone) | `zel` with the scale | rank against the other |
 | *satisfy* (you) | `thonatham behodon` | the act met your sake |
 | *satisfy* (a requirement) | `zugen zael` + scale | tie against the sake bar: *enough* |
-| *suitable* (for a need) | `gudutham` or `zugen zael` | met, or enough for the need |
+| *suitable* / *appropriate* (for a need) | `gudutham` or `zugen zael` | met, or enough for the need |
 | *more important than* | `zel` between the nouns, then `gonathal` | rank on the lasting met sake |
 | *upset* | `wonathumar gobom` | relatedness, unmet, held inside, surging |
 | *upset for someone* | `wonathumem gobom` + `/b/` | unmet relatedness on their behalf |
@@ -336,6 +425,7 @@ English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrec
 | *wrong* (incorrect) | `gegegal gul` | not correct, closed with **`gul`** |
 | *wrong* (morally) | `theral barl` + the act | fault on the act ([fault](causation.md#fault)) |
 | *wrong* (bad for someone) | `thonathum balahen` | the act detracted from Alahen's sake |
+| *badly* (manner) | `hegegam hul` | not *properly* ([manner words](say-amounts.md#manner-words)) |
 | *ugly* (not beautiful) | `gahabel gul` | not beautiful |
 | *ugly* (below a bar) | `zomen zuel gahabel` | less beautiful than my standard |
 | *ugly* (unpleasant to me) | `gozuthum` | my noun detracts from pleasure |
@@ -353,6 +443,45 @@ English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrec
 > "Ahaben is uglier than my standard."
 
 **Compare with:** *bad*, *terrible* and the other bare evaluatives have no root; they route to an unmet sake, a rank against a bar, or a specific content root.
+
+### Clear, honest, false, general, proud {#trait-words}
+
+**Needs:** [Negation](joins.md#negation-u) · [Universality](knowing.md#universality) · [Universals, domains and generics](joins.md#universals-domains-generics) · [Fault](causation.md#fault) · [Emotion compose](sakes.md#emotion-compose) · [Number as stance](numbers.md#special-number-as-stance)
+
+Many English adjectives are the plain opposite of something that has a root (*unclear*, *honest*, *false*). Agazan says the positive root and closes it with **`gul`** (*not*). Others claim how far something holds (*general*, *universal*, *absolute*). That is universality, written as a `/th/` word. A few are a feeling (*proud*), which is an emotion compose, so the sake and the stimulus are named.
+
+| English | Agazan | Reading |
+|---------|--------|---------|
+| *unclear* / *obscure* | `gagazam gul` | not clear |
+| *honest* / *truthful* / *sincere* | `galaham gul` | not deceiving |
+| *false* / *untrue* | `gegegal gul` | not correct |
+| *responsible* (to blame) | `theral barl` + the act | fault on the act ([fault](causation.md#fault)) |
+| *responsible* (in charge) | `gabazam` | of authority |
+| *general* / *generally true* | `… thogol` | COMMON, usually |
+| *universal* / *absolute* / *without exception* | `… thazal` or `… thalul` | FORMAL, or by natural necessity |
+| *comprehensive* / *covers everything* | `zual` with the scope | every member, nothing left out |
+| *sure* / *confident* (I am) | stance number `th+e` | certain, no exceptions |
+| *proud* (of something) | `wuduthamam gobom` after the thing | competence met, held inside, flowing |
+
+> `zubugal gagazam gul.`
+>
+> z-book | [g-clarity | g-not]
+>
+> "The book is unclear."
+
+> `zual gavahel gahadol thogol.`
+>
+> [z-everything | g-fire] | g-hot | th-COMMON
+>
+> "Fire is hot, as a rule."
+
+> `zemehol wuduthamam gobom.`
+>
+> z-memo | [w-competence-met-any-term-INTERNAL-FLOWING | g-stimulus]
+>
+> "Proud of the memo."
+
+**Compare with:** *proud* rides on whichever sake the pride serves: competence for a skill, relatedness for a tie ([sakes](sakes.md#sake-inventory)). *Confident* about someone else's claim needs a [holder](knowing.md#holder). `th+e` is only the speaker's own certainty.
 
 ## Starting and stopping {#phase-verbs}
 

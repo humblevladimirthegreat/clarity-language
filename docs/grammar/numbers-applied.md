@@ -105,6 +105,10 @@ Base and everyday units (each row is a **unit metaphor**; the literal picture st
 | week | `agade` *week* | `bagadem g+1` | `agadel` *calendar* | 📅: one row of the calendar page |
 | month | `umuha` *month* | `bumuham g+6` | `umuhal` *moon* | 🌙: one lunar cycle |
 | year | `avawe` *year* | `bavawem g+10` | `avawel` *fireworks* | 🎆: fireworks greet each new year |
+| inch | `eboho` *inch* | `bebohom g+3` | `ebohol` *pinch* | 🤏: about a finger-pinch |
+| foot | `uvuda` *foot-length* | `buvudam g+6` | `uvudal` *foot* | 🦶: about one foot long |
+| mile | `ubuda` *mile* | `bubudam g+2` | `ubudal` *boot* | 🥾: a long walk |
+| pound | `ahabo` *pound-mass* | `bahabom g+5` | `ahabol` *shopping-bag* | 🛍️: sold by the pound |
 | heat grade (not kelvin) | `evede` *temperature* | `bevedem g+37` | `evedel` *thermometer* | 🌡️: how hot or cold |
 
 Related **quantity** words (*heavy*, *flow*, *time* as continuum, …) stay on their own roots (`aragam` *heavy*, `gadaham` *duration*, …); they are not SI measure nouns.

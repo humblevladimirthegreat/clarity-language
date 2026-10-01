@@ -22,6 +22,25 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 | D-13 | short *I* / *you* pronouns | *speaker* **`amegu`** / *listener* **`ehodo`** are five-letter on purpose (`FORCE_LONG` in `src/lexicon-place.ts`), so names or a dropped subject are the easier choice; inclusive *we* **`oha`** stays short | by design | pronouns.md | — | — |
 | D-14 | *I hope X will happen* as a forecast | hope is not evidence, so a forecast still needs a channel: `thevegem thahur brabum …` ([say-reasons](../grammar/say-reasons.md#hope-forecast), [sakes](../grammar/sakes.md#speaker-attitude)) | by design | sakes.md, say-reasons.md | — | — |
 | D-15 | an act as someone's (*the monkey's tricks*, *the sound of the drums*) | the act is its own sentence, then resumed, the same pattern as *who / that / which* ([dependents](../grammar/dependents.md#which-noun), [say-people-places](../grammar/say-people-places.md)); something that only comes from B is origin `gagum` + `/b/`; `em` never takes an act | by design | dependents.md, say-people-places.md | — | — |
+| D-16 | bare evaluatives (*good*, *bad*, *nice*, *great*, *wonderful*, *excellent*, *lovely*, *terrible*, *awful*, *horrible*, *fantastic*, *brilliant*, *quality*) as roots | no root. Say whose need it serves (met / unmet sake), rank against a named bar, or name the specific quality ([say-reasons](../grammar/say-reasons.md#sake-words), [comparatives](../grammar/comparatives.md#judgment-benchmarks)) | by design | sakes.md, comparatives.md | — | — |
+| D-17 | *the latter* / *the former* (the second / first of two just named) | resume **-r** points at the most recent matching word, so it is the latter; for the earlier one, name it again | by design | pronouns.md | — | — |
+
+## Bare evaluatives
+
+- A bare evaluative hides two things the language wants audible: **whose** need or taste the judgment serves, and **what bar** it is measured against. Agazan has no root for it, so a speaker cannot say *good* and leave both unsaid.
+- Routes, by what the English word was hiding:
+
+| Hidden job | Route |
+|------------|-------|
+| serves someone's need (*good for me*, *useful*) | met sake `…tham` / `…thal` / `…thar`, with the person in `/b/` for someone else's sake |
+| harms a need (*bad for*, *wrong for*) | unmet sake `…thum` / `…thul` / `…thur` |
+| better or worse than a standard (*good at*, *poor*) | rank `zel` / `zuel` against a named bar: `zahen`, `zeyen`, `zomen`, `zugen`, or a sake bar |
+| a particular quality (*lovely*, *terrible*, *brilliant*) | the content root for that quality: delight, love, beauty, anguish, kindness, intelligence, shine |
+| intensity (*great*, *wonderful*, *awful*) | a degree word (`welavam`, `wohahal`) or an exclamation on the specific root |
+
+- The rule is about **bare** evaluatives only. Roots whose sense is itself a quality (delight, beauty, anguish, safety) stay roots. Descriptive adjectives measured on a scale (*expensive*, *weak*, *thick*, *far*) are not evaluatives: they are written against a bar ([say-amounts](../grammar/say-amounts.md#bar-words)).
+- *Effective*, *practical* and similar judgments reduce to what the thing does for a sake (`gudutham`) or a rank of the result against a bar, so they are not roots either.
+- Do not re-raise a bare evaluative as a lexical gap. If a learner needs a new specific quality, add a root for that quality, not for the evaluation.
 
 ## Stance time and emotional blame
 

@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Findings from translating the register samples ([register-samples](register-samples.md)) for Phase 2b of the expressiveness review (`docs/proposals/expressiveness-review.md`, where the translations live). Each row is a point where the translator had to stop, paraphrase heavily, or settle for an approximation. Rows cite `RS-n.m`.
 
-Progress: RS-1 translated. G-01–G-06 and L-01, L-03, L-04 are ruled. L-02 is open (needs a new root).
+Progress: RS-1 translated. G-01–G-06 and L-01, L-03, L-04 are ruled. L-02 is ruled.
 
 Fields follow [syntax-test-results](syntax-test-results.md): **Verdict** is **awkward** · **missing** · **by design?** (needs a ruling). **Priority** is **P1** common everyday English · **P2** common in writing · **P3** niche. `G-nn` is a grammar gap and `L-nn` is lexicon only.
 
@@ -22,6 +22,6 @@ Fields follow [syntax-test-results](syntax-test-results.md): **Verdict** is **aw
 | ID | RS | Word | Resolution | Status |
 |----|----|------|------------|--------|
 | L-01 | 1.7c | *bakery* / *shop* | Use `ozodo` (🏬 *market*): *bakery* is `zozodoxebewel` (market-x-bread). No new root. | done |
-| L-02 | 1.7c | *corner* (*around the corner*) | Needs a new root for *corner*; `hegozem` circles a landmark. Stand-in *nearby* meanwhile. | open |
+| L-02 | 1.7c | *corner* (*around the corner*) | New root: `adoda` (🔻) now has the abstract *corner*; *around the corner* is `hegozem badodal`. | done |
 | L-03 | 1.9b, 1.10c | *pay* / *treat* (someone to something) | Added role English `v:pay` on `amo` (💰): `vamol` *pay*. | done |
 | L-04 | 1.11b, 1.13 | *job* / *employ* (*to have you* as staff) | Added role English `z:job` on `ebeve` (💼). *To have you* as staff stays the condition route. | done |

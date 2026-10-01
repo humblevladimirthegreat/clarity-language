@@ -195,7 +195,7 @@ English degree words (*really*, *quite*, *barely*) say how far a quality or an a
 | *extremely* / *greatly* / *dramatically* / *significantly* / *considerably* | `wohahal` |
 | *slightly* / *somewhat* | `wamazam` |
 | *completely* / *totally* / *entirely* / *fully* / *altogether* | `wahadum` |
-| *quite* / *fairly* / *pretty* / *reasonably* | `wadeham` |
+| *quite* / *fairly* / *pretty* / *reasonably* / *relatively* | `wadeham` |
 | *huge* | `wohahal gelavam` (*extremely big*) |
 | *barely* / *hardly* | `hrabul` on the verb, `wrabul` before an adjective |
 | *almost* | `hrubul` on the verb, `wrubul` before an adjective |
@@ -233,6 +233,8 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 | *perfectly* | `hahadum` |
 | *significantly* (*matters a lot*) | `hegazam` |
 | *gradually* / *slowly* | `hezehom` |
+| *widely* / *broadly* | `horodam` |
+| *deeply* | `hebegam` |
 | *easily* (*with less effort than usual*) | `zahen zuel hazewem` before the verb |
 
 > `zazawan heyayem vowogal.`
@@ -273,15 +275,18 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | English | Agazan |
 |---------|--------|
 | *numerous* / *considerable* (*many cats*) | `zagadalx zahen zel gral` |
-| *enough* / *sufficient* / *adequate* | `zagadalx zugen zael gral` |
-| *too many* / *excess* | `zagadalx zugen zel gral` |
+| *enough* / *sufficient* / *adequate* / *full* (as much as is needed) | `zagadalx zugen zael gral` |
+| *too many* / *excess* / *extra* / *spare* (more than needed) | `zagadalx zugen zel gral` |
 | *quantity* (*how many*) | the amount scale `gral` |
 | *normal* / *standard* (*normally big*) | the bar `zahen` with `zael`: `zodogal zahen zael gelavam` |
 | *ordinary* / *medium* / *average* | the bar `zeyen` with `zael` |
+| *single* (*just one*) | the plain number `g+1` |
+| *secondary* / *second* | the rank `g#2` |
+| *whole* / *entire* / *complete* / *total* / *ideal* (nothing lacking) | `gahadum` (*perfection*) |
 | *several* | approximate number: `zagadalx gram` (*about five cats*) |
 | *multiple* (*more than one*) | a ray: `zagadalx g+2 al zrabal` |
 | *minority* (*fewer than half*) | `zagadalx g+0% ul g+50%` |
-| *exactly* / *precisely* (*exactly five*) | the plain number `g+5`; `gram` is *about five* |
+| *exactly* / *precisely* / *specific* (*exactly five*) | the plain number `g+5`; `gram` is *about five* |
 | *literally* (*word for word*) | an exact quote: bare brackets, no `~` ([exact, paraphrase, proper](spans.md#when-required)) |
 | *a dozen* | `zugelx g+12` |
 | *a quarter of the cats* | `zagadalx g-4` (or `g+25%`) |
@@ -291,6 +296,76 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | *decade* / *century* | `bavawem g+10` / `bavawem g+100` |
 | *unit* | the measure phrase: `bezezem g+2` |
 | *estimate* (*I put it at 40*) | stance number `th+40` |
+
+### Expensive, cheap, weak, remarkable {#bar-words}
+
+**Needs:** [Vague amounts](comparatives.md#vague-amounts) · [Judgment benchmarks](comparatives.md#judgment-benchmarks) · [Adjectives](clause.md#adjectives-ɡ) · [Important](say-reasons.md#sake-words)
+
+English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an unstated usual. Agazan always states the bar. Write the typical bar **`zahen`**, then the rank word (**`zel`** for *more than*, **`zuel`** for *less than*), then the quality as an adjective. The quality is the root that names what is measured, in its abstract sense (**-m**): cost, strength, effort.
+
+| English | Agazan |
+|---------|--------|
+| *expensive* / *costly* / *pricey* | `zahen zel gadahum` (costs more than usual) |
+| *cheap* / *inexpensive* | `zahen zuel gadahum` |
+| *weak* / *feeble* / *frail* | `zahen zuel gabezem` (less strength than usual) |
+| *busy* / *hard-working* | `zahen zel gazewem` (more effort than usual) |
+| *far* / *distant* / *remote* | `zahen zel gazedom` (farther than usual) |
+| *wide* / *broad* | `zahen zel gorodam` |
+| *narrow* | `zahen zuel gorodam` |
+| *deep* | `zahen zel gebegam` |
+| *shallow* | `zahen zuel gebegam` |
+| *thick* | `gabogol gul` (not flat) |
+| *remarkable* / *special* (unusual) / *outstanding* | `zahen zel` + the quality that stands out: `zahen zel gelavam` |
+| *major* / *significant* (matters more than usual) | `zahen zel gonathal` ([important](say-reasons.md#sake-words)) |
+
+> `zubugal zahen zel gadahum.`
+>
+> [z-book | z-Typical | z-rank/more | g-cost]
+>
+> "The book is expensive."
+
+> `zazawan zahen zuel gabezem.`
+>
+> [z-Azawan | z-Typical | z-rank/less | g-strength]
+>
+> "Azawan is weak."
+
+**Compare with:** a bar you do not share with everyone is **`zomen`** (*my standard*), and a bar set by what a need requires is **`zugen`** ([sake benchmarks](comparatives.md#sake-benchmarks)). *Too expensive* is `zugen zel gadahum`. Bare *good* and *bad* have no root ([wrong, ugly](say-reasons.md#wrong-ugly)).
+
+### Just, only, also, especially {#focus-words}
+
+**Needs:** [One item or none](joins.md#standalone-phrase) · [Join vowels and endings](joins.md#join-type-vowel-series) · [Stacked discourse hooks](hooks.md#stacked-discourse) · [Dated channel](knowing.md#now)
+
+English *just*, *only*, *especially* and *also* point at one item and say how it stands among the others. Agazan does that with a [join](joins.md) that has one item in front of it. The vowel says what the item is worth among the rest: **`zal`** (the closed ending) says it is the whole story, **`zem`** (the open ending) says it comes first and others may follow, and **`zel`** says it is the only one that matters. For *also*, there is no word to hang on the item: open the next sentence with the discourse hook **`al`**, which adds a separate point.
+
+| English | Agazan |
+|---------|--------|
+| *just Azawan* / *only* / *merely* / *simply* / *alone* / *a mere* / *this particular one* | `zazawan zal`, the join after the one item |
+| *especially Azawan* / *particularly* / *specifically* / *mainly* / *primarily* / *largely* / *in particular* / *main* (*the main one*) | `zazawan zem` |
+| *only Azawan matters* | `zazawan zel` |
+| *also* / *too* / *as well* / *besides* / *in addition* | `al …` at the start of the next sentence |
+| *just now* (*a moment ago*) | `brubul` on a channel |
+| *just about to* | `brabul` on a channel |
+
+> `zazawan zal vowogal.`
+>
+> [z-Azawan | z-and] | v-walk
+>
+> "Only Azawan walks."
+
+> `zazawan zem vowogal.`
+>
+> [z-Azawan | z-rank/more.open] | v-walk
+>
+> "Azawan especially walks."
+
+> `zazawan vowogal. al zalahen vowogal.`
+>
+> z-Azawan | v-walk . additionally | z-Alahen | v-walk
+>
+> "Azawan walks. Also, Alahen walks."
+
+**Compare with:** *just* meaning *only a moment ago* is the hair before now (**`brubul`**, [recently](say-tense.md#time-words)), not a join. *Only when* is the restrictor **`hal`** ([restrictors](restrictors.md#beginner)), and *only if* is **`thebom`** ([only if](causation.md#only-if)).
 
 ## Units and dates {#units-dates}
 
