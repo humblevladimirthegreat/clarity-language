@@ -45,9 +45,9 @@ A **short** resume always needs an earlier word to match. A **full-root** resume
 >
 > "The dog walks." (the dog you both know)
 
-A root that ends at its 2nd vowel (`azo` *scroll*, `ogo` *cloudy*) is spelled the same short and full. With no earlier match, it is the full-root resume.
+A root that ends at its 2nd vowel (`oze` *scroll*, `aga` *cloudy*) is spelled the same short and full. With no earlier match, it is the full-root resume.
 
-> `zalahen vahahal dazor.`
+> `zalahen vahahal dozer.`
 >
 > z-Alahen | v-see | d-←scroll.full
 >
@@ -75,31 +75,31 @@ When a proper name is available, prefer that name (and its **-r** resume), inclu
 >
 > "I walk." You name yourself rather than saying *I*.
 
-Use **`amegu`** (*speaker*) and **`ehodo`** (*listener*) when what matters is the conversation role, not a name. Both are five letters on purpose, so naming yourself and the other person stays the easier habit.
+Use **`amago`** (*speaker*) and **`ehodo`** (*listener*) when what matters is the conversation role, not a name. Both are five letters on purpose, so naming yourself and the other person stays the easier habit.
 
-> `zamegun dehodon vahahal.`
+> `zamagon dehodon vahahal.`
 >
 > z-speaker | d-listener | v-see
 >
 > "I see you."
 
-> `zamegun vowogal.`
+> `zamagon vowogal.`
 >
 > z-speaker | v-walk
 >
 > "I walk."
 
-English *we* can mean “you and I” or “I and my people, not you.” Inclusive *we* (you and I) uses **`oha`**: the speaker and the people being addressed, together (**interlocutors**).
+English *we* can mean “you and I” or “I and my people, not you.” Inclusive *we* (you and I) uses **`aha`**: the speaker and the people being addressed, together (**interlocutors**).
 
-> `zohan vowogal.`
+> `zahan vowogal.`
 >
 > z-interlocutors | v-walk
 >
 > "We (you and I) walk."
 
-**`onu`** names a nonspecific **individual** (*someone*), not a particular person you have already named. Once that person is in the talk, resume them with content **-r**.
+**`una`** names a nonspecific **individual** (*someone*), not a particular person you have already named. Once that person is in the talk, resume them with content **-r**.
 
-> `zonun vezebal.`
+> `zunan vezebal.`
 >
 > z-someone | v-sleep
 >
@@ -107,12 +107,12 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`amegun`** | speaker in this conversation (`zamegun` in subject slot) | *I* | `amegul` *microphone* | 🎤: the live voice of the person talking |
+| **`amagon`** | speaker in this conversation (`zamagon` in subject slot) | *I* | `amagol` *microphone* | 🎤: the live voice of the person talking |
 | **`ehodon`** | listener in this conversation (`zehodon` / `dehodon` in clause) | *you* | `ehodol` *headphones* | 🎧: the one receiving the sound |
-| **`ohan`** | speaker and addressees together (`zohan` in subject slot) | *we* (you and I) | `ohal` *handshake* | 🤝: sharing the floor together |
-| **`onun`** | nonspecific individual (`zonun` in subject slot) | *someone* | `onul` *neutral* | 😐: not a particular person |
+| **`ahan`** | speaker and addressees together (`zahan` in subject slot) | *we* (you and I) | `ahal` *handshake* | 🤝: sharing the floor together |
+| **`unan`** | nonspecific individual (`zunan` in subject slot) | *someone* | `unal` *neutral* | 😐: not a particular person |
 
-**Compare with:** *I and my people* / *you all* / *Azawan and associates* use **-x** ([clusivity](plurality.md#clusivity)). Inclusive *you and I* on this page is **`oha`**. *Here* / *there* and *this* / *that* use these same words as a landmark after a place hook ([deixis](hooks.md#deixis)).
+**Compare with:** *I and my people* / *you all* / *Azawan and associates* use **-x** ([clusivity](plurality.md#clusivity)). Inclusive *you and I* on this page is **`aha`**. *Here* / *there* and *this* / *that* use these same words as a landmark after a place hook ([deixis](hooks.md#deixis)).
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -128,23 +128,23 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Alahen* | `alahen` | | |
 | *Ahaben* | `ahaben` | | |
 | *cook* | `vugugal` | `ugugal` *cook* | 🧑‍🍳: the person at the stove |
-| *pour* | `vobohel` | `obohel` *pour* | 🫗: liquid onto a pan |
+| *pour* | `vobohol` | `obohol` *pour* | 🫗: liquid onto a pan |
 | *cookie* | `ugugol` | | |
 | *knife* | `anaval` | | |
 | *see* | `vahahal` | `ahahal` *eye* | 👁️: seeing is what an eye does |
-| *scream* | `vezogel` | | |
+| *scream* | `vezugel` | | |
 | *punch* | `vabahel` | | |
-| *speaker* | `amegun` | `amegul` *microphone* | 🎤: the live voice of the person talking |
+| *speaker* | `amagon` | `amagol` *microphone* | 🎤: the live voice of the person talking |
 | *listener* | `ehodon` | `ehodol` *headphones* | 🎧: the one receiving the sound |
-| *interlocutors* | `ohan` | `ohal` *handshake* | 🤝: sharing the floor together |
-| *someone* | `onun` | `onul` *neutral* | 😐: not a particular person |
+| *interlocutors* | `ahan` | `ahal` *handshake* | 🤝: sharing the floor together |
+| *someone* | `unan` | `unal` *neutral* | 😐: not a particular person |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *Azawan pours. They cook.*
 
 ::: details Show answer
-`zazawan vobohel. zazar vugugal.`
+`zazawan vobohol. zazar vugugal.`
 
 z-Azawan | v-pour . z-←Azawan | v-cook
 :::
@@ -152,7 +152,7 @@ z-Azawan | v-pour . z-←Azawan | v-cook
 **2.** *A cook pours. The cook cooks.*
 
 ::: details Show answer
-`zugugal vobohel. zugur vugugal.`
+`zugugal vobohol. zugur vugugal.`
 
 z-cook | v-pour . z-←cook | v-cook
 :::
@@ -168,7 +168,7 @@ z-Alahen | v-cook . z-Azawan | d-cookie | v-see . z-Ahaben | v-←cook.full
 **4.** *I see you.*
 
 ::: details Show answer
-`zamegun dehodon vahahal.`
+`zamagon dehodon vahahal.`
 
 z-speaker | d-listener | v-see
 :::
@@ -176,7 +176,7 @@ z-speaker | d-listener | v-see
 **5.** *We (you and I) cook.*
 
 ::: details Show answer
-`zohan vugugal.`
+`zahan vugugal.`
 
 z-interlocutors | v-cook
 :::
@@ -184,7 +184,7 @@ z-interlocutors | v-cook
 **6.** *You scream.*
 
 ::: details Show answer
-`zehodon vezogel.`
+`zehodon vezugel.`
 
 z-listener | v-scream
 :::
@@ -192,7 +192,7 @@ z-listener | v-scream
 **7.** *Azawan punches me.*
 
 ::: details Show answer
-`zazawan damegun vabahel.`
+`zazawan damagon vabahel.`
 
 z-Azawan | d-speaker | v-punch
 :::
@@ -200,14 +200,14 @@ z-Azawan | d-speaker | v-punch
 **8.** *Someone punches Ahaben.*
 
 ::: details Show answer
-`zonun dahaben vabahel.`
+`zunan dahaben vabahel.`
 
 z-someone | d-Ahaben | v-punch
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zalahen vugugal. zalar vobohel.`
+**1.** `zalahen vugugal. zalar vobohol.`
 
 ::: details Show answer
 
@@ -216,7 +216,7 @@ z-Alahen | v-cook . z-←Alahen | v-pour
 *Alahen cooks. He pours.*
 :::
 
-**2.** `zahaben vobohel. zahar vugugal.`
+**2.** `zahaben vobohol. zahar vugugal.`
 
 ::: details Show answer
 
@@ -252,7 +252,7 @@ z-Azawan | d-listener | v-see
 *Azawan sees you.*
 :::
 
-**6.** `zohan vobohel.`
+**6.** `zahan vobohol.`
 
 ::: details Show answer
 
@@ -261,7 +261,7 @@ z-interlocutors | v-pour
 *We (you and I) pour.*
 :::
 
-**7.** `zonun vezogel.`
+**7.** `zunan vezugel.`
 
 ::: details Show answer
 
@@ -270,7 +270,7 @@ z-someone | v-scream
 *Someone screams.*
 :::
 
-**8.** `yol zamegun vugugal.`
+**8.** `yol zamagon vugugal.`
 
 ::: details Show answer
 
@@ -306,7 +306,7 @@ For English *too* / *also*, resume the action. `/v/` **-r** is *the same action 
 >
 > "Alahen walks. Azawan does too."
 
-> `zazawan vahahal dagadal. zazawan vahar dodogal.`
+> `zazawan vahahal dagadul. zazawan vahar dodogal.`
 >
 > z-Azawan | v-see | d-cat . z-Azawan | v-←see | d-dog
 >
@@ -346,7 +346,7 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 
 For English *one* (*a blue one*, *the red one*), write the unspecified **`dar`** *something* and resume the noun as a kind on `/ɡ/`, then add the new property. A resume on `/d/` would be the same dog; **`dar`** with a `/ɡ/` resume is another thing of the dog kind.
 
-> `zazawan dodogal geredal vahahal. zalahen dar godor gubuhal vahahal.`
+> `zazawan dodogal geredal vahahal. zalahen dar godor gubuhel vahahal.`
 >
 > z-Azawan | [d-dog | g-red] | v-see . z-Alahen | [d-something | g-←dog] | g-blue | v-see
 >
@@ -354,21 +354,21 @@ For English *one* (*a blue one*, *the red one*), write the unspecified **`dar`**
 
 ### Each other {#reciprocal}
 
-For *each other*, join the people in `/z/` and add **`hewum`** after the verb. The root is **`ewu`** *reciprocity*: each one does it to the others. Do not write a resume in `/d/` (`dazar` would just mean Azawan again).
+For *each other*, join the people in `/z/` and add **`hedam`** after the verb. The root is **`eda`** *reciprocity*: each one does it to the others. Do not write a resume in `/d/` (`dazar` would just mean Azawan again).
 
-> `zazawan zalahen zal vahahal hewum.`
+> `zazawan zalahen zal vahahal hedam.`
 >
 > [z-Azawan | z-Alahen | z-and] | v-see | h-reciprocity
 >
 > "Azawan and Alahen see each other."
 
-With **-l**, **`hewul`** is strictly pairwise: every one of them does it to every other one. **-m** is the everyday *each other* / *one another*, where it only has to go both ways in general.
+With **-l**, **`hedal`** is strictly pairwise: every one of them does it to every other one. **-m** is the everyday *each other* / *one another*, where it only has to go both ways in general.
 
-**Compare with:** **`thewum barl`** on `/th/` is *if and only if* ([dependents](dependents.md#dependent-clauses)). On `/h/` with no `/b/`, the same root is *each other*.
+**Compare with:** **`thedam barl`** on `/th/` is *if and only if* ([dependents](dependents.md#dependent-clauses)). On `/h/` with no `/b/`, the same root is *each other*.
 
 ### Addressing several people
 
-When you address several people at once, English *you* does not say how many. The listener root **`ehodo`** plus associative **-x** names everyone this turn addresses: the vocative cluster, plus anyone still held as addressee. One addressee stays singular **`ehodo`**; several take **`edone…x`**. Inclusive *shall we* stays **`oha`**. Soft **`zoham`** hedges whether you really share the act.
+When you address several people at once, English *you* does not say how many. The listener root **`ehodo`** plus associative **-x** names everyone this turn addresses: the vocative cluster, plus anyone still held as addressee. One addressee stays singular **`ehodo`**; several take **`edone…x`**. Inclusive *shall we* stays **`aha`**. Soft **`zaham`** hedges whether you really share the act.
 
 > `zehodonx vehahel.`
 >
@@ -376,7 +376,7 @@ When you address several people at once, English *you* does not say how many. Th
 >
 > "You all sit."
 
-**Compare with:** *you and I* is **`oha`**. *Azawan and associates* is name…**-x** ([plurality](plurality.md#associative)).
+**Compare with:** *you and I* is **`aha`**. *Azawan and associates* is name…**-x** ([plurality](plurality.md#associative)).
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -392,19 +392,19 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | | |
 | *Alahen* | `alahen` | | |
 | *Ahaben* | `ahaben` | | |
-| *pour* | `vobohel` | `obohel` *pour* | 🫗: water onto soil |
-| *harvest* | `vebadem` | `ebadel` *grain* | 🌾: bringing the crop in |
+| *pour* | `vobohol` | `obohol` *pour* | 🫗: water onto soil |
+| *harvest* | `vegevem` | `egevel` *grain* | 🌾: bringing the crop in |
 | *flower* | `avavul` | | |
 | *tomato* | `adedol` | | |
-| *seedling* | `ezul` | | |
+| *seedling* | `uzel` | | |
 | *red* | `eredal` | | |
 | *see* | `vahahal` | `ahahal` *eye* | 👁️: seeing is what an eye does |
-| *like* | `homem` | `omel` *mirror* | 🪞: the image is of the model |
+| *like* | `humum` | `umul` *mirror* | 🪞: the image is of the model |
 | *topic* | `hahehom` | `ahehol` *hash* | #️⃣: a heading mark |
-| *scream* | `vezogel` | | |
+| *scream* | `vezugel` | | |
 | *punch* | `vabahel` | | |
 | *fight* | `vavadal` | | |
-| *interlocutors* | `ohan` | `ohal` *handshake* | 🤝: sharing the floor together |
+| *interlocutors* | `ahan` | `ahal` *handshake* | 🤝: sharing the floor together |
 | *listener* | `ehodon` | `ehodol` *headphones* | 🎧: the one receiving the sound |
 
 #### English → Agazan {#intermediate-english-to-agazan}
@@ -412,7 +412,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Alahen pours. Azawan does so.*
 
 ::: details Show answer
-`zalahen vobohel. zazawan vobor.`
+`zalahen vobohol. zazawan vobor.`
 
 z-Alahen | v-pour . z-Azawan | v-←pour
 :::
@@ -436,7 +436,7 @@ z-Alahen | d-Azawan | v-see . z-Ahaben | d-←Azawan | v-see
 **4.** *Azawan pours. Alahen harvests. Going back to Azawan, they see a seedling.*
 
 ::: details Show answer
-`zazawan vobohel. zalahen vebadem. xazar dezul vahahal.`
+`zazawan vobohol. zalahen vegevem. xazar duzel vahahal.`
 
 z-Azawan | v-pour . z-Alahen | v-harvest . x-←Azawan | d-seedling | v-see
 :::
@@ -444,7 +444,7 @@ z-Azawan | v-pour . z-Alahen | v-harvest . x-←Azawan | d-seedling | v-see
 **5.** *Alahen pours like Azawan. Ahaben harvests that way.*
 
 ::: details Show answer
-`zalahen homem bazawan vobohel. zahaben homer vebadem.`
+`zalahen humum bazawan vobohol. zahaben humur vegevem.`
 
 z-Alahen | [h-like | b-Azawan] | v-pour . z-Ahaben | h-←like | v-harvest
 :::
@@ -460,7 +460,7 @@ z-Alahen | [h-like | b-Azawan] | v-pour . z-Ahaben | h-←like | v-harvest
 **7.** *We (you and I) harvest.*
 
 ::: details Show answer
-`zohan vebadem.`
+`zahan vegevem.`
 
 z-interlocutors | v-harvest
 :::
@@ -475,7 +475,7 @@ z-Azawan-x | v-punch
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zazawan vobohel. zalahen vobor.`
+**1.** `zazawan vobohol. zalahen vobor.`
 
 ::: details Show answer
 
@@ -502,7 +502,7 @@ z-Azawan | d-Alahen | v-see . z-Ahaben | d-←Alahen | v-see
 *Azawan sees Alahen. Ahaben sees him.*
 :::
 
-**4.** `zalahen vebadem. zazawan vobohel. xalar vabahel.`
+**4.** `zalahen vegevem. zazawan vobohol. xalar vabahel.`
 
 ::: details Show answer
 
@@ -511,7 +511,7 @@ z-Alahen | v-harvest . z-Azawan | v-pour . x-←Alahen | v-punch
 *Alahen harvests. Azawan pours. Going back to Alahen, he punches.*
 :::
 
-**5.** `hahehom bazawan zahaben vebadem.`
+**5.** `hahehom bazawan zahaben vegevem.`
 
 ::: details Show answer
 
@@ -520,7 +520,7 @@ z-Alahen | v-harvest . z-Azawan | v-pour . x-←Alahen | v-punch
 *As for Azawan, Ahaben harvests.*
 :::
 
-**6.** `zohan vezogel.`
+**6.** `zahan vezugel.`
 
 ::: details Show answer
 
@@ -529,7 +529,7 @@ z-interlocutors | v-scream
 *We (you and I) scream.*
 :::
 
-**7.** `zehodonx vezogel.`
+**7.** `zehodonx vezugel.`
 
 ::: details Show answer
 

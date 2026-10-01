@@ -126,7 +126,7 @@ Source: [predication.md](../grammar/predication.md)
 
 | Slot | Status |
 |------|--------|
-| **`gogan`** / **`gogar`** (SAME with **-n** / **-r**) | Undefined — only **-l** / **-m** are taught |
+| **`gugon`** / **`gugor`** (SAME with **-n** / **-r**) | Undefined — only **-l** / **-m** are taught |
 
 ## Spans
 
@@ -140,18 +140,18 @@ Source: [spans.md](../grammar/spans.md), [x-compounds.md](../grammar/x-compounds
 Source: [sakes.md](../grammar/sakes.md)
 
 - Whose-sake / care direction on prescription
-- Forced listener / third-person possessives on sake ascription (speaker `/ɡ/` default is [personal possession](../grammar/sakes.md#personal-possession); unowned is **`gobom`**)
+- Forced listener / third-person possessives on sake ascription (speaker `/ɡ/` default is [personal possession](../grammar/sakes.md#personal-possession); unowned is **`gobum`**)
 
 ### Near-miss inventory (editor)
 
 | Job | Where taught |
 |-----|----------------|
 | Emotion compose | [sakes.md § Emotion compose](../grammar/sakes.md#emotion-compose) |
-| MAY | [knowing.md § MAY](../grammar/knowing.md#may) — **`ovo`** + find out / default / who knows |
-| NOTIONAL | [knowing.md § Notional](../grammar/knowing.md#notional) — **`ove`** |
-| RESIDUE / FORMER | [knowing.md § Residue](../grammar/knowing.md#residue) — **`amo`** / **`une`** |
-| DECISION | [intention.md § Decision](../grammar/intention.md#decision) — **`eha`** |
-| PLAN | [intention.md § Plan](../grammar/intention.md#plan-predict) — **`uma`** |
+| MAY | [knowing.md § MAY](../grammar/knowing.md#may) — **`ovu`** + find out / default / who knows |
+| NOTIONAL | [knowing.md § Notional](../grammar/knowing.md#notional) — **`avo`** |
+| RESIDUE / FORMER | [knowing.md § Residue](../grammar/knowing.md#residue) — **`amo`** / **`eno`** |
+| DECISION | [intention.md § Decision](../grammar/intention.md#decision) — **`ehu`** |
+| PLAN | [intention.md § Plan](../grammar/intention.md#plan-predict) — **`ama`** |
 
 ## Phonology
 

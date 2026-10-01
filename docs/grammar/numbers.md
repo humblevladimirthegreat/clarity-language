@@ -25,7 +25,7 @@ Digits are spoken and written as these syllables:
 
 So *three* is **g** + **ra** + **re** + **l**: **`grarel`**.
 
-> `zagadalx grarel.`
+> `zagadulx grarel.`
 > z-cat-x | g-three
 >
 > "Three cats."
@@ -62,9 +62,9 @@ The marker **`r`** right after the role letter is how you hear that a word is a 
 
 You can say the count is **more than one** without naming how many. Keep the count marker and leave the digits off: **`gral`**.
 
-Naming the group (*cats* as a set) uses [**-x**](plurality.md) on the noun. Saying the amount is a different tool. Both may sit on the same noun (`zagadalx gral`).
+Naming the group (*cats* as a set) uses [**-x**](plurality.md) on the noun. Saying the amount is a different tool. Both may sit on the same noun (`zagadulx gral`).
 
-> `zagadalx gral.`
+> `zagadulx gral.`
 > z-cat-x | g-more-than-one
 >
 > "Cats — more than one."
@@ -85,10 +85,10 @@ Short drills for Beginner. Try each item before opening **Show answer**. Count w
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
 | *baguette* | `ubogel` | |
-| *croissant* | `ugazal` | |
+| *croissant* | `ogazal` | |
 | *cookie* | `ugugol` | |
-| *bread* | `ebewel` | |
-| *pie* | `abayal` | |
+| *bread* | `ebevul` | |
+| *pie* | `abawul` | |
 | *doughnut* | `ododel` | |
 | *bagel* | `ebagol` | |
 | *fire* | `avahel` | |
@@ -108,7 +108,7 @@ z-baguette-x | g-two
 **2.** *The third croissant.*
 
 ::: details Show answer
-`zugazal grerel.`
+`zogazal grerel.`
 
 z-croissant | g-3rd
 :::
@@ -124,7 +124,7 @@ z-cookie-x | g-more-than-one
 **4.** *Azawan sees three breads.*
 
 ::: details Show answer
-`zazawan debewelx grarel vahahal.`
+`zazawan debevulx grarel vahahal.`
 
 z-Azawan | [d-bread-x | g-three] | v-see
 :::
@@ -132,7 +132,7 @@ z-Azawan | [d-bread-x | g-three] | v-see
 **5.** *Alahen smells the second pie.*
 
 ::: details Show answer
-`zalahen dabayal gredul vonozal.`
+`zalahen dabawul gredul vonozal.`
 
 z-Alahen | [d-pie | g-2nd] | v-smell
 :::
@@ -163,7 +163,7 @@ z-Alahen | [d-fire | g-1st] | v-see
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zugazalx gradul.`
+**1.** `zogazalx gradul.`
 
 ::: details Show answer
 
@@ -172,7 +172,7 @@ z-croissant-x | g-two
 *Two croissants.*
 :::
 
-**2.** `zebewel gredul.`
+**2.** `zebevul gredul.`
 
 ::: details Show answer
 
@@ -199,7 +199,7 @@ z-Ahaben | [d-cookie-x | g-three] | v-see
 *Ahaben sees three cookies.*
 :::
 
-**5.** `zazawan dabayalx gral vahahal.`
+**5.** `zazawan dabawulx gral vahahal.`
 
 ::: details Show answer
 
@@ -262,7 +262,7 @@ Beginner put the number after a noun (*three cats*). You can also put the **numb
 
 Change only the first letter. The marker and digits stay the same; referential prefixes (`/ɡ/`, `/z/`, `/d/`, `/b/`) keep the marker’s identity.
 
-> `zrarel gubuhal.`
+> `zrarel gubuhel.`
 > z-three | g-blue
 >
 > "Three is blue."
@@ -324,7 +324,7 @@ Beginner already used **`gral`** for *more than one*. Any marker may drop every 
 | **`re`** (`…#`) | unspecified **rank from the start** | *some nth* / *some place*; exact ranks keep digits (`…#N`) | **`e`** ≈ order |
 | **`ro`** (`…_`) | unspecified **digit-string / label** | *some code*; *a label*; exact labels keep digits (`…_…`) | **`o`** ≈ one |
 
-**Compare with:** noun [**-x**](plurality.md) names a **group of referents**. Digitless **`ra`** names a **count/amount `>1`** without saying N. They may co-occur (`zagadalx grarel`).
+**Compare with:** noun [**-x**](plurality.md) names a **group of referents**. Digitless **`ra`** names a **count/amount `>1`** without saying N. They may co-occur (`zagadulx grarel`).
 
 On a `/b/` offset right after a channel, digitless **`bral`** is *later* and **`brul`** is *earlier*, with no amount claimed ([forecasts](knowing.md#forecast)).
 
@@ -332,7 +332,7 @@ On a `/b/` offset right after a channel, digitless **`bral`** is *later* and **`
 
 Open **`gram`** is a soft count: *a few* / *some*. It says there is more than one without claiming a number. The closed **`gral`** stays *more than one*.
 
-> `zagadalx gram vehahel.`
+> `zagadulx gram vehahel.`
 > [z-cat-x | g-more-than-one.about] | v-sit
 >
 > "A few cats sit."
@@ -368,7 +368,7 @@ To repeat a number already given, keep at least one digit: `zalahen drarel vahah
 
 To ask for a **number**, write a [number word](numbers.md) with no digits and the **-r** ending (written **`=`** after the job letter). That empty number is the blank, the same way `zar` is the blank for *who?* ([fill-ask](questions.md#fill-ask-r)). The marker says which kind of number you want. (cue: **-r** names this member; the marker vowel says count, place, or code)
 
-> `yol zazawan dagadalx grar vahahal.`
+> `yol zazawan dagadulx grar vahahal.`
 > y-question | z-Azawan | [d-cat-x | g-how-many] | v-see
 >
 > "How many cats does Azawan see?"
@@ -397,7 +397,7 @@ To ask **how much** of a quality, put the same blank on `/w/` immediately before
 >
 > "How big is the dog?"
 
-> `yol zodogal varahal wrar hadehom.`
+> `yol zodogal varahal wrar hadehum.`
 > y-question | z-dog | v-run | [w-how-many | h-haste]
 >
 > "How fast does the dog run?"
@@ -665,7 +665,7 @@ For *30% unlikely*, give the likelihood of the claim itself (`th+70`). **`th-N`*
 
 Endings still apply: **-m** *about* that likelihood (`th~+70` *roughly 70%*), **-n** a conventional level (`th@+95` *at the 95% confidence level*), **-r** *the same likelihood as before* (`th=+70`); digitless `thrar` asks *how likely?* under question.
 
-**Compare with:** [evidentiality](knowing.md#evidentiality) says **how** you know; `th_N` says **which** numbered source. [MAY](knowing.md#may) (`thovom`) says the claim is open without a figure. Pretense *as if* in play or make-believe is [NOTIONAL](knowing.md#notional).
+**Compare with:** [evidentiality](knowing.md#evidentiality) says **how** you know; `th_N` says **which** numbered source. [MAY](knowing.md#may) (`thovum`) says the claim is open without a figure. Pretense *as if* in play or make-believe is [NOTIONAL](knowing.md#notional).
 
 
 
@@ -1007,7 +1007,7 @@ A digit group may use **`ba`** or **`bu`** with **no** exponent digits. That emp
 | **Mantissa `≠0` + `ba`/`bu`∅** | hyperbole (*N gazillion* / *umpteenth*) |
 | **Mantissa `0` + `ba`/`bu`∅** | [zero × digitless exp](#zero-exponent) |
 
-> `zagadalx grabal.`
+> `zagadulx grabal.`
 > z-cat-x | g-plus-infinity
 >
 > "Cats — infinitely many."
@@ -1040,7 +1040,7 @@ Same under `/z/` `/d/` `/b/` (`zrabal` = +∞ as subject; `drebul` = start-place
 
 **Just short (`grubul`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅**), no mantissa. It mirrors **`grabul`** (a hair over zero): **`grubul`** is a hair **under** — the smallest shortfall. Against a target it reads *almost*; as a [signed time offset](knowing.md#dated-channel) it reads *just before* (`brubul` *just now*), and **`brabul`** reads *just after* (*any moment now*).
 
-**Compare with:** *as if* uses spelled mood **`ove`** ([knowing.md § Notional](knowing.md#notional), e.g. `thovem`). Free **`grubul`** / **`xrubul`** / **`thrubul`** / **`vrubul`** / **`hrubul`** / **`yrubul`** are the amount, discourse *just before that:*, stance *virtually*, verb *nudge down*, adverb *almost*, and cheer *so close!* on the number grid.
+**Compare with:** *as if* uses spelled mood **`avo`** ([knowing.md § Notional](knowing.md#notional), e.g. `thavom`). Free **`grubul`** / **`xrubul`** / **`thrubul`** / **`vrubul`** / **`hrubul`** / **`yrubul`** are the amount, discourse *just before that:*, stance *virtually*, verb *nudge down*, adverb *almost*, and cheer *so close!* on the number grid.
 
 **Endings** (no-mantissa specials):
 
@@ -1078,7 +1078,7 @@ No-mantissa digitless-exp under `/v/` and `/h/` inherit special-value identity (
 
 **On a quality:** the same pair sits on `/w/` before an adjective or adverb. **`wrabul`** = *barely*; **`wrubul`** = *almost*.
 
-> `zodogal wrubul gubuhal vowogal.`
+> `zodogal wrubul gubuhel vowogal.`
 > [z-dog | [w---e- | g-blue]] | v-walk
 >
 > "An almost blue dog walks."
@@ -1355,7 +1355,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Digitle
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
-| *star* | `azal` | |
+| *star* | `ozal` | |
 | *telescope* | `edazol` | |
 | *see* | `vahahal` | `ahahal` *eye* |
 
@@ -1364,7 +1364,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Digitle
 **1.** *Stars — infinitely many.*
 
 ::: details Show answer
-`zazalx grabal.`
+`zozalx grabal.`
 
 z-star-x | g-plus-infinity
 :::
@@ -1412,7 +1412,7 @@ x-starting-with | z-Ahaben | v-see
 **7.** *Azawan sees the penultimate star.*
 
 ::: details Show answer
-`zazawan dazal gruedul vahahal.`
+`zazawan dozal gruedul vahahal.`
 
 z-Azawan | [d-star | g-2nd-from-end] | v-see
 :::
@@ -1420,18 +1420,18 @@ z-Azawan | [d-star | g-2nd-from-end] | v-see
 **8.** *Alahen sees three stars, give or take one.*
 
 ::: details Show answer
-`zalahen dazalx grarel gruawol vahahal.`
+`zalahen dozalx grarel gruawol vahahal.`
 
 z-Alahen | [d-star-x | g-three | g-plus-minus-1] | v-see
 :::
 
 #### Agazan → English {#advanced-agazan-to-english}
 
-**1.** `zazalx grabam.`
+**1.** `zozalx grabam.`
 
 ::: details Show answer
 
-🔊 *zazalx grabam.*
+🔊 *zozalx grabam.*
 
 z-star-x | g-plus-infinity.about
 
@@ -1460,11 +1460,11 @@ x-starting-with | z-Alahen | v-see
 *Starting with: Alahen sees.*
 :::
 
-**4.** `zazal grewobal.`
+**4.** `zozal grewobal.`
 
 ::: details Show answer
 
-🔊 *zazal grewobal.*
+🔊 *zozal grewobal.*
 
 z-star | g-#-1e
 

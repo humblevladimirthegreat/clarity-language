@@ -149,7 +149,7 @@ The act word is **`y` + vowel + ending**. The vowel sets the act (**a** statemen
 >
 > "For what it's worth, Azawan walks."
 
-**Compare with:** [MAY](knowing.md#may) (`thovom`) marks the scene as *could be*. **`yam`** is still a statement; you put it forward without insisting the other person take it up.
+**Compare with:** [MAY](knowing.md#may) (`thovum`) marks the scene as *could be*. **`yam`** is still a statement; you put it forward without insisting the other person take it up.
 
 | Agazan | Use | Cue |
 |--------|-----|-----|
@@ -162,15 +162,15 @@ The act word is **`y` + vowel + ending**. The vowel sets the act (**a** statemen
 | **yul** | **prohibition**: *don’t…* (firm) | **u** undo + **-l**: take the action back |
 | **yum** | **soft prohibition**: *please don’t…* / *I’d rather you not…* | **u** undo + **-m**: prefer they don’t |
 
-For *let's*, make a soft request with inclusive *we*, **`oha`** ([special pronouns](pronouns.md#special-pronouns)), as the subject. *Let's not* is the soft prohibition.
+For *let's*, make a soft request with inclusive *we*, **`aha`** ([special pronouns](pronouns.md#special-pronouns)), as the subject. *Let's not* is the soft prohibition.
 
-> `yem zohan vowogal.`
+> `yem zahan vowogal.`
 >
 > y-request | z-interlocutors | v-walk
 >
 > "Let's walk."
 
-> `yum zohan vezebal.`
+> `yum zahan vezebal.`
 >
 > y-soft-prohibition | z-interlocutors | v-sleep
 >

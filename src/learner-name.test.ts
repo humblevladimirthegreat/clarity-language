@@ -22,18 +22,20 @@ const rows = parsePublishedCsv(readFileSync(join(root, "data", "lexicon-publishe
 const overlays = parseOverlayCsv(readFileSync(join(root, "data", "lexicon-overlays.csv"), "utf8"));
 const eligible = eligibleNames(rows, overlays);
 const eligibleRoots = new Set(eligible.map((option) => option.root));
+/** Current root of an emoji row, so these tests follow a lexicon retie. */
+const rootOf = (emoji: string) => rows.find((row) => row.emoji === emoji)!.root;
 
 describe("eligibleNames", () => {
   it("allows ordinary roots, including unflattering ones and rows without an abstract", () => {
-    for (const root of ["egeva", "azaga", "ububa", "arade"]) assert.equal(eligibleRoots.has(root), true, root);
+    for (const root of ["😀", "💀", "💩", "🐀"].map(rootOf)) assert.equal(eligibleRoots.has(root), true, root);
   });
 
   it("bans only confusing names, with a reason", () => {
     const reason = (root: string) => nameBanReason(rows.find((row) => row.root === root)!, overlays);
     const roles = [CLOSED.microphone, CLOSED.headphones, CLOSED.handshake, CLOSED.neutral];
     const cast = [CLOSED.swan, CLOSED.lion, CLOSED.hibiscus];
-    // `eha` (DECISION ✅) and `ovo` (MAY 💭) + **-n** are grammar words.
-    for (const root of [...roles, ...cast, CLOSED.glasses, "eha", "ovo"]) {
+    // DECISION (✅) and MAY (💭) + **-n** are grammar words.
+    for (const root of [...roles, ...cast, CLOSED.glasses, rootOf("✅"), rootOf("💭")]) {
       assert.equal(eligibleRoots.has(root), false, root);
       assert.ok(reason(root), root);
     }
@@ -51,7 +53,7 @@ describe("suggestedNames", () => {
       assert.ok(eligibleRoots.has(option.root), option.root);
       assert.ok(option.concrete && option.abstract, option.root);
     }
-    assert.equal(suggested[0]!.name, "egevan");
+    assert.equal(suggested[0]!.name, `${rootOf("😀")}n`);
   });
 });
 

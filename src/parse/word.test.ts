@@ -198,7 +198,7 @@ describe("parseWord — spans and writing atoms", () => {
   });
 
   it("parses spoken opaque interiors as foreign blobs", () => {
-    const atomic = parseWords("zululon duxol FBI veyel");
+    const atomic = parseWords("zululon duxol FBI vuyel");
     assert.equal(atomic[2]?.family.kind, "foreign");
     if (atomic[2]?.family.kind === "foreign") {
       assert.equal(atomic[2].family.payload, "FBI");

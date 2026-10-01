@@ -12,7 +12,7 @@ const SAKES = [
   "",
   "### Emotion compose {#emotion-compose}",
   "",
-  "`zebeyum guduthamar` and `wuduthuraor`.",
+  "`zebeyom gulothamar` and `wulothuraor`.",
 ].join("\n");
 
 function terminology(rows: string[], body = ""): string {
@@ -24,7 +24,7 @@ function lint(markdown: string, labels: string[]) {
   return lintTerminology(markdown, pages, tables, new Set(labels), new Map([["sakes.md", "Sakes"]])).map((f) => f.detail);
 }
 
-const INTERNAL = "| **INTERNAL** | held inside | `guduthamar` | [Sakes](sakes.md#emotion-compose) |";
+const INTERNAL = "| **INTERNAL** | held inside | `gulothamar` | [Sakes](sakes.md#emotion-compose) |";
 
 describe("lintTerminology", () => {
   it("passes a current row", () => {
@@ -41,14 +41,14 @@ describe("lintTerminology", () => {
   });
 
   it("flags a row whose example lacks the label or is not on the page", () => {
-    const wrong = "| **CIRCUM** | atmosphere | `guduthamar` | [Sakes](sakes.md#emotion-compose) |";
+    const wrong = "| **CIRCUM** | atmosphere | `gulothamar` | [Sakes](sakes.md#emotion-compose) |";
     assert.match(lint(terminology([wrong]), ["CIRCUM"]).join("\n"), /without CIRCUM/);
-    const missing = "| **CIRCUM** | atmosphere | `wuduthuraol` | [Sakes](sakes.md#emotion-compose) |";
+    const missing = "| **CIRCUM** | atmosphere | `wulothuraol` | [Sakes](sakes.md#emotion-compose) |";
     assert.match(lint(terminology([missing]), ["CIRCUM"]).join("\n"), /does not appear on sakes\.md/);
   });
 
   it("flags a row no morph line prints and the page never uses", () => {
-    const stale = "| **ACT** | arousal | `guduthamar` | [Sakes](sakes.md#emotion-compose) |";
+    const stale = "| **ACT** | arousal | `gulothamar` | [Sakes](sakes.md#emotion-compose) |";
     assert.match(lint(terminology([stale]), []).join("\n"), /drop the row/);
   });
 

@@ -7,35 +7,35 @@ English *will* and *going to* can describe either **intention** (the course some
 ### Plan
 <a id="plan-predict"></a>
 
-To say what someone **means to do**, put **`thuma`** before the ordinary verb, such as *walk* or *write*. The `/th/` marks the mood across the clause; the ending on **`thuma`** says how fully the person has planned the course. This separates an intention from English *will* used as a forecast. (Cue: 🗺️ A map charts a course you mean to take.)
+To say what someone **means to do**, put **`thama`** before the ordinary verb, such as *walk* or *write*. The `/th/` marks the mood across the clause; the ending on **`thama`** says how fully the person has planned the course. This separates an intention from English *will* used as a forecast. (Cue: 🗺️ A map charts a course you mean to take.)
 
-> `zazawan thumam vowogal.`
+> `zazawan thamam vowogal.`
 >
 > z-Azawan | th-plan-itinerary | v-walk
 >
 > "Azawan plans to walk."
 
-Ordinary content stays available (`zumal` *a map*; `vumal` *to plan*). Leave PLAN off when you are not framing intention.
+Ordinary content stays available (`zamal` *a map*; `vamal` *to plan*). Leave PLAN off when you are not framing intention.
 
 #### Endings — map resolution
 <a id="plan-map-resolution"></a>
 <a id="plan-endings"></a>
 
-On **`uma`**, **-l / -m / -r** say **how fully drawn** the intention is: a map that already includes backups, steps filled in, or just the direction. That split shows **how much of the route is drawn**. No level is better: match the detail to the plan, and a sketch is often all a small or early plan needs. **-n** is ordinary [proper](word-endings.md#proper-name--n). When you are unsure how detailed the course is, use **`thumam`**: it claims a plan without saying how much is filled in.
+On **`ama`**, **-l / -m / -r** say **how fully drawn** the intention is: a map that already includes backups, steps filled in, or just the direction. That split shows **how much of the route is drawn**. No level is better: match the detail to the plan, and a sketch is often all a small or early plan needs. **-n** is ordinary [proper](word-endings.md#proper-name--n). When you are unsure how detailed the course is, use **`thamam`**: it claims a plan without saying how much is filled in.
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`thumal`** | **atlas** | *is fully prepared to …* — hurdles are anticipated and prepared for | `umal` *plan-atlas* | **-l** ≈ locked in (detours already drawn) |
-| **`thumam`** | **itinerary** (soft default) | *plans to …* — steps laid out, or detail unstated | `umam` *plan-itinerary* | **-m** ≈ middle (the route, no backups) |
-| **`thumar`** | **sketch** | *intends to …* / *is thinking of …* — the direction, details left open | `umar` *plan-sketch* | **-r** ≈ rough (a direction for now) |
+| **`thamal`** | **atlas** | *is fully prepared to …* — hurdles are anticipated and prepared for | `amal` *plan-atlas* | **-l** ≈ locked in (detours already drawn) |
+| **`thamam`** | **itinerary** (soft default) | *plans to …* — steps laid out, or detail unstated | `amam` *plan-itinerary* | **-m** ≈ middle (the route, no backups) |
+| **`thamar`** | **sketch** | *intends to …* / *is thinking of …* — the direction, details left open | `amar` *plan-sketch* | **-r** ≈ rough (a direction for now) |
 
-> `zalahen thumar vowogal.`
+> `zalahen thamar vowogal.`
 >
 > z-Alahen | th-plan-sketch | v-walk
 >
 > "Alahen is thinking of a walk." (a sketch is plenty here)
 
-> `zahaben thumal vowogal.`
+> `zahaben thamal vowogal.`
 >
 > z-Ahaben | th-plan-atlas | v-walk
 >
@@ -59,11 +59,11 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
 | *sit* | `vehahel` | `ehahel` *chair* |
-| *pawn* | `obohol` | |
+| *pawn* | `obohul` | |
 | *see* | `vahahal` | `ahahal` *eye* |
 | *tell* | `vezebel` | `ezebel` *speech* |
 | *punch* | `vabahel` | |
-| *scream* | `vezogel` | |
+| *scream* | `vezugel` | |
 | *fight* | `vavadal` | |
 
 #### English → Agazan {#beginner-english-to-agazan}
@@ -71,7 +71,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *Azawan intends to sit.*
 
 ::: details Show answer
-`zazawan thumar vehahel.`
+`zazawan thamar vehahel.`
 
 z-Azawan | th-plan-sketch | v-sit
 :::
@@ -79,7 +79,7 @@ z-Azawan | th-plan-sketch | v-sit
 **2.** *Alahen intends to see a pawn.*
 
 ::: details Show answer
-`zalahen thumar dobohol vahahal.`
+`zalahen thamar dobohul vahahal.`
 
 z-Alahen | th-plan-sketch | d-pawn | v-see
 :::
@@ -87,7 +87,7 @@ z-Alahen | th-plan-sketch | d-pawn | v-see
 **3.** *Azawan plans to tell Ahaben.*
 
 ::: details Show answer
-`zazawan bahaben thumam vezebel.`
+`zazawan bahaben thamam vezebel.`
 
 z-Azawan | b-Ahaben | th-plan-itinerary | v-tell
 :::
@@ -95,7 +95,7 @@ z-Azawan | b-Ahaben | th-plan-itinerary | v-tell
 **4.** *Ahaben is fully prepared to sit.*
 
 ::: details Show answer
-`zahaben thumal vehahel.`
+`zahaben thamal vehahel.`
 
 z-Ahaben | th-plan-atlas | v-sit
 :::
@@ -103,7 +103,7 @@ z-Ahaben | th-plan-atlas | v-sit
 **5.** *Ahaben plans to see Azawan.*
 
 ::: details Show answer
-`zahaben thumam dazawan vahahal.`
+`zahaben thamam dazawan vahahal.`
 
 z-Ahaben | th-plan-itinerary | d-Azawan | v-see
 :::
@@ -111,7 +111,7 @@ z-Ahaben | th-plan-itinerary | d-Azawan | v-see
 **6.** *Alahen is fully prepared to punch Azawan.*
 
 ::: details Show answer
-`zalahen thumal dazawan vabahel.`
+`zalahen thamal dazawan vabahel.`
 
 z-Alahen | th-plan-atlas | d-Azawan | v-punch
 :::
@@ -119,7 +119,7 @@ z-Alahen | th-plan-atlas | d-Azawan | v-punch
 **7.** *Alahen plans to scream.*
 
 ::: details Show answer
-`zalahen thumam vezogel.`
+`zalahen thamam vezugel.`
 
 z-Alahen | th-plan-itinerary | v-scream
 :::
@@ -127,14 +127,14 @@ z-Alahen | th-plan-itinerary | v-scream
 **8.** *Alahen is fully prepared to fight.*
 
 ::: details Show answer
-`zalahen thumal vavadal.`
+`zalahen thamal vavadal.`
 
 z-Alahen | th-plan-atlas | v-fight
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zalahen thumar vehahel.`
+**1.** `zalahen thamar vehahel.`
 
 ::: details Show answer
 
@@ -143,7 +143,7 @@ z-Alahen | th-plan-sketch | v-sit
 *Alahen intends to sit.*
 :::
 
-**2.** `zazawan thumar dobohol vahahal.`
+**2.** `zazawan thamar dobohul vahahal.`
 
 ::: details Show answer
 
@@ -152,7 +152,7 @@ z-Azawan | th-plan-sketch | d-pawn | v-see
 *Azawan intends to see a pawn.*
 :::
 
-**3.** `zahaben bazawan thumam vezebel.`
+**3.** `zahaben bazawan thamam vezebel.`
 
 ::: details Show answer
 
@@ -161,7 +161,7 @@ z-Ahaben | b-Azawan | th-plan-itinerary | v-tell
 *Ahaben plans to tell Azawan.*
 :::
 
-**4.** `zahaben thumar vehahel.`
+**4.** `zahaben thamar vehahel.`
 
 ::: details Show answer
 
@@ -170,7 +170,7 @@ z-Ahaben | th-plan-sketch | v-sit
 *Ahaben intends to sit.*
 :::
 
-**5.** `zazawan bahaben thumar vezebel.`
+**5.** `zazawan bahaben thamar vezebel.`
 
 ::: details Show answer
 
@@ -179,7 +179,7 @@ z-Azawan | b-Ahaben | th-plan-sketch | v-tell
 *Azawan intends to tell Ahaben.*
 :::
 
-**6.** `zalahen thumam dobohol vahahal.`
+**6.** `zalahen thamam dobohul vahahal.`
 
 ::: details Show answer
 
@@ -188,7 +188,7 @@ z-Alahen | th-plan-itinerary | d-pawn | v-see
 *Alahen plans to see a pawn.*
 :::
 
-**7.** `zahaben thumal vezogel.`
+**7.** `zahaben thamal vezugel.`
 
 ::: details Show answer
 
@@ -197,7 +197,7 @@ z-Ahaben | th-plan-atlas | v-scream
 *Ahaben is fully prepared to scream.*
 :::
 
-**8.** `zazawan thumam vavadal.`
+**8.** `zazawan thamam vavadal.`
 
 ::: details Show answer
 
@@ -224,9 +224,9 @@ To say someone **can** do something you name with one verb (*sing*, *walk*), or 
 >
 > "Azawan can sing."
 
-For English *could* about a skill someone used to have, add [FORMER](knowing.md#former-climate) **`thunem`**: the ability is not today's report.
+For English *could* about a skill someone used to have, add [FORMER](knowing.md#former-climate) **`thenom`**: the ability is not today's report.
 
-> `zazawan vezehexal thunem.`
+> `zazawan vezehexal thenom.`
 >
 > z-Azawan | v-sing-able | th-FORMER
 >
@@ -300,7 +300,7 @@ English *can't* does not say whether this is just for now, not yet, or never. Af
 >
 > "Azawan can never run."
 
-**Compare with:** a [sakes](sakes.md) word joins a **sake** root with **`th`**, not **`x`**: **`tha` / `thu`** is met / unmet sake (`thuduthum` *competence unmet*). **`xa` / `xu`** after a verb or quality is can / can't.
+**Compare with:** a [sakes](sakes.md) word joins a **sake** root with **`th`**, not **`x`**: **`tha` / `thu`** is met / unmet sake (`thulothum` *competence unmet*). **`xa` / `xu`** after a verb or quality is can / can't.
 
 ### When there is no single verb (`eze`) {#ability-fallback}
 
@@ -316,11 +316,11 @@ Sometimes English *can* / *can't* is not about one named verb or quality: the ac
 <a id="decision"></a>
 <a id="decision-mood"></a>
 
-To say that someone has decided to do something, put **`theha`** before the ordinary verb. The ending on **`theha`** tells you whether the decision is irreversible, still changeable, or temporary. You can keep the action the same and change only the ending to show how open the decision remains. (Cue: ✅ A checkmark confirms a choice.)
+To say that someone has decided to do something, put **`thehu`** before the ordinary verb. The ending on **`thehu`** tells you whether the decision is irreversible, still changeable, or temporary. You can keep the action the same and change only the ending to show how open the decision remains. (Cue: ✅ A checkmark confirms a choice.)
 
-Ordinary content is still available (`zehal` *a checkmark*; `vehal` *to check / tick*).
+Ordinary content is still available (`zehul` *a checkmark*; `vehul` *to check / tick*).
 
-> `zalahen theham vezehel.`
+> `zalahen thehum vezehel.`
 >
 > z-Alahen | th-DECISION-modifiable | v-sing
 >
@@ -331,17 +331,17 @@ Ordinary content is still available (`zehal` *a checkmark*; `vehal` *to check / 
 #### Endings — changeability
 <a id="decision-changeability"></a>
 
-On **`eha`**, **-l / -m / -r** match unmet [changeability](sakes.md#sake-changeability): irreversible / modifiable / temporary. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know how locked the pick is, use **-m**.
+On **`ehu`**, **-l / -m / -r** match unmet [changeability](sakes.md#sake-changeability): irreversible / modifiable / temporary. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know how locked the pick is, use **-m**.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thehal`** | **irreversible** | *has decided for good to …* | **-l** hard / locked |
-| **`theham`** | **modifiable** (soft default if unknown) | *has decided to …, and can still change that* | **-m** open to change |
-| **`thehar`** | **temporary** | *has decided for now to …* | **-r** light / this-moment only |
+| **`thehul`** | **irreversible** | *has decided for good to …* | **-l** hard / locked |
+| **`thehum`** | **modifiable** (soft default if unknown) | *has decided to …, and can still change that* | **-m** open to change |
+| **`thehur`** | **temporary** | *has decided for now to …* | **-r** light / this-moment only |
 
 You can stack this mood after [PLAN](#plan-predict) when the clause needs both map grain and pick firmness:
 
-> `zazawan thumam thehal vowogal.`
+> `zazawan thamam thehul vowogal.`
 >
 > z-Azawan | th-plan-itinerary | th-DECISION-irreversible | v-walk
 >
@@ -349,7 +349,7 @@ You can stack this mood after [PLAN](#plan-predict) when the clause needs both m
 
 PLAN and DECISION endings run the same way: **-l** is the most settled, **-m** the default, and **-r** the lightest.
 
-> `zalahen thumar thehar vowogal.`
+> `zalahen thamar thehur vowogal.`
 >
 > z-Alahen | th-plan-sketch | th-DECISION-temporary | v-walk
 >
@@ -358,11 +358,11 @@ PLAN and DECISION endings run the same way: **-l** is the most settled, **-m** t
 ### Try {#try}
 <a id="attempt"></a>
 
-To say that someone is trying to do something, put **`thudo`** before the ordinary verb. The outcome stays open: the sentence says the attempt happens, not whether it works. The ending tells you how committed the attempt is. (Cue: 🧪 A test tube tries a sample to see what happens.)
+To say that someone is trying to do something, put **`thudu`** before the ordinary verb. The outcome stays open: the sentence says the attempt happens, not whether it works. The ending tells you how committed the attempt is. (Cue: 🧪 A test tube tries a sample to see what happens.)
 
-Ordinary content is still available (`zudol` *a test tube*).
+Ordinary content is still available (`zudul` *a test tube*).
 
-> `zazawan thudom varadal.`
+> `zazawan thudum varadal.`
 >
 > z-Azawan | th-ATTEMPT-unstated | v-write
 >
@@ -371,21 +371,21 @@ Ordinary content is still available (`zudol` *a test tube*).
 #### Endings — commitment
 <a id="attempt-commitment"></a>
 
-On **`udo`**, **-l / -m / -r** say how far the attempt will go. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know, use **-m**.
+On **`udu`**, **-l / -m / -r** say how far the attempt will go. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know, use **-m**.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thudol`** | **committed** | *commits to trying …* / *keeps trying to …* until it works or is ruled out | **-l** the full run |
-| **`thudom`** | **unstated** (soft default) | *tries to …* | **-m** middle |
-| **`thudor`** | **trial run** | *tries out …* / *gives … a shot*: a low-stakes probe, and failing is useful to know | **-r** a small sample |
+| **`thudul`** | **committed** | *commits to trying …* / *keeps trying to …* until it works or is ruled out | **-l** the full run |
+| **`thudum`** | **unstated** (soft default) | *tries to …* | **-m** middle |
+| **`thudur`** | **trial run** | *tries out …* / *gives … a shot*: a low-stakes probe, and failing is useful to know | **-r** a small sample |
 
-> `zalahen thudor vezehel.`
+> `zalahen thudur vezehel.`
 >
 > z-Alahen | th-ATTEMPT-trial | v-sing
 >
 > "Alahen gives singing a try."
 
-> `zalahen thudol vowogal.`
+> `zalahen thudul vowogal.`
 >
 > z-Alahen | th-ATTEMPT-committed | v-walk
 >
@@ -398,7 +398,7 @@ A trial run (**-r**) plans for failure: if it fails, that is what the probe was 
 
 For *try A; failing that, B*, join the attempt to the backup with the clause sequence join [**`xon`**](join-across-roles.md#sequence). It goes between the two clauses. The backup comes into play only if the attempt before it fails, and exactly one of them ends up holding.
 
-> `zazawan thudor vowogal xon zazar vezehel.`
+> `zazawan thudur vowogal xon zazar vezehel.`
 >
 > [z-Azawan | th-ATTEMPT-trial | v-walk | x-or-else | z-←Azawan | v-sing]
 >
@@ -406,15 +406,15 @@ For *try A; failing that, B*, join the attempt to the backup with the clause seq
 
 Each clause keeps its own ending, so you can probe the first option and commit to the backup:
 
-> `zazawan thudor vowogal xon zazar thudol vezehel.`
+> `zazawan thudur vowogal xon zazar thudul vezehel.`
 >
 > [z-Azawan | th-ATTEMPT-trial | v-walk | x-or-else | z-←Azawan | th-ATTEMPT-committed | v-sing]
 >
 > "Azawan tries walking; failing that, Azawan commits to trying singing."
 
-A [PLAN](#plan-predict) atlas (**`thumal`**) already includes backups. Chain them with **`xon`** to name them, first choice first:
+A [PLAN](#plan-predict) atlas (**`thamal`**) already includes backups. Chain them with **`xon`** to name them, first choice first:
 
-> `zazawan thumal vowogal xon zazar vezehel xon zazar vezebal.`
+> `zazawan thamal vowogal xon zazar vezehel xon zazar vezebal.`
 >
 > [z-Azawan | th-plan-atlas | v-walk | x-or-else | z-←Azawan | v-sing | x-or-else | z-←Azawan | v-sleep]
 >
@@ -425,9 +425,9 @@ A [PLAN](#plan-predict) atlas (**`thumal`**) already includes backups. Chain the
 ### Want {#want}
 <a id="desire"></a>
 
-To say that someone **wants** to do something, put **`thuhu`** before the ordinary verb. The mood says the wanting is theirs. It does not say the act happens, and it does not say they mean to do it. The ending says how long the wanting lasts. (Cue: 🌠 A shooting star is where you make a wish.)
+To say that someone **wants** to do something, put **`thohu`** before the ordinary verb. The mood says the wanting is theirs. It does not say the act happens, and it does not say they mean to do it. The ending says how long the wanting lasts. (Cue: 🌠 A shooting star is where you make a wish.)
 
-> `zazawan thuhum vowogal.`
+> `zazawan thohum vowogal.`
 >
 > z-Azawan | th-WANT-unstated | v-walk
 >
@@ -435,7 +435,7 @@ To say that someone **wants** to do something, put **`thuhu`** before the ordina
 
 For a wanted person or thing, use the verb that would get it (*see*, *take*) and keep the object in `/d/`.
 
-> `zalahen thuhum vahahal dazawan.`
+> `zalahen thohum vahahal dazawan.`
 >
 > z-Alahen | th-WANT-unstated | v-see | d-Azawan
 >
@@ -443,15 +443,15 @@ For a wanted person or thing, use the verb that would get it (*see*, *take*) and
 
 #### Endings: lastingness {#want-endings}
 
-On **`uhu`**, **-l / -m / -r** say how long the wanting lasts. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know, use **-m**.
+On **`ohu`**, **-l / -m / -r** say how long the wanting lasts. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know, use **-m**.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thuhul`** | a want that keeps coming back | *really wants to …* / *has long wanted to …* | **-l** ≈ locked in (a steady star) |
-| **`thuhum`** | duration unstated (soft default) | *wants to …* | **-m** ≈ open |
-| **`thuhur`** | a want that will pass | *feels like …* / *has a whim to …* | **-r** ≈ right now (a streak) |
+| **`thohul`** | a want that keeps coming back | *really wants to …* / *has long wanted to …* | **-l** ≈ locked in (a steady star) |
+| **`thohum`** | duration unstated (soft default) | *wants to …* | **-m** ≈ open |
+| **`thohur`** | a want that will pass | *feels like …* / *has a whim to …* | **-r** ≈ right now (a streak) |
 
-> `zalahen thuhur vezehel.`
+> `zalahen thohur vezehel.`
 >
 > z-Alahen | th-WANT-passing | v-sing
 >
@@ -459,32 +459,32 @@ On **`uhu`**, **-l / -m / -r** say how long the wanting lasts. **-n** is ordinar
 
 A want, a [plan](#plan-predict), and a [decision](#decision) are three different steps, so they stack in that order:
 
-> `zazawan thuhul thumam vowogal.`
+> `zazawan thohul thamam vowogal.`
 >
 > z-Azawan | th-WANT-lasting | th-plan-itinerary | v-walk
 >
 > "Azawan has long wanted to walk, and plans to."
 
-**Compare with:** [hopefully](sakes.md#speaker-attitude) (`thevegem`) is **your** attitude toward a whole claim; **`thuhum`** is the subject's own wanting. [Motive](sakes.md#sake-preference) says which sake the act serves, not that it is wanted. In [emotion compose](sakes.md#emotion-compose), SEEKING is a feeling turning toward someone for comfort, not a plain want.
+**Compare with:** [hopefully](sakes.md#speaker-attitude) (`thevegem`) is **your** attitude toward a whole claim; **`thohum`** is the subject's own wanting. [Motive](sakes.md#sake-preference) says which sake the act serves, not that it is wanted. In [emotion compose](sakes.md#emotion-compose), SEEKING is a feeling turning toward someone for comfort, not a plain want.
 
 ### Plan or forecast
 <a id="predict-evidentiality"></a>
 
 English *will* can be a plan or a forecast. A plan uses [PLAN](#plan-predict) and needs no warrant. A forecast about the world uses an [evidential](knowing.md#evidentiality) channel plus the later offset **`bral`** ([forecasts](knowing.md#forecast)): the channel says what the forecast rests on.
 
-> `thabem bral verehel.`
+> `thobam bral verehel.`
 >
 > [th-PATTERN | b-later] | v-rain
 >
 > "It will rain (going by the usual pattern)."
 
-> `zalahen thumam thevel bral vehahel.`
+> `zalahen thamam thunel bral vehahel.`
 >
 > z-Alahen | th-plan-itinerary | [th-INFERRED.strong | b-later] | v-sit
 >
 > "Alahen plans to sit, and the clues strongly say it will happen."
 
-**Compare with:** a channel with no offset is a claim about *this stretch* (**`thodum`** if you are observing it now; **`thunom`** if you remember observing it). Add **`bral`** when the claim is about a **later** event, not a guess about what is already so.
+**Compare with:** a channel with no offset is a claim about *this stretch* (**`thodom`** if you are observing it now; **`thevom`** if you remember observing it). Add **`bral`** when the claim is about a **later** event, not a guess about what is already so.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -500,24 +500,24 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
-| **PLAN** (itinerary) | `thumam` | `umam` *plan-itinerary* |
-| **DECISION** (modifiable) | `theham` | `ehal` *check* |
-| *attempt-committed* | `thudol` | `udol` *test-tube* |
-| *attempt-trial* | `thudor` | `udol` *test-tube* |
-| *want-unstated* | `thuhum` | `uhul` *shooting-star* |
-| *want-lasting* | `thuhul` | `uhul` *shooting-star* |
+| **PLAN** (itinerary) | `thamam` | `amam` *plan-itinerary* |
+| **DECISION** (modifiable) | `thehum` | `ehul` *check* |
+| *attempt-committed* | `thudul` | `udul` *test-tube* |
+| *attempt-trial* | `thudur` | `udul` *test-tube* |
+| *want-unstated* | `thohum` | `ohul` *shooting-star* |
+| *want-lasting* | `thohul` | `ohul` *shooting-star* |
 | *sit* | `vehahel` | `ehahel` *chair* |
 | *tell* | `vezebel` | `ezebel` *speech* |
 | *write* | `varadal` | |
 | *sing* | `vezehel` | |
 | *see* | `vahahal` | `ahahal` *eye* |
 | *clipboard* | `egabol` | |
-| *pen* | `ebewul` | |
-| *PATTERN* | `thabem` | `abel` *paw-prints* |
+| *pen* | `ebewel` | |
+| *PATTERN* | `thobam` | `obal` *paw-prints* |
 | *punch* | `vabahel` | |
-| *scream* | `vezogel` | |
+| *scream* | `vezugel` | |
 | *fight* | `vavadal` | |
-| *climb* | `vagawol` | |
+| *climb* | `vagayal` | |
 | *stand* | `vazadol` | |
 | *run* | `varahal` | |
 
@@ -526,7 +526,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 **1.** *Alahen has decided to sit, and can still change that.*
 
 ::: details Show answer
-`zalahen theham vehahel.`
+`zalahen thehum vehahel.`
 
 z-Alahen | th-DECISION-modifiable | v-sit
 :::
@@ -534,7 +534,7 @@ z-Alahen | th-DECISION-modifiable | v-sit
 **2.** *Azawan has decided to tell Ahaben, and can still change that.*
 
 ::: details Show answer
-`zazawan bahaben theham vezebel.`
+`zazawan bahaben thehum vezebel.`
 
 z-Azawan | b-Ahaben | th-DECISION-modifiable | v-tell
 :::
@@ -542,7 +542,7 @@ z-Azawan | b-Ahaben | th-DECISION-modifiable | v-tell
 **3.** *Ahaben has decided for now to write.*
 
 ::: details Show answer
-`zahaben thehar varadal.`
+`zahaben thehur varadal.`
 
 z-Ahaben | th-DECISION-temporary | v-write
 :::
@@ -550,7 +550,7 @@ z-Ahaben | th-DECISION-temporary | v-write
 **4.** *Going by the usual pattern, Alahen will sit.*
 
 ::: details Show answer
-`zalahen thabem bral vehahel.`
+`zalahen thobam bral vehahel.`
 
 z-Alahen | [th-PATTERN | b-later] | v-sit
 :::
@@ -558,7 +558,7 @@ z-Alahen | [th-PATTERN | b-later] | v-sit
 **5.** *Azawan plans to sit, and that choice is final.*
 
 ::: details Show answer
-`zazawan thumam thehal vehahel.`
+`zazawan thamam thehul vehahel.`
 
 z-Azawan | th-plan-itinerary | th-DECISION-irreversible | v-sit
 :::
@@ -566,7 +566,7 @@ z-Azawan | th-plan-itinerary | th-DECISION-irreversible | v-sit
 **6.** *Alahen has decided for now to see a clipboard.*
 
 ::: details Show answer
-`zalahen thehar degabol vahahal.`
+`zalahen thehur degabol vahahal.`
 
 z-Alahen | th-DECISION-temporary | d-clipboard | v-see
 :::
@@ -574,7 +574,7 @@ z-Alahen | th-DECISION-temporary | d-clipboard | v-see
 **7.** *Alahen has decided for good to punch Azawan.*
 
 ::: details Show answer
-`zalahen thehal dazawan vabahel.`
+`zalahen thehul dazawan vabahel.`
 
 z-Alahen | th-DECISION-irreversible | d-Azawan | v-punch
 :::
@@ -582,7 +582,7 @@ z-Alahen | th-DECISION-irreversible | d-Azawan | v-punch
 **8.** *Alahen has decided for good to fight.*
 
 ::: details Show answer
-`zalahen thehal vavadal.`
+`zalahen thehul vavadal.`
 
 z-Alahen | th-DECISION-irreversible | v-fight
 :::
@@ -590,7 +590,7 @@ z-Alahen | th-DECISION-irreversible | v-fight
 **9.** *Azawan can climb.*
 
 ::: details Show answer
-`zazawan vagawoxal.`
+`zazawan vagayaxal.`
 
 z-Azawan | v-climb-able
 :::
@@ -614,7 +614,7 @@ z-Azawan | th-ABIL-unable-temporary
 **12.** *Azawan keeps trying to climb.*
 
 ::: details Show answer
-`zazawan thudol vagawol.`
+`zazawan thudul vagayal.`
 
 z-Azawan | th-ATTEMPT-committed | v-climb
 :::
@@ -622,7 +622,7 @@ z-Azawan | th-ATTEMPT-committed | v-climb
 **13.** *Azawan gives standing a try; failing that, Azawan sits.*
 
 ::: details Show answer
-`zazawan thudor vazadol xon zazawar vehahel.`
+`zazawan thudur vazadol xon zazawar vehahel.`
 
 [z-Azawan | th-ATTEMPT-trial | v-stand | x-or-else | z-←Azawan.full | v-sit]
 :::
@@ -630,7 +630,7 @@ z-Azawan | th-ATTEMPT-committed | v-climb
 **14.** *Alahen wants to see Azawan.*
 
 ::: details Show answer
-`zalahen thuhum vahahal dazawan.`
+`zalahen thohum vahahal dazawan.`
 
 z-Alahen | th-WANT-unstated | v-see | d-Azawan
 :::
@@ -638,14 +638,14 @@ z-Alahen | th-WANT-unstated | v-see | d-Azawan
 **15.** *Azawan has long wanted to sit, and plans to.*
 
 ::: details Show answer
-`zazawan thuhul thumam vehahel.`
+`zazawan thohul thamam vehahel.`
 
 z-Azawan | th-WANT-lasting | th-plan-itinerary | v-sit
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zazawan theham vehahel.`
+**1.** `zazawan thehum vehahel.`
 
 ::: details Show answer
 
@@ -654,7 +654,7 @@ z-Azawan | th-DECISION-modifiable | v-sit
 *Azawan has decided to sit, and can still change that.*
 :::
 
-**2.** `zalahen thehal varadal.`
+**2.** `zalahen thehul varadal.`
 
 ::: details Show answer
 
@@ -663,7 +663,7 @@ z-Alahen | th-DECISION-irreversible | v-write
 *Alahen has decided for good to write.*
 :::
 
-**3.** `thabem bral vezogel.`
+**3.** `thobam bral vezugel.`
 
 ::: details Show answer
 
@@ -672,7 +672,7 @@ z-Alahen | th-DECISION-irreversible | v-write
 *Going by the usual pattern, someone will scream.*
 :::
 
-**4.** `zahaben thehar vehahel.`
+**4.** `zahaben thehur vehahel.`
 
 ::: details Show answer
 
@@ -681,7 +681,7 @@ z-Ahaben | th-DECISION-temporary | v-sit
 *Ahaben has decided for now to sit.*
 :::
 
-**5.** `zazawan thehar debewul vahahal.`
+**5.** `zazawan thehur debewel vahahal.`
 
 ::: details Show answer
 
@@ -690,7 +690,7 @@ z-Azawan | th-DECISION-temporary | d-pen | v-see
 *Azawan has decided for now to see a pen.*
 :::
 
-**6.** `zalahen bahaben thumam thehal vezebel.`
+**6.** `zalahen bahaben thamam thehul vezebel.`
 
 ::: details Show answer
 
@@ -699,7 +699,7 @@ z-Alahen | b-Ahaben | th-plan-itinerary | th-DECISION-irreversible | v-tell
 *Alahen plans to tell Ahaben, and that choice is final.*
 :::
 
-**7.** `zalahen thehar dazawan vabahel.`
+**7.** `zalahen thehur dazawan vabahel.`
 
 ::: details Show answer
 
@@ -708,7 +708,7 @@ z-Alahen | th-DECISION-temporary | d-Azawan | v-punch
 *Alahen has decided for now to punch Azawan.*
 :::
 
-**8.** `zahaben thehal vezogel.`
+**8.** `zahaben thehul vezugel.`
 
 ::: details Show answer
 
@@ -726,7 +726,7 @@ z-Alahen | v-run-unable-irreversible
 *Alahen can never run.*
 :::
 
-**10.** `zazawan vagawol.`
+**10.** `zazawan vagayal.`
 
 ::: details Show answer
 
@@ -745,7 +745,7 @@ z-Alahen | th-ABIL-unable-irreversible
 *Alahen can never do it.* (the whole thing, not one verb)
 :::
 
-**12.** `zalahen thuhur vezehel.`
+**12.** `zalahen thohur vezehel.`
 
 ::: details Show answer
 

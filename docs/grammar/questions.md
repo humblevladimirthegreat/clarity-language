@@ -523,9 +523,9 @@ Answer with the hook and the landmark, as a [citation](word-endings.md#citation-
 
 ### How? {#how}
 
-*How?* works like *where?*: keep the word that says how the answer relates to the event, and put the blank **`bar`** after it. For manner (*in what way?*), use the similative [**`homem`**](relations.md) *like*.
+*How?* works like *where?*: keep the word that says how the answer relates to the event, and put the blank **`bar`** after it. For manner (*in what way?*), use the similative [**`humum`**](relations.md) *like*.
 
-> `yol zazawan vowogal homem bar.`
+> `yol zazawan vowogal humum bar.`
 >
 > y-question | z-Azawan | v-walk | h-like | b-who
 >
@@ -537,13 +537,13 @@ Answer with the hook and the landmark, as a [citation](word-endings.md#citation-
 
 *Why?* uses a [condition word](causation.md) with the blank **`bar`**. Pick the word for the kind of reason you want.
 
-> `yol zazawan vowogal theram bar.`
+> `yol zazawan vowogal thevem bar.`
 >
 > y-question | z-Azawan | v-walk | th-because | b-who
 >
 > "Why does Azawan walk?" (*because of what?*)
 
-> `yol zazawan vowogal hagom bar.`
+> `yol zazawan vowogal hogom bar.`
 >
 > y-question | z-Azawan | v-walk | h-so-that | b-who
 >
@@ -551,9 +551,9 @@ Answer with the hook and the landmark, as a [citation](word-endings.md#citation-
 
 | Agazan | English |
 |--------|---------|
-| **`theram bar`** | *Why?* (*because of what?*) |
-| **`hagom bar`** | *What for?* (*for what purpose?*) |
-| **`thodom bar`** | *Under what condition?* / *In what case?* |
+| **`thevem bar`** | *Why?* (*because of what?*) |
+| **`hogom bar`** | *What for?* (*for what purpose?*) |
+| **`thoyem bar`** | *Under what condition?* / *In what case?* |
 
 ### Yes/no with single-item / standalone
 <a id="yes-no-single-item-standalone"></a>
@@ -621,7 +621,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *phone* | `ovavol` | |
 | *sit* | `vehahel` | `ehahel` *chair* |
 | *tell* | `vezebel` | `ezebel` *speech* |
-| *attest* | `vodul` | |
+| *attest* | `vodol` | |
 | *lie* | `valahal` | |
 | *sleep* | `ezebal` | |
 
@@ -694,7 +694,7 @@ y-question | z-Alahen | v-sleep | h-when
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `yael vodul vul.`
+**1.** `yael vodol vul.`
 
 ::: details Show answer
 

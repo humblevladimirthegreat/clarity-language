@@ -10,7 +10,7 @@ Recipes for English *as for*, *whose*, *different from*, official titles, and po
 
 English *as for X* or *regarding X* names who or what the sentence is about, even when X is not the subject or object. In Agazan, put **`hahehom`** *topic* in `/h/` and X in a hosted `/b/` right after it: `hahehom bazawan` is *as for Azawan*. The rest of the sentence keeps its free order. (cue: #️⃣ *hash*: a hashtag marks what the post is about.)
 
-> `hahehom bazawan zalahen dagadal vahahal.`
+> `hahehom bazawan zalahen dagadul vahahal.`
 >
 > [h-topic | b-Azawan] | z-Alahen | d-cat | v-see
 >
@@ -23,7 +23,7 @@ English *as for X* or *regarding X* names who or what the sentence is about, eve
 
 Beginner already used two sentences for English *who / that / which*. Prefer [resume **-r**](pronouns.md#resume-r) in the second sentence.
 
-> `zagadul vehahel. zazawan bagar vezebel.`
+> `zagavol vehahel. zazawan bagar vezebel.`
 >
 > z-guard | v-sit . z-Azawan | b-←guard | v-tell
 >
@@ -37,7 +37,7 @@ Beginner already used two sentences for English *who / that / which*. Prefer [re
 
 A place, tool, or *of*-relation on the noun is still an extra-noun [hook](hooks.md#extra-noun) or hosted `/ɡ/` + `/b/` (*the guard [in](hooks.md#extra-noun) a bank*, *a book written [with a hammer](hooks.md#extra-noun)*). A one-place role as a **kind** (*sitting guard*, *teacher*, *a sleep-place*) is a [role compound](roles.md#role-compounds) on `/ɡ/` with a non-resume ending, the same pattern as *is a teacher*. Resume **-r** on that compound is **this instance** (*the one teaching*), not the occupation.
 
-> `zazawan dagadul gaxehahel vahahal.`
+> `zazawan dagavol gaxehahel vahahal.`
 >
 > z-Azawan | [d-guard | g-agent-x-chair] | v-see
 >
@@ -45,7 +45,7 @@ A place, tool, or *of*-relation on the noun is still an extra-noun [hook](hooks.
 
 For English *whose*, resume the person after the [whose hook **`em`**](hooks.md#genitive) in the second sentence. Use **`gegabem`** instead when the point is that the guard legally owns it.
 
-> `zagadul vehahel. zodogal em bagar varahal.`
+> `zagavol vehahel. zodogal em bagar varahal.`
 >
 > z-guard | v-sit . [z-dog | [used-by | b-←guard]] | v-run
 >
@@ -67,7 +67,7 @@ English uses the same *who* clause for two jobs. When it picks out **which** one
 
 When English stacks possessives, keep one **`em`** and list every owner in its `/b/`, closed by the sequence join **`boel`**. Put the **nearest** owner first: the first `/b/` uses the host, and each later `/b/` keeps the one before it.
 
-> `zabol em bodogal bazawan boel.`
+> `zobol em bodogal bazawan boel.`
 >
 > [z-bone | [used-by | [b-dog | b-Azawan | b-in-order]]]
 >
@@ -91,9 +91,9 @@ English *the day when* / *the place where* is two sentences. Name the time or pl
 
 **Needs:** [Similative](relations.md#similative) · [Negation `u`](joins.md#negation-u)
 
-For *unlike* / *different from*, use the [similative](relations.md#similative) **`gomem`** with the model in `/b/`, then close it with a negating join **`gul`**. The match to the model is denied.
+For *unlike* / *different from*, use the [similative](relations.md#similative) **`gumum`** with the model in `/b/`, then close it with a negating join **`gul`**. The match to the model is denied.
 
-> `zazawan gomem balahen gul.`
+> `zazawan gumum balahen gul.`
 >
 > z-Azawan | [[g-like | b-Alahen] | g-not]
 >
@@ -129,7 +129,7 @@ English *'s* on an act (*Azawan's walk*, *the monkey's tricks*) names who did it
 
 When the thing only comes **from** B (*the sound of the drums*), use origin **`gagum`** + `/b/` instead.
 
-> `zalahen dadehal gagum badavolx vemal.`
+> `zalahen dadehal gagum badavolx vewal.`
 >
 > z-Alahen | [d-audio | [g-origin | b-drum-x]] | v-hear
 >
@@ -182,27 +182,27 @@ English names a person by what they do (*a singer*, *a manager*). Agazan builds 
 | `zaxubugalahahal` | *reader* | `ubugalahahal` *read* |
 | `zaxagahalanabal` | *driver* | `agahalanabal` *drive* |
 | `zaxumuyulezebel` | *poet* | `umuyulezebel` *poetry* |
-| `zaxamolezul` | *investor* | `amolezul` *investment* |
+| `zaxamoluzel` | *investor* | `amoluzel` *investment* |
 | `zaxamolameval` | *employee* | `amolameval` *employment* |
 | `zuexamolameval` | *employer* (the one who bears the cost) | `amolameval` *employment* |
-| `zaxohal` | *participant* | `ohal` *handshake* |
-| `zaxagawul` | *leader* / *chairman* / *president* | `agawul` *crown* |
-| `zaxamul` | *director* | `amul` *compass* |
+| `zaxahal` | *participant* | `ahal` *handshake* |
+| `zaxagayel` | *leader* / *chairman* / *president* | `agayel` *crown* |
+| `zaxamel` | *director* | `amel` *compass* |
 | `zaxadedel` | *manager* / *executive* / *operator* | `adedel` *administrate* |
-| `zaxalodel` | *adviser* / *consultant* | `alodel` *lantern* |
-| `zaxabal` | *voter* | `abal` *ballot* |
-| `zaxahahol` | *critic* | `ahahol` *judge* |
+| `zaxaludel` | *adviser* / *consultant* | `aludel` *lantern* |
+| `zaxahul` | *voter* | `ahul` *ballot* |
+| `zaxahahul` | *critic* | `ahahul` *judge* |
 | `zaxameval` | *maker* / *producer* / *manufacturer* | `ameval` *manufacture* |
 | `zaxunuzel` | *reporter* / *journalist* | `unuzel` *newspaper* |
 | `zaxaradal` | *writer* | `aradal` *write* |
 | `zaxabohal` | *analyst* | `abohal` *bar-chart* |
 | `zaxageval` | *designer* | `ageval` *craft* |
-| `zaxaguzal` | *engineer* | `aguzal` *construct* |
-| `zaxehol` | *doctor* | `ehol` *pill* |
+| `zaxagozal` | *engineer* | `agozal` *construct* |
+| `zaxeyul` | *doctor* | `eyul` *pill* |
 | `zaxezehel` | *singer* | `ezehel` *sing* |
 | `zaxumuyul` | *musician* | `umuyul` *sheet-music* |
-| `zaxovel` | *actor* | `ovel` *theater* |
-| `zaxebogal` | *player* | `ebogal` *playground* |
+| `zaxavol` | *actor* | `avol` *theater* |
+| `zaxebegal` | *player* | `ebegal` *playground* |
 | `zaxozobol` | *athlete* | `ozobol` *sport* |
 | `zaxowobol` | *competitor* | `owobol` *water-polo* |
 | `zaxevegol` | *winner* | `evegol` *victory* |
@@ -210,30 +210,30 @@ English names a person by what they do (*a singer*, *a manager*). Agazan builds 
 | `zaxalaval` | *lover* | `alaval` *love* |
 | `zaxebedel` | *servant* / *server* / *assistant* | `ebedel` *plate* |
 | `zaxazewel` | *worker* | `azewel` *sweat* |
-| `zaxogel` | *dealer* | `ogel` *currency-exchange* |
+| `zaxehel` | *dealer* | `ehel` *currency-exchange* |
 | `zaxemagel` | *immigrant* | `emagel` *immigration* |
-| `zaxemal` | *audience* (those who hear) | `emal` *ear* |
+| `zaxewal` | *audience* (those who hear) | `ewal` *ear* |
 | `zaxogehel` | *terrorist* | `ogehel` *ogre* |
 | `zaxehebam` | *tourist* | `ehebal` *ship* |
-| `zaxahazam` | *neighbor* (add `om bamegun` for *near me*) | `ahazal` *house* |
-| `zaxabazal` | *officer* (police) | `abazal` *police* |
-| `zaxagugam` | *official* / *minister* | `agugam` *institution* |
-| `zaxenel` | *secretary* (keeps the ledger) | `enel` *ledger* |
+| `zaxahazam` | *neighbor* (add `om bamagon` for *near me*) | `ahazal` *house* |
+| `zaxabazel` | *officer* (police) | `abazel` *police* |
+| `zaxagedum` | *official* / *minister* | `agedum` *institution* |
+| `zaxuhul` | *secretary* (keeps the ledger) | `uhul` *ledger* |
 | `zaxebudam` | *artist* | `ebudam` *artistry* |
 | `zaxegabem` | *owner* | `egabem` *ownership* |
-| `zaxazol` | *historian* | `azol` *scroll* |
-| `zaxagagum` | *consumer* | `agagum` *consumption* |
+| `zaxozel` | *historian* | `ozel` *scroll* |
+| `zaxagegam` | *consumer* | `agegam` *consumption* |
 | `zaxabazul` | *passenger* / *rider* (of a bus) | `abazul` *bus* |
 | `zaxazewelx` | *staff* / *personnel* (workers as a set) | `azewel` *sweat* |
-| `zuxabal` | *candidate* (the one voted for) | `abal` *ballot* |
-| `zoxogel` | *customer* / *buyer* (the other party of a trade) | `ogel` *currency-exchange* |
+| `zuxahul` | *candidate* (the one voted for) | `ahul` *ballot* |
+| `zoxehel` | *customer* / *purchaser* (the other party of a trade) | `ehel` *currency-exchange* |
 | `zoxebebum` | *host* (the other party of a hospitality tie) | `ebebum` *hospitality* |
 
-The one acted on uses **`u`** instead: `zuxenehel` is *a victim* (the one harmed). A plural audience or staff takes plural **-x** (`zaxemalx`).
+The one acted on uses **`u`** instead: `zuxenehel` is *a victim* (the one harmed). A plural audience or staff takes plural **-x** (`zaxewalx`).
 
-*Shareholder* is *owner* of a part: `zaxegabem gabom bahazal` (owner of a part of the house). *Colleague* is a worker tied to you: `zaxazewel gohoham bamegun`. *Relative* is a person who is part of the family: `zebezal gabom bavahal`.
+*Shareholder* is *owner* of a part: `zaxegabem gobom bahazal` (owner of a part of the house). *Colleague* is a worker tied to you: `zaxazewel gohoham bamagon`. *Relative* is a person who is part of the family: `zebezal gobom bavahal`.
 
-**Compare with:** for *boss* or *chief*, the tie form names whom they lead: `zalahen gagawum bazawan` is *Alahen is Azawan's boss* ([social relations](relations.md#social-relations)).
+**Compare with:** for *boss* or *chief*, the tie form names whom they lead: `zalahen gagayem bazawan` is *Alahen is Azawan's boss* ([social relations](relations.md#social-relations)).
 
 ### Kin words {#kin-words}
 
@@ -261,15 +261,15 @@ For *uncle* and *grandfather*, use `gemehel` for `geveval`.
 
 **Needs:** [Exchange](relations.md#exchange)
 
-English *buy* and *sell* are two views of one swap. Agazan has one trading verb, `vogem`, and **`hogem`** names what is given in return. Put what changes hands in `/d/` and what it is swapped for in `/b/`. Money in `/d/` and the goods in `/b/` is *buy*; the goods in `/d/` and money in `/b/` is *sell*.
+English *buy* and *sell* are two views of one swap. Agazan has one trading verb, `vehem`, and **`hehem`** names what is given in return. Put what changes hands in `/d/` and what it is swapped for in `/b/`. Money in `/d/` and the goods in `/b/` is *buy*; the goods in `/d/` and money in `/b/` is *sell*.
 
-> `zazawan damol hogem bubugal vogem.`
+> `zazawan damol hehem bubugal vehem.`
 >
 > z-Azawan | d-money | [h-in-exchange-for | b-book] | v-convertibility
 >
 > "Azawan buys a book."
 
-> `zazawan dubugal hogem bamol vogem.`
+> `zazawan dubugal hehem bamol vehem.`
 >
 > z-Azawan | d-book | [h-in-exchange-for | b-money] | v-convertibility
 >
@@ -281,30 +281,30 @@ English *buy* and *sell* are two views of one swap. Agazan has one trading verb,
 
 **Needs:** [The extra `/b/` party (`o`)](roles.md#role-compounds) · [Extra noun (`el`, `em`)](hooks.md#extra-noun) · [Exchange](relations.md#exchange) · [Coordinated lists](joins.md#respectively) · [Fault](causation.md#fault)
 
-English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several views of one handing-over. Agazan keeps the giving verb `vurol` (*present*) and moves the view by where you put people. The thing sits in `/d/`, and the one who gets it sits in unhosted `/b/` after the verb ([recipient](clause.md#extra-nouns)). To name the parties from the verb itself, use the [role compounds](roles.md#role-compounds): **`zaxurol`** is the giver (*supplier*, *provider*) and **`zoxurol`** is the recipient (*receiver*). **-r** (`zoxuror`) is *this* recipient of the latest giving. *Lend* and *borrow* work the same way on `vagavol` (*credit*, with the *lend* sense): the borrower is the recipient.
+English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several views of one handing-over. Agazan keeps the giving verb `vebel` (*present*) and moves the view by where you put people. The thing sits in `/d/`, and the one who gets it sits in unhosted `/b/` after the verb ([recipient](clause.md#extra-nouns)). To name the parties from the verb itself, use the [role compounds](roles.md#role-compounds): **`zaxebel`** is the giver (*supplier*, *provider*) and **`zoxebel`** is the recipient (*receiver*). **-r** (`zoxeber`) is *this* recipient of the latest giving. *Lend* and *borrow* work the same way on `vagawel` (*credit*, with the *lend* sense): the borrower is the recipient.
 
 | English | Agazan | Reading |
 |---------|--------|---------|
-| *give* / *provide* / *contribute* | `zazawan dubugal vurol balahen.` | the book goes to Alahen |
+| *give* / *provide* / *contribute* | `zazawan dubugal vebel balahen.` | the book goes to Alahen |
 | *get* / *receive* / *acquire* (a thing handed over) | the same sentence | the receiver is the `/b/` |
-| *giver* / *supplier* / *provider* | `zaxurol` | doer of the giving |
-| *receiver* | `zoxurol` | the one given to |
-| *lend* / *borrow* | `zazawan dubugal vagavol balahen.` | the book is lent to Alahen |
-| *borrower* | `zoxagavol` | the one lent to |
-| *distribute* | `zazawan dubugal vurol balahen bahaben bal.` | the book goes to each of them |
-| *earn* | `zazawan varadal hogem bamol.` | write in exchange for money |
+| *giver* / *supplier* / *provider* | `zaxebel` | doer of the giving |
+| *receiver* | `zoxebel` | the one given to |
+| *lend* / *borrow* | `zazawan dubugal vagawel balahen.` | the book is lent to Alahen |
+| *borrower* | `zoxagawel` | the one lent to |
+| *distribute* | `zazawan dubugal vebel balahen bahaben bal.` | the book goes to each of them |
+| *earn* | `zazawan varadal hehem bamol.` | write in exchange for money |
 | *owe* | `zazawan gamom balahen.` | in debt to Alahen |
 | *get* (go after something) | `zazawan vowogal el bubugal.` | walk for the book |
-| *contribute money* | `zazawan damol vurol el bavahal.` | give money for a family's sake |
+| *contribute money* | `zazawan damol vebel el bavahal.` | give money for a family's sake |
 | *contribute to* (be part of the cause) | `…therar barl …` | one share among several causes |
 
-> `zazawan dubugal vurol balahen.`
+> `zazawan dubugal vebel balahen.`
 >
 > z-Azawan | d-book | v-present | b-Alahen
 >
 > "Azawan gives Alahen a book." — Alahen gets it
 
-> `zazawan varadal hogem bamol.`
+> `zazawan varadal hehem bamol.`
 >
 > z-Azawan | v-write | [h-in-exchange-for | b-money]
 >
@@ -316,7 +316,7 @@ English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several vie
 >
 > "Azawan owes Alahen."
 
-> `zazawan dubugal vurol balahen bahaben bal.`
+> `zazawan dubugal vebel balahen bahaben bal.`
 >
 > z-Azawan | d-book | v-present | [b-Alahen | b-Ahaben | b-and]
 >
@@ -335,23 +335,23 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 | *join* / *associate with* (come along) | `zazawan vowogal han balahen.` | walks in company with Alahen |
 | *join* / *admit* (take into a set) | `zazawan dagubem vaon.` | admits the object; more may follow |
 | *belong to* | `zubugal em balahen.` | in Alahen's use |
-| *consist of* / *made of* | `zahazal guwam buwal.` | material |
-| *comprise* / *constitute* / *is part of* | `zahavel gabom bahazal.` | a piece of the whole |
-| *match* / *correspond to* / *fit* (alike) | `zahazal homem bodogal.` | like, as a simile |
-| *replace* / *substitute* | `zazawan dubugal hogem bahavel vogem.` | swaps one for the other |
+| *consist of* / *made of* | `zahazal guwum buwul.` | material |
+| *comprise* / *constitute* / *is part of* | `zahavol gobom bahazal.` | a piece of the whole |
+| *match* / *correspond to* / *fit* (alike) | `zahazal humum bodogal.` | like, as a simile |
+| *replace* / *substitute* | `zazawan dubugal hehem bahavol vehem.` | swaps one for the other |
 | *represent* (act for) | `zazawan hadem balahen vezebel.` | tells on behalf of Alahen |
 | *prefer* | `zazawan dubugal ven.` | ranks the object first |
-| *lack* / *miss* (a need) | `zazawan vebom.` | needs |
-| *fill* / *complete* | `zazawan dubugal vahadum.` | makes complete |
+| *lack* / *miss* (a need) | `zazawan volum.` | needs |
+| *fill* / *complete* | `zazawan dubugal vahahom.` | makes complete |
 | *recognize* / *acknowledge* | `zazawan dalahen vewevam.` | acknowledges Alahen |
 | *distinguish* / *classify* | `zazawan dalahen valebam.` | sorts Alahen by kind |
 | *cope* / *survive* | `zazawan vagogom.` | is resilient |
 | *enable* | `zalahen vowogaxal thegem bazawan.` | Alahen can walk, Azawan makes that happen |
 | *assist* / *help* (as a servant) | `zazawan vebedel dalahen.` | serves Alahen |
-| *consult* | `zazawan vezebelegul dalahen.` | talks with the expert |
+| *consult* | `zazawan vezebelolal dalahen.` | talks with the expert |
 | *shoot* | `zazawan vezogul.` | uses the squirt-gun root |
 | *involve* / *include* (among others) | `zazawan vowogal am balahen.` | walks, Alahen among those involved |
-| *apply* / *use* (a tool) | `zazawan vowogal ael bahavel.` | walks using the hammer |
+| *apply* / *use* (a tool) | `zazawan vowogal ael bahavol.` | walks using the hammer |
 | *agree with* | `zazawan dalahen vanadel.` | nods to Alahen |
 | *disagree with* | `zazawan dalahen vanadel vul.` | does not nod to Alahen |
 
@@ -377,16 +377,16 @@ English makes nouns for a part, a kind, a role, and a manner. Agazan has no sepa
 
 | English | Agazan | Reading |
 |---------|--------|---------|
-| *piece* / *fragment* / *feature* | `zahavel gabom bahazal.` | a part of the whole |
+| *piece* / *fragment* / *feature* | `zahavol gobom bahazal.` | a part of the whole |
 | *cluster* / *bunch* | the kind with **-x**: `zodogalx` | a set here ([group words](say-amounts.md#group-words)) |
 | *species* / *kind* | `zalebam` | classification |
 | *gender* / *sex* (the category) | `zevevam zemehem zam.` | the open pair female, male |
 | *sex* (the act) | `zelebum` | sexuality |
-| *patient* (being treated) | `zuxehewel` | the one who undergoes healing |
+| *patient* (being treated) | `zuxehewol` | the one who undergoes healing |
 | *scene* (where it happens) | `zexowogal` | the scene of the walk |
-| *function* (purpose) | `zubugal guduthom.` | the book's purpose is competence |
-| *size* (how big) | `zubugal zahavel zael gelavam.` | same size as the hammer |
-| *way* / *method* / *style* / *mode* | the manner adverb on `/h/` | `zazawan vowogal hadehom.` |
+| *function* (purpose) | `zubugal gulothom.` | the book's purpose is competence |
+| *size* (how big) | `zubugal zahavol zael gelavam.` | same size as the hammer |
+| *way* / *method* / *style* / *mode* | the manner adverb on `/h/` | `zazawan vowogal hadehum.` |
 | *instance* / *for example* | `aol …` opens the sentence | one case of what you said |
 | *everybody* | `zual` | every member |
 | *absence* | `zazadol gul` | not present |
@@ -401,7 +401,7 @@ English makes nouns for a part, a kind, a role, and a manner. Agazan has no sepa
 >
 > "Gender."
 
-> `zazawan vowogal hadehom.`
+> `zazawan vowogal hadehum.`
 >
 > z-Azawan | v-walk | h-haste
 >
@@ -417,88 +417,88 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 
 | English | Agazan | Reading |
 |---------|--------|---------|
-| *case* (*in that case*) | `thodom barl` | if |
-| *case* (lawsuit) | `zahaholehegol` | a problem put before a judge |
+| *case* (*in that case*) | `thoyem barl` | if |
+| *case* (lawsuit) | `zahahulehegol` | a problem put before a judge |
 | *case* (container) | `zabegol` | a package |
-| *deal* / *bargain* (a swap) | `zazawan dubugal hogem bamol vogem.` | trades a book for money |
-| *deal* (*a great deal*) | `zahen zel gral` | more than the usual amount |
-| *bid* / *offer* (a price) | `zazawan damol vurol hogem bubugal.` | offers money in exchange for the book |
-| *contract* (agreement) | `thuxegal` on the clause | CONSENT, binding |
-| *figure out* / *find out* | `zazawan dubugal vamegal.` | finds the object |
+| *deal* / *bargain* (a swap) | `zazawan dubugal hehem bamol vehem.` | trades a book for money |
+| *deal* (*a great deal*) | `zehon zel gral` | more than the usual amount |
+| *bid* / *offer* (a price) | `zazawan damol vebel hehem bubugal.` | offers money in exchange for the book |
+| *contract* (agreement) | `thuxegol` on the clause | CONSENT, binding |
+| *figure out* / *find out* | `zazawan dubugal vamagal.` | finds the object |
 | *figure* (shape) | `zevevol` | a frame |
 | *object* (a thing) | `zar` | an unnamed thing |
-| *object* (a goal) | `zagol` | a goal |
+| *object* (a goal) | `zogol` | a goal |
 | *object* (grammatical) | `/d/` | done to ([role letters](clause.md#role-letters)) |
 | *board* (committee) | `zahodol` | a team |
-| *board* (plank) | `zuwal` | wood |
+| *board* (plank) | `zuwul` | wood |
 | *series* / *round* (a cycle) | `zeredum` | cycle |
-| *operation* (an activity) | `zozegem` | activity |
-| *operation* (arithmetic) | `zabogum` | calculation |
-| *application* (use) | hook `ael` + tool | `zazawan vowogal ael bahavel.` |
+| *operation* (an activity) | `zuzegem` | activity |
+| *operation* (arithmetic) | `zabugam` | calculation |
+| *application* (use) | hook `ael` + tool | `zazawan vowogal ael bahavol.` |
 | *application* (software) | `zabegol` | a package |
-| *campaign* | `zazawan vavadam hehum bavodel.` | struggles during a period |
-| *behavior* | `zozegem` | the activity, or a manner adverb |
+| *campaign* | `zazawan vavadam huwem bavodel.` | struggles during a period |
+| *behavior* | `zuzegem` | the activity, or a manner adverb |
 | *population* | `zebezalx gagum bagul` | people of the country |
 | *reference* (point back) | `d[=]` | the same span again |
-| *principle* | `zemehom` | a policy |
+| *principle* | `zumem` | a policy |
 | *furniture* | `zehahel zebedal zam` | chair, bed, and maybe more |
-| *emotion* / *feeling* (in general) | `zahulohahal` | the water of the heart |
-| *emotional* | `gahulohahal` | of the heart's water |
-| *verb* | `zezebelozegel` | the word for an action |
+| *emotion* / *feeling* (in general) | `zaholohahal` | the water of the heart |
+| *emotional* | `gaholohahal` | of the heart's water |
+| *verb* | `zezebeluzegel` | the word for an action |
 | *noun* | `zezebelanedal` | the word that names a thing |
-| *density* | `zehobalagodel` | bulk packed into an extent |
+| *density* | `zehobalegodel` | bulk packed into an extent |
 | *afternoon* | `zazazaladazol` | the late part of the day |
 | *popular* | `galavalehobal` | loved by the many |
 | *user* | `zaxahadal` | doer with the hand |
 | *abortion* | `zebegologovel` | a pregnancy ended |
-| *available* | `goxuroxal` | can be the recipient of a gift |
-| *independent* | `gebom geram balahen gul` | does not depend on Alahen |
-| *straight* (direct) | `gamum` | direction |
+| *available* | `goxebexal` | can be the recipient of a gift |
+| *independent* | `golum gevem balahen gul` | does not depend on Alahen |
+| *straight* (direct) | `gamem` | direction |
 | *hang* | `zazawan dalahen vageladahel.` | holds Alahen from above |
-| *editor* | `zaxebeyulerabel` | doer of the editing |
-| *closely* | `zazawan vahahal hazedom hul.` | looks, not at a distance |
+| *editor* | `zaxebeyolarebel` | doer of the editing |
+| *closely* | `zazawan vahahal hazedam hul.` | looks, not at a distance |
 | *briefly* | `zazawan vowogal bazadem gram.` | walks for about five seconds |
 | *wherever* | `ol bual gahazal` | everywhere houses are |
 | *alone* (without company) | `zazawan vowogal huan bur.` | walks without any other |
 | *single* (unmarried) | `zazawan gewedem gul.` | not in union |
 | *income* / *revenue* | `zamolenabal` | money incoming |
-| *definition* / *meaning* | `zezebelovol` | the meaning |
-| *mood* | `zahulohahal` | the heart's water |
+| *definition* / *meaning* | `zezebelovul` | the meaning |
+| *mood* | `zaholohahal` | the heart's water |
 | *apply* (put on, as lotion) | `zazawan dazawan volohel.` | tends to self |
 | *attribute* / *characterize* | `zazawan dalahen valebam.` | sorts Alahen by kind |
 | *various* / *diverse* | `gerebom` | diversity |
-| *regular* | `gerebem` | repeating |
+| *regular* | `gedum` | repeating |
 | *suffer* | `zazawan vagahum.` | feels anguish |
 | *reality* / *fact* | `zenevem` | the fact |
 | *real* / *actual* | `genevem` | factual |
 | *variation* / *distinction* | the [different-from](#different) sentence | says how they differ |
 | *tendency* | `huam` on the verb | usually, as a rule |
 | *cent* | `zadahul g-100` | a hundredth of a dollar |
-| *middle* / *central* | `zahul gabom borodal` | the heart of the road |
-| *international* | `zahazal gozam bagul bagul bal` | between two countries |
-| *dependent on* | `zazawan gebom geram balahen.` | depends on Alahen |
+| *middle* / *central* | `zahol gobom borodal` | the heart of the road |
+| *international* | `zahazal gazam bagul bagul bal` | between two countries |
+| *dependent on* | `zazawan golum gevem balahen.` | depends on Alahen |
 | *favorite* | `zalavalogodal` | the one loved first |
-| *count* / *total up* | `zazawan vabogum.` | calculates |
-| *qualify* | `zazawan vegum.` | is expert enough |
-| *criticize* | `zazawan dalahen vahahom.` | judges Alahen |
+| *count* / *total up* | `zazawan vabugam.` | calculates |
+| *qualify* | `zazawan volam.` | is expert enough |
+| *criticize* | `zazawan dalahen vahahum.` | judges Alahen |
 | *ride* (a bus) | `zazawan vabazul.` | rides the bus |
-| *environment* / *surroundings* | `zahazamolol` | the world seen as the home around you |
+| *environment* / *surroundings* | `zahazamogel` | the world seen as the home around you |
 | *efficiency* | `zavagemazewel` | output for the effort |
 | *holder* (a thing that holds) | `zahadalahabal` | what holds in the hand |
 | *holder* (a person who bears) | `zaxahabal` | doer of the bearing |
-| *intervention* | `zazawan vuvudel hozam balahen bahaben bal.` | comes between the two |
+| *intervention* | `zazawan vuvudel hazam balahen bahaben bal.` | comes between the two |
 | *reduce* | `zazawan dubugal v-3.` | decreases the object by three |
-| *reduce* (cut down) | `zazawan dubugal vagezol.` | cuts it |
+| *reduce* (cut down) | `zazawan dubugal vagezul.` | cuts it |
 | *rough* (approximate) | `gram` | about five |
-| *rough* (texture) | `gabogol gul` | not smooth |
+| *rough* (texture) | `gabogul gul` | not smooth |
 
-> `zazawan damol vurol hogem bubugal.`
+> `zazawan damol vebel hehem bubugal.`
 >
 > z-Azawan | d-money | v-present | [h-in-exchange-for | b-book]
 >
 > "Azawan bids money for the book."
 
-> `zazawan dubugal vagezol.`
+> `zazawan dubugal vagezul.`
 >
 > z-Azawan | d-book | v-axe
 >
@@ -512,24 +512,24 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 
 | English | Agazan | Reading |
 |---------|--------|---------|
-| *contribution* / *acquisition* (the act) | `zurol` | a giving, seen as a whole |
-| *contribution* (what is given) / *acquisition* (what is got) | `zuxurol` | the thing the giving happens to |
-| *that contribution* / *that acquisition* | `duror` / `duxuror` | the latest giving, or what it passed on |
-| *contribution* (a share in a cause) | `therar barl` | one share among several causes |
+| *contribution* / *acquisition* (the act) | `zebel` | a giving, seen as a whole |
+| *contribution* (what is given) / *acquisition* (what is got) | `zuxebel` | the thing the giving happens to |
+| *that contribution* / *that acquisition* | `deber` / `duxeber` | the latest giving, or what it passed on |
+| *contribution* (a share in a cause) | `thever barl` | one share among several causes |
 | *representation* (acting for someone) | `zazawan gadem balahen` | Azawan, on behalf of Alahen |
 | *reaction* / *response* | `zegehum` | the answer to what unlocked it |
 | *react to* | `zazawan derehel vegehum.` | answers the rain |
-| *murder* (a wrongful killing) | `zalahen vazagal theral barl zazawan vezogul.` | a death, and the fault is Azawan's shooting |
-| *comparison* / *contrast* (setting two against each other) | `zazem` | contrast |
-| *compare A with B* | `zazawan dalahen vazem bahaben.` | sets Alahen against Ahaben |
+| *murder* (a wrongful killing) | `zalahen vazagal thevel barl zazawan vezogul.` | a death, and the fault is Azawan's shooting |
+| *comparison* / *contrast* (setting two against each other) | `zezom` | contrast |
+| *compare A with B* | `zazawan dalahen vezom bahaben.` | sets Alahen against Ahaben |
 | *preference* (the one preferred) | `zalavalogodal` | the one loved first |
 | *tendency* (a pattern) | `zalahathel` | a lying that repeats |
 | *tends to* | `zazawan valahathel.` | lies, as a pattern |
 | *introduction* (the act) | `zalahen velehal dazawan thegem bahaben.` | Alahen learns Azawan, Ahaben makes it happen |
-| *introduction* (opening of a text) | `zogodal gabom bubugal` | the first part of a book |
+| *introduction* (opening of a text) | `zogodal gobom bubugal` | the first part of a book |
 | *unemployment* | `zazawan zamolameval gul.` | not in paid production |
 
-> `zalahen dubugal vurol bazawan. zazawan duror vahahal.`
+> `zalahen dubugal vebel bazawan. zazawan deber vahahal.`
 >
 > z-Alahen | d-book | v-present | b-Azawan . z-Azawan | d-←present | v-see
 >
@@ -541,19 +541,19 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 >
 > "Azawan reacts to the rain."
 
-> `zalahen vazagal theral barl zazawan vezogul.`
+> `zalahen vazagal thevel barl zazawan vezogul.`
 >
 > z-Alahen | v-skull | [th-because.fault | b-that-clause] | z-Azawan | v-squirt-gun
 >
 > "Azawan murdered Alahen."
 
-> `zazawan dalahen vazem bahaben.`
+> `zazawan dalahen vezom bahaben.`
 >
 > z-Azawan | d-Alahen | v-contrast | b-Ahaben
 >
 > "Azawan compares Alahen with Ahaben."
 
-**Compare with:** a ranking (*Azawan is more challenging than Alahen*) is the [rank join](comparatives.md#comparatives), not **`vazem`**, which only sets two things side by side. *Acquisition* as a company buying another is [buy](#buy-sell). *Preference* as a general taste is a [sake](sakes.md#sake-preference); **`zalavalogodal`** names the one chosen. *Tendency* is the [pattern label](predication.md#label-scope) (`the`) on the root, so *tends to lie* and *a tendency to lie* differ only in the word's slot.
+**Compare with:** a ranking (*Azawan is more challenging than Alahen*) is the [rank join](comparatives.md#comparatives), not **`vezom`**, which only sets two things side by side. *Acquisition* as a company buying another is [buy](#buy-sell). *Preference* as a general taste is a [sake](sakes.md#sake-preference); **`zalavalogodal`** names the one chosen. *Tendency* is the [pattern label](predication.md#label-scope) (`the`) on the root, so *tends to lie* and *a tendency to lie* differ only in the word's slot.
 
 ### Fair, keep, public, ride, admit and other leftover senses {#leftover-senses}
 
@@ -565,24 +565,24 @@ Some English words have a second or third sense that a published root already ca
 |---------|--------|---------|
 | *just* / *fair* (even-handed) | `zazawan gelabam.` | fair |
 | *last* (final) | `zazawan gogovem.` | final |
-| *apply* / *application* (a request) | `zazawan dubugal vebeyam.` | pleads for the object |
-| *keep* / *retain* (an object) | `zazawan dubugal verum.` | preserves the book |
-| *experience* (skill) | `zudum` | readiness |
+| *apply* / *application* (a request) | `zazawan dubugal vebewom.` | pleads for the object |
+| *keep* / *retain* (an object) | `zazawan dubugal verem.` | preserves the book |
+| *experience* (skill) | `zulom` | readiness |
 | *side* (position, location) | `zehahem` | a position |
 | *address* (a location) | `zehahem` | where it is |
 | *public* (open to everyone) | `zahazal gaon bual.` | a house open to all |
 | *character* (a trait) | `zevebem` | identity, personality |
 | *special* (dear to one person) | `zazawan galavam.` | cherished |
-| *fit* (healthy) | `zazawan gelam.` | in health |
-| *fit* (suits) | `gudutham` | a met need ([sake words](say-reasons.md#sake-words)) |
-| *match* (a contest) | `zazedem` | a contest |
+| *fit* (healthy) | `zazawan gorum.` | in health |
+| *fit* (suits) | `gulotham` | a met need ([sake words](say-reasons.md#sake-words)) |
+| *match* (a contest) | `zezadem` | a contest |
 | *ride* (a horse, a bike) | `zazawan vehebam ael bohozal.` | travels using the horse |
 | *admit* (acknowledge a fault) | `zazawan dahabal vewevam.` | acknowledges the harm |
-| *directly* (without a go-between) | `gamum` | straight |
-| *set off* / *start* | `vebeham` | [starts](say-reasons.md#phase-verbs) |
+| *directly* (without a go-between) | `gamem` | straight |
+| *set off* / *start* | `vabedom` | [starts](say-reasons.md#phase-verbs) |
 | *turn off* / *stop* | `vazadal` | [stops](say-reasons.md#phase-verbs) |
 
-> `zazawan dubugal verum.`
+> `zazawan dubugal verem.`
 >
 > z-Azawan | d-book | v-preservation
 >
@@ -600,7 +600,7 @@ Some English words have a second or third sense that a published root already ca
 
 **Needs:** [Unspecified member](joins.md#unspecified-member-r-phrase) · [Similative](relations.md#similative) · [Different from](#different)
 
-English *another dog* and *the other one* name something outside the ones already in play. Put **`zur`** (*something else*) after the kind: `zodogal zur` is *another dog*. Resemblance is the similative: `gomem` + `/b/` is *similar to*, and `homem` is *similarly*. Denying it with **`gul`** (or **`hul`** on an adverb) gives *different* and *differently*.
+English *another dog* and *the other one* name something outside the ones already in play. Put **`zur`** (*something else*) after the kind: `zodogal zur` is *another dog*. Resemblance is the similative: `gumum` + `/b/` is *similar to*, and `humum` is *similarly*. Denying it with **`gul`** (or **`hul`** on an adverb) gives *different* and *differently*.
 
 > `zazawan vahahal dodogal dur.`
 >
@@ -610,11 +610,11 @@ English *another dog* and *the other one* name something outside the ones alread
 
 | English | Agazan |
 |---------|--------|
-| *similar* (*similar to Alahen*) | `gomem balahen` |
-| *similarly* (*walks like Alahen*) | `homem balahen` |
-| *different* (*different from Alahen*) | `gomem balahen gul` |
-| *differently* | `homem balahen hul` |
-| *differ* (*Azawan and Alahen differ*) | `zazawan zalahen zal gomem gul` |
+| *similar* (*similar to Alahen*) | `gumum balahen` |
+| *similarly* (*walks like Alahen*) | `humum balahen` |
+| *different* (*different from Alahen*) | `gumum balahen gul` |
+| *differently* | `humum balahen hul` |
+| *differ* (*Azawan and Alahen differ*) | `zazawan zalahen zal gumum gul` |
 
 For *how much* they differ, use a [measured differential](say-amounts.md#measured-differentials).
 
@@ -624,7 +624,7 @@ For *how much* they differ, use a [measured differential](say-amounts.md#measure
 
 **Needs:** [Resume](pronouns.md#resume-r)
 
-English *himself*, *herself*, *itself* and *themself* say the object is the same one as the subject. Put the subject's resume (**-r**) in `/d/`. Agazan does not mark sex or number in the resume, so one form covers all of them. With plural **-x** on the subject and the resume it is *themselves*, and with the inclusive *we* (`zohan`) it is *ourselves*.
+English *himself*, *herself*, *itself* and *themself* say the object is the same one as the subject. Put the subject's resume (**-r**) in `/d/`. Agazan does not mark sex or number in the resume, so one form covers all of them. With plural **-x** on the subject and the resume it is *themselves*, and with the inclusive *we* (`zahan`) it is *ourselves*.
 
 > `zazawan vahahal dazar.`
 >
@@ -638,13 +638,13 @@ English *himself*, *herself*, *itself* and *themself* say the object is the same
 >
 > "The dogs see themselves."
 
-> `zohan vahahal dohar.`
+> `zahan vewal dahar.`
 >
-> z-interlocutors | v-see | d-←interlocutors
+> z-interlocutors | v-hear | d-←interlocutors
 >
-> "We see ourselves."
+> "We hear ourselves."
 
-**Compare with:** for *each other*, join the people and put `hewum` after the verb ([pronouns](pronouns.md#resume-r)).
+**Compare with:** for *each other*, join the people and put `hedam` after the verb ([pronouns](pronouns.md#resume-r)).
 
 ### Cross-role inventory {#cross-role-inventory}
 
@@ -692,7 +692,7 @@ Examples:
 
 > `zeredel welavam gelavam. zemegul werer gelavam.`
 >
-> z-radio | [w-very | g-big] . z-studio-mic | [w-←radio | g-big]
+> z-radio | [w-very | g-big] . z-studio-mic | [w-RECORDED.weak | g-big]
 >
 > "A radio is very big. A studio mic is that big too."
 
@@ -708,7 +708,7 @@ Examples:
 >
 > "Azawan mutes. Hey, Azawan!"
 
-> `zazawan vamuyul. zalahen vabahel. xazar vezogel.`
+> `zazawan vamuyul. zalahen vabahel. xazar vezugel.`
 >
 > z-Azawan | v-mute . z-Alahen | v-punch . x-←Azawan | v-scream
 >
@@ -764,7 +764,7 @@ Examples:
 >
 > "Azawan mutes. Azawan did that?!"
 
-> `zazawan vamuyul. zalahen vabahel. xamur zahaben vezogel.`
+> `zazawan vamuyul. zalahen vabahel. xamur zahaben vezugel.`
 >
 > z-Azawan | v-mute . z-Alahen | v-punch . x-←mute | z-Ahaben | v-scream
 >
@@ -784,7 +784,7 @@ Examples:
 
 Examples:
 
-> `zeredel geredal. zerer vezogel.`
+> `zeredel geredal. zerer vezugel.`
 >
 > z-radio | g-red . z-←red | v-scream
 >
@@ -804,7 +804,7 @@ Examples:
 
 > `zeredel welavam geredal. zemegul werer gelavam.`
 >
-> z-radio | [w-very | g-red] . z-studio-mic | [w-←red | g-big]
+> z-radio | [w-very | g-red] . z-studio-mic | [w-RECORDED.weak | g-big]
 >
 > "A radio is very red. A studio mic is big to that degree."
 
@@ -820,7 +820,7 @@ Examples:
 >
 > "A radio is red. It was that?!"
 
-> `zeredel geredal. zalahen vabahel. xerer zazawan vezogel.`
+> `zeredel geredal. zalahen vabahel. xerer zazawan vezugel.`
 >
 > z-radio | g-red . z-Alahen | v-punch . x-←red | z-Azawan | v-scream
 >
@@ -869,7 +869,7 @@ Examples:
 >
 > "A radio is very red. In that manner?!"
 
-> `zeredel welavam geredal. zalahen vabahel. xelar zazawan vezogel.`
+> `zeredel welavam geredal. zalahen vabahel. xelar zazawan vezugel.`
 >
 > z-radio | [w-very | g-red] . z-Alahen | v-punch . x-←very | z-Azawan | v-scream
 >
@@ -889,43 +889,43 @@ Examples:
 
 Examples:
 
-> `zalahen homem bazawan vamuyul. zahaben domer vahahal.`
+> `zalahen humum bazawan vamuyul. zahaben dumur vahahal.`
 >
 > z-Alahen | [h-like | b-Azawan] | v-mute . z-Ahaben | d-←like | v-see
 >
 > "Alahen mutes like Azawan. Ahaben sees that manner."
 
-> `zalahen homem bazawan vamuyul. zahaben vomer.`
+> `zalahen humum bazawan vamuyul. zahaben vumur.`
 >
 > z-Alahen | [h-like | b-Azawan] | v-mute . z-Ahaben | v-←like
 >
 > "Alahen mutes like Azawan. Ahaben does it that way."
 
-> `zalahen homem bazawan vamuyul. zemegul gomer.`
+> `zalahen humum bazawan vamuyul. zemegul gumur.`
 >
 > z-Alahen | [h-like | b-Azawan] | v-mute . z-studio-mic | g-←like
 >
 > "Alahen mutes like Azawan. A studio mic is that way."
 
-> `zalahen homem bazawan vamuyul. zeredel womer gelavam.`
+> `zalahen humum bazawan vamuyul. zeredel wumur gelavam.`
 >
 > z-Alahen | [h-like | b-Azawan] | v-mute . z-radio | [w-←like | g-big]
 >
 > "Alahen mutes like Azawan. A radio is big in that way."
 
-> `zalahen homem bazawan vamuyul. zahaben homer veredem.`
+> `zalahen humum bazawan vamuyul. zahaben humur veredem.`
 >
 > z-Alahen | [h-like | b-Azawan] | v-mute . z-Ahaben | h-←like | v-broadcast
 >
 > "Alahen mutes like Azawan. Ahaben broadcasts that way."
 
-> `zalahen homem bazawan vamuyul. yomer.`
+> `zalahen humum bazawan vamuyul. yumur.`
 >
 > z-Alahen | [h-like | b-Azawan] | v-mute . y-←like
 >
 > "Alahen mutes like Azawan. Like that?!"
 
-> `zalahen homem bazawan vamuyul. zazawan vabahel. xomer zahaben vezogel.`
+> `zalahen humum bazawan vamuyul. zazawan vabahel. xumur zahaben vezugel.`
 >
 > z-Alahen | [h-like | b-Azawan] | v-mute . z-Azawan | v-punch . x-←like | z-Ahaben | v-scream
 >
@@ -947,13 +947,13 @@ Examples:
 >
 > "Azawan! Azawan!"
 
-> `zazawan vamuyul. zalahen vabahel. xazar vezogel.`
+> `zazawan vamuyul. zalahen vabahel. xazar vezugel.`
 >
 > z-Azawan | v-mute . z-Alahen | v-punch . x-←Azawan | v-scream
 >
 > "Azawan mutes. Alahen punches. Going back to Azawan, Azawan screams."
 
-> `yalahen. zalar vezogel.`
+> `yalahen. zalar vezugel.`
 >
 > y-Alahen . z-←Alahen | v-scream
 >
@@ -965,9 +965,9 @@ Examples:
 
 **Needs:** [Arrow rose](roles.md#arrow-rose) · [Sentence linkers](dependents.md#sentence-linkers)
 
-When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root **bare** (no **`th`** + facing person). Generic heading is **`amu`** (*direction*). Facing-relative ahead / back still uses **`DIR th ANCHOR`**.
+When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root **bare** (no **`th`** + facing person). Generic heading is **`ame`** (*direction*). Facing-relative ahead / back still uses **`DIR th ANCHOR`**.
 
-> `zazawan vowogal. xezadam zalahen varahal.`
+> `zazawan vowogal. xodum zalahen varahal.`
 >
 > z-Azawan | v-walk . x-therefore | z-Alahen | v-run
 >
@@ -975,12 +975,12 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 
 | Agazan | Use | English |
 |--------|-----|---------|
-| **`ezadam`** (bare) | talk moves on | *progress*; discourse **`xezadam`** *therefore* |
+| **`odum`** (bare) | talk moves on | *progress*; discourse **`xodum`** *therefore* |
 | **`ewezam`** (bare) | talk comes back | *return* |
 | **`azawem`** (bare) | talk pulls back | *retreat* |
-| **`amul`** | heading in general | *compass* / *direction* |
+| **`amel`** | heading in general | *compass* / *direction* |
 
-**For *therefore*, use:** the [linker](dependents.md#sentence-linkers) **`xezadam`**. Body *left* / *right* still needs **`DIR th ANCHOR`**.
+**For *therefore*, use:** the [linker](dependents.md#sentence-linkers) **`xodum`**. Body *left* / *right* still needs **`DIR th ANCHOR`**.
 
 ### Literal content (fence words / fence marks)
 <a id="literal-content"></a>
@@ -1076,7 +1076,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *red* | `eredal` | | |
 | *big* | `elavam` | `elaval` *elephant* | 🐘: the huge animal |
 | *punch* | `vabahel` | | |
-| *scream* | `vezogel` | | |
+| *scream* | `vezugel` | | |
 
 #### English → Agazan {#people-pointing-back-english-to-agazan}
 
@@ -1107,7 +1107,7 @@ z-Azawan | v-broadcast . z-Alahen | h-←broadcast | v-mute
 **4.** *A radio is red. The red one screams.*
 
 ::: details Show answer
-`zeredel geredal. zerer vezogel.`
+`zeredel geredal. zerer vezugel.`
 
 z-radio | g-red . z-←red | v-scream
 :::
@@ -1149,7 +1149,7 @@ z-Azawan | d-studio-mic | v-mute . z-Alahen | v-←studio-mic
 *Azawan mutes a studio mic. Alahen does the same to it.*
 :::
 
-**4.** `zeredel gelavam. zelar vezogel.`
+**4.** `zeredel gelavam. zelar vezugel.`
 
 ::: details Show answer
 
@@ -1218,27 +1218,27 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Ahaben* | `ahaben` | |
-| *Ezuden* (office handle) | `ezuden` | |
-| *diagnosis-hospital* (office full title) | `ezudexahazen` | |
+| *Ezoden* (office handle) | `ezoden` | |
+| *diagnosis-hospital* (office full title) | `ezodexahazon` | |
 | *see* | `vahahal` | `ahahal` *eye* |
 
 #### English → Agazan {#people-handles-english-to-agazan}
 
-**1.** *Ezuden sees Ahaben.* (office handle, first mention)
+**1.** *Ezoden sees Ahaben.* (office handle, first mention)
 
 ::: details Show answer
-`zezuden vahahal dahaben.`
+`zezoden vahahal dahaben.`
 
-z-Ezuden | v-see | d-Ahaben
+z-Ezoden | v-see | d-Ahaben
 :::
 
 #### Agazan → English {#people-handles-agazan-to-english}
 
-**1.** `zezudexahazen vahahal dazawan.`
+**1.** `zezodexahazon vahahal dazawan.`
 
 ::: details Show answer
 
-z-Ezude-x-Ahazen | v-see | d-Azawan
+z-Ezode-x-Ahazon | v-see | d-Azawan
 *Diagnosis-Hospital sees Azawan.* (that office’s full title)
 :::
 

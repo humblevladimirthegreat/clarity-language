@@ -59,9 +59,9 @@ describe("construction registry", () => {
       ["zodogal gelavam.", "reading.existence"],
       ["zodogal om babagul.", "reading.existence"],
       ["yol.", "reading.bareQuestion"],
-      ["zazawan vowogal thovom.", "overlay.ovom.th"],
+      ["zazawan vowogal thovum.", "overlay.ovum.th"],
       // A sake or ability word uses the sake / hostless-ability row of its host.
-      ["zazawan vowogal thonathem.", "overlay.onam.th"],
+      ["zazawan vowogal thanathem.", "overlay.anam.th"],
       ["zazawan thezexel.", "overlay.ezem.th"],
       // Per-form features of families taught across sections.
       ["zazawan zalahen zal vowogal.", "join.a"],
@@ -76,17 +76,17 @@ describe("construction registry", () => {
   });
 
   it("reads a used-by noun, a join of names, or every + kind with /ɡ/ as a property, not existence", () => {
-    for (const input of ["zagadal gabagol em bamegun.", "zodogar gelavam."]) {
+    for (const input of ["zagadul gabagol em bamagon.", "zodogar gelavam."]) {
       const ids = parse(input, undefined, { constructions: true }).constructions ?? [];
       assert.ok(!ids.includes("reading.existence"), `${input} → ${ids.join(" ")}`);
     }
-    for (const input of ["zual gohahaxowodel gozodal.", "zuam gagadal gozodal."]) {
+    for (const input of ["zual gohahaxowodel gozodel.", "zuam gagadul gozodel."]) {
       const every = parse(input, undefined, { constructions: true }).constructions ?? [];
       assert.ok(!every.includes("reading.existence"), `${input} → ${every.join(" ")}`);
     }
     const both = parse("zazawan zalahen zal gamadam.", undefined, { constructions: true }).constructions ?? [];
     assert.ok(!both.includes("reading.existence"), both.join(" "));
-    const ids = parse("zagadal em bamegun.", undefined, { constructions: true }).constructions ?? [];
+    const ids = parse("zagadul em bamagon.", undefined, { constructions: true }).constructions ?? [];
     assert.ok(ids.includes("reading.existence"), ids.join(" "));
   });
 

@@ -37,11 +37,11 @@ The `/x/` forms are clause joins; **-n** under `/v/`, `/ɡ/`, and `/h/` makes jo
 | **oe** | `voel` / `xoel` / `thoel` | `voem` / `xoem` / `thoem` | — |
 | **ue** | `vuel` / `xuel` / `thuel` | `vuem` / `xuem` / `thuem` | — |
 
-Each verb-phrase item is a verb plus its own object material, and an item runs up to and including its verb: words before a verb belong to that verb. In `vowogal hadehom varahal val`, *hastily* is on *run*, not *walk*. When every item is a bare verb, a `/d/` immediately after the join is SHARED over all verbs: `vahahal valul vam dalul` → *sees and tempts an apple*.
+Each verb-phrase item is a verb plus its own object material, and an item runs up to and including its verb: words before a verb belong to that verb. In `vowogal hadehum varahal val`, *hastily* is on *run*, not *walk*. When every item is a bare verb, a `/d/` immediately after the join is SHARED over all verbs: `vahahal valul vam dalul` → *sees and tempts an apple*.
 
 An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, covers every item. `/h/` inside an item covers that verb phrase only.
 
-> `zazawan dababol vugugel vehahel hegozem bavahel val.`
+> `zazawan dababol vugugel vehahel hugem bavahel val.`
 >
 > z-Azawan | d-popcorn | v-cooking | v-sit | [h-around | b-fire] | v-none
 >
@@ -92,13 +92,13 @@ A clause join with no clause before it is the standalone reading, like `zal` *no
 
 When English would deny or weigh **how you stand** toward a claim (*not because…*, *either I saw it or I was told*), close the [stance](clause.md#stance-th) words with a `/th/` join. The claim itself is untouched; the join works only on the stance words before it. (cue: same vowels as every other join.)
 
-> `zazawan vowogal theram berehel thul.`
+> `zazawan vowogal thevem berehel thul.`
 >
 > z-Azawan | v-walk | [th-because | b-rain] | th-not
 >
 > "Azawan walks, but not because of the rain."
 
-> `zazawan vowogal thunom themam thol.`
+> `zazawan vowogal thevom thewam thol.`
 >
 > z-Azawan | v-walk | th-WITNESSED | th-TOLD | th-or-exactly-one
 >
@@ -187,20 +187,20 @@ These are ordinary content verbs. Point back at a join-act you already used with
 | **`von`** | lock the object as the sole pick | *chooses (as the one choice)* | **o** ≈ one (single pick) | `zazawan dedehel von` |
 | **`vaon`** | admit the object; more may follow | *picks (more picks may follow)* | **ao** ≈ add + one (open pick) | `zazawan dagubem vaon` |
 | **`vun`** | reject the object | *denies / refuses* | **u** ≈ undo (take that member back) | `zazawan dalahal vun` |
-| **`vuan`** | leave the object out of the set | *excludes* | **ua** ≈ undo + add (cut that member) | `zazawan debeyel vuan` |
+| **`vuan`** | leave the object out of the set | *excludes* | **ua** ≈ undo + add (cut that member) | `zazawan debeyal vuan` |
 | **`vuon`** | bar that one; the rest stay free | *bars (anything but)* | **uo** ≈ undo + one (forbid that pick) | `zazawan dagavel vuon` |
 | **`ven`** | rank the object first | *prioritizes* | **e** ≈ order (put this first) | `zazawan dabogal ven` |
 | **`vaen`** | put the objects at the same rank | *equates / ties* | **ae** ≈ add + order (same height) | `zazawan dalahen dahaben dal vaen` |
-| **`voen`** | put the object first in order | *starts with* | **oe** ≈ one + order (begin here) | `zazawan derevom voen` |
+| **`voen`** | put the object first in order | *starts with* | **oe** ≈ one + order (begin here) | `zazawan derevum voen` |
 | **`vuen`** | rank the object lower | *deprioritizes* | **ue** ≈ undo + order (drop this rank) | `zazawan dagubem vuen` |
 
-English *refuse* vs *leave out*: `zazawan demedol vun` (*Azawan refuses meat*) vs `zazawan demedol vuan` (*Azawan excludes meat*). One locked choice vs an open pick: `zazawan debeyel von` vs `zazawan debeyel vaon`. Rank vs sequence: `zazawan derevom ven` (*prioritizes the workaround*: first by importance) vs `zazawan derevom voen` (*starts with the workaround*: first in order).
+English *refuse* vs *leave out*: `zazawan demedol vun` (*Azawan refuses meat*) vs `zazawan demedol vuan` (*Azawan excludes meat*). One locked choice vs an open pick: `zazawan debeyal von` vs `zazawan debeyal vaon`. Rank vs sequence: `zazawan derevum ven` (*prioritizes the workaround*: first by importance) vs `zazawan derevum voen` (*starts with the workaround*: first in order).
 
 ### Join-relations {#join-relations}
 
 When a noun or event is *framed* toward something (*cake with peanuts*, *walk without meat*, *work prioritizing the bug*), write the frame as an adjective or adverb: first letter **`g`** or **`h`**, the same join vowel as [join-act verbs](#join-act-verbs), and ending **-n** (`gan` / `han`, …), plus one `/b/` argument. Keep that pair together (`gan` + `/b/` on a noun; `han` + `/b/` as one adverb). You can now attach *including* / *without* / *prioritizing* to a host without building a new list. On these words too, **-n** is join content toward `/b/`. Put ordinary noun **-x** on the argument when the group is associative.
 
-> `zebeval gan bebeyel.`
+> `zebeval gan bebeyal.`
 >
 > z-birthday | [g-including | b-peanut]
 >
@@ -214,24 +214,24 @@ Content *including* needs that `/b/` (`gan b…`). A stock label uses a [mention
 
 **For *including* as an afterthought, use:** a [hook](hooks.md) (`al`, …). `zahodom gan bazawan` is *a team including Azawan*; `zahodom al zazawan` is *the team, including Azawan*.
 
-For several members or an empty domain, put a [phrase join](joins.md) **inside** the `/b/` phrase (`gan bebeyel bagubem bal`), or use a [standalone](joins.md#standalone-phrase) `/b/` join as the only argument (`gan bar` = *including something*; `guan bal` = *excluding nothing* / stripped frame).
+For several members or an empty domain, put a [phrase join](joins.md) **inside** the `/b/` phrase (`gan bebeyal bagubem bal`), or use a [standalone](joins.md#standalone-phrase) `/b/` join as the only argument (`gan bar` = *including something*; `guan bal` = *excluding nothing* / stripped frame).
 
 | Agazan | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
-| **`gan` / `han`** | `/ɡ/` noun or `/h/` event toward `/b/` | *including / with* | **a** ≈ add (hold the extra member) | `zebeval gan bebeyel`; `zazawan han balahen vowogal` |
+| **`gan` / `han`** | `/ɡ/` noun or `/h/` event toward `/b/` | *including / with* | **a** ≈ add (hold the extra member) | `zebeval gan bebeyal`; `zazawan han balahen vowogal` |
 | **`gon` / `hon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *exclusive for* (sole pick); `/h/` *exclusively for / as the one* | **o** ≈ one (lock that pick) | `zahodom gon bazawan`; `… hon bazawan vowogal` |
-| **`gaon` / `haon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to* (more may follow); `/h/` *among options* | **ao** ≈ add + one (admit, still open) | `zebeval gaon bebeyel`; `… haon bebeyel vowogal` |
-| **`gun` / `hun`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *against / anti-*; `/h/` *refusing* | **u** ≈ undo (reject that member) | `zebeval gun bebeyel`; `… hun bemedol vowogal` |
-| **`guan` / `huan`** | `/ɡ/` or `/h/` toward `/b/` | *without / excluding* | **ua** ≈ undo + add (leave that member out) | `zebeval guan bebeyel`; `… huan bebeyel vowogal` |
-| **`guon` / `huon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to anything but*; `/h/` *barring / anything but* | **uo** ≈ undo + one (bar that one; rest free) | `zowodel guon bebeyel`; `… huon bebeyel vowogal` |
-| **`gen` / `hen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *prioritizing / headed by*; `/h/` *prioritizing* | **e** ≈ order (put this first) | `zehegol gen babogal`; `… hen babogal verevom` |
+| **`gaon` / `haon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to* (more may follow); `/h/` *among options* | **ao** ≈ add + one (admit, still open) | `zebeval gaon bebeyal`; `… haon bebeyal vowogal` |
+| **`gun` / `hun`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *against / anti-*; `/h/` *refusing* | **u** ≈ undo (reject that member) | `zebeval gun bebeyal`; `… hun bemedol vowogal` |
+| **`guan` / `huan`** | `/ɡ/` or `/h/` toward `/b/` | *without / excluding* | **ua** ≈ undo + add (leave that member out) | `zebeval guan bebeyal`; `… huan bebeyal vowogal` |
+| **`guon` / `huon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to anything but*; `/h/` *barring / anything but* | **uo** ≈ undo + one (bar that one; rest free) | `zowodel guon bebeyal`; `… huon bebeyal vowogal` |
+| **`gen` / `hen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *prioritizing / headed by*; `/h/` *prioritizing* | **e** ≈ order (put this first) | `zehegol gen babogal`; `… hen babogal verevum` |
 | **`gaen` / `haen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *on a par with*; `/h/` *equating / tying* | **ae** ≈ add + order (same height) | `zedehel gaen bagavel`; `… haen balahen vowogal` |
-| **`goen` / `hoen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *starting with*; `/h/` *starting with* | **oe** ≈ one + order (begin here) | `zehegol goen berevom`; `… hoen berevom vowogal` |
+| **`goen` / `hoen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *starting with*; `/h/` *starting with* | **oe** ≈ one + order (begin here) | `zehegol goen berevum`; `… hoen berevum vowogal` |
 | **`guen` / `huen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *deprioritizing / trailing*; `/h/` *deprioritizing* | **ue** ≈ undo + order (drop this rank) | `zebeval guen bagubem`; `… huen bagubem vowogal` |
 
-*Anti-* vs *without*: `gun bemedol` vs `guan bemedol`. *Without X* vs *anything but X*: `guan bebeyel` vs `guon bebeyel`. Sole pick vs among options: `gon bazawan` vs `gaon bazawan`. Workaround as top priority vs workaround as first step: `gen berevom` vs `goen berevom`.
+*Anti-* vs *without*: `gun bemedol` vs `guan bemedol`. *Without X* vs *anything but X*: `guan bebeyal` vs `guon bebeyal`. Sole pick vs among options: `gon bazawan` vs `gaon bazawan`. Workaround as top priority vs workaround as first step: `gen berevum` vs `goen berevum`.
 
-**Compare with:** *a house like Azawan’s* / *walks like a duck* is resemblance ([simile](relations.md#similative) `gomem` / `homem`), not **`gaen` / `haen`** *on a par with* / *equating*.
+**Compare with:** *a house like Azawan’s* / *walks like a duck* is resemblance ([simile](relations.md#similative) `gumum` / `humum`), not **`gaen` / `haen`** *on a par with* / *equating*.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -253,7 +253,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *medal* | `amedal` | |
 | *run* | `varahal` | |
 | *punch* | `vabahel` | |
-| *scream* | `vezogel` | |
+| *scream* | `vezugel` | |
 | *lie* | `alahal` | |
 
 #### English → Agazan {#intermediate-english-to-agazan}
@@ -293,7 +293,7 @@ z-Alahen | [h-including | b-Ahaben] | v-run
 **5.** *Azawan punches, then Alahen screams.*
 
 ::: details Show answer
-`zazawan vabahel xan zalahen vezogel.`
+`zazawan vabahel xan zalahen vezugel.`
 
 [z-Azawan | v-punch | x-and-then | z-Alahen | v-scream]
 :::
@@ -387,7 +387,7 @@ z-teamwork | [g-open-to | b-Azawan]
 *A team open to Azawan (more members may follow).*
 :::
 
-**8.** `zalahen huon bahaben vezogel.`
+**8.** `zalahen huon bahaben vezugel.`
 
 ::: details Show answer
 

@@ -67,27 +67,27 @@ Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/plurality.html#ver
 
 When we're unsure about something, we often just keep turning it over in our heads - *maybe he's mad at me, maybe he isn't* - which feels like figuring it out but never actually checks. Agazan makes you say whether you're going to find out.
 
-A possibility is marked with the stance word `ovo` (*may*), and its ending says what you're doing about it:
+A possibility is marked with the stance word `ovu` (*may*), and its ending says what you're doing about it:
 
-* `thovom` - *may* (just a possibility, the default)
-* `thovol` - *may - I'll find out* / *let's find out*
-* `thovor` - *may - who knows* (you're not checking, or can't)
+* `thovum` - *may* (just a possibility, the default)
+* `thovul` - *may - I'll find out* / *let's find out*
+* `thovur` - *may - who knows* (you're not checking, or can't)
 
 None of these is the "right" one. Letting something go with *who knows* is fine. The point is that you notice which one you're doing, so a worry you're never going to check gets called what it is.
 
-> `zalahen thovom vadebal dahaben.`
+> `zalahen thovum vedabal dahaben.`
 >
 > z-Alahen | th-may | v-leave | d-Ahaben
 >
 > "Alahen may be leaving Ahaben."
 
-> `zalahen thovol vabahel dazawan.`
+> `zalahen thovul vabahel dazawan.`
 >
 > z-Alahen | th-may-find-out | v-punch | d-Azawan
 >
 > "Alahen may be punching Azawan - I'll find out."
 
-> `zahaben thovor vagahul.`
+> `zahaben thovur vagahul.`
 >
 > z-Ahaben | th-may-who-knows | v-cry
 >
@@ -133,7 +133,7 @@ If two recent words would share the same short start, you copy the whole earlier
 
 If there are two of the same word, you use an adjective to differentiate them:
 
-> `zodogal gubuhal vowogal. zodogal geredal varahal. zodor gubuhal vehahel.`
+> `zodogal gubuhel vowogal. zodogal geredal varahal. zodor gubuhel vehahel.`
 
 > z-dog | g-blue | v-walk | z-dog | g-red | v-run | z←dog | g-blue | v-sit
 

@@ -86,7 +86,7 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Stand-in **`-rl` / `-rm`** | [dependent clauses](dependents.md#dependent-clauses) | word-final coda `rl` / `rm` |
 | Backward stand-in **`-rth`** | [pointing back](dependents.md#stand-in-back) | word-final coda `rth`; the only word-final `th` |
 
-A syllable ends with a consonant only at the **end of the word**. In a fused extra-noun [hook compound](hooks.md#hook-compounds), the cited **-l** / **-m** starts the hook's syllable, because the hook begins with a vowel. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zubuhal`: prefix `z`, root `ubuha`, ending `-l`). Spelling has one pronunciation path. Writing does not mark stress. Musical rhythm may still place emphasis.
+A syllable ends with a consonant only at the **end of the word**. In a fused extra-noun [hook compound](hooks.md#hook-compounds), the cited **-l** / **-m** starts the hook's syllable, because the hook begins with a vowel. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zubuhel`: prefix `z`, root `ubuhe`, ending `-l`). Spelling has one pronunciation path. Writing does not mark stress. Musical rhythm may still place emphasis.
 
 **Related form:** word-initial `x` is the [continue](dependents.md#continue-x) prefix (discourse), not a compound seam.
 
@@ -94,13 +94,13 @@ A syllable ends with a consonant only at the **end of the word**. In a fused ext
 
 When English says *how many* or *which place*, Agazan writes a [number word](numbers.md). After the role letter, the spoken marker begins with `r`, which makes a cluster ordinary content never uses: a role letter directly followed by `r`. That cluster is how you hear “this is a number.” Content roots start with a vowel, so an `r` that starts a syllable right after a role letter is the number marker (`ra` / `ru` / `re` / `ro`; counting from the end uses written `#-`, spelled and spoken **rue** before the digits). Two vowels in a row stay two separate syllables.
 
-> `zagadalx grarel.`
+> `zagadulx grarel.`
 >
 > z-cat-x | g-three
 >
 > "Three cats."
 
-`grarel` is `g` + `ra` + digit `re` + `-l`. Each written comma is spoken as a [group separator](numbers.md#group-separator), **`th`** plus the marker’s vowel. Inside a content root, `r` still appears only after a vowel (`ebade`).
+`grarel` is `g` + `ra` + digit `re` + `-l`. Each written comma is spoken as a [group separator](numbers.md#group-separator), **`th`** plus the marker’s vowel. Inside a content root, `r` still appears only after a vowel (`egeve`).
 
 **Compare with:** ordinary endings on content words use [word ending](word-endings.md) senses. Number words reuse those same four letters with [number-specific endings](word-endings.md#number-word-exception).
 
@@ -131,7 +131,7 @@ When you **spell a word aloud** or **name a letter**, say the Agazan name for it
 | `x` | `xe` | *shed* |
 
 ```text
-`agada` → `a` `ga` `a` `da` `a`
+`agadu` → `a` `ga` `a` `da` `a`
 ```
 
 In a clause, package the glyph as a [mention](spans.md) (`d{z}`: interior spoken `ze`).

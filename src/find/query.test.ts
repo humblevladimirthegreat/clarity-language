@@ -39,7 +39,7 @@ describe("parseTerm", () => {
 });
 
 describe("regex conditions", () => {
-  const { words } = sentence("zazawan vowogal al bahedem om bamegun.");
+  const { words } = sentence("zazawan vowogal al bahedem om bamagon.");
   const raws = (term: string) => words.filter((w) => matchesTerm(w, parseTerm(term))).map((w) => w.word.raw);
 
   it("match the whole value", () => {
@@ -54,22 +54,22 @@ describe("regex conditions", () => {
     assert.deepEqual(raws("role=b,raw!=.*n"), ["bahedem"]);
   });
   it("match roots inside mid-word x compounds", () => {
-    const [word] = sentence("zebeyexabedel.").words;
-    assert.ok(matchesTerm(word!, parseTerm("root=abede")));
-    assert.ok(matchesTerm(word!, parseTerm("family=compound,root=ebeye")));
+    const [word] = sentence("zebeyaxabodel.").words;
+    assert.ok(matchesTerm(word!, parseTerm("root=abode")));
+    assert.ok(matchesTerm(word!, parseTerm("family=compound,root=ebeya")));
   });
 });
 
 describe("example words", () => {
   it("lists words in surface order with their unit", () => {
-    const { words } = sentence("zazawan vuvudel oel bamegun.");
+    const { words } = sentence("zazawan vuvudel oel bamagon.");
     assert.deepEqual(
       words.map((w) => [w.word.raw, w.unit]),
       [
         ["zazawan", "np"],
         ["vuvudel", "vp"],
         ["oel", "hook"],
-        ["bamegun", "np"],
+        ["bamagon", "np"],
       ],
     );
   });
@@ -109,8 +109,8 @@ describe("collectExamples", () => {
 describe("learner name slot", () => {
   it("parses SELF examples with the default learner root", () => {
     assert.deepEqual(
-      collectExamples("`yom zSELFn vehahel thegam.`", tables).map((e) => e.text),
-      ["yom zamegun vehahel thegam."],
+      collectExamples("`yom zSELFn vehahel thegom.`", tables).map((e) => e.text),
+      ["yom zamagon vehahel thegom."],
     );
   });
 });

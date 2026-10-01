@@ -124,20 +124,20 @@ ${drills.map((d, i) => `**${i + 1}.** *…*\n\n::: details Show answer\n\`${d}\`
   });
 
   it("matches roots, not spellings: other roles, full-root resumes, role compounds", () => {
-    const rows = ["*Azawan* | `azawan`", "*tell* | `vezebel`", "*run* | `arahal`", "*dog* | `odogal`", "*scream* | `vezogel`"];
-    const md = page(rows, ["zazawan vezebel. zoxezeber varahal.", "zodogal varahal. zodogar vezogel."]);
+    const rows = ["*Azawan* | `azawan`", "*tell* | `vezebel`", "*run* | `arahal`", "*dog* | `odogal`", "*scream* | `vezugel`"];
+    const md = page(rows, ["zazawan vezebel. zoxezeber varahal.", "zodogal varahal. zodogar vezugel."]);
     assert.deepEqual(kinds(md), []);
   });
 
   it("does not read a short resume stem as its own root", () => {
-    const md = page(["*Azawan* | `azawan`", "*run* | `arahal`", "*scream* | `vezogel`"], ["zazawan varahal. zazar vezogel."]);
+    const md = page(["*Azawan* | `azawan`", "*run* | `arahal`", "*scream* | `vezugel`"], ["zazawan varahal. zazar vezugel."]);
     assert.deepEqual(kinds(md), []);
   });
 
   it("needs no row for an overlay, but a row for one must be used", () => {
     const rows = ["*Azawan* | `azawan`", "*run* | `arahal`"];
-    assert.deepEqual(kinds(page(rows, ["zazawan thovom varahal."])), []);
-    assert.deepEqual(kinds(page([...rows, "*MAY* | `thovom`"], ["zazawan varahal."])), ["unused ovo"]);
+    assert.deepEqual(kinds(page(rows, ["zazawan thovum varahal."])), []);
+    assert.deepEqual(kinds(page([...rows, "*MAY* | `thovum`"], ["zazawan varahal."])), ["unused ovu"]);
   });
 
   it("covers the SELF slot only with the *your name* row", () => {

@@ -94,7 +94,7 @@ describe("inspectText", () => {
   });
 
   it("groups a right-close join as a construction", () => {
-    const result = inspectText("zezadel zagadal zam.", tables);
+    const result = inspectText("zezedol zagadul zam.", tables);
     const zam = result.tokens.find((token) => token.kind === "word" && token.raw === "zam");
     assert.equal(zam?.kind, "word");
     if (zam?.kind !== "word") return;
@@ -102,13 +102,13 @@ describe("inspectText", () => {
     const join = result.constructions.find((group) => group.kind === "join");
     assert.ok(join);
     const raws = join!.tokenIndices.map((i) => result.tokens[i]!.raw);
-    assert.deepEqual(raws, ["zezadel", "zagadal", "zam"]);
+    assert.deepEqual(raws, ["zezedol", "zagadul", "zam"]);
     const zamIdx = result.tokens.findIndex((token) => token.raw === "zam");
     assert.ok(join!.triggerIndices.includes(zamIdx));
   });
 
   it("pairs span open and close as Related", () => {
-    const result = inspectText("daxal zezadel xuxul vowogal.", tables);
+    const result = inspectText("daxal zezedol xuxul vowogal.", tables);
     const span = result.constructions.find((group) => group.kind === "span");
     assert.ok(span);
     const open = result.tokens.find((token) => token.kind === "word" && token.raw === "daxal");
@@ -139,7 +139,7 @@ describe("inspectText", () => {
   });
 
   it("Why distinguishes sakes from role compounds", () => {
-    const sake = inspectText("thabathal", tables).tokens[0];
+    const sake = inspectText("thahuthal", tables).tokens[0];
     assert.equal(sake?.kind, "word");
     if (sake?.kind !== "word") return;
     assert.equal(sake.why?.line, "sakes (sake + th)");
@@ -155,7 +155,7 @@ describe("inspectText", () => {
 
 describe("inspectText — phrase brackets", () => {
   it("marks bracket opens and closes on word tokens", () => {
-    const shown = inspectText("yael zamegun zam zehodon zal gezebul.", tables)
+    const shown = inspectText("yael zamagon zam zehodon zal gezebul.", tables)
       .tokens.filter((token) => token.kind === "word")
       .map((token) =>
         token.kind === "word"
@@ -163,11 +163,11 @@ describe("inspectText — phrase brackets", () => {
           : "",
       )
       .join(" ");
-    assert.equal(shown, "yael [[zamegun zam] zehodon zal gezebul]");
+    assert.equal(shown, "yael [[zamagon zam] zehodon zal gezebul]");
   });
 
   it("labels a spoken span on its open word", () => {
-    const tokens = inspectText("zazawan vahahol daxal zazawan vowogal xuxul.", tables).tokens;
+    const tokens = inspectText("zazawan vahahul daxal zazawan vowogal xuxul.", tables).tokens;
     const open = tokens.find((token) => token.raw === "daxal");
     assert.ok(open?.kind === "word");
     assert.deepEqual(open.brackets?.open, ["d-CITE.multi["]);

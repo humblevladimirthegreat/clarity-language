@@ -17,24 +17,24 @@ const CLOSED_ROWS = {
   lion: { emoji: "🦁", root: "alahe" },
   hibiscus: { emoji: "🌺", root: "ahabe" },
   // discourse-role specials (**-n**)
-  microphone: { emoji: "🎤", root: "amegu" },
+  microphone: { emoji: "🎤", root: "amago" },
   headphones: { emoji: "🎧", root: "ehodo" },
-  handshake: { emoji: "🤝", root: "oha" },
-  neutral: { emoji: "😐", root: "onu" },
+  handshake: { emoji: "🤝", root: "aha" },
+  neutral: { emoji: "😐", root: "una" },
   // the language's own name
   glasses: { emoji: "👓", root: "agaza" },
   // greeting turn (`yeweval`)
   wave: { emoji: "👋", root: "eweva" },
   // `/x/` linkers
-  zebra: { emoji: "🦓", root: "aze" },
+  zebra: { emoji: "🦓", root: "ezo" },
   clock: { emoji: "🕰️", root: "agaga" },
   film: { emoji: "🎞️", root: "evave" },
-  construction: { emoji: "🚧", root: "agoza" },
+  construction: { emoji: "🚧", root: "ageza" },
   fries: { emoji: "🍟", root: "avaze" },
   // compass arrows (east is also *therefore*)
   north: { emoji: "⬆️", root: "onova" },
   northeast: { emoji: "↗️", root: "anove" },
-  east: { emoji: "➡️", root: "ezada" },
+  east: { emoji: "➡️", root: "odu" },
   southeast: { emoji: "↘️", root: "azove" },
   south: { emoji: "⬇️", root: "azava" },
   southwest: { emoji: "↙️", root: "azawe" },
@@ -42,9 +42,9 @@ const CLOSED_ROWS = {
   northwest: { emoji: "↖️", root: "onove" },
   // template sample fillers
   walk: { emoji: "🚶", root: "owoga" },
-  ballot: { emoji: "🗳️", root: "aba" },
-  knot: { emoji: "🪢", root: "ona" },
-  toolbox: { emoji: "🧰", root: "udu" },
+  ballot: { emoji: "🗳️", root: "ahu" },
+  knot: { emoji: "🪢", root: "ana" },
+  toolbox: { emoji: "🧰", root: "ulo" },
 } as const satisfies Record<string, ClosedRow>;
 
 export type ClosedName = keyof typeof CLOSED_ROWS;

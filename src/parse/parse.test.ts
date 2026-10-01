@@ -29,7 +29,7 @@ describe("parse — clause.md beginner", () => {
   });
 
   it("parses zezadel gubuhal. as classification predicate", () => {
-    const result = parseText("zezadel gubuhal.");
+    const result = parseText("zezedol gubuhel.");
     const units = result.utterances[0]!.bodies[0]!.clause.units;
     assert.equal(units.length, 2);
     assert.equal(units[0]!.kind, "np");
@@ -78,7 +78,7 @@ describe("parse — clause.md beginner", () => {
   });
 
   it("parses yol question", () => {
-    const result = parseText("yol zamegun vowogal.");
+    const result = parseText("yol zamagon vowogal.");
     assert.ok(result.utterances[0]!.left.force);
     assert.equal(result.utterances[0]!.left.force!.raw, "yol");
   });
@@ -101,7 +101,7 @@ describe("parse — clause.md beginner", () => {
   });
 
   it("parses polar plus body", () => {
-    const result = parseText("yael zamegun vowogal.");
+    const result = parseText("yael zamagon vowogal.");
     assert.equal(result.utterances[0]!.left.polars[0]?.raw, "yael");
     assert.equal(result.utterances[0]!.bodies[0]!.clause.units.length, 2);
   });
@@ -109,7 +109,7 @@ describe("parse — clause.md beginner", () => {
 
 describe("parse — joins.md", () => {
   it("parses zezadel zagadal zam.", () => {
-    const result = parseText("zezadel zagadal zam.");
+    const result = parseText("zezedol zagadul zam.");
     const unit = result.utterances[0]!.bodies[0]!.clause.units[0]!;
     assert.equal(unit.kind, "np");
     if (unit.kind !== "np") return;
@@ -156,7 +156,7 @@ describe("parse — joins.md", () => {
 
 describe("parse — stand-in dependents", () => {
   it("parses theram barl dependent", () => {
-    const result = parseText("zazawan gezebul theram barl zalahen vowogal.");
+    const result = parseText("zazawan gezebul thevem barl zalahen vowogal.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
     assert.equal(clause.dependent!.orodo.raw, "barl");
@@ -164,7 +164,7 @@ describe("parse — stand-in dependents", () => {
   });
 
   it("parses an evidence clause: an inferred or pattern channel hosts barl", () => {
-    for (const text of ["zodol vehahel thevem barl zazawan vowogal.", "zodol vehahel thabel barl zazawan vowogal."]) {
+    for (const text of ["zoyel vehahel thunem barl zazawan vowogal.", "zoyel vehahel thobal barl zazawan vowogal."]) {
       const clause = parseText(text).utterances[0]!.bodies[0]!.clause;
       assert.equal(clause.dependent?.orodo.raw, "barl", text);
       assert.equal(clause.dependent!.clause.units.length, 2, text);
@@ -172,7 +172,7 @@ describe("parse — stand-in dependents", () => {
   });
 
   it("parses barl after a channel's offset as its grounds, not a recipient", () => {
-    const clause = parseText("zodol galagel thabel bral barl zalahen vadebal.").utterances[0]!.bodies[0]!.clause;
+    const clause = parseText("zoyel galagal thobal bral barl zalahen vedabal.").utterances[0]!.bodies[0]!.clause;
     const host = clause.units.find((unit) => unit.kind === "h");
     assert.ok(host && host.kind === "h");
     assert.equal(host.unit.hosted?.bound.raw, "bral");
@@ -181,7 +181,7 @@ describe("parse — stand-in dependents", () => {
   });
 
   it("parses hagom barl purpose dependent", () => {
-    const result = parseText("zazawan vowogal hagom barl zalahen vehahel.");
+    const result = parseText("zazawan vowogal hogom barl zalahen vehahel.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
     assert.equal(clause.dependent!.orodo.raw, "barl");
@@ -189,7 +189,7 @@ describe("parse — stand-in dependents", () => {
   });
 
   it("parses darl object with matrix verb before the opener", () => {
-    const result = parseText("zazawan balahen vezebel darl zezadel varahal.");
+    const result = parseText("zazawan balahen vezebel darl zezedol varahal.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
     assert.equal(clause.units.some((u) => u.kind === "vp"), true);
@@ -249,7 +249,7 @@ describe("parse — spans", () => {
   });
 
   it("parses daxal … xuxul span", () => {
-    const result = parseText("daxal zezadel xuxul vowogal.");
+    const result = parseText("daxal zezedol xuxul vowogal.");
     const spanUnit = result.utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "span");
     assert.ok(spanUnit);
     if (spanUnit?.kind !== "span") return;
@@ -260,7 +260,7 @@ describe("parse — spans", () => {
 
 describe("parse — SVO slots", () => {
   it("parses zar damegun vozezol as subject, object, verb (roles.md)", () => {
-    const result = parseText("zar damegun vozezol.");
+    const result = parseText("zar damagon vozezol.");
     const units = result.utterances[0]!.bodies[0]!.clause.units;
     assert.equal(units.length, 3);
     assert.equal(units[0]!.kind, "np");
@@ -273,13 +273,13 @@ describe("parse — SVO slots", () => {
     const obj = units[1]!.coord.parts[0]!.items[0];
     assert.equal(obj?.kind, "package");
     if (obj?.kind !== "package") return;
-    assert.equal(obj.package.head.raw, "damegun");
+    assert.equal(obj.package.head.raw, "damagon");
   });
 });
 
 describe("parse — hosted /w/ before /b/", () => {
   it("parses simile with /w/ left of host, then /b/", () => {
-    const result = parseText("zazawan welavam homem badagul vowogal.");
+    const result = parseText("zazawan welavam humum badagul vowogal.");
     const units = result.utterances[0]!.bodies[0]!.clause.units;
     const h = units.find((u) => u.kind === "h");
     assert.ok(h && h.kind === "h");
@@ -341,11 +341,11 @@ describe("parse — /ɡ/ join fences", () => {
 
 describe("parse — illegal fences", () => {
   it("rejects left fence zam zezadel zagadal", () => {
-    assert.throws(() => parseText("zam zezadel zagadal."), SentenceParseError);
+    assert.throws(() => parseText("zam zezedol zagadul."), SentenceParseError);
   });
 
   it("nests A zam B zal as [[A zam] B zal]", () => {
-    const result = parseText("zezadel zam zagadal zal vowogal.");
+    const result = parseText("zezedol zam zagadul zal vowogal.");
     const np = result.utterances[0]!.bodies[0]!.clause.units[0]!;
     assert.ok(np.kind === "np");
     assert.deepEqual(
@@ -358,17 +358,17 @@ describe("parse — illegal fences", () => {
   });
 
   it("attaches an adjective after a hosted pair to the extra noun", () => {
-    const result = parseText("zodogal gogal bazawan gubuhal vowogal.");
+    const result = parseText("zodogal gugol bazawan gubuhel vowogal.");
     const np = result.utterances[0]!.bodies[0]!.clause.units[0]!;
     assert.ok(np.kind === "np" && np.coord.parts[0]!.items[0]!.kind === "package");
     const pkg = np.coord.parts[0]!.items[0]!.package;
     assert.equal(pkg.adjs.length, 1);
     assert.equal(pkg.adjs[0]!.hosted?.bound.raw, "bazawan");
-    assert.equal(pkg.adjs[0]!.hosted?.adjs?.[0]?.word.raw, "gubuhal");
+    assert.equal(pkg.adjs[0]!.hosted?.adjs?.[0]?.word.raw, "gubuhel");
   });
 
   it("attaches a number word after a hosted /b/ on /th/ as its amount (signed offset)", () => {
-    const result = parseText("zazawan thunom bagazem g-3 vowogal.");
+    const result = parseText("zazawan thevom bagazem g-3 vowogal.");
     const unit = result.utterances[0]!.bodies[0]!.clause.units[1]!;
     assert.ok(unit.kind === "h");
     assert.equal(unit.unit.hosted?.bound.raw, "bagazem");
@@ -378,49 +378,49 @@ describe("parse — illegal fences", () => {
 
 describe("parse — as-of poles", () => {
   it("parses hosted ledger plus date /b/", () => {
-    const result = parseText("zalahen thamom henem b_#22,7 vadebam.");
-    const h = result.utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "henem");
+    const result = parseText("zalahen thamom huhum b_#22,7 vedabam.");
+    const h = result.utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "huhum");
     assert.ok(h && h.kind === "h");
     assert.equal(h.unit.word.overlay?.gloss, "as-of.ledger");
     assert.equal(h.unit.hosted?.bound.raw, "b_#22,7");
   });
 
   it("parses stance as-of on /th/ beside a clause as-of on /h/", () => {
-    const units = parseText("zalahen thenem b_#22,7 thovom henem b_#22,7 vadebal.").utterances[0]!.bodies[0]!.clause.units;
-    const th = units.find((u) => u.kind === "h" && u.unit.word.raw === "thenem");
+    const units = parseText("zalahen thuhum b_#22,7 thovum huhum b_#22,7 vedabal.").utterances[0]!.bodies[0]!.clause.units;
+    const th = units.find((u) => u.kind === "h" && u.unit.word.raw === "thuhum");
     assert.ok(th && th.kind === "h");
     assert.equal(th.unit.word.overlay?.gloss, "as-of.ledger");
     assert.equal(th.unit.hosted?.bound.raw, "b_#22,7");
   });
 
   it("parses a fault pole hosting a stand-in, stacked after only-if", () => {
-    parseText("zazawan vowogal thebom theral barl zalahen vezebel.");
-    parseText("zemehol wonathumol gobom balahen thovom theral barl zalahen vezebel.");
+    parseText("zazawan vowogal tholum thevel barl zalahen vezebel.");
+    parseText("zumel wanathumol gobum balahen thovum thevel barl zalahen vezebel.");
   });
 
   it("parses as-of resume without /b/", () => {
-    const result = parseText("zazawan hener vowogal.");
+    const result = parseText("zazawan huhur vowogal.");
     const h = result.utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "h");
     assert.ok(h && h.kind === "h");
-    assert.equal(h.unit.word.raw, "hener");
+    assert.equal(h.unit.word.raw, "huhur");
     assert.equal(h.unit.hosted, undefined);
   });
 
   it("rejects as-of resume plus /b/", () => {
-    assert.throws(() => parseText("zazawan hener b_#22,7 vowogal."), SentenceParseError);
+    assert.throws(() => parseText("zazawan huhur b_#22,7 vowogal."), SentenceParseError);
   });
 
   it("rejects as-of introduce without /b/", () => {
-    assert.throws(() => parseText("zazawan henem vowogal."), SentenceParseError);
+    assert.throws(() => parseText("zazawan huhum vowogal."), SentenceParseError);
   });
 
   it("parses /ɡ/ ledger on a noun", () => {
-    const result = parseText("zamol genem b_#22,7.");
+    const result = parseText("zamol guhum b_#22,7.");
     const units = result.utterances[0]!.bodies[0]!.clause.units;
     const pred = units.find((u) => u.kind === "predicate");
     const np = units.find((u) => u.kind === "np");
     if (pred?.kind === "predicate") {
-      assert.equal(pred.adj.word.raw, "genem");
+      assert.equal(pred.adj.word.raw, "guhum");
       assert.equal(pred.adj.hosted?.bound.raw, "b_#22,7");
       return;
     }
@@ -429,64 +429,64 @@ describe("parse — as-of poles", () => {
     assert.equal(item?.kind, "package");
     if (item?.kind !== "package") return;
     const g = item.package.adjs[0];
-    assert.equal(g?.word.raw, "genem");
+    assert.equal(g?.word.raw, "guhum");
     assert.equal(g?.hosted?.bound.raw, "b_#22,7");
   });
 
   it("parses /w/ as-of before a shared adjective", () => {
-    const result = parseText("zazawan zalahen zel wenem b_#22,7 gamadam.");
+    const result = parseText("zazawan zalahen zel wuhum b_#22,7 gamadam.");
     const np = result.utterances[0]!.bodies[0]!.clause.units[0];
     assert.ok(np && np.kind === "np");
     const shared = np.coord.parts[0]!.shared[0];
     assert.ok(shared && "asOf" in shared);
-    assert.equal(shared.asOf?.word.raw, "wenem");
+    assert.equal(shared.asOf?.word.raw, "wuhum");
     assert.equal(shared.asOf?.bound?.raw, "b_#22,7");
     assert.equal(shared.word.raw, "gamadam");
   });
 
   it("parses bookmark as-of plus barl dependent", () => {
-    const result = parseText("zodol galagem thamom thevem b+ humem barl zalahen vadebam.");
+    const result = parseText("zoyel galagam thamom thunem b+ huram barl zalahen vedabam.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
-    const h = clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "humem");
+    const h = clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "huram");
     assert.ok(h && h.kind === "h");
     assert.equal(h.unit.hosted?.bound.raw, "barl");
   });
 
   it("parses channel plus residue plus as-of", () => {
-    const result = parseText("zalahen thunom thamom henem b_#22,7 vadebam.");
+    const result = parseText("zalahen thevom thamom huhum b_#22,7 vedabam.");
     const hs = result.utterances[0]!.bodies[0]!.clause.units.filter((u) => u.kind === "h");
     assert.equal(hs.length, 3);
   });
 
   it("rejects two as-of /h/ hosts in one clause", () => {
     assert.throws(
-      () => parseText("zazawan henem b_#22,7 humem b_#23,7 vowogal."),
+      () => parseText("zazawan huhum b_#22,7 huram b_#23,7 vowogal."),
       SentenceParseError,
     );
   });
 
   it("parses event-noun /b/ on as-of", () => {
-    const result = parseText("zamol thamom henem badebam.");
-    const h = result.utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "henem");
+    const result = parseText("zamol thamom huhum bedabam.");
+    const h = result.utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "huhum");
     assert.ok(h && h.kind === "h");
-    assert.equal(h.unit.hosted?.bound.raw, "badebam");
+    assert.equal(h.unit.hosted?.bound.raw, "bedabam");
   });
 
   it("parses extra-noun resume in as-of /b/", () => {
-    const result = parseText("zalahen vowogal ol b_#22,7. xalahen thamom henem b=_#22,7 vadebam.");
-    const second = result.utterances[0]!.bodies[1]!.clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "henem");
+    const result = parseText("zalahen vowogal ol b_#22,7. xalahen thamom huhum b=_#22,7 vedabam.");
+    const second = result.utterances[0]!.bodies[1]!.clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "huhum");
     assert.ok(second && second.kind === "h");
     assert.equal(second.unit.hosted?.bound.raw, "b=_#22,7");
   });
 
   it("parses /w/ as-of resume immediately before the adjective", () => {
-    const result = parseText("zazawan zalahen zel wener gamadam.");
+    const result = parseText("zazawan zalahen zel wuhur gamadam.");
     const np = result.utterances[0]!.bodies[0]!.clause.units[0];
     assert.ok(np && np.kind === "np");
     const shared = np.coord.parts[0]!.shared[0];
     assert.ok(shared && "asOf" in shared);
-    assert.equal(shared.asOf?.word.raw, "wener");
+    assert.equal(shared.asOf?.word.raw, "wuhur");
     assert.equal(shared.asOf?.bound, undefined);
   });
 });
@@ -519,7 +519,7 @@ describe("parse — spans.md written fences and closes", () => {
 
 describe("parse — pronouns.md full-root resume", () => {
   it("reads an opening resume of a root that ends at its 2nd vowel as the full root", () => {
-    for (const text of ["zalahen vahahal dazor.", "zodor vowogal."]) {
+    for (const text of ["zalahen vahahal dozer.", "zoyer vowogal."]) {
       assert.doesNotThrow(() => parseText(text), text);
     }
     assert.throws(() => parseText("zadar vowogal."), SentenceParseError);

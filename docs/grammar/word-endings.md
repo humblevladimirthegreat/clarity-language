@@ -84,14 +84,14 @@ Short drills for Beginner. Try each item before opening **Show answer**. Choose 
 |---------|--------|--------------|-----|
 | *school* | `uzugul` | | |
 | *chair* | `ehahel` | | |
-| *pencil* | `ebeyul` | | |
-| *draft* | `ebeyum` | `ebeyul` *pencil* | ✏️: marks you can still erase |
+| *pencil* | `ebeyol` | | |
+| *draft* | `ebeyom` | `ebeyol` *pencil* | ✏️: marks you can still erase |
 | *book* | `ubugal` | | |
 | *knowledge* | `ubugam` | `ubugal` *book* | 📖: what a book holds |
-| *magnify* | `amegal` | | |
-| *scrutiny* | `amegam` | `amegal` *magnify* | 🔍: close examination |
-| *bell* | `ebevol` | | |
-| *alert* | `ebevom` | `ebevol` *bell* | 🔔: warning attention |
+| *magnify* | `amagal` | | |
+| *scrutiny* | `amagam` | `amagal` *magnify* | 🔍: close examination |
+| *bell* | `ebehul` | | |
+| *alert* | `ebehum` | `ebehul` *bell* | 🔔: warning attention |
 | *projector* | `ebuhel` | | |
 | *bar-chart* | `abohal` | | |
 | *analysis* | `aboham` | `abohal` *bar-chart* | 📊: examining the quantities |
@@ -122,7 +122,7 @@ chair
 **3.** *pencil* (citation)
 
 ::: details Show answer
-`ebeyul`
+`ebeyol`
 
 pencil
 :::
@@ -130,7 +130,7 @@ pencil
 **4.** *draft* (citation)
 
 ::: details Show answer
-`ebeyum`
+`ebeyom`
 
 draft
 :::
@@ -146,7 +146,7 @@ knowledge
 **6.** *scrutiny* (citation)
 
 ::: details Show answer
-`amegam`
+`amagam`
 
 scrutiny
 :::
@@ -186,7 +186,7 @@ book
 *book*
 :::
 
-**2.** `ebevol`
+**2.** `ebehul`
 
 ::: details Show answer
 
@@ -204,7 +204,7 @@ projector
 *projector*
 :::
 
-**4.** `ebevom`
+**4.** `ebehum`
 
 ::: details Show answer
 
@@ -303,21 +303,21 @@ A short one-word name, or a compact multipart name with mid-word **`x`**, still 
 
 English often writes a given name plus family as two words. In Agazan a short multipart proper name (given + family, a compact place label, a shop name) is **one content word**: roots join left to right with mid-word **`x`** ([ordinary compound order](x-compounds.md#ordinary-compound-order)), and **-n** names the whole as one person or place. That one word fills one slot and is one resume target.
 
-> `zuhuxaloden vowogal.`
+> `zohuxaluden vowogal.`
 >
-> z-Uhu-x-Aloden | v-walk
+> z-Ohu-x-Aluden | v-walk
 >
 > "Uhudexaloden walks."
 
 | Agazan | Use | English |
 |--------|-----|---------|
-| `zuhuxaloden` | nativized multipart (roots + mid-word **`x`**) | *Uhudexaloden* (*wish*×*guidance*: one person) |
-| `duhuxaloden`, `buhuxaloden` | same name in other slots | one named place / person as object or argument |
+| `zohuxaluden` | nativized multipart (roots + mid-word **`x`**) | *Uhudexaloden* (*wish*×*guidance*: one person) |
+| `dohuxaluden`, `bohuxaluden` | same name in other slots | one named place / person as object or argument |
 | `zagavexedehen`, `zagavexedehexowoden` | sense / shop label (two or more lexicon roots) | *Coffee-Tea*; *Coffee-Tea-Water* |
 
 A nativized loan (adapted Agazan root + ordinary ending) uses the same four last letters as any content word. A **lexical compound** is also one slot-filler: one stem, not mid-word **`x`** (`zebedalahazal` *bedroom*).
 
-**Compare with:** adjacent bare same-role words (`zuhun zaloden`) are two people in a [join](joins.md).
+**Compare with:** adjacent bare same-role words (`zohun zaluden`) are two people in a [join](joins.md).
 
 ### Continue (`/x/`): overview
 <a id="continue-x"></a>
@@ -350,13 +350,13 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
-| *hospital-bed* (ward name) | `ahazexebedan` | |
+| *hospital-bed* (ward name) | `ahazoxebedan` | |
 | *bed* | `ebedal` | |
 | *sit* | `vehahel` | `ehahel` *chair* |
 | *see* | `vahahal` | `ahahal` *eye* |
 | *write* | `varadal` | `aradal` *write* |
 | *run* | `varahal` | `arahal` *run* |
-| *Hospital* (named frame) | `hahazen` | `ahazel` *hospital* |
+| *Hospital* (named frame) | `hahazon` | `ahazol` *hospital* |
 | *Azawan* (brand) | `gazawan` | `azawan` *Azawan* |
 | *Ahaben* (brand) | `gahaben` | `ahaben` *Ahaben* |
 | *Temperature* (named standard) | `heveden` | `evedel` *thermometer* |
@@ -370,9 +370,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 **1.** *Azawan sits according to Hospital* (the named frame).
 
 ::: details Show answer
-`zazawan vehahel hahazen.`
+`zazawan vehahel hahazon.`
 
-z-Azawan | v-sit | h-Ahazen
+z-Azawan | v-sit | h-Ahazon
 :::
 
 **2.** *The bed is an Azawan* (the brand).
@@ -394,9 +394,9 @@ z-Ahaben | v-Ezeban
 **4.** *Azawan sees Hospital-Bed.* (the ward’s phrasal name)
 
 ::: details Show answer
-`zazawan vahahal dahazexebedan.`
+`zazawan vahahal dahazoxebedan.`
 
-z-Azawan | v-see | d-Ahaze-x-Ebedan
+z-Azawan | v-see | d-Ahazo-x-Ebedan
 :::
 
 **5.** *Alahen performs Intrusion* (that titled procedure).
@@ -417,11 +417,11 @@ z-Alahen | v-Amaban
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zahaben vehahel hahazen.`
+**1.** `zahaben vehahel hahazon.`
 
 ::: details Show answer
 
-z-Ahaben | v-sit | h-Ahazen
+z-Ahaben | v-sit | h-Ahazon
 *Ahaben sits according to Hospital* (the named frame).
 :::
 
@@ -441,11 +441,11 @@ z-bed | g-Ahaben
 *The bed is an Ahaben* (the brand).
 :::
 
-**4.** `zahazexebedan varadal.`
+**4.** `zahazoxebedan varadal.`
 
 ::: details Show answer
 
-z-Ahaze-x-Ebedan | v-write
+z-Ahazo-x-Ebedan | v-write
 
 *Hospital-Bed writes.* (the ward, as an office)
 :::
@@ -469,7 +469,7 @@ z-Alahen | v-run | h-Amaban
 
 ## See also
 
-- [pronouns.md](pronouns.md): resume **-r**; special **`amegu`** / **`ehodo`** / **`oha`** / **`onu`**
+- [pronouns.md](pronouns.md): resume **-r**; special **`amago`** / **`ehodo`** / **`aha`** / **`una`**
 - [plurality.md](plurality.md): **-x** after the ending
 - [clause.md](clause.md): role letters; adding a first letter to a citation
 - [spans.md](spans.md#loans): mention / opaque when the **form** or a foreign acronym is the point

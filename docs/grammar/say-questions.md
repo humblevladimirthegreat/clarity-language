@@ -215,27 +215,27 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 | English | Agazan | Reading |
 |---------|--------|---------|
 | *offer* (a thing) | `yom` + a giving | soft question: *would you like…?* |
-| *suggest* / *propose* (a joint act) | `yem zohan vowogal.` | soft request with *we* |
+| *suggest* / *propose* (a joint act) | `yem zahan vowogal.` | soft request with *we* |
 | *suggest* (a view) | `yam` | soft statement: *for what it's worth* |
-| *recommend* / *advise* (unasked) | `thonathem` | prescription, offered |
-| *recommend* (you asked for it) | `thonathel` | prescription, invited |
+| *recommend* / *advise* (unasked) | `thanathem` | prescription, offered |
+| *recommend* (you asked for it) | `thanathel` | prescription, invited |
 | *advice* / *suggestion* / *proposal* | the suggestion as a sentence, then point back | [which noun](dependents.md#which-noun) |
-| *invite* / *welcome* (someone) | `vabebum` | *hospitality* |
-| *welcome* (you may) | `thegam` | permission granted |
+| *invite* / *welcome* (someone) | `vabubam` | *hospitality* |
+| *welcome* (you may) | `thegom` | permission granted |
 
-> `yem zohan vowogal.`
+> `yem zahan vowogal.`
 >
 > y-request | z-interlocutors | v-walk
 >
 > "Let's walk." — a suggestion
 
-> `zehodon vowogal thonathem.`
+> `zehodon vowogal thanathem.`
 >
 > z-listener | v-walk | th-relatedness-ought-offered
 >
 > "You should walk; I recommend it." — unasked advice
 
-> `zazawan vabebum dalahen.`
+> `zazawan vabubam dalahen.`
 >
 > z-Azawan | v-hospitality | d-Alahen
 >
@@ -280,7 +280,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
 | *trophy* | `odovel` |
-| *bell* | `ebevol` |
+| *bell* | `ebehul` |
 
 #### English → Agazan {#questions-joins-english-to-agazan}
 
@@ -342,7 +342,7 @@ y-no . y-refuse-option
 *no / false* (truth flip). *not that* (reject this option).
 :::
 
-**3.** `yol zebevol zual.`
+**3.** `yol zebehul zual.`
 
 ::: details Show answer
 

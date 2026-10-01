@@ -29,6 +29,7 @@ export const CMU_OVERRIDES: Record<string, string> = {
   mahjong: "M AA1 ZH AA2 NG",
   sagittarius: "S AE2 JH IH0 T EH1 R IY0 AH0 S",
   ophiuchus: "AO2 F IY0 UW1 K AH0 S",
+  "three-oclock": "TH R IY1 | AH0 K L AA1 K",
   // Places: keyed by the whole label, one primary stress per word, `|` between words.
   uae: "Y UW2 EY2 IY1",
   "bouvet-island": "B UW0 V EY1 | AY1 L AH0 N D",

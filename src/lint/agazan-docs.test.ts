@@ -252,7 +252,7 @@ describe("lintBareRoots", () => {
     const { loadDefaultTables } = await import("../parse/index.js");
     const { lintBareRoots } = await import("./agazan-docs.js");
     const tables = loadDefaultTables();
-    const found = lintBareRoots("Use `azawa`, `tha`, `theha`, and `ezuzo` or `thezuzo`.", tables).map((i) => i.text);
+    const found = lintBareRoots("Use `azawa`, `tha`, `thehu`, and `ezuzo` or `thezuzo`.", tables).map((i) => i.text);
     assert.deepEqual(found, ["ezuzo", "thezuzo"]);
   });
 });

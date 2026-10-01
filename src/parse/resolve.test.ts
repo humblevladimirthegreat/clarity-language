@@ -53,7 +53,7 @@ describe("resolve — content anaphors (pronouns.md)", () => {
   });
 
   it("binds full-root zadagar to the dog, skipping the book", () => {
-    const { anaphors } = resolveOf("zadagal velebel. zabogol gelel. zadagar vawalal.");
+    const { anaphors } = resolveOf("zadagal velebel. zabogul gelel. zadagar vawalal.");
     assert.equal(anaphors[0]!.match, "fullRoot");
     assert.equal(anaphors[0]!.pronoun.raw, "zadagar");
     assert.equal(anaphors[0]!.antecedent?.raw, "zadagal");
@@ -125,7 +125,7 @@ describe("resolve — span and number anaphors", () => {
   it("digitless z=+ is not a resume; under question it is a fill-ask (numbers.md#digitless)", () => {
     const statement = resolveOf("z+3 vawalal. z=+ vayul.");
     assert.equal(statement.anaphors.some((a) => a.kind === "number"), false);
-    const question = resolveOf("yol zagadalx g=+ vayul.");
+    const question = resolveOf("yol zagadulx g=+ vayul.");
     assert.equal(question.asks[0]?.kind, "fillAsk");
     assert.equal(question.asks[0]?.gaps[0]?.raw, "g=+");
   });
@@ -142,7 +142,7 @@ describe("resolve — role anaphors (roles.md)", () => {
   });
 
   it("binds zexazagar as place of the prior scream verb", () => {
-    const { anaphors } = resolveOf("zululon vazagal. zazawan dexazagar veyel.");
+    const { anaphors } = resolveOf("zululon vazagal. zazawan dexazagar vuyel.");
     const role = anaphors.find((a) => a.kind === "role");
     assert.ok(role);
     assert.equal(role!.pronoun.raw, "dexazagar");
@@ -213,7 +213,7 @@ describe("resolve — SHARED (comparatives.md / numbers.md)", () => {
   });
 
   it("reads set a + SHARED as distribute", () => {
-    const { shared } = resolveOf("zadagal zagadal zal gomonum.");
+    const { shared } = resolveOf("zadagal zagadul zal gomonum.");
     assert.equal(shared[0]!.role, "distribute");
   });
 

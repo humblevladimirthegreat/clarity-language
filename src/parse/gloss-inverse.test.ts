@@ -44,22 +44,22 @@ describe("glossToAgazan", () => {
   it("rebuilds each spec example exactly", () => {
     for (const agazan of [
       "dedehel on dagavel.",
-      "zodogal gogal bazawan gubuhal.",
-      "glogal bazawan zodogal gogal balahen.",
+      "zodogal gugol bazawan gubuhel.",
+      "glugol bazawan zodogal gugol balahen.",
       "zedehel zagavel zol zerehel zal vowogal.",
-      "zazawan vahahol daxal zazawan vowogal xuxul.",
-      "zazawan vahahol d@[onodan alahen].",
-      "zedehel zagavel zol ^ homem bazawan ^ vowogal.",
-      "zazawan vowogal. zazawar vahahol.",
-      "zazawan vowogal. zazar vahahol.",
+      "zazawan vahahul daxal zazawan vowogal xuxul.",
+      "zazawan vahahul d@[onodan alahen].",
+      "zedehel zagavel zol ^ humum bazawan ^ vowogal.",
+      "zazawan vowogal. zazawar vahahul.",
+      "zazawan vowogal. zazar vahahul.",
       "zazawan d[abugum#|] vezebel.",
       "zazawan daxur vezebel.",
       "zazawan d[=] vezebel.",
       "z{odoga} gamazam.",
-      "zagadalx grarel.",
-      "zagadalx grarel.",
-      "zamegunx vowogal.",
-      "zazawan vahahol daxal zazar vowogal xuxul. dedehel on dagavel.",
+      "zagadulx grarel.",
+      "zagadulx grarel.",
+      "zamagonx vowogal.",
+      "zazawan vahahul daxal zazar vowogal xuxul. dedehel on dagavel.",
     ]) {
       assert.equal(canonical(roundTrip(agazan)), canonical(agazan), agazan);
     }

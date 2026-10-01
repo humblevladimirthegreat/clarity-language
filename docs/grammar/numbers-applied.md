@@ -75,12 +75,12 @@ English names **how much of a unit** (*two meters*, *three hours*). The unit is 
 >
 > "Azawan walks two meters."
 
-Price *for five grams* keeps this same measure NP in `/b/` after [exchange](relations.md#exchange) **`hogem`**.
+Price *for five grams* keeps this same measure NP in `/b/` after [exchange](relations.md#exchange) **`hehem`**.
 
 | Agazan | Use | English |
 |--------|-----|---------|
 | `bezezem g+2` | extra noun (`/b/`) | *two meters* |
-| `zazadem g+3`, `dababam g+5` | subject / object / … | *three seconds*, *five grams* |
+| `zazadem g+3`, `dabayum g+5` | subject / object / … | *three seconds*, *five grams* |
 | `gezezem g+2` on a host | modifier on a noun | rare; prefer unit as `/b/` or a freestanding noun phrase |
 
 Same endings and fuzzy **-m** habits as other number words on the amount (`gradum` ≈ *about two*). The **unit** takes ordinary word endings.
@@ -92,23 +92,23 @@ Base and everyday units (each row is a **unit metaphor**; the literal picture st
 | SI / everyday unit | Unit root (metaphor) | Example | Literal on same root | Cue |
 |--------------------|----------------------|---------|----------------------|-----|
 | meter | `ezeze` *meter* | `bezezem g+2` | `ezezel` *set-square* | 📐: exact length |
-| gram | `ababa` *gram* | `bababam g+5` | `ababal` *pound* (banknote) | 💷: standard mass |
+| gram | `abayu` *gram* | `babayum g+5` | `abayul` *pound* (banknote) | 💷: standard mass |
 | second | `azade` *second* | `bazadem g+3` | `azadel` *stopwatch* | ⏱️: short tick |
-| minute | `umunu` *minute* | `bumunum g+5` | `umunul` *three-o'clock* | 🕒: the hand steps one minute at a time |
-| liter | `ubuhe` *liter* | `bubuhem g+1` | `ubuhel` *pool* | 🎱: liquid volume |
-| ampere | `agodo` *ampere* | `bagodom g+2` | `agodol` *cable-car* | 🚠: current along a line |
-| kelvin | `azahu` *kelvin* | `bazahum g+300` | `azahul` *ice* | 🧊: thermodynamic temperature |
-| mole | `amaga` *mole* | `bamagam g+1` | `amagal` *microscope* | 🔬: amount of substance |
+| minute | `avega` *minute* | `bavegam g+5` | `avegal` *three-o'clock* | 🕒: the hand steps one minute at a time |
+| liter | `ubuho` *liter* | `bubuhom g+1` | `ubuhol` *pool* | 🎱: liquid volume |
+| ampere | `agude` *ampere* | `bagudem g+2` | `agudel` *cable-car* | 🚠: current along a line |
+| kelvin | `azaho` *kelvin* | `bazahom g+300` | `azahol` *ice* | 🧊: thermodynamic temperature |
+| mole | `amagu` *mole* | `bamagum g+1` | `amagul` *microscope* | 🔬: amount of substance |
 | candela | `aloda` *candela* | `balodam g+100` | `alodal` *lightbulb* | 💡: luminous intensity |
 | hour (civil duration) | `agaze` *hour* | `bagazem g+3` | `agazel` *hourglass* | ⏳: civil hour block |
 | day | `azaza` *day* | `bazazam g+2` | `azazal` *sunrise* | 🌅: sunrise to sunrise |
-| week | `agade` *week* | `bagadem g+1` | `agadel` *calendar* | 📅: one row of the calendar page |
+| week | `agada` *week* | `bagadam g+1` | `agadal` *calendar* | 📅: one row of the calendar page |
 | month | `umuha` *month* | `bumuham g+6` | `umuhal` *moon* | 🌙: one lunar cycle |
 | year | `avawe` *year* | `bavawem g+10` | `avawel` *fireworks* | 🎆: fireworks greet each new year |
-| inch | `eboho` *inch* | `bebohom g+3` | `ebohol` *pinch* | 🤏: about a finger-pinch |
+| inch | `ebewu` *inch* | `bebewum g+3` | `ebewul` *pinch* | 🤏: about a finger-pinch |
 | foot | `uvuda` *foot-length* | `buvudam g+6` | `uvudal` *foot* | 🦶: about one foot long |
 | mile | `ubuda` *mile* | `bubudam g+2` | `ubudal` *boot* | 🥾: a long walk |
-| pound | `ahabo` *pound-mass* | `bahabom g+5` | `ahabol` *shopping-bag* | 🛍️: sold by the pound |
+| pound | `ahabu` *pound-mass* | `bahabum g+5` | `ahabul` *shopping-bag* | 🛍️: sold by the pound |
 | heat grade (not kelvin) | `evede` *temperature* | `bevedem g+37` | `evedel` *thermometer* | 🌡️: how hot or cold |
 
 Related **quantity** words (*heavy*, *flow*, *time* as continuum, …) stay on their own roots (`aragam` *heavy*, `gadaham` *duration*, …); they are not SI measure nouns.
@@ -161,11 +161,11 @@ Something after **B** describes **B** alone, and something on the host noun desc
 
 ### Percent and percentage points {#percent-and-percentage-points}
 
-English *25% of the cats* names a **portion of a whole**. Close a **count** (`ra` / `ru`) with **`yo`**. That closer is parallel to fraction closer **`ye`**. The whole is the noun the percent grades, same `/ɡ/` slot as a count (`zagadalx grarel` = *three cats*).
+English *25% of the cats* names a **portion of a whole**. Close a **count** (`ra` / `ru`) with **`yo`**. That closer is parallel to fraction closer **`ye`**. The whole is the noun the percent grades, same `/ɡ/` slot as a count (`zagadulx grarel` = *three cats*).
 
-> `zagadalx g+25%.`
+> `zagadulx g+25%.`
 >
-> 🔊 *zagadalx graduvayol.*
+> 🔊 *zagadulx graduvayol.*
 >
 > z-cat-x | g-25yo
 >
@@ -186,7 +186,7 @@ In [preferred writing](numbers.md#writing-preferred-shorthand): **`%`** → spee
 
 English *half of the cats* / *a third of the tea* splits the whole into N parts. Put **`g-N`** right after the noun: the **`ru`** marker divides, as `/h/` **`h-N`** does. A whole number of 2 or more names one part in N.
 
-> `zagadalx grudul vehahel.`
+> `zagadulx grudul vehahel.`
 > [z-cat-x | g-half-of] | v-sit
 >
 > "Half of the cats sit."
@@ -212,7 +212,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
-| *pill* | `ehol` | |
+| *pill* | `eyul` | |
 | *baby-bottle* | `abadul` | |
 | *rock* | `aragal` | |
 | *spoon* | `uzubul` | |
@@ -221,7 +221,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 | *walk* | `vowogal` | `owogal` *walk* |
 | *see* | `vahahal` | `ahahal` *eye* |
 | *punch* | `vabahel` | `abahel` *punch* |
-| *scream* | `vezogel` | `ezogel` *scream* |
+| *scream* | `vezugel` | `ezugel` *scream* |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -248,9 +248,9 @@ h-_15,30 | z-Azawan | d-Ahaben | v-see
 **3.** *25% of the pills.*
 
 ::: details Show answer
-`zeholx g+25%.`
+`zeyulx g+25%.`
 
-🔊 *zeholx graduvayol.*
+🔊 *zeyulx graduvayol.*
 
 z-pill-x | g-25yo
 :::
@@ -302,9 +302,9 @@ z-15 | through | z-16
 **9.** *On 22 July, Ahaben screams.*
 
 ::: details Show answer
-`h_#22,7 zahaben vezogel.`
+`h_#22,7 zahaben vezugel.`
 
-🔊 *hroedudutholel zahaben vezogel.*
+🔊 *hroedudutholel zahaben vezugel.*
 
 h-_22,7 | z-Ahaben | v-scream
 :::
@@ -375,11 +375,11 @@ z-Alahen | d-_000 | v-see
 *Alahen sees 000.*
 :::
 
-**7.** `h~_23,59 zalahen vezogel.`
+**7.** `h~_23,59 zalahen vezugel.`
 
 ::: details Show answer
 
-🔊 *hrodurethovanam zalahen vezogel.*
+🔊 *hrodurethovanam zalahen vezugel.*
 
 h-_23,59.about | z-Alahen | v-scream
 
@@ -434,7 +434,7 @@ English *5 or more* / *less than 5* is a **ray**: a band with only one end. Writ
 | **`zrubal ul zraval`** | −∞ up to 5, 5 left out | *less than 5* (`< 5`) |
 | **`zraval am zrabal`** | soft | *about 5 or more* |
 
-For counts, −∞ reads as *no lower limit*: `zagadalx grubal al graval` is *up to five cats*.
+For counts, −∞ reads as *no lower limit*: `zagadulx grubal al graval` is *up to five cats*.
 
 Ranks take the first and last place as ends. **`grebal`** is the last place and **`grebul`** the first, so `zredul al zrebal` is *2nd through last*.
 
@@ -461,7 +461,7 @@ The range hook takes the other hook endings too.
 
 With **-r**, the hook stands in for one value you are not naming. Under a [question](questions.md#fill-ask-r) it asks for that value, as `zar` asks *who?*:
 
-> `zazawan dagadalx grarel ar graval vahahal.`
+> `zazawan dagadulx grarel ar graval vahahal.`
 > z-Azawan | [d-cat-x | g-three] | some.through | g-five | v-see
 >
 > "Azawan sees some number of cats from 3 to 5."
@@ -530,9 +530,9 @@ With no `/b/` after a joined subject, each member is a sibling of the others.
 >
 > "Alahen, Azawan's eldest sibling, walks."
 
-> `zahadel g#2e1 bazawan vowogal.`
+> `zahadol g#2e1 bazawan vowogal.`
 >
-> 🔊 *zahadel grebawoyadul bazawan vowogal.*
+> 🔊 *zahadol grebawoyadul bazawan vowogal.*
 >
 > [z-child | [g-#-2e1 | b-Azawan]] | v-walk
 >

@@ -100,7 +100,7 @@ With **`@`**, mention is the **name** (the title-string you could rename), even 
 
 Keep the source’s **casing** inside `<>` when that writing system uses case (<code>d&lt;NaCl&gt;</code>, <code>d@&lt;iPhone&gt;</code>). Native Agazan letters stay [lowercase](phonology.md#beginner). **`@`** is the proper mark when that blob is a titled name.
 
-When a published Agazan root already matches, write the ordinary word (`dagadal`, not a fence).
+When a published Agazan root already matches, write the ordinary word (`dagadul`, not a fence).
 
 Outside a clause, a foreign name or word is a prefix-less fence with the same marks: [citation forms](word-endings.md#citation-forms) (<code>@&lt;Sam&gt;</code>). A span in a sentence still takes a role letter, because it fills a sentence slot (<code>z@&lt;Sam&gt;</code>).
 
@@ -127,7 +127,7 @@ A one-word manner with nothing to package is a plain adverb: `zazawan vowogal ha
 
 **For *because* / *if*, use:** [**`barl`**](dependents.md#dependent-clauses) dependents, not an aside.
 
-**Compare with:** a second name for the same person uses [identity](predication.md#identity) (`goga` + `/b/`), not an aside.
+**Compare with:** a second name for the same person uses [identity](predication.md#identity) (`gugo` + `/b/`), not an aside.
 
 ### Outer slot {#pos}
 
@@ -516,12 +516,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *tell* | `vezebel` |
 | *see* | `vahahal` |
 | *sing* | `vezehel` |
-| *attest* | `vodul` |
+| *attest* | `vodol` |
 | *lie* (verb) | `valahal` |
 | *lie* (noun) | `alahal` |
-| *scream* | `vezogel` |
+| *scream* | `vezugel` |
 | *punch* | `vabahel` |
-| *Judge* | `ahahon` |
+| *Judge* | `ahahun` |
 | *small* | `gamazam` |
 | *quiet* | `agawal` |
 | *possibility* | `hegewem` |
@@ -540,7 +540,7 @@ z-Azawan | d-CITE.atomic[Azawan] | v-tell
 **2.** *Alahen said “Azawan attests.”* (spoken multi-token cite)
 
 ::: details Show answer
-`zalahen daxal zazawan vodul xuxul vezebel.`
+`zalahen daxal zazawan vodol xuxul vezebel.`
 
 z-Alahen | d-CITE.multi[z-Azawan | v-attest] | v-tell
 :::
@@ -593,12 +593,12 @@ z-Azawan | SCOPE[h-possibility | d-lie] | v-see
 [z-Alahen | SCOPE[z-Azawan | z-and] | z-and.open] | v-punch
 :::
 
-**9.** *The phrase “alahen vodul” is small.* (spoken multi-token mention)
+**9.** *The phrase “alahen vodol” is small.* (spoken multi-token mention)
 
 ::: details Show answer
-`zoxal alahen vodul xuxul gamazam.`
+`zoxal alahen vodol xuxul gamazam.`
 
-z-MENTION.multi["alahen" | "vodul"] | g-small
+z-MENTION.multi["alahen" | "vodol"] | g-small
 :::
 
 **10.** *Ahaben saw, as a possibility, the lie!* (strong feeling on that chunk)
@@ -620,7 +620,7 @@ z-Azawan | v-tell | d-CITE.clause[Azawan]
 *Azawan said “Azawan.”* (hello; the cite runs to the clause end, so the verb comes first)
 :::
 
-**2.** `zazawan daxam zazawan vodul xuxul vezebel.`
+**2.** `zazawan daxam zazawan vodol xuxul vezebel.`
 
 ::: details Show answer
 
@@ -638,11 +638,11 @@ z-←cite.spoken | g-small
 *That (cite) is small.*
 :::
 
-**4.** `zahaben doxon ahahon vezebel.`
+**4.** `zahaben doxon ahahun vezebel.`
 
 ::: details Show answer
 
-z-Ahaben | d-NAME.MENTION.atomic["ahahon"] | v-tell
+z-Ahaben | d-NAME.MENTION.atomic["ahahun"] | v-tell
 
 *Ahaben said the name “Ujudun.”*
 :::
@@ -656,13 +656,13 @@ z-Azawan | v-sing | th-ASIDE.atomic[h-quiet]
 *Azawan sings (quietly).*
 :::
 
-**6.** `zoxol ahahol gamazam.`
+**6.** `zoxol ahahul gamazam.`
 
 ::: details Show answer
 
-z-MENTION.atomic["ahahol"] | g-small
+z-MENTION.atomic["ahahul"] | g-small
 
-*The word “ahahol” is small.*
+*The word “ahahul” is small.*
 :::
 
 **7.** `zalahen ^ hegewem dalahal ^ vahahal.`
@@ -683,13 +683,13 @@ z-Azawan | v-tell | th-ASIDE.multi[z-Alahen | v-lie]
 *Azawan tells (Alahen lies).*
 :::
 
-**9.** `zoxal ahaben vezogel xuxul gamazam.`
+**9.** `zoxal ahaben vezugel xuxul gamazam.`
 
 ::: details Show answer
 
-z-MENTION.multi["ahaben" | "vezogel"] | g-small
+z-MENTION.multi["ahaben" | "vezugel"] | g-small
 
-*The phrase “ahaben vezogel” is small.*
+*The phrase “ahaben vezugel” is small.*
 :::
 
 **10.** `zalahen ?^ zazawan zal ^ zam vabahel.`

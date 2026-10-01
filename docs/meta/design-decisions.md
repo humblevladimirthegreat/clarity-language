@@ -11,16 +11,16 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 | D-01 | copula *to be* as a verb | property on `/ɡ/`, kind on predicative `/ɡ/` (`yal zazawan godogal`), identity **`SAME`** | by design | predication.md | — | — |
 | D-02 | grammatical past / future tense, progressive aspect | time via `/h/` lexicon, clock / date, closed moods; **RESIDUE** / **FORMER** are standing, not tense ([knowing](../grammar/knowing.md#evidentiality): verbs have no past or future letter) | by design | knowing.md, glosses.md | — | — |
 | D-03 | article *the* for an already-mentioned kind | resume **-r** | by design | pronouns.md | — | — |
-| D-04 | single *cause* arrow word (*X causes Y*) | two-place poles **`odo`** / **`ebo`** / **`era`** / **`ewu`**; **CAUSE** mood | by design | causation.md | — | — |
+| D-04 | single *cause* arrow word (*X causes Y*) | two-place poles **`oye`** / **`olu`** / **`eve`** / **`eda`**; **CAUSE** mood | by design | causation.md | — | — |
 | D-05 | metric prefixes (*kilo-*, *milli-*) and unit abbreviations | scaled amount on the base unit | by design | numbers-applied.md | — | — |
-| D-06 | generic plural / *every K* via plural marking | universals joins (`zual gagadal`), habitual **`hual`**; **-x** is associative | by design | plurality.md, joins.md | — | — |
+| D-06 | generic plural / *every K* via plural marking | universals joins (`zual gagadul`), habitual **`hual`**; **-x** is associative | by design | plurality.md, joins.md | — | — |
 | D-07 | written capitals for names | named **-n** / **`@`**; native text is unicase | by design | phonology.md, word-endings.md | — | — |
 | D-08 | sentence-final `?` / `!` carrying force | act word carries force; tone marks are prosody only; sentences end in `.` | by design | speech-moves.md | — | — |
 | D-09 | *attacker*-style agent-noun lexicon | role compounds **`a` / `e` / `u` / `o` x ROOT** | by design | roles.md | — | — |
-| D-10 | neutral past / *earlier* / bare *now* word | signed offset on a channel ([knowing#dated-channel](../grammar/knowing.md#dated-channel)): `thunom bagazem g-3`; forecast (channel + `b+`) / PLAN `+`; *just* / *about to* = `b-e-` / `b+e-` | by design | knowing.md | Every offset from now sits on an evidential or forecast (channel + `b+`) / PLAN; wrong sign on a one-way channel is not a sentence. A signed offset in a time pole's `/b/` is allowed only when the clause is a command, request, or PLAN, or carries a channel. A signed offset in as-of `/b/` is allowed only on stance as-of (`thenem` / `thumem`), which dates the speaker's stance, not the event; `henem` / `humem` / `wenem` keep dates, event nouns, and `barl` clauses. Absolute dates stay channel-free | — |
+| D-10 | neutral past / *earlier* / bare *now* word | signed offset on a channel ([knowing#dated-channel](../grammar/knowing.md#dated-channel)): `thevom bagazem g-3`; forecast (channel + `b+`) / PLAN `+`; *just* / *about to* = `b-e-` / `b+e-` | by design | knowing.md | Every offset from now sits on an evidential or forecast (channel + `b+`) / PLAN; wrong sign on a one-way channel is not a sentence. A signed offset in a time pole's `/b/` is allowed only when the clause is a command, request, or PLAN, or carries a channel. A signed offset in as-of `/b/` is allowed only on stance as-of (`thuhum` / `thuram`), which dates the speaker's stance, not the event; `huhum` / `huram` / `wuhum` keep dates, event nouns, and `barl` clauses. Absolute dates stay channel-free | — |
 | D-11 | single-item clause join (`A xul` *not the case that A*, `A xal` *only A happened*) | clause `/x/` joins go between clauses only; deny / focus on the verb or noun (`vowogal vul`, `zazawan zal`); stand-in items (`A xol xal` *optionally A*, `A xam xar`, `A xel xur`, `xual ul A`) — [joins#clause-joins](../grammar/joins.md#clause-joins) | by design | joins.md | — | — |
-| D-13 | short *I* / *you* pronouns | *speaker* **`amegu`** / *listener* **`ehodo`** are five-letter on purpose (`FORCE_LONG` in `src/lexicon-place.ts`), so names or a dropped subject are the easier choice; inclusive *we* **`oha`** stays short | by design | pronouns.md | — | — |
-| D-14 | *I hope X will happen* as a forecast | hope is not evidence, so a forecast still needs a channel: `thevegem thahur brabum …` ([say-reasons](../grammar/say-reasons.md#hope-forecast), [sakes](../grammar/sakes.md#speaker-attitude)) | by design | sakes.md, say-reasons.md | — | — |
+| D-13 | short *I* / *you* pronouns | *speaker* **`amago`** / *listener* **`ehodo`** are five-letter on purpose (`FORCE_LONG` in `src/lexicon-place.ts`), so names or a dropped subject are the easier choice; inclusive *we* **`aha`** stays short | by design | pronouns.md | — | — |
+| D-14 | *I hope X will happen* as a forecast | hope is not evidence, so a forecast still needs a channel: `thevegem thahor brabum …` ([say-reasons](../grammar/say-reasons.md#hope-forecast), [sakes](../grammar/sakes.md#speaker-attitude)) | by design | sakes.md, say-reasons.md | — | — |
 | D-15 | an act as someone's (*the monkey's tricks*, *the sound of the drums*) | the act is its own sentence, then resumed, the same pattern as *who / that / which* ([dependents](../grammar/dependents.md#which-noun), [say-people-places](../grammar/say-people-places.md)); something that only comes from B is origin `gagum` + `/b/`; `em` never takes an act | by design | dependents.md, say-people-places.md | — | — |
 | D-16 | bare evaluatives (*good*, *bad*, *nice*, *great*, *wonderful*, *excellent*, *lovely*, *terrible*, *awful*, *horrible*, *fantastic*, *brilliant*, *quality*) as roots | no root. Say whose need it serves (met / unmet sake), rank against a named bar, or name the specific quality ([say-reasons](../grammar/say-reasons.md#sake-words), [comparatives](../grammar/comparatives.md#judgment-benchmarks)) | by design | sakes.md, comparatives.md | — | — |
 | D-17 | *the latter* / *the former* (the second / first of two just named) | resume **-r** points at the most recent matching word, so it is the latter; for the earlier one, name it again | by design | pronouns.md | — | — |
@@ -34,12 +34,12 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 |------------|-------|
 | serves someone's need (*good for me*, *useful*) | met sake `…tham` / `…thal` / `…thar`, with the person in `/b/` for someone else's sake |
 | harms a need (*bad for*, *wrong for*) | unmet sake `…thum` / `…thul` / `…thur` |
-| better or worse than a standard (*good at*, *poor*) | rank `zel` / `zuel` against a named bar: `zahen`, `zeyen`, `zomen`, `zugen`, or a sake bar |
+| better or worse than a standard (*good at*, *poor*) | rank `zel` / `zuel` against a named bar: `zehon`, `zuyen`, `zumun`, `zegan`, or a sake bar |
 | a particular quality (*lovely*, *terrible*, *brilliant*) | the content root for that quality: delight, love, beauty, anguish, kindness, intelligence, shine |
 | intensity (*great*, *wonderful*, *awful*) | a degree word (`welavam`, `wohahal`) or an exclamation on the specific root |
 
 - The rule is about **bare** evaluatives only. Roots whose sense is itself a quality (delight, beauty, anguish, safety) stay roots. Descriptive adjectives measured on a scale (*expensive*, *weak*, *thick*, *far*) are not evaluatives: they are written against a bar ([say-amounts](../grammar/say-amounts.md#bar-words)).
-- *Effective*, *practical* and similar judgments reduce to what the thing does for a sake (`gudutham`) or a rank of the result against a bar, so they are not roots either.
+- *Effective*, *practical* and similar judgments reduce to what the thing does for a sake (`gulotham`) or a rank of the result against a bar, so they are not roots either.
 - Do not re-raise a bare evaluative as a lexical gap. If a learner needs a new specific quality, add a root for that quality, not for the evaluation.
 
 ## Stance time and emotional blame
@@ -51,16 +51,16 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 ## Dated channels
 
 - A hosted `/b/` after an evidential is read by its filler: a time measure = offset; a person or other noun = source (*per Alahen*). The source reading is settled but not yet taught. A clause as the grounds is the separate [evidence clause](../grammar/knowing.md#evidence-clause): only INFERRED and PATTERN take `barl`, and other channels keep a noun source.
-- No number form means *imaginary*: *as if* belongs to NOTIONAL `ove`, not to a digitless number.
+- No number form means *imaginary*: *as if* belongs to NOTIONAL `avo`, not to a digitless number.
 
 ## Holders (whose view)
 
-- Someone else's stance is written only as a holder fused onto an evidential, MAY, or NOTIONAL (`thevemazawan`). There is no free holder word or hosted `/b/` holder: fusing makes a warrant-less attribution unwritable even where no parser checks it.
-- The seam is the host's own **-l / -m / -r**, so strength and holds survive. A `th` seam (`thevethazawan`) was rejected because it drops the grade; a consonant + `th` cluster (`thevemthazawan`) is illegal mid-word. **-n** is never a seam.
+- Someone else's stance is written only as a holder fused onto an evidential, MAY, or NOTIONAL (`thunemazawan`). There is no free holder word or hosted `/b/` holder: fusing makes a warrant-less attribution unwritable even where no parser checks it.
+- The seam is the host's own **-l / -m / -r**, so strength and holds survive. A `th` seam (`thunethazawan`) was rejected because it drops the grade; a consonant + `th` cluster (`thevemthazawan`) is illegal mid-word. **-n** is never a seam.
 - Hosts are recognized by spelling: a `/th/` word that begins with a closed host root, then `l` / `m` / `r`, then a vowel, is a holder. This is safe only while no published root begins with a host root + `l` / `m` / `r` + vowel; a new root of that shape must be respelled, not given a special case.
-- Holder and source are different jobs: the holder is whose view the clause is (`themamazawan`: I hear it is Azawan's view); a person in hosted `/b/` after an evidential is where you heard it (`themam balahen`: per Alahen). Both can appear on one word.
+- Holder and source are different jobs: the holder is whose view the clause is (`thewamazawan`: I hear it is Azawan's view); a person in hosted `/b/` after an evidential is where you heard it (`thewam balahen`: per Alahen). Both can appear on one word.
 - Only knowing, guessing, and imagining hosts (the eight channels, MAY, NOTIONAL). DECISION, PLAN, CAUSE, sakes, and universality never host a holder; inside a holder clause they are the holder's.
-- The holder word ends like a noun for that person: **-n** name, **-r** resume, **-lx** some people of a kind, with associative **-x** after any of them (`thodumazawanx`). A group is a holder only this way; there is no generic holder without a warrant.
+- The holder word ends like a noun for that person: **-n** name, **-r** resume, **-lx** some people of a kind, with associative **-x** after any of them (`thodomazawanx`). A group is a holder only this way; there is no generic holder without a warrant.
 - One clause, one holder, whole-clause scope regardless of position. A stance on someone's stance nests: yours in the main sentence, theirs in a dependent.
 - `/w/` after a stance word is not reserved: it grades whatever it sits before (a `/ɡ/` or an `/h/`). The parser used to reject `th w g` because the `/h/`-unit loop took any `/w/` as the start of another `/h/` unit; that was a bug, not a rule.
 
@@ -94,7 +94,7 @@ Closed words (joins, hooks, join-act verbs, emotion loci) stack two of the serie
 
 ## Genitive and other free hook slots
 
-- Extra-noun **`em`** is the use / access genitive (*B's* = in B's use; says nothing about title). It replaced *with … in mind*, which `el` *for* and `hegulam` + `/b/` already covered. It is not a catch-all: ownership is `gegabem`, people take a tie (care = `gahazum`), parts / material / origin are of-relations, feelings are emotion compose, made things are role compounds. People are never `em` or `gegabem`; feelings and traits are never `em` or `gabom`. Fused `em` = *have in use*.
+- Extra-noun **`em`** is the use / access genitive (*B's* = in B's use; says nothing about title). It replaced *with … in mind*, which `el` *for* and `holalam` + `/b/` already covered. It is not a catch-all: ownership is `gegabem`, people take a tie (care = `gahabom`), parts / material / origin are of-relations, feelings are emotion compose, made things are role compounds. People are never `em` or `gegabem`; feelings and traits are never `em` or `gobom`. Fused `em` = *have in use*.
 - No `el` / `em` / `er` possession series by time horizon (`rejected/el-em-er-possession.md`).
 - Discourse **`aol …`** / **`aom …`** = *For example* (an instance of the prior claim; `al …` is a sibling point).
 - Considered and left unassigned: stacked point-back **-r** (`aor` *on it*; a hook + resumed `/b/` already says it), same-role `aol` *namely* (`el` or an aside covers it), discourse *Alternatively* (a sentence-initial `xom` / `xaom` join) and *Apart from that* (`al …` / `ur …`). Same-role `ao` / `uo` / `ae` and discourse `oe` / `ua` / `uo` / `ue` have no pressing job.

@@ -88,9 +88,9 @@ describe("sentence-parser synthetic", () => {
 
   it("puts a /ɡ/ after an /h/ host's /b/ on that landmark, but not after a /th/ offset", () => {
     const last = (text: string) => parseSentenceTokens(tokens(text)).utterances[0]!.bodies[0]!.clause.units.at(-1)!;
-    const like = last("zazawan vowogal homem bazawan gubuhal.");
-    assert.equal(like.kind === "h" ? like.unit.hosted?.adjs?.[0]?.word.raw : undefined, "gubuhal");
-    assert.equal(last("zazawan thabem bral gamadam.").kind, "predicate");
+    const like = last("zazawan vowogal humum bazawan gubuhel.");
+    assert.equal(like.kind === "h" ? like.unit.hosted?.adjs?.[0]?.word.raw : undefined, "gubuhel");
+    assert.equal(last("zazawan thobam bral gamadam.").kind, "predicate");
   });
 
   it("lets a kin number on an /h/ host's landmark host its own /b/, but keeps a count as the amount", () => {
@@ -98,12 +98,12 @@ describe("sentence-parser synthetic", () => {
     const kin = last("zazawan vowogal han bebezal grebuwol behodon.");
     assert.equal(kin.kind === "h" ? kin.unit.hosted?.amount : "not h", undefined);
     assert.equal(kin.kind === "h" ? kin.unit.hosted?.adjs?.[0]?.hosted?.bound.raw : undefined, "behodon");
-    const offset = last("zazawan vowogal hulam bazazam grawol.");
+    const offset = last("zazawan vowogal henum bazazam grawol.");
     assert.equal(offset.kind === "h" ? offset.unit.hosted?.amount?.raw : undefined, "grawol");
   });
 
   it("puts a /ɡ/ after a SHARED relation's /b/ on that landmark", () => {
-    const shared = parseSentenceTokens(tokens("zodogal zagadal zal gabom bahazar gamazam.")).utterances[0]!.bodies[0]!.clause.units;
+    const shared = parseSentenceTokens(tokens("zodogal zagadul zal gobom bahazar gamazam.")).utterances[0]!.bodies[0]!.clause.units;
     assert.equal(shared.length, 1);
     const unit = shared[0]!;
     const part = unit.kind === "np" ? unit.coord.parts.find((p) => p.join) : undefined;
@@ -124,14 +124,14 @@ describe("sentence-parser synthetic", () => {
   });
 
   it("keeps a hook that is not right before a join word on the clause", () => {
-    const units = parseSentenceTokens(tokens("zodogal em bazawan zagadal zal vowogal.")).utterances[0]!.bodies[0]!.clause.units;
+    const units = parseSentenceTokens(tokens("zodogal em bazawan zagadul zal vowogal.")).utterances[0]!.bodies[0]!.clause.units;
     assert.equal(units[1]!.kind, "hook");
   });
 
   it("reads a signed measure on a time pole with no channel", () => {
-    const units = parseSentenceTokens(tokens("yel zehodon vaheham hodam bazazam grawol.")).utterances[0]!.bodies[0]!.clause.units;
+    const units = parseSentenceTokens(tokens("yel zehodon vaheham homam bazazam grawol.")).utterances[0]!.bodies[0]!.clause.units;
     const pole = units.at(-1)!;
-    assert.equal(pole.kind === "h" ? pole.unit.word.raw : undefined, "hodam");
+    assert.equal(pole.kind === "h" ? pole.unit.word.raw : undefined, "homam");
     assert.equal(pole.kind === "h" ? pole.unit.hosted?.amount?.raw : undefined, "grawol");
   });
 

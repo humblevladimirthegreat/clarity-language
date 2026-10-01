@@ -35,10 +35,10 @@ describe("expandWritingSpan", () => {
   });
 
   it("maps multi-token cite with xuxul close", () => {
-    const tokens = expandWritingSpan(parseWord("d[zadagal zagadal]"), expandWordToTokens);
+    const tokens = expandWritingSpan(parseWord("d[zadagal zagadul]"), expandWordToTokens);
     assert.deepEqual(
       tokens.filter((t) => t.kind === "word").map((t) => (t.kind === "word" ? t.raw : "")),
-      ["daxal", "zadagal", "zagadal", "xuxul"],
+      ["daxal", "zadagal", "zagadul", "xuxul"],
     );
   });
 

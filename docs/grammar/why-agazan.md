@@ -77,7 +77,7 @@ Agazan’s [sakes](sakes.md) name a closed inventory of **sakes** (autonomy, com
 | Prescription | Deontic on the host act for this sake — ending marks the move's warrant or aim (**invited / offered / trial**) |
 | Unmet | Costs the sake, including how changeable that is |
 
-Naming the sake and your stance toward it helps you notice gratitude, motive, and oughts instead of conflating them into vague *want* / *should* / *good*. A sake on `/ɡ/` is a belonging (so *my X serves competence* is one adjective); an unowned stimulus uses the sake on `/w/` immediately before **`gobom`**.
+Naming the sake and your stance toward it helps you notice gratitude, motive, and oughts instead of conflating them into vague *want* / *should* / *good*. A sake on `/ɡ/` is a belonging (so *my X serves competence* is one adjective); an unowned stimulus uses the sake on `/w/` immediately before **`gobum`**.
 
 ### Emotions as composition {#emotions-as-composition}
 
@@ -113,7 +113,7 @@ It is easy to treat a looping *could be* as settled fact: mixing memory, hearsay
 
 The channel's [ending](knowing.md#evidence-strength) says how strong that evidence is (a vivid memory or a hazy one, a reliable source or a rumor), separately from how likely the claim is. Marking the channel helps you catch overconfidence and hearsay before you treat a take as settled fact.
 
-**For *could be*, use:** [MAY](knowing.md#may) (`ovo`). That marks potential, and whether this sentence finds out, stays at *may*, or leaves it at *who knows*. Evidentiality is how you know a world-claim. Ability *can* is not MAY.
+**For *could be*, use:** [MAY](knowing.md#may) (`ovu`). That marks potential, and whether this sentence finds out, stays at *may*, or leaves it at *who knows*. Evidentiality is how you know a world-claim. Ability *can* is not MAY.
 
 ### What still counts, and whose weather
 <a id="residue-and-former-climate"></a>
@@ -150,7 +150,7 @@ Saying whether a list is open or closed helps you notice false dichotomies, and 
 
 Everyday English *because* / *leads to* / *have to* blur sufficient vs necessary, world-reason vs speaker-grounds, and wish vs natural law.
 
-[Causation](causation.md) keeps those forks on two-place poles: *if* / *only if* / *because* / *iff*, on `/th/` for an event and `/ɡ/` for a noun. Intended *so that* is a separate pole (**`hagom`**, [so that](dependents.md#so-that)): the host is aimed at that outcome, which is not asserted like *because*, and is not a [need-motive](sakes.md#sake-preference) (`tho`). When the “rule” is really an ought (*hard work should earn promotion*), use [sakes](sakes.md) [prescription](sakes.md#sake-force) (**`the`**) on the act — not a causation pole.
+[Causation](causation.md) keeps those forks on two-place poles: *if* / *only if* / *because* / *iff*, on `/th/` for an event and `/ɡ/` for a noun. Intended *so that* is a separate pole (**`hogom`**, [so that](dependents.md#so-that)): the host is aimed at that outcome, which is not asserted like *because*, and is not a [need-motive](sakes.md#sake-preference) (`tho`). When the “rule” is really an ought (*hard work should earn promotion*), use [sakes](sakes.md) [prescription](sakes.md#sake-force) (**`the`**) on the act — not a causation pole.
 
 Keeping those forks apart helps you stop treating wishes and habits as if the world must obey them.
 

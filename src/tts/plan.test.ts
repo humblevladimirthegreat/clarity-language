@@ -33,8 +33,8 @@ describe("previewSpeech", () => {
   });
 
   it("expands multi-token cite with close", () => {
-    const plan = previewSpeech("d[zadagal zagadal]");
-    assert.deepEqual(plan.spoken, ["daxal", "zadagal", "zagadal", "xuxul"]);
+    const plan = previewSpeech("d[zadagal zagadul]");
+    assert.deepEqual(plan.spoken, ["daxal", "zadagal", "zagadul", "xuxul"]);
   });
 
   it("expands span anaphor and empty cite", () => {
@@ -63,13 +63,13 @@ describe("previewSpeech", () => {
   });
 
   it("adds xContinue before discourse linker after period", () => {
-    const plan = previewSpeech("zazawan vawalal. xumalal zululon vurunul.");
+    const plan = previewSpeech("zazawan vawalal. xamalal zululon vurunul.");
     const tags = boundaryTags(plan);
     assert.ok(tags.includes("period"));
     assert.ok(tags.includes("xContinue"));
     assert.equal(tags.includes("yTurn"), false);
     const xIdx = plan.tokens.findIndex((t) => t.kind === "boundary" && t.tag === "xContinue");
-    const linkerIdx = plan.tokens.findIndex((t) => t.kind === "word" && t.raw === "xumalal");
+    const linkerIdx = plan.tokens.findIndex((t) => t.kind === "word" && t.raw === "xamalal");
     assert.ok(xIdx >= 0 && linkerIdx > xIdx);
   });
 
@@ -140,7 +140,7 @@ describe("previewPhonemes", () => {
   });
 
   it("uses comma dip before discourse linker", () => {
-    const plan = previewPhonemes("zazawan vawalal. xumalal zululon vurunul.");
+    const plan = previewPhonemes("zazawan vawalal. xamalal zululon vurunul.");
     assert.match(plan.ipaPhonemes, /\.,/);
   });
 

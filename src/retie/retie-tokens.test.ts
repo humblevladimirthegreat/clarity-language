@@ -548,9 +548,9 @@ describe("resume binds after a retie", () => {
 
 describe("retie fixes (2026-09-28 overlay demotion)", () => {
   it("moves an overlay -r with its root instead of binding it as a resume", () => {
-    // `themar` is TOLD.weak; `emazo` on the page shares its short cut but is not its antecedent.
-    const { text } = rewriteMarkdown("`zemazol` then `zalahen themar vadebal.`", mapOf(["ema", "ibibi"]));
-    assert.equal(text, "`zemazol` then `zalahen thibibir vadebal.`");
+    // `thewar` is TOLD.weak; `ewawe` on the page shares its short cut but is not its antecedent.
+    const { text } = rewriteMarkdown("`zewawel` then `zalahen thewar vedabal.`", mapOf(["ewa", "ibibi"]));
+    assert.equal(text, "`zewawel` then `zalahen thibibir vedabal.`");
   });
 
   it("keeps an emotion tail when the sake root moves", () => {

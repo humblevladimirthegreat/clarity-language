@@ -10,7 +10,7 @@ Sometimes one Agazan word is two smaller meanings with **`x`** in the middle. Th
 
 English often glues two ideas into one word (*peanut butter*) or one hyphenated name. In Agazan you write both dictionary roots in **one** word and put **`x`** between them. The first letter of the word is still the [role letter](clause.md#beginner) (subject, verb, and so on). The [ending](word-endings.md) belongs to the whole word, not to the piece before **`x`** alone. (cue: **x** ≈ plus: two pieces make one word)
 
-> `zebeyexabedel.`
+> `zebeyaxabodel.`
 >
 > z-peanut-x-butter
 >
@@ -18,7 +18,7 @@ English often glues two ideas into one word (*peanut butter*) or one hyphenated 
 
 The last root is the kind of thing; the left root specifies it (what field, what extra label). You get one thing in the sentence, not two.
 
-> `gagayaxalaval.`
+> `gagayoxalaval.`
 >
 > g-crush-x-love
 >
@@ -26,14 +26,14 @@ The last root is the kind of thing; the left root specifies it (what field, what
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| full root **`x`** full root | two roots, one word | `zebeyexabedel` *peanut butter* | **x** ≈ plus |
+| full root **`x`** full root | two roots, one word | `zebeyaxabodel` *peanut butter* | **x** ≈ plus |
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxedehol` *a teacher* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
 
 **Compare with:** two people stay two words (`zazawan zalahen`). One double name is one word (`zazawaxalahen`).
 
 **Not the same job as:** a word that **starts** with **`x`** [keeps the same speech move going](dependents.md#continue-x). That **`x`** is not this glue in the middle.
 
-**Not the same job as:** mid-word **`th`**. The [stance](clause.md#stance-th) letter joins pieces when the second piece is **your view** rather than more of the same thing: a sake and how it stands ([sakes](sakes.md): `guduthal`), a label and how far it reaches ([label scope](predication.md#label-scope), such as *angry this time*), or a direction and whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals), such as *Azawan’s left*). **`x`** adds; **`th`** says from where you see it. (cue: **th** ≈ *think*)
+**Not the same job as:** mid-word **`th`**. The [stance](clause.md#stance-th) letter joins pieces when the second piece is **your view** rather than more of the same thing: a sake and how it stands ([sakes](sakes.md): `gulothal`), a label and how far it reaches ([label scope](predication.md#label-scope), such as *angry this time*), or a direction and whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals), such as *Azawan’s left*). **`x`** adds; **`th`** says from where you see it. (cue: **th** ≈ *think*)
 
 ### Words you look up, not build
 <a id="lexical-compounds"></a>
@@ -51,12 +51,12 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `zebedalahazal` | bed **-l** house | bedroom | left piece everyday |
-| `zodolebevol` | door **-l** bell | doorbell | left piece everyday |
-| `zonalebezal` | bond **-l** person | friend | left piece everyday |
+| `zoyelebehul` | door **-l** bell | doorbell | left piece everyday |
+| `zanalebezal` | bond **-l** person | friend | left piece everyday |
 | `zerehelogodul` | rain **-l** coat | raincoat | left piece everyday |
 | `…m…` | left root in its [abstract](word-endings.md#abstract-m) sense | same two roots, join **-m** | **m** ≈ meaning |
 
-If the pairing is not in the dictionary, either glue with **`x`** (`zebeyexabedel` *peanut butter*) or use two words. Extra-noun *enter* / *leave* fused onto a citation is a [hook compound](hooks.md#hook-compounds), not this two-root join.
+If the pairing is not in the dictionary, either glue with **`x`** (`zebeyaxabodel` *peanut butter*) or use two words. Extra-noun *enter* / *leave* fused onto a citation is a [hook compound](hooks.md#hook-compounds), not this two-root join.
 
 ### One thing or two?
 <a id="compound-vs-separate"></a>
@@ -65,8 +65,8 @@ Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agaza
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| two words | two things, or a property already marked another way | `zahavel zerevol zam` *a hammer and a wrench*; `zodogal gubuhal` *a blue dog* (`/ɡ/`) | |
-| **`x`** in the middle | one thing; you can still hear both roots | `gagayaxalaval` *love in the crush sense*; `zebeyexabedel` *peanut butter*; `zazawaxalahen` (one person) | **x** ≈ plus |
+| two words | two things, or a property already marked another way | `zahavol zerevul zam` *a hammer and a wrench*; `zodogal gubuhel` *a blue dog* (`/ɡ/`) | |
+| **`x`** in the middle | one thing; you can still hear both roots | `gagayoxalaval` *love in the crush sense*; `zebeyaxabodel` *peanut butter*; `zazawaxalahen` (one person) | **x** ≈ plus |
 | dictionary word | one familiar kind, listed as a single entry | `zebedalahazal` *bedroom*; `zazoval` *sunflower* | join letter in the entry, not **`x`** |
 
 `zazawan zalahen` is two people. `zazawaxalahen` is one person.
@@ -88,15 +88,15 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
-| *doorbell* | `zodolebevol` | |
+| *doorbell* | `zoyelebehul` | |
 | *raincoat* | `zerehelogodul` | |
 | *greenhouse* | `zavavulahazal` | |
-| *friend* | `zonalebezal` | |
-| *hammer* | `ahavel` | |
-| *wrench* | `erevol` | |
-| *axe* | `agezol` | |
+| *friend* | `zanalebezal` | |
+| *hammer* | `ahavol` | |
+| *wrench* | `erevul` | |
+| *axe* | `agezul` | |
 | *saw* | `ozazol` | |
-| *wood* | `uwal` | |
+| *wood* | `uwul` | |
 | *see* | `vahahal` | `ahahal` *eye* |
 | *punch* | `abahel` | |
 
@@ -105,7 +105,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *a doorbell*
 
 ::: details Show answer
-`zodolebevol.`
+`zoyelebehul.`
 
 z-doorbell
 :::
@@ -113,7 +113,7 @@ z-doorbell
 **2.** *a hammer and a wrench*
 
 ::: details Show answer
-`zahavel zerevol zam.`
+`zahavol zerevul zam.`
 
 [z-hammer | z-wrench | z-and.open]
 :::
@@ -121,7 +121,7 @@ z-doorbell
 **3.** *a wood saw*
 
 ::: details Show answer
-`zozazoxuwal.`
+`zozazoxuwul.`
 
 z-saw-x-wood
 :::
@@ -161,14 +161,14 @@ z-Azawan-x-Alahen
 **8.** *Alahen punches a friend.*
 
 ::: details Show answer
-`zalahen zonalebezal vabahel.`
+`zalahen zanalebezal vabahel.`
 
 z-Alahen | z-friend | v-punch
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zonalebezal.`
+**1.** `zanalebezal.`
 
 ::: details Show answer
 
@@ -177,7 +177,7 @@ z-friend
 *a friend*
 :::
 
-**2.** `zahaben dodolebevol vahahal.`
+**2.** `zahaben doyelebehul vahahal.`
 
 ::: details Show answer
 
@@ -186,7 +186,7 @@ z-Ahaben | d-doorbell | v-see
 *Ahaben sees a doorbell.*
 :::
 
-**3.** `zahavel zagezol zam.`
+**3.** `zahavol zagezul zam.`
 
 ::: details Show answer
 
@@ -195,7 +195,7 @@ z-Ahaben | d-doorbell | v-see
 *a hammer and an axe*
 :::
 
-**4.** `zozazoxuwal.`
+**4.** `zozazoxuwul.`
 
 ::: details Show answer
 
@@ -213,7 +213,7 @@ z-Ahaben | d-raincoat | v-see
 *Ahaben sees a raincoat.*
 :::
 
-**6.** `zonalebezal dahavel vahahal.`
+**6.** `zanalebezal dahavol vahahal.`
 
 ::: details Show answer
 
@@ -222,7 +222,7 @@ z-friend | d-hammer | v-see
 *A friend sees a hammer.*
 :::
 
-**7.** `zalahen dagezol vahahal.`
+**7.** `zalahen dagezul vahahal.`
 
 ::: details Show answer
 
@@ -231,7 +231,7 @@ z-Alahen | d-axe | v-see
 *Alahen sees an axe.*
 :::
 
-**8.** `zazawan zonalebezal vabahel.`
+**8.** `zazawan zanalebezal vabahel.`
 
 ::: details Show answer
 
@@ -252,8 +252,8 @@ Beginner already used two roots glued with **`x`**, dictionary words with no **`
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxedehol` *a teacher* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
 | name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | [conversation length](#conversation-length) | *Azawan — I have time* | vowel on the name |
 | longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [ability](intention.md#ability) | *can’t sing right now* | extra vowel after the host |
-| full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zebeyexabedel`; `zuhuxaloden` ([multipart names](word-endings.md#phrasal-proper-names)) | **x** ≈ plus |
-| sake root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [sakes](sakes.md) | `guduthal` | **th** ≈ *think* (your view of the sake) |
+| full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zebeyaxabodel`; `zohuxaluden` ([multipart names](word-endings.md#phrasal-proper-names)) | **x** ≈ plus |
+| sake root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [sakes](sakes.md) | `gulothal` | **th** ≈ *think* (your view of the sake) |
 | other root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [label scope](predication.md#label-scope) | *angry this time* | **th** ≈ *think* (your view of how far the label reaches) |
 | direction root **`th`** facing person | [viewpoint lateral](roles.md#viewpoint-laterals) | `gewezathazawan` *Azawan’s left* | **th** ≈ *think* (whose point of view) |
 A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`**, or **`u`** left of **`x`**, you are opening a span or naming a role (*teacher*), not gluing two full roots. Role compounds still put a full root **after** that vowel.
@@ -262,7 +262,7 @@ A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`*
 
 When English stacks labels left to right (*crush* then *love*; a shop name with a third drink), Agazan keeps that order in **one** word. The **last** root is the kind. Each earlier root specifies it. The ending stays at the end of the whole word. Named lists (people, shops) use the same stack as a list of labels, not as kind-last packing.
 
-> `gagayaxalaval.`
+> `gagayoxalaval.`
 >
 > g-crush-x-love
 >
@@ -281,7 +281,7 @@ When English stacks labels left to right (*crush* then *love*; a shop name with 
 ### Which family is this?
 <a id="decision-order"></a>
 
-Use the table above. If the word has a mid-word **`th`**, it is an [sakes](sakes.md) word (one of the six sake roots, then a vowel, with an optional [emotion tail](sakes.md#emotion-compose)), a [label scope](predication.md#label-scope) word (any other root, then a vowel), or a [viewpoint lateral](roles.md#viewpoint-laterals) (a root follows **`th`**). The root before **`th`** decides: after one of the six sake roots, letters that look like a root are always the emotion tail (`guduthamol`), never a lateral. Otherwise read both sides of the first **`x`** in this order:
+Use the table above. If the word has a mid-word **`th`**, it is an [sakes](sakes.md) word (one of the six sake roots, then a vowel, with an optional [emotion tail](sakes.md#emotion-compose)), a [label scope](predication.md#label-scope) word (any other root, then a vowel), or a [viewpoint lateral](roles.md#viewpoint-laterals) (a root follows **`th`**). The root before **`th`** decides: after one of the six sake roots, letters that look like a root are always the emotion tail (`gulothamol`), never a lateral. Otherwise read both sides of the first **`x`** in this order:
 
 - The whole word is a span close such as **`xuxul`** → a **span** is closing.
 - After the role letter: one vowel, **`x`**, one vowel, then a span ending → a **span** is opening ([spans](spans.md)).
@@ -333,7 +333,7 @@ At arrival, the other person can answer with their own bid. The **lesser** bid s
 >
 > "Alahen — one slot." (the talk lasts for one ask)
 
-**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [need](sakes.md) takes **`th`** + vowel instead (`guduthal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**.
+**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [need](sakes.md) takes **`th`** + vowel instead (`gulothal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**.
 
 **Compare with:** a plain named citation with a period is the basic hello (`SELFn.`). The bid says how much conversation the person is open to.
 
@@ -372,9 +372,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
-| *doorbell* | `zodolebevol` | |
+| *doorbell* | `zoyelebehul` | |
 | *see* | `vahahal` | `ahahal` *eye* |
-| *scream* | `ezogel` | |
+| *scream* | `ezugel` | |
 | *punch* | `abahel` | |
 
 #### English → Agazan {#intermediate-english-to-agazan}
@@ -430,7 +430,7 @@ Ahaben-ask
 **7.** *Azawan — a few minutes.* (calling); *Alahen screams.*
 
 ::: details Show answer
-`yazawaxen zalahen vezogel.`
+`yazawaxen zalahen vezugel.`
 
 y-Azawan-minutes | z-Alahen | v-scream
 :::
@@ -511,7 +511,7 @@ Azawan
 *Azawan.* (hello — the speaker is Azawan)
 :::
 
-**8.** `yazawaxen zahaben dodolebevol vahahal.`
+**8.** `yazawaxen zahaben doyelebehul vahahal.`
 
 ::: details Show answer
 
