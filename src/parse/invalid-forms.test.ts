@@ -163,6 +163,22 @@ const ROWS: Row[] = [
     rejection: "joinDetail",
     valid: "zazawan zalahen zal vahahal dagadul dodogal wazem dal.",
   },
+  // `uem` + a stance: the stance must say what the event goes against (sakes.md#contrary-to-stance).
+  { invalid: "zazawan vowogal uem thegom.", rejection: "frameKind", valid: "zazawan vowogal uem thedem." },
+  { invalid: "zazawan vezebel uem thuxegom balahen.", rejection: "frameKind", valid: "zazawan vezebel uem thuxedem balahen." },
+  { invalid: "zazawan vowogal uem thanatham.", rejection: "frameKind", valid: "zazawan vowogal thanathum balahen." },
+  { invalid: "zazawan vowogal uem thezum.", rejection: "frameKind", valid: "zazawan vowogal uem thahom." },
+  { invalid: "zazawan vowogal uem thovum.", rejection: "frameKind", valid: "zazawan vowogal uem thamam." },
+  { invalid: "zazawan vowogal uem thobam barl zalahen vezebal.", rejection: "standInHost", valid: "zazawan vowogal thobam barl zalahen vezebal." },
+  // An in-clause hook pairs two phrases in the same clause role (hooks.md#including-am-al).
+  { invalid: "zazawan al vowogal.", rejection: "hookSameRole", valid: "zavahal al zazawan vowogal." },
+  { invalid: "zazawan vowogal al hevegem.", rejection: "hookSameRole", valid: "zazawan vowogal uem thevegem." },
+  // Only `ul` takes `barl` (hooks.md#since); *contrary to* an event is `hezom barl`.
+  { invalid: "zazawan vowogal uem barl zalahen vezebal.", rejection: "hookStandIn", valid: "zazawan vowogal hezom barl zalahen vezebal." },
+  { invalid: "zazawan vowogal el barl zalahen vezebal.", rejection: "hookStandIn", valid: "zazawan vowogal ul barl zalahen vezebal." },
+  // The sentence after `barl` needs more than a stance word (dependents.md#dependent-clauses).
+  { invalid: "zazawan vowogal hezom barl thedel.", rejection: "dependentStanceOnly", valid: "zazawan vowogal uem thedel." },
+  { invalid: "zazawan vowogal hezom barl thedel thewam.", rejection: "dependentStanceOnly", valid: "zazawan vowogal hezom barl thulothuruor." },
   // A second turn starts only after a period; only the legal force pairs stack.
   { invalid: "yol yol vezevul.", rejection: "forcePair", valid: "yol. yol vezevul." },
 ];

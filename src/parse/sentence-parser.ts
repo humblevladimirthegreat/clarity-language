@@ -145,6 +145,16 @@ function isStanceWord(token: IToken): boolean {
   return token.tokenType === H && (token.payload as LexWord | undefined)?.pos === "th";
 }
 
+/** `uem` *contrary to*: a `/th/` stance right after it is its opposing frame (sakes.md#contrary-to-stance). */
+function isFrameHook(token: IToken): boolean {
+  const family = (token.payload as LexWord | undefined)?.family;
+  return token.tokenType === Hook && family?.kind === "hook" && family.form === "uem";
+}
+
+function isFrameHookAhead(parser: AgazanSentenceParser, at: number): boolean {
+  return isFrameHook(parser.lookahead(at)) && isStanceWord(parser.lookahead(at + 1));
+}
+
 /**
  * A `/th/` stance word right before a closed or open rank join of this level (`zel` / `zuel` / `zael`, -l or -m)
  * is that fence's bar (comparatives.md § bars). Its hosted tail (`/b/`, a `/b/` join, an offset amount, `barl`)
@@ -269,10 +279,13 @@ class AgazanSentenceParser extends CstParser {
     ]);
   });
 
-  /** A hook (after any `/w/`) that glues the sentence to prior talk: `/b/` right after it makes it an extra-noun hook instead (hooks.md § Extra noun). */
+  /**
+   * A hook (after any `/w/`) that glues the sentence to prior talk: `/b/` right after it makes it an extra-noun hook instead
+   * (hooks.md § Extra noun), and a stance right after `uem` its frame (sakes.md#contrary-to-stance).
+   */
   private discourseHookAhead(): boolean {
     const at = laAfterW(this);
-    return this.LA(at).tokenType === Hook && !tokenIs(this.LA(at + 1), B, JoinB);
+    return this.LA(at).tokenType === Hook && !tokenIs(this.LA(at + 1), B, JoinB) && !isFrameHookAhead(this, at);
   }
 
   /** Two act words in a row: the first leads the second (speech-moves.md § Emphatic prohibition, questions.md § rhetorical). */
@@ -708,7 +721,12 @@ class AgazanSentenceParser extends CstParser {
     this.MANY(() => {
       this.CONSUME(W);
     });
-    this.CONSUME(Hook);
+    // `uem` + a `/th/` stance holds the stance as its frame; it does not read on the claim (sakes.md#contrary-to-stance).
+    const hook = this.CONSUME(Hook);
+    this.OPTION({
+      GATE: () => isFrameHook(hook) && isStanceWord(this.LA(1)),
+      DEF: () => this.SUBRULE(this.hUnitRule, { LABEL: "frame" }),
+    });
   });
 
   public npPackage = this.RULE("npPackage", () => {
@@ -1231,11 +1249,13 @@ function buildHUnit(cst: CstNode): HUnit {
   };
 }
 
-function buildHookUnit(cst: CstNode): { kind: "hook"; word: LexWord; modifiers: LexWord[] } {
+function buildHookUnit(cst: CstNode): Extract<Unit, { kind: "hook" }> {
+  const frame = childNodes(cst, "frame")[0];
   return {
     kind: "hook",
     word: lexWordFromToken(childToken(cst, "Hook")!),
     modifiers: childTokens(cst, "W").map(lexWordFromToken),
+    ...(frame ? { frame: buildHUnit(frame) } : {}),
   };
 }
 

@@ -151,6 +151,7 @@ Owns:
 
 - Utterance framing ([speech-moves.md](../grammar/speech-moves.md) — `/y/` turns, including a whole spoken `/y/` span (open … close) at the left edge ([spans.md](../grammar/spans.md#y-spoken-spans)), omissible default assertoric; [dependents.md](../grammar/dependents.md) — `/x/` continue)
 - Right-close joins at phrase / VP / clause level (illegal left fence); a `/th/` stance word right before a rank join (`e` / `ue` / `ae`, **-l** / **-m**) is that fence's bar, an `NpItem` of kind `bar` ([comparatives.md](../grammar/comparatives.md#bars))
+- `uem` right before a `/th/` stance word holds that stance (with its hosted `/b/`) as the hook unit's `frame`, job `frame`, at the left edge too: the stance the event goes against, not a stance on the claim ([sakes.md](../grammar/sakes.md#contrary-to-stance)). Enforce checks the frame kind (`frameKind`)
 - Span open…close nesting; adjunct islands **`^ … ^`**
 - Complex `/ɡ|h/` + `/b/`; `/w/` + `/b/` only for *as-of* overlays; floating `/h/` as adjuncts
 - Matrix-final **stand-in** (`darl` / `barl`) + contiguous dependent

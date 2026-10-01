@@ -123,6 +123,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "hUnitRule.gPackage": { anchor: "clause.md#complex-chaining", summary: "adjective on the landmark after an /h/ host" },
   "hookUnit.W": { anchor: "hooks.md#hook-w", summary: "/w/ on an in-clause hook" },
   "hookUnit.Hook": { anchor: "hooks.md#including-am-al", summary: "in-clause hook" },
+  "hookUnit.frame": { anchor: "sakes.md#contrary-to-stance", summary: "uem + a /th/ stance: the frame the event goes contrary to" },
 
   "npPackage.gPackage": { anchor: "clause.md#adjectives-ɡ", summary: "adjective on a noun (gl- before, /ɡ/ after)" },
   "npPackage.itemHook": { anchor: "joins.md#right-close", summary: "hook on one join item, before the join word" },
@@ -560,6 +561,16 @@ export const REJECTIONS = {
   },
   barCount: { anchor: "comparatives.md#bars", summary: "a rank fence ranks one item against one bar; with a bar there is no second comparee, noun or bar" },
   rankJoinNumberManner: { anchor: "comparatives.md#manner-scale", summary: "the /h/ after a rank join is a manner word; the only number there is digitless h+ (how often)" },
+  frameKind: {
+    anchor: "sakes.md#contrary-to-stance",
+    summary: "the stance after uem says what the event goes against: a channel, PLAN, DECISION, WANT, a ban, a requirement, a refusal, or a speaker attitude",
+  },
+  hookSameRole: { anchor: "hooks.md#including-am-al", summary: "an in-clause hook goes between two phrases in the same clause role (A HOOK B)" },
+  hookStandIn: { anchor: "hooks.md#since", summary: "the only hook that takes a stand-in is ul barl (since); contrary to an event is hezom barl" },
+  dependentStanceOnly: {
+    anchor: "dependents.md#dependent-clauses",
+    summary: "the sentence after a stand-in names an event or a thing; a stance word alone fills it only as a lone feeling, thanks, or sorry",
+  },
   standInHost: { anchor: "dependents.md#dependent-clauses", summary: "a hosted stand-in is barl after a listed pole, an inferred / pattern channel, or like (humum)" },
   standInHostUndo: { anchor: "dependents.md#stand-in", summary: "burl follows only the so-that pole holalam or the if pole thadorom" },
   poleStack: { anchor: "causation.md#only-because", summary: "pole stacks are theberom thurugum and hezebam thadorom" },

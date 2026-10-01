@@ -1078,6 +1078,7 @@ function hookLabel(form: string, ctx: MorphGlossContext): string {
     case "resume":
     case "extraNoun":
     case "genitive":
+    case "frame":
       return HOOK_EXTRA_NOUN[form] ?? form;
     case "discourse":
       return HOOK_JOB[form] ?? form;

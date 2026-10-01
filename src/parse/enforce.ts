@@ -9,7 +9,7 @@
 import type { IToken } from "chevrotain";
 
 import type { ClassifyTables } from "./classify.js";
-import { ARROW_ROOTS, isAsOfOverlay, isBarStance, isGroundsChannel, isStandIn } from "./classify.js";
+import { ARROW_ROOTS, isAsOfOverlay, isBarStance, isFrameStance, isGroundsChannel, isStandIn } from "./classify.js";
 import { REJECTIONS, type RejectionId } from "./constructions.js";
 import { SentenceParseError } from "./sentence-parser.js";
 import {
@@ -27,7 +27,7 @@ import {
   type TokenPayload,
 } from "./tokens.js";
 import { tokenMatcher } from "chevrotain";
-import { isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, type Visitor } from "./ast-walk.js";
+import { isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, visitUnit, type Visitor } from "./ast-walk.js";
 import { forcePairKind, KIND_SERIES, RANK_SERIES } from "./series.js";
 import type {
   Clause,
@@ -370,6 +370,59 @@ function enforceBars(coord: NpCoord, tables: ClassifyTables): void {
   }
 }
 
+/** `uem` + a stance: the stance must say something the event can go against, and holds no stand-in (sakes.md#contrary-to-stance). */
+function enforceFrame(hook: LexWord, frame: HUnit, tables: ClassifyTables): void {
+  if (!isFrameStance(frame.word, tables)) throw new ConstructionError("frameKind", `${hook.raw} ${frame.word.raw}`);
+  enforceChannelSign(frame.word, frame.hosted);
+  const stand = frame.hosted && (frame.hosted.grounds ?? frame.hosted.bound);
+  if (stand && isStandIn(stand)) throw new ConstructionError("standInHost", `${frame.word.raw} ${stand.raw}`);
+}
+
+/** The words on each side of a unit, skipping `/w/` detail. */
+function edgeWord(unit: Unit | undefined, edge: "first" | "last"): LexWord | undefined {
+  const words: LexWord[] = [];
+  if (unit) visitUnit(unit, { word: (w) => words.push(w) });
+  const content = words.filter((w) => w.pos !== "w");
+  return edge === "first" ? content[0] : content.at(-1);
+}
+
+/** An in-clause hook pairs two phrases in the same clause role: `A HOOK B` (hooks.md#including-am-al). */
+function enforceSameRole(hook: LexWord, prev: Unit | undefined, next: Unit | undefined): void {
+  // A stand-in clause `xual ul …` hooks the clause after it (joins.md#clause-joins).
+  if (!prev || !next || prev.kind === "clauseCoord") return;
+  const a = edgeWord(prev, "last")?.pos;
+  const b = edgeWord(next, "first")?.pos;
+  if (a && b && a !== b) throw new ConstructionError("hookSameRole", `${edgeWord(prev, "last")!.raw} ${hook.raw} ${edgeWord(next, "first")!.raw}`);
+}
+
+/** A hook + stand-in `/b/`: only `ul barl`, *since* + the next sentence (hooks.md#since). */
+function enforceHookStandIn(hook: LexWord, next: Unit | undefined): void {
+  if (next?.kind !== "np" || next.coord.level !== "b") return;
+  const first = next.coord.parts[0]?.items[0];
+  const head = first?.kind === "package" ? first.package.head : undefined;
+  if (!head || !isStandIn(head)) return;
+  const since = hook.family.kind === "hook" && hook.family.form === "ul" && series(head) === "a";
+  if (!since) throw new ConstructionError("hookStandIn", `${hook.raw} ${head.raw}`);
+}
+
+/**
+ * The sentence after a stand-in names an event or a thing: stance words alone fill no slot, except a lone
+ * sake word, which is a whole sentence about the speaker (dependents.md#dependent-clauses, sakes.md#feeling-no-object).
+ */
+function enforceDependentContent(clause: Clause): void {
+  const dependent = clause.dependent;
+  if (!dependent) return;
+  // A noun stand-in (`zarl`) runs on into same-role nouns after it, which belong to the next sentence.
+  const host = clause.units.at(-1);
+  if (host?.kind === "np" && host.coord.parts.some((part) => part.items.length > 1)) return;
+  const units = dependent.clause.units;
+  if (!units.every((unit) => unit.kind === "h")) return;
+  const loneSake = units.length === 1 && units[0]!.kind === "h" && units[0]!.unit.word.reading === "sake";
+  if (loneSake) return;
+  const words = units.map((unit) => (unit.kind === "h" ? unit.unit.word.raw : "")).join(" ");
+  throw new ConstructionError("dependentStanceOnly", `${dependent.orodo.raw} ${words}`);
+}
+
 /** Checks over one unit list (a clause body or an island): hosts, stand-ins, hooks, as-of counts, edges. */
 function enforceUnitList(units: Unit[], tables: ClassifyTables): void {
   enforceIslandEdges(units);
@@ -386,6 +439,9 @@ function enforceUnitList(units: Unit[], tables: ClassifyTables): void {
       else hAsOf += 1;
     }
     if (unit.kind === "hook" && unit.job === "stray") throw new ConstructionError("genitiveHost", unit.word.raw);
+    if (unit.kind === "hook" && unit.job === "clause") enforceSameRole(unit.word, units[i - 1], units[i + 1]);
+    if (unit.kind === "hook" && unit.frame) enforceFrame(unit.word, unit.frame, tables);
+    if (unit.kind === "hook" && !unit.frame) enforceHookStandIn(unit.word, units[i + 1]);
     if (unit.kind === "hook" && unit.word.ending === "r") {
       const next = units[i + 1];
       if (next?.kind === "np" && next.coord.level === "b") throw new ConstructionError("hookResumeNoun", unit.word.raw);
@@ -412,6 +468,7 @@ function structureVisitor(tables: ClassifyTables): Visitor {
           return;
         case "clause":
           enforceUnitList(node.clause.units, tables);
+          enforceDependentContent(node.clause);
           return;
         case "island":
           enforceIsland(node.island, tables);

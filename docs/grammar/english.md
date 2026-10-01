@@ -12,7 +12,7 @@ These pages are recipes, not lessons. Each one shows how forms you already learn
 
 ## One English word, many jobs {#many-jobs}
 
-English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agazan job, then open the section that teaches it.
+English *by*, *for*, *about*, *as*, and *against* each cover several jobs. Pick the Agazan job, then open the section that teaches it.
 
 ### *by*
 
@@ -82,6 +82,17 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agazan 
 | resemblance to an event (*walks the way a duck swims*, *as a hand moves through hair*) | **`humum barl`** + the event | [Simile](relations.md#similative) |
 | pretense (*as if they walk*) | **NOTIONAL** | [Notional](knowing.md#notional) |
 | dated books (*as of Friday*) | **`huhum` / `huram`** + `/b/` | [*As-of*](relations.md#as-of) |
+
+### *against*
+
+| English itch | Agazan job | Teach |
+|--------------|------------|-------|
+| opponent (*fights against a guard*, *Azawan versus Alahen*) | hook **`uel`** + `/b/` | [Hooks](hooks.md#extra-noun-intermediate) |
+| a rule, a person's no, or a plan (*against the rules*, *against their will*, *contrary to the plan*, *against my decision*) | hook **`uem`** + the `/th/` stance it goes against | [Contrary to a stance](sakes.md#contrary-to-stance) |
+| what you were told or expected (*contrary to what I was told*, *against my gut*) | hook **`uem`** + a channel | [Channels after `uem`](knowing.md#channel-frame) |
+| a noun in the way (*against the rain*, *despite the rain*) | hook **`uem`** or **`hezom`** + `/b/` | [Hooks](hooks.md#extra-noun-intermediate), [dependent clauses](dependents.md#dependent-clauses) |
+| an event in the way (*even though Alahen said no*) | **`hezom barl`** + the sentence | [Dependent clauses](dependents.md#dependent-clauses) |
+| someone's interest (*against Alahen's interest*) | unmet sake word + `/b/` | [Sakes](sakes.md#sake-changeability) |
 
 ## Everyday words {#everyday-words}
 

@@ -283,7 +283,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | *secondary* / *second* | the rank `g#2` |
 | *whole* / *entire* / *complete* / *total* / *ideal* (nothing lacking) | `gahahom` (*perfection*) |
 | *several* | approximate number: `zagadulx gram` (*about five cats*) |
-| *multiple* (*more than one*) | a ray: `zagadulx g+2 al zrabal` |
+| *multiple* (*more than one*) | a ray: `zagadulx g+2 al grabal` |
 | *minority* (*fewer than half*) | `zagadulx g+0% ul g+50%` |
 | *exactly* / *precisely* / *specific* (*exactly five*) | the plain number `g+5`; `gram` is *about five* |
 | *literally* (*word for word*) | an exact quote: bare brackets, no `~` ([exact, paraphrase, proper](spans.md#when-required)) |

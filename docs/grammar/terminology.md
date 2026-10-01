@@ -670,7 +670,7 @@ Content / span / number **-r** pointing back.
 
 ### Hook
 
-Prefix-less *including / rather / instead / except*, discourse glue, extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (frame **-m** *amid* / *over* / *near* / *in the direction of* / *away from* / *out from among* / *by way of* / *used by* (whose) / *by* / *contrary to*; placement decides the job), and fused [hook compounds](hooks.md#hook-compounds) (citation plus extra-noun hook). Optional `/w/` immediately before the free hook grades that hook (including restrictors); `/b/` sits immediately after the free hook.
+Prefix-less *including / rather / instead / except*, discourse glue, extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (frame **-m** *amid* / *over* / *near* / *in the direction of* / *away from* / *out from among* / *by way of* / *used by* (whose) / *by* / *contrary to*; placement decides the job; **`uem`** before a `/th/` stance is *contrary to* that stance), and fused [hook compounds](hooks.md#hook-compounds) (citation plus extra-noun hook). Optional `/w/` immediately before the free hook grades that hook (including restrictors); `/b/` sits immediately after the free hook.
 
 [Hooks](hooks.md)
 

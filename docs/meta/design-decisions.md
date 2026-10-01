@@ -77,6 +77,28 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 - A holder seam on a bar names whose expectation it is; inside the fence the seam covers only the bar, not the ranking.
 - A bar's `barl` ends its sentence at the fence: noun parts after the scale start the grounds sentence.
 
+## Contrary to a stance (`uem` + `/th/`)
+
+- **`uem`** directly before a `/th/` stance holds it as the frame the event goes against ([sakes](../grammar/sakes.md#contrary-to-stance)). Position decides, as with rank-fence bars: the same word anywhere else in the clause is a stance on the claim. The frame keeps its ending table and hosted `/b/`; a holder seam on a channel frame covers only the frame.
+- **Criterion:** the stance must have content the event can contradict: a norm, an intention, a wish, a report, or an expectation. The parser rejects the rest (`frameKind`).
+
+| Kind | Frame? | Why |
+|------|--------|-----|
+| FORBID (`ede`), REQUIRE (`ume`), refused CONSENT (`uxede`) | yes | a norm or a person's no; *against the rules* / *against orders* / *against their will* |
+| PERMIT (`ego`), given CONSENT (`uxego`) | no | they only lift a restriction, so an act cannot go against them; going beyond what was allowed is a ban or a refusal frame |
+| PLAN, DECISION, WANT (all endings, **-n** included) | yes | an intention or a wish. Owner is the subject, as on the clause; a hosted `/b/` person names someone else's (this `/b/` is new to the frame: on the clause these moods take only a dated offset) |
+| speaker attitude (content root on `/th/`) | yes | the attitude's object is what you hoped or feared. An attitude with no content of its own (*luckily* `theledem`) makes no sensible frame; the parser does not police root meaning, and pages teach only hope |
+| all eight channels, with or without a holder | yes | a report or an expectation; LIVE is *contrary to appearances* |
+| MIRATIVE | no | it already says *against expectation*; pairing it with `uem` doubles the contrast |
+| MAY, NOTIONAL | no | a possibility or an imagined scene is held by no one as true; *contrary to what I imagined* is FELT |
+| RESIDUE, FORMER | no | a balance still on the books or a climate already over is nothing an event goes against; *unlike before* is a PATTERN frame |
+| sake words (met, unmet, prescription, motive, emotion compose) | no | *against Alahen's interest* is an unmet sake word on the clause (`thegathum balahen`), which already says it |
+| clause poles, CAUSE, ATTEMPT, ability, universality, stance numbers | no | relations, mechanisms, or the act's own trying; *against the rule* is FORBID / REQUIRE, not a RULE warrant |
+
+- **No hook + `barl` except `ul`** (`hookStandIn`). *Contrary to* an event is `hezom barl`; *against a stance* is `uem` + the stance. No job turned up that needs `uem barl`.
+- **In-clause hooks pair same-role words** (`hookSameRole`): the word just before the hook and the word just after it share a role letter, as [Including](../grammar/hooks.md#including-am-al) states. The `xual ul …` stand-in clause is exempt. Turning the check on caught two recipe slips (a ray with mixed `g` / `z` ends, and `ual` + `/z/` for a `/b/` landmark).
+- **No stance-only dependent** (`dependentStanceOnly`). The sentence after a stand-in needs a noun or a verb; a lone sake word (feeling, thanks, sorry) is the exception, since it is a whole sentence about the speaker. `hezom barl thedel` added nothing over `uem thedel`.
+
 ## Vocatives and interjections
 
 - The ending decides the `/y/` job: **-n** calls someone (a name, or a kind used as a title: `yagavon`); **-l** / **-m** are interjections in their ordinary lexical sense (`yezul`, `yezum`). **-r** resumes either, read through its antecedent. There is no *named formula* interjection on **-n**.

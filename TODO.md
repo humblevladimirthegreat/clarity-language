@@ -16,7 +16,6 @@ Prosody
 -finish lexicon fill (partial)
 -finish proposals-mnemonic
 -finish register-samples.md
--consider replacing pattern evidential with universals, and mirative (surprised) takes pattern.
 
 save for near end of limit resets:
 -lexicon fill in based on subtitles dataset frequency

@@ -480,6 +480,37 @@ export function isBarStance(word: LexWord, tables: ClassifyTables): boolean {
   return word.reading === "ordinary" && family.kind === "content";
 }
 
+/** Closed `/th/` kinds `uem` takes as its frame: each has content an event can go against (sakes.md#contrary-to-stance). */
+const FRAME_OVERLAY_KINDS = new Set(["evidential", "plan", "decision", "want", "deontic"]);
+
+/**
+ * A `/th/` word that can be the frame of `uem` *contrary to*: a channel (or a holder on one), PLAN, DECISION, WANT,
+ * a ban, a requirement, a refusal, or a speaker attitude (an ordinary content root on `/th/`). Sakes, permission and
+ * consent given, poles, MAY, NOTIONAL, MIRATIVE, RESIDUE, FORMER, CAUSE, ATTEMPT, ability, and universality say
+ * nothing an event can contradict.
+ */
+export function isFrameStance(word: LexWord, tables: ClassifyTables): boolean {
+  if (word.pos !== "th") return false;
+  const family = word.family;
+  const row =
+    family.kind === "x" && family.xFamily === "holder"
+      ? tables.overlays.get(overlayKey("th", `${family.leftRoots[0]}${family.grade}`))
+      : word.overlay
+        ? tables.overlays.get(overlayKey("th", word.overlay.senseForm))
+        : undefined;
+  if (row) return FRAME_OVERLAY_KINDS.has(row.kind) && !isDeonticYes(row, tables);
+  return word.reading === "ordinary" && family.kind === "content";
+}
+
+/** A permit or consent-given row: it shares the PERMIT rows' emoji (sakes.md#permission). */
+function isDeonticYes(row: OverlayRow, tables: ClassifyTables): boolean {
+  if (row.kind !== "deontic") return false;
+  for (const other of tables.overlays.values()) {
+    if (other.kind === "deontic" && other.gloss.startsWith("PERMIT") && other.emoji === row.emoji) return true;
+  }
+  return false;
+}
+
 /** A forbid or consent-refused row: it shares the FORBID rows' emoji (sakes.md#permission). */
 function isDeonticNo(row: OverlayRow, tables: ClassifyTables): boolean {
   if (row.kind !== "deontic") return false;

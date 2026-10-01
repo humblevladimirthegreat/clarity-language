@@ -355,6 +355,20 @@ PLAN and DECISION endings run the same way: **-l** is the most settled, **-m** t
 >
 > "Alahen is thinking of walking, and has decided only for now."
 
+A decision can also follow the hook **`uem`**, like a plan ([contrary to a stance](sakes.md#contrary-to-stance)): the event goes against that decision. It is the subject's own decision unless a `/b/` names whose it is.
+
+> `zazawan vowogal uem thehum.`
+>
+> z-Azawan | v-walk | [contrary-to | th-DECISION-modifiable]
+>
+> "Azawan walks, though they had decided not to."
+
+> `zazawan vowogal uem thehul bamagon.`
+>
+> z-Azawan | v-walk | [contrary-to | [th-DECISION-irreversible | b-speaker]]
+>
+> "Azawan walks against my final decision."
+
 ### Try {#try}
 <a id="attempt"></a>
 
@@ -464,6 +478,20 @@ A want, a [plan](#plan-predict), and a [decision](#decision) are three different
 > z-Azawan | th-WANT-lasting | th-plan-itinerary | v-walk
 >
 > "Azawan has long wanted to walk, and plans to."
+
+After the hook **`uem`**, a want is what the event goes against ([contrary to a stance](sakes.md#contrary-to-stance)). That is English *against their will* when the want is the subject's own, and *against Alahen's wishes* when a `/b/` names Alahen.
+
+> `zazawan vowogal uem thohum.`
+>
+> z-Azawan | v-walk | [contrary-to | th-WANT-unstated]
+>
+> "Azawan walks against their will."
+
+> `zalahen vezebal uem thohum bazawan.`
+>
+> z-Alahen | v-sleep | [contrary-to | [th-WANT-unstated | b-Azawan]]
+>
+> "Alahen sleeps, against Azawan's wishes."
 
 **Compare with:** [hopefully](sakes.md#speaker-attitude) (`thevegem`) is **your** attitude toward a whole claim; **`thohum`** is the subject's own wanting. [Motive](sakes.md#sake-preference) says which sake the act serves, not that it is wanted. In [emotion compose](sakes.md#emotion-compose), SEEKING is a feeling turning toward someone for comfort, not a plain want.
 

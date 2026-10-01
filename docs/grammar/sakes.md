@@ -713,6 +713,72 @@ To check in, ask: `yom zazawan vezebel thuxegom.` (*Are you still OK with this?*
 
 **Compare with:** permission **`thegom`** can come from anyone with the standing to grant it: `zazawan vezebel thegom balahen.` means Alahen allowed it, which is not the same as the listener agreeing. `zSELFn vehahel thegom.` is *I'm allowed to sit* (someone let me); `zSELFn vehahel thuxegom.` is *I let myself sit*.
 
+### Contrary to a stance (`uem`) {#contrary-to-stance}
+
+English *against the rules*, *against Alahen's will*, and *contrary to the plan* say that the event happens even though a rule, a person, or a plan says otherwise. Put the hook **`uem`** *contrary to* right before a `/th/` stance word. The stance then says what the event goes against, and it no longer applies to the claim. `zazawan vowogal thedel.` says Azawan is not allowed to walk; `zazawan vowogal uem thedel.` says Azawan walks anyway. (cue: **ue** ≈ undo aimed at; **-m** the opposing frame, which the stance spells out)
+
+> `zazawan vowogal uem thedel.`
+>
+> z-Azawan | v-walk | [contrary-to | th-FORBID-disallowed]
+>
+> "Azawan walks against the rules."
+
+The stance keeps its endings and its hosted `/b/`. On a refusal, the `/b/` is the person who said no, so the pair is English *against their will*:
+
+> `zazawan vezebel uem thuxedem balahen.`
+>
+> z-Azawan | v-tell | [contrary-to | [th-CONSENT-refused | b-Alahen]]
+>
+> "Azawan tells against Alahen's will (Alahen said no)."
+
+> `zahaben vehahel uem thumem balahen.`
+>
+> z-Ahaben | v-sit | [contrary-to | [th-REQUIRE-demanded | b-Alahen]]
+>
+> "Ahaben sits, against Alahen's orders."
+
+A [plan](intention.md#plan) after **`uem`** is the subject's own unless a `/b/` names whose plan it is. A [speaker attitude](#speaker-attitude) after **`uem`** is what you were hoping for.
+
+> `zazawan vowogal uem thamam.`
+>
+> z-Azawan | v-walk | [contrary-to | th-plan-itinerary]
+>
+> "Azawan walks, contrary to their plan."
+
+> `zazawan vowogal uem thamam balahen.`
+>
+> z-Azawan | v-walk | [contrary-to | [th-plan-itinerary | b-Alahen]]
+>
+> "Azawan walks, contrary to Alahen's plan."
+
+> `zazawan vowogal uem thevegem.`
+>
+> z-Azawan | v-walk | [contrary-to | th-hope]
+>
+> "Azawan walks, against my hopes."
+
+Only the stance right after **`uem`** is what the event goes against. A stance anywhere else in the clause still applies to the claim:
+
+> `zazawan vowogal uem thedel thegom.`
+>
+> z-Azawan | v-walk | [contrary-to | th-FORBID-disallowed] | th-PERMIT-granted
+>
+> "Azawan walks against the rules, and I'm allowing it."
+
+The stance after **`uem`** has to say something the event can go against: a ban, a requirement, a refusal, a plan, or what you hoped.
+
+| After **`uem`** | English |
+|-----------------|---------|
+| ban **`thedel`** / **`thedem`** / **`theder`** | *against the rules* / *though I forbade it* / *though people frown on it* |
+| requirement **`thumel`** / **`thumem`** / **`thumer`** | *contrary to regulations* / *against my orders* / *contrary to custom* |
+| refusal **`thuxedel`** / **`thuxedem`** / **`thuxeder`** | *against their will* (they opted out / they said no / they probably don't want it) |
+| plan **`thamar`** / **`thamam`** / **`thamal`** | *contrary to the plan* |
+| speaker attitude, such as **`thevegem`** | *against my hopes* |
+
+Permission and consent given (**`thegom`**, **`thuxegom`**) only lift a restriction, so nothing can go against them. Sake words cannot follow **`uem`** either: to say an act goes against someone's interest, put an [unmet](#sake-changeability) sake word on the clause (`zazawan vowogal thegathum balahen.` *Azawan's walking harms Alahen's interests*).
+
+**Compare with:** *despite the rain* is **`uem`** or **`hezom`** with a noun in `/b/` (`zazawan vowogal uem berehel.`). *Although Alahen said no* as a full sentence is **`hezom barl`** plus that sentence. The sentence after **`barl`** needs an event or a thing, so a stance word alone cannot fill it; use **`uem`** with the stance instead.
+
 ### Enough and too (sake bars) {#sake-bars}
 
 English *enough* and *too much* compare an amount with **what a need requires**. A met sake word on `/th/`, written as the [bar](comparatives.md#bars) right before a rank join, is what that sake needs. The equal-rank join **`zael`** is *enough*. Rank **`zel`** is *too much*, and **`zuel`** is *not enough*. Use the unspecified sake **`ega`** when you do not name which sake.
@@ -812,6 +878,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *sake* | `egal` | `egal` *egg* |
 | *permission* | `egol` | `egol` *green* |
 | *forbidden* | `edel` | `edel` *no-entry* |
+| *plan* | `amam` | `amal` *plan-atlas* |
 | *always* | `hual` | |
 
 #### English → Agazan {#intermediate-english-to-agazan}
@@ -958,6 +1025,30 @@ z-Azawan | v-tell | th-beneficence-ought-offered
 `zalahen thoyutham zel hral vebevol.`
 
 [z-Alahen | th-physical-met-any-term | z-rank/more | h-how-often] | v-pray
+:::
+
+**19.** *Alahen screams against the rules.*
+
+::: details Show answer
+`zalahen vezugel uem thedel.`
+
+z-Alahen | v-scream | [contrary-to | th-FORBID-disallowed]
+:::
+
+**20.** *Ahaben sleeps, contrary to their plan.*
+
+::: details Show answer
+`zahaben vezebal uem thamam.`
+
+z-Ahaben | v-sleep | [contrary-to | th-plan-itinerary]
+:::
+
+**21.** *Azawan tells against Ahaben's will (Ahaben said no).*
+
+::: details Show answer
+`zazawan vezebel uem thuxedem bahaben.`
+
+z-Azawan | v-tell | [contrary-to | [th-CONSENT-refused | b-Ahaben]]
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
@@ -1131,6 +1222,24 @@ z-bell | [w-purpose-unmet-modifiable | g-stimulus]
 [z-candle-x | th-sake-met-any-term | z-equal-rank | g-amount]
 
 *There are enough candles.*
+:::
+
+**20.** `zahaben vahehal uem thumem balahen.`
+
+::: details Show answer
+
+z-Ahaben | v-hush | [contrary-to | [th-REQUIRE-demanded | b-Alahen]]
+
+*Ahaben hushes, against Alahen's orders.*
+:::
+
+**21.** `zalahen vabayal uem thedel thegom.`
+
+::: details Show answer
+
+z-Alahen | v-bow | [contrary-to | th-FORBID-disallowed] | th-PERMIT-granted
+
+*Alahen bows against the rules, and I'm allowing it.*
 :::
 
 ## See also

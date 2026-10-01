@@ -197,6 +197,8 @@ For *since* before a sentence, put **`barl`** after **`ul`** and the starting ev
 >
 > "Azawan has been walking since Alahen fell asleep."
 
+**`ul`** is the only hook that takes **`barl`**. Every other hook needs a real noun in `/b/`.
+
 **Compare with:** *since* meaning *because* is **`thevem barl`**. Agazan keeps the time reading and the cause reading apart.
 
 ### Translation practice {#beginner-translation-practice}

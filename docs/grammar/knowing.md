@@ -653,6 +653,37 @@ A channel can also be the [bar](comparatives.md#bars) of a rank join: written ri
 
 MAY and MIRATIVE set no value, so neither is a bar.
 
+### Channels after `uem` {#channel-frame}
+
+A channel can also follow the hook **`uem`**, the same way as a ban or a plan ([contrary to a stance](sakes.md#contrary-to-stance)). The pair says the event goes **against what that channel told you**: *contrary to what I was told*, *against my gut*. The channel then says nothing about how you know the claim.
+
+> `zazawan vowogal uem thewam.`
+>
+> z-Azawan | v-walk | [contrary-to | th-TOLD]
+>
+> "Azawan walks, contrary to what I was told."
+
+> `zazawan vowogal uem thahom.`
+>
+> z-Azawan | v-walk | [contrary-to | th-FELT]
+>
+> "Azawan walks, against my gut."
+
+| After **`uem`** | Goes against | English |
+|-----------------|--------------|---------|
+| LIVE `thodom` | how it looks | *contrary to appearances* |
+| WITNESSED `thevom` | how you remember it | *contrary to what I remember* |
+| RECORDED `therem` | the record or the schedule | *contrary to the record* / *off schedule* |
+| PATTERN `thobam` | the trail of cases | *contrary to habit* / *unusually* |
+| INFERRED `thunem` | what was worked out | *contrary to my calculations* |
+| TOLD `thewam` | what was said | *contrary to what I was told* |
+| FELT `thahom` | your gut expectation | *against my gut* |
+| STORY `thozem` | the tales | *contrary to legend* |
+
+MIRATIVE already says the claim ran against what you expected, so it does not follow **`uem`**. MAY, NOTIONAL, RESIDUE, and FORMER do not either: none of them is something the event could go against.
+
+**Compare with:** `zazawan thezum vowogal.` says the walking surprised you. `zazawan vowogal uem thahom.` says your gut expected otherwise, whether or not the news surprised you.
+
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
@@ -1162,6 +1193,14 @@ A holder on a comparison bar names **whose expectation** you rank against. Insid
 > [z-Azawan | th-FELT-Alahen | z-rank/more | g-sleepy]
 >
 > "Azawan is sleepier than Alahen expected."
+
+A holder on a channel after [**`uem`**](#channel-frame) names **whose view** the event goes against. The seam covers only that pair: the event is still your claim.
+
+> `zazawan vowogal uem thewamalahen.`
+>
+> z-Azawan | v-walk | [contrary-to | th-TOLD-Alahen]
+>
+> "Azawan walks, contrary to what I hear Alahen thinks."
 
 A [feeling with no object](sakes.md#feeling-no-object) works the same way: the holder makes it someone else's feeling.
 

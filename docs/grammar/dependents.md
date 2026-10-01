@@ -95,6 +95,8 @@ When English puts a **noun** after *despite* (*despite Alahen*), keep the same *
 
 Ordinary `zezol` is still *a zebra*.
 
+The sentence after **`barl`** has to name an event or a thing, so it needs a noun or a verb. A stance word by itself does not fill it.
+
 The time poles take a noun the same way. Put the event or period in `/b/` right after **`huwem`** *during*, **`habam`** *before*, **`henum`** *after*, or **`homam`** *until*.
 
 > `zazawan vowogal huwem bavodel.`

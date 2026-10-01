@@ -10,11 +10,12 @@
  * - `stray`: `em` + `/b/` with no noun on its left; enforce rejects it.
  * - `span`: a hook between two same-kind endpoints.
  * - `resume`: a resume hook (`-r`) that points back.
+ * - `frame`: `uem` + a `/th/` stance it holds as the opposing frame (sakes.md#contrary-to-stance).
  */
 import { visitResult, visitUnit } from "./ast-walk.js";
 import type { LexWord, ParseResult, Unit } from "./types.js";
 
-export type HookJob = "discourse" | "clause" | "extraNoun" | "genitive" | "stray" | "span" | "resume";
+export type HookJob = "discourse" | "clause" | "extraNoun" | "genitive" | "stray" | "span" | "resume" | "frame";
 
 const SPAN_ENDPOINT_KIND: Record<string, string> = {
   "+": "scalar",
@@ -111,6 +112,7 @@ function genitiveHost(units: Unit[], index: number): "noun" | "recipient" | "non
 function hookJob(units: Unit[], index: number, afterJoin: boolean): HookJob {
   const unit = units[index];
   if (unit?.kind !== "hook") return "clause";
+  if (unit.frame) return "frame";
   const { word } = unit;
   const prevWord = unitWords(units[index - 1]).filter((w) => w.pos !== "w").at(-1);
   const nextWord = unitWords(units[index + 1])[0];

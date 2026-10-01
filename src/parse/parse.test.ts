@@ -630,3 +630,56 @@ describe("parse — spans.md /y/ spans", () => {
     assert.deepEqual(parseText("y[azawan] yol zalahen vowogal.").utterances[0]!.left.interjections.map((w) => w.raw), ["y[azawan]"]);
   });
 });
+
+describe("parse — contrary to a stance (uem + /th/)", () => {
+  const frameOf = (text: string) => {
+    const units = parseText(text).utterances[0]!.bodies[0]!.clause.units;
+    const hook = units.find((unit) => unit.kind === "hook");
+    assert.ok(hook && hook.kind === "hook", text);
+    return { hook, units };
+  };
+
+  it("holds the stance as the hook's frame, not a stance on the claim", () => {
+    for (const text of [
+      "zazawan vowogal uem thedel.",
+      "zazawan vowogal uem thumel.",
+      "zazawan vowogal uem thamam.",
+      "zazawan vowogal uem thehum.",
+      "zazawan vowogal uem thohum.",
+      "zazawan vowogal uem thewam.",
+      "zazawan vowogal uem thevegem.",
+      "zazawan vowogal uem thewamalahen.",
+    ]) {
+      const { hook, units } = frameOf(text);
+      assert.equal(hook.job, "frame", text);
+      assert.equal(hook.frame?.word.pos, "th", text);
+      assert.ok(!units.some((unit) => unit.kind === "h"), text);
+    }
+  });
+
+  it("keeps the stance's hosted /b/ inside the frame", () => {
+    const { hook } = frameOf("zazawan vezebel uem thuxedem balahen.");
+    assert.equal(hook.frame?.word.raw, "thuxedem");
+    assert.equal(hook.frame?.hosted?.bound.raw, "balahen");
+  });
+
+  it("takes the frame at the left edge too", () => {
+    const result = parseText("uem thedel zazawan vowogal.");
+    assert.equal(result.utterances[0]!.left.hook, undefined);
+    const { hook } = frameOf("uem thedel zazawan vowogal.");
+    assert.equal(hook.frame?.word.raw, "thedel");
+  });
+
+  it("leaves a stance elsewhere in the clause on the claim", () => {
+    const { hook, units } = frameOf("zazawan vowogal uem thedel thegom.");
+    assert.equal(hook.frame?.word.raw, "thedel");
+    const claim = units.filter((unit) => unit.kind === "h");
+    assert.deepEqual(claim.map((unit) => unit.kind === "h" && unit.unit.word.raw), ["thegom"]);
+  });
+
+  it("keeps uem + /b/ as an extra noun", () => {
+    const { hook } = frameOf("zazawan vowogal uem berehel.");
+    assert.equal(hook.job, "extraNoun");
+    assert.equal(hook.frame, undefined);
+  });
+});

@@ -6,7 +6,7 @@ Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* do
 
 ### English → Agazan {#english-cues}
 
-**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Continue](dependents.md#continue-x) · [Stacked discourse hooks](hooks.md#stacked-discourse) · [Because](causation.md#only-because) · [Point back](hooks.md#hook-resume) · [Clause sequence](join-across-roles.md#clause-sequence)
+**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Contrary to a stance](sakes.md#contrary-to-stance) · [Continue](dependents.md#continue-x) · [Stacked discourse hooks](hooks.md#stacked-discourse) · [Because](causation.md#only-because) · [Point back](hooks.md#hook-resume) · [Clause sequence](join-across-roles.md#clause-sequence)
 
 Time and discourse dependents use the same **`barl`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a pole root.
 
@@ -15,6 +15,7 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 | *although* / *while* / *whilst* / *until* / *till* / *before* / *after* | same pole + **`barl`** shape on adverb `/h/`, **-m** ([dependent clauses](dependents.md#dependent-clauses)): **`hezom`** / **`huwem`** / **`homam`** / … |
 | *so that* / *in order to* | same shape: **`hogom`** ([so that](dependents.md#so-that)); NP intended get = **`hogom`** + `/b/` **noun** |
 | *despite* (NP) | same **`hezom`** (or **`gezom`**) + `/b/` **noun**, not a second pole |
+| *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uem`** + the stance it goes against: `uem thedel` / `uem thuxedem balahen` / `uem thamam` / `uem thehul bamagon` / `uem thewam` ([contrary to a stance](sakes.md#contrary-to-stance)) |
 | *judging by* / *going by* / *given that* (grounds) | inferring or pattern channel + **`barl`**: **`thunem barl`** / **`thobam barl`** ([evidence clause](knowing.md#evidence-clause)) |
 | *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xodum`** ([continue](dependents.md#continue-x)) |
 | *thus* (*in this way*) | the same adverb again: `/h/` with **-r** ([how English approximates -r](pronouns.md#how-english-approximates-r)) |
@@ -145,7 +146,7 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 | *kill* | `zalahen vazagal thegem bazawan.` | Alahen dies, Azawan makes it happen |
 | *feed* | `zalahen vagudal thegem bazawan.` | Alahen eats, Azawan makes it happen |
 | *feed* (a child, nurture) | `zalahen vevedol dazawan.` | the nurturing root, no `thegem` |
-| *remove* | `zubugal vedabal ual zexagadel thegem bazawan.` | the book leaves the table, Azawan makes it happen |
+| *remove* | `zubugal vedabal ual bexagadel thegem bazawan.` | the book leaves the table, Azawan makes it happen |
 | *discard* | `zubugal veledol thegem bazawan.` | the book is disposed of |
 | *prevent* (make it not happen) | `zalahen vedabal vul thegem bazawan.` | Alahen does not leave, Azawan makes that so |
 | *prevent* (act so that it will not) | `zazawan vowogal hogom burl zalahen vedabal.` | Azawan walks so that Alahen does not leave |

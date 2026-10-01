@@ -331,7 +331,16 @@ export type Unit =
   | { kind: "predicate"; adj: GPackage }
   | { kind: "h"; unit: HUnit }
   | { kind: "linker"; word: LexWord }
-  | { kind: "hook"; word: LexWord; modifiers: LexWord[]; job?: HookJob; /** Its `/b/` pair describes the noun or landmark on its left, not the clause. */ onLeft?: true }
+  | {
+      kind: "hook";
+      word: LexWord;
+      modifiers: LexWord[];
+      job?: HookJob;
+      /** Its `/b/` pair describes the noun or landmark on its left, not the clause. */
+      onLeft?: true;
+      /** `uem` + a `/th/` stance: the opposing frame the event goes contrary to (sakes.md#contrary-to-stance). */
+      frame?: HUnit;
+    }
   | { kind: "span"; span: SpanUnit }
   | { kind: "writingSpan"; word: LexWord }
   | { kind: "island"; island: IslandUnit }
