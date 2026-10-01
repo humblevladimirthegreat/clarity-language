@@ -391,18 +391,17 @@ For *red books*, put **-x** on the **noun**; keep color and trait singular on `/
 
 ### Vocatives (`/y/`)
 
-To call a group at the start of a turn, put **-x** on the vocative (`/y/`) after its ending, the same way you mark associates on a noun. That names who you are talking to as an associative group.
+To call a group at the start of a turn, put **-x** on the vocative (`/y/`) after its ending, the same way you mark associates on a noun. That names who you are talking to as an associative group. A call ends in **-n** (or resumes with **-r**), so a kind you address takes **-n** as a title. An interjection (**-l** / **-m**) calls no one, so it takes no **-x**.
 
-> `yagadulx.`
+> `yagadunx.`
 >
-> y-cat-x
+> y-Agadun-x
 >
 > "Hey, cats!"
 
 | Agazan | Use | English |
 |--------|-----|---------|
-| **-lx** | kind-based group address | *hey, kids* |
-| **-nx** | titled group | *Team Alpha* |
+| **-nx** | a kind or a title as the group | *hey, kids*; *Team Alpha* |
 | **-rx** | prior addressee and associates | *hey, you (that one) and associates* |
 | **`yehodonx`** | current addressees, no name | *hey, you all* |
 

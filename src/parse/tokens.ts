@@ -47,6 +47,7 @@ export const Odo = wordToken("Odo");
 export const Force = wordToken("Force");
 export const Polar = wordToken("Polar");
 export const Vocative = wordToken("Vocative");
+export const Interjection = wordToken("Interjection");
 export const Linker = wordToken("Linker");
 export const Hook = wordToken("Hook");
 export const SpanOpen = wordToken("SpanOpen");
@@ -77,6 +78,7 @@ export const allTokens = [
   Force,
   Polar,
   Vocative,
+  Interjection,
   Linker,
   Hook,
   SpanOpen,
@@ -137,7 +139,8 @@ export type TokenBranch =
   | "greeting"
   | "polar"
   | "force"
-  | "yFallbackVocative"
+  | "yVocative"
+  | "yInterjection"
   | "linker"
   | "content"
   | "citationFallback";
@@ -149,6 +152,10 @@ export function classifyTokenBranch(word: LexWord): { type: AgazanTokenType; bra
   if (family.kind === "spanClose") return { type: SpanClose, branch: "spanClose" };
   // A written span fills its PoS slot: `d[…]` / `z[…]` / `b[…]` are NP heads; `v[…]`, `th(…)`, … take the V / H / … slot.
   if (family.kind === "writingSpan") {
+    // Under `/y/`: a named span (`y@<Sam>`) calls someone; any other span is the reaction itself.
+    if (pos === "y") {
+      return family.marks.includes("@") ? { type: Vocative, branch: "yVocative" } : { type: Interjection, branch: "yInterjection" };
+    }
     if (pos && pos !== "z" && pos !== "d" && pos !== "b" && pos in CONTENT_BY_POS) {
       return { type: CONTENT_BY_POS[pos as keyof typeof CONTENT_BY_POS], branch: "writingSpanSlot" };
     }
@@ -173,7 +180,9 @@ export function classifyTokenBranch(word: LexWord): { type: AgazanTokenType; bra
   if (pos === "y") {
     if (isPolarWord(word)) return { type: Polar, branch: "polar" };
     if (isForceWord(word)) return { type: Force, branch: "force" };
-    return { type: Vocative, branch: "yFallbackVocative" };
+    // -n (a name) and -r (a resume, read through its antecedent) call someone; -l / -m give the reaction itself.
+    if (word.ending === "l" || word.ending === "m") return { type: Interjection, branch: "yInterjection" };
+    return { type: Vocative, branch: "yVocative" };
   }
 
   if (pos === "x" && isLinkerWord(word)) return { type: Linker, branch: "linker" };

@@ -28,6 +28,7 @@ import {
   SpanOpen,
   V,
   Vocative,
+  Interjection,
   W,
   WritingSpan,
   Z,
@@ -166,7 +167,7 @@ class AgazanSentenceParser extends CstParser {
   public utterance = this.RULE("utterance", () => {
     this.OR([
       {
-        GATE: () => tokenIs(this.LA(1), Polar, Vocative, Force) || this.discourseHookAhead(),
+        GATE: () => tokenIs(this.LA(1), Polar, Vocative, Interjection, Force) || this.discourseHookAhead(),
         ALT: () => {
           this.SUBRULE(this.leftEdge);
           this.OPTION(() => {
@@ -184,7 +185,7 @@ class AgazanSentenceParser extends CstParser {
       this.CONSUME(Period);
       // After a sentence end, a turn word or hook opens a new utterance instead (the document loop takes it).
       this.OPTION2({
-        GATE: () => !tokenIs(this.LA(1), Polar, Force, Vocative, Hook),
+        GATE: () => !tokenIs(this.LA(1), Polar, Force, Vocative, Interjection, Hook),
         DEF: () => this.SUBRULE3(this.bodyClause, { LABEL: "nextBody" }),
       });
     });
@@ -195,9 +196,10 @@ class AgazanSentenceParser extends CstParser {
       {
         ALT: () => {
           this.AT_LEAST_ONE({
-            GATE: () => tokenIs(this.LA(1), Vocative, Polar) || this.discourseHookAhead(),
+            GATE: () => tokenIs(this.LA(1), Vocative, Interjection, Polar) || this.discourseHookAhead(),
             DEF: () => this.OR2([
               { ALT: () => this.CONSUME(Vocative) },
+              { ALT: () => this.CONSUME(Interjection) },
               { ALT: () => this.CONSUME(Polar) },
               {
                 GATE: () => this.discourseHookAhead(),
@@ -1418,10 +1420,11 @@ function impliedForceFromPolars(polars: LexWord[]): ImpliedForce | undefined {
 
 function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
   if (!cst) {
-    return { vocatives: [], polars: [], impliedForce: "yal" };
+    return { vocatives: [], interjections: [], polars: [], impliedForce: "yal" };
   }
 
   const vocatives = childTokens(cst, "Vocative").map(lexWordFromToken);
+  const interjections = childTokens(cst, "Interjection").map(lexWordFromToken);
   const polars = childTokens(cst, "Polar").map(lexWordFromToken);
   const hookTok = childToken(cst, "Hook");
   const forceTok = childToken(cst, "Force");
@@ -1432,6 +1435,7 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
 
   return {
     vocatives,
+    interjections,
     polars,
     hook: hookTok ? lexWordFromToken(hookTok) : undefined,
     hookModifiers: hookModifiers.length > 0 ? hookModifiers : undefined,

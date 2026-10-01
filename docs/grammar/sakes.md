@@ -2,7 +2,7 @@
 <a id="sakes"></a>
 <a id="sake-ascription"></a>
 
-A **sake** is something that is good for a person, a psychological payoff you can name (autonomy, competence, purpose, relatedness, beneficence, pleasure, physical, or an unspecified sake). It means *for your sake*, not curiosity, and an unmet sake is a cost to name, not a lack in you. At **Beginner**, a **stance** is how you stand toward that sake on a **noun**: it **serves** the sake or **detracts from** it. **Intermediate** adds **prescription** on the clause (deontic: the agent **ought to** do this act for this sake) and **motive** (*doing for* the sake).
+A **sake** is something that is good for a person, a psychological payoff you can name (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical, or an unspecified sake). It means *for your sake* (what is good for you), not *for argument's sake*, and an unmet sake is a cost to name, not a lack in you. At **Beginner**, a **stance** is how you stand toward that sake on a **noun**: it **serves** the sake or **detracts from** it. **Intermediate** adds **prescription** on the clause (deontic: the agent **ought to** do this act for this sake) and **motive** (*doing for* the sake).
 
 ## Beginner {#beginner}
 
@@ -10,18 +10,19 @@ Write the sake under `/ɡ/` when you talk about a **noun you keep** (how you fee
 
 ### Sake inventory {#sake-inventory}
 
-Eight published roots are the sakes you can name, and no other root takes the sake form. Pick one row. With mid-word **`th`** and a stance vowel, that root means the sake in the English column — not the everyday object in **Same root as**.
+Nine published roots are the sakes you can name, and no other root takes the sake form. Pick one row. With mid-word **`th`** and a stance vowel, that root means the sake in the English column — not the everyday object in **Same root as**.
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`ahu`** | autonomy sake | *autonomy* (choice, agency, self-direction) | `ahul` *ballot* | 🗳️: voting is choosing for yourself |
 | **`ulo`** | competence sake | *competence* (efficacy, skill, getting things to work) | `ulol` *toolbox* | 🧰: the kit that gets things working |
+| **`ado`** | understanding sake | *understanding* (making sense, learning, discovery) | `adol` *lightbulb* | 💡: the light goes on when it makes sense |
 | **`ame`** | purpose sake | *purpose* (meaning, direction, an aim that matters) | `amel` *compass* | 🧭: a heading worth following |
 | **`ana`** | relatedness sake | *relatedness* (connection, belonging, care) | `anal` *knot* | 🪢: ties people together |
 | **`ebe`** | beneficence sake | *beneficence* (making someone better off) | `ebel` *present* | 🎁: a gift leaves someone better off |
 | **`ozo`** | pleasure sake | *pleasure* (enjoyment, comfort, aesthetic payoff) | `ozol` *strawberry* | 🍓: sweetness you enjoy |
 | **`oyu`** | physical sake | *physical* (health, exercise, food, sleep, shelter, safety from harm) | `oyul` *lungs* | 🫁: breathing easy means the body is well |
-| **`ega`** | a sake without picking among the seven | *unspecified sake* | `egal` *egg* | 🥚: not yet a specific kind |
+| **`ega`** | a sake without picking among the eight | *unspecified sake* | `egal` *egg* | 🥚: not yet a specific kind |
 
 **Compare with:** `zahul` is a *ballot*. `gahul` is ballot-like. Under `/ɡ/` with **`tha`** / **`thu`**, **`ahu`** is the *autonomy* sake.
 
@@ -35,6 +36,7 @@ Each sake answers a different question about what pays off. Ask the question, th
 |------|---------------|
 | autonomy | *I chose it.* |
 | competence | *It worked; I can do this.* |
+| understanding | *It makes sense; I learned something.* |
 | purpose | *It matters.* |
 | relatedness | *We're connected.* |
 | beneficence | *Someone is better off because of me.* |
@@ -42,6 +44,10 @@ Each sake answers a different question about what pays off. Ask the question, th
 | physical | *My body is cared for and safe.* |
 
 **Compare with:** competence is how **well** it goes; purpose is whether it is **worth doing**. A failed try at something that matters still serves purpose, and it detracts from competence. Mastering a pointless puzzle serves competence, not purpose.
+
+**Compare with:** competence is whether it **works**; understanding is whether it **makes sense**. You can fix a machine you do not understand, and understand stars you can never change. A task that is too easy can meet competence and still leave understanding unmet: that is the boredom of nothing new to learn.
+
+**Compare with:** something new for its own sake (new sights, variety) is pleasure. Understanding pays off when the new thing **fits**: an hour of headlines can serve pleasure and leave understanding unmet.
 
 **Compare with:** relatedness lives in the **bond**, and it runs both ways. Beneficence lives in the **effect**: your act left someone better off, with or without a bond. An anonymous donation serves beneficence and leaves relatedness alone; an easy evening with friends serves relatedness with no one helped. Being helped is not your beneficence: it serves whichever sake of yours the help met.
 
@@ -300,7 +306,7 @@ z-flashlight | g-purpose-met-immediate
 
 ### Emotion compose {#emotion-compose}
 
-When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: an [sake stance](#sakes) on the situation, where the charge sits or what it points at, and how it moves. All three ride on **one word**: the sake word keeps its stance and its ending letter, then adds a **locus** (the vowels of a [hook](hooks.md#extra-noun)) and a **motion ending**. Put that word on `/ɡ/` after a belonging, or on `/w/` immediately before [stimulus](#stimulus) **`gobum`** when the noun is not yours. You can then say the take without smuggling a single emotion word. For the bare noun *emotion*, with no judgment to explain, the compound `zaholohahal` (the water of the heart) names it.
+When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: an [sake stance](#sakes) on the situation, where the charge sits or what it points at, and how it moves. All three ride on **one word**: the sake word keeps its stance and its ending letter, then adds a **locus** (the vowels of a [hook](hooks.md#extra-noun)) and a **motion ending**. Put that word on `/ɡ/` after a belonging, on `/w/` immediately before [stimulus](#stimulus) **`gobum`** when the noun is not yours, or on `/th/` by itself when the feeling has [no object](#feeling-no-object). You can then say the take without smuggling a single emotion word. For the bare noun *emotion*, with no judgment to explain, the compound `zaholohahal` (the water of the heart) names it.
 
 > `zezebel wulothuraor gobum.`
 >
@@ -344,11 +350,25 @@ The motion ending says how the feeling moves. Affect is **water**:
 
 | Motion ending | Use | English | Cue |
 |---------------|-----|---------|-----|
-| **-r** | SURGING | big, spiking, swinging, in waves | **-r** ≈ *right now*: a wave |
-| **-m** | FLOWING | clear and moving at a pace you can ride, calm or strong | **-m** ≈ the ordinary case: a current |
-| **-l** | STILL | muted, faint, numb, frozen | **-l** ≈ *locked*: still water |
+| **-r** | SURGING | moving in waves or spikes: rising, falling, swinging | **-r** ≈ *right now*: a wave |
+| **-m** | FLOWING | moving steadily, at a pace you can ride | **-m** ≈ the ordinary case: a current |
+| **-l** | STILL | not moving: held, frozen, numb | **-l** ≈ *locked*: still water |
 
-Surging and still are information, not verdicts. Strong but steady anger is flowing; so is calm contentment. Surging can be a cue to ground; still can be a cue to rest, or to re-engage gently. Freezing is STILL: AWAY with **-l** is *frozen, wanting out*.
+Motion is how the feeling moves, not how strong it is. Strong but steady anger is flowing, and so is calm contentment. Fury held in check and a numb flatness are both still. Surging and still are information, not verdicts: surging can be a cue to ground; still can be a cue to rest, or to re-engage gently. Freezing is STILL: AWAY with **-l** is *frozen, wanting out*.
+
+Say how **strong** the feeling is with a [degree word](clause.md#degree-w) on `/w/` right before the feeling word. Before a `/ɡ/` feeling it grades that adjective as usual. Before a `/w/` feeling, it grades the feeling, not the stimulus. With no degree word, strength is unstated.
+
+> `zebeyom wohahal gulothamar.`
+>
+> z-draft | [w-ocean | g-competence-met-any-term-INTERNAL-SURGING]
+>
+> "Overwhelmingly proud of the draft."
+
+> `zumel wamazam wanathumom gobum balahen.`
+>
+> z-memo | [[w-small | w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | b-Alahen]
+>
+> "A little irritated at Alahen about the memo, steadily."
 
 The tail goes on met **`tha`**, motive **`tho`**, and unmet **`thu`** words. Prescription **`the`** is advice, not a feeling, so it takes no tail. A word with no tail (`wulothur`) is an ordinary sake word.
 
@@ -364,9 +384,9 @@ The tail goes on met **`tha`**, motive **`tho`**, and unmet **`thu`** words. Pre
 | `zumel wanathumuer gobum` | *objecting to the memo* (unmet relatedness; pushing against the memo; surging) |
 | `zezebel wamethumal gobum` | *the dialogue feels pointless* (unmet purpose; held inside; still) |
 | `zebeyom gebethamam` | *glad my draft helped* (met beneficence; held inside; flowing) |
-| `zezebel wulothuruol gobum` | *uneasy about the dialogue, and I can't say why* (competence at stake, temporary; unplaced; still) |
+| `zezebel wamazam wulothuruom gobum` | *a little uneasy about the dialogue, and I can't say why* (competence at stake, temporary; slightly; unplaced; flowing) |
 
-Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
+Raw feeling (contacting a sensation without judgment) may go unlabeled. To name a feeling without explaining it, its lexicon root works as an ordinary [property](predication.md) word: `zSELFn ganegel` (*I am angry*). Full compose is for when an emotion word would have done evaluative work.
 
 **Compare with:** *could be* uses [MAY](knowing.md#may) (`thovum`). *Because of* is a causal claim with the because pole. The stimulus says what the feeling is **about**; a direction `/b/` says what it is **aimed at**; the because pole says what **caused** it.
 
@@ -475,9 +495,29 @@ On **`the`**, use **-l** for an invitation, **-m** for an offer, and **-r** for 
 >
 > "Azawan tells: it serves competence in the long term, and relatedness is the motive."
 
+### Feeling with no object {#feeling-no-object}
+
+On the clause, a feeling word is about the clause's event: `zalahen vowogal thanathamar` is *moved that Alahen walks*. With no event at all, a feeling word on `/th/` is a whole sentence about **you**: how you feel right now, with nothing as its object.
+
+> `thulothuruor.`
+>
+> th-competence-unmet-passing-UNPLACED-SURGING
+>
+> "I'm anxious."
+
+A lone feeling can still name what caused it. The cause is not the object: the feeling is not *about* the rain.
+
+> `thulothuruor thevem berehel.`
+>
+> th-competence-unmet-passing-UNPLACED-SURGING | [th-because | b-rain]
+>
+> "I'm anxious, and the rain caused it."
+
+**Compare with:** a lone noun before the feeling is an [existence](predication.md#existence) clause, so the noun's being there is the stimulus: `zalahen thulothuruor.` is *anxious that Alahen is here*, not *Alahen is anxious*.
+
 ### Thanks and sorry {#thanks-sorry}
 
-Agazan has no set phrase for *thank you*. Say that what the other person did **met your sake**: a lone clause `/th/` met word is a whole sentence, and saying it to the one who acted is the thanks. Pick the sake that was actually served; the ending says how long the payoff lasts ([endings on met](#time-horizon-endings-on-met)). (cue: thanks = *that met my sake*)
+Agazan has no set phrase for *thank you*. Say that your sake **is met**: a lone `/th/` met word is a whole sentence about you, the same shape as a [feeling with no object](#feeling-no-object), and saying it to the one who acted is the thanks. Pick the sake that was actually served; the ending says how long the payoff lasts ([endings on met](#time-horizon-endings-on-met)). (cue: thanks = *my sake is met*)
 
 > `thanatham.`
 >
@@ -490,6 +530,14 @@ Agazan has no set phrase for *thank you*. Say that what the other person did **m
 > th-competence-met-lasting
 >
 > "That will keep helping me do it." — *thanks, that sets me up*
+
+Add an emotion tail to say how the thanks moves you:
+
+> `thanathamar.`
+>
+> th-relatedness-met-any-term-INTERNAL-SURGING
+>
+> "I'm so moved." — *thank you, that really touched me*
 
 | Agazan | Use | English |
 |--------|-----|---------|

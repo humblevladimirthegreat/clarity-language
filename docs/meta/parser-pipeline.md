@@ -113,7 +113,7 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause pole
 
 | `kind` | `LexReading` | Inventory |
 |--------|--------------------|-----------|
-| `sake` | `sake` (on `x`+vowel hosts only) | seven sakes + unspecified; bare spelling is ordinary content |
+| `sake` | `sake` (on `x`+vowel hosts only) | eight sakes + unspecified; bare spelling is ordinary content |
 | `ability` | `ability` | hostless **`eze`** |
 | `join_act` | `joinAct` | vowel-series `/v/` **`an`** / **`on`** / … |
 | `join_relation` | `joinRelation` | same stems on `/g/` `/h/` |
@@ -140,6 +140,7 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause pole
 | `exchange` | `exchange` | *in-exchange-for* **`ehe`** |
 | `proxy` | `proxy` | *on-behalf-of* **`ade`** |
 | `stimulus` | `stimulus` | need about an unowned noun **`obu`** |
+| `mirative` | `mood` | MIRATIVE expectation map (firm / default / loose) on **`ezu`** |
 
 Later splits of `mood` (token class, gloss tag) can follow this column without new English regexes. Special pronouns stay published + gloss, not this table, until they need a parse fork.
 

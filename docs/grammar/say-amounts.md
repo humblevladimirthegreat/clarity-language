@@ -226,7 +226,7 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 | *gently* | `hegehem` |
 | *properly* | `hegegam` |
 | *seriously* | `hezedom` |
-| *surprisingly* / *suddenly* | `hazebam` |
+| *surprisingly* / *suddenly* | `hezum` |
 | *successfully* | `hamedam` |
 | *strongly* | `habezem` |
 | *heavily* | `haragam` |

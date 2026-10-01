@@ -338,7 +338,7 @@ A label with no scope vowel says nothing about how far it reaches. Use one when 
 | **`tho`** | true in one relationship: relative to the hosted `/b/` right after it, or to an unstated party | *a stranger to Azawan*, *lying, as far as Alahen is concerned* | **o** ≈ one (that extra one) |
 | **`thu`** | a name only: a tag for what happens, not an explanation of it | *what gets called anxiety*, *so-called lazy* | **u** ≈ undo (undo the implied cause) |
 
-The seam goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`. The six [sake](sakes.md) roots use this spot for their own stances instead.
+The seam goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`. The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead.
 
 #### This occasion (`tha`) {#scope-occasion}
 

@@ -302,6 +302,40 @@ The ending on a channel says **how strong the evidence is**: how much the claim 
 >
 > "Azawan walked — I remember it clearly."
 
+### Mirative (`thezum`) {#mirative}
+
+English *it turns out*, *to my surprise*, and *so … after all* say the news ran **against what you expected**. Put **`thezum`** on the clause. It is not a channel: it says nothing about how you know, so add a channel beside it when you want to name the warrant.
+
+> `zalahen thezum vedabal.`
+>
+> z-Alahen | th-MIRATIVE | v-departure
+>
+> "Alahen left, it turns out."
+
+The ending says how firm the expectation was that the news overturned. If you do not know, use **-m**.
+
+| Agazan | Use | English | Cue |
+|--------|-----|---------|-----|
+| `thezul` | it overturns a firm expectation | *astonishingly*, *I never expected that* | **-l** ≈ the expectation was locked in |
+| `thezum` | it runs against what you expected (default) | *it turns out*, *surprisingly* | **-m** ≈ the ordinary case |
+| `thezur` | it runs against a loose expectation | *oh*, *as it happens* | **-r** ≈ a passing guess |
+
+> `zalahen thodom thezul vowogal.`
+>
+> z-Alahen | th-LIVE | th-MIRATIVE.firm | v-walk
+>
+> "Alahen is walking, I see it, and I never expected that."
+
+The mirative says only that the news was unexpected, not whether it is good or bad. To say how it lands, add a [feeling](sakes.md#emotion-compose): the mirative after **`gobum`** says the stimulus was unexpected.
+
+> `zebel wanathamar gobum thezum.`
+>
+> [z-present | [w-relatedness-met-any-term-INTERNAL-SURGING | g-stimulus]] | th-MIRATIVE
+>
+> "Pleasantly surprised by the present."
+
+**Compare with:** *even* on the including hook ([`wezum al`](hooks.md#hook-w)) singles out the one unexpected member of a set. **`thezum`** says the whole claim was unexpected.
+
 ### Forecasts (`bral`) {#forecast}
 
 Agazan has no *will* word for the world. To say something **will** happen, use a channel and put the later offset **`bral`** right after it: a `/b/` number with a plus sign and no digits, meaning *some time after now*. The channel says what the forecast rests on, so a forecast cannot hide its warrant. For a hunch, the honest channel is FELT. The mirror **`brul`** is *some time before now*, for a past claim with no measured amount.
@@ -334,7 +368,7 @@ In a [question](questions.md#question), the channel asks for the **listener's** 
 >
 > "Will it rain, going by the pattern?"
 
-On a [feeling](sakes.md#emotion-compose) (a sake word with a locus and a motion ending, before **`gobum`**), the channel and offset date the **stimulus**. The feeling itself stays now; to date a stance, use [stance as-of](relations.md#stance-as-of).
+On a [feeling](sakes.md#emotion-compose) (a sake word with a locus and a motion ending, before **`gobum`**), the channel and offset date the **stimulus**. On a [feeling with no object](sakes.md#feeling-no-object), they date a stimulus you leave unnamed. The feeling itself stays now; to date a stance, use [stance as-of](relations.md#stance-as-of).
 
 **Compare with:** [PLAN](intention.md#plan-predict) (`thamam`) says what someone **intends** to do; it needs no channel. A forecast is a claim about the world. To say **how much** later (*in three hours*), replace `bral` with a measured [dated channel](#dated-channel) (Advanced). *Could be* with no warrant is [MAY](#may), not a forecast.
 
@@ -591,7 +625,7 @@ When you are not sure, use **`thavom`**.
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. Write a **channel** or **NOTIONAL**, and when the prompt asks, **RESIDUE** or **FORMER**.
+Short drills for Intermediate. Try each item before opening **Show answer**. Write a **channel** or **NOTIONAL**, and when the prompt asks, **RESIDUE**, **FORMER**, or **MIRATIVE**.
 
 **Setting:** a press conference
 
@@ -624,6 +658,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Wri
 | *NOTIONAL* | `thavom` | `avol` *theater* |
 | *RESIDUE* | `thamom` | `amom` *debt* |
 | *FORMER* | `thenom` | `enom` *emptiness* |
+| *MIRATIVE* | `thezum` | `ezul` *surprise* |
 | *always* | `hual` | |
 | *TOLD.weak* | `thewar` | `ewal` *ear* |
 | *PATTERN.strong* | `thobal` | `obal` *paw-prints* |
@@ -752,6 +787,14 @@ z-Alahen | v-punch | [th-INFERRED | b-that-clause] | z-Azawan | v-scream
 `zazawan vezugel thevem barl zalahen vabahel.`
 
 z-Azawan | v-scream | [th-because | b-that-clause] | z-Alahen | v-punch
+:::
+
+**16.** *Alahen sings, it turns out — seen live.*
+
+::: details Show answer
+`zalahen thodom thezum vezehel.`
+
+z-Alahen | th-LIVE | th-MIRATIVE | v-sing
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
@@ -1048,7 +1091,7 @@ The holder word ends the way a noun for that person would. **-n** is a name. **-
 | In the clause | With no holder | With a holder |
 |---------------|----------------|---------------|
 | The event | you assert it | what the holder takes to be so; you do not assert it |
-| MAY, CAUSE poles, DECISION, prescription | yours | the holder's |
+| MAY, MIRATIVE, CAUSE poles, DECISION, prescription | yours | the holder's |
 | [Sake](sakes.md) words and [emotion compose](sakes.md#emotion-compose), with their endings | your stake and feeling | the holder's stake and feeling |
 | A `/ɡ/` sake's *my* reading ([personal possession](sakes.md#personal-possession)) | your belonging | the holder's belonging |
 | Another evidential | how you know | how the holder knows |
@@ -1065,6 +1108,20 @@ The holder word ends the way a noun for that person would. **-n** is a name. **-
 > z-Alahen | th-INFERRED-Azawan | th-LIVE | v-departure
 >
 > "I gather Azawan saw Alahen leave." — LIVE is how Azawan knows
+
+> `zalahen thezum thunemazawan vedabal.`
+>
+> z-Alahen | th-MIRATIVE | th-INFERRED-Azawan | v-departure
+>
+> "I gather Alahen's leaving surprised Azawan." — the surprise is Azawan's
+
+A [feeling with no object](sakes.md#feeling-no-object) works the same way: the holder makes it someone else's feeling.
+
+> `thulothuruor thunemalahen.`
+>
+> th-competence-unmet-passing-UNPLACED-SURGING | th-INFERRED-Alahen
+>
+> "I gather Alahen is anxious."
 
 Pronouns and speech moves stay yours: **`SELF`** is still you, and the sentence is still your turn. The stance is the holder's **now**; to date it, add [stance as-of](relations.md#stance-as-of) (`thuhum`), which then dates **their** stance. An evidential host keeps its hosted `/b/`, so `thewamazawan bral` is *I hear Azawan expects it*.
 

@@ -12,7 +12,7 @@ At the start of a turn, write its act word immediately before the body (subject,
 
 ### Call someone (`/y/` + name) {#vocative}
 
-To call someone into the turn, put `/y/` before their name, which ends in **-n**. The call can be the whole turn or come before a clause.
+To call someone into the turn, put `/y/` before their name, which ends in **-n**. The call can be the whole turn or come before a clause. A `/y/` word that ends in **-n** is always a call.
 
 > `yalahen.`
 >
@@ -20,22 +20,29 @@ To call someone into the turn, put `/y/` before their name, which ends in **-n**
 >
 > "Alahen!" (calling Alahen)
 
+To call someone by what they are (*Waiter!*, *Doctor!*), use the kind as a title: it still ends in **-n**, so `yagavon` calls the guard.
+
 **Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`SELFn.`). Calling Alahen uses `/y/`; saying Alahen walks uses `/z/` (`zazawan vowogal`).
 
-### Interjections: conventional calls
+### Interjections: reactions
 <a id="interjections"></a>
+<a id="interjections-conventional-calls"></a>
 
-An **interjection** is a short call that stands on its own, such as a reaction or exclamation. Write the reaction under `/y/` and end it in **-n** to name the call:
+An **interjection** is a short reaction or exclamation that stands on its own. Write the reaction under `/y/` with an ordinary ending: **-l** for the everyday sense, **-m** for the abstract sense, just as on any [first mention](word-endings.md#beginner).
 
-> `yazeban.`
+> `yezul.`
 >
-> y-Azeban
+> y-surprise
 >
 > "Surprise!"
 
-A person’s name under `/y/` calls that person (`yalahen`); an interjection gives the reaction itself as the call.
+> `yezum.`
+>
+> y-amazement
+>
+> "Amazing!"
 
-Here **-n** names the conventional call *Surprise!*, not a person.
+The ending tells a reaction from a call: **-n** calls someone (`yalahen`, `yagavon`), and **-l** / **-m** give the reaction itself. So `yagavol` is *Guard!* shouted as an alarm, and `yagavon` calls the guard over.
 
 ### Speech act: statement, question, command
 <a id="speech-act-beginner"></a>
@@ -71,7 +78,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Ahaben* | `ahaben` |
-| *surprise* | `azebal` |
+| *surprise* | `ezul` |
 | *sit* | `vehahel` |
 | *sneak* | `vezevul` |
 | *run* | `varahal` |
@@ -94,12 +101,12 @@ y-Ahaben
 y-prohibition | v-sneak
 :::
 
-**3.** *Surprise!* (as a call)
+**3.** *Surprise!* (as a reaction)
 
 ::: details Show answer
-`yazeban.`
+`yezul.`
 
-y-Azeban
+y-surprise
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}

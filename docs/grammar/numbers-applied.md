@@ -114,7 +114,7 @@ Base and everyday units (each row is a **unit metaphor**; the literal picture st
 | ampere | `agude` *ampere* | `bagudem g+2` | `agudel` *cable-car* | 🚠: current along a line |
 | kelvin | `azaho` *kelvin* | `bazahom g+300` | `azahol` *ice* | 🧊: thermodynamic temperature |
 | mole | `amagu` *mole* | `bamagum g+1` | `amagul` *microscope* | 🔬: amount of substance |
-| candela | `aloda` *candela* | `balodam g+100` | `alodal` *lightbulb* | 💡: luminous intensity |
+| candela | `ado` *candela* | `badom g+100` | `adol` *lightbulb* | 💡: luminous intensity |
 | hour (civil duration) | `agaze` *hour* | `bagazem g+3` | `agazel` *hourglass* | ⏳: civil hour block |
 | day | `azaza` *day* | `bazazam g+2` | `azazal` *sunrise* | 🌅: sunrise to sunrise |
 | week | `agada` *week* | `bagadam g+1` | `agadal` *calendar* | 📅: one row of the calendar page |

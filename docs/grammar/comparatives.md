@@ -547,16 +547,15 @@ Each bar is a hosted overlay: published root plus **-n** under `/z/` `/d/` `/b/`
 | Agazan | Use | English | Same root as |
 |---------|-----|---------|----------------|
 | **`zuyen`** | named Average bar | *Average* (mean of the relevant population) | `uyel` *yin-yang* |
-| **`zehon`** | named Typical bar | *Typical* (usual / modal case) | `ehol` *hamster* |
+| **`zehon`** | named Typical bar | *Typical* (the usual or modal case; with one ranked item, that item's own usual level) | `ehol` *hamster* |
 | **`zumun`** | speaker’s **normative** bar | *my standard* | `umul` *mirror* |
 | **`zuzan`** | named peer bar | *Social* (in-group) | `uzal` *silhouettes* |
 | **`zolan`** | named expert bar | *Professional* (role standard) | `olal` *lab coat* |
 | **`zogen`** | named universal class | *Everyone* | `ogel` *globe* |
-| **`zedun`** | the ranked item's **own** usual level | *Usual* (than it usually is or does) | `edul` *repeat* |
 
 <a id="mine-vs-speaker"></a>
 
-**`zamagon`** is where the speaker sits on the scale (current skill). **`zumun`** is the bar the speaker applies. **`zedun`** is the ranked item measured against **itself**: *more slowly than usual*, *neater than you usually write*. **`zehon`** is the usual case for everyone. Ordinary people as bars are ordinary **-n** names (`zalahen`). *Walks like a duck* is [simile](relations.md#similative) (`humum`), not this *my standard* bar.
+**`zamagon`** is where the speaker sits on the scale (current skill). **`zumun`** is the bar the speaker applies. **`zehon`** is the usual case: for the group in play, or, when the ranked item is one person or thing, that item's own usual level (*more slowly than usual*, *neater than you usually write*). Ordinary people as bars are ordinary **-n** names (`zalahen`). *Walks like a duck* is [simile](relations.md#similative) (`humum`), not this *my standard* bar.
 
 Single-item `zazawan zuel gamadam` is *the least challenging* in the group in play. **`zogen`** as the second name **names** the universal class as the bar. Standalone closed **`zual`** / stock **`zuan`** stay [join](joins.md#standalone-phrase) *everything / everyone* in other slots — not this overlay.
 
@@ -569,7 +568,7 @@ Single-item `zazawan zuel gamadam` is *the least challenging* in the group in pl
 | `zamagon zuzan zuel gamadam` | I am less challenging than Social |
 | `zamagon zehon zuel gamadam` | I am less challenging than Typical |
 | `zamagon zogen zuel gamadam` | I am less challenging than Everyone |
-| `zazawan zedun zel gamadam` | Azawan is more challenging than **usual** (than Azawan usually is) |
+| `zazawan zehon zel gamadam` | Azawan is more challenging than **usual** (than Azawan usually is) |
 | `zamagon zalahen zuel gezehel` | I am less skilled at singing than **Alahen** (ordinary person comparee) |
 
 ### Sake benchmarks (*enough* / *too*) {#sake-benchmarks}
@@ -582,6 +581,7 @@ English *enough* and *too* compare against **what a sake requires**. Agazan name
 | **`zoyun`** | physical sake bar | *what staying well needs* | `oyul` *lungs* |
 | **`zanan`** | relatedness sake bar | *what connection needs* | `anal` *knot* |
 | **`zulon`** | competence sake bar | *what getting it done needs* | `ulol` *toolbox* |
+| **`zadon`** | understanding sake bar | *what making sense needs* | `adol` *lightbulb* |
 | **`zahun`** | autonomy sake bar | *what choice needs* | `ahul` *ballot* |
 | **`zozon`** | pleasure sake bar | *what enjoyment needs* | `ozol` *strawberry* |
 | **`zamen`** | purpose sake bar | *what mattering needs* | `amel` *compass* |
@@ -689,11 +689,11 @@ How often and how early work the same way: put a bar in the list and use the [fr
 >
 > "Azawan arrives too early."
 
-To compare someone with their own habit (*eat more slowly*), use the **`zedun`** *Usual* bar.
+To compare someone with their own habit (*eat more slowly*), use the **`zehon`** *Typical* bar: with one ranked item, Typical is that item's own usual level.
 
-> `zahan zedun zel hezehom vagadel.`
+> `zahan zehon zel hezehom vagadel.`
 >
-> [z-interlocutors | z-Usual | z-rank/more | h-slow] | v-eat
+> [z-interlocutors | z-Typical | z-rank/more | h-slow] | v-eat
 >
 > "We eat more slowly than usual."
 
@@ -706,7 +706,7 @@ To compare someone with their own habit (*eat more slowly*), use the **`zedun`**
 | *often* / *rarely* | **`zehon`** with **`hral`** (`zel` / `zuel`) |
 | *late* / *early* | **`zehon`** with **`bral`** (`zel` / `zuel`) |
 | *too late* / *too soon* | **`zegan`** with **`bral`** (`zel` / `zuel`) |
-| *than usual* (the same person or thing) | **`zedun`** *Usual* |
+| *than usual* (the same person or thing) | **`zehon`** *Typical* |
 
 The bar is never dropped. A single-item `zagadulx zel gral` already means *the most cats* (a [superlative](#superlatives)).
 

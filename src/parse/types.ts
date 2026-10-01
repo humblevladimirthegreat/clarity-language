@@ -198,7 +198,10 @@ export type PunctKind = "period" | "qmark" | "bang";
 
 /** Left-edge cluster before a clause body. */
 export type LeftEdge = {
+  /** Calls: `/y/` names (-n), named spans (`y@<…>`), and `/y/` resumes (-r, read through their antecedent). */
   vocatives: LexWord[];
+  /** Reactions: `/y/` words in -l / -m (numbers included) and unnamed spans (`y<…>`). */
+  interjections: LexWord[];
   polars: LexWord[];
   hook?: LexWord;
   /** `/w/` immediately before a left-edge hook. */

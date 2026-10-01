@@ -291,7 +291,7 @@ function clauseNodes(cur: Cursor, clause: Clause): GlossNode[] {
 function utteranceNodes(cur: Cursor, utt: Utterance): GlossNode[] {
   const out: GlossNode[] = [];
   const left = utt.left;
-  for (const w of [...left.vocatives, ...left.polars]) {
+  for (const w of [...left.vocatives, ...left.interjections, ...left.polars].sort((a, b) => (a.at ?? 0) - (b.at ?? 0))) {
     const n = cur.take(w);
     if (n) out.push(n);
   }

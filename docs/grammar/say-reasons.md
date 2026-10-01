@@ -52,7 +52,7 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 | *basically* / *fundamentally* | `hadawam` | manner adverb on *fundamental* |
 | *overall* / *on the whole* | `hahehom bual` | as for everything |
 | *automatically* / *by itself* | `zubugal vowogal thegem bubugar.` | CAUSE, with the doer resumed as its own cause |
-| *increasingly* / *more and more* | `zedun zel` + the quality | more than it was |
+| *increasingly* / *more and more* | `zehon zel` + the quality | more than it usually is |
 | *unfortunately* | `thegathum` | unspecified sake, unmet, can be softened |
 | *unfortunately* (and it is final) | `thegathul` | unspecified sake, unmet, irreversible |
 
@@ -361,7 +361,7 @@ English *I hope X will happen* is two claims: you want it, and you expect it. **
 
 **Needs:** [Sake inventory](sakes.md#sake-inventory) · [Met](sakes.md#time-horizon-endings-on-met) · [Emotion compose](sakes.md#emotion-compose) · [Thanks and sorry](sakes.md#thanks-sorry) · [Sake benchmarks](comparatives.md#sake-benchmarks)
 
-English *useful*, *helpful*, *important* and *benefit* judge a thing by what it does for someone. Agazan names the someone's **sake** (autonomy, competence, purpose, relatedness, beneficence, pleasure, physical). A met word says the thing serves that sake, and its ending says how long the payoff lasts. On a noun that is yours, the sake word sits on `/ɡ/`. On another noun, put it on `/w/` before **`gobum`**. Put a person in `/b/` for whose sake it is.
+English *useful*, *helpful*, *important* and *benefit* judge a thing by what it does for someone. Agazan names the someone's **sake** (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical). A met word says the thing serves that sake, and its ending says how long the payoff lasts. On a noun that is yours, the sake word sits on `/ɡ/`. On another noun, put it on `/w/` before **`gobum`**. Put a person in `/b/` for whose sake it is.
 
 | English | Agazan | Reading |
 |---------|--------|---------|
@@ -617,6 +617,14 @@ Other shapes use forms you already have:
 | recurring | [always](restrictors.md) `hual` | *dreading every dialogue* |
 | did not happen | [NOTIONAL](knowing.md#notional) | *relieved about what didn't happen* |
 
+A [feeling with no object](sakes.md#feeling-no-object) can take a channel and offset too. Then the stimulus is real but unnamed: you know when it is, not what it is.
+
+> `thulothuruor thahor bral.`
+>
+> th-competence-unmet-passing-UNPLACED-SURGING | [th-FELT.weak | b-later]
+>
+> "Anxious about something I sense is coming."
+
 How the stimulus is known matters. A scheduled dialogue (`therel`) and a hunch (`thahor`) can feel the same; the grammar asks which one it is.
 
 ### Feeling then {#emotion-feeling-time}
@@ -666,6 +674,40 @@ A direction locus says where the charge **goes**. It does not say who **caused**
 > "Resentful at Alahen about the memo; maybe Alahen was wrong to tell."
 
 Put an **act** after the pole (`barl zalahen vezebel`), not the person. A feeling can be aimed at Alahen; blame goes on what Alahen did.
+
+### Curious, confused, bored, awed, surprised {#understanding-feelings}
+
+**Needs:** [Sake inventory](sakes.md#sake-inventory) · [Emotion compose](sakes.md#emotion-compose) · [Feeling with no object](sakes.md#feeling-no-object) · [Mirative](knowing.md#mirative)
+
+Most of these feelings are about the **understanding** sake: whether something makes sense. Surprise is different. It says the news ran against what you expected, so it is the [mirative](knowing.md#mirative), and a sake word says how the news lands.
+
+| English | Agazan | Reading |
+|---------|--------|---------|
+| *curious about* | `wadothomom gobum` | understanding as the motive, aimed at it, flowing |
+| *interested in* | `wadothamam gobum` | understanding met, held inside, flowing |
+| *fascinated by* | `wadothamor gobum` | understanding met, aimed at it, surging |
+| *it clicked* / *aha* | `thadotharar.` | understanding met right away, held inside, surging |
+| *confused by* | `wadothumaom gobum` | understanding unmet, can be softened, over the situation, flowing |
+| *bored by* | `wadothurul gobum` | understanding unmet for now, moving off, still |
+| *bored* (no object) | `thadothural.` | understanding unmet for now, held inside, still |
+| *in awe of* | `wadothalaol gobum` | understanding met for good, over the situation, still |
+| *it turns out* / *surprisingly* | `thezum` | mirative on the clause |
+| *amazed* / *astonished* | `thezul` | mirative: a firm expectation overturned |
+| *pleasantly surprised by* | a met feeling + `thezum` | how it lands, plus the mirative |
+
+> `zagegel wadothalaol gobum.`
+>
+> z-galaxy | [w-understanding-met-lasting-CIRCUM-STILL | g-stimulus]
+>
+> "In awe of the galaxy."
+
+> `zebel wozothamar gobum thezum.`
+>
+> [z-present | [w-pleasure-met-any-term-INTERNAL-SURGING | g-stimulus]] | th-MIRATIVE
+>
+> "Pleasantly surprised by the present."
+
+Something new for its own sake (new sights, variety) is the pleasure sake, not understanding. *Bored* can be either: nothing new to enjoy is unmet pleasure; nothing new to learn is unmet understanding.
 
 ## Practice {#practice}
 

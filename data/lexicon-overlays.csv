@@ -13,6 +13,8 @@ ozom,th,🍓,sake,pleasure,pleasure sake (sweetness / enjoyment),strawberry is p
 ozom,w,🍓,sake,pleasure,pleasure sake (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,sakes.md#personal-possession
 oyum,th,🫁,sake,physical,physical sake (body / health / safety / shelter),lungs keep you breathing; the physical sake is a body that is fed and housed and well and safe,sakes.md#prescription-the-ought-this-act-for-this-sake
 oyum,w,🫁,sake,physical,physical sake (body / health / safety / shelter),lungs keep you breathing; the physical sake is a body that is fed and housed and well and safe,sakes.md#personal-possession
+adom,th,💡,sake,understanding,understanding sake (sense-making / learning),a lightbulb switches on; understanding is the moment it makes sense,sakes.md#prescription-the-ought-this-act-for-this-sake
+adom,w,💡,sake,understanding,understanding sake (sense-making / learning),a lightbulb switches on; understanding is the moment it makes sense,sakes.md#personal-possession
 egam,th,🥚,sake,sake,unspecified sake (potential),egg holds unrealized life; potential names a sake without picking which,sakes.md#prescription-the-ought-this-act-for-this-sake
 egam,w,🥚,sake,sake,unspecified sake (potential),egg holds unrealized life; potential names a sake without picking which,sakes.md#personal-possession
 evom,th,🎣,evidential,WITNESSED,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidentiality
@@ -63,6 +65,9 @@ ozer,th,📜,evidential,STORY.weak,story evidential with weak evidence (loose an
 ozem,w,📜,evidential,STORY,story evidential (tale / lore / anecdote),scroll holds a tale; tale is narrative framing channel,knowing.md#mood-on-one-adjective
 ozel,w,📜,evidential,STORY.strong,story evidential with strong evidence (established lore),scroll holds a tale; tale is narrative framing channel,knowing.md#mood-on-one-adjective
 ozer,w,📜,evidential,STORY.weak,story evidential with weak evidence (loose anecdote),scroll holds a tale; tale is narrative framing channel,knowing.md#mood-on-one-adjective
+ezum,th,😮,mirative,MIRATIVE,mirative mood (newly found out and not expected),a surprised face meets what it did not expect; mirative marks news against expectation,knowing.md#mirative
+ezul,th,😮,mirative,MIRATIVE.firm,mirative mood overturning a firm expectation,a surprised face meets what it did not expect; mirative marks news against expectation,knowing.md#mirative
+ezur,th,😮,mirative,MIRATIVE.mild,mirative mood against a loose expectation,a surprised face meets what it did not expect; mirative marks news against expectation,knowing.md#mirative
 amom,th,💰,residue,RESIDUE,residue mood (outcome still on the current tally),money bag holds what is owed; residue is an unpaid balance still on the books,knowing.md#residue-and-former-climate
 amom,w,💰,residue,RESIDUE,residue mood (outcome still on the current tally),money bag holds what is owed; residue is an unpaid balance still on the books,knowing.md#mood-on-one-adjective
 enom,th,🪹,former_climate,FORMER,former-climate mood (not the climate claimed now),empty nest shows the nesting season is over; former climate is usual weather that is not current,knowing.md#residue-and-former-climate
@@ -114,12 +119,9 @@ ubel,w,🌶️,universality,RULE,universality RULE warrant (holds inside named f
 uyen,z,☯️,benchmark,Average,judgment benchmark Average (population mean),yin-yang holds balance; balance is the average standard,comparatives.md#judgment-benchmarks-worse-than
 uyen,d,☯️,benchmark,Average,judgment benchmark Average (population mean),yin-yang holds balance; balance is the average standard,comparatives.md#judgment-benchmarks-worse-than
 uyen,b,☯️,benchmark,Average,judgment benchmark Average (population mean),yin-yang holds balance; balance is the average standard,comparatives.md#judgment-benchmarks-worse-than
-ehon,z,🐹,benchmark,Typical,judgment benchmark Typical (modal / usual case),hamster on a wheel of routine; routine is the typical standard,comparatives.md#judgment-benchmarks-worse-than
-ehon,d,🐹,benchmark,Typical,judgment benchmark Typical (modal / usual case),hamster on a wheel of routine; routine is the typical standard,comparatives.md#judgment-benchmarks-worse-than
-ehon,b,🐹,benchmark,Typical,judgment benchmark Typical (modal / usual case),hamster on a wheel of routine; routine is the typical standard,comparatives.md#judgment-benchmarks-worse-than
-edun,z,🔁,benchmark,Usual,judgment benchmark Usual (the ranked item's own usual level),repeat plays the same again; the usual is what you do again and again,comparatives.md#judgment-benchmarks-worse-than
-edun,d,🔁,benchmark,Usual,judgment benchmark Usual (the ranked item's own usual level),repeat plays the same again; the usual is what you do again and again,comparatives.md#judgment-benchmarks-worse-than
-edun,b,🔁,benchmark,Usual,judgment benchmark Usual (the ranked item's own usual level),repeat plays the same again; the usual is what you do again and again,comparatives.md#judgment-benchmarks-worse-than
+ehon,z,🐹,benchmark,Typical,judgment benchmark Typical (modal / usual case; with one ranked item its own usual level),hamster on a wheel of routine; routine is the typical standard,comparatives.md#judgment-benchmarks-worse-than
+ehon,d,🐹,benchmark,Typical,judgment benchmark Typical (modal / usual case; with one ranked item its own usual level),hamster on a wheel of routine; routine is the typical standard,comparatives.md#judgment-benchmarks-worse-than
+ehon,b,🐹,benchmark,Typical,judgment benchmark Typical (modal / usual case; with one ranked item its own usual level),hamster on a wheel of routine; routine is the typical standard,comparatives.md#judgment-benchmarks-worse-than
 umun,z,🪞,benchmark,my-standard,judgment benchmark my standard (speaker normative standard),mirror shows a reflection; that reflection is the bar I apply,comparatives.md#judgment-benchmarks-worse-than
 umun,d,🪞,benchmark,my-standard,judgment benchmark my standard (speaker normative standard),mirror shows a reflection; that reflection is the bar I apply,comparatives.md#judgment-benchmarks-worse-than
 umun,b,🪞,benchmark,my-standard,judgment benchmark my standard (speaker normative standard),mirror shows a reflection; that reflection is the bar I apply,comparatives.md#judgment-benchmarks-worse-than
@@ -159,6 +161,9 @@ ahun,b,🗳️,benchmark,Autonomy-sake,judgment benchmark what the autonomy sake
 ozon,z,🍓,benchmark,Pleasure-sake,judgment benchmark what the pleasure sake requires (enjoyment),strawberry is enjoyment; enjoyment sets the bar,comparatives.md#sake-benchmarks
 ozon,d,🍓,benchmark,Pleasure-sake,judgment benchmark what the pleasure sake requires (enjoyment),strawberry is enjoyment; enjoyment sets the bar,comparatives.md#sake-benchmarks
 ozon,b,🍓,benchmark,Pleasure-sake,judgment benchmark what the pleasure sake requires (enjoyment),strawberry is enjoyment; enjoyment sets the bar,comparatives.md#sake-benchmarks
+adon,z,💡,benchmark,Understanding-sake,judgment benchmark what the understanding sake requires (making sense),a lightbulb comes on when it clicks; making sense sets the bar,comparatives.md#sake-benchmarks
+adon,d,💡,benchmark,Understanding-sake,judgment benchmark what the understanding sake requires (making sense),a lightbulb comes on when it clicks; making sense sets the bar,comparatives.md#sake-benchmarks
+adon,b,💡,benchmark,Understanding-sake,judgment benchmark what the understanding sake requires (making sense),a lightbulb comes on when it clicks; making sense sets the bar,comparatives.md#sake-benchmarks
 ugol,g,🪙,identity,SAME,SAME identity (identical-to / same-as),coin has two faces one substance; same is one referent two labels,predication.md#identity-same
 oyem,th,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,dependents.md#dependent-clauses
 oyem,g,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,causation.md#if

@@ -142,7 +142,8 @@ export function enforceTokens(tokens: IToken[], tables: ClassifyTables): void {
         prev.image === "." ||
         branch === "force" ||
         branch === "polar" ||
-        branch === "yFallbackVocative" ||
+        branch === "yVocative" ||
+        branch === "yInterjection" ||
         branch === "greeting" ||
         branch === "hook";
       if (!opensBody) throw new ConstructionError("linkerMidSentence", token.image);
@@ -203,6 +204,9 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   const holder = word.family.kind === "x" && word.family.xFamily === "holder";
   if (word.plural && word.pos && NO_PLURAL_POS.has(word.pos) && !holder) {
     throw new ConstructionError("pluralOnPos", word.raw);
+  }
+  if (word.plural && word.pos === "y" && classifyTokenBranch(word).branch === "yInterjection") {
+    throw new ConstructionError("pluralInterjection", word.raw);
   }
   const family = word.family;
   if (family.kind === "x" && family.xFamily === "sake") {

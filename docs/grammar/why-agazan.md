@@ -68,7 +68,7 @@ How the aims show up in vocabulary and grammar. Each section names an English jo
 
 English often conflates *I want*, *I need*, *I should*, and *this is good for me*, so gratitude, motive, and ought blur together.
 
-Agazan’s [sakes](sakes.md) name a closed inventory of **sakes** (autonomy, competence, purpose, relatedness, beneficence, pleasure, physical, or unspecified) and how you relate to them:
+Agazan’s [sakes](sakes.md) name a closed inventory of **sakes** (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical, or unspecified) and how you relate to them:
 
 | Stance | Job |
 |--------|-----|

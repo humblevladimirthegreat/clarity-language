@@ -48,6 +48,26 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 - AIMED (direction locus `o`) never carries blame; fault lives only on the because-pole ending.
 - The because-pole `/b/` should be an act or a thing, not a bare person. This is guidance, not parser-enforced: a named `/b/` can be a named event or place.
 
+## Emotion compose: motion, strength, objects
+
+- Motion (**-r** / **-m** / **-l**) is only how a feeling moves: in waves, steadily, or not at all. Strength is never on the motion ending; it is a degree word on `/w/` right before the feeling word. Before a `/w/` feeling, that degree word grades the feeling, not the stimulus (the parser brackets stacked `/w/` flat; the reading is the doc rule).
+- A lone `/th/` feeling word, with no clause body, is the speaker's feeling with no object (predication about the speaker). Thanks (`thanatham.`) is the same construction, not a special *that act* reading. Sorry keeps its `/b/`: after a tail-less sake word, `/b/` names whose stake.
+- A lone feeling with a channel + offset has a real but unnamed stimulus; the offset dates it.
+- Someone else's objectless feeling goes through a holder (`thulothuruor thunemalahen`). A noun before a lone feeling is an existence clause, so `zalahen thulothuruor` is *anxious that Alahen is here*, never *Alahen is anxious*. There is no experiencer adjective: it would bypass the holder warrant.
+- Understanding is its own sake, not part of competence: boredom with an easy task is competence met and understanding unmet, and the two call for different help. Novelty for its own sake stays under pleasure.
+- Surprise is not a sake. It is the MIRATIVE (`thezum`), a closed `/th/` mood separate from the eight channels: it says nothing about how you know, stacks with a channel, and takes no holder seam (a holder elsewhere in the clause makes it the holder's).
+
+## Benchmarks
+
+- *Usual* is not its own bar: Typical (`zehon`) covers it. With one ranked item, Typical is that item's own usual level (*more slowly than usual*).
+- Placement spacing between a sake benchmark and a judgment benchmark: a different first two letters, and a single-letter difference only when that letter is the consonant (`src/lexicon-place.ts`).
+
+## Vocatives and interjections
+
+- The ending decides the `/y/` job: **-n** calls someone (a name, or a kind used as a title: `yagavon`); **-l** / **-m** are interjections in their ordinary lexical sense (`yezul`, `yezum`). **-r** resumes either, read through its antecedent. There is no *named formula* interjection on **-n**.
+- Spans under `/y/` follow the same split: `y@<…>` calls (the **`@`** mark is the span's **-n**); `y<…>` / `y~<…>` is a foreign interjection.
+- **-x** on `/y/` goes only on a call (**-nx** / **-rx**); an interjection addresses no one.
+
 ## Dated channels
 
 - A hosted `/b/` after an evidential is read by its filler: a time measure = offset; a person or other noun = source (*per Alahen*). The source reading is settled but not yet taught. A clause as the grounds is the separate [evidence clause](../grammar/knowing.md#evidence-clause): only INFERRED and PATTERN take `barl`, and other channels keep a noun source.

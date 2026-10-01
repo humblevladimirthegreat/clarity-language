@@ -1025,7 +1025,7 @@ These three English nouns each hide two jobs. *Role* is the function someone pla
 | *title* (the name of a work) | `d@[onodan alahen]` | cite with **`@`** |
 | *title* (a claim to own) | `zegabem` | *ownership*, the abstract sense of `egabe` |
 | *address* (speak to someone) | `yalahen.` | call them with `/y/` + their name |
-| *address* (speak to a group) | `yebezalx.` | `/y/` + **-lx** |
+| *address* (speak to a group) | `yebezanx.` | `/y/` + the kind as a title, **-nx** |
 | *address* (a speech) | `vezebel` | the telling itself |
 
 > `zalahen gaxedehol.`

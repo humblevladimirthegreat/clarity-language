@@ -60,6 +60,18 @@ describe("parse — clause.md beginner", () => {
     assert.equal(result.utterances[0]!.left.vocatives[0]?.raw, "yalahen");
   });
 
+  it("reads /y/ -l / -m as an interjection and -n as a vocative", () => {
+    const left = parseText("yalahen yezul zalahen vowogal.").utterances[0]!.left;
+    assert.deepEqual(left.vocatives.map((w) => w.raw), ["yalahen"]);
+    assert.deepEqual(left.interjections.map((w) => w.raw), ["yezul"]);
+    assert.deepEqual(parseText("yezum.").utterances[0]!.left.interjections.map((w) => w.raw), ["yezum"]);
+  });
+
+  it("reads a /y/ span by its @ mark: named calls, unnamed is an interjection", () => {
+    assert.deepEqual(parseText("y@<Sam>.").utterances[0]!.left.vocatives.map((w) => w.raw), ["y@<Sam>"]);
+    assert.deepEqual(parseText("y<Amen>.").utterances[0]!.left.interjections.map((w) => w.raw), ["y<Amen>"]);
+  });
+
   it("parses unhosted /b/ recipient plus verb", () => {
     const result = parseText("zazawan balahen vezebel.");
     const units = result.utterances[0]!.bodies[0]!.clause.units;

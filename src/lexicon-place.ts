@@ -153,8 +153,9 @@ type PairRule = GroupRule & { a: number; b: number };
 
 /**
  * Spacing two short roots owe each other. Same overlay group (`kind`): no single-letter
- * difference and a different consonant. Sake vs judgment benchmark (`bench`): no single-letter
- * difference and a different first two letters. Same PoS (`pos`): not identical.
+ * difference and a different consonant. Sake vs judgment benchmark (`bench`): a different first
+ * two letters, and a single-letter difference only when that letter is the consonant. Same PoS
+ * (`pos`): not identical.
  */
 function groupRule(a: Set<string>, b: Set<string>): GroupRule {
   const shared = [...a].filter((group) => b.has(group));
@@ -172,7 +173,7 @@ function pairHard(pair: GroupRule, x: string, y: string): number {
   const distance = ham(x, y);
   if (distance === 0) violations++;
   if (pair.kind && (distance < 2 || x[1] === y[1])) violations++;
-  if (pair.bench && (distance < 2 || x.slice(0, 2) === y.slice(0, 2))) violations++;
+  if (pair.bench && (x.slice(0, 2) === y.slice(0, 2) || (distance === 1 && x[1] === y[1]))) violations++;
   return violations;
 }
 

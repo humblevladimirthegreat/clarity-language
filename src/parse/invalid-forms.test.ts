@@ -49,6 +49,7 @@ const ROWS: Row[] = [
   { invalid: "zazawan vowogal xam zalahen varahal xam.", rejection: "clauseSingleItem", valid: "zazawan vowogal xam zalahen varahal." },
   { invalid: "zazawan wowogalx vowogal.", rejection: "pluralOnPos", valid: "zazawanx vowogal." },
   { invalid: "zazawan vowogal hamelx.", rejection: "pluralOnPos", valid: "zazawan vowogal hamel." },
+  { invalid: "yagadulx.", rejection: "pluralInterjection", valid: "yagadunx." },
   { invalid: "yanatham zazawan vowogal.", rejection: "sakeSlot", valid: "zebel ganathal." },
   { invalid: "zebeyom gulothemol.", rejection: "emotionTail", valid: "zebeyom gulothamol." },
   { invalid: "zebeyom gulothamon.", rejection: "emotionTail", valid: "zebeyom gulothamor." },

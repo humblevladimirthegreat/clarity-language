@@ -783,9 +783,9 @@ Same-role: the except (or including, rather, instead) carries that detail; claus
 >
 > "The family, never excepting Azawan."
 
-A surprise word on the *including* hook gives English *even*: **`wazebam al`** adds B and says openly that B is the one nobody expected.
+A surprise word on the *including* hook gives English *even*: **`wezum al`** adds B and says openly that B is the one nobody expected.
 
-> `zalahen wazebam al zazawan vowogal.`
+> `zalahen wezum al zazawan vowogal.`
 >
 > z-Alahen | [w-amazement | including] | z-Azawan | v-walk
 >
@@ -839,7 +839,7 @@ Between two numbers with digits, plain **`al`** and **`ul`** also make a span, b
 
 Scope stays flat. Something right after B describes B alone. `/w/` immediately before the hook grades the span itself:
 
-> `zazawan wazebam oel zahaben vowogal.`
+> `zazawan wezum oel zahaben vowogal.`
 >
 > z-Azawan | [w-amazement | through] | z-Ahaben | v-walk
 >

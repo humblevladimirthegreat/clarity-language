@@ -80,9 +80,9 @@ English *What a big dog!* and *How big the dog is!* say the dog is very big and 
 
 For a bare *So big!*, give the reaction as an interjection with **`!`**:
 
-> `!yelavan.`
+> `!yelavam.`
 >
-> !y-Elavan
+> !y-big
 >
 > "So big!"
 

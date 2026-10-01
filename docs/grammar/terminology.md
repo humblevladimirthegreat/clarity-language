@@ -28,7 +28,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **DECISION** | Pick-firmness mood | `thehum` | [Intention](intention.md#decision) |
 | **FAWN** | Emotion locus: placating a target | `wanathumaem` | [Sakes](sakes.md#emotion-compose) |
 | **FELT** | Evidential: gut / body knowing | `thahom` | [Knowing](knowing.md#evidentiality) |
-| **FLOWING** | Emotion motion: a current you can ride | `wanathumem` | [Sakes](sakes.md#emotion-compose) |
+| **FLOWING** | Emotion motion: steady, a current you can ride | `wanathumem` | [Sakes](sakes.md#emotion-compose) |
 | **FORBID** | Permission, negative | `thedel` | [Sakes](sakes.md#permission) |
 | **FORMAL** | Universality: definition / math / proof | `thozal` | [Knowing](knowing.md#universality) |
 | **FORMER** | Episode standing: not the climate claimed now | `thenom` | [Knowing](knowing.md#residue) |
@@ -37,6 +37,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **LIVE** | Evidential: concurrent / in-view observation | `thodom` | [Knowing](knowing.md#evidentiality) |
 | **MAY** | Potential mood (*could be*; find out / default / who knows) | `thovum` | [Knowing](knowing.md#may) |
 | **MENTION** | Span TYPE **o**: a mention | `z{odoga}` | [Spans](spans.md#shape) |
+| **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `thezum` | [Knowing](knowing.md#mirative) |
 | **NAME** | A package titled with **-n** | `zebevul zabodel zan.` | [Joins](joins.md#named-list) |
 | **NATURAL** | Universality: natural necessity | `thalul` | [Knowing](knowing.md#universality) |
 | **NOTIONAL** | As-if / pretense mood | `thavom` | [Knowing](knowing.md#notional) |
@@ -53,12 +54,12 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **SAME** | Identity copula | `gugol` | [Predication](predication.md#identity) |
 | **SCOPE** | Scope island `^ … ^` | `^ hegewem zodogal geredal ^` | [Spans](spans.md#scope-islands) |
 | **SEEKING** | Emotion locus: turning to someone for comfort | `wanathumoem` | [Sakes](sakes.md#emotion-compose) |
-| **STILL** | Emotion motion: muted, faint, numb, frozen | `wanathumol` | [Sakes](sakes.md#emotion-compose) |
+| **STILL** | Emotion motion: not moving (held, frozen, numb) | `wanathumol` | [Sakes](sakes.md#emotion-compose) |
 | **STORY** | Evidential: narrative / lore | `thozem` | [Knowing](knowing.md#evidentiality) |
-| **SURGING** | Emotion motion: big, spiking, in waves | `wulothuraor` | [Sakes](sakes.md#emotion-compose) |
+| **SURGING** | Emotion motion: in waves or spikes | `wulothuraor` | [Sakes](sakes.md#emotion-compose) |
 | **TOLD** | Evidential: hearsay | `thewam` | [Knowing](knowing.md#evidentiality) |
 | **UNCOUNTERED** | Universality: no counterexample comes to mind | `theyul` | [Knowing](knowing.md#universality) |
-| **UNPLACED** | Emotion locus: can't place where it comes from | `wulothuruol` | [Sakes](sakes.md#emotion-compose) |
+| **UNPLACED** | Emotion locus: can't place where it comes from | `wulothuruom` | [Sakes](sakes.md#emotion-compose) |
 | **WANT** | Desire mood: lasting / unstated / passing | `thohum` | [Intention](intention.md#want) |
 | **WITNESSED** | Evidential: firsthand memory (reconstructive) | `thevom` | [Knowing](knowing.md#evidentiality) |
 

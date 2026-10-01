@@ -35,6 +35,7 @@ type Skip = typeof SKIP | typeof SKIP_CONTENT;
 
 export type WordSlot =
   | "vocative"
+  | "interjection"
   | "polar"
   | "hook"
   | "hookModifier"
@@ -119,6 +120,7 @@ export function visitUtterance(utterance: Utterance, index: number, v: Visitor):
   const left = utterance.left;
   const w = (words: LexWord[] | LexWord | undefined, slot: WordSlot) => words && [words].flat().forEach((x) => v.word?.(x, slot));
   w(left.vocatives, "vocative");
+  w(left.interjections, "interjection");
   w(left.polars, "polar");
   w(left.hook, "hook");
   w(left.hookModifiers, "hookModifier");

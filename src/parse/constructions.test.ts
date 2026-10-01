@@ -54,7 +54,8 @@ describe("construction registry", () => {
   it("reports construction IDs, all registered", () => {
     const cases: [string, string][] = [
       ["zodogar vowogal.", "resolve.content.unbound"],
-      ["yalahen.", "token.yFallbackVocative"],
+      ["yalahen.", "token.yVocative"],
+      ["yezul.", "token.yInterjection"],
       ["zazawan vowogal.", "sentence.vpCoordPart.V"],
       ["zodogal gelavam.", "reading.existence"],
       ["zodogal om babagul.", "reading.existence"],
