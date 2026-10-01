@@ -209,7 +209,7 @@ English names a person by what they do (*a singer*, *a manager*). Agazan builds 
 | `zaxagaval` | *supporter* / *sponsor* | `agaval` *crutch* |
 | `zaxalaval` | *lover* | `alaval` *love* |
 | `zaxebedel` | *servant* / *server* / *assistant* | `ebedel` *plate* |
-| `zaxazewel` | *worker* | `azewel` *sweat* |
+| `zaxawol` | *worker* | `awol` *sweat* |
 | `zaxehel` | *dealer* | `ehel` *currency-exchange* |
 | `zaxemagel` | *immigrant* | `emagel` *immigration* |
 | `zaxewal` | *audience* (those who hear) | `ewal` *ear* |
@@ -224,14 +224,14 @@ English names a person by what they do (*a singer*, *a manager*). Agazan builds 
 | `zaxozel` | *historian* | `ozel` *scroll* |
 | `zaxagegam` | *consumer* | `agegam` *consumption* |
 | `zaxabazul` | *passenger* / *rider* (of a bus) | `abazul` *bus* |
-| `zaxazewelx` | *staff* / *personnel* (workers as a set) | `azewel` *sweat* |
+| `zaxawolx` | *staff* / *personnel* (workers as a set) | `awol` *sweat* |
 | `zuxahul` | *candidate* (the one voted for) | `ahul` *ballot* |
 | `zoxehel` | *customer* / *purchaser* (the other party of a trade) | `ehel` *currency-exchange* |
 | `zoxebebum` | *host* (the other party of a hospitality tie) | `ebebum` *hospitality* |
 
 The one acted on uses **`u`** instead: `zuxenehel` is *a victim* (the one harmed). A plural audience or staff takes plural **-x** (`zaxewalx`).
 
-*Shareholder* is *owner* of a part: `zaxegabem gobom bahazal` (owner of a part of the house). *Colleague* is a worker tied to you: `zaxazewel gohoham bamagon`. *Relative* is a person who is part of the family: `zebezal gobom bavahal`.
+*Shareholder* is *owner* of a part: `zaxegabem gobom bahazal` (owner of a part of the house). *Colleague* is a worker tied to you: `zaxawol gohoham bamagon`. *Relative* is a person who is part of the family: `zebezal gobom bavahal`.
 
 **Compare with:** for *boss* or *chief*, the tie form names whom they lead: `zalahen gagayem bazawan` is *Alahen is Azawan's boss* ([social relations](relations.md#social-relations)).
 
@@ -483,7 +483,7 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *criticize* | `zazawan dalahen vahahum.` | judges Alahen |
 | *ride* (a bus) | `zazawan vabazul.` | rides the bus |
 | *environment* / *surroundings* | `zahazamogel` | the world seen as the home around you |
-| *efficiency* | `zavagemazewel` | output for the effort |
+| *efficiency* | `zavagemawol` | output for the effort |
 | *holder* (a thing that holds) | `zahadalahabal` | what holds in the hand |
 | *holder* (a person who bears) | `zaxahabal` | doer of the bearing |
 | *intervention* | `zazawan vuvudel hazam balahen bahaben bal.` | comes between the two |

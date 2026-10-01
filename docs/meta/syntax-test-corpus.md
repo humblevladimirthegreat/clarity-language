@@ -57,7 +57,7 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 | 29 | I will be happy to go. | `zSELFn thamam vuvudel thozothamam.` | z-SELF \| th-plan-itinerary \| v-go \| th-pleasure-met-any-term-INTERNAL-FLOWING | covered |
 | 30 | He will arrive soon. | `zazawan thunem brabum vevahal.` | z-Azawan \| [th-INFERRED \| b-+-e-.about] \| v-arrival | covered |
 | 31 | The baby's ball has rolled away. | `zobohel em bebebel thamom vewawelum.` | z-ball \| [used-by \| b-baby] \| th-RESIDUE \| v-wheel-recede | covered |
-| 32 | The two boys are working together. | `zobohalx gradul thodom vazewemx.` | [z-boy-x \| g-two] \| th-LIVE \| v-effort-x | covered |
+| 32 | The two boys are working together. | `zobohalx gradul thodom vawomx.` | [z-boy-x \| g-two] \| th-LIVE \| v-effort-x | covered |
 | 33 | This mist will probably clear away. | `zavegel om bamagon thral thunem bral vemehulum.` | z-fog \| [near \| b-speaker] \| th-likely \| [th-INFERRED \| b-later] \| v-melt-recede | covered |
 | 34 | Lovely flowers are growing everywhere. | `zavavulx gahabem thodom vuzem ol bual.` | [z-flower-x \| g-beauty] \| th-LIVE \| v-growth \| [at \| b-everything] | covered |
 | 35 | We should eat more slowly. | `zahan zedun zel hezehom vagadel thegathem.` | [z-interlocutors \| z-Usual \| z-rank/more \| h-slow] \| v-eat \| th-sake-ought-offered | covered |
@@ -187,10 +187,10 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 | 159 | Be quick or you will be too late. | `yel gadehum xol zehodon zegan zel bral vevahal.` | y-command \| [g-haste \| x-or-exactly-one \| [z-listener \| z-Some-sake \| z-rank/more \| b-later] \| v-arrival] | covered |
 | 160 | Will you go with us or wait here? | `yol ? zehodon thamam han bamagonx vuvudel xol zehodon thamam vabazam om bamagon.` | y-question \| [? \| z-listener \| th-plan-itinerary \| [h-including \| b-speaker-x] \| v-go \| x-or-exactly-one \| z-listener \| th-plan-itinerary \| v-wait \| [near \| b-speaker]] | covered |
 | 161 | She was always, shabby, often ragged, and on cold days very uncomfortable. | `zalahen thevom hual galazem. zalahen thevom zehon zel hral welavam galazem. zalahen thevom welavam gahagem gul huwem bazazamx gogodel.` | z-Alahen \| th-WITNESSED \| h-always-except \| g-breakdown . z-Alahen \| th-WITNESSED \| [z-Typical \| z-rank/more \| h-how-often] \| [w-very \| g-breakdown] . z-Alahen \| th-WITNESSED \| [[w-very \| g-comfort] \| g-not] \| [h-while \| [b-day-x \| g-cold]] | covered |
-| 162 | Think first and then act. | `yel vevegal xan vazewem.` | y-command \| [v-think \| x-and-then \| v-effort] | covered |
+| 162 | Think first and then act. | `yel vevegal xan vawom.` | y-command \| [v-think \| x-and-then \| v-effort] | covered |
 | 163 | I stood, a little mite of a girl, upon a chair by the window, and watched the falling snowflakes. | `zSELFn th(zSELFr gegehal gamazam) thevom vazadol aol behahel om bewedol xal zSELFn thevom vazaham dozovelx gaxadahel.` | [z-SELF \| th-ASIDE[z-←SELF.full \| g-girl \| g-small] \| th-WITNESSED \| v-stand \| [on \| b-chair] \| [near \| b-window] \| x-and \| z-SELF \| th-WITNESSED \| v-look \| [d-snowflake-x \| g-agent-x-down]] | covered |
 | 164 | Show the guests these shells, my son, and tell them their strange history. | `yehodon. yel zebezalx gabubam bamagon deheholx om bamagon vahahal thegem behodon. yel bebezarx dozem gelehom em bebezarx vezebel.` | y-listener . y-command \| [z-person-x \| [g-hospitality \| b-speaker]] \| d-shell-x \| [near \| b-speaker] \| v-see \| [th-CAUSE \| b-listener] . y-command \| b-←person-x.full-x \| [d-tale \| g-strangeness] \| [used-by \| b-←person-x.full-x] \| v-tell | covered |
-| 165 | Be satisfied with nothing but your best. | `yel gerevam ol bazewem em behodon bal.` | y-command \| g-calm \| [at \| [[b-effort \| [used-by \| b-listener]] \| b-and]] | covered |
+| 165 | Be satisfied with nothing but your best. | `yel gerevam ol bawom em behodon bal.` | y-command \| g-calm \| [at \| [[b-effort \| [used-by \| b-listener]] \| b-and]] | covered |
 | 166 | We consider them our faithful friends. | `zamagonx vevegal darl zebezarx godogam gemezem bamagonx.` | z-speaker-x \| v-think \| d-that-clause \| [z-←person.full-x \| g-loyalty \| [g-companionship \| b-speaker-x]] | covered |
 | 167 | We will make this place our home. | `zamagonx thamam dahedem om bamagon vameval el bahazam em bamagonx.` | z-speaker-x \| th-plan-itinerary \| d-locality \| [near \| b-speaker] \| v-manufacture \| [for \| b-home] \| [used-by \| b-speaker-x] | covered |
 | 168 | The squirrels make their nests warm and snug with soft moss and leaves. | `zahebulx thagal denezalx wadeham gahadul gahagem em bahebur ael bebahel belevol bal vameval.` | z-chipmunk-x \| th-COMMON \| [d-nest-x \| [w-quite \| g-hot] \| g-comfort] \| [used-by \| b-←chipmunk-x.full] \| [using \| [b-herb \| b-leaf \| b-and]] \| v-manufacture | covered |
@@ -199,7 +199,7 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 | 171 | She was talking to herself. | `zalahen thevom balaher vezebel.` | z-Alahen \| [th-WITNESSED \| b-←Alahen.full] \| v-tell | covered |
 | 172 | He proved himself trustworthy. | `zazawan thevom dazawar gegehom verazem.` | z-Azawan \| th-WITNESSED \| [d-←Azawan.full \| g-trust] \| v-proof | covered |
 | 173 | We could see ourselves in the water. | `zamagonx thevom damagorx vahahal al bowodel.` | z-speaker-x \| th-WITNESSED \| d-←speaker-x.full-x \| v-see \| [in \| b-drinking-water] | covered |
-| 174 | Do it yourself. | `yel zehodon zal vazewem.` | y-command \| [z-listener \| z-and] \| v-effort | covered |
+| 174 | Do it yourself. | `yel zehodon zal vawom.` | y-command \| [z-listener \| z-and] \| v-effort | covered |
 | 175 | I feel ashamed of myself. | `zSELFn thanathumom bSELFr.` | z-SELF \| [th-relatedness-unmet-modifiable-AIMED-FLOWING \| b-←SELF.full] | covered |
 | 176 | Sit here by yourself. | `yel zehodon zal vehahel om bamagon.` | y-command \| [z-listener \| z-and] \| v-sit \| [near \| b-speaker] | covered |
 | 177 | The dress of the little princess was embroidered with roses, the national flower of the Country. | `dedezal em begehal gamazam gagayem venedal ael borozalx. zorozarx gavavul gobom bagul.` | d-dress \| [used-by \| [b-girl \| g-small \| g-leadership]] \| v-needle \| [using \| b-rose-x] . [z-←rose-x.full-x \| g-flower \| [g-part-of \| b-country]] | covered |
@@ -338,10 +338,10 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 - **STC-158, *last part*:** *the end* (`deveham`, the *finish-line* abstract) of the tale, as in STC-122.
 - **STC-159, 160, *or*:** `xol` between clauses. In 159 the second clause is the rank claim *later than needed* with the verb *arrive*, so the threat is the outcome, not a forecast.
 - **STC-161, *shabby*, *ragged*, *uncomfortable*:** three claims. *Shabby* and *ragged* are *breakdown* (`galazem`, as *broken* in STC-41), with `welavam` on the second; *uncomfortable* is *not comfortable* (`gahagem gul`) placed before the *cold days* pole so the `/w/` word stays on the adjective.
-- **STC-162, *think first and then act*:** verb join `xan` (*and then*). *Act* is *effort* (`vazewem`).
+- **STC-162, *think first and then act*:** verb join `xan` (*and then*). *Act* is *effort* (`vawom`).
 - **STC-163, *a little mite of a girl*:** an aside with a resume of the speaker (`th(zSELFr gegehal gamazam)`). *Falling* is the agent compound on *down* (`gaxadahel`).
 - **STC-164, *show … tell*:** *show* is CAUSE with the listener as causer (`thegem behodon`): the guests are the subject of *see*. *History* is *tale*, and *strange* is the *alien* abstract (`gelehom`).
-- **STC-165, *nothing but*:** the single-item **-l** join is *just* ([joins](../grammar/joins.md)): `ol bazewem em behodon bal` is *at only your effort*. *Best* is *effort*.
+- **STC-165, *nothing but*:** the single-item **-l** join is *just* ([joins](../grammar/joins.md)): `ol bawom em behodon bal` is *at only your effort*. *Best* is *effort*.
 - **STC-166, *consider … faithful friends*:** `darl` and a second sentence. *Faithful* is the *loyalty* abstract on *dog* (`godogam`).
 - **STC-167, *make this place our home*:** *make* (`vameval`) with `el` (*for*) and *home* (`bahazam`, the *house* abstract), owned by us with `em`. *This place* is *locality* plus `om bamagon`.
 - **STC-168, *warm and snug … soft moss*:** *warm* is *quite hot* (`wadeham gahadul`), *snug* is *comfort*, *moss* is *herb* (`bebahel`); *soft* is dropped. The noun join `bal` closes *herb and leaf*, both under `ael`.

@@ -235,7 +235,7 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 | *gradually* / *slowly* | `hezehom` |
 | *widely* / *broadly* | `horodam` |
 | *deeply* | `hebegem` |
-| *easily* (*with less effort than usual*) | `zehon zuel hazewem` before the verb |
+| *easily* (*with less effort than usual*) | `zehon zuel hawom` before the verb |
 
 > `zazawan heyayem vowogal.`
 >
@@ -243,7 +243,7 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 >
 > "Azawan walks carefully."
 
-The easy / hard pair on a quality ranks effort against a bar ([vague amounts](comparatives.md#vague-amounts)): `zubugal zehon zuel gazewem` is *the book is easy* (less effort than typical), and `zel` in place of `zuel` is *hard*.
+The easy / hard pair on a quality ranks effort against a bar ([vague amounts](comparatives.md#vague-amounts)): `zubugal zehon zuel gawom` is *the book is easy* (less effort than typical), and `zel` in place of `zuel` is *hard*.
 
 ### How often {#frequency-words}
 
@@ -308,7 +308,7 @@ English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an 
 | *expensive* / *costly* / *pricey* | `zehon zel gadahum` (costs more than usual) |
 | *cheap* / *inexpensive* | `zehon zuel gadahum` |
 | *weak* / *feeble* / *frail* | `zehon zuel gabezem` (less strength than usual) |
-| *busy* / *hard-working* | `zehon zel gazewem` (more effort than usual) |
+| *busy* / *hard-working* | `zehon zel gawom` (more effort than usual) |
 | *far* / *distant* / *remote* | `zehon zel gazedam` (farther than usual) |
 | *wide* / *broad* | `zehon zel gorodam` |
 | *narrow* | `zehon zuel gorodam` |

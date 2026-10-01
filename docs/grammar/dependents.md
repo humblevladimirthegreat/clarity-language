@@ -77,6 +77,14 @@ You can also say:
 | **`henum barl`** | *after* | `enul` *hourglass* | ⌛: sand already through |
 | **`hogom barl`** | *so that* / *in order to* | `ogol` *goal* | 🥅: you act so the shot counts |
 
+A command or request makes no claim, so an *if* pole on it limits the instruction instead: do this only in that case. English *if X, do Y* keeps the same order as any other pole, with **`barl`** last.
+
+> `yel vowogal thoyem barl zalahen vehahel.`
+>
+> y-command | v-walk | [th-if | b-that-clause] | z-Alahen | v-sit
+>
+> "If Alahen sits, walk."
+
 When English puts a **noun** after *despite* (*despite Alahen*), keep the same **`hezom`** pole and put that noun in `/b/` instead of **`barl`**. The obstacle is given, as with *although*. Do not write a second concession word. The *although* pole sits on `/h/` (or `/ɡ/` on a noun), never on `/th/`. On a noun host the same pole is **`gezom`**. (cue: 🦓 *zebra*: two stripes, still one animal)
 
 > `zazawan vowogal hezom balahen.`

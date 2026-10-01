@@ -26,7 +26,7 @@ const MARKED: Record<string, string> = { "🤝": "pronoun", "😐": "pronoun", "
 const FORCE_LONG = new Set(["🎤", "🎧"]);
 /** Lower number is placed earlier. Glasses outranks every frequency rank. */
 const PRIORITY_OVERRIDES: Record<string, number> = { "👓": 0 };
-const JUDGMENT = new Set(["☯️", "🐹", "🪞", "👥", "🥼", "🌐"]);
+const JUDGMENT = new Set(["☯️", "🐹", "🪞", "👥", "🥼", "🌐", "💦"]);
 
 /** A root that stays put this run, with its overlay groups, so new short roots keep their spacing from it. */
 export type FixedRoot = { root: string; groups: Set<string> };

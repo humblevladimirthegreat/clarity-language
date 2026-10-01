@@ -124,9 +124,9 @@ English *a pair of…*, *three-part…*, *primary…* can name **how many parts 
 | PoS | `…l+0` | `…l-0` | Examples |
 |-----|--------|--------|----------|
 | **`/z/` `/d/` `/b/`** (noun) | emptied / wiped instance | entity that won’t zero / stubborn residue | `zamolrazol`: *a wiped debt*; `zamolruzol`: *a debt that won’t zero*; `devolruzol`: *that memory that won’t blank*; `bodovelruzol`: non-null residue as argument |
-| **`/v/`** (verb) | act of nulling / resetting | act that refuses null / keeps residual | `vodovelrazol`: *to null the score*; `vodovelruzol`: *to anti-null / refuse to zero the score*; `vazewelrazol`: *to zero effort*; `vazewelruzol`: *to leave effort unzeroable* |
+| **`/v/`** (verb) | act of nulling / resetting | act that refuses null / keeps residual | `vodovelrazol`: *to null the score*; `vodovelruzol`: *to anti-null / refuse to zero the score*; `vawolrazol`: *to zero effort*; `vawolruzol`: *to leave effort unzeroable* |
 | **`/ɡ/`** (adjective) | null / reset (ascribed) | non-emptyable / residual (ascribed) | `godovelrazol`: *null / reset*; `godovelruzol`: *won’t-null / residual*; `gevegelruzom`: *hope that won’t go to zero* (vs `gevegelrubam` *void of hope*) |
-| **`/h/`** (adverb) | clause framed as reset / zeroed | clause framed as irreducible residue | `hazewelrazom`: *with effort zeroed*; `hazewelruzom`: *with irreducible effort* / *despite any zeroing* |
+| **`/h/`** (adverb) | clause framed as reset / zeroed | clause framed as irreducible residue | `hawolrazom`: *with effort zeroed*; `hawolruzom`: *with irreducible effort* / *despite any zeroing* |
 | **`/w/`** (adjunct) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `wamolrazol gamol`: *debt (ascribed) zeroed*; `wamolruzol gamol`: *debt whose balance is anti-null* |
 | **`/y/`** (interjection) | discourse *Zero it!* / *Null!* | discourse *Won’t zero!* / *Residue stands!* | `yodovelrazol`; `yodovelruzol` |
 
@@ -144,7 +144,7 @@ The same zero×exponent stems as free [zero × exponent](numbers.md#zero-exponen
 | **`ROOTl+0e`** | total null / absolute wipe of the kind | `vodovelrazobal`: *annihilate the score* (kind); `zamolrazobal`: *a totally wiped debt-kind* | **0** empty × **e** unbounded = wipe with no leftover scale |
 | **`ROOTl+0e-`** | sterile / null grain of ROOT | `zevegelrazobum`: *sterile hope*; `zerehulrazobul`: *registration with no seed* | **0e-** = empty at the tiny end: no seed |
 | **`ROOTl+0e-1`** | engineering null at order of magnitude −1 of ROOT: kind wiped at scale 10⁻¹ | `zehegolrabuwoyazol`: *deci-null problem*; `vodovelrabuwoyazol`: *null the score at deci scale* | **0e-1** = empty at the tenths band |
-| **`ROOTl-0e`** | absolute residue of ROOT | `zamolruzobal`: *debt as absolute residue*; `vazewelruzobal`: *leave effort as absolute residue* | **-0e** = the minus of total wipe: residue that will not go |
+| **`ROOTl-0e`** | absolute residue of ROOT | `zamolruzobal`: *debt as absolute residue*; `vawolruzobal`: *leave effort as absolute residue* | **-0e** = the minus of total wipe: residue that will not go |
 | **`ROOTl-0e-`** | micro-residue of ROOT | `zevolruzobul`: *memory as micro-residue* | **-0e-** = residue at the tiny end |
 | **`ROOTl-0e-1`** | engineering residue at order of magnitude −1 of ROOT | `zamolrubuwoyazol`: *debt as deci-scale residue* | **-0e-1** = residue at the tenths band |
 
@@ -161,7 +161,7 @@ On free numbers, **`±0e-1`** is scalar anatomy; on ROOT the same stems are kind
 | **`/z/` `/d/` `/b/`** | totally wiped / annihilated kind | `zamolrazobal` |
 | **`/v/`** | annihilate that kind | `vodovelrazobal` |
 | **`/ɡ/`** | ascribed total-null | `gevegelrazobam` |
-| **`/h/`** | clause framed as total wipe | `hazewelrazobam` |
+| **`/h/`** | clause framed as total wipe | `hawolrazobam` |
 | **`/w/`** | host graded toward total null | `wamolrazobal gamol` |
 | **`/y/`** | *Annihilate that kind!* | `yodovelrazobal` |
 

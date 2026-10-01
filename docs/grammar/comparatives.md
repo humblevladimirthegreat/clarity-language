@@ -625,6 +625,34 @@ To say **whose** need it is, put that person in `/b/` right after the shared sca
 
 **Compare with:** **`zumun`** (*my standard*) is what the speaker **prefers**. **`zegan`** is what the sake **requires**. `zedehel zumun zel gral` is *more tea than I like*, and `zedehel zegan zel gral` is *more tea than is needed*.
 
+### Best effort (*as … as possible*) {#best-effort}
+
+English *as fast as possible* and *as small as you can* compare against **the most that effort can reach**. Agazan names that bar like the others: **`zawon`** *Best-effort*, the root of `awol` *sweat* plus **-n**. (cue: 💦 *sweat*: full effort shows)
+
+Tie **`ae`** against **`zawon`** says it reaches that bar: *as ADJ as possible*. Reverse rank **`ue`** says it falls short: *less ADJ than it could be*.
+
+> `zalahen zawon zael hadehum vowogal.`
+>
+> [z-Alahen | z-Best-effort | z-equal-rank | h-haste] | v-walk
+>
+> "Alahen walks as hastily as possible."
+
+> `zebeyom zawon zuel gagazam.`
+>
+> [z-draft | z-Best-effort | z-rank/less | g-clarity]
+>
+> "The draft is less clear than it could be."
+
+With no `/b/`, the bar is the best that can be done in the situation. To say **whose** effort, put that person in `/b/` right after the shared scale, as with the sake bars.
+
+> `zebeyom zawon zael gagazam bamagon.`
+>
+> [z-draft | z-Best-effort | z-equal-rank | [g-clarity | b-speaker]]
+>
+> "The draft is as clear as I can make it."
+
+**Compare with:** **`zegan`** is what a sake **requires**, so a tie against it is *enough*. **`zawon`** is what effort can **reach**, so a tie against it is *as much as possible*. **`zumun`** is what the speaker **prefers**.
+
 ### Vague amounts (*many* / *few*) {#vague-amounts}
 
 English *many* and *few* compare against an unstated baseline. Agazan always names it: put a bar in the list and rank on [amount](#amount-scale). Pick the bar that you mean.
@@ -711,6 +739,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *Competence-sake* | `ulon` | `ulol` *toolbox* |
 | *Autonomy-sake* | `ahun` | `ahul` *ballot* |
 | *Pleasure-sake* | `ozon` | `ozol` *strawberry* |
+| *Best-effort* | `awon` | `awol` *sweat* |
 | *artistry* | `ebudam` | `ebudal` *paintbrush* |
 
 #### English → Agazan {#advanced-english-to-agazan}
@@ -777,6 +806,14 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 `zalahen zanan zuel gezehel.`
 
 [z-Alahen | z-Relatedness-sake | z-rank/less | g-sing]
+:::
+
+**9.** *Azawan is as showy as possible.*
+
+::: details Show answer
+`zazawan zawon zael gahudom.`
+
+[z-Azawan | z-Best-effort | z-equal-rank | g-showmanship]
 :::
 
 #### Agazan → English {#advanced-agazan-to-english}
