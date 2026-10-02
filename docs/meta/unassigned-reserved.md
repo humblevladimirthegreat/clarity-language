@@ -187,6 +187,19 @@ Source: [clause.md](../grammar/clause.md)
 - `/w/` before `/z/`, `/d/`, `/b/`, or `/v/` (degree on a noun goes through an adjective; degree on a verb goes through a degree word before a manner adverb)
 - A hosted `/b/` after `/z/`, `/d/`, `/v/`, or `/w/` (that `/b/` reads as the unhosted recipient)
 
+## Vowel series
+
+Source: [speech-moves.md](../grammar/speech-moves.md), [questions.md](../grammar/questions.md#polar-endings), [intention.md](../grammar/intention.md#ability)
+
+- Polar `oe` (`yoel` / `yoem`): no reading
+- Stacked vowels after ability **x** (`xua`, …) and after sake / scope **th**: no reading (the parser rejects them)
+
+## Tone marks
+
+Source: [speech-moves.md](../grammar/speech-moves.md#tone-marks)
+
+- `~` is taken (opaque marker); stacks other than `?!` are not marks
+
 ## Phonology
 
 Source: [phonology.md](../grammar/phonology.md)

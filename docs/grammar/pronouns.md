@@ -53,7 +53,7 @@ A resume spells the whole stem again. For someone in a recent sentence, a **role
 | **`u`** | the one it happens to | `/d/` |
 | **`o`** | the extra party (*the one told*) | `/b/` |
 
-Pointer vowel **`a`** picks the latest sentence that had someone in that part. `zaxar` is *the latest doer*, as subject; `duxar` is *the latest one something happened to*, as object. (cue: **a** ≈ again (the same one again))
+Pointer vowel **`a`** picks the latest sentence that had someone in that part. `zaxar` is *the latest doer*, as subject; `duxar` is *the latest one something happened to*, as object. (cue: **a** ≈ again (the same one again); role and pointer vowels are not the [vowel series](speech-moves.md#speech-act-beginner))
 
 > `zazawan vowogal. zaxar vehahel.`
 >

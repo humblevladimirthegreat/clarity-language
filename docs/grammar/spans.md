@@ -358,7 +358,7 @@ Beginner already used square, round, curly, and angle brackets for cite, aside, 
 | Agazan | Use | English | Cue |
 |--------|------|---------|-----|
 | **a** | **cite** (`[` … `]`); clausal interiors: outer speaker does **not** assert | quoted wording | **a** ≈ add (hold cited words) |
-| **e** | **aside** (`th(` … `)`); `/th/` digression; outer speaker **does** assert; interior may be a fragment or a same-speech-act clause body | parenthetical | **e** ≈ else (an extra comment) |
+| **e** | **aside** (`th(` … `)`); `/th/` digression; outer speaker **does** assert; interior may be a fragment or a same-speech-act clause body | parenthetical | **e** ≈ order (an extra comment set in order) |
 | **o** | **mention** (`{` … `}`); with **`@`** / **-n**, the **name** | the word or phrase; proper = the name-string | **o** ≈ one (one word or phrase as the object) |
 | **u** | **opaque** (`<` … `>`); interior is not native Agazan | foreign / code | **u** ≈ undo (not native Agazan) |
 

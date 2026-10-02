@@ -57,7 +57,7 @@ When the turn is not a statement, put its `/y/` act word immediately before the 
 >
 > "Walk!"
 
-The vowel gives the act word its setting. The same four vowel cues appear in many small word families: **a** add / hold, **o** one / pick, **e** order / instruct, **u** undo / take back.
+The vowel gives the act word its setting. The same four vowel cues appear in many small word families: **a** add / hold, **o** one / pick, **e** order / instruct, **u** undo / take back. Joins, hooks, restrictors, stand-ins, ability (`xa`), sake and scope words, span fences and presence on a name all reuse them.
 
 | Agazan | Use | Cue |
 |--------|-----|-----|

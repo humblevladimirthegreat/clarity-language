@@ -309,6 +309,7 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 | *is supposed to* | custom expects it | **`thumer`** |
 | *do it!* | you tell the listener now | command **`yel`** |
 | *should*, *ought to* | it serves a named sake | sake + **`the`** |
+| *shouldn't*, *ought not to* | the ought, with the act denied | sake + **`the`** before the act, **`vul`** after the verb |
 | *should have*, *ought to have* | the ought held at a past moment | stance as-of **`thuhum`** + sake + **`the`** |
 | *has to* (for a reason) | why they do it | sake + **`tho`** |
 | *should* (it will pay off) | a forecast | channel + **`bral`** |
@@ -326,6 +327,12 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 > z-Azawan | v-tell | th-relatedness-ought-offered
 >
 > "Azawan should tell, to serve relatedness (offered)."
+
+> `zazawan thanathem vezebel vul.`
+>
+> z-Azawan | th-relatedness-ought-offered | [v-tell | v-not]
+>
+> "Azawan shouldn't tell, to serve relatedness (offered)."
 
 For *should have*, date the ought with [stance as-of](relations.md#stance-as-of) **`thuhum`**; **`thuhum brul`** is *back then*. The ought then reads from that past moment. English also implies the act did not happen; if that matters, say it in its own sentence.
 

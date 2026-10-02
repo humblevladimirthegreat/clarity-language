@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Findings from Phase 3 of the expressiveness review (`docs/proposals/expressiveness-review.md`): every productive mechanism crossed with every place it could apply, and each empty cell judged. Rows are logged per batch, ruled by the language owner, and applied before the next batch starts; each row's **Outcome** records the ruling.
 
-Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Other mechanisms not started.
+Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Other mechanisms not started.
 
 ## How to read this file
 
@@ -259,6 +259,118 @@ Parser findings: `zl-` / `dl-` / `bl-` / `vl-` / `hl-` / `thl-` / `wl-` do not p
 - A hosted `/b/` after `/z/`, `/d/`, `/v/`, or `/w/`: a `/b/` there reads as the unhosted recipient, so no second reading is free.
 
 C-05 is logged under [Inconsistencies](#inconsistencies).
+
+## Vowel series and tone marks
+
+Owning page: [speech-moves](../grammar/speech-moves.md). Wave 1. Cells checked with `node scripts/parse.mjs` (2026-10-02). The parser is looser than the docs here (it reads `yoel`, `aol`, `uol` as unassigned markers), so a form that parses is not a reading.
+
+Scope: this grid asks whether each family covers the whole series (**a** add / **o** one / **e** order / **u** undo, and the six stacks `ao` `ua` `uo` `ae` `oe` `ue`). Endings, arity and role letters on the join-shaped series belong to the Joins and Hooks grids (waves 4, 5), so those rows only restate which vowel cells exist.
+
+### Vowel grid
+
+| Family | **a** | **o** | **e** | **u** | Stacks |
+|--------|-------|-------|-------|-------|--------|
+| Speech acts `/y/` | def | def | def | def | — (`yal yol` / `yam yol` stack two acts, def) |
+| Polar stance `/y/` | — | — | — | — | `ae` `ao` `ue` `uo` `ua` def; `oe` E-13 |
+| Stand-ins (`d` / `b` + vowel + **-rl** …) | def | def | def | def | none (one stand-in per act type) |
+| Ability (`x` + vowel) | def | none (`xo` is *not yet*; no open *can*) | def | def | E-14 |
+| Sake words (`th` + vowel) | def | def | def | def | E-15 |
+| Scope label (`th` + vowel) | def | def | def | def | none |
+| Presence on a name (`SELFx` + vowel) | def | def | def | def | none |
+| Span TYPE / EDGE | def | def | def | def | — Spans grid (wave 6) |
+| Hooks | def | def | def | def | — Hooks grid (wave 5); `aol` `ael` `uol` in-clause already listed none |
+| Joins, restrictors, stance joins, join-acts | def | def | def | def | — Joins grid (wave 4); `huel` / `her` / `wer` already listed none |
+| Role pointers, role compounds | — | — | — | — | — Pronouns, Role compounds grids (waves 2, 12) |
+
+The ability row's **o** cell is not empty: `xo` is the *can't yet* grade, so the series is complete there.
+
+Every family that uses the series either uses all four single vowels or is owned by a later grid. The only family that uses the stacks outside joins and hooks is polar stance.
+
+### Rows
+
+#### E-13 — polar `oe` (`yoel` / `yoem`) · forced · P3
+
+- **Proposed reading:** a fifth polar answer, one + order: *it depends* / *whichever*
+- **Example:** none worth teaching.
+- **Pattern:** the polar stacks (first vowel the family, second what you answer)
+- **Current route:** a MAY stance (`thovum` *could be*) or a full sentence
+- **Better than current route:** no
+- **Conflicts and notes:** the five defined answers already read as *match*, *take up*, *mismatch*, *reject this option*, *reject the premise*. One + order gives no guessable answer to a polar question (it is a ranking of picks, not a stance on the claim), so a learner would have to be told it. The parser reads `yoel` as an unassigned join marker today.
+- **Closes:** *it depends*: not found
+- **Recommendation:** decline; add `yoel` / `yoem` to unassigned-reserved.
+- **Outcome:** declined — D-23; cell added to unassigned-reserved.
+
+#### E-14 — ability stacks (`xua` *can again*) · forced · P3
+
+- **Proposed reading:** `xua` the ability was lost and is back (*can again*, undo + add)
+- **Example:** none: the parser rejects any stack after ability **x**.
+- **Pattern:** `ua` as *undo, then add* in joins
+- **Current route:** the plain `xa` form plus an ordinary adverb of repetition, or a second sentence
+- **Better than current route:** marginal
+- **Conflicts and notes:** the ability vowels run on a *now / yet / never* scale, so a stack would add a second axis (history) to a one-axis table. *can again* is also not a time grade at all.
+- **Closes:** *can again* (find-english *can again*, *able again*: no dedicated row)
+- **Recommendation:** decline; add the stack cells to unassigned-reserved.
+- **Outcome:** declined — D-23; cells added to unassigned-reserved.
+
+#### E-15 — *shouldn't* has no recipe row · no new form · P2
+
+- **Proposed reading:** none. English *shouldn't* is the sake **ought** before the act, with the act denied by `vul` after the verb, the same shape as the *needn't* row.
+- **Example:** `zazawan thanathem vezebel vul.` — z-Azawan | th-relatedness-ought-offered | [v-tell | v-not] — "Azawan shouldn't tell, to serve relatedness (offered)." Parses (`vul` reads as a join marker on the verb); whether `vul` scopes over the act alone, as in *needn't*, needs the owner's confirmation.
+- **Pattern:** say-tense *must / should* table
+- **Current route:** the table lists *must*, *has to*, *supposed to*, *should*, *should have*, *mustn't* (`yul`) and *needn't*, but not *shouldn't*
+- **Better than current route:** n/a (recipe gap, not a form gap)
+- **Conflicts and notes:** a stacked sake vowel (`thue` *ought not*) would collide with `thu` *unmet*, and the parser rejects any stack after the sake **th**. Reuse of `the` + a denied act needs no new rule.
+- **Closes:** *shouldn't*, *ought not*: no row
+- **Recommendation:** no new form; add a *shouldn't* row to [say-tense](../grammar/say-tense.md#must-should) once the spelling is confirmed.
+- **Outcome:** adopted — *shouldn't* row and example in say-tense; no new form.
+
+### Tone marks grid
+
+Marks: `!` `!!` `?` `?!` `%` `&` `;`. Positions: a word, a span, a scope island, the rest of the sentence.
+
+| Mark | Word | Span / island | Rest of sentence | Act word / linker | Number |
+|------|------|---------------|------------------|-------------------|--------|
+| all seven | def | def | def | def | def (`!g+5` parses) |
+
+No position is empty. The open questions are about the mark set, not the positions.
+
+#### E-16 — a new voice mark (`~` sung / drawn out, whisper, sadness, trailing off, sarcasm) · none · P3
+
+- **Proposed reading:** a mark for a voice quality the seven do not cover
+- **Example:** none.
+- **Pattern:** one mark = one voice, written before what it colors
+- **Current route:** `;` (soft, gentle) covers quiet and tender; `%` (not meant literally) covers sarcasm and irony; `?` (unsure, rising) covers a trailing-off hesitation
+- **Better than current route:** no
+- **Conflicts and notes:** `~` is the opaque-payload marker (`@~`), so it would clash. Each added mark needs a glyph that is not a fence glyph and a voice no existing mark gives. find-english: *whisper*, *sarcastic*, *ironic* return nothing.
+- **Closes:** —
+- **Recommendation:** decline; no unassigned-reserved row needed beyond a note that `~` is taken.
+- **Outcome:** declined — D-23.
+
+#### E-17 — combined marks (`%!`, `!?`, `!%`) · forced · P3
+
+- **Proposed reading:** two voices at once (*mock-excited*)
+- **Example:** `%! zazawan vowogal.`: the parser rejects `!?` today, with a pointer to the tone-marks section.
+- **Pattern:** `?!` is already one mark
+- **Current route:** a mark on the sentence plus a different mark on one word (the inner mark overrides, it does not combine)
+- **Better than current route:** marginal
+- **Conflicts and notes:** the page already states that other stacks are not marks, but no design decision gives the reason. `?!` is one recognized blend with its own voice (rising and loud); an open stack grammar would make `!?` and `?!` two orderings of one sound.
+- **Closes:** —
+- **Recommendation:** decline, and record the reason in design-decisions so it is not re-raised.
+- **Outcome:** declined — D-23.
+
+### Inconsistencies (wave 1)
+
+#### C-06 — vowel cues drift between families · found in vowel series
+
+- **Where:** [speech-moves § speech act](../grammar/speech-moves.md#speech-act-beginner), [spans § TYPE](../grammar/spans.md#type), [pronouns § role pointers](../grammar/pronouns.md#role-pointers)
+- **Problem:** speech-moves says *the same four vowel cues appear in many small word families* but names none of them. Two families gloss the vowel differently from the stated series: span TYPE **e** is *≈ else (an extra comment)* and the role-pointer vowel **a** is *≈ again*, where the series says **e** order and **a** add. A learner who trusts the series cue reads the span aside as an ordered thing. (Role pointers use role vowels `a` `u` `o`, which are not the series, so this one is a different mechanism sharing the letters.)
+- **Suggested ruling:** reword span TYPE **e** to the series cue (an aside is an ordered-in extra comment); leave the pointer cue but state that role vowels are not the series; add one sentence to speech-moves pointing at the families that use the series.
+- **Outcome:** fixed — span TYPE **e** cue reworded, pointer cue notes role vowels are not the series, speech-moves names the families.
+
+### None (to add to unassigned-reserved, if E-13, E-14 are declined)
+
+- `yoel` / `yoem` and the polar `oe` cell (E-13).
+- Stacked vowels after ability **x** and after sake / scope **th** (E-14, E-15).
 
 ## Inconsistencies
 
