@@ -12,6 +12,7 @@ import type { ClassifyTables } from "./classify.js";
 import { ARROW_ROOTS, isAsOfOverlay, isBarStance, isFrameStance, isGroundsChannel, isStandIn } from "./classify.js";
 import { REJECTIONS, type RejectionId } from "./constructions.js";
 import { linkerEnglish } from "./linkers.js";
+import { CLOSED } from "../closed-roots.js";
 import { isGenericPronoun, ordinalPronounPlace } from "./resolve.js";
 import { parseHookCompoundCite } from "./hook-compounds.js";
 import { SentenceParseError } from "./sentence-parser.js";
@@ -233,6 +234,18 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   const topic = word.pos === "x" && word.family.kind === "content" && !linkerEnglish(word);
   if (word.plural && word.pos && NO_PLURAL_POS.has(word.pos) && !holder && !topic) {
     throw new ConstructionError("pluralOnPos", word.raw);
+  }
+  const stemRoot = word.family.kind === "content" && word.family.roots.length === 1 ? word.family.roots[0] : undefined;
+  const nounish = word.pos === "z" || word.pos === "d" || word.pos === "b" || word.pos === "x";
+  if (nounish && stemRoot === CLOSED.neutral && word.ending === "n") {
+    if (word.plural) throw new ConstructionError("nonspecificPlural", word.raw);
+    if (word.pos === "x") throw new ConstructionError("topicNonspecific", word.raw);
+  }
+  if (nounish && stemRoot === CLOSED.star && (word.ending === "r" || (word.ending === "n" && word.pos === "x"))) {
+    throw new ConstructionError("topicOfTopic", word.raw);
+  }
+  if (word.pos === "y" && word.family.kind === "number" && word.ending === "r" && word.family.stem.marker === "#") {
+    throw new ConstructionError("ordinalSlot", word.raw);
   }
   if (word.plural && isGenericPronoun(word)) throw new ConstructionError("genericPlural", word.raw);
   if (word.plural && word.family.kind === "number" && ordinalPronounPlace(word) === undefined) {

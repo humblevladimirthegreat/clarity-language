@@ -509,6 +509,8 @@ Because the count is shared, an ordinal means the same person whoever says it. A
 
 Add **-x** for that person and associates, as on any name: `zreworx`.
 
+Ordinals fill `/z/`, `/d/`, and `/b/` only. To call someone, use their name (`yalahen`).
+
 > `zazawan vowogal. zreworx vezebal.`
 >
 > z-Azawan | v-walk . z-←1st-x | v-sleep
@@ -566,6 +568,8 @@ A thing works as a topic the same way:
 With Azawan as the topic, *Azawan sees themself* is `xazawan zozan vahahal dozan.` (`daxer` still works), and *Azawan's dog walks* is `xazawan zodogal em bozan vowogal.`: *the topic's* is the same in every role.
 
 A dropped subject is never read as the topic. `xazawan dalahen vahahal.` leaves out who sees; it does not say Azawan sees. Write `zozan` whenever the topic is the doer (and `dozan` or `bozan` in the other roles).
+
+The topic pronoun is the topic itself, so it is never a topic word or a resume: `xozan`, `xozar` and `zozar` are not sentences. To start a new stretch on the same topic, name it again with `xazawar`.
 
 A topic pronoun with no topic set is not a sentence. **`oza`** keeps its ordinary senses on **-l** / **-m** (`zozal` *a star*, `zozam` *fame*), and **-x** adds associates (`zozanx` *the topic and associates*).
 
@@ -656,7 +660,7 @@ A quote is someone else's talk, so it keeps a topic and an ordinal count of its 
 
 ### Me or you as the topic {#topic-participants}
 
-`/x/` takes the speaker or listener like any noun: `xamagon` *now, about me*, `xehodon` *now, about you*. The topic is fixed to that person (or the address set) at the moment it is set, so after `xehodon`, both speakers say `zozan` for the same person. Prefer a name where one is available ([proper name](word-endings.md#proper-name--n)); this makes turning the talk to yourself a visible choice.
+`/x/` takes the speaker, listener, interlocutors, or people in general like any noun: `xamagon` *now, about me*, `xehodon` *now, about you*, `xahan` *now, about the two of us*, `xoben` *now, about people in general*. A nonspecific `unan` cannot be a topic, because a topic is someone in particular. The topic is fixed to that person (or the address set) at the moment it is set, so after `xehodon`, both speakers say `zozan` for the same person. Prefer a name where one is available ([proper name](word-endings.md#proper-name--n)); this makes turning the talk to yourself a visible choice.
 
 ### Asking about the topic {#topic-question}
 

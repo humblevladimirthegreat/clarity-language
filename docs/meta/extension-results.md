@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Findings from Phase 3 of the expressiveness review (`docs/proposals/expressiveness-review.md`): every productive mechanism crossed with every place it could apply, and each empty cell judged. Rows are logged per batch, ruled by the language owner, and applied before the next batch starts; each row's **Outcome** records the ruling.
 
-Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Other mechanisms not started.
+Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Other mechanisms not started.
 
 ## How to read this file
 
@@ -371,6 +371,122 @@ No position is empty. The open questions are about the mark set, not the positio
 
 - `yoel` / `yoem` and the polar `oe` cell (E-13).
 - Stacked vowels after ability **x** and after sake / scope **th** (E-14, E-15).
+
+## Pronouns and plurality
+
+Owning pages: [pronouns](../grammar/pronouns.md), [plurality](../grammar/plurality.md), [roles § role pointers](../grammar/roles.md#role-pointers-family). Wave 2. Cells checked with `node scripts/parse.mjs` (2026-10-02). Whole-stem **-r** on closed roots belongs to the Word endings grid (C-02), and **-r** on joins and compounds is **def** (a joined slot resumes as one group through a pointer, `zaxar`; whole-stem **-r** names one member).
+
+### Pronoun grid
+
+| Pronoun | `/z/` `/d/` `/b/` | `/v/` `/ɡ/` `/h/` `/w/` | `/th/` | `/y/` | `/x/` (topic) |
+|---------|-------------------|--------------------------|--------|-------|---------------|
+| Role pointer (`a` `u` `o` role vowels; `a` `e` `o` pointer vowels) | def | E-20 (parser rejects; already listed none) | — (holder slot def) | E-19 | E-18 |
+| Ordinal (`z=#n`) | def | — (free ordinals are numbers) | — | E-21 | none (D-20) |
+| Generic `oben` | def | gen | — | gen | gen (C-07) |
+| Topic `ozan` | def | gen | — | none | C-07 (`xozan` / `xozar`) |
+| `amago` / `ehodo` | def | gen | — | def (`yehodon`) | def |
+| `aha` | def | gen | — | gen | gen (C-07) |
+| `una` | def | gen | — | gen | gen (C-07) |
+
+Parser findings: pointers parse only on `/z/` `/d/` `/b/` and a holder seam's holder slot; `yaxar`, `vaxar`, `hexar` and `xaxar` are rejected with a pointer to the pronouns page, and `xaxaxar`, which I first tried as the topic pointer, is not one: the pointer spelling `xaxar` is the rejected form, and `xaxaxar` is an unrelated compound. `yrewor` is rejected. `xahan`, `xunan`, `xoben` and `xozan` parse as topic words with a working `zozan` after them; `xozar` and `zozar` parse. `zahanx` and `zunanx` parse; `zobenx` is rejected (D-21). The other-one pointer `o` takes only `axor` / `uxor` / `oxor` (D-19), so `dexor` and `doexor` are rejected.
+
+### Rows
+
+#### E-18 — role pointer as a topic word (`xaxar`) · intuitive but redundant · P3
+
+- **Proposed reading:** `/x/` + a pointer makes the latest doer (or undergoer, or extra party) the topic: *now, about that one*
+- **Example:** `zazawan vowogal. xaxar zozan vehahel.` — rejected today.
+- **Pattern:** a pointer for the pronoun slots, a whole-stem **-r** return for the topic
+- **Current route:** `xazawar` (whole stem + **-r**), or `xodogar` for a kind
+- **Better than current route:** only for a long compound stem
+- **Conflicts and notes:** the topic change resets pointer anchors ([topic resets](../grammar/pronouns.md#topic-resets)), so a pointer here would need an order rule (resolve first, reset after). D-20 wants every return spelled out by stem, so every tool and every reader computes the same topic from the words alone.
+- **Closes:** *now, about the other one*: only a name
+- **Recommendation:** decline; the topic keeps stem returns only. The parser already rejects it.
+- **Outcome:** declined — D-24; the parser already rejects it.
+
+#### E-19 — role pointer in a vocative (`yaxar`) · forced · P3
+
+- **Proposed reading:** *hey, you who just did that*
+- **Example:** none: rejected today.
+- **Pattern:** pointer for the pronoun slots, vocative **-r** for the call
+- **Current route:** `yazawar` (a vocative resume), or the name
+- **Better than current route:** no
+- **Conflicts and notes:** pointers are third person (D-18); a call is second person, and a vocative already resumes by whole stem.
+- **Closes:** —
+- **Recommendation:** decline; add `/y/` to the pointer none cells.
+- **Outcome:** declined — D-24; cell added to unassigned-reserved.
+
+#### E-20 — role pointer on `/v/` `/ɡ/` `/h/` `/w/` · forced · P3
+
+- **Proposed reading:** *do so* / *such* / *thus* without respelling the stem
+- **Example:** none: `vaxar`, `hexar` rejected today.
+- **Pattern:** pointer plus role vowel
+- **Current route:** whole-stem **-r** (`vowogar`, [How English approximates **-r**](../grammar/pronouns.md#how-english-approximates-r))
+- **Better than current route:** no. A pointer picks a *participant* by its part in an event; a verb slot names the event itself, so there is no role vowel to write, and the whole stem is already short.
+- **Conflicts and notes:** already listed as undefined in unassigned-reserved.
+- **Closes:** *do so*, *such*: covered
+- **Recommendation:** decline; keep the cell none and add the reason to design-decisions.
+- **Outcome:** declined — D-24; cell stays in unassigned-reserved.
+
+#### E-21 — ordinal in a vocative (`yredur`) · intuitive but redundant · P3
+
+- **Proposed reading:** *hey, second one* (call the second person named)
+- **Example:** none: rejected today with a digitless-resume message.
+- **Pattern:** ordinal pronoun on `/z/` `/d/` `/b/`
+- **Current route:** the name (`yalahen`); ordinals exist only for names, so the caller always knows it
+- **Better than current route:** no
+- **Conflicts and notes:** the parser's message mentions digitless numbers, which misleads here.
+- **Closes:** —
+- **Recommendation:** decline; add the `/y/` cell to the none list, and point the parser's message at the ordinal-pronoun section.
+- **Outcome:** declined — D-24; parser message now points at the ordinal-pronoun section (`ordinalSlot`).
+
+#### E-22 — inclusive *we* plus associates (`ahanx`) · intuitive · P2
+
+- **Proposed reading:** you, I, and our associates: English *we* meaning more than the two of us (*we all*, *us and ours*)
+- **Example:** `zahanx vowogal.` — z-interlocutors-x | v-walk — "We (you, I and our people) walk." Already parses.
+- **Pattern:** **-x** adds associates to an anchor; `amagonx` adds them to the speaker, `ehodonx` is the address set
+- **Current route:** `zahan` alone (the extent stays open), or a join with `ehodon`, `amagon` and a named third party
+- **Better than current route:** yes: English *we* has three readings, and this is the one the table cannot say. `amagonx` excludes the listener, `ehodonx` excludes the speaker, `ahan` names the two.
+- **Conflicts and notes:** the table says `ahan` is "already the interlocutor set (no **-x**)", so adopting this changes that line. `ahan` can already cover several addressees, so `ahanx` means *beyond the people in this conversation*. `aha` was the only person root with no **-x** cell, and the parser accepts it today.
+- **Closes:** *we all*, *us and our people*: no form (`find-english` *all of us*, *we and our*)
+- **Recommendation:** adopt: teach it in [plurality § person-role **-x**](../grammar/plurality.md#person-role-x) with a table row, and change the `ahan` row.
+- **Outcome:** adopted — `ahanx` taught in [plurality § person-role **-x**](../grammar/plurality.md#person-role-x), `ahan` row changed; no parser change.
+
+#### E-23 — **-x** on `/h/` `/w/` `/th/` and the six linkers · none · P3
+
+- **Proposed reading:** a group of adverbs, degrees, stances or linkers
+- **Example:** none: `hanalx`, `thoyemx` rejected with a plurality pointer.
+- **Pattern:** **-x** names a group of **referents** (nouns, vocatives, person roles) or structures an **event** (`/v/`) or **property** (`/ɡ/`)
+- **Current route:** the event or property host already carries the collective; stances belong to holders, who take **-x** on the noun ([holder seam](../grammar/knowing.md))
+- **Better than current route:** no
+- **Conflicts and notes:** no guessable reading: a plural adverb has none in English either. plurality.md already says these hosts are unused, but no design decision gives the reason.
+- **Closes:** —
+- **Recommendation:** decline; record the reason in design-decisions so it is not re-raised.
+- **Outcome:** declined — D-24.
+
+### Inconsistencies (wave 2)
+
+#### C-07 — topic words on the special pronouns and `ozan` · found in pronouns
+
+- **Where:** [pronouns § me or you as the topic](../grammar/pronouns.md#topic-participants), [pronouns § topic pronoun](../grammar/pronouns.md#topic-pronoun), parser
+- **Problem:** the page teaches `xamagon` and `xehodon` only. The parser also accepts `xahan` (*now, about us*), `xunan`, `xoben`, and `xozan` / `xozar`. `xahan` and `xoben` have clear readings (*now, about the two of us*, *now, about people in general*). `xunan` is a topic with no particular referent. `xozan` would make the word *topic pronoun* its own topic, and `xozar` / `zozar` resume that word instead of pointing at the topic, so they either do nothing or reach an earlier use.
+- **Suggested ruling:** list `xahan` and `xoben` beside `xamagon` / `xehodon`; reject `xunan` (a topic needs someone to be about); reject `xozan`, `xozar` and `zozar` (the topic pronoun is the topic, never its own topic or a resume). Say so on the topic-pronoun paragraph.
+- **Outcome:** fixed — `xahan` and `xoben` taught beside `xamagon` / `xehodon`; the parser rejects `xunan`, `xozan`, `xozar`, `zozar` (`topicNonspecific`, `topicOfTopic`); D-24.
+
+#### C-08 — parser accepts `-x` the page denies, on `ahan` and `unan` · found in plurality
+
+- **Where:** [plurality § person-role **-x**](../grammar/plurality.md#person-role-x), parser
+- **Problem:** the table says `ahan` takes no **-x**, and the generic pronoun is rejected with a message (D-21), but `zahanx` and `zunanx` both parse with no reading. `unan` + **-x** would be *someone and associates*, which duplicates *some people* (`zobelx`).
+- **Suggested ruling:** if E-22 is adopted, `ahanx` is defined; reject `unanx` with a message pointing at `obelx`, and say *nonspecific someone takes no **-x*** beside the generic pronoun's sentence.
+- **Outcome:** fixed — the parser rejects `unanx` (`nonspecificPlural`); `ahanx` defined by E-22.
+
+### None (to add to unassigned-reserved if the rows above are declined)
+
+- Role pointers on `/y/` and `/x/` (E-18, E-19), and ordinal pronouns on `/y/` (E-21).
+- **-x** on `/h/` `/w/` `/th/` and the six linkers (E-23), and on `unan` (C-08).
+- Topic words `xunan`, `xozan`, `xozar`, and `zozar` (C-07).
+
+Confirmed **def** with nothing to add: the `o` pointer on the scene and hook roles (D-19), pointer vowel `u` (span resume), ordinal `#0` (already listed), **-x** on pointers, ordinals, `ozan` and topic nouns.
 
 ## Inconsistencies
 

@@ -66,7 +66,7 @@ An extra noun takes **-x** the same way. Here the recipient is Alahen and associ
 ### Person-role **-x** {#person-role-x}
 <a id="clusivity"></a>
 
-English *we* and *you* do not say whether the listener is in the group. That split is **clusivity**. On the speaker and listener roots, **-x** still adds associates, but the reading follows the conversation role: speaker plus that person’s people, or everyone you are talking to. The **address set** is everyone you are talking to right now (all current addressees, no speaker). Inclusive *you and I* stays **`aha`** ([special pronouns](pronouns.md#special-pronouns)), with no **-x**.
+English *we* and *you* do not say whether the listener is in the group. That split is **clusivity**. On the speaker and listener roots, **-x** still adds associates, but the reading follows the conversation role: speaker plus that person’s people, or everyone you are talking to. The **address set** is everyone you are talking to right now (all current addressees, no speaker). Inclusive *you and I* is **`aha`** ([special pronouns](pronouns.md#special-pronouns)); with **-x** it adds the speaker’s and listener’s shared people (below).
 
 > `zehodonx vowogal.`
 >
@@ -116,10 +116,17 @@ The same roots take the role letter of the slot they fill. As a direct object th
 |--------|-----|---------|
 | **`amagonx`** | speaker plus that person’s people (listener not assumed); `zamagonx` as subject, `damagonx` as object | *I and my people* (not you) |
 | **`ehodonx`** | all current addressees; `zehodonx` as subject, `dehodonx` as object | *you all* |
-| **`ahan`** | already the interlocutor set (no **-x**); `zahan` as subject, `dahan` as object | *we* (you and I) |
+| **`ahan`** | the interlocutor set; `zahan` as subject, `dahan` as object | *we* (you and I) |
+| **`ahanx`** | the interlocutor set plus associates beyond this conversation | *we all*, *us and our people* (you included) |
 | name **-nx** / resume **-rx** | that person plus associates | *X and associates* |
 
-**Compare with:** inclusive *we* uses **`aha`** (`zahan`), not **`amagonx`**.
+> `zahanx vowogal.`
+>
+> z-interlocutors-x | v-walk
+>
+> "We (you, I and our associates) walk."
+
+**Compare with:** inclusive *we* uses **`aha`** (`zahan`), not **`amagonx`**. **`amagonx`** leaves you out, **`ehodonx`** leaves the speaker out, and **`ahanx`** takes in both and the people around you. Nonspecific *someone* (**`una`**) names no group, so it takes no **-x**: *some people* is `zobelx`.
 
 **Not the same job as:** *you and yours* uses a **name**…**-x** (`zalahenx`). **`ehodonx`** is the [address set](#person-role-x) only.
 

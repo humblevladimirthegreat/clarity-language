@@ -123,8 +123,16 @@ Source: [roles.md](../grammar/roles.md), [x-compounds.md](../grammar/x-compounds
 | Slot | Status |
 |------|--------|
 | PoS `/v/` / `/h/` / `/w/` on role compounds | Undefined — prefer `/z/` `/d/` `/b/`; `/ɡ/` optional |
-| [Role pointers](../grammar/pronouns.md#role-pointers) on `/v/` / `/ɡ/` / `/h/` / `/w/` | Undefined (rejected by the parser) — for *does so* / *such*, use whole-stem **-r** |
+| [Role pointers](../grammar/pronouns.md#role-pointers) on `/v/` / `/ɡ/` / `/h/` / `/w/` / `/y/` / `/x/` | Undefined (rejected by the parser; D-24) — for *does so* / *such*, use whole-stem **-r**; to call or return to someone, name the stem |
 | Pointer vowel **`u`** | Not a pointer: after one role vowel, vowel **`x`** **`u`** + **-r** is a [span resume](../grammar/spans.md#endings) |
+
+## Pronouns and plurality
+
+Source: [pronouns.md](../grammar/pronouns.md), [plurality.md](../grammar/plurality.md); D-24 in [design-decisions](design-decisions.md)
+
+- Ordinal pronouns on `/y/` (`yredur`): rejected; call by name.
+- **-x** on `/h/` / `/w/` / `/th/` and the six linkers, and on `unan` (use `obelx` for *some people*).
+- Topic words `xunan`, `xozan`, `xozar`, and the resume `zozar`.
 
 ## Identity (`SAME`)
 
