@@ -144,6 +144,8 @@ Write **`y`**, then two vowels, then **-l** (firm) or **-m** (softer).
 
 When a sentence body follows *yes*, write **`yael`** then the body. You do not also write the statement word **`yal`**.
 
+A polar word is one answer. Do not stack two, and do not put one before an act word: an answer and then a question are two turns.
+
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`yael`** / soft **`yaem`** | match / receipt of a claim | *yes* / *true* · *I think so* | **a** ≈ add + **e** ≈ order (the claim lines up) |
@@ -476,6 +478,28 @@ Beginner already used *who/what* (**…ar**) and *what else* (**…ur**). Length
 
 Bare **-r** in the queried slot is unbound *who* / *what*. Bare **`var`** / **`xar`** is *what did they do?* / *what happened?*. Bare **`har`** is *when?*.
 
+### What kind? {#what-kind}
+
+To ask what something is **like** (*What color is it?*, *What kind of dog?*), put the blank on an adjective: **`gar`**. Answer with the adjective as a [citation](word-endings.md#citation-forms).
+
+> `yol zodogal gar.`
+>
+> y-question | z-dog | g-who
+>
+> "What is the dog like?"
+
+> `gelavam.`
+>
+> "Big."
+
+| Agazan | English |
+|--------|---------|
+| **`gar`** | *What is it like?* / *What kind?* |
+| **`gor`** | *Like anything in particular?* |
+| **`gur`** | *What else is it like?* |
+
+**Compare with:** *like what?* is the similative blank, **`humum bar`** ([how](#how)): it asks for a model to resemble, not a property. *How many?* is **`grar`** ([numbers](numbers.md#how-many)).
+
 ### When? {#when}
 
 To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in the question. Bare **`har`** is the *when* blank.
@@ -521,6 +545,18 @@ Answer with the hook and the landmark, as a [citation](word-endings.md#citation-
 
 **Compare with:** *when?* is **`har`** on `/h/`. Occasions are times or cases, so a place never goes there.
 
+### Whose? {#whose}
+
+*Whose?* is the [genitive hook](hooks.md#genitive) **`em`** with the blank **`bar`** after it, the same shape as *where?*. Because `em` says B uses the thing, the question is *whose use?*.
+
+> `yol zodogal em bar vowogal.`
+>
+> y-question | [z-dog | [used-by | b-who]] | v-walk
+>
+> "Whose dog walks?"
+
+Answer with the hook and the user, as a [citation](word-endings.md#citation-forms): `em bazawan.` ("Azawan's."). For ownership rather than use, see [`gegabem`](joins.md#scope-fence-p-join).
+
 ### How? {#how}
 
 *How?* works like *where?*: keep the word that says how the answer relates to the event, and put the blank **`bar`** after it. For manner (*in what way?*), use the similative [**`humum`**](relations.md) *like*.
@@ -554,6 +590,26 @@ Answer with the hook and the landmark, as a [citation](word-endings.md#citation-
 | **`thevem bar`** | *Why?* (*because of what?*) |
 | **`hogom bar`** | *What for?* (*for what purpose?*) |
 | **`thoyem bar`** | *Under what condition?* / *In what case?* |
+
+**Compare with:** [`thar`](join-across-roles.md#standalone-stance-joins) asks for the speaker's **grounds** (*Why do you say so?*), not what caused the event. Use `thevem bar` for the cause.
+
+### A blank inside a dependent {#blank-in-dependent}
+
+When the **outer** sentence is a question and a dependent carries a blank, the stand-in vowel says whose blank it is. **`dorl`** (*whether*) is itself question-like, so its blank belongs to it, and the outer **`yol`** is yes/no. **`darl`** (*that*) is statement-like and cannot ask, so its blank belongs to the outer **`yol`**.
+
+> `yol zehodon vubugam dorl zar vowogal.`
+>
+> y-question | z-listener | v-knowledge | d-whether-clause | z-who | v-walk
+>
+> "Do you know who walks?"
+
+> `yol zehodon vevegal darl zar vowogal.`
+>
+> y-question | z-listener | v-think | d-that-clause | z-who | v-walk
+>
+> "Who do you think walks?"
+
+If the outer sentence has a blank of its own, it asks the outer fill-ask and the inner one stays with `dorl`: `yol zar vubugam dorl zar vowogal.` is *Who knows who walks?*. Under a statement, `dorl` plus a blank is a [reported question](#embedded-whether).
 
 ### Yes/no with single-item / standalone
 <a id="yes-no-single-item-standalone"></a>
@@ -624,6 +680,11 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *attest* | `vodol` | |
 | *lie* | `valahal` | |
 | *sleep* | `ezebal` | |
+| *listener* | `ehodon` | `ehodol` *headphones* |
+| *dog* | `odogal` | |
+| *walk* | `vowogal` | |
+| *knowledge* | `vubugam` | `ubugal` *book* |
+| *think* | `vevegal` | |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -690,6 +751,38 @@ y-question | z-Alahen | v-sleep | h-when
 `!!yuol.`
 
 !!y-refuse-option
+:::
+
+**9.** *What is the dog like?*
+
+::: details Show answer
+`yol zodogal gar.`
+
+y-question | z-dog | g-who
+:::
+
+**10.** *Whose dog walks?*
+
+::: details Show answer
+`yol zodogal em bar vowogal.`
+
+y-question | [z-dog | [used-by | b-who]] | v-walk
+:::
+
+**11.** *Do you know who walks?*
+
+::: details Show answer
+`yol zehodon vubugam dorl zar vowogal.`
+
+y-question | z-listener | v-knowledge | d-whether-clause | z-who | v-walk
+:::
+
+**12.** *Who do you think walks?*
+
+::: details Show answer
+`yol zehodon vevegal darl zar vowogal.`
+
+y-question | z-listener | v-think | d-that-clause | z-who | v-walk
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}

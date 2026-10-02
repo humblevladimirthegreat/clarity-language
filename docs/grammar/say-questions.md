@@ -22,11 +22,25 @@ An echo question repeats what someone just said, because you doubt it or did not
 >
 > "AZAWAN walked?"
 
+### *Really?*, *Is that so?* {#really}
+
+**Needs:** [Polar stance](questions.md#polar-stance) · [tone marks](speech-moves.md#tone-marks)
+
+English *Really?* asks the speaker to confirm what they just said. Write the confirm tag as your own turn: **`yol yael.`** (*Is that so?*). Put the doubting mark **`?!`** on it for disbelief.
+
+> `zazawan vowogal. yol ?!yael.`
+>
+> z-Azawan | v-walk . y-question | ?!y-yes
+>
+> "Azawan walks." "Really?!"
+
+**Compare with:** **`yol.`** (*Huh?*) asks the speaker to say it again. **`yaer.`** (*I see*) takes the news in without asking anything.
+
 ### Reported questions {#reported-questions}
 
 **Needs:** [Fill-ask](questions.md#fill-ask-r) · [whether](questions.md#embedded-whether)
 
-To report a *who* / *what* question inside a claim (*Azawan asks who walks*), put the same blank you would use in a direct question inside [**`dorl`**](questions.md#embedded-whether). To quote the question as wording, keep `yol` inside a [cite](spans.md#quote-acts).
+To report a *who* / *what* question inside a claim (*Azawan asks who walks*), put the same blank you would use in a direct question inside [**`dorl`**](questions.md#embedded-whether). To quote the question as wording, keep `yol` inside a [cite](spans.md#quote-acts). To ask someone else whether they know such an answer (*Do you know who walks?*), see [a blank inside a dependent](questions.md#blank-in-dependent).
 
 > `zazawan vezebel dorl zar vowogal.`
 >

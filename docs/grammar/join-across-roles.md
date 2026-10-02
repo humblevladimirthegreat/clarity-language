@@ -167,13 +167,13 @@ Outside a question, only the single-vowel **-r** cells are words. Under a questi
 >
 > y-question | z-Azawan | v-walk | th-why
 >
-> "Why does Azawan walk?"
+> "On what grounds do you say Azawan walks?"
 
 | Word | Question |
 |---|---|
-| `thar` | *Why?* |
+| `thar` | *Why do you say so?* / *On what grounds?* |
 | `thor` | *For any reason?* |
-| `thur` | *Why else?* |
+| `thur` | *On what other grounds?* |
 | `thaor` | *How do you want me to take this?* |
 | `thuar` | *What's your overall take?* |
 | `thuor` | *What reasons would you rule out?* |
@@ -182,7 +182,7 @@ Outside a question, only the single-vowel **-r** cells are words. Under a questi
 | `thoer` | *What would settle it?* |
 | `thuer` | *What's your objection?* |
 
-**Compare with:** `thul` *no judgment* withholds any stance; a *no chance* stance number is a stance that the claim is false. `thar` *why?* asks for the speaker's grounds, not what caused the event.
+**Compare with:** `thul` *no judgment* withholds any stance; a *no chance* stance number is a stance that the claim is false. `thar` asks for the speaker's grounds, not what caused the event; for *Why does it happen?* use [`thevem bar`](questions.md#why).
 
 ### Join-act verbs {#join-act-verbs}
 

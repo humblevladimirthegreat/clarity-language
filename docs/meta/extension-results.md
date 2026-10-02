@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Findings from Phase 3 of the expressiveness review (`docs/proposals/expressiveness-review.md`): every productive mechanism crossed with every place it could apply, and each empty cell judged. Rows are logged per batch, ruled by the language owner, and applied before the next batch starts; each row's **Outcome** records the ruling.
 
-Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 adopted (reversed from decline), C-15 and C-16 fixed). Wave 7 (join series on other roles): logged (E-39, E-40, C-17 to C-19), ruled and applied (E-39 adopted as a docs gap, E-40 declined, C-17 to C-19 fixed). Wave 8 (hosted relations and bars): logged (E-41 to E-43), ruled and applied (E-41 and E-43 declined, E-42 adopted). Other mechanisms not started.
+Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 adopted (reversed from decline), C-15 and C-16 fixed). Wave 7 (join series on other roles): logged (E-39, E-40, C-17 to C-19), ruled and applied (E-39 adopted as a docs gap, E-40 declined, C-17 to C-19 fixed). Wave 8 (hosted relations and bars): logged (E-41 to E-43), ruled and applied (E-41 and E-43 declined, E-42 adopted). Wave 9 (questions): logged (E-44 to E-49, C-20, C-21, C-13 revisited), ruled and applied (E-44 to E-47 adopted, E-48 and E-49 declined, C-20, C-21 and C-13 fixed). Other mechanisms not started.
 
 ## How to read this file
 
@@ -695,7 +695,7 @@ Every `/v/` item is in the join-across-roles grid, and every `/x/` cell is a cla
 - **Where:** [joins § unspecified member](../grammar/joins.md#unspecified-member-r-phrase), [constraints](../grammar/joins.md#constraints), [verb-phrase and clause forms](../grammar/join-across-roles.md#vp-clause-forms), parser
 - **Problem:** the docs allow **-r** only on **a** / **o** / **e** / **u** (the join-across-roles table leaves `—` for stacks), but the parser accepts `zaor`, `zuar`, `zuor`, `zaer`, `zoer`, `zuer` on `/z/` `/d/` `/b/` `/ɡ/` `/v/` `/x/` and `/h/` (`haor`, `haer`, `hoer`, `huar`, `huor`). Every stack takes **-r** only as a fill-ask on `/y/` and `/th/` ([stance joins](../grammar/join-across-roles.md#standalone-stance-joins)).
 - **Suggested ruling:** reject stacked **-r** outside those two with a message pointing at the single-vowel forms; no new form. Re-check against the fill-ask grid in Wave 9 before closing, since a question might want `zuar` (*everything but what?*).
-- **Outcome:** known and deferred. No good reading exists for the missing stacked **-r** forms; the parser keeps accepting them for now. Revisit in Wave 9 (questions) in case a fill-ask wants one.
+- **Outcome:** known and deferred. No good reading exists for the missing stacked **-r** forms; the parser kept accepting them at that point. Closed in Wave 9: no fill-ask wants one, so the parser rejects them (see C-13, revisited).
 
 ### None (to add to unassigned-reserved, if the rows above are declined)
 
@@ -991,6 +991,139 @@ Only the as-of overlay takes `/b/` on `/w/`; any other `/w/` + `/b/` is a parse 
 - Relation roots on `/w/` with `/b/`, other than as-of; a relation root on `/th/` is wave 13.
 
 Confirmed **def** with nothing to add: each relation on `/ɡ/` and `/h/`, `/w/` grading the relation before the host, an empty `/b/` after a joined subject (*alike*, *friends*), the as-of pair on all four letters, and stance bars at **-l** / **-m** / **-r** on channels, REQUIRE and PERMIT.
+
+## Questions
+
+Owning page: [questions](../grammar/questions.md); the stance fill-ask lives in [join-across-roles](../grammar/join-across-roles.md#standalone-stance-joins). Wave 9. Cells checked with `node scripts/parse.mjs` (2026-10-02). The parser accepts a join-**-r** blank on every host, so a parse is not a reading; the rejections that matter are stacked act words (`yol yar`), a `/w/` blank with no adjective after it, and stacked **-r** on `/v/` `/x/` `/ɡ/` (C-19).
+
+### Grid
+
+| Blank | `/z/` `/d/` `/b/` | `/v/` | `/x/` | `/ɡ/` | `/h/` | `/w/` | `/th/` | `/y/` |
+|-------|--------------------|-------|-------|-------|-------|-------|--------|-------|
+| **-r** *who / what* | def | def (`var` *what did they do?*) | def (`xar` *what happened?*) | E-44 | def (`har` *when?*) | def (`war` before an adjective) | def (`thar`, C-20) | none (`yar` is a stacked act) |
+| **-o / -u / -e** *any / else / first* | def | def | def | E-44 | def | def | def | none |
+| Stacked **-r** | C-13 | rejected (C-19) | rejected (C-19) | rejected (C-19) | rejected | rejected | def (question only) | none |
+| Number blank (`grar`, `drar`, `hrar`) | def | — | — | def | def | — | — | — |
+| Hook + `bar` (*where?*, *how?*, *why?*) | def | — | — | — | — | — | — | — |
+
+| Position | Yes/no | Fill-ask |
+|----------|--------|----------|
+| Matrix `yol` / `yom` | def | def |
+| Inside `dorl` under a statement (reported question) | def | def |
+| Inside `dorl` / `darl` under `yol` | E-46 | E-46 (parser reads every blank as the outer ask) |
+| Topic word as the whole question (`yol xazawan.`) | E-49 | — |
+| Genitive hook + `bar` (`em bar`) | — | E-45 |
+
+| Polar position | State |
+|----------------|-------|
+| alone, before a body, as a `yol` / `yom` confirm tag, with `!!` or `?` | def |
+| tag with another polar word (`yol yuel`, `yol yaol`, `yol yaer`) | E-48 |
+| *Really?* (`yol ?!yael`) | E-47 |
+| before an act word, or two polar words in a row (`yael yal`, `yael yol zar vowogal`, `yael yuel`) | C-21 |
+| after a body inside a turn (`zazawan vowogal yael.`), or inside a dependent | rejected: a polar word is its own turn |
+
+### Rows
+
+#### E-44 — property blank on `/ɡ/` (`gar` / `gor` / `gur` / `ger`) · intuitive · P2
+
+- **Proposed reading:** the blank for a **property**: `yol zodogal gar.` *What is the dog like?* / *What kind of dog is it?*; `gor` *any kind?*, `gur` *what else is it like?*.
+- **Example:** `yol zodogal gar.` — y-question | z-dog | g-what-kind — "What is the dog like?" Answer: `gelavam.` (a citation). Parses today as a fill-ask.
+- **Pattern:** the fill-ask rule (the slot you want filled takes join **-r**), which already reads `zar`, `var`, `xar`, `har`
+- **Current route:** the similative blank `humum bar` (*like what?*), which asks for a model to resemble, not the property; for a number, `grar`
+- **Better than current route:** yes: *What color is it?*, *What's it like?* have no row (`find-english`: *what color*, *what is it like*, *what kind of*)
+- **Conflicts and notes:** the fill-ask table lists only `/z/` `/v/` `/x/`, and [joins](../grammar/joins.md) does not teach adjective **-r** as a blank, so the cell is **def** by rule but never shown.
+- **Closes:** *what is it like?*, *what color is it?*
+- **Recommendation:** adopt as a docs gap; no new form. Add `/ɡ/` to the fill-ask table and one example to [questions § fill-ask](../grammar/questions.md#fill-ask-r), and a checkpoint.
+- **Outcome:** adopted as a docs gap — taught in [questions § What kind?](../grammar/questions.md#what-kind) with a checkpoint; no new form, no parser change.
+
+#### E-45 — *whose?* (`em bar`) · intuitive · P1
+
+- **Proposed reading:** the genitive hook with the blank, the same shape as *where?* (`ol bar`): `yol zodogal em bar.` *Whose dog?*; `yol zodogal em bar vowogal.` *Whose dog walks?*.
+- **Example:** `yol zodogal em bar vowogal.` — y-question | [z-dog | [used-by | b-who]] | v-walk — "Whose dog walks?" Parses today.
+- **Pattern:** hook + `bar` ([where](../grammar/questions.md#where), [how](../grammar/questions.md#how), [why](../grammar/questions.md#why))
+- **Current route:** none stated (`find-english`: *whose*: only as-of rows)
+- **Better than current route:** yes: *whose?* is everyday English
+- **Conflicts and notes:** `em` says use or access, not ownership ([whose](../grammar/hooks.md#genitive)), so the question is *whose use?*. For ownership, `gegabem` + `bar`.
+- **Closes:** *whose dog?*, *whose is this?*
+- **Recommendation:** adopt as a docs gap; no new form. Add `em bar` to the *where?* table (rename the section to cover hook questions, or add a short *Whose?* section) and a checkpoint.
+- **Outcome:** adopted as a docs gap — taught in [questions § Whose?](../grammar/questions.md#whose) with a checkpoint; no new form.
+
+#### E-46 — a blank inside a dependent under `yol` · forced (one new rule) · P1
+
+- **Proposed reading:** the stand-in vowel owns the blank. In a **`dorl`** (*whether*) dependent the blank belongs to the dependent and the outer `yol` is yes/no: `yol zehodon vubugal dorl zar vowogal.` *Do you know who walks?*. In a **`darl`** (*that*) dependent the blank belongs to the outer `yol`: `yol zehodon vevegal darl zar vowogal.` *Who do you think walks?*.
+- **Example:** both above. Today the parser reads both as an outer fill-ask, so *Do you know who walks?* has no route but two turns.
+- **Pattern:** [stand-in vowels](../grammar/dependents.md#stand-in): **o** question-like, **a** statement-like
+- **Current route:** none that keeps it one question: ask `yol zehodon vubugal.` and then the inner question as a second turn; a reported question works only under a statement
+- **Better than current route:** yes: *Do you know who…?*, *Can you tell me where…?* and *Who do you think…?* are everyday. Details in `question-in-dependent.md`.
+- **Conflicts and notes:** the parser currently reads both shapes as one. Changes resolve (`asks`), not the grammar of any single word.
+- **Closes:** *do you know who*, *can you tell me where*, *who do you think*
+- **Recommendation:** adopt the rule in `question-in-dependent.md`; teach it in [questions § embedded whether](../grammar/questions.md#embedded-whether), with a recipe row and a pair of checkpoints.
+- **Outcome:** adopted — taught in [questions § A blank inside a dependent](../grammar/questions.md#blank-in-dependent) with checkpoints; the parser gives a `dorl` blank to the dependent (`inner` on the ask) and a `darl` blank to the outer `yol`; D-31.
+
+#### E-47 — *Really?* / *Is that so?* (`yol ?!yael.`) · no new form · P2
+
+- **Proposed reading:** none new. A bare confirm tag as the listener's own turn already asks whether the other's claim is true: `yol yael.` *Is that so?*; with the doubting mark, `yol ?!yael.` *Really?!*.
+- **Example:** `zazawan vowogal. yol ?!yael.` — z-Azawan | v-walk . y-question | ?!y-yes — "Azawan walks." "Really?!" Parses.
+- **Pattern:** confirm tag (`yol yael`) plus the echo mark ([echo questions](../grammar/say-questions.md#echo))
+- **Current route:** `yol.` (*Huh?*) asks to repeat, not to confirm; no row for *really?* (`find-english`: *really?*, *is that so*)
+- **Better than current route:** n/a (recipe gap, not a form gap)
+- **Conflicts and notes:** `yaer` is receipt, not a question; `yol yaer` has no guessable reading (E-48).
+- **Closes:** *really?*, *is that so?*, *seriously?*
+- **Recommendation:** adopt as a recipe row in [say-questions § echo questions](../grammar/say-questions.md#echo); no new form.
+- **Outcome:** adopted as a recipe row — [say-questions § Really?](../grammar/say-questions.md#really); no new form.
+
+#### E-48 — ask tags with the other polar words (`yol yuel`, `yol yaol`, `yol yaer`, `yol yuar`) · forced, and redundant · P3
+
+- **Proposed reading:** `yol yuel.` *…, no?* (check the denial), `yol yaol.` *…, want it?*, `yol yaer.` *…, you see?*.
+- **Example:** none worth teaching; all parse as yes/no questions with no reading.
+- **Pattern:** the confirm tag `yol yael`
+- **Current route:** `yol yael.` for *right?* (the English *no?* tag is the same job); offers are `yom` plus a body or a `zam` list ([offers](../grammar/say-questions.md#offer-words)); *you see?* is a question about the listener, not a polar stance
+- **Better than current route:** no
+- **Conflicts and notes:** an answer word asked back has no stable reading: `yol yaol` would ask *take this?* of something that was never an offer.
+- **Closes:** —
+- **Recommendation:** decline; add the cells to unassigned-reserved and record in design-decisions.
+- **Outcome:** declined — D-31; cells added to unassigned-reserved.
+
+#### E-49 — topic-only question (`yol xazawan.`) · intuitive but redundant · P2
+
+- **Proposed reading:** a topic word then the question mark: *What about Azawan?* / *And Azawan?*.
+- **Example:** `yol xazawan.` — y-question | x-Azawan — "What about Azawan?" Parses as a yes/no question with no body.
+- **Pattern:** the topic word ([topic](../grammar/pronouns.md#topic)) and the empty-body question (`yol.` *Huh?*)
+- **Current route:** `yol zazawan zam.` *How about Azawan?*, taught in [yes/no with single-item](../grammar/questions.md#yes-no-single-item-standalone)
+- **Better than current route:** no: the offer join already says it, and a topic word sets the topic for later sentences, which a quick *And you?* does not want
+- **Conflicts and notes:** the topic reset ([topic resets](../grammar/pronouns.md#topic-resets)) would fire on a throwaway question.
+- **Closes:** *what about X?*, *and you?*: covered
+- **Recommendation:** decline; record in design-decisions. Add `yol zehodon zam.` *And you?* as a recipe row only if the owner confirms the reading.
+- **Outcome:** declined — D-31.
+
+### Inconsistencies (wave 9)
+
+#### C-20 — `thar` is glossed *Why?* but asks for grounds, not cause · found in fill-ask
+
+- **Where:** [join-across-roles § standalone stance joins](../grammar/join-across-roles.md#standalone-stance-joins), [questions § why](../grammar/questions.md#why)
+- **Problem:** the example `yol zazawan vowogal thar.` is glossed "Why does Azawan walk?", but the **Compare with** line right after says `thar` asks for the speaker's grounds, not what caused the event. The cause question is `thevem bar` in questions.md, which never mentions `thar`. A learner who reads either page alone picks the wrong *why*.
+- **Suggested ruling:** regloss the example and table to the grounds reading (*Why do you say Azawan walks?* / *On what grounds?*), and add a **Compare with** in questions § Why? pointing at it.
+- **Outcome:** fixed — `thar` glossed as the grounds question in join-across-roles, and questions § Why? compares it with `thevem bar`.
+
+#### C-21 — the parser accepts a polar word before an act word, and two polar words in a row · found in polar stance
+
+- **Where:** [questions § polar stance](../grammar/questions.md#polar-stance), parser
+- **Problem:** the page says a polar word stands alone or sits before a body, and that `yal` is not written after it. `yael yal.`, `yael yol zar vowogal.`, `yael yuel.` and `yaer yal zazawan vowogal.` all parse with no reading.
+- **Suggested ruling:** reject a polar word before any act word, and two polar words in a row, with a pointer to the polar-stance section (an answer and then a question are two turns).
+- **Outcome:** fixed — the parser rejects a polar word before an act word and two polar words in a row (`polarOrder`); stated in questions § polar stance; D-31.
+
+#### C-13 — revisited: stacked **-r** on `/z/` `/d/` `/b/` joins
+
+- **Check:** no fill-ask wants one. The arity table needs only **a o e u**, and a stacked blank (`zuar` *everything but what?*) has no common English question.
+- **Suggested ruling:** reject stacked **-r** on `/z/` `/d/` `/b/` with a pointer to the single-vowel forms, as C-19 did for `/v/` `/x/` `/ɡ/`; the `/th/` stance fill-ask stays.
+- **Outcome:** fixed — the parser rejects stacked **-r** on `/z/` `/d/` `/b/` joins too (`stackedJoinResume`); D-31 and unassigned-reserved.
+
+### None (to add to unassigned-reserved if the rows above are declined)
+
+- `yar` / `yor` / `yer` / `yur` as a blank in the `/y/` slot: a stacked act word, rejected.
+- Tag forms `yol yuel` `yol yaol` `yol yuol` `yol yual` `yol yaer` and the rest (E-48).
+
+Confirmed **def** with nothing to add: `zar` `dar` `bar` at every arity, `var` `xar` `har`, the number blanks, `ol` / `al` / `ul` / `el` + `bar`, `humum bar`, `thevem bar` and the other cause poles + `bar`, polar stance at **-l** / **-m** / **-r** as a turn or a before-body word, and `yol ?zar`.
 
 ## Inconsistencies
 

@@ -575,6 +575,7 @@ export function constructionRegistry(overlays: Iterable<OverlayEntrySource>): Ma
 export const REJECTIONS = {
   genitiveHost: { anchor: "hooks.md#genitive", summary: "`em` + `/b/` follows the noun B uses" },
   forcePair: { anchor: "speech-moves.md#emphatic-prohibition", summary: "only `yul yul` and `yal yol` / `yam yol` stack two act words" },
+  polarOrder: { anchor: "questions.md#polar-stance", summary: "a polar word is one answer or one confirm tag: not two in a row, and not before an act word (an answer and then a question are two turns)" },
   sentenceEndMark: { anchor: "speech-moves.md#tone-marks", summary: "a sentence ends in `.`; `?` / `!` are tone-mark prefixes" },
   toneStack: { anchor: "speech-moves.md#tone-marks", summary: "only ! !! ? ?! % & ; are tone marks; other stacks are not" },
   toneTarget: { anchor: "speech-moves.md#tone-marks", summary: "a tone mark goes before a word, an island open ^, or a span" },
@@ -589,7 +590,7 @@ export const REJECTIONS = {
   stackedHookResume: { anchor: "hooks.md#spans", summary: "stacked hook -r (oer / uar / uer) needs same-role words on both sides; aor / aer / uor are not words" },
   hookSameRoleStack: { anchor: "hooks.md#including-am-al", summary: "between same-role words only the plain hooks (al el ol ul) and the span hooks (oel ual uel) have a reading; for such as, use am" },
   hookDiscourseStack: { anchor: "hooks.md#discourse-hooks", summary: "at the front of a sentence only al el ol ul, aol and ael have a reading; for next, by the way, on the contrary use a linker" },
-  stackedJoinResume: { anchor: "join-across-roles.md#vp-clause-forms", summary: "stacked join vowels take no -r on /v/ /x/ /ɡ/ (only a / o / e / u do); a stacked -r is the stance fill-ask under /th/" },
+  stackedJoinResume: { anchor: "join-across-roles.md#vp-clause-forms", summary: "stacked join vowels take no -r on /z/ /d/ /b/ /v/ /x/ /ɡ/ (only a / o / e / u do); a stacked -r is the stance fill-ask under /th/" },
   spanSlot: { anchor: "spans.md#pos", summary: "an aside goes only under /th/; a cite, mention or opaque span fills a content slot (/z/ /d/ /b/ /v/ /ɡ/ /h/) or sets the topic under /x/; no span fills /w/" },
   ySpanType: { anchor: "spans.md#y-spans", summary: "a span under /y/ is opaque <…> or a cite […]; a mention or an aside is not a call or a reaction" },
   barKind: {

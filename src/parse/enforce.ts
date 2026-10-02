@@ -212,11 +212,11 @@ function enforceSpanSlot(word: LexWord): void {
   if (aside !== (word.pos === "th")) throw new ConstructionError("spanSlot", word.raw);
 }
 
-/** Stacked join **-r** (`vaor` / `xuar` / `gaor`) has no reading outside the `/th/` fill-ask (join-across-roles.md § Standalone stance joins). */
+/** Stacked join **-r** (`zuar` / `vaor` / `xuar` / `gaor`) has no reading outside the `/th/` fill-ask (join-across-roles.md § Standalone stance joins). */
 function enforceStackedJoinR(word: LexWord): void {
   const family = word.family;
   if (family.kind !== "joinMarker" || word.ending !== "r" || family.series.length < 2) return;
-  if (word.pos === "v" || word.pos === "x" || word.pos === "g") throw new ConstructionError("stackedJoinResume", word.raw);
+  if (["z", "d", "b", "v", "x", "g"].includes(word.pos ?? "")) throw new ConstructionError("stackedJoinResume", word.raw);
 }
 
 /** Stacked hook **-r** (`oer` / `uar` / `uer`) is only a span member between same-role words (hooks.md § Spans). */
@@ -645,6 +645,11 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
 }
 
 function enforceForcePair(left: LeftEdge): void {
+  // A polar word is one answer or one confirm tag: not two in a row, and not before an act word (questions.md § polar stance).
+  const act = left.leadForce ?? left.force;
+  if (left.polars.length > 1 || (act && left.polars.some((polar) => (polar.at ?? 0) < (act.at ?? 0)))) {
+    throw new ConstructionError("polarOrder", left.polars.map((polar) => polar.raw).join(" "));
+  }
   if (left.leadForce && !forcePairKind(left.leadForce, left.force)) {
     throw new ConstructionError("forcePair", `${left.leadForce.raw} ${left.force?.raw ?? ""}`.trim());
   }

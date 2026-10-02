@@ -426,6 +426,8 @@ export type AskRecord = {
   kind: AskKind;
   /** Join `-r` gaps in spoken order (fill-all). */
   gaps: LexWord[];
+  /** Blanks inside a `dorl` dependent under a question: the dependent's own question, not the outer ask (questions.md#embedded-whether). */
+  inner?: LexWord[];
 };
 
 export type SharedRole =

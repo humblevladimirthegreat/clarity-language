@@ -78,6 +78,10 @@ type Ctx = {
   asks: AskRecord[];
   shared: SharedRecord[];
   gaps: LexWord[];
+  /** Blanks owned by a `dorl` dependent (the rest of the sentence after it). */
+  innerGaps: LexWord[];
+  /** The stand-in of the dependent the walk is inside, if any. */
+  standIn?: LexWord;
   question: boolean;
 };
 
@@ -643,12 +647,16 @@ function resolveVisitor(ctx: Ctx): Visitor {
   return {
     word(word, slot) {
       if (opaque > 0 || slot === "boundJoinClose" || slot === "joinModifier" || slot === "factor") return;
+      if (slot === "orodo") ctx.standIn = word;
       if (slot === "linker") considerLinker(ctx, word);
       else considerWord(ctx, word);
     },
     join(join, site) {
       if (opaque > 0) return;
-      if (ctx.question && isJoinGap(join)) ctx.gaps.push(join);
+      if (!ctx.question || !isJoinGap(join)) return;
+      // In a `dorl` (question-like) dependent the blank is the dependent's own; in `darl` it is the outer ask's (questions.md#embedded-whether).
+      if (ctx.standIn?.raw[1] === "o") ctx.innerGaps.push(join);
+      else ctx.gaps.push(join);
     },
     enter(node) {
       if (node.kind === "body" && opaque === 0) {
@@ -672,6 +680,8 @@ function resolveVisitor(ctx: Ctx): Visitor {
         enterLeft(ctx, node.utterance);
         ctx.question = isQuestionForce(node.utterance.left.force);
         ctx.gaps = [];
+        ctx.innerGaps = [];
+        ctx.standIn = undefined;
       }
     },
     exit(node) {
@@ -688,7 +698,7 @@ function resolveVisitor(ctx: Ctx): Visitor {
         const { left } = node.utterance;
         let kind: AskKind = "none";
         if (ctx.question) kind = isRhetorical(left.leadForce, left.force) ? "rhetorical" : ctx.gaps.length > 0 ? "fillAsk" : "yesNo";
-        ctx.asks.push({ utteranceIndex: node.index, kind, gaps: ctx.gaps });
+        ctx.asks.push({ utteranceIndex: node.index, kind, gaps: ctx.gaps, ...(ctx.innerGaps.length > 0 ? { inner: ctx.innerGaps } : {}) });
       }
     },
   };
@@ -708,6 +718,7 @@ function buildResolve(result: ParseResult): ResolveInfo {
     asks: [],
     shared: [],
     gaps: [],
+    innerGaps: [],
     question: false,
   };
   visitResult(result, resolveVisitor(ctx));

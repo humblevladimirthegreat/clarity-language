@@ -112,7 +112,7 @@ Under `/h/` / `/w/`, join spellings beyond the [defined restrictor core](../gram
 Source: [join-across-roles.md](../grammar/join-across-roles.md#stance-joins)
 
 - **`/th/`…-n** — reserved; no join-relation or sequence reading
-- Stacked **-r** outside a question (`thaor` … `thuer` are fill-asks only); stacked **-r** on `/v/` `/x/` `/ɡ/` joins (`vaor`, `xuar`, `gaor`) — the parser rejects them
+- Stacked **-r** outside a question (`thaor` … `thuer` are fill-asks only); stacked **-r** on `/z/` `/d/` `/b/` `/v/` `/x/` `/ɡ/` joins (`zuar`, `vaor`, `xuar`, `gaor`) — the parser rejects them
 - Clause sequence **-n** beyond `xan` `xon` `xun` `xaon` (`xuan`, `xuon`, `xen`, `xaen`, `xoen`, `xuen`)
 
 ## Hosted relations
@@ -175,6 +175,9 @@ Source: [dependents.md](../grammar/dependents.md#sentence-linkers)
 Source: [speech-moves.md](../grammar/speech-moves.md#speech-act), [questions.md](../grammar/questions.md#polar-endings)
 
 - Act and polar series with **-n** (`yan` / `yon` / `yen` / `yun`, `yaen` / …): no reading. On `/y/`, **-n** calls someone, and there is no named-formula interjection.
+- A blank in the `/y/` slot (`yar` / `yor` / `yer` / `yur`): a stacked act word, rejected.
+- Ask tags with a polar word other than `yael` / `yaem` (`yol yuel`, `yol yaol`, `yol yaer`, …): no reading (D-31).
+- A polar word before an act word, or two polar words in a row (`yael yal`, `yael yuel`): the parser rejects them; an answer and a question are two turns.
 
 ## Spans
 

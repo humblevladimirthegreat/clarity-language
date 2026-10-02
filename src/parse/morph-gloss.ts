@@ -991,7 +991,9 @@ function rootAntecedent(antecedent: LexWord, binds: AnaphorBind[]): LexWord {
 function isFillAsk(word: LexWord, asks: AskRecord[]): boolean {
   if (word.at === undefined) return false;
   return asks.some(
-    (ask) => (ask.kind === "fillAsk" || ask.kind === "rhetorical") && ask.gaps.some((gap) => gap.at === word.at),
+    (ask) =>
+      ((ask.kind === "fillAsk" || ask.kind === "rhetorical") && ask.gaps.some((gap) => gap.at === word.at)) ||
+      (ask.inner?.some((gap) => gap.at === word.at) ?? false),
   );
 }
 

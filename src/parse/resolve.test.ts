@@ -350,6 +350,18 @@ describe("resolve — yes/no vs fill-ask (questions.md)", () => {
     const { asks } = resolveOf("yom zar vawalal.");
     assert.equal(asks[0]!.kind, "fillAsk");
   });
+
+  it("gives a blank in a dorl dependent to the dependent, and one in a darl dependent to yol", () => {
+    const whether = resolveOf("yol zehodon vubugal dorl zar vowogal.").asks[0]!;
+    assert.equal(whether.kind, "yesNo");
+    assert.deepEqual(whether.inner?.map((g) => g.raw), ["zar"]);
+    const that = resolveOf("yol zehodon vevegal darl zar vowogal.").asks[0]!;
+    assert.equal(that.kind, "fillAsk");
+    assert.deepEqual(that.gaps.map((g) => g.raw), ["zar"]);
+    const both = resolveOf("yol zar vubugal dorl zar vowogal.").asks[0]!;
+    assert.deepEqual(both.gaps.map((g) => g.raw), ["zar"]);
+    assert.equal(both.inner?.length, 1);
+  });
 });
 
 describe("resolve — SHARED (comparatives.md / numbers.md)", () => {
