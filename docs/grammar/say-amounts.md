@@ -292,7 +292,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 
 ### How many and how big {#quantity-words}
 
-**Needs:** [Vague amounts](comparatives.md#vague-amounts) · [Bars](comparatives.md#bars) · [Measure phrases](numbers-applied.md#measure-phrases) · [Rays](numbers-applied.md#rays) · [Fractions](numbers-applied.md#fractions)
+**Needs:** [Vague amounts](comparatives.md#vague-amounts) · [Bars](comparatives.md#bars) · [Place on a scale](comparatives.md#place-on-a-scale) · [Measure phrases](numbers-applied.md#measure-phrases) · [Rays](numbers-applied.md#rays) · [Fractions](numbers-applied.md#fractions)
 
 | English | Agazan |
 |---------|--------|
@@ -311,6 +311,9 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | *literally* (*word for word*) | an exact quote: bare brackets, no `~` ([exact, paraphrase, proper](spans.md#when-required)) |
 | *a dozen* | `zegalx g+12` |
 | *a quarter of the cats* | `zagadulx g-4` (or `g+25%`) |
+| *two thirds of the cats*, *three quarters* | `zagadulx gradul grurel` (count, then [fraction](numbers-applied.md#fractions)) |
+| *a third of an hour* | `bagazem grawol grurel` |
+| *the second biggest*, *the third tallest* | `zazawan zel wredul gelavam` ([place on a scale](comparatives.md#place-on-a-scale)) |
 | *twice* / *double* (two times) | `h+2` before the verb |
 | *ratio* (*three cats to one dog*) | `zagadulx zodogalx zael gral hrarel` ([factor](comparatives.md#factor)) |
 | *at least 5* / *at most 5* (*minimum* / *maximum*) | `zraval al zrabal` / `zrubal al zraval` |

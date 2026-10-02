@@ -44,6 +44,8 @@ import type {
   IslandUnit,
   LexWord,
   NpCoord,
+  NumberMarker,
+  NumberStem,
   ParseResult,
   Unit,
   VpCoord,
@@ -247,6 +249,8 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   if (word.pos === "y" && word.family.kind === "number" && word.ending === "r" && word.family.stem.marker === "#") {
     throw new ConstructionError("ordinalSlot", word.raw);
   }
+  if (word.pos === "th" && word.family.kind === "number") enforceStanceNumber(word, word.family.stem);
+  if (word.pos === "w" && word.family.kind === "number") enforceDegreeNumber(word, word.family.stem);
   if (word.plural && isGenericPronoun(word)) throw new ConstructionError("genericPlural", word.raw);
   if (word.plural && word.family.kind === "number" && ordinalPronounPlace(word) === undefined) {
     throw new ConstructionError("numberPlural", word.raw);
@@ -272,6 +276,45 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
     if (word.pos && !SCOPE_POS.has(word.pos)) throw new ConstructionError("labelScopeSlot", word.raw);
     if (family.leftRoots.some((root) => ARROW_ROOTS.has(root))) throw new ConstructionError("labelScopeArrow", word.raw);
   }
+}
+
+/** The one plain-digit group of a stem (`#2`), else undefined: no exponent, decimal, percent or digitless exponent. */
+function plainDigits(stem: NumberStem): number | undefined {
+  const only = stem.groups[0];
+  if (stem.groups.length !== 1 || stem.digitlessExp || !only || only.exponentDigits || only.exponentSign || only.decimal || only.percent) {
+    return undefined;
+  }
+  return /^\d+$/.test(only.mantissa ?? "") ? Number(only.mantissa) : undefined;
+}
+
+const isMinus = (m: NumberMarker) => m === "-" || m === "ru";
+const isRankMarker = (m: NumberMarker) => m === "#" || m === "re";
+
+/** `/th/` + number (numbers.md § Number as stance): `+` likelihood, `_` source, `#N` Nth-hand from 2. */
+function enforceStanceNumber(word: LexWord, stem: NumberStem): void {
+  const { marker, groups } = stem;
+  if (marker === "#-" || marker === "rue" || (isMinus(marker) && groups.length > 0)) {
+    throw new ConstructionError("stanceNumber", word.raw);
+  }
+  if (!isRankMarker(marker)) return;
+  const blank = word.ending === "r" && groups.length === 0 && !stem.digitlessExp;
+  const depth = plainDigits(stem);
+  if (!blank && (depth === undefined || depth < 2)) throw new ConstructionError("handDepth", word.raw);
+}
+
+/** `/w/` + number: the *how much?* blank, *barely* / *almost*, or an ordinal place on a scale (checked in a rank frame). */
+function enforceDegreeNumber(word: LexWord, stem: NumberStem): void {
+  const { marker, groups } = stem;
+  const blank = word.ending === "r" && groups.length === 0 && !stem.digitlessExp;
+  const hairs = groups.length === 0 && stem.digitlessExp === "e-" && (marker === "+" || marker === "ra" || isMinus(marker));
+  if (blank || hairs) return;
+  const place = isRankMarker(marker) ? plainDigits(stem) : undefined;
+  if (place === undefined || place < 2) throw new ConstructionError("degreeNumber", word.raw);
+}
+
+/** A `/w/` ordinal (`wredul`) is a place on a scale: it needs a single-name `zel` / `zuel` frame (comparatives.md § superlatives). */
+function isRankPlace(word: LexWord): boolean {
+  return word.pos === "w" && word.family.kind === "number" && isRankMarker(word.family.stem.marker);
 }
 
 function enforceShared(join: LexWord | undefined, shared: CoordShared[]): void {
@@ -481,15 +524,24 @@ function enforceUnitList(units: Unit[], tables: ClassifyTables): void {
 }
 
 /** The AST checks as one handler set over the walk ([ast-walk.ts](./ast-walk.ts)). */
-function structureVisitor(tables: ClassifyTables): Visitor {
+function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; framed: Set<LexWord> }): Visitor {
   return {
     // *Respectively* (`wazem`) sits only right before a `/z/` `/d/` `/b/` join word (joins.md § Respectively).
     word(word, slot) {
       if (isRespectively(word) && slot !== "joinModifier") throw new ConstructionError("joinDetail", word.raw);
+      if (isRankPlace(word)) places.seen.add(word);
     },
     join(join, site) {
       if (site.kind === "np") enforceShared(join, site.coord.parts[site.index]!.shared);
       if (site.kind === "vp") enforceShared(join, site.coord.parts[site.index]!.shared);
+      if (site.kind === "np") {
+        const part = site.coord.parts[site.index]!;
+        const lone = part.items.length === 1 && (series(join) === "e" || series(join) === "ue");
+        for (const item of part.shared) {
+          if (isScaleShared(item)) continue;
+          if (lone) for (const mod of item.modifiers) places.framed.add(mod);
+        }
+      }
     },
     enter(node) {
       switch (node.kind) {
@@ -543,7 +595,9 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
       throw new ConstructionError("forcePair", `${left.leadForce.raw} ${left.force?.raw ?? ""}`.trim());
     }
   }
-  visitResult(result, structureVisitor(tables));
+  const places = { seen: new Set<LexWord>(), framed: new Set<LexWord>() };
+  visitResult(result, structureVisitor(tables, places));
+  for (const word of places.seen) if (!places.framed.has(word)) throw new ConstructionError("degreePlaceFrame", word.raw);
   for (const bind of result.resolve?.anaphors ?? []) {
     if (bind.kind === "pointer") enforcePointer(bind);
     if (bind.antecedent) continue;

@@ -302,6 +302,20 @@ The ending on a channel says **how strong the evidence is**: how much the claim 
 >
 > "Azawan walked — I remember it clearly."
 
+### Second-hand and further (`th#N`) {#hand-depth}
+
+A channel says **how** you know; it does not say how many retellings stand between the source and you. A [stance number](numbers.md#number-as-stance-by-marker) with the rank marker adds that: **`th#N`** (from 2) is *N-th hand*, so `thredul` (`th#2`) is told by someone who was there, and `threrel` (`th#3`) is told by someone who was told. Put it after the channel. (cue: **`e`** ≈ order, the place in the chain of tellers)
+
+> `zalahen thewam threrel vedabal.`
+>
+> z-Alahen | th-TOLD | th-3rd-hand | v-departure
+>
+> "Alahen left, so they say — third-hand."
+
+Alone, `th#N` already says the claim was passed on to you. After TOLD it only adds the depth. First-hand has no number: that is a channel (`thodom`, `thevom`). The usual endings apply: **-m** *about N-th hand* (`threrem`), **-r** with a digit *the same depth as before* (`threrer`). Digitless `threr` under a question asks *how many hands?*
+
+**Compare with:** `th_N` names *which* numbered source the claim rests on; `th#N` counts *how many tellers*. Reliability of the one source you heard from is the ending on the channel (`thewal` / `thewar`).
+
 ### Mirative (`thezum`) {#mirative}
 
 English *it turns out*, *to my surprise*, and *so … after all* say the news ran **against what you expected**. Put **`thezum`** on the clause. It is not a channel: it says nothing about how you know, so add a channel beside it when you want to name the warrant.
@@ -859,6 +873,14 @@ z-Azawan | v-scream | [th-because | b-that-clause] | z-Alahen | v-punch
 z-Alahen | th-LIVE | th-MIRATIVE | v-sing
 :::
 
+**17.** *Alahen screams — so they say, third-hand.*
+
+::: details Show answer
+`zalahen thewam threrel vezugel.`
+
+z-Alahen | th-TOLD | th-3rd-hand | v-scream
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zazawan thahom vezebel bahaben.`
@@ -975,6 +997,15 @@ z-Ahaben | [th-RECORDED.strong | b-later] | v-tell
 v-rain | [th-PATTERN.strong | [b-later | b-that-clause]] | [z-cloud | g-gray]
 
 *It will rain, going by the well-established pattern, given the gray clouds.*
+:::
+
+**14.** `zahaben thredul vezebel.`
+
+::: details Show answer
+
+z-Ahaben | th-2nd-hand | v-tell
+
+*Ahaben tells — second-hand.*
 :::
 
 ## Advanced {#advanced}

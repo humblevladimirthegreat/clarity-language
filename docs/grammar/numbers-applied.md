@@ -211,7 +211,21 @@ English *half of the cats* / *a third of the tea* splits the whole into N parts.
 >
 > "A third of the tea sits there."
 
-**`g-N`** is a fraction only right after a plain noun. After a [measure](#measure-phrases) unit, a minus number is still a negative amount (`bezezem grudul` *minus 2 meters*).
+To say how many parts, put the count first and the fraction after it: **`g+N`** then **`g-M`** is *N parts of M*. English *two thirds* is the same two words in the same order.
+
+> `zagadulx gradul grurel vehahel.`
+> [z-cat-x | g-two | g-third-of] | v-sit
+>
+> "Two thirds of the cats sit."
+
+**`g-N`** alone is a fraction only right after a plain noun. After a [measure](#measure-phrases) unit, a minus number is still a negative amount (`bezezem grudul` *minus 2 meters*). The count makes the fraction plain in any slot, a unit included: a count then a minus is never a negative amount, since a unit takes one amount.
+
+> `zazawan vowogal bagazem grawol grurel.`
+> z-Azawan | v-walk | [b-hour | g-one | g-third-of]
+>
+> "Azawan walks for a third of an hour."
+
+*Half* of a unit also has a decimal route (`bezezem g+0.5`).
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -324,6 +338,14 @@ z-15 | through | z-16
 h-_22,7 | z-Ahaben | v-scream
 :::
 
+**10.** *Two thirds of the pills.*
+
+::: details Show answer
+`zebezalx gradul grurel.`
+
+[z-pill-x | g-two | g-third-of]
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zabadul g_7.`
@@ -421,6 +443,15 @@ z-ten | outside | z-20
 h-_1,4 | z-Alahen | v-walk
 
 *On 1 April, Alahen walks.*
+:::
+
+**10.** `zabadulx grarel grumol.`
+
+::: details Show answer
+
+[z-baby-bottle-x | g-three | g-quarter-of]
+
+*Three quarters of the bottles.*
 :::
 
 ## Advanced {#advanced}

@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Findings from Phase 3 of the expressiveness review (`docs/proposals/expressiveness-review.md`): every productive mechanism crossed with every place it could apply, and each empty cell judged. Rows are logged per batch, ruled by the language owner, and applied before the next batch starts; each row's **Outcome** records the ruling.
 
-Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Other mechanisms not started.
+Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors) logged and awaiting rulings. Other mechanisms not started.
 
 ## How to read this file
 
@@ -487,6 +487,220 @@ Parser findings: pointers parse only on `/z/` `/d/` `/b/` and a holder seam's ho
 - Topic words `xunan`, `xozan`, `xozar`, and `zozar` (C-07).
 
 Confirmed **def** with nothing to add: the `o` pointer on the scene and hook roles (D-19), pointer vowel `u` (span resume), ordinal `#0` (already listed), **-x** on pointers, ordinals, `ozan` and topic nouns.
+
+## Numbers
+
+Owning pages: [numbers](../grammar/numbers.md), [numbers-applied](../grammar/numbers-applied.md), [numeric-derivation](../grammar/numeric-derivation.md). Wave 3. Cells checked with `node scripts/parse.mjs` (2026-10-02). The parser reads any `r` + vowel word after a role letter as a number, so it accepts `wredul`, `thredul` and `thrurel` today with no reading; a form that parses is not a reading. Ending cells (**-l** / **-m** / **-n** / **-r**) on number words are all **def** by one rule ([number endings](../grammar/numbers.md#number-endings)), so the grid below is markers by role letters.
+
+### Grid
+
+| Marker | `/z/` `/d/` `/b/` `/ɡ/` | `/v/` | `/h/` | `/y/` | `/x/` | `/th/` | `/w/` |
+|--------|--------------------------|-------|-------|-------|-------|--------|-------|
+| `ra` (`+`) | def | def add | def times | def more | def corroborating | def likelihood | none (E-25) |
+| `ru` (`-`) | def (`g-N` fraction, C-11) | def remove | def divide | def short | def independent | none (C-09) | none (E-25) |
+| `re` (`#`) | def | def rank | def nth time | def place | def point | E-28 (C-09) | E-24 |
+| `ro` (`_`) | def | def dial | def clock | def label | def cite | def source | none |
+| `rue` (`#-`) | def | def | def | def | def | none (C-09) | E-24 |
+| Digitless `-r` blank | def | def | def | def | def | def (`thrar`) | def (`wrar`) |
+| Digitless exponent specials (∞, last, hair-short) | def | def | def | def | def (start / last / just-before) | def (`thrubul`) | def (`wrabul` / `wrubul`) |
+
+Marker stacks (two marker vowels, the six standard stacks of D-23 order):
+
+| Stack | Marker | Reading |
+|-------|--------|---------|
+| `ua` | `rua` | def: symmetric error bound (`g+-N`) |
+| `uo` | `ruo` | def: negative label |
+| `ue` | `rue` | def: from the end (`#-`), taught in its own section |
+| `oe` | `roe` | def: calendar ordinal for dates (`h_#22,7`), taught in numbers-applied |
+| `ao` | `rao` | E-26 (parser rejects) |
+| `ae` | `rae` | E-26 (parser rejects) |
+
+Every cell not named above is covered by an existing form: digit-string exponents and zero × exponent cells are already on the unassigned list, and **-x** on number words belongs to the Plurality grid.
+
+### Rows
+
+#### E-24 — rank on a scale (`w#N`, `w#-N`) · intuitive · P2
+
+- **Proposed reading:** `/w/` + an ordinal before the adjective gives the **place on that scale**, so `zel` + `w#2` + adjective is *the second …-est*, and `w#-2` is *the second from the bottom*.
+- **Example:** `zazawan zel wredul gelavam.` — z-Azawan | [more-than | [w-2nd | g-big]] — "Azawan is the second biggest." Parses, but as a stray number, with no reading.
+- **Pattern:** `/w/` is the degree slot right before an adjective ([clause](../grammar/clause.md#adjective-detail-w)); the ordinal marker **`e`** ≈ order, as on `g#2`
+- **Current route:** none. A superlative names only the winner ([superlatives](../grammar/comparatives.md#superlatives)); `g#2` after the noun picks the second *noun*, never the second on a scale (`find-english`: *second biggest*, *second largest*, *two thirds*: no row)
+- **Better than current route:** yes: *the second largest*, *the third tallest* and *runner-up* have no one-word route today
+- **Conflicts and notes:** the superlative frame (one name before `zel`) must carry the group, since an ordinal with no group has nothing to rank within. Only the ordinal markers fit: a count (`w+3`) is a factor, which `hradul` already says (E-25). `w#-N` mirrors `g#-N`.
+- **Closes:** *second biggest*, *third tallest*, *runner-up*: no row found
+- **Recommendation:** adopt `w#N` / `w#-N` on a superlative frame; teach it in [comparatives § superlatives](../grammar/comparatives.md#superlatives) and add a [say-amounts](../grammar/say-amounts.md) row.
+- **Outcome:** adopted, narrowed: `w#N` from 2 under a single-name `zel` / `zuel` frame. `w#-N` is dropped as redundant (`zuel` + `w#2` is second from the bottom). Taught in [comparatives § place on a scale](../grammar/comparatives.md#place-on-a-scale); D-25; parser rejects other `/w/` numbers (`degreeNumber`, `degreePlaceFrame`).
+
+#### E-25 — count and fraction as degree (`w+N`, `w-N`) · forced · P3
+
+- **Proposed reading:** `/w/` + a count grades the quality (*three times as big*), `/w/` + a minus the fraction (*half as big*).
+- **Example:** `zodogal wrarel gelavam.` parses with no reading.
+- **Pattern:** `/w/` degree; `h+N` / `h-N` factor
+- **Current route:** the factor on an equative, `zazawan zalahen zael gelavam hradul` ([factor](../grammar/comparatives.md#factor))
+- **Better than current route:** no. A second route would let `w+3` and `h+3` both mean *three times* with different frames.
+- **Conflicts and notes:** the factor route compares two things and names the second; a bare `w+3` would not say *three times what*.
+- **Closes:** —
+- **Recommendation:** decline; add `w+N`, `w-N` to the none cells (E-12 already declined a verb host for `/w/`).
+- **Outcome:** declined — D-25; parser rejects `w+N` / `w-N` / `w_N` (`degreeNumber`).
+
+#### E-26 — positive and ordinal-count marker stacks (`rao`, `rae`) · forced · P3
+
+- **Proposed reading:** `rao` a positive label (`+44`, a country code that shows its plus); `rae` an ordinal with an added count.
+- **Example:** none: the parser rejects both.
+- **Pattern:** the six stacks; four of them are already markers
+- **Current route:** `d_44` (labels carry no sign) and `g#N`
+- **Better than current route:** no. The plus in a dialing code is a writing convention, not a sign the word needs, and `rae` has no guessable reading (count and rank are separate questions, answered by two markers on two words).
+- **Conflicts and notes:** labels are unsigned by design ([sign](../grammar/numbers.md#sign)); `ruo` exists only because *below zero* is a real label (a basement floor).
+- **Closes:** —
+- **Recommendation:** decline; add `rao` / `rae` to unassigned-reserved.
+- **Outcome:** declined — D-26; cells added to unassigned-reserved; numbers.md lists the four stacks in use.
+
+#### E-27 — fraction with a numerator (*two thirds*, *three quarters*) · intuitive · P2
+
+- **Proposed reading:** a count and then the fraction on the same noun: **`g+N`** then **`g-M`** is *N parts of M*.
+- **Example:** `zagadulx gradul grurel vehahel.` — [z-cat-x | g-two | g-third-of] | v-sit — "Two thirds of the cats sit." Parses today with no reading.
+- **Pattern:** the English order (*two* + *thirds*) and the fraction **`g-N`** that already means *one part in N* ([fractions](../grammar/numbers-applied.md#fractions))
+- **Current route:** only `g-N` for a single part (*a third*, *a quarter*), or a percent (`g+67%`), which is not exact
+- **Better than current route:** yes: *two thirds*, *three quarters* and *three fifths* have no exact route
+- **Conflicts and notes:** `g-N` already stands alone as *one part in N*, so `g+1 g-N` and `g-N` would say the same thing and `g-N` stays the short form. After a measure unit `g-N` is a negative amount, so *a third of an hour* has no fraction route and uses a smaller unit (*20 minutes*): say so beside the rule. Two stacked number modifiers read no other way today.
+- **Closes:** *two thirds*, *three quarters*: no row (`find-english`)
+- **Recommendation:** adopt; teach in [numbers-applied § fractions](../grammar/numbers-applied.md#fractions) and add a [say-amounts](../grammar/say-amounts.md#quantity-words) row beside *a quarter of the cats*.
+- **Outcome:** adopted — count then fraction, in any slot, units included. Taught in [numbers-applied § fractions](../grammar/numbers-applied.md#fractions) with say-amounts rows; the parser glosses the stack as a fraction.
+
+#### E-28 — stance by order (`th#N`, `th#-N`, `th-N`) · forced · P3
+
+- **Proposed reading:** `th#2` *second-hand*, `th#3` *third-hand*: the number of links between the claim and the one who saw it.
+- **Example:** `zazawan vowogal th#2.` parses with no reading (`thredul`).
+- **Pattern:** `th_N` *per source N*; the ordinal marker
+- **Current route:** hearsay `thewam` already says *so they say* (second-hand); `th_N` names a numbered source
+- **Better than current route:** no. A chain of two or more retellings is rare, and the channel root already says the part that matters (someone said so).
+- **Conflicts and notes:** the page already says `th-N` and `th#N` are not used, but no design decision gives the reason, and the parser accepts them (C-09).
+- **Closes:** *second-hand*, *third-hand*: hearsay covers it
+- **Recommendation:** decline; record the reason in design-decisions and reject the forms in the parser with a pointer to `thewam` and `th_N`.
+- **Outcome:** adopted (reversed from the first recommendation) — `th#N` from 2 is N-th hand, taught in [knowing § second-hand and further](../grammar/knowing.md#hand-depth); `th#1`, `th-N`, `th#-N` rejected (D-26).
+
+### Inconsistencies (wave 3)
+
+#### C-09 — parser accepts `th-N` / `th#N` the page denies · found in number as stance
+
+- **Where:** [numbers § number as stance](../grammar/numbers.md#number-as-stance-by-marker), parser
+- **Problem:** the page says *`th-N` and `th#N` are not used*, but `thrurel`, `thredul`, `thruedul` and `threbal` all parse as number words with no reading. Digitless `thr` + `ru` / `re` is likewise open.
+- **Suggested ruling:** reject with a message pointing at `th+N` and `th_N`; list the cells in unassigned-reserved; pair with E-28.
+- **Outcome:** fixed — `stanceNumber` / `handDepth` rejections point at numbers.md and knowing.md; cells listed in unassigned-reserved.
+
+#### C-10 — the marker inventory is split across three pages · found in marker stacks
+
+- **Where:** [numbers § stacked markers](../grammar/numbers.md#stacked-markers), [from the end](../grammar/numbers.md#from-the-end), [numbers-applied § time](../grammar/numbers-applied.md#time)
+- **Problem:** the stacked-markers section lists only `ruo` and `rua`. `rue` is taught in its own advanced section, and `roe` (the calendar-date marker, `hroe`) only appears under time, so no page says that these four are the whole stack set or that `rao` and `rae` are unused.
+- **Suggested ruling:** add the full stack table to stacked markers (`rua`, `ruo`, `rue`, `roe` with links, plus the two unused), and link back to the section that teaches each.
+- **Outcome:** fixed — the stacked-markers table lists `rua`, `ruo`, `rue`, `roe` and the two unused stacks.
+
+#### C-11 — the fraction rule has a hole after a measure unit · found in fractions
+
+- **Where:** [numbers-applied § fractions](../grammar/numbers-applied.md#fractions), [measure phrases](../grammar/numbers-applied.md#measure-phrases)
+- **Problem:** `g-N` is a fraction only right after a plain noun, and a negative amount after a unit, so *a third of a meter* or *half an hour* cannot use a fraction. *Half* has a decimal route (`g+0.5`), but *a third* has none that is exact.
+- **Suggested ruling:** state the limit and the route (a smaller unit or a decimal) where the rule is taught; no new form.
+- **Outcome:** fixed by E-27 — a count before the minus is a fraction after a unit too; the fractions section states the rule.
+
+### None (to add to unassigned-reserved, if the rows above are declined)
+
+- `w+N`, `w-N`, `w_N` (E-25), `rao`, `rae` (E-26), `th#N`, `th#-N`, `th-N` (E-28, C-09).
+
+Confirmed **def** with nothing to add: every marker on `/v/` `/h/` `/y/` `/x/`, `/th/` for `+` and `_`, the **-r** blank on every host, the digitless-exponent specials on `/w/` (`wrabul`, `wrubul`) and `/th/` (`thrubul`), and number endings on every host.
+
+## Joins and restrictors
+
+Owning pages: [joins](../grammar/joins.md), [restrictors](../grammar/restrictors.md). Wave 4. Cells checked with `node scripts/parse.mjs` (2026-10-02), sweeping every role letter × the ten parsed vowel series × **-l** / **-m** / **-n** / **-r**. The series are **a o e u** and the six stacks **ao ae oe ua uo ue** (the other two-letter pairs do not parse on any role). Join-act and join-relation **-n** forms, stance joins and clause joins belong to Wave 7 (join across roles); hooks to Wave 5. Ending meanings follow [ending patterns](#ending-patterns-already-in-use) (**-l** closed, **-m** open, **-n** named / stock, **-r** unspecified member).
+
+### Grid
+
+| Series | `/z/` `/d/` `/b/` | `/ɡ/` | `/h/` | `/w/` |
+|--------|-------------------|-------|-------|-------|
+| **a o u**, **-l** / **-m** | def | def | def | def (`wal` `wam` `wol` `wom` `wul` `wum`) |
+| **e** **-l** / **-m** | def | def | def | def (`wel` `wem`) |
+| **ao ae oe ua uo** **-l** / **-m** | def | def | def | def |
+| **ue** **-l** / **-m** | def | def | E-30 (`huel` `huem` parse, no reading) | E-30 (rejected) |
+| **a o u** **-r** | def | def | def (`har` `hor` `hur`) | def (`war` `wor` `wur`) |
+| **e** **-r** | def | def | E-31 (`her` parses, no reading) | E-31 (rejected) |
+| stacks **-r** | C-13 | C-13 | C-13 | rejected |
+| **-n**, every series | def named package | def join-relation on a `/b/` (Wave 7) | def join-relation (Wave 7) | C-12 (rejected) |
+| Bare (no items) | def (standalone table) | def | **hal** **ham** **hual** **huam** **har** **hor** **hur** only; the rest E-32 | the same seven only |
+| Single item | def | def | def | def |
+| `wazem` (respectively) before a join | `/z/` `/d/` `/b/` **a**-list only | E-29 (rejected) | — | — |
+
+Every `/v/` item is in the join-across-roles grid, and every `/x/` cell is a clause join; neither is logged here.
+
+### Rows
+
+#### E-29 — respectively on adjective and verb lists (`wazem` before `gal`, `val`) · intuitive · P2
+
+- **Proposed reading:** `wazem` pairs two **a**-lists by position wherever the lists are the same role: a `/ɡ/` list after the subject list (*tall and short, respectively*), a `/v/` list (*walk and run, respectively*).
+- **Example:** `zazawan zalahen zal gelavam gamazam wazem gal.` — [z-Azawan | z-Alahen | z-and] | [g-big | g-small | w-respectively | g-and] — "Azawan and Alahen are big and small, respectively." The parser rejects it today (`wazem` only before a `/z/` `/d/` `/b/` join). `zazawan zalahen zal vowogal varahal wazem val.` — "Azawan and Alahen walk and run, respectively." — rejected the same way.
+- **Pattern:** [respectively](../grammar/joins.md#respectively), whose rule (same-length **a**-lists, same clause) does not depend on the role letter
+- **Current route:** two clauses, `zazawan gelavam. zalahen gamazam.`, or a clause join `xal` with each subject repeated
+- **Better than current route:** yes. *X and Y are A and B, respectively* is the commonest use of *respectively* in English, and `/ɡ/` and `/v/` are the lists it is most often said over.
+- **Conflicts and notes:** an adjective after a subject join is SHARED, so a `/ɡ/` list after the join must be told apart from a SHARED pair. `wazem` right before the closing `gal` is that signal (nothing else may stand before a join word, so there is no collision), and without it the list stays SHARED. The rule that both lists need the same number of items carries over unchanged. **-r** and **-n** are not wanted: see C-12.
+- **Closes:** *respectively* over adjectives and verbs: no row (`find-english`: *respectively*, *tall and short respectively*)
+- **Recommendation:** adopt on `/ɡ/` and `/v/`; teach in [joins § respectively](../grammar/joins.md#respectively), add a translation checkpoint, and keep **`wazem`** out of every other role.
+- **Outcome:** pending ruling.
+
+#### E-30 — reverse rank of occasions (`huel` / `huem`, `wuel` / `wuem`) · intuitive · P3
+
+- **Proposed reading:** the **ue** (undo + order) rank on occasions, as on nouns: one occasion before it is the **last resort**, several are *last first*. `herehel huel` is *as a last resort, when raining* / *least readily when raining*; open `huem` *rather not when raining*.
+- **Example:** `zazawan vowogal herehel huel.` — z-Azawan | v-walk | h-rain | h-rank/less — "Azawan walks only as a last resort when raining." Parses today as a join word with no reading.
+- **Pattern:** noun `zuel` *X last* / *Ahaben, then Alahen, then Azawan*; the ranked restrictors `hel` / `hael` / `hoel`; join-relation `huen` *deprioritizing* (so the slot is already taken for the relation, not for the restrictor)
+- **Current route:** none. `hel` ranks occasions best-first, and putting the occasions in the other order is the only way to say *least when X*, which gives no single last-resort reading. `xon` says *failing that* between clauses ([say-reasons](../grammar/say-reasons.md)) but not for one occasion.
+- **Better than current route:** yes: *as a last resort*, *least of all when*, *only when nothing else works*
+- **Conflicts and notes:** on `/w/` the parser rejects **ue** at every ending, so `/w/` and `/h/` do not match even on the "same map" the page promises. The map is complete once `/w/` takes `wuel` / `wuem`.
+- **Closes:** *as a last resort*, *least of all when*: no row (`find-english`)
+- **Recommendation:** adopt on `/h/` and `/w/` together; teach under [ranked](../grammar/restrictors.md#more-occasions), and remove from unassigned-reserved.
+- **Outcome:** pending ruling.
+
+#### E-31 — unspecified ranked member on occasions (`her`, `wer`) · intuitive but redundant · P3
+
+- **Proposed reading:** `her` *at whichever occasion ranks first*, matching `zer` / `ver` / `xer` / `ther`.
+- **Example:** `zazawan vowogal herehel hanadal her.` — "Azawan walks, at whichever of rain or night ranks first." Parses for `/h/`; `/w/` rejects `wer`.
+- **Pattern:** **-r** on single-vowel **e**; it is the only role letter missing it
+- **Current route:** none that is exact; *preferably when …* is `hel`
+- **Better than current route:** no. There is no English cue (*whenever it matters most* is not a job anyone does), so the cell is regularity only.
+- **Conflicts and notes:** the unassigned-reserved line gives *`hel` + `har`* as a near-miss, but one restrictor chain is one unit ([more occasions](../grammar/restrictors.md#more-occasions)), so the two cannot stack and the note is wrong.
+- **Closes:** —
+- **Recommendation:** decline (ground rule: no slot-filling); keep reserved, and correct the near-miss note.
+- **Outcome:** pending ruling.
+
+#### E-32 — bare restrictors beyond `hal` / `hual` (`hol`, `hel`, `hoel`, `haol`, `hul`, `huol`, `hael`) · forced · P3
+
+- **Proposed reading:** mirror the standalone join table: `hel` *no occasion matters most*, `hoel` *at any time, in no order*, `haol` *no matter when*.
+- **Example:** `zazawan vowogal haol.` parses with no reading.
+- **Pattern:** the standalone readings in [joins](../grammar/joins.md#full-single-item-and-standalone-inventories)
+- **Current route:** `hal` *never*, `hual` *always*, `hor` *anytime*, `har` *sometimes*; *regardless of* is `hezom` plus `/b/` ([say-reasons](../grammar/say-reasons.md))
+- **Better than current route:** no. With an empty occasion list the only guessable readings are *never* and *always*, which `hal` and `hual` own. `hul` would read *not when nothing* = *always*, `huol` *anytime* (that is `hor`), `hol` *no pick* = *never*, so each collides with a live reading; the rank readings (*no occasion matters most*) say nothing a speaker needs.
+- **Conflicts and notes:** bare `/w/` forms follow the same rule, since `wal` / `wual` are the only ones used.
+- **Closes:** —
+- **Recommendation:** decline; keep the unassigned-reserved bare list as it stands.
+- **Outcome:** pending ruling.
+
+### Inconsistencies (wave 4)
+
+#### C-12 — **-n** and **-r** on `/w/` are described one way and parsed another · found in allowed joins by PoS
+
+- **Where:** [joins § named phrase](../grammar/joins.md#named-list), [allowed joins](../grammar/joins.md#phrase-reserved-forms), [unassigned-reserved](unassigned-reserved.md#restrictors-h--w), parser
+- **Problem:** joins says **-n** works under `/z/` `/d/` `/b/` `/w/` as a named package, and the table gives `/w/` **-l** / **-m** / **-n** / **-r** (**-r** on single vowels only). Unassigned-reserved says `/w/`…**-n** is reserved with no gloss, and the parser rejects every `/w/` **-n** (`wan`, `won`, …) and `wer`. Under `/w/` the units are restrictors and `wazem`, not phrases, so no package can be named. The same table also says `wazem` takes only **-l** / **-m**, but the parser accepts `wazem dar` and `wazem dan`.
+- **Suggested ruling:** take `/w/` out of the **-n** sentence and the table row, say `/w/` takes **-l** / **-m** / **-r** as restrictors (**-r** on **a** / **o** / **u**; **e** per E-31), and reject `wazem` before **-r** / **-n** with a pointer to [respectively](../grammar/joins.md#respectively).
+- **Outcome:** pending ruling.
+
+#### C-13 — stacked **-r** on phrase joins parses but is documented as undefined · found in unspecified member
+
+- **Where:** [joins § unspecified member](../grammar/joins.md#unspecified-member-r-phrase), [constraints](../grammar/joins.md#constraints), [verb-phrase and clause forms](../grammar/join-across-roles.md#vp-clause-forms), parser
+- **Problem:** the docs allow **-r** only on **a** / **o** / **e** / **u** (the join-across-roles table leaves `—` for stacks), but the parser accepts `zaor`, `zuar`, `zuor`, `zaer`, `zoer`, `zuer` on `/z/` `/d/` `/b/` `/ɡ/` `/v/` `/x/` and `/h/` (`haor`, `haer`, `hoer`, `huar`, `huor`). Every stack takes **-r** only as a fill-ask on `/y/` and `/th/` ([stance joins](../grammar/join-across-roles.md#standalone-stance-joins)).
+- **Suggested ruling:** reject stacked **-r** outside those two with a message pointing at the single-vowel forms; no new form. Re-check against the fill-ask grid in Wave 9 before closing, since a question might want `zuar` (*everything but what?*).
+- **Outcome:** pending ruling.
+
+### None (to add to unassigned-reserved, if the rows above are declined)
+
+- Bare `hol` `hom` `haol` `haom` `hul` `hum` `huol` `huom` `hel` `hem` `hael` `haem` `hoel` `hoem` and their `/w/` twins (E-32); `her` / `wer` (E-31, already listed, with a corrected note); `wazem` before any join but an **a**-list.
+
+Confirmed **def** with nothing to add: the ten series on `/z/` `/d/` `/b/` at every arity and ending; the single-vowel **-r** on every join role; **-n** as a named package on `/z/` `/d/` `/b/`; scope islands and SHARED placement; `/h/` **-l** / **-m** on every defined vowel.
 
 ## Inconsistencies
 

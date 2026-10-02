@@ -258,6 +258,20 @@ A standalone ladder says only that nothing is on top. It does not say why (a tie
 
 English *not as challenging as* and *no more challenging than* both say the first name does not reach the second, and Agazan reads them as **`zuel`**: `zalahen zazawan zuel gamadam` is *Alahen is not as challenging as Azawan*. What English only implies (that neither is challenging) is not said. For a firm tie, use [`zael`](#equatives).
 
+### Place on a scale (`w#N`) {#place-on-a-scale}
+
+English *the second biggest* names a place just below the winner. Keep the superlative frame (one name before `zel`) and put an **ordinal** in the degree slot, `/w/` right before the adjective: **`wredul`** (`w#2`) is *second*. The place is on the scale the adjective names. (cue: **`e`** ≈ order, as in `gredul` *the second*)
+
+> `zazawan zel wredul gelavam.`
+>
+> [z-Azawan | z-rank/more | [w-2nd | g-big]]
+>
+> "Azawan is the second biggest."
+
+Under **`zuel`** the same place counts from the bottom, so `zazawan zuel wredul gelavam` is *the second smallest*. Only N from 2 is used: first place is the plain superlative. The frame is one name before `zel` or `zuel`; with two names the ordinal has no group to rank within, and outside a rank fence a bare ordinal on `/w/` is not used.
+
+**Compare with:** an ordinal after a noun picks the Nth *thing* (`zodogal gredul` *the second dog*), not the Nth on a scale. A [factor](#factor) (*twice as big*) goes on `/h/`, not `/w/`.
+
 ### Manner scale (`/h/`) {#manner-scale}
 
 When English would say *Alahen walks more intensely than Azawan*, the ladder is **how** they walk, not a quality of the people. Keep the same rank join. Write a manner adverb (`/h/`) **immediately after** it, then the verb. The first name sits higher on that manner.
@@ -527,6 +541,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 [z-Ahaben | th-plan-itinerary | z-rank/less | g-heavy]
 :::
 
+**9.** *Alahen is the second heaviest.*
+
+::: details Show answer
+`zalahen zel wredul garagam.`
+
+[z-Alahen | z-rank/more | [w-2nd | g-heavy]]
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zazawan zalahen zahaben zem garagam.`
@@ -608,6 +630,15 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 [z-Alahen | th-plan-itinerary | z-rank/less | h-how-often] | v-lift
 
 *Alahen lifts less often than planned.*
+:::
+
+**10.** `zazawan zuel wredul garagam.`
+
+::: details Show answer
+
+[z-Azawan | z-rank/less | [w-2nd | g-heavy]]
+
+*Azawan is the second lightest.*
 :::
 
 ## Advanced {#advanced}

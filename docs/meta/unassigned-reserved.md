@@ -58,6 +58,12 @@ Source: [numbers.md](../grammar/numbers.md), [numeric-derivation.md](../grammar/
 
 - **`x+0e`**, **`x±0e-1`**, **`x#0e`**, … beyond defined overlays
 
+### Number markers on `/w/`, `/th/`, and stacks
+
+- **`w+N`**, **`w-N`**, **`w_N`**, **`w#-N`**, **`w#1`**: `/w/` takes only the blank, *barely* / *almost*, and an ordinal place from 2 ([D-25](design-decisions.md))
+- **`th-N`**, **`th#-N`**, **`th#1`**, **`th#`** digitless non-blank: `/th/` takes `+`, `_`, and `#N` from 2 ([D-26](design-decisions.md))
+- Marker stacks **`rao`** (`+_`) and **`rae`** (`+#`)
+
 ### Ordinal pronoun `#0`
 
 - **`z=#0`** / **`d=#0`** / **`b=#0`** (`zrezor`, …): introduction starts at 1, so place 0 names no one and is rejected. Not assigned as a shifting *speaker*: that would make *I* shorter than a name, against D-13 ([design-decisions](design-decisions.md)).

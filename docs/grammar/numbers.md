@@ -567,7 +567,7 @@ Prefer shorthand in free slots. Speech is always the full CV form.
 ### Number as verb / adverb / interjection / discourse
 <a id="number-as-roles"></a>
 
-You can use a number as the **action** (*add three*), as **how often** (*three times*), as **how likely** (*70% likely*), as a **shout** (*Three more!*), or as a **list label** (*point 2:*). Put the same markers under `/v/`, `/h/`, `/th/`, `/y/`, or `/x/`. The first letter chooses that job; the marker still says count, rank, or code.
+You can use a number as the **action** (*add three*), as **how often** (*three times*), as **how likely** (*70% likely*), as a **shout** (*Three more!*), as a **list label** (*point 2:*), or as a **place on a scale** (*second biggest*). Put the same markers under `/v/`, `/h/`, `/th/`, `/y/`, `/x/`, or `/w/`. The first letter chooses that job; the marker still says count, rank, or code.
 
 Referential prefixes (`/ɡ/` `/z/` `/d/` `/b/`) keep the marker as a plain amount or rank — [marker vowel](#marker-vowel-referential-identity).
 
@@ -644,6 +644,11 @@ Worked examples: `xredul` *point 2:*; `xradul` *corroborating 2:*; `xrudul` *ind
 
 Endings still apply (**-l** newly stated item, **-r** *as in (N) above* (with a digit; digitless `xrer` is a [blank](#digitless)), **-n** titled item name, **-m** fuzzy *around item N*).
 
+#### Number as degree (by marker) {#number-as-degree}
+<a id="place-on-a-scale"></a>
+
+`/w/` + number is the degree slot right before an adjective or adverb ([clause](clause.md#adjective-detail-w)). Only the ordinal marker gives a new reading: **`w#N`** (N from 2) is the **place on that scale**, in a [superlative](comparatives.md#place-on-a-scale) frame (`zazawan zel wredul gelavam` *Azawan is the second biggest*). The other number readings on `/w/` were already set: the blank **`wrar`** asks *how much?* ([how big](#how-big)), and the Advanced [just-short](#just-short) forms are *barely* / *almost*. A count or a fraction on `/w/` (`w+3`) is not used: a factor goes on `/h/` (`hradul` *twice*, [factor](comparatives.md#factor)).
+
 #### Number as stance (by marker) {#number-as-stance-by-marker}
 <a id="likelihood"></a>
 
@@ -662,10 +667,11 @@ Endings still apply (**-l** newly stated item, **-r** *as in (N) above* (with a 
 | **`ra`** | `th+N` | **Likelihood N percent** — `th+70` *70% likely*; `th+99.9` *99.9% likely*. The digits are already a percent, 0–100; do not add `%`. |
 | **`ra`** / **`ru`** | `th+` / `th-` | **likely** / **unlikely**, with no figure |
 | **`ro`** | `th_N` | **According to source N** — a footnote, reference, or exhibit label (`th_3` *per [3]*). Digitless `th_` = *per a source* you do not name. |
+| **`re`** | `th#N` | **N-th hand** (N from 2) — how many retellings stand between the claim's source and you (`th#3` *third-hand*). Taught with the channels: [second-hand and further](knowing.md#hand-depth). |
 
-For *30% unlikely*, give the likelihood of the claim itself (`th+70`). **`th-N`** and **`th#N`** are not used.
+For *30% unlikely*, give the likelihood of the claim itself (`th+70`). A minus with digits (`th-N`) and an end-relative rank (`th#-N`) are not used, and neither is `th#1`: first-hand is a channel word.
 
-Endings still apply: **-m** *about* that likelihood (`th~+70` *roughly 70%*), **-n** a conventional level (`th@+95` *at the 95% confidence level*), **-r** *the same likelihood as before* (`th=+70`); digitless `thrar` asks *how likely?* under question.
+Endings still apply: **-m** *about* that likelihood (`th~+70` *roughly 70%*), **-n** a conventional level (`th@+95` *at the 95% confidence level*), **-r** *the same likelihood as before* (`th=+70`); digitless `thrar` asks *how likely?* under question, and `threr` asks *how many hands?*
 
 **Compare with:** [evidentiality](knowing.md#evidentiality) says **how** you know; `th_N` says **which** numbered source. [MAY](knowing.md#may) (`thovum`) says the claim is open without a figure. Pretense *as if* in play or make-believe is [NOTIONAL](knowing.md#notional).
 
@@ -1332,6 +1338,10 @@ Write the role letter, symbol stack, then digits: `gruowol` labels a floor numbe
 |--------------|---------------------------|-----|
 | **`#_`** | **r-u-o** | A digit-string label whose value is negative (for example, a below-ground floor label). |
 | **`+-`** | **r-u-a** | A symmetric error bound of ±N. |
+| **`#-`** | **r-u-e** | Count from the end ([from the end](#from-the-end)). |
+| **`_#`** | **r-o-e** | A calendar date, day then month then year ([time](numbers-applied.md#time)). |
+
+These four are the whole set. The other two standard stacks, **r-a-o** and **r-a-e**, are not used. Labels carry no sign (a dialing code `+44` is written `_44`), and a count and a rank are separate markers on separate words.
 
 ### Ambient magnitude (casual)
 <a id="ambient-magnitude"></a>

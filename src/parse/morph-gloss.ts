@@ -579,7 +579,24 @@ function isFraction(word: LexWord, prev: LexWord | undefined): boolean {
   const [group, ...rest] = family.stem.groups;
   if (!group?.mantissa || rest.length || group.exponentDigits || group.decimal || group.percent) return false;
   if (Number(group.mantissa) < 2) return false;
+  if (isCountBefore(prev)) return true;
   return prev?.family.kind === "content" && prev.ending === "l" && (prev.pos === "z" || prev.pos === "d" || prev.pos === "b");
+}
+
+/** A plain `/ɡ/` count (`g+N`) right before `g-M`: the numerator of *two thirds*, in any slot, after a unit too. */
+function isCountBefore(prev: LexWord | undefined): boolean {
+  if (prev?.family.kind !== "number" || prev.pos !== "g" || prev.ending !== "l") return false;
+  const { marker, groups, digitlessExp } = prev.family.stem;
+  const only = groups[0];
+  return (
+    (marker === "+" || marker === "ra") &&
+    !digitlessExp &&
+    groups.length === 1 &&
+    !!only?.mantissa &&
+    !only.exponentDigits &&
+    !only.decimal &&
+    !only.percent
+  );
 }
 
 function fractionGloss(word: LexWord): string {
@@ -1275,6 +1292,9 @@ function stanceNumberLabel(stem: NumberStem): string | null {
   const body = groups.map(formatNumberGroup).filter(Boolean).join(",");
   if (stem.marker === "_" && !exp) return `per-source-${body}`;
   const only = groups[0]!;
+  if (stem.marker === "#" && !exp && groups.length === 1 && only.mantissa !== undefined && !only.exponentDigits && !only.decimal && !only.percent) {
+    return `${ordinalEnglish(Number(only.mantissa))}-hand`;
+  }
   if (
     stem.marker === "+" &&
     !exp &&
