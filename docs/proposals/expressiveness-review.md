@@ -11,6 +11,8 @@ Status: `[x]` done · `[~]` partial · `[ ]` not started.
 
 ## Ground rules
 
+- **No grammar change without human approval.** Logging rows, recommending rulings and drafting proposals are free; adopting, declining or fixing a row is not. Do not edit grammar pages, the parser, the lexicon or overlay CSVs, or [design-decisions](../meta/design-decisions.md) to apply a row until the language owner has ruled on that row in conversation. Present each row with a recommendation and stop. A recommendation is not a ruling, and "do wave N" asks for the build-and-log and triage steps, not the apply step.
+- **Search the settled record first.** Before logging a row, grep [design-decisions](../meta/design-decisions.md) for every form and stance it touches. A cell the parser rejects may be rejected on purpose.
 - **Intentionally discouraged ≠ gap.** Before logging a gap, check [why-agazan](../grammar/why-agazan.md) (limits, feature criteria) and the owning page for a deliberate omission (e.g. no general *to-be* `/v/`, no cause-arrow word, no metric prefixes, generics via joins not **-x**). If the omission is deliberate, log it once as **by design** with the citing section, and move on.
 - **"Easily" means for the learner.** A gap exists when the only route is long, unnatural, ambiguous, or taught far later than English speakers need it. Dev effort (cross-reference churn, parser work) is not a cost — see `AGENTS.md`.
 - **Extensions must be intuitive.** A proposed reading should be guessable from the existing form's meaning (same vowel series, same role-letter semantics, same ending semantics). Reject extensions that merely fill a slot.
@@ -24,7 +26,7 @@ A batch is one wave's grids (or a smaller slice of one), and a wave holds one or
 
 1. **Build and log.** Build the batch's grids and log each row. Check every candidate spelling with `node scripts/parse.mjs --check-lexicon`, and in context for a competing reading (such as a content resume). Do not edit grammar pages while logging.
 2. **Triage.** Within the batch only: merge duplicate rows, link each gap to an extension that closes it (prefer extensions over new forms), and rank by priority, then by how many rows one change closes. For each P1 row, and any multi-row extension, write a short proposal in `docs/proposals/` first (current route, proposed form, examples with morph glosses, interaction with existing forms, learning level per [learning-levels](../meta/learning-levels.md)).
-3. **Rule.** The language owner rules on every row: adopt, decline, defer (with a reason), or fix (for `C-nn`). Present rows with a recommendation each.
+3. **Rule.** The language owner rules on every row: adopt, decline, defer (with a reason), or fix (for `C-nn`). Present rows with a recommendation each, then stop: nothing is applied until the owner has ruled.
 4. **Apply.** Apply every adopted row and fix in the same pass, before the next batch:
    - the owning grammar page only, per [grammar-docs](../meta/grammar-docs.md) and [doc-style](../meta/doc-style.md) (a stage page never links the recipe track);
    - the parser, lexicon / overlay CSVs and tests where a form is added or reads differently, in the same change as the grammar edit;
@@ -59,7 +61,7 @@ For each mechanism, build its applicability grid and inspect the empty cells:
 | [x] | 5 | Hooks | [hooks](../grammar/hooks.md) | 1, 4 | hook vowel × ending × use (in-clause, discourse, extra-noun, point-back, span) |
 | [x] | 6 | Spans | [spans](../grammar/spans.md) | 2, 5 | TYPE × EDGE × ending; topic and ordinal scope inside cites and asides |
 | [x] | 7 | Join series on other roles | [join-across-roles](../grammar/join-across-roles.md) | 4 | stance joins, join-act verbs, join-relations × vowel and ending |
-| [ ] | 8 | Hosted relations and bars | [relations](../grammar/relations.md), [comparatives](../grammar/comparatives.md) | 4, 5 | each relation × host role (`/ɡ/` `/h/` `/th/` `/w/`); stance bars × other moods |
+| [x] | 8 | Hosted relations and bars | [relations](../grammar/relations.md), [comparatives](../grammar/comparatives.md) | 4, 5 | each relation × host role (`/ɡ/` `/h/` `/th/` `/w/`); stance bars × other moods |
 | [ ] | 9 | Questions | [questions](../grammar/questions.md) | 1 | fill-ask × roles and families; polar stance × turn positions |
 | [ ] | 10 | Stand-ins and `/x/` words | [dependents](../grammar/dependents.md) | 2, 4, 5 | stand-in vowel × **-rl / -rm / -rth / -rn** × role letter; `/x/` linkers vs topic words × endings and positions (never in a dependent, after a clause join, or in an aside) |
 | [ ] | 11 | Predication | [predication](../grammar/predication.md) | 0 | classification and identity × roles and endings |

@@ -84,7 +84,7 @@ const ROWS: Row[] = [
   { invalid: "zazawan thevem zel gezebul.", rejection: "barKind", valid: "zazawan thobam zel gezebul." },
   { invalid: "zazawan thezum zel gezebul.", rejection: "barKind", valid: "zazawan zel gezebul thezum." },
   { invalid: "zazawan thovum zel gezebul.", rejection: "barKind", valid: "zazawan thahom zel gezebul." },
-  { invalid: "zazawan thehum zel gezebul.", rejection: "barKind", valid: "zazawan thamam zel gezebul." },
+  { invalid: "zazawan thehum zel gezebul.", rejection: "barKind", valid: "zazawan thohum zel gezebul." },
   { invalid: "zazawan thudum zel gezebul.", rejection: "barKind", valid: "zazawan thenom zel gezebul." },
   { invalid: "zedehel thedel zel gral.", rejection: "barKind", valid: "zedehel thegol zel gral." },
   { invalid: "zazawan zalahen thobam zel gezebul.", rejection: "barCount", valid: "zazawan zalahen zel gezebul." },

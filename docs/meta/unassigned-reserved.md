@@ -115,6 +115,13 @@ Source: [join-across-roles.md](../grammar/join-across-roles.md#stance-joins)
 - Stacked **-r** outside a question (`thaor` … `thuer` are fill-asks only); stacked **-r** on `/v/` `/x/` `/ɡ/` joins (`vaor`, `xuar`, `gaor`) — the parser rejects them
 - Clause sequence **-n** beyond `xan` `xon` `xun` `xaon` (`xuan`, `xuon`, `xen`, `xaen`, `xoen`, `xuen`)
 
+## Hosted relations
+
+Source: [relations.md](../grammar/relations.md)
+
+- A relation root on `/w/` with `/b/` (`wumum bazawan`) — only the as-of pair (`wuhum` / `wuram`) takes `/b/` on `/w/`
+- A social tie on `/h/` (`hemezem bazawan`) — the tie on the doer already says *as a friend of* (D-30)
+
 ## Hooks — in-clause
 
 Source: [hooks.md](../grammar/hooks.md#spans)

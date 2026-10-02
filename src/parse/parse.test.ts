@@ -573,6 +573,7 @@ describe("parse — comparatives.md bars", () => {
     for (const [text, raw] of [
       ["zazawan thobam zel gezebul.", "thobam"],
       ["zazawan thamam zel bral vevahal.", "thamam"],
+      ["zubugal thohum balahen zuel garagam.", "thohum"],
       ["zedehel thegatham zael gral.", "thegatham"],
       ["zubugal thodom zuem garagam.", "thodom"],
       ["zalahen thezexal zael hadehum vowogal.", "thezexal"],

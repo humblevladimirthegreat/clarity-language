@@ -445,12 +445,12 @@ export function isGroundsChannel(word: LexWord, tables: ClassifyTables): boolean
 }
 
 /** Closed `/th/` kinds a rank fence takes as its bar: each sets a value to rank against (comparatives.md#bars). */
-const BAR_OVERLAY_KINDS = new Set(["evidential", "former_climate", "notional", "plan", "ability", "deontic"]);
+const BAR_OVERLAY_KINDS = new Set(["evidential", "former_climate", "notional", "plan", "want", "ability", "deontic"]);
 
 /**
  * A `/th/` word that can be a rank fence's bar: a met sake word, an ability word, a channel, FORMER, NOTIONAL,
- * PLAN, permission, requirement, consent, a holder on one of those, or a speaker attitude (an ordinary content
- * root on `/th/`). Poles, MAY, MIRATIVE, DECISION, and the deontic noes set no value.
+ * PLAN, WANT, permission, requirement, consent, a holder on one of those, or a speaker attitude (an ordinary content
+ * root on `/th/`). Poles, MAY, MIRATIVE, DECISION, ATTEMPT, and the deontic noes set no value.
  */
 export function isBarStance(word: LexWord, tables: ClassifyTables): boolean {
   if (word.pos !== "th") return false;

@@ -594,7 +594,7 @@ export const REJECTIONS = {
   ySpanType: { anchor: "spans.md#y-spans", summary: "a span under /y/ is opaque <…> or a cite […]; a mention or an aside is not a call or a reaction" },
   barKind: {
     anchor: "comparatives.md#bars",
-    summary: "a bar is a stance that sets a value: a met sake, a channel, FORMER, NOTIONAL, PLAN, ability, permission, requirement, consent, or a speaker attitude",
+    summary: "a bar is a stance that sets a value: a met sake, a channel, FORMER, NOTIONAL, PLAN, WANT, ability, permission, requirement, consent, or a speaker attitude",
   },
   barCount: { anchor: "comparatives.md#bars", summary: "a rank fence ranks one item against one bar; with a bar there is no second comparee, noun or bar" },
   rankJoinNumberManner: { anchor: "comparatives.md#manner-scale", summary: "the /h/ after a rank join is a manner word; the only number there is digitless h+ (how often)" },

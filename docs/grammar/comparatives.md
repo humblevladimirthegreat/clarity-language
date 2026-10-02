@@ -675,6 +675,7 @@ Intermediate ranked against a plan, and [sake bars](sakes.md#sake-bars) rank aga
 | FORMER `thenom` | how it used to be | *than it used to be* / *increasingly* |
 | NOTIONAL `thavom` | the imagined case | *than imagined* / *than in theory* |
 | PLAN `thamam` | the plan | *than planned* |
+| WANT `thohul` / `thohum` / `thohur` | the level wanted | *than wanted* / *than I wanted* |
 | ABIL `thezexal` | what can be done | *as … as possible* |
 | REQUIRE `thumel` / `thumem` / `thumer` | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* |
 | PERMIT `thegol` / `thegom` / `thegor` | the rule, the grant, or what is tolerated | *over the limit* / *more than they allow* / *than tolerated* |
@@ -707,7 +708,13 @@ The bar's ending keeps its own job: on a channel it is [evidence strength](knowi
 >
 > "Azawan is sleepier than they used to be."
 
-The bar's `/b/` works as it does on the clause. On TOLD it is the source, and on REQUIRE, PERMIT, and CONSENT it is the person who demands, grants, or agrees. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
+> `zubugal thohum balahen zuel garagam.`
+>
+> [z-book | [th-WANT-unstated | b-Alahen] | z-rank/less | g-heavy]
+>
+> "The book is lighter than Alahen wanted."
+
+The bar's `/b/` works as it does on the clause. On TOLD it is the source, and on WANT, REQUIRE, PERMIT, and CONSENT it is the person who wants, demands, grants, or agrees. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
 
 > `zubugal thewam balahen zuel gagazam.`
 >
@@ -783,7 +790,7 @@ An INFERRED or PATTERN bar can also take [`barl`](knowing.md#evidence-clause): t
 >
 > "The book is even less clear than I feared."
 
-Only these stances set a value. A [cause or condition pole](causation.md), [MAY](knowing.md#may), [MIRATIVE](knowing.md#mirative), and [DECISION](intention.md#decision) do not, so none of them is a bar.
+Only these stances set a value. A [cause or condition pole](causation.md), [MAY](knowing.md#may), [MIRATIVE](knowing.md#mirative), [DECISION](intention.md#decision), and [ATTEMPT](intention.md#try) do not, so none of them is a bar. A want sets the level wanted; a decision or an attempt commits to an act and sets no level, so *more than decided* is the [plan](intention.md#plan-predict) bar.
 
 ### Vague amounts (*many* / *few*) {#vague-amounts}
 

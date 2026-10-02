@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Findings from Phase 3 of the expressiveness review (`docs/proposals/expressiveness-review.md`): every productive mechanism crossed with every place it could apply, and each empty cell judged. Rows are logged per batch, ruled by the language owner, and applied before the next batch starts; each row's **Outcome** records the ruling.
 
-Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 adopted (reversed from decline), C-15 and C-16 fixed). Wave 7 (join series on other roles): logged (E-39, E-40, C-17 to C-19), ruled and applied (E-39 adopted as a docs gap, E-40 declined, C-17 to C-19 fixed). Other mechanisms not started.
+Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 adopted (reversed from decline), C-15 and C-16 fixed). Wave 7 (join series on other roles): logged (E-39, E-40, C-17 to C-19), ruled and applied (E-39 adopted as a docs gap, E-40 declined, C-17 to C-19 fixed). Wave 8 (hosted relations and bars): logged (E-41 to E-43), ruled and applied (E-41 and E-43 declined, E-42 adopted). Other mechanisms not started.
 
 ## How to read this file
 
@@ -925,6 +925,72 @@ Owning page: [join-across-roles](../grammar/join-across-roles.md). Wave 7. Cells
 - Stacked **-r** on `/v/` `/x/` `/ɡ/` joins (C-19).
 
 Confirmed **def** with nothing to add: the ten join-act verbs and ten join-relations on `/ɡ/` `/h/` at **-n**, the **-l** / **-m** ten-vowel series on `/v/` `/x/` `/th/`, the standalone stance joins at **-l** / **-m**, and a standalone object under `van` / `gan`.
+
+## Hosted relations and bars
+
+Owning pages: [relations](../grammar/relations.md), [comparatives](../grammar/comparatives.md#bars). Wave 8. Cells checked with `node scripts/parse.mjs` (2026-10-02). The parser does not tie a relation root to a host letter, so every relation parses on every letter, and a parse is not a reading. The rejection that matters is `barKind`: only a value-setting stance is a bar.
+
+### Grid
+
+| Relation | `/ɡ/` | `/h/` | `/th/` | `/w/` |
+|----------|-------|-------|--------|-------|
+| similative, exchange, proxy | def | def | none | none |
+| locative (`azam` `ebum` `ugem`) | def | def | none | none |
+| of-relations (`obom` `ahem` `uwum` `agum`, `ozazom`) | def | def | none | none |
+| as-of (`uhum` `uram`) | def | def | def (stance as-of) | def (adjective snapshot) |
+| social ties (`emezem` `agayem` `ohoham` `ahabom`) | def | E-41 | none | none |
+| stimulus (`obum`) | def | none (the stance owns the event) | none | def (sake before `gobum`) |
+
+| Bar | def | E-42 | E-43 |
+|-----|-----|------|------|
+| met sake, channels, FORMER, NOTIONAL, PLAN, ABIL, REQUIRE, PERMIT, CONSENT, speaker attitude | def | | |
+| WANT `thohul` `thohum` `thohur` | | E-42 | |
+| DECISION, ATTEMPT, bans (`thedel` …), refusals (`thuxedel` …), RESIDUE, MAY, MIRATIVE, CAUSE, poles | | | E-43 |
+
+Only the as-of overlay takes `/b/` on `/w/`; any other `/w/` + `/b/` is a parse error (`wumum bazawan`). A relation root on `/th/` (`thumum bazawan`) reads as a speaker attitude with a holder, the ordinary content root on `/th/`. Which roles a closed root takes is the Mood roots grid (wave 13).
+
+### Rows
+
+#### E-41 — social ties on `/h/` (`hemezem bazawan`, `hagayem bazawan`) · intuitive but redundant · P3
+
+- **Proposed reading:** the event is done in that tie: *as Azawan's friend*, *as Azawan's boss*.
+- **Example:** `zalahen vowogal hemezem bazawan.` — z-Alahen | v-walk | [h-companionship | b-Azawan] — "Alahen walks as Azawan's friend." Parses today; the page shows only `/ɡ/`.
+- **Pattern:** the of-relations, which sit on `/ɡ/` for a noun and `/h/` for an event
+- **Current route:** the tie on the person, which is the capacity: `zalahen gemezem bazawan vowogal` (*Alahen, Azawan's friend, walks*); `gugol` + a role noun for *as a guard* ([identity](../grammar/predication.md))
+- **Better than current route:** no. The doer is always a noun in the clause, so the adjective already says *as*; an adverb adds only a second tie word to learn.
+- **Conflicts and notes:** `hemezem` is already the ordinary `/h/` use of the root.
+- **Closes:** *works as*, *acts as*, *in the capacity of* (`find-english`: *works as*, *acting as*, *in the capacity*, *serves as*, *treated as*, *qualifies as*: no row)
+- **Recommendation:** decline; record in design-decisions.
+- **Outcome:** declined — D-30. (Applied on my recommendation before the language owner ruled; see the no-change-without-approval rule in the review plan.)
+
+#### E-42 — WANT as a bar (`thohul` `thohum` `thohur`) · intuitive · P2
+
+- **Proposed reading:** the want sets the level wanted: *more than wanted*, *lighter than Alahen wanted*. The ending keeps its job, and the holder `/b/` is whose want it is.
+- **Example:** `zubugal thohum balahen zuel garagam.` — [z-book | [th-WANT-unstated | b-Alahen] | z-rank/less | g-heavy] — "The book is lighter than Alahen wanted." The parser rejected it before (`barKind`).
+- **Pattern:** PLAN (*than planned*) and the speaker attitude (*than hoped*): both name the level a mind set. WANT already has a holder `/b/` ([whose want](../grammar/intention.md#whose-intention)).
+- **Current route:** the hope bar `thevegem` (*than I hoped*), which is your attitude, not the subject's want; for someone else's want, two sentences
+- **Better than current route:** yes. *Than he wanted* is common, and a learner who knows the bar and the want guesses it.
+- **Conflicts and notes:** this reverses an earlier exclusion: [design-decisions](design-decisions.md#bars) listed WANT among stances that set no value. The language owner ruled that WANT stays a bar. DECISION and ATTEMPT commit to an act and set no level (E-43).
+- **Closes:** *more than wanted*, *less than I wanted* (`find-english`: *than wanted*, *than I wanted*, *than desired*: no row)
+- **Recommendation:** adopt; parser accepts the `want` overlay kind as a bar.
+- **Outcome:** adopted (confirmed by the language owner) — taught in the bar table and [Every bar](../grammar/comparatives.md#stance-bars); `want` added to the bar kinds in the parser.
+
+#### E-43 — DECISION, ATTEMPT, bans, refusals and the rest as bars · forced · P3
+
+- **Proposed reading:** *than decided* (`thehum`), *than tried for* (`thudum`), *more than banned* (`thedel`).
+- **Example:** none worth teaching; the parser rejects all of them (`barKind`).
+- **Pattern:** the bars that already set a value
+- **Current route:** PLAN for *than decided* (`thamam`); PERMIT for a limit (`thegol`); REQUIRE for a demand
+- **Better than current route:** no. A decision or an attempt commits to an act and sets no level, a ban is the other side of PERMIT, and a refusal is the other side of CONSENT. Each already has the positive bar.
+- **Closes:** *than decided*, *than I tried*: PLAN
+- **Recommendation:** decline; record in design-decisions.
+- **Outcome:** declined — D-30. (Applied on my recommendation before the language owner ruled; the owner has not yet confirmed.)
+
+### None (added to unassigned-reserved)
+
+- Relation roots on `/w/` with `/b/`, other than as-of; a relation root on `/th/` is wave 13.
+
+Confirmed **def** with nothing to add: each relation on `/ɡ/` and `/h/`, `/w/` grading the relation before the host, an empty `/b/` after a joined subject (*alike*, *friends*), the as-of pair on all four letters, and stance bars at **-l** / **-m** / **-r** on channels, REQUIRE and PERMIT.
 
 ## Inconsistencies
 
