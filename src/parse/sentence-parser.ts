@@ -135,6 +135,22 @@ function laAfterW(parser: AgazanSentenceParser, from = 1): number {
   }
 }
 
+/**
+ * An adjective run closed by respectively `wazem` and a `/ɡ/` join (`gelavam gamazam wazem gal`): a list of its own,
+ * so its first adjective is not the SHARED one after a noun join (joins.md § Respectively).
+ */
+function respectivelyAdjListAhead(parser: AgazanSentenceParser): boolean {
+  let i = 1;
+  let marked = false;
+  while (true) {
+    const tok = parser.lookahead(i);
+    if (tok.tokenType === JoinG) return marked;
+    if (tok.tokenType !== G && tok.tokenType !== W) return false;
+    marked = tok.tokenType === W && (tok.payload as LexWord | undefined)?.overlay?.kind === "pairing";
+    i += 1;
+  }
+}
+
 /** The join token that closes a list at each noun-phrase level. */
 const NP_JOIN = { z: JoinZ, d: JoinD, b: JoinB } as const;
 
@@ -585,7 +601,7 @@ class AgazanSentenceParser extends CstParser {
     // SHARED /ɡ/ describes every noun; SHARED /h/ or digitless `bral` is only a scale, after a rank / equative / sequence join.
     this.OPTION({
       GATE: () =>
-        this.LA(laAfterW(this)).tokenType === G ||
+        (this.LA(laAfterW(this)).tokenType === G && !respectivelyAdjListAhead(this)) ||
         ((tokenIs(this.LA(laAfterW(this)), H) || scaleNumberAhead(this.LA(1))) && RANK_SERIES.has(joinSeries(this.LA(0)))),
       DEF: () => {
         const series = joinSeries(this.LA(0));
@@ -600,8 +616,12 @@ class AgazanSentenceParser extends CstParser {
   });
 
   public vpCoord = this.RULE("vpCoord", () => {
-    this.AT_LEAST_ONE(() => {
-      this.SUBRULE(this.vpCoordPart);
+    // A `/w/` starts a part only before its join word (respectively `wazem`); any other `/w/` is not a verb part.
+    this.AT_LEAST_ONE({
+      GATE: () => this.LA(laAfterW(this)).tokenType === JoinV || this.LA(1).tokenType === V,
+      DEF: () => {
+        this.SUBRULE(this.vpCoordPart);
+      },
     });
   });
 
@@ -622,8 +642,11 @@ class AgazanSentenceParser extends CstParser {
               },
             });
           });
-          this.OPTION(() => {
-            this.SUBRULE2(this.vJoinClose);
+          this.OPTION({
+            GATE: () => this.LA(laAfterW(this)).tokenType === JoinV,
+            DEF: () => {
+              this.SUBRULE2(this.vJoinClose);
+            },
           });
         },
       },
@@ -631,6 +654,10 @@ class AgazanSentenceParser extends CstParser {
   });
 
   public vJoinClose = this.RULE("vJoinClose", () => {
+    // A `/w/` right before the join word is respectively `wazem` (joins.md § Respectively).
+    this.MANY(() => {
+      this.CONSUME(W);
+    });
     this.CONSUME(JoinV);
     // Only a shared /h/ follows a verb join (it covers every verb); a /ɡ/ there is not shared.
     this.OPTION({
@@ -642,8 +669,11 @@ class AgazanSentenceParser extends CstParser {
   });
 
   public gCoord = this.RULE("gCoord", () => {
-    this.AT_LEAST_ONE(() => {
-      this.SUBRULE(this.gCoordPart);
+    this.AT_LEAST_ONE({
+      GATE: () => this.LA(laAfterW(this)).tokenType === JoinG || this.LA(laAfterW(this)).tokenType === G,
+      DEF: () => {
+        this.SUBRULE(this.gCoordPart);
+      },
     });
   });
 
@@ -661,8 +691,11 @@ class AgazanSentenceParser extends CstParser {
               this.SUBRULE(this.gPackage, { ARGS: [false] });
             },
           });
-          this.OPTION(() => {
-            this.SUBRULE2(this.gJoinClose);
+          this.OPTION({
+            GATE: () => this.LA(laAfterW(this)).tokenType === JoinG,
+            DEF: () => {
+              this.SUBRULE2(this.gJoinClose);
+            },
           });
         },
       },
@@ -670,7 +703,10 @@ class AgazanSentenceParser extends CstParser {
   });
 
   public gJoinClose = this.RULE("gJoinClose", () => {
-    // Nothing modifies a list of adjectives: a following /ɡ/ is its own unit.
+    // Nothing modifies a list of adjectives (a following /ɡ/ is its own unit); only respectively `wazem` sits before the join.
+    this.MANY(() => {
+      this.CONSUME(W);
+    });
     this.CONSUME(JoinG);
   });
 
@@ -886,7 +922,7 @@ class AgazanSentenceParser extends CstParser {
   public sharedAfterJoin = this.RULE("sharedAfterJoin", () => {
     this.OR([
       {
-        GATE: () => this.LA(laAfterW(this)).tokenType === G,
+        GATE: () => this.LA(laAfterW(this)).tokenType === G && !respectivelyAdjListAhead(this),
         ALT: () => {
           this.SUBRULE(this.gPackage);
         },
@@ -1294,13 +1330,13 @@ function buildVpCoord(cst: CstNode): VpCoord {
   return {
     parts: parts.map((part) => {
       const close = partJoinClose(part, "vJoinClose");
-      const { join, shared } = joinFromClose(close);
+      const { join, shared, joinModifiers } = joinFromClose(close);
       const verbs = childTokens(part, "V");
       const hostedVerbs = childTokens(part, "B").map((b) => {
         const verb = verbs.filter((v) => v.startOffset < b.startOffset).at(-1)!;
         return { verb: lexWordFromToken(verb), hosted: { bound: lexWordFromToken(b) } };
       });
-      const built = { items: verbs.map(lexWordFromToken), join, shared };
+      const built = { items: verbs.map(lexWordFromToken), join, shared, ...(joinModifiers ? { joinModifiers } : {}) };
       return hostedVerbs.length > 0 ? { ...built, hostedVerbs } : built;
     }),
   };
@@ -1344,9 +1380,9 @@ function flattenHUnits(cst: CstNode): Unit[] {
 function buildGCoord(cst: CstNode): GCoord {
   return {
     parts: childNodes(cst, "gCoordPart").map((part) => {
-      const { join, shared } = joinFromClose(partJoinClose(part, "gJoinClose"));
+      const { join, shared, joinModifiers } = joinFromClose(partJoinClose(part, "gJoinClose"));
       const items: GItem[] = childNodes(part, "gPackage").map((g) => ({ kind: "adj", adj: buildGPackage(g) }));
-      return { items, join, shared };
+      return { items, join, shared, ...(joinModifiers ? { joinModifiers } : {}) };
     }),
   };
 }
@@ -1363,7 +1399,7 @@ function hasGJoin(unit: Unit): boolean {
   return unit.kind === "island" && unit.island.units.some(hasGJoin);
 }
 
-type GToken = GItem | { kind: "join"; join: LexWord; shared: CoordShared[] };
+type GToken = GItem | { kind: "join"; join: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[] };
 
 function gTokens(unit: Unit): GToken[] {
   if (unit.kind === "island") return [{ kind: "island", island: unit.island }];
@@ -1375,7 +1411,9 @@ function gTokens(unit: Unit): GToken[] {
   if (unit.kind === "gCoord") {
     return unit.coord.parts.flatMap((part): GToken[] => [
       ...part.items,
-      ...(part.join ? [{ kind: "join" as const, join: part.join, shared: part.shared }] : []),
+      ...(part.join
+        ? [{ kind: "join" as const, join: part.join, shared: part.shared, ...(part.joinModifiers ? { joinModifiers: part.joinModifiers } : {}) }]
+        : []),
     ]);
   }
   return [];
@@ -1387,7 +1425,7 @@ function gCoordFromTokens(tokens: GToken[]): GCoord {
   let items: GItem[] = [];
   for (const token of tokens) {
     if (token.kind === "join") {
-      parts.push({ items, join: token.join, shared: token.shared });
+      parts.push({ items, join: token.join, shared: token.shared, ...(token.joinModifiers ? { joinModifiers: token.joinModifiers } : {}) });
       items = [];
     } else items.push(token);
   }

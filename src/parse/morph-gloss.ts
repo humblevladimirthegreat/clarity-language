@@ -1253,6 +1253,7 @@ function restrictorLabel(
   if (series === "ao") return `when-any-of${open}`;
   if (series === "uo") return `anytime-except${open}`;
   if (series === "oe") return `when-in-order${open}`;
+  if (series === "ue") return `when-last${open}`;
   return `${series}${open}`;
 }
 

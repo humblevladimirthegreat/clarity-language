@@ -136,6 +136,14 @@ One English word, one row: the form that says it and the section that teaches it
 | *approach* / *head for* | `vuvudel` + **`oel`** + `/b/` (no **`hoham`**: still on the way) | [Locative relations](relations.md#locative-relations) |
 | *follow* (*walks behind Alahen*) | manner direction **`hazavathol`** + `/b/` for whoever leads | [Landmark's own front](roles.md#landmark-facing) |
 
+### Matched lists and last resorts {#matched-lists}
+
+| English itch | Agazan job | Teach |
+|--------------|------------|-------|
+| *X and Y are A and B, respectively* | the subject list, the adjective list, then **`wazem`** before the second join: `zazawan zalahen zal gelavam gamazam wazem gal` | [Respectively](joins.md#respectively) |
+| *X and Y walk and run, respectively* | the same shape on verbs: `zazawan zalahen zal vowogal varahal wazem val` | [Respectively](joins.md#respectively) |
+| *as a last resort* / *only if nothing else works* | the occasion + **`huel`** (`herehel huel`) | [Ranked occasions](restrictors.md#more-occasions) |
+
 ### *some-* and *any-* words {#some-any}
 
 | English itch | Agazan job | Teach |

@@ -70,13 +70,15 @@ const RESTRICTOR_CORE = new Set<string>([
   "um",
   "uol",
   "uom",
-  // ranked (with conjuncts; bare `ael` allowed)
+  // ranked (with conjuncts; bare `ael` allowed; `uel` ranks the occasions last-first)
   "el",
   "em",
   "ael",
   "aem",
   "oel",
   "oem",
+  "uel",
+  "uem",
 ]);
 
 export type ClassifyTables = {

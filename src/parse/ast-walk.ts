@@ -312,6 +312,7 @@ function visitGCoord(coord: GCoord, v: Visitor): void {
       if (item.kind === "adj") visitGPackage(item.adj, v);
       else visitIsland(item.island, v);
     }
+    for (const mod of part.joinModifiers ?? []) v.word?.(mod, "joinModifier");
     if (part.join) v.join?.(part.join, { kind: "g", coord, index });
     visitShared(part.join, part.shared, v);
   });
@@ -324,6 +325,7 @@ function visitVp(coord: VpCoord, v: Visitor): void {
   coord.parts.forEach((part, index) => {
     for (const item of part.items) v.word?.(item, "item");
     for (const verb of part.hostedVerbs ?? []) v.word?.(verb.hosted.bound, "hostedBound");
+    for (const mod of part.joinModifiers ?? []) v.word?.(mod, "joinModifier");
     if (part.join) v.join?.(part.join, { kind: "vp", coord, index });
     visitShared(part.join, part.shared, v);
   });

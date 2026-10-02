@@ -96,13 +96,12 @@ Spellings under `/h/` / `/w/` that share the join series but have **no circumsta
 
 ### Ranked / unspecified (no reading)
 
-- **`huel` / `huem`** (any arity)
-- **`her` / `wer`** (any arity) — near-miss: **`hel`** + **`har`** for *whenever it matters most*
+- **`her` / `wer`** (any arity) — declined (D-27): no English job; one restrictor chain is one unit, so **`hel`** and **`har`** cannot combine either
 - Other stacked or rare parallels not in the Intermediate core tables
 
 ### `-n` under `/w/`
 
-- `/w/`…**-n** — reserved, no circumstance gloss (`/h/`…**-n** = [join-relations](../grammar/join-across-roles.md#join-relations), not restrictors)
+- `/w/`…**-n** and **`wazem`** before **-r** / **-n** — reserved, no gloss (`/h/`…**-n** = [join-relations](../grammar/join-across-roles.md#join-relations), not restrictors)
 
 ### Join leftovers
 

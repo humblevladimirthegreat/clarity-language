@@ -207,9 +207,17 @@ function isRespectively(word: LexWord): boolean {
 /** A marked list is an and-list paired with another and-list of the same length (joins.md § Respectively). */
 function enforceRespectively(units: Unit[]): void {
   const lists: { length: number; marker?: string; raw: string }[] = [];
+  const coords: { parts: { items: unknown[]; join?: LexWord; joinModifiers?: LexWord[] }[] }[] = [];
   for (const unit of units) {
-    if (unit.kind !== "np" && unit.kind !== "vp") continue;
-    for (const part of unit.coord.parts) {
+    if (unit.kind === "np") {
+      coords.push(unit.coord);
+      for (const part of unit.coord.parts) {
+        for (const item of part.items) if (item.kind === "package" && item.package.adjCoord) coords.push(item.package.adjCoord);
+      }
+    } else if (unit.kind === "vp" || unit.kind === "gCoord") coords.push(unit.coord);
+  }
+  for (const coord of coords) {
+    for (const part of coord.parts) {
       const joinModifiers = "joinModifiers" in part ? (part.joinModifiers ?? []) : [];
       for (const w of joinModifiers) {
         if (!isRespectively(w)) throw new ConstructionError("joinDetail", `${w.raw} ${part.join?.raw ?? ""}`.trim());
@@ -217,6 +225,9 @@ function enforceRespectively(units: Unit[]): void {
       if (series(part.join) !== "a" || part.items.length < 2) {
         if (joinModifiers.length > 0) throw new ConstructionError("joinDetail", `${joinModifiers[0]!.raw} ${part.join?.raw ?? ""}`.trim());
         continue;
+      }
+      if (joinModifiers.length > 0 && part.join!.ending !== "l" && part.join!.ending !== "m") {
+        throw new ConstructionError("joinDetail", `${joinModifiers[0]!.raw} ${part.join!.raw}`);
       }
       lists.push({ length: part.items.length, marker: joinModifiers[0]?.raw, raw: part.join!.raw });
     }

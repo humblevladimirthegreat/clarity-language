@@ -261,7 +261,7 @@ export type GItem = { kind: "adj"; adj: GPackage } | { kind: "island"; island: I
 
 /** A `/ɡ/` list with right-close fences, attributive (on a noun package) or predicate (its own unit). */
 export type GCoord = {
-  parts: { items: GItem[]; join?: LexWord; shared: CoordShared[] }[];
+  parts: { items: GItem[]; join?: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[] }[];
 };
 
 export type HUnit = {
@@ -297,6 +297,7 @@ export type VpCoord = {
     items: LexWord[];
     join?: LexWord;
     shared: CoordShared[];
+    joinModifiers?: LexWord[];
     /** Hosted `/b/` right after a label-scope `tho` verb (predication.md#label-scope). */
     hostedVerbs?: { verb: LexWord; hosted: Hosted }[];
   }[];

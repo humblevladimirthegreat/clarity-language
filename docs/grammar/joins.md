@@ -524,9 +524,25 @@ Azawan saw the cat, and Alahen saw the dog. The lists pair up by position, so th
 
 | Rule | Pattern |
 |------|---------|
-| Where | right before the `a` join word (`zal` / `dal` / `bal`, **-l** or **-m**) of the later list |
+| Where | right before the `a` join word (**-l** or **-m**) of the later list |
 | Partner | another `a` list in the same clause with the same number of items |
 | Only there | **`wazem`** goes nowhere else, and no other `/w/` word goes before a join word |
+
+The lists can be of different roles. A list of adjectives or verbs pairs with the subject list the same way: put **`wazem`** before the join word that closes it.
+
+> `zazawan zalahen zal gelavam gamazam wazem gal.`
+>
+> [z-Azawan | z-Alahen | z-and] | [g-big | g-small | w-respectively | g-and]
+>
+> "Azawan and Alahen are big and small, respectively."
+
+> `zazawan zalahen zal vowogal varahal wazem val.`
+>
+> [z-Azawan | z-Alahen | z-and] | [v-walk | v-run | w-respectively | v-and]
+>
+> "Azawan and Alahen walk and run, respectively."
+
+Azawan is big and Alahen is small; Azawan walks and Alahen runs. An adjective right after a noun join, with no **`wazem`** later in its row, is still [SHARED](#shared-after-the-join) over every noun. The **`wazem`** that closes the row is what tells the lists apart: a row of adjectives closed by **`wazem`** and `gal` is a list of its own, so its first adjective is not the shared one.
 
 Without **`wazem`**, who got which is left open. (cue: 🧦 *socks*: sort them into matched pairs)
 
@@ -870,6 +886,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *kiss* | `vegezal` | `egezal` *kiss* |
 | *punch* | `vabahel` | `abahel` *punch* |
 | *respectively* | `wazem` | `azel` *socks* |
+| *big* | `elavam` | |
+| *small* | `amazam` | |
+| *walk* | `vowogal` | |
+| *run* | `varahal` | |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -961,6 +981,22 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-Azawan | z-Alahen | z-and] | v-see | [d-ring | d-veil | w-respectively | d-and]
 :::
 
+**12.** *Azawan and Alahen are big and small, respectively.*
+
+::: details Show answer
+`zazawan zalahen zal gelavam gamazam wazem gal.`
+
+[z-Azawan | z-Alahen | z-and] | [g-big | g-small | w-respectively | g-and]
+:::
+
+**13.** *Azawan and Alahen walk and run, respectively.*
+
+::: details Show answer
+`zazawan zalahen zal vowogal varahal wazem val.`
+
+[z-Azawan | z-Alahen | z-and] | [v-walk | v-run | w-respectively | v-and]
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zavavul zual.`
@@ -1044,6 +1080,15 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *Starting with Ahaben, they see the ring.*
 :::
 
+**10.** `zazawan zalahen zal gamazam gelavam wazem gal.`
+
+::: details Show answer
+
+[z-Azawan | z-Alahen | z-and] | [g-small | g-big | w-respectively | g-and]
+
+*Azawan and Alahen are small and big, respectively.*
+:::
+
 ## Advanced {#advanced}
 
 ### Scope islands {#scope-islands-join}
@@ -1068,7 +1113,7 @@ When same-role words sit next to a smaller list, wrap that stretch and its join 
 <a id="named-list"></a>
 <a id="named--conventional-ending-phrase-level-all-join-vowels"></a>
 
-When a phrase list is an established bundle (*Stop–Drop–Roll*), end the join with **-n** under `/z/` `/d/` `/b/` `/w/`. That **-n** titles the package ([titled phrases](word-endings.md#titled-phrases)). Members keep their usual endings unless a member is itself a name.
+When a phrase list is an established bundle (*Stop–Drop–Roll*), end the join with **-n** under `/z/` `/d/` `/b/`. That **-n** titles the package ([titled phrases](word-endings.md#titled-phrases)). Members keep their usual endings unless a member is itself a name.
 
 > `zebevul zabodel zan.`
 >
@@ -1088,7 +1133,8 @@ Join vowels stack at most two letters. Endings by role letter:
 
 | Role | Join endings | Notes |
 |-------|----------------|-------|
-| `/z/` `/d/` `/b/` `/w/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | phrase lists; **-n** is a named package |
+| `/z/` `/d/` `/b/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | phrase lists; **-n** is a named package |
+| `/w/` | none | not a phrase list: the only `/w/` before a join word is [`wazem`](#respectively), with **-l** or **-m** |
 | `/ɡ/` `/h/` | same series as restrictors allow | [restrictors](restrictors.md#defined-core-full); **-n** forms are [join-relations](join-across-roles.md#join-relations) |
 | `/v/` | **-l** / **-m** / **-r** | parallel **-n** forms are [join-act verbs](join-across-roles.md#join-act-verbs) |
 | `/th/` | **-l** / **-m** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | [stance joins](join-across-roles.md#stance-joins) on stance words (*not because…*) |

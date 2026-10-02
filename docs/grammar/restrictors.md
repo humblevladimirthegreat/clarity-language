@@ -370,12 +370,21 @@ Closed **`hel`** ranks **when** it matters. **`hal`** still means *only when* th
 | **`hel` / `hem`** | priority among occasions | *preferably when A ≻ when B…* (closed / open) | **e** ≈ order |
 | **`hael` / `haem`** | equal frequency among occasions | *as often as* / *equally when A and when B* | **a** ≈ add + **e** ≈ order |
 | **`hoel` / `hoem`** | occasions in order | *first when A, then when B* (closed / open) | **o** ≈ one + **e** ≈ order |
+| **`huel` / `huem`** | occasions last-first | *as a last resort when A* (one occasion); several run last-listed first (closed / open) | **u** ≈ undo + **e** ≈ order |
 
 > `zazawan vowogal hamabam hagevem hel.`
 >
 > z-Azawan | v-walk | h-emergency | h-convenience | h-when-ranked
 >
 > "Azawan walks preferably in an emergency rather than for convenience."
+
+One occasion before **`huel`** is the last resort: the claim counts there, but only when nothing better applies. With several, the order reverses, as with [`zuel`](joins.md#invert-u-stacks): the last one listed is the most preferred, so `herehel hanadal huel` makes night the first choice and rain the last. On `/w/` the same words limit the next adjective (`wuel` / `wuem`).
+
+> `zazawan vowogal herehel huel.`
+>
+> z-Azawan | v-walk | h-rain | h-when-last
+>
+> "Azawan walks only as a last resort when raining."
 
 #### Unspecified-member (`-r`)
 
@@ -485,6 +494,14 @@ z-Azawan | [w-rain | w-night | w-when-one | g-sleepy]
 z-Ahaben | v-scream | [th-if | b-that-clause] | z-Alahen | v-fall
 :::
 
+**9.** *Alahen runs only as a last resort when there is fog.*
+
+::: details Show answer
+`zalahen varahal havegel huel.`
+
+z-Alahen | v-run | h-fog | h-when-last
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zalahen vagayal herehel hanadal hom.`
@@ -557,6 +574,15 @@ z-Azawan | v-scream | [th-if | b-that-clause] | z-Alahen | v-fall
 z-Alahen | [w-rain | w-night | w-when-one | g-sleepy]
 
 *Alahen is sleepy either when raining or at night, not both.*
+:::
+
+**9.** `zalahen vagayal hazahol huem.`
+
+::: details Show answer
+
+z-Alahen | v-climb | h-ice | h-when-last.open
+
+*Alahen would rather not climb when there is ice.*
 :::
 
 ## See also

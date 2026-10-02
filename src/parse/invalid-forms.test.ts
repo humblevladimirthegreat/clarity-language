@@ -189,6 +189,27 @@ const ROWS: Row[] = [
     rejection: "joinDetail",
     valid: "zazawan zalahen zal vahahal dagadul dodogal wazem dal.",
   },
+  {
+    invalid: "zazawan zalahen zahaben zal gelavam gamazam wazem gal.",
+    rejection: "respectivePartner",
+    valid: "zazawan zalahen zal gelavam gamazam wazem gal.",
+  },
+  {
+    invalid: "zazawan zalahen zal vowogal varahal wazem vol.",
+    rejection: "joinDetail",
+    valid: "zazawan zalahen zal vowogal varahal wazem val.",
+  },
+  { invalid: "zazawan zalahen zal gelavam wazem gal.", rejection: "joinDetail", valid: "zazawan zalahen zal gelavam gal." },
+  {
+    invalid: "zazawan zalahen zal dagadul dodogal wazem dar vahahal.",
+    rejection: "joinDetail",
+    valid: "zazawan zalahen zal dagadul dodogal wazem dam vahahal.",
+  },
+  {
+    invalid: "zazawan zalahen zal dagadul dodogal wazem dan vahahal.",
+    rejection: "joinDetail",
+    valid: "zazawan zalahen zal dagadul dodogal wazem dal vahahal.",
+  },
   // `uem` + a stance: the stance must say what the event goes against (sakes.md#contrary-to-stance).
   { invalid: "zazawan vowogal uem thegom.", rejection: "frameKind", valid: "zazawan vowogal uem thedem." },
   { invalid: "zazawan vezebel uem thuxegom balahen.", rejection: "frameKind", valid: "zazawan vezebel uem thuxedem balahen." },

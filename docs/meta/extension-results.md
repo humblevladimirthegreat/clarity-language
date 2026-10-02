@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Findings from Phase 3 of the expressiveness review (`docs/proposals/expressiveness-review.md`): every productive mechanism crossed with every place it could apply, and each empty cell judged. Rows are logged per batch, ruled by the language owner, and applied before the next batch starts; each row's **Outcome** records the ruling.
 
-Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors) logged and awaiting rulings. Other mechanisms not started.
+Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Other mechanisms not started.
 
 ## How to read this file
 
@@ -642,7 +642,7 @@ Every `/v/` item is in the join-across-roles grid, and every `/x/` cell is a cla
 - **Conflicts and notes:** an adjective after a subject join is SHARED, so a `/ɡ/` list after the join must be told apart from a SHARED pair. `wazem` right before the closing `gal` is that signal (nothing else may stand before a join word, so there is no collision), and without it the list stays SHARED. The rule that both lists need the same number of items carries over unchanged. **-r** and **-n** are not wanted: see C-12.
 - **Closes:** *respectively* over adjectives and verbs: no row (`find-english`: *respectively*, *tall and short respectively*)
 - **Recommendation:** adopt on `/ɡ/` and `/v/`; teach in [joins § respectively](../grammar/joins.md#respectively), add a translation checkpoint, and keep **`wazem`** out of every other role.
-- **Outcome:** pending ruling.
+- **Outcome:** adopted. `wazem` now closes an adjective or verb list as well as a noun list, in [joins § respectively](../grammar/joins.md#respectively); the parser reads it (a respectively-marked adjective row is its own list, so its first adjective is not SHARED), with checks, a recipe row in english.md, and checkpoints.
 
 #### E-30 — reverse rank of occasions (`huel` / `huem`, `wuel` / `wuem`) · intuitive · P3
 
@@ -654,7 +654,7 @@ Every `/v/` item is in the join-across-roles grid, and every `/x/` cell is a cla
 - **Conflicts and notes:** on `/w/` the parser rejects **ue** at every ending, so `/w/` and `/h/` do not match even on the "same map" the page promises. The map is complete once `/w/` takes `wuel` / `wuem`.
 - **Closes:** *as a last resort*, *least of all when*: no row (`find-english`)
 - **Recommendation:** adopt on `/h/` and `/w/` together; teach under [ranked](../grammar/restrictors.md#more-occasions), and remove from unassigned-reserved.
-- **Outcome:** pending ruling.
+- **Outcome:** adopted on `/h/` and `/w/`. `huel` / `huem` / `wuel` / `wuem` are restrictors (gloss `when-last`), taught in [restrictors § ranked](../grammar/restrictors.md#more-occasions) with checkpoints; removed from unassigned-reserved.
 
 #### E-31 — unspecified ranked member on occasions (`her`, `wer`) · intuitive but redundant · P3
 
@@ -666,7 +666,7 @@ Every `/v/` item is in the join-across-roles grid, and every `/x/` cell is a cla
 - **Conflicts and notes:** the unassigned-reserved line gives *`hel` + `har`* as a near-miss, but one restrictor chain is one unit ([more occasions](../grammar/restrictors.md#more-occasions)), so the two cannot stack and the note is wrong.
 - **Closes:** —
 - **Recommendation:** decline (ground rule: no slot-filling); keep reserved, and correct the near-miss note.
-- **Outcome:** pending ruling.
+- **Outcome:** declined (D-27). `her` / `wer` stay reserved; the near-miss note is corrected.
 
 #### E-32 — bare restrictors beyond `hal` / `hual` (`hol`, `hel`, `hoel`, `haol`, `hul`, `huol`, `hael`) · forced · P3
 
@@ -678,7 +678,7 @@ Every `/v/` item is in the join-across-roles grid, and every `/x/` cell is a cla
 - **Conflicts and notes:** bare `/w/` forms follow the same rule, since `wal` / `wual` are the only ones used.
 - **Closes:** —
 - **Recommendation:** decline; keep the unassigned-reserved bare list as it stands.
-- **Outcome:** pending ruling.
+- **Outcome:** declined (D-27). Bare restrictors stay as they are.
 
 ### Inconsistencies (wave 4)
 
@@ -686,15 +686,16 @@ Every `/v/` item is in the join-across-roles grid, and every `/x/` cell is a cla
 
 - **Where:** [joins § named phrase](../grammar/joins.md#named-list), [allowed joins](../grammar/joins.md#phrase-reserved-forms), [unassigned-reserved](unassigned-reserved.md#restrictors-h--w), parser
 - **Problem:** joins says **-n** works under `/z/` `/d/` `/b/` `/w/` as a named package, and the table gives `/w/` **-l** / **-m** / **-n** / **-r** (**-r** on single vowels only). Unassigned-reserved says `/w/`…**-n** is reserved with no gloss, and the parser rejects every `/w/` **-n** (`wan`, `won`, …) and `wer`. Under `/w/` the units are restrictors and `wazem`, not phrases, so no package can be named. The same table also says `wazem` takes only **-l** / **-m**, but the parser accepts `wazem dar` and `wazem dan`.
-- **Suggested ruling:** take `/w/` out of the **-n** sentence and the table row, say `/w/` takes **-l** / **-m** / **-r** as restrictors (**-r** on **a** / **o** / **u**; **e** per E-31), and reject `wazem` before **-r** / **-n** with a pointer to [respectively](../grammar/joins.md#respectively).
-- **Outcome:** pending ruling.
+- **Three separate mismatches:** (1) **-n** on `/w/`: the sentence and table in joins.md promise a named package, but a `/w/` is never a list item (the only `/w/` before a join word is `wazem`, and a restrictor chain is a unit, not a package), so there is nothing for **-n** to title; the parser rejects `wan` … `wuen`, and unassigned-reserved already lists it as reserved. (2) **-r** on `/w/`: `war` `wor` `wur` work, but as restrictors, not joins; the table's *`/w/` **-r** only on **a** / **o** / **e** / **u*** promises `wer` too, and the parser rejects it (E-31). (3) `wazem` itself: the page says it goes before an **-l** or **-m** `a` join, but `wazem dar` and `wazem dan` parse. *Respectively something* has no reading, and a named respectively list is not a thing, so both are accidents of the grammar rule, not designs.
+- **Suggested ruling:** take `/w/` out of the **-n** sentence and the table row (point the `/w/` row at restrictors, **-l** / **-m** / **-r** on **a** / **o** / **u** only until E-31 is ruled), and make the parser reject `wazem` before **-r** / **-n** with a pointer to [respectively](../grammar/joins.md#respectively). With E-29 adopted, that rule covers `wazem gal` and `wazem val` too, so state it once on the respectively table (`Where`: **-l** or **-m** only).
+- **Outcome:** fixed. joins.md no longer gives `/w/` a named package or a phrase-list row; `wazem` before **-r** / **-n** is rejected by the parser; D-27 and unassigned-reserved record it.
 
 #### C-13 — stacked **-r** on phrase joins parses but is documented as undefined · found in unspecified member
 
 - **Where:** [joins § unspecified member](../grammar/joins.md#unspecified-member-r-phrase), [constraints](../grammar/joins.md#constraints), [verb-phrase and clause forms](../grammar/join-across-roles.md#vp-clause-forms), parser
 - **Problem:** the docs allow **-r** only on **a** / **o** / **e** / **u** (the join-across-roles table leaves `—` for stacks), but the parser accepts `zaor`, `zuar`, `zuor`, `zaer`, `zoer`, `zuer` on `/z/` `/d/` `/b/` `/ɡ/` `/v/` `/x/` and `/h/` (`haor`, `haer`, `hoer`, `huar`, `huor`). Every stack takes **-r** only as a fill-ask on `/y/` and `/th/` ([stance joins](../grammar/join-across-roles.md#standalone-stance-joins)).
 - **Suggested ruling:** reject stacked **-r** outside those two with a message pointing at the single-vowel forms; no new form. Re-check against the fill-ask grid in Wave 9 before closing, since a question might want `zuar` (*everything but what?*).
-- **Outcome:** pending ruling.
+- **Outcome:** known and deferred. No good reading exists for the missing stacked **-r** forms; the parser keeps accepting them for now. Revisit in Wave 9 (questions) in case a fill-ask wants one.
 
 ### None (to add to unassigned-reserved, if the rows above are declined)
 

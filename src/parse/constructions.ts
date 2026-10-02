@@ -100,6 +100,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "vpCoordPart.B": { anchor: "predication.md#scope-relative", summary: "hosted /b/ after a tho verb" },
   "vpCoordPart.vJoinClose": { anchor: "joins.md#and-lists-a", summary: "/v/ join after its verbs" },
   "vpCoordPart.standaloneJoin": { anchor: "joins.md#standalone-phrase", summary: "standalone /v/ join" },
+  "vJoinClose.W": { anchor: "joins.md#respectively", summary: "respectively /w/ before a verb join word" },
   "vJoinClose.JoinV": { anchor: "joins.md#and-lists-a", summary: "/v/ join fence" },
   "vJoinClose.sharedAfterJoin": { anchor: "join-across-roles.md#vp-clause-forms", summary: "shared /h/ after a verb join (covers every verb)" },
 
@@ -110,6 +111,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
     anchor: "predication.md#classification-packaging",
     summary: "/ɡ/ join closing the adjective on the noun before it",
   },
+  "gJoinClose.W": { anchor: "joins.md#respectively", summary: "respectively /w/ before an adjective join word" },
   "gJoinClose.JoinG": { anchor: "joins.md#and-lists-a", summary: "/ɡ/ join fence" },
 
   "hCoord.hCoordPart": { anchor: "clause.md#adverbs-h", summary: "/h/ phrase parts" },
@@ -636,7 +638,7 @@ export const REJECTIONS = {
   asOfOffset: { anchor: "relations.md#as-of", summary: "a signed offset in as-of /b/ goes only on stance as-of (/th/); an event or adjective past needs a channel" },
   channelOffsetSign: { anchor: "knowing.md#dated-channel", summary: "WITNESSED takes only an earlier offset, LIVE none, and PLAN only a later one" },
   poleOffsetWarrant: { anchor: "knowing.md#dated-channel", summary: "a signed offset on a time pole needs a command, request, PLAN, or channel in its clause" },
-  joinDetail: { anchor: "joins.md#respectively", summary: "the only /w/ before a join word is respectively (wazem), and it goes only there, on an and-list" },
+  joinDetail: { anchor: "joins.md#respectively", summary: "the only /w/ before a join word is respectively (wazem), and it goes only there, on a closed (-l) or open (-m) and-list" },
   respectivePartner: { anchor: "joins.md#respectively", summary: "a respectively list pairs with another and-list of the same length in its clause" },
 } satisfies Record<string, ConstructionEntry>;
 
