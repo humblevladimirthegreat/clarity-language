@@ -173,6 +173,9 @@ Source: [speech-moves.md](../grammar/speech-moves.md#speech-act), [questions.md]
 Source: [spans.md](../grammar/spans.md), [x-compounds.md](../grammar/x-compounds.md)
 
 - EDGE + **-r** combinations other than EDGE **`u`** (anaphor **-r** always uses EDGE **`u`** in the spoken template; other EDGE + **-r** silhouettes are ordinary compounds, not span opens)
+- An aside open under any role but `/th/` (`dexal`, `d(…)`); a cite, mention or opaque open under `/th/` (`th[…]`, `thaxol`); any span open under `/w/` or `/x/`. The parser rejects them (`spanSlot`); an aside **resume** (`dexur`) may still recast the aside
+- An act word inside a spoken cite (`daxal yol … xuxul`)
+- A span as a topic word (`x@<Sam>`)
 - Unassigned **`VOWEL x VOWEL`** silhouettes that are not taught span opens/closes — including **`xuxun`** (`/x/` + **`u` × `u`** + proper **-n**) — ordinary compounds / [phrasal names](../grammar/word-endings.md#phrasal-proper-names), not fences
 
 ## Values — later dimensions

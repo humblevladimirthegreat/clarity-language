@@ -147,8 +147,33 @@ The letter on the open is the role of the **entire span** in the outer sentence.
 |--------|-----|---------|-----|
 | `/d/` | object | *said / wrote / saw “…”* (`d[azawan]`, `d[=]`, <code>d&lt;kimchi&gt;</code>) | **d** ≈ done to |
 | `/z/` | subject | the word or phrase **is** the subject (`z{odoga}`) | **z** ≈ star (who it is about) |
-| `/v/` | verb | echo the act as wording (`v[vazadal]`) | **v** as in English *verb* |
+| `/b/` | extra party | a foreign name as the recipient (<code>b@&lt;Sam&gt;</code>) | **b** ≈ bolted on (the extra piece) |
+| `/v/` | verb | echo the act as wording (`v[vazadal]`); a loan verb (<code>v&lt;google&gt;</code>) | **v** as in English *verb* |
+| `/ɡ/` | adjective | a loan adjective (<code>g&lt;rouge&gt;</code>) | **g** ≈ grade (a rating of the noun) |
+| `/h/` | adverb | a loan adverb (<code>h&lt;allegro&gt;</code>) | **h** starts *how* / *when* / *where* |
 | `/th/` | stance | asides (`th(…)`) | **th** ≈ *think* (your side comment) |
+
+Only an aside goes under `/th/`, and every other span fills a content slot: `/z/` `/d/` `/b/` `/v/` `/ɡ/` `/h/`. A degree word (`/w/`) and a linker or topic word (`/x/`) are never a span.
+
+An opaque span in a verb, adjective or adverb slot is a **loan word**: the role letter says what part of speech the foreign word plays, and the blob keeps its own spelling.
+
+> <code>zalahen v&lt;google&gt; dazawan.</code>
+>
+> z-Alahen | v-&lt;google&gt; | d-Azawan
+>
+> "Alahen googled Azawan." (loan verb)
+
+> <code>zodogal g&lt;rouge&gt; vowogal.</code>
+>
+> z-dog | g-&lt;rouge&gt; | v-walk
+>
+> "A rouge dog walks." (loan adjective)
+
+> <code>zazawan b@&lt;Sam&gt; vezebel.</code>
+>
+> z-Azawan | b-NAME.&lt;Sam&gt; | v-tell
+>
+> "Azawan tells Sam." (a foreign name as the recipient)
 
 If the interior is Agazan words, those inner words still start with **their** role letters.
 
@@ -176,6 +201,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *quiet* | `agawal` | | |
 | *kimchi* | <code>d&lt;kimchi&gt;</code> | | |
 | *Sam* | <code>@&lt;Sam&gt;</code> | | |
+| *google* (verb) | <code>v&lt;google&gt;</code> | | |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
@@ -247,6 +273,14 @@ y-question | z-Alahen | d-←cite | v-tell
 `z{zazawan vezehel} gamazam.`
 
 z-MENTION["zazawan vezehel"] | g-small
+:::
+
+**10.** *Alahen googled Azawan.* (a loan verb)
+
+::: details Show answer
+<code>zalahen v&lt;google&gt; dazawan.</code>
+
+z-Alahen | v-&lt;google&gt; | d-Azawan
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
@@ -321,6 +355,15 @@ y-question | z-Ahaben | d-←cite | v-tell
 z-MENTION["zalahen vezebel"] | g-small
 
 *The phrase “zalahen vezebel” is small.*
+:::
+
+**10.** <code>zazawan b@&lt;Sam&gt; vezebel.</code>
+
+::: details Show answer
+
+z-Azawan | b-NAME.&lt;Sam&gt; | v-tell
+
+*Azawan tells Sam.*
 :::
 
 ## Intermediate {#intermediate}
@@ -401,6 +444,8 @@ A cite is someone else's talk, so a [topic](pronouns.md#topic) never carries int
 > "Now, about Alahen: Alahen said, “Now, about Azawan: Azawan walks.” Alahen sits."
 
 Inside the cite `zozan` is Azawan; after it, `zozan` is Alahen again. A whole-stem **-r** outside a cite can find a word inside it (`xazawar` goes back to the Azawan the cite named), but a **-r** inside a cite cannot find a word outside: the quoted words were said before the surrounding sentence existed.
+
+Names inside a cite or an aside never count toward an [ordinal](pronouns.md#ordinal-pronouns) outside it, and an aside adds no anchors for [role pointers](pronouns.md#role-pointers) either, so a later ordinal pronoun or `zaxar` reads as if the aside were not there.
 
 ### Endings on opens and span pronouns {#endings}
 

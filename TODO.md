@@ -22,6 +22,7 @@ save for near end of limit resets:
 -mass lexical compound adding
 -do a style pass in grammar-docs. Check for adherence to doc-style and otherwise ensure natural sounding explanations.
 -vocab bank and exercise revamp: introduce new vocabulary, follow standards for language teaching
+-find additional applications of th#N to other evidentials.
 
 save for end:
 -add Agazan->English cheat sheet

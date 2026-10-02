@@ -587,6 +587,7 @@ export const REJECTIONS = {
   stackedHookResume: { anchor: "hooks.md#spans", summary: "stacked hook -r (oer / uar / uer) needs same-role words on both sides; aor / aer / uor are not words" },
   hookSameRoleStack: { anchor: "hooks.md#including-am-al", summary: "between same-role words only the plain hooks (al el ol ul) and the span hooks (oel ual uel) have a reading; for such as, use am" },
   hookDiscourseStack: { anchor: "hooks.md#discourse-hooks", summary: "at the front of a sentence only al el ol ul, aol and ael have a reading; for next, by the way, on the contrary use a linker" },
+  spanSlot: { anchor: "spans.md#pos", summary: "an aside goes only under /th/, a cite, mention or opaque span fills a content slot (/z/ /d/ /b/ /v/ /ɡ/ /h/), and no span fills /w/ or /x/" },
   ySpanType: { anchor: "spans.md#y-spans", summary: "a span under /y/ is opaque <…> or a cite […]; a mention or an aside is not a call or a reaction" },
   barKind: {
     anchor: "comparatives.md#bars",

@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Findings from Phase 3 of the expressiveness review (`docs/proposals/expressiveness-review.md`): every productive mechanism crossed with every place it could apply, and each empty cell judged. Rows are logged per batch, ruled by the language owner, and applied before the next batch starts; each row's **Outcome** records the ruling.
 
-Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Other mechanisms not started.
+Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 declined, C-15 and C-16 fixed). Other mechanisms not started.
 
 ## How to read this file
 
@@ -780,6 +780,82 @@ The extra-noun column is full: all ten series have both **-l** and **-m**, so no
 - Stacked point-back **-r** `aor` / `aer` / `uor` (E-35); `oer` / `uar` / `uer` stay span-only.
 
 Confirmed **def** with nothing to add: all four plain vowels at **-l** / **-m** in the three placements, the ten extra-noun series at **-l** / **-m**, hook **-n** as a title, `/w/` before every hook placement, parallel chains, the fused compounds, and the span series at every ending.
+
+## Spans
+
+Owning page: [spans](../grammar/spans.md). Wave 6. Cells checked with `node scripts/parse.mjs` (2026-10-02), sweeping every role letter (`z d b v g w h th y x`) × TYPE (**a e o u**) × EDGE (**a e o u**) × **-l** / **-m** / **-n** / **-r**, plus the written fences. EDGE **-r** forms outside EDGE **u** collide with role pointers (`zaxar`, `zaxor`) or are rejected, and `daxum` / `daxun` are ordinary compounds (already in unassigned-reserved), so the ending cells that matter are EDGE **a / e / o** × **-l** / **-m** / **-n**, EDGE **u** × **-l** / **-r**, which are all **def**. Topics inside quotes are **def** (spans § Topics in a quote). The grid below is therefore by role letter.
+
+### Grid
+
+| Span | `/z/` | `/d/` | `/b/` | `/v/` | `/ɡ/` | `/h/` | `/th/` | `/w/` | `/x/` | `/y/` |
+|------|-------|-------|-------|-------|-------|-------|--------|-------|-------|-------|
+| Cite `[…]` | def | def | E-36 | def | E-36 | E-36 | C-15 | C-15 | C-15 | def |
+| Mention `{…}` | def | def | E-36 | def | E-36 | E-36 | C-15 | C-15 | C-15 | def (none, `ySpanType`) |
+| Opaque `<…>` | def | def | E-36 | E-36 | E-36 | E-36 | C-15 | C-15 | C-15 | def |
+| Aside `(…)` | C-15 | C-15 | C-15 | C-15 | C-15 | C-15 | def | C-15 | C-15 | def (none, `ySpanType`) |
+
+Parser findings: every cell above parsed except `/x/` written spans (a syntax error), so the parser read `d(…)`, `th[…]`, `thaxol` and `w<very>` with no reading. A written bracket cite holds its interior as a single payload (`d[ yol zalahen vowogal ]` parses; the spoken `daxal yol zalahen vowogal xuxul` is rejected, because a spoken cite holds clauses only, E-37). Asides add no names to an outer ordinal count and no pointer anchors; a cite counts its own names from scratch and adds none outside (C-16).
+
+### Rows
+
+#### E-36 — opaque (loan) words in the verb, adjective, adverb and recipient slots · intuitive · P2
+
+- **Proposed reading:** the role letter says the part of speech; the blob keeps its own spelling (*googled*, *a rouge dog*, *allegro*, *tell Sam*).
+- **Example:** `zalahen v<google> dazawan.` — z-Alahen | v-<google> | d-Azawan — "Alahen googled Azawan." Parses today.
+- **Pattern:** `d<kimchi>` and `z@<Sam>`: the letter on the fence is the slot
+- **Current route:** the page names only `/z/` `/d/` (and `/y/` calls); a loan verb has no stated route (`find-english`: *foreign word*, *loanword*: no row)
+- **Better than current route:** yes: loans are common, and `/b/` is where a foreign name goes as recipient
+- **Conflicts and notes:** none; the parser already reads these cells. Only a part of speech with a content root takes a loan: `/th/` is the aside, and `/w/` and `/x/` are closed classes (C-15).
+- **Closes:** *to google*, *a rouge dog*, *tell Sam*: no row
+- **Recommendation:** adopt as a docs gap; no new form. Teach in [spans § Outer slot](../grammar/spans.md#pos) with a drill.
+- **Outcome:** adopted — rows for `/b/` `/ɡ/` `/h/` and the loan paragraph added to spans § Outer slot, with an English → Agazan and an Agazan → English drill.
+
+#### E-37 — an act word inside a spoken cite (`daxal yol … xuxul`) · intuitive but redundant · P3
+
+- **Proposed reading:** a quoted question or command keeps its own act word, as it keeps its own tone mark.
+- **Example:** `zazawan daxal yol zalahen vowogal xuxul vezebel.` — rejected today (a spoken cite holds clauses, not turns).
+- **Pattern:** a quote keeps the original speaker's tone ([speech-moves](../grammar/speech-moves.md#tone-marks))
+- **Current route:** a reported question, `zazawan vezebel dorl zalahen vowogal.`; the gist is `d~[…]`
+- **Better than current route:** only for a verbatim question, which the report already carries
+- **Conflicts and notes:** the written `d[ yol zalahen vowogal ]` parses, but its interior is one payload that the parser never reads, so the written and spoken forms are not a mismatch in grammar. An inner act word would also split the cite from the turn it sits in: `yol` at the front of a clause reads as a new turn.
+- **Closes:** *she asked, "Are you coming?"*: covered by the reported question
+- **Recommendation:** decline.
+- **Outcome:** declined — D-28.
+
+#### E-38 — a span as a topic word (`x@<Sam>`) · intuitive but redundant · P3
+
+- **Proposed reading:** *now, about Sam* for a foreign name.
+- **Example:** `x@<Sam> zozan vowogal.` — a syntax error today.
+- **Pattern:** an `/x/` content word sets the topic ([topic](../grammar/pronouns.md#topic))
+- **Current route:** `z@<Sam>` as the subject each time, with `z<=>` resuming it
+- **Better than current route:** marginal
+- **Conflicts and notes:** D-20 wants every topic return spelled by stem so every tool reads one topic from the words alone; an opaque blob has no stem, and the topic pronoun would then point at a blob.
+- **Closes:** —
+- **Recommendation:** decline.
+- **Outcome:** declined — D-28.
+
+### Inconsistencies (wave 6)
+
+#### C-15 — the parser accepts spans in slots the page gives no reading · found in span grid
+
+- **Where:** [spans § Outer slot](../grammar/spans.md#pos), [spans § Asides](../grammar/spans.md#asides), parser
+- **Problem:** `d(zalahen vowogal)`, `dexal … xuxul` (an aside under `/d/`), `th[sic]`, `thaxol …` (a cite under `/th/`) and `w<very>` / `wexal …` parsed with no reading, though the page says an aside is `th(…)` and the slot table lists only `/d/` `/z/` `/v/` `/th/`.
+- **Suggested ruling:** reject them with a pointer to the slot table; an aside resume (`dexur`) stays free to recast the aside.
+- **Outcome:** fixed — the parser rejects them (`spanSlot`); D-28 and unassigned-reserved record the cells.
+
+#### C-16 — spans.md does not say what an aside or cite does to outer ordinals and pointers · found in topics and ordinals inside spans
+
+- **Where:** [spans § Topics in a quote](../grammar/spans.md#topic-quotes), parser (`resolve.ts`)
+- **Problem:** the page gave a topic row for cite and aside only. The parser counts no name inside a cite or an aside toward an outer ordinal (`z=#3` fails after `th(zahaben vezehal)`), and an aside adds no pointer anchors (`zaxar` after it still points at the outer doer), but no page said so.
+- **Suggested ruling:** state both beside the topic table; no parser change.
+- **Outcome:** fixed — one sentence added after the table.
+
+### None (added to unassigned-reserved)
+
+- Aside under any role but `/th/`; cite, mention or opaque under `/th/`; any span under `/w/` or `/x/` (C-15).
+- An act word inside a spoken cite (E-37); a span as a topic word (E-38).
+
+Confirmed **def** with nothing to add: TYPE × EDGE × **-l** / **-m** / **-n** on `/z/` `/d/` `/b/` `/v/` `/ɡ/` `/h/` (the open map in spans § Reference tables), EDGE **u** with **-l** / **-r**, nesting, the three close words, `/y/` calls with cite and opaque, and topics inside cites.
 
 ## Inconsistencies
 

@@ -191,6 +191,22 @@ function tokenWord(token: IToken | undefined): LexWord | undefined {
   return payload && isLexWordPayload(payload) ? payload : undefined;
 }
 
+/**
+ * Which slots a span fence fills (spans.md § Outer slot): an aside only under `/th/`, a cite, mention or
+ * opaque in a content slot (never `/th/`), and no span under `/w/` or `/x/`. An aside resume (`dexur`) may recast the aside into another slot.
+ */
+function enforceSpanSlot(word: LexWord): void {
+  const family = word.family;
+  const written = family.kind === "writingSpan";
+  const spoken = family.kind === "x" && family.xFamily === "span";
+  if ((!written && !spoken) || word.pos === "y" || !word.pos) return;
+  const resume = written ? family.anaphor : word.ending === "r";
+  if (word.pos === "w" || word.pos === "x") throw new ConstructionError("spanSlot", word.raw);
+  if (resume) return;
+  const aside = written ? family.bracket === "(" : family.typeVowel === "e";
+  if (aside !== (word.pos === "th")) throw new ConstructionError("spanSlot", word.raw);
+}
+
 /** Stacked hook **-r** (`oer` / `uar` / `uer`) is only a span member between same-role words (hooks.md § Spans). */
 function enforceStackedHookR(word: LexWord, tokens: IToken[], i: number): void {
   if (word.family.kind !== "hook" || word.ending !== "r" || word.family.form.length < 3) return;
@@ -287,6 +303,7 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
       (family.kind === "x" && family.xFamily === "span" && (family.typeVowel === "o" || family.typeVowel === "e"));
     if (mentionOrAside) throw new ConstructionError("ySpanType", word.raw);
   }
+  enforceSpanSlot(word);
   if (family.kind === "x" && family.xFamily === "sake") {
     if (word.pos && !SAKE_POS.has(word.pos)) throw new ConstructionError("sakeSlot", word.raw);
     if (family.horizon && (family.stanceVowel === "e" || word.ending === "n")) {
