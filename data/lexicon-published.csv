@@ -103,7 +103,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🫯,fight,avada,struggle,fighting stance pushes through opposition; struggle is pushing through what holds you back,,battle; tackle
 💥,boom,ubuhu,consequence,collision bursts; consequence is the unobservable follow-on,,outcome; result; effect
 💫,dizzy,edezu,dazzle,dizzy stars swirl until the eyes are overwhelmed,,
-💦,sweat,awo,effort,sweat drops show hard work; effort is work that costs you,,labor; strain
+💦,sweat,ozewe,effort,sweat drops show hard work; effort is work that costs you,,labor; strain
 💨,dash,adehu,haste,dash of wind moves fast; haste is moving quickly,,rush; pace
 🕳️,hole,ohaho,void,a hole is an empty space with nothing in it,,gap
 💬,speech,ezebe,discourse,speech is audible; discourse is the unobservable social practice,v:tell,say; talk; word; speak; language; discuss; discussion; description; communicate; communication; report; declare
@@ -153,7 +153,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🧒,child,ahado,youth,a child has lived only a few years,,young; childhood; kid; teenager; adolescent
 👦,boy,oboha,boyhood,the years a boy spends growing up,,son
 👧,girl,egeha,girlhood,the years a girl spends growing up,,daughter
-🧑,person,ebeza,humanity,a person is one of us; humanity is what all people share,,people; individual; human; civilian
+🧑,person,obe,humanity,a person is one of us; humanity is what all people share,,people; individual; human; civilian
 👨,man,amaha,manhood,a man has finished growing up,,gentleman; guy
 👩,woman,uwawu,womanhood,a woman has finished growing up,,lady
 🧓,elder,elade,wisdom,an elder holds wisdom,,elderly; wise; senior
@@ -252,7 +252,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🗣️,orator,orade,rhetoric,an orator sways a crowd with persuasive words,,
 👤,silhouette,ezuwe,,,,profile
 🧑‍🦲,head,eheda,,,,principal
-👥,silhouettes,uza,community,busts form community,,society; club; association; folk; band; ethnic
+👥,silhouettes,azewe,community,busts form community,,society; club; association; folk; band; ethnic
 🫂,hug,ahage,comfort,hug gives comfort,,comfortable; embrace
 👪,family,avaha,kinship,a family is the people tied to you by blood,,household
 👣,footprints,uvude,legacy,footprints leave legacy,v:go,trace; tour
@@ -290,7 +290,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🦛,hippopotamus,ehoba,bulk,hippo is sheer bulk,,majority; mass; fat
 🐁,mouse,amaza,small,a mouse is small beside larger animals; small is little size,,little; tiny; minor; chip
 🐀,rat,arade,,,,
-🐹,hamster,eho,routine,hamster on a wheel of routine,,process; procedure; everyday; familiar
+🐹,hamster,ahoze,routine,hamster on a wheel of routine,,process; procedure; everyday; familiar
 🐇,rabbit,araba,,,,
 🐿️,chipmunk,ahebu,hoarding,chipmunk hoards for winter,,
 🦫,beaver,abeve,industry,a beaver works nonstop building dams,,
@@ -398,7 +398,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🍌,banana,abayo,madness,to go bananas is to lose your head,,
 🍍,pineapple,abuba,hospitality,pineapple welcomes with hospitality,,invitation; invite
 🥭,mango,amego,exoticism,mango tastes of the exotic,,
-🍎,apple,alu,temptation,forbidden apple is temptation,,
+🍎,apple,abovu,temptation,forbidden apple is temptation,,
 🍐,pear,abeyo,mishap,gone pear-shaped is mishap,,accident
 🍑,peach,ebaha,excellence,something peachy is as fine as a ripe peach,,
 🍒,cherry,eheva,bonus,the cherry on top is the extra finishing touch,,
@@ -413,11 +413,11 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🥔,potato,abude,,,,
 🥕,carrot,agodo,incentive,carrot on a stick is incentive,,
 🌽,corn,ogoha,kitsch,a corny joke is hokey and overdone,,
-🌶️,pepper,ube,heat,hot pepper brings heat,,
+🌶️,pepper,obebe,heat,hot pepper brings heat,,
 🫑,bell-pepper,abebe,,,,
 🥒,cucumber,aguyu,,,,
 🥬,greens,egewo,vitality,leafy greens fuel vitality,,vital; vegetable
-🥦,broccoli,oru,health,eat broccoli for health,,healthy; welfare
+🥦,broccoli,abugo,health,eat broccoli for health,,healthy; welfare
 🧄,garlic,agego,,,,
 🧅,onion,anaya,depth,onion has layers of depth,,
 🥜,peanut,ebeya,triviality,work for peanuts is trivial pay,,
@@ -513,7 +513,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🔪,knife,anava,severity,a knife cuts deep and hard,,sharp; severe
 🫙,jar,ahe,storage,jar stores what is kept,,vessel; store; stock
 🏺,amphora,ameve,,,,
-🌐,globe,oge,connected,a globe links every place; connected means linked together,,global; world; earth
+🌐,globe,ogoba,connected,a globe links every place; connected means linked together,,global; world; earth
 🗺️,map,ama,plan,a map charts a route; a plan charts a course,,agenda; design; project
 🗾,country,agu,scope,a map of one country; scope is the area the picture includes,,national; region; nation; extent; regional; zone; territory; area
 🧭,compass,ame,direction,a compass points the way; direction is where you're headed,,direct; guide
@@ -628,7 +628,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🌠,shooting-star,ohu,wish,shooting star grants a wish,,
 🌌,galaxy,agege,vastness,a galaxy holds billions of stars,,vast; universe
 ☁️,cloud,agavu,sky,clouds fill the sky,,atmosphere
-⛅,cloudy,aga,weather,sun behind cloud is a partly-cloudy sky; weather is the usual climate,,
+⛅,cloudy,ogade,weather,sun behind cloud is a partly-cloudy sky; weather is the usual climate,,
 ⛈️,thunderstorm,avode,,,,storm
 🌦️,showers,aheze,,,,
 🌧️,rain,erehe,letdown,rain on the parade; a letdown is a hope that fell through,,
@@ -724,7 +724,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🪢,knot,ana,bond,knot ties two ends together; bond is holding fast together,,bind; integrate; stick
 🕶️,sunglasses,ozaga,unbothered,sunglasses hide the eyes; cool is calm unbothered style,,
 🥽,goggles,agogu,,,,
-🥼,lab-coat,ola,expertise,lab coat marks scientific work; expertise is specialized knowledge,,technical; master; talent; specialist; specialize; pro; qualification; expert
+🥼,lab-coat,alego,expertise,lab coat marks scientific work; expertise is specialized knowledge,,technical; master; talent; specialist; specialize; pro; qualification; expert
 🦺,safety-vest,eveze,safety,the vest keeps workers safe; safety is freedom from harm,,safe; secure; insurance
 👔,necktie,enege,neck,a necktie hangs at the neck; the neck joins head and body,,
 👕,t-shirt,edahe,casual,shirt is everyday wear; casual is relaxed informal,,shirt
@@ -913,7 +913,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 📡,antenna,anede,,,,
 💉,syringe,azehe,intrusion,syringe puts fluid into body; injection is forcing something in,,shot
 🩸,blood,abada,violence,blood is spilled; violence is harm by force,,bloody; violent
-💊,pill,eyu,remedy,pill is swallowed to heal; remedy is fix for ailment,,drug; treatment; medicine
+💊,pill,ebeza,remedy,pill is swallowed to heal; remedy is fix for ailment,,drug; treatment; medicine
 🩹,bandage,ubade,expedient,bandage covers a wound; expedient is the unobservable stopgap,,
 🩼,crutch,agava,support,a crutch takes weight off an injured leg,,advocate
 🩺,stethoscope,ezode,diagnosis,stethoscope listens to the body; diagnosis is finding what is wrong,,
@@ -993,7 +993,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 🕉️,om,omaha,spirituality,om symbol marks sacred sound; spirituality is inner sacred life,,spirit; soul
 ✡️,star-of-david,avaho,,,,
 ☸️,dharma-wheel,adewe,,,,
-☯️,yin-yang,uye,balance,yin yang holds opposing halves; balance is equal halves,,proportion
+☯️,yin-yang,eyeya,balance,yin yang holds opposing halves; balance is equal halves,,proportion
 ✝️,crucifix,uguve,,,,
 ☦️,orthodox-cross,orava,,,,
 ☪️,star-crescent,ozada,,,,
@@ -1014,7 +1014,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 ♓,pisces,obaze,empathy,pisces flows with others feelings; empathy is feeling with another,,
 ⛎,ophiuchus,ovega,,,,
 🔀,shuffle,aheve,randomness,shuffle mixes order unpredictably; randomness is without fixed order,,random
-🔁,repeat,edu,repetition,repeat plays the same again; repetition is doing again,m.h:again,
+🔁,repeat,erobe,repetition,repeat plays the same again; repetition is doing again,m.h:again,
 🔂,repeat-one,erebe,,,,
 ▶️,play-button,abedo,commencement,play button begins the action; start is setting in motion,,
 ⏩,fast-forward,avazo,speed,fast-forward plays things faster; speed is how fast,m.h:quickly,quick; rapidly; rapid; fast; prompt

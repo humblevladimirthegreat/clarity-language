@@ -708,7 +708,7 @@ The ranked item can be a whole kind. Write the [universal fence](joins.md#univer
 
 To rank one kind against another, keep one kind as the item and put the other in the PATTERN bar's `/b/`.
 
-> `zuam gaxenaham thobam bebezalx gadadam zel hamedam vawol.`
+> `zuam gaxenaham thobam bobelx gadadam zel hamedam vozewel.`
 >
 > [[z-everything.open | g-agent-x-rest] | [th-PATTERN | [b-person-x | g-burnout]] | z-rank/more | h-achievement] | v-sweat
 >

@@ -250,7 +250,7 @@ Tokens here are **stems for matching** (path allowlist / leak checks). Learner *
 | `eve` | *because* (**-m** on `/th/` `/ɡ/`) |
 | `olu` | *only if* (**-m** on `/th/` `/ɡ/`) |
 
-A teach line may add roots that already appear in that stage’s worked examples (e.g. `alu` *apple*, `edehe` *tea*, `agave` *coffee`, `omonu` *challenging*, `onunu` **SAME**). Checkpoint tables list **setting** roots instead, even when a teach line used *walk*.
+A teach line may add roots that already appear in that stage’s worked examples (e.g. `abovu` *apple*, `edehe` *tea*, `agave` *coffee`, `omonu` *challenging*, `onunu` **SAME**). Checkpoint tables list **setting** roots instead, even when a teach line used *walk*.
 
 ## Allowlist
 <a id="allowlist"></a>
@@ -287,7 +287,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 16 | `intention.md` | **exists** | PLAN and host ability contrasts: **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (sake roots). Not role compounds (vowel *left* of `x`). Not conversation length (named citation or `/y/`) |
 | 16 | `knowing.md` | **exists** | **MAY** **`ovu`** + 2a holds (**`thovum`** default; **-l** find out; **-r** who knows) | Not evidentiality / NOTIONAL (Intermediate). Not **`yom`** (core Intermediate) unless you only recycle **`yol`** from core/questions Beginner |
 | 16 | `roles.md` | **exists** | Role compounds **`a`/`e`/`u`/`o` x ROOT`** (agent / place / patient / recipient; **`o`** = reltum on a relation); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
-| 16 | `x-compounds.md` | **exists** | Productive **`x`** vs two words vs dictionary compound; look up listed stems (`ebedalahaza` / `analebeza`); do not coin them. Live **`x`** from parts (not a pre-joined bank row) | Not parser-family inventory as drills; not coining new dictionary compounds. Greeting bid is Intermediate |
+| 16 | `x-compounds.md` | **exists** | Productive **`x`** vs two words vs dictionary compound; look up listed stems (`ebedalahaza` / `analobe`); do not coin them. Live **`x`** from parts (not a pre-joined bank row) | Not parser-family inventory as drills; not coining new dictionary compounds. Greeting bid is Intermediate |
 | 16 | `intention.md` | **exists** | **PLAN** **`ama`** map-resolution endings | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling MAY / values unused unless the page contrast needs them |
 
 ### Intermediate then Advanced

@@ -51,7 +51,7 @@ const ROWS: Row[] = [
   { invalid: "xodum.", rejection: undefined, valid: "xazawan." },
   { invalid: "xodumx zazawan vowogal.", rejection: "pluralOnPos", valid: "xazawanx zazawan vowogal." },
   { invalid: "zozan vowogal.", rejection: "topicUnbound", valid: "xazawan zozan vowogal." },
-  { invalid: "xazawan zebezanx vowogal.", rejection: "genericPlural", valid: "xazawan zebezan vowogal." },
+  { invalid: "xazawan zobenx vowogal.", rejection: "genericPlural", valid: "xazawan zoben vowogal." },
   { invalid: "zazawan vowogal xul.", rejection: "clauseSingleItem", valid: "zazawan vowogal vul." },
   { invalid: "zazawan vowogal xam zalahen varahal xam.", rejection: "clauseSingleItem", valid: "zazawan vowogal xam zalahen varahal." },
   { invalid: "zazawan wowogalx vowogal.", rejection: "pluralOnPos", valid: "zazawanx vowogal." },

@@ -585,7 +585,7 @@ Single-item **-m** under question (*How about X?*).
 
 ### Generic pronoun
 
-**`ebezan`**: any person, as a rule. English *one*, generic *you*.
+**`oben`**: any person, as a rule. English *one*, generic *you*.
 
 [Pronouns](pronouns.md#generic-pronoun)
 

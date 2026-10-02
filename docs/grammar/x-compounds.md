@@ -52,7 +52,7 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 |--------|-----|---------|-----|
 | `zebedalahazal` | bed **-l** house | bedroom | left piece everyday |
 | `zoyelebehul` | door **-l** bell | doorbell | left piece everyday |
-| `zanalebezal` | bond **-l** person | friend | left piece everyday |
+| `zanalobel` | bond **-l** person | friend | left piece everyday |
 | `zerehelogodul` | rain **-l** coat | raincoat | left piece everyday |
 | `…m…` | left root in its [abstract](word-endings.md#abstract-m) sense | same two roots, join **-m** | **m** ≈ meaning |
 
@@ -91,7 +91,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *doorbell* | `zoyelebehul` | |
 | *raincoat* | `zerehelogodul` | |
 | *greenhouse* | `zavavulahazal` | |
-| *friend* | `zanalebezal` | |
+| *friend* | `zanalobel` | |
 | *hammer* | `ahavol` | |
 | *wrench* | `erevul` | |
 | *axe* | `agezul` | |
@@ -161,14 +161,14 @@ z-Azawan-x-Alahen
 **8.** *Alahen punches a friend.*
 
 ::: details Show answer
-`zalahen zanalebezal vabahel.`
+`zalahen zanalobel vabahel.`
 
 z-Alahen | z-friend | v-punch
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zanalebezal.`
+**1.** `zanalobel.`
 
 ::: details Show answer
 
@@ -213,7 +213,7 @@ z-Ahaben | d-raincoat | v-see
 *Ahaben sees a raincoat.*
 :::
 
-**6.** `zanalebezal dahavol vahahal.`
+**6.** `zanalobel dahavol vahahal.`
 
 ::: details Show answer
 
@@ -231,7 +231,7 @@ z-Alahen | d-axe | v-see
 *Alahen sees an axe.*
 :::
 
-**8.** `zazawan zanalebezal vabahel.`
+**8.** `zazawan zanalobel vabahel.`
 
 ::: details Show answer
 

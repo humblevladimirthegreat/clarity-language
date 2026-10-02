@@ -157,21 +157,21 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 | **`ehodon`** | listener in this conversation (`zehodon` / `dehodon` in clause) | *you* | `ehodol` *headphones* | 🎧: the one receiving the sound |
 | **`ahan`** | speaker and addressees together (`zahan` in subject slot) | *we* (you and I) | `ahal` *handshake* | 🤝: sharing the floor together |
 | **`unan`** | nonspecific individual (`zunan` in subject slot) | *someone* | `unal` *neutral* | 😐: not a particular person |
-| **`ebezan`** | any person, as a rule (`zebezan` in subject slot) | *one*, generic *you*, *people* | `ebezal` *person* | 🧑: a person in general |
+| **`oben`** | any person, as a rule (`zoben` in subject slot) | *one*, generic *you*, *people* | `obel` *person* | 🧑: a person in general |
 
 **Compare with:** *I and my people* / *you all* / *Azawan and associates* use **-x** ([clusivity](plurality.md#clusivity)). Inclusive *you and I* on this page is **`aha`**. *Here* / *there* and *this* / *that* use these same words as a landmark after a place hook ([deixis](hooks.md#deixis)).
 
 ### Generic pronoun {#generic-pronoun}
 
-English *one* and generic *you* (*one never knows*, *you feel awful when that happens*) say something about people in general, not about the person listening. Agazan gives that its own pronoun: **`ebeza`** *person* with **-n**, in `/z/`, `/d/`, or `/b/`. It means any person, as a rule, with exceptions allowed. It claims nothing about a particular individual (that is **`una`**) and nothing about the listener (that is **`ehodo`**), so a speaker has to choose between reporting their own experience and making a general claim. (cue: 🧑 is the emoji for a person in general)
+English *one* and generic *you* (*one never knows*, *you feel awful when that happens*) say something about people in general, not about the person listening. Agazan gives that its own pronoun: **`obe`** *person* with **-n**, in `/z/`, `/d/`, or `/b/`. It means any person, as a rule, with exceptions allowed. It claims nothing about a particular individual (that is **`una`**) and nothing about the listener (that is **`ehodo`**), so a speaker has to choose between reporting their own experience and making a general claim. (cue: 🧑 is the emoji for a person in general)
 
-> `zebezan vezebal.`
+> `zoben vezebal.`
 >
 > z-ONE | v-sleep
 >
 > "One sleeps." / "You sleep."
 
-The generic pronoun takes no number and no **-x**, because it already means people at large. **`ebezal`** *a person* and **`ebezam`** *humanity* keep their own senses. English *they say* is [hearsay](knowing.md#evidentiality), not a generic *they*. Next to the every-kind joins it is the pronoun-sized *people in general* ([joins](joins.md#generic-neighbors)).
+The generic pronoun takes no number and no **-x**, because it already means people at large. **`obel`** *a person* and **`obem`** *humanity* keep their own senses. English *they say* is [hearsay](knowing.md#evidentiality), not a generic *they*. Next to the every-kind joins it is the pronoun-sized *people in general* ([joins](joins.md#generic-neighbors)).
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -197,7 +197,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *listener* | `ehodon` | `ehodol` *headphones* | 🎧: the one receiving the sound |
 | *interlocutors* | `ahan` | `ahal` *handshake* | 🤝: sharing the floor together |
 | *someone* | `unan` | `unal` *neutral* | 😐: not a particular person |
-| *one* | `ebezan` | `ebezal` *person* | 🧑: a person in general |
+| *one* | `oben` | `obel` *person* | 🧑: a person in general |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
@@ -284,7 +284,7 @@ z-Ahaben | v-see | d-←agent.self
 **11.** *One sees Azawan.*
 
 ::: details Show answer
-`zebezan dazawan vahahal.`
+`zoben dazawan vahahal.`
 
 z-ONE | d-Azawan | v-see
 :::
@@ -372,7 +372,7 @@ z-Ahaben | v-cook . z-Alahen | v-pour . z-←agent.other | v-scream
 *Ahaben cooks. Alahen pours. The other one (Ahaben) screams.*
 :::
 
-**10.** `zebezan vezugel.`
+**10.** `zoben vezugel.`
 
 ::: details Show answer
 
@@ -505,7 +505,7 @@ Because the count is shared, an ordinal means the same person whoever says it. A
 >
 > "Azawan." "Alahen." "Alahen sees Azawan." (from Alahen: *I see you*; from Azawan: *you see me*)
 
-**Compare with:** **`amago`** / **`ehodo`** follow the conversation role, so *I* and *you* swap people when the speaker changes. Use them when the role is the point: a name you do not know yet, a reader you have never met, or a whole group you address. Generic *you* is [`ebezan`](#generic-pronoun), not `ehodo`.
+**Compare with:** **`amago`** / **`ehodo`** follow the conversation role, so *I* and *you* swap people when the speaker changes. Use them when the role is the point: a name you do not know yet, a reader you have never met, or a whole group you address. Generic *you* is [`oben`](#generic-pronoun), not `ehodo`.
 
 Add **-x** for that person and associates, as on any name: `zreworx`.
 

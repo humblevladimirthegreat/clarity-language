@@ -22,7 +22,7 @@ const CANDIDATE_LIMIT = 400;
 const ECHO_W = 100;
 
 /** Rows the dry run forces onto a three-letter root (emoji → position slot). */
-const MARKED: Record<string, string> = { "🤝": "pronoun", "😐": "pronoun", "🎤": "pronoun", "🎧": "pronoun" };
+const MARKED: Record<string, string> = { "🤝": "pronoun", "😐": "pronoun", "🎤": "pronoun", "🎧": "pronoun", "⭐": "pronoun", "🧑": "pronoun" };
 /** Rows kept on a five-letter root on purpose (discouraged forms), even if overlay-backed or marked. */
 const FORCE_LONG = new Set(["🎤", "🎧"]);
 /** Lower number is placed earlier. Glasses outranks every frequency rank. */

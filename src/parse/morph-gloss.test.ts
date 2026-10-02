@@ -494,7 +494,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("quasi numeric derivation is English", () => {
-    expectLine("zahaben ganalebezalrubul", "z-Ahaben | g-friend-l-quasi");
+    expectLine("zahaben ganalobelrubul", "z-Ahaben | g-friend-l-quasi");
   });
 
   it("abstract numeric join is -m in the gloss", () => {
@@ -592,13 +592,13 @@ describe("morphGlossLine — topic and generic pronouns", () => {
     expectLine("xazawar zozan vehahel.", "x-←Azawan | z-TOPIC | v-sit");
   });
   it("glosses the generic pronoun, and either one as a holder", () => {
-    expectLine("zebezan vezebal.", "z-ONE | v-sleep");
+    expectLine("zoben vezebal.", "z-ONE | v-sleep");
     expectLine("xazawan thunemozan zalahen vedabal.", "x-Azawan | th-INFERRED-TOPIC | z-Alahen | v-departure");
-    expectLine("thunemebezan zalahen vedabal.", "th-INFERRED-ONE | z-Alahen | v-departure");
+    expectLine("thunemoben zalahen vedabal.", "th-INFERRED-ONE | z-Alahen | v-departure");
   });
   it("keeps the star and person roots ordinary on other endings", () => {
     expectLine("zozal vowogal.", "z-star | v-walk");
-    expectLine("zebezal vowogal.", "z-person | v-walk");
+    expectLine("zobel vowogal.", "z-person | v-walk");
   });
   it("glosses a topic word with its own hooks, and the clearing linkers", () => {
     expectLine("xodogal em bazawan zalahen vahahal.", "x-dog | [used-by | b-Azawan] | z-Alahen | v-see");

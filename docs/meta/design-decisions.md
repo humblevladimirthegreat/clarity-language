@@ -27,7 +27,7 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 | D-18 | *he* / *she* / *it* (a short pronoun split by gender or animacy) | no category pronouns: a single *it* would give up mechanical matching, and a gender split conflicts with the project's aims. Short reference is a [role pointer](../grammar/pronouns.md#role-pointers) (by the part played in a recent event); anything else is whole-stem **-r**. Pointers are third person only (D-13) | by design | pronouns.md | — | — |
 | D-19 | role pointer lookup limits | settled readings: lookup is unbounded (no stop at a turn or paragraph) and every speaker's clauses count; *the other one* (`o`) takes only the doer, undergoer, and extra party, because the other roles are often implicit and could not be compared; the scene's overt filler is the first place hook's `/b/`, else *during*'s (*before* / *after* / *until* / *by* and *as-of* are reference points, not the scene); a joined slot, rank joins included, is one group filler; event nouns are not anchors | by design | pronouns.md, roles.md | — | — |
 | D-20 | a topic inferred from salience, first mention, or being the subject; a topic stack | the [topic](../grammar/pronouns.md#topic) is set only by an overt `/x/` word, so every tool computes the same topic at every point, and every return is spelled out (`xazawar`). Topic words never sit in a dependent, after a clause join, or in an aside; a quote keeps its own topic and count; **-x** is allowed on `/x/` topic nouns; the topic never takes an ordinal | by design | pronouns.md | — | — |
-| D-21 | generic *they* (*they say*) | none: English *they say* is [hearsay](../grammar/knowing.md#evidentiality). Generic *one* / *you* is [`ebezan`](../grammar/pronouns.md#generic-pronoun), which takes no ordinal and no **-x** | by design | pronouns.md, knowing.md | — | — |
+| D-21 | generic *they* (*they say*) | none: English *they say* is [hearsay](../grammar/knowing.md#evidentiality). Generic *one* / *you* is [`oben`](../grammar/pronouns.md#generic-pronoun), which takes no ordinal and no **-x** | by design | pronouns.md, knowing.md | — | — |
 
 ## Bare evaluatives
 
@@ -79,7 +79,7 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 - Stances that set no value are not bars: clause poles, MAY, MIRATIVE, DECISION, ATTEMPT, WANT, RESIDUE, CAUSE, and the deontic noes (FORBID, refused consent). The parser rejects them (`barKind`), and a second comparee next to a bar, noun or bar (`barCount`).
 - A bar sits right before the join word, after the one ranked item (and after that item's own hook + `/b/`, as before a join word). A stance word after the fence is the claim's stance. With a bar and no ranked item, the stance word stays outside the fence.
 - A holder seam on a bar names whose expectation it is; inside the fence the seam covers only the bar, not the ranking.
-- A closed `ua` fence (`zual` / `zuam` / `zuan` + kind) right before a bar is the one ranked item, nested by right-close: `zuam gaxadadal thobam zel hral` *tired people err more often than usual*. Kind against kind is not two fenced items (a second `…uan` after items is a named bundle); the other kind goes in the PATTERN bar's `/b/` (`thobam bebezalx gadadam`). Other fences (`zul` + kind) do not rank this way. An adjective after a bar's `/b/` describes that noun, as after any host.
+- A closed `ua` fence (`zual` / `zuam` / `zuan` + kind) right before a bar is the one ranked item, nested by right-close: `zuam gaxadadal thobam zel hral` *tired people err more often than usual*. Kind against kind is not two fenced items (a second `…uan` after items is a named bundle); the other kind goes in the PATTERN bar's `/b/` (`thobam bobelx gadadam`). Other fences (`zul` + kind) do not rank this way. An adjective after a bar's `/b/` describes that noun, as after any host.
 - A bar's `barl` ends its sentence at the fence: noun parts after the scale start the grounds sentence.
 
 ## Contrary to a stance (`uem` + `/th/`)
@@ -139,7 +139,7 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 
 ## General claims
 
-- **No universality moods.** COMMON, UNCOUNTERED, FORMAL, NATURAL, and RULE (`aga` / `eyu` / `oza` / `alu` / `ube` on `/th/`) duplicated two things the language already says. How far a claim reaches and whether it allows exceptions is the universal fence or restrictor: closed **-l** none, open **-m** leaves them open (`huam` *usually*, `ham` *never, as far as I know*, `zuam` + kind *K in general*). What the claim rests on is a channel ([knowing](../grammar/knowing.md#universality)), which already has strength endings, holders, `barl` grounds, bars, and `uem` frames.
+- **No universality moods.** COMMON, UNCOUNTERED, FORMAL, NATURAL, and RULE (`ogade` / `ebeza` / `oza` / `abovu` / `obebe` on `/th/`) duplicated two things the language already says. How far a claim reaches and whether it allows exceptions is the universal fence or restrictor: closed **-l** none, open **-m** leaves them open (`huam` *usually*, `ham` *never, as far as I know*, `zuam` + kind *K in general*). What the claim rests on is a channel ([knowing](../grammar/knowing.md#universality)), which already has strength endings, holders, `barl` grounds, bars, and `uem` frames.
 
 | Old | Say instead |
 |-----|-------------|
@@ -190,7 +190,7 @@ Closed words (joins, hooks, join-act verbs, emotion loci) stack two of the serie
 
 ## Genitive and other free hook slots
 
-- Extra-noun **`em`** is the use / access genitive (*B's* = in B's use; says nothing about title). It replaced *with … in mind*, which `el` *for* and `holalam` + `/b/` already covered. It is not a catch-all: ownership is `gegabem`, people take a tie (care = `gahabom`), parts / material / origin are of-relations, feelings are emotion compose, made things are role compounds. People are never `em` or `gegabem`; feelings and traits are never `em` or `gobom`. Fused `em` = *have in use*.
+- Extra-noun **`em`** is the use / access genitive (*B's* = in B's use; says nothing about title). It replaced *with … in mind*, which `el` *for* and `halegolam` + `/b/` already covered. It is not a catch-all: ownership is `gegabem`, people take a tie (care = `gahabom`), parts / material / origin are of-relations, feelings are emotion compose, made things are role compounds. People are never `em` or `gegabem`; feelings and traits are never `em` or `gobom`. Fused `em` = *have in use*.
 - No `el` / `em` / `er` possession series by time horizon (`rejected/el-em-er-possession.md`).
 - Discourse **`aol …`** / **`aom …`** = *For example* (an instance of the prior claim; `al …` is a sibling point).
 - Considered and left unassigned: stacked point-back **-r** (`aor` *on it*; a hook + resumed `/b/` already says it), same-role `aol` *namely* (`el` or an aside covers it), discourse *Alternatively* (a sentence-initial `xom` / `xaom` join) and *Apart from that* (`al …` / `ur …`). Same-role `ao` / `uo` / `ae` and discourse `oe` / `ua` / `uo` / `ue` have no pressing job.

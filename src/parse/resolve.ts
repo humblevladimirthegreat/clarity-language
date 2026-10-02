@@ -206,7 +206,7 @@ export function isTopicPronoun(word: LexWord): boolean {
   return pronounRoot(word) === CLOSED.star;
 }
 
-/** The generic pronoun: the person root + **-n** on `/z/` `/d/` `/b/`, or as a holder (`zebezan`, pronouns.md#generic-pronoun). */
+/** The generic pronoun: the person root + **-n** on `/z/` `/d/` `/b/`, or as a holder (`zoben`, pronouns.md#generic-pronoun). */
 export function isGenericPronoun(word: LexWord): boolean {
   return pronounRoot(word) === CLOSED.person;
 }

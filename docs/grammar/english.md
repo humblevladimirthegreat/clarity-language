@@ -140,8 +140,8 @@ One English word, one row: the form that says it and the section that teaches it
 
 | English itch | Agazan job | Teach |
 |--------------|------------|-------|
-| *something* / *someone* / *thing* / *stuff* (unnamed) | **`zar`**; with a kind, `zebezal zar` | [Unspecified member](joins.md#unspecified-member-r-phrase) |
-| *anything* / *anyone* / *anybody* | **`zor`**; with a kind, `zebezal zor` | [Unspecified member](joins.md#unspecified-member-r-phrase) |
+| *something* / *someone* / *thing* / *stuff* (unnamed) | **`zar`**; with a kind, `zobel zar` | [Unspecified member](joins.md#unspecified-member-r-phrase) |
+| *anything* / *anyone* / *anybody* | **`zor`**; with a kind, `zobel zor` | [Unspecified member](joins.md#unspecified-member-r-phrase) |
 | *somehow* / *in some way* | **`humum bor`** (*like* some unspecified one) | [Simile](relations.md#similative), [unspecified member](joins.md#unspecified-member-r-phrase) |
 
 ### Adjectives made from a noun (*golden*, *royal*, *solar*) {#noun-adjectives}
@@ -162,7 +162,7 @@ English often makes an adjective from a noun by adding an ending (*gold* → *go
 | *agricultural* | `gavavom` (*cultivation*) | [Adjectives](clause.md#adjectives-ɡ) |
 | *experimental* | `gudum` (*experiment*) | [Adjectives](clause.md#adjectives-ɡ) |
 | *structural* | `gobom` (a piece of the structure; add the whole in `/b/`) | [Of relations](relations.md#of-relations) |
-| *native* (*native to the country*) | `gagum` + `/b/` for the place: `zebezal gagum bagul` | [Of relations](relations.md#of-relations) |
+| *native* (*native to the country*) | `gagum` + `/b/` for the place: `zobel gagum bagul` | [Of relations](relations.md#of-relations) |
 
 > `zazawan dahazal gogodal vahahal.`
 >
@@ -178,7 +178,7 @@ English often makes an adjective from a noun by adding an ending (*gold* → *go
 | *back to Azawan*, *as I was saying about Azawan* | `/x/` + whole stem + **-r**: **`xazawar`** | [Return](pronouns.md#topic-return) |
 | *anyway, Azawan …* (after a side topic) | **`or xazawar …`** | [Return](pronouns.md#topic-return), [resume hooks](hooks.md#hook-resume) |
 | *what are we talking about?* | **`yol zar gahehom.`** | [Asking about the topic](pronouns.md#topic-question) |
-| *one*, generic *you*, *people* (in general) | **`ebezan`** | [Generic pronoun](pronouns.md#generic-pronoun) |
+| *one*, generic *you*, *people* (in general) | **`oben`** | [Generic pronoun](pronouns.md#generic-pronoun) |
 
 ### Greetings {#greetings}
 

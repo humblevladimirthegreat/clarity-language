@@ -1150,7 +1150,7 @@ The holder word ends the way a noun for that person would. **-n** is a name. **-
 >
 > "I gather Azawan and co. think Alahen left."
 
-> `zalahen thunemebezalx vedabal.`
+> `zalahen thunemobelx vedabal.`
 >
 > z-Alahen | th-INFERRED-person-x | v-departure
 >
@@ -1164,7 +1164,7 @@ The holder may be the [topic pronoun](pronouns.md#topic-pronoun), whoever the ta
 >
 > "Now, about Azawan: I gather Azawan thinks Alahen left."
 
-> `thunemebezan zalahen vedabal.`
+> `thunemoben zalahen vedabal.`
 >
 > th-INFERRED-ONE | z-Alahen | v-departure
 >
@@ -1279,7 +1279,7 @@ The fence says how far the claim reaches, and the channel says what it rests on.
 | *usually*, *as a rule* | `huam` / `zuam` | any, or none | `zazawan huam vowogal.` |
 | *always, as far as I have checked* | `hual` / `zual` | a weak channel | `zazawan hual vowogal thobar.` |
 | *it follows that every …* | `zual` | INFERRED.strong `thunel` | `zual gaxedehol vedehol thunel.` |
-| *by definition* | `zual` + `thedam barl` | none | `zual gebezal gaxedehol thedam barl zebezar vedehol.` |
+| *by definition* | `zual` + `thedam barl` | none | `zual gobel gaxedehol thedam barl zober vedehol.` |
 | *under the rules of …* | `hal` / `hual` | RECORDED with the rules in `/b/` | `zalahen hal vabahel therel bazagul.` |
 | *cats are sleepy* (in general) | `zuam` + kind | any, or none | `zuam gagadul gezebul thobam.` |
 
@@ -1293,7 +1293,7 @@ A [cause or condition](causation.md) on a general claim says how things work. It
 
 A **definition** works both ways: whatever has the property is that kind, and every member of the kind has it. Write it on a closed fence with **`thedam`** (*if and only if*, from [causation](causation.md#only-because)). The grounds sentence is the defining property. A definition needs no channel, because it is a decision about a word, not a report about the world.
 
-> `zual gebezal gaxedehol thedam barl zebezar vedehol.`
+> `zual gobel gaxedehol thedam barl zober vedehol.`
 >
 > [z-everything | g-person] | g-agent-x-teach | [th-iff | b-that-clause] | z-←person | v-teach
 >

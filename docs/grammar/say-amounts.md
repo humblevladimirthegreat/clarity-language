@@ -94,7 +94,7 @@ For *two meters taller*, see [measured differentials](#measured-differentials). 
 |--------|-----|---------|
 | `zagadulx g+25%` | percent grades the modified noun | *25% of the cats* |
 | `dudulx g+95%` | same, object slot | *95% of the tests* |
-| `bebezalx g+5%` under a host relation | same, `/b/` | *5% of the people* |
+| `bobelx g+5%` under a host relation | same, `/b/` | *5% of the people* |
 
 For a count out of a group already named (*three of them*), resume the group and give the count.
 
@@ -238,8 +238,8 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 | *gradually* / *slowly* | `hezehom` |
 | *widely* / *broadly* | `horodam` |
 | *deeply* | `hebegem` |
-| *easily* (*with less effort than usual*) | `thobam zuel hawom` before the verb |
-| *hard to* / *easy to* + a verb (*hard to ignore*) | the doer, then `thobam zel hawom` / `thobam zuel hawom`, and the verb with *can* (`-xal`) |
+| *easily* (*with less effort than usual*) | `thobam zuel hozewem` before the verb |
+| *hard to* / *easy to* + a verb (*hard to ignore*) | the doer, then `thobam zel hozewem` / `thobam zuel hozewem`, and the verb with *can* (`-xal`) |
 
 > `zazawan heyayem vowogal.`
 >
@@ -247,11 +247,11 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 >
 > "Azawan walks carefully."
 
-The easy / hard pair on a quality ranks effort against a bar ([vague amounts](comparatives.md#vague-amounts)): `zubugal thobam zuel gawom` is *the book is easy* (less effort than usual), and `zel` in place of `zuel` is *hard*.
+The easy / hard pair on a quality ranks effort against a bar ([vague amounts](comparatives.md#vague-amounts)): `zubugal thobam zuel gozewem` is *the book is easy* (less effort than usual), and `zel` in place of `zuel` is *hard*.
 
-*Hard to* + a verb puts the same effort scale on whoever would do it: they can, but only with more effort than usual. Write the doer as the ranked item, the bar, the rank word and **`hawom`**, then the verb with [*can*](intention.md#can) **`xa`**.
+*Hard to* + a verb puts the same effort scale on whoever would do it: they can, but only with more effort than usual. Write the doer as the ranked item, the bar, the rank word and **`hozewem`**, then the verb with [*can*](intention.md#can) **`xa`**.
 
-> `zazawan thobam zel hawom dubugal varadaxal.`
+> `zazawan thobam zel hozewem dubugal varadaxal.`
 >
 > [z-Azawan | th-PATTERN | z-rank/more | h-effort] | d-book | v-write-able
 >
@@ -329,7 +329,7 @@ English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an 
 | *expensive* / *costly* / *pricey* | `thobam zel gadahum` (costs more than usual) |
 | *cheap* / *inexpensive* | `thobam zuel gadahum` |
 | *weak* / *feeble* / *frail* | `thobam zuel gabezem` (less strength than usual) |
-| *busy* / *hard-working* | `thobam zel gawom` (more effort than usual) |
+| *busy* / *hard-working* | `thobam zel gozewem` (more effort than usual) |
 | *far* / *distant* / *remote* | `thobam zel gazedam` (farther than usual) |
 | *wide* / *broad* | `thobam zel gorodam` |
 | *narrow* | `thobam zuel gorodam` |
@@ -399,7 +399,7 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 | English | Agazan | Reading |
 |---------|--------|---------|
 | *group* / *bunch* | `zodogalx` | some dogs, as a set here |
-| *crowd* | `zebezalx thobam zel gral` | people, more than usual |
+| *crowd* | `zobelx thobam zel gral` | people, more than usual |
 | *pair* (two of a kind) | `zodogalx g+2` | two dogs |
 | *couple* (two people who are together) | `zagabal` | the everyday sense of `agaba` |
 | *titled group* (the group named Ahodon) | `zahodonx` | named, **-nx** |
@@ -416,7 +416,7 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 >
 > "A group of dogs walks."
 
-> `zebezalx thobam zel gral.`
+> `zobelx thobam zel gral.`
 >
 > [z-person-x | th-PATTERN | z-rank/more | g-amount]
 >

@@ -181,7 +181,7 @@ You can name a list without saying which member you mean (*someone* / *something
 >
 > "something" / "someone."
 
-> `zebezal zar.`
+> `zobel zar.`
 >
 > [z-person | z-something]
 >
@@ -765,20 +765,20 @@ To choose, ask whether one member could have the property. If none could, the cl
 
 A [cause or condition](causation.md) on a `zuan` clause is about the kind, not each member: why the kind is the way it is.
 
-#### People in general (`ebezan`) {#generic-neighbors}
+#### People in general (`oben`) {#generic-neighbors}
 
-English *one*, generic *you*, and *people* sit between the closed and open every-kind joins and the pronouns. The [generic pronoun](pronouns.md#generic-pronoun) `ebezan` is the pronoun-sized form of the open every-kind `zuam gebezal`: a default that tolerates exceptions, not a universal.
+English *one*, generic *you*, and *people* sit between the closed and open every-kind joins and the pronouns. The [generic pronoun](pronouns.md#generic-pronoun) `oben` is the pronoun-sized form of the open every-kind `zuam gobel`: a default that tolerates exceptions, not a universal.
 
 | Form | Picks | English |
 |------|-------|---------|
 | `ehodon` | the person actually listening | *you* |
 | `unan` | one unidentified individual who exists | *someone* |
-| `ebezan` | nobody in particular; true of people as a rule, with exceptions | *one*, generic *you* |
-| `zuam gebezal` | people in general, as far as I know | *people in general* |
-| `zual gebezal` | every person, no exceptions | *everyone* |
-| `zuan gebezal` | humankind as a kind | *people* (the species) |
+| `oben` | nobody in particular; true of people as a rule, with exceptions | *one*, generic *you* |
+| `zuam gobel` | people in general, as far as I know | *people in general* |
+| `zual gobel` | every person, no exceptions | *everyone* |
+| `zuan gobel` | humankind as a kind | *people* (the species) |
 
-For *everyone, no exceptions*, use `zual gebezal`. As a topic, `xebezan` (*now, about people in general*) makes the [topic pronoun](pronouns.md#topic-pronoun) mean *one*.
+For *everyone, no exceptions*, use `zual gobel`. As a topic, `xoben` (*now, about people in general*) makes the [topic pronoun](pronouns.md#topic-pronoun) mean *one*.
 
 ### SHARED after the join
 <a id="scope-fence-p-join"></a>
@@ -1239,7 +1239,7 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 | **…ar** / **…or** / **…er** / **…ur** | unspecified member at every arity | [unspecified **-r**](#unspecified-member-r-phrase) |
 | **…aen** / **…en** / **…an** standalone | stock empty rank / named empty | *it's a draw*; *no favorite* (stock); *null* / *void* |
 | **…ual** / **…uol** standalone | empty invert | *everything*; *anything (goes)* |
-| `zebezal` vs `zebezal zar` | content **-l** vs join **-r** | *a person* vs *some person, unknown who* |
+| `zobel` vs `zobel zar` | content **-l** vs join **-r** | *a person* vs *some person, unknown who* |
 | `A B C zor` vs `… zer` | menu vs rank unspecified | any of them is fine vs pick by ranking |
 | `A B zar` / `zur` / `zual` | among / leftover / invert | some one among; some one other than; *everything but* |
 | `A B zel` vs `A B zoel` | rank vs [sequence](#sequence-oe) | A matters more than B vs A, then B |

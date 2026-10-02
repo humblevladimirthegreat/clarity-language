@@ -209,7 +209,7 @@ English names a person by what they do (*a singer*, *a manager*). Agazan builds 
 | `zaxabohal` | *analyst* | `abohal` *bar-chart* |
 | `zaxageval` | *designer* | `ageval` *craft* |
 | `zaxagozal` | *engineer* | `agozal` *construct* |
-| `zaxeyul` | *doctor* | `eyul` *pill* |
+| `zaxebezal` | *doctor* | `ebezal` *pill* |
 | `zaxezehel` | *singer* | `ezehel` *sing* |
 | `zaxumuyul` | *musician* | `umuyul` *sheet-music* |
 | `zaxavol` | *actor* | `avol` *theater* |
@@ -220,7 +220,7 @@ English names a person by what they do (*a singer*, *a manager*). Agazan builds 
 | `zaxagaval` | *supporter* / *sponsor* | `agaval` *crutch* |
 | `zaxalaval` | *lover* | `alaval` *love* |
 | `zaxebedel` | *servant* / *server* / *assistant* | `ebedel` *plate* |
-| `zaxawol` | *worker* | `awol` *sweat* |
+| `zaxozewel` | *worker* | `ozewel` *sweat* |
 | `zaxehel` | *dealer* | `ehel` *currency-exchange* |
 | `zaxemagel` | *immigrant* | `emagel` *immigration* |
 | `zaxewal` | *audience* (those who hear) | `ewal` *ear* |
@@ -235,14 +235,14 @@ English names a person by what they do (*a singer*, *a manager*). Agazan builds 
 | `zaxozel` | *historian* | `ozel` *scroll* |
 | `zaxagegam` | *consumer* | `agegam` *consumption* |
 | `zaxabazul` | *passenger* / *rider* (of a bus) | `abazul` *bus* |
-| `zaxawolx` | *staff* / *personnel* (workers as a set) | `awol` *sweat* |
+| `zaxozewelx` | *staff* / *personnel* (workers as a set) | `ozewel` *sweat* |
 | `zuxahul` | *candidate* (the one voted for) | `ahul` *ballot* |
 | `zoxehel` | *customer* / *purchaser* (the other party of a trade) | `ehel` *currency-exchange* |
 | `zoxebebum` | *host* (the other party of a hospitality tie) | `ebebum` *hospitality* |
 
 The one acted on uses **`u`** instead: `zuxenehel` is *a victim* (the one harmed). A plural audience or staff takes plural **-x** (`zaxewalx`).
 
-*Shareholder* is *owner* of a part: `zaxegabem gobom bahazal` (owner of a part of the house). *Colleague* is a worker tied to you: `zaxawol gohoham bamagon`. *Relative* is a person who is part of the family: `zebezal gobom bavahal`.
+*Shareholder* is *owner* of a part: `zaxegabem gobom bahazal` (owner of a part of the house). *Colleague* is a worker tied to you: `zaxozewel gohoham bamagon`. *Relative* is a person who is part of the family: `zobel gobom bavahal`.
 
 **Compare with:** for *boss* or *chief*, the tie form names whom they lead: `zalahen gagayem bazawan` is *Alahen is Azawan's boss* ([social relations](relations.md#social-relations)).
 
@@ -250,9 +250,9 @@ The one acted on uses **`u`** instead: `zuxenehel` is *a victim* (the one harmed
 
 **Needs:** [Kin](numbers-applied.md#kin-generations) · [Adjectives `/ɡ/`](clause.md#adjectives-ɡ)
 
-English *brother*, *sister*, *aunt*, *grandmother* name one layer of the family tree and a sex. Agazan says the layer with the kin number and the sex with **`gemehel`** *male* or **`geveval`** *female*, after `zebezal` *person*. Put the person the tie is from in `/b/` right after the number.
+English *brother*, *sister*, *aunt*, *grandmother* name one layer of the family tree and a sex. Agazan says the layer with the kin number and the sex with **`gemehel`** *male* or **`geveval`** *female*, after `zobel` *person*. Put the person the tie is from in `/b/` right after the number.
 
-> `zebezal geveval grebazol bazawan.`
+> `zobel geveval grebazol bazawan.`
 >
 > [z-person | g-female | [g-#-e0 | b-Azawan]]
 >
@@ -260,10 +260,10 @@ English *brother*, *sister*, *aunt*, *grandmother* name one layer of the family 
 
 | English | Agazan |
 |---------|--------|
-| *brother* | `zebezal gemehel grebazol bazawan` |
-| *sister* | `zebezal geveval grebazol bazawan` |
-| *aunt* (a sister of a parent) | `zebezal geveval grebazol bebezal grebuwol bazawan` |
-| *grandmother* (a parent of a parent) | `zebezal geveval grebuwol bebezal grebuwol bazawan` |
+| *brother* | `zobel gemehel grebazol bazawan` |
+| *sister* | `zobel geveval grebazol bazawan` |
+| *aunt* (a sister of a parent) | `zobel geveval grebazol bobel grebuwol bazawan` |
+| *grandmother* (a parent of a parent) | `zobel geveval grebuwol bobel grebuwol bazawan` |
 | *generation* | the kin number itself: `grebuwol` parents, `grebazol` siblings, `grebawol` children |
 
 For *uncle* and *grandfather*, use `gemehel` for `geveval`.
@@ -360,7 +360,7 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 | *cope* / *survive* | `zazawan vagogom.` | is resilient |
 | *enable* | `zalahen vowogaxal thegem bazawan.` | Alahen can walk, Azawan makes that happen |
 | *assist* / *help* (as a servant) | `zazawan vebedel dalahen.` | serves Alahen |
-| *consult* | `zazawan vezebelolal dalahen.` | talks with the expert |
+| *consult* | `zazawan vezebelalegol dalahen.` | talks with the expert |
 | *shoot* | `zazawan vezogul.` | uses the squirt-gun root |
 | *involve* / *include* (among others) | `zazawan vowogal am balahen.` | walks, Alahen among those involved |
 | *apply* / *use* (a tool) | `zazawan vowogal ael bahavol.` | walks using the hammer |
@@ -426,7 +426,7 @@ English makes nouns for a part, a kind, a role, and a manner. Agazan has no sepa
 >
 > "Azawan walks in a hasty way."
 
-**Compare with:** *piece of* as a fragment of a text is the same part relation with the text in `/b/`. A story character is an ordinary person noun (`zebezal`), not this.
+**Compare with:** *piece of* as a fragment of a text is the same part relation with the text in `/b/`. A story character is an ordinary person noun (`zobel`), not this.
 
 ### Case, deal, figure, board and other several-sense nouns {#sense-nouns}
 
@@ -457,7 +457,7 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *application* (software) | `zabegol` | a package |
 | *campaign* | `zazawan vavadam huwem bavodel.` | struggles during a period |
 | *behavior* | `zuzegem` | the activity, or a manner adverb |
-| *population* | `zebezalx gagum bagul` | people of the country |
+| *population* | `zobelx gagum bagul` | people of the country |
 | *reference* (point back) | `d[=]` | the same span again |
 | *principle* | `zumem` | a policy |
 | *furniture* | `zehahel zebedal zam` | chair, bed, and maybe more |
@@ -486,7 +486,7 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *apply* (put on, as lotion) | `zazawan dazawan volohel.` | tends to self |
 | *attribute* / *characterize* | `zazawan dalahen valebam.` | sorts Alahen by kind |
 | *various* / *diverse* | `gerebom` | diversity |
-| *regular* | `gedum` | repeating |
+| *regular* | `gerobem` | repeating |
 | *suffer* | `zazawan vagahum.` | feels anguish |
 | *reality* / *fact* | `zenevem` | the fact |
 | *real* / *actual* | `genevem` | factual |
@@ -498,11 +498,11 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *dependent on* | `zazawan golum gevem balahen.` | depends on Alahen |
 | *favorite* | `zalavalogodal` | the one loved first |
 | *count* / *total up* | `zazawan vabugam.` | calculates |
-| *qualify* | `zazawan volam.` | is expert enough |
+| *qualify* | `zazawan valegom.` | is expert enough |
 | *criticize* | `zazawan dalahen vahahum.` | judges Alahen |
 | *ride* (a bus) | `zazawan vabazul.` | rides the bus |
-| *environment* / *surroundings* | `zahazamogel` | the world seen as the home around you |
-| *efficiency* | `zavagemawol` | output for the effort |
+| *environment* / *surroundings* | `zahazamogobal` | the world seen as the home around you |
+| *efficiency* | `zavagemozewel` | output for the effort |
 | *holder* (a thing that holds) | `zahadalahabal` | what holds in the hand |
 | *holder* (a person who bears) | `zaxahabal` | doer of the bearing |
 | *intervention* | `zazawan vuvudel hazam balahen bahaben bal.` | comes between the two |
@@ -592,7 +592,7 @@ Some English words have a second or third sense that a published root already ca
 | *public* (open to everyone) | `zahazal gaon bual.` | a house open to all |
 | *character* (a trait) | `zevebem` | identity, personality |
 | *special* (dear to one person) | `zazawan galavam.` | cherished |
-| *fit* (healthy) | `zazawan gorum.` | in health |
+| *fit* (healthy) | `zazawan gabugom.` | in health |
 | *fit* (suits) | `gulotham` | a met need ([sake words](say-reasons.md#sake-words)) |
 | *match* (a contest) | `zezadem` | a contest |
 | *ride* (a horse, a bike) | `zazawan vehebam ael bohozal.` | travels using the horse |
@@ -1044,7 +1044,7 @@ These three English nouns each hide two jobs. *Role* is the function someone pla
 | *title* (the name of a work) | `d@[onodan alahen]` | cite with **`@`** |
 | *title* (a claim to own) | `zegabem` | *ownership*, the abstract sense of `egabe` |
 | *address* (speak to someone) | `yalahen.` | call them with `/y/` + their name |
-| *address* (speak to a group) | `yebezanx.` | `/y/` + the kind as a title, **-nx** |
+| *address* (speak to a group) | `yobenx.` | `/y/` + the kind as a title, **-nx** |
 | *address* (a speech) | `vezebel` | the telling itself |
 
 > `zalahen gaxedehol.`

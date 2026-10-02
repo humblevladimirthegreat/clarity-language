@@ -315,7 +315,7 @@ Beginner already used closed **`gugol`** (*is the same as*). The other endings o
 | `zalahen gugol bazawan` | *Alahen is (the same as) Azawan* |
 | `zalahen gugom bazawan` | *Alahen is basically Azawan* |
 | `zalahen gugol bazawan gul` | *Alahen is not (identical to) Azawan* |
-| `zebezal gugol bazawan` | inside a noun phrase: *the person who is Azawan* |
+| `zobel gugol bazawan` | inside a noun phrase: *the person who is Azawan* |
 
 **Compare with:** ordinary *coin* as a noun is `zugol`. Identity is **`gugol`** / **`gugom`** plus a following `/b/` label, kept next to each other.
 
@@ -404,7 +404,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahaben* | `ahaben` |
 | *guard* | `agavol` |
 | *craft* | `ageval` |
-| *person* | `ebezal` |
+| *person* | `obel` |
 | *frame* | `evevol` |
 | *palette* | `abudol` |
 | *red* | `eredal` |
@@ -452,7 +452,7 @@ z-Alahen | [g-same | b-Azawan]
 **5.** *The person who is Ahaben sees a palette.*
 
 ::: details Show answer
-`zebezal gugol bahaben dabudol vahahal.`
+`zobel gugol bahaben dabudol vahahal.`
 
 [z-person | [g-SAME | b-Ahaben]] | d-palette | v-see
 :::
@@ -468,7 +468,7 @@ z-guard | [g-same | b-Ahaben]
 **7.** *The person who is Azawan sees a frame.*
 
 ::: details Show answer
-`zebezal gugol bazawan devevol vahahal.`
+`zobel gugol bazawan devevol vahahal.`
 
 [z-person | [g-SAME | b-Azawan]] | d-frame | v-see
 :::
@@ -542,7 +542,7 @@ z-guard | [g-same | b-Azawan]
 *The guard is basically Azawan.*
 :::
 
-**4.** `zebezal gugol bazawan dabudol vahahal.`
+**4.** `zobel gugol bazawan dabudol vahahal.`
 
 ::: details Show answer
 

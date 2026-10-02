@@ -37,7 +37,7 @@ The `/x/` forms are clause joins; **-n** under `/v/`, `/ɡ/`, and `/h/` makes jo
 | **oe** | `voel` / `xoel` / `thoel` | `voem` / `xoem` / `thoem` | — |
 | **ue** | `vuel` / `xuel` / `thuel` | `vuem` / `xuem` / `thuem` | — |
 
-Each verb-phrase item is a verb plus its own object material, and an item runs up to and including its verb: words before a verb belong to that verb. In `vowogal hadehum varahal val`, *hastily* is on *run*, not *walk*. When every item is a bare verb, a `/d/` immediately after the join is SHARED over all verbs: `vahahal valul vam dalul` → *sees and tempts an apple*.
+Each verb-phrase item is a verb plus its own object material, and an item runs up to and including its verb: words before a verb belong to that verb. In `vowogal hadehum varahal val`, *hastily* is on *run*, not *walk*. When every item is a bare verb, a `/d/` immediately after the join is SHARED over all verbs: `vahahal vabovul vam dabovul` → *sees and tempts an apple*.
 
 An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, covers every item. `/h/` inside an item covers that verb phrase only.
 
@@ -168,7 +168,7 @@ Under a question, a standalone **-r** stance join is a [fill-ask](questions.md#f
 
 When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*), write that move as a verb: first letter **`v`**, the same join vowel you already use on lists, and ending **-n** (`van`, `von`, …). The object is one `/d/` phrase: one thing, or a group packed with a [phrase join](joins.md). You can now name the act itself instead of only packing a list. On these verbs, **-n** is join content, not a [proper name](word-endings.md#proper-name--n). Put ordinary noun **-x** on the object when the group is associative; verb **-x** is [collective](plurality.md#verbs-v).
 
-> `zazawan dalul van.`
+> `zazawan dabovul van.`
 >
 > z-Azawan | d-apple | v-includes
 >
@@ -191,7 +191,7 @@ These are ordinary content verbs. Point back at a join-act you already used with
 
 | Agazan | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
-| **`van`** | hold the object in the set | *includes / adds* | **a** ≈ add (hold / inventory) | `zazawan dalul van` |
+| **`van`** | hold the object in the set | *includes / adds* | **a** ≈ add (hold / inventory) | `zazawan dabovul van` |
 | **`von`** | lock the object as the sole pick | *chooses (as the one choice)* | **o** ≈ one (single pick) | `zazawan dedehel von` |
 | **`vaon`** | admit the object; more may follow | *picks (more picks may follow)* | **ao** ≈ add + one (open pick) | `zazawan dagubem vaon` |
 | **`vun`** | reject the object | *denies / refuses* | **u** ≈ undo (take that member back) | `zazawan dalahal vun` |

@@ -73,7 +73,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. The out
 | *window* | `ewedol` | |
 | *sun* | `azahel` | |
 | *bucket* | `abegul` | |
-| *heat* | `ubem` | `ubel` *pepper* |
+| *heat* | `obebem` | `obebel` *pepper* |
 | *fire* | `avahel` | |
 | *pour* | `vobohol` | |
 | *see* | `vahahal` | `ahahal` *eye* |
@@ -126,7 +126,7 @@ z-flower | [g-only-if | b-sun]
 **6.** *Azawan pours only if there is heat.*
 
 ::: details Show answer
-`zazawan vobohol tholum bubem.`
+`zazawan vobohol tholum bobebem.`
 
 z-Azawan | v-pour | [th-only-if | b-heat]
 :::
@@ -194,7 +194,7 @@ z-tomato | [g-if | b-sun]
 *A tomato grows if there is sun.*
 :::
 
-**6.** `zazawan vezebel thoyem bubem.`
+**6.** `zazawan vezebel thoyem bobebem.`
 
 ::: details Show answer
 

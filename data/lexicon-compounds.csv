@@ -6,8 +6,8 @@ uzugulubuga,uzugu,l,ubuga,textbook,canon,school specifying book is the assigned 
 aradalubuga,arada,l,ubuga,writing-book,,writing specifying book is for notes
 avahelahaza,avahe,l,ahaza,firehouse,,fire specifying house is the station that answers fire
 avavulahaza,avavu,l,ahaza,greenhouse,forcing,flower specifying house grows plants under glass; forcing is heat-driven growth you cannot see as a room
-analebeza,ana,l,ebeza,friend,allegiance,bond specifying person is a friend; allegiance is the unobservable sidedness
-ahadolebeza,ahado,l,ebeza,parent,,child specifying person is a parent
+analobe,ana,l,obe,friend,allegiance,bond specifying person is a friend; allegiance is the unobservable sidedness
+ahadolobe,ahado,l,obe,parent,,child specifying person is a parent
 oyelebehu,oye,l,ebehu,doorbell,,door specifying bell is the call at the threshold
 ahadoluzugu,ahado,l,uzugu,kindergarten,,child specifying school is early-years school
 ahazalagado,ahaza,l,agado,floor,,house specifying ground is the floor
@@ -40,13 +40,13 @@ agahalanaba,agaha,l,anaba,drive,,car specifying knob is steering a car by its co
 ubugamerevu,ubuga,m,erevu,technology,,knowledge specifying wrench is knowledge made into tools
 uduhemagedu,uduhe,m,agedu,military,,conflict specifying institution is the institution built for conflict
 amolagedu,amo,l,agedu,tax,,money specifying institution is money the institution takes
-ezebemuza,ezebe,m,uza,conference,,discourse specifying community is a community gathered to discuss
+ezebemazewe,ezebe,m,azewe,conference,,discourse specifying community is a community gathered to discuss
 amoluze,amo,l,uze,investment,,money specifying growth is money put in to grow
-ebezaluze,ebeza,l,uze,adult,,person specifying growth is a person who has finished growing
+obeluze,obe,l,uze,adult,,person specifying growth is a person who has finished growing
 ebeveloroda,ebeve,l,oroda,career,,briefcase specifying road is the road a working life follows
 agadelahaza,agade,l,ahaza,restaurant,,cutlery specifying house is the house where you go to eat
 amolama,amo,l,ama,budget,,money specifying plan is a plan for money
-uzamadede,uza,m,adede,committee,,community specifying administrate is a small community that administers
+azewemadede,azewe,m,adede,committee,,community specifying administrate is a small community that administers
 adazolagade,adazo,l,agade,dinner,,dusk specifying cutlery is the eating done at dusk
 ubugalahaza,ubuga,l,ahaza,library,,book specifying house is the house where books live
 agahaleheve,agaha,l,eheve,traffic,,car specifying flow is the flow of cars
@@ -54,16 +54,16 @@ ugugalahaza,uguga,l,ahaza,kitchen,,cook specifying house is the house-room for c
 amolenaba,amo,l,enaba,revenue,,money specifying incoming is money incoming
 abozomahaza,abozo,m,ahaza,museum,,antiquity specifying house is the house that keeps antiquity
 adavalahaha,adava,l,ahaha,taste,,tongue specifying eye is the tongue's way of perceiving
-avadaluza,avada,l,uza,army,,fight specifying community is a community organized to fight
-adedeluza,adede,l,uza,council,,administrate specifying community is a community that administers together
-agulebeza,agu,l,ebeza,citizen,,country specifying person is a person of the country
+avadalazewe,avada,l,azewe,army,,fight specifying community is a community organized to fight
+adedelazewe,adede,l,azewe,council,,administrate specifying community is a community that administers together
+agulobe,agu,l,obe,citizen,,country specifying person is a person of the country
 alagamahaza,alaga,m,ahaza,prison,,restriction specifying house is the house where people are locked in
-ezagemebeza,ezage,m,ebeza,lawyer,,justice specifying person is a person of justice
+ezagemobe,ezage,m,obe,lawyer,,justice specifying person is a person of justice
 edeheleze,edehe,l,eze,cup,,tea specifying capacity is the vessel for tea
 abazelalaga,abaze,l,alaga,arrest,,police specifying locked is authority locking someone up
 ubugaloze,ubuga,l,oze,literature,,book specifying tale is books of tales
-edehuluza,edehu,l,uza,forest,,tree specifying community is a community of trees
-ahazamebeza,ahaza,m,ebeza,resident,,home specifying person is a person who belongs to the home
+edehulazewe,edehu,l,azewe,forest,,tree specifying community is a community of trees
+ahazamobe,ahaza,m,obe,resident,,home specifying person is a person who belongs to the home
 aguladaho,agu,l,adaho,export,,country specifying outgoing is goods outgoing from a country
 uzuguleveha,uzugu,l,eveha,graduate,,school specifying terminus is the person at the terminus of school
 amolameva,amo,l,ameva,employment,,money specifying production is paid production
@@ -92,7 +92,7 @@ ahazalageba,ahaza,l,ageba,roof,,house specifying cap is the cap of a house
 oladalenaha,olada,l,enaha,retirement,,old-man specifying rest is the rest of old age
 ubugalebube,ubuga,l,ebube,publication,,book specifying printer is a book that has been printed
 ehebalahaza,eheba,l,ahaza,port,,ship specifying house is the house where ships stay
-ebezalalaga,ebeza,l,alaga,prisoner,,person specifying locked is a person locked in
+obelalaga,obe,l,alaga,prisoner,,person specifying locked is a person locked in
 aradalovu,arada,l,ovu,essay,,write specifying thought is a thought written out
 ahazalezaga,ahaza,l,ezaga,apartment,,house specifying urban is a house in the city
 agedemebevu,agede,m,ebevu,cake,,sugar specifying bread is bread made sweet
@@ -103,7 +103,7 @@ uwuzelowode,uwuze,l,owode,alcohol,,woozy specifying drinking-water is the water 
 amazamadaga,amaza,m,adaga,van,,small specifying truck is a small truck
 enehalelega,eneha,l,elega,knee,,kneel specifying leg is the part of the leg that kneels
 enabamoye,enaba,m,oye,entrance,,incoming specifying door is the door that lets you come in
-elavamebeza,elava,m,ebeza,giant,,big specifying person is a big person
+elavamobe,elava,m,obe,giant,,big specifying person is a big person
 ehehamerevo,eheha,m,erevo,god,,faith specifying reign is the reign that faith looks up to
 awadalereda,awada,l,ereda,pink,,white specifying red is white shading toward red
 abehalahaza,abeha,l,ahaza,resort,,beach specifying house is the house at the beach
@@ -113,7 +113,7 @@ amazamezebe,amaza,m,ezebe,summary,,small specifying speech is speech made small
 eregalohaho,erega,l,ohaho,tube,,railcar specifying hole is a long hole
 anavalemede,anava,l,emede,surgery,,knife specifying medical is medicine done with a knife
 edeholezebe,edeho,l,ezebe,lecture,,teach specifying speech is speech that teaches
-owobomuza,owobo,m,uza,league,,competition specifying community is a community of competition
+owobomazewe,owobo,m,azewe,league,,competition specifying community is a community of competition
 emegalabode,emega,l,abode,cream,,milk specifying butter is the butter of milk
 ogovemewede,ogove,m,ewede,divorce,,end specifying union is the end of a union
 emebamuze,emeba,m,uze,evolution,,change specifying growth is change that grows
@@ -135,12 +135,12 @@ ohaholerega,ohaho,l,erega,pipe,,hole specifying length is a hole made long
 agawalezebe,agawa,l,ezebe,whisper,,quiet specifying speech is quiet speech
 ebedelabehe,ebede,l,abehe,menu,,plate specifying page is the page for the plates
 erabelebeve,erabe,l,ebeve,airline,,airplane specifying business is a business of airplanes
-ahahuluza,ahahu,l,uza,jury,,judge specifying community is a community of judges
+ahahulazewe,ahahu,l,azewe,jury,,judge specifying community is a community of judges
 adehumazaha,adehu,m,azaha,scan,,haste specifying eyes is a quick look
 amazamabehe,amaza,m,abehe,paragraph,,small specifying page is a small page
 ehebamageha,eheba,m,ageha,tourism,,voyage specifying leisure is voyage for leisure
 evegolezade,evego,l,ezade,championship,,victory specifying contest is the contest for victory
-eladelola,elade,l,ola,veteran,,elder specifying expertise is an elder with expertise
+eladelalego,elade,l,alego,veteran,,elder specifying expertise is an elder with expertise
 agozamoze,agoza,m,oze,fiction,,fabrication specifying tale is a tale that is made up
 agadolayaha,agado,l,ayaha,carpet,,ground specifying blanket is a blanket for the ground
 ezebelume,ezebe,l,ume,grammar,,speech specifying policy is the policy of speech
@@ -149,26 +149,26 @@ adehumevehe,adehu,m,evehe,panic,,haste specifying fear is fear in a rush
 ehebalabaho,eheba,l,abaho,harbor,,ship specifying refuge is the refuge for ships
 alavomavo,alavo,m,avo,comedy,,amusement specifying theater is theater of amusement
 evezalevevo,eveza,l,evevo,portrait,,face specifying frame is a face in a frame
-anadamebeza,anada,m,ebeza,stranger,,unknown specifying person is an unknown person
+anadamobe,anada,m,obe,stranger,,unknown specifying person is an unknown person
 agawulayaha,agawu,l,ayaha,leather,,cow specifying blanket is the hide of a cow
-abahomebeza,abaho,m,ebeza,refugee,,refuge specifying person is a person in refuge
+abahomobe,abaho,m,obe,refugee,,refuge specifying person is a person in refuge
 erevolagu,erevo,l,agu,empire,,reign specifying country is a country under one reign
-ogelabehe,oge,l,abehe,website,,globe specifying page is a page of the globe
+ogobalabehe,ogoba,l,abehe,website,,globe specifying page is a page of the globe
 ewedolevewa,ewedo,l,evewa,curtain,,window specifying veil is a veil over a window
 ezagamerevo,ezaga,m,erevo,mayor,,urban specifying reign is the one who reigns over a city
-ogelarada,oge,l,arada,blog,,globe specifying write is writing for the globe
+ogobalarada,ogoba,l,arada,blog,,globe specifying write is writing for the globe
 uduhomowode,uduho,m,owode,thirst,,craving specifying drinking-water is craving for water
 ebeholahaza,ebeho,l,ahaza,pub,,beer specifying house is the house where people drink beer
 ezebelovu,ezebe,l,ovu,meaning,,speech specifying thought is the thought that speech carries
 ahahulehego,ahahu,l,ehego,lawsuit,,judge specifying problem is a problem put before a judge
-ahazamoge,ahaza,m,oge,environment,,home specifying globe is the world seen as the home around you
-avagemawo,avage,m,awo,efficiency,,output specifying effort is the output you get for the effort
+ahazamogoba,ahaza,m,ogoba,environment,,home specifying globe is the world seen as the home around you
+avagemozewe,avage,m,ozewe,efficiency,,output specifying effort is the output you get for the effort
 ahadalahaba,ahada,l,ahaba,holder,,hand specifying handbag is the thing that holds in the hand
 alavalogoda,alava,l,ogoda,favorite,,love specifying first is the one you love most
 aholohaha,aho,l,ohaha,emotion,,heart specifying ocean is the water of the heart: a feeling that surges
 ezebeluzege,ezebe,l,uzege,verb,,speech specifying activity is the word for an action
 ezebelaneda,ezebe,l,aneda,noun,,speech specifying name is the word that names a thing
-ezebelola,ezebe,l,ola,consultation,,speech specifying expertise is talk with an expert
+ezebelalego,ezebe,l,alego,consultation,,speech specifying expertise is talk with an expert
 alavalehoba,alava,l,ehoba,popularity,,love specifying bulk is love held by the many
 ehobalegode,ehoba,l,egode,density,,bulk specifying width is bulk packed into an extent
 azazaladazo,azaza,l,adazo,afternoon,,day specifying dusk is the late part of the day

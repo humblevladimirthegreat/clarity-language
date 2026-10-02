@@ -227,7 +227,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
-| *pill* | `eyul` | |
+| *pill* | `ebezal` | |
 | *baby-bottle* | `abadul` | |
 | *rock* | `aragal` | |
 | *spoon* | `uzubul` | |
@@ -263,9 +263,9 @@ h-_15,30 | z-Azawan | d-Ahaben | v-see
 **3.** *25% of the pills.*
 
 ::: details Show answer
-`zeyulx g+25%.`
+`zebezalx g+25%.`
 
-🔊 *zeyulx graduvayol.*
+🔊 *zebezalx graduvayol.*
 
 z-pill-x | g-25yo
 :::
@@ -555,9 +555,9 @@ With no `/b/` after a joined subject, each member is a sibling of the others.
 
 For a side branch, nest a second anchor: first step to the relative, then from there. *Aunt or uncle* is a sibling of a parent.
 
-> `zalahen grebazol bebezal g#1e-1 bazawan vowogal.`
+> `zalahen grebazol bobel g#1e-1 bazawan vowogal.`
 >
-> 🔊 *zalahen grebazol bebezal grebuwoyawol bazawan vowogal.*
+> 🔊 *zalahen grebazol bobel grebuwoyawol bazawan vowogal.*
 >
 > [z-Alahen | [g-#-e0 | [b-person | [g-#-1e-1 | b-Azawan]]]] | v-walk
 >

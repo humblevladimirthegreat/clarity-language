@@ -95,7 +95,7 @@ describe("sentence-parser synthetic", () => {
 
   it("lets a kin number on an /h/ host's landmark host its own /b/, but keeps a count as the amount", () => {
     const last = (text: string) => parseSentenceTokens(tokens(text)).utterances[0]!.bodies[0]!.clause.units.at(-1)!;
-    const kin = last("zazawan vowogal han bebezal grebuwol behodon.");
+    const kin = last("zazawan vowogal han bobel grebuwol behodon.");
     assert.equal(kin.kind === "h" ? kin.unit.hosted?.amount : "not h", undefined);
     assert.equal(kin.kind === "h" ? kin.unit.hosted?.adjs?.[0]?.hosted?.bound.raw : undefined, "behodon");
     const offset = last("zazawan vowogal henum bazazam grawol.");

@@ -287,8 +287,8 @@ describe("resolve — topic (pronouns.md#topic)", () => {
 
   it("takes -x on the topic pronoun, but never on the generic one", () => {
     assert.deepEqual(topics("xazawan zozanx vowogal."), ["zozanx→xazawan"]);
-    assert.throws(() => parseText("zebezanx vowogal."), /generic pronoun/);
-    assert.deepEqual(ordinals("zebezan vowogal. zazawan vehahel. zrewor vezebal."), ["zrewor→zazawan"]);
+    assert.throws(() => parseText("zobenx vowogal."), /generic pronoun/);
+    assert.deepEqual(ordinals("zoben vowogal. zazawan vehahel. zrewor vezebal."), ["zrewor→zazawan"]);
   });
 });
 
@@ -303,7 +303,7 @@ describe("resolve — role anaphors (roles.md)", () => {
   });
 
   it("binds zexazagar as place of the prior scream verb", () => {
-    const { anaphors } = resolveOf("zululon vazagal. zazawan dexazagar vuyel.");
+    const { anaphors } = resolveOf("zululon vazagal. zazawan dexazagar veyeyal.");
     const role = anaphors.find((a) => a.kind === "role");
     assert.ok(role);
     assert.equal(role!.pronoun.raw, "dexazagar");

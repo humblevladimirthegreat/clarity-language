@@ -337,12 +337,12 @@ Beginner used **`welavam`** *very* before an adjective. The same `/w/` slot take
 >
 > "A fairly blue dog walks."
 
-Two stock adverbs work on `/h/` directly on the verb. Use **`habedem`** *kind of* / *sort of* to hedge the action itself, and **`hedum`** for *again*.
+Two stock adverbs work on `/h/` directly on the verb. Use **`habedem`** *kind of* / *sort of* to hedge the action itself, and **`herobem`** for *again*.
 
 | Agazan | English | Cue |
 |--------|---------|-----|
 | `habedem` | *kind of* / *sort of* | 📈: some degree, not a full one |
-| `hedum` | *again* | 🔁: the same thing once more |
+| `herobem` | *again* | 🔁: the same thing once more |
 
 > `zazawan habedem vowogal.`
 >
@@ -350,7 +350,7 @@ Two stock adverbs work on `/h/` directly on the verb. Use **`habedem`** *kind of
 >
 > "Azawan kind of walks."
 
-> `zodogal hedum varahal.`
+> `zodogal herobem varahal.`
 >
 > z-dog | h-again | v-run
 >

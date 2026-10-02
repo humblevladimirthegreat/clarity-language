@@ -218,7 +218,7 @@ describe("classify", () => {
   });
 
   it("a root plus -n under /z/ is an ordinary name, not a named bar", () => {
-    for (const raw of ["zumun", "zogen", "zehon"]) {
+    for (const raw of ["zumun", "zogoban", "zahozen"]) {
       const word = expectReading(raw, "ordinary");
       assert.equal(word.overlay, undefined);
     }
@@ -248,7 +248,7 @@ describe("classify", () => {
   });
 
   it("lexical compound beats accidental published substring match", () => {
-    const word = expectReading("zanalebezan", "ordinary");
+    const word = expectReading("zanaloben", "ordinary");
     assert.equal(word.lexicalCompound, true);
     assert.equal(word.rootGloss?.concrete, "friend");
   });
