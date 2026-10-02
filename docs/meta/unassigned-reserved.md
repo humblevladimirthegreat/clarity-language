@@ -179,6 +179,14 @@ Source: [sakes.md](../grammar/sakes.md)
 | DECISION | [intention.md § Decision](../grammar/intention.md#decision) — **`ehu`** |
 | PLAN | [intention.md § Plan](../grammar/intention.md#plan-predict) — **`ama`** |
 
+## Role-letter structure
+
+Source: [clause.md](../grammar/clause.md)
+
+- Lean **`l`** on any role letter but `/ɡ/`: `zl-` / `dl-` / `bl-` / `vl-` / `hl-` / `thl-` / `wl-` (`/z/`, `/d/`, `/b/` modifiers use mid-word **`x`**; a verb root before the noun uses `gl-`; `/h/` and `/th/` already go anywhere; `/w/` already sits before its host)
+- `/w/` before `/z/`, `/d/`, `/b/`, or `/v/` (degree on a noun goes through an adjective; degree on a verb goes through a degree word before a manner adverb)
+- A hosted `/b/` after `/z/`, `/d/`, `/v/`, or `/w/` (that `/b/` reads as the unhosted recipient)
+
 ## Phonology
 
 Source: [phonology.md](../grammar/phonology.md)

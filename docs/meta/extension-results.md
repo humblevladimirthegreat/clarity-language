@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Findings from Phase 3 of the expressiveness review (`docs/proposals/expressiveness-review.md`): every productive mechanism crossed with every place it could apply, and each empty cell judged. Rows are logged per batch, ruled by the language owner, and applied before the next batch starts; each row's **Outcome** records the ruling.
 
-Progress: batch 1 (word endings pilot) ruled and applied. Other mechanisms not started.
+Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Other mechanisms not started.
 
 ## How to read this file
 
@@ -198,6 +198,68 @@ Owning page: [word-endings](../grammar/word-endings.md); each family's own page 
 - **-l** on exchange, proxy, of-relations, locatives, stimulus, and *respectively*.
 - Firm **-l** on the linkers *meanwhile*, *next*, and *by the way*.
 
+## Role-letter structure
+
+Owning page: [clause](../grammar/clause.md). Wave 0 second batch. Cells checked with `node scripts/parse.mjs` (2026-10-02).
+
+### Grid
+
+| Axis | z | d | b | v | ɡ | w | h | th |
+|------|---|---|---|---|---|---|---|----|
+| Lean **`l`** (looks ahead to the next noun) | E-10 | E-10 | E-10 | E-11 | def (`gl-`) | none | none | none |
+| `/w/` before it (degree) | none | none | none | E-12 | def | def (stacked) | def | def |
+| Hosted `/b/` right after it | — | — | def (chain) | none | def | none | def | def |
+
+Hooks as `/w/` and `/b/` hosts are **def** ([hooks](../grammar/hooks.md#hook-w)) and belong to the Hooks grid.
+
+Parser findings: `zl-` / `dl-` / `bl-` / `vl-` / `hl-` / `thl-` / `wl-` do not parse (the only legal `l` cluster is `gl-`, [phonology](../grammar/phonology.md#phonotactics)); `/w/` before `/z/`, `/d/`, `/b/`, or `/v/` does not parse; `glowogal zodogal vezebal.` parses (a verb root in `/ɡ/` before the noun).
+
+### Rows
+
+#### E-10 — noun leaning ahead (`zl-` / `dl-` / `bl-`) · intuitive but redundant · P3
+
+- **Proposed reading:** the noun describes the **next** noun, like `gl-` (*stone wall*, *dog house*)
+- **Example:** none worth teaching; the route below already gives one word.
+- **Pattern:** the lean **`l`** of `gl-`
+- **Current route:** mid-word **`x`** glue (`zebeyaxabodel` *peanut butter*, [x-compounds](../grammar/x-compounds.md#ordinary-compound-order)), or an of-relation adjective
+- **Better than current route:** no. The glued compound is one word and can be listed in the dictionary; a leaning noun would be a loose pair that reads as two nouns.
+- **Conflicts and notes:** needs new legal clusters `zl` / `dl` / `bl` in phonology, and two nouns in a row would compete with a join or a new subject. `hl-`, `thl-`, `wl-` have no job: `/h/` and `/th/` already go anywhere, and `/w/` already sits before its host.
+- **Closes:** *stone wall*, *dog house*: covered
+- **Recommendation:** decline; add the none cells to unassigned-reserved.
+- **Outcome:** declined — settled in [design-decisions](design-decisions.md) D-22; none cells added to unassigned-reserved.
+
+#### E-11 — verb leaning ahead (`vl-`) · intuitive but redundant · P2
+
+- **Proposed reading:** a participle before its noun (*a walking dog*, *running water*)
+- **Example:** `glowogal zodogal vezebal.` — [gl-walk | z-dog] | v-sleep — "A walking dog sleeps." Already parses with no new form.
+- **Pattern:** `gl-` plus the general rule that a root takes any role letter
+- **Current route:** `gl-` + the verb's root, or `g` after the noun
+- **Better than current route:** no new form needed. Gap: `find-english.mjs` (*walking dog*, *running water*, *falling leaves*, *sleeping*) finds no row that teaches an action root as an adjective, so the English job *V-ing noun* has no stated route.
+- **Conflicts and notes:** the reading of a verb root in `/ɡ/` (the noun is doing it now, versus a standing property) needs one stated rule.
+- **Closes:** *a walking dog*, *running water*: no row found
+- **Recommendation:** decline `vl-`; add a recipe row for *V-ing noun* via `gl-` / `g` once the owner confirms the reading.
+- **Outcome:** `vl-` declined (D-22). The recipe row is deferred until the reading of a verb root in `/ɡ/` is confirmed.
+
+#### E-12 — degree before the verb (`/w/` + `/v/`) · forced · P3
+
+- **Proposed reading:** `/w/` grades the action (*a lot*, *a little*, *really walks*)
+- **Example:** `zodogal wamazam vowogal.` — does not parse today.
+- **Pattern:** `/w/` before `/ɡ/` / `/h/` / `/th/`
+- **Current route:** a degree word before a manner adverb (`welavam habezem`), `hrabul` / `hrubul` for *barely* / *almost*, `habedem` for *kind of* ([say-amounts](../grammar/say-amounts.md#degree-words))
+- **Better than current route:** marginal.
+- **Conflicts and notes:** [clause](../grammar/clause.md#adjective-detail-w) says `/w/` describes only the adjective (or adverb, stance, hook) right after it. A verb host would make `welavam vowogal` read as either *really walk* or a stray `/w/`, and `zodogal wamazam vowogal` clashes with the existing degree-before-adjective habit. Nouns have no `/w/` either: degree on a noun goes through an adjective (`wadeham gubuhel`), and focus words (*even*, *only*, *also*) are [joins and hooks](../grammar/say-amounts.md#focus-words).
+- **Closes:** *walks a lot*, *sleeps a little*: only `welavam habezem`-style routes
+- **Recommendation:** decline.
+- **Outcome:** declined — D-22.
+
+### None (to add to unassigned-reserved)
+
+- `zl-` / `dl-` / `bl-` / `vl-` / `hl-` / `thl-` / `wl-` (see E-10, E-11).
+- `/w/` before `/z/`, `/d/`, `/b/`, `/v/` (E-12).
+- A hosted `/b/` after `/z/`, `/d/`, `/v/`, or `/w/`: a `/b/` there reads as the unhosted recipient, so no second reading is free.
+
+C-05 is logged under [Inconsistencies](#inconsistencies).
+
 ## Inconsistencies
 
 Problems in the existing grammar, found while building grids. Each needs a ruling on the owning page; none adds a form.
@@ -228,3 +290,10 @@ Problems in the existing grammar, found while building grids. Each needs a rulin
 - **Problem:** Links to `grammar-gaps.md`, which was deleted when the Phase 1 gaps were folded in.
 - **Suggested ruling:** Point the row at this file or at [design-decisions](design-decisions.md).
 - **Outcome:** fixed — the row now points at design-decisions.
+
+#### C-05 — first-position paragraph skips the opening `/x/` word · found in role-letter structure
+
+- **Where:** [clause § word order](../grammar/clause.md#word-order-emphasis), [pronouns § topic](../grammar/pronouns.md#topic)
+- **Problem:** clause.md says "Opening `/y/` words come before the clause itself and do not count" for first position. A topic `/x/` word also opens a sentence before the clause (the parser puts it in a separate linker slot, and `xazawan dagadul vahahal.` highlights `dagadul`), but clause.md does not say so. A learner could read `xazawan` as the highlighted first word.
+- **Suggested ruling:** name `/x/` topic and linker words beside `/y/` words in that sentence, linking [topic](../grammar/pronouns.md#topic). No form changes.
+- **Outcome:** fixed — clause.md now names the `/x/` topic word and linkers, adds a topic **Compare with**, and states that a dropped subject is never the topic (also on pronouns.md).

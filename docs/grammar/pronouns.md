@@ -565,6 +565,8 @@ A thing works as a topic the same way:
 
 With Azawan as the topic, *Azawan sees themself* is `xazawan zozan vahahal dozan.` (`daxer` still works), and *Azawan's dog walks* is `xazawan zodogal em bozan vowogal.`: *the topic's* is the same in every role.
 
+A dropped subject is never read as the topic. `xazawan dalahen vahahal.` leaves out who sees; it does not say Azawan sees. Write `zozan` whenever the topic is the doer (and `dozan` or `bozan` in the other roles).
+
 A topic pronoun with no topic set is not a sentence. **`oza`** keeps its ordinary senses on **-l** / **-m** (`zozal` *a star*, `zozam` *fame*), and **-x** adds associates (`zozanx` *the topic and associates*).
 
 *As for* frames one sentence and leaves the topic alone:

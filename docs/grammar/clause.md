@@ -366,7 +366,7 @@ English uses the passive (*The cat was seen*, *Mistakes were made*) to avoid nam
 >
 > "Azawan was seen."
 
-**Compare with:** [`zunan`](pronouns.md#special-pronouns) *someone* says that somebody did it, without saying who. With no subject at all, the sentence does not mention a doer.
+**Compare with:** [`zunan`](pronouns.md#special-pronouns) *someone* says that somebody did it, without saying who. With no subject at all, the sentence does not mention a doer. A missing subject never means the [topic](pronouns.md#topic-pronoun): to make the topic the doer, write `zozan`.
 
 ### Translation practice {#intermediate-translation-practice}
 
@@ -497,7 +497,7 @@ z-dog | [[w-very | h-like] | b-Azawan] | v-sleep
 
 ### Word order and English emphasis {#word-order-emphasis}
 
-Beginner showed that you may reorder the words of a clause, because the first letters already say who did what. The **first content word** is what you highlight: what you want heard first, or the new information. First position only highlights within one sentence; what the whole talk is about is the [topic](pronouns.md#topic), set by an `/x/` word. Opening `/y/` words come before the clause itself and do not count.
+Beginner showed that you may reorder the words of a clause, because the first letters already say who did what. The **first content word** is what you highlight: what you want heard first, or the new information. First position only highlights within one sentence; what the whole talk is about is the [topic](pronouns.md#topic), set by an `/x/` word. Opening `/y/` words, a topic `/x/` word, and a linker come before the clause itself and do not count: in `xazawan dagadul zalahen vahahal.` the highlighted word is `dagadul`, not `xazawan`.
 
 English usually keeps subject–verb–object order and uses extra wording, the passive, or spoken stress for that job. When you translate, keep the same highlight in English. Copy Agazan order into English only when that English is also a natural way to put that piece first (*Hastily, Azawan walks*). Keep a [stand-in](dependents.md#stand-in) `darl` / `barl` last in its slot, and move the other words around it.
 
@@ -524,6 +524,8 @@ Same roles, object first:
 | `hadehum zazawan vowogal.` | adverb first | *Hastily, Azawan walks.* |
 
 Object-first English *It's a cat that Azawan sees* (or *A cat is what Azawan sees*) still names Azawan as the one who sees. *A cat is seen* hides who sees unless you add *by Azawan*. Use the longer English when you only want to highlight the object.
+
+**Compare with:** order highlights one piece within this sentence and is gone at the period. The [topic](pronouns.md#topic) carries across sentences and is set only by an `/x/` word, never by what comes first.
 
 The subject is already first by default, so order cannot single it out. To say *it was Azawan (not someone else) who…*, put the [contrastive focus](speech-moves.md#tone-marks) mark **`&`** on the subject.
 

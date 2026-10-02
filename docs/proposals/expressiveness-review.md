@@ -20,7 +20,7 @@ Status: `[x]` done · `[~]` partial · `[ ]` not started.
 
 ## Batch loop
 
-A batch is one wave's grids (or a smaller slice of one). The same loop applies to every batch, whether its rows are extensions (`E-nn`), inconsistencies (`C-nn`), or gaps carried over from Phases 1 and 2. Rows are logged in [extension-results](../meta/extension-results.md).
+A batch is one wave's grids (or a smaller slice of one), and a wave holds one or two mechanisms. The same loop applies to every batch, whether its rows are extensions (`E-nn`), inconsistencies (`C-nn`), or gaps carried over from Phases 1 and 2. Rows are logged in [extension-results](../meta/extension-results.md).
 
 1. **Build and log.** Build the batch's grids and log each row. Check every candidate spelling with `node scripts/parse.mjs --check-lexicon`, and in context for a competing reading (such as a content resume). Do not edit grammar pages while logging.
 2. **Triage.** Within the batch only: merge duplicate rows, link each gap to an extension that closes it (prefer extensions over new forms), and rank by priority, then by how many rows one change closes. For each P1 row, and any multi-row extension, write a short proposal in `docs/proposals/` first (current route, proposed form, examples with morph glosses, interaction with existing forms, learning level per [learning-levels](../meta/learning-levels.md)).
@@ -42,31 +42,30 @@ Phase 1 and 2 gap rows were folded into the grammar and [design-decisions](../me
 
 ## Phase 3 — Extension sweep (existing grammar, new readings)
 
-Systematically cross every productive mechanism with every place it could plausibly apply, and ask whether the unused combination has an intuitive reading. Mechanisms run in the wave order of their owning page, so foundations settle first. Each grid cell belongs to exactly one mechanism (the ownership table is in [extension-results](../meta/extension-results.md#how-to-read-this-file)), so no cell is logged twice. The recipe track (`english.md`, `say-*.md`) adds no forms and has no grid.
+Systematically cross every productive mechanism with every place it could plausibly apply, and ask whether the unused combination has an intuitive reading. Waves run in dependency order so foundations settle first: the **Needs** column lists the earlier waves whose settled forms a wave builds on, so check it before reordering. Each wave is one or two mechanisms; if a wave's grids come out larger than about ten rows, split it again and renumber. Each grid cell belongs to exactly one mechanism (the ownership table is in [extension-results](../meta/extension-results.md#how-to-read-this-file)), so no cell is logged twice. The recipe track (`english.md`, `say-*.md`) adds no forms and has no grid.
 
 For each mechanism, build its applicability grid and inspect the empty cells:
 
-| Status | Wave | Mechanism | Owning pages | Axes to cross |
-|--------|------|-----------|--------------|---------------|
-| [x] | 0 | Word endings (pilot) | [word-endings](../grammar/word-endings.md) and each family's page | **-l / -m / -n / -r** × closed content roots (overlay moods, clause poles, relations, identity), `/y/` act and polar series, linkers, special pronouns |
-| [ ] | 0 | Role-letter structure | [clause](../grammar/clause.md) | lean **`l`** (`gl-`) × other role letters; `/w/` × hosts beyond `/ɡ/` `/h/` `/th/`; hosted `/b/` × other hosts; first-position highlight vs the discourse [topic](../grammar/pronouns.md#topic) |
-| [ ] | 1 | Numbers | [numbers](../grammar/numbers.md), [numbers-applied](../grammar/numbers-applied.md), [numeric-derivation](../grammar/numeric-derivation.md) | digitless and exponent forms × role letters not yet assigned; number endings × roles; stance numbers × other stances |
-| [ ] | 1 | Pronouns | [pronouns](../grammar/pronouns.md), [roles](../grammar/roles.md#role-pointers-family) | whole-stem **-r** resume × hosts (closed roots, compounds, joins); [role pointers](../grammar/pronouns.md#role-pointers) (`zaxar` / `zaxor` / `zaxer`, stacked pointers) × role letters, role vowels and pointer vowels (`v` `ɡ` `h` `w` are undefined); ordinal (`z=#n`) × roles and `#0`; generic `oben` and topic `ozan` × roles, **-x** and holder seams; special pronouns × roles. Several cells are now **def**; inspect only what remains empty |
-| [ ] | 1 | Plurality | [plurality](../grammar/plurality.md) | **-x** on hosts where it is currently unused (now defined on role pointers and `/x/` topic nouns, not on `oben` or the linkers) |
-| [ ] | 1 | Vowel series | [speech-moves](../grammar/speech-moves.md) | **a / o / e / u** (add / one / order / undo) and stacked pairs × every family that uses the series (acts, polar, joins, hooks, restrictors, sake vowels, ability vowels, stand-ins) — any family using only part of it? |
-| [ ] | 1 | Tone marks | [speech-moves](../grammar/speech-moves.md#tone-marks) | tone marks × scopes and positions not yet defined |
-| [ ] | 2 | Joins and restrictors | [joins](../grammar/joins.md), [restrictors](../grammar/restrictors.md) | set / rank vowels × endings × arity × role letters |
-| [ ] | 2 | Hooks | [hooks](../grammar/hooks.md) | hook vowel × ending × use (in-clause, discourse, extra-noun, point-back, span) |
-| [ ] | 2 | Spans | [spans](../grammar/spans.md) | TYPE × EDGE × ending; topic and ordinal scope inside cites and asides |
-| [ ] | 3 | Join series on other roles | [join-across-roles](../grammar/join-across-roles.md) | stance joins, join-act verbs, join-relations × vowel and ending |
-| [ ] | 3 | Hosted relations and bars | [relations](../grammar/relations.md), [comparatives](../grammar/comparatives.md) | each relation × host role (`/ɡ/` `/h/` `/th/` `/w/`); stance bars × other moods |
-| [ ] | 4 | Questions | [questions](../grammar/questions.md) | fill-ask × roles and families; polar stance × turn positions |
-| [ ] | 4 | Stand-ins and `/x/` words | [dependents](../grammar/dependents.md) | stand-in vowel × **-rl / -rm / -rth / -rn** × role letter; `/x/` linkers vs topic words × endings and positions (never in a dependent, after a clause join, or in an aside) |
-| [ ] | 4 | Predication | [predication](../grammar/predication.md) | classification and identity × roles and endings |
-| [ ] | 4 | Mid-word `x` and `th`, role compounds | [x-compounds](../grammar/x-compounds.md), [roles](../grammar/roles.md) | `x` / `th` families × left-hand types not yet allowed; role compounds × role letters |
-| [ ] | 5 | Mood roots × role letters | [knowing](../grammar/knowing.md), [causation](../grammar/causation.md), [intention](../grammar/intention.md) | each overlay kind × `/z/` `/d/` `/b/` `/v/` `/ɡ/` `/w/` `/h/` `/th/` (stance vs noun vs adverb readings) |
-| [ ] | 5 | Sakes | [sakes](../grammar/sakes.md) | sake vowel (`tha` / `the` / `tho` / `thu`) × ending table × role; emotion compose slots |
-| [ ] | 6 | Cross-link pass | — | no new grid: link each extension to the gaps it closes; merge duplicates across grids |
+| Status | Wave | Mechanism | Owning pages | Needs | Axes to cross |
+|--------|------|-----------|--------------|-------|---------------|
+| [x] | 0 | Word endings (pilot) | [word-endings](../grammar/word-endings.md) and each family's page | — | **-l / -m / -n / -r** × closed content roots (overlay moods, clause poles, relations, identity), `/y/` act and polar series, linkers, special pronouns |
+| [x] | 0 | Role-letter structure | [clause](../grammar/clause.md) | — | lean **`l`** (`gl-`) × other role letters; `/w/` × hosts beyond `/ɡ/` `/h/` `/th/`; hosted `/b/` × other hosts; first-position highlight vs the discourse [topic](../grammar/pronouns.md#topic) |
+| [ ] | 1 | Vowel series | [speech-moves](../grammar/speech-moves.md) | 0 | **a / o / e / u** (add / one / order / undo) and stacked pairs × every family that uses the series (acts, polar, joins, hooks, restrictors, sake vowels, ability vowels, stand-ins) — any family using only part of it? |
+| [ ] | 1 | Tone marks | [speech-moves](../grammar/speech-moves.md#tone-marks) | 0 | tone marks × scopes and positions not yet defined |
+| [ ] | 2 | Pronouns | [pronouns](../grammar/pronouns.md), [roles](../grammar/roles.md#role-pointers-family) | 0 | whole-stem **-r** resume × hosts (closed roots, compounds, joins); [role pointers](../grammar/pronouns.md#role-pointers) (`zaxar` / `zaxor` / `zaxer`, stacked pointers) × role letters, role vowels and pointer vowels (`v` `ɡ` `h` `w` are undefined); ordinal (`z=#n`) × roles and `#0`; generic `oben` and topic `ozan` × roles, **-x** and holder seams; special pronouns × roles. Several cells are now **def**; inspect only what remains empty |
+| [ ] | 2 | Plurality | [plurality](../grammar/plurality.md) | 0 | **-x** on hosts where it is currently unused (now defined on role pointers and `/x/` topic nouns, not on `oben` or the linkers) |
+| [ ] | 3 | Numbers | [numbers](../grammar/numbers.md), [numbers-applied](../grammar/numbers-applied.md), [numeric-derivation](../grammar/numeric-derivation.md) | 0 | digitless and exponent forms × role letters not yet assigned; number endings × roles; stance numbers × other stances |
+| [ ] | 4 | Joins and restrictors | [joins](../grammar/joins.md), [restrictors](../grammar/restrictors.md) | 1 | set / rank vowels × endings × arity × role letters |
+| [ ] | 5 | Hooks | [hooks](../grammar/hooks.md) | 1, 4 | hook vowel × ending × use (in-clause, discourse, extra-noun, point-back, span) |
+| [ ] | 6 | Spans | [spans](../grammar/spans.md) | 2, 5 | TYPE × EDGE × ending; topic and ordinal scope inside cites and asides |
+| [ ] | 7 | Join series on other roles | [join-across-roles](../grammar/join-across-roles.md) | 4 | stance joins, join-act verbs, join-relations × vowel and ending |
+| [ ] | 8 | Hosted relations and bars | [relations](../grammar/relations.md), [comparatives](../grammar/comparatives.md) | 4, 5 | each relation × host role (`/ɡ/` `/h/` `/th/` `/w/`); stance bars × other moods |
+| [ ] | 9 | Questions | [questions](../grammar/questions.md) | 1 | fill-ask × roles and families; polar stance × turn positions |
+| [ ] | 10 | Stand-ins and `/x/` words | [dependents](../grammar/dependents.md) | 2, 4, 5 | stand-in vowel × **-rl / -rm / -rth / -rn** × role letter; `/x/` linkers vs topic words × endings and positions (never in a dependent, after a clause join, or in an aside) |
+| [ ] | 11 | Predication | [predication](../grammar/predication.md) | 0 | classification and identity × roles and endings |
+| [ ] | 12 | Mid-word `x` and `th`, role compounds | [x-compounds](../grammar/x-compounds.md), [roles](../grammar/roles.md) | 1, 2 | `x` / `th` families × left-hand types not yet allowed; role compounds × role letters |
+| [ ] | 13 | Mood roots × role letters | [knowing](../grammar/knowing.md), [causation](../grammar/causation.md), [intention](../grammar/intention.md) | 0 | each overlay kind × `/z/` `/d/` `/b/` `/v/` `/ɡ/` `/w/` `/h/` `/th/` (stance vs noun vs adverb readings) |
+| [ ] | 14 | Sakes | [sakes](../grammar/sakes.md) | 12, 13 | sake vowel (`tha` / `the` / `tho` / `thu`) × ending table × role; emotion compose slots |
 
 For each empty cell, record one of:
 
