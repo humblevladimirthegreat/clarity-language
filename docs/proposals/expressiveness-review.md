@@ -5,7 +5,7 @@ Editors only — not linked from grammar pages. Phased plan for a systematic sug
 1. **Gaps** — Is there common English grammar that Agazan cannot express easily, and that is not intentionally discouraged?
 2. **Extensions** — Could existing grammar be extended into other forms (unused slots, other role letters, other endings, other vowels) with intuitive new readings?
 
-This is a **suggestion** pass for Phases 1 and 3: output is a findings ledger plus proposals, not direct edits to grammar pages. Accepted proposals are applied afterwards through the normal grammar-doc workflow ([grammar-docs](../meta/grammar-docs.md), [doc-style](../meta/doc-style.md)).
+Work runs in **batches**, and each batch is reviewed and applied before the next one starts (see [Batch loop](#batch-loop)). There is no separate triage phase and no separate apply phase: a batch's rows are logged, ruled on, and applied through the normal grammar-doc workflow ([grammar-docs](../meta/grammar-docs.md), [doc-style](../meta/doc-style.md)) before the next batch builds its grids on the settled forms.
 
 Status: `[x]` done · `[~]` partial · `[ ]` not started.
 
@@ -15,9 +15,30 @@ Status: `[x]` done · `[~]` partial · `[ ]` not started.
 - **"Easily" means for the learner.** A gap exists when the only route is long, unnatural, ambiguous, or taught far later than English speakers need it. Dev effort (cross-reference churn, parser work) is not a cost — see `AGENTS.md`.
 - **Extensions must be intuitive.** A proposed reading should be guessable from the existing form's meaning (same vowel series, same role-letter semantics, same ending semantics). Reject extensions that merely fill a slot.
 - **Check before proposing.** Look up [unassigned-reserved](../meta/unassigned-reserved.md) (free forms), the lexicon CSVs, and [english.md](../grammar/english.md) (existing English → Agazan mappings) so a proposal neither collides with nor duplicates something already published.
+- **Re-check against the current docs.** The grammar has moved since the pilot batch: resume is whole-stem only (no short prefix resume), `/x/` content words set a [topic](../grammar/pronouns.md#topic), and the pronoun page now also owns role pointers, ordinal, generic (`oben`) and topic (`ozan`) pronouns, with D-17 to D-21 in [design-decisions](../meta/design-decisions.md). Read the owning page, not an older grid, before ruling a cell empty. Roots have also been respelled (`retie-docs`), so re-run `node scripts/parse.mjs --check-lexicon` on any spelling copied from the results file.
 - **No proposal-page links.** New design writeups go in `docs/proposals/` per [proposals](../meta/proposals.md); refer to them by filename in backticks.
 
+## Batch loop
+
+A batch is one wave's grids (or a smaller slice of one). The same loop applies to every batch, whether its rows are extensions (`E-nn`), inconsistencies (`C-nn`), or gaps carried over from Phases 1 and 2. Rows are logged in [extension-results](../meta/extension-results.md).
+
+1. **Build and log.** Build the batch's grids and log each row. Check every candidate spelling with `node scripts/parse.mjs --check-lexicon`, and in context for a competing reading (such as a content resume). Do not edit grammar pages while logging.
+2. **Triage.** Within the batch only: merge duplicate rows, link each gap to an extension that closes it (prefer extensions over new forms), and rank by priority, then by how many rows one change closes. For each P1 row, and any multi-row extension, write a short proposal in `docs/proposals/` first (current route, proposed form, examples with morph glosses, interaction with existing forms, learning level per [learning-levels](../meta/learning-levels.md)).
+3. **Rule.** The language owner rules on every row: adopt, decline, defer (with a reason), or fix (for `C-nn`). Present rows with a recommendation each.
+4. **Apply.** Apply every adopted row and fix in the same pass, before the next batch:
+   - the owning grammar page only, per [grammar-docs](../meta/grammar-docs.md) and [doc-style](../meta/doc-style.md) (a stage page never links the recipe track);
+   - the parser, lexicon / overlay CSVs and tests where a form is added or reads differently, in the same change as the grammar edit;
+   - [english.md](../grammar/english.md) for new English → Agazan mappings;
+   - translation checkpoints for new beginner / intermediate features ([drill-generation](../meta/drill-generation.md));
+   - [unassigned-reserved](../meta/unassigned-reserved.md) (remove used slots, add confirmed *none* cells) and [design-decisions](../meta/design-decisions.md) (accepted and declined readings, so they are not re-raised).
+   - Run `npm run build` and `npm test`.
+5. **Close the batch.** Record each row's outcome in the results file, then start the next batch.
+
+New roots come from `npm run convert-word`, never by hand ([lexicon](../meta/lexicon.md)).
+
 ## Findings ledger
+
+Phase 1 and 2 gap rows were folded into the grammar and [design-decisions](../meta/design-decisions.md) as they were ruled. Any still open are carried into the batch whose mechanism owns them. Phase 3 rows live in [extension-results](../meta/extension-results.md).
 
 ## Phase 3 — Extension sweep (existing grammar, new readings)
 
@@ -28,19 +49,19 @@ For each mechanism, build its applicability grid and inspect the empty cells:
 | Status | Wave | Mechanism | Owning pages | Axes to cross |
 |--------|------|-----------|--------------|---------------|
 | [x] | 0 | Word endings (pilot) | [word-endings](../grammar/word-endings.md) and each family's page | **-l / -m / -n / -r** × closed content roots (overlay moods, clause poles, relations, identity), `/y/` act and polar series, linkers, special pronouns |
-| [ ] | 0 | Role-letter structure | [clause](../grammar/clause.md) | lean **`l`** (`gl-`) × other role letters; `/w/` × hosts beyond `/ɡ/` `/h/` `/th/`; hosted `/b/` × other hosts |
+| [ ] | 0 | Role-letter structure | [clause](../grammar/clause.md) | lean **`l`** (`gl-`) × other role letters; `/w/` × hosts beyond `/ɡ/` `/h/` `/th/`; hosted `/b/` × other hosts; first-position highlight vs the discourse [topic](../grammar/pronouns.md#topic) |
 | [ ] | 1 | Numbers | [numbers](../grammar/numbers.md), [numbers-applied](../grammar/numbers-applied.md), [numeric-derivation](../grammar/numeric-derivation.md) | digitless and exponent forms × role letters not yet assigned; number endings × roles; stance numbers × other stances |
-| [ ] | 1 | Resume and special pronouns | [pronouns](../grammar/pronouns.md) | **-r** resume × hosts (closed roots, compounds, joins); special pronouns × roles |
-| [ ] | 1 | Plurality | [plurality](../grammar/plurality.md) | **-x** on hosts where it is currently unused |
+| [ ] | 1 | Pronouns | [pronouns](../grammar/pronouns.md), [roles](../grammar/roles.md#role-pointers-family) | whole-stem **-r** resume × hosts (closed roots, compounds, joins); [role pointers](../grammar/pronouns.md#role-pointers) (`zaxar` / `zaxor` / `zaxer`, stacked pointers) × role letters, role vowels and pointer vowels (`v` `ɡ` `h` `w` are undefined); ordinal (`z=#n`) × roles and `#0`; generic `oben` and topic `ozan` × roles, **-x** and holder seams; special pronouns × roles. Several cells are now **def**; inspect only what remains empty |
+| [ ] | 1 | Plurality | [plurality](../grammar/plurality.md) | **-x** on hosts where it is currently unused (now defined on role pointers and `/x/` topic nouns, not on `oben` or the linkers) |
 | [ ] | 1 | Vowel series | [speech-moves](../grammar/speech-moves.md) | **a / o / e / u** (add / one / order / undo) and stacked pairs × every family that uses the series (acts, polar, joins, hooks, restrictors, sake vowels, ability vowels, stand-ins) — any family using only part of it? |
 | [ ] | 1 | Tone marks | [speech-moves](../grammar/speech-moves.md#tone-marks) | tone marks × scopes and positions not yet defined |
 | [ ] | 2 | Joins and restrictors | [joins](../grammar/joins.md), [restrictors](../grammar/restrictors.md) | set / rank vowels × endings × arity × role letters |
 | [ ] | 2 | Hooks | [hooks](../grammar/hooks.md) | hook vowel × ending × use (in-clause, discourse, extra-noun, point-back, span) |
-| [ ] | 2 | Spans | [spans](../grammar/spans.md) | TYPE × EDGE × ending |
+| [ ] | 2 | Spans | [spans](../grammar/spans.md) | TYPE × EDGE × ending; topic and ordinal scope inside cites and asides |
 | [ ] | 3 | Join series on other roles | [join-across-roles](../grammar/join-across-roles.md) | stance joins, join-act verbs, join-relations × vowel and ending |
 | [ ] | 3 | Hosted relations and bars | [relations](../grammar/relations.md), [comparatives](../grammar/comparatives.md) | each relation × host role (`/ɡ/` `/h/` `/th/` `/w/`); stance bars × other moods |
 | [ ] | 4 | Questions | [questions](../grammar/questions.md) | fill-ask × roles and families; polar stance × turn positions |
-| [ ] | 4 | Stand-ins | [dependents](../grammar/dependents.md) | stand-in vowel × **-rl / -rm / -rth / -rn** × role letter |
+| [ ] | 4 | Stand-ins and `/x/` words | [dependents](../grammar/dependents.md) | stand-in vowel × **-rl / -rm / -rth / -rn** × role letter; `/x/` linkers vs topic words × endings and positions (never in a dependent, after a clause join, or in an aside) |
 | [ ] | 4 | Predication | [predication](../grammar/predication.md) | classification and identity × roles and endings |
 | [ ] | 4 | Mid-word `x` and `th`, role compounds | [x-compounds](../grammar/x-compounds.md), [roles](../grammar/roles.md) | `x` / `th` families × left-hand types not yet allowed; role compounds × role letters |
 | [ ] | 5 | Mood roots × role letters | [knowing](../grammar/knowing.md), [causation](../grammar/causation.md), [intention](../grammar/intention.md) | each overlay kind × `/z/` `/d/` `/b/` `/v/` `/ɡ/` `/w/` `/h/` `/th/` (stance vs noun vs adverb readings) |
@@ -54,37 +75,20 @@ For each empty cell, record one of:
 - **forced** — a reading exists but must be taught as a new rule, or a different already-live reading is just as guessable → log as `E-nn` with verdict **forced**.
 - **none** — leave unused; mark in [unassigned-reserved](../meta/unassigned-reserved.md) if not already listed.
 
-**Batches.** A batch is one wave's grids (or a smaller slice of one). Rows within a batch are resolved before the next batch starts, so later grids build on settled forms:
+Each batch follows the [Batch loop](#batch-loop). Inconsistencies in the existing grammar found while building a grid are logged as `C-nn` rows in the same file and ruled in the same batch.
 
-1. Build the batch's grids and log `E-nn` / `C-nn` rows in [extension-results](../meta/extension-results.md). Do not edit grammar pages while logging.
-2. The language owner rules on every row: adopt, decline, or fix (for `C-nn`).
-3. Apply each adopted row and fix in the same pass, following Phase 5's steps: owning grammar page, parser and tests, lexicon CSVs, translation checkpoints, [unassigned-reserved](../meta/unassigned-reserved.md), and [design-decisions](../meta/design-decisions.md) for settled limits. Run `npm run build` and `npm test`.
-4. Mark each row's outcome in the results file, then start the next batch.
+**Exit:** every grid inspected and every batch's rows ruled and applied.
 
-Every candidate spelling is checked with `node scripts/parse.mjs --check-lexicon` when it is logged, and in context for a competing reading (such as a content resume), so collisions show up before the ruling. Inconsistencies in the existing grammar found while building a grid are logged as `C-nn` rows in the same file.
+## Phase 4 — Close-out
 
-**Exit:** every grid inspected and every batch's rows resolved. Cross-link each adopted extension to any gap it closes.
+No new triage or application happens here; both happen per batch. This phase only checks that nothing was left behind.
 
-## Phase 4 — Triage and proposals
+- [ ] Revisit rows deferred at a batch ruling and any open Phase 2 row; each is now ruled and applied, or recorded as deferred with a reason.
+- [ ] Cross-check across batches: duplicate rows that slipped through, and extensions that later batches made redundant or contradictory.
+- [ ] Confirm every **awkward** / **missing** row is **covered**, **by design**, or deferred with a reason.
+- [ ] Run `npm run build` and `npm test` on the final tree.
 
-- [ ] Merge duplicates (Phase 1 rows, any Phase 3 row deferred at its batch ruling, plus any open Phase 2 row); link gaps to extensions that close them (preferring extensions over new forms).
-- [ ] Rank by priority, then by how many ledger rows one proposal closes.
-- [ ] For each P1 item and any multi-row extension, write a short proposal in `docs/proposals/` (current route, proposed form, examples with morph glosses, interaction with existing forms, learning level per [learning-levels](../meta/learning-levels.md)).
-- [ ] Present proposals to the language owner in batches with a recommendation each; record decisions (accepted / rejected / by design) in the ledger.
-
-**Exit:** every **awkward** / **missing** row is either answered with a proposal decision or deferred with a reason.
-
-## Phase 5 — Apply accepted proposals
-
-- [ ] Apply each accepted proposal to its owning grammar page only (one agent per page), following [grammar-docs](../meta/grammar-docs.md) and [doc-style](../meta/doc-style.md).
-- [ ] Update lexicon / overlay CSVs and the parser where the proposal adds forms; add parser tests.
-- [ ] Update [english.md](../grammar/english.md) with new English → Agazan mappings.
-- [ ] Remove used slots from [unassigned-reserved](../meta/unassigned-reserved.md).
-- [ ] Add each accepted and rejected decision to [design-decisions](../meta/design-decisions.md) so it is not re-raised.
-- [ ] Add translation checkpoints for new beginner / intermediate features per [drill-generation](../meta/drill-generation.md).
-- [ ] Run `npm run build` and `npm test`.
-
-**Exit:** build and tests clean; ledger rows marked **covered**.
+**Exit:** build and tests clean; the results file has no row without an outcome.
 
 ## Progress
 
@@ -93,6 +97,5 @@ Every candidate spelling is checked with `node scripts/parse.mjs --check-lexicon
 | 0 — Setup | [x] | 2026-09-25 |
 | 1 — English coverage checklist | [x] | 2026-09-25 |
 | 2 — Real-text sampling | [~] | 2026-10-01 |
-| 3 — Extension sweep | [~] | 2026-10-02 |
-| 4 — Triage and proposals | [ ] | |
-| 5 — Apply | [ ] | |
+| 3 — Extension sweep (triage and apply per batch) | [~] | 2026-10-02 |
+| 4 — Close-out | [ ] | |

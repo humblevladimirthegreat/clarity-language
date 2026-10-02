@@ -14,7 +14,6 @@ Prosody
 -final exam
 -finish lexicon fill (partial)
 -finish proposals-mnemonic
--review j and x. They seem to have some overlapping concepts, suggest if it makes sense for some jobs to swap between them
 -review logical deduction
 
 save for near end of limit resets:
