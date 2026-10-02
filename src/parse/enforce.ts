@@ -15,6 +15,7 @@ import { linkerEnglish } from "./linkers.js";
 import { CLOSED } from "../closed-roots.js";
 import { isGenericPronoun, ordinalPronounPlace } from "./resolve.js";
 import { parseHookCompoundCite } from "./hook-compounds.js";
+import type { HookJob } from "./hook-jobs.js";
 import { SentenceParseError } from "./sentence-parser.js";
 import {
   Bang,
@@ -193,11 +194,20 @@ function tokenWord(token: IToken | undefined): LexWord | undefined {
 /** Stacked hook **-r** (`oer` / `uar` / `uer`) is only a span member between same-role words (hooks.md § Spans). */
 function enforceStackedHookR(word: LexWord, tokens: IToken[], i: number): void {
   if (word.family.kind !== "hook" || word.ending !== "r" || word.family.form.length < 3) return;
+  if (["ao", "ae", "uo"].includes(word.family.form.slice(0, -1))) throw new ConstructionError("stackedHookResume", word.raw);
   let j = i - 1;
   while (tokenWord(tokens[j])?.pos === "w") j -= 1;
   const prev = tokenWord(tokens[j]);
   const next = tokenWord(tokens[i + 1]);
   if (!prev?.pos || prev.pos !== next?.pos) throw new ConstructionError("stackedHookResume", word.raw);
+}
+
+/** Hook vowels with no reading in a placement: same-role `ao` / `ae` / `uo`, and discourse `oe` / `ua` / `uo` / `ue` (hooks.md). */
+function enforceHookSlot(word: LexWord, job: HookJob | undefined): void {
+  if (word.family.kind !== "hook") return;
+  const vowels = word.family.form.slice(0, -1);
+  if (job === "clause" && (vowels === "ao" || vowels === "ae" || vowels === "uo")) throw new ConstructionError("hookSameRoleStack", word.raw);
+  if (job === "discourse" && ["oe", "ua", "uo", "ue"].includes(vowels)) throw new ConstructionError("hookDiscourseStack", word.raw);
 }
 
 function isRespectively(word: LexWord): boolean {
@@ -526,9 +536,10 @@ function enforceUnitList(units: Unit[], tables: ClassifyTables): void {
     if (unit.kind === "hook" && unit.job === "clause") enforceSameRole(unit.word, units[i - 1], units[i + 1]);
     if (unit.kind === "hook" && unit.frame) enforceFrame(unit.word, unit.frame, tables);
     if (unit.kind === "hook" && !unit.frame) enforceHookStandIn(unit.word, units[i + 1]);
-    if (unit.kind === "hook" && unit.word.ending === "r") {
+    if (unit.kind === "hook") enforceHookSlot(unit.word, unit.job);
+    if (unit.kind === "hook" && unit.word.ending === "r" && unit.job === "resume") {
       const next = units[i + 1];
-      if (next?.kind === "np" && next.coord.level === "b") throw new ConstructionError("hookResumeNoun", unit.word.raw);
+      if (next?.kind === "np") throw new ConstructionError("hookResumeNoun", unit.word.raw);
     }
   });
   if (hAsOf > 1 || thAsOf > 1) throw new ConstructionError("asOfPerHost", "two as-of pairs");
@@ -556,6 +567,9 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
     },
     enter(node) {
       switch (node.kind) {
+        case "utterance":
+          if (node.utterance.left.hook) enforceHookSlot(node.utterance.left.hook, "discourse");
+          return;
         case "body":
           enforceVerbless(node.body.clause.units);
           return;

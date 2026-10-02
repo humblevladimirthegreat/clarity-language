@@ -118,8 +118,9 @@ Source: [join-across-roles.md](../grammar/join-across-roles.md#stance-joins)
 
 Source: [hooks.md](../grammar/hooks.md#spans)
 
-- In-clause **`aol`** / **`ael`** / **`uol`** between same-role words — no reading (extra-noun and discourse uses unaffected)
-- Stacked hook **-r** outside a span (no same-role word on both sides) — not permitted
+- In-clause **`ao`** / **`ae`** / **`uo`** (`aol` / `ael` / `uol` and **-m** / **-n**) between same-role words — no reading; the parser rejects them (extra-noun and discourse uses unaffected)
+- Stacked hook **-r** outside a span (no same-role word on both sides) — not permitted; **`aor`** / **`aer`** / **`uor`** are not words
+- Discourse **`oel`** / **`ual`** / **`uol`** / **`uel`** (and **-m** / **-n**) at the front of a sentence — no reading; the parser rejects them
 
 ## Role compounds
 

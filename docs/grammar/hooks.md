@@ -568,7 +568,7 @@ At the front of a sentence (no `/b/` after it), stacked **`ael`** is a discourse
 >
 > "In fact, Alahen sleeps."
 
-Stacked **`aol …`** says this sentence is one case of what you just said, like English *For example, …*. (cue: **ao** ≈ add one: a single sample) With **-m**, `aom …` adds *among others*.
+Stacked **`aol …`** says this sentence is one case of what you just said, like English *For example, …*. (cue: **ao** ≈ add one: a single sample) With **-m**, `aom …` adds *among others* and `aem …` adds *in fact, and maybe more*. No other stacked hook opens a sentence: for *next*, *by the way* and *on the contrary* use a [linker](dependents.md#sentence-linkers).
 
 > `zavahal vowogal. aol zalahen vowogal.`
 >
@@ -679,7 +679,7 @@ In reported speech, the speaker is still whoever says the whole sentence. After 
 
 ### Point back (`or` / `ar` / `ur` / `er`) {#hook-resume}
 
-A hook with **-r** points back, the way [resume **-r**](pronouns.md#resume-r) does on a noun. It takes no noun to its right. Only the plain vowels point back: `ar`, `er`, `or`, `ur`. (A [span hook](#spans) with **-r** has words on both sides and means something else.)
+A hook with **-r** points back, the way [resume **-r**](pronouns.md#resume-r) does on a noun. It takes no noun to its right, and none to its left to pair with (it is not a same-role hook). Only the plain vowels point back: `ar`, `er`, `or`, `ur`. (A [span hook](#spans) with **-r** has words on both sides and means something else.)
 
 After the verb, a resume hook points back to a landmark already in play. You do not repeat the `/b/` word.
 

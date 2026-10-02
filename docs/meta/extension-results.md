@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Findings from Phase 3 of the expressiveness review (`docs/proposals/expressiveness-review.md`): every productive mechanism crossed with every place it could apply, and each empty cell judged. Rows are logged per batch, ruled by the language owner, and applied before the next batch starts; each row's **Outcome** records the ruling.
 
-Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Other mechanisms not started.
+Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Other mechanisms not started.
 
 ## How to read this file
 
@@ -702,6 +702,84 @@ Every `/v/` item is in the join-across-roles grid, and every `/x/` cell is a cla
 - Bare `hol` `hom` `haol` `haom` `hul` `hum` `huol` `huom` `hel` `hem` `hael` `haem` `hoel` `hoem` and their `/w/` twins (E-32); `her` / `wer` (E-31, already listed, with a corrected note); `wazem` before any join but an **a**-list.
 
 Confirmed **def** with nothing to add: the ten series on `/z/` `/d/` `/b/` at every arity and ending; the single-vowel **-r** on every join role; **-n** as a named package on `/z/` `/d/` `/b/`; scope islands and SHARED placement; `/h/` **-l** / **-m** on every defined vowel.
+
+## Hooks
+
+Owning page: [hooks](../grammar/hooks.md). Wave 5. Cells checked with `node scripts/parse.mjs` (2026-10-02), sweeping the ten series (**a o e u**, **ao ae oe ua uo ue**) × **-l** / **-m** / **-n** / **-r** × five placements. The parser is loose on hooks: only the role check (`hookSameRole`), the point-back noun check (`hookResumeNoun`) and the stacked **-r** check (`stackedHookResume`) reject anything, so a form that parses is not a reading. Readings below come from hooks.md. Hooks as `/w/` hosts and hook compounds are **def** and added no rows. Ending cells on hooks follow the [ending patterns](#ending-patterns-already-in-use) (**-l** closed, **-m** open, **-n** titled phrase, **-r** unspecified member / point back).
+
+### Grid
+
+| Series | Same-role | Discourse (front) | Extra noun (+ `/b/`) | Point back (**-r**, no noun) | Fused (advanced) |
+|--------|-----------|-------------------|----------------------|------------------------------|------------------|
+| **a** | def *including* | def *additionally* | def *in* / *amid* | def `ar` | def *enter* / *mill amid* |
+| **o** | def *instead* | def *instead* | def *at* / *near* | def `or` | def *attend* / *adjoin* |
+| **e** | def *rather* | def *in other words* | def *for* / *used by* | def `er` | def *serve* / *have in use* |
+| **u** | def *except* | def *except* | def *from* / *away from* | def `ur` | def *leave* / *recede* |
+| **ao** | E-34 (listed none) | def *for example* (`aom` *among others*) | def *on* / *over* | none (E-35, D-line) | def *mount* / *cover* |
+| **ae** | E-34 (listed none) | def *in fact* (`aem` gen, C-14) | def *using* / *by* | none (E-35) | def *wield* / *channel* |
+| **oe** | def span *through* | E-33 | def *toward* / *in the direction of* | span **-r** only (E-35) | def *head for* / *orient* |
+| **ua** | def span *strictly between* | E-33 | def *out of* / *out from among* | span **-r** only (E-35) | def *exit* / *pick out* |
+| **uo** | E-34 (listed none) | E-33 | def *through* / *by way of* | none (E-35) | def *traverse* / *relay* |
+| **ue** | def span *outside* | E-33 | def *against* / *contrary to* | span **-r** only (E-35) | def *oppose* / *defy* |
+
+By ending: **-l** / **-m** are **def** on every defined cell (closed / open). **-n** is **def** on every placement by one rule (the hook titles a proper-name phrase). **-r** is **def** only as the four plain point-back hooks, and as the span fill-ask on `oe` / `ua` / `ue` (always a word each side). Extra-noun **-r** is rejected by design (`hookResumeNoun`).
+
+The extra-noun column is full: all ten series have both **-l** and **-m**, so no unused slot remains there. The only empty cells are the ones logged below.
+
+### Rows
+
+#### E-33 — discourse stacks `oel` / `ual` / `uol` / `uel` (and **-m**) · forced · P3
+
+- **Proposed reading:** the extra-noun cue carried to the front of a sentence, as `aol` / `ael` already are: `oel …` *Next, …* / *Heading there, …*; `ual …` *Aside from that, …*; `uol …` *By the way, …*; `uel …` *On the contrary, …*.
+- **Example:** `uel zalahen varahal.` — against | z-Alahen | v-run — "On the contrary, Alahen runs." Parses with no reading.
+- **Pattern:** extra-noun stacks reused at the front (`aol` *for example*, `ael` *in fact*)
+- **Current route:** `xevavem` *next*, `xavazem` *by the way*, `xagezal` *on the contrary* (dependents § sentence linkers); *apart from that* is `al …` / `ur …` ([design-decisions](design-decisions.md#genitive-and-other-free-hook-slots))
+- **Better than current route:** no. Every guess already has a linker, and a second way to open a sentence would split the same job between the linker and hook families. The cues also drift: `oe` says an ordered path, which a learner reads as *next* or as *toward*, so no single reading is guessable.
+- **Conflicts and notes:** the two readings **`aol …`** and **`ael …`** work because the cue *add one case* and *add a further point* are about adding. The other four stacks have no adding cue.
+- **Closes:** —
+- **Recommendation:** decline; add the cells to unassigned-reserved (only the D-line mentions them today) and extend the D-line with the reason.
+- **Outcome:** declined — design-decisions (hooks), unassigned-reserved; the parser rejects the forms (`hookDiscourseStack`).
+
+#### E-34 — same-role `aol` / `ael` / `uol` · intuitive but redundant (`aol`), forced (`ael`, `uol`) · P3
+
+- **Proposed reading:** `aol` one sample of A (*such as B*, the same cue as discourse `aol …` *for example*); `ael` *especially B*; `uol` *via B*.
+- **Example:** `zavahal aol zazawan.` — "The family, for example Azawan." Parses with no reading.
+- **Pattern:** `aol …` for example, carried inside the clause
+- **Current route:** `am` (*including, and maybe more*; hooks.md says *such as* is `am`), `zem` for *especially* ([say-amounts](../grammar/say-amounts.md#focus-words)), and an extra-noun `uol` after the verb for *via*
+- **Better than current route:** no. `am` already says B is part of A and not the whole, which is what *such as* says. The `aol` / `am` difference (a sample versus a membership claim) is too fine to teach as two words.
+- **Conflicts and notes:** already declined once for `aol` *namely* ([design-decisions](design-decisions.md#genitive-and-other-free-hook-slots)), and listed in unassigned-reserved. `ao` / `ae` / `uo` stay unused in this slot.
+- **Closes:** *such as*, *especially*, *via*: covered
+- **Recommendation:** decline; keep reserved; no change to unassigned-reserved beyond naming the whole `ao` / `ae` / `uo` same-role cell.
+- **Outcome:** declined — design-decisions (hooks); the parser rejects the forms (`hookSameRoleStack`).
+
+#### E-35 — stacked point-back (`aor` / `aer` / `uor`, and `oer` / `uar` / `uer` outside a span) · intuitive but redundant · P3
+
+- **Proposed reading:** a resume hook for the extra-noun stacks: `aor` *on it*, `aer` *with it*, `uor` *through there*, with `oer` / `uar` / `uer` *toward there* / *out of there* / *against it*.
+- **Example:** `zodogal varahal aor.` — "A dog runs on it (the place already named)." `aor` is not a word at all today (syntax error).
+- **Pattern:** the four plain point-back hooks (`ar` `er` `or` `ur`)
+- **Current route:** the hook + a resumed `/b/` (`aol bahazar` *on the house*, `oel bahazar` *toward it*), which already names the landmark without a pointer
+- **Better than current route:** no. Only four plain hooks carry a place, source or goal; the other six name a relation to a landmark, and the landmark's whole stem is the reliable way to point.
+- **Conflicts and notes:** `oer` / `uar` / `uer` are already the span fill-ask (*some one in the range*), so a point-back reading would collide with a defined reading; `aor` / `aer` / `uor` would be the only stacked forms with a resume and no span. Already settled in [design-decisions](design-decisions.md#genitive-and-other-free-hook-slots) for `aor`.
+- **Closes:** *toward there*, *through there*: covered
+- **Recommendation:** decline; widen the D-line to the other five cells so it is not re-raised.
+- **Outcome:** declined — design-decisions (hooks); `aor` / `aer` / `uor` are no longer words (`stackedHookResume`).
+
+### Inconsistencies (wave 5)
+
+#### C-14 — the parser accepts hook forms the docs call unassigned, and one fails without a pointer · found in hooks grid
+
+- **Where:** [hooks § Point back](../grammar/hooks.md#hook-resume), [hooks § Spans](../grammar/hooks.md#spans), [unassigned-reserved § Hooks — in-clause](unassigned-reserved.md#hooks--in-clause), parser (`enforce.ts`)
+- **Problem:** (1) `zavahal aol zazawan`, `zavahal ael zazawan`, `zavahal uol zazawan` and the `ao` / `ae` / `uo` same-role forms parse silently, although unassigned-reserved says they have no reading. (2) `zavahal ar zazawan` and `zazawan or zahaben vezebal` (a plain point-back hook with a noun on each side) parse silently, although hooks.md says a point-back hook takes no noun to its right and the only same-role **-r** is the stacked span fill-ask. (3) `oel` / `ual` / `uol` / `uel` at the front of a sentence parse with no reading (E-33). (4) `aor` / `aer` / `uor` fail at the word level with *Expected [aeouhwdybgzmnvlr] but end of input found*, with no pointer, unlike `oer` / `uar` / `uer`, which have `stackedHookResume`. (5) hooks.md gives no reading for discourse `aem …` (only `aom …` is stated), though the general **-m** rule makes it *in fact, and maybe more*.
+- **Suggested ruling:** reject (1), (2) and (3) with messages pointing at `am`, the span hooks and the linker table; give (4) the same pointer as the stacked **-r** rule (never a word); in hooks.md state the **-m** reading for `aem` and say once that a point-back hook has nothing on its right.
+- **Outcome:** fixed — the parser rejects same-role `ao` / `ae` / `uo`, discourse `oe` / `ua` / `uo` / `ue`, and a point-back hook with a noun on its right, and gives `aor` / `aer` / `uor` the stacked **-r** pointer; hooks.md states `aem …` and that a point-back hook takes no noun.
+
+### None (to add to unassigned-reserved, if the rows above are declined)
+
+- Discourse `oel` / `oem`, `ual` / `uam`, `uol` / `uom`, `uel` / `uem` (E-33).
+- Same-role `ao`, `ae`, `uo` at every ending (E-34; `aol` / `ael` / `uol` already listed).
+- Stacked point-back **-r** `aor` / `aer` / `uor` (E-35); `oer` / `uar` / `uer` stay span-only.
+
+Confirmed **def** with nothing to add: all four plain vowels at **-l** / **-m** in the three placements, the ten extra-noun series at **-l** / **-m**, hook **-n** as a title, `/w/` before every hook placement, parallel chains, the fused compounds, and the span series at every ending.
 
 ## Inconsistencies
 

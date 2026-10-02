@@ -543,7 +543,7 @@ hook
 
 HookForm
   = ("ao" / "ae" / "oe" / "ua" / "uo" / "ue" / [aeou]) [lmn] { return text(); }
-  / ("oe" / "ua" / "ue" / [aeou]) "r" { return text(); }
+  / ("ao" / "ae" / "oe" / "ua" / "uo" / "ue" / [aeou]) "r" { return text(); }
 
 // ── Prefixed words (PoS + body) ─────────────────────────────────────────────
 
