@@ -272,7 +272,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 6 | `speech-moves.md` | **exists** | Turn start; call a person; conventional interjection; statement / question / command / prohibition; omit recoverable **`yal`** | Recycle clause bodies and house names; no hooks, polar stance, soft forms, or numbers |
 | 7 | `dependents.md` | **exists** | Two-sentence *who / that / which*; **`darl` last**; adverbial subordinators (`thevem` / `thoyem` / `thedam` / `hezom` / `huwem` / `homam` / `habam` / `henum` / `hogom` **`barl`**; *despite* = **`hezom`** + `/b/` noun); `/x/` continue vs `/y/` turn; `/x/` linker may start the next written sentence after `.` | Do not use nested **`barl`**, letter **-r** mechanism. Recycle speech-moves **`yol`/`yel`/`yul`** |
 | 13 | `relations.md` | **exists** | Hosted pair for simile **`humum`**, exchange **`hehem`**, proxy **`hadem`** | Recycle clause hosted `/b/` and hooks extra-noun. No *between*, no of-relations, no **`barl`**. Not **`hahadam`** |
-| 8 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`amago` / `ehodo` / `aha` / `una`** (when the *role* is the point); inclusive *we* **`aha`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
+| 8 | `pronouns.md` | **exists** | Whole-stem **-r**; role pointers (`zaxar`, `duxar`, `daxer`, `zaxor`); specials **`amago` / `ehodo` / `aha` / `una`** (when the *role* is the point); inclusive *we* **`aha`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
 | 8 | `plurality.md` | **exists** | Associative **-x** (`-lx` / `-nx` / `-rx`); not agreement; person-role **-x** (address set vs name…**-x**) | **`aha`** as the *not this* for inclusive *we*. **`amago`/`ehodo`** only on person-role items |
 | 9 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zodogal`; identity **`gugol` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`azavo` / `uzuba`) OK if already taught in this stage |
 | 10 | `joins.md` | **exists** | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / single-item / standalone starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask) | No hooks, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
@@ -358,7 +358,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Hosted *as-of* (`huhum` / `huram`) | `relations.md` Advanced |
 | Remaining `/x/` linkers, nested **`barl`**, stand-in vowels | `dependents.md` Intermediate |
 | **-l** / **-m** / **-n** as a *choice* on a citation | `word-endings.md` Beginner |
-| Letter/full-root **-r** algorithm; **`amago`/`ehodo`/`aha`/`una`** | `pronouns.md` Beginner |
+| Whole-stem **-r** and role pointers; **`amago`/`ehodo`/`aha`/`una`** | `pronouns.md` Beginner |
 | Associative **-x** | `plurality.md` Beginner |
 | **SAME** `gugol` | `predication.md` Beginner |
 | Phrase joins, **`zal`/`zam`/`zel`**, negation **`u`** | `joins.md` Beginner |

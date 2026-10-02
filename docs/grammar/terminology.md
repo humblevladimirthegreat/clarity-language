@@ -435,12 +435,6 @@ A claim that something **will** happen: an evidential channel plus the later off
 
 [Knowing](knowing.md#forecast)
 
-### Full-root resume / short resume
-
-Whole root + **-r** vs prefix through the second vowel.
-
-[Pronouns](pronouns.md)
-
 ### Greeting / conversation length
 
 A named citation is a hello (`azawan.`). Add mid-word **`x`** plus **`a`** / **`e`** / **`o`** / **`u`** to say how long the conversation is expected to last: open-ended, a few minutes, one slot, or passing. At departure, **`xen`** means leaving soon, **`xon`** about to leave, and **`xun`** leaving now. When people set different lengths at arrival, the lesser bid holds.
@@ -669,7 +663,7 @@ Join-shaped `/h/` `/w/` *when the host applies*.
 
 ### Resume
 
-Content / span / number **-r** pointing back.
+Content / span / number **-r** pointing back. A content resume spells the earlier word’s whole stem.
 
 [Pronouns](pronouns.md), [spans](spans.md), [numbers](numbers.md#number-endings)
 
@@ -689,6 +683,12 @@ Prefix-less *including / rather / instead / except*, discourse glue, extra-noun 
 [Role compounds](roles.md#role-compounds)
 
 **Compare with:** *sitting guard* / *teacher* is this stem on `/ɡ/` with a non-resume ending ([which noun, with resume and kinds](say-people-places.md#which-noun-intermediate)). Resume **-r** is *the one teaching* (this instance), not the kind.
+
+### Role pointer
+
+Role letter + role vowel + **`x`** + pointer vowel + **-r** (`zaxar`): a participant of an earlier event (**`a`** the latest one with that role, **`o`** the other one) or of this sentence (**`e`**, a reflexive).
+
+[Pronouns](pronouns.md#role-pointers) · [Role compounds](roles.md#role-pointers-family)
 
 ### Role letter
 

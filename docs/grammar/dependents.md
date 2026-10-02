@@ -385,7 +385,7 @@ In a new turn with its own act word, the act word comes first and the linker sta
 
 *Therefore* needs two sentences. To tie the result to the degree in one sentence (*so tired that he sleeps*), put the pole **`hodum`** after the degree and the result after **`barl`**. The pole uses the same root as *therefore*. Unlike **`hogom`** *so that*, the result really happened.
 
-> `zazawan welavam gadadal hodum barl zazar vezebal.`
+> `zazawan welavam gadadal hodum barl zazawar vezebal.`
 >
 > [z-Azawan | [w-very | g-tired]] | [h-so-result | b-that-clause] | z-←Azawan | v-sleep
 >

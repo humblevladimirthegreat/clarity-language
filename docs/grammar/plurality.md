@@ -20,9 +20,17 @@ To point back to that group (or to a prior person **and** their associates), add
 
 > `zazawarx vehahel.`
 >
-> z-←Azawan.full-x | v-sit
+> z-←Azawan-x | v-sit
 >
 > "They (that one and associates) sit."
+
+A [role pointer](pronouns.md#role-pointers) takes **-x** the same way: that one and associates, or the whole group when the earlier slot held a joined list.
+
+> `zazawan vowogal. zaxarx vehahel.`
+>
+> z-Azawan | v-walk . z-←agent.same-x | v-sit
+>
+> "Azawan walks. They and associates sit."
 
 A first mention of a **kind as a group in this situation** uses **-lx** (concrete) or **-mx** (abstract). Bare **-l** / **-m** still introduce; **-lx** / **-mx** introduce an **indefinite group** (a set in this situation, not anchor plus associates).
 
@@ -182,7 +190,7 @@ z-Alahen-x | d-Ahaben | v-see
 ::: details Show answer
 `zazawarx dawahel vobohol.`
 
-z-←Azawan.full-x | d-wine | v-pour
+z-←Azawan-x | d-wine | v-pour
 :::
 
 **6.** *Alahen and associates sneak.*
@@ -260,7 +268,7 @@ z-Alahen-x | b-Azawan | v-tell
 
 ::: details Show answer
 
-z-←Azawan.full-x | d-knife | v-see
+z-←Azawan-x | d-knife | v-see
 
 *They (Azawan and associates) see a knife.*
 :::

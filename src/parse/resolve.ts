@@ -4,14 +4,18 @@ import type {
   AskRecord,
   BodyClause,
   Clause,
-  ContentMatch,
   CoordShared,
+  Hosted,
   IslandUnit,
   LexWord,
+  MorphWord,
   NpPackage,
+  NpCoord,
   NumberMarker,
   ParseResult,
+  PointerVowel,
   ResolveInfo,
+  RoleVowel,
   SharedRecord,
   SharedRole,
   SpanUnit,
@@ -20,8 +24,8 @@ import type {
   VpCoord,
   WritingBracket,
 } from "./types.js";
-import { isDigitless, isRhetorical, KIND_SERIES, resumeCut, SCALE_SERIES } from "./series.js";
-import { isGreeting, isSharedGPackage, SKIP_CONTENT, visitResult, type Visitor } from "./ast-walk.js";
+import { isDigitless, isRhetorical, KIND_SERIES, SCALE_SERIES } from "./series.js";
+import { isGreeting, isScaleShared, isSharedGPackage, SKIP_CONTENT, visitResult, type Visitor } from "./ast-walk.js";
 import { CLOSED } from "../closed-roots.js";
 
 const ROLE_FRAME_POS = new Set(["z", "d", "b", "v", "g", "h", "th"]);
@@ -29,10 +33,19 @@ const ROLE_FRAME_POS = new Set(["z", "d", "b", "v", "g", "h", "th"]);
 type SpanType = "a" | "e" | "o" | "u";
 
 type Antecedent =
-  | { kind: "content"; word: LexWord; roots: string[] }
+  | { kind: "content"; word: LexWord; stem: string }
   | { kind: "span"; word: LexWord; typeVowel: SpanType }
   | { kind: "number"; word: LexWord; identity: string }
-  | { kind: "roleFrame"; word: LexWord; roots: string[] };
+  | { kind: "roleFrame"; word: LexWord; stem: string };
+
+/** A slot's filler: one word, or a joined group closed by its join word (pronouns.md#role-pointers). */
+type Filler = { words: LexWord[]; join?: LexWord };
+
+/** One predicate and the participants a role pointer can read from its clause (pronouns.md#role-pointers). */
+type Anchor = { predicate: LexWord; fillers: Partial<Record<RoleVowel, Filler>> };
+
+/** An open clause: its own anchor (absent with no predicate) and how many anchors came before it. */
+type OpenClause = { anchor?: Anchor; before: number };
 
 /** A name in the conversation's introduction order (pronouns.md#ordinal-pronouns). */
 type Introduced = { key: string; word: LexWord };
@@ -48,14 +61,16 @@ type Ctx = {
   /** This utterance is a goodbye, so its greeting introduces no one. */
   goodbye: boolean;
   anaphors: AnaphorBind[];
+  /** Predicates in order, one per clause body outside spans; role pointers pick from these. */
+  anchors: Anchor[];
+  clauses: OpenClause[];
+  /** Referent identity of each word a pointer resolved to (a group has one key). */
+  referents: Map<LexWord, string>;
   asks: AskRecord[];
   shared: SharedRecord[];
   gaps: LexWord[];
   question: boolean;
 };
-
-/** Letter-pronoun stem: cut through the 2nd vowel ([pronouns.md](docs/grammar/pronouns.md)). */
-export const letterPrefix = resumeCut;
 
 /** Writing / speech number markers that share referential identity. */
 export function numberMarkerIdentity(marker: NumberMarker): string {
@@ -75,11 +90,18 @@ export function writingSpanType(bracket: WritingBracket): SpanType {
   return "u";
 }
 
-/** How a `-r` stem lines up with an antecedent root ([pronouns.md](docs/grammar/pronouns.md)). */
-export function contentMatch(pronounRoot: string, antecedentRoot: string): ContentMatch | null {
-  if (pronounRoot === antecedentRoot) return "fullRoot";
-  if (pronounRoot === letterPrefix(antecedentRoot)) return "letter";
-  return null;
+/**
+ * The whole stem of a word: its letters between the role letter and the ending (`odoga` of
+ * `zodogal`, `owogala` of *enter* `vowogalal`, `owogaxa` of *can walk* `vowogaxal`). A content
+ * **-r** resumes only a word with the identical stem ([pronouns.md](docs/grammar/pronouns.md#resume-r)).
+ */
+export function wholeStem(word: MorphWord): string {
+  let body = word.raw;
+  const prefix = word.gl ? "gl" : (word.pos ?? "");
+  if (body.startsWith(prefix)) body = body.slice(prefix.length);
+  if (word.plural && body.endsWith("x")) body = body.slice(0, -1);
+  if (word.ending && body.endsWith(word.ending)) body = body.slice(0, -word.ending.length);
+  return body;
 }
 
 function contentRoots(word: LexWord): string[] {
@@ -94,17 +116,16 @@ function contentRoots(word: LexWord): string[] {
   return [];
 }
 
-function roleRoots(word: LexWord): string[] {
+/** The event stem a role compound names, or that a later role compound **-r** can name (roles.md#role-compounds). */
+function roleStem(word: LexWord): string | undefined {
   const family = word.family;
-  if (family.kind === "x" && family.xFamily === "role") return family.rightRoots ?? [];
-  if (word.reading === "joinRelation") return contentRoots(word);
-  if (family.kind === "content" && word.pos && ROLE_FRAME_POS.has(word.pos)) {
-    return family.roots;
-  }
+  if (family.kind === "x" && family.xFamily === "role") return family.rightRoots?.join("x");
+  if (word.reading === "joinRelation") return contentRoots(word).length > 0 ? wholeStem(word) : undefined;
+  if (family.kind === "content" && word.pos && ROLE_FRAME_POS.has(word.pos)) return wholeStem(word);
   if (family.kind === "x" && family.xFamily === "compound" && word.pos && ROLE_FRAME_POS.has(word.pos)) {
-    return [...family.leftRoots, ...(family.rightRoots ?? [])];
+    return wholeStem(word);
   }
-  return [];
+  return undefined;
 }
 
 function spanTypeOf(word: LexWord): SpanType | undefined {
@@ -184,6 +205,12 @@ function isRoleAnaphor(word: LexWord): boolean {
   return word.family.kind === "x" && word.family.xFamily === "role" && word.ending === "r";
 }
 
+/** A role pointer, on its own or in a holder seam's holder slot (`thunemaxar`). */
+function isPointer(word: LexWord): boolean {
+  const family = word.family;
+  return family.kind === "x" && (family.xFamily === "pointer" || (family.xFamily === "holder" && family.pointerVowel !== undefined));
+}
+
 /** A holder's own **-r** resumes the person whose view it is (`thevemazawar`, knowing.md#holder). */
 function holderRoots(word: LexWord): string[] {
   const family = word.family;
@@ -196,7 +223,7 @@ function isContentAnaphor(word: LexWord): boolean {
   if (word.reading === "restrictor" || word.reading === "overlay") return false;
   if (word.family.kind === "joinMarker") return false;
   if (word.family.kind === "hook" || word.family.kind === "spanClose") return false;
-  if (isSpanAnaphor(word) || isNumberAnaphor(word) || isRoleAnaphor(word)) return false;
+  if (isSpanAnaphor(word) || isNumberAnaphor(word) || isRoleAnaphor(word) || isPointer(word)) return false;
   return contentRoots(word).length > 0 || holderRoots(word).length > 0;
 }
 
@@ -210,22 +237,9 @@ function bindLatest(antecedents: Antecedent[], pred: (item: Antecedent) => boole
 
 function bindContent(ctx: Ctx, pronoun: LexWord): void {
   const holder = holderRoots(pronoun);
-  const roots = holder.length > 0 ? holder : contentRoots(pronoun);
-  let match: ContentMatch | undefined;
-  const antecedent = bindLatest(ctx.antecedents, (item) => {
-    if (item.kind !== "content") return false;
-    for (const pronounRoot of roots) {
-      for (const antecedentRoot of item.roots) {
-        const kind = contentMatch(pronounRoot, antecedentRoot);
-        if (kind) {
-          match = kind;
-          return true;
-        }
-      }
-    }
-    return false;
-  });
-  ctx.anaphors.push({ pronoun, kind: "content", match, antecedent });
+  const stem = holder.length > 0 ? holder.join("x") : wholeStem(pronoun);
+  const antecedent = bindLatest(ctx.antecedents, (item) => item.kind === "content" && item.stem === stem);
+  ctx.anaphors.push({ pronoun, kind: "content", antecedent });
 }
 
 function bindSpan(ctx: Ctx, pronoun: LexWord): void {
@@ -296,13 +310,164 @@ function enterLeft(ctx: Ctx, utterance: Utterance): void {
 
 function bindRole(ctx: Ctx, pronoun: LexWord): void {
   const family = pronoun.family;
-  const roots = family.kind === "x" && family.xFamily === "role" ? (family.rightRoots ?? []) : [];
+  const stem = roleStem(pronoun);
   const roleVowel = family.kind === "x" ? family.roleVowel : undefined;
-  const antecedent = bindLatest(
-    ctx.antecedents,
-    (item) => item.kind === "roleFrame" && roots.some((root) => item.roots.includes(root)),
-  );
+  const antecedent = bindLatest(ctx.antecedents, (item) => item.kind === "roleFrame" && item.stem === stem);
   ctx.anaphors.push({ pronoun, kind: "role", roleVowel, antecedent });
+}
+
+// ── Role pointers (pronouns.md#role-pointers) ──────────────────────────────
+
+/** Doer, undergoer, and extra party: the pointer follows whoever last filled that slot. */
+const CORE_ROLES = new Set<RoleVowel>(["a", "u", "o"]);
+
+/** Place hooks whose `/b/` is the scene (hooks.md#extra-noun). */
+const PLACE_HOOKS = new Set(["al", "am", "aol", "aom", "ol", "om"]);
+
+/** Extra-noun hooks paired with a stacked role vowel (`ael` → instrument `ae`). */
+const STACKED_HOOK_ROLE: Record<string, RoleVowel> = { ael: "ae", oel: "oe", ual: "ua", uol: "uo", uel: "ue" };
+
+function npFiller(coord: NpCoord): Filler | undefined {
+  const words = coord.parts.flatMap((part) => part.items.flatMap((item) => (item.kind === "package" ? [item.package.head] : [])));
+  if (words.length === 0) return undefined;
+  return { words, join: [...coord.parts].reverse().find((part) => part.join)?.join };
+}
+
+function hostedFiller(hosted: Hosted | undefined): Filler | undefined {
+  if (!hosted) return undefined;
+  return { words: [hosted.bound, ...(hosted.boundJoin?.members ?? [])], join: hosted.boundJoin?.join };
+}
+
+/** *During* (`huwem`): its `/b/` is the scene's time when the clause has no place hook. */
+function isDuring(word: LexWord): boolean {
+  return word.pos === "h" && word.ending === "m" && word.family.kind === "content" && word.family.roots[0] === CLOSED.gemini;
+}
+
+/**
+ * The anchor of a clause: its verb (or its `/ɡ/` word with no verb) and the overt filler of each
+ * role. Doer `/z/`, undergoer `/d/`; the extra party is the verb's unhosted `/b/` or the `/b/` a
+ * `/ɡ/` predicate hosts; the scene is the first place hook's `/b/`, else *during*'s; the stacked
+ * roles read their paired hook's `/b/`.
+ */
+function anchorOf(clause: Clause): Anchor | undefined {
+  let verb: LexWord | undefined;
+  let gPredicate: { word: LexWord; hosted?: Hosted } | undefined;
+  let sharedPredicate: { word: LexWord; hosted?: Hosted } | undefined;
+  const fillers: Anchor["fillers"] = {};
+  let unhosted: Filler | undefined;
+  let place: Filler | undefined;
+  let time: Filler | undefined;
+  clause.units.forEach((unit, index) => {
+    switch (unit.kind) {
+      case "vp":
+        verb ??= unit.coord.parts[0]?.items[0];
+        return;
+      case "predicate":
+        gPredicate ??= { word: unit.adj.word, hosted: unit.adj.hosted };
+        return;
+      case "gCoord": {
+        const adj = unit.coord.parts[0]?.items.find((item) => item.kind === "adj");
+        if (adj?.kind === "adj") gPredicate ??= { word: adj.adj.word, hosted: adj.adj.hosted };
+        return;
+      }
+      case "h":
+        if (isDuring(unit.unit.word)) time ??= hostedFiller(unit.unit.hosted);
+        return;
+      case "np": {
+        const filler = npFiller(unit.coord);
+        if (!filler) return;
+        if (unit.coord.level === "z") {
+          fillers.a ??= filler;
+          // A join with a shared `/ɡ/` and no verb (`zazawan zalahen zel gamadam`): the `/ɡ/` is the predicate.
+          const shared = unit.coord.parts.flatMap((part) => part.shared).find(isSharedGPackage);
+          if (shared && !isScaleShared(shared)) sharedPredicate ??= { word: shared.word, hosted: shared.hosted };
+        }
+        else if (unit.coord.level === "d") fillers.u ??= filler;
+        else {
+          const prev = clause.units[index - 1];
+          const hook = prev?.kind === "hook" ? prev : undefined;
+          if (!hook) unhosted ??= filler;
+          else if (hook.job === "extraNoun" && !hook.onLeft) {
+            const form = hook.word.raw;
+            if (PLACE_HOOKS.has(form)) place ??= filler;
+            const stacked = STACKED_HOOK_ROLE[form];
+            if (stacked) fillers[stacked] ??= filler;
+          }
+        }
+        return;
+      }
+    }
+  });
+  gPredicate ??= sharedPredicate;
+  const predicate = verb ?? gPredicate?.word;
+  if (!predicate) return undefined;
+  const extra = verb ? unhosted : hostedFiller(gPredicate?.hosted);
+  if (extra) fillers.o = extra;
+  const scene = place ?? time;
+  if (scene) fillers.e = scene;
+  return { predicate, fillers };
+}
+
+/** Who a word refers to: a resume or pointer is its antecedent's referent; a name is the same person each time. */
+function referentKey(ctx: Ctx, word: LexWord, seen = new Set<LexWord>()): string {
+  const known = ctx.referents.get(word);
+  if (known) return known;
+  const bind = ctx.anaphors.find((item) => item.pronoun === word);
+  if (bind?.antecedent && !seen.has(word)) {
+    seen.add(word);
+    return referentKey(ctx, bind.antecedent, seen);
+  }
+  const family = word.family;
+  if (word.ending === "n" || (word.ending === "r" && family.kind === "content")) {
+    return `${word.ending === "n" ? "name" : "the"}:${wholeStem(word)}${word.plural ? "+x" : ""}`;
+  }
+  return `at:${word.at ?? -1}`;
+}
+
+function fillerKey(ctx: Ctx, filler: Filler): string {
+  return filler.words.map((word) => referentKey(ctx, word)).sort().join("&");
+}
+
+/** The word a pointer binds: the one filler, or the join that closes a group. */
+function fillerWord(filler: Filler): LexWord {
+  return filler.words.length === 1 ? filler.words[0]! : (filler.join ?? filler.words[0]!);
+}
+
+function bindPointer(ctx: Ctx, pronoun: LexWord): void {
+  const family = pronoun.family;
+  if (family.kind !== "x") return;
+  const roleVowel = family.roleVowel!;
+  const pointerVowel: PointerVowel = family.pointerVowel!;
+  const bind: AnaphorBind = { pronoun, kind: "pointer", roleVowel, pointerVowel };
+  ctx.anaphors.push(bind);
+  const open = ctx.clauses.at(-1);
+  const earlier = ctx.anchors.slice(0, open?.before ?? ctx.anchors.length).reverse();
+  const core = CORE_ROLES.has(roleVowel);
+  let anchor: Anchor | undefined;
+  let filler: Filler | undefined;
+  if (pointerVowel === "e") {
+    anchor = open?.anchor;
+    filler = anchor?.fillers[roleVowel];
+    if (filler?.words.includes(pronoun)) {
+      bind.ownSlot = true;
+      return;
+    }
+  } else if (!core) {
+    if (pointerVowel === "a") anchor = earlier[0];
+    filler = anchor?.fillers[roleVowel];
+  } else {
+    const filled = earlier.filter((item) => item.fillers[roleVowel]);
+    anchor = filled[0];
+    if (pointerVowel === "o" && anchor) {
+      const same = fillerKey(ctx, anchor.fillers[roleVowel]!);
+      anchor = filled.find((item) => fillerKey(ctx, item.fillers[roleVowel]!) !== same);
+    }
+    filler = anchor?.fillers[roleVowel];
+  }
+  if (!anchor) return;
+  if (core && !filler) return;
+  bind.antecedent = filler ? fillerWord(filler) : anchor.predicate;
+  ctx.referents.set(pronoun, filler ? fillerKey(ctx, filler) : `${roleVowel}@${anchor.predicate.at ?? -1}`);
 }
 
 function harvest(ctx: Ctx, word: LexWord): void {
@@ -327,14 +492,13 @@ function harvest(ctx: Ctx, word: LexWord): void {
     });
   }
 
-  const cRoots = contentRoots(word);
-  if (cRoots.length > 0) {
-    ctx.antecedents.push({ kind: "content", word, roots: cRoots });
+  if (contentRoots(word).length > 0) {
+    ctx.antecedents.push({ kind: "content", word, stem: wholeStem(word) });
   }
 
-  const rRoots = roleRoots(word);
-  if (rRoots.length > 0) {
-    ctx.antecedents.push({ kind: "roleFrame", word, roots: rRoots });
+  const rStem = roleStem(word);
+  if (rStem) {
+    ctx.antecedents.push({ kind: "roleFrame", word, stem: rStem });
   }
 }
 
@@ -344,6 +508,7 @@ function considerWord(ctx: Ctx, word: LexWord): void {
   else if (place !== undefined) bindOrdinal(ctx, word, place);
   else if (isNumberAnaphor(word)) bindNumber(ctx, word);
   else if (isRoleAnaphor(word)) bindRole(ctx, word);
+  else if (isPointer(word)) bindPointer(ctx, word);
   else if (isContentAnaphor(word)) bindContent(ctx, word);
 
   if (ctx.question && isJoinGap(word)) ctx.gaps.push(word);
@@ -356,6 +521,8 @@ function considerWord(ctx: Ctx, word: LexWord): void {
 function resolveVisitor(ctx: Ctx): Visitor {
   // Inside an opaque `u` span nothing is read as a word (spans.md).
   let opaque = 0;
+  // Span interiors (quotes, asides) add no anchors for role pointers.
+  let spans = 0;
   return {
     word(word, slot) {
       if (opaque > 0 || slot === "boundJoinClose" || slot === "joinModifier" || slot === "factor") return;
@@ -367,6 +534,12 @@ function resolveVisitor(ctx: Ctx): Visitor {
     },
     enter(node) {
       if (node.kind === "body" && opaque === 0) enterMove(ctx, [greetingName(node.body) ?? []].flat());
+      if (node.kind === "clause") {
+        const anchor = anchorOf(node.clause);
+        ctx.clauses.push({ anchor, before: ctx.anchors.length });
+        if (anchor && spans === 0) ctx.anchors.push(anchor);
+      }
+      if (node.kind === "span") spans += 1;
       if (node.kind === "span" && spanTypeOf(node.span.open) === "u") {
         opaque += 1;
         return SKIP_CONTENT;
@@ -378,6 +551,8 @@ function resolveVisitor(ctx: Ctx): Visitor {
       }
     },
     exit(node) {
+      if (node.kind === "clause") ctx.clauses.pop();
+      if (node.kind === "span") spans -= 1;
       if (node.kind === "span" && spanTypeOf(node.span.open) === "u") opaque -= 1;
       if (node.kind === "shared" && node.join && opaque === 0) {
         ctx.shared.push({ join: node.join, role: classifySharedRole(node.join, node.item), shared: node.item });
@@ -400,6 +575,9 @@ function buildResolve(result: ParseResult): ResolveInfo {
     closing: false,
     goodbye: false,
     anaphors: [],
+    anchors: [],
+    clauses: [],
+    referents: new Map(),
     asks: [],
     shared: [],
     gaps: [],

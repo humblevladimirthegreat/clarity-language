@@ -377,6 +377,9 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   if (family.kind === "x" && family.xFamily === "role") {
     return { line: "role compound", href: "roles.html#role-compounds" };
   }
+  if (family.kind === "x" && (family.xFamily === "pointer" || family.pointerVowel)) {
+    return { line: "role pointer", href: "pronouns.html#role-pointers" };
+  }
   if (family.kind === "spanClose" || (family.kind === "x" && family.xFamily === "span")) {
     return { line: "span fence", href: "spans.html" };
   }

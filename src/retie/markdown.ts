@@ -15,7 +15,6 @@ import {
 import { fillSelf } from "../learner-name.js";
 import type { ClassifyTables } from "../parse/classify.js";
 import {
-  collectStemOccurrences,
   forEachPlainChunk,
   peelChunk,
   resumeRewrite,
@@ -28,13 +27,8 @@ import {
 import { loadDefaultTables, parse } from "../parse/index.js";
 import { extractMorphPairs } from "../lint/morph-gloss-docs.js";
 import { morphPairsMatching, reglossMarkdown, type ReglossEdit } from "../regloss.js";
-import { lengthenCollidingResumes } from "./binds.js";
 import { followPairs, followProse, mergeFollowPairs, type FollowPairs } from "./follow.js";
 import { retieCore } from "./rebuild.js";
-import { contentStemRoots } from "./resume.js";
-import { isAgazanRootShape } from "../root-shape.js";
-import { letterPrefix } from "../parse/resolve.js";
-import { parseWord } from "../parse/word.js";
 import { asRetieTables, type RetieTables } from "./tables.js";
 
 export type RetieReview = {
@@ -83,8 +77,6 @@ export function rewriteMarkdown(
   tables?: ClassifyTables | RetieTables,
   options: RewriteOptions = {},
 ): RetieMarkdownResult {
-  const occurrences = collectStemOccurrences(input);
-  const stems = new Set(occurrences.map((o) => o.root));
   const changes: RetieChange[] = [];
   const reviews: RetieReview[] = [];
   const spans: RetiedSpan[] = [];
@@ -103,20 +95,12 @@ export function rewriteMarkdown(
 
   const wouldChange = (text: string): boolean => {
     const probe: RetieChange[] = [];
-    rewritePlainTokens(text, (core) => retieCore(core, map, { stems }), 0, probe);
+    rewritePlainTokens(text, (core) => retieCore(core, map), 0, probe);
     return probe.length > 0;
   };
 
   const rewriteAgazan = (text: string, index: number, cls: string): string => {
-    const stem = cls === "word" ? stemOfLineWords(input, index, text.trim(), map) : undefined;
-    if (stem !== undefined) {
-      if (stem.review) reviews.push({ text, index, reason: stem.review });
-      if (stem.to === undefined || stem.to === text.trim()) return text;
-      changes.push({ from: text.trim(), to: stem.to, index });
-      spans.push({ before: text, after: stem.to, index, cls });
-      return stem.to;
-    }
-    const base = resumeRewrite(map, stems, text, parseTables, occurrences);
+    const base = resumeRewrite(map, parseTables);
     // A template or fragment can cut a word before its ending (`gonogotha…`): retie it with a filler ending.
     const rewrite: CoreRewrite =
       cls === "template" || cls === "marked-fragment"
@@ -139,14 +123,6 @@ export function rewriteMarkdown(
       at = innerEnd;
     }
     out += rewritePlainTokens(text.slice(at), rewrite, index + at, changes);
-    if (out !== text && /[a-z]r\b/.test(out)) {
-      const fixed = lengthenCollidingResumes(text, out, map, pair);
-      for (const { from, to } of fixed.lengthened) {
-        changes.push({ from, to, index });
-        reviews.push({ text: to, index, reason: `short resume ${from} would bind another word after the retie; lengthened to a full-root resume` });
-      }
-      out = fixed.text;
-    }
     // Unchanged spans are kept too: verify checks that none still holds a moved root.
     spans.push({ before: text, after: out, index, cls });
     return out;
@@ -168,7 +144,7 @@ export function rewriteMarkdown(
       const out = rewritePlainTokens(
         text,
         (core, at) =>
-          isAgazanLintCandidate(core) && !english.has(core) ? retieCore(core, map, { stems, occurrences, at }) : null,
+          isAgazanLintCandidate(core) && !english.has(core) ? retieCore(core, map) : null,
         index,
         changes,
       );
@@ -257,7 +233,7 @@ export function rewriteMarkdown(
     forEachPlainChunk(text, index, (chunk, chunkIndex) => {
       const { prefix, core } = peelChunk(chunk);
       if (!core || english.has(core.toLowerCase())) return chunk;
-      const next = retieCore(core, map, { stems });
+      const next = retieCore(core, map);
       if (next == null || next === core) return chunk;
       reviews.push({
         text: chunk,
@@ -311,45 +287,6 @@ export function finishFollow(
     }
   }
   return { ...result, text, followChanges: followed.changes, reglossEdits };
-}
-
-/**
- * A lone bare root on a line whose code also has longer roots it is the short cut of
- * (“short `eze` matches *sleep* `ezeba` and *speechless* `ezebo`”) names that shared stem, not the
- * root it happens to spell: it is recut from those roots' new spellings. `undefined` when the span
- * is not such a stem; `to` is missing (with a review) when the longer roots now cut differently.
- */
-function stemOfLineWords(
-  input: string,
-  index: number,
-  core: string,
-  map: ReadonlyMap<string, string>,
-): { to?: string; review?: string } | undefined {
-  if (!isAgazanRootShape(core)) return undefined;
-  const lineStart = input.lastIndexOf("\n", index - 1) + 1;
-  const lineEnd = input.indexOf("\n", index);
-  const line = input.slice(lineStart, lineEnd < 0 ? input.length : lineEnd);
-  const longer = new Set<string>();
-  for (const span of line.matchAll(/`([^`]+)`/g)) {
-    for (const token of span[1]!.split(/\s+/)) {
-      const { core: word } = peelChunk(token);
-      if (!word || word === core) continue;
-      let roots: string[] = [];
-      if (isAgazanRootShape(word)) roots = [word];
-      else {
-        try {
-          roots = contentStemRoots(parseWord(word));
-        } catch {
-          roots = [];
-        }
-      }
-      for (const root of roots) if (root !== core && letterPrefix(root) === core) longer.add(root);
-    }
-  }
-  if (longer.size === 0) return undefined;
-  const cuts = new Set([...longer].map((root) => letterPrefix(map.get(root) ?? root)));
-  if (cuts.size === 1) return { to: [...cuts][0]! };
-  return { review: `stem ${core} is the short cut of ${[...longer].join(", ")} on this line, which now cut differently (${[...cuts].join(" / ")}); respell by hand` };
 }
 
 /** Whether `index` falls inside a fenced block (odd number of fence lines before it). */

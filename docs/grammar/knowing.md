@@ -1140,7 +1140,7 @@ The holder word ends the way a noun for that person would. **-n** is a name. **-
 
 > `zazawan vowogal. zalahen thunemazawar vedabal.`
 >
-> z-Azawan | v-walk . z-Alahen | th-INFERRED-←Azawan.full | v-departure
+> z-Azawan | v-walk . z-Alahen | th-INFERRED-←Azawan | v-departure
 >
 > "Azawan walks. I gather they think Alahen left."
 
@@ -1269,9 +1269,9 @@ The fence says how far the claim reaches, and the channel says what it rests on.
 | *under the rules of …* | `hal` / `hual` | RECORDED with the rules in `/b/` | `zalahen hal vabahel therel bazagul.` |
 | *cats are sleepy* (in general) | `zuam` + kind | any, or none | `zuam gagadul gezebul thobam.` |
 
-A [cause or condition](causation.md) on a general claim says how things work. It holds for **each** member or occasion, the same way the verb does. Inside the sentence after **`barl`**, resume the kind with **-r** (`zagar`) to mean *that same one*: each cat, in turn.
+A [cause or condition](causation.md) on a general claim says how things work. It holds for **each** member or occasion, the same way the verb does. Inside the sentence after **`barl`**, resume the kind with **-r** (`zagadur`) to mean *that same one*: each cat, in turn.
 
-> `zual gagadul vezebal thegem thoyem barl zagar gezebul.`
+> `zual gagadul vezebal thegem thoyem barl zagadur gezebul.`
 >
 > [z-everything | g-cat] | v-sleep | th-CAUSE | [th-if | b-that-clause] | [z-←cat | g-sleepy]
 >
@@ -1281,7 +1281,7 @@ A **definition** works both ways: whatever has the property is that kind, and ev
 
 > `zual gebezal gaxedehol thedam barl zebezar vedehol.`
 >
-> [z-everything | g-person] | g-agent-x-teach | [th-iff | b-that-clause] | z-←person.full | v-teach
+> [z-everything | g-person] | g-agent-x-teach | [th-iff | b-that-clause] | z-←person | v-teach
 >
 > "A person is a teacher if and only if they teach (by definition)."
 
@@ -1371,7 +1371,7 @@ z-Azawan | h-always | v-sit | th-PATTERN.weak
 **5.** *Every cat sleeps when it is sleepy; that is how it works.*
 
 ::: details Show answer
-`zual gagadul vezebal thegem thoyem barl zagar gezebul.`
+`zual gagadul vezebal thegem thoyem barl zagadur gezebul.`
 
 [z-everything | g-cat] | v-sleep | th-CAUSE | [th-if | b-that-clause] | [z-←cat | g-sleepy]
 :::
@@ -1454,7 +1454,7 @@ z-Alahen | h-always | v-write | th-PATTERN.weak
 *Every fighter fights; it follows.*
 :::
 
-**5.** `zual gagadul vevegal thegem thoyem barl zagar gezebul.`
+**5.** `zual gagadul vevegal thegem thoyem barl zagadur gezebul.`
 
 ::: details Show answer
 

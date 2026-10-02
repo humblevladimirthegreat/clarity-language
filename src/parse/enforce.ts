@@ -13,6 +13,7 @@ import { ARROW_ROOTS, isAsOfOverlay, isBarStance, isFrameStance, isGroundsChanne
 import { REJECTIONS, type RejectionId } from "./constructions.js";
 import { linkerEnglish } from "./linkers.js";
 import { ordinalPronounPlace } from "./resolve.js";
+import { parseHookCompoundCite } from "./hook-compounds.js";
 import { SentenceParseError } from "./sentence-parser.js";
 import {
   Bang,
@@ -32,6 +33,7 @@ import { tokenMatcher } from "chevrotain";
 import { isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, visitUnit, type Visitor } from "./ast-walk.js";
 import { forcePairKind, KIND_SERIES, RANK_SERIES } from "./series.js";
 import type {
+  AnaphorBind,
   Clause,
   ClauseCoord,
   CoordShared,
@@ -524,22 +526,48 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
   }
   visitResult(result, structureVisitor(tables));
   for (const bind of result.resolve?.anaphors ?? []) {
+    if (bind.kind === "pointer") enforcePointer(bind);
     if (bind.antecedent) continue;
     if (bind.kind === "number") throw new ConstructionError("numberResumeUnbound", bind.pronoun.raw);
     if (bind.kind === "ordinal") throw new ConstructionError("ordinalUnbound", bind.pronoun.raw);
-    if (bind.kind === "content" && !isFullRootResume(bind.pronoun, tables)) {
-      throw new ConstructionError("shortResumeUnbound", bind.pronoun.raw);
+    if (bind.kind === "content" && !isLexiconStemResume(bind.pronoun, tables)) {
+      throw new ConstructionError("resumeUnbound", bind.pronoun.raw);
     }
   }
 }
 
+/** Doer, undergoer, and extra party: the only roles *the other one* (`o`) can compare. */
+const CORE_POINTER_ROLES = new Set(["a", "u", "o"]);
+
+/** Role pointers (pronouns.md#role-pointers): nouns or holders only, `o` on core roles, never their own slot, never unbound. */
+function enforcePointer(bind: AnaphorBind): void {
+  const word = bind.pronoun;
+  const family = word.family;
+  const held = family.kind === "x" && family.xFamily === "holder";
+  const bare = family.kind === "x" && family.xFamily === "pointer" && family.leftRoots.length === 0;
+  if (!held && !(bare && (word.pos === "z" || word.pos === "d" || word.pos === "b"))) {
+    throw new ConstructionError("pointerSlot", word.raw);
+  }
+  if (bind.pointerVowel === "o" && !CORE_POINTER_ROLES.has(bind.roleVowel ?? "")) {
+    throw new ConstructionError("pointerOtherRole", word.raw);
+  }
+  if (bind.ownSlot) throw new ConstructionError("pointerOwnSlot", word.raw);
+  if (!bind.antecedent) throw new ConstructionError("pointerUnbound", word.raw);
+}
+
 /**
- * With no antecedent, a published root is a full-root resume, including a root that ends at its
- * 2nd vowel (`azo`, `ogo`). An unbound short resume is never a sentence, so the readings never compete.
+ * With no antecedent, **-r** on a lexicon stem is the one you both already know: a published root,
+ * a listed compound, or a hook compound on a published root (`vowogalar`). Any other stem needs an
+ * earlier word with that whole stem, so the readings never compete.
  */
-function isFullRootResume(word: LexWord, tables: ClassifyTables): boolean {
+function isLexiconStemResume(word: LexWord, tables: ClassifyTables): boolean {
   if (word.family.kind !== "content") return true;
-  return word.family.roots.every((root) => tables.published.has(root));
+  const stem = word.family.roots.join("");
+  if (tables.published.has(stem) || tables.compounds.has(stem)) return true;
+  return ["l", "m"].some((ending) => {
+    const parts = parseHookCompoundCite(stem + ending);
+    return Boolean(parts && tables.published.has(parts.leftRoot) && parts.stem === stem + ending);
+  });
 }
 
 function islandHasBinder(island: IslandUnit): boolean {

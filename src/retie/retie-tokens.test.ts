@@ -15,7 +15,6 @@ import {
 import { rewriteSourceLiterals, sourceLiterals } from "./source.js";
 import { rewriteParsedWord } from "./rebuild.js";
 import { parseWord } from "../parse/word.js";
-import { letterPrefix } from "../parse/resolve.js";
 import { lineNumberAt, peelChunk, retieCore } from "./tokens.js";
 import { retieTables as bridgeTables } from "./tables.js";
 import { verifyRetiedSpans } from "./verify.js";
@@ -74,7 +73,7 @@ describe("retieCore — Agazan tokens", () => {
     assert.equal(retieCore("thowora", map), "themaba");
   });
 
-  it("rewrites an isolated short resume whose parsed root is mapped", () => {
+  it("rewrites an isolated resume whose root is mapped", () => {
     const map = mapOf(["uhu", "edeme"]);
     assert.equal(retieCore("zuhur", map), "zedemer");
   });
@@ -193,82 +192,40 @@ describe("writing spans", () => {
 });
 
 describe("resume-aware markdown retie", () => {
-  it("keeps a short resume when the prefix collides with a mapped root", () => {
-    const map = mapOf(["uhu", "edeme"]);
-    const { text, changes } = rewriteMarkdown(
-      "`zuhubun vorurul. zuhur vogogol.`",
-      map,
-    );
-    assert.equal(text, "`zuhubun vorurul. zuhur vogogol.`");
-    assert.equal(changes.length, 0);
-  });
-
-  it("keeps a short resume whose antecedent is in another code span", () => {
-    const map = mapOf(["uhu", "edeme"]);
-    const { text } = rewriteMarkdown("named `zuhubun` then `zuhur`.", map);
-    assert.equal(text, "named `zuhubun` then `zuhur`.");
-  });
-
-  it("still remaps an unbound prefix that is the mapped root", () => {
-    const map = mapOf(["uhu", "edeme"]);
-    const { text } = rewriteMarkdown("see `zuhur` please", map);
-    assert.equal(text, "see `zedemer` please");
-  });
-
-  it("respells a short resume from the antecedent’s new stem", () => {
+  it("respells a resume with its antecedent's root", () => {
     const map = mapOf(["azawa", "ululo"]);
-    const { text } = rewriteMarkdown("`zazawan vawalal. zazar vayul.`", map);
-    assert.equal(text, "`zululon vawalal. zulur vayul.`");
+    const { text } = rewriteMarkdown("`zazawan vawalal. zazawar vayul.`", map);
+    assert.equal(text, "`zululon vawalal. zululor vayul.`");
   });
 
-  it("respells a full-root resume when that root moves", () => {
+  it("respells a resume whose antecedent is in another code span", () => {
+    const map = mapOf(["uhubu", "edeme"]);
+    const { text } = rewriteMarkdown("named `zuhubun` then `zuhubur`.", map);
+    assert.equal(text, "named `zedemen` then `zedemer`.");
+  });
+
+  it("respells a resume of a verb when that root moves", () => {
     const map = mapOf(["elebe", "ababa"]);
     const { text } = rewriteMarkdown("`zululon velebel. zazawan veleber.`", map);
     assert.equal(text, "`zululon vababal. zazawan vababar.`");
   });
 
-  it("follows the bound antecedent, not a longer same-file stem", () => {
-    const map = mapOf(["ele", "ogogo"]);
-    const { text } = rewriteMarkdown(
-      "`zululon velebel. zabogol gelem. zazawan veler.`",
-      map,
-    );
-    // `veler` is a short resume (a two-syllable root's cut is the whole root), so it stays short.
-    assert.equal(text, "`zululon velebel. zabogol gogogom. zazawan vogor.`");
+  it("respells a hook-compound resume through its left root", () => {
+    const map = mapOf(["owoga", "ababa"]);
+    const { text } = rewriteMarkdown("`zazawan vowogalal. zalahen vowogalar.`", map);
+    assert.equal(text, "`zazawan vababalal. zalahen vababalar.`");
   });
 
-  it("keeps a two-syllable root's short resume short after the root lengthens", () => {
-    const map = mapOf(["eye", "ahaha"]);
-    const { text } = rewriteMarkdown("`zululon veyel. zazawan veyer.`", map);
-    assert.equal(text, "`zululon vahahal. zazawan vahar.`");
+  it("respells a resume inside a writing-span payload", () => {
+    const map = mapOf(["azawa", "ululo"]);
+    const { text } = rewriteMarkdown("`zazawan th(zazawar vawalal) vawalal.`", map);
+    assert.equal(text, "`zululon th(zululor vawalal) vawalal.`");
   });
 
-  it("follows the parser bind into a writing-span payload", () => {
-    const map = mapOf(["aza", "ezuga"], ["azabe", "ozoge"]);
-    const { text } = rewriteMarkdown("`zazabel` then `zazawan th(zazar vawalal) vawalal.`", map);
-    assert.equal(text, "`zozogel` then `zazawan th(zazar vawalal) vawalal.`");
-  });
-
-  it("binds an unbound resume to the nearest earlier stem, not the longest", () => {
-    const map = mapOf(["aza", "ezuga"], ["azabebe", "ozogege"]);
-    const { text } = rewriteMarkdown("`zazabeben` and `zazawan` then `zazar`.", map);
-    assert.equal(text, "`zozogegen` and `zazawan` then `zazar`.");
-  });
-
-  it("lengthens a short resume that would bind another word after the retie", () => {
-    const map = mapOf(["adana", "azado"]);
-    const { text, reviews } = rewriteMarkdown("`zazawan vadanal xon zazar vuzunul.`", map);
-    assert.equal(text, "`zazawan vazadol xon zazawar vuzunul.`");
-    assert.match(reviews[0]!.reason, /full-root resume/);
-  });
-
-  it("keeps a compound-name short resume when the prefix root moves", () => {
-    const map = mapOf(["ubu", "edeme"]);
-    const { text } = rewriteMarkdown(
-      "`yubunexunowen vawalal.` then `dubur vayul.`",
-      map,
-    );
-    assert.equal(text, "`yubunexunowen vawalal.` then `dubur vayul.`");
+  it("leaves role pointers alone", () => {
+    const map = mapOf(["azawa", "ululo"]);
+    const { text } = rewriteMarkdown("`zazawan vawalal. zaxar vayul.`", map);
+    assert.equal(text, "`zululon vawalal. zaxar vayul.`");
   });
 });
 
@@ -354,8 +311,8 @@ describe("classification-gated retie", () => {
   });
 
   it("respells a resume chained to an earlier resume", () => {
-    const { text } = rewriteMarkdown("`zazawan vawalal xon zazar vuzunul xon zazar velebel.`", map);
-    assert.equal(text, "`zululon vawalal xon zulur vuzunul xon zulur velebel.`");
+    const { text } = rewriteMarkdown("`zazawan vawalal xon zazawar vuzunul xon zazawar velebel.`", map);
+    assert.equal(text, "`zululon vawalal xon zululor vuzunul xon zululor velebel.`");
   });
 
   it("reties a markdown fence as a page of its own", () => {
@@ -387,7 +344,7 @@ describe("verifyRetiedSpans", () => {
   const tables = loadDefaultTables();
 
   it("passes a clean retie, including a respelled resume", () => {
-    const { spans } = rewriteMarkdown("`zazawan vowogal. zazar vehahel.`", map);
+    const { spans } = rewriteMarkdown("`zazawan vowogal. zazawar vehahel.`", map);
     assert.deepEqual(verifyRetiedSpans(spans, map, tables), []);
   });
 
@@ -535,29 +492,25 @@ describe("retie map file", () => {
 });
 
 describe("resume binds after a retie", () => {
-  it("blocks a resume that would bind a different antecedent", () => {
+  it("blocks a resume left on the old root", () => {
     const tables = bridgeTables(mapOf(["adana", "azado"]));
     const failures = verifyRetiedSpans(
-      [{ before: "zazawan vadanal xon zazar vuzunul.", after: "zazawan vazadol xon zazar vuzunul.", index: 0, cls: "sentence" }],
+      [{ before: "zazawan vadanal xon zalahen vadanar.", after: "zazawan vazadol xon zalahen vadanar.", index: 0, cls: "sentence" }],
       mapOf(["adana", "azado"]),
       tables,
     );
     assert.equal(failures[0]?.level, "blocking");
-    assert.match(failures[0]!.detail, /binds/);
+    assert.match(failures[0]!.detail, /whole stem/);
   });
 });
 
 describe("retie fixes (2026-09-28 overlay demotion)", () => {
-  it("moves an overlay -r with its root instead of binding it as a resume", () => {
-    // TOLD.weak (`th…r`) next to a five-letter root sharing its short cut, which is not its antecedent.
-    // Both come from the lexicon, so a regeneration that respells them keeps this test meaningful.
+  it("moves an overlay -r with its root", () => {
     const tables = loadDefaultTables();
     const told = [...tables.overlays.values()].find((row) => row.gloss === "TOLD.weak" && row.pos === "th")!;
     const root = told.senseForm.slice(0, -1);
-    const cousin = [...tables.published.keys()].find((other) => other.length === 5 && other.startsWith(letterPrefix(root)))!;
-    assert.ok(cousin, `a five-letter root starting ${letterPrefix(root)}`);
-    const { text } = rewriteMarkdown(`\`z${cousin}l\` then \`zalahen th${root}r vedabal.\``, mapOf([root, "ibibi"]));
-    assert.equal(text, `\`z${cousin}l\` then \`zalahen thibibir vedabal.\``);
+    const { text } = rewriteMarkdown(`\`zalahen th${root}r vedabal.\``, mapOf([root, "ibibi"]));
+    assert.equal(text, "`zalahen thibibir vedabal.`");
   });
 
   it("keeps an emotion tail when the sake root moves", () => {
@@ -574,15 +527,6 @@ describe("retie fixes (2026-09-28 overlay demotion)", () => {
     const failures = verifyRetiedSpans([span], mapOf(["amu", "ibibi"]), loadDefaultTables());
     assert.equal(failures[0]?.level, "blocking");
     assert.match(failures[0]!.detail, /left unretied/);
-  });
-
-  it("recuts a lone stem from the words it cuts on its line, not as the root it spells", () => {
-    const line = "Short `eze` matches *sleep* (`ezeba`) and *speechless* (`ezebo`).";
-    assert.equal(rewriteMarkdown(line, mapOf(["eze", "ibi"])).text, line);
-    assert.equal(
-      rewriteMarkdown(line, mapOf(["ezeba", "ovoba"], ["ezebo", "ovobo"])).text,
-      "Short `ovo` matches *sleep* (`ovoba`) and *speechless* (`ovobo`).",
-    );
   });
 });
 
@@ -665,14 +609,14 @@ describe("source literals — one spelling per file", () => {
     english: new Set(["one", "the", "unused", "root", "use", "here"]),
     currentRoots: new Set<string>(),
   });
-  const file = 'parse("zazawan zodogal em bazar zal vowogal.");\nassert.equal(bound, "bazar");\n';
+  const file = 'parse("zazawan zodogal em bazawar zal vowogal.");\nassert.equal(bound, "bazawar");\n';
 
   it("gives a lone resume the spelling its sentence gave it", () => {
     const { text } = rewriteSourceLiterals(file, "x.test.ts", ctxOf(mapOf(["azawa", "ululo"], ["aza", "ozo"])));
-    assert.equal(text, 'parse("zululon zodogal em bulur zal vowogal.");\nassert.equal(bound, "bulur");\n');
+    assert.equal(text, 'parse("zululon zodogal em bululor zal vowogal.");\nassert.equal(bound, "bululor");\n');
   });
 
-  it("undoes a lone resume's rewrite when its sentence kept it", () => {
+  it("leaves a lone resume alone when only a shorter root moves", () => {
     const { text } = rewriteSourceLiterals(file, "x.test.ts", ctxOf(mapOf(["aza", "ozo"])));
     assert.equal(text, file);
   });

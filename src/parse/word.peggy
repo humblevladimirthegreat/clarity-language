@@ -575,13 +575,15 @@ PrefixedBody
 // ── Mid-word x families (decision order steps 2–6) ──────────────────────────
 
 xWord
-  = SpanOpen
+  = RolePointer
+  / SpanOpen
   / RoleCompound
   / ValueCompound
   / LateralCompound
   / AbilityCompound
   / NumericDerivation
   / OrdinaryCompound
+  / HeldPointer
 
 SpanOpen
   = typeV:[aeou] "x" edgeV:[aeou] ending:Ending plural:PluralSuffix?
@@ -595,6 +597,21 @@ SpanOpen
           leftRoots: [],
           typeVowel: typeV,
           edgeVowel: edgeV,
+        }),
+      };
+    }
+
+// Role pointer: role vowel(s) + `x` + pointer vowel + **-r** (`zaxar`, pronouns.md#role-pointers).
+// The pointer vowel picks the event by position: `a` same, `o` other, `e` self. Pointer `u` is a span resume.
+RolePointer
+  = roleV:("ae" / "ao" / "oe" / "ua" / "ue" / "uo" / "a" / "e" / "u" / "o") "x" pointerV:[aeo] "r" plural:PluralSuffix? WordEnd {
+      return {
+        ending: "r",
+        plural: !!plural,
+        family: xFamily("pointer", {
+          leftRoots: [],
+          roleVowel: roleV,
+          pointerVowel: pointerV,
         }),
       };
     }
@@ -693,6 +710,21 @@ OrdinaryCompound
         family: xFamily("compound", {
           leftRoots: [left],
           rightRoots: [right, ...rest],
+        }),
+      };
+    }
+
+// A stacked-vowel role pointer after a holder host and its grade (`thunemuexar`, knowing.md#holder).
+// classify.ts checks the host; a single role vowel there reads as an ability shape first.
+HeldPointer
+  = host:$((!(("ae" / "ao" / "oe" / "ua" / "ue" / "uo") "x" [aeo] "r" "x"? WordEnd) [a-z])+) roleV:("ae" / "ao" / "oe" / "ua" / "ue" / "uo") "x" pointerV:[aeo] "r" plural:PluralSuffix? WordEnd {
+      return {
+        ending: "r",
+        plural: !!plural,
+        family: xFamily("pointer", {
+          leftRoots: [host],
+          roleVowel: roleV,
+          pointerVowel: pointerV,
         }),
       };
     }

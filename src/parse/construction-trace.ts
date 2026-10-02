@@ -19,8 +19,13 @@ function isCstNode(element: CstElement): element is CstNode {
 /** Construction IDs a word carries on its own (`word.*`), independent of its slot. */
 export function wordConstructions(word: LexWord): string[] {
   // A closed overlay is its own construction (its home is the overlay row's anchor).
-  const ids = [`word.family.${word.family.kind}`, word.overlay ? overlayConstructionId(word.overlay) : `word.reading.${word.reading}`];
-  if (word.family.kind === "x") ids.push(`word.xFamily.${word.family.xFamily}`);
+  // A role pointer is taught with the pronouns, long before the other mid-word `x` families.
+  const pointer = word.family.kind === "x" && word.family.xFamily === "pointer";
+  const ids = [
+    pointer ? "word.xFamily.pointer" : `word.family.${word.family.kind}`,
+    word.overlay ? overlayConstructionId(word.overlay) : `word.reading.${word.reading}`,
+  ];
+  if (word.family.kind === "x" && !pointer) ids.push(`word.xFamily.${word.family.xFamily}`);
   if (word.ending) ids.push(`word.ending.${word.ending}`);
   if (word.plural && word.pos) ids.push(`word.plural.${word.pos}`);
   if (word.gl) ids.push("word.gl");
@@ -86,6 +91,10 @@ function featureConstructions(word: LexWord): string[] {
     if (family.xFamily === "role") {
       if (family.roleVowel) ids.push(`role.vowel.${family.roleVowel}`);
       if (word.ending === "r") ids.push("role.instance");
+    }
+    if (family.pointerVowel) {
+      if (family.roleVowel) ids.push(`pointer.role.${family.roleVowel}`);
+      ids.push(`pointer.vowel.${family.pointerVowel}`);
     }
     return ids;
   }

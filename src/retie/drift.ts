@@ -38,9 +38,9 @@ export function rootsInUse(texts: string[]): Set<string> {
 }
 
 /**
- * Bare short resumes (a code span that is just the word, as in prose) whose reading the retie changed:
+ * Bare resumes (a code span that is just the word, as in prose) whose reading the retie changed:
  * with no earlier word to bind, a resume reads as its stem's root, and the retie may have made that
- * stem another row's root (`zodor` ←dog became ←door). A resume inside a sentence is covered by the
+ * stem another row's root (`zodogar` ←dog became ←door). A resume inside a sentence is covered by the
  * per-span bind check. Code spans pair up by position: the retie never adds or removes one.
  */
 export function bareResumeDrift(
@@ -85,7 +85,7 @@ export function bareResumeDrift(
     try {
       const old = parseWord(from);
       if (old.family.kind === "content" && old.family.roots.every((root) => tables.old.published.has(root))) {
-        const next = retieCore(from, map, { stems: new Set(), boundAntecedentRoots: old.family.roots });
+        const next = retieCore(from, map);
         if (next && next !== core && gloss(next, tables.current) === was) keep = next;
       }
     } catch {

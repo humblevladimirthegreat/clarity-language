@@ -3,6 +3,9 @@ import type { OverlayKind } from "../lexicon-search.js";
 /** Role compound vowel (roles.md): simplex or stacked. */
 export type RoleVowel = "a" | "e" | "u" | "o" | "ae" | "ao" | "oe" | "ua" | "ue" | "uo";
 
+/** Role pointer vowel: `a` same, `o` other, `e` self (pronouns.md#role-pointers). */
+export type PointerVowel = "a" | "e" | "o";
+
 /** Part-of-speech prefix letters (role stamps). */
 export type Pos = "z" | "d" | "b" | "v" | "g" | "w" | "h" | "th" | "x" | "y";
 
@@ -54,7 +57,7 @@ export type NumberStem = {
   digitlessExp?: string;
 };
 
-export type XFamily = "span" | "role" | "sake" | "scope" | "lateral" | "holder" | "ability" | "numeric" | "compound";
+export type XFamily = "span" | "role" | "pointer" | "sake" | "scope" | "lateral" | "holder" | "ability" | "numeric" | "compound";
 
 export type SpanCloseFlavor = "complete" | "editorial" | "closeAll";
 
@@ -76,8 +79,10 @@ export type MorphWordFamily =
       typeVowel?: "a" | "e" | "o" | "u";
       /** Span EDGE vowel (span open). */
       edgeVowel?: "a" | "e" | "o" | "u";
-      /** Role vowel (role compound). */
+      /** Role vowel (role compound or role pointer). */
       roleVowel?: RoleVowel;
+      /** Role pointer: which event (`a` same, `o` other, `e` self; pronouns.md#role-pointers). */
+      pointerVowel?: PointerVowel;
       /** Values / label-scope / ability stance vowel (also role + ability on `/ɡ/`). */
       stanceVowel?: "a" | "e" | "o" | "u";
       /** Emotion compose: sake horizon letter moved mid-word (sakes.md#emotion-compose). */
@@ -390,19 +395,19 @@ export type ParseResult = {
 
 // ── Stage 4 resolve ─────────────────────────────────────────────────────────
 
-export type ContentMatch = "letter" | "fullRoot";
-
-export type AnaphorKind = "content" | "span" | "number" | "role" | "ordinal";
+export type AnaphorKind = "content" | "span" | "number" | "role" | "pointer" | "ordinal";
 
 export type AnaphorBind = {
   pronoun: LexWord;
   kind: AnaphorKind;
-  /** Content letter vs full-root match. */
-  match?: ContentMatch;
   /** Span TYPE vowel (cite / aside / mention / opaque). */
   typeVowel?: "a" | "e" | "o" | "u";
-  /** Role compound vowel (roles.md#role-compounds). */
+  /** Role compound or role pointer vowel (roles.md#role-compounds). */
   roleVowel?: RoleVowel;
+  /** Role pointer: which event it reads (pronouns.md#role-pointers). */
+  pointerVowel?: PointerVowel;
+  /** A self pointer (`e`) that would name its own slot (`zaxer` in `/z/`): never a sentence. */
+  ownSlot?: true;
   /** Absent when no prior match. */
   antecedent?: LexWord;
 };

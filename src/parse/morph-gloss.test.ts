@@ -44,13 +44,13 @@ describe("morphGlossLine — clause joins go between clauses", () => {
   });
   it("glosses a resume of a resume as the original referent", () => {
     expectLine(
-      "zazawan thamal vowogal xon zazar vezehel xon zazar vezebal.",
+      "zazawan thamal vowogal xon zazawar vezehel xon zazawar vezebal.",
       "[z-Azawan | th-plan-atlas | v-walk | x-or-else | z-←Azawan | v-sing | x-or-else | z-←Azawan | v-sleep]",
     );
   });
   it("glosses the sequence fallback after an attempt", () => {
     expectLine(
-      "zazawan thudur vowogal xon zazar vezehel.",
+      "zazawan thudur vowogal xon zazawar vezehel.",
       "[z-Azawan | th-ATTEMPT-trial | v-walk | x-or-else | z-←Azawan | v-sing]",
     );
   });
@@ -105,9 +105,9 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zazawan", "z-Azawan");
     expectLine("zalahen", "z-Alahen");
     expectLine("zahaben", "z-Ahaben");
-    expectLine("zazawan. zazar", "z-Azawan . z-←Azawan");
-    expectLine("zalahen. zalar", "z-Alahen . z-←Alahen");
-    expectLine("zahaben. zahar", "z-Ahaben . z-←Ahaben");
+    expectLine("zazawan. zazawar", "z-Azawan . z-←Azawan");
+    expectLine("zalahen. zalaher", "z-Alahen . z-←Alahen");
+    expectLine("zahaben. zahaber", "z-Ahaben . z-←Ahaben");
   });
 
   it("mid-word x families", () => {
@@ -274,7 +274,7 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
   it("resume with in-text antecedent", () => {
     expectLine(
-      "yohuxazovan. xezom zohur thevom zerehel.",
+      "yohuxazovan. xezom zohuxazovar thevom zerehel.",
       "y-Ohu-x-Azovan . x-however | z-←Ohu-x-Azovan | th-WITNESSED | z-rain",
     );
   });
@@ -454,7 +454,7 @@ describe("compareMorphGloss", () => {
   it("a holder takes resume -r and associative -x like any noun", () => {
     expectLine(
       "zazawan vedabal. zalahen thunemazawar vehahel.",
-      "z-Azawan | v-departure . z-Alahen | th-INFERRED-←Azawan.full | v-sit",
+      "z-Azawan | v-departure . z-Alahen | th-INFERRED-←Azawan | v-sit",
     );
     expectLine("zalahen thunemazawanx vedabal", "z-Alahen | th-INFERRED-Azawan-x | v-departure");
   });
@@ -483,7 +483,14 @@ describe("compareMorphGloss", () => {
   });
 
   it("house-cast resume without a same-line antecedent", () => {
-    expectLine("zazawarx vehahel", "z-←Azawan.full-x | v-sit");
+    expectLine("zazawarx vehahel", "z-←Azawan-x | v-sit");
+  });
+
+  it("role pointers gloss their role and event, not the referent", () => {
+    expectLine("zazawan vowogal. zaxar vehahel", "z-Azawan | v-walk . z-←agent.same | v-sit");
+    expectLine("zazawan vahahal daxer", "z-Azawan | v-see | d-←agent.self");
+    expectLine("zazawan vowogal. zaexarx vehahel", "z-Azawan | v-walk . z-←instrument.same-x | v-sit");
+    expectLine("zazawan vowogal. zalahen thunemaxar vedabal", "z-Azawan | v-walk . z-Alahen | th-INFERRED-←agent.same | v-departure");
   });
 
   it("quasi numeric derivation is English", () => {

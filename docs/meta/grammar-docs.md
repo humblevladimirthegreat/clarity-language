@@ -402,7 +402,7 @@ Do **not** call `odoga` a citation. Overlay / need / linker / mood inventories u
 | Editor matching keys | Lexicon CSVs, this page’s house-cast **Root** column, [example root bank](drill-generation.md#root-bank) token lists — not learner grammar tables | `data/lexicon-published.csv` stems |
 | Language-name composition | Showing **`agaza`** + proper **-n** once, not as a vocab row | [introduction.md](../grammar/introduction.md) name gloss |
 
-Resume teaching may talk about a “root prefix” in running prose; the Agazan column is still `zazar` / `zodogar`, not `azawa` / `odoga`.
+Resume teaching may talk about a “whole stem” in running prose; the Agazan column is still `zazawar` / `zodogar`, not `azawa` / `odoga`.
 
 **Test:** hide **Use** / **English**. Is the leftover a legal standalone Agazan word (or a letter / pattern / inner-`x` piece on the exception list)? If it is a published content sense with no ending, add the ending.
 
@@ -505,7 +505,7 @@ A morph line is compared only after the whole example parses. If it doesn't pars
 ### HTML comments
 <a id="html-comments"></a>
 
-VitePress does not render HTML comments. Use them for **editor-only** notes that must sit next to the grammar text — typically **why this spot is an exception** to a rule on this page (house cast, omit-`yal`, Compare-with quota, and so on). The learner never sees them; `build` markdown checks skip comment bodies, except the retie markers in [retie-safe writing](#retie-safe-writing). `retie-docs` skips comment bodies too, except `<!-- gloss: … -->` morph lines, which follow their Agazan, and `<!-- retie: shared-prefix -->`, which is checked after the rewrite.
+VitePress does not render HTML comments. Use them for **editor-only** notes that must sit next to the grammar text — typically **why this spot is an exception** to a rule on this page (house cast, omit-`yal`, Compare-with quota, and so on). The learner never sees them; `build` markdown checks skip comment bodies, except the retie markers in [retie-safe writing](#retie-safe-writing). `retie-docs` skips comment bodies too, except `<!-- gloss: … -->` morph lines, which follow their Agazan.
 
 ```markdown
 <!-- Exception to house-cast: this block teaches speaker/listener specials, so `zugobon` is the point. -->
@@ -520,7 +520,7 @@ A lexicon retie rewrites Agazan it can see as a word. Write so each spelling has
 
 - Agazan in prose is one backtick span: a whole word, or a whole sentence or phrase. Italics are English (*sleep*, *one*, *Azawan*), even when the letters happen to spell an Agazan word. A retie never rewrites italics, so Agazan in italics goes stale. A cite interior that is Agazan is that span. When prose names the two parts of a compound, each part is its own span; the whole stem stays one span when that word is what the example parses.
 - A heading whose backtick form is a published root, a compound stem, or an overlay sense form gets an explicit English `{#id}` that does not contain that spelling (`### Gravity (`abaha` / `adahe`) {#gravity}`). Closed letters and hooks (`a`, `hal`, `am`) may stay in the auto slug. Recipe headings follow the same rule.
-- An example whose point is two roots sharing a short cut is marked `<!-- retie: shared-prefix -->` immediately before that prose and its example. The marked roots have to share a cut. `<!-- retie: skip -->` is only for a page that records past spellings, never a page under `docs/grammar/`.
+- `<!-- retie: skip -->` is only for a page that records past spellings, never a page under `docs/grammar/`.
 - Code names a closed root by emoji in [`src/closed-roots.ts`](../../src/closed-roots.ts), not by a string spelling.
 
 The house-cast English name (*Azawan*) stays. It is the capitalised root, and the retie rewrites that copy from the named word.

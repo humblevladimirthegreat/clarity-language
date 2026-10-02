@@ -21,7 +21,6 @@ import { parseCompoundCsv, validateCompoundRows } from "../src/lexicon-compounds
 import { ensureFrequencyFile, loadFrequencyRanks } from "../src/lexicon-place.js";
 import { listMarkdown } from "../src/markdown-files.js";
 import { ENGLISH_IN_CODE } from "../src/lint/agazan-docs.js";
-import { sharedPrefixLosses } from "../src/lint/retie-format.js";
 import { loadDefaultTables } from "../src/parse/index.js";
 import { parseWord } from "../src/parse/word.js";
 import { headingIdRenames, relinkMarkdown, relinkOverlayAnchors, type AnchorRenames } from "../src/retie/anchors.js";
@@ -275,9 +274,6 @@ async function main(): Promise<void> {
     const rel = relative(REPO_ROOT, file);
     for (const item of result.reviews) {
       review(`${rel}:${lineNumberAt(original, item.index)}  review  \`${item.text}\`  (${item.reason})`);
-    }
-    for (const loss of sharedPrefixLosses(original, result.text, tables.old, tables.current)) {
-      block(`${rel}:${lineNumberAt(original, loss.index)}  blocking  ${loss.detail}`);
     }
     for (const failure of verifyRetiedSpans(result.spans, map, tables)) {
       const line = lineNumberAt(original, failure.span.index);

@@ -11,7 +11,7 @@
 
 import type { ClassifyTables } from "./classify.js";
 import { classify } from "./classify.js";
-import { ROLE_VOWEL, morphGlossFor, morphGlossLine, morphGlossWords, normalizeMorphLine, shortResumeStem } from "./morph-gloss.js";
+import { POINTER_VOWEL, ROLE_VOWEL, morphGlossFor, morphGlossLine, morphGlossWords, normalizeMorphLine } from "./morph-gloss.js";
 import type { MorphGlossContext } from "./morph-gloss.js";
 import { parseWords } from "./word.js";
 
@@ -215,6 +215,10 @@ const ROLE_BY_LABEL: Record<string, string> = Object.fromEntries(
   Object.entries(ROLE_VOWEL).map(([vowel, label]) => [label, vowel]),
 );
 
+const POINTER_BY_LABEL: Record<string, string> = Object.fromEntries(
+  Object.entries(POINTER_VOWEL).map(([vowel, label]) => [label, vowel]),
+);
+
 function nameRoot(label: string): string | undefined {
   if (!/^[A-Z]/.test(label)) return undefined;
   const joined = label.toLowerCase().split("-x-").join("x");
@@ -248,8 +252,12 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
   if (resume) {
     const pos = (resume[1] ?? "").replace(/-$/, "");
     let body = resume[2]!;
-    const full = body.endsWith(".full");
-    if (full) body = body.slice(0, -".full".length);
+    // Role pointer: `←agent.same` → `ax` + `a` + **-r**.
+    const pointer = body.match(/^([a-z]+)\.([a-z]+)$/);
+    if (pointer && ROLE_BY_LABEL[pointer[1]!] !== undefined && POINTER_BY_LABEL[pointer[2]!] !== undefined) {
+      out.add(`${pos}${ROLE_BY_LABEL[pointer[1]!]}x${POINTER_BY_LABEL[pointer[2]!]}r${suffix}`);
+      return [...out];
+    }
     // Role-compound resume: `←instrument-x-write` → `aex` + resumed stem + **-r**.
     let roleVowel = "";
     const role = body.match(/^([a-z]+)-x-(.+)$/);
@@ -261,10 +269,7 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
     const roots = quoted !== undefined ? [quoted] : [...(index.roots.get(body) ?? [])];
     const name = nameRoot(body);
     if (name) roots.push(name);
-    for (const root of roots) {
-      const stem = full || quoted !== undefined ? root : shortResumeStem(root);
-      out.add(`${pos}${roleVowel}${stem}r${suffix}`);
-    }
+    for (const root of roots) out.add(`${pos}${roleVowel}${root}r${suffix}`);
   }
 
   const named_ = core.match(/^((?:th|gl|[zdbvgwhxy])-)?([A-Z].*)$/);

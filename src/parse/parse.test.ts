@@ -525,7 +525,7 @@ describe("parse — as-of poles", () => {
 
 describe("parse — stage 4 resolve", () => {
   it("attaches resolve to parse(text)", () => {
-    const result = parseText("zalahen vowogal. zalar vehahel.");
+    const result = parseText("zalahen vowogal. zalaher vehahel.");
     assert.ok(result.resolve);
     assert.equal(result.resolve.anaphors[0]?.antecedent?.raw, "zalahen");
   });
@@ -549,9 +549,9 @@ describe("parse — spans.md written fences and closes", () => {
   });
 });
 
-describe("parse — pronouns.md full-root resume", () => {
-  it("reads an opening resume of a root that ends at its 2nd vowel as the full root", () => {
-    for (const text of ["zalahen vahahal dozer.", "zoyer vowogal."]) {
+describe("parse — pronouns.md resume with no earlier match", () => {
+  it("reads an opening resume of a lexicon stem as the one you both know", () => {
+    for (const text of ["zalahen vahahal dozer.", "zoyer vowogal.", "zodogar vowogal.", "zebedalahazar vowogal.", "zalahen vowogalar."]) {
       assert.doesNotThrow(() => parseText(text), text);
     }
     assert.throws(() => parseText("zadar vowogal."), SentenceParseError);

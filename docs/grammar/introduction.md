@@ -23,9 +23,9 @@ In a clause, every content word begins with a letter that names its role (subjec
 
 ### Referential {#referential}
 
-Pronouns copy a short start of an earlier word’s root (through the second vowel) and point to the **most recently mentioned matching** word. A few specials cover speaker, listener, and similar roles.
+Pronouns copy an earlier word’s whole stem and point to the **most recently mentioned matching** word. A shorter **role pointer** names someone by the part they played in a recent event (*the latest doer*, *the other one*). A few specials cover speaker, listener, and similar roles.
 
-**Compare with:** English *it* / *they*. The copy points at one earlier match, so you are not guessing among many possible things.
+**Compare with:** English *it* / *they*. Each pronoun points at one earlier match by a fixed rule, so you are not guessing among many possible things.
 
 ### Semantic {#semantic}
 

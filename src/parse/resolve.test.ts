@@ -6,7 +6,6 @@ import { describe, it } from "node:test";
 
 import { createClassifyTables } from "./classify.js";
 import { parse } from "./index.js";
-import { letterPrefix } from "./resolve.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const tables = createClassifyTables(
@@ -25,70 +24,53 @@ function resolveOf(text: string) {
   return result.resolve;
 }
 
-describe("letterPrefix (pronouns.md)", () => {
-  it("cuts through the 2nd vowel", () => {
-    assert.equal(letterPrefix("ululo"), "ulu");
-    assert.equal(letterPrefix("adaga"), "ada");
-    assert.equal(letterPrefix("abogo"), "abo");
-    assert.equal(letterPrefix("azawa"), "aza");
-    assert.equal(letterPrefix("awala"), "awa");
-  });
-});
-
-describe("resolve — content anaphors (pronouns.md)", () => {
-  it("binds zulur to ululo by letter prefix", () => {
-    const { anaphors } = resolveOf("zululon vawalal. zulur vayul.");
+describe("resolve — content anaphors (pronouns.md#resume-r)", () => {
+  it("binds zululor to ululo by whole stem", () => {
+    const { anaphors } = resolveOf("zululon vawalal. zululor vayul.");
     assert.equal(anaphors.length, 1);
     assert.equal(anaphors[0]!.kind, "content");
-    assert.equal(anaphors[0]!.match, "letter");
-    assert.equal(anaphors[0]!.pronoun.raw, "zulur");
+    assert.equal(anaphors[0]!.pronoun.raw, "zululor");
     assert.equal(anaphors[0]!.antecedent?.raw, "zululon");
   });
 
-  it("binds zadar to the most recent ada… stem (dragon, not dog)", () => {
-    const { anaphors } = resolveOf("zadagal velebel. zadaral gelel. zadar vawalal.");
-    assert.equal(anaphors[0]!.match, "letter");
-    assert.equal(anaphors[0]!.pronoun.raw, "zadar");
-    assert.equal(anaphors[0]!.antecedent?.raw, "zadaral");
+  it("never binds a short cut of the root", () => {
+    assert.throws(() => parseText("zululon vawalal. zulur vayul."), /whole stem/);
   });
 
-  it("binds full-root zadagar to the dog, skipping the book", () => {
+  it("binds zadagar to the dog, skipping the book", () => {
     const { anaphors } = resolveOf("zadagal velebel. zabogul gelel. zadagar vawalal.");
-    assert.equal(anaphors[0]!.match, "fullRoot");
     assert.equal(anaphors[0]!.pronoun.raw, "zadagar");
     assert.equal(anaphors[0]!.antecedent?.raw, "zadagal");
-  });
-
-  it("binds zazawar to azawa by full root", () => {
-    const { anaphors } = resolveOf("zazawan vawalal. zazawar vayul.");
-    assert.equal(anaphors[0]!.match, "fullRoot");
-    assert.equal(anaphors[0]!.antecedent?.raw, "zazawan");
   });
 
   it("binds vawalar to the prior verb (pronouns.md intermediate)", () => {
     const { anaphors } = resolveOf("zazawan vawalal. zululon vawalar.");
     assert.equal(anaphors[0]!.pronoun.raw, "vawalar");
-    assert.equal(anaphors[0]!.match, "fullRoot");
     assert.equal(anaphors[0]!.antecedent?.raw, "vawalal");
   });
 
-  it("leaves an opening full-root resume unresolved", () => {
+  it("matches a compound only on its whole stem (bed is not bedroom)", () => {
+    const part = resolveOf("zebedalahazal vowogal. zebedar vehahel.");
+    assert.equal(part.anaphors[0]!.antecedent, undefined);
+    const whole = resolveOf("zebedalahazal vowogal. zebedalahazar vehahel.");
+    assert.equal(whole.anaphors[0]!.antecedent?.raw, "zebedalahazal");
+  });
+
+  it("matches a hook compound only on its whole stem (walk is not enter)", () => {
+    assert.equal(resolveOf("zazawan vowogalal. zalahen vowogar.").anaphors[0]!.antecedent, undefined);
+    assert.equal(resolveOf("zazawan vowogalal. zalahen vowogalar.").anaphors[0]!.antecedent?.raw, "vowogalal");
+  });
+
+  it("leaves an opening resume unresolved", () => {
     const { anaphors } = resolveOf("zodogor vawalal.");
     assert.equal(anaphors[0]!.pronoun.raw, "zodogor");
     assert.equal(anaphors[0]!.antecedent, undefined);
   });
 
-  it("binds a short ability resume and keeps the ability (intention.md#ability)", () => {
-    const { anaphors } = resolveOf("zazawan vowogaxal. zugobon vowoxar.");
-    assert.equal(anaphors[0]!.pronoun.raw, "vowoxar");
-    assert.equal(anaphors[0]!.match, "letter");
+  it("binds an ability resume on its whole stem and keeps the ability (intention.md#ability)", () => {
+    const { anaphors } = resolveOf("zazawan vowogaxal. zugobon vowogaxar.");
+    assert.equal(anaphors[0]!.pronoun.raw, "vowogaxar");
     assert.equal(anaphors[0]!.antecedent?.raw, "vowogaxal");
-  });
-
-  it("binds a short ability resume whose stem spells eze to the verb", () => {
-    const { anaphors } = resolveOf("zazawan vezehexal. zugobon vezexar.");
-    assert.equal(anaphors[0]!.match, "letter");
-    assert.equal(anaphors[0]!.antecedent?.raw, "vezehexal");
   });
 
   it("does not bind statement zar as a content anaphor", () => {
@@ -101,6 +83,72 @@ describe("resolve — content anaphors (pronouns.md)", () => {
     const { anaphors } = resolveOf("zazawan vowogaxar.");
     assert.equal(anaphors[0]!.pronoun.raw, "vowogaxar");
     assert.equal(anaphors[0]!.antecedent, undefined);
+  });
+});
+
+describe("resolve — role pointers (pronouns.md#role-pointers)", () => {
+  function pointers(text: string): string[] {
+    return resolveOf(text)
+      .anaphors.filter((a) => a.kind === "pointer")
+      .map((a) => `${a.pronoun.raw}→${a.antecedent?.raw}`);
+  }
+
+  it("a: the latest predicate with that role filled", () => {
+    assert.deepEqual(pointers("zazawan vowogal. zaxar vehahel."), ["zaxar→zazawan"]);
+    assert.deepEqual(pointers("zazawan dalahen vahahal. zuxar varahal."), ["zuxar→dalahen"]);
+  });
+
+  it("a on a core role skips predicates without that slot", () => {
+    assert.deepEqual(pointers("zazawan dalahen vahahal. zazawan vowogal. zuxar varahal."), ["zuxar→dalahen"]);
+    assert.deepEqual(pointers("zazawan vezebel darl. verehel. zaxar vowogal."), ["zaxar→zazawan"]);
+  });
+
+  it("o: the nearest earlier predicate with someone else in that role", () => {
+    assert.deepEqual(pointers("zazawan vowogal. zalahen varahal. zalahen vehahel. zaxor vezebal."), ["zaxor→zazawan"]);
+  });
+
+  it("o compares referents, so a resumed name is the same person", () => {
+    assert.throws(() => parseText("zazawan vowogal. zazawar vehahel. zaxor vezebal."), /needs an earlier predicate/);
+  });
+
+  it("e: this clause's predicate", () => {
+    assert.deepEqual(pointers("zazawan vahahal daxer."), ["daxer→zazawan"]);
+  });
+
+  it("the extra party is a verb's unhosted /b/ or a /ɡ/ predicate's hosted /b/", () => {
+    assert.deepEqual(pointers("zazawan balahen vezebel darl. zoxar varahal."), ["zoxar→balahen"]);
+    assert.deepEqual(pointers("zazawan ganam balahen. zoxar varahal."), ["zoxar→balahen"]);
+  });
+
+  it("the scene is a place hook's /b/, else during's, else the event's own", () => {
+    assert.deepEqual(pointers("zazawan vezebal al bahazal. zalahen dexar vahahal."), ["dexar→bahazal"]);
+    assert.deepEqual(pointers("zazawan vezebal huwem bavodel. zalahen dexar vahahal."), ["dexar→bavodel"]);
+    assert.deepEqual(pointers("zazawan vezebal. zalahen dexar vahahal."), ["dexar→vezebal"]);
+  });
+
+  it("a stacked role reads its paired hook's /b/, else the event's own", () => {
+    assert.deepEqual(pointers("zazawan vavadal ael bodul. zalahen daexar vahahal."), ["daexar→bodul"]);
+    assert.deepEqual(pointers("zazawan vavadal. zalahen daexar vahahal."), ["daexar→vavadal"]);
+  });
+
+  it("a joined slot is one group", () => {
+    assert.deepEqual(pointers("zazawan zalahen zal vowogal. zaxarx vehahel."), ["zaxarx→zal"]);
+    assert.deepEqual(pointers("zazawan zalahen zel gamadam. zaxarx varahal."), ["zaxarx→zel"]);
+  });
+
+  it("span interiors add no anchors", () => {
+    assert.deepEqual(pointers("zazawan vowogal. d[zalahen varahal] vahahal. zaxar vehahel."), ["zaxar→zazawan"]);
+  });
+
+  it("fills the holder slot of a holder seam", () => {
+    assert.deepEqual(pointers("zazawan vowogal. zalahen thunemaxar vedabal."), ["thunemaxar→zazawan"]);
+  });
+
+  it("rejects pointers with no referent, on the wrong slot, o on an implicit role, or e on its own slot", () => {
+    assert.throws(() => parseText("zaxar vowogal."), /needs an earlier predicate/);
+    assert.throws(() => parseText("zazawan vowogal. vaxar."), /fills \/z\//);
+    assert.throws(() => parseText("zazawan vowogal. dexor vahahal."), /takes only the doer/);
+    assert.throws(() => parseText("zaxer vowogal."), /not the one it fills/);
   });
 });
 

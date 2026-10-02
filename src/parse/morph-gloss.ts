@@ -29,7 +29,7 @@
 
 import { isKindReference, isScaleShared, visitResult } from "./ast-walk.js";
 import { hookJobsByPosition, type HookJob } from "./hook-jobs.js";
-import { JOIN_SERIES, resumeCut } from "./series.js";
+import { JOIN_SERIES } from "./series.js";
 import { classifyAll, overlayKey, type ClassifyTables } from "./classify.js";
 import type { PublishedRow } from "../lexicon-search.js";
 import { CLOSED, namedEnglish } from "../closed-roots.js";
@@ -83,32 +83,6 @@ function numberMarkSuffix(word: LexWord, ctx: MorphGlossContext): string {
   if (word.family.kind !== "number") return "";
   // Spelled words carry the ending letter instead of a second-slot mark (`gram` = `g~+`).
   return NUMBER_MARK_SUFFIX[word.family.writingEndingMark ?? SPELLED_ENDING_MARK[word.ending ?? ""] ?? ""] ?? "";
-}
-
-/** Short resume cut: root up to and including its 2nd vowel (pronouns.md § Resume). */
-export const shortResumeStem = resumeCut;
-
-/** House-cast short resume stems (`zazar`). */
-const HOUSE_CAST_SHORT: Record<string, string> = Object.fromEntries(
-  HOUSE_CAST_ROOTS.map((root) => [shortResumeStem(root), namedEnglish(root)]),
-);
-
-/** Full-root resume: the stem is the whole antecedent root and longer than the short cut. */
-/** Resume roots: a content word's roots, or an ability word's host. */
-function resumeRoots(word: LexWord): string[] | undefined {
-  const family = word.family;
-  if (family.kind === "content") return family.roots;
-  if (family.kind === "x" && family.xFamily === "ability") return family.leftRoots;
-  return undefined;
-}
-
-function isFullRootResume(word: LexWord, antecedent: LexWord): boolean {
-  const stemRoots = resumeRoots(word);
-  const antecedentRoots = resumeRoots(antecedent);
-  if (!stemRoots || !antecedentRoots) return false;
-  const stem = stemRoots.join("");
-  const root = antecedentRoots.join("");
-  return stem === root && shortResumeStem(root) !== root;
 }
 
 const SPECIAL_PRONOUN: Record<string, string> = {
@@ -318,6 +292,9 @@ export const ROLE_VOWEL: Record<string, string> = {
   ao: "result",
   ue: "bearer",
 };
+
+/** Role pointer vowel: which event the pointer reads (pronouns.md#role-pointers). */
+export const POINTER_VOWEL: Record<string, string> = { a: "same", o: "other", e: "self" };
 
 const SPAN_TYPE: Record<string, string> = {
   a: "cite",
@@ -975,7 +952,7 @@ function bindFor(word: LexWord, binds: AnaphorBind[]): AnaphorBind | undefined {
   return binds.find((bind) => bind.pronoun.at === word.at);
 }
 
-/** A resume of a resume (`zazar … zazar`) glosses the original referent, not `←←`. */
+/** A resume of a resume (`zazawar … zazawar`) glosses the original referent, not `←←`. */
 function rootAntecedent(antecedent: LexWord, binds: AnaphorBind[]): LexWord {
   let current = antecedent;
   const seen = new Set<LexWord>();
@@ -1012,27 +989,28 @@ function sensePieces(
     if (family.kind === "number" && ordinalPronounPlace(word) !== undefined) {
       return [`←${numberLabel(family.stem, word.pos)}${numberSurfaceSuffix(word.raw, family.stem, ctx)}`];
     }
+    // A role pointer glosses its role and which event, never the referent (glosses.md § Anaphors).
+    if (family.kind === "x" && family.xFamily === "pointer") {
+      return [`←${ROLE_VOWEL[family.roleVowel ?? ""] ?? "role"}.${POINTER_VOWEL[family.pointerVowel ?? ""] ?? "pointer"}`];
+    }
     if (ctx.antecedent) {
-      const full = isFullRootResume(word, ctx.antecedent) ? ".full" : "";
       // A role-compound resume keeps its role, so doer / undergoer / tool of one event stay apart (glosses.md § Round trip).
       if (family.kind === "x" && family.xFamily === "role" && !word.overlay) {
         const role = ROLE_VOWEL[family.roleVowel ?? ""] ?? "role";
-        return [`←${role}`, `${senseLabel(ctx.antecedent, tables, {})}${full}`];
+        return [`←${role}`, senseLabel(ctx.antecedent, tables, {})];
       }
-      return [`←${senseLabel(ctx.antecedent, tables, {})}${full}`];
+      return [`←${senseLabel(ctx.antecedent, tables, {})}`];
     }
     if (family.kind === "content") {
-      const house = family.roots.map((root) => HOUSE_CAST_SHORT[root]).find(Boolean);
+      const house = family.roots.map((root) => HOUSE_CAST[root]).find(Boolean);
       if (house) return [`←${house}`];
-      const houseFull = family.roots.map((root) => HOUSE_CAST[root]).find(Boolean);
-      if (houseFull) return [`←${houseFull}.full`];
       // No antecedent: the stem's own sense, or the stem itself (glosses.md § Anaphors).
       // Overlay -r (map resolution, changeability, …) is an ending, not a resume.
       if (!word.overlay) {
         const stem = family.roots.join("");
         const body = contentBody(word, family.roots, tables);
         if (body === stem) return [`←${quotePayload(stem)}`];
-        return [`←${body}.full`];
+        return [`←${body}`];
       }
     }
   }
@@ -1457,8 +1435,7 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
         antecedentFamily.kind === "x" && antecedentFamily.xFamily === "ability"
           ? rootSense(antecedentFamily.leftRoots[0] ?? "host", antecedent.ending, tables, { pos: antecedent.pos })
           : senseLabel(antecedent, tables, {});
-      const full = isFullRootResume(word, antecedent) ? ".full" : "";
-      return [`←${resumed}${full}-${stance}`];
+      return [`←${resumed}-${stance}`];
     }
     return [`${host}-${stance}`];
   }
@@ -1478,6 +1455,9 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
 
   if (family.xFamily === "holder") {
     const host = tables.overlays.get(overlayKey("th", `${family.leftRoots[0]}${family.grade ?? "m"}`))?.gloss ?? family.leftRoots[0]!;
+    if (family.pointerVowel) {
+      return [host, `←${ROLE_VOWEL[family.roleVowel ?? ""] ?? "role"}.${POINTER_VOWEL[family.pointerVowel] ?? "pointer"}`];
+    }
     // Holder -r resumes the person whose view it is (knowing.md#holder).
     if (word.ending === "r") {
       const resumed: LexWord = { ...word, overlay: undefined, family: { kind: "content", roots: family.rightRoots ?? [] } };

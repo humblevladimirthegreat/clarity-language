@@ -98,7 +98,7 @@ For *two meters taller*, see [measured differentials](#measured-differentials). 
 
 For a count out of a group already named (*three of them*), resume the group and give the count.
 
-> `zagadulx vehahel. zagarx grarel varahal.`
+> `zagadulx vehahel. zagadurx grarel varahal.`
 > z-cat-x | v-sit . [z-←cat-x-x | g-three] | v-run
 >
 > "The cats sit. Three of them run."

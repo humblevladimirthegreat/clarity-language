@@ -1,13 +1,9 @@
 import { peelWordChunk } from "../parse/peel.js";
 import { writingSpanEnd } from "../parse/span-scan.js";
-import { classifiedShape, hasClosedOverlay, type ClassifyTables } from "../parse/classify.js";
+import { classifiedShape, type ClassifyTables } from "../parse/classify.js";
 import type { MorphWord } from "../parse/types.js";
-import { loadDefaultTables, parse } from "../parse/index.js";
-import { parseWord } from "../parse/word.js";
-import { fillSelfFor } from "./tables.js";
 
 import { retieCore } from "./rebuild.js";
-import { antecedentStemRoots, contentStemRoots, type ResumeScope, type StemOccurrence } from "./resume.js";
 
 export { retieCore } from "./rebuild.js";
 
@@ -302,90 +298,10 @@ function nextMarkup(input: string, from: number): number {
   return next === from ? from + 1 : next;
 }
 
-export function resumeRewrite(
-  map: ReadonlyMap<string, string>,
-  stems: ReadonlySet<string>,
-  codeSpan?: string,
-  tables?: ClassifyTables,
-  occurrences?: readonly StemOccurrence[],
-): CoreRewrite {
-  const boundByRaw = codeSpan ? contentResumeBinds(codeSpan, tables) : null;
-  const seen = new Map<string, number>();
-  const boundFor = (raw: string): string[] | undefined => {
-    const list = boundByRaw?.get(raw);
-    if (!list || list.length === 0) return undefined;
-    const n = seen.get(raw) ?? 0;
-    seen.set(raw, n + 1);
-    return list[n];
-  };
-  // `tables` knows the old spellings, so an overlay -r (`therar` TOLD.weak) is told from a resume.
-  const isOverlay = tables ? (word: MorphWord) => hasClosedOverlay(word, tables) : undefined;
+/** Retie each word as the old spellings read it (`tables` should know the old roots, see `bridgeTables`). */
+export function resumeRewrite(map: ReadonlyMap<string, string>, tables?: ClassifyTables): CoreRewrite {
   const reshape = tables ? (word: MorphWord) => classifiedShape(word, tables) : undefined;
-  return (core, at) => {
-    const boundAntecedentRoots = boundFor(core);
-    const scope: ResumeScope = boundAntecedentRoots
-      ? { stems, boundAntecedentRoots, boundFor, occurrences, at, isOverlay, reshape }
-      : { stems, boundFor, occurrences, at, isOverlay, reshape };
-    return retieCore(core, map, scope);
-  };
-}
-
-/** Each non-resume content root on the page, with where its word starts, in page order. */
-export function collectStemOccurrences(input: string): StemOccurrence[] {
-  const out: StemOccurrence[] = [];
-  const addChunk = (chunk: string, index: number) => {
-    const { core } = peelChunk(chunk);
-    if (!core) {
-      return chunk;
-    }
-    try {
-      for (const root of antecedentStemRoots(parseWord(core))) {
-        out.push({ root, index });
-      }
-    } catch {
-      // not an Agazan word
-    }
-    return chunk;
-  };
-  const visit = (text: string, index: number) => {
-    forEachPlainChunk(text, index, addChunk);
-    return text;
-  };
-  transformMarkdown(input, 0, visit, visit);
-  return out;
-}
-
-/** `tables` should know the old roots (see `bridgeTables`), or binds to moved roots are lost. */
-function contentResumeBinds(span: string, tables = loadDefaultTables()): Map<string, string[][]> | null {
-  try {
-    // Fill the learner-name slot as the lint does, or a span with `zSELFn` never parses and its binds are lost.
-    const resolved = parse(fillSelfFor(span, tables), tables).resolve;
-    if (!resolved) {
-      return null;
-    }
-    const byRaw = new Map<string, string[][]>();
-    for (const bind of resolved.anaphors) {
-      if (bind.kind !== "content" || !bind.antecedent) {
-        continue;
-      }
-      const raw = bind.pronoun.raw;
-      // A resume bound to an earlier resume (`zazar … zazar`) follows that one's antecedent.
-      const chained = bind.antecedent.ending === "r" ? byRaw.get(bind.antecedent.raw)?.at(-1) : undefined;
-      const roots = chained ?? contentStemRoots(bind.antecedent);
-      if (roots.length === 0) {
-        continue;
-      }
-      const list = byRaw.get(raw);
-      if (list) {
-        list.push(roots);
-      } else {
-        byRaw.set(raw, [roots]);
-      }
-    }
-    return byRaw.size > 0 ? byRaw : null;
-  } catch {
-    return null;
-  }
+  return (core) => retieCore(core, map, { reshape });
 }
 
 export function lineNumberAt(text: string, index: number): number {

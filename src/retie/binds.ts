@@ -1,18 +1,17 @@
 /**
  * Content-resume binds before and after a retie: each **-r** must keep pointing at the
- * same antecedent (respelled), and a short resume that now collides becomes a full-root resume.
+ * same antecedent (respelled).
  */
 import type { ClassifyTables } from "../parse/classify.js";
 import { parse } from "../parse/index.js";
-import { letterPrefix } from "../parse/resolve.js";
 
 import { contentStemRoots } from "./resume.js";
-import { asRetieTables, fillSelfFor, type RetieTables } from "./tables.js";
+import { fillSelfFor } from "./tables.js";
 
 export type ContentBind = {
-  /** Resume spelling as written (`zazar`). */
+  /** Resume spelling as written (`zazawar`). */
   raw: string;
-  /** Resume stem roots (`["aza"]`). */
+  /** Resume stem roots (`["azawa"]`). */
   roots: string[];
   /** Antecedent content roots, or `null` when the resume binds nothing. */
   antecedent: string[] | null;
@@ -76,64 +75,4 @@ export function bindDrift(
     }
   }
   return drift;
-}
-
-/** Full-root respelling of a single-root content resume (`zazar` + `azawa` → `zazawar`). */
-export function fullResumeSpelling(word: { raw: string; prefix: string }, stem: string, root: string): string | null {
-  const { prefix } = word;
-  if (!word.raw.startsWith(`${prefix}${stem}r`)) return null;
-  return `${prefix}${root}${word.raw.slice(prefix.length + stem.length)}`;
-}
-
-/** Replace the `nth` whole-word occurrence of `word` in `text`. */
-export function replaceNthWord(text: string, word: string, nth: number, next: string): string | null {
-  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  let seen = 0;
-  for (const match of text.matchAll(new RegExp(`(?<![a-z])${escaped}(?![a-z])`, "g"))) {
-    if (seen++ === nth) {
-      return text.slice(0, match.index!) + next + text.slice(match.index! + word.length);
-    }
-  }
-  return null;
-}
-
-/**
- * After a retie, lengthen each short resume whose new short cut binds the wrong word
- * (`zazar` now matches *stand* `azado` as well as `azawa`) to a full-root resume.
- * Returns the fixed text and the resumes it lengthened.
- */
-export function lengthenCollidingResumes(
-  beforeText: string,
-  afterText: string,
-  map: ReadonlyMap<string, string>,
-  tables: ClassifyTables | RetieTables,
-): { text: string; lengthened: { from: string; to: string }[] } {
-  const { old, current } = asRetieTables(tables);
-  const before = contentBinds(beforeText, old);
-  let text = afterText;
-  const lengthened: { from: string; to: string }[] = [];
-  if (!before) return { text, lengthened };
-  for (let attempt = 0; attempt < 8; attempt++) {
-    const after = contentBinds(text, current);
-    if (!after || after.length !== before.length) break;
-    const drift = bindDrift(before, after, map).find(
-      (d) => d.after.roots.length === 1 && d.expected.length === 1 && d.after.roots[0] === letterPrefix(d.expected[0]!),
-    );
-    if (!drift) break;
-    const nth = after.slice(0, drift.index).filter((b) => b.raw === drift.after.raw).length;
-    const word = { raw: drift.after.raw, prefix: posOf(drift.after.raw) };
-    const full = fullResumeSpelling(word, drift.after.roots[0]!, drift.expected[0]!);
-    const next = full ? replaceNthWord(text, drift.after.raw, nth, full) : null;
-    if (!full || !next) break;
-    const check = contentBinds(next, current);
-    if (!check || bindDrift(before, check, map).some((d) => d.index === drift.index)) break;
-    lengthened.push({ from: drift.after.raw, to: full });
-    text = next;
-  }
-  return { text, lengthened };
-}
-
-function posOf(raw: string): string {
-  if (raw.startsWith("th")) return "th";
-  return "zdbvgwhxy".includes(raw[0]!) ? raw[0]! : "";
 }

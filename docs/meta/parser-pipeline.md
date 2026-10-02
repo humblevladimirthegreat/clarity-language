@@ -163,10 +163,11 @@ Recovery is off. Illegal left fences and binderless islands throw `SentenceParse
 
 | Job | Rule |
 |-----|------|
-| Content **-r** | Most recent prior root whose full stem **or** letter prefix (cut through the 2nd vowel) matches ([pronouns.md](../grammar/pronouns.md)) |
+| Content **-r** | Most recent prior word with the identical whole stem (the letters between role letter and ending; a compound or hook compound only as a whole). With none, a lexicon stem is the one you both know; any other stem is rejected ([pronouns.md](../grammar/pronouns.md#resume-r)) |
+| Role pointer | One anchor per clause body outside spans: its verb, or its `/ɡ/` predicate. Each anchor records the overt filler of every role (`/z/`, `/d/`, the extra party, the scene, the stacked-hook `/b/`s). **`a`**: core roles take the latest anchor with that role filled, other roles the latest anchor; **`o`**: the nearest earlier anchor whose core filler is a different referent; **`e`**: this clause's anchor. No referent is a rejection ([pronouns.md](../grammar/pronouns.md#role-pointers), [roles.md](../grammar/roles.md#role-pointers-family)) |
 | Span **-r** / `d[=]` | Most recent span open of that TYPE ([spans.md](../grammar/spans.md)) |
 | Number **-r** / `g=+` | Most recent number with the same marker identity ([numbers.md](../grammar/numbers.md#number-endings)) |
-| Role **-r** | This instance of the matching event’s role (doer / place / undergoer / extra `/b/` party); most recent verb / event noun / relation / role compound with that ROOT. Non-resume is the lexical kind (*teacher* vs *the one teaching*) ([roles.md](../grammar/roles.md)) |
+| Role **-r** | This instance of the matching event’s role (doer / place / undergoer / extra `/b/` party); most recent verb / event noun / relation / role compound with that whole stem. Non-resume is the lexical kind (*teacher* vs *the one teaching*) ([roles.md](../grammar/roles.md)) |
 | Join **-r** under `yol` / `yom` | Fill-ask gaps in spoken order; none → yes/no ([questions.md](../grammar/questions.md)) |
 | SHARED `/ɡ/` or `/h/` after a join | `scale` / `equative` / `distribute` / `collective` / `kind` / `ordinary` from join series + conjunct kinds (`/h/` is manner scale under rank / `ae`) |
 

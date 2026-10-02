@@ -16,7 +16,7 @@
 import { overlayConstructionId } from "./construction-trace.js";
 import type { TokenBranch } from "./tokens.js";
 import type { ExtraNounHook } from "./hook-compounds.js";
-import type { AnaphorKind, Ending, LexReading, MorphWordFamily, Pos, RoleVowel, SpanCloseFlavor, XFamily } from "./types.js";
+import type { AnaphorKind, Ending, LexReading, MorphWordFamily, PointerVowel, Pos, RoleVowel, SpanCloseFlavor, XFamily } from "./types.js";
 
 export type ConstructionEntry = { anchor: string; summary: string };
 
@@ -191,6 +191,7 @@ export const WORD_FAMILY_CONSTRUCTIONS: Record<FamilyKind, ConstructionEntry> = 
 export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
   span: { anchor: "spans.md#shape", summary: "span open" },
   role: { anchor: "roles.md#role-compounds", summary: "role compound" },
+  pointer: { anchor: "pronouns.md#role-pointers", summary: "role pointer" },
   sake: { anchor: "sakes.md#time-horizon-endings-on-met", summary: "sake word" },
   scope: { anchor: "predication.md#label-scope", summary: "label scope" },
   lateral: { anchor: "roles.md#viewpoint-laterals", summary: "viewpoint lateral" },
@@ -246,17 +247,18 @@ export const WORD_MISC_CONSTRUCTIONS = {
 } satisfies Record<string, ConstructionEntry>;
 
 export const RESOLVE_CONSTRUCTIONS: Record<
-  Exclude<`${AnaphorKind}.${"bound" | "unbound"}`, "number.unbound" | "ordinal.unbound">,
+  Exclude<`${AnaphorKind}.${"bound" | "unbound"}`, "number.unbound" | "ordinal.unbound" | "pointer.unbound">,
   ConstructionEntry
 > = {
   "content.bound": { anchor: "pronouns.md#resume-r", summary: "-r binds an earlier content word" },
-  "content.unbound": { anchor: "pronouns.md#resume-r", summary: "full-root -r with no earlier match (the one you both know)" },
+  "content.unbound": { anchor: "pronouns.md#resume-r", summary: "-r with no earlier match (the one you both know)" },
   "span.bound": { anchor: "spans.md#resume", summary: "span resume binds an earlier span" },
   "span.unbound": { anchor: "spans.md#resume", summary: "span resume with no earlier span" },
   "number.bound": { anchor: "numbers.md#digitless", summary: "number -r binds an earlier number" },
   "ordinal.bound": { anchor: "pronouns.md#ordinal-pronouns", summary: "ordinal pronoun: a name by order of introduction" },
   "role.bound": { anchor: "roles.md#role-compounds", summary: "role -r binds an earlier role compound" },
   "role.unbound": { anchor: "roles.md#role-compounds", summary: "role -r with no earlier match" },
+  "pointer.bound": { anchor: "pronouns.md#role-pointers", summary: "role pointer binds a participant of an earlier or this predicate" },
 };
 
 /** Readings of a whole utterance or clause shape, or of a shared scale (`reading.*`, [construction-trace.ts](./construction-trace.ts)). */
@@ -499,6 +501,23 @@ export const ROLE_FEATURE_CONSTRUCTIONS: Record<`vowel.${RoleVowel}` | "instance
   instance: { anchor: "roles.md#this-instance-r", summary: "-r this instance" },
 };
 
+/** Role pointers: which part the role vowel names, and which event the pointer vowel picks (pronouns.md#role-pointers). */
+export const POINTER_FEATURE_CONSTRUCTIONS: Record<`vowel.${PointerVowel}` | `role.${RoleVowel}`, ConstructionEntry> = {
+  "role.a": { anchor: "pronouns.md#role-pointers", summary: "pointer to the doer" },
+  "role.u": { anchor: "pronouns.md#role-pointers", summary: "pointer to the undergoer" },
+  "role.o": { anchor: "pronouns.md#role-pointers", summary: "pointer to the extra party" },
+  "role.e": { anchor: "roles.md#role-pointers-family", summary: "pointer to the scene" },
+  "role.ae": { anchor: "roles.md#stacked-pointers", summary: "pointer to the instrument" },
+  "role.oe": { anchor: "roles.md#stacked-pointers", summary: "pointer to the goal" },
+  "role.ua": { anchor: "roles.md#stacked-pointers", summary: "pointer to the source" },
+  "role.uo": { anchor: "roles.md#stacked-pointers", summary: "pointer to the path" },
+  "role.ao": { anchor: "roles.md#stacked-pointers", summary: "pointer to the result" },
+  "role.ue": { anchor: "roles.md#stacked-pointers", summary: "pointer to the one who pays" },
+  "vowel.a": { anchor: "pronouns.md#role-pointers", summary: "same: the latest predicate with that role" },
+  "vowel.o": { anchor: "pronouns.md#the-other-one", summary: "other: the nearest predicate with someone else in that role" },
+  "vowel.e": { anchor: "pronouns.md#themself", summary: "self: this clause's predicate" },
+};
+
 function prefixed(prefix: string, entries: Record<string, ConstructionEntry>): [string, ConstructionEntry][] {
   return Object.entries(entries).map(([key, entry]) => [`${prefix}.${key}`, entry]);
 }
@@ -528,6 +547,7 @@ export const CONSTRUCTIONS: ReadonlyMap<string, ConstructionEntry> = new Map([
   ...prefixed("hook", HOOK_FORM_CONSTRUCTIONS),
   ...prefixed("span", SPAN_FEATURE_CONSTRUCTIONS),
   ...prefixed("role", ROLE_FEATURE_CONSTRUCTIONS),
+  ...prefixed("pointer", POINTER_FEATURE_CONSTRUCTIONS),
 ]);
 
 type OverlayEntrySource = { senseForm: string; pos: string; anchor: string; kind: string; gloss: string };
@@ -585,7 +605,11 @@ export const REJECTIONS = {
   numberResumeUnbound: { anchor: "numbers.md#digitless", summary: "a number -r needs an earlier number to match" },
   ordinalUnbound: { anchor: "pronouns.md#ordinal-pronouns", summary: "an ordinal pronoun needs that many names introduced in this conversation" },
   numberPlural: { anchor: "pronouns.md#ordinal-pronouns", summary: "a number takes -x only as an ordinal pronoun (z=#1x)" },
-  shortResumeUnbound: { anchor: "pronouns.md#resume-r", summary: "a short -r resume needs an earlier word to match" },
+  resumeUnbound: { anchor: "pronouns.md#resume-r", summary: "an -r resume spells an earlier word's whole stem, or a lexicon stem" },
+  pointerSlot: { anchor: "pronouns.md#role-pointers", summary: "a role pointer fills /z/, /d/, /b/, or a holder seam's holder slot" },
+  pointerOtherRole: { anchor: "pronouns.md#the-other-one", summary: "the other-one pointer (o) takes only the doer, undergoer, or extra party (axor, uxor, oxor)" },
+  pointerUnbound: { anchor: "pronouns.md#role-pointers", summary: "a role pointer needs an earlier predicate with that role filled (o: with someone else in it)" },
+  pointerOwnSlot: { anchor: "pronouns.md#themself", summary: "a self pointer (e) names another slot of its own clause, not the one it fills" },
   clauseSingleItem: { anchor: "joins.md#clause-joins", summary: "a clause join goes between two clauses; to deny or focus one clause, put the join on its verb or noun (vul, zal)" },
   leftFence: { anchor: "joins.md#right-close", summary: "a join word closes its conjuncts; it never comes before them" },
   emptyIsland: { anchor: "spans.md#scope-islands", summary: "a scope island needs words between its edges" },

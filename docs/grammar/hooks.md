@@ -696,7 +696,7 @@ After the verb, a resume hook points back to a landmark already in play. You do 
 >
 > "Azawan sits at the house. Alahen sits there too."
 
-> `zodogal vezebal al bahazal. zodor varahal ur.`
+> `zodogal vezebal al bahazal. zodogar varahal ur.`
 >
 > z-dog | v-sleep | [in | b-house] . z-←dog | v-run | from.there
 >
@@ -723,7 +723,7 @@ At the front of a sentence, a resume hook points back to an earlier stretch of t
 >
 > "Never mind that: Alahen sleeps."
 
-**Compare with:** `ol …` *Instead* replaces the last claim. `or …` *Anyway* leaves the side topic standing and returns to the main one. To go back to a **person or thing** rather than a line of talk, use a [thread resume](pronouns.md#going-back-to-a-thread) (`xazar`).
+**Compare with:** `ol …` *Instead* replaces the last claim. `or …` *Anyway* leaves the side topic standing and returns to the main one. To go back to a **person or thing** rather than a line of talk, use a [thread resume](pronouns.md#going-back-to-a-thread) (`xazawar`).
 
 ### Parallel chains {#parallel-chains}
 

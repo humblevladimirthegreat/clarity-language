@@ -4,7 +4,7 @@ import { describe, it } from "node:test";
 import { createClassifyTablesFromRows, type ClassifyTables } from "../parse/classify.js";
 import { emptyPosEnglish } from "../lexicon-search.js";
 
-import { lintRetieFormat, sharedPrefixLosses, shortCutLost } from "./retie-format.js";
+import { lintRetieFormat } from "./retie-format.js";
 
 function tablesOf(roots: string[]): ClassifyTables {
   return createClassifyTablesFromRows(
@@ -22,13 +22,6 @@ function tablesOf(roots: string[]): ClassifyTables {
 }
 
 const tables = tablesOf(["abaha", "adahe", "ezeba", "ezebo"]);
-
-const shared = `<!-- retie: shared-prefix -->
-
-Short \`ezeba\` and \`ezebo\`.
-
-> \`vezebal gezebol.\`
-`;
 
 describe("lintRetieFormat", () => {
   it("requires an English id when a heading spells a published root", () => {
@@ -52,32 +45,5 @@ describe("lintRetieFormat", () => {
     const details = lintRetieFormat(markdown, tables).map((finding) => finding.detail);
     assert.equal(details.length, 1);
     assert.match(details[0]!, /retie: skip/);
-  });
-
-  it("accepts a shared-prefix example whose roots share a short cut", () => {
-    assert.deepEqual(lintRetieFormat(shared, tables), []);
-  });
-
-  it("rejects a shared-prefix mark whose roots do not share a cut", () => {
-    const markdown = "<!-- retie: shared-prefix -->\n\n`abaha` and `adahe`.\n\n> `abaha adahe.`\n";
-    const findings = lintRetieFormat(markdown, tables);
-    assert.equal(findings.length, 1);
-    assert.match(findings[0]!.detail, /do not share/);
-  });
-});
-
-describe("short cut across a retie", () => {
-  it("blocks when the marked roots no longer share a cut", () => {
-    assert.equal(shortCutLost(["ezeba", "ezebo"], ["abaha", "adahe"]), true);
-    assert.equal(shortCutLost(["ezeba", "ezebo"], ["ezeba", "ezebo"]), false);
-    const after = `<!-- retie: shared-prefix -->
-
-\`abaha\` and \`adahe\`.
-
-> \`abaha adahe.\`
-`;
-    const losses = sharedPrefixLosses(shared, after, tables, tables);
-    assert.equal(losses.length, 1);
-    assert.match(losses[0]!.detail, /no longer share/);
   });
 });

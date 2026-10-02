@@ -1,14 +1,9 @@
-import { hookCompoundFromMorph } from "../parse/hook-compounds.js";
+import { hookCompoundFromMorph, parseHookCompoundCite } from "../parse/hook-compounds.js";
 import { parseWord } from "../parse/word.js";
 import { writingSpanEnd } from "../parse/span-scan.js";
 import type { MorphWord, MorphWordFamily, WritingBracket } from "../parse/types.js";
 import { isAgazanRootShape } from "../root-shape.js";
-import {
-  isContentResume,
-  mappedResumeRoots,
-  resumeAntecedentRoots,
-  type ResumeScope,
-} from "./resume.js";
+import type { ResumeScope } from "./resume.js";
 
 export type { ResumeScope } from "./resume.js";
 
@@ -84,7 +79,7 @@ export function rewriteParsedWord(
     return rewriteWritingSpan(word, family, map, scope);
   }
   if (family.kind === "content") {
-    const next = contentRootsAfterResume(word, family.roots, map, scope);
+    const next = family.roots.map((root) => map.get(root) ?? hookResumeStem(word, root, map) ?? root);
     if (!rootsChanged(family.roots, next)) {
       return null;
     }
@@ -128,19 +123,13 @@ function rewriteHookCompound(word: MorphWord, map: ReadonlyMap<string, string>):
   return `${prefix}${next}${rest.slice(parts.leftRoot.length)}`;
 }
 
-function contentRootsAfterResume(
-  word: MorphWord,
-  roots: string[],
-  map: ReadonlyMap<string, string>,
-  scope: ResumeScope | undefined,
-): string[] {
-  if (isContentResume(word) && !scope?.isOverlay?.(word)) {
-    const antecedents = resumeAntecedentRoots(roots, scope, word.raw);
-    if (antecedents) {
-      return mappedResumeRoots(roots, antecedents, map);
-    }
-  }
-  return mapRoots(roots, map);
+
+/** A hook-compound resume spells the whole stem (`vowogalar` of *enter*): its left root moves. */
+function hookResumeStem(word: MorphWord, stem: string, map: ReadonlyMap<string, string>): string | undefined {
+  if (word.ending !== "r") return undefined;
+  const parts = parseHookCompoundCite(`${stem}l`);
+  const next = parts && map.get(parts.leftRoot);
+  return next ? `${next}${stem.slice(parts.leftRoot.length)}` : undefined;
 }
 
 function rewriteWritingSpan(
@@ -183,10 +172,7 @@ function rewriteSpanPayload(
     // An editorial close (`#]`, `#|]`) leaves its `#` / `#|` at the end of the payload.
     const editorial = /#\|?$/.exec(chunk)?.[0] ?? "";
     chunk = chunk.slice(0, chunk.length - editorial.length);
-    const nested = scope
-      ? { stems: scope.stems, boundFor: scope.boundFor, occurrences: scope.occurrences, at: scope.at, isOverlay: scope.isOverlay, reshape: scope.reshape }
-      : undefined;
-    out += (retieCore(chunk, map, nested) ?? chunk) + editorial;
+    out += (retieCore(chunk, map, scope) ?? chunk) + editorial;
     i = end;
   }
   return out;

@@ -10,14 +10,14 @@ import { ENGLISH_IN_CODE, classifyAgazanSpan } from "../lint/agazan-docs.js";
 import { fillSelf } from "../learner-name.js";
 import { namedEnglish } from "../closed-roots.js";
 import { isAgazanRootShape } from "../root-shape.js";
-import { hasClosedOverlay, type ClassifyTables } from "../parse/classify.js";
+import type { ClassifyTables } from "../parse/classify.js";
 import { parseWord } from "../parse/word.js";
 
 import type { FollowPairs } from "./follow.js";
 import { retieCore } from "./rebuild.js";
 import { contentStemRoots } from "./resume.js";
 import { rewriteMarkdown, type RetieReview } from "./markdown.js";
-import { collectStemOccurrences, resumeRewrite, rewritePlainTokens, type RetieChange } from "./tokens.js";
+import { resumeRewrite, rewritePlainTokens, type RetieChange } from "./tokens.js";
 
 export type SourceLiteral = {
   /** Offset of the literal body (after the opening quote). */
@@ -230,8 +230,7 @@ function rewriteLiteral(literal: SourceLiteral, isTest: boolean, realLexicon: bo
     value = md.text;
     local.push(...md.changes);
   } else if (cls) {
-    const stems = new Set(collectStemOccurrences(`\`${value}\``).map((o) => o.root));
-    value = rewritePlainTokens(value, resumeRewrite(ctx.map, stems, value, ctx.tables), 0, local);
+    value = rewritePlainTokens(value, resumeRewrite(ctx.map, ctx.tables), 0, local);
     result.sentence = cls !== "word";
     result.lone = cls === "word";
   }
@@ -425,8 +424,6 @@ function staleRoot(word: string, ctx: SourceRetieContext): string | undefined {
   if (moved(word)) return word;
   try {
     const parsed = parseWord(word);
-    // A resume's stem follows its antecedent (`zazar` stays while Azawan stays), unless it is an overlay -r.
-    if (parsed.ending === "r" && parsed.family.kind === "content" && !hasClosedOverlay(parsed, ctx.tables)) return undefined;
     return contentStemRoots(parsed).find(moved);
   } catch {
     return undefined;

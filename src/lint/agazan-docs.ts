@@ -9,7 +9,7 @@ import {
 } from "../parse/classify.js";
 import { peelWordChunk } from "../parse/peel.js";
 import { toneRunLength } from "../parse/span-scan.js";
-import { letterPrefix } from "../parse/resolve.js";
+import { wholeStem } from "../parse/resolve.js";
 import { wordConstructions } from "../parse/construction-trace.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import { classifyTokenBranch } from "../parse/tokens.js";
@@ -169,7 +169,7 @@ export function lintAgazanToken(
     return { kind: "parse", detail };
   }
 
-  // A short resume (-r) is fine when its antecedent appears earlier in the block.
+  // A resume (-r) of a stem outside the lexicon is fine when its antecedent appears earlier in the block.
   const missing = unknownLexiconContentRoots(word, known).filter(
     (root) => !(word.ending === "r" && resumeStems.has(root)),
   );
@@ -232,7 +232,7 @@ function hasOverlay(word: Parameters<typeof classify>[0], tables: ClassifyTables
   return classify(word, tables).overlay !== undefined;
 }
 
-/** Short-resume stems of known content roots in `core` ([pronouns.md](docs/grammar/pronouns.md)). */
+/** Whole stems (`owogala` of `vowogalal`) a later **-r** in the block can resume ([pronouns.md](docs/grammar/pronouns.md#resume-r)). */
 function collectResumeStems(core: string, known: ReadonlySet<string>, into: Set<string>): void {
   if (!isAgazanLintCandidate(core)) return;
   let word;
@@ -241,9 +241,8 @@ function collectResumeStems(core: string, known: ReadonlySet<string>, into: Set<
   } catch {
     return;
   }
-  for (const root of lexiconContentRoots(word, known)) {
-    if (known.has(root)) into.add(letterPrefix(root));
-  }
+  const roots = lexiconContentRoots(word, known);
+  if (roots.length > 0 && roots.every((root) => known.has(root))) into.add(wholeStem(word));
 }
 
 /**

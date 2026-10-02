@@ -123,6 +123,8 @@ Source: [roles.md](../grammar/roles.md), [x-compounds.md](../grammar/x-compounds
 | Slot | Status |
 |------|--------|
 | PoS `/v/` / `/h/` / `/w/` on role compounds | Undefined — prefer `/z/` `/d/` `/b/`; `/ɡ/` optional |
+| [Role pointers](../grammar/pronouns.md#role-pointers) on `/v/` / `/ɡ/` / `/h/` / `/w/` | Undefined (rejected by the parser) — for *does so* / *such*, use whole-stem **-r** |
+| Pointer vowel **`u`** | Not a pointer: after one role vowel, vowel **`x`** **`u`** + **-r** is a [span resume](../grammar/spans.md#endings) |
 
 ## Identity (`SAME`)
 

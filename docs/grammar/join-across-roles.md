@@ -187,7 +187,7 @@ When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*)
 
 The `/x/` forms connect clauses and keep one speech act. Their `/v/` counterparts take an object and name an act on it. The remaining stacked `/v/` forms follow the same series in the inventory below.
 
-These are ordinary content verbs. Point back at a join-act you already used with a short resume or a full paraphrase. Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
+These are ordinary content verbs. Point back at a join-act you already used with a resume or a full paraphrase. Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
 
 | Agazan | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|

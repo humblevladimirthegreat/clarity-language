@@ -112,7 +112,7 @@ describe("sentence-parser synthetic", () => {
   });
 
   it("puts a hook + /b/ before a join word on the item before it", () => {
-    const units = parseSentenceTokens(tokens("zazawan zodogal em bazar zal vowogal.")).utterances[0]!.bodies[0]!.clause.units;
+    const units = parseSentenceTokens(tokens("zazawan zodogal em bazawar zal vowogal.")).utterances[0]!.bodies[0]!.clause.units;
     assert.equal(units.length, 2);
     const np = units[0]!;
     const items = np.kind === "np" ? np.coord.parts[0]!.items : [];
@@ -120,7 +120,7 @@ describe("sentence-parser synthetic", () => {
     const dog = items[1]!;
     const hook = dog.kind === "package" ? dog.package.adjs[0] : undefined;
     assert.equal(hook?.word.raw, "em");
-    assert.equal(hook?.hosted?.bound.raw, "bazar");
+    assert.equal(hook?.hosted?.bound.raw, "bazawar");
   });
 
   it("keeps a hook that is not right before a join word on the clause", () => {

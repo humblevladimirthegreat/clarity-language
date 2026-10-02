@@ -698,13 +698,13 @@ Open **`zuam`** makes the same claim but leaves the list of exceptions open, the
 >
 > "Cats are sleepy."
 
-> `zagadul vowogal. zagar gezebul.`
+> `zagadul vowogal. zagadur gezebul.`
 >
 > z-cat | v-walk . z-←cat | g-sleepy
 >
 > "A cat walks. The cat is sleepy."
 
-In the sentence after a [`barl`](dependents.md#dependent-clauses) on a general claim, a resume of the kind means **the same member**, one at a time: `zual gagadul vezebal thoyem barl zagar gezebul.` is *every cat sleeps if it is sleepy*, each cat with its own sleepiness.
+In the sentence after a [`barl`](dependents.md#dependent-clauses) on a general claim, a resume of the kind means **the same member**, one at a time: `zual gagadul vezebal thoyem barl zagadur gezebul.` is *every cat sleeps if it is sleepy*, each cat with its own sleepiness.
 
 With **`zul`** the two readings say the same thing: `zul godogal gabagol.` is both *no dog is black* and *there is no black dog*.
 
@@ -778,7 +778,7 @@ When an adjective or extra noun is meant for the **whole list** (*both challengi
 
 A hook belongs to one item the same way. Put the hook and its `/b/` right after that item, before the join word: **`em`** plus a resume gives *Azawan and his dog*.
 
-> `zazawan zodogal em bazar zal vowogal.`
+> `zazawan zodogal em bazawar zal vowogal.`
 >
 > [z-Azawan | [z-dog | [used-by | b-←Azawan]] | z-and] | v-walk
 >

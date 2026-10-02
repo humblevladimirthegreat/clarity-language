@@ -51,7 +51,9 @@ describe("glossToAgazan", () => {
       "zazawan vahahul d@[onodan alahen].",
       "zedehel zagavel zol ^ humum bazawan ^ vowogal.",
       "zazawan vowogal. zazawar vahahul.",
-      "zazawan vowogal. zazar vahahul.",
+      "zazawan vowogal. zaxar vahahul.",
+      "zazawan vahahal daxer.",
+      "zazawan dalahen vahahal. zuxorx varahal.",
       "zazawan d[abugum#|] vezebel.",
       "zazawan daxur vezebel.",
       "zazawan d[=] vezebel.",
@@ -59,7 +61,7 @@ describe("glossToAgazan", () => {
       "zagadulx grarel.",
       "zagadulx grarel.",
       "zamagonx vowogal.",
-      "zazawan vahahul daxal zazar vowogal xuxul. dedehel on dagavel.",
+      "zazawan vahahul daxal zazawar vowogal xuxul. dedehel on dagavel.",
     ]) {
       assert.equal(canonical(roundTrip(agazan)), canonical(agazan), agazan);
     }

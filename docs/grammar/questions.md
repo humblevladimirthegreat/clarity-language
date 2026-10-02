@@ -76,7 +76,7 @@ If the reply is just the fill, not a full sentence, write it as a [citation](wor
 >
 > "Alahen."
 
-**Compare with:** pointing back at someone already named uses content resume **-r** ([pronouns](pronouns.md)). Fill-ask uses only **join** **-r**. You can tell the difference because resumes always have at least five letters due to copying three from the antecedent, whereas joins always have fewer than five letters.
+**Compare with:** pointing back at someone already named uses content resume **-r** ([pronouns](pronouns.md)). Fill-ask uses only **join** **-r**. You can tell the difference by length: a resume spells a whole stem, and a role pointer has a role vowel, **`x`**, and a pointer vowel, so both have at least five letters, whereas joins always have fewer than five letters.
 
 To ask *how many?*, the blank is a number word instead: see [numbers](numbers.md#how-many).
 

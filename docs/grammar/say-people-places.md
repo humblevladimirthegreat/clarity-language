@@ -23,13 +23,13 @@ English *as for X* or *regarding X* names who or what the sentence is about, eve
 
 Beginner already used two sentences for English *who / that / which*. Prefer [resume **-r**](pronouns.md#resume-r) in the second sentence.
 
-> `zagavol vehahel. zazawan bagar vezebel.`
+> `zagavol vehahel. zazawan bagavor vezebel.`
 >
 > z-guard | v-sit . z-Azawan | b-←guard | v-tell
 >
 > "A guard sits. Azawan tells that guard."
 
-> `zazawan dodogal vahahal al babagul. zodor varahal.`
+> `zazawan dodogal vahahal al babagul. zodogar varahal.`
 >
 > z-Azawan | d-dog | v-see | [in | b-bank] . z-←dog | v-run
 >
@@ -45,7 +45,7 @@ A place, tool, or *of*-relation on the noun is still an extra-noun [hook](hooks.
 
 For English *whose*, resume the person after the [whose hook **`em`**](hooks.md#genitive) in the second sentence. Use **`gegabem`** instead when the point is that the guard legally owns it.
 
-> `zagavol vehahel. zodogal em bagar varahal.`
+> `zagavol vehahel. zodogal em bagavor varahal.`
 >
 > z-guard | v-sit . [z-dog | [used-by | b-←guard]] | v-run
 >
@@ -53,7 +53,7 @@ For English *whose*, resume the person after the [whose hook **`em`**](hooks.md#
 
 English uses the same *who* clause for two jobs. When it picks out **which** one (*the guard who sits*, not the other guard), use the two-sentence pattern or a role compound, as above. When it only adds extra information about someone already known (*Azawan, who walks, sings*), put that information in an [aside](spans.md) **`th(…)`** inside the sentence.
 
-> `zazawan th(zazar vowogal) vezehel.`
+> `zazawan th(zazawar vowogal) vezehel.`
 >
 > z-Azawan | th-ASIDE[z-←Azawan | v-walk] | v-sing
 >
@@ -83,7 +83,7 @@ English *the day when* / *the place where* is two sentences. Name the time or pl
 
 > `zalahen vahahal dazazam. zazawan vowogal hazazar.`
 >
-> z-Alahen | v-see | d-day . z-Azawan | v-walk | h-←day.full
+> z-Alahen | v-see | d-day . z-Azawan | v-walk | h-←day
 >
 > "Alahen sees the day when Azawan walks."
 
@@ -123,7 +123,7 @@ English *'s* on an act (*Azawan's walk*, *the monkey's tricks*) names who did it
 
 > `zazawan vowogal. zalahen dowogar vahahal.`
 >
-> z-Azawan | v-walk . z-Alahen | d-←walk.full | v-see
+> z-Azawan | v-walk . z-Alahen | d-←walk | v-see
 >
 > "Alahen sees Azawan's walk."
 
@@ -166,7 +166,7 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 >
 > "Book-Courage" (full title of that office)
 
-Resume the handle like any name. If a short letter-pronoun (through the 2nd vowel) would pick the wrong earlier word, use the **full root** + **-r** (`zubugar`).
+Resume the handle like any name: its whole stem + **-r** (`zubugar`).
 
 **Compare with:** a [mention](spans.md#loans) packages the **word** (`z{ubuga}` = *the word “abogo”*). A foreign letter-name is a loan or opaque span (<code>z@&lt;FBI&gt;</code>).
 
@@ -643,7 +643,7 @@ For *how much* they differ, use a [measured differential](say-amounts.md#measure
 
 English *himself*, *herself*, *itself* and *themself* say the object is the same one as the subject. Put the subject's resume (**-r**) in `/d/`. Agazan does not mark sex or number in the resume, so one form covers all of them. With plural **-x** on the subject and the resume it is *themselves*, and with the inclusive *we* (`zahan`) it is *ourselves*.
 
-> `zazawan vahahal dazar.`
+> `zazawan vahahal dazawar.`
 >
 > z-Azawan | v-see | d-←Azawan
 >
@@ -651,7 +651,7 @@ English *himself*, *herself*, *itself* and *themself* say the object is the same
 
 > `zodogalx vahahal dodogarx.`
 >
-> z-dog-x | v-see | d-←dog-x.full-x
+> z-dog-x | v-see | d-←dog-x-x
 >
 > "The dogs see themselves."
 
@@ -671,7 +671,7 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 
 > `zodogal vowogal. zowogar gelavam.`
 >
-> z-dog | v-walk . z-←walk.full | g-big
+> z-dog | v-walk . z-←walk | g-big
 >
 > "A dog walks. That action is big."
 
@@ -689,19 +689,19 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 
 Examples:
 
-> `zazawan vamuyul. zalahen dazar vahahal.`
+> `zazawan vamuyul. zalahen dazawar vahahal.`
 >
 > z-Azawan | v-mute . z-Alahen | d-←Azawan | v-see
 >
 > "Azawan mutes. Alahen sees Azawan."
 
-> `zazawan demegul vamuyul. zalahen vemer.`
+> `zazawan demegul vamuyul. zalahen vemegur.`
 >
 > z-Azawan | d-studio-mic | v-mute . z-Alahen | v-←studio-mic
 >
 > "Azawan mutes a studio mic. Alahen does the same to it."
 
-> `zeredel gelavam. zemegul gerer.`
+> `zeredel gelavam. zemegul gereder.`
 >
 > z-radio | g-big . z-studio-mic | g-←radio
 >
@@ -713,19 +713,19 @@ Examples:
 >
 > "A radio is very big. A studio mic is that big too."
 
-> `zazawan veredem. zalahen hazar vamuyul.`
+> `zazawan veredem. zalahen hazawar vamuyul.`
 >
 > z-Azawan | v-broadcast . z-Alahen | h-←Azawan | v-mute
 >
 > "Azawan broadcasts. Alahen mutes on that one's account."
 
-> `zazawan vamuyul. yazar.`
+> `zazawan vamuyul. yazawar.`
 >
 > z-Azawan | v-mute . y-←Azawan
 >
 > "Azawan mutes. Hey, Azawan!"
 
-> `zazawan vamuyul. zalahen vabahel. xazar vezugel.`
+> `zazawan vamuyul. zalahen vabahel. xazawar vezugel.`
 >
 > z-Azawan | v-mute . z-Alahen | v-punch . x-←Azawan | v-scream
 >
@@ -745,13 +745,13 @@ Examples:
 
 Examples:
 
-> `zazawan vamuyul. zamur gelavam.`
+> `zazawan vamuyul. zamuyur gelavam.`
 >
 > z-Azawan | v-mute . z-←mute | g-big
 >
 > "Azawan mutes. That muting is big."
 
-> `zazawan vamuyul. zalahen vamur.`
+> `zazawan vamuyul. zalahen vamuyur.`
 >
 > z-Azawan | v-mute . z-Alahen | v-←mute
 >
@@ -759,29 +759,29 @@ Examples:
 
 > `zazawan demegul vamuyul. zeredel gamuyur.`
 >
-> z-Azawan | d-studio-mic | v-mute . z-radio | g-←mute.full
+> z-Azawan | d-studio-mic | v-mute . z-radio | g-←mute
 >
 > "Azawan mutes a studio mic. A radio is such (muted too)."
 
 > `zazawan vamuyul. zeredel wamuyur gelavam.`
 >
-> z-Azawan | v-mute . z-radio | [w-←mute.full | g-big]
+> z-Azawan | v-mute . z-radio | [w-←mute | g-big]
 >
 > "Azawan mutes. A radio is big as far as muting goes."
 
-> `zazawan veredem. zalahen herer vamuyul.`
+> `zazawan veredem. zalahen hereder vamuyul.`
 >
 > z-Azawan | v-broadcast . z-Alahen | h-←broadcast | v-mute
 >
 > "Azawan broadcasts. By doing so, Alahen mutes."
 
-> `zazawan vamuyul. yamur.`
+> `zazawan vamuyul. yamuyur.`
 >
 > z-Azawan | v-mute . y-←mute
 >
 > "Azawan mutes. Azawan did that?!"
 
-> `zazawan vamuyul. zalahen vabahel. xamur zahaben vezugel.`
+> `zazawan vamuyul. zalahen vabahel. xamuyur zahaben vezugel.`
 >
 > z-Azawan | v-mute . z-Alahen | v-punch . x-←mute | z-Ahaben | v-scream
 >
@@ -801,19 +801,19 @@ Examples:
 
 Examples:
 
-> `zeredel geredal. zerer vezugel.`
+> `zeredel geredal. zeredar vezugel.`
 >
 > z-radio | g-red . z-←red | v-scream
 >
 > "A radio is red. The red one screams."
 
-> `zahaben geredal. zazawan verer.`
+> `zahaben geredal. zazawan veredar.`
 >
 > z-Ahaben | g-red . z-Azawan | v-←red
 >
 > "Ahaben is red. Azawan does that."
 
-> `zeredel geredal. zemegul gerer.`
+> `zeredel geredal. zemegul geredar.`
 >
 > z-radio | g-red . z-studio-mic | g-←red
 >
@@ -825,19 +825,19 @@ Examples:
 >
 > "A radio is very red. A studio mic is big to that degree."
 
-> `zeredel geredal. zazawan herer veredem.`
+> `zeredel geredal. zazawan heredar veredem.`
 >
 > z-radio | g-red . z-Azawan | h-←red | v-broadcast
 >
 > "A radio is red. Azawan broadcasts that way."
 
-> `zeredel geredal. yerer.`
+> `zeredel geredal. yeredar.`
 >
 > z-radio | g-red . y-←red
 >
 > "A radio is red. It was that?!"
 
-> `zeredel geredal. zalahen vabahel. xerer zazawan vezugel.`
+> `zeredel geredal. zalahen vabahel. xeredar zazawan vezugel.`
 >
 > z-radio | g-red . z-Alahen | v-punch . x-←red | z-Azawan | v-scream
 >
@@ -856,37 +856,37 @@ Examples:
 
 Examples:
 
-> `zeredel welavam geredal. zalahen delar vahahal.`
+> `zeredel welavam geredal. zalahen delavar vahahal.`
 >
 > z-radio | [w-very | g-red] . z-Alahen | d-←very | v-see
 >
 > "A radio is very red. Alahen sees that degree."
 
-> `zeredel welavam geredal. zemegul gelar.`
+> `zeredel welavam geredal. zemegul gelavar.`
 >
 > z-radio | [w-very | g-red] . z-studio-mic | g-←very
 >
 > "A radio is very red. A studio mic is that (very red) too."
 
-> `zeredel welavam geredal. zemegul welar gelavam.`
+> `zeredel welavam geredal. zemegul welavar gelavam.`
 >
 > z-radio | [w-very | g-red] . z-studio-mic | [w-←very | g-big]
 >
 > "A radio is very red. A studio mic is very big too."
 
-> `zeredel welavam geredal. zazawan helar veredem.`
+> `zeredel welavam geredal. zazawan helavar veredem.`
 >
 > z-radio | [w-very | g-red] . z-Azawan | h-←very | v-broadcast
 >
 > "A radio is very red. Azawan broadcasts to that degree."
 
-> `zeredel welavam geredal. yelar.`
+> `zeredel welavam geredal. yelavar.`
 >
 > z-radio | [w-very | g-red] . y-←very
 >
 > "A radio is very red. In that manner?!"
 
-> `zeredel welavam geredal. zalahen vabahel. xelar zazawan vezugel.`
+> `zeredel welavam geredal. zalahen vabahel. xelavar zazawan vezugel.`
 >
 > z-radio | [w-very | g-red] . z-Alahen | v-punch . x-←very | z-Azawan | v-scream
 >
@@ -958,19 +958,19 @@ Examples:
 
 Examples:
 
-> `yazawan. yazar.`
+> `yazawan. yazawar.`
 >
 > y-Azawan . y-←Azawan
 >
 > "Azawan! Azawan!"
 
-> `zazawan vamuyul. zalahen vabahel. xazar vezugel.`
+> `zazawan vamuyul. zalahen vabahel. xazawar vezugel.`
 >
 > z-Azawan | v-mute . z-Alahen | v-punch . x-←Azawan | v-scream
 >
 > "Azawan mutes. Alahen punches. Going back to Azawan, Azawan screams."
 
-> `yalahen. zalar vezugel.`
+> `yalahen. zalaher vezugel.`
 >
 > y-Alahen . z-←Alahen | v-scream
 >
@@ -1100,7 +1100,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 **1.** *Azawan mutes. Alahen does the same with them.*
 
 ::: details Show answer
-`zazawan vamuyul. zalahen vazar.`
+`zazawan vamuyul. zalahen vazawar.`
 
 z-Azawan | v-mute . z-Alahen | v-←Azawan
 :::
@@ -1108,7 +1108,7 @@ z-Azawan | v-mute . z-Alahen | v-←Azawan
 **2.** *Alahen broadcasts. That action is big.*
 
 ::: details Show answer
-`zalahen veredem. zerer gelavam.`
+`zalahen veredem. zereder gelavam.`
 
 z-Alahen | v-broadcast . z-←broadcast | g-big
 :::
@@ -1116,7 +1116,7 @@ z-Alahen | v-broadcast . z-←broadcast | g-big
 **3.** *Azawan broadcasts. By doing so, Alahen mutes.*
 
 ::: details Show answer
-`zazawan veredem. zalahen herer vamuyul.`
+`zazawan veredem. zalahen hereder vamuyul.`
 
 z-Azawan | v-broadcast . z-Alahen | h-←broadcast | v-mute
 :::
@@ -1124,7 +1124,7 @@ z-Azawan | v-broadcast . z-Alahen | h-←broadcast | v-mute
 **4.** *A radio is red. The red one screams.*
 
 ::: details Show answer
-`zeredel geredal. zerer vezugel.`
+`zeredel geredal. zeredar vezugel.`
 
 z-radio | g-red . z-←red | v-scream
 :::
@@ -1132,14 +1132,14 @@ z-radio | g-red . z-←red | v-scream
 **5.** *Alahen punches. That action is big.*
 
 ::: details Show answer
-`zalahen vabahel. zabar gelavam.`
+`zalahen vabahel. zabaher gelavam.`
 
 z-Alahen | v-punch . z-←punch | g-big
 :::
 
 #### Agazan → English {#people-pointing-back-agazan-to-english}
 
-**1.** `zeredel gelavam. zemegul gerer.`
+**1.** `zeredel gelavam. zemegul gereder.`
 
 ::: details Show answer
 
@@ -1148,7 +1148,7 @@ z-radio | g-big . z-studio-mic | g-←radio
 *A radio is big. A studio mic is of that kind.*
 :::
 
-**2.** `zalahen vabahel. zazawan habar vamuyul.`
+**2.** `zalahen vabahel. zazawan habaher vamuyul.`
 
 ::: details Show answer
 
@@ -1157,7 +1157,7 @@ z-Alahen | v-punch . z-Azawan | h-←punch | v-mute
 *Alahen punches. By doing so, Azawan mutes.*
 :::
 
-**3.** `zazawan demegul vamuyul. zalahen vemer.`
+**3.** `zazawan demegul vamuyul. zalahen vemegur.`
 
 ::: details Show answer
 
@@ -1166,7 +1166,7 @@ z-Azawan | d-studio-mic | v-mute . z-Alahen | v-←studio-mic
 *Azawan mutes a studio mic. Alahen does the same to it.*
 :::
 
-**4.** `zeredel gelavam. zelar vezugel.`
+**4.** `zeredel gelavam. zelavar vezugel.`
 
 ::: details Show answer
 
@@ -1175,7 +1175,7 @@ z-radio | g-big . z-←big | v-scream
 *A radio is big. The big one screams.*
 :::
 
-**5.** `zahaben geredal. zazawan verer.`
+**5.** `zahaben geredal. zazawan veredar.`
 
 ::: details Show answer
 

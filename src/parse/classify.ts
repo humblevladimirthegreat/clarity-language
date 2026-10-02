@@ -15,9 +15,9 @@ import {
   derivedHookGloss,
   hookCompoundFromMorph,
 } from "./hook-compounds.js";
-import type { LexOverlay, LexReading, LexWord, MorphWord } from "./types.js";
+import type { LexOverlay, LexReading, LexWord, MorphWord, PointerVowel, RoleVowel } from "./types.js";
 import { CLOSED } from "../closed-roots.js";
-import { JOIN_SERIES, resumeCut } from "./series.js";
+import { JOIN_SERIES } from "./series.js";
 
 function sakeRootsFromOverlays(overlays: Iterable<OverlayRow>): Set<string> {
   const roots = new Set<string>();
@@ -274,21 +274,6 @@ export function knownLexiconRoots(tables: ClassifyTables): ReadonlySet<string> {
     known = roots;
   }
   return known;
-}
-
-const shortResumeStemCache = new WeakMap<ClassifyTables, Set<string>>();
-
-/** Short resume stems (`odo` of `odoga`, cut through the 2nd vowel) of published roots ([pronouns.md](../../docs/grammar/pronouns.md#resume-r)). */
-function publishedShortResumeStems(tables: ClassifyTables): Set<string> {
-  let stems = shortResumeStemCache.get(tables);
-  if (!stems) {
-    stems = new Set();
-    for (const root of tables.published.keys()) {
-      stems.add(resumeCut(root));
-    }
-    shortResumeStemCache.set(tables, stems);
-  }
-  return stems;
 }
 
 /** Content hosts missing from `known`. */
@@ -570,6 +555,7 @@ const HOLDER_HOST_KINDS = new Set(["evidential", "may", "notional"]);
  */
 function holderSeam(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {
   const family = word.family;
+  if (word.pos === "th" && family.kind === "x") return heldPointer(word, tables);
   if (word.pos !== "th" || family.kind !== "content" || family.roots.length !== 1) return undefined;
   const root = family.roots[0]!;
   if (tables.published.has(root)) return undefined;
@@ -584,6 +570,34 @@ function holderSeam(word: MorphWord, tables: ClassifyTables): MorphWord | undefi
     return { ...word, family: { kind: "x", xFamily: "holder", leftRoots: [host], rightRoots: [holder], grade } };
   }
   return undefined;
+}
+
+/**
+ * A role pointer in the holder slot (`thunemaxar`, pronouns.md#role-pointers): HOST GRADE + role
+ * vowel(s) + `x` + pointer vowel + **-r**. The word grammar reads a single role vowel as an ability
+ * shape (`unema` + `x` + `a`) and a stacked one as a pointer on a host.
+ */
+function heldPointer(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {
+  const family = word.family;
+  if (family.kind !== "x" || word.ending !== "r" || family.leftRoots.length !== 1) return undefined;
+  let body: string;
+  let pointerVowel: PointerVowel;
+  if (family.xFamily === "pointer" && family.pointerVowel) {
+    body = `${family.leftRoots[0]!}${family.roleVowel}`;
+    pointerVowel = family.pointerVowel;
+  } else if (family.xFamily === "ability" && (family.stanceVowel === "a" || family.stanceVowel === "e" || family.stanceVowel === "o")) {
+    body = family.leftRoots[0]!;
+    pointerVowel = family.stanceVowel;
+  } else return undefined;
+  const match = /^(.+)([lmr])(ae|ao|oe|ua|ue|uo|[aeou])$/.exec(body);
+  if (!match) return undefined;
+  const [, host, grade, roleVowel] = match as unknown as [string, string, "l" | "m" | "r", RoleVowel];
+  const row = tables.overlays.get(overlayKey("th", `${host}${grade}`));
+  if (!row || !HOLDER_HOST_KINDS.has(row.kind)) return undefined;
+  return {
+    ...word,
+    family: { kind: "x", xFamily: "holder", leftRoots: [host], rightRoots: [], grade, roleVowel, pointerVowel },
+  };
 }
 
 /**
@@ -696,14 +710,10 @@ const CLASSIFY_RULES: ClassifyRule[] = [
   },
 ];
 
-/** A word no rule reads: a short resume of a published root, an unlisted root, or a plain word. */
+/** A word no rule reads: an unlisted root, or a plain word. */
 function classifyUnlisted(word: MorphWord, tables: ClassifyTables): LexWord {
   const family = word.family;
   const roots = lexiconContentRoots(word, knownLexiconRoots(tables));
-  // A short resume (`zodor`) cuts a published root; it reads as that root, not as an unknown word.
-  if (word.ending === "r" && family.kind === "content" && roots.length === 1 && publishedShortResumeStems(tables).has(roots[0]!)) {
-    return { ...word, reading: "ordinary" };
-  }
   if (roots.length > 0) {
     const potentialCompounds = potentialCompoundsFor(word, tables);
     return potentialCompounds ? { ...word, reading: "unknown", potentialCompounds } : { ...word, reading: "unknown" };

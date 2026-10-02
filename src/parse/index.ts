@@ -15,7 +15,7 @@ export {
   unknownLexiconContentRoots,
 } from "./classify.js";
 export { parseSentenceTokens, SentenceParseError } from "./sentence-parser.js";
-export { contentMatch, letterPrefix, numberMarkerIdentity, resolve } from "./resolve.js";
+export { numberMarkerIdentity, resolve, wholeStem } from "./resolve.js";
 export { classifyToTokenType } from "./tokens.js";
 export { segmentUtterance, tokenizeUtterance } from "./tokenize.js";
 export { parseWord, parseWords, parseWordStream, probeMorphWord, WordParseError } from "./word.js";

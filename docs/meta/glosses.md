@@ -95,7 +95,7 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 
 | Agazan distinction | Loose free does |
 |---------------------|-----------------|
-| Cast / short resumes (`zazar` + “(A)”) | Ordinary *I / you / he / she / they*, or a **name** once known |
+| Cast resumes and role pointers (`zazawar`, `zaxar` + “(A)”) | Ordinary *I / you / he / she / they*, or a **name** once known |
 | Role metalanguage (`speaker`, `listener`, `interlocutors`) | *I / you / we* |
 | Join packaging (open `zam` vs closed `zal`, exclusive `dol`, fence shape) | Plain *and / or*; no “exactly one”, no open-list footnotes |
 | Sense-picking **-l / -m / -n** | Never (already omitted from morph when they only pick sense) |
@@ -240,9 +240,10 @@ A morph line corresponds **one-to-one** with its Agazan. From the gloss alone yo
 - **Every written word is glossed**, including a spoken **`yal`**. A `yal` that was left out is not added.
 - **Sentence marks.** When one line holds several sentences, the mark between them stands alone with spaces: `z-Azawan | v-walk . z-←Azawan | v-judge`. A line-final period is implicit. A [tone mark](../grammar/speech-moves.md#tone-marks) is copied as written: attached to the glossed word or span it colors (`!z-Azawan`), or standing alone with spaces for sentence scope (`! z-Azawan | v-walk`).
 - **One label per form.** Each (PoS, root, ending) maps to one English label. Two roots never share an English sense: when they would, reword one row in the lexicon. `npm run lint:lexicon` checks this, and `npm test` round-trips every glossed example in `docs/grammar/`.
-- **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, `.full` on a [full-root resume](#anaphors-r), and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and a surface mark when a number word is not in its [preferred writing](../grammar/numbers.md#writing-style-numeric-vs-spelled): `.spelled` on a spelled-out word that prefers shorthand (`grawodul` → `g-twelve.spelled`; `g+12` → `g-twelve`), `.short` on shorthand that prefers spelling — no digit or one digit (`g+3` → `g-three.short`; `grarel` → `g-three`; `g+` → `g-more-than-one.short`).
+- **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and a surface mark when a number word is not in its [preferred writing](../grammar/numbers.md#writing-style-numeric-vs-spelled): `.spelled` on a spelled-out word that prefers shorthand (`grawodul` → `g-twelve.spelled`; `g+12` → `g-twelve`), `.short` on shorthand that prefers spelling — no digit or one digit (`g+3` → `g-three.short`; `grarel` → `g-three`; `g+` → `g-more-than-one.short`).
 - **Ordinals use digits** (`gredul` → `g-2nd`, `gruedul` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.
 - **Role-compound resumes** keep their role: `daexaradar` → `d-←instrument-x-write`, `duxaradar` → `d-←patient-x-write`. A bare `d-←write` would merge the doer, scene, undergoer, tool, … of one event.
+- **Role pointers** gloss their role and pointer vowel, never the referent: `zaxar` → `z-←agent.same`, `duxor` → `d-←patient.other`, `daxer` → `d-←agent.self`. The role label is the role-compound one (`recipient` for **`o`**, `instrument` for **`ae`**, …).
 - **Span resumes** gloss by type: written `d[=]` → `d-←cite`, spoken `daxur` → `d-←cite.spoken`.
 - **Unknown words fail.** A content word the lexicon cannot gloss has no morph line: a root missing from the lexicon, or **-m** on a root with no abstract sense (unless a closed overlay defines that **-m** form). `lint:agazan` reports it.
 - **Quoted pass-through.** Raw payloads (mention and opaque interiors, and a resume stem with no known antecedent) go in straight double quotes: `z-MENTION["odoga"]`. A `"` inside the payload is written `""`.
@@ -290,18 +291,18 @@ When you retie a published literal (`dancing` → `dance`), morph lines that cop
 
 The binder **is** the gloss root. No trailing `-r` (resume is already marked by `←`).
 
-A [short resume](../grammar/pronouns.md#resume-r) (root cut after its 2nd vowel) is unmarked. A **full-root resume** (entire root + **-r**) adds `.full`. The antecedent's label names its root, and the suffix gives the cut, so the gloss rebuilds the exact word.
+A [resume](../grammar/pronouns.md#resume-r) spells its antecedent's whole stem, so the antecedent's label rebuilds the exact word.
 
 | Case | Agazan | Morph gloss |
 |------|--------|-------------|
-| Short resume | `zazar` | `z-←Azawan` |
-| Full-root resume | `zazawar` | `z-←Azawan.full` |
-| Full-root resume of a content word | `vezebar` | `v-←sleep.full` |
-| Compound name | `zabur` | `z-←Ubune-x-Unowen` |
+| Resume of a name | `zazawar` | `z-←Azawan` |
+| Resume of a content word | `vezebar` | `v-←sleep` |
+| Compound name | `zubunexunower` | `z-←Ubune-x-Unowen` |
 | Resume of a prior content word | | `z-←someone` / `d-←tea` |
 | No antecedent, stem not in the lexicon | | `z-←"…"` (the stem itself) |
 | Fill-ask / unspecified member | `zar` | `z-who` / `z-something` (as the docs require for that form) |
 | [Ordinal pronoun](../grammar/pronouns.md#ordinal-pronouns) | `zredur` / `zruewor` | `z-←2nd` / `z-←1st-from-end` (the place, never the person's name) |
+| [Role pointer](../grammar/pronouns.md#role-pointers) | `zaxar` / `zaxor` / `daxer` | `z-←agent.same` / `z-←agent.other` / `d-←agent.self` (role and event, never the person's name) |
 
 Do not write `z-←microphone` for a speaker antecedent.
 
@@ -312,9 +313,9 @@ Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#
 
 | Agazan | Morph gloss | Free English | Resume |
 |--------|-------------|--------------|--------|
-| `zazawan` | `z-Azawan` | *Azawan* | `zazar` → `z-←Azawan` |
-| `zalahen` | `z-Alahen` | *Alahen* | `zalar` → `z-←Alahen` |
-| `zahaben` | `z-Ahaben` | *Ahaben* | `zahar` → `z-←Ahaben` |
+| `zazawan` | `z-Azawan` | *Azawan* | `zazawar` → `z-←Azawan` |
+| `zalahen` | `z-Alahen` | *Alahen* | `zalaher` → `z-←Alahen` |
+| `zahaben` | `z-Ahaben` | *Ahaben* | `zahaber` → `z-←Ahaben` |
 
 ### Mid-word `x` families
 
@@ -499,7 +500,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 2. No `→` etymology chains.
 3. No **-l** / **-m** / **-n**, and no **`@`** / **`~`**, when they only selected the sense-root. Named **-n** is the English name (`z-Azawan`), not `-n`, `@`, or `-proper`.
 4. Compounds / stance / role / span `x` pieces are always hyphenated segments (`y-Ubune-x-Unowen`). Do not fuse a name into one unsegmented English label.
-5. **-r** uses `←…` (no trailing `-r`), with `.full` on a full-root resume; **-x** stays as `-x`. Resume of a house name is `z-←Azawan`, not `z-r`. Fill-ask is `z-who`, not `z-ar`.
+5. **-r** uses `←…` (no trailing `-r`); **-x** stays as `-x`. Resume of a house name is `z-←Azawan`, not `z-r`. Fill-ask is `z-who`, not `z-ar`.
 6. Multi-word units are in [phrase brackets](#phrase-brackets), nested by attachment; packages use labeled brackets (`NAME[…]`, `CITE[…]`, `SCOPE[…]`). The line [round-trips](#round-trip) to the exact Agazan.
 7. Free English is on its own **quoted** line (or grammar-table Gloss column) — **loose** by default; **strict** only when teaching packaging. Example blocks follow [example block layout](#example-block) (blockquote; skip a morph line only when `lint:agazan` treats parser output as redundant with that loose line).
 

@@ -36,17 +36,6 @@ export function isScaleStem(stem: NumberStem): boolean {
   return stem.marker === "+" && isDigitless(stem);
 }
 
-const VOWELS = new Set(["a", "e", "o", "u"]);
-
-/** Root cut through its 2nd vowel: the short resume stem (pronouns.md § Resume). Whole root when it has fewer. */
-export function resumeCut(root: string): string {
-  let seen = 0;
-  for (let i = 0; i < root.length; i++) {
-    if (VOWELS.has(root[i]!) && ++seen === 2) return root.slice(0, i + 1);
-  }
-  return root;
-}
-
 type ForceShape = { series: string; endings: string[] };
 
 /** Legal stacked act words: `lead` before `force` (speech-moves.md § Emphatic prohibition, questions.md § rhetorical). */

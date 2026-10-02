@@ -242,9 +242,9 @@ The ending still belongs to that verb or adjective (**-l** concrete, **-m** abst
 >
 > "Alahen can express themself."
 
-For English *so can I* / *can too*, [resume](pronouns.md#resume-r) the verb and keep the **`x`** and vowel: the short stem, then **`x`**, the vowel, and **-r**. A plain resume would drop the *can*.
+For English *so can I* / *can too*, [resume](pronouns.md#resume-r) the verb and keep the **`x`** and vowel: the whole stem, then **`x`**, the vowel, and **-r**. A plain resume would drop the *can*.
 
-> `zazawan vowogaxal. zalahen vowoxar.`
+> `zazawan vowogaxal. zalahen vowogaxar.`
 >
 > z-Azawan | v-walk-able . z-Alahen | v-←walk-able
 >
@@ -412,7 +412,7 @@ A trial run (**-r**) plans for failure: if it fails, that is what the probe was 
 
 For *try A; failing that, B*, join the attempt to the backup with the clause sequence join [**`xon`**](join-across-roles.md#sequence). It goes between the two clauses. The backup comes into play only if the attempt before it fails, and exactly one of them ends up holding.
 
-> `zazawan thudur vowogal xon zazar vezehel.`
+> `zazawan thudur vowogal xon zazawar vezehel.`
 >
 > [z-Azawan | th-ATTEMPT-trial | v-walk | x-or-else | z-←Azawan | v-sing]
 >
@@ -420,7 +420,7 @@ For *try A; failing that, B*, join the attempt to the backup with the clause seq
 
 Each clause keeps its own ending, so you can probe the first option and commit to the backup:
 
-> `zazawan thudur vowogal xon zazar thudul vezehel.`
+> `zazawan thudur vowogal xon zazawar thudul vezehel.`
 >
 > [z-Azawan | th-ATTEMPT-trial | v-walk | x-or-else | z-←Azawan | th-ATTEMPT-committed | v-sing]
 >
@@ -428,7 +428,7 @@ Each clause keeps its own ending, so you can probe the first option and commit t
 
 A [PLAN](#plan-predict) atlas (**`thamal`**) already includes backups. Chain them with **`xon`** to name them, first choice first:
 
-> `zazawan thamal vowogal xon zazar vezehel xon zazar vezebal.`
+> `zazawan thamal vowogal xon zazawar vezehel xon zazawar vezebal.`
 >
 > [z-Azawan | th-plan-atlas | v-walk | x-or-else | z-←Azawan | v-sing | x-or-else | z-←Azawan | v-sleep]
 >
@@ -684,7 +684,7 @@ z-Azawan | th-ATTEMPT-committed | v-climb
 ::: details Show answer
 `zazawan thudur vazadol xon zazawar vehahel.`
 
-[z-Azawan | th-ATTEMPT-trial | v-stand | x-or-else | z-←Azawan.full | v-sit]
+[z-Azawan | th-ATTEMPT-trial | v-stand | x-or-else | z-←Azawan | v-sit]
 :::
 
 **14.** *Alahen wants to see Azawan.*

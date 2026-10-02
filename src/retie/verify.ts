@@ -5,12 +5,8 @@
 import type { ClassifyTables } from "../parse/classify.js";
 import { ConstructionError } from "../parse/enforce.js";
 import { parse } from "../parse/index.js";
-import { parseWord } from "../parse/word.js";
 
-import { letterPrefix } from "../parse/resolve.js";
-
-import { bindDrift, contentBinds, type ContentBind } from "./binds.js";
-import { contentStemRoots } from "./resume.js";
+import { bindDrift, contentBinds } from "./binds.js";
 import type { RetiedSpan } from "./markdown.js";
 import { asRetieTables, fillSelfFor, selfRootIn, type RetieTables } from "./tables.js";
 
@@ -42,35 +38,24 @@ const SPELLING_KEYS = new Set([
 
 const ROOT_KEYS = new Set(["roots", "leftRoots", "rightRoots", "leftRoot"]);
 
-type Shape = { structure: string; roots: string[]; resume: boolean[] };
+type Shape = { structure: string; roots: string[] };
 
 function shapeOf(value: unknown): Shape {
   const roots: string[] = [];
-  const resume: boolean[] = [];
-  let ending: unknown;
   const structure = JSON.stringify(value, function (this: Record<string, unknown>, key, v: unknown) {
-    if (key === "family") ending = this.ending;
     if (SPELLING_KEYS.has(key)) return undefined;
-    // A two-syllable root's short cut is the whole root, so its short resume matched "fullRoot";
-    // recut from a longer new root it matches "letter". Same resume kind, not a tree change.
-    if (key === "match" && v === "fullRoot" && isOwnShortCut(this)) return "letter";
     if (ROOT_KEYS.has(key) && (Array.isArray(v) || typeof v === "string")) {
       const list = typeof v === "string" ? [v] : (v as string[]);
       for (const root of list) {
         roots.push(root);
-        resume.push(ending === "r");
       }
       return list.length;
     }
     return v;
   });
-  return { structure, roots, resume };
+  return { structure, roots };
 }
 
-function isOwnShortCut(anaphor: Record<string, unknown>): boolean {
-  const roots = (anaphor.pronoun as { family?: { roots?: string[] } } | undefined)?.family?.roots;
-  return Array.isArray(roots) && roots.length > 0 && roots.every((root) => letterPrefix(root) === root);
-}
 
 function tryParse(
   text: string,
@@ -97,14 +82,6 @@ function anaphorRaws(value: unknown): string[] {
   return anaphors.map((anaphor) => anaphor.pronoun?.raw ?? "");
 }
 
-/** A short resume stem respelled from its moved antecedent (`aza` → `ulu` after `azawa` → `ululo`). */
-function resumeRespelled(before: string, after: string | undefined, map: ReadonlyMap<string, string>): boolean {
-  if (!after || after.length !== before.length) return false;
-  for (const [oldRoot, newRoot] of map) {
-    if (oldRoot.startsWith(before) && newRoot.startsWith(after)) return true;
-  }
-  return false;
-}
 
 /** Whole-parse classes; words, templates and fragments are covered by the lint afterwards. */
 const CHECKED = new Set(["sentence", "phrase"]);
@@ -121,11 +98,11 @@ export function verifyRetiedSpans(
     const before = tryParse(span.before, old);
     if ("error" in before) continue; // already broken before the retie; the lint reports it
     if (span.after === span.before) {
-      // Left as is: fine unless the old reading holds a moved root (not a resume stem, which follows its antecedent,
-      // nor the speaker root filled in for `SELF`, which the site fills from the current lexicon).
+      // Left as is: fine unless the old reading holds a moved root (not the speaker root filled in
+      // for `SELF`, which the site fills from the current lexicon).
       const self = span.before.includes("SELF") ? selfRootIn(old) : undefined;
       const stale = before.shape.roots.find(
-        (root, i) => !before.shape.resume[i] && root !== self && map.has(root) && map.get(root) !== root,
+        (root) => root !== self && map.has(root) && map.get(root) !== root,
       );
       if (stale) {
         failures.push({ span, level: "blocking", detail: `left unretied, but it reads root ${stale} (now ${map.get(stale)})` });
@@ -157,13 +134,6 @@ export function verifyRetiedSpans(
       });
       continue;
     }
-    for (const lost of fullResumesNoLongerNeeded(beforeBinds, afterBinds, span.before, span.after)) {
-      failures.push({
-        span,
-        level: "warning",
-        detail: `full-root resume ${lost} no longer needs the full root: no other word shares its short stem, so the example may not show what it teaches`,
-      });
-    }
     if (before.shape.structure !== after.shape.structure) {
       const beforeLinks = anaphorRaws(before.value);
       const afterLinks = anaphorRaws(after.value);
@@ -185,9 +155,7 @@ export function verifyRetiedSpans(
       (root, i) => {
         const was = before.shape.roots[i]!;
         const now = after.shape.roots[i];
-        if (root === now) return false;
-        // A short resume follows its antecedent, which may not be the mapped root it happens to spell.
-        return !(before.shape.resume[i] && (now === was || resumeRespelled(was, now, map)));
+        return root !== now;
       },
     );
     if (bad >= 0 || expected.length !== after.shape.roots.length) {
@@ -202,44 +170,3 @@ export function verifyRetiedSpans(
   return failures;
 }
 
-/** Content roots of every word in a span (whitespace chunks that parse as words). */
-function spanRoots(text: string): string[] {
-  const roots: string[] = [];
-  for (const chunk of text.split(/\s+/)) {
-    const core = chunk.replace(/^[^a-z]+|[^a-z]+$/g, "");
-    if (!core) continue;
-    try {
-      const word = parseWord(core);
-      if (word.ending !== "r") roots.push(...contentStemRoots(word));
-    } catch {
-      // not a word
-    }
-  }
-  return roots;
-}
-
-/**
- * Full-root resumes that needed the full root before the retie (another word shared the short stem)
- * but not after. Examples that teach full-root resumes rely on that shared prefix.
- */
-function fullResumesNoLongerNeeded(
-  before: readonly ContentBind[],
-  after: readonly ContentBind[],
-  beforeText: string,
-  afterText: string,
-): string[] {
-  const out: string[] = [];
-  const beforeRoots = spanRoots(beforeText);
-  const afterRoots = spanRoots(afterText);
-  const sharesCut = (roots: string[], root: string) =>
-    roots.some((other) => other !== root && letterPrefix(other) === letterPrefix(root));
-  for (let i = 0; i < Math.min(before.length, after.length); i++) {
-    const was = before[i]!;
-    const now = after[i]!;
-    const full = (b: ContentBind) =>
-      b.antecedent?.length === 1 && b.roots.join("") === b.antecedent[0] && letterPrefix(b.antecedent[0]!) !== b.antecedent[0];
-    if (!full(was) || !full(now)) continue;
-    if (sharesCut(beforeRoots, was.antecedent![0]!) && !sharesCut(afterRoots, now.antecedent![0]!)) out.push(now.raw);
-  }
-  return out;
-}

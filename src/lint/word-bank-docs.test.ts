@@ -129,8 +129,8 @@ ${drills.map((d, i) => `**${i + 1}.** *…*\n\n::: details Show answer\n\`${d}\`
     assert.deepEqual(kinds(md), []);
   });
 
-  it("does not read a short resume stem as its own root", () => {
-    const md = page(["*Azawan* | `azawan`", "*run* | `arahal`", "*scream* | `vezugel`"], ["zazawan varahal. zazar vezugel."]);
+  it("reads a resume as its antecedent's root", () => {
+    const md = page(["*Azawan* | `azawan`", "*run* | `arahal`", "*scream* | `vezugel`"], ["zazawan varahal. zazawar vezugel."]);
     assert.deepEqual(kinds(md), []);
   });
 

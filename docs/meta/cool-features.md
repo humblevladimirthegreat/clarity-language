@@ -115,25 +115,25 @@ The person responds likewise with their name and the suffix for their own prefer
 
 Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/x-compounds.html#conversation-length
 
-### Pronouns Copy the Start of the Noun
+### Pronouns Point by Role
 
-English pronouns are often ambiguous as to what the antecedent is, especially *it*. Agazan pronouns are built from an abbreviation of the antecedent, so the form itself tells you who or what you mean. There is no gender for pronouns, and not even animacy.
+English pronouns are often ambiguous as to what the antecedent is, especially *it*. Agazan pronouns point by the part someone played in a recent event, so the form itself tells you who or what you mean. There is no gender for pronouns, and not even animacy.
 
-The first letter is the part of speech in this sentence (`z-` subject, `d-` object, …). After that you copy the antecedent through its second vowel and then end it with -r.
+The first letter is the part of speech in this sentence (`z-` subject, `d-` object, …). Then comes a role vowel (`a` the doer, `u` the one it happened to, `o` the extra party), `x`, a pointer vowel (`a` the latest, `o` the other one, `e` this same sentence), and -r.
 
-> `zazawan dalahen vemedul. zalar dazar vabahel.`
+> `zazawan dalahen vemedul. zuxar daxar vabahel.`
 
-> z-Azawan | d-Alahen | v-middle-finger | z←Alahen | d←Azawan | v-punch
+> z-Azawan | d-Alahen | v-middle-finger . z-←patient.same | d-←agent.same | v-punch
 
-> "Azawan flips off Alahen. He (Alahen) punches him (Azawan)."
+> "Azawan flips off Alahen. He (Alahen) punches them (Azawan)."
 
-The pronoun `dazar` was derived from the first three letters of `azawan`, and the pronoun `zalar` was derived from the first three letters of `alahen`.
+`zuxar` is *the one it just happened to* (Alahen), now the subject; `daxar` is *the one who just did it* (Azawan), now the object. The roles swap and the pronouns still point the right way.
 
-If two recent words would share the same short start, you copy the whole earlier word into the pronoun instead. There are over 200 possible three-letter combinations so this doesn't happen often. 
+For anything further back, copy the earlier word's whole stem and end it with -r: `zodogar` is *the dog*. 
 
 If there are two of the same word, you use an adjective to differentiate them:
 
-> `zodogal gubuhel vowogal. zodogal geredal varahal. zodor gubuhel vehahel.`
+> `zodogal gubuhel vowogal. zodogal geredal varahal. zodogar gubuhel vehahel.`
 
 > z-dog | g-blue | v-walk | z-dog | g-red | v-run | z←dog | g-blue | v-sit
 

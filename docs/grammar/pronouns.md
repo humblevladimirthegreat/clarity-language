@@ -1,25 +1,23 @@
 # Pronouns
 
-English *he*, *she*, *it*, and *they* point back to someone or something already named. You already write **-l** / **-m** / **-n** on a [citation](word-endings.md) and on content words. The remaining last letter is **-r**: keep the role letter for this sentence’s slot (subject, object, and so on), then enough of the earlier word’s root to pick the right person or thing. That lets you skip repeating the full name while the listener still knows who you mean.
+English *he*, *she*, *it*, and *they* point back to someone or something already named. You already write **-l** / **-m** / **-n** on a [citation](word-endings.md) and on content words. The remaining last letter is **-r**: keep the role letter for this sentence’s slot (subject, object, and so on), then the earlier word’s whole stem. For someone in a recent sentence, a shorter **role pointer** names them by the part they played instead.
 
 ## Beginner {#beginner}
 
 ### Resume with **-r** {#resume-r}
 <a id="resume-r-beginner"></a>
 
-After you have already named a person or thing, the next sentence can point back instead of repeating the full word. The word you point back to is the **antecedent**. The new word takes the role letter for the slot you need **now** (subject, object, and so on), then a **prefix of that word’s root**, then **-r**. The listener takes the **most recent** word whose stem matches that prefix. (cue: **-r** ≈ resume (pick up the earlier word))
+After you have already named a person or thing, the next sentence can point back instead of naming them fresh. The word you point back to is the **antecedent**. The new word takes the role letter for the slot you need **now** (subject, object, and so on), then the antecedent’s **whole stem** (everything between its role letter and its ending), then **-r**. The listener takes the **most recent** word with that same stem. (cue: **-r** ≈ resume (pick up the earlier word))
 
-**Short resume:** cut the root **up to and including its 2nd vowel**. Prefer this when it already picks the right antecedent.
-
-> `zazawan vowogal. zazar vehahel.`
+> `zazawan vowogal. zazawar vehahel.`
 >
 > z-Azawan | v-walk . z-←Azawan | v-sit
 >
-> "Azawan walks. Azawan sits." (resume from the name’s root prefix)
+> "Azawan walks. Azawan sits."
 
 **Compare with:** English often uses *the* for a kind already in the talk (*A dog walks. **The** dog sits.*). Agazan uses **-r** for that job, not a separate article.
 
-> `zodogal vowogal. zodor vehahel.`
+> `zodogal vowogal. zodogar vehahel.`
 >
 > z-dog | v-walk . z-←dog | v-sit
 >
@@ -27,41 +25,89 @@ After you have already named a person or thing, the next sentence can point back
 
 **Compare with:** English *the dog that walked* is that same pair of sentences, then **-r** in whatever slot you need. Do not hang a *who / that / which* clause on the noun ([which person or thing](dependents.md#which-noun)).
 
-<!-- retie: shared-prefix -->
+A word built from two roots resumes with its whole stem too. `debedalahazar` is *the bedroom*; `debedar` is *the bed*, and never points at a bedroom.
 
-When that short stem would match the **wrong** recent word, use a **full-root resume**: the **entire root** + **-r**. Short **`eze`** matches both *sleep* (`ezeba`) and *speechless* (`ezebo`). After both have been used, short `vezer` would pick the more recent *speechless*; full `vezebar` picks *sleep*.
-
-> `zalahen vezebal. zazawan gezebol. zahaben vezebar.`
+> `zazawan debedalahazal vahahal. zalahen debedalahazar vahahal.`
 >
-> z-Alahen | v-sleep . z-Azawan | g-speechless . z-Ahaben | v-←sleep.full
+> z-Azawan | d-bedroom | v-see . z-Alahen | d-←bedroom | v-see
 >
-> "Alahen sleeps. Azawan is speechless. Ahaben does so."
+> "Azawan sees a bedroom. Alahen sees the bedroom."
 
-A **short** resume always needs an earlier word to match. A **full-root** resume can open the talk: with no earlier match, it means the one you both already know (*the dog*, the household's dog).
+With no earlier match, **-r** on a word from the lexicon can open the talk: it means the one you both already know (*the dog*, the household’s dog).
 
 > `zodogar vowogal.`
 >
-> z-←dog.full | v-walk
+> z-←dog | v-walk
 >
 > "The dog walks." (the dog you both know)
 
-A root that ends at its 2nd vowel (`oze` *scroll*, `aga` *cloudy*) is spelled the same short and full. With no earlier match, it is the full-root resume.
+**Compare with:** a name the lexicon does not list (a new person, a pet’s name) has nothing to fall back on. Its **-r** needs the name earlier in the talk.
 
-> `zalahen vahahal dozer.`
+### Role pointers {#role-pointers}
+
+A resume spells the whole stem again. For someone in a recent sentence, a **role pointer** is shorter: it names them by the part they played in an earlier event. Write the role letter for the slot you need now, a **role vowel** for the part, mid-word **`x`**, a **pointer vowel** for which event, and **-r**.
+
+| Role vowel | Part in the earlier event | Where it sat |
+|------------|---------------------------|--------------|
+| **`a`** | the doer | `/z/` |
+| **`u`** | the one it happens to | `/d/` |
+| **`o`** | the extra party (*the one told*) | `/b/` |
+
+Pointer vowel **`a`** picks the latest sentence that had someone in that part. `zaxar` is *the latest doer*, as subject; `duxar` is *the latest one something happened to*, as object. (cue: **a** ≈ again (the same one again))
+
+> `zazawan vowogal. zaxar vehahel.`
 >
-> z-Alahen | v-see | d-←scroll.full
+> z-Azawan | v-walk . z-←agent.same | v-sit
 >
-> "Alahen sees the scroll." (the scroll you both know)
+> "Azawan walks. They sit."
 
-**Compare with:** a short resume of a longer root, with nothing before it, points at nothing, so it is not a sentence.
+The role letter is the slot **now**, so a pointer can move someone to a new role. Here the one seen becomes the one who runs:
 
-The antecedent can sit in the same sentence. A resume in the object slot that points back at the subject is English *herself* / *himself* / *themself* (a reflexive).
-
-> `zazawan vahahal dazar.`
+> `zazawan dalahen vahahal. zuxar varahal.`
 >
-> z-Azawan | v-see | d-←Azawan
+> z-Azawan | d-Alahen | v-see . z-←patient.same | v-run
+>
+> "Azawan sees Alahen. He runs."
+
+> `zazawan balahen vezebel. zoxar varahal.`
+>
+> z-Azawan | b-Alahen | v-tell . z-←recipient.same | v-run
+>
+> "Azawan tells Alahen. He runs."
+
+A sentence with nobody in that part does not count. *It rains* has no doer, so `zaxar` reaches past it:
+
+> `zazawan vowogal. verehel. zaxar vehahel.`
+>
+> z-Azawan | v-walk . v-rain . z-←agent.same | v-sit
+>
+> "Azawan walks. It rains. They sit."
+
+A pointer takes [associative **-x**](plurality.md#associative) like a name. A pointer with no earlier sentence that has someone in that part points at nothing, so it is not a sentence.
+
+### Themself (`e`) {#themself}
+
+Pointer vowel **`e`** picks **this** sentence’s own event. A pointer in the object slot that names this sentence’s doer is English *herself* / *himself* / *themself* (a reflexive). (cue: **e** ≈ echo (this same sentence))
+
+> `zazawan vahahal daxer.`
+>
+> z-Azawan | v-see | d-←agent.self
 >
 > "Azawan sees themself."
+
+A pointer never names its own slot: `zaxer` as the subject would be the subject pointing at itself, so it is not a sentence.
+
+### The other one (`o`) {#the-other-one}
+
+Pointer vowel **`o`** skips whoever had that part last and picks the nearest earlier sentence with someone **else** in it: English *the other one*. (cue: **o** ≈ other)
+
+> `zazawan vowogal. zalahen varahal. zalahen vehahel. zaxor vezebal.`
+>
+> z-Azawan | v-walk . z-Alahen | v-run . z-Alahen | v-sit . z-←agent.other | v-sleep
+>
+> "Azawan walks. Alahen runs. Alahen sits. The other one sleeps." (`zaxar` would be Alahen)
+
+**`o`** goes only with the three role vowels above: `zaxor`, `zuxor`, `zoxor`.
 
 ### Special pronouns {#special-pronouns}
 
@@ -144,15 +190,15 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *Azawan pours. They cook.*
 
 ::: details Show answer
-`zazawan vobohol. zazar vugugal.`
+`zazawan vobohol. zaxar vugugal.`
 
-z-Azawan | v-pour . z-←Azawan | v-cook
+z-Azawan | v-pour . z-←agent.same | v-cook
 :::
 
 **2.** *A cook pours. The cook cooks.*
 
 ::: details Show answer
-`zugugal vobohol. zugur vugugal.`
+`zugugal vobohol. zugugar vugugal.`
 
 z-cook | v-pour . z-←cook | v-cook
 :::
@@ -162,7 +208,7 @@ z-cook | v-pour . z-←cook | v-cook
 ::: details Show answer
 `zalahen vugugal. zazawan dugugol vahahal. zahaben vugugar.`
 
-z-Alahen | v-cook . z-Azawan | d-cookie | v-see . z-Ahaben | v-←cook.full
+z-Alahen | v-cook . z-Azawan | d-cookie | v-see . z-Ahaben | v-←cook
 :::
 
 **4.** *I see you.*
@@ -205,18 +251,34 @@ z-Azawan | d-speaker | v-punch
 z-someone | d-Ahaben | v-punch
 :::
 
+**9.** *Azawan sees Alahen. He screams.*
+
+::: details Show answer
+`zazawan dalahen vahahal. zuxar vezugel.`
+
+z-Azawan | d-Alahen | v-see . z-←patient.same | v-scream
+:::
+
+**10.** *Ahaben sees herself.*
+
+::: details Show answer
+`zahaben vahahal daxer.`
+
+z-Ahaben | v-see | d-←agent.self
+:::
+
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zalahen vugugal. zalar vobohol.`
+**1.** `zalahen vugugal. zaxar vobohol.`
 
 ::: details Show answer
 
-z-Alahen | v-cook . z-←Alahen | v-pour
+z-Alahen | v-cook . z-←agent.same | v-pour
 
 *Alahen cooks. He pours.*
 :::
 
-**2.** `zahaben vobohol. zahar vugugal.`
+**2.** `zahaben vobohol. zahaber vugugal.`
 
 ::: details Show answer
 
@@ -225,11 +287,11 @@ z-Ahaben | v-pour . z-←Ahaben | v-cook
 *Ahaben pours. She cooks.*
 :::
 
-**3.** `zalahen danaval vahahal. zalar danar vahahal.`
+**3.** `zalahen danaval vahahal. zaxar danavar vahahal.`
 
 ::: details Show answer
 
-z-Alahen | d-knife | v-see . z-←Alahen | d-←knife | v-see
+z-Alahen | d-knife | v-see . z-←agent.same | d-←knife | v-see
 
 *Alahen sees a knife. He sees the knife.*
 :::
@@ -238,7 +300,7 @@ z-Alahen | d-knife | v-see . z-←Alahen | d-←knife | v-see
 
 ::: details Show answer
 
-z-Ahaben | v-cook . z-Alahen | d-cookie | v-see . z-Azawan | v-←cook.full
+z-Ahaben | v-cook . z-Alahen | d-cookie | v-see . z-Azawan | v-←cook
 
 *Ahaben cooks. Alahen sees a cookie. Azawan does so.*
 :::
@@ -279,6 +341,15 @@ y-question | z-speaker | v-cook
 *Do I cook?*
 :::
 
+**9.** `zahaben vugugal. zalahen vobohol. zaxor vezugel.`
+
+::: details Show answer
+
+z-Ahaben | v-cook . z-Alahen | v-pour . z-←agent.other | v-scream
+
+*Ahaben cooks. Alahen pours. The other one (Ahaben) screams.*
+:::
+
 ## Intermediate {#intermediate}
 
 ### How English approximates **-r**
@@ -311,11 +382,11 @@ For English *too* / *also*, resume the action. `/v/` **-r** is *the same action 
 
 > `zalahen vowogal. zazawan vowogar.`
 >
-> z-Alahen | v-walk . z-Azawan | v-←walk.full
+> z-Alahen | v-walk . z-Azawan | v-←walk
 >
 > "Alahen walks. Azawan does too."
 
-> `zazawan vahahal dagadul. zazawan vahar dodogal.`
+> `zazawan vahahal dagadul. zazawan vahahar dodogal.`
 >
 > z-Azawan | v-see | d-cat . z-Azawan | v-←see | d-dog
 >
@@ -325,9 +396,9 @@ For English *too* / *also*, resume the action. `/v/` **-r** is *the same action 
 
 ### Going back to a thread
 
-English *going back to X* / *returning to that thread* names an earlier person or thing without making the next sentence *about* them. Use continue `/x/` plus the resume stem and **-r**. You can drop that word and the following claim is unchanged; it only points the listener at which earlier thread you mean.
+English *going back to X* / *returning to that thread* names an earlier person or thing without making the next sentence *about* them. Use continue `/x/` plus the whole stem and **-r**. You can drop that word and the following claim is unchanged; it only points the listener at which earlier thread you mean.
 
-> `zazawan vowogal. zalahen varahal. xazar vezebal.`
+> `zazawan vowogal. zalahen varahal. xazawar vezebal.`
 >
 > z-Azawan | v-walk . z-Alahen | v-run . x-←Azawan | v-sleep
 >
@@ -337,9 +408,9 @@ English *going back to X* / *returning to that thread* names an earlier person o
 
 ### Cross-role recast
 
-Sometimes you still mean that person or thing, but you need a **different** slot: the doing, the kind, the manner. Change only the first letter; keep the resume stem and **-r**. English then uses a longer phrase (*do the same with him*, *of that kind*) instead of *he* / *him*.
+Sometimes you still mean that person or thing, but you need a **different** slot: the doing, the kind, the manner. Change only the first letter; keep the whole stem and **-r**. English then uses a longer phrase (*do the same with him*, *of that kind*) instead of *he* / *him*.
 
-> `zazawan vehahel. zalahen vazar.`
+> `zazawan vehahel. zalahen vazawar.`
 >
 > z-Azawan | v-sit . z-Alahen | v-←Azawan
 >
@@ -355,7 +426,7 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 
 For English *one* (*a blue one*, *the red one*), write the unspecified **`dar`** *something* and resume the noun as a kind on `/ɡ/`, then add the new property. A resume on `/d/` would be the same dog; **`dar`** with a `/ɡ/` resume is another thing of the dog kind.
 
-> `zazawan dodogal geredal vahahal. zalahen dar godor gubuhel vahahal.`
+> `zazawan dodogal geredal vahahal. zalahen dar godogar gubuhel vahahal.`
 >
 > z-Azawan | [d-dog | g-red] | v-see . z-Alahen | [d-something | g-←dog] | g-blue | v-see
 >
@@ -363,7 +434,7 @@ For English *one* (*a blue one*, *the red one*), write the unspecified **`dar`**
 
 ### Each other {#reciprocal}
 
-For *each other*, join the people in `/z/` and add **`hedam`** after the verb. The root is **`eda`** *reciprocity*: each one does it to the others. Do not write a resume in `/d/` (`dazar` would just mean Azawan again).
+For *each other*, join the people in `/z/` and add **`hedam`** after the verb. The root is **`eda`** *reciprocity*: each one does it to the others. Do not write a resume in `/d/` (`dazawar` would just mean Azawan again).
 
 > `zazawan zalahen zal vahahal hedam.`
 >
@@ -461,7 +532,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Alahen pours. Azawan does so.*
 
 ::: details Show answer
-`zalahen vobohol. zazawan vobor.`
+`zalahen vobohol. zazawan vobohor.`
 
 z-Alahen | v-pour . z-Azawan | v-←pour
 :::
@@ -469,7 +540,7 @@ z-Alahen | v-pour . z-Azawan | v-←pour
 **2.** *A flower is red. A tomato is such.*
 
 ::: details Show answer
-`zavavul geredal. zadedol gerer.`
+`zavavul geredal. zadedol geredar.`
 
 z-flower | g-red . z-tomato | g-←red
 :::
@@ -477,15 +548,15 @@ z-flower | g-red . z-tomato | g-←red
 **3.** *Alahen sees Azawan. Ahaben sees them.*
 
 ::: details Show answer
-`zalahen dazawan vahahal. zahaben dazar vahahal.`
+`zalahen dazawan vahahal. zahaben duxar vahahal.`
 
-z-Alahen | d-Azawan | v-see . z-Ahaben | d-←Azawan | v-see
+z-Alahen | d-Azawan | v-see . z-Ahaben | d-←patient.same | v-see
 :::
 
 **4.** *Azawan pours. Alahen harvests. Going back to Azawan, they see a seedling.*
 
 ::: details Show answer
-`zazawan vobohol. zalahen vegevem. xazar duzel vahahal.`
+`zazawan vobohol. zalahen vegevem. xazawar duzel vahahal.`
 
 z-Azawan | v-pour . z-Alahen | v-harvest . x-←Azawan | d-seedling | v-see
 :::
@@ -532,7 +603,7 @@ z-Ahaben | v-pour . z-Alahen | v-harvest . z-←1st | d-←2nd | v-see
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zazawan vobohol. zalahen vobor.`
+**1.** `zazawan vobohol. zalahen vobohor.`
 
 ::: details Show answer
 
@@ -541,7 +612,7 @@ z-Azawan | v-pour . z-Alahen | v-←pour
 *Azawan pours. Alahen does so.*
 :::
 
-**2.** `zadedol geredal. zavavul gerer.`
+**2.** `zadedol geredal. zavavul geredar.`
 
 ::: details Show answer
 
@@ -550,7 +621,7 @@ z-tomato | g-red . z-flower | g-←red
 *A tomato is red. A flower is such.*
 :::
 
-**3.** `zazawan dalahen vahahal. zahaben dalar vahahal.`
+**3.** `zazawan dalahen vahahal. zahaben dalaher vahahal.`
 
 ::: details Show answer
 
@@ -559,7 +630,7 @@ z-Azawan | d-Alahen | v-see . z-Ahaben | d-←Alahen | v-see
 *Azawan sees Alahen. Ahaben sees him.*
 :::
 
-**4.** `zalahen vegevem. zazawan vobohol. xalar vabahel.`
+**4.** `zalahen vegevem. zazawan vobohol. xalaher vabahel.`
 
 ::: details Show answer
 

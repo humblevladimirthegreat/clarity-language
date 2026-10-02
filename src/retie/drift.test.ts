@@ -11,10 +11,10 @@ const BROKEN = "Say `zazawan vozqzqol.` here.\n";
 
 describe("rootsInUse", () => {
   it("collects content roots of non-resume words in code spans", () => {
-    const roots = rootsInUse(["Say `zazawan vowogal.` and `zazar`.", "`thagazam`"]);
+    const roots = rootsInUse(["Say `zazawan vowogal.` and `zazawar`.", "`thagazam`"]);
     assert.ok(roots.has("azawa"));
     assert.ok(roots.has("agaza"));
-    assert.ok(!roots.has("zazar"));
+    assert.ok(!roots.has("zazawar"));
   });
 
   it("skips English in code spans", () => {
@@ -48,15 +48,15 @@ describe("newLintFindings", () => {
 describe("bareResumeDrift", () => {
   it("finds nothing when the page is unchanged", () => {
     const rt = retieTables(new Map());
-    assert.deepEqual(bareResumeDrift("See `zazar`.", "See `zazar`.", new Map(), rt, new Set()), []);
+    assert.deepEqual(bareResumeDrift("See `zazawar`.", "See `zazawar`.", new Map(), rt, new Set()), []);
   });
 });
 
 describe("applyResumeKeeps", () => {
   it("respells a bare resume the retie left unchanged, and leaves one it respelled for review", () => {
     const after = "`bodor` binds the door; `zabur` names it.\n";
-    const left = { index: after.indexOf("zabur"), from: "zaber", to: "zabur", was: "z-←paw-prints.full", reads: 'z-←"abu"', keep: "zobar" };
-    const unchanged = { index: after.indexOf("bodor"), from: "bodor", to: "bodor", was: "b-←door.full", reads: "b-←attest.full", keep: "boyer" };
+    const left = { index: after.indexOf("zabur"), from: "zaber", to: "zabur", was: "z-←paw-prints", reads: 'z-←"abu"', keep: "zobar" };
+    const unchanged = { index: after.indexOf("bodor"), from: "bodor", to: "bodor", was: "b-←door", reads: "b-←attest", keep: "boyer" };
     const result = applyResumeKeeps(after, [left, unchanged]);
     assert.equal(result.text, "`boyer` binds the door; `zabur` names it.\n");
     assert.deepEqual(result.applied, [unchanged]);

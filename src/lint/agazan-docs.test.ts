@@ -144,17 +144,17 @@ describe("lintAgazanMarkdown", () => {
     );
   });
 
-  it("accepts a short resume only after its antecedent in the same block", () => {
+  it("accepts a resume of a stem outside the lexicon only after its antecedent in the same block", () => {
     const tables = tablesOf({ published: [
         { root: "orugu", concrete: "pour" },
         { root: "azawa", concrete: "grace" },
         { root: "ululo", concrete: "wave" },
       ], });
-    const text = "`zazawan vorugul. zululon vorur.` then `vorur`";
+    const text = "`zazawan vorugulal. zululon vorugular.` then `vorugular`";
     const issues = lintAgazanMarkdown(text, tables);
     assert.deepEqual(
       issues.map((i) => `${i.kind}:${i.token}`),
-      ["unknown-root:vorur"],
+      ["unknown-root:vorugular"],
     );
   });
 });

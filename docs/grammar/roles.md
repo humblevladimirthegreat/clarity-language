@@ -35,7 +35,7 @@ Once the talk already has a matching event (*teaches*), **-r** on the same stem 
 >
 > "Azawan teaches. The one teaching sleeps."
 
-A role compound can also continue a pronoun. Keep its role-compound shape, use the event’s short resume prefix, and end in **-r**. In `vehahel` (*sit*), the root prefix through the second vowel is **`ehahe`**. So `zaxehaher` is subject **`z`** + doer role compound **`ax`** + that event prefix **`ehahe`** + pronoun **`-r`**.
+A role compound can also continue a pronoun. Keep its role-compound shape, spell the event’s whole stem, and end in **-r**. In `vehahel` (*sit*), the stem is **`ehahe`**. So `zaxehaher` is subject **`z`** + doer role compound **`ax`** + that event stem **`ehahe`** + pronoun **`-r`**.
 
 > `zazawan vehahel. zaxehaher vowogal.`
 >
@@ -117,7 +117,23 @@ Some stems name a **relation** (who is bound to whom), not an action. The extra 
 | `…uxROOT…` | names the undergoer of an event | *someone seen* (kind) / *the one seen* (this seeing) | **u** ≈ undo (the one it happens to) |
 | `…oxROOT…` | names the extra `/b/` party | *an addressee* / *the one told* | **o** ≈ one (that extra one) |
 
-Non-resume is the **kind** (occupation, usual scene, usual undergoer). **-r** looks back to the latest verb, event noun, or relation with that stem (including a stem already inside a role compound) and names **this instance**. The vowel still picks which part you mean: doer, scene, undergoer, or extra `/b/` party.
+Non-resume is the **kind** (occupation, usual scene, usual undergoer). **-r** looks back to the latest verb, event noun, or relation with that whole stem (including a stem already inside a role compound) and names **this instance**. The vowel still picks which part you mean: doer, scene, undergoer, or extra `/b/` party.
+
+### Without the stem: role pointers {#role-pointers-family}
+
+A [role pointer](pronouns.md#role-pointers) is this same word with the event stem left out: the role vowel, **`x`**, a pointer vowel, and **-r**. Instead of naming the event, the pointer vowel picks it by position: **`a`** the latest one, **`e`** this sentence’s own. `zaxehaher` is *the one who sat*; `zaxar` is *whoever did the latest thing*.
+
+The scene works the same way. With a place in the clause (*in a house*), scene **`e`** is that place:
+
+> `zazawan vezebal al bahazal. zalahen dexar vahahal.`
+>
+> z-Azawan | v-sleep | [in | b-house] . z-Alahen | d-←scene.same | v-see
+>
+> "Azawan sleeps in a house. Alahen sees the house."
+
+With no place, a *during* time is the scene (`huwem bavodel`, *during the storm*). With neither, `dexar` is the event’s own place or time, as `dexezebar` would be. A place wins over a time, and *before*, *after*, *until*, and *by* name a time the event is measured from, not its scene.
+
+**Compare with:** for the doer, the undergoer, or the extra party, a pointer looks back to whoever last had that part, skipping events without one ([role pointers](pronouns.md#role-pointers)). For the scene, it takes the latest event, whatever it has.
 
 ### The event itself
 
@@ -256,6 +272,14 @@ z-Azawan | v-tell . z-←recipient-x-tell | v-punch
 `zazawan ganam balahen. zoxanar vavadal.`
 
 z-Azawan | [g-bond | b-Alahen] . z-←recipient-x-bond | v-fight
+:::
+
+**9.** *Azawan sleeps at a construction site. Alahen sees the site.*
+
+::: details Show answer
+`zazawan vezebal ol bagezal. zalahen dexar vahahal.`
+
+z-Azawan | v-sleep | [at | b-construction] . z-Alahen | d-←scene.same | v-see
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
@@ -425,6 +449,33 @@ With **-r**, it is the one who pays for **that** event.
 > "Azawan steals. The one stolen from screams."
 
 **Compare with:** the undergoer **`u`** is what the event acts on; the recipient **`o`** is who it is told or given to. **`ue`** is whoever bears its cost, whether or not they were acted on.
+
+### Stacked vowels on a pointer {#stacked-pointers}
+
+Each stacked vowel also makes a [role pointer](#role-pointers-family): leave out the stem, and pointer vowel **`a`** reads the latest event. If that clause has the matching hook (**`ael`**, **`oel`**, **`ual`**, **`uol`**, **`uel`**) with its `/b/`, the pointer is that `/b/`; otherwise it is the event’s own tool, goal, and so on.
+
+> `zazawan vowogal oel bahazal. zalahen doexar vahahal.`
+>
+> z-Azawan | v-walk | [toward | b-house] . z-Alahen | d-←goal.same | v-see
+>
+> "Azawan walks toward a house. Alahen sees the house."
+
+> `zalahen vagozal. zazawan daoxar vahahal.`
+>
+> z-Alahen | v-construct . z-Azawan | d-←result.same | v-see
+>
+> "Alahen builds. Azawan sees what Alahen built."
+
+| Agazan | Names | Its `/b/` comes from |
+|--------|-------|----------------------|
+| `daexar` | the tool of the latest event | **`ael`** |
+| `doexar` | where it headed | **`oel`** |
+| `duaxar` | where it came out of | **`ual`** |
+| `duoxar` | the way it went | **`uol`** |
+| `daoxar` | what it made | (always the event’s own) |
+| `zuexar` | the one who paid for it | **`uel`** |
+
+*The other one* (**`o`**) does not go on these. For *the other tool* or *the other place*, name it with the stem (`daexavadar`) or resume it by its own stem.
 
 ### Viewpoint laterals (`DIR` × anchor) {#viewpoint-laterals}
 <a id="spatial-laterals"></a>
@@ -809,6 +860,15 @@ z-Azawan | v-pour . z-Alahen | d-←source-x-pour | v-see
 z-Alahen | v-steal . z-Azawan | d-←bearer-x-steal | v-see
 
 *Alahen steals. Azawan sees the one stolen from.*
+:::
+
+**11.** `zalahen vavadal. zazawan daexar vahahal.`
+
+::: details Show answer
+
+z-Alahen | v-fight . z-Azawan | d-←instrument.same | v-see
+
+*Alahen fights. Azawan sees what Alahen fought with.*
 :::
 
 ## See also

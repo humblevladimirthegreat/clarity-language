@@ -120,8 +120,8 @@ describe("inspectText", () => {
   });
 
   it("links -r to its antecedent", () => {
-    const result = inspectText("zalahen vowogal. zalar vehahel.", tables);
-    const pronoun = result.tokens.find((token) => token.kind === "word" && token.raw === "zalar");
+    const result = inspectText("zalahen vowogal. zalaher vehahel.", tables);
+    const pronoun = result.tokens.find((token) => token.kind === "word" && token.raw === "zalaher");
     assert.equal(pronoun?.kind, "word");
     if (pronoun?.kind !== "word") return;
     const ant = pronoun.related?.find((rel) => rel.label === "antecedent");

@@ -25,6 +25,8 @@ const CLOSED_ROWS = {
   glasses: { emoji: "👓", root: "agaza" },
   // greeting turn (`yeweval`)
   wave: { emoji: "👋", root: "eweva" },
+  // *during* (`huwem`): its `/b/` can be a role pointer's scene
+  gemini: { emoji: "♊", root: "uwe" },
   // `/x/` linkers
   zebra: { emoji: "🦓", root: "ezo" },
   clock: { emoji: "🕰️", root: "agaga" },
