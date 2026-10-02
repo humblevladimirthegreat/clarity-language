@@ -3,7 +3,7 @@ import type { CstElement, CstNode, IToken } from "chevrotain";
 import { classifyTokenBranch, isLexWordPayload, type TokenPayload } from "./tokens.js";
 import { POLAR_GROUP, RESTRICTOR_GROUP, type JoinSeries } from "./constructions.js";
 import { isDigitless, leadForceKind } from "./series.js";
-import { isKindReference, isScaleShared, visitResult } from "./ast-walk.js";
+import { isGreeting, isKindReference, isScaleShared, visitResult } from "./ast-walk.js";
 import { numberMarkerIdentity } from "./resolve.js";
 import type { Clause, LexWord, NumberStem, ParseResult, ResolveInfo } from "./types.js";
 
@@ -190,17 +190,6 @@ export function sentenceGrammarKeys(grammar: Record<string, { definition: unknow
   };
   for (const [name, rule] of Object.entries(grammar)) walk(name, rule.definition as GastNode[]);
   return keys;
-}
-
-/** Greeting: a prefix-less named citation said alone (`azawan.`, word-endings.md § greeting). */
-function isGreeting(clause: Clause): boolean {
-  const [only, ...rest] = clause.units;
-  if (rest.length > 0 || only?.kind !== "np" || only.coord.parts.length !== 1) return false;
-  const [part] = only.coord.parts;
-  const [item, ...more] = part!.items;
-  if (more.length > 0 || part!.join || item?.kind !== "package") return false;
-  const { head, adjs, glAdj } = item.package;
-  return !head.pos && head.ending === "n" && adjs.length === 0 && !glAdj;
 }
 
 /** Existence: no `/v/`, a new `/z/` noun first , then only `/ɡ/`, hooks, or `/b/` (predication.md § existence). */

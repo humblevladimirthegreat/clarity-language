@@ -171,6 +171,12 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("gredul", "g-2nd");
   });
 
+  it("glosses an ordinal pronoun by its place (glosses.md § Anaphors)", () => {
+    expectLine("zazawan dalahen vahahal. zredur drewor vezebel.", "z-Azawan | d-Alahen | v-see . z-←2nd | d-←1st | v-tell");
+    expectLine("zazawan vowogal. zruewor vezebal.", "z-Azawan | v-walk . z-←1st-from-end | v-sleep");
+    expectLine("zazawan vowogal. zreworx vezebal.", "z-Azawan | v-walk . z-←1st-x | v-sleep");
+  });
+
   it("scientific and percent number writing", () => {
     expectLine("g+27e12", "g-27e12");
     expectLine("g+25%", "g-25yo");

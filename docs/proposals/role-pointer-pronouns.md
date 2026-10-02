@@ -94,13 +94,15 @@ The anchor is a **predicate**: a clause's verb, or its `/ɡ/` word when the clau
 | Pointer vowel | Anchor                                                                                                                   | English                                           |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- |
 | `a`           | **same**: the latest predicate before this clause that has that role (core roles); the latest predicate (implicit roles) | *he / she / it / they*; *the one who just did it* |
-| `o`           | **other**: the nearest earlier predicate whose filler of that role is a different referent from the `a` reading          | *the other one*                                   |
+| `o`           | **other** (core roles only): the nearest earlier predicate whose filler of that role is a different referent from the `a` reading | *the other one* |
 | `e`           | **self**: this clause's predicate                                                                                        | *themself / itself*                               |
 
 
 Pointer vowel `u` is left unused. After a single role vowel, vowel + `x` + `u` + **-r** is already a span resume ([spans](../grammar/spans.md#endings)), and keeping `u` out everywhere keeps the series the same across single and stacked role vowels.
 
 **Why "other", not "the predicate before that".** In *Azawan walks. Alahen runs. Alahen sits. ___ sleeps.* "the predicate before that" lands on Alahen again. *The other one* is the job listeners need: the nearest earlier event with someone **else** in that role, here Azawan.
+
+**`o` is for core roles only.** *The other one* compares referents, which tools can do only when both fillers are overt. Scene and result are often implicit, and the hook-paired roles are overt only when the hook is there, so `o` on them would be valid in some clauses and not others. Implicit roles take only `a` and `e`. For *the other tool* or *the other place*, use whole-stem **-r** or a role compound with its stem (`daexavadar`).
 
 ### Role vowels and where the filler comes from
 
@@ -109,8 +111,8 @@ Pointer vowel `u` is left unused. After a single role vowel, vowel + `x` + `u` +
 | ---------- | --------------------- | ----------------------------------- |
 | `a`        | doer                  | `/z/`                               |
 | `u`        | undergoer             | `/d/`                               |
-| `o`        | extra party           | unhosted `/b/`                      |
-| `e`        | scene (place or time) | none needed                         |
+| `o`        | extra party           | the predicate's own `/b/`: unhosted `/b/` after a verb, or the `/b/` a `/ɡ/` predicate hosts |
+| `e`        | scene (place or time) | the `/b/` of a place hook (`al`, `am`, `aol`, `aom`, `ol`, `om`), if any |
 | `ae`       | instrument            | `ael` + `/b/`                       |
 | `oe`       | goal                  | `oel` + `/b/`                       |
 | `ua`       | source                | `ual` + `/b/`                       |
@@ -120,6 +122,10 @@ Pointer vowel `u` is left unused. After a single role vowel, vowel + `x` + `u` +
 
 
 `a` / `u` / `o` are **core** roles: the anchor is the latest predicate whose clause has that slot filled, so a clause without it is skipped ([forgiving lookup](#forgiving-lookup)). Every other role can be **implicit**: if the clause has the matching hook + `/b/`, the pointer is that `/b/`; otherwise it names the event's own instance of that participant, exactly as the role compound on **-r** does today (*Alahen sees what Azawan fought with*).
+
+**The extra party is the predicate's own.** For a verb predicate it is the unhosted `/b/` right after the verb (*the one told*). For a `/ɡ/` predicate it is the `/b/` that word hosts: a relation's other party (`ganam balahen` *bound to Alahen*), as role-compound `o` already names it ([roles](../grammar/roles.md#the-extra-b-party-o)). A `/b/` hosted by any other hook in the clause is never the extra party; the stacked vowels and scene `e` cover those hooks.
+
+**The scene takes a place hook's `/b/`.** If the anchor's clause has a place hook (`al` *in*, `am` *amid*, `aol` *on*, `aom` *over*, `ol` *at*, `om` *near*, [hooks](../grammar/hooks.md#extra-noun)), scene `e` is that hook's `/b/`; with several, the first. Otherwise it is the event's own place or time, as today. Time expressions stay implicit (see [open questions](#open-questions)).
 
 ### Cue
 
@@ -166,6 +172,22 @@ An implicit participant with a stacked vowel:
 > z-Azawan | v-fight . z-Alahen | d-←instrument.same | v-see
 >
 > "Azawan fights. Alahen sees what Azawan fought with."
+
+A relation's other party:
+
+> `zazawan ganam balahen. zoxar varahal.`
+>
+> z-Azawan | [g-bond | b-Alahen] . z-←extra.same | v-run
+>
+> "Azawan is bound to Alahen. Alahen runs."
+
+An overt scene:
+
+> `zazawan vezebal al bahazal. zalahen dexar vahahal.`
+>
+> z-Azawan | v-sleep | [in | b-house] . z-Alahen | d-←scene.same | v-see
+>
+> "Azawan sleeps in a house. Alahen sees the house."
 
 Associates, as on **-r** today:
 
@@ -214,10 +236,12 @@ These must be written down exactly so every tool agrees:
 1. **Anchors.** Every clause body the parser emits contributes one anchor (its predicate), in order, including stand-in content and `/x/`-chained clauses. Span interiors (quotes, asides) do not. Event nouns (`davadal` *a fight*) are not anchors for pointers; a role compound with an explicit stem still matches them as today.
 2. **Filler.** A filler is that slot's **referent** after resolving any **-r** or pointer in it. A resumed name and the name itself are the same referent. A joined slot (`zazawan zalahen zal`) is one filler, a group, and a pointer to it takes **-x**, as **-rx** does today.
 3. **Same.** For a core role, `a` anchors on the latest predicate before the pointer's clause whose clause has that slot filled; predicates without it are skipped. For an implicit role, `a` anchors on the latest predicate, whatever it has. If no earlier predicate has the core slot filled, the pointer is invalid.
-4. **Other.** `o` anchors on the nearest earlier predicate whose filler of that role is overt and is a different referent from the `a` reading. If there is none, the pointer is invalid.
-5. **Self.** `e` anchors on this clause's predicate; the filler may sit anywhere in the clause. A pointer that would point to its own slot (`zaxer` in `/z/`) is invalid.
-6. **Coordinated verbs** in one clause share participants, so they count as one anchor.
-7. **No match is an error.** Tools reject a pointer with no referent. They never guess.
+4. **Other.** `o` takes only the core role vowels `a` / `u` / `o`. It anchors on the nearest earlier predicate whose filler of that role is a different referent from the `a` reading. If there is none, the pointer is invalid.
+5. **Extra party.** Role vowel `o` reads the anchor's own `/b/`: unhosted `/b/` for a verb predicate, the hosted `/b/` for a `/ɡ/` predicate. No other hosted `/b/` counts.
+6. **Scene.** Role vowel `e` reads the `/b/` of the first place hook (`al`, `am`, `aol`, `aom`, `ol`, `om`) in the anchor's clause; with none, the event's own implicit place or time.
+7. **Self.** `e` anchors on this clause's predicate; the filler may sit anywhere in the clause. A pointer that would point to its own slot (`zaxer` in `/z/`) is invalid.
+8. **Coordinated verbs** in one clause share participants, so they count as one anchor.
+9. **No match is an error.** Tools reject a pointer with no referent. They never guess.
 
 
 
@@ -249,7 +273,7 @@ Pointers are nouns. They fill `/z/`, `/d/`, and `/b/`, including hosted `/b/` af
 
 - `[resolve.ts](../../src/parse/resolve.ts)`: `contentMatch` drops the `"letter"` case and matches only identical stems. `contentRoots` treats a compound as one stem rather than offering its left and right roots separately.
 - New `x` family for pointers. Today `zaxar` / `zaxor` fall through to an ordinary compound of one-vowel "roots", which do not exist. Classify role vowel(s) + `x` + `a`/`e`/`o` + **-r** as a pointer. After a single vowel, the same shape on **-l** / **-m** / **-n** stays a span open; after a stacked vowel it is rejected.
-- Pointer resolution needs a list of anchors (one predicate per clause body) with each one's role frame: fillers for `/z/` / `/d/` / unhosted `/b/` and for the hooks paired with stacked vowels (`ael`, `oel`, `ual`, `uol`, `uel`). The resolver already resolves role-compound **-r** against events by stem; pointers reuse that path with a lookup by position.
+- Pointer resolution needs a list of anchors (one predicate per clause body) with each one's role frame: fillers for `/z/` / `/d/`, the extra party (unhosted `/b/` of a verb, hosted `/b/` of a `/ɡ/` predicate), the first place-hook `/b/` for scene, and the hooks paired with stacked vowels (`ael`, `oel`, `ual`, `uol`, `uel`). The resolver already resolves role-compound **-r** against events by stem; pointers reuse that path with a lookup by position.
 - Retie tooling (`src/retie/resume.ts`, `binds.ts`, the `shared-prefix` retie comment) no longer needs prefix cutting. A whole-stem resume respells exactly like its root.
 - Lint: reject short resumes in docs once absorbed.
 
@@ -268,6 +292,9 @@ Pointers are nouns. They fill `/z/`, `/d/`, and `/b/`, including hosted `/b/` af
 | Strict lookup for `a` (latest predicate only)                                                                 | Breaks after any clause lacking the role, including stand-in content; see [forgiving lookup](#forgiving-lookup).                                                                                                |
 | Pointer vowel = role-based referent tracking for every role (latest filler of that role, regardless of event) | Adopted for core roles via forgiving lookup, but not for the rest. Anchoring on the predicate lets stacked and implicit roles (instrument, result, scene) work, and makes pointers the stem-less role compound. |
 | **-x** as group agreement on pointers                                                                         | Would give **-x** a second meaning; pointers keep the associative / group **-x** of **-rx**.                                                                                                                    |
+| `o` on implicit roles (overt fillers only, or each event's own instance) | Overt-only is valid in some clauses and not others; each-event-instance turns *other* into *the one before* and counts the same place twice. |
+| Role vowel `o` reaching any hosted `/b/` | Several fillers per clause, and overlaps the stacked vowels (`ae` already reads the `ael` `/b/`). |
+| Role vowel `o` reaching only unhosted `/b/` | Leaves a `/ɡ/` relation's other party unreachable, unlike role-compound `o`. |
 | Pointer vowel = named / kind                                                                                  | Grammatically visible, but two named people in the same role (the common story case) still collide.                                                                                                             |
 | Pointer vowel = whose turn (yours / mine)                                                                     | Useful only in dialogue; no help in narration.                                                                                                                                                                  |
 | Topic / non-topic pronouns                                                                                    | Needs a new topic marker and topic-reset rules.                                                                                                                                                                 |
@@ -280,12 +307,10 @@ Pointers are nouns. They fill `/z/`, `/d/`, and `/b/`, including hosted `/b/` af
 
 ## Open questions
 
-1. **Reach limit.** Forgiving lookup is unbounded. If silent long-distance matches confuse listeners in practice, stop the search at a turn change or paragraph break, or after two or three predicates.
-2. **Turns.** Do other speakers' clauses contribute anchors? The proposal says yes (every clause in order). A dialogue-heavy page might want the opposite.
-3. **Implicit** `o`**.** `o` needs an overt filler to compare referents. Should the implicit roles (`e`, `ao`) allow `o` at all, or only `a` and `e`?
-4. **Hosted** `/b/`**.** Should role vowel `o` also reach hosted `/b/` (a relation's other party), as role-compound `o` already does ([roles](../grammar/roles.md#the-extra-b-party-o))?
-
-
+1. **Reach limit.** Forgiving lookup is unbounded. If silent long-distance matches confuse listeners in practice, stop the search at a turn change or paragraph break, or after two or three predicates. ANSWER: unbounded for now
+2. **Turns.** Do other speakers' clauses contribute anchors? The proposal says yes (every clause in order). A dialogue-heavy page might want the opposite. ANSWER:YES
+3. **Scene and time.** Scene `e` reads place hooks only. Should a time expression (an `/h/` time word with its `/b/`, such as `huwem banadal` *at night*) also count as the scene's overt filler, and which forms count?
+4. **Comparatives.** Under rule 5, a `/ɡ/` predicate's hosted `/b/` is the extra party, which would include a comparison standard (*bigger than Alahen*). Check [comparatives](../grammar/comparatives.md) that this `/b/` is hosted by the `/ɡ/` predicate and not by a join or comparison word, and whether reaching it is wanted.
 
 ## Non-goals
 

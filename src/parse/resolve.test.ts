@@ -131,6 +131,50 @@ describe("resolve — span and number anaphors", () => {
   });
 });
 
+describe("resolve — ordinal pronouns (pronouns.md#ordinal-pronouns)", () => {
+  function ordinals(text: string): string[] {
+    return resolveOf(text)
+      .anaphors.filter((a) => a.kind === "ordinal")
+      .map((a) => `${a.pronoun.raw}→${a.antecedent?.raw}`);
+  }
+
+  it("numbers names by first -n mention, in any role", () => {
+    assert.deepEqual(ordinals("zazawan dalahen vahahal. zalahen drewor vezebel. zrewor varahal."), [
+      "drewor→zazawan",
+      "zrewor→zazawan",
+    ]);
+  });
+
+  it("counts greetings and calls as introductions", () => {
+    assert.deepEqual(ordinals("azawan. alahen. zredur drewor vahahal."), ["zredur→alahen", "drewor→azawan"]);
+    assert.deepEqual(ordinals("yalahen. zrewor vowogal."), ["zrewor→yalahen"]);
+  });
+
+  it("counts from the end with #-", () => {
+    assert.deepEqual(ordinals("zazawan vowogal. zahaben vehahel. zruewor vezebal."), ["zruewor→zahaben"]);
+  });
+
+  it("gives a group name its own number, and takes -x", () => {
+    assert.deepEqual(ordinals("zazawan vowogal. zazawanx vowogal. zredur vezebal. z=#1x vezebal."), [
+      "zredur→zazawanx",
+      "z=#1x→zazawan",
+    ]);
+  });
+
+  it("skips special pronouns", () => {
+    assert.deepEqual(ordinals("zamagon vowogal. zazawan vowogal. zrewor vezebal."), ["zrewor→zazawan"]);
+  });
+
+  it("restarts the count after a goodbye", () => {
+    assert.deepEqual(ordinals("azawan. alahen. azawan. alahen. zahaben vowogal. zrewor vezebal."), ["zrewor→zahaben"]);
+  });
+
+  it("is not a number antecedent", () => {
+    const { anaphors } = resolveOf("zazawan vowogal. zalahen vowogal. zredur vezebal.");
+    assert.equal(anaphors.some((a) => a.kind === "number"), false);
+  });
+});
+
 describe("resolve — role anaphors (roles.md)", () => {
   it("binds zaxozowor to the prior conflict verb", () => {
     const { anaphors } = resolveOf("zar dugobon vozowol. zaxozowor vurunul.");

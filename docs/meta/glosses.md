@@ -301,6 +301,7 @@ A [short resume](../grammar/pronouns.md#resume-r) (root cut after its 2nd vowel)
 | Resume of a prior content word | | `z-←someone` / `d-←tea` |
 | No antecedent, stem not in the lexicon | | `z-←"…"` (the stem itself) |
 | Fill-ask / unspecified member | `zar` | `z-who` / `z-something` (as the docs require for that form) |
+| [Ordinal pronoun](../grammar/pronouns.md#ordinal-pronouns) | `zredur` / `zruewor` | `z-←2nd` / `z-←1st-from-end` (the place, never the person's name) |
 
 Do not write `z-←microphone` for a speaker antecedent.
 

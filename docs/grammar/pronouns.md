@@ -387,6 +387,46 @@ When you address several people at once, English *you* does not say how many. Th
 
 **Compare with:** *you and I* is **`aha`**. *Azawan and associates* is name…**-x** ([plurality](plurality.md#associative)).
 
+### Ordinal pronouns {#ordinal-pronouns}
+
+Every person named in a conversation gets a number, in the order they enter the talk: the first name is 1, the next new name is 2, and so on. To point back at someone by that number, write their [rank](numbers.md#ordinals) with **-r** under `/z/`, `/d/`, or `/b/`. `zrewor` is the first person named, as subject. `dredur` is the second, as object. The number belongs to the person, so they keep the same pronoun in every role; only the role letter changes. (cue: **e** ≈ order: the order they joined the talk)
+
+> `zazawan dalahen vahahal. zalahen drewor vezebel. zrewor varahal.`
+>
+> z-Azawan | d-Alahen | v-see . z-Alahen | d-←1st | v-tell . z-←1st | v-run
+>
+> "Azawan sees Alahen. Alahen tells Azawan. Azawan runs."
+
+Who gets a number:
+
+- **Every name.** A word with **-n** takes the next number the first time it appears, in any role. Kinds (**-l** / **-m**) and the [special pronouns](#special-pronouns) take none.
+- **Greetings and calls.** A [greeting](word-endings.md#greeting) (`SELFn.`) gives the greeter a number, and a [call](speech-moves.md#vocative) (`yalahen.`) gives one to the person called. In the usual opening, whoever greets first is 1 and whoever answers is 2.
+- **Groups.** A name with **-x** (`zazawanx`, *Azawan and associates*) takes one number for the whole group.
+- **Once each.** Naming someone again, even much later, keeps the number they already have.
+- **The whole conversation.** Everyone in the conversation shares the count, across turns. A goodbye ends the conversation, and the next one counts from 1 again. Goodbye is your greeting said a second time: once you have greeted, your name said alone again is goodbye.
+
+A number with no one at that place yet is not a sentence: after two names, `zrerer` points at nobody.
+
+Because the count is shared, an ordinal means the same person whoever says it. After Azawan and Alahen greet, *2 sees 1* is *Alahen sees Azawan* from either speaker.
+
+> `azawan. alahen. zredur drewor vahahal.`
+>
+> Azawan . Alahen . z-←2nd | d-←1st | v-see
+>
+> "Azawan." "Alahen." "Alahen sees Azawan." (from Alahen: *I see you*; from Azawan: *you see me*)
+
+**Compare with:** **`amago`** / **`ehodo`** follow the conversation role, so *I* and *you* swap people when the speaker changes. Use them when the role is the point: a name you do not know yet, a reader you have never met, generic *you*, or a whole group you address.
+
+Add **-x** for that person and associates, as on any name: `zreworx`.
+
+> `zazawan vowogal. zreworx vezebal.`
+>
+> z-Azawan | v-walk . z-←1st-x | v-sleep
+>
+> "Azawan walks. Azawan and associates sleep."
+
+Ordinals are easiest when only a few people are in the talk. When the listener would have to stop and count, say the name.
+
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
@@ -482,6 +522,14 @@ z-interlocutors | v-harvest
 z-Azawan-x | v-punch
 :::
 
+**9.** *Ahaben pours. Alahen harvests. The first person named sees the second.*
+
+::: details Show answer
+`zahaben vobohol. zalahen vegevem. zrewor dredur vahahal.`
+
+z-Ahaben | v-pour . z-Alahen | v-harvest . z-←1st | d-←2nd | v-see
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zazawan vobohol. zalahen vobor.`
@@ -554,6 +602,15 @@ z-listener-x | v-scream
 z-Alahen-x | v-fight
 
 *Alahen and associates fight.*
+:::
+
+**9.** `azawan. alahen. zrewor dredur vahahal.`
+
+::: details Show answer
+
+Azawan . Alahen . z-←1st | d-←2nd | v-see
+
+*"Azawan." "Alahen." Azawan sees Alahen.*
 :::
 
 ## See also

@@ -117,6 +117,17 @@ export function isKindReference(part: NpCoord["parts"][number]): boolean {
   );
 }
 
+/** Greeting: a prefix-less named citation said alone (`azawan.`, word-endings.md § greeting). */
+export function isGreeting(clause: Clause): boolean {
+  const [only, ...rest] = clause.units;
+  if (rest.length > 0 || only?.kind !== "np" || only.coord.parts.length !== 1) return false;
+  const [part] = only.coord.parts;
+  const [item, ...more] = part!.items;
+  if (more.length > 0 || part!.join || item?.kind !== "package") return false;
+  const { head, adjs, glAdj } = item.package;
+  return !head.pos && head.ending === "n" && adjs.length === 0 && !glAdj;
+}
+
 /** A shared `/h/` or `/th/` unit. */
 export function isSharedHUnit(item: CoordShared): item is HUnit {
   return item.word.pos === "h" || item.word.pos === "th";

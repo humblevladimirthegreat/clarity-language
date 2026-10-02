@@ -589,6 +589,12 @@ Single-item **-m** under question (*How about X?*).
 
 [Questions](questions.md#yes-no-single-item-standalone)
 
+### Ordinal pronoun
+
+A rank with **-r** on `/z/`, `/d/`, or `/b/` that names a person by the order names entered the conversation (`zredur`, the second person named).
+
+[Pronouns](pronouns.md#ordinal-pronouns)
+
 ### Ordinary compound / lexical compound
 
 FIELD × KIND with mid-word **`x`**; closed stem with join letter and no `x`.

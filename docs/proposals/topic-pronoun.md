@@ -59,6 +59,77 @@ Option: a second closed pronoun for **the most recent named referent that is not
 
 Role pointers already give *the other one* within a role (`zaxor`). A non-topic pronoun would add *the other one* across roles. Whether that earns a second closed form is left to the topics expansion. If adopted, it follows the same rules: named referents only, whole-stem resume for things, invalid with no match.
 
+## Topics more broadly: `/x/` as the topic slot
+
+The rules above use three setters from three places: a default on `/z/`, *as for* on `/h/`, and thread return on `/x/`. A simpler alternative: **every topic change is an `/x/` word.** `/x/` already sits between clauses and carries discourse structure (linkers, agenda labels, numbered points, thread return), so the topic becomes one more thing that only `/x/` changes.
+
+### What counts as a topic change
+
+Not every `/x/` word. If clause joins (`xal` *and*) or *therefore* changed the topic, it would reset in the middle of every chain. Only `/x/` words that **name a referent or open a new frame** count:
+
+| `/x/` form today | Today | Topic effect under this variant |
+|------------------|-------|---------------------------------|
+| root + **-n** (`xazawan`) | titled agenda label: *let's now talk about Azawan* | **Introduce**: sets the topic |
+| whole-stem **-r** with a noun antecedent (`xazawar`) | thread return: *going back to Azawan* | **Return**: sets the topic |
+| **-r** with an `/x/` antecedent | same linker again (*likewise*) | none |
+| `xevavem` *next* | moves to the next frame; opens a new topic | **Clear**: no topic until the default rule fires again |
+| `xavazem` *by the way* | opens a side topic | **Push**: suspends the topic (see [side topics](#side-topics-as-a-stack)) |
+| other linkers (`xodum`, `xezom`, `xagagam`, `xagezam`) | glue to the last claim | none |
+| clause joins (`xal`, `xan`, …) | join clauses | none |
+| numbered points (`x#N`), label cites (`x_…`), *Finally* / *Starting with* | agenda structure | none on their own; **-n** on a point (titled item) introduces it. Outline depth: see [side topics](#side-topics-as-a-stack) |
+
+The resolver decides the **-r** row by the antecedent's role letter, so the split stays mechanical.
+
+**Introduce vs return** mirrors the rest of the language: **-n** names, **-r** picks up. A speaker opens a new topic with the name and comes back to an old one with the resume.
+
+### Consequences
+
+1. ***As for* stays sentence-scoped.** Rule 2 is dropped. `hahehom` + `/b/` keeps today's meaning: a frame for this sentence only. Scope then follows the role letter: `/h/` sits inside one clause and cannot outlive it; `/x/` sits between clauses and persists. English *as for X* splits into two jobs that English blurs: *in this sentence, regarding X* (`hahehom bazawan`) and *now, about X* (`xazawan`). The *as for* example above becomes:
+
+   > `xalahen zazawan vowogal. zahehon vehahel.`
+   >
+   > x-Alahen | z-Azawan | v-walk . z-topic | v-sit
+   >
+   > "Now, about Alahen: Azawan walks. Alahen sits."
+
+   while `hahehom balahen zazawan vowogal. zahehon vehahel.` would leave the topic where it was (Azawan, by the default rule).
+
+2. **Thread return gains a lasting effect.** [Going back to a thread](../grammar/pronouns.md#going-back-to-a-thread) says it names someone *without making the next sentence about them*. That changes: dropping `xazawar` still leaves the claim unchanged, but it changes what every later topic pronoun picks up. Thread return becomes claim-neutral but discourse-active.
+
+3. **The topic pronoun is a pointer to the `/x/` slot.** Role pointers name *whoever last filled `/z/`* (or `/d/`, `/b/`). Under this variant the topic is *whatever the last topic-setting `/x/` word named*, plus the default. That is the same kind of lookup, on a different slot, so the topic pronoun can be taught as the `/x/` member of the pointer idea rather than as a separate overlay. This bears on open question 1: a short pointer-shaped form may fit better than the `aheho` overlay.
+
+4. **`xahehon` needs a reading.** Today it is an agenda label titled *Topic*. With the `aheho` **-n** overlay, it is `/x/` + the topic pronoun: *back to the topic*. That is a useful form (a referent-level *anyway*, see below), but it must be stated, not left to fall out.
+
+5. **Unnamed topics come in through labels (open question 4).** Root + **-n** on `/x/` is already a titled label, so `/x/` + a kind root + **-n** makes that thing the topic by an overt choice. The default rule stays limited to names, so incidental things still never take the topic.
+
+6. **Referent topic vs subject-matter topic.** Agenda labels often name subject matter, not a referent (*the budget*, *ward 3*, *item 12*). The topic pronoun tracks a referent. Either the topic pronoun picks up whatever the label names, read as the titled thing, or subject-matter labels (`x_…` cites, numbered points) are kept out of the topic. The table above takes the second option for cites and bare numbers.
+
+7. **The default re-arms after a clear.** Rule 1 generalizes: at the start of a conversation, **or after `xevavem`**, the first named `/z/` becomes the topic. This answers part of open question 5: the default is how a new frame gets its topic without an extra word.
+
+8. **Topic shift never changes the speech move.** `/x/` continues the move ([continue](../grammar/dependents.md#continue-x)), so changing the topic inside a question keeps it a question: `xazawan` mid-question is *and about Azawan, …?*. A new move with a new topic is `/y/` followed by an `/x/` topic word.
+
+9. **Spans do not leak.** A topic word inside a quote or aside sets nothing outside it, as span interiors are not anchors for role pointers.
+
+### Side topics as a stack
+
+`xavazem` *by the way* and `or …` *anyway* already describe a side topic and a return to the main line ([discourse hooks](../grammar/hooks.md#hook-resume)). If they also move the referent topic, the topic is a **stack**:
+
+- `xavazem` pushes: the side frame starts with no topic, and the default rule fires inside it.
+- `or …` pops back to the topic before `xavazem`.
+- Agenda depth can drive the same stack: a deeper outline point (`x#3e2`) pushes, a parent-layer point (`xrebuwol`) pops.
+
+**The `or` outlier.** `or` is a prefix-less hook, not an `/x/` word, so "every topic change is `/x/`" has one exception. Two ways to close it: accept it (`or` restores the topic rather than changing it, and hooks already own discourse glue), or make `xahehon` *back to the topic* the referent-level pop and leave `or` to lines of talk only.
+
+### Prosody
+
+The [prosody table](../grammar/dependents.md) gives `/x/` a dip with no pitch reset, which signals *same speech move*. Natural languages mark a topic change with a pitch reset at the start of the new stretch. Topic-setting `/x/` words could take their own row (a reset, with the speech move still unchanged), so a listener hears the change as well as the word.
+
+### Why this matters for learners
+
+- **Topic drift becomes visible.** Every change of topic is an overt word, so *who changed the subject, and when* has an answer. A side topic is admitted (`xavazem`), and a return to the main line is explicit. That fits the rationality theme: derailing and whataboutism are easier to notice when the topic cannot change silently.
+- **Tools can segment by topic.** A transcript splits into topic stretches mechanically, with the speaker who opened each one.
+- **One rule replaces three.** The listener tracks one slot (`/x/`) and one default, instead of a default, a scoped hook that also persists, and a linker.
+
 ## Interactions
 
 | Area | Effect |
@@ -66,7 +137,7 @@ Role pointers already give *the other one* within a role (`zaxor`). A non-topic 
 | Role pointers (`role-pointer-pronouns.md`) | Unchanged. Pointers name slots and event participants; the topic pronoun names one referent. A pointer may resolve to the topic; the two never conflict. |
 | Whole-stem **-r** | Unchanged. Use it for any non-topic referent, and to point at the topic by name. |
 | Reflexive | The topic pronoun works in any slot, so *Azawan sees themself* with Azawan as topic can be `zazawan vahahal dahehon.`; `daxer` still works. |
-| *As for* (`hahehom`) | Gains a lasting effect. On absorb, update [say-people-places](../grammar/say-people-places.md#as-for). |
+| *As for* (`hahehom`) | Gains a lasting effect under rule 2; unchanged under the [`/x/` variant](#topics-more-broadly-x-as-the-topic-slot), which adds *now, about X* (`xazawan`) beside it. On absorb, update [say-people-places](../grammar/say-people-places.md#as-for). |
 | Thread return (`xazawar`) | Gains a lasting effect. The rule "drop it and the claim is unchanged" still holds for the sentence it opens. |
 | `xavazem` *by the way* / `or …` *anyway* | Open: does a side topic suspend the topic and `or …` restore it? See below. |
 | D-13 (long *I* / *you*) | Unchanged. The topic pronoun is third person. The speaker can be the topic only by name. |
@@ -86,6 +157,10 @@ Role pointers already give *the other one* within a role (`zaxor`). A non-topic 
 4. **Unnamed topics.** Should a kind (`zodogal` *a dog*) be able to become the topic through rules 2 and 3? Rule 1 is limited to names so that incidental things never take the topic by default.
 5. **Default rule.** First named `/z/`, or no default at all (the topic exists only once *as for* or thread return sets it)?
 6. **The other one.** Adopt a non-topic pronoun, or leave *the other one* to role pointers and whole-stem resume?
+7. **`/x/` as the topic slot.** Adopt the [`/x/` variant](#topics-more-broadly-x-as-the-topic-slot) (as for stays sentence-scoped), or keep rule 2?
+8. **Subject-matter labels.** Do label cites, numbered points, and titled agenda items on non-names set the topic, or only labels on names and kinds?
+9. **Stack.** Should agenda depth push and pop the topic, or only `xavazem` and `or`? Close the `or` outlier with `xahehon`, or accept it?
+10. **Prosody.** Give topic-setting `/x/` words a pitch reset of their own?
 
 ## Non-goals
 

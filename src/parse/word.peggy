@@ -176,7 +176,7 @@ EOF = !.
 
 WordEnd = &(WS / EOF)
 
-NumberBodyEnd = &(Ending / WS / EOF)
+NumberBodyEnd = &(Ending / PluralSuffix EOF / WS / EOF)
 
 Word
   = spanClose
@@ -333,18 +333,21 @@ OpaqueIsland
 
 // ── Free number words (writing + speech) ────────────────────────────────────
 
+// Plural **-x** parses on any number; enforce keeps it to ordinal pronouns (pronouns.md § Ordinal pronouns).
 freeNumber
-  = pos:Pos mark:WritingEndingMark? stem:WritingNumberStem ending:Ending? {
+  = pos:Pos mark:WritingEndingMark? stem:WritingNumberStem ending:Ending? plural:PluralSuffix? {
       return makeWord(text(), {
         pos,
         ending: endingFromWritingMark(mark, ending || "l"),
+        plural: !!plural,
         family: numberFamily(stem, mark || undefined),
       });
     }
-  / pos:Pos mark:WritingEndingMark? stem:SpeechNumberStem ending:Ending {
+  / pos:Pos mark:WritingEndingMark? stem:SpeechNumberStem ending:Ending plural:PluralSuffix? {
       return makeWord(text(), {
         pos,
         ending: endingFromWritingMark(mark, ending),
+        plural: !!plural,
         family: numberFamily(stem, mark || undefined),
       });
     }

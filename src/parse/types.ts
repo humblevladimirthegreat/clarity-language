@@ -392,7 +392,7 @@ export type ParseResult = {
 
 export type ContentMatch = "letter" | "fullRoot";
 
-export type AnaphorKind = "content" | "span" | "number" | "role";
+export type AnaphorKind = "content" | "span" | "number" | "role" | "ordinal";
 
 export type AnaphorBind = {
   pronoun: LexWord;

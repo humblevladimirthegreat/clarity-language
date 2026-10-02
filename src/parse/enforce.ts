@@ -12,6 +12,7 @@ import type { ClassifyTables } from "./classify.js";
 import { ARROW_ROOTS, isAsOfOverlay, isBarStance, isFrameStance, isGroundsChannel, isStandIn } from "./classify.js";
 import { REJECTIONS, type RejectionId } from "./constructions.js";
 import { linkerEnglish } from "./linkers.js";
+import { ordinalPronounPlace } from "./resolve.js";
 import { SentenceParseError } from "./sentence-parser.js";
 import {
   Bang,
@@ -225,6 +226,9 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   const holder = word.family.kind === "x" && word.family.xFamily === "holder";
   if (word.plural && word.pos && NO_PLURAL_POS.has(word.pos) && !holder) {
     throw new ConstructionError("pluralOnPos", word.raw);
+  }
+  if (word.plural && word.family.kind === "number" && ordinalPronounPlace(word) === undefined) {
+    throw new ConstructionError("numberPlural", word.raw);
   }
   if (word.plural && word.pos === "y" && classifyTokenBranch(word).branch === "yInterjection") {
     throw new ConstructionError("pluralInterjection", word.raw);
@@ -522,6 +526,7 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
   for (const bind of result.resolve?.anaphors ?? []) {
     if (bind.antecedent) continue;
     if (bind.kind === "number") throw new ConstructionError("numberResumeUnbound", bind.pronoun.raw);
+    if (bind.kind === "ordinal") throw new ConstructionError("ordinalUnbound", bind.pronoun.raw);
     if (bind.kind === "content" && !isFullRootResume(bind.pronoun, tables)) {
       throw new ConstructionError("shortResumeUnbound", bind.pronoun.raw);
     }

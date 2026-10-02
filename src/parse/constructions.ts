@@ -245,12 +245,16 @@ export const WORD_MISC_CONSTRUCTIONS = {
   gl: { anchor: "clause.md#left-bound-adjectives", summary: "gl- left-bound adjective" },
 } satisfies Record<string, ConstructionEntry>;
 
-export const RESOLVE_CONSTRUCTIONS: Record<Exclude<`${AnaphorKind}.${"bound" | "unbound"}`, "number.unbound">, ConstructionEntry> = {
+export const RESOLVE_CONSTRUCTIONS: Record<
+  Exclude<`${AnaphorKind}.${"bound" | "unbound"}`, "number.unbound" | "ordinal.unbound">,
+  ConstructionEntry
+> = {
   "content.bound": { anchor: "pronouns.md#resume-r", summary: "-r binds an earlier content word" },
   "content.unbound": { anchor: "pronouns.md#resume-r", summary: "full-root -r with no earlier match (the one you both know)" },
   "span.bound": { anchor: "spans.md#resume", summary: "span resume binds an earlier span" },
   "span.unbound": { anchor: "spans.md#resume", summary: "span resume with no earlier span" },
   "number.bound": { anchor: "numbers.md#digitless", summary: "number -r binds an earlier number" },
+  "ordinal.bound": { anchor: "pronouns.md#ordinal-pronouns", summary: "ordinal pronoun: a name by order of introduction" },
   "role.bound": { anchor: "roles.md#role-compounds", summary: "role -r binds an earlier role compound" },
   "role.unbound": { anchor: "roles.md#role-compounds", summary: "role -r with no earlier match" },
 };
@@ -579,6 +583,8 @@ export const REJECTIONS = {
   poleStack: { anchor: "causation.md#only-because", summary: "pole stacks are theberom thurugum and hezebam thadorom" },
   objectNeedsVerb: { anchor: "predication.md#existence", summary: "an object /d/ needs a verb" },
   numberResumeUnbound: { anchor: "numbers.md#digitless", summary: "a number -r needs an earlier number to match" },
+  ordinalUnbound: { anchor: "pronouns.md#ordinal-pronouns", summary: "an ordinal pronoun needs that many names introduced in this conversation" },
+  numberPlural: { anchor: "pronouns.md#ordinal-pronouns", summary: "a number takes -x only as an ordinal pronoun (z=#1x)" },
   shortResumeUnbound: { anchor: "pronouns.md#resume-r", summary: "a short -r resume needs an earlier word to match" },
   clauseSingleItem: { anchor: "joins.md#clause-joins", summary: "a clause join goes between two clauses; to deny or focus one clause, put the join on its verb or noun (vul, zal)" },
   leftFence: { anchor: "joins.md#right-close", summary: "a join word closes its conjuncts; it never comes before them" },

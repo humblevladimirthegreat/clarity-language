@@ -45,7 +45,7 @@ import {
 } from "./gloss-structure.js";
 import { toneMarkLength } from "./span-scan.js";
 import { parseWithTables } from "./parse-core.js";
-import { isDigitlessNumberBlank } from "./resolve.js";
+import { isDigitlessNumberBlank, ordinalPronounPlace } from "./resolve.js";
 import { parseWords, WordParseError } from "./word.js";
 import type {
   AnaphorBind,
@@ -1008,6 +1008,10 @@ function sensePieces(
     word.reading !== "ability" &&
     family.kind !== "joinMarker";
   if (resume) {
+    // An ordinal pronoun glosses its place, not the person (glosses.md § Anaphors).
+    if (family.kind === "number" && ordinalPronounPlace(word) !== undefined) {
+      return [`←${numberLabel(family.stem, word.pos)}${numberSurfaceSuffix(word.raw, family.stem, ctx)}`];
+    }
     if (ctx.antecedent) {
       const full = isFullRootResume(word, ctx.antecedent) ? ".full" : "";
       // A role-compound resume keeps its role, so doer / undergoer / tool of one event stay apart (glosses.md § Round trip).
