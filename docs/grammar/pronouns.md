@@ -531,7 +531,7 @@ English *now, about Azawan…*, *speaking of dogs…*, and *so, back to Azawan�
 | `xevavem` / `xavazem` | clear the topic ([linkers](dependents.md#sentence-linkers)) | *next* / *by the way* |
 
 1. **No topic at the start.** A conversation opens with none.
-2. **Introduce.** An `/x/` word on **-l**, **-m**, or **-n** that is not one of the six linkers makes its noun the topic. The noun keeps its ordinary ending, so the topic need not be a person or a name (`xodogal` *now, about a dog*). It takes the same adjectives and hooks as any noun (`xodogal em bazawan` *now, about Azawan's dog*), and it may stand alone as a whole sentence to announce a topic before saying anything about it.
+2. **Introduce.** An `/x/` word on **-l**, **-m**, or **-n** that is not one of the six linkers makes its noun the topic. The noun keeps its ordinary ending, so the topic need not be a person or a name (`xodogal` *now, about a dog*). It takes the same adjectives and hooks as any noun (`xodogal em bazawan` *now, about Azawan's dog*), and it may stand alone as a whole sentence to announce a topic before saying anything about it. A [span](spans.md#topic-quotes) in this slot is the same job for a foreign name, a word as spelling, or a titled work (<code>x@&lt;Sam&gt;</code>, `x{odoga}`, `x@[onodan alahen]`).
 3. **Return.** `/x/` + the whole stem of an earlier word + **-r** makes that thing the topic again.
 4. **Clear.** `xevavem` and `xavazem` each open a new frame. After either there is no topic until the next introduce or return.
 5. **Persist.** The topic holds until rule 2, 3, or 4 changes it. Clause joins, other linkers, and agenda numbering leave it alone. A goodbye ends the conversation and clears it.

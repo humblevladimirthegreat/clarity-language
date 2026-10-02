@@ -42,6 +42,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "leftEdge.Force": { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "speech-act word" },
 
   "bodyClause.Linker": { anchor: "dependents.md#continue-x", summary: "sentence linker before a clause" },
+  "bodyClause.topicSpan": { anchor: "spans.md#topic-quotes", summary: "spoken /x/ cite, mention or opaque span as a topic word" },
   "bodyClause.clause": { anchor: "word-endings.md#greeting", summary: "clause body" },
 
   "clause.clauseItem": { anchor: "word-endings.md#greeting", summary: "clause, or a stand-in clause join" },
@@ -68,6 +69,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "spanUnit.scopedUnit": { anchor: "spans.md#edge", summary: "clause-scoped span interior (EDGE e)" },
   "spanUnit.quoteClause": { anchor: "spans.md#edge", summary: "multi-clause span interior (EDGE a)" },
   "quoteClause.Linker": { anchor: "spans.md#topic-quotes", summary: "a topic word opening a clause inside a cite" },
+  "quoteClause.leftEdge": { anchor: "spans.md#quote-acts", summary: "an act word inside a spoken cite" },
   "quoteClause.clause": { anchor: "spans.md#edge", summary: "clause inside a cite" },
   "spanUnit.SpanClose": { anchor: "spans.md#shape", summary: "span close word" },
   "spanUnit.closeAll": { anchor: "spans.md#close-forms-complete-editorial-close-all", summary: "editorial close then close-all" },
@@ -587,7 +589,7 @@ export const REJECTIONS = {
   stackedHookResume: { anchor: "hooks.md#spans", summary: "stacked hook -r (oer / uar / uer) needs same-role words on both sides; aor / aer / uor are not words" },
   hookSameRoleStack: { anchor: "hooks.md#including-am-al", summary: "between same-role words only the plain hooks (al el ol ul) and the span hooks (oel ual uel) have a reading; for such as, use am" },
   hookDiscourseStack: { anchor: "hooks.md#discourse-hooks", summary: "at the front of a sentence only al el ol ul, aol and ael have a reading; for next, by the way, on the contrary use a linker" },
-  spanSlot: { anchor: "spans.md#pos", summary: "an aside goes only under /th/, a cite, mention or opaque span fills a content slot (/z/ /d/ /b/ /v/ /ɡ/ /h/), and no span fills /w/ or /x/" },
+  spanSlot: { anchor: "spans.md#pos", summary: "an aside goes only under /th/; a cite, mention or opaque span fills a content slot (/z/ /d/ /b/ /v/ /ɡ/ /h/) or sets the topic under /x/; no span fills /w/" },
   ySpanType: { anchor: "spans.md#y-spans", summary: "a span under /y/ is opaque <…> or a cite […]; a mention or an aside is not a call or a reaction" },
   barKind: {
     anchor: "comparatives.md#bars",

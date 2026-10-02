@@ -16,6 +16,7 @@ import type {
   GPackage,
   HUnit,
   IslandUnit,
+  LeftEdge,
   LexWord,
   NpCoord,
   NpItem,
@@ -253,9 +254,14 @@ function attachLeft(out: GlossNode[], kinds: NodeKind[], pair: GlossNode): void 
 
 /** Clause units, with hook packages: extra noun `[in | b-house]`, named hook `NAME[a | on | b]`. */
 function clauseNodes(cur: Cursor, clause: Clause): GlossNode[] {
+  const out: GlossNode[] = [];
+  if (clause.left) out.push(...leftEdgeNodes(cur, clause.left));
+  if (clause.linker) {
+    const linker = cur.take(clause.linker);
+    if (linker) out.push(linker);
+  }
   const units = clause.units;
   const nodes = units.map((u) => unitNodes(cur, u));
-  const out: GlossNode[] = [];
   const kinds: NodeKind[] = [];
   const push = (node: GlossNode, kind: NodeKind = "plain"): void => {
     out.push(node);
@@ -295,9 +301,8 @@ function clauseNodes(cur: Cursor, clause: Clause): GlossNode[] {
   return out;
 }
 
-function utteranceNodes(cur: Cursor, utt: Utterance): GlossNode[] {
+function leftEdgeNodes(cur: Cursor, left: LeftEdge): GlossNode[] {
   const out: GlossNode[] = [];
-  const left = utt.left;
   const edge: ({ at: number; word: LexWord } | { at: number; span: SpanUnit })[] = [
     ...[...left.vocatives, ...left.interjections, ...left.polars].map((word) => ({ at: word.at ?? 0, word })),
     ...(left.spans ?? []).map(({ span: s }) => ({ at: s.open.at ?? 0, span: s })),
@@ -312,9 +317,18 @@ function utteranceNodes(cur: Cursor, utt: Utterance): GlossNode[] {
     const n = cur.take(w);
     if (n) out.push(n);
   }
+  return out;
+}
+
+function utteranceNodes(cur: Cursor, utt: Utterance): GlossNode[] {
+  const out: GlossNode[] = [...leftEdgeNodes(cur, utt.left)];
   for (const body of utt.bodies) {
     const linker = cur.take(body.linker);
     if (linker) out.push(linker);
+    if (body.topicSpan) {
+      const n = span(cur, body.topicSpan);
+      if (n) out.push(n);
+    }
     out.push(...clauseNodes(cur, body.clause));
   }
   return out;

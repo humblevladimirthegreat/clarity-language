@@ -358,10 +358,14 @@ export type Clause = {
   dependent?: OdoDependent;
   /** A topic word opening a clause inside a cite (pronouns.md#topic-quotes); a body's own is on {@link BodyClause}. */
   linker?: LexWord;
+  /** An act word (and the rest of a turn cluster) inside a spoken cite (spans.md#quote-acts). */
+  left?: LeftEdge;
 };
 
 export type BodyClause = {
   linker?: LexWord;
+  /** A spoken `/x/` cite, mention or opaque span as the topic (`xuxon Sam`, spans.md#topic-quotes). */
+  topicSpan?: SpanUnit;
   clause: Clause;
   punct?: PunctKind;
 };

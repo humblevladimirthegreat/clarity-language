@@ -94,6 +94,7 @@ const ROWS: Row[] = [
   { invalid: "zazawan d(zalahen vowogal) vezebel.", rejection: "spanSlot", valid: "zazawan vezebel th(zalahen vowogal)." },
   { invalid: "zazawan vowogal th[sic].", rejection: "spanSlot", valid: "zalahen v<google> dazawan." },
   { invalid: "zazawan w<very> gamazam.", rejection: "spanSlot", valid: "zazawan welavam gamazam." },
+  { invalid: "x(hagawal) zozan vowogal.", rejection: "spanSlot", valid: "x@<Sam> zozan vowogal." },
   { invalid: "y{Sam} zazawan vowogal.", rejection: "ySpanType", valid: "y@<Sam> zazawan vowogal." },
   { invalid: "y(hagawal).", rejection: "ySpanType", valid: "y[azawan]." },
   { invalid: "yoxan azawan xuxul.", rejection: "ySpanType", valid: "yaxan azawan xuxul." },

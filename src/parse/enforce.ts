@@ -11,7 +11,7 @@ import type { IToken } from "chevrotain";
 import type { ClassifyTables } from "./classify.js";
 import { ARROW_ROOTS, isAsOfOverlay, isBarStance, isFrameStance, isGroundsChannel, isStandIn } from "./classify.js";
 import { REJECTIONS, type RejectionId } from "./constructions.js";
-import { linkerEnglish } from "./linkers.js";
+import { isTopicSpan, linkerEnglish } from "./linkers.js";
 import { CLOSED } from "../closed-roots.js";
 import { isGenericPronoun, ordinalPronounPlace } from "./resolve.js";
 import { parseHookCompoundCite } from "./hook-compounds.js";
@@ -43,6 +43,7 @@ import type {
   GPackage,
   HUnit,
   IslandUnit,
+  LeftEdge,
   LexWord,
   NpCoord,
   NumberMarker,
@@ -193,7 +194,7 @@ function tokenWord(token: IToken | undefined): LexWord | undefined {
 
 /**
  * Which slots a span fence fills (spans.md § Outer slot): an aside only under `/th/`, a cite, mention or
- * opaque in a content slot (never `/th/`), and no span under `/w/` or `/x/`. An aside resume (`dexur`) may recast the aside into another slot.
+ * opaque in a content slot (never `/th/`) or as an `/x/` topic word, and no span under `/w/`. An aside resume (`dexur`) may recast the aside into another slot.
  */
 function enforceSpanSlot(word: LexWord): void {
   const family = word.family;
@@ -201,7 +202,11 @@ function enforceSpanSlot(word: LexWord): void {
   const spoken = family.kind === "x" && family.xFamily === "span";
   if ((!written && !spoken) || word.pos === "y" || !word.pos) return;
   const resume = written ? family.anaphor : word.ending === "r";
-  if (word.pos === "w" || word.pos === "x") throw new ConstructionError("spanSlot", word.raw);
+  if (word.pos === "w") throw new ConstructionError("spanSlot", word.raw);
+  if (word.pos === "x") {
+    if (!isTopicSpan(word)) throw new ConstructionError("spanSlot", word.raw);
+    return;
+  }
   if (resume) return;
   const aside = written ? family.bracket === "(" : family.typeVowel === "e";
   if (aside !== (word.pos === "th")) throw new ConstructionError("spanSlot", word.raw);
@@ -593,6 +598,10 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
         case "clause":
           enforceUnitList(node.clause.units, tables);
           enforceDependentContent(node.clause);
+          if (node.clause.left) enforceForcePair(node.clause.left);
+          for (const unit of node.clause.units) {
+            if (unit.kind === "span" && unit.span.open.pos === "x") throw new ConstructionError("spanSlot", unit.span.open.raw);
+          }
           return;
         case "island":
           enforceIsland(node.island, tables);
@@ -627,15 +636,19 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
   };
 }
 
+function enforceForcePair(left: LeftEdge): void {
+  if (left.leadForce && !forcePairKind(left.leadForce, left.force)) {
+    throw new ConstructionError("forcePair", `${left.leadForce.raw} ${left.force?.raw ?? ""}`.trim());
+  }
+}
+
 /** Clause- and discourse-level checks on a parsed and resolved result. */
 export function enforceResult(result: ParseResult, tables: ClassifyTables): void {
   for (const { left, bodies } of result.utterances) {
     // Command / request (e) and prohibition (u) act words may name a time without a channel.
     const directive = /^y[eu]/.test(left.force?.raw ?? "");
     for (const body of bodies) enforceOffsets(body.clause.units, directive);
-    if (left.leadForce && !forcePairKind(left.leadForce, left.force)) {
-      throw new ConstructionError("forcePair", `${left.leadForce.raw} ${left.force?.raw ?? ""}`.trim());
-    }
+    enforceForcePair(left);
   }
   const places = { seen: new Set<LexWord>(), framed: new Set<LexWord>() };
   visitResult(result, structureVisitor(tables, places));

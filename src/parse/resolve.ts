@@ -213,6 +213,8 @@ export function isGenericPronoun(word: LexWord): boolean {
 
 /** Who a topic word or a name picks out: its whole stem, plus `-x` for a group. */
 function topicKeyOf(word: LexWord): string {
+  const family = word.family;
+  if (family.kind === "writingSpan") return `span:${family.bracket}:${family.payload}${word.plural ? "+x" : ""}`;
   return `${wholeStem(word)}${word.plural ? "+x" : ""}`;
 }
 
@@ -320,6 +322,13 @@ function introduce(ctx: Ctx, word: LexWord): void {
 function resetStretch(ctx: Ctx): void {
   ctx.introduced = [];
   ctx.anchors.length = 0;
+}
+
+function considerTopicSpan(ctx: Ctx, span: SpanUnit): void {
+  const payload = span.atom?.family.kind === "foreign" ? span.atom.family.payload : undefined;
+  resetStretch(ctx);
+  ctx.topic = { word: span.open, key: payload !== undefined ? `span:u:${payload}` : topicKeyOf(span.open) };
+  harvest(ctx, span.open);
 }
 
 function bindTopic(ctx: Ctx, pronoun: LexWord): void {
@@ -642,7 +651,10 @@ function resolveVisitor(ctx: Ctx): Visitor {
       if (ctx.question && isJoinGap(join)) ctx.gaps.push(join);
     },
     enter(node) {
-      if (node.kind === "body" && opaque === 0) enterMove(ctx, [greetingName(node.body) ?? []].flat());
+      if (node.kind === "body" && opaque === 0) {
+        enterMove(ctx, [greetingName(node.body) ?? []].flat());
+        if (node.body.topicSpan) considerTopicSpan(ctx, node.body.topicSpan);
+      }
       if (node.kind === "clause") {
         const anchor = anchorOf(node.clause);
         ctx.clauses.push({ anchor, before: ctx.anchors.length });

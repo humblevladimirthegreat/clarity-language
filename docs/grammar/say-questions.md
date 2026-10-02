@@ -26,7 +26,7 @@ An echo question repeats what someone just said, because you doubt it or did not
 
 **Needs:** [Fill-ask](questions.md#fill-ask-r) · [whether](questions.md#embedded-whether)
 
-To report a *who* / *what* question inside a claim (*Azawan asks who walks*), put the same blank you would use in a direct question inside [**`dorl`**](questions.md#embedded-whether).
+To report a *who* / *what* question inside a claim (*Azawan asks who walks*), put the same blank you would use in a direct question inside [**`dorl`**](questions.md#embedded-whether). To quote the question as wording, keep `yol` inside a [cite](spans.md#quote-acts).
 
 > `zazawan vezebel dorl zar vowogal.`
 >

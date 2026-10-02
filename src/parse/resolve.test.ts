@@ -286,7 +286,9 @@ describe("resolve — topic (pronouns.md#topic)", () => {
   });
 
   it("takes -x on the topic pronoun, but never on the generic one", () => {
-    assert.deepEqual(topics("xazawan zozanx vowogal."), ["zozanx→xazawan"]);
+    assert.deepEqual(topics("x@<Sam> zozan vowogal."), ["zozan→x@<Sam>"]);
+    assert.deepEqual(topics("x{odoga} zozan gamazam."), ["zozan→x{odoga}"]);
+    assert.deepEqual(topics("x@[onodan alahen] zozan vezehel."), ["zozan→x@[onodan alahen]"]);
     assert.throws(() => parseText("zobenx vowogal."), /generic pronoun/);
     assert.deepEqual(ordinals("zoben vowogal. zazawan vehahel. zrewor vezebal."), ["zrewor→zazawan"]);
   });

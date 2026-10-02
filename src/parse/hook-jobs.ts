@@ -150,8 +150,11 @@ export function assignHookJobs(result: ParseResult): void {
   };
   visitResult(result, {
     enter(node) {
-      if (node.kind === "body" && node.body.linker && ["introduce", "return"].includes(topicEffect(node.body.linker))) {
+      if (node.kind === "body" && (node.body.topicSpan || (node.body.linker && ["introduce", "return"].includes(topicEffect(node.body.linker))))) {
         afterTopic.add(node.body.clause);
+      }
+      if (node.kind === "clause" && node.clause.linker && ["introduce", "return"].includes(topicEffect(node.clause.linker))) {
+        afterTopic.add(node.clause);
       }
       if (node.kind === "clauseCoord") {
         node.coord.links.forEach((link, i) => {

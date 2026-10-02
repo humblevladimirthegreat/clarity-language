@@ -437,7 +437,12 @@ describe("compareMorphGloss", () => {
       "zazawan vowogal th(zalahen vezebal)",
       "z-Azawan | v-walk | th-ASIDE[z-Alahen | v-sleep]",
     );
-    expectLine("zalahen daxol ahahul vezebel", "z-Alahen | d-CITE.atomic[judge] | v-tell");
+    expectLine(
+      "zazawan daxal yol zalahen vowogal xuxul vezebel",
+      "z-Azawan | d-CITE.multi[y-question | z-Alahen | v-walk] | v-tell",
+    );
+    expectLine("x@<Sam> zozan vowogal", 'x-NAME.OPAQUE["Sam"] | z-TOPIC | v-walk');
+    expectLine("x{odoga} zozan gamazam", 'x-MENTION["odoga"] | z-TOPIC | g-small');
   });
 
   it("viewpoint laterals keep compass on DIR", () => {

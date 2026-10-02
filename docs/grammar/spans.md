@@ -153,7 +153,7 @@ The letter on the open is the role of the **entire span** in the outer sentence.
 | `/h/` | adverb | a loan adverb (<code>h&lt;allegro&gt;</code>) | **h** starts *how* / *when* / *where* |
 | `/th/` | stance | asides (`th(…)`) | **th** ≈ *think* (your side comment) |
 
-Only an aside goes under `/th/`, and every other span fills a content slot: `/z/` `/d/` `/b/` `/v/` `/ɡ/` `/h/`. A degree word (`/w/`) and a linker or topic word (`/x/`) are never a span.
+Only an aside goes under `/th/`, and every other span fills a content slot: `/z/` `/d/` `/b/` `/v/` `/ɡ/` `/h/`. A degree word (`/w/`) is never a span.
 
 An opaque span in a verb, adjective or adverb slot is a **loan word**: the role letter says what part of speech the foreign word plays, and the blob keeps its own spelling.
 
@@ -428,9 +428,43 @@ Resume **-r** always uses EDGE **`u`** (`daxur`).
 
 EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** takes exact **-l** (`daxul`) or resume **-r** (`daxur`).
 
+### Act words in a quote {#quote-acts}
+
+A quoted question or command keeps its own [act word](speech-moves.md#speech-act-statement-question-command) inside a multi-token cite, the same way it keeps a tone mark. The outer sentence is still your claim (*said*), and `yol` or `yel` belongs to the quoted talk. A clause-scoped cite (EDGE **e**) still ends before the next `/y/` word.
+
+> `zazawan daxal yol zalahen vowogal xuxul vezebel.`
+>
+> z-Azawan | d-CITE.multi[y-question | z-Alahen | v-walk] | v-tell
+>
+> "Azawan said, “Does Alahen walk?”"
+
 ### Topics in a quote {#topic-quotes}
 
-A cite is someone else's talk, so a [topic](pronouns.md#topic) never carries into it or out of it. A multi-token cite (EDGE **a**) starts with no topic, counts [ordinals](pronouns.md#ordinal-pronouns) and anchors [role pointers](pronouns.md#role-pointers) from scratch, and may open with a topic word of its own. Its topic ends when the cite does, and your own topic and count come back.
+A cite is someone else's talk, so a [topic](pronouns.md#topic) never carries into it or out of it. A multi-token cite (EDGE **a**) starts with no topic, counts [ordinals](pronouns.md#ordinal-pronouns) and anchors [role pointers](pronouns.md#role-pointers) from scratch, and may open with a topic word of its own. Its topic ends when the cite does, and your own topic and count come back. A cite, mention or opaque span under `/x/` is a topic word: a titled work, a word as spelling, or a foreign name.
+
+> `x@[onodan alahen] zozan vezehel.`
+>
+> x-NAME.CITE[Onodan | Alahen] | z-TOPIC | v-sing
+>
+> "Now, about Onodan Alahen: it is sung."
+
+> `x{odoga} zozan gamazam.`
+>
+> x-MENTION["odoga"] | z-TOPIC | g-small
+>
+> "Now, about the word “odoga”: it is small."
+
+> <code>x@&lt;Sam&gt; zozan vowogal.</code>
+>
+> x-NAME.OPAQUE["Sam"] | z-TOPIC | v-walk
+>
+> "Now, about Sam: Sam walks."
+
+> `xuxon Sam zozan vowogal.`
+>
+> x-NAME.OPAQUE.atomic["Sam"] | z-TOPIC | v-walk
+>
+> "Now, about Sam: Sam walks."
 
 | Span | Topic at the start | Topic words inside | Leaks out? |
 |------|--------------------|--------------------|------------|

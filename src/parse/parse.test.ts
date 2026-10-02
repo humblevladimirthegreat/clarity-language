@@ -667,6 +667,20 @@ describe("parse — spans.md /y/ spans", () => {
   it("puts a written /y/ cite at the left edge too", () => {
     assert.deepEqual(parseText("y[azawan] yol zalahen vowogal.").utterances[0]!.left.interjections.map((w) => w.raw), ["y[azawan]"]);
   });
+
+  it("keeps an act word inside a spoken cite", () => {
+    const span = parseText("zazawan daxal yol zalahen vowogal xuxul vezebel.").utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "span");
+    assert.ok(span && span.kind === "span");
+    assert.equal(span.span.content[0]?.left?.force?.raw, "yol");
+  });
+
+  it("sets the topic with an /x/ cite, mention or opaque span", () => {
+    assert.equal(parseText("x@<Sam> zozan vowogal.").utterances[0]!.bodies[0]!.linker?.raw, "x@<Sam>");
+    assert.equal(parseText("x{odoga} zozan gamazam.").utterances[0]!.bodies[0]!.linker?.raw, "x{odoga}");
+    assert.equal(parseText("x@[onodan alahen] zozan vezehel.").utterances[0]!.bodies[0]!.linker?.raw, "x@[onodan alahen]");
+    assert.equal(parseText("xuxon Sam zozan vowogal.").utterances[0]!.bodies[0]!.topicSpan?.open.raw, "xuxon");
+    assert.equal(parseText("xoxol odogal zozan gamazam.").utterances[0]!.bodies[0]!.topicSpan?.open.raw, "xoxol");
+  });
 });
 
 describe("parse — contrary to a stance (uem + /th/)", () => {

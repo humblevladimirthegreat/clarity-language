@@ -35,7 +35,7 @@ import {
 } from "./tokens.js";
 import { isAsOfOverlay, isNamedStandIn, isStandIn } from "./classify.js";
 import { assignHookJobs } from "./hook-jobs.js";
-import { topicEffect } from "./linkers.js";
+import { topicEffect, isTopicSpan } from "./linkers.js";
 import { BAR_SERIES, isScaleStem, RANK_SERIES } from "./series.js";
 import type {
   BodyClause,
@@ -330,6 +330,16 @@ class AgazanSentenceParser extends CstParser {
         // A topic word may be the whole sentence (`xazawan.`, pronouns.md#topic).
         { GATE: () => this.loneTopicWordAhead(), ALT: () => this.CONSUME2(Linker) },
         {
+          GATE: () => this.topicSpanAhead(),
+          ALT: () => {
+            this.SUBRULE(this.spanUnit, { LABEL: "topicSpan" });
+            this.OPTION3({
+              GATE: () => !tokenIs(this.LA(1), Period, EOF, QMark, Bang),
+              DEF: () => this.SUBRULE3(this.clause),
+            });
+          },
+        },
+        {
           ALT: () => {
             this.OPTION(() => {
               this.CONSUME(Linker);
@@ -350,6 +360,12 @@ class AgazanSentenceParser extends CstParser {
   private loneTopicWordAhead(): boolean {
     const word = this.LA(1).payload as LexWord | undefined;
     return this.LA(1).tokenType === Linker && !!word && topicEffect(word) !== "none" && tokenIs(this.LA(2), Period, EOF);
+  }
+
+  /** Spoken `/x/` cite, mention or opaque open as a topic word (`xuxon Sam`, spans.md#topic-quotes). */
+  private topicSpanAhead(): boolean {
+    const word = this.LA(1).payload as LexWord | undefined;
+    return this.LA(1).tokenType === SpanOpen && !!word && isTopicSpan(word);
   }
 
   /** `/x/` at sentence start followed by a clause (not `.`, a hook, or another `/x/`). */
@@ -438,7 +454,7 @@ class AgazanSentenceParser extends CstParser {
     ]);
   });
 
-  /** A clause inside a cite, which may open with a topic word of its own (pronouns.md#topic-quotes). */
+  /** A clause inside a cite, which may open with a topic word or an act word of its own. */
   public quoteClause = this.RULE("quoteClause", () => {
     this.OR([
       {
@@ -448,6 +464,16 @@ class AgazanSentenceParser extends CstParser {
           this.OPTION({
             GATE: () => !tokenIs(this.LA(1), SpanClose),
             DEF: () => this.SUBRULE(this.clause),
+          });
+        },
+      },
+      {
+        GATE: () => tokenIs(this.LA(1), Polar, Vocative, Interjection, Force) || this.discourseHookAhead() || isYSpanOpen(this.LA(1)),
+        ALT: () => {
+          this.SUBRULE(this.leftEdge);
+          this.OPTION2({
+            GATE: () => !tokenIs(this.LA(1), SpanClose),
+            DEF: () => this.SUBRULE3(this.clause),
           });
         },
       },
@@ -1514,8 +1540,13 @@ function flattenGCoord(cst: CstNode): Unit[] {
 
 function buildQuoteClause(cst: CstNode): Clause {
   const linker = childToken(cst, "Linker");
+  const leftCst = childNodes(cst, "leftEdge")[0];
   const clause = childNodes(cst, "clause")[0];
-  return { ...(clause ? buildClause(clause) : { units: [] }), ...(linker ? { linker: lexWordFromToken(linker) } : {}) };
+  return {
+    ...(clause ? buildClause(clause) : { units: [] }),
+    ...(linker ? { linker: lexWordFromToken(linker) } : {}),
+    ...(leftCst ? { left: buildLeftEdge(leftCst) } : {}),
+  };
 }
 
 function buildSpan(cst: CstNode): SpanUnit {
@@ -1669,9 +1700,11 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
 
 function buildBodyClause(cst: CstNode, trailingPunct?: IToken): BodyClause {
   const linkerTok = childToken(cst, "Linker") ?? childToken(cst, "crossJoin");
+  const topicSpanCst = childNodes(cst, "topicSpan")[0];
   const clauseCst = childNodes(cst, "clause")[0];
   return {
     linker: linkerTok ? lexWordFromToken(linkerTok) : undefined,
+    ...(topicSpanCst ? { topicSpan: buildSpan(topicSpanCst) } : {}),
     clause: clauseCst ? buildClause(clauseCst) : { units: [] },
     punct: trailingPunct ? punctFromToken(trailingPunct) : undefined,
   };

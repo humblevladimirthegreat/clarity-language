@@ -15,6 +15,7 @@ Prosody
 -finish lexicon fill (partial)
 -finish proposals-mnemonic
 -review logical deduction
+-consider making scope islands a span (stealing mention-use: mark mention with modifier)
 
 save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.

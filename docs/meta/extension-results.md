@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Findings from Phase 3 of the expressiveness review (`docs/proposals/expressiveness-review.md`): every productive mechanism crossed with every place it could apply, and each empty cell judged. Rows are logged per batch, ruled by the language owner, and applied before the next batch starts; each row's **Outcome** records the ruling.
 
-Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 declined, C-15 and C-16 fixed). Other mechanisms not started.
+Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 adopted (reversed from decline), C-15 and C-16 fixed). Other mechanisms not started.
 
 ## How to read this file
 
@@ -789,12 +789,12 @@ Owning page: [spans](../grammar/spans.md). Wave 6. Cells checked with `node scri
 
 | Span | `/z/` | `/d/` | `/b/` | `/v/` | `/ɡ/` | `/h/` | `/th/` | `/w/` | `/x/` | `/y/` |
 |------|-------|-------|-------|-------|-------|-------|--------|-------|-------|-------|
-| Cite `[…]` | def | def | E-36 | def | E-36 | E-36 | C-15 | C-15 | C-15 | def |
-| Mention `{…}` | def | def | E-36 | def | E-36 | E-36 | C-15 | C-15 | C-15 | def (none, `ySpanType`) |
-| Opaque `<…>` | def | def | E-36 | E-36 | E-36 | E-36 | C-15 | C-15 | C-15 | def |
+| Cite `[…]` | def | def | E-36 | def | E-36 | E-36 | C-15 | C-15 | E-38 | def |
+| Mention `{…}` | def | def | E-36 | def | E-36 | E-36 | C-15 | C-15 | E-38 | def (none, `ySpanType`) |
+| Opaque `<…>` | def | def | E-36 | E-36 | E-36 | E-36 | C-15 | C-15 | E-38 | def |
 | Aside `(…)` | C-15 | C-15 | C-15 | C-15 | C-15 | C-15 | def | C-15 | C-15 | def (none, `ySpanType`) |
 
-Parser findings: every cell above parsed except `/x/` written spans (a syntax error), so the parser read `d(…)`, `th[…]`, `thaxol` and `w<very>` with no reading. A written bracket cite holds its interior as a single payload (`d[ yol zalahen vowogal ]` parses; the spoken `daxal yol zalahen vowogal xuxul` is rejected, because a spoken cite holds clauses only, E-37). Asides add no names to an outer ordinal count and no pointer anchors; a cite counts its own names from scratch and adds none outside (C-16).
+Parser findings: every cell above parsed except `/x/` written spans (a syntax error), so the parser read `d(…)`, `th[…]`, `thaxol` and `w<very>` with no reading. A written bracket cite holds its interior as a single payload (`d[ yol zalahen vowogal ]` parses; the spoken `daxal yol zalahen vowogal xuxul` is still rejected today, pending E-37). Asides add no names to an outer ordinal count and no pointer anchors; a cite counts its own names from scratch and adds none outside (C-16).
 
 ### Rows
 
@@ -819,8 +819,8 @@ Parser findings: every cell above parsed except `/x/` written spans (a syntax er
 - **Better than current route:** only for a verbatim question, which the report already carries
 - **Conflicts and notes:** the written `d[ yol zalahen vowogal ]` parses, but its interior is one payload that the parser never reads, so the written and spoken forms are not a mismatch in grammar. An inner act word would also split the cite from the turn it sits in: `yol` at the front of a clause reads as a new turn.
 - **Closes:** *she asked, "Are you coming?"*: covered by the reported question
-- **Recommendation:** decline.
-- **Outcome:** declined — D-28.
+- **Recommendation:** adopt (reversed from decline).
+- **Outcome:** adopted (reversed from decline) — a quoted question or command keeps its own act word inside a spoken cite. Taught in [spans § Act words in a quote](../grammar/spans.md#quote-acts); the parser reads `daxal yol … xuxul`.
 
 #### E-38 — a span as a topic word (`x@<Sam>`) · intuitive but redundant · P3
 
@@ -831,8 +831,8 @@ Parser findings: every cell above parsed except `/x/` written spans (a syntax er
 - **Better than current route:** marginal
 - **Conflicts and notes:** D-20 wants every topic return spelled by stem so every tool reads one topic from the words alone; an opaque blob has no stem, and the topic pronoun would then point at a blob.
 - **Closes:** —
-- **Recommendation:** decline.
-- **Outcome:** declined — D-28.
+- **Recommendation:** adopt (reversed from decline).
+- **Outcome:** adopted (reversed from decline) — an `/x/` cite, mention or opaque sets the topic (`x@[onodan alahen]`, `x{odoga}`, `x@<Sam>`). Taught in [spans § Topics in a quote](../grammar/spans.md#topic-quotes) and [pronouns § Topic](../grammar/pronouns.md#topic).
 
 ### Inconsistencies (wave 6)
 
@@ -852,8 +852,7 @@ Parser findings: every cell above parsed except `/x/` written spans (a syntax er
 
 ### None (added to unassigned-reserved)
 
-- Aside under any role but `/th/`; cite, mention or opaque under `/th/`; any span under `/w/` or `/x/` (C-15).
-- An act word inside a spoken cite (E-37); a span as a topic word (E-38).
+- Aside under any role but `/th/`; cite, mention or opaque under `/th/`; any span under `/w/` (C-15). `/x/` cite, mention and opaque are topic words (E-38).
 
 Confirmed **def** with nothing to add: TYPE × EDGE × **-l** / **-m** / **-n** on `/z/` `/d/` `/b/` `/v/` `/ɡ/` `/h/` (the open map in spans § Reference tables), EDGE **u** with **-l** / **-r**, nesting, the three close words, `/y/` calls with cite and opaque, and topics inside cites.
 

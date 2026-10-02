@@ -156,6 +156,7 @@ export function classifyTokenBranch(word: LexWord): { type: AgazanTokenType; bra
     if (pos === "y") {
       return family.marks.includes("@") ? { type: Vocative, branch: "yVocative" } : { type: Interjection, branch: "yInterjection" };
     }
+    if (pos === "x") return { type: Linker, branch: "linker" };
     if (pos && pos !== "z" && pos !== "d" && pos !== "b" && pos in CONTENT_BY_POS) {
       return { type: CONTENT_BY_POS[pos as keyof typeof CONTENT_BY_POS], branch: "writingSpanSlot" };
     }

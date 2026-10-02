@@ -17,6 +17,7 @@ import type {
   Hosted,
   HUnit,
   IslandUnit,
+  LeftEdge,
   LexWord,
   NpCoord,
   NpItem,
@@ -140,7 +141,12 @@ export function visitResult(result: ParseResult, v: Visitor): void {
 export function visitUtterance(utterance: Utterance, index: number, v: Visitor): void {
   const node: AstNode = { kind: "utterance", utterance, index };
   if (v.enter?.(node) === SKIP) return;
-  const left = utterance.left;
+  visitLeftEdge(utterance.left, v);
+  for (const body of utterance.bodies) visitBody(body, v);
+  v.exit?.(node);
+}
+
+function visitLeftEdge(left: LeftEdge, v: Visitor): void {
   const w = (words: LexWord[] | LexWord | undefined, slot: WordSlot) => words && [words].flat().forEach((x) => v.word?.(x, slot));
   w(left.vocatives, "vocative");
   w(left.interjections, "interjection");
@@ -150,14 +156,13 @@ export function visitUtterance(utterance: Utterance, index: number, v: Visitor):
   w(left.hookModifiers, "hookModifier");
   w(left.leadForce, "leadForce");
   w(left.force, "force");
-  for (const body of utterance.bodies) visitBody(body, v);
-  v.exit?.(node);
 }
 
 function visitBody(body: BodyClause, v: Visitor): void {
   const node: AstNode = { kind: "body", body };
   if (v.enter?.(node) === SKIP) return;
   if (body.linker) v.word?.(body.linker, "linker");
+  if (body.topicSpan) visitSpan(body.topicSpan, v);
   visitClause(body.clause, v);
   v.exit?.(node);
 }
@@ -165,6 +170,7 @@ function visitBody(body: BodyClause, v: Visitor): void {
 export function visitClause(clause: Clause, v: Visitor): void {
   const node: AstNode = { kind: "clause", clause };
   if (v.enter?.(node) === SKIP) return;
+  if (clause.left) visitLeftEdge(clause.left, v);
   if (clause.linker) v.word?.(clause.linker, "linker");
   for (const unit of clause.units) visitUnit(unit, v);
   if (clause.dependent) {
