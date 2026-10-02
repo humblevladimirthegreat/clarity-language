@@ -1338,7 +1338,7 @@ Write the role letter, symbol stack, then digits: `gruowol` labels a floor numbe
 
 In careful writing, an omitted exponent means ones-place (`grarel` = 3). Prefer writing the exponent when the magnitude matters.
 
-In casual measure-heavy talk, a stretch of conversation may set an **ambient** order of magnitude (often an engineering `e3` / `e6` / …). Bare mantissas are then heard at that decade until you cancel it.
+In casual measure-heavy talk, a stretch of conversation may set an **ambient** order of magnitude (often an engineering `e3` / `e6` / …). Bare mantissas are then heard at that decade until you cancel it. A [topic change](pronouns.md#topic-resets) starts a new stretch, so bare numbers go back to ones until an ambient decade is set again.
 
 **Named `e0` asserts OoM 0** and cancels that inheritance:
 

@@ -27,6 +27,7 @@ import type {
 import { isDigitless, isRhetorical, KIND_SERIES, SCALE_SERIES } from "./series.js";
 import { isGreeting, isScaleShared, isSharedGPackage, SKIP_CONTENT, visitResult, type Visitor } from "./ast-walk.js";
 import { CLOSED } from "../closed-roots.js";
+import { topicEffect } from "./linkers.js";
 
 const ROLE_FRAME_POS = new Set(["z", "d", "b", "v", "g", "h", "th"]);
 
@@ -50,10 +51,18 @@ type OpenClause = { anchor?: Anchor; before: number };
 /** A name in the conversation's introduction order (pronouns.md#ordinal-pronouns). */
 type Introduced = { key: string; word: LexWord };
 
+/** What the talk is about now: the `/x/` word that set it, and the referent it names (pronouns.md#topic). */
+type Topic = { word: LexWord; key: string };
+
+/** The per-stretch state a quote (a cite span) starts afresh and gives back when it ends (pronouns.md#topic-quotes). */
+type Saved = Pick<Ctx, "antecedents" | "introduced" | "anchors" | "clauses" | "topic">;
+
 type Ctx = {
   antecedents: Antecedent[];
-  /** Names in order of introduction; ordinal pronouns index into this list. */
+  /** Names in order of introduction in this topic stretch; ordinal pronouns index into this list. */
   introduced: Introduced[];
+  /** The current topic: set only by an `/x/` topic word, cleared by *next*, *by the way*, and goodbye. */
+  topic?: Topic;
   /** Names that have greeted; the same greeting again is goodbye. */
   greeted: Set<string>;
   /** After a goodbye: the next utterance that is not a goodbye starts a new conversation. */
@@ -176,11 +185,43 @@ function isNumberAnaphor(word: LexWord): boolean {
 /** Special pronouns name conversation roles, not people, so they take no number. */
 const ROLE_PRONOUN_ROOTS = new Set([CLOSED.microphone, CLOSED.headphones, CLOSED.handshake, CLOSED.neutral]);
 
+function isNounSlot(word: LexWord): boolean {
+  return word.pos === "z" || word.pos === "d" || word.pos === "b";
+}
+
+function singleRoot(word: LexWord): string | undefined {
+  return word.family.kind === "content" && word.family.roots.length === 1 ? word.family.roots[0] : undefined;
+}
+
+/** The root a pronoun is built on: the noun's own, or the one a holder seam names (`thunemozan`, knowing.md#holder). */
+function pronounRoot(word: LexWord): string | undefined {
+  if (word.ending !== "n") return undefined;
+  if (isNounSlot(word)) return singleRoot(word);
+  const { family } = word;
+  return family.kind === "x" && family.xFamily === "holder" && family.rightRoots?.length === 1 ? family.rightRoots[0] : undefined;
+}
+
+/** The topic pronoun: the star root + **-n** on `/z/` `/d/` `/b/`, or as a holder (`zozan`, pronouns.md#topic-pronoun). */
+export function isTopicPronoun(word: LexWord): boolean {
+  return pronounRoot(word) === CLOSED.star;
+}
+
+/** The generic pronoun: the person root + **-n** on `/z/` `/d/` `/b/`, or as a holder (`zebezan`, pronouns.md#generic-pronoun). */
+export function isGenericPronoun(word: LexWord): boolean {
+  return pronounRoot(word) === CLOSED.person;
+}
+
+/** Who a topic word or a name picks out: its whole stem, plus `-x` for a group. */
+function topicKeyOf(word: LexWord): string {
+  return `${wholeStem(word)}${word.plural ? "+x" : ""}`;
+}
+
 /** Identity of a name (`-n`) for introduction order: its roots, plus `-x` for a group. */
 function nameKey(word: LexWord): string | undefined {
   if (word.ending !== "n" || word.family.kind === "joinMarker") return undefined;
   const roots = contentRoots(word);
   if (roots.length === 0 || roots.some((root) => ROLE_PRONOUN_ROOTS.has(root))) return undefined;
+  if (isTopicPronoun(word) || isGenericPronoun(word)) return undefined;
   return `${roots.join("x")}${word.plural ? "+x" : ""}`;
 }
 
@@ -267,9 +308,73 @@ function bindOrdinal(ctx: Ctx, pronoun: LexWord, place: number): void {
   ctx.anaphors.push({ pronoun, kind: "ordinal", antecedent });
 }
 
+/** The topic never takes a number, even when it is a name and is named again in its stretch (pronouns.md#topic-ordinals). */
 function introduce(ctx: Ctx, word: LexWord): void {
   const key = nameKey(word);
-  if (key && !ctx.introduced.some((item) => item.key === key)) ctx.introduced.push({ key, word });
+  if (!key || ctx.introduced.some((item) => item.key === key)) return;
+  if (ctx.topic && ctx.topic.key === topicKeyOf(word)) return;
+  ctx.introduced.push({ key, word });
+}
+
+/** A new topic stretch: the ordinal count and the role-pointer anchors start over (pronouns.md#topic-resets). */
+function resetStretch(ctx: Ctx): void {
+  ctx.introduced = [];
+  ctx.anchors.length = 0;
+}
+
+function bindTopic(ctx: Ctx, pronoun: LexWord): void {
+  ctx.anaphors.push({ pronoun, kind: "topic", antecedent: ctx.topic?.word });
+}
+
+/**
+ * Whether an earlier word is a noun a return can make the topic again: a `/z/` `/d/` `/b/` noun or an earlier topic
+ * word. A verb, property, scale, or linker resumed on `/x/` only points back at it (say-people-places.md#resume-x).
+ */
+function namesTopicReferent(word: LexWord): boolean {
+  if (word.pos === "x") return topicEffect(word) === "introduce" || topicEffect(word) === "return";
+  return isNounSlot(word);
+}
+
+/**
+ * A body's opening `/x/` word. Introduce and return set the topic, *next* and *by the way* clear it, and each
+ * starts a new stretch (pronouns.md#topic). A return that resumes a published linker (`xodur` after `xodum`) is
+ * only that linker again.
+ */
+function considerLinker(ctx: Ctx, word: LexWord): void {
+  const effect = topicEffect(word);
+  if (effect === "none") {
+    considerWord(ctx, word);
+    return;
+  }
+  if (effect === "return") {
+    bindContent(ctx, word);
+    const antecedent = ctx.anaphors.at(-1)?.antecedent;
+    if (antecedent && !namesTopicReferent(antecedent)) {
+      harvest(ctx, word);
+      return;
+    }
+  }
+  resetStretch(ctx);
+  ctx.topic = effect === "clear" ? undefined : { word, key: topicKeyOf(word) };
+  harvest(ctx, word);
+}
+
+/** A cite quote is someone else's talk: it counts, anchors, and holds a topic of its own, and none of it leaks out. */
+function enterQuote(ctx: Ctx): Saved {
+  const saved: Saved = { antecedents: ctx.antecedents, introduced: ctx.introduced, anchors: ctx.anchors, clauses: ctx.clauses, topic: ctx.topic };
+  ctx.antecedents = [];
+  ctx.introduced = [];
+  ctx.anchors = [];
+  ctx.clauses = [];
+  ctx.topic = undefined;
+  return saved;
+}
+
+/** Leaving a quote: the speaker's stretch returns, and a resume outside can reach the quote's words (not the reverse). */
+function exitQuote(ctx: Ctx, saved: Saved): void {
+  const inside = ctx.antecedents;
+  Object.assign(ctx, saved);
+  ctx.antecedents.push(...inside);
 }
 
 /** The greeter's own name in a greeting sentence (`azawan.`, word-endings.md#greeting). */
@@ -289,9 +394,11 @@ function enterMove(ctx: Ctx, greetings: string[]): void {
   ctx.goodbye = greetings.length > 0 && greetings.every(known);
   if (ctx.goodbye) {
     ctx.closing = true;
+    ctx.topic = undefined;
     return;
   }
   if (ctx.closing) {
+    ctx.topic = undefined;
     ctx.introduced = [];
     ctx.greeted.clear();
     ctx.closing = false;
@@ -504,7 +611,8 @@ function harvest(ctx: Ctx, word: LexWord): void {
 
 function considerWord(ctx: Ctx, word: LexWord): void {
   const place = ordinalPronounPlace(word);
-  if (isSpanAnaphor(word)) bindSpan(ctx, word);
+  if (isTopicPronoun(word)) bindTopic(ctx, word);
+  else if (isSpanAnaphor(word)) bindSpan(ctx, word);
   else if (place !== undefined) bindOrdinal(ctx, word, place);
   else if (isNumberAnaphor(word)) bindNumber(ctx, word);
   else if (isRoleAnaphor(word)) bindRole(ctx, word);
@@ -521,12 +629,13 @@ function considerWord(ctx: Ctx, word: LexWord): void {
 function resolveVisitor(ctx: Ctx): Visitor {
   // Inside an opaque `u` span nothing is read as a word (spans.md).
   let opaque = 0;
-  // Span interiors (quotes, asides) add no anchors for role pointers.
-  let spans = 0;
+  // Mention and aside interiors add no anchors for role pointers; a cite quote anchors from scratch.
+  const spans: Array<{ quote: boolean; saved?: Saved }> = [];
   return {
     word(word, slot) {
       if (opaque > 0 || slot === "boundJoinClose" || slot === "joinModifier" || slot === "factor") return;
-      considerWord(ctx, word);
+      if (slot === "linker") considerLinker(ctx, word);
+      else considerWord(ctx, word);
     },
     join(join, site) {
       if (opaque > 0) return;
@@ -537,9 +646,12 @@ function resolveVisitor(ctx: Ctx): Visitor {
       if (node.kind === "clause") {
         const anchor = anchorOf(node.clause);
         ctx.clauses.push({ anchor, before: ctx.anchors.length });
-        if (anchor && spans === 0) ctx.anchors.push(anchor);
+        if (anchor && spans.at(-1)?.quote !== false) ctx.anchors.push(anchor);
       }
-      if (node.kind === "span") spans += 1;
+      if (node.kind === "span") {
+        const quote = spanTypeOf(node.span.open) === "a" && node.span.content.length > 0;
+        spans.push({ quote, saved: quote ? enterQuote(ctx) : undefined });
+      }
       if (node.kind === "span" && spanTypeOf(node.span.open) === "u") {
         opaque += 1;
         return SKIP_CONTENT;
@@ -552,7 +664,10 @@ function resolveVisitor(ctx: Ctx): Visitor {
     },
     exit(node) {
       if (node.kind === "clause") ctx.clauses.pop();
-      if (node.kind === "span") spans -= 1;
+      if (node.kind === "span") {
+        const { saved } = spans.pop()!;
+        if (saved) exitQuote(ctx, saved);
+      }
       if (node.kind === "span" && spanTypeOf(node.span.open) === "u") opaque -= 1;
       if (node.kind === "shared" && node.join && opaque === 0) {
         ctx.shared.push({ join: node.join, role: classifySharedRole(node.join, node.item), shared: node.item });

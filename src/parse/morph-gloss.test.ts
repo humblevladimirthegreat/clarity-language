@@ -581,3 +581,28 @@ describe("morphGlossLine — word position, not spelling", () => {
     assert.ok(!second.includes("additionally"), line);
   });
 });
+
+describe("morphGlossLine — topic and generic pronouns", () => {
+  it("glosses the topic pronoun and its topic word", () => {
+    expectLine(
+      "xazawan zozan dalahen vahahal. zrewor dozan vezebel.",
+      "x-Azawan | z-TOPIC | d-Alahen | v-see . z-←1st | d-TOPIC | v-tell",
+    );
+    expectLine("xazawanx zozanx vehahel.", "x-Azawan-x | z-TOPIC-x | v-sit");
+    expectLine("xazawar zozan vehahel.", "x-←Azawan | z-TOPIC | v-sit");
+  });
+  it("glosses the generic pronoun, and either one as a holder", () => {
+    expectLine("zebezan vezebal.", "z-ONE | v-sleep");
+    expectLine("xazawan thunemozan zalahen vedabal.", "x-Azawan | th-INFERRED-TOPIC | z-Alahen | v-departure");
+    expectLine("thunemebezan zalahen vedabal.", "th-INFERRED-ONE | z-Alahen | v-departure");
+  });
+  it("keeps the star and person roots ordinary on other endings", () => {
+    expectLine("zozal vowogal.", "z-star | v-walk");
+    expectLine("zebezal vowogal.", "z-person | v-walk");
+  });
+  it("glosses a topic word with its own hooks, and the clearing linkers", () => {
+    expectLine("xodogal em bazawan zalahen vahahal.", "x-dog | [used-by | b-Azawan] | z-Alahen | v-see");
+    expectLine("xevavem zazawan vowogal.", "x-next | z-Azawan | v-walk");
+    expectLine("hahehom bazawan zalahen vowogal.", "[h-as-for | b-Azawan] | z-Alahen | v-walk");
+  });
+});

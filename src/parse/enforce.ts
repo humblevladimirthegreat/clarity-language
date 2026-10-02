@@ -12,7 +12,7 @@ import type { ClassifyTables } from "./classify.js";
 import { ARROW_ROOTS, isAsOfOverlay, isBarStance, isFrameStance, isGroundsChannel, isStandIn } from "./classify.js";
 import { REJECTIONS, type RejectionId } from "./constructions.js";
 import { linkerEnglish } from "./linkers.js";
-import { ordinalPronounPlace } from "./resolve.js";
+import { isGenericPronoun, ordinalPronounPlace } from "./resolve.js";
 import { parseHookCompoundCite } from "./hook-compounds.js";
 import { SentenceParseError } from "./sentence-parser.js";
 import {
@@ -151,7 +151,8 @@ export function enforceTokens(tokens: IToken[], tables: ClassifyTables): void {
         branch === "yInterjection" ||
         branch === "greeting" ||
         branch === "hook" ||
-        endsYSpan(tokens, i - 1);
+        endsYSpan(tokens, i - 1) ||
+        opensCite(prev);
       if (!opensBody) throw new ConstructionError("linkerMidSentence", token.image);
     }
     const payload = token.payload as TokenPayload | undefined;
@@ -159,6 +160,12 @@ export function enforceTokens(tokens: IToken[], tables: ClassifyTables): void {
     enforceWord(payload, tables);
     enforceStackedHookR(payload, tokens, i);
   });
+}
+
+/** A topic word may open the interior of a multi-token cite (`daxal xazawan …`, pronouns.md#topic-quotes). */
+function opensCite(token: IToken): boolean {
+  const word = tokenWord(token);
+  return token.tokenType === SpanOpen && word?.pos !== "y" && word?.family.kind === "x" && word.family.typeVowel === "a" && word.family.edgeVowel === "a";
 }
 
 /** Token `j` ends a spoken `/y/` span at the left edge: its close, or an atomic open's one word (spans.md#y-spoken-spans). */
@@ -220,15 +227,14 @@ function enforceRespectively(units: Unit[]): void {
 }
 
 function enforceWord(word: LexWord, tables: ClassifyTables): void {
-  // Linkers are a closed set; **-r** (resume) and **-n** (agenda label) stay open (dependents.md#sentence-linkers).
-  if (classifyTokenBranch(word).branch === "linker" && (word.ending === "l" || word.ending === "m") && !linkerEnglish(word)) {
-    throw new ConstructionError("unknownLinker", word.raw);
-  }
   // A holder names people, so it takes -x like any noun (`thodumazawanx`, knowing.md#holder).
   const holder = word.family.kind === "x" && word.family.xFamily === "holder";
-  if (word.plural && word.pos && NO_PLURAL_POS.has(word.pos) && !holder) {
+  // A topic word is a noun, so it takes -x like one (`xazawanx`, pronouns.md#topic-groups); a published linker does not.
+  const topic = word.pos === "x" && word.family.kind === "content" && !linkerEnglish(word);
+  if (word.plural && word.pos && NO_PLURAL_POS.has(word.pos) && !holder && !topic) {
     throw new ConstructionError("pluralOnPos", word.raw);
   }
+  if (word.plural && isGenericPronoun(word)) throw new ConstructionError("genericPlural", word.raw);
   if (word.plural && word.family.kind === "number" && ordinalPronounPlace(word) === undefined) {
     throw new ConstructionError("numberPlural", word.raw);
   }
@@ -530,6 +536,7 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
     if (bind.antecedent) continue;
     if (bind.kind === "number") throw new ConstructionError("numberResumeUnbound", bind.pronoun.raw);
     if (bind.kind === "ordinal") throw new ConstructionError("ordinalUnbound", bind.pronoun.raw);
+    if (bind.kind === "topic") throw new ConstructionError("topicUnbound", bind.pronoun.raw);
     if (bind.kind === "content" && !isLexiconStemResume(bind.pronoun, tables)) {
       throw new ConstructionError("resumeUnbound", bind.pronoun.raw);
     }

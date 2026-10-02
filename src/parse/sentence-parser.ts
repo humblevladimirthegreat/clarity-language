@@ -35,6 +35,7 @@ import {
 } from "./tokens.js";
 import { isAsOfOverlay, isNamedStandIn, isStandIn } from "./classify.js";
 import { assignHookJobs } from "./hook-jobs.js";
+import { topicEffect } from "./linkers.js";
 import { BAR_SERIES, isScaleStem, RANK_SERIES } from "./series.js";
 import type {
   BodyClause,
@@ -307,16 +308,33 @@ class AgazanSentenceParser extends CstParser {
   }
 
   public bodyClause = this.RULE("bodyClause", () => {
-    this.OPTION(() => {
-      this.CONSUME(Linker);
+    this.OR({
+      IGNORE_AMBIGUITIES: true,
+      DEF: [
+        // A topic word may be the whole sentence (`xazawan.`, pronouns.md#topic).
+        { GATE: () => this.loneTopicWordAhead(), ALT: () => this.CONSUME2(Linker) },
+        {
+          ALT: () => {
+            this.OPTION(() => {
+              this.CONSUME(Linker);
+            });
+            // Sentence-initial clause join before a clause: joins the prior sentence to this whole one (joins.md § clause joins).
+            this.OPTION2({
+              GATE: () => this.crossPeriodJoinAhead(),
+              DEF: () => this.CONSUME(JoinX, { LABEL: "crossJoin" }),
+            });
+            this.SUBRULE(this.clause);
+          },
+        },
+      ],
     });
-    // Sentence-initial clause join before a clause: joins the prior sentence to this whole one (joins.md § clause joins).
-    this.OPTION2({
-      GATE: () => this.crossPeriodJoinAhead(),
-      DEF: () => this.CONSUME(JoinX, { LABEL: "crossJoin" }),
-    });
-    this.SUBRULE(this.clause);
   });
+
+  /** A topic word and then the end of the sentence. */
+  private loneTopicWordAhead(): boolean {
+    const word = this.LA(1).payload as LexWord | undefined;
+    return this.LA(1).tokenType === Linker && !!word && topicEffect(word) !== "none" && tokenIs(this.LA(2), Period, EOF);
+  }
 
   /** `/x/` at sentence start followed by a clause (not `.`, a hook, or another `/x/`). */
   private crossPeriodJoinAhead(): boolean {
@@ -404,6 +422,23 @@ class AgazanSentenceParser extends CstParser {
     ]);
   });
 
+  /** A clause inside a cite, which may open with a topic word of its own (pronouns.md#topic-quotes). */
+  public quoteClause = this.RULE("quoteClause", () => {
+    this.OR([
+      {
+        GATE: () => this.LA(1).tokenType === Linker,
+        ALT: () => {
+          this.CONSUME(Linker);
+          this.OPTION({
+            GATE: () => !tokenIs(this.LA(1), SpanClose),
+            DEF: () => this.SUBRULE(this.clause),
+          });
+        },
+      },
+      { ALT: () => this.SUBRULE2(this.clause) },
+    ]);
+  });
+
   public islandUnit = this.RULE("islandUnit", () => {
     this.CONSUME(IslandEdge);
     this.MANY({
@@ -444,7 +479,7 @@ class AgazanSentenceParser extends CstParser {
           GATE: () => spanEdgeOf(this.LA(0)) === "a",
           ALT: () => {
             this.MANY(() => {
-              this.SUBRULE(this.clause);
+              this.SUBRULE(this.quoteClause);
             });
             this.CONSUME(SpanClose);
             // Written `#|`: editorial close `xuxur`, then close-all `xuxum` (spans.md § Editorial close).
@@ -1439,13 +1474,19 @@ function flattenGCoord(cst: CstNode): Unit[] {
   return units;
 }
 
+function buildQuoteClause(cst: CstNode): Clause {
+  const linker = childToken(cst, "Linker");
+  const clause = childNodes(cst, "clause")[0];
+  return { ...(clause ? buildClause(clause) : { units: [] }), ...(linker ? { linker: lexWordFromToken(linker) } : {}) };
+}
+
 function buildSpan(cst: CstNode): SpanUnit {
   const open = childToken(cst, "SpanOpen")!;
   const close = childToken(cst, "SpanClose");
   const atom = childToken(cst, "atom");
   const scoped = childNodes(cst, "scopedUnit");
   const content =
-    scoped.length > 0 ? [finalizeClause(scoped.flatMap(expandUnits))] : childNodes(cst, "clause").map(buildClause);
+    scoped.length > 0 ? [finalizeClause(scoped.flatMap(expandUnits))] : childNodes(cst, "quoteClause").map(buildQuoteClause);
   return {
     open: lexWordFromToken(open),
     content,
@@ -1590,10 +1631,10 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
 
 function buildBodyClause(cst: CstNode, trailingPunct?: IToken): BodyClause {
   const linkerTok = childToken(cst, "Linker") ?? childToken(cst, "crossJoin");
-  const clauseCst = childNodes(cst, "clause")[0]!;
+  const clauseCst = childNodes(cst, "clause")[0];
   return {
     linker: linkerTok ? lexWordFromToken(linkerTok) : undefined,
-    clause: buildClause(clauseCst),
+    clause: clauseCst ? buildClause(clauseCst) : { units: [] },
     punct: trailingPunct ? punctFromToken(trailingPunct) : undefined,
   };
 }

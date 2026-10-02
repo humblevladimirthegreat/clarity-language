@@ -322,6 +322,7 @@ A **period** closes the sentence body in writing, whatever the speech act. Speec
 | Soft statement / soft *yes* / *no* **-m** | Lighter fall; boundary still clear | **`yam`** (implied or written) | **-m** leaves the hold open |
 | `/x/` continue (clause join) | Dip or short pause; **no** full pitch reset | Keep opener speech act; period after the **whole** joined stretch | Dip extends; no jump |
 | `/x/` linker after `.` (`xodum …`) | Dip into the linker; no turn reset | Keep prior speech act; may start a new written sentence under that speech act | Linker glues; still the same act |
+| `/x/` topic word after `.` (`xazawan …`) | Pitch **reset**, no turn reset | Keep prior speech act; a new [topic](pronouns.md#topic) starts | Reset = the subject changed, not the act |
 | **Stand-in** hang | Dip; **no** full pitch reset until the last dependent | Next sentence fills the slot; period after the **whole** stretch | Same hang as `/x/` continue |
 
 **-l** vs **-m** on the act word / *yes* / *no* is how firmly you stand behind it (closed vs soft / open).
@@ -355,11 +356,11 @@ Three linkers also take **-l** for a **firm** link: the link holds with no room 
 >
 > "Alahen isn't sleeping. On the contrary, Alahen is running."
 
-No other root makes a linker. On `/x/`, **-r** is still a [resume](pronouns.md#resume-r) (the same linker again, *likewise*, or an earlier thread), and **-n** is a [titled agenda label](word-endings.md#continue-x).
+No other root makes a linker. Any other `/x/` content word sets the [topic](pronouns.md#topic): **-l** / **-m** / **-n** introduce it (`xazawan` *now, about Azawan*) and **-r** returns to it. **-r** on a linker is still a [resume](pronouns.md#resume-r) (the same linker again, *likewise*).
 
-All of these `/x/` words come only at the **start of a sentence**: only `/y/` turn words or a [fronted discourse hook](hooks.md#discourse-hooks) may come before them. They never follow a [clause join](joins.md#clause-joins), and they never open the sentence after a [stand-in](#dependent-clauses), because that sentence belongs to the dependent.
+All of these `/x/` words, and the topic words, come only at the **start of a sentence**: only `/y/` turn words or a [fronted discourse hook](hooks.md#discourse-hooks) may come before them. They never follow a [clause join](joins.md#clause-joins), and they never open the sentence after a [stand-in](#dependent-clauses), because that sentence belongs to the dependent.
 
-**`xevavem`** also opens a new topic, like English *so, …* at the start of a turn: the talk moves to the next frame.
+**`xevavem`** also opens a new frame, like English *so, …* at the start of a turn: the talk moves on and the [topic](pronouns.md#topic) is cleared.
 
 > `zodogal vowogal. xevavem zazawan varahal.`
 >
@@ -367,7 +368,7 @@ All of these `/x/` words come only at the **start of a sentence**: only `/y/` tu
 >
 > "The dog walks. So, Azawan runs."
 
-**`xavazem`** opens a side topic, like English *by the way, …*. To come back to the main line afterwards, use the resume hook [`or …`](hooks.md#hook-resume) *anyway*.
+**`xavazem`** opens a side topic, like English *by the way, …*, and clears the [topic](pronouns.md#topic) too. To come back to the main line afterwards, use the resume hook [`or …`](hooks.md#hook-resume) *anyway*, and name the old topic again (`xazawar`).
 
 In a new turn with its own act word, the act word comes first and the linker starts the body:
 

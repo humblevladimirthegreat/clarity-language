@@ -1063,7 +1063,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases
 ®️,registered,erehu,,,,registration
 ™️,trademark,edede,claim,trademark claims brand identity; claim is asserting as yours,,brand
 🫟,splatter,azabo,disorder,splatter makes a mess; disorder is the unobservable lack of order,,mess; stain
-#️⃣,hash,aheho,topic,hash marks a topic,,issue; theme; matter; subject
+#️⃣,hash,aheho,topic,hash marks a topic,m.h:as-for,issue; theme; matter; subject
 *️⃣,asterisk,azodo,wildcard,an asterisk stands in for any characters,,
 🔠,upper-case,abevo,,,,
 🔡,lower-case,oloha,casualness,lowercase skips the formality of capitals,,

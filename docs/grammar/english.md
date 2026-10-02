@@ -38,7 +38,7 @@ English *by*, *for*, *about*, *as*, and *against* each cover several jobs. Pick 
 | noun’s purpose (*my gift for relatedness*) | sake **`tho`** on `/ɡ/` | [Motive](sakes.md#sake-preference) |
 | *my* belonging + sake (*my tent serves the physical sake*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](sakes.md#personal-possession) |
 | duration (*for three hours*) | measure phrase | [Measure phrases](numbers-applied.md#measure-phrases) |
-| topic (*as for Azawan*) | **`hahehom`** + `/b/` | [As-for](say-people-places.md#as-for) |
+| frame one sentence (*as for Azawan*) | **`hahehom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 
 ### *'s* / *of* {#of}
 
@@ -59,6 +59,7 @@ English *by*, *for*, *about*, *as*, and *against* each cover several jobs. Pick 
 | English itch | Agazan job | Teach |
 |--------------|------------|-------|
 | regarding / as for (*about Azawan*) | **`hahehom`** + `/b/` | [As-for](say-people-places.md#as-for) |
+| now, about (*now, about Azawan*; *speaking of Azawan*) | `/x/` + the noun: **`xazawan`** | [Topic](pronouns.md#topic) |
 | what was said (*tells that the dog runs*) | **stand-in** **`darl`** (often `/d/`) | [Dependent clauses](dependents.md#dependent-clauses) |
 | approximate amount (*about three*) | number **-m** (`~`) | [Number endings](numbers.md#number-endings) |
 | approximate clock (*around 15:30*) | clock **-m** | [Time](numbers-applied.md#time) |
@@ -77,7 +78,7 @@ English *by*, *for*, *about*, *as*, and *against* each cover several jobs. Pick 
 | equal degree (*as sleepy as*) | equative **`ae`** | [Equatives](comparatives.md#equatives) |
 | falls short (*not as sleepy as*) | reverse rank **`ue`** | [Reverse rank](comparatives.md#intermediate) |
 | most that can be done (*as fast as possible*, *as small as you can*) | ABIL bar **`thezexal`** + tie **`ae`** | [Every bar](comparatives.md#stance-bars) |
-| topic (*as for Azawan*) | **`hahehom`** + `/b/` | [As-for](say-people-places.md#as-for) |
+| frame one sentence (*as for Azawan*) | **`hahehom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 | resemblance (*walks as / like a duck*) | **`humum`** + `/b/` | [Simile](relations.md#similative) |
 | resemblance to an event (*walks the way a duck swims*, *as a hand moves through hair*) | **`humum barl`** + the event | [Simile](relations.md#similative) |
 | pretense (*as if they walk*) | **NOTIONAL** | [Notional](knowing.md#notional) |
@@ -168,6 +169,16 @@ English often makes an adjective from a noun by adding an ending (*gold* → *go
 > z-Azawan | [d-house | g-gold] | v-see
 >
 > "Azawan sees a golden house."
+
+### Topic and talk {#topic-talk}
+
+| English itch | Agazan job | Teach |
+|--------------|------------|-------|
+| *now, about Azawan*, *speaking of Azawan* | `/x/` + the noun: **`xazawan`** | [Topic](pronouns.md#topic) |
+| *back to Azawan*, *as I was saying about Azawan* | `/x/` + whole stem + **-r**: **`xazawar`** | [Return](pronouns.md#topic-return) |
+| *anyway, Azawan …* (after a side topic) | **`or xazawar …`** | [Return](pronouns.md#topic-return), [resume hooks](hooks.md#hook-resume) |
+| *what are we talking about?* | **`yol zar gahehom.`** | [Asking about the topic](pronouns.md#topic-question) |
+| *one*, generic *you*, *people* (in general) | **`ebezan`** | [Generic pronoun](pronouns.md#generic-pronoun) |
 
 ### Greetings {#greetings}
 

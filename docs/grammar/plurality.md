@@ -321,6 +321,10 @@ If the wrong reading would matter, say so. Use **`aha`** or a join for *you and 
 
 For the **address set** (`ehodonx`), count everyone called in this turn’s vocatives, plus anyone still being addressed from before.
 
+### Groups as the topic
+
+A [topic word](pronouns.md#topic-groups) takes **-x** like any noun: `xazawanx` makes *Azawan and associates* the topic, `xodogalx` makes *some dogs* the topic, and `xazawarx` returns to the group. The published [linkers](dependents.md#sentence-linkers) take no **-x**.
+
 ### Verbs (`/v/`) — collective {#verbs-v}
 
 English *they walk* does not say whether it was one shared outing. Put **-x** on the **verb** (after its ending) when the event is **one shared act**. A set subject with a singular verb leaves together vs separately open, except for a counted object (below). Noun **-x** still names **who**; verb **-x** names **how** the doing is structured.

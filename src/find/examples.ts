@@ -34,7 +34,8 @@ function parseExample(text: string, cls: Example["cls"], tables: ClassifyTables)
     const result = parseWithTables(text.trim(), tables, { constructions: true });
     const boundResumes = new Set<LexWord>();
     for (const bind of result.resolve?.anaphors ?? []) {
-      if (bind.antecedent) boundResumes.add(bind.pronoun);
+      // A topic pronoun spells its own root, not a cut of its antecedent's, so it counts as a use.
+      if (bind.antecedent && bind.kind !== "topic") boundResumes.add(bind.pronoun);
     }
     return { words: flattenWords(result, chunksOf(text)), constructions: result.constructions ?? [], boundResumes };
   } catch {

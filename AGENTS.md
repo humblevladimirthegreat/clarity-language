@@ -19,7 +19,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `clause.md` | **Source of truth** for one-clause grammar: role letters, default order, hosting, chaining. Other docs own their subsystems. |
 | `phonology.md` | Phonology, phonotactics, letter names. |
 | `word-endings.md` | Word endings, proper names, titled phrases, citation forms, greetings. |
-| `pronouns.md` | Whole-stem resume, role pointers, ordinal and special pronouns. |
+| `pronouns.md` | Whole-stem resume, role pointers, ordinal, special, generic, and topic pronouns; the discourse topic. |
 | `plurality.md` | Plural, associative, address sets, clusivity, collectives. |
 | `questions.md` | Yes/no and fill questions, polar stance particles. |
 | `speech-moves.md` | Turns, vocatives, interjections, speech acts, the reusable vowel series, tone marks. |

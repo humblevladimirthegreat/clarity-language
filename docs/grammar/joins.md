@@ -765,6 +765,21 @@ To choose, ask whether one member could have the property. If none could, the cl
 
 A [cause or condition](causation.md) on a `zuan` clause is about the kind, not each member: why the kind is the way it is.
 
+#### People in general (`ebezan`) {#generic-neighbors}
+
+English *one*, generic *you*, and *people* sit between the closed and open every-kind joins and the pronouns. The [generic pronoun](pronouns.md#generic-pronoun) `ebezan` is the pronoun-sized form of the open every-kind `zuam gebezal`: a default that tolerates exceptions, not a universal.
+
+| Form | Picks | English |
+|------|-------|---------|
+| `ehodon` | the person actually listening | *you* |
+| `unan` | one unidentified individual who exists | *someone* |
+| `ebezan` | nobody in particular; true of people as a rule, with exceptions | *one*, generic *you* |
+| `zuam gebezal` | people in general, as far as I know | *people in general* |
+| `zual gebezal` | every person, no exceptions | *everyone* |
+| `zuan gebezal` | humankind as a kind | *people* (the species) |
+
+For *everyone, no exceptions*, use `zual gebezal`. As a topic, `xebezan` (*now, about people in general*) makes the [topic pronoun](pronouns.md#topic-pronoun) mean *one*.
+
 ### SHARED after the join
 <a id="scope-fence-p-join"></a>
 

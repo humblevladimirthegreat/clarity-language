@@ -723,7 +723,7 @@ At the front of a sentence, a resume hook points back to an earlier stretch of t
 >
 > "Never mind that: Alahen sleeps."
 
-**Compare with:** `ol …` *Instead* replaces the last claim. `or …` *Anyway* leaves the side topic standing and returns to the main one. To go back to a **person or thing** rather than a line of talk, use a [thread resume](pronouns.md#going-back-to-a-thread) (`xazawar`).
+**Compare with:** `ol …` *Instead* replaces the last claim. `or …` *Anyway* leaves the side topic standing and returns to the main one; it leaves the [topic](pronouns.md#topic) alone too, so after a side topic the full return is `or xazawar …`. To go back to a **person or thing** rather than a line of talk, return to it as the [topic](pronouns.md#topic-return) (`xazawar`), which also makes it the topic again.
 
 ### Parallel chains {#parallel-chains}
 

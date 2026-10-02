@@ -355,6 +355,8 @@ export type Unit =
 export type Clause = {
   units: Unit[];
   dependent?: OdoDependent;
+  /** A topic word opening a clause inside a cite (pronouns.md#topic-quotes); a body's own is on {@link BodyClause}. */
+  linker?: LexWord;
 };
 
 export type BodyClause = {
@@ -395,7 +397,7 @@ export type ParseResult = {
 
 // ── Stage 4 resolve ─────────────────────────────────────────────────────────
 
-export type AnaphorKind = "content" | "span" | "number" | "role" | "pointer" | "ordinal";
+export type AnaphorKind = "content" | "span" | "number" | "role" | "pointer" | "ordinal" | "topic";
 
 export type AnaphorBind = {
   pronoun: LexWord;

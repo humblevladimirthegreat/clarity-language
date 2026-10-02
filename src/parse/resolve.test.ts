@@ -223,6 +223,75 @@ describe("resolve — ordinal pronouns (pronouns.md#ordinal-pronouns)", () => {
   });
 });
 
+describe("resolve — topic (pronouns.md#topic)", () => {
+  function topics(text: string): string[] {
+    return resolveOf(text)
+      .anaphors.filter((a) => a.kind === "topic")
+      .map((a) => `${a.pronoun.raw}→${a.antecedent?.raw}`);
+  }
+  function ordinals(text: string): string[] {
+    return resolveOf(text)
+      .anaphors.filter((a) => a.kind === "ordinal")
+      .map((a) => `${a.pronoun.raw}→${a.antecedent?.raw}`);
+  }
+
+  it("keeps one topic pronoun in every role, and counts only the others", () => {
+    const text = "xazawan zozan dalahen vahahal. zrewor dozan vezebel. zozan varahal.";
+    assert.deepEqual(topics(text), ["zozan→xazawan", "dozan→xazawan", "zozan→xazawan"]);
+    assert.deepEqual(ordinals(text), ["zrewor→dalahen"]);
+  });
+
+  it("takes a kind as the topic, and a name inside the stretch gets no number", () => {
+    assert.deepEqual(topics("xodogal zazawan dozan vahahal. zozan varahal."), ["dozan→xodogal", "zozan→xodogal"]);
+    assert.deepEqual(ordinals("xazawan zazawan vowogal. zalahen varahal. zrewor vehahel."), ["zrewor→zalahen"]);
+  });
+
+  it("is not set by being named first, being the subject, or as for", () => {
+    assert.throws(() => parseText("zazawan vowogal. zozan vehahel."), /topic pronoun/);
+    assert.throws(() => parseText("hahehom bazawan zalahen vowogal. zozan vehahel."), /topic pronoun/);
+  });
+
+  it("holds through as for and a join, and a return restores it after a side topic", () => {
+    assert.deepEqual(topics("xazawan zozan vowogal. hahehom balahen zodogal varahal. zozan vehahel."), ["zozan→xazawan", "zozan→xazawan"]);
+    assert.deepEqual(topics("xazawan zozan vowogal. xavazem zodogal varahal. or xazawar zozan vehahel."), ["zozan→xazawan", "zozan→xazawar"]);
+  });
+
+  it("is cleared by next and by the way, and by a goodbye", () => {
+    assert.throws(() => parseText("xazawan zozan vowogal. xavazem zodogal varahal. zozan vehahel."), /topic pronoun/);
+    assert.throws(() => parseText("xazawan zozan vowogal. xevavem zodogal varahal. zozan vehahel."), /topic pronoun/);
+    assert.throws(() => parseText("azawan. alahen. xazawan zozan vowogal. azawan. alahen. zozan vehahel."), /topic pronoun/);
+  });
+
+  it("restarts the ordinal count and the role pointers at every topic change", () => {
+    assert.throws(() => parseText("zazawan dalahen vahahal. xalahen zrewor vowogal."), /ordinal pronoun/);
+    assert.throws(() => parseText("zazawan vowogal. xalahen zaxar vehahel."), /role pointer/);
+    assert.deepEqual(ordinals("zazawan vowogal. xazawar zalahen varahal. zrewor vehahel."), ["zrewor→zalahen"]);
+  });
+
+  it("starts a new stretch when the current topic is returned to", () => {
+    assert.deepEqual(ordinals("xazawan zalahen vowogal. xazawar zahaben vowogal. zrewor vehahel."), ["zrewor→zahaben"]);
+  });
+
+  it("lets a return to a linker stand as that linker again", () => {
+    const text = "xazawan zalahen vowogal. xodum zahaben vowogal. xodur zrewor vehahel.";
+    assert.deepEqual(ordinals(text), ["zrewor→zalahen"]);
+  });
+
+  it("gives a quote its own topic and count, and lets a resume outside reach in", () => {
+    const text = "xalahen zalahen vezebel daxal xazawan zozan zodogal vowogal xuxul. zozan vehahel.";
+    assert.deepEqual(topics(text), ["zozan→xazawan", "zozan→xalahen"]);
+    assert.deepEqual(ordinals("zalahen vezebel daxal zazawan vowogal xuxul. zrewor vehahel."), ["zrewor→zalahen"]);
+    assert.throws(() => parseText("xalahen zalahen vezebel daxal zozan vowogal xuxul."), /topic pronoun/);
+    assert.equal(resolveOf("zalahen vezebel daxal zazawan vowogal xuxul. xazawar vehahel.").anaphors[0]!.antecedent?.raw, "zazawan");
+  });
+
+  it("takes -x on the topic pronoun, but never on the generic one", () => {
+    assert.deepEqual(topics("xazawan zozanx vowogal."), ["zozanx→xazawan"]);
+    assert.throws(() => parseText("zebezanx vowogal."), /generic pronoun/);
+    assert.deepEqual(ordinals("zebezan vowogal. zazawan vehahel. zrewor vezebal."), ["zrewor→zazawan"]);
+  });
+});
+
 describe("resolve — role anaphors (roles.md)", () => {
   it("binds zaxozowor to the prior conflict verb", () => {
     const { anaphors } = resolveOf("zar dugobon vozowol. zaxozowor vurunul.");

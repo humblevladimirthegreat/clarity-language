@@ -30,7 +30,7 @@ A name you already cite with **-n** (`azawan`) keeps **-n** in the sentence:
 
 The **direct object** is who or what the action is done to. Mark it with `/d/`. The usual order is **Subject – Direct Object – Verb**.
 
-Because the first letter already says each word’s role, you may move those three words without changing who did what. Put first the piece you want to highlight: the person or thing the sentence is “about,” or the new information. English often does that with stress; Agazan can do it with order.
+Because the first letter already says each word’s role, you may move those three words without changing who did what. Put first the piece you want to highlight: the person or thing you want heard first, or the new information. English often does that with stress; Agazan can do it with order.
 
 > `zodogal dagadul vahahal.`
 >
@@ -497,7 +497,7 @@ z-dog | [[w-very | h-like] | b-Azawan] | v-sleep
 
 ### Word order and English emphasis {#word-order-emphasis}
 
-Beginner showed that you may reorder the words of a clause, because the first letters already say who did what. The **first content word** is what you highlight: what the sentence is “about,” or the new information. Opening `/y/` words come before the clause itself and do not count.
+Beginner showed that you may reorder the words of a clause, because the first letters already say who did what. The **first content word** is what you highlight: what you want heard first, or the new information. First position only highlights within one sentence; what the whole talk is about is the [topic](pronouns.md#topic), set by an `/x/` word. Opening `/y/` words come before the clause itself and do not count.
 
 English usually keeps subject–verb–object order and uses extra wording, the passive, or spoken stress for that job. When you translate, keep the same highlight in English. Copy Agazan order into English only when that English is also a natural way to put that piece first (*Hastily, Azawan walks*). Keep a [stand-in](dependents.md#stand-in) `darl` / `barl` last in its slot, and move the other words around it.
 

@@ -385,6 +385,23 @@ Resume **-r** always uses EDGE **`u`** (`daxur`).
 
 EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** takes exact **-l** (`daxul`) or resume **-r** (`daxur`).
 
+### Topics in a quote {#topic-quotes}
+
+A cite is someone else's talk, so a [topic](pronouns.md#topic) never carries into it or out of it. A multi-token cite (EDGE **a**) starts with no topic, counts [ordinals](pronouns.md#ordinal-pronouns) and anchors [role pointers](pronouns.md#role-pointers) from scratch, and may open with a topic word of its own. Its topic ends when the cite does, and your own topic and count come back.
+
+| Span | Topic at the start | Topic words inside | Leaks out? |
+|------|--------------------|--------------------|------------|
+| Cite | none | allowed; the cite's own `/x/` word sets its topic | no |
+| Aside | yours | not allowed | n/a |
+
+> `xalahen zalahen vezebel daxal xazawan zozan vowogal xuxul. zozan vehahel.`
+>
+> x-Alahen | z-Alahen | v-tell | d-CITE.multi[x-Azawan | z-TOPIC | v-walk] . z-TOPIC | v-sit
+>
+> "Now, about Alahen: Alahen said, “Now, about Azawan: Azawan walks.” Alahen sits."
+
+Inside the cite `zozan` is Azawan; after it, `zozan` is Alahen again. A whole-stem **-r** outside a cite can find a word inside it (`xazawar` goes back to the Azawan the cite named), but a **-r** inside a cite cannot find a word outside: the quoted words were said before the surrounding sentence existed.
+
 ### Endings on opens and span pronouns {#endings}
 
 Beginner already used a bare open, **`~`**, **`@`**, and **`[=]`**. Speech puts the same jobs on **-l** / **-m** / **-n** / **-r**.

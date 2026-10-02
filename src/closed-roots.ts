@@ -21,6 +21,9 @@ const CLOSED_ROWS = {
   headphones: { emoji: "🎧", root: "ehodo" },
   handshake: { emoji: "🤝", root: "aha" },
   neutral: { emoji: "😐", root: "una" },
+  // topic pronoun (`zozan`, pronouns.md#topic-pronoun) and generic pronoun (`zebezan`)
+  star: { emoji: "⭐", root: "oza" },
+  person: { emoji: "🧑", root: "ebeza" },
   // the language's own name
   glasses: { emoji: "👓", root: "agaza" },
   // greeting turn (`yeweval`)

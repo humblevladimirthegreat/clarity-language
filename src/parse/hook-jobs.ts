@@ -13,6 +13,7 @@
  * - `frame`: `uem` + a `/th/` stance it holds as the opposing frame (sakes.md#contrary-to-stance).
  */
 import { visitResult, visitUnit } from "./ast-walk.js";
+import { topicEffect } from "./linkers.js";
 import type { LexWord, ParseResult, Unit } from "./types.js";
 
 export type HookJob = "discourse" | "clause" | "extraNoun" | "genitive" | "stray" | "span" | "resume" | "frame";
@@ -89,9 +90,9 @@ function endsInLandmark(units: Unit[], index: number): boolean {
 }
 
 /** `em` + `/b/` belongs to the noun phrase on its left; a plain recipient `/b/` is not one (hooks.md § whose). */
-function genitiveHost(units: Unit[], index: number): "noun" | "recipient" | "none" {
+function genitiveHost(units: Unit[], index: number, afterTopic: boolean): "noun" | "recipient" | "none" {
   const prev = units[index - 1];
-  if (!prev) return "none";
+  if (!prev) return afterTopic && index === 0 ? "noun" : "none";
   switch (prev.kind) {
     case "np":
       if (prev.coord.level !== "b") return "noun";
@@ -109,7 +110,8 @@ function genitiveHost(units: Unit[], index: number): "noun" | "recipient" | "non
   }
 }
 
-function hookJob(units: Unit[], index: number, afterJoin: boolean): HookJob {
+/** `afterTopic`: this clause opens right after a topic word, which is the noun a first hook describes (pronouns.md#topic). */
+function hookJob(units: Unit[], index: number, afterJoin: boolean, afterTopic: boolean): HookJob {
   const unit = units[index];
   if (unit?.kind !== "hook") return "clause";
   if (unit.frame) return "frame";
@@ -120,7 +122,7 @@ function hookJob(units: Unit[], index: number, afterJoin: boolean): HookJob {
 
   let extraNoun = nextIsB && (prevWord?.pos !== "b" || (endsInLandmark(units, index - 1) && !isSpanHook(word, prevWord, nextWord)));
   if (nextIsB && word.family.kind === "hook" && word.family.form === "em") {
-    const host = genitiveHost(units, index);
+    const host = genitiveHost(units, index, afterTopic);
     if (host === "noun") return "genitive";
     // A bare `em bamegun` with nothing else is a citation of the form (*my*), like a lone join word.
     if (host === "none") return units.length === 2 && index === 0 ? "extraNoun" : "stray";
@@ -136,10 +138,11 @@ function hookJob(units: Unit[], index: number, afterJoin: boolean): HookJob {
 /** Give every in-clause hook unit its job. A hook right after a clause join opens that conjunct (discourse glue). */
 export function assignHookJobs(result: ParseResult): void {
   const afterJoin = new WeakSet<object>();
-  const assign = (units: Unit[], clauseAfterJoin: boolean): void => {
+  const afterTopic = new WeakSet<object>();
+  const assign = (units: Unit[], clauseAfterJoin: boolean, clauseAfterTopic: boolean): void => {
     units.forEach((unit, index) => {
       if (unit.kind !== "hook") return;
-      unit.job = hookJob(units, index, index === 0 && clauseAfterJoin);
+      unit.job = hookJob(units, index, index === 0 && clauseAfterJoin, index === 0 && clauseAfterTopic);
       // A genitive, or an extra-noun hook right after a landmark `/b/`, describes what is on its left.
       const prevPos = unitWords(units[index - 1]).filter((w) => w.pos !== "w").at(-1)?.pos;
       if (unit.job === "genitive" || (unit.job === "extraNoun" && prevPos === "b")) unit.onLeft = true;
@@ -147,13 +150,16 @@ export function assignHookJobs(result: ParseResult): void {
   };
   visitResult(result, {
     enter(node) {
+      if (node.kind === "body" && node.body.linker && ["introduce", "return"].includes(topicEffect(node.body.linker))) {
+        afterTopic.add(node.body.clause);
+      }
       if (node.kind === "clauseCoord") {
         node.coord.links.forEach((link, i) => {
           if (link.clause && (node.coord.first || i > 0)) afterJoin.add(link.clause);
         });
       }
-      if (node.kind === "clause") assign(node.clause.units, afterJoin.has(node.clause));
-      if (node.kind === "island") assign(node.island.units, false);
+      if (node.kind === "clause") assign(node.clause.units, afterJoin.has(node.clause), afterTopic.has(node.clause));
+      if (node.kind === "island") assign(node.island.units, false, false);
     },
   });
 }

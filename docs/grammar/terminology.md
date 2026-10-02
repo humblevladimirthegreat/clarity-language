@@ -143,11 +143,11 @@ How many items sit before a join: **list** (2+), **single-item** (1), **standalo
 
 ### As-for
 
-Complex `/h/` + `/b/` (**`hahehom`**) *as for X*.
+Complex `/h/` + `/b/` (**`hahehom`**) *as for X*: a frame for one sentence.
 
 [People, things and places](say-people-places.md#as-for)
 
-**Compare with:** sake [met](#met-unmet-motive-prescription-sakes) / unmet on `/ɡ/` is how a sake stands toward a noun, not *as for*.
+**Compare with:** sake [met](#met-unmet-motive-prescription-sakes) / unmet on `/ɡ/` is how a sake stands toward a noun, not *as for*. *Now, about X* sets the [topic](#topic).
 
 ### Aside
 
@@ -268,7 +268,7 @@ Same-speech-act forward motion.
 
 [Dependents](dependents.md#continue-x)
 
-**Compare with:** a [sentence linker](#sentence-linker) is the *therefore / however* subclass of continue.
+**Compare with:** a [sentence linker](#sentence-linker) is the *therefore / however* subclass of continue, and a [topic](#topic) word is the *now, about X* subclass.
 
 ### Conventional (number **-n**)
 
@@ -583,6 +583,14 @@ Single-item **-m** under question (*How about X?*).
 
 [Questions](questions.md#yes-no-single-item-standalone)
 
+### Generic pronoun
+
+**`ebezan`**: any person, as a rule. English *one*, generic *you*.
+
+[Pronouns](pronouns.md#generic-pronoun)
+
+**Compare with:** `ehodon` is always the person actually listening; `unan` is one unidentified individual.
+
 ### Ordinal pronoun
 
 A rank with **-r** on `/z/`, `/d/`, or `/b/` that names a person by the order names entered the conversation (`zredur`, the second person named).
@@ -756,6 +764,8 @@ Short word in a role slot (`darl` / `barl` / `dorl` / `derl` / `durl`, open **`-
 
 [Pronouns](pronouns.md#special-pronouns)
 
+**Compare with:** the [generic pronoun](#generic-pronoun) and the [topic pronoun](#topic-pronoun) are also marked pronoun rows.
+
 ### Speech act
 
 Utterance setting: statement / question / command / prohibition.
@@ -788,6 +798,26 @@ A proper-name phrase whose **-n** sits on the hook, join, or span; inner words k
 Single-item rank with a number = bound on a line.
 
 [Numbers in use](numbers-applied.md)
+
+### Topic
+
+What the talk is about from here on, set only by an `/x/` word: introduce (`xazawan`), return (`xazawar`), or clear (`xevavem` / `xavazem`).
+
+[Pronouns](pronouns.md#topic)
+
+**Compare with:** [as-for](#as-for) frames one sentence and sets no topic. A [topic stretch](#topic-stretch) restarts the ordinal count.
+
+### Topic pronoun
+
+**`ozan`**: the current topic, in the same form in every role (`zozan` / `dozan` / `bozan`).
+
+[Pronouns](pronouns.md#topic-pronoun)
+
+### Topic stretch
+
+The talk between two topic changes. Each starts the [ordinal](#ordinal-pronoun) count and the [role pointer](#role-pointer) anchors over.
+
+[Pronouns](pronouns.md#topic-resets)
 
 ### Turn (`/y/`)
 

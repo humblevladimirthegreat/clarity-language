@@ -121,7 +121,7 @@ When a proper name is available, prefer that name (and its **-r** resume), inclu
 >
 > "I walk." You name yourself rather than saying *I*.
 
-Use **`amago`** (*speaker*) and **`ehodo`** (*listener*) when what matters is the conversation role, not a name. Both are five letters on purpose, so naming yourself and the other person stays the easier habit.
+Use **`amago`** (*speaker*) and **`ehodo`** (*listener*) when what matters is the conversation role, not a name. **`ehodo`** is always the person actually listening, never *anyone at all*: English generic *you* has its own pronoun, [below](#generic-pronoun). Both are five letters on purpose, so naming yourself and the other person stays the easier habit.
 
 > `zamagon dehodon vahahal.`
 >
@@ -157,8 +157,21 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 | **`ehodon`** | listener in this conversation (`zehodon` / `dehodon` in clause) | *you* | `ehodol` *headphones* | 🎧: the one receiving the sound |
 | **`ahan`** | speaker and addressees together (`zahan` in subject slot) | *we* (you and I) | `ahal` *handshake* | 🤝: sharing the floor together |
 | **`unan`** | nonspecific individual (`zunan` in subject slot) | *someone* | `unal` *neutral* | 😐: not a particular person |
+| **`ebezan`** | any person, as a rule (`zebezan` in subject slot) | *one*, generic *you*, *people* | `ebezal` *person* | 🧑: a person in general |
 
 **Compare with:** *I and my people* / *you all* / *Azawan and associates* use **-x** ([clusivity](plurality.md#clusivity)). Inclusive *you and I* on this page is **`aha`**. *Here* / *there* and *this* / *that* use these same words as a landmark after a place hook ([deixis](hooks.md#deixis)).
+
+### Generic pronoun {#generic-pronoun}
+
+English *one* and generic *you* (*one never knows*, *you feel awful when that happens*) say something about people in general, not about the person listening. Agazan gives that its own pronoun: **`ebeza`** *person* with **-n**, in `/z/`, `/d/`, or `/b/`. It means any person, as a rule, with exceptions allowed. It claims nothing about a particular individual (that is **`una`**) and nothing about the listener (that is **`ehodo`**), so a speaker has to choose between reporting their own experience and making a general claim. (cue: 🧑 is the emoji for a person in general)
+
+> `zebezan vezebal.`
+>
+> z-ONE | v-sleep
+>
+> "One sleeps." / "You sleep."
+
+The generic pronoun takes no number and no **-x**, because it already means people at large. **`ebezal`** *a person* and **`ebezam`** *humanity* keep their own senses. English *they say* is [hearsay](knowing.md#evidentiality), not a generic *they*. Next to the every-kind joins it is the pronoun-sized *people in general* ([joins](joins.md#generic-neighbors)).
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -184,6 +197,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *listener* | `ehodon` | `ehodol` *headphones* | 🎧: the one receiving the sound |
 | *interlocutors* | `ahan` | `ahal` *handshake* | 🤝: sharing the floor together |
 | *someone* | `unan` | `unal` *neutral* | 😐: not a particular person |
+| *one* | `ebezan` | `ebezal` *person* | 🧑: a person in general |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
@@ -265,6 +279,14 @@ z-Azawan | d-Alahen | v-see . z-←patient.same | v-scream
 `zahaben vahahal daxer.`
 
 z-Ahaben | v-see | d-←agent.self
+:::
+
+**11.** *One sees Azawan.*
+
+::: details Show answer
+`zebezan dazawan vahahal.`
+
+z-ONE | d-Azawan | v-see
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
@@ -350,6 +372,15 @@ z-Ahaben | v-cook . z-Alahen | v-pour . z-←agent.other | v-scream
 *Ahaben cooks. Alahen pours. The other one (Ahaben) screams.*
 :::
 
+**10.** `zebezan vezugel.`
+
+::: details Show answer
+
+z-ONE | v-scream
+
+*One screams.* / *People scream.*
+:::
+
 ## Intermediate {#intermediate}
 
 ### How English approximates **-r**
@@ -393,18 +424,6 @@ For English *too* / *also*, resume the action. `/v/` **-r** is *the same action 
 > "Azawan sees a cat. Azawan sees a dog too."
 
 **Compare with:** English *that* pointing at a quoted title, proverb, or aside uses a [span resume](spans.md#endings), not content **-r**.
-
-### Going back to a thread
-
-English *going back to X* / *returning to that thread* names an earlier person or thing without making the next sentence *about* them. Use continue `/x/` plus the whole stem and **-r**. You can drop that word and the following claim is unchanged; it only points the listener at which earlier thread you mean.
-
-> `zazawan vowogal. zalahen varahal. xazawar vezebal.`
->
-> z-Azawan | v-walk . z-Alahen | v-run . x-←Azawan | v-sleep
->
-> "Azawan walks. Alahen runs. Going back to Azawan, Azawan sleeps."
-
-**Not the same job as:** *regarding X* / *as for X* uses `/h/` + `/b/` X ([adverbs](clause.md#adverbs-h)).
 
 ### Cross-role recast
 
@@ -460,7 +479,7 @@ When you address several people at once, English *you* does not say how many. Th
 
 ### Ordinal pronouns {#ordinal-pronouns}
 
-Every person named in a conversation gets a number, in the order they enter the talk: the first name is 1, the next new name is 2, and so on. To point back at someone by that number, write their [rank](numbers.md#ordinals) with **-r** under `/z/`, `/d/`, or `/b/`. `zrewor` is the first person named, as subject. `dredur` is the second, as object. The number belongs to the person, so they keep the same pronoun in every role; only the role letter changes. (cue: **e** ≈ order: the order they joined the talk)
+Every person named in a [topic stretch](#topic-resets) gets a number, in the order they enter the talk: the first name is 1, the next new name is 2, and so on. To point back at someone by that number, write their [rank](numbers.md#ordinals) with **-r** under `/z/`, `/d/`, or `/b/`. `zrewor` is the first person named, as subject. `dredur` is the second, as object. The number belongs to the person, so they keep the same pronoun in every role; only the role letter changes. (cue: **e** ≈ order: the order they joined the talk)
 
 > `zazawan dalahen vahahal. zalahen drewor vezebel. zrewor varahal.`
 >
@@ -470,15 +489,15 @@ Every person named in a conversation gets a number, in the order they enter the 
 
 Who gets a number:
 
-- **Every name.** A word with **-n** takes the next number the first time it appears, in any role. Kinds (**-l** / **-m**) and the [special pronouns](#special-pronouns) take none.
+- **Every name.** A word with **-n** takes the next number the first time it appears, in any role. Kinds (**-l** / **-m**), the [special pronouns](#special-pronouns), and the [topic](#topic-ordinals) take none.
 - **Greetings and calls.** A [greeting](word-endings.md#greeting) (`SELFn.`) gives the greeter a number, and a [call](speech-moves.md#vocative) (`yalahen.`) gives one to the person called. In the usual opening, whoever greets first is 1 and whoever answers is 2.
 - **Groups.** A name with **-x** (`zazawanx`, *Azawan and associates*) takes one number for the whole group.
 - **Once each.** Naming someone again, even much later, keeps the number they already have.
-- **The whole conversation.** Everyone in the conversation shares the count, across turns. A goodbye ends the conversation, and the next one counts from 1 again. Goodbye is your greeting said a second time: once you have greeted, your name said alone again is goodbye.
+- **The whole stretch.** Everyone in the conversation shares the count, across turns, until a [topic change](#topic-resets) starts it over. A goodbye ends the conversation, and the next one counts from 1 again. Goodbye is your greeting said a second time: once you have greeted, your name said alone again is goodbye.
 
 A number with no one at that place yet is not a sentence: after two names, `zrerer` points at nobody.
 
-Because the count is shared, an ordinal means the same person whoever says it. After Azawan and Alahen greet, *2 sees 1* is *Alahen sees Azawan* from either speaker.
+Because the count is shared, an ordinal means the same person whoever says it. After Azawan and Alahen greet, *2 sees 1* is *Alahen sees Azawan* from either speaker. The greeting numbers last until the first topic; after that, use `amago` / `ehodo` or names.
 
 > `azawan. alahen. zredur drewor vahahal.`
 >
@@ -486,7 +505,7 @@ Because the count is shared, an ordinal means the same person whoever says it. A
 >
 > "Azawan." "Alahen." "Alahen sees Azawan." (from Alahen: *I see you*; from Azawan: *you see me*)
 
-**Compare with:** **`amago`** / **`ehodo`** follow the conversation role, so *I* and *you* swap people when the speaker changes. Use them when the role is the point: a name you do not know yet, a reader you have never met, generic *you*, or a whole group you address.
+**Compare with:** **`amago`** / **`ehodo`** follow the conversation role, so *I* and *you* swap people when the speaker changes. Use them when the role is the point: a name you do not know yet, a reader you have never met, or a whole group you address. Generic *you* is [`ebezan`](#generic-pronoun), not `ehodo`.
 
 Add **-x** for that person and associates, as on any name: `zreworx`.
 
@@ -497,6 +516,157 @@ Add **-x** for that person and associates, as on any name: `zreworx`.
 > "Azawan walks. Azawan and associates sleep."
 
 Ordinals are easiest when only a few people are in the talk. When the listener would have to stop and count, say the name.
+
+### Topic {#topic}
+
+English *now, about Azawan…*, *speaking of dogs…*, and *so, back to Azawan…* say what the talk is about from here on, and every later *he* or *it* follows. Agazan makes that overt as a **topic**. It is set only by an `/x/` word at the start of a sentence: `/x/`, then the thing the talk is about, then its ending. Nothing else sets one. Being named first, being the subject, and [*as for*](clause.md#adverbs-h) do not, so a listener or a tool can tell at every point what the topic is.
+
+| Agazan | Use | English |
+|--------|-----|---------|
+| `xazawan` | introduce a person | *now, about Azawan* |
+| `xodogal` | introduce a kind | *now, about a dog* |
+| `xazawar` | return to an earlier topic: whole stem + **-r** | *back to Azawan* |
+| `xevavem` / `xavazem` | clear the topic ([linkers](dependents.md#sentence-linkers)) | *next* / *by the way* |
+
+1. **No topic at the start.** A conversation opens with none.
+2. **Introduce.** An `/x/` word on **-l**, **-m**, or **-n** that is not one of the six linkers makes its noun the topic. The noun keeps its ordinary ending, so the topic need not be a person or a name (`xodogal` *now, about a dog*). It takes the same adjectives and hooks as any noun (`xodogal em bazawan` *now, about Azawan's dog*), and it may stand alone as a whole sentence to announce a topic before saying anything about it.
+3. **Return.** `/x/` + the whole stem of an earlier word + **-r** makes that thing the topic again.
+4. **Clear.** `xevavem` and `xavazem` each open a new frame. After either there is no topic until the next introduce or return.
+5. **Persist.** The topic holds until rule 2, 3, or 4 changes it. Clause joins, other linkers, and agenda numbering leave it alone. A goodbye ends the conversation and clears it.
+6. **Where.** A topic word opens a sentence in your own talk, or in a [quote](#topic-quotes). It never follows a clause join and never sits inside a dependent or an aside.
+
+> `xazawan.`
+>
+> x-Azawan
+>
+> "About Azawan."
+
+**Every return is explicit.** There is one topic, not a stack. Coming back from a side topic, or from a new frame, means naming the old topic again with `xazawar`.
+
+A topic-setting `/x/` word takes a **pitch reset**, as a new `/y/` turn does, but the speech move is unchanged: the listener hears that the subject changed, not that a new act began. Other `/x/` words keep the dip with no reset ([periods](dependents.md#orthography-and-prosody-periods)).
+
+### The topic pronoun {#topic-pronoun}
+
+The topic is referred to with one pronoun: **`oza`** *star* with **-n**, in `/z/`, `/d/`, or `/b/`. It stays the same in every role: `zozan` is the topic as subject, `dozan` as object, `bozan` as extra noun. (cue: ⭐ the star of the talk, what everyone is looking at)
+
+> `xazawan zozan dalahen vahahal. zrewor dozan vezebel. zozan varahal.`
+>
+> x-Azawan | z-TOPIC | d-Alahen | v-see . z-←1st | d-TOPIC | v-tell . z-TOPIC | v-run
+>
+> "Now, about Azawan: Azawan sees Alahen. Alahen tells Azawan. Azawan runs."
+
+A thing works as a topic the same way:
+
+> `xodogal zazawan dozan vahahal. zozan varahal. zrewor vehahel.`
+>
+> x-dog | z-Azawan | d-TOPIC | v-see . z-TOPIC | v-run . z-←1st | v-sit
+>
+> "Now, about a dog: Azawan sees it. It runs. Azawan sits."
+
+With Azawan as the topic, *Azawan sees themself* is `xazawan zozan vahahal dozan.` (`daxer` still works), and *Azawan's dog walks* is `xazawan zodogal em bozan vowogal.`: *the topic's* is the same in every role.
+
+A topic pronoun with no topic set is not a sentence. **`oza`** keeps its ordinary senses on **-l** / **-m** (`zozal` *a star*, `zozam` *fame*), and **-x** adds associates (`zozanx` *the topic and associates*).
+
+*As for* frames one sentence and leaves the topic alone:
+
+> `xazawan zozan vowogal. hahehom balahen zodogal varahal. zozan vehahel.`
+>
+> x-Azawan | z-TOPIC | v-walk . [h-as-for | b-Alahen] | z-dog | v-run . z-TOPIC | v-sit
+>
+> "Now, about Azawan: Azawan walks. As for Alahen, a dog runs. Azawan sits."
+
+A side topic, then an explicit return:
+
+> `xazawan zozan vowogal. xavazem zodogal varahal. xazawar zozan vehahel.`
+>
+> x-Azawan | z-TOPIC | v-walk . x-by-the-way | z-dog | v-run . x-←Azawan | z-TOPIC | v-sit
+>
+> "Now, about Azawan: Azawan walks. By the way, a dog runs. Back to Azawan: Azawan sits."
+
+Without `xazawar`, the last sentence would have no topic and `zozan` would not be a sentence.
+
+### Ordinals count everyone else {#topic-ordinals}
+
+The topic never takes an [ordinal](#ordinal-pronouns), even when it is a name and even when it is named again in its stretch. Other names count from 1 in order of entry. So the topic is always `zozan`, and `zrewor` is always the first *other* person: one form per referent, whether or not the topic is a name.
+
+### What a topic change resets {#topic-resets}
+
+Introduce, return, and clear each start a new **topic stretch**.
+
+| State | Resets? | Why |
+|-------|---------|-----|
+| [Ordinal count](#ordinal-pronouns) | yes | Keeps numbers small. |
+| [Role pointer](#role-pointers) anchors | yes | `zaxar` *the latest doer* and `zaxor` *the other one* never reach into an earlier stretch. Someone from before is picked up by name or whole-stem **-r**. |
+| [Ambient order of magnitude](numbers.md#ambient-magnitude) | yes | A new topic is a new stretch, so bare numbers go back to ones. |
+| Whole-stem **-r** | no | It is the explicit way back (`xazawar`), so it reaches across stretches. |
+| [Tale](knowing.md#evidentiality) now | no | A story moves between characters without leaving the tale. |
+| Agenda numbering (`x#N`, outline depth) | no | Agenda items sit above topics; one item may hold several. |
+| Speech move, line of talk, span resume | no | They track the move and the line of talk, not people. |
+
+`xazawar` while Azawan is already the topic is still a topic change: it starts a new stretch with the same topic. That lets you clear a crowded count (*so, Azawan again*) without leaving the topic.
+
+### Return versus introduce {#topic-return}
+
+Both set the topic. The difference is the ordinary difference between **-r** and a first mention:
+
+| Agazan | Topic | English |
+|--------|-------|---------|
+| `xazawan` | Azawan | *now, about Azawan* (a name picks out the same person either way) |
+| `xazawar` | Azawan, the one mentioned before | *back to Azawan* |
+| `xodogal` | **a** dog, new to the talk | *now, about a dog* |
+| `xodogar` | **the** dog from before | *back to the dog* |
+
+For names, the two pick the same person: choose by what the listener should hear, something new or a way back. For kinds, only the return reaches the earlier thing. A return that resumes a [sentence linker](dependents.md#sentence-linkers) (`xodur` after `xodum`) is only that linker again, and sets no topic.
+
+A return still asserts nothing. It does set the topic, so dropping it changes who `zozan` is, or leaves `zozan` with no topic, which is not a sentence.
+
+> `zazawan vowogal. zalahen varahal. xazawar zozan vehahel.`
+>
+> z-Azawan | v-walk . z-Alahen | v-run . x-←Azawan | z-TOPIC | v-sit
+>
+> "Azawan walks. Alahen runs. Going back to Azawan: Azawan sits."
+
+### Groups as the topic {#topic-groups}
+
+**-x** goes on a topic word like on any noun: `xazawanx` makes *Azawan and associates* the topic, `xodogalx` makes *some dogs* the topic, and `xazawarx` returns to the group. `zozan` then means the group. **-x** on the pronoun (`zozanx`) still adds associates to whatever the topic is.
+
+> `xodogalx zazawan dozan vahahal.`
+>
+> x-dog-x | z-Azawan | d-TOPIC | v-see
+>
+> "Now, about some dogs: Azawan sees them."
+
+### Topic words and dependents {#topic-dependents}
+
+A [dependent](dependents.md#dependent-clauses) is the sentence after a stand-in (`darl`, `dorl`, `derl`, `durl`, `barl`), and it belongs to the outer sentence. A topic word cannot sit inside one: a topic change is your own act on the conversation, and it would be buried in content you do not assert. Change the topic before the outer sentence, or frame one clause with *as for*:
+
+| Want | Use |
+|------|-----|
+| Content about X, in one sentence | `hahehom` + `/b/` *as for* inside the dependent: a frame for that clause only, no reset |
+| Change the topic, then report | the `/x/` word first: `xalahen zazawan vezebel darl zozan vowogal.` *Now, about Alahen: Azawan says that Alahen walks.* |
+| Report someone's own topic change | quote their wording ([quotes](#topic-quotes)) |
+
+Reading the topic from inside a dependent is fine: `zozan`, ordinals, and role pointers inside the content resolve to your current stretch. *Azawan says that the main one runs* means your topic, not Azawan's. A clause join is not a dependent, but it keeps the clauses in one written sentence, so a topic word cannot follow one either: change the topic after a period.
+
+### Quotes and asides {#topic-quotes}
+
+A quote is someone else's talk, so it keeps a topic and an ordinal count of its own, and none of it leaks out; an aside uses your stretch and never changes the topic ([topics in a quote](spans.md#topic-quotes)). For a real side topic, end the sentence and use `xavazem`.
+
+### Me or you as the topic {#topic-participants}
+
+`/x/` takes the speaker or listener like any noun: `xamagon` *now, about me*, `xehodon` *now, about you*. The topic is fixed to that person (or the address set) at the moment it is set, so after `xehodon`, both speakers say `zozan` for the same person. Prefer a name where one is available ([proper name](word-endings.md#proper-name--n)); this makes turning the talk to yourself a visible choice.
+
+### Asking about the topic {#topic-question}
+
+To ask what the talk is about, use the *which X* shape: the join blank `zar` with `gahehom` *topic* shared after it. The natural answer is a lone `/x/` introduce or return, which sets the topic for both speakers.
+
+> `yol zar gahehom.`
+>
+> y-question | [z-who | g-topic]
+>
+> "Which topic?" / "What are we talking about?"
+
+**Compare with:** English *topic* covers several jobs, and Agazan keeps them apart. The discourse topic is `/x/`. A sentence frame is `hahehom` *as for*. The first content word is only a [highlight](clause.md#word-order-emphasis). `&` contrasts one phrase ([tone marks](speech-moves.md#tone-marks)). `zal` / `zem` / `zel` rank among others. Only `/x/` sets the topic.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -520,12 +690,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *red* | `eredal` | | |
 | *see* | `vahahal` | `ahahal` *eye* | 👁️: seeing is what an eye does |
 | *like* | `humum` | `umul` *mirror* | 🪞: the image is of the model |
-| *topic* | `hahehom` | `ahehol` *hash* | #️⃣: a heading mark |
+| *as for* | `hahehom` | `ahehol` *hash* | #️⃣: a heading mark |
 | *scream* | `vezugel` | | |
 | *punch* | `vabahel` | | |
 | *fight* | `vavadal` | | |
 | *interlocutors* | `ahan` | `ahal` *handshake* | 🤝: sharing the floor together |
 | *listener* | `ehodon` | `ehodol` *headphones* | 🎧: the one receiving the sound |
+| *topic* | `ozan` | `ozal` *star* | ⭐: the star of the talk |
+| *by the way* | `xavazem` | `avazel` *fries* | 🍟: a side dish, not the main course |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -574,7 +746,7 @@ z-Alahen | [h-like | b-Azawan] | v-pour . z-Ahaben | h-←like | v-harvest
 ::: details Show answer
 `hahehom bahaben zalahen vabahel.`
 
-[h-topic | b-Ahaben] | z-Alahen | v-punch
+[h-as-for | b-Ahaben] | z-Alahen | v-punch
 :::
 
 **7.** *We (you and I) harvest.*
@@ -599,6 +771,22 @@ z-Azawan-x | v-punch
 `zahaben vobohol. zalahen vegevem. zrewor dredur vahahal.`
 
 z-Ahaben | v-pour . z-Alahen | v-harvest . z-←1st | d-←2nd | v-see
+:::
+
+**10.** *Now, about Azawan: Azawan pours. Alahen harvests. Azawan sees a seedling.*
+
+::: details Show answer
+`xazawan zozan vobohol. zalahen vegevem. zozan duzel vahahal.`
+
+x-Azawan | z-TOPIC | v-pour . z-Alahen | v-harvest . z-TOPIC | d-seedling | v-see
+:::
+
+**11.** *Now, about a flower: Alahen sees it.*
+
+::: details Show answer
+`xavavul zalahen dozan vahahal.`
+
+x-flower | z-Alahen | d-TOPIC | v-see
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
@@ -643,7 +831,7 @@ z-Alahen | v-harvest . z-Azawan | v-pour . x-←Alahen | v-punch
 
 ::: details Show answer
 
-[h-topic | b-Azawan] | z-Ahaben | v-harvest
+[h-as-for | b-Azawan] | z-Ahaben | v-harvest
 
 *As for Azawan, Ahaben harvests.*
 :::
@@ -682,6 +870,15 @@ z-Alahen-x | v-fight
 Azawan . Alahen . z-←1st | d-←2nd | v-see
 
 *"Azawan." "Alahen." Azawan sees Alahen.*
+:::
+
+**10.** `xalahen zalahen vobohol. zahaben vegevem. xavazem zazawan vahahal. xalaher zozan vabahel.`
+
+::: details Show answer
+
+x-Alahen | z-Alahen | v-pour . z-Ahaben | v-harvest . x-by-the-way | z-Azawan | v-see . x-←Alahen | z-TOPIC | v-punch
+
+*Now, about Alahen: Alahen pours. Ahaben harvests. By the way, Azawan sees. Back to Alahen: Alahen punches.*
 :::
 
 ## See also

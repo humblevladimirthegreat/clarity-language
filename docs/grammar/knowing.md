@@ -1156,6 +1156,20 @@ The holder word ends the way a noun for that person would. **-n** is a name. **-
 >
 > "I gather some people think Alahen left."
 
+The holder may be the [topic pronoun](pronouns.md#topic-pronoun), whoever the talk is about now, or the [generic pronoun](pronouns.md#generic-pronoun), the generic view. The generic pronoun takes no **-x**.
+
+> `xazawan thunemozan zalahen vedabal.`
+>
+> x-Azawan | th-INFERRED-TOPIC | z-Alahen | v-departure
+>
+> "Now, about Azawan: I gather Azawan thinks Alahen left."
+
+> `thunemebezan zalahen vedabal.`
+>
+> th-INFERRED-ONE | z-Alahen | v-departure
+>
+> "I gather one would think Alahen left."
+
 **The seam word is yours; the rest of the clause is the holder's.** The host says how **you** stand toward the attribution: you inferred it, heard it, guess it, or are imagining it. You claim nothing about whether the holder is right, and nothing about your own view. Everything else in the clause, wherever it sits, is the holder's:
 
 | In the clause | With no holder | With a holder |

@@ -8,13 +8,15 @@ Recipes for English *as for*, *whose*, *different from*, official titles, and po
 
 **Needs:** [Adverbs](clause.md#adverbs-h) · [Extra nouns](clause.md#extra-nouns)
 
-English *as for X* or *regarding X* names who or what the sentence is about, even when X is not the subject or object. In Agazan, put **`hahehom`** *topic* in `/h/` and X in a hosted `/b/` right after it: `hahehom bazawan` is *as for Azawan*. The rest of the sentence keeps its free order. (cue: #️⃣ *hash*: a hashtag marks what the post is about.)
+English *as for X* or *regarding X* names who or what the sentence is about, even when X is not the subject or object. In Agazan, put **`hahehom`** *as for* in `/h/` and X in a hosted `/b/` right after it: `hahehom bazawan` is *as for Azawan*. The rest of the sentence keeps its free order. (cue: #️⃣ *hash*: a hashtag marks what the post is about.)
 
 > `hahehom bazawan zalahen dagadul vahahal.`
 >
-> [h-topic | b-Azawan] | z-Alahen | d-cat | v-see
+> [h-as-for | b-Azawan] | z-Alahen | d-cat | v-see
 >
 > "As for Azawan, Alahen sees a cat."
+
+**Compare with:** *as for* frames this one sentence and leaves the talk's topic alone. English *now, about Azawan* sets the [topic](pronouns.md#topic) from here on (`xazawan`).
 
 ### Which noun, with resume and kinds
 <a id="which-noun-intermediate"></a>
@@ -685,7 +687,7 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 | `/w/` … `-r` | degree or frame on a property of that entity | *that* degree / frame |
 | `/h/` … `-r` | occasion framed by that entity | *then* / *that way* (framed by that entity) |
 | `/y/` vocative … `-r` | address that entity | vocative |
-| `/x/` … `-r` | discourse thread resume | *Going back to subject X* |
+| `/x/` … `-r` | return: sets the [topic](pronouns.md#topic) again | *Going back to subject X* |
 
 Examples:
 
@@ -741,7 +743,7 @@ Examples:
 | `/w/` … `-r` | frame on an adjective about that doing | that frame |
 | `/h/` … `-r` | manner of acting | *by doing so* / *thereby* / *in that manner of acting* |
 | `/y/` … `-r` | vocative/interjection on that named act | *They did that?!* |
-| `/x/` … `-r` | discourse resume of the doing | *Going back to that (doing / event)* |
+| `/x/` … `-r` | discourse resume of the doing (points back; sets no topic) | *Going back to that (doing / event)* |
 
 Examples:
 
@@ -953,7 +955,7 @@ Examples:
 | Agazan | Use | English |
 |--------|-----|---------|
 | same class (`/y/` or `/x/`) … `-r` | repeat that vocative, interjection, or linker | same call or glue again |
-| `/x/` … `-r` from a content antecedent | discourse thread resume | *Going back to subject X* |
+| `/x/` … `-r` from a noun antecedent | return: sets the [topic](pronouns.md#topic) again | *Going back to subject X* |
 | noun / verb / adjective / adverb … `-r` | recast the named formula or discourse label | ordinary referent (common for `-n` titles) |
 
 Examples:
@@ -1200,7 +1202,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *ticket* | `edegal` |
 | *see* | `vahahal` |
 | *tell* | `vezebel` |
-| *topic* | `hahehom` |
+| *as for* | `hahehom` |
 
 #### English → Agazan {#people-as-for-english-to-agazan}
 

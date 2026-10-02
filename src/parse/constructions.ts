@@ -66,7 +66,9 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "spanUnit.SpanOpen": { anchor: "spans.md#shape", summary: "span open word" },
   "spanUnit.atom": { anchor: "spans.md#shape", summary: "atomic span interior (EDGE o)" },
   "spanUnit.scopedUnit": { anchor: "spans.md#edge", summary: "clause-scoped span interior (EDGE e)" },
-  "spanUnit.clause": { anchor: "spans.md#edge", summary: "multi-clause span interior (EDGE a)" },
+  "spanUnit.quoteClause": { anchor: "spans.md#edge", summary: "multi-clause span interior (EDGE a)" },
+  "quoteClause.Linker": { anchor: "spans.md#topic-quotes", summary: "a topic word opening a clause inside a cite" },
+  "quoteClause.clause": { anchor: "spans.md#edge", summary: "clause inside a cite" },
   "spanUnit.SpanClose": { anchor: "spans.md#shape", summary: "span close word" },
   "spanUnit.closeAll": { anchor: "spans.md#close-forms-complete-editorial-close-all", summary: "editorial close then close-all" },
 
@@ -169,7 +171,7 @@ export const TOKEN_CONSTRUCTIONS: Record<TokenBranch, ConstructionEntry> = {
   force: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "speech-act word" },
   yVocative: { anchor: "speech-moves.md#vocative", summary: "/y/ name (-n), named span, or resume (-r): a vocative" },
   yInterjection: { anchor: "speech-moves.md#interjections-reactions", summary: "/y/ word in -l / -m, or an unnamed span: an interjection" },
-  linker: { anchor: "dependents.md#continue-x", summary: "/x/ content word as a sentence linker" },
+  linker: { anchor: "dependents.md#continue-x", summary: "/x/ content word: a sentence linker, or a topic word" },
   content: { anchor: "phonology.md#word-edges", summary: "content word in its role slot" },
   citationFallback: { anchor: "phonology.md#word-edges", summary: "prefix-less citation read as a noun" },
 };
@@ -247,7 +249,7 @@ export const WORD_MISC_CONSTRUCTIONS = {
 } satisfies Record<string, ConstructionEntry>;
 
 export const RESOLVE_CONSTRUCTIONS: Record<
-  Exclude<`${AnaphorKind}.${"bound" | "unbound"}`, "number.unbound" | "ordinal.unbound" | "pointer.unbound">,
+  Exclude<`${AnaphorKind}.${"bound" | "unbound"}`, "number.unbound" | "ordinal.unbound" | "pointer.unbound" | "topic.unbound">,
   ConstructionEntry
 > = {
   "content.bound": { anchor: "pronouns.md#resume-r", summary: "-r binds an earlier content word" },
@@ -258,6 +260,7 @@ export const RESOLVE_CONSTRUCTIONS: Record<
   "ordinal.bound": { anchor: "pronouns.md#ordinal-pronouns", summary: "ordinal pronoun: a name by order of introduction" },
   "role.bound": { anchor: "roles.md#role-compounds", summary: "role -r binds an earlier role compound" },
   "role.unbound": { anchor: "roles.md#role-compounds", summary: "role -r with no earlier match" },
+  "topic.bound": { anchor: "pronouns.md#topic-pronoun", summary: "topic pronoun: the one the talk is about now" },
   "pointer.bound": { anchor: "pronouns.md#role-pointers", summary: "role pointer binds a participant of an earlier or this predicate" },
 };
 
@@ -571,9 +574,8 @@ export const REJECTIONS = {
   sentenceEndMark: { anchor: "speech-moves.md#tone-marks", summary: "a sentence ends in `.`; `?` / `!` are tone-mark prefixes" },
   toneStack: { anchor: "speech-moves.md#tone-marks", summary: "only ! !! ? ?! % & ; are tone marks; other stacks are not" },
   toneTarget: { anchor: "speech-moves.md#tone-marks", summary: "a tone mark goes before a word, an island open ^, or a span" },
-  unknownLinker: { anchor: "dependents.md#sentence-linkers", summary: "a sentence linker on -l / -m is one of the published linkers" },
-  linkerMidSentence: { anchor: "dependents.md#sentence-linkers", summary: "a sentence linker comes only at the start of a sentence" },
-  pluralOnPos: { anchor: "plurality.md#beginner", summary: "-x is unused on /w/, /h/, /th/, and /x/" },
+  linkerMidSentence: { anchor: "dependents.md#sentence-linkers", summary: "a sentence linker or topic word comes only at the start of a sentence" },
+  pluralOnPos: { anchor: "plurality.md#beginner", summary: "-x is unused on /w/, /h/, /th/, and the published /x/ linkers" },
   pluralInterjection: { anchor: "plurality.md#vocatives-y", summary: "-x on /y/ goes on a vocative (-n / -r), not an interjection" },
   sakeSlot: { anchor: "sakes.md#beginner", summary: "a sake form goes on /ɡ/, /th/, or /w/ only" },
   emotionTail: { anchor: "sakes.md#emotion-compose", summary: "the emotion tail goes on tha / tho / thu and ends in -r / -m / -l" },
@@ -609,6 +611,8 @@ export const REJECTIONS = {
   pointerSlot: { anchor: "pronouns.md#role-pointers", summary: "a role pointer fills /z/, /d/, /b/, or a holder seam's holder slot" },
   pointerOtherRole: { anchor: "pronouns.md#the-other-one", summary: "the other-one pointer (o) takes only the doer, undergoer, or extra party (axor, uxor, oxor)" },
   pointerUnbound: { anchor: "pronouns.md#role-pointers", summary: "a role pointer needs an earlier predicate with that role filled (o: with someone else in it)" },
+  topicUnbound: { anchor: "pronouns.md#topic-pronoun", summary: "the topic pronoun needs a topic set by an /x/ word in the current talk" },
+  genericPlural: { anchor: "pronouns.md#generic-pronoun", summary: "the generic pronoun already means people at large, so it takes no -x" },
   pointerOwnSlot: { anchor: "pronouns.md#themself", summary: "a self pointer (e) names another slot of its own clause, not the one it fills" },
   clauseSingleItem: { anchor: "joins.md#clause-joins", summary: "a clause join goes between two clauses; to deny or focus one clause, put the join on its verb or noun (vul, zal)" },
   leftFence: { anchor: "joins.md#right-close", summary: "a join word closes its conjuncts; it never comes before them" },

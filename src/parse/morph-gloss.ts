@@ -92,6 +92,12 @@ const SPECIAL_PRONOUN: Record<string, string> = {
   [CLOSED.neutral]: "someone",
 };
 
+/** The topic and generic pronouns gloss in capitals on `/z/` `/d/` `/b/` only (glosses.md § Specials). */
+const MARKED_PRONOUN: Record<string, string> = {
+  [CLOSED.star]: "TOPIC",
+  [CLOSED.person]: "ONE",
+};
+
 /** Standalone readings ([joins.md § Beginner forms](../../docs/grammar/joins.md#beginner-forms)). */
 const JOIN_JOB_STANDALONE: Record<string, string> = {
   a: "none",
@@ -1468,6 +1474,7 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
         named: word.ending === "n",
         nameLast: word.ending === "n" && i === all.length - 1,
         pos: word.pos,
+        holder: true,
       }),
     );
     return [host, holder.join("-x-")];
@@ -1576,6 +1583,8 @@ function rootSense(
     sake?: boolean;
     citationEtymology?: boolean;
     pos?: Pos;
+    /** A holder seam's name: a noun for that person, so a marked pronoun glosses as one. */
+    holder?: boolean;
   } = {},
 ): string {
   if (opts.citationEtymology) {
@@ -1597,6 +1606,9 @@ function rootSense(
   if (root === CLOSED.microphone && ending !== "m") {
     return ending === "l" ? "microphone" : "speaker";
   }
+
+  const nounSlot = opts.holder || opts.pos === undefined || opts.pos === "z" || opts.pos === "d" || opts.pos === "b";
+  if (ending === "n" && nounSlot && MARKED_PRONOUN[root]) return MARKED_PRONOUN[root]!;
 
   if (ending === "n" || opts.named) {
     if (HOUSE_CAST[root]) return HOUSE_CAST[root]!;

@@ -165,6 +165,7 @@ function visitBody(body: BodyClause, v: Visitor): void {
 export function visitClause(clause: Clause, v: Visitor): void {
   const node: AstNode = { kind: "clause", clause };
   if (v.enter?.(node) === SKIP) return;
+  if (clause.linker) v.word?.(clause.linker, "linker");
   for (const unit of clause.units) visitUnit(unit, v);
   if (clause.dependent) {
     v.word?.(clause.dependent.orodo, "orodo");
