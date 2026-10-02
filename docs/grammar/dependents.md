@@ -328,38 +328,54 @@ A **period** closes the sentence body in writing, whatever the speech act. Speec
 
 ### Sentence linkers {#sentence-linkers}
 
-These words glue one finished sentence to the next (one-way; default ending **-l** is closed). Beginner already used *therefore*.
+These words glue one finished sentence to the next (one-way). They are a fixed set of six `/x/` words. Each one means its root's **abstract** sense, so it ends in **-m**. Beginner already used *therefore*.
 
-| English | Agazan | Same root as | Cue | Example |
-|---------|--------|--------------|-----|---------|
-| *therefore* | **`xodum`** | `odul` *east* | ➡️: the sun’s path, so the talk moves on | `xodum` |
-| *however* | **`xezol`** | `ezol` *zebra* | 🦓: two stripes, still one animal | `xezol` |
-| *meanwhile* | **`xagagal`** | `agagal` *mantel-clock* | 🕰️: time passing beside the last claim | `xagagal` |
-| *next* | **`xevavel`** | `evavel` *film* | 🎞️: the following frame | `xevavel` |
-| *but* | **`xagezal`** | `agezal` *construction* | 🚧: the expected path is blocked | `xagezal` |
-| *by the way* | **`xavazel`** | `avazel` *accessory* | 🍟: a side dish, not the main course | `xavazel` |
+| English | Agazan | Abstract of | Cue | Example |
+|---------|--------|-------------|-----|---------|
+| *therefore* | **`xodum`** | `odum` *progress* | ➡️: the sun’s path, so the talk moves on | `xodum` |
+| *however* | **`xezom`** | `ezom` *contrast* | 🦓: two stripes, still one animal | `xezom` |
+| *meanwhile* | **`xagagam`** | `agagam` *passage* | 🕰️: time passing beside the last claim | `xagagam` |
+| *next* | **`xevavem`** | `evavem` *sequence* | 🎞️: the following frame | `xevavem` |
+| *but* | **`xagezam`** | `agezam` *blockage* | 🚧: the expected path is blocked | `xagezam` |
+| *by the way* | **`xavazem`** | `avazem` *accessory* | 🍟: a side dish, not the main course | `xavazem` |
 
 *therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Those same roots keep their ordinary content readings under other role letters.
 
-**`xevavel`** also opens a new topic, like English *so, …* at the start of a turn: the talk moves to the next frame.
+Three linkers also take **-l** for a **firm** link: the link holds with no room for doubt, on the same strong-to-light scale as other endings. (cue: **l** ≈ locked)
 
-> `zodogal vowogal. xevavel zazawan varahal.`
+| Agazan | Use | English |
+|--------|-----|---------|
+| **`xodul`** | the next claim follows necessarily | *it follows that* / *necessarily, then* |
+| **`xezol`** | the contrast stands whatever the last claim said | *nevertheless* / *even so* |
+| **`xagezal`** | the last claim is blocked outright; the next claim replaces it | *on the contrary* |
+
+> `zalahen vezebal vul. xagezal zalahen varahal.`
+>
+> z-Alahen | [v-sleep | v-not] . x-on-the-contrary | z-Alahen | v-run
+>
+> "Alahen isn't sleeping. On the contrary, Alahen is running."
+
+No other root makes a linker. On `/x/`, **-r** is still a [resume](pronouns.md#resume-r) (the same linker again, *likewise*, or an earlier thread), and **-n** is a [titled agenda label](word-endings.md#continue-x).
+
+**`xevavem`** also opens a new topic, like English *so, …* at the start of a turn: the talk moves to the next frame.
+
+> `zodogal vowogal. xevavem zazawan varahal.`
 >
 > z-dog | v-walk . x-next | z-Azawan | v-run
 >
 > "The dog walks. So, Azawan runs."
 
-**`xavazel`** opens a side topic, like English *by the way, …*. To come back to the main line afterwards, use the resume hook [`or …`](hooks.md#hook-resume) *anyway*.
+**`xavazem`** opens a side topic, like English *by the way, …*. To come back to the main line afterwards, use the resume hook [`or …`](hooks.md#hook-resume) *anyway*.
 
 In a new turn with its own act word, the act word comes first and the linker starts the body:
 
-> `yom xevavel zehodon vowogal.`
+> `yom xevavem zehodon vowogal.`
 >
 > y-soft-question | x-next | z-listener | v-walk
 >
 > "So, do you want to walk?"
 
-> `yol xavazel zehodon vewal.`
+> `yol xavazem zehodon vewal.`
 >
 > y-question | x-by-the-way | z-listener | v-hear
 >
@@ -381,7 +397,7 @@ In a new turn with its own act word, the act word comes first and the linker sta
 >
 > "Azawan walks so hastily that Alahen sits."
 
-**Compare with:** *although* / *while* attach a dependent after **`barl`** (`hezom barl`, `huwem barl` — [dependent clauses](#dependent-clauses)). *Despite Alahen* is the same pole with a noun in `/b/` (`hezom balahen`). *So that Alahen sits* is **`hogom barl`**. Discourse **`xezol`** / **`xagagal`** / **`xodum`** glue a finished sentence to the next one.
+**Compare with:** *although* / *while* attach a dependent after **`barl`** (`hezom barl`, `huwem barl` — [dependent clauses](#dependent-clauses)). *Despite Alahen* is the same pole with a noun in `/b/` (`hezom balahen`). *So that Alahen sits* is **`hogom barl`**. Discourse **`xezom`** / **`xagagam`** / **`xodum`** glue a finished sentence to the next one.
 
 ### Stand-in vowels (`-rl` / `-rm`) {#stand-in}
 <a id="clause-member"></a>
@@ -523,16 +539,17 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *to-clause* | `derl` |
 | *lest-clause* | `durl` |
 | *that-same-claim* | `darth` |
-| *next* | `xevavel` |
-| *however* | `xezol` |
-| *meanwhile* | `xagagal` |
+| *next* | `xevavem` |
+| *however* | `xezom` |
+| *meanwhile* | `xagagam` |
+| *nevertheless* | `xezol` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *Azawan sits. Next Alahen runs.*
 
 ::: details Show answer
-`zazawan vehahel. xevavel zalahen varahal.`
+`zazawan vehahel. xevavem zalahen varahal.`
 
 z-Azawan | v-sit . x-next | z-Alahen | v-run
 :::
@@ -561,9 +578,17 @@ z-Alahen | v-run . z-Ahaben | v-tell | d-that-same-claim
 z-Ahaben | [d-luggage | [g-before | b-departure]] | v-see
 :::
 
+**5.** *Alahen sneaks. Nevertheless, Azawan sits.*
+
+::: details Show answer
+`zalahen vezevul. xezol zazawan vehahel.`
+
+z-Alahen | v-sneak . x-nevertheless | z-Azawan | v-sit
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zahaben vehahel. xagagal zalahen dalagel vahahal.`
+**1.** `zahaben vehahel. xagagam zalahen dalagel vahahal.`
 
 ::: details Show answer
 
@@ -572,7 +597,7 @@ z-Ahaben | v-sit . x-meanwhile | z-Alahen | d-luggage | v-see
 *Ahaben sits. Meanwhile Alahen sees luggage.*
 :::
 
-**2.** `zalahen vezevul. xezol zazawan varahal.`
+**2.** `zalahen vezevul. xezom zazawan varahal.`
 
 ::: details Show answer
 

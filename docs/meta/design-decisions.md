@@ -150,6 +150,12 @@ Do not re-raise these as gaps or inconsistencies. An English job that only an om
 - **The kind itself is `zuan` + SHARED kind**, not a new fence. The join series is closed, and standalone `zuan` + SHARED `/ɡ/` was the only unread spelling in the `ua` family. **-n** fits: it names one individual, as on a person or a titled bundle. Rejected: `zalebam` + kind (the label or category, not the lineage: *the cat category was domesticated* is wrong), **-n** on the kind root (`zagadun` is a creature named Cat), **-nx** (a named team), and recipes alone (*domesticated*, *invented*, *evolved* do not reduce to claims about members). With items before it, `…uan` stays a named bundle.
 - **A resume of the kind inside the `barl` sentence is the same member, one at a time** (`zual gagadul vezebal thoyem barl zagar gezebul.` *every cat sleeps if it is sleepy*). The parser reads the resume as an ordinary `-r`; the bound reading is semantic.
 
+## Closed-root endings
+
+- **Linkers are a closed set of six** (`xodum` *therefore*, `xezom` *however*, `xagagam` *meanwhile*, `xevavem` *next*, `xagezam` *but*, `xavazem` *by the way*). Each means its root's abstract sense, so the default is **-m**. Firm **-l** exists only where it reads (`xodul` *it follows that*, `xezol` *nevertheless*, `xagezal` *on the contrary*). Any other `/x/` content root on **-l** / **-m** at a sentence start is rejected; **-r** (resume) and **-n** (agenda label) stay open to every root.
+- **-r on a closed root:** when the family defines its own **-r** (a strong-to-light grade, or the `because` share), **-r** is that meaning and never a resume. Every other closed root resumes with **-r** like content (`thoyer` *in that case*), so giving such a family an **-r** grade would take away a live reading.
+- **-n on a mood root is an ordinary proper name.** There is no named-mood overlay; `lexicon-overlays.csv` lists no **-n** mood rows.
+
 ## Consistency audit
 
 - Hosted `/b/` right after any `/ɡ/`, `/h/`, or `/th/` word is structural; a recipient there is a speaker error, not a second reading.

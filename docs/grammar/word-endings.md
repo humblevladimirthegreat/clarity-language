@@ -325,7 +325,7 @@ Beginner used **-n** as a name on cited roots and on content words. On `/x/`, th
 
 | Agazan | Use | English |
 |--------|-----|---------|
-| linker + **-l** / **-m** | glue one finished sentence to the next | *but*, *therefore*, … |
+| one of six linkers + **-m** (firm **-l** on three) | glue one finished sentence to the next | *but*, *therefore*, … ([linkers](dependents.md#sentence-linkers)) |
 | other `/x/` root + **-n** | titled agenda / section label | thread shift (*let’s now talk about X*) |
 | clause join + **-n** | **sequence** | *and then* **`xan`**, … ([joins](joins.md)) |
 

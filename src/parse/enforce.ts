@@ -11,6 +11,7 @@ import type { IToken } from "chevrotain";
 import type { ClassifyTables } from "./classify.js";
 import { ARROW_ROOTS, isAsOfOverlay, isBarStance, isFrameStance, isGroundsChannel, isStandIn } from "./classify.js";
 import { REJECTIONS, type RejectionId } from "./constructions.js";
+import { linkerEnglish } from "./linkers.js";
 import { SentenceParseError } from "./sentence-parser.js";
 import {
   Bang,
@@ -216,6 +217,10 @@ function enforceRespectively(units: Unit[]): void {
 }
 
 function enforceWord(word: LexWord, tables: ClassifyTables): void {
+  // Linkers are a closed set; **-r** (resume) and **-n** (agenda label) stay open (dependents.md#sentence-linkers).
+  if (classifyTokenBranch(word).branch === "linker" && (word.ending === "l" || word.ending === "m") && !linkerEnglish(word)) {
+    throw new ConstructionError("unknownLinker", word.raw);
+  }
   // A holder names people, so it takes -x like any noun (`thodumazawanx`, knowing.md#holder).
   const holder = word.family.kind === "x" && word.family.xFamily === "holder";
   if (word.plural && word.pos && NO_PLURAL_POS.has(word.pos) && !holder) {

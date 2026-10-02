@@ -659,8 +659,8 @@ describe("parse — spans.md /y/ spans", () => {
   });
 
   it("takes a sentence linker after a spoken /y/ span, as after a written one", () => {
-    for (const text of ["y@<Sam> xezol zazawan vowogal.", "yuxan sam xuxul xezol zazawan vowogal.", "yuxon sam xezol zazawan vowogal."]) {
-      assert.equal(parseText(text).utterances[0]!.bodies[0]!.linker?.raw, "xezol", text);
+    for (const text of ["y@<Sam> xezom zazawan vowogal.", "yuxan sam xuxul xezom zazawan vowogal.", "yuxon sam xezom zazawan vowogal."]) {
+      assert.equal(parseText(text).utterances[0]!.bodies[0]!.linker?.raw, "xezom", text);
     }
   });
 

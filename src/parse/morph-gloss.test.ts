@@ -268,9 +268,25 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
   it("resume with in-text antecedent", () => {
     expectLine(
-      "yohuxazovan. xezol zohur thevom zerehel.",
+      "yohuxazovan. xezom zohur thevom zerehel.",
       "y-Ohu-x-Azovan . x-however | z-←Ohu-x-Azovan | th-WITNESSED | z-rain",
     );
+  });
+});
+
+describe("morphGlossLine — act -r and linker endings", () => {
+  it("act words with -r are just formed or for now", () => {
+    expectLine("yar zazawan vowogal.", "y-first-take | z-Azawan | v-walk");
+    expectLine("yor zazawan vowogal.", "y-passing-question | z-Azawan | v-walk");
+    expectLine("yer vowogal.", "y-command-for-now | v-walk");
+    expectLine("yur vowogal.", "y-hold-off | v-walk");
+  });
+
+  it("linkers default to -m; -l is the firm link where taught", () => {
+    expectLine("xezom zazawan vowogal.", "x-however | z-Azawan | v-walk");
+    expectLine("xezol zazawan vowogal.", "x-nevertheless | z-Azawan | v-walk");
+    expectLine("xodul zazawan vowogal.", "x-it-follows | z-Azawan | v-walk");
+    expectLine("xagezal zazawan vowogal.", "x-on-the-contrary | z-Azawan | v-walk");
   });
 });
 

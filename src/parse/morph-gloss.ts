@@ -10,6 +10,7 @@
  * | `zur` fill-ask | `z-who-else` | |
  * | `thar` / `thur` fill-ask | `th-why` / `th-why-else` | stance grounds |
  * | `yol` / `yom` / `yam` / `yem` / `yum` | `y-question` / `y-soft-question` / `y-soft-statement` / `y-request` / `y-soft-prohibition` | `-m` act words |
+ * | `yar` / `yor` / `yer` / `yur` | `y-first-take` / `y-passing-question` / `y-command-for-now` / `y-hold-off` | `-r` act words |
  * | `zam` / `zal` | `z-and.open` / `z-and` | open vs closed |
  * | `al` left-edge | `additionally` | isolated word too |
  * | `al` in-clause | `including` | |
@@ -32,6 +33,7 @@ import { JOIN_SERIES, resumeCut } from "./series.js";
 import { classifyAll, overlayKey, type ClassifyTables } from "./classify.js";
 import type { PublishedRow } from "../lexicon-search.js";
 import { CLOSED, namedEnglish } from "../closed-roots.js";
+import { linkerEnglish } from "./linkers.js";
 import {
   buildGlossTree,
   renderGlossNodes,
@@ -114,16 +116,6 @@ const SPECIAL_PRONOUN: Record<string, string> = {
   [CLOSED.headphones]: "listener",
   [CLOSED.handshake]: "interlocutors",
   [CLOSED.neutral]: "someone",
-};
-
-/** `/x/` linkers keyed by root + ending (*therefore* = east **-m**, *however* = zebra **-l**). */
-const LINKER_ENGLISH: Record<string, string> = {
-  [`${CLOSED.east}m`]: "therefore",
-  [`${CLOSED.zebra}l`]: "however",
-  [`${CLOSED.clock}l`]: "meanwhile",
-  [`${CLOSED.film}l`]: "next",
-  [`${CLOSED.construction}l`]: "but",
-  [`${CLOSED.fries}l`]: "by-the-way",
 };
 
 /** Standalone readings ([joins.md § Beginner forms](../../docs/grammar/joins.md#beginner-forms)). */
@@ -244,6 +236,14 @@ const FORCE_JOB_SOFT: Record<string, string> = {
   o: "soft-question",
   e: "request",
   u: "soft-prohibition",
+};
+
+/** Act words with **-r**: an act just formed, or for now (speech-moves.md § Speech act: firm and soft). */
+const FORCE_JOB_FRESH: Record<string, string> = {
+  a: "first-take",
+  o: "passing-question",
+  e: "command-for-now",
+  u: "hold-off",
 };
 
 const POLAR_JOB: Record<string, string> = {
@@ -1159,6 +1159,7 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
   if (word.pos === "y") {
     if (series.length === 1) {
       if (ending === "m") return FORCE_JOB_SOFT[series] ?? FORCE_JOB[series] ?? series;
+      if (ending === "r") return FORCE_JOB_FRESH[series] ?? FORCE_JOB[series] ?? series;
       return FORCE_JOB[series] ?? series;
     }
     const polar = POLAR_JOB[series];
@@ -1546,9 +1547,8 @@ function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): st
       word.rootGloss?.concrete || word.rootGloss?.abstract || word.hookCompound.stem,
     );
   }
-  if (word.pos === "x" && roots.length === 1 && LINKER_ENGLISH[roots[0]! + word.ending]) {
-    return LINKER_ENGLISH[roots[0]! + word.ending]!;
-  }
+  const linker = linkerEnglish(word);
+  if (linker) return linker;
   if (word.pos === "y" && word.ending === "l" && roots.length === 1 && roots[0] === CLOSED.wave) return "greeting";
   if (roots.length === 1) {
     return rootSense(roots[0]!, word.ending, tables, {

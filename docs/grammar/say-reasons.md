@@ -20,12 +20,12 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 | *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xodum`** ([continue](dependents.md#continue-x)) |
 | *thus* (*in this way*) | the same adverb again: `/h/` with **-r** ([how English approximates -r](pronouns.md#how-english-approximates-r)) |
 | *due to* / *owing to* / *because of* (NP) | **`thevem`** + `/b/` **noun** (`thevem berehel`) |
-| *however* / *meanwhile* (discourse) | **`xezol`** / **`xagagal`** |
+| *however* / *meanwhile* (discourse) | **`xezom`** / **`xagagam`** |
 | *regardless of* (NP) | same **`hezom`** + `/b/` **noun** as *despite* |
 | *anyway* / *anyhow* (back to the main line) | the resume hook **`or …`** ([point back](hooks.md#hook-resume)) |
 | *otherwise* / *or else* (failing that) | **`xon`** between the clauses ([clause sequence](join-across-roles.md#clause-sequence)) |
-| *nevertheless* / *nonetheless* (discourse) | **`xezol`** after the finished claim; inside one sentence, **`hezom barl`** |
-| *whereas* (two claims set against each other) | **`xezol`** before the second claim, or **`hezom barl`** inside one sentence |
+| *nevertheless* / *nonetheless* (discourse) | **`xezom`** after the finished claim; inside one sentence, **`hezom barl`** |
+| *whereas* (two claims set against each other) | **`xezom`** before the second claim, or **`hezom barl`** inside one sentence |
 | *moreover* / *furthermore* (discourse) | **`ael …`** opens the sentence that goes further; **`al …`** adds a separate point ([stacked discourse hooks](hooks.md#stacked-discourse)) |
 
 ### Obviously, apparently, perhaps, guess, assume {#stance-adverbs}

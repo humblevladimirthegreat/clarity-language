@@ -128,6 +128,26 @@ Source: [predication.md](../grammar/predication.md)
 |------|--------|
 | **`gugon`** / **`gugor`** (SAME with **-n** / **-r**) | Undefined — only **-l** / **-m** are taught |
 
+## Closed-root endings
+
+Source: [causation.md](../grammar/causation.md#poles), [relations.md](../grammar/relations.md), [dependents.md](../grammar/dependents.md#dependent-clauses). Cells with a candidate reading are logged in [extension-results](extension-results.md), not here.
+
+- Clause-pole **-r** as a grade on *iff* (`eda`), *although* (`ezo`), *while* (`uwe`), *before* (`aba`), *after* (`enu`), *until* / *by* (`oma`), and the result pole (`odu`): no reading (the ordinary resume reading stays)
+- Clause-pole **-l** beyond *because* (`thevel`) and *by* (`omal`), other than *if*: no reading
+- **-l** on exchange (`ehe`), proxy (`ade`), the of-relations, the locatives, stimulus (`obu`), and *respectively* (`aze`): no reading (**-r** is the ordinary resume)
+
+## Sentence linkers (`/x/`)
+
+Source: [dependents.md](../grammar/dependents.md#sentence-linkers)
+
+- Firm **-l** on *meanwhile* (`xagagal`), *next* (`xevavel`), and *by the way* (`xavazel`): no reading (the parser rejects them)
+
+## Turn words (`/y/`)
+
+Source: [speech-moves.md](../grammar/speech-moves.md#speech-act), [questions.md](../grammar/questions.md#polar-endings)
+
+- Act and polar series with **-n** (`yan` / `yon` / `yen` / `yun`, `yaen` / …): no reading. On `/y/`, **-n** calls someone, and there is no named-formula interjection.
+
 ## Spans
 
 Source: [spans.md](../grammar/spans.md), [x-compounds.md](../grammar/x-compounds.md)
@@ -164,6 +184,6 @@ Source: [phonology.md](../grammar/phonology.md)
 | Page | Role |
 |------|------|
 | [grammar-docs.md](grammar-docs.md) | Grammar prose — unused slots do not earn a stage |
-| [grammar-gaps.md](grammar-gaps.md) | Missing **jobs** (English helpers); this page is unused **forms** |
+| [design-decisions.md](design-decisions.md) | Settled readings and deliberate omissions; this page is unused **forms** |
 | [drill-generation.md](drill-generation.md) | Do not drill cells listed here |
 | [TODO.md](../../TODO.md) | Rejected / speculative features, open lexicon |

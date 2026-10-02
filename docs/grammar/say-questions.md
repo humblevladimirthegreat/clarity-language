@@ -90,15 +90,15 @@ To say the feeling **makes sense**, put your own stance in the main sentence and
 
 **Needs:** [Polar stance](questions.md#polar-stance) · [Sentence linkers](dependents.md#sentence-linkers)
 
-English *admittedly*, *granted* and *that's true, but* concede a point before pushing back. Open with **`yael`** (*true*): before a body it concedes that body, and alone it concedes what was just said. Then push back with **`xagezal`** (*but*).
+English *admittedly*, *granted* and *that's true, but* concede a point before pushing back. Open with **`yael`** (*true*): before a body it concedes that body, and alone it concedes what was just said. Then push back with **`xagezam`** (*but*).
 
-> `yael zazawan vowogal. xagezal zalahen vehahel.`
+> `yael zazawan vowogal. xagezam zalahen vehahel.`
 >
 > y-yes | z-Azawan | v-walk . x-but | z-Alahen | v-sit
 >
 > "Admittedly, Azawan walks. But Alahen sits."
 
-> `zazawan vowogal. yael. xagezal zalahen vehahel.`
+> `zazawan vowogal. yael. xagezam zalahen vehahel.`
 >
 > z-Azawan | v-walk . y-yes . x-but | z-Alahen | v-sit
 >

@@ -148,7 +148,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 You already write whether a turn is a statement, question, command, or prohibition. The extra choice here is **how firmly** you mean it.
 
-The act word is **`y` + vowel + ending**. The vowel sets the act (**a** statement, **o** question, **e** command, **u** prohibition). **-l** stands behind the act; **-m** leaves it open (soft / offered). Write the act word when the setting is not a default statement. A period still lets you omit **`yal`**.
+The act word is **`y` + vowel + ending**. The vowel sets the act (**a** statement, **o** question, **e** command, **u** prohibition). **-l** stands behind the act; **-m** leaves it open (soft / offered); **-r** marks an act you have [just formed](#act-r) or mean only for now. Write the act word when the setting is not a default statement. A period still lets you omit **`yal`**.
 
 > `yam zazawan vowogal.`
 >
@@ -184,6 +184,29 @@ For *let's*, make a soft request with inclusive *we*, **`aha`** ([special pronou
 > "Let's not sleep."
 
 A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/y/` words, immediately before the act word, or before a body that defaults to a statement.
+
+#### Just formed or for now (**-r**) {#act-r}
+
+**-r** marks an act you **just formed** or mean only **for now**, the same as **-r** on a [polar stance](questions.md#polar-endings): a first take you have not checked, or a move you expect to revisit.
+
+| Agazan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **yar** | **first-take statement**: said as you think it, not yet checked | *off the top of my head* / *at first glance* | **a** add + **-r**: a claim just formed |
+| **yor** | **passing question**: it just occurred to you | *wait, …?* / *quick question* | **o** menu + **-r**: an ask that just came up |
+| **yer** | **command for now**: do this until told otherwise | *for now, …* / *go ahead and … for now* | **e** order + **-r**: an instruction you expect to revisit |
+| **yur** | **hold off**: don't, for now | *hold off on …* / *don't … yet* | **u** undo + **-r**: take the action back, for now |
+
+> `yur vowogal.`
+>
+> y-hold-off | v-walk
+>
+> "Hold off on walking for now."
+
+> `yar zazawan vowogal.`
+>
+> y-first-take | z-Azawan | v-walk
+>
+> "Off the top of my head, Azawan walks."
 
 ### Emphatic prohibition {#emphatic-prohibition}
 
@@ -392,6 +415,14 @@ z-Azawan | v-see | &d-trumpet
 ?! | z-Ahaben | v-sneak
 :::
 
+**9.** *Hold off on sneaking for now.*
+
+::: details Show answer
+`yur vezevul.`
+
+y-hold-off | v-sneak
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `yam zazawan vehahel.`
@@ -464,6 +495,15 @@ y-request | b-Ahaben | v-tell
 y-request | !v-stand
 
 *Please, stand!*
+:::
+
+**9.** `yar zahaben vazadol.`
+
+::: details Show answer
+
+y-first-take | z-Ahaben | v-stand
+
+*Off the top of my head, Ahaben stands.*
 :::
 
 ## See also

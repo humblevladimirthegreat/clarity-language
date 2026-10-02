@@ -34,12 +34,13 @@ describe("eligibleNames", () => {
     const reason = (root: string) => nameBanReason(rows.find((row) => row.root === root)!, overlays);
     const roles = [CLOSED.microphone, CLOSED.headphones, CLOSED.handshake, CLOSED.neutral];
     const cast = [CLOSED.swan, CLOSED.lion, CLOSED.hibiscus];
-    // DECISION (✅) and MAY (💭) + **-n** are grammar words.
-    for (const root of [...roles, ...cast, CLOSED.glasses, rootOf("✅"), rootOf("💭")]) {
+    for (const root of [...roles, ...cast, CLOSED.glasses]) {
       assert.equal(eligibleRoots.has(root), false, root);
       assert.ok(reason(root), root);
     }
     assert.match(reason(CLOSED.lion)!, /Alahen/);
+    // **-n** on a mood root (DECISION ✅, MAY 💭) is an ordinary proper name, so these stay eligible.
+    for (const root of [rootOf("✅"), rootOf("💭")]) assert.equal(eligibleRoots.has(root), true, root);
     const flag = rows.find((row) => /[\u{1F1E6}-\u{1F1FF}]/u.test(row.emoji))!;
     assert.match(nameBanReason(flag, overlays)!, /country/);
   });

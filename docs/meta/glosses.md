@@ -427,7 +427,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Metaphor vs overlay vs literal
 
-> `xezol zabur thevom zerehel.`
+> `xezom zabur thevom zerehel.`
 >
 > x-however | z-←Ubune-x-Unowen | th-WITNESSED | z-rain
 >
