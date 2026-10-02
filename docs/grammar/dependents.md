@@ -357,6 +357,8 @@ Three linkers also take **-l** for a **firm** link: the link holds with no room 
 
 No other root makes a linker. On `/x/`, **-r** is still a [resume](pronouns.md#resume-r) (the same linker again, *likewise*, or an earlier thread), and **-n** is a [titled agenda label](word-endings.md#continue-x).
 
+All of these `/x/` words come only at the **start of a sentence**: only `/y/` turn words or a [fronted discourse hook](hooks.md#discourse-hooks) may come before them. They never follow a [clause join](joins.md#clause-joins), and they never open the sentence after a [stand-in](#dependent-clauses), because that sentence belongs to the dependent.
+
 **`xevavem`** also opens a new topic, like English *so, …* at the start of a turn: the talk moves to the next frame.
 
 > `zodogal vowogal. xevavem zazawan varahal.`

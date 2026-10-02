@@ -9,13 +9,13 @@ use [skip-cd] for amplify to not deploy.
 # TODO
 
 Prosody
--confirm we still have chats after rebuild
 -expressiveness review
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -final exam
 -finish lexicon fill (partial)
 -finish proposals-mnemonic
--consider defining topics so we can use topic-based pronouns
+-review j and x. They seem to have some overlapping concepts, suggest if it makes sense for some jobs to swap between them
+-review logical deduction
 
 save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.
