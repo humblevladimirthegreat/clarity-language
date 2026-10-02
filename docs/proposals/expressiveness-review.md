@@ -58,7 +58,7 @@ For each mechanism, build its applicability grid and inspect the empty cells:
 | [x] | 4 | Joins and restrictors | [joins](../grammar/joins.md), [restrictors](../grammar/restrictors.md) | 1 | set / rank vowels × endings × arity × role letters |
 | [x] | 5 | Hooks | [hooks](../grammar/hooks.md) | 1, 4 | hook vowel × ending × use (in-clause, discourse, extra-noun, point-back, span) |
 | [x] | 6 | Spans | [spans](../grammar/spans.md) | 2, 5 | TYPE × EDGE × ending; topic and ordinal scope inside cites and asides |
-| [ ] | 7 | Join series on other roles | [join-across-roles](../grammar/join-across-roles.md) | 4 | stance joins, join-act verbs, join-relations × vowel and ending |
+| [x] | 7 | Join series on other roles | [join-across-roles](../grammar/join-across-roles.md) | 4 | stance joins, join-act verbs, join-relations × vowel and ending |
 | [ ] | 8 | Hosted relations and bars | [relations](../grammar/relations.md), [comparatives](../grammar/comparatives.md) | 4, 5 | each relation × host role (`/ɡ/` `/h/` `/th/` `/w/`); stance bars × other moods |
 | [ ] | 9 | Questions | [questions](../grammar/questions.md) | 1 | fill-ask × roles and families; polar stance × turn positions |
 | [ ] | 10 | Stand-ins and `/x/` words | [dependents](../grammar/dependents.md) | 2, 4, 5 | stand-in vowel × **-rl / -rm / -rth / -rn** × role letter; `/x/` linkers vs topic words × endings and positions (never in a dependent, after a clause join, or in an aside) |

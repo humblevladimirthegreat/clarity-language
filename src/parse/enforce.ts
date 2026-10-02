@@ -212,6 +212,13 @@ function enforceSpanSlot(word: LexWord): void {
   if (aside !== (word.pos === "th")) throw new ConstructionError("spanSlot", word.raw);
 }
 
+/** Stacked join **-r** (`vaor` / `xuar` / `gaor`) has no reading outside the `/th/` fill-ask (join-across-roles.md § Standalone stance joins). */
+function enforceStackedJoinR(word: LexWord): void {
+  const family = word.family;
+  if (family.kind !== "joinMarker" || word.ending !== "r" || family.series.length < 2) return;
+  if (word.pos === "v" || word.pos === "x" || word.pos === "g") throw new ConstructionError("stackedJoinResume", word.raw);
+}
+
 /** Stacked hook **-r** (`oer` / `uar` / `uer`) is only a span member between same-role words (hooks.md § Spans). */
 function enforceStackedHookR(word: LexWord, tokens: IToken[], i: number): void {
   if (word.family.kind !== "hook" || word.ending !== "r" || word.family.form.length < 3) return;
@@ -309,6 +316,7 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
     if (mentionOrAside) throw new ConstructionError("ySpanType", word.raw);
   }
   enforceSpanSlot(word);
+  enforceStackedJoinR(word);
   if (family.kind === "x" && family.xFamily === "sake") {
     if (word.pos && !SAKE_POS.has(word.pos)) throw new ConstructionError("sakeSlot", word.raw);
     if (family.horizon && (family.stanceVowel === "e" || word.ending === "n")) {

@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Findings from Phase 3 of the expressiveness review (`docs/proposals/expressiveness-review.md`): every productive mechanism crossed with every place it could apply, and each empty cell judged. Rows are logged per batch, ruled by the language owner, and applied before the next batch starts; each row's **Outcome** records the ruling.
 
-Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 adopted (reversed from decline), C-15 and C-16 fixed). Other mechanisms not started.
+Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 adopted (reversed from decline), C-15 and C-16 fixed). Wave 7 (join series on other roles): logged (E-39, E-40, C-17 to C-19), ruled and applied (E-39 adopted as a docs gap, E-40 declined, C-17 to C-19 fixed). Other mechanisms not started.
 
 ## How to read this file
 
@@ -855,6 +855,76 @@ Parser findings: every cell above parsed except `/x/` written spans (a syntax er
 - Aside under any role but `/th/`; cite, mention or opaque under `/th/`; any span under `/w/` (C-15). `/x/` cite, mention and opaque are topic words (E-38).
 
 Confirmed **def** with nothing to add: TYPE × EDGE × **-l** / **-m** / **-n** on `/z/` `/d/` `/b/` `/v/` `/ɡ/` `/h/` (the open map in spans § Reference tables), EDGE **u** with **-l** / **-r**, nesting, the three close words, `/y/` calls with cite and opaque, and topics inside cites.
+
+## Join series on other roles
+
+Owning page: [join-across-roles](../grammar/join-across-roles.md). Wave 7. Cells checked with `node scripts/parse.mjs` (2026-10-02), sweeping `/v/` `/x/` `/th/` `/ɡ/` `/h/` × the ten vowels (**a o u ao ua uo e ae oe ue**) × **-l** / **-m** / **-n** / **-r**. The parser reads nearly every cell (a stance join after stance words, a clause join between clauses and a verb join all parse with no reading), so a form that parses is not a reading. Only `/h/` stacked **-r** (`haor`, `huar`, `huor`, `haer`) and `her` are rejected, because restrictors own them (D-27). Phrase joins on `/z/` `/d/` `/b/` and **-l** / **-m** / **-r** on the verb and clause joins belong to the Joins grid (wave 4), and standalone `/v/` and `/ɡ/` objects (`dal van`, `gan bar`) are already def.
+
+### Grid
+
+| Series | **a o u** | **ao ua uo** | **e ae oe ue** | **-n** | **-r** (single vowel) | **-r** (stacks) |
+|--------|-----------|--------------|----------------|--------|------------------------|------------------|
+| Stance join `/th/` (standalone) | def | def | def | none (listed) | def (`thar`, `thor`, `thur`; `ther` C-18) | question only (C-18) |
+| Stance join `/th/` after stance words | def (`thal` `thol` `thul`) | E-39 | E-39 | none (listed) | def | none |
+| Clause sequence `/x/` | def (`xan` `xon` `xun`) | def `xaon`; E-40 for `xuan` `xuon` | E-40 (C-17 for `xen`) | def (four of ten) | def resume | none (C-19) |
+| Join-act verb `/v/` | def | def | def | def (all ten) | — (VP join **-r**) | none (C-19) |
+| Join-relation `/ɡ/` `/h/` | def | def | def | def (all ten) | — (adjective and restrictor **-r**) | none (C-19; `/h/` D-27) |
+
+### Rows
+
+#### E-39 — stance joins after stance words, the vowels beyond **a o u** (`thel` `thael` `thoel` `thuel` `thaol` `thual` `thuol`) · intuitive · P3
+
+- **Proposed reading:** the same series as on phrase lists, applied to the stance words before the join: **e** ranked (the first ground is the main one: `thevom thewam thel`, *mostly because I saw it, and partly because I was told*), **ae** equal weight, **oe** in the order the grounds arose, **ue** the first is the weakest; **ao** open (*these grounds and maybe others*), **ua** *every ground but these*, **uo** *any ground but these*.
+- **Example:** `zazawan vowogal thevom thewam thel.` — z-Azawan | v-walk | th-WITNESSED | th-TOLD | th-rank — "Azawan walks: I mainly saw it, and I was also told." Parses today; the page shows only **a** / **o** / **u** here.
+- **Pattern:** the join vowel series ([joins § recap](../grammar/joins.md#join-type-vowel-series)); a stance join already works on the stance words in front of it
+- **Current route:** two sentences, or `thevem` `thever` for causes; evidence weight has no one-word route (`find-english`: *mainly because*, *chiefly*: no row)
+- **Better than current route:** yes for rank and equal weight; marginal for the rest
+- **Conflicts and notes:** the standalone table already lists every vowel, and the unassigned list says the rank series has "no worked reading yet", so this closes a docs gap, not a form gap. A stance join is a list of grounds, so the readings follow the phrase list exactly and add nothing to learn.
+- **Closes:** *mainly because …, partly because …*: only `thever`
+- **Recommendation:** adopt as a docs gap; no new form. Add one worked row per vowel to [join-across-roles § stance joins](../grammar/join-across-roles.md#stance-joins) and drop the rank line from unassigned-reserved.
+- **Outcome:** adopted — taught as a worked row per vowel in [join-across-roles § stance joins](../grammar/join-across-roles.md#stance-joins); no new form, no parser change.
+
+#### E-40 — clause sequence **-n** on the other six vowels (`xuan` `xuon` `xen` `xaen` `xoen` `xuen`) · forced, and redundant · P3
+
+- **Proposed reading:** *and then* with a second axis: `xen` *and then, most important first*, `xoen` *first of all*, `xuan` *and then, leaving out …*.
+- **Example:** none worth teaching; the parser reads all six with no reading.
+- **Pattern:** the four defined `xan` `xon` `xun` `xaon`, and the ten-vowel `/v/` and `/ɡ/` **-n** series
+- **Current route:** `xoel` / `xoem` for steps whose order is the claim; `xrebal` *finally* and `xrebul` *starting with* ([numbers](../grammar/numbers.md)); the linker `xevavem` *next*
+- **Better than current route:** no. A sequence is already ordered, so **e** adds nothing; *first of all* and *finally* have number words; the inverted vowels have no guessable *and then* reading.
+- **Conflicts and notes:** `xen` / `xon` / `xun` are also the greeting departure marks after a name ([x-compounds](../grammar/x-compounds.md)), though a name before them keeps the two readings apart. The join-act table (C-17) wrongly shows `xen` as a clause counterpart.
+- **Closes:** *first of all*, *to begin with*: covered by `xrebul`
+- **Recommendation:** decline; add the six cells to unassigned-reserved and record the reason in design-decisions.
+- **Outcome:** declined — D-29; cells added to unassigned-reserved.
+
+### Inconsistencies (wave 7)
+
+#### C-17 — the join-act table shows `xen` as a clause join that is not taught · found in join-act verbs
+
+- **Where:** [join-across-roles § join-act verbs](../grammar/join-across-roles.md#join-act-verbs), [§ sequence](../grammar/join-across-roles.md#clause-sequence)
+- **Problem:** the table pairs `xen` with `ven`, but Sequence defines only `xan` `xon` `xun` `xaon`. `xen` has no clause reading, and `xen` as a sentence word is the departure greeting.
+- **Suggested ruling:** drop the `xen` row, and say the table pairs each join-act verb with its clause sequence where one exists.
+- **Outcome:** fixed — the `xen` row is dropped and the table says prioritizing has no clause sequence.
+
+#### C-18 — the standalone stance table leaves `ther` and the stacked **-r** cells blank, but the question list uses them · found in stance joins
+
+- **Where:** [join-across-roles § standalone stance joins](../grammar/join-across-roles.md#standalone-stance-joins)
+- **Problem:** the table shows `—` for `ther` and for every stacked **-r**, while the question list that follows defines `ther` (*What's the main reason?*) and `thaor` … `thuer` as fill-asks, and joins.md says **-r** attaches only to single vowels. Outside a question, only the single-vowel **-r** cells have a reading.
+- **Suggested ruling:** fill `ther` in the table (*for one main reason, not named*), and mark the stacked **-r** cells *question only*.
+- **Outcome:** fixed — `ther` filled in; stacked **-r** cells marked *question only*.
+
+#### C-19 — the parser reads stacked **-r** on `/v/` `/x/` `/ɡ/` joins with no reading · found in the sweep
+
+- **Where:** [joins § rare arities](../grammar/joins.md#reference-tables), parser
+- **Problem:** `vaor`, `xuar`, `gaor` and the like parse silently, though stacked **-r** is defined only as the stance fill-ask (`/th/`) and is rejected on `/h/` (D-27). A learner who tries `vaor` gets no error and no reading.
+- **Suggested ruling:** reject them with a pointer to the join-series section; the stance fill-ask stays.
+- **Outcome:** fixed — the parser rejects stacked **-r** on `/v/` `/x/` `/ɡ/` joins (`stackedJoinResume`); D-29.
+
+### None (to add to unassigned-reserved if the rows above are declined)
+
+- Clause sequence **-n** beyond `xan` `xon` `xun` `xaon` (E-40). The `/th/` **-n** cells are already listed.
+- Stacked **-r** on `/v/` `/x/` `/ɡ/` joins (C-19).
+
+Confirmed **def** with nothing to add: the ten join-act verbs and ten join-relations on `/ɡ/` `/h/` at **-n**, the **-l** / **-m** ten-vowel series on `/v/` `/x/` `/th/`, the standalone stance joins at **-l** / **-m**, and a standalone object under `van` / `gan`.
 
 ## Inconsistencies
 

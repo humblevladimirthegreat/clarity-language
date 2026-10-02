@@ -37,6 +37,8 @@ The `/x/` forms are clause joins; **-n** under `/v/`, `/ɡ/`, and `/h/` makes jo
 | **oe** | `voel` / `xoel` / `thoel` | `voem` / `xoem` / `thoem` | — |
 | **ue** | `vuel` / `xuel` / `thuel` | `vuem` / `xuem` / `thuem` | — |
 
+Stacked vowels take no **-r** under `/v/` or `/x/` (the `—` cells); only a stance join has stacked **-r**, as a [fill-ask](#standalone-stance-joins).
+
 Each verb-phrase item is a verb plus its own object material, and an item runs up to and including its verb: words before a verb belong to that verb. In `vowogal hadehum varahal val`, *hastily* is on *run*, not *walk*. When every item is a bare verb, a `/d/` immediately after the join is SHARED over all verbs: `vahahal vabovul vam dabovul` → *sees and tempts an apple*.
 
 An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, covers every item. `/h/` inside an item covers that verb phrase only.
@@ -112,6 +114,24 @@ When English would deny or weigh **how you stand** toward a claim (*not because�
 >
 > "Azawan walks: I either saw it or was told, one of the two."
 
+The other join vowels work on stance words the same way they work on a phrase list ([recap](joins.md#join-type-vowel-series)). A rank join says which ground carries the weight; the first stance word is the main one.
+
+> `zazawan vowogal thevom thewam thel.`
+>
+> z-Azawan | v-walk | th-WITNESSED | th-TOLD | th-rank/more
+>
+> "Azawan walks: I mainly saw it, and I was also told."
+
+| Vowel | After stance words | Example reading |
+|---|---|---|
+| **ao** | `thaol` open list of grounds | *I saw it, I was told, and maybe more* |
+| **ua** | `thual` every ground but these | *on every ground but sight and hearsay* |
+| **uo** | `thuol` any ground but these | *any ground but sight and hearsay will do* |
+| **e** | `thel` ranked, first is the main ground | *mainly because I saw it, also because I was told* |
+| **ae** | `thael` equal weight | *seeing it and being told count the same* |
+| **oe** | `thoel` in the order the grounds arose | *I saw it first, then I was told* |
+| **ue** | `thuel` ranked, first is the weakest | *chiefly because I was told, a little because I saw it* |
+
 Nothing is SHARED after an `/h/` or `/th/` join. To grade the whole list at once, put a `/w/` detail immediately before the join word.
 
 **Compare with:** *Azawan does not walk* denies the event, so the join goes on the verb (`vowogal vul`), not on `/th/`.
@@ -133,15 +153,15 @@ In the table, *reason* means any grounds a stance word can give: a cause, a sour
 | **a** | `thal` *at face value* | `tham` *I don't think there's more to it* | `thar` *for reasons I'm not stating* |
 | **o** | `thol` *no single reason to pick* | `thom` *I'm not sure which reason it is* | `thor` *for some reason or other* |
 | **u** | `thul` *no judgment* | `thum` *not weighing in* | `thur` *not for the reason you'd think* |
-| **ao** | `thaol` *take it however you like* | `thaom` *any framing is fine, I think* | — |
-| **ua** | `thual` *all things considered* | `thuam` *all known things considered* | — |
-| **uo** | `thuol` *anything goes* | `thuom` *anything goes, I think* | — |
-| **e** | `thel` *impartially* / *no decisive grounds* | `them` *I don't lean either way* | — |
-| **ae** | `thael` *equally balanced* | `thaem` *equally balanced, I think* | — |
-| **oe** | `thoel` *in no particular order* | `thoem` *not sure where to start* | — |
-| **ue** | `thuel` *no reason to object* | `thuem` *no objection that I know of* | — |
+| **ao** | `thaol` *take it however you like* | `thaom` *any framing is fine, I think* | question only |
+| **ua** | `thual` *all things considered* | `thuam` *all known things considered* | question only |
+| **uo** | `thuol` *anything goes* | `thuom` *anything goes, I think* | question only |
+| **e** | `thel` *impartially* / *no decisive grounds* | `them` *I don't lean either way* | `ther` *for one main reason, not named* |
+| **ae** | `thael` *equally balanced* | `thaem` *equally balanced, I think* | question only |
+| **oe** | `thoel` *in no particular order* | `thoem` *not sure where to start* | question only |
+| **ue** | `thuel` *no reason to object* | `thuem` *no objection that I know of* | question only |
 
-Under a question, a standalone **-r** stance join is a [fill-ask](questions.md#fill-ask-r) for the grounds. Every vowel takes **-r** there.
+Outside a question, only the single-vowel **-r** cells are words. Under a question, a standalone **-r** stance join is a [fill-ask](questions.md#fill-ask-r) for the grounds. Every vowel takes **-r** there.
 
 > `yol zazawan vowogal thar.`
 >
@@ -178,14 +198,13 @@ When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*)
 
 **Compare with:** *and then* between sentences uses clause [sequence](join-across-roles.md#sequence) (`xan`, …), not `van`.
 
-| Clause join | Join-act verb | Shared vowel move |
+| Clause sequence | Join-act verb | Shared vowel move |
 |-------------|---------------|-------------------|
 | `xan` | `van` | add / include |
 | `xon` | `von` | one / choose |
 | `xun` | `vun` | undo / refuse |
-| `xen` | `ven` | order / prioritize |
 
-The `/x/` forms connect clauses and keep one speech act. Their `/v/` counterparts take an object and name an act on it. The remaining stacked `/v/` forms follow the same series in the inventory below.
+The `/x/` forms connect clauses and keep one speech act. Their `/v/` counterparts take an object and name an act on it. Prioritizing (`ven`) and the stacked `/v/` forms have no clause sequence; they follow the same series in the inventory below.
 
 These are ordinary content verbs. Point back at a join-act you already used with a resume or a full paraphrase. Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
 

@@ -15,6 +15,7 @@ Prosody
 -finish lexicon fill (partial)
 -finish proposals-mnemonic
 -review logical deduction
+-consider special overlay roots for spans (still needs x+edge-vowel). (That opens up u for role resume and potentially new forms) 
 -consider making scope islands a span (stealing mention-use: mark mention with modifier)
 
 save for near end of limit resets:

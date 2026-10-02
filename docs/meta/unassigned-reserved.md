@@ -112,7 +112,8 @@ Under `/h/` / `/w/`, join spellings beyond the [defined restrictor core](../gram
 Source: [join-across-roles.md](../grammar/join-across-roles.md#stance-joins)
 
 - **`/th/`…-n** — reserved; no join-relation or sequence reading
-- Rank series (`thel` / `thael` / `thoel` / `thuel`) on stance words — spellings in the table, no worked reading yet
+- Stacked **-r** outside a question (`thaor` … `thuer` are fill-asks only); stacked **-r** on `/v/` `/x/` `/ɡ/` joins (`vaor`, `xuar`, `gaor`) — the parser rejects them
+- Clause sequence **-n** beyond `xan` `xon` `xun` `xaon` (`xuan`, `xuon`, `xen`, `xaen`, `xoen`, `xuen`)
 
 ## Hooks — in-clause
 
