@@ -8,13 +8,14 @@ use [skip-cd] for amplify to not deploy.
 
 # TODO
 
-Prosody
+-Prosody
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -final exam
 -finish lexicon fill (partial)
 -finish proposals-mnemonic
 -review logical deduction
 -fix output too large for find lexicon
+-parser can optionally output translation guidance
 
 save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.

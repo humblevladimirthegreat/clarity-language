@@ -365,13 +365,13 @@ Name the landmark with a `/b/` word right after the feeling (after **`gobum`** w
 >
 > "Resentful at Alahen about the memo, gone still."
 
-The motion ending says how the feeling moves. Affect is **water**:
+The motion ending says how the feeling moves. Affect is **water**. The endings run on the same scale as the other stance endings, from fixed to passing: **-l** is locked in place, **-m** is the ordinary case, and **-r** lasts only right now.
 
 | Motion ending | Use | English | Cue |
 |---------------|-----|---------|-----|
-| **-r** | SURGING | moving in waves or spikes: rising, falling, swinging | **-r** ≈ *right now*: a wave |
-| **-m** | FLOWING | moving steadily, at a pace you can ride | **-m** ≈ the ordinary case: a current |
 | **-l** | STILL | not moving: held, frozen, numb | **-l** ≈ *locked*: still water |
+| **-m** | FLOWING | moving steadily, at a pace you can ride | **-m** ≈ the ordinary case: a current |
+| **-r** | SURGING | moving in waves or spikes: rising, falling, swinging | **-r** ≈ *right now*: a wave |
 
 Motion is how the feeling moves, not how strong it is. Strong but steady anger is flowing, and so is calm contentment. Fury held in check and a numb flatness are both still. Surging and still are information, not verdicts: surging can be a cue to ground; still can be a cue to rest, or to re-engage gently. Freezing is STILL: AWAY with **-l** is *frozen, wanting out*.
 
