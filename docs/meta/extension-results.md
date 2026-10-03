@@ -298,7 +298,7 @@ Every family that uses the series either uses all four single vowels or is owned
 - **Conflicts and notes:** the five defined answers already read as *match*, *take up*, *mismatch*, *reject this option*, *reject the premise*. One + order gives no guessable answer to a polar question (it is a ranking of picks, not a stance on the claim), so a learner would have to be told it. The parser reads `yoel` as an unassigned join marker today.
 - **Closes:** *it depends*: not found
 - **Recommendation:** decline; add `yoel` / `yoem` to unassigned-reserved.
-- **Outcome:** declined — D-23; cell added to unassigned-reserved.
+- **Outcome:** declined as *it depends* — D-23. Superseded: `oe` now reads *decline to answer* (`yoel` / `yoem` / `yoer`), split from `ua` (reject the frame).
 
 #### E-14 — ability stacks (`xua` *can again*) · forced · P3
 

@@ -380,17 +380,18 @@ z-Alahen | v-lie . y-yes
 
 ### Polar stance: fuller inventory
 
-Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), and *sure* (**`yaol`**). The rest of the map is **reject this option** and **reject the question itself**. First vowel is the family (**`a`** accept, **`u`** undo); second vowel is what you answer (**`e`** the claim, **`o`** this option, **`a`** the question's own premise).
+Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), and *sure* (**`yaol`**). The rest of the map is **reject this option**, **reject the question itself**, and **decline to answer**. First vowel is the family (**`a`** accept, **`u`** undo, **`o`** one); second vowel is what you answer (**`e`** the claim, **`o`** this option, **`a`** the question's own premise).
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`ae`** (`yael`) | match / receipt | *true* | **a** ≈ add + **e** ≈ order (judged in line) |
-| **`ao`** (`yaol`) | option uptake | *sure* | **a** ≈ add + **o** ≈ one |
 | **`ue`** (`yuel`) | flip / mismatch | *false* | **u** ≈ undo + **e** ≈ order (judged out of line) |
+| **`ao`** (`yaol`) | option uptake | *sure* | **a** ≈ add + **o** ≈ one |
 | **`uo`** (`yuol`) | reject this option | *not that* | **u** ≈ undo + **o** ≈ one |
 | **`ua`** (`yual`) | reject the question's premise | *neither: the question doesn't apply* | **u** ≈ undo + **a** ≈ add (undo what the question added) |
+| **`oe`** (`yoel`) | decline to answer | *I won't answer* | **o** ≈ one + **e** ≈ order (pass to the next one in line) |
 
-**`yual`** answers a question that assumes something false. *Have you stopped lying?* has no honest *yes* or *no* if you never lied. **`yual.`** says so in one word, without accepting the frame.
+**`yual`** answers a question that assumes something false. *Have you stopped lying?* has no honest *yes* or *no* if you never lied. **`yual.`** says so in one word, without accepting the frame. It judges the question, not the speaker's willingness: for a refusal to answer, use **`yoel`** (below).
 
 > `yol zazawan vowogal ul bahazal. yual.`
 >
@@ -408,7 +409,8 @@ Each stance takes three endings, on the same strong-to-light scale as elsewhere.
 | **`ue`** | `yuel` *false* | `yuem` *I don't think so* | `yuer` *huh?* / *wait…* (that clashes with what I thought) |
 | **`ao`** | `yaol` *sure* | `yaom` *okay* | `yaor` *fine, for now* / *let's try it* |
 | **`uo`** | `yuol` *not that* | `yuom` *nah* | `yuor` *not right now* |
-| **`ua`** | `yual` *the question doesn't apply* | `yuam` *it's more complicated than that* | `yuar` *pass* / *I'd rather not say for now* |
+| **`ua`** | `yual` *the question doesn't apply* | `yuam` *it's more complicated than that* | `yuar` *but there's no such thing…* (the premise just failed for you) |
+| **`oe`** | `yoel` *I won't answer* | `yoem` *I'd rather not say* | `yoer` *pass, for now* |
 
 **`yaer`** is the honest *oh*. English *oh* and *I see* often sound like agreement. **`yaer`** only says the news reached you. You can repeat the news after it:
 
@@ -418,11 +420,19 @@ Each stance takes three endings, on the same strong-to-light scale as elsewhere.
 >
 > "Oh, so Azawan walks."
 
-**`yuar`** declines to answer without saying *no*. Nobody should hear it as a denial.
+**`yuar`** is the *but…* of a premise that just failed for you. **`yuer`** objects to the claim; **`yuar`** objects to what the question took for granted.
 
-> `yol zalahen vezebal. yuar.`
+> `yol zazawan vowogal ul bahazal. yuar.`
 >
-> y-question | z-Alahen | v-sleep . y-reject-frame-fresh
+> y-question | z-Azawan | v-walk | [from | b-house] . y-reject-frame-fresh
+>
+> "Did Azawan walk away from the house? But Azawan was never there…"
+
+**`yoel`**, **`yoem`** and **`yoer`** decline to answer without saying *no* and without judging the question. Nobody should hear them as a denial or as a rejected frame.
+
+> `yol zalahen vezebal. yoer.`
+>
+> y-question | z-Alahen | v-sleep . y-decline-fresh
 >
 > "Is Alahen asleep? I'd rather not say for now."
 
@@ -445,6 +455,7 @@ For a stronger stance, use the [tone mark](speech-moves.md#tone-marks) **`!!`**,
 | *Is it so?* / confirm the claim | **`yael`**, deny with **`yuel`** | **`yaem`**, deny with **`yuem`** |
 | *Want this?* / offer | **`yaol`**, reject-this with **`yuol`** | **`yaom`**, reject-this with **`yuom`** |
 | Loaded question | **`yual`** | **`yuam`** |
+| Declined question | **`yoel`** | **`yoem`** |
 
 A stance word can stand alone (`yael.`), sit before a body (`yael zazawan vowogal.`), or come as a confirm tag in the next turn after `.`. After a stance-plus-body beat, keep going with **`/x/`**; write another polar word only when you take a new stance turn. In a solo run of thought, **`yuel`** can mark a correction, **`yaol`** the next step, **`yael`** a point you lock.
 

@@ -372,7 +372,7 @@ export const FORCE_CONSTRUCTIONS: Record<Vowel | "soft", ConstructionEntry> = {
 /** Polar stance particles, grouped by the section that teaches them (questions.md). */
 export const POLAR_CONSTRUCTIONS = {
   starter: { anchor: "questions.md#polar-stance", summary: "yael yes / yuel no / yaol sure" },
-  fuller: { anchor: "questions.md#polar-stance-fuller-inventory", summary: "juol / jual / joel" },
+  fuller: { anchor: "questions.md#polar-stance-fuller-inventory", summary: "yuol / yual / yoel" },
 } satisfies Record<string, ConstructionEntry>;
 
 /** Polar series → {@link POLAR_CONSTRUCTIONS} key. */

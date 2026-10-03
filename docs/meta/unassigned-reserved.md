@@ -233,7 +233,6 @@ Source: [clause.md](../grammar/clause.md)
 
 Source: [speech-moves.md](../grammar/speech-moves.md), [questions.md](../grammar/questions.md#polar-endings), [intention.md](../grammar/intention.md#ability)
 
-- Polar `oe` (`yoel` / `yoem`): no reading
 - Stacked vowels after ability **x** (`xua`, …) and after sake / scope **th**: no reading (the parser rejects them)
 
 ## Tone marks

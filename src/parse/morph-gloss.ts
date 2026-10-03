@@ -232,6 +232,7 @@ const POLAR_JOB: Record<string, string> = {
   ao: "sure",
   uo: "refuse-option",
   ua: "reject-frame",
+  oe: "decline",
 };
 
 const ABILITY_STANCE: Record<string, string> = {
