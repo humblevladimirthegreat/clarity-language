@@ -740,7 +740,7 @@ With **`zul`** the two readings say the same thing: `zul godogal gabagol.` is bo
 >
 > "Azawan and Alahen write the same book."
 
-For English *whoever* / *whatever*, the kind is a [role compound](roles.md#role-compounds): *every walker* is *whoever walks*. Use the agent compound (**`a`**) for *whoever*, and the undergoer compound (**`u`**) for *whatever*.
+For English *whoever* / *whatever*, use a bare [role compound](roles.md#role-compounds), which names anyone who does it: *whoever walks* is *everyone who walks*. Use the agent compound (**`a`**) for *whoever*, and the undergoer compound (**`u`**) for *whatever*.
 
 > `zual gaxowogal vezehel.`
 >

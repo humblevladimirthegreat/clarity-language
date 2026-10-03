@@ -236,7 +236,7 @@ Source: [sakes.md](../grammar/sakes.md)
 
 Source: [clause.md](../grammar/clause.md)
 
-- **open:** lean **`l`** on any role letter but `/ɡ/`: `zl-` / `dl-` / `bl-` / `vl-` / `hl-` / `thl-` / `wl-`. No job: a noun modifying a noun is mid-word **`x`** ([x-compounds](../grammar/x-compounds.md#ordinary-compound-order)); a verb root in `gl-` or on `/ɡ/` is the participle; `/h/` and `/th/` already go anywhere; `/w/` already sits before its host.
+- **open:** lean **`l`** on any role letter but `/ɡ/`: `zl-` / `dl-` / `bl-` / `vl-` / `hl-` / `thl-` / `wl-`. No job: a noun modifying a noun is mid-word **`x`** ([x-compounds](../grammar/x-compounds.md#ordinary-compound-order)); an event root on `/ɡ/` or in `gl-` is already an act [in progress](../grammar/predication.md#in-progress); `/h/` and `/th/` already go anywhere; `/w/` already sits before its host.
 - **open:** `/w/` before `/z/`, `/d/`, `/b/`, or `/v/`. Not guessable: *very* on a verb could mean how intensely, how often, or how fully, and an `/h/` adverb says which (a degree word before a manner adverb); degree on a noun goes through an adjective.
 - **closed (D-22):** a hosted `/b/` after `/z/`, `/d/`, `/v/`, or `/w/`.
 

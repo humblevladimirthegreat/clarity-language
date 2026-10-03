@@ -459,6 +459,14 @@ Closed **SAME** + `/b/`.
 
 [Predication](predication.md#identity)
 
+### In progress
+
+An event root on `/ɡ/`: the noun is in the middle of that event, as its doer (*a walking dog*, *Azawan is walking*).
+
+[Predication](predication.md#in-progress)
+
+**Compare with:** a [role compound](#role-compound--agent--place--patient--recipient) names a participant, with no claim that the act is under way.
+
 ### Invert
 
 Join stacks **`ua` / `uo` / `ue`**.
@@ -686,7 +694,7 @@ Prefix-less *including / rather / instead / except*, discourse glue, extra-noun 
 
 [Role compounds](roles.md#role-compounds)
 
-**Compare with:** *sitting guard* / *teacher* is this stem on `/ɡ/` with a non-resume ending ([which noun, with resume and kinds](say-people-places.md#which-noun-intermediate)). Resume **-r** is *the one teaching* (this instance), not the kind.
+**Compare with:** *a guard who sits* is this stem on `/ɡ/` with a non-resume ending, and *teacher* adds **`the`** for the usual role ([which noun, with resume and kinds](say-people-places.md#which-noun-intermediate)). Resume **-r** is *the one teaching* (this instance), not the usual role.
 
 ### Role pointer
 
@@ -838,6 +846,12 @@ Join readings when the speech act is question.
 Join / restrictor **-r** (*something* / *sometimes*); fill-ask under question.
 
 [Joins](joins.md#unspecified-member-r-phrase)
+
+### Usual role
+
+A role compound plus pattern scope **`the`** after the stem: the role as a repeated tendency, such as an occupation (*a teacher*). A bare role compound makes no claim about how often.
+
+[Role compounds](roles.md#usual-role)
 
 ### Channel on a generalization
 

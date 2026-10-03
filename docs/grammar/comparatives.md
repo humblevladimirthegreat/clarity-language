@@ -728,6 +728,8 @@ The bar's `/b/` works as it does on the clause. On TOLD it is the source, and on
 >
 > "Azawan sings well for a learner."
 
+On a rank join, an event root on `/ɡ/` is the scale itself: how well the act goes (*sings well*), not an act [in progress](predication.md#in-progress).
+
 An adjective after that `/b/` describes it, as after any [host](clause.md#complex-chaining), so it narrows the population.
 
 > `zazawan thobam baxelehalx gezebul zel gezehel.`

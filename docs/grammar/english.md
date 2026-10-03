@@ -156,7 +156,7 @@ One English word, one row: the form that says it and the section that teaches it
 
 ### Adjectives made from a noun (*golden*, *royal*, *solar*) {#noun-adjectives}
 
-English often makes an adjective from a noun by adding an ending (*gold* → *golden*, *sun* → *solar*). Agazan needs no ending for that. Put the noun's root on `/ɡ/` ([adjectives](clause.md#adjectives-ɡ)): the adjective means *of that kind*. The ending picks the sense: **-l** is the everyday thing, **-m** is the abstract quality. Use **-l** for stuff you can touch (*gold*, *sun*) and **-m** for a quality or field (*royalty*, *life*, *institution*). For *made of*, the [of-relation](relations.md#of-relations) with the stuff in `/b/` says it outright.
+English often makes an adjective from a noun by adding an ending (*gold* → *golden*, *sun* → *solar*). Agazan needs no ending for that. Put the noun's root on `/ɡ/` ([adjectives](clause.md#adjectives-ɡ)): the adjective means *of that kind*. A root whose sense is an event reads as an act [in progress](#participles) instead. The ending picks the sense: **-l** is the everyday thing, **-m** is the abstract quality. Use **-l** for stuff you can touch (*gold*, *sun*) and **-m** for a quality or field (*royalty*, *life*, *institution*). For *made of*, the [of-relation](relations.md#of-relations) with the stuff in `/b/` says it outright.
 
 | English itch | Agazan job | Teach |
 |--------------|------------|-------|
@@ -181,6 +181,23 @@ English often makes an adjective from a noun by adding an ending (*gold* → *go
 > z-Azawan | [d-house | g-gold] | v-see
 >
 > "Azawan sees a golden house."
+
+### *-ing*, *-er*, and *-ed* words (*walking*, *teacher*, *seen*) {#participles}
+
+English builds several words from one verb: *walking*, *walker*, *walked*. Agazan picks the job instead: a person or thing in the middle of the act, someone who does it, someone it is their role, or someone it happens to.
+
+| English itch | Agazan job | Teach |
+|--------------|------------|-------|
+| *walking* (*a walking dog*, *Azawan is walking*) | the event root on `/ɡ/`: `dodogal gowogal` | [In progress](predication.md#in-progress) |
+| *walking* after a thing root (*a sitting guard*) | a bare role compound: `dagavol gaxehahel` (*a guard who sits*) | [Role compounds](roles.md#role-compounds) |
+| *someone who teaches*, *whoever teaches* | a bare role compound: `zaxedehol` | [Role compounds](roles.md#role-compounds) |
+| *a teacher*, *a fighter*, *a dog walker* (a usual role or job) | the role compound plus **`the`**: `zaxedehothel` | [The usual role](roles.md#usual-role) |
+| *the one teaching* (this event) | the role compound on **-r**: `zaxedehor` | [This instance](roles.md#this-instance-r) |
+| *tends to walk*, *often lies* | **`the`** on the root: `zazawan valahathel` | [A pattern](predication.md#scope-pattern) |
+| *seen*, *the one seen* | the undergoer **`u`**: `zuxahahal`, `zuxahahar` | [The undergoer](roles.md#the-undergoer-u) |
+| *visible* / *invisible* (*can be seen*) | the undergoer with ability: `zodogal guxahahaxal` | [Can be](intention.md#role-ability) |
+| *walked* (past) | no participle: pick how you know | [Tense](say-tense.md#tense-jobs) |
+| *the guard who fought (that time)* | two sentences | [Which noun](dependents.md#which-noun) |
 
 ### Topic and talk {#topic-talk}
 

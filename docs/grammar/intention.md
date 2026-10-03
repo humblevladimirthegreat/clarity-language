@@ -253,7 +253,7 @@ For English *so can I* / *can too*, [resume](pronouns.md#resume-r) the verb and 
 #### Can be (role + ability)
 <a id="role-ability"></a>
 
-To say someone **can be** a doer, place, undergoer, or recipient, not that they can do the act, put the ability vowel on a [role compound](roles.md#role-compounds) used as a kind on `/ɡ/`. Write the role compound, then **`x`** and the ability vowel, then the ending. This works only on `/ɡ/`, the same slot that says *is a teacher* ([classification](predication.md#classification)).
+To say someone **can be** a doer, place, undergoer, or recipient, not that they can do the act, put the ability vowel on a [role compound](roles.md#role-compounds) on `/ɡ/`. Write the role compound, then **`x`** and the ability vowel, then the ending. This works only on `/ɡ/`, the same slot that says *is a teacher* ([classification](predication.md#classification)).
 
 > `zalahen gaxaradaxam.`
 >

@@ -1,41 +1,41 @@
 # Role compounds {#roles}
 
-When English would name a person, place or time from an event (*a teacher* from *teach*, *the one told*, *a bedroom*, *bedtime*), Agazan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [reference ending](word-endings.md). **`a`** is the doer, **`e`** is the scene of the event (where or when), **`u`** is the one the event happens to, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
+When English would name a person, place or time from an event (*a teacher* from *teach*, *the one told*, *a sleeping place*, *bedtime*), Agazan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [reference ending](word-endings.md). **`a`** is the doer, **`e`** is the scene of the event (where or when), **`u`** is the one the event happens to, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
 
-The ending picks **kind** vs **this instance**. Non-resume (**-l** / **-m** / **-n**) is a lasting label: *a teacher*. Resume (**-r**) is the person or place of **that** latest matching event: *the one teaching*.
+The ending picks **any** vs **this instance**. Non-resume (**-l** / **-m** / **-n**) is someone who does it, with no claim about how often: *someone who teaches*. Resume (**-r**) is the person or place of **that** latest matching event: *the one teaching*. Later, a usual role, the kind English names as a job (*a teacher*), adds a scope vowel after the stem ([the usual role](#usual-role)).
 
 ## Beginner {#beginner}
 
 ### Role compounds: the doer (`a`) {#role-compounds}
 <a id="agent-place-patient-recipient"></a>
 
-English *a teacher* names who teaches as a kind, from the same idea as *teach*. Write a person or thing letter (`/z/` `/d/` `/b/`), then **`a`**, then mid-word **`x`**, then the event root, then an ordinary [reference ending](word-endings.md). The result is one content word (a **role compound**) that you can use as a participant. (cue: **a** ≈ add (add a doer))
+English *someone who teaches* names a person from what they do, from the same idea as *teach*. Write a person or thing letter (`/z/` `/d/` `/b/`), then **`a`**, then mid-word **`x`**, then the event root, then an ordinary [reference ending](word-endings.md). The result is one content word (a **role compound**) that you can use as a participant. (cue: **a** ≈ add (add a doer))
 
 > `zaxedehol varahal.`
 >
 > z-agent-x-teach | v-run
 >
-> "A teacher runs."
+> "Someone who teaches runs."
 
-The last letter is the ordinary [reference ending](word-endings.md): **-l** takes the stem’s everyday concrete sense, **-m** the published abstract. `zaxedehol` is *a teacher*; `zaxavadal` is *a fighter*; `zaxavadam` is *a struggler*. Non-resume names the **lexical** role. You do not need a prior teaching or fight in the talk.
+The last letter is the ordinary [reference ending](word-endings.md): **-l** takes the stem’s everyday concrete sense, **-m** the published abstract. `zaxedehol` is *someone who teaches*; `zaxavadal` is *someone who fights*; `zaxavadam` is *someone who struggles*. You do not need a prior teaching or fight in the talk, and the word says nothing about how often: one lesson is enough.
 
-When the event is a conventional compound, the role compound takes the whole stem: `zaxubugalahahal` is *a reader*, from `ubugalahahal` *read*.
+When the event is a conventional compound, the role compound takes the whole stem: `zaxubugalahahal` is *someone who reads*, from `ubugalahahal` *read*.
 
-A noun that specifies the event goes in the same stem, joined with **`x`** like any [ordinary compound](x-compounds.md#ordinary-compound-order): `zaxodogaxowogal` is *a dog walker* (the doer of *dog-walking*). The noun's part in the event is as open as in English (*dog walker*, *coffee maker*); for an exact part, use a [hook](hooks.md#extra-noun) or a second sentence. **-r** resumes the whole stem.
+A noun that specifies the event goes in the same stem, joined with **`x`** like any [ordinary compound](x-compounds.md#ordinary-compound-order): `zaxodogaxowogal` is *someone who walks dogs* (the doer of *dog-walking*). The noun's part in the event is as open as in English (*dog walker*, *coffee maker*); for an exact part, use a [hook](hooks.md#extra-noun) or a second sentence. **-r** resumes the whole stem.
 
 > `zaxodogaxowogal varahal.`
 >
 > z-agent-x-dog-x-walk | v-run
 >
-> "A dog walker runs."
+> "Someone who walks dogs runs."
 
 A role compound has one role vowel, left of the first **`x`**. It is never one piece of another compound.
 
-**Compare with:** a teacher puts the role vowel **left** of **`x`**. Later, [ability](intention.md#ability) (*can teach*) puts a vowel **right** of **`x`**, and the two can combine.
+**Compare with:** a role compound puts the role vowel **left** of **`x`**. Later, [ability](intention.md#ability) (*can teach*) puts a vowel **right** of **`x`**, and the two can combine.
 
 ### This instance (`-r`)
 
-Once the talk already has a matching event (*teaches*), **-r** on the same stem means **this** doer of that event (*the one teaching*), not the kind *teacher*.
+Once the talk already has a matching event (*teaches*), **-r** on the same stem means **this** doer of that event (*the one teaching*), not just anyone who teaches.
 
 > `zazawan vedehol.`
 > `zaxedehor vezebal.`
@@ -55,7 +55,7 @@ A role compound can also continue a pronoun. Keep its role-compound shape, spell
 
 ### The undergoer (`u`)
 
-English *the one seen* or *the one fought* names the person the event happens to. Use the same compound shape as the doer, but write **`u`** in the vowel slot. (cue: **u** ≈ undo (the one it happens to)) Non-resume is that role as a kind; **-r** is **this** undergoer of the latest matching event.
+English *the one seen* or *the one fought* names the person the event happens to. Use the same compound shape as the doer, but write **`u`** in the vowel slot. (cue: **u** ≈ undo (the one it happens to)) Non-resume is someone it happens to (*someone seen*); **-r** is **this** undergoer of the latest matching event.
 
 > `zazawan dagadul vahahal.`
 > `zuxahahar varahal.`
@@ -70,13 +70,13 @@ English *the one seen* or *the one fought* names the person the event happens to
 
 English *a sleep-place* or *bedtime* names where or when an event happens, from the same idea as *sleep*. Use the same compound shape as the doer, but write **`e`** in the vowel slot. That named thing is the **scene of the event**: its place or its time, not the sleeper. (cue: **e** ≈ order (the scene the act is ordered in))
 
-You can name that kind of scene with no prior sleep in the talk:
+You can name such a scene with no prior sleep in the talk:
 
 > `zazawan dexezebal vahahal.`
 >
 > z-Azawan | d-scene-x-sleep | v-see
 >
-> "Azawan sees a sleep-place."
+> "Azawan sees a place where someone sleeps."
 
 The same word can be a time. In `/h/`, `hexezebal` is *at bedtime*.
 
@@ -90,7 +90,7 @@ Once the talk already has a matching event, **-r** means **this** scene of that 
 >
 > "Alahen screams. Azawan sees the scream-place."
 
-`zexagozal` is a construct-place (the **-l** sense of *construct*). A construction site as a listed kind, with no event, can stay `dagezal`.
+`zexagozal` is a place where something is constructed (the **-l** sense of *construct*). A construction site as a listed kind, with no event, can stay `dagezal`.
 
 **Compare with:** `zaxagozal` is who constructs; `duxagozal` is what is constructed. *Constructs in a house* locates **that same** constructing: extra-noun [hook](hooks.md#extra-noun) **`al`** plus `/b/`. Do not write **`exROOT`** when a hook on that clause would do. *Writes with a hammer* is likewise an extra-noun hook plus `/b/`, not this vowel. To name the tool itself as a kind, see [instruments](#instrument).
 
@@ -106,7 +106,7 @@ English *the one told* names who gets the telling. That person sits in unhosted 
 >
 > "Azawan tells. The one told runs."
 
-You can name that kind with no prior telling: `zoxezebel` is an addressee (the **-l** sense of *speech*).
+You can name that party with no prior telling: `zoxezebel` is someone told something (the **-l** sense of *speech*).
 
 Some stems name a **relation** (who is bound to whom), not an action. The extra person of that relation sits in **hosted** `/b/` after the relation word. The same **`o`** names that person from the relation stem (*the other party of the bond*). That named party is the **reltum**.
 
@@ -122,14 +122,14 @@ Some stems name a **relation** (who is bound to whom), not an action. The extra 
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…axROOT…` | names the doer of an event | *a teacher* / *the one teaching* | **a** ≈ add (add a doer) |
-| `…exROOT…` | names the scene (place or time) of an event | *a sleep-place*, *bedtime* / *that scream-place* | **e** ≈ order (the scene the act is ordered in) |
-| `…uxROOT…` | names the undergoer of an event | *someone seen* (kind) / *the one seen* (this seeing) | **u** ≈ undo (the one it happens to) |
-| `…oxROOT…` | names the extra `/b/` party | *an addressee* / *the one told* | **o** ≈ one (that extra one) |
+| `…axROOT…` | names the doer of an event | *someone who teaches* / *the one teaching* | **a** ≈ add (add a doer) |
+| `…exROOT…` | names the scene (place or time) of an event | *a place where someone sleeps* / *that scream-place* | **e** ≈ order (the scene the act is ordered in) |
+| `…uxROOT…` | names the undergoer of an event | *someone seen* / *the one seen* (this seeing) | **u** ≈ undo (the one it happens to) |
+| `…oxROOT…` | names the extra `/b/` party | *someone told* / *the one told* | **o** ≈ one (that extra one) |
 
-A role compound fills `/z/`, `/d/`, `/b/`, or `/ɡ/`. Under `/x/` it sets a [topic](pronouns.md#topic), as any compound does (`xaxedehol` *now, about teachers*), and under `/y/` with **-n** or **-r** it calls someone (`yaxebezan` calls the doctor). It names a role of an event, so a [special pronoun](pronouns.md#special-pronouns) (root + **-n**) is never its stem; the same root on **-l** is an ordinary word.
+A role compound fills `/z/`, `/d/`, `/b/`, or `/ɡ/`. Under `/x/` it sets a [topic](pronouns.md#topic), as any compound does (`xaxedehol` *now, about people who teach*), and under `/y/` with **-n** or **-r** it calls someone (`yaxebezan` calls the doctor). It names a role of an event, so a [special pronoun](pronouns.md#special-pronouns) (root + **-n**) is never its stem; the same root on **-l** is an ordinary word.
 
-Non-resume is the **kind** (occupation, usual scene, usual undergoer). **-r** looks back to the latest verb, event noun, or relation with that whole stem (including a stem already inside a role compound) and names **this instance**. The vowel still picks which part you mean: doer, scene, undergoer, or extra `/b/` party.
+Non-resume is **any** such participant: someone who does it, a place or time where it happens, someone it happens to. Later, a scope vowel after the stem makes it the [usual role](#usual-role). **-r** looks back to the latest verb, event noun, or relation with that whole stem (including a stem already inside a role compound) and names **this instance**. The vowel still picks which part you mean: doer, scene, undergoer, or extra `/b/` party.
 
 ### Without the stem: role pointers {#role-pointers-family}
 
@@ -159,37 +159,38 @@ If you put the event stem on a thing letter with no role vowel (`davadal`), you 
 
 **Related form:** a verb’s own **-r** resumes that [event](pronouns.md) (`vavadar` *that fighting*). Role **`ax`** / **`ux`** names the people.
 
-### Saying someone is a teacher
+### Saying someone does it
+<a id="saying-someone-is-a-teacher"></a>
 
-To say someone **is a teacher**, put the same role stem on `/ɡ/`, as in [classification](predication.md#classification). Non-resume still names the kind: **-l** *teacher*, or on *fight* **-l** *fighter* / **-m** *struggler*. Resume on `/ɡ/` classifies them as **this** doer of the matching event (*is the one teaching*).
+To say someone **is one who teaches**, put the same role stem on `/ɡ/`, as in [classification](predication.md#classification). The word says only that they do it, with no claim about how often. Resume on `/ɡ/` classifies them as **this** doer of the matching event (*is the one teaching*).
 
 > `zazawan gaxedehol.`
 >
 > z-Azawan | g-agent-x-teach
 >
-> "Azawan is a teacher."
+> "Azawan is one who teaches."
 
 > `zazawan gaxavadal.`
 >
 > z-Azawan | g-agent-x-fight
 >
-> "Azawan is a fighter."
+> "Azawan is one who fights."
 
 > `zazawan gaxavadam.`
 >
 > z-Azawan | g-agent-x-struggle
 >
-> "Azawan is a struggler."
+> "Azawan is one who struggles."
 
-The same adjective after another noun is English *fighter guard*: the host is classified as that role.
+The same adjective after another noun picks out a host by that role.
 
 > `zazawan dagavol gaxavadal vahahal.`
 >
 > z-Azawan | [d-guard | g-agent-x-fight] | v-see
 >
-> "Azawan sees a fighter guard."
+> "Azawan sees a guard who fights."
 
-**Compare with:** ordinary `gavadal` is *fight* as a property. English *the guard who fought (that time)* with extra participants or a place is [two sentences](dependents.md#which-noun), not this kind word.
+**Compare with:** the plain root on `/ɡ/` is the act [in progress](predication.md#in-progress): `dagavol gavadal` is *a fighting guard*, in the middle of a fight. *Is a teacher*, the usual role, comes [later](#usual-role). English *the guard who fought (that time)* with extra participants or a place is [two sentences](dependents.md#which-noun), not this role word.
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -222,7 +223,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *A constructor sits.*
+**1.** *Someone who constructs sits.*
 
 ::: details Show answer
 `zaxagozal vehahel.`
@@ -254,14 +255,14 @@ z-Alahen | v-scream . z-Azawan | d-←scene-x-scream | v-see
 z-Azawan | z-Ahaben | v-see . z-←patient-x-see | v-sit
 :::
 
-**5.** *Azawan is a fabricator.*
+**5.** *Azawan is one who fabricates.*
 
 ::: details Show answer
 `zazawan gaxagozam.`
 
 z-Azawan | g-agent-x-fabrication
 
-*Azawan is a fabricator.*
+*Azawan is one who fabricates.*
 :::
 
 **6.** *Azawan sees a construction site.*
@@ -296,7 +297,7 @@ z-Azawan | [g-bond | b-Alahen] . z-←recipient-x-bond | v-fight
 z-Azawan | v-sleep | [at | b-construction] . z-Alahen | d-←scene.same | v-see
 :::
 
-**10.** *A dog walker sees Azawan.*
+**10.** *Someone who walks dogs sees Azawan.*
 
 ::: details Show answer
 `zaxodogaxowogal zazawan vahahal.`
@@ -312,7 +313,7 @@ z-agent-x-dog-x-walk | z-Azawan | v-see
 
 z-Alahen | d-scene-x-sleep | v-see
 
-*Alahen sees a sleep-place.*
+*Alahen sees a place where someone sleeps.*
 :::
 
 **2.** `zahaben zazawan vahahal. zuxahahar vehahel.`
@@ -339,7 +340,7 @@ z-Alahen | v-construct . z-←agent-x-construct | d-helmet | v-see
 
 z-agent-x-construct | v-punch
 
-*A constructor punches.*
+*Someone who constructs punches.*
 :::
 
 **5.** `zalahen dagezal vahahal.`
@@ -384,10 +385,32 @@ z-Ahaben | [g-bond | b-Alahen] . z-←recipient-x-bond | v-punch
 
 z-agent-x-dog-x-walk | v-sit
 
-*A dog walker sits.*
+*Someone who walks dogs sits.*
 :::
 
 ## Intermediate {#intermediate}
+
+### The usual role (`the`) {#usual-role}
+
+English *a teacher* says more than *someone who teaches*: teaching is that person's usual role, often a job. Write the role compound, then mid-word **`th`**, then **`e`**, then the ending. This is [pattern](predication.md#scope-pattern) scope on the role: it holds as a repeated tendency. (cue: **e** ≈ order (a sequence of times))
+
+> `zaxedehothel varahal.`
+>
+> z-agent-x-teach-th-pattern | v-run
+>
+> "A teacher runs."
+
+`zaxavadathel` is *a fighter*, and `zaxodogaxowogathel` is *a dog walker*. A role compound without **`the`** never makes that claim, so one fight does not make someone a fighter.
+
+**Compare with:** **`the`** fills the one seam a role compound has, so a usual role does not also take [ability](intention.md#role-ability). Other [scope vowels](predication.md#scope-role) go in the same spot: **`tha`** is *this time only*, **`thu`** is *so-called*.
+
+The other role vowels work the same way. With **`the`**, a scene is where the event usually happens: `dexezebathel` is *a sleeping place*. To say someone **is** a teacher, put the same word on `/ɡ/`.
+
+> `zazawan gaxedehothel.`
+>
+> z-Azawan | g-agent-x-teach-th-pattern
+>
+> "Azawan is a teacher."
 
 ### Instrument (`ae`) {#instrument}
 

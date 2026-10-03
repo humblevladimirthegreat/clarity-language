@@ -84,7 +84,7 @@ Each batch follows the [Batch loop](#batch-loop). Inconsistencies in the existin
 
 No new triage or application happens here; both happen per batch. This phase only checks that nothing was left behind.
 
-- [x] Revisit rows deferred at a batch ruling and any open Phase 2 row; each is now ruled and applied, or recorded as deferred with a reason. E-41 and E-43 declines confirmed (D-30); E-03 recorded as unassigned; *exactly like* (E-07) got an english.md row; E-11 (verb root on `/ɡ/`) deferred in TODO.md.
+- [x] Revisit rows deferred at a batch ruling and any open Phase 2 row; each is now ruled and applied, or recorded as deferred with a reason. E-41 and E-43 declines confirmed (D-30); E-03 recorded as unassigned; *exactly like* (E-07) got an english.md row; E-11 (verb root on `/ɡ/`) deferred, then applied: an event root on `/ɡ/` is in progress (`predication.md`), and a role compound is a usual role only with `the` (D-40).md.
 - [ ] Cross-check across batches: duplicate rows that slipped through, and extensions that later batches made redundant or contradictory. Not run separately; waived at close-out.
 - [ ] Confirm every **awkward** / **missing** row is **covered**, **by design**, or deferred with a reason. Not run separately; waived at close-out.
 - [x] Run `npm run build` and `npm test` on the final tree.

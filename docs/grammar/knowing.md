@@ -1340,9 +1340,9 @@ To say **how you know** the general claim, add a [channel](#evidentiality). On a
 >
 > "Azawan always walks, from the few cases I have seen."
 
-> `zual gaxedehol vedehol thunel.`
+> `zual gaxedehothel vedehol thunel.`
 >
-> [z-everything | g-agent-x-teach] | v-teach | th-INFERRED.strong
+> [z-everything | g-agent-x-teach-th-pattern] | v-teach | th-INFERRED.strong
 >
 > "Every teacher teaches; it follows."
 
@@ -1358,8 +1358,8 @@ The fence says how far the claim reaches, and the channel says what it rests on.
 |---------|---------------------|---------|---------|
 | *usually*, *as a rule* | `huam` / `zuam` | any, or none | `zazawan huam vowogal.` |
 | *always, as far as I have checked* | `hual` / `zual` | a weak channel | `zazawan hual vowogal thobar.` |
-| *it follows that every …* | `zual` | INFERRED.strong `thunel` | `zual gaxedehol vedehol thunel.` |
-| *by definition* | `zual` + `thedam barl` | none | `zual gobel gaxedehol thedam barl zober vedehol.` |
+| *it follows that every …* | `zual` | INFERRED.strong `thunel` | `zual gaxedehothel vedehol thunel.` |
+| *by definition* | `zual` + `thedam barl` | none | `zual gobel gaxedehothel thedam barl zober vedehol.` |
 | *under the rules of …* | `hal` / `hual` | RECORDED with the rules in `/b/` | `zalahen hal vabahel therel bazagul.` |
 | *cats are sleepy* (in general) | `zuam` + kind | any, or none | `zuam gagadul gezebul thobam.` |
 
@@ -1373,9 +1373,9 @@ A [cause or condition](causation.md) on a general claim says how things work. It
 
 A **definition** works both ways: whatever has the property is that kind, and every member of the kind has it. Write it on a closed fence with **`thedam`** (*if and only if*, from [causation](causation.md#only-because)). The grounds sentence is the defining property. A definition needs no channel, because it is a decision about a word, not a report about the world.
 
-> `zual gobel gaxedehol thedam barl zober vedehol.`
+> `zual gobel gaxedehothel thedam barl zober vedehol.`
 >
-> [z-everything | g-person] | g-agent-x-teach | [th-iff | b-that-clause] | z-←person | v-teach
+> [z-everything | g-person] | g-agent-x-teach-th-pattern | [th-iff | b-that-clause] | z-←person | v-teach
 >
 > "A person is a teacher if and only if they teach (by definition)."
 
@@ -1406,8 +1406,8 @@ Short drills for Advanced. Try each item before opening **Show answer**. Score l
 | *sit* | `vehahel` | `ehahel` *chair* | |
 | *think* | `vevegal` | | |
 | *punch* | `vabahel` | | |
-| *agent-teach* | `gaxedehol` | `edehol` *teach* | |
-| *agent-fight* | `gaxavadal` | `avadal` *fight* | |
+| *agent-teach-th-pattern* | `gaxedehothel` | `edehol` *teach* | |
+| *agent-fight-th-pattern* | `gaxavadathel` | `avadal` *fight* | |
 | *teach* | `vedehol` | | |
 | *fight* | `vavadal` | | |
 | *soccer* | `azagul` | | |
@@ -1457,9 +1457,9 @@ z-Azawan | h-always | v-sit | th-PATTERN.weak
 **4.** *Every teacher teaches; it follows.*
 
 ::: details Show answer
-`zual gaxedehol vedehol thunel.`
+`zual gaxedehothel vedehol thunel.`
 
-[z-everything | g-agent-x-teach] | v-teach | th-INFERRED.strong
+[z-everything | g-agent-x-teach-th-pattern] | v-teach | th-INFERRED.strong
 :::
 
 **5.** *Every cat sleeps when it is sleepy; that is how it works.*
@@ -1539,11 +1539,11 @@ z-Alahen | h-always | v-write | th-PATTERN.weak
 *Alahen always writes, from the few cases I have seen.*
 :::
 
-**4.** `zual gaxavadal vavadal thunel.`
+**4.** `zual gaxavadathel vavadal thunel.`
 
 ::: details Show answer
 
-[z-everything | g-agent-x-fight] | v-fight | th-INFERRED.strong
+[z-everything | g-agent-x-fight-th-pattern] | v-fight | th-INFERRED.strong
 
 *Every fighter fights; it follows.*
 :::

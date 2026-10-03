@@ -27,7 +27,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | full root **`x`** full root | two roots, one word | `zebeyaxabodel` *peanut butter* | **x** ≈ plus |
-| **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxedehol` *a teacher* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
+| **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxedehol` *someone who teaches* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
 
 **Compare with:** two people stay two words (`zazawan zalahen`). One double name is one word (`zazawaxalahen`).
 
@@ -73,7 +73,7 @@ Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agaza
 
 **Compare with:** a property on a noun uses `/ɡ/` (or `/w/`). A list uses a [join](joins.md).
 
-**Related form:** *a teacher* (who does / where it happens / who undergoes / who is told; **-r** *the one teaching*) uses a [role compound](roles.md#role-compounds).
+**Related form:** *someone who teaches* (who does / where it happens / who undergoes / who is told; **-r** *the one teaching*) uses a [role compound](roles.md#role-compounds).
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -244,12 +244,12 @@ z-Azawan | z-friend | v-punch
 
 ### Left and right of `x` {#families-by-shape}
 
-Beginner already used two roots glued with **`x`**, dictionary words with no **`x`**, and *a teacher*. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family.
+Beginner already used two roots glued with **`x`**, dictionary words with no **`x`**, and *someone who teaches*. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | role vowel(s) **`x`** **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** | [role pointer](pronouns.md#role-pointers) | `zaxar` *they* (whoever did the latest thing); `zaxal` *another one*; `zaxam` *what they did* | **a** again / **e** echo / **o** other / **u** unsaid |
-| **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxedehol` *a teacher* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
+| **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxedehol` *someone who teaches* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
 | name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | [conversation length](#conversation-length) | *Azawan — I have time* | vowel on the name |
 | longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [ability](intention.md#ability) | *can’t sing right now* | extra vowel after the host |
 | full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zebeyaxabodel`; `zohuxaluden` ([multipart names](word-endings.md#phrasal-proper-names)) | **x** ≈ plus |
@@ -276,7 +276,7 @@ When English stacks labels left to right (*crush* then *love*; a shop name with 
 
 [Multipart names](word-endings.md#phrasal-proper-names) use the same order (given name, then family, then a further title). [Body left / right](roles.md#viewpoint-laterals) is not this stack: it joins the direction and whose facing counts with **`th`** (`gewezathazawan`), because the second root is a point of view, not a kind.
 
-A [role compound](roles.md#role-compounds) can take such a stack as its stem (`zaxodogaxowogal` *a dog walker*), but is never one piece of a stack.
+A [role compound](roles.md#role-compounds) can take such a stack as its stem (`zaxodogaxowogal` *someone who walks dogs*), but is never one piece of a stack.
 
 **Compare with:** a short office **handle** is one root plus [**-n**](word-endings.md#proper-name--n), not this stack. A dictionary compound is one listed word, not a live list you extend.
 

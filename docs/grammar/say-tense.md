@@ -25,6 +25,7 @@ An English tense bundles up to three questions: **when** the event sits, **how y
 | *has walked before* / *has never walked* | at least once / not once | **`hoham`** + **`har`** / **`hal`** ([ever / never](knowing.md#ever-never)) |
 | *had walked* | as of a past moment | [*as-of*](relations.md#as-of) plus the same stance |
 | *is walking* | it is in view | LIVE **`thodom`** |
+| *is walking* | they are in the middle of it | the event root on `/ɡ/`: `zazawan gowogal` ([in progress](predication.md#in-progress)) |
 | *is still walking* | the state goes on | **`hagem`** |
 | *has stopped walking* | the state ended | **`hewem`** |
 | *will walk* | a plan | PLAN **`thamam`** |
@@ -113,11 +114,17 @@ English *had left* means the leaving counted **as of** an earlier moment. Write 
 >
 > "As of 22 July, Azawan was going to walk."
 
-### Progressive: in view, still, or nothing {#progressive}
+### Progressive: mid-way, in view, or still {#progressive}
 
-**Needs:** [Live vs memory](knowing.md#live-vs-memory) · [Already, still, not yet](knowing.md#phasal)
+**Needs:** [In progress](predication.md#in-progress) · [Live vs memory](knowing.md#live-vs-memory) · [Already, still, not yet](knowing.md#phasal)
 
-Agazan has no *-ing* form. English *is walking* usually means one of two things. Say **`thodom`** when the walking is in view now. Say **`hagem`** when you stress that it goes on.
+English *is walking* usually means one of three things. Put the event root on `/ɡ/` when you say they are in the middle of it. Say **`thodom`** when the walking is in view now. Say **`hagem`** when you stress that it goes on.
+
+> `zazawan gowogal.`
+>
+> z-Azawan | g-walk
+>
+> "Azawan is walking."
 
 > `zazawan thodom vowogal.`
 >

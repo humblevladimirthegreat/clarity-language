@@ -48,6 +48,8 @@ An **adjective** names a property of a noun (*blue*). Mark it with `/ɡ/` and pu
 >
 > "A blue dog walks."
 
+When the root names an event, the adjective says the noun is in the middle of it: `gowogal` after *dog* is *a walking dog* ([in progress](predication.md#in-progress)).
+
 ### Extra detail on an adjective (`/w/`) {#adjective-detail-w}
 
 To say how strongly a property holds (*very* blue), add a word marked with `/w/` immediately before the adjective. The `/w/` word describes only the adjective right after it, not the noun.

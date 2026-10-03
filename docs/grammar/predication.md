@@ -44,6 +44,28 @@ This use is **classification**. Same `/ɡ/` place as a quality; the kind word is
 
 **Compare with:** *A dog walks* uses a noun plus a verb (`zodogal vowogal`). When the subject **is** that kind, keep the kind on `/ɡ/`.
 
+### In the middle of an event {#in-progress}
+
+Some roots name an event (*walk*, *fight*, *sing*). On `/ɡ/`, such a root says the noun is **in the middle of** that event, as the one doing it: English *walking*. The ending picks the sense as always, so **-l** is the everyday event and **-m** the published abstract (`gavadam`, *struggling*).
+
+> `zazawan gowogal.`
+>
+> z-Azawan | g-walk
+>
+> "Azawan is walking."
+
+After a noun it works like any adjective. The event is under way at the time of the clause, so the dog below is walking while Azawan sees it.
+
+> `zazawan dodogal gowogal vahahal.`
+>
+> z-Azawan | [d-dog | g-walk] | v-see
+>
+> "Azawan sees a walking dog."
+
+Only a sense that is an event reads this way. A thing root stays a kind (`godogal`, *is a dog*), even when English has a verb from the same picture.
+
+**Compare with:** the verb in `zazawan vowogal.` reports the walking without saying it is under way. Later, a [role word](roles.md#saying-someone-is-a-teacher) names someone who walks, with no claim that the walking is under way.
+
 ### Existence (a lone noun) {#existence}
 
 A noun with no verb and no `/ɡ/` word after it says that the thing **exists** or is here (*there is …*).
@@ -204,6 +226,14 @@ z-police | [g-SAME | b-Ahaben]
 z-Alahen | [g-SAME | b-Azawan]
 :::
 
+**9.** *Ahaben is running.*
+
+::: details Show answer
+`zahaben garahal.`
+
+z-Ahaben | g-run
+:::
+
 #### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zabazel vowogal.`
@@ -276,6 +306,15 @@ y-question | z-Alahen | [g-SAME | b-Ahaben]
 z-Ahaben | [g-SAME | b-Azawan]
 
 *Ahaben is Azawan.*
+:::
+
+**9.** `zabazel gowogal.`
+
+::: details Show answer
+
+z-police | g-walk
+
+*There is a police officer walking.*
 :::
 
 ## Intermediate {#intermediate}
@@ -404,13 +443,13 @@ With no `/b/`, the party is unstated: *a stranger (to someone)*.
 
 #### On a role compound {#scope-role}
 
-A [role compound](roles.md#role-compounds) takes the same seam after its stem, which scopes the role, not the act. `gaxedehothal` says someone is a teacher this time, and `gaxedehothel` that they tend to act as one. **`thu`** is *so-called*, and **`tho`** takes its `/b/` like any other `/ɡ/`.
+A [role compound](roles.md#role-compounds) takes the same seam after its stem, which scopes the role, not the act. A bare role compound leaves the reach unsaid (`gaxedehol`, *one who teaches*). **`the`** makes it the [usual role](roles.md#usual-role): `gaxedehothel` is *is a teacher*. **`tha`** keeps it to this time (`gaxedehothal`). **`thu`** is *so-called*, and **`tho`** takes its `/b/` like any other `/ɡ/`.
 
 > `zalahen gaxedehothal.`
 >
 > z-Alahen | g-agent-x-teach-th-once
 >
-> "Alahen is a teacher this time."
+> "Alahen is the teacher this time."
 
 > `zaxedehothul varahal.`
 >

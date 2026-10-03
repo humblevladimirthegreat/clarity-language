@@ -37,13 +37,13 @@ Beginner already used two sentences for English *who / that / which*. Prefer [re
 >
 > "Azawan sees a dog in a bank. The dog runs."
 
-A place, tool, or *of*-relation on the noun is still an extra-noun [hook](hooks.md#extra-noun) or hosted `/ɡ/` + `/b/` (*the guard [in](hooks.md#extra-noun) a bank*, *a book written [with a hammer](hooks.md#extra-noun)*). A one-place role as a **kind** (*sitting guard*, *teacher*, *a sleep-place*) is a [role compound](roles.md#role-compounds) on `/ɡ/` with a non-resume ending, the same pattern as *is a teacher*. Resume **-r** on that compound is **this instance** (*the one teaching*), not the occupation.
+A place, tool, or *of*-relation on the noun is still an extra-noun [hook](hooks.md#extra-noun) or hosted `/ɡ/` + `/b/` (*the guard [in](hooks.md#extra-noun) a bank*, *a book written [with a hammer](hooks.md#extra-noun)*). A one-place role (*a guard who sits*, *a place where someone sleeps*) is a [role compound](roles.md#role-compounds) on `/ɡ/` with a non-resume ending; add **`the`** for a usual role (*a teacher*), the same pattern as *is a teacher*. Resume **-r** on that compound is **this instance** (*the one teaching*), not the occupation. A noun in the middle of an act (*a fighting guard*) is the plain event root on `/ɡ/` ([in progress](predication.md#in-progress)).
 
 > `zazawan dagavol gaxehahel vahahal.`
 >
 > z-Azawan | [d-guard | g-agent-x-chair] | v-see
 >
-> "Azawan sees a sitting guard."
+> "Azawan sees a guard who sits."
 
 For English *whose*, resume the person after the [whose hook **`em`**](hooks.md#genitive) in the second sentence. Use **`gegabem`** instead when the point is that the guard legally owns it.
 
@@ -61,7 +61,7 @@ English uses the same *who* clause for two jobs. When it picks out **which** one
 >
 > "Azawan, who walks, sings."
 
-**Compare with:** ordinary `gehahel` is *chair* / *position* as a property, not *sitting*. [Restrictors](restrictors.md) say when a **claim** counts (*never*, *only when raining*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the **same** first noun still need another sentence ([complex chaining](clause.md#complex-chaining)).
+**Compare with:** ordinary `gehahel` is *chair* / *position* as a property, not *sitting*: the root's everyday sense is a chair, not an event, so it has no [in-progress](predication.md#in-progress) reading. For *sitting*, use the role word `gaxehahel`. [Restrictors](restrictors.md) say when a **claim** counts (*never*, *only when raining*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the **same** first noun still need another sentence ([complex chaining](clause.md#complex-chaining)).
 
 ### Stacked owners (*Azawan's dog's bone*) {#stacked-owners}
 
@@ -174,79 +174,79 @@ Resume the handle like any name: its whole stem + **-r** (`zubugar`).
 
 ### Who does it: *student*, *singer*, *manager* {#agent-nouns}
 
-**Needs:** [Role compounds (the doer)](roles.md#role-compounds) · [Saying someone is a teacher](roles.md#saying-someone-is-a-teacher)
+**Needs:** [Role compounds (the doer)](roles.md#role-compounds) · [The usual role](roles.md#usual-role) · [Saying someone is a teacher](roles.md#saying-someone-is-a-teacher)
 
-English names a person by what they do (*a singer*, *a manager*). Agazan builds that noun from the event root: person letter, **`a`**, **`x`**, the root, then **-l**. `zaxezehel` is *a singer* from `ezehel` *sing*, and on `/ɡ/` (`gaxezehel`) it says someone is one. Only roots whose everyday sense is the event work this way, so one stem often covers several English jobs.
+English names a person by what they usually do (*a singer*, *a manager*). Agazan builds that noun from the event root: person letter, **`a`**, **`x`**, the root, then **`the`** and the ending ([the usual role](roles.md#usual-role)). `zaxezehethel` is *a singer* from `ezehel` *sing*, and on `/ɡ/` (`gaxezehethel`) it says someone is one. Without **`the`**, `zaxezehel` is only *someone who sings*. Only roots whose everyday sense is the event work this way, so one stem often covers several English jobs.
 
-> `zaxelehal varadal.`
+> `zaxelehathel varadal.`
 >
-> z-agent-x-learn | v-write
+> z-agent-x-learn-th-pattern | v-write
 >
 > "A student writes."
 
 | Agazan | English | Same root as |
 |--------|---------|--------------|
-| `zaxelehal` | *student* / *pupil* | `elehal` *learn* |
-| `zaxedehol` | *teacher* / *professor* / *coach* | `edehol` *teach* |
-| `zaxarezel` | *researcher* | `arezel` *research* |
-| `zaxubugalahahal` | *reader* | `ubugalahahal` *read* |
-| `zaxagahalanabal` | *driver* | `agahalanabal` *drive* |
-| `zaxumuyulezebel` | *poet* | `umuyulezebel` *poetry* |
-| `zaxamoluzel` | *investor* | `amoluzel` *investment* |
-| `zaxamolameval` | *employee* | `amolameval` *employment* |
-| `zuexamolameval` | *employer* (the one who bears the cost) | `amolameval` *employment* |
+| `zaxelehathel` | *student* / *pupil* | `elehal` *learn* |
+| `zaxedehothel` | *teacher* / *professor* / *coach* | `edehol` *teach* |
+| `zaxarezethel` | *researcher* | `arezel` *research* |
+| `zaxubugalahahathel` | *reader* | `ubugalahahal` *read* |
+| `zaxagahalanabathel` | *driver* | `agahalanabal` *drive* |
+| `zaxumuyulezebethel` | *poet* | `umuyulezebel` *poetry* |
+| `zaxamoluzethel` | *investor* | `amoluzel` *investment* |
+| `zaxamolamevathel` | *employee* | `amolameval` *employment* |
+| `zuexamolamevathel` | *employer* (the one who bears the cost) | `amolameval` *employment* |
 | `zaxahal` | *participant* | `ahal` *handshake* |
-| `zaxagayel` | *leader* / *chairman* / *president* | `agayel` *crown* |
-| `zaxamel` | *director* | `amel` *compass* |
-| `zaxadedel` | *manager* / *executive* / *operator* | `adedel` *administrate* |
-| `zaxaludel` | *adviser* / *consultant* | `aludel` *lantern* |
+| `zaxagayethel` | *leader* / *chairman* / *president* | `agayel` *crown* |
+| `zaxamethel` | *director* | `amel` *compass* |
+| `zaxadedethel` | *manager* / *executive* / *operator* | `adedel` *administrate* |
+| `zaxaludethel` | *adviser* / *consultant* | `aludel` *lantern* |
 | `zaxahul` | *voter* | `ahul` *ballot* |
-| `zaxahahul` | *critic* | `ahahul` *judge* |
-| `zaxameval` | *maker* / *producer* / *manufacturer* | `ameval` *manufacture* |
-| `zaxunuzel` | *reporter* / *journalist* | `unuzel` *newspaper* |
+| `zaxahahuthel` | *critic* | `ahahul` *judge* |
+| `zaxamevathel` | *maker* / *producer* / *manufacturer* | `ameval` *manufacture* |
+| `zaxunuzethel` | *reporter* / *journalist* | `unuzel` *newspaper* |
 | `zaxodol` | *witness* / *reference* (one who vouches) | `odol` *attest* |
-| `zaxaradal` | *writer* | `aradal` *write* |
-| `zaxabohal` | *analyst* | `abohal` *bar-chart* |
-| `zaxageval` | *designer* | `ageval` *craft* |
-| `zaxagozal` | *engineer* | `agozal` *construct* |
-| `zaxebezal` | *doctor* | `ebezal` *pill* |
-| `zaxezehel` | *singer* | `ezehel` *sing* |
-| `zaxumuyul` | *musician* | `umuyul` *sheet-music* |
-| `zaxavol` | *actor* | `avol` *theater* |
+| `zaxaradathel` | *writer* | `aradal` *write* |
+| `zaxabohathel` | *analyst* | `abohal` *bar-chart* |
+| `zaxagevathel` | *designer* | `ageval` *craft* |
+| `zaxagozathel` | *engineer* | `agozal` *construct* |
+| `zaxebezathel` | *doctor* | `ebezal` *pill* |
+| `zaxezehethel` | *singer* | `ezehel` *sing* |
+| `zaxumuyuthel` | *musician* | `umuyul` *sheet-music* |
+| `zaxavothel` | *actor* | `avol` *theater* |
 | `zaxebegal` | *player* | `ebegal` *playground* |
-| `zaxozobol` | *athlete* | `ozobol` *sport* |
+| `zaxozobothel` | *athlete* | `ozobol` *sport* |
 | `zaxowobol` | *competitor* | `owobol` *water-polo* |
 | `zaxevegol` | *winner* | `evegol` *victory* |
-| `zaxagaval` | *supporter* / *sponsor* | `agaval` *crutch* |
-| `zaxalaval` | *lover* | `alaval` *love* |
-| `zaxebedel` | *servant* / *server* / *assistant* | `ebedel` *plate* |
-| `zaxozewel` | *worker* | `ozewel` *sweat* |
-| `zaxehel` | *dealer* | `ehel` *currency-exchange* |
+| `zaxagavathel` | *supporter* / *sponsor* | `agaval` *crutch* |
+| `zaxalavathel` | *lover* | `alaval` *love* |
+| `zaxebedethel` | *servant* / *server* / *assistant* | `ebedel` *plate* |
+| `zaxozewethel` | *worker* | `ozewel` *sweat* |
+| `zaxehethel` | *dealer* | `ehel` *currency-exchange* |
 | `zaxemagel` | *immigrant* | `emagel` *immigration* |
 | `zaxewal` | *audience* (those who hear) | `ewal` *ear* |
-| `zaxogehel` | *terrorist* | `ogehel` *ogre* |
+| `zaxogehethel` | *terrorist* | `ogehel` *ogre* |
 | `zaxehebam` | *tourist* | `ehebal` *ship* |
-| `zaxahazam` | *neighbor* (add `om bamagon` for *near me*) | `ahazal` *house* |
-| `zaxabazel` | *officer* (police) | `abazel` *police* |
-| `zaxagedum` | *official* / *minister* | `agedum` *institution* |
-| `zaxuhul` | *secretary* (keeps the ledger) | `uhul` *ledger* |
-| `zaxebudam` | *artist* | `ebudam` *artistry* |
+| `zaxahazathem` | *neighbor* (add `om bamagon` for *near me*) | `ahazal` *house* |
+| `zaxabazethel` | *officer* (police) | `abazel` *police* |
+| `zaxageduthem` | *official* / *minister* | `agedum` *institution* |
+| `zaxuhuthel` | *secretary* (keeps the ledger) | `uhul` *ledger* |
+| `zaxebudathem` | *artist* | `ebudam` *artistry* |
 | `zaxegabem` | *owner* | `egabem` *ownership* |
-| `zaxozel` | *historian* | `ozel` *scroll* |
-| `zaxagegam` | *consumer* | `agegam` *consumption* |
+| `zaxozethel` | *historian* | `ozel` *scroll* |
+| `zaxagegathem` | *consumer* | `agegam` *consumption* |
 | `zaxabazul` | *passenger* / *rider* (of a bus) | `abazul` *bus* |
-| `zaxozewelx` | *staff* / *personnel* (workers as a set) | `ozewel` *sweat* |
+| `zaxozewethelx` | *staff* / *personnel* (workers as a set) | `ozewel` *sweat* |
 | `zuxahul` | *candidate* (the one voted for) | `ahul` *ballot* |
 | `zoxehel` | *customer* / *purchaser* (the other party of a trade) | `ehel` *currency-exchange* |
 | `zoxebebum` | *host* (the other party of a hospitality tie) | `ebebum` *hospitality* |
 
-The one acted on uses **`u`** instead: `zuxenehel` is *a victim* (the one harmed). A plural audience or staff takes plural **-x** (`zaxewalx`).
+Rows without **`the`** name a part in one event (*winner*, *witness*, *passenger*), so the bare word is enough. The one acted on uses **`u`** instead: `zuxenehel` is *a victim* (the one harmed). A plural audience or staff takes plural **-x** (`zaxewalx`).
 
-A noun that specifies the job goes in the stem: `zaxodogaxowogal` is *a dog walker*. The noun's part in the job is as open as in English.
+A noun that specifies the job goes in the stem: `zaxodogaxowogathel` is *a dog walker*. The noun's part in the job is as open as in English.
 
-English *as a teacher, I …* has no one-word form (`/h/` already means manner). Say the role, then the claim (`zamagon gaxedehol. zamagor vezebel.`), or use the [similative](relations.md#similative) for *like a teacher* (`humum baxedehol`).
+English *as a teacher, I …* has no one-word form (`/h/` already means manner). Say the role, then the claim (`zamagon gaxedehothel. zamagor vezebel.`), or use the [similative](relations.md#similative) for *like a teacher* (`humum baxedehothel`).
 
-*Shareholder* is *owner* of a part: `zaxegabem gobom bahazal` (owner of a part of the house). *Colleague* is a worker tied to you: `zaxozewel gohoham bamagon`. *Relative* is a person who is part of the family: `zobel gobom bavahal`.
+*Shareholder* is *owner* of a part: `zaxegabem gobom bahazal` (owner of a part of the house). *Colleague* is a worker tied to you: `zaxozewethel gohoham bamagon`. *Relative* is a person who is part of the family: `zobel gobom bavahal`.
 
 **Compare with:** for *boss* or *chief*, the tie form names whom they lead: `zalahen gagayem bazawan` is *Alahen is Azawan's boss* ([social relations](relations.md#social-relations)).
 
@@ -1033,20 +1033,20 @@ d[code > 1]
 
 **Needs:** [Role compounds](roles.md#role-compounds) · [Kind / role](predication.md#classification) · [Cite](spans.md#writing) · [Call someone](speech-moves.md#vocative) · [Vocatives](plurality.md#vocatives-y)
 
-These three English nouns each hide two jobs. *Role* is the function someone plays. Say it as a kind on `/ɡ/`, or as the doer of the event with a role compound. *Title* is either the name of a work or a claim to own something. *Address* is either speaking to someone or a speech.
+These three English nouns each hide two jobs. *Role* is the function someone plays. Say it as a kind on `/ɡ/`, or as the usual doer of the event with a role compound and **`the`**. *Title* is either the name of a work or a claim to own something. *Address* is either speaking to someone or a speech.
 
 | English | Agazan | Reading |
 |---------|--------|---------|
-| *role* (the function someone plays) | `zalahen gaxedehol.` | the role-compound kind on `/ɡ/` |
+| *role* (the function someone plays) | `zalahen gaxedehothel.` | the usual role: role compound with **`the`** on `/ɡ/` |
 | *title* (the name of a work) | `d@[onodan alahen]` | cite with **`@`** |
 | *title* (a claim to own) | `zegabem` | *ownership*, the abstract sense of `egabe` |
 | *address* (speak to someone) | `yalahen.` | call them with `/y/` + their name |
 | *address* (speak to a group) | `yobenx.` | `/y/` + the kind as a title, **-nx** |
 | *address* (a speech) | `vezebel` | the telling itself |
 
-> `zalahen gaxedehol.`
+> `zalahen gaxedehothel.`
 >
-> z-Alahen | g-agent-x-teach
+> z-Alahen | g-agent-x-teach-th-pattern
 >
 > "Alahen is a teacher." — that is his role
 
