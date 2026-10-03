@@ -32,6 +32,10 @@ The motive or prescription behind an action can be named on the sake it serves i
 
 **Why this order.** Rationality is hard without compassion first: lack of self-acceptance fuels motivated reasoning, so truth-seeking turns into defense. Empowerment without rationality is foolish; without compassion it is antisocial; without both it is dangerous. So the stack is compassion → rationality → empowerment.
 
+### Try it in English first {#try-it-in-english}
+
+You don't have to learn the whole language to start using these ideas. [Claritish](claritish/tone-marks.md) is eight short lessons on dropping single Agazan words into everyday English: *could be*, how you know, how far a label reaches, thanks that name the need, and more. Every word it teaches is already real Agazan.
+
 ## Limits {#limits}
 
 Agazan encodes psychological concepts and techniques, but it is **not therapy, counseling, or medical advice**, and it is not a substitute for professional care when you need it.

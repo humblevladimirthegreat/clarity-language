@@ -42,6 +42,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `numbers-applied.md` | Digit strings, time and date, ranges, measure phrases. |
 | `numeric-derivation.md` | Root + number derivation (advanced only). |
 | `english.md` + `say-*.md` | **Saying it in Agazan** recipe track, keyed by English job. Outside stage order; stage pages never link to it — [recipe track](docs/meta/grammar-docs.md#recipe-track). New gap resolutions that add no form go here. |
+| `claritish/` | **Claritish** on-ramp: closed Agazan words dropped into English, eight lessons plus a closing plug. Adds no forms; never links into the grammar except the closing page — [Claritish track](docs/meta/grammar-docs.md#claritish-track). |
 | `terminology.md` | English names for grammatical features. Teaching pages do not link into it except [How to learn](docs/grammar/introduction.md#how-to-learn). |
 
 ### Data

@@ -447,6 +447,23 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 
 **Direction:** track pages link to stage pages; **stage pages never link to or preview the track** (no *see the recipe*, no See also entry). The lookup pages ([english.md](../grammar/english.md), [terminology.md](../grammar/terminology.md)) may link to either.
 
+## Claritish track {#claritish-track}
+
+**Claritish** (`docs/grammar/claritish/`) is an on-ramp for English speakers: eight lessons plus a closing page that teach closed Agazan words to drop into ordinary English, so the psychological payoff starts on day one and every word learned is already Agazan. It adds no forms and is not design authority. Each lesson's owning grammar section is named in an editor-only `<!-- Source … -->` comment at the foot of the page; when that section changes a form or meaning, update the lesson.
+
+**What a drop-in is:** a closed Agazan word spelled exactly as the owning page spells it: a tone mark, a stance word, a sake word (thanks, sorry, feelings), or the set phrase `behodon`. No Agazan syntax around it (role letters, hosted `/b/`, joins, spans, hooks, role compounds, numeric derivation), no numerals or stance numbers, no respelling for English readers.
+
+- **Placement** follows English: where an adverb or tag would sit (after the clause, before it, or beside the word it colors). A stance drop-in covers the English clause it sits in. A lone feeling word with no clause is how the speaker feels right now.
+- **The one suffix on English words** is [label scope](../grammar/predication.md#label-scope), written with a hyphen: English word + `-th` + scope vowel + **-l** (`lied-thal`). The hyphen marks an English host; the letters after it are Agazan. Always **-l**.
+- **Tone marks** go before what they color, as in Agazan. English punctuation stays English (a sentence-final `!` is English; sentences need no Agazan period).
+- **Endings:** on stance drop-ins, **-l / -m / -r** are taught as the settled-to-passing scale (*-l ≈ lasting, -r ≈ right now*), and each lesson points out when the scale comes back. Lesson 6 (permission, requirement, consent) grades the source instead (*l ≈ law, m ≈ mouth, r ≈ read the room*). Never teach the concrete vs abstract citation split.
+
+**Marking:** in real use drop-ins are written plainly (no italics, quotes, or brackets), and Lesson 1 says so. On the site every drop-in is still a backtick span, so `build` checks it and `retie-docs` keeps it current. A hyphenated English host (`lied-thal`) is an English span. Table rows for the suffix use `-thal`, not `…-thal` (a template that does not parse).
+
+**Lesson shape:** H1 *Lesson N: …*; `## The gap`; the forms (a small table); about five English example sentences with drop-ins, never full Agazan; `## Practice` (English items, answers in `::: details Show answer`); then a `::: tip Full Agazan` box holding one Agazan example block (sentence, morph, English) that uses the lesson's form as a teaser. Order runs from zero-cost marks through the rationality and compassion words to the richest compose (emotion compose last).
+
+**Links:** lesson pages never link into the grammar, not even from the Full Agazan box: the grammar is learned in order. The closing page (`learn-agazan.md`) is the only exit, a single *Start learning Agazan* call to action to [how to learn](../grammar/introduction.md#how-to-learn). The way in is from [Why Agazan](../grammar/why-agazan.md#try-it-in-english) and the [introduction](../grammar/introduction.md#purpose); no other stage page links to Claritish. Lesson 1 sets `prev: false` and the closing page `next: false` so the sidebar's prev / next links stay inside the track.
+
 ## What belongs where
 <a id="what-belongs-where"></a>
 
@@ -454,6 +471,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 |----------|--------|
 | How to use the form | Grammar doc body under **`docs/grammar/`** (tagged **Beginner** / **Intermediate** / **Advanced**) |
 | How taught forms answer a less common English job | [Recipe track](#recipe-track) (`say-*.md`) |
+| Agazan words to drop into English, for learners not yet in the grammar | [Claritish track](#claritish-track) (`claritish/`) |
 | Gloss format | [glosses.md](glosses.md) |
 | Level rubric / reading order | [learning-levels.md](learning-levels.md) ([cross-doc path](learning-levels.md#cross-doc-path)) |
 | Doc content / teaching order | This page ([Beginner stage shape](#beginner-stage-shape), [later-stage shape](#later-stage-shape), [cues](#cues-columns), [Compare with](#compare-with)); wording and voice: [doc-style.md](doc-style.md) |

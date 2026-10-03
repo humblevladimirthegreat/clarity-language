@@ -8,6 +8,8 @@ How these docs work, and what “good grammar design” means for this language.
 
 Agazan encodes psychological distinctions into vocabulary and grammar so ordinary speech can nudge **compassion → rationality → empowerment**. Purpose, limits, and a tour of those aims: [Why Agazan](why-agazan.md).
 
+For an easy start before the grammar, [Claritish](claritish/tone-marks.md) teaches a few Agazan words you can drop into English today.
+
 ## Grammar design {#grammar-design}
 
 Two supporting goals sit beside the psychology:
