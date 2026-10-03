@@ -148,7 +148,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 You already write whether a turn is a statement, question, command, or prohibition. The extra choice here is **how firmly** you mean it.
 
-The act word is **`y` + vowel + ending**. The vowel sets the act (**a** statement, **o** question, **e** command, **u** prohibition). **-l** stands behind the act; **-m** leaves it open (soft / offered); **-r** marks an act you have [just formed](#act-r) or mean only for now. Write the act word when the setting is not a default statement. A period still lets you omit **`yal`**.
+The act word is **`y` + vowel + ending**. The vowel sets the act (**a** statement, **o** question, **e** command, **u** prohibition). **-l** stands behind the act; **-m** leaves it open (soft / offered); **-r** marks an act you hold only [for now](#act-r). Write the act word when the setting is not a default statement. A period still lets you omit **`yal`**.
 
 > `yam zazawan vowogal.`
 >
@@ -185,14 +185,14 @@ For *let's*, make a soft request with inclusive *we*, **`aha`** ([special pronou
 
 A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/y/` words, immediately before the act word, or before a body that defaults to a statement.
 
-#### Just formed or for now (**-r**) {#act-r}
+#### For now (**-r**) {#act-r}
 
-**-r** marks an act you **just formed** or mean only **for now**, the same as **-r** on a [polar stance](questions.md#polar-endings): a first take you have not checked, or a move you expect to revisit.
+**-r** marks an act you hold only **for now**, the same as **-r** on a [polar stance](questions.md#polar-endings): provisional, and you expect to revisit it.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **yar** | **first-take statement**: said as you think it, not yet checked | *off the top of my head* / *at first glance* | **a** add + **-r**: a claim just formed |
-| **yor** | **passing question**: it just occurred to you | *wait, …?* / *quick question* | **o** menu + **-r**: an ask that just came up |
+| **yar** | **provisional statement**: held until something better comes | *as things stand* / *for now, I take it that…* | **a** add + **-r**: a claim held for now |
+| **yor** | **working question**: asked to proceed, expect to re-ask | *just checking, …?* / *for now, is it…?* | **o** menu + **-r**: an ask for now |
 | **yer** | **command for now**: do this until told otherwise | *for now, …* / *go ahead and … for now* | **e** order + **-r**: an instruction you expect to revisit |
 | **yur** | **hold off**: don't, for now | *hold off on …* / *don't … yet* | **u** undo + **-r**: take the action back, for now |
 
@@ -204,9 +204,9 @@ A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/y/` w
 
 > `yar zazawan vowogal.`
 >
-> y-first-take | z-Azawan | v-walk
+> y-provisional-statement | z-Azawan | v-walk
 >
-> "Off the top of my head, Azawan walks."
+> "As things stand, Azawan walks."
 
 ### Emphatic prohibition {#emphatic-prohibition}
 
@@ -501,9 +501,9 @@ y-request | !v-stand
 
 ::: details Show answer
 
-y-first-take | z-Ahaben | v-stand
+y-provisional-statement | z-Ahaben | v-stand
 
-*Off the top of my head, Ahaben stands.*
+*As things stand, Ahaben stands.*
 :::
 
 ## See also

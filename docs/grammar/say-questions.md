@@ -34,7 +34,7 @@ English *Really?* asks the speaker to confirm what they just said. Write the con
 >
 > "Azawan walks." "Really?!"
 
-**Compare with:** **`yol.`** (*Huh?*) asks the speaker to say it again. **`yaer.`** (*I see*) takes the news in without asking anything.
+**Compare with:** **`yol.`** (*Huh?*) asks the speaker to say it again. **`yaer.`** (*I see*) takes the news in for now without asking anything.
 
 ### Reported questions {#reported-questions}
 
@@ -54,11 +54,11 @@ To report a *who* / *what* question inside a claim (*Azawan asks who walks*), pu
 
 **Needs:** [Three endings](questions.md#polar-endings)
 
-While someone tells you something, English keeps them going with *mm-hm* or *I see*, without agreeing or disagreeing. Reply **`yaer.`** after each point: it says only that the news reached you.
+While someone tells you something, English keeps them going with *mm-hm* or *I see*, without agreeing or disagreeing. Reply **`yaer.`** after each point: it takes the point on board for now, without committing to it.
 
 > `zazawan vowogal. yaer.`
 >
-> z-Azawan | v-walk . y-yes-fresh
+> z-Azawan | v-walk . y-yes-for-now
 >
 > "Azawan walked." "Mm-hm."
 

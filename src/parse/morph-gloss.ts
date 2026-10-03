@@ -10,7 +10,7 @@
  * | `zur` fill-ask | `z-who-else` | |
  * | `thar` / `thur` fill-ask | `th-why` / `th-why-else` | stance grounds |
  * | `yol` / `yom` / `yam` / `yem` / `yum` | `y-question` / `y-soft-question` / `y-soft-statement` / `y-request` / `y-soft-prohibition` | `-m` act words |
- * | `yar` / `yor` / `yer` / `yur` | `y-first-take` / `y-passing-question` / `y-command-for-now` / `y-hold-off` | `-r` act words |
+ * | `yar` / `yor` / `yer` / `yur` | `y-provisional-statement` / `y-working-question` / `y-command-for-now` / `y-hold-off` | `-r` act words |
  * | `zam` / `zal` | `z-and.open` / `z-and` | open vs closed |
  * | `al` left-edge | `additionally` | isolated word too |
  * | `al` in-clause | `including` | |
@@ -219,10 +219,10 @@ const FORCE_JOB_SOFT: Record<string, string> = {
   u: "soft-prohibition",
 };
 
-/** Act words with **-r**: an act just formed, or for now (speech-moves.md § Speech act: firm and soft). */
-const FORCE_JOB_FRESH: Record<string, string> = {
-  a: "first-take",
-  o: "passing-question",
+/** Act words with **-r**: an act held for now (speech-moves.md § For now). */
+const FORCE_JOB_FOR_NOW: Record<string, string> = {
+  a: "provisional-statement",
+  o: "working-question",
   e: "command-for-now",
   u: "hold-off",
 };
@@ -1124,13 +1124,13 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
   if (word.pos === "y") {
     if (series.length === 1) {
       if (ending === "m") return FORCE_JOB_SOFT[series] ?? FORCE_JOB[series] ?? series;
-      if (ending === "r") return FORCE_JOB_FRESH[series] ?? FORCE_JOB[series] ?? series;
+      if (ending === "r") return FORCE_JOB_FOR_NOW[series] ?? FORCE_JOB[series] ?? series;
       return FORCE_JOB[series] ?? series;
     }
     const polar = POLAR_JOB[series];
     if (polar) {
       if (ending === "m") return `${polar}-soft`;
-      if (ending === "r") return `${polar}-fresh`;
+      if (ending === "r") return `${polar}-for-now`;
       return polar;
     }
   }

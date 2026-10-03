@@ -280,8 +280,8 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
 describe("morphGlossLine — act -r and linker endings", () => {
   it("act words with -r are just formed or for now", () => {
-    expectLine("yar zazawan vowogal.", "y-first-take | z-Azawan | v-walk");
-    expectLine("yor zazawan vowogal.", "y-passing-question | z-Azawan | v-walk");
+    expectLine("yar zazawan vowogal.", "y-provisional-statement | z-Azawan | v-walk");
+    expectLine("yor zazawan vowogal.", "y-working-question | z-Azawan | v-walk");
     expectLine("yer vowogal.", "y-command-for-now | v-walk");
     expectLine("yur vowogal.", "y-hold-off | v-walk");
   });

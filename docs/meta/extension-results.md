@@ -94,7 +94,7 @@ Owning page: [word-endings](../grammar/word-endings.md); each family's own page 
 
 #### E-01 — speech act **-r** (`yar` / `yor` / `yer` / `yur`) · intuitive · P2
 
-- **Proposed reading:** an act **just formed** or **for now**, matching polar **-r**: `yar` first-take statement (*off the top of my head*, *at first glance*); `yor` a question that just occurred to you (*wait — …?*); `yer` an instruction for now (*go ahead for now*); `yur` a prohibition for now (*hold off on …*, *don't … yet*)
+- **Proposed reading:** an act held **for now**, matching polar **-r**: `yar` provisional statement (*as things stand*); `yor` working question (*just checking, …?*); `yer` an instruction for now (*go ahead for now*); `yur` a prohibition for now (*hold off on …*, *don't … yet*)
 - **Example:** `yur vowogal.` — y-prohibit-for-now | v-walk — "Hold off on walking for now."
 - **Pattern:** strong-to-light, from polar stance in the same `/y/` slot with the same vowels
 - **Current route:** no single form; `yul` / `yum` plus a time phrase

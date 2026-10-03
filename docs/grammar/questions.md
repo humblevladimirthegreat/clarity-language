@@ -2,7 +2,7 @@
 
 This page is how you **ask** and how you answer.
 
-You can ask for *yes* or *no*, or you can leave a blank for *who* / *what* (a **fill-ask**). After a *yes* / *no* question, you can answer with a short *yes* / *no* / *sure* word (**polar stance**).
+You can ask for *yes* or *no*, or you can leave a blank for *who* / *what* (a **fill-ask**). After a *yes* / *no* question, you can answer with a short *yes* / *no* / *sure* word (**polar stance**). The same words answer a command or a request.
 
 ## Beginner {#beginner}
 
@@ -380,12 +380,12 @@ z-Alahen | v-lie . y-yes
 
 ### Polar stance: fuller inventory
 
-Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), and *sure* (**`yaol`**). The rest of the map is **reject this option**, **reject the question itself**, and **decline to answer**. First vowel is the family (**`a`** accept, **`u`** undo, **`o`** one); second vowel is what you answer (**`e`** the claim, **`o`** this option, **`a`** the question's own premise).
+Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), and *sure* (**`yaol`**). The rest of the map is **reject this option**, **reject the question itself**, and **decline to answer**. First vowel is the family (**`a`** accept, **`u`** undo, **`o`** one); second vowel is what you answer (**`e`** the claim or the order, **`o`** this option, **`a`** the question's own premise).
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`ae`** (`yael`) | match / receipt | *true* | **a** ≈ add + **e** ≈ order (judged in line) |
-| **`ue`** (`yuel`) | flip / mismatch | *false* | **u** ≈ undo + **e** ≈ order (judged out of line) |
+| **`ae`** (`yael`) | match / receipt; comply with an order | *true* · *will do* | **a** ≈ add + **e** ≈ order (judged in line) |
+| **`ue`** (`yuel`) | flip / mismatch; refuse an order | *false* · *I won't* | **u** ≈ undo + **e** ≈ order (judged out of line) |
 | **`ao`** (`yaol`) | option uptake | *sure* | **a** ≈ add + **o** ≈ one |
 | **`uo`** (`yuol`) | reject this option | *not that* | **u** ≈ undo + **o** ≈ one |
 | **`ua`** (`yual`) | reject the question's premise | *neither: the question doesn't apply* | **u** ≈ undo + **a** ≈ add (undo what the question added) |
@@ -401,40 +401,67 @@ Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), 
 
 #### Three endings {#polar-endings}
 
-Each stance takes three endings, on the same strong-to-light scale as elsewhere. **-l** holds the stance firmly. **-m** is the soft twin. **-r** marks a stance you **just formed**: a first reaction, or a *for now*, that you have not yet checked.
+Each stance takes three endings, on the same strong-to-light scale as elsewhere. **-l** holds the stance firmly. **-m** is the soft twin. **-r** marks a stance you hold only **for now**: provisional, and you expect to revisit it.
 
-| | **-l** firm | **-m** soft | **-r** just formed |
+| | **-l** firm | **-m** soft | **-r** for now |
 |--|-------------|-------------|--------------------|
-| **`ae`** | `yael` *true* | `yaem` *I think so* | `yaer` *oh!* / *I see* (news to me, taken in) |
-| **`ue`** | `yuel` *false* | `yuem` *I don't think so* | `yuer` *huh?* / *wait…* (that clashes with what I thought) |
+| **`ae`** | `yael` *true* | `yaem` *I think so* | `yaer` *true, for now* / *I'll take that on board for now* |
+| **`ue`** | `yuel` *false* | `yuem` *I don't think so* | `yuer` *not so, for now* (I'm holding off, and may reconsider) |
 | **`ao`** | `yaol` *sure* | `yaom` *okay* | `yaor` *fine, for now* / *let's try it* |
-| **`uo`** | `yuol` *not that* | `yuom` *nah* | `yuor` *not right now* |
-| **`ua`** | `yual` *the question doesn't apply* | `yuam` *it's more complicated than that* | `yuar` *but there's no such thing…* (the premise just failed for you) |
+| **`uo`** | `yuol` *not that* | `yuom` *nah* | `yuor` *not that, for now* / *not right now* |
+| **`ua`** | `yual` *the question doesn't apply* | `yuam` *it's more complicated than that* | `yuar` *it doesn't apply, for now* (the premise fails at the moment) |
 | **`oe`** | `yoel` *I won't answer* | `yoem` *I'd rather not say* | `yoer` *pass, for now* |
 
-**`yaer`** is the honest *oh*. English *oh* and *I see* often sound like agreement. **`yaer`** only says the news reached you. You can repeat the news after it:
+**`yaer`** takes a claim on board without committing to it. English *oh, I see* often sounds like agreement; **`yaer`** says only that you hold the claim for now. You can repeat it after the stance:
 
 > `yaer zazawan vowogal.`
 >
-> y-yes-fresh | z-Azawan | v-walk
+> y-yes-for-now | z-Azawan | v-walk
 >
-> "Oh, so Azawan walks."
+> "All right, so Azawan walks, for now."
 
-**`yuar`** is the *but…* of a premise that just failed for you. **`yuer`** objects to the claim; **`yuar`** objects to what the question took for granted.
+**`yuar`** is the *but…* of a premise that fails at the moment (a door that is not there yet). **`yuer`** holds off on the claim; **`yuar`** holds off on what the question took for granted.
 
 > `yol zazawan vowogal ul bahazal. yuar.`
 >
-> y-question | z-Azawan | v-walk | [from | b-house] . y-reject-frame-fresh
+> y-question | z-Azawan | v-walk | [from | b-house] . y-reject-frame-for-now
 >
-> "Did Azawan walk away from the house? But Azawan was never there…"
+> "Did Azawan walk away from the house? Not as things stand: Azawan isn't at the house."
 
 **`yoel`**, **`yoem`** and **`yoer`** decline to answer without saying *no* and without judging the question. Nobody should hear them as a denial or as a rejected frame.
 
 > `yol zalahen vezebal. yoer.`
 >
-> y-question | z-Alahen | v-sleep . y-decline-fresh
+> y-question | z-Alahen | v-sleep . y-decline-for-now
 >
-> "Is Alahen asleep? I'd rather not say for now."
+> "Is Alahen asleep? I'll pass for now."
+
+#### Answering a command or request {#answer-command}
+
+A command (**`yel`**) or request (**`yem`**) is not a claim, so *true* and *false* do not fit it. The same stance words answer it, read as compliance. The **e** is the order vowel of **`yel`** itself.
+
+| Stance | **-l** firm | **-m** soft | **-r** for now |
+|--------|-------------|-------------|----------------|
+| **`ae`** accept the order | `yael` *will do* | `yaem` *okay, I'll try* | `yaer` *will do, for now* |
+| **`ue`** refuse the order | `yuel` *I won't* | `yuem` *I'd rather not* | `yuer` *I won't, for now* |
+| **`ao`** take it up as an offer | `yaol` *sure, I'll take that on* | `yaom` *okay, fine* | `yaor` *fine, for now* |
+| **`uo`** reject this option | `yuol` *not that* | `yuom` *nah* | `yuor` *not that, for now* |
+| **`ua`** reject the premise | `yual` *that can't be done* | `yuam` *it's more complicated than that* | `yuar` *it doesn't apply, for now* |
+| **`oe`** decline to answer | `yoel` *I won't say* | `yoem` *I'd rather not say* | `yoer` *pass, for now* |
+
+After a flat command, `yael` / `yuel` are the plain comply / refuse. After a request (**`yem`**), the **o** words fit better, because you are choosing whether to take it on.
+
+> `yel zehodon vowogal. yael.`
+>
+> y-command | z-listener | v-walk . y-yes
+>
+> "Walk." "Will do."
+
+> `yem zehodon vowogal. yuor.`
+>
+> y-request | z-listener | v-walk . y-refuse-option-for-now
+>
+> "Please walk." "Not right now."
 
 For a stronger stance, use the [tone mark](speech-moves.md#tone-marks) **`!!`**, not a different word. **`!!yaol`** is *Absolutely!* / *Yes, please!*, and **`!!yuol`** is *Hell no!*
 
@@ -454,6 +481,7 @@ For a stronger stance, use the [tone mark](speech-moves.md#tone-marks) **`!!`**,
 |------------|----------------|----------------|
 | *Is it so?* / confirm the claim | **`yael`**, deny with **`yuel`** | **`yaem`**, deny with **`yuem`** |
 | *Want this?* / offer | **`yaol`**, reject-this with **`yuol`** | **`yaom`**, reject-this with **`yuom`** |
+| Command (**`yel`**) | **`yael`**, refuse with **`yuel`** | **`yaem`**, refuse with **`yuem`** |
 | Loaded question | **`yual`** | **`yuam`** |
 | Declined question | **`yoel`** | **`yoem`** |
 

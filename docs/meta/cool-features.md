@@ -6,18 +6,18 @@ Use this document for styling examples when producing more posts, and seeing wha
 
 ### Labels Say How Far They Reach
 
-Labeling a person from one behavior is a classic cognitive distortion, and it hides inside ordinary adjectives. "Alahen is angry" could mean one outburst or Alahen's whole personality, and listeners (including you, about yourself) tend to hear the second. Psychologists call the tendency to explain behavior by character instead of circumstance the [fundamental attribution error](https://en.wikipedia.org/wiki/Fundamental_attribution_error), and treating categories as fixed essences is [psychological essentialism](https://en.wikipedia.org/wiki/Essentialism#In_psychology).
+Judging a person's character from one action is a common cognitive distortion (the fundamental attribution error), and treating that character as a fixed essence (Essentialism) makes it worse. Both make us less compassionate towards others.
 
-Agazan lets any label mark how far it reaches with a small infix (`th` + a vowel) before the word ending:
+Agazan lets any label mark how essential we treat the behavior with an infix before the ending letter:
 
-- **tha** — this one occasion: *ganegethal* "angry this time"
-- **the** — a pattern with exceptions: *valahathel* "tends to lie"
-- **tho** — true in one relationship: *gelehothom balahen* "a stranger to Alahen" (not a stranger in general)
-- **thu** — a name only, not an explanation: *ganagothul* "what gets called anxious"
+- **tha** — this one occasion: *gozovothal* "lazy this time" (one slow day is not a trait)
+- **the** — a pattern with exceptions: *gozovothel* "tends to be lazy" (as opposed to being a consistently lazy person)
+- **tho** — true in one relationship: *gozovothom balahen* "lazy as far as Alahen is concerned" (Alahen's opinion, not a confirmed trait)
+- **thu** — a name only, not an explanation: *gozovothul* "what gets called lazy" (society's view is not a confirmed trait)
 
-None of the four is a claim about someone's essence. The plain word stays neutral, so you aren't forced to mark every label, but when you want to say "he failed" without meaning "he's a failure," the grammar has a one-syllable way to do it. Bonus: the same **tho** form already gave Agazan *behind the house* (the house's own back), so the direction words turned out to be a special case of the same idea.
+It's an optional efficient way to express a more charitable view of someone's trait.
 
-You can learn the forms here: [https://main.d2xds94zsgwptg.amplifyapp.com/grammar/predication.html\#label-scope](https://main.d2xds94zsgwptg.amplifyapp.com/grammar/predication.html#label-scope)
+You can learn more here: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/predication.html#label-scope
 
 ### Collective Verbs and Adjectives Use Plural
 
