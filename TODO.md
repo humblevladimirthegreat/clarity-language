@@ -8,7 +8,7 @@ use [skip-cd] for amplify to not deploy.
 
 # TODO
 
--Prosody
+-prosody
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -final exam
 -finish lexicon fill (partial)

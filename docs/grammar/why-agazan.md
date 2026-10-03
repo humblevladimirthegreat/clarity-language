@@ -1,6 +1,6 @@
 # Why Agazan
 
-Psychological purpose, limits, feature criteria, and a tour of how those aims show up in the language.
+Why Agazan exists, what it does not claim, how its features are chosen, and a tour of the features that serve its aims.
 
 ## Purpose {#purpose}
 
@@ -22,7 +22,7 @@ The language is currently in **beta**: grammar, lexicon, and these docs can chan
 
 ## Why language can help {#why-language-can-help}
 
-Unhelpful thoughts are often automatic: catastrophizing a small setback into “my life is ruined,” treating two options as the only ones, or labeling a feeling as *anger* without naming what sake is unmet. Healthier framings exist, but they are hard to reach in the moment.
+Unhelpful thoughts are often automatic: catastrophizing a small setback into “my life is ruined,” treating two options as the only ones, or labeling a feeling as *anger* without naming which sake is unmet. (A sake is something that is good for you, such as autonomy, competence, or connection with others.) Healthier framings exist, but they are hard to reach in the moment.
 
 Agazan puts those framings into ordinary words and optional extra pieces on words. When you speak or think in the language, the helpful distinction is already sitting in the sentence shape.
 
@@ -38,17 +38,17 @@ Psychological features fit these criteria:
 
 ## Psychological features {#psychological-features}
 
-How the aims show up in vocabulary and grammar. The features are grouped by the thinking trap each one answers, and the groups sit under the three aims. Each feature names an English job and one picture; the linked pages teach the forms. The groups name the habit a feature counters, not a bias it has been shown to cure ([limits](#limits)).
+This section tours how the three aims show up in vocabulary and grammar. The features are grouped by the thinking trap each one answers, and the groups sit under the aims. Each feature says what English blurs, what Agazan marks instead, and what that helps you do; the linked pages teach the actual forms. A group names the habit its features push against, not a bias they have been shown to cure ([limits](#limits)).
 
 ### Compassion {#compassion}
 
 Support self-acceptance and acceptance of others, and make judgments visible when they arise.
 
-Praise can name the sake a person’s work actually served instead of stopping at a vague *good*. A flash of anger or anxiety can be said as an unmet sake plus its activation and where it sits, so the charge has an audible target rather than a blank label. And *can’t* comes in kinds: temporary, modifiable, or irreversible. A block never has to read as who someone is.
+Praise can name the sake a person’s work actually served instead of stopping at a vague *good*. A flash of anger or anxiety can be said as an unmet sake, how strongly it is stirring, and where it sits, so the feeling points at something you can act on instead of stopping at a blank label. And *can’t* comes in kinds: temporary, modifiable, or irreversible. A block never has to read as who someone is. *Because* says what made something happen without claiming anyone is to blame, unless you choose to say so.
 
-#### “This is who I am” {#trap-identity}
+#### Treating a moment as identity {#trap-identity}
 
-A hard moment, a label, or a past pattern hardens into a fixed fact about a person. The features here let you say how far a label reaches, how permanent a block is, and what from the past is still on the books, so a bad stretch stays a stretch.
+A hard moment, a label, or a past pattern hardens into a fixed fact about a person. The features here let you say how far a label reaches, how permanent a block is, and which past events still count today, so a bad stretch stays a stretch.
 
 ##### How far a label reaches {#how-far-a-label-reaches}
 
@@ -60,160 +60,239 @@ Marking a label's reach helps you describe what happened without turning it into
 
 ##### Can, can’t, and won’t
 
-*I can’t* blurs temporary block, lasting incapability, and choice.
+English *I can’t* can mean a temporary block, a lasting inability, or a choice not to.
 
-[Ability](intention.md#ability) tags **can** / **can’t** on an activity or property: can; can’t right now; can’t but may change; can’t as fixed. Ordinary *won’t* is choosing not to.
+[Ability](intention.md#ability) says whether someone can do an activity or have a property, and for *can’t*, which kind: not right now, not now but it may change, or not ever. Choosing not to is an ordinary *won’t*, not a kind of *can’t*.
 
-Tagging *can’t right now* vs *may yet* vs *impossible* helps you stop treating a temporary block as a fixed incapability.
+Saying *can’t right now* or *may yet change* instead of *impossible* helps you stop treating a temporary block as a fixed incapability.
 
-##### What still counts, and whose weather
+##### What still counts, and what used to be true
 
-English *has…* and *used to* mix **when** something happened with whether it **still matters**, or whether a pattern is **still the climate you claim**.
+English *has…* and *used to* mix two questions: **when** something happened, and whether it **still matters now**. *Used to* also leaves open whether a habit still describes you today.
 
-[RESIDUE](knowing.md#residue) marks leftover balance: the outcome is still on the books. [FORMER](knowing.md#former-climate) marks usual weather you are **not** reporting as current. Neither word is a past tense; they stack with a live look, memory, or a forecast.
+[RESIDUE](knowing.md#residue) says the result of a past event still counts now (a debt still unpaid, a door still shut). [FORMER](knowing.md#former-climate) says a pattern was usual but you are **not** claiming it as how things are now. Neither word is a past tense: each can combine with what you see now, what you remember, or a forecast.
 
-Marking residue vs an archived episode helps rumination stay optional. Marking former climate helps “I always was this way” stay a weather report you can stop giving. *[As-of](relations.md#as-of)* names **which ledger** leftover and climate are scored against, so rumination is not stuck on today’s books. English *had … would* is bookmark *as-of*, not play. A memory stretch writes the channel again on purpose.
+Marking residue helps rumination stay optional: an event said without it is closed. Marking a former pattern lets “I always was this way” become a description you can stop giving. [As-of](relations.md#as-of) names the moment that leftovers and patterns are measured from (*as of Friday*), so you can weigh an old situation from its own date instead of against today. English *had … would* uses an as-of moment you are not claiming is real, which is different from pretending. (cue: usual weather vs today’s report)
 
-**Compare with:** [LIVE](knowing.md#live-vs-memory) / [WITNESSED](knowing.md#live-vs-memory) for how you know ([“I’m sure”](#trap-certainty)); [always](restrictors.md) `**hual`** for current climate; *[after](dependents.md#dependent-clauses)* for event order.
+#### Treating a feeling as a label {#trap-feeling}
 
-#### “I just feel it” {#trap-feeling}
+A feeling, a thanks, or a *should* arrives as a single opaque label, so what is met or unmet and what would help stay out of view. Sakes name what is at stake, and emotions are built from them.
 
-A feeling arrives as a single opaque label, so what is unmet and what would help stay out of view. This feature opens the feeling up. It is built from [sakes](#sakes-gratitude-and-oughts), which are taught under [empowerment](#empowerment).
+##### Sakes, gratitude, and oughts {#sakes-gratitude-and-oughts}
+
+English often blurs *I want*, *I need*, *I should*, and *this is good for me*, so gratitude, motive, and ought run together.
+
+Agazan’s [sakes](sakes.md) are a fixed list of things that are good for a person (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical, or unspecified), and each sake word also says how you stand toward that sake:
+
+
+| Stance       | Meaning                                                                                                                                         |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Met          | This serves the sake, including whether the payoff lasts or is only for now (gratitude / savoring)                                              |
+| Motive       | Acting *for* this sake, including where the reason stands                                                                                       |
+| Prescription | This act ought to be done for this sake; the ending says whether you are inviting it, offering it, or trying it (**invited / offered / trial**) |
+| Unmet        | Costs the sake, including how changeable that is                                                                                                |
+
+
+Naming the sake and your stance toward it helps you notice gratitude, motive, and oughts instead of blurring them into a vague *want*, *should*, or *good*.
 
 ##### Emotions as composition {#emotions-as-composition}
 
 Opaque labels (*angry*, *anxious*, *proud*) hide which sake is in play and what to ask for.
 
-Agazan [composes emotion](sakes.md#emotion-compose) from a [sake](sakes.md) stance (often unmet or met), plus a locus (where the feeling sits, or what it points at), plus motion (surging / flowing / still).
+Agazan [builds an emotion](sakes.md#emotion-compose) from three parts: a [sake](sakes.md) and how it stands (usually met or unmet), where the feeling sits or what it points at, and its motion (surging, flowing, or still).
 
-Composing emotion from sake + locus + motion helps you ask for what would actually help instead of stopping at the label.
+Building the feeling from those parts helps you ask for what would actually help instead of stopping at the label.
+
+##### Thanks that name the need {#thanks-that-name-the-need}
+
+English *thank you* says you are grateful but not for what.
+
+Agazan has no set phrase for [thanks](sakes.md#thanks-sorry). You say which of your sakes was met, and saying it to the person who acted is the thanks. The ending says whether the payoff lasts or is only for now. To name someone else's sake instead, put that person right after the sake word ([whose stake](sakes.md#whose-stake)).
+
+Naming the need that was met makes thanks specific, which helps both of you notice what actually helped.
+
+#### Treating a cause as a fault {#trap-fault}
+
+An explanation of what made something happen slides into blame, and one cause among several carries the whole outcome. The feature here keeps cause, blame, and a share of the cause apart.
+
+##### Cause, blame, and share {#cause-blame-and-share}
+
+English *because of you* can mean you made it happen, you did something wrong, or you were one part of it.
+
+The ending on a [because](causation.md#fault) word says which claim you make: plain cause with no fault (`thevem`), a reason that broke a norm (`thevel`, *it's their fault*), or one share among other causes (`thever`, *partly because*). Plain cause is the default.
+
+Keeping cause apart from fault helps you explain what happened without blaming, and saying *partly* keeps one person, including you, from carrying a whole outcome.
 
 ### Rationality {#rationality}
 
 Surface common biases that make self-delusion easy.
 
-Claims can say how you know: memory, record, hearsay, pattern, inference.
+Claims can say how you know: memory, record, hearsay, pattern, inference. A general claim says whether it allows exceptions and how many cases it rests on.
+
+A *because* or an *if* says what kind of link it claims. When the “must” is really an ought, the sentence shows the value behind it instead of treating a wish as necessity.
 
 Choice lists can say whether they are open or closed, so two options cannot smuggle themselves in as the only ones.
 
-Habitual *always* is the usual pattern (exceptions expected), not something that must happen, and not an ought. When the “must” is really an ought, the sentence shows the value behind it instead of treating a wish as necessity.
+#### Treating a guess as fact {#trap-certainty}
 
-#### “I’m sure” {#trap-certainty}
-
-A guess, a rumor, a hazy memory, or a wish gets treated as settled fact. The features here make the warrant for a claim audible: how you know, how strong that is, whether it is only possible, and whether a “because” is a law or a wish. Forecasts belong here too, but they are taught together with plan and decision under [intention, forecast, and firmness](#intention-forecast-and-firmness).
+A guess, a rumor, a hazy memory, or a wish gets treated as settled fact, and a few cases get treated as a rule. The features here show what a claim rests on: how you know, how strong that evidence is, whether it is only possible, and whether a general claim allows exceptions. Forecasts belong here too, but they are taught together with plan and decision under [wanting, planning, and deciding](#wanting-planning-and-deciding).
 
 ##### How you know, and *could be*
 
-It is easy to treat a looping *could be* as settled fact: mixing memory, hearsay, gut feel, and *maybe they left* into one warrant.
+It is easy to treat a *could be* that keeps looping in your head as settled fact, and to lump memory, hearsay, gut feel, and *maybe they left* together as if they were equally good grounds.
 
-[Evidentiality](knowing.md#evidentiality) lets a claim about the world name **how you know**: live look, memory, record, pattern, inference, hearsay, gut-felt, or story. Memory (**WITNESSED**) is pulling a scene back from earlier (you may mis-reel it). A live look (**LIVE**) is seeing it while it is still in view.
+[Evidentiality](knowing.md#evidentiality) lets a claim about the world name **how you know**: live look, memory, record, pattern, inference, hearsay, gut feeling, or story. Memory (**WITNESSED**) is recalling a scene from earlier, and memory can be wrong. A live look (**LIVE**) is seeing it while it is still in view.
 
-The channel's [ending](knowing.md#evidence-strength) says how strong that evidence is (a vivid memory or a hazy one, a reliable source or a rumor), separately from how likely the claim is. Marking the channel helps you catch overconfidence and hearsay before you treat a take as settled fact.
+The [ending](knowing.md#evidence-strength) on that evidence word says how strong the evidence is (a vivid memory or a hazy one, a reliable source or a rumor), separately from how likely the claim is. Marking how you know helps you catch overconfidence and hearsay before you treat a take as settled fact.
 
-**For *could be*, use:** [MAY](knowing.md#may) (`ovu`). That marks potential, and whether this sentence finds out, stays at *may*, or leaves it at *who knows*. Evidentiality is how you know a world-claim. Ability *can* is not MAY.
+##### Always, usually, and how many cases {#always-usually-how-many-cases}
+
+English *always* and *never* sound absolute even when you mean *usually*, and they do not say how many cases they rest on.
+
+A [general claim](knowing.md#universality) says in its ending whether it allows exceptions: closed *always* (`hual`) allows none, and open *always* (`huam`) leaves them open, like *usually* or *as a rule*. A PATTERN evidence word says how much the claim rests on, from a well-established pattern (`thobal`) to only a few cases (`thobar`).
+
+Saying *usually* when you mean it, and *from a few cases* when that is all you have, helps you catch overgeneralizing before one bad day becomes *it always goes wrong*.
+
+#### Treating a wish as a law {#trap-wish-as-law}
+
+A link between events, a habit, or an ought gets treated as a law the world must obey. The feature here says what kind of link a claim makes.
 
 ##### Causes and *if*
 
-Everyday English *because* / *leads to* / *have to* blur sufficient vs necessary, world-reason vs speaker-grounds, and wish vs natural law.
+Everyday English *because*, *leads to*, and *have to* blur three splits: a condition that is enough vs one that is required, a reason in the world vs your grounds for saying something, and a wish vs a law of nature.
 
-[Causation](causation.md) keeps those forks on two-place poles: *if* / *only if* / *because* / *iff*, on `/th/` for an event and `/ɡ/` for a noun. Intended *so that* is a separate pole (`**hogom*`*, [so that](dependents.md#so-that)): the host is aimed at that outcome, which is not asserted like *because*, and is not a [need-motive](sakes.md#sake-preference) (`tho`). When the “rule” is really an ought (*hard work should earn promotion*), use [sakes](sakes.md) [prescription](sakes.md#sake-force) (`**the*`*) on the act — not a causation pole.
+[Causation](causation.md) gives each link its own word: *if*, *only if*, *because*, and *if and only if*. An intended result (*so that*) uses a separate word, `hogom` ([so that](dependents.md#so-that)): the action is aimed at that outcome without claiming it happens, and it is not the same as acting for a sake ([motive](sakes.md#sake-preference), `tho`). When the “rule” is really an ought (*hard work should earn promotion*), say it with a sakes [prescription](sakes.md#sake-force) (`the`) on the act, not with a causation word.
 
-Keeping those forks apart helps you stop treating wishes and habits as if the world must obey them.
+Keeping those splits apart helps you stop treating wishes and habits as if the world must obey them.
 
-#### “It’s this or that” {#trap-frames}
+#### Treating a few options as all of them {#trap-frames}
 
-Two options pose as the only ones, one frame poses as the situation, and an unnamed yardstick decides the ranking. The features here show how many options are in play and what standard is being used.
+Two options pose as the only ones, one way of seeing a situation poses as the situation itself, and an unstated standard decides the ranking. The features here show how many options are in play and what standard is being used.
 
 ##### Open lists, closed lists, and false dichotomies
 
 It is easy to present two options as if they were the only ones possible.
 
-[Joins](joins.md) mark what kind of list you are building (inventory, exclusive choice, inclusive *and/or*, rank, …) and whether the listed items are the **only** ones in play (**closed**) or still **open**. Soft or open forms leave room for unlisted alternatives.
+[Joins](joins.md) mark what kind of list you are building (inventory, exclusive choice, inclusive *and/or*, rank, …) and whether the listed items are the **only** ones in play (**closed**) or still **open**. Open forms leave room for alternatives you have not listed.
 
 Saying whether a list is open or closed helps you notice false dichotomies, and leaves room for options you have not named yet.
 
 ##### Alternatives, reframes, and judgment bars
 
-Work talk often freezes on *the* problem / *the* solution, or ranks against an invisible yardstick.
+Work talk often freezes on *the* problem or *the* solution, or ranks options against a standard nobody has said out loud.
 
-Prefer numbered alternatives (ordinary nouns plus an [ordinal](numbers.md#ordinals), like *solution 2*) so candidates stay plural and revisable. Reframe the same situation with softer wording rather than inventing a second candidate. Scalar *worse than…* names its [bar](comparatives.md#bars) (*than usual*, *than I expected*, *than you demand*) so the standard you are using stays audible, including when the bar is only your own expectation.
+Prefer numbered alternatives (ordinary nouns plus an [ordinal](numbers.md#ordinals), like *solution 2*) so candidates stay plural and revisable. Reframe the same situation with softer wording rather than inventing a second candidate. A comparison like *worse than…* names its [bar](comparatives.md#bars), the standard it measures against (*than usual*, *than I expected*, *than you demand*), so the standard stays visible, including when it is only your own expectation.
 
-Numbering candidates, paraphrasing, and naming the judgment bar help you keep choice and standards revisable instead of freezing on a single frame or a hidden bar.
+Numbering candidates, rewording, and naming the bar help you keep choices and standards revisable instead of freezing on a single framing or a hidden standard.
 
 ### Empowerment {#empowerment}
 
 Support authentic choice by making reasons for action visible.
 
-The motive or prescription behind an action can be named on the sake it serves instead of conflating it into a bare *should*. A decision can mark how revisable it is, a plan can stay separate from a forecast, and an opening can say how long the talk will last before it starts.
+The motive or ought behind an action can be named with the sake it serves instead of collapsing into a bare *should*. A *must* or a *may* says who it comes from. Wanting, planning, and deciding stay separate, and a decision can mark how revisable it is. An attempt can be a low-stakes trial, a plan can name its backup before you start, and *enough* is measured against what you need rather than against perfect. Consent says whose yes it is and how binding, and an opening can say how long the talk will last before it starts.
 
-#### “I have no choice” {#trap-no-choice}
+#### Treating a choice as forced {#trap-no-choice}
 
-Wanting, needing, and being obliged blur into a bare *should*, and a plan or a pick sounds locked. The features here make the reason for an action visible, so the choice stays yours.
+Wanting, needing, and being obliged blur into a bare *should*, and a plan or a pick sounds locked. [Sakes](#sakes-gratitude-and-oughts) already name the reason behind an action (motive, or an ought you choose to take on). The features here show where a *must* comes from and keep wanting, planning, and deciding apart, so the choice stays yours.
 
-##### Sakes, gratitude, and oughts {#sakes-gratitude-and-oughts}
+##### Who says you must {#who-says-you-must}
 
-English often conflates *I want*, *I need*, *I should*, and *this is good for me*, so gratitude, motive, and ought blur together.
+English *must*, *have to*, and *is supposed to* sound equally binding, whether a law requires something, a person demands it, or people only expect it. *May* hides the same split for permission.
 
-Agazan’s [sakes](sakes.md) name a closed inventory of **sakes** (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical, or unspecified) and how you relate to them:
+A [requirement](sakes.md#requirement) word says where a *must* comes from: a rule, a person who demands it, or only an unwritten expectation that nobody actually demands. A [permission](sakes.md#permission) word does the same for *may*: a rule allows it, someone said yes, or nobody objected.
 
+Naming the source helps you notice when a *have to* is only an expectation, so you can decide whether to meet it.
 
-| Stance       | Job                                                                                                                                                   |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Met          | This serves the sake, including whether the payoff lasts or is only for now (gratitude / savoring) — an adjective on the noun, or `/th/` on the event |
-| Motive       | Acting *for* this sake, including where the reason stands                                                                                             |
-| Prescription | Deontic on the host act for this sake — ending marks the move's warrant or aim (**invited / offered / trial**)                                        |
-| Unmet        | Costs the sake, including how changeable that is                                                                                                      |
+##### Wanting, planning, and deciding {#wanting-planning-and-deciding}
 
-Naming the sake and your stance toward it helps you notice gratitude, motive, and oughts instead of conflating them into vague *want* / *should* / *good*. A sake on `/ɡ/` is a belonging (so *my X serves competence* is one adjective); an unowned stimulus uses the sake on `/w/` immediately before `**gobum*`*.
+English *will* mixes plan and prediction together, and *I want to* can sound like a promise. It is easy to talk as if the future were already known (a certain prediction that fuels anxiety or overconfidence), while a pick often sounds more locked than it is.
 
-##### Intention, forecast, and firmness {#intention-forecast-and-firmness}
+Agazan splits them: [want](intention.md#want) for what you wish for, without meaning to do it yet; [PLAN](intention.md#plan-predict) for what you mean to do; [DECISION](intention.md#decision) for how revisable a pick is; and a [forecast](knowing.md#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `bral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
 
-English *will* smuggles plan and prediction together. It is easy to talk as if the future were already known (a certain prediction that fuels anxiety or overconfidence), while a pick often sounds more locked than it is.
+Splitting these helps you hold a want without owing it to anyone, avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and keep a revisable pick from sounding locked forever.
 
-Agazan splits them: [PLAN](intention.md#plan-predict) for what you mean to do; a [forecast](knowing.md#forecast) for what the world will do; [DECISION](intention.md#decision) for how revisable a pick is. A forecast has no word of its own: it is an evidential channel plus a later offset, so every forecast says what it rests on, and its ending says how strong that evidence is.
+**Compare with:** English *will*. Use PLAN for intention, an evidence word plus `bral` for a forecast, and DECISION for how firm the pick is.
 
-Splitting plan, prediction, and decision firmness helps you avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and a revisable pick as locked forever.
+#### Treating effort as all or nothing {#trap-all-or-nothing}
 
-**Compare with:** English *will*. Use PLAN for intention, a channel plus `bral` for a forecast, and DECISION for how firm the pick is.
+Every attempt can feel like a full commitment that either succeeds or fails, every plan like it has to be complete before you start, and every result like it has to be perfect. The features here let you match the effort to the task: probe instead of committing, plan the backup first, call a result *not yet* instead of *failed*, and stop at *enough*.
 
-#### “Who sets the terms?” {#trap-terms}
+##### Trying it out {#trying-it-out}
 
-A greeting or a request can quietly commit you to time and attention you never agreed to. This feature puts the terms of the encounter in the opening, so consent comes first.
+English *try* does not say whether you are committing to keep going or only testing whether something works, so every attempt can sound like it will end in success or failure.
 
-##### Openings and how long the talk is
+[Try](intention.md#try) says that an attempt happens and leaves the outcome open. Its ending says how far the attempt will go: a committed attempt (`thudul`) keeps going until it works or is ruled out, and a trial run (`thudur`) is a low-stakes probe where failing is useful to know.
 
-English *hi* hides whether you can stay, whether this is a few minutes, whether this is one ask, or whether you are only passing.
+Calling an attempt a trial run helps you start without betting everything on it: if it fails, finding that out was the point.
 
-A [greeting](word-endings.md#greeting) is your name as a citation (`azawan.`). Calling someone is a [vocative](speech-moves.md#vocative). A [conversation-length bid](x-compounds.md#conversation-length) adds one vowel to your name: open-ended, a few minutes, one slot, or passing. The other person can answer with their own bid; the **lesser** bid sets the shared limit. At departure, the same form says whether you are leaving soon, about to leave, or leaving now. The overlay names the **encounter**.
+##### Planning the backup first {#planning-the-backup-first}
 
-Marking the opening that way helps you consent to the talk without treating a wave as a blank check on time.
+A plan made in English often names only the first choice, and either stays vague or has to be complete before you act.
+
+A [fallback](intention.md#fallback) joins an attempt to its backup with `xon`: *try A; failing that, B*. The backup counts only if the attempt before it fails. The [PLAN](intention.md#plan-predict) ending says how much of the plan is drawn: backups included, steps filled in, or only a direction. No level is better, and a sketch is often all a small or early plan needs.
+
+Naming the backup before you start helps a setback turn into the next step instead of a dead end, and matching plan detail to the task keeps planning from becoming a reason not to start.
+
+##### Not yet {#not-yet}
+
+English *I can't do it* or *it didn't work* can sound final even when you expect the change to come.
+
+[Not yet](knowing.md#phasal) (`huzem`) says the change is expected but has not come. It compares now with that change, like *already*, *still*, and *no longer*, and it is not a tense.
+
+Saying *not yet* instead of *not* helps you keep a goal open while it is still in progress. (cue: 🌱 a seedling, not grown yet)
+
+##### Good enough {#good-enough}
+
+English *enough* and *too much* often compare a result with an unstated ideal, so nothing ever counts as done.
+
+A [sake bar](sakes.md#sake-bars) measures an amount against what a [sake](#sakes-gratitude-and-oughts) actually needs: *enough*, *too much*, or *not enough* for that need. When you do not name which sake, the unspecified sake stands in.
+
+Measuring against the need instead of against perfect helps you notice when a result is good enough to stop.
+
+#### Treating silence as a yes {#trap-terms}
+
+An act that touches someone else's body, things, or time can go ahead on a yes nobody said, and a yes once given can sound permanent. The features here say whose yes it is and how binding, so consent comes first.
+
+##### Consent: whose yes, and how firm {#consent}
+
+English *she's fine with it* does not say whether she signed on, said yes and can take it back, or was never asked.
+
+[Consent](sakes.md#consent) names the person the act happens to and says how binding their yes is: a binding agreement made in advance, a yes they can take back at any time, or a yes you are only assuming because nobody objected.
+
+Marking an assumed yes as an assumption helps you check before acting, and marking a spoken yes as revocable keeps it theirs to withdraw.
+
+##### How long you can talk {#how-long-you-can-talk}
+
+English *hi* does not say whether you can stay, whether you have only a few minutes, whether you have one thing to ask, or whether you are only passing by.
+
+A [greeting](word-endings.md#greeting) is your own name said as a sentence (`SELFn.`). Calling someone is a [vocative](speech-moves.md#vocative). A [conversation-length bid](x-compounds.md#conversation-length) adds one vowel to your name: open-ended, a few minutes, one thing to ask, or passing by. The other person can answer with their own bid; the **shorter** bid sets the limit for both of you. When you leave, the same form says whether you are leaving soon, about to leave, or leaving now. The vowel describes the conversation, not either person.
+
+Marking the opening that way helps you agree to the talk without a greeting committing you to unlimited time.
 
 ### Conceptual metaphors {#conceptual-metaphors}
 
 Abstract ideas are hard to hold; without a concrete picture, the psychologically useful reading of a word slips away in the moment. This cuts across the groups above.
 
-Published roots keep an **abstract** sense beside the **concrete** picture, so the unobservable job rides on a familiar scene that already carries the caution. Examples:
+Many roots have an **abstract** sense beside a **concrete** one, so an idea you cannot see is tied to a familiar scene that already carries the caution. Examples:
 
-- [Memory as fishing](knowing.md#evidentiality) (“I’m sure”): cast into opaque water; you may pull a fish or a **boot** (the memory can be wrong).
-- [Live look as attesting](knowing.md#live-vs-memory) (“I’m sure”): eye-in-speech while the scene is still in view.
-- [Residue as unpaid debt](knowing.md#residue) (“This is who I am”): leftover balance still on the books; not a past tense.
-- [Former climate as an empty nest](knowing.md#former-climate) (“This is who I am”): the nesting season is over; not *used to* as past.
-- [A pattern as paw-prints](knowing.md#universality) (“I’m sure”): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
-- *[As if* as theater](knowing.md#notional) (“I’m sure”): a stage mask frames play; the real tally stays **offstage**.
-- [Mechanism as gears](causation.md#cause) (“I’m sure”): naming the gear train marks *how it meshes*.
-- [Affect as water](sakes.md#emotion-compose) (“I just feel it”): surging / flowing / still water (motion) plus where the charge sits or points (locus) instead of an opaque emotion label that hides the sake.
+- [Memory as fishing](knowing.md#evidentiality) ([a guess as fact](#trap-certainty)): cast into opaque water; you may pull up a fish or a **boot** (the memory can be wrong).
+- [Live look as attesting](knowing.md#live-vs-memory) ([a guess as fact](#trap-certainty)): you report what you see while the scene is still in view.
+- [Residue as unpaid debt](knowing.md#residue) ([a moment as identity](#trap-identity)): the result still counts, like a balance still owed; not a past tense.
+- [Former climate as an empty nest](knowing.md#former-climate) ([a moment as identity](#trap-identity)): the nesting season is over; a pattern that has ended, not a past tense.
+- [A pattern as paw-prints](knowing.md#universality) ([a guess as fact](#trap-certainty)): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
+- *[As if* as theater](knowing.md#notional) ([a guess as fact](#trap-certainty)): pretending is framed as a stage scene; what really happened stays **offstage**.
+- [Mechanism as gears](causation.md#cause) ([a wish as a law](#trap-wish-as-law)): you say *how* a result comes about, like gears meshing, not only that it follows.
+- [Affect as water](sakes.md#emotion-compose) ([a feeling as a label](#trap-feeling)): surging, flowing, or still water (motion) plus where the feeling sits or points, instead of an opaque emotion label that hides the sake.
 
-Conceptual metaphors help you reach and remember the healthier frame by tying it to a concrete analogy that already encodes the bias you are trying to catch.
+Conceptual metaphors help you reach and remember the healthier frame by tying it to a concrete picture that already encodes the bias you are trying to catch.
 
 ## Criticisms {#criticisms}
-
-This section addresses common criticisms regarding the use of language to influence thought.
 
 ### Can a language change how you think?
 
 Some don’t believe it is possible for a language to influence the speaker’s thoughts (called the weak Sapir-Whorf Hypothesis). I make no claims here about whether it happens for natural languages, but for Agazan specifically, I give the following argument:
 
-1. The way a concept is framed (phrased) affects how people think about it (a well-established phenomenon in [psychology](https://en.wikipedia.org/wiki/Framing_effect_(psychology)) and the [social sciences generally](https://en.wikipedia.org/wiki/Framing_(social_sciences)))
+1. The way a concept is framed (phrased) affects how people think about it (a well-established phenomenon in [psychology](https://en.wikipedia.org/wiki/Framing_effect_(psychology)) and the [social sciences generally](https://en.wikipedia.org/wiki/Framing_(social_sciences))).
 2. Agazan’s vocabulary and grammar ensure particular frames for certain concepts (using the design laid out on this page and in the linked grammar docs).
 3. Therefore, Agazan influences how speakers think.
 
@@ -221,7 +300,7 @@ Some don’t believe it is possible for a language to influence the speaker’s 
 
 Some are reminded of Newspeak from 1984, where a totalitarian government alters the language to influence the populace into being more compliant. What makes Newspeak unethical is that the language is forced upon an unwitting populace.
 
-For Agazan and similar languages, as long as using the language is voluntary, and the speaker knows how the language influences their thoughts (and the language delivers on those promises), then it is morally good. Learning the language is comparable to enrolling in a self-help course to influence their thought patterns: clearly ethical if it influences the person in the healthy way they desire.
+For Agazan and similar languages, as long as using the language is voluntary, and the speaker knows how the language influences their thoughts (and the language delivers on those promises), then it is morally good. Learning the language is like enrolling in a self-help course to change your thought patterns: clearly ethical if it changes you in the healthy way you want.
 
 Language influences but does not determine thought. Speakers who wish to think or communicate in a way discouraged by the language are still capable of doing so (though the sentences will likely be longer).
 
