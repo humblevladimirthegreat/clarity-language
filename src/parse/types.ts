@@ -9,8 +9,8 @@ export type PointerVowel = "a" | "e" | "o";
 /** Part-of-speech prefix letters (role stamps). */
 export type Pos = "z" | "d" | "b" | "v" | "g" | "w" | "h" | "th" | "x" | "y";
 
-/** Word endings, plus stand-in clusters `-rl` / `-rm` / lexicalized `-rn`. */
-export type Ending = "l" | "m" | "n" | "r" | "rl" | "rm" | "rn" | "rth";
+/** Word endings, plus the name instance `-ln` and stand-in clusters `-rl` / `-rm` / lexicalized `-rn`. */
+export type Ending = "l" | "m" | "n" | "ln" | "r" | "rl" | "rm" | "rn" | "rth";
 
 /** Writing-style number marker symbols. */
 export type WritingMarker = "+" | "-" | "#" | "#-" | "_" | "+-" | "#_";
@@ -104,7 +104,7 @@ export type MorphWordFamily =
       kind: "writingSpan";
       bracket: WritingBracket;
       payload: string;
-      marks: ("@" | "~")[];
+      marks: ("^@" | "@" | "~")[];
     }
   | { kind: "foreign"; payload: string };
 

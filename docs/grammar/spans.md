@@ -405,6 +405,23 @@ An aside adds no anchors. Names inside a cite or an aside never count toward an 
 
 A span in a `/v/` slot (`v[vazadal]`) has no resume pronoun, and this page deliberately defines none.
 
+### One of a title (`^@`) {#one-of-a-title}
+
+A span with **`@`** names the work or product itself: <code>d@&lt;iPhone&gt;</code> is the iPhone as a product. For one thing that name applies to (one phone, one copy of a book, one performance of a song), write **`^@`** in the mark slot instead. It is the span's form of the [**-ln**](word-endings.md#name-instance--ln) ending, and like **-ln** it brings a new thing into the talk. (cue: **^** points up to the name the thing falls under)
+
+> <code>zalahen d^@&lt;iPhone&gt; vahahal.</code>
+>
+> z-Alahen | d-NAME.OPAQUE.instance["iPhone"] | v-see
+>
+> "Alahen sees an iPhone." (one phone)
+
+| Agazan | Use | English |
+|--------|-----|---------|
+| <code>d@&lt;iPhone&gt;</code> | the named product | *the iPhone* |
+| <code>d^@&lt;iPhone&gt;</code> | one unit of it | *an iPhone* |
+| `d@[onodan alahen]` | the named work | *Onodan Alahen* |
+| `d^@[onodan alahen]` | one copy or performance of it | *a copy of Onodan Alahen* |
+
 ### Act words in a quote {#quote-acts}
 
 A quoted question or command keeps its own [act word](speech-moves.md#speech-act-statement-question-command) inside the cite, the same way it keeps a tone mark. The outer sentence is still your claim (*said*), and `yol` or `yel` belongs to the quoted talk.
@@ -527,6 +544,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *topic* | `ozan` |
 | *possibility* | `hegewem` |
 | *letters* (mention marker) | `glelel` |
+| *Onodan* (a titled work) | `onodan` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -608,6 +626,14 @@ z-Azawan | SCOPE[h-possibility | d-lie] | v-see
 `zahaben !{ hegewem dalahal } vahahal.`
 
 z-Ahaben | !SCOPE[h-possibility | d-lie] | v-see
+:::
+
+**11.** *Alahen sees a copy of Onodan Alahen.* (one copy of the titled work)
+
+::: details Show answer
+`zalahen d^@[onodan alahen] vahahal.`
+
+z-Alahen | d-NAME.CITE.instance[Onodan | Alahen] | v-see
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
@@ -700,6 +726,15 @@ z-Ahaben | gl-MENTION | d-OPAQUE["ahahul"] | v-tell
 [z-Alahen | ?SCOPE[z-Azawan | z-and] | z-and.open] | v-punch
 
 *Alahen and (just Azawan?) punched.* (unsure about that chunk)
+:::
+
+**11.** <code>zazawan d^@&lt;iPhone&gt; vahahal.</code>
+
+::: details Show answer
+
+z-Azawan | d-NAME.OPAQUE.instance["iPhone"] | v-see
+
+*Azawan sees an iPhone.* (one phone, not the product)
 :::
 
 ## Advanced {#advanced}

@@ -99,6 +99,7 @@ const ENDING_SENSE: Record<Ending, string> = {
   l: "exact",
   m: "abstract",
   n: "named",
+  ln: "named instance",
   r: "anaphor",
   rl: "stand-in",
   rm: "stand-in.open",
@@ -110,6 +111,7 @@ const JOIN_ENDING_SENSE: Record<Ending, string> = {
   l: "closed",
   m: "open",
   n: "named",
+  ln: "named instance",
   r: "unspecified member",
   rl: "stand-in locked",
   rm: "stand-in open",
@@ -139,6 +141,7 @@ export function endingSense(ending: Ending | undefined, word?: LexWord): string 
       l: "exact",
       m: "fuzzy",
       n: "named",
+  ln: "named instance",
       r: "resume",
       rl: "stand-in",
       rm: "stand-in.open",
@@ -152,6 +155,7 @@ export function endingSense(ending: Ending | undefined, word?: LexWord): string 
       l: "concrete",
       m: "abstract",
       n: "named",
+  ln: "named instance",
       r: "anaphor",
       rl: "stand-in",
       rm: "stand-in.open",
@@ -214,7 +218,7 @@ function senseLabelFallback(word: LexWord): string {
   if (word.ending === "m") {
     return word.rootGloss?.abstract ?? word.rootGloss?.concrete ?? word.reading;
   }
-  if (word.ending === "n") {
+  if (word.ending === "n" || word.ending === "ln") {
     if (word.family.kind === "foreign") return word.family.payload;
     if (word.family.kind === "writingSpan") return word.family.payload || "proper";
     return word.rootGloss?.concrete ?? "proper";

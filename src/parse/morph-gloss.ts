@@ -391,8 +391,15 @@ export function senseLabel(
   if (word.family.kind === "x" && word.family.xFamily === "role" && word.family.scopeVowel) {
     body += `-th-${SCOPE_VOWEL[word.family.scopeVowel] ?? "scope"}`;
   }
+  // **-ln**: one thing the name applies to (word-endings.md#name-instance--ln).
+  if (word.ending === "ln") body += ".instance";
   if (word.plural) return body ? `${body}-x` : "-x";
   return body;
+}
+
+/** **-n** names; **-ln** is one thing that name applies to, glossed as the name plus `.instance`. */
+function isNameEnding(ending: Ending | undefined): boolean {
+  return ending === "n" || ending === "ln";
 }
 
 /** One morph-gloss word: `{PoS}-{english}(-x-…)*[-x]`, or prefix-less English. */
@@ -564,7 +571,7 @@ function isFraction(word: LexWord, prev: LexWord | undefined): boolean {
   if (!group?.mantissa || rest.length || group.exponentDigits || group.decimal || group.percent) return false;
   if (Number(group.mantissa) < 2) return false;
   if (isCountBefore(prev)) return true;
-  return prev?.family.kind === "content" && prev.ending === "l" && (prev.pos === "z" || prev.pos === "d" || prev.pos === "b");
+  return prev?.family.kind === "content" && (prev.ending === "l" || prev.ending === "ln") && (prev.pos === "z" || prev.pos === "d" || prev.pos === "b");
 }
 
 /** A plain `/ɡ/` count (`g+N`) right before `g-M`: the numerator of *two thirds*, in any slot, after a unit too. */
@@ -602,9 +609,10 @@ function wordGloss(word: LexWord, tables: ClassifyTables, ctx: MorphGlossContext
   const closeMatch = payload.match(/(?:^|\s|(?<=[a-z]))(#?\|?)$/);
   const close = closeMatch?.[1] ?? "";
   if (close) payload = payload.slice(0, -close.length).trim();
-  const named = family.marks.includes("@") ? "NAME." : "";
+  const instance = family.marks.includes("^@");
+  const named = instance || family.marks.includes("@") ? "NAME." : "";
   const about = family.marks.includes("~") ? ".about" : "";
-  const label = `${named}${WRITTEN_SPAN[family.bracket]}${about}`;
+  const label = `${named}${WRITTEN_SPAN[family.bracket]}${instance ? ".instance" : ""}${about}`;
   const prefix = word.gl ? "gl-" : word.pos ? `${word.pos}-` : "";
   let inner = "";
   if (payload) {
@@ -1354,7 +1362,7 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
     const role = ROLE_VOWEL[family.roleVowel ?? ""] ?? "role";
     const host = (family.rightRoots ?? []).map((root) =>
       rootSense(root, word.ending, tables, {
-        named: word.ending === "n",
+        named: isNameEnding(word.ending),
         pos: word.pos,
       }),
     );
@@ -1371,7 +1379,7 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
       tables.hostlessAbilityRoot && hostRoot === tables.hostlessAbilityRoot
         ? "ABIL"
         : rootSense(hostRoot, word.ending, tables, {
-            named: word.reading === "greeting" || word.ending === "n",
+            named: word.reading === "greeting" || isNameEnding(word.ending),
             sake: word.reading === "sake",
             pos: word.pos,
           });
@@ -1409,13 +1417,13 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
   }
 
   if (family.xFamily === "scope") {
-    const host = family.leftRoots.map((root) => rootSense(root, word.ending, tables, { named: word.ending === "n", pos: word.pos }));
+    const host = family.leftRoots.map((root) => rootSense(root, word.ending, tables, { named: isNameEnding(word.ending), pos: word.pos }));
     return [...host, SCOPE_VOWEL[family.stanceVowel ?? ""] ?? "scope"];
   }
 
   if (family.xFamily === "numeric") {
     const host = family.leftRoots.map((root) =>
-      rootSense(root, word.ending, tables, { named: word.ending === "n", pos: word.pos }),
+      rootSense(root, word.ending, tables, { named: isNameEnding(word.ending), pos: word.pos }),
     );
     const num = family.numberStem ? numericKindLabel(family.numberStem, word.pos) : "num";
     return [...host, num];
@@ -1433,8 +1441,8 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
     }
     const holder = (family.rightRoots ?? []).map((root, i, all) =>
       rootSense(root, word.ending, tables, {
-        named: word.ending === "n",
-        nameLast: word.ending === "n" && i === all.length - 1,
+        named: isNameEnding(word.ending),
+        nameLast: isNameEnding(word.ending) && i === all.length - 1,
         pos: word.pos,
         holder: true,
       }),
@@ -1446,16 +1454,16 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
     const dir = rootSense(family.leftRoots[0]!, "l", tables, { named: false, pos: word.pos });
     const anchors = (family.rightRoots ?? []).map((root, i, all) =>
       rootSense(root, word.ending, tables, {
-        named: word.ending === "n",
-        nameLast: word.ending === "n" && i === all.length - 1,
+        named: isNameEnding(word.ending),
+        nameLast: isNameEnding(word.ending) && i === all.length - 1,
         pos: word.pos,
       }),
     );
     return [dir, family.landmark ? "landmark" : anchors.join("-x-")];
   }
 
-  const named = word.ending === "n";
-  const unpackCitation = named && !word.pos;
+  const named = isNameEnding(word.ending);
+  const unpackCitation = word.ending === "n" && !word.pos;
   const all = [...family.leftRoots, ...(family.rightRoots ?? [])];
   return all.map((root, i) =>
     rootSense(root, word.ending, tables, {
@@ -1484,7 +1492,7 @@ function writingSpanLabel(
 function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): string {
   if (word.overlay) return overlayLabel(word.overlay);
   if (word.lexicalCompound) {
-    if (word.ending === "n") return titleAgazanName(roots[0] ?? "compound", true);
+    if (isNameEnding(word.ending)) return titleAgazanName(roots[0] ?? "compound", true);
     const lemma = word.ending === "m" ? word.rootGloss?.abstract : word.rootGloss?.concrete;
     return hyphenEnglish(lemma || word.rootGloss?.concrete || roots[0] || "compound");
   }
@@ -1498,7 +1506,7 @@ function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): st
   if (word.pos === "y" && word.ending === "l" && roots.length === 1 && roots[0] === CLOSED.wave) return "greeting";
   if (roots.length === 1) {
     return rootSense(roots[0]!, word.ending, tables, {
-      named: word.ending === "n",
+      named: isNameEnding(word.ending),
       sake: word.reading === "sake",
       pos: word.pos,
     });
@@ -1506,7 +1514,7 @@ function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): st
   return roots
     .map((root) =>
       rootSense(root, word.ending, tables, {
-        named: word.ending === "n",
+        named: isNameEnding(word.ending),
         sake: word.reading === "sake",
         pos: word.pos,
       }),

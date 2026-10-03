@@ -27,6 +27,21 @@ describe("parseWord — content / gl- / citation", () => {
     assert.deepEqual(word.family, { kind: "content", roots: ["azawa"] });
   });
 
+  it("parses -ln as one thing a name applies to, with -x after it (word-endings.md#name-instance--ln)", () => {
+    const word = parseOk("dazawaln");
+    assert.equal(word.ending, "ln");
+    assert.deepEqual(word.family, { kind: "content", roots: ["azawa"] });
+    const group = parseOk("dazawalnx");
+    assert.equal(group.ending, "ln");
+    assert.equal(group.plural, true);
+    const compound = parseOk("zohuxaludeln");
+    assert.equal(compound.ending, "ln");
+    const span = parseOk("d^@<iPhone>");
+    assert.equal(span.ending, "ln");
+    assert.deepEqual(span.family, { kind: "writingSpan", bracket: "<", payload: "iPhone", marks: ["^@"] });
+    assert.throws(() => parseWord("d^<iPhone>"), WordParseError);
+  });
+
   it("parses glelulul as left-bound /ɡ/ (clause.md gl-)", () => {
     const word = parseOk("glelulul");
     assert.equal(word.pos, "g");

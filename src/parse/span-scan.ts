@@ -57,7 +57,8 @@ export function toneRunLength(text: string, i: number): number {
 }
 
 function skipMarks(text: string, i: number): number {
-  while (i < text.length && (text[i] === "@" || text[i] === "~")) i += 1;
+  // `^` only opens the instance mark `^@` (spans.md#when-required).
+  while (i < text.length && (text[i] === "@" || text[i] === "~" || text.startsWith("^@", i))) i += text[i] === "^" ? 2 : 1;
   return i;
 }
 

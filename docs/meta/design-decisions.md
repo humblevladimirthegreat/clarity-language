@@ -205,6 +205,15 @@ Closed words (joins, hooks, join-act verbs, emotion loci) stack two of the serie
 - **`{ … }` is scope islands only.** The old `^ … ^` edges are gone, and braces have no other job.
 - The `VOWEL x VOWEL` silhouettes the spoken span used (`daxal`, `xuxul`, `daxur`) are ordinary vowel-letter compounds now, not fences.
 
+## Names and their instances
+
+- **-n names the thing that bears the name, not a unique one.** A brand, product line, work, or yearly event is one named thing, as the kind is one individual under `zuan` ([joins](../grammar/joins.md#kind-reference)). Uniqueness was never the test: two people can share a name.
+- **One of a name is -ln (span `^@`), not -l.** On a native root **-l** is already the root's own sense (`dazawal` *a swan*), and **-nx** is *name and associates*, so neither can mean *an Azawan* / *some Azawans*. A common head plus `/ɡ/` **-n** (`debedal gazawan`) stays available, but is not required. `dar` + `/ɡ/` was rejected as the instance route: under `yol` the join **-r** turns into a fill-ask blank.
+- **-ln is a new mention.** It is an existence subject like **-l** (`zazawaln.` *there is an Azawan*), never a known name, and each **-ln** is a new referent for resume and ordinal counting.
+- **Slots:** **-ln** / `^@` fill `/z/` `/d/` `/b/` or stand as a citation. Rejected: `/ɡ/` (`gazawan` already classifies), `/v/` `/h/` `/w/` `/th/`, `/x/` (a topic is the named thing), `/y/` (`y^@<Sam>`: a call already picks out a person), a pronoun root (`zamagoln`), and number words (`g^@#2`).
+- **Titled phrases have no -ln on the packaging hook or join.** One of a multi-word title uses a cite with `^@` (`d^@[onodan alahen]`) or a compact `x` name (`zohuxaludeln`).
+- **`^@` with `~`** reads as `^@` alone, as hedging adds nothing to whether something is an instance (same as `@` with `~`).
+
 ## Ranges, rays, and span hooks
 
 - Ranges use hooks, not joins. Rank and sequence joins (`e` / `ue` / `oe`) with a number have no threshold reading, and there is no SHARED continuum word; don't restore either.

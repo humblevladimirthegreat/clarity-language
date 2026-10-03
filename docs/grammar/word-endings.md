@@ -255,7 +255,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 ### Proper name (`-n`) {#proper-name--n}
 
-Beginner used **-n** for a person’s or place’s name. You can also mark a **title, proper label, or conventionally unique name** on any role letter: a named race as the verb, a named style as the adjective, a named standard as the adverb. The first letter still says the clause job; **-n** says you mean **that** titled instance, not a generic kind.
+Beginner used **-n** for a person’s or place’s name. You can also mark a **title, brand, or other conventional name** on any role letter: a named race as the verb, a named style as the adjective, a named standard as the adverb. The first letter still says the clause job; **-n** says you mean the thing that bears that name, not the kind the root describes. A brand, a product line, a work, or a yearly event counts as one named thing, even though it has many units, copies, or runnings. To mean one of those, use [**-ln**](#name-instance--ln).
 
 > `zahaben vezehen.`
 >
@@ -267,7 +267,7 @@ The rest of the role map (same **-n**):
 
 | Agazan | Use | English |
 |--------|-----|---------|
-| `/z/` `/d/` `/b/` + **-n** | this named entity | person, place, titled work, unique referent (*Azawan*, *Paris*, *the Odyssey*; *book by* **[Rowling]**) |
+| `/z/` `/d/` `/b/` + **-n** | this named entity | person, place, titled work, brand or product line (*Azawan*, *Paris*, *the Odyssey*; *book by* **[Rowling]**) |
 | `/v/` + **-n** | this named event, rite, or titled action | *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]** |
 | `/ɡ/` + **-n** | this named style, tradition, brand, or category | **[Art Deco]** furniture, **[Buddhist]** monastery, **[iOS]** app |
 | `/w/` + **-n** | named scale, grade, or criterion on the following adjective | *spicy* **[Scoville]**, *large* **[King-size]** |
@@ -277,6 +277,36 @@ The rest of the role map (same **-n**):
 **Another exception:** a [stand-in](dependents.md#stand-in-roles) with **-rn** (single vowel) or **-n** (stacked vowel) names a sentence-content category, such as a statement, question, command, or prohibition. On `/v/`, these endings give the corresponding lexicalized response verbs, such as *state*, *confirm*, or *decline*.
 
 **Compare with:** [join words](joins.md) use **-n** as join packaging or join content (fence joins, clause **sequence**, [join-act](join-across-roles.md#join-act-verbs) / [join-relation](join-across-roles.md#join-relations) stems). These and lexicalized stand-ins are the exceptions where **-n** does not mark a proper name.
+
+### One of a name (`-ln`) {#name-instance--ln}
+
+English *an iPhone*, *a copy of the Odyssey*, and *someone named Azawan* each mean one thing the name applies to, not the named thing itself. End the word in **-ln** instead of **-n**, on `/z/`, `/d/`, or `/b/`. Like **-l**, it brings a new thing into the talk, and the **n** says which name it falls under. So you can talk about one bed of a brand without spelling a separate noun for *bed*. (cue: **l** first mention, then **n** name)
+
+> `zalahen dazawaln vahahal.`
+>
+> z-Alahen | d-Azawan.instance | v-see
+>
+> "Alahen sees an Azawan." (one bed of that brand)
+
+What counts as one depends on what the name names:
+
+| Name (**-n**) | One of it (**-ln**) |
+|---------------|---------------------|
+| a brand or product line | one unit (*an Azawan*) |
+| a work | one copy or one performance |
+| a yearly event | one running of it |
+| a person | someone with that name (*another Azawan*) |
+
+| Agazan | Use | English |
+|--------|-----|---------|
+| `dazawan` | the named thing itself | *Azawan* (the brand) |
+| `dazawaln` | one thing the name applies to | *an Azawan* |
+| `dazawalnx` | some things the name applies to ([plurality](plurality.md)) | *some Azawans* |
+| `zohuxaludeln` | the same on a [multipart name](#phrasal-proper-names) | *someone named Uhudexaloden* |
+
+An **-ln** word is a new mention, so a lone `zazawaln.` is *there is an Azawan*, and a later **-r** resume (`dazawar`) is that same bed, not the brand. A foreign name in a span uses the fence mark `^@` for the same job ([spans](spans.md#when-required)).
+
+**Compare with:** `gazawan` after a noun puts it in the brand (`zebedal gazawan` *the bed is an Azawan*). **-l** on the root is the root’s own sense: `dazawal` is *a swan*.
 
 ### Titled phrases (hook, join, span)
 <a id="titled-phrases"></a>
@@ -339,7 +369,7 @@ Beginner used **-l** / **-m** / **-n** as reference on citations. On [number wor
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. The point is **-n** as a title on any role letter, one **`x`-compound** name, or an office **handle**.
+Short drills for Intermediate. Try each item before opening **Show answer**. The point is **-n** as a title on any role letter, **-ln** for one of a name, one **`x`-compound** name, or an office **handle**.
 
 **Setting:** a hospital ward
 
@@ -352,6 +382,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *Ahaben* | `ahaben` | |
 | *hospital-bed* (ward name) | `ahazoxebedan` | |
 | *bed* | `ebedal` | |
+| *big* | `gelavam` | `elaval` *elephant* |
 | *sit* | `vehahel` | `ehahel` *chair* |
 | *see* | `vahahal` | `ahahal` *eye* |
 | *write* | `varadal` | `aradal` *write* |
@@ -359,6 +390,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *Hospital* (named frame) | `hahazon` | `ahazol` *hospital* |
 | *Azawan* (brand) | `gazawan` | `azawan` *Azawan* |
 | *Ahaben* (brand) | `gahaben` | `ahaben` *Ahaben* |
+| *an Azawan* (one of the brand) | `dazawaln` | `azawan` *Azawan* |
+| *an Ahaben* (one of the brand) | `dahabeln` | `ahaben` *Ahaben* |
 | *Temperature* (named standard) | `heveden` | `evedel` *thermometer* |
 | *Sleep* (titled rest) | `vezeban` | `ezebal` *sleep* |
 | *Intrusion* (titled action) | `vazehen` | `azehel` *syringe* |
@@ -415,6 +448,14 @@ z-Alahen | v-Azehen
 z-Alahen | v-Amaban
 :::
 
+**7.** *There is a big Ahaben* (one bed of that brand).
+
+::: details Show answer
+`zahabeln gelavam.`
+
+z-Ahaben.instance | g-big
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zahaben vehahel hahazon.`
@@ -464,6 +505,14 @@ z-Ahaben | v-Azehen
 
 z-Alahen | v-run | h-Amaban
 *Alahen runs in Emergency* (the named frame).
+:::
+
+**7.** `zalahen dazawaln vahahal. zazawar gelavam.`
+
+::: details Show answer
+
+z-Alahen | d-Azawan.instance | v-see . z-←Azawan.instance | g-big
+*Alahen sees an Azawan. It is big.* (one bed of that brand)
 :::
 
 

@@ -251,15 +251,18 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
     }
     const quoted = unquote(body);
     const roots = quoted !== undefined ? [quoted] : [...(index.roots.get(body) ?? [])];
-    const name = nameRoot(body);
+    // A resume of **-ln** keeps the instance label (`←Azawan.instance`); the stem is the name's.
+    const name = nameRoot(body.replace(/\.instance$/, ""));
     if (name) roots.push(name);
     for (const root of roots) out.add(`${pos}${roleVowel}${root}r${suffix}`);
   }
 
-  const named_ = core.match(/^((?:th|gl|[zdbvgwhxy])-)?([A-Z].*)$/);
+  const named_ = core.match(/^((?:th|gl|[zdbvgwhxy])-)?([A-Z].*?)(\.instance)?$/);
   if (named_) {
     const root = nameRoot(named_[2]!);
-    if (root) out.add(`${(named_[1] ?? "").replace(/-$/, "")}${root}n${suffix}`);
+    // `Azawan.instance` is **-ln**, one thing the name applies to (word-endings.md#name-instance--ln).
+    const ending = named_[3] ? "ln" : "n";
+    if (root) out.add(`${(named_[1] ?? "").replace(/-$/, "")}${root}${ending}${suffix}`);
   }
   return [...out];
 }
@@ -302,10 +305,11 @@ function groupPieces(node: Extract<Node, { t: "group" }>, index: GlossIndex, tab
   if (isNamed) parts.shift();
   const type = parts.shift()!;
   const about = parts.includes("about");
+  const instance = parts.includes("instance");
   const pos = prefix.replace(/-$/, "");
 
   const [lb, rb] = WRITTEN_BRACKET[type]!;
-  const mark = isNamed ? "@" : about ? "~" : "";
+  const mark = isNamed ? (instance ? "^@" : "@") : about ? "~" : "";
   let payload = "";
   if (type === "OPAQUE") {
     const only = node.kids[0];

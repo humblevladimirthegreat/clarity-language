@@ -82,7 +82,8 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Mid-word `th` | stance seam | joins a sake to its stance vowel ([sakes](sakes.md)), any other root to a scope vowel ([label scope](predication.md#label-scope)), or a direction to whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals)) |
 | Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`ebedalahaza` *bedroom*) |
 | `-l` / `-m` / `-n` / `-r` | [word ending](word-endings.md) | audible end of the content word |
-| Optional `-x` | [plural](plurality.md) after the suffix | word-final `-lx` / `-mx` / `-nx` / `-rx` (letter `x`) |
+| Name instance **`-ln`** | [one of a name](word-endings.md#name-instance--ln) | word-final coda `ln` |
+| Optional `-x` | [plural](plurality.md) after the suffix | word-final `-lx` / `-mx` / `-nx` / `-rx` / `-lnx` (letter `x`) |
 | Stand-in **`-rl` / `-rm`** | [dependent clauses](dependents.md#dependent-clauses) | word-final coda `rl` / `rm` |
 | Backward stand-in **`-rth`** | [pointing back](dependents.md#stand-in-back) | word-final coda `rth`; the only word-final `th` |
 
@@ -168,11 +169,11 @@ These shape choices keep ordinary singing easier:
 | No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the **word edge** or a lexical join (**-l** / **-m**) before a number marker `r` |
 | No lexical stress | Music already places emphasis | Rhythm may stress a beat; spelling does not encode stress |
 | Spelling = pronunciation | You do not memorize special readings | One path from letters to sound |
-| Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-r` (optional `-x`); stand-ins end in `-rl` / `-rm` |
+| Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-ln` / `-r` (optional `-x`); stand-ins end in `-rl` / `-rm` |
 
 On high notes, **u** may open toward [ʊ] (as in *book*); that is still **u**.
 
-Legal clusters: left-hanging `gl-`; number-word role letter + `r`; lexical join **-l** / **-m** plus number marker `r` on a [kind morph](numeric-derivation.md); word-final `-lx` / `-mx` / `-nx` / `-rx`; stand-in `-rl` / `-rm` / `-rth`. The lexical join before `r` is the only syllable-final consonant inside a word.
+Legal clusters: left-hanging `gl-`; number-word role letter + `r`; lexical join **-l** / **-m** plus number marker `r` on a [kind morph](numeric-derivation.md); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in `-rl` / `-rm` / `-rth`. The lexical join before `r` is the only syllable-final consonant inside a word.
 
 Try a short Agazan line quickly at a high comfortable pitch:
 

@@ -186,6 +186,16 @@ function enforceSpanSlot(word: LexWord): void {
   if ((family.bracket === "(") !== (word.pos === "th")) throw new ConstructionError("spanSlot", word.raw);
 }
 
+/** **-ln** and span `^@` name one thing a name applies to: a noun slot or a citation only (word-endings.md#name-instance--ln). */
+function enforceNameInstance(word: LexWord): void {
+  if (word.ending !== "ln") return;
+  if (word.gl || (word.pos && !["z", "d", "b"].includes(word.pos))) throw new ConstructionError("nameInstanceSlot", word.raw);
+  const roots = word.family.kind === "content" ? word.family.roots : [];
+  if (roots.some((root) => ROLE_PRONOUN_ROOTS.has(root) || root === CLOSED.star || root === CLOSED.person)) {
+    throw new ConstructionError("nameInstanceSlot", word.raw);
+  }
+}
+
 /** Stacked join **-r** (`zuar` / `vaor` / `xuar` / `gaor`) has no reading outside the `/th/` fill-ask (join-across-roles.md § Standalone stance joins). */
 function enforceStackedJoinR(word: LexWord): void {
   const family = word.family;
@@ -295,6 +305,7 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
     if (family.kind === "writingSpan" && family.bracket === "(") throw new ConstructionError("ySpanType", word.raw);
   }
   enforceSpanSlot(word);
+  enforceNameInstance(word);
   enforceStackedJoinR(word);
   enforceStandInRole(word);
   if (family.kind === "x" && family.xFamily === "sake") {

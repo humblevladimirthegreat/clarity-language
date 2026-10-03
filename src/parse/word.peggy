@@ -97,6 +97,14 @@ function separatorVowel(markerV) {
     return markerV.charAt(0);
   }
 
+  // `^@` is the span's **-ln** (one thing the name applies to), `@` its **-n**, `~` its **-m** (spans.md#when-required).
+  function spanEnding(marks) {
+    if (marks && marks.includes("^@")) return "ln";
+    if (marks && marks.includes("@")) return "n";
+    if (marks && marks.includes("~")) return "m";
+    return "l";
+  }
+
   function endingFromWritingMark(mark, fallback) {
     if (mark === "~") return "m";
     if (mark === "@") return "n";
@@ -242,7 +250,7 @@ writingSpan
   = pos:Pos marks:WritingMarks? bracketed:BracketedPayload WordEnd
     &{ return !(bracketed.bracket === "[" || bracketed.bracket === "(") || bracketed.payload.trim() !== "="; }
     {
-      const ending = marks && marks.includes("@") ? "n" : marks && marks.includes("~") ? "m" : "l";
+      const ending = spanEnding(marks);
       return makeWord(text(), {
         pos,
         ending,
@@ -251,7 +259,7 @@ writingSpan
     }
 
 WritingMarks
-  = marks:("@" / "~")+ { return marks; }
+  = marks:("^@" / "@" / "~")+ { return marks; }
 
 BracketedPayload
   = "[" payload:SquareInner "]" { return { bracket: "[", payload }; }
@@ -630,7 +638,7 @@ NumericDerivation
     }
 
 OrdinaryCompound
-  = left:ContentRoot "x" right:ContentRoot rest:("x" r:ContentRoot { return r; })* ending:Ending plural:PluralSuffix? WordEnd {
+  = left:ContentRoot "x" right:ContentRoot rest:("x" r:ContentRoot { return r; })* ending:NounEnding plural:PluralSuffix? WordEnd {
       return {
         ending,
         plural: !!plural,
@@ -725,7 +733,7 @@ plainContent
         family: { kind: "foreign", payload },
       };
     }
-  / root:ContentRoot ending:Ending plural:PluralSuffix? {
+  / root:ContentRoot ending:NounEnding plural:PluralSuffix? {
       return {
         ending,
         plural: !!plural,
@@ -745,13 +753,13 @@ citation
       });
     }
   / marks:WritingMarks? "<" payload:ForeignPayload ">" WordEnd {
-      const ending = marks && marks.includes("@") ? "n" : marks && marks.includes("~") ? "m" : "l";
+      const ending = spanEnding(marks);
       return makeWord(text(), {
         ending,
         family: writingSpanFamily("<", payload, marks),
       });
     }
-  / root:ContentRoot ending:Ending plural:PluralSuffix? {
+  / root:ContentRoot ending:NounEnding plural:PluralSuffix? {
       return makeWord(text(), {
         ending,
         plural: !!plural,
@@ -775,6 +783,11 @@ Pos
 
 Ending
   = "rl" / "rm" / "rn" / [lmnr] { return text(); }
+
+// A noun-shaped content word may also end in **-ln**: one thing the name applies to (word-endings.md#name-instance--ln).
+NounEnding
+  = "ln" { return "ln"; }
+  / Ending
 
 PluralSuffix
   = "x" { return true; }

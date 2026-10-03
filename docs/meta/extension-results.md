@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Findings from Phase 3 of the expressiveness review (`docs/proposals/expressiveness-review.md`): every productive mechanism crossed with every place it could apply, and each empty cell judged. Rows are logged per batch, ruled by the language owner, and applied before the next batch starts; each row's **Outcome** records the ruling.
 
-Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 adopted (reversed from decline), C-15 and C-16 fixed). Wave 7 (join series on other roles): logged (E-39, E-40, C-17 to C-19), ruled and applied (E-39 adopted as a docs gap, E-40 declined, C-17 to C-19 fixed). Wave 8 (hosted relations and bars): logged (E-41 to E-43), ruled and applied (E-41 and E-43 declined, E-42 adopted). Wave 9 (questions): logged (E-44 to E-49, C-20, C-21, C-13 revisited), ruled and applied (E-44 to E-47 adopted, E-48 and E-49 declined, C-20, C-21 and C-13 fixed). Wave 10 (stand-ins and `/x/` words): logged (E-50, E-51, C-22), ruled and applied (E-50 and E-51 declined, C-22 fixed). Wave 11 (predication): logged (E-52, E-53, C-23), ruled and applied (E-52 adopted as a docs gap, E-53 declined, C-23 fixed). Wave 12 (mid-word `x` and `th`, role compounds): logged (E-54 to E-58, C-24 to C-26), ruled and applied (E-54, E-55, E-57 adopted, E-56 and E-58 declined, C-24 to C-26 fixed). Other mechanisms not started.
+Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 adopted (reversed from decline), C-15 and C-16 fixed). Wave 7 (join series on other roles): logged (E-39, E-40, C-17 to C-19), ruled and applied (E-39 adopted as a docs gap, E-40 declined, C-17 to C-19 fixed). Wave 8 (hosted relations and bars): logged (E-41 to E-43), ruled and applied (E-41 and E-43 declined, E-42 adopted). Wave 9 (questions): logged (E-44 to E-49, C-20, C-21, C-13 revisited), ruled and applied (E-44 to E-47 adopted, E-48 and E-49 declined, C-20, C-21 and C-13 fixed). Wave 10 (stand-ins and `/x/` words): logged (E-50, E-51, C-22), ruled and applied (E-50 and E-51 declined, C-22 fixed). Wave 11 (predication): logged (E-52, E-53, C-23), ruled and applied (E-52 adopted as a docs gap, E-53 declined, C-23 fixed). Wave 12 (mid-word `x` and `th`, role compounds): logged (E-54 to E-58, C-24 to C-26), ruled and applied (E-54, E-55, E-57 adopted, E-56 and E-58 declined, C-24 to C-26 fixed). Wave 13 (mood roots × role letters): logged (E-59 to E-62, C-27), awaiting ruling. Other mechanisms not started.
 
 ## How to read this file
 
@@ -1395,6 +1395,84 @@ Left-hand types of an ordinary `x` compound, then role compounds × role letter,
 - Label scope or a role compound on a special pronoun with **-n** (C-25); ability on a noun, name or pronoun (C-26).
 
 Confirmed **def** with nothing to add: left-hand pieces of an ordinary compound at every type; role compounds with **-l** / **-m** / **-n** / **-r** / **-x**; role compounds over lexicon compound stems; stacked role vowels (`ae` `ao` `oe` `ua` `uo` `ue`) on `/z/` `/d/` `/b/` and `/ɡ/`; viewpoint laterals with a special pronoun, name, content **-r** or content **-l** anchor; label scope on content roots at `/ɡ/` `/z/` `/d/` `/b/` `/v/` `/h/`; conversation length on a named citation and under `/y/`.
+
+## Mood roots × role letters
+
+Owning pages: [knowing](../grammar/knowing.md), [causation](../grammar/causation.md), [intention](../grammar/intention.md), [sakes § permission](../grammar/sakes.md#permission); the inventory is [lexicon-overlays.csv](../../data/lexicon-overlays.csv) (`pos` column = the role letters a row exists on). Wave 13. Cells checked with `node scripts/parse.mjs` (2026-10-03), one stem per kind on each of `/z/` `/d/` `/b/` `/v/` `/ɡ/` `/w/` `/h/` `/th/` `/x/` `/y/`. The overlay only fires on its listed slots. On any other role letter the same spelling is the **ordinary content word** of its root (`gedel` *forbidden*, `hezum` *surprisingly*), so a "none" cell below is not an unparsed cell: it already means the root's own sense, which is what a learner would guess. Closed relations (*like*, *between*, of-relations) × `/w/` `/th/` are wave 8; sake vowels and emotion compose are wave 14.
+
+### Grid
+
+| Family | `/th/` | `/w/` (before a `/ɡ/`) | `/ɡ/` | `/h/` | `/z/` `/d/` `/b/` `/v/` `/x/` `/y/` |
+|--------|--------|------------------------|-------|-------|-------------------------------------|
+| Evidential channels (7), MAY, NOTIONAL | def | def (knowing § mood on one adjective) | gen (ordinary root) | gen | gen |
+| RESIDUE, FORMER | def | def (prose only, no example) | gen | gen | gen |
+| CAUSE `ege` | def | def (prose only) | gen | gen | gen |
+| ABIL `eze` | def | def | gen | gen | gen |
+| PLAN, DECISION, ATTEMPT, WANT | def | parser-only → C-27, E-61 | gen | gen | gen |
+| Mirative `ezu` | def | none: `wezum` is the *even* hook (E-59) | gen | gen (`hezum`) | gen |
+| Deontic (permit / forbid / require / consent) | def | none (E-60) | gen (`gedel`) | gen | gen |
+| Phasal (4) | gen | def | gen | def | gen |
+| Poles *if*, *iff*, *only if*, *because* | def | none (E-62) | def | gen | gen |
+| Poles *although*, *while*, *before*, *after*, *until / by*, *so that*, result | gen | none | def | def | gen |
+| As-of (2) | def | def | def | def | gen |
+| SAME `ugo` | gen | gen | def | gen | gen |
+| Stimulus `obu`, respectively `aze`, mention `ele` | gen | `aze` def | `obu` / `ele` def | gen | gen |
+
+### Rows
+
+#### E-59 — mirative on `/w/` (*surprisingly big*) · forced · P3
+
+- **Proposed reading:** `wezum` before a `/ɡ/` adjective grades only that adjective: *surprisingly blue*, as the other `/th/` stances do under `/w/`.
+- **Example:** `zazawan wezum gubuhel vowogal.` parses today, but as the including hook, not as a mirative.
+- **Pattern:** mood under `/w/` before the adjective it grades (as `wevom`).
+- **Current route:** `thezum` on the clause; `hezum` (*surprisingly / suddenly*) on the verb; the including hook `wezum al` is the *even* reading.
+- **Better than current route:** no. `wezum` is already live as a hook, so the learner's two guesses collide, and `thezum` / `hezum` already say *surprisingly*.
+- **Closes:** *surprisingly blue* (`find-english`: *surprisingly*, *unexpectedly*; only `thezum` / `hezum`)
+- **Recommendation:** decline; record in design-decisions.
+
+#### E-60 — deontic and consent words on `/w/` (*an allowed colour*, *a required course*) · forced · P3
+
+- **Proposed reading:** `wegom`, `wedem`, `wumem` before an adjective say the rule that licenses or bans that property.
+- **Example:** `zazawan wumem gubuhel vowogal.` parses as an ordinary word with no reading behind it.
+- **Pattern:** mood under `/w/` before the adjective it grades.
+- **Current route:** the clause stance (`thegol`, `thumel`) or the ordinary root as an adjective (`gedel`, *forbidden*). A rule is about an act, so a rule on one property of a noun is not a reading a learner would guess.
+- **Better than current route:** no.
+- **Closes:** *permitted*, *required* as attributives (`find-english`: *required*, *permitted*, *compulsory*; only the clause stances)
+- **Recommendation:** decline; record in design-decisions.
+
+#### E-61 — PLAN, DECISION, ATTEMPT, WANT on `/w/` · forced · P3
+
+- **Proposed reading:** the same four words before an adjective: `wamam gubuhel` *the planned blue*, `wohum gubuhel` *the wanted blue*.
+- **Example:** `zazawan wohum gubuhel vowogal.` parses today as WANT; no page teaches it.
+- **Pattern:** mood under `/w/`.
+- **Current route:** the clause stance; `zohul` / `gohul` (the ordinary root) for *wish*.
+- **Better than current route:** no. The knowing and cause pages justify `/w/` by *how you know* or *how it is*, while these four hold an intention toward the whole event. An attributive *wanted* has no single reading (wanted by whom, for what).
+- **Closes:** nothing found (`find-english`: *wanted*, *planned*, *intended*; all clause stances)
+- **Recommendation:** decline and fix C-27 so the parser matches.
+
+#### E-62 — clause poles on `/w/` or `/h/` (*in case of*, *if only*) · none · P3
+
+- **Proposed reading:** `hoyem` or `woyem` as a short *in case* before a noun.
+- **Current route:** `thoyem barl` (*in that case*), or the pole on a clause with its `/b/` (`thoyem burl`). `hoyem` is the ordinary root of *opportunity*.
+- **Better than current route:** no. The pole already takes a noun in `/b/` (`thoyem bazawan`), and `/h/` is for the time and place poles.
+- **Closes:** *in case of rain* (`find-english`: *in case*, *in the event*, *provided that*; only `thoyem`)
+- **Recommendation:** decline; list as none.
+
+### Inconsistencies (wave 13)
+
+#### C-27 — `/w/` accepted on PLAN, DECISION, ATTEMPT, WANT with no page · found in intention
+
+- **Where:** [intention](../grammar/intention.md), [knowing § mood on one adjective](../grammar/knowing.md#mood-on-adjective), [lexicon-overlays.csv](../../data/lexicon-overlays.csv), `src/parse/`
+- **Problem:** the CSV gives these four kinds a `/w/` row, so `wamam`, `wehum`, `wudum` and `wohum` parse as moods. Intention teaches only `/th/` (and `/w/` on `eze`); knowing's `/w/` list names *could be*, channel, residue / former and as-if only. The pilot grid marked them **def** from the CSV, not from a page. Causation has a prose `/w/` line for CAUSE and knowing a prose line for RESIDUE / FORMER, but neither has an example.
+- **Suggested ruling:** drop the four `/w/` rows (E-61); add one `/w/` example each for RESIDUE and CAUSE, or state the limit in prose, so every `/w/` mood taught has a worked form.
+- **Outcome:** (awaiting ruling)
+
+### None (to add to unassigned-reserved, if the rows above are declined)
+
+- Mirative, deontic, consent, PLAN, DECISION, ATTEMPT, WANT on `/w/` (E-59 to E-61).
+- *if*, *only if*, *iff*, *because* on `/w/` or `/h/` (E-62); the time and place poles on `/th/` or `/w/`.
+
+Confirmed **def** or **gen** with nothing to add: every stance on `/th/`; evidentials, MAY, NOTIONAL, RESIDUE, FORMER, CAUSE, ABIL and phasals on `/w/`; poles on `/ɡ/` (and `/h/` for the time, place and purpose poles); as-of on all four slots; every mood root on `/z/` `/d/` `/b/` `/v/` `/x/` `/y/` as its ordinary word (`/x/` a topic word, `/y/` + **-n** a title).
 
 ## Inconsistencies
 

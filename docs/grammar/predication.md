@@ -54,7 +54,7 @@ A noun with no verb and no `/ɡ/` word after it says that the thing **exists** o
 >
 > "There is a dog."
 
-The same holds with a `/ɡ/` word after the noun, when the noun is a new common noun (not a name on **-n**, not a resume on **-r**). The pair introduces the thing: *there is a G Z*.
+The same holds with a `/ɡ/` word after the noun, when the noun is new: a common noun, or [one of a name](word-endings.md#name-instance--ln) on **-ln**, but not a name on **-n** or a resume on **-r**. The pair introduces the thing: *there is a G Z*.
 
 > `zodogal gelavam.`
 >

@@ -16,8 +16,9 @@ Prosody
 -finish proposals-mnemonic
 -review logical deduction
 -fix output too large for find lexicon
--is the una pronoun redundant?
--I realized that our grammar conflates proper noun singletons vs product names. This is especially apparent on role-pointer-endings.md but I suspect there are issues elsewhere in the grammar. Find other points of potential contention where the grammar assumes propers are singletons. Should non unique propers stop using -n?
+-decline by design vs decline because can't think of good reading
+-brands vs demonyms: word-endings.md lists *[Buddhist] monastery* as `/ɡ/` + -n "tradition", but predication.md says a nationality or tradition uses -m. Pick one rule.
+apply role-pointer-endings.md
 
 save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.

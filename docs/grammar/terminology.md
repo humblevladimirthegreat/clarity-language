@@ -497,7 +497,7 @@ Content endings **-l / -m / -n / -r**.
 
 ### Loan / opaque span
 
-`PoS` + optional **`~`** / **`@`** on `<…>` (exact omits the mark; no letter after `>`).
+`PoS` + optional **`~`** / **`@`** / **`^@`** on `<…>` (exact omits the mark; no letter after `>`).
 
 [Spans](spans.md#loans)
 
@@ -580,6 +580,12 @@ Single-item **-m** under question (*How about X?*).
 [Pronouns](pronouns.md#generic-pronoun)
 
 **Compare with:** `ehodon` is always the person actually listening; `unan` is one unidentified individual.
+
+### One of a name
+
+Ending **-ln** (span mark **`^@`**): one thing a name applies to, such as one unit of a brand or one copy of a work (`dazawaln` *an Azawan*).
+
+[Word endings](word-endings.md#name-instance--ln)
 
 ### Ordinal pronoun
 

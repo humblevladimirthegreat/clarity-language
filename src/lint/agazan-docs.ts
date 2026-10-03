@@ -28,7 +28,7 @@ export type AgazanLintIssue = {
 };
 
 /** Letters, digits, and morph glyphs that can appear in a spelled Agazan word. */
-const WORD_CHAR_RE = /^[aeouhtwdjybgzmnvlrx0-9+\-#_.,=@~%±[\]{}()]+$/;
+const WORD_CHAR_RE = /^[aeouhtwdjybgzmnvlrx0-9+\-#_.,=@~^%±[\]{}()]+$/;
 
 const TEACHING_GLOSS_RE = /^(?:th|[zdbvgwhxy])-(?:[a-z@]+$|[<[{(])/;
 
@@ -107,8 +107,8 @@ function looksLikeFullSpelledWord(core: string): boolean {
   if (unmatchedBrackets(core)) return false;
   if (/^(?:th|[zdbvgwhxy])[+#_]$/.test(core)) return false;
   if (hasMorphGlyph(core)) return true;
-  if (/^(?:th|[zdbvgwhxy])[aeou](?:[hwdybgzmnvlr][aeou])+[lmnr]x?$/.test(core)) return true;
-  if (/^[aeou](?:[hwdybgzmnvlr][aeou])+[lmnr]x?$/.test(core)) return true;
+  if (/^(?:th|[zdbvgwhxy])[aeou](?:[hwdybgzmnvlr][aeou])+(?:ln|[lmnr])x?$/.test(core)) return true;
+  if (/^[aeou](?:[hwdybgzmnvlr][aeou])+(?:ln|[lmnr])x?$/.test(core)) return true;
   return false;
 }
 

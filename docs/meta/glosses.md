@@ -258,7 +258,7 @@ Only when it is **not** already baked into the English sense-root:
 | `(←…)` binding for **-r** | Resume is not a lexicon sense; see below |
 | Rare teaching callouts | If you must contrast two same-sense forms that differ only by ending, prefer distinct English labels (`and.open` / `and`, `y-question` / `y-soft-question`) over re-attaching `-m` / `-l` or `~` |
 
-Do **not** write `-l` / `-m` / `-n`, **`@`**, or **`~`** after a sense. Named **-n** uses the English name (`z-Azawan`), not `-n` / `-proper` / `@`. Abstract **-m** uses the abstract word (`g-volume`), not `volume~`.
+Do **not** write `-l` / `-m` / `-n`, **`@`**, or **`~`** after a sense. Named **-n** uses the English name (`z-Azawan`), not `-n` / `-proper` / `@`. [One of a name](../grammar/word-endings.md#name-instance--ln) (**-ln**) is the name plus `.instance` (`d-Azawan.instance`); on a span, **`^@`** is `NAME.<TYPE>.instance` (`d-NAME.OPAQUE.instance["iPhone"]`). Abstract **-m** uses the abstract word (`g-volume`), not `volume~`.
 
 ### Sense labels
 
@@ -298,6 +298,7 @@ A [resume](../grammar/pronouns.md#resume-r) spells its antecedent's whole stem, 
 | Resume of a name | `zazawar` | `z-←Azawan` |
 | Resume of a content word | `vezebar` | `v-←sleep` |
 | Compound name | `zubunexunower` | `z-←Ubune-x-Unowen` |
+| Resume of one of a name (**-ln**) | `zazawar` after `dazawaln` | `z-←Azawan.instance` |
 | Resume of a prior content word | | `z-←someone` / `d-←tea` |
 | No antecedent, stem not in the lexicon | | `z-←"…"` (the stem itself) |
 | Fill-ask / unspecified member | `zar` | `z-who` / `z-something` (as the docs require for that form) |

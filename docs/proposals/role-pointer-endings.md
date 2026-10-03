@@ -38,6 +38,7 @@ The **-l**, **-m**, and **`u`** words now parse only as vowel-letter compounds, 
 - **English *one*.** *Azawan saw a cookie. Alahen saw **one** too.* The second cookie is a different cookie, so **-r** (the same one) is wrong, and today the only way to say it is to spell the stem again. That costs the most when the filler was long: a compound, a role compound, a joined list, or a span.
 - **A first mention.** **-l** is the first-mention ending ([concrete **-l**](../grammar/word-endings.md#concrete-l)): a new thing coming into the talk. The pointer part says what kind it is, without spelling the stem.
 - **The same one versus a new one.** **-r** and **-l** differ only in the ending, so the speaker always says whether this is the same thing or another of its kind. English *one* / *it* sometimes leave that unclear.
+- **It survives a question.** Today's *one* recipe ([pronouns](../grammar/pronouns.md#cross-role-recast), *a blue one*) is `dar` plus a `/ɡ/` resume of the kind. `dar` is a join **-r**, and under `yol` / `yom` a join **-r** is the fill-ask blank, so *Does Alahen see a blue one?* comes out as *Which blue dog-kind thing does Alahen see?*. The pointer is a content word, so it stays an ordinary noun in any speech act. It is also shorter.
 
 ### Shape
 
@@ -67,11 +68,14 @@ Stacked role vowels work the same way: `daexal` *another tool like that one*, `d
 
 ### Which kind
 
+**Head only.** **-l** copies the earlier filler's stem, never the `/ɡ/` words that described it. After `dodogal geredal` *a red dog*, `duxal` is *a dog*, and `duxal gubuhel` is *a blue one*. This matches English *one*, which stands for the noun and leaves the adjectives to be said again (*a red dog … a blue one*). If **-l** copied the adjectives, *a blue one* would have to read as a red and blue dog, and there would be no way to drop the old property. To keep a property, say it again (`duxal geredal` *another red one*).
+
 - **An ordinary noun:** its stem, in its sense. After `dugugol` *a cookie*, `duxal` is *a cookie* (another one). After `azawam` *grace*, `duxal` is another grace, in the abstract sense.
 - **A role compound or compound:** the whole stem. After `zaxedehol` *a teacher*, `zaxal` is *another teacher*.
 - **A joined filler:** a new group of the same make-up. After *a cookie and a knife*, `duxal` is another cookie and another knife. A name in the list is copied like any other member (see the next line).
 - **A span:** another one of what the span holds. After the opaque `d<Big Mac>`, `duxal` is *another Big Mac*. After a cite, it is another quote with the same words.
-- **A name (-n), or a span with `@`:** another one by that name. After the named `d@<Big Mac>`, `duxal` is *another Big Mac*. The rule is the same for every name. For a person (`zazawan`) the result rarely makes sense, but that is up to the speaker, not the grammar.
+- **A name (-n), or a span with `@`:** a new thing the name applies to, the same as writing [**-ln**](../grammar/word-endings.md#name-instance--ln) or `^@`. After the product `d@<Big Mac>`, `duxal` is *a Big Mac*; after a person `zazawan`, it is someone else named Azawan.
+- **One of a name (-ln), or a span with `^@`:** another thing the name applies to. After `d^@<Big Mac>`, `duxal` is *another Big Mac*.
 - **A pronoun or pointer:** use what it points to.
 - **A special pronoun** (`amago`, `ehodo`, `aha`, `una`, `oben`): no reading.
 
@@ -84,6 +88,18 @@ Sketch only; check with `node scripts/parse.mjs` once the parser supports it.
 > z-Azawan | d-cookie | v-see . z-Alahen | d-←patient.same.new | v-see
 >
 > "Azawan sees a cookie. Alahen sees one too." (a different cookie; `duxar` would be the same cookie)
+
+> `zazawan dodogal geredal vahahal. zalahen duxal gubuhel vahahal.`
+>
+> z-Azawan | [d-dog | g-red] | v-see . z-Alahen | [d-←patient.same.new | g-blue] | v-see
+>
+> "Azawan sees a red dog. Alahen sees a blue one."
+
+> `zazawan dodogal geredal vahahal. yol zalahen duxal gubuhel vahahal.`
+>
+> z-Azawan | [d-dog | g-red] | v-see . y-question | z-Alahen | [d-←patient.same.new | g-blue] | v-see
+>
+> "Azawan sees a red dog. Does Alahen see a blue one?" (yes/no: the pointer is not a blank)
 
 ## `-m`: share {#share}
 
@@ -206,6 +222,7 @@ The scene stays out (`zexor`, `zexol`, `zexom` are rejected). This proposal does
 | `una` ([special pronouns](../grammar/pronouns.md#special-pronouns)) | someone, tied to no event | *someone* |
 | Whole-stem **-l** (first mention again) | a new one, with the stem spelled out | *a cookie* |
 | Role pointer **-l** (proposed) | a new one of the participant's kind, without the stem | *one* / *another one* |
+| `dar` + `/ɡ/` resume of the kind ([pronouns](../grammar/pronouns.md#cross-role-recast)) | something of that kind, for a noun no pointer reaches; a fill-ask blank under a question | *one* (statements only) |
 | Role pointer **-m** (proposed) | one participant's part in the event | *what Azawan did* |
 | Role compound **-m** with a stem | the compound's abstract sense | |
 
@@ -221,12 +238,13 @@ The scene stays out (`zexor`, `zexol`, `zexom` are rejected). This proposal does
 
 ## Absorption checklist
 
+- [pronouns.md](../grammar/pronouns.md#cross-role-recast), the *a blue one* recipe: lead with the pointer (`duxal gubuhel`). Keep `dar` + `/ɡ/` resume only for a noun that no pointer reaches (a topic, a noun inside a cite, a hook landmark with no role vowel), with a **Compare with** that under a question `dar` is the fill-ask blank (*which one?*), so a yes/no question uses the pointer or spells the noun again.
 - [pronouns.md](../grammar/pronouns.md#role-pointers): new subsections after *The other one*: *whoever it was* (**`u`**), *a new one* (**-l**, with a **Compare with** against **-r** *the same one*), then *share* (**-m**, with a **Compare with** against the resumed event noun and `zaxar`). Add `una` to the **Compare with** for **`u`**.
 - [roles.md](../grammar/roles.md#stacked-pointers): **-l** and **-m** columns in the stacked-pointer table; allow **`o`** and **`u`** there, and drop the line that rules out *the other one*.
 - [x-compounds.md](../grammar/x-compounds.md#families-by-shape): widen the role-pointer row and the decision order to **-r** / **-l** / **-m** and pointer vowels **`a`** / **`e`** / **`o`** / **`u`**. Note that **-m** on a role compound with a stem is its abstract sense.
 - [word-endings.md](../grammar/word-endings.md): **Compare with** lines under concrete **-l** and abstract **-m**, if those sections name their other uses.
 - [spans.md](../grammar/spans.md#loans): one line that **-l** on a span filler is another of what the span holds.
-- [design-decisions.md](../meta/design-decisions.md): amend D-19 (**`o`** on stacked roles with an overt filler; **`u`** lookup) and D-24 (the new endings). Settle the rejected cells: **-l** on a special pronoun; **-l** with **`u`**; **-m** with **`e`**; **`o`** on the scene; **-x** on a share.
+- [design-decisions.md](../meta/design-decisions.md): amend D-19 (**`o`** on stacked roles with an overt filler; **`u`** lookup) and D-24 (the new endings). Record that **-l** copies the head stem only, not the filler's `/ɡ/` words. Settle the rejected cells: **-l** on a special pronoun; **-l** with **`u`**; **-m** with **`e`**; **`o`** on the scene; **-x** on a share.
 - [unassigned-reserved.md](../meta/unassigned-reserved.md): drop the **-l** / **-m** cells and the **`u`** + **-r** row ("pointer vowel **`u`**: not a pointer") from the vowel-letter compound silhouettes.
 - [glosses.md](../meta/glosses.md): the `.new`, `.part`, and `unsaid` glosses.
 - Parser, in the same change as the grammar edit:

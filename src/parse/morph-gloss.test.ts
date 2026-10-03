@@ -340,6 +340,12 @@ describe("compareMorphGloss", () => {
     expectLine("zazawan d@[onodan alahen] vogozam", "z-Azawan | d-NAME.CITE[Onodan | Alahen] | v-rejection");
   });
 
+  it("glosses -ln and ^@ as the name plus .instance (word-endings.md#name-instance--ln)", () => {
+    expectLine("zalahen dazawaln vahahal", "z-Alahen | d-Azawan.instance | v-see");
+    expectLine("zalahen dazawalnx vahahal", "z-Alahen | d-Azawan.instance-x | v-see");
+    expectLine("zalahen d^@<iPhone> vahahal", 'z-Alahen | d-NAME.OPAQUE.instance["iPhone"] | v-see');
+  });
+
   it("the mention marker's spelling is the ordinary adjective anywhere but before a span", () => {
     expectLine("glelel zodogal vowogal", "[gl-letters | z-dog] | v-walk");
   });
