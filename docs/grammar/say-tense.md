@@ -363,6 +363,7 @@ For *should have*, date the ought with [stance as-of](relations.md#stance-as-of)
 | *thinking of* | PLAN sketch **`thamar`** |
 | *hopefully* | **`thevegem`** |
 | *tries to* | **`thudum`** |
+| *if only …*, *I wish …* | WANT with the speaker in `/b/`: **`thohum bamagon`** |
 | *let's* | request **`yem`** with **`aha`** as subject |
 
 > `zalahen thohum vowogal.`
@@ -370,6 +371,12 @@ For *should have*, date the ought with [stance as-of](relations.md#stance-as-of)
 > z-Alahen | th-WANT-unstated | v-walk
 >
 > "Alahen wants to walk."
+
+> `zazawan thohum bamagon vowogal.`
+>
+> z-Azawan | [th-WANT-unstated | b-speaker] | v-walk
+>
+> "If only Azawan would walk."
 
 > `zalahen thamar vowogal.`
 >

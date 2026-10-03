@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Findings from Phase 3 of the expressiveness review (`docs/proposals/expressiveness-review.md`): every productive mechanism crossed with every place it could apply, and each empty cell judged. Rows are logged per batch, ruled by the language owner, and applied before the next batch starts; each row's **Outcome** records the ruling.
 
-Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 adopted (reversed from decline), C-15 and C-16 fixed). Wave 7 (join series on other roles): logged (E-39, E-40, C-17 to C-19), ruled and applied (E-39 adopted as a docs gap, E-40 declined, C-17 to C-19 fixed). Wave 8 (hosted relations and bars): logged (E-41 to E-43), ruled and applied (E-41 and E-43 declined, E-42 adopted). Wave 9 (questions): logged (E-44 to E-49, C-20, C-21, C-13 revisited), ruled and applied (E-44 to E-47 adopted, E-48 and E-49 declined, C-20, C-21 and C-13 fixed). Wave 10 (stand-ins and `/x/` words): logged (E-50, E-51, C-22), ruled and applied (E-50 and E-51 declined, C-22 fixed). Wave 11 (predication): logged (E-52, E-53, C-23), ruled and applied (E-52 adopted as a docs gap, E-53 declined, C-23 fixed). Wave 12 (mid-word `x` and `th`, role compounds): logged (E-54 to E-58, C-24 to C-26), ruled and applied (E-54, E-55, E-57 adopted, E-56 and E-58 declined, C-24 to C-26 fixed). Wave 13 (mood roots × role letters): logged (E-59 to E-62, C-27), awaiting ruling. Other mechanisms not started.
+Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 adopted (reversed from decline), C-15 and C-16 fixed). Wave 7 (join series on other roles): logged (E-39, E-40, C-17 to C-19), ruled and applied (E-39 adopted as a docs gap, E-40 declined, C-17 to C-19 fixed). Wave 8 (hosted relations and bars): logged (E-41 to E-43), ruled and applied (E-41 and E-43 declined, E-42 adopted). Wave 9 (questions): logged (E-44 to E-49, C-20, C-21, C-13 revisited), ruled and applied (E-44 to E-47 adopted, E-48 and E-49 declined, C-20, C-21 and C-13 fixed). Wave 10 (stand-ins and `/x/` words): logged (E-50, E-51, C-22), ruled and applied (E-50 and E-51 declined, C-22 fixed). Wave 11 (predication): logged (E-52, E-53, C-23), ruled and applied (E-52 adopted as a docs gap, E-53 declined, C-23 fixed). Wave 12 (mid-word `x` and `th`, role compounds): logged (E-54 to E-58, C-24 to C-26), ruled and applied (E-54, E-55, E-57 adopted, E-56 and E-58 declined, C-24 to C-26 fixed). Wave 13 (mood roots × role letters): logged (E-59 to E-62, C-27), rows redone 2026-10-03, ruled and applied (E-59 adopted as a docs gap, E-60 to E-62 declined, C-27 fixed). Other mechanisms not started.
 
 ## How to read this file
 
@@ -1402,75 +1402,85 @@ Owning pages: [knowing](../grammar/knowing.md), [causation](../grammar/causation
 
 ### Grid
 
+Redone 2026-10-03. The first pass marked several `/w/` cells **none** and claimed `wezum` was taken by the *even* hook. Neither holds: `wezum al` is the ordinary root `ezu` (*amazement*) on `/w/` grading the hook `al`, and every `/w/` cell with no overlay row parses as its root's ordinary `/w/` word (checked below). Those cells are **gen**, and the rows ask only whether an overlay reading should replace that ordinary reading.
+
 | Family | `/th/` | `/w/` (before a `/ɡ/`) | `/ɡ/` | `/h/` | `/z/` `/d/` `/b/` `/v/` `/x/` `/y/` |
 |--------|--------|------------------------|-------|-------|-------------------------------------|
 | Evidential channels (7), MAY, NOTIONAL | def | def (knowing § mood on one adjective) | gen (ordinary root) | gen | gen |
-| RESIDUE, FORMER | def | def (prose only, no example) | gen | gen | gen |
-| CAUSE `ege` | def | def (prose only) | gen | gen | gen |
+| RESIDUE, FORMER | def | def (prose only, no example → C-27) | gen | gen | gen |
+| CAUSE `ege` | def | def (prose only, no example → C-27) | gen | gen | gen |
 | ABIL `eze` | def | def | gen | gen | gen |
-| PLAN, DECISION, ATTEMPT, WANT | def | parser-only → C-27, E-61 | gen | gen | gen |
-| Mirative `ezu` | def | none: `wezum` is the *even* hook (E-59) | gen | gen (`hezum`) | gen |
-| Deontic (permit / forbid / require / consent) | def | none (E-60) | gen (`gedel`) | gen | gen |
+| PLAN, DECISION, ATTEMPT, WANT | def | gen (overlay rows dropped, E-61) | gen | gen | gen |
+| Mirative `ezu` | def | gen: `wezum` *amazingly* → E-59 | gen | gen (`hezum`) | gen |
+| Deontic (permit / forbid / require / consent) | def | gen: `wedem`, `wegom`, `wumem` → E-60 | gen | gen | gen |
 | Phasal (4) | gen | def | gen | def | gen |
-| Poles *if*, *iff*, *only if*, *because* | def | none (E-62) | def | gen | gen |
-| Poles *although*, *while*, *before*, *after*, *until / by*, *so that*, result | gen | none | def | def | gen |
+| Poles *if*, *iff*, *only if*, *because* | def | gen: `woyem` *opportunely* → E-62 | def | gen (`hoyem`) | gen |
+| Poles *although*, *while*, *before*, *after*, *until / by*, *so that*, result | gen | gen | def | def | gen |
 | As-of (2) | def | def | def | def | gen |
 | SAME `ugo` | gen | gen | def | gen | gen |
 | Stimulus `obu`, respectively `aze`, mention `ele` | gen | `aze` def | `obu` / `ele` def | gen | gen |
 
+Parses (all in `zazawan W gubuhel vowogal.`): `wezum`, `wezul`, `wedem`, `wegol`, `wumel`, `woyem` read as **ordinary** content words; `wamam`, `wohum`, `wudum` read as the PLAN / WANT / ATTEMPT **overlay**; `wegem`, `wamom`, `wevom` read as CAUSE / RESIDUE / WITNESSED overlays.
+
 ### Rows
 
-#### E-59 — mirative on `/w/` (*surprisingly big*) · forced · P3
+The question for each row is the same: on `/w/` before an adjective, should the spelling keep its **ordinary root** reading (which already parses) or take the **mood** reading (as the evidentials do)? The test is what a learner would guess, and what each reading lets them say that the other cannot.
 
-- **Proposed reading:** `wezum` before a `/ɡ/` adjective grades only that adjective: *surprisingly blue*, as the other `/th/` stances do under `/w/`.
-- **Example:** `zazawan wezum gubuhel vowogal.` parses today, but as the including hook, not as a mirative.
-- **Pattern:** mood under `/w/` before the adjective it grades (as `wevom`).
-- **Current route:** `thezum` on the clause; `hezum` (*surprisingly / suddenly*) on the verb; the including hook `wezum al` is the *even* reading.
-- **Better than current route:** no. `wezum` is already live as a hook, so the learner's two guesses collide, and `thezum` / `hezum` already say *surprisingly*.
-- **Closes:** *surprisingly blue* (`find-english`: *surprisingly*, *unexpectedly*; only `thezum` / `hezum`)
-- **Recommendation:** decline; record in design-decisions.
+#### E-59 — mirative on `/w/` (*surprisingly big*) · intuitive but redundant · P2
 
-#### E-60 — deontic and consent words on `/w/` (*an allowed colour*, *a required course*) · forced · P3
+- **Today:** `zazawan wezum gubuhel vowogal.` already parses as *Azawan, surprisingly blue, walks*: `ezu` (*surprise* / *amazement*) on `/w/` grades the adjective. This is the same word as in `wezum al` (*even*), where it grades the hook instead. There is no collision: one word, graded host decides.
+- **Proposed overlay reading:** the same spelling as the mirative mood, adding the firmness endings (`wezul` against a firm expectation, `wezur` against a loose one).
+- **What the overlay would add:** only the firm / loose distinction. The ordinary word already says the property was unexpected, which is all English *surprisingly X* says.
+- **Gap that is real:** no page teaches *surprisingly* + adjective. `find-english` (*surprisingly*, *unexpectedly*) finds only `thezum` (whole clause) and `hezum` (on the verb). *Surprisingly good*, *unexpectedly cheap* are common, so this is P2, not P3.
+- **Recommendation:** **adopt as a docs gap; no overlay.** Add one `wezum` + adjective example to [knowing § mirative](../grammar/knowing.md#mirative) beside the existing **Compare with** on `wezum al`, and an [english.md](../grammar/english.md) row for *surprisingly / unexpectedly* + adjective. No parser or CSV change.
+- **Outcome:** adopted as a docs gap — `wezum` + adjective taught in [knowing § mirative](../grammar/knowing.md#mirative) with a checkpoint item; recipe row in say-amounts § manner words. No new form, no parser change.
 
-- **Proposed reading:** `wegom`, `wedem`, `wumem` before an adjective say the rule that licenses or bans that property.
-- **Example:** `zazawan wumem gubuhel vowogal.` parses as an ordinary word with no reading behind it.
-- **Pattern:** mood under `/w/` before the adjective it grades.
-- **Current route:** the clause stance (`thegol`, `thumel`) or the ordinary root as an adjective (`gedel`, *forbidden*). A rule is about an act, so a rule on one property of a noun is not a reading a learner would guess.
-- **Better than current route:** no.
-- **Closes:** *permitted*, *required* as attributives (`find-english`: *required*, *permitted*, *compulsory*; only the clause stances)
-- **Recommendation:** decline; record in design-decisions.
+#### E-60 — deontic and consent words on `/w/` (*an allowed colour*, *a required course*) · intuitive but redundant · P3
+
+- **Two English jobs:**
+  1. *a forbidden book*, *required reading*, *a permitted move*: the **noun** is what the rule covers. This is the ordinary root on `/ɡ/` (`ede` *forbidden*, `ego` *permission*, `ume` *policy*, abstract **-m**). It is not a `/w/` cell at all.
+  2. *a car in a forbidden colour*: only the **property** is under the rule. This is the `/w/` cell, and it is rare.
+- **Today:** job 2 already parses with the ordinary roots: `wedem gubuhel` *forbiddenly blue*, `wegom gubuhel` *permissibly blue*, `wumem gubuhel` *blue per policy*.
+- **What the overlay would add:** the source distinction in the endings (rule **-l** / person **-m** / custom **-r**), and for **-m** a `/b/` naming who allows, forbids or demands. `/w/` takes no `/b/` (only as-of does; see the wave 8 grid), so the person reading would lose its grantor, which is the main thing the deontic **-m** is for. A learner who knows `thedem bazawan` (*Azawan forbids it*) would try `wedem bazawan gubuhel` and hit a parse error.
+- **Recommendation:** **decline the overlay; keep the ordinary reading.** Record in design-decisions. Optional docs gap: an english.md row for attributive *forbidden / permitted / required* → the ordinary root on `/ɡ/` (spelling and ending to be confirmed with `--check-lexicon` when applied).
+- **Outcome:** declined — D-35. Recipe rows for attributive *forbidden* (`gedem`) and *permitted* (`gegom`) added to english.md.
 
 #### E-61 — PLAN, DECISION, ATTEMPT, WANT on `/w/` · forced · P3
 
-- **Proposed reading:** the same four words before an adjective: `wamam gubuhel` *the planned blue*, `wohum gubuhel` *the wanted blue*.
-- **Example:** `zazawan wohum gubuhel vowogal.` parses today as WANT; no page teaches it.
-- **Pattern:** mood under `/w/`.
-- **Current route:** the clause stance; `zohul` / `gohul` (the ordinary root) for *wish*.
-- **Better than current route:** no. The knowing and cause pages justify `/w/` by *how you know* or *how it is*, while these four hold an intention toward the whole event. An attributive *wanted* has no single reading (wanted by whom, for what).
-- **Closes:** nothing found (`find-english`: *wanted*, *planned*, *intended*; all clause stances)
-- **Recommendation:** decline and fix C-27 so the parser matches.
+- **Today:** the CSV gives these four kinds `/w/` rows, so `wamam`, `wehum`, `wudum`, `wohum` parse as moods, but no page teaches them (C-27). The ruling is either to teach the overlay or to drop it, which turns these spellings back into ordinary words.
+- **Proposed overlay reading:** the intention scoped to one property: `wudum geyayem` *trying to be careful*, `wohum gubuhel` *wanting to be blue*, `wamam gubuhel` *(the) planned blue*.
+- **Why it is forced, not intuitive:**
+  1. **Whose intention splits.** On `/th/` an intention mood belongs to the subject unless a `/b/` names someone else ([intention § whose](../grammar/intention.md#whose-intention)). Before an adjective there is a second candidate, the noun the adjective describes. In `zazawan dodogal wudum geyayem vahahal.`, is the dog trying to be careful, or is Azawan trying to make it so? Guesses split, so this needs a new rule. The evidentials never have this problem, because their holder is always the speaker.
+  2. **No `/b/`.** `/w/` takes no `/b/`, so *someone else's* plan or want cannot be named, unlike on `/th/`.
+  3. **The intention moods do not assert the event.** On `/th/` that is the point (*tries to walk* does not say they walk). On `/w/` it would make one adjective unasserted inside an asserted clause, which the evidential `/w/` uses never do.
+- **What dropping it gives:** the ordinary readings are themselves guessable and useful: `wamam` *as planned* / *by design*, `wehum` *decidedly*, `wudum` *tentatively* / *experimentally*, `wohum` *wishfully*.
+- **Existing routes:** *as planned* on a property is the bar `thamam zael` ([comparatives § bars](../grammar/comparatives.md#bars)); *experimental* is `gudum` (english.md); *tries to be careful* is `thudum` on a predicate clause.
+- **Case for adopting instead:** uniformity. A learner taught "a `/th/` mood moves to `/w/` to cover one adjective" will try it on every mood. Declining makes PLAN, DECISION, ATTEMPT and WANT exceptions. That cost is small, because the spelling still parses with a nearby ordinary meaning, and the exception can be taught in one line ("moods about how you know or how it is"; not intentions).
+- **Recommendation:** **decline; fix C-27 by dropping the twelve `/w/` CSV rows.** Record in design-decisions with the holder-split reason.
+- **Outcome:** declined — D-35. The twelve `/w/` rows dropped from lexicon-overlays.csv, so the spellings read as ordinary words; knowing § mood on one adjective names which moods move to `/w/`.
 
 #### E-62 — clause poles on `/w/` or `/h/` (*in case of*, *if only*) · none · P3
 
-- **Proposed reading:** `hoyem` or `woyem` as a short *in case* before a noun.
-- **Current route:** `thoyem barl` (*in that case*), or the pole on a clause with its `/b/` (`thoyem burl`). `hoyem` is the ordinary root of *opportunity*.
-- **Better than current route:** no. The pole already takes a noun in `/b/` (`thoyem bazawan`), and `/h/` is for the time and place poles.
-- **Closes:** *in case of rain* (`find-english`: *in case*, *in the event*, *provided that*; only `thoyem`)
-- **Recommendation:** decline; list as none.
+- **Why there is no slot:** a pole is not a mood. It links its clause to a condition in `/b/` (a noun or a dependent clause). `/w/` takes no `/b/`, so a pole on `/w/` has nothing to link to. `/h/` is already where the time, place and purpose poles live, and *if* is not one of those.
+- **Today:** `woyem` and `hoyem` parse as the ordinary root `oye` (*door* / *opportunity*): *opportunely*.
+- **Both English jobs are already covered:**
+  - *in case of rain* → `thoyem berehel` (the pole with a noun in `/b/`, as in `tholum berehel` *only if there is rain*).
+  - *if only …* is a wish against the facts, not a condition → WANT on the clause (`thohum`). `find-english` (*if only*) finds only the condition poles, so this is a recipe-track gap, not a missing form.
+- **Recommendation:** **decline; nothing to reserve** (the cells are **gen**). Log *if only* → `thohum` as a recipe-track row for [english.md](../grammar/english.md).
+- **Outcome:** declined — D-35; nothing reserved. Recipe row *if only* / *I wish* → `thohum bamagon` added to say-tense § will, want, try.
 
 ### Inconsistencies (wave 13)
 
 #### C-27 — `/w/` accepted on PLAN, DECISION, ATTEMPT, WANT with no page · found in intention
 
 - **Where:** [intention](../grammar/intention.md), [knowing § mood on one adjective](../grammar/knowing.md#mood-on-adjective), [lexicon-overlays.csv](../../data/lexicon-overlays.csv), `src/parse/`
-- **Problem:** the CSV gives these four kinds a `/w/` row, so `wamam`, `wehum`, `wudum` and `wohum` parse as moods. Intention teaches only `/th/` (and `/w/` on `eze`); knowing's `/w/` list names *could be*, channel, residue / former and as-if only. The pilot grid marked them **def** from the CSV, not from a page. Causation has a prose `/w/` line for CAUSE and knowing a prose line for RESIDUE / FORMER, but neither has an example.
-- **Suggested ruling:** drop the four `/w/` rows (E-61); add one `/w/` example each for RESIDUE and CAUSE, or state the limit in prose, so every `/w/` mood taught has a worked form.
-- **Outcome:** (awaiting ruling)
+- **Problem:** the CSV gives these four kinds a `/w/` row, so `wamam`, `wehum`, `wudum` and `wohum` parse as moods, and their anchors point at intention sections that teach only `/th/`. Knowing's `/w/` list names *could be*, channel, residue / former and as-if only. Causation has a prose `/w/` line for CAUSE and knowing a prose line for RESIDUE / FORMER, but neither has an example.
+- **Suggested ruling:** follows E-61. If declined: drop the twelve `/w/` rows so the spellings read as ordinary words, and add one sentence to knowing § mood on one adjective naming which moods move to `/w/`. If adopted: teach the `/w/` forms on intention with the holder rule. Either way, add one worked `/w/` example each for RESIDUE and CAUSE.
+- **Outcome:** fixed — the four kinds' `/w/` rows dropped (E-61); knowing § mood on one adjective lists the moods that move to `/w/`; worked `/w/` examples added for RESIDUE (knowing § mood on one adjective) and CAUSE (causation § CAUSE).
 
-### None (to add to unassigned-reserved, if the rows above are declined)
+### None (to add to unassigned-reserved)
 
-- Mirative, deontic, consent, PLAN, DECISION, ATTEMPT, WANT on `/w/` (E-59 to E-61).
-- *if*, *only if*, *iff*, *because* on `/w/` or `/h/` (E-62); the time and place poles on `/th/` or `/w/`.
+Nothing. Every `/w/` and `/h/` cell in this grid either has an overlay reading or reads as its root's ordinary word. The declined overlay readings go to design-decisions, not unassigned-reserved.
 
 Confirmed **def** or **gen** with nothing to add: every stance on `/th/`; evidentials, MAY, NOTIONAL, RESIDUE, FORMER, CAUSE, ABIL and phasals on `/w/`; poles on `/ɡ/` (and `/h/` for the time, place and purpose poles); as-of on all four slots; every mood root on `/z/` `/d/` `/b/` `/v/` `/x/` `/y/` as its ordinary word (`/x/` a topic word, `/y/` + **-n** a title).
 

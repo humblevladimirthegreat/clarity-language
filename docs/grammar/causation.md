@@ -359,6 +359,14 @@ To highlight **how** a result comes about (the mechanism, not only that a condit
 >
 > "Fire is what makes Alahen pour."
 
+On `/w/`, **CAUSE** says the mechanism produces that one property:
+
+> `zazawan wegem gelevam vowogal.`
+>
+> [z-Azawan | [w-CAUSE | g-exertion]] | v-walk
+>
+> "Azawan walks, exerted — that is how the mechanism works."
+
 **Compare with:** *because* / *if* name the condition (`thevem` / `thoyem`). **CAUSE** names how the link meshes.
 
 #### Make someone do it {#make}

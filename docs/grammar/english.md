@@ -169,6 +169,8 @@ English often makes an adjective from a noun by adding an ending (*gold* → *go
 | *physical* (of the body) | `gegezem` (*body*) | [Adjectives](clause.md#adjectives-ɡ) |
 | *agricultural* | `gavavom` (*cultivation*) | [Adjectives](clause.md#adjectives-ɡ) |
 | *experimental* | `gudum` (*experiment*) | [Adjectives](clause.md#adjectives-ɡ) |
+| *forbidden* (*a forbidden book*) | `gedem` (*forbidden*) | [Adjectives](clause.md#adjectives-ɡ) |
+| *permitted* / *allowed* | `gegom` (*permission*) | [Adjectives](clause.md#adjectives-ɡ) |
 | *structural* | `gobom` (a piece of the structure; add the whole in `/b/`) | [Of relations](relations.md#of-relations) |
 | *native* (*native to the country*) | `gagum` + `/b/` for the place: `zobel gagum bagul` | [Of relations](relations.md#of-relations) |
 

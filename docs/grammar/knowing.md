@@ -348,7 +348,13 @@ The mirative says only that the news was unexpected, not whether it is good or b
 >
 > "Pleasantly surprised by the present."
 
-**Compare with:** *even* on the including hook ([`wezum al`](hooks.md#hook-w)) singles out the one unexpected member of a set. **`thezum`** says the whole claim was unexpected.
+**Compare with:** *even* on the including hook ([`wezum al`](hooks.md#hook-w)) singles out the one unexpected member of a set. **`thezum`** says the whole claim was unexpected. For *surprisingly* on one adjective (*surprisingly blue*), put the ordinary word **`wezum`** (*amazement*) on `/w/` right before it, the same word that grades the hook in *even*:
+
+> `zazawan wezum gubuhel vowogal.`
+>
+> [z-Azawan | [w-amazement | g-blue]] | v-walk
+>
+> "Azawan, surprisingly blue, walks."
 
 ### Forecasts (`bral`) {#forecast}
 
@@ -735,6 +741,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Wri
 | *RESIDUE* | `thamom` | `amom` *debt* |
 | *FORMER* | `thenom` | `enom` *emptiness* |
 | *MIRATIVE* | `thezum` | `ezul` *surprise* |
+| *amazement* (before an adjective: *surprisingly*) | `wezum` | `ezul` *surprise* |
 | *always* | `hual` | |
 | *TOLD.weak* | `thewar` | `ewal` *ear* |
 | *PATTERN.strong* | `thobal` | `obal` *paw-prints* |
@@ -881,6 +888,14 @@ z-Alahen | th-LIVE | th-MIRATIVE | v-sing
 z-Alahen | th-TOLD | th-3rd-hand | v-scream
 :::
 
+**18.** *Alahen, surprisingly gray, sings.*
+
+::: details Show answer
+`zalahen wezum gegeval vezehel.`
+
+[z-Alahen | [w-amazement | g-gray]] | v-sing
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zazawan thahom vezebel bahaben.`
@@ -1015,6 +1030,8 @@ z-Ahaben | th-2nd-hand | v-tell
 
 These `/th/` moods usually sit over the whole clause. When the *could be*, channel, residue / former climate, or as-if frame applies only to the `/ɡ/` adjective it sits immediately before, write the same mood under `/w/` instead.
 
+Only moods about **how you know** or **how it stands** move to `/w/` this way: the ones above, [CAUSE](causation.md#cause), the [phasals](#phasal) and [*can* with `eze`](intention.md#ability-fallback). A plan, decision, try, or want stays on `/th/`: on `/w/` the same spelling is the ordinary word of its root (`wamam` *as planned*, `wehum` *decidedly*, `wudum` *tentatively*, `wohum` *wishfully*).
+
 > `zazawan wevom gubuhel vowogal.`
 >
 > [z-Azawan | [w-WITNESSED | g-blue]] | v-walk
@@ -1026,6 +1043,12 @@ These `/th/` moods usually sit over the whole clause. When the *could be*, chann
 > [z-Azawan | [w-LIVE | g-blue]] | v-walk
 >
 > "Azawan walks — and that blue is from the scene (live)."
+
+> `zazawan wamom gadadal vowogal.`
+>
+> [z-Azawan | [w-RESIDUE | g-tired]] | v-walk
+>
+> "Azawan walks, tired — and that tiredness still counts."
 
 ### Dated channel (signed offset) {#dated-channel}
 <a id="ago"></a>
