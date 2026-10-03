@@ -6,31 +6,7 @@ Psychological purpose, limits, feature criteria, and a tour of how those aims sh
 
 Agazan encodes psychological concepts and self-improvement techniques into vocabulary and grammar so that using the language nudges you toward better habits. For example, a single word for *can’t* can say whether the block is only temporary, may still change, or will not. That split keeps a hard moment from hardening into a fixed identity about who you are.
 
-The design aims at three outcomes, in this order:
-
-### Compassion {#compassion}
-
-Support self-acceptance and acceptance of others, and make judgments visible when they arise.
-
-Praise can name the sake a person’s work actually served instead of stopping at a vague *good*. A flash of anger or anxiety can be said as an unmet sake plus its activation and where it sits, so the charge has an audible target rather than a blank label. And *can’t* comes in kinds: temporary, modifiable, or irreversible. A block never has to read as who someone is.
-
-### Rationality {#rationality}
-
-Surface common biases that make self-delusion easy.
-
-Claims can say how you know: memory, record, hearsay, pattern, inference.
-
-Choice lists can say whether they are open or closed, so two options cannot smuggle themselves in as the only ones.
-
-Habitual *always* is the usual pattern (exceptions expected), not something that must happen, and not an ought. When the “must” is really an ought, the sentence shows the value behind it instead of treating a wish as necessity.
-
-### Empowerment {#empowerment}
-
-Support authentic choice by making reasons for action visible.
-
-The motive or prescription behind an action can be named on the sake it serves instead of conflating it into a bare *should*. Candidates can be numbered so *the problem* and *the solution* stay plural and revisable, and the same situation can be reworded rather than recounted as a second candidate. A decision can mark how revisable it is, a plan can stay separate from a forecast, and a ranking can name the bar it is measured against.
-
-**Why this order.** Rationality is hard without compassion first: lack of self-acceptance fuels motivated reasoning, so truth-seeking turns into defense. Empowerment without rationality is foolish; without compassion it is antisocial; without both it is dangerous. So the stack is compassion → rationality → empowerment.
+The design aims at three outcomes: [compassion](#compassion), [rationality](#rationality), and [empowerment](#empowerment). Each is described with the features that serve it under [Psychological features](#psychological-features).
 
 ### Try it in English first {#try-it-in-english}
 
@@ -54,44 +30,27 @@ Agazan puts those framings into ordinary words and optional extra pieces on word
 
 Psychological features fit these criteria:
 
-* **Helps with language goals.** Supports compassion, rationality, and/or empowerment. Prefer research when it exists; user testing is fine when research is scarce.
-
-* **Addresses a common problem.** Targets biases or friction that show up for most people. Rare edge cases do not justify heavy machinery.
-
-* **Easy to use.** Explainable in roughly one paragraph plus a couple of examples; usable in sentences with at most about one extra second of thought after practice.
-
-* **Avoids shame.** No option should read as the socially “correct” default. Each choice has situations where it belongs.
-
-* **Reminders where they are needed.** Nudge compassion, rationality, or empowerment mainly where those failures are likely. Some extra nudges are fine; pointless ones should stay rare. Nudges stay **optional and targeted**.
+- **Helps with language goals.** Supports compassion, rationality, and/or empowerment. Prefer research when it exists; user testing is fine when research is scarce.
+- **Addresses a common problem.** Targets biases or friction that show up for most people. Rare edge cases do not justify heavy machinery.
+- **Easy to use.** Explainable in roughly one paragraph plus a couple of examples; usable in sentences with at most about one extra second of thought after practice.
+- **Avoids shame.** No option should read as the socially “correct” default. Each choice has situations where it belongs.
+- **Reminders where they are needed.** Nudge compassion, rationality, or empowerment mainly where those failures are likely. Some extra nudges are fine; pointless ones should stay rare. Nudges stay **optional and targeted**.
 
 ## Psychological features {#psychological-features}
 
-How the aims show up in vocabulary and grammar. Each section names an English job and one picture; the linked pages teach the forms.
+How the aims show up in vocabulary and grammar. The features are grouped by the thinking trap each one answers, and the groups sit under the three aims. Each feature names an English job and one picture; the linked pages teach the forms. The groups name the habit a feature counters, not a bias it has been shown to cure ([limits](#limits)).
 
-### Sakes, gratitude, and oughts {#sakes-gratitude-and-oughts}
+### Compassion {#compassion}
 
-English often conflates *I want*, *I need*, *I should*, and *this is good for me*, so gratitude, motive, and ought blur together.
+Support self-acceptance and acceptance of others, and make judgments visible when they arise.
 
-Agazan’s [sakes](sakes.md) name a closed inventory of **sakes** (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical, or unspecified) and how you relate to them:
+Praise can name the sake a person’s work actually served instead of stopping at a vague *good*. A flash of anger or anxiety can be said as an unmet sake plus its activation and where it sits, so the charge has an audible target rather than a blank label. And *can’t* comes in kinds: temporary, modifiable, or irreversible. A block never has to read as who someone is.
 
-| Stance | Job |
-|--------|-----|
-| Met | This serves the sake, including whether the payoff lasts or is only for now (gratitude / savoring) — an adjective on the noun, or `/th/` on the event |
-| Motive | Acting *for* this sake, including where the reason stands |
-| Prescription | Deontic on the host act for this sake — ending marks the move's warrant or aim (**invited / offered / trial**) |
-| Unmet | Costs the sake, including how changeable that is |
+#### “This is who I am” {#trap-identity}
 
-Naming the sake and your stance toward it helps you notice gratitude, motive, and oughts instead of conflating them into vague *want* / *should* / *good*. A sake on `/ɡ/` is a belonging (so *my X serves competence* is one adjective); an unowned stimulus uses the sake on `/w/` immediately before **`gobum`**.
+A hard moment, a label, or a past pattern hardens into a fixed fact about a person. The features here let you say how far a label reaches, how permanent a block is, and what from the past is still on the books, so a bad stretch stays a stretch.
 
-### Emotions as composition {#emotions-as-composition}
-
-Opaque labels (*angry*, *anxious*, *proud*) hide which sake is in play and what to ask for.
-
-Agazan [composes emotion](sakes.md#emotion-compose) from a [sake](sakes.md) stance (often unmet or met), plus a locus (where the feeling sits, or what it points at), plus motion (surging / flowing / still).
-
-Composing emotion from sake + locus + motion helps you ask for what would actually help instead of stopping at the label.
-
-### How far a label reaches {#how-far-a-label-reaches}
+##### How far a label reaches {#how-far-a-label-reaches}
 
 English *Alahen is angry* can mean one outburst or the kind of person Alahen is. One act slides into a verdict on someone's nature, and a name for a problem (*lazy*, *anxious*) starts to sound like its cause.
 
@@ -99,8 +58,7 @@ English *Alahen is angry* can mean one outburst or the kind of person Alahen is.
 
 Marking a label's reach helps you describe what happened without turning it into who someone is, including yourself.
 
-### Can, can’t, and won’t
-<a id="can-cant-and-wont"></a>
+##### Can, can’t, and won’t
 
 *I can’t* blurs temporary block, lasting incapability, and choice.
 
@@ -108,8 +66,43 @@ Marking a label's reach helps you describe what happened without turning it into
 
 Tagging *can’t right now* vs *may yet* vs *impossible* helps you stop treating a temporary block as a fixed incapability.
 
-### How you know, and *could be*
-<a id="how-you-know"></a>
+##### What still counts, and whose weather
+
+English *has…* and *used to* mix **when** something happened with whether it **still matters**, or whether a pattern is **still the climate you claim**.
+
+[RESIDUE](knowing.md#residue) marks leftover balance: the outcome is still on the books. [FORMER](knowing.md#former-climate) marks usual weather you are **not** reporting as current. Neither word is a past tense; they stack with a live look, memory, or a forecast.
+
+Marking residue vs an archived episode helps rumination stay optional. Marking former climate helps “I always was this way” stay a weather report you can stop giving. *[As-of](relations.md#as-of)* names **which ledger** leftover and climate are scored against, so rumination is not stuck on today’s books. English *had … would* is bookmark *as-of*, not play. A memory stretch writes the channel again on purpose.
+
+**Compare with:** [LIVE](knowing.md#live-vs-memory) / [WITNESSED](knowing.md#live-vs-memory) for how you know ([“I’m sure”](#trap-certainty)); [always](restrictors.md) `**hual`** for current climate; *[after](dependents.md#dependent-clauses)* for event order.
+
+#### “I just feel it” {#trap-feeling}
+
+A feeling arrives as a single opaque label, so what is unmet and what would help stay out of view. This feature opens the feeling up. It is built from [sakes](#sakes-gratitude-and-oughts), which are taught under [empowerment](#empowerment).
+
+##### Emotions as composition {#emotions-as-composition}
+
+Opaque labels (*angry*, *anxious*, *proud*) hide which sake is in play and what to ask for.
+
+Agazan [composes emotion](sakes.md#emotion-compose) from a [sake](sakes.md) stance (often unmet or met), plus a locus (where the feeling sits, or what it points at), plus motion (surging / flowing / still).
+
+Composing emotion from sake + locus + motion helps you ask for what would actually help instead of stopping at the label.
+
+### Rationality {#rationality}
+
+Surface common biases that make self-delusion easy.
+
+Claims can say how you know: memory, record, hearsay, pattern, inference.
+
+Choice lists can say whether they are open or closed, so two options cannot smuggle themselves in as the only ones.
+
+Habitual *always* is the usual pattern (exceptions expected), not something that must happen, and not an ought. When the “must” is really an ought, the sentence shows the value behind it instead of treating a wish as necessity.
+
+#### “I’m sure” {#trap-certainty}
+
+A guess, a rumor, a hazy memory, or a wish gets treated as settled fact. The features here make the warrant for a claim audible: how you know, how strong that is, whether it is only possible, and whether a “because” is a law or a wish. Forecasts belong here too, but they are taught together with plan and decision under [intention, forecast, and firmness](#intention-forecast-and-firmness).
+
+##### How you know, and *could be*
 
 It is easy to treat a looping *could be* as settled fact: mixing memory, hearsay, gut feel, and *maybe they left* into one warrant.
 
@@ -119,18 +112,61 @@ The channel's [ending](knowing.md#evidence-strength) says how strong that eviden
 
 **For *could be*, use:** [MAY](knowing.md#may) (`ovu`). That marks potential, and whether this sentence finds out, stays at *may*, or leaves it at *who knows*. Evidentiality is how you know a world-claim. Ability *can* is not MAY.
 
-### What still counts, and whose weather
-<a id="residue-and-former-climate"></a>
+##### Causes and *if*
 
-English *has…* and *used to* mix **when** something happened with whether it **still matters**, or whether a pattern is **still the climate you claim**.
+Everyday English *because* / *leads to* / *have to* blur sufficient vs necessary, world-reason vs speaker-grounds, and wish vs natural law.
 
-[RESIDUE](knowing.md#residue) marks leftover balance: the outcome is still on the books. [FORMER](knowing.md#former-climate) marks usual weather you are **not** reporting as current. Neither word is a past tense; they stack with a live look, memory, or a forecast.
+[Causation](causation.md) keeps those forks on two-place poles: *if* / *only if* / *because* / *iff*, on `/th/` for an event and `/ɡ/` for a noun. Intended *so that* is a separate pole (`**hogom*`*, [so that](dependents.md#so-that)): the host is aimed at that outcome, which is not asserted like *because*, and is not a [need-motive](sakes.md#sake-preference) (`tho`). When the “rule” is really an ought (*hard work should earn promotion*), use [sakes](sakes.md) [prescription](sakes.md#sake-force) (`**the*`*) on the act — not a causation pole.
 
-Marking residue vs an archived episode helps rumination stay optional. Marking former climate helps “I always was this way” stay a weather report you can stop giving. [*As-of*](relations.md#as-of) names **which ledger** leftover and climate are scored against, so rumination is not stuck on today’s books. English *had … would* is bookmark *as-of*, not play. A memory stretch writes the channel again on purpose.
+Keeping those forks apart helps you stop treating wishes and habits as if the world must obey them.
 
-**Compare with:** [LIVE](knowing.md#live-vs-memory) / [WITNESSED](knowing.md#live-vs-memory) for how you know; [always](restrictors.md) **`hual`** for current climate; [*after*](dependents.md#dependent-clauses) for event order.
+#### “It’s this or that” {#trap-frames}
 
-### Intention, forecast, and firmness {#intention-forecast-and-firmness}
+Two options pose as the only ones, one frame poses as the situation, and an unnamed yardstick decides the ranking. The features here show how many options are in play and what standard is being used.
+
+##### Open lists, closed lists, and false dichotomies
+
+It is easy to present two options as if they were the only ones possible.
+
+[Joins](joins.md) mark what kind of list you are building (inventory, exclusive choice, inclusive *and/or*, rank, …) and whether the listed items are the **only** ones in play (**closed**) or still **open**. Soft or open forms leave room for unlisted alternatives.
+
+Saying whether a list is open or closed helps you notice false dichotomies, and leaves room for options you have not named yet.
+
+##### Alternatives, reframes, and judgment bars
+
+Work talk often freezes on *the* problem / *the* solution, or ranks against an invisible yardstick.
+
+Prefer numbered alternatives (ordinary nouns plus an [ordinal](numbers.md#ordinals), like *solution 2*) so candidates stay plural and revisable. Reframe the same situation with softer wording rather than inventing a second candidate. Scalar *worse than…* names its [bar](comparatives.md#bars) (*than usual*, *than I expected*, *than you demand*) so the standard you are using stays audible, including when the bar is only your own expectation.
+
+Numbering candidates, paraphrasing, and naming the judgment bar help you keep choice and standards revisable instead of freezing on a single frame or a hidden bar.
+
+### Empowerment {#empowerment}
+
+Support authentic choice by making reasons for action visible.
+
+The motive or prescription behind an action can be named on the sake it serves instead of conflating it into a bare *should*. A decision can mark how revisable it is, a plan can stay separate from a forecast, and an opening can say how long the talk will last before it starts.
+
+#### “I have no choice” {#trap-no-choice}
+
+Wanting, needing, and being obliged blur into a bare *should*, and a plan or a pick sounds locked. The features here make the reason for an action visible, so the choice stays yours.
+
+##### Sakes, gratitude, and oughts {#sakes-gratitude-and-oughts}
+
+English often conflates *I want*, *I need*, *I should*, and *this is good for me*, so gratitude, motive, and ought blur together.
+
+Agazan’s [sakes](sakes.md) name a closed inventory of **sakes** (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical, or unspecified) and how you relate to them:
+
+
+| Stance       | Job                                                                                                                                                   |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Met          | This serves the sake, including whether the payoff lasts or is only for now (gratitude / savoring) — an adjective on the noun, or `/th/` on the event |
+| Motive       | Acting *for* this sake, including where the reason stands                                                                                             |
+| Prescription | Deontic on the host act for this sake — ending marks the move's warrant or aim (**invited / offered / trial**)                                        |
+| Unmet        | Costs the sake, including how changeable that is                                                                                                      |
+
+Naming the sake and your stance toward it helps you notice gratitude, motive, and oughts instead of conflating them into vague *want* / *should* / *good*. A sake on `/ɡ/` is a belonging (so *my X serves competence* is one adjective); an unowned stimulus uses the sake on `/w/` immediately before `**gobum*`*.
+
+##### Intention, forecast, and firmness {#intention-forecast-and-firmness}
 
 English *will* smuggles plan and prediction together. It is easy to talk as if the future were already known (a certain prediction that fuels anxiety or overconfidence), while a pick often sounds more locked than it is.
 
@@ -140,26 +176,11 @@ Splitting plan, prediction, and decision firmness helps you avoid treating a wis
 
 **Compare with:** English *will*. Use PLAN for intention, a channel plus `bral` for a forecast, and DECISION for how firm the pick is.
 
-### Open lists, closed lists, and false dichotomies
-<a id="open-and-closed-lists"></a>
+#### “Who sets the terms?” {#trap-terms}
 
-It is easy to present two options as if they were the only ones possible.
+A greeting or a request can quietly commit you to time and attention you never agreed to. This feature puts the terms of the encounter in the opening, so consent comes first.
 
-[Joins](joins.md) mark what kind of list you are building (inventory, exclusive choice, inclusive *and/or*, rank, …) and whether the listed items are the **only** ones in play (**closed**) or still **open**. Soft or open forms leave room for unlisted alternatives.
-
-Saying whether a list is open or closed helps you notice false dichotomies, and leaves room for options you have not named yet.
-
-### Causes and *if*
-<a id="causes-if-and-preference"></a>
-
-Everyday English *because* / *leads to* / *have to* blur sufficient vs necessary, world-reason vs speaker-grounds, and wish vs natural law.
-
-[Causation](causation.md) keeps those forks on two-place poles: *if* / *only if* / *because* / *iff*, on `/th/` for an event and `/ɡ/` for a noun. Intended *so that* is a separate pole (**`hogom`**, [so that](dependents.md#so-that)): the host is aimed at that outcome, which is not asserted like *because*, and is not a [need-motive](sakes.md#sake-preference) (`tho`). When the “rule” is really an ought (*hard work should earn promotion*), use [sakes](sakes.md) [prescription](sakes.md#sake-force) (**`the`**) on the act — not a causation pole.
-
-Keeping those forks apart helps you stop treating wishes and habits as if the world must obey them.
-
-### Openings and how long the talk is
-<a id="openings"></a>
+##### Openings and how long the talk is
 
 English *hi* hides whether you can stay, whether this is a few minutes, whether this is one ask, or whether you are only passing.
 
@@ -167,29 +188,20 @@ A [greeting](word-endings.md#greeting) is your name as a citation (`azawan.`). C
 
 Marking the opening that way helps you consent to the talk without treating a wave as a blank check on time.
 
-### Alternatives, reframes, and judgment bars
-<a id="alternatives-reframes-and-bars"></a>
-
-Work talk often freezes on *the* problem / *the* solution, or ranks against an invisible yardstick.
-
-Prefer numbered alternatives (ordinary nouns plus an [ordinal](numbers.md#ordinals), like *solution 2*) so candidates stay plural and revisable. Reframe the same situation with softer wording rather than inventing a second candidate. Scalar *worse than…* names its [bar](comparatives.md#bars) (*than usual*, *than I expected*, *than you demand*) so the standard you are using stays audible, including when the bar is only your own expectation.
-
-Numbering candidates, paraphrasing, and naming the judgment bar help you keep choice and standards revisable instead of freezing on a single frame or a hidden bar.
-
 ### Conceptual metaphors {#conceptual-metaphors}
 
-Abstract ideas are hard to hold; without a concrete picture, the psychologically useful reading of a word slips away in the moment.
+Abstract ideas are hard to hold; without a concrete picture, the psychologically useful reading of a word slips away in the moment. This cuts across the groups above.
 
 Published roots keep an **abstract** sense beside the **concrete** picture, so the unobservable job rides on a familiar scene that already carries the caution. Examples:
 
-* [Memory as fishing](knowing.md#evidentiality): cast into opaque water; you may pull a fish or a **boot** (the memory can be wrong).
-* [Live look as attesting](knowing.md#live-vs-memory): eye-in-speech while the scene is still in view.
-* [Residue as unpaid debt](knowing.md#residue): leftover balance still on the books; not a past tense.
-* [Former climate as an empty nest](knowing.md#former-climate): the nesting season is over; not *used to* as past.
-* [A pattern as paw-prints](knowing.md#universality): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
-* [*As if* as theater](knowing.md#notional): a stage mask frames play; the real tally stays **offstage**.
-* [Mechanism as gears](causation.md#cause): naming the gear train marks *how it meshes*.
-* [Affect as water](sakes.md#emotion-compose): surging / flowing / still water (motion) plus where the charge sits or points (locus) instead of an opaque emotion label that hides the sake.
+- [Memory as fishing](knowing.md#evidentiality) (“I’m sure”): cast into opaque water; you may pull a fish or a **boot** (the memory can be wrong).
+- [Live look as attesting](knowing.md#live-vs-memory) (“I’m sure”): eye-in-speech while the scene is still in view.
+- [Residue as unpaid debt](knowing.md#residue) (“This is who I am”): leftover balance still on the books; not a past tense.
+- [Former climate as an empty nest](knowing.md#former-climate) (“This is who I am”): the nesting season is over; not *used to* as past.
+- [A pattern as paw-prints](knowing.md#universality) (“I’m sure”): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
+- *[As if* as theater](knowing.md#notional) (“I’m sure”): a stage mask frames play; the real tally stays **offstage**.
+- [Mechanism as gears](causation.md#cause) (“I’m sure”): naming the gear train marks *how it meshes*.
+- [Affect as water](sakes.md#emotion-compose) (“I just feel it”): surging / flowing / still water (motion) plus where the charge sits or points (locus) instead of an opaque emotion label that hides the sake.
 
 Conceptual metaphors help you reach and remember the healthier frame by tying it to a concrete analogy that already encodes the bias you are trying to catch.
 
@@ -198,11 +210,10 @@ Conceptual metaphors help you reach and remember the healthier frame by tying it
 This section addresses common criticisms regarding the use of language to influence thought.
 
 ### Can a language change how you think?
-<a id="sapir-whorf-hypothesis"></a>
 
 Some don’t believe it is possible for a language to influence the speaker’s thoughts (called the weak Sapir-Whorf Hypothesis). I make no claims here about whether it happens for natural languages, but for Agazan specifically, I give the following argument:
 
-1. The way a concept is framed (phrased) affects how people think about it (a well-established phenomenon in [psychology](https://en.wikipedia.org/wiki/Framing_effect_\(psychology\)) and the [social sciences generally](https://en.wikipedia.org/wiki/Framing_\(social_sciences\)))
+1. The way a concept is framed (phrased) affects how people think about it (a well-established phenomenon in [psychology](https://en.wikipedia.org/wiki/Framing_effect_(psychology)) and the [social sciences generally](https://en.wikipedia.org/wiki/Framing_(social_sciences)))
 2. Agazan’s vocabulary and grammar ensure particular frames for certain concepts (using the design laid out on this page and in the linked grammar docs).
 3. Therefore, Agazan influences how speakers think.
 
