@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Findings from Phase 3 of the expressiveness review (`docs/proposals/expressiveness-review.md`): every productive mechanism crossed with every place it could apply, and each empty cell judged. Rows are logged per batch, ruled by the language owner, and applied before the next batch starts; each row's **Outcome** records the ruling.
 
-Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 adopted (reversed from decline), C-15 and C-16 fixed). Wave 7 (join series on other roles): logged (E-39, E-40, C-17 to C-19), ruled and applied (E-39 adopted as a docs gap, E-40 declined, C-17 to C-19 fixed). Wave 8 (hosted relations and bars): logged (E-41 to E-43), ruled and applied (E-41 and E-43 declined, E-42 adopted). Wave 9 (questions): logged (E-44 to E-49, C-20, C-21, C-13 revisited), ruled and applied (E-44 to E-47 adopted, E-48 and E-49 declined, C-20, C-21 and C-13 fixed). Wave 10 (stand-ins and `/x/` words): logged (E-50, E-51, C-22), ruled and applied (E-50 and E-51 declined, C-22 fixed). Wave 11 (predication): logged (E-52, E-53, C-23), ruled and applied (E-52 adopted as a docs gap, E-53 declined, C-23 fixed). Wave 12 (mid-word `x` and `th`, role compounds): logged (E-54 to E-58, C-24 to C-26), ruled and applied (E-54, E-55, E-57 adopted, E-56 and E-58 declined, C-24 to C-26 fixed). Wave 13 (mood roots × role letters): logged (E-59 to E-62, C-27), rows redone 2026-10-03, ruled and applied (E-59 adopted as a docs gap, E-60 to E-62 declined, C-27 fixed). Other mechanisms not started.
+Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 adopted (reversed from decline), C-15 and C-16 fixed). Wave 7 (join series on other roles): logged (E-39, E-40, C-17 to C-19), ruled and applied (E-39 adopted as a docs gap, E-40 declined, C-17 to C-19 fixed). Wave 8 (hosted relations and bars): logged (E-41 to E-43), ruled and applied (E-41 and E-43 declined, E-42 adopted). Wave 9 (questions): logged (E-44 to E-49, C-20, C-21, C-13 revisited), ruled and applied (E-44 to E-47 adopted, E-48 and E-49 declined, C-20, C-21 and C-13 fixed). Wave 10 (stand-ins and `/x/` words): logged (E-50, E-51, C-22), ruled and applied (E-50 and E-51 declined, C-22 fixed). Wave 11 (predication): logged (E-52, E-53, C-23), ruled and applied (E-52 adopted as a docs gap, E-53 declined, C-23 fixed). Wave 12 (mid-word `x` and `th`, role compounds): logged (E-54 to E-58, C-24 to C-26), ruled and applied (E-54, E-55, E-57 adopted, E-56 and E-58 declined, C-24 to C-26 fixed). Wave 13 (mood roots × role letters): logged (E-59 to E-62, C-27), rows redone 2026-10-03, ruled and applied (E-59 adopted as a docs gap, E-60 to E-62 declined, C-27 fixed). Wave 14 (sakes): logged (E-63 to E-65, C-28 to C-30), ruled and applied (E-63 adopted as a docs gap, E-64 declined, E-65 adopted, C-28 to C-30 fixed). Phase 3 complete.
 
 ## How to read this file
 
@@ -1483,6 +1483,102 @@ The question for each row is the same: on `/w/` before an adjective, should the 
 Nothing. Every `/w/` and `/h/` cell in this grid either has an overlay reading or reads as its root's ordinary word. The declined overlay readings go to design-decisions, not unassigned-reserved.
 
 Confirmed **def** or **gen** with nothing to add: every stance on `/th/`; evidentials, MAY, NOTIONAL, RESIDUE, FORMER, CAUSE, ABIL and phasals on `/w/`; poles on `/ɡ/` (and `/h/` for the time, place and purpose poles); as-of on all four slots; every mood root on `/z/` `/d/` `/b/` `/v/` `/x/` `/y/` as its ordinary word (`/x/` a topic word, `/y/` + **-n** a title).
+
+## Sakes
+
+Owning page: [sakes](../grammar/sakes.md); the stimulus and bar uses are also taught in [comparatives § bars](../grammar/comparatives.md#bars), and feeling recipes in say-reasons. Wave 14. Cells checked with `node scripts/parse.mjs` (2026-10-03), on the nine sake roots (mostly `ana`, `ulo`, `ozo`). Permission, requirement and consent are mood roots (wave 13); `uem` before a stance is a hook (wave 5); stacked vowels after the sake **th** are settled as none (D-23).
+
+### Grid
+
+Sake vowel × host, then ending and `/b/`, then the emotion tail.
+
+| Cell | State |
+|------|-------|
+| **`tha`** / **`thu`** on `/ɡ/`, `gl-`, `/th/`, and `/w/` before `gobum` | def |
+| **`tho`** on `/th/` (motive), `/ɡ/` (the noun's purpose), `/w/` before `gobum` | def (the attachment table's "same stances" on `gobum`) |
+| **`the`** on `/th/` | def |
+| **`the`** on `/ɡ/`, `gl-`, `/w/` before `gobum` (`ganathel`, `glanathel zebel`, `wanathel gobum`) | parses, no page → E-64, C-28 |
+| Any sake word on `/z/` `/d/` `/b/` `/v/` `/h/` `/x/` `/y/` (`zanathal`, `hanathal`, `yanathal`) | rejected (`sakeSlot`); none |
+| Sake word on `/w/` before a `/ɡ/` other than `gobum` (`wozotham gahadul`) | parses, no page → E-65 |
+| **-l** / **-m** / **-r** on each stance vowel | def (four tables) |
+| **-n** on a sake word (`ganathan`, `thanathon`) | parses as a sake word; the page calls it "ordinary proper" → C-29 |
+| **-x** on a sake word (`ganathalx`) | gen ([plurality](../grammar/plurality.md); `gubuhelx` parses the same way) |
+| `/b/` after a tail-less **`tha`** / **`thu`** on `/th/` | def (whose stake: thanks and sorry) |
+| `/b/` after a sake bar | def (whose stake) |
+| `/b/` after a tail-less **`tho`** / **`the`** on `/th/`, or a tail-less sake word on `/ɡ/` / `/w/` + `gobum` (`thanathom balahen`, `ganathal balahen`) | parses (hosted); gen by the D-rule "after a tail-less sake word, `/b/` names whose stake", but untaught → E-63 |
+| Tail (10 loci × **-l** / **-m** / **-r**) on **`tha`** / **`tho`** / **`thu`**, on `/ɡ/`, `/w/` + `gobum`, `/th/` | def (motive tail only on the recipe track: `wadothomom gobum` → C-30) |
+| Tail on **`the`** (`ganathemar`) | rejected (`emotionTail`); def none |
+| Tail motion **-n** (`ganathaman`); stacked loci beyond the six standard pairs (`…amoar`) | rejected; none |
+| Tail after a sake **-n** (`ganathanar`, `gulothanar`) | reads as a viewpoint lateral → C-29 |
+| `/b/` after a direction or CIRCUM locus | def (landmark) |
+| `/b/` after an INTERNAL or UNPLACED locus (`wanathumal gobum balahen`) | parses; the page says these take no `/b/` → C-30 |
+| Sake bar with **`thu`** / **`tho`** / **`the`**, or with a tail (`thegathum zel`, `thegathamar zael`) | rejected (`bar`); by design (D-rule on bars) |
+| Sake word after `uem` | rejected; by design |
+| Sake word with a holder seam | by design (sakes never host a holder) |
+
+### Rows
+
+#### E-63 — whose stake on motive, prescription and `/ɡ/` sake words (*for Alahen's sake*, *my gift is good for Alahen*) · intuitive · P2
+
+- **Today:** `zazawan vezebel thanathom balahen.`, `zalahen vabayal thanathem bazawan.` and `zebel ganathal balahen.` already parse, with `/b/` hosted on the sake word. design-decisions already states the rule generally ("after a tail-less sake word, `/b/` names whose stake"), but sakes.md teaches it only for thanks and sorry (`thanathum behodon`) and for sake bars. unassigned-reserved still lists *whose-sake on prescription* as a later dimension.
+- **Proposed reading:** the stated rule, taught on every tail-less sake word. `thanathom balahen` *tells for Alahen's sake (Alahen's relatedness)*; `thanathem bazawan` *ought to bow, for Azawan's relatedness*; `ganathal balahen` *my gift serves Alahen's relatedness in the long term*; `wanathul gobum balahen` *the gathering detracts from Alahen's relatedness*.
+- **Current route:** the *for* hook (`el balahen`, as in say-people-places *for a family's sake*) names the beneficiary but not which need. A sake word plus `el balahen` leaves open whose sake it is.
+- **Better than current route:** yes. *For her sake*, *good for him*, *for your own good* are everyday English, and the stake is exactly what a sake word is about.
+- **Conflicts and notes:** on `/ɡ/` a learner could guess the `/b/` is the **owner** (*Alahen's gift*). Possession stays the speaker's; someone else's thing still uses `gegabem` + `/b/` or `gobum`. The page should say this in one line. With a tail, a `/b/` stays the direction landmark, so a feeling cannot also name whose stake (that is ON-BEHALF, or a holder).
+- **Closes:** *for Alahen's sake*, *good for Alahen*, *for your own good* (`find-english`: *for her sake*, *for the sake of*, *good for*; only `tho` without a person and the *for* hook).
+- **Recommendation:** adopt as a docs gap. One line plus one example each in sakes § attachment sites (motive, prescription, `/ɡ/`); remove *whose-sake on prescription* from unassigned-reserved; english.md row *for X's sake* / *good for X*. No parser change.
+- **Outcome:** adopted as a docs gap — new [sakes § whose stake](../grammar/sakes.md#whose-stake) (motive, prescription, `/ɡ/`, `/w/` + `gobum`; `/b/` is never the owner); english.md *for* row; reserved line removed; D-rule in design-decisions widened; checkpoint items added. No parser change.
+
+#### E-64 — prescription `the` on a noun (`ganathel`, `wanathel gobum`) · forced · P3
+
+- **Today:** parses on `/ɡ/`, `gl-` and `/w/` before `gobum`, with no page. The tail rule already excludes **`the`** ("advice, not a feeling").
+- **Proposed reading:** *my gift ought to go toward relatedness* (advice about what to use the noun for).
+- **Why it is forced:** the **`the`** endings are the warrant for a **move** (invited / offered / trial), and a noun is not a move. A learner who knows `g…tho…` (the noun's purpose) would as easily read `ganathel` as *my gift is for relatedness*. English *you should use it for …* is a command plus that purpose, or `the` on a clause with a use verb.
+- **Recommendation:** decline; reject **`the`** off `/th/` (C-28); record in design-decisions.
+- **Outcome:** declined — D-36; rejected by C-28.
+
+#### E-65 — sake word on `/w/` before any adjective (*pleasantly hot*, *usefully short*, *annoyingly loud*) · intuitive · P2
+
+- **Today:** `zedehel wozotham gahadul.` parses, with no page. sakes.md says only that `/w/` before a **sake** `/ɡ/` grades it and that `/w/` right before `gobum` is the sake.
+- **Proposed reading:** a sake word on `/w/` says how **that property** stands toward the sake: `zedehel wozotham gahadul.` *The tea is pleasantly hot* (its heat serves pleasure). With a tail it is a feeling about the property: `zezebel wanathumor galadul.` *The speech is irritatingly loud* (relatedness unmet, aimed, surging). `gobum` becomes the special case where the property is *being the stimulus*, so the noun as a whole.
+- **Pattern:** wave 13 taught "a mood on `/w/` before an adjective covers that one property" (knowing § mood on one adjective); this is the same move for a sake.
+- **Current route:** a few ordinary roots on `/w/` (`wegevom` *pleasantly*, `wogozom` *dangerously*); otherwise two words where the stimulus is the whole noun (`gahadul` + `wozotham gobum`), which loses that it is the **heat** that pleases.
+- **Better than current route:** yes, for the open class *comfortably warm*, *usefully short*, *frustratingly slow*, *painfully bright*, where English packs a payoff or a feeling onto one property. It also names the need and the horizon, which the ordinary roots cannot.
+- **Conflicts and notes:** stake is the speaker's by default, as with `gobum`; there is no slot for a `/b/` stake (a `/b/` after the adjective belongs to the adjective). A degree word still goes before the sake word (`wamazam wozotham gahadul`) and grades the feeling, as before `gobum`. `/w/` sake before a `/ɡ/` sake (`wulothal gulothal`) falls under the same rule and needs no special case.
+- **Closes:** *pleasantly warm*, *usefully short*, *annoyingly loud*, *comfortably* (`find-english`: *pleasantly*, *usefully*, *comfortably*, *dangerously*; hits only `egevo`, `ogozo` roots and `gulotham` on a noun).
+- **Recommendation:** adopt. Teach in sakes § personal possession (beside `gobum`) and § emotion compose with one example each; english.md rows; checkpoint item. The parser already accepts it and glosses it correctly.
+- **Outcome:** adopted — taught in sakes § personal possession (`wozotham gahadul`) with an attachment-table row, and a tailed example in emotion compose (`wulothumuer gezehom` *frustratingly slow*); recipe row in say-amounts § manner words; beginner checkpoint item. No parser change.
+
+### Inconsistencies (wave 14)
+
+#### C-28 — prescription `the` accepted on `/ɡ/`, `gl-` and `/w/` + `gobum` · found in sakes
+
+- **Where:** [sakes § prescription](../grammar/sakes.md#sake-force), [sakes § attachment sites](../grammar/sakes.md#attachment-sites), `src/parse/enforce.ts` (`sakeSlot`)
+- **Problem:** the page teaches **`the`** only on `/th/` (*ought this act*), and its attachment table has no `/ɡ/` or `/w/` row for it. The parser accepts `ganathel`, `glanathel zebel` and `wanathel gobum`.
+- **Suggested ruling:** follows E-64. If declined, reject **`the`** outside `/th/` with a pointer to prescription, and state it in the attachment table.
+- **Outcome:** fixed — `prescriptionSlot` rejects **`the`** off `/th/`; sakes § attachment sites states it. D-36.
+
+#### C-29 — **-n** on a sake word: "ordinary proper" on the page, a sake word in the parser, and a lateral with a tail · found in sakes
+
+- **Where:** [sakes § word shape](../grammar/sakes.md#word-shape), [sakes § motive](../grammar/sakes.md#sake-preference), [x-compounds](../grammar/x-compounds.md) (*after a sake root, letters that look like a root are always the emotion tail*), `src/parse/classify.ts`
+- **Problem:** two pages say **-n** on a sake word is "ordinary proper", but no name can have this shape (`zanathan` is rejected by `sakeSlot`), and the parser reads `ganathan` / `thanathon` as a sake word with an **-n** horizon that no table defines. Add a tail and `ganathanar`, `gulothanar` and `thanathanar` parse as viewpoint laterals, which x-compounds says never happens after a sake root. Same shape as C-03 (named moods).
+- **Suggested ruling:** reject **-n** on a sake word (with or without a tail), pointing at the ending tables; drop the two "**-n** is ordinary proper" lines. No reading is lost: there is no proper sense to give.
+- **Outcome:** fixed — `sakeEnding` rejects **-n** on a sake word and the **-n** + tail shape that read as a lateral (a tail motion **-n** stays `emotionTail`); sakes § word shape and § motive now say sake words end in **-l** / **-m** / **-r**. D-36.
+
+#### C-30 — the emotion tail: `/b/` after a placement locus, and no motive example · found in emotion compose
+
+- **Where:** [sakes § emotion compose](../grammar/sakes.md#emotion-compose), `src/parse/`
+- **Problem:** (1) the page says INTERNAL and UNPLACED take no `/b/`, but `wanathumal gobum balahen` and `wanathumuor gobum balahen` parse. (2) The page says the tail goes on **`tho`**, but every example uses **`tha`** or **`thu`**; the only motive tail is on the recipe track (`wadothomom gobum` *curious about*).
+- **Suggested ruling:** reject a `/b/` after an INTERNAL or UNPLACED locus, with a pointer (the stake of a feeling goes through ON-BEHALF or a holder). Add one **`tho`** tail to the emotion-compose table (*curious about*, *eager to*).
+- **Outcome:** fixed — `feelingLandmark` rejects it on `/ɡ/`, `/w/` + `gobum` and `/th/`. The **`tho`** tail example (`wadothomom gobum` *curious about*) went into sakes § motive rather than the emotion-compose table, which comes before motive is taught. D-36.
+
+### None (added to unassigned-reserved)
+
+- A sake word on `/z/` `/d/` `/b/` `/v/` `/h/` `/x/` `/y/` (rejected today). `/h/` (*walks healthily*) is the clause stance's job: `thoyutham` already says the walking serves the physical sake.
+- Prescription **`the`** off `/th/` (E-64, C-28); **-n** on a sake word (C-29).
+- A tail on **`the`**; motion **-n**; stacked loci beyond the six standard pairs; any bar but a tail-less met sake (already rejected).
+
+Confirmed **def** with nothing to add: **`tha`** / **`thu`** / **`tho`** on `/ɡ/`, `gl-`, `/th/` and `/w/` + `gobum`; **`the`** on `/th/`; every ending table; the ten loci × three motions on `/ɡ/`, `/w/` + `gobum` and `/th/`; `/b/` as landmark after a direction or CIRCUM locus; whose-stake `/b/` on thanks, sorry and bars.
 
 ## Inconsistencies
 

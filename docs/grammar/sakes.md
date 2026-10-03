@@ -132,7 +132,7 @@ One noun can carry both a **`tha`** word and a **`thu`** word, and the pairing r
 
 A sake word is a sake root with mid-word **`th`**, a stance vowel, and an ending. `/ɡ/` talks about a **noun you keep**; `/th/` talks about the **clause**. An unowned noun uses a [stimulus](#stimulus) word, with the same sake word on `/w/` immediately before it.
 
-**-n** is ordinary [proper](word-endings.md#proper-name--n). **-l / -m / -r** follow that stance’s table.
+A sake word ends in **-l**, **-m**, or **-r**, from that stance’s table. It never takes **-n**.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -156,6 +156,14 @@ When the noun is **not** yours (weather, a gathering, another person’s church)
 >
 > "The gathering detracts from autonomy right now (passing)."
 
+The same `/w/` sake word can sit before any adjective. Then it is about **that property**: the tea's heat is what serves pleasure, not the tea as a whole. **`gobum`** is the case where the property is the noun itself, as the thing you react to.
+
+> `zedehel wozotham gahadul.`
+>
+> z-tea | [w-pleasure-met-any-term | g-hot]
+>
+> "The tea is pleasantly hot."
+
 Ordinary `zobul` is still *emphasis*. Bare **`gobum`** with no `/w/` sake does not ascribe a sake. An episode (*this raining, this telling*) still uses `/th/` on the clause, possessed or not.
 
 | Agazan | Use | English | Same root as | Cue |
@@ -178,12 +186,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *rain* | `erehel` | |
 | *wind* | `ewedul` | |
 | *fire* | `avahel` | |
+| *hot* | `ahadul` | |
 | *stimulus* | `gobum` | `obul` *emphasis* |
 | *autonomy* | `ahul` | `ahul` *ballot* |
 | *competence* | `ulol` | `ulol` *toolbox* |
 | *purpose* | `amel` | `amel` *compass* |
 | *relatedness* | `anal` | `anal` *knot* |
 | *beneficence* | `ebel` | `ebel` *present* |
+| *pleasure* | `ozol` | `ozol` *strawberry* |
 | *physical* | `oyul` | `oyul` *lungs* |
 | *sake* | `egal` | `egal` *egg* |
 
@@ -302,6 +312,15 @@ z-flashlight | g-purpose-met-immediate
 *My flashlight serves purpose right now.*
 :::
 
+**8.** `zavahel wozotham gahadul.`
+
+::: details Show answer
+
+z-fire | [w-pleasure-met-any-term | g-hot]
+
+*The fire is pleasantly hot.*
+:::
+
 ## Intermediate {#intermediate}
 
 ### Emotion compose {#emotion-compose}
@@ -338,7 +357,7 @@ A **direction** locus says what the charge points at:
 
 A direction names the **dominant** pull when feelings mix; use two feeling words for two pulls. AIMED lands on a party or a goal; RESISTING opposes an outcome or a demand. ON-BEHALF is your own feeling about someone else's stake (their own feeling needs a [holder](knowing.md#holder)); FAWN is placating someone for your own safety.
 
-Name the landmark with a `/b/` word right after the feeling (after **`gobum`** when the feeling is on `/w/`): the target of a direction, or the situation for CIRCUM. INTERNAL and UNPLACED take no `/b/`. A direction with no `/b/` points at the stimulus noun when there is one, otherwise at someone unnamed.
+Name the landmark with a `/b/` word right after the feeling (after **`gobum`** when the feeling is on `/w/`): the target of a direction, or the situation for CIRCUM. INTERNAL and UNPLACED take no `/b/`: they have no landmark. A direction with no `/b/` points at the stimulus noun when there is one, otherwise at someone unnamed.
 
 > `zumel wanathumol gobum balahen.`
 >
@@ -385,6 +404,7 @@ The tail goes on met **`tha`**, motive **`tho`**, and unmet **`thu`** words. Pre
 | `zezebel wamethumal gobum` | *the dialogue feels pointless* (unmet purpose; held inside; still) |
 | `zebeyom gebethamam` | *glad my draft helped* (met beneficence; held inside; flowing) |
 | `zezebel wamazam wulothuruom gobum` | *a little uneasy about the dialogue, and I can't say why* (competence at stake, temporary; slightly; unplaced; flowing) |
+| `zezebel wulothumuer gezehom` | *the dialogue is frustratingly slow* (unmet competence on the slowness; pushing against it; surging) |
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. To name a feeling without explaining it, its lexicon root works as an ordinary [property](predication.md) word: `zSELFn ganegel` (*I am angry*). Full compose is for when an emotion word would have done evaluative work.
 
@@ -440,7 +460,7 @@ A move meant to **prevent** harm to the sake is a *so that … not* dependent ([
 ### Motive (`tho`): time horizon
 <a id="sake-preference"></a>
 
-English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the sake root, mid-word **`th`**, **`o`**, then an ending. That ending is the **time horizon**, on the same scale as [met](#time-horizon-endings-on-met): whether the act serves the sake over time or right away. If you do not know, use **-m**. **-n** is ordinary [proper](word-endings.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…thom`** plus **`hual`**).
+English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the sake root, mid-word **`th`**, **`o`**, then an ending. That ending is the **time horizon**, on the same scale as [met](#time-horizon-endings-on-met): whether the act serves the sake over time or right away. If you do not know, use **-m**. Habit of the reason uses **`hual`** (*usually my reason* is **`…thom`** plus **`hual`**).
 
 > `zazawan vezebel thanathom.`
 >
@@ -459,6 +479,14 @@ A reason held **to keep a cost off** is a *so that … not* dependent ([so that]
 | `…thor` | does this for the sake right away | *immediate* | **-r** ≈ in the moment |
 
 Neither end is better; a good day needs both, and doing something for a payoff right now is often exactly what is needed. When the **situation** is what pulls the reason, say so with the [because pole](causation.md) and the situation as `/b/`.
+
+A motive word takes the [emotion tail](#emotion-compose) too. The feeling is then a pull toward the payoff, as English *curious* or *eager* is:
+
+> `zezebel wadothomom gobum.`
+>
+> z-speech | [w-understanding-motive-any-term-AIMED-FLOWING | g-stimulus]
+>
+> "Curious about the dialogue."
 
 ### Which ending table?
 
@@ -481,19 +509,52 @@ Beginner already attached `/ɡ/` after a noun and `/th/` on the clause for met a
 | `g…thu…` after a noun | criticism: **your** noun detracts from the sake | *my book (detracts from competence)* (`gulothu…`) |
 | `g…tho…` after a noun | **your** noun’s purpose is this sake | *my gift for relatedness* (`ganatho…`) |
 | `/w/` sake + `gobum` | the same stances on a noun that is **not** yours | *the gathering (detracts from autonomy)* (`wahuthu… gobum`) |
+| `/w/` sake + another adjective | the stance on that one property | *pleasantly hot* (`wozotham gahadul`) |
 | `gl-` + sake word | the same adjective before the **belonging** | `glanathal zebel` |
 | `th…tha…` on the clause | the event serves the sake | *tells: competence is met* (`thulotha…`) |
 | `th…the…` on the clause | deontic prescription | *ought … for this sake* (`thanathe…`); ending = [invited / offered / trial](#sake-force) |
 | `th…tho…` on the clause | motive | *Azawan … (for relatedness)* (`thanatho…`) |
 | `/w/` before a sake `/ɡ/` | extra detail on that adjective | *very relatedness-serving* |
 
-On **`the`**, use **-l** for an invitation, **-m** for an offer, and **-r** for a trial. Prefer **-m** on **`thu` / `tho`** when that table’s dimension is unclear. Several sakes are several `/ɡ/` or `/th/` words (`gulothal ganathal`), not stacked `th`-additions on one sake. The **host** noun or verb carries concrete vs abstract sense. `/w/` before a **sake** `/ɡ/` grades that adjective; `/w/` immediately before **`gobum`** is the sake.
+Prescription **`the`** goes on `/th/` only: it is about an act, and a noun is not an act. For what a noun is **for**, use **`tho`**. On **`the`**, use **-l** for an invitation, **-m** for an offer, and **-r** for a trial. Prefer **-m** on **`thu` / `tho`** when that table’s dimension is unclear. Several sakes are several `/ɡ/` or `/th/` words (`gulothal ganathal`), not stacked `th`-additions on one sake. The **host** noun or verb carries concrete vs abstract sense. `/w/` before a **sake** `/ɡ/` grades that adjective; `/w/` immediately before **`gobum`** is the sake.
 
 > `zazawan vezebel thulothal thanathom.`
 >
 > z-Azawan | v-tell | th-competence-met-lasting | th-relatedness-motive-any-term
 >
 > "Azawan tells: it serves competence in the long term, and relatedness is the motive."
+
+### Whose stake {#whose-stake}
+
+A sake word with no `/b/` is about **your** sake. To say it is someone else's, put that person in `/b/` right after the sake word. This works on every stance and every host: met, unmet and motive on a noun, and met, unmet, prescription and motive on the clause.
+
+> `zazawan vezebel thanathom balahen.`
+>
+> z-Azawan | v-tell | [th-relatedness-motive-any-term | b-Alahen]
+>
+> "Azawan tells for Alahen's sake (for Alahen's relatedness)."
+
+> `zalahen vabayal thanathem bazawan.`
+>
+> z-Alahen | v-bow | [th-relatedness-ought-offered | b-Azawan]
+>
+> "Alahen ought to bow, for Azawan's relatedness (offered)."
+
+> `zebel ganathal balahen.`
+>
+> z-present | [g-relatedness-met-lasting | b-Alahen]
+>
+> "My gift serves Alahen's relatedness in the long term."
+
+> `zabezam wanathul gobum balahen.`
+>
+> z-gathering | [[w-relatedness-unmet-irreversible | g-stimulus] | b-Alahen]
+>
+> "The gathering does lasting harm to Alahen's relatedness."
+
+The `/b/` names whose **stake** it is, not who **owns** the noun. On `/ɡ/` the noun is still yours: `zebel ganathal balahen` is *my gift, good for Alahen*. Someone else's thing is `gegabem` plus `/b/`, or **`gobum`**.
+
+**Compare with:** the *for* hook (`el balahen`) names who the act is for without naming which sake. A feeling word with a direction tail keeps its `/b/` as the landmark ([emotion compose](#emotion-compose)), so it cannot also name whose stake.
 
 ### Feeling with no object {#feeling-no-object}
 
@@ -1051,6 +1112,14 @@ z-Ahaben | v-sleep | [contrary-to | th-plan-itinerary]
 z-Azawan | v-tell | [contrary-to | [th-CONSENT-refused | b-Ahaben]]
 :::
 
+**22.** *Azawan prays for Alahen's sake (for Alahen's relatedness).*
+
+::: details Show answer
+`zazawan vebevol thanathom balahen.`
+
+z-Azawan | v-pray | [th-relatedness-motive-any-term | b-Alahen]
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zalahen vezebel thanather.`
@@ -1240,6 +1309,15 @@ z-Ahaben | v-hush | [contrary-to | [th-REQUIRE-demanded | b-Alahen]]
 z-Alahen | v-bow | [contrary-to | th-FORBID-disallowed] | th-PERMIT-granted
 
 *Alahen bows against the rules, and I'm allowing it.*
+:::
+
+**22.** `zorozol gulothal bahaben.`
+
+::: details Show answer
+
+z-rosary | [g-competence-met-lasting | b-Ahaben]
+
+*My rosary serves Ahaben's competence in the long term.*
 :::
 
 ## See also

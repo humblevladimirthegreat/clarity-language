@@ -38,6 +38,7 @@ import type {
   CoordShared,
   GCoord,
   GPackage,
+  Hosted,
   HUnit,
   IslandUnit,
   LeftEdge,
@@ -313,6 +314,12 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
     if (family.horizon && (family.stanceVowel === "e" || word.ending === "n")) {
       throw new ConstructionError("emotionTail", word.raw);
     }
+    if (family.stanceVowel === "e" && word.pos && word.pos !== "th") throw new ConstructionError("prescriptionSlot", word.raw);
+    if (word.ending === "n") throw new ConstructionError("sakeEnding", word.raw);
+  }
+  // A sake root + `th` + vowel + **-n** + tail is not a lateral; a sake word never takes **-n** (sakes.md#word-shape).
+  if (family.kind === "x" && family.xFamily === "lateral" && family.leftRoots.some((root) => tables.sakeRoots.has(root))) {
+    throw new ConstructionError("sakeEnding", word.raw);
   }
   if (family.kind === "x" && family.xFamily === "scope") {
     if (word.pos && !SCOPE_POS.has(word.pos)) throw new ConstructionError("labelScopeSlot", word.raw);
@@ -500,6 +507,17 @@ function enforceBars(coord: NpCoord, tables: ClassifyTables): void {
   }
 }
 
+/** A placement locus (INTERNAL `a`, UNPLACED `uo`) has no landmark, so its feeling takes no hosted `/b/` (sakes.md#emotion-compose). */
+function enforceFeelingLandmark(words: LexWord[], hosted: Hosted | undefined): void {
+  if (!hosted) return;
+  for (const word of words) {
+    const family = word.family;
+    if (family.kind === "x" && family.xFamily === "sake" && (family.locus === "a" || family.locus === "uo")) {
+      throw new ConstructionError("feelingLandmark", `${word.raw} ${hosted.bound.raw}`);
+    }
+  }
+}
+
 /** `uem` + a stance: the stance must say something the event can go against, and holds no stand-in (sakes.md#contrary-to-stance). */
 function enforceFrame(hook: LexWord, frame: HUnit, tables: ClassifyTables): void {
   if (!isFrameStance(frame.word, tables)) throw new ConstructionError("frameKind", `${hook.raw} ${frame.word.raw}`);
@@ -627,6 +645,7 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
           enforceLeadingFence(node.coord.parts as { items: unknown[]; join?: LexWord }[], (part) => part.items.length === 0);
           return;
         case "gPackage":
+          enforceFeelingLandmark([node.pkg.word, ...node.pkg.modifiers], node.pkg.hosted);
           enforceAsOfWord(node.pkg.word, node.pkg.hosted?.bound);
           if (node.pkg.asOf) {
             enforceAsOfWord(node.pkg.asOf.word, node.pkg.asOf.bound);
@@ -634,6 +653,7 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
           }
           return;
         case "hUnit":
+          enforceFeelingLandmark([node.unit.word], node.unit.hosted);
           enforceAsOfWord(node.unit.word, node.unit.hosted?.bound);
           return;
         case "clauseCoord": {

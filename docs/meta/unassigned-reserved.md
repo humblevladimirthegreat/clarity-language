@@ -207,8 +207,9 @@ Source: [spans.md](../grammar/spans.md), [x-compounds.md](../grammar/x-compounds
 
 Source: [sakes.md](../grammar/sakes.md)
 
-- Whose-sake / care direction on prescription
 - Forced listener / third-person possessives on sake ascription (speaker `/ɡ/` default is [personal possession](../grammar/sakes.md#personal-possession); unowned is **`gobum`**)
+- A sake word on `/z/` `/d/` `/b/` `/v/` `/h/` `/x/` `/y/` (the parser rejects it, `sakeSlot`). *Walks healthily* is the clause stance (`thoyutham`)
+- Prescription **`the`** off `/th/`; **-n** on a sake word; a `/b/` after an INTERNAL or UNPLACED feeling (D-36; the parser rejects them)
 
 ### Near-miss inventory (editor)
 

@@ -231,6 +231,7 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 | *seriously* | `hezedom` |
 | *surprisingly* / *suddenly* | `hezum` |
 | *surprisingly* + adjective (*surprisingly blue*) | `wezum` right before the `/ɡ/` word |
+| *pleasantly* / *usefully* / *frustratingly* + adjective (*pleasantly hot*) | a `/w/` sake word right before the `/ɡ/` word: `wozotham gahadul` ([personal possession](sakes.md#personal-possession)) |
 | *successfully* | `hamedam` |
 | *strongly* | `habezem` |
 | *heavily* | `haragam` |
