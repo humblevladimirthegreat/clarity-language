@@ -690,7 +690,7 @@ Prefix-less *including / rather / instead / except*, discourse glue, extra-noun 
 
 ### Role pointer
 
-Role letter + role vowel + **`x`** + pointer vowel + **-r** (`zaxar`): a participant of an earlier event (**`a`** the latest one with that role, **`o`** the other one) or of this sentence (**`e`**, a reflexive).
+Role letter + role vowel + **`x`** + pointer vowel + ending (`zaxar`): a participant of an earlier event (**`a`** the latest one with that role, **`o`** the other one, **`u`** the one the event left unsaid) or of this sentence (**`e`**, a reflexive). **-r** names the participant, **-l** a new one of the same kind (`zaxal`), and **-m** the participant’s part in the event (`zaxam`).
 
 [Pronouns](pronouns.md#role-pointers) · [Role compounds](roles.md#role-pointers-family)
 

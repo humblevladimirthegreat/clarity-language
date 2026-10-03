@@ -3,8 +3,8 @@ import type { OverlayKind } from "../lexicon-search.js";
 /** Role compound vowel (roles.md): simplex or stacked. */
 export type RoleVowel = "a" | "e" | "u" | "o" | "ae" | "ao" | "oe" | "ua" | "ue" | "uo";
 
-/** Role pointer vowel: `a` same, `o` other, `e` self (pronouns.md#role-pointers). */
-export type PointerVowel = "a" | "e" | "o";
+/** Role pointer vowel: `a` same, `o` other, `e` self, `u` unsaid (pronouns.md#role-pointers). */
+export type PointerVowel = "a" | "e" | "o" | "u";
 
 /** Part-of-speech prefix letters (role stamps). */
 export type Pos = "z" | "d" | "b" | "v" | "g" | "w" | "h" | "th" | "x" | "y";
@@ -75,7 +75,7 @@ export type MorphWordFamily =
       landmark?: boolean;
       /** Role vowel (role compound or role pointer). */
       roleVowel?: RoleVowel;
-      /** Role pointer: which event (`a` same, `o` other, `e` self; pronouns.md#role-pointers). */
+      /** Role pointer: which event (`a` same, `o` other, `e` self, `u` unsaid; pronouns.md#role-pointers). */
       pointerVowel?: PointerVowel;
       /** Values / label-scope / ability stance vowel (also role + ability on `/ɡ/`). */
       stanceVowel?: "a" | "e" | "o" | "u";

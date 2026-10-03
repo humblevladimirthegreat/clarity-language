@@ -141,7 +141,7 @@ Source: [roles.md](../grammar/roles.md), [x-compounds.md](../grammar/x-compounds
 | A special pronoun (root + **-n**) as a role-compound stem or a label-scope host | None — rejected (`roleCompoundStem`, `labelScopeStem`) |
 | Ability (`x` + vowel) on a `/z/` / `/d/` / `/b/` noun, a name, a pronoun, or `/h/`; name + `x` + vowel + **-n** in a clause body | None — rejected (`abilitySlot`); the name shape is a conversation-length bid only as a citation or a `/y/` call |
 | [Role pointers](../grammar/pronouns.md#role-pointers) on `/v/` / `/ɡ/` / `/h/` / `/w/` / `/y/` / `/x/` | Undefined (rejected by the parser; D-24) — for *does so* / *such*, use whole-stem **-r**; to call or return to someone, name the stem |
-| Pointer vowel **`u`** | Not a pointer: after one role vowel, vowel **`x`** **`u`** + **-r** is an ordinary vowel-letter compound |
+| Role pointer cells outside the grid | Rejected (`pointerNewUnsaid`, `pointerShareSelf`, `pointerSharePlural`, `pointerNewSpecial`, `pointerOtherRole`; D-19, D-24): **-l** with **`u`** or after a special, topic or generic pronoun; **-m** with **`e`** or **-x**; **`o`** on the scene |
 
 ## Pronouns and plurality
 
@@ -201,7 +201,7 @@ Source: [spans.md](../grammar/spans.md), [x-compounds.md](../grammar/x-compounds
 
 - An aside under any role but `/th/` (`d(…)`); a cite or opaque under `/th/` (`th[…]`); any span under `/w/`. The parser rejects them (`spanSlot`). An `/x/` cite or opaque is a topic word (`x@[onodan alahen]`, `x@<Sam>`)
 - A span in a `/v/` slot (`v[vazadal]`) has no resume pronoun
-- **`VOWEL x VOWEL`** silhouettes — including **`xuxun`** (`/x/` + **`u` × `u`** + proper **-n**) and the shapes the spoken span once used (`daxal`, `xuxul`, `daxur`) — are ordinary compounds / [phrasal names](../grammar/word-endings.md#phrasal-proper-names), not fences
+- **`VOWEL x VOWEL`** silhouettes — including **`xuxun`** (`/x/` + **`u` × `u`** + proper **-n**) and the shapes the spoken span once used (`xuxul`) — are ordinary compounds / [phrasal names](../grammar/word-endings.md#phrasal-proper-names), not fences
 
 ## Values — later dimensions
 

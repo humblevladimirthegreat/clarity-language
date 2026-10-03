@@ -133,7 +133,7 @@ Non-resume is the **kind** (occupation, usual scene, usual undergoer). **-r** lo
 
 ### Without the stem: role pointers {#role-pointers-family}
 
-A [role pointer](pronouns.md#role-pointers) is this same word with the event stem left out: the role vowel, **`x`**, a pointer vowel, and **-r**. Instead of naming the event, the pointer vowel picks it by position: **`a`** the latest one, **`e`** this sentence’s own. `zaxehaher` is *the one who sat*; `zaxar` is *whoever did the latest thing*.
+A [role pointer](pronouns.md#role-pointers) is this same word with the event stem left out: the role vowel, **`x`**, a pointer vowel, and an ending (**-r** the participant itself, **-l** a new one of its kind, **-m** its part in the event). Instead of naming the event, the pointer vowel picks it by position: **`a`** the latest one, **`e`** this sentence’s own, **`o`** the other one, **`u`** the one that left the part unsaid. `zaxehaher` is *the one who sat*; `zaxar` is *whoever did the latest thing*.
 
 The scene works the same way. With a place in the clause (*in a house*), scene **`e`** is that place:
 
@@ -145,7 +145,7 @@ The scene works the same way. With a place in the clause (*in a house*), scene *
 
 With no place, a *during* time is the scene (`huwem bavodel`, *during the storm*). With neither, `dexar` is the event’s own place or time, as `dexezebar` would be. A place wins over a time, and *before*, *after*, *until*, and *by* name a time the event is measured from, not its scene.
 
-**Compare with:** for the doer, the undergoer, or the extra party, a pointer looks back to whoever last had that part, skipping events without one ([role pointers](pronouns.md#role-pointers)). For the scene, it takes the latest event, whatever it has.
+**Compare with:** for the doer, the undergoer, or the extra party, a pointer looks back to whoever last had that part, skipping events without one ([role pointers](pronouns.md#role-pointers)). For the scene, it takes the latest event, whatever it has. Scene **`u`** (`zexur` *wherever it happened*) says nobody has named the place, where `zexar` is a place the talk already gave.
 
 ### The event itself
 
@@ -506,7 +506,15 @@ Each stacked vowel also makes a [role pointer](#role-pointers-family): leave out
 | `daoxar` | what it made | (always the event’s own) |
 | `zuexar` | the one who paid for it | **`uel`** |
 
-*The other one* (**`o`**) does not go on these. For *the other tool* or *the other place*, name it with the stem (`daexavadar`) or resume it by its own stem.
+The other endings and pointer vowels of the [pronouns](pronouns.md#role-pointers) page go on these too. **-l** is a new one of that kind (`daexal` *another tool like that one*), and **-m** is that part’s share in the event (`daexam` *what the tool did*, `zuexam` *the cost they bore*, as apart from the theft and the victim). Pointer vowel **`u`** picks the latest event that left that part unsaid (`daexur` *whatever it was done with*). Pointer vowel **`o`** is *the other one*: `daexor` is *the other tool*, the nearest earlier event whose named tool is someone or something else. Only an event that names that tool, goal, source, or path with its `/b/` counts, so events that left it out are skipped, as **`a`** skips an event with nobody in the part.
+
+> `zazawan vugugal ael banaval. zalahen vugugal ael buzubul. zazawan daexor vahahal.`
+>
+> z-Azawan | v-cook | [using | b-knife] . z-Alahen | v-cook | [using | b-spoon] . z-Azawan | d-←instrument.other | v-see
+>
+> "Azawan cooks with a knife. Alahen cooks with a spoon. Azawan sees the other tool (the knife)."
+
+The scene stays out of this: `zexor`, `zexol`, and `zexom` are not words.
 
 ### Viewpoint laterals (`DIR` × anchor) {#viewpoint-laterals}
 <a id="spatial-laterals"></a>

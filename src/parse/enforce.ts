@@ -690,10 +690,7 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
   }
 }
 
-/** Doer, undergoer, and extra party: the only roles *the other one* (`o`) can compare. */
-const CORE_POINTER_ROLES = new Set(["a", "u", "o"]);
-
-/** Role pointers (pronouns.md#role-pointers): nouns or holders only, `o` on core roles, never their own slot, never unbound. */
+/** Role pointers (pronouns.md#role-pointers): nouns or holders only, never their own slot, never unbound; the new-one and share endings have their own limits. */
 function enforcePointer(bind: AnaphorBind): void {
   const word = bind.pronoun;
   const family = word.family;
@@ -702,11 +699,17 @@ function enforcePointer(bind: AnaphorBind): void {
   if (!held && !(bare && (word.pos === "z" || word.pos === "d" || word.pos === "b"))) {
     throw new ConstructionError("pointerSlot", word.raw);
   }
-  if (bind.pointerVowel === "o" && !CORE_POINTER_ROLES.has(bind.roleVowel ?? "")) {
-    throw new ConstructionError("pointerOtherRole", word.raw);
-  }
+  // The other one (`o`) compares fillers, and the scene's overt filler is not settled for comparison (D-19).
+  if (bind.pointerVowel === "o" && bind.roleVowel === "e") throw new ConstructionError("pointerOtherRole", word.raw);
+  if (word.ending === "m" && bind.pointerVowel === "e") throw new ConstructionError("pointerShareSelf", word.raw);
+  if (word.ending === "m" && word.plural) throw new ConstructionError("pointerSharePlural", word.raw);
+  if (word.ending === "l" && bind.pointerVowel === "u") throw new ConstructionError("pointerNewUnsaid", word.raw);
   if (bind.ownSlot) throw new ConstructionError("pointerOwnSlot", word.raw);
   if (!bind.antecedent) throw new ConstructionError("pointerUnbound", word.raw);
+  if (word.ending === "l" && bind.antecedent.family.kind === "content") {
+    const special = bind.antecedent.family.roots.some((root) => ROLE_PRONOUN_ROOTS.has(root)) || isGenericPronoun(bind.antecedent);
+    if (special) throw new ConstructionError("pointerNewSpecial", word.raw);
+  }
 }
 
 /**

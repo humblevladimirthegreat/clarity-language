@@ -475,7 +475,7 @@ export const ROLE_FEATURE_CONSTRUCTIONS: Record<`vowel.${RoleVowel}` | "instance
 };
 
 /** Role pointers: which part the role vowel names, and which event the pointer vowel picks (pronouns.md#role-pointers). */
-export const POINTER_FEATURE_CONSTRUCTIONS: Record<`vowel.${PointerVowel}` | `role.${RoleVowel}`, ConstructionEntry> = {
+export const POINTER_FEATURE_CONSTRUCTIONS: Record<`vowel.${PointerVowel}` | `role.${RoleVowel}` | "new" | "part", ConstructionEntry> = {
   "role.a": { anchor: "pronouns.md#role-pointers", summary: "pointer to the doer" },
   "role.u": { anchor: "pronouns.md#role-pointers", summary: "pointer to the undergoer" },
   "role.o": { anchor: "pronouns.md#role-pointers", summary: "pointer to the extra party" },
@@ -489,6 +489,9 @@ export const POINTER_FEATURE_CONSTRUCTIONS: Record<`vowel.${PointerVowel}` | `ro
   "vowel.a": { anchor: "pronouns.md#role-pointers", summary: "same: the latest predicate with that role" },
   "vowel.o": { anchor: "pronouns.md#the-other-one", summary: "other: the nearest predicate with someone else in that role" },
   "vowel.e": { anchor: "pronouns.md#themself", summary: "self: this clause's predicate" },
+  "vowel.u": { anchor: "pronouns.md#whoever-it-was", summary: "unsaid: the latest predicate that left that role unsaid" },
+  new: { anchor: "pronouns.md#a-new-one", summary: "-l a new one of the participant's kind" },
+  part: { anchor: "pronouns.md#share", summary: "-m the participant's part in the event" },
 };
 
 function prefixed(prefix: string, entries: Record<string, ConstructionEntry>): [string, ConstructionEntry][] {
@@ -595,8 +598,12 @@ export const REJECTIONS = {
   numberPlural: { anchor: "pronouns.md#ordinal-pronouns", summary: "a number takes -x only as an ordinal pronoun (z=#1x)" },
   resumeUnbound: { anchor: "pronouns.md#resume-r", summary: "an -r resume spells an earlier word's whole stem, or a lexicon stem" },
   pointerSlot: { anchor: "pronouns.md#role-pointers", summary: "a role pointer fills /z/, /d/, /b/, or a holder seam's holder slot" },
-  pointerOtherRole: { anchor: "pronouns.md#the-other-one", summary: "the other-one pointer (o) takes only the doer, undergoer, or extra party (axor, uxor, oxor)" },
-  pointerUnbound: { anchor: "pronouns.md#role-pointers", summary: "a role pointer needs an earlier predicate with that role filled (o: with someone else in it)" },
+  pointerOtherRole: { anchor: "pronouns.md#the-other-one", summary: "the other-one pointer (o) takes every role except the scene (dexor, zexol, and zexom are rejected)" },
+  pointerUnbound: { anchor: "pronouns.md#role-pointers", summary: "a role pointer needs an earlier predicate with that role filled (o: with someone else in it; u: with that role unsaid)" },
+  pointerShareSelf: { anchor: "pronouns.md#share", summary: "a share (-m) never takes the self vowel (e): it would name a part in the very event being described" },
+  pointerSharePlural: { anchor: "pronouns.md#share", summary: "a share (-m) is a part, not a group of people, so it takes no -x" },
+  pointerNewUnsaid: { anchor: "pronouns.md#a-new-one", summary: "a new one (-l) needs a filler to copy the kind of; an unsaid pointer (u) has none" },
+  pointerNewSpecial: { anchor: "pronouns.md#a-new-one", summary: "a new one (-l) copies a kind; a special, topic, or generic pronoun names a role in the talk, not a kind" },
   topicUnbound: { anchor: "pronouns.md#topic-pronoun", summary: "the topic pronoun needs a topic set by an /x/ word in the current talk" },
   genericPlural: { anchor: "pronouns.md#generic-pronoun", summary: "the generic pronoun already means people at large, so it takes no -x" },
   nonspecificPlural: { anchor: "plurality.md#person-role-x", summary: "someone (unan) names no group to add associates to; some people is obelx" },

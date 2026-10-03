@@ -500,7 +500,9 @@ function bindPointer(ctx: Ctx, pronoun: LexWord): void {
   ctx.anaphors.push(bind);
   const open = ctx.clauses.at(-1);
   const earlier = ctx.anchors.slice(0, open?.before ?? ctx.anchors.length).reverse();
+  // Only the doer, undergoer, and extra party are always compared; `o` also takes a stacked role whose hook is overt.
   const core = CORE_ROLES.has(roleVowel);
+  const overt = core || (pointerVowel === "o" && roleVowel !== "e");
   let anchor: Anchor | undefined;
   let filler: Filler | undefined;
   if (pointerVowel === "e") {
@@ -510,7 +512,9 @@ function bindPointer(ctx: Ctx, pronoun: LexWord): void {
       bind.ownSlot = true;
       return;
     }
-  } else if (!core) {
+  } else if (pointerVowel === "u") {
+    anchor = earlier.find((item) => !item.fillers[roleVowel]);
+  } else if (!overt) {
     if (pointerVowel === "a") anchor = earlier[0];
     filler = anchor?.fillers[roleVowel];
   } else {
@@ -523,9 +527,11 @@ function bindPointer(ctx: Ctx, pronoun: LexWord): void {
     filler = anchor?.fillers[roleVowel];
   }
   if (!anchor) return;
-  if (core && !filler) return;
+  if (overt && pointerVowel !== "u" && !filler) return;
   bind.antecedent = filler ? fillerWord(filler) : anchor.predicate;
-  ctx.referents.set(pronoun, filler ? fillerKey(ctx, filler) : `${roleVowel}@${anchor.predicate.at ?? -1}`);
+  // A new one or a share is its own referent, never the earlier filler's (pronouns.md#a-new-one).
+  if (pronoun.ending !== "r") ctx.referents.set(pronoun, `${pronoun.ending}:${pronoun.at ?? -1}`);
+  else ctx.referents.set(pronoun, filler ? fillerKey(ctx, filler) : `${roleVowel}@${anchor.predicate.at ?? -1}`);
 }
 
 function harvest(ctx: Ctx, word: LexWord): void {

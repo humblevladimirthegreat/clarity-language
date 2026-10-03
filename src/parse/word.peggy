@@ -539,12 +539,13 @@ xWord
   / OrdinaryCompound
   / HeldPointer
 
-// Role pointer: role vowel(s) + `x` + pointer vowel + **-r** (`zaxar`, pronouns.md#role-pointers).
-// The pointer vowel picks the event by position: `a` same, `o` other, `e` self.
+// Role pointer: role vowel(s) + `x` + pointer vowel + **-r** / **-l** / **-m** (`zaxar`, `zaxal`, `zaxam`;
+// pronouns.md#role-pointers). The pointer vowel picks the event: `a` same, `o` other, `e` self, `u` unsaid.
+// **-r** names the participant, **-l** a new one of its kind, **-m** its part in the event.
 RolePointer
-  = roleV:("ae" / "ao" / "oe" / "ua" / "ue" / "uo" / "a" / "e" / "u" / "o") "x" pointerV:[aeo] "r" plural:PluralSuffix? WordEnd {
+  = roleV:("ae" / "ao" / "oe" / "ua" / "ue" / "uo" / "a" / "e" / "u" / "o") "x" pointerV:[aeou] end:[rlm] plural:PluralSuffix? WordEnd {
       return {
-        ending: "r",
+        ending: end,
         plural: !!plural,
         family: xFamily("pointer", {
           leftRoots: [],
@@ -662,7 +663,7 @@ OrdinaryCompound
 // A stacked-vowel role pointer after a holder host and its grade (`thunemuexar`, knowing.md#holder).
 // classify.ts checks the host; a single role vowel there reads as an ability shape first.
 HeldPointer
-  = host:$((!(("ae" / "ao" / "oe" / "ua" / "ue" / "uo") "x" [aeo] "r" "x"? WordEnd) [a-z])+) roleV:("ae" / "ao" / "oe" / "ua" / "ue" / "uo") "x" pointerV:[aeo] "r" plural:PluralSuffix? WordEnd {
+  = host:$((!(("ae" / "ao" / "oe" / "ua" / "ue" / "uo") "x" [aeou] "r" "x"? WordEnd) [a-z])+) roleV:("ae" / "ao" / "oe" / "ua" / "ue" / "uo") "x" pointerV:[aeou] "r" plural:PluralSuffix? WordEnd {
       return {
         ending: "r",
         plural: !!plural,

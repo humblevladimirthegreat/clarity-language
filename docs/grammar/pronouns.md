@@ -107,7 +107,71 @@ Pointer vowel **`o`** skips whoever had that part last and picks the nearest ear
 >
 > "Azawan walks. Alahen runs. Alahen sits. The other one sleeps." (`zaxar` would be Alahen)
 
-**`o`** goes only with the three role vowels above: `zaxor`, `zuxor`, `zoxor`.
+**`o`** goes with the three role vowels above: `zaxor`, `zuxor`, `zoxor`.
+
+### Whoever it was (`u`) {#whoever-it-was}
+
+Sometimes an earlier sentence has the event but never says who took part. *The cookie got eaten* has no doer, and naming one would be a guess. Pointer vowel **`u`** picks the latest sentence that left that part **unsaid** and points at whoever filled it, without saying who. English: *whoever did it*. (cue: **u** ≈ unsaid)
+
+> `dugugol vahahal. zaxur varahal.`
+>
+> d-cookie | v-see . z-←agent.unsaid | v-run
+>
+> "The cookie is seen. Whoever saw it runs."
+
+This is the **`a`** rule turned around: **`a`** skips a sentence with nobody in that part, and **`u`** looks for exactly that sentence. Once used, `zaxur` fills the subject like any noun, so a later `zaxar` reaches it (*they*, still unnamed). **`u`** goes with the same three role vowels: `zuxur` is *whatever it happened to*, when no sentence said what.
+
+**Compare with:** `unan` *someone* is tied to no event. `zaxur` is tied to one known event, *whoever did that*.
+
+### A new one (-l) {#a-new-one}
+
+A pointer with **-r** is the same one again. To say a **new** one of the same kind, English uses *one* (*Azawan sees a cookie. Alahen sees **one** too.*), and the second cookie is a different cookie. Write the same pointer with **-l**, the ending of a first mention: a new thing, of the kind the pointer reaches.
+
+> `zazawan dugugol vahahal. zalahen duxal vahahal.`
+>
+> z-Azawan | d-cookie | v-see . z-Alahen | d-←patient.same.new | v-see
+>
+> "Azawan sees a cookie. Alahen sees one too." (a different cookie; `duxar` would be the same cookie)
+
+**-l** copies only the noun, never the words that described it, so you can change the description. After a red dog, the pointer is just *a dog*, and a `/ɡ/` word after it gives the new property, as in the next example. To keep the old property, say it again on a `/ɡ/` word after the pointer.
+
+> `zazawan dodogal geredal vahahal. zalahen duxal gubuhel vahahal.`
+>
+> z-Azawan | [d-dog | g-red] | v-see . z-Alahen | [d-←patient.same.new | g-blue] | v-see
+>
+> "Azawan sees a red dog. Alahen sees a blue one."
+
+A pointer is an ordinary noun in a question, so a yes/no question keeps its meaning:
+
+> `zazawan dodogal geredal vahahal. yol zalahen duxal gubuhel vahahal.`
+>
+> z-Azawan | [d-dog | g-red] | v-see . y-question | z-Alahen | [d-←patient.same.new | g-blue] | v-see
+>
+> "Azawan sees a red dog. Does Alahen see a blue one?"
+
+**-l** takes pointer vowels **`a`**, **`e`** and **`o`**, and every role vowel: `zaxal` is another one like the latest doer. It has no reading with **`u`**, because an unsaid part has no kind to copy, and none after a special pronoun. After a name, **-l** is a new thing that name applies to, and after a joined list it is a new group of the same make-up.
+
+**Compare with:** **-r** is the same one (`duxar`); **-l** is another (`duxal`). Writing the noun out (`dugugol`) says the same as `duxal`, and the pointer only saves repeating it.
+
+### Share (-m) {#share}
+
+English often blurs *what they did* with *who they are*. A pointer with **-m** names the participant's **part** in the event, not the participant. That lets you talk about an act, to praise or criticize it, without making it a claim about the person.
+
+> `zazawan dalahen vabahel. zahaben daxar vahahal.`
+>
+> z-Azawan | d-Alahen | v-punch . z-Ahaben | d-←agent.same | v-see
+>
+> "Azawan punches Alahen. Ahaben sees them." (sees Azawan)
+
+> `zazawan dalahen vabahel. zahaben daxam vahahal.`
+>
+> z-Azawan | d-Alahen | v-punch . z-Ahaben | d-←agent.same.part | v-see
+>
+> "Azawan punches Alahen. Ahaben sees what they did." (sees the punch as Azawan's act, not Azawan)
+
+Each role vowel names a different part: `zaxam` is the doing, `zuxam` what it was for the one it happened to, and `zoxam` what reached the one told. Pointer vowels **`a`**, **`o`** and **`u`** work as before (`zaxom` *what the other one did*; `zaxum` *what was done, by whoever*). **`e`** and **-x** have no reading: a share is not a group of people, and it cannot be a part of the very event being described.
+
+**Compare with:** a resumed event noun names the whole event with everyone in it (*that punch*); `zaxam` names one person's part of it. `zaxar` is the person.
 
 ### Special pronouns {#special-pronouns}
 
@@ -289,6 +353,14 @@ z-Ahaben | v-see | d-←agent.self
 z-ONE | d-Azawan | v-see
 :::
 
+**12.** *Azawan sees a cookie. Alahen sees one too.*
+
+::: details Show answer
+`zazawan dugugol vahahal. zalahen duxal vahahal.`
+
+z-Azawan | d-cookie | v-see . z-Alahen | d-←patient.same.new | v-see
+:::
+
 #### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zalahen vugugal. zaxar vobohol.`
@@ -381,6 +453,24 @@ z-ONE | v-scream
 *One screams.* / *People scream.*
 :::
 
+**11.** `dugugol vahahal. zaxur vezugel.`
+
+::: details Show answer
+
+d-cookie | v-see . z-←agent.unsaid | v-scream
+
+*The cookie is seen. Whoever saw it screams.*
+:::
+
+**12.** `zalahen dazawan vabahel. zahaben daxam vahahal.`
+
+::: details Show answer
+
+z-Alahen | d-Azawan | v-punch . z-Ahaben | d-←agent.same.part | v-see
+
+*Alahen punches Azawan. Ahaben sees what he did.*
+:::
+
 ## Intermediate {#intermediate}
 
 ### How English approximates **-r**
@@ -443,7 +533,7 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 | verb antecedent, `/h/` … `-r` | recast as manner | *by doing so* / *thereby* |
 | adjective antecedent, noun … `-r` | recast as entity | *the … one* / *that quality* |
 
-For English *one* (*a blue one*, *the red one*), write the unspecified **`dar`** *something* and resume the noun as a kind on `/ɡ/`, then add the new property. A resume on `/d/` would be the same dog; **`dar`** with a `/ɡ/` resume is another thing of the dog kind.
+For English *one* (*a blue one*, *the red one*) of a noun a [role pointer](#a-new-one) reaches, write that pointer with **-l** and the new property on `/ɡ/`. For a noun no pointer reaches (a topic, a noun inside a quote, a hook landmark with no role vowel), write the unspecified **`dar`** *something* and resume the noun as a kind on `/ɡ/`, then add the new property. A resume on `/d/` would be the same dog; **`dar`** with a `/ɡ/` resume is another thing of the dog kind.
 
 > `zazawan dodogal geredal vahahal. zalahen dar godogar gubuhel vahahal.`
 >

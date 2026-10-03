@@ -60,6 +60,8 @@ Keep the source’s **casing** inside <code>&lt;&gt;</code> when that writing sy
 
 When a published Agazan root already matches, write the ordinary word (`dagadul`, not a fence).
 
+A span is an ordinary noun for a [role pointer](pronouns.md#role-pointers): `duxar` is that span again, and `duxal` is [another one](pronouns.md#a-new-one) of what the span holds.
+
 Outside a clause, a foreign name or word is a prefix-less fence with the same marks: [citation forms](word-endings.md#citation-forms) (<code>@&lt;Sam&gt;</code>). A span in a sentence still takes a role letter, because it fills a sentence slot (<code>z@&lt;Sam&gt;</code>).
 
 ### Calls and reactions (`/y/`) {#y-spans}

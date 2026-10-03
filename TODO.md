@@ -17,7 +17,6 @@ Prosody
 -review logical deduction
 -fix output too large for find lexicon
 -decline by design vs decline because can't think of good reading
-apply role-pointer-endings.md
 
 save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.

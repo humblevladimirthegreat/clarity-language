@@ -91,6 +91,8 @@ function featureConstructions(word: LexWord): string[] {
     if (family.pointerVowel) {
       if (family.roleVowel) ids.push(`pointer.role.${family.roleVowel}`);
       ids.push(`pointer.vowel.${family.pointerVowel}`);
+      if (family.xFamily === "pointer" && word.ending === "l") ids.push("pointer.new");
+      if (family.xFamily === "pointer" && word.ending === "m") ids.push("pointer.part");
     }
     return ids;
   }

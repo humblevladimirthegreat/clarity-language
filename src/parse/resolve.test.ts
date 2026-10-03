@@ -144,10 +144,38 @@ describe("resolve — role pointers (pronouns.md#role-pointers)", () => {
     assert.deepEqual(pointers("zazawan vowogal. zalahen thunemaxar vedabal."), ["thunemaxar→zazawan"]);
   });
 
+  it("-l: a new one of the participant's kind, never the same referent", () => {
+    assert.deepEqual(pointers("zazawan dugugol vahahal. zalahen duxal vahahal."), ["duxal→dugugol"]);
+    const { anaphors } = resolveOf("zazawan dugugol vahahal. zalahen duxal vahahal. zodogal duxar vahahal.");
+    assert.equal(anaphors.find((a) => a.pronoun.raw === "duxar")?.antecedent?.raw, "duxal");
+  });
+
+  it("-m: the participant's part, not the participant", () => {
+    assert.deepEqual(pointers("zazawan dalahen vabahel. zaxam genehem."), ["zaxam→zazawan"]);
+  });
+
+  it("u: the latest predicate that left that role unsaid", () => {
+    assert.deepEqual(pointers("dugugol vahahal. zaxur varahal."), ["zaxur→vahahal"]);
+    assert.deepEqual(pointers("dugugol vahahal. zaxum genehem."), ["zaxum→vahahal"]);
+    assert.throws(() => parseText("zazawan vowogal. zaxur vehahel."), /earlier predicate/);
+  });
+
+  it("o on a stacked role counts only overt fillers", () => {
+    assert.deepEqual(pointers("zazawan vavadal ael bodul. zalahen vavadal ael bedel. zazawan vavadal. zazawan daexor vahahal."), ["daexor→bodul"]);
+  });
+
+  it("rejects a share with e or -x, a new one with u or on a special pronoun", () => {
+    assert.throws(() => parseText("zazawan dalahen vabahel. zaxem genehem."), /never takes the self vowel/);
+    assert.throws(() => parseText("zazawan dalahen vabahel. zaxamx genehem."), /takes no -x/);
+    assert.throws(() => parseText("dugugol vahahal. zaxul varahal."), /unsaid pointer/);
+    assert.throws(() => parseText("zamagon vowogal. zaxal vehahel."), /special, topic, or generic/);
+    assert.throws(() => parseText("zazawan dalahen vabahel. zexom genehem."), /except the scene/);
+  });
+
   it("rejects pointers with no referent, on the wrong slot, o on an implicit role, or e on its own slot", () => {
     assert.throws(() => parseText("zaxar vowogal."), /needs an earlier predicate/);
     assert.throws(() => parseText("zazawan vowogal. vaxar."), /fills \/z\//);
-    assert.throws(() => parseText("zazawan vowogal. dexor vahahal."), /takes only the doer/);
+    assert.throws(() => parseText("zazawan vowogal. dexor vahahal."), /except the scene/);
     assert.throws(() => parseText("zaxer vowogal."), /not the one it fills/);
   });
 });

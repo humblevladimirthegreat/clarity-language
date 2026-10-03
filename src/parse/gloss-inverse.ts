@@ -236,10 +236,11 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
   if (resume) {
     const pos = (resume[1] ?? "").replace(/-$/, "");
     let body = resume[2]!;
-    // Role pointer: `←agent.same` → `ax` + `a` + **-r**.
-    const pointer = body.match(/^([a-z]+)\.([a-z]+)$/);
+    // Role pointer: `←agent.same` → `ax` + `a` + **-r**; `.new` is **-l**, `.part` is **-m**.
+    const pointer = body.match(/^([a-z]+)\.([a-z]+)(?:\.(new|part))?$/);
     if (pointer && ROLE_BY_LABEL[pointer[1]!] !== undefined && POINTER_BY_LABEL[pointer[2]!] !== undefined) {
-      out.add(`${pos}${ROLE_BY_LABEL[pointer[1]!]}x${POINTER_BY_LABEL[pointer[2]!]}r${suffix}`);
+      const ending = pointer[3] === "new" ? "l" : pointer[3] === "part" ? "m" : "r";
+      out.add(`${pos}${ROLE_BY_LABEL[pointer[1]!]}x${POINTER_BY_LABEL[pointer[2]!]}${ending}${suffix}`);
       return [...out];
     }
     // Role-compound resume: `←instrument-x-write` → `aex` + resumed stem + **-r**.

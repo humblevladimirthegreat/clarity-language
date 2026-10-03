@@ -302,7 +302,10 @@ export const ROLE_VOWEL: Record<string, string> = {
 };
 
 /** Role pointer vowel: which event the pointer reads (pronouns.md#role-pointers). */
-export const POINTER_VOWEL: Record<string, string> = { a: "same", o: "other", e: "self" };
+/** Role pointer ending suffix: **-l** a new one, **-m** a share; **-r** is the participant itself. */
+export const POINTER_ENDING: Record<string, string> = { l: ".new", m: ".part" };
+
+export const POINTER_VOWEL: Record<string, string> = { a: "same", o: "other", e: "self", u: "unsaid" };
 
 const CARDINALS = [
   "zero",
@@ -963,7 +966,7 @@ function sensePieces(
 ): string[] {
   const family = word.family;
   const resume =
-    word.ending === "r" &&
+    (word.ending === "r" || (family.kind === "x" && family.xFamily === "pointer")) &&
     !(family.kind === "x" && family.xFamily === "holder") &&
     word.reading !== "sake" &&
     word.reading !== "ability" &&
@@ -975,7 +978,7 @@ function sensePieces(
     }
     // A role pointer glosses its role and which event, never the referent (glosses.md § Anaphors).
     if (family.kind === "x" && family.xFamily === "pointer") {
-      return [`←${ROLE_VOWEL[family.roleVowel ?? ""] ?? "role"}.${POINTER_VOWEL[family.pointerVowel ?? ""] ?? "pointer"}`];
+      return [`←${ROLE_VOWEL[family.roleVowel ?? ""] ?? "role"}.${POINTER_VOWEL[family.pointerVowel ?? ""] ?? "pointer"}${POINTER_ENDING[word.ending ?? ""] ?? ""}`];
     }
     if (ctx.antecedent) {
       // A role-compound resume keeps its role, so doer / undergoer / tool of one event stay apart (glosses.md § Round trip).
