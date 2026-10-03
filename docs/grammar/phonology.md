@@ -52,7 +52,7 @@ A consonant starts a syllable. There is no distinction between voiced and unvoic
 `x` sounds different than English. The rest are familiar. `y` is always a consonant, never a vowel.
 :::
 
-`th` is **one letter** written with two characters. Agazan has no `t`, so `th` never means `t` followed by `h`. At the start of a word it is the [stance](clause.md#stance-th) role letter. Inside a word it starts a syllable like any consonant (in [need](sakes.md) words, [label scope](predication.md#label-scope) words, and spoken [number groups](numbers.md#group-separator)); it never appears inside a dictionary root.
+`th` is **one letter** written with two characters. Agazan has no `t`, so `th` never means `t` followed by `h`.
 
 Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) by [Peter Isotalo](https://commons.wikimedia.org/wiki/User:Peter_Isotalo), except /ɹ/ by [Erutuon](https://commons.wikimedia.org/wiki/File:Alveolar_approximant.ogg).
 

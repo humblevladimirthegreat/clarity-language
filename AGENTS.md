@@ -63,8 +63,8 @@ Each row names what the file owns. The file is the authority; this table is only
 | `translation-exercises.md` | Translation checkpoint policy. |
 | `drill-generation.md` | Procedure for adding checkpoints. |
 | `lexicon.md` | Root spellings, root length, respelling, moving an overlay to another row. |
-| `design-decisions.md` | Deliberate omissions and settled readings not to re-raise. |
-| `unassigned-reserved.md` | Unused slots (never linked from grammar pages). |
+| `design-decisions.md` | Why a form or reading is deliberately absent, rejected alternatives, settled readings no grammar page teaches yet. Not a restatement of grammar pages. |
+| `unassigned-reserved.md` | Every spelling with no reading, marked open (no natural reading yet) or closed (by a design decision). Never linked from grammar pages. |
 | `language-name.md` | Why the name is Agazan. |
 | `proposals.md` | Notes for `docs/proposals/` — never link to proposal pages (filenames in backticks only). |
 | `site-redirects.md` | Public URL remaps. |
@@ -76,7 +76,7 @@ Each row names what the file owns. The file is the authority; this table is only
 - Node ≥ 24 (runs `.ts` natively; see `.nvmrc`).
 - Tests run with **`npm test`** (Node's built-in runner via `tsx --test`). Vitest is intentionally **not** installed — never run bare `npx vitest`. Use `npx --no-install <tool>` to check for a CLI; avoid bare `npx <tool>` for tools this repo does not depend on.
 - Language design work goes through `introduction.md`, `why-agazan.md`, `clause.md` and the linked grammar docs (and `TODO.md` until absorbed). Do **not** treat any parser implementation as design authority until it matches the docs.
-- **Parser changes ship with grammar changes:** a change to what the parser accepts, rejects, or how it reads a form lands in the same change as the grammar-doc edit that teaches it (the owning page, plus `design-decisions.md` for a settled limit). Never change parser behavior without the matching grammar edit.
+- **Parser changes ship with grammar changes:** a change to what the parser accepts, rejects, or how it reads a form lands in the same change as the grammar-doc edit that teaches it (the owning page, plus `unassigned-reserved.md` for a newly rejected spelling and `design-decisions.md` when the rejection has a reason beyond *no reading yet*). Never change parser behavior without the matching grammar edit.
 - **Orthography invariants** ([phonology](docs/grammar/phonology.md)): `th` is one letter written with two characters, and there is no `t`. No hyphen after the PoS letter. Native text is unicase lowercase; capitals only inside foreign / opaque payloads ([spans](docs/grammar/spans.md)). Named reference is marked by ending, not case. Prefer published lexicon roots when the gloss matches.
 - **Example sentences**: do not add a leading assertion turn to every example when it is omissible — see [clause.md](docs/grammar/clause.md) and [speech-moves.md](docs/grammar/speech-moves.md).
 - **Learner name slot:** write the reader-as-speaker name as **`SELF`** — [first person](docs/meta/grammar-docs.md#house-cast). The site fills it ([`src/learner-name.ts`](src/learner-name.ts)).

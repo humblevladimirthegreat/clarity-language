@@ -1,16 +1,25 @@
 # Unassigned and reserved forms
 
-Editor inventory of **unused slots** and **later-dimension** ideas — not learner text, not parser authority, not linked from grammar pages.
+Editor inventory of **spellings with no reading**. Not learner text, not parser authority, and not linked from grammar pages. This page answers **is this spelling taken?** The reasons behind closed rows live in [design-decisions.md](design-decisions.md).
 
-Grammar docs under `docs/grammar/` teach **defined** readings only. When a cell here gets a reading, add it to the relevant grammar page and **delete the row here**. Rejected or speculative features stay in [TODO.md](../../TODO.md) or drop entirely.
+Each entry has a status:
+
+- **open:** nothing in the design stands against a reading. None is natural yet: any reading would be forced, would only repeat another route, or there is no English job for it. The parser may still reject the form. The short note says what a reading would have to beat.
+- **closed (D-nn, or a named design-decisions section):** a reading would cost something (a collision with a live reading, a broken invariant, the project's aims). That entry says what.
+
+Grammar docs under `docs/grammar/` teach **defined** readings only. A spelling that already has a reading does not belong here.
 
 ## How to use
 
 | Action | Where |
 |--------|--------|
-| Assign a reading | Teach in the grammar subsystem page; remove from this inventory |
-| Reject / defer a feature | [TODO.md](../../TODO.md) or delete |
-| Parser / drill guard | [drill-generation.md](drill-generation.md) — do not drill unassigned cells |
+| Assign a reading to an **open** cell | Teach it in the grammar subsystem page; delete the entry here |
+| Close a cell for a reason | Add the reason to [design-decisions.md](design-decisions.md); mark the entry **closed** with the D-id |
+| Reopen a **closed** cell | Retire or narrow the D-row first |
+| Defer a speculative feature | [TODO.md](../../TODO.md) |
+| Parser / drill guard | [drill-generation.md](drill-generation.md): do not drill cells listed here |
+
+Number holes below are all **open**.
 
 ## Numbers — free forms
 
@@ -58,19 +67,21 @@ Source: [numbers.md](../grammar/numbers.md), [numeric-derivation.md](../grammar/
 
 - **`x+0e`**, **`x±0e-1`**, **`x#0e`**, … beyond defined overlays
 
+
 ### Number markers on `/w/`, `/th/`, and stacks
 
-- **`w+N`**, **`w-N`**, **`w_N`**, **`w#-N`**, **`w#1`**: `/w/` takes only the blank, *barely* / *almost*, and an ordinal place from 2 ([D-25](design-decisions.md))
-- **`th-N`**, **`th#-N`**, **`th#1`**, **`th#`** digitless non-blank: `/th/` takes `+`, `_`, and `#N` from 2 ([D-26](design-decisions.md))
-- Marker stacks **`rao`** (`+_`) and **`rae`** (`+#`)
+- **open:** **`w+N`**, **`w-N`**, **`w_N`** (a count or fraction on `/w/`). A factor is `hradul` / `hrudul` on `/h/` ([factor](../grammar/comparatives.md#factor)).
+- **open:** **`w#-N`**, **`w#1`**, and `w#N` outside a single-name `zel` / `zuel` frame. First place is the plain superlative, *second from the bottom* is `zuel` + `w#2`, and `w#N` needs one name before the fence to rank within.
+- **open:** **`th-N`**, **`th#-N`**, **`th#1`**, and digitless non-blank **`th#`**. First-hand is a channel word; a minus or end-relative rank on a stance has no guessable reading.
+- **open:** marker stacks **`rao`** (`+_`) and **`rae`** (`+#`). Labels carry no sign, and a count and a rank are separate markers on separate words.
 
 ### Ordinal pronoun `#0`
 
-- **`z=#0`** / **`d=#0`** / **`b=#0`** (`zrezor`, …): introduction starts at 1, so place 0 names no one and is rejected. Not assigned as a shifting *speaker*: that would make *I* shorter than a name, against D-13 ([design-decisions](design-decisions.md)).
+- **open:** **`z=#0`** / **`d=#0`** / **`b=#0`** (`zrezor`, …). Introduction starts at 1, so place 0 names no one; the parser rejects it. The one obvious candidate, a shifting *speaker*, is **closed (D-13)**.
 
 ## Numbers — numeric derivation
 
-Source: [numeric-derivation.md](../grammar/numeric-derivation.md)
+Source: [numeric-derivation.md](../grammar/numeric-derivation.md). All **open**.
 
 | Shape | Note |
 |-------|------|
@@ -79,180 +90,183 @@ Source: [numeric-derivation.md](../grammar/numeric-derivation.md)
 | **`ROOTl+Ne0`** | Kind twin of free scale-assert **`Ne0`** |
 | **`ROOTl#0e0`** / free **`#0e0`** | Ordinal morph |
 | **`ROOTl±0eN`** for **`N≠1`** | Only **`±0e-1`** assigned |
-| **`ROOTl-e-0`** | Undefined — use **`ROOTl-0`** (anti-null) or **`ROOTl-0e-`** (micro-residue) |
-| **`ROOTl-e-3`…`-e-9`** | Out of quasi morph set — prefer bare **`ROOTl-e-`** or ordinary wording |
+| **`ROOTl-e-0`** | Undefined: use **`ROOTl-0`** (anti-null) or **`ROOTl-0e-`** (micro-residue) |
+| **`ROOTl-e-3`…`-e-9`** | Out of the quasi morph set: prefer bare **`ROOTl-e-`** or ordinary wording |
 
 ## Restrictors (`/h/` / `/w/`)
 
 Source: [restrictors.md](../grammar/restrictors.md)
 
-Spellings under `/h/` / `/w/` that share the join series but have **no circumstance reading** yet:
+- **open:** bare restrictors beyond `hal` / `hual` / `har` / `hor` / `hur`: **`hol` / `hom`**, **`haol` / `haom`**, **`hul` / `hum`**, **`huol` / `huom`**, **`hel` / `hem`**, **`hoel` / `hoem`**. With no occasions their only readings are *never* / *always*, which `hal` / `hual` already own (`hul` would equal `hual`, `huol` would equal `hor`).
+- **open:** further `/w/` bare forms beyond **`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`** and the non-bare Intermediate core.
+- **open:** **`her` / `wer`** (unspecified ranked occasion, any arity). No English job; regularity only. One restrictor chain is one unit, so **`hel`** and **`har`** cannot combine either.
+- **open:** **-n** on `/w/` (`wan`, …). `/w/` is never a phrase-list item, so there is no package to name. (`/h/`…**-n** is [join-relations](../grammar/join-across-roles.md#join-relations).)
+- **open:** **`wazem`** before **-r** / **-n**. *Respectively something* has no reading.
+- **open:** other join spellings under `/h/` / `/w/` beyond the [defined restrictor core](../grammar/restrictors.md#defined-core-full) and the join-relations. See also [phrase join inventory](../grammar/joins.md#phrase-reserved-forms).
 
-### Bare (no conjunct)
+## Joins
 
-- **`hol` / `hom`**, **`haol` / `haom`**, **`hul` / `hum`**, **`huol` / `huom`**
-- **`hel` / `hem`**, **`hoel` / `hoem`**
-- Beyond **`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`** and the non-bare Intermediate core, further `/w/` bare forms
+Source: [joins.md](../grammar/joins.md), [join-across-roles.md](../grammar/join-across-roles.md#stance-joins)
 
-### Ranked / unspecified (no reading)
+- **open:** **`/th/`…-n**: no join-relation or sequence reading.
+- **open:** stacked **-r** outside a question on `/th/` (`thaor` … `thuer` are fill-asks only), and on `/z/` `/d/` `/b/` `/v/` `/x/` `/ɡ/` joins (`zuar`, `vaor`, `xuar`, `gaor`). No question wants a stacked blank. Parser: `stackedJoinResume`.
+- **open:** clause sequence **-n** beyond `xan` `xon` `xun` `xaon` (`xuan`, `xuon`, `xen`, `xaen`, `xoen`, `xuen`). A sequence is already ordered, so an order vowel adds nothing; *first of all* and *finally* are `xrebul` / `xrebal`. `xen` is also a departure mark after a name.
+- **open:** a single-item clause join (`A xul` *not the case that A*, `A xal` *only A happened*). Clause `/x/` joins go between clauses. Deny or focus on the verb or noun (`vowogal vul`, `zazawan zal`), or use stand-in items (`A xol xal` *optionally A*, `xual ul A`).
+- **open:** a rank or sequence join (`e` / `ue` / `oe`) with a number as a threshold, and a SHARED continuum word. Ranges use hooks and [rays](../grammar/numbers-applied.md#rays).
 
-- **`her` / `wer`** (any arity) — declined (D-27): no English job; one restrictor chain is one unit, so **`hel`** and **`har`** cannot combine either
-- Other stacked or rare parallels not in the Intermediate core tables
+## Comparison bars
 
-### `-n` under `/w/`
+Source: [comparatives.md](../grammar/comparatives.md#bars)
 
-- `/w/`…**-n** and **`wazem`** before **-r** / **-n** — reserved, no gloss (`/h/`…**-n** = [join-relations](../grammar/join-across-roles.md#join-relations), not restrictors)
-
-### Join leftovers
-
-Under `/h/` / `/w/`, join spellings beyond the [defined restrictor core](../grammar/restrictors.md#defined-core-full) and beyond [join-relations](../grammar/join-across-roles.md#join-relations) on `/h/`…**-n** — reserved slot, no gloss. See also [phrase join inventory](../grammar/joins.md#phrase-reserved-forms).
-
-## Stance joins (`/th/`)
-
-Source: [join-across-roles.md](../grammar/join-across-roles.md#stance-joins)
-
-- **`/th/`…-n** — reserved; no join-relation or sequence reading
-- Stacked **-r** outside a question (`thaor` … `thuer` are fill-asks only); stacked **-r** on `/z/` `/d/` `/b/` `/v/` `/x/` `/ɡ/` joins (`zuar`, `vaor`, `xuar`, `gaor`) — the parser rejects them
-- Clause sequence **-n** beyond `xan` `xon` `xun` `xaon` (`xuan`, `xuon`, `xen`, `xaen`, `xoen`, `xuen`)
+- **open:** a stance that sets no value as a bar: clause poles, MAY, MIRATIVE, DECISION, ATTEMPT, RESIDUE, CAUSE, and the deontic noes (FORBID, refused consent). A decision or an attempt commits to an act and sets no level; a ban and a refusal are the other side of PERMIT and CONSENT. *Than decided* is PLAN. Parser: `barKind`.
+- **open:** a second comparee next to a bar (`barCount`).
 
 ## Hosted relations
 
 Source: [relations.md](../grammar/relations.md)
 
-- A relation root on `/w/` with `/b/` (`wumum bazawan`) — only the as-of pair (`wuhum` / `wuram`) takes `/b/` on `/w/`
-- A social tie on `/h/` (`hemezem bazawan`) — the tie on the doer already says *as a friend of* (D-30)
+- **open:** a relation root on `/w/` with `/b/` (`wumum bazawan`). Only the as-of pair (`wuhum` / `wuram`) takes `/b/` on `/w/`.
+- **open:** a social tie on `/h/` (`hemezem bazawan`). The tie on the doer already says *as a friend of* (`zalahen gemezem bazawan vowogal`).
 
 ## Hooks — in-clause
 
-Source: [hooks.md](../grammar/hooks.md#spans)
+Source: [hooks.md](../grammar/hooks.md#spans), [sakes.md](../grammar/sakes.md#contrary-to-stance)
 
-- In-clause **`ao`** / **`ae`** / **`uo`** (`aol` / `ael` / `uol` and **-m** / **-n**) between same-role words — no reading; the parser rejects them (extra-noun and discourse uses unaffected)
-- Stacked hook **-r** outside a span (no same-role word on both sides) — not permitted; **`aor`** / **`aer`** / **`uor`** are not words
-- Discourse **`oel`** / **`ual`** / **`uol`** / **`uel`** (and **-m** / **-n**) at the front of a sentence — no reading; the parser rejects them
+- **open:** in-clause **`ao`** / **`ae`** / **`uo`** (`aol` / `ael` / `uol` and **-m** / **-n**) between same-role words, including same-role `aol` *namely* (`el` or an aside covers it). The parser rejects them; extra-noun and discourse uses are unaffected.
+- **open:** stacked point-back **-r** (`aor` *on it*, `aer`, `uor`). A hook + resumed `/b/` already says it. (`oer` / `uar` / `uer` are the span fill-ask.)
+- **open:** discourse **`oel`** / **`ual`** / **`uol`** / **`uel`** (and **-m** / **-n**) at the front of a sentence, and a discourse *Alternatively* or *Apart from that*. Each guess already has a route (`am` *such as*, `zem` *especially*, the linkers, `xom` / `xaom`, `al …` / `ur …`). The parser rejects them.
+- **open:** a hook + `barl` other than `ul` (`hookStandIn`). *Contrary to* an event is `hezom barl`; no job turned up for `uem barl`.
+- **open:** `uem` before a stance with no content an event can contradict (`frameKind`): PERMIT, given CONSENT (they only lift a restriction), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use FELT), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Alahen's interest* is `thegathum balahen`), clause poles, CAUSE, ATTEMPT, ability, and stance numbers.
 
 ## Role compounds
 
 Source: [roles.md](../grammar/roles.md), [x-compounds.md](../grammar/x-compounds.md)
 
-| Slot | Status |
-|------|--------|
-| PoS `/v/` / `/h/` / `/w/` / `/th/` on role compounds | None — the parser rejects them (`roleCompoundSlot`, D-34); `/z/` `/d/` `/b/` `/ɡ/`, `/x/` as a topic and `/y/` + **-n** / **-r** as a call are the slots |
-| A role compound as a piece of an ordinary compound, or two role vowels in a word | None — *noun + agent* is the role compound's stem (`zaxodogaxowogal`) |
-| A special pronoun (root + **-n**) as a role-compound stem or a label-scope host | None — rejected (`roleCompoundStem`, `labelScopeStem`) |
-| Ability (`x` + vowel) on a `/z/` / `/d/` / `/b/` noun, a name, a pronoun, or `/h/`; name + `x` + vowel + **-n** in a clause body | None — rejected (`abilitySlot`); the name shape is a conversation-length bid only as a citation or a `/y/` call |
-| [Role pointers](../grammar/pronouns.md#role-pointers) on `/v/` / `/ɡ/` / `/h/` / `/w/` / `/y/` / `/x/` | Undefined (rejected by the parser; D-24) — for *does so* / *such*, use whole-stem **-r**; to call or return to someone, name the stem |
-| Role pointer cells outside the grid | Rejected (`pointerNewUnsaid`, `pointerShareSelf`, `pointerSharePlural`, `pointerNewSpecial`, `pointerOtherRole`; D-19, D-24): **-l** with **`u`** or after a special, topic or generic pronoun; **-m** with **`e`** or **-x**; **`o`** on the scene |
+- **open:** a role compound on `/v/` / `/w/` / `/th/`. A role compound names a participant, so it fills `/z/` `/d/` `/b/` `/ɡ/`, sets a topic under `/x/`, and calls under `/y/`. Parser: `roleCompoundSlot`.
+- **closed (D-34):** a role compound on `/h/`.
+- **open:** a role compound as a piece of an ordinary compound, or two role vowels in a word. *Noun + agent* is the role compound's stem (`zaxodogaxowogal`).
+- **open:** a special pronoun (root + **-n**) as a role-compound stem or a label-scope host (`zaxamagon`, `zamagothan`). It is neither an event nor a label. Parser: `roleCompoundStem`, `labelScopeStem`.
+- **open:** ability (`x` + vowel) on a `/z/` / `/d/` / `/b/` noun, a name, a pronoun, or `/h/` (`zodogaxal`). Ability is on `/v/` and `/ɡ/` (plus hostless `eze`). Parser: `abilitySlot`.
+- **open:** name + `x` + vowel + **-n** in a clause body (`zalahen zazawaxon varahal.`). That shape is a conversation-length bid only as a citation or a `/y/` call.
+
+## Role pointers
+
+Source: [pronouns.md](../grammar/pronouns.md#role-pointers)
+
+- **open:** a role pointer on `/v/` / `/ɡ/` / `/h/` / `/w/` (`vaxar`). A pointer picks a participant; *does so* and *such* are whole-stem **-r**. Parser: `pointerSlot`.
+- **closed (D-24):** a role pointer on `/y/` / `/x/`.
+- **open:** *the other one* (`o`) on the scene (`zexor`, `zexol`, `zexom`). The scene's overt filler is not settled for comparison. Parser: `pointerOtherRole`.
+- **open:** a new-one pointer (**-l**) with pointer vowel `u`, or after a special, topic or generic pronoun (`zaxul`). A new-one pointer copies a kind, and an unsaid filler or a conversation role has none. Parser: `pointerNewUnsaid`, `pointerNewSpecial`.
+- **open:** a share (**-m**) with pointer vowel `e` or with **-x** (`zaxem`, `zaxamx`). A share is a part of an event, so it names no group and cannot be the very event it describes. Parser: `pointerShareSelf`, `pointerSharePlural`.
+- **open:** a share or new-one pointer in a holder seam.
+- **open:** a role pointer as a viewpoint lateral's facing anchor (`gewezathaxar`). Name the anchor by its stem or a resume (`gewezathazawar`).
 
 ## Pronouns and plurality
 
-Source: [pronouns.md](../grammar/pronouns.md), [plurality.md](../grammar/plurality.md); D-24 in [design-decisions](design-decisions.md)
+Source: [pronouns.md](../grammar/pronouns.md), [plurality.md](../grammar/plurality.md)
 
-- Ordinal pronouns on `/y/` (`yredur`): rejected; call by name.
-- **-x** on `/h/` / `/w/` / `/th/` and the six linkers, and on `unan` (use `obelx` for *some people*).
-- Topic words `xunan`, `xozan`, `xozar`, and the resume `zozar`.
-- A role pointer as a viewpoint lateral's facing anchor (`gewezathaxar`): name the anchor by its stem or a resume.
+- **closed (D-24):** an ordinal pronoun on `/y/` (`yredur`).
+- **open:** **-x** on `/h/` / `/w/` / `/th/` and the six linkers. A plural adverb, degree, stance or linker has no reading; stances belong to holders, who take **-x**.
+- **open:** **-x** on an interjection (`/y/` **-l** / **-m**). An interjection addresses no one.
+- **open:** the nonspecific *someone* `unan` as a topic or with **-x** (`xunan`, `unanx`). `unan` names no group, so *some people* is `obelx`.
+- **open:** the topic pronoun as a topic word or a resume (`xozan`, `zozar`). The topic pronoun is the topic itself.
 
 ## Identity (`SAME`)
 
 Source: [predication.md](../grammar/predication.md)
 
-| Slot | Status |
-|------|--------|
-| **`gugon`** / **`gugor`** (SAME with **-n** / **-r**) | Undefined — only **-l** / **-m** are taught (they read as the ordinary root *coin*) |
-| **-x** on `gugol` | none |
-| A `/z/` or `/d/` as the second identity label | none: the label is a `/b/` |
-| A bare `/ɡ/` right after the verb (depictive / resultative) | none: the parser rejects it; use its own clause, `huwem barl`, or `thegem` |
+- **closed (D-33):** `gugon` / `gugor` as identity.
+- **open:** **-x** on `gugol`.
+- **open:** a `/z/` or `/d/` as the second identity label. The label is a `/b/`.
+- **closed (D-33):** a bare `/ɡ/` right after the verb (depictive / resultative).
 
 ## Closed-root endings
 
-Source: [causation.md](../grammar/causation.md#poles), [relations.md](../grammar/relations.md), [dependents.md](../grammar/dependents.md#dependent-clauses). Cells with a candidate reading are logged in [extension-results](extension-results.md), not here.
+Source: [causation.md](../grammar/causation.md#poles), [relations.md](../grammar/relations.md), [dependents.md](../grammar/dependents.md#dependent-clauses), [knowing.md](../grammar/knowing.md#residue)
 
-- Clause-pole **-r** as a grade on *iff* (`eda`), *although* (`ezo`), *while* (`uwe`), *before* (`aba`), *after* (`enu`), *until* / *by* (`oma`), and the result pole (`odu`): no reading (the ordinary resume reading stays)
-- Clause-pole **-l** beyond *because* (`thevel`) and *by* (`omal`), other than *if*: no reading
-- **-l** on exchange (`ehe`), proxy (`ade`), the of-relations, the locatives, stimulus (`obu`), and *respectively* (`aze`): no reading (**-r** is the ordinary resume)
+An **-r** grade on a closed root without its own **-r** would take away the live whole-stem resume ([design-decisions § Closed-root endings](design-decisions.md#closed-root-endings)). **-l** has two competing guesses (strongest, or broke a norm, as on *because*), so a family with neither has no guessable **-l**.
 
-## Stand-ins
+- **closed (closed-root -r):** clause-pole **-r** as a grade on *iff* (`eda`), *although* (`ezo`), *while* (`uwe`), *before* (`aba`), *after* (`enu`), *until* / *by* (`oma`), and the result pole (`odu`).
+- **closed (closed-root -r):** clause-pole **-r** as *one of several* on *if* (`thoyer`), *only if* (`tholur`) and *so that* (`hogor`). The resume is the only route to *in that case* (`thoyer`); *partly because* is `thever`.
+- **closed (closed-root -r):** CAUSE **-r** as *one contributing push* (`theger`); RESIDUE and FORMER **-r** as *for now* (`thamor`, `thenor`); similative **-r** as *a bit like* (`humur`, `gumur`).
+- **open:** clause-pole **-l** beyond *because* (`thevel`) and *by* (`omal`). *If* **-l** as *by rule* (`thoyel`): only *because* uses **-l** for a norm, and `thoyem` plus a deontic already says it.
+- **open:** CAUSE **-l** as *compel* (`thegel`). **-l** is not guessable here, and refused consent plus CAUSE ([consent](../grammar/sakes.md#consent)) already names whose will was overridden.
+- **open:** RESIDUE and FORMER **-l** as *for good* (`thamol`, `thenol`); a phasal adverb already says it.
+- **open:** similative **-l** as *exactly like* (`humul`, `gumul`).
+- **open:** **-l** on exchange (`ehe`), proxy (`ade`), the of-relations, the locatives, stimulus (`obu`), and *respectively* (`aze`).
+
+## Stand-ins and dependents
 
 Source: [dependents.md](../grammar/dependents.md#stand-in)
 
-- Forward, back and named stand-ins (`-rl` `-rm` `-rth` `-rn`) on `/ɡ/` `/h/` `/w/` `/th/` and on `/x/` `/y/`: no reading (the parser rejects them on `/ɡ/` `/h/` `/w/` `/th/`)
-- Stacked-vowel stand-ins (`daerl`, `duarl`): a stacked join, not a stand-in
-- **-x** on a stand-in
+- **closed (D-32):** a stand-in on `/ɡ/` (`garl`).
+- **open:** forward, back and named stand-ins (`-rl` `-rm` `-rth` `-rn`) on `/h/` `/w/` `/th/` (`garth`, `harth`, `tharn`) and on `/x/` `/y/`. *Such* is whole-stem **-r** and *like that* is `humum barth`. Parser: `standInRole`.
+- **open:** **-x** on a stand-in.
+- **open:** a stance-only dependent (`dependentStanceOnly`): the sentence after a stand-in needs a noun or a verb, except a lone sake word. `hezom barl thedel` adds nothing over `uem thedel`.
 
 ## Sentence linkers (`/x/`)
 
 Source: [dependents.md](../grammar/dependents.md#sentence-linkers)
 
-- A linker stacked with a topic word in one sentence (`xezom xazawan …`): no reading (two sentences)
-- Firm **-l** on *meanwhile* (`xagagal`), *next* (`xevavel`), and *by the way* (`xavazel`): no reading (the parser rejects them)
+- **closed (D-32):** a linker and a topic word in one sentence (`xezom xazawan …`).
+- **open:** firm **-l** on *meanwhile* (`xagagal`), *next* (`xevavel`), and *by the way* (`xavazel`). The parser rejects them.
 
 ## Turn words (`/y/`)
 
 Source: [speech-moves.md](../grammar/speech-moves.md#speech-act), [questions.md](../grammar/questions.md#polar-endings)
 
-- Act and polar series with **-n** (`yan` / `yon` / `yen` / `yun`, `yaen` / …): no reading. On `/y/`, **-n** calls someone, and there is no named-formula interjection.
-- A blank in the `/y/` slot (`yar` / `yor` / `yer` / `yur`): a stacked act word, rejected.
-- Ask tags with a polar word other than `yael` / `yaem` (`yol yuel`, `yol yaol`, `yol yaer`, …): no reading (D-31).
-- A polar word before an act word, or two polar words in a row (`yael yal`, `yael yuel`): the parser rejects them; an answer and a question are two turns.
+- **closed (closed-root endings):** act and polar series with **-n** (`yan` / `yon` / `yen` / `yun`, `yaen` / …). On `/y/`, **-n** calls someone.
+- **open:** a blank in the `/y/` slot (`yar` / `yor` / `yer` / `yur`): a stacked act word.
+- **open:** ask tags with a polar word other than `yael` / `yaem` (`yol yuel`, `yol yaol`, `yol yaer`, …). `yol yael` is the one confirm tag, and the English *no?* tag is the same job.
+- **closed (D-31):** a polar word before an act word, or two polar words in a row; a topic-only question.
+- **open:** a mention or an aside under `/y/` (`ySpanType`). A mention talks about a word and an aside comments on the sentence, so neither calls nor reacts.
 
 ## Spans
 
-Source: [spans.md](../grammar/spans.md), [x-compounds.md](../grammar/x-compounds.md)
+Source: [spans.md](../grammar/spans.md)
 
-- An aside under any role but `/th/` (`d(…)`); a cite or opaque under `/th/` (`th[…]`); any span under `/w/`. The parser rejects them (`spanSlot`). An `/x/` cite or opaque is a topic word (`x@[onodan alahen]`, `x@<Sam>`)
-- A span in a `/v/` slot (`v[vazadal]`) has no resume pronoun
-- **`VOWEL x VOWEL`** silhouettes — including **`xuxun`** (`/x/` + **`u` × `u`** + proper **-n**) and the shapes the spoken span once used (`xuxul`) — are ordinary compounds / [phrasal names](../grammar/word-endings.md#phrasal-proper-names), not fences
+- **open:** an aside under any role but `/th/` (`d(…)`); a cite, opaque or mention under `/th/` (`th[…]`). Parser: `spanSlot`.
+- **closed (D-28):** any span under `/w/`.
+- **open:** a span resume (`d[=]`). A span is an ordinary noun for role pointers (`duxar`).
+- **open:** a resume pronoun for a span in a `/v/` slot (`v[vazadal]`).
 
-## Values — later dimensions
+## Values and sakes
 
 Source: [sakes.md](../grammar/sakes.md)
 
-- Forced listener / third-person possessives on sake ascription (speaker `/ɡ/` default is [personal possession](../grammar/sakes.md#personal-possession); unowned is **`gobum`**)
-- A sake word on `/z/` `/d/` `/b/` `/v/` `/h/` `/x/` `/y/` (the parser rejects it, `sakeSlot`). *Walks healthily* is the clause stance (`thoyutham`)
-- Prescription **`the`** off `/th/`; **-n** on a sake word; a `/b/` after an INTERNAL or UNPLACED feeling (D-36; the parser rejects them)
-
-### Near-miss inventory (editor)
-
-| Job | Where taught |
-|-----|----------------|
-| Emotion compose | [sakes.md § Emotion compose](../grammar/sakes.md#emotion-compose) |
-| MAY | [knowing.md § MAY](../grammar/knowing.md#may) — **`ovu`** + find out / default / who knows |
-| NOTIONAL | [knowing.md § Notional](../grammar/knowing.md#notional) — **`avo`** |
-| RESIDUE / FORMER | [knowing.md § Residue](../grammar/knowing.md#residue) — **`amo`** / **`eno`** |
-| DECISION | [intention.md § Decision](../grammar/intention.md#decision) — **`ehu`** |
-| PLAN | [intention.md § Plan](../grammar/intention.md#plan-predict) — **`ama`** |
+- **open:** forced listener / third-person possessives on sake ascription. The speaker `/ɡ/` default is [personal possession](../grammar/sakes.md#personal-possession); unowned is **`gobum`**.
+- **open:** a sake word on `/z/` `/d/` `/b/` `/v/` `/h/` `/x/` `/y/` (`sakeSlot`). *Walks healthily* is the clause stance (`thoyutham`).
+- **open:** prescription **`the`** on a noun (`ganathel`, `wanathel gobum`). Its endings are the warrant for a move, and a noun is not a move; what a noun is for is **`tho`** (`ganathom`).
+- **closed (D-36):** **-n** on a sake word.
+- **open:** a `/b/` after an INTERNAL or UNPLACED feeling (`wanathumal gobum balahen`). A placement locus has no landmark; someone else's stake is ON-BEHALF (`e`) or a holder.
 
 ## Role-letter structure
 
 Source: [clause.md](../grammar/clause.md)
 
-- Lean **`l`** on any role letter but `/ɡ/`: `zl-` / `dl-` / `bl-` / `vl-` / `hl-` / `thl-` / `wl-` (`/z/`, `/d/`, `/b/` modifiers use mid-word **`x`**; a verb root before the noun uses `gl-`; `/h/` and `/th/` already go anywhere; `/w/` already sits before its host)
-- `/w/` before `/z/`, `/d/`, `/b/`, or `/v/` (degree on a noun goes through an adjective; degree on a verb goes through a degree word before a manner adverb)
-- A hosted `/b/` after `/z/`, `/d/`, `/v/`, or `/w/` (that `/b/` reads as the unhosted recipient)
+- **open:** lean **`l`** on any role letter but `/ɡ/`: `zl-` / `dl-` / `bl-` / `vl-` / `hl-` / `thl-` / `wl-`. A noun modifying a noun is mid-word **`x`** ([x-compounds](../grammar/x-compounds.md#ordinary-compound-order)); a verb root in `gl-` or on `/ɡ/` is the participle; `/h/` and `/th/` already go anywhere; `/w/` already sits before its host.
+- **open:** `/w/` before `/z/`, `/d/`, `/b/`, or `/v/`. Degree on a noun goes through an adjective; degree on a verb is a degree word before a manner adverb.
+- **closed (D-22):** a hosted `/b/` after `/z/`, `/d/`, `/v/`, or `/w/`.
 
-## Vowel series
+## Vowel series and tone marks
 
-Source: [speech-moves.md](../grammar/speech-moves.md), [questions.md](../grammar/questions.md#polar-endings), [intention.md](../grammar/intention.md#ability)
+Source: [speech-moves.md](../grammar/speech-moves.md#tone-marks), [intention.md](../grammar/intention.md#ability)
 
-- Stacked vowels after ability **x** (`xua`, …) and after sake / scope **th**: no reading (the parser rejects them)
-
-## Tone marks
-
-Source: [speech-moves.md](../grammar/speech-moves.md#tone-marks)
-
-- `~` is taken (opaque marker); stacks other than `?!` are not marks
+- **open:** stacked vowels after ability **x** (`xua`, …) and after sake / scope **th**. *It depends* is MAY or a sentence (polar `oe` is *decline to answer*); *can again* is `xa` plus a sentence. The parser rejects them.
+- **open:** a new tone mark (whisper, sarcasm, …). `;` `%` `?` already cover quiet, sarcasm and hesitation.
+- **closed (D-23):** `~` as a tone mark, and stacks other than `?!`.
 
 ## Phonology
 
 Source: [phonology.md](../grammar/phonology.md)
 
-- Unused potential onset clusters (not part of the language): *gw*, *vw*, *xw*, *bl* (*bl* should not mean left-aligned *b*)
+- **open:** unused onset clusters *gw*, *vw*, *xw*, *bl* (*bl* should not mean left-aligned *b*).
 
 ## Related meta
 
 | Page | Role |
 |------|------|
-| [grammar-docs.md](grammar-docs.md) | Grammar prose — unused slots do not earn a stage |
-| [design-decisions.md](design-decisions.md) | Settled readings and deliberate omissions; this page is unused **forms** |
+| [design-decisions.md](design-decisions.md) | Why a cell is closed; rejected alternatives; settled readings not yet taught |
+| [grammar-docs.md](grammar-docs.md) | Grammar prose: unused slots do not earn a stage |
 | [drill-generation.md](drill-generation.md) | Do not drill cells listed here |
-| [TODO.md](../../TODO.md) | Rejected / speculative features, open lexicon |
+| [TODO.md](../../TODO.md) | Speculative features, open lexicon |

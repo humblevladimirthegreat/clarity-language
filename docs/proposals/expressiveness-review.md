@@ -22,7 +22,7 @@ Status: `[x]` done · `[~]` partial · `[ ]` not started.
 
 ## Batch loop
 
-A batch is one wave's grids (or a smaller slice of one), and a wave holds one or two mechanisms. The same loop applies to every batch, whether its rows are extensions (`E-nn`), inconsistencies (`C-nn`), or gaps carried over from Phases 1 and 2. Rows are logged in [extension-results](../meta/extension-results.md).
+A batch is one wave's grids (or a smaller slice of one), and a wave holds one or two mechanisms. The same loop applies to every batch, whether its rows are extensions (`E-nn`), inconsistencies (`C-nn`), or gaps carried over from Phases 1 and 2. Rows were logged in `extension-results.md`, deleted after Phase 3: declined readings are in [design-decisions](../meta/design-decisions.md) and [unassigned-reserved](../meta/unassigned-reserved.md).
 
 1. **Build and log.** Build the batch's grids and log each row. Check every candidate spelling with `node scripts/parse.mjs --check-lexicon`, and in context for a competing reading (such as a content resume). Do not edit grammar pages while logging.
 2. **Triage.** Within the batch only: merge duplicate rows, link each gap to an extension that closes it (prefer extensions over new forms), and rank by priority, then by how many rows one change closes. For each P1 row, and any multi-row extension, write a short proposal in `docs/proposals/` first (current route, proposed form, examples with morph glosses, interaction with existing forms, learning level per [learning-levels](../meta/learning-levels.md)).
@@ -40,11 +40,11 @@ New roots come from `npm run convert-word`, never by hand ([lexicon](../meta/lex
 
 ## Findings ledger
 
-Phase 1 and 2 gap rows were folded into the grammar and [design-decisions](../meta/design-decisions.md) as they were ruled. Any still open are carried into the batch whose mechanism owns them. Phase 3 rows live in [extension-results](../meta/extension-results.md).
+Phase 1 and 2 gap rows were folded into the grammar and [design-decisions](../meta/design-decisions.md) as they were ruled. Any still open are carried into the batch whose mechanism owns them. Phase 3 rows were folded the same way.
 
 ## Phase 3 — Extension sweep (existing grammar, new readings)
 
-Systematically cross every productive mechanism with every place it could plausibly apply, and ask whether the unused combination has an intuitive reading. Waves run in dependency order so foundations settle first: the **Needs** column lists the earlier waves whose settled forms a wave builds on, so check it before reordering. Each wave is one or two mechanisms; if a wave's grids come out larger than about ten rows, split it again and renumber. Each grid cell belongs to exactly one mechanism (the ownership table is in [extension-results](../meta/extension-results.md#how-to-read-this-file)), so no cell is logged twice. The recipe track (`english.md`, `say-*.md`) adds no forms and has no grid.
+Systematically cross every productive mechanism with every place it could plausibly apply, and ask whether the unused combination has an intuitive reading. Waves run in dependency order so foundations settle first: the **Needs** column lists the earlier waves whose settled forms a wave builds on, so check it before reordering. Each wave is one or two mechanisms; if a wave's grids come out larger than about ten rows, split it again and renumber. Each grid cell belongs to exactly one mechanism, so no cell is logged twice. The recipe track (`english.md`, `say-*.md`) adds no forms and has no grid.
 
 For each mechanism, build its applicability grid and inspect the empty cells:
 
@@ -84,12 +84,12 @@ Each batch follows the [Batch loop](#batch-loop). Inconsistencies in the existin
 
 No new triage or application happens here; both happen per batch. This phase only checks that nothing was left behind.
 
-- [ ] Revisit rows deferred at a batch ruling and any open Phase 2 row; each is now ruled and applied, or recorded as deferred with a reason.
-- [ ] Cross-check across batches: duplicate rows that slipped through, and extensions that later batches made redundant or contradictory.
-- [ ] Confirm every **awkward** / **missing** row is **covered**, **by design**, or deferred with a reason.
-- [ ] Run `npm run build` and `npm test` on the final tree.
+- [x] Revisit rows deferred at a batch ruling and any open Phase 2 row; each is now ruled and applied, or recorded as deferred with a reason. E-41 and E-43 declines confirmed (D-30); E-03 recorded as unassigned; *exactly like* (E-07) got an english.md row; E-11 (verb root on `/ɡ/`) deferred in TODO.md.
+- [ ] Cross-check across batches: duplicate rows that slipped through, and extensions that later batches made redundant or contradictory. Not run separately; waived at close-out.
+- [ ] Confirm every **awkward** / **missing** row is **covered**, **by design**, or deferred with a reason. Not run separately; waived at close-out.
+- [x] Run `npm run build` and `npm test` on the final tree.
 
-**Exit:** build and tests clean; the results file has no row without an outcome.
+**Exit:** build and tests clean; every row had an outcome when the results file was deleted. Closed by the language owner on 2026-10-03.
 
 ## Progress
 
@@ -99,4 +99,4 @@ No new triage or application happens here; both happen per batch. This phase onl
 | 1 — English coverage checklist | [x] | 2026-09-25 |
 | 2 — Real-text sampling | [~] | 2026-10-01 |
 | 3 — Extension sweep (triage and apply per batch) | [x] | 2026-10-03 |
-| 4 — Close-out | [ ] | |
+| 4 — Close-out | [x] | 2026-10-03 |

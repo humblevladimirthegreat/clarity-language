@@ -23,7 +23,7 @@ Learner English names for constructions live on [terminology.md](../grammar/term
 
 ## Dual role
 
-Each grammar page is both **source of truth** for its subsystem and **learner text**. Prefer teach-first structure over inventory-first dumps in **Beginner** ([Beginner stage shape](#beginner-stage-shape)). Later stages may complete a paradigm as a table ([later-stage shape](#later-stage-shape)); if Advanced dwarfs Beginner, split the file. Unassigned or unused-slot inventory stays in [unassigned-reserved.md](unassigned-reserved.md); rejected or speculative features stay in [TODO.md](../../TODO.md) — never in a grammar page appendix. Grammar pages teach **assigned readings only**. Do not ship a form as “reserved,” “not used,” or “or reserved,” and do not keep a **Reserved forms** heading whose job is to fence unused phonotactics. *This spelling already has job X* (e.g. a time-code host) is a positive rule — say the job, not “reserved.” If the learner must not build a shape, omit it; if they might invent it *now*, one [Compare with](#compare-with) sentence is enough — never a leftover-slot inventory.
+Each grammar page is both **source of truth** for its subsystem and **learner text**. Prefer teach-first structure over inventory-first dumps in **Beginner** ([Beginner stage shape](#beginner-stage-shape)). Later stages may complete a paradigm as a table ([later-stage shape](#later-stage-shape)); if Advanced dwarfs Beginner, split the file. Unassigned or unused-slot inventory stays in [unassigned-reserved.md](unassigned-reserved.md); a reason to keep a form out stays in [design-decisions.md](design-decisions.md); speculative features stay in [TODO.md](../../TODO.md) — never in a grammar page appendix. Grammar pages teach **assigned readings only**. Do not ship a form as “reserved,” “not used,” or “or reserved,” and do not keep a **Reserved forms** heading whose job is to fence unused phonotactics. *This spelling already has job X* (e.g. a time-code host) is a positive rule — say the job, not “reserved.” If the learner must not build a shape, omit it; if they might invent it *now*, one [Compare with](#compare-with) sentence is enough — never a leftover-slot inventory.
 
 On this page:
 
@@ -464,7 +464,8 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 | IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) (letter table); [inspect.md](../grammar/inspect.md) (**IPA:** on spoken forms). Not in other grammar-page examples |
 | Unassigned / unused-slot inventory | [unassigned-reserved.md](unassigned-reserved.md) — **never** a grammar-page row, drill, or “reserved” gloss |
 | Parser / CLI / site implementation notes | Code and `docs/meta/` — not titles, leads, or “house rules” on grammar pages |
-| Rejected or speculative features | [TODO.md](../../TODO.md) |
+| Why a form or reading is deliberately absent | [design-decisions.md](design-decisions.md) |
+| Speculative features | [TODO.md](../../TODO.md) |
 | Short Eng ↔ Agazan checkpoint | End of a page stage — [translation-exercises.md](translation-exercises.md); generate via [drill-generation.md](drill-generation.md) |
 | Multi-turn practice | [examples/](../examples/) (not linked from grammar pages) |
 | Editor pedagogy / migration notes | `docs/meta/` only — never from grammar pages |

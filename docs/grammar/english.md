@@ -81,6 +81,7 @@ English *by*, *for*, *about*, *as*, and *against* each cover several jobs. Pick 
 | most that can be done (*as fast as possible*, *as small as you can*) | ABIL bar **`thezexal`** + tie **`ae`** | [Every bar](comparatives.md#stance-bars) |
 | frame one sentence (*as for Azawan*) | **`hahehom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 | resemblance (*walks as / like a duck*) | **`humum`** + `/b/` | [Simile](relations.md#similative) |
+| how close (*exactly like*, *a bit like*) | `/w/` before **`humum`**: `wubuzam humum badagul` (*precisely*), `wamazam humum badagul` | [Simile](relations.md#similative), [degree words](clause.md#degree-w) |
 | resemblance to an event (*walks the way a duck swims*, *as a hand moves through hair*) | **`humum barl`** + the event | [Simile](relations.md#similative) |
 | pretense (*as if they walk*) | **NOTIONAL** | [Notional](knowing.md#notional) |
 | dated books (*as of Friday*) | **`huhum` / `huram`** + `/b/` | [*As-of*](relations.md#as-of) |
@@ -193,6 +194,7 @@ English often makes an adjective from a noun by adding an ending (*gold* → *go
 | *anyway, Azawan …* (after a side topic) | **`or xazawar …`** | [Return](pronouns.md#topic-return), [resume hooks](hooks.md#hook-resume) |
 | *what are we talking about?* | **`yol zar gahehom.`** | [Asking about the topic](pronouns.md#topic-question) |
 | *one*, generic *you*, *people* (in general) | **`oben`** | [Generic pronoun](pronouns.md#generic-pronoun) |
+| *the latter* / *the former* (of two just named in the same role) | role pointer **`zaxar`** (*the latter*) / **`zaxor`** (*the other one*); for two names, ordinals count by first mention (`zredur`, `zrewor`) | [Role pointers](pronouns.md#role-pointers), [ordinal pronouns](pronouns.md#ordinal-pronouns) |
 
 ### Greetings {#greetings}
 

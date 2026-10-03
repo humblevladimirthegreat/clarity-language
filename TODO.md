@@ -9,7 +9,7 @@ use [skip-cd] for amplify to not deploy.
 # TODO
 
 Prosody
--expressiveness review
+-verb root on `/ɡ/` or `gl-` (`zodogal gowogal`): no reading taught. [unassigned-reserved](docs/meta/unassigned-reserved.md) § Role-letter structure calls it the participle without saying which: ongoing (*walking*), characteristic, or undergoer (*eaten*). Deferred from the expressiveness review (E-11), along with its english.md row.
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -final exam
 -finish lexicon fill (partial)
