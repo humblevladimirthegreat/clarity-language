@@ -19,6 +19,7 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 | *judging by* / *going by* / *given that* (grounds) | inferring or pattern channel + **`barl`**: **`thunem barl`** / **`thobam barl`** ([evidence clause](knowing.md#evidence-clause)) |
 | *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xodum`** ([continue](dependents.md#continue-x)) |
 | *thus* (*in this way*) | the same adverb again: `/h/` with **-r** ([how English approximates -r](pronouns.md#how-english-approximates-r)) |
+| *the fact that* / *the idea that* / *it is a fact that* | a predicate with a `/z/` stand-in: `genevem zarl zazawan vowogal.`; or two sentences, then `zarth` ([stand-in vowels](dependents.md#stand-in)): `zazawan vowogal. zarth genevem.` A clause never modifies a noun |
 | *due to* / *owing to* / *because of* (NP) | **`thevem`** + `/b/` **noun** (`thevem berehel`) |
 | *however* / *meanwhile* (discourse) | **`xezom`** / **`xagagam`** |
 | *regardless of* (NP) | same **`hezom`** + `/b/` **noun** as *despite* |

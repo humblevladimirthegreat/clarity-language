@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Findings from Phase 3 of the expressiveness review (`docs/proposals/expressiveness-review.md`): every productive mechanism crossed with every place it could apply, and each empty cell judged. Rows are logged per batch, ruled by the language owner, and applied before the next batch starts; each row's **Outcome** records the ruling.
 
-Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 adopted (reversed from decline), C-15 and C-16 fixed). Wave 7 (join series on other roles): logged (E-39, E-40, C-17 to C-19), ruled and applied (E-39 adopted as a docs gap, E-40 declined, C-17 to C-19 fixed). Wave 8 (hosted relations and bars): logged (E-41 to E-43), ruled and applied (E-41 and E-43 declined, E-42 adopted). Wave 9 (questions): logged (E-44 to E-49, C-20, C-21, C-13 revisited), ruled and applied (E-44 to E-47 adopted, E-48 and E-49 declined, C-20, C-21 and C-13 fixed). Other mechanisms not started.
+Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 adopted (reversed from decline), C-15 and C-16 fixed). Wave 7 (join series on other roles): logged (E-39, E-40, C-17 to C-19), ruled and applied (E-39 adopted as a docs gap, E-40 declined, C-17 to C-19 fixed). Wave 8 (hosted relations and bars): logged (E-41 to E-43), ruled and applied (E-41 and E-43 declined, E-42 adopted). Wave 9 (questions): logged (E-44 to E-49, C-20, C-21, C-13 revisited), ruled and applied (E-44 to E-47 adopted, E-48 and E-49 declined, C-20, C-21 and C-13 fixed). Wave 10 (stand-ins and `/x/` words): logged (E-50, E-51, C-22), ruled and applied (E-50 and E-51 declined, C-22 fixed). Other mechanisms not started.
 
 ## How to read this file
 
@@ -1124,6 +1124,83 @@ Owning page: [questions](../grammar/questions.md); the stance fill-ask lives in 
 - Tag forms `yol yuel` `yol yaol` `yol yuol` `yol yual` `yol yaer` and the rest (E-48).
 
 Confirmed **def** with nothing to add: `zar` `dar` `bar` at every arity, `var` `xar` `har`, the number blanks, `ol` / `al` / `ul` / `el` + `bar`, `humum bar`, `thevem bar` and the other cause poles + `bar`, polar stance at **-l** / **-m** / **-r** as a turn or a before-body word, and `yol ?zar`.
+
+## Stand-ins and `/x/` words
+
+Owning page: [dependents](../grammar/dependents.md); the topic words are owned by [pronouns § topic](../grammar/pronouns.md#topic). Wave 10. Cells checked with `node scripts/parse.mjs` (2026-10-03). A parse is not a reading: the classifier accepts several stand-in cells that no page teaches.
+
+### Grid
+
+Stand-in vowels **a o e u** × ending × role letter. Forward is **-rl** / **-rm** (the next sentence fills the slot), back is **-rth**, named is **-rn**.
+
+| Role | Forward **-rl** / **-rm** | Back **-rth** | Named **-rn** |
+|------|---------------------------|---------------|---------------|
+| `/z/` `/d/` `/b/` | def | def | def |
+| `/v/` | — (a stacked-join **-r** form, not a stand-in; the verbal dependents `vaen` `vuon` … are def) | — | def (`varn` …) |
+| `/ɡ/` | rejected (E-50) | accepted, untaught (C-22) | accepted, untaught (C-22) |
+| `/h/` | rejected | accepted, untaught (C-22) | accepted, untaught (C-22) |
+| `/th/` | rejected | accepted, untaught (C-22) | accepted, untaught (C-22) |
+| `/w/` | rejected | rejected (gen: whole-stem **-r** on the degree word) | rejected |
+| `/x/` `/y/` | rejected | rejected | rejected |
+| Stacked vowel + **-rl** (`daerl`) | none (parses as the stacked join, not a stand-in) | — | — |
+| **-x** on a stand-in (`darlx`) | none | none | none |
+
+| `/x/` position or ending | State |
+|--------------------------|-------|
+| Linker or topic word at a sentence start, after `.`, after a `/y/` turn word, after a vocative or polar word | def |
+| Topic word, then a linker in the next sentence (`xalahen. xodum zozan …`) | def |
+| After a clause join, inside a dependent, after a fronted hook other than `or` | rejected, as stated (D-20) |
+| Linker then topic word in one sentence (`xezom xazawan zozan …`), or the reverse | E-51 |
+| Linker alone (`xodum.`), or two linkers in a row | rejected: a linker needs a body |
+| Linker **-m**; firm **-l** on `xodul` `xezol` `xagezal`; **-r** resume | def |
+| **-l** on `xevavem` `xagagam` `xavazem`, and **-n** on any linker (`xevavel`, `xodun`) | gen (topic of the concrete sense, or of a name) |
+| **-x** on a linker | rejected (D-24) |
+| Topic word on verb, adjective or adverb roots (`xowogal`, `xubuhel`, `xadehum`) | gen (a topic noun on that root) |
+| Topic pronoun with no topic set, or after `xevavem` / `xavazem` | rejected, as stated |
+
+### Rows
+
+#### E-50 — forward stand-in on `/ɡ/` (*the fact that …*) · intuitive but redundant · P2
+
+- **Proposed reading:** `garl` / `garm` on an adjective: the noun complement, *the fact that Azawan walks*, *glad that Alahen sits*.
+- **Example:** none worth teaching. `zalahen vowogal. zarth genevem.` and `genevem zarl zazawan vowogal.` (*it is a fact that Azawan walks*) both parse and say it today.
+- **Pattern:** forward stand-in on `/z/` `/d/` `/b/`
+- **Current route:** the predicate `/ɡ/` with a `/z/` stand-in (`gamadam zarl …`, the subject slot); or two sentences with `zarth` (the [which-noun](../grammar/dependents.md#which-noun) rule). Verbs that take a clause (*deny*, *confirm*, *know*) take `darl`.
+- **Better than current route:** no: `garl` would make a clause modify a noun, which is the relative-clause shape Agazan writes as two sentences on purpose.
+- **Conflicts and notes:** the parser rejects `garl` `harl` `warl` `tharl` with a raw token-list error, not a pointer (C-22).
+- **Closes:** *the fact that*, *the idea that*: covered (`find-english`: *the fact that*, *the idea that*, *glad that*)
+- **Recommendation:** decline the form. Add a recipe row *the fact / idea / rumor that …* (`genevem zarl …`, or two sentences) to the owning `say-*.md` page; no new form.
+- **Outcome:** declined — D-32; recipe row added to say-reasons.
+
+#### E-51 — linker and topic word in one sentence (`xezom xazawan zozan varahal.`) · intuitive but redundant · P3
+
+- **Proposed reading:** the linker keeps its job and the topic word then changes the topic: *However, now about Azawan: …*.
+- **Example:** `zalahen vowogal. xezom xazawan zozan varahal.` — both words are `/x/`, so a learner who knows each could stack them. Rejected today (one `/x/` word opens a sentence).
+- **Pattern:** a fronted word then the clause
+- **Current route:** two sentences: `xazawan.` (a topic word may stand alone) then `xezom zozan varahal.`; the topic persists across the linker. Parses.
+- **Better than current route:** barely: one fewer period. A stack would need a rule for which of the two sets the topic and for `xevavem` / `xavazem`, which already clear it (so *so, now about Azawan* is just the topic word).
+- **Conflicts and notes:** D-20 keeps one topic-setting `/x/` word per sentence start so every tool reads the topic from one position. Reordering (`xazawan xezom …`) has the same two-word problem.
+- **Closes:** *however, as for X* with a topic reset
+- **Recommendation:** decline; record in design-decisions. Add the two-sentence route to [dependents § sentence linkers](../grammar/dependents.md#sentence-linkers) as one example if the owner wants it taught.
+- **Outcome:** declined — D-32; the two-sentence route is taught in dependents § sentence linkers.
+
+### Inconsistencies (wave 10)
+
+#### C-22 — the parser accepts stand-in cells no page teaches · found in stand-ins
+
+- **Where:** [dependents § stand-in vowels](../grammar/dependents.md#stand-in), [§ pointing back](../grammar/dependents.md#stand-in-back), [§ lexicalized stand-ins](../grammar/dependents.md#stand-in-roles), `standInKind` in `src/parse/classify.ts`
+- **Problem:** `standInKind` accepts **-rth** and **-rn** on every PoS except `/x/` `/y/`, so `garth`, `harth`, `tharth`, `garn`, `harn`, `tharn` and the other vowels parse as stand-ins with morph glosses (*that-same-claim*, *statement*). The docs teach back stand-ins on `/z/` `/d/` `/b/` only (the page says other role letters work as the forward stand-in does, which is `/z/` `/d/` `/b/`), and named stand-ins on `/z/` `/d/` `/b/` and `/v/`. No reading is guessable: *such* is whole-stem **-r** (D-24), *then* and *so* are `henum barth` and `humum barth`, a stance cannot be a back pointer. The forward forms (`garl`, `harl`, `warl`, `tharl`) are rejected, but with a raw token list instead of a pointer.
+- **Suggested ruling:** reject **-rth** and **-rn** on `/ɡ/` `/h/` `/th/` with a pointer to the stand-in section, and give the forward rejection the same pointer. No new form. State the `/z/` `/d/` `/b/` limit once in dependents.md. Record in design-decisions.
+- **Outcome:** fixed — the parser rejects stand-ins on `/ɡ/` `/h/` `/w/` `/th/` (`standInRole`); stated in dependents § stand-in vowels; D-32.
+
+### None (to add to unassigned-reserved, if the rows above are declined)
+
+- Forward, back and named stand-ins on `/ɡ/` `/h/` `/w/` `/th/`, and on `/x/` `/y/`.
+- Stacked-vowel stand-ins (`daerl`, `duarl`): a stacked join, not a stand-in.
+- **-x** on a stand-in.
+- A linker stacked with a topic word (E-51).
+
+Confirmed **def** with nothing to add: `darl` `dorl` `derl` `durl` and **-rm** at every vowel on `/z/` `/d/` `/b/`, **-rth** and **-rn** on `/z/` `/d/` `/b/`, a pole + `barth` (*because of that*), nested `derl … darl`, the six linkers at **-m** and firm **-l**, **-r** resume on a linker, topic words on any root, a topic word after a `/y/` turn word, and the topic persisting across a linker.
 
 ## Inconsistencies
 

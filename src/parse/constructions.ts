@@ -609,6 +609,7 @@ export const REJECTIONS = {
     anchor: "dependents.md#dependent-clauses",
     summary: "the sentence after a stand-in names an event or a thing; a stance word alone fills it only as a lone feeling, thanks, or sorry",
   },
+  standInRole: { anchor: "dependents.md#stand-in", summary: "stand-ins (-rl -rm -rth -rn) fill /z/ /d/ /b/ only; there is no stand-in on /ɡ/ /h/ /w/ /th/ (such is whole-stem -r, like that is humum barth)" },
   standInHost: { anchor: "dependents.md#dependent-clauses", summary: "a hosted stand-in is barl after a listed pole, an inferred / pattern channel, or like (humum)" },
   standInHostUndo: { anchor: "dependents.md#stand-in", summary: "burl follows only the so-that pole holalam or the if pole thadorom" },
   poleStack: { anchor: "causation.md#only-because", summary: "pole stacks are theberom thurugum and hezebam thadorom" },

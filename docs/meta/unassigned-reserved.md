@@ -164,10 +164,19 @@ Source: [causation.md](../grammar/causation.md#poles), [relations.md](../grammar
 - Clause-pole **-l** beyond *because* (`thevel`) and *by* (`omal`), other than *if*: no reading
 - **-l** on exchange (`ehe`), proxy (`ade`), the of-relations, the locatives, stimulus (`obu`), and *respectively* (`aze`): no reading (**-r** is the ordinary resume)
 
+## Stand-ins
+
+Source: [dependents.md](../grammar/dependents.md#stand-in)
+
+- Forward, back and named stand-ins (`-rl` `-rm` `-rth` `-rn`) on `/ɡ/` `/h/` `/w/` `/th/` and on `/x/` `/y/`: no reading (the parser rejects them on `/ɡ/` `/h/` `/w/` `/th/`)
+- Stacked-vowel stand-ins (`daerl`, `duarl`): a stacked join, not a stand-in
+- **-x** on a stand-in
+
 ## Sentence linkers (`/x/`)
 
 Source: [dependents.md](../grammar/dependents.md#sentence-linkers)
 
+- A linker stacked with a topic word in one sentence (`xezom xazawan …`): no reading (two sentences)
 - Firm **-l** on *meanwhile* (`xagagal`), *next* (`xevavel`), and *by the way* (`xavazel`): no reading (the parser rejects them)
 
 ## Turn words (`/y/`)

@@ -360,6 +360,14 @@ No other root makes a linker. Any other `/x/` content word sets the [topic](pron
 
 All of these `/x/` words, and the topic words, come only at the **start of a sentence**: only `/y/` turn words or a [fronted discourse hook](hooks.md#discourse-hooks) may come before them. They never follow a [clause join](joins.md#clause-joins), and they never open the sentence after a [stand-in](#dependent-clauses), because that sentence belongs to the dependent.
 
+A linker and a topic word do not share a sentence. To change the topic after a linker's job, write the topic word as its own sentence and then the linker (*Now, about Azawan. However, Alahen runs.*):
+
+> `xazawan. xezom zalahen varahal.`
+>
+> x-Azawan . x-however | z-Alahen | v-run
+>
+> "Now, about Azawan. However, Alahen runs."
+
 **`xevavem`** also opens a new frame, like English *so, …* at the start of a turn: the talk moves on and the [topic](pronouns.md#topic) is cleared.
 
 > `zodogal vowogal. xevavem zazawan varahal.`
@@ -501,7 +509,7 @@ The vowel still types the content, and the word stands for the most recent conte
 
 The content can be anything a sentence says: a verbless sentence, a denied event, or several sentences chained with `/x/`. A [resume](pronouns.md#resume-r) **-r** picks up one word; **`-rth`** picks up what was said.
 
-Other role letters work the same way as the forward stand-in: **`barth`** after a pole (*because of that*) or after [*like*](relations.md#similative) **`humum`** (*like that*), **`zarth`** as the subject.
+Other role letters work the same way as the forward stand-in: **`barth`** after a pole (*because of that*) or after [*like*](relations.md#similative) **`humum`** (*like that*), **`zarth`** as the subject. Stand-ins fill `/z/` `/d/` `/b/` only; there is no stand-in on `/ɡ/` `/h/` `/w/` `/th/`. *Such* is [whole-stem **-r**](pronouns.md#resume-r), and *then* or *so* is a pole + **`barth`**.
 
 ### Time poles on a noun {#time-pole-on-noun}
 
