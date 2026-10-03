@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Findings from Phase 3 of the expressiveness review (`docs/proposals/expressiveness-review.md`): every productive mechanism crossed with every place it could apply, and each empty cell judged. Rows are logged per batch, ruled by the language owner, and applied before the next batch starts; each row's **Outcome** records the ruling.
 
-Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 adopted (reversed from decline), C-15 and C-16 fixed). Wave 7 (join series on other roles): logged (E-39, E-40, C-17 to C-19), ruled and applied (E-39 adopted as a docs gap, E-40 declined, C-17 to C-19 fixed). Wave 8 (hosted relations and bars): logged (E-41 to E-43), ruled and applied (E-41 and E-43 declined, E-42 adopted). Wave 9 (questions): logged (E-44 to E-49, C-20, C-21, C-13 revisited), ruled and applied (E-44 to E-47 adopted, E-48 and E-49 declined, C-20, C-21 and C-13 fixed). Wave 10 (stand-ins and `/x/` words): logged (E-50, E-51, C-22), ruled and applied (E-50 and E-51 declined, C-22 fixed). Wave 11 (predication): logged (E-52, E-53, C-23), ruled and applied (E-52 adopted as a docs gap, E-53 declined, C-23 fixed). Other mechanisms not started.
+Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 adopted (reversed from decline), C-15 and C-16 fixed). Wave 7 (join series on other roles): logged (E-39, E-40, C-17 to C-19), ruled and applied (E-39 adopted as a docs gap, E-40 declined, C-17 to C-19 fixed). Wave 8 (hosted relations and bars): logged (E-41 to E-43), ruled and applied (E-41 and E-43 declined, E-42 adopted). Wave 9 (questions): logged (E-44 to E-49, C-20, C-21, C-13 revisited), ruled and applied (E-44 to E-47 adopted, E-48 and E-49 declined, C-20, C-21 and C-13 fixed). Wave 10 (stand-ins and `/x/` words): logged (E-50, E-51, C-22), ruled and applied (E-50 and E-51 declined, C-22 fixed). Wave 11 (predication): logged (E-52, E-53, C-23), ruled and applied (E-52 adopted as a docs gap, E-53 declined, C-23 fixed). Wave 12 (mid-word `x` and `th`, role compounds): logged (E-54 to E-58, C-24 to C-26), ruled and applied (E-54, E-55, E-57 adopted, E-56 and E-58 declined, C-24 to C-26 fixed). Other mechanisms not started.
 
 ## How to read this file
 
@@ -1272,6 +1272,129 @@ Classification (kind on `/ɡ/`) and identity (**`gugol`** + `/b/`) × role and e
 - A `/z/` or `/d/` as the second identity label.
 
 Confirmed **def** with nothing to add: kind and property on `/ɡ/` at every ending the page teaches, `godogal gul` / `hual` / `wabedem godogal`, `yel` / `yul` + `/ɡ/`, existence with and without a `/ɡ/`, `gugol` / `gugom` + name, `gugol` alone, identity in a noun phrase, `yol … gugol bar`, `yol … gar`, and label scope on kinds.
+
+## Mid-word `x` and `th`, role compounds
+
+Owning pages: [x-compounds](../grammar/x-compounds.md), [roles](../grammar/roles.md); the families themselves are owned by [intention § ability](../grammar/intention.md#ability), [predication § label scope](../grammar/predication.md#label-scope) and [sakes](../grammar/sakes.md). Wave 12. Cells checked with `node scripts/parse.mjs` (2026-10-03). A parse is not a reading: the classifier accepts several cells that no page teaches. Sake vowels, the ending table and emotion compose are wave 14; closed roots × role letters is wave 13; neither is gridded here.
+
+### Grid
+
+Left-hand types of an ordinary `x` compound, then role compounds × role letter, ending and stem, then the `th` seam × host.
+
+| Cell | State |
+|------|-------|
+| Ordinary compound, left = noun, verb, adjective, name, special pronoun, closed root (`zodogaxavadal`, `zazawaxodogal`, `zamagoxodogal`, `zoyexabodel`) | def / gen (every full root can stand left; the last root is the kind) |
+| Ordinary compound, right = name or special pronoun (`zodogaxazawan`) | gen (**-n** names the whole) |
+| Ordinary compound on `/v/` `/ɡ/` `/h/` (`vodogaxavadal`) | gen (the slot is the whole word's) |
+| Ordinary compound with a role compound on the left or right (`zaxedehoxabodel`, `zodogaxaxowogal`) | rejected → E-54 for the right-hand case |
+| Role compound `a` / `e` / `u` / `o` and stacked vowels on `/z/` `/d/` `/b/` | def |
+| Role compound on `/ɡ/` (`gaxedehol`) | def (*is a teacher*) |
+| Role compound on `/v/` `/h/` `/th/` (`vaxedehol`, `haxedehol`) | none (C-24, rejected); `/x/` topic def after C-24 |
+| Role compound on `/y/` + **-n** (`yaxebezan`) | gen (a title, as `yagavon`) → E-57 docs gap |
+| Role compound on `/w/` | rejected (`/w/` takes no role compound) |
+| Role compound with **-l** / **-m** / **-n** / **-r** / **-x** | def (**-n** is a handle; **-x** plural, `zaxewalx`) |
+| Role compound over a name stem (`zaxazawan`); over a special pronoun with **-n** (`zaxamagon`) | gen (a name is any root + **-n**); C-25 for the pronoun |
+| Role compound over a lexicon compound stem (`zaxubugalahahal`) | def |
+| Role compound over an ordinary `x` compound stem (`zaxodogaxowogal`) | E-54 |
+| Role compound twice (`zaxaxedehol`) | rejected |
+| Role compound + label scope (`gaxedehothal`, `thul`) | E-55 |
+| Role compound + ability vowel (`gaxedehoxa…`) | def ([role ability](../grammar/intention.md#role-ability), `/ɡ/` only) |
+| Role pointer as the anchor of a viewpoint lateral (`gewezathaxar`) | rejected → by design (D-24) |
+| Viewpoint lateral anchor = special pronoun, name, content **-r**, content **-l** (`hewezathodogal`) | def / gen |
+| Label scope on `/ɡ/` `/z/` `/d/` `/b/` `/v/` `/h/` content roots | def |
+| Label scope on `/w/` `/th/` `/y/` | rejected (stated) |
+| Label scope on a name (`zazawathan`); on a special pronoun with **-n** (`zamagothan`) | gen; C-25 for the pronoun (`zamagothal` is *microphone*, def) |
+| Conversation length on a named citation or `/y/` name | def |
+| Name + `x` + vowel in a clause body (`zalahen zazawaxon varahal.`) | C-26 (reads as ability on a name) |
+| Ability on a `/z/` noun, name or pronoun (`zodogaxal`, `zamagoxan`) | C-26 (ability is stated on `/v/` and `/ɡ/` only) |
+
+### Rows
+
+#### E-54 — role compound over an ordinary compound stem (*dog walker*, *bookseller*, *truck driver*) · intuitive · P2
+
+- **Proposed reading:** the stem after the role vowel and **`x`** may itself be an ordinary `x` compound: `zaxodogaxowogal` is *a dog walker* (the doer of *dog-walking*), `zuxodogaxowogar` the dog walked. The compound inside is read as one event stem, exactly as a lexicon compound already is in `zaxubugalahahal`.
+- **Example:** `zaxodogaxowogal varahal.` — *A dog walker runs.* Today it is rejected (the parser reads a second `x` as another seam).
+- **Pattern:** `…axROOT…` with an `x` compound as ROOT; **-r** resumes the whole stem ([resume](../grammar/pronouns.md#resume-r)).
+- **Current route:** none as one word. `zodogaxowogal` is only the ordinary compound *dog walk*, a kind of walk. Otherwise two sentences with resume (`zazawan vowogal dodogal. zaxowogar …`), or the doer plus an of-relation (`zaxowogal gobom bodogal`), which says *walker, a part of the dog*.
+- **Better than current route:** yes. English builds *noun + agent* constantly (*taxi driver*, *wood cutter*, *bookseller*), and the left-to-right stack is already taught on the same page ([adding another piece](../grammar/x-compounds.md#ordinary-compound-order)).
+- **Conflicts and notes:** the first root after `ax` can never be a single vowel, so no collision with role pointers (`zaxar`). Role vowel stays left of the first `x`; a role compound is never the left piece of another compound (keep that rejected). The relation between the pieces is as vague as in English (*dog walker* is undergoer, *coffee maker* is result); the page should say so and point to `u` / `ao` for an exact job.
+- **Closes:** *dog walker*, *bookseller*, *wood cutter*, *taxi driver* (`find-english`: *dog walker*, *bookseller*, *maker*, *driver*, *wood cutter*; only unrelated hits)
+- **Recommendation:** adopt. Allow an ordinary compound as the stem of a role compound; teach it under [x-compounds § adding another piece](../grammar/x-compounds.md#ordinary-compound-order) and [roles](../grammar/roles.md#role-compounds); add *dog walker / bookseller* to say-people-places § agent nouns.
+- **Outcome:** adopted — a role compound's stem may be an ordinary compound; taught in roles § role compounds, x-compounds § adding another piece, and say-people-places § agent nouns; drills added.
+
+#### E-55 — label scope on a role compound (*a teacher this time*, *so-called teacher*) · intuitive · P2
+
+- **Proposed reading:** the scope seam goes on a role compound like any other content root: `gaxedehothal` *Alahen is a teacher (this time only)*, `gaxedehothel` *tends to act as a teacher*, `gaxedehothol balahen` *a teacher as far as Azawan is concerned*, `zaxedehothul` *a so-called teacher*.
+- **Example:** `zalahen gaxedehothal.` Today rejected.
+- **Pattern:** root + `th` + scope vowel + ending, with the role compound as the root.
+- **Current route:** none. The stem alone takes scope (`vedehothal` *taught this once*), but that scopes the teaching, not the occupation; *so-called teacher* has no route (a [mention](../grammar/spans.md#mention) quotes the word).
+- **Better than current route:** yes for *so-called doctor / expert* and *acting as a teacher this time*, both common. The scope page already says the vowel covers "how far a label reaches", and *teacher* is exactly a label that overreaches.
+- **Conflicts and notes:** no rival reading: after a non-sake root, `th` + vowel is only scope, and a lateral needs a direction root. A role compound can carry ability (`x` + vowel) or scope (`th` + vowel), never both, which keeps one seam per word. Scope on the stem inside the compound stays the event.
+- **Closes:** *so-called doctor*, *acted as the teacher this once* (`find-english`: *so-called*, *as a teacher*)
+- **Recommendation:** adopt. Add the role-compound host to label scope and one example for **`thu`** and **`tha`**; state the one-seam rule.
+- **Outcome:** adopted — label scope on a role compound (**one seam per word**, in place of the ability tail); taught in predication § label scope (*On a role compound*); drills added.
+
+#### E-56 — role compound on `/h/` for capacity (*as a teacher, …*) · forced · P2
+
+- **Proposed reading:** `haxedehol` as *in the capacity of a teacher*.
+- **Example:** `zamagon vezebal haxedehol.` parses today with no page behind it.
+- **Pattern:** `/h/` + role compound.
+- **Current route:** two sentences (`zamagon gaxedehol. zamagor …`) or `humum baxedehol` for *like a teacher* (the similative).
+- **Better than current route:** shorter, but `/h/` already means manner. A learner guessing `haxedehol` would as easily read *in a teacherly way*, which is the similative's job, so the form is **forced** and splits one job across two spellings.
+- **Closes:** *as a parent, I …* (`find-english`: *as a teacher*, *in the capacity of*, *acts as*, *serves as*)
+- **Recommendation:** decline; record in design-decisions. Give the two-sentence route a recipe row in say-people-places; reject `/h/` role compounds with a pointer (C-24).
+- **Outcome:** declined — D-34; *as a teacher* gets a two-sentence recipe row in say-people-places, and `/h/` role compounds are rejected (C-24).
+
+#### E-57 — calling someone by a role compound (*Doctor!*, *Driver!*, *Teacher!*) · intuitive but redundant · P2
+
+- **Proposed reading:** none new. `yaxebezan.` (*Doctor!*) and `yaxedehon vowogal.` already parse: the vocative's kind-as-title rule ([speech-moves § call someone](../grammar/speech-moves.md#vocative)) takes a role compound with **-n**, exactly as it takes `yagavon`.
+- **Current route:** the same string. The page's only kind-title example is a plain noun (`yagavon`), so a learner never sees that the common title nouns (*doctor*, *officer*, *driver*, *waiter*) are role compounds.
+- **Better than current route:** n/a; a docs gap, not a form.
+- **Closes:** *Waiter!*, *Doctor!*, *Officer!* (`find-english`: *waiter*, *doctor*)
+- **Recommendation:** adopt as a docs gap (as E-36, E-39, E-52): add `yaxebezan` to the vocative section and note the resume use (`yaxebezar` is not a call). No parser change.
+- **Outcome:** adopted as a docs gap — roles § role compounds names the `/y/` + **-n** / **-r** call; speech-moves § vocative points to it. No parser change.
+
+#### E-58 — role pointer as a lateral's facing anchor (*on the doer's left*) · intuitive but redundant · P3
+
+- **Proposed reading:** `gewezathaxar` as *on the left of whoever did the latest thing*.
+- **Current route:** name the party by whole-stem resume (`gewezathazawar`), which every lateral already takes. D-24 keeps pointers to `/z/` `/d/` `/b/` and holder slots, and a lateral's anchor is neither.
+- **Better than current route:** no; a pointer there is one letter shorter than a resume and gives up the stated rule.
+- **Closes:** nothing found (`find-english`: *left of the one who*, no entry).
+- **Recommendation:** decline; add to the D-24 list (the parser already rejects it).
+- **Outcome:** declined — added to D-24; the parser already rejects it.
+
+### Inconsistencies (wave 12)
+
+#### C-24 — role compounds parse on `/v/` `/h/` `/x/` `/th/` with no reading (`/x/` kept as a topic) · found in roles
+
+- **Where:** [roles](../grammar/roles.md#role-compounds), [unassigned-reserved § role compounds](unassigned-reserved.md#role-compounds), `src/parse/`
+- **Problem:** the page teaches `/z/` `/d/` `/b/` and (on predication) `/ɡ/`; unassigned-reserved lists `/v/` `/h/` `/w/` as *undefined*. The parser accepts `vaxedehol`, `haxedehol`, `xaxedehol` and `thaxedehol`, and only rejects `/w/`. `xaxedehol` does not even set a [topic](../grammar/pronouns.md#topic) (a following `zozan` is rejected), so it is a topic-shaped word with no topic. `/y/` + **-n** is a title (E-57) and stays.
+- **Suggested ruling:** reject a role compound outside `/z/` `/d/` `/b/` `/ɡ/` and `/y/` + **-n**, with a pointer to [roles](../grammar/roles.md#role-compounds); list `/x/` and `/th/` beside `/v/` / `/h/` in unassigned-reserved; record in design-decisions with E-56.
+- **Outcome:** fixed, narrowed by ruling — role compounds are rejected on `/v/` `/h/` `/w/` `/th/` (`roleCompoundSlot`) and on `/y/` except **-n** / **-r**; `/x/` is kept and the parser now treats a role compound as a topic word (introduce, and return by whole stem), taught in pronouns § topic. D-34. Every other `x` compound (ordinary compound, multipart name, numeric derivation) was then made a topic word the same way.
+
+#### C-25 — role compound and label scope accept a name or special pronoun · found in roles and predication
+
+- **Where:** [roles](../grammar/roles.md#role-compounds), [predication § label scope](../grammar/predication.md#label-scope), `src/parse/`
+- **Problem:** `zaxazawan`, `zaxamagon` (a doer of a person) and `zazawathal`, `zamagothal`, `zehodothal` (a scope on a name or pronoun) parse. A role compound names a role of an *event*, and a scope vowel covers a *label*; a name or pronoun is neither, and no page gives these readings. Every other root, including nouns used as stems (`zaxavol` *actor* from *theater*), stays allowed.
+- **Suggested ruling:** reject a name or special pronoun as the stem of a role compound, and as the host of a scope seam, with a pointer to the owning section. A paraphrase or mention covers *so-called Azawan*.
+- **Outcome:** fixed, narrowed — a special pronoun with **-n** is rejected as a role-compound stem (`roleCompoundStem`) and as a scope host (`labelScopeStem`). Its root on **-l** / **-m** is an ordinary word (`zamagothal` *a microphone, this time*) and stays allowed. A name is any root + **-n**, so names are not restricted: `zaxazawan` is a handle and `zazawathal` a scope on a root. D-34.
+
+#### C-26 — ability vowel accepted outside `/v/` and `/ɡ/`, and on names in a clause · found in x-compounds and intention
+
+- **Where:** [intention § ability](../grammar/intention.md#ability), [x-compounds § conversation length](../grammar/x-compounds.md#conversation-length), `src/parse/`
+- **Problem:** the ability page teaches `x` + vowel on `/v/` and `/ɡ/` (and role-ability on `/ɡ/`). The parser also accepts it on `/z/` nouns, names and pronouns (`zodogaxal`, `zamagoxan`) and on `/h/`, with no reading. A name + `x` + vowel + **-n** inside a clause (`zalahen zazawaxon varahal.`) reads as ability on a name, though the same shape is a conversation-length bid only on a named citation or `/y/`.
+- **Suggested ruling:** reject ability outside `/v/` and `/ɡ/`; reject name + `x` + vowel + **-n** except as a citation or under `/y/`, pointing to [conversation length](../grammar/x-compounds.md#conversation-length). State the limit once on intention.md and record in design-decisions.
+- **Outcome:** fixed — ability is rejected outside `/v/` and `/ɡ/` (the hostless `eze` aside), and name + `x` + vowel + **-n** is rejected in a clause body (`abilitySlot`); it stays a conversation-length bid as a citation or a `/y/` call. Stated in intention § ability and x-compounds § conversation length. D-34.
+
+### None (to add to unassigned-reserved, if the rows above are declined)
+
+- A role compound on `/v/` `/h/` `/th/` and `/w/` (C-24, E-56); `/x/` is a topic word.
+- A role pointer as a lateral's facing anchor (E-58).
+- A role compound as the left piece of an ordinary compound (`zaxedehoxabodel`); *noun + agent* goes through E-54 instead.
+- A role compound twice in one word (`zaxaxedehol`).
+- Label scope or a role compound on a special pronoun with **-n** (C-25); ability on a noun, name or pronoun (C-26).
+
+Confirmed **def** with nothing to add: left-hand pieces of an ordinary compound at every type; role compounds with **-l** / **-m** / **-n** / **-r** / **-x**; role compounds over lexicon compound stems; stacked role vowels (`ae` `ao` `oe` `ua` `uo` `ue`) on `/z/` `/d/` `/b/` and `/ɡ/`; viewpoint laterals with a special pronoun, name, content **-r** or content **-l** anchor; label scope on content roots at `/ɡ/` `/z/` `/d/` `/b/` `/v/` `/h/`; conversation length on a named citation and under `/y/`.
 
 ## Inconsistencies
 

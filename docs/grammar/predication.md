@@ -354,7 +354,7 @@ A label with no scope vowel says nothing about how far it reaches. Use one when 
 | **`tho`** | true in one relationship: relative to the hosted `/b/` right after it, or to an unstated party | *a stranger to Azawan*, *lying, as far as Alahen is concerned* | **o** ≈ one (that extra one) |
 | **`thu`** | a name only: a tag for what happens, not an explanation of it | *what gets called anxiety*, *so-called lazy* | **u** ≈ undo (undo the implied cause) |
 
-The seam goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`. The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead.
+The seam goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`, on a content root or a [role compound](#scope-role). It labels a content word, so a [special pronoun](pronouns.md#special-pronouns) with **-n** takes none (its root on **-l** is an ordinary word, `zamagothal` *a microphone, this time*). The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead.
 
 #### This occasion (`tha`) {#scope-occasion}
 
@@ -402,6 +402,24 @@ With no `/b/`, the party is unstated: *a stranger (to someone)*.
 
 **Compare with:** **-n** makes a proper name, and a [paraphrase span](spans.md) quotes someone's wording. **`thu`** keeps the ordinary word and marks it as a label that explains nothing.
 
+#### On a role compound {#scope-role}
+
+A [role compound](roles.md#role-compounds) takes the same seam after its stem, which scopes the role, not the act. `gaxedehothal` says someone is a teacher this time, and `gaxedehothel` that they tend to act as one. **`thu`** is *so-called*, and **`tho`** takes its `/b/` like any other `/ɡ/`.
+
+> `zalahen gaxedehothal.`
+>
+> z-Alahen | g-agent-x-teach-th-once
+>
+> "Alahen is a teacher this time."
+
+> `zaxedehothul varahal.`
+>
+> z-agent-x-teach-th-name-only | v-run
+>
+> "A so-called teacher runs."
+
+A role compound carries one seam, so it takes this scope or the [ability](intention.md#role-ability) vowel, not both. Scope on the stem alone (`vedehothal`) scopes the teaching.
+
 **Compare with:** on an arrow root, [**`tho`** + `/b/`](roles.md#landmark-facing) is the landmark's own facing (*behind the house*): the direction relative to that landmark.
 
 ### Translation practice {#intermediate-translation-practice}
@@ -430,6 +448,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *anxious* | `anagol` |
 | *lie* | `alahal` |
 | *strangeness* | `elehom` |
+| *teach* | `edehol` |
+| *run* | `arahal` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -527,6 +547,14 @@ z-guard | [v-lie-th-relative | b-Alahen]
 `zahaben ganagothul.`
 
 z-Ahaben | g-anxious-th-name-only
+:::
+
+**13.** *Alahen is a teacher this time.*
+
+::: details Show answer
+`zalahen gaxedehothal.`
+
+z-Alahen | g-agent-x-teach-th-once
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
@@ -628,6 +656,15 @@ z-Alahen | g-angry-th-pattern
 z-Azawan | v-lie-th-once
 
 *Azawan lied this once.*
+:::
+
+**12.** `zaxedehothul varahal.`
+
+::: details Show answer
+
+z-agent-x-teach-th-name-only | v-run
+
+*A so-called teacher runs.*
 :::
 
 **12.** `zagavol ganagothul.`

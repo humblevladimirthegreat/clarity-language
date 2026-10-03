@@ -21,6 +21,16 @@ The last letter is the ordinary [reference ending](word-endings.md): **-l** take
 
 When the event is a conventional compound, the role compound takes the whole stem: `zaxubugalahahal` is *a reader*, from `ubugalahahal` *read*.
 
+A noun that specifies the event goes in the same stem, joined with **`x`** like any [ordinary compound](x-compounds.md#ordinary-compound-order): `zaxodogaxowogal` is *a dog walker* (the doer of *dog-walking*). The noun's part in the event is as open as in English (*dog walker*, *coffee maker*); for an exact part, use a [hook](hooks.md#extra-noun) or a second sentence. **-r** resumes the whole stem.
+
+> `zaxodogaxowogal varahal.`
+>
+> z-agent-x-dog-x-walk | v-run
+>
+> "A dog walker runs."
+
+A role compound has one role vowel, left of the first **`x`**. It is never one piece of another compound.
+
 **Compare with:** a teacher puts the role vowel **left** of **`x`**. Later, [ability](intention.md#ability) (*can teach*) puts a vowel **right** of **`x`**, and the two can combine.
 
 ### This instance (`-r`)
@@ -117,6 +127,8 @@ Some stems name a **relation** (who is bound to whom), not an action. The extra 
 | `…uxROOT…` | names the undergoer of an event | *someone seen* (kind) / *the one seen* (this seeing) | **u** ≈ undo (the one it happens to) |
 | `…oxROOT…` | names the extra `/b/` party | *an addressee* / *the one told* | **o** ≈ one (that extra one) |
 
+A role compound fills `/z/`, `/d/`, `/b/`, or `/ɡ/`. Under `/x/` it sets a [topic](pronouns.md#topic), as any compound does (`xaxedehol` *now, about teachers*), and under `/y/` with **-n** or **-r** it calls someone (`yaxebezan` calls the doctor). It names a role of an event, so a [special pronoun](pronouns.md#special-pronouns) (root + **-n**) is never its stem; the same root on **-l** is an ordinary word.
+
 Non-resume is the **kind** (occupation, usual scene, usual undergoer). **-r** looks back to the latest verb, event noun, or relation with that whole stem (including a stem already inside a role compound) and names **this instance**. The vowel still picks which part you mean: doer, scene, undergoer, or extra `/b/` party.
 
 ### Without the stem: role pointers {#role-pointers-family}
@@ -205,6 +217,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *fight* | `avadal` | |
 | *run* | `arahal` | |
 | *bond* | `anam` | `anal` *knot* |
+| *dog* | `odogal` | |
+| *walk* | `owogal` | |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
@@ -282,6 +296,14 @@ z-Azawan | [g-bond | b-Alahen] . z-←recipient-x-bond | v-fight
 z-Azawan | v-sleep | [at | b-construction] . z-Alahen | d-←scene.same | v-see
 :::
 
+**10.** *A dog walker sees Azawan.*
+
+::: details Show answer
+`zaxodogaxowogal zazawan vahahal.`
+
+z-agent-x-dog-x-walk | z-Azawan | v-see
+:::
+
 #### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zalahen dexezebal vahahal.`
@@ -354,6 +376,15 @@ z-Azawan | v-tell . z-←recipient-x-tell | v-run
 z-Ahaben | [g-bond | b-Alahen] . z-←recipient-x-bond | v-punch
 
 *Ahaben is bound to Alahen. That other party of the bond punches.*
+:::
+
+**9.** `zaxodogaxowogal vehahel.`
+
+::: details Show answer
+
+z-agent-x-dog-x-walk | v-sit
+
+*A dog walker sits.*
 :::
 
 ## Intermediate {#intermediate}

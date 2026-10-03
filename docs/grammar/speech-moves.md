@@ -20,7 +20,7 @@ To call someone into the turn, put `/y/` before their name, which ends in **-n**
 >
 > "Alahen!" (calling Alahen)
 
-To call someone by what they are (*Waiter!*, *Doctor!*), use the kind as a title: it still ends in **-n**, so `yagavon` calls the guard.
+To call someone by what they are (*Waiter!*, *Doctor!*), use the kind as a title: it still ends in **-n**, so `yagavon` calls the guard. An occupation title is a [role compound](roles.md#role-compounds) with **-n**.
 
 **Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`SELFn.`). Calling Alahen uses `/y/`; saying Alahen walks uses `/z/` (`zazawan vowogal`).
 

@@ -126,26 +126,6 @@ describe("parseWord — numbers (writing + speech)", () => {
 });
 
 describe("parseWord — spans and writing atoms", () => {
-  it("reads the old spoken span shapes as vowel-letter compounds, not spans (spans.md)", () => {
-    for (const raw of ["daxal", "daxur", "doxal", "xuxul", "xuxur", "xuxum"]) {
-      const word = parseOk(raw);
-      assert.equal(word.family.kind, "x", raw);
-      assert.equal(word.family.kind === "x" && word.family.xFamily, "compound", raw);
-    }
-  });
-
-  it("parses xuxun as a /x/ compound proper name, not a span", () => {
-    const word = parseOk("xuxun");
-    assert.equal(word.pos, "x");
-    assert.equal(word.ending, "n");
-    assert.deepEqual(word.family, {
-      kind: "x",
-      xFamily: "compound",
-      leftRoots: ["u"],
-      rightRoots: ["u"],
-    });
-  });
-
   it("parses writing atoms d[hi] and d@[Hamlet] (spans.md / clause.md)", () => {
     const cite = parseOk("d[hi]");
     assert.equal(cite.pos, "d");

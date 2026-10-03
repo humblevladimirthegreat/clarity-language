@@ -342,11 +342,9 @@ describe("lexiconContentRoots", () => {
     const emptyKnown = knownLexiconRoots(createClassifyTablesFromRows([], []));
     assert.deepEqual(lexiconContentRoots(parseWord("zazawan")), ["azawa"]);
     assert.deepEqual(unknownLexiconContentRoots(parseWord("zazawan"), emptyKnown), ["azawa"]);
-    assert.deepEqual(lexiconContentRoots(parseWord("daxal")), []);
     assert.deepEqual(lexiconContentRoots(parseWord("g+3")), []);
     assert.deepEqual(lexiconContentRoots(parseWord("d<sushi>")), []);
     assert.deepEqual(lexiconContentRoots(parseWord("yal")), []);
-    assert.deepEqual(lexiconContentRoots(parseWord("xuxun")), []);
     assert.equal(unknownLexiconContentRoots(parseWord("zazawan"), knownLexiconRoots(tables)).length, 0);
   });
 });

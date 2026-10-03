@@ -276,6 +276,8 @@ When English stacks labels left to right (*crush* then *love*; a shop name with 
 
 [Multipart names](word-endings.md#phrasal-proper-names) use the same order (given name, then family, then a further title). [Body left / right](roles.md#viewpoint-laterals) is not this stack: it joins the direction and whose facing counts with **`th`** (`gewezathazawan`), because the second root is a point of view, not a kind.
 
+A [role compound](roles.md#role-compounds) can take such a stack as its stem (`zaxodogaxowogal` *a dog walker*), but is never one piece of a stack.
+
 **Compare with:** a short office **handle** is one root plus [**-n**](word-endings.md#proper-name--n), not this stack. A dictionary compound is one listed word, not a live list you extend.
 
 ### Which family is this?
@@ -332,7 +334,7 @@ At arrival, the other person can answer with their own bid. The **lesser** bid s
 >
 > "Alahen — one slot." (the talk lasts for one ask)
 
-**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [need](sakes.md) takes **`th`** + vowel instead (`gulothal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**.
+**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [need](sakes.md) takes **`th`** + vowel instead (`gulothal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**. In a clause body, a name with **`x`**, a vowel, and **-n** is not a word.
 
 **Compare with:** a plain named citation with a period is the basic hello (`SELFn.`). The bid says how much conversation the person is open to.
 

@@ -242,6 +242,10 @@ English names a person by what they do (*a singer*, *a manager*). Agazan builds 
 
 The one acted on uses **`u`** instead: `zuxenehel` is *a victim* (the one harmed). A plural audience or staff takes plural **-x** (`zaxewalx`).
 
+A noun that specifies the job goes in the stem: `zaxodogaxowogal` is *a dog walker*. The noun's part in the job is as open as in English.
+
+English *as a teacher, I …* has no one-word form (`/h/` already means manner). Say the role, then the claim (`zamagon gaxedehol. zamagor vezebel.`), or use the [similative](relations.md#similative) for *like a teacher* (`humum baxedehol`).
+
 *Shareholder* is *owner* of a part: `zaxegabem gobom bahazal` (owner of a part of the house). *Colleague* is a worker tied to you: `zaxozewel gohoham bamagon`. *Relative* is a person who is part of the family: `zobel gobom bavahal`.
 
 **Compare with:** for *boss* or *chief*, the tie form names whom they lead: `zalahen gagayem bazawan` is *Alahen is Azawan's boss* ([social relations](relations.md#social-relations)).

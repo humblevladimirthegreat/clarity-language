@@ -158,7 +158,7 @@ function isNumberAnaphor(word: LexWord): boolean {
 }
 
 /** Special pronouns name conversation roles, not people, so they take no number. */
-const ROLE_PRONOUN_ROOTS = new Set([CLOSED.microphone, CLOSED.headphones, CLOSED.handshake, CLOSED.neutral]);
+export const ROLE_PRONOUN_ROOTS = new Set([CLOSED.microphone, CLOSED.headphones, CLOSED.handshake, CLOSED.neutral]);
 
 function isNounSlot(word: LexWord): boolean {
   return word.pos === "z" || word.pos === "d" || word.pos === "b";

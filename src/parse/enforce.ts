@@ -11,9 +11,9 @@ import type { IToken } from "chevrotain";
 import type { ClassifyTables } from "./classify.js";
 import { ARROW_ROOTS, isAsOfOverlay, isBarStance, isFrameStance, isGroundsChannel, isStandIn } from "./classify.js";
 import { REJECTIONS, type RejectionId } from "./constructions.js";
-import { isTopicSpan, linkerEnglish } from "./linkers.js";
+import { isTopicCompound, isTopicSpan, linkerEnglish } from "./linkers.js";
 import { CLOSED } from "../closed-roots.js";
-import { isGenericPronoun, ordinalPronounPlace } from "./resolve.js";
+import { isGenericPronoun, ordinalPronounPlace, ROLE_PRONOUN_ROOTS } from "./resolve.js";
 import { parseHookCompoundCite } from "./hook-compounds.js";
 import type { HookJob } from "./hook-jobs.js";
 import { SentenceParseError } from "./sentence-parser.js";
@@ -67,6 +67,10 @@ const NO_PLURAL_POS = new Set(["w", "h", "th", "x"]);
 const SAKE_POS = new Set(["g", "th", "w"]);
 /** Label scope goes on content slots (predication.md#label-scope). */
 const SCOPE_POS = new Set(["g", "z", "d", "b", "v", "h"]);
+/** A role compound names a participant (roles.md#role-compounds); `/y/` takes it only as a call (-n / -r). */
+const ROLE_COMPOUND_POS = new Set(["z", "d", "b", "g", "x", "y"]);
+/** Ability goes on a verb or a property (intention.md#ability). */
+const ABILITY_POS = new Set(["g", "v"]);
 
 function series(word: LexWord | undefined): string | undefined {
   return word?.family.kind === "joinMarker" ? word.family.series : undefined;
@@ -260,7 +264,7 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   // A holder names people, so it takes -x like any noun (`thodumazawanx`, knowing.md#holder).
   const holder = word.family.kind === "x" && word.family.xFamily === "holder";
   // A topic word is a noun, so it takes -x like one (`xazawanx`, pronouns.md#topic-groups); a published linker does not.
-  const topic = word.pos === "x" && word.family.kind === "content" && !linkerEnglish(word);
+  const topic = word.pos === "x" && (word.family.kind === "content" || isTopicCompound(word)) && !linkerEnglish(word);
   if (word.plural && word.pos && NO_PLURAL_POS.has(word.pos) && !holder && !topic) {
     throw new ConstructionError("pluralOnPos", word.raw);
   }
@@ -302,6 +306,21 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   if (family.kind === "x" && family.xFamily === "scope") {
     if (word.pos && !SCOPE_POS.has(word.pos)) throw new ConstructionError("labelScopeSlot", word.raw);
     if (family.leftRoots.some((root) => ARROW_ROOTS.has(root))) throw new ConstructionError("labelScopeArrow", word.raw);
+    if (word.ending === "n" && family.leftRoots.some((root) => ROLE_PRONOUN_ROOTS.has(root))) throw new ConstructionError("labelScopeStem", word.raw);
+  }
+  if (family.kind === "x" && family.xFamily === "role" && !word.overlay) {
+    const callEnding = word.ending === "n" || word.ending === "r";
+    if (word.pos && (!ROLE_COMPOUND_POS.has(word.pos) || (word.pos === "y" && !callEnding))) {
+      throw new ConstructionError("roleCompoundSlot", word.raw);
+    }
+    if (word.ending === "n" && (family.rightRoots ?? []).some((root) => ROLE_PRONOUN_ROOTS.has(root))) {
+      throw new ConstructionError("roleCompoundStem", word.raw);
+    }
+    if (family.scopeVowel && word.pos && !SCOPE_POS.has(word.pos)) throw new ConstructionError("labelScopeSlot", word.raw);
+  }
+  if (family.kind === "x" && family.xFamily === "ability" && word.reading === "ability" && word.pos) {
+    const hostless = tables.hostlessAbilityRoot !== null && family.leftRoots[0] === tables.hostlessAbilityRoot;
+    if (!ABILITY_POS.has(word.pos) && !hostless) throw new ConstructionError("abilitySlot", word.raw);
   }
 }
 

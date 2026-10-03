@@ -2,6 +2,7 @@ import { createToken, type IToken, Lexer } from "chevrotain";
 
 import type { LexWord, PunctKind } from "./types.js";
 import { isStandIn } from "./classify.js";
+import { isTopicCompound } from "./linkers.js";
 
 /** Non-word surface atoms peeled before Peggy. */
 export type SurfaceAtom =
@@ -118,7 +119,7 @@ function isPolarWord(word: LexWord): boolean {
 }
 
 function isLinkerWord(word: LexWord): boolean {
-  return word.pos === "x" && word.family.kind === "content";
+  return word.pos === "x" && (word.family.kind === "content" || isTopicCompound(word));
 }
 
 /** Which `classifyTokenBranch` rule assigned a word its token class (construction registry key). */

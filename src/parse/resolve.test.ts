@@ -239,6 +239,16 @@ describe("resolve — topic (pronouns.md#topic)", () => {
     assert.deepEqual(ordinals(text), ["zrewor→dalahen"]);
   });
 
+  it("takes a role compound as the topic, and returns to it by whole stem", () => {
+    assert.deepEqual(topics("xaxedehol zazawan dozan vahahal. zozan varahal."), ["dozan→xaxedehol", "zozan→xaxedehol"]);
+    assert.deepEqual(topics("xaxedehol. xazawan. xaxedehor. zozan varahal."), ["zozan→xaxedehor"]);
+  });
+
+  it("takes any compound as the topic", () => {
+    assert.deepEqual(topics("xebeyaxabodel zazawan dozan vahahal. zozan varahal."), ["dozan→xebeyaxabodel", "zozan→xebeyaxabodel"]);
+    assert.deepEqual(topics("xazawaxalahen. zozan varahal."), ["zozan→xazawaxalahen"]);
+  });
+
   it("takes a kind as the topic, and a name inside the stretch gets no number", () => {
     assert.deepEqual(topics("xodogal zazawan dozan vahahal. zozan varahal."), ["dozan→xodogal", "zozan→xodogal"]);
     assert.deepEqual(ordinals("xazawan zazawan vowogal. zalahen varahal. zrewor vehahel."), ["zrewor→zalahen"]);

@@ -546,21 +546,28 @@ RolePointer
       };
     }
 
-// Optional ability tail (`x` + stance vowel) on `/ɡ/` only: *fit to be* that role (intention.md § Ability).
+// The stem may itself be an ordinary compound (`zaxodogaxowogal` *dog walker*, roles.md#role-compounds).
+// Optional tail: ability (`x` + stance vowel) on `/ɡ/` only (*fit to be* that role, intention.md § Ability),
+// or label scope (`th` + scope vowel, predication.md#label-scope); one seam per word.
 RoleCompound
-  = roleV:("ae" / "ao" / "oe" / "ua" / "ue" / "uo" / "a" / "e" / "u" / "o") "x" root:ContentRoot ability:("x" v:[aeou] { return v; })? ending:Ending plural:PluralSuffix? WordEnd {
+  = roleV:("ae" / "ao" / "oe" / "ua" / "ue" / "uo" / "a" / "e" / "u" / "o") "x" root:ContentRoot rest:("x" r:ContentRoot { return r; })* tail:RoleTail? ending:Ending plural:PluralSuffix? WordEnd {
       const fields = {
         leftRoots: [],
         roleVowel: roleV,
-        rightRoots: [root],
+        rightRoots: [root, ...rest],
       };
-      if (ability) fields.stanceVowel = ability;
+      if (tail && tail.ability) fields.stanceVowel = tail.ability;
+      if (tail && tail.scope) fields.scopeVowel = tail.scope;
       return {
         ending,
         plural: !!plural,
         family: xFamily("role", fields),
       };
     }
+
+RoleTail
+  = "x" v:[aeou] { return { ability: v }; }
+  / "th" v:[aeou] { return { scope: v }; }
 
 // Sakes: sake root + `th` + stance vowel (sakes.md); optional emotion
 // tail = horizon letter + locus hook vowel(s), then the motion ending (sakes.md#emotion-compose).

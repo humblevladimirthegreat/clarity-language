@@ -79,6 +79,8 @@ export type MorphWordFamily =
       pointerVowel?: PointerVowel;
       /** Values / label-scope / ability stance vowel (also role + ability on `/ɡ/`). */
       stanceVowel?: "a" | "e" | "o" | "u";
+      /** Role compound + label scope (`gaxedehothal`): the scope vowel; predication.md#label-scope. */
+      scopeVowel?: "a" | "e" | "o" | "u";
       /** Emotion compose: sake horizon letter moved mid-word (sakes.md#emotion-compose). */
       horizon?: "l" | "m" | "r";
       /** Emotion compose locus: hook vowel(s) for placement or direction (sakes.md#emotion-compose). */

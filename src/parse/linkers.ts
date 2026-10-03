@@ -20,6 +20,13 @@ export const LINKER_ENGLISH: Record<string, string> = {
 };
 
 /** English tag of a published linker, or undefined when this `/x/` word is not one. */
+/** An `x` compound (role compound, ordinary compound, numeric derivation) used as a topic word. */
+export function isTopicCompound(word: LexWord): boolean {
+  const family = word.family;
+  if (word.pos !== "x" || family.kind !== "x" || word.overlay) return false;
+  return family.xFamily === "role" || family.xFamily === "compound" || family.xFamily === "numeric";
+}
+
 export function linkerEnglish(word: LexWord): string | undefined {
   if (word.pos !== "x" || word.family.kind !== "content" || word.family.roots.length !== 1) return undefined;
   return LINKER_ENGLISH[word.family.roots[0]! + word.ending];
@@ -45,6 +52,8 @@ export function isTopicSpan(word: LexWord): boolean {
 export function topicEffect(word: LexWord): TopicEffect {
   if (word.pos !== "x") return "none";
   if (isTopicSpan(word)) return "introduce";
+  // A role compound or any other `x` compound is an ordinary noun, so it sets a topic like one (`xaxedehol`, pronouns.md#topic).
+  if (isTopicCompound(word)) return word.ending === "r" ? "return" : "introduce";
   if (word.family.kind !== "content") return "none";
   const root = word.family.roots.length === 1 ? word.family.roots[0]! : undefined;
   if (root !== undefined && CLEARING_LINKERS.has(root + word.ending)) return "clear";

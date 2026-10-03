@@ -82,6 +82,7 @@ Owns every **string-shaped** subsystem:
 - PoS prefix, left-bound **`gl-`**, reference ending, optional **-x**
 - Foreign `PoS<…>ENDING` / opaque `PoS<…>` (no phonology inside `<>`)
 - Free number words and writing shorthand ([numbers.md](../grammar/numbers.md))
+- Role compounds take an ordinary-compound stem and one tail: ability (`/ɡ/` only) or label scope; `enforce` limits them to `/z/` `/d/` `/b/` `/ɡ/`, `/x/` (a topic word) and `/y/` + **-n** / **-r**
 - Mid-word **`x`** families: rule alternation order = doc decision order (role → conversation length name+vowel+**-n` (citation or `/y/`) → value/ability → numeric → ordinary compound)
 - Writing bracket atoms (`d@[…]`, `th(…)`, `d<…>`); a span has no spoken word shape
 - Prefix-less [hooks](../grammar/hooks.md)

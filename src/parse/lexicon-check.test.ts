@@ -20,6 +20,10 @@ describe("unknownWords", () => {
     assert.deepEqual(unknownWords(parse("zaxubugalahahal varadal.")), []);
   });
 
+  it("does not report a role compound on an ordinary compound of listed roots", () => {
+    assert.deepEqual(unknownWords(parse("zaxodogaxowogal varadal.")), []);
+  });
+
   it("still reports a role compound on an unlisted compound stem", () => {
     const words = unknownWords(parse("zaxagulahazal varadal."));
     assert.equal(words.length, 1);

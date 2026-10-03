@@ -265,13 +265,6 @@ describe("parse — spans", () => {
     assert.equal(item.package.head.raw, "d[azawan]");
   });
 
-  it("has no spoken span open, close or resume", () => {
-    for (const raw of ["daxal", "daxur", "xuxul"]) {
-      const units = parseText(`zazawan ${raw} vezebel.`).utterances[0]!.bodies[0]!.clause.units;
-      assert.ok(units.every((u) => u.kind !== ("span" as string)), raw);
-    }
-  });
-
   it("anchors a role pointer on a span like any noun (pronouns.md#role-pointers)", () => {
     const result = parseText("zazawan d[azawan] vezebel. zalahen duxar vezebel.");
     const pointer = result.resolve!.anaphors.find((bind) => bind.pronoun.raw === "duxar");

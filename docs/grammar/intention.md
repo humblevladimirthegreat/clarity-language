@@ -216,7 +216,7 @@ English *can* and *can't* usually sit in front of the verb (*can sing*, *can't s
 #### Can (`xa`)
 <a id="can"></a>
 
-To say someone **can** do something you name with one verb (*sing*, *walk*), or **can** have a quality you name with one adjective, keep that verb or adjective. After the root, add **`x`** and **`a`**, then the usual ending. Keep the first letter the same: `/v/` for an action, `/ɡ/` for a quality. You do not need a separate helping verb like English *can*. If you are not talking about ability, leave the word ordinary. (Cue: **a** ≈ add — capability is in)
+To say someone **can** do something you name with one verb (*sing*, *walk*), or **can** have a quality you name with one adjective, keep that verb or adjective. After the root, add **`x`** and **`a`**, then the usual ending. Keep the first letter the same: `/v/` for an action, `/ɡ/` for a quality. You do not need a separate helping verb like English *can*. If you are not talking about ability, leave the word ordinary. Ability goes on `/v/` and `/ɡ/` only (the hostless root of [when there is no single verb](#ability-fallback) aside); a noun, name, or `/h/` takes none. (Cue: **a** ≈ add — capability is in)
 
 > `zazawan vezehexal.`
 >

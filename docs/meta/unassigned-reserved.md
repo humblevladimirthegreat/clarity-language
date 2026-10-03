@@ -136,7 +136,10 @@ Source: [roles.md](../grammar/roles.md), [x-compounds.md](../grammar/x-compounds
 
 | Slot | Status |
 |------|--------|
-| PoS `/v/` / `/h/` / `/w/` on role compounds | Undefined — prefer `/z/` `/d/` `/b/`; `/ɡ/` optional |
+| PoS `/v/` / `/h/` / `/w/` / `/th/` on role compounds | None — the parser rejects them (`roleCompoundSlot`, D-34); `/z/` `/d/` `/b/` `/ɡ/`, `/x/` as a topic and `/y/` + **-n** / **-r** as a call are the slots |
+| A role compound as a piece of an ordinary compound, or two role vowels in a word | None — *noun + agent* is the role compound's stem (`zaxodogaxowogal`) |
+| A special pronoun (root + **-n**) as a role-compound stem or a label-scope host | None — rejected (`roleCompoundStem`, `labelScopeStem`) |
+| Ability (`x` + vowel) on a `/z/` / `/d/` / `/b/` noun, a name, a pronoun, or `/h/`; name + `x` + vowel + **-n** in a clause body | None — rejected (`abilitySlot`); the name shape is a conversation-length bid only as a citation or a `/y/` call |
 | [Role pointers](../grammar/pronouns.md#role-pointers) on `/v/` / `/ɡ/` / `/h/` / `/w/` / `/y/` / `/x/` | Undefined (rejected by the parser; D-24) — for *does so* / *such*, use whole-stem **-r**; to call or return to someone, name the stem |
 | Pointer vowel **`u`** | Not a pointer: after one role vowel, vowel **`x`** **`u`** + **-r** is an ordinary vowel-letter compound |
 
@@ -147,6 +150,7 @@ Source: [pronouns.md](../grammar/pronouns.md), [plurality.md](../grammar/plurali
 - Ordinal pronouns on `/y/` (`yredur`): rejected; call by name.
 - **-x** on `/h/` / `/w/` / `/th/` and the six linkers, and on `unan` (use `obelx` for *some people*).
 - Topic words `xunan`, `xozan`, `xozar`, and the resume `zozar`.
+- A role pointer as a viewpoint lateral's facing anchor (`gewezathaxar`): name the anchor by its stem or a resume.
 
 ## Identity (`SAME`)
 

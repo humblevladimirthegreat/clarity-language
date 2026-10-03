@@ -385,7 +385,11 @@ export function senseLabel(
     word.family.kind === "x" && (word.family.xFamily === "sake" || word.family.xFamily === "scope" || word.family.xFamily === "lateral")
       ? "-th-"
       : "-x-";
-  const body = sensePieces(word, tables, ctx).join(hinge);
+  let body = sensePieces(word, tables, ctx).join(hinge);
+  // Role compound + label scope: the role and stem join with `-x-`, then the scope hinge (`agent-x-teach-th-once`).
+  if (word.family.kind === "x" && word.family.xFamily === "role" && word.family.scopeVowel) {
+    body += `-th-${SCOPE_VOWEL[word.family.scopeVowel] ?? "scope"}`;
+  }
   if (word.plural) return body ? `${body}-x` : "-x";
   return body;
 }
