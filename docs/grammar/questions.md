@@ -401,7 +401,7 @@ Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), 
 
 #### Three endings {#polar-endings}
 
-Each stance takes three endings, on the same strong-to-light scale as elsewhere. **-l** holds the stance firmly. **-m** is the soft twin. **-r** marks a stance you hold only **for now**: provisional, and you expect to revisit it.
+Each stance takes three endings, on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). **-l** holds the stance firmly. **-m** is the soft twin. **-r** marks a stance you hold only **for now**: provisional, and you expect to revisit it.
 
 | | **-l** firm | **-m** soft | **-r** for now |
 |--|-------------|-------------|--------------------|

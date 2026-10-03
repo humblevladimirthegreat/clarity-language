@@ -105,7 +105,7 @@ Only the six standard stacks exist (`ao` `ua` `uo` `ae` `oe` `ue`). A reversed o
 
 ### Closed-root endings
 
-- **-r on a closed root** is the family's own **-r** where it defines one (a strong-to-light grade, or the *because* share). Everywhere else it is the whole-stem resume (`thoyer` *in that case*), so giving such a family an **-r** grade would take away a live reading.
+- **-r on a closed root** is the family's own **-r** where it defines one (a settled-to-passing grade, or the *because* share). Everywhere else it is the whole-stem resume (`thoyer` *in that case*), so giving such a family an **-r** grade would take away a live reading.
 - **-n on a mood root** is an ordinary proper name. There is no named-mood overlay.
 - **-n on `/y/`** calls someone, so the act and polar series have no named-formula interjection.
 - **-r on the act series** is the *for now* act (`yar` *as things stand*), so no `/y/` word is a fill-ask blank for the act itself (*are you asking or telling?*).

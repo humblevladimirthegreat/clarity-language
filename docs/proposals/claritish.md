@@ -31,7 +31,7 @@ The full language takes a long time before it pays off. Most of Agazan's psychol
 5. **Tone marks** go before what they color, as in Agazan: `%` before a word, or a free-standing `%` before the rest of the sentence. Agazan `!` / `!!` also go *before* what they color. A sentence-final English `!` is still English punctuation.
 6. **English punctuation stays English.** Sentences don't have to end in an Agazan period.
 
-**-l / -m / -r** on stance drop-ins grade **how fixed** the stance is, on one scale in every lesson: **-l** is locked in, **-m** is the default, and **-r** holds only right now. Lessons teach the cue *-l ≈ locked, -r ≈ right now* and point out each time the scale comes back. These endings are never the citation split between a concrete picture and a published abstract.
+**-l / -m / -r** on stance drop-ins grade the stance on the **settled-to-passing** scale in most lessons: **-l** is the most settled, **-m** is the default, and **-r** the most passing. Lessons teach the cue *-l ≈ lasting, -r ≈ right now* and point out each time the scale comes back. Lesson 6 grades the source instead (*l ≈ law, m ≈ mouth, r ≈ read the room*). These endings are never the citation split between a concrete picture and a published abstract.
 
 ## Where it lives
 
@@ -81,7 +81,7 @@ Follow the lessons in order. Each one is a single page with: the gap in English,
 > I left the stove on thovul.  
 > The flight's delayed thovum.
 
-**Why here:** it's the clearest rationality win, and it introduces the **-l / -m / -r** endings as **how fixed** your stance is: **-l** locked in (you'll settle it), **-m** the default, **-r** only right now (a passing thought). Teach the cue *-l ≈ locked, -r ≈ right now* here. **Source** (editors): [MAY](../grammar/knowing.md#may).
+**Why here:** it's the clearest rationality win, and it introduces the **-l / -m / -r** endings on the **settled-to-passing** scale: **-l** the most settled (you'll settle it), **-m** the default, **-r** the most passing (a passing thought, right now only). Teach the cue *-l ≈ lasting, -r ≈ right now* here. **Source** (editors): [MAY](../grammar/knowing.md#may).
 
 ### Lesson 3: How do you know?
 
@@ -106,7 +106,7 @@ The ending swap is the payoff: **-l** strong evidence, **-m** default, **-r** we
 > I locked the door thevor.  
 > This bug is in the parser thunem, thovum.
 
-The last example shows that how you know and *could be* are separate. **Why here:** the endings from Lesson 2 come back on the same how-fixed scale (solid evidence is locked in; a rumor could shift any moment), so the system starts to feel learnable. **Source** (editors): [evidentiality](../grammar/knowing.md#evidentiality), [evidence strength](../grammar/knowing.md#evidence-strength).
+The last example shows that how you know and *could be* are separate. **Why here:** the endings from Lesson 2 come back on the same settled-to-passing scale (solid evidence is lasting; a rumor could shift any moment), so the system starts to feel learnable. **Source** (editors): [evidentiality](../grammar/knowing.md#evidentiality), [evidence strength](../grammar/knowing.md#evidence-strength).
 
 ### Lesson 4: Labels (this time, a role, to whom, a type)
 
@@ -145,7 +145,7 @@ Add a hyphen, then `th` + a scope vowel + **-l**, to the English word:
 | `oyu` | physical (health, rest, safety) |
 | `ega` | a sake, unspecified |
 
-Thanks = sake + `tha` + ending (met): `thanatham` *that helped me feel connected*, `thulothal` *that sets me up for good*. Sorry = sake + `thu` + ending, then `behodon` (unmet, *yours*): `thanathum behodon` *that hurt your sense of connection*. **-l / -m / -r** are the how-fixed scale again: how long the payoff lasts (thanks) or how lasting the harm is (sorry), from lasting (**-l**) to only right now (**-r**, `…thur behodon` *my bad*).
+Thanks = sake + `tha` + ending (met): `thanatham` *that helped me feel connected*, `thulothal` *that sets me up for good*. Sorry = sake + `thu` + ending, then `behodon` (unmet, *yours*): `thanathum behodon` *that hurt your sense of connection*. **-l / -m / -r** are the settled-to-passing scale again: how long the payoff lasts (thanks) or how lasting the harm is (sorry), from lasting (**-l**) to only right now (**-r**, `…thur behodon` *my bad*).
 
 > You covered my shift — thoyutham.  
 > I cancelled again. Thanathum behodon.  
@@ -172,11 +172,11 @@ Thanks = sake + `tha` + ending (met): `thanatham` *that helped me feel connected
 > Visitors sign in at the desk thumel.  
 > No phones at dinner thedem.
 
-**Why here:** the same how-fixed **-l / -m / -r** scale comes back: a rule is locked in, a person's word is the default, and an unspoken norm is the lightest. **Sources** (editors): [permission](../grammar/sakes.md#permission), [requirement](../grammar/sakes.md#requirement), [consent](../grammar/sakes.md#consent).
+**Why here:** the **-l / -m / -r** endings come back with a new job: where the yes or no comes from. Teach the cue *l ≈ law, m ≈ mouth, r ≈ read the room*: a rule, a person's word (the default), or no one's word at all. **Sources** (editors): [permission](../grammar/sakes.md#permission), [requirement](../grammar/sakes.md#requirement), [consent](../grammar/sakes.md#consent).
 
 ### Lesson 7: Decisions and tries
 
-**Gap:** *I've decided* sounds final, and *I'll try* sounds like a hedge. Neither says how locked in the speaker is.
+**Gap:** *I've decided* sounds final, and *I'll try* sounds like a hedge. Neither says how settled the speaker is.
 
 | Form | Meaning |
 |------|---------|
@@ -222,7 +222,7 @@ Show the parts every time, because the word now carries two **-l / -m / -r** slo
 | **-m** | flowing, steady |
 | **-r** | surging, in waves |
 
-The motion endings are the how-fixed scale from earlier lessons, applied to water: still water is locked (**-l**), a current is the default (**-m**), and a wave is right now (**-r**). Motion is not strength: steady anger is flowing.
+The motion endings are the settled-to-passing scale from earlier lessons, applied to water: still water is lasting (**-l**), a current is the default (**-m**), and a wave is right now (**-r**). Motion is not strength: steady anger is flowing.
 
 > We shipped the draft thulothamar. (proud: competence met, inside, surging)  
 > The review is tomorrow thulothuraor. (anxious: competence at stake for now, over the room, surging)  

@@ -342,7 +342,7 @@ These words glue one finished sentence to the next (one-way). They are a fixed s
 
 *therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Those same roots keep their ordinary content readings under other role letters.
 
-Three linkers also take **-l** for a **firm** link: the link holds with no room for doubt, on the same strong-to-light scale as other endings. (cue: **l** ≈ locked)
+Three linkers also take **-l** for a **firm** link: the link holds with no room for doubt, on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). (cue: **-l** ≈ lasting: the link holds)
 
 | Agazan | Use | English |
 |--------|-----|---------|

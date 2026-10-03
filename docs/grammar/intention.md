@@ -21,13 +21,13 @@ Ordinary content stays available (`zamal` *a map*; `vamal` *to plan*). Leave PLA
 <a id="plan-map-resolution"></a>
 <a id="plan-endings"></a>
 
-On **`ama`**, **-l / -m / -r** say **how fully drawn** the intention is: a map that already includes backups, steps filled in, or just the direction. That split shows **how much of the route is drawn**. No level is better: match the detail to the plan, and a sketch is often all a small or early plan needs. **-n** is ordinary [proper](word-endings.md#proper-name--n). When you are unsure how detailed the course is, use **`thamam`**: it claims a plan without saying how much is filled in.
+On **`ama`**, **-l / -m / -r** say **how fully drawn** the intention is: a map that already includes backups, steps filled in, or just the direction. That split shows **how much of the route is drawn**. They run on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). No level is better: match the detail to the plan, and a sketch is often all a small or early plan needs. **-n** is ordinary [proper](word-endings.md#proper-name--n). When you are unsure how detailed the course is, use **`thamam`**: it claims a plan without saying how much is filled in.
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`thamal`** | **atlas** | *is fully prepared to …* — hurdles are anticipated and prepared for | `amal` *plan-atlas* | **-l** ≈ locked in (detours already drawn) |
+| **`thamal`** | **atlas** | *is fully prepared to …* — hurdles are anticipated and prepared for | `amal` *plan-atlas* | **-l** ≈ lasting (detours already drawn, so it holds up) |
 | **`thamam`** | **itinerary** (soft default) | *plans to …* — steps laid out, or detail unstated | `amam` *plan-itinerary* | **-m** ≈ middle (the route, no backups) |
-| **`thamar`** | **sketch** | *intends to …* / *is thinking of …* — the direction, details left open | `amar` *plan-sketch* | **-r** ≈ rough (a direction for now) |
+| **`thamar`** | **sketch** | *intends to …* / *is thinking of …* — the direction, details left open | `amar` *plan-sketch* | **-r** ≈ right now (a rough direction) |
 
 > `zalahen thamar vowogal.`
 >
@@ -331,13 +331,13 @@ Ordinary content is still available (`zehul` *a checkmark*; `vehul` *to check / 
 #### Endings — changeability
 <a id="decision-changeability"></a>
 
-On **`ehu`**, **-l / -m / -r** match unmet [changeability](sakes.md#sake-changeability): irreversible / modifiable / temporary. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know how locked the pick is, use **-m**.
+On **`ehu`**, **-l / -m / -r** match unmet [changeability](sakes.md#sake-changeability) on the settled-to-passing scale: irreversible / modifiable / temporary. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know how settled the pick is, use **-m**.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thehul`** | **irreversible** | *has decided for good to …* | **-l** hard / locked |
-| **`thehum`** | **modifiable** (soft default if unknown) | *has decided to …, and can still change that* | **-m** open to change |
-| **`thehur`** | **temporary** | *has decided for now to …* | **-r** light / this-moment only |
+| **`thehul`** | **irreversible** | *has decided for good to …* | **-l** ≈ lasting (for good) |
+| **`thehum`** | **modifiable** (soft default if unknown) | *has decided to …, and can still change that* | **-m** ≈ open to change |
+| **`thehur`** | **temporary** | *has decided for now to …* | **-r** ≈ right now (for now only) |
 
 You can stack this mood after [PLAN](#plan-predict) when the clause needs both map grain and pick firmness:
 
@@ -347,7 +347,7 @@ You can stack this mood after [PLAN](#plan-predict) when the clause needs both m
 >
 > "Azawan plans to walk, and that choice is final."
 
-PLAN and DECISION endings run the same way: **-l** is the most settled, **-m** the default, and **-r** the lightest.
+PLAN and DECISION endings run the same way: **-l** is the most settled, **-m** the default, and **-r** the most passing.
 
 > `zalahen thamar thehur vowogal.`
 >
@@ -391,7 +391,7 @@ On **`udu`**, **-l / -m / -r** say how far the attempt will go. **-n** is ordina
 |--------|-----|---------|-----|
 | **`thudul`** | **committed** | *commits to trying …* / *keeps trying to …* until it works or is ruled out | **-l** the full run |
 | **`thudum`** | **unstated** (soft default) | *tries to …* | **-m** middle |
-| **`thudur`** | **trial run** | *tries out …* / *gives … a shot*: a low-stakes probe, and failing is useful to know | **-r** a small sample |
+| **`thudur`** | **trial run** | *tries out …* / *gives … a shot*: a low-stakes probe, and failing is useful to know | **-r** ≈ right now (a small sample) |
 
 > `zalahen thudur vezehel.`
 >
@@ -461,7 +461,7 @@ On **`ohu`**, **-l / -m / -r** say how long the wanting lasts. **-n** is ordinar
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thohul`** | a want that keeps coming back | *really wants to …* / *has long wanted to …* | **-l** ≈ locked in (a steady star) |
+| **`thohul`** | a want that keeps coming back | *really wants to …* / *has long wanted to …* | **-l** ≈ lasting (a steady star) |
 | **`thohum`** | duration unstated (soft default) | *wants to …* | **-m** ≈ open |
 | **`thohur`** | a want that will pass | *feels like …* / *has a whim to …* | **-r** ≈ right now (a streak) |
 

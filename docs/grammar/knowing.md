@@ -21,13 +21,13 @@ The leaving or the blow is still the event named in the *could be*. Without the 
 ### Hold endings (MAY)
 <a id="may-hold"></a>
 
-On **`ovu`**, **-l / -m / -r** say how much you are following up on that *could be* **this sentence**, on the same strong-to-light scale as [ATTEMPT](intention.md#try): **-l** is the most committed, **-m** the default, and **-r** the lightest. None of them is the “correct” person: settling it, leaving it at *may*, and letting it pass are all lawful. **-n** is ordinary [proper](word-endings.md#proper-name--n).
+On **`ovu`**, **-l / -m / -r** say how much you are following up on that *could be* **this sentence**, on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing): **-l** is the most settled (you will settle it), **-m** the default, and **-r** the most passing. None of them is the “correct” person: settling it, leaving it at *may*, and letting it pass are all lawful. **-n** is ordinary [proper](word-endings.md#proper-name--n).
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thovul`** | could be, and you are **committed to settling it** | *may — I'll find out* / *let's find out* | `ovul` *thought* | 💭: balloon plus a magnifying glass (**-l** the full run) |
 | **`thovum`** | could be (default; follow-up unstated) | *may* / *could be* | `ovul` *thought* | 💭: balloon (**-m** middle) |
-| **`thovur`** | could be, as a **passing thought** you are not pursuing right now | *may — who knows* | `ovul` *thought* | 💭: balloon drifting off (**-r** light, this moment only) |
+| **`thovur`** | could be, as a **passing thought** you are not pursuing right now | *may — who knows* | `ovul` *thought* | 💭: balloon drifting off (**-r** ≈ right now) |
 
 When you are not sure, use **`thovum`**. That is not wiser than settling it (**-l**) or letting it pass (**-r**); it is the grammar of *could be* without those stances.
 
@@ -570,7 +570,7 @@ English *already*, *still*, *not yet*, and *no longer* do not place an event in 
 >
 > "Azawan doesn't walk at the house anymore."
 
-The ending says how settled the current stage is, on the same strong-to-light scale as [DECISION](intention.md#decision-changeability). Use **-m** when it could change back, or when you do not know. Use **-l** when it is not expected to. Use **-r** when it holds only for now: it is likely to change back soon, or, on *not yet*, the change may never come.
+The ending says how settled the current stage is, on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). Use **-m** when it could change back, or when you do not know. Use **-l** when it is not expected to. Use **-r** when it holds only for now: it is likely to change back soon, or, on *not yet*, the change may never come.
 
 | Agazan | Use | English |
 |--------|-----|---------|
@@ -640,7 +640,7 @@ English sometimes frames the whole clause as play: *as if*, *for the sake of arg
 ### Hold endings (NOTIONAL)
 <a id="notional-hold"></a>
 
-You can rehearse an imagined scene to prepare for doing it, picture it without a special purpose, or just toy with a *what if*. **NOTIONAL** keeps the clause in that imagined frame; its ending says how much weight the frame carries. The endings follow [PLAN](intention.md#plan-predict) (atlas / itinerary / sketch): **-l** is the most committed to action, **-m** the default, and **-r** the lightest. **-n** is ordinary [proper](word-endings.md#proper-name--n).
+You can rehearse an imagined scene to prepare for doing it, picture it without a special purpose, or just toy with a *what if*. **NOTIONAL** keeps the clause in that imagined frame; its ending says how much weight the frame carries. The endings follow [PLAN](intention.md#plan-predict) (atlas / itinerary / sketch) on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing): **-l** is the most committed to action, **-m** the default, and **-r** the most passing. **-n** is ordinary [proper](word-endings.md#proper-name--n).
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|

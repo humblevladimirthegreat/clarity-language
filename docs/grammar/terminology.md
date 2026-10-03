@@ -740,6 +740,12 @@ Clause join **-n** (`xan` *and then*; `xuen` *and before that*).
 
 [Join across roles](join-across-roles.md#sequence)
 
+### Settled-to-passing scale
+
+The shared **-l / -m / -r** ladder on many stance endings: **-l** the most settled (cue: *lasting*), **-m** the default, **-r** the most passing (cue: *right now*). Neither end is better. Each slot gives the three endings its own meaning.
+
+[Sakes](sakes.md#settled-to-passing)
+
 ### SHARED scale
 
 After-join `/ɡ/` (quality) or manner `/h/` in comparatives.

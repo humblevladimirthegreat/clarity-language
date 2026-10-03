@@ -63,14 +63,15 @@ When you want to say that a named belonging **serves** this sake (pays it off), 
 
 ### Time horizon (endings on met) {#time-horizon-endings-on-met}
 <a id="sake-contact"></a>
+<a id="settled-to-passing"></a>
 
-On a *serves* word, **-l / -m / -r** say **when the payoff lands**: lasting, unstated, or immediate. Neither end is better; a good day needs both. It uses the same scale as [unmet](#sake-changeability): **-l** lasts, **-r** passes. If you do not know, use **-m**.
+On a *serves* word, **-l / -m / -r** say **when the payoff lands**: lasting, unstated, or immediate. These endings run on the **settled-to-passing scale**: **-l** is the most settled, **-m** the default, and **-r** the most passing. The cues: **-l** ≈ lasting, **-r** ≈ right now. Neither end is better; a good day needs both. If you do not know, use **-m**.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…thal` | serves the sake over time | *lasting* | **-l** ≈ lasting |
 | `…tham` | serves the sake; time horizon unstated (soft default if unknown) | *serves* | **-m** ≈ open |
-| `…thar` | serves the sake right away | *immediate* | **-r** ≈ in the moment |
+| `…thar` | serves the sake right away | *immediate* | **-r** ≈ right now |
 
 > `zebel ganathal.`
 >
@@ -98,7 +99,7 @@ An immediate payoff is often exactly what is needed:
 >
 > "My strawberry is a pleasure right now."
 
-**Compare with:** [unmet](#sake-changeability) uses the same scale for a cost.
+**Compare with:** [unmet](#sake-changeability) uses the same settled-to-passing scale for a cost.
 
 ### Unmet (`thu`): detracts from the sake
 <a id="sake-changeability"></a>
@@ -109,9 +110,9 @@ That ending is **changeability**: how lasting that detriment is. If you do not k
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…thul` | the detriment is fixed as far as you can tell | *irreversible* | **-l** ≈ locked |
+| `…thul` | the detriment is fixed as far as you can tell | *irreversible* | **-l** ≈ lasting |
 | `…thum` | effort or circumstance may soften the detriment (soft default if unknown) | *modifiable* | **-m** ≈ open to change |
-| `…thur` | the detriment has no lasting impact | *passing* | **-r** ≈ in the moment |
+| `…thur` | the detriment has no lasting impact | *passing* | **-r** ≈ right now |
 
 > `zubugal gulothum.`
 >
@@ -365,11 +366,11 @@ Name the landmark with a `/b/` word right after the feeling (after **`gobum`** w
 >
 > "Resentful at Alahen about the memo, gone still."
 
-The motion ending says how the feeling moves. Affect is **water**. The endings run on the same scale as the other stance endings, from fixed to passing: **-l** is locked in place, **-m** is the ordinary case, and **-r** lasts only right now.
+The motion ending says how the feeling moves. Affect is **water**. The endings run on the [settled-to-passing scale](#settled-to-passing): **-l** is the most settled, **-m** is the ordinary case, and **-r** the most passing, lasting only right now.
 
 | Motion ending | Use | English | Cue |
 |---------------|-----|---------|-----|
-| **-l** | STILL | not moving: held, frozen, numb | **-l** ≈ *locked*: still water |
+| **-l** | STILL | not moving: held, frozen, numb | **-l** ≈ *lasting*: still water |
 | **-m** | FLOWING | moving steadily, at a pace you can ride | **-m** ≈ the ordinary case: a current |
 | **-r** | SURGING | moving in waves or spikes: rising, falling, swinging | **-r** ≈ *right now*: a wave |
 
@@ -427,9 +428,9 @@ That ending says why you think a move is welcome. Use **-l** when the person inv
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…thel` | the person invited this kind of move | *invited* | **-l** ≈ locked to their word |
+| `…thel` | the person invited this kind of move | *invited* | **-l** ≈ lasting: their invitation stands |
 | `…them` | an unsolicited offer meant to serve the sake | *offered* | **-m** ≈ open offer |
-| `…ther` | a move worth trying, to see whether it serves the sake | *worth a try* | **-r** ≈ for now (a trial run) |
+| `…ther` | a move worth trying, to see whether it serves the sake | *worth a try* | **-r** ≈ right now (a trial run) |
 
 > `zazawan vezebel thanathem.`
 >
@@ -460,7 +461,7 @@ A move meant to **prevent** harm to the sake is a *so that … not* dependent ([
 ### Motive (`tho`): time horizon
 <a id="sake-preference"></a>
 
-English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the sake root, mid-word **`th`**, **`o`**, then an ending. That ending is the **time horizon**, on the same scale as [met](#time-horizon-endings-on-met): whether the act serves the sake over time or right away. If you do not know, use **-m**. Habit of the reason uses **`hual`** (*usually my reason* is **`…thom`** plus **`hual`**).
+English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the sake root, mid-word **`th`**, **`o`**, then an ending. That ending is the **time horizon**, on the same settled-to-passing scale as [met](#time-horizon-endings-on-met): whether the act serves the sake over time or right away. If you do not know, use **-m**. Habit of the reason uses **`hual`** (*usually my reason* is **`…thom`** plus **`hual`**).
 
 > `zazawan vezebel thanathom.`
 >
@@ -476,7 +477,7 @@ A reason held **to keep a cost off** is a *so that … not* dependent ([so that]
 |--------|-----|---------|-----|
 | `…thol` | does this for the sake over time | *lasting* | **-l** ≈ lasting |
 | `…thom` | does this for the sake; time horizon unstated (soft default if unknown) | *for* | **-m** ≈ open |
-| `…thor` | does this for the sake right away | *immediate* | **-r** ≈ in the moment |
+| `…thor` | does this for the sake right away | *immediate* | **-r** ≈ right now |
 
 Neither end is better; a good day needs both, and doing something for a payoff right now is often exactly what is needed. When the **situation** is what pulls the reason, say so with the [because pole](causation.md) and the situation as `/b/`.
 
@@ -646,7 +647,7 @@ Hope is not a way of **knowing**, so it cannot hold up a forecast by itself. To 
 
 ### Permission (`thegol` / `thegom` / `thegor`) {#permission}
 
-English *may* / *is allowed to* says a restriction is lifted. Put **`thegol`**, **`thegom`**, or **`thegor`** on the clause: stance **`th`** on the root **`ego`** (🟢 *green circle*). The ending says **how formally the restriction is lifted**, on the same strong-to-light scale as the other stance endings. Use **-l** when a rule, policy, or formal right allows it. Use **-m** when a person grants it; that person is the speaker unless a hosted `/b/` names someone else. Use **-r** when no one granted it but no one objected either. If you do not know, use **-m**.
+English *may* / *is allowed to* says a restriction is lifted. Put **`thegol`**, **`thegom`**, or **`thegor`** on the clause: stance **`th`** on the root **`ego`** (🟢 *green circle*). The ending says **where the permission comes from**: a rule, a person, or nobody. The cues: **-l** ≈ law, **-m** ≈ mouth (someone said so), **-r** ≈ read the room. Use **-l** when a rule, policy, or formal right allows it. Use **-m** when a person grants it; that person is the speaker unless a hosted `/b/` names someone else. Use **-r** when no one granted it but no one objected either. If you do not know, use **-m**.
 
 > `zazawan vowogal thegom.`
 >
@@ -676,12 +677,12 @@ The negatives use the root **`ede`** (⛔ *no entry*) with the same endings.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thegol`** | a rule, policy, or formal right allows it | *is allowed to* / *has the right to* | **-l** ≈ locked in (on paper) |
-| **`thegom`** | a person grants it (speaker, or the `/b/`) (default) | *may* / *I'm letting you* | **-m** ≈ a person's word |
-| **`thegor`** | tolerated: no one granted it, no one objected | *no one's stopping it* | **-r** ≈ light (no word given) |
-| **`thedel`** | a rule, policy, or formal ban forbids it | *is not allowed to* | **-l** ≈ locked in (on paper) |
-| **`thedem`** | a person forbids it | *may not* / *I won't let you* | **-m** ≈ a person's word |
-| **`theder`** | frowned on: no one forbade it, but it is not welcome | *people won't like it* | **-r** ≈ light (no word given) |
+| **`thegol`** | a rule, policy, or formal right allows it | *is allowed to* / *has the right to* | **-l** ≈ law: the rules say go |
+| **`thegom`** | a person grants it (speaker, or the `/b/`) (default) | *may* / *I'm letting you* | **-m** ≈ mouth: someone said go |
+| **`thegor`** | tolerated: no one granted it, no one objected | *no one's stopping it* | **-r** ≈ read the room: nobody said stop |
+| **`thedel`** | a rule, policy, or formal ban forbids it | *is not allowed to* | **-l** ≈ law: the rules say no |
+| **`thedem`** | a person forbids it | *may not* / *I won't let you* | **-m** ≈ mouth: someone said no |
+| **`theder`** | frowned on: no one forbade it, but it is not welcome | *people won't like it* | **-r** ≈ read the room: nobody said no, but it's not welcome |
 
 To **ask** for permission, put the clause under [ask](questions.md#question): `yom zSELFn vehahel thegom.` (*May I sit?*). Grant it with [**`yaol.`**](questions.md#polar-stance) (*go ahead*).
 
@@ -711,9 +712,9 @@ English *must* / *has to* / *is supposed to* puts a demand on an act without nam
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thumel`** | a rule, policy, or law requires it | *must* / *is required to* | **-l** ≈ locked in (on paper) |
-| **`thumem`** | a person demands it (speaker, or the `/b/`) (default) | *has to* / *I need you to* | **-m** ≈ a person's word |
-| **`thumer`** | custom expects it; no rule, no one demanding | *is supposed to* | **-r** ≈ light (no word given) |
+| **`thumel`** | a rule, policy, or law requires it | *must* / *is required to* | **-l** ≈ law: the rules demand it |
+| **`thumem`** | a person demands it (speaker, or the `/b/`) (default) | *has to* / *I need you to* | **-m** ≈ mouth: someone demands it |
+| **`thumer`** | custom expects it; no rule, no one demanding | *is supposed to* | **-r** ≈ read the room: custom expects it |
 
 **Compare with:** [prescription](#sake-force) **`the`** says the act *ought* to serve a named sake, a reason you can check. Requirement says only that a rule, a person, or custom demands it. A [command](speech-moves.md#speech-act-beginner) **`yel`** is the speaker telling the listener now; **`thumem`** reports a demand, which may be someone else's.
 
@@ -721,7 +722,7 @@ English *must* / *has to* / *is supposed to* puts a demand on an act without nam
 
 Consent is permission from **the one the act happens to**: their body, their things, their time. Put **`thuxegol`**, **`thuxegom`**, or **`thuxegor`** on the clause: stance **`th`**, then role vowel **`u`** (the one it happens to), mid-word **`x`**, and the root **`ego`**. The hosted `/b/` names who consents. That slot holds one noun; when several people are affected, fill it with a [plural](plurality.md) or a [join](joins.md). The actor's own consent is always implied, so **with no `/b/` the only person affected is the actor**, and the clause reads as *letting yourself*.
 
-The ending says **how binding the yes is**, on the same scale as [permission](#permission). Use **-l** for a binding agreement: they signed on in advance, and withdrawing has terms. Use **-m** when they said yes; they can take it back at any time. Use **-r** when you are assuming or inferring it and no one said yes. If you know they said yes but not how binding it is, use **-m**.
+The ending says **how binding the yes is**, with the same cues as [permission](#permission): **-l** ≈ law, **-m** ≈ mouth, **-r** ≈ read the room. Use **-l** for a binding agreement: they signed on in advance, and withdrawing has terms. Use **-m** when they said yes; they can take it back at any time. Use **-r** when you are assuming or inferring it and no one said yes. If you know they said yes but not how binding it is, use **-m**.
 
 > `zazawan vezebel thuxegom bahaben.`
 >
@@ -763,12 +764,12 @@ The negatives **`thuxedel`** / **`thuxedem`** / **`thuxeder`** use the same endi
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thuxegol`** | a binding agreement; withdrawing it has terms | *by agreement* / *they signed on* | **-l** ≈ locked in (on paper) |
-| **`thuxegom`** | the affected said yes; they can take it back (default) | *they agreed* / *I let myself* | **-m** ≈ their word, still open |
-| **`thuxegor`** | consent assumed or inferred | *I think they're OK with it* | **-r** ≈ light (no word given) |
-| **`thuxedel`** | a binding refusal | *they opted out* | **-l** ≈ locked in (on paper) |
-| **`thuxedem`** | the affected said no | *they refused* | **-m** ≈ their word |
-| **`thuxeder`** | consent presumed absent | *they probably don't want it* / *I won't let myself* | **-r** ≈ light (no word given) |
+| **`thuxegol`** | a binding agreement; withdrawing it has terms | *by agreement* / *they signed on* | **-l** ≈ law: they signed on, like a contract |
+| **`thuxegom`** | the affected said yes; they can take it back (default) | *they agreed* / *I let myself* | **-m** ≈ mouth: they said yes |
+| **`thuxegor`** | consent assumed or inferred | *I think they're OK with it* | **-r** ≈ read the room: you're guessing they're OK |
+| **`thuxedel`** | a binding refusal | *they opted out* | **-l** ≈ law: they opted out on record |
+| **`thuxedem`** | the affected said no | *they refused* | **-m** ≈ mouth: they said no |
+| **`thuxeder`** | consent presumed absent | *they probably don't want it* / *I won't let myself* | **-r** ≈ read the room: they probably don't want it |
 
 To check in, ask: `yom zazawan vezebel thuxegom.` (*Are you still OK with this?*).
 
