@@ -425,11 +425,14 @@ export const STAND_IN_BACK_CONSTRUCTIONS: Record<Vowel, ConstructionEntry> = {
 };
 
 /** Hook forms (hooks.md). */
-export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "er" | "or" | "ur", ConstructionEntry> = {
+export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "er" | "or" | "ur" | "aor" | "aer" | "uor", ConstructionEntry> = {
   ar: { anchor: "hooks.md#hook-resume", summary: "ar resume hook" },
   er: { anchor: "hooks.md#hook-resume", summary: "er resume hook" },
   or: { anchor: "hooks.md#hook-resume", summary: "or resume hook" },
   ur: { anchor: "hooks.md#hook-resume", summary: "ur resume hook" },
+  aor: { anchor: "hooks.md#hook-resume", summary: "aor resume hook (on it)" },
+  aer: { anchor: "hooks.md#hook-resume", summary: "aer resume hook (with it)" },
+  uor: { anchor: "hooks.md#hook-resume", summary: "uor resume hook (through there)" },
   al: { anchor: "hooks.md#including-am-al", summary: "al including" },
   am: { anchor: "hooks.md#including-am-al", summary: "am including" },
   el: { anchor: "hooks.md#rather-el", summary: "el rather" },
@@ -563,7 +566,7 @@ export const REJECTIONS = {
   abilitySlot: { anchor: "intention.md#ability", summary: "ability (x + vowel) goes on /v/ or /ɡ/ only; name + x + vowel + -n is a conversation-length bid only as a citation or a /y/ call" },
   labelScopeArrow: { anchor: "roles.md#landmark-facing", summary: "on a direction root the th seam takes only o (the landmark's own facing)" },
   pluralKindAfterUniversal: { anchor: "joins.md#universals-domains-generics", summary: "the kind word after ua / uo takes no -x" },
-  stackedHookResume: { anchor: "hooks.md#spans", summary: "stacked hook -r (oer / uar / uer) needs same-role words on both sides; aor / aer / uor are not words" },
+  stackedHookResume: { anchor: "hooks.md#spans", summary: "stacked span hook -r (oer / uar / uer) needs same-role words on both sides" },
   hookSameRoleStack: { anchor: "hooks.md#including-am-al", summary: "between same-role words only the plain hooks (al el ol ul) and the span hooks (oel ual uel) have a reading; for such as, use am" },
   hookDiscourseStack: { anchor: "hooks.md#discourse-hooks", summary: "at the front of a sentence only al el ol ul, aol and ael have a reading; for next, by the way, on the contrary use a linker" },
   stackedJoinResume: { anchor: "join-across-roles.md#vp-clause-forms", summary: "stacked join vowels take no -r on /z/ /d/ /b/ /v/ /x/ /ɡ/ (only a / o / e / u do); a stacked -r is the stance fill-ask under /th/" },

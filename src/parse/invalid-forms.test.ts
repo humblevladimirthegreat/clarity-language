@@ -75,7 +75,7 @@ const ROWS: Row[] = [
   { invalid: "zodogal vehahel gazavathol.", rejection: "landmarkLateralBound", valid: "zodogal vehahel gazavathol bahazal." },
   { invalid: "zual gagadulx.", rejection: "pluralKindAfterUniversal", valid: "zual gagadul." },
   { invalid: "zazawan vowogal oer.", rejection: "stackedHookResume", valid: "zrarel oer zraval." },
-  { invalid: "zazawan vowogal aor.", rejection: "stackedHookResume", valid: "zazawan vowogal ar." },
+  { invalid: "aor zazawan vowogal.", rejection: "hookDiscourseStack", valid: "zazawan vowogal aor." },
   { invalid: "zavahal aol zazawan.", rejection: "hookSameRoleStack", valid: "zavahal am zazawan." },
   { invalid: "uel zalahen varahal.", rejection: "hookDiscourseStack", valid: "xagezal zalahen varahal." },
   { invalid: "zavahal ar zazawan.", rejection: "hookResumeNoun", valid: "zavahal al zazawan." },

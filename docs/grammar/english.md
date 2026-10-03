@@ -107,6 +107,7 @@ One English word, one row: the form that says it and the section that teaches it
 |--------------|------------|-------|
 | *in* / *into* / *inside* / *within* (*runs into a train*, *sits inside the house*) | hook **`al`** + `/b/`; the verb says whether anything moves | [Locative relations](relations.md#locative-relations) |
 | *on* / *onto* / *upon* (*sits on a chair*, *climbs onto the table*) | hook **`aol`** + `/b/`; the verb says whether anything moves | [Hooks](hooks.md#extra-noun) |
+| *on it* (*sits on it too*) | resume hook **`aor`** | [Point back](hooks.md#hook-resume) |
 | *beside* / *next to* / *nearby* (*sleeps near me*) | hook **`om`** + `/b/` | [Hooks](hooks.md#extra-noun), [here and there](hooks.md#deixis) |
 | *under* / *below* / *beneath* (*sleeps under the tree*) | gravity down **`hadahel`** (on a noun, **`gadahel`**) + `/b/` | [Gravity](roles.md#gravity) |
 | *above* / *upper* (*the book above the tree*) | gravity up **`habahal`** (on a noun, **`gabahal`**) + `/b/` | [Gravity](roles.md#gravity) |
@@ -114,6 +115,8 @@ One English word, one row: the form that says it and the section that teaches it
 | *with* / *alongside* / *along with* (*runs with Alahen*) | **`han`** + `/b/` | [Join-relations](join-across-roles.md#join-relations) |
 | *without* / *apart from* (*walks apart from the house*) | **`huan`** + `/b/` | [Join-relations](join-across-roles.md#join-relations) |
 | *via* / *by way of* / *through* / *along* (*goes via the station*, *walks along the road*) | hook **`uol`** + `/b/` (**`uom`** for a setting) | [Hooks](hooks.md#extra-noun) |
+| *through there* | resume hook **`uor`** | [Point back](hooks.md#hook-resume) |
+| *with it* (the same tool) | resume hook **`aer`** | [Point back](hooks.md#hook-resume) |
 | *off* / *away from* / *out of* (*walks off the road*) | hook **`ul`** + `/b/` | [Hooks](hooks.md#extra-noun) |
 | *off* (switched off, disconnected) | `govahal` (*disconnection*, as an adjective) | [Adjectives](clause.md#adjectives-ɡ) |
 | *outside* / *external* / *outdoors* (*sits outside the house*) | hook **`al`** + the landmark + the join **`bul`** (*in, not the house*): `al bahazal bul` | [Hooks](hooks.md#extra-noun), [negation](joins.md#negation-u) |

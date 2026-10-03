@@ -212,10 +212,10 @@ function enforceStandInRole(word: LexWord): void {
   if (["g", "h", "w", "th"].includes(word.pos ?? "")) throw new ConstructionError("standInRole", word.raw);
 }
 
-/** Stacked hook **-r** (`oer` / `uar` / `uer`) is only a span member between same-role words (hooks.md § Spans). */
+/** Stacked span hook **-r** (`oer` / `uar` / `uer`) is only a span member between same-role words (hooks.md § Spans). Extra-noun `aor` / `aer` / `uor` point back. */
 function enforceStackedHookR(word: LexWord, tokens: IToken[], i: number): void {
   if (word.family.kind !== "hook" || word.ending !== "r" || word.family.form.length < 3) return;
-  if (["ao", "ae", "uo"].includes(word.family.form.slice(0, -1))) throw new ConstructionError("stackedHookResume", word.raw);
+  if (["ao", "ae", "uo"].includes(word.family.form.slice(0, -1))) return;
   let j = i - 1;
   while (tokenWord(tokens[j])?.pos === "w") j -= 1;
   const prev = tokenWord(tokens[j]);
@@ -228,6 +228,7 @@ function enforceHookSlot(word: LexWord, job: HookJob | undefined): void {
   if (word.family.kind !== "hook") return;
   const vowels = word.family.form.slice(0, -1);
   if (job === "clause" && (vowels === "ao" || vowels === "ae" || vowels === "uo")) throw new ConstructionError("hookSameRoleStack", word.raw);
+  if (job === "discourse" && word.ending === "r" && vowels.length > 1) throw new ConstructionError("hookDiscourseStack", word.raw);
   if (job === "discourse" && ["oe", "ua", "uo", "ue"].includes(vowels)) throw new ConstructionError("hookDiscourseStack", word.raw);
 }
 

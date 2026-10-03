@@ -488,6 +488,12 @@ describe("compareMorphGloss", () => {
     expectLine("zazawan balahen al bahaben vezebel", "z-Azawan | b-Alahen | including | b-Ahaben | v-tell");
   });
 
+  it("stacked extra-noun -r points back (hooks.md § Point back)", () => {
+    expectLine("zazawan vehahel aor", "z-Azawan | v-sit | on.it");
+    expectLine("zalahen varadal aer", "z-Alahen | v-write | with.it");
+    expectLine("zazawan vowogal uor", "z-Azawan | v-walk | through.there");
+  });
+
   it("em + /b/ goes inside the bracket of the noun on its left", () => {
     expectLine("zodogal gelavam em bamagon", "[z-dog | g-big | [used-by | b-speaker]]");
     expectLine("zodogal em bamagon gelavam", "[z-dog | [used-by | [b-speaker | g-big]]]");

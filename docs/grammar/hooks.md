@@ -681,9 +681,7 @@ In reported speech, the speaker is still whoever says the whole sentence. After 
 
 ### Point back (`or` / `ar` / `ur` / `er`) {#hook-resume}
 
-A hook with **-r** points back, the way [resume **-r**](pronouns.md#resume-r) does on a noun. It takes no noun to its right, and none to its left to pair with (it is not a same-role hook). Only the plain vowels point back: `ar`, `er`, `or`, `ur`. (A [span hook](#spans) with **-r** has words on both sides and means something else.)
-
-After the verb, a resume hook points back to a landmark already in play. You do not repeat the `/b/` word.
+A hook with **-r** points back, the way [resume **-r**](pronouns.md#resume-r) does on a noun. It takes no noun to its right, and none to its left to pair with (it is not a same-role hook). After the verb, it points back to a landmark already in play: you do not repeat the `/b/` word. (A [span hook](#spans) with **-r** has words on both sides and means something else.)
 
 | Agazan | Points back to | English |
 |--------|----------------|---------|
@@ -703,6 +701,32 @@ After the verb, a resume hook points back to a landmark already in play. You do 
 > z-dog | v-sleep | [in | b-house] . z-←dog | v-run | from.there
 >
 > "The dog sleeps in the house. It runs from there."
+
+Stacked extra-noun vowels point back the same way: the vowels keep the extra they named (`aol` *on*, `ael` *using*, `uol` *through*), and **-r** drops the landmark.
+
+| Agazan | Points back to | English |
+|--------|----------------|---------|
+| `aor` | the face already named | *on it* |
+| `aer` | the means already named | *with it* |
+| `uor` | the path already named | *through there* |
+
+> `zazawan vehahel aol behahel. zalahen vehahel aor.`
+>
+> z-Azawan | v-sit | [on | b-chair] . z-Alahen | v-sit | on.it
+>
+> "Azawan sits on a chair. Alahen sits on it too."
+
+> `zazawan dubugal ael bebewel varadal. zalahen varadal aer.`
+>
+> z-Azawan | d-book | [using | b-pen] | v-write . z-Alahen | v-write | with.it
+>
+> "Azawan writes a book with a pen. Alahen writes with it too."
+
+> `zazawan vowogal uol bahazal. zalahen vowogal uor.`
+>
+> z-Azawan | v-walk | [through | b-house] . z-Alahen | v-walk | through.there
+>
+> "Azawan walks through the house. Alahen walks through there too."
 
 At the front of a sentence, a resume hook points back to an earlier stretch of talk, not just the last sentence.
 
@@ -839,7 +863,7 @@ The endpoints are a path in spoken order. Endings work as on other hooks: **-m**
 >
 > "Someone between Azawan and Ahaben sleeps."
 
-A span **-r** always has a word on each side; with nothing on the right, `ar` / `ur` still [point back](#hook-resume). Stacked hooks take **-r** only in a span.
+A span **-r** always has a word on each side (`oer` / `uar` / `uer`). With nothing on the right, stacked extra-noun **-r** still [points back](#hook-resume) (`aor` *on it*).
 
 > `zazawan ual zahaben vezebal.`
 >
@@ -947,12 +971,12 @@ z-Azawan | [using | b-camera] | v-write
 z-Azawan | v-write | [on | b-page]
 :::
 
-**9.** *Azawan writes on a page. Alahen writes there too.*
+**9.** *Azawan writes on a page. Alahen writes on it too.*
 
 ::: details Show answer
-`zazawan varadal aol babehel. zalahen varadal or.`
+`zazawan varadal aol babehel. zalahen varadal aor.`
 
-z-Azawan | v-write | [on | b-page] . z-Alahen | v-write | there
+z-Azawan | v-write | [on | b-page] . z-Alahen | v-write | on.it
 :::
 
 **10.** *Anyway, Alahen tells.*
