@@ -664,6 +664,15 @@ function enforceForcePair(left: LeftEdge): void {
   }
 }
 
+/** A bare `/ɡ/` after the verb is not a depictive or resultative (predication.md § Property); a `/ɡ/` before the object noun or with a hosted `/b/` is a different shape. */
+function enforceVerbPredicate(units: Unit[]): void {
+  units.forEach((unit, i) => {
+    if (unit.kind !== "predicate" || units[i - 1]?.kind !== "vp" || unit.adj.hosted) return;
+    if (units[i + 1]?.kind === "np") return;
+    throw new ConstructionError("predicateAfterVerb", unit.adj.word.raw);
+  });
+}
+
 /** Clause- and discourse-level checks on a parsed and resolved result. */
 export function enforceResult(result: ParseResult, tables: ClassifyTables): void {
   for (const { left, bodies } of result.utterances) {
@@ -675,6 +684,7 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
   const places = { seen: new Set<LexWord>(), framed: new Set<LexWord>() };
   visitResult(result, structureVisitor(tables, places));
   for (const word of places.seen) if (!places.framed.has(word)) throw new ConstructionError("degreePlaceFrame", word.raw);
+  for (const { bodies } of result.utterances) for (const body of bodies) enforceVerbPredicate(body.clause.units);
   for (const bind of result.resolve?.anaphors ?? []) {
     if (bind.kind === "pointer") enforcePointer(bind);
     if (bind.antecedent) continue;

@@ -154,7 +154,10 @@ Source: [predication.md](../grammar/predication.md)
 
 | Slot | Status |
 |------|--------|
-| **`gugon`** / **`gugor`** (SAME with **-n** / **-r**) | Undefined — only **-l** / **-m** are taught |
+| **`gugon`** / **`gugor`** (SAME with **-n** / **-r**) | Undefined — only **-l** / **-m** are taught (they read as the ordinary root *coin*) |
+| **-x** on `gugol` | none |
+| A `/z/` or `/d/` as the second identity label | none: the label is a `/b/` |
+| A bare `/ɡ/` right after the verb (depictive / resultative) | none: the parser rejects it; use its own clause, `huwem barl`, or `thegem` |
 
 ## Closed-root endings
 

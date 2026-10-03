@@ -156,6 +156,8 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 |---------|--------|---------|
 | *kill* | `zalahen vazagal thegem bazawan.` | Alahen dies, Azawan makes it happen |
 | *feed* | `zalahen vagudal thegem bazawan.` | Alahen eats, Azawan makes it happen |
+| *make X angry* / *paint it red* (a result) | `zazawan vanegel thegem balahen.` | the adjective's verb root, Azawan becomes angry, Alahen makes it happen |
+| *arrived tired* / *left angry* (a state during) | `zalahen vedabal huwem barl zalahar gadadal.` or `zalahen gadadal. zalahar vedabal.` | a `/ɡ/` word right after the verb has no reading, so the state is its own clause |
 | *feed* (a child, nurture) | `zalahen vevedol dazawan.` | the nurturing root, no `thegem` |
 | *remove* | `zubugal vedabal ual bexagadel thegem bazawan.` | the book leaves the table, Azawan makes it happen |
 | *discard* | `zubugal veledol thegem bazawan.` | the book is disposed of |

@@ -98,6 +98,7 @@ const ROWS: Row[] = [
   { invalid: "zazawan vowogal harth.", rejection: "standInRole", valid: "zazawan vowogal henum barth." },
   { invalid: "zazawan gubuhel garn.", rejection: "standInRole", valid: "zazawan gubuhel." },
   { invalid: "zazawan vowogal tharl zalahen vehahel.", rejection: "standInRole", valid: "zazawan vowogal thevem barl zalahen vehahel." },
+  { invalid: "zalahen vedabal gadadal.", rejection: "predicateAfterVerb", valid: "zalahen gadadal. zalahar vedabal." },
   { invalid: "yael yal.", rejection: "polarOrder", valid: "yael." },
   { invalid: "yael yol zar vowogal.", rejection: "polarOrder", valid: "yael. yol zar vowogal." },
   { invalid: "yael yuel.", rejection: "polarOrder", valid: "yael." },

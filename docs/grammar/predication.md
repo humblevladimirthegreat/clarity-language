@@ -16,6 +16,8 @@ You already write a property on `/ɡ/` after the noun (*a blue dog*). When you s
 >
 > "Azawan is challenging."
 
+A `/ɡ/` word right after the verb is not a second predicate. *Arrived tired* takes its own sentence for the state (`zalahen gadadal. zalahar vedabal.`).
+
 The same string is also the noun plus its adjective: `zazawan gamadam` is both the full sentence *Azawan is challenging* and the phrase *challenging Azawan*.
 
 A nationality or tradition uses the published **abstract** column on `/ɡ/` (**-m**), not a proper **-n**. That is a **demonym exception**: the people/quality is still **-m** even though it is not unobservable the way *grace* is.
@@ -87,6 +89,20 @@ Write a special adjective `gugol` after the first name, then an extra noun (`/b/
 > z-guard | [g-SAME | b-Azawan]
 >
 > "The guard is Azawan."
+
+The second label is a `/b/` whatever it is: a common noun or a pronoun works as well as a name.
+
+> `zagavol gugol babazel.`
+>
+> z-guard | [g-SAME | b-police]
+>
+> "The guard is the police officer."
+
+> `zalahen gugol bamagon.`
+>
+> z-Alahen | [g-SAME | b-speaker]
+>
+> "Alahen is me."
 
 With **no** `/b/` after it, `gugol` points back to the one already mentioned: *the same one again*. Put `gugol` after the thing.
 

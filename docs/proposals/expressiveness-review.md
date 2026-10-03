@@ -64,7 +64,7 @@ For each mechanism, build its applicability grid and inspect the empty cells:
 | [x] | 8 | Hosted relations and bars | [relations](../grammar/relations.md), [comparatives](../grammar/comparatives.md) | 4, 5 | each relation × host role (`/ɡ/` `/h/` `/th/` `/w/`); stance bars × other moods |
 | [x] | 9 | Questions | [questions](../grammar/questions.md) | 1 | fill-ask × roles and families; polar stance × turn positions |
 | [x] | 10 | Stand-ins and `/x/` words | [dependents](../grammar/dependents.md) | 2, 4, 5 | stand-in vowel × **-rl / -rm / -rth / -rn** × role letter; `/x/` linkers vs topic words × endings and positions (never in a dependent, after a clause join, or in an aside) |
-| [ ] | 11 | Predication | [predication](../grammar/predication.md) | 0 | classification and identity × roles and endings |
+| [x] | 11 | Predication | [predication](../grammar/predication.md) | 0 | classification and identity × roles and endings |
 | [ ] | 12 | Mid-word `x` and `th`, role compounds | [x-compounds](../grammar/x-compounds.md), [roles](../grammar/roles.md) | 1, 2 | `x` / `th` families × left-hand types not yet allowed; role compounds × role letters |
 | [ ] | 13 | Mood roots × role letters | [knowing](../grammar/knowing.md), [causation](../grammar/causation.md), [intention](../grammar/intention.md) | 0 | each overlay kind × `/z/` `/d/` `/b/` `/v/` `/ɡ/` `/w/` `/h/` `/th/` (stance vs noun vs adverb readings) |
 | [ ] | 14 | Sakes | [sakes](../grammar/sakes.md) | 12, 13 | sake vowel (`tha` / `the` / `tho` / `thu`) × ending table × role; emotion compose slots |

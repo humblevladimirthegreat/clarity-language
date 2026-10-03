@@ -2,7 +2,7 @@
 
 Editors only — not linked from grammar pages. Findings from Phase 3 of the expressiveness review (`docs/proposals/expressiveness-review.md`): every productive mechanism crossed with every place it could apply, and each empty cell judged. Rows are logged per batch, ruled by the language owner, and applied before the next batch starts; each row's **Outcome** records the ruling.
 
-Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 adopted (reversed from decline), C-15 and C-16 fixed). Wave 7 (join series on other roles): logged (E-39, E-40, C-17 to C-19), ruled and applied (E-39 adopted as a docs gap, E-40 declined, C-17 to C-19 fixed). Wave 8 (hosted relations and bars): logged (E-41 to E-43), ruled and applied (E-41 and E-43 declined, E-42 adopted). Wave 9 (questions): logged (E-44 to E-49, C-20, C-21, C-13 revisited), ruled and applied (E-44 to E-47 adopted, E-48 and E-49 declined, C-20, C-21 and C-13 fixed). Wave 10 (stand-ins and `/x/` words): logged (E-50, E-51, C-22), ruled and applied (E-50 and E-51 declined, C-22 fixed). Other mechanisms not started.
+Progress: batch 1 (word endings pilot) ruled and applied. Wave 0 batch 2 (role-letter structure) ruled and applied. Wave 1 (vowel series, tone marks) ruled and applied. Wave 2 (pronouns, plurality) ruled and applied. Wave 3 (numbers) ruled and applied. Wave 4 (joins and restrictors): ruled and applied (E-29, E-30 adopted; E-31, E-32 declined; C-12 fixed; C-13 deferred to Wave 9). Wave 5 (hooks): logged (E-33 to E-35, C-14), ruled and applied (E-33 to E-35 declined, C-14 fixed). Wave 6 (spans): logged (E-36 to E-38, C-15, C-16), ruled and applied (E-36 adopted as a docs gap, E-37 and E-38 adopted (reversed from decline), C-15 and C-16 fixed). Wave 7 (join series on other roles): logged (E-39, E-40, C-17 to C-19), ruled and applied (E-39 adopted as a docs gap, E-40 declined, C-17 to C-19 fixed). Wave 8 (hosted relations and bars): logged (E-41 to E-43), ruled and applied (E-41 and E-43 declined, E-42 adopted). Wave 9 (questions): logged (E-44 to E-49, C-20, C-21, C-13 revisited), ruled and applied (E-44 to E-47 adopted, E-48 and E-49 declined, C-20, C-21 and C-13 fixed). Wave 10 (stand-ins and `/x/` words): logged (E-50, E-51, C-22), ruled and applied (E-50 and E-51 declined, C-22 fixed). Wave 11 (predication): logged (E-52, E-53, C-23), ruled and applied (E-52 adopted as a docs gap, E-53 declined, C-23 fixed). Other mechanisms not started.
 
 ## How to read this file
 
@@ -1201,6 +1201,77 @@ Stand-in vowels **a o e u** × ending × role letter. Forward is **-rl** / **-rm
 - A linker stacked with a topic word (E-51).
 
 Confirmed **def** with nothing to add: `darl` `dorl` `derl` `durl` and **-rm** at every vowel on `/z/` `/d/` `/b/`, **-rth** and **-rn** on `/z/` `/d/` `/b/`, a pole + `barth` (*because of that*), nested `derl … darl`, the six linkers at **-m** and firm **-l**, **-r** resume on a linker, topic words on any root, a topic word after a `/y/` turn word, and the topic persisting across a linker.
+
+## Predication
+
+Owning page: [predication](../grammar/predication.md). Wave 11. Cells checked with `node scripts/parse.mjs` (2026-10-03). A parse is not a reading: the classifier accepts several cells that no page teaches.
+
+### Grid
+
+Classification (kind on `/ɡ/`) and identity (**`gugol`** + `/b/`) × role and ending.
+
+| Cell | State |
+|------|-------|
+| Kind `/ɡ/` after a `/z/` name or noun (`zazawan godogal`), with `/w/` hedge, `gul`, `hual`, `yol`, `yel` | def |
+| Kind **-m** (demonym) and **-r** (*of that kind*, [pronouns](../grammar/pronouns.md#cross-role-recast)) | def |
+| Kind **-n** (`godogan`) | gen (a named kind, as **-n** anywhere) |
+| Kind **-x** (`godogax`) | rejected; plural subjects share the kind through a noun join ([joins § shared](../grammar/joins.md#shared-after-the-join)) (def) |
+| Kind on a `/d/` or `/b/` noun (`dazawan godogal varahal`) | def (the noun plus its `/ɡ/`: *Azawan, a dog*) |
+| Kind or property after a verb with no `/d/` (`zalahen vedabal gadadal`) | E-53 |
+| Kind or property after a `/d/` noun, as a result (`dazawan geredal` = *painted it red*) | E-53 (reads as *the red Azawan*) |
+| Kind scope on `th` (`godogathal` …) | def (label scope) |
+| Identity **-l** / **-m** + name `/b/` | def |
+| Identity + common-noun or pronoun `/b/` (`zagavol gugol babazel`, `zalahen gugol bamagon`) | E-52 |
+| Identity + resume `/b/` (`gugol bazawar`) | gen (**-r** on any `/b/`) |
+| Identity with no `/b/` (`gugol`), **-m** with no `/b/` | def (*the same one again*) |
+| Identity **-n** / **-r** (`gugon`, `gugor`) | gen (the ordinary root *coin* as a name / resume; not identity) |
+| Identity + `/z/` or `/d/` second label (`gugol zazawan`, `gugol dazawan`) | rejected / parses as two nouns (a `/b/` is the label) |
+| Identity inside a noun phrase (`zobel gugol bazawan`) | def |
+| Identity question (`yol zalahen gugol bar`), kind question (`yol zodogal gar`) | def |
+| Identity with `gul`, `hual`, `/w/` hedge | def (`hual` and `wabedem` parse; no page teaches `gugol … hual`) |
+| Identity with label scope (`gugothal` …) | gen (a label-scope word on the identity root) |
+| Existence (lone noun, noun + `/ɡ/`) | def |
+| Lone `/d/` or `/b/` noun | rejected, as stated |
+
+### Rows
+
+#### E-52 — identity with a common-noun or pronoun label (*the guard is the police officer*, *it is me*) · intuitive but redundant · P2
+
+- **Proposed reading:** none new. `zagavol gugol babazel.` (*the guard is the police officer*) and `zalahen gugol bamagon.` (*Alahen is me*) already parse and read as the page's rule: two labels, one individual.
+- **Current route:** the same string. The page's examples use a name or `zagavol` + name only, so a learner sees no common noun or pronoun in the `/b/` slot.
+- **Better than current route:** n/a; a docs gap, not a form.
+- **Closes:** *it's me*, *that's him*, *the winner is the guard* (`find-english`: *it is me*, *who is that*, *the same as*)
+- **Recommendation:** adopt as a docs gap (as E-36 and E-39): add one common-noun and one pronoun example to predication § Identity, and note that the second label is a `/b/` whatever its type. No parser change.
+- **Outcome:** adopted as a docs gap — common-noun and pronoun examples added to predication § Identity.
+
+#### E-53 — secondary predicate: *arrived tired*, *painted the wall red* · intuitive but redundant · P2
+
+- **Proposed reading:** a `/ɡ/` word after the verb (`zalahen vedabal gadadal.`) says the subject's state during the act (depictive); after the object (`zalahen vazadol dazawan geredal.`) the object's resulting state.
+- **Example:** `zalahen vedabal gadadal.` parses today as a second predicate unit, with no page teaching it. `zalahen vahahal dazawan gadadal.` reads as *sees tired Azawan*.
+- **Pattern:** verb + `/ɡ/`
+- **Current route:** two sentences with resume (`zalahen gadadal. zalahar vedabal.`), `huwem barl` for *while*, and for a result the adjective root as a verb with `thegem` (*make X ADJ*, [causation § make](../grammar/causation.md#make)).
+- **Better than current route:** slightly shorter for the depictive, but the object case clashes with the noun's own adjective (*the red wall*), so a rule would be subject-only and asymmetrical. Result already has `thegem`.
+- **Conflicts and notes:** [clause § complex chaining](../grammar/clause.md#complex-chaining) already stacks `/ɡ/` words after a name; a second reading of a trailing `/ɡ/` would make `vedabal gadadal gagavol` ambiguous between two states and a state plus a kind.
+- **Closes:** *arrived tired*, *painted it red*, *left it open* (`find-english`: *painted the wall red*, *make him angry*, *arrived tired*)
+- **Recommendation:** decline the form; record in design-decisions. Add a recipe row *arrived tired / painted it red* (two sentences, `huwem barl`, or `thegem`) to the owning `say-*.md` page, and give the stray predicate unit a rejection with a pointer (C-23).
+- **Outcome:** declined — D-33; recipe rows added to say-reasons; stray predicate rejected (C-23).
+
+### Inconsistencies (wave 11)
+
+#### C-23 — the parser accepts predicate cells no page teaches · found in predication
+
+- **Where:** [predication](../grammar/predication.md), [clause](../grammar/clause.md), `src/parse/`
+- **Problem:** after a verb, a bare `/ɡ/` word parses as a predicate unit (`zalahen vedabal gadadal.`, `zalahen vedabal gadadal gagavol.`) with no reading in any page (E-53). (**`gugon`** and **`gugor`** also parse, but only as the ordinary root *coin* with a name or resume ending, so they are not a defect.)
+- **Suggested ruling:** reject a verb followed by a bare `/ɡ/` with a pointer to [predication](../grammar/predication.md#classification) and the two-sentence route. State the limit once in predication. Record in design-decisions.
+- **Outcome:** fixed — the parser rejects it (`predicateAfterVerb`, only when nothing follows and no `/b/` is hosted); stated in predication § Property; D-33.
+
+### None (to add to unassigned-reserved, if the rows above are declined)
+
+- **-x** on the identity root (**-n** / **-r** are the ordinary root *coin*).
+- A verb followed by a bare `/ɡ/` (depictive) or a `/ɡ/` after the object as a result.
+- A `/z/` or `/d/` as the second identity label.
+
+Confirmed **def** with nothing to add: kind and property on `/ɡ/` at every ending the page teaches, `godogal gul` / `hual` / `wabedem godogal`, `yel` / `yul` + `/ɡ/`, existence with and without a `/ɡ/`, `gugol` / `gugom` + name, `gugol` alone, identity in a noun phrase, `yol … gugol bar`, `yol … gar`, and label scope on kinds.
 
 ## Inconsistencies
 
