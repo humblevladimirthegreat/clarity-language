@@ -8,6 +8,8 @@ use [skip-cd] for amplify to not deploy.
 
 # TODO
 
+-buy domain
+-flash cards for claritish
 -prosody
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -final exam

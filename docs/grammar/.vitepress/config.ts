@@ -53,7 +53,7 @@ export default defineConfig({
       { text: 'Inspect', link: '/inspect' },
       { text: 'Terminology', link: '/terminology' },
       { text: 'Saying it in Agazan', link: '/english' },
-      { text: 'Claritish', link: '/claritish/tone-marks' },
+      { text: 'Claritish', link: '/claritish/' },
     ],
     sidebar: [
       {
@@ -74,14 +74,15 @@ export default defineConfig({
       {
         text: 'Claritish: Agazan in English',
         items: [
-          { text: '1. Tone marks', link: '/claritish/tone-marks' },
-          { text: '2. How sure are you?', link: '/claritish/could-be' },
-          { text: '3. How do you know?', link: '/claritish/how-you-know' },
-          { text: '4. Labels', link: '/claritish/labels' },
-          { text: '5. Thanks and sorry', link: '/claritish/thanks-and-sorry' },
-          { text: '6. Allowed, required, agreed', link: '/claritish/allowed-required-agreed' },
-          { text: '7. Decisions and tries', link: '/claritish/decisions-and-tries' },
-          { text: '8. Feelings in three parts', link: '/claritish/feelings' },
+          { text: 'Introduction', link: '/claritish/' },
+          { text: '1. How sure are you?', link: '/claritish/could-be' },
+          { text: '2. How do you know?', link: '/claritish/how-you-know' },
+          { text: '3. Labels', link: '/claritish/labels' },
+          { text: '4. Thanks and sorry', link: '/claritish/thanks-and-sorry' },
+          { text: '5. Allowed, required, agreed', link: '/claritish/allowed-required-agreed' },
+          { text: '6. Decisions and tries', link: '/claritish/decisions-and-tries' },
+          { text: '7. Feelings in three parts', link: '/claritish/feelings' },
+          { text: 'Bonus: Tone marks', link: '/claritish/tone-marks' },
           { text: 'Learn the full language', link: '/claritish/learn-agazan' },
         ],
       },

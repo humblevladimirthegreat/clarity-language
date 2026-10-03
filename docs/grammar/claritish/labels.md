@@ -1,4 +1,4 @@
-# Lesson 4: Labels {#labels}
+# Lesson 3: Labels {#labels}
 
 ## The gap {#gap}
 
@@ -49,16 +49,6 @@ She's a `nurse-thel`.
 
 ::: details Show answer
 He's `bossy-thol` with his brother.
-:::
-
-::: tip Full Agazan
-On an Agazan word, the same letters join the word with no hyphen.
-
-> `zazawan valahathal.`
->
-> z-Azawan | v-lie-th-episode
->
-> "Azawan lied this once."
 :::
 
 <!-- Source (editors): predication.md#label-scope. -->

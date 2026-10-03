@@ -1,4 +1,4 @@
-# Lesson 6: Allowed, required, agreed {#allowed-required-agreed}
+# Lesson 5: Allowed, required, agreed {#allowed-required-agreed}
 
 ## The gap {#gap}
 
@@ -55,16 +55,6 @@ People bring a dish `thumer`.
 
 ::: details Show answer
 Talking during the film `theder`.
-:::
-
-::: tip Full Agazan
-In a full sentence, you can name who gave the yes.
-
-> `zazawan vezebel thuxegom bahaben.`
->
-> z-Azawan | v-tell | [th-CONSENT-given | b-Ahaben]
->
-> "Azawan tells, and Ahaben said yes to it."
 :::
 
 <!-- Source (editors): sakes.md#permission, sakes.md#requirement, sakes.md#consent; x sound from phonology.md. -->

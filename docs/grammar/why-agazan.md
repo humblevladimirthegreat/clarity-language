@@ -10,7 +10,9 @@ The design aims at three outcomes: [compassion](#compassion), [rationality](#rat
 
 ### Try it in English first {#try-it-in-english}
 
-You don't have to learn the whole language to start using these ideas. [Claritish](claritish/tone-marks.md) is eight short lessons on dropping single Agazan words into everyday English: *could be*, how you know, how far a label reaches, thanks that name the need, and more. Every word it teaches is already real Agazan.
+Do you have to learn a whole language to use these ideas? No. [Claritish](claritish/index.md) is seven short lessons on dropping single Agazan words into everyday English, where an English adverb or tag would go. *The package arrives Friday `thovum`* says it could be so, in one word English has no equivalent for. Other lessons cover how you know, how far a label reaches, thanks that name the need, and more.
+
+Every word Claritish teaches is already real Agazan, so nothing you learn there is thrown away. [Start with the Claritish introduction](claritish/index.md); each lesson is short.
 
 ## Limits {#limits}
 
@@ -58,6 +60,8 @@ English *Alahen is angry* can mean one outburst or the kind of person Alahen is.
 
 Marking a label's reach helps you describe what happened without turning it into who someone is, including yourself.
 
+In English: [Claritish Lesson 3, Labels](claritish/labels.md).
+
 ##### Can, can’t, and won’t
 
 English *I can’t* can mean a temporary block, a lasting inability, or a choice not to.
@@ -103,6 +107,8 @@ Agazan [builds an emotion](sakes.md#emotion-compose) from three parts: a [sake](
 
 Building the feeling from those parts helps you ask for what would actually help instead of stopping at the label.
 
+In English: [Claritish Lesson 7, Feelings in three parts](claritish/feelings.md).
+
 ##### Thanks that name the need {#thanks-that-name-the-need}
 
 English *thank you* says you are grateful but not for what.
@@ -110,6 +116,8 @@ English *thank you* says you are grateful but not for what.
 Agazan has no set phrase for [thanks](sakes.md#thanks-sorry). You say which of your sakes was met, and saying it to the person who acted is the thanks. The ending says whether the payoff lasts or is only for now. To name someone else's sake instead, put that person right after the sake word ([whose stake](sakes.md#whose-stake)).
 
 Naming the need that was met makes thanks specific, which helps both of you notice what actually helped.
+
+In English: [Claritish Lesson 4, Thanks and sorry that say why](claritish/thanks-and-sorry.md).
 
 #### Treating a cause as a fault {#trap-fault}
 
@@ -144,6 +152,8 @@ It is easy to treat a *could be* that keeps looping in your head as settled fact
 [Evidentiality](knowing.md#evidentiality) lets a claim about the world name **how you know**: live look, memory, record, pattern, inference, hearsay, gut feeling, or story. Memory (**WITNESSED**) is recalling a scene from earlier, and memory can be wrong. A live look (**LIVE**) is seeing it while it is still in view.
 
 The [ending](knowing.md#evidence-strength) on that evidence word says how strong the evidence is (a vivid memory or a hazy one, a reliable source or a rumor), separately from how likely the claim is. Marking how you know helps you catch overconfidence and hearsay before you treat a take as settled fact.
+
+In English: [Claritish Lesson 1, How sure are you?](claritish/could-be.md) and [Lesson 2, How do you know?](claritish/how-you-know.md).
 
 ##### Always, usually, and how many cases {#always-usually-how-many-cases}
 
@@ -203,6 +213,8 @@ A [requirement](sakes.md#requirement) word says where a *must* comes from: a rul
 
 Naming the source helps you notice when a *have to* is only an expectation, so you can decide whether to meet it.
 
+In English: [Claritish Lesson 5, Allowed, required, agreed](claritish/allowed-required-agreed.md).
+
 ##### Wanting, planning, and deciding {#wanting-planning-and-deciding}
 
 English *will* mixes plan and prediction together, and *I want to* can sound like a promise. It is easy to talk as if the future were already known (a certain prediction that fuels anxiety or overconfidence), while a pick often sounds more locked than it is.
@@ -224,6 +236,8 @@ English *try* does not say whether you are committing to keep going or only test
 [Try](intention.md#try) says that an attempt happens and leaves the outcome open. Its ending says how far the attempt will go: a committed attempt (`thudul`) keeps going until it works or is ruled out, and a trial run (`thudur`) is a low-stakes probe where failing is useful to know.
 
 Calling an attempt a trial run helps you start without betting everything on it: if it fails, finding that out was the point.
+
+In English: [Claritish Lesson 6, Decisions and tries](claritish/decisions-and-tries.md).
 
 ##### Planning the backup first {#planning-the-backup-first}
 
@@ -300,7 +314,7 @@ Some don’t believe it is possible for a language to influence the speaker’s 
 
 Some are reminded of Newspeak from 1984, where a totalitarian government alters the language to influence the populace into being more compliant. What makes Newspeak unethical is that the language is forced upon an unwitting populace.
 
-For Agazan and similar languages, as long as using the language is voluntary, and the speaker knows how the language influences their thoughts (and the language delivers on those promises), then it is morally good. Learning the language is like enrolling in a self-help course to change your thought patterns: clearly ethical if it changes you in the healthy way you want.
+For Agazan and similar languages, as long as using the language is voluntary, and the speaker knows how the language influences their thoughts (and the language delivers on those promises), then it is morally good. Learning the language is like enrolling in a self-help course to change your thought patterns: clearly ethical if it changes you in the healthy way you want. [Claritish](claritish/index.md) lets you sample the effect in English before you commit to anything more.
 
 Language influences but does not determine thought. Speakers who wish to think or communicate in a way discouraged by the language are still capable of doing so (though the sentences will likely be longer).
 
@@ -314,4 +328,4 @@ Even if the language does lose its potency over a century, having a positive imp
 
 ## Next {#next}
 
-Continue with [introduction.md](introduction.md) for the name, grammar design, and how to learn these docs, then [phonology.md](phonology.md#beginner) for letters, [word-endings.md](word-endings.md#beginner) for citation endings, [clause.md](clause.md#beginner) for clause shape, [speech-moves.md](speech-moves.md#beginner) for turns, then [dependents.md](dependents.md#beginner). Community updates: [Agazan on Reddit](https://www.reddit.com/r/ClarityLanguage).
+To try the ideas in English first, start with [Claritish](claritish/index.md). To go straight to the language, continue with [introduction.md](introduction.md) for the name, grammar design, and how to learn these docs, then [phonology.md](phonology.md#beginner) for letters, [word-endings.md](word-endings.md#beginner) for citation endings, [clause.md](clause.md#beginner) for clause shape, [speech-moves.md](speech-moves.md#beginner) for turns, then [dependents.md](dependents.md#beginner). Community updates: [Agazan on Reddit](https://www.reddit.com/r/ClarityLanguage).

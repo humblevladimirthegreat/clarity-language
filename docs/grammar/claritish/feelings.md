@@ -1,4 +1,4 @@
-# Lesson 8: Feelings in three parts {#feelings}
+# Lesson 7: Feelings in three parts {#feelings}
 
 ## The gap {#gap}
 
@@ -6,9 +6,9 @@ One English emotion word (*anxious*, *resentful*, *proud*) hides three things: w
 
 ## The forms {#forms}
 
-Start from a thanks or sorry word from Lesson 5: `th` + sake + `tha` (met) or `thu` (unmet) + its ending. Keep that whole word, then add a **locus** and a **motion ending**. Put it after the English clause the feeling is about, like any other drop-in. On its own, with no clause, it says how you feel right now.
+Start from a thanks or sorry word from Lesson 4: `th` + sake + `tha` (met) or `thu` (unmet) + its ending. Keep that whole word, then add a **locus** and a **motion ending**. Put it after the English clause the feeling is about, like any other drop-in. On its own, with no clause, it says how you feel right now.
 
-The word now has two **-l / -m / -r** slots: the ending from Lesson 5 stays in the middle, and the motion ending goes last.
+The word now has two **-l / -m / -r** slots: the ending from Lesson 4 stays in the middle, and the motion ending goes last.
 
 | `thulo` | `thu` | `r` | `ao` | `r` |
 |---------|-------|-----|------|-----|
@@ -73,16 +73,6 @@ The meeting ran two hours over `thahuthumuem`.
 
 ::: details Show answer
 `thamethumal`.
-:::
-
-::: tip Full Agazan
-In a full sentence, a word in front of the feeling can say how strong it is.
-
-> `zebeyom wohahal gulothamar.`
->
-> z-draft | [w-ocean | g-competence-met-any-term-INTERNAL-SURGING]
->
-> "Overwhelmingly proud of the draft."
 :::
 
 <!-- Source (editors): sakes.md#emotion-compose, sakes.md#feeling-no-object. -->

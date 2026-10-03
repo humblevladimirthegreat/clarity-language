@@ -1,4 +1,4 @@
-# Lesson 7: Decisions and tries {#decisions-and-tries}
+# Lesson 6: Decisions and tries {#decisions-and-tries}
 
 ## The gap {#gap}
 
@@ -45,16 +45,6 @@ We're selling the house `thehul`.
 
 ::: details Show answer
 I'm staying home tonight `thehur`.
-:::
-
-::: tip Full Agazan
-A full sentence can name the backup in case the try fails.
-
-> `zazawan thudur vowogal xon zazawar vezehel.`
->
-> [z-Azawan | th-ATTEMPT-trial | v-walk | x-or-else | z-←Azawan | v-sing]
->
-> "Azawan tries walking; failing that, Azawan sings."
 :::
 
 <!-- Source (editors): intention.md#decision, intention.md#try. -->

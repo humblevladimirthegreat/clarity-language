@@ -1,4 +1,4 @@
-# Lesson 2: How sure are you? {#could-be}
+# Lesson 1: How sure are you? {#could-be}
 
 ## The gap {#gap}
 
@@ -48,16 +48,6 @@ He forgot `thovum`.
 
 ::: details Show answer
 Aliens built it `thovur`.
-:::
-
-::: tip Full Agazan
-In a full sentence, the same word sits among words built to carry it.
-
-> `zalahen thovum vedabal dahaben.`
->
-> z-Alahen | th-MAY | v-departure | d-Ahaben
->
-> "Alahen may be leaving Ahaben."
 :::
 
 <!-- Source (editors): knowing.md#may, knowing.md#may-hold; pronunciation from phonology.md. -->

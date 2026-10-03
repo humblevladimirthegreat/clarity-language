@@ -1,12 +1,4 @@
----
-prev: false
----
-
-# Lesson 1: Tone marks {#tone-marks}
-
-**Claritish** is English with a few Agazan words dropped in. Each drop-in says something English has no word for: how sure you are, how you know, what a thank-you was for. You keep speaking English and add the word where an English adverb or tag would go. Every drop-in is a real Agazan word, spelled exactly as Agazan spells it, so each one you learn here is already part of the full language.
-
-In your own writing, drop-ins need no marking: no italics, no quotes. These pages set them in `code font` only so you can spot them.
+# Bonus: Tone marks {#tone-marks}
 
 ## The gap {#gap}
 
@@ -62,16 +54,6 @@ I asked for the &blue one.
 
 ::: details Show answer
 ?!She's moving to Iceland.
-:::
-
-::: tip Full Agazan
-The marks work the same way in a full Agazan sentence.
-
-> `zazawan vahahal &dodogal.`
->
-> z-Azawan | v-see | &d-dog
->
-> "Azawan saw a *dog*." (a dog, not something else)
 :::
 
 <!-- Source (editors): speech-moves.md#tone-marks. Lesson pages never link into the grammar; see docs/meta/grammar-docs.md#claritish-track. -->

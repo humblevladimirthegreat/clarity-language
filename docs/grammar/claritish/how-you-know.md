@@ -1,4 +1,4 @@
-# Lesson 3: How do you know? {#how-you-know}
+# Lesson 2: How do you know? {#how-you-know}
 
 ## The gap {#gap}
 
@@ -19,7 +19,7 @@ English doesn't mark whether a claim was seen, remembered, worked out, or heard 
 
 Swap the ending to say **how strong the evidence is**: **-l** strong, **-m** the default, **-r** weak. `thewar` is a rumor, `thevol` is a vivid memory, and `thahor` is a faint hunch. Strength is how much the claim rests on, not how likely the event is. A solid source can still report something unlikely.
 
-This is the same settled-to-passing scale as Lesson 2: solid evidence is lasting (**-l**), and a rumor could shift at any moment (**-r**).
+This is the same settled-to-passing scale as Lesson 1: solid evidence is lasting (**-l**), and a rumor could shift at any moment (**-r**).
 
 ## Examples {#examples}
 
@@ -57,16 +57,6 @@ The bus is late `thobam`.
 
 ::: details Show answer
 Something's wrong `thahom`.
-:::
-
-::: tip Full Agazan
-Here the weak *someone told me* sits in a full sentence.
-
-> `zalahen thewar vedabal.`
->
-> z-Alahen | th-TOLD.weak | v-departure
->
-> "Rumor has it Alahen left."
 :::
 
 <!-- Source (editors): knowing.md#evidentiality, knowing.md#evidence-strength. -->

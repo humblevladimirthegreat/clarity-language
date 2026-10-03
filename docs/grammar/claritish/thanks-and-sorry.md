@@ -1,4 +1,4 @@
-# Lesson 5: Thanks and sorry that say why {#thanks-and-sorry}
+# Lesson 4: Thanks and sorry that say why {#thanks-and-sorry}
 
 ## The gap {#gap}
 
@@ -62,16 +62,6 @@ I forgot your birthday. `thanathum behodon`.
 
 ::: details Show answer
 You explained the bill to me. `thadothal`.
-:::
-
-::: tip Full Agazan
-A sake word can also praise a thing you own.
-
-> `zebel ganathal.`
->
-> z-present | g-relatedness-met-lasting
->
-> "My gift serves relatedness in the long term."
 :::
 
 <!-- Source (editors): sakes.md#thanks-sorry, sakes.md#sake-inventory, sakes.md#which-sake. -->

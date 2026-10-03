@@ -8,7 +8,6 @@ next: false
 
 With a handful of drop-ins, your English now says:
 
-- how you mean it (tone marks)
 - how sure you are, and what you'll do about it (*could be*)
 - how you know (live, memory, record, pattern, clues, hearsay, gut, tale) and how strong the evidence is
 - how far a label reaches (this time, a role, one relationship, a type)
@@ -16,6 +15,7 @@ With a handful of drop-ins, your English now says:
 - who allowed something, who required it, and whether the person it affects agreed
 - how settled a decision or a try is
 - a feeling as a need, a place, and a motion, instead of one opaque label
+- how you mean it (tone marks)
 
 ## These were never add-ons {#never-add-ons}
 
