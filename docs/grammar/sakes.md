@@ -132,7 +132,7 @@ One noun can carry both a **`tha`** word and a **`thu`** word, and the pairing r
 
 A sake word is a sake root with mid-word **`th`**, a stance vowel, and an ending. `/ɡ/` talks about a **noun you keep**; `/th/` talks about the **clause**. An unowned noun uses a [stimulus](#stimulus) word, with the same sake word on `/w/` immediately before it.
 
-A sake word ends in **-l**, **-m**, or **-r**, from that stance’s table. It never takes **-n**.
+A sake word ends in **-l**, **-m**, or **-r**, from that stance’s table. It never takes **-n**. The stance itself is one vowel (`tha` / `the` / `tho` / `thu`). Letters after that vowel that look like another vowel are the [emotion](#emotion-compose) locus, and they come after the horizon letter. On any other root, mid-word **`th`** plus a vowel is [label scope](predication.md#label-scope).
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|

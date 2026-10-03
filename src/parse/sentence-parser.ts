@@ -96,10 +96,11 @@ function isGlHead(token: IToken): boolean {
   return token.tokenType === G && (token.payload as LexWord).gl === true;
 }
 
-/** A label-scope `tho` verb hosts the `/b/` right after it (predication.md#scope-relative). */
+/** A label-scope verb that names a pair hosts the `/b/` right after it (predication.md#scope-relative). */
 function isScopeThoVerb(token: IToken): boolean {
   const family = (token.payload as LexWord | undefined)?.family;
-  return token.tokenType === V && family?.kind === "x" && family.xFamily === "scope" && family.stanceVowel === "o";
+  const v = family?.kind === "x" && family.xFamily === "scope" ? family.stanceVowel : undefined;
+  return token.tokenType === V && (v === "o" || v === "ao" || v === "uo");
 }
 
 function isAsOfWToken(token: IToken): boolean {

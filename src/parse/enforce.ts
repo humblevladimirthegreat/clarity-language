@@ -312,6 +312,7 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   enforceStandInRole(word);
   if (family.kind === "x" && family.xFamily === "sake") {
     if (word.pos && !SAKE_POS.has(word.pos)) throw new ConstructionError("sakeSlot", word.raw);
+    if (family.stanceVowel && family.stanceVowel.length > 1) throw new ConstructionError("sakeStackedVowel", word.raw);
     if (family.horizon && (family.stanceVowel === "e" || word.ending === "n")) {
       throw new ConstructionError("emotionTail", word.raw);
     }

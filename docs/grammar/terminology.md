@@ -364,6 +364,14 @@ Hosted: noun bolted onto a complex `/ɡ/`, `/h/`, or `/th/`. Unhosted: recipient
 
 [Clause](clause.md#extra-nouns)
 
+### Label scope
+
+Mid-word **`th`** plus a vowel on a content root or role compound: this episode (**`tha`**), practiced role (**`the`**), this pair (**`tho`**), type across scenes (**`thu`**), or a stacked vowel.
+
+[Predication](predication.md#label-scope)
+
+**Compare with:** [restrictor](#restrictor) names the occasions, not the kind of claim. [Usual role](#usual-role) is practiced-role **`the`** on a role compound.
+
 ### Locative relation
 
 Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; frame **-m** *amid* / *near* / *over* / *away from* / *in the direction of* / *out from among* / *by way of*) as extra-noun [hooks](hooks.md#extra-noun) plus landmark `/b/`. *Between* is hosted `/h/` or `/ɡ/` plus a `/b/` join. A *from A to B* path is two hook extras (source, then goal).
@@ -849,7 +857,7 @@ Join / restrictor **-r** (*something* / *sometimes*); fill-ask under question.
 
 ### Usual role
 
-A role compound plus pattern scope **`the`** after the stem: the role as a repeated tendency, such as an occupation (*a teacher*). A bare role compound makes no claim about how often.
+A role compound plus practiced-role scope **`the`** after the stem: the role as the office they inhabit (*a teacher*). A bare role compound makes no claim about how often.
 
 [Role compounds](roles.md#usual-role)
 

@@ -321,7 +321,7 @@ z-police | g-walk
 
 ### Classification packaging {#classification-packaging}
 
-You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra choice here is how tightly that kind holds: hedge it, mark it as the usual type, or deny it. The kind word stays on `/ɡ/`; a hedge `/w/` before it, characterizing **`hual`**, or negation **`gul`** packages that same pair.
+You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra choice here is how tightly that kind holds: hedge it, mark it as holding at every time, or deny it. The kind word stays on `/ɡ/`; a hedge `/w/` before it, characterizing **`hual`**, or negation **`gul`** packages that same pair.
 
 > `zazawan godogal gul.`
 >
@@ -332,7 +332,7 @@ You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra c
 | Agazan | Use | English |
 |--------|-----|---------|
 | `/w/` hedge before the classifying `/ɡ/` | soft / hedged class | *Azawan is something of a dog* / *a dog, sort of* |
-| `zazawan godogal hual` | characterizing / habitual | *Azawan is the dog type* |
+| `zazawan godogal hual` | characterizing / habitual | *Azawan is always a dog* |
 | `zazawan godogal gul` | negation | *Azawan is not a dog* |
 
 > `zazawan wabedem godogal.`
@@ -341,7 +341,7 @@ You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra c
 >
 > "Azawan is somewhat of a dog."
 
-**Related form:** *the dog type* / habitual class uses [**hual**](restrictors.md).
+**Related form:** habitual *always* uses [**hual**](restrictors.md).
 
 **Related form:** *not a dog* uses [negation **u**](joins.md#negation-u) (`gul`).
 
@@ -376,90 +376,153 @@ Beginner already used closed **`gugol`** (*is the same as*). The other endings o
 
 ### Label scope {#label-scope}
 
-English *Alahen is angry* can mean one outburst or the kind of person Alahen is. The same word does both jobs, and a single act easily turns into a claim about someone's nature. To say how far a label reaches, write the root, then mid-word **`th`**, then a scope vowel, then the ending. The vowel says what the label covers: this one occasion, a pattern, one relationship, or only a name. The word keeps its usual slot, so a label on `/ɡ/` is still *is ADJ*, and a verb is still the verb.
+English *Alahen is angry* can mean one outburst or the kind of person Alahen is. The same word does both jobs, and a single act easily turns into a claim about someone's nature. To say what kind of claim a label is, write the root, then mid-word **`th`**, then a scope vowel, then the ending. The vowel says whether this is this stretch of doing, a practiced role, true in one relationship, or a type that follows them across scenes. The word keeps its usual slot, so a label on `/ɡ/` is still *is ADJ*, and a verb is still the verb.
 
 > `zalahen ganegethal.`
 >
-> z-Alahen | g-angry-th-once
+> z-Alahen | g-angry-th-episode
 >
 > "Alahen is angry this time."
 
-A label with no scope vowel says nothing about how far it reaches. Use one when that reach matters, the way you would add *this time* or *tends to* in English.
+A label with no scope vowel says nothing about how far it reaches. Use one when that reach matters, the way you would add *this time* or *a teacher* in English.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`tha`** | this one occasion only | *angry this time*, *lied (this once)* | **a** ≈ add (one instance added) |
-| **`the`** | a pattern: a repeated tendency, not a fixed nature | *tends to be angry*, *often lies* | **e** ≈ order (a sequence of times) |
-| **`tho`** | true in one relationship: relative to the hosted `/b/` right after it, or to an unstated party | *a stranger to Azawan*, *lying, as far as Alahen is concerned* | **o** ≈ one (that extra one) |
-| **`thu`** | a name only: a tag for what happens, not an explanation of it | *what gets called anxiety*, *so-called lazy* | **u** ≈ undo (undo the implied cause) |
+| **`tha`** | this episode: this stretch of doing | *angry this time*, *lied (this once)* | **a** ≈ add (one instance added) |
+| **`the`** | a practiced role: the office they inhabit | *a teacher*, *lying as their craft* | **e** ≈ order (a sequence of practice) |
+| **`tho`** | this pair: true in one relationship | *a stranger to Azawan*, *lying, as far as Alahen is concerned* | **o** ≈ one (that extra one) |
+| **`thu`** | a type across scenes: the quality follows them | *an anxious type*, *a teacher type* | **u** ≈ undo (not only here) |
 
 The seam goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`, on a content root or a [role compound](#scope-role). It labels a content word, so a [special pronoun](pronouns.md#special-pronouns) with **-n** takes none (its root on **-l** is an ordinary word, `zamagothal` *a microphone, this time*). The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead.
 
-#### This occasion (`tha`) {#scope-occasion}
+To say **when** that claim counts (*only at school*, *always except when raining*), put a [restrictor](restrictors.md) on `/w/` immediately before a scoped `/ɡ/` word, with the circumstance words on `/w/` too. Scope is the kind of claim; the restrictor is the occasions. **`/h/`** still limits the clause (*walks only when raining*), not the label.
+
+> `zalahen wanadal wal gaxedehothel.`
+>
+> z-Alahen | [w-night | w-only-when | g-agent-x-teach-th-role]
+>
+> "Alahen is a teacher only at night."
+
+**Compare with:** characterizing **`hual`** / **`wual`** says the claim holds at every time. **`thu`** says you are treating them as that type across scenes, which can still have exceptions. **`wual gaxedehothel`** is the office at every time; **`gaxedehothul`** is the type-claim; both together doubles down.
+
+#### This episode (`tha`) {#scope-occasion}
 
 > `zazawan valahathal.`
 >
-> z-Azawan | v-lie-th-once
+> z-Azawan | v-lie-th-episode
 >
 > "Azawan lied this once."
 
-#### A pattern (`the`) {#scope-pattern}
+#### Practiced role (`the`) {#scope-occupation}
 
-> `zazawan valahathel.`
+> `zalahen gaxedehothel.`
 >
-> z-Azawan | v-lie-th-pattern
+> z-Alahen | g-agent-x-teach-th-role
 >
-> "Azawan tends to lie."
+> "Alahen is a teacher."
 
-**Compare with:** characterizing **`hual`** (`zazawan godogal hual`) says the label holds at every time. **`the`** says it holds often, with exceptions left uncounted.
+On a verb, **`the`** is that act as their practice, not one outing: `zazawan valahathel` is *Azawan lies as their craft*.
 
-#### Relative to a party (`tho`) {#scope-relative}
+**Compare with:** *usually* / *often* is a [restrictor](restrictors.md) (`huam`, `war`). **`thu`** is the type-claim (*a lying type*), which is not the office.
+
+#### This pair (`tho`) {#scope-relative}
 
 Put the party in `/b/` right after the word. On `/ɡ/`, `/h/`, and `/v/`, that `/b/` is hosted by the **`tho`** word, so a verb's recipient comes after the pair. On a noun, **`tho`** stands alone; to name the party, say the label on `/ɡ/` instead.
 
 > `zazawan gelehothom balahen.`
 >
-> z-Azawan | [g-strangeness-th-relative | b-Alahen]
+> z-Azawan | [g-strangeness-th-pair | b-Alahen]
 >
 > "Azawan is a stranger to Alahen."
 
 > `zazawan valahathol balahen.`
 >
-> z-Azawan | [v-lie-th-relative | b-Alahen]
+> z-Azawan | [v-lie-th-pair | b-Alahen]
 >
 > "To Alahen, what Azawan does counts as lying."
 
 With no `/b/`, the party is unstated: *a stranger (to someone)*.
 
-#### Name only (`thu`) {#scope-name-only}
+#### Type across scenes (`thu`) {#scope-type}
 
 > `zalahen ganagothul.`
 >
-> z-Alahen | g-anxious-th-name-only
+> z-Alahen | g-anxious-th-type
 >
-> "Alahen is what gets called anxious."
+> "Alahen is an anxious type."
 
-**Compare with:** **-n** makes a proper name, and a [paraphrase span](spans.md) quotes someone's wording. **`thu`** keeps the ordinary word and marks it as a label that explains nothing.
+**Compare with:** a [mention](spans.md#mention) talks about the spelling (`glelel`). **`thu`** still predicates of the person: you are applying the type, not naming letters.
 
 #### On a role compound {#scope-role}
 
-A [role compound](roles.md#role-compounds) takes the same seam after its stem, which scopes the role, not the act. A bare role compound leaves the reach unsaid (`gaxedehol`, *one who teaches*). **`the`** makes it the [usual role](roles.md#usual-role): `gaxedehothel` is *is a teacher*. **`tha`** keeps it to this time (`gaxedehothal`). **`thu`** is *so-called*, and **`tho`** takes its `/b/` like any other `/ɡ/`.
+A [role compound](roles.md#role-compounds) takes the same seam after its stem, which scopes the role, not the act. A bare role compound leaves the reach unsaid (`gaxedehol`, *one who teaches*). **`the`** makes it the [usual role](roles.md#usual-role): `gaxedehothel` is *is a teacher*. **`tha`** keeps it to this time (`gaxedehothal`). **`thu`** is a teacher type, and **`tho`** takes its `/b/` like any other `/ɡ/`.
 
 > `zalahen gaxedehothal.`
 >
-> z-Alahen | g-agent-x-teach-th-once
+> z-Alahen | g-agent-x-teach-th-episode
 >
 > "Alahen is the teacher this time."
 
 > `zaxedehothul varahal.`
 >
-> z-agent-x-teach-th-name-only | v-run
+> z-agent-x-teach-th-type | v-run
 >
-> "A so-called teacher runs."
+> "A teacher type runs."
 
 A role compound carries one seam, so it takes this scope or the [ability](intention.md#role-ability) vowel, not both. Scope on the stem alone (`vedehothal`) scopes the teaching.
 
 **Compare with:** on an arrow root, [**`tho`** + `/b/`](roles.md#landmark-facing) is the landmark's own facing (*behind the house*): the direction relative to that landmark.
+
+#### Stacked scope {#scope-stacks}
+
+The four letters also stack, with the same pairs as [joins](joins.md) and [hooks](hooks.md). Leading **`u`** inverts the second letter. The other stacks are frozen units (*on*, *using*, *toward*), not “first job then second job.”
+
+| Agazan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`thao`** | this episode **on** this pair | *teacher this time, to Alahen* | **ao** ≈ on |
+| **`thae`** | **using** the role as a means | *using teacher (as a tool)* | **ae** ≈ using |
+| **`thoe`** | **toward** the role | *becoming a teacher* | **oe** ≈ toward |
+| **`thua`** | type **except** this episode | *a teacher type, except this time* | **ua** ≈ everything but |
+| **`thuo`** | type **except** this pair | *a teacher type, except with Alahen* | **uo** ≈ anything but that one |
+| **`thue`** | **not in that capacity** | *not as a teacher* | **ue** ≈ against / outside |
+
+> `zazawan valahathaol balahen.`
+>
+> z-Azawan | [v-lie-th-on-pair | b-Alahen]
+>
+> "This once, to Alahen, it counts as lying."
+
+> `zSELFn gaxedehothael.`
+>
+> z-SELF | g-agent-x-teach-th-using
+>
+> "I am using teacher (as a tool)."
+
+> `zalahen gaxedehothoel.`
+>
+> z-Alahen | g-agent-x-teach-th-toward-role
+>
+> "Alahen is becoming a teacher."
+
+> `zazawan valahathual.`
+>
+> z-Azawan | v-lie-th-except-episode
+>
+> "A lying type, except this time."
+
+> `zazawan ganegethuol balahen.`
+>
+> z-Azawan | [g-angry-th-except-pair | b-Alahen]
+>
+> "Angry as a type, except with Alahen."
+
+> `zSELFn gaxedehothuel.`
+>
+> z-SELF | g-agent-x-teach-th-outside-role
+>
+> "I am not speaking as a teacher."
+
+**`thao`** and **`thuo`** take `/b/` the same way **`tho`** does. **`thae`** is not a [mention](spans.md#mention): the person is still the one you describe, and the role is a means. **`thue`** is off-duty or a refused frame, not *fake teacher* and not [FORMER](knowing.md#former-climate).
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -489,6 +552,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *strangeness* | `elehom` |
 | *teach* | `edehol` |
 | *run* | `arahal` |
+| *your name* | `SELFn` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -500,7 +564,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Azawan | [g-guard | g-not]
 :::
 
-**2.** *Alahen is the craft type.*
+**2.** *Alahen is always a craftsperson.*
 
 ::: details Show answer
 `zalahen gageval hual.`
@@ -561,15 +625,15 @@ z-guard | [[g-SAME | b-Ahaben] | g-not]
 ::: details Show answer
 `zagavol ganegethal.`
 
-z-guard | g-angry-th-once
+z-guard | g-angry-th-episode
 :::
 
-**10.** *Azawan tends to lie.*
+**10.** *Azawan is a lying type.*
 
 ::: details Show answer
-`zazawan valahathel.`
+`zazawan valahathul.`
 
-z-Azawan | v-lie-th-pattern
+z-Azawan | v-lie-th-type
 :::
 
 **11.** *To Alahen, what the guard does counts as lying.*
@@ -577,15 +641,15 @@ z-Azawan | v-lie-th-pattern
 ::: details Show answer
 `zagavol valahathol balahen.`
 
-z-guard | [v-lie-th-relative | b-Alahen]
+z-guard | [v-lie-th-pair | b-Alahen]
 :::
 
-**12.** *Ahaben is what gets called anxious.*
+**12.** *Ahaben is an anxious type.*
 
 ::: details Show answer
 `zahaben ganagothul.`
 
-z-Ahaben | g-anxious-th-name-only
+z-Ahaben | g-anxious-th-type
 :::
 
 **13.** *Alahen is a teacher this time.*
@@ -593,7 +657,63 @@ z-Ahaben | g-anxious-th-name-only
 ::: details Show answer
 `zalahen gaxedehothal.`
 
-z-Alahen | g-agent-x-teach-th-once
+z-Alahen | g-agent-x-teach-th-episode
+:::
+
+**14.** *Alahen is a teacher.*
+
+::: details Show answer
+`zalahen gaxedehothel.`
+
+z-Alahen | g-agent-x-teach-th-role
+:::
+
+**15.** *This once, to Alahen, it counts as lying.*
+
+::: details Show answer
+`zazawan valahathaol balahen.`
+
+z-Azawan | [v-lie-th-on-pair | b-Alahen]
+:::
+
+**16.** *I am using teacher (as a tool).*
+
+::: details Show answer
+`zSELFn gaxedehothael.`
+
+z-SELF | g-agent-x-teach-th-using
+:::
+
+**17.** *Alahen is becoming a teacher.*
+
+::: details Show answer
+`zalahen gaxedehothoel.`
+
+z-Alahen | g-agent-x-teach-th-toward-role
+:::
+
+**18.** *A lying type, except this time.*
+
+::: details Show answer
+`zazawan valahathual.`
+
+z-Azawan | v-lie-th-except-episode
+:::
+
+**19.** *Angry as a type, except with Alahen.*
+
+::: details Show answer
+`zazawan ganegethuol balahen.`
+
+z-Azawan | [g-angry-th-except-pair | b-Alahen]
+:::
+
+**20.** *I am not speaking as a teacher.*
+
+::: details Show answer
+`zSELFn gaxedehothuel.`
+
+z-SELF | g-agent-x-teach-th-outside-role
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
@@ -613,7 +733,7 @@ z-Ahaben | [g-guard | g-not]
 
 [z-Azawan | g-craft] | h-always
 
-*Azawan is the craft type.*
+*Alahen is always a craftsperson.*
 :::
 
 **3.** `zagavol gugom bazawan.`
@@ -649,7 +769,7 @@ z-Alahen | [[g-SAME | b-Ahaben] | g-not]
 
 [z-Azawan | g-guard] | h-always
 
-*Azawan is the guard type.*
+*Azawan is always a guard.*
 :::
 
 **7.** `zevevol geredal.`
@@ -674,25 +794,25 @@ z-Alahen | [g-craft | g-not]
 
 ::: details Show answer
 
-z-Ahaben | [g-strangeness-th-relative | b-Azawan]
+z-Ahaben | [g-strangeness-th-pair | b-Azawan]
 
 *Ahaben is a stranger to Azawan.*
 :::
 
-**10.** `zalahen ganegethel.`
+**10.** `zalahen ganegethul.`
 
 ::: details Show answer
 
-z-Alahen | g-angry-th-pattern
+z-Alahen | g-angry-th-type
 
-*Alahen tends to be angry.*
+*Alahen is an angry type.*
 :::
 
 **11.** `zazawan valahathal.`
 
 ::: details Show answer
 
-z-Azawan | v-lie-th-once
+z-Azawan | v-lie-th-episode
 
 *Azawan lied this once.*
 :::
@@ -701,18 +821,36 @@ z-Azawan | v-lie-th-once
 
 ::: details Show answer
 
-z-agent-x-teach-th-name-only | v-run
+z-agent-x-teach-th-type | v-run
 
-*A so-called teacher runs.*
+*A teacher type runs.*
 :::
 
-**12.** `zagavol ganagothul.`
+**13.** `zagavol ganagothul.`
 
 ::: details Show answer
 
-z-guard | g-anxious-th-name-only
+z-guard | g-anxious-th-type
 
-*The guard is what gets called anxious.*
+*The guard is an anxious type.*
+:::
+
+**14.** `zalahen gaxedehothel.`
+
+::: details Show answer
+
+z-Alahen | g-agent-x-teach-th-role
+
+*Alahen is a teacher.*
+:::
+
+**15.** `zSELFn gaxedehothuel.`
+
+::: details Show answer
+
+z-SELF | g-agent-x-teach-th-outside-role
+
+*I am not speaking as a teacher.*
 :::
 
 ## See also

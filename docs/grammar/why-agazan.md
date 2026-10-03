@@ -91,7 +91,7 @@ Composing emotion from sake + locus + motion helps you ask for what would actual
 
 English *Alahen is angry* can mean one outburst or the kind of person Alahen is. One act slides into a verdict on someone's nature, and a name for a problem (*lazy*, *anxious*) starts to sound like its cause.
 
-[Label scope](predication.md#label-scope) lets any label say how far it reaches: this one occasion, a pattern with exceptions, true in one relationship (*a stranger to Azawan*), or only a name that explains nothing.
+[Label scope](predication.md#label-scope) lets any label say what kind of claim it is: this stretch of doing, a practiced role, true in one relationship (*a stranger to Azawan*), or a type that follows them across scenes.
 
 Marking a label's reach helps you describe what happened without turning it into who someone is, including yourself.
 

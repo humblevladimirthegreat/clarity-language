@@ -180,7 +180,7 @@ English names a person by what they usually do (*a singer*, *a manager*). Agazan
 
 > `zaxelehathel varadal.`
 >
-> z-agent-x-learn-th-pattern | v-write
+> z-agent-x-learn-th-role | v-write
 >
 > "A student writes."
 
@@ -546,8 +546,9 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 | *comparison* / *contrast* (setting two against each other) | `zezom` | contrast |
 | *compare A with B* | `zazawan dalahen vezom bahaben.` | sets Alahen against Ahaben |
 | *preference* (the one preferred) | `zalavalogodal` | the one loved first |
-| *tendency* (a pattern) | `zalahathel` | a lying that repeats |
-| *tends to* | `zazawan valahathel.` | lies, as a pattern |
+| *tendency* (a type across scenes) | `zalahathul` | a lying type |
+| *tends to* / *often lies* | `zazawan valahal huam.` | usually lies |
+| *a lying type* | `zazawan valahathul.` | the type-claim |
 | *introduction* (the act) | `zalahen velehal dazawan thegem bahaben.` | Alahen learns Azawan, Ahaben makes it happen |
 | *introduction* (opening of a text) | `zogodal gobom bubugal` | the first part of a book |
 | *unemployment* | `zazawan zamolameval gul.` | not in paid production |
@@ -576,7 +577,7 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 >
 > "Azawan compares Alahen with Ahaben."
 
-**Compare with:** a ranking (*Azawan is more challenging than Alahen*) is the [rank join](comparatives.md#comparatives), not **`vezom`**, which only sets two things side by side. *Acquisition* as a company buying another is [buy](#buy-sell). *Preference* as a general taste is a [sake](sakes.md#sake-preference); **`zalavalogodal`** names the one chosen. *Tendency* is the [pattern label](predication.md#label-scope) (`the`) on the root, so *tends to lie* and *a tendency to lie* differ only in the word's slot.
+**Compare with:** a ranking (*Azawan is more challenging than Alahen*) is the [rank join](comparatives.md#comparatives), not **`vezom`**, which only sets two things side by side. *Acquisition* as a company buying another is [buy](#buy-sell). *Preference* as a general taste is a [sake](sakes.md#sake-preference); **`zalavalogodal`** names the one chosen. *Often* / *usually* is a [restrictor](restrictors.md) (`huam`, `war`). A type across scenes is [label scope](predication.md#scope-type) **`thu`**.
 
 ### Fair, keep, public, ride, admit and other leftover senses {#leftover-senses}
 
@@ -1046,7 +1047,7 @@ These three English nouns each hide two jobs. *Role* is the function someone pla
 
 > `zalahen gaxedehothel.`
 >
-> z-Alahen | g-agent-x-teach-th-pattern
+> z-Alahen | g-agent-x-teach-th-role
 >
 > "Alahen is a teacher." — that is his role
 

@@ -208,8 +208,8 @@ function senseLabelFallback(word: LexWord): string {
   if (word.overlay) return word.overlay.gloss;
   if (word.reading === "greeting") {
     const family = word.family;
-    if (family.kind === "x" && family.stanceVowel) {
-      return GREETING_BID_GLOSS[family.stanceVowel];
+    if (family.kind === "x" && family.stanceVowel && family.stanceVowel in GREETING_BID_GLOSS) {
+      return GREETING_BID_GLOSS[family.stanceVowel as keyof typeof GREETING_BID_GLOSS];
     }
     return "greeting";
   }

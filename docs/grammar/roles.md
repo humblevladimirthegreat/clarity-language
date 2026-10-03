@@ -392,23 +392,23 @@ z-agent-x-dog-x-walk | v-sit
 
 ### The usual role (`the`) {#usual-role}
 
-English *a teacher* says more than *someone who teaches*: teaching is that person's usual role, often a job. Write the role compound, then mid-word **`th`**, then **`e`**, then the ending. This is [pattern](predication.md#scope-pattern) scope on the role: it holds as a repeated tendency. (cue: **e** ≈ order (a sequence of times))
+English *a teacher* says more than *someone who teaches*: teaching is that person's usual role, often a job. Write the role compound, then mid-word **`th`**, then **`e`**, then the ending. This is the [practiced role](predication.md#scope-occupation) scope: the role is the office they inhabit. (cue: **e** ≈ order (a sequence of practice))
 
 > `zaxedehothel varahal.`
 >
-> z-agent-x-teach-th-pattern | v-run
+> z-agent-x-teach-th-role | v-run
 >
 > "A teacher runs."
 
 `zaxavadathel` is *a fighter*, and `zaxodogaxowogathel` is *a dog walker*. A role compound without **`the`** never makes that claim, so one fight does not make someone a fighter.
 
-**Compare with:** **`the`** fills the one seam a role compound has, so a usual role does not also take [ability](intention.md#role-ability). Other [scope vowels](predication.md#scope-role) go in the same spot: **`tha`** is *this time only*, **`thu`** is *so-called*.
+**Compare with:** **`the`** fills the one seam a role compound has, so a usual role does not also take [ability](intention.md#role-ability). Other [scope vowels](predication.md#scope-role) go in the same spot: **`tha`** is *this time only*, **`thu`** is a teacher type.
 
 The other role vowels work the same way. With **`the`**, a scene is where the event usually happens: `dexezebathel` is *a sleeping place*. To say someone **is** a teacher, put the same word on `/ɡ/`.
 
 > `zazawan gaxedehothel.`
 >
-> z-Azawan | g-agent-x-teach-th-pattern
+> z-Azawan | g-agent-x-teach-th-role
 >
 > "Azawan is a teacher."
 

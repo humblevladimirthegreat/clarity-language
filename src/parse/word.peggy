@@ -576,13 +576,17 @@ RoleCompound
 
 RoleTail
   = "x" v:[aeou] { return { ability: v }; }
-  / "th" v:[aeou] { return { scope: v }; }
+  / "th" v:SeamVowel { return { scope: v }; }
+
+// Simplex or stacked seam after mid-word `th` (sakes.md; predication.md#label-scope).
+SeamVowel
+  = "ao" / "ae" / "oe" / "ua" / "ue" / "uo" / [aeou]
 
 // Sakes: sake root + `th` + stance vowel (sakes.md); optional emotion
 // tail = horizon letter + locus hook vowel(s), then the motion ending (sakes.md#emotion-compose).
 // On a non-sake host the tailed shape is a viewpoint lateral (classify.ts).
 ValueCompound
-  = host:CompoundHost "th" stanceV:[aeou] tail:(h:[lmr] l:("ao" / "ae" / "oe" / "ua" / "uo" / "ue" / [aeou]) { return [h, l]; })? ending:Ending plural:PluralSuffix? WordEnd {
+  = host:CompoundHost "th" stanceV:SeamVowel tail:(h:[lmr] l:("ao" / "ae" / "oe" / "ua" / "uo" / "ue" / [aeou]) { return [h, l]; })? ending:Ending plural:PluralSuffix? WordEnd {
       return {
         ending,
         plural: !!plural,

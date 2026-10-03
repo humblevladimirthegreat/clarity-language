@@ -1342,7 +1342,7 @@ To say **how you know** the general claim, add a [channel](#evidentiality). On a
 
 > `zual gaxedehothel vedehol thunel.`
 >
-> [z-everything | g-agent-x-teach-th-pattern] | v-teach | th-INFERRED.strong
+> [z-everything | g-agent-x-teach-th-role] | v-teach | th-INFERRED.strong
 >
 > "Every teacher teaches; it follows."
 
@@ -1375,7 +1375,7 @@ A **definition** works both ways: whatever has the property is that kind, and ev
 
 > `zual gobel gaxedehothel thedam barl zober vedehol.`
 >
-> [z-everything | g-person] | g-agent-x-teach-th-pattern | [th-iff | b-that-clause] | z-←person | v-teach
+> [z-everything | g-person] | g-agent-x-teach-th-role | [th-iff | b-that-clause] | z-←person | v-teach
 >
 > "A person is a teacher if and only if they teach (by definition)."
 
@@ -1406,8 +1406,8 @@ Short drills for Advanced. Try each item before opening **Show answer**. Score l
 | *sit* | `vehahel` | `ehahel` *chair* | |
 | *think* | `vevegal` | | |
 | *punch* | `vabahel` | | |
-| *agent-teach-th-pattern* | `gaxedehothel` | `edehol` *teach* | |
-| *agent-fight-th-pattern* | `gaxavadathel` | `avadal` *fight* | |
+| *agent-teach-th-role* | `gaxedehothel` | `edehol` *teach* | |
+| *agent-fight-th-role* | `gaxavadathel` | `avadal` *fight* | |
 | *teach* | `vedehol` | | |
 | *fight* | `vavadal` | | |
 | *soccer* | `azagul` | | |
@@ -1459,7 +1459,7 @@ z-Azawan | h-always | v-sit | th-PATTERN.weak
 ::: details Show answer
 `zual gaxedehothel vedehol thunel.`
 
-[z-everything | g-agent-x-teach-th-pattern] | v-teach | th-INFERRED.strong
+[z-everything | g-agent-x-teach-th-role] | v-teach | th-INFERRED.strong
 :::
 
 **5.** *Every cat sleeps when it is sleepy; that is how it works.*
@@ -1543,7 +1543,7 @@ z-Alahen | h-always | v-write | th-PATTERN.weak
 
 ::: details Show answer
 
-[z-everything | g-agent-x-fight-th-pattern] | v-fight | th-INFERRED.strong
+[z-everything | g-agent-x-fight-th-role] | v-fight | th-INFERRED.strong
 
 *Every fighter fights; it follows.*
 :::

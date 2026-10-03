@@ -260,6 +260,20 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.throws(() => parseWord("vaxuwuruxam"));
   });
 
+  it("parses stacked label-scope vowels on a content root and a role compound", () => {
+    const word = parseOk("ganegethaol");
+    assert.equal(word.family.kind, "x");
+    if (word.family.kind === "x") {
+      assert.equal(word.family.xFamily, "sake");
+      assert.equal(word.family.stanceVowel, "ao");
+    }
+    const role = parseOk("gaxedehothuel");
+    if (role.family.kind === "x") {
+      assert.equal(role.family.xFamily, "role");
+      assert.equal(role.family.scopeVowel, "ue");
+    }
+  });
+
   it("parses azawaxan as ability host (greeting bid classified later)", () => {
     const word = parseOk("azawaxan");
     assert.equal(word.pos, undefined);

@@ -136,7 +136,7 @@ The same restrictor vowels and endings can limit **only the host you are about t
 | `/h/` | limits the clause | *when the verb claim counts* | **h** starts *how* / *when* / *where* |
 | `/w/` | same map on the next adjective | *never sleepy* | **w** ≈ with (stuck to that host) |
 
-**Compare with:** extra detail on an adjective is still ordinary `/w/` from [clause](clause.md#adjective-detail-w). A restrictor on `/w/` answers **when that adjective counts**.
+**Compare with:** extra detail on an adjective is still ordinary `/w/` from [clause](clause.md#adjective-detail-w). A restrictor on `/w/` answers **when that adjective counts**. To mark a [label](predication.md#label-scope) as this episode, a practiced role, this pair, or a type, put the restrictor (and its occasion words) on `/w/` immediately before that scoped `/ɡ/` word. Scope is the kind of claim; the restrictor is the occasions.
 
 ### Listed occasions (open)
 

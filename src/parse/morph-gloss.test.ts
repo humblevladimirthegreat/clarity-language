@@ -502,13 +502,21 @@ describe("compareMorphGloss", () => {
   });
 
   it("label scope glosses its seam vowel", () => {
-    expectLine("zalahen ganegethal", "z-Alahen | g-angry-th-once");
-    expectLine("zazawan valahathel", "z-Azawan | v-lie-th-pattern");
-    expectLine("zalahen ganagothul", "z-Alahen | g-anxious-th-name-only");
+    expectLine("zalahen ganegethal", "z-Alahen | g-angry-th-episode");
+    expectLine("zazawan valahathel", "z-Azawan | v-lie-th-role");
+    expectLine("zalahen ganagothul", "z-Alahen | g-anxious-th-type");
+    expectLine("zalahen gaxedehothel", "z-Alahen | g-agent-x-teach-th-role");
+    expectLine("zazawan valahathol balahen", "z-Azawan | [v-lie-th-pair | b-Alahen]");
+    expectLine("zazawan valahathaol balahen", "z-Azawan | [v-lie-th-on-pair | b-Alahen]");
+    expectLine("zazawan valahathual", "z-Azawan | v-lie-th-except-episode");
+    expectLine("zalahen gaxedehothael", "z-Alahen | g-agent-x-teach-th-using");
+    expectLine("zalahen gaxedehothoel", "z-Alahen | g-agent-x-teach-th-toward-role");
+    expectLine("zalahen gaxedehothuel", "z-Alahen | g-agent-x-teach-th-outside-role");
+    expectLine("zazawan ganegethuol balahen", "z-Azawan | [g-angry-th-except-pair | b-Alahen]");
   });
 
-  it("a tho verb hosts the /b/ right after it", () => {
-    expectLine("zazawan valahathol balahen", "z-Azawan | [v-lie-th-relative | b-Alahen]");
+  it("a pair-scope verb hosts the /b/ right after it", () => {
+    expectLine("zazawan valahathol balahen", "z-Azawan | [v-lie-th-pair | b-Alahen]");
   });
 
   it("house-cast resume without a same-line antecedent", () => {

@@ -249,10 +249,16 @@ const ABILITY_STANCE: Record<string, string> = {
 
 /** Label scope seam vowels (predication.md#label-scope). */
 const SCOPE_VOWEL: Record<string, string> = {
-  a: "once",
-  e: "pattern",
-  o: "relative",
-  u: "name-only",
+  a: "episode",
+  e: "role",
+  o: "pair",
+  u: "type",
+  ao: "on-pair",
+  ae: "using",
+  oe: "toward-role",
+  ua: "except-episode",
+  uo: "except-pair",
+  ue: "outside-role",
 };
 
 const SAKE_STANCE: Record<string, string> = {
@@ -395,7 +401,7 @@ export function senseLabel(
       ? "-th-"
       : "-x-";
   let body = sensePieces(word, tables, ctx).join(hinge);
-  // Role compound + label scope: the role and stem join with `-x-`, then the scope hinge (`agent-x-teach-th-once`).
+  // Role compound + label scope: the role and stem join with `-x-`, then the scope hinge (`agent-x-teach-th-episode`).
   if (word.family.kind === "x" && word.family.xFamily === "role" && word.family.scopeVowel) {
     body += `-th-${SCOPE_VOWEL[word.family.scopeVowel] ?? "scope"}`;
   }

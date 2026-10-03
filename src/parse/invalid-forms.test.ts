@@ -71,6 +71,7 @@ const ROWS: Row[] = [
   { invalid: "zabezam wanathel gobum.", rejection: "prescriptionSlot", valid: "zalahen vabayal thanathel." },
   { invalid: "zabezam wanathumal gobum balahen.", rejection: "feelingLandmark", valid: "zabezam wanathumol gobum balahen." },
   { invalid: "zazawan wanegethal gamadam.", rejection: "labelScopeSlot", valid: "zazawan ganegethal." },
+  { invalid: "zazawan gulothaol.", rejection: "sakeStackedVowel", valid: "zazawan gulothal." },
   { invalid: "zazawan gewezathal.", rejection: "labelScopeArrow", valid: "zazawan gewezathol bahazal." },
   { invalid: "zodogal vehahel gazavathol.", rejection: "landmarkLateralBound", valid: "zodogal vehahel gazavathol bahazal." },
   { invalid: "zual gagadulx.", rejection: "pluralKindAfterUniversal", valid: "zual gagadul." },

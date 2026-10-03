@@ -6,6 +6,9 @@ export type RoleVowel = "a" | "e" | "u" | "o" | "ae" | "ao" | "oe" | "ua" | "ue"
 /** Role pointer vowel: `a` same, `o` other, `e` self, `u` unsaid (pronouns.md#role-pointers). */
 export type PointerVowel = "a" | "e" | "o" | "u";
 
+/** Label-scope seam: simplex or the six stacks (predication.md#label-scope). */
+export type ScopeVowel = "a" | "e" | "o" | "u" | "ae" | "ao" | "oe" | "ua" | "ue" | "uo";
+
 /** Part-of-speech prefix letters (role stamps). */
 export type Pos = "z" | "d" | "b" | "v" | "g" | "w" | "h" | "th" | "x" | "y";
 
@@ -78,9 +81,9 @@ export type MorphWordFamily =
       /** Role pointer: which event (`a` same, `o` other, `e` self, `u` unsaid; pronouns.md#role-pointers). */
       pointerVowel?: PointerVowel;
       /** Values / label-scope / ability stance vowel (also role + ability on `/ɡ/`). */
-      stanceVowel?: "a" | "e" | "o" | "u";
+      stanceVowel?: ScopeVowel;
       /** Role compound + label scope (`gaxedehothal`): the scope vowel; predication.md#label-scope. */
-      scopeVowel?: "a" | "e" | "o" | "u";
+      scopeVowel?: ScopeVowel;
       /** Emotion compose: sake horizon letter moved mid-word (sakes.md#emotion-compose). */
       horizon?: "l" | "m" | "r";
       /** Emotion compose locus: hook vowel(s) for placement or direction (sakes.md#emotion-compose). */

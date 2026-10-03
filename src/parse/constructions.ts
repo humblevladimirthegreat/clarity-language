@@ -89,7 +89,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
 
   "vpCoord.vpCoordPart": { anchor: "clause.md#who-acts-and-the-action", summary: "/v/ phrase parts" },
   "vpCoordPart.V": { anchor: "clause.md#who-acts-and-the-action", summary: "verb" },
-  "vpCoordPart.B": { anchor: "predication.md#scope-relative", summary: "hosted /b/ after a tho verb" },
+  "vpCoordPart.B": { anchor: "predication.md#scope-relative", summary: "hosted /b/ after a pair-scope verb" },
   "vpCoordPart.vJoinClose": { anchor: "joins.md#and-lists-a", summary: "/v/ join after its verbs" },
   "vpCoordPart.standaloneJoin": { anchor: "joins.md#standalone-phrase", summary: "standalone /v/ join" },
   "vJoinClose.W": { anchor: "joins.md#respectively", summary: "respectively /w/ before a verb join word" },
@@ -318,10 +318,16 @@ type Vowel = "a" | "e" | "o" | "u";
 
 /** Label scope: each seam vowel (predication.md#label-scope). */
 const SCOPE_FEATURE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
-  "vowel.a": { anchor: "predication.md#label-scope", summary: "this occasion only tha" },
-  "vowel.e": { anchor: "predication.md#scope-pattern", summary: "a pattern the" },
-  "vowel.o": { anchor: "predication.md#scope-relative", summary: "relative to a party tho" },
-  "vowel.u": { anchor: "predication.md#scope-name-only", summary: "name only thu" },
+  "vowel.a": { anchor: "predication.md#label-scope", summary: "this episode tha" },
+  "vowel.e": { anchor: "predication.md#label-scope", summary: "practiced role the" },
+  "vowel.o": { anchor: "predication.md#label-scope", summary: "this pair tho" },
+  "vowel.u": { anchor: "predication.md#label-scope", summary: "type across scenes thu" },
+  "vowel.ao": { anchor: "predication.md#scope-stacks", summary: "episode on this pair thao" },
+  "vowel.ae": { anchor: "predication.md#scope-stacks", summary: "using the role thae" },
+  "vowel.oe": { anchor: "predication.md#scope-stacks", summary: "toward the role thoe" },
+  "vowel.ua": { anchor: "predication.md#scope-stacks", summary: "type except this episode thua" },
+  "vowel.uo": { anchor: "predication.md#scope-stacks", summary: "type except this pair thuo" },
+  "vowel.ue": { anchor: "predication.md#scope-stacks", summary: "not in that capacity thue" },
 };
 
 /** Sakes: each stance vowel, and the endings on it (sakes.md). */
@@ -557,6 +563,7 @@ export const REJECTIONS = {
   sakeSlot: { anchor: "sakes.md#beginner", summary: "a sake form goes on /ɡ/, /th/, or /w/ only" },
   emotionTail: { anchor: "sakes.md#emotion-compose", summary: "the emotion tail goes on tha / tho / thu and ends in -r / -m / -l" },
   sakeEnding: { anchor: "sakes.md#word-shape", summary: "a sake word ends in -l / -m / -r (its stance's ending table), with or without an emotion tail" },
+  sakeStackedVowel: { anchor: "sakes.md#word-shape", summary: "a sake stance is one vowel; stacked vowels after th are the emotion locus after the horizon letter" },
   prescriptionSlot: { anchor: "sakes.md#prescription-the-ought-this-act-for-this-sake", summary: "prescription (the) goes on /th/ only: it is about an act, not a noun" },
   feelingLandmark: { anchor: "sakes.md#emotion-compose", summary: "an INTERNAL (a) or UNPLACED (uo) feeling takes no /b/; a landmark goes with a direction or CIRCUM locus" },
   labelScopeSlot: { anchor: "predication.md#label-scope", summary: "label scope goes on /ɡ/, /z/, /d/, /b/, /v/, or /h/ only" },

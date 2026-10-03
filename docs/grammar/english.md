@@ -196,7 +196,16 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agaza
 | *someone who teaches*, *whoever teaches* | a bare role compound: `zaxedehol` | [Role compounds](roles.md#role-compounds) |
 | *a teacher*, *a fighter*, *a dog walker* (a usual role or job) | the role compound plus **`the`**: `zaxedehothel` | [The usual role](roles.md#usual-role) |
 | *the one teaching* (this event) | the role compound on **-r**: `zaxedehor` | [This instance](roles.md#this-instance-r) |
-| *tends to walk*, *often lies* | **`the`** on the root: `zazawan valahathel` | [A pattern](predication.md#scope-pattern) |
+| *often lies*, *usually walks* | a [restrictor](restrictors.md): `huam`, `war` | [Always](restrictors.md#always-hual) |
+| *angry this time*, *lied this once* | **`tha`** on the root: `ganegethal` | [This episode](predication.md#scope-occasion) |
+| *a stranger to Alahen*, *lying, as far as Alahen is concerned* | **`tho`** plus `/b/`: `gelehothom balahen` | [This pair](predication.md#scope-relative) |
+| *a lying type*, *an anxious type* | **`thu`** on the root: `zazawan valahathul` | [Type across scenes](predication.md#scope-type) |
+| *this once, to Alahen* | **`thao`** plus `/b/`: `valahathaol balahen` | [Stacked scope](predication.md#scope-stacks) |
+| *becoming a teacher* | **`thoe`**: `gaxedehothoel` | [Stacked scope](predication.md#scope-stacks) |
+| *not as a teacher* | **`thue`**: `gaxedehothuel` | [Stacked scope](predication.md#scope-stacks) |
+| *using teacher (as a tool)* | **`thae`**: `gaxedehothael` | [Stacked scope](predication.md#scope-stacks) |
+| *a lying type, except this time* | **`thua`**: `valahathual` | [Stacked scope](predication.md#scope-stacks) |
+| *angry as a type, except with Alahen* | **`thuo`** plus `/b/`: `ganegethuol balahen` | [Stacked scope](predication.md#scope-stacks) |
 | *seen*, *the one seen* | the undergoer **`u`**: `zuxahahal`, `zuxahahar` | [The undergoer](roles.md#the-undergoer-u) |
 | *visible* / *invisible* (*can be seen*) | the undergoer with ability: `zodogal guxahahaxal` | [Can be](intention.md#role-ability) |
 | *walked* (past) | no participle: pick how you know | [Tense](say-tense.md#tense-jobs) |
