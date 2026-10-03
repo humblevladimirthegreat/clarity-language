@@ -544,7 +544,7 @@ export function constructionRegistry(overlays: Iterable<OverlayEntrySource>): Ma
 export const REJECTIONS = {
   genitiveHost: { anchor: "hooks.md#genitive", summary: "`em` + `/b/` follows the noun B uses" },
   forcePair: { anchor: "speech-moves.md#emphatic-prohibition", summary: "only `yul yul` and `yal yol` / `yam yol` stack two act words" },
-  polarOrder: { anchor: "questions.md#polar-stance", summary: "a polar word is one answer or one confirm tag: not two in a row, and not before an act word (an answer and then a question are two turns)" },
+  polarOrder: { anchor: "questions.md#polar-stance", summary: "a polar word is one answer or one tag: not two in a row, and not before an act word (an answer and then a question are two turns)" },
   sentenceEndMark: { anchor: "speech-moves.md#tone-marks", summary: "a sentence ends in `.`; `?` / `!` are tone-mark prefixes" },
   toneStack: { anchor: "speech-moves.md#tone-marks", summary: "only ! !! ? ?! % & ; are tone marks; other stacks are not" },
   toneTarget: { anchor: "speech-moves.md#tone-marks", summary: "a tone mark goes before a word, an island open {, or a span" },
@@ -600,7 +600,7 @@ export const REJECTIONS = {
   ordinalUnbound: { anchor: "pronouns.md#ordinal-pronouns", summary: "an ordinal pronoun needs that many names introduced in this conversation" },
   numberPlural: { anchor: "pronouns.md#ordinal-pronouns", summary: "a number takes -x only as an ordinal pronoun (z=#1x)" },
   resumeUnbound: { anchor: "pronouns.md#resume-r", summary: "an -r resume spells an earlier word's whole stem, or a lexicon stem" },
-  pointerSlot: { anchor: "pronouns.md#role-pointers", summary: "a role pointer fills /z/, /d/, /b/, or a holder seam's holder slot" },
+  pointerSlot: { anchor: "pronouns.md#role-pointers", summary: "a role pointer fills /z/, /d/, /b/, a holder seam's holder slot, or a viewpoint lateral's facing anchor" },
   pointerOtherRole: { anchor: "pronouns.md#the-other-one", summary: "the other-one pointer (o) takes every role except the scene (dexor, zexol, and zexom are rejected)" },
   pointerUnbound: { anchor: "pronouns.md#role-pointers", summary: "a role pointer needs an earlier predicate with that role filled (o: with someone else in it; u: with that role unsaid)" },
   pointerShareSelf: { anchor: "pronouns.md#share", summary: "a share (-m) never takes the self vowel (e): it would name a part in the very event being described" },

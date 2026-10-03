@@ -81,7 +81,7 @@ English *by*, *for*, *about*, *as*, and *against* each cover several jobs. Pick 
 | most that can be done (*as fast as possible*, *as small as you can*) | ABIL bar **`thezexal`** + tie **`ae`** | [Every bar](comparatives.md#stance-bars) |
 | frame one sentence (*as for Azawan*) | **`hahehom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 | resemblance (*walks as / like a duck*) | **`humum`** + `/b/` | [Simile](relations.md#similative) |
-| how close (*exactly like*, *a bit like*) | `/w/` before **`humum`**: `wubuzam humum badagul` (*precisely*), `wamazam humum badagul` | [Simile](relations.md#similative), [degree words](clause.md#degree-w) |
+| how close (*exactly like*, *a bit like*) | **`humul`** for an exact match (`humul badagul`), or `/w/` before **`humum`**: `wubuzam humum badagul` (*precisely*), `wamazam humum badagul` (*a bit*) | [Exactly like](relations.md#exactly-like), [simile](relations.md#similative), [degree words](clause.md#degree-w) |
 | resemblance to an event (*walks the way a duck swims*, *as a hand moves through hair*) | **`humum barl`** + the event | [Simile](relations.md#similative) |
 | pretense (*as if they walk*) | **NOTIONAL** | [Notional](knowing.md#notional) |
 | dated books (*as of Friday*) | **`huhum` / `huram`** + `/b/` | [*As-of*](relations.md#as-of) |

@@ -244,7 +244,7 @@ A morph line corresponds **one-to-one** with its Agazan. From the gloss alone yo
 - **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and a surface mark when a number word is not in its [preferred writing](../grammar/numbers.md#writing-style-numeric-vs-spelled): `.spelled` on a spelled-out word that prefers shorthand (`grawodul` → `g-twelve.spelled`; `g+12` → `g-twelve`), `.short` on shorthand that prefers spelling — no digit or one digit (`g+3` → `g-three.short`; `grarel` → `g-three`; `g+` → `g-more-than-one.short`).
 - **Ordinals use digits** (`gredul` → `g-2nd`, `gruedul` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.
 - **Role-compound resumes** keep their role: `daexaradar` → `d-←instrument-x-write`, `duxaradar` → `d-←patient-x-write`. A bare `d-←write` would merge the doer, scene, undergoer, tool, … of one event.
-- **Role pointers** gloss their role and pointer vowel, never the referent: `zaxar` → `z-←agent.same`, `duxor` → `d-←patient.other`, `daxer` → `d-←agent.self`, `zaxur` → `z-←agent.unsaid`. **-l** adds `.new` and **-m** adds `.part` (`duxal` → `d-←patient.same.new`, `zaxam` → `z-←agent.same.part`, `zoxom` → `z-←recipient.other.part`, `zaxum` → `z-←agent.unsaid.part`). The role label is the role-compound one (`recipient` for **`o`**, `instrument` for **`ae`**, …).
+- **Role pointers** gloss their role and pointer vowel, never the referent: `zaxar` → `z-←agent.same`, `duxor` → `d-←patient.other`, `daxer` → `d-←agent.self`, `zaxur` → `z-←agent.unsaid`. **-l** adds `.new` and **-m** adds `.part` (`duxal` → `d-←patient.same.new`, `zaxam` → `z-←agent.same.part`, `zoxom` → `z-←recipient.other.part`, `zaxum` → `z-←agent.unsaid.part`). The role label is the role-compound one (`recipient` for **`o`**, `instrument` for **`ae`**, …). A pointer inside a seam keeps the seam's host: holder `thunemaxar` → `th-INFERRED-←agent.same`, lateral anchor `hewezathaxar` → `h-west-th-←agent.same`.
 - **Unknown words fail.** A content word the lexicon cannot gloss has no morph line: a root missing from the lexicon, or **-m** on a root with no abstract sense (unless a closed overlay defines that **-m** form). `lint:agazan` reports it.
 - **Quoted pass-through.** Raw payloads (opaque interiors, and a resume stem with no known antecedent) go in straight double quotes: `z-OPAQUE["odoga"]`. A `"` inside the payload is written `""`.
 
@@ -376,6 +376,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `zul` / `gul` | `z-not` / `g-not` |
 | `zual` | `z-everything-but` |
 | `xan` | `x-and-then` |
+| `xuen` | `x-and-before-that` |
 | `ol` | `instead` |
 | `am` | `including.open` |
 | `al` | `additionally` (discourse) / `including` (in-clause closed) |
@@ -384,6 +385,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `hal` (listed) | `h-only-when` |
 | `hal` (bare) | `h-never` |
 | `hual` (bare) | `h-always` |
+| `her` (statement / fill-ask) | `h-preferred-time` / `h-when-best` |
 | `von` | `v-choose` |
 | `grarel` | `g-three` |
 | `gredul` | `g-2nd` |

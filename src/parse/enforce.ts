@@ -667,7 +667,7 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
 }
 
 function enforceForcePair(left: LeftEdge): void {
-  // A polar word is one answer or one confirm tag: not two in a row, and not before an act word (questions.md § polar stance).
+  // A polar word is one answer or one tag: not two in a row, and not before an act word (questions.md § polar stance).
   const act = left.leadForce ?? left.force;
   if (left.polars.length > 1 || (act && left.polars.some((polar) => (polar.at ?? 0) < (act.at ?? 0)))) {
     throw new ConstructionError("polarOrder", left.polars.map((polar) => polar.raw).join(" "));
@@ -710,13 +710,17 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
   }
 }
 
-/** Role pointers (pronouns.md#role-pointers): nouns or holders only, never their own slot, never unbound; the new-one and share endings have their own limits. */
+/**
+ * Role pointers (pronouns.md#role-pointers): nouns, holders, or a lateral's facing anchor only, never their own slot,
+ * never unbound; the new-one and share endings have their own limits.
+ */
 function enforcePointer(bind: AnaphorBind): void {
   const word = bind.pronoun;
   const family = word.family;
-  const held = family.kind === "x" && family.xFamily === "holder";
+  // In a `th` seam: the holder slot (`thunemaxar`) or the facing anchor of a viewpoint lateral (`hewezathaxar`).
+  const seam = family.kind === "x" && (family.xFamily === "holder" || family.xFamily === "lateral");
   const bare = family.kind === "x" && family.xFamily === "pointer" && family.leftRoots.length === 0;
-  if (!held && !(bare && (word.pos === "z" || word.pos === "d" || word.pos === "b"))) {
+  if (!seam && !(bare && (word.pos === "z" || word.pos === "d" || word.pos === "b"))) {
     throw new ConstructionError("pointerSlot", word.raw);
   }
   // The other one (`o`) compares fillers, and the scene's overt filler is not settled for comparison (unassigned-reserved § Role pointers).

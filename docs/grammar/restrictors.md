@@ -395,6 +395,15 @@ Statement readings below. Asking *when*: [questions.md](questions.md#when).
 | **`har`** | unspecified member of the listed times | *sometimes among these* | *sometimes* | **-r** some member |
 | **`hor`** | unspecified member of a one-choice time menu | *anytime among these* | *anytime* | **o** ≈ one + **-r** |
 | **`hur`** | unspecified leftover occasion | *some time other than these* | *some other time* | **u** ≈ undo + **-r** |
+| **`her`** | unspecified first-ranked occasion | *at whichever of these ranks first* | *at the preferred time* | **e** ≈ order + **-r** |
+
+Under a question, **`her`** asks which time ranks first: *When's best?* With occasions before it, the listener picks the one they prefer.
+
+> `yol zahan vowogal her.`
+>
+> y-question | z-interlocutors | v-walk | h-when-best
+>
+> "When's best for us to walk?"
 
 > `zazawan werehel wanadal wol gezebul.`
 >
@@ -478,7 +487,15 @@ z-Azawan | v-climb | h-rain | h-snow | h-when-ranked
 z-Azawan | v-climb | h-ice | h-fog | h-when-in-order
 :::
 
-**7.** *Azawan is sleepy either when raining or at night, not both.*
+**7.** *When is it best for Azawan to climb?*
+
+::: details Show answer
+`yol zazawan vagayal her.`
+
+y-question | z-Azawan | v-climb | h-when-best
+:::
+
+**8.** *Azawan is sleepy either when raining or at night, not both.*
 
 ::: details Show answer
 `zazawan werehel wanadal wol gezebul.`
@@ -486,7 +503,7 @@ z-Azawan | v-climb | h-ice | h-fog | h-when-in-order
 z-Azawan | [w-rain | w-night | w-when-one | g-sleepy]
 :::
 
-**8.** *Ahaben screams if Alahen falls.*
+**9.** *Ahaben screams if Alahen falls.*
 
 ::: details Show answer
 `zahaben vezugel thoyem barl zalahen vadahel.`
@@ -494,7 +511,7 @@ z-Azawan | [w-rain | w-night | w-when-one | g-sleepy]
 z-Ahaben | v-scream | [th-if | b-that-clause] | z-Alahen | v-fall
 :::
 
-**9.** *Alahen runs only as a last resort when there is fog.*
+**10.** *Alahen runs only as a last resort when there is fog.*
 
 ::: details Show answer
 `zalahen varahal havegel huel.`

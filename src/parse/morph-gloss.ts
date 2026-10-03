@@ -18,6 +18,7 @@
  * | `ham` listed | `h-when.open` | open listed; not exclusive |
  * | `an` in-clause | `including.named` | proper-name phrase |
  * | `har` statement / fill-ask | `h-sometimes` / `h-when` | `-r` is unspecified occasion, not `hal` |
+ * | `her` statement / fill-ask | `h-preferred-time` / `h-when-best` | `-r` on rank **e**: the first-ranked occasion |
  * | `hual` bare | `h-always` | |
  * | `themabam` | `th-plan-itinerary` | overlay grain `-m` |
  * | mid-word `x` | always `-x-` segments | never a fused English name |
@@ -708,8 +709,9 @@ export function morphRedundantWithLoose(
   return morphBody === looseNorm;
 }
 
+// The prefix before `←` is a holder host (`th-INFERRED-←agent.same`) or a lateral's direction (`h-west-th-←agent.same`).
 const MORPH_TOKEN_RE =
-  /^(?:(?:th|[zdbvgwhxy])l?-)?(?:[A-Z][A-Za-z.]*-(?=←))?←*[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]*(?:-x-[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]+)*(?:-x)?$|^[<>^]$|^\^-start$|^\^-end$/;
+  /^(?:(?:th|[zdbvgwhxy])l?-)?(?:[A-Z][A-Za-z.]*-(?=←)|[a-z][A-Za-z.-]*-th-(?=←))?←*[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]*(?:-x-[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]+)*(?:-x)?$|^[<>^]$|^\^-start$|^\^-end$/;
 
 export function looksLikeMorphLine(line: string): boolean {
   const trimmed = line.trim();
@@ -967,7 +969,8 @@ function sensePieces(
   const family = word.family;
   const resume =
     (word.ending === "r" || (family.kind === "x" && family.xFamily === "pointer")) &&
-    !(family.kind === "x" && family.xFamily === "holder") &&
+    // A holder or lateral keeps its host or direction; its anchor glosses inside xPieces.
+    !(family.kind === "x" && (family.xFamily === "holder" || family.xFamily === "lateral")) &&
     word.reading !== "sake" &&
     word.reading !== "ability" &&
     family.kind !== "joinMarker";
@@ -1173,7 +1176,7 @@ function fenceJoinLabel(
   }
 
   if (ending === "n" && pos === "x") {
-    const sequence: Record<string, string> = { a: "and-then", o: "or-else", u: "and-then-not", ao: "and-or-else" };
+    const sequence: Record<string, string> = { a: "and-then", o: "or-else", u: "and-then-not", ao: "and-or-else", ue: "and-before-that" };
     if (sequence[series]) return sequence[series];
   }
 
@@ -1196,6 +1199,7 @@ function restrictorLabel(
     if (series === "a") return fillAsk ? "when" : "sometimes";
     if (series === "o") return "anytime";
     if (series === "u") return "some-other-time";
+    if (series === "e") return fillAsk ? "when-best" : "preferred-time";
     if (series === "ae") return "equally-often";
     return `${series}-r`;
   }
@@ -1456,6 +1460,10 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
 
   if (family.xFamily === "lateral") {
     const dir = rootSense(family.leftRoots[0]!, "l", tables, { named: false, pos: word.pos });
+    // A role pointer as the facing anchor (`hewezathaxar`, roles.md#viewpoint-laterals).
+    if (family.pointerVowel) {
+      return [dir, `←${ROLE_VOWEL[family.roleVowel ?? ""] ?? "role"}.${POINTER_VOWEL[family.pointerVowel] ?? "pointer"}`];
+    }
     const anchors = (family.rightRoots ?? []).map((root, i, all) =>
       rootSense(root, word.ending, tables, {
         named: isNameEnding(word.ending),

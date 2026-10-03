@@ -1210,13 +1210,19 @@ The seam letter keeps its meaning: [evidence strength](#evidence-strength) on a 
 >
 > "Rumor has it Azawan thinks Alahen left."
 
-The holder word ends the way a noun for that person would. **-n** is a name. **-r** [resumes](pronouns.md#resume-r) someone already named, which is English *he* / *she* / *they*. Add [associative **-x**](plurality.md#associative) after the ending for the person and their associates. A kind of person on **-lx** is some people of that kind.
+The holder word ends the way a noun for that person would. **-n** is a name. **-r** [resumes](pronouns.md#resume-r) someone already named, which is English *he* / *she* / *they*, and a [role pointer](pronouns.md#role-pointers) on **-r** works too (`thunemaxar`, *I gather the latest doer thinks*). Add [associative **-x**](plurality.md#associative) after the ending for the person and their associates. A kind of person on **-lx** is some people of that kind.
 
 > `zazawan vowogal. zalahen thunemazawar vedabal.`
 >
 > z-Azawan | v-walk . z-Alahen | th-INFERRED-←Azawan | v-departure
 >
 > "Azawan walks. I gather they think Alahen left."
+
+> `zazawan vowogal. zalahen thunemaxar vedabal.`
+>
+> z-Azawan | v-walk . z-Alahen | th-INFERRED-←agent.same | v-departure
+>
+> "Azawan walks. I gather they think Alahen left." (the latest doer: Azawan)
 
 > `zalahen thunemazawanx vedabal.`
 >

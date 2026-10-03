@@ -544,12 +544,20 @@ Speaker and listener roots are the facing person when you mean *my left* / *your
 >
 > "You, walk left (your left)."
 
+For *their left*, put a [role pointer](pronouns.md#role-pointers) on **-r** after **`th`**: `hewezathaxar` is *on the latest doer's left*, and `hewezathaxer` is *on this sentence's own doer's left*.
+
+> `zazawan vowogal. zalahen vehahel hewezathaxar.`
+>
+> z-Azawan | v-walk . z-Alahen | v-sit | h-west-th-←agent.same
+>
+> "Azawan walks. Alahen sits on their left." (Azawan's left)
+
 | Agazan | Use | English |
 |--------|-----|---------|
 | PoS | slot as usual (`/ɡ/` property, `/h/` path / manner, `/z/` `/d/` `/b/` side-region) | same slots as other content |
 | DIR | an arrow-rose root | *north* / *ahead*, … |
 | **`th`** | joins DIR to the viewpoint | viewpoint after **`th`** (cue: **th** ≈ *think*, whose point of view) |
-| ANCHOR | what sets the facing frame: [special](pronouns.md#special-pronouns) **`amago`** / **`ehodo`** / **`aha`**, a person’s name, or a content **-r** of a person or oriented object | *Azawan’s left*, *your left*, *the car’s left* |
+| ANCHOR | what sets the facing frame: [special](pronouns.md#special-pronouns) **`amago`** / **`ehodo`** / **`aha`**, a person’s name, a content **-r** of a person or oriented object, or a role pointer on **-r** | *Azawan’s left*, *your left*, *the car’s left*, *their left* |
 | Ending | ordinary ending is written at the end of the whole compound; its reference is the viewpoint anchor, not the direction | viewpoint kind / hedge / name / resume |
 
 **Compare with:** naming a doer from an event puts a **vowel** left of **`x`** ([role compounds](#role-compounds): `zaxavadal`). Viewpoint laterals put a **direction root** left of **`th`** and a facing person on the right.

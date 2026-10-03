@@ -273,14 +273,16 @@ English *ask* is four jobs. You can put a question to someone, ask them for some
 
 ### Offer, suggest, recommend, invite {#offer-words}
 
-**Needs:** [Speech act: firm and soft](speech-moves.md#speech-act) · [Prescription](sakes.md#sake-force) · [Permission](sakes.md#permission) · [Which noun](dependents.md#which-noun)
+**Needs:** [Speech act: firm and soft](speech-moves.md#speech-act) · [Tags](questions.md#tags) · [Prescription](sakes.md#sake-force) · [Permission](sakes.md#permission) · [Which noun](dependents.md#which-noun)
 
-English *offer*, *suggest*, *propose*, *recommend* and *advise* all put something forward that the other person may take or leave. Agazan picks how firmly. A soft act word (**-m**) leaves the choice open. A soft request with *we* proposes a joint act. A prescription **`the`** on a sake says the act ought to serve it, and its ending says whether the person invited it (**-l**) or you are offering it unasked (**-m**).
+English *offer*, *suggest*, *propose*, *recommend* and *advise* all put something forward that the other person may take or leave. Agazan picks how firmly. A soft act word (**-m**) leaves the choice open. A soft request with *we* proposes a joint act, and a tag after it asks whether they take it up. A prescription **`the`** on a sake says the act ought to serve it, and its ending says whether the person invited it (**-l**) or you are offering it unasked (**-m**).
 
 | English | Agazan | Reading |
 |---------|--------|---------|
 | *offer* (a thing) | `yom` + a giving | soft question: *would you like…?* |
 | *suggest* / *propose* (a joint act) | `yem zahan vowogal.` | soft request with *we* |
+| *…, okay?* / *…, deal?* (after a suggestion) | `yol yaol.` | tag: asks them to take it up |
+| *…, or would you rather not?* | `yol yuol.` | tag: offers them the refusal |
 | *suggest* (a view) | `yam` | soft statement: *for what it's worth* |
 | *recommend* / *advise* (unasked) | `thanathem` | prescription, offered |
 | *recommend* (you asked for it) | `thanathel` | prescription, invited |

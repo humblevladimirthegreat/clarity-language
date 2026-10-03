@@ -9,14 +9,12 @@ use [skip-cd] for amplify to not deploy.
 # TODO
 
 Prosody
--verb root on `/ɡ/` or `gl-` (`zodogal gowogal`): no reading taught. [unassigned-reserved](docs/meta/unassigned-reserved.md) § Role-letter structure calls it the participle without saying which: ongoing (*walking*), characteristic, or undergoer (*eaten*). Deferred from the expressiveness review (E-11), along with its english.md row.
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -final exam
 -finish lexicon fill (partial)
 -finish proposals-mnemonic
 -review logical deduction
 -fix output too large for find lexicon
--decline by design vs decline because can't think of good reading
 
 save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.

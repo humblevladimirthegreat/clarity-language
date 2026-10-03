@@ -489,6 +489,41 @@ A stance word can stand alone (`yael.`), sit before a body (`yael zazawan vowoga
 
 **Compare with:** *not* inside the clause uses **`zul`** / **`vul`**. Polar **`yuel`** / **`yuol`** answer a *yes* / *no* or an offer.
 
+### Tags: asking for an answer {#tags}
+
+Beginner closed a claim with the tag **`yol yael.`** (*…, right?*). Every polar word works as a tag the same way: after your sentence, write **`yol`** and the polar word as a turn of their own. The tag asks the listener for that answer, and naming the answer makes it easy to give, so pick the one you want to make easy. After a request or a suggestion, **`yol yaol.`** asks *okay?*: will they take it up? **`yol yuol.`** asks *or would you rather not?*, so they can turn it down without having to push back. After a claim, **`yol yuel.`** asks *or am I wrong?*: it invites a correction, where **`yol yael.`** leans toward agreement.
+
+> `yem zahan vowogal. yol yaol.`
+>
+> y-request | z-interlocutors | v-walk . y-question | y-sure
+>
+> "Let's walk, okay?"
+
+> `yem zehodon vowogal. yol yuol.`
+>
+> y-request | z-listener | v-walk . y-question | y-refuse-option
+>
+> "Please walk, or would you rather not?"
+
+> `zazawan vowogal. yol yuel.`
+>
+> z-Azawan | v-walk . y-question | y-no
+>
+> "Azawan walked, or am I wrong?"
+
+| Agazan | Use | English |
+|--------|-----|---------|
+| `yol yael.` | ask them to confirm a claim | *…, right?* |
+| `yol yuel.` | invite a correction | *…, or am I wrong?* |
+| `yol yaol.` | ask them to take up a request or an offer | *…, okay?* / *…, deal?* |
+| `yol yuol.` | offer them the refusal | *…, or would you rather not?* |
+| `yol yaer.` | ask them to accept it for now | *…, can we go with that for now?* |
+| `yol yoem.` | after a question, offer them a pass | *…, or would you rather not say?* |
+
+Soft **`yom`** asks more gently (`yom yaol.` *…, if that's okay?*), and the other polar words and endings make tags the same way.
+
+**Compare with:** the answer itself is the polar word alone (`yaol.` *sure*). The tag puts **`yol`** first, so it asks for that answer instead of giving it.
+
 ### Confirming a negative {#confirming-a-negative}
 
 When the question already contains *not* (*Didn’t Azawan run?*), *yes* and *no* still say whether **that claim** matches. **`yael`** confirms the denial (*true: they didn’t*). **`yuel`** says the denial is false (*they did*). Restate the body after the stance word when you want the polarity said twice. Offer words (**`yaol`** / **`yuol`**) still answer *take this?*, not true/false.
@@ -553,7 +588,7 @@ To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in
 |--------|---------------------------|--------------------------------|
 | **`har`** / **`war`** | *sometimes* | *When?* / *In what case?* |
 
-**Related form:** *anytime?* / *when else?* and the statement occasion readings live with [restrictors](restrictors.md#more-occasions).
+**Related form:** *anytime?*, *when else?*, *when's best?* and the statement occasion readings live with [restrictors](restrictors.md#more-occasions).
 
 ### Where? {#where}
 
@@ -824,6 +859,14 @@ y-question | z-listener | v-knowledge | d-whether-clause | z-who | v-walk
 y-question | z-listener | v-think | d-that-clause | z-who | v-walk
 :::
 
+**13.** *Please tell Ahaben, okay?*
+
+::: details Show answer
+`yem bahaben vezebel. yol yaol.`
+
+y-request | b-Ahaben | v-tell . y-question | y-sure
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `yael vodol vul.`
@@ -895,6 +938,15 @@ y-question | z-Alahen | [v-lie | v-not] . y-no | v-lie
 y-question | z-who | v-tell | b-Ahaben | h-when
 
 *Who tells Ahaben when?*
+:::
+
+**9.** `zalahen valahal. yol yuel.`
+
+::: details Show answer
+
+z-Alahen | v-lie . y-question | y-no
+
+*Alahen lied, or am I wrong?*
 :::
 
 ## See also

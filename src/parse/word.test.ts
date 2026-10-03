@@ -195,6 +195,21 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.equal(word.family.kind === "x" && word.family.xFamily, "sake");
   });
 
+  it("parses hewezathaxar as a viewpoint lateral whose anchor is a role pointer", () => {
+    const word = parseOk("hewezathaxar");
+    assert.deepEqual(word.family, {
+      kind: "x",
+      xFamily: "lateral",
+      leftRoots: ["eweza"],
+      rightRoots: [],
+      roleVowel: "a",
+      pointerVowel: "a",
+    });
+    assert.equal(word.ending, "r");
+    // Only a pointer on -r names someone whose facing can count.
+    assert.throws(() => parseWord("hewezathaxal"));
+  });
+
   it("parses gewezethazawaxululon as a viewpoint lateral with a multipart anchor", () => {
     const word = parseOk("gewezethazawaxululon");
     assert.deepEqual(word.family, {

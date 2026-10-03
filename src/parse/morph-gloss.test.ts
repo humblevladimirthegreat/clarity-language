@@ -302,6 +302,30 @@ describe("morphGlossLine — restrictor -r vs -l", () => {
     expectLine("zalahen varahal har.", "z-Alahen | v-run | h-sometimes");
     expectLine("yol zahaben vowogal har.", "y-question | z-Ahaben | v-walk | h-when");
   });
+  it("her is the first-ranked occasion; under a question it asks when is best (restrictors.md)", () => {
+    expectLine("zazawan vowogal her.", "z-Azawan | v-walk | h-preferred-time");
+    expectLine("yol zahan vowogal her.", "y-question | z-interlocutors | v-walk | h-when-best");
+    expectLine("yol zahan vowogal herehel hanadal her.", "y-question | z-interlocutors | v-walk | h-rain | h-night | h-when-best");
+  });
+});
+
+describe("morphGlossLine — tags, xuen, humul, pointer anchors", () => {
+  it("any polar word makes a tag after yol (questions.md#tags)", () => {
+    expectLine("yem zahan vowogal. yol yaol.", "y-request | z-interlocutors | v-walk . y-question | y-sure");
+    expectLine("yem zehodon vowogal. yol yuol.", "y-request | z-listener | v-walk . y-question | y-refuse-option");
+    expectLine("zazawan vowogal. yol yuel.", "z-Azawan | v-walk . y-question | y-no");
+  });
+  it("xuen tells a sequence last first (join-across-roles.md#sequence)", () => {
+    expectLine("zazawan vehahel xuen zazawar vowogal.", "[z-Azawan | v-sit | x-and-before-that | z-←Azawan | v-walk]");
+  });
+  it("humul / gumul are exactly like (relations.md#exactly-like)", () => {
+    expectLine("zazawan humul badagul vowogal.", "z-Azawan | [h-exactly-like | b-duck] | v-walk");
+    expectLine("zahazal gumul bazawan.", "z-house | [g-exactly-like | b-Azawan]");
+  });
+  it("a role pointer as a viewpoint lateral's facing anchor (roles.md#viewpoint-laterals)", () => {
+    expectLine("zazawan vowogal. zalahen vehahel hewezathaxar.", "z-Azawan | v-walk . z-Alahen | v-sit | h-west-th-←agent.same");
+    expectLine("zazawan vowogal hewezathaxer.", "z-Azawan | v-walk | h-west-th-←agent.self");
+  });
 });
 
 describe("compareMorphGloss", () => {

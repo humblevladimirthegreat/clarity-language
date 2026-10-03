@@ -7,11 +7,13 @@ Editors only — not linked from grammar pages. This page answers **why the lang
 - **A deliberate omission with its reason.** The reason must say what a reading would cost: it would collide with a live reading or spelling, break a stated invariant (one parse, one topic position, a warrant for others' views), or work against the project's aims.
 - **A rejected alternative and why**, when the grammar page presents only the current choice.
 
+**Two ways to say one thing are fine.** Repeating another route is not a cost. When a form is intuitive and would arise naturally (a learner builds it from rules they already know, for a job they have), allow it even if another form says the same thing. Banning it would be the counterintuitive choice, so it needs a cost from the list above.
+
 **What does not:**
 
 - **A rule a grammar page already teaches.** That includes omissions the page states (*there is no X; use Y*). Delete the entry.
 - **A settled reading.** Once a reading is settled, teach it on its owning grammar page in the same change. Never park it here.
-- **A spelling that just has no good reading.** *No English job*, *no guessable reading*, *adds nothing*, or *another route already covers it* is not a decision. Those forms are **open** in [unassigned-reserved.md](unassigned-reserved.md), even when the parser rejects them.
+- **A spelling that just has no good reading.** *No English job*, *no guessable reading*, or *no learner would reach for it* is not a decision. Those forms are **open** in [unassigned-reserved.md](unassigned-reserved.md), even when the parser rejects them. *Another route already covers it* is no reason to keep a form out at all (above).
 - **Spelling inventories.** One example per entry at most. Every closed spelling is listed in [unassigned-reserved.md](unassigned-reserved.md) with its D-id.
 - **An English job with a route and no omitted form.** That goes on the [recipe track](grammar-docs.md#recipe-track).
 
@@ -33,9 +35,12 @@ IDs are stable (code and other meta pages cite them). Retired IDs are not reused
 | D-31 | A topic-only question (`yol xazawan.`); a polar word before an act word, or two in a row (`yael yal`, `yael yuel`) | `yol xazawan.` would reset the topic for a throwaway *And you?*, which `yol zazawan zam.` says without side effects (D-20). A polar word is one answer, so an answer and a question are two turns. Parser: `polarOrder` | questions.md |
 | D-32 | A stand-in on `/ɡ/` (`garl`); a linker and a topic word in one sentence (`xezom xazawan …`) | a stand-in on `/ɡ/` would let a clause modify a noun, against the [which-noun](../grammar/dependents.md#which-noun) rule; *the fact that* is a predicate with a `/z/` stand-in, or two sentences. One `/x/` word opens a sentence, so every tool reads the topic from one position (D-20). Parser: `standInRole` | dependents.md |
 | D-33 | A bare `/ɡ/` right after the verb as a depictive or resultative (`zalahen vedabal gadadal.`); `gugon` / `gugor` as identity | after an object noun a trailing `/ɡ/` is that noun's own adjective, so the rule could only be subject-only and asymmetrical. `gugon` / `gugor` are the ordinary root *coin* as a name / resume. Parser: `predicateAfterVerb` | predication.md |
-| D-34 | A role compound on `/h/` (*as a teacher* as `haxedehol`) | `/h/` already means manner, so it would share a spelling with *in a teacherly way*; say the role in its own clause (`zamagon gaxedehol. zamagor …`). Parser: `roleCompoundSlot` | roles.md |
+| D-34 | A role compound or a social tie on `/h/` (*as a teacher* as `haxedehol`, *as a friend of Azawan* as `hemezem bazawan`) | `/h/` already means manner, so each would share a spelling with the manner word (*in a teacherly way*, *companionably*); say the role in its own clause (`zamagon gaxedehol. zamagor …`). Parser: `roleCompoundSlot` | roles.md, relations.md |
 | D-35 | A mirative, deontic or consent overlay on `/w/` (`wezul`, `wedem bazawan`); PLAN, DECISION, ATTEMPT or WANT on `/w/`; a clause pole on `/w/` or `/h/` (`woyem`, `hoyem` as *in case*) | on `/w/` those spellings are their roots' ordinary words (`wezum` *surprisingly*, `wedem` *forbiddenly*, `wamam` *as planned*, `wehum` *decidedly*, `wudum` *tentatively*, `wohum` *wishfully*, `woyem` *opportunely*). A deontic **-m**, the intention moods, and a pole each need a `/b/`, and `/w/` takes none; an intention mood before an adjective would also split its holder between the subject and that adjective's noun. *In case of rain* is `thoyem berehel` | knowing.md, intention.md, causation.md, sakes.md |
 | D-36 | **-n** on a sake word (`ganathan`) | `ganathanar` would read as a viewpoint lateral | sakes.md |
+| D-37 | **-x** on a `/th/` stance word (`thovumx` as *we may*) | it would hand the stance to the speaker's associates without saying how you know they hold it. Someone else's view goes through a holder, whose host is that warrant (`thunemazawanx`). Parser: `pluralOnPos` | plurality.md, knowing.md |
+| D-38 | `th#1` as *first-hand* (`threwol`) | first-hand is a live look or a memory, and the channels keep those apart because a memory can be wrong; a bare *first-hand* would claim the warrant without saying which | knowing.md, numbers.md |
+| D-39 | A single-item clause join (`A xul` *not the case that A*) | said aloud, `A xul.` before a new sentence `B` sounds like `A xul B` (*neither A nor B*) when the pause is missed, which flips the next claim. Deny or single out the verb or noun (`vowogal vul`, `zazawan zal`). Parser: `clauseSingleItem` | joins.md |
 
 ## Rejected alternatives
 
@@ -102,6 +107,7 @@ Only the six standard stacks exist (`ao` `ua` `uo` `ae` `oe` `ue`). A reversed o
 - **-r on a closed root** is the family's own **-r** where it defines one (a strong-to-light grade, or the *because* share). Everywhere else it is the whole-stem resume (`thoyer` *in that case*), so giving such a family an **-r** grade would take away a live reading.
 - **-n on a mood root** is an ordinary proper name. There is no named-mood overlay.
 - **-n on `/y/`** calls someone, so the act and polar series have no named-formula interjection.
+- **-r on the act series** is the *for now* act (`yar` *as things stand*), so no `/y/` word is a fill-ask blank for the act itself (*are you asking or telling?*).
 
 ### Hooks and relations
 

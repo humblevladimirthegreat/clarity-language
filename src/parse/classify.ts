@@ -61,6 +61,8 @@ const RESTRICTOR_CORE = new Set<string>([
   "ar",
   "or",
   "ur",
+  // unspecified first-ranked occasion (*at the preferred time*; under a question *when's best?*)
+  "er",
   // set / invert / inclusive
   "ol",
   "om",

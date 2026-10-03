@@ -595,6 +595,7 @@ ValueCompound
     }
 
 // Viewpoint lateral: direction + `th` + whose facing counts (roles.md § Viewpoint laterals).
+// The anchor may be a role pointer on **-r** (`hewezathaxar` *on their left*).
 LateralCompound
   = dir:ContentRoot "th" anchor:CompoundHost ending:Ending plural:PluralSuffix? WordEnd {
       return {
@@ -603,6 +604,18 @@ LateralCompound
         family: xFamily("lateral", {
           leftRoots: [dir],
           rightRoots: anchor,
+        }),
+      };
+    }
+  / dir:ContentRoot "th" roleV:("ae" / "ao" / "oe" / "ua" / "ue" / "uo" / "a" / "e" / "u" / "o") "x" pointerV:[aeou] "r" plural:PluralSuffix? WordEnd {
+      return {
+        ending: "r",
+        plural: !!plural,
+        family: xFamily("lateral", {
+          leftRoots: [dir],
+          rightRoots: [],
+          roleVowel: roleV,
+          pointerVowel: pointerV,
         }),
       };
     }

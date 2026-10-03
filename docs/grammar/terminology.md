@@ -378,9 +378,9 @@ Extra-noun [hook](hooks.md#extra-noun) **`ael`** plus implement `/b/` (*using / 
 
 ### Simile (*like*)
 
-Hosted **`humum`** / **`gumum`** plus model `/b/` (*like* a duck / *like* Azawan’s). Not **`SAME`**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
+Hosted **`humum`** / **`gumum`** plus model `/b/` (*like* a duck / *like* Azawan’s); with **-l**, **`humul`** / **`gumul`** is *exactly like*. Not **`SAME`**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
 
-[Relations](relations.md#similative)
+[Relations](relations.md#similative), [exactly like](relations.md#exactly-like)
 
 ### Exchange (*for*)
 
@@ -720,7 +720,7 @@ Clause-pole **`hogom`**: intended outcome of the host (*so that Alahen sits*; NP
 
 ### Sequence
 
-Clause join **-n** (`xan` *and then*).
+Clause join **-n** (`xan` *and then*; `xuen` *and before that*).
 
 [Join across roles](join-across-roles.md#sequence)
 
@@ -775,6 +775,12 @@ Utterance setting: statement / question / command / prohibition.
 *If* (enough) vs *only if* (needed) vs *because* / *iff*.
 
 [Causation](causation.md)
+
+### Tag
+
+**`yol`** plus a [polar stance](#polar-stance) word as its own turn after a sentence: asks the listener for that answer (`yol yael.` *…, right?*, `yol yaol.` *…, okay?*, `yol yuel.` *…, or am I wrong?*).
+
+[Questions](questions.md#tags)
 
 ### Time horizon
 <a id="contact--contact-channel"></a>
@@ -847,7 +853,7 @@ Sake + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`gobum`** + `/w/
 
 ### Viewpoint laterals
 
-DIR × ANCHOR; the anchor sets the facing frame (person or oriented object); the ending refers to the anchor, not DIR.
+DIR × ANCHOR; the anchor sets the facing frame (person or oriented object, or a role pointer on **-r**); the ending refers to the anchor, not DIR.
 
 [Role compounds](roles.md#viewpoint-laterals)
 

@@ -15,6 +15,15 @@ When English would walk through events in time (*and then*), put ending **-n** o
 | `xon` | sequence menu | *or maybe…*; after an [attempt](intention.md#try), *failing that…* | **o** ≈ one |
 | `xun` | sequence deny | *and then not…* | **u** ≈ undo |
 | `xaon` | sequence inclusive | *and/or maybe…* | **ao** ≈ add then one |
+| `xuen` | sequence turned back | *and before that…* | **ue** ≈ undo + order (the order runs backward) |
+
+**`xuen`** tells the steps last first: `A xuen B` says that B happened before A. Use it when you want to say the later event first and then step back, as English does with *before that*.
+
+> `zazawan vehahel xuen zazawar vowogal.`
+>
+> [z-Azawan | v-sit | x-and-before-that | z-←Azawan | v-walk]
+>
+> "Azawan sat, and before that, they walked."
 
 The `/x/` forms are clause joins; **-n** under `/v/`, `/ɡ/`, and `/h/` makes join-derived content words. See [join-act verbs](#join-act-verbs) and [join-relations](#join-relations) for those forms. Ordinary content **-n** still [names](word-endings.md#proper-name--n) a person or titled frame.
 
@@ -204,7 +213,7 @@ When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*)
 | `xon` | `von` | one / choose |
 | `xun` | `vun` | undo / refuse |
 
-The `/x/` forms connect clauses and keep one speech act. Their `/v/` counterparts take an object and name an act on it. Prioritizing (`ven`) and the stacked `/v/` forms have no clause sequence; they follow the same series in the inventory below.
+The `/x/` forms connect clauses and keep one speech act. Their `/v/` counterparts take an object and name an act on it. Prioritizing (`ven`) has no clause sequence, and of the stacked vowels only `xaon` and `xuen` have one; the `/v/` forms follow the same series in the inventory below.
 
 These are ordinary content verbs. Point back at a join-act you already used with a resume or a full paraphrase. Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
 
@@ -349,6 +358,14 @@ z-Alahen | [v-run | v-punch | v-and.open]
 z-Alahen | [h-refusing | b-medal] | v-run
 :::
 
+**9.** *Alahen runs, and before that, Azawan lies.*
+
+::: details Show answer
+`zalahen varahal xuen zazawan valahal.`
+
+[z-Alahen | v-run | x-and-before-that | z-Azawan | v-lie]
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zahaben dodovel van.`
@@ -421,6 +438,15 @@ z-teamwork | [g-open-to | b-Azawan]
 z-Alahen | [h-anything-but | b-Ahaben] | v-scream
 
 *Alahen screams, barring Ahaben.*
+:::
+
+**9.** `zahaben vezugel xuen zalahen vabahel.`
+
+::: details Show answer
+
+[z-Ahaben | v-scream | x-and-before-that | z-Alahen | v-punch]
+
+*Ahaben screams; before that, Alahen punched.*
 :::
 
 ## See also

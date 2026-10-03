@@ -223,10 +223,12 @@ function isRoleAnaphor(word: LexWord): boolean {
   return word.family.kind === "x" && word.family.xFamily === "role" && word.ending === "r";
 }
 
-/** A role pointer, on its own or in a holder seam's holder slot (`thunemaxar`). */
+/** A role pointer, on its own, in a holder seam's holder slot (`thunemaxar`), or as a lateral's facing anchor (`hewezathaxar`). */
 function isPointer(word: LexWord): boolean {
   const family = word.family;
-  return family.kind === "x" && (family.xFamily === "pointer" || (family.xFamily === "holder" && family.pointerVowel !== undefined));
+  if (family.kind !== "x") return false;
+  if (family.xFamily === "pointer") return true;
+  return (family.xFamily === "holder" || family.xFamily === "lateral") && family.pointerVowel !== undefined;
 }
 
 /** A holder's own **-r** resumes the person whose view it is (`thevemazawar`, knowing.md#holder). */

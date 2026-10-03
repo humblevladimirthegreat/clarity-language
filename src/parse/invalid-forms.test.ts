@@ -165,6 +165,7 @@ const ROWS: Row[] = [
   { invalid: "zalahen vowogal. zalar vehahel.", rejection: "resumeUnbound", valid: "zalahen vowogal. zalaher vehahel." },
   { invalid: "zaxar vowogal.", rejection: "pointerUnbound", valid: "zazawan vowogal. zaxar vehahel." },
   { invalid: "zazawan vowogal. vaxar.", rejection: "pointerSlot", valid: "zazawan vowogal. zalahen vowogar." },
+  { invalid: "zalahen vehahel hewezathaxar.", rejection: "pointerUnbound", valid: "zazawan vowogal. zalahen vehahel hewezathaxar." },
   { invalid: "zazawan vowogal. dexor vahahal.", rejection: "pointerOtherRole", valid: "zazawan vowogal. dexar vahahal." },
   { invalid: "zazawan dalahen vabahel. zaxem genehem.", rejection: "pointerShareSelf", valid: "zazawan dalahen vabahel. zaxam genehem." },
   { invalid: "zazawan dalahen vabahel. zaxamx genehem.", rejection: "pointerSharePlural", valid: "zazawan dalahen vabahel. zaxam genehem." },

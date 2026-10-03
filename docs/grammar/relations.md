@@ -209,6 +209,24 @@ z-book | [g-like | b-Ahaben]
 
 ## Intermediate {#intermediate}
 
+### Exactly like (`humul` / `gumul`) {#exactly-like}
+
+Beginner used **`humum`** / **`gumum`** for *like*: the event or thing resembles the model in `/b/`. When the match is exact (*walks exactly like a duck*, *a house just like Azawan's*), end the same relation word in **-l** instead: **`humul`** on the event, **`gumul`** on a noun. The model still sits in `/b/` right after it, and the event or thing still stays real. (cue: **-l** ≈ locked: the reflection matches the model line for line)
+
+> `zazawan humul badagul vowogal.`
+>
+> z-Azawan | [h-exactly-like | b-duck] | v-walk
+>
+> "Azawan walks exactly like a duck."
+
+> `zahazal gumul bazawan.`
+>
+> z-house | [g-exactly-like | b-Azawan]
+>
+> "A house just like Azawan's."
+
+**Related form:** a degree word before **`humum`** grades the match instead (`wamazam humum badagul` *a bit like a duck*).
+
 ### Locative relations {#locative-relations}
 
 Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extra-noun hooks](hooks.md#extra-noun-intermediate). Several hooks on one clause are several extras (*from* one landmark *toward* another). Write the **source** first, then the **goal**.
@@ -411,6 +429,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *around* | `hugem` |
 | *wood* | `uwul` |
 | *material* | `guwum` |
+| *exactly-like* | `humul` |
+| *exactly-like* | `gumul` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -462,6 +482,14 @@ z-Ahaben | v-sit | [on | [b-chair | [g-material | b-wood]]]
 z-Alahen | v-walk | [h-around | b-station]
 :::
 
+**7.** *Alahen walks exactly like Azawan.*
+
+::: details Show answer
+`zalahen humul bazawan vowogal.`
+
+z-Alahen | [h-exactly-like | b-Azawan] | v-walk
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
 **1.** `zahaben vazadol ol bezedel.`
@@ -507,6 +535,15 @@ z-Alahen | [from | b-station] | v-walk | [at | b-train]
 [z-Azawan | [g-origin | b-house]] | v-run
 
 *Azawan, from that house, runs.*
+:::
+
+**6.** `zahaben gumul balahen.`
+
+::: details Show answer
+
+z-Ahaben | [g-exactly-like | b-Alahen]
+
+*Ahaben is just like Alahen.*
 :::
 
 ## Advanced {#advanced}

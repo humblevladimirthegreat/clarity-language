@@ -144,6 +144,12 @@ describe("resolve — role pointers (pronouns.md#role-pointers)", () => {
     assert.deepEqual(pointers("zazawan vowogal. zalahen thunemaxar vedabal."), ["thunemaxar→zazawan"]);
   });
 
+  it("is a viewpoint lateral's facing anchor (roles.md#viewpoint-laterals)", () => {
+    assert.deepEqual(pointers("zazawan vowogal. zalahen vehahel hewezathaxar."), ["hewezathaxar→zazawan"]);
+    assert.deepEqual(pointers("zazawan vowogal hewezathaxer."), ["hewezathaxer→zazawan"]);
+    assert.throws(() => parseText("zalahen vehahel hewezathaxar."), /earlier predicate/);
+  });
+
   it("-l: a new one of the participant's kind, never the same referent", () => {
     assert.deepEqual(pointers("zazawan dugugol vahahal. zalahen duxal vahahal."), ["duxal→dugugol"]);
     const { anaphors } = resolveOf("zazawan dugugol vahahal. zalahen duxal vahahal. zodogal duxar vahahal.");

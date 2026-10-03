@@ -92,3 +92,5 @@ Each row names what the file owns. The file is the authority; this table is only
 # Evaluating ideas
 
 Dev effort is not a con against an idea. Weigh options by their effect on the end user, unless the implementation is risky (a new library, or something an AI might implement incorrectly). For example, needing to update many cross-references is not a downside of a new language feature. Legacy learners are also not a concern - we have no current speakers, so learners needing to unlearn a changed grammar is not a downside.
+
+A second way to say the same thing is not a downside either. If a form is intuitive and would arise naturally, allow it; ban an intuitive form only for a stated cost ([design-decisions](docs/meta/design-decisions.md)).
