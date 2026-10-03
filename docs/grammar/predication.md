@@ -20,7 +20,7 @@ A `/ɡ/` word right after the verb is not a second predicate. *Arrived tired* ta
 
 The same string is also the noun plus its adjective: `zazawan gamadam` is both the full sentence *Azawan is challenging* and the phrase *challenging Azawan*.
 
-A nationality or tradition uses the published **abstract** column on `/ɡ/` (**-m**), not a proper **-n**. That is a **demonym exception**: the people/quality is still **-m** even though it is not unobservable the way *grace* is.
+Belonging to a country's or tradition's people sits on **-m**, not a proper **-n**: **-n** names the whole (*Japan*), and **-m** says you belong to it ([countries and traditions](word-endings.md#countries-traditions)).
 
 > `zazawan gahebam.`
 >
@@ -28,7 +28,7 @@ A nationality or tradition uses the published **abstract** column on `/ɡ/` (**-
 >
 > "Azawan is Japanese."
 
-Demonyms stay on **-m** (`gahebam`). **-n** is a name, not “the Japanese people as a titled category.”
+Nationality stays on **-m** (`gahebam`). **-n** is a name, not “the Japanese people as a titled category.”
 
 ### Kind / role {#classification}
 

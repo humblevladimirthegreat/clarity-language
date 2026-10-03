@@ -605,3 +605,11 @@ describe("morphGlossLine — topic and generic pronouns", () => {
     expectLine("hahehom bazawan zalahen vowogal.", "[h-as-for | b-Azawan] | z-Alahen | v-walk");
   });
 });
+
+describe("morphGlossLine — flag rows", () => {
+  it("glosses -l as the flag, -n as the nativized name, -m as the demonym", () => {
+    expectLine("zalahen vahahal dahebal.", "z-Alahen | v-see | d-japan-flag");
+    expectLine("zalahen vahahal daheban.", "z-Alahen | v-see | d-Aheban");
+    expectLine("zalahen gahebam.", "z-Alahen | g-japanese");
+  });
+});

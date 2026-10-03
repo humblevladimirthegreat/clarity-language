@@ -26,7 +26,7 @@ Sometimes the meaning you want is the published **abstract** sense for that root
 
 **Compare with:** the everyday picture of the same root uses **-l** (`azawal` *swan*). *Grace* is the published abstract of `azawa`, so the citation is **-m**. (cue: from *swan*: the glide of *grace*)
 
-Nationality words are an **exception**: the people/quality sits on **-m** even though you can meet a Japanese person (`gahebam`). That is still the published second sense of the place root, not a name (**-n**).
+A country or tradition root splits the three endings a little differently: see [countries and traditions](#countries-traditions).
 
 ### Named (`-n`)
 <a id="named-n-beginner"></a>
@@ -269,7 +269,7 @@ The rest of the role map (same **-n**):
 |--------|-----|---------|
 | `/z/` `/d/` `/b/` + **-n** | this named entity | person, place, titled work, brand or product line (*Azawan*, *Paris*, *the Odyssey*; *book by* **[Rowling]**) |
 | `/v/` + **-n** | this named event, rite, or titled action | *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]** |
-| `/ɡ/` + **-n** | this named style, tradition, brand, or category | **[Art Deco]** furniture, **[Buddhist]** monastery, **[iOS]** app |
+| `/ɡ/` + **-n** | this named style, brand, or category | **[Art Deco]** furniture, **[iOS]** app |
 | `/w/` + **-n** | named scale, grade, or criterion on the following adjective | *spicy* **[Scoville]**, *large* **[King-size]** |
 | `/h/` + **-n** | named standard, channel, or official frame | *according to* **[GAAP]**, *in* **[Q3]** as the named quarter  |
 | `/y/` vocative + **-n** | address this named person, place, or title; on `/y/`, **-n** always calls | `yalahen`; a kind as a title (`yagavon`); titled group (*Team Alpha*) |
@@ -307,6 +307,31 @@ What counts as one depends on what the name names:
 An **-ln** word is a new mention, so a lone `zazawaln.` is *there is an Azawan*, and a later **-r** resume (`dazawar`) is that same bed, not the brand. A foreign name in a span uses the fence mark `^@` for the same job ([spans](spans.md#when-required)).
 
 **Compare with:** `gazawan` after a noun puts it in the brand (`zebedal gazawan` *the bed is an Azawan*). **-l** on the root is the root’s own sense: `dazawal` is *a swan*.
+
+### Countries and traditions {#countries-traditions}
+
+A country root and a tradition root use all four endings, with one job each:
+
+| Ending | Country (`aheba`) | Tradition (`uguve`) |
+|--------|-------------------|---------------------|
+| **-n** | the country as a named place: *Japan* | the tradition as a named whole: *Christianity* |
+| **-m** | belonging to its people: *Japanese* | belonging to its people: *Christian* |
+| **-l** | its flag: *a Japanese flag* | its symbol: *a crucifix* |
+| **-ln** | one thing that bears the name (*a ship named Japan*) | one thing that bears the name |
+
+**-n** names the whole and **-m** says you belong to it, so a nationality is not a special case. A person, a quality, or a thing from that people (*Japanese food*) takes **-m**; **-n** on `/ɡ/` is for a named style or brand (*Art Deco*, *iOS*), where nobody belongs to it.
+
+> `zazawan gahebam.`
+>
+> z-Azawan | g-japanese
+>
+> "Azawan is Japanese."
+
+| Agazan | Use | English |
+|--------|-----|---------|
+| `aheban` | the named country | *Japan* |
+| `dahebal` | its flag | *a Japanese flag* |
+| `gahebam` | belonging to its people | *Japanese* |
 
 ### Titled phrases (hook, join, span)
 <a id="titled-phrases"></a>

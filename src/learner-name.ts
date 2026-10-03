@@ -3,6 +3,7 @@
  * in grammar examples. Unset → the speaker special (microphone + **-n**).
  */
 import { CLOSED, namedEnglish } from "./closed-roots.js";
+import { stripFlagSuffix } from "./flag-label.js";
 import type { OverlayRow, PublishedRow } from "./lexicon-search.js";
 
 /** Root shown in `SELF` slots when the learner has not chosen a name (the speaker special). */
@@ -66,7 +67,7 @@ export function nameBanReason(row: PublishedRow, overlays: OverlayRow[] = []): s
   if (root === LANGUAGE_ROOT) return `${name} is the name of the language.`;
   const overlay = overlays.find((o) => o.senseForm === name);
   if (overlay) return `${name} is already a grammar word (${overlay.gloss}).`;
-  if (FLAG_RE.test(row.emoji)) return `${name} is the name of the country (${row.concrete}).`;
+  if (FLAG_RE.test(row.emoji)) return `${name} is the name of the country (${stripFlagSuffix(row.concrete)}).`;
   return null;
 }
 

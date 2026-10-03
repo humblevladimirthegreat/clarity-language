@@ -214,6 +214,13 @@ Closed words (joins, hooks, join-act verbs, emotion loci) stack two of the serie
 - **Titled phrases have no -ln on the packaging hook or join.** One of a multi-word title uses a cite with `^@` (`d^@[onodan alahen]`) or a compact `x` name (`zohuxaludeln`).
 - **`^@` with `~`** reads as `^@` alone, as hedging adds nothing to whether something is an instance (same as `@` with `~`).
 
+## Countries and traditions
+
+- **Country -n, belonging -m, flag -l.** A country is a named place, so **-n** names it like any city. **-m** (the flag row's abstract column) is belonging to its people, so nationality is no longer a demonym exception. **-l** is the flag, the row's own emoji. The land is a compound on the root, not a bare ending.
+- **Traditions use the same split:** **-n** the named tradition, **-m** an adherent or quality (*Christian*, *Muslim*), **-l** the symbol (*crucifix*). Religion rows therefore need an abstract column naming the adherent.
+- **`/ɡ/` + -n is a named style or brand** (*Art Deco*, *iOS*), never a tradition or nationality. *Japanese food* and *Buddhist monastery* are **-m**.
+- **Flag rows label their concrete sense `<place>-flag`** (`japan-flag`), so **-l** glosses as the flag. `convert-word` and the pronunciation cache ignore the `-flag` suffix, so the root's sound still comes from the place name, and **-n** glosses as the place (`stripFlagSuffix` in `src/flag-label.ts`).
+
 ## Ranges, rays, and span hooks
 
 - Ranges use hooks, not joins. Rank and sequence joins (`e` / `ue` / `oe`) with a number have no threshold reading, and there is no SHARED continuum word; don't restore either.

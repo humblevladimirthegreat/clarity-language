@@ -45,6 +45,7 @@ import {
 } from "./gloss-structure.js";
 import { scanChunks, toneMarkLength } from "./span-scan.js";
 import { parseWithTables } from "./parse-core.js";
+import { stripFlagSuffix } from "../flag-label.js";
 import { isDigitlessNumberBlank, ordinalPronounPlace } from "./resolve.js";
 import { parseWords, WordParseError } from "./word.js";
 import type {
@@ -1587,7 +1588,7 @@ function rootSense(
   const packed = row ? packedRoleLemma(row, ending, opts.pos) : undefined;
   if (packed) return hyphenEnglish(packed);
   if (ending === "m") return hyphenEnglish(row?.abstract || row?.concrete || root);
-  if (row?.concrete) return hyphenEnglish(row.concrete);
+  if (row?.concrete) return hyphenEnglish(ending === "n" ? stripFlagSuffix(row.concrete) : row.concrete);
   if (row?.abstract) return hyphenEnglish(row.abstract);
   return root;
 }

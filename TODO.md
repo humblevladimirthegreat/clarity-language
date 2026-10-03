@@ -17,7 +17,6 @@ Prosody
 -review logical deduction
 -fix output too large for find lexicon
 -decline by design vs decline because can't think of good reading
--brands vs demonyms: word-endings.md lists *[Buddhist] monastery* as `/ɡ/` + -n "tradition", but predication.md says a nationality or tradition uses -m. Pick one rule.
 apply role-pointer-endings.md
 
 save for near end of limit resets:

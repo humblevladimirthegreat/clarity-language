@@ -13,6 +13,7 @@ import { dirname, join } from "node:path";
 
 import { CMU_PATH, loadCmu } from "./cmu-dict.ts";
 import { parseCsvLine, serializeCsv } from "./csv.ts";
+import { stripFlagSuffix } from "./flag-label.ts";
 import { toAgazan } from "./pronunciation-map.ts";
 import { REPO_ROOT, dataPath } from "./repo-paths.ts";
 
@@ -67,7 +68,9 @@ export async function buildPronunciationCache(options: { write?: boolean } = {})
     const cols = parseCsvLine(csvLine);
     const emoji = cols[iEmoji]!;
     const concrete = cols[iConcrete]!;
-    const label = concrete.toLowerCase();
+    const fullLabel = concrete.toLowerCase();
+    const label = stripFlagSuffix(fullLabel);
+    const suffix = fullLabel.slice(label.length);
     let lookup = label;
     let phones = cmu.get(label);
     let status = "exact";
@@ -76,7 +79,7 @@ export async function buildPronunciationCache(options: { write?: boolean } = {})
       const joined = label.replaceAll("-", "");
       const alt = joined !== label && cmu.has(joined) && !KEEP_HYPHEN.has(label) ? joined : undefined;
       if (alt) {
-        hyphenFixes.push({ line: n, from: concrete, to: alt });
+        hyphenFixes.push({ line: n, from: concrete, to: alt + suffix });
         lookup = alt;
         phones = cmu.get(alt);
         status = "hyphen-fix";
@@ -90,7 +93,7 @@ export async function buildPronunciationCache(options: { write?: boolean } = {})
         .filter(([a, b]) => cmu.has(a) && cmu.has(b) && common.has(a) && common.has(b));
       if (splits.length) {
         const [a, b] = splits.sort((x, y) => Math.min(y[0].length, y[1].length) - Math.min(x[0].length, x[1].length))[0]!;
-        hyphenFixes.push({ line: n, from: concrete, to: `${a}-${b}` });
+        hyphenFixes.push({ line: n, from: concrete, to: `${a}-${b}${suffix}` });
         lookup = `${a} ${b}`;
         phones = [...cmu.get(a)!, "|", ...cmu.get(b)!];
         status = "hyphen-fix";
@@ -105,10 +108,10 @@ export async function buildPronunciationCache(options: { write?: boolean } = {})
       }
     }
     if (!phones) {
-      rows.push({ emoji, label, lookup: "", phones: "", agazan: "", status: "missing" });
+      rows.push({ emoji, label: fullLabel, lookup: "", phones: "", agazan: "", status: "missing" });
       continue;
     }
-    rows.push({ emoji, label, lookup, phones: phones.join(" "), agazan: toAgazan(phones), status });
+    rows.push({ emoji, label: fullLabel, lookup, phones: phones.join(" "), agazan: toAgazan(phones), status });
   }
 
   if (write && hyphenFixes.length) {
