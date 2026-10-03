@@ -281,6 +281,8 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 >
 > "Azawan walks if and only if Alahen sleeps."
 
+A noun after a because pole names an **act or a thing**, not a bare person. For *because of Alahen*, say what Alahen did as a following sentence after **`barl`**. A name there is a named event or place (a storm, a city), never the person.
+
 **Related form:** *not because of X* (the outcome still holds; only the reason is denied) closes the pole with a [stance join](join-across-roles.md#stance-joins). Denying the outcome itself is `vowogal vul`.
 
 > `zazawan vowogal tholum thevem berehel.`
@@ -338,7 +340,7 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 >
 > "The rain is part of why Azawan left."
 
-Put the **act** in `/b/`, not the person: `barl zalahen vezebel` (*Alahen's telling*), never `balahen`. Fault then lands on what someone did, and it leaves room for *Alahen did a wrong thing* without *Alahen is bad*. A thing or circumstance (`berehel`) is fine, because it has no one to blame.
+The rule from [*because*](#only-because) matters most here: the act goes in `/b/`, not the person (`barl zalahen vezebel` *Alahen's telling*, never `balahen`). Fault then lands on what someone did, and it leaves room for *Alahen did a wrong thing* without *Alahen is bad*. A thing or circumstance (`berehel`) is fine, because it has no one to blame.
 
 Fault is still a claim. You can hedge it with [MAY](knowing.md#may) right before the pole (`thovum thevel barl …`), or pair **`tholum`** with it for *only because of that fault*.
 

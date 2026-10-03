@@ -52,6 +52,8 @@ describe("glossToAgazan", () => {
       "zalahen dazawaln vahahal. zazawar gelavam.",
       "zalahen d^@<iPhone> vahahal.",
       "zalahen d^@[onodan alahen] vahahal.",
+      "zahaben d~@[onodan alahen] vezehel.",
+      "zalahen d~^@<iPhone> vahahal.",
       "zedehel zagavel zol { humum bazawan } vowogal.",
       "zazawan vowogal. zazawar vahahul.",
       "zazawan vowogal. zaxar vahahul.",

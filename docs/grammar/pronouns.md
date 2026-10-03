@@ -83,6 +83,8 @@ A sentence with nobody in that part does not count. *It rains* has no doer, so `
 >
 > "Azawan walks. It rains. They sit."
 
+A pointer looks back as far as it needs to: across turns and paragraphs, and through what other speakers said. Only a [topic change](#topic-resets) stops it. Only sentences count, not nouns that name an event: a storm named as a noun gives a pointer no doer to find.
+
 A pointer takes [associative **-x**](plurality.md#associative) like a name. A pointer with no earlier sentence that has someone in that part points at nothing, so it is not a sentence.
 
 ### Themself (`e`) {#themself}
@@ -119,7 +121,7 @@ Sometimes an earlier sentence has the event but never says who took part. *The c
 >
 > "The cookie is seen. Whoever saw it runs."
 
-This is the **`a`** rule turned around: **`a`** skips a sentence with nobody in that part, and **`u`** looks for exactly that sentence. Once used, `zaxur` fills the subject like any noun, so a later `zaxar` reaches it (*they*, still unnamed). **`u`** goes with the same three role vowels: `zuxur` is *whatever it happened to*, when no sentence said what.
+This is the **`a`** rule turned around: **`a`** skips a sentence with nobody in that part, and **`u`** looks for exactly that sentence. It does not ask whether the verb could have that part: *it rains* also leaves its doer unsaid, so `zaxur` right after it is *whatever made it rain*. Once used, `zaxur` fills the subject like any noun, so a later `zaxar` reaches it (*they*, still unnamed). **`u`** goes with the same three role vowels: `zuxur` is *whatever it happened to*, when no sentence said what.
 
 **Compare with:** `unan` *someone* is tied to no event. `zaxur` is tied to one known event, *whoever did that*.
 

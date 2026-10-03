@@ -143,7 +143,7 @@ The scene works the same way. With a place in the clause (*in a house*), scene *
 >
 > "Azawan sleeps in a house. Alahen sees the house."
 
-With no place, a *during* time is the scene (`huwem bavodel`, *during the storm*). With neither, `dexar` is the event’s own place or time, as `dexezebar` would be. A place wins over a time, and *before*, *after*, *until*, and *by* name a time the event is measured from, not its scene.
+With no place, a *during* time is the scene (`huwem bavodel`, *during the storm*). With neither, `dexar` is the event’s own place or time, as `dexezebar` would be. A place wins over a time, and with two places the first one is the scene. *Before*, *after*, *until*, *by*, and an [as-of](relations.md#as-of) pair name a time the event is measured from, not its scene.
 
 **Compare with:** for the doer, the undergoer, or the extra party, a pointer looks back to whoever last had that part, skipping events without one ([role pointers](pronouns.md#role-pointers)). For the scene, it takes the latest event, whatever it has. Scene **`u`** (`zexur` *wherever it happened*) says nobody has named the place, where `zexar` is a place the talk already gave.
 

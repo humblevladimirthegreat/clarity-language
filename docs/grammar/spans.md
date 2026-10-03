@@ -46,6 +46,14 @@ Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gi
 >
 > "Ahaben sang Onodan Alahen."
 
+**`~`** and **`@`** combine, `~` first: the span still names the work, but the title is only roughly that. Use it when you remember a title loosely.
+
+> `zahaben d~@[onodan alahen] vezehel.`
+>
+> z-Ahaben | d-NAME.CITE.about[Onodan | Alahen] | v-sing
+>
+> "Ahaben sang that song called something like Onodan Alahen."
+
 ### Opaque and loan words {#loans}
 
 **Opaque** holds a foreign, code, or raw surface that is not ordinary Agazan words. Write the role letter, then angle brackets around that blob. Do not put an extra letter after `>`. Faithfulness uses the same marks as cite: none / **`~`** / **`@`**.
@@ -66,7 +74,7 @@ Outside a clause, a foreign name or word is a prefix-less fence with the same ma
 
 ### Calls and reactions (`/y/`) {#y-spans}
 
-Under `/y/`, a span calls someone or reacts, so only an opaque <code>&lt;…&gt;</code> or a cite `[…]` goes there, and it opens the turn, before the act word. The **`@`** mark decides the job, as **-n** does on a native word: a named span calls that person (<code>y@&lt;Sam&gt;</code>, *Sam!*), and a span without **`@`** is a foreign [interjection](speech-moves.md#interjections) (<code>y&lt;Amen&gt;</code>, *Amen!*). A mention talks about a word and an aside `(…)` comments on the sentence, so neither one calls or reacts: there is no `/y/` mention or aside.
+Under `/y/`, a span calls someone or reacts, so only an opaque <code>&lt;…&gt;</code> or a cite `[…]` goes there, and it opens the turn, before the act word. The **`@`** mark decides the job, as **-n** does on a native word: a named span calls that person (<code>y@&lt;Sam&gt;</code>, *Sam!*; with **`~`**, <code>y~@&lt;Sam&gt;</code>, by a name you are not sure of), and a span without **`@`** is a foreign [interjection](speech-moves.md#interjections) (<code>y&lt;Amen&gt;</code>, *Amen!*), exact or given as the gist with **`~`** (<code>y~&lt;Amen&gt;</code>). A mention talks about a word and an aside `(…)` comments on the sentence, so neither one calls or reacts: there is no `/y/` mention or aside.
 
 ### Asides (`th(…)`)
 <a id="asides"></a>
@@ -423,6 +431,7 @@ A span with **`@`** names the work or product itself: <code>d@&lt;iPhone&gt;</co
 | <code>d^@&lt;iPhone&gt;</code> | one unit of it | *an iPhone* |
 | `d@[onodan alahen]` | the named work | *Onodan Alahen* |
 | `d^@[onodan alahen]` | one copy or performance of it | *a copy of Onodan Alahen* |
+| `d~^@[onodan alahen]` | one copy of a work titled roughly that | *a copy of something like Onodan Alahen* |
 
 ### Act words in a quote {#quote-acts}
 
@@ -477,7 +486,7 @@ A [tone mark](speech-moves.md#tone-marks) written right before the opening brace
 - **Hosts keep their `/b/`.** A host (`/ɡ/`, `/h/`, `/th/`) and its hosted `/b/` are both inside the island or both outside.
 - **One island per clause.** Islands do not nest.
 - Empty `{ }` has no reading.
-- **Binder required:** at least one scope-taking `/h/` or `/th/` and/or a [join](joins.md#scope-islands-join) particle **inside**.
+- **Binder required:** at least one scope-taking `/h/` or `/th/` and/or a [join](joins.md#scope-islands-join) particle **inside**. A [hook](hooks.md) is never a binder. A hook already reaches its whole stretch: `/w/` right before it grades the [whole span](hooks.md#spans), and a hook after a noun belongs to that noun.
 - Prefer spaces inside: `{ hegewem zodogal geredal }`.
 
 | Binder | Use inside the island |

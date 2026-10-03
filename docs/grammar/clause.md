@@ -86,7 +86,7 @@ A stance is yours **now**, as you speak. To give a stance you held at another ti
 
 `/b/` marks an **extra noun**: a person or thing beyond the subject and direct object. It has two jobs. You tell them apart by the word **immediately before** the `/b/` word.
 
-**Hosted: completing a relation.** Some words name a relation that needs another person or thing (*like …*). Put that word in `/ɡ/`, `/h/`, or `/th/`, then put the other noun in `/b/` right after it. That relation word is the `/b/` word’s **host**: a `/b/` right after a `/ɡ/`, `/h/`, or `/th/` word always completes that word. (cue: 🪞 *mirror*: the image is *like* the model.)
+**Hosted: completing a relation.** Some words name a relation that needs another person or thing (*like …*). Put that word in `/ɡ/`, `/h/`, or `/th/`, then put the other noun in `/b/` right after it. That relation word is the `/b/` word’s **host**: a `/b/` right after a `/ɡ/`, `/h/`, or `/th/` word always completes that word, even a word that names no relation. A listener never takes it as the recipient, so a recipient written there is a mistake. (cue: 🪞 *mirror*: the image is *like* the model.)
 
 > `humum bazawan`
 >

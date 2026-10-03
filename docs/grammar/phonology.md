@@ -60,8 +60,7 @@ Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org
 
 A content word ends with a last consonant `-l` / `-m` / `-n`, or `-r`. That last consonant is the audible end of the word. Inside the word, consonants start syllables. They do not close a syllable in the middle.
 
-`azawan` = *a-za-wan*. `odogal` = *o-do-gol*.
-
+`azawan` = *a-za-wan*. `odogal` = *o-do-gal*.
 ## Intermediate {#intermediate}
 
 ::: tip Reminder:

@@ -22,6 +22,8 @@ A HOOK B
 >
 > "The family, including Azawan."
 
+Because a hook starts with a vowel, the [last consonant](phonology.md#word-edges) of the word before it may slide over and start the hook's syllable, in speech and in song: `zavahal al` can sound like *za-va-ha-lal*. That is fine. The words are still two, and the grammar still finds the edge.
+
 **Compare with:** packaging two members as a list uses a [join](joins.md) (`zodogal zagadul zam` *a dog and a cat*). A hook **hooks** B onto A; it does not name a pair.
 
 > `zavahal am zazawan.`
@@ -554,7 +556,7 @@ Other kinds of *'s* each have their own word:
 | a feeling B has (*Azawan's anger*) | [emotion compose](sakes.md#emotion-compose) |
 | something B made (*the book Azawan wrote*) | a [role compound](roles.md#role-compounds) |
 
-**`em`** always needs a noun on its left: it belongs to the nearest noun before it (after that noun's `/ɡ/` words). After a verb or at the start of a sentence there is no thing for B to use, so `em` + `/b/` is not a sentence there. For someone's act (*Azawan's walk*), say the act as its own sentence, then [point back to it](dependents.md#which-noun). **`em`** never takes a person on the left: a person is not something someone uses. It never names a feeling or trait either, which stays something B has, not something B is made of.
+**`em`** always needs a noun on its left: it belongs to the nearest noun before it (after that noun's `/ɡ/` words). After a verb or at the start of a sentence there is no thing for B to use, so `em` + `/b/` is not a sentence there. For someone's act (*Azawan's walk*), say the act as its own sentence, then [point back to it](dependents.md#which-noun). **`em`** never takes a person on the left: a person is not something someone uses. **`gegabem`** never does either, because no one owns a person: a person tied to B takes a [tie](relations.md#social-relations) (*Azawan's patient* is care, `gahabom`). **`em`** never names a feeling or trait either, and neither does [*part of*](relations.md#of-relations): a feeling or trait stays something B has, not something B uses or is made of. A feeling uses [emotion compose](sakes.md#emotion-compose); a trait is a `/ɡ/` word on B.
 
 **Compare with:** *for Azawan* is `el`. A [sake](sakes.md) on `/ɡ/` also marks the noun as yours, together with how it serves you.
 
@@ -1096,7 +1098,7 @@ In a clause, add a role letter to that citation (`vowogalul`). The extra partici
 >
 > "leave" (citation)
 
-The left ending is part of the stem, so two different left roots stay distinct once the hook is attached.
+The left ending is part of the stem, so two different left roots stay distinct once the hook is attached. In speech that ending starts the hook's syllable, so no consonant closes a syllable mid-word: `owogalul` is *o-wo-ga-lul*.
 
 | Hook | Free extra-noun | Fused **-l** | Fused **-m** | Citation (from *walk*) |
 |------|-----------------|--------------|--------------|------------------------|

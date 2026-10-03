@@ -6,11 +6,11 @@ Editors only — not linked from grammar pages. This page answers **why the lang
 
 - **A deliberate omission with its reason.** The reason must say what a reading would cost: it would collide with a live reading or spelling, break a stated invariant (one parse, one topic position, a warrant for others' views), or work against the project's aims.
 - **A rejected alternative and why**, when the grammar page presents only the current choice.
-- **A settled reading no grammar page teaches yet**, and constraints that only show in the implementation.
 
 **What does not:**
 
 - **A rule a grammar page already teaches.** That includes omissions the page states (*there is no X; use Y*). Delete the entry.
+- **A settled reading.** Once a reading is settled, teach it on its owning grammar page in the same change. Never park it here.
 - **A spelling that just has no good reading.** *No English job*, *no guessable reading*, *adds nothing*, or *another route already covers it* is not a decision. Those forms are **open** in [unassigned-reserved.md](unassigned-reserved.md), even when the parser rejects them.
 - **Spelling inventories.** One example per entry at most. Every closed spelling is listed in [unassigned-reserved.md](unassigned-reserved.md) with its D-id.
 - **An English job with a route and no omitted form.** That goes on the [recipe track](grammar-docs.md#recipe-track).
@@ -25,7 +25,6 @@ IDs are stable (code and other meta pages cite them). Retired IDs are not reused
 | D-13 | *speaker* **`amago`** and *listener* **`ehodo`** are five letters on purpose (`FORCE_LONG` in `src/lexicon-place.ts`); inclusive *we* **`aha`** stays short. The topic pronoun (`zozan`) is a short *I* / *you* only inside a stretch the speaker overtly made about themself (`xamagon`, `xehodon`) | a short *I* / *you* would make self-reference the easiest choice; names or a dropped subject should be easier | pronouns.md |
 | D-16 | No root for a bare evaluative (*good*, *bad*, *nice*, *great*, *terrible*, *quality*, *effective*, *practical*, …) | a bare evaluative hides **whose** need it serves and **what bar** it is measured against, which the language wants audible. Applies to bare evaluatives only: a root whose sense is a quality (delight, beauty, anguish, safety) stays, and scale adjectives (*expensive*, *thick*) take a bar. When a learner needs a new quality, add a root for that quality, not for the evaluation | sakes.md, say-reasons.md |
 | D-18 | No *he* / *she* / *it* (a short pronoun split by gender or animacy) | a single *it* would give up mechanical matching, and a gender split conflicts with the project's aims. Short reference is a role pointer; pointers are third person only (D-13) | pronouns.md |
-| D-19 | Role pointer lookup is unbounded (no stop at a turn or paragraph), and every speaker's clauses count. *The other one* (`o`) takes the doer, undergoer, and extra party, and a stacked role vowel only when the events that name it with their hook's `/b/` count. Pointer vowel `u` picks the latest event that left the role unsaid (no verb is skipped). The scene's overt filler is the first place hook's `/b/`, else *during*'s (*before* / *after* / *until* / *by* and as-of are reference points). A joined slot, rank joins included, is one group filler. Event nouns are not anchors. A new-one pointer copies the filler's head stem only, never its `/ɡ/` words (*a red dog … a blue one*; `duxal geredal` keeps the color) | settled readings; pronouns.md teaches the grid but not these limits | pronouns.md, roles.md |
 | D-20 | The topic is set only by an overt `/x/` word, never inferred from salience, first mention, or subjecthood, and there is no topic stack: every return is spelled out (`xazawar`). Topic words never sit in a dependent, after a clause join, or in an aside; a quote keeps its own topic and count | every tool computes the same topic at every point, from the words alone | pronouns.md |
 | D-22 | A hosted `/b/` after `/z/` / `/d/` / `/v/` / `/w/`; a dropped subject read as the topic | the `/b/` there is already the unhosted recipient. A dropped subject stays unmentioned, and the topic doer is written `zozan` (D-20) | clause.md, pronouns.md |
 | D-23 | Combined tone marks beyond `?!` (`!?`, `%!`); `~` as a tone mark | an open stack grammar would make `!?` and `?!` two spellings of one sound; mix tones by marking a word inside a marked sentence. `~` is the opaque marker | speech-moves.md |
@@ -118,15 +117,3 @@ Only the six standard stacks exist (`ao` `ua` `uo` `ae` `oe` `ue`). A reversed o
 ### Experiencer adjectives
 
 No adjective for someone else's feeling: it would bypass the holder warrant. A noun before a lone feeling is an existence clause, so `zalahen thulothuruor` is *anxious that Alahen is here*. Someone else's objectless feeling goes through a holder (`thulothuruor thunemalahen`).
-
-## Settled readings not yet taught
-
-- **Hosted `/b/` after an evidential** is read by its filler: a time measure is an offset; a person or other noun is the source (*per Alahen*). The source reading is not yet taught.
-- **Because-pole `/b/`** should be an act or a thing, not a bare person. This is guidance, not parser-enforced: a named `/b/` can be a named event or place.
-- **A hosted `/b/` right after any `/ɡ/`, `/h/` or `/th/` word** is structural; a recipient there is a speaker error, not a second reading.
-- **-r on a published linker** resumes that linker and sets no topic.
-- **Spans under `/y/`** follow the ending split: `y@<…>` calls (the **`@`** mark is the span's **-n**); `y<…>` / `y~<…>` is a foreign interjection. A `/y/` span sits at the left edge, before the act word.
-- **`^@` with `~`** reads as `^@` alone, as `@` with `~` does: hedging adds nothing to whether something is an instance.
-- **Scope islands do not bind hooks.** Whole-span scope comes from `/w/` before the hook or from the host noun.
-- **`em` is not a catch-all.** Ownership is `gegabem`, people take a tie (care = `gahabom`), parts / material / origin are of-relations, feelings are emotion compose, and made things are role compounds. People are never `em` or `gegabem`, feelings and traits are never `em` or `gobom`, and `em` never takes an act.
-- **Accepted overlaps:** `r` + vowel in numbers; word edges before vowel-initial words are not fixed; hook compounds have no mid-word coda.

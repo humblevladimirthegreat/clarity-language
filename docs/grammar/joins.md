@@ -40,6 +40,14 @@ Ending **-l** is ordinary English with no extra words: these are the only items.
 >
 > "walks and runs (and possibly more)."
 
+A joined slot is one filler, whatever the join. A [role pointer](pronouns.md#role-pointers) back to it is the whole group:
+
+> `zazawan zalahen zal vowogal. zaxar vehahel.`
+>
+> [z-Azawan | z-Alahen | z-and] | v-walk . z-←agent.same | v-sit
+>
+> "Azawan and Alahen walk. They sit." (both of them)
+
 ### Right-close fence {#right-close}
 <a id="join-series-ending-shared"></a>
 

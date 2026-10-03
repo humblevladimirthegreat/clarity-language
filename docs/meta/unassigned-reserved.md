@@ -266,7 +266,7 @@ Source: [phonology.md](../grammar/phonology.md)
 
 | Page | Role |
 |------|------|
-| [design-decisions.md](design-decisions.md) | Why a cell is closed; rejected alternatives; settled readings not yet taught |
+| [design-decisions.md](design-decisions.md) | Why a cell is closed; rejected alternatives |
 | [grammar-docs.md](grammar-docs.md) | Grammar prose: unused slots do not earn a stage |
 | [drill-generation.md](drill-generation.md) | Do not drill cells listed here |
 | [TODO.md](../../TODO.md) | Speculative features, open lexicon |

@@ -63,7 +63,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `translation-exercises.md` | Translation checkpoint policy. |
 | `drill-generation.md` | Procedure for adding checkpoints. |
 | `lexicon.md` | Root spellings, root length, respelling, moving an overlay to another row. |
-| `design-decisions.md` | Why a form or reading is deliberately absent, rejected alternatives, settled readings no grammar page teaches yet. Not a restatement of grammar pages. |
+| `design-decisions.md` | Why a form or reading is deliberately absent, and rejected alternatives. Not a restatement of grammar pages; settled readings go on grammar pages, never here. |
 | `unassigned-reserved.md` | Every spelling with no reading, marked open (no natural reading yet) or closed (by a design decision). Never linked from grammar pages. |
 | `language-name.md` | Why the name is Agazan. |
 | `proposals.md` | Notes for `docs/proposals/` — never link to proposal pages (filenames in backticks only). |

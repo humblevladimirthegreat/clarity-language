@@ -310,7 +310,7 @@ function groupPieces(node: Extract<Node, { t: "group" }>, index: GlossIndex, tab
   const pos = prefix.replace(/-$/, "");
 
   const [lb, rb] = WRITTEN_BRACKET[type]!;
-  const mark = isNamed ? (instance ? "^@" : "@") : about ? "~" : "";
+  const mark = (about ? "~" : "") + (isNamed ? (instance ? "^@" : "@") : "");
   let payload = "";
   if (type === "OPAQUE") {
     const only = node.kids[0];

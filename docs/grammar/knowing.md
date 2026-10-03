@@ -316,6 +316,26 @@ Alone, `th#N` already says the claim was passed on to you. After TOLD it only ad
 
 **Compare with:** `th_N` names *which* numbered source the claim rests on; `th#N` counts *how many tellers*. Reliability of the one source you heard from is the ending on the channel (`thewal` / `thewar`).
 
+### Source (`/b/` after the channel) {#source}
+
+English *according to Azawan* and *going by the camera* name **who or what you got the claim from**. Put that noun in `/b/` right after the channel. The channel is its [host](clause.md#extra-nouns), so the `/b/` is the source, not someone who receives anything.
+
+> `zalahen thewam bazawan vedabal.`
+>
+> z-Alahen | [th-TOLD | b-Azawan] | v-departure
+>
+> "Alahen left, according to Azawan."
+
+> `zalahen therem bagahol vezebal.`
+>
+> z-Alahen | [th-RECORDED | b-camera] | v-sleep
+>
+> "Alahen sleeps, going by the camera."
+
+The filler decides the job. A person or other noun there is the source. A time [measure phrase](numbers-applied.md#measure-phrases) there is an offset that dates the event instead ([dated channel](#dated-channel)).
+
+**Compare with:** the source is where the claim came to you from; the claim is still yours to pass on. Whose view the claim is uses the [holder](#holder) (taught later), not `/b/`. A numbered footnote source is `th_N`.
+
 ### Mirative (`thezum`) {#mirative}
 
 English *it turns out*, *to my surprise*, and *so … after all* say the news ran **against what you expected**. Put **`thezum`** on the clause. It is not a channel: it says nothing about how you know, so add a channel beside it when you want to name the warrant.
@@ -440,7 +460,7 @@ You assert the grounds, the way you assert a cause. If you are not sure of them,
 >
 > "Alahen punched, judging by the fact that Azawan is screaming (I am watching)."
 
-**Compare with:** the other channels keep a noun in `/b/` as their source (`thunem bazawan` *per Azawan*), and none of them takes `barl`. A cause or condition word may not come before the channel. Put the channel first (`thunem thevem barl`) to say both that you inferred it and that it was caused. *Could be* with no grounds is [MAY](#may).
+**Compare with:** a noun in `/b/` after any channel is its [source](#source) (`thewam bazawan` *according to Azawan*), and no other channel takes `barl`. A cause or condition word may not come before the channel. Put the channel first (`thunem thevem barl`) to say both that you inferred it and that it was caused. *Could be* with no grounds is [MAY](#may).
 
 ### Live vs memory {#live-vs-memory}
 <a id="memory-record"></a>
@@ -1054,7 +1074,7 @@ Only moods about **how you know** or **how it stands** move to `/w/` this way: t
 <a id="ago"></a>
 <a id="time-offset"></a>
 
-English *three hours ago* and *in three hours* count from now. Agazan counts from the channel instead: put a [measure phrase](numbers-applied.md#measure-phrases) in `/b/` immediately after the evidential. The amount is **signed**: **`-`** is earlier than now, **`+`** is later than now. The offset always dates the **event**, not the moment you learned about it. There is no bare *ago* word, so a dated claim always says how you know it.
+English *three hours ago* and *in three hours* count from now. Agazan counts from the channel instead: put a [measure phrase](numbers-applied.md#measure-phrases) in `/b/` immediately after the evidential. Any other noun there is the [source](#source); a time measure is the offset. The amount is **signed**: **`-`** is earlier than now, **`+`** is later than now. The offset always dates the **event**, not the moment you learned about it. There is no bare *ago* word, so a dated claim always says how you know it.
 
 > `zazawan thevom bagazem grurel vowogal.`
 > z-Azawan | [th-WITNESSED | [b-hour | g-minus-three]] | v-walk

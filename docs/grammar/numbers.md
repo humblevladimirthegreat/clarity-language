@@ -247,7 +247,7 @@ group = [exponent?] [mantissa digits?]
 ```
 
 1. **PoS:** the first letter is the clause slot, as on other words.
-2. **Number marker:** consonant **r** plus a vowel **V**. **V** is a single vowel in this stage. The PoS+`r` cluster is a [number-only letter-cluster exception](phonology.md#phonotactics).
+2. **Number marker:** consonant **r** plus a vowel **V**. **V** is a single vowel in this stage. The PoS+`r` cluster is a [number-only letter-cluster exception](phonology.md#phonotactics). A marker can sound like a digit (rank **`re`**, digit 3 **`re`**), but the marker always comes straight after the role letter, so `grerel` is *the third*.
 3. **Zero or more digit groups:** each group is an optional exponent (the *order of magnitude* piece) and optional mantissa digits (the ordinary digits). When a group is present, at least one of those two pieces is present. Digits sit next to each other with no **x**. Sign, when it applies, is once for the whole word. **No groups** is digitless of that marker, or digitless **-r** resume.
 4. **Group separator:** each group after the first opens with **`th`** plus **V₁**, the first vowel of the marker ([below](#group-separator)).
 5. **Ending:** `-l` / `-m` / `-n` / `-r`.
