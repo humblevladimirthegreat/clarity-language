@@ -9,7 +9,6 @@ export type { ResumeScope } from "./resume.js";
 
 const SPAN_CLOSE: Record<WritingBracket, string> = {
   "[": "]",
-  "{": "}",
   "(": ")",
   "<": ">",
 };
@@ -138,7 +137,7 @@ function rewriteWritingSpan(
   map: ReadonlyMap<string, string>,
   scope?: ResumeScope,
 ): string | null {
-  if (family.anaphor || family.bracket === "<") {
+  if (family.bracket === "<") {
     return null;
   }
   const nextPayload = rewriteSpanPayload(family.payload, map, scope);
@@ -194,9 +193,6 @@ function rebuildX(
   left: string[],
   right: string[] | undefined,
 ): string | null {
-  if (family.xFamily === "span") {
-    return null;
-  }
   // Swap each moved root in place, in order, so everything else in the word (role / stance /
   // locus vowels, emotion horizon, landmark `o`, number stem, ending) stays exactly as written.
   const prefix = posPrefix(word);

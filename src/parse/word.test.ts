@@ -126,21 +126,12 @@ describe("parseWord — numbers (writing + speech)", () => {
 });
 
 describe("parseWord — spans and writing atoms", () => {
-  it("parses daxal as span open and xuxul as span close (spans.md)", () => {
-    const open = parseOk("daxal");
-    assert.equal(open.pos, "d");
-    assert.equal(open.ending, "l");
-    assert.deepEqual(open.family, {
-      kind: "x",
-      xFamily: "span",
-      leftRoots: [],
-      typeVowel: "a",
-      edgeVowel: "a",
-    });
-
-    const close = parseOk("xuxul");
-    assert.equal(close.pos, undefined);
-    assert.deepEqual(close.family, { kind: "spanClose", flavor: "complete" });
+  it("reads the old spoken span shapes as vowel-letter compounds, not spans (spans.md)", () => {
+    for (const raw of ["daxal", "daxur", "doxal", "xuxul", "xuxur", "xuxum"]) {
+      const word = parseOk(raw);
+      assert.equal(word.family.kind, "x", raw);
+      assert.equal(word.family.kind === "x" && word.family.xFamily, "compound", raw);
+    }
   });
 
   it("parses xuxun as a /x/ compound proper name, not a span", () => {
@@ -155,7 +146,7 @@ describe("parseWord — spans and writing atoms", () => {
     });
   });
 
-  it("parses writing atoms d[hi], d@[Hamlet], d[=] (spans.md / clause.md)", () => {
+  it("parses writing atoms d[hi] and d@[Hamlet] (spans.md / clause.md)", () => {
     const cite = parseOk("d[hi]");
     assert.equal(cite.pos, "d");
     assert.equal(cite.ending, "l");
@@ -164,7 +155,6 @@ describe("parseWord — spans and writing atoms", () => {
       bracket: "[",
       payload: "hi",
       marks: [],
-      anaphor: false,
     });
 
     const proper = parseOk("d@[Hamlet]");
@@ -174,18 +164,13 @@ describe("parseWord — spans and writing atoms", () => {
       bracket: "[",
       payload: "Hamlet",
       marks: ["@"],
-      anaphor: false,
     });
+  });
 
-    const anaphor = parseOk("d[=]");
-    assert.equal(anaphor.ending, "r");
-    assert.deepEqual(anaphor.family, {
-      kind: "writingSpan",
-      bracket: "[",
-      payload: "=",
-      marks: [],
-      anaphor: true,
-    });
+  it("has no span resume, no curly span and no unclosed span (spans.md)", () => {
+    assert.throws(() => parseWord("d[=]"));
+    assert.throws(() => parseWord("z{odoga}"));
+    assert.throws(() => parseWord("d[hi"));
   });
 
   it("parses nested opaque ] inside a cite (spans.md literal-content)", () => {
@@ -195,36 +180,6 @@ describe("parseWord — spans and writing atoms", () => {
     if (word.family.kind === "writingSpan") {
       assert.equal(word.family.payload, " vuwurul d<]> ");
     }
-  });
-
-  it("parses spoken opaque interiors as foreign blobs", () => {
-    const atomic = parseWords("zululon duxol FBI veyeyal");
-    assert.equal(atomic[2]?.family.kind, "foreign");
-    if (atomic[2]?.family.kind === "foreign") {
-      assert.equal(atomic[2].family.payload, "FBI");
-      assert.equal(atomic[2].family.opaque, true);
-    }
-
-    const multi = parseWords("zuhubun duxal code > 1 xuxul vezehel");
-    const payloads = multi
-      .filter((w) => w.family.kind === "foreign")
-      .map((w) => (w.family.kind === "foreign" ? w.family.payload : ""));
-    assert.deepEqual(payloads, ["code", ">", "1"]);
-    assert.equal(multi.at(-2)?.family.kind, "spanClose");
-  });
-
-  it("treats xuxul after atomic opaque as the blob, not a close", () => {
-    const words = parseWords("daxal duxol xuxul xuxul");
-    assert.equal(words[2]?.family.kind, "foreign");
-    if (words[2]?.family.kind === "foreign") assert.equal(words[2].family.payload, "xuxul");
-    assert.equal(words[3]?.family.kind, "spanClose");
-  });
-
-  it("parses daxal xuxul as two tokens", () => {
-    const words = parseWords("daxal xuxul");
-    assert.equal(words.length, 2);
-    assert.equal(words[0]?.family.kind, "x");
-    assert.equal(words[1]?.family.kind, "spanClose");
   });
 });
 
@@ -350,7 +305,6 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
       bracket: "<",
       payload: "Sam",
       marks: ["@"],
-      anaphor: false,
     });
 
     const opaque = parseOk("d<kimchi>");
@@ -361,7 +315,6 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
       bracket: "<",
       payload: "kimchi",
       marks: [],
-      anaphor: false,
     });
   });
 

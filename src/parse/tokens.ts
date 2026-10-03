@@ -5,7 +5,7 @@ import { isStandIn } from "./classify.js";
 
 /** Non-word surface atoms peeled before Peggy. */
 export type SurfaceAtom =
-  | { kind: "islandEdge" }
+  | { kind: "islandEdge"; open: boolean }
   | { kind: "tone"; mark: string; attached: boolean }
   | { kind: "punct"; punct: PunctKind };
 
@@ -13,19 +13,19 @@ export type TokenPayload = LexWord | SurfaceAtom;
 
 export type AgazanTokenType = ReturnType<typeof createToken>;
 
-/** Category matched by every token an atomic span may hold (all but island edges and sentence ends). */
-export const SpanAtom = createToken({ name: "SpanAtom", pattern: Lexer.NA });
-
-function wordToken(name: string, spanAtom = true): AgazanTokenType {
-  return createToken({ name, pattern: Lexer.NA, categories: spanAtom ? [SpanAtom] : [] });
+function wordToken(name: string, categories: AgazanTokenType[] = []): AgazanTokenType {
+  return createToken({ name, pattern: Lexer.NA, categories });
 }
 
-export const IslandEdge = wordToken("IslandEdge", false);
-export const Period = wordToken("Period", false);
-export const QMark = wordToken("QMark", false);
-export const Bang = wordToken("Bang", false);
+/** Either edge of a scope island (`{` or `}`). */
+export const IslandEdge = wordToken("IslandEdge");
+export const IslandOpen = wordToken("IslandOpen", [IslandEdge]);
+export const IslandClose = wordToken("IslandClose", [IslandEdge]);
+export const Period = wordToken("Period");
+export const QMark = wordToken("QMark");
+export const Bang = wordToken("Bang");
 /** Tone mark (prosody only); checked and removed before the sentence grammar runs. */
-export const Tone = wordToken("Tone", false);
+export const Tone = wordToken("Tone");
 
 export const JoinZ = wordToken("JoinZ");
 export const JoinD = wordToken("JoinD");
@@ -50,12 +50,12 @@ export const Vocative = wordToken("Vocative");
 export const Interjection = wordToken("Interjection");
 export const Linker = wordToken("Linker");
 export const Hook = wordToken("Hook");
-export const SpanOpen = wordToken("SpanOpen");
-export const SpanClose = wordToken("SpanClose");
 export const WritingSpan = wordToken("WritingSpan");
 
 export const allTokens = [
   IslandEdge,
+  IslandOpen,
+  IslandClose,
   Period,
   QMark,
   Bang,
@@ -81,10 +81,7 @@ export const allTokens = [
   Interjection,
   Linker,
   Hook,
-  SpanOpen,
-  SpanClose,
   WritingSpan,
-  SpanAtom,
 ];
 
 const JOIN_BY_POS = {
@@ -127,10 +124,8 @@ function isLinkerWord(word: LexWord): boolean {
 /** Which `classifyTokenBranch` rule assigned a word its token class (construction registry key). */
 export type TokenBranch =
   | "hook"
-  | "spanClose"
   | "writingSpanSlot"
   | "writingSpan"
-  | "spanOpen"
   | "standIn"
   | "join"
   | "joinAct"
@@ -149,7 +144,6 @@ export function classifyTokenBranch(word: LexWord): { type: AgazanTokenType; bra
   const { family, pos, reading } = word;
 
   if (family.kind === "hook") return { type: Hook, branch: "hook" };
-  if (family.kind === "spanClose") return { type: SpanClose, branch: "spanClose" };
   // A written span fills its PoS slot: `d[…]` / `z[…]` / `b[…]` are NP heads; `v[…]`, `th(…)`, … take the V / H / … slot.
   if (family.kind === "writingSpan") {
     // Under `/y/`: a named span (`y@<Sam>`) calls someone; any other span is the reaction itself.
@@ -162,7 +156,6 @@ export function classifyTokenBranch(word: LexWord): { type: AgazanTokenType; bra
     }
     return { type: WritingSpan, branch: "writingSpan" };
   }
-  if (family.kind === "x" && family.xFamily === "span") return { type: SpanOpen, branch: "spanOpen" };
 
   if (isStandIn(word)) return { type: Odo, branch: "standIn" };
 
@@ -202,16 +195,17 @@ export function classifyToTokenType(word: LexWord): AgazanTokenType {
 
 export function surfaceAtomToToken(atom: SurfaceAtom, index: number): IToken {
   if (atom.kind === "islandEdge") {
+    const type = atom.open ? IslandOpen : IslandClose;
     return {
-      image: "^",
+      image: atom.open ? "{" : "}",
       startOffset: index,
       endOffset: index + 1,
       startLine: 1,
       endLine: 1,
       startColumn: index + 1,
       endColumn: index + 2,
-      tokenType: IslandEdge,
-      tokenTypeIdx: IslandEdge.tokenTypeIdx!,
+      tokenType: type,
+      tokenTypeIdx: type.tokenTypeIdx!,
       payload: atom,
     };
   }

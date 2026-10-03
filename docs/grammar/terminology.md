@@ -16,12 +16,12 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 |-------|-------|---------|-------|
 | **ABIL** | Hostless *can* / *can’t* (no single verb) | `thezexel` | [Intention](intention.md#ability-fallback) |
 | **AIMED** | Emotion locus: aimed at a target | `wanathumol` | [Sakes](sakes.md#emotion-compose) |
-| **ASIDE** | Span TYPE **e**: an aside | `th(hagawal)` | [Spans](spans.md#asides) |
+| **ASIDE** | An aside span | `th(hagawal)` | [Spans](spans.md#asides) |
 | **ATTEMPT** | Try mood: committed / unstated / trial run | `thudum` | [Intention](intention.md#try) |
 | **AWAY** | Emotion locus: moving off from a target | `wanathumum` | [Sakes](sakes.md#emotion-compose) |
 | **CAUSE** | Mechanism-framing mood (*make X do*) | `thegem` | [Causation](causation.md#cause) |
 | **CIRCUM** | Emotion locus: the atmosphere of the situation | `wulothuraor` | [Sakes](sakes.md#emotion-compose) |
-| **CITE** | Span TYPE **a**: a citation | `d[azawan]` | [Spans](spans.md#shape) |
+| **CITE** | A cite span: quoted wording | `d[azawan]` | [Spans](spans.md#writing) |
 | **COLLAPSE** | Emotion locus: out of fight, giving up | `wanathumual` | [Sakes](sakes.md#emotion-compose) |
 | **CONSENT** | Consent of the affected party | `thuxegom` | [Sakes](sakes.md#consent) |
 | **DECISION** | Pick-firmness mood | `thehum` | [Intention](intention.md#decision) |
@@ -34,12 +34,12 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **INTERNAL** | Emotion locus: mine, held inside | `gulothamar` | [Sakes](sakes.md#emotion-compose) |
 | **LIVE** | Evidential: concurrent / in-view observation | `thodom` | [Knowing](knowing.md#evidentiality) |
 | **MAY** | Potential mood (*could be*; find out / default / who knows) | `thovum` | [Knowing](knowing.md#may) |
-| **MENTION** | Span TYPE **o**: a mention | `z{odoga}` | [Spans](spans.md#shape) |
+| **MENTION** | Mention marker: the span is a word or phrase as spelling | <code>glelel z&lt;odoga&gt; gamazam.</code> | [Spans](spans.md#mention) |
 | **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `thezum` | [Knowing](knowing.md#mirative) |
 | **NAME** | A package titled with **-n** | `zebevul zabodel zan.` | [Joins](joins.md#named-list) |
 | **NOTIONAL** | As-if / pretense mood | `thavom` | [Knowing](knowing.md#notional) |
 | **ON-BEHALF** | Emotion locus: felt for someone's sake | `wanathumem` | [Sakes](sakes.md#emotion-compose) |
-| **OPAQUE** | Span TYPE **u**: foreign or opaque writing | <code>d&lt;kimchi&gt;</code> | [Spans](spans.md#loans) |
+| **OPAQUE** | An opaque span: foreign or raw writing | <code>d&lt;kimchi&gt;</code> | [Spans](spans.md#loans) |
 | **PATTERN** | Evidential: from regularity | `thobam` | [Knowing](knowing.md#evidentiality) |
 | **PERMIT** | Permission, positive | `thegol` | [Sakes](sakes.md#permission) |
 | **PLAN** | Intention-framing mood | `thamam` | [Intention](intention.md#plan-predict) |
@@ -48,7 +48,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **RESIDUE** | Episode standing: outcome still on the current tally | `thamom` | [Knowing](knowing.md#residue) |
 | **RESISTING** | Emotion locus: pushing against a target | `wanathumuer` | [Sakes](sakes.md#emotion-compose) |
 | **SAME** | Identity copula | `gugol` | [Predication](predication.md#identity) |
-| **SCOPE** | Scope island `^ … ^` | `^ hegewem zodogal geredal ^` | [Spans](spans.md#scope-islands) |
+| **SCOPE** | Scope island `{ … }` | `{ hegewem zodogal geredal }` | [Spans](spans.md#scope-islands) |
 | **SEEKING** | Emotion locus: turning to someone for comfort | `wanathumoem` | [Sakes](sakes.md#emotion-compose) |
 | **STILL** | Emotion motion: not moving (held, frozen, numb) | `wanathumol` | [Sakes](sakes.md#emotion-compose) |
 | **STORY** | Evidential: narrative / lore | `thozem` | [Knowing](knowing.md#evidentiality) |
@@ -76,10 +76,6 @@ English names for set / rank join vowels ([joins](joins.md)):
 | corank | **ae** | equal rank / tie |
 | sequence | **oe** | ordered path: first item is the start, not the top |
 | counterrank | **ue** | rank reversal |
-
-### Span TYPE / EDGE letters
-
-From [spans](spans.md#shape): **TYPE** **a** cite / **e** aside / **o** mention / **u** opaque; **EDGE** **a** multi / **e** clause-scoped / **o** atomic / **u** empty (exact empty `…axul` / resume `…axur`).
 
 ### Number marker identities
 
@@ -151,7 +147,7 @@ Complex `/h/` + `/b/` (**`hahehom`**) *as for X*: a frame for one sentence.
 
 ### Aside
 
-Span TYPE **e** (`th(…)`).
+A parenthetical comment span (`th(…)`).
 
 [Spans](spans.md#asides)
 
@@ -160,12 +156,6 @@ Span TYPE **e** (`th(…)`).
 **-x** = named **anchor plus associates**.
 
 [Plurality](plurality.md#associative)
-
-### Atomic (span EDGE)
-
-Span open that does not nest-push (EDGE **o**).
-
-[Spans](spans.md#edge)
 
 ### Bare OoM
 
@@ -507,7 +497,7 @@ Content endings **-l / -m / -n / -r**.
 
 ### Loan / opaque span
 
-`PoS` + optional **`~`** / **`@`** on `<…>` (exact omits the mark; no letter after `>`; resume `d<=>`).
+`PoS` + optional **`~`** / **`@`** on `<…>` (exact omits the mark; no letter after `>`).
 
 [Spans](spans.md#loans)
 
@@ -671,9 +661,9 @@ Join-shaped `/h/` `/w/` *when the host applies*.
 
 ### Resume
 
-Content / span / number **-r** pointing back. A content resume spells the earlier word’s whole stem.
+Content / number **-r** pointing back. A content resume spells the earlier word’s whole stem.
 
-[Pronouns](pronouns.md), [spans](spans.md), [numbers](numbers.md#number-endings)
+[Pronouns](pronouns.md), [numbers](numbers.md#number-endings)
 
 **Compare with:** join / restrictor **-r** is an [unspecified member](#unspecified-member). English *the dog that…* is two sentences, then this resume ([which person or thing](dependents.md#which-noun)).
 
@@ -706,7 +696,7 @@ Word-initial job letter.
 
 ### Scope island
 
-`^ … ^` with binder inside.
+`{ … }` with binder inside.
 
 [Spans](spans.md#scope-islands), [joins](joins.md#scope-islands-join)
 
@@ -736,7 +726,7 @@ After-join `/ɡ/` (quality) or manner `/h/` in comparatives.
 
 ### Span / span open
 
-Typed cite / aside / mention / opaque fences; spoken opening word.
+Written cite `[…]`, aside `(…)` and opaque `<…>` fences, with a role letter before the bracket.
 
 [Spans](spans.md)
 

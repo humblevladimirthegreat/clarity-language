@@ -153,13 +153,11 @@ describe("resolve — role pointers (pronouns.md#role-pointers)", () => {
 });
 
 describe("resolve — span and number anaphors", () => {
-  it("binds writing d[=] to the most recent cite (spans.md)", () => {
-    const { anaphors } = resolveOf("d[hi] vawalal. d[=] vayul.");
-    const span = anaphors.find((a) => a.kind === "span");
-    assert.ok(span);
-    assert.equal(span!.typeVowel, "a");
-    assert.equal(span!.pronoun.raw, "d[=]");
-    assert.equal(span!.antecedent?.raw, "d[hi]");
+  it("has no span resume: a span is an ordinary noun for a role pointer (spans.md)", () => {
+    assert.throws(() => parseText("d[hi] vawalal. d[=] vayul."));
+    const { anaphors } = resolveOf("zalahen d[hi] vezebel. zazawan duxar vahahal.");
+    const pointer = anaphors.find((a) => a.kind === "pointer");
+    assert.equal(pointer?.antecedent?.raw, "d[hi]");
   });
 
   it("binds digitful z=+3 to the prior scalar (numbers.md)", () => {
@@ -277,17 +275,14 @@ describe("resolve — topic (pronouns.md#topic)", () => {
     assert.deepEqual(ordinals(text), ["zrewor→zalahen"]);
   });
 
-  it("gives a quote its own topic and count, and lets a resume outside reach in", () => {
-    const text = "xalahen zalahen vezebel daxal xazawan zozan zodogal vowogal xuxul. zozan vehahel.";
-    assert.deepEqual(topics(text), ["zozan→xazawan", "zozan→xalahen"]);
-    assert.deepEqual(ordinals("zalahen vezebel daxal zazawan vowogal xuxul. zrewor vehahel."), ["zrewor→zalahen"]);
-    assert.throws(() => parseText("xalahen zalahen vezebel daxal zozan vowogal xuxul."), /topic pronoun/);
-    assert.equal(resolveOf("zalahen vezebel daxal zazawan vowogal xuxul. xazawar vehahel.").anaphors[0]!.antecedent?.raw, "zazawan");
+  it("leaves a written quote's interior out of the topic and the count", () => {
+    assert.deepEqual(topics("xalahen zalahen vezebel d[xazawan zozan zodogal vowogal]. zozan vehahel."), ["zozan→xalahen"]);
+    assert.deepEqual(ordinals("zalahen vezebel d[zazawan vowogal]. zrewor vehahel."), ["zrewor→zalahen"]);
   });
 
   it("takes -x on the topic pronoun, but never on the generic one", () => {
     assert.deepEqual(topics("x@<Sam> zozan vowogal."), ["zozan→x@<Sam>"]);
-    assert.deepEqual(topics("x{odoga} zozan gamazam."), ["zozan→x{odoga}"]);
+    assert.deepEqual(topics("x<odoga> zozan gamazam."), ["zozan→x<odoga>"]);
     assert.deepEqual(topics("x@[onodan alahen] zozan vezehel."), ["zozan→x@[onodan alahen]"]);
     assert.throws(() => parseText("zobenx vowogal."), /generic pronoun/);
     assert.deepEqual(ordinals("zoben vowogal. zazawan vehahel. zrewor vezebal."), ["zrewor→zazawan"]);

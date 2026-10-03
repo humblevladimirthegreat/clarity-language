@@ -8,11 +8,11 @@ A gloss should answer: *what is each Agazan piece doing in the clause — in Eng
 
 | Goal | Gloss does | Gloss does not |
 |------|------------|----------------|
-| Slot + sense | Show PoS letter and the **active English sense** | Quote Agazan phonology (`amago`, `agawa`, …), except [mention / opaque interiors](#span-interiors) |
+| Slot + sense | Show PoS letter and the **active English sense** | Quote Agazan phonology (`amago`, `agawa`, …), except [opaque interiors](#span-interiors) |
 | Separate senses | Treat concrete / abstract / proper / overlay as **different English roots** | Chain etymology (`microphone→speaker`) |
 | Endings | Drop **-l** / **-m** / **-n** when they only pick which sense-root applies | Repeat those endings after a sense that already encodes them |
 | Structure | Keep mid-word `x` pieces, **-x**, and binding visible | Invent full English syntax for Agazan structure; copy writing glyphs (`@` / `~`) into the gloss |
-| Binding | Point **-r** (and span anaphors) at the antecedent when known | Collapse to English *he* / *she* / *it* |
+| Binding | Point **-r** at the antecedent when known | Collapse to English *he* / *she* / *it* |
 | Underspecification | Keep vague Agazan vague (`someone`, bare joins) | Sharpen into a specific English claim |
 | Separation | Stay word-aligned | Replace the free English line |
 
@@ -113,7 +113,7 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 - Force English can say (*please*, *don’t*, *I wonder*)
 - Stance that changes the verb (*can't* vs *ought not* vs unmet sake as content)
 - Comparatives / equatives / causation / plan when they are the point of the turn
-- Mention interiors as *the word “odoga”* / *the phrase “…”* (Agazan spelling, not the English lemma) — [span interiors](#span-interiors)
+- Mention spans as *the word “odoga”* / *the phrase “…”* (Agazan spelling, not the English lemma) — [span interiors](#span-interiors)
 - Opaque interiors as the same blob (`kimchi`, `FBI`)
 
 ### Example (same Agazan, three readings)
@@ -224,13 +224,14 @@ A **labeled bracket** `LABEL[ … ]` marks a package. The label is uppercase Eng
 | Label | Package |
 |-------|---------|
 | `NAME[…]` | [Titled phrase](../grammar/word-endings.md#titled-phrases): **-n** on the hook, join, or span that packages it |
-| `CITE[…]` / `MENTION[…]` / `ASIDE[…]` / `OPAQUE[…]` | Written span (`d[…]` / `d{…}` / `th(…)` / `d<…>`) |
-| `CITE.multi[…]` / `.clause` / `.atomic` / `.empty` | Spoken span. The suffix is the open word's EDGE (`daxal … xuxul` → `d-CITE.multi[…]`) |
-| `CITE.about[…]` | Paraphrase **-m** span (`d~[…]`, `daxam`) |
-| `NAME.CITE[…]` | Proper **-n** span (`d@[…]`, `daxan`) |
-| `SCOPE[…]` | Scope island `^ … ^` |
+| `CITE[…]` / `ASIDE[…]` / `OPAQUE[…]` | Span (`d[…]` / `th(…)` / `d<…>`) |
+| `CITE.about[…]` | Paraphrase **-m** span (`d~[…]`) |
+| `NAME.CITE[…]` | Proper **-n** span (`d@[…]`) |
+| `SCOPE[…]` | Scope island `{ … }` |
 
-Written and spoken spans stay distinct: a written span label has no EDGE suffix, and a spoken span label always has one. The closing bracket records the close: `]` complete, `]#` editorial (`#]`, `xuxur`), `]|` close-all (`|`, `xuxum`). A close-all ends every span open at that point.
+The closing bracket records the close: `]` complete, `]#` editorial (`#]`), `]|` close-all (`|`). A close-all ends every span open at that point.
+
+The mention marker is a word, not a bracket: `glelel` → `gl-MENTION`, `glelen` → `gl-NAME.MENTION`, written before the span it marks.
 
 ### Round trip
 <a id="round-trip"></a>
@@ -244,9 +245,8 @@ A morph line corresponds **one-to-one** with its Agazan. From the gloss alone yo
 - **Ordinals use digits** (`gredul` → `g-2nd`, `gruedul` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.
 - **Role-compound resumes** keep their role: `daexaradar` → `d-←instrument-x-write`, `duxaradar` → `d-←patient-x-write`. A bare `d-←write` would merge the doer, scene, undergoer, tool, … of one event.
 - **Role pointers** gloss their role and pointer vowel, never the referent: `zaxar` → `z-←agent.same`, `duxor` → `d-←patient.other`, `daxer` → `d-←agent.self`. The role label is the role-compound one (`recipient` for **`o`**, `instrument` for **`ae`**, …).
-- **Span resumes** gloss by type: written `d[=]` → `d-←cite`, spoken `daxur` → `d-←cite.spoken`.
 - **Unknown words fail.** A content word the lexicon cannot gloss has no morph line: a root missing from the lexicon, or **-m** on a root with no abstract sense (unless a closed overlay defines that **-m** form). `lint:agazan` reports it.
-- **Quoted pass-through.** Raw payloads (mention and opaque interiors, and a resume stem with no known antecedent) go in straight double quotes: `z-MENTION["odoga"]`. A `"` inside the payload is written `""`.
+- **Quoted pass-through.** Raw payloads (opaque interiors, and a resume stem with no known antecedent) go in straight double quotes: `z-OPAQUE["odoga"]`. A `"` inside the payload is written `""`.
 
 ### When an ending still appears in the gloss
 
@@ -328,34 +328,32 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 | Ability / values stance | `vowogaxel` | `v-walk-unable-temporary` |
 | Values stance on need | `thulothom` | `th-competence-motive-any-term` |
 | Role compound | `zaxavadal` | `z-agent-x-fight` |
-| Span open / close | `thexal` … `xuxul` | `th-ASIDE.multi[…]` ([labeled bracket](#phrase-brackets)) |
+| Span | `th(hagawal)` | `th-ASIDE[h-quiet]` ([labeled bracket](#phrase-brackets)) |
 | Number / enumeration | `xrebul` | `x-starting-with` |
 
-For **phrasal proper names**, gloss each piece (`y-Ubune-x-Unowen`, `z-Ogove-x-Adeda-x-Unuden`). Mid-word **`x`** stays visible as `-x-`. Do not put Agazan letters in the english slot, except [mention interiors](#span-interiors).
+For **phrasal proper names**, gloss each piece (`y-Ubune-x-Unowen`, `z-Ogove-x-Adeda-x-Unuden`). Mid-word **`x`** stays visible as `-x-`. Do not put Agazan letters in the english slot, except [opaque interiors](#span-interiors).
 
-### Mention and opaque interiors
+### Mention marker and opaque interiors
 <a id="span-interiors"></a>
 
-**Mention** (`{…}` / spoken TYPE **o**) is a **word or phrase** as that spelling, not a quoted utterance and not the English lemma. The morph line **passes the interior through** in quotes inside a labeled bracket. Free English says *the word …* or *the phrase …* and keeps that spelling.
+A **mention** is a **word or phrase** as that spelling, not a quoted utterance and not the English lemma. The **mention marker** (`glelel` / `glelen`) is a `gl-` word before the span, glossed `MENTION` / `NAME.MENTION`. The morph line **passes the opaque interior through** in quotes inside a labeled bracket. Free English says *the word …* or *the phrase …* and keeps that spelling.
 
 | Kind | Agazan | Morph | Free English |
 |------|--------|-------|--------------|
-| Mention (one word) | `z{odoga}` | `z-MENTION["odoga"]` | *The word “odoga” is small.* |
-| Spoken mention | `zoxol odogal` | `z-MENTION.atomic["odogal"]` | same |
-| Mention (phrase) | `z{zazawan vezehel}` | `z-MENTION["zazawan vezehel"]` | *The phrase “zazawan vezehel” is small.* |
-| Mention **`@`** | `d@{onodan}` | `d-NAME.MENTION["onodan"]` | *the name “onodan”* (the title-string, not the work) |
+| Mention (one word) | <code>glelel z&lt;odoga&gt;</code> | `[gl-MENTION \| z-OPAQUE["odoga"]]` | *The word “odoga” is small.* |
+| Mention (phrase) | <code>glelel z&lt;zazawan vezehel&gt;</code> | `[gl-MENTION \| z-OPAQUE["zazawan vezehel"]]` | *The phrase “zazawan vezehel” is small.* |
+| Mention name-string | <code>glelen d&lt;onodan&gt;</code> | `[gl-NAME.MENTION \| d-OPAQUE["onodan"]]` | *the name “onodan”* (the title-string, not the work) |
 | Opaque | `d<kimchi>` | `d-OPAQUE["kimchi"]` | The same blob |
 | Cite | `d[azawan]` | `d-CITE[Azawan]` | Translation of the **utterance** (*said “judge.”*) |
-| Spoken cite | `daxol ahahul` | `d-CITE.atomic[judge]` | same |
 | Cite **`@`** | `d@[onodan alahen]` | `d-NAME.CITE[Onodan \| Alahen]` | The **work** (*dislikes Onodan Alahen*) |
 
-Words inside a cite or aside are glossed as usual. They sit in a new clause, so they keep their own role letters and brackets. Mention and opaque interiors are never glossed.
+Words inside a cite or aside are glossed as usual. They sit in a new clause, so they keep their own role letters and brackets. Opaque interiors are never glossed.
 
-Speech/writing reports (*said “X,”* *sang “X,”* *don’t “halt”*) are **cite**, even when English says *the word X*. Do not wrap that object in `{…}`. Sense-talk about a lexeme (*is a noun*, *is archaic*) is still mention; there is no extra “translate the lemma” rule — keep *the word/phrase “…”*.
+Speech/writing reports (*said “X,”* *sang “X,”* *don’t “halt”*) are **cite**, even when English says *the word X*. Do not mark that object with the mention marker. Sense-talk about a lexeme (*is a noun*, *is archaic*) is still mention; there is no extra “translate the lemma” rule — keep *the word/phrase “…”*.
 
-> `z{odoga} gamazam.`
+> <code>glelel z&lt;odoga&gt; gamazam.</code>
 >
-> z-MENTION["odoga"] | g-small
+> [gl-MENTION | z-OPAQUE["odoga"]] | g-small
 >
 > "The word “odoga” is small."
 

@@ -319,7 +319,7 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 | *yeah, sure* | `yaol.` | take up the offer |
 | *quote* (the exact words) | `d[zalahen vezebel]` | cite |
 | *quote* (the gist) | `d~[zalahen vezebel]` | paraphrase cite |
-| *mention* (a word) | `z{odoga}` | mention span |
+| *mention* (a word) | <code>glelel z&lt;odoga&gt;</code> | mention |
 | *mention* (in passing) | `th(…)` | aside |
 | *mention* (acknowledge someone) | `veweval` | *acknowledgment* |
 

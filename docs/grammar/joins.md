@@ -1093,15 +1093,15 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ### Scope islands {#scope-islands-join}
 
-When same-role words sit next to a smaller list, wrap that stretch and its join in **`^ … ^`**. The join inside the island takes members only from between those marks. One island per clause; material outside needs its own outer join. An island holds at most one phrase and may close partway through it ([scope islands](spans.md#scope-islands)).
+When same-role words sit next to a smaller list, wrap that stretch and its join in **`{ … }`**. The join inside the island takes members only from between those marks. One island per clause; material outside needs its own outer join. An island holds at most one phrase and may close partway through it ([scope islands](spans.md#scope-islands)).
 
 | Agazan | English |
 |--------|---------|
-| `zazawan ^ zowodel zal ^ zam` | *Azawan and (just water)* |
-| `zazawan ^ zal ^ zam` | *Azawan and nothing* |
-| `^ zowodel zal ^` | *just water* alone in the slot |
+| `zazawan { zowodel zal } zam` | *Azawan and (just water)* |
+| `zazawan { zal } zam` | *Azawan and nothing* |
+| `{ zowodel zal }` | *just water* alone in the slot |
 
-> `zazawan ^ zowodel zal ^ zam.`
+> `zazawan { zowodel zal } zam.`
 >
 > [z-Azawan | SCOPE[z-drinking-water | z-and] | z-and.open]
 >
@@ -1211,7 +1211,7 @@ NAME[z-and]
 **4.** *Azawan and (just Ahaben)*
 
 ::: details Show answer
-`zazawan ^ zahaben zal ^ zam.`
+`zazawan { zahaben zal } zam.`
 
 [z-Azawan | SCOPE[z-Ahaben | z-and] | z-and.open]
 :::
@@ -1244,7 +1244,7 @@ NAME[z-equal-rank]
 *whichever of a dove, a page, or a pen ranks highest*
 :::
 
-**3.** `zazawan ^ zal ^ zam.`
+**3.** `zazawan { zal } zam.`
 
 ::: details Show answer
 

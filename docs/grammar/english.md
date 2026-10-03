@@ -184,7 +184,7 @@ English often makes an adjective from a noun by adding an ending (*gold* → *go
 |--------------|------------|-------|
 | *now, about Azawan*, *speaking of Azawan* | `/x/` + the noun: **`xazawan`** | [Topic](pronouns.md#topic) |
 | *now, about Sam* (a foreign name) | <code>x@&lt;Sam&gt;</code> | [Topic](pronouns.md#topic), [spans](spans.md#topic-quotes) |
-| *now, about the word “odoga”* | `x{odoga}` | [Topic](pronouns.md#topic), [mention](spans.md#mention) |
+| *now, about the word “odoga”* | <code>glelel x&lt;odoga&gt;</code> | [Topic](pronouns.md#topic), [mention](spans.md#mention) |
 | *now, about Onodan Alahen* (the work) | `x@[onodan alahen]` | [Topic](pronouns.md#topic), [cite](spans.md#writing) |
 | *back to Azawan*, *as I was saying about Azawan* | `/x/` + whole stem + **-r**: **`xazawar`** | [Return](pronouns.md#topic-return) |
 | *anyway, Azawan …* (after a side topic) | **`or xazawar …`** | [Return](pronouns.md#topic-return), [resume hooks](hooks.md#hook-resume) |

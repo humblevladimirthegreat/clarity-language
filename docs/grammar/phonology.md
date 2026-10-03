@@ -134,7 +134,7 @@ When you **spell a word aloud** or **name a letter**, say the Agazan name for it
 `agadu` → `a` `ga` `a` `da` `a`
 ```
 
-In a clause, package the glyph as a [mention](spans.md) (`d{z}`: interior spoken `ze`).
+In a clause, a glyph is talked about as a [mention](spans.md#mention); read it aloud as the letter name `ze`.
 
 Ten letters also begin a [digit syllable](numbers.md#counts). The letter name uses the **opposite** vowel (`a`↔`u`, `o`↔`e`), so naming the letter is not the same as counting.
 

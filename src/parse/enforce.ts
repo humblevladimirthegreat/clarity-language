@@ -20,18 +20,15 @@ import { SentenceParseError } from "./sentence-parser.js";
 import {
   Bang,
   classifyTokenBranch,
-  IslandEdge,
+  IslandClose,
+  IslandOpen,
   isLexWordPayload,
   Linker,
   Period,
   QMark,
-  SpanAtom,
-  SpanClose,
-  SpanOpen,
   Tone,
   type TokenPayload,
 } from "./tokens.js";
-import { tokenMatcher } from "chevrotain";
 import { isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, visitUnit, type Visitor } from "./ast-walk.js";
 import { forcePairKind, KIND_SERIES, RANK_SERIES } from "./series.js";
 import type {
@@ -91,16 +88,14 @@ const TONE_MARKS: Record<string, string> = {
 
 /**
  * Tone-mark placement (speech-moves.md § tone marks). A mark is a valid mark
- * attached to a word, an island's opening `^`, or a span, or free-standing
+ * attached to a word, an island's opening `{`, or a span, or free-standing
  * before words of the same sentence. Returns the tokens without tone marks and
  * the `tone.*` constructions they used.
  */
 export function enforceTones(tokens: IToken[]): { tokens: IToken[]; constructions: string[] } {
   const kept: IToken[] = [];
   const constructions = new Set<string>();
-  let islandOpen = false;
   tokens.forEach((token, i) => {
-    if (token.tokenType === IslandEdge) islandOpen = !islandOpen;
     if (token.tokenType !== Tone) {
       kept.push(token);
       return;
@@ -116,10 +111,11 @@ export function enforceTones(tokens: IToken[]): { tokens: IToken[]; construction
       // Marks in a row are a stack even when spaced (`! ! zazawan`, `! !zazawan`).
       if (next.tokenType === Tone) throw new ConstructionError("toneStack", `"${mark} ${next.image}"`);
       scope = "rest";
-    } else if (next.tokenType === IslandEdge) {
-      if (islandOpen) throw new ConstructionError("toneTarget", `"${mark}" on a closing ^`);
+    } else if (next.tokenType === IslandOpen) {
       scope = "island";
-    } else if (next.tokenType === SpanOpen || (tokenMatcher(next, SpanAtom) && isWritingSpan(next))) {
+    } else if (next.tokenType === IslandClose) {
+      throw new ConstructionError("toneTarget", `"${mark}" on a closing }`);
+    } else if (isWritingSpan(next)) {
       scope = "span";
     } else if (next.tokenType === Tone) {
       throw new ConstructionError("toneStack", `"${mark}${next.image}"`);
@@ -156,8 +152,7 @@ export function enforceTokens(tokens: IToken[], tables: ClassifyTables): void {
         branch === "yInterjection" ||
         branch === "greeting" ||
         branch === "hook" ||
-        endsYSpan(tokens, i - 1) ||
-        opensCite(prev);
+        (prevWord && isLexWordPayload(prevWord) && prevWord.reading === "mention");
       if (!opensBody) throw new ConstructionError("linkerMidSentence", token.image);
     }
     const payload = token.payload as TokenPayload | undefined;
@@ -165,26 +160,6 @@ export function enforceTokens(tokens: IToken[], tables: ClassifyTables): void {
     enforceWord(payload, tables);
     enforceStackedHookR(payload, tokens, i);
   });
-}
-
-/** A topic word may open the interior of a multi-token cite (`daxal xazawan …`, pronouns.md#topic-quotes). */
-function opensCite(token: IToken): boolean {
-  const word = tokenWord(token);
-  return token.tokenType === SpanOpen && word?.pos !== "y" && word?.family.kind === "x" && word.family.typeVowel === "a" && word.family.edgeVowel === "a";
-}
-
-/** Token `j` ends a spoken `/y/` span at the left edge: its close, or an atomic open's one word (spans.md#y-spoken-spans). */
-function endsYSpan(tokens: IToken[], j: number): boolean {
-  const open = (k: number) => {
-    const word = tokens[k]?.tokenType === SpanOpen ? tokenWord(tokens[k]) : undefined;
-    return word?.pos === "y" && word.family.kind === "x" ? word.family : undefined;
-  };
-  if (open(j - 1)?.edgeVowel === "o") return true;
-  if (tokens[j]?.tokenType !== SpanClose) return false;
-  for (let k = j - 1; k >= 0; k--) {
-    if (tokens[k]!.tokenType === SpanOpen) return open(k)?.edgeVowel === "a";
-  }
-  return false;
 }
 
 function tokenWord(token: IToken | undefined): LexWord | undefined {
@@ -198,18 +173,13 @@ function tokenWord(token: IToken | undefined): LexWord | undefined {
  */
 function enforceSpanSlot(word: LexWord): void {
   const family = word.family;
-  const written = family.kind === "writingSpan";
-  const spoken = family.kind === "x" && family.xFamily === "span";
-  if ((!written && !spoken) || word.pos === "y" || !word.pos) return;
-  const resume = written ? family.anaphor : word.ending === "r";
+  if (family.kind !== "writingSpan" || word.pos === "y" || !word.pos) return;
   if (word.pos === "w") throw new ConstructionError("spanSlot", word.raw);
   if (word.pos === "x") {
     if (!isTopicSpan(word)) throw new ConstructionError("spanSlot", word.raw);
     return;
   }
-  if (resume) return;
-  const aside = written ? family.bracket === "(" : family.typeVowel === "e";
-  if (aside !== (word.pos === "th")) throw new ConstructionError("spanSlot", word.raw);
+  if ((family.bracket === "(") !== (word.pos === "th")) throw new ConstructionError("spanSlot", word.raw);
 }
 
 /** Stacked join **-r** (`zuar` / `vaor` / `xuar` / `gaor`) has no reading outside the `/th/` fill-ask (join-across-roles.md § Standalone stance joins). */
@@ -318,10 +288,7 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   const family = word.family;
   // Under `/y/` only an opaque or cite span calls or reacts (spans.md#y-spans).
   if (word.pos === "y") {
-    const mentionOrAside =
-      (family.kind === "writingSpan" && (family.bracket === "{" || family.bracket === "(")) ||
-      (family.kind === "x" && family.xFamily === "span" && (family.typeVowel === "o" || family.typeVowel === "e"));
-    if (mentionOrAside) throw new ConstructionError("ySpanType", word.raw);
+    if (family.kind === "writingSpan" && family.bracket === "(") throw new ConstructionError("ySpanType", word.raw);
   }
   enforceSpanSlot(word);
   enforceStackedJoinR(word);
@@ -615,10 +582,6 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
         case "clause":
           enforceUnitList(node.clause.units, tables);
           enforceDependentContent(node.clause);
-          if (node.clause.left) enforceForcePair(node.clause.left);
-          for (const unit of node.clause.units) {
-            if (unit.kind === "span" && unit.span.open.pos === "x") throw new ConstructionError("spanSlot", unit.span.open.raw);
-          }
           return;
         case "island":
           enforceIsland(node.island, tables);
@@ -752,16 +715,15 @@ function islandSlot(unit: Unit): string | undefined {
   if (unit.kind === "np") return unit.coord.level;
   if (unit.kind === "vp") return "v";
   if (unit.kind === "predicate" || unit.kind === "gCoord") return "g";
-  if (unit.kind === "span") return "span";
   return undefined;
 }
 
 function enforceIsland(island: IslandUnit, tables: ClassifyTables): void {
-  if (island.units.length === 0) throw new ConstructionError("emptyIsland", "^ ^");
-  if (!islandHasBinder(island)) throw new ConstructionError("islandBinder", "^ … ^");
+  if (island.units.length === 0) throw new ConstructionError("emptyIsland", "{ }");
+  if (!islandHasBinder(island)) throw new ConstructionError("islandBinder", "{ … }");
   const slots = new Set(island.units.map(islandSlot).filter((slot) => slot !== undefined));
-  if (slots.size === 0) throw new ConstructionError("islandSlotRole", "^ … ^");
-  if (slots.size > 1) throw new ConstructionError("islandOneSlot", `^ … ^ (${[...slots].join(" + ")})`);
+  if (slots.size === 0) throw new ConstructionError("islandSlotRole", "{ … }");
+  if (slots.size > 1) throw new ConstructionError("islandOneSlot", `{ … } (${[...slots].join(" + ")})`);
   enforceUnitList(island.units, tables);
 }
 
@@ -788,8 +750,8 @@ function enforceIslandEdges(units: Unit[]): void {
   units.forEach((unit, i) => {
     if (unit.kind !== "island") return;
     const inner = unit.island.units;
-    if (isOpenHost(units[i - 1]) && isBPhrase(inner[0])) throw new ConstructionError("islandSlotRole", "host ^ /b/");
-    if (isOpenHost(inner.at(-1)) && isBPhrase(units[i + 1])) throw new ConstructionError("islandSlotRole", "host ^ /b/");
+    if (isOpenHost(units[i - 1]) && isBPhrase(inner[0])) throw new ConstructionError("islandSlotRole", "host { /b/");
+    if (isOpenHost(inner.at(-1)) && isBPhrase(units[i + 1])) throw new ConstructionError("islandSlotRole", "host { /b/");
   });
 }
 

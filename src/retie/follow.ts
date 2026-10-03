@@ -1,7 +1,7 @@
 /**
  * English that copies an Agazan spelling follows the retie of that spelling:
  * a named **-n** word's English name (`zululon` → *Ululon*) and a quoted payload
- * (`z{odoga}` → *the word “odoga”*, `z-MENTION["odoga"]`). Only prose is touched;
+ * (`d["odoga"]` → *“odoga”*, `d-CITE["odoga"]`). Only prose is touched;
  * code was already retied.
  */
 import { ENGLISH_IN_CODE } from "../lint/agazan-docs.js";

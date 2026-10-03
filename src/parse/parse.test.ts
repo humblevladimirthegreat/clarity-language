@@ -137,7 +137,7 @@ describe("parse — joins.md", () => {
   });
 
   it("parses join scope island", () => {
-    const result = parseText("zazawan ^ zenehul zal ^ zam.");
+    const result = parseText("zazawan { zenehul zal } zam.");
     const unit = result.utterances[0]!.bodies[0]!.clause.units[0]!;
     assert.equal(unit.kind, "np");
     if (unit.kind !== "np") return;
@@ -149,8 +149,8 @@ describe("parse — joins.md", () => {
   });
 
   it("rejects empty scope islands", () => {
-    assert.throws(() => parseText("^ ^ zazawan vowogal."), /scope island needs words/);
-    assert.throws(() => parseText("zazawan ^ ^ zam."), /scope island needs words/);
+    assert.throws(() => parseText("{ } zazawan vowogal."), /scope island needs words/);
+    assert.throws(() => parseText("zazawan { } zam."), /scope island needs words/);
   });
 
   it("parses nested left-associative VP joins", () => {
@@ -256,37 +256,26 @@ describe("parse — comparatives manner scale", () => {
 });
 
 describe("parse — spans", () => {
-  const spanOf = (text: string) => {
-    const unit = parseText(text).utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "span");
-    assert.ok(unit && unit.kind === "span");
-    return unit.span;
-  };
-
-  it("parses an atomic open with exactly one interior token", () => {
-    const span = spanOf("zazawan vezebel daxol azawan.");
-    assert.equal(span.atom?.raw, "azawan");
-    assert.equal(span.close, undefined);
+  it("fills a role slot with a written span as one noun head", () => {
+    const units = parseText("zazawan vezebel d[azawan].").utterances[0]!.bodies[0]!.clause.units;
+    const span = units.find((u) => u.kind === "np" && u.coord.level === "d");
+    assert.ok(span && span.kind === "np");
+    const item = span.coord.parts[0]!.items[0];
+    assert.ok(item?.kind === "package");
+    assert.equal(item.package.head.raw, "d[azawan]");
   });
 
-  it("runs a clause-scoped open to the clause end", () => {
-    const span = spanOf("zazawan vezebel daxel zalahen valahal.");
-    assert.equal(span.content[0]!.units.length, 2);
-    assert.equal(span.close, undefined);
+  it("has no spoken span open, close or resume", () => {
+    for (const raw of ["daxal", "daxur", "xuxul"]) {
+      const units = parseText(`zazawan ${raw} vezebel.`).utterances[0]!.bodies[0]!.clause.units;
+      assert.ok(units.every((u) => u.kind !== ("span" as string)), raw);
+    }
   });
 
-  it("parses an empty open with no interior", () => {
-    const span = spanOf("zazawan daxul vezebel.");
-    assert.equal(span.content.length, 0);
-    assert.equal(span.atom, undefined);
-  });
-
-  it("parses daxal … xuxul span", () => {
-    const result = parseText("daxal zezedol xuxul vowogal.");
-    const spanUnit = result.utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "span");
-    assert.ok(spanUnit);
-    if (spanUnit?.kind !== "span") return;
-    assert.equal(spanUnit.span.open.raw, "daxal");
-    assert.equal(spanUnit.span.close?.raw, "xuxul");
+  it("anchors a role pointer on a span like any noun (pronouns.md#role-pointers)", () => {
+    const result = parseText("zazawan d[azawan] vezebel. zalahen duxar vezebel.");
+    const pointer = result.resolve!.anaphors.find((bind) => bind.pronoun.raw === "duxar");
+    assert.equal(pointer?.antecedent?.raw, "d[azawan]");
   });
 });
 
@@ -340,7 +329,7 @@ describe("parse — /ɡ/ join fences", () => {
     const unit = units.find((u) => u.kind === "gCoord");
     assert.ok(unit?.kind === "gCoord", text);
     return unit.coord.parts.map((part) => ({
-      items: part.items.map((item) => (item.kind === "adj" ? item.adj.word.raw : "^")),
+      items: part.items.map((item) => (item.kind === "adj" ? item.adj.word.raw : "{")),
       join: part.join?.raw,
       shared: part.shared.map((s) => ("raw" in s ? s.raw : s.word.raw)),
     }));
@@ -358,14 +347,14 @@ describe("parse — /ɡ/ join fences", () => {
   });
 
   it("keeps an attributive list with an island on the noun", () => {
-    const units = parseText("zodogal geredal ^ gamazam gul ^ gelavam gal vowogal.").utterances[0]!.bodies[0]!.clause.units;
+    const units = parseText("zodogal geredal { gamazam gul } gelavam gal vowogal.").utterances[0]!.bodies[0]!.clause.units;
     const np = units[0]!;
     assert.ok(np.kind === "np");
     const item = np.coord.parts[0]!.items[0]!;
     assert.ok(item.kind === "package");
     assert.deepEqual(
-      item.package.adjCoord?.parts.map((part) => [part.items.map((i) => (i.kind === "adj" ? i.adj.word.raw : "^")), part.join?.raw]),
-      [[["geredal", "^", "gelavam"], "gal"]],
+      item.package.adjCoord?.parts.map((part) => [part.items.map((i) => (i.kind === "adj" ? i.adj.word.raw : "{")), part.join?.raw]),
+      [[["geredal", "{", "gelavam"], "gal"]],
     );
     assert.deepEqual(item.package.adjs.map((a) => a.word.raw), ["geredal", "gamazam", "gelavam"]);
   });
@@ -543,9 +532,10 @@ describe("parse — spans.md written fences and closes", () => {
     }
   });
 
-  it("allows close-all right after an editorial close (written #|)", () => {
-    assert.doesNotThrow(() => parseText("zalahen daxal abogam xuxur xuxum vezebel."));
-    assert.throws(() => parseText("zalahen daxal abogam xuxul xuxum vezebel."), SentenceParseError);
+  it("keeps the editorial and close-all marks inside the written span", () => {
+    for (const text of ["zalahen d[abogam#] vezebel.", "zalahen d[abogam#|] vezebel."]) {
+      assert.doesNotThrow(() => parseText(text), text);
+    }
   });
 });
 
@@ -639,48 +629,62 @@ describe("parse — comparatives.md bars", () => {
 });
 
 describe("parse — spans.md /y/ spans", () => {
-  it("puts a spoken /y/ span at the left edge, before the act word", () => {
-    const left = parseText("yuxan sam xuxul yol zazawan vowogal.").utterances[0]!.left;
-    assert.equal(left.force?.raw, "yol");
-    assert.deepEqual(left.spans?.map((s) => [s.job, s.span.open.raw]), [["vocative", "yuxan"]]);
+  it("reads a written /y/ span by its @ mark: named calls, unnamed reacts", () => {
+    assert.deepEqual(parseText("y@<Sam> yol zazawan vowogal.").utterances[0]!.left.vocatives.map((w) => w.raw), ["y@<Sam>"]);
+    assert.deepEqual(parseText("y<Amen> zazawan vowogal.").utterances[0]!.left.interjections.map((w) => w.raw), ["y<Amen>"]);
   });
 
-  it("reads a spoken /y/ span by its ending: -n calls, -l / -m react", () => {
-    const job = (text: string) => parseText(text).utterances[0]!.left.spans?.[0]?.job;
-    assert.equal(job("yuxan sam xuxul zazawan vowogal."), "vocative");
-    assert.equal(job("yaxon azawan yol zalahen vowogal."), "vocative");
-    assert.equal(job("yuxam amen xuxul."), "interjection");
-    assert.equal(job("yuxal amen xuxul."), "interjection");
-  });
-
-  it("opens a new turn with a /y/ span after a sentence end", () => {
-    const result = parseText("zazawan vowogal. yuxan sam xuxul yol zalahen vowogal.");
-    assert.equal(result.utterances.length, 2);
-    assert.equal(result.utterances[1]!.left.spans?.[0]?.span.open.raw, "yuxan");
-  });
-
-  it("takes a sentence linker after a spoken /y/ span, as after a written one", () => {
-    for (const text of ["y@<Sam> xezom zazawan vowogal.", "yuxan sam xuxul xezom zazawan vowogal.", "yuxon sam xezom zazawan vowogal."]) {
-      assert.equal(parseText(text).utterances[0]!.bodies[0]!.linker?.raw, "xezom", text);
-    }
+  it("takes a sentence linker after a written /y/ span", () => {
+    assert.equal(parseText("y@<Sam> xezom zazawan vowogal.").utterances[0]!.bodies[0]!.linker?.raw, "xezom");
   });
 
   it("puts a written /y/ cite at the left edge too", () => {
     assert.deepEqual(parseText("y[azawan] yol zalahen vowogal.").utterances[0]!.left.interjections.map((w) => w.raw), ["y[azawan]"]);
   });
 
-  it("keeps an act word inside a spoken cite", () => {
-    const span = parseText("zazawan daxal yol zalahen vowogal xuxul vezebel.").utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "span");
-    assert.ok(span && span.kind === "span");
-    assert.equal(span.span.content[0]?.left?.force?.raw, "yol");
+  it("sets the topic with an /x/ cite or opaque span", () => {
+    assert.equal(parseText("x@<Sam> zozan vowogal.").utterances[0]!.bodies[0]!.linker?.raw, "x@<Sam>");
+    assert.equal(parseText("x<odoga> zozan gamazam.").utterances[0]!.bodies[0]!.linker?.raw, "x<odoga>");
+    assert.equal(parseText("x@[onodan alahen] zozan vezehel.").utterances[0]!.bodies[0]!.linker?.raw, "x@[onodan alahen]");
+  });
+});
+
+describe("parse — spans.md mention marker", () => {
+  it("reads a gl- word right before a span as the mention marker", () => {
+    const units = parseText("glelel z<odoga> gamazam.").utterances[0]!.bodies[0]!.clause.units;
+    const np = units[0]!;
+    assert.ok(np.kind === "np");
+    const item = np.coord.parts[0]!.items[0];
+    assert.ok(item?.kind === "package");
+    assert.equal(item.package.glAdj?.word.reading, "mention");
+    assert.equal(item.package.glAdj?.word.overlay?.gloss, "MENTION");
   });
 
-  it("sets the topic with an /x/ cite, mention or opaque span", () => {
-    assert.equal(parseText("x@<Sam> zozan vowogal.").utterances[0]!.bodies[0]!.linker?.raw, "x@<Sam>");
-    assert.equal(parseText("x{odoga} zozan gamazam.").utterances[0]!.bodies[0]!.linker?.raw, "x{odoga}");
-    assert.equal(parseText("x@[onodan alahen] zozan vezehel.").utterances[0]!.bodies[0]!.linker?.raw, "x@[onodan alahen]");
-    assert.equal(parseText("xuxon Sam zozan vowogal.").utterances[0]!.bodies[0]!.topicSpan?.open.raw, "xuxon");
-    assert.equal(parseText("xoxol odogal zozan gamazam.").utterances[0]!.bodies[0]!.topicSpan?.open.raw, "xoxol");
+  it("reads -n as the name-string marker", () => {
+    const np = parseText("glelen d<onodan> vogozam.").utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "np" && u.coord.level === "d")!;
+    const item = np.kind === "np" ? np.coord.parts[0]!.items[0] : undefined;
+    assert.ok(item?.kind === "package");
+    assert.equal(item.package.glAdj?.word.overlay?.gloss, "NAME.MENTION");
+  });
+
+  it("puts the marker before a topic span", () => {
+    const body = parseText("glelel x<odoga> zozan gamazam.").utterances[0]!.bodies[0]!;
+    assert.equal(body.topicMarker?.raw, "glelel");
+    assert.equal(body.linker?.raw, "x<odoga>");
+  });
+
+  it("lets a marked topic span be the whole sentence", () => {
+    const body = parseText("glelel x<odoga>.").utterances[0]!.bodies[0]!;
+    assert.equal(body.topicMarker?.raw, "glelel");
+    assert.equal(body.linker?.raw, "x<odoga>");
+  });
+
+  it("keeps the same spelling an ordinary adjective anywhere else", () => {
+    const word = parseText("glelel zodogal vowogal.").utterances[0]!.bodies[0]!.clause.units[0]!;
+    assert.ok(word.kind === "np");
+    const item = word.coord.parts[0]!.items[0];
+    assert.ok(item?.kind === "package");
+    assert.equal(item.package.glAdj?.word.reading !== "mention", true);
   });
 });
 

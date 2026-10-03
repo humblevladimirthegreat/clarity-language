@@ -31,15 +31,11 @@ const CONTEXTS: MorphGlossContext[] = [
   { kindReference: true },
 ];
 
-const TYPE_VOWEL: Record<string, string> = { CITE: "a", ASIDE: "e", MENTION: "o", OPAQUE: "u" };
-const EDGE_VOWEL: Record<string, string> = { multi: "a", clause: "e", atomic: "o", empty: "u" };
 const WRITTEN_BRACKET: Record<string, [string, string]> = {
   CITE: ["[", "]"],
   ASIDE: ["(", ")"],
-  MENTION: ["{", "}"],
   OPAQUE: ["<", ">"],
 };
-const SPOKEN_CLOSE: Record<string, string> = { "": "xuxul", "#": "xuxur", "|": "xuxum" };
 
 export type GlossIndex = {
   /** Leaf gloss → surface forms that produce it. */
@@ -135,7 +131,7 @@ type Node =
   | { t: "tone"; tone: string };
 
 const LABEL_RE =
-  /^((?:th|gl|[zdbvgwhxy])-)?((?:NAME\.)?(?:CITE|MENTION|ASIDE|OPAQUE|SCOPE|NAME)(?:\.[a-z]+)*)\[/;
+  /^((?:th|gl|[zdbvgwhxy])-)?((?:NAME\.)?(?:CITE|ASIDE|OPAQUE|SCOPE|NAME)(?:\.[a-z]+)*)\[/;
 
 class GlossReader {
   pos = 0;
@@ -236,18 +232,6 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
   // A form indexed with its -x already on (a holder from a doc line, `thevemebezalx`).
   if (plural) for (const form of index.forms.get(text) ?? []) out.add(form);
 
-  const spanResume = core.match(/^((?:th|gl|[zdbvgwhxy])-)?←(cite|aside|mention|opaque)(\.spoken)?$/);
-  if (spanResume) {
-    const pos = (spanResume[1] ?? "").replace(/-$/, "");
-    const type = spanResume[2]!.toUpperCase();
-    if (spanResume[3]) out.add(`${pos}${TYPE_VOWEL[type]}xur${suffix}`);
-    else {
-      const [lb, rb] = WRITTEN_BRACKET[type]!;
-      out.add(`${pos}${lb}=${rb}${suffix}`);
-    }
-    return [...out];
-  }
-
   const resume = core.match(/^((?:th|gl|[zdbvgwhxy])-)?←(.*)$/);
   if (resume) {
     const pos = (resume[1] ?? "").replace(/-$/, "");
@@ -310,29 +294,20 @@ function assemble(nodes: Node[], index: GlossIndex, tables: ClassifyTables, name
 function groupPieces(node: Extract<Node, { t: "group" }>, index: GlossIndex, tables: ClassifyTables): Piece[] {
   const { label, prefix, close } = node;
   if (!label) return assemble(node.kids, index, tables);
-  if (label === "SCOPE") return [{ alts: ["^"] }, ...assemble(node.kids, index, tables), { alts: ["^"] }];
+  if (label === "SCOPE") return [{ alts: ["{"] }, ...assemble(node.kids, index, tables), { alts: ["}"] }];
   if (label === "NAME") return assemble(node.kids, index, tables, true);
 
   const parts = label.split(".");
   const isNamed = parts[0] === "NAME";
   if (isNamed) parts.shift();
   const type = parts.shift()!;
-  const edge = parts.find((p) => EDGE_VOWEL[p]);
   const about = parts.includes("about");
   const pos = prefix.replace(/-$/, "");
-
-  if (edge) {
-    const ending = isNamed ? "n" : about ? "m" : "l";
-    const open = `${pos}${TYPE_VOWEL[type]}x${EDGE_VOWEL[edge]}${ending}`;
-    const kids = assemble(node.kids, index, tables);
-    const closeWord = edge === "multi" ? [{ alts: [SPOKEN_CLOSE[close] ?? "xuxul"] }] : [];
-    return [{ alts: [open] }, ...kids, ...closeWord];
-  }
 
   const [lb, rb] = WRITTEN_BRACKET[type]!;
   const mark = isNamed ? "@" : about ? "~" : "";
   let payload = "";
-  if (type === "MENTION" || type === "OPAQUE") {
+  if (type === "OPAQUE") {
     const only = node.kids[0];
     payload = only?.t === "leaf" ? (unquote(only.text) ?? only.text) : "";
   } else if (node.kids.length > 0) {
@@ -341,7 +316,7 @@ function groupPieces(node: Extract<Node, { t: "group" }>, index: GlossIndex, tab
   return [{ alts: [`${pos}${mark}${lb}${payload}${close}${rb}`] }];
 }
 
-/** Words joined by spaces; sentence marks glue to the word before; `^` edges are spaced tokens. */
+/** Words joined by spaces; sentence marks glue to the word before; `{` `}` edges are spaced tokens. */
 function render(pieces: Piece[], choice: number[]): string {
   let out = "";
   let k = 0;

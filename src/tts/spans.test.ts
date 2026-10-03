@@ -5,49 +5,30 @@ import { parseWord } from "../parse/word.js";
 import { expandWritingSpan } from "./spans.js";
 import { expandWordToTokens } from "./plan.js";
 
+const spoken = (text: string): string[] =>
+  expandWritingSpan(parseWord(text), expandWordToTokens)
+    .filter((t) => t.kind === "word")
+    .map((t) => (t.kind === "word" ? t.raw : ""));
+
 describe("expandWritingSpan", () => {
-  it("maps atomic cite d[hi] to daxol", () => {
-    const word = parseWord("d[hi]");
-    const tokens = expandWritingSpan(word, expandWordToTokens);
-    assert.deepEqual(
-      tokens.filter((t) => t.kind === "word").map((t) => (t.kind === "word" ? t.raw : "")),
-      ["daxol"],
-    );
+  it("speaks a cite's words and nothing for the brackets", () => {
+    assert.deepEqual(spoken("d[zadagal zagadul]"), ["zadagal", "zagadul"]);
+  });
+
+  it("skips a foreign interior as foreign", () => {
+    const tokens = expandWritingSpan(parseWord("d[hi]"), expandWordToTokens);
+    assert.deepEqual(spoken("d[hi]"), []);
     assert.ok(tokens.some((t) => t.kind === "skip" && t.raw === "hi"));
   });
 
-  it("maps anaphor d[=] to daxur", () => {
-    const tokens = expandWritingSpan(parseWord("d[=]"), expandWordToTokens);
-    assert.deepEqual(tokens, [{ kind: "word", raw: "daxur" }]);
+  it("gives marks no spoken word", () => {
+    assert.deepEqual(spoken("d@[zadagal zagadul]"), ["zadagal", "zagadul"]);
+    assert.deepEqual(spoken("d~[zadagal]"), ["zadagal"]);
   });
 
-  it("maps empty d[] to daxul", () => {
-    const tokens = expandWritingSpan(parseWord("d[]"), expandWordToTokens);
-    assert.deepEqual(tokens, [{ kind: "word", raw: "daxul" }]);
-  });
-
-  it("maps proper atomic cite d@[Hamlet] to daxon", () => {
-    const tokens = expandWritingSpan(parseWord("d@[Hamlet]"), expandWordToTokens);
-    assert.deepEqual(
-      tokens.filter((t) => t.kind === "word").map((t) => (t.kind === "word" ? t.raw : "")),
-      ["daxon"],
-    );
-  });
-
-  it("maps multi-token cite with xuxul close", () => {
-    const tokens = expandWritingSpan(parseWord("d[zadagal zagadul]"), expandWordToTokens);
-    assert.deepEqual(
-      tokens.filter((t) => t.kind === "word").map((t) => (t.kind === "word" ? t.raw : "")),
-      ["daxal", "zadagal", "zagadul", "xuxul"],
-    );
-  });
-
-  it("maps d<sushi> to duxol with foreign skip", () => {
+  it("skips an opaque <…> interior", () => {
     const tokens = expandWritingSpan(parseWord("d<sushi>"), expandWordToTokens);
-    assert.deepEqual(
-      tokens.filter((t) => t.kind === "word").map((t) => (t.kind === "word" ? t.raw : "")),
-      ["duxol"],
-    );
+    assert.deepEqual(spoken("d<sushi>"), []);
     assert.ok(tokens.some((t) => t.kind === "skip" && t.raw === "sushi"));
   });
 });

@@ -36,14 +36,6 @@ describe("checkAmbiguity", () => {
     assert.deepEqual(result.ambiguity, []);
   });
 
-  it("does not treat span-close vs type-u open twin as unresolved", () => {
-    const result = parse("daxal zadagal xuxul vawalal.", tables, { checkAmbiguity: true });
-    assert.equal(
-      result.ambiguity?.some((c) => c.surface === "xuxul"),
-      false,
-    );
-  });
-
   it("flags overlay vs restrictor when both apply with no grammar winner", () => {
     const planted = createClassifyTablesFromRows(
       [],

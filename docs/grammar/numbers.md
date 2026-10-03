@@ -509,7 +509,7 @@ Beginner spelled every number out (`grarel`, `graduzol`). Writing also has a **s
 
 #### Ending marks (second slot, after PoS)
 
-Same glyphs and jobs as [span-fence marks](spans.md#writing) (**`~`** soft / **`@`** proper). Resume uses **`=`** (spans use interior **`=`**: `d[=]`).
+Same glyphs and jobs as [span-fence marks](spans.md#writing) (**`~`** soft / **`@`** proper). Resume uses **`=`**.
 
 | Mark | Speech ending | Job | Examples |
 |------|---------------|-----|----------|

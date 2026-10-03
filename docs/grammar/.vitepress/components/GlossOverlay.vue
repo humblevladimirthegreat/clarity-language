@@ -37,13 +37,13 @@ const popoverPlacement = ref<'above' | 'below'>('below')
 const tokens = computed(() => props.result.tokens)
 const constructions = computed(() => props.result.constructions)
 
-/** Phrase-bracket opens before a word: label (`NAME`, `d-CITE.multi`) + `[` (glosses.md § Phrase brackets). */
+/** Phrase-bracket opens before a word: label (`NAME`, `SCOPE`) + `[` (glosses.md § Phrase brackets). */
 function openMarks(token: InspectToken): { label: string }[] {
   if (token.kind !== 'word' || !token.brackets) return []
   return token.brackets.open.map((open) => ({ label: open.slice(0, -1) }))
 }
 
-/** The `^` token opening the island whose `SCOPE[` sits on word `index` (`^` itself is not drawn). */
+/** The `{` token opening the island whose `SCOPE[` sits on word `index` (`{` itself is not drawn). */
 function caretBefore(index: number): number | null {
   for (let i = index - 1; i >= 0; i--) {
     const token = props.result.tokens[i]!

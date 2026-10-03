@@ -22,7 +22,6 @@ import type {
   NpItem,
   NpPackage,
   ParseResult,
-  SpanUnit,
   Unit,
   Utterance,
   BoundJoin,
@@ -31,32 +30,10 @@ import type {
 export type GlossNode =
   /** `named`: the word's own `.named` is carried by an enclosing `NAME[…]`. */
   | { t: "leaf"; i: number; named?: boolean }
-  /** `from` / `to`: word indexes a spoken span's open / close words add beyond its kids. */
-  /** `tone`: a tone mark on the whole group (an island's `!^`). */
-  | { t: "group"; label?: string; close?: string; kids: GlossNode[]; from?: number; to?: number; tone?: string }
+  /** `tone`: a tone mark on the whole group (an island's `!{`). */
+  | { t: "group"; label?: string; kids: GlossNode[]; tone?: string }
   /** Top-level sentence punctuation boundary (kept so groups never straddle it). */
   | { t: "raw"; text: string; at: number };
-
-const SPAN_TYPE: Record<string, string> = { a: "CITE", e: "ASIDE", o: "MENTION", u: "OPAQUE" };
-const SPAN_EDGE: Record<string, string> = { a: "multi", e: "clause", o: "atomic", u: "empty" };
-const CLOSE_SUFFIX: Record<string, string> = { complete: "", editorial: "#", closeAll: "|" };
-
-/** Label for a spoken span open (`daxal` → `d-CITE.multi`, `daxan` → `d-NAME.CITE.multi`). */
-export function spokenSpanLabel(open: LexWord): string {
-  const family = open.family;
-  if (family.kind !== "x" || family.xFamily !== "span") return "SPAN";
-  const type = SPAN_TYPE[family.typeVowel ?? ""] ?? "SPAN";
-  const edge = SPAN_EDGE[family.edgeVowel ?? ""];
-  const named = open.ending === "n" ? "NAME." : "";
-  const about = open.ending === "m" ? ".about" : "";
-  const body = `${named}${type}${edge ? `.${edge}` : ""}${about}`;
-  return open.pos ? `${open.pos}-${body}` : body;
-}
-
-export function closeSuffix(close: LexWord | undefined): string {
-  if (!close || close.family.kind !== "spanClose") return "";
-  return CLOSE_SUFFIX[close.family.flavor] ?? "";
-}
 
 class Cursor {
   used: boolean[];
@@ -72,11 +49,11 @@ class Cursor {
   }
 }
 
-function group(kids: (GlossNode | undefined)[], label?: string, close?: string): GlossNode | undefined {
+function group(kids: (GlossNode | undefined)[], label?: string): GlossNode | undefined {
   const present = kids.filter((k): k is GlossNode => k !== undefined);
-  if (present.length === 0) return label ? { t: "group", label, close, kids: [] } : undefined;
+  if (present.length === 0) return label ? { t: "group", label, kids: [] } : undefined;
   if (present.length === 1 && !label) return present[0];
-  return { t: "group", label, close, kids: present };
+  return { t: "group", label, kids: present };
 }
 
 /** `/w/` + host + hosted `/b/`: `[[w | g] | b]`; as-of pair `[[w | b] | g]`; adjectives on `/b/` nest with it. */
@@ -156,26 +133,6 @@ function np(cur: Cursor, coord: NpCoord): GlossNode[] {
   return fences(cur, coord.parts, (item) => npItem(cur, item), isKindReference);
 }
 
-function span(cur: Cursor, s: SpanUnit): GlossNode | undefined {
-  const open = cur.take(s.open);
-  // Resume opens (EDGE **u** + -r) are pronoun-like: gloss as the word itself.
-  if (!s.atom && !s.close && s.content.length === 0 && s.open.ending === "r") return open;
-  const kids = s.content.flatMap((clause) => clauseNodes(cur, clause));
-  if (s.atom) {
-    const atom = cur.take(s.atom);
-    if (atom) kids.push(atom);
-  }
-  const close = s.close ? cur.take(s.close) : undefined;
-  return {
-    t: "group",
-    label: spokenSpanLabel(s.open),
-    close: closeSuffix(s.close),
-    kids,
-    from: open?.t === "leaf" ? open.i : undefined,
-    to: close?.t === "leaf" ? close.i : undefined,
-  };
-}
-
 function island(cur: Cursor, isl: IslandUnit): GlossNode {
   const kids = isl.units.flatMap((u) => unitNodes(cur, u));
   return { t: "group", label: "SCOPE", kids };
@@ -205,8 +162,6 @@ function unitNodes(cur: Cursor, unit: Unit): GlossNode[] {
       // `uem` + its stance frame: `[contrary-to | th-FORBID-disallowed]` (sakes.md#contrary-to-stance).
       return one(unit.frame ? group([hook, hUnit(cur, unit.frame)]) : hook);
     }
-    case "span":
-      return one(span(cur, unit.span));
     case "island":
       return [island(cur, unit.island)];
     case "clauseCoord": {
@@ -255,11 +210,6 @@ function attachLeft(out: GlossNode[], kinds: NodeKind[], pair: GlossNode): void 
 /** Clause units, with hook packages: extra noun `[in | b-house]`, named hook `NAME[a | on | b]`. */
 function clauseNodes(cur: Cursor, clause: Clause): GlossNode[] {
   const out: GlossNode[] = [];
-  if (clause.left) out.push(...leftEdgeNodes(cur, clause.left));
-  if (clause.linker) {
-    const linker = cur.take(clause.linker);
-    if (linker) out.push(linker);
-  }
   const units = clause.units;
   const nodes = units.map((u) => unitNodes(cur, u));
   const kinds: NodeKind[] = [];
@@ -303,12 +253,9 @@ function clauseNodes(cur: Cursor, clause: Clause): GlossNode[] {
 
 function leftEdgeNodes(cur: Cursor, left: LeftEdge): GlossNode[] {
   const out: GlossNode[] = [];
-  const edge: ({ at: number; word: LexWord } | { at: number; span: SpanUnit })[] = [
-    ...[...left.vocatives, ...left.interjections, ...left.polars].map((word) => ({ at: word.at ?? 0, word })),
-    ...(left.spans ?? []).map(({ span: s }) => ({ at: s.open.at ?? 0, span: s })),
-  ];
-  for (const item of edge.sort((a, b) => a.at - b.at)) {
-    const n = "word" in item ? cur.take(item.word) : span(cur, item.span);
+  const edge = [...left.vocatives, ...left.interjections, ...left.polars].sort((a, b) => (a.at ?? 0) - (b.at ?? 0));
+  for (const word of edge) {
+    const n = cur.take(word);
     if (n) out.push(n);
   }
   const hook = group([...(left.hookModifiers ?? []).map((m) => cur.take(m)), cur.take(left.hook)]);
@@ -323,12 +270,10 @@ function leftEdgeNodes(cur: Cursor, left: LeftEdge): GlossNode[] {
 function utteranceNodes(cur: Cursor, utt: Utterance): GlossNode[] {
   const out: GlossNode[] = [...leftEdgeNodes(cur, utt.left)];
   for (const body of utt.bodies) {
+    const marker = cur.take(body.topicMarker);
     const linker = cur.take(body.linker);
-    if (linker) out.push(linker);
-    if (body.topicSpan) {
-      const n = span(cur, body.topicSpan);
-      if (n) out.push(n);
-    }
+    if (marker && linker) out.push({ t: "group", kids: [marker, linker] });
+    else if (linker) out.push(linker);
     out.push(...clauseNodes(cur, body.clause));
   }
   return out;
@@ -337,7 +282,7 @@ function utteranceNodes(cur: Cursor, utt: Utterance): GlossNode[] {
 function minIndex(node: GlossNode): number {
   if (node.t === "leaf") return node.i;
   if (node.t === "raw") return node.at;
-  let min = node.from ?? Number.POSITIVE_INFINITY;
+  let min = Number.POSITIVE_INFINITY;
   for (const kid of node.kids) min = Math.min(min, minIndex(kid));
   return min;
 }
@@ -372,57 +317,31 @@ export function buildGlossTree(parsed: ParseResult, words: LexWord[]): GlossNode
   words.forEach((_, i) => {
     if (!cur.used[i]) nodes.push({ t: "leaf", i });
   });
-  // Spoken span open / close words are folded into group labels, not leaves.
   nodes.sort((a, b) => minIndex(a) - minIndex(b));
   return wellFormed(nodes) ? nodes : undefined;
 }
 
 /**
- * Token-level fallback when the sentence does not parse: spoken spans
- * (`daxal … xuxul`, atomic `daxol w`, empty `daxul`) and scope islands still
+ * Token-level fallback when the sentence does not parse: scope islands still
  * bracket; everything else stays flat.
  */
-export function tokenGlossTree(words: LexWord[], carets: number[]): GlossNode[] {
-  type Frame = { label: string; kids: GlossNode[]; atomic: boolean; from?: number };
+export function tokenGlossTree(words: LexWord[], braces: number[]): GlossNode[] {
   const root: GlossNode[] = [];
-  const stack: Frame[] = [];
-  const sink = () => (stack.length ? stack[stack.length - 1]!.kids : root);
-  const pop = (close?: string, to?: number) => {
-    const frame = stack.pop()!;
-    sink().push({ t: "group", label: frame.label, close, kids: frame.kids, from: frame.from, to });
-  };
-  const caretSet = new Map<number, number>();
-  carets.forEach((c) => caretSet.set(c, (caretSet.get(c) ?? 0) + 1));
-  let islandOpen = false;
+  let open: { kids: GlossNode[] } | undefined;
+  const braceSet = new Set(braces);
   for (let i = 0; i <= words.length; i++) {
-    for (let c = 0; c < (caretSet.get(i) ?? 0); c++) {
-      if (!islandOpen) stack.push({ label: "SCOPE", kids: [], atomic: false });
-      else pop();
-      islandOpen = !islandOpen;
+    if (braceSet.has(i)) {
+      if (open) {
+        root.push({ t: "group", label: "SCOPE", kids: open.kids });
+        open = undefined;
+      } else {
+        open = { kids: [] };
+      }
     }
     if (i === words.length) break;
-    const word = words[i]!;
-    const family = word.family;
-    if (family.kind === "spanClose") {
-      if (stack.length) pop(CLOSE_SUFFIX[family.flavor], i);
-      else sink().push({ t: "leaf", i });
-      continue;
-    }
-    if (family.kind === "x" && family.xFamily === "span" && word.ending !== "r") {
-      const label = spokenSpanLabel(word);
-      if (family.edgeVowel === "u") {
-        sink().push({ t: "group", label, kids: [], from: i, to: i });
-        continue;
-      }
-      stack.push({ label, kids: [], atomic: family.edgeVowel === "o", from: i });
-      continue;
-    }
-    sink().push({ t: "leaf", i });
-    while (stack.length && stack[stack.length - 1]!.atomic && stack[stack.length - 1]!.kids.length === 1) {
-      pop();
-    }
+    (open ? open.kids : root).push({ t: "leaf", i });
   }
-  while (stack.length) pop();
+  if (open) root.push(...open.kids);
   return root;
 }
 
@@ -439,7 +358,7 @@ function renderNode(node: GlossNode, leaf: RenderLeaf): string {
   const only = node.kids.length === 1 ? node.kids[0]! : undefined;
   const kids = node.label && only?.t === "group" && !only.label ? only.kids : node.kids;
   const inner = renderGlossNodes(kids, leaf);
-  return `${node.tone ?? ""}${node.label ?? ""}[${inner}]${node.close ?? ""}`;
+  return `${node.tone ?? ""}${node.label ?? ""}[${inner}]`;
 }
 
 /** Strip one outer `[ … ]` when it spans the whole string (a lone unlabeled unit). */
@@ -471,8 +390,8 @@ export function bracketsByWord(nodes: GlossNode[], wordCount: number): WordBrack
   const extent = (node: GlossNode): [number, number] | undefined => {
     if (node.t === "leaf") return [node.i, node.i];
     if (node.t === "raw") return undefined;
-    let lo = node.from ?? Number.POSITIVE_INFINITY;
-    let hi = node.to ?? node.from ?? Number.NEGATIVE_INFINITY;
+    let lo = Number.POSITIVE_INFINITY;
+    let hi = Number.NEGATIVE_INFINITY;
     for (const kid of node.kids) {
       const e = extent(kid);
       if (!e) continue;
@@ -486,7 +405,7 @@ export function bracketsByWord(nodes: GlossNode[], wordCount: number): WordBrack
     const e = extent(node);
     if (e && !hoisted) {
       out[e[0]]!.open.push(`${node.label ?? ""}[`);
-      out[e[1]]!.close.unshift(`]${node.close ?? ""}`);
+      out[e[1]]!.close.unshift("]");
     }
     // Same hoist as the rendered line: a label on a lone unlabeled unit draws one bracket.
     const only = node.kids.length === 1 ? node.kids[0]! : undefined;

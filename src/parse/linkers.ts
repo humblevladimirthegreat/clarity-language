@@ -31,12 +31,11 @@ export const CLEARING_LINKERS: ReadonlySet<string> = new Set([`${CLOSED.film}m`,
 /** What a `/x/` content word does to the topic (pronouns.md#topic); `none` for the other published linkers. */
 export type TopicEffect = "introduce" | "return" | "clear" | "none";
 
-/** An `/x/` cite, mention or opaque span as a topic word (`x@<Sam>`, `x{odoga}`, spans.md#topic-quotes). */
+/** An `/x/` cite or opaque span as a topic word (`x@<Sam>`, `x<odoga>`, spans.md#topic-quotes). */
 export function isTopicSpan(word: LexWord): boolean {
   if (word.pos !== "x") return false;
   const { family } = word;
-  if (family.kind === "writingSpan") return family.bracket === "<" || family.bracket === "[" || family.bracket === "{";
-  return family.kind === "x" && family.xFamily === "span" && family.typeVowel !== "e";
+  return family.kind === "writingSpan" && (family.bracket === "<" || family.bracket === "[");
 }
 
 /**
@@ -45,7 +44,7 @@ export function isTopicSpan(word: LexWord): boolean {
  */
 export function topicEffect(word: LexWord): TopicEffect {
   if (word.pos !== "x") return "none";
-  if (isTopicSpan(word)) return word.ending === "r" || (word.family.kind === "writingSpan" && word.family.anaphor) ? "return" : "introduce";
+  if (isTopicSpan(word)) return "introduce";
   if (word.family.kind !== "content") return "none";
   const root = word.family.roots.length === 1 ? word.family.roots[0]! : undefined;
   if (root !== undefined && CLEARING_LINKERS.has(root + word.ending)) return "clear";

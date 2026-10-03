@@ -279,7 +279,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 11 | `questions.md` | **exists** | **`yol`/`yom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`yael` / `yuel` / `yaol`** vs **`yul`** vs join **`zul`** | **`yom`** is taught here as soft *ask* — allowed on this page even though full speech-act twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
 | 12 | `hooks.md` | **exists** | Prefix-less **hooks** (**`al`/`am`/`ol`/`ul`/`el`**); in-clause `A HOOK B`; discourse **`al`** *additionally*; extra-noun **`al`/`ol`/`ul`/`el`** + `/b/` (**in** / **at** / **from** / **for**) | Not a join (`zam` vs `am`). Not stacked extra-noun (`aol` / `ael`). Not **`xrebul` / `xrebal`**
 | 12 | `restrictors.md` | **exists** | **`hal`/`ham`/`hual`/`huam`/`har`/`hor`/`hur`** (and `/w/` twins); *only when* vs co-manner *and*; bare *never* / *always* | Not sibling hooks. Not join **`zam`** as a restrictor |
-| 14 | `spans.md` | **exists** | Writing fences `[ ]` `{ }` `( )` `< >`; **`~`/`@`**; resume `d[=]`; PoS = outer slot; **aside** = `th(…)`; interior fragment or same-speech-act clause; when a span is required vs nativized word | `<>` loans **allowed** (this stage teaches them). Prefer atomic one-token cites |
+| 14 | `spans.md` | **exists** | Writing fences `[ ]` `( )` `< >`; **`~`/`@`**; PoS = outer slot; **aside** = `th(…)`; interior fragment or same-speech-act clause; when a span is required vs nativized word | `<>` loans **allowed** (this stage teaches them). Prefer one-token cites. The mention marker (`glelel`) is Intermediate |
 | 15 | `numbers.md` | **exists** | spelled counts (**`grarel`**) and ordinals (**`gredul`**) with the digit syllables; digitless **`gral`** (*more than one*); no shorthand (Intermediate) with **-x** on the noun | No `/v/` `/h/` `/y/` `/x/` number uses, exponents, ranges, percent, measures (later). **-x** from plurality is recycle |
 | 15 | `comparatives.md` | **exists** | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; single-item superlative; equative **`ae`** | **Needs:** joins Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
 | 15 | `causation.md` | **exists** | Two-place poles: outcome host + `/b/` condition; `/th/` event vs `/ɡ/` noun; *if* **`oye`** vs *only if* **`olu`**; no cause-arrow word | **Needs:** core extra nouns + dependents **`darl`**. *Because* / **`IFF`** / **CAUSE** are Intermediate — do not use |
@@ -311,7 +311,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 9 | `plurality.md` | Advanced | — | no Advanced stage | |
 | 10 | `predication.md` | Intermediate | **exists** | Classification packaging; **SAME** endings / open **-m** | |
 | 10 | `predication.md` | Advanced | skip | boundaries | |
-| 11 | `joins.md` | Intermediate | **exists** | Full single-item/standalone; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains; SHARED after join; `^` islands; fence nesting | Sample **decisions**, not every H3. 6–8 items |
+| 11 | `joins.md` | Intermediate | **exists** | Full single-item/standalone; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains; SHARED after join; `{ }` islands; fence nesting | Sample **decisions**, not every H3. 6–8 items |
 | 11 | `joins.md` | Advanced | **exists** | Named phrase **-n**; one rare-arity or reserved contrast from this stage | 4–6 items |
 | 12 | `questions.md` | Intermediate | **exists** | Fuller polar inventory; confirming a negative; fill-ask arity; occasion **`har`**; yes/no with single-item/standalone; fill-ask answers | |
 | 12 | `questions.md` | Advanced | — | no Advanced stage | |
@@ -319,8 +319,8 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 12 | `hooks.md` | Advanced | **exists** | Extra-noun **hook compounds** (citation keeps **-l** / **-m**, then the extra-noun hook; lemma is the citation; `/d/` landmark) | Recycle extra-noun grid. Not same-role *including*. Not two-word `vowogal ul …` |
 | 13 | `restrictors.md` | Intermediate | **exists** | Defined core (full); conjuncts; dependent *when* | |
 | 13 | `restrictors.md` | Advanced | — | no Advanced stage | |
-| 14 | `spans.md` | Intermediate | **exists** | Spoken open shape; TYPE; EDGE; endings; nesting; **`^ … ^`** scope islands; mention of a handle **form** vs office **-n** | |
-| 14 | `spans.md` | Advanced | **exists** | Close forms (`xuxul` / editorial / close-all) | 4–6 items |
+| 14 | `spans.md` | Intermediate | **exists** | Written spans; marks; mention marker; **`{ … }`** scope islands; mention of a handle **form** vs office **-n** | |
+| 14 | `spans.md` | Advanced | **exists** | Close forms (editorial `#]` / close-all `\|]`) | 4–6 items |
 | 15 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; digitless; number as verb / adverb / interjection / discourse as taught in this stage; **one of** measure / range / percent / time if you can keep the item to that decision (those topics live in **`numbers-applied.md`**) | Do not dump the whole Intermediate. 6–8 items |
 | 15 | `numbers-applied.md` | Intermediate | **exists** | Digit-string labels; clock / calendar time; percent vs points; measure phrases; ranges — as taught in this stage | One topic per item. 4–8 items |
 | 15 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the stage’s teach examples** — not unassigned cells | 4–6 items |

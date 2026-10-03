@@ -121,8 +121,6 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zaxavadam", "z-agent-x-struggle");
     expectLine("zexezebal", "z-scene-x-sleep");
     expectLine("zoxezebel", "z-recipient-x-speech");
-    expectLine("thexal", "th-ASIDE.multi[]");
-    expectLine("xuxul", "x-span-close");
     expectLine("xrebul", "x-starting-with");
   });
 
@@ -330,26 +328,20 @@ describe("compareMorphGloss", () => {
 
   it("emits scope island edges in morph gloss", () => {
     expectLine(
-      "zazawan ^ hegewem zodogal geredal ^ vahahal",
+      "zazawan { hegewem zodogal geredal } vahahal",
       "z-Azawan | SCOPE[h-possibility | [z-dog | g-red]] | v-see",
     );
   });
 
-  it("mentions pass through the form, not the English lemma", () => {
-    expectLine("z{odoga} gamazam", "z-MENTION[\"odoga\"] | g-small");
-    expectLine("zoxol odogal gamazam", "z-MENTION.atomic[\"odogal\"] | g-small");
-    expectLine(
-      "z{zazawan vezehel} gamazam",
-      "z-MENTION[\"zazawan vezehel\"] | g-small",
-    );
-    expectLine(
-      "zazawan d@[onodan alahen] vogozam",
-      "z-Azawan | d-NAME.CITE[Onodan | Alahen] | v-rejection",
-    );
-    expectLine(
-      "zazawan d@{onodan} vogozam",
-      "z-Azawan | d-NAME.MENTION[\"onodan\"] | v-rejection",
-    );
+  it("a mention is a marker word plus the span, and the span's interior stays as written", () => {
+    expectLine("glelel z<odoga> gamazam", '[gl-MENTION | z-OPAQUE["odoga"]] | g-small');
+    expectLine("glelel z<zazawan vezehel> gamazam", '[gl-MENTION | z-OPAQUE["zazawan vezehel"]] | g-small');
+    expectLine("glelen d<onodan> vogozam", '[gl-NAME.MENTION | d-OPAQUE["onodan"]] | v-rejection');
+    expectLine("zazawan d@[onodan alahen] vogozam", "z-Azawan | d-NAME.CITE[Onodan | Alahen] | v-rejection");
+  });
+
+  it("the mention marker's spelling is the ordinary adjective anywhere but before a span", () => {
+    expectLine("glelel zodogal vowogal", "[gl-letters | z-dog] | v-walk");
   });
 
   it("ordinary -l on a sake host root uses literal sense, not sake overlay", () => {
@@ -430,19 +422,15 @@ describe("compareMorphGloss", () => {
     expectLine("ganathaluom", "g-relatedness-met-lasting-UNPLACED-FLOWING");
   });
 
-  it("span interiors: cite and aside gloss English; mention passes through", () => {
+  it("span interiors: cite and aside gloss English; an opaque interior passes through", () => {
     expectLine("zazawan vowogal th(hagawal)", "z-Azawan | v-walk | th-ASIDE[h-quiet]");
     expectLine("yul zalahen v[vazadal]", "y-prohibition | z-Alahen | v-CITE[v-stop]");
     expectLine(
       "zazawan vowogal th(zalahen vezebal)",
       "z-Azawan | v-walk | th-ASIDE[z-Alahen | v-sleep]",
     );
-    expectLine(
-      "zazawan daxal yol zalahen vowogal xuxul vezebel",
-      "z-Azawan | d-CITE.multi[y-question | z-Alahen | v-walk] | v-tell",
-    );
     expectLine("x@<Sam> zozan vowogal", 'x-NAME.OPAQUE["Sam"] | z-TOPIC | v-walk');
-    expectLine("x{odoga} zozan gamazam", 'x-MENTION["odoga"] | z-TOPIC | g-small');
+    expectLine("glelel x<odoga> zozan gamazam", '[gl-MENTION | x-OPAQUE["odoga"]] | z-TOPIC | g-small');
   });
 
   it("viewpoint laterals keep compass on DIR", () => {
@@ -531,7 +519,7 @@ describe("morphGlossLine — th stance letter", () => {
     expectLine("thevem barl zazawan vehahel.", "[th-because | b-that-clause] | z-Azawan | v-sit");
     expectLine("thunem barl zazawan vehahel.", "[th-INFERRED | b-that-clause] | z-Azawan | v-sit");
     expectLine("thobal bral barl zazawan vehahel.", "[th-PATTERN.strong | [b-later | b-that-clause]] | z-Azawan | v-sit");
-    expectLine("thexal zazawan vehahel xuxul.", "th-ASIDE.multi[z-Azawan | v-sit]");
+    expectLine("zazawan vehahel th(zalahen vowogal).", "z-Azawan | v-sit | th-ASIDE[z-Alahen | v-walk]");
   });
 
   it("keeps time poles and restrictors on /h/", () => {

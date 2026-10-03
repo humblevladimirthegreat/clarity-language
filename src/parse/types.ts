@@ -57,11 +57,9 @@ export type NumberStem = {
   digitlessExp?: string;
 };
 
-export type XFamily = "span" | "role" | "pointer" | "sake" | "scope" | "lateral" | "holder" | "ability" | "numeric" | "compound";
+export type XFamily = "role" | "pointer" | "sake" | "scope" | "lateral" | "holder" | "ability" | "numeric" | "compound";
 
-export type SpanCloseFlavor = "complete" | "editorial" | "closeAll";
-
-export type WritingBracket = "[" | "{" | "(" | "<";
+export type WritingBracket = "[" | "(" | "<";
 
 export type MorphWordFamily =
   | { kind: "content"; roots: string[] }
@@ -75,10 +73,6 @@ export type MorphWordFamily =
       rightRoots?: string[];
       /** Viewpoint lateral `DIR th o`: the hosted `/b/` landmark's own facing (roles.md#landmark-facing). */
       landmark?: boolean;
-      /** Span TYPE vowel (span open). */
-      typeVowel?: "a" | "e" | "o" | "u";
-      /** Span EDGE vowel (span open). */
-      edgeVowel?: "a" | "e" | "o" | "u";
       /** Role vowel (role compound or role pointer). */
       roleVowel?: RoleVowel;
       /** Role pointer: which event (`a` same, `o` other, `e` self; pronouns.md#role-pointers). */
@@ -96,7 +90,6 @@ export type MorphWordFamily =
       /** Holder seam: the host's own grade letter before the holder (knowing.md#holder). */
       grade?: "l" | "m" | "r";
     }
-  | { kind: "spanClose"; flavor: SpanCloseFlavor }
   | { kind: "hook"; form: string }
   | {
       kind: "hookCompound";
@@ -110,11 +103,8 @@ export type MorphWordFamily =
       bracket: WritingBracket;
       payload: string;
       marks: ("@" | "~")[];
-      anaphor: boolean;
-      /** `d[…` with no close: the interior runs to the clause end (EDGE **e**). */
-      clauseScoped?: true;
     }
-  | { kind: "foreign"; payload: string; opaque: boolean };
+  | { kind: "foreign"; payload: string };
 
 /**
  * Stage-1 morphological word (characters → structure).
@@ -139,6 +129,8 @@ export type LexReading =
   | "restrictor"
   /** Any closed overlay row that is not a join-series form, sake or ability; read `word.overlay.kind`. */
   | "overlay"
+  /** The mention marker: a `gl-` word right before a written span (spans.md#mention). */
+  | "mention"
   | "join"
   | "standIn"
   | "standInNamed"
@@ -208,8 +200,6 @@ export type LeftEdge = {
   /** Reactions: `/y/` words in -l / -m (numbers included) and unnamed spans (`y<…>`). */
   interjections: LexWord[];
   polars: LexWord[];
-  /** Spoken `/y/` spans: **-n** / **-r** calls (vocative), **-l** / **-m** reactions (interjection) (spans.md#y-spans). */
-  spans?: { job: "vocative" | "interjection"; span: SpanUnit }[];
   hook?: LexWord;
   /** `/w/` immediately before a left-edge hook. */
   hookModifiers?: LexWord[];
@@ -313,15 +303,6 @@ export type ClauseCoord = {
   links: { join: LexWord; clause?: Clause }[];
 };
 
-export type SpanUnit = {
-  open: LexWord;
-  content: Clause[];
-  /** Atomic (EDGE **o**) interior: exactly one token. */
-  atom?: LexWord;
-  /** Explicit close; absent for atomic / clause-scoped / empty opens. */
-  close?: LexWord;
-};
-
 export type IslandUnit = {
   units: Unit[];
 };
@@ -347,7 +328,6 @@ export type Unit =
       /** `uem` + a `/th/` stance: the opposing frame the event goes contrary to (sakes.md#contrary-to-stance). */
       frame?: HUnit;
     }
-  | { kind: "span"; span: SpanUnit }
   | { kind: "writingSpan"; word: LexWord }
   | { kind: "island"; island: IslandUnit }
   | { kind: "clauseCoord"; coord: ClauseCoord }
@@ -356,16 +336,12 @@ export type Unit =
 export type Clause = {
   units: Unit[];
   dependent?: OdoDependent;
-  /** A topic word opening a clause inside a cite (pronouns.md#topic-quotes); a body's own is on {@link BodyClause}. */
-  linker?: LexWord;
-  /** An act word (and the rest of a turn cluster) inside a spoken cite (spans.md#quote-acts). */
-  left?: LeftEdge;
 };
 
 export type BodyClause = {
+  /** The mention marker before a topic span (`glelel x<odoga>`, spans.md#mention). */
+  topicMarker?: LexWord;
   linker?: LexWord;
-  /** A spoken `/x/` cite, mention or opaque span as the topic (`xuxon Sam`, spans.md#topic-quotes). */
-  topicSpan?: SpanUnit;
   clause: Clause;
   punct?: PunctKind;
 };
@@ -402,13 +378,11 @@ export type ParseResult = {
 
 // ── Stage 4 resolve ─────────────────────────────────────────────────────────
 
-export type AnaphorKind = "content" | "span" | "number" | "role" | "pointer" | "ordinal" | "topic";
+export type AnaphorKind = "content" | "number" | "role" | "pointer" | "ordinal" | "topic";
 
 export type AnaphorBind = {
   pronoun: LexWord;
   kind: AnaphorKind;
-  /** Span TYPE vowel (cite / aside / mention / opaque). */
-  typeVowel?: "a" | "e" | "o" | "u";
   /** Role compound or role pointer vowel (roles.md#role-compounds). */
   roleVowel?: RoleVowel;
   /** Role pointer: which event it reads (pronouns.md#role-pointers). */

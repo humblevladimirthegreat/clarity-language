@@ -9,7 +9,7 @@ import {
   type PhonemeWord,
 } from "./phonemes.js";
 import { numberWordToSpeechStressed } from "./numbers.js";
-import { expandOpaqueSpan, expandWritingSpan } from "./spans.js";
+import { expandWritingSpan } from "./spans.js";
 
 export type SkipReason = "foreign" | "writing" | "punct" | "error" | "shorthand";
 
@@ -87,7 +87,6 @@ export function expandWordToTokens(word: MorphWord): SpeechToken[] {
   }
 
   if (family.kind === "foreign") {
-    if (family.opaque) return expandOpaqueSpan(word);
     return [{ kind: "skip", raw: word.raw, reason: "foreign" }];
   }
 
@@ -182,10 +181,10 @@ function speechTokensFromSegments(segments: SpeechSegment[]): SpeechToken[] {
 
     if (segment.kind === "islandEdge") {
       if (!islandOpen) {
-        tokens.push({ kind: "boundary", tag: "islandEnter", raw: "^" });
+        tokens.push({ kind: "boundary", tag: "islandEnter", raw: "{" });
         islandOpen = true;
       } else {
-        tokens.push({ kind: "boundary", tag: "islandExit", raw: "^" });
+        tokens.push({ kind: "boundary", tag: "islandExit", raw: "}" });
         islandOpen = false;
       }
       continue;

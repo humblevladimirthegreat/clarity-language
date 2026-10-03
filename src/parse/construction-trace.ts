@@ -83,11 +83,6 @@ function featureConstructions(word: LexWord): string[] {
       if (family.horizon) ids.push("sake.emotion");
     }
     if (family.xFamily === "scope" && family.stanceVowel) ids.push(`scope.vowel.${family.stanceVowel}`);
-    if (family.xFamily === "span") {
-      if (family.typeVowel) ids.push(`span.type.${family.typeVowel}`);
-      if (family.edgeVowel) ids.push(`span.edge.${family.edgeVowel}`);
-      if (word.ending === "l" || word.ending === "m" || word.ending === "n" || word.ending === "r") ids.push(`span.ending.${word.ending}`);
-    }
     if (family.xFamily === "role") {
       if (family.roleVowel) ids.push(`role.vowel.${family.roleVowel}`);
       if (word.ending === "r") ids.push("role.instance");
@@ -98,12 +93,10 @@ function featureConstructions(word: LexWord): string[] {
     }
     return ids;
   }
-  if (family.kind === "spanClose") return [`span.close.${family.flavor}`];
   if (family.kind === "writingSpan") {
     const ids = family.marks.map((mark) => `span.mark.${mark}`);
     // A written `<…>` is the opaque / loan fence (spans.md#loans), the same lesson as a nested `<…>` payload.
     if (family.bracket === "<") ids.push("word.family.foreign");
-    if (family.clauseScoped) ids.push("span.edge.e");
     return ids;
   }
   if (family.kind === "hook") return [`hook.${family.form}`];

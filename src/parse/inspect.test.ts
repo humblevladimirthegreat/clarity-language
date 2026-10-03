@@ -87,7 +87,7 @@ describe("inspectText", () => {
   });
 
   it("surfaces a sentence warning when words parse but the clause does not", () => {
-    const result = inspectText("zazawan vowogal xuxul.", tables);
+    const result = inspectText("zazawan vowogal yol.", tables);
     assert.ok(result.tokens.some((token) => token.kind === "word"));
     assert.ok(result.sentenceWarning);
     assert.equal(result.constructions.length, 0);
@@ -107,16 +107,11 @@ describe("inspectText", () => {
     assert.ok(join!.triggerIndices.includes(zamIdx));
   });
 
-  it("pairs span open and close as Related", () => {
-    const result = inspectText("daxal zezedol xuxul vowogal.", tables);
-    const span = result.constructions.find((group) => group.kind === "span");
-    assert.ok(span);
-    const open = result.tokens.find((token) => token.kind === "word" && token.raw === "daxal");
-    assert.equal(open?.kind, "word");
-    if (open?.kind !== "word") return;
-    const closeRel = open.related?.find((rel) => rel.label === "span close");
-    assert.equal(closeRel?.raw, "xuxul");
-    assert.equal(result.tokens[closeRel!.tokenIndex]?.raw, "xuxul");
+  it("reads the mention marker before a span", () => {
+    const result = inspectText("glelel z<odoga> gamazam.", tables);
+    const marker = result.tokens.find((token) => token.kind === "word" && token.raw === "glelel");
+    assert.ok(marker?.kind === "word");
+    assert.equal(marker.word.reading, "mention");
   });
 
   it("links -r to its antecedent", () => {
@@ -166,10 +161,10 @@ describe("inspectText — phrase brackets", () => {
     assert.equal(shown, "yael [[zamagon zam] zehodon zal gezebul]");
   });
 
-  it("labels a spoken span on its open word", () => {
-    const tokens = inspectText("zazawan vahahul daxal zazawan vowogal xuxul.", tables).tokens;
-    const open = tokens.find((token) => token.raw === "daxal");
-    assert.ok(open?.kind === "word");
-    assert.deepEqual(open.brackets?.open, ["d-CITE.multi["]);
+  it("brackets a mention marker with its span", () => {
+    const tokens = inspectText("glelel z<odoga> gamazam.", tables).tokens;
+    const marker = tokens.find((token) => token.raw === "glelel");
+    assert.ok(marker?.kind === "word");
+    assert.deepEqual(marker.brackets?.open, ["["]);
   });
 });

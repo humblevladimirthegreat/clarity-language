@@ -369,7 +369,9 @@ function codeSpans(text: string): string[] {
 
 function unwrapCode(text: string): string | null {
   const m = text.match(/^`([^`]+)`$/);
-  return m ? m[1]! : null;
+  if (m) return m[1]!;
+  const html = text.match(/^<code>([^<]+)<\/code>$/);
+  return html ? html[1]!.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&") : null;
 }
 
 function normalizeExerciseMorph(raw: string): string | null {

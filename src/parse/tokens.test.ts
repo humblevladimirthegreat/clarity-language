@@ -4,6 +4,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, it } from "node:test";
 
+import { scanChunks } from "./span-scan.js";
 import { createClassifyTables } from "./classify.js";
 import { segmentUtterance, tokenizeUtterance } from "./tokenize.js";
 import {
@@ -37,11 +38,11 @@ describe("segmentUtterance", () => {
     ]);
   });
 
-  it("splits caret islands", () => {
-    assert.deepEqual(segmentUtterance("^ hal ^"), [
-      { kind: "islandEdge" },
+  it("splits brace islands", () => {
+    assert.deepEqual(segmentUtterance("{ hal }"), [
+      { kind: "islandEdge", open: true },
       { kind: "word", text: "hal" },
-      { kind: "islandEdge" },
+      { kind: "islandEdge", open: false },
     ]);
   });
 });
@@ -81,15 +82,15 @@ describe("tokenizeUtterance", () => {
 
 describe("tone marks", () => {
   it("emits attached and free-standing marks as tone segments", () => {
-    assert.deepEqual(segmentUtterance("?! zazawan !!veyel ?^ hal ^."), [
+    assert.deepEqual(segmentUtterance("?! zazawan !!veyel ?{ hal }."), [
       { kind: "tone", mark: "?!", attached: false },
       { kind: "word", text: "zazawan" },
       { kind: "tone", mark: "!!", attached: true },
       { kind: "word", text: "veyel" },
       { kind: "tone", mark: "?", attached: true },
-      { kind: "islandEdge" },
+      { kind: "islandEdge", open: true },
       { kind: "word", text: "hal" },
-      { kind: "islandEdge" },
+      { kind: "islandEdge", open: false },
       { kind: "punct", punct: "period" },
     ]);
   });
@@ -100,5 +101,21 @@ describe("tone marks", () => {
       { kind: "word", text: "zazawan" },
       { kind: "punct", punct: "period" },
     ]);
+  });
+});
+
+describe("scanChunks", () => {
+  it("keeps a written span whole, with its tone mark and sentence mark", () => {
+    assert.deepEqual(
+      scanChunks("zazawan !d[zazawar vowogal]. dedehel").map((chunk) => chunk.text),
+      ["zazawan", "!d[zazawar vowogal].", "dedehel"],
+    );
+  });
+
+  it("splits island braces as their own chunks", () => {
+    assert.deepEqual(
+      scanChunks("zazawan { hegewem zodogal } vahahal").map((chunk) => chunk.text),
+      ["zazawan", "{", "hegewem", "zodogal", "}", "vahahal"],
+    );
   });
 });

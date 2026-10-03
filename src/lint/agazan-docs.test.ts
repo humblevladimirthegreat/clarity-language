@@ -90,8 +90,6 @@ describe("lintAgazanToken", () => {
     assert.equal(lintAgazanToken("jal", tables)?.detail, "`j` is not a letter; write `y`");
     assert.equal(lintAgazanToken("d<sushi>", tables), null);
     assert.equal(lintAgazanToken("d[hi]", tables), null);
-    assert.equal(lintAgazanToken("daxal", tables), null);
-    assert.equal(lintAgazanToken("xuxul", tables), null);
     assert.equal(lintAgazanToken("xuxun", tables), null);
     assert.equal(lintAgazanToken("thegera", tables), null);
   });
@@ -189,9 +187,9 @@ describe("lintAgazanSpans", () => {
 
   it("traces fragments with context supplied around them", () => {
     const used = new Set<string>();
-    assert.deepEqual(lintAgazanSpans("<!-- lint: fragment -->`xuxur xuxum`", tables, undefined, (id) => used.add(id)), []);
-    assert.ok(used.has("span.close.editorial") && used.has("span.close.closeAll"));
-    assert.equal(lintAgazanSpans("<!-- lint: fragment -->`xuxur xuxur zo`", tables)[0]?.kind, "fragment");
+    assert.deepEqual(lintAgazanSpans("<!-- lint: fragment -->`zam zal`", tables, undefined, (id) => used.add(id)), []);
+    assert.ok(used.has("join.a"));
+    assert.equal(lintAgazanSpans("<!-- lint: fragment -->`zul zul zo`", tables)[0]?.kind, "fragment");
   });
 
   it("traces templates by filling their slots", () => {
@@ -203,10 +201,8 @@ describe("lintAgazanSpans", () => {
     const hook = trace("`A am B`");
     assert.ok(hook.has("hook.am"));
     assert.ok(![...hook].some((id) => id.startsWith("hook.") && id !== "hook.am"));
-    const open = trace("`…axal`");
-    assert.ok(open.has("span.type.a") && open.has("span.edge.a"));
     assert.ok(trace("`…l#N`").has("word.xFamily.numeric"));
-    assert.ok(trace("`d[…`").has("span.edge.e"));
+    assert.equal(lintAgazanSpans("`d[…`", tables)[0]?.kind, "template");
     assert.equal(lintAgazanSpans("`zo zo …`", tables)[0]?.kind, "template");
     assert.equal(classifyAgazanSpan("ROOT"), "english");
   });
@@ -222,7 +218,7 @@ describe("lintAgazanSpans", () => {
   it("requires an info string on fenced blocks and checks agazan fences", () => {
     assert.equal(lintAgazanSpans("```\nA HOOK B\n```\n", tables)[0]?.kind, "unmarked-fence");
     assert.deepEqual(lintAgazanSpans("```text\nA HOOK B\n```\n", tables), []);
-    assert.equal(lintAgazanSpans("```text\ndaxal zazawan xuxul\n```\n", tables)[0]?.kind, "agazan-in-text-fence");
+    assert.equal(lintAgazanSpans("```text\nzazawan vowogal\n```\n", tables)[0]?.kind, "agazan-in-text-fence");
     assert.equal(lintAgazanSpans("```agazan\nzul zazawan vazawal.\n```\n", tables)[0]?.kind, "sentence");
   });
 

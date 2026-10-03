@@ -57,6 +57,7 @@ export const OVERLAY_KINDS = [
   "stimulus",
   "deontic",
   "mirative",
+  "mention",
 ] as const;
 
 export type OverlayKind = (typeof OVERLAY_KINDS)[number];

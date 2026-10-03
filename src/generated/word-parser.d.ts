@@ -169,7 +169,7 @@ export type ParserTracerEvent
       readonly result: unknown;
     };
 
-export type StartRuleNames = "start" | "words" | "probe_spanClose" | "probe_writingSpan" | "probe_freeNumber" | "probe_hook" | "probe_prefixedWord" | "probe_citation" | "probe_prefixedX" | "probe_prefixedPlain" | "probe_prefixedJoin";
+export type StartRuleNames = "start" | "words" | "probe_writingSpan" | "probe_freeNumber" | "probe_hook" | "probe_prefixedWord" | "probe_citation" | "probe_prefixedX" | "probe_prefixedPlain" | "probe_prefixedJoin";
 export interface ParseOptions<T extends StartRuleNames = "start"> {
   /**
    * String or object that will be attached to the each `LocationRange` object
@@ -203,11 +203,6 @@ declare function ParseFunction<Options extends ParseOptions<"start">>(
 ): any;
 
 declare function ParseFunction<Options extends ParseOptions<"words">>(
-  input: string,
-  options?: Options,
-): any;
-
-declare function ParseFunction<Options extends ParseOptions<"probe_spanClose">>(
   input: string,
   options?: Options,
 ): any;

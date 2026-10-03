@@ -8,7 +8,8 @@ import {
   Force,
   G,
   H,
-  IslandEdge,
+  IslandClose,
+  IslandOpen,
   JoinB,
   JoinD,
   JoinG,
@@ -18,14 +19,11 @@ import {
   JoinZ,
   lexWordFromToken,
   Linker,
-  SpanAtom,
   Odo,
   Period,
   Polar,
   QMark,
   Hook,
-  SpanClose,
-  SpanOpen,
   V,
   Vocative,
   Interjection,
@@ -35,7 +33,7 @@ import {
 } from "./tokens.js";
 import { isAsOfOverlay, isNamedStandIn, isStandIn } from "./classify.js";
 import { assignHookJobs } from "./hook-jobs.js";
-import { topicEffect, isTopicSpan } from "./linkers.js";
+import { topicEffect } from "./linkers.js";
 import { BAR_SERIES, isScaleStem, RANK_SERIES } from "./series.js";
 import type {
   BodyClause,
@@ -55,7 +53,6 @@ import type {
   OdoDependent,
   ParseResult,
   PunctKind,
-  SpanUnit,
   Unit,
   Utterance,
   VpCoord,
@@ -71,12 +68,6 @@ export class SentenceParseError extends Error {
     this.name = "SentenceParseError";
     this.parserErrors = parserErrors;
   }
-}
-
-function spanCloseFlavor(token: IToken): string | undefined {
-  if (token.tokenType !== SpanClose) return undefined;
-  const family = (token.payload as LexWord | undefined)?.family;
-  return family?.kind === "spanClose" ? family.flavor : undefined;
 }
 
 /** Stance `/th/` join word (`thul`, `thar`, …); bare `/h/` joins are not standalone. */
@@ -154,11 +145,6 @@ function respectivelyAdjListAhead(parser: AgazanSentenceParser): boolean {
 /** The join token that closes a list at each noun-phrase level. */
 const NP_JOIN = { z: JoinZ, d: JoinD, b: JoinB } as const;
 
-/** A spoken span open under `/y/` (`yuxan` … `xuxul`): a call or a reaction at the left edge. */
-function isYSpanOpen(token: IToken): boolean {
-  return token.tokenType === SpanOpen && (token.payload as LexWord | undefined)?.pos === "y";
-}
-
 function isStanceWord(token: IToken): boolean {
   return token.tokenType === H && (token.payload as LexWord | undefined)?.pos === "th";
 }
@@ -228,7 +214,7 @@ class AgazanSentenceParser extends CstParser {
   public utterance = this.RULE("utterance", () => {
     this.OR([
       {
-        GATE: () => tokenIs(this.LA(1), Polar, Vocative, Interjection, Force) || this.discourseHookAhead() || isYSpanOpen(this.LA(1)),
+        GATE: () => tokenIs(this.LA(1), Polar, Vocative, Interjection, Force) || this.discourseHookAhead(),
         ALT: () => {
           this.SUBRULE(this.leftEdge);
           this.OPTION(() => {
@@ -246,7 +232,7 @@ class AgazanSentenceParser extends CstParser {
       this.CONSUME(Period);
       // After a sentence end, a turn word or hook opens a new utterance instead (the document loop takes it).
       this.OPTION2({
-        GATE: () => !tokenIs(this.LA(1), Polar, Force, Vocative, Interjection, Hook) && !isYSpanOpen(this.LA(1)),
+        GATE: () => !tokenIs(this.LA(1), Polar, Force, Vocative, Interjection, Hook),
         DEF: () => this.SUBRULE3(this.bodyClause, { LABEL: "nextBody" }),
       });
     });
@@ -257,12 +243,10 @@ class AgazanSentenceParser extends CstParser {
       {
         ALT: () => {
           this.AT_LEAST_ONE({
-            GATE: () => tokenIs(this.LA(1), Vocative, Interjection, Polar) || this.discourseHookAhead() || isYSpanOpen(this.LA(1)),
+            GATE: () => tokenIs(this.LA(1), Vocative, Interjection, Polar) || this.discourseHookAhead(),
             DEF: () => this.OR2([
               { ALT: () => this.CONSUME(Vocative) },
               { ALT: () => this.CONSUME(Interjection) },
-              // A spoken `/y/` span (open … close) calls or reacts, like a written `y@<…>` / `y<…>` (spans.md#y-spans).
-              { GATE: () => isYSpanOpen(this.LA(1)), ALT: () => this.SUBRULE(this.spanUnit, { LABEL: "ySpan" }) },
               { ALT: () => this.CONSUME(Polar) },
               {
                 GATE: () => this.discourseHookAhead(),
@@ -330,17 +314,20 @@ class AgazanSentenceParser extends CstParser {
         // A topic word may be the whole sentence (`xazawan.`, pronouns.md#topic).
         { GATE: () => this.loneTopicWordAhead(), ALT: () => this.CONSUME2(Linker) },
         {
-          GATE: () => this.topicSpanAhead(),
+          // A marked topic span may be the whole sentence too (`glelel x<odoga>.`).
+          GATE: () => this.markedLoneTopicAhead(),
           ALT: () => {
-            this.SUBRULE(this.spanUnit, { LABEL: "topicSpan" });
-            this.OPTION3({
-              GATE: () => !tokenIs(this.LA(1), Period, EOF, QMark, Bang),
-              DEF: () => this.SUBRULE3(this.clause),
-            });
+            this.CONSUME2(G, { LABEL: "topicMarker" });
+            this.CONSUME3(Linker);
           },
         },
         {
           ALT: () => {
+            // A mention marker before a topic span (`glelel x<odoga> …`, spans.md#mention).
+            this.OPTION4({
+              GATE: () => this.markedTopicAhead(),
+              DEF: () => this.CONSUME(G, { LABEL: "topicMarker" }),
+            });
             this.OPTION(() => {
               this.CONSUME(Linker);
             });
@@ -356,23 +343,27 @@ class AgazanSentenceParser extends CstParser {
     });
   });
 
+  /** The mention marker right before a topic span (the marker is a `gl-` word, so it would otherwise read as an adjective). */
+  private markedTopicAhead(): boolean {
+    return (this.LA(1).payload as LexWord | undefined)?.reading === "mention" && this.LA(2).tokenType === Linker;
+  }
+
+  private markedLoneTopicAhead(): boolean {
+    const word = this.LA(2).payload as LexWord | undefined;
+    return this.markedTopicAhead() && !!word && topicEffect(word) !== "none" && tokenIs(this.LA(3), Period, EOF);
+  }
+
   /** A topic word and then the end of the sentence. */
   private loneTopicWordAhead(): boolean {
     const word = this.LA(1).payload as LexWord | undefined;
     return this.LA(1).tokenType === Linker && !!word && topicEffect(word) !== "none" && tokenIs(this.LA(2), Period, EOF);
   }
 
-  /** Spoken `/x/` cite, mention or opaque open as a topic word (`xuxon Sam`, spans.md#topic-quotes). */
-  private topicSpanAhead(): boolean {
-    const word = this.LA(1).payload as LexWord | undefined;
-    return this.LA(1).tokenType === SpanOpen && !!word && isTopicSpan(word);
-  }
-
   /** `/x/` at sentence start followed by a clause (not `.`, a hook, or another `/x/`). */
   private crossPeriodJoinAhead(): boolean {
     if (this.LA(1).tokenType !== JoinX) return false;
     if (this.LA(laAfterW(this, 2)).tokenType === Hook) return false;
-    return !tokenIs(this.LA(2), JoinX, Period, EOF, QMark, Bang, SpanClose, Force, Polar, Linker);
+    return !tokenIs(this.LA(2), JoinX, Period, EOF, QMark, Bang, Force, Polar, Linker);
   }
 
   /** `/x/` joins go between clauses: item, join, item, … (joins.md § clause joins). */
@@ -388,7 +379,7 @@ class AgazanSentenceParser extends CstParser {
   });
 
   private clauseEndAhead(): boolean {
-    return tokenIs(this.LA(1), Period, EOF, QMark, Bang, SpanClose, Force, Polar, Linker);
+    return tokenIs(this.LA(1), Period, EOF, QMark, Bang, Force, Polar, Linker);
   }
 
   /** A clause, or a standalone `/x/` word as a stand-in clause (optionally `xual ul …` with a hook). */
@@ -420,9 +411,7 @@ class AgazanSentenceParser extends CstParser {
 
   public unit = this.RULE("unit", () => {
     this.OR([
-      { GATE: () => this.LA(1).tokenType === IslandEdge, ALT: () => this.SUBRULE(this.islandUnit) },
-      // A `/y/` span opens a turn (left edge); inside a clause there is no `/y/` slot.
-      { GATE: () => this.LA(1).tokenType === SpanOpen && !isYSpanOpen(this.LA(1)), ALT: () => this.SUBRULE(this.spanUnit) },
+      { GATE: () => this.LA(1).tokenType === IslandOpen, ALT: () => this.SUBRULE(this.islandUnit) },
       {
         GATE: () => isNpSlotLookahead(this, "z"),
         ALT: () => this.SUBRULE(this.npCoord, { ARGS: ["z"], LABEL: "zCoord" }),
@@ -454,90 +443,15 @@ class AgazanSentenceParser extends CstParser {
     ]);
   });
 
-  /** A clause inside a cite, which may open with a topic word or an act word of its own. */
-  public quoteClause = this.RULE("quoteClause", () => {
-    this.OR([
-      {
-        GATE: () => this.LA(1).tokenType === Linker,
-        ALT: () => {
-          this.CONSUME(Linker);
-          this.OPTION({
-            GATE: () => !tokenIs(this.LA(1), SpanClose),
-            DEF: () => this.SUBRULE(this.clause),
-          });
-        },
-      },
-      {
-        GATE: () => tokenIs(this.LA(1), Polar, Vocative, Interjection, Force) || this.discourseHookAhead() || isYSpanOpen(this.LA(1)),
-        ALT: () => {
-          this.SUBRULE(this.leftEdge);
-          this.OPTION2({
-            GATE: () => !tokenIs(this.LA(1), SpanClose),
-            DEF: () => this.SUBRULE3(this.clause),
-          });
-        },
-      },
-      { ALT: () => this.SUBRULE2(this.clause) },
-    ]);
-  });
-
   public islandUnit = this.RULE("islandUnit", () => {
-    this.CONSUME(IslandEdge);
+    this.CONSUME(IslandOpen);
     this.MANY({
-      GATE: () => this.LA(1).tokenType !== IslandEdge,
+      GATE: () => this.LA(1).tokenType !== IslandClose,
       DEF: () => {
         this.SUBRULE(this.unit);
       },
     });
-    this.CONSUME2(IslandEdge);
-  });
-
-  public spanUnit = this.RULE("spanUnit", () => {
-    this.CONSUME(SpanOpen);
-    // EDGE decides the extent; gates read the open just consumed (LA(0)).
-    this.OR({
-      IGNORE_AMBIGUITIES: true,
-      DEF: [
-        {
-          // Atomic: exactly one following token, whatever its class.
-          GATE: () => spanEdgeOf(this.LA(0)) === "o",
-          ALT: () => {
-            this.CONSUME5(SpanAtom, { LABEL: "atom" });
-          },
-        },
-        {
-          // Clause-scoped: runs until the next turn, clause-level `/x/` join, linker, or sentence end.
-          GATE: () => spanEdgeOf(this.LA(0)) === "e",
-          ALT: () => {
-            this.MANY2({
-              GATE: () => !tokenIs(this.LA(1), JoinX, Force, Polar, Linker, Period, QMark, Bang),
-              DEF: () => {
-                this.SUBRULE(this.unit, { LABEL: "scopedUnit" });
-              },
-            });
-          },
-        },
-        {
-          GATE: () => spanEdgeOf(this.LA(0)) === "a",
-          ALT: () => {
-            this.MANY(() => {
-              this.SUBRULE(this.quoteClause);
-            });
-            this.CONSUME(SpanClose);
-            // Written `#|`: editorial close `xuxur`, then close-all `xuxum` (spans.md § Editorial close).
-            this.OPTION3({
-              GATE: () =>
-                spanCloseFlavor(this.LA(0)) === "editorial" && spanCloseFlavor(this.LA(1)) === "closeAll",
-              DEF: () => {
-                this.CONSUME2(SpanClose, { LABEL: "closeAll" });
-              },
-            });
-          },
-        },
-        // Empty / resume (EDGE **u**): no interior, no close.
-        { ALT: () => {} },
-      ],
-    });
+    this.CONSUME(IslandClose);
   });
 
   /** A noun-phrase list at level `/z/` `/d/` or `/b/` (the same shape at each level; only the slot letter differs). */
@@ -1538,43 +1452,9 @@ function flattenGCoord(cst: CstNode): Unit[] {
   return units;
 }
 
-function buildQuoteClause(cst: CstNode): Clause {
-  const linker = childToken(cst, "Linker");
-  const leftCst = childNodes(cst, "leftEdge")[0];
-  const clause = childNodes(cst, "clause")[0];
-  return {
-    ...(clause ? buildClause(clause) : { units: [] }),
-    ...(linker ? { linker: lexWordFromToken(linker) } : {}),
-    ...(leftCst ? { left: buildLeftEdge(leftCst) } : {}),
-  };
-}
-
-function buildSpan(cst: CstNode): SpanUnit {
-  const open = childToken(cst, "SpanOpen")!;
-  const close = childToken(cst, "SpanClose");
-  const atom = childToken(cst, "atom");
-  const scoped = childNodes(cst, "scopedUnit");
-  const content =
-    scoped.length > 0 ? [finalizeClause(scoped.flatMap(expandUnits))] : childNodes(cst, "quoteClause").map(buildQuoteClause);
-  return {
-    open: lexWordFromToken(open),
-    content,
-    ...(atom ? { atom: lexWordFromToken(atom) } : {}),
-    ...(close ? { close: lexWordFromToken(close) } : {}),
-  };
-}
-
-function spanEdgeOf(token: IToken): string | undefined {
-  const word = token.payload as LexWord | undefined;
-  if (!word || word.family.kind !== "x") return undefined;
-  return word.family.edgeVowel;
-}
-
 function buildUnit(cst: CstNode): Unit {
   const island = childNodes(cst, "islandUnit")[0];
   if (island) return { kind: "island", island: buildIsland(island) };
-  const span = childNodes(cst, "spanUnit")[0];
-  if (span) return { kind: "span", span: buildSpan(span) };
   const np = npCoordCst(cst);
   if (np) return { kind: "np", coord: buildNpCoord(np) };
   const vp = childNodes(cst, "vpCoord")[0];
@@ -1597,8 +1477,6 @@ function buildUnit(cst: CstNode): Unit {
 function expandUnits(cst: CstNode): Unit[] {
   const island = childNodes(cst, "islandUnit")[0];
   if (island) return [{ kind: "island", island: buildIsland(island) }];
-  const span = childNodes(cst, "spanUnit")[0];
-  if (span) return [{ kind: "span", span: buildSpan(span) }];
   const np = npCoordCst(cst);
   if (np) return [{ kind: "np", coord: buildNpCoord(np) }];
   const vp = childNodes(cst, "vpCoord")[0];
@@ -1680,16 +1558,11 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
   const leadTok = childToken(cst, "LeadForce");
   const impliedForce = force ? undefined : impliedForceFromPolars(polars) ?? "yal";
   const hookModifiers = childTokens(cst, "W").map(lexWordFromToken);
-  const spans = childNodes(cst, "ySpan").map(buildSpan).map((span) => ({
-    job: span.open.ending === "l" || span.open.ending === "m" ? ("interjection" as const) : ("vocative" as const),
-    span,
-  }));
 
   return {
     vocatives,
     interjections,
     polars,
-    ...(spans.length > 0 ? { spans } : {}),
     hook: hookTok ? lexWordFromToken(hookTok) : undefined,
     hookModifiers: hookModifiers.length > 0 ? hookModifiers : undefined,
     leadForce: leadTok ? lexWordFromToken(leadTok) : undefined,
@@ -1700,11 +1573,11 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
 
 function buildBodyClause(cst: CstNode, trailingPunct?: IToken): BodyClause {
   const linkerTok = childToken(cst, "Linker") ?? childToken(cst, "crossJoin");
-  const topicSpanCst = childNodes(cst, "topicSpan")[0];
   const clauseCst = childNodes(cst, "clause")[0];
+  const marker = childToken(cst, "topicMarker");
   return {
+    ...(marker ? { topicMarker: lexWordFromToken(marker) } : {}),
     linker: linkerTok ? lexWordFromToken(linkerTok) : undefined,
-    ...(topicSpanCst ? { topicSpan: buildSpan(topicSpanCst) } : {}),
     clause: clauseCst ? buildClause(clauseCst) : { units: [] },
     punct: trailingPunct ? punctFromToken(trailingPunct) : undefined,
   };

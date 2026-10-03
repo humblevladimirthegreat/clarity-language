@@ -1,31 +1,9 @@
 const POS = new Set(["z", "d", "b", "v", "g", "w", "h", "x", "y"]);
 const OPEN_CLOSE: Record<string, string> = {
   "[": "]",
-  "{": "}",
   "(": ")",
   "<": ">",
 };
-
-/**
- * End of a clause-scoped written span (`d[…` with no close, EDGE **e**): the interior runs
- * to the clause end — before the next `/x/` or `/y/` word, or before the sentence mark.
- */
-function clauseScopedEnd(text: string, openAt: number): number {
-  let end = openAt + 1;
-  let i = openAt + 1;
-  while (i < text.length) {
-    let j = i;
-    while (j < text.length && !/\s/.test(text[j]!)) j += 1;
-    const chunk = text.slice(i, j);
-    if (i > openAt + 1 && /^[xy][aeiou+#_~@=-]/.test(chunk)) break;
-    const mark = /[.?!]+$/.exec(chunk);
-    if (mark && (j >= text.length || /\s/.test(text[j]!))) return i + chunk.length - mark[0].length;
-    end = j;
-    while (j < text.length && /\s/.test(text[j]!)) j += 1;
-    i = j;
-  }
-  return end;
-}
 
 /** Index just after a paired span starting at `openAt` (the opening bracket). */
 export function scanPairedEnd(text: string, openAt: number): number | undefined {
@@ -96,9 +74,7 @@ export function writingSpanEnd(text: string, start: number): number | undefined 
     i += posLen;
     i = skipMarks(text, i);
     if (text[i] && text[i]! in OPEN_CLOSE) {
-      const paired = scanPairedEnd(text, i);
-      if (paired !== undefined || text[i] === "<") return paired;
-      return clauseScopedEnd(text, i);
+      return scanPairedEnd(text, i);
     }
     return undefined;
   }
@@ -118,7 +94,7 @@ function peelPunct(chunk: string): string {
   return chunk;
 }
 
-/** Word tokens: writing spans stay whole; `^` skipped; trailing `.?!` peeled. */
+/** Word tokens: writing spans stay whole; island edges skipped; trailing `.?!` peeled. */
 export function scanWordTokens(text: string): string[] {
   const trimmed = text.trim();
   if (!trimmed) return [];
@@ -127,7 +103,7 @@ export function scanWordTokens(text: string): string[] {
   while (i < trimmed.length) {
     while (i < trimmed.length && /\s/.test(trimmed[i]!)) i += 1;
     if (i >= trimmed.length) break;
-    if (trimmed[i] === "^") {
+    if (trimmed[i] === "{" || trimmed[i] === "}") {
       i += 1;
       continue;
     }
@@ -140,13 +116,40 @@ export function scanWordTokens(text: string): string[] {
     if (spanEnd !== undefined) {
       tokens.push(trimmed.slice(i, spanEnd));
       i = spanEnd;
+      // A sentence mark right after the span is peeled, as it is after any other word.
+      let mark = i;
+      while (mark < trimmed.length && ".?!".includes(trimmed[mark]!)) mark += 1;
+      if (mark > i && (mark >= trimmed.length || /\s/.test(trimmed[mark]!))) i = mark;
       continue;
     }
     let j = i;
-    while (j < trimmed.length && !/\s/.test(trimmed[j]!) && trimmed[j] !== "^") j += 1;
+    while (j < trimmed.length && !/\s/.test(trimmed[j]!) && trimmed[j] !== "{" && trimmed[j] !== "}") j += 1;
     const word = peelPunct(trimmed.slice(i, j));
     if (word) tokens.push(word);
     i = j;
   }
   return tokens;
+}
+
+/**
+ * Whitespace-separated chunks of an utterance, with each written span kept whole (a span may hold spaces)
+ * and any leading tone mark or trailing sentence mark left on its chunk.
+ */
+export function scanChunks(text: string): { text: string; start: number }[] {
+  const chunks: { text: string; start: number }[] = [];
+  let i = 0;
+  while (i < text.length) {
+    if (/\s/.test(text[i]!)) {
+      i += 1;
+      continue;
+    }
+    const start = i;
+    let j = i + toneRunLength(text, i);
+    const spanEnd = writingSpanEnd(text, j);
+    if (spanEnd !== undefined) j = spanEnd;
+    while (j < text.length && !/\s/.test(text[j]!)) j += 1;
+    chunks.push({ text: text.slice(start, j), start });
+    i = j;
+  }
+  return chunks;
 }

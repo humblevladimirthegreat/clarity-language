@@ -13,7 +13,7 @@ import { parseWordStream } from "./word.js";
 
 export type TokenizeSegment =
   | { kind: "word"; text: string }
-  | { kind: "islandEdge" }
+  | { kind: "islandEdge"; open: boolean }
   | { kind: "tone"; mark: string; attached: boolean }
   | { kind: "punct"; punct: PunctKind };
 
@@ -46,8 +46,8 @@ export function segmentUtterance(text: string): TokenizeSegment[] {
     while (i < trimmed.length && /\s/.test(trimmed[i]!)) i += 1;
     if (i >= trimmed.length) break;
 
-    if (trimmed[i] === "^") {
-      segments.push({ kind: "islandEdge" });
+    if (trimmed[i] === "{" || trimmed[i] === "}") {
+      segments.push({ kind: "islandEdge", open: trimmed[i] === "{" });
       i += 1;
       continue;
     }
@@ -69,7 +69,7 @@ export function segmentUtterance(text: string): TokenizeSegment[] {
     }
 
     let j = i;
-    while (j < trimmed.length && !/\s/.test(trimmed[j]!) && trimmed[j] !== "^") {
+    while (j < trimmed.length && !/\s/.test(trimmed[j]!) && trimmed[j] !== "{" && trimmed[j] !== "}") {
       j += 1;
     }
     const { word, punct } = peelTrailingPunct(trimmed.slice(i, j));
@@ -114,7 +114,7 @@ export function tokenizeUtterance(text: string, tables: ClassifyTables): IToken[
     }
 
     if (segment.kind === "islandEdge") {
-      const atom: SurfaceAtom = { kind: "islandEdge" };
+      const atom: SurfaceAtom = { kind: "islandEdge", open: segment.open };
       tokens.push(surfaceAtomToToken(atom, offset));
       offset += 1;
       continue;

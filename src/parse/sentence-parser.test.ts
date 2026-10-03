@@ -153,6 +153,6 @@ describe("sentence-parser synthetic", () => {
   });
 
   it("rejects leftover tokens after a complete clause", () => {
-    assert.throws(() => parseSentenceTokens(tokens("zazawan vawalal xuxul.")), SentenceParseError);
+    assert.throws(() => parseSentenceTokens(tokens("zazawan vawalal yol.")), SentenceParseError);
   });
 });

@@ -4,17 +4,6 @@
     gu: "6", le: "7", ha: "8", na: "9", zo: "0",
   };
 
-  function spanCloseFlavor(form) {
-    if (form === "xuxul") return "complete";
-    if (form === "xuxur") return "editorial";
-    return "closeAll";
-  }
-
-  function spanOpenLegal(edgeV, ending) {
-    if (edgeV === "u") return ending === "l" || ending === "r";
-    return ending === "l" || ending === "m" || ending === "n";
-  }
-
   // Role + ability (`gaxedegexal` *fit to be a teacher*) is classification only: `/ɡ/`.
   function roleAbilityPosOk(pos, body) {
     const f = body.family;
@@ -43,14 +32,12 @@
     return { kind: "x", xFamily: name, ...extra };
   }
 
-  function writingSpanFamily(bracket, payload, marks, anaphor, clauseScoped) {
+  function writingSpanFamily(bracket, payload, marks) {
     return {
       kind: "writingSpan",
       bracket,
       payload,
       marks: marks || [],
-      anaphor: !!anaphor,
-      ...(clauseScoped ? { clauseScoped: true } : {}),
     };
   }
 
@@ -179,15 +166,13 @@ WordEnd = &(WS / EOF)
 NumberBodyEnd = &(Ending / PluralSuffix EOF / WS / EOF)
 
 Word
-  = spanClose
-  / writingSpan
+  = writingSpan
   / freeNumber
   / hook
   / prefixedWord
   / citation
 
 // Independent probes for the ambiguity checker (not used by ordinary parse).
-probe_spanClose = word:spanClose EOF { return word; }
 probe_writingSpan = word:writingSpan EOF { return word; }
 probe_freeNumber = word:freeNumber EOF { return word; }
 probe_hook = word:hook EOF { return word; }
@@ -251,55 +236,25 @@ probe_prefixedJoin
       });
     }
 
-// ── Span closes (decision order step 1) ─────────────────────────────────────
-
-spanClose
-  = form:("xuxul" / "xuxur" / "xuxum") {
-      return makeWord(form, {
-        family: { kind: "spanClose", flavor: spanCloseFlavor(form) },
-      });
-    }
-
-// ── Writing bracket atoms (`[]` `{}` `()`; `<>` is foreign / opaque) ────────
+// ── Writing bracket atoms (`[]` `()`; `<>` is foreign / opaque) ────────
 
 writingSpan
-  = pos:Pos marks:WritingMarks? anaphor:AnaphorBracket WordEnd {
-      return makeWord(text(), {
-        pos,
-        ending: "r",
-        family: writingSpanFamily(anaphor.bracket, "=", marks, true),
-      });
-    }
-  / pos:Pos marks:WritingMarks? bracketed:BracketedPayload WordEnd {
+  = pos:Pos marks:WritingMarks? bracketed:BracketedPayload WordEnd
+    &{ return !(bracketed.bracket === "[" || bracketed.bracket === "(") || bracketed.payload.trim() !== "="; }
+    {
       const ending = marks && marks.includes("@") ? "n" : marks && marks.includes("~") ? "m" : "l";
       return makeWord(text(), {
         pos,
         ending,
-        family: writingSpanFamily(bracketed.bracket, bracketed.payload, marks, false),
-      });
-    }
-  // Clause-scoped (EDGE e): no close; the tokenizer ran the interior to the clause end.
-  / pos:Pos marks:WritingMarks? bracket:[[\u007b(] payload:$(.*) EOF {
-      const ending = marks && marks.includes("@") ? "n" : marks && marks.includes("~") ? "m" : "l";
-      return makeWord(text(), {
-        pos,
-        ending,
-        family: writingSpanFamily(bracket, payload.trim(), marks, false, true),
+        family: writingSpanFamily(bracketed.bracket, bracketed.payload, marks),
       });
     }
 
 WritingMarks
   = marks:("@" / "~")+ { return marks; }
 
-AnaphorBracket
-  = "[" "=" "]" { return { bracket: "[" }; }
-  / "\u007b" "=" "\u007d" { return { bracket: "\u007b" }; }
-  / "(" "=" ")" { return { bracket: "(" }; }
-  / "<" "=" ">" { return { bracket: "<" }; }
-
 BracketedPayload
   = "[" payload:SquareInner "]" { return { bracket: "[", payload }; }
-  / "\u007b" payload:CurlyInner "\u007d" { return { bracket: "\u007b", payload }; }
   / "(" payload:RoundInner ")" { return { bracket: "(", payload }; }
   / "<" payload:$((!">" .)*) ">" { return { bracket: "<", payload }; }
 
@@ -311,14 +266,6 @@ SquareChar
   = OpaqueIsland
   / "[" inner:SquareInner "]" { return "[" + inner + "]"; }
   / !"]" c:. { return c; }
-
-CurlyInner
-  = chars:CurlyChar* { return chars.join(""); }
-
-CurlyChar
-  = OpaqueIsland
-  / "\u007b" inner:CurlyInner "\u007d" { return "\u007b" + inner + "\u007d"; }
-  / !"\u007d" c:. { return c; }
 
 RoundInner
   = chars:RoundChar* { return chars.join(""); }
@@ -576,7 +523,6 @@ PrefixedBody
 
 xWord
   = RolePointer
-  / SpanOpen
   / RoleCompound
   / ValueCompound
   / LateralCompound
@@ -585,24 +531,8 @@ xWord
   / OrdinaryCompound
   / HeldPointer
 
-SpanOpen
-  = typeV:[aeou] "x" edgeV:[aeou] ending:Ending plural:PluralSuffix?
-    &{ return spanOpenLegal(edgeV, ending); }
-    WordEnd
-    {
-      return {
-        ending,
-        plural: !!plural,
-        family: xFamily("span", {
-          leftRoots: [],
-          typeVowel: typeV,
-          edgeVowel: edgeV,
-        }),
-      };
-    }
-
 // Role pointer: role vowel(s) + `x` + pointer vowel + **-r** (`zaxar`, pronouns.md#role-pointers).
-// The pointer vowel picks the event by position: `a` same, `o` other, `e` self. Pointer `u` is a span resume.
+// The pointer vowel picks the event by position: `a` same, `o` other, `e` self.
 RolePointer
   = roleV:("ae" / "ao" / "oe" / "ua" / "ue" / "uo" / "a" / "e" / "u" / "o") "x" pointerV:[aeo] "r" plural:PluralSuffix? WordEnd {
       return {
@@ -785,12 +715,7 @@ plainContent
   = "<" payload:ForeignPayload ">" ending:Ending {
       return {
         ending,
-        family: { kind: "foreign", payload, opaque: false },
-      };
-    }
-  / "<" payload:ForeignPayload ">" {
-      return {
-        family: { kind: "foreign", payload, opaque: true },
+        family: { kind: "foreign", payload },
       };
     }
   / root:ContentRoot ending:Ending plural:PluralSuffix? {
@@ -812,17 +737,11 @@ citation
         family: body.family,
       });
     }
-  / marks:WritingMarks? anaphor:AngleAnaphor WordEnd {
-      return makeWord(text(), {
-        ending: "r",
-        family: writingSpanFamily("<", "=", marks, true),
-      });
-    }
   / marks:WritingMarks? "<" payload:ForeignPayload ">" WordEnd {
       const ending = marks && marks.includes("@") ? "n" : marks && marks.includes("~") ? "m" : "l";
       return makeWord(text(), {
         ending,
-        family: writingSpanFamily("<", payload, marks, false),
+        family: writingSpanFamily("<", payload, marks),
       });
     }
   / root:ContentRoot ending:Ending plural:PluralSuffix? {
@@ -839,9 +758,6 @@ citation
         family: body.family,
       });
     }
-
-AngleAnaphor
-  = "<" "=" ">" { return true; }
 
 // ── Lexical primitives ──────────────────────────────────────────────────────
 

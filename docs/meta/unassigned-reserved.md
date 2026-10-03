@@ -138,7 +138,7 @@ Source: [roles.md](../grammar/roles.md), [x-compounds.md](../grammar/x-compounds
 |------|--------|
 | PoS `/v/` / `/h/` / `/w/` on role compounds | Undefined — prefer `/z/` `/d/` `/b/`; `/ɡ/` optional |
 | [Role pointers](../grammar/pronouns.md#role-pointers) on `/v/` / `/ɡ/` / `/h/` / `/w/` / `/y/` / `/x/` | Undefined (rejected by the parser; D-24) — for *does so* / *such*, use whole-stem **-r**; to call or return to someone, name the stem |
-| Pointer vowel **`u`** | Not a pointer: after one role vowel, vowel **`x`** **`u`** + **-r** is a [span resume](../grammar/spans.md#endings) |
+| Pointer vowel **`u`** | Not a pointer: after one role vowel, vowel **`x`** **`u`** + **-r** is an ordinary vowel-letter compound |
 
 ## Pronouns and plurality
 
@@ -195,9 +195,9 @@ Source: [speech-moves.md](../grammar/speech-moves.md#speech-act), [questions.md]
 
 Source: [spans.md](../grammar/spans.md), [x-compounds.md](../grammar/x-compounds.md)
 
-- EDGE + **-r** combinations other than EDGE **`u`** (anaphor **-r** always uses EDGE **`u`** in the spoken template; other EDGE + **-r** silhouettes are ordinary compounds, not span opens)
-- An aside open under any role but `/th/` (`dexal`, `d(…)`); a cite, mention or opaque open under `/th/` (`th[…]`, `thaxol`); any span open under `/w/`. The parser rejects them (`spanSlot`); an aside **resume** (`dexur`) may still recast the aside. An `/x/` cite, mention or opaque is a topic word (`x@[onodan alahen]`, `x{odoga}`, `x@<Sam>`)
-- Unassigned **`VOWEL x VOWEL`** silhouettes that are not taught span opens/closes — including **`xuxun`** (`/x/` + **`u` × `u`** + proper **-n**) — ordinary compounds / [phrasal names](../grammar/word-endings.md#phrasal-proper-names), not fences
+- An aside under any role but `/th/` (`d(…)`); a cite or opaque under `/th/` (`th[…]`); any span under `/w/`. The parser rejects them (`spanSlot`). An `/x/` cite or opaque is a topic word (`x@[onodan alahen]`, `x@<Sam>`)
+- A span in a `/v/` slot (`v[vazadal]`) has no resume pronoun
+- **`VOWEL x VOWEL`** silhouettes — including **`xuxun`** (`/x/` + **`u` × `u`** + proper **-n**) and the shapes the spoken span once used (`daxal`, `xuxul`, `daxur`) — are ordinary compounds / [phrasal names](../grammar/word-endings.md#phrasal-proper-names), not fences
 
 ## Values — later dimensions
 

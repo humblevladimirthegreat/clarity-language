@@ -43,7 +43,7 @@ import {
   type GlossNode,
   type WordBrackets,
 } from "./gloss-structure.js";
-import { toneMarkLength } from "./span-scan.js";
+import { scanChunks, toneMarkLength } from "./span-scan.js";
 import { parseWithTables } from "./parse-core.js";
 import { isDigitlessNumberBlank, ordinalPronounPlace } from "./resolve.js";
 import { parseWords, WordParseError } from "./word.js";
@@ -302,20 +302,6 @@ export const ROLE_VOWEL: Record<string, string> = {
 /** Role pointer vowel: which event the pointer reads (pronouns.md#role-pointers). */
 export const POINTER_VOWEL: Record<string, string> = { a: "same", o: "other", e: "self" };
 
-const SPAN_TYPE: Record<string, string> = {
-  a: "cite",
-  e: "aside",
-  o: "mention",
-  u: "opaque",
-};
-
-const SPAN_EDGE: Record<string, string> = {
-  a: "multi",
-  e: "clause",
-  o: "atomic",
-  u: "empty",
-};
-
 const CARDINALS = [
   "zero",
   "one",
@@ -347,8 +333,6 @@ export type MorphGlossContext = {
   /** The job the parser gave this hook (hooks.md); absent when the line does not parse. */
   hookJob?: HookJob;
   restrictorListed?: boolean;
-  /** Spoken mention interior (TYPE **o**): gloss the surface, not the lemma. */
-  passThrough?: boolean;
   /** `/v/` join-shaped form used as the head of a following dependent sentence. */
   dependentVerb?: boolean;
   /** Join closing no items (shared `/ɡ/` allowed): `zal` *none*, `zual` *everything*. */
@@ -412,7 +396,6 @@ export function morphGlossFor(
   tables: ClassifyTables,
   ctx: MorphGlossContext = {},
 ): string {
-  if (ctx.passThrough) return word.raw;
   // A short resume's stem is not a lexicon root; its antecedent supplies the sense.
   if (word.reading === "unknown" && !word.overlay && word.family.kind === "content" && !ctx.antecedent) {
     throw new UnknownWordError(word.raw);
@@ -420,7 +403,7 @@ export function morphGlossFor(
   const body = senseLabel(word, tables, ctx);
   if (word.family.kind === "hook") return body;
   const prefix =
-    word.gl ? "gl" : word.pos ? word.pos : word.family.kind === "spanClose" ? "x" : "";
+    word.gl ? "gl" : (word.pos ?? "");
   if (!prefix) return body;
   return `${prefix}-${body}`;
 }
@@ -435,29 +418,27 @@ export function morphGlossLine(text: string, tables: ClassifyTables, options: Mo
   const normalized = normalizeAgazan(text);
   const finalMark = text.trim().match(/[?!]$/)?.[0];
   const { words, ctxByIndex, parsed } = analyzeLine(normalized, tables, options);
-  const carets: number[] = [];
+  const braces: number[] = [];
   /** Sentence mark after word index (`.` / `?` / `!`). */
   const marks = new Map<number, string>();
   /** Tone mark before word index: attached (`!`) or free-standing (its own `! | ` slot). */
   const tones = new Map<number, string>();
-  /** Tone mark before an island's opening `^`, by the island's first word index: colors the `SCOPE[…]`. */
+  /** Tone mark before an island's opening `{`, by the island's first word index: colors the `SCOPE[…]`. */
   const islandTones = new Map<number, string>();
   let wordIdx = 0;
-  let islandOpen = false;
-  for (let chunk of normalized.match(/\S+/g) ?? []) {
+  for (let { text: chunk } of scanChunks(normalized)) {
     const tone = toneMarkLength(chunk, 0);
     if (tone) {
       tones.set(wordIdx, chunk.length === tone ? `${chunk} | ` : chunk.slice(0, tone));
       chunk = chunk.slice(tone);
       if (!chunk) continue;
     }
-    if (chunk === "^") {
-      if (!islandOpen && tones.has(wordIdx)) {
+    if (chunk === "{" || chunk === "}") {
+      if (chunk === "{" && tones.has(wordIdx)) {
         islandTones.set(wordIdx, tones.get(wordIdx)!);
         tones.delete(wordIdx);
       }
-      islandOpen = !islandOpen;
-      carets.push(wordIdx);
+      braces.push(wordIdx);
       continue;
     }
     const mark = chunk.match(/[.?!]$/)?.[0];
@@ -465,7 +446,7 @@ export function morphGlossLine(text: string, tables: ClassifyTables, options: Mo
     if (peeled) wordIdx += 1;
     if (mark && wordIdx > 0) marks.set(wordIdx - 1, mark);
   }
-  const tree = (parsed && buildGlossTree(parsed, words)) || tokenGlossTree(words, carets);
+  const tree = (parsed && buildGlossTree(parsed, words)) || tokenGlossTree(words, braces);
   markIslandTones(tree, islandTones);
   const leaf = (node: { i: number; named?: boolean }) => {
     const gloss = (tones.get(node.i) ?? "") + wordGloss(words[node.i]!, tables, ctxByIndex[node.i] ?? {});
@@ -506,7 +487,6 @@ function markIslandTones(nodes: GlossNode[], islandTones: Map<number, string>): 
 function firstLeafIndex(node: GlossNode): number | undefined {
   if (node.t === "leaf") return node.i;
   if (node.t !== "group") return undefined;
-  if (node.from !== undefined) return node.from;
   for (const kid of node.kids) {
     const i = firstLeafIndex(kid);
     if (i !== undefined) return i;
@@ -518,7 +498,6 @@ function firstLeafIndex(node: GlossNode): number | undefined {
 function lastLeafIndex(node: GlossNode): number | undefined {
   if (node.t === "leaf") return node.i;
   if (node.t !== "group") return undefined;
-  if (node.to !== undefined) return node.to;
   for (let k = node.kids.length - 1; k >= 0; k--) {
     const found = lastLeafIndex(node.kids[k]!);
     if (found !== undefined) return found;
@@ -536,14 +515,14 @@ export function morphGlossWords(text: string, tables: ClassifyTables): { raw: st
 export function morphGlossBrackets(text: string, tables: ClassifyTables): WordBrackets[] {
   const normalized = normalizeAgazan(text);
   const { words, parsed } = analyzeLine(normalized, tables);
-  const carets: number[] = [];
+  const braces: number[] = [];
   let wordIdx = 0;
-  for (const raw of normalized.match(/\S+/g) ?? []) {
+  for (const { text: raw } of scanChunks(normalized)) {
     const chunk = raw.slice(toneMarkLength(raw, 0));
-    if (chunk === "^") carets.push(wordIdx);
+    if (chunk === "{" || chunk === "}") braces.push(wordIdx);
     else if (chunk.replace(/[.?!]$/, "")) wordIdx += 1;
   }
-  const tree = (parsed && buildGlossTree(parsed, words)) || tokenGlossTree(words, carets);
+  const tree = (parsed && buildGlossTree(parsed, words)) || tokenGlossTree(words, braces);
   return bracketsByWord(tree, words.length);
 }
 
@@ -552,7 +531,7 @@ export function quotePayload(payload: string): string {
   return `"${payload.replace(/"/g, '""')}"`;
 }
 
-const WRITTEN_SPAN: Record<string, string> = { "[": "CITE", "{": "MENTION", "(": "ASIDE", "<": "OPAQUE" };
+const WRITTEN_SPAN: Record<string, string> = { "[": "CITE", "(": "ASIDE", "<": "OPAQUE" };
 
 /** One leaf of the morph line; written spans render as a labeled bracket. */
 /** Word indexes of scale numbers: a digitless `+` right after a rank join ([comparatives § Amount scale](../../docs/grammar/comparatives.md#amount-scale)). */
@@ -606,14 +585,13 @@ function fractionGloss(word: LexWord): string {
 }
 
 function wordGloss(word: LexWord, tables: ClassifyTables, ctx: MorphGlossContext): string {
-  if (ctx.passThrough) return quotePayload(word.raw);
   if (ctx.fraction) return fractionGloss(word);
   if (ctx.scale && word.family.kind === "number" && word.pos && SCALE_GLOSS[word.pos]) {
     const about = word.family.writingEndingMark === "~" || word.ending === "m" ? ".about" : "";
     return `${word.pos}-${SCALE_GLOSS[word.pos]}${about}`;
   }
   const family = word.family;
-  if (family.kind !== "writingSpan" || family.anaphor) return morphGlossFor(word, tables, ctx);
+  if (family.kind !== "writingSpan") return morphGlossFor(word, tables, ctx);
   let payload = family.payload.trim();
   // Written editorial `#]` / close-all `|]` / both `#|]` (spans.md § Close).
   const closeMatch = payload.match(/(?:^|\s|(?<=[a-z]))(#?\|?)$/);
@@ -625,7 +603,7 @@ function wordGloss(word: LexWord, tables: ClassifyTables, ctx: MorphGlossContext
   const prefix = word.gl ? "gl-" : word.pos ? `${word.pos}-` : "";
   let inner = "";
   if (payload) {
-    if (family.bracket === "{" || family.bracket === "<") inner = quotePayload(payload);
+    if (family.bracket === "<") inner = quotePayload(payload);
     else {
       try {
         inner = unwrapLoneBracket(morphGlossLine(payload, tables));
@@ -832,9 +810,12 @@ function stripBlockquote(line: string): string {
   return line.replace(/^[ \t]*>[ \t]?/, "");
 }
 
+/** Agazan in a backtick span, or in `<code>` with `<` / `>` as entities (a raw `<…>` span is a Vue tag in Markdown). */
 function unwrapCode(text: string): string | null {
   const m = text.match(/^`([^`]+)`\.?$/);
-  return m ? m[1]! : null;
+  if (m) return m[1]!;
+  const html = text.match(/^<code>([^<]+)<\/code>\.?$/);
+  return html ? html[1]!.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&") : null;
 }
 
 function analyzeLine(
@@ -868,9 +849,8 @@ function analyzeLine(
   const kindIndexes = citation ? new Set<number>() : kindReferenceIndexes(parsed);
   const scaleWords = scaleIndexes(parsed);
   const hookJobs = parsed ? hookJobsByPosition(parsed) : new Map<number, HookJob>();
-  const passThrough = mentionPassThroughFlags(words);
   const ctxByIndex = words.map((word, index) => {
-    const ctx = contextFor(word, index, words, parsed?.resolve, hookJobs, passThrough[index], dependentVerbIndexes.has(index));
+    const ctx = contextFor(word, index, words, parsed?.resolve, hookJobs, dependentVerbIndexes.has(index));
     if (standaloneIndexes.has(index)) ctx.standaloneJoin = true;
     if (kindIndexes.has(index)) ctx.kindReference = true;
     if (scaleWords.has(index)) ctx.scale = true;
@@ -912,51 +892,16 @@ function kindReferenceIndexes(parsed: ParseResult | undefined): Set<number> {
   return out;
 }
 
-/** Spoken TYPE **o** interiors (atomic next token, or until the matching close). */
-function mentionPassThroughFlags(words: LexWord[]): boolean[] {
-  const flags = words.map(() => false);
-  const stack: string[] = [];
-  let atomicMentionNext = false;
-  for (let i = 0; i < words.length; i++) {
-    if (atomicMentionNext) {
-      flags[i] = true;
-      atomicMentionNext = false;
-      continue;
-    }
-    const family = words[i]!.family;
-    if (family.kind === "spanClose") {
-      stack.pop();
-      continue;
-    }
-    if (family.kind === "x" && family.xFamily === "span") {
-      const type = family.typeVowel ?? "";
-      const edge = family.edgeVowel ?? "";
-      if (stack.includes("o") || stack.includes("u")) flags[i] = true;
-      if (edge === "u") continue;
-      if (edge === "o") {
-        if (type === "o" || type === "u") atomicMentionNext = true;
-        continue;
-      }
-      stack.push(type);
-      continue;
-    }
-    if (stack.includes("o") || stack.includes("u")) flags[i] = true;
-  }
-  return flags;
-}
-
 function contextFor(
   word: LexWord,
   index: number,
   words: LexWord[],
   resolve: ResolveInfo | undefined,
   hookJobs: Map<number, HookJob>,
-  passThrough?: boolean,
   dependentVerb = false,
 ): MorphGlossContext {
   const ctx: MorphGlossContext = {};
   if (dependentVerb) ctx.dependentVerb = true;
-  if (passThrough) ctx.passThrough = true;
   if (resolve) {
     const bind = bindFor(word, resolve.anaphors);
     if (bind?.antecedent) ctx.antecedent = rootAntecedent(bind.antecedent, resolve.anaphors);
@@ -1042,10 +987,6 @@ function sensePieces(
   switch (family.kind) {
     case "hook":
       return [hookLabel(family.form, ctx)];
-    case "spanClose":
-      if (family.flavor === "editorial") return ["span-close-editorial"];
-      if (family.flavor === "closeAll") return ["span-close-all"];
-      return ["span-close"];
     case "joinMarker":
       return [joinMarkerLabel(word, ctx)];
     case "number":
@@ -1402,13 +1343,6 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
   const family = word.family;
   if (family.kind !== "x") return [];
 
-  if (family.xFamily === "span") {
-    const type = SPAN_TYPE[family.typeVowel ?? ""] ?? family.typeVowel ?? "span";
-    if (word.ending === "r") return [`←${type}.spoken`];
-    const edge = SPAN_EDGE[family.edgeVowel ?? ""] ?? family.edgeVowel;
-    return edge ? [type, edge] : [type];
-  }
-
   if (family.xFamily === "role") {
     // A closed role-compound overlay (`thuxerenel` consent) glosses as its overlay label.
     if (word.overlay) return [overlayLabel(word.overlay)];
@@ -1535,14 +1469,7 @@ function writingSpanLabel(
 ): string {
   const family = word.family;
   if (family.kind !== "writingSpan") return "span";
-  if (family.anaphor) {
-    if (family.bracket === "[") return "←cite";
-    if (family.bracket === "(") return "←aside";
-    if (family.bracket === "{") return "←mention";
-    return "←opaque";
-  }
   const payload = family.payload;
-  if (family.bracket === "{") return payload;
   const stem = payload.endsWith("n") ? payload.slice(0, -1) : payload;
   if (HOUSE_CAST[stem] && payload.endsWith("n")) return HOUSE_CAST[stem]!;
   if (HOUSE_CAST[payload]) return HOUSE_CAST[payload]!;
@@ -1710,6 +1637,7 @@ export const MORPH_GLOSS_LABELS: readonly string[] = [
     ...Object.values(EMOTION_LOCUS),
     ...Object.values(EMOTION_MOTION),
     ...Object.values(WRITTEN_SPAN),
+    "MENTION",
     "ABIL",
     "SCOPE",
     "NAME",

@@ -4,7 +4,7 @@
   "description": "Agazan tooling — lexicon helpers and agent-facing docs",
   "type": "module",
   "scripts": {
-    "generate:word": "peggy --format es --dts --allowed-start-rules start,words,probe_spanClose,probe_writingSpan,probe_freeNumber,probe_hook,probe_prefixedWord,probe_citation,probe_prefixedX,probe_prefixedPlain,probe_prefixedJoin -o src/generated/word-parser.js src/parse/word.peggy",
+    "generate:word": "peggy --format es --dts --allowed-start-rules start,words,probe_writingSpan,probe_freeNumber,probe_hook,probe_prefixedWord,probe_citation,probe_prefixedX,probe_prefixedPlain,probe_prefixedJoin -o src/generated/word-parser.js src/parse/word.peggy",
     "build": "node scripts/build.mjs",
     "dev": "vitepress dev docs/grammar",
     "typecheck": "tsc --noEmit",

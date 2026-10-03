@@ -423,7 +423,7 @@ For English *too* / *also*, resume the action. `/v/` **-r** is *the same action 
 >
 > "Azawan sees a cat. Azawan sees a dog too."
 
-**Compare with:** English *that* pointing at a quoted title, proverb, or aside uses a [span resume](spans.md#endings), not content **-r**.
+**Compare with:** English *that* pointing at a quoted title, proverb, or aside uses a [role pointer](#role-pointers) (`duxar`, *that quote*), not content **-r**.
 
 ### Cross-role recast
 
@@ -531,7 +531,7 @@ English *now, about Azawan…*, *speaking of dogs…*, and *so, back to Azawan�
 | `xevavem` / `xavazem` | clear the topic ([linkers](dependents.md#sentence-linkers)) | *next* / *by the way* |
 
 1. **No topic at the start.** A conversation opens with none.
-2. **Introduce.** An `/x/` word on **-l**, **-m**, or **-n** that is not one of the six linkers makes its noun the topic. The noun keeps its ordinary ending, so the topic need not be a person or a name (`xodogal` *now, about a dog*). It takes the same adjectives and hooks as any noun (`xodogal em bazawan` *now, about Azawan's dog*), and it may stand alone as a whole sentence to announce a topic before saying anything about it. A [span](spans.md#topic-quotes) in this slot is the same job for a foreign name, a word as spelling, or a titled work (<code>x@&lt;Sam&gt;</code>, `x{odoga}`, `x@[onodan alahen]`).
+2. **Introduce.** An `/x/` word on **-l**, **-m**, or **-n** that is not one of the six linkers makes its noun the topic. The noun keeps its ordinary ending, so the topic need not be a person or a name (`xodogal` *now, about a dog*). It takes the same adjectives and hooks as any noun (`xodogal em bazawan` *now, about Azawan's dog*), and it may stand alone as a whole sentence to announce a topic before saying anything about it. A [span](spans.md#topic-quotes) in this slot is the same job for a foreign name, a word as spelling, or a titled work (<code>x@&lt;Sam&gt;</code>, `x@[onodan alahen]`, or a word as spelling, which takes the [mention](spans.md#mention) marker before it).
 3. **Return.** `/x/` + the whole stem of an earlier word + **-r** makes that thing the topic again.
 4. **Clear.** `xevavem` and `xavazem` each open a new frame. After either there is no topic until the next introduce or return.
 5. **Persist.** The topic holds until rule 2, 3, or 4 changes it. Clause joins, other linkers, and agenda numbering leave it alone. A goodbye ends the conversation and clears it.
@@ -607,7 +607,7 @@ Introduce, return, and clear each start a new **topic stretch**.
 | Whole-stem **-r** | no | It is the explicit way back (`xazawar`), so it reaches across stretches. |
 | [Tale](knowing.md#evidentiality) now | no | A story moves between characters without leaving the tale. |
 | Agenda numbering (`x#N`, outline depth) | no | Agenda items sit above topics; one item may hold several. |
-| Speech move, line of talk, span resume | no | They track the move and the line of talk, not people. |
+| Speech move, line of talk | no | They track the move and the line of talk, not people. |
 
 `xazawar` while Azawan is already the topic is still a topic change: it starts a new stretch with the same topic. That lets you clear a crowded count (*so, Azawan again*) without leaving the topic.
 

@@ -46,13 +46,6 @@ function classifyConflicts(surface: string, hits: ClassifyHit[]): AmbiguityConfl
   }));
 }
 
-function formalMorphSources(sources: string[]): boolean {
-  const set = new Set(sources);
-  // `xuxul` / `xuxur` / `xuxum` are span closes; the type-u/edge-u open twin is not a live reading.
-  if (set.has("spanClose") && set.has("prefixedWord")) return true;
-  return false;
-}
-
 function morphConflicts(surface: string): AmbiguityConflict[] {
   const hits = probeMorphWord(surface);
   const top = hits.filter((h) => !h.source.startsWith("body"));
@@ -64,7 +57,7 @@ function morphConflicts(surface: string): AmbiguityConflict[] {
   for (const hit of top) {
     distinctTop.set(morphSignature(hit.word), hit.source);
   }
-  if (distinctTop.size > 1 && !formalMorphSources([...distinctTop.values()])) {
+  if (distinctTop.size > 1) {
     conflicts.push({
       surface,
       stage: "morph",

@@ -170,19 +170,14 @@ describe("writing spans", () => {
     assert.equal(text, "quote `d~[zululon vababal]` here");
   });
 
-  it("leaves resume and opaque payloads", () => {
-    const { text } = rewriteMarkdown("`d[=]` and `d<sushi>` and `d@[Hamlet]`", map);
-    assert.equal(text, "`d[=]` and `d<sushi>` and `d@[Hamlet]`");
+  it("leaves opaque payloads", () => {
+    const { text } = rewriteMarkdown("`d<sushi>` and `d@[Hamlet]`", map);
+    assert.equal(text, "`d<sushi>` and `d@[Hamlet]`");
   });
 
   it("reties nested cite interiors and leaves the opaque island", () => {
     const { text } = rewriteMarkdown("`d[ vuwurul d<]> ]`", map);
     assert.equal(text, "`d[ voworol d<]> ]`");
-  });
-
-  it("reties spoken span interiors but not the open word", () => {
-    const { text } = rewriteMarkdown("`daxal zazawan xuxul`", map);
-    assert.equal(text, "`daxal zululon xuxul`");
   });
 
   it("does not rewrite HTML comments", () => {
@@ -295,11 +290,6 @@ describe("classification-gated retie", () => {
     assert.equal(text, "`zululon VERB.`");
   });
 
-  it("leaves a spoken opaque interior alone", () => {
-    const { text } = rewriteMarkdown("`zazawan duxal zazawan xuxul vawalal.`", map);
-    assert.equal(text, "`zululon duxal zazawan xuxul vawalal.`");
-  });
-
   it("reties HTML code bodies", () => {
     const { text } = rewriteMarkdown("see <code>zazawan d&lt;sushi&gt;</code> here", map);
     assert.equal(text, "see <code>zululon d&lt;sushi&gt;</code> here");
@@ -399,11 +389,10 @@ describe("English copies follow their Agazan", () => {
     assert.equal(text, "> `zalahen vawalal.`\n>\n> z-Alahen | v-walk\n>\n> \"Alahen walks.\"\n\n| *Alahen* | `alahen` |\n");
   });
 
-  it("respells a quoted payload in the morph line and the English", () => {
-    const input = "> `z{odoga} gamazam.`\n>\n> z-MENTION[\"odoga\"] | g-small\n>\n> \"The word “odoga” is small.\"\n";
+  it("leaves an opaque span's payload and its quoted copies alone", () => {
+    const input = "> `glelel z<odoga> gamazam.`\n>\n> [gl-MENTION | z-OPAQUE[\"odoga\"]] | g-small\n>\n> \"The word “odoga” is small.\"\n";
     const { text } = rewriteMarkdown(input, map);
-    assert.match(text, /MENTION\["uzugo"\]/);
-    assert.match(text, /“uzugo”/);
+    assert.equal(text, input);
   });
 
   it("does not touch names inside code or link targets", () => {
@@ -622,9 +611,9 @@ describe("source literals — one spelling per file", () => {
   });
 
   it("carries a word change into a literal the pass could not read", () => {
-    const source = 'segment("?! zazawan !!veyel ?^ hal ^.");\nexpect({ text: "veyel" });\n';
+    const source = 'segment("?! zazawan !!veyel ?{ hal }.");\nexpect({ text: "veyel" });\n';
     const { text } = rewriteSourceLiterals(source, "x.test.ts", ctxOf(mapOf(["eye", "uye"])));
-    assert.equal(text, 'segment("?! zazawan !!vuyel ?^ hal ^.");\nexpect({ text: "vuyel" });\n');
+    assert.equal(text, 'segment("?! zazawan !!vuyel ?{ hal }.");\nexpect({ text: "vuyel" });\n');
   });
 });
 
@@ -689,10 +678,10 @@ describe("source literals — fixtures, patterns and names", () => {
   });
 
   it("follows a cite's word into a lone literal (the cite's change carries its bracket)", () => {
-    const source = 'preview("d[zadagal zagadal]");\nassert.deepEqual(spoken, ["daxal", "zadagal", "zagadal", "xuxul"]);\n';
+    const source = 'preview("d[zadagal zagadal]");\nassert.deepEqual(spoken, ["zadagal", "zagadal"]);\n';
     assert.equal(
       rewriteSourceLiterals(source, "x.test.ts", ctx).text,
-      'preview("d[zadagal zagadul]");\nassert.deepEqual(spoken, ["daxal", "zadagal", "zagadul", "xuxul"]);\n',
+      'preview("d[zadagal zagadul]");\nassert.deepEqual(spoken, ["zadagal", "zagadul"]);\n',
     );
   });
 });

@@ -170,7 +170,7 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 
 Resume the handle like any name: its whole stem + **-r** (`zubugar`).
 
-**Compare with:** a [mention](spans.md#loans) packages the **word** (`z{ubuga}` = *the word “abogo”*). A foreign letter-name is a loan or opaque span (<code>z@&lt;FBI&gt;</code>).
+**Compare with:** a [mention](spans.md#mention) is the **word** (<code>glelel z&lt;ubuga&gt;</code> = *the word “abogo”*). A foreign letter-name is a loan or opaque span (<code>z@&lt;FBI&gt;</code>).
 
 ### Who does it: *student*, *singer*, *manager* {#agent-nouns}
 
@@ -430,7 +430,7 @@ English makes nouns for a part, a kind, a role, and a manner. Agazan has no sepa
 
 ### Case, deal, figure, board and other several-sense nouns {#sense-nouns}
 
-**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Exchange](relations.md#exchange) · [Between](relations.md#locative-relations) · [Number as verb](numbers.md#number-as-verb-by-marker) · [Resume span](spans.md#resume) · [Consent](sakes.md#consent) · [Joins](joins.md) · [Role letters](clause.md#role-letters)
+**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Exchange](relations.md#exchange) · [Between](relations.md#locative-relations) · [Number as verb](numbers.md#number-as-verb-by-marker) · [Role pointers](pronouns.md#role-pointers) · [Consent](sakes.md#consent) · [Joins](joins.md) · [Role letters](clause.md#role-letters)
 
 An English noun like *case* or *board* covers several jobs, and Agazan has a different word for each. Decide which job you mean first, then write that word. Where a job is a whole clause (*in that case*, *a deal*), the recipe is a clause, not a noun.
 
@@ -458,7 +458,7 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *campaign* | `zazawan vavadam huwem bavodel.` | struggles during a period |
 | *behavior* | `zuzegem` | the activity, or a manner adverb |
 | *population* | `zobelx gagum bagul` | people of the country |
-| *reference* (point back) | `d[=]` | the same span again |
+| *reference* (point back) | `duxar` | a role pointer to the last thing done to |
 | *principle* | `zumem` | a policy |
 | *furniture* | `zehahel zebedal zam` | chair, bed, and maybe more |
 | *emotion* / *feeling* (in general) | `zaholohahal` | the water of the heart |
@@ -1005,32 +1005,25 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 <a id="literal-content"></a>
 <a id="escape"></a>
 
-**Needs:** [Opaque and loan words](spans.md#loans) · [EDGE](spans.md#edge)
+**Needs:** [Opaque and loan words](spans.md#loans)
 
-When a span-marker word or a fence glyph (`[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `=` / `|` / `#` / `^`) or a [tone mark](speech-moves.md#tone-marks) (`!` / `?`) must appear **as content**, wrap that token in **atomic opaque**. Writing and speech use the same vehicle. The outer span’s wording is the opaque **interior** (the wrapper is packaging, not extra cited words).
+When a fence glyph (`[` / `]` / `(` / `)` / `<` / `>` / `{` / `}` / `=` / `|` / `#`) or a [tone mark](speech-moves.md#tone-marks) (`!` / `?`) must appear **as content**, wrap that token in an **opaque** `<…>` span. The outer span’s wording is the opaque **interior** (the wrapper is packaging, not extra cited words).
 
 ```agazan
 d[ varadal d<]> ]
-d[ d<xuxul> ]
 d[ d<|> ]
 d[ vezebel d<#> ]
 ```
 
-Speech for a fence **word**:
-
-```agazan
-daxal duxol xuxul xuxul
-```
-
 `d[ vezebel d<#> ]` is a whole cite whose last content character is `#` (a bare `#]` would be editorial close). A hyphen before a closer is ordinary content.
 
-Writing opaque `d<…>` closes on the first `>`. If the blob **contains** `>`, use the spoken opaque (EDGE **a** + **`xuxul`**):
+Opaque `d<…>` closes on the first `>`. If the blob **contains** `>`, write it as a cite instead, which closes on the first `]`:
 
 ```agazan
-duxal code > 1 xuxul
+d[code > 1]
 ```
 
-**For *ordinals*, use:** [number words](numbers.md) with `#`. Inside a span, `#` is an editorial closer only when it sits immediately before `]` / `}` / `)` / `>` / `|`. `|` is close-all.
+**For *ordinals*, use:** [number words](numbers.md) with `#`. Inside a span, `#` is an editorial closer only when it sits immediately before `]` / `)` / `>` / `|`. `|` is close-all.
 
 ### Role, title, address {#role-title-address}
 
@@ -1059,17 +1052,17 @@ These three English nouns each hide two jobs. *Role* is the function someone pla
 
 **Needs:** [Mention](spans.md#mention)
 
-To talk about a word, a phrase or a whole sentence as a thing in itself, hold it in a mention: the role letter, then curly braces. English *the word …*, *the phrase …* and *the sentence …* all use the same frame. The braces hold the Agazan interior, and the role letter still says what the mention does in the clause.
+To talk about a word, a phrase or a whole sentence as a thing in itself, use a mention: the marker **`glelel`**, then the span. English *the word …*, *the phrase …* and *the sentence …* all use the same frame. The span holds the Agazan interior, and its role letter still says what the mention does in the clause.
 
-> `z{odoga} gamazam.`
+> <code>glelel z&lt;odoga&gt; gamazam.</code>
 >
-> z-MENTION["odoga"] | g-small
+> [gl-MENTION | z-OPAQUE["odoga"]] | g-small
 >
 > "The word “odoga” is small."
 
-> `z{zalahen vezebel} gamazam.`
+> <code>glelel z&lt;zalahen vezebel&gt; gamazam.</code>
 >
-> z-MENTION["zalahen vezebel"] | g-small
+> [gl-MENTION | z-OPAQUE["zalahen vezebel"]] | g-small
 >
 > "The sentence “zalahen vezebel” is small."
 
@@ -1283,23 +1276,25 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 ::: details Show answer
 <code>zazawan d[ varadal d&lt;]&gt; ] vezebel.</code>
+
+z-Azawan | d-CITE[v-write | d-OPAQUE["]"]] | v-tell
 :::
 
-**2.** *Ahaben said “code > 1.”* (spoken opaque, because a writing angle-bracket fence would close on the first greater-than)
+**2.** *Ahaben said “code > 1.”* (a cite, because an angle-bracket fence would close on the first greater-than)
 
 ::: details Show answer
-`zahaben duxal code > 1 xuxul vezebel.`
+`zahaben d[code > 1] vezebel.`
 
-z-Ahaben | d-OPAQUE.multi["code" | ">" | "1"] | v-tell
+z-Ahaben | d-CITE["code > 1"] | v-tell
 :::
 
 #### Agazan → English {#people-literal-agazan-to-english}
 
-**1.** `zazawan daxal duxol xuxul xuxul vezebel.`
+**1.** <code>zazawan d[ d&lt;xuxul&gt; ] vezebel.</code>
 
 ::: details Show answer
 
-z-Azawan | d-CITE.multi[d-OPAQUE.atomic["xuxul"]] | v-tell
+z-Azawan | d-CITE[d-OPAQUE["xuxul"]] | v-tell
 
 *Azawan said “xuxul.”*
 :::

@@ -237,7 +237,7 @@ export function lexiconContentRoots(
     case "content":
       return family.roots;
     case "x":
-      if (family.xFamily === "span" || family.xFamily === "numeric") {
+      if (family.xFamily === "numeric") {
         return [];
       }
       if (family.xFamily === "role" && family.rightRoots?.length) {
@@ -633,8 +633,9 @@ const CLASSIFY_RULES: ClassifyRule[] = [
       const senseForm = overlaySenseForm(word);
       if (!senseForm || !word.pos) return undefined;
       const row = tables.overlays.get(overlayKey(word.pos, senseForm));
-      // Sake overlays register hosts for `x`+vowel sake words; the bare spelling is ordinary.
-      if (!row || row.kind === "sake") return undefined;
+      // Sake overlays register hosts for `x`+vowel sake words, and the mention marker reads only before a span
+      // (`markMentions`); the bare spelling is ordinary.
+      if (!row || row.kind === "sake" || row.kind === "mention") return undefined;
       return { ...word, overlay: overlayFromRow(row), reading: overlayReading(row) };
     },
   },
@@ -777,8 +778,21 @@ export function missingAbstractSense(word: MorphWord, tables: ClassifyTables): s
   return undefined;
 }
 
+/**
+ * The mention marker (spans.md#mention): a `gl-` word right before a written span, spelled as the 🔤 root
+ * on **-l** (a word or phrase) or **-n** (a name-string). Anywhere else the same spelling is the ordinary adjective.
+ */
+export function markMentions(words: LexWord[], tables: ClassifyTables): LexWord[] {
+  return words.map((word, i) => {
+    if (!word.gl || words[i + 1]?.family.kind !== "writingSpan") return word;
+    const senseForm = overlaySenseForm(word);
+    const row = senseForm ? tables.overlays.get(overlayKey("g", senseForm)) : undefined;
+    return row?.kind === "mention" ? { ...word, overlay: overlayFromRow(row), reading: "mention" } : word;
+  });
+}
+
 export function classifyAll(words: MorphWord[], tables: ClassifyTables): LexWord[] {
-  return words.map((word, at) => ({ ...classify(word, tables), at }));
+  return markMentions(words.map((word, at) => ({ ...classify(word, tables), at })), tables);
 }
 
 /** Independent classify sources that apply (ignores first-match short-circuit). */

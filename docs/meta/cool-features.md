@@ -203,12 +203,12 @@ You can learn the actual words and compound process here: [https://main.d2xds94z
 
 Also related, if you’ve been in a mall you might have been confused as to whether an up arrow ⬆️means ahead or up a level. Canonically in my language, the ⬆️icon means ahead and ⏫means up a level.
 
-### Verbal Span Markers
+### Span Markers
 
 r/ClarityLanguage has different types of quotation:
 
 * \[cite\]: attributed speech / cited wording (including title strings and proverbs)  
-* {mention}: the word or form itself (the word/phrase X)  
+* mention: the word or form itself (the word/phrase X), marked by a word before the span  
 * \<opaque\>: used for foreign words (including code)  
 * (aside): a digression, parenthetical.
 
@@ -236,7 +236,7 @@ You can refer to previous spans as a pronoun:
 
 \*\*John said that?\!*\*\**
 
-The span openers and closers can be pronounced if needed for disambiguation. Pronouncing span closers aren’t needed if the span is a single word or lasts until the end of the sentence because the span opener indicates the scope. You can read the draft documentation here:  
+Spans are a written form: read aloud, you say the words inside. Braces `{ }` mark scope islands instead. You can read the draft documentation here:  
 https://main.d2xds94zsgwptg.amplifyapp.com/grammar/spans.html
 
 ### Value Judgments Made Explicit (draft)

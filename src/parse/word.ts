@@ -25,52 +25,9 @@ export function parseWord(input: string): MorphWord {
   }
 }
 
-function opaqueBlob(raw: string): MorphWord {
-  return { raw, family: { kind: "foreign", payload: raw, opaque: true } };
-}
-
-function isOpaqueSpanOpen(word: MorphWord): word is MorphWord & {
-  family: Extract<MorphWord["family"], { kind: "x" }>;
-} {
-  return word.family.kind === "x" && word.family.xFamily === "span" && word.family.typeVowel === "u";
-}
-
-function isSpanCloseToken(text: string): boolean {
-  try {
-    return parseWord(text).family.kind === "spanClose";
-  } catch {
-    return false;
-  }
-}
-
 /** Parse a pre-segmented word list (writing spans already one token). */
 export function parseWordStream(tokens: string[]): MorphWord[] {
-  const out: MorphWord[] = [];
-  for (let i = 0; i < tokens.length; i++) {
-    const token = tokens[i]!;
-    const word = parseWord(token);
-    out.push(word);
-    if (!isOpaqueSpanOpen(word)) continue;
-    const edge = word.family.edgeVowel;
-    if (edge === "o") {
-      i += 1;
-      const blob = tokens[i];
-      if (blob === undefined) {
-        throw new Error(`Opaque atomic span \`${token}\` needs an interior token`);
-      }
-      out.push(opaqueBlob(blob));
-      continue;
-    }
-    if (edge === "a") {
-      i += 1;
-      while (i < tokens.length && !isSpanCloseToken(tokens[i]!)) {
-        out.push(opaqueBlob(tokens[i]!));
-        i += 1;
-      }
-      if (i < tokens.length) out.push(parseWord(tokens[i]!));
-    }
-  }
-  return out;
+  return tokens.map((token) => parseWord(token));
 }
 
 /** Parse words in an utterance (writing spans may contain spaces). */
@@ -79,7 +36,6 @@ export function parseWords(input: string): MorphWord[] {
 }
 
 const TOP_PROBES = [
-  "probe_spanClose",
   "probe_writingSpan",
   "probe_freeNumber",
   "probe_hook",

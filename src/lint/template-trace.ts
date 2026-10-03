@@ -162,7 +162,7 @@ export function traceTemplate(text: string, tables: ClassifyTables): string[] {
   throw new Error("no filling of the template's slots parses");
 }
 
-const FRAGMENT_BEFORE = ["", "zazawan", "daxal zazawan", "doxal vowogal", "daxal daxal zazawan", "doxal doxal vowogal"];
+const FRAGMENT_BEFORE = ["", "zazawan", "zazawan vowogal"];
 const FRAGMENT_AFTER = ["", "zazawan", "vowogal"];
 
 /** Constructions a fragment exercises: the fragment with context supplied before and after. */

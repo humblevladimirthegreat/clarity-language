@@ -1,4 +1,4 @@
-import { classify, type ClassifyTables } from "./classify.js";
+import { classify, markMentions, type ClassifyTables } from "./classify.js";
 import { morphGlossBrackets, senseLabel } from "./morph-gloss.js";
 import type { WordBrackets } from "./gloss-structure.js";
 import { visitResult, type Visitor } from "./ast-walk.js";
@@ -14,6 +14,7 @@ import type {
   SharedRecord,
   SharedRole,
 } from "./types.js";
+import { scanChunks } from "./span-scan.js";
 import { parseWord, WordParseError } from "./word.js";
 
 export type InspectError = {
@@ -33,7 +34,7 @@ export type InspectRelated = {
 };
 
 export type InspectConstruction = {
-  kind: "join" | "span" | "island";
+  kind: "join" | "island";
   label: string;
   tokenIndices: number[];
   triggerIndices: number[];
@@ -71,7 +72,7 @@ export type InspectPunctToken = {
 
 export type InspectIslandToken = {
   kind: "island";
-  raw: "^";
+  raw: "{" | "}";
   start: number;
   end: number;
 };
@@ -240,13 +241,9 @@ function familyChips(family: MorphWordFamily): string[] {
       if (family.rightRoots?.length) chips.push(`right ${family.rightRoots.join("+")}`);
       if (family.roleVowel) chips.push(`role ${family.roleVowel}`);
       if (family.stanceVowel) chips.push(`stance ${family.stanceVowel}`);
-      if (family.typeVowel) chips.push(`type ${family.typeVowel}`);
-      if (family.edgeVowel) chips.push(`edge ${family.edgeVowel}`);
       if (family.numberStem) chips.push(`num ${family.numberStem.marker}`);
       return chips;
     }
-    case "spanClose":
-      return [`span close ${family.flavor}`];
     case "hook":
       return [`hook ${family.form}`];
     case "hookCompound":
@@ -255,10 +252,10 @@ function familyChips(family: MorphWordFamily): string[] {
       return [`join ${family.series}`];
     case "writingSpan": {
       const marks = family.marks.length ? family.marks.join("") : "";
-      return [`writing ${family.bracket}${marks}${family.anaphor ? "=" : ""}`];
+      return [`writing ${family.bracket}${marks}`];
     }
     case "foreign":
-      return [family.opaque ? "opaque" : "foreign", family.payload];
+      return ["foreign", family.payload];
     default:
       return [];
   }
@@ -316,8 +313,6 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
     }
     if (family.roleVowel) rows.push({ label: "role vowel", value: family.roleVowel });
     if (family.stanceVowel) rows.push({ label: "stance", value: family.stanceVowel });
-    if (family.typeVowel) rows.push({ label: "span type", value: family.typeVowel });
-    if (family.edgeVowel) rows.push({ label: "span edge", value: family.edgeVowel });
   } else if (family.kind === "number") {
     rows.push({ label: "marker", value: String(family.stem.marker) });
     if (family.stem.digitlessExp) rows.push({ label: "exponent", value: family.stem.digitlessExp });
@@ -331,10 +326,8 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
       label: word.reading === "standIn" || word.reading === "standInNamed" ? "stand-in" : "series",
       value: family.series,
     });
-  } else if (family.kind === "spanClose") {
-    rows.push({ label: "close", value: family.flavor });
   } else if (family.kind === "foreign") {
-    rows.push({ label: family.opaque ? "opaque" : "foreign", value: family.payload });
+    rows.push({ label: "foreign", value: family.payload });
   } else if (family.kind === "writingSpan") {
     rows.push({ label: "payload", value: family.payload });
   }
@@ -380,7 +373,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   if (family.kind === "x" && (family.xFamily === "pointer" || family.pointerVowel)) {
     return { line: "role pointer", href: "pronouns.html#role-pointers" };
   }
-  if (family.kind === "spanClose" || (family.kind === "x" && family.xFamily === "span")) {
+  if (family.kind === "writingSpan") {
     return { line: "span fence", href: "spans.html" };
   }
   if (family.kind === "x" && family.xFamily === "numeric") {
@@ -507,8 +500,6 @@ function constructionVisitor(
     word(word, slot) {
       const idx = takeWord(cursor, word);
       pushIndex(top().indices, idx);
-      if (slot === "spanOpen") top().open = idx;
-      if (slot === "spanClose") top().close = idx;
     },
     join(join) {
       const idx = takeWord(cursor, join);
@@ -517,7 +508,7 @@ function constructionVisitor(
       top().joins.push(join);
     },
     enter(node) {
-      if (node.kind === "np" || node.kind === "g" || node.kind === "vp" || node.kind === "clauseCoord" || node.kind === "span") {
+      if (node.kind === "np" || node.kind === "g" || node.kind === "vp" || node.kind === "clauseCoord") {
         stack.push(newFrame());
       }
       if (node.kind === "island") {
@@ -538,14 +529,6 @@ function constructionVisitor(
             triggerIndices: frame.triggers,
           });
         }
-      } else if (node.kind === "span") {
-        const frame = close();
-        constructions.push({
-          kind: "span",
-          label: "span fence",
-          tokenIndices: frame.indices,
-          triggerIndices: [frame.open, frame.close].filter((i): i is number => i !== undefined),
-        });
       } else if (node.kind === "island") {
         const end = takeCaret(cursor);
         pushIndex(top().indices, end);
@@ -600,19 +583,6 @@ function attachRelated(
   }
 
   for (const group of constructions) {
-    if (group.kind === "span") {
-      const [open, close] = group.triggerIndices;
-      if (open !== undefined && close !== undefined) {
-        const openTok = tokens[open];
-        const closeTok = tokens[close];
-        if (openTok?.kind === "word" && closeTok) {
-          addRelated(openTok, { label: "span close", raw: closeTok.raw, tokenIndex: close });
-        }
-        if (closeTok?.kind === "word" && openTok) {
-          addRelated(closeTok, { label: "span open", raw: openTok.raw, tokenIndex: open });
-        }
-      }
-    }
     if (group.kind === "join") {
       for (const idx of group.tokenIndices) {
         const token = tokens[idx];
@@ -654,17 +624,13 @@ function constructionsFromParse(
 /** Per-word inspect stream. Sentence AST is optional; word cards do not require it. */
 export function inspectText(text: string, tables: ClassifyTables): InspectResult {
   const tokens: InspectToken[] = [];
-  const re = /\S+/g;
-  let match: RegExpExecArray | null;
   let allWordsOk = true;
   let wordCount = 0;
 
-  while ((match = re.exec(text)) !== null) {
-    const chunk = match[0]!;
-    const chunkStart = match.index;
+  for (const { text: chunk, start: chunkStart } of scanChunks(text)) {
 
-    if (chunk === "^") {
-      tokens.push({ kind: "island", raw: "^", start: chunkStart, end: chunkStart + 1 });
+    if (chunk === "{" || chunk === "}") {
+      tokens.push({ kind: "island", raw: chunk, start: chunkStart, end: chunkStart + 1 });
       continue;
     }
 
@@ -710,6 +676,15 @@ export function inspectText(text: string, tables: ClassifyTables): InspectResult
       });
     }
   }
+
+  const wordTokens = tokens.filter((token): token is InspectWordToken => token.kind === "word");
+  const marked = markMentions(wordTokens.map((token) => token.word), tables);
+  wordTokens.forEach((token, i) => {
+    if (marked[i] === token.word) return;
+    token.word = marked[i]!;
+    token.gloss = glossFor(token.word, tables);
+    token.chips = chipsFor(token.word);
+  });
 
   attachWhy(tokens, []);
   if (allWordsOk) attachBrackets(tokens, text, tables);

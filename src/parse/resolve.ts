@@ -18,24 +18,20 @@ import type {
   RoleVowel,
   SharedRecord,
   SharedRole,
-  SpanUnit,
   Unit,
   Utterance,
   VpCoord,
   WritingBracket,
 } from "./types.js";
 import { isDigitless, isRhetorical, KIND_SERIES, SCALE_SERIES } from "./series.js";
-import { isGreeting, isScaleShared, isSharedGPackage, SKIP_CONTENT, visitResult, type Visitor } from "./ast-walk.js";
+import { isGreeting, isScaleShared, isSharedGPackage, visitResult, type Visitor } from "./ast-walk.js";
 import { CLOSED } from "../closed-roots.js";
 import { topicEffect } from "./linkers.js";
 
 const ROLE_FRAME_POS = new Set(["z", "d", "b", "v", "g", "h", "th"]);
 
-type SpanType = "a" | "e" | "o" | "u";
-
 type Antecedent =
   | { kind: "content"; word: LexWord; stem: string }
-  | { kind: "span"; word: LexWord; typeVowel: SpanType }
   | { kind: "number"; word: LexWord; identity: string }
   | { kind: "roleFrame"; word: LexWord; stem: string };
 
@@ -54,9 +50,6 @@ type Introduced = { key: string; word: LexWord };
 /** What the talk is about now: the `/x/` word that set it, and the referent it names (pronouns.md#topic). */
 type Topic = { word: LexWord; key: string };
 
-/** The per-stretch state a quote (a cite span) starts afresh and gives back when it ends (pronouns.md#topic-quotes). */
-type Saved = Pick<Ctx, "antecedents" | "introduced" | "anchors" | "clauses" | "topic">;
-
 type Ctx = {
   antecedents: Antecedent[];
   /** Names in order of introduction in this topic stretch; ordinal pronouns index into this list. */
@@ -70,7 +63,7 @@ type Ctx = {
   /** This utterance is a goodbye, so its greeting introduces no one. */
   goodbye: boolean;
   anaphors: AnaphorBind[];
-  /** Predicates in order, one per clause body outside spans; role pointers pick from these. */
+  /** Predicates in order, one per clause body; role pointers pick from these. */
   anchors: Anchor[];
   clauses: OpenClause[];
   /** Referent identity of each word a pointer resolved to (a group has one key). */
@@ -94,13 +87,6 @@ export function numberMarkerIdentity(marker: NumberMarker): string {
   if (marker === "#_" || marker === "ruo") return "negativeLabel";
   if (marker === "+-" || marker === "rua") return "errorBound";
   return "label";
-}
-
-export function writingSpanType(bracket: WritingBracket): SpanType {
-  if (bracket === "[") return "a";
-  if (bracket === "(") return "e";
-  if (bracket === "{") return "o";
-  return "u";
 }
 
 /**
@@ -141,15 +127,6 @@ function roleStem(word: LexWord): string | undefined {
   return undefined;
 }
 
-function spanTypeOf(word: LexWord): SpanType | undefined {
-  const family = word.family;
-  if (family.kind === "x" && family.xFamily === "span" && family.typeVowel) {
-    return family.typeVowel;
-  }
-  if (family.kind === "writingSpan") return writingSpanType(family.bracket);
-  return undefined;
-}
-
 function isQuestionForce(word: LexWord | undefined): boolean {
   if (!word || word.pos !== "y" || word.family.kind !== "joinMarker") return false;
   return word.family.series === "o";
@@ -168,12 +145,6 @@ function classifySharedRole(join: LexWord, shared: CoordShared): SharedRole {
   if (KIND_SERIES.has(series)) return "kind";
   if (series === "a") return isSharedGPackage(shared) && shared.word.plural ? "collective" : "distribute";
   return "ordinary";
-}
-
-function isSpanAnaphor(word: LexWord): boolean {
-  const family = word.family;
-  if (family.kind === "writingSpan") return family.anaphor;
-  return family.kind === "x" && family.xFamily === "span" && word.ending === "r";
 }
 
 /** Digitless number **-r** (`g=+`): *some number*, or a fill-ask blank under question — not a resume (numbers.md#digitless). */
@@ -269,8 +240,8 @@ function isContentAnaphor(word: LexWord): boolean {
   if (word.reading === "sake") return false;
   if (word.reading === "restrictor" || word.reading === "overlay") return false;
   if (word.family.kind === "joinMarker") return false;
-  if (word.family.kind === "hook" || word.family.kind === "spanClose") return false;
-  if (isSpanAnaphor(word) || isNumberAnaphor(word) || isRoleAnaphor(word) || isPointer(word)) return false;
+  if (word.family.kind === "hook") return false;
+  if (isNumberAnaphor(word) || isRoleAnaphor(word) || isPointer(word)) return false;
   return contentRoots(word).length > 0 || holderRoots(word).length > 0;
 }
 
@@ -287,14 +258,6 @@ function bindContent(ctx: Ctx, pronoun: LexWord): void {
   const stem = holder.length > 0 ? holder.join("x") : wholeStem(pronoun);
   const antecedent = bindLatest(ctx.antecedents, (item) => item.kind === "content" && item.stem === stem);
   ctx.anaphors.push({ pronoun, kind: "content", antecedent });
-}
-
-function bindSpan(ctx: Ctx, pronoun: LexWord): void {
-  const typeVowel = spanTypeOf(pronoun);
-  const antecedent = typeVowel
-    ? bindLatest(ctx.antecedents, (item) => item.kind === "span" && item.typeVowel === typeVowel)
-    : undefined;
-  ctx.anaphors.push({ pronoun, kind: "span", typeVowel, antecedent });
 }
 
 function bindNumber(ctx: Ctx, pronoun: LexWord): void {
@@ -326,13 +289,6 @@ function introduce(ctx: Ctx, word: LexWord): void {
 function resetStretch(ctx: Ctx): void {
   ctx.introduced = [];
   ctx.anchors.length = 0;
-}
-
-function considerTopicSpan(ctx: Ctx, span: SpanUnit): void {
-  const payload = span.atom?.family.kind === "foreign" ? span.atom.family.payload : undefined;
-  resetStretch(ctx);
-  ctx.topic = { word: span.open, key: payload !== undefined ? `span:u:${payload}` : topicKeyOf(span.open) };
-  harvest(ctx, span.open);
 }
 
 function bindTopic(ctx: Ctx, pronoun: LexWord): void {
@@ -370,24 +326,6 @@ function considerLinker(ctx: Ctx, word: LexWord): void {
   resetStretch(ctx);
   ctx.topic = effect === "clear" ? undefined : { word, key: topicKeyOf(word) };
   harvest(ctx, word);
-}
-
-/** A cite quote is someone else's talk: it counts, anchors, and holds a topic of its own, and none of it leaks out. */
-function enterQuote(ctx: Ctx): Saved {
-  const saved: Saved = { antecedents: ctx.antecedents, introduced: ctx.introduced, anchors: ctx.anchors, clauses: ctx.clauses, topic: ctx.topic };
-  ctx.antecedents = [];
-  ctx.introduced = [];
-  ctx.anchors = [];
-  ctx.clauses = [];
-  ctx.topic = undefined;
-  return saved;
-}
-
-/** Leaving a quote: the speaker's stretch returns, and a resume outside can reach the quote's words (not the reverse). */
-function exitQuote(ctx: Ctx, saved: Saved): void {
-  const inside = ctx.antecedents;
-  Object.assign(ctx, saved);
-  ctx.antecedents.push(...inside);
 }
 
 /** The greeter's own name in a greeting sentence (`azawan.`, word-endings.md#greeting). */
@@ -591,19 +529,6 @@ function bindPointer(ctx: Ctx, pronoun: LexWord): void {
 }
 
 function harvest(ctx: Ctx, word: LexWord): void {
-  const family = word.family;
-  if (family.kind === "writingSpan") {
-    ctx.antecedents.push({
-      kind: "span",
-      word,
-      typeVowel: writingSpanType(family.bracket),
-    });
-    return;
-  }
-  if (family.kind === "x" && family.xFamily === "span" && family.typeVowel && word.ending !== "r") {
-    ctx.antecedents.push({ kind: "span", word, typeVowel: family.typeVowel });
-  }
-
   if (word.family.kind === "number" && ordinalPronounPlace(word) === undefined) {
     ctx.antecedents.push({
       kind: "number",
@@ -625,7 +550,6 @@ function harvest(ctx: Ctx, word: LexWord): void {
 function considerWord(ctx: Ctx, word: LexWord): void {
   const place = ordinalPronounPlace(word);
   if (isTopicPronoun(word)) bindTopic(ctx, word);
-  else if (isSpanAnaphor(word)) bindSpan(ctx, word);
   else if (place !== undefined) bindOrdinal(ctx, word, place);
   else if (isNumberAnaphor(word)) bindNumber(ctx, word);
   else if (isRoleAnaphor(word)) bindRole(ctx, word);
@@ -640,41 +564,25 @@ function considerWord(ctx: Ctx, word: LexWord): void {
 
 /** Resolve as a handler set over the AST walk ([ast-walk.ts](./ast-walk.ts)). */
 function resolveVisitor(ctx: Ctx): Visitor {
-  // Inside an opaque `u` span nothing is read as a word (spans.md).
-  let opaque = 0;
-  // Mention and aside interiors add no anchors for role pointers; a cite quote anchors from scratch.
-  const spans: Array<{ quote: boolean; saved?: Saved }> = [];
   return {
     word(word, slot) {
-      if (opaque > 0 || slot === "boundJoinClose" || slot === "joinModifier" || slot === "factor") return;
+      if (slot === "boundJoinClose" || slot === "joinModifier" || slot === "factor") return;
       if (slot === "orodo") ctx.standIn = word;
       if (slot === "linker") considerLinker(ctx, word);
       else considerWord(ctx, word);
     },
     join(join, site) {
-      if (opaque > 0) return;
       if (!ctx.question || !isJoinGap(join)) return;
       // In a `dorl` (question-like) dependent the blank is the dependent's own; in `darl` it is the outer ask's (questions.md#embedded-whether).
       if (ctx.standIn?.raw[1] === "o") ctx.innerGaps.push(join);
       else ctx.gaps.push(join);
     },
     enter(node) {
-      if (node.kind === "body" && opaque === 0) {
-        enterMove(ctx, [greetingName(node.body) ?? []].flat());
-        if (node.body.topicSpan) considerTopicSpan(ctx, node.body.topicSpan);
-      }
+      if (node.kind === "body") enterMove(ctx, [greetingName(node.body) ?? []].flat());
       if (node.kind === "clause") {
         const anchor = anchorOf(node.clause);
         ctx.clauses.push({ anchor, before: ctx.anchors.length });
-        if (anchor && spans.at(-1)?.quote !== false) ctx.anchors.push(anchor);
-      }
-      if (node.kind === "span") {
-        const quote = spanTypeOf(node.span.open) === "a" && node.span.content.length > 0;
-        spans.push({ quote, saved: quote ? enterQuote(ctx) : undefined });
-      }
-      if (node.kind === "span" && spanTypeOf(node.span.open) === "u") {
-        opaque += 1;
-        return SKIP_CONTENT;
+        if (anchor) ctx.anchors.push(anchor);
       }
       if (node.kind === "utterance") {
         enterLeft(ctx, node.utterance);
@@ -686,12 +594,7 @@ function resolveVisitor(ctx: Ctx): Visitor {
     },
     exit(node) {
       if (node.kind === "clause") ctx.clauses.pop();
-      if (node.kind === "span") {
-        const { saved } = spans.pop()!;
-        if (saved) exitQuote(ctx, saved);
-      }
-      if (node.kind === "span" && spanTypeOf(node.span.open) === "u") opaque -= 1;
-      if (node.kind === "shared" && node.join && opaque === 0) {
+      if (node.kind === "shared" && node.join) {
         ctx.shared.push({ join: node.join, role: classifySharedRole(node.join, node.item), shared: node.item });
       }
       if (node.kind === "utterance") {

@@ -56,8 +56,8 @@ Agazan text
 ┌──────────────────────────────────────┐
 │  Chevrotain — SentenceParser         │
 │  /y/ turns, /x/ continue             │
-│  right-close joins, span stacks      │
-│  ^ islands, stand-in dependents           │
+│  right-close joins, islands          │
+│  { } islands, stand-in dependents         │
 └──────────────────────────────────────┘
     │  ParseResult.utterances
     ▼
@@ -82,8 +82,8 @@ Owns every **string-shaped** subsystem:
 - PoS prefix, left-bound **`gl-`**, reference ending, optional **-x**
 - Foreign `PoS<…>ENDING` / opaque `PoS<…>` (no phonology inside `<>`)
 - Free number words and writing shorthand ([numbers.md](../grammar/numbers.md))
-- Mid-word **`x`** families: rule alternation order = doc decision order (closes → span open → role → conversation length name+vowel+**-n` (citation or `/y/`) → value/ability → numeric → ordinary compound)
-- Span open/close **word shapes**; writing bracket atoms (`d@[…]`, …)
+- Mid-word **`x`** families: rule alternation order = doc decision order (role → conversation length name+vowel+**-n` (citation or `/y/`) → value/ability → numeric → ordinary compound)
+- Writing bracket atoms (`d@[…]`, `th(…)`, `d<…>`); a span has no spoken word shape
 - Prefix-less [hooks](../grammar/hooks.md)
 
 Semantic actions build a discriminated `MorphWord` only. **No lexicon calls inside Peggy.**
@@ -139,19 +139,20 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause pole
 | `proxy` | `proxy` | *on-behalf-of* **`ade`** |
 | `stimulus` | `stimulus` | need about an unowned noun **`obu`** |
 | `mirative` | `mood` | MIRATIVE expectation map (firm / default / loose) on **`ezu`** |
+| `mention` | `mention` (a `gl-` word right before a written span only) | the mention marker, the *letters* root on **-l** (a word or phrase) and **-n** (a name-string); the bare spelling is the ordinary adjective |
 
 Later splits of `mood` (token class, gloss tag) can follow this column without new English regexes. Special pronouns stay published + gloss, not this table, until they need a parse fork.
 
 ### Stage 3 — Chevrotain (typed tokens → sentence AST)
 
-Adapter: [`src/parse/tokens.ts`](../../src/parse/tokens.ts) / [`src/parse/tokenize.ts`](../../src/parse/tokenize.ts) maps `LexWord[]` plus peeled `.`, leading tone marks (`!` / `?` / `!!` / `?!` / `%` / `&` / `;`), and `^` → Chevrotain `IToken[]` (no second character lexer). Grammar: [`src/parse/sentence-parser.ts`](../../src/parse/sentence-parser.ts).
+Adapter: [`src/parse/tokens.ts`](../../src/parse/tokens.ts) / [`src/parse/tokenize.ts`](../../src/parse/tokenize.ts) maps `LexWord[]` plus peeled `.`, leading tone marks (`!` / `?` / `!!` / `?!` / `%` / `&` / `;`), and `{` / `}` → Chevrotain `IToken[]` (no second character lexer). Grammar: [`src/parse/sentence-parser.ts`](../../src/parse/sentence-parser.ts).
 
 Owns:
 
-- Utterance framing ([speech-moves.md](../grammar/speech-moves.md) — `/y/` turns, including a whole spoken `/y/` span (open … close) at the left edge ([spans.md](../grammar/spans.md#y-spoken-spans)), omissible default assertoric; [dependents.md](../grammar/dependents.md) — `/x/` continue)
+- Utterance framing ([speech-moves.md](../grammar/speech-moves.md) — `/y/` turns, including a written `/y/` span at the left edge ([spans.md](../grammar/spans.md#y-spans)), omissible default assertoric; [dependents.md](../grammar/dependents.md) — `/x/` continue)
 - Right-close joins at phrase / VP / clause level (illegal left fence); a `/th/` stance word right before a rank join (`e` / `ue` / `ae`, **-l** / **-m**) is that fence's bar, an `NpItem` of kind `bar` ([comparatives.md](../grammar/comparatives.md#bars))
 - `uem` right before a `/th/` stance word holds that stance (with its hosted `/b/`) as the hook unit's `frame`, job `frame`, at the left edge too: the stance the event goes against, not a stance on the claim ([sakes.md](../grammar/sakes.md#contrary-to-stance)). Enforce checks the frame kind (`frameKind`)
-- Span open…close nesting; adjunct islands **`^ … ^`**
+- Adjunct islands **`{ … }`** (`IslandOpen` / `IslandClose` tokens); a mention marker before a topic span (`topicMarker`)
 - Complex `/ɡ|h/` + `/b/`; `/w/` + `/b/` only for *as-of* overlays; floating `/h/` as adjuncts
 - Matrix-final **stand-in** (`darl` / `barl`) + contiguous dependent
 
@@ -164,8 +165,7 @@ Recovery is off. Illegal left fences and binderless islands throw `SentenceParse
 | Job | Rule |
 |-----|------|
 | Content **-r** | Most recent prior word with the identical whole stem (the letters between role letter and ending; a compound or hook compound only as a whole). With none, a lexicon stem is the one you both know; any other stem is rejected ([pronouns.md](../grammar/pronouns.md#resume-r)) |
-| Role pointer | One anchor per clause body outside spans: its verb, or its `/ɡ/` predicate. Each anchor records the overt filler of every role (`/z/`, `/d/`, the extra party, the scene, the stacked-hook `/b/`s). **`a`**: core roles take the latest anchor with that role filled, other roles the latest anchor; **`o`**: the nearest earlier anchor whose core filler is a different referent; **`e`**: this clause's anchor. No referent is a rejection ([pronouns.md](../grammar/pronouns.md#role-pointers), [roles.md](../grammar/roles.md#role-pointers-family)) |
-| Span **-r** / `d[=]` | Most recent span open of that TYPE ([spans.md](../grammar/spans.md)) |
+| Role pointer | One anchor per clause body: its verb, or its `/ɡ/` predicate. Each anchor records the overt filler of every role (`/z/`, `/d/`, the extra party, the scene, the stacked-hook `/b/`s). **`a`**: core roles take the latest anchor with that role filled, other roles the latest anchor; **`o`**: the nearest earlier anchor whose core filler is a different referent; **`e`**: this clause's anchor. No referent is a rejection ([pronouns.md](../grammar/pronouns.md#role-pointers), [roles.md](../grammar/roles.md#role-pointers-family)) |
 | Number **-r** / `g=+` | Most recent number with the same marker identity ([numbers.md](../grammar/numbers.md#number-endings)) |
 | Role **-r** | This instance of the matching event’s role (doer / place / undergoer / extra `/b/` party); most recent verb / event noun / relation / role compound with that whole stem. Non-resume is the lexical kind (*teacher* vs *the one teaching*) ([roles.md](../grammar/roles.md)) |
 | Join **-r** under `yol` / `yom` | Fill-ask gaps in spoken order; none → yes/no ([questions.md](../grammar/questions.md)) |
@@ -196,7 +196,7 @@ src/
     word.peggy                   # Peggy — morph + numbers + writing atoms
     word.ts                      # Stage 1 wrapper
     classify.ts                  # Stage 2
-    tokenize.ts / tokens.ts      # peel .?!^ ; LexWord → IToken
+    tokenize.ts / tokens.ts      # peel .?! { } ; LexWord → IToken
     sentence-parser.ts           # Stage 3 Chevrotain
     hook-jobs.ts                 # each hook's job, decided once after Stage 3
     ast-walk.ts                  # the one AST visitor (resolve, enforce, inspect are handler sets)
@@ -216,9 +216,9 @@ npm scripts: `generate:word` (Peggy); `build` (generate + `tsc`); `test`; `parse
 
 Canonical types: [`src/parse/types.ts`](../../src/parse/types.ts).
 
-- **`MorphWord`** — Stage 1: `pos`, `ending`, `plural`, `gl`, discriminated `family` (`content` / `number` / `x` / `spanClose` / `reviser` / `joinMarker` / `writingSpan` / `foreign`).
+- **`MorphWord`** — Stage 1: `pos`, `ending`, `plural`, `gl`, discriminated `family` (`content` / `number` / `x` / `reviser` / `joinMarker` / `writingSpan` / `foreign`).
 - **`LexWord`** — Stage 2: `MorphWord` plus `reading`, optional `overlay` / `rootGloss`.
-- **Sentence AST** — `Utterance` → `BodyClause` → `Clause` (`units`, optional stand-in `dependent`). Units: NP/VP coords, predicate `/ɡ/`, `/h/`, spans, islands, clause coords, revisers.
+- **Sentence AST** — `Utterance` → `BodyClause` → `Clause` (`units`, optional stand-in `dependent`). Units: NP/VP coords, predicate `/ɡ/`, `/h/`, written spans (as noun heads), islands, clause coords, revisers.
 - **`ResolveInfo`** — `anaphors[]`, `asks[]` (`yesNo` / `fillAsk` / `none`), `shared[]` (`SharedRole`).
 
 ## Browser / bundle size
@@ -233,7 +233,7 @@ The docs site bundles the parser and lexicon search through Vite (`@parse-browse
 
 - Peggy word grammar covers orthography, numbers (writing + speech), and [x-compounds](../grammar/x-compounds.md) decision order.
 - `classify` is table-driven from the lexicon CSVs. Overlay **`kind`** / **`gloss`** live on overlays only ([kinds](#overlay-kinds)).
-- Chevrotain sentence grammar covers framing, right-close joins, spans, islands, and **stand-in** dependents.
+- Chevrotain sentence grammar covers framing, right-close joins, islands, and **stand-in** dependents.
 - Public `parse(text)` returns a typed AST plus `resolve`; fixture tests drawn from `docs/grammar/`.
 - Peggy parser is pre-generated; `peggy` is a devDependency.
 - No ANTLR artifacts.
@@ -242,7 +242,6 @@ The docs site bundles the parser and lexicon search through Vite (`@parse-browse
 
 - Browser bundle of the parse pipeline.
 - Lexicon column for gradable adjectives (SHARED `scale` vs ordinary `/ɡ/` is join-driven for now).
-- Speech span anaphors (`daxur`) as NP-slot tokens — Chevrotain still treats all spoken span opens as fence openers; writing `d[=]` resolves.
 - Join-arity inventory checks beyond fence shape.
 - Multi-turn discourse outside one `parse(text)` call.
 

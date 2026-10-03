@@ -302,7 +302,7 @@ export function emptySpanStats(): AgazanSpanStats {
 }
 
 export const LINT_MARKER_RE = /^lint:\s*(\S+)$/;
-const SPAN_NEUTRAL = new Set(["^", "|"]);
+const SPAN_NEUTRAL = new Set(["|"]);
 const PLACEHOLDER_RE = /^[A-Z][A-Z0-9₀-₉]*$/;
 
 function spanWords(text: string): string[] {
@@ -310,16 +310,13 @@ function spanWords(text: string): string[] {
     .split(/\s+/)
     // A free-standing tone mark (`%`, `?!`) is prosody, not a word.
     .filter((chunk) => chunk && toneRunLength(chunk, 0) !== chunk.length)
-    .map((chunk) => peelLintChunk(withoutForeignPayloads(chunk).replace(/[[\](){}]/g, "")).core)
+    .map((chunk) => peelLintChunk(chunk.replace(/<[^>]*>/g, "<>").replace(/[[\](){}]/g, "")).core)
     .filter((core) => core && !SPAN_NEUTRAL.has(core));
 }
 
 /** Class of one span (or one line of an `agazan` fence), before parsing. */
-/** A spoken opaque span (`duxal … xuxul`): its interior is foreign, not Agazan words. */
-export const SPOKEN_OPAQUE_RE = /(\b(?:th|[zdbvgwhxy])ux[ae][lmn]\s)[\s\S]*?(\sxuxu[lmr]\b)/g;
-
 export function classifyAgazanSpan(text: string): AgazanSpanClass | "unclassified" {
-  const trimmed = text.trim().replace(SPOKEN_OPAQUE_RE, "$1$2");
+  const trimmed = text.trim();
   const words = spanWords(trimmed);
   if (words.length === 0) return "english";
   const agazan = words.filter(isAgazanLintCandidate);

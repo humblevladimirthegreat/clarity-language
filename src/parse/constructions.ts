@@ -16,7 +16,7 @@
 import { overlayConstructionId } from "./construction-trace.js";
 import type { TokenBranch } from "./tokens.js";
 import type { ExtraNounHook } from "./hook-compounds.js";
-import type { AnaphorKind, Ending, LexReading, MorphWordFamily, PointerVowel, Pos, RoleVowel, SpanCloseFlavor, XFamily } from "./types.js";
+import type { AnaphorKind, Ending, LexReading, MorphWordFamily, PointerVowel, Pos, RoleVowel, XFamily } from "./types.js";
 
 export type ConstructionEntry = { anchor: string; summary: string };
 
@@ -32,7 +32,6 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "utterance.nextBody": { anchor: "dependents.md#which-person-or-thing-who-that-which", summary: "next sentence in the same turn" },
 
   "leftEdge.Vocative": { anchor: "speech-moves.md#vocative", summary: "vocative / greeting at the left edge" },
-  "leftEdge.ySpan": { anchor: "spans.md#y-spoken-spans", summary: "spoken /y/ span at the left edge: -n call, -l / -m reaction" },
   "leftEdge.Interjection": { anchor: "speech-moves.md#interjections-reactions", summary: "interjection at the left edge" },
   "leftEdge.Polar": { anchor: "questions.md#polar-stance", summary: "polar stance turn" },
   "leftEdge.W": { anchor: "hooks.md#hook-w", summary: "/w/ on a left-edge hook" },
@@ -42,7 +41,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "leftEdge.Force": { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "speech-act word" },
 
   "bodyClause.Linker": { anchor: "dependents.md#continue-x", summary: "sentence linker before a clause" },
-  "bodyClause.topicSpan": { anchor: "spans.md#topic-quotes", summary: "spoken /x/ cite, mention or opaque span as a topic word" },
+  "bodyClause.topicMarker": { anchor: "spans.md#mention", summary: "mention marker before a topic span" },
   "bodyClause.clause": { anchor: "word-endings.md#greeting", summary: "clause body" },
 
   "clause.clauseItem": { anchor: "word-endings.md#greeting", summary: "clause, or a stand-in clause join" },
@@ -52,7 +51,6 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "bodyClause.crossJoin": { anchor: "joins.md#clause-joins", summary: "/x/ join linking the prior sentence to this one" },
 
   "unit.islandUnit": { anchor: "spans.md#scope-islands", summary: "scope island" },
-  "unit.spanUnit": { anchor: "spans.md#shape", summary: "spoken span" },
   "unit.zCoord": { anchor: "word-endings.md#greeting", summary: "/z/ subject phrase" },
   "unit.dCoord": { anchor: "clause.md#direct-object-d", summary: "/d/ object phrase" },
   "unit.bCoord": { anchor: "clause.md#extra-nouns", summary: "unhosted /b/ phrase" },
@@ -61,18 +59,10 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "unit.hCoord": { anchor: "clause.md#adverbs-h", summary: "/h/ or stance /th/ unit" },
   "unit.hookUnit": { anchor: "hooks.md#including-am-al", summary: "in-clause hook" },
 
-  "islandUnit.IslandEdge": { anchor: "spans.md#scope-islands", summary: "^ island edge" },
+  "islandUnit.IslandOpen": { anchor: "spans.md#scope-islands", summary: "{ island open" },
+  "islandUnit.IslandClose": { anchor: "spans.md#scope-islands", summary: "} island close" },
   "islandUnit.unit": { anchor: "spans.md#scope-islands", summary: "units inside an island" },
 
-  "spanUnit.SpanOpen": { anchor: "spans.md#shape", summary: "span open word" },
-  "spanUnit.atom": { anchor: "spans.md#shape", summary: "atomic span interior (EDGE o)" },
-  "spanUnit.scopedUnit": { anchor: "spans.md#edge", summary: "clause-scoped span interior (EDGE e)" },
-  "spanUnit.quoteClause": { anchor: "spans.md#edge", summary: "multi-clause span interior (EDGE a)" },
-  "quoteClause.Linker": { anchor: "spans.md#topic-quotes", summary: "a topic word opening a clause inside a cite" },
-  "quoteClause.leftEdge": { anchor: "spans.md#quote-acts", summary: "an act word inside a spoken cite" },
-  "quoteClause.clause": { anchor: "spans.md#edge", summary: "clause inside a cite" },
-  "spanUnit.SpanClose": { anchor: "spans.md#shape", summary: "span close word" },
-  "spanUnit.closeAll": { anchor: "spans.md#close-forms-complete-editorial-close-all", summary: "editorial close then close-all" },
 
   "zCoord.zCoordPart": { anchor: "word-endings.md#greeting", summary: "/z/ phrase parts" },
   "dCoord.dCoordPart": { anchor: "clause.md#direct-object-d", summary: "/d/ phrase parts" },
@@ -161,10 +151,8 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
 /** Which slot a word may fill (`classifyTokenBranch`). */
 export const TOKEN_CONSTRUCTIONS: Record<TokenBranch, ConstructionEntry> = {
   hook: { anchor: "hooks.md#beginner", summary: "prefix-less hook" },
-  spanClose: { anchor: "spans.md#shape", summary: "span close word" },
   writingSpanSlot: { anchor: "spans.md#asides-th", summary: "written span in a non-noun slot" },
   writingSpan: { anchor: "spans.md#writing", summary: "written span as a noun" },
-  spanOpen: { anchor: "spans.md#shape", summary: "spoken span open" },
   standIn: { anchor: "dependents.md#dependent-clauses", summary: "stand-in (darl / barl / …)" },
   join: { anchor: "joins.md#and-lists-a", summary: "join fence word" },
   joinAct: { anchor: "join-across-roles.md#join-act-verbs", summary: "join-act verb" },
@@ -186,7 +174,6 @@ export const WORD_FAMILY_CONSTRUCTIONS: Record<FamilyKind, ConstructionEntry> = 
   content: { anchor: "phonology.md#word-edges", summary: "content word" },
   number: { anchor: "numbers.md#counts", summary: "number word" },
   x: { anchor: "sakes.md#time-horizon-endings-on-met", summary: "mid-word x compound" },
-  spanClose: { anchor: "spans.md#shape", summary: "span close" },
   hook: { anchor: "hooks.md#beginner", summary: "hook" },
   hookCompound: { anchor: "hooks.md#hook-compounds", summary: "fused extra-noun hook compound" },
   joinMarker: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "vowel-series join / turn word" },
@@ -195,7 +182,6 @@ export const WORD_FAMILY_CONSTRUCTIONS: Record<FamilyKind, ConstructionEntry> = 
 };
 
 export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
-  span: { anchor: "spans.md#shape", summary: "span open" },
   role: { anchor: "roles.md#role-compounds", summary: "role compound" },
   pointer: { anchor: "pronouns.md#role-pointers", summary: "role pointer" },
   sake: { anchor: "sakes.md#time-horizon-endings-on-met", summary: "sake word" },
@@ -210,6 +196,7 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
 /** Readings only a closed overlay produces; those words trace `overlay.*` instead. */
 type OverlayOnlyReading =
   | "overlay"
+  | "mention"
   | "joinAct"
   | "joinRelation";
 
@@ -258,8 +245,6 @@ export const RESOLVE_CONSTRUCTIONS: Record<
 > = {
   "content.bound": { anchor: "pronouns.md#resume-r", summary: "-r binds an earlier content word" },
   "content.unbound": { anchor: "pronouns.md#resume-r", summary: "-r with no earlier match (the one you both know)" },
-  "span.bound": { anchor: "spans.md#resume", summary: "span resume binds an earlier span" },
-  "span.unbound": { anchor: "spans.md#resume", summary: "span resume with no earlier span" },
   "number.bound": { anchor: "numbers.md#digitless", summary: "number -r binds an earlier number" },
   "ordinal.bound": { anchor: "pronouns.md#ordinal-pronouns", summary: "ordinal pronoun: a name by order of introduction" },
   "role.bound": { anchor: "roles.md#role-compounds", summary: "role -r binds an earlier role compound" },
@@ -466,31 +451,10 @@ export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "er" | "or" 
   uem: { anchor: "hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "uem" },
 };
 
-/**
- * Span features: spoken TYPE / EDGE / ending, written marks, close flavor (spans.md).
- * TYPE / EDGE / ending are homed at the spoken word shape, whose table introduces all three.
- */
-export const SPAN_FEATURE_CONSTRUCTIONS: Record<
-  `type.${Vowel}` | `edge.${Vowel}` | `ending.${"l" | "m" | "n" | "r"}` | `mark.${"@" | "~"}` | `close.${SpanCloseFlavor}`,
-  ConstructionEntry
-> = {
-  "type.a": { anchor: "spans.md#shape", summary: "TYPE a cite" },
-  "type.e": { anchor: "spans.md#shape", summary: "TYPE e aside" },
-  "type.o": { anchor: "spans.md#shape", summary: "TYPE o mention" },
-  "type.u": { anchor: "spans.md#shape", summary: "TYPE u opaque" },
-  "edge.a": { anchor: "spans.md#shape", summary: "EDGE a multi-clause" },
-  "edge.e": { anchor: "spans.md#shape", summary: "EDGE e clause-scoped" },
-  "edge.o": { anchor: "spans.md#shape", summary: "EDGE o atomic" },
-  "edge.u": { anchor: "spans.md#shape", summary: "EDGE u empty" },
-  "ending.l": { anchor: "spans.md#shape", summary: "exact span" },
-  "ending.m": { anchor: "spans.md#shape", summary: "paraphrase span" },
-  "ending.n": { anchor: "spans.md#shape", summary: "proper span" },
-  "ending.r": { anchor: "spans.md#shape", summary: "span resume" },
+/** Span features: the written fidelity marks (spans.md). */
+export const SPAN_FEATURE_CONSTRUCTIONS: Record<`mark.${"@" | "~"}`, ConstructionEntry> = {
   "mark.@": { anchor: "spans.md#exact-paraphrase-proper", summary: "@ proper span" },
   "mark.~": { anchor: "spans.md#exact-paraphrase-proper", summary: "~ paraphrase span" },
-  "close.complete": { anchor: "spans.md#shape", summary: "span close" },
-  "close.editorial": { anchor: "spans.md#close-forms-complete-editorial-close-all", summary: "editorial close" },
-  "close.closeAll": { anchor: "spans.md#close-forms-complete-editorial-close-all", summary: "close-all" },
 };
 
 /** Role compounds: role vowel and the -r instance (roles.md). */
@@ -578,7 +542,7 @@ export const REJECTIONS = {
   polarOrder: { anchor: "questions.md#polar-stance", summary: "a polar word is one answer or one confirm tag: not two in a row, and not before an act word (an answer and then a question are two turns)" },
   sentenceEndMark: { anchor: "speech-moves.md#tone-marks", summary: "a sentence ends in `.`; `?` / `!` are tone-mark prefixes" },
   toneStack: { anchor: "speech-moves.md#tone-marks", summary: "only ! !! ? ?! % & ; are tone marks; other stacks are not" },
-  toneTarget: { anchor: "speech-moves.md#tone-marks", summary: "a tone mark goes before a word, an island open ^, or a span" },
+  toneTarget: { anchor: "speech-moves.md#tone-marks", summary: "a tone mark goes before a word, an island open {, or a span" },
   linkerMidSentence: { anchor: "dependents.md#sentence-linkers", summary: "a sentence linker or topic word comes only at the start of a sentence" },
   pluralOnPos: { anchor: "plurality.md#beginner", summary: "-x is unused on /w/, /h/, /th/, and the published /x/ linkers" },
   pluralInterjection: { anchor: "plurality.md#vocatives-y", summary: "-x on /y/ goes on a vocative (-n / -r), not an interjection" },

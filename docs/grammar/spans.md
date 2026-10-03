@@ -1,6 +1,6 @@
 # Spans
 
-When you set wording apart from the rest of the sentence (a quote, a parenthetical, a loan surface), Agazan packages that chunk in a **span fence**. In writing you put a role letter, then a pair of brackets around the interior. That first letter is the chunk’s role in the outer sentence (subject, object, verb, or adverb).
+When you set wording apart from the rest of the sentence (a quote, a parenthetical, a loan surface), Agazan packages that chunk in a **span**. You write a role letter, then a pair of brackets around the interior. That first letter is the chunk’s role in the outer sentence (subject, object, verb, or adverb). A span is a written form: it has no spoken open or close.
 
 ## Beginner {#beginner}
 
@@ -26,7 +26,7 @@ The whole `d[azawan]` is the direct object (who or what is acted on). If the int
 
 You can mark how faithful the quote is. Put the mark **after** the role letter, before the opening bracket.
 
-Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gist, not the exact words, write **`~`** (`d~[zazawan vezehel]`). When the chunk is the **work** that bears a **multi-word** title (the song, proverb, book — not the name-string), write **`@`** (`d@[onodan alahen]`). A one-word work or person is ordinary **-n** (`donodan`), not `d@[onodan]`, unless the role letter or the ending is **part of the title** you are packaging. **`@`** / spoken **-n** is on the **fence**; words inside keep their usual endings ([titled phrases](word-endings.md#titled-phrases)).
+Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gist, not the exact words, write **`~`** (`d~[zazawan vezehel]`). When the chunk is the **work** that bears a **multi-word** title (the song, proverb, book — not the name-string), write **`@`** (`d@[onodan alahen]`). A one-word work or person is ordinary **-n** (`donodan`), not `d@[onodan]`, unless the role letter or the ending is **part of the title** you are packaging. The mark is on the **fence**; words inside keep their usual endings ([titled phrases](word-endings.md#titled-phrases)).
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -46,59 +46,17 @@ Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gi
 >
 > "Ahaben sang Onodan Alahen."
 
-### Resume (`[=]`)
-
-To point back at a prior span without repeating its interior, put **`=`** inside the same brackets: `d[=]`. The letter on the resume is the role this pointer plays in *this* sentence (here still the object of *said*).
-
-> `yol zalahen d[=] vezebel.`
->
-> y-question | z-Alahen | d-←cite | v-tell
->
-> "Alahen said that?!"
-
-### Mention (`{…}`)
-
-A **mention** holds a **word or phrase** as that spelling, not a quote of speech. Write the role letter, then curly braces around it. English says *the word …* or *the phrase …* and keeps the Agazan interior (`odoga`, not *dog*). To quote what someone said, use [cite](#writing).
-
-> `z{odoga} gamazam.`
->
-> z-MENTION["odoga"] | g-small
->
-> "The word “odoga” is small."
-
-> `z{zazawan vezehel} gamazam.`
->
-> z-MENTION["zazawan vezehel"] | g-small
->
-> "The phrase “zazawan vezehel” is small."
-
-With **`@`**, mention is the **name** (the title-string you could rename), even as **one word**: `d@{onodan}` is not `donodan`. Cite with **`@`** is the **work**; that span is for a **multi-word** title (`d@[onodan alahen]`). One-word *Onodan* as the work is ordinary **-n** (`donodan`).
-
-> `zazawan d@[onodan alahen] vogozam.`
->
-> z-Azawan | d-NAME.CITE[Onodan | Alahen] | v-rejection
->
-> "Azawan dislikes Onodan Alahen." (the work)
-
-> `zazawan d@{onodan} vogozam.`
->
-> z-Azawan | d-NAME.MENTION["onodan"] | v-rejection
->
-> "Azawan dislikes the name “onodan.”" (might still like the work)
-
-**Compare with:** `donodan` is *Onodan* (the work or person). `d@{onodan}` is only the **name**.
-
 ### Opaque and loan words {#loans}
 
-**Opaque** holds a foreign, code, or raw surface that is not ordinary Agazan words. Write the role letter, then angle brackets around that blob. Do not put an extra letter after `>`. Faithfulness uses the same marks as cite: none / **`~`** / **`@`**, and resume uses **`=`** inside (`d<=>`).
+**Opaque** holds a foreign, code, or raw surface that is not ordinary Agazan words. Write the role letter, then angle brackets around that blob. Do not put an extra letter after `>`. Faithfulness uses the same marks as cite: none / **`~`** / **`@`**.
 
 > <code>zazawan d&lt;kimchi&gt; vahahal.</code>
 >
-> z-Azawan | <code>d-&lt;kimchi&gt;</code> | v-see
+> z-Azawan | d-OPAQUE["kimchi"] | v-see
 >
 > "Azawan saw kimchi." (opaque surface)
 
-Keep the source’s **casing** inside `<>` when that writing system uses case (<code>d&lt;NaCl&gt;</code>, <code>d@&lt;iPhone&gt;</code>). Native Agazan letters stay [lowercase](phonology.md#beginner). **`@`** is the proper mark when that blob is a titled name.
+Keep the source’s **casing** inside <code>&lt;&gt;</code> when that writing system uses case (<code>d&lt;NaCl&gt;</code>, <code>d@&lt;iPhone&gt;</code>). Native Agazan letters stay [lowercase](phonology.md#beginner). **`@`** is the proper mark when that blob is a titled name.
 
 When a published Agazan root already matches, write the ordinary word (`dagadul`, not a fence).
 
@@ -106,7 +64,7 @@ Outside a clause, a foreign name or word is a prefix-less fence with the same ma
 
 ### Calls and reactions (`/y/`) {#y-spans}
 
-Under `/y/`, a span calls someone or reacts, so only an opaque `<…>` or a cite `[…]` goes there, and it opens the turn, before the act word. The **`@`** mark decides the job, as **-n** does on a native word: a named span calls that person (<code>y@&lt;Sam&gt;</code>, *Sam!*), and a span without **`@`** is a foreign [interjection](speech-moves.md#interjections) (<code>y&lt;Amen&gt;</code>, *Amen!*). A mention `{…}` talks about a word and an aside `(…)` comments on the sentence, so neither one calls or reacts: there is no `/y/` mention or aside.
+Under `/y/`, a span calls someone or reacts, so only an opaque <code>&lt;…&gt;</code> or a cite `[…]` goes there, and it opens the turn, before the act word. The **`@`** mark decides the job, as **-n** does on a native word: a named span calls that person (<code>y@&lt;Sam&gt;</code>, *Sam!*), and a span without **`@`** is a foreign [interjection](speech-moves.md#interjections) (<code>y&lt;Amen&gt;</code>, *Amen!*). A mention talks about a word and an aside `(…)` comments on the sentence, so neither one calls or reacts: there is no `/y/` mention or aside.
 
 ### Asides (`th(…)`)
 <a id="asides"></a>
@@ -135,7 +93,7 @@ A one-word manner with nothing to package is a plain adverb: `zazawan vowogal ha
 
 ### Outer slot {#pos}
 
-The letter on the open is the role of the **entire span** in the outer sentence. Ask what that chunk is doing out there: object of *said*, subject of *is small*, and so on. A cite can be the **verb** when you echo the act as wording:
+The letter before the bracket is the role of the **entire span** in the outer sentence. Ask what that chunk is doing out there: object of *said*, subject of *is small*, and so on. A cite can be the **verb** when you echo the act as wording:
 
 > `yul zalahen v[vazadal].`
 >
@@ -145,8 +103,8 @@ The letter on the open is the role of the **entire span** in the outer sentence.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `/d/` | object | *said / wrote / saw “…”* (`d[azawan]`, `d[=]`, <code>d&lt;kimchi&gt;</code>) | **d** ≈ done to |
-| `/z/` | subject | the word or phrase **is** the subject (`z{odoga}`) | **z** ≈ star (who it is about) |
+| `/d/` | object | *said / wrote / saw “…”* (`d[azawan]`, <code>d&lt;kimchi&gt;</code>) | **d** ≈ done to |
+| `/z/` | subject | a foreign name as the subject (<code>z@&lt;Sam&gt;</code>) | **z** ≈ star (who it is about) |
 | `/b/` | extra party | a foreign name as the recipient (<code>b@&lt;Sam&gt;</code>) | **b** ≈ bolted on (the extra piece) |
 | `/v/` | verb | echo the act as wording (`v[vazadal]`); a loan verb (<code>v&lt;google&gt;</code>) | **v** as in English *verb* |
 | `/ɡ/` | adjective | a loan adjective (<code>g&lt;rouge&gt;</code>) | **g** ≈ grade (a rating of the noun) |
@@ -159,19 +117,19 @@ An opaque span in a verb, adjective or adverb slot is a **loan word**: the role 
 
 > <code>zalahen v&lt;google&gt; dazawan.</code>
 >
-> z-Alahen | v-&lt;google&gt; | d-Azawan
+> z-Alahen | v-OPAQUE["google"] | d-Azawan
 >
 > "Alahen googled Azawan." (loan verb)
 
 > <code>zodogal g&lt;rouge&gt; vowogal.</code>
 >
-> z-dog | g-&lt;rouge&gt; | v-walk
+> [z-dog | g-OPAQUE["rouge"]] | v-walk
 >
 > "A rouge dog walks." (loan adjective)
 
 > <code>zazawan b@&lt;Sam&gt; vezebel.</code>
 >
-> z-Azawan | b-NAME.&lt;Sam&gt; | v-tell
+> z-Azawan | b-NAME.OPAQUE["Sam"] | v-tell
 >
 > "Azawan tells Sam." (a foreign name as the recipient)
 
@@ -194,10 +152,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *write* | `varadal` | | |
 | *see* | `vahahal` | | |
 | *sing* | `vezehel` | | |
+| *walk* | `vowogal` | | |
 | *stop* | `vazadal` | | |
 | *Onodan* | `onodan` | | |
-| *melody* | `onodal` | | |
-| *small* | `gamazam` | `amazal` *mouse* | 🐁: a mouse is little |
+| *dog* | `odogal` | | |
 | *quiet* | `agawal` | | |
 | *kimchi* | <code>d&lt;kimchi&gt;</code> | | |
 | *Sam* | <code>@&lt;Sam&gt;</code> | | |
@@ -221,18 +179,20 @@ z-Azawan | d-CITE[Azawan] | v-tell
 z-Alahen | d-CITE.about[z-Azawan | v-sing] | v-write
 :::
 
-**3.** *The word “onoda” is small.*
+**3.** *Azawan sang Onodan Alahen.* (the work, a multi-word title)
 
 ::: details Show answer
-`z{onoda} gamazam.`
+`zazawan d@[onodan alahen] vezehel.`
 
-z-MENTION["onoda"] | g-small
+z-Azawan | d-NAME.CITE[Onodan | Alahen] | v-sing
 :::
 
 **4.** *Azawan saw kimchi.* (foreign surface)
 
 ::: details Show answer
 <code>zazawan d&lt;kimchi&gt; vahahal.</code>
+
+z-Azawan | d-OPAQUE["kimchi"] | v-see
 :::
 
 **5.** *Ahaben sang Onodan.* (one-word work: ordinary **-n**)
@@ -259,20 +219,20 @@ z-Azawan | v-sing | th-ASIDE[h-quiet]
 y-prohibition | z-Alahen | v-CITE[v-stop]
 :::
 
-**8.** *Alahen said that?!*
+**8.** *Sam, does Azawan walk?*
 
 ::: details Show answer
-`yol zalahen d[=] vezebel.`
+<code>y@&lt;Sam&gt; yol zazawan vowogal.</code>
 
-y-question | z-Alahen | d-←cite | v-tell
+y-NAME.OPAQUE["Sam"] | y-question | z-Azawan | v-walk
 :::
 
-**9.** *The phrase “zazawan vezehel” is small.*
+**9.** *Azawan tells Sam.* (a foreign name as the recipient)
 
 ::: details Show answer
-`z{zazawan vezehel} gamazam.`
+<code>zazawan b@&lt;Sam&gt; vezebel.</code>
 
-z-MENTION["zazawan vezehel"] | g-small
+z-Azawan | b-NAME.OPAQUE["Sam"] | v-tell
 :::
 
 **10.** *Alahen googled Azawan.* (a loan verb)
@@ -280,7 +240,7 @@ z-MENTION["zazawan vezehel"] | g-small
 ::: details Show answer
 <code>zalahen v&lt;google&gt; dazawan.</code>
 
-z-Alahen | v-&lt;google&gt; | d-Azawan
+z-Alahen | v-OPAQUE["google"] | d-Azawan
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
@@ -288,39 +248,45 @@ z-Alahen | v-&lt;google&gt; | d-Azawan
 **1.** <code>zalahen d&lt;kimchi&gt; vahahal.</code>
 
 ::: details Show answer
+
+z-Alahen | d-OPAQUE["kimchi"] | v-see
+
 *Alahen saw kimchi.* (opaque surface)
 :::
 
-**2.** `zazawan d{onoda} vahahal.`
+**2.** `zahaben d~[zalahen vezehel] varadal.`
 
 ::: details Show answer
 
-z-Azawan | d-MENTION["onoda"] | v-see
+z-Ahaben | d-CITE.about[z-Alahen | v-sing] | v-write
 
-*Azawan saw the word “onoda.”*
+*Ahaben wrote something like “Alahen sings.”*
 :::
 
-**3.** `zahaben d@{onodan} varadal.`
+**3.** `zahaben d@[onodan alahen] varadal.`
 
 ::: details Show answer
 
-z-Ahaben | d-NAME.MENTION["onodan"] | v-write
+z-Ahaben | d-NAME.CITE[Onodan | Alahen] | v-write
 
-*Ahaben wrote the name “onodan.”*
+*Ahaben wrote Onodan Alahen.* (the work)
 :::
 
-**4.** `z{onoda} gamazam.`
+**4.** `zalahen vezebel th(zazawan vezehel).`
 
 ::: details Show answer
 
-z-MENTION["onoda"] | g-small
+z-Alahen | v-tell | th-ASIDE[z-Azawan | v-sing]
 
-*The word “onoda” is small.*
+*Alahen tells (Azawan sings).*
 :::
 
 **5.** <code>z@&lt;Sam&gt; d[azawan] vezebel.</code>
 
 ::: details Show answer
+
+z-NAME.OPAQUE["Sam"] | d-CITE[Azawan] | v-tell
+
 *Sam said “Azawan.”* (hello)
 :::
 
@@ -330,117 +296,128 @@ z-MENTION["onoda"] | g-small
 *Sam*
 :::
 
-**7.** `zalahen vezebel th(zazawan vezehel).`
+**7.** `yol zahaben d[azawan] vezebel.`
 
 ::: details Show answer
 
-z-Alahen | v-tell | th-ASIDE[z-Azawan | v-sing]
+y-question | z-Ahaben | d-CITE[Azawan] | v-tell
 
-*Alahen tells (Azawan sings).*
+*Did Ahaben say “Azawan”?*
 :::
 
-**8.** `yol zahaben d[=] vezebel.`
+**8.** <code>zodogal g&lt;rouge&gt; vowogal.</code>
 
 ::: details Show answer
 
-y-question | z-Ahaben | d-←cite | v-tell
+[z-dog | g-OPAQUE["rouge"]] | v-walk
 
-*Ahaben said that?!*
+*A rouge dog walks.* (a loan adjective)
 :::
 
-**9.** `z{zalahen vezebel} gamazam.`
+**9.** <code>y@&lt;Sam&gt; yel zazawan vowogal.</code>
 
 ::: details Show answer
 
-z-MENTION["zalahen vezebel"] | g-small
+y-NAME.OPAQUE["Sam"] | y-command | z-Azawan | v-walk
 
-*The phrase “zalahen vezebel” is small.*
+*Sam, let Azawan walk.*
 :::
 
 **10.** <code>zazawan b@&lt;Sam&gt; vezebel.</code>
 
 ::: details Show answer
 
-z-Azawan | b-NAME.&lt;Sam&gt; | v-tell
+z-Azawan | b-NAME.OPAQUE["Sam"] | v-tell
 
 *Azawan tells Sam.*
 :::
 
 ## Intermediate {#intermediate}
 
-### Spoken word shape {#shape}
+### Written only {#written-only}
 
-Beginner writing already packages a quote, mention, aside, or blob in brackets. Speech still has to say which slot the chunk fills, what kind of span it is, how far the open runs, and how faithful the wording is. The open is one word: role letter, then TYPE vowel, then mid-word **`x`**, then EDGE vowel, then the ending. That word stands where writing had `d[` or `th(`; a multi-token open still needs a close word later.
+A span has **no spoken form**: there is no open word, no close word, and no spoken resume for it. Read aloud, you say the words inside the span and the marks as words.
 
-> `zazawan daxol azawan vezebel.`
+`[…]` and <code>&lt;…&gt;</code> are **one span** in every other way: the same role letters, the same slots, the same **`~`** / **`@`** marks, the same topic and `/y/` rules. The only difference is whether the parser reads the inside. Use `[…]` when the inside is Agazan, and <code>&lt;…&gt;</code> when it is foreign, code, or a name you do not want read. A mention marker (`glelel`) goes before either one.
+
+### Mention {#mention}
+
+A **mention** talks about a **word or phrase as that spelling**, not a quote of speech. Put the **mention marker** before the span. The marker is a [left-bound adjective](clause.md#left-bound-adjectives), so a listener hears *this is a word as spelling* before the whole span arrives. English says *the word …* or *the phrase …* and keeps the Agazan interior (`odoga`, not *dog*). To quote what someone said, use [cite](#writing).
+
+The marker is the *letters* root `ele` as a `gl-` adjective, on **-l** (`glelel`) or **-n** (`glelen`). (cue: 🔤 a word is its letters)
+
+| Agazan | Reading |
+|--------|---------|
+| **`glelel`** | the word or phrase as spelling |
+| **`glelen`** | the name-string: a name as spelling |
+
+The span itself is an ordinary [opaque](#loans) <code>&lt;…&gt;</code> (or a cite `[…]`), so the marker plus the span fills a slot like any noun:
+
+> <code>glelel z&lt;odoga&gt; gamazam.</code>
 >
-> z-Azawan | d-CITE.atomic[Azawan] | v-tell
+> [gl-MENTION | z-OPAQUE["odoga"]] | g-small
 >
-> "Azawan said “Azawan.”" (hello)
+> "The word “odoga” is small."
 
-```text
-{PoS}{TYPE}x{EDGE}{ENDING}
-```
-
-| Piece | Values | Use |
-|-------|--------|-----|
-| **PoS** | `z` `d` `b` `v` `g` `w` `h` `th` `y` `x` | slot the whole span fills |
-| **TYPE** | **a** cite · **e** aside · **o** mention · **u** opaque | span kind |
-| **`x`** | mid-word joiner | marks a span-fence form |
-| **EDGE** | **a** · **e** · **o** · **u** | how far an open runs |
-| **ENDING** | **-l** exact · **-m** paraphrase · **-n** proper · **-r** resume | fidelity, work vs name, or span resume |
-
-**`daxal`** is `d` + `a` + `x` + `a` + `l`: open an exact multi-token cite as direct object (needs close).
-
-### TYPE (vowels)
-<a id="type"></a>
-<a id="vowels"></a>
-
-Beginner already used square, round, curly, and angle brackets for cite, aside, mention, and opaque. Speech puts that choice in the vowel **before** `x`.
-
-| Agazan | Use | English | Cue |
-|--------|------|---------|-----|
-| **a** | **cite** (`[` … `]`); clausal interiors: outer speaker does **not** assert | quoted wording | **a** ≈ add (hold cited words) |
-| **e** | **aside** (`th(` … `)`); `/th/` digression; outer speaker **does** assert; interior may be a fragment or a same-speech-act clause body | parenthetical | **e** ≈ order (an extra comment set in order) |
-| **o** | **mention** (`{` … `}`); with **`@`** / **-n**, the **name** | the word or phrase; proper = the name-string | **o** ≈ one (one word or phrase as the object) |
-| **u** | **opaque** (`<` … `>`); interior is not native Agazan | foreign / code | **u** ≈ undo (not native Agazan) |
-
-**Compare with:** a native office name uses ordinary **-n** (`zubugan`). Mention `{abogo}` is that **word**; opaque / loan is a **foreign** acronym’s surface (<code>z@&lt;FBI&gt;</code>).
-
-### EDGE (extent) {#edge}
-
-A pair of brackets can wrap one token or many, run to the end of the clause, or hold nothing. In speech, the vowel **after** `x` is **EDGE**: it says whether the open waits for an explicit close, ends at the next turn or clause join, takes exactly one following token, or has no interior.
-
-> `zalahen daxal zazawan vezehel xuxul vezebel.`
+> <code>glelel z&lt;zazawan vezehel&gt; gamazam.</code>
 >
-> z-Alahen | d-CITE.multi[z-Azawan | v-sing] | v-tell
+> [gl-MENTION | z-OPAQUE["zazawan vezehel"]] | g-small
 >
-> "Alahen said “Azawan sings.”"
+> "The phrase “zazawan vezehel” is small."
 
-| Agazan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **a** | **multi-token open** — stays open until an explicit close (default) | `d[…]` … `]` (needs close) | **a** ≈ add (push more tokens) |
-| **e** | **clause-scoped** — ends before the next speech-act `/y/` or clause-level `/x/` join | `d[…` run to clause end (no close) | **e** ≈ order (this clause only) |
-| **o** | **atomic** — exactly **one** following token | `d[azawan]`, <code>d&lt;kimchi&gt;</code> | **o** ≈ one |
-| **u** | **empty / redacted** — no interior; also **resume** **-r** | `d[]`, `d[=]` | **u** ≈ undo (nothing inside) |
+With **-n** the mention is the **name** (the title-string you could rename), even as **one word**: <code>glelen d&lt;onodan&gt;</code> is not `donodan`. A cite with **`@`** is the **work**; that span is for a **multi-word** title (`d@[onodan alahen]`). One-word *Onodan* as the work is ordinary **-n** (`donodan`).
 
-Resume **-r** always uses EDGE **`u`** (`daxur`).
+> `zazawan d@[onodan alahen] vogozam.`
+>
+> z-Azawan | d-NAME.CITE[Onodan | Alahen] | v-rejection
+>
+> "Azawan dislikes Onodan Alahen." (the work)
 
-EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** takes exact **-l** (`daxul`) or resume **-r** (`daxur`).
+> <code>zazawan glelen d&lt;onodan&gt; vogozam.</code>
+>
+> z-Azawan | gl-NAME.MENTION | d-OPAQUE["onodan"] | v-rejection
+>
+> "Azawan dislikes the name “onodan.”" (might still like the work)
+
+**Compare with:** `donodan` is *Onodan* (the work or person). <code>glelen d&lt;onodan&gt;</code> is only the **name**.
+
+The marker is read only when it stands **directly before a span**. Anywhere else the same spelling is the ordinary adjective *lettered*. A mention marker does not go under `/y/` (a call or a reaction is not about a spelling), and `/w/` grades a `/ɡ/`, `/h/` or `/th/` word, never a noun, so it is not a marker either.
+
+A marker before a [topic span](#topic-quotes) works the same way:
+
+> <code>glelel x&lt;odoga&gt; zozan gamazam.</code>
+>
+> [gl-MENTION | x-OPAQUE["odoga"]] | z-TOPIC | g-small
+>
+> "Now, about the word “odoga”: it is small."
+
+### A span is an ordinary noun {#span-noun}
+
+A span fills a role slot and anchors [role pointers](pronouns.md#role-pointers) for that role like any noun. After a cite, `duxar` is *that quote*: the latest thing done to.
+
+> `zalahen d[azawan] vezebel. zahaben duxar vahahal.`
+>
+> z-Alahen | d-CITE[Azawan] | v-tell . z-Ahaben | d-←patient.same | v-see
+>
+> "Alahen said “Azawan.” Ahaben saw that."
+
+An aside adds no anchors. Names inside a cite or an aside never count toward an [ordinal](pronouns.md#ordinal-pronouns) outside it, and a pointer never reaches into one.
+
+A span in a `/v/` slot (`v[vazadal]`) has no resume pronoun, and this page deliberately defines none.
 
 ### Act words in a quote {#quote-acts}
 
-A quoted question or command keeps its own [act word](speech-moves.md#speech-act-statement-question-command) inside a multi-token cite, the same way it keeps a tone mark. The outer sentence is still your claim (*said*), and `yol` or `yel` belongs to the quoted talk. A clause-scoped cite (EDGE **e**) still ends before the next `/y/` word.
+A quoted question or command keeps its own [act word](speech-moves.md#speech-act-statement-question-command) inside the cite, the same way it keeps a tone mark. The outer sentence is still your claim (*said*), and `yol` or `yel` belongs to the quoted talk.
 
-> `zazawan daxal yol zalahen vowogal xuxul vezebel.`
+> `zazawan d[yol zalahen vowogal] vezebel.`
 >
-> z-Azawan | d-CITE.multi[y-question | z-Alahen | v-walk] | v-tell
+> z-Azawan | d-CITE[y-question | z-Alahen | v-walk] | v-tell
 >
 > "Azawan said, “Does Alahen walk?”"
 
 ### Topics in a quote {#topic-quotes}
 
-A cite is someone else's talk, so a [topic](pronouns.md#topic) never carries into it or out of it. A multi-token cite (EDGE **a**) starts with no topic, counts [ordinals](pronouns.md#ordinal-pronouns) and anchors [role pointers](pronouns.md#role-pointers) from scratch, and may open with a topic word of its own. Its topic ends when the cite does, and your own topic and count come back. A cite, mention or opaque span under `/x/` is a topic word: a titled work, a word as spelling, or a foreign name.
+A cite is someone else's talk, so a [topic](pronouns.md#topic) never carries into it or out of it. The inside of a cite starts with no topic, counts [ordinals](pronouns.md#ordinal-pronouns) and anchors [role pointers](pronouns.md#role-pointers) from scratch, and may open with a topic word of its own. Your own topic and count are untouched when the cite ends. A cite or opaque span under `/x/` is a topic word: a titled work, a word as spelling (with the mention marker before it), or a foreign name.
 
 > `x@[onodan alahen] zozan vezehel.`
 >
@@ -448,21 +425,9 @@ A cite is someone else's talk, so a [topic](pronouns.md#topic) never carries int
 >
 > "Now, about Onodan Alahen: it is sung."
 
-> `x{odoga} zozan gamazam.`
->
-> x-MENTION["odoga"] | z-TOPIC | g-small
->
-> "Now, about the word “odoga”: it is small."
-
 > <code>x@&lt;Sam&gt; zozan vowogal.</code>
 >
 > x-NAME.OPAQUE["Sam"] | z-TOPIC | v-walk
->
-> "Now, about Sam: Sam walks."
-
-> `xuxon Sam zozan vowogal.`
->
-> x-NAME.OPAQUE.atomic["Sam"] | z-TOPIC | v-walk
 >
 > "Now, about Sam: Sam walks."
 
@@ -471,116 +436,37 @@ A cite is someone else's talk, so a [topic](pronouns.md#topic) never carries int
 | Cite | none | allowed; the cite's own `/x/` word sets its topic | no |
 | Aside | yours | not allowed | n/a |
 
-> `xalahen zalahen vezebel daxal xazawan zozan vowogal xuxul. zozan vehahel.`
->
-> x-Alahen | z-Alahen | v-tell | d-CITE.multi[x-Azawan | z-TOPIC | v-walk] . z-TOPIC | v-sit
->
-> "Now, about Alahen: Alahen said, “Now, about Azawan: Azawan walks.” Alahen sits."
-
-Inside the cite `zozan` is Azawan; after it, `zozan` is Alahen again. A whole-stem **-r** outside a cite can find a word inside it (`xazawar` goes back to the Azawan the cite named), but a **-r** inside a cite cannot find a word outside: the quoted words were said before the surrounding sentence existed.
-
-Names inside a cite or an aside never count toward an [ordinal](pronouns.md#ordinal-pronouns) outside it, and an aside adds no anchors for [role pointers](pronouns.md#role-pointers) either, so a later ordinal pronoun or `zaxar` reads as if the aside were not there.
-
-### Endings on opens and span pronouns {#endings}
-
-Beginner already used a bare open, **`~`**, **`@`**, and **`[=]`**. Speech puts the same jobs on **-l** / **-m** / **-n** / **-r**.
-
-| Agazan | Use | English | Cue |
-|--------|---------|---------|-----|
-| **-l** | **exact** — verbatim / precise surface | bare open (no `@` / `~`) | **-l** stand behind the wording |
-| **-m** | **paraphrase** — gist / non-verbatim rendering | **`~`** after the role letter (`d~[…]`) | **-m** leaves the hold open |
-| **-n** | **proper** — cite: the **work**; mention: the **name** | **`@`** after the role letter (`d@[…]`, `d@{…}`) | **-n** titles the chunk; interior words keep their own endings |
-| **-r** | **resume** — the **most recent span of this TYPE**; PoS = role **now** | `d[=]`, `th(=)`, `z{=}`, … | **-r** points back |
-
-Hedged proper (`@~`) is written **`d@[…]`** only (spoken as the **proper** open with uncertain tone). **`@`** / **`~`** do not combine with resume **-r**.
-
-**-r** resumes a prior span ([pronouns.md](pronouns.md)). `daxur` is *that (cite)* as object, matching the most recent **cite** (TYPE **a**). `thexur` / `th(=)` is *that (aside)*. The resume’s role letter need not match the earlier open’s (`zaxur` = that cite as subject). No interior; no close (EDGE **`u`**).
-
-> `zazawan daxal zalahen varahal xuxul vezebel. zahaben daxur vezebel.`
->
-> z-Azawan | d-CITE.multi[z-Alahen | v-run] | v-tell . z-Ahaben | d-←cite-x-multi | v-tell
->
-> "Azawan says, 'Alahen runs.' Ahaben says that too."
-
-### Spoken calls and reactions (`/y/`) {#y-spoken-spans}
-
-A spoken span under `/y/` opens the turn the same way a written one does, and its ending does the job of the written mark: **-n** (`@`) calls, and **-l** / **-m** (no mark / `~`) react. Only TYPE **u** (opaque) and **a** (cite) go under `/y/`.
-
-> `yuxan sam xuxul yol zazawan vowogal.`
->
-> y-NAME.OPAQUE.multi["sam"] | y-question | z-Azawan | v-walk
->
-> "Sam, does Azawan walk?"
-
-> `yuxam amen xuxul.`
->
-> y-OPAQUE.multi.about["amen"]
->
-> "Amen, roughly."
-
-### Writing ↔ speech map
-
-Beginner brackets map to these spoken opens and closes.
-
-| Writing | Speech (object slot) | Notes |
-|---------|----------------------|-------|
-| `d[…]` | `daxal` … `xuxul` | exact multi-token cite (EDGE **a**); matching close |
-| `d~[…]` | `daxam` … `xuxul` | paraphrased multi-token cite |
-| `d@[…]` | `daxan` … `xuxul` | proper multi-token cite; also spelling of hedged proper |
-| `d{…}` / `d~{…}` / `d@{…}` | `doxal` / `doxam` / `doxan` … `xuxul` | mention |
-| `th(…)` / `th~(…)` / `th@(…)` | `thexal` / `thexam` / `thexan` … `xuxul` | aside (open PoS is `/th/`) |
-| `th(hagawal)` | `thexol hagawal` | atomic aside |
-| `th(=)` | `thexur` | aside resume |
-| `d<…>` / `d~<…>` / `d@<…>` | `duxal` / `duxam` / `duxan` … `xuxul` | opaque |
-| `d[azawan]` | `daxol azawan` | atomic (EDGE **o**) |
-| `d@[onodan alahen]` | `daxan onodan alahen xuxul` | proper multi-token cite (the work) |
-| `d[…` … (to clause end) | `daxel` … | clause-scoped (EDGE **e**) |
-| `d[]` | `daxul` | empty / redacted (EDGE **u**) |
-| `d[=]` | `daxur` | resume (EDGE **u**) |
-
-The close does not repeat PoS, TYPE, EDGE, or open fidelity. Explicit close for EDGE **a** is **`xuxul`**.
-
-### Nesting {#nesting}
-
-When one packaged chunk sits inside another (a quote that contains a parenthetical, or a cite wrapping a mention), each typed fence nests. A multi-token open starts a layer; **`xuxul`** closes the innermost layer. Atomic opens and resumes do not start a new layer. **`@`** / **`~`** apply only to the immediately following open.
-
-> `zazawan d[ th(hagawal) azawan ] vezebel.`
->
-> z-Azawan | d-CITE[th-ASIDE[h-quiet] | Azawan] | v-tell
->
-> "Azawan said “Azawan” (quietly)." (hello)
-
-The same nest works as `d[ z{…} ]` or `d~[ d<…> ]`.
+A **-r** inside a cite cannot find a word outside it: the quoted words were said before the surrounding sentence existed.
 
 ### Scope islands {#scope-islands}
 
-Sometimes *possibility* or a join should apply only to a multi-word chunk, not the whole clause. Writing marks that chunk with **`^ … ^`**. Speech has no open or close word for those edges: you hear a pause and one tight phrase. The binder **inside** does the work.
+Sometimes *possibility* or a join should apply only to a multi-word chunk, not the whole clause. Braces **`{ … }`** mark that chunk. They are the only use of braces. Speech has no open or close word for those edges: you hear a pause and one tight phrase. The binder **inside** does the work.
 
-> `zazawan ^ hegewem zodogal geredal ^ vahahal.`
+> `zazawan { hegewem zodogal geredal } vahahal.`
 >
 > z-Azawan | SCOPE[h-possibility | [z-dog | g-red]] | v-see
 >
 > "Azawan saw, as a possibility, the red dog." (*possibility* targets that chunk).
 
-A [tone mark](speech-moves.md#tone-marks) written right before the opening `^` colors the whole island (`!^ hegewem zodogal geredal ^`).
+A [tone mark](speech-moves.md#tone-marks) written right before the opening brace colors the whole island (`!{ hegewem zodogal geredal }`).
 
-**Compare with:** quoting, asides, mentions, and opaque blobs use typed [span fences](#writing) (`d[…]`, `th(…)`). Islands only group so a binder inside can target that chunk.
+**Compare with:** quoting, asides, mentions, and opaque blobs use [spans](#writing) (`d[…]`, `th(…)`, <code>d&lt;…&gt;</code>). Islands only group so a binder inside can target that chunk.
 
 - No role letter on the edges.
 - **At most one phrase.** After its binder, an island holds at most one phrase: a `/z/`, `/d/`, or `/b/` noun phrase, a `/v/` verb phrase, or a `/ɡ/` stack, with that phrase’s own adjectives, `/w/` detail, and join. An `/h/` word is a binder, never the phrase.
 - **It may close early.** The island can stop partway through its phrase; the pause marks where. By the end of the phrase at the latest, it has closed: a new role letter or the outer join always comes after the island.
 - **Hosts keep their `/b/`.** A host (`/ɡ/`, `/h/`, `/th/`) and its hosted `/b/` are both inside the island or both outside.
 - **One island per clause.** Islands do not nest.
-- Empty `^^` has no reading.
+- Empty `{ }` has no reading.
 - **Binder required:** at least one scope-taking `/h/` or `/th/` and/or a [join](joins.md#scope-islands-join) particle **inside**.
-- Prefer spaces inside: `^ hegewem zodogal geredal ^`.
+- Prefer spaces inside: `{ hegewem zodogal geredal }`.
 
 | Binder | Use inside the island |
 |--------|------------------------|
 | Scope-taking **`/h/`** or **`/th/`** | frames that **chunk** (prefer first in the island; see the `/b/` exception below) |
 | Prefixed **join** | joins **only** matching-role material **inside** — [scope islands](joins.md#scope-islands-join) |
 
-`/h/` and a join may share one island (`^ hegewem zazawan zalahen zam ^`).
+`/h/` and a join may share one island (`{ hegewem zazawan zalahen zam }`).
 
 | Placement | Reading |
 |-----------|---------|
@@ -589,7 +475,7 @@ A [tone mark](speech-moves.md#tone-marks) written right before the opening `^` c
 | Join **inside** | joins only interior conjuncts |
 | Join **outside** with island nearby | ordinary lookback (edges do not filter an outside join) |
 
-> `zazawan ^ zalahen zal ^ zam vahahal.`
+> `zazawan { zalahen zal } zam vahahal.`
 >
 > [z-Azawan | SCOPE[z-Alahen | z-and] | z-and.open] | v-see
 >
@@ -597,7 +483,7 @@ A [tone mark](speech-moves.md#tone-marks) written right before the opening `^` c
 
 A `/b/` right after an `/h/` word is hosted by it ([extra nouns](clause.md#extra-nouns)). To put a recipient `/b/` in an island, write it **before** the binder:
 
-> `zazawan ^ balahen hegewem ^ vezebel.`
+> `zazawan { balahen hegewem } vezebel.`
 >
 > z-Azawan | SCOPE[b-Alahen | h-possibility] | v-tell
 >
@@ -607,7 +493,7 @@ The word before the island must not be a `/ɡ/`, `/h/`, or `/th/` word either, o
 
 An island can hold part of a phrase. Here only *not small* is grouped, so **`gul`** denies *small* alone and **`gal`** adds it to *red*:
 
-> `zodogal geredal ^ gamazam gul ^ gal vowogal.`
+> `zodogal geredal { gamazam gul } gal vowogal.`
 >
 > [z-dog | [g-red | SCOPE[g-small | g-not] | g-and]] | v-walk
 >
@@ -631,61 +517,36 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahaben* | `ahaben` |
 | *tell* | `vezebel` |
 | *see* | `vahahal` |
-| *sing* | `vezehel` |
 | *attest* | `vodol` |
 | *lie* (verb) | `valahal` |
 | *lie* (noun) | `alahal` |
-| *scream* | `vezugel` |
 | *punch* | `vabahel` |
-| *Judge* | `ahahun` |
+| *walk* | `vowogal` |
+| *rejection* | `vogozam` |
 | *small* | `gamazam` |
-| *quiet* | `agawal` |
+| *topic* | `ozan` |
 | *possibility* | `hegewem` |
-| *FBI* | <code>d&lt;FBI&gt;</code> |
+| *letters* (mention marker) | `glelel` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Azawan said “Azawan.”* (spoken atomic cite)
+**1.** *Alahen said “Azawan attests.”* (a multi-word cite)
 
 ::: details Show answer
-`zazawan daxol azawan vezebel.`
+`zalahen d[zazawan vodol] vezebel.`
 
-z-Azawan | d-CITE.atomic[Azawan] | v-tell
+z-Alahen | d-CITE[z-Azawan | v-attest] | v-tell
 :::
 
-**2.** *Alahen said “Azawan attests.”* (spoken multi-token cite)
+**2.** *Alahen said “Azawan.” Ahaben saw that.* (a pointer to the quote)
 
 ::: details Show answer
-`zalahen daxal zazawan vodol xuxul vezebel.`
+`zalahen d[azawan] vezebel. zahaben duxar vahahal.`
 
-z-Alahen | d-CITE.multi[z-Azawan | v-attest] | v-tell
+z-Alahen | d-CITE[Azawan] | v-tell . z-Ahaben | d-←patient.same | v-see
 :::
 
-**3.** *Ahaben said that.* (spoken cite resume)
-
-::: details Show answer
-`zahaben daxur vezebel.`
-
-z-Ahaben | d-←cite.spoken | v-tell
-:::
-
-**4.** *Azawan said \[redacted\].*
-
-::: details Show answer
-`zazawan daxul vezebel.`
-
-z-Azawan | d-CITE.empty[] | v-tell
-:::
-
-**5.** *Alahen saw FBI.* (spoken atomic opaque)
-
-::: details Show answer
-`zalahen duxol FBI vahahal.`
-
-z-Alahen | d-OPAQUE.atomic["FBI"] | v-see
-:::
-
-**6.** *Azawan said “Azawan” (quietly).* (cite nesting an aside)
+**3.** *Azawan said “Azawan” (quietly).* (a cite nesting an aside)
 
 ::: details Show answer
 `zazawan d[ th(hagawal) azawan ] vezebel.`
@@ -693,95 +554,119 @@ z-Alahen | d-OPAQUE.atomic["FBI"] | v-see
 z-Azawan | d-CITE[th-ASIDE[h-quiet] | Azawan] | v-tell
 :::
 
-**7.** *Azawan saw, as a possibility, the lie.* (*possibility* targets that chunk)
+**4.** *The word “onoda” is small.*
 
 ::: details Show answer
-`zazawan ^ hegewem dalahal ^ vahahal.`
+<code>glelel z&lt;onoda&gt; gamazam.</code>
+
+[gl-MENTION | z-OPAQUE["onoda"]] | g-small
+:::
+
+**5.** *Azawan dislikes the name “onodan.”* (the name-string, not the work)
+
+::: details Show answer
+<code>zazawan glelen d&lt;onodan&gt; vogozam.</code>
+
+z-Azawan | gl-NAME.MENTION | d-OPAQUE["onodan"] | v-rejection
+:::
+
+**6.** *Azawan said, “Does Alahen walk?”* (the question keeps its act word)
+
+::: details Show answer
+`zazawan d[yol zalahen vowogal] vezebel.`
+
+z-Azawan | d-CITE[y-question | z-Alahen | v-walk] | v-tell
+:::
+
+**7.** *Now, about the word “odoga”: it is small.*
+
+::: details Show answer
+<code>glelel x&lt;odoga&gt; zozan gamazam.</code>
+
+[gl-MENTION | x-OPAQUE["odoga"]] | z-TOPIC | g-small
+:::
+
+**8.** *Azawan saw, as a possibility, the lie.* (*possibility* targets that chunk)
+
+::: details Show answer
+`zazawan { hegewem dalahal } vahahal.`
 
 z-Azawan | SCOPE[h-possibility | d-lie] | v-see
 :::
 
-**8.** *Alahen and (just Azawan) punched.*
+**9.** *Alahen and (just Azawan) punched.*
 
 ::: details Show answer
-`zalahen ^ zazawan zal ^ zam vabahel.`
+`zalahen { zazawan zal } zam vabahel.`
 
 [z-Alahen | SCOPE[z-Azawan | z-and] | z-and.open] | v-punch
-:::
-
-**9.** *The phrase “alahen vodol” is small.* (spoken multi-token mention)
-
-::: details Show answer
-`zoxal alahen vodol xuxul gamazam.`
-
-z-MENTION.multi["alahen" | "vodol"] | g-small
 :::
 
 **10.** *Ahaben saw, as a possibility, the lie!* (strong feeling on that chunk)
 
 ::: details Show answer
-`zahaben !^ hegewem dalahal ^ vahahal.`
+`zahaben !{ hegewem dalahal } vahahal.`
 
 z-Ahaben | !SCOPE[h-possibility | d-lie] | v-see
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zazawan vezebel daxel azawan.`
+**1.** `zazawan d[zalahen vodol] vezebel.`
 
 ::: details Show answer
 
-z-Azawan | v-tell | d-CITE.clause[Azawan]
+z-Azawan | d-CITE[z-Alahen | v-attest] | v-tell
 
-*Azawan said “Azawan.”* (hello; the cite runs to the clause end, so the verb comes first)
+*Azawan said “Alahen attests.”*
 :::
 
-**2.** `zazawan daxam zazawan vodol xuxul vezebel.`
+**2.** `zahaben d~[zazawan vodol] vezebel.`
 
 ::: details Show answer
 
-z-Azawan | d-CITE.multi.about[z-Azawan | v-attest] | v-tell
+z-Ahaben | d-CITE.about[z-Azawan | v-attest] | v-tell
 
-*Azawan said something like “Azawan attests.”*
+*Ahaben said something like “Azawan attests.”*
 :::
 
-**3.** `zaxur gamazam.`
+**3.** `zalahen d[azawan] vezebel. zahaben duxar vahahal.`
 
 ::: details Show answer
 
-z-←cite.spoken | g-small
+z-Alahen | d-CITE[Azawan] | v-tell . z-Ahaben | d-←patient.same | v-see
 
-*That (cite) is small.*
+*Alahen said “Azawan.” Ahaben saw that.*
 :::
 
-**4.** `zahaben doxon ahahun vezebel.`
+**4.** <code>zahaben glelen d&lt;ahahun&gt; vezebel.</code>
 
 ::: details Show answer
 
-z-Ahaben | d-NAME.MENTION.atomic["ahahun"] | v-tell
+z-Ahaben | gl-NAME.MENTION | d-OPAQUE["ahahun"] | v-tell
 
-*Ahaben said the name “Ujudun.”*
+*Ahaben said the name “ahahun.”*
 :::
 
-**5.** `zazawan vezehel thexol hagawal.`
+**5.** <code>glelel z&lt;ahahul&gt; gamazam.</code>
 
 ::: details Show answer
 
-z-Azawan | v-sing | th-ASIDE.atomic[h-quiet]
-
-*Azawan sings (quietly).*
-:::
-
-**6.** `zoxol ahahul gamazam.`
-
-::: details Show answer
-
-z-MENTION.atomic["ahahul"] | g-small
+[gl-MENTION | z-OPAQUE["ahahul"]] | g-small
 
 *The word “ahahul” is small.*
 :::
 
-**7.** `zalahen ^ hegewem dalahal ^ vahahal.`
+**6.** <code>glelel z&lt;ahaben vodol&gt; gamazam.</code>
+
+::: details Show answer
+
+[gl-MENTION | z-OPAQUE["ahaben vodol"]] | g-small
+
+*The phrase “ahaben vodol” is small.*
+:::
+
+**7.** `zalahen { hegewem dalahal } vahahal.`
 
 ::: details Show answer
 
@@ -790,25 +675,25 @@ z-Alahen | SCOPE[h-possibility | d-lie] | v-see
 *Alahen saw, as a possibility, the lie.*
 :::
 
-**8.** `zazawan vezebel thexal zalahen valahal xuxul.`
+**8.** `zazawan vowogal th(zalahen valahal).`
 
 ::: details Show answer
 
-z-Azawan | v-tell | th-ASIDE.multi[z-Alahen | v-lie]
+z-Azawan | v-walk | th-ASIDE[z-Alahen | v-lie]
 
-*Azawan tells (Alahen lies).*
+*Azawan walks (Alahen lies).*
 :::
 
-**9.** `zoxal ahaben vezugel xuxul gamazam.`
+**9.** <code>zahaben glelel d&lt;ahahul&gt; vezebel.</code>
 
 ::: details Show answer
 
-z-MENTION.multi["ahaben" | "vezugel"] | g-small
+z-Ahaben | gl-MENTION | d-OPAQUE["ahahul"] | v-tell
 
-*The phrase “ahaben vezugel” is small.*
+*Ahaben said the word “ahahul.”*
 :::
 
-**10.** `zalahen ?^ zazawan zal ^ zam vabahel.`
+**10.** `zalahen ?{ zazawan zal } zam vabahel.`
 
 ::: details Show answer
 
@@ -819,39 +704,36 @@ z-MENTION.multi["ahaben" | "vezugel"] | g-small
 
 ## Advanced {#advanced}
 
-### Close forms (complete / editorial / close-all)
+### Editorial close and close-all {#close-forms-complete-editorial-close-all}
 
-You already close a multi-token span with **`xuxul`**, the spoken match for `]` / `}` / `)` / `>`. Two more close words: **`xuxur`** keeps the wording as written but marks that the span is cut off, trails off, or is defective; **`xuxum`** closes every still-open span at once.
+A span closes whole with its closing bracket. Two written marks go **inside** the closing bracket. **`#`** keeps the wording as written but marks that the span is cut off, trails off, or is defective. **`|`** closes every span still open around it at once.
 
-> `zazawan daxal azawan xuxur vezebel.`
+> `zazawan d[abogam#] vezebel.`
 >
-> z-Azawan | d-CITE.multi[Azawan]# | v-tell
+> z-Azawan | d-CITE[flaw]# | v-tell
 >
-> "Azawan said “Azawan…”" (hello, trailing off)
+> "Azawan said “bug…”" (trailing off)
 
-| Agazan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`xuxul`** | close **one** span, whole | matching closer `]` / `}` / `)` / `>` | **-l** exact: the span closes whole |
-| **`xuxur`** | close **one** — **editorial** (wording kept as written: cut off, trail off, or defect noted) | `#]` / `#}` / `#)` / `#>` | **-r** resume: the wording stops short; resume may pick up |
-| **`xuxum`** | close **all** open spans | optional close-all mark `\|` | **-m** soft: sweep everything |
-| **`xuxur`** + **`xuxum`** | editorial innermost, then close all | `#\|` | |
+| Writing | Use | English | Cue |
+|---------|-----|---------|-----|
+| `d[…]` | close **one** span, whole | the matching closer | the bracket closes it |
+| `d[…#]` | **editorial**: wording kept as written, cut off or defective | trailing off | **#** a note on the text |
+| `d[…|]` | close **all** open spans | sweep everything | **\|** one bar through every bracket |
+| `d[…#|]` | editorial, then close all | | write `#` first, then `\|` |
 
-```text
-xuxul  =  x + u + x + u + l
-xuxur  =  x + u + x + u + r
-xuxum  =  x + u + x + u + m
-```
+An editorial span still counts as quoted: a role pointer can reach it as it reaches any cite.
 
-An editorial span still counts as said: resume (`d[=]` / `daxur`) may point back to it. Combined `#\|` is two spoken closes in writing; write editorial first, then close-all. Bare `xuxur` closes one (editorial).
+### Nesting {#nesting}
 
-**Not the same job as:** a clause join (`xul` / `xum`, which go between clauses). Empty and resume forms are **opens** with a role letter (`daxul` redacted; `daxur` that cite). Closes are **`xuxul`** / **`xuxur`**.
+When one packaged chunk sits inside another (a quote that contains a parenthetical, or a cite wrapping an opaque blob), the spans nest, and each one closes with its own bracket.
 
-| Writing | Speech | Notes |
-|---------|--------|-------|
-| `d[…#]` | `daxal` … `xuxur` | editorial close |
-| `d[…#\|]` | `daxal` … <!-- lint: fragment -->`xuxur xuxum` | editorial + close-all |
+> `zazawan d[ th(hagawal) azawan ] vezebel.`
+>
+> z-Azawan | d-CITE[th-ASIDE[h-quiet] | Azawan] | v-tell
+>
+> "Azawan said “Azawan” (quietly)." (hello)
 
-For a cut-off cite, use EDGE **`a`** + **`xuxur`**. EDGE **`e`** already ends at the clause with a whole close.
+The same nest works as <code>d[ z&lt;…&gt; ]</code> or <code>d~[ d&lt;…&gt; ]</code>.
 
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
@@ -869,32 +751,31 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Ahaben* | `ahaben` |
 | *tell* | `vezebel` |
 | *bug* | `abogam` |
-| *quiet* | `agawal` |
 
 #### English → Agazan {#advanced-english-to-agazan}
 
 **1.** *Ahaben said “bug.”* (complete close of one span)
 
 ::: details Show answer
-`zahaben daxal abogam xuxul vezebel.`
+`zahaben d[abogam] vezebel.`
 
-z-Ahaben | d-CITE.multi[flaw] | v-tell
+z-Ahaben | d-CITE[flaw] | v-tell
 :::
 
 **2.** *Alahen said “bug…”* (the cite trails off)
 
 ::: details Show answer
-`zalahen daxal abogam xuxur vezebel.`
+`zalahen d[abogam#] vezebel.`
 
-z-Alahen | d-CITE.multi[flaw]# | v-tell
+z-Alahen | d-CITE[flaw]# | v-tell
 :::
 
-**3.** *Azawan said “bug” (quietly), then close every open span at once.*
+**3.** *Azawan said “bug…” and that closes every open span.*
 
 ::: details Show answer
-`zazawan daxal thexol hagawal abogam xuxum vezebel.`
+`zazawan d[abogam#|] vezebel.`
 
-z-Azawan | d-CITE.multi[th-ASIDE.atomic[h-quiet] | flaw]| | v-tell
+z-Azawan | d-CITE[flaw]#| | v-tell
 :::
 
 #### Agazan → English {#advanced-agazan-to-english}
@@ -908,13 +789,13 @@ z-Azawan | d-CITE[flaw]# | v-tell
 *Azawan said “bug…”*
 :::
 
-**2.** `zalahen daxal abogam xuxur xuxum vezebel.`
+**2.** `zalahen d[abogam] vezebel.`
 
 ::: details Show answer
 
-z-Alahen | d-CITE.multi[flaw]# | x-span-close-all | v-tell
+z-Alahen | d-CITE[flaw] | v-tell
 
-*Alahen said “bug…”*
+*Alahen said “bug.”*
 :::
 
 **3.** `zahaben d[abogam#|] vezebel.`
@@ -925,31 +806,6 @@ z-Ahaben | d-CITE[flaw]#| | v-tell
 
 *Ahaben said “bug…”*
 :::
-
-## Reference tables {#reference-tables}
-
-Lookup grids that restate forms taught above; nothing here is new.
-
-### Spoken inventory
-<a id="inventory"></a>
-
-The rest of the spoken open map (PoS shown as `…`; EDGE **a** unless noted).
-
-| TYPE | exact multi **-l** | paraphrase **-m** | proper **-n** | resume **-r** (EDGE **u**) |
-|------|--------------------|-------------------|---------------|------------------------------|
-| cite **a** | `…axal` | `…axam` | `…axan` | `…axur` |
-| aside **e** | `thexal` | `thexam` | `thexan` | `thexur` |
-| mention **o** | `…oxal` | `…oxam` | `…oxan` | `…oxur` |
-| opaque **u** | `…uxal` | `…uxam` | `…uxan` | `…uxur` |
-
-Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); aside atomic **`thexol`**. Clause-scoped (EDGE **e**): `…axel` / `…axem` / `…axen`. Empty exact (EDGE **u**): `…axul` / `thexul` / `…oxul` / `…uxul`. Aside **opens** use `/th/`; resume may recast the aside into another slot (`dexur`).
-
-| Form | Use |
-|------|-----|
-| `xuxul` | close one — whole |
-| `xuxur` | close one — editorial |
-| `xuxum` | close all |
-| <!-- lint: fragment -->`xuxur xuxum` | editorial + close all (writing `#\|`) |
 
 ## See also
 

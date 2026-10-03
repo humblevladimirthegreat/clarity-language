@@ -245,3 +245,5 @@ ohum,w,🌠,want,WANT-unstated,want mood (duration unstated),wishing on a star; 
 ohur,th,🌠,want,WANT-passing,want mood passing (a whim that fades),shooting star streaks past; a passing want fades quickly,intention.md#want
 ohur,w,🌠,want,WANT-passing,want mood passing (a whim that fades),shooting star streaks past; a passing want fades quickly,intention.md#want
 azem,w,🧦,pairing,respectively,respective pairing (item N of one list goes with item N of the other),socks sort into matched pairs; respectively matches each item to its partner,joins.md#respectively
+elel,g,🔤,mention,MENTION,mention marker (the span is a word or phrase as spelling),letters spell a word; a mention is a word as its letters,spans.md#mention
+elen,g,🔤,mention,NAME.MENTION,name-string mention marker (the span is a name as spelling),letters spell a name; the name-string is a name as its letters,spans.md#mention

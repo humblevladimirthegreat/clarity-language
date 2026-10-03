@@ -22,36 +22,30 @@ describe("previewSpeech", () => {
     assert.deepEqual(speech.spoken, ["grarel"]);
   });
 
-  it("expands writing spans and skips foreign interiors", () => {
+  it("speaks a span's words and skips foreign interiors", () => {
     const span = previewSpeech("d[hi]");
-    assert.deepEqual(span.spoken, ["daxol"]);
+    assert.deepEqual(span.spoken, []);
     assert.ok(span.skipped.some((s) => s.raw === "hi" && s.reason === "foreign"));
 
     const foreign = previewSpeech("d<sushi>");
-    assert.deepEqual(foreign.spoken, ["duxol"]);
+    assert.deepEqual(foreign.spoken, []);
     assert.ok(foreign.skipped.some((s) => s.raw === "sushi" && s.reason === "foreign"));
   });
 
-  it("expands multi-token cite with close", () => {
-    const plan = previewSpeech("d[zadagal zagadul]");
-    assert.deepEqual(plan.spoken, ["daxal", "zadagal", "zagadul", "xuxul"]);
-  });
-
-  it("expands span anaphor and empty cite", () => {
-    assert.deepEqual(previewSpeech("d[=]").spoken, ["daxur"]);
-    assert.deepEqual(previewSpeech("d[]").spoken, ["daxul"]);
-    assert.deepEqual(previewSpeech("d@[Hamlet]").spoken, ["daxon"]);
+  it("speaks a multi-token cite without opens or closes", () => {
+    assert.deepEqual(previewSpeech("d[zadagal zagadul]").spoken, ["zadagal", "zagadul"]);
+    assert.deepEqual(previewSpeech("d@[zadagal zagadul]").spoken, ["zadagal", "zagadul"]);
   });
 
   it("tags island edges without skipping them", () => {
-    const plan = previewSpeech("^ zazawan vawalal ^");
+    const plan = previewSpeech("{ zazawan vawalal }");
     assert.deepEqual(boundaryTags(plan), ["islandEnter", "islandExit"]);
     assert.deepEqual(plan.spoken, ["zazawan", "vawalal"]);
     assert.equal(plan.skipped.length, 0);
   });
 
   it("tags island in join scope example", () => {
-    const plan = previewSpeech("zazawan ^ zununel zal ^ zam.");
+    const plan = previewSpeech("zazawan { zununel zal } zam.");
     assert.deepEqual(plan.spoken, ["zazawan", "zununel", "zal", "zam"]);
     assert.ok(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "islandEnter"));
     assert.ok(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "islandExit"));
@@ -145,7 +139,7 @@ describe("previewPhonemes", () => {
   });
 
   it("keeps word spaces inside islands without comma between words", () => {
-    const plan = previewPhonemes("^ zazawan vawalal ^");
+    const plan = previewPhonemes("{ zazawan vawalal }");
     assert.match(plan.ipaPhonemes, /zäzäwän väwäläl/);
     assert.doesNotMatch(plan.ipaPhonemes, /wän, vä/);
   });

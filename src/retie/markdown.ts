@@ -10,7 +10,6 @@ import {
   HTML_CODE_RE,
   isAgazanLintCandidate,
   LINT_MARKER_RE,
-  SPOKEN_OPAQUE_RE,
 } from "../lint/agazan-docs.js";
 import { fillSelf } from "../learner-name.js";
 import type { ClassifyTables } from "../parse/classify.js";
@@ -112,17 +111,7 @@ export function rewriteMarkdown(
             return filled?.endsWith("l") ? `${filled.slice(0, -1)}${cut[2]}` : null;
           }
         : base;
-    let out = "";
-    let at = 0;
-    // A spoken opaque span's interior is foreign text, not Agazan words.
-    for (const match of text.matchAll(new RegExp(SPOKEN_OPAQUE_RE.source, "g"))) {
-      const innerStart = match.index! + match[1]!.length;
-      const innerEnd = match.index! + match[0].length - match[2]!.length;
-      out += rewritePlainTokens(text.slice(at, innerStart), rewrite, index + at, changes);
-      out += text.slice(innerStart, innerEnd);
-      at = innerEnd;
-    }
-    out += rewritePlainTokens(text.slice(at), rewrite, index + at, changes);
+    const out = rewritePlainTokens(text, rewrite, index, changes);
     // Unchanged spans are kept too: verify checks that none still holds a moved root.
     spans.push({ before: text, after: out, index, cls });
     return out;

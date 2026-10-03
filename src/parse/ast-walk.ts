@@ -4,8 +4,7 @@
  *
  * `word` fires for every word a node holds, with the slot it fills. `join` fires where a
  * join word sits (before its shared items). `enter` / `exit` bracket every node; `enter` may
- * return {@link SKIP} to leave the node's children unvisited, or {@link SKIP_CONTENT} to
- * visit only a span's open word.
+ * return {@link SKIP} to leave the node's children unvisited.
  */
 import type {
   BodyClause,
@@ -24,15 +23,13 @@ import type {
   NpPackage,
   ParseResult,
   ScaleShared,
-  SpanUnit,
   Unit,
   Utterance,
   VpCoord,
 } from "./types.js";
 
 export const SKIP = "skip";
-export const SKIP_CONTENT = "skipContent";
-type Skip = typeof SKIP | typeof SKIP_CONTENT;
+type Skip = typeof SKIP;
 
 export type WordSlot =
   | "vocative"
@@ -57,10 +54,7 @@ export type WordSlot =
   | "joinModifier"
   | "factor"
   | "orodo"
-  | "unit"
-  | "spanOpen"
-  | "spanAtom"
-  | "spanClose";
+  | "unit";
 
 export type CoordNode =
   | { kind: "np"; coord: NpCoord }
@@ -87,7 +81,6 @@ export type AstNode =
   | { kind: "hUnit"; unit: HUnit }
   | { kind: "npPackage"; pkg: NpPackage }
   | { kind: "shared"; join: LexWord | undefined; item: CoordShared }
-  | { kind: "span"; span: SpanUnit }
   | { kind: "island"; island: IslandUnit };
 
 export type Visitor = {
@@ -151,7 +144,6 @@ function visitLeftEdge(left: LeftEdge, v: Visitor): void {
   w(left.vocatives, "vocative");
   w(left.interjections, "interjection");
   w(left.polars, "polar");
-  for (const { span } of left.spans ?? []) visitSpan(span, v);
   w(left.hook, "hook");
   w(left.hookModifiers, "hookModifier");
   w(left.leadForce, "leadForce");
@@ -161,8 +153,8 @@ function visitLeftEdge(left: LeftEdge, v: Visitor): void {
 function visitBody(body: BodyClause, v: Visitor): void {
   const node: AstNode = { kind: "body", body };
   if (v.enter?.(node) === SKIP) return;
+  if (body.topicMarker) v.word?.(body.topicMarker, "unit");
   if (body.linker) v.word?.(body.linker, "linker");
-  if (body.topicSpan) visitSpan(body.topicSpan, v);
   visitClause(body.clause, v);
   v.exit?.(node);
 }
@@ -170,8 +162,6 @@ function visitBody(body: BodyClause, v: Visitor): void {
 export function visitClause(clause: Clause, v: Visitor): void {
   const node: AstNode = { kind: "clause", clause };
   if (v.enter?.(node) === SKIP) return;
-  if (clause.left) visitLeftEdge(clause.left, v);
-  if (clause.linker) v.word?.(clause.linker, "linker");
   for (const unit of clause.units) visitUnit(unit, v);
   if (clause.dependent) {
     v.word?.(clause.dependent.orodo, "orodo");
@@ -184,19 +174,6 @@ function visitIsland(island: IslandUnit, v: Visitor): void {
   const node: AstNode = { kind: "island", island };
   if (v.enter?.(node) === SKIP) return;
   for (const unit of island.units) visitUnit(unit, v);
-  v.exit?.(node);
-}
-
-function visitSpan(span: SpanUnit, v: Visitor): void {
-  const node: AstNode = { kind: "span", span };
-  const skip = v.enter?.(node);
-  if (skip === SKIP) return;
-  v.word?.(span.open, "spanOpen");
-  if (skip !== SKIP_CONTENT) {
-    for (const clause of span.content) visitClause(clause, v);
-    if (span.atom) v.word?.(span.atom, "spanAtom");
-    if (span.close) v.word?.(span.close, "spanClose");
-  }
   v.exit?.(node);
 }
 
@@ -225,9 +202,6 @@ export function visitUnit(unit: Unit, v: Visitor): void {
       for (const mod of unit.modifiers) v.word?.(mod, "hookModifier");
       v.word?.(unit.word, "hook");
       if (unit.frame) visitHUnit(unit.frame, v);
-      return;
-    case "span":
-      visitSpan(unit.span, v);
       return;
     case "island":
       visitIsland(unit.island, v);
