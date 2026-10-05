@@ -10,6 +10,11 @@ use [skip-cd] for amplify to not deploy.
 
 -buy domain
 -flash cards for claritish
+-see if other why-agazan features should go to claritish. 
+-Move claritish to top of sidebar and have it collapsible
+-claritish editor
+-review unassigned with competing intuitive readings
+-agazan introduction should mention grammar reusability
 -prosody
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -final exam
@@ -18,6 +23,9 @@ use [skip-cd] for amplify to not deploy.
 -review logical deduction
 -fix output too large for find lexicon
 -parser can optionally output translation guidance
+-eliminate lexicon retie by default
+-allow -rm -rl on content roots if ambiguous referent
+-numbered pronouns can refer to -r
 
 save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.
