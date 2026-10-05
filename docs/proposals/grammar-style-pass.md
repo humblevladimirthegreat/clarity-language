@@ -11,7 +11,7 @@ Bring every stage page under `docs/grammar/` into line with [doc-style.md](../me
 
 **In scope (27 pages):** `why-agazan`, `introduction`, `phonology`, `word-endings`, `clause`, `speech-moves`, `dependents`, `pronouns`, `plurality`, `predication`, `joins`, `questions`, `hooks`, `restrictors`, `relations`, `spans`, `numbers`, `comparatives`, `causation`, `sakes`, `intention`, `knowing`, `roles`, `x-compounds`, `join-across-roles`, `numbers-applied`, `numeric-derivation`.
 
-**Out of scope (do not edit):** `english.md` and every `say-*.md` (recipe track), everything under `claritish/`, `terminology.md`, `index.md`, `lexicon.md`, `inspect.md`.
+**Out of scope (do not edit):** `english.md` and every `say-*.md` (recipe track), everything under `claritish/`, `terminology.md`, `exceptions-cheatsheet.md`, `index.md`, `lexicon.md`, `inspect.md`.
 
 ## Session protocol
 
@@ -59,7 +59,7 @@ These are the tests from [doc-style.md](../meta/doc-style.md), applied to every 
 Batches are sized at about 10k words or less. Word counts are approximate.
 
 - [x] **Batch 2.1:** `why-agazan` (4.5k), `introduction` (1k), `phonology` (2k)
-- [ ] **Batch 2.2:** `word-endings` (3k), `clause` (3.5k)
+- [x] **Batch 2.2:** `word-endings` (3k), `clause` (3.5k)
 - [ ] **Batch 2.3:** `speech-moves` (2.5k), `dependents` (5.4k)
 - [ ] **Batch 2.4:** `pronouns` (7.3k)
 - [ ] **Batch 2.5:** `plurality` (2.9k), `predication` (3.8k)
@@ -117,6 +117,16 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - `phonology` Intermediate: the hook-compound sentence (*fused extra-noun hook compound … cited **-l** / **-m***) uses terms from much later on the path. It is a finish-the-series inventory note, so it stays; Phase 3 can check whether it should move to `hooks`.
 - `phonology` lead previews the Advanced number-word exception with a link. Kept, since it qualifies the page's one-line job.
 - `why-agazan` Purpose/feature tour uses capitalized labels (RESIDUE, FORMER, PLAN, DECISION, WITNESSED, LIVE), each glossed in place. No change.
+
+### 2026-10-05: Batch 2.2 (`word-endings`, `clause`)
+
+- **`word-endings`:** the lead and citation sentence no longer use *job* for "role in a sentence". The **-m** lead says what the abstract sense is (an idea you cannot point at, listed in the lexicon) instead of "a job … riding on the concrete picture". Cut the Beginner sentence that previewed the Intermediate countries section. Rewrote the **-n** lead (dropped "First cases are people and places"), the name-helper line, and the greeting lead (job, shape, then "no first letter added"). Practice intros: *nativized spelling*, *the point is*, *optional memory helper* replaced. Intermediate: split the title paragraph; "**Another exception:**" (with no first exception) became a plain statement; *sentence-content category* / *lexicalized* → plain English; *resume target*, *slot-filler*, *four last letters*, *nativized loan* glossed or reworded; the continue overview lead now matches its table (it said only **-n**); the number-word lead no longer says "as reference".
+- **`clause`:** glossed *clause* in the page lead. Split the hosted-`/b/` paragraph into the rule (plus cue) and the position-not-meaning consequence. "Keep that `/b/` word away from" → "does not come right after". Missing blank line before Beginner translation practice. Complex chaining lead: one move per sentence. "Two stock adverbs work on `/h/` directly on the verb" reworded. Advanced word-order lead split into two paragraphs; *talk* → *conversation*.
+
+**Deferred / kept:**
+- `clause` Stance: the pointer to [stance as-of] on `relations` previews a later page, but it resolves a trap (a past stance) the learner hits now. Kept.
+- `clause` role-letter table cue for `/d/`, "done to (sound of *acted on*)", is unclear, but cue wording was left alone.
+- Resolved after review: `zohuxaluden` is now glossed *Ohuxaluden*, the capitalized citation (the stale *Odunaxalanen* in `meta/glosses.md` was fixed too). The real non-name **-n** families (special, generic, and topic pronouns; stand-ins; join words under `/v/` `/x/` `/ɡ/` `/h/`) moved out of `word-endings` into the new `exceptions-cheatsheet.md` (sidebar: Cheat Sheets), so the Proper name section no longer covers them.
 
 ## Questions for the editor
 

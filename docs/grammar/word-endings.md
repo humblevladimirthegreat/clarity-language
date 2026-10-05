@@ -1,8 +1,8 @@
 # Word endings
 
-A content word’s last letter tells the listener how to take this meaning: a new ordinary kind, a published abstract sense, or a name. That last letter is the **word ending**.
+A content word’s last letter tells the listener how to take its meaning: a new ordinary kind, a published abstract sense, or a name. That last letter is the **word ending**.
 
-Outside a sentence (a list, a heading, a dictionary line) you write **root + ending** with no first-letter job mark. That spelling is a **citation**.
+Outside a sentence (a list, a heading, a dictionary line) you write **root + ending**, with no first letter for the word’s role in a sentence. That spelling is a **citation**.
 
 ## Beginner {#beginner}
 
@@ -18,7 +18,7 @@ When you mention a kind of thing for the first time, in its everyday **concrete*
 ### First mention, abstract (`-m`) {#abstract-m}
 <a id="metaphor-m"></a>
 
-Sometimes the meaning you want is the published **abstract** sense for that root: a job you cannot really point at, riding on the concrete picture. When you introduce that sense for the first time, end the citation with **-m**. (cue: **m** ≈ meaning / abstract)
+Many roots also have one **abstract** sense listed in the lexicon: an idea you cannot point at, which grows out of the concrete picture. When you introduce that sense for the first time, end the citation with **-m**. (cue: **m** ≈ meaning / abstract)
 
 > `azawam`
 >
@@ -26,12 +26,10 @@ Sometimes the meaning you want is the published **abstract** sense for that root
 
 **Compare with:** the everyday picture of the same root uses **-l** (`azawal` *swan*). *Grace* is the published abstract of `azawa`, so the citation is **-m**. (cue: from *swan*: the glide of *grace*)
 
-A country or tradition root splits the three endings a little differently: see [countries and traditions](#countries-traditions).
-
 ### Named (`-n`)
 <a id="named-n-beginner"></a>
 
-When the word is a **name** (this person or this place, not a kind of thing), end the citation with **-n**. First cases are people and places. (cue: **n** ≈ name)
+When the word is a **name** for one particular person or place, not a kind of thing, end the citation with **-n**. (cue: **n** ≈ name)
 
 > `azawan`
 >
@@ -39,13 +37,13 @@ When the word is a **name** (this person or this place, not a kind of thing), en
 
 **Compare with:** the same root as a kind is `azawal` *swan*; as the published abstract, `azawam` *grace*. **-n** names the person.
 
-Most published roots can be your own name this way. Pick one here, or from the [lexicon](./lexicon.md). Examples marked as yours then show it.
+Most roots can be your own name this way. Pick one here or from the [lexicon](./lexicon.md), and examples where you are the speaker will show it.
 
 <NameHelper />
 
 ### Greeting {#greeting}
 
-You can **say** a named citation with a period to greet someone or to say a simple goodbye. In either case, offer your own name. At the start, that is how you walk in; at the end, it is how you leave. The spelling is your name as you just wrote it; there is no extra first letter.
+To say hello or a simple goodbye, say your own name: the named citation, followed by a period. Said when you arrive, it greets; said when you leave, it takes leave. Write it exactly as the citation, with no first letter added.
 
 > `SELFn.`
 >
@@ -70,15 +68,15 @@ The last letters you just used, on the same root `azawa`:
 ### Writing {#citation-forms}
 <a id="prefix-less-citation"></a>
 
-A citation is **lowercase** root + ending (`azawal`, `azawam`, `azawan`). English for a citation is the bare sense (*swan*, *grace*, *Azawan*), with no article. In a sentence you will add a first letter for the word’s job; that is the [clause](clause.md#beginner) page. A [greeting](#greeting) is the named citation as a whole opening (`SELFn.`).
+A citation is **lowercase** root + ending (`azawal`, `azawam`, `azawan`). English for a citation is the bare sense (*swan*, *grace*, *Azawan*), with no article. In a sentence you add a first letter for the word’s role, as the [clause](clause.md#beginner) page shows. A [greeting](#greeting) is the named citation as a whole opening (`SELFn.`).
 
 ### Translation practice {#beginner-translation-practice}
 
-Short drills for Beginner. Try each item before opening **Show answer**. Choose **-l** (new concrete), **-m** (new abstract), or **-n** (named). Every answer is a citation (no first-letter job mark). For a name, the English prompt is the **sense** (*grace*), not the nativized spelling (*Azawan*), except the greeting items.
+Short drills for Beginner. Try each item before opening **Show answer**. Choose **-l** (new concrete), **-m** (new abstract), or **-n** (named). Every answer is a citation (no first letter). For a name, the English prompt gives the root’s **meaning** (*grace*), not the name as English spells it (*Azawan*), except in the greeting items.
 
 **Setting:** a classroom
 
-**Roots used here** (**English** is what you produce; **Agazan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (**English** is what you produce; **Agazan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is an optional memory aid):
 
 | English | Agazan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -255,7 +253,9 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 ### Proper name (`-n`) {#proper-name--n}
 
-Beginner used **-n** for a person’s or place’s name. You can also mark a **title, brand, or other conventional name** on any role letter: a named race as the verb, a named style as the adjective, a named standard as the adverb. The first letter still says the clause job; **-n** says you mean the thing that bears that name, not the kind the root describes. A brand, a product line, a work, or a yearly event counts as one named thing, even though it has many units, copies, or runnings. To mean one of those, use [**-ln**](#name-instance--ln).
+Beginner used **-n** for a person’s or place’s name. You can also mark a **title, brand, or other conventional name** on any role letter: a named race as the verb, a named style as the adjective, a named standard as the adverb. The first letter still says the word’s role in the clause; **-n** says you mean the thing that bears that name, not the kind the root describes.
+
+A brand, a product line, a work, or a yearly event counts as one named thing, even though it has many units, copies, or runnings. To mean one of those, use [**-ln**](#name-instance--ln).
 
 > `zahaben vezehen.`
 >
@@ -274,13 +274,9 @@ The rest of the role map (same **-n**):
 | `/h/` + **-n** | named standard, channel, or official frame | *according to* **[GAAP]**, *in* **[Q3]** as the named quarter  |
 | `/y/` vocative + **-n** | address this named person, place, or title; on `/y/`, **-n** always calls | `yalahen`; a kind as a title (`yagavon`); titled group (*Team Alpha*) |
 
-**Another exception:** a [stand-in](dependents.md#stand-in-roles) with **-rn** (single vowel) or **-n** (stacked vowel) names a sentence-content category, such as a statement, question, command, or prohibition. On `/v/`, these endings give the corresponding lexicalized response verbs, such as *state*, *confirm*, or *decline*.
-
-**Compare with:** [join words](joins.md) use **-n** as join packaging or join content (fence joins, clause **sequence**, [join-act](join-across-roles.md#join-act-verbs) / [join-relation](join-across-roles.md#join-relations) stems). These and lexicalized stand-ins are the exceptions where **-n** does not mark a proper name.
-
 ### One of a name (`-ln`) {#name-instance--ln}
 
-English *an iPhone*, *a copy of the Odyssey*, and *someone named Azawan* each mean one thing the name applies to, not the named thing itself. End the word in **-ln** instead of **-n**, on `/z/`, `/d/`, or `/b/`. Like **-l**, it brings a new thing into the talk, and the **n** says which name it falls under. So you can talk about one bed of a brand without spelling a separate noun for *bed*. (cue: **l** first mention, then **n** name)
+English *an iPhone*, *a copy of the Odyssey*, and *someone named Azawan* each mean one thing the name applies to, not the named thing itself. End the word in **-ln** instead of **-n**, on `/z/`, `/d/`, or `/b/`. Like **-l**, it brings a new thing into the talk, and the **n** says which name it falls under. So you can mention one bed of a bed brand without a separate word for *bed*. (cue: **l** first mention, then **n** name)
 
 > `zalahen dazawaln vahahal.`
 >
@@ -302,7 +298,7 @@ What counts as one depends on what the name names:
 | `dazawan` | the named thing itself | *Azawan* (the brand) |
 | `dazawaln` | one thing the name applies to | *an Azawan* |
 | `dazawalnx` | some things the name applies to ([plurality](plurality.md)) | *some Azawans* |
-| `zohuxaludeln` | the same on a [multipart name](#phrasal-proper-names) | *someone named Uhudexaloden* |
+| `zohuxaludeln` | the same on a [multipart name](#phrasal-proper-names) | *someone named Ohuxaluden* |
 
 An **-ln** word is a new mention, so a lone `zazawaln.` is *there is an Azawan*, and a later **-r** resume (`dazawar`) is that same bed, not the brand. A foreign name in a span uses the fence mark `^@` for the same job ([spans](spans.md#when-required)).
 
@@ -319,7 +315,7 @@ A country root and a tradition root use all four endings, with one job each:
 | **-l** | its flag: *a Japanese flag* | its symbol: *a crucifix* |
 | **-ln** | one thing that bears the name (*a ship named Japan*) | one thing that bears the name |
 
-**-n** names the whole and **-m** says you belong to it, so a nationality is not a special case. A person, a quality, or a thing from that people (*Japanese food*) takes **-m**; **-n** on `/ɡ/` is for a named style or brand (*Art Deco*, *iOS*), where nobody belongs to it.
+**-n** names the whole and **-m** says someone or something belongs to it, so a nationality is not a special case. A person, a quality, or a thing from that people (*Japanese food*) takes **-m**; **-n** on `/ɡ/` is for a named style or brand (*Art Deco*, *iOS*), where nobody belongs to it.
 
 > `zazawan gahebam.`
 >
@@ -336,7 +332,7 @@ A country root and a tradition root use all four endings, with one job each:
 ### Titled phrases (hook, join, span)
 <a id="titled-phrases"></a>
 
-A store, title, or handle can be several words. Put **-n** on the **hook**, **join**, or **span** that packages them. That letter names the whole phrase. Each inner word keeps its own ending: a kind stays **-l**, an abstract stays **-m**, a resume stays **-r**, and a person or place that is itself a name still takes **-n**.
+A store, title, or handle can be several words. Put **-n** on the **hook**, **join**, or **span** that packages them. That ending names the whole phrase. Each inner word keeps its own ending: a kind stays **-l**, an abstract stays **-m**, a resume stays **-r**, and a person or place that is itself a name still takes **-n**.
 
 > `dedehel on dagavel.`
 >
@@ -355,28 +351,28 @@ A short one-word name, or a compact multipart name with mid-word **`x`**, still 
 ### Phrasal proper names (mid-word `x`)
 <a id="phrasal-proper-names"></a>
 
-English often writes a given name plus family as two words. In Agazan a short multipart proper name (given + family, a compact place label, a shop name) is **one content word**: roots join left to right with mid-word **`x`** ([ordinary compound order](x-compounds.md#ordinary-compound-order)), and **-n** names the whole as one person or place. That one word fills one slot and is one resume target.
+English often writes a given name plus family as two words. In Agazan a short multipart proper name (given + family, a compact place label, a shop name) is **one content word**: roots join left to right with mid-word **`x`** ([ordinary compound order](x-compounds.md#ordinary-compound-order)), and **-n** names the whole as one person or place. That one word fills one slot, and one resume refers back to the whole name.
 
 > `zohuxaluden vowogal.`
 >
 > z-Ohu-x-Aluden | v-walk
 >
-> "Uhudexaloden walks."
+> "Ohuxaluden walks."
 
 | Agazan | Use | English |
 |--------|-----|---------|
-| `zohuxaluden` | nativized multipart (roots + mid-word **`x`**) | *Uhudexaloden* (*wish*×*guidance*: one person) |
+| `zohuxaluden` | nativized multipart (roots + mid-word **`x`**) | *Ohuxaluden* (*wish*×*guidance*: one person) |
 | `dohuxaluden`, `bohuxaluden` | same name in other slots | one named place / person as object or argument |
 | `zagavexedehen`, `zagavexedehexowoden` | sense / shop label (two or more lexicon roots) | *Coffee-Tea*; *Coffee-Tea-Water* |
 
-A nativized loan (adapted Agazan root + ordinary ending) uses the same four last letters as any content word. A **lexical compound** is also one slot-filler: one stem, not mid-word **`x`** (`zebedalahazal` *bedroom*).
+A nativized loan (a foreign word adapted into an Agazan root, plus an ordinary ending) takes the same four endings as any content word. A **lexical compound** also fills one slot: it is one stem, written without mid-word **`x`** (`zebedalahazal` *bedroom*).
 
 **Compare with:** adjacent bare same-role words (`zohun zaluden`) are two people in a [join](joins.md).
 
 ### Continue (`/x/`): overview
 <a id="continue-x"></a>
 
-Beginner used **-n** as a name on cited roots and on content words. On `/x/`, the last letter follows the continue family:
+Beginner used the ending to say how to take a content word’s meaning. On an `/x/` continue word, the ending instead picks what the word does:
 
 | Agazan | Use | English |
 |--------|-----|---------|
@@ -385,16 +381,16 @@ Beginner used **-n** as a name on cited roots and on content words. On `/x/`, th
 | `/x/` root + **-r** | return to a topic | *back to X* |
 | clause join + **-n** | **sequence** | *and then* **`xan`**, … ([joins](joins.md)) |
 
-Prefix-less [discourse hooks](hooks.md#discourse-hooks) use hook endings. Hook **-n** titles a [proper-name phrase](#titled-phrases) ([hooks](hooks.md#intermediate)).
+[Discourse hooks](hooks.md#discourse-hooks), which have no first letter, use hook endings. Hook **-n** titles a [proper-name phrase](#titled-phrases) ([hooks](hooks.md#intermediate)).
 
 ### Number-word exception {#number-word-exception}
 
-Beginner used **-l** / **-m** / **-n** as reference on citations. On [number words](numbers.md), those same letters (and **-r**) have **number-specific** meanings. After a role letter, the number marker **r** may start a cluster that only number words use ([phonology.md](phonology.md#phonotactics)).
+Beginner used **-l** / **-m** / **-n** to say how to take a citation’s meaning. On [number words](numbers.md), those same letters (and **-r**) have **number-specific** meanings. After a role letter, the number marker **r** may start a cluster that only number words use ([phonology.md](phonology.md#phonotactics)).
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. The point is **-n** as a title on any role letter, **-ln** for one of a name, one **`x`-compound** name, or an office **handle**.
+Short drills for Intermediate. Try each item before opening **Show answer**. They practice **-n** as a title on any role letter, **-ln** for one of a named thing, a one-word **`x`-compound** name, and a ward name used as an office **handle**.
 
 **Setting:** a hospital ward
 

@@ -1,6 +1,6 @@
 # The clause
 
-How to read and write one Agazan **clause**: who does what, word shape, and default order.
+How to read and write one Agazan **clause** (roughly, one simple sentence): who does what, how each word is shaped, and the default order.
 
 ## Beginner {#beginner}
 
@@ -88,7 +88,9 @@ A stance is yours **now**, as you speak. To give a stance you held at another ti
 
 `/b/` marks an **extra noun**: a person or thing beyond the subject and direct object. It has two jobs. You tell them apart by the word **immediately before** the `/b/` word.
 
-**Hosted: completing a relation.** Some words name a relation that needs another person or thing (*like …*). Put that word in `/ɡ/`, `/h/`, or `/th/`, then put the other noun in `/b/` right after it. That relation word is the `/b/` word’s **host**: a `/b/` right after a `/ɡ/`, `/h/`, or `/th/` word always completes that word, even a word that names no relation. A listener never takes it as the recipient, so a recipient written there is a mistake. (cue: 🪞 *mirror*: the image is *like* the model.)
+**Hosted: completing a relation.** Some words name a relation that needs a second person or thing (*like …*: like whom?). Put the relation word in `/ɡ/`, `/h/`, or `/th/`, then put the other noun in `/b/` right after it. The relation word is then the `/b/` word’s **host**. (cue: 🪞 *mirror*: the image is *like* the model.)
+
+The listener goes by position, not meaning: a `/b/` word right after any `/ɡ/`, `/h/`, or `/th/` word completes that word, even a word that names no relation. It is never read as the recipient described below, so do not put a recipient there.
 
 > `humum bazawan`
 >
@@ -118,7 +120,7 @@ A `/w/` word still goes before the host, so the host and its `/b/` stay side by 
 >
 > "Azawan tells Alahen."
 
-**Compare with:** `humum balahen` is *like Alahen*, because a `/b/` right after `/h/` completes it. To add a person who receives, keep that `/b/` word away from a `/ɡ/`, `/h/`, or `/th/` word: `balahen hadehum`, or after a finished pair (`humum bazawan balahen`).
+**Compare with:** `humum balahen` is *like Alahen*, because a `/b/` right after `/h/` completes it. To add a person who receives, make sure that `/b/` word does not come right after a `/ɡ/`, `/h/`, or `/th/` word: `balahen hadehum`, or after a finished pair (`humum bazawan balahen`).
 
 ### Role letters {#role-letters}
 
@@ -134,6 +136,7 @@ The role letters you have used so far:
 | `/w/` | extra detail on the next `/ɡ/`, `/h/`, or `/th/` word | **w** ≈ with (stuck to that host) |
 | `/h/` | adverb (how / when / where) | **h** starts *how* / *when* / *where* |
 | `/th/` | stance (how sure, how known, why, as if) | **th** ≈ *think* (your stance on the claim) |
+
 ### Translation practice {#beginner-translation-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
@@ -269,7 +272,7 @@ A `/b/` word still follows that adjective, and a `/w/` word still sits immediate
 
 ### Complex chaining {#complex-chaining}
 
-A relation adjective with its hosted `/b/` (*the same as Azawan*, **`gugol`** + `/b/`) works as one unit after a noun. You can keep chaining: a plain adjective after that pair describes the **extra noun**, not the first noun, and a `/w/` word that grades the relation sits immediately before the `/ɡ/` word. (cue: 🪙 *coin*: two faces of one thing.)
+A relation adjective and its hosted `/b/` (*the same as Azawan*: **`gugol`** + `/b/`) work as one unit after a noun. A `/w/` word that grades the relation goes immediately before the `/ɡ/` word, as usual. You can keep chaining: a plain adjective after that pair describes the **extra noun**, not the first noun. (cue: 🪙 *coin*: two faces of one thing.)
 
 > `zodogal welavam gugol bazawan.`
 >
@@ -339,7 +342,7 @@ Beginner used **`welavam`** *very* before an adjective. The same `/w/` slot take
 >
 > "A fairly blue dog walks."
 
-Two stock adverbs work on `/h/` directly on the verb. Use **`habedem`** *kind of* / *sort of* to hedge the action itself, and **`herobem`** for *again*.
+Two stock words go in `/h/` and describe the verb itself. Use **`habedem`** *kind of* / *sort of* to hedge the action, and **`herobem`** for *again*.
 
 | Agazan | English | Cue |
 |--------|---------|-----|
@@ -499,7 +502,9 @@ z-dog | [[w-very | h-like] | b-Azawan] | v-sleep
 
 ### Word order and English emphasis {#word-order-emphasis}
 
-Beginner showed that you may reorder the words of a clause, because the first letters already say who did what. The **first content word** is what you highlight: what you want heard first, or the new information. First position only highlights within one sentence; what the whole talk is about is the [topic](pronouns.md#topic), set by an `/x/` word. Opening `/y/` words, a topic `/x/` word, and a linker come before the clause itself and do not count: in `xazawan dagadul zalahen vahahal.` the highlighted word is `dagadul`, not `xazawan`.
+Beginner showed that you may reorder the words of a clause, because the first letters already say who did what. The **first content word** is what you highlight: what you want heard first, or the new information. First position highlights only within one sentence; what the whole conversation is about is the [topic](pronouns.md#topic), set by an `/x/` word.
+
+Opening `/y/` words, a topic `/x/` word, and a linker come before the clause itself and do not count: in `xazawan dagadul zalahen vahahal.` the highlighted word is `dagadul`, not `xazawan`.
 
 English usually keeps subject–verb–object order and uses extra wording, the passive, or spoken stress for that job. When you translate, keep the same highlight in English. Copy Agazan order into English only when that English is also a natural way to put that piece first (*Hastily, Azawan walks*). Keep a [stand-in](dependents.md#stand-in) `darl` / `barl` last in its slot, and move the other words around it.
 

@@ -60,7 +60,7 @@ A **complex citation** still gets a gloss if the morph unpacks structure the quo
 >
 > wish-x-guidance
 >
-> "Odunaxalanen"
+> "Ohuxaluden"
 ```
 
 | Line | Markup | Why |

@@ -94,6 +94,12 @@ export default defineConfig({
           { text: 'Terminology', link: '/terminology' },
         ],
       },
+      {
+        text: 'Cheat Sheets',
+        items: [
+          { text: 'Exceptions', link: '/exceptions-cheatsheet' },
+        ],
+      },
     ],
     outline: {
       level: [2, 3],
