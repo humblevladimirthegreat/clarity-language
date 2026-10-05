@@ -27,6 +27,7 @@ use [skip-cd] for amplify to not deploy.
 -allow -rm -rl on content roots if ambiguous referent
 -numbered pronouns can refer to -r
 -have lint auto-rewrite or ban em dashes
+-claritish style guide
 
 save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.
