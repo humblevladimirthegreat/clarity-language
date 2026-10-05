@@ -67,7 +67,9 @@ A label is a code, not an amount, so it has no magnitude for an exponent to scal
 - **open:** **`w+N`**, **`w-N`**, **`w_N`** (a count or fraction on `/w/`). Not guessable: before an adjective a count could be a ratio (*twice as big*) or a difference (*bigger by two*). A factor is `hradul` / `hrudul` on `/h/` ([factor](../grammar/comparatives.md#factor)).
 - **open:** **`w#-N`**, **`w#1`**, and `w#N` outside a single-name `zel` / `zuel` frame. No learner reaches for them: English never says *the first biggest* (first place is the plain superlative) or counts a scale *from the end* (*second smallest* is `zuel` + `w#2`), and `w#N` needs one name before the fence to rank within.
 - **closed (D-38):** **`th#1`** as *first-hand*.
-- **open:** **`th-N`**, **`th#-N`**, and digitless non-blank **`th#`**. A minus on a likelihood (`th-30`: *30% unlikely*, or *30 points less likely*?) and an end-relative count of tellers have no guessable reading; digitless **`th#`** would say only *passed on to me*, with no depth, and no job has asked for that apart from TOLD.
+- **closed (D-41):** **`th#N`** in a clause with LIVE or WITNESSED (`thodom thredul`).
+- **open:** **`th#N`** after FELT (`thahom thredul`). A gut sense is your own, and no learner has a *second-hand gut feeling* to say.
+- **open:** **`th-N`**, **`th#-N`**, and digitless non-blank **`th#`**. A minus on a likelihood (`th-30`: *30% unlikely*, or *30 points less likely*?) and an end-relative count of tellers have no guessable reading; digitless **`th#`** would say only *passed on to me*, with no depth, and no job has asked for that.
 - **open:** marker stacks **`rao`** (`+_`) and **`rae`** (`+#`). No reading composes: labels carry no sign, and a count and a rank are separate markers on separate words.
 
 ### Ordinal pronoun `#0`

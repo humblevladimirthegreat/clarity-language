@@ -665,7 +665,7 @@ On `/w/`, a number sits in the degree slot right before an adjective or adverb (
 | **`ra`** | `th+N` | **Likelihood N percent**: `th+70` *70% likely*; `th+99.9` *99.9% likely*. The digits are already a percent, 0–100; do not add `%`. |
 | **`ra`** / **`ru`** | `th+` / `th-` | **likely** / **unlikely**, with no figure |
 | **`ro`** | `th_N` | **According to source N**: a footnote, reference, or exhibit label (`th_3` *per [3]*). Digitless `th_` = *per a source* you do not name. |
-| **`re`** | `th#N` | **N-th hand** (N from 2): how many retellings stand between the claim's source and you (`th#3` *third-hand*). Taught with the channels: [second-hand and further](knowing.md#hand-depth). |
+| **`re`** | `th#N` | **N-th hand** (N from 2): how many hands stand between the event and you, on any channel that is not first-hand (`th#3` *third-hand*, a tertiary source). Taught with the channels: [second-hand and further](knowing.md#hand-depth). |
 
 For *30% unlikely*, give the likelihood of the claim itself (`th+70`). A minus with digits (`th-N`) and an end-relative rank (`th#-N`) are not used, and neither is `th#1`: first-hand is a channel word.
 

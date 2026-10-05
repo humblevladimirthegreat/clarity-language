@@ -306,7 +306,7 @@ The ending on a channel says **how strong the evidence is**: how much the claim 
 
 ### Second-hand and further (`th#N`) {#hand-depth}
 
-English *second-hand* and *third-hand* count the retellings between the person who was there and you. A channel does not say that. Add a [stance number](numbers.md#number-as-stance-by-marker) with the rank marker after the channel: **`th#N`** (from 2) is *N-th hand*. So `thredul` (`th#2`) is told by someone who was there, and `threrel` (`th#3`) is told by someone who was told. (cue: **`e`** ≈ order, the place in the chain of tellers)
+English *second-hand*, *third-hand*, *a secondary source* and *a tertiary source* count the hands between the person who was there and you. A channel does not say that. Add a [stance number](numbers.md#number-as-stance-by-marker) with the rank marker after the channel: **`th#N`** (from 2) is *N-th hand*. The channel says what form the claim reached you in, and the number says how far that is from the event. So `thredul` (`th#2`) is one step removed: told by someone who was there, or written by someone who asked them. `threrel` (`th#3`) is two steps removed: told by someone who was told, or compiled from reports. (cue: **`e`** ≈ order, the place in the chain)
 
 > `zalahen thewam threrel vedabal.`
 >
@@ -314,9 +314,15 @@ English *second-hand* and *third-hand* count the retellings between the person w
 >
 > "Alahen left, so they say — third-hand."
 
-Alone, `th#N` already says the claim was passed on to you. After TOLD it only adds the depth. First-hand has no number: that is a channel (`thodom`, `thevom`). The usual number endings apply: **-m** *about N-th hand* (`threrem`), **-r** with a digit *the same depth as before* (`threrer`). Digitless `threr` under a question asks *how many hands?*
+> `zalahen therem thredul vedabal.`
+>
+> z-Alahen | th-RECORDED | th-2nd-hand | v-departure
+>
+> "Alahen left, according to an article by someone who interviewed people who were there."
 
-**Compare with:** `th_N` names *which* numbered source the claim rests on; `th#N` counts *how many tellers*. Reliability of the one source you heard from is the ending on the channel (`thewal` / `thewar`).
+Alone, `th#N` says the claim was passed on to you, without saying in what form. After a channel it adds the form: TOLD (a retelling), RECORDED (a copy or a secondary source), STORY (a tale passed down), PATTERN (cases you know only from reports), or INFERRED (clues you know only from reports). The number counts the hands on the evidence, never the reasoning steps: a conclusion drawn from your own clues is plain INFERRED. First-hand has no number, because that is a channel: `th#N` with LIVE or WITNESSED (`thodom`, `thevom`) is not used. The usual number endings apply: **-m** *about N-th hand* (`threrem`), **-r** with a digit *the same depth as before* (`threrer`). Digitless `threr` under a question asks *how many hands?*
+
+**Compare with:** `th_N` names *which* numbered source the claim rests on; `th#N` counts *how many hands* it passed through. Reliability of the one source you heard from is the ending on the channel (`thewal` / `thewar`).
 
 ### Source (`/b/` after the channel) {#source}
 

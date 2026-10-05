@@ -84,6 +84,8 @@ const ROWS: Row[] = [
   { invalid: "zazawan vowogal th-3.", rejection: "stanceNumber", valid: "zazawan vowogal th+70." },
   { invalid: "zazawan vowogal th#-2.", rejection: "stanceNumber", valid: "zazawan vowogal th#2." },
   { invalid: "zazawan vowogal th#1.", rejection: "handDepth", valid: "zazawan vowogal thewam th#2." },
+  { invalid: "zalahen thodom thredul vedabal.", rejection: "handDepthChannel", valid: "zalahen therem thredul vedabal." },
+  { invalid: "zalahen thevom thredul vedabal.", rejection: "handDepthChannel", valid: "zalahen thunem thredul vedabal." },
   { invalid: "zodogal wrarel gelavam.", rejection: "degreeNumber", valid: "zodogal wrubul gelavam." },
   { invalid: "zodogal wredul gelavam.", rejection: "degreePlaceFrame", valid: "zazawan zel wredul gelavam." },
   { invalid: "zazawan zalahen zel wredul gelavam.", rejection: "degreePlaceFrame", valid: "zazawan zuel wredul gelavam." },

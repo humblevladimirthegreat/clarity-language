@@ -470,6 +470,24 @@ function enforceChannelSign(word: LexWord, hosted: HUnit["hosted"]): void {
   if (wrong) throw new ConstructionError("channelOffsetSign", `${word.raw} ${hosted!.bound.raw}${hosted!.amount ? ` ${hosted!.amount.raw}` : ""}`);
 }
 
+/** A first-hand channel: LIVE or WITNESSED, which no hand count can follow (knowing.md#hand-depth). */
+function isFirstHandChannel(word: LexWord): boolean {
+  if (word.pos !== "th" || word.overlay?.kind !== "evidential") return false;
+  const base = word.overlay.gloss.split(".")[0];
+  return base === "LIVE" || base === "WITNESSED";
+}
+
+/** `th#N` counts hands between the event and you, so a first-hand channel in the same clause contradicts it. */
+function enforceHandDepthChannel(units: Unit[]): void {
+  const depth = units.find(
+    (unit) => unit.kind === "h" && unit.unit.word.pos === "th" && unit.unit.word.family.kind === "number" && isRankMarker(unit.unit.word.family.stem.marker),
+  );
+  const first = units.find((unit) => unit.kind === "h" && isFirstHandChannel(unit.unit.word));
+  if (depth?.kind === "h" && first?.kind === "h") {
+    throw new ConstructionError("handDepthChannel", `${first.unit.word.raw} ${depth.unit.word.raw}`);
+  }
+}
+
 /** Offsets from now (D-10): channel sign, stance-only as-of offsets, and time poles that need a warrant. */
 function enforceOffsets(units: Unit[], directive: boolean): void {
   let warranted = directive;
@@ -700,7 +718,10 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
   for (const { left, bodies } of result.utterances) {
     // Command / request (e) and prohibition (u) act words may name a time without a channel.
     const directive = /^y[eu]/.test(left.force?.raw ?? "");
-    for (const body of bodies) enforceOffsets(body.clause.units, directive);
+    for (const body of bodies) {
+      enforceOffsets(body.clause.units, directive);
+      enforceHandDepthChannel(body.clause.units);
+    }
     enforceForcePair(left);
   }
   const places = { seen: new Set<LexWord>(), framed: new Set<LexWord>() };
