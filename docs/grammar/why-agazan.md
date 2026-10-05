@@ -109,7 +109,7 @@ Agazan [builds an emotion](sakes.md#emotion-compose) from three parts: a [sake](
 
 Building the feeling from those parts helps you ask for what would actually help instead of stopping at the label.
 
-In English: [Claritish Lesson 10, Feelings in three parts](claritish/feelings.md).
+In English: [Claritish Lesson 11, Feelings in three parts](claritish/feelings.md).
 
 ##### Thanks that name the need {#thanks-that-name-the-need}
 

@@ -27,7 +27,8 @@ Each lesson is short, with a few examples and a practice set. They build on each
 7. [Wants and plans](wants-and-plans.md): a wish you owe no one, and how much of a plan is drawn.
 8. [Decisions and tries](decisions-and-tries.md): how settled a decision is, and a try that is only a trial.
 9. [Not yet](not-yet.md): where a change stands now, and *not yet* in place of *I can't*.
-10. [Feelings in three parts](feelings.md): a feeling as a need, a place, and a motion.
+10. [Can and can't](can-and-cant.md): whether *I can't* means not now, not yet, or never.
+11. [Feelings in three parts](feelings.md): a feeling as a need, a place, and a motion.
 
 [Bonus: tone marks](tone-marks.md) adds seven marks that say how you mean a sentence, and the [last page](learn-agazan.md) shows where the words go in the full language.
 

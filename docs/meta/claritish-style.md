@@ -45,17 +45,17 @@ The failure is psychological, not structural. A gap is a thinking trap the reade
 - **Long menus say they are menus.** A locus or channel inventory is followed by *you don't need to memorize it*.
 - **Say when to leave it out.** Every lesson marks at least one place the drop-in is unnecessary, and none of them implies that plain English is a mistake: *none of the three is the "right" one*; *leave the suffix off when the scope doesn't matter*.
 - **Rule out the near miss.** Where the obvious English reading is wrong, deny it in one short sentence (*motion is not strength*).
-- **Endings** are the settled-to-passing scale, with the cue **-l ≈ lasting, -r ≈ right now**, and each lesson notes when the scale comes back. Lesson 5 grades the source instead, as do Lesson 6's prescription endings (invited / offered / trial).
+- **Endings** are the settled-to-passing scale, with the cue **-l ≈ lasting, -r ≈ right now**, and each lesson notes when the scale comes back. Lesson 5 grades the source instead, as do Lesson 6's prescription endings (invited / offered / trial). Lessons 3 and 10 teach hyphenated suffixes, which take no ending.
 - **Pronunciation** is taught once, in Lesson 1, in English keywords. Later lessons do not repeat it.
 
 ## The hyphenated English host
 <a id="hyphenated-host"></a>
 
-The one place Claritish adds to an English word is [label scope](../grammar/predication.md#label-scope), written with a hyphen: English word + `-th` + scope vowel + **-l** (`lied-thal`). The hyphen marks an English host, the letters after it are spelled exactly as Agazan spells them, and the ending is always **-l**.
+Claritish adds to an English word in two places: [label scope](../grammar/predication.md#label-scope), English word + `-th` + scope vowel (`lied-tha`), and [ability](../grammar/intention.md#ability-changeability), English verb + `-x` + vowel (`sing-xu`). The hyphen marks an English host and the letters after it are spelled exactly as Agazan spells them. Neither suffix takes an ending, because its vowel carries the meaning.
 
-The hyphen belongs to Claritish only. Agazan writes label scope mid-word on an Agazan root with no hyphen (`valahathal`), so a lesson teaching the suffix never implies the hyphen survives into the full language.
+The hyphen belongs to Claritish only. Agazan writes these mid-word on an Agazan root with no hyphen (`valahathal`, `vezehexal`; the ending is the one the Agazan word would take), so a lesson teaching a suffix never implies the hyphen survives into the full language.
 
-**Marking:** a hyphenated English host (`lied-thal`) is an English span, so the build does not parse it. Table rows for the suffix use `-thal`, not `…-thal` (a template that does not parse). A tone mark attaches to the English word it colors and is written bare (`%You're the worst.`), not as a backtick span.
+**Marking:** a hyphenated English host (`lied-tha`) is an English span, so the build does not parse it. Table rows for a suffix use `-tha` or `-xa`, not `…-tha` (a template that does not parse). A tone mark attaches to the English word it colors and is written bare (`%You're the worst.`), not as a backtick span.
 
 ## Examples and practice
 <a id="examples-practice"></a>
