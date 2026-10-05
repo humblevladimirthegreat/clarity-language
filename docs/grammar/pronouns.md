@@ -557,7 +557,7 @@ For *each other*, join the people in `/z/` and add **`hedam`** after the verb. T
 
 With **-l**, **`hedal`** is strictly pairwise: every one of them does it to every other one. **-m** is the everyday *each other* / *one another*, where it only has to go both ways in general.
 
-**Compare with:** **`thedam barl`** on `/th/` is *if and only if* ([dependents](dependents.md#dependent-clauses)). On `/h/` with no `/b/`, the same root is *each other*.
+**Compare with:** **`thedam barl`** on `/th/` is *if and only if* ([dependents](dependents.md#poles)). On `/h/` with no `/b/`, the same root is *each other*.
 
 ### Addressing several people
 

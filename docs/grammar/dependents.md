@@ -47,6 +47,10 @@ For English *whether*, change the vowel to **`o`**: **`dorl`**. The inner senten
 >
 > "Azawan sees whether Alahen walks."
 
+**Compare with:** *the dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. *If Alahen walks* sets a condition rather than filling a role, so it takes a pole word instead of a stand-in on its own (next section).
+
+### Because, if, although (poles) {#poles}
+
 Words like *because*, *if*, and *although* attach a dependent clause as a reason, a condition, a contrast, or a time. Agazan uses a pair for this: a **pole** word that names the link, then the stand-in **`barl`** right after it. The pole is a relation word, so **`barl`** is its hosted [extra noun](clause.md#extra-nouns) in `/b/`. Keep the pair together, last in the main sentence, with **`barl`** at the very end.
 
 The pole's role letter follows the clause page. *Because*, *if*, *only if*, and *if and only if* are your [stance](clause.md#stance-th) on why the claim holds, so they take `/th/`. *Although*, *while*, *until*, *before*, *after*, and *so that* describe the event itself, so they are adverbs on `/h/`.
@@ -95,6 +99,10 @@ Ordinary `zezol` is still *a zebra*.
 
 The sentence after **`barl`** has to name an event or a thing, so it needs a noun or a verb. A stance word by itself does not fill it. The one exception is a lone feeling, thanks, or sorry ([feeling with no object](sakes.md#feeling-no-object)): that word is already a whole sentence about you, so it can be the sentence after a stand-in.
 
+**Compare with:** discourse *however* and *therefore* start a new sentence after a finished claim ([continue](#continue-x)); they are not *although*. *Whether Alahen walks* is **`dorl`**, not **`thoyem`**: *if* sets a condition, and *whether* leaves a yes-or-no question open.
+
+### Times (*while*, *before*, *after*, *until*, *by*) {#time-poles}
+
 The time poles take a noun the same way. Put the event or period in `/b/` right after **`huwem`** *during*, **`habam`** *before*, **`henum`** *after*, or **`homam`** *until*.
 
 > `zazawan vowogal huwem bavodel.`
@@ -131,7 +139,10 @@ For *as soon as* / *once*, keep **`henum`** *after* and put the haste word **`wa
 
 For *since* (from a starting point up to now), see [*from* on a time](hooks.md#since). *Since* meaning *because* is **`thevem barl`**.
 
-<a id="so-that"></a>
+Agazan verbs have no past or future form. *Before*, *after*, *while*, and *until* place this event in time relative to the next sentence. A **result** that is still left over, and a **state that used to hold**, are stance words on `/th/`, not times ([RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate)).
+
+### So that (*in order to*) {#so-that}
+
 <a id="event-purpose"></a>
 
 English *so that* names the outcome an event aims at (*walks so that Alahen sits*). Use the pole **`hogom`** with **`barl`**, the same pair shape as *because*, and put the outcome in the sentence after **`barl`**. Unlike *because*, this does **not** claim the outcome happened. To attach the pole to a noun, use **`gogom`**. (cue: 🥅 *goal*: you act so the shot counts)
@@ -152,9 +163,7 @@ English *in order to* drops the person who sits. Agazan still names them in the 
 
 Ordinary `zogol` is still *a goal* (the net).
 
-**Compare with:** *although Alahen walks* is **`hezom barl`** plus the next sentence. Discourse *however* and *therefore* start a new sentence after a finished claim ([continue](#continue-x)); they are not *although* or *so that*. *Whether Alahen walks* is **`dorl`**, not **`thoyem`** (*if* sets a condition; *whether* leaves a yes-or-no question open). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. Acting *for relatedness* is a [sake motive](sakes.md#sake-preference) on the sake, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange). *Works for a money-bag* (something you want to get) uses a different [*for*](hooks.md#extra-noun) before an extra noun; use **`hogom`** when *for* names a result you aim at (*practices for a race*).
-
-Agazan verbs have no past or future form. *Before*, *after*, *while*, and *until* place this event in time relative to the next sentence. A **result** that is still left over, and a **state that used to hold**, are stance words on `/th/`, not times ([RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate)).
+**Compare with:** acting *for relatedness* is a [sake motive](sakes.md#sake-preference) on the sake, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange). *Works for a money-bag* (something you want to get) uses a different [*for*](hooks.md#extra-noun) before an extra noun; use **`hogom`** when *for* names a result you aim at (*practices for a race*).
 
 ### Continue (`/x/`): keep the same speech move {#continue-x}
 

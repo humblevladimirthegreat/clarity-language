@@ -436,7 +436,7 @@ The ending says why you think the move is welcome. Use **-l** when the person in
 
 **Compare with:** a [command](speech-moves.md#speech-act-beginner) **`yel`** tells someone to act outright, without naming the sake or why the move is wanted. **`the`** is an *ought* tied to a sake (*ought to, to advance this sake*), with the reason on the ending.
 
-**Compare with:** a [forecast](knowing.md#forecast) (a channel plus `bral`) when English *should* is really a prediction about what will pay off the sake, or when you want both *is doing* and a norm on that doing, not a prescribed *ought*. To report that the act is happening, drop **`the`** and say the verb alone.
+**Compare with:** a [forecast](knowing.md#forecast) (a channel plus `bral`) when English *should* is really a prediction about what will pay off the sake, not a prescribed *ought*. To report that the act is happening, drop **`the`** and say the verb alone.
 
 **Compare with:** [motive](#sake-preference) **`tho`** plus a [request](speech-moves.md#speech-act) **`yem`** when the speaker wants **their own** sake served. **`the`** is advice about the sake named on this word.
 

@@ -32,7 +32,7 @@ On a noun, the same root is **`gumum`**:
 >
 > "A house like Azawan’s."
 
-When the model is an event (*walks the way a duck swims*), put [**`barl`**](dependents.md#dependent-clauses) after **`humum`** and say that event as the next sentence. Keep the pair last, as with *because*. You are not claiming that the model event happened; it is only the comparison.
+When the model is an event (*walks the way a duck swims*), put [**`barl`**](dependents.md#poles) after **`humum`** and say that event as the next sentence. Keep the pair last, as with *because*. You are not claiming that the model event happened; it is only the comparison.
 
 > `zazawan vowogal humum barl zadagul vezewel.`
 >
@@ -640,7 +640,7 @@ Once whose-now is set, these count from it:
 
 An *as-of* pair inside a finished inner clause cannot be resumed later in the main clause. `huhur` on its own parses, but write it only after a clause that set whose-now with `huhum` and a `/b/`.
 
-**Compare with:** [*after*](dependents.md#dependent-clauses) **`henum`** and extra-noun **`ol`** *at* place the event in time or next to a landmark; they do not set whose-now. [Causal *if*](causation.md#if) **`thoyem`** is a condition judged at speech-now, not English *if he had* (`huram`). [NOTIONAL](knowing.md#notional) is pretend, not a placeholder now. [Scope islands](joins.md#scope-islands-join) limit how far a join reaches; they do not carry an *as-of* forward. On the next clause, repeat the evidential, resume the *as-of*, or both.
+**Compare with:** [*after*](dependents.md#time-poles) **`henum`** and extra-noun **`ol`** *at* place the event in time or next to a landmark; they do not set whose-now. [Causal *if*](causation.md#if) **`thoyem`** is a condition judged at speech-now, not English *if he had* (`huram`). [NOTIONAL](knowing.md#notional) is pretend, not a placeholder now. [Scope islands](joins.md#scope-islands-join) limit how far a join reaches; they do not carry an *as-of* forward. On the next clause, repeat the evidential, resume the *as-of*, or both.
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|

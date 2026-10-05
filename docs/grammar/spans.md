@@ -99,7 +99,7 @@ The inside is ordinary Agazan: a fragment, or a clause with the **same speech ac
 
 A one-word manner with nothing to package is a plain adverb: `zazawan vowogal hagawal.`
 
-**For *because* / *if*, use:** [**`barl`**](dependents.md#dependent-clauses) dependents, not an aside.
+**For *because* / *if*, use:** [**`barl`**](dependents.md#poles) dependents, not an aside.
 
 **Compare with:** a second name for the same person uses [identity](predication.md#identity) (`gugo` + `/b/`), not an aside.
 

@@ -93,30 +93,30 @@ avol,w,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing 
 ezem,th,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#ability-fallback
 ezem,w,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#ability-fallback
 ugol,g,🪙,identity,SAME,SAME identity (identical-to / same-as),coin has two faces one substance; same is one referent two labels,predication.md#identity-same
-oyem,th,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,dependents.md#dependent-clauses
+oyem,th,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,dependents.md#poles
 oyem,g,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,causation.md#if
-edam,th,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,dependents.md#dependent-clauses
+edam,th,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,dependents.md#poles
 edam,g,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,causation.md#only-because
-evem,th,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),brick stacks as foundation; foundation is because-reason under claim,dependents.md#dependent-clauses
+evem,th,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),brick stacks as foundation; foundation is because-reason under claim,dependents.md#poles
 evel,th,🧱,clause_pole,because.fault,BECAUSE clause pole with fault (the reason broke a norm),brick stacks as foundation; -l locks the blame on a broken norm,causation.md#fault
 ever,th,🧱,clause_pole,because.share,BECAUSE clause pole with a share (the reason contributed among others),brick stacks as foundation; -r is one brick among several,causation.md#fault
 evem,g,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),brick stacks as foundation; foundation is because-reason under claim,causation.md#only-because
-olum,th,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,dependents.md#dependent-clauses
+olum,th,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,dependents.md#poles
 olum,g,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,causation.md#only-if
-ezom,h,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#dependent-clauses
-ezom,g,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#dependent-clauses
-uwem,h,♊,clause_pole,while,WHILE clause pole (concurrent),gemini twins mirror two sides; duality is while both sides at once,dependents.md#dependent-clauses
+ezom,h,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#poles
+ezom,g,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#poles
+uwem,h,♊,clause_pole,while,WHILE clause pole (concurrent),gemini twins mirror two sides; duality is while both sides at once,dependents.md#poles
 uwem,g,♊,clause_pole,while,WHILE clause pole (concurrent),gemini twins mirror two sides; duality is while both sides at once,dependents.md#time-pole-on-noun
-omam,h,⏲️,clause_pole,until,UNTIL clause pole (endpoint bound),timer counts down to zero; deadline is until the endpoint,dependents.md#dependent-clauses
+omam,h,⏲️,clause_pole,until,UNTIL clause pole (endpoint bound),timer counts down to zero; deadline is until the endpoint,dependents.md#poles
 omam,g,⏲️,clause_pole,until,UNTIL clause pole (endpoint bound),timer counts down to zero; deadline is until the endpoint,dependents.md#time-pole-on-noun
-eveham,h,🏁,clause_pole,by,BY clause pole (deadline: done at or before the endpoint),the checkered flag marks the finish; the event is done by the time it is reached,dependents.md#dependent-clauses
+eveham,h,🏁,clause_pole,by,BY clause pole (deadline: done at or before the endpoint),the checkered flag marks the finish; the event is done by the time it is reached,dependents.md#poles
 eveham,g,🏁,clause_pole,by,BY clause pole (deadline: done at or before the endpoint),the checkered flag marks the finish; the event is done by the time it is reached,dependents.md#time-pole-on-noun
-abam,h,🎒,clause_pole,before,BEFORE clause pole (ahead-of),backpack holds what you need ahead; preparation is before the event,dependents.md#dependent-clauses
+abam,h,🎒,clause_pole,before,BEFORE clause pole (ahead-of),backpack holds what you need ahead; preparation is before the event,dependents.md#poles
 abam,g,🎒,clause_pole,before,BEFORE clause pole (ahead-of),backpack holds what you need ahead; preparation is before the event,dependents.md#time-pole-on-noun
-enum,h,⌛,clause_pole,after,AFTER clause pole (just-after),hourglass just emptied; recency is after the prior edge,dependents.md#dependent-clauses
+enum,h,⌛,clause_pole,after,AFTER clause pole (just-after),hourglass just emptied; recency is after the prior edge,dependents.md#poles
 enum,g,⌛,clause_pole,after,AFTER clause pole (just-after),hourglass just emptied; recency is after the prior edge,dependents.md#time-pole-on-noun
-ogom,h,🥅,clause_pole,so-that,SO-THAT clause pole (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#dependent-clauses
-ogom,g,🥅,clause_pole,so-that,SO-THAT clause pole (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#dependent-clauses
+ogom,h,🥅,clause_pole,so-that,SO-THAT clause pole (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#poles
+ogom,g,🥅,clause_pole,so-that,SO-THAT clause pole (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#poles
 odum,h,➡️,clause_pole,so-result,SO-THAT-RESULT clause pole (outcome that follows from the host),east is the way things move on; the dependent is what the host led to,dependents.md#result-pole
 uhum,h,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#as-of
 uhum,g,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#as-of

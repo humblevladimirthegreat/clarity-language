@@ -201,7 +201,7 @@ To say where something is (*there is a dog in a house*), write the noun with no 
 
 ### Since (`ul` on a time) {#since}
 
-For *since* (from a starting point, and still true now), use **`ul`** *from* with a time instead of a place: *from the thunderstorm on*. [**`henum`**](dependents.md#dependent-clauses) *after* only places the event later. **`ul`** says the event has gone on from that point until now. (cue: **u** ≈ undo: leave the starting point behind)
+For *since* (from a starting point, and still true now), use **`ul`** *from* with a time instead of a place: *from the thunderstorm on*. [**`henum`**](dependents.md#time-poles) *after* only places the event later. **`ul`** says the event has gone on from that point until now. (cue: **u** ≈ undo: leave the starting point behind)
 
 > `zazawan vehahel ul bavodel.`
 >

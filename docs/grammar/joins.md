@@ -791,7 +791,7 @@ Open **`zuam`** makes the same claim but leaves the list of exceptions open, the
 >
 > "A cat walks. The cat is sleepy."
 
-In the sentence after a [`barl`](dependents.md#dependent-clauses) on a general claim, a resume of the kind means **the same member**, one at a time: `zual gagadul vezebal thoyem barl zagadur gezebul.` is *every cat sleeps if it is sleepy*, each cat with its own sleepiness.
+In the sentence after a [`barl`](dependents.md#poles) on a general claim, a resume of the kind means **the same member**, one at a time: `zual gagadul vezebal thoyem barl zagadur gezebul.` is *every cat sleeps if it is sleepy*, each cat with its own sleepiness.
 
 With **`zul`** the two readings say the same thing: `zul godogal gabagol.` is both *no dog is black* and *there is no black dog*.
 
@@ -1173,7 +1173,7 @@ These limits apply to every join.
 
 **Compare with:** prefix-less **`al`** / **`am`** / … are [hooks](hooks.md). Under `/h/` `/w/`, the unit is a [restrictor](restrictors.md), not sibling *and*.
 
-*Because* / *if* use `/th/` plus `/b/` [**`barl`**](dependents.md#dependent-clauses). An `/h/` or `/th/` word between the items of a noun, adjective, or `/b/` list does not end the list. For how far an `/h/` reaches in a verb list, see [VP and clause forms](join-across-roles.md#vp-clause-forms). Each item of a clause join is a full clause.
+*Because* / *if* use `/th/` plus `/b/` [**`barl`**](dependents.md#poles). An `/h/` or `/th/` word between the items of a noun, adjective, or `/b/` list does not end the list. For how far an `/h/` reaches in a verb list, see [VP and clause forms](join-across-roles.md#vp-clause-forms). Each item of a clause join is a full clause.
 
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>

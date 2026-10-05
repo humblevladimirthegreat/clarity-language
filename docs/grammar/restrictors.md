@@ -319,7 +319,7 @@ z-Alahen | v-swim | h-rain | h-always-except
 
 ### Occasions vs a dependent *when*
 
-English *when* / *if* can introduce a whole **sentence** as the occasion (*if Azawan walks*). Write that with a pole word, `/h/` (*when*) or `/th/` (*if*), plus `/b/` [**`barl`**](dependents.md#dependent-clauses). The main sentence stops after **`barl`**; the next sentence is the occasion. Use a restrictor when each occasion is a word in the adverb slot; use **`barl`** when the occasion is a full clause.
+English *when* / *if* can introduce a whole **sentence** as the occasion (*if Azawan walks*). Write that with a pole word, `/h/` (*when*) or `/th/` (*if*), plus `/b/` [**`barl`**](dependents.md#poles). The main sentence stops after **`barl`**; the next sentence is the occasion. Use a restrictor when each occasion is a word in the adverb slot; use **`barl`** when the occasion is a full clause.
 
 > `zahaben vezehel thoyem barl zazawan vowogal.`
 >

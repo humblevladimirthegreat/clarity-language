@@ -224,7 +224,7 @@ z-Ahaben | th-MAY | v-cry
 
 English often says how you know a claim: *I saw it*, *I heard*, *I figured*. Agazan keeps the ordinary verb and adds a `/th/` stance word for that, called an **evidential**. It names the **channel** the claim reached you through: watching it now, memory, a record, a pattern of cases, clues, hearsay, a gut sense, or a story. So the same walk can be reported eight ways, and the listener always knows what your claim rests on. Under other role letters the channel roots are ordinary words (`vodol` *to attest*, `dozel` *a scroll*).
 
-Verbs have **no past or future form**. Some channels place the event in time because of how you know it: **LIVE** means the scene is in view as you speak, **WITNESSED** means you remember seeing it (so it is past), and **RECORDED** is a playback of a capture (past) or a schedule (future). The other channels do not place the event. When an inferred or reported event happened at another time, add a when-frame: [*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, or a [signed offset](#dated-channel) on the channel. A claim that something **will** happen is a [forecast](#forecast): a channel plus a later offset, so a forecast always says how you know.
+Verbs have **no past or future form**. Some channels place the event in time because of how you know it: **LIVE** means the scene is in view as you speak, **WITNESSED** means you remember seeing it (so it is past), and **RECORDED** is a playback of a capture (past) or a schedule (future). The other channels do not place the event. When an inferred or reported event happened at another time, add a when-frame: [*before* / *after* / *while*](dependents.md#time-poles), a clock or date, or a [signed offset](#dated-channel) on the channel. A claim that something **will** happen is a [forecast](#forecast): a channel plus a later offset, so a forecast always says how you know.
 
 > `zazawan thodom vowogal.`
 >
@@ -490,7 +490,7 @@ English *I see it* and *I saw it* both report watching; they differ in when you 
 <a id="former-climate"></a>
 <a id="episode-standing"></a>
 
-English *has left* and *used to tell* mix two things: when the event happened, and how it stands now. Agazan places events in time with other tools: [*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, [LIVE](#live-vs-memory) / [WITNESSED](#live-vs-memory), or a [forecast](#forecast). Two `/th/` words cover how it stands. **RESIDUE** says the outcome of an event is still in effect now. **FORMER** says a usual pattern is not one you are claiming for now. Neither says when anything happened, so use them alongside a channel or a when-frame, never as a past or present tense.
+English *has left* and *used to tell* mix two things: when the event happened, and how it stands now. Agazan places events in time with other tools: [*before* / *after* / *while*](dependents.md#time-poles), a clock or date, [LIVE](#live-vs-memory) / [WITNESSED](#live-vs-memory), or a [forecast](#forecast). Two `/th/` words cover how it stands. **RESIDUE** says the outcome of an event is still in effect now. **FORMER** says a usual pattern is not one you are claiming for now. Neither says when anything happened, so use them alongside a channel or a when-frame, never as a past or present tense.
 
 **RESIDUE** (`amo`) says the result still counts: an unpaid tab, a door that is still shut. Without it, you make no claim that anything is left over (the event is over and done, or nothing remains from it). As a plain noun, `zamom` is *debt*. (cue: 💰 a debt still on the books)
 
@@ -512,7 +512,7 @@ English *has left* and *used to tell* mix two things: when the event happened, a
 >
 > "Alahen has left and is still gone — I can see it." (what is left over is in view)
 
-**Compare with:** [*after*](dependents.md#dependent-clauses) (`henum boyel`) orders two events. **`thamom`** does not say the leaving was earlier; it says the **outcome is still in effect**. [LIVE](#live-vs-memory) is how you know, not what is left over. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
+**Compare with:** [*after*](dependents.md#time-poles) (`henum boyel`) orders two events. **`thamom`** does not say the leaving was earlier; it says the **outcome is still in effect**. [LIVE](#live-vs-memory) is how you know, not what is left over. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
 
 **FORMER** (`eno`) says a usual pattern held, but you are **not** claiming it holds now: *Azawan always tells* as a past habit. Without it, [always](restrictors.md) **`hual`** describes the pattern as it stands now. As a plain noun, `zenom` is *emptiness*. (cue: 🪹 the nesting season is over; a former climate, not today's weather)
 
@@ -1106,7 +1106,7 @@ Some channels only point one way:
 
 The wrong sign on a one-way word (**`thevom`** with **`+`**, **`thamam`** with **`-`**) is not a sentence.
 
-A signed measure in the `/b/` of a [time pole](dependents.md#dependent-clauses) (**`homam`** *until*, **`heveham`** *by*, **`habam`** *before*, **`henum`** *after*, **`huwem`** *during*) counts from now, the same way. The pole itself needs no channel, but its clause must already be a command, a request, or a plan, or carry a channel. So a command or a plan can name a day without saying how anyone knows, while a plain statement cannot use a pole to slip in a past or future with no warrant. An absolute date in the pole (`homam b_#22,7`) needs none of this.
+A signed measure in the `/b/` of a [time pole](dependents.md#time-poles) (**`homam`** *until*, **`heveham`** *by*, **`habam`** *before*, **`henum`** *after*, **`huwem`** *during*) counts from now, the same way. The pole itself needs no channel, but its clause must already be a command, a request, or a plan, or carry a channel. So a command or a plan can name a day without saying how anyone knows, while a plain statement cannot use a pole to slip in a past or future with no warrant. An absolute date in the pole (`homam b_#22,7`) needs none of this.
 
 > `yel zehodon vaheham homam bazazam grawol.`
 >
