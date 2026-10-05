@@ -16,11 +16,11 @@ You already write a property on `/ɡ/` after the noun (*a blue dog*). When you s
 >
 > "Azawan is challenging."
 
-A `/ɡ/` word right after the verb is not a second predicate. *Arrived tired* takes its own sentence for the state (`zalahen gadadal. zalahar vedabal.`).
+A `/ɡ/` word after the verb does not describe the subject the way *tired* does in English *arrived tired*. Give the state its own sentence instead (`zalahen gadadal. zalahar vedabal.`).
 
 The same string is also the noun plus its adjective: `zazawan gamadam` is both the full sentence *Azawan is challenging* and the phrase *challenging Azawan*.
 
-Belonging to a country's or tradition's people sits on **-m**, not a proper **-n**: **-n** names the whole (*Japan*), and **-m** says you belong to it ([countries and traditions](word-endings.md#countries-traditions)).
+To say someone belongs to a country or tradition (*Japanese*), use the **-m** ending, not the name ending **-n**. **-n** names the country itself (*Japan*), and **-m** says you belong to it ([countries and traditions](word-endings.md#countries-traditions)).
 
 > `zazawan gahebam.`
 >
@@ -28,13 +28,11 @@ Belonging to a country's or tradition's people sits on **-m**, not a proper **-n
 >
 > "Azawan is Japanese."
 
-Nationality stays on **-m** (`gahebam`). **-n** is a name, not “the Japanese people as a titled category.”
-
 ### Kind / role {#classification}
 
-When you say someone **is that kind of thing** or **has that role** (*a dog*), you are putting them in a category, not naming a quality. Use the same pattern as a quality: the kind sits on `/ɡ/` right after the noun you are classifying. English *is* is already in that pair.
+To say someone **is a kind of thing** or **has a role** (*Azawan is a dog*), put the kind word on `/ɡ/` right after the noun. It is the same pattern as a quality, again with no word for *is*: the `/ɡ/` word is what English puts after *is a*.
 
-This use is **classification**. Same `/ɡ/` place as a quality; the kind word is what English would put after *is a*.
+This use is called **classification**: it puts someone in a category rather than describing a quality.
 
 > `zazawan godogal.`
 >
@@ -46,7 +44,7 @@ This use is **classification**. Same `/ɡ/` place as a quality; the kind word is
 
 ### In the middle of an event {#in-progress}
 
-Some roots name an event (*walk*, *fight*, *sing*). On `/ɡ/`, such a root says the noun is **in the middle of** that event, as the one doing it: English *walking*. The ending picks the sense as always, so **-l** is the everyday event and **-m** the published abstract (`gavadam`, *struggling*).
+Some roots name an event (*walk*, *fight*, *sing*). On `/ɡ/`, such a root says the noun is **in the middle of** that event, as the one doing it: English *walking*. The ending picks the sense as always, so **-l** is the everyday event and **-m** its abstract sense (`gavadam`, *struggling*).
 
 > `zazawan gowogal.`
 >
@@ -54,7 +52,7 @@ Some roots name an event (*walk*, *fight*, *sing*). On `/ɡ/`, such a root says 
 >
 > "Azawan is walking."
 
-After a noun it works like any adjective. The event is under way at the time of the clause, so the dog below is walking while Azawan sees it.
+After a noun it works like any adjective. The event is under way at the time the sentence talks about, so the dog below is walking while Azawan sees it.
 
 > `zazawan dodogal gowogal vahahal.`
 >
@@ -64,11 +62,11 @@ After a noun it works like any adjective. The event is under way at the time of 
 
 Only a sense that is an event reads this way. A thing root stays a kind (`godogal`, *is a dog*), even when English has a verb from the same picture.
 
-**Compare with:** the verb in `zazawan vowogal.` reports the walking without saying it is under way. Later, a [role word](roles.md#saying-someone-is-a-teacher) names someone who walks, with no claim that the walking is under way.
+**Compare with:** the verb in `zazawan vowogal.` reports the walking without saying it is under way. To name someone who walks, with no claim that the walking is under way, use a [role word](roles.md#saying-someone-is-a-teacher).
 
 ### Existence (a lone noun) {#existence}
 
-A noun with no verb and no `/ɡ/` word after it says that the thing **exists** or is here (*there is …*).
+To say that something **exists** or is here (English *there is …*), write the noun alone, with no verb and no `/ɡ/` word after it.
 
 > `zodogal.`
 >
@@ -76,7 +74,7 @@ A noun with no verb and no `/ɡ/` word after it says that the thing **exists** o
 >
 > "There is a dog."
 
-The same holds with a `/ɡ/` word after the noun, when the noun is new: a common noun, or [one of a name](word-endings.md#name-instance--ln) on **-ln**, but not a name on **-n** or a resume on **-r**. The pair introduces the thing: *there is a G Z*.
+The same holds with a `/ɡ/` word after the noun, when the noun is new: a common noun, or [one of a name](word-endings.md#name-instance--ln) on **-ln**, but not a name on **-n** or a resumed noun on **-r**. The pair introduces the thing: *there is a G Z*.
 
 > `zodogal gelavam.`
 >
@@ -98,7 +96,7 @@ An object (`/d/`) needs a verb, so a noun plus a `/d/` word with no verb is not 
 
 When two names pick out **the same person or thing** (*Alahen is Azawan*), you are not putting Alahen in a kind. You are saying the two labels match: they are one individual.
 
-Write a special adjective `gugol` after the first name, then an extra noun (`/b/`) for the other label. Keep `gugol` and that `/b/` word **next to each other**. That pair is **identity**. The adjective’s English name is **`SAME`**; its root is **`ugo`**. (cue: 🪙 *coin*: two faces, one substance)
+Write the special adjective `gugol` after the first name, then an extra noun (`/b/`) for the other label. Keep `gugol` and that `/b/` word **next to each other**. This pair states **identity**. The adjective’s English name is **`SAME`**; its root is **`ugo`**. (cue: 🪙 *coin*: two faces, one substance)
 
 > `zalahen gugol bazawan.`
 >
@@ -321,7 +319,7 @@ z-police | g-walk
 
 ### Classification packaging {#classification-packaging}
 
-You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra choice here is how tightly that kind holds: hedge it, mark it as holding at every time, or deny it. The kind word stays on `/ɡ/`; a hedge `/w/` before it, characterizing **`hual`**, or negation **`gul`** packages that same pair.
+You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra choice here is how firmly the kind holds: hedge it, say it holds at every time, or deny it. The kind word stays on `/ɡ/`. Add a hedge on `/w/` before it (*sort of*), **`hual`** after the pair (*always*), or **`gul`** after it (*not*).
 
 > `zazawan godogal gul.`
 >
@@ -346,6 +344,7 @@ You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra c
 **Related form:** *not a dog* uses [negation **u**](joins.md#negation-u) (`gul`).
 
 ### Commands to be ADJ {#command-property}
+
 A command can ask for a state as well as an act. Put the [command word](speech-moves.md#speech-act-beginner) **`yel`** before a `/ɡ/` word with no verb: the listener is the unstated subject, and the pair reads *be ADJ!*, as a [verbless statement](#classification-property) does.
 
 > `yel geyayem.`
@@ -358,7 +357,7 @@ Name the listener to address one person (`yel zehodon geyayem`), or use the verb
 
 ### **SAME** endings
 
-Beginner already used closed **`gugol`** (*is the same as*). The other endings on that same adjective finish the map.
+Beginner already used **`gugol`** (*is the same as*). Its other ending finishes the map.
 
 | Agazan | Use | English |
 |--------|-----|---------|
@@ -376,7 +375,7 @@ Beginner already used closed **`gugol`** (*is the same as*). The other endings o
 
 ### Label scope {#label-scope}
 
-English *Alahen is angry* can mean one outburst or the kind of person Alahen is. The same word does both jobs, and a single act easily turns into a claim about someone's nature. To say what kind of claim a label is, write the root, then mid-word **`th`**, then a scope vowel, then the ending. The vowel says whether this is this stretch of doing, a practiced role, true in one relationship, or a type that follows them across scenes. The word keeps its usual slot, so a label on `/ɡ/` is still *is ADJ*, and a verb is still the verb.
+English *Alahen is angry* can mean one outburst or the kind of person Alahen is. The same word does both jobs, and a single act easily turns into a claim about someone's nature. To say what kind of claim a label is, write the root, then mid-word **`th`**, then a scope vowel, then the ending. The vowel says whether the label covers only this episode, a practiced role, one relationship, or a type that follows the person across scenes. The word keeps its usual slot, so a label on `/ɡ/` is still *is ADJ*, and a verb is still the verb.
 
 > `zalahen ganegethal.`
 >
@@ -393,9 +392,9 @@ A label with no scope vowel says nothing about how far it reaches. Use one when 
 | **`tho`** | this pair: true in one relationship | *a stranger to Azawan*, *lying, as far as Alahen is concerned* | **o** ≈ one (that extra one) |
 | **`thu`** | a type across scenes: the quality follows them | *an anxious type*, *a teacher type* | **u** ≈ undo (not only here) |
 
-The seam goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`, on a content root or a [role compound](#scope-role). It labels a content word, so a [special pronoun](pronouns.md#special-pronouns) with **-n** takes none (its root on **-l** is an ordinary word, `zamagothal` *a microphone, this time*). The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead.
+Mid-word **`th`** with a scope vowel goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`, on a content root or a [role compound](#scope-role). It labels a content word, so a [special pronoun](pronouns.md#special-pronouns) with **-n** takes none (its root on **-l** is an ordinary word, `zamagothal` *a microphone, this time*). The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead.
 
-To say **when** that claim counts (*only at school*, *always except when raining*), put a [restrictor](restrictors.md) on `/w/` immediately before a scoped `/ɡ/` word, with the circumstance words on `/w/` too. Scope is the kind of claim; the restrictor is the occasions. **`/h/`** still limits the clause (*walks only when raining*), not the label.
+To say **when** that claim counts (*only at school*, *always except when raining*), put a [restrictor](restrictors.md) on `/w/` immediately before a scoped `/ɡ/` word, with the circumstance words on `/w/` too. The scope vowel says what kind of claim the label is; the restrictor says on which occasions it holds. A restrictor on **`/h/`** limits the whole sentence instead (*walks only when raining*), not the label.
 
 > `zalahen wanadal wal gaxedehothel.`
 >
@@ -403,7 +402,7 @@ To say **when** that claim counts (*only at school*, *always except when raining
 >
 > "Alahen is a teacher only at night."
 
-**Compare with:** characterizing **`hual`** / **`wual`** says the claim holds at every time. **`thu`** says you are treating them as that type across scenes, which can still have exceptions. **`wual gaxedehothel`** is the office at every time; **`gaxedehothul`** is the type-claim; both together doubles down.
+**Compare with:** **`hual`** / **`wual`** says the claim holds at every time. **`thu`** says you are treating them as that type across scenes, which can still have exceptions. **`wual gaxedehothel`** is the practiced role at every time, and **`gaxedehothul`** is the type-claim. Using both together doubles down.
 
 #### This episode (`tha`) {#scope-occasion}
 
@@ -423,11 +422,11 @@ To say **when** that claim counts (*only at school*, *always except when raining
 
 On a verb, **`the`** is that act as their practice, not one outing: `zazawan valahathel` is *Azawan lies as their craft*.
 
-**Compare with:** *usually* / *often* is a [restrictor](restrictors.md) (`huam`, `war`). **`thu`** is the type-claim (*a lying type*), which is not the office.
+**Compare with:** *usually* / *often* is a [restrictor](restrictors.md) (`huam`, `war`). **`thu`** is the type-claim (*a lying type*), which is not a practiced role.
 
 #### This pair (`tho`) {#scope-relative}
 
-Put the party in `/b/` right after the word. On `/ɡ/`, `/h/`, and `/v/`, that `/b/` is hosted by the **`tho`** word, so a verb's recipient comes after the pair. On a noun, **`tho`** stands alone; to name the party, say the label on `/ɡ/` instead.
+**`tho`** says the label holds in one relationship: toward one other party. Put that party in `/b/` right after the word. On `/ɡ/`, `/h/`, and `/v/`, that `/b/` is hosted by the **`tho`** word, so a verb's recipient comes after the pair. On a noun, **`tho`** stands alone; to name the party, say the label on `/ɡ/` instead.
 
 > `zazawan gelehothom balahen.`
 >
@@ -451,7 +450,7 @@ With no `/b/`, the party is unstated: *a stranger (to someone)*.
 >
 > "Alahen is an anxious type."
 
-**Compare with:** a [mention](spans.md#mention) talks about the spelling (`glelel`). **`thu`** still predicates of the person: you are applying the type, not naming letters.
+**Compare with:** a [mention](spans.md#mention) talks about the spelling (`glelel`). **`thu`** still describes the person: you are applying the type, not naming letters.
 
 #### On a role compound {#scope-role}
 
@@ -475,7 +474,7 @@ A role compound carries one seam, so it takes this scope or the [ability](intent
 
 #### Stacked scope {#scope-stacks}
 
-The four letters also stack, with the same pairs as [joins](joins.md) and [hooks](hooks.md). Leading **`u`** inverts the second letter. The other stacks are frozen units (*on*, *using*, *toward*), not “first job then second job.”
+The four scope vowels also combine in pairs, the same pairs that [joins](joins.md) and [hooks](hooks.md) use. A pair that starts with **`u`** sets the second vowel's reach aside (*except this episode*, *except this pair*, *not in that role*). The other pairs have fixed meanings (*on*, *using*, *toward*); do not read them as the first vowel's meaning followed by the second's.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -522,7 +521,7 @@ The four letters also stack, with the same pairs as [joins](joins.md) and [hooks
 >
 > "I am not speaking as a teacher."
 
-**`thao`** and **`thuo`** take `/b/` the same way **`tho`** does. **`thae`** is not a [mention](spans.md#mention): the person is still the one you describe, and the role is a means. **`thue`** is off-duty or a refused frame, not *fake teacher* and not [FORMER](knowing.md#former-climate).
+**`thao`** and **`thuo`** take `/b/` the same way **`tho`** does. **`thae`** is not a [mention](spans.md#mention): the person is still the one you describe, and the role is a means. **`thue`** means speaking off duty or refusing that role, not *fake teacher* and not [FORMER](knowing.md#former-climate).
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -733,7 +732,7 @@ z-Ahaben | [g-guard | g-not]
 
 [z-Azawan | g-craft] | h-always
 
-*Alahen is always a craftsperson.*
+*Azawan is always a craftsperson.*
 :::
 
 **3.** `zagavol gugom bazawan.`

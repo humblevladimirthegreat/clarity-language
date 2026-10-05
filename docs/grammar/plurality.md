@@ -32,7 +32,7 @@ A [role pointer](pronouns.md#role-pointers) takes **-x** the same way: that one 
 >
 > "Azawan walks. They and associates sit."
 
-A first mention of a **kind as a group in this situation** uses **-lx** (concrete) or **-mx** (abstract). Bare **-l** / **-m** still introduce; **-lx** / **-mx** introduce an **indefinite group** (a set in this situation, not anchor plus associates).
+To introduce several things of one kind (English *some cats*), use **-lx** (concrete) or **-mx** (abstract). Plain **-l** / **-m** introduce one thing. With **-x** added, they introduce an **indefinite group**: a set of that kind in this situation, with no anchor and no associates.
 
 > `zagadulx vehahel.`
 >
@@ -54,7 +54,7 @@ An extra noun takes **-x** the same way. Here the recipient is Alahen and associ
 >
 > "Azawan tells Alahen and associates."
 
-**Compare with:** English *cats* can mean a kind in general. **-lx** is a **set in this situation**.
+**Compare with:** English *cats* can mean the kind in general. **-lx** means only a set in this situation.
 
 | Agazan | Use | English |
 |--------|-----|---------|
@@ -62,12 +62,14 @@ An extra noun takes **-x** the same way. Here the recipient is Alahen and associ
 | **-mx** | indefinite group (a set in this situation), abstract | same grouping on a **-m** root |
 | **-nx** | named / titled group | *Team Alpha*; *Azawan and associates* as a title |
 | **-lnx** | indefinite group of things a name applies to ([one of a name](word-endings.md#name-instance--ln)) | *some Azawans* (beds of that brand) |
-| **-rx** | resume prior referent and associates, or a prior group | *they* (that one and associates) |
+| **-rx** | resume someone already mentioned and associates, or a prior group | *they* (that one and associates) |
 
 ### Person-role **-x** {#person-role-x}
 <a id="clusivity"></a>
 
-English *we* and *you* do not say whether the listener is in the group. That split is **clusivity**. On the speaker and listener roots, **-x** still adds associates, but the reading follows the conversation role: speaker plus that person’s people, or everyone you are talking to. The **address set** is everyone you are talking to right now (all current addressees, no speaker). Inclusive *you and I* is **`aha`** ([special pronouns](pronouns.md#special-pronouns)); with **-x** it adds the speaker’s and listener’s shared people (below).
+English *we* and *you* do not say whether the listener is in the group (the split between *we including you* and *we without you* is called **clusivity**). Agazan puts **-x** on the speaker and listener roots. It still adds associates, but who is in the group follows each root's place in the conversation. Speaker **-x** is the speaker plus that person’s people, without the listener. Listener **-x** is the **address set**: everyone you are talking to right now, and not the speaker.
+
+Inclusive *you and I* is **`aha`** ([special pronouns](pronouns.md#special-pronouns)). With **-x** it adds the speaker’s and listener’s shared people (below).
 
 > `zehodonx vowogal.`
 >
@@ -129,7 +131,7 @@ The same roots take the role letter of the slot they fill. As a direct object th
 
 **Compare with:** inclusive *we* uses **`aha`** (`zahan`), not **`amagonx`**. **`amagonx`** leaves you out, **`ehodonx`** leaves the speaker out, and **`ahanx`** takes in both and the people around you. Nonspecific *someone* (**`una`**) names no group, so it takes no **-x**: *some people* is `zobelx`.
 
-**Not the same job as:** *you and yours* uses a **name**…**-x** (`zalahenx`). **`ehodonx`** is the [address set](#person-role-x) only.
+For *you and yours* (one listener plus that person's people), put **-x** on the listener's name (`zalahenx`). **`ehodonx`** means only the address set.
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -304,7 +306,7 @@ y-question | z-Ahaben-x | v-scream
 ### Associate-set resolution
 <a id="associate-resolution"></a>
 
-English *Azawan and them* does not say who belongs. Agazan **-x** is the same: who counts is **open** unless you say. When the list matters, name the members with a [join](joins.md). When it does not, the listener guesses in this order: a group already named in the talk, then the obvious group in the scene (this meeting, this household).
+English *Azawan and them* does not say who belongs. Agazan **-x** is the same: who counts is **open** unless you say. When the list matters, name the members with a [join](joins.md). When it does not, the listener guesses in this order: a group already named in the conversation, then the obvious group in the scene (this meeting, this household).
 
 > `zazawanx vowogal.`
 >
@@ -323,11 +325,11 @@ If the wrong reading would matter, say so. Use **`aha`** or a join for *you and 
 | Priority | Use | English |
 |----------|-----|---------|
 | Explicit join / except | listed members win | *Azawan and Alahen*; associates minus the listener |
-| Recently named cohort | family, team title already in the talk | that introduced group |
+| Recently named cohort | family, team title already in the conversation | that introduced group |
 | Institutional frame | this meeting, this household | the scene’s default group |
 | Open | no further cue | the listener may or may not be in the set |
 
-For the **address set** (`ehodonx`), count everyone called in this turn’s vocatives, plus anyone still being addressed from before.
+For the **address set** (`ehodonx`), count everyone called by name at the start of this turn, plus anyone still being addressed from before.
 
 ### Groups as the topic
 
@@ -335,7 +337,7 @@ A [topic word](pronouns.md#topic-groups) takes **-x** like any noun: `xazawanx` 
 
 ### Verbs (`/v/`): collective {#verbs-v}
 
-English *they walk* does not say whether it was one shared outing. Put **-x** on the **verb** (after its ending) when the event is **one shared act**. A set subject with a singular verb leaves together vs separately open, except for a counted object (below). Noun **-x** still names **who**; verb **-x** names **how** the doing is structured.
+English *they walk* does not say whether it was one shared outing. Put **-x** on the **verb** (after its ending) when the event is **one shared act** (a **collective** act). Without verb **-x**, a group subject leaves open whether they acted together or separately, except with a counted object (below). Noun **-x** says **who** is in the group; verb **-x** says they did it as one act.
 
 > `zazawanx vezehelx.`
 >
@@ -378,7 +380,7 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 ### Adjectives (`/ɡ/`): collective {#adjectives-g}
 <a id="collective"></a>
 
-English *the boxes are heavy* can mean each box or the pile. Put **-x** on the **adjective** (after its ending) when the property holds of the **host set as one unit**. A set host with a singular adjective leaves each-member vs one-pile open.
+English *the boxes are heavy* can mean each box or the pile. Put **-x** on the **adjective** (after its ending) when the property holds of the noun's group **as one unit**. Without **-x**, the adjective leaves open whether it holds of each member or of the whole pile.
 
 > `zavabalx garagamx.`
 >
@@ -391,7 +393,7 @@ English *the boxes are heavy* can mean each box or the pile. Put **-x** on the *
 | host set + singular `/ɡ/` | each member, or don’t care | *the boxes are heavy* |
 | host set + `/ɡ/`…**-x** | collective: the set as one pile | *heavy as a pile* |
 
-With a [phrase join](joins.md), SHARED singular scale under **`a`** is already **each member**; SHARED `/ɡ/`…**-x** is **collective**.
+After nouns joined into a list with **`a`** ([joins](joins.md)), one plain `/ɡ/` word applies to **each member**. With **-x**, it applies to the list **as one unit**.
 
 | Agazan | English |
 |--------|---------|
@@ -403,7 +405,7 @@ With a [phrase join](joins.md), SHARED singular scale under **`a`** is already *
 
 **-rx** on `/ɡ/` resumes a prior **collective** adjective (*still collectively so*).
 
-For *red books*, put **-x** on the **noun**; keep color and trait singular on `/ɡ/`. Character trait uses singular `/ɡ/` plus **`hual`**.
+For *red books*, put **-x** on the **noun** and leave the color word plain, since each book is red on its own. A character trait is likewise a plain `/ɡ/` word, plus **`hual`**.
 
 **Related form:** who is in the set uses **-x** on the noun.
 
@@ -411,7 +413,7 @@ For *red books*, put **-x** on the **noun**; keep color and trait singular on `/
 
 ### Vocatives (`/y/`)
 
-To call a group at the start of a turn, put **-x** on the vocative (`/y/`) after its ending, the same way you mark associates on a noun. That names who you are talking to as an associative group. A call ends in **-n** (or resumes with **-r**), so a kind you address takes **-n** as a title. An interjection (**-l** / **-m**) calls no one, so it takes no **-x**.
+To call a group at the start of a turn, put **-x** on the call word (the vocative, `/y/`) after its ending, the same way you mark associates on a noun. That names who you are talking to as an associative group. A call ends in **-n** (or resumes with **-r**), so a kind you address takes **-n** as a title. An interjection (**-l** / **-m**) calls no one, so it takes no **-x**.
 
 > `yagadunx.`
 >

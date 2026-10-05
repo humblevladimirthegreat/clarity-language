@@ -28,6 +28,7 @@ A session starts with something like "do the next batch." The session then:
 ### Ground rules for every batch
 
 - **Wording only.** Do not change Agazan in code spans, example sentences, morph glosses, tables' Agazan columns, or translation checkpoint answers. Do not add or drop examples. Rewording an English translation line is fine only when the meaning stays exactly the same.
+- **Obvious errors may be fixed.** When a mismatch is plainly a slip, with only one possible correct reading (a translation or checkpoint answer that names the wrong person, a typo in an English gloss, a morph line that disagrees with its example), fix it in place and note it in the batch log. Anything that needs a design judgment, such as which of two forms is right or whether a rule is wrong, still goes under [Questions for the editor](#questions-for-the-editor).
 - **Keep anchors.** Do not rename headings that carry `{#id}` or `<a id>` anchors, and do not change those ids. Other pages and the site link to them.
 - **Retie-safe.** Do not hand-spell a content root in new prose where the page currently avoids it. Follow [retie-safe writing](../meta/grammar-docs.md#retie-safe-writing).
 - **No new links into the recipe track or Claritish**, no links to `meta/` or proposals, and no preview links to pages later in the path ([teach now; don't preview later](../meta/grammar-docs.md#teach-now-dont-preview-later)).
@@ -62,7 +63,7 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - [x] **Batch 2.2:** `word-endings` (3k), `clause` (3.5k)
 - [x] **Batch 2.3:** `speech-moves` (2.5k), `dependents` (5.4k)
 - [x] **Batch 2.4:** `pronouns` (7.3k)
-- [ ] **Batch 2.5:** `plurality` (2.9k), `predication` (3.8k)
+- [x] **Batch 2.5:** `plurality` (2.9k), `predication` (3.8k)
 - [ ] **Batch 2.6:** `joins` (8.5k)
 - [ ] **Batch 2.7:** `questions` (5.2k)
 - [ ] **Batch 2.8:** `hooks` (7.7k)
@@ -150,6 +151,18 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - A new one: "none after a special pronoun" names a later H3 on the same page, and "after a joined list" previews `joins`. Kept as inventory.
 - Asking about the topic uses *which X* and *join blank* from `joins` / `questions`, which come later on the path. Kept; Phase 3 can check.
 - Special pronouns: the *here* / *there* deixis pointer to `hooks` is kept as a Compare-with for English the learner reaches for now.
+
+### 2026-10-05: Batch 2.5 (`plurality`, `predication`)
+
+- **`plurality`:** the **-lx** / **-mx** lead now gives the English job (*some cats*) first. *referent* in the summary table → *someone already mentioned*. Person-role **-x** lead split: *clusivity* glossed in plain words, speaker **-x** and listener **-x** each get their own sentence, and the inclusive **`aha`** note became its own paragraph. "Not the same job as" (a second compare block) became a plain sentence. Intermediate: *the talk* → *the conversation*; *this turn's vocatives* → *called by name at the start of this turn*. Verb and adjective collective leads replace *singular verb*, *set host*, and "how the doing is structured" with plain English, and gloss *collective*. The joins sentence that used unglossed *SHARED* / *scale* (joins comes next on the path) now says what a plain vs **-x** adjective after a joined list means. The *red books* line now says why the color stays plain. *vocative* glossed as the call word.
+- **`predication`:** *second predicate* (arrived tired), *proper **-n***, *published abstract*, *time of the clause*, *a resume on **-r***, *packages*, *characterizing*, *seam*, *predicates of*, *the office*, and *frozen units* replaced with plain English. Cut the redundant nationality restatement ("Nationality stays on **-m**…"). Kind / role lead merged into one job-shape paragraph plus a sentence naming *classification* (the old second paragraph was a fragment). Existence lead now starts from *there is*. Label scope lead: the vowel list reads naturally; the scope-vs-restrictor copula slogan is spelled out. **`tho`** H4 gets a one-line lead. Stacked scope lead says what a **`u`**-initial pair does. Added the missing blank line after the Commands to be ADJ heading. The In-progress Compare-with no longer opens with "Later,".
+
+**Deferred / kept:**
+- `predication` Existence: the *someone's* (`hooks`), *every K* / *kind itself* (`joins`), and extra-noun hook pointers preview later pages. Each answers an English sentence the learner will try now (*my dog is big*, *there is a dog in the yard*), so they stay for Phase 3.
+- `predication` In progress: the [role word] Compare-with points at `roles` (late on the path). Kept as the form for *a walker*.
+- `predication` Label scope: the sake-roots sentence and the [FORMER] / [mention] pointers preview later pages; kept as inventory.
+- `plurality` Associate-set resolution uses the *except* hook **`ul`** from `hooks`; kept, since the example needs it.
+- Resolved after review: `predication` Intermediate Agazan → English #2 answered *Alahen* for `zazawan`; now *Azawan is always a craftsperson.*
 
 ## Questions for the editor
 
