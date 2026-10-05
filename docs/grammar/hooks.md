@@ -149,7 +149,7 @@ Simplex vowels (one vowel plus an ending):
 >
 > "A dog sleeps in a house."
 
-To ask *where?*, put the fill-ask blank **`bar`** after the hook (`ol bar` *where?*, `ul bar` *where from?*) — see [Where?](questions.md#where).
+To ask *where?*, put the fill-ask blank **`bar`** after the hook (`ol bar` *where?*, `ul bar` *where from?*). See [Where?](questions.md#where).
 
 > `zalahen vehahel ol bebedel.`
 >

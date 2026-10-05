@@ -351,7 +351,7 @@ Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hobom` / `gobom`** | constitutive piece | *part of* | `obol` *bone* | 🦴: the piece that holds the body’s shape |
-| **`hahem` / `gahem`** | filling of a vessel | *contents of* | `ahel` *yar* | 🫙: the vessel named by what it stores |
+| **`hahem` / `gahem`** | filling of a vessel | *contents of* | `ahel` *jar* | 🫙: the vessel named by what it stores |
 | **`huwum` / `guwum`** | constitution | *made of* | `uwul` *wood* | 🪵: the stuff the thing is made of |
 | **`hagum` / `gagum`** | identity source / provenance | *from* (origin) | `agul` *country* | 🗾: a map of one country as where it comes from |
 | **`hozazom` / `gozazom`** | portion cut from a whole | *a piece of* / *a slice of* | `ozazol` *saw* | 🪚: the saw cuts a piece off |
@@ -566,7 +566,7 @@ Write a hosted pair for that second now. Asserted whose-now (a real dated line i
 >
 > z-Azawan | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 >
-> "As of 22 July, Azawan is in a house." — the event is concurrent with that now
+> "As of 22 July, Azawan is in a house." (the event is concurrent with that now)
 
 A later `/x/` clause is a new host. To keep the same books, write the **same overlay** with **-r** and no `/b/` (`huhur` / `hurar`). A new `/b/` replaces whose-now, including a switch of overlay. One host takes at most one *as-of* pair.
 
@@ -588,7 +588,7 @@ Once whose-now is set, a [forecast](knowing.md#forecast) offset (`bral`) counts 
 >
 > [z-Azawan | z-Alahen | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 >
-> "As of 22 July, Azawan is more challenging than Alahen." — `/w/` does not retarget the verb
+> "As of 22 July, Azawan is more challenging than Alahen." (`/w/` does not retarget the verb)
 
 > `zamol thamom huhum bedabal.`
 >
@@ -600,7 +600,7 @@ Once whose-now is set, a [forecast](knowing.md#forecast) offset (`bral`) counts 
 >
 > z-Azawan | [h-as-of.ledger | b-_22,7] | [h-before | b-departure] | v-sit | [in | b-house]
 >
-> "As of 22 July, Azawan is in a house before the leaving." — books and event-when are different jobs
+> "As of 22 July, Azawan is in a house before the leaving." (books and event-when are different jobs)
 
 > `zalahen vowogal ol b_#22,7. xalahen thamom huhum b=_#22,7 vedabal.`
 >
@@ -612,15 +612,15 @@ Once whose-now is set, a [forecast](knowing.md#forecast) offset (`bral`) counts 
 >
 > z-Alahen | th-RESIDUE | v-departure | [h-as-of.ledger | b-that-clause] | z-Alahen | v-tell
 >
-> "As of when Alahen told it, the departure still stood." — the telling sentence is whose-now, not leftover
+> "As of when Alahen told it, the departure still stood." (the telling sentence is whose-now, not leftover)
 
 > `zalahen thamom huhum b_#22,7 vedabal. xazawan thobam bral huram b_#23,7 vowogal.`
 >
 > z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | [th-PATTERN | b-later] | [h-as-of.bookmark | b-_23,7] | v-walk
 >
-> "As of 22 July, Alahen had still left. From a 23 July placeholder, Azawan would walk, going by the pattern." — a new pair replaces whose-now
+> "As of 22 July, Alahen had still left. From a 23 July placeholder, Azawan would walk, going by the pattern." (a new pair replaces whose-now)
 
-A finished inner clause does not stay open for a later matrix resume. Isolated `huhur` parses; write it only after an introduce of that overlay.
+A finished inner clause does not stay open for a later resume in the main clause. Isolated `huhur` parses; write it only after an introduce of that overlay.
 
 **Compare with:** [*after*](dependents.md#dependent-clauses) **`henum`** and extra-noun **`ol`** *at* order or landmark events; they are not the books. [Causal *if*](causation.md#if) **`thoyem`** is speaker-now opportunity, not English *if he had* (`huram`). [NOTIONAL](knowing.md#notional) is play, not a bookmark now. [Scope islands](joins.md#scope-islands-join) bound join scope; they do not persist *as-of*. Repeat the evidential and/or resume *as-of* on the next clause.
 
@@ -638,13 +638,13 @@ A stance is yours at speech-now: `thovum` is how unsure you are **as you speak**
 >
 > z-Alahen | [th-as-of.ledger | b-_22,7] | th-MAY | v-departure
 >
-> "On 22 July, I thought Alahen might leave." — the doubt was then; nothing is said about now
+> "On 22 July, I thought Alahen might leave." (the doubt was then; nothing is said about now)
 
 > `zalahen thovum vedabal.`
 >
 > z-Alahen | th-MAY | v-departure
 >
-> "Maybe Alahen left." — the doubt is now
+> "Maybe Alahen left." (the doubt is now)
 
 `/th/` *as-of* moves only the stances. `/h/` *as-of* moves the event's books. A clause may carry one of each, so a past stance can sit next to a past event:
 
@@ -660,7 +660,7 @@ With **`thuram`**, the stance is one you would hold, not one you held:
 >
 > z-Alahen | th-MAY | v-departure | [th-as-of.bookmark | b-that-clause] | z-Azawan | v-tell
 >
-> "Once Azawan told, I'd think Alahen might leave." — a placeholder now for the doubt
+> "Once Azawan told, I'd think Alahen might leave." (a placeholder now for the doubt)
 
 Resume works as on `/h/`: **`thuhur`** / **`thurar`** with no `/b/` on the next `/x/` clause keeps the same stance-now.
 

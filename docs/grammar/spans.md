@@ -26,7 +26,7 @@ The whole `d[azawan]` is the direct object (who or what is acted on). If the int
 
 You can mark how faithful the quote is. Put the mark **after** the role letter, before the opening bracket.
 
-Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gist, not the exact words, write **`~`** (`d~[zazawan vezehel]`). When the chunk is the **work** that bears a **multi-word** title (the song, proverb, book — not the name-string), write **`@`** (`d@[onodan alahen]`). A one-word work or person is ordinary **-n** (`donodan`), not `d@[onodan]`, unless the role letter or the ending is **part of the title** you are packaging. The mark is on the **fence**; words inside keep their usual endings ([titled phrases](word-endings.md#titled-phrases)).
+Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gist, not the exact words, write **`~`** (`d~[zazawan vezehel]`). When the chunk is the **work** that bears a **multi-word** title (the song, proverb, or book, not the name-string), write **`@`** (`d@[onodan alahen]`). A one-word work or person is ordinary **-n** (`donodan`), not `d@[onodan]`, unless the role letter or the ending is **part of the title** you are packaging. The mark is on the **fence**; words inside keep their usual endings ([titled phrases](word-endings.md#titled-phrases)).
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -492,7 +492,7 @@ A [tone mark](speech-moves.md#tone-marks) written right before the opening brace
 | Binder | Use inside the island |
 |--------|------------------------|
 | Scope-taking **`/h/`** or **`/th/`** | frames that **chunk** (prefer first in the island; see the `/b/` exception below) |
-| Prefixed **join** | joins **only** matching-role material **inside** — [scope islands](joins.md#scope-islands-join) |
+| Prefixed **join** | joins **only** matching-role material **inside** ([scope islands](joins.md#scope-islands-join)) |
 
 `/h/` and a join may share one island (`{ hegewem zazawan zalahen zam }`).
 

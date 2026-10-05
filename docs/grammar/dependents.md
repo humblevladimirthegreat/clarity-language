@@ -408,7 +408,7 @@ In a new turn with its own act word, the act word comes first and the linker sta
 >
 > "Azawan walks so hastily that Alahen sits."
 
-**Compare with:** *although* / *while* attach a dependent after **`barl`** (`hezom barl`, `huwem barl` — [dependent clauses](#dependent-clauses)). *Despite Alahen* is the same pole with a noun in `/b/` (`hezom balahen`). *So that Alahen sits* is **`hogom barl`**. Discourse **`xezom`** / **`xagagam`** / **`xodum`** glue a finished sentence to the next one.
+**Compare with:** *although* / *while* attach a dependent after **`barl`** (`hezom barl`, `huwem barl`; see [dependent clauses](#dependent-clauses)). *Despite Alahen* is the same pole with a noun in `/b/` (`hezom balahen`). *So that Alahen sits* is **`hogom barl`**. Discourse **`xezom`** / **`xagagam`** / **`xodum`** glue a finished sentence to the next one.
 
 ### Stand-in vowels (`-rl` / `-rm`) {#stand-in}
 <a id="clause-member"></a>
@@ -669,7 +669,7 @@ For example, the `/v/` word takes the following sentence as its content:
 >
 > "Azawan declines to sit."
 
-A `/z/` stand-in puts the whole following sentence in the subject slot. With a predicative `/ɡ/`, that is English *it is … that* / *it is … to*.
+A `/z/` stand-in puts the whole following sentence in the subject slot. With a `/ɡ/` word describing that sentence, that is English *it is … that* / *it is … to*.
 
 > `gamadam zarl zazawan vowogal.`
 >

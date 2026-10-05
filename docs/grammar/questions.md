@@ -212,7 +212,7 @@ When the **outer** sentence is a claim (*Azawan seesâ€¦*, *Azawan tells Alahenâ€
 >
 > "Azawan sees whether Alahen walks."
 
-**Compare with:** a matrix question (*Does Azawan walk?*) writes **`yol`** on the **outer** turn. *If Alahen walks* as a condition is not inner **`yol`** either; it has its own [condition word](causation.md#if).
+**Compare with:** a main-clause question (*Does Azawan walk?*) writes **`yol`** on the **outer** turn. *If Alahen walks* as a condition is not inner **`yol`** either; it has its own [condition word](causation.md#if).
 
 ### Translation practice {#beginner-translation-practice}
 

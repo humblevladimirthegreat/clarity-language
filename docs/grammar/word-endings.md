@@ -9,7 +9,7 @@ Outside a sentence (a list, a heading, a dictionary line) you write **root + end
 ### First mention, concrete (`-l`) {#concrete-l}
 <a id="literal-l"></a>
 
-When you mention a kind of thing for the first time, in its everyday **concrete** meaning — a scene you could point at — end the citation with **-l**. The listener treats it as a new, ordinary instance of that kind. English for the citation is the bare kind, with no article. (cue: **l** ≈ look / concrete)
+When you mention a kind of thing for the first time, in its everyday **concrete** meaning (a scene you could point at), end the citation with **-l**. The listener treats it as a new, ordinary instance of that kind. English for the citation is the bare kind, with no article. (cue: **l** ≈ look / concrete)
 
 > `azawal`
 >

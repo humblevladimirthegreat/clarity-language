@@ -1,6 +1,6 @@
 # Join across roles {#join-across-roles}
 
-The same join vowel series works across roles: `/v/` packages verb phrases, `/x/` connects clauses, and **-n** under `/v/`, `/ɡ/`, or `/h/` makes join-derived content words. This page covers those forms together. Phrase fences and their set, rank, arity, and scope patterns are in [joins](joins.md).
+The same join vowel series works across roles: `/v/` packages verb phrases, `/x/` connects clauses, and **-n** under `/v/`, `/ɡ/`, or `/h/` makes join-derived content words. Phrase fences and their set, rank, arity, and scope patterns are in [joins](joins.md).
 
 ## Intermediate {#intermediate}
 
@@ -93,7 +93,7 @@ A clause join with no clause before it is the standalone reading, like `zal` *no
 >
 > "Nothing happened, as far as I know."
 
-`/x/` keeps the **same speech act**. Later clauses inherit the opener and omit `/y/` (including recoverable **`yal`**).
+`/x/` keeps the **same speech act**. Later clauses inherit the opener and omit `/y/` (including **`yal`**, which the reader can fill back in).
 
 > `zazawan vowogal xan zalahen varahal.`
 >

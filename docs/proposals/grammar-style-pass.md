@@ -38,7 +38,7 @@ A session starts with something like "do the next batch." The session then:
 
 One session across all 27 in-scope pages. These checks are grep-driven and need little judgment. Doing them first keeps the Phase 2 diffs focused on wording.
 
-- [ ] **Batch 1.1: mechanical sweep, all in-scope pages**
+- [x] **Batch 1.1: mechanical sweep, all in-scope pages**
   - **Em dashes in prose** → comma, colon, parentheses, or a separate sentence ([punctuation](../meta/doc-style.md#punctuation)). Leave quoted English example translations and checkpoint answers alone. In tables, replace a dash that joins two phrases, but keep a lone `—` used as an empty-cell placeholder.
   - **Agazan forms in italics** → backticks. English glosses stay in italics.
   - **Maintainer *we* or author *I*** in teaching prose → second person or impersonal. *We* inside an English translation of an Agazan example (inclusive *we*, and so on) is content, not voice. Leave it. Author *I* stays only in the signed essay parts of `why-agazan.md`.
@@ -90,6 +90,25 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 
 <!-- One entry per batch: date, batch id, pages, main kinds of change, anything deferred. -->
 
+### 2026-10-05: Batch 1.1 (mechanical sweep)
+
+**Pages touched:** `causation`, `comparatives`, `dependents`, `hooks`, `intention`, `join-across-roles`, `joins`, `knowing`, `numbers`, `numbers-applied`, `numeric-derivation`, `plurality`, `questions`, `relations`, `restrictors`, `sakes`, `spans`, `word-endings`. The rest had no hits.
+
+- **Em dashes:** a dash before a note after a quoted translation (`> "…" — note`) became parentheses. A dash before a link pointer became a parenthetical link. Dashes in table cells and in cues became a colon, semicolon, or comma. Headings with an em dash now use a colon, and every explicit id is unchanged. Two construction-registry anchors in `src/parse/constructions.ts` pointed at the old auto slugs of `numbers.md` headings, so they now use the new slugs. Kept: dashes inside quoted English translations, checkpoint prompts and answers, italic English glosses that quote a translation (`*may — who knows*`), and lone `—` empty-cell placeholders.
+- **Agazan in italics:** prose spelled-number words in `numbers.md` (the `g=+` fill table, the shorthand intro, the ending note, the end-relative lead, the writing-style table) are now in backticks. `relations.md`: the English gloss typo *yar* became *jar*.
+- **Maintainer *we*:** `joins.md` intro ("We call that …") rewritten as impersonal. Every other *we* / *I* hit is an English gloss or translation, or sits in the signed parts of `why-agazan` / `introduction`.
+- **Throat-clearing:** dropped "This page covers those forms together." (`join-across-roles`). No other hits.
+- **Jargon:** *predicative* (`dependents`), *matrix* (`questions`, `relations`), *adjunct* (`numeric-derivation` tables, now *extra detail* as in `clause`), *utterance* (`numbers`), *recoverable* (`join-across-roles`), and the bare *prescription deontic* (`sakes`).
+- **`*a*/*b*`:** no hits.
+
+**Deferred / kept:**
+- The `🔊 *…*` pronunciation lines and the spelled column of the big shorthand-to-spelled table in `numbers.md` keep italics, because the test suite reads the spelled pronunciation from that italic slot ("missing pronunciation row"). See the question below.
+- `relations.md` (as-of): "write it only after an introduce of that overlay" is awkward. Left for batch 2.9.
+- `sakes.md` still uses *deontic* in the intro, the prescription lead, and the summary table, each glossed in the same breath. Phase 2 (batch 2.13) can decide whether the term earns its place.
+- `pronouns.md` uses *pitch reset* without *prosody*. No change.
+
 ## Questions for the editor
 
 <!-- Suspected grammar problems found during the pass. Not fixed by the pass. One bullet each: page, section, issue. -->
+
+- `numbers.md`, pronunciation rows and the shorthand-to-spelled table: spelled number words are in italics (`🔊 *grarel*`), and the test suite requires that. This conflicts with doc-style's "Agazan forms in backticks, not italics", and retie-safe writing says retie never rewrites italics. Spelled numbers contain no content roots, so retie risk is low. Should the pronunciation convention (and its check) move to backticks?

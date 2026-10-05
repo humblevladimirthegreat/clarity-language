@@ -514,7 +514,7 @@ With **-r**, the hook stands in for one value you are not naming. Under a [quest
 
 The [span hooks](hooks.md#spans) take **-r** the same way: `zrarel uar zraval` is *some value strictly between 3 and 5*, and `zrarel uer zraval` *some value outside 3–5*.
 
-### Ordinal generation — digitful exponent on **`#`** / **`#-`**
+### Ordinal generation: digitful exponent on **`#`** / **`#-`**
 <a id="ordinal-generation"></a>
 <a id="generation-ordinal"></a>
 
@@ -527,7 +527,7 @@ The marker still counts **from the start** or **from the end** inside that cohor
 | **Marker `#` / `#-`** | Count **from the start** / **from the end** within that generation’s cohort |
 | **Digitful exp `eK` / `e-K`** | Generation **+K** (descendants / nested deeper) or **−K** (ancestors / enclosing layer) |
 | **Mantissa** | Which **slot** in that cohort (omit mantissa = bare OoM: the generation as a whole) |
-| **Exp omitted** | **Same generation** as the focus (`g#3` = 3rd peer) — formal default |
+| **Exp omitted** | **Same generation** as the focus (`g#3` = 3rd peer); formal default |
 | **Named `e0`** | **Assert current generation** (gen 0); usually redundant when omit already means current |
 
 | Form | Reading |
@@ -592,7 +592,7 @@ For a side branch, nest a second anchor: first step to the relative, then from t
 >
 > [z-Alahen | [g-#-e0 | [b-person | [g-#-1e-1 | b-Azawan]]]] | v-walk
 >
-> "Alahen, a sibling of Azawan's first parent, walks." — Azawan's aunt or uncle
+> "Alahen, a sibling of Azawan's first parent, walks." (Azawan's aunt or uncle)
 
 **Compare with:** friends, bosses, and other non-kin relations are not generations, so these forms do not name them.
 

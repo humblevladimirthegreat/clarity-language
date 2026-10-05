@@ -17,7 +17,7 @@ To say what someone **means to do**, put **`thama`** before the ordinary verb, s
 
 Ordinary content stays available (`zamal` *a map*; `vamal` *to plan*). Leave PLAN off when you are not framing intention.
 
-#### Endings — map resolution
+#### Endings: map resolution
 <a id="plan-map-resolution"></a>
 <a id="plan-endings"></a>
 
@@ -25,9 +25,9 @@ On **`ama`**, **-l / -m / -r** say **how fully drawn** the intention is: a map t
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`thamal`** | **atlas** | *is fully prepared to …* — hurdles are anticipated and prepared for | `amal` *plan-atlas* | **-l** ≈ lasting (detours already drawn, so it holds up) |
-| **`thamam`** | **itinerary** (soft default) | *plans to …* — steps laid out, or detail unstated | `amam` *plan-itinerary* | **-m** ≈ middle (the route, no backups) |
-| **`thamar`** | **sketch** | *intends to …* / *is thinking of …* — the direction, details left open | `amar` *plan-sketch* | **-r** ≈ right now (a rough direction) |
+| **`thamal`** | **atlas** | *is fully prepared to …*: hurdles are anticipated and prepared for | `amal` *plan-atlas* | **-l** ≈ lasting (detours already drawn, so it holds up) |
+| **`thamam`** | **itinerary** (soft default) | *plans to …*: steps laid out, or detail unstated | `amam` *plan-itinerary* | **-m** ≈ middle (the route, no backups) |
+| **`thamar`** | **sketch** | *intends to …* / *is thinking of …*: the direction, details left open | `amar` *plan-sketch* | **-r** ≈ right now (a rough direction) |
 
 > `zalahen thamar vowogal.`
 >
@@ -216,7 +216,7 @@ English *can* and *can't* usually sit in front of the verb (*can sing*, *can't s
 #### Can (`xa`)
 <a id="can"></a>
 
-To say someone **can** do something you name with one verb (*sing*, *walk*), or **can** have a quality you name with one adjective, keep that verb or adjective. After the root, add **`x`** and **`a`**, then the usual ending. Keep the first letter the same: `/v/` for an action, `/ɡ/` for a quality. You do not need a separate helping verb like English *can*. If you are not talking about ability, leave the word ordinary. Ability goes on `/v/` and `/ɡ/` only (the hostless root of [when there is no single verb](#ability-fallback) aside); a noun, name, or `/h/` takes none. (Cue: **a** ≈ add — capability is in)
+To say someone **can** do something you name with one verb (*sing*, *walk*), or **can** have a quality you name with one adjective, keep that verb or adjective. After the root, add **`x`** and **`a`**, then the usual ending. Keep the first letter the same: `/v/` for an action, `/ɡ/` for a quality. You do not need a separate helping verb like English *can*. If you are not talking about ability, leave the word ordinary. Ability goes on `/v/` and `/ɡ/` only (the hostless root of [when there is no single verb](#ability-fallback) aside); a noun, name, or `/h/` takes none. (Cue: **a** ≈ add, so capability is in)
 
 > `zazawan vezehexal.`
 >
@@ -328,7 +328,7 @@ Ordinary content is still available (`zehul` *a checkmark*; `vehul` *to check / 
 
 **Compare with PLAN:** [PLAN](#plan-predict) says how fully someone has planned a course of action. DECISION says how readily they may change their choice.
 
-#### Endings — changeability
+#### Endings: changeability
 <a id="decision-changeability"></a>
 
 On **`ehu`**, **-l / -m / -r** match unmet [changeability](sakes.md#sake-changeability) on the settled-to-passing scale: irreversible / modifiable / temporary. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know how settled the pick is, use **-m**.
@@ -382,7 +382,7 @@ Ordinary content is still available (`zudul` *a test tube*).
 >
 > "Azawan tries to write."
 
-#### Endings — commitment
+#### Endings: commitment
 <a id="attempt-commitment"></a>
 
 On **`udu`**, **-l / -m / -r** say how far the attempt will go. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know, use **-m**.

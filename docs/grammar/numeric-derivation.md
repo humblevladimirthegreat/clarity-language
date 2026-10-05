@@ -1,6 +1,6 @@
 # Numeric derivation {#numeric-derivation-page}
 
-Glue a [number](numbers.md) stem onto a content root with the same join as a [lexical compound](x-compounds.md#lexical-compounds): **-l** when the host is the everyday kind, **-m** when that host is the published abstract sense. The number names a **property of the kind** (essence, grain, part-count, order, catalog code). Free number words still count, rank, and label in a clause slot. (cue: join then number **r** — **`lr`** / **`mr`**)
+Glue a [number](numbers.md) stem onto a content root with the same join as a [lexical compound](x-compounds.md#lexical-compounds): **-l** when the host is the everyday kind, **-m** when that host is the published abstract sense. The number names a **property of the kind** (essence, grain, part-count, order, catalog code). Free number words still count, rank, and label in a clause slot. (cue: join then number **r**: **`lr`** / **`mr`**)
 
 ## Advanced {#advanced}
 
@@ -66,7 +66,7 @@ English *quasi-* says something has the **shape or role** of a kind without coun
 | **`/v/`** (verb) | to treat as quasi- / as-if that kind | `vanalobelrubul`: *to quasi-befriend* / treat as friend-shaped |
 | **`/ɡ/`** (adjective) | *quasi-* (ascribed) | `gezevolrubul`: *quasi-official* |
 | **`/h/`** (adverb) | under quasi- framing | `hezevolrubul`: *quasi-officially* |
-| **`/w/`** (adjunct) | host graded as quasi- | `webazelrubul gebazel`: *quasi-commitment* |
+| **`/w/`** (extra detail) | host graded as quasi- | `webazelrubul gebazel`: *quasi-commitment* |
 | **`/y/`** (interjection) | *Quasi-!* / *As if that kind!* | `yanalobelrubul` |
 
 **Compare with:** free **`grubul`** / **`vrubul`** / **`thrubul`** / **`yrubul`** / **`xrubul`** are the free *just short* amount, or number as verb / stance / interjection / discourse ([numbers.md § Just short](numbers.md#just-short)). **`ROOTl-e-`** is quasi-*kind*.
@@ -127,7 +127,7 @@ English *a pair of…*, *three-part…*, *primary…* can name **how many parts 
 | **`/v/`** (verb) | act of nulling / resetting | act that refuses null / keeps residual | `vodovelrazol`: *to null the score*; `vodovelruzol`: *to anti-null / refuse to zero the score*; `vozewelrazol`: *to zero effort*; `vozewelruzol`: *to leave effort unzeroable* |
 | **`/ɡ/`** (adjective) | null / reset (ascribed) | non-emptyable / residual (ascribed) | `godovelrazol`: *null / reset*; `godovelruzol`: *won’t-null / residual*; `gevegelruzom`: *hope that won’t go to zero* (vs `gevegelrubam` *void of hope*) |
 | **`/h/`** (adverb) | clause framed as reset / zeroed | clause framed as irreducible residue | `hozewelrazom`: *with effort zeroed*; `hozewelruzom`: *with irreducible effort* / *despite any zeroing* |
-| **`/w/`** (adjunct) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `wamolrazol gamol`: *debt (ascribed) zeroed*; `wamolruzol gamol`: *debt whose balance is anti-null* |
+| **`/w/`** (extra detail) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `wamolrazol gamol`: *debt (ascribed) zeroed*; `wamolruzol gamol`: *debt whose balance is anti-null* |
 | **`/y/`** (interjection) | discourse *Zero it!* / *Null!* | discourse *Won’t zero!* / *Residue stands!* | `yodovelrazol`; `yodovelruzol` |
 
 **Related form:** a stronger wipe of the kind is [total null](#zero-exponent-derivation) **`ROOTl+0e`**. Hostless *annihilate* is free **`vrazobal`**.
@@ -205,7 +205,7 @@ English *first-draft*, *secondary adventure*, *third-order problem* can name **w
 | **`/v/`** (verb) | treat as / assign that order (kind-act) | `vamadalrewol`: *to first-class / premiere a challenge* (free `v#1` *take 1st place*) |
 | **`/ɡ/`** (adjective) | *Nth-order* (ascribed) | `gamadelredul`: *secondary* |
 | **`/h/`** (adverb) | *at Nth-order framing* | `habugalrezol`: *zeroth-order* |
-| **`/w/`** (adjunct) | host `/ɡ/` graded as Nth-order | `wezebelrerel gezebel`: *third-order (dialogue)* |
+| **`/w/`** (extra detail) | host `/ɡ/` graded as Nth-order | `wezebelrerel gezebel`: *third-order (dialogue)* |
 | **`/y/`** (interjection) | discourse call of that order-kind | `yebeyolrewol`: *First-draft!* (kind cheer; free `y#1` *First!* place cheer) |
 
 **Related form:** **`_N`** is *which code*; free `g#N` is *which token in the current series*.
@@ -249,7 +249,7 @@ Digitless **`_`** is **catalog topology**, not magnitude. Label ∞ means *the n
 | **`/v/`** (verb) | to ∞-tag / put on an open ledger | to reserve an empty code slot | `vedegalrobal`; `vedegalrobul` |
 | **`/ɡ/`** (adjective) | open-endedly coded | proto-coded / unassigned | `gedegalrobal`; `gedegalrobul` |
 | **`/h/`** (adverb) | under open-catalog framing | under pre-label framing | `hedegalrobal`; `hedegalrobul` |
-| **`/w/`** (adjunct) | host graded as open-catalog | host graded as proto-label | `wedegalrobal gedegal` |
+| **`/w/`** (extra detail) | host graded as open-catalog | host graded as proto-label | `wedegalrobal gedegal` |
 | **`/y/`** (interjection) | *Open catalog!* / *∞-tagged!* | *Unassigned!* / *Empty slot!* | `yedegalrobal`; `yedegalrobul` |
 
 ### Hyperbole sense (`+1e` / `#1e` / `_1e`)

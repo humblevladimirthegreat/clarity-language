@@ -332,7 +332,7 @@ A noun after a because pole names an **act or a thing**, not a bare person. For 
 >
 > z-Azawan | v-departure | [th-because | b-that-clause] | z-Alahen | v-tell
 >
-> "Azawan left because Alahen told." — a cause, and no one is blamed
+> "Azawan left because Alahen told." (a cause, and no one is blamed)
 
 > `zazawan vedabal thever berehel.`
 >

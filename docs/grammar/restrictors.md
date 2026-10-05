@@ -57,7 +57,7 @@ To say the verb claim counts at every time, or at every time except some listed 
 
 You can name *sometimes*, *anytime*, or *some other time* without listing a content word such as *rain*. Use ending **-r** on the restrictor (`har` / `hor` / `hur`): **-r** names some member of the time inventory without spelling that member. Nothing is required before it. *Anytime* (`hor`) means any one particular time will do, not *at all times* (that is *always*, `hual`).
 
-English *sometimes* is the usual match next to *never* / *always*. It still only says there is **some** unspecified occasion — the same job *something* has on a [join](joins.md) — not a separate “many times” count.
+English *sometimes* is the usual match next to *never* / *always*. It still only says there is **some** unspecified occasion (the same job *something* has on a [join](joins.md)), not a separate “many times” count.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|

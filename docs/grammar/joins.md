@@ -1,8 +1,8 @@
 # Joins
 
-When English would pack several things that play the same role into one slot (*a dog and a cat*, *walks and runs*), Agazan writes those items in a row and then one join word after them. That last word is how you know the list has ended. We call that pattern a **right-close fence**: items, then the join. The join starts with the same role letter as the items (`z` for subjects, `v` for verbs, `x` for whole clauses).
+When English would pack several things that play the same role into one slot (*a dog and a cat*, *walks and runs*), Agazan writes those items in a row and then one join word after them. That last word is how you know the list has ended. This pattern of items, then the join, is called a **right-close fence**. The join starts with the same role letter as the items (`z` for subjects, `v` for verbs, `x` for whole clauses).
 
-Sometimes you only care that the items belong together, with no ranking among them (*and*, *or*, *not*). We call that a **set**. Sometimes you care which item comes first (*X first*, *A before B*). We call that a **rank**.
+Sometimes you only care that the items belong together, with no ranking among them (*and*, *or*, *not*): that is a **set**. Sometimes you care which item comes first (*X first*, *A before B*): that is a **rank**.
 
 The join’s vowel is the [vowel series](speech-moves.md) you just mapped: the first letter matches the items’ role; **a** adds, **o** picks one, **e** orders, **u** undoes.
 
@@ -110,7 +110,7 @@ Single-item **-l** also covers English *just* in the sense *merely*: the one ite
 >
 > z-Azawan | [d-cat | d-and] | v-see
 >
-> "Azawan sees just a cat." — only a cat, nothing more
+> "Azawan sees just a cat." (only a cat, nothing more)
 
 A standalone join fills its slot with no items. In the object slot, `dal` is *nothing*; in the extra-noun slot, `bal` is *nobody*.
 
@@ -462,7 +462,7 @@ When English would say two people are *as ADJ as* each other, write a **rank** j
 >
 > "Azawan is as challenging as Alahen."
 
-**Compare with:** *more / most* and *least* use **`e`** / **`ue`** plus the same shared adjective — [comparatives](comparatives.md).
+**Compare with:** *more / most* and *least* use **`e`** / **`ue`** plus the same shared adjective ([comparatives](comparatives.md)).
 
 ### Invert (**`ua`** / **`uo`** / **`ue`**)
 <a id="invert-u-stacks"></a>
@@ -475,7 +475,7 @@ Beginner already used *everything but* (**`ua`**). Leading **u** on **o** and **
 | **uo** | invert menu | *anything but* the listed (free choice outside) | **u** ≈ undo + **o** ≈ one |
 | **ue** | invert rank | *A after B after C* (last first) | **u** ≈ undo + **e** ≈ order |
 
-Kind / domain for **ua** / **uo** is context or SHARED `/ɡ/` — [universals, domains, and generics](#universals-domains-generics). Optional is only **`…om`**. **-r** still attaches only to single-vowel **a** / **o** / **e** / **u**.
+Kind / domain for **ua** / **uo** is context or SHARED `/ɡ/` ([universals, domains, and generics](#universals-domains-generics)). Optional is only **`…om`**. **-r** still attaches only to single-vowel **a** / **o** / **e** / **u**.
 
 > `zedehel zagavel zual.`
 >
@@ -508,7 +508,7 @@ Rank **`e`** puts the first item at the **top** (*A matters more than B*). When 
 | Single-item | `X zoel` *start with X* / *from X on* | `X zoem` *maybe start with X* |
 | Standalone | `zoel` *in no particular order* / *any order* | `zoem` *not sure where to start* |
 
-A sequence does not say which item is better. With a SHARED quality it sorts the list from low to high. Two numbers in a sequence are two values in order (`zrarel zraval zoel` = *3, then 5*); a band from 3 to 5 is a [range](numbers-applied.md#ranges) (`zrarel al zraval`). (cue: **o** ≈ one + **e** ≈ order — one after another)
+A sequence does not say which item is better. With a SHARED quality it sorts the list from low to high. Two numbers in a sequence are two values in order (`zrarel zraval zoel` = *3, then 5*); a band from 3 to 5 is a [range](numbers-applied.md#ranges) (`zrarel al zraval`). (cue: **o** ≈ one + **e** ≈ order: one after another)
 
 **Compare with:** clause *and then* between sentences is [sequence **`xan`**](join-across-roles.md#sequence). **`zoel`** orders nouns inside one slot.
 
@@ -558,11 +558,11 @@ Without **`wazem`**, who got which is left open. (cue: 🧦 *socks*: sort them i
 
 Beginner already used single-item *just X* and standalone *nothing* / *everything*. The tables below are the rest of those phrase-level readings. The series also works under `/v/`: [Join across roles](join-across-roles.md#vp-clause-forms). Clause `/x/` joins have standalone and stand-in readings but no single-item one ([clause joins](#clause-joins)).
 
-**Rank — single-item**
+**Rank: single-item**
 
 | Agazan | Use | English |
 |--------|-----|---------|
-| **…el** (`zel` / …) | closed rank of one | *only X matters* / *X, period*; + SHARED scale → superlative — [comparatives](comparatives.md) |
+| **…el** (`zel` / …) | closed rank of one | *only X matters* / *X, period*; + SHARED scale → superlative ([comparatives](comparatives.md)) |
 | **…em** (`zem` / …) | open rank of one | *X first* / *mainly X*; + SHARED scale → open superlative |
 | **…ael** (`zael` / …) | closed tie of one | *X tied for* / equal priority to X |
 | **…aem** (`zaem` / …) | open tie of one | *X about tied for* / soft equal priority |
@@ -574,7 +574,7 @@ Beginner already used single-item *just X* and standalone *nothing* / *everythin
 | **…en** (`zen` / …) | stock first | *X first* (stock) / *X, as usual* |
 | **…er** (`zer` / …) | unspecified ranked member | *preferably some X* / *X as a priority* |
 
-**Rank — standalone**
+**Rank: standalone**
 
 Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *there is no biggest*). Standalone **ue** says nothing is at the bottom (no least, no veto). Neither says why: a tie is **`ae`**, and *whichever is on top* is **`zer`**. Closed **-l** is a fact about the set; open **-m** is a shrug.
 
@@ -592,7 +592,7 @@ Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *ther
 | **…en** (`zen` / …) | stock empty rank | *no favorite* (stock) |
 | **…er** (`zer` / …) | unspecified empty rank | *whatever's most important* |
 
-**Set — single-item**
+**Set: single-item**
 
 | Agazan | Use | English |
 |--------|-----|---------|
@@ -615,13 +615,13 @@ Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *ther
 
 **…un** is the stock denial: a conventional *not X* (a set phrase). Ordinary denials use **…ul** / **…um**.
 
-**Set — standalone**
+**Set: standalone**
 
 | Agazan | Use | English |
 |--------|-----|---------|
 | **…al** (`zal` / …) | closed empty add | *nothing* / *nobody* |
 | **…am** (`zam` / …) | open empty add | *nothing, as far as I know* |
-| **…an** (`zan` / …) | named empty add | *null* / *void* (with items, **-n** instead names the bundle — [named phrase](#named-list)) |
+| **…an** (`zan` / …) | named empty add | *null* / *void* (with items, **-n** instead names the bundle; see [named phrase](#named-list)) |
 | **…ol** (`zol` / …) | closed empty menu | *no options* / *we're stuck* |
 | **…om** (`zom` / …) | open empty menu | *no pick, as far as I know* |
 | **…ual** (`zual` / …) | closed empty invert-add | *everything* / *everyone* |
@@ -750,7 +750,7 @@ For English *whoever* / *whatever*, use a bare [role compound](roles.md#role-com
 
 Use closed `zual` plus kind when the claim allows no exceptions, and open `zuam` plus kind when you leave the exceptions open. To say how you know a general claim (*by definition*, *going by the pattern*, *per the rules*), add a [channel](knowing.md#universality). Free-choice *any cat will do* uses `zor`.
 
-**For *always*, use:** bare habitual **`hual`** — [restrictors](restrictors.md).
+**For *always*, use:** bare habitual **`hual`** ([restrictors](restrictors.md)).
 
 **Not the same job as:** plural **-x** ([plurality](plurality.md)) names an anchor and associates, not *every K*.
 
@@ -1304,7 +1304,7 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 >
 > "any of tea, coffee, or water is fine (no order)."
 
-**For *except*, use:** hook **`ul`** / **`um`** — [hooks](hooks.md). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (pick one of a closed list, but the pick is optional: `zedehel zagavel zol zom`).
+**For *except*, use:** hook **`ul`** / **`um`** ([hooks](hooks.md)). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (pick one of a closed list, but the pick is optional: `zedehel zagavel zol zom`).
 
 ## See also
 

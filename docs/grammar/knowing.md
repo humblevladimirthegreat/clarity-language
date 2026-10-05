@@ -6,7 +6,7 @@ English *I think* often smuggles a **guess** (*I think Alahen is leaving Ahaben*
 
 ### MAY {#may}
 
-When the scene **could be** so (rejection, a blow, a loss — not a warrant), keep the content verb (*leaves*, *punches*, *cries*) and add **`ovu`** as a [stance](clause.md#stance-th) word (`/th/`). Start with **`thovum`**: could be. (cue: 💭 *thought*: a balloon over the scene)
+When the scene **could be** so (rejection, a blow, a loss; not a warrant), keep the content verb (*leaves*, *punches*, *cries*) and add **`ovu`** as a [stance](clause.md#stance-th) word (`/th/`). Start with **`thovum`**: could be. (cue: 💭 *thought*: a balloon over the scene)
 
 The leaving or the blow is still the event named in the *could be*. Without the `/th/` word you are reporting what happens. The same root can still be ordinary content (`zovul` *a thought*); plain *think* is its own root, `vevegal`.
 
@@ -14,7 +14,7 @@ The leaving or the blow is still the event named in the *could be*. Without the 
 >
 > z-Alahen | th-MAY | v-departure | d-Ahaben
 >
-> "Alahen may be leaving Ahaben." — could be (default)
+> "Alahen may be leaving Ahaben." (could be; the default)
 
 **Compare with:** `zazawan vevegal.` is *Azawan thinks* (an action of thinking). **`thovum`** is *the scene may be so*. A bare `zalahen vedabal dahaben.` reports the leaving.
 
@@ -496,7 +496,7 @@ English *has walked* and *used to walk* often smuggle **when** the event sits. A
 >
 > z-Alahen | th-RESIDUE | v-departure
 >
-> "Alahen’s leaving still counts." — the outcome remains on the tally
+> "Alahen’s leaving still counts." (the outcome remains on the tally)
 
 > `zalahen thevom thamom vedabal.`
 >
@@ -593,7 +593,7 @@ The ending says how settled the current stage is, on the same settled-to-passing
 >
 > z-Azawan | h-no-longer.for-now | v-walk
 >
-> "Azawan has stopped walking for now." — a pause, not quitting (`hewel`)
+> "Azawan has stopped walking for now." (a pause, not quitting; `hewel`)
 
 When only one `/ɡ/` adjective is still or no longer so, write the same word under `/w/` immediately before that adjective.
 
@@ -631,7 +631,7 @@ English sometimes frames the whole clause as play: *as if*, *for the sake of arg
 >
 > z-Azawan | th-NOTIONAL | v-walk
 >
-> "As if Azawan walks." — notional framing held lightly (default)
+> "As if Azawan walks." (notional framing held lightly; the default)
 
 **For *could be*, use:** [MAY](#may). *As if* play is this section. *Walks like a duck* keeps the walk on the real tally ([simile](relations.md#similative) `humum`); only the manner matches the model. *Tells on behalf of Alahen* stays on the real tally ([proxy](relations.md#proxy) `hadem`); Azawan is still the teller.
 
@@ -654,13 +654,13 @@ When you are not sure, use **`thavom`**.
 >
 > z-Ahaben | th-NOTIONAL-rehearse | v-sing
 >
-> "Ahaben practices singing." — rehearsing the imagined scene
+> "Ahaben practices singing." (rehearsing the imagined scene)
 
 > `zazawan thavor varadal.`
 >
 > z-Azawan | th-NOTIONAL-suppose | v-write
 >
-> "Suppose Azawan writes." — toying with an assumption
+> "Suppose Azawan writes." (toying with an assumption)
 
 ### Channels as comparison bars {#channel-bars}
 
@@ -986,7 +986,7 @@ z-Alahen | th-LIVE | v-punch | d-Azawan
 ::: details Show answer
 
 z-Ahaben | th-MAY | v-scream
-*Ahaben may be screaming.* (*could be* — not how you know a world-claim)
+*Ahaben may be screaming.* (*could be*, not how you know a world-claim)
 :::
 
 **9.** `zahaben thevom thamom vezebel bazawan.`
@@ -1188,13 +1188,13 @@ English *Azawan thinks…*, *she's upset*, and *he doubts it* say what is in som
 >
 > z-Alahen | th-MAY-Azawan | v-departure
 >
-> "Maybe Azawan thinks Alahen left." — a guess about Azawan's view, marked as a guess
+> "Maybe Azawan thinks Alahen left." (a guess about Azawan's view, marked as a guess)
 
 > `zalahen thavomazawan vedabal.`
 >
 > z-Alahen | th-NOTIONAL-Azawan | v-departure
 >
-> "Imagine it as Azawan sees it: Alahen left." — taking Azawan's point of view on purpose
+> "Imagine it as Azawan sees it: Alahen left." (taking Azawan's point of view on purpose)
 
 The seam letter keeps its meaning: [evidence strength](#evidence-strength) on a channel, the [hold](#may-hold) on MAY or NOTIONAL. The name keeps its own **-n** at the end. **-n** is never a seam.
 
@@ -1266,19 +1266,19 @@ The holder may be the [topic pronoun](pronouns.md#topic-pronoun), whoever the ta
 >
 > [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Alahen]] | th-INFERRED-Azawan
 >
-> "I gather Azawan resents Alahen about the memo, gone still." — the stake, the aim, and the stillness are Azawan's
+> "I gather Azawan resents Alahen about the memo, gone still." (the stake, the aim, and the stillness are Azawan's)
 
 > `zalahen thunemazawan thodom vedabal.`
 >
 > z-Alahen | th-INFERRED-Azawan | th-LIVE | v-departure
 >
-> "I gather Azawan saw Alahen leave." — LIVE is how Azawan knows
+> "I gather Azawan saw Alahen leave." (LIVE is how Azawan knows)
 
 > `zalahen thezum thunemazawan vedabal.`
 >
 > z-Alahen | th-MIRATIVE | th-INFERRED-Azawan | v-departure
 >
-> "I gather Alahen's leaving surprised Azawan." — the surprise is Azawan's
+> "I gather Alahen's leaving surprised Azawan." (the surprise is Azawan's)
 
 A holder on a comparison bar names **whose expectation** you rank against. Inside the fence the seam covers only the bar: the ranking itself is still your claim.
 

@@ -10,7 +10,7 @@ Write the sake under `/ɡ/` when you talk about a **noun you keep** (how you fee
 
 ### Sake inventory {#sake-inventory}
 
-Nine published roots are the sakes you can name, and no other root takes the sake form. Pick one row. With mid-word **`th`** and a stance vowel, that root means the sake in the English column — not the everyday object in **Same root as**.
+Nine published roots are the sakes you can name, and no other root takes the sake form. Pick one row. With mid-word **`th`** and a stance vowel, that root means the sake in the English column, not the everyday object in **Same root as**.
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -420,9 +420,9 @@ That ending says why you think a move is welcome. Use **-l** when the person inv
 
 **Unlike** [MAY](knowing.md#may) (`thovum`): the host verb stays ordinary content there and the event is still *could be*. With **`the`**, the same host verb is the **ought-to** act, not a simultaneous performance claim.
 
-**Compare with:** [command](speech-moves.md#speech-act-beginner) **`yel`** instructs an act outright without naming the sake or why a move is wanted. **`the`** is sake-linked deontic: *ought to advance this sake*, with that warrant on the ending.
+**Compare with:** [command](speech-moves.md#speech-act-beginner) **`yel`** instructs an act outright without naming the sake or why a move is wanted. **`the`** is a sake-linked *ought* (*ought to advance this sake*), with that warrant on the ending.
 
-**Compare with:** a [forecast](knowing.md#forecast) (a channel plus `bral`) when English *should* is really a **forecast** about what will pay off the sake, or when you want both *is doing* and a norm on that doing — not prescription deontic. For a plain performance report, drop **`the`** and assert the verb alone.
+**Compare with:** a [forecast](knowing.md#forecast) (a channel plus `bral`) when English *should* is really a **forecast** about what will pay off the sake, or when you want both *is doing* and a norm on that doing, not a prescribed *ought*. For a plain performance report, drop **`the`** and assert the verb alone.
 
 **Compare with:** [motive](#sake-preference) **`tho`** plus a [request](speech-moves.md#speech-act) **`yem`** when the speaker wants **their own** sake served. **`the`** is advice about the sake named on this word.
 
@@ -585,13 +585,13 @@ Agazan has no set phrase for *thank you*. Say that your sake **is met**: a lone 
 >
 > th-relatedness-met-any-term
 >
-> "That meant a lot to me." — *thank you*
+> "That meant a lot to me." (*thank you*)
 
 > `thulothal.`
 >
 > th-competence-met-lasting
 >
-> "That will keep helping me do it." — *thanks, that sets me up*
+> "That will keep helping me do it." (*thanks, that sets me up*)
 
 Add an emotion tail to say how the thanks moves you:
 
@@ -599,7 +599,7 @@ Add an emotion tail to say how the thanks moves you:
 >
 > th-relatedness-met-any-term-INTERNAL-SURGING
 >
-> "I'm so moved." — *thank you, that really touched me*
+> "I'm so moved." (*thank you, that really touched me*)
 
 | Agazan | Use | English |
 |--------|-----|---------|
@@ -613,7 +613,7 @@ Add an emotion tail to say how the thanks moves you:
 >
 > [th-relatedness-unmet-modifiable | b-listener]
 >
-> "That hurt your sense of connection." — *I'm sorry*
+> "That hurt your sense of connection." (*I'm sorry*)
 
 | Agazan | Use | English |
 |--------|-----|---------|

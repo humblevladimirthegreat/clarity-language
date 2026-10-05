@@ -10,7 +10,7 @@ English splits three nearby jobs on a quality like *challenging*. *More … than
 <a id="comparatives"></a>
 <a id="comparative-shared-scale"></a>
 
-When English would say *Azawan is more challenging than Alahen*, you put two people in order on one quality. Write both names, then the **rank join** **`zel`** (vowel **`e`**), then the adjective they share (`/ɡ/`). The first name sits higher on that quality than the second. Both may still sit high; the join only says who ranks higher. (cue: **`e`** ≈ order — the shared `/ɡ/` is the ladder)
+When English would say *Azawan is more challenging than Alahen*, you put two people in order on one quality. Write both names, then the **rank join** **`zel`** (vowel **`e`**), then the adjective they share (`/ɡ/`). The first name sits higher on that quality than the second. Both may still sit high; the join only says who ranks higher. (cue: **`e`** ≈ order; the shared `/ɡ/` is the ladder)
 
 > `zazawan zalahen zel gamadam.`
 >
@@ -57,7 +57,7 @@ English *much more* / *slightly more* adds **how large the gap is**, without giv
 <a id="equative"></a>
 <a id="as-as"></a>
 
-When English would say *as challenging as*, you are not picking a winner. You are saying two people sit at the **same height** on the quality. Write both names, then equality join **`zael`** (vowel **`ae`**), then the same kind of shared adjective (`/ɡ/`). Closed **-l** (`zael`) is a firm match. Open **-m** (`zaem`) is *about as … as*. (cue: **`ae`** ≈ add + order — they share a rank)
+When English would say *as challenging as*, you are not picking a winner. You are saying two people sit at the **same height** on the quality. Write both names, then equality join **`zael`** (vowel **`ae`**), then the same kind of shared adjective (`/ɡ/`). Closed **-l** (`zael`) is a firm match. Open **-m** (`zaem`) is *about as … as*. (cue: **`ae`** ≈ add + order; they share a rank)
 
 > `zazawan zalahen zael gamadam.`
 >
