@@ -184,6 +184,23 @@ function rankBarAhead(parser: AgazanSentenceParser, level: NpSlot, from = 1): bo
   }
 }
 
+/**
+ * Inside a verb list closed by a `/v/` join, an `/h/` unit or a `/d/` `/b/` phrase before a later verb belongs to
+ * that verb's item (join-across-roles.md#vp-clause-forms). True when such material starts here and the stretch
+ * ahead reaches another verb and then the `/v/` join word with nothing else in between.
+ */
+function vpItemMaterialAhead(parser: AgazanSentenceParser): boolean {
+  const first = parser.lookahead(1);
+  if (!tokenIs(first, D, B) && parser.lookahead(laAfterW(parser)).tokenType !== H) return false;
+  let sawVerb = false;
+  for (let i = 1; ; i += 1) {
+    const tok = parser.lookahead(i);
+    if (tok.tokenType === V) sawVerb = true;
+    else if (tok.tokenType === JoinV) return sawVerb;
+    else if (!tokenIs(tok, H, W, D, B, G)) return false;
+  }
+}
+
 function isNpSlotLookahead(parser: AgazanSentenceParser, slot: NpSlot): boolean {
   if (npSlot(parser.lookahead(1)) === slot) return true;
   if (isGlHead(parser.lookahead(1)) && npSlot(parser.lookahead(2)) === slot) return true;
@@ -574,7 +591,16 @@ class AgazanSentenceParser extends CstParser {
       },
       {
         ALT: () => {
-          this.AT_LEAST_ONE(() => {
+          this.AT_LEAST_ONE({
+            GATE: () => this.LA(1).tokenType === V || vpItemMaterialAhead(this),
+            DEF: () => {
+            // An `/h/` or `/d/` `/b/` between verbs of a joined list starts the next verb's item.
+            this.MANY({
+              GATE: () => vpItemMaterialAhead(this),
+              DEF: () => {
+                this.SUBRULE(this.vpItemUnit);
+              },
+            });
             const verb = this.CONSUME(V);
             this.OPTION3({
               GATE: () => isScopeThoVerb(verb) && this.LA(1).tokenType === B,
@@ -582,6 +608,7 @@ class AgazanSentenceParser extends CstParser {
                 this.CONSUME(B);
               },
             });
+            },
           });
           this.OPTION({
             GATE: () => this.LA(laAfterW(this)).tokenType === JoinV,
@@ -591,6 +618,14 @@ class AgazanSentenceParser extends CstParser {
           });
         },
       },
+    ]);
+  });
+
+  public vpItemUnit = this.RULE("vpItemUnit", () => {
+    this.OR([
+      { GATE: () => npSlot(this.LA(1)) === "d", ALT: () => this.SUBRULE(this.npCoord, { ARGS: ["d"], LABEL: "dCoord" }) },
+      { GATE: () => npSlot(this.LA(1)) === "b", ALT: () => this.SUBRULE2(this.npCoord, { ARGS: ["b"], LABEL: "bCoord" }) },
+      { ALT: () => this.SUBRULE(this.hCoord) },
     ]);
   });
 
@@ -1277,10 +1312,42 @@ function buildVpCoord(cst: CstNode): VpCoord {
         const verb = verbs.filter((v) => v.startOffset < b.startOffset).at(-1)!;
         return { verb: lexWordFromToken(verb), hosted: { bound: lexWordFromToken(b) } };
       });
-      const built = { items: verbs.map(lexWordFromToken), join, shared, ...(joinModifiers ? { joinModifiers } : {}) };
+      const items = verbs.map(lexWordFromToken);
+      const itemUnits = groupItemUnits(childNodes(part, "vpItemUnit"), verbs, items);
+      const built = {
+        items,
+        join,
+        shared,
+        ...(joinModifiers ? { joinModifiers } : {}),
+        ...(itemUnits.length > 0 ? { itemUnits } : {}),
+      };
       return hostedVerbs.length > 0 ? { ...built, hostedVerbs } : built;
     }),
   };
+}
+
+function firstOffset(cst: CstNode): number {
+  let min = Infinity;
+  for (const kids of Object.values(cst.children)) {
+    for (const kid of kids) {
+      const offset = "image" in kid ? kid.startOffset : firstOffset(kid);
+      if (offset < min) min = offset;
+    }
+  }
+  return min;
+}
+
+/** Each item unit goes with the first verb after it, in spoken order. */
+function groupItemUnits(cstUnits: CstNode[], verbs: IToken[], items: LexWord[]): { verb: LexWord; units: Unit[] }[] {
+  const out: { verb: LexWord; units: Unit[] }[] = [];
+  for (const cst of [...cstUnits].sort((a, b) => firstOffset(a) - firstOffset(b))) {
+    const index = verbs.findIndex((v) => v.startOffset > firstOffset(cst));
+    const verb = items[index]!;
+    let entry = out.find((e) => e.verb === verb);
+    if (!entry) out.push((entry = { verb, units: [] }));
+    entry.units.push(...expandUnits(cst));
+  }
+  return out;
 }
 
 function buildHUnit(cst: CstNode): HUnit {

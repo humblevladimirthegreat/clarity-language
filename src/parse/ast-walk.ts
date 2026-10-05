@@ -303,7 +303,10 @@ function visitVp(coord: VpCoord, v: Visitor): void {
   const node: AstNode = { kind: "vp", coord };
   if (v.enter?.(node) === SKIP) return;
   coord.parts.forEach((part, index) => {
-    for (const item of part.items) v.word?.(item, "item");
+    for (const item of part.items) {
+      for (const unit of part.itemUnits?.find((e) => e.verb === item)?.units ?? []) visitUnit(unit, v);
+      v.word?.(item, "item");
+    }
     for (const verb of part.hostedVerbs ?? []) v.word?.(verb.hosted.bound, "hostedBound");
     for (const mod of part.joinModifiers ?? []) v.word?.(mod, "joinModifier");
     if (part.join) v.join?.(part.join, { kind: "vp", coord, index });

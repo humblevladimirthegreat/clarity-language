@@ -178,6 +178,7 @@ const ROWS: Row[] = [
   { invalid: "zazawan vowogal. zrezor vezebal.", rejection: "ordinalUnbound", valid: "zazawan vowogal. zruewor vezebal." },
   { invalid: "azawan. alahen. azawan. alahen. zredur vowogal.", rejection: "ordinalUnbound", valid: "azawan. alahen. zredur vowogal." },
   { invalid: "zazawan vowogal. g=#1x.", rejection: "numberPlural", valid: "zazawan vowogal. zreworx vezebal." },
+  { invalid: "z+90x.", rejection: "numberPlural", valid: "zazawan vowogal huwem b_90x." },
   { invalid: "zam zezedol zagadul.", rejection: "leftFence", valid: "zezedol zagadul zam." },
   { invalid: "{ } zazawan vowogal.", rejection: "emptyIsland", valid: "{ zazawan zalahen zam } vowogal." },
   { invalid: "{ zazawan } vowogal.", rejection: "islandBinder", valid: "{ zazawan zalahen zam } vowogal." },

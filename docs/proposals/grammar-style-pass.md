@@ -19,7 +19,7 @@ A session starts with something like "do the next batch." The session then:
 
 1. Opens this file and takes the **first unchecked batch** below. It does only that batch.
 2. Reads [doc-style.md](../meta/doc-style.md) in full, plus the sections of [grammar-docs.md](../meta/grammar-docs.md) that the batch touches ([teach in this order](../meta/grammar-docs.md#teach-in-this-order), [later-stage shape](../meta/grammar-docs.md#later-stage-shape), [retie-safe writing](../meta/grammar-docs.md#retie-safe-writing), [marking Agazan](../meta/grammar-docs.md#marking-agazan)).
-3. For a Phase 2 batch, reads the whole page before editing it, and skims the Beginner sections of pages earlier in the path when it needs to know whether a term has already been glossed.
+3. For a Phase 2 batch, reads the whole page before editing it, and skims the Beginner sections of pages earlier in the path when it needs to know whether a term has already been glossed. A Phase 3 batch follows the reading rule in [Phase 3](#phase-3-cross-page-consistency) instead.
 4. Edits the page(s), then runs `npm run build` from the repo root and fixes anything it reports.
 5. Ticks the batch's checkbox, and appends a dated entry under [Batch log](#batch-log): pages touched, the main kinds of change, and anything deferred.
 6. Records every suspected grammar problem (a rule that looks wrong, a missing form, a contradiction between pages) under [Questions for the editor](#questions-for-the-editor), each with a **recommendation**: the fix it would make and why, judged by the effect on learners. It does **not** apply the fix.
@@ -77,17 +77,29 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - [x] **Batch 2.14:** `intention` (4.5k)
 - [x] **Batch 2.15:** `knowing` (10.6k)
 - [x] **Batch 2.16:** `roles` (6k), `x-compounds` (2.9k)
-- [ ] **Batch 2.17:** `join-across-roles` (3.7k), `numbers-applied` (4.1k)
-- [ ] **Batch 2.18:** `numeric-derivation` (3.7k)
+- [x] **Batch 2.17:** `join-across-roles` (3.7k), `numbers-applied` (4.1k)
+- [x] **Batch 2.18:** `numeric-derivation` (3.7k)
 
 ## Phase 3: cross-page consistency
 
-- [ ] **Batch 3.1: consistency check across all in-scope pages**
-  - Each house-shorthand and invented label is glossed at its **first** use along the path, and later pages do not re-gloss it at length.
-  - The same idea uses the same plain-English wording across pages (for example, how each page phrases "role letter" or "statement vs question vs command").
-  - Re-run the Phase 1 greps to catch regressions.
+Four batches, one per session. Phase 3 sessions do **not** read whole pages: they grep for a term or open the sections a log entry names, then read only the paragraphs around each hit. The ground rules still apply.
+
+- [ ] **Batch 3.1: regression sweep, all in-scope pages**
+  - Re-run every Phase 1 check (em dashes in prose, Agazan forms in italics, maintainer *we* / author *I*, throat-clearing, bare jargon from the plain-language list, `*a*/*b*`) and fix what Phase 2 introduced.
+  - Run `npm run build` and fix anything it reports.
+- [ ] **Batch 3.2: first-use glosses and shared wording**
+  - Build an inventory of [house shorthand](../meta/doc-style.md#house-shorthand) and invented labels (*job*, *point*, *setting*, *body*, *linker*, *turn*, *role letter*, *host*, *SHARED*, …). Record it in the batch log as a table: term, page and section of first use along the [cross-doc path](../meta/learning-levels.md#cross-doc-path), where it is glossed.
+  - Each term is glossed at its **first** use along the path. Move or add the gloss when it comes late. Later pages may give a short reminder, but do not re-gloss at length.
+  - The same idea uses the same plain-English wording across pages. Check at least: *role letter*, statement vs question vs command, *ending* / *PoS letter*, *turn*, *topic*, and the open vs closed join pair. Pick the wording used where the term is first taught and align the later pages to it.
+  - If the inventory is too large for one session, split it at `questions` (pages up to and including it, then the rest) and note the split in the log.
+- [ ] **Batch 3.3: deferred judgment items from the batch log**
+  - Work through every **Deferred / kept** entry that names Phase 3 (search this file for "Phase 3"). For each one, decide keep, cut, or reword, and log the decision.
+  - Forward-preview links: keep a link only when it answers something a learner will try on that page; otherwise cut it or turn it into an unlinked plain mention ([teach now; don't preview later](../meta/grammar-docs.md#teach-now-dont-preview-later)).
+  - Structural moves: the SHARED H3 in `joins` (Invert and Respectively use it before it is taught), the shorthand H3 in `numbers` (tables use the shorthand before it is explained), the hook-compound sentence in `phonology` (move to `hooks`?), and the verb-pair example in `hooks` Parallel chains. Keep anchors when moving sections.
   - Run `npm run build`.
-  - Once [Questions for the editor](#questions-for-the-editor) is empty or every item has moved to `TODO.md`, delete this file ([proposals](../meta/proposals.md)).
+- [ ] **Batch 3.4: close out (needs the editor)**
+  - Present each item under [Questions for the editor](#questions-for-the-editor) to the editor for a decision. Move each decided item to `TODO.md`, or apply it as its own change if the editor asks (a parser change must ship with the matching grammar edit).
+  - Once the list is empty, delete this file ([proposals](../meta/proposals.md)) and run `npm run build`.
 
 ## Batch log
 
@@ -316,6 +328,36 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - Resolved after review: `x-compounds` Which family said "Span type and edge letters stay single vowels", left over from a retired span system that wrote spans as vowel-`x`-vowel words (`daxal`); spans now use brackets. The line now lists the role vowels, including the six two-vowel pairs from `roles` Intermediate, and says no other pair goes before **`x`** (the parser rejects `zeax…`, `zoox…`). The role-compound bullet above it said *one vowel*; it now allows a two-vowel pair, as `roles` teaches (`daexaradal`).
 - `x-compounds` Words you look up: the table's **Agazan** cells are role-marked (`zebedalahazal`) with no **Same root as**; they double as the example spellings, so they were not changed.
 
+### 2026-10-05: Batch 2.17 (`join-across-roles`, `numbers-applied`)
+
+- **`join-across-roles`:** the page lead now says what each role joins, with an English example for each (*walks and runs*, *Azawan walks, then Alahen runs*, *not because of the rain*), and what a join word with **-n** names, instead of *packages* and *join-derived content words*. Sequence: *walk through events* and *clause continue join* reworded; the closing paragraph (*join-derived content words*, *titled frame*, the "still" fence) is now one plain sentence. Two self-links written as `join-across-roles.md#…` are now bare anchors. Verb-phrase forms: *own object material*, *verb-phrase stretch*, and "SHARED over all verbs" (now says the SHARED word is the object of every verb) reworded; *hedges it* → *adds as far as I know*; the speech-act sentence ("inherit the opener and omit `/y/`") now says where the `/y/` word goes. Stance joins: *close the stance words*, *carries the weight*, *grade the whole list* reworded. Join-act verbs: the lead drops *packing* and *join content*, and the associative / collective **-x** note moved after the example as its own paragraph; the resume sentence and the stacked-vowel table lead are split. Join-relations: the lead no longer uses the *framed toward* picture or *host* / *argument*, and says what the `/b/` word names; *Content including*, *empty domain*, and the gloss *stripped frame* replaced; the *simile* link text is now *like* (`relations` heading).
+- **`join-across-roles` examples:** the Join-relations example `zebeval` (*birthday*) was translated *Cake*; it and the five table cells that used it are now `zagubel` *cupcake* (*A cupcake with peanuts*). Removed a doubled blank line.
+- **Obvious slip fixed (`join-across-roles`):** Intermediate English → Agazan #7 (*Alahen runs and punches.*) answered open `vam`, which `joins` translates with *(and possibly more)*. The answer is now closed `val` (morph `v-and`).
+- **`numbers-applied`:** the page lead is a sentence with an English example for each job, not a bold keyword list. Removed a doubled blank line. Digit strings: lead is job-first; *resumes a prior code*, *preserve their own written identifier*, *when-frame*, and *host relation* replaced. Time: lead says what to write when (*at 15:30*, *on 22 July*) instead of *reuse digit-string grammar as bare `/h/`*; the table's *date host*, *closed mood whose **job** locates time*, and *numeric payload … relation + scalar + unit* are plain English (the last one now links to Measure phrases); *two extras* → *two extra nouns*. Measure phrases: lead is job → shape (unit noun plus `/ɡ/` amount) → which ending, dropping *published abstract*, *lemmas*, and *on the table*; the price and endings sentences reworded; the Stock units lead no longer says the picture "stays on" the root; *quantity words … stay on their own roots* reworded; the orphan `bagazem grarel` line now says it is the spelled form of `bagazem g+3`. Ranges: lead drops *band on a line*; *host noun*, *grade the range*, *a path in spoken order*, *lines*, and *locative … units* replaced. Percent: lead is job-first and drops the misleading "parallel to fraction closer **`ye`**" (**`ye`** is the decimal point). Fractions: lead is job-first. Advanced: "Rank joins **no longer** set bounds" (a denial of a former construction) is now a **Compare with:** beat. Ordinal generation: the lead and the cohort paragraph are plain English (*digitful*, *focused*, *Named `e0` asserts*); the `/x/` paragraph drops *agenda nesting*, *inherit the same product*, *generation-structured*, and *flat event count*.
+- **Example layout (`numbers-applied`):** twelve example blocks had the morph line right after the Agazan line with no blank `>` line, so both rendered as one paragraph. Added the blank line.
+
+**Deferred / kept:**
+- `join-across-roles` Join-relations still has four contrast beats (the three-way Compare-with on hook / proxy / `uel`, the Not-the-same-job beat, and *For including as an afterthought*), against a limit of two. Cutting beats is beyond wording.
+- Resolved after review: "A stock label uses a [mention] span" now reads "To talk about the word itself, with no `/b/`, use a [mention](spans.md#mention) span", which is what a mention span does.
+- Resolved after review: `join-across-roles` Intermediate practice gains two stance-join drills each way (`thevem … thul`, `thevom thewam thol`, `thel`, standalone `thul`).
+- Resolved after review: no page taught *the ’90s*. A decade is now a **plural label**: a digit-string label with digits takes **-x** for the run of labels English pluralizes (`z_90x` *the ’90s*, 90 to 99; the final zeros stand for any digit). New H4 *Plural labels* `{#plural-labels}` under Digit strings on `numbers-applied`, with `zazawan vowogal huwem b_90x.`; Time points to it. The parser's `numberPlural` check (`enforce.ts`) now exempts a `_` label with digits under `/z/` `/d/` `/b/`; other numbers still take **-x** only as an ordinal pronoun (test in `invalid-forms.test.ts`). The Ranges Compare-with still has four beats; kept. The *When-frame* table row is long but telegraphic.
+- Forward links kept: [dated channel], [LIVE], [forecast], [RESIDUE], [FORMER] (`knowing`, earlier on the path) in the Time table.
+- Resolved after review: the parser now follows the page's verb-phrase item rule. Inside a `/v/` list closed by a join word, an `/h/` unit or a `/d/` / `/b/` phrase before a later verb belongs to that verb's item (`[v-walk | [h-haste | v-run] | v-and]`); an `/h/` before the first verb and a joinless verb chain are unchanged. Code: new `vpItemUnit` rule and `itemUnits` on `VpCoord` (`sentence-parser.ts`, `types.ts`, `ast-walk.ts`, `gloss-structure.ts`, `constructions.ts`), with tests in `morph-gloss.test.ts`. The first example is now `zazawan dababol vugugel hugem bavahel vehahel val.`; the rule sentence names `/h/`, `/d/`, and `/b/`, and two new examples show an object and a `/b/` party inside the second item.
+
+### 2026-10-05: Batch 2.18 (`numeric-derivation`)
+
+- **Page lead:** job first (name a kind by a number idea), then the shape (number stem joined like a lexical compound, **-l** / **-m** for everyday vs abstract), then what the number describes; *host*, *published abstract*, and "Free number words still count …" are gone.
+- **Numeric derivation H3:** *any ordinary slot* → *any role*; the table's *Open content host* → *Any content root*; the Ending row's trailing "still counts or labels outside this family" cut. The shorthand note, the orphan "Abstract host: `zalavamrabal`" (now a sentence before the Compare-with), and the *Digit morphs* paragraph (*noun-slot derivative*) are plain English.
+- **Section leads:** Limit / polarity / stage lead names each limit reading in plain words (*telos*, *poly-*, *de-* glossed through *final form*, *many of it*, *undoing*). Quasi Compare-with no longer uses `numbers.md §` as link text. Quasi-N lead: *strong digit*, *bare order-of-magnitude anatomy*, *as-if N-structure* replaced, and the free-number contrast is a **Compare with:** beat. Scalar lead: *tokens*, *strong readings*, and the shorthand/speech/spelling pile split into job, shape, and the privative **-N** (glossed in place). Zero × exponent: *hostless*, *host ending*, *scalar anatomy*, *kind-scale*, *inherit the same role-letter framing*, *Free twins* replaced. Ordinal lead split into job + shape and a paragraph on where **`#N`** sits (*telos* → *final form*); *token* → *item*. Label lead: *label payload* and *catalog topology* replaced; Infinite labels lead says what `_e` and `_e-` describe. Hyperbole lead is job-first.
+- **Headings:** the H5 / H6 sub-headings (Quasi-N, Null / anti-null by PoS, Zero-exp derivation by PoS, Rank-annihilated morph, Ordinal morph by PoS, Infinite label by PoS) are now H4. The heading text did not change, so the slugs are the same.
+- **Example:** *a first-draft* → *a first draft* in the Ordinal example translation.
+
+**Deferred / kept:**
+- Resolved after review: join **-m** marks the root's abstract sense, and a final **-m** after the number means *approximately*. Every derived word on the page whose English uses the root's abstract sense now has join **-m** (*score*, *draft*, *memory*, *adventure*, *commitment*, *hope*, *imprimatur*, *calculation*, *effort*, *challenge*, *tale*, *chance*, *voice*, *institution*, *blockage*, *judgment*, *co-participation*, *harmony*, *teamwork*, *plan*, *debt*, *output*, *disorder*, *reciprocity*, *problem*, *faith*, *message*, *ritual*), including the free `debeyom g#1` and the `/w/` hosts (`gamom`, `gebazem`). Words that ended in **-m** with no approximate reading now end in **-l** (`gevegemruzol`, `hozewemrazol`, `zebeyomredul`, `zehehamral`, `zezegumralel`, …). The Ending row now says what each final ending means and that the join letter carries the sense. `debazemrubul` was glossed *quasi-commitment*, a sense its root (pensive / melancholy) does not have; it is now *a quasi-melancholy*. Morph lines follow the parser (`d-pen-m-two`, `d-pencil-m-1st`). Roots whose English is the everyday picture (*love*, *fear*, *ticket*, *specimen*, *friend*, *toolkit*, *speech*, *room*, *attempt*, *choir*) keep **-l**. Two examples of a final **-m** were added: `zazawan dezebelrarem vahahal.` (*a roughly three-part dialogue*) after the shape table, and `zazawan damomrazom vahahal.` (*a nearly wiped debt*) under Null / anti-null.
+- The PoS tables keep dense labels (*under quasi- framing*, *host graded as …*, *ascribed*): telegraphic tables are allowed.
+- The page has no Beginner or Intermediate, as the path intends (Advanced only).
+
 ## Questions for the editor
 
 <!-- Suspected grammar problems found during the pass. Not fixed by the pass. One bullet each: page, section, issue, then **Recommendation:** the suggested fix and why. -->
+

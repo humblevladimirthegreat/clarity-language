@@ -145,8 +145,12 @@ function unitNodes(cur: Cursor, unit: Unit): GlossNode[] {
       return np(cur, unit.coord);
     case "vp":
       return fences(cur, unit.coord.parts, (w) => {
+        // Words before a later verb of the list are that verb's item: `[v-walk | [h-haste | v-run] | v-and]`.
+        const pre = unit.coord.parts.flatMap((p) => p.itemUnits ?? []).find((e) => e.verb === w);
+        const preNodes = pre ? pre.units.flatMap((u) => unitNodes(cur, u)) : [];
         const hosted = unit.coord.parts.flatMap((p) => p.hostedVerbs ?? []).find((h) => h.verb.raw === w.raw);
-        return hosted ? group([cur.take(w), cur.take(hosted.hosted.bound)]) : cur.take(w);
+        const verb = hosted ? group([cur.take(w), cur.take(hosted.hosted.bound)]) : cur.take(w);
+        return preNodes.length > 0 ? group([...preNodes, verb]) : verb;
       });
     case "gCoord":
       return gCoordNodes(cur, unit.coord);

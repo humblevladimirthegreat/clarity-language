@@ -1,13 +1,13 @@
 # Join across roles {#join-across-roles}
 
-The same join vowel series works across roles: `/v/` packages verb phrases, `/x/` connects clauses, and **-n** under `/v/`, `/ɡ/`, or `/h/` makes join-derived content words. Phrase fences and their set, rank, arity, and scope patterns are in [joins](joins.md).
+The join vowels you use on noun lists also join other things: verb phrases under `/v/` (*walks and runs*), whole clauses under `/x/` (*Azawan walks, then Alahen runs*), and stance words under `/th/` (*not because of the rain*). With ending **-n** under `/v/`, `/ɡ/`, or `/h/`, a join word becomes a verb, adjective, or adverb that names a list move (*includes*, *without*). Phrase fences and their set, rank, arity, and scope patterns are in [joins](joins.md).
 
 ## Intermediate {#intermediate}
 
 ### Sequence (`-n`, clause only) {#clause-sequence}
 <a id="sequence"></a>
 
-When English would walk through events in time (*and then*), put ending **-n** on a clause continue join (`/x/`). Narrative *and then* is **`xan`**. Like every clause join, it goes [between](joins.md#clause-joins) the clauses: `A xan B xan C` reads one step at a time. The clauses keep one speech act; this **-n** orders them rather than naming a person.
+When English tells events in time order (*and then*), put ending **-n** on a clause join (`/x/`). Narrative *and then* is **`xan`**. Like every clause join, it goes [between](joins.md#clause-joins) the clauses: `A xan B xan C` reads one step at a time. The clauses keep one speech act; this **-n** orders them rather than naming a person.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -25,13 +25,13 @@ When English would walk through events in time (*and then*), put ending **-n** o
 >
 > "Azawan sat, and before that, they walked."
 
-The `/x/` forms are clause joins; **-n** under `/v/`, `/ɡ/`, and `/h/` makes join-derived content words. See [join-act verbs](#join-act-verbs) and [join-relations](#join-relations) for those forms. Ordinary content **-n** still [names](word-endings.md#proper-name--n) a person or titled frame.
+Under `/v/`, `/ɡ/`, and `/h/`, a join word with **-n** names a list move instead: see [join-act verbs](#join-act-verbs) and [join-relations](#join-relations). On a content word, **-n** marks a [name](word-endings.md#proper-name--n) as usual.
 
 ### Verb-phrase and clause forms {#vp-clause-forms}
 <a id="vowels--endings"></a>
 <a id="ending-senses-clause-joins"></a>
 
-[Joins](joins.md#beginner) already used `vam` and `xam`. The same vowels and **-l** / **-m** / **-r** endings work under `/v/`, `/x/`, and stance `/th/` ([stance joins](#stance-joins)). Clause **-n** forms are in [Sequence](#sequence); `/v/` **-n** forms are [join-act verbs](join-across-roles.md#join-act-verbs).
+[Joins](joins.md#beginner) already used `vam` and `xam`. The same vowels and **-l** / **-m** / **-r** endings work under `/v/`, `/x/`, and stance `/th/` ([stance joins](#stance-joins)). Clause **-n** forms are in [Sequence](#sequence); `/v/` **-n** forms are [join-act verbs](#join-act-verbs).
 
 | | **-l** | **-m** | **-r** |
 |---|--------|--------|--------|
@@ -48,16 +48,29 @@ The `/x/` forms are clause joins; **-n** under `/v/`, `/ɡ/`, and `/h/` makes jo
 
 Stacked vowels take no **-r** under `/v/` or `/x/` (the `—` cells); only a stance join has stacked **-r**, as a [fill-ask](#standalone-stance-joins).
 
-Each verb-phrase item is a verb plus its own object material, and an item runs up to and including its verb: words before a verb belong to that verb. In `vowogal hadehum varahal val`, *hastily* is on *run*, not *walk*. When every item is a bare verb, a `/d/` immediately after the join is SHARED over all verbs: `vahahal vabovul vam dabovul` → *sees and tempts an apple*.
+Each item in a verb-phrase join is a verb plus the words that go with it, and an item ends at its verb: an `/h/`, `/d/`, or `/b/` word between two joined verbs belongs to the verb after it. In `vowogal hadehum varahal val`, *hastily* is on *run*, not *walk*. In the same way, an object or a `/b/` party between two verbs goes only with the second verb:
 
-An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, covers every item. `/h/` inside an item covers that verb phrase only.
-
-> `zazawan dababol vugugel vehahel hugem bavahel val.`
+> `zazawan vowogal dahaben vahahal val.`
 >
-> z-Azawan | d-popcorn | v-cooking | v-sit | [h-around | b-fire] | v-none
+> z-Azawan | [v-walk | [d-Ahaben | v-see] | v-and]
+>
+> "Azawan walks and sees Ahaben."
+
+> `zazawan vowogal bahaben vezebel val.`
+>
+> z-Azawan | [v-walk | [b-Ahaben | v-tell] | v-and]
+>
+> "Azawan walks and tells Ahaben."
+
+When every item is a bare verb, a `/d/` right after the join is SHARED, the object of every verb: `vahahal vabovul vam dabovul` → *sees and tempts an apple*.
+
+An adverb `/h/` before all the joined verbs, or SHARED after the join, covers every item. An `/h/` inside an item covers only that item.
+
+> `zazawan dababol vugugel hugem bavahel vehahel val.`
+>
+> z-Azawan | d-popcorn | [v-cooking | [[h-around | b-fire] | v-sit] | v-and]
 >
 > "Azawan cooked popcorn and sat around the fire."
-
 
 > `zazawan vowogal varahal val hahegem.`
 >
@@ -85,7 +98,7 @@ Sequence **`oe`** keeps its [phrase meaning](joins.md#sequence-oe) in both roles
 
 **Compare with:** clause **`xan`** ([sequence](#sequence)) tells what happened next, one step at a time. **`xoel`** makes the order part of the claim (a recipe, directions): `A xoel B xoel C` says these steps go in this order.
 
-A clause join with no clause before it is the standalone reading, like `zal` *nothing*: `xal` is *nothing happened*, and `xam` hedges it.
+A clause join with no clause before it is standalone, like `zal` *nothing*: `xal` means *nothing happened*, and open `xam` adds *as far as I know*.
 
 > `xam.`
 >
@@ -93,7 +106,7 @@ A clause join with no clause before it is the standalone reading, like `zal` *no
 >
 > "Nothing happened, as far as I know."
 
-`/x/` keeps the **same speech act**. Later clauses inherit the opener and omit `/y/` (including **`yal`**, which the reader can fill back in).
+All the clauses in an `/x/` join share one speech act. Any `/y/` word goes before the first clause only; the later clauses take the same act and leave `/y/` out.
 
 > `zazawan vowogal xan zalahen varahal.`
 >
@@ -109,7 +122,7 @@ A clause join with no clause before it is the standalone reading, like `zal` *no
 
 ### Stance joins {#stance-joins}
 
-When English would deny or weigh **how you stand** toward a claim (*not because…*, *either I saw it or I was told*), close the [stance](clause.md#stance-th) words with a `/th/` join. The claim itself is untouched; the join works only on the stance words before it. (cue: same vowels as every other join.)
+When English would deny or weigh **how you stand** toward a claim (*not because…*, *either I saw it or I was told*), put a `/th/` join word after the [stance](clause.md#stance-th) words. The claim itself is untouched; the join works only on the stance words before it. (cue: same vowels as every other join.)
 
 > `zazawan vowogal thevem berehel thul.`
 >
@@ -123,7 +136,7 @@ When English would deny or weigh **how you stand** toward a claim (*not because�
 >
 > "Azawan walks: I either saw it or was told, one of the two."
 
-The other join vowels work on stance words the same way they work on a phrase list ([recap](joins.md#join-type-vowel-series)). A rank join says which ground carries the weight; the first stance word is the main one.
+The other join vowels work on stance words the same way they work on a phrase list ([recap](joins.md#join-type-vowel-series)). A rank join says which ground matters most: the first stance word is the main one.
 
 > `zazawan vowogal thevom thewam thel.`
 >
@@ -141,7 +154,7 @@ The other join vowels work on stance words the same way they work on a phrase li
 | **oe** | `thoel` in the order the grounds arose | *I saw it first, then I was told* |
 | **ue** | `thuel` ranked, first is the weakest | *chiefly because I was told, a little because I saw it* |
 
-Nothing is SHARED after an `/h/` or `/th/` join. To grade the whole list at once, put a `/w/` detail immediately before the join word.
+Nothing is SHARED after an `/h/` or `/th/` join. To add a detail that covers the whole list, put a `/w/` word right before the join word.
 
 **Compare with:** *Azawan does not walk* denies the event, so the join goes on the verb (`vowogal vul`), not on `/th/`.
 
@@ -195,17 +208,19 @@ Outside a question, only the single-vowel **-r** cells are words. Under a questi
 
 ### Join-act verbs {#join-act-verbs}
 
-When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*), write that move as a verb: first letter **`v`**, the same join vowel you already use on lists, and ending **-n** (`van`, `von`, …). The object is one `/d/` phrase: one thing, or a group packed with a [phrase join](joins.md). You can now name the act itself instead of only packing a list. On these verbs, **-n** is join content, not a [proper name](word-endings.md#proper-name--n). Put ordinary noun **-x** on the object when the group is associative; verb **-x** is [collective](plurality.md#verbs-v).
+When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*), write that move as a verb: first letter **`v`**, the join vowel for that move, and ending **-n** (`van`, `von`, …). The object is one `/d/` phrase: one thing, or a group joined with a [phrase join](joins.md). You can now name the act itself instead of only joining a list. On these verbs, **-n** does not mark a [name](word-endings.md#proper-name--n).
 
 > `zazawan dabovul van.`
 >
 > z-Azawan | d-apple | v-includes
 >
-> "Azawan includes/adds an apple."
+> "Azawan includes an apple."
 
-**Related form:** packaging a list uses [joins](joins.md) (`zal` / `val` / `xal`, …).
+For an associative group (*Alahen and company*), put noun **-x** on the object as usual. **-x** on the verb itself is [collective](plurality.md#verbs-v).
 
-**Compare with:** *and then* between sentences uses clause [sequence](join-across-roles.md#sequence) (`xan`, …), not `van`.
+**Related form:** joining a list uses [joins](joins.md) (`zal` / `val` / `xal`, …).
+
+**Compare with:** *and then* between sentences uses clause [sequence](#sequence) (`xan`, …), not `van`.
 
 | Clause sequence | Join-act verb | Shared vowel move |
 |-------------|---------------|-------------------|
@@ -215,7 +230,9 @@ When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*)
 
 The `/x/` forms connect clauses and keep one speech act. Their `/v/` counterparts take an object and name an act on it. Prioritizing (`ven`) has no clause sequence, and of the stacked vowels only `xaon` and `xuen` have one; the `/v/` forms follow the same series in the inventory below.
 
-These are ordinary content verbs. Point back at a join-act you already used with a resume or a full paraphrase. Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
+These are ordinary content verbs. To refer back to a join-act you already named, use a whole-stem **-r** resume or say it again in full.
+
+Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
 
 | Agazan | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
@@ -234,15 +251,15 @@ English *refuse* vs *leave out*: `zazawan demedol vun` (*Azawan refuses meat*) v
 
 ### Join-relations {#join-relations}
 
-When a noun or event is *framed* toward something (*cake with peanuts*, *walk without meat*, *work prioritizing the bug*), write the frame as an adjective or adverb: first letter **`g`** or **`h`**, the same join vowel as [join-act verbs](#join-act-verbs), and ending **-n** (`gan` / `han`, …), plus one `/b/` argument. Keep that pair together (`gan` + `/b/` on a noun; `han` + `/b/` as one adverb). You can now attach *including* / *without* / *prioritizing* to a host without building a new list. On these words too, **-n** is join content toward `/b/`. Put ordinary noun **-x** on the argument when the group is associative.
+When English ties one extra thing to a noun or an action by a list move (*a cupcake with peanuts*, *walk without meat*, *work prioritizing the bug*), write the move as an adjective (first letter **`g`**) or an adverb (first letter **`h`**), with the same join vowel as [join-act verbs](#join-act-verbs) and ending **-n** (`gan` / `han`, …). Right after it comes one `/b/` word that names the extra thing. Keep that pair together: `gan` + `/b/` describes a noun, and `han` + `/b/` works as one adverb. You can now say *including*, *without*, or *prioritizing* without building a new list. Here too, **-n** does not mark a name, and an associative group on the `/b/` word takes noun **-x** as usual.
 
-> `zebeval gan bebeyal.`
+> `zagubel gan bebeyal.`
 >
-> z-birthday | [g-including | b-peanut]
+> z-cupcake | [g-including | b-peanut]
 >
-> "Cake including / with peanuts."
+> "A cupcake with peanuts."
 
-Content *including* needs that `/b/` (`gan b…`). A stock label uses a [mention](spans.md) span.
+**`gan`** always needs its `/b/` word (`gan b…`). To talk about the word itself, with no `/b/`, use a [mention](spans.md#mention) span.
 
 **Compare with:** *writes with a hammer* is an extra-noun [hook](hooks.md#extra-noun) (`ael` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Alahen* is [proxy](relations.md#proxy) (`hadem`), not **`hon`** *exclusively for*. **`uel`** is *against* that party, not **`hun`** *refusing*.
 
@@ -250,24 +267,24 @@ Content *including* needs that `/b/` (`gan b…`). A stock label uses a [mention
 
 **For *including* as an afterthought, use:** a [hook](hooks.md) (`al`, …). `zahodom gan bazawan` is *a team including Azawan*; `zahodom al zazawan` is *the team, including Azawan*.
 
-For several members or an empty domain, put a [phrase join](joins.md) **inside** the `/b/` phrase (`gan bebeyal bagubem bal`), or use a [standalone](joins.md#standalone-phrase) `/b/` join as the only argument (`gan bar` = *including something*; `guan bal` = *excluding nothing* / stripped frame).
+For several members, put a [phrase join](joins.md) **inside** the `/b/` phrase (`gan bebeyal bagubem bal`). For an unnamed member or none at all, use a [standalone](joins.md#standalone-phrase) `/b/` join as the only `/b/` word (`gan bar` = *including something*; `guan bal` = *excluding nothing*).
 
 | Agazan | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
-| **`gan` / `han`** | `/ɡ/` noun or `/h/` event toward `/b/` | *including / with* | **a** ≈ add (hold the extra member) | `zebeval gan bebeyal`; `zazawan han balahen vowogal` |
+| **`gan` / `han`** | `/ɡ/` noun or `/h/` event toward `/b/` | *including / with* | **a** ≈ add (hold the extra member) | `zagubel gan bebeyal`; `zazawan han balahen vowogal` |
 | **`gon` / `hon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *exclusive for* (sole pick); `/h/` *exclusively for / as the one* | **o** ≈ one (lock that pick) | `zahodom gon bazawan`; `… hon bazawan vowogal` |
-| **`gaon` / `haon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to* (more may follow); `/h/` *among options* | **ao** ≈ add + one (admit, still open) | `zebeval gaon bebeyal`; `… haon bebeyal vowogal` |
-| **`gun` / `hun`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *against / anti-*; `/h/` *refusing* | **u** ≈ undo (reject that member) | `zebeval gun bebeyal`; `… hun bemedol vowogal` |
-| **`guan` / `huan`** | `/ɡ/` or `/h/` toward `/b/` | *without / excluding* | **ua** ≈ undo + add (leave that member out) | `zebeval guan bebeyal`; `… huan bebeyal vowogal` |
+| **`gaon` / `haon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to* (more may follow); `/h/` *among options* | **ao** ≈ add + one (admit, still open) | `zagubel gaon bebeyal`; `… haon bebeyal vowogal` |
+| **`gun` / `hun`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *against / anti-*; `/h/` *refusing* | **u** ≈ undo (reject that member) | `zagubel gun bebeyal`; `… hun bemedol vowogal` |
+| **`guan` / `huan`** | `/ɡ/` or `/h/` toward `/b/` | *without / excluding* | **ua** ≈ undo + add (leave that member out) | `zagubel guan bebeyal`; `… huan bebeyal vowogal` |
 | **`guon` / `huon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to anything but*; `/h/` *barring / anything but* | **uo** ≈ undo + one (bar that one; rest free) | `zowodel guon bebeyal`; `… huon bebeyal vowogal` |
 | **`gen` / `hen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *prioritizing / headed by*; `/h/` *prioritizing* | **e** ≈ order (put this first) | `zehegol gen babogal`; `… hen babogal verevum` |
 | **`gaen` / `haen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *on a par with*; `/h/` *equating / tying* | **ae** ≈ add + order (same height) | `zedehel gaen bagavel`; `… haen balahen vowogal` |
 | **`goen` / `hoen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *starting with*; `/h/` *starting with* | **oe** ≈ one + order (begin here) | `zehegol goen berevum`; `… hoen berevum vowogal` |
-| **`guen` / `huen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *deprioritizing / trailing*; `/h/` *deprioritizing* | **ue** ≈ undo + order (drop this rank) | `zebeval guen bagubem`; `… huen bagubem vowogal` |
+| **`guen` / `huen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *deprioritizing / trailing*; `/h/` *deprioritizing* | **ue** ≈ undo + order (drop this rank) | `zagubel guen bagubem`; `… huen bagubem vowogal` |
 
 *Anti-* vs *without*: `gun bemedol` vs `guan bemedol`. *Without X* vs *anything but X*: `guan bebeyal` vs `guon bebeyal`. Sole pick vs among options: `gon bazawan` vs `gaon bazawan`. Workaround as top priority vs workaround as first step: `gen berevum` vs `goen berevum`.
 
-**Compare with:** *a house like Azawan’s* / *walks like a duck* is resemblance ([simile](relations.md#similative) `gumum` / `humum`), not **`gaen` / `haen`** *on a par with* / *equating*.
+**Compare with:** *a house like Azawan’s* / *walks like a duck* is resemblance ([like](relations.md#like-resembles) `gumum` / `humum`), not **`gaen` / `haen`** *on a par with* / *equating*.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -345,9 +362,9 @@ z-teamwork | [g-exclusive-for | b-Ahaben]
 **7.** *Alahen runs and punches.*
 
 ::: details Show answer
-`zalahen varahal vabahel vam.`
+`zalahen varahal vabahel val.`
 
-z-Alahen | [v-run | v-punch | v-and.open]
+z-Alahen | [v-run | v-punch | v-and]
 :::
 
 **8.** *Alahen runs, refusing the medal.*
@@ -364,6 +381,22 @@ z-Alahen | [h-refusing | b-medal] | v-run
 `zalahen varahal xuen zazawan valahal.`
 
 [z-Alahen | v-run | x-and-before-that | z-Azawan | v-lie]
+:::
+
+**10.** *Alahen runs, but not because of the medal.*
+
+::: details Show answer
+`zalahen varahal thevem bamedal thul.`
+
+z-Alahen | v-run | [th-because | b-medal] | th-not
+:::
+
+**11.** *Azawan screams: I either saw it or was told, one of the two.*
+
+::: details Show answer
+`zazawan vezugel thevom thewam thol.`
+
+z-Azawan | v-scream | th-WITNESSED | th-TOLD | th-or-exactly-one
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
@@ -383,7 +416,7 @@ z-Ahaben | d-trophy | v-includes
 
 z-finish-line | [g-without | b-medal]
 
-*Finish line without the medal.*
+*The finish line without the medal.*
 :::
 
 **3.** `zalahen dodovel von.`
@@ -447,6 +480,24 @@ z-Alahen | [h-anything-but | b-Ahaben] | v-scream
 [z-Ahaben | v-scream | x-and-before-that | z-Alahen | v-punch]
 
 *Ahaben screams; before that, Alahen punched.*
+:::
+
+**10.** `zahaben varahal thevom thewam thel.`
+
+::: details Show answer
+
+z-Ahaben | v-run | th-WITNESSED | th-TOLD | th-rank/more
+
+*Ahaben runs: I mainly saw it, and I was also told.*
+:::
+
+**11.** `zalahen vabahel thul.`
+
+::: details Show answer
+
+z-Alahen | v-punch | th-not
+
+*Alahen punches. No judgment.*
 :::
 
 ## See also

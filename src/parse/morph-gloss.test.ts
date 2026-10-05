@@ -651,3 +651,15 @@ describe("morphGlossLine — flag rows", () => {
     expectLine("zalahen gahebam.", "z-Alahen | g-japanese");
   });
 });
+
+describe("morphGlossLine — verb-phrase join items", () => {
+  it("puts an /h/ or /d/ before a later verb inside that verb's item", () => {
+    expectLine("zazawan vowogal hadehum varahal val.", "z-Azawan | [v-walk | [h-haste | v-run] | v-and]");
+    expectLine("zazawan vugugel dababol vehahel val.", "z-Azawan | [v-cooking | [d-popcorn | v-sit] | v-and]");
+  });
+
+  it("leaves an /h/ before the first verb outside the list, and a joinless verb chain flat", () => {
+    expectLine("zazawan hadehum vowogal varahal val.", "z-Azawan | h-haste | [v-walk | v-run | v-and]");
+    expectLine("zazawan vowogal hadehum varahal.", "z-Azawan | v-walk | h-haste | v-run");
+  });
+});

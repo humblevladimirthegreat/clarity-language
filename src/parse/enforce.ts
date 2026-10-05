@@ -295,7 +295,7 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   if (word.pos === "th" && word.family.kind === "number") enforceStanceNumber(word, word.family.stem);
   if (word.pos === "w" && word.family.kind === "number") enforceDegreeNumber(word, word.family.stem);
   if (word.plural && isGenericPronoun(word)) throw new ConstructionError("genericPlural", word.raw);
-  if (word.plural && word.family.kind === "number" && ordinalPronounPlace(word) === undefined) {
+  if (word.plural && word.family.kind === "number" && ordinalPronounPlace(word) === undefined && !isPluralLabel(word)) {
     throw new ConstructionError("numberPlural", word.raw);
   }
   if (word.plural && word.pos === "y" && classifyTokenBranch(word).branch === "yInterjection") {
@@ -686,6 +686,13 @@ function enforceVerbPredicate(units: Unit[]): void {
     if (units[i + 1]?.kind === "np") return;
     throw new ConstructionError("predicateAfterVerb", unit.adj.word.raw);
   });
+}
+
+/** A digit-string label with digits takes **-x** for the group English pluralizes: `z_90x` *the ’90s* (numbers-applied.md#plural-labels). */
+function isPluralLabel(word: LexWord): boolean {
+  if (word.family.kind !== "number" || !(word.pos === "z" || word.pos === "d" || word.pos === "b")) return false;
+  const stem = word.family.stem;
+  return stem.marker === "_" && stem.groups.some((group) => group.mantissa !== undefined);
 }
 
 /** Clause- and discourse-level checks on a parsed and resolved result. */

@@ -1,14 +1,13 @@
 # Numbers in use
 <a id="numbers-applied"></a>
 
-Put a number word on a **label**, a **clock or date**, a **unit amount**, a **from–to** band, or an everyday **percent**. How the number word itself is built (markers, endings, exponents, writing) is in [numbers.md](numbers.md).
-
+A number word can do more than count. This page shows how to write a code or label (*room 12*), a clock time or date, an amount of a unit (*two meters*), a range (*3 to 5*), and a percent. How the number word itself is built (markers, endings, exponents, writing) is in [numbers.md](numbers.md).
 
 ## Intermediate {#intermediate}
 
 ### Digit-strings {#digit-strings}
 
-English needs a **code**: a phone, room, channel, or serial, not a counted amount. Write that with digit-string marker **`ro`** (written **`_`**). Leave exponents off, and group digits in threes when they are present. You can then drop the code into whatever slot the clause needs (`/d/` `/b/` `/ɡ/`).
+When English uses a number as a **code** (a phone, room, channel, or serial number) rather than an amount, write it with the digit-string marker **`ro`** (written **`_`**). Leave exponents off, and group the digits in threes. The code can then fill whatever role the clause needs (`/d/`, `/b/`, `/ɡ/`).
 
 > `zazawan d_555,123,4567 vahahal.`
 >
@@ -18,15 +17,27 @@ English needs a **code**: a phone, room, channel, or serial, not a counted amoun
 >
 > "Azawan sees 555-123-4567."
 
-Ending is usually **-l** (exact label); **-n** for an official designation; **-r** with a digit resumes a prior code. Digitless `dror` / `gror` is *some code*, or *what number?* in a question; digitless **-l** `…_` is an unspecified label ([digitless](numbers.md#digitless)).
+Ending is usually **-l** (exact label); **-n** for an official designation; **-r** with digits repeats a code already mentioned. Digitless `dror` / `gror` is *some code*, or *what number?* in a question; digitless **-l** `…_` is an unspecified label ([digitless](numbers.md#digitless)).
 
-**For numeric *plus or minus*, use:** [sign](numbers.md#sign) on a count or ordinal. Labels normally preserve their own written identifier.
+**For numeric *plus or minus*, use:** [sign](numbers.md#sign) on a count or ordinal. A label keeps its digits exactly as written.
 
-For a code as a when-frame, use a host relation + `/b/` (`/h/` *on* + `b_7` *channel 7*), or put `/ɡ/` on a noun (*channel* `g_7`).
+To place an event by a code (*on channel 7*), put the code in `/b/` after a relation word (`/h/` *on* + `b_7`), or put it on a noun as `/ɡ/` (*channel* `g_7`).
+
+#### Plural labels {#plural-labels}
+
+English makes a label plural to name the whole run of labels that start with it: *the ’90s* are the years 90 through 99, and *the 1800s* are 1800 through 1899. Put plural **-x** on the label: `z_90x`. The final zeros stand for any digit, so `_90x` covers 90 to 99. Only a label with digits takes **-x**; a count does not.
+
+> `zazawan vowogal huwem b_90x.`
+>
+> 🔊 `zazawan vowogal huwem bronazolx.`
+>
+> z-Azawan | v-walk | [h-while | b-_90-x]
+>
+> "Azawan walks in the ’90s."
 
 ### Time {#time}
 
-English names a **clock time** or a **calendar date**. Both reuse digit-string grammar as bare `/h/`. Clock takes marker **`ro`** (spoken **`hro`**, written `h_…`). Date takes calendar-ordinal **`oe`** (spoken **`hroe`**, written `h_#…`). Fields are read by position, so the word already says which number is the hour or the month.
+To say when something happens by the clock or the calendar (*at 15:30*, *on 22 July*), write a digit string under `/h/` with no relation word before it. Clock takes marker **`ro`** (spoken **`hro`**, written `h_…`). Date takes calendar-ordinal **`oe`** (spoken **`hroe`**, written `h_#…`). Fields are read by position, so the word already says which number is the hour or the month.
 
 > `h_15,30 zazawan vowogal.`
 >
@@ -41,10 +52,10 @@ Clock and date together:
 | Job | How |
 |-----|-----|
 | **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left to right; commas are writing only: hour, minute, optional seconds (`h_15,30`, `h_15,30,00`). Digitless `h_` = *at some (unspecified) clock time*. |
-| **Calendar date** | Digit-string **`_`** with **`oe`** (spoken **`roe`**, written `h_#…`). Fields: **day, month, optional year** (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as **one digit group** (`2026` is one group). Digitless `h_#` covers an unspecified date. A date may stop after the day (`h_#12`, *on the 12th*); context gives the month. An explicit *date* host + `/b/` is optional when you want to name the relation. |
+| **Calendar date** | Digit-string **`_`** with **`oe`** (spoken **`roe`**, written `h_#…`). Fields: **day, month, optional year** (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as **one digit group** (`2026` is one group). Digitless `h_#` covers an unspecified date. A date may stop after the day (`h_#12`, *on the 12th*); context gives the month. You may also name the relation with a *date* word plus `/b/`, but you do not need to. |
 | **Day of the week** | Ordinal on **`elaga`** *weekday*, counting from Monday: `zelagam grewol` is *Monday*, `zelagam grelel` is *Sunday* (the seventh). |
 | **Month or year alone** | A month is an ordinal on **`umuha`** *month*, counting from January, the same way as weekdays: `zumuham grerel` is *March*. A year is a label on **`avawe`** *year*: `zavawem g_1962` is *1962*. To place an event in one, put it in `/b/` after **`huwem`** *during*: `huwem bumuham grerel` (*in March*), `huwem bavawem g_1962` (*in 1962*). |
-| **When-frame** | Ordinary lexicon `/h/` (*until*, *before*, recency), clock/date above, a signed [offset on the channel](knowing.md#dated-channel) (*three hours ago* / *in three hours*) or on a [time pole](knowing.md#dated-channel) (*until tomorrow*), or a closed mood whose **job** locates time ([LIVE](knowing.md#live-vs-memory) / [WITNESSED](knowing.md#live-vs-memory), or a channel plus `b+` for a [forecast](knowing.md#forecast)). [RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate) do **not** locate time. There is no past/future ending. A numeric payload (*3 days* on a unit) is relation + scalar + unit. |
+| **When-frame** | Ordinary lexicon `/h/` (*until*, *before*, recency), clock/date above, a signed [offset on the channel](knowing.md#dated-channel) (*three hours ago* / *in three hours*) or on a [time pole](knowing.md#dated-channel) (*until tomorrow*), or a stance word that places the event in time ([LIVE](knowing.md#live-vs-memory) / [WITNESSED](knowing.md#live-vs-memory), or a channel plus `b+` for a [forecast](knowing.md#forecast)). [RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate) do **not** place an event in time. There is no past or future ending. An amount of time (*for 3 days*) is a relation word plus a [measure phrase](#measure-phrases). |
 
 > `zazawan vowogal huwem bumuham grerel.`
 >
@@ -60,9 +71,9 @@ Clock and date together:
 >
 > "Azawan walks in 1962."
 
-Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** resume a prior clock or date with its digits; digitless `hror` asks *when?* / *what time?* in a question ([digitless](numbers.md#digitless)). Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
+Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** with digits repeats a clock time or date already mentioned; digitless `hror` asks *when?* / *what time?* in a question ([digitless](numbers.md#digitless)). Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
 
-For *from … to* with clock times, put each time in `/b/` after the hooks **`ul`** *from* and **`oel`** *toward* ([extra nouns](hooks.md#extra-noun-intermediate)). As with any two extras, keep a non-`/b/` word, such as the verb, between them.
+For *from … to* with clock times, put each time in `/b/` after the hooks **`ul`** *from* and **`oel`** *toward* ([extra nouns](hooks.md#extra-noun-intermediate)). As with any two extra nouns, keep a non-`/b/` word, such as the verb, between them.
 
 > `zazawan ul b_9 vowogal oel b_17.`
 >
@@ -72,7 +83,7 @@ For *from … to* with clock times, put each time in `/b/` after the hooks **`ul
 >
 > "Azawan walks from 9:00 to 17:00."
 
-Calendar decade labels such as *the ’90s* name a group of years, not a bare order-of-magnitude band.
+For a decade (*the ’90s*), use a [plural label](#plural-labels).
 
 **Compare with:** a phone or room **code** uses the same `_` marker under `/d/` `/b/` `/ɡ/`, not bare `/h/`. Restrictor **`har`** is *sometimes*; digitless `hrol` is *some clock or date*.
 
@@ -83,14 +94,15 @@ Calendar decade labels such as *the ’90s* name a group of years, not a bare or
 <a id="unit-amount"></a>
 <a id="si-units"></a>
 
-English names **how much of a unit** (*two meters*, *three hours*). The unit is a lexicon noun whose **published abstract** is that SI or everyday unit name; the amount is an ordinary `/ɡ/` scalar on that unit. Use those unit lemmas in speech, not Latin abbreviations (`m`, `kg`, `s`). Introduce the unit sense with **-m** ([abstract](word-endings.md#abstract-m)); resume with **-r** when the unit phrase is already on the table.
+To say **how much of a unit** (*two meters*, *three hours*), use the unit's noun and put the amount on it as a `/ɡ/` number, the same way a count sits on a noun. Each SI or everyday unit is the [abstract](word-endings.md#abstract-m) sense of a published root, so the unit noun ends in **-m**. Say that word, not a Latin abbreviation (`m`, `kg`, `s`). Once the unit phrase has been mentioned, resume it with **-r**.
 
 > `zazawan bezezem gradul vowogal.`
+>
 > z-Azawan | [b-meter | g-two] | v-walk
 >
 > "Azawan walks two meters."
 
-Price *for five grams* keeps this same measure NP in `/b/` after [exchange](relations.md#exchange) **`hehem`**.
+For a price (*for five grams*), put the same measure phrase in `/b/` after the [exchange](relations.md#exchange) word **`hehem`**.
 
 | Agazan | Use | English |
 |--------|-----|---------|
@@ -98,11 +110,11 @@ Price *for five grams* keeps this same measure NP in `/b/` after [exchange](rela
 | `zazadem g+3`, `dabayum g+5` | subject / object / … | *three seconds*, *five grams* |
 | `gezezem g+2` on a host | modifier on a noun | rare; prefer unit as `/b/` or a freestanding noun phrase |
 
-Same endings and fuzzy **-m** habits as other number words on the amount (`gradum` ≈ *about two*). The **unit** takes ordinary word endings.
+The amount takes the usual number endings, so **-m** makes it fuzzy (`gradum` ≈ *about two*). The **unit** takes ordinary word endings.
 
 #### Stock units {#stock-units}
 
-Base and everyday units (each row is a **unit metaphor**; the literal picture stays on the same published root unless noted):
+Each unit is a metaphor on a published root. The **Literal on same root** column gives that root's everyday meaning.
 
 | SI / everyday unit | Unit root (metaphor) | Example | Literal on same root | Cue |
 |--------------------|----------------------|---------|----------------------|-----|
@@ -126,18 +138,19 @@ Base and everyday units (each row is a **unit metaphor**; the literal picture st
 | pound | `ahabu` *pound-mass* | `bahabum g+5` | `ahabul` *shopping-bag* | 🛍️: sold by the pound |
 | heat grade (not kelvin) | `evede` *temperature* | `bevedem g+37` | `evedel` *thermometer* | 🌡️: how hot or cold |
 
-Related **quantity** words (*heavy*, *flow*, *time* as continuum, …) stay on their own roots (`aragam` *heavy*, `gadaham` *duration*, …); they are not SI measure nouns.
+Words for a quantity itself (*heavy*, *flow*, *time* as a continuum, …) are ordinary roots (`aragam` *heavy*, `gadaham` *duration*, …), not units.
 
-`bagazem grarel` ≈ *three hours*.
+Spelled out, `bagazem g+3` is `bagazem grarel` *three hours*.
 
 ### Ranges {#ranges}
 <a id="number-ranges"></a>
 <a id="numeric-ranges"></a>
 <a id="from-to"></a>
 
-English *from 3 to 5* / *3 through 5* names a **band on a line**. Write the two endpoints with the [hook](hooks.md) **`al`** between them: `A al B`. No join word closes it, and no extra word names the line.
+To give a range of numbers (*from 3 to 5*, *3 through 5*), write the two ends with the [hook](hooks.md) **`al`** between them: `A al B`. No join word closes it, and no extra word names the scale.
 
 > `zrarel al zraval.`
+>
 > z-three | through | z-five
 >
 > "From 3 to 5."
@@ -147,18 +160,20 @@ Between two numbers, *3, including 5* has nothing to include into, so **`al`** r
 To count a range of things, put the endpoints on the counted noun, the same way one count sits on it. The noun names the line:
 
 > `zodogal grarel al graval vowogal.`
+>
 > [z-dog | g-three] | through | g-five | v-walk
 >
 > "Three to five dogs walk."
 
 > `zagazem grarel al graval.`
+>
 > [z-hour | g-three] | through | g-five
 >
 > "Three to five hours."
 
-Something after **B** describes **B** alone, and something on the host noun describes the whole range. To grade the range itself, put `/w/` immediately before the hook ([detail on the hook](hooks.md#hook-w)).
+A word after **B** describes **B** alone, and a word on the counted noun describes the whole range. To add a detail to the range itself, put a `/w/` word right before the hook ([detail on the hook](hooks.md#hook-w)).
 
-**Exclude an end with `ul`.** *3, except 5* reads as the band that stops short of 5: the hook excludes the endpoint **after** it. The endpoints are a path in spoken order, so to exclude the low end, say it second.
+**Exclude an end with `ul`.** *3, except 5* reads as the band that stops short of 5: the hook excludes the endpoint **after** it. The ends are read in the order you say them, so to exclude the low end, say it second.
 
 | Agazan | Use | English |
 |--------|-----|---------|
@@ -170,13 +185,13 @@ Something after **B** describes **B** alone, and something on the host noun desc
 | `zrarel ual zraval` | both ends out | *strictly between 3 and 5* (`(3, 5)`) |
 | `zrarel uel zraval` | outside the band | *below 3 or above 5* |
 
-**`ual`** and **`uel`** are the [span hooks](hooks.md#spans), which also work on lines that are not numbers. An endpoint can still be fuzzy on its own (`zrarel al zravam` = *3 to about 5*).
+**`ual`** and **`uel`** are the [span hooks](hooks.md#spans), which also work on scales that are not numbers. An endpoint can still be fuzzy on its own (`zrarel al zravam` = *3 to about 5*).
 
-**Compare with:** `zrarel zraval zoel` is *3, then 5*: two values in order, not a band. `zrarel zraval zal` is *3 and 5*. `zazawan zalahen zel gamadam` ranks **people** on a scale. Place *from a station to a train* is two [locative](relations.md#spatial-path) `/h/` + `/b/` units, not this hook.
+**Compare with:** `zrarel zraval zoel` is *3, then 5*: two values in order, not a band. `zrarel zraval zal` is *3 and 5*. `zazawan zalahen zel gamadam` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
 
 ### Percent and percentage points {#percent-and-percentage-points}
 
-English *25% of the cats* names a **portion of a whole**. Close a **count** (`ra` / `ru`) with **`yo`**. That closer is parallel to fraction closer **`ye`**. The whole is the noun the percent grades, same `/ɡ/` slot as a count (`zagadulx grarel` = *three cats*).
+To give a percent of a whole (*25% of the cats*), end a **count** number (`ra` / `ru`) with **`yo`**. Put it on the noun for the whole, in the same `/ɡ/` slot as a count (`zagadulx grarel` = *three cats*).
 
 > `zagadulx g+25%.`
 >
@@ -199,14 +214,16 @@ In [preferred writing](numbers.md#writing-preferred-shorthand): **`%`** → spee
 
 #### Fractions (*half of*) {#fractions}
 
-English *half of the cats* / *a third of the tea* splits the whole into N parts. Put **`g-N`** right after the noun: the **`ru`** marker divides, as `/h/` **`h-N`** does. A whole number of 2 or more names one part in N.
+To name one part of a whole (*half of the cats*, *a third of the tea*), put a minus number **`g-N`** right after the noun. Here the **`ru`** marker divides, as it does in `/h/` **`h-N`**: with N of 2 or more, the word names one part in N.
 
 > `zagadulx grudul vehahel.`
+>
 > [z-cat-x | g-half-of] | v-sit
 >
 > "Half of the cats sit."
 
 > `zedehel grurel vehahel.`
+>
 > [z-tea | g-third-of] | v-sit
 >
 > "A third of the tea sits there."
@@ -214,6 +231,7 @@ English *half of the cats* / *a third of the tea* splits the whole into N parts.
 To say how many parts, put the count first and the fraction after it: **`g+N`** then **`g-M`** is *N parts of M*. English *two thirds* is the same two words in the same order.
 
 > `zagadulx gradul grurel vehahel.`
+>
 > [z-cat-x | g-two | g-third-of] | v-sit
 >
 > "Two thirds of the cats sit."
@@ -221,6 +239,7 @@ To say how many parts, put the count first and the fraction after it: **`g+N`** 
 **`g-N`** alone is a fraction only right after a plain noun. After a [measure](#measure-phrases) unit, a minus number is still a negative amount (`bezezem grudul` *minus 2 meters*). The count makes the fraction plain in any slot, a unit included: a count then a minus is never a negative amount, since a unit takes one amount.
 
 > `zazawan vowogal bagazem grawol grurel.`
+>
 > z-Azawan | v-walk | [b-hour | g-one | g-third-of]
 >
 > "Azawan walks for a third of an hour."
@@ -463,11 +482,13 @@ h-_1,4 | z-Alahen | v-walk
 English *5 or more* / *less than 5* is a **ray**: a band with only one end. Write it as a [range](#ranges) whose other end is infinity: **`zrabal`** (+∞) or **`zrubal`** (−∞), the [digitless exponents](numbers.md#digitless-exponents). The same **`al`** / **`ul`** rules apply, so the hook excludes the endpoint after it.
 
 > `zraval al zrabal.`
+>
 > z-five | through | z-plus-infinity
 >
 > "5 or more."
 
 > `zrubal ul zraval.`
+>
 > z-minus-infinity | through-excluding | z-five
 >
 > "Less than 5."
@@ -484,7 +505,7 @@ For counts, −∞ reads as *no lower limit*: `zagadulx grubal al graval` is *up
 
 Ranks take the first and last place as ends. **`grebal`** is the last place and **`grebul`** the first, so `zredul al zrebal` is *2nd through last*.
 
-Rank joins no longer set bounds: `zraval zel` is *only 5 matters*, and `zraval zoel` is *start with 5*.
+**Compare with:** a rank join on one number is not a ray: `zraval zel` is *only 5 matters*, and `zraval zoel` is *start with 5*.
 
 ### Named and unknown ranges {#named-ranges}
 <a id="half-open-exclude-the-high-end-only"></a>
@@ -508,6 +529,7 @@ The range hook takes the other hook endings too.
 With **-r**, the hook stands in for one value you are not naming. Under a [question](questions.md#fill-ask-r) it asks for that value, as `zar` asks *who?*:
 
 > `zazawan dagadulx grarel ar graval vahahal.`
+>
 > z-Azawan | [d-cat-x | g-three] | some.through | g-five | v-see
 >
 > "Azawan sees some number of cats from 3 to 5."
@@ -518,9 +540,9 @@ The [span hooks](hooks.md#spans) take **-r** the same way: `zrarel uar zraval` i
 <a id="ordinal-generation"></a>
 <a id="generation-ordinal"></a>
 
-On forward **`#`** / **`re`** and end-relative **`#-`** / **`rue`**, a **digitful** exponent is not a power of ten. It is **how many generations away** from a focused person, version, or outline item. Use this when English would say *the third grandchild* or *the 3rd sub-point*.
+On a rank number (forward **`#`** / **`re`** or end-relative **`#-`** / **`rue`**), an exponent with digits is not a power of ten. It says **how many generations away** from the person, version, or outline point in focus. Use it when English would say *the third grandchild* or *the 3rd sub-point*.
 
-The marker still counts **from the start** or **from the end** inside that cohort. The exponent **`eK`** / **`e-K`** names generation **+K** (deeper / descendants) or **−K** (enclosing / ancestors). The mantissa picks which slot; omit it to name the whole cohort. Omit the exponent for the **same** generation as the focus (`grerel` = 3rd peer). Named **`e0`** asserts current generation (usually redundant).
+The marker still counts **from the start** or **from the end**, but only among the members of that generation (its cohort). The exponent **`eK`** names the generation K steps deeper (descendants), and **`e-K`** the generation K steps up (ancestors). The mantissa picks which member; leave it off to name the whole cohort. Leave the exponent off for the focus's **own** generation (`grerel` = 3rd peer). Writing **`e0`** says *current generation* outright, which is usually redundant.
 
 | Piece | Job |
 |-------|-----|
@@ -543,7 +565,7 @@ The marker still counts **from the start** or **from the end** inside that cohor
 | **`g#e-1`** | generation −1 / parent layer (member unspecified) |
 | **`g#1e-1`** | 1st of generation −1 (often *the parent* when the cohort is singleton-framed) |
 
-`/x/` treats generation as **agenda nesting** (`x#3e2` = *3rd sub-sub-point under the focus*; **`xrebazol`** = *current-layer item(s)*). `/h/` / `/v/` / `/y/` inherit the same product (*for the 3rd time in gen +2*, *place 3rd in gen +2*, …) when the series is generation-structured. A flat event count uses **`h#N`**.
+On `/x/`, generations are levels of an outline: `x#3e2` is the *3rd sub-sub-point under the current point*, and **`xrebazol`** is *the point or points on the current level*. `/h/`, `/v/`, and `/y/` read generations the same way when the series comes in levels (*for the 3rd time at level +2*, *place 3rd at level +2*, …). For a plain count of occasions, use **`h#N`**.
 
 #### Kin {#kin-generations}
 
@@ -556,6 +578,7 @@ Generations form a **tree**, like an outline. A cohort is only the members **und
 The mantissa is **birth order** within that cohort: **`g#1e0`** is the eldest sibling, **`g#-1e0`** the youngest. To say whose family it is, put the anchor person in `/b/` right after the number. (cue: the number says how far up or down the tree; `/b/` says from whom)
 
 > `zalahen grebazol bazawan vowogal.`
+>
 > [z-Alahen | [g-#-e0 | b-Azawan]] | v-walk
 >
 > "Alahen, Azawan's sibling, walks."

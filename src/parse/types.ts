@@ -295,6 +295,11 @@ export type VpCoord = {
     joinModifiers?: LexWord[];
     /** Hosted `/b/` right after a label-scope `tho` verb (predication.md#label-scope). */
     hostedVerbs?: { verb: LexWord; hosted: Hosted }[];
+    /**
+     * Words between two verbs of a joined list belong to the later verb's item (join-across-roles.md#vp-clause-forms):
+     * `/h/` units and `/d/` `/b/` phrases, in spoken order before `verb`.
+     */
+    itemUnits?: { verb: LexWord; units: Unit[] }[];
   }[];
 };
 
