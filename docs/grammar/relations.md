@@ -1,15 +1,16 @@
 # Hosted relations
 
-How an extra noun completes a **relation** that still needs a root on `/h/` or `/ɡ/` (*like*, *for* a swap, *on behalf of*, *between*, *part of*, *as of*). Everyday *in* / *at* / *from* / *for* (a get) / *using* are [hooks](hooks.md#extra-noun).
+Some English prepositions need a content root of their own (*like*, *for* in a swap, *on behalf of*, *between*, *part of*, *as of*). Agazan writes each one as a **relation** word on `/h/` (or `/ɡ/` on a noun), followed by an extra noun in `/b/` that completes it. Everyday *in* / *at* / *from* / *for* (a get) / *using* are [hooks](hooks.md#extra-noun) instead.
 
 ## Beginner {#beginner}
 
-You already write a hosted pair for *like Azawan* (`humum bazawan`). The same shape names other English preposition jobs that keep a **root**: pick the relation root, then `/b/`. `/w/` that grades the relation sits immediately before the `/h/` or `/ɡ/` word.
+You already write *like Azawan* as a hosted pair (`humum bazawan`): a relation word, then the extra noun `/b/` right after it. The same shape covers the other prepositions on this page: pick the relation root, then put `/b/` after it. A `/w/` word that grades the relation sits immediately before the `/h/` or `/ɡ/` word.
 
+### Like (*resembles*) {#like-resembles}
 <a id="similative"></a>
 <a id="like"></a>
 
-When English says something **resembles** a model (*walks like a duck*, *a house like Azawan’s*), keep the same hosted pair as on the [clause](clause.md#extra-nouns) page. The relation word is **`humum`**. Put the model in `/b/` right after it. Optional `/w/` sits immediately before the relation word. The event or thing stays real; only the match is to that model. (cue: 🪞 *mirror*: you see a reflection, not the same object twice)
+When English says something **resembles** a model (*walks like a duck*, *a house like Azawan’s*), keep the same hosted pair as on the [clause](clause.md#extra-nouns) page. The relation word is **`humum`**. Put the model in `/b/` right after it. Optional `/w/` sits immediately before the relation word. The event or thing itself is real; the `/b/` word is only what it is compared to. (cue: 🪞 *mirror*: you see a reflection, not the same object twice)
 
 > `zazawan humum badagul vowogal.`
 >
@@ -31,7 +32,7 @@ On a noun, the same root is **`gumum`**:
 >
 > "A house like Azawan’s."
 
-When the model is an event (*walks the way a duck swims*), put [**`barl`**](dependents.md#dependent-clauses) after **`humum`** and say that event as the next sentence. Keep the pair last, as with *because*. The model event is a picture, not a claim, so it is not asserted.
+When the model is an event (*walks the way a duck swims*), put [**`barl`**](dependents.md#dependent-clauses) after **`humum`** and say that event as the next sentence. Keep the pair last, as with *because*. You are not claiming that the model event happened; it is only the comparison.
 
 > `zazawan vowogal humum barl zadagul vezewel.`
 >
@@ -39,7 +40,7 @@ When the model is an event (*walks the way a duck swims*), put [**`barl`**](depe
 >
 > "Azawan walks the way a duck swims."
 
-Ordinary `zumul` is still *a mirror*.
+As a plain noun, `zumul` is *a mirror*.
 
 With no `/b/` after a joined subject, the model is the other members: each one resembles the others. That is English *alike* / *similar to each other*. Every hosted relation follows this rule ([social ties](#social-relations), [kin](numbers-applied.md#kin-generations)).
 
@@ -55,7 +56,7 @@ With no `/b/` after a joined subject, the model is the other members: each one r
 >
 > "Azawan and Alahen walk alike."
 
-**Compare with:** unhosted `/b/` is still the recipient. *In a house* is a [hook](hooks.md#extra-noun) (`al bahazal`). *Using* a tool is also a [hook](hooks.md#extra-noun). Two labels for **one** person is not this pair. *As sleepy as* names a shared height, not resemblance. *As if they walk* takes the walk off the real tally; here the walk stays real.
+**Compare with:** a `/b/` word with no relation word before it is the recipient. *In a house* is a [hook](hooks.md#extra-noun) (`al bahazal`). *Using* a tool is also a [hook](hooks.md#extra-noun). Giving **one** person two labels is not resemblance, so it does not use this pair. *As sleepy as* compares how far two things have a quality, not whether one resembles the other. *As if they walk* says the walk may not be real; with *like*, the walk is real.
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -64,7 +65,7 @@ With no `/b/` after a joined subject, the model is the other members: each one r
 ### Exchange (*for*) {#exchange}
 <a id="in-exchange-for"></a>
 
-When English names the **other side of a swap** (*a book for a hammer*), keep the same hosted pair as *like*. The relation word is **`hehem`**. Put what is swapped against the theme in `/b/` right after it. That extra noun is the consideration, not who receives the theme. (cue: 💱 *currency-exchange*: the arrows swap one thing for another; `/b/` is the other side)
+When English names the **other side of a swap** (*a book for a hammer*), use the same hosted pair as *like*. The relation word is **`hehem`**. Put what is given in return in `/b/` right after it. That extra noun is the other half of the trade, not who receives the book. (cue: 💱 *currency-exchange*: the arrows swap one thing for another; `/b/` is the other side)
 
 > `zazawan dubugal hehem bahavol vehem.`
 >
@@ -72,9 +73,9 @@ When English names the **other side of a swap** (*a book for a hammer*), keep th
 >
 > "Azawan trades a book for a hammer."
 
-On a noun, the same root is **`gehem`** (`dubugal gehem bahavol` *a book for a hammer*). Ordinary `zehel` is still *a currency exchange*. Ordinary `vehem` is still *to trade* (the convertibility act).
+On a noun, the same root is **`gehem`** (`dubugal gehem bahavol` *a book for a hammer*). As a plain noun, `zehel` is *a currency exchange*. As a verb, `vehem` is *to trade* (the convertibility act).
 
-**Compare with:** unhosted `/b/` is still the recipient (*a book for Alahen* as who gets it). *Using* a tool is a [hook](hooks.md#extra-noun). *Like a duck* is [simile](#similative). *In a house* is a hook (`al`).
+**Compare with:** a `/b/` word with no relation word before it is the recipient (*a book for Alahen* as who gets it). *Using* a tool is a [hook](hooks.md#extra-noun). *Like a duck* is [simile](#similative). *In a house* is a hook (`al`).
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -83,7 +84,7 @@ On a noun, the same root is **`gehem`** (`dubugal gehem bahavol` *a book for a h
 ### Proxy (*on behalf of*) {#proxy}
 <a id="on-behalf-of"></a>
 
-When English says someone **acts as another person’s agent** (*tells on behalf of Alahen*), keep the same hosted pair as [*like*](#similative). The relation word is **`hadem`**. Put that person in `/b/` right after it. The subject still does the act; `/b/` is whose agency they use, not who hears the telling. (cue: 🪪 *id*: the card stands as an authorized face; `/b/` is that person)
+When English says someone **acts as another person’s agent** (*tells on behalf of Alahen*), use the same hosted pair as [*like*](#similative). The relation word is **`hadem`**. Put that person in `/b/` right after it. The subject does the act; `/b/` is the person they act for, not who hears the telling. (cue: 🪪 *id*: the card stands as an authorized face; `/b/` is that person)
 
 > `zazawan hadem balahen vezebel.`
 >
@@ -91,15 +92,13 @@ When English says someone **acts as another person’s agent** (*tells on behalf
 >
 > "Azawan tells on behalf of Alahen."
 
-A recipient may follow a finished pair: `zazawan hadem balahen bahaben vezebel` (*tells Ahaben on behalf of Alahen*). On a noun, the same root is **`gadem`** (`dubugal gadem balahen` *a book on behalf of Alahen*). Ordinary `zadel` is still *an id*.
+A recipient `/b/` can follow once the pair is complete: `zazawan hadem balahen bahaben vezebel` (*tells Ahaben on behalf of Alahen*). On a noun, the same root is **`gadem`** (`dubugal gadem balahen` *a book on behalf of Alahen*). As a plain noun, `zadel` is *an id*.
 
-**Compare with:** unhosted `/b/` is still who hears the telling. *Using* a tool is a [hook](hooks.md#extra-noun). *A book for a hammer* as a swap is [exchange](#exchange). *In a house* is a hook (`al`). *Exclusively for* is a [join-relation](join-across-roles.md#join-relations), not this pair.
+**Compare with:** a `/b/` word with no relation word before it is who hears the telling. *Using* a tool is a [hook](hooks.md#extra-noun). *A book for a hammer* as a swap is [exchange](#exchange). *In a house* is a hook (`al`). *Exclusively for* is a [join-relation](join-across-roles.md#join-relations), not this pair.
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hadem` / `gadem`** | authorized agency | *on behalf of* | `adel` *id* | 🪪: the card stands as their face |
-
-
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -197,7 +196,6 @@ z-Azawan | [h-on-behalf-of | b-Alahen] | b-Ahaben | v-tell
 *Azawan tells Ahaben on behalf of Alahen.*
 :::
 
-
 **5.** `zubugal gumum bahaben.`
 
 ::: details Show answer
@@ -211,7 +209,7 @@ z-book | [g-like | b-Ahaben]
 
 ### Exactly like (`humul` / `gumul`) {#exactly-like}
 
-Beginner used **`humum`** / **`gumum`** for *like*: the event or thing resembles the model in `/b/`. When the match is exact (*walks exactly like a duck*, *a house just like Azawan's*), end the same relation word in **-l** instead: **`humul`** on the event, **`gumul`** on a noun. The model still sits in `/b/` right after it, and the event or thing still stays real. (cue: **-l** ≈ locked: the reflection matches the model line for line)
+Beginner used **`humum`** / **`gumum`** for *like*: the event or thing resembles the model in `/b/`. When the match is exact (*walks exactly like a duck*, *a house just like Azawan's*), end the same relation word in **-l** instead: **`humul`** on the event, **`gumul`** on a noun. The model sits in `/b/` right after it, as before, and the event or thing is still real. (cue: **-l** ≈ locked: the reflection matches the model line for line)
 
 > `zazawan humul badagul vowogal.`
 >
@@ -229,7 +227,7 @@ Beginner used **`humum`** / **`gumum`** for *like*: the event or thing resembles
 
 ### Locative relations {#locative-relations}
 
-Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extra-noun hooks](hooks.md#extra-noun-intermediate). Several hooks on one clause are several extras (*from* one landmark *toward* another). Write the **source** first, then the **goal**.
+Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extra-noun hooks](hooks.md#extra-noun-intermediate). To say where someone moves from and to, use one hook for each landmark (*from* one, *toward* another), and write the **source** before the **goal**.
 
 > `zazawan ul bezedel vowogal oel bedehal.`
 >
@@ -259,7 +257,7 @@ Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extr
 
 <a id="spatial-path"></a>
 
-*Between* still needs a **root**: the figure sits in the layer of **two** landmarks. Keep hosted **`hazam`** (or **`gazam`** on a noun) and put both landmarks as a [join](joins.md) in `/b/`. (cue: 🥪 *sandwich*: the filling sits between two sides)
+*Between* needs a **root**, not a hook: the position depends on **two** landmarks at once. Use hosted **`hazam`** (or **`gazam`** on a noun) and put both landmarks in `/b/` as a [join](joins.md). (cue: 🥪 *sandwich*: the filling sits between two sides)
 
 > `zalahen vehahel hazam bedehal bezedel bal.`
 >
@@ -267,7 +265,7 @@ Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extr
 >
 > "Alahen sits between a train and a station."
 
-The `/b/` after the host is **one slot**. A join (`bal`) or a [plural](plurality.md) fills it whole; the landmarks do not need a slot each. The same holds on a noun:
+The `/b/` after the relation word is **one slot**. A join (`bal`) or a [plural](plurality.md) fills it whole; the landmarks do not each need their own `/b/`. The same holds on a noun:
 
 > `zazawan gazam bedehal bezedel bal vehahel.`
 >
@@ -275,11 +273,11 @@ The `/b/` after the host is **one slot**. A join (`bal`) or a [plural](plurality
 >
 > "Azawan, between a train and a station, sits."
 
-Ordinary `zazal` is still *a sandwich*.
+As a plain noun, `zazal` is *a sandwich*.
 
 <a id="across"></a>
 
-*Across* also needs a root. The hook **`uol`** *through* goes through the inside of the landmark (a crowd, a tunnel). **`hebum`** goes from one edge to the far edge (a street, a river). Put the landmark in `/b/` right after it. (cue: 🌉 *bridge*: a bridge spans the gap)
+*Across* also needs a root. The hook **`uol`** *through* passes through the inside of the landmark (a crowd, a tunnel). **`hebum`** goes from one edge to the far edge (a street, a river). Put the landmark in `/b/` right after it. (cue: 🌉 *bridge*: a bridge spans the gap)
 
 > `zazawan vowogal hebum bezedel.`
 >
@@ -287,9 +285,9 @@ Ordinary `zazal` is still *a sandwich*.
 >
 > "Azawan walks across the station."
 
-On a noun it is **`gebum`**: *Azawan, across the station, sits.* Ordinary `zebul` is still *a bridge*.
+On a noun it is **`gebum`**: *Azawan, across the station, sits.* As a plain noun, `zebul` is *a bridge*.
 
-*Around* needs a root too: the figure is on **all sides** of one landmark, like a ring. Use hosted **`hugem`** (or **`gugem`** on a noun) with the landmark in `/b/`. (cue: 🎠 *carousel*: the horses ride on all sides of the center pole)
+*Around* needs a root too: the person or thing is on **all sides** of one landmark, like a ring. Use hosted **`hugem`** (or **`gugem`** on a noun) with the landmark in `/b/`. (cue: 🎠 *carousel*: the horses ride on all sides of the center pole)
 
 > `zagadulx vehahel hugem bedehal.`
 >
@@ -297,20 +295,20 @@ On a noun it is **`gebum`**: *Azawan, across the station, sits.* Ordinary `zebul
 >
 > "Cats sit around a train."
 
-Ordinary `zugel` is still *a carousel*. **`om`** *near* says only that the figure is close, not that it surrounds the landmark.
+As a plain noun, `zugel` is *a carousel*. **`om`** *near* says only that the person or thing is close, not that it surrounds the landmark.
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hazam` / `gazam`** | figure in the layer of two landmarks | *between* | `azal` *sandwich* | 🥪: the filling sits between two sides |
+| **`hazam` / `gazam`** | position between two landmarks | *between* | `azal` *sandwich* | 🥪: the filling sits between two sides |
 | **`hebum` / `gebum`** | path from one edge of the landmark to the far edge | *across* | `ebul` *bridge* | 🌉: a bridge spans the gap |
-| **`hugem` / `gugem`** | figure on all sides of one landmark | *around* | `ugel` *carousel* | 🎠: the horses ride on all sides of the pole |
+| **`hugem` / `gugem`** | on all sides of one landmark | *around* | `ugel` *carousel* | 🎠: the horses ride on all sides of the pole |
 
-**Compare with:** unhosted `/b/` is still the recipient. Numeric *from 3 to 5* is a [range](numbers-applied.md#ranges). *Like* is [simile](#similative). *For a hammer* as a swap is [exchange](#exchange). *On behalf of Alahen* is [proxy](#proxy). English *of* that is not a place is [of relations](#of-relations).
+**Compare with:** a `/b/` word with no relation word before it is the recipient. Numeric *from 3 to 5* is a [range](numbers-applied.md#ranges). *Like* is [simile](#similative). *For a hammer* as a swap is [exchange](#exchange). *On behalf of Alahen* is [proxy](#proxy). English *of* that is not a place is [of relations](#of-relations).
 
 ### Of relations (*part of*, *cup of*, *made of*, *from*) {#of-relations}
 <a id="noun-relations"></a>
 
-English *of* also names how one noun sits toward another (*a hand of Alahen*, *a teapot of tea*, *a house of wood*, *Alahen from the city*). Keep the same hosted pair as *like*: relation on `/ɡ/` (or `/h/` on the event), extra noun in `/b/` right after it. `/b/` is the *of*-complement (the whole, the filling, the stuff, or the origin), not a recipient. (cue: each root’s picture is in **Cue**)
+English *of* also names how one noun sits toward another (*a hand of Alahen*, *a teapot of tea*, *a house of wood*, *Alahen from the city*). Use the same hosted pair as *like*: the relation word on `/ɡ/` (or `/h/` on the event), and the extra noun in `/b/` right after it. The `/b/` word is what comes after *of* in English (the whole, the filling, the material, or the origin), not a recipient.
 
 > `zazawan dahadal gobom balahen vahahal.`
 >
@@ -336,7 +334,7 @@ English *of* also names how one noun sits toward another (*a hand of Alahen*, *a
 >
 > "Alahen of the city walks."
 
-On an event, the same roots are `/h/` (`zazawan vageval huwum buwul` *Azawan crafts of wood*; `zalahen vowogal hagum bezagal` *Alahen walks, originating from the city*). The same roots stay ordinary pictures under other letters (`zobol` *a bone*; `zahel` *a jar*; `zuwul` *wood*; `zagul` *a country*).
+On an event, the same roots take `/h/` (`zazawan vageval huwum buwul` *Azawan crafts out of wood*; `zalahen vowogal hagum bezagal` *Alahen walks, originating from the city*). As plain nouns, the same roots name ordinary things (`zobol` *a bone*; `zahel` *a jar*; `zuwul` *wood*; `zagul` *a country*).
 
 For *a piece of* a mass, put the substance first and `gozazom` right after it. With no `/b/`, the whole it was cut from is left open.
 
@@ -356,9 +354,14 @@ Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in
 | **`hagum` / `gagum`** | identity source / provenance | *from* (origin) | `agul` *country* | 🗾: a map of one country as where it comes from |
 | **`hozazom` / `gozazom`** | portion cut from a whole | *a piece of* / *a slice of* | `ozazol` *saw* | 🪚: the saw cuts a piece off |
 
-**Compare with:** plain *Azawan's* with no particular tie is the hook [`em`](hooks.md#genitive) (`zodogal em bazawan`). Ownership is `gegabem` + `/b/` ([joins](joins.md#scope-fence-p-join)). A [sakes](sakes.md) need on `/ɡ/` also means speaker possession. Place *in* is the hook `al`; path *from* is the hook `ul` ([locative relations](#locative-relations)). *A house like Azawan’s* is [simile](#similative) (`gumum`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`gehem`). A piece cut from a whole is `gozazom`: `gobom` is a part that belongs to the thing's structure (a bone of the body), `gozazom` is a piece taken off it (a slice of bread). Portion *of* a class is [percent](numbers-applied.md#percent-and-percentage-points). Associates are plural **-x**, not meronymy. Kind *origin* (`ROOTl#e-`) is [numeric derivation](numeric-derivation.md), not this token *from*.
+**Compare with:**
 
-
+- Plain *Azawan's*, with no particular tie, is the hook [`em`](hooks.md#genitive) (`zodogal em bazawan`). Ownership is `gegabem` + `/b/` ([joins](joins.md#scope-fence-p-join)). A need from [sakes](sakes.md) on `/ɡ/` also says the thing is the speaker's.
+- Place *in* is the hook `al`; path *from* is the hook `ul` ([locative relations](#locative-relations)).
+- *A house like Azawan’s* is [simile](#similative) (`gumum`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`gehem`).
+- `gobom` is a part that belongs to the thing's structure (a bone of the body); `gozazom` is a piece taken off it (a slice of bread).
+- A portion *of* a class is [percent](numbers-applied.md#percent-and-percentage-points). A person and their associates take plural **-x**, not *part of*.
+- *From* as the origin of a whole kind (`ROOTl#e-`) is [numeric derivation](numeric-derivation.md), not this *from*, which is about one particular thing.
 
 ### Social relations (*Azawan's friend*, *boss*) {#social-relations}
 
@@ -552,9 +555,9 @@ z-Ahaben | [g-exactly-like | b-Alahen]
 <a id="as-of-ledger"></a>
 <a id="as-of-bookmark"></a>
 
-English *as of Friday*, *would*, *was going to*, and *if he had* mix **when the event sits** with **whose “now”** leftover, climate, plan, and forecast are scored against.
+English *as of Friday*, *would*, *was going to*, and *if he had* mix two times: **when the event happens**, and **which “now”** the rest of the sentence is measured from (what is still left over, what used to be the pattern, what is planned, what is forecast). Call that second one *whose-now*.
 
-Write a hosted pair for that second now. Asserted whose-now (a real dated line in the books) is **`huhum`**. Unasserted whose-now (a placeholder you are not claiming) is **`huram`**. Put the snapshot in `/b/` immediately after. The default with no pair is speech-now. (cue: 📒 *ledger* stamps a dated line; 🔖 *bookmark* holds the place without stamping)
+Agazan keeps the two apart. With no extra marking, whose-now is **speech-now**, the moment you are speaking. To move it, write a hosted pair: **`huhum`** when you claim that moment as real (a dated entry in the record), **`huram`** when it is only a placeholder you are not claiming. Put the moment (the snapshot) in `/b/` immediately after. (cue: 📒 *ledger* stamps a dated line in the books; 🔖 *bookmark* holds the place without stamping)
 
 > `zalahen thamom huhum b_#22,7 vedabal.`
 >
@@ -568,7 +571,7 @@ Write a hosted pair for that second now. Asserted whose-now (a real dated line i
 >
 > "As of 22 July, Azawan is in a house." (the event is concurrent with that now)
 
-A later `/x/` clause is a new host. To keep the same books, write the **same overlay** with **-r** and no `/b/` (`huhur` / `hurar`). A new `/b/` replaces whose-now, including a switch of overlay. One host takes at most one *as-of* pair.
+The pair covers only its own clause. To keep the same whose-now in a following `/x/` clause, repeat the **same word** with **-r** and no `/b/` (`huhur` / `hurar`). A new pair with its own `/b/` replaces whose-now, whether it repeats the word or switches between `huhum` and `huram`. A clause (or a noun or adjective, below) takes at most one *as-of* pair.
 
 > `zalahen thamom huhum b_#22,7 vedabal. xazawan thamom huhur vowogal.`
 >
@@ -576,13 +579,28 @@ A later `/x/` clause is a new host. To keep the same books, write the **same ove
 >
 > "As of 22 July, Alahen had still left. Azawan had still walked — same books."
 
-`/h/` covers this clause. `/ɡ/` covers this noun (`guhum` *the tab as of Friday*). `/w/` covers the `/ɡ/` adjective immediately after the pair (`wuhum b_#22,7 gamadam`). `/h/`, `/ɡ/`, and `/w/` are different hosts, so a clause may carry a clause snapshot and an adjective snapshot at once. If the **verb** also scores against that now, the clause still needs `/h/` *as-of* (or resume).
+The role letter says what the snapshot applies to: `/h/` the whole clause, `/ɡ/` one noun (`guhum` *the tab as of Friday*), and `/w/` the `/ɡ/` adjective immediately after the pair (`wuhum b_#22,7 gamadam`). These are separate, so one clause may carry a clause snapshot and an adjective snapshot at once. A noun or adjective snapshot does not reach the verb: if the **verb** should also count from that now, the clause needs its own `/h/` *as-of* (or a resume).
 
-`/b/` is a clock or date digit-string, an event noun, **`barl`** plus the next sentence (that sentence *is* whose-now; the pair stays last), or extra-noun **-r**. It is never a signed offset such as *three hours ago*: that would date the event with no warrant, so an undated past event needs a [dated channel](knowing.md#dated-channel). The *as-of* word already hosts the date: do not also write spare `h_#22,7` for the same snapshot. Bare `h_#…` stays event-when ([time](numbers-applied.md#time)). Clock / *before* / *after* may sit beside *as-of*.
+The `/b/` after the pair can be:
 
-Do not put a bare person in `/b/` as “from Alahen’s now.” That is [proxy](#proxy) (`hadem`). Prefer `huhum barl zalahen vezebel`.
+- a clock time or date digit string
+- an event noun
+- **`barl`**, with the next sentence as whose-now (the pair then goes last)
+- extra-noun **-r**, which points back to a time already said (on a date, **-r** is written `=`: `b=_#22,7` is *that 22 July again*; see the example below where Alahen walks on 22 July)
 
-Once whose-now is set, a [forecast](knowing.md#forecast) offset (`bral`) counts **after** that now, [PLAN](intention.md#plan-predict) is **from** that now, [RESIDUE](knowing.md#residue) leftover is on **that** tally, and [FORMER](knowing.md#former-climate) is not **that stretch’s** climate. A bare verb is **concurrent** with that now. [MAY](knowing.md#may), [DECISION](intention.md#decision), [CAUSE](causation.md#cause), and every other stance still evaluate from speech-now; to move them too, use [stance as-of](#stance-as-of). Evidentials other than LIVE-at-snapshot are how *you* know at speech-now.
+It is never an offset from speech-now such as *three hours ago*: that would date the event without saying how you know the date, so an undated past event needs a [dated channel](knowing.md#dated-channel). The *as-of* word already carries the date, so do not also write a separate `h_#22,7` for the same snapshot. A bare `h_#…` with no pair dates the event itself ([time](numbers-applied.md#time)). A clock time, *before*, or *after* may sit beside an *as-of* pair.
+
+Do not put a bare person in `/b/` to mean “from Alahen’s now.” A person after `hadem` is [proxy](#proxy). To mean *as of when Alahen told it*, use **`barl`** and a sentence: `huhum barl zalahen vezebel`.
+
+Once whose-now is set, these count from it:
+
+- A [forecast](knowing.md#forecast) offset (`bral`) counts forward **from** that now.
+- [PLAN](intention.md#plan-predict) is planned **from** that now.
+- [RESIDUE](knowing.md#residue) is what is still left over **at** that now.
+- [FORMER](knowing.md#former-climate) means the pattern no longer held **at** that now.
+- A bare verb happens **at** that now.
+
+[MAY](knowing.md#may), [DECISION](intention.md#decision), [CAUSE](causation.md#cause), and every other stance still count from speech-now; to move them too, use [stance as-of](#stance-as-of). Evidentials, apart from LIVE at the snapshot, still say how *you* know at speech-now.
 
 > `zazawan zalahen zel wuhum b_#22,7 gamadam.`
 >
@@ -600,7 +618,7 @@ Once whose-now is set, a [forecast](knowing.md#forecast) offset (`bral`) counts 
 >
 > z-Azawan | [h-as-of.ledger | b-_22,7] | [h-before | b-departure] | v-sit | [in | b-house]
 >
-> "As of 22 July, Azawan is in a house before the leaving." (books and event-when are different jobs)
+> "As of 22 July, Azawan is in a house before the leaving." (whose-now and the event's own time are separate)
 
 > `zalahen vowogal ol b_#22,7. xalahen thamom huhum b=_#22,7 vedabal.`
 >
@@ -612,7 +630,7 @@ Once whose-now is set, a [forecast](knowing.md#forecast) offset (`bral`) counts 
 >
 > z-Alahen | th-RESIDUE | v-departure | [h-as-of.ledger | b-that-clause] | z-Alahen | v-tell
 >
-> "As of when Alahen told it, the departure still stood." (the telling sentence is whose-now, not leftover)
+> "As of when Alahen told it, the departure still stood." (the telling sets whose-now; it is not what is left over)
 
 > `zalahen thamom huhum b_#22,7 vedabal. xazawan thobam bral huram b_#23,7 vowogal.`
 >
@@ -620,9 +638,9 @@ Once whose-now is set, a [forecast](knowing.md#forecast) offset (`bral`) counts 
 >
 > "As of 22 July, Alahen had still left. From a 23 July placeholder, Azawan would walk, going by the pattern." (a new pair replaces whose-now)
 
-A finished inner clause does not stay open for a later resume in the main clause. Isolated `huhur` parses; write it only after an introduce of that overlay.
+An *as-of* pair inside a finished inner clause cannot be resumed later in the main clause. `huhur` on its own parses, but write it only after a clause that set whose-now with `huhum` and a `/b/`.
 
-**Compare with:** [*after*](dependents.md#dependent-clauses) **`henum`** and extra-noun **`ol`** *at* order or landmark events; they are not the books. [Causal *if*](causation.md#if) **`thoyem`** is speaker-now opportunity, not English *if he had* (`huram`). [NOTIONAL](knowing.md#notional) is play, not a bookmark now. [Scope islands](joins.md#scope-islands-join) bound join scope; they do not persist *as-of*. Repeat the evidential and/or resume *as-of* on the next clause.
+**Compare with:** [*after*](dependents.md#dependent-clauses) **`henum`** and extra-noun **`ol`** *at* place the event in time or next to a landmark; they do not set whose-now. [Causal *if*](causation.md#if) **`thoyem`** is a condition judged at speech-now, not English *if he had* (`huram`). [NOTIONAL](knowing.md#notional) is pretend, not a placeholder now. [Scope islands](joins.md#scope-islands-join) limit how far a join reaches; they do not carry an *as-of* forward. On the next clause, repeat the evidential, resume the *as-of*, or both.
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -685,7 +703,7 @@ Changing your mind is then a change of now, not a contradiction: *I was fairly s
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**. The hosted pair names whose now. Resume is **-r** with no `/b/`.
+Short drills for Advanced. Try each item before opening **Show answer**. The hosted pair names whose-now. Resume is **-r** with no `/b/`.
 
 **Setting:** a records room
 
@@ -832,5 +850,3 @@ z-Azawan | th-MAY | v-walk | [th-as-of.ledger | b-departure]
 
 *At the leaving, I thought Azawan might walk.*
 :::
-
-

@@ -3,11 +3,11 @@
 
 ## Beginner {#beginner}
 
-Use these words when you want to say **when** a claim counts: *only when raining*, *never*, *always*. They take the adverb letter **`h`** (or **`w`** immediately before the adjective they limit) plus the same vowels and endings you already use on [joins](joins.md). Time or case words sit **before** the restrictor; together they limit the verb claim (or that adjective) instead of adding another manner.
+Use these words when you want to say **when** a claim counts: *only when raining*, *never*, *always*. They take the adverb letter **`h`** (or **`w`** immediately before the adjective they limit) plus the same vowels and endings you already use on [joins](joins.md). Time or case words sit **before** the restrictor. Together they limit when the verb's claim (or that adjective) holds; they do not describe how it happens.
 
 ### Only when / never (`hal`)
 
-A restrictor names the **occasions** (times or cases) in which the verb claim is true. Put those occasion words immediately **before** the restrictor, in the adverb slot (`/h/`); the restrictor sits last and closes the row from the right, the way a join closes a list. Closed **-l** means this is the full set of times you stand behind. (cue: **a** ≈ add, an inventory of times.)
+To say *only when raining*, list the **occasions** (times or cases) when the verb's claim is true, then end the list with the restrictor **`hal`**. Everything goes in the adverb slot (`/h/`): occasion words first, the restrictor last, the way a join word ends a list. Closed **-l** means these are all the times you stand behind. (cue: **a** ≈ add, adding up the times.)
 
 > `zazawan vowogal herehel hal.`
 >
@@ -15,7 +15,7 @@ A restrictor names the **occasions** (times or cases) in which the verb claim is
 >
 > "Azawan walks only when raining."
 
-With **no** occasion listed, the inventory is empty, so the claim never counts: bare **`hal`** is *never*. (cue: empty **a** ≈ add inventory plus closed **-l**.)
+With **no** occasion before it, the list of times is empty and closed, so the claim holds at no time: bare **`hal`** is *never*. (cue: **a** ≈ add, but nothing added, and **-l** closes the list.)
 
 > `zalahen vowogal hal.`
 >
@@ -23,7 +23,7 @@ With **no** occasion listed, the inventory is empty, so the claim never counts: 
 >
 > "Alahen never walks."
 
-**Compare with:** two manner adverbs in a row with no restrictor still both apply (*quickly and quietly*). English *and* there just stacks descriptions on the same walk; it does not pick *when* the walk counts. A restrictor answers **when the verb claim counts**. Packaging members as one list still uses a [join](joins.md). English *the guard who sits* names which person ([which person or thing](dependents.md#which-noun)); it is not a restrictor.
+**Compare with:** English *the guard who sits* picks out which person ([which person or thing](dependents.md#which-noun)); that is not a restrictor. Bundling items into one list uses a [join](joins.md). Two manner adverbs in a row, with no restrictor, both describe the walk (*quickly and quietly*): they say how it happens, not when it counts.
 
 > `zazawan vowogal hadehum halahom.`
 >
@@ -33,7 +33,7 @@ With **no** occasion listed, the inventory is empty, so the claim never counts: 
 
 ### Always (`hual`)
 
-To say the verb claim counts at every time, or at every time except some listed ones, use **`hual`**. Open **`huam`** leaves the exceptions open, as **-m** leaves any list open: *always, as far as I know*. English usually says that as *usually* or *as a rule*. Bare **`hual`** is *always*; with occasion words before it, those times are the exceptions (*always except when…*). (cue: **u** ≈ undo then **a** ≈ add.)
+To say the verb's claim holds at every time, use **`hual`**. Bare **`hual`** is *always*. With occasion words before it, those times are the exceptions (*always except when…*). Open **`huam`** leaves room for exceptions you have not listed, as **-m** leaves any list open: *always, as far as I know*, which English usually says as *usually* or *as a rule*. (cue: **u** ≈ undo then **a** ≈ add.)
 
 > `zahaben vezehel hual.`
 >
@@ -55,9 +55,9 @@ To say the verb claim counts at every time, or at every time except some listed 
 
 ### Sometimes / anytime / some other time
 
-You can name *sometimes*, *anytime*, or *some other time* without listing a content word such as *rain*. Use ending **-r** on the restrictor (`har` / `hor` / `hur`): **-r** names some member of the time inventory without spelling that member. Nothing is required before it. *Anytime* (`hor`) means any one particular time will do, not *at all times* (that is *always*, `hual`).
+To say *sometimes*, *anytime*, or *some other time* without naming the occasion (no *rain*, no *night*), put ending **-r** on the restrictor: `har`, `hor`, `hur`. **-r** points at some time without saying which, so nothing needs to come before it. *Anytime* (`hor`) means any one particular time will do, not *at all times* (that is *always*, `hual`).
 
-English *sometimes* is the usual match next to *never* / *always*. It still only says there is **some** unspecified occasion (the same job *something* has on a [join](joins.md)), not a separate “many times” count.
+*Sometimes* is the usual English for `har`, alongside *never* and *always*. It says only that there is **some** such occasion, as *something* does on a [join](joins.md). It does not mean *often*.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -77,7 +77,7 @@ English *sometimes* is the usual match next to *never* / *always*. It still only
 >
 > "Ahaben walks anytime."
 
-**`hur`** names an occasion **outside** the times already in play: leftover, not the listed ones, and with nothing listed, leftover of the times already under discussion. Bare **`hur`** only says some leftover occasion exists (*at some other time*). It does not say the claim holds at leftover times in general.
+**`hur`** names an occasion **outside** the times already in play. With occasion words before it, that is a time other than the listed ones. With none, it is a time other than the ones the conversation is already about, as in the reply below. Bare **`hur`** only says some such other occasion exists (*at some other time*). It does not say the claim holds at other times in general.
 
 > `yol zahaben vowogal herehel.`
 >
@@ -93,7 +93,7 @@ English *sometimes* is the usual match next to *never* / *always*. It still only
 
 ### On the following adjective (`/w/`)
 
-The same restrictor vowels and endings can limit **only the host you are about to write**, not the whole verb claim. Spell them with letter **`w`** instead of **`h`**. The host is the next adjective. Occasion words that belong to that host sit immediately before the restrictor and also take **`w`**. `/h/` still limits the clause.
+To say *never sleepy* or *sometimes sleepy*, limit only the adjective, not the whole sentence. Use the same restrictor vowels and endings with letter **`w`** instead of **`h`**, right before the adjective. Occasion words for that adjective also take **`w`** and sit immediately before the restrictor. An `/h/` restrictor, by contrast, limits the whole clause.
 
 > `zazawan wal gezebul.`
 >
@@ -136,11 +136,11 @@ The same restrictor vowels and endings can limit **only the host you are about t
 | `/h/` | limits the clause | *when the verb claim counts* | **h** starts *how* / *when* / *where* |
 | `/w/` | same map on the next adjective | *never sleepy* | **w** ≈ with (stuck to that host) |
 
-**Compare with:** extra detail on an adjective is still ordinary `/w/` from [clause](clause.md#adjective-detail-w). A restrictor on `/w/` answers **when that adjective counts**. To mark a [label](predication.md#label-scope) as this episode, a practiced role, this pair, or a type, put the restrictor (and its occasion words) on `/w/` immediately before that scoped `/ɡ/` word. Scope is the kind of claim; the restrictor is the occasions.
+**Compare with:** ordinary `/w/` adds extra detail to an adjective ([clause](clause.md#adjective-detail-w)). A restrictor on `/w/` says **when that adjective holds**. When a [label](predication.md#label-scope) is marked as this episode, a practiced role, this pair, or a type, put the restrictor (and its occasion words) on `/w/` immediately before that scoped `/ɡ/` word. The scope says what kind of claim the label makes; the restrictor says on which occasions it holds.
 
 ### Listed occasions (open)
 
-Open **-m** leaves other occasions possible: *when raining, among other times*, not *only when*. Each listed piece is a simple adverb (or `/w/` adjective-limiter) content word; every piece and the restrictor share the same role letter. Bare open **`ham`** leaves the occasions open: *never, as far as I know*. (cue: **a** ≈ add; **ua** ≈ undo then add.)
+To say *when raining, among other times*, end the list with open **`ham`** instead of closed **`hal`**. Open **-m** leaves room for occasions you did not list, so the claim no longer means *only when*. Each listed occasion is one simple content word, and every occasion takes the same role letter as the restrictor (`/h/`, or `/w/` before an adjective). Bare **`ham`** is *never, as far as I know*. (cue: **a** ≈ add; **ua** ≈ undo then add.)
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -319,7 +319,7 @@ z-Alahen | v-swim | h-rain | h-always-except
 
 ### Occasions vs a dependent *when*
 
-English *when* / *if* can name a **following sentence** (*if Azawan walks*). Write that as a pole word plus extra noun: `/h/` (*when*) or `/th/` (*if*) plus `/b/` [**`barl`**](dependents.md#dependent-clauses). The main sentence stops after **`barl`**; the next sentence is the content. Restrictors still list **phrase** times or cases immediately before the restrictor. Use a restrictor when the occasions are words in the adverb slot; use **`barl`** when the occasion is another full clause.
+English *when* / *if* can introduce a whole **sentence** as the occasion (*if Azawan walks*). Write that with a pole word, `/h/` (*when*) or `/th/` (*if*), plus `/b/` [**`barl`**](dependents.md#dependent-clauses). The main sentence stops after **`barl`**; the next sentence is the occasion. Use a restrictor when each occasion is a word in the adverb slot; use **`barl`** when the occasion is a full clause.
 
 > `zahaben vezehel thoyem barl zazawan vowogal.`
 >
@@ -327,14 +327,14 @@ English *when* / *if* can name a **following sentence** (*if Azawan walks*). Wri
 >
 > "Ahaben sings if Azawan walks."
 
-Each listed restrictor occasion is a simple `/h/` or `/w/` content word, or a complex unit (`/h/` plus `/b/`, or contiguous `/w/` material).
+A listed restrictor occasion can also be a longer unit: an `/h/` word with its `/b/`, or a run of adjacent `/w/` words.
 
 **Compare with:** *only when raining* is a restrictor list (`herehel hal`). *If Azawan walks* is the stand-in pattern above.
 
 ### More occasions {#more-occasions}
 <a id="defined-core-full"></a>
 
-Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *sometimes* / *anytime* / *some other time* (`har` / `hor` / `hur`). The rest of the same vowel map names exclusive, inclusive, *not when*, ranked, and leftover readings. `/w/` uses that **same** map on the next adjective or prefix-less hook (`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`, and the rows below). One restrictor chain is one `/h/` unit (or one `/w/` stack immediately before its host).
+Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *sometimes* / *anytime* / *some other time* (`har` / `hor` / `hur`). The rest of the same vowel map names exclusive, inclusive, *not when*, ranked, and leftover readings. `/w/` uses that **same** map on the next adjective or prefix-less hook (`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`, and the rows below). The occasion words and their restrictor count as one `/h/` unit (or, on `/w/`, one run of words immediately before the adjective or hook they limit).
 
 > `zazawan vowogal herehel hanadal hol.`
 >
@@ -363,7 +363,7 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 
 #### Ranked (with listed occasions)
 
-Closed **`hel`** ranks **when** it matters. **`hal`** still means *only when* these times, with no priority among them.
+Closed **`hel`** ranks the listed occasions: the first one listed is the preferred time. Plain **`hal`** means *only when* these times, with no ranking among them.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -599,7 +599,7 @@ z-Alahen | [w-rain | w-night | w-when-one | g-sleepy]
 
 z-Alahen | v-climb | h-ice | h-when-last.open
 
-*Alahen would rather not climb when there is ice.*
+*Alahen climbs as a last resort when there is ice, among other occasions.*
 :::
 
 ## See also

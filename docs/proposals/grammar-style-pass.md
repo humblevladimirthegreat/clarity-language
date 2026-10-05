@@ -67,7 +67,7 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - [x] **Batch 2.6:** `joins` (8.5k)
 - [x] **Batch 2.7:** `questions` (5.2k)
 - [x] **Batch 2.8:** `hooks` (7.7k)
-- [ ] **Batch 2.9:** `restrictors` (3.3k), `relations` (5.4k)
+- [x] **Batch 2.9:** `restrictors` (3.3k), `relations` (5.4k)
 - [ ] **Batch 2.10:** `spans` (4.6k)
 - [ ] **Batch 2.11:** `numbers` (10.9k)
 - [ ] **Batch 2.12:** `comparatives` (5.5k), `causation` (2.9k)
@@ -202,6 +202,19 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - Compare-with pointers to later pages are kept, since each answers an English form the learner reaches for here: proxy (`relations`), role compounds (`roles`), emotion compose and sakes (`sakes`), viewpoint laterals (`roles`), cite spans (`spans`), join-relations (`join-across-roles`), ranges (`numbers-applied`), and the `/w/` restrictor link (`restrictors`).
 - Resolved after review: the Discourse **-m** grid said only *… and maybe more*. It now has a one-line lead (**-m** marks this sentence as one of several you could say there) and a concrete English reading per row: `am …` *Among other things*, `em …` *To put it one way*, `om …` *Instead, for instance*, `um …` *Except, among other exceptions*. No other page used these forms, and the morph glosses (`additionally.open`, …) are unchanged.
 - Parallel chains also carries the verb-pair example (*walk instead of run*), which is about same-role hooks generally, not chains. Moving it would split the section's examples; left for Phase 3.
+
+### 2026-10-05: Batch 2.9 (`restrictors`, `relations`)
+
+- **`restrictors`:** the *only when* lead is job-first (*only when raining*, then occasions + **`hal`**), and *the row from the right* became "the way a join word ends a list". Bare **`hal`** no longer leans on an undefined *inventory*; its cue says what it pictures. The first Compare-with now ends on *quickly and quietly*, right before that example, and drops "still both apply". *Always* now gives bare **`hual`**, then exceptions, then open **`huam`** (it opened with the open form). *Sometimes* lead: *member of the time inventory* and *not a separate "many times" count* became plain English. **`hur`** paragraph split into the with-occasions and no-occasions readings. `/w/` lead is job-first (*never sleepy*); *host* and the "`/h/` still" fence are gone. The `/w/` Compare-with spells out the scope-vs-restrictor slogan. Open **`ham`** lead is job-first. Intermediate: *Occasions vs a dependent when* no longer contrasts *phrase* times; the complex-unit sentence, the "one restrictor chain" sentence, and the ranked **`hel`** lead are plain English.
+- **`relations`:** the page lead says what a relation word is (a preposition with its own root, on `/h/` / `/ɡ/`, completed by `/b/`). The Beginner *like* material had no H3 under the H2; it now sits under **Like (*resembles*)** `{#like-resembles}` (the `similative` and `like` ids are unchanged). Every "Ordinary `zX` is still …" became "As a plain noun …", and every "unhosted `/b/` is still the recipient" became "a `/b/` word with no relation word before it is the recipient". Replaced *theme*, *consideration*, *whose agency*, *finished pair*, *figure*, *layer*, *host*, *of-complement*, *off the real tally*, *shared height*, *meronymy*, and *token from*. The *of relations* Compare-with (one long paragraph) is now a bullet list. *crafts of wood* → *crafts out of wood*. Advanced *as-of*: the lead now names the two times and glosses *whose-now* and *speech-now* at first use; the `/b/` options and the "once whose-now is set" effects are lists; *a new host*, *the same overlay*, *with no warrant*, *spare `h_#22,7`*, *stays event-when*, *scores against*, and the *books* / *climate* / *bookmark* pictures in running prose are replaced (the 📒 / 🔖 cues stay). The deferred "write it only after an introduce of that overlay" (batch 1.1) now says to write `huhur` only after a clause that set whose-now with `huhum` and a `/b/`. Removed stray blank lines.
+
+**Deferred / kept:**
+- `relations` *like*: the [kin](numbers-applied.md#kin-generations) pointer, the *exclusively for* [join-relation](join-across-roles.md#join-relations) Compare-with, the [role compound](roles.md#role-compounds) for *the other party* in Social relations, and the many `knowing` / `intention` / `causation` links in *as-of* all point later on the path. The first three answer an English form the learner reaches for here; *as-of* is Advanced and is built from those moods. Kept for Phase 3.
+- `relations` As-of translations keep *had still left* and *— same books* (quoted English translations).
+- `restrictors` tables keep *time inventory* in the Use column (telegraphic tables are allowed).
+- Resolved after review: the *as-of* `/b/` list now says what extra-noun **-r** looks like on a date (`=`, so `b=_#22,7` is *that 22 July again*) and points at the example that uses it. No form changed.
+- Resolved after review: `restrictors` Intermediate Agazan → English #9 (`hazahol huem`) answered *would rather not climb when there is ice*. It now reads *Alahen climbs as a last resort when there is ice, among other occasions*, matching the table.
+- `say-amounts.md` (out of scope) links `restrictors.md#sometimes--anytime--some-other-time` with a double dash; the build accepts it, so no change.
 
 ## Questions for the editor
 
