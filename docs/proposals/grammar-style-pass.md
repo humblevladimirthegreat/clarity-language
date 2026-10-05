@@ -22,7 +22,7 @@ A session starts with something like "do the next batch." The session then:
 3. For a Phase 2 batch, reads the whole page before editing it, and skims the Beginner sections of pages earlier in the path when it needs to know whether a term has already been glossed.
 4. Edits the page(s), then runs `npm run build` from the repo root and fixes anything it reports.
 5. Ticks the batch's checkbox, and appends a dated entry under [Batch log](#batch-log): pages touched, the main kinds of change, and anything deferred.
-6. Records every suspected grammar problem (a rule that looks wrong, a missing form, a contradiction between pages) under [Questions for the editor](#questions-for-the-editor). It does **not** fix them.
+6. Records every suspected grammar problem (a rule that looks wrong, a missing form, a contradiction between pages) under [Questions for the editor](#questions-for-the-editor), each with a **recommendation**: the fix it would make and why, judged by the effect on learners. It does **not** apply the fix.
 7. Stops. It does not start the next batch and does not commit unless asked. If asked to commit, the message ends with `[skip-cd]`.
 
 ### Ground rules for every batch
@@ -64,7 +64,7 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - [x] **Batch 2.3:** `speech-moves` (2.5k), `dependents` (5.4k)
 - [x] **Batch 2.4:** `pronouns` (7.3k)
 - [x] **Batch 2.5:** `plurality` (2.9k), `predication` (3.8k)
-- [ ] **Batch 2.6:** `joins` (8.5k)
+- [x] **Batch 2.6:** `joins` (8.5k)
 - [ ] **Batch 2.7:** `questions` (5.2k)
 - [ ] **Batch 2.8:** `hooks` (7.7k)
 - [ ] **Batch 2.9:** `restrictors` (3.3k), `relations` (5.4k)
@@ -164,8 +164,24 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - `plurality` Associate-set resolution uses the *except* hook **`ul`** from `hooks`; kept, since the example needs it.
 - Resolved after review: `predication` Intermediate Agazan → English #2 answered *Alahen* for `zazawan`; now *Azawan is always a craftsperson.*
 
+### 2026-10-05: Batch 2.6 (`joins`)
+
+- **Beginner:** the intro no longer says the vowel series was "just mapped"; it now says the join vowel uses the same cues as the speech-act words. And-lists glosses closed **-l** / open **-m** (the page used *closed* / *open* later without a gloss) and drops "**-l** is ordinary English". "A joined slot is one filler" now says the list fills one role. Right-close fence: "One join finishes the row" became plain English, and a stray blank line went. The Everything (`ua`) and Unspecified member (`-r`) leads were rewritten (job first; *single-vowel* → *one vowel*, with **ua** as the counterexample). Recap table: *inventory join* → *add the items*. Beginner forms lead reworded. The Clause joins grouping paragraph was split into three (flat vs grouped, putting a group last, after a stand-in). The clause-standalone `xal` / `xar` forms are no longer called *stand-ins*, which `dependents` uses for `darl` / `barl`.
+- **Intermediate:** the Rank joins lead is now one paragraph naming the tie **ae**. Invert: *invert map* replaced, and *SHARED* is glossed at its first use on the path (the old line was telegraphic: "Optional is only **`…om`**"). Respectively: the *row* picture is gone. Rank standalone: "Neither says why" and "a shrug" spelled out. Distribution lead now says how to write the denial. *the talk* → *the conversation*. The **`SAME`** sentence was reworded. *Not the same job as* became a plain sentence (as in `plurality`). People in general lead: "sit between …" and "pronoun-sized" replaced. SHARED after the join now names SHARED, and *every member together* became *each member* (*together* is the collective **-x** reading). "Further matching-role heads", "stays an extra noun", and "one join after every member" (fence nesting) reworded.
+- **Advanced:** the Scope islands lead now gives the job and names the island. *bound only join and `/h/` scope*, *titles the package*, *Join vowels stack at most two letters*, *Floating `/h/`*, *Verb-chain `/h/` scope:*, and *clause body* replaced. Removed two doubled blank lines.
+- **Obvious slip fixed:** Intermediate Agazan → English #7 (`… zel`, a rank join) answered *wine first, then the flower, then the ring*, which is the sequence (**oe**) reading. It now reads *wine matters more than the flower, and the flower more than the ring*.
+- **Resolved after review:** single-item `zel` no longer has *X first* as a second answer in Beginner English → Agazan #7 and Agazan → English #6. *X first* belongs to `…em` (and stock `…en`), as the Intermediate table says.
+- **Resolved after review:** a **u** join after a closed list now denies the list as a whole (single-item *not X* with the list as X). `val vul` is *not both* and `vol vul` is *not exactly one*. Before, it denied each item and kept the list's vowel, which duplicated plain *neither* and made `vol vul` say the same as `vol`. The section is retitled *Exclusivity and denying a whole list* (no links pointed at the old slug) and gains a three-row contrast table. Intermediate Agazan → English #5 now answers *not both kiss and punch*. The parser already nested the joins and glosses each one as *not*, so no code changed. `AGENTS.md` (the `joins.md` row) and `meta/design-decisions.md` (Denying a list) are updated.
+
+**Deferred / kept:**
+- Clause joins: the except-hook pointer (`hooks`) previews a later page; kept, since it answers *everything except that …*.
+- Universals: the [role compound] pointer for *whoever* (`roles`), the [channel] pointer (`knowing`), and the [cause] note on `zuan` (`causation`) preview later pages. Kept as inventory for Phase 3.
+- SHARED after the join: the [sakes] Compare-with previews `sakes`. Kept.
+- Invert and Respectively use SHARED before its own H3 later on the page. It is now glossed at first use; moving the H3 earlier would be a structural change, left for Phase 3.
+- Reference tables lead "Most other phrase joins need two or more items" is unclear next to the single-item and standalone tables. Left alone, because rewording it would mean guessing which joins it means.
+
 ## Questions for the editor
 
-<!-- Suspected grammar problems found during the pass. Not fixed by the pass. One bullet each: page, section, issue. -->
+<!-- Suspected grammar problems found during the pass. Not fixed by the pass. One bullet each: page, section, issue, then **Recommendation:** the suggested fix and why. -->
 
-- `numbers.md`, pronunciation rows and the shorthand-to-spelled table: spelled number words are in italics (`🔊 *grarel*`), and the test suite requires that. This conflicts with doc-style's "Agazan forms in backticks, not italics", and retie-safe writing says retie never rewrites italics. Spelled numbers contain no content roots, so retie risk is low. Should the pronunciation convention (and its check) move to backticks?
+- `numbers.md`, pronunciation rows and the shorthand-to-spelled table: spelled number words are in italics (`🔊 *grarel*`), and the test suite requires that. This conflicts with doc-style's "Agazan forms in backticks, not italics", and retie-safe writing says retie never rewrites italics. Spelled numbers contain no content roots, so retie risk is low. Should the pronunciation convention (and its check) move to backticks? **Recommendation:** yes. Move the pronunciation slot and its test to backticks, so every Agazan form on the page follows one rule, and the build's parse check covers the spelled words too.

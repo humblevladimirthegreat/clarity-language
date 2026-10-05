@@ -124,3 +124,7 @@ Only the six standard stacks exist (`ao` `ua` `uo` `ae` `oe` `ue`). A reversed o
 ### Experiencer adjectives
 
 No adjective for someone else's feeling: it would bypass the holder warrant. A noun before a lone feeling is an existence clause, so `zalahen thulothuruor` is *anxious that Alahen is here*. Someone else's objectless feeling goes through a holder (`thulothuruor thunemalahen`).
+
+### Denying a list
+
+A **u** join after a closed list denies the list as a whole: it is single-item *not X*, with the list as X (`val vul` *not both*). The rejected reading denied each item and kept the list's vowel. It made `val vul` a second *neither*, it made `vol vul` say the same as plain `vol`, and it left *not both* with no form.
