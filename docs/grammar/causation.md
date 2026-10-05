@@ -371,7 +371,7 @@ On `/w/` (`wegem`), right before an adjective, CAUSE applies only to that adject
 >
 > [z-Azawan | [w-CAUSE | g-exertion]] | v-walk
 >
-> "Azawan walks, exerted — that is how the mechanism works."
+> "Azawan walks, exerted, that is how the mechanism works."
 
 **Compare with:** *because* / *if* name the condition (`thevem` / `thoyem`). CAUSE says that the link is the mechanism.
 

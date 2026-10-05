@@ -317,7 +317,7 @@ English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several vie
 >
 > z-Azawan | d-book | v-present | b-Alahen
 >
-> "Azawan gives Alahen a book." — Alahen gets it
+> "Azawan gives Alahen a book." (Alahen gets it)
 
 > `zazawan varadal hehem bamol.`
 >
@@ -1049,7 +1049,7 @@ These three English nouns each hide two jobs. *Role* is the function someone pla
 >
 > z-Alahen | g-agent-x-teach-th-role
 >
-> "Alahen is a teacher." — that is his role
+> "Alahen is a teacher." (that is his role)
 
 **Compare with:** a street address is an ordinary named place (**-n**), with no separate form.
 

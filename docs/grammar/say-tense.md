@@ -78,13 +78,13 @@ English *has left* mixes three ideas. Choose the one you mean.
 >
 > z-Alahen | th-RESIDUE | v-departure
 >
-> "Alahen has left, and it still counts." — the outcome is on the books
+> "Alahen has left, and it still counts." (the outcome is on the books)
 
 > `zalahen hoham vedabal.`
 >
 > z-Alahen | h-already | v-departure
 >
-> "Alahen has already left." — the change has come
+> "Alahen has already left." (the change has come)
 
 > `zazawan hoham vezewel har.`
 >
@@ -223,7 +223,7 @@ English *used to walk* is a pattern that is no longer today's report: **`hual`**
 >
 > z-Azawan | h-always | v-tell | th-FORMER
 >
-> "Azawan used to tell." — a former pattern, not today's
+> "Azawan used to tell." (a former pattern, not today's)
 
 For *would* in a condition (*if Alahen swam, Azawan would walk*), see [remote and unreal conditions](say-reasons.md#remote-unreal).
 
@@ -256,7 +256,7 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 >
 > z-Alahen | th-MAY | v-departure
 >
-> "Alahen may leave." — could be
+> "Alahen may leave." (could be)
 
 > `zazawan vowogal thegom.`
 >
@@ -355,7 +355,7 @@ For *should have*, date the ought with [stance as-of](relations.md#stance-as-of)
 >
 > z-Azawan | th-PERMIT-granted | [v-walk | v-not]
 >
-> "Azawan doesn't have to walk." — not walking is allowed
+> "Azawan doesn't have to walk." (not walking is allowed)
 
 **Compare with:** requirement reports a demand, which may be someone else's; **`yel`** is you telling the listener. Requirement with a denied act (`zazawan thumem vowogal vul`) is *Azawan is required not to walk*, which is *mustn't*, not *doesn't have to*.
 

@@ -425,7 +425,7 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 >
 > [z-person-x | th-PATTERN | z-rank/more | g-amount]
 >
-> "There is a crowd." — more people than the usual amount
+> "There is a crowd." (more people than the usual amount)
 
 > `zazawan gobom bahodonx vowogal.`
 >
@@ -442,7 +442,7 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 
 Everyday measure uses the **unit metaphor** on the stock roots above (`bezezem gradul`). When you cite the **conventional SI name** as a titled standard (*the meter*, *the pascal*), use **-n** on that unit root ([named handles](word-endings.md#named-n-beginner)). Resume a prior unit phrase with **-r** on the same root (`bezezer gradul` after `bezezem gradul` is on the table).
 
-**Common derived (optional)** — unit metaphor on a dedicated root; related **quantity** stays on the original row:
+**Common derived (optional)**: unit metaphor on a dedicated root; related **quantity** stays on the original row:
 
 | Unit | Unit root (metaphor) | Example | Quantity (unchanged) |
 |------|----------------------|---------|----------------------|
@@ -487,7 +487,7 @@ Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftove
 
 **Needs:** [Ordinals](numbers.md#ordinals)
 
-When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](numbers.md) (`g#N`) — not a closed overlay. *Problem* and *solution* take the published **-m** senses; *goal* is already the **-l** literal. Prefer at least **`grewol`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
+When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](numbers.md) (`g#N`), not a closed overlay. *Problem* and *solution* take the published **-m** senses; *goal* is already the **-l** literal. Prefer at least **`grewol`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
 
 > `zazawan zegehum gredul vezebel.`
 > z-Azawan | [z-solution | g-2nd] | v-tell
@@ -504,7 +504,7 @@ When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*)
 
 **Recipe:** `zehegom grewol` / `zegehum gredul` / `zogol grewol`
 
-Unnumbered `zehegom` is just *a problem*, not a candidate in a set — write **`g#N`** when brainstorming. `-l` on the first two roots is still the picture (`zehegol` *a puzzle piece*; `zegehul` *a key*; `vegehul` *to unlock*). Reframing the **same** situation is different wording of one frame, not a second digit.
+Unnumbered `zehegom` is just *a problem*, not a candidate in a set, write **`g#N`** when brainstorming. `-l` on the first two roots is still the picture (`zehegol` *a puzzle piece*; `zegehul` *a key*; `vegehul` *to unlock*). Reframing the **same** situation is different wording of one frame, not a second digit.
 
 **Compare with:** discourse *point N:* uses free **`x#N`** ([number as discourse](numbers.md#number-as-discourse-marker-by-marker)), a continue. Numbered alternatives are problem / solution / goal nouns plus **`g#N`**. Clause *so that* is [**`hogom`**](dependents.md#so-that), not **`ogol`**.
 

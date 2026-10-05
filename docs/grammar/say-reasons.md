@@ -114,25 +114,25 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 >
 > z-Azawan | v-tell | th-relatedness-motive-any-term
 >
-> "Azawan's reason for telling is relatedness." — he justifies it as care for the tie
+> "Azawan's reason for telling is relatedness." (he justifies it as care for the tie)
 
 > `zazawan vowogal hogom barl zalahen vehahel.`
 >
 > z-Azawan | v-walk | [h-so-that | b-that-clause] | z-Alahen | v-sit
 >
-> "Azawan walks so that Alahen sits." — the purpose of the walk
+> "Azawan walks so that Alahen sits." (the purpose of the walk)
 
 > `zazawan vedabal thevel barl zalahen vezebel.`
 >
 > z-Azawan | v-departure | [th-because.fault | b-that-clause] | z-Alahen | v-tell
 >
-> "Alahen is to blame for Azawan's leaving." — the telling broke a norm
+> "Alahen is to blame for Azawan's leaving." (the telling broke a norm)
 
 > `thanathumam thevel barl zSELFn vezebel.`
 >
 > th-relatedness-unmet-modifiable-INTERNAL-FLOWING | [th-because.fault | b-that-clause] | z-SELF | v-tell
 >
-> "I feel guilty for telling." — a cost to a tie, held inside, and my telling broke a norm
+> "I feel guilty for telling." (a cost to a tie, held inside, and my telling broke a norm)
 
 What makes the feeling guilt is the fault pole on **your own** act. The feeling word alone says only that a tie is under strain, the same word as *hurt*. With the because pole and someone else's act, the same feeling is *hurt*:
 
@@ -182,7 +182,7 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 >
 > z-Alahen | th-DECISION-modifiable | v-walk | [th-CAUSE | b-Azawan]
 >
-> "Azawan persuades Alahen to walk." — Alahen has decided, and can still change that
+> "Azawan persuades Alahen to walk." (Alahen has decided, and can still change that)
 
 > `zazawan vowogal hogom burl zalahen vedabal.`
 >
@@ -259,7 +259,7 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 >
 > z-Azawan | v-walk | th-relatedness-motive-any-term
 >
-> "Azawan walks for relatedness." — that is the motive
+> "Azawan walks for relatedness." (that is the motive)
 
 > `thozotham.`
 >
@@ -343,7 +343,7 @@ English *If Alahen swam, Azawan would walk* (past-tense *if*) says the condition
 >
 > z-Azawan | v-walk | [th-if | b-that-clause] | z-Alahen | th-unlikely | v-swim
 >
-> "If Alahen swam, Azawan would walk." — Alahen swimming is unlikely
+> "If Alahen swam, Azawan would walk." (Alahen swimming is unlikely)
 
 When the condition is known to be false (*If Alahen had left…*), keep the bookmark recipe from [factivity](#factivity) and add *suppose* **`thavor`** inside the dependent. That marks the departure as imagined, not something that happened.
 
@@ -351,7 +351,7 @@ When the condition is known to be false (*If Alahen had left…*), keep the book
 >
 > [z-door | g-locked] | th-RESIDUE | [th-INFERRED | b-later] | [h-as-of.bookmark | b-that-clause] | z-Alahen | th-NOTIONAL-suppose | v-departure
 >
-> "If Alahen had left, the door would still be locked." — Alahen did not leave
+> "If Alahen had left, the door would still be locked." (Alahen did not leave)
 
 #### Epistemic *because* {#epistemic-because}
 
@@ -432,13 +432,13 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 >
 > z-book | g-competence-met-any-term
 >
-> "My book is useful." — it helps me get things done
+> "My book is useful." (it helps me get things done)
 
 > `zumel wamethal gobum.`
 >
 > z-memo | [w-purpose-met-lasting | g-stimulus]
 >
-> "The memo is important." — it matters for the long run
+> "The memo is important." (it matters for the long run)
 
 > `zazawan vowogal thanatham balahen.`
 >
@@ -450,7 +450,7 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 >
 > [z-memo | z-speech | z-rank/more | g-purpose-met-lasting]
 >
-> "The memo is more important than the talk." — it matters more for the long run
+> "The memo is more important than the talk." (it matters more for the long run)
 
 > `zazawan zalahen zel gezehel.`
 >
@@ -582,13 +582,13 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 >
 > z-Azawan | th-LIVE | [h-as-of.ledger | b-_22,7] | v-walk
 >
-> "Azawan is walking — we're there on 22 July."
+> "Azawan is walking, we're there on 22 July."
 
 > `zalahen thevom huhum b_#22,7 thamom vedabal. xazawan thevom huhur vowogal.`
 >
 > z-Alahen | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure . x-Azawan | th-WITNESSED | h-as-of.ledger | v-walk
 >
-> "I remember: as of 22 July, Alahen's leaving still counted. Azawan was walking — also from memory, against the same books."
+> "I remember: as of 22 July, Alahen's leaving still counted. Azawan was walking, also from memory, against the same books."
 
 > `zazawan hual vezebel thenom huhum b_#22,7.`
 >
@@ -687,7 +687,7 @@ To say you **felt** it at another time, date the feeling itself with [stance as-
 >
 > [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | [th-as-of.ledger | b-speech]
 >
-> "The dialogue stung me at the time." — nothing is said about now
+> "The dialogue stung me at the time." (nothing is said about now)
 
 > `zezebel wanathumol gobum thevom thuhum bezebel.`
 >
@@ -1000,7 +1000,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 :::
 
-**2.** *Azawan is walking — we're there on 22 July.*
+**2.** *Azawan is walking, we're there on 22 July.*
 
 ::: details Show answer
 `zazawan thodom huhum b_#22,7 vowogal.`
@@ -1033,7 +1033,7 @@ z-Alahen | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure
 
 z-Alahen | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure . x-Azawan | th-WITNESSED | h-as-of.ledger | v-walk
 
-*I remember: as of 22 July, Alahen's leaving still counted. Azawan was walking — also from memory, against the same books.*
+*I remember: as of 22 July, Alahen's leaving still counted. Azawan was walking, also from memory, against the same books.*
 :::
 
 **3.** `zalahen thovum thamom huhum b_#22,7 vedabal.`

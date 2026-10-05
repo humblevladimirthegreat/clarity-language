@@ -246,7 +246,7 @@ Beginner already used two roots glued with **`x`**, dictionary words with no **`
 |--------|-----|---------|-----|
 | role vowel(s) **`x`** **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** | [role pointer](pronouns.md#role-pointers) | `zaxar` *they* (whoever did the latest thing); `zaxal` *another one*; `zaxam` *what they did* | **a** again / **e** echo / **o** other / **u** unsaid |
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxedehol` *someone who teaches* (**-r** *the one teaching*) | **a** doer / **e** scene / **u** undergoer / **o** extra `/b/` party |
-| name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | [conversation length](#conversation-length) | *Azawan — I have time* | vowel on the name |
+| name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | [conversation length](#conversation-length) | *Azawan, I have time* | vowel on the name |
 | longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [ability](intention.md#ability) | *can’t sing right now* | extra vowel after the root |
 | full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zebeyaxabodel`; `zohuxaluden` ([multipart names](word-endings.md#phrasal-proper-names)) | **x** ≈ plus |
 | sake root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [sakes](sakes.md) | `gulothal` | **th** ≈ *think* (your view of the sake) |
@@ -304,11 +304,11 @@ English *I can stay a while* or *I only have a minute* tells the other person ho
 >
 > y-Alahen-minutes
 >
-> "Alahen — I have a few minutes."
+> "Alahen, I have a few minutes."
 
 | Form | At arrival | At departure | Cue |
 |------|------------|--------------|-----|
-| `SELFxan` | open-ended: *we can stay* | — | **a** ≈ add (time is in) |
+| `SELFxan` | open-ended: *we can stay* | none | **a** ≈ add (time is in) |
 | `SELFxen` | a few minutes: *I have a little time* | leaving soon | **e** ≈ order (the slot has an end) |
 | `SELFxon` | one slot: *one ask or comment* | about to leave | **o** ≈ one (one last slot) |
 | `SELFxun` | passing: *just acknowledging; not opening a talk* | leaving right now | **u** ≈ undo (lift the talk) |
@@ -327,7 +327,7 @@ At arrival, the other person can answer with their own bid. The **lesser** bid s
 >
 > Alahen-ask
 >
-> "Alahen — one slot." (the conversation lasts for one ask)
+> "Alahen, one slot." (the conversation lasts for one ask)
 
 **Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [sake](sakes.md) word takes **`th`** + vowel instead (`gulothal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**. In a clause body, a name with **`x`**, a vowel, and **-n** is not a word.
 
@@ -375,7 +375,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *(Your name) — I’m here / we can stay.*
+**1.** *(Your name), I’m here / we can stay.*
 
 ::: details Show answer
 `SELFxan.`
@@ -383,7 +383,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 SELF-presence
 :::
 
-**2.** *Alahen — a few minutes.* (calling)
+**2.** *Alahen, a few minutes.* (calling)
 
 ::: details Show answer
 `yalahexen.`
@@ -391,7 +391,7 @@ SELF-presence
 y-Alahen-minutes
 :::
 
-**3.** *(Your name) — one ask.*
+**3.** *(Your name), one ask.*
 
 ::: details Show answer
 `SELFxon.`
@@ -399,7 +399,7 @@ y-Alahen-minutes
 SELF-ask
 :::
 
-**4.** *(Your name) — I’m here. Alahen — one ask.*
+**4.** *(Your name), I’m here. Alahen, one ask.*
 
 ::: details Show answer
 `SELFxan. yalahexon.`
@@ -407,7 +407,7 @@ SELF-ask
 SELF-presence . y-Alahen-ask
 :::
 
-**5.** *Ahaben — just passing.* (calling)
+**5.** *Ahaben, just passing.* (calling)
 
 ::: details Show answer
 `yahabexun.`
@@ -415,7 +415,7 @@ SELF-presence . y-Alahen-ask
 y-Ahaben-passing
 :::
 
-**6.** *Ahaben — one ask.* (citation)
+**6.** *Ahaben, one ask.* (citation)
 
 ::: details Show answer
 `ahabexon.`
@@ -423,7 +423,7 @@ y-Ahaben-passing
 Ahaben-ask
 :::
 
-**7.** *Azawan — a few minutes.* (calling); *Alahen screams.*
+**7.** *Azawan, a few minutes.* (calling); *Alahen screams.*
 
 ::: details Show answer
 `yazawaxen zalahen vezugel.`
@@ -431,7 +431,7 @@ Ahaben-ask
 y-Azawan-minutes | z-Alahen | v-scream
 :::
 
-**8.** *Alahen — just passing.* (calling); *Ahaben punches Azawan.*
+**8.** *Alahen, just passing.* (calling); *Ahaben punches Azawan.*
 
 ::: details Show answer
 `yalahexun zahaben zazawan vabahel.`
@@ -439,7 +439,7 @@ y-Azawan-minutes | z-Alahen | v-scream
 y-Alahen-passing | z-Ahaben | z-Azawan | v-punch
 :::
 
-**9.** *(Your name) — I’m here / we can stay.* *Alahen — one ask.* (Alahen’s bid is the one that holds)
+**9.** *(Your name), I’m here / we can stay.* *Alahen, one ask.* (Alahen’s bid is the one that holds)
 
 ::: details Show answer
 `SELFxan. alahexon.`
@@ -455,7 +455,7 @@ SELF-presence . Alahen-ask
 
 Ahaben-presence
 
-*Ahaben — I’m here / we can stay.*
+*Ahaben, I’m here / we can stay.*
 :::
 
 **2.** `yalahexun.`
@@ -464,7 +464,7 @@ Ahaben-presence
 
 y-Alahen-passing
 
-*Alahen — just passing.* (calling)
+*Alahen, just passing.* (calling)
 :::
 
 **3.** `azawaxun.`
@@ -473,7 +473,7 @@ y-Alahen-passing
 
 Azawan-passing
 
-*Azawan — just passing.*
+*Azawan, just passing.*
 :::
 
 **4.** `yahabexen.`
@@ -482,7 +482,7 @@ Azawan-passing
 
 y-Ahaben-minutes
 
-*Ahaben — a few minutes.* (calling)
+*Ahaben, a few minutes.* (calling)
 :::
 
 **5.** `yalahexon.`
@@ -491,7 +491,7 @@ y-Ahaben-minutes
 
 y-Alahen-ask
 
-*Alahen — one ask.* (calling)
+*Alahen, one ask.* (calling)
 :::
 
 **6.** `azawaxan yahabexon.`
@@ -500,7 +500,7 @@ y-Alahen-ask
 
 Azawan-presence | y-Ahaben-ask
 
-*Azawan — I’m here. Ahaben — one ask.* (calling)
+*Azawan, I’m here. Ahaben, one ask.* (calling)
 :::
 
 **7.** `azawan.`
@@ -509,7 +509,7 @@ Azawan-presence | y-Ahaben-ask
 
 Azawan
 
-*Azawan.* (hello — the speaker is Azawan)
+*Azawan.* (hello, the speaker is Azawan)
 :::
 
 **8.** `yazawaxen zahaben doyelebehul vahahal.`
@@ -518,7 +518,7 @@ Azawan
 
 y-Azawan-minutes | z-Ahaben | d-doorbell | v-see
 
-*Azawan — a few minutes.* (calling); *Ahaben sees a doorbell.*
+*Azawan, a few minutes.* (calling); *Ahaben sees a doorbell.*
 :::
 
 **9.** `azawaxan. alahexen.`
@@ -527,7 +527,7 @@ y-Azawan-minutes | z-Ahaben | d-doorbell | v-see
 
 Azawan-presence . Alahen-minutes
 
-*Azawan — I’m here / we can stay.* *Alahen — a few minutes.* (Alahen’s few minutes is the one that holds)
+*Azawan, I’m here / we can stay.* *Alahen, a few minutes.* (Alahen’s few minutes is the one that holds)
 :::
 
 ## See also

@@ -934,7 +934,7 @@ y-refuse-option-soft
 
 y-question | z-Alahen | [v-lie | v-not] . y-no | v-lie
 
-*Didn’t Alahen lie? — False: (Alahen) did lie.*
+*Didn’t Alahen lie? False: (Alahen) did lie.*
 :::
 
 **8.** `yol zar vezebel bahaben har.`

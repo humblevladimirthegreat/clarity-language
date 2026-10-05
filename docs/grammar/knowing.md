@@ -25,9 +25,9 @@ The ending on MAY says whether you mean to follow up on the *could be*: with **-
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`thovul`** | could be, and you are **committed to settling it** | *may — I'll find out* / *let's find out* | `ovul` *thought* | 💭: balloon plus a magnifying glass (**-l** the full run) |
+| **`thovul`** | could be, and you are **committed to settling it** | *may, I'll find out* / *let's find out* | `ovul` *thought* | 💭: balloon plus a magnifying glass (**-l** the full run) |
 | **`thovum`** | could be (default; follow-up unstated) | *may* / *could be* | `ovul` *thought* | 💭: balloon (**-m** middle) |
-| **`thovur`** | could be, as a **passing thought** you are not pursuing right now | *may — who knows* | `ovul` *thought* | 💭: balloon drifting off (**-r** ≈ right now) |
+| **`thovur`** | could be, as a **passing thought** you are not pursuing right now | *may, who knows* | `ovul` *thought* | 💭: balloon drifting off (**-r** ≈ right now) |
 
 When you are not sure, use **`thovum`**: it says *could be* and nothing about following up.
 
@@ -35,7 +35,7 @@ When you are not sure, use **`thovum`**: it says *could be* and nothing about fo
 >
 > z-Alahen | th-MAY-find-out | v-punch | d-Azawan
 >
-> "Alahen may be punching Azawan — I'll find out."
+> "Alahen may be punching Azawan, I'll find out."
 
 In a yes/no question, **`thovul`** says you are asking in order to find out:
 
@@ -43,13 +43,13 @@ In a yes/no question, **`thovul`** says you are asking in order to find out:
 >
 > y-question | z-Azawan | th-MAY-find-out | v-punch | d-Alahen
 >
-> "Might Azawan be punching Alahen? — let's find out."
+> "Might Azawan be punching Alahen? let's find out."
 
 > `zahaben thovur vagahul.`
 >
 > z-Ahaben | th-MAY-who-knows | v-cry
 >
-> "Ahaben may be crying — who knows."
+> "Ahaben may be crying, who knows."
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -102,7 +102,7 @@ z-Azawan | th-MAY | v-tell | b-Alahen
 z-Ahaben | th-MAY | v-departure | d-Azawan
 :::
 
-**4.** *Alahen may be punching Azawan — I'll find out.*
+**4.** *Alahen may be punching Azawan, I'll find out.*
 
 ::: details Show answer
 `zalahen thovul vabahel dazawan.`
@@ -110,7 +110,7 @@ z-Ahaben | th-MAY | v-departure | d-Azawan
 z-Alahen | th-MAY-find-out | v-punch | d-Azawan
 :::
 
-**5.** *Azawan may be crying — who knows.*
+**5.** *Azawan may be crying, who knows.*
 
 ::: details Show answer
 `zazawan thovur vagahul.`
@@ -168,7 +168,7 @@ z-Azawan | th-MAY | v-see | d-Alahen
 
 z-Ahaben | th-MAY-find-out | v-departure | d-Azawan
 
-*Ahaben may be leaving Azawan — I'll find out.*
+*Ahaben may be leaving Azawan, I'll find out.*
 :::
 
 **4.** `zalahen vevegal.`
@@ -186,7 +186,7 @@ z-Alahen | v-think
 
 z-Azawan | th-MAY-who-knows | v-scream
 
-*Azawan may be screaming — who knows.*
+*Azawan may be screaming, who knows.*
 :::
 
 **6.** `yol zalahen thovum vabahel dazawan.`
@@ -204,7 +204,7 @@ y-question | z-Alahen | th-MAY | v-punch | d-Azawan
 
 z-Alahen | th-MAY-find-out | v-fight
 
-*Alahen may be fighting — I'll find out.*
+*Alahen may be fighting, I'll find out.*
 :::
 
 **8.** `zahaben thovum vagahul.`
@@ -230,13 +230,13 @@ Verbs have **no past or future form**. Some channels place the event in time bec
 >
 > z-Azawan | th-LIVE | v-walk
 >
-> "Azawan walks — live / from the scene."
+> "Azawan walks, live / from the scene."
 
 > `zazawan thevom vowogal.`
 >
 > z-Azawan | th-WITNESSED | v-walk
 >
-> "Azawan walked — I remember seeing it."
+> "Azawan walked, I remember seeing it."
 
 **For *could be* with nothing behind it, use:** [MAY](#may). When English *I think* means you have reasons (you worked it out, you heard it, you sense it), pick the channel for those reasons instead.
 
@@ -257,13 +257,13 @@ Pick one channel for how you know.
 >
 > z-Alahen | th-RECORDED | v-sleep
 >
-> "Alahen sleeps — on record."
+> "Alahen sleeps, on record."
 
 > `zalahen thewam varadal.`
 >
 > z-Alahen | th-TOLD | v-write
 >
-> "Alahen writes — so they say."
+> "Alahen writes, so they say."
 
 A **tale** sets its own now. Once a sentence frames the passage with STORY (`thozem`), later sentences in the same turn with no channel go on telling the tale, in the tale's now, until another channel or a new turn. A quote inside the tale keeps its speaker's own now.
 
@@ -302,7 +302,7 @@ The ending on a channel says **how strong the evidence is**: how much the claim 
 >
 > z-Azawan | th-WITNESSED.strong | v-walk
 >
-> "Azawan walked — I remember it clearly."
+> "Azawan walked, I remember it clearly."
 
 ### Second-hand and further (`th#N`) {#hand-depth}
 
@@ -312,7 +312,7 @@ English *second-hand*, *third-hand*, *a secondary source* and *a tertiary source
 >
 > z-Alahen | th-TOLD | th-3rd-hand | v-departure
 >
-> "Alahen left, so they say — third-hand."
+> "Alahen left, so they say, third-hand."
 
 > `zalahen therem thredul vedabal.`
 >
@@ -483,7 +483,7 @@ English *I see it* and *I saw it* both report watching; they differ in when you 
 >
 > z-Azawan | th-WITNESSED | v-see | d-boot
 >
-> "Azawan saw a boot — as I remember it."
+> "Azawan saw a boot, as I remember it."
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -516,7 +516,7 @@ English *has left* and *used to tell* mix two things: when the event happened, a
 >
 > z-Alahen | th-LIVE | th-RESIDUE | v-departure
 >
-> "Alahen has left and is still gone — I can see it." (what is left over is in view)
+> "Alahen has left and is still gone, I can see it." (what is left over is in view)
 
 **Compare with:** [*after*](dependents.md#time-poles) (`henum boyel`) orders two events. **`thamom`** does not say the leaving was earlier; it says the **outcome is still in effect**. [LIVE](#live-vs-memory) is how you know, not what is left over. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
 
@@ -526,19 +526,19 @@ English *has left* and *used to tell* mix two things: when the event happened, a
 >
 > z-Azawan | h-always | v-tell | th-FORMER
 >
-> "Azawan always tells — a former pattern, not today's."
+> "Azawan always tells, a former pattern, not today's."
 
 > `zazawan hual vezebel thenom thevom.`
 >
 > z-Azawan | h-always | v-tell | th-FORMER | th-WITNESSED
 >
-> "Azawan always told — a former pattern, not today's; I remember it."
+> "Azawan always told, a former pattern, not today's; I remember it."
 
 > `zazawan hual vezebel thenom thobam bral.`
 >
 > z-Azawan | h-always | v-tell | th-FORMER | [th-PATTERN | b-later]
 >
-> "Azawan always tells — a pattern that will be former by then (forecast from the pattern)."
+> "Azawan always tells, a pattern that will be former by then (forecast from the pattern)."
 
 **Compare with:** PATTERN **`thobam`** says how you know (from repeated cases); it does not say the pattern is over. **`thenom`** is not a past tense either: it works with LIVE and in a forecast.
 
@@ -782,7 +782,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Wri
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Azawan tells Ahaben — live / from the scene.* (present observation)
+**1.** *Azawan tells Ahaben, live / from the scene.* (present observation)
 
 ::: details Show answer
 `zazawan thodom vezebel bahaben.`
@@ -790,7 +790,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Wri
 z-Azawan | th-LIVE | v-tell | b-Ahaben
 :::
 
-**2.** *Alahen saw a camera — from memory.*
+**2.** *Alahen saw a camera, from memory.*
 
 ::: details Show answer
 `zalahen thevom vahahal dagahol.`
@@ -798,7 +798,7 @@ z-Azawan | th-LIVE | v-tell | b-Ahaben
 z-Alahen | th-WITNESSED | v-see | d-camera
 :::
 
-**3.** *Ahaben tells Azawan — on record.*
+**3.** *Ahaben tells Azawan, on record.*
 
 ::: details Show answer
 `zahaben therem vezebel bazawan.`
@@ -806,7 +806,7 @@ z-Alahen | th-WITNESSED | v-see | d-camera
 z-Ahaben | th-RECORDED | v-tell | b-Azawan
 :::
 
-**4.** *Azawan sees a newspaper — from the pattern of cases.*
+**4.** *Azawan sees a newspaper, from the pattern of cases.*
 
 ::: details Show answer
 `zazawan thobam vahahal dunuzel.`
@@ -814,7 +814,7 @@ z-Ahaben | th-RECORDED | v-tell | b-Azawan
 z-Azawan | th-PATTERN | v-see | d-newspaper
 :::
 
-**5.** *Alahen mutes — so they say.* (hearsay)
+**5.** *Alahen mutes, so they say.* (hearsay)
 
 ::: details Show answer
 `zalahen thewam vamuyul.`
@@ -822,7 +822,7 @@ z-Azawan | th-PATTERN | v-see | d-newspaper
 z-Alahen | th-TOLD | v-mute
 :::
 
-**6.** *Alahen punches Azawan — inferred from clues.*
+**6.** *Alahen punches Azawan, inferred from clues.*
 
 ::: details Show answer
 `zalahen thunem vabahel dazawan.`
@@ -846,7 +846,7 @@ z-Azawan | th-NOTIONAL | v-tell | b-Ahaben
 z-Alahen | th-NOTIONAL | v-scream
 :::
 
-**9.** *Azawan tells Ahaben — live; what was told still stands.*
+**9.** *Azawan tells Ahaben, live; what was told still stands.*
 
 ::: details Show answer
 `zazawan thodom thamom vezebel bahaben.`
@@ -854,7 +854,7 @@ z-Alahen | th-NOTIONAL | v-scream
 z-Azawan | th-LIVE | th-RESIDUE | v-tell | b-Ahaben
 :::
 
-**10.** *Alahen always told — a former pattern, not today's; I remember it.*
+**10.** *Alahen always told, a former pattern, not today's; I remember it.*
 
 ::: details Show answer
 `zalahen hual vezebel thenom thevom.`
@@ -862,7 +862,7 @@ z-Azawan | th-LIVE | th-RESIDUE | v-tell | b-Ahaben
 z-Alahen | h-always | v-tell | th-FORMER | th-WITNESSED
 :::
 
-**11.** *Ahaben still screams — seen live.*
+**11.** *Ahaben still screams, seen live.*
 
 ::: details Show answer
 `zahaben thodom hagem vezugel.`
@@ -870,7 +870,7 @@ z-Alahen | h-always | v-tell | th-FORMER | th-WITNESSED
 z-Ahaben | th-LIVE | h-still | v-scream
 :::
 
-**12.** *Alahen screams — rumor has it.*
+**12.** *Alahen screams, rumor has it.*
 
 ::: details Show answer
 `zalahen thewar vezugel.`
@@ -902,7 +902,7 @@ z-Alahen | v-punch | [th-INFERRED | b-that-clause] | z-Azawan | v-scream
 z-Azawan | v-scream | [th-because | b-that-clause] | z-Alahen | v-punch
 :::
 
-**16.** *Alahen sings, it turns out — seen live.*
+**16.** *Alahen sings, it turns out, seen live.*
 
 ::: details Show answer
 `zalahen thodom thezum vezehel.`
@@ -910,7 +910,7 @@ z-Azawan | v-scream | [th-because | b-that-clause] | z-Alahen | v-punch
 z-Alahen | th-LIVE | th-MIRATIVE | v-sing
 :::
 
-**17.** *Alahen screams — so they say, third-hand.*
+**17.** *Alahen screams, so they say, third-hand.*
 
 ::: details Show answer
 `zalahen thewam threrel vezugel.`
@@ -934,7 +934,7 @@ z-Alahen | th-TOLD | th-3rd-hand | v-scream
 
 z-Azawan | th-FELT | v-tell | b-Ahaben
 
-*Azawan tells Ahaben — I sense it.*
+*Azawan tells Ahaben, I sense it.*
 :::
 
 **2.** `zalahen thozem vahahal deredel.`
@@ -943,7 +943,7 @@ z-Azawan | th-FELT | v-tell | b-Ahaben
 
 z-Alahen | th-STORY | v-see | d-radio
 
-*Alahen sees a radio — per the tale.*
+*Alahen sees a radio, per the tale.*
 :::
 
 **3.** `zahaben thunem vamuyul.`
@@ -952,7 +952,7 @@ z-Alahen | th-STORY | v-see | d-radio
 
 z-Ahaben | th-INFERRED | v-mute
 
-*Ahaben mutes — inferred from clues.*
+*Ahaben mutes, inferred from clues.*
 :::
 
 **4.** `zahaben thavol vezehel.`
@@ -970,7 +970,7 @@ z-Ahaben | th-NOTIONAL-rehearse | v-sing
 
 z-Alahen | th-RECORDED | v-see | d-camera
 
-*Alahen sees a camera — on record.*
+*Alahen sees a camera, on record.*
 :::
 
 **6.** `zahaben thevom vezebel.`
@@ -979,7 +979,7 @@ z-Alahen | th-RECORDED | v-see | d-camera
 
 z-Ahaben | th-WITNESSED | v-tell
 
-*Ahaben told — from memory.*
+*Ahaben told, from memory.*
 :::
 
 **7.** `zalahen thodom vabahel dazawan.`
@@ -988,7 +988,7 @@ z-Ahaben | th-WITNESSED | v-tell
 
 z-Alahen | th-LIVE | v-punch | d-Azawan
 
-*Alahen punches Azawan — live / from the scene.*
+*Alahen punches Azawan, live / from the scene.*
 :::
 
 **8.** `zahaben thovum vezugel.`
@@ -1006,7 +1006,7 @@ z-Ahaben | th-MAY | v-scream
 
 z-Ahaben | th-WITNESSED | th-RESIDUE | v-tell | b-Azawan
 
-*Ahaben told Azawan — from memory; what was told still stands.*
+*Ahaben told Azawan, from memory; what was told still stands.*
 :::
 
 **10.** `zazawan hual vezebel thenom.`
@@ -1015,7 +1015,7 @@ z-Ahaben | th-WITNESSED | th-RESIDUE | v-tell | b-Azawan
 
 z-Azawan | h-always | v-tell | th-FORMER
 
-*Azawan always tells — a former pattern, not today's.*
+*Azawan always tells, a former pattern, not today's.*
 :::
 
 **11.** `zalahen huzel vedabal.`
@@ -1051,7 +1051,7 @@ v-rain | [th-PATTERN.strong | [b-later | b-that-clause]] | [z-cloud | g-gray]
 
 z-Ahaben | th-2nd-hand | v-tell
 
-*Ahaben tells — second-hand.*
+*Ahaben tells, second-hand.*
 :::
 
 ## Advanced {#advanced}
@@ -1067,13 +1067,13 @@ Only words about **how you know** or **how things stand** move to `/w/` this way
 >
 > [z-Azawan | [w-WITNESSED | g-blue]] | v-walk
 >
-> "Azawan walks — and that blue is from memory."
+> "Azawan walks, and that blue is from memory."
 
 > `zazawan wodom gubuhel vowogal.`
 >
 > [z-Azawan | [w-LIVE | g-blue]] | v-walk
 >
-> "Azawan walks — and that blue is from the scene (live)."
+> "Azawan walks, and that blue is from the scene (live)."
 
 > `zazawan wamom gadadal vowogal.`
 >
@@ -1451,7 +1451,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The fir
 
 #### English → Agazan {#advanced-english-to-agazan}
 
-**1.** *Alahen walks — and that blue is live, from the scene itself.*
+**1.** *Alahen walks, and that blue is live, from the scene itself.*
 
 ::: details Show answer
 `zalahen wodom gubuhel vowogal.`
@@ -1539,7 +1539,7 @@ z-Azawan | th-MAY-Alahen | th-MAY | v-write
 
 [z-Azawan | [w-MAY | g-blue]] | v-walk
 
-*Azawan walks — and that may be blue.* (only the color is open)
+*Azawan walks, and that may be blue.* (only the color is open)
 :::
 
 **2.** `zazawan huam vehahel.`

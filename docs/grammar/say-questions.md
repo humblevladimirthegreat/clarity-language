@@ -294,13 +294,13 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 >
 > y-request | z-interlocutors | v-walk
 >
-> "Let's walk." — a suggestion
+> "Let's walk." (a suggestion)
 
 > `zehodon vowogal thanathem.`
 >
 > z-listener | v-walk | th-relatedness-ought-offered
 >
-> "You should walk; I recommend it." — unasked advice
+> "You should walk; I recommend it." (unasked advice)
 
 > `zazawan vabubam dalahen.`
 >

@@ -4,7 +4,7 @@ Wording policies for editors writing learner-facing Agazan grammar pages under *
 
 ## Punctuation
 
-Prefer commas, colons, parentheses, or separate sentences over em dashes.
+Em dashes are banned in published and root Markdown (`npm run build` fails on them); use commas, colons, parentheses, or separate sentences. Editor notes under `docs/meta/` and `docs/proposals/` are not checked.
 
 ## Voice and length
 

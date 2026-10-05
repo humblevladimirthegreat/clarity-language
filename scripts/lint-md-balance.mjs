@@ -23,6 +23,10 @@
  * code (markdown-it HTML-escapes those). Write loan fences as
  * `<code>d&lt;sushi&gt;l</code>`.
  *
+ * Quinary (all scanned Markdown outside `docs/meta/` and `docs/proposals/`):
+ * the em dash (U+2014) is banned in prose; use commas, colons, parentheses,
+ * or separate sentences ([doc-style](docs/meta/doc-style.md)). Fenced code is skipped.
+ *
  * Note: TipTap's default schema also rejects bold+code (`**`foo`**`). Cursor
  * accepts that pattern (other docs render fine), so we do NOT treat bold+code
  * as a failure — only duplicate same-type marks.
@@ -337,6 +341,25 @@ function findProposalLinks(file, text) {
   return hits;
 }
 
+/** Em dash ban applies to published and root Markdown, not editor notes or proposals. */
+function findEmDashes(file, text) {
+  const rel = relative(ROOT, file).split(sep).join("/");
+  if (rel.startsWith("docs/meta/") || rel.startsWith("docs/proposals/")) return [];
+  /** @type {{ line: number, col: number }[]} */
+  const hits = [];
+  let inFence = false;
+  text.split(/\r?\n/).forEach((line, i) => {
+    if (line.trim().startsWith("```")) {
+      inFence = !inFence;
+      return;
+    }
+    if (inFence) return;
+    const col = line.indexOf("\u2014");
+    if (col !== -1) hits.push({ line: i + 1, col: col + 1 });
+  });
+  return hits;
+}
+
 async function main() {
   installDom();
 
@@ -383,6 +406,13 @@ async function main() {
         failed += 1;
         console.error(
           `${rel}:${hit.line}:${hit.col}: slash-joined emphasis ${JSON.stringify(hit.match)} — use spaces (*a* / *b*) or one span (*a/b*); Cursor rich preview rejects duplicate italic/bold marks`,
+        );
+      }
+
+      for (const hit of findEmDashes(file, text)) {
+        failed += 1;
+        console.error(
+          `${rel}:${hit.line}:${hit.col}: em dash banned in prose, use a comma, colon, parentheses, or a new sentence`,
         );
       }
 

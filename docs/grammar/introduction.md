@@ -12,10 +12,11 @@ For an easy start before the grammar, [Claritish](claritish/index.md) teaches a 
 
 ## Grammar design {#grammar-design}
 
-Two supporting goals sit beside the psychology:
+Three supporting goals sit beside the psychology:
 
 - **Unambiguous but usable:** precise enough for automatic tools to understand, without making ordinary speech hard.
 - **Singable phonology:** syllable shape chosen to be easy to sing.
+- **Reusable grammar:** a small set of patterns does many jobs. The same few endings, the same vowel series, and the same scales come back across the grammar, so each pattern you learn keeps paying off on later pages.
 
 Agazan keeps three kinds of clarity in ordinary speech.
 

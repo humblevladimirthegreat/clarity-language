@@ -67,7 +67,7 @@ This is a different tool from [**-x**](plurality.md) on the noun: **-x** says yo
 > `zagadulx gral.`
 > z-cat-x | g-more-than-one
 >
-> "Cats — more than one."
+> "Cats, more than one."
 
 **Compare with:** English *some cats* (a set in this situation, no count) uses the noun plus [**-x**](plurality.md). Use **`gral`** when you mean the amount is more than one.
 
@@ -113,7 +113,7 @@ z-baguette-x | g-two
 z-croissant | g-3rd
 :::
 
-**3.** *Cookies — more than one.*
+**3.** *Cookies, more than one.*
 
 ::: details Show answer
 `zugugolx gral.`
@@ -187,7 +187,7 @@ z-bread | g-2nd
 
 z-baguette-x | g-more-than-one
 
-*Baguettes — more than one.*
+*Baguettes, more than one.*
 :::
 
 **4.** `zahaben dugugolx grarel vahahal.`
@@ -1011,7 +1011,7 @@ To say *infinitely many*, *last place*, *a gazillion*, or *absolutely zero*, wri
 > `zagadulx grabal.`
 > z-cat-x | g-plus-infinity
 >
-> "Cats — infinitely many."
+> "Cats, infinitely many."
 
 **Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means no power digits after that mark: `g+e` / `g+e-` in tables, spelled `grabal` / `grabul` in running text. Bare / assert **`e0`** writes power **`0`**: `grabazol`, `g+3e0` (not digitless).
 
@@ -1372,7 +1372,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The ite
 
 #### English → Agazan {#advanced-english-to-agazan}
 
-**1.** *Stars — infinitely many.*
+**1.** *Stars, infinitely many.*
 
 ::: details Show answer
 `zozalx grabal.`
@@ -1446,7 +1446,7 @@ z-Alahen | [d-star-x | g-three | g-plus-minus-1] | v-see
 
 z-star-x | g-plus-infinity.about
 
-*Stars — a huge but finite number.*
+*Stars, a huge but finite number.*
 :::
 
 **2.** `yrebal.`

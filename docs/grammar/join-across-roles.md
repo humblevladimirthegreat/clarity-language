@@ -38,15 +38,15 @@ Under `/v/`, `/ɡ/`, and `/h/`, a join word with **-n** names a list move instea
 | **a** | `val` / `xal` / `thal` | `vam` / `xam` / `tham` | `var` / `xar` / `thar` |
 | **o** | `vol` / `xol` / `thol` | `vom` / `xom` / `thom` | `vor` / `xor` / `thor` |
 | **u** | `vul` / `xul` / `thul` | `vum` / `xum` / `thum` | `vur` / `xur` / `thur` |
-| **ao** | `vaol` / `xaol` / `thaol` | `vaom` / `xaom` / `thaom` | — |
-| **ua** | `vual` / `xual` / `thual` | `vuam` / `xuam` / `thuam` | — |
-| **uo** | `vuol` / `xuol` / `thuol` | `vuom` / `xuom` / `thuom` | — |
+| **ao** | `vaol` / `xaol` / `thaol` | `vaom` / `xaom` / `thaom` | none |
+| **ua** | `vual` / `xual` / `thual` | `vuam` / `xuam` / `thuam` | none |
+| **uo** | `vuol` / `xuol` / `thuol` | `vuom` / `xuom` / `thuom` | none |
 | **e** | `vel` / `xel` / `thel` | `vem` / `xem` / `them` | `ver` / `xer` / `ther` |
-| **ae** | `vael` / `xael` / `thael` | `vaem` / `xaem` / `thaem` | — |
-| **oe** | `voel` / `xoel` / `thoel` | `voem` / `xoem` / `thoem` | — |
-| **ue** | `vuel` / `xuel` / `thuel` | `vuem` / `xuem` / `thuem` | — |
+| **ae** | `vael` / `xael` / `thael` | `vaem` / `xaem` / `thaem` | none |
+| **oe** | `voel` / `xoel` / `thoel` | `voem` / `xoem` / `thoem` | none |
+| **ue** | `vuel` / `xuel` / `thuel` | `vuem` / `xuem` / `thuem` | none |
 
-Stacked vowels take no **-r** under `/v/` or `/x/` (the `—` cells); only a stance join has stacked **-r**, as a [fill-ask](#standalone-stance-joins).
+Stacked vowels take no **-r** under `/v/` or `/x/` (the *none* cells); only a stance join has stacked **-r**, as a [fill-ask](#standalone-stance-joins).
 
 Each item in a verb-phrase join is a verb plus the words that go with it, and an item ends at its verb: an `/h/`, `/d/`, or `/b/` word between two joined verbs belongs to the verb after it. In `vowogal hadehum varahal val`, *hastily* is on *run*, not *walk*. In the same way, an object or a `/b/` party between two verbs goes only with the second verb:
 

@@ -577,7 +577,7 @@ The pair covers only its own clause. To keep the same whose-now in a following `
 >
 > z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | th-RESIDUE | h-as-of.ledger | v-walk
 >
-> "As of 22 July, Alahen had still left. Azawan had still walked — same books."
+> "As of 22 July, Alahen had still left. Azawan had still walked, same books."
 
 The role letter says what the snapshot applies to: `/h/` the whole clause, `/ɡ/` one noun (`guhum` *the tab as of Friday*), and `/w/` the `/ɡ/` adjective immediately after the pair (`wuhum b_#22,7 gamadam`). These are separate, so one clause may carry a clause snapshot and an adjective snapshot at once. A noun or adjective snapshot does not reach the verb: if the **verb** should also count from that now, the clause needs its own `/h/` *as-of* (or a resume).
 
@@ -794,7 +794,7 @@ z-money | th-RESIDUE | [h-as-of.ledger | b-departure]
 
 z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | th-RESIDUE | h-as-of.ledger | v-walk
 
-*As of 22 July, Alahen had still left. Azawan had still walked — same books.*
+*As of 22 July, Alahen had still left. Azawan had still walked, same books.*
 :::
 
 **2.** `zahaben huhum b_#22,7 vehahel al bahazal.`

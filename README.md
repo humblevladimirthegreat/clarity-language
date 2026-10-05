@@ -19,13 +19,13 @@ Or open the repo in a [Dev Container](.devcontainer/devcontainer.json) (Node 22 
 | `npm run typecheck` | Typecheck without emit |
 | `npm run lint:agazan` | Check Agazan words in `docs/grammar/` code spans and morph-gloss pairs (also run by `build`) |
 | `npm run dev` | VitePress local preview of grammar docs (served under `/grammar/`) |
-| `npm run docs:publish` | Production docs build: VitePress build, Amplify extras (`dist/`) — what Amplify runs |
+| `npm run docs:publish` | Production docs build: VitePress build, Amplify extras (`dist/`), what Amplify runs |
 | `npm run docs:preview` | Preview the production docs build |
 | `npm run convert-word` | Convert English to an Agazan root; `--lexicon` rewrites the CSVs (including compound stems and overlay sense forms) and dumps `tmp/lexicon-retie-map.json` (`--only` limits rows) |
 | `npm run retie-docs` | Dry-run retie from that map: Agazan in `docs/`, `AGENTS.md`, `README.md`, heading anchors, and test fixtures, with names / quoted payloads / morph lines following; stale roots in other source are listed for review (`--write` to apply, once per map) |
 | `npm run lexicon-search` | Lexicon search CLI (the docs site has the same search at `/grammar/lexicon`) |
 
-Design authority is **`docs/grammar/why-agazan.md`** (psychological purpose / limits / feature criteria), **`docs/grammar/introduction.md`** (grammar design), **`docs/grammar/clause.md`**, and the other pages under **`docs/grammar/`** — not obsolete parsers. Learner banding and reading order live in `docs/meta/` (editors only). The public grammar site is VitePress (`docs/grammar/.vitepress/`); Amplify uses [`amplify.yml`](amplify.yml) with site root **`/grammar/`**. Old public paths (`coordination.html` → `joins.html`) and the hosted 404 live in [`scripts/site-redirects.json`](scripts/site-redirects.json); paste `dist/amplify-redirects.json` into Amplify **Rewrites and redirects** ([site-redirects.md](docs/meta/site-redirects.md)).
+Design authority is **`docs/grammar/why-agazan.md`** (psychological purpose / limits / feature criteria), **`docs/grammar/introduction.md`** (grammar design), **`docs/grammar/clause.md`**, and the other pages under **`docs/grammar/`**, not obsolete parsers. Learner banding and reading order live in `docs/meta/` (editors only). The public grammar site is VitePress (`docs/grammar/.vitepress/`); Amplify uses [`amplify.yml`](amplify.yml) with site root **`/grammar/`**. Old public paths (`coordination.html` → `joins.html`) and the hosted 404 live in [`scripts/site-redirects.json`](scripts/site-redirects.json); paste `dist/amplify-redirects.json` into Amplify **Rewrites and redirects** ([site-redirects.md](docs/meta/site-redirects.md)).
 
 ## License
 

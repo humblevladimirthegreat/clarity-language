@@ -157,7 +157,7 @@ scrutiny
 Ahaben
 :::
 
-**8.** *Hello — the speaker is Alahen.*
+**8.** *Hello, the speaker is Alahen.*
 
 ::: details Show answer
 `alahen.`
@@ -165,7 +165,7 @@ Ahaben
 Alahen
 :::
 
-**9.** *Hello — say it with your own name.*
+**9.** *Hello, say it with your own name.*
 
 ::: details Show answer
 `SELFn.`
@@ -242,7 +242,7 @@ Alahen
 ::: details Show answer
 
 Azawan
-*Azawan.* (hello — the speaker is Azawan)
+*Azawan.* (hello, the speaker is Azawan)
 :::
 
 ## Intermediate {#intermediate}

@@ -11,7 +11,6 @@ use [skip-cd] for amplify to not deploy.
 -buy domain
 -flash cards for claritish
 -claritish editor
--agazan introduction should mention grammar reusability
 -prosody
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -final exam
@@ -22,8 +21,6 @@ use [skip-cd] for amplify to not deploy.
 -eliminate lexicon retie by default
 -allow -rm -rl on content roots if ambiguous referent
 -numbered pronouns can refer to -r
--have lint auto-rewrite or ban em dashes
--claritish style guide
 
 save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.
@@ -36,7 +33,7 @@ save for end:
 -Cheat sheet for joins and hooks
 -join vowel decision tree in advanced vowel series.
 
-Dictionary entries (open lexicon / concepts — not the closed list above):
+Dictionary entries (open lexicon / concepts, not the closed list above):
 -habits: triggered
 -unconditional self acceptance
 -apology
