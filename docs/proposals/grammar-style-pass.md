@@ -66,7 +66,7 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - [x] **Batch 2.5:** `plurality` (2.9k), `predication` (3.8k)
 - [x] **Batch 2.6:** `joins` (8.5k)
 - [x] **Batch 2.7:** `questions` (5.2k)
-- [ ] **Batch 2.8:** `hooks` (7.7k)
+- [x] **Batch 2.8:** `hooks` (7.7k)
 - [ ] **Batch 2.9:** `restrictors` (3.3k), `relations` (5.4k)
 - [ ] **Batch 2.10:** `spans` (4.6k)
 - [ ] **Batch 2.11:** `numbers` (10.9k)
@@ -191,6 +191,17 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - *How many?* (`numbers`), the Three endings pointer to *time horizon* (`sakes`), the extra-noun / genitive / stacked-vowel hook links (`hooks`), `humum` (`relations`), the condition-word links (`causation`), `thar` (`join-across-roles`), and *anytime?* (`restrictors`) all point at later pages. Each answers a question form the learner reaches for on this page, so they stay for Phase 3 to judge.
 - Resolved after review: the fill-ask blank now glosses as role-neutral *wh* (`z-wh`, `b-wh`, `g-wh`) and *wh-else*, not *who* / *who-else*, so the morph line no longer contradicts *what* / *where* translations. Changed in `src/parse/morph-gloss.ts` and its test, `meta/glosses.md`, and the morph lines in `questions`, `hooks`, `pronouns`, `say-questions`, and `meta/syntax-test-corpus.md`. The Beginner Fill-ask section now says what *wh* means in the word-by-word line.
 - Intermediate English → Agazan #1 puts the answer `yael.` on the line after the morph line with no blank line. It renders inside the same paragraph; left as is.
+
+### 2026-10-05: Batch 2.8 (`hooks`)
+
+- **Beginner:** the page lead now starts from the English job (*including*, *instead*, *in*, *for*), says what a hook is (no role letter, a vowel or two plus an ending), and names the three places it can sit; "the grammar still finds the edge" is plain English. Including / Rather / Instead / Except leads are job-first; *hooks B onto A* (circular) is gone, *Rather* now says how it differs from *including* and *instead*, and *Instead* says the order is the reverse of English *B instead of A*. *Except* no longer calls `xual` a *stand-in clause* (it is the clause standalone, as in `joins`). The `am` example that sat under the *including* Compare-with, before **-m** was taught, moved down into Closed and open endings. That lead drops *unmarked*. The discourse-hook lead starts from *Additionally* / *In other words* and glosses *glue*; its table rows (*further committed point*, *rephrase prior*, *exception to the prior frame*) are plain English. Extra-noun lead: job first, *landmark* glossed at first use, the trigger (`/b/` after, no recipient before) is its own sentence rather than a pseudo-cue, *simplex* and *intended get* replaced, and the "Frame **-m** waits for Intermediate" teaser is cut.
+- **Intermediate:** hook **-n** is now a plain how-to sentence; removed a doubled blank line. Extra noun: *simplex* / *stacked* → one-vowel / two-vowel; *frame extra* is glossed in the same sentence. The *several extras* and extra-noun **-n** sentences and the *with* / *without* / *like* / *between* / *so that* Compare-with sat under Somewhere, nowhere, everywhere; they moved to the extra-noun section they describe, and the *stays* / *still* fences went. Whose: the long "em never takes…" paragraph is split in two. Stacked discourse lead is job-first (cue moved last). Place indefinites lead names *somewhere* / *nowhere* / *everywhere*. Deixis: *viewpoint laterals* no longer stands as an unglossed label; "when the conversation role is the point" reworded. Point back lead is job-first and drops its preview of the span-hook **-r** (Spans says it later). Parallel chains, Discourse placements, Detail on the hook, and Spans: *binds last*, *in-clause chains stay inside the body*, *scopes the linker+body stretch*, *grades*, *host*, *window*, *glue*, *Scope stays flat*, and *a path in spoken order* replaced with plain English. *(vocative, then discourse hook)* → *(a call, then a discourse hook)*.
+- **Advanced:** hook-compound lead is job-first (*enter*, *leave*, *oppose*); *lemma* → *dictionary form*; *the same hook job* reworded.
+
+**Deferred / kept:**
+- Compare-with pointers to later pages are kept, since each answers an English form the learner reaches for here: proxy (`relations`), role compounds (`roles`), emotion compose and sakes (`sakes`), viewpoint laterals (`roles`), cite spans (`spans`), join-relations (`join-across-roles`), ranges (`numbers-applied`), and the `/w/` restrictor link (`restrictors`).
+- Resolved after review: the Discourse **-m** grid said only *… and maybe more*. It now has a one-line lead (**-m** marks this sentence as one of several you could say there) and a concrete English reading per row: `am …` *Among other things*, `em …` *To put it one way*, `om …` *Instead, for instance*, `um …` *Except, among other exceptions*. No other page used these forms, and the morph glosses (`additionally.open`, …) are unchanged.
+- Parallel chains also carries the verb-pair example (*walk instead of run*), which is about same-role hooks generally, not chains. Moving it would split the section's examples; left for Phase 3.
 
 ## Questions for the editor
 

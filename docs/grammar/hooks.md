@@ -3,14 +3,14 @@
 
 ## Beginner {#beginner}
 
-Use these short words to **hook a right-hand piece** onto what is already in play: a same-role phrase, the prior sentence, or an extra noun. They have **no role letter** (no `z` / `v` / `g` / …): just a vowel (or stacked vowels) plus an ending.
+English uses small words such as *including*, *instead*, *in*, and *for* to attach one piece to another. Agazan does this with **hooks**: short words with **no role letter** (no `z` / `v` / `g` / …), just a vowel (or two vowels) plus an ending. A hook attaches the piece on its right to something already in play: a phrase in the same role, the sentence before, or the clause itself as an extra noun.
 
-Three placements share the same spellings. Tell them apart from what sits to the **right**, and whether a `/b/` word already sat to the **left**.
+The same spellings work in all three places. You tell them apart by what comes right **after** the hook, and by whether a `/b/` word comes right **before** it.
 
 ### Including (`am` / `al`)
 <a id="including"></a>
 
-You already named something (A), and you want English *including B* in that same slot. Put a hook between two phrases that play the **same clause role** (both subjects, both objects, both adjectives, …): `A HOOK B`. That hooks B onto A in place; it does not package A and B as a pair. Everyday *including* uses **`al`**. (cue: **a** ≈ add.)
+You named something (A), and you want to say English *including B* about it. Put a hook between two phrases that play the **same role** in the clause (both subjects, both objects, both adjectives, …): `A HOOK B`. For everyday *including*, the hook is **`al`**. B is added to A's slot, but A and B do not become a two-item list. (cue: **a** ≈ add.)
 
 ```text
 A HOOK B
@@ -22,20 +22,14 @@ A HOOK B
 >
 > "The family, including Azawan."
 
-Because a hook starts with a vowel, the [last consonant](phonology.md#word-edges) of the word before it may slide over and start the hook's syllable, in speech and in song: `zavahal al` can sound like *za-va-ha-lal*. That is fine. The words are still two, and the grammar still finds the edge.
+Because a hook starts with a vowel, the [last consonant](phonology.md#word-edges) of the word before it may slide over and start the hook's syllable, in speech and in song: `zavahal al` can sound like *za-va-ha-lal*. That is fine. They are still two words, and the listener can still tell where the hook starts.
 
-**Compare with:** packaging two members as a list uses a [join](joins.md) (`zodogal zagadul zam` *a dog and a cat*). A hook **hooks** B onto A; it does not name a pair.
-
-> `zavahal am zazawan.`
->
-> z-family | including.open | z-Azawan
->
-> "The family, including Azawan and maybe more."
+**Compare with:** packaging two members as a list uses a [join](joins.md) (`zodogal zagadul zam` *a dog and a cat*). A hook adds B to A's slot; it does not name a pair.
 
 ### Rather (`el`)
 <a id="rather"></a>
 
-You already named a wording (A), and you want English *or rather B*: a better reading of the **same** slot, not a second member and not a swap. Keep `A HOOK B` and use vowel **e**. You keep A's slot and replace the wording. (cue: **e** ≈ order.)
+To correct your own wording, English says *A, or rather B*. Use the same `A HOOK B` shape with vowel **e**: **`el`**. B is a better way to say A. It describes the **same** thing, so it is not an extra member (as with *including*) and not a different thing in A's place (as with *instead*). (cue: **e** ≈ order.)
 
 > `zazawan gadadal el gezebul.`
 >
@@ -46,7 +40,7 @@ You already named a wording (A), and you want English *or rather B*: a better re
 ### Instead (`ol`)
 <a id="instead"></a>
 
-You want English *instead*: B takes A's slot. Same `A HOOK B` shape; vowel **o**. The left-hand side is what you named first; the right-hand side is what belongs there. (cue: **o** ≈ one.)
+For English *B instead of A*, use the same shape with vowel **o**: `A ol B`. A, on the left, is what you named or expected first. B, on the right, is what really belongs in that slot. The order is the reverse of the English. (cue: **o** ≈ one.)
 
 > `dedehel ol dagavel.`
 >
@@ -59,7 +53,7 @@ You want English *instead*: B takes A's slot. Same `A HOOK B` shape; vowel **o**
 ### Except (`ul`)
 <a id="except"></a>
 
-You want English *except*: keep A and subtract B from that same slot. Same `A HOOK B` shape; vowel **u**. (cue: **u** ≈ undo.)
+For English *A except B*, use vowel **u**: `A ul B`. What you say holds for A with B taken out. (cue: **u** ≈ undo.)
 
 > `zavahal ul zazawan.`
 >
@@ -67,7 +61,7 @@ You want English *except*: keep A and subtract B from that same slot. Same `A HO
 >
 > "The family except Azawan."
 
-The left side can be a stand-in clause ([clause joins](joins.md#clause-joins)); the right side is then a clause:
+The left side can be the clause standalone **`xual`** *everything* ([clause joins](joins.md#clause-joins)). The right side is then a clause:
 
 > `xual ul zazawan vowogal.`
 >
@@ -84,12 +78,18 @@ The left side can be a stand-in clause ([clause joins](joins.md#clause-joins)); 
 
 ### Closed and open endings
 
-For every same-role hook you also choose how complete the right-hand side is. **-l** is the unmarked English (*including B*, *except B*, *instead*, *or rather*). **-m** means B is not the whole story: add *and maybe more*. When you are unsure, prefer **-m**.
+The ending on an `A HOOK B` hook says whether B is complete. **-l** says B is the whole of it, like plain English *including B* or *except B*. **-m** says there may be more than B, like adding *and maybe more*. When you are unsure, prefer **-m**.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **-l** (`al` / `el` / `ol` / `ul`) | B is the whole story you stand behind | unmarked (*including B*, *except B*, …) | **l** ≈ locked |
 | **-m** (`am` / `em` / `om` / `um`) | B is not the only one | *and maybe more* | **m** ≈ maybe more |
+
+> `zavahal am zazawan.`
+>
+> z-family | including.open | z-Azawan
+>
+> "The family, including Azawan and maybe more."
 
 > `zavahal um zazawan.`
 >
@@ -99,14 +99,14 @@ For every same-role hook you also choose how complete the right-hand side is. **
 
 ### Glue this sentence to prior talk {#discourse-hooks}
 
-Sometimes the thing you want to tweak is not a phrase inside this sentence, but **how this sentence attaches** to what you already said (the *glue*, or sentence-to-sentence connective). Put the same spellings at the **front** of this sentence: prior talk plays A's role, and this whole sentence is B. You get *Additionally*, *In other words*, *Instead*, or *Except* without a list join and without a continue-linker. (cue: same **a** / **o** / **e** / **u** map as in-clause.)
+English can open a sentence with *Additionally*, *In other words*, *Instead*, or *Except* to say how it connects to what was said before (this sentence-to-sentence connective is the *glue*). Put the same hook at the **front** of the sentence. What was already said plays A's role, and the whole new sentence is B. The vowels keep their meanings: add, say another way, replace, take out. (cue: same **a** / **o** / **e** / **u** map as in-clause.)
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `al …` | further committed point | *Additionally, …* | **a** ≈ add |
-| `el …` | rephrase prior | *In other words, …* | **e** ≈ order |
-| `ol …` | this claim replaces prior | *Instead, …* / *Actually, …* | **o** ≈ one |
-| `ul …` | exception to the prior frame | *Except, …* | **u** ≈ undo |
+| `al …` | add another point you stand behind | *Additionally, …* | **a** ≈ add |
+| `el …` | say the last point another way | *In other words, …* | **e** ≈ order |
+| `ol …` | this claim replaces the last one | *Instead, …* / *Actually, …* | **o** ≈ one |
+| `ul …` | an exception to what was just said | *Except, …* | **u** ≈ undo |
 
 > `al zazawan vowogal.`
 >
@@ -128,20 +128,22 @@ Use the same **`ol …`** for *actually* when you correct what someone expected:
 >
 > "In other words, Ahaben is a dog."
 
-**Compare with:** *however* / *therefore* use [continue](dependents.md#continue-x) linkers. A fronted hook only changes how this sentence attaches to what you already said.
+**Compare with:** *however* / *therefore* use [continue](dependents.md#continue-x) linkers. A hook at the front only adds, rephrases, replaces, or takes out.
 
 ### Extra noun (`/b/` after the hook) {#extra-noun}
 
-When the next word after the hook is `/b/`, the hook names how that extra noun sits toward the clause (or toward the noun already in play). This is not the [recipient](clause.md#extra-nouns) (`zazawan balahen vezebel` *tells Alahen*). Right after a recipient, the hook is same-role *including* instead (`bazawan al balahen`). (cue: `/b/` on the right of the hook, no recipient on the left)
+English prepositions such as *in*, *at*, *from*, and *for* add a place, a source, or someone who benefits. In Agazan, put a hook right before a `/b/` [extra noun](clause.md#extra-nouns). The hook says how that noun, its **landmark**, relates to the event (or to the noun just before the hook). This is not the recipient, which takes no hook (`zazawan balahen vezebel` *tells Alahen*).
 
-Simplex vowels (one vowel plus an ending):
+So the test is: `/b/` right after the hook, and no recipient `/b/` right before it. Right after a recipient, the hook is same-role *including* (`bazawan al balahen`).
+
+The four one-vowel hooks name the everyday extras:
 
 | Agazan | Name | Use | Cue |
 |--------|------|-----|-----|
 | **`al`** | **in** | containment | **a** ≈ add (into a volume) |
 | **`ol`** | **at** | coincidence with a point | **o** ≈ one (the one point) |
 | **`ul`** | **from** | source of a path | **u** ≈ undo (leave) |
-| **`el`** | **for** | intended get | **e** ≈ order (aim the act) |
+| **`el`** | **for** | who or what the act is meant for | **e** ≈ order (aim the act) |
 
 > `zodogal vezebal al bahazal.`
 >
@@ -169,7 +171,7 @@ To ask *where?*, put the fill-ask blank **`bar`** after the hook (`ol bar` *wher
 >
 > "Azawan cooks for a family."
 
-When `/b/` is a person or group, **`el`** names who the act is meant to benefit: *cooks for Alahen* is the same *for*. The intended get is whatever the act brings them.
+When `/b/` is a person or group, **`el`** names who the act is meant to benefit, as in *cooks for Alahen*: what the act brings is meant to reach them.
 
 > `zazawan vugugal el balahen.`
 >
@@ -177,13 +179,13 @@ When `/b/` is a person or group, **`el`** names who the act is meant to benefit:
 >
 > "Azawan cooks for Alahen."
 
-**-l** is the exact extra. Frame **-m** waits for Intermediate, with the rest of the extra-noun grid.
+These hooks take **-l**: the landmark is the exact place, point, source, or goal.
 
-**Compare with:** *Additionally, Azawan walks* is a fronted hook whose next word is **not** `/b/` (`al zazawan vowogal`). *Like a duck* is still a hosted [simile](relations.md#similative). *Tells on behalf of Alahen* is [proxy](relations.md#proxy). Naming the **place of an event** as its own noun (*a sleep-place*, *that scream-place*) is a [role compound](roles.md#role-compounds) with vowel **`e`**, not this hook on the same clause.
+**Compare with:** *Additionally, Azawan walks* is a hook at the front whose next word is **not** `/b/` (`al zazawan vowogal`). *Like a duck* is still a hosted [simile](relations.md#similative). *Tells on behalf of Alahen* is [proxy](relations.md#proxy). Naming the **place of an event** as its own noun (*a sleep-place*, *that scream-place*) is a [role compound](roles.md#role-compounds) with vowel **`e`**, not this hook on the same clause.
 
 ### Since (`ul` on a time) {#since}
 
-For *since* (from a starting point, and still true now), use **`ul`** *from* with a time instead of a place: *from the thunderstorm on*. [**`henum`**](dependents.md#dependent-clauses) *after* only places the event later. **`ul`** says it has run from that point until now. (cue: **u** ≈ undo: leave the starting point behind)
+For *since* (from a starting point, and still true now), use **`ul`** *from* with a time instead of a place: *from the thunderstorm on*. [**`henum`**](dependents.md#dependent-clauses) *after* only places the event later. **`ul`** says the event has gone on from that point until now. (cue: **u** ≈ undo: leave the starting point behind)
 
 > `zazawan vehahel ul bavodel.`
 >
@@ -402,14 +404,16 @@ Beginner already used closed **-l** and open **-m** for how complete B is, or ho
 
 #### Discourse
 
+At the front of a sentence, **-m** says this sentence is one of several you could say there: one more point among others, one way to reword, one possible replacement, one exception among others.
+
 | | **-l** | **-m** |
 |--|--------|--------|
-| **a** (*additionally*) | `al`: *Additionally, …* | `am`: *Additionally, …* and maybe more |
-| **e** (*in other words*) | `el`: *In other words, …* | `em`: *In other words, …* and maybe more |
-| **o** (*instead*) | `ol`: *Instead, …* | `om`: *Instead, …* and maybe more |
-| **u** (*except*) | `ul`: *Except, …* | `um`: *Except, …* and maybe more |
+| **a** (*additionally*) | `al`: *Additionally, …* | `am`: *Among other things, …* |
+| **e** (*in other words*) | `el`: *In other words, …* | `em`: *To put it one way, …* |
+| **o** (*instead*) | `ol`: *Instead, …* | `om`: *Instead, for instance, …* |
+| **u** (*except*) | `ul`: *Except, …* | `um`: *Except, among other exceptions, …* |
 
-Hook **-n** is only when the hook **titles** a proper-name phrase ([**-n**](word-endings.md#titled-phrases)): a store, a title, a handle. Ordinary talk keeps **-l** / **-m**. The sides keep their usual endings (kinds **-l**, abstracts **-m**, a name still **-n**).
+To make a whole `A HOOK B` phrase into a name (a store, a title, a handle), give the hook **-n** ([titled phrases](word-endings.md#titled-phrases)). Otherwise use **-l** or **-m**. The two sides keep their usual endings (kinds **-l**, abstracts **-m**, a name **-n**).
 
 > `dedehel on dagavel.`
 >
@@ -417,8 +421,7 @@ Hook **-n** is only when the hook **titles** a proper-name phrase ([**-n**](word
 >
 > "Tea-to-Coffee" (a cafe name)
 
-
-**Compare with:** *no dog* / *not X* uses a prefixed [join](joins.md#join-series-ending-shared) (`zodogal zul`). Prefix-less **`ul`** excepts a right-hand side in the same slot.
+**Compare with:** *no dog* / *not X* uses a prefixed [join](joins.md#join-series-ending-shared) (`zodogal zul`). The hook **`ul`**, with no role letter, always takes a B out of A.
 
 > `zodogal zul.`
 >
@@ -429,9 +432,9 @@ Hook **-n** is only when the hook **titles** a proper-name phrase ([**-n**](word
 ### Extra noun: stacked vowels and loose **-m**
 <a id="extra-noun-intermediate"></a>
 
-Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). Stacked vowels name the rest of the everyday extras. Same trigger: `/b/` is immediately after the hook, and the word immediately to the left of the hook (skipping `/w/`) is **not** a recipient `/b/` (so `bazawan al balahen` is *including*).
+Beginner already used the one-vowel extra-noun hooks (*in* / *at* / *from* / *for*). Hooks with two vowels name the rest of the everyday extras. The test is the same: `/b/` comes right after the hook, and the word right before the hook (skipping any `/w/`) is **not** a recipient `/b/` (so `bazawan al balahen` is *including*).
 
-A hook + `/b/` right after a **landmark** (the `/b/` of another extra, or of a host such as a [locative relation](relations.md#locative-relations)) describes that landmark: *the village near me*.
+A hook + `/b/` right after a landmark (the `/b/` of another extra, or of a word such as a [locative relation](relations.md#locative-relations)) describes that landmark, not the clause: *the village near me*.
 
 > `zazawan vowogal al bahedem om bamagon.`
 >
@@ -439,9 +442,9 @@ A hook + `/b/` right after a **landmark** (the `/b/` of another extra, or of a h
 >
 > "Azawan walks in the village near me."
 
-For two extras on the clause, put a non-`/b/` word between the first landmark and the next hook; the verb can sit there (`ul bezedel vowogal oel bedehal`).
+Several extra-noun hooks on one clause are several extras (*from* one landmark *toward* another). To keep the second one on the clause, put a non-`/b/` word between the first landmark and the next hook; the verb can sit there (`ul bezedel vowogal oel bedehal`). Extra-noun **-n** makes the hook and its landmark a name, as on same-role hooks; the landmark keeps its own ending.
 
-**-m** names a **frame extra**, not a second copy of the same extra: the landmark is a setting, not the exact contact, source, tool, or opponent.
+With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the general setting, not the exact contact, source, tool, or opponent. It is not a second copy of the same extra.
 
 | **-l** | English | **-m** | English | Cue |
 |--------|---------|--------|---------|-----|
@@ -452,7 +455,7 @@ For two extras on the clause, put a non-`/b/` word between the first landmark an
 | **`ul`** | *from* | **`um`** | *away from* | **u** ≈ undo (leave); **-m** that origin as the setting |
 | **`ual`** | *out of* | **`uam`** | *out from among* | **ua** ≈ leave a volume; **-m** that volume as the setting |
 | **`uol`** | *through* | **`uom`** | *by way of* | **uo** ≈ leave via one path; **-m** that path as the setting |
-| **`el`** | *for* | **`em`** | *used by* (*B's*) | **e** ≈ order (aim the act); **-m** the get has reached B and is in B's use |
+| **`el`** | *for* | **`em`** | *used by* (*B's*) | **e** ≈ order (aim the act); **-m** what was meant for B is now in B's use |
 | **`ael`** | *using* | **`aem`** | *by* | **ae** ≈ add an ordered means; **-m** the channel |
 | **`uel`** | *against* | **`uem`** | *contrary to* | **ue** ≈ undo aimed at; **-m** the opposing frame |
 
@@ -496,9 +499,11 @@ To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`a
 >
 > "How does Azawan write the book?"
 
+**Compare with:** some English prepositions use other forms. Company *with Alahen* is a [join-relation](join-across-roles.md#join-relations), and so is *without*. *Like* is a [simile](relations.md#similative). *Between* is a hosted pair plus a `/b/` join ([relations](relations.md#locative-relations)). *So that Alahen sits* is **`hogom barl`**.
+
 ### Whose (`em`) {#genitive}
 
-English *Azawan's dog* often means the dog is in Azawan's **use**: Azawan keeps it, walks it, feeds it. Put **`em`** right after the noun and the user in `/b/`. `em` says B uses the thing or has access to it. It does not say who owns it. (cue: **`el`** is *for B*, a get meant to reach B; **`em`** says it already reached B and is in B's use)
+English *Azawan's dog* often means the dog is in Azawan's **use**: Azawan keeps it, walks it, feeds it. Put **`em`** right after the noun, then the user in `/b/`. `em` says B uses the thing or has access to it. It does not say who owns it. (cue: **`el`** is *for B*, a get meant to reach B; **`em`** says it already reached B and is in B's use)
 
 > `zodogal em bazawan varahal.`
 >
@@ -556,13 +561,15 @@ Other kinds of *'s* each have their own word:
 | a feeling B has (*Azawan's anger*) | [emotion compose](sakes.md#emotion-compose) |
 | something B made (*the book Azawan wrote*) | a [role compound](roles.md#role-compounds) |
 
-**`em`** always needs a noun on its left: it belongs to the nearest noun before it (after that noun's `/ɡ/` words). After a verb or at the start of a sentence there is no thing for B to use, so `em` + `/b/` is not a sentence there. For someone's act (*Azawan's walk*), say the act as its own sentence, then [point back to it](dependents.md#which-noun). **`em`** never takes a person on the left: a person is not something someone uses. **`gegabem`** never does either, because no one owns a person: a person tied to B takes a [tie](relations.md#social-relations) (*Azawan's patient* is care, `gahabom`). **`em`** never names a feeling or trait either, and neither does [*part of*](relations.md#of-relations): a feeling or trait stays something B has, not something B uses or is made of. A feeling uses [emotion compose](sakes.md#emotion-compose); a trait is a `/ɡ/` word on B.
+**`em`** always needs a noun on its left: it belongs to the nearest noun before it (after that noun's `/ɡ/` words). After a verb or at the start of a sentence there is no thing for B to use, so `em` + `/b/` is not a sentence there. For someone's act (*Azawan's walk*), say the act as its own sentence, then [point back to it](dependents.md#which-noun).
+
+**`em`** never takes a person on the left: a person is not something someone uses. **`gegabem`** never does either, because no one owns a person: a person tied to B takes a [tie](relations.md#social-relations) (*Azawan's patient* is care, `gahabom`). **`em`** never names a feeling or trait either, and neither does [*part of*](relations.md#of-relations): a feeling or trait stays something B has, not something B uses or is made of. A feeling uses [emotion compose](sakes.md#emotion-compose); a trait is a `/ɡ/` word on B.
 
 **Compare with:** *for Azawan* is `el`. A [sake](sakes.md) on `/ɡ/` also marks the noun as yours, together with how it serves you.
 
 ### Opening a sentence with stacked hooks {#stacked-discourse}
 
-At the front of a sentence (no `/b/` after it), stacked **`ael`** is a discourse hook: **ae** ≈ add, ranked upward. **`ael …`** opens a sentence: **`ael …`** adds a point that goes further than what came before, like English *In fact, …* / *What's more, …*.
+English *In fact, …* or *What's more, …* adds a point that goes further than what came before. At the front of a sentence, with no `/b/` right after it, the two-vowel hook **`ael`** does this job. (cue: **ae** ≈ add, ranked upward)
 
 > `ael zalahen vezebal.`
 >
@@ -570,7 +577,7 @@ At the front of a sentence (no `/b/` after it), stacked **`ael`** is a discourse
 >
 > "In fact, Alahen sleeps."
 
-Stacked **`aol …`** says this sentence is one case of what you just said, like English *For example, …*. (cue: **ao** ≈ add one: a single sample) With **-m**, `aom …` adds *among others* and `aem …` adds *in fact, and maybe more*. No other stacked hook opens a sentence: for *next*, *by the way* and *on the contrary* use a [linker](dependents.md#sentence-linkers).
+Opening with **`aol …`** gives English *For example, …*: this sentence is one case of what you just said. (cue: **ao** ≈ add one: a single sample) With **-m**, `aom …` adds *among others* and `aem …` adds *in fact, and maybe more*. No other two-vowel hook opens a sentence: for *next*, *by the way*, and *on the contrary*, use a [linker](dependents.md#sentence-linkers).
 
 > `zavahal vowogal. aol zalahen vowogal.`
 >
@@ -582,7 +589,7 @@ Stacked **`aol …`** says this sentence is one case of what you just said, like
 
 ### Somewhere, nowhere, everywhere {#place-indefinites}
 
-Put a [standalone join](joins.md#standalone-phrase) in the `/b/` slot after a place hook. Outside a question, **`bar`** is an unspecified member (*somewhere*), the same way **`zar`** is *someone*. Under **`yol`**, it is the *where?* blank.
+For English *somewhere*, *nowhere*, and *everywhere*, put a [standalone join](joins.md#standalone-phrase) in the `/b/` slot after a place hook. Outside a question, **`bar`** is an unspecified member (*somewhere*), the same way **`zar`** is *someone*. Under **`yol`**, it is the *where?* blank.
 
 | Agazan | English |
 |--------|---------|
@@ -603,16 +610,12 @@ Put a [standalone join](joins.md#standalone-phrase) in the `/b/` slot after a pl
 >
 > "The dog sleeps nowhere."
 
-Several extra-noun hooks on one clause are several extras (*from* one landmark *toward* another). Extra-noun **-n** titles that extra as a proper-name phrase the same way; the landmark keeps its own ending.
-
-**Compare with:** company *with Alahen* is a [join-relation](join-across-roles.md#join-relations). *Without* is a join-relation too. *Like* stays [simile](relations.md#similative). *Between* stays a hosted pair plus a `/b/` join ([relations](relations.md#locative-relations)). *So that Alahen sits* is still **`hogom barl`**.
-
 ### Here and there, this and that {#deixis}
 <a id="here-there"></a>
 
-English *here*, *there*, *this*, and *that* point at things by distance. Agazan points from a **person in the conversation** instead: put a place hook before [speaker, listener, or interlocutors](pronouns.md#special-pronouns) in `/b/`. You always say whose *here* you mean, the same way [viewpoint laterals](roles.md#viewpoint-laterals) say whose *left*.
+English *here*, *there*, *this*, and *that* point at things by their distance from the speaker. Agazan points from a **person in the conversation** instead: put a place hook before the [speaker, listener, or interlocutors](pronouns.md#special-pronouns) in `/b/`. You always say whose *here* you mean, the same way Agazan says whose *left* you mean ([viewpoint laterals](roles.md#viewpoint-laterals)).
 
-Names come first. When you know who is talking or listening, use their name as the landmark (`om bazawan` *near Azawan*). Speaker and listener are for when the conversation role is the point, or you have no name to use.
+Names come first. When you know who is talking or listening, use their name as the landmark (`om bazawan` *near Azawan*). Use speaker and listener when the conversation role itself matters, or when you have no name to use.
 
 | Agazan | Landmark | English |
 |--------|----------|---------|
@@ -681,7 +684,7 @@ In reported speech, the speaker is still whoever says the whole sentence. After 
 
 ### Point back (`or` / `ar` / `ur` / `er`) {#hook-resume}
 
-A hook with **-r** points back, the way [resume **-r**](pronouns.md#resume-r) does on a noun. It takes no noun to its right, and none to its left to pair with (it is not a same-role hook). After the verb, it points back to a landmark already in play: you do not repeat the `/b/` word. (A [span hook](#spans) with **-r** has words on both sides and means something else.)
+English *there*, *from there*, and *for it* point back to a place or thing already named. In Agazan, give the extra-noun hook **-r** and leave out the `/b/` word: after the verb, the hook points back to the landmark already in play, the way [resume **-r**](pronouns.md#resume-r) does on a noun. A hook with **-r** has no noun on its right, and no phrase on its left to pair with (it is not a same-role hook).
 
 | Agazan | Points back to | English |
 |--------|----------------|---------|
@@ -753,7 +756,7 @@ At the front of a sentence, a resume hook points back to an earlier stretch of t
 
 ### Parallel chains {#parallel-chains}
 
-You already hook one named A with a single `A HOOK B`. To stack several hooks on that **same** A (including B and except C, or two includings), add more hooks after the first right-hand side: `A HOOK₁ B HOOK₂ C`. Each hook still applies to A in parallel, with its own side; vowels and endings may mix. English *including (B except C)* would nest C under B instead.
+To say more than one thing about the **same** A (*including B but except C*, or two *including*s), keep adding hooks after B: `A HOOK₁ B HOOK₂ C`. Each hook applies to A, not to the B before it, and each has its own vowel and ending. So C is never tucked under B the way English *including (B except C)* can be.
 
 > `zavahal am zazawan ul zalahen.`
 >
@@ -768,7 +771,7 @@ You already hook one named A with a single `A HOOK B`. To stack several hooks on
 | `A am B ul C` | A including B, and maybe more, except C |
 | `A ul B ul C` | A except B and except C |
 
-Same-role includes the **verb phrase**:
+A and B can also be **verbs**:
 
 > `varahal om vowogal.`
 >
@@ -776,11 +779,11 @@ Same-role includes the **verb phrase**:
 >
 > "Walk instead of run, or some other replacement."
 
-**Compare with:** a hook binds last. A [list join](joins.md) after the hook closes first and becomes the hook's B side: `zodogal ol zagadul zebedul zam` is *a cat and a bird (and possibly more) instead of a dog*.
+**Compare with:** a [list join](joins.md) after the hook is finished first, and the whole list becomes B: `zodogal ol zagadul zebedul zam` is *a cat and a bird (and possibly more) instead of a dog*.
 
 ### Discourse placements {#discourse-placements}
 
-Beginner already used a hook at the front of a default statement. Same spellings and vowel meanings, four places:
+Beginner put a discourse hook at the front of a plain statement. It can sit in three more places, with the same spellings and vowel meanings:
 
 | Placement | Agazan | Use |
 |-----------|--------|-----|
@@ -789,23 +792,23 @@ Beginner already used a hook at the front of a default statement. Same spellings
 | Later clause under `/x/` | `… JOIN HOOK BODY` | Same as the opener |
 | Before an `/x/` linker | `HOOK LINKER BODY` | Same as prior talk |
 
-One discourse hook per opener (no parallel discourse chains on one turn marker). In-clause chains stay inside the body. After an explicit turn marker, the same spellings in the body are in-clause hooks.
+A sentence opening takes only one discourse hook; you cannot chain them the way you chain in-clause hooks. After a written turn marker, a hook inside the body is an in-clause hook.
 
-On a later clause in a [clause `/x/` join](joins.md#clause-joins), the hook sits right after the join, before that clause’s body: `A xam al B` → *A and additionally B*. Before an **`/x/`** linker (*therefore*, *however*, …), it scopes the linker+body stretch: `al xodum …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xodum …` when one cue is enough.
+On a later clause in a [clause `/x/` join](joins.md#clause-joins), the hook goes right after the join, before that clause’s body: `A xam al B` → *A and additionally B*. Before an **`/x/`** linker (*therefore*, *however*, …), it applies to the linker and the rest of the sentence together: `al xodum …` → *Additionally, therefore …*. When one connective is enough, prefer plain `al …` or plain `xodum …`.
 
 > `yazawan al zalahen vowogal.`
 >
 > y-Azawan | additionally | z-Alahen | v-walk
 >
-> "Azawan: additionally, Alahen walks." (vocative, then discourse hook)
+> "Azawan: additionally, Alahen walks." (a call, then a discourse hook)
 
 **Compare with:** packaging a list uses prefixed [joins](joins.md#join-series-ending-shared) (`zal` / `zam` / `val` …).
 
 ### Detail on the hook (`/w/`) {#hook-w}
 
-`/w/` always sits **immediately before** what it grades. A prefix-less hook is a host, the same way `/ɡ/` and `/h/` are. Put ordinary detail or a [restrictor](restrictors.md) on `/w/` before the hook, then the hook’s right-hand piece.
+To add detail to the hook itself (*hesitantly excepting*, *never excepting*), put a `/w/` word right before the hook. A `/w/` word always describes the word **right after** it, and a hook takes one the same way a `/ɡ/` or `/h/` word does. A [restrictor](restrictors.md) works there too. The hook's right-hand piece follows as usual.
 
-Same-role: the except (or including, rather, instead) carries that detail; clause `/h/` still grades the verb.
+On a same-role hook, the detail describes the *except* (or *including*, *rather*, *instead*). An `/h/` word in the clause still describes the verb.
 
 > `zavahal wezogom ul zazawan.`
 >
@@ -829,7 +832,7 @@ A surprise word on the *including* hook gives English *even*: **`wezum al`** add
 
 **Compare with:** `zavahal ul zazawan hadehum vugugal` puts haste on the **cooking**, not on the except.
 
-Extra-noun: `/b/` still sits immediately after the hook. A later `/ɡ/` still describes the landmark.
+On an extra-noun hook, `/w/` goes before the hook and `/b/` still comes right after it. A `/ɡ/` word after the landmark still describes the landmark.
 
 > `zodogal vezebal wal al bahazal.`
 >
@@ -837,11 +840,11 @@ Extra-noun: `/b/` still sits immediately after the hook. A later `/ɡ/` still de
 >
 > "A dog sleeps, never in a house."
 
-Discourse glue uses the same window: `welavam al zazawan vowogal` is *Additionally, very much so, Azawan walks.* After the hook, next `/b/` still means extra-noun, not glue.
+A discourse hook takes `/w/` the same way: `welavam al zazawan vowogal` is *Additionally, very much so, Azawan walks.* A `/b/` right after the hook still makes it an extra-noun hook, not a discourse hook.
 
 ### Spans (`oel` / `ual` / `uel`) {#spans}
 
-When the items sit on a line with an order (people in a queue, days, chapters, numbers), English *A through B* names a **span**: A, B, and everything between. Put a stacked hook between two words in the same role: `A HOOK B`. Between same-role words these hooks name only spans; with `/b/` on the right and no `/b/` on the left, they stay [extra-noun hooks](#extra-noun) (*toward*, *out of*, *against*).
+When the items sit on a line with an order (people in a queue, days, chapters, numbers), English *A through B* names a **span**: A, B, and everything between. Put a stacked hook between two words in the same role: `A HOOK B`. Between same-role words these hooks name only spans; with `/b/` on the right and no `/b/` on the left, they are [extra-noun hooks](#extra-noun) (*toward*, *out of*, *against*).
 
 > `zazawan oel zahaben vowogal.`
 >
@@ -855,7 +858,7 @@ When the items sit on a line with an order (people in a queue, days, chapters, n
 | **`ual`** | only what lies between | *strictly between A and B* | **ua** ≈ take away both ends |
 | **`uel`** | only what lies outside | *outside A–B* | **ue** ≈ undo the ordered stretch |
 
-The endpoints are a path in spoken order. Endings work as on other hooks: **-m** makes the ends soft (*roughly A through B*), and **-n** names the span as a whole. **-r** stands in for one member you are not naming, and under a [question](questions.md#fill-ask-r) it asks which one:
+The span runs from A to B, in the order you say them. Endings work as on other hooks: **-m** makes the ends soft (*roughly A through B*), and **-n** names the span as a whole. **-r** stands in for one member you are not naming, and under a [question](questions.md#fill-ask-r) it asks which one:
 
 > `zazawan uar zahaben vezebal.`
 >
@@ -873,7 +876,7 @@ A span **-r** always has a word on each side (`oer` / `uar` / `uer`). With nothi
 
 Between two numbers with digits, plain **`al`** and **`ul`** also make a span, because *3, including 5* has nothing to include into: [ranges](numbers-applied.md#ranges).
 
-Scope stays flat. Something right after B describes B alone. `/w/` immediately before the hook grades the span itself:
+A word right after B describes B alone, not the span. To describe the span itself, put `/w/` right before the hook:
 
 > `zazawan wezum oel zahaben vowogal.`
 >
@@ -1099,9 +1102,9 @@ z-newspaper | v-tell . for.example | z-Ahaben | v-tell
 
 ### Hook compounds (cite + extra-noun hook) {#hook-compounds}
 
-Intermediate already used a free extra-noun hook beside a verb (`vowogal ul bezedel` *walks from a station*). You can **fuse** that extra-noun hook onto a finished citation so the hook **is** the event kind: enter, leave, oppose, and the rest of the extra-noun grid.
+English has single verbs for moving in relation to a place: *enter*, *leave*, *oppose*. Agazan makes them by **fusing** an extra-noun hook onto the end of a citation: *walk* + *from* (`vowogal ul bezedel` *walks from a station*) becomes one word, *leave*. Every hook in the extra-noun grid can fuse this way.
 
-Keep the left word’s own **-l** or **-m**. Then write the extra-noun hook. There is no mid-word **`x`**. The dictionary lemma is the **citation** (no role letter), because the same stem can sit under `/z/` or `/ɡ/` as well as `/v/`.
+Keep the left word’s own **-l** or **-m**, then write the hook, with no mid-word **`x`**. The dictionary form is the **citation** (no role letter), because the same stem can sit under `/z/` or `/ɡ/` as well as `/v/`.
 
 ```text
 CITE + HOOK
@@ -1143,9 +1146,9 @@ The left ending is part of the stem, so two different left roots stay distinct o
 >
 > "Alahen serves tea."
 
-A left root that is not *walk* still uses the same hook job (`vezebeluel` *contradict*: *tell* fused with *against*). Listed dictionary lemmas stay citations (`owogalul`, not `vowogalul`).
+Other roots fuse the same way: `vezebeluel` *contradict* is *tell* fused with *against*. The dictionary lists these words as citations (`owogalul`, not `vowogalul`).
 
-**Compare with:** `vowogal ul bezedel` still *walks from a station* as two words. Same-role *including* / *rather* / *instead* / *except* stay prefix-less hooks, not this fuse. A [lexical compound](x-compounds.md#lexical-compounds) like *bedroom* glues two content roots with a join letter; this glues a citation to an extra-noun hook.
+**Compare with:** `vowogal ul bezedel` still *walks from a station* as two words. Same-role *including* / *rather* / *instead* / *except* never fuse; they are always separate hook words. A [lexical compound](x-compounds.md#lexical-compounds) like *bedroom* glues two content roots with a join letter; this glues a citation to an extra-noun hook.
 
 ### Translation practice {#advanced-translation-practice}
 <a id="translation-practice-advanced"></a>
